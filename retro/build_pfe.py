@@ -6,7 +6,7 @@ The PFE sibling of build_shw.py: the same frozen rules (retro method r2), the sa
 with pharmaceutical signals (retro/templates/pfe_engine.py.tmpl). For each as-of date the builder
   1. selects only the history vintage, prints, guides and dividends whose 'published' date is <= AS_OF,
   2. computes every market statistic from daily prices truncated at AS_OF, as traded (Yahoo's series times its 1.054 factor of
-     2020-11-17, which follows every date here; no split after 1999 restates a per-share fact in the fact sheet),
+     2020-11-17 for the days before it, the Upjohn distribution; no split after 1999 restates a per-share fact in the fact sheet),
   3. writes <OUT>/<AS_OF>/model.py = those facts + the frozen engine, which derives every scenario input by rule.
 
 Pfizer's fiscal year is the calendar year. EPS is GAAP diluted EPS from continuing operations: the company's adjusted EPS removes
@@ -37,21 +37,29 @@ From 2018 (retro/README.md, "PFE 2018-2021"):
     current-year EPS; the revenue ranges are read as before;
   - the 2020-11-16 spin-off of Upjohn (Viatris) is a distribution, not a split ('distributions', the MAR rule): Yahoo books it as a
     1054:1000 split on 2020-11-17, so its factor is undone for the days before and every price stays as traded;
-  - a year may leave the EPS history as reported but excluded ('eps_excluded', the NKE, AVGO and XOM encoding; used here only by the
-    sensitivity tests), and a vintage may start its history after an excluded year ('pe_window_start', the 2003 rule: the FY2020 10-K's
-    restated 2016 is a loss).
+  - a year may leave the EPS history as reported but excluded ('eps_excluded', the NKE, AVGO and XOM encoding; from 2022 below), and a
+    vintage may start its history after an excluded year ('pe_window_start', the 2003 rule: the FY2020 10-K's restated 2016 is a loss).
+
+From 2022 (retro/README.md, "PFE 2022-2026"):
+  - 2023 is excluded as the latest year at its Q4 print (reported EPS under half the EPS without its acquisition-related items and
+    certain significant items): the print's 'fy_actual' carries no EPS and an 'excluded_note', the vintages after carry 'eps_excluded',
+    and it stays a gap once later years follow it (its days leave the P/E window, its revenue and shares stay);
+  - guides may come from 8-Ks between releases (a revised range, or the next year's ranges before its Q4 print), each a guide like any
+    other from its date.
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
-is the first trading day after it. The earnings 8-Ks of 2007-2021 were accepted before the open or during the session on the release
+is the first trading day after it. The earnings 8-Ks of 2007-2026 were accepted before the open or during the session on the release
 day, none on a week's last trading day.
 
 Output goes to staging/retrospective/PFE until the series is added to the archive (--out archive/retrospective/PFE).
 
 Usage
-  python3 retro/build_pfe.py --weekly 2008-01-01 2009-12-31
+  python3 retro/build_pfe.py --weekly 2008-01-01 2008-12-31
+  python3 retro/build_pfe.py --weekly 2009-01-05 2009-12-31
   python3 retro/build_pfe.py --weekly 2010-01-04 2013-12-31
   python3 retro/build_pfe.py --weekly 2014-01-01 2017-12-31
   python3 retro/build_pfe.py --weekly 2018-01-01 2021-12-31
+  python3 retro/build_pfe.py --weekly 2022-01-01 2026-11-06
   python3 retro/build_pfe.py 2008-01-24
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/PFE/<AS_OF>
 """

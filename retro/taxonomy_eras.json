@@ -1496,6 +1496,16 @@
     "term": "Paxlovid",
     "first_seen": "2021-11-12",
     "note": "the brand name of nirmatrelvir and ritonavir; first in a Pfizer filing in its Q3 2021 10-Q (accepted 2021-11-12 06:06 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Seagen",
+    "first_seen": "2023-03-13",
+    "note": "the company Pfizer agreed to acquire (completed 2023-12-14); first in a filing under Pfizer's CIK in its 8-K of the merger agreement (accepted 2023-03-13 08:29 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Pfizer Ignite",
+    "first_seen": "2023-05-02",
+    "note": "a Pfizer business (research and development services for biotech companies); first in a Pfizer filing in its Q1 2023 earnings 8-K (accepted 2023-05-02 08:05 ET, before the open), EDGAR full-text search"
    }
   ]
  }

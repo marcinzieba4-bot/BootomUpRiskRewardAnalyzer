@@ -1,5 +1,5 @@
 {
- "_doc": "Point-in-time fact sheet for PFE retrospectives (retro/build_pfe.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks of 2007-2009 were accepted before the open or during the session on their release days. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the guides for the current fiscal year (each field from the latest guide that states it) and the latest declared dividend. Pfizer's fiscal year is the calendar year (subsidiaries outside the U.S. close on November 30). EPS is GAAP diluted EPS from continuing operations; the company's adjusted EPS removes purchase-accounting amortization, which recurs, so it is shown and never used. 2003 is excluded and the history starts with 2004. Guides: reported diluted EPS ranges (the current-FY EPS) and revenue ranges in dollars, read as growth on the last full year in the history; Pfizer guides no quarter and no operating or pre-tax margin. A print's growth and margins are derived from the raw figures of its release ('raw', $ millions; the builder re-derives and checks them), each against the year-ago quarter as the same release shows it. Rule T's raw figures are in 'rule_t'. No later fact enters through this file: every source's published date bounds its use. From 2010: a Q4 print may restate the year before it on a new basis ('restates': its EPS and revenues from continuing operations), which replaces that year from the print until a 10-K vintage published after it carries the year; the reported diluted EPS guide is used as published, discontinued operations included where the guide includes them (the only EPS line Pfizer guides). From 2014: a guide may withdraw named fields of its year ('withdrawn', with 'withdrawn_quote': the Q1 2014 release voids the 2014 reported EPS guide; the Q2 2016 release ends GAAP guidance other than revenues), and a guide given under that policy says so ('eps_none'); a print may be reissued ('reissued': the 8-K of 2016-02-16 reissues the Q4 2015 GAAP results), whose figures replace the print's from the reissue's date; each 10-K vintage holds the ten years to its own year. From 2018: Pfizer gives no reported EPS guide (each guide's 'eps_none' quotes the policy), so the last full year in the history stands as current-year EPS; the 2020-11-16 distribution of Upjohn (Viatris) is in 'distributions' (Yahoo books it as a split; its factor is undone, prices stay as traded, the MAR rule); the FY2020 10-K restates 2016 to a loss, which takes the history and the P/E window with it (the 2003 rule).",
+ "_doc": "Point-in-time fact sheet for PFE retrospectives (retro/build_pfe.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks of 2007-2009 were accepted before the open or during the session on their release days. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the guides for the current fiscal year (each field from the latest guide that states it) and the latest declared dividend. Pfizer's fiscal year is the calendar year (subsidiaries outside the U.S. close on November 30). EPS is GAAP diluted EPS from continuing operations; the company's adjusted EPS removes purchase-accounting amortization, which recurs, so it is shown and never used. 2003 is excluded and the history starts with 2004. Guides: reported diluted EPS ranges (the current-FY EPS) and revenue ranges in dollars, read as growth on the last full year in the history; Pfizer guides no quarter and no operating or pre-tax margin. A print's growth and margins are derived from the raw figures of its release ('raw', $ millions; the builder re-derives and checks them), each against the year-ago quarter as the same release shows it. Rule T's raw figures are in 'rule_t'. No later fact enters through this file: every source's published date bounds its use. From 2010: a Q4 print may restate the year before it on a new basis ('restates': its EPS and revenues from continuing operations), which replaces that year from the print until a 10-K vintage published after it carries the year; the reported diluted EPS guide is used as published, discontinued operations included where the guide includes them (the only EPS line Pfizer guides). From 2014: a guide may withdraw named fields of its year ('withdrawn', with 'withdrawn_quote': the Q1 2014 release voids the 2014 reported EPS guide; the Q2 2016 release ends GAAP guidance other than revenues), and a guide given under that policy says so ('eps_none'); a print may be reissued ('reissued': the 8-K of 2016-02-16 reissues the Q4 2015 GAAP results), whose figures replace the print's from the reissue's date; each 10-K vintage holds the ten years to its own year. From 2018: Pfizer gives no reported EPS guide (each guide's 'eps_none' quotes the policy), so the last full year in the history stands as current-year EPS; the 2020-11-16 distribution of Upjohn (Viatris) is in 'distributions' (Yahoo books it as a split; its factor is undone, prices stay as traded, the MAR rule); the FY2020 10-K restates 2016 to a loss, which takes the history and the P/E window with it (the 2003 rule). From 2022: a year may leave the EPS history as reported but excluded ('excluded_note' on its Q4 print's 'fy_actual', which carries no EPS; 'eps_excluded' on the vintages after): 2023, whose reported EPS is under half the EPS without its acquisition-related items and certain significant items, is excluded as the latest year at its Q4 print and stays a gap in the history after (the NKE, AVGO and XOM encoding); its revenue and shares stay. Guides may come from 8-Ks between releases (2023-10-13, 2023-12-13, 2024-12-17, 2025-12-16), each dated by its acceptance.",
  "ticker": "PFE",
  "sources": {
   "PF1": {
@@ -617,6 +617,209 @@
    "title": "Pfizer Q3 2021 results (8-K, Exhibit 99)",
    "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800321000104/pfe-10032021xex99.htm",
    "supports": "third-quarter 2021 statement of income and revenues by U.S. and international; 2021 guidance"
+  },
+  "PF89": {
+   "published": "2022-02-08",
+   "filed": "2022-02-08 08:53 ET (before the open)",
+   "title": "Pfizer Q4 2021 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800322000003/pfe-12312021xex99.htm",
+   "supports": "fourth-quarter and full-year 2021 statement of income and revenues by U.S. and international; 2022 guidance"
+  },
+  "PF90": {
+   "published": "2022-02-24",
+   "filed": "2022-02-24 14:25 ET (during the session)",
+   "title": "Pfizer FY2021 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800322000027/pfe-20211231.htm",
+   "supports": "statement of operations 2019-2021; revenues by U.S. and international; cash flows; the first-quarter 2022 dividend; Item 1 and Item 1A wording"
+  },
+  "PF91": {
+   "published": "2022-05-03",
+   "filed": "2022-05-03 08:08 ET (before the open)",
+   "title": "Pfizer Q1 2022 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800322000068/pfe-04032022xex99.htm",
+   "supports": "first-quarter 2022 statement of income and revenues by U.S. and international; 2022 guidance"
+  },
+  "PF92": {
+   "published": "2022-07-28",
+   "filed": "2022-07-28 08:09 ET (before the open)",
+   "title": "Pfizer Q2 2022 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800322000091/pfe-07032022xex99.htm",
+   "supports": "second-quarter 2022 statement of income and revenues by U.S. and international; 2022 guidance"
+  },
+  "PF93": {
+   "published": "2022-11-01",
+   "filed": "2022-11-01 08:11 ET (before the open)",
+   "title": "Pfizer Q3 2022 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800322000098/pfe-10022022xex99.htm",
+   "supports": "third-quarter 2022 statement of income and revenues by U.S. and international; 2022 guidance"
+  },
+  "PF94": {
+   "published": "2023-01-31",
+   "filed": "2023-01-31 08:11 ET (before the open)",
+   "title": "Pfizer Q4 2022 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800323000004/pfe-12312022xex99.htm",
+   "supports": "fourth-quarter and full-year 2022 statement of income and revenues by U.S. and international; 2023 guidance"
+  },
+  "PF95": {
+   "published": "2023-02-23",
+   "filed": "2023-02-23 14:12 ET (during the session)",
+   "title": "Pfizer FY2022 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800323000024/pfe-20221231.htm",
+   "supports": "statement of operations 2020-2022; revenues by U.S. and international; cash flows; the first-quarter 2023 dividend; Item 1 and Item 1A wording"
+  },
+  "PF96": {
+   "published": "2023-05-02",
+   "filed": "2023-05-02 08:05 ET (before the open)",
+   "title": "Pfizer Q1 2023 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000162828023014759/pfe-04022023xex99.htm",
+   "supports": "first-quarter 2023 statement of income and revenues by U.S. and international; 2023 guidance"
+  },
+  "PF97": {
+   "published": "2023-08-01",
+   "filed": "2023-08-01 08:09 ET (before the open)",
+   "title": "Pfizer Q2 2023 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800323000085/pfe-07022023xex99.htm",
+   "supports": "second-quarter 2023 statement of income and revenues by U.S. and international; 2023 guidance"
+  },
+  "PF98": {
+   "published": "2023-10-16",
+   "filed": "2023-10-13 17:30 ET (after the close)",
+   "title": "Pfizer 8-K of 2023-10-13: 2023 guidance revised for the COVID products",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800323000099/ex99_pressrelease1013.htm",
+   "supports": "2023 revenue and adjusted EPS ranges revised"
+  },
+  "PF99": {
+   "published": "2023-10-31",
+   "filed": "2023-10-31 08:04 ET (before the open)",
+   "title": "Pfizer Q3 2023 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800323000111/pfe-10012023xex99.htm",
+   "supports": "third-quarter 2023 statement of income and revenues by U.S. and international; 2023 guidance"
+  },
+  "PF100": {
+   "published": "2023-12-13",
+   "filed": "2023-12-13 07:44 ET (before the open)",
+   "title": "Pfizer 8-K of 2023-12-13: 2024 guidance",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800323000120/exh99pr121323.htm",
+   "supports": "2024 revenue and adjusted EPS ranges"
+  },
+  "PF101": {
+   "published": "2024-01-30",
+   "filed": "2024-01-30 08:04 ET (before the open)",
+   "title": "Pfizer Q4 2023 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800324000017/pfe-12312023xex99.htm",
+   "supports": "fourth-quarter and full-year 2023 statement of income and revenues by U.S. and international; 2024 guidance"
+  },
+  "PF102": {
+   "published": "2024-02-22",
+   "filed": "2024-02-22 13:17 ET (during the session)",
+   "title": "Pfizer FY2023 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800324000039/pfe-20231231.htm",
+   "supports": "statement of operations 2021-2023; revenues by U.S. and international; cash flows; the first-quarter 2024 dividend; Item 1 and Item 1A wording"
+  },
+  "PF103": {
+   "published": "2024-05-01",
+   "filed": "2024-05-01 08:11 ET (before the open)",
+   "title": "Pfizer Q1 2024 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800324000103/pfe-3312024xex99.htm",
+   "supports": "first-quarter 2024 statement of income and revenues by U.S. and international; 2024 guidance"
+  },
+  "PF104": {
+   "published": "2024-07-30",
+   "filed": "2024-07-30 08:04 ET (before the open)",
+   "title": "Pfizer Q2 2024 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800324000155/pfe-6302024xex99.htm",
+   "supports": "second-quarter 2024 statement of income and revenues by U.S. and international; 2024 guidance"
+  },
+  "PF105": {
+   "published": "2024-10-29",
+   "filed": "2024-10-29 08:06 ET (before the open)",
+   "title": "Pfizer Q3 2024 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800324000188/pfe-9292024xex99.htm",
+   "supports": "third-quarter 2024 statement of income and revenues by U.S. and international; 2024 guidance"
+  },
+  "PF106": {
+   "published": "2024-12-17",
+   "filed": "2024-12-17 07:47 ET (before the open)",
+   "title": "Pfizer 8-K of 2024-12-17: 2025 guidance",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800324000195/pfe-12172024xexh99.htm",
+   "supports": "2025 revenue and adjusted EPS ranges"
+  },
+  "PF107": {
+   "published": "2025-02-04",
+   "filed": "2025-02-04 08:11 ET (before the open)",
+   "title": "Pfizer Q4 2024 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800325000017/pfe-12312024xex99.htm",
+   "supports": "fourth-quarter and full-year 2024 statement of income and revenues by U.S. and international; 2025 guidance"
+  },
+  "PF108": {
+   "published": "2025-02-28",
+   "filed": "2025-02-27 16:27 ET (after the close)",
+   "title": "Pfizer FY2024 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800325000054/pfe-20241231.htm",
+   "supports": "statement of operations 2022-2024; revenues by U.S. and international; cash flows; the first-quarter 2025 dividend; Item 1 and Item 1A wording"
+  },
+  "PF109": {
+   "published": "2025-04-29",
+   "filed": "2025-04-29 08:02 ET (before the open)",
+   "title": "Pfizer Q1 2025 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800325000111/pfe-03302025xex99.htm",
+   "supports": "first-quarter 2025 statement of income and revenues by U.S. and international; 2025 guidance"
+  },
+  "PF110": {
+   "published": "2025-08-05",
+   "filed": "2025-08-05 07:08 ET (before the open)",
+   "title": "Pfizer Q2 2025 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800325000136/pfe-06292025xex99.htm",
+   "supports": "second-quarter 2025 statement of income and revenues by U.S. and international; 2025 guidance"
+  },
+  "PF111": {
+   "published": "2025-11-04",
+   "filed": "2025-11-04 07:00 ET (before the open)",
+   "title": "Pfizer Q3 2025 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800325000149/pfe-09282025xex99.htm",
+   "supports": "third-quarter 2025 statement of income and revenues by U.S. and international; 2025 guidance"
+  },
+  "PF112": {
+   "published": "2025-12-16",
+   "filed": "2025-12-16 07:01 ET (before the open)",
+   "title": "Pfizer 8-K of 2025-12-16: 2026 guidance; 2025 revenue guidance revised",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800325000167/pfe-12162025xexh99.htm",
+   "supports": "2026 revenue and adjusted EPS ranges; 2025 revenues revised to approximately $62.0 billion"
+  },
+  "PF113": {
+   "published": "2026-02-03",
+   "filed": "2026-02-03 07:01 ET (before the open)",
+   "title": "Pfizer Q4 2025 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000005/pfe-12312025xex99.htm",
+   "supports": "fourth-quarter and full-year 2025 statement of income and revenues by U.S. and international; 2026 guidance"
+  },
+  "PF114": {
+   "published": "2026-02-26",
+   "filed": "2026-02-26 12:44 ET (during the session)",
+   "title": "Pfizer FY2025 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000026/pfe-20251231.htm",
+   "supports": "statement of operations 2023-2025; revenues by U.S. and international; cash flows; the first-quarter 2026 dividend; Item 1 and Item 1A wording"
+  },
+  "PF115": {
+   "published": "2026-05-05",
+   "filed": "2026-05-05 07:01 ET (before the open)",
+   "title": "Pfizer Q1 2026 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000053/pfe-3292026xex99.htm",
+   "supports": "first-quarter 2026 statement of income and revenues by U.S. and international; 2026 guidance"
+  },
+  "PF116": {
+   "published": "2026-08-04",
+   "filed": "2026-08-04 07:02 ET (before the open)",
+   "title": "Pfizer Q2 2026 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000094/pfe-6282026xex99.htm",
+   "supports": "second-quarter 2026 statement of income and revenues by U.S. and international; 2026 guidance"
+  },
+  "PF117": {
+   "published": "2026-11-03",
+   "filed": "2026-11-03 08:07 ET (before the open)",
+   "title": "Pfizer Q3 2026 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000125/pfe-9272026xex99.htm",
+   "supports": "third-quarter 2026 statement of income and revenues by U.S. and international; 2026 guidance"
   }
  },
  "history_vintages": [
@@ -2677,6 +2880,642 @@
    ],
    "pharma_label": "biopharmaceutical",
    "cash_return_text": "no shares purchased in 2020 (FY2020 10-K)"
+  },
+  {
+   "published": "2022-02-24",
+   "sources": [
+    "PF90",
+    "PF85",
+    "PF78"
+   ],
+   "company": "Pfizer Inc",
+   "exchange": "NYSE",
+   "fy_label": "FY21",
+   "why": "'is a research-based, global biopharmaceutical company. We apply science and our global resources to bring therapies to people that extend and significantly improve their lives through the discovery, development, manufacture, marketing, sale and distribution of biopharmaceutical products worldwide' (FY2021 10-K, Item 1); 'Certain of our products have experienced patent-based expirations or loss of regulatory exclusivity in certain markets in the last few years, and we expect certain products to face increased generic competition over the next few years' (Item 1A); 'when generic or biosimilar competition does commence, the resulting price competition can substantially decrease our revenues for the impacted products, often in a very short period of time' (Item 1A); 'Our business is conducted in intensely competitive and often highly regulated markets'",
+   "fiscal_year_ends": {
+    "2017": "2017-12-31",
+    "2018": "2018-12-31",
+    "2019": "2019-12-31",
+    "2020": "2020-12-31",
+    "2021": "2021-12-31"
+   },
+   "eps_gaap": {
+    "2017": 2.23,
+    "2018": 0.64,
+    "2019": 1.89,
+    "2020": 1.18,
+    "2021": 3.93
+   },
+   "eps_normalized": {
+    "2017": 2.23,
+    "2018": 0.64,
+    "2019": 1.89,
+    "2020": 1.18,
+    "2021": 3.93
+   },
+   "eps_sources": {
+    "2017": "PF85",
+    "2018": "PF85",
+    "2019": "PF90",
+    "2020": "PF90",
+    "2021": "PF90"
+   },
+   "normalization": "diluted EPS from continuing operations, each year from the latest 10-K that reports it; the company's adjusted diluted EPS is shown, never used (it removes the recurring amortization of acquired intangibles; the 2008-2009 rule); 2016 is excluded: restated without Upjohn, a $(0.02) loss a diluted share from continuing operations (FY2020 10-K), and a loss has no P/E; a distorted year that is not the latest takes the history and the P/E window with it (the r2 wording, 'the P/E window starts after it'; the PFE 2003 rule), so the history and the window start with 2017; 2017-2020 kept (the earlier tests, on the bases then published); 2019 restated to $1.89 and 2020 to $1.18 without Meridian (a discontinued operation from its 2021-12-31 sale) and with pension gains and losses recognized immediately from 2021; 2021 kept, on the PFE measure (per share, after tax, acquisition-related items and certain significant items): charges of $0.20 a share after the release's non-GAAP tax line (allocated pro rata), $4.13 without them, reported EPS 0.95 times it (Q4 2021 release)",
+   "revenue_usd_b": {
+    "2017": 38.757,
+    "2018": 40.825,
+    "2019": 40.905,
+    "2020": 41.651,
+    "2021": 81.288
+   },
+   "revenue_sources": {
+    "2017": "PF85",
+    "2018": "PF85",
+    "2019": "PF90",
+    "2020": "PF90",
+    "2021": "PF90"
+   },
+   "diluted_shares_m": {
+    "2017": 6058.0,
+    "2018": 5977.0,
+    "2019": 5675.0,
+    "2020": 5632.0,
+    "2021": 5708.0
+   },
+   "shares_sources": {
+    "2017": "PF78",
+    "2018": "PF85",
+    "2019": "PF90",
+    "2020": "PF90",
+    "2021": "PF90"
+   },
+   "pe_window_start": "2017-01-01",
+   "excluded_note": "2016 is excluded: restated without Upjohn, a $(0.02) loss a diluted share from continuing operations (FY2020 10-K), and a loss has no P/E; a distorted year that is not the latest takes the history and the P/E window with it (the r2 wording, 'the P/E window starts after it'; the PFE 2003 rule), so the history and the window start with 2017",
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 29.91,
+   "prev_fy_pretax_margin_note": "FY21 income from continuing operations before taxes $24,311M / revenues $81,288M (FY2021 10-K)",
+   "prev_fy_gross_margin": 62.08,
+   "prev_fy_sales_growth": 95.2,
+   "prev_fy_us_pct": 38.6,
+   "prev_fy_intl_pct": 155.2,
+   "tax_rate": 0.0762,
+   "tax_note": "FY21 provision/(benefit) for taxes $1,852M / income from continuing operations before taxes $24,311M (FY2021 10-K)",
+   "fcf_b": 29.87,
+   "fcf_label": "FY21",
+   "fcf_note": "net cash provided by operating activities $32,580M less purchases of property, plant and equipment $2,711M",
+   "cash_b": 31.07,
+   "cash_note": "cash and cash equivalents $1,944M and short-term investments $29,125M at December 31, 2021",
+   "dividend_annual": 1.6,
+   "dividend_note": "$0.40 quarterly (the first-quarter 2022 dividend declared in December 2021, FY2021 10-K)",
+   "business_line": "research-based global biopharmaceutical company",
+   "groups": [
+    [
+     "Biopharma",
+     79.557,
+     95.4
+    ],
+    [
+     "Pfizer CentreOne",
+     1.731,
+     86.9
+    ]
+   ],
+   "groups_basis": "FY21 revenues by operating segment and other business (FY2021 10-K)",
+   "pharma_groups": [
+    "Biopharma"
+   ],
+   "pharma_label": "Biopharma",
+   "cash_return_text": "no shares purchased in 2021 (FY2021 10-K)"
+  },
+  {
+   "published": "2023-02-23",
+   "sources": [
+    "PF95",
+    "PF90",
+    "PF85",
+    "PF78"
+   ],
+   "company": "Pfizer Inc",
+   "exchange": "NYSE",
+   "fy_label": "FY22",
+   "why": "'is a research-based, global biopharmaceutical company. We apply science and our global resources to bring therapies to people that extend and significantly improve their lives through the discovery, development, manufacture, marketing, sale and distribution of biopharmaceutical products worldwide' (FY2022 10-K, Item 1); 'Certain of our products have experienced patent-based expirations or loss of regulatory exclusivity in certain markets in the last few years, and we expect certain products to face increased generic competition over the next few years' (Item 1A); 'when generic or biosimilar competition does commence, the resulting price competition can substantially decrease our revenues for the impacted products, often in a very short period of time' (Item 1A); 'Our business is conducted in intensely competitive and often highly regulated markets'",
+   "fiscal_year_ends": {
+    "2017": "2017-12-31",
+    "2018": "2018-12-31",
+    "2019": "2019-12-31",
+    "2020": "2020-12-31",
+    "2021": "2021-12-31",
+    "2022": "2022-12-31"
+   },
+   "eps_gaap": {
+    "2017": 2.23,
+    "2018": 0.64,
+    "2019": 1.89,
+    "2020": 1.18,
+    "2021": 3.93,
+    "2022": 5.47
+   },
+   "eps_normalized": {
+    "2017": 2.23,
+    "2018": 0.64,
+    "2019": 1.89,
+    "2020": 1.18,
+    "2021": 3.93,
+    "2022": 5.47
+   },
+   "eps_sources": {
+    "2017": "PF85",
+    "2018": "PF85",
+    "2019": "PF90",
+    "2020": "PF95",
+    "2021": "PF95",
+    "2022": "PF95"
+   },
+   "normalization": "diluted EPS from continuing operations, each year from the latest 10-K that reports it; the company's adjusted diluted EPS is shown, never used (it removes the recurring amortization of acquired intangibles; the 2008-2009 rule); 2016 is excluded: restated without Upjohn, a $(0.02) loss a diluted share from continuing operations (FY2020 10-K), and a loss has no P/E; a distorted year that is not the latest takes the history and the P/E window with it (the r2 wording, 'the P/E window starts after it'; the PFE 2003 rule), so the history and the window start with 2017; 2017-2021 kept (the earlier tests, on the bases then published); 2022 kept, on the PFE measure (per share, after tax, acquisition-related items and certain significant items): charges of $0.61 a share after the release's non-GAAP tax line (allocated pro rata), $6.08 without them, reported EPS 0.90 times it (Q4 2022 release)",
+   "revenue_usd_b": {
+    "2017": 38.757,
+    "2018": 40.825,
+    "2019": 40.905,
+    "2020": 41.651,
+    "2021": 81.288,
+    "2022": 100.33
+   },
+   "revenue_sources": {
+    "2017": "PF85",
+    "2018": "PF85",
+    "2019": "PF90",
+    "2020": "PF95",
+    "2021": "PF95",
+    "2022": "PF95"
+   },
+   "diluted_shares_m": {
+    "2017": 6058.0,
+    "2018": 5977.0,
+    "2019": 5675.0,
+    "2020": 5632.0,
+    "2021": 5708.0,
+    "2022": 5733.0
+   },
+   "shares_sources": {
+    "2017": "PF78",
+    "2018": "PF85",
+    "2019": "PF90",
+    "2020": "PF95",
+    "2021": "PF95",
+    "2022": "PF95"
+   },
+   "pe_window_start": "2017-01-01",
+   "excluded_note": "2016 is excluded: restated without Upjohn, a $(0.02) loss a diluted share from continuing operations (FY2020 10-K), and a loss has no P/E; a distorted year that is not the latest takes the history and the P/E window with it (the r2 wording, 'the P/E window starts after it'; the PFE 2003 rule), so the history and the window start with 2017",
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 34.61,
+   "prev_fy_pretax_margin_note": "FY22 income from continuing operations before taxes $34,729M / revenues $100,330M (FY2022 10-K)",
+   "prev_fy_gross_margin": 65.77,
+   "prev_fy_sales_growth": 23.4,
+   "prev_fy_us_pct": 42.8,
+   "prev_fy_intl_pct": 12.3,
+   "tax_rate": 0.0958,
+   "tax_note": "FY22 provision/(benefit) for taxes $3,328M / income from continuing operations before taxes $34,729M (FY2022 10-K)",
+   "fcf_b": 26.03,
+   "fcf_label": "FY22",
+   "fcf_note": "net cash provided by operating activities $29,267M less purchases of property, plant and equipment $3,236M",
+   "cash_b": 22.73,
+   "cash_note": "cash and cash equivalents $416M and short-term investments $22,316M at December 31, 2022",
+   "dividend_annual": 1.64,
+   "dividend_note": "$0.41 quarterly (the first-quarter 2023 dividend declared in December 2022, FY2022 10-K)",
+   "business_line": "research-based global biopharmaceutical company",
+   "groups": [
+    [
+     "Biopharma",
+     98.988,
+     24.4
+    ],
+    [
+     "Pfizer CentreOne",
+     1.342,
+     -22.5
+    ]
+   ],
+   "groups_basis": "FY22 revenues by operating segment and other business (FY2022 10-K)",
+   "pharma_groups": [
+    "Biopharma"
+   ],
+   "pharma_label": "Biopharma",
+   "cash_return_text": "39 million shares purchased for $2 billion in the first quarter of 2022, none after (FY2022 10-K)"
+  },
+  {
+   "published": "2024-02-22",
+   "sources": [
+    "PF102",
+    "PF95",
+    "PF90",
+    "PF85",
+    "PF78"
+   ],
+   "company": "Pfizer Inc",
+   "exchange": "NYSE",
+   "fy_label": "FY23",
+   "why": "'is a research-based, global biopharmaceutical company. We apply science and our global resources to bring therapies to people that extend and significantly improve their lives through the discovery, development, manufacture, marketing, sale and distribution of biopharmaceutical products worldwide' (FY2023 10-K, Item 1); 'Certain of our products have experienced patent-based expirations or loss of regulatory exclusivity in certain markets in the last few years, and we expect certain products to face increased generic competition over the next few years' (Item 1A); 'when generic or biosimilar competition does commence, the resulting price competition can substantially decrease our revenues for the impacted products, often in a very short period of time' (Item 1A); 'Our business is conducted in intensely competitive and highly regulated markets'",
+   "fiscal_year_ends": {
+    "2017": "2017-12-31",
+    "2018": "2018-12-31",
+    "2019": "2019-12-31",
+    "2020": "2020-12-31",
+    "2021": "2021-12-31",
+    "2022": "2022-12-31",
+    "2023": "2023-12-31"
+   },
+   "eps_gaap": {
+    "2017": 2.23,
+    "2018": 0.64,
+    "2019": 1.89,
+    "2020": 1.18,
+    "2021": 3.93,
+    "2022": 5.47,
+    "2023": 0.37
+   },
+   "eps_normalized": {
+    "2017": 2.23,
+    "2018": 0.64,
+    "2019": 1.89,
+    "2020": 1.18,
+    "2021": 3.93,
+    "2022": 5.47
+   },
+   "eps_sources": {
+    "2017": "PF85",
+    "2018": "PF85",
+    "2019": "PF90",
+    "2020": "PF95",
+    "2021": "PF102",
+    "2022": "PF102",
+    "2023": "PF102"
+   },
+   "normalization": "diluted EPS from continuing operations, each year from the latest 10-K that reports it; the company's adjusted diluted EPS is shown, never used (it removes the recurring amortization of acquired intangibles; the 2008-2009 rule); 2016 is excluded: restated without Upjohn, a $(0.02) loss a diluted share from continuing operations (FY2020 10-K), and a loss has no P/E; a distorted year that is not the latest takes the history and the P/E window with it (the r2 wording, 'the P/E window starts after it'; the PFE 2003 rule), so the history and the window start with 2017; 2017-2022 kept (the earlier tests, on the bases then published); 2023 is excluded: reported $0.37 a diluted share from continuing operations is 0.31 times the $1.18 without its acquisition-related items and certain significant items (Q4 2023 release), under half, and no figure excluding only them is published (Pfizer's adjusted EPS also removes amortization, which recurs); it stays out of the history as a gap after (the NKE FY2018 and XOM FY2020 encoding: a year excluded as the latest keeps that encoding when later years follow it)",
+   "revenue_usd_b": {
+    "2017": 38.757,
+    "2018": 40.825,
+    "2019": 40.905,
+    "2020": 41.651,
+    "2021": 81.288,
+    "2022": 100.33,
+    "2023": 58.496
+   },
+   "revenue_sources": {
+    "2017": "PF85",
+    "2018": "PF85",
+    "2019": "PF90",
+    "2020": "PF95",
+    "2021": "PF102",
+    "2022": "PF102",
+    "2023": "PF102"
+   },
+   "diluted_shares_m": {
+    "2017": 6058.0,
+    "2018": 5977.0,
+    "2019": 5675.0,
+    "2020": 5632.0,
+    "2021": 5708.0,
+    "2022": 5733.0,
+    "2023": 5709.0
+   },
+   "shares_sources": {
+    "2017": "PF78",
+    "2018": "PF85",
+    "2019": "PF90",
+    "2020": "PF95",
+    "2021": "PF102",
+    "2022": "PF102",
+    "2023": "PF102"
+   },
+   "pe_window_start": "2017-01-01",
+   "excluded_note": "2016 is excluded: restated without Upjohn, a $(0.02) loss a diluted share from continuing operations (FY2020 10-K), and a loss has no P/E; a distorted year that is not the latest takes the history and the P/E window with it (the r2 wording, 'the P/E window starts after it'; the PFE 2003 rule), so the history and the window start with 2017",
+   "eps_excluded": {
+    "2023": "reported $0.37 a diluted share from continuing operations is 0.31 times the $1.18 without its acquisition-related items and certain significant items (Q4 2023 release), under half, and no figure excluding only them is published (Pfizer's adjusted EPS also removes amortization, which recurs)"
+   },
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 1.81,
+   "prev_fy_pretax_margin_note": "FY23 income from continuing operations before taxes $1,058M / revenues $58,496M (FY2023 10-K)",
+   "prev_fy_gross_margin": 57.34,
+   "prev_fy_sales_growth": -41.7,
+   "prev_fy_us_pct": -36.2,
+   "prev_fy_intl_pct": -45.7,
+   "tax_rate": -1.0539,
+   "tax_note": "FY23 provision/(benefit) for taxes $-1,115M / income from continuing operations before taxes $1,058M (FY2023 10-K)",
+   "fcf_b": 4.79,
+   "fcf_label": "FY23",
+   "fcf_note": "net cash provided by operating activities $8,700M less purchases of property, plant and equipment $3,907M",
+   "cash_b": 12.69,
+   "cash_note": "cash and cash equivalents $2,853M and short-term investments $9,837M at December 31, 2023",
+   "dividend_annual": 1.68,
+   "dividend_note": "$0.42 quarterly (the first-quarter 2024 dividend declared in December 2023, FY2023 10-K)",
+   "business_line": "research-based global biopharmaceutical company",
+   "groups": [
+    [
+     "Biopharma",
+     57.186,
+     -42.2
+    ],
+    [
+     "Business Innovation",
+     1.31,
+     -2.4
+    ]
+   ],
+   "groups_basis": "FY23 revenues by operating segment and other business (FY2023 10-K)",
+   "pharma_groups": [
+    "Biopharma"
+   ],
+   "pharma_label": "Biopharma",
+   "cash_return_text": "no shares purchased in 2023; the last purchase was 39 million shares for $2 billion in the first quarter of 2022 (FY2023 10-K)"
+  },
+  {
+   "published": "2025-02-28",
+   "sources": [
+    "PF108",
+    "PF102",
+    "PF95",
+    "PF90",
+    "PF85",
+    "PF78"
+   ],
+   "company": "Pfizer Inc",
+   "exchange": "NYSE",
+   "fy_label": "FY24",
+   "why": "'is a research-based, global biopharmaceutical company. We apply science and our global resources to bring therapies to people that extend and significantly improve their lives through the discovery, development, manufacture, marketing, sale and distribution of biopharmaceutical products worldwide' (FY2024 10-K, Item 1); 'Certain of our products have experienced patent-based expirations or loss of regulatory exclusivity in certain markets in the last few years, and we expect certain products to face increased generic competition over the next few years' (Item 1A); 'when generic or biosimilar competition does commence, the resulting price competition can substantially decrease our revenues for the impacted products, often in a very short period of time' (Item 1A); 'Our business is conducted in intensely competitive and highly regulated markets'",
+   "fiscal_year_ends": {
+    "2017": "2017-12-31",
+    "2018": "2018-12-31",
+    "2019": "2019-12-31",
+    "2020": "2020-12-31",
+    "2021": "2021-12-31",
+    "2022": "2022-12-31",
+    "2023": "2023-12-31",
+    "2024": "2024-12-31"
+   },
+   "eps_gaap": {
+    "2017": 2.23,
+    "2018": 0.64,
+    "2019": 1.89,
+    "2020": 1.18,
+    "2021": 3.93,
+    "2022": 5.47,
+    "2023": 0.37,
+    "2024": 1.41
+   },
+   "eps_normalized": {
+    "2017": 2.23,
+    "2018": 0.64,
+    "2019": 1.89,
+    "2020": 1.18,
+    "2021": 3.93,
+    "2022": 5.47,
+    "2024": 1.41
+   },
+   "eps_sources": {
+    "2017": "PF85",
+    "2018": "PF85",
+    "2019": "PF90",
+    "2020": "PF95",
+    "2021": "PF102",
+    "2022": "PF108",
+    "2023": "PF108",
+    "2024": "PF108"
+   },
+   "normalization": "diluted EPS from continuing operations, each year from the latest 10-K that reports it; the company's adjusted diluted EPS is shown, never used (it removes the recurring amortization of acquired intangibles; the 2008-2009 rule); 2016 is excluded: restated without Upjohn, a $(0.02) loss a diluted share from continuing operations (FY2020 10-K), and a loss has no P/E; a distorted year that is not the latest takes the history and the P/E window with it (the r2 wording, 'the P/E window starts after it'; the PFE 2003 rule), so the history and the window start with 2017; 2017-2022 kept (the earlier tests, on the bases then published); 2022's revenues restated to $101.175B and 2023's to $59.553B with royalty income in revenues; 2024 kept, on the PFE measure (per share, after tax, acquisition-related items and certain significant items): charges of $1.00 a share after the release's non-GAAP tax line (allocated pro rata), $2.41 without them, reported EPS 0.59 times it (Q4 2024 release); 2023 is excluded: reported $0.37 a diluted share from continuing operations is 0.31 times the $1.18 without its acquisition-related items and certain significant items (Q4 2023 release), under half, and no figure excluding only them is published (Pfizer's adjusted EPS also removes amortization, which recurs); it stays out of the history as a gap after (the NKE FY2018 and XOM FY2020 encoding: a year excluded as the latest keeps that encoding when later years follow it)",
+   "revenue_usd_b": {
+    "2017": 38.757,
+    "2018": 40.825,
+    "2019": 40.905,
+    "2020": 41.651,
+    "2021": 81.288,
+    "2022": 101.175,
+    "2023": 59.553,
+    "2024": 63.627
+   },
+   "revenue_sources": {
+    "2017": "PF85",
+    "2018": "PF85",
+    "2019": "PF90",
+    "2020": "PF95",
+    "2021": "PF102",
+    "2022": "PF108",
+    "2023": "PF108",
+    "2024": "PF108"
+   },
+   "diluted_shares_m": {
+    "2017": 6058.0,
+    "2018": 5977.0,
+    "2019": 5675.0,
+    "2020": 5632.0,
+    "2021": 5708.0,
+    "2022": 5733.0,
+    "2023": 5709.0,
+    "2024": 5700.0
+   },
+   "shares_sources": {
+    "2017": "PF78",
+    "2018": "PF85",
+    "2019": "PF90",
+    "2020": "PF95",
+    "2021": "PF102",
+    "2022": "PF108",
+    "2023": "PF108",
+    "2024": "PF108"
+   },
+   "pe_window_start": "2017-01-01",
+   "excluded_note": "2016 is excluded: restated without Upjohn, a $(0.02) loss a diluted share from continuing operations (FY2020 10-K), and a loss has no P/E; a distorted year that is not the latest takes the history and the P/E window with it (the r2 wording, 'the P/E window starts after it'; the PFE 2003 rule), so the history and the window start with 2017",
+   "eps_excluded": {
+    "2023": "reported $0.37 a diluted share from continuing operations is 0.31 times the $1.18 without its acquisition-related items and certain significant items (Q4 2023 release), under half, and no figure excluding only them is published (Pfizer's adjusted EPS also removes amortization, which recurs)"
+   },
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 12.61,
+   "prev_fy_pretax_margin_note": "FY24 income from continuing operations before taxes $8,023M / revenues $63,627M (FY2024 10-K)",
+   "prev_fy_gross_margin": 71.94,
+   "prev_fy_sales_growth": 6.8,
+   "prev_fy_us_pct": 37.5,
+   "prev_fy_intl_pct": -20.6,
+   "tax_rate": -0.0035,
+   "tax_note": "FY24 provision/(benefit) for taxes $-28M / income from continuing operations before taxes $8,023M (FY2024 10-K)",
+   "fcf_b": 9.84,
+   "fcf_label": "FY24",
+   "fcf_note": "net cash provided by operating activities $12,744M less purchases of property, plant and equipment $2,909M",
+   "cash_b": 20.48,
+   "cash_note": "cash and cash equivalents $1,043M and short-term investments $19,434M at December 31, 2024",
+   "dividend_annual": 1.72,
+   "dividend_note": "$0.43 quarterly (the first-quarter 2025 dividend declared in December 2024, FY2024 10-K)",
+   "business_line": "research-based global biopharmaceutical company",
+   "groups": [
+    [
+     "Biopharma",
+     62.4,
+     7.1
+    ],
+    [
+     "Pfizer CentreOne",
+     1.146,
+     -9.9
+    ],
+    [
+     "Pfizer Ignite",
+     0.082,
+     86.4
+    ]
+   ],
+   "groups_basis": "FY24 revenues by operating segment and other business (FY2024 10-K)",
+   "pharma_groups": [
+    "Biopharma"
+   ],
+   "pharma_label": "Biopharma",
+   "cash_return_text": "no shares purchased in 2024; the last purchase was 39 million shares for $2 billion in the first quarter of 2022 (FY2024 10-K)"
+  },
+  {
+   "published": "2026-02-26",
+   "sources": [
+    "PF114",
+    "PF108",
+    "PF102",
+    "PF95",
+    "PF90",
+    "PF85",
+    "PF78"
+   ],
+   "company": "Pfizer Inc",
+   "exchange": "NYSE",
+   "fy_label": "FY25",
+   "why": "'is a research-based, global biopharmaceutical company. We apply science and our global resources to bring therapies to people that extend and significantly improve their lives through the discovery, development, manufacture, marketing, sale and distribution of\nPfizer Inc' (FY2025 10-K, Item 1); 'Certain of our products have experienced patent-based expirations or loss of regulatory exclusivity in certain markets in the last few years, and we expect certain products to face new or increased generic competition over the next few years' (Item 1A); 'when generic or biosimilar competition does commence, the resulting price competition can substantially decrease our revenues for the impacted products, often in a very short period of time' (Item 1A); 'Our business is conducted in intensely competitive and highly regulated markets'",
+   "fiscal_year_ends": {
+    "2017": "2017-12-31",
+    "2018": "2018-12-31",
+    "2019": "2019-12-31",
+    "2020": "2020-12-31",
+    "2021": "2021-12-31",
+    "2022": "2022-12-31",
+    "2023": "2023-12-31",
+    "2024": "2024-12-31",
+    "2025": "2025-12-31"
+   },
+   "eps_gaap": {
+    "2017": 2.23,
+    "2018": 0.64,
+    "2019": 1.89,
+    "2020": 1.18,
+    "2021": 3.93,
+    "2022": 5.47,
+    "2023": 0.37,
+    "2024": 1.41,
+    "2025": 1.36
+   },
+   "eps_normalized": {
+    "2017": 2.23,
+    "2018": 0.64,
+    "2019": 1.89,
+    "2020": 1.18,
+    "2021": 3.93,
+    "2022": 5.47,
+    "2024": 1.41,
+    "2025": 1.36
+   },
+   "eps_sources": {
+    "2017": "PF85",
+    "2018": "PF85",
+    "2019": "PF90",
+    "2020": "PF95",
+    "2021": "PF102",
+    "2022": "PF108",
+    "2023": "PF114",
+    "2024": "PF114",
+    "2025": "PF114"
+   },
+   "normalization": "diluted EPS from continuing operations, each year from the latest 10-K that reports it; the company's adjusted diluted EPS is shown, never used (it removes the recurring amortization of acquired intangibles; the 2008-2009 rule); 2016 is excluded: restated without Upjohn, a $(0.02) loss a diluted share from continuing operations (FY2020 10-K), and a loss has no P/E; a distorted year that is not the latest takes the history and the P/E window with it (the r2 wording, 'the P/E window starts after it'; the PFE 2003 rule), so the history and the window start with 2017; 2017-2022 and 2024 kept (the earlier tests, on the bases then published); 2025 kept, on the PFE measure (per share, after tax, acquisition-related items and certain significant items): charges of $1.20 a share after the release's non-GAAP tax line (allocated pro rata), $2.56 without them, reported EPS 0.53 times it (Q4 2025 release) (the near case: the same test on income before tax gives 0.46, under half); 2023 is excluded: reported $0.37 a diluted share from continuing operations is 0.31 times the $1.18 without its acquisition-related items and certain significant items (Q4 2023 release), under half, and no figure excluding only them is published (Pfizer's adjusted EPS also removes amortization, which recurs); it stays out of the history as a gap after (the NKE FY2018 and XOM FY2020 encoding: a year excluded as the latest keeps that encoding when later years follow it)",
+   "revenue_usd_b": {
+    "2017": 38.757,
+    "2018": 40.825,
+    "2019": 40.905,
+    "2020": 41.651,
+    "2021": 81.288,
+    "2022": 101.175,
+    "2023": 59.553,
+    "2024": 63.627,
+    "2025": 62.579
+   },
+   "revenue_sources": {
+    "2017": "PF85",
+    "2018": "PF85",
+    "2019": "PF90",
+    "2020": "PF95",
+    "2021": "PF102",
+    "2022": "PF108",
+    "2023": "PF114",
+    "2024": "PF114",
+    "2025": "PF114"
+   },
+   "diluted_shares_m": {
+    "2017": 6058.0,
+    "2018": 5977.0,
+    "2019": 5675.0,
+    "2020": 5632.0,
+    "2021": 5708.0,
+    "2022": 5733.0,
+    "2023": 5709.0,
+    "2024": 5700.0,
+    "2025": 5713.0
+   },
+   "shares_sources": {
+    "2017": "PF78",
+    "2018": "PF85",
+    "2019": "PF90",
+    "2020": "PF95",
+    "2021": "PF102",
+    "2022": "PF108",
+    "2023": "PF114",
+    "2024": "PF114",
+    "2025": "PF114"
+   },
+   "pe_window_start": "2017-01-01",
+   "excluded_note": "2016 is excluded: restated without Upjohn, a $(0.02) loss a diluted share from continuing operations (FY2020 10-K), and a loss has no P/E; a distorted year that is not the latest takes the history and the P/E window with it (the r2 wording, 'the P/E window starts after it'; the PFE 2003 rule), so the history and the window start with 2017",
+   "eps_excluded": {
+    "2023": "reported $0.37 a diluted share from continuing operations is 0.31 times the $1.18 without its acquisition-related items and certain significant items (Q4 2023 release), under half, and no figure excluding only them is published (Pfizer's adjusted EPS also removes amortization, which recurs)"
+   },
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 12.02,
+   "prev_fy_pretax_margin_note": "FY25 income from continuing operations before taxes $7,520M / revenues $62,579M (FY2025 10-K)",
+   "prev_fy_gross_margin": 74.33,
+   "prev_fy_sales_growth": -1.6,
+   "prev_fy_us_pct": -4.2,
+   "prev_fy_intl_pct": 2.3,
+   "tax_rate": -0.0354,
+   "tax_note": "FY25 provision/(benefit) for taxes $-266M / income from continuing operations before taxes $7,520M (FY2025 10-K)",
+   "fcf_b": 9.07,
+   "fcf_label": "FY25",
+   "fcf_note": "net cash provided by operating activities $11,704M less purchases of property, plant and equipment $2,629M",
+   "cash_b": 13.6,
+   "cash_note": "cash and cash equivalents $1,142M and short-term investments $12,454M at December 31, 2025",
+   "dividend_annual": 1.72,
+   "dividend_note": "$0.43 quarterly (the first-quarter 2026 dividend declared in December 2025, FY2025 10-K)",
+   "business_line": "research-based global biopharmaceutical company",
+   "groups": [
+    [
+     "Biopharma",
+     61.199,
+     -1.9
+    ],
+    [
+     "Pfizer CentreOne",
+     1.338,
+     16.8
+    ],
+    [
+     "Pfizer Ignite",
+     0.041,
+     -50.0
+    ]
+   ],
+   "groups_basis": "FY25 revenues by operating segment and other business (FY2025 10-K)",
+   "pharma_groups": [
+    "Biopharma"
+   ],
+   "pharma_label": "Biopharma",
+   "cash_return_text": "no share purchase stated for 2025; remaining authorization about $3.3 billion (FY2025 10-K)"
   }
  ],
  "prints": [
@@ -5032,6 +5871,797 @@
    "cash_return_text": "no share purchase stated in the release",
    "next_print": "Q4 2021 print (early February)",
    "note": "Comirnaty direct sales and alliance revenues $12,977M in the quarter; U.S. $7,079M and international $17,014M add to $24,093M, $1M under the worldwide $24,094M (the release's rounding, as published)"
+  },
+  {
+   "quarter": "Q4 2021",
+   "fy": 2021,
+   "q": 4,
+   "published": "2022-02-08",
+   "source": "PF89",
+   "release": "Feb 8",
+   "release_time": "before the open on Feb 8: 8-K accepted 08:53 ET",
+   "raw": {
+    "rev_m": 23838,
+    "rev_prior_m": 11634,
+    "cos_m": 9736,
+    "cos_prior_m": 2868,
+    "pretax_m": 3827,
+    "pretax_prior_m": 554,
+    "us_m": 7680,
+    "us_prior_m": 5834,
+    "intl_m": 16159,
+    "intl_prior_m": 5800,
+    "diluted_shares_m": 5768
+   },
+   "sales_b": 23.838,
+   "sales_pct": 104.9,
+   "us_pct": 31.6,
+   "intl_pct": 178.6,
+   "gross_margin": 59.16,
+   "gross_margin_bp": -1619.0,
+   "pretax_margin": 16.05,
+   "pretax_margin_bp": 1129.2,
+   "eps_q": 0.62,
+   "eps_q_prior": 0.11,
+   "diluted_shares_m": 5768.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q1 2022 print (early May)",
+   "note": "Meridian a discontinued operation after its sale on 2021-12-31, and Upjohn (as published)",
+   "fy_actual": {
+    "fy": 2021,
+    "fy_label": "FY21",
+    "eps_normalized": 3.93,
+    "revenue_usd_b": 81.288,
+    "diluted_shares_m": 5708.0,
+    "normalization_note": "FY2021 $3.93 from continuing operations (Q4 2021 release); kept: acquisition-related items $52M and certain significant items $2,294M before tax, after the release's non-GAAP tax line ($-2,848M on $5,521M of non-GAAP items, allocated pro rata) charges of $0.20 a share, so the EPS without them is $4.13 and reported EPS 0.95 times it (the r2 test: under half or more than double excludes)",
+    "gross_margin": 62.08,
+    "pretax_margin": 29.91,
+    "pretax_margin_note": "FY21 income from continuing operations before taxes $24,311M / revenues $81,288M (Q4 2021 release)",
+    "sales_growth": 95.2,
+    "us_pct": 38.6,
+    "intl_pct": 155.2,
+    "tax_rate": 0.0762,
+    "tax_note": "FY21 provision/(benefit) for taxes $1,852M / income from continuing operations before taxes $24,311M"
+   },
+   "restates": {
+    "2020": {
+     "eps": 1.18,
+     "revenue_usd_b": 41.651
+    }
+   },
+   "restates_note": "FY2020 $1.18 and $41.651B from continuing operations, as restated in the Q4 2021 release (Meridian a discontinued operation, pension gains and losses recognized immediately from 2021; $1.24 and $41.908B in the FY2020 10-K)"
+  },
+  {
+   "quarter": "Q1 2022",
+   "fy": 2022,
+   "q": 1,
+   "published": "2022-05-03",
+   "source": "PF91",
+   "release": "May 3",
+   "release_time": "before the open on May 3: 8-K accepted 08:08 ET",
+   "raw": {
+    "rev_m": 25661,
+    "rev_prior_m": 14516,
+    "cos_m": 9984,
+    "cos_prior_m": 4157,
+    "pretax_m": 9050,
+    "pretax_prior_m": 5692,
+    "us_m": 8918,
+    "us_prior_m": 7530,
+    "intl_m": 16743,
+    "intl_prior_m": 6985,
+    "diluted_shares_m": 5758
+   },
+   "sales_b": 25.661,
+   "sales_pct": 76.8,
+   "us_pct": 18.4,
+   "intl_pct": 139.7,
+   "gross_margin": 61.09,
+   "gross_margin_bp": -1027.0,
+   "pretax_margin": 35.27,
+   "pretax_margin_bp": -394.4,
+   "eps_q": 1.37,
+   "eps_q_prior": 0.86,
+   "diluted_shares_m": 5758.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q2 2022 print (late July)"
+  },
+  {
+   "quarter": "Q2 2022",
+   "fy": 2022,
+   "q": 2,
+   "published": "2022-07-28",
+   "source": "PF92",
+   "release": "Jul 28",
+   "release_time": "before the open on Jul 28: 8-K accepted 08:09 ET",
+   "raw": {
+    "rev_m": 27742,
+    "rev_prior_m": 18899,
+    "cos_m": 8648,
+    "cos_prior_m": 6996,
+    "pretax_m": 11447,
+    "pretax_prior_m": 6949,
+    "us_m": 11222,
+    "us_prior_m": 7515,
+    "intl_m": 16519,
+    "intl_prior_m": 11384,
+    "diluted_shares_m": 5712
+   },
+   "sales_b": 27.742,
+   "sales_pct": 46.8,
+   "us_pct": 49.3,
+   "intl_pct": 45.1,
+   "gross_margin": 68.83,
+   "gross_margin_bp": 584.5,
+   "pretax_margin": 41.26,
+   "pretax_margin_bp": 449.3,
+   "eps_q": 1.73,
+   "eps_q_prior": 1.02,
+   "diluted_shares_m": 5712.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q3 2022 print (early November)"
+  },
+  {
+   "quarter": "Q3 2022",
+   "fy": 2022,
+   "q": 3,
+   "published": "2022-11-01",
+   "source": "PF93",
+   "release": "Nov 1",
+   "release_time": "before the open on Nov 1: 8-K accepted 08:11 ET",
+   "raw": {
+    "rev_m": 22638,
+    "rev_prior_m": 24035,
+    "cos_m": 6063,
+    "cos_prior_m": 9932,
+    "pretax_m": 9001,
+    "pretax_prior_m": 7843,
+    "us_m": 13851,
+    "us_prior_m": 7020,
+    "intl_m": 8786,
+    "intl_prior_m": 17014,
+    "diluted_shares_m": 5718
+   },
+   "sales_b": 22.638,
+   "sales_pct": -5.8,
+   "us_pct": 97.3,
+   "intl_pct": -48.4,
+   "gross_margin": 73.22,
+   "gross_margin_bp": 1454.1,
+   "pretax_margin": 39.76,
+   "pretax_margin_bp": 712.9,
+   "eps_q": 1.51,
+   "eps_q_prior": 1.43,
+   "diluted_shares_m": 5718.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q4 2022 print (early February)"
+  },
+  {
+   "quarter": "Q4 2022",
+   "fy": 2022,
+   "q": 4,
+   "published": "2023-01-31",
+   "source": "PF94",
+   "release": "Jan 31",
+   "release_time": "before the open on Jan 31: 8-K accepted 08:11 ET",
+   "raw": {
+    "rev_m": 24290,
+    "rev_prior_m": 23838,
+    "cos_m": 9648,
+    "cos_prior_m": 9736,
+    "pretax_m": 5231,
+    "pretax_prior_m": 3827,
+    "us_m": 8481,
+    "us_prior_m": 7680,
+    "intl_m": 15808,
+    "intl_prior_m": 16159,
+    "diluted_shares_m": 5743
+   },
+   "sales_b": 24.29,
+   "sales_pct": 1.9,
+   "us_pct": 10.4,
+   "intl_pct": -2.2,
+   "gross_margin": 60.28,
+   "gross_margin_bp": 112.2,
+   "pretax_margin": 21.54,
+   "pretax_margin_bp": 548.1,
+   "eps_q": 0.87,
+   "eps_q_prior": 0.62,
+   "diluted_shares_m": 5743.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q1 2023 print (early May)",
+   "fy_actual": {
+    "fy": 2022,
+    "fy_label": "FY22",
+    "eps_normalized": 5.47,
+    "revenue_usd_b": 100.33,
+    "diluted_shares_m": 5733.0,
+    "normalization_note": "FY2022 $5.47 from continuing operations (Q4 2022 release); kept: acquisition-related items $832M and certain significant items $3,609M before tax, after the release's non-GAAP tax line ($-1,683M on $8,050M of non-GAAP items, allocated pro rata) charges of $0.61 a share, so the EPS without them is $6.08 and reported EPS 0.90 times it (the r2 test: under half or more than double excludes)",
+    "gross_margin": 65.77,
+    "pretax_margin": 34.61,
+    "pretax_margin_note": "FY22 income from continuing operations before taxes $34,729M / revenues $100,330M (Q4 2022 release)",
+    "sales_growth": 23.4,
+    "us_pct": 42.8,
+    "intl_pct": 12.3,
+    "tax_rate": 0.0958,
+    "tax_note": "FY22 provision/(benefit) for taxes $3,328M / income from continuing operations before taxes $34,729M"
+   }
+  },
+  {
+   "quarter": "Q1 2023",
+   "fy": 2023,
+   "q": 1,
+   "published": "2023-05-02",
+   "source": "PF96",
+   "release": "May 2",
+   "release_time": "before the open on May 2: 8-K accepted 08:05 ET",
+   "raw": {
+    "rev_m": 18282,
+    "rev_prior_m": 25661,
+    "cos_m": 4886,
+    "cos_prior_m": 9984,
+    "pretax_m": 6270,
+    "pretax_prior_m": 9050,
+    "us_m": 8507,
+    "us_prior_m": 8918,
+    "intl_m": 9775,
+    "intl_prior_m": 16743,
+    "diluted_shares_m": 5727
+   },
+   "sales_b": 18.282,
+   "sales_pct": -28.8,
+   "us_pct": -4.6,
+   "intl_pct": -41.6,
+   "gross_margin": 73.27,
+   "gross_margin_bp": 1218.2,
+   "pretax_margin": 34.3,
+   "pretax_margin_bp": -97.1,
+   "eps_q": 0.97,
+   "eps_q_prior": 1.37,
+   "diluted_shares_m": 5727.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q2 2023 print (late July)"
+  },
+  {
+   "quarter": "Q2 2023",
+   "fy": 2023,
+   "q": 2,
+   "published": "2023-08-01",
+   "source": "PF97",
+   "release": "Aug 1",
+   "release_time": "before the open on Aug 1: 8-K accepted 08:09 ET",
+   "raw": {
+    "rev_m": 12734,
+    "rev_prior_m": 27742,
+    "cos_m": 3237,
+    "cos_prior_m": 8648,
+    "pretax_m": 2269,
+    "pretax_prior_m": 11447,
+    "us_m": 6185,
+    "us_prior_m": 11222,
+    "intl_m": 6548,
+    "intl_prior_m": 16519,
+    "diluted_shares_m": 5713
+   },
+   "sales_b": 12.734,
+   "sales_pct": -54.1,
+   "us_pct": -44.9,
+   "intl_pct": -60.4,
+   "gross_margin": 74.58,
+   "gross_margin_bp": 575.3,
+   "pretax_margin": 17.82,
+   "pretax_margin_bp": -2344.4,
+   "eps_q": 0.41,
+   "eps_q_prior": 1.73,
+   "diluted_shares_m": 5713.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q3 2023 print (early November)"
+  },
+  {
+   "quarter": "Q3 2023",
+   "fy": 2023,
+   "q": 3,
+   "published": "2023-10-31",
+   "source": "PF99",
+   "release": "Oct 31",
+   "release_time": "before the open on Oct 31: 8-K accepted 08:04 ET",
+   "raw": {
+    "rev_m": 13232,
+    "rev_prior_m": 22638,
+    "cos_m": 9269,
+    "cos_prior_m": 6063,
+    "pretax_m": -3352,
+    "pretax_prior_m": 9001,
+    "us_m": 7804,
+    "us_prior_m": 13851,
+    "intl_m": 5427,
+    "intl_prior_m": 8786,
+    "diluted_shares_m": 5646
+   },
+   "sales_b": 13.232,
+   "sales_pct": -41.5,
+   "us_pct": -43.7,
+   "intl_pct": -38.2,
+   "gross_margin": 29.95,
+   "gross_margin_bp": -4326.7,
+   "pretax_margin": -25.33,
+   "pretax_margin_bp": -6509.3,
+   "eps_q": -0.42,
+   "eps_q_prior": 1.51,
+   "diluted_shares_m": 5646.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q4 2023 print (late January)"
+  },
+  {
+   "quarter": "Q4 2023",
+   "fy": 2023,
+   "q": 4,
+   "published": "2024-01-30",
+   "source": "PF101",
+   "release": "Jan 30",
+   "release_time": "before the open on Jan 30: 8-K accepted 08:04 ET",
+   "raw": {
+    "rev_m": 14249,
+    "rev_prior_m": 24290,
+    "cos_m": 7562,
+    "cos_prior_m": 9648,
+    "pretax_m": -4129,
+    "pretax_prior_m": 5231,
+    "us_m": 4591,
+    "us_prior_m": 8481,
+    "intl_m": 9657,
+    "intl_prior_m": 15808,
+    "diluted_shares_m": 5647
+   },
+   "sales_b": 14.249,
+   "sales_pct": -41.3,
+   "us_pct": -45.9,
+   "intl_pct": -38.9,
+   "gross_margin": 46.93,
+   "gross_margin_bp": -1335.0,
+   "pretax_margin": -28.98,
+   "pretax_margin_bp": -5051.3,
+   "eps_q": -0.59,
+   "eps_q_prior": 0.87,
+   "diluted_shares_m": 5647.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q1 2024 print (early May)",
+   "note": "Seagen from its acquisition on 2023-12-14 (as published)",
+   "fy_actual": {
+    "fy": 2023,
+    "fy_label": "FY23",
+    "eps_normalized": null,
+    "revenue_usd_b": 58.496,
+    "diluted_shares_m": 5709.0,
+    "normalization_note": "FY2023 $0.37 from continuing operations (Q4 2023 release); excluded: acquisition-related items $1,874M and certain significant items $3,916M before tax, after the release's non-GAAP tax line ($-2,131M on $10,523M of non-GAAP items, allocated pro rata) charges of $0.81 a share, so the EPS without them is $1.18 and reported EPS 0.31 times it (the r2 test: under half or more than double excludes)",
+    "gross_margin": 57.34,
+    "pretax_margin": 1.81,
+    "pretax_margin_note": "FY23 income from continuing operations before taxes $1,058M / revenues $58,496M (Q4 2023 release)",
+    "sales_growth": -41.7,
+    "us_pct": -36.2,
+    "intl_pct": -45.7,
+    "tax_rate": -1.0539,
+    "tax_note": "FY23 provision/(benefit) for taxes $-1,115M / income from continuing operations before taxes $1,058M",
+    "excluded_note": "reported $0.37 a diluted share from continuing operations is 0.31 times the $1.18 without its acquisition-related items and certain significant items (Q4 2023 release), under half, and no figure excluding only them is published (Pfizer's adjusted EPS also removes amortization, which recurs)"
+   }
+  },
+  {
+   "quarter": "Q1 2024",
+   "fy": 2024,
+   "q": 1,
+   "published": "2024-05-01",
+   "source": "PF103",
+   "release": "May 1",
+   "release_time": "before the open on May 1: 8-K accepted 08:11 ET",
+   "raw": {
+    "rev_m": 14879,
+    "rev_prior_m": 18486,
+    "cos_m": 3379,
+    "cos_prior_m": 4886,
+    "pretax_m": 3421,
+    "pretax_prior_m": 6270,
+    "us_m": 9514,
+    "us_prior_m": 8711,
+    "intl_m": 5365,
+    "intl_prior_m": 9775,
+    "diluted_shares_m": 5697
+   },
+   "sales_b": 14.879,
+   "sales_pct": -19.5,
+   "us_pct": 9.2,
+   "intl_pct": -45.1,
+   "gross_margin": 77.29,
+   "gross_margin_bp": 372.1,
+   "pretax_margin": 22.99,
+   "pretax_margin_bp": -1092.5,
+   "eps_q": 0.55,
+   "eps_q_prior": 0.97,
+   "diluted_shares_m": 5697.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q2 2024 print (early August)"
+  },
+  {
+   "quarter": "Q2 2024",
+   "fy": 2024,
+   "q": 2,
+   "published": "2024-07-30",
+   "source": "PF104",
+   "release": "Jul 30",
+   "release_time": "before the open on Jul 30: 8-K accepted 08:04 ET",
+   "raw": {
+    "rev_m": 13283,
+    "rev_prior_m": 13007,
+    "cos_m": 3300,
+    "cos_prior_m": 3237,
+    "pretax_m": -103,
+    "pretax_prior_m": 2269,
+    "us_m": 7892,
+    "us_prior_m": 6458,
+    "intl_m": 5391,
+    "intl_prior_m": 6548,
+    "diluted_shares_m": 5696
+   },
+   "sales_b": 13.283,
+   "sales_pct": 2.1,
+   "us_pct": 22.2,
+   "intl_pct": -17.7,
+   "gross_margin": 75.16,
+   "gross_margin_bp": 4.3,
+   "pretax_margin": -0.78,
+   "pretax_margin_bp": -1822.0,
+   "eps_q": 0.01,
+   "eps_q_prior": 0.41,
+   "diluted_shares_m": 5696.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q3 2024 print (late October)"
+  },
+  {
+   "quarter": "Q3 2024",
+   "fy": 2024,
+   "q": 3,
+   "published": "2024-10-29",
+   "source": "PF105",
+   "release": "Oct 29",
+   "release_time": "before the open on Oct 29: 8-K accepted 08:06 ET",
+   "raw": {
+    "rev_m": 17702,
+    "rev_prior_m": 13491,
+    "cos_m": 5263,
+    "cos_prior_m": 9269,
+    "pretax_m": 4715,
+    "pretax_prior_m": -3352,
+    "us_m": 12064,
+    "us_prior_m": 8064,
+    "intl_m": 5638,
+    "intl_prior_m": 5427,
+    "diluted_shares_m": 5705
+   },
+   "sales_b": 17.702,
+   "sales_pct": 31.2,
+   "us_pct": 49.6,
+   "intl_pct": 3.9,
+   "gross_margin": 70.27,
+   "gross_margin_bp": 3897.4,
+   "pretax_margin": 26.64,
+   "pretax_margin_bp": 5148.2,
+   "eps_q": 0.79,
+   "eps_q_prior": -0.42,
+   "diluted_shares_m": 5705.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q4 2024 print (late January)"
+  },
+  {
+   "quarter": "Q4 2024",
+   "fy": 2024,
+   "q": 4,
+   "published": "2025-02-04",
+   "source": "PF107",
+   "release": "Feb 4",
+   "release_time": "before the open on Feb 4: 8-K accepted 08:11 ET",
+   "raw": {
+    "rev_m": 17763,
+    "rev_prior_m": 14570,
+    "cos_m": 5909,
+    "cos_prior_m": 7562,
+    "pretax_m": -10,
+    "pretax_prior_m": -4129,
+    "us_m": 9221,
+    "us_prior_m": 4912,
+    "intl_m": 8542,
+    "intl_prior_m": 9657,
+    "diluted_shares_m": 5703
+   },
+   "sales_b": 17.763,
+   "sales_pct": 21.9,
+   "us_pct": 87.7,
+   "intl_pct": -11.5,
+   "gross_margin": 66.73,
+   "gross_margin_bp": 1863.5,
+   "pretax_margin": -0.06,
+   "pretax_margin_bp": 2828.3,
+   "eps_q": 0.07,
+   "eps_q_prior": -0.59,
+   "diluted_shares_m": 5703.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q1 2025 print (early May)",
+   "note": "2023's revenues restated to $59.553B, royalty income reclassified into revenues from 2024 (as published; the FY2024 10-K carries it)",
+   "fy_actual": {
+    "fy": 2024,
+    "fy_label": "FY24",
+    "eps_normalized": 1.41,
+    "revenue_usd_b": 63.627,
+    "diluted_shares_m": 5700.0,
+    "normalization_note": "FY2024 $1.41 from continuing operations (Q4 2024 release); kept: acquisition-related items $1,938M and certain significant items $5,509M before tax, after the release's non-GAAP tax line ($-3,035M on $12,733M of non-GAAP items, allocated pro rata) charges of $1.00 a share, so the EPS without them is $2.41 and reported EPS 0.59 times it (the r2 test: under half or more than double excludes)",
+    "gross_margin": 71.94,
+    "pretax_margin": 12.61,
+    "pretax_margin_note": "FY24 income from continuing operations before taxes $8,023M / revenues $63,627M (Q4 2024 release)",
+    "sales_growth": 6.8,
+    "us_pct": 37.5,
+    "intl_pct": -20.6,
+    "tax_rate": -0.0035,
+    "tax_note": "FY24 provision/(benefit) for taxes $-28M / income from continuing operations before taxes $8,023M"
+   }
+  },
+  {
+   "quarter": "Q1 2025",
+   "fy": 2025,
+   "q": 1,
+   "published": "2025-04-29",
+   "source": "PF109",
+   "release": "Apr 29",
+   "release_time": "before the open on Apr 29: 8-K accepted 08:02 ET",
+   "raw": {
+    "rev_m": 13715,
+    "rev_prior_m": 14879,
+    "cos_m": 2845,
+    "cos_prior_m": 3379,
+    "pretax_m": 2785,
+    "pretax_prior_m": 3421,
+    "us_m": 8374,
+    "us_prior_m": 9514,
+    "intl_m": 5341,
+    "intl_prior_m": 5365,
+    "diluted_shares_m": 5710
+   },
+   "sales_b": 13.715,
+   "sales_pct": -7.8,
+   "us_pct": -12.0,
+   "intl_pct": -0.4,
+   "gross_margin": 79.26,
+   "gross_margin_bp": 196.6,
+   "pretax_margin": 20.31,
+   "pretax_margin_bp": -268.6,
+   "eps_q": 0.52,
+   "eps_q_prior": 0.55,
+   "diluted_shares_m": 5710.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q2 2025 print (late July)"
+  },
+  {
+   "quarter": "Q2 2025",
+   "fy": 2025,
+   "q": 2,
+   "published": "2025-08-05",
+   "source": "PF110",
+   "release": "Aug 5",
+   "release_time": "before the open on Aug 5: 8-K accepted 07:08 ET",
+   "raw": {
+    "rev_m": 14653,
+    "rev_prior_m": 13283,
+    "cos_m": 3778,
+    "cos_prior_m": 3300,
+    "pretax_m": 3044,
+    "pretax_prior_m": -103,
+    "us_m": 8894,
+    "us_prior_m": 7892,
+    "intl_m": 5759,
+    "intl_prior_m": 5391,
+    "diluted_shares_m": 5706
+   },
+   "sales_b": 14.653,
+   "sales_pct": 10.3,
+   "us_pct": 12.7,
+   "intl_pct": 6.8,
+   "gross_margin": 74.22,
+   "gross_margin_bp": -93.9,
+   "pretax_margin": 20.77,
+   "pretax_margin_bp": 2154.9,
+   "eps_q": 0.51,
+   "eps_q_prior": 0.01,
+   "diluted_shares_m": 5706.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q3 2025 print (late October)"
+  },
+  {
+   "quarter": "Q3 2025",
+   "fy": 2025,
+   "q": 3,
+   "published": "2025-11-04",
+   "source": "PF111",
+   "release": "Nov 4",
+   "release_time": "before the open on Nov 4: 8-K accepted 07:00 ET",
+   "raw": {
+    "rev_m": 16654,
+    "rev_prior_m": 17702,
+    "cos_m": 4172,
+    "cos_prior_m": 5263,
+    "pretax_m": 3334,
+    "pretax_prior_m": 4715,
+    "us_m": 10691,
+    "us_prior_m": 12064,
+    "intl_m": 5963,
+    "intl_prior_m": 5638,
+    "diluted_shares_m": 5714
+   },
+   "sales_b": 16.654,
+   "sales_pct": -5.9,
+   "us_pct": -11.4,
+   "intl_pct": 5.8,
+   "gross_margin": 74.95,
+   "gross_margin_bp": 468.0,
+   "pretax_margin": 20.02,
+   "pretax_margin_bp": -661.6,
+   "eps_q": 0.62,
+   "eps_q_prior": 0.79,
+   "diluted_shares_m": 5714.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q4 2025 print (early February)"
+  },
+  {
+   "quarter": "Q4 2025",
+   "fy": 2025,
+   "q": 4,
+   "published": "2026-02-03",
+   "source": "PF113",
+   "release": "Feb 3",
+   "release_time": "before the open on Feb 3: 8-K accepted 07:01 ET",
+   "raw": {
+    "rev_m": 17557,
+    "rev_prior_m": 17763,
+    "cos_m": 5272,
+    "cos_prior_m": 5909,
+    "pretax_m": -1642,
+    "pretax_prior_m": -10,
+    "us_m": 9119,
+    "us_prior_m": 9221,
+    "intl_m": 8438,
+    "intl_prior_m": 8542,
+    "diluted_shares_m": 5686
+   },
+   "sales_b": 17.557,
+   "sales_pct": -1.2,
+   "us_pct": -1.1,
+   "intl_pct": -1.2,
+   "gross_margin": 69.97,
+   "gross_margin_bp": 323.8,
+   "pretax_margin": -9.35,
+   "pretax_margin_bp": -929.6,
+   "eps_q": -0.29,
+   "eps_q_prior": 0.07,
+   "diluted_shares_m": 5686.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q1 2026 print (late April)",
+   "fy_actual": {
+    "fy": 2025,
+    "fy_label": "FY25",
+    "eps_normalized": 1.36,
+    "revenue_usd_b": 62.579,
+    "diluted_shares_m": 5713.0,
+    "normalization_note": "FY2025 $1.36 from continuing operations (Q4 2025 release); kept: acquisition-related items $1,285M and certain significant items $7,464M before tax, after the release's non-GAAP tax line ($-2,962M on $13,623M of non-GAAP items, allocated pro rata) charges of $1.20 a share, so the EPS without them is $2.56 and reported EPS 0.53 times it (the r2 test: under half or more than double excludes)",
+    "gross_margin": 74.33,
+    "pretax_margin": 12.02,
+    "pretax_margin_note": "FY25 income from continuing operations before taxes $7,520M / revenues $62,579M (Q4 2025 release)",
+    "sales_growth": -1.6,
+    "us_pct": -4.2,
+    "intl_pct": 2.3,
+    "tax_rate": -0.0354,
+    "tax_note": "FY25 provision/(benefit) for taxes $-266M / income from continuing operations before taxes $7,520M"
+   }
+  },
+  {
+   "quarter": "Q1 2026",
+   "fy": 2026,
+   "q": 1,
+   "published": "2026-05-05",
+   "source": "PF115",
+   "release": "May 5",
+   "release_time": "before the open on May 5: 8-K accepted 07:01 ET",
+   "raw": {
+    "rev_m": 14451,
+    "rev_prior_m": 13715,
+    "cos_m": 3548,
+    "cos_prior_m": 2845,
+    "pretax_m": 3170,
+    "pretax_prior_m": 2785,
+    "us_m": 8731,
+    "us_prior_m": 8374,
+    "intl_m": 5719,
+    "intl_prior_m": 5341,
+    "diluted_shares_m": 5731
+   },
+   "sales_b": 14.451,
+   "sales_pct": 5.4,
+   "us_pct": 4.3,
+   "intl_pct": 7.1,
+   "gross_margin": 75.45,
+   "gross_margin_bp": -380.8,
+   "pretax_margin": 21.94,
+   "pretax_margin_bp": 163.0,
+   "eps_q": 0.47,
+   "eps_q_prior": 0.52,
+   "diluted_shares_m": 5731.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q2 2026 print (early August)"
+  },
+  {
+   "quarter": "Q2 2026",
+   "fy": 2026,
+   "q": 2,
+   "published": "2026-08-04",
+   "source": "PF116",
+   "release": "Aug 4",
+   "release_time": "before the open on Aug 4: 8-K accepted 07:02 ET",
+   "raw": {
+    "rev_m": 15034,
+    "rev_prior_m": 14653,
+    "cos_m": 4092,
+    "cos_prior_m": 3778,
+    "pretax_m": -653,
+    "pretax_prior_m": 3044,
+    "us_m": 8857,
+    "us_prior_m": 8894,
+    "intl_m": 6177,
+    "intl_prior_m": 5759,
+    "diluted_shares_m": 5699
+   },
+   "sales_b": 15.034,
+   "sales_pct": 2.6,
+   "us_pct": -0.4,
+   "intl_pct": 7.3,
+   "gross_margin": 72.78,
+   "gross_margin_bp": -143.5,
+   "pretax_margin": -4.34,
+   "pretax_margin_bp": -2511.7,
+   "eps_q": -0.04,
+   "eps_q_prior": 0.51,
+   "diluted_shares_m": 5699.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q3 2026 print (early November)"
+  },
+  {
+   "quarter": "Q3 2026",
+   "fy": 2026,
+   "q": 3,
+   "published": "2026-11-03",
+   "source": "PF117",
+   "release": "Nov 3",
+   "release_time": "before the open on Nov 3: 8-K accepted 08:07 ET",
+   "raw": {
+    "rev_m": 16583,
+    "rev_prior_m": 16654,
+    "cos_m": 4028,
+    "cos_prior_m": 4172,
+    "pretax_m": 3385,
+    "pretax_prior_m": 3334,
+    "us_m": 10602,
+    "us_prior_m": 10691,
+    "intl_m": 5981,
+    "intl_prior_m": 5963,
+    "diluted_shares_m": 5751
+   },
+   "sales_b": 16.583,
+   "sales_pct": -0.4,
+   "us_pct": -0.8,
+   "intl_pct": 0.3,
+   "gross_margin": 75.71,
+   "gross_margin_bp": 76.1,
+   "pretax_margin": 20.41,
+   "pretax_margin_bp": 39.3,
+   "eps_q": 0.56,
+   "eps_q_prior": 0.62,
+   "diluted_shares_m": 5751.0,
+   "cash_return_text": "no share purchase stated in the release",
+   "next_print": "Q4 2026 print (early February)"
   }
  ],
  "guides": [
@@ -6213,6 +7843,411 @@
    ],
    "note": "including approximately $36 billion of Comirnaty revenues",
    "eps_none": "does not provide guidance for GAAP Reported financial measures (other than revenues)"
+  },
+  {
+   "fy": 2022,
+   "published": "2022-02-08",
+   "source": "PF89",
+   "doc": "Q4 2021 release",
+   "rev_guide_usd_b": [
+    98.0,
+    102.0
+   ],
+   "rev_label": "revenues",
+   "eps_adj": [
+    6.35,
+    6.55
+   ],
+   "note": "including about $32 billion of Comirnaty and $22 billion of Paxlovid revenues",
+   "eps_none": "does not provide guidance for GAAP Reported financial measures (other than revenues)"
+  },
+  {
+   "fy": 2022,
+   "published": "2022-05-03",
+   "source": "PF91",
+   "doc": "Q1 2022 release",
+   "rev_guide_usd_b": [
+    98.0,
+    102.0
+   ],
+   "rev_label": "revenues",
+   "eps_adj": [
+    6.25,
+    6.45
+   ],
+   "eps_none": "does not provide guidance for GAAP Reported financial measures (other than revenues and acquired IPR&D expenses)"
+  },
+  {
+   "fy": 2022,
+   "published": "2022-07-28",
+   "source": "PF92",
+   "doc": "Q2 2022 release",
+   "rev_guide_usd_b": [
+    98.0,
+    102.0
+   ],
+   "rev_label": "revenues",
+   "eps_adj": [
+    6.3,
+    6.45
+   ],
+   "eps_none": "does not provide guidance for GAAP Reported financial measures (other than revenues and acquired IPR&D expenses)"
+  },
+  {
+   "fy": 2022,
+   "published": "2022-11-01",
+   "source": "PF93",
+   "doc": "Q3 2022 release",
+   "rev_guide_usd_b": [
+    99.5,
+    102.0
+   ],
+   "rev_label": "revenues",
+   "eps_adj": [
+    6.4,
+    6.5
+   ],
+   "eps_none": "does not provide guidance for GAAP Reported financial measures (other than revenues and acquired IPR&D expenses)"
+  },
+  {
+   "fy": 2023,
+   "published": "2023-01-31",
+   "source": "PF94",
+   "doc": "Q4 2022 release",
+   "rev_guide_usd_b": [
+    67.0,
+    71.0
+   ],
+   "rev_label": "revenues",
+   "eps_adj": [
+    3.25,
+    3.45
+   ],
+   "eps_none": "does not provide guidance for GAAP Reported financial measures (other than revenues and acquired IPR&D expenses)"
+  },
+  {
+   "fy": 2023,
+   "published": "2023-05-02",
+   "source": "PF96",
+   "doc": "Q1 2023 release",
+   "rev_guide_usd_b": [
+    67.0,
+    71.0
+   ],
+   "rev_label": "revenues",
+   "eps_adj": [
+    3.25,
+    3.45
+   ],
+   "note": "reaffirmed",
+   "eps_none": "does not provide guidance for GAAP Reported financial measures (other than revenues and acquired in-process R&D (IPR&D)"
+  },
+  {
+   "fy": 2023,
+   "published": "2023-08-01",
+   "source": "PF97",
+   "doc": "Q2 2023 release",
+   "rev_guide_usd_b": [
+    67.0,
+    70.0
+   ],
+   "rev_label": "revenues",
+   "eps_adj": [
+    3.25,
+    3.45
+   ],
+   "eps_none": "does not provide guidance for GAAP Reported financial measures (other than revenues and acquired in-process R&D (IPR&D)"
+  },
+  {
+   "fy": 2023,
+   "published": "2023-10-16",
+   "source": "PF98",
+   "doc": "8-K of 2023-10-13",
+   "rev_guide_usd_b": [
+    58.0,
+    61.0
+   ],
+   "rev_label": "revenues",
+   "eps_adj": [
+    1.45,
+    1.65
+   ],
+   "note": "revised for the COVID products (8-K of 2023-10-13, after the close)",
+   "eps_none": "does not provide guidance for GAAP Reported financial measures (other than revenues and acquired in-process R&D (IPR&D)"
+  },
+  {
+   "fy": 2023,
+   "published": "2023-10-31",
+   "source": "PF99",
+   "doc": "Q3 2023 release",
+   "rev_guide_usd_b": [
+    58.0,
+    61.0
+   ],
+   "rev_label": "revenues",
+   "eps_adj": [
+    1.45,
+    1.65
+   ],
+   "note": "reaffirmed",
+   "eps_none": "does not provide guidance for GAAP Reported financial measures (other than revenues and acquired in-process R&D (IPR&D)"
+  },
+  {
+   "fy": 2024,
+   "published": "2023-12-13",
+   "source": "PF100",
+   "doc": "8-K of 2023-12-13",
+   "rev_guide_usd_b": [
+    58.5,
+    61.5
+   ],
+   "rev_label": "revenues",
+   "eps_adj": [
+    2.05,
+    2.25
+   ],
+   "note": "including about $3.1 billion of Seagen revenues",
+   "eps_none": "does not provide guidance for GAAP Reported financial measures (other than revenues and in 2023 acquired in-process R&D [IPR&D] expenses)"
+  },
+  {
+   "fy": 2024,
+   "published": "2024-01-30",
+   "source": "PF101",
+   "doc": "Q4 2023 release",
+   "rev_guide_usd_b": [
+    58.5,
+    61.5
+   ],
+   "rev_label": "revenues",
+   "eps_adj": [
+    2.05,
+    2.25
+   ],
+   "note": "with Seagen",
+   "eps_none": "does not provide guidance for GAAP Reported financial measures (other than revenues)"
+  },
+  {
+   "fy": 2024,
+   "published": "2024-05-01",
+   "source": "PF103",
+   "doc": "Q1 2024 release",
+   "rev_guide_usd_b": [
+    58.5,
+    61.5
+   ],
+   "rev_label": "revenues",
+   "eps_adj": [
+    2.15,
+    2.35
+   ],
+   "eps_none": "does not provide guidance for GAAP Reported financial measures (other than revenues)"
+  },
+  {
+   "fy": 2024,
+   "published": "2024-07-30",
+   "source": "PF104",
+   "doc": "Q2 2024 release",
+   "rev_guide_usd_b": [
+    59.5,
+    62.5
+   ],
+   "rev_label": "revenues",
+   "eps_adj": [
+    2.45,
+    2.65
+   ],
+   "eps_none": "does not provide guidance for GAAP Reported financial measures (other than revenues)"
+  },
+  {
+   "fy": 2024,
+   "published": "2024-10-29",
+   "source": "PF105",
+   "doc": "Q3 2024 release",
+   "rev_guide_usd_b": [
+    61.0,
+    64.0
+   ],
+   "rev_label": "revenues",
+   "eps_adj": [
+    2.75,
+    2.95
+   ],
+   "eps_none": "does not provide guidance for GAAP Reported financial measures (other than revenues)"
+  },
+  {
+   "fy": 2025,
+   "published": "2024-12-17",
+   "source": "PF106",
+   "doc": "8-K of 2024-12-17",
+   "rev_guide_usd_b": [
+    61.0,
+    64.0
+   ],
+   "rev_label": "revenues",
+   "eps_adj": [
+    2.8,
+    3.0
+   ],
+   "eps_none": "does not provide guidance for U.S. generally accepted accounting principles (GAAP) Reported financial measures (other than revenues)"
+  },
+  {
+   "fy": 2025,
+   "published": "2025-02-04",
+   "source": "PF107",
+   "doc": "Q4 2024 release",
+   "rev_guide_usd_b": [
+    61.0,
+    64.0
+   ],
+   "rev_label": "revenues",
+   "eps_adj": [
+    2.8,
+    3.0
+   ],
+   "eps_none": "does not provide guidance for GAAP Reported financial measures (other than revenues)"
+  },
+  {
+   "fy": 2025,
+   "published": "2025-04-29",
+   "source": "PF109",
+   "doc": "Q1 2025 release",
+   "rev_guide_usd_b": [
+    61.0,
+    64.0
+   ],
+   "rev_label": "revenues",
+   "eps_adj": [
+    2.8,
+    3.0
+   ],
+   "note": "reaffirmed",
+   "eps_none": "does not provide guidance for U.S. generally accepted accounting principles (GAAP) Reported financial measures (other than revenues)"
+  },
+  {
+   "fy": 2025,
+   "published": "2025-08-05",
+   "source": "PF110",
+   "doc": "Q2 2025 release",
+   "rev_guide_usd_b": [
+    61.0,
+    64.0
+   ],
+   "rev_label": "revenues",
+   "eps_adj": [
+    2.9,
+    3.1
+   ],
+   "eps_none": "does not provide guidance for U.S. generally accepted accounting principles (GAAP) Reported financial measures (other than revenues)"
+  },
+  {
+   "fy": 2025,
+   "published": "2025-11-04",
+   "source": "PF111",
+   "doc": "Q3 2025 release",
+   "rev_guide_usd_b": [
+    61.0,
+    64.0
+   ],
+   "rev_label": "revenues",
+   "eps_adj": [
+    3.0,
+    3.15
+   ],
+   "eps_none": "does not provide guidance for U.S. generally accepted accounting principles (GAAP) Reported financial measures (other than revenues)"
+  },
+  {
+   "fy": 2025,
+   "published": "2025-12-16",
+   "source": "PF112",
+   "doc": "8-K of 2025-12-16",
+   "rev_guide_usd_b": [
+    62.0,
+    62.0
+   ],
+   "rev_label": "revenues",
+   "note": "revenues revised to approximately $62.0 billion (8-K of 2025-12-16)",
+   "eps_none": "does not provide guidance for U.S. generally accepted accounting principles (GAAP) Reported financial measures (other than revenues)"
+  },
+  {
+   "fy": 2026,
+   "published": "2025-12-16",
+   "source": "PF112",
+   "doc": "8-K of 2025-12-16",
+   "rev_guide_usd_b": [
+    59.5,
+    62.5
+   ],
+   "rev_label": "revenues",
+   "eps_adj": [
+    2.8,
+    3.0
+   ],
+   "eps_none": "does not provide guidance for U.S. generally accepted accounting principles (GAAP) Reported financial measures (other than revenues)"
+  },
+  {
+   "fy": 2026,
+   "published": "2026-02-03",
+   "source": "PF113",
+   "doc": "Q4 2025 release",
+   "rev_guide_usd_b": [
+    59.5,
+    62.5
+   ],
+   "rev_label": "revenues",
+   "eps_adj": [
+    2.8,
+    3.0
+   ],
+   "note": "including about $5 billion of COVID-19 product revenues",
+   "eps_none": "does not provide guidance for U.S. generally accepted accounting principles (GAAP) Reported financial measures (other than revenues)"
+  },
+  {
+   "fy": 2026,
+   "published": "2026-05-05",
+   "source": "PF115",
+   "doc": "Q1 2026 release",
+   "rev_guide_usd_b": [
+    59.5,
+    62.5
+   ],
+   "rev_label": "revenues",
+   "eps_adj": [
+    2.8,
+    3.0
+   ],
+   "eps_none": "does not provide guidance for U.S. generally accepted accounting principles (GAAP) Reported financial measures (other than revenues)"
+  },
+  {
+   "fy": 2026,
+   "published": "2026-08-04",
+   "source": "PF116",
+   "doc": "Q2 2026 release",
+   "rev_guide_usd_b": [
+    60.5,
+    62.5
+   ],
+   "rev_label": "revenues",
+   "eps_adj": [
+    2.8,
+    3.0
+   ],
+   "eps_none": "does not provide guidance for U.S. generally accepted accounting principles (GAAP) Reported financial measures (other than revenues)"
+  },
+  {
+   "fy": 2026,
+   "published": "2026-11-03",
+   "source": "PF117",
+   "doc": "Q3 2026 release",
+   "rev_guide_usd_b": [
+    62.0,
+    64.0
+   ],
+   "rev_label": "revenues",
+   "eps_adj": [
+    2.95,
+    3.05
+   ],
+   "eps_none": "does not provide guidance for U.S. generally accepted accounting principles (GAAP) Reported financial measures (other than revenues)"
   }
  ],
  "dividends": [
@@ -6895,7 +8930,7 @@
    }
   }
  },
- "price_basis": "Yahoo's PFE series is adjusted by a factor of 1.054 dated 2020-11-17 (Yahoo's split event for that date); every date here precedes it, so the builder multiplies Yahoo's close by it to restore the price as traded (2007-12-31 $22.73 and 2008-12-31 $17.71, the year-end market values per share in the FY2007 and FY2008 10-Ks). No Pfizer split after the 3-for-1 of 1999 precedes or restates any per-share fact in this file.",
+ "price_basis": "Yahoo's PFE series is adjusted by a factor of 1.054 dated 2020-11-17 (Yahoo's split event for that date, the Upjohn distribution in 'distributions'); the builder multiplies Yahoo's close before that date by it to restore the price as traded (2007-12-31 $22.73 and 2008-12-31 $17.71, the year-end market values per share in the FY2007 and FY2008 10-Ks) and leaves later closes as they are. No Pfizer split after the 3-for-1 of 1999 precedes or restates any per-share fact in this file.",
  "distributions": [
   {
    "effective": "2020-11-17",

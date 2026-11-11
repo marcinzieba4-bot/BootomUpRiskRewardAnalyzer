@@ -11819,6 +11819,164 @@ Judgement calls that could carry hindsight:
 - prices as traded through the Upjohn distribution (3 classes with Yahoo's factor kept);
 - the signals and DURABLE, as in 2008-2017.
 
+### PFE 2022-2026
+
+253 weekly dates, 2022-01-07 to 2026-11-04 (the day after the Q3 2026 print, the last before this section was written), on the same
+method, engine and rule-T thresholds. The fact sheet only gains facts, and the 732 earlier models rebuild byte for byte after the
+builder changes below (docstring only).
+
+```bash
+python3 retro/build_pfe.py --weekly 2022-01-01 2026-11-06                   # 253 dates, 2022-01-07 .. 2026-11-04
+for c in 2022-02-08 2023-10-16 2024-01-30 2024-02-22 2025-02-04 2025-12-16 2026-11-07; do python3 retro/tools/firewall.py $c PFE; done
+```
+
+Read: the 20 earnings releases from Q4 2021 to Q3 2026, the four guide 8-Ks between releases (2023-10-13, 2023-12-13, 2024-12-17,
+2025-12-16), the FY2021-FY2025 10-Ks (one document each, with Items 1 and 1A), every other 8-K of January 2022 to November 2026 (30
+filings and one 8-K/A, by their exhibits), the 3 SC TO-C filings (the 2024 offer to modify employees' share units) and the 23 DEFA14A
+filings, and the 15 10-Qs for the dividend statements. Downloaded from EDGAR and read directly, none delegated; every raw figure was
+parsed by a script from the row it is cited from, and 368 strings were checked with `verbatim.py`, each against its own filing, all
+found. The source ids are PF89-PF117. Decided on 2026-11-11, before any 2022-2026 outcome was computed:
+
+- **Release timing.** Every earnings 8-K was accepted before the open (07:00-08:53 ET), none on a week's last trading day, so each
+  print's week is dated the next trading day (2022-02-09 .. 2026-11-04). The FY2021, FY2022, FY2023 and FY2025 10-Ks were accepted
+  during the session (14:25, 14:12, 13:17 and 12:44 ET) and keep their dates; the FY2024 10-K was accepted at 16:27 ET on 2025-02-27,
+  after the close, so it is dated 2025-02-28. Of the guide 8-Ks, the one of 2023-10-13 was accepted at 17:30 ET and is dated 2023-10-16;
+  the others (2023-12-13, 2024-12-17, 2025-12-16) came before the open.
+- **No reported EPS guide in any release or 8-K.** Each repeats that Pfizer "does not provide guidance for GAAP Reported financial
+  measures (other than revenues)" (2022-2023: "other than revenues and acquired IPR&D expenses"; from 2025: "U.S. generally accepted
+  accounting principles (GAAP) Reported financial measures"), so `eps_none` is on every guide and the last full year in the history
+  stands as current-year EPS (the rollover rule): FY21's $3.93 from the Q4 2021 print, FY22's $5.47 from the Q4 2022 print and, with
+  2023 excluded, still from the Q4 2023 print to the Q4 2024 print, FY24's $1.41 from the Q4 2024 print and FY25's $1.36 from the Q4
+  2025 print. The adjusted EPS ranges stay in the guide line only.
+- **The distorted-year test on the PFE measure,** per share, after tax, acquisition-related items plus certain significant items. From
+  the Q4 2021 release the reconciliation lists the items before tax with one "Income tax provision—Non-GAAP items" line for all of them,
+  amortization included; the line is allocated to the items pro rata (no per-share figure is published), and the identity of each
+  reconciliation is checked to within $1M:
+  - 2021: $52M acquisition-related and $2,294M certain significant items, $0.20 a share after tax, so $4.13 without them and reported
+    $3.93 is 0.95 times it; 2022: $832M and $3,609M, $0.61, $5.47 against $6.08 (0.90); both kept;
+  - **2023 excluded:** $1,874M and $3,916M, $0.81 a share, so reported $0.37 is **0.31 times** the $1.18 without them, under half
+    (certain significant items: restructuring $2,227M and asset impairments $3,024M, less a $1,588M gain on equity securities and other
+    items; the "non-cash charge of $5.6 billion recorded to Cost of Sales in the third quarter of 2023 for COVID products inventory
+    write-offs and other charges", Q3 2023 release, stays in both: adjusted cost of sales is $23,988M against $24,954M). No figure
+    excluding only those items is published (the adjusted $1.84 also removes $4,733M of amortization), so the year leaves the EPS
+    history;
+  - 2024: $1,938M and $5,509M, $1.00, $1.41 against $2.41 (0.59), kept; **2025 the near case:** $1,285M and $7,464M, $1.20, $1.36
+    against $2.56 (0.53), kept; on income before tax the same test gives 0.46 (see the sensitivity below).
+- **2023 is excluded as the latest year, and stays a gap after.** At the Q4 2023 print (2024-01-30) 2023 is the year just ended, so the
+  r2 wording ("the P/E window starts after it") would leave no history; the encoding is the one for a distorted latest year (NKE FY2018,
+  XOM FY2020): the print's `fy_actual` carries no EPS and an `excluded_note`, the FY2023-FY2025 vintages carry `eps_excluded`, 2023's
+  revenue and shares stay, its own days leave the P/E window ("7.1-yr ex-FY23" on 2024-01-31), and FY22's $5.47 stands for FY24E until
+  the Q4 2024 print. When later years follow it (the Q4 2024 print, then the FY2024 and FY2025 vintages), it stays a gap, as NKE's
+  FY2018 and XOM's FY2020 did, rather than restarting the history after it (the PFE 2003 rule is for a year that is not the latest when
+  it is first excluded: 2003 at the start, the restated 2016 in the FY2020 10-K); the 2003 reading here would leave one year of history.
+- **History: five more vintages,** each year from the latest 10-K that reports it, from 2017 (after the restated 2016 loss), diluted EPS
+  from continuing operations from each statement of income (three years):
+  - FY2021: 2019 restated to $1.89 and 2020 to $1.18 without Meridian (sold on 2021-12-31, a discontinued operation) and with pension
+    gains and losses recognized at once from 2021 (the Q4 2021 print restates 2020 the same way from 2022-02-08, the `restates`
+    encoding; the FY2020 10-K had $1.24 and $41.908B); 2021 $3.93;
+  - FY2022: 2022 $5.47; FY2023: 2023 $0.37 (excluded) on revenues of $58.496B; FY2024: 2024 $1.41, with 2022's revenues restated to
+    $101.175B and 2023's to $59.553B (royalty income reclassified into revenues); FY2025: 2025 $1.36;
+  - the restated years keep their earlier tests (the 2014-2017 rule); 2017-2018 keep the FY2020 10-K, the last that reports them.
+- **Guides: revenues as published, for the fiscal year only,** each from the latest guide that states it, read as growth on the last
+  full year in the history (acquisitions in, the SHW Valspar rule):
+  - FY2022: $98.0-102.0B (Q4 2021, with about $32 billion of Comirnaty and $22 billion of Paxlovid; Q1 and Q2 2022), $99.5-102.0B (Q3);
+  - FY2023: $67.0-71.0B (Q4 2022, Q1 2023), $67.0-70.0B (Q2), **$58.0-61.0B (8-K of 2023-10-13**, after the close: the COVID-19
+    products' revenues cut; dated 2023-10-16), the same in the Q3 2023 release;
+  - FY2024: $58.5-61.5B (8-K of 2023-12-13, with about $3.1 billion of Seagen, acquired on 2023-12-14; the Q4 2023 release repeats it),
+    $59.5-62.5B (Q2 2024), $61.0-64.0B (Q3 2024);
+  - FY2025: $61.0-64.0B (8-K of 2024-12-17, Q4 2024 to Q3 2025), "approximately $62.0 billion" (8-K of 2025-12-16, revenues only; the Q3
+    2025 adjusted EPS range stays in the guide line);
+  - FY2026: $59.5-62.5B (8-K of 2025-12-16; the Q4 2025 release, with about $5 billion of COVID-19 products; Q1 2026), $60.5-62.5B (Q2),
+    $62.0-64.0B (Q3 2026);
+  - an 8-K guide for the next year is inert until that year's Q4 print makes it current, and the Q4 release then restates every field.
+    The 2026-06-18 8-K reaffirms the 2026 guidance in words only (adds nothing, the ACN rule).
+- **Dividends** from the 10-K vintages: $0.40 a quarter (FY2021 10-K), $0.41, $0.42, $0.43 and $0.43 (FY2025); no release or 8-K states
+  a newly declared rate (the Q4 releases give only the year's dividends paid).
+- **Signals,** from each release's revenue table and statement of income as before. From Q4 2023 the statement of income has a "Total
+  revenues" line (product, alliance and, from 2024, royalty revenues); the U.S./international table keeps "TOTAL REVENUES". U.S. plus
+  international matches the worldwide total to within $1M in every quarter.
+- **Durability: DURABLE, risk 2, unchanged.** The FY2021-FY2025 10-Ks keep "is a research-based, global biopharmaceutical company" and
+  the generic-competition risk. GENAI (from 2022-11-30) is scoped to software, services and information, GLP1 (from 2023-08-08) to
+  snacks, beverages and devices; neither is a substitution narrative for a pharmaceutical company, so the watch list stays empty
+  (Pfizer's own Metsera obesity acquisition of 2025-11-13 is a product line, not evidence of a theme against it).
+- **Segment bridge** (display only): Biopharma, Pfizer CentreOne and, from the FY2024 10-K, Pfizer Ignite (Business Innovation in the
+  FY2023 10-K), each 10-K's operating segment and other businesses; Biopharma is the biopharmaceutical share.
+- **Adds nothing:** the 2022-04-20 8-K (acquired IPR&D moves into adjusted income: the adjusted basis only), the GSK consumer
+  joint-venture demerger (2022-03-29), the Biohaven agreement (2022-05-10) and the Seagen merger agreement of 2023-03-13 (pending deals
+  with no guided number, the XOM XTO rule), the Seagen update and financing (2023-05-15, 2023-05-19), its antitrust clearance and
+  closing (2023-12-12, 2023-12-14 and its 8-K/A), the research reorganization (2023-07-27), the headquarters move (2023-02-21), the cost
+  programs of 2024-05-22 and 2025-04-29 (their savings are not a guide of the reported basis), the Metsera closing (2025-11-13), the
+  vote, officer, by-law, mini-tender and debt 8-Ks, the SC TO-C and DEFA14A filings, and the 10-Qs beyond their dividend statements.
+- **Anachronism list:** "Seagen" (first under Pfizer's CIK in the 8-K of 2023-03-13, before the open) and "Pfizer Ignite" (the Q1 2023
+  release, 2023-05-02) join `taxonomy_eras.json` (EDGAR full-text search). They first appear in a model on 2024-01-31 and 2025-02-28; no
+  model of any ticker contains them earlier, so no output changes.
+- **Builder changes:** the docstring only (the 2022 encodings; the 2008 and 2009 usage lines as the commands above build them). The
+  excluded-year encoding of 2018-2021, used then only by the sensitivity tests, carries 2023. No earlier output changes.
+
+Controls and checks:
+- **Controls:** altering one value of each print (its U.S./international split, each Q4 print's full-year EPS, for the excluded 2023 its
+  revenue and its note, the restated 2020), each vintage (its last year's EPS, its dividend and the excluded 2023's note), and each
+  guide field (revenues, adjusted EPS, the policy words) changes none of the 8 weekly dates before its publication and changes the first
+  weekly date on or after it: 103 of 114. The other 11 are inert by design: the FY24 and FY25 vintages' note on 2023 (it shows only
+  while 2023 is the year before the current one) and the next-year guides of the 8-Ks of 2023-12-13, 2024-12-17 and 2025-12-16 (three
+  fields each: the year is not current until its Q4 print, whose release restates every field).
+- **Leak scan:** the source ids, titles, notes, texts and figures of every fact in the fact sheet, the excluded year's note and revenue
+  included, appear in no model of the 985 dated before their publication (0 hits in 618,517 pairs, after dropping 169 strings an earlier
+  fact carries).
+- **`retro_tool run`:** passes on all 253 dates; each draws the warning for calendar year "2070" (the pre-tax margin signal's XBULL
+  threshold), and 2025-12-19 and 2025-12-26 also one for "2026", from the title of the 8-K of 2025-12-16 ("2026 guidance"), public then.
+- **Firewall:** passes at the 7 cutoffs above (the last rebuilds all 985 dates), with 0 files changed and no planted text; the planted
+  facts now also include a later Q4 print whose full-year actuals exclude its own year.
+- `taxonomy_eras.json` gains two anachronism terms (above) and nothing else; no other file shared with another ticker changed.
+
+Seen in the build (method behaviour, not tuned):
+- **January 2022: CHEAP on 5 dates** (BUY): FY21E is still FY20's $1.24 (the Q4 2021 print is out on 2022-02-08), 43-45x (77th-79th
+  percentile), 70-80% above the floor ($31.00), but BASE takes the FY2021 range, +97.0%/yr, as in late 2021 (Ratio B 0.38-0.44).
+- **From the Q4 2021 print to January 2023: CHEAP on 51 dates** (BUY) on FY21's $3.93: $42.32-55.17 is 10.8-14.0x (10th-27th
+  percentile), 8-33% under the floor ($55.02-62.88); BASE +24.5% to +25.4%/yr (the FY2022 range of $98.0-102.0B on FY21's $81.288B);
+  BEAR the restated 2018 step (-71.3%/yr, all through 2022-2026); Ratio B 0.26-0.37.
+- **From the Q4 2022 print to January 2025: CHEAP on 105 dates** (BUY) on FY22's $5.47, which stands for FY23E and, with 2023 excluded,
+  for FY24E: $24.80-43.97 is 4.5-8.0x (0-9th percentile), 43-68% under a 14x floor ($76.58; 11x, $60.17, in the Januarys of 2024 and
+  2025, when the new year's low joins the floor's median). BASE is -30.1%/yr in 2023 (the FY2023 range of $67.0-71.0B on FY22's
+  $100.330B), -39.6% after the 8-K of 2023-10-13, then +3.5% to +7.8%/yr in 2024 (the FY2024 ranges on FY23's $58.496B); XBULL the
+  2020-2022 run (+115.3%/yr); Ratio B 0.10-0.20, the lowest of the PFE series.
+- **From the Q4 2024 print to October 2025: FAIR on 31 of 39 dates,** CHEAP on 5 (April-May 2025, $21.91-22.97, at the floor) and RICH
+  on 3 (July and October 2025); WATCHLIST 30, AVOID 9. FY24's $1.41 stands for FY25E: 15.5-19.4x (37th-55th percentile), 3% under to 21%
+  above a 16-17x floor ($22.56-23.97); BASE -0.9%/yr (the FY2025 range of $61.0-64.0B on FY24's $63.627B); Ratio B 1.10-2.48.
+- **From the Q3 2025 print: RICH on all 53 dates** (AVOID) to 2026-11-04: FY24's $1.41, then FY25's $1.36 for FY26E, 17.5-22.6x
+  (39th-75th percentile), 4-33% above the floor ($22.56-23.97, then $23.12); BASE -0.9%/yr, -1.7% after the 8-K of 2025-12-16 (about
+  $62.0B for 2025), then -1.8% to +1.4%/yr on the FY2026 ranges; Ratio B 1.91 to 24.6 (infinite on 2026-10-23 and 10-30, with the BASE
+  price under the price).
+- **The proxy composite** is 1.15-3.20: the Q4 2021 to Q2 2022 prints show revenues up 46.8-104.9%, the 2023 prints down 28.8-54.1% as
+  the COVID-19 products fade, the Q3 and Q4 2024 prints up 31.2% and 21.9%, and the prints from 2025 between -7.8% and +10.3%.
+- **Robustness:** all eight variants agree on 161 of 253 dates (all CHEAP, January 2022 to January 2025); from the Q4 2024 print they
+  split, CHEAP/FAIR/RICH on 37 dates (February to November 2025) and CHEAP/RICH on 55.
+
+Sensitivity (each call changed alone, the 253 dates reclassified offline with `retro_tool`'s own classifier; no outcome consulted):
+- **2023 kept at its reported $0.37** (no exclusion): **107 classes**, 103 tiers: 53 CHEAP to RICH (2024, the $0.37 standing for FY24E),
+  33 RICH to FAIR and 21 FAIR to CHEAP (2025-2026, with 2023 in the history and the window);
+- **2023 restarting the history once it is not the latest** (the 2003 reading: the FY2024 and FY2025 vintages from 2024): cannot be
+  built, as one year of history leaves no growth to measure (the engine stops on 2025-02-28);
+- **the adjusted EPS guide as current-year EPS** (against the GAAP history): **102 classes**, 97 tiers: 56 RICH to CHEAP and 31 FAIR to
+  CHEAP (2025-2026, $2.80-3.15 against GAAP $1.36-1.41), 13 CHEAP to RICH and 2 CHEAP to FAIR (from 2023-10-20, $1.45-1.65 and
+  $2.05-2.35 against FY22's $5.47);
+- **the dollar revenue guides not used** (BASE on the latest quarter's growth): 31 classes, all in 2025 (20 FAIR to CHEAP, 10 FAIR to
+  RICH, 1 RICH to FAIR), 35 tiers;
+- **2025 excluded on the test before tax** (0.46; the gap encoding, FY24's $1.41 for FY26E): 12 classes, RICH to FAIR (2026-05-15 to
+  2026-07-31), 3 tiers;
+- the Q4 2021 restatement of 2020 ignored, and the guides from 8-Ks between releases ignored: none, no tier;
+- every signal at its BEAR value: 38 classes (31 FAIR to RICH in 2025, 5 CHEAP to FAIR in January 2022, 2 CHEAP to RICH); at XBULL: 3
+  (RICH to FAIR, 2025); no tier either way.
+
+Judgement calls that could carry hindsight:
+- the distorted-year test on the PFE net measure after tax, with the release's single non-GAAP tax line allocated pro rata: it excludes
+  2023 (0.31; 107 classes if kept) and keeps 2025 (0.53; 0.46 before tax, 12 classes);
+- 2023 as a gap once later years follow it, as NKE and XOM, rather than the 2003 reading, which leaves no buildable history;
+- GAAP EPS with no reported guide, so the last full year stands each year: FY22's $5.47, the peak of the COVID-19 products, stood for
+  FY23E and FY24E while the company guided adjusted EPS of $1.45-3.45 and $2.05-2.95 (102 classes against the adjusted guide);
+- the revenue ranges read on the last full year, acquisitions in (31 classes without the ranges);
+- the signals and DURABLE, as in 2008-2021.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -12020,6 +12178,8 @@ What the gates enforce:
   It stays empty through 2017: the FY2013-FY2016 10-Ks keep generic competition as "a major challenge", and the FY2016 10-K's mention
   of biosimilars is the same cycle for biologics, not a theme in the registry ("PFE 2014-2017"). It stays empty through 2021: the
   FY2017-FY2020 10-Ks keep the same generic and biosimilar competition, and COVID-19 vaccine revenues are a product ("PFE 2018-2021").
+  It stays empty through 2026-11-04: the FY2021-FY2025 10-Ks keep the same risk, GENAI and GLP1 are scoped to other businesses, and
+  Pfizer's own obesity acquisition (Metsera, 2025) is a product line ("PFE 2022-2026").
 
 ## Workflow
 

@@ -1,0 +1,216 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "PFE",
+ "company": "Pfizer Inc",
+ "as_of": "2023-03-31",
+ "price_date": "2023-03-31",
+ "price": 40.8,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); pharmaceutical signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'is a research-based, global biopharmaceutical company. We apply science and our global resources to bring therapies to people that extend and significantly improve their lives through the discovery, development, manufacture, marketing, sale and distribution of biopharmaceutical products worldwide' (FY2022 10-K, Item 1); 'Certain of our products have experienced patent-based expirations or loss of regulatory exclusivity in certain markets in the last few years, and we expect certain products to face increased generic competition over the next few years' (Item 1A); 'when generic or biosimilar competition does commence, the resulting price competition can substantially decrease our revenues for the impacted products, often in a very short period of time' (Item 1A); 'Our business is conducted in intensely competitive and often highly regulated markets'",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "'is a research-based, global biopharmaceutical company. We apply science and our global resources to bring therapies to people that extend and significantly improve their lives through the discovery, development, manufacture, marketing, sale and distribution of biopharmaceutical products worldwide' (FY2022 10-K, Item 1); 'Certain of our products have experienced patent-based expirations or loss of regulatory exclusivity in certain markets in the last few years, and we expect certain products to face increased generic competition over the next few years' (Item 1A); 'when generic or biosimilar competition does commence, the resulting price competition can substantially decrease our revenues for the impacted products, often in a very short period of time' (Item 1A); 'Our business is conducted in intensely competitive and often highly regulated markets'. durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.18x; -47% to EPP floor; model-vs-market gap +1.08; conservative 2yr +123%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.18,
+  "ratio_b_fmt": "0.18x",
+  "epp": 76.58,
+  "epp_gap_pct": -46.7,
+  "epp_adj": 0.2,
+  "proxy_composite": 2.1,
+  "sca": 0.15,
+  "adj_composite": 2.45,
+  "market_composite": 1.37,
+  "adj_gap": 1.08,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 122.8,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.45,
+    "pe": 8.9,
+    "price": 4,
+    "desc": "EPS -71.3%/yr (worst year FY17-FY22, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 2.67,
+    "pe": 16.2,
+    "price": 43,
+    "desc": "EPS +-30.1%/yr (FY23 guide + margin + buyback); P/E at its 6.2-yr median"
+   },
+   "BULL": {
+    "eps": 7.83,
+    "pe": 31.0,
+    "price": 243,
+    "desc": "EPS +19.7%/yr (FY17-FY22 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 25.36,
+    "pe": 57.1,
+    "price": 1448,
+    "desc": "EPS +115.3%/yr (best 2-yr run FY17-FY22); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.18,
+   "epp_gap_pct": -46.7,
+   "adj_gap": 1.08,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 122.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.09,
+   "epp_gap_pct": -46.7,
+   "adj_gap": 1.45,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 122.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 0.43,
+   "epp_gap_pct": -46.7,
+   "adj_gap": 0.71,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 122.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.18,
+   "epp_gap_pct": -46.7,
+   "adj_gap": 1.1,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 122.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.19,
+   "epp_gap_pct": -46.7,
+   "adj_gap": 1.07,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 122.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.18,
+   "epp_gap_pct": -46.7,
+   "adj_gap": 1.38,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 122.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.18,
+   "epp_gap_pct": -56.1,
+   "adj_gap": 1.08,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 122.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.18,
+   "epp_gap_pct": -46.7,
+   "adj_gap": 1.13,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 122.8,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "PFE (retrospective, 2023-03-31) ◉ BUY — Ratio B 0.18x (90.2% downside to Bear $4 / +495.6% upside to Bull $243) | Adj composite 2.45 vs market 1.37: gap +1.08 [UNDERVALUED] | -47% above the EPP floor $77 (14x FY23E $5.47) | Conservative 2-yr case: +122.8% total (+61.4%/yr) | At 7.5x FY23E the 15% hurdle price $54 sits between the BASE and BULL cases; U.S. revenues +10.4% in Q4 2022, forward revenues -33.2% to -29.2% (FY23 revenue guide); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "PF95",
+   "published": "2023-02-23",
+   "filed": "2023-02-23 14:12 ET (during the session)",
+   "title": "Pfizer FY2022 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800323000024/pfe-20221231.htm",
+   "supports": "statement of operations 2020-2022; revenues by U.S. and international; cash flows; the first-quarter 2023 dividend; Item 1 and Item 1A wording"
+  },
+  {
+   "id": "PF90",
+   "published": "2022-02-24",
+   "filed": "2022-02-24 14:25 ET (during the session)",
+   "title": "Pfizer FY2021 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800322000027/pfe-20211231.htm",
+   "supports": "statement of operations 2019-2021; revenues by U.S. and international; cash flows; the first-quarter 2022 dividend; Item 1 and Item 1A wording"
+  },
+  {
+   "id": "PF85",
+   "published": "2021-02-25",
+   "filed": "2021-02-25 13:59 ET (during the session)",
+   "title": "Pfizer FY2020 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800321000038/pfe-20201231.htm",
+   "supports": "selected financial data 2016-2020; statement of income 2018-2020; revenues by segment or category and geography; cash flows; the first-quarter 2021 dividend; Item 1 and Item 1A wording"
+  },
+  {
+   "id": "PF78",
+   "published": "2020-02-27",
+   "filed": "2020-02-27 14:15 ET (during the session)",
+   "title": "Pfizer FY2019 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800320000014/pfe-exhibit13x12312019.htm",
+   "supports": "financial summary 2015-2019; statement of income 2017-2019; revenues by segment or category and geography; cash flows; the first-quarter 2020 dividend; Item 1 and Item 1A wording"
+  },
+  {
+   "id": "PF94",
+   "published": "2023-01-31",
+   "filed": "2023-01-31 08:11 ET (before the open)",
+   "title": "Pfizer Q4 2022 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800323000004/pfe-12312022xex99.htm",
+   "supports": "fourth-quarter and full-year 2022 statement of income and revenues by U.S. and international; 2023 guidance"
+  },
+  {
+   "id": "PF82",
+   "published": "2020-11-17",
+   "filed": "2020-11-16 16:35 ET (after the close)",
+   "title": "Pfizer 8-K of 2020-11-16: completion of the Upjohn spin-off and combination with Mylan (Viatris); 2020 guidance not updated",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000119312520294847/d82880dex991.htm",
+   "supports": "the distribution of Viatris shares (approximately 0.124079 per Pfizer share); the 2020 guidance not updated and overstating total company results"
+  },
+  {
+   "id": "W0",
+   "published": "2023-03-31",
+   "title": "Yahoo Finance daily prices, PFE and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/PFE/history",
+   "supports": "close $40.80 as traded on AS_OF, 52-week range, realized vol, beta, the 6.2-yr P/E distribution"
+  }
+ ],
+ "warnings": [
+  "calendar year(s) 2070 after 2023 outside FY labels — make sure they are forecasts"
+ ],
+ "generated": "2026-11-11"
+}

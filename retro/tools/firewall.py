@@ -45,8 +45,8 @@ outlook for every quarter an 8-K guides and the two after the last print, and a 
 every fact sheet with a 'guides' list gets, too), and from the 2017 listing of Baker Hughes, a GE company the same in the new company's
 own fields (orders, the segment margin, the work in hand; "era" on the planted print, guides and dividend; BKR 2018-2021); PFE: a
 print whose full-year actuals are absurd and which restates every year of the history (the 'restates' field of PFE 2010-2013), a later
-withdrawal of every guided field of every guided year and a later reissue of the last print before CUTOFF (PFE 2014-2017), and a later
-vintage excluding a year (PFE 2018-2021); every
+withdrawal of every guided field of every guided year and a later reissue of the last print before CUTOFF (PFE 2014-2017), a later
+vintage excluding a year (PFE 2018-2021), and a later Q4 print whose full-year actuals exclude its own year (PFE 2022-2026); every
 fact sheet with a 'splits' list, SHW's from 2021-2023: a later split on the price data's next split date; a CLOUD event
 from a later 10-K, as for every live theme), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
@@ -391,6 +391,12 @@ try:
         last["restates_note"] = "PLANTED"
         last.pop("reissued", None)
         v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}     # a later vintage excluding a year (PFE 2018-2021)
+        # a later Q4 print whose full-year actuals exclude its own year (the 'excluded_note' of PFE 2022-2026)
+        q4 = copy.deepcopy(last)
+        q4.update(quarter="Q4 2098", fy=2098, q=4, published=later)
+        q4["fy_actual"] = {**last["fy_actual"], "fy": 2098, "fy_label": "FY98", "eps_normalized": None, "excluded_note": "PLANTED"}
+        q4.pop("restates", None)
+        f["prints"].append(q4)
         # a later withdrawal of every guided field of every guided year, with the GAAP-EPS policy words (PFE 2014-2017)
         for y in sorted({g["fy"] for g in f["guides"] if g["published"] < cutoff}):
             f["guides"].append({"fy": y, "published": later, "source": last["source"], "doc": "PLANTED", "withdrawn_quote": "PLANTED",
