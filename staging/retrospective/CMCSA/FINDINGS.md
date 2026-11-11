@@ -1,10 +1,12 @@
 # CMCSA retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the CMCSA weekly dates: 732 from 2008-01-04 to 2021-12-31, all Comcast Corporation (Nasdaq: CMCSA,
+Patterns seen in `outcome.json` for the CMCSA weekly dates: 985 from 2008-01-04 to 2026-11-06, all Comcast Corporation (Nasdaq: CMCSA,
 the Class A shares). They are **labels and hypotheses**: never feed them back into the method or the fact sheet. Each batch was scored
-only after its point-in-time build was committed and pushed (2008-2009: 573d484; 2010-2013: 99b3102; 2014-2017: 33c01d6; 2018-2021: 5e0e68d). Outcomes were
+only after its point-in-time build was committed and pushed (2008-2009: 573d484; 2010-2013: 99b3102; 2014-2017: 33c01d6; 2018-2021: 5e0e68d; 2022-2026: 0151f98). Outcomes were
 computed on 2026-11-11 from the closes posted to 2026-11-10; every date has its 6-month, 1-, 2- and 3-year horizons (the last ends
-2024-12-30). Total returns include the quarterly dividends from April 2008 ($0.0625, then $0.0675, $0.0945, $0.1125, $0.1625, $0.195,
+2024-12-30); from 2022 a date has only the horizons that have ended: two years to 2024-11-08, one year to 2025-11-07, six months
+to 2026-05-08, none from 2026-05-15 (26 dates). A horizon that crosses 2026-01-05 counts the Versant distribution as if it were a split
+(the tool's standing treatment: the distributed Versant shares stay in the holding, the MAR and PFE rule for outcomes). Total returns include the quarterly dividends from April 2008 ($0.0625, then $0.0675, $0.0945, $0.1125, $0.1625, $0.195,
 $0.225, $0.25, $0.275 and $0.315 before the 2017 split, then $0.1575, $0.19, $0.21, $0.23 and $0.25 to 2021, and the later rates); every price and dividend is on the as-traded basis of its
 own model's date (Yahoo's series times its factors after that date: the 2017 split for dates before 2017-02-21, the 2026 factor for
 all). Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years. "Call held" is
@@ -360,6 +362,103 @@ hurdle and lag it.
   on FY19's $2.83) lost 14.9-22.4%.
 - Within the year Ratio B ranks the two-year return at Spearman -0.89 and the entry price ranks the m12-24 return at -0.98.
 
+## 2022 (52 dates; two-year horizon on all)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier ACCUMULATE | 1 | -4.1% | -4.1% to -4.1% | 0 | 0 | -15.3% | 0 |
+| class CHEAP, legacy tier BUY | 47 | +3.0% | -12.5% to +50.3% | 8 | 0 | +7.5% | 8 |
+| class FAIR, legacy tier ACCUMULATE | 1 | -2.5% | -2.5% to -2.5% | 0 | 0 | -16.2% | 0 |
+| class RICH, legacy tier AVOID | 3 | -9.5% | -12.5% to -8.3% | 0 | 0 | -17.3% | 3 |
+| FY2021E: FY20's $2.28 stands (2022-01-07 to 2022-01-21) | 3 | -9.5% | -12.5% to -8.3% | 0 | 0 | -17.3% | 3 |
+| FY2022E: FY21's $3.04 stands (2022-01-28 to 2022-12-30) | 49 | +2.3% | -12.5% to +50.3% | 8 | 0 | +7.4% | 8 |
+| latest print Q3 2021 (2022-01-07 to 2022-01-21) | 3 | -9.5% | -12.5% to -8.3% | 0 | 0 | -17.3% | 3 |
+| latest print Q4 2021 (2022-01-28 to 2022-04-22) | 13 | -6.2% | -12.5% to +1.7% | 0 | 0 | -10.3% | 0 |
+| latest print Q1 2022 (2022-04-29 to 2022-07-22) | 13 | +0.4% | -7.6% to +3.4% | 0 | 0 | +3.4% | 0 |
+| latest print Q2 2022 (2022-07-29 to 2022-10-21) | 13 | +18.7% | +2.1% to +50.3% | 5 | 0 | +16.9% | 5 |
+| latest print Q3 2022 (2022-10-28 to 2022-12-30) | 10 | +27.8% | +13.7% to +44.8% | 3 | 0 | +19.0% | 3 |
+
+- **Held on 11 of 52.** The three January RICH dates (FY20's $2.28 standing for FY21E, $49.73-51.68) lost 8.3-12.5% over two years and
+  lagged SPY: held. From the Q4 2021 print the class was CHEAP on 48 dates ($29.27-49.33, on FY21's $3.04): -12.5% to +50.3% over two
+  years against SPY's +13.1% to +67.2%, behind it on every date by 10.2-50.4pp; 8 cleared the hurdle (2022-09-23 to 2022-11-11, $29.27-34.02,
+  at the autumn low), the other 40 missed. The FAIR date (2022-01-28) returned -2.5%, 15.7pp behind SPY: a miss. The two-year price landed nearest BEAR
+  on 43 of the 49 CHEAP and FAIR dates; over three years (to 2025) the CHEAP dates returned -24.9% to +19.4%.
+- **Within the year cheaper entries did better:** entry price ranks the two-year return at Spearman -0.96 and the m12-24 return at -1.00
+  (Ratio B -0.97 and -1.00); the class was wrong about the level, not the order.
+
+## 2023 (52 dates; two-year horizon on all)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier ACCUMULATE | 3 | -21.5% | -26.4% to -20.3% | 0 | 0 | -18.7% | 0 |
+| class CHEAP, legacy tier BUY | 49 | -8.9% | -31.9% to +9.1% | 0 | 0 | -7.6% | 0 |
+| FY2022E: FY21's $3.04 stands (2023-01-06 to 2023-01-20) | 3 | -0.2% | -1.0% to +4.5% | 0 | 0 | +4.3% | 0 |
+| FY2023E: FY21's $3.04 stands (2023-01-27 to 2023-12-29) | 49 | -12.5% | -31.9% to +9.1% | 0 | 0 | -9.8% | 0 |
+| latest print Q3 2022 (2023-01-06 to 2023-01-20) | 3 | -0.2% | -1.0% to +4.5% | 0 | 0 | +4.3% | 0 |
+| latest print Q4 2022 (2023-01-27 to 2023-04-21) | 13 | +2.6% | -11.0% to +9.1% | 0 | 0 | +3.5% | 0 |
+| latest print Q1 2023 (2023-04-28 to 2023-07-21) | 13 | -8.2% | -12.6% to -6.2% | 0 | 0 | -6.6% | 0 |
+| latest print Q2 2023 (2023-07-28 to 2023-10-20) | 13 | -22.6% | -27.1% to -19.0% | 0 | 0 | -17.9% | 0 |
+| latest print Q3 2023 (2023-10-27 to 2023-12-29) | 10 | -29.9% | -31.9% to -19.4% | 0 | 0 | -19.3% | 0 |
+
+- **Held on none.** CHEAP on all 52, on FY21's $3.04 standing for FY23E with 2022 excluded ($35.31-46.03, 11.6-15.1x): -31.9% to +9.1%
+  over two years (median -9.3%), behind SPY by 31.8-92.2pp, the two-year price nearest BEAR on every date and a drawdown of 22-43% within
+  two years; over three years (45 dates) -40.2% to +4.5%. Entry price ranks the two-year return at Spearman -0.83.
+
+## 2024 (52 dates; two-year horizon on 45, one year on 7)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 45 | -24.4% | -40.0% to -12.1% | 0 | 0 | -24.1% | 0 |
+| FY2023E: FY21's $3.04 stands (2024-01-05 to 2024-01-19) | 3 | -25.1% | -25.6% to -22.7% | 0 | 0 | -23.4% | 0 |
+| FY2024E: FY23's $3.71 stands (2024-01-26 to 2024-11-08) | 42 | -24.3% | -40.0% to -12.1% | 0 | 0 | -24.1% | 0 |
+| latest print Q3 2023 (2024-01-05 to 2024-01-19) | 3 | -25.1% | -25.6% to -22.7% | 0 | 0 | -23.4% | 0 |
+| latest print Q4 2023 (2024-01-26 to 2024-04-19) | 13 | -17.6% | -26.5% to -12.1% | 0 | 0 | -23.8% | 0 |
+| latest print Q1 2024 (2024-04-26 to 2024-07-19) | 13 | -26.0% | -31.0% to -17.0% | 0 | 0 | -20.1% | 0 |
+| latest print Q2 2024 (2024-07-24 to 2024-10-25) | 14 | -29.2% | -40.0% to -20.3% | 0 | 0 | -26.8% | 0 |
+| latest print Q3 2024 (2024-11-01 to 2024-11-08) | 2 | -34.6% | -36.9% to -34.6% | 0 | 0 | -35.9% | 0 |
+
+- **Held on none of 45.** CHEAP, three January dates on FY21's $3.04 (14.1-14.3x) and the rest on FY23's $3.71 (10.1-12.5x), at
+  $37.44-46.26: -40.0% to -12.1% over two years (median -24.4%), behind SPY by
+  48.2-76.9pp, the two-year price nearest BEAR on all, a drawdown of 41-51%.
+- The seven dates of mid-November to December 2024 have one year only: -35.2% to -18.4%, behind SPY on all. Their two-year labels come in
+  late 2026.
+
+## 2025 (52 dates; one-year horizon on 45, six months on 7)
+
+| Group | Dates | Median 1-yr total return | Range | Cleared 15% hurdle | Beat SPY | - | - |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 45 | -13.8% | -26.7% to +1.3% | 0 | 0 | - | - |
+| FY2024E: FY23's $3.71 stands (2025-01-03 to 2025-01-24) | 4 | -14.0% | -18.1% to -13.3% | 0 | 0 | - | - |
+| FY2025E: FY24's $4.14 stands (2025-01-31 to 2025-11-07) | 41 | -12.6% | -26.7% to +1.3% | 0 | 0 | - | - |
+| latest print Q3 2024 (2025-01-03 to 2025-01-24) | 4 | -14.0% | -18.1% to -13.3% | 0 | 0 | - | - |
+| latest print Q4 2024 (2025-01-31 to 2025-04-17) | 12 | -4.2% | -13.8% to +1.3% | 0 | 0 | - | - |
+| latest print Q1 2025 (2025-04-25 to 2025-07-25) | 14 | -21.7% | -26.7% to -9.2% | 0 | 0 | - | - |
+| latest print Q2 2025 (2025-08-01 to 2025-10-24) | 13 | -14.5% | -22.1% to -10.2% | 0 | 0 | - | - |
+| latest print Q3 2025 (2025-10-31 to 2025-11-07) | 2 | +0.3% | -5.9% to +0.3% | 0 | 0 | - | - |
+
+| Group | Dates | Median 6-month total return | Range | Cleared 7.2% hurdle | Beat SPY | - | - |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 7 | -1.4% | -16.7% to +3.2% | 0 | 0 | - | - |
+| FY2025E: FY24's $4.14 stands (2025-11-14 to 2025-12-26) | 7 | -1.4% | -16.7% to +3.2% | 0 | 0 | - | - |
+| latest print Q3 2025 (2025-11-14 to 2025-12-26) | 7 | -1.4% | -16.7% to +3.2% | 0 | 0 | - | - |
+
+- **One year is not the method's horizon.** The 45 CHEAP dates (FY23's $3.71 at 9.8-10.2x in January, then FY24's $4.14 at 6.4-9.1x) returned -26.7% to +1.3% over one
+  year and lagged SPY on all; the seven of mid-November to December 2025 have six months, -16.7% to +3.2%. No reading yet.
+
+## 2026 (45 dates; six-month horizon on 19; none from 2026-05-15)
+
+| Group | Dates | Median 6-month total return | Range | Cleared 7.2% hurdle | Beat SPY | - | - |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 19 | -15.0% | -23.9% to -1.4% | 0 | 0 | - | - |
+| FY2025E: FY24's $4.14 stands (2026-01-02 to 2026-01-23) | 4 | -11.0% | -22.9% to -10.5% | 0 | 0 | - | - |
+| FY2026E: FY25's $5.39 stands (2026-01-30 to 2026-05-08) | 15 | -15.3% | -23.9% to -1.4% | 0 | 0 | - | - |
+| latest print Q3 2025 (2026-01-02 to 2026-01-23) | 4 | -11.0% | -22.9% to -10.5% | 0 | 0 | - | - |
+| latest print Q4 2025 (2026-01-30 to 2026-04-17) | 12 | -17.7% | -23.9% to -12.6% | 0 | 0 | - | - |
+| latest print Q1 2026 (2026-04-24 to 2026-05-08) | 3 | -12.2% | -15.3% to -1.4% | 0 | 0 | - | - |
+
+- Six months only, on 19 CHEAP dates (FY24's $4.14 at 6.7-7.1x in January, then FY25's $5.39 with the Hulu gain at 3.8-5.9x): -23.9% to -1.4%, behind SPY on all. The
+  26 dates from 2026-05-15 have no horizon. No reading yet.
+
 ## The encoding calls, seen afterwards
 
 In 2008-2009 no judgement call recorded in retro/README.md ("CMCSA") moves a class or a tier: GAAP or company-adjusted EPS, the 2004-2005 adjusted
@@ -399,3 +498,15 @@ of 209 in all, against 147); every signal at its BEAR value moves 68 (33 held as
 would have done worse. The STREAMING watch list (all 209 dates) changed no class. Across all 732 dates the call held on 612. Hypotheses
 only, never a reason to re-encode CMCSA: a CHEAP class carried by acquired growth (Sky here, NBCUniversal in 2011) cleared the hurdle more
 often than it beat the market, and a depressed latest year standing as current-year EPS (2020) put the class at RICH ahead of a fall.
+
+In 2022-2026 the 149 dates with a two-year horizon (2022-01-07 to 2024-11-08) held on 11: CHEAP on 8 of 145 (median two-year return
+-9.3%, 51.1pp behind SPY), FAIR on none of 1, RICH on all 3. Every CHEAP date of 2023 and 2024 trailed SPY and missed the hurdle, the
+two-year price nearest BEAR, and the one-year and six-month readings of 2025-2026 point the same way. The class priced Comcast against its
+own decade of multiples (a median of 18x falling to 14x, the price at the 0th-29th percentile throughout) while the multiple kept falling
+and video customers fell from 18.2 million to 10.4 million (the releases). The judgement calls, scored afterwards: 2022 kept at its
+reported $1.21 moves 52 classes, CHEAP to RICH, all of which would have held (63 of 149 in all, against 11); every signal at its BEAR value
+moves 49, of which 48 would have held (59); the company's Adjusted EPS moves 4 (3 held as built, 1 as moved); the other calls move none.
+Across all 881 CMCSA dates with a two-year horizon the call held on 623. Hypotheses only, never a reason to re-encode CMCSA: a P/E measured
+against the stock's own decade calls a business CHEAP all the way down when the market re-rates it for good, and excluding an impairment
+year kept the earlier, higher EPS as the yardstick, which made the stock look cheaper still; the STREAMING watch list carried the theme
+with no market evidence naming Comcast, and the signals at their BEAR values would have caught most of it.
