@@ -16,9 +16,10 @@ DuPont Pharmaceuticals in-process R&D year) is excluded and the history and the 
 FY02, AAPL FY2002 and PFE 2003 rule). Each release guides the fiscal year only: GAAP and non-GAAP EPS as ranges in numbers, revenue
 growth in words. The method r2 inputs map as follows (retro/README.md, "BMY"):
   - current-FY EPS: the fiscal-year GAAP EPS guide midpoint (none: the last full year's EPS stands),
-  - forward revenue growth: no next-quarter guide and no fiscal-year revenue guide in numbers (words are not figures), so the latest
-    quarter's net sales growth excluding foreign exchange, the release's growth less the currency points it states (the NKE and MSFT
-    rule),
+  - forward revenue growth: no next-quarter guide; the fiscal-year worldwide sales guide in dollars where a release gives one (from the
+    FY2012 guide of the Q4 2011 release), read as growth on the last full year's net sales in the history (the PFE and LOW dollar-level
+    rule); before it revenue growth is guided in words only (words are not figures), so the latest quarter's net sales growth excluding
+    foreign exchange, the release's growth less the currency points it states (the NKE and MSFT rule),
   - guided margin step: none (the gross-margin and expense assumptions are words on the non-GAAP basis); the margin signal takes the
     latest quarter's pre-tax margin change.
 A Q4 print restates the year before it when a business became a discontinued operation ('restates': EPS and net sales from continuing
@@ -216,19 +217,31 @@ def build(as_of, facts, raw, spx, engine, out):
     else:                                    # no numeric GAAP EPS guide: the last full year's EPS stands (rollover rule)
         eps_now = eps_hist[cur_fy - 1]
         eps_label = f"{fy_e}: no numeric GAAP EPS guide yet, FY{(cur_fy - 1) % 100:02d}'s ${money(eps_now)} stands"
-    # no next-quarter guide and no revenue guide in numbers (each release states revenue growth in words only): the latest quarter's
-    # net sales growth excluding foreign exchange, the release's growth less the currency points it states (the NKE and MSFT rule)
-    fwd = [latest["lc_pct"]] * 2
-    q2 = latest["quarter"][:2]
-    fwd_label = f"no {fy_now} revenue guide in numbers, {latest['quarter']} net sales growth ex-FX"
-    fwd_short, fwd_period = f"{q2} sales ex-FX", latest["quarter"]
-    fwd_kind = f"no revenue guide in numbers: {latest['quarter']} net sales growth excluding foreign exchange ({latest['lc_note']})"
-    fy_rev_b = last_rev * (1 + latest["lc_pct"] / 100)
-    fy_rev_label = f"{latest['quarter']} net sales growth ex-FX, applied to the year"
+    gr = stated("rev_guide_usd_b")
+    fy_prev_s = f"FY{max(rev) % 100:02d}"
+    if gr:      # from the FY2012 guide (the Q4 2011 release) worldwide sales are guided in dollars: the range read as growth on the last
+                # full year's net sales in the history (the PFE and LOW dollar-level rule); no next-quarter guide
+        fwd = [round((v / last_rev - 1) * 100, 1) for v in gr["rev_guide_usd_b"]]
+        fwd_label, fwd_short, fwd_period = f"{fy_now} sales guide", f"{fy_now} guide", fy_now
+        fwd_kind = (f"fiscal-year {gr['rev_label']} guide ${gr['rev_guide_usd_b'][0]:.1f}-{gr['rev_guide_usd_b'][1]:.1f}B on {fy_prev_s}'s "
+                    f"${last_rev:.3f}B (no next-quarter guide)")
+        fy_rev_b, fy_rev_label = sum(gr["rev_guide_usd_b"]) / 2, f"{fy_now} sales guide midpoint"
+    else:
+        # no next-quarter guide and no revenue guide in numbers (the releases state revenue growth in words only): the latest quarter's
+        # net sales growth excluding foreign exchange, the release's growth less the currency points it states (the NKE and MSFT rule)
+        fwd = [latest["lc_pct"]] * 2
+        q2 = latest["quarter"][:2]
+        fwd_label = f"no {fy_now} revenue guide in numbers, {latest['quarter']} net sales growth ex-FX"
+        fwd_short, fwd_period = f"{q2} sales ex-FX", latest["quarter"]
+        fwd_kind = f"no revenue guide in numbers: {latest['quarter']} net sales growth excluding foreign exchange ({latest['lc_note']})"
+        fy_rev_b = last_rev * (1 + latest["lc_pct"] / 100)
+        fy_rev_label = f"{latest['quarter']} net sales growth ex-FX, applied to the year"
     if guides:
         bits = ([f"GAAP EPS ${eps_rng(*ge['eps_guide'])}"] if ge else ["no GAAP EPS range in numbers"]) + \
                ([f"non-GAAP EPS ${eps_rng(*ga['eps_adj'])} (shown only: it excludes upfront and milestone licensing payments, which recur)"]
                 if ga else []) + \
+               ([f"{gr['rev_label']} ${gr['rev_guide_usd_b'][0]:.1f}-{gr['rev_guide_usd_b'][1]:.1f}B ({pct_range(*fwd)} on {fy_prev_s}'s "
+                 f"${last_rev:.2f}B)"] if gr else []) + \
                ([f"revenue in words only: '{gw['rev_words']}'"] if gw else []) + \
                ([g["note"] for g in guides[-1:] if g.get("note")])
         guide_text = f"{fy_now} guide ({', '.join(dict.fromkeys(g['doc'] for g in guides))}): " + "; ".join(bits)

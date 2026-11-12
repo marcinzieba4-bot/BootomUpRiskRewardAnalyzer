@@ -13750,6 +13750,136 @@ Judgement calls that could carry hindsight:
 - DURABLE rather than STRUCTURAL or another kind (the class label only), on the 10-Ks' own description of exclusivity loss as the
   business's competition.
 
+### BMY 2010-2013
+
+209 weekly dates, 2010-01-08 to 2013-12-31, on the same method, engine and rule-T thresholds. The fact sheet only gains facts: its
+2008-2009 content is unchanged and the 105 earlier models rebuild byte for byte after the builder change below.
+
+```bash
+python3 retro/build_bmy.py --weekly 2010-01-04 2013-12-31                   # 209 dates, 2010-01-08 .. 2013-12-31
+for c in 2010-01-01 2010-01-28 2010-02-19 2010-04-29 2010-07-22 2010-10-26 2011-01-27 2011-02-18 2011-04-28 2011-07-28 2011-10-27 \
+         2012-01-26 2012-02-17 2012-04-26 2012-07-25 2012-10-24 2013-01-24 2013-02-15 2013-04-25 2013-07-25 2013-10-23 2014-01-01; do
+  python3 retro/tools/firewall.py $c BMY; done
+```
+
+Read: the 16 earnings releases from Q4 2009 to Q3 2013 with their supplemental exhibits, the FY2009-FY2012 10-Ks (Items 1, 1A, 5, 6, 7
+and 8), and every other 8-K of February 2010 to January 2014 by its items and exhibits, all read directly, none delegated. The source ids
+are BM26-BM45. 264 strings were checked with `verbatim.py`, each against its own filing (526 with the 2008-2009 batch's 262, all found).
+Decided on 2026-11-12, before any 2010-2013 outcome was computed:
+
+- **Release timing.** Every earnings 8-K was accepted before the open (07:48-08:40 ET) except Q3 2011's (10:03 ET, in the session);
+  none on a week's last trading day, so each print's week is dated the next trading day (2010-01-29 .. 2013-10-24). The 10-Ks: FY2009
+  2010-02-19 15:38 ET and FY2010 2011-02-18 13:34 ET (in the session), FY2011 2012-02-17 08:44 ET and FY2012 2013-02-15 08:55 ET (before
+  the open), each dated its own day.
+- **History: four more vintages, the ten years to the 10-K's year at most,** each year from the latest filing that reports it. The FY2009
+  10-K restates 2005-2008 without Mead Johnson: 2005 $1.15, 2006 $0.40, 2007 $0.65, 2008 $1.35, 2009 $1.63 (net sales $15.411B,
+  $13.863B, $15.617B, $17.715B, $18.808B); then FY2010 $1.79, FY2011 $2.16 and FY2012 $1.16 from their 10-Ks. 2004 stays from the 8-K
+  of 2009-04-28, 2003 from the FY2007 10-K and 2002 from the FY2006 10-K, the latest filings that report them; the FY2012 vintage runs
+  2003-2012, so 2002 leaves and the 2001 exclusion no longer reaches the decade. The window is 8.0 years in January 2010 and the full
+  ten from December 2011.
+- **A restated year (`restates`).** The Q4 2009 release (2010-01-28) gives 2008 at $1.35 and $17.715B without Mead Johnson, against the
+  recast's $1.59 and $20.597B, until the FY2009 10-K (three dates, 2010-01-29 to 2010-02-12). The Q4 2010-Q4 2012 releases show the year
+  before as its 10-K does, so they restate nothing.
+- **The distorted-year test keeps every year.** After tax, the specified items each latest filing lists are $551M against 2006's $787M
+  of earnings from continuing operations (FY2008 10-K table; FY2009 10-K basis), $764M against 2007's $1,296M, $278M against 2008's
+  $2,697M, $428M against 2009's $3,239M, $633M against 2010's $3,102M, $212M against 2011's $3,709M and $1,404M against 2012's $1,960M
+  (the $1,830M BMS-986094 impairment among them): reported EPS is at least 58% of the EPS without them. GAAP stands: the specified items
+  still include upfront and milestone licensing payments, which recur.
+- **Guides: GAAP EPS in numbers; revenue in words to FY2011, worldwide sales in dollars from FY2012,** each field from the latest guide
+  that states it:
+  - current-FY EPS, the GAAP range's midpoint: FY2010 $1.99 ($1.94-2.04, Q4 2009 release, "excludes any potential impact of U.S.
+    healthcare reform") and $1.89 ($1.84-1.94, Q1 2010, reform about $0.12, reaffirmed in Q2 and Q3); FY2011 $2.05 ($2.00-2.10, Q4 2010,
+    confirmed in Q1 2011), $2.13 ($2.08-2.18, Q2 2011) and $2.155 ($2.13-2.18, Q3 2011); FY2012 $1.95 ($1.90-2.00, Q4 2011, confirmed in
+    Q1 2012), $1.83 ($1.78-1.88, Q2 2012, without the planned Amylin acquisition) and $1.00 ($0.95-1.05, Q3 2012, after the $1.8 billion
+    BMS-986094 impairment); FY2013 $1.59 ($1.54-1.64, Q4 2012, confirmed in Q1 2013) and $1.45 ($1.41-1.49, Q2 2013, confirmed in Q3).
+    The non-GAAP ranges are shown only, as before;
+  - BASE growth and the growth factor to FY2011: no revenue guide in numbers ("mid single-digit revenue growth", "low-to-mid
+    single-digit", "high-single-digit"), so the latest quarter's net sales growth excluding foreign exchange as before, from the
+    release's text where it states it (Q4 2009 +7%, Q1 2010 +8%, Q2 2011 +10%, Q3 2011 +8%) and otherwise from its supplement's own
+    quarter change less its FX-impact column (Q2 2010 +2%, Q3 2010 +1%, Q4 2010 +2%, Q1 2011 +3%, Q4 2011 +7%; later quarters likewise);
+  - from FY2012 the releases guide "Worldwide sales" in dollars, read as growth on the last full year in the history (the PFE and LOW
+    dollar-level rule): FY2012 $17.2-18.2B (Q4 2011, -19.0% to -14.3% on FY11's $21.244B; PLAVIX at about $2.7 billion) and $17.4-17.8B
+    (Q3 2012, Amylin in from its August acquisition: the SHW Valspar rule); FY2013 $16.2-17.0B (Q4 2012, -8.1% to -3.5% on FY12's
+    $17.621B) and $16.0-16.5B (Q2 2013). The ranges sit among the "key non-GAAP guidance assumptions", but net sales carry no non-GAAP
+    adjustment, so they are used as published. A builder change: the dollar range takes BASE where a guide states it; the 2008-2009
+    models do not move;
+  - no margin step: the gross-margin percentages (72-73% for 2013, then about 73%) are non-GAAP and not a pre-tax margin (display only);
+  - the "minimum non-GAAP EPS guidance of $1.95 for 2013" (the 8-K of 2010-03-04, reaffirmed in later releases) is a multi-year non-GAAP
+    goal and adds nothing (the 2007-2010 15% CAGR rule); FY2013 becomes current with the Q4 2012 print, whose own range supersedes it.
+- **Dividends,** each from the first filing that states the rate: $0.32 a quarter (FY2009 10-K, "In December 2009, our Board of
+  Directors declared a quarterly dividend of $0.32 per share"), $0.33 (FY2010 10-K), $0.34 (FY2011 10-K), $0.35 (FY2012 10-K). The
+  December declarations were not filed on Form 8-K and the Q4 releases do not state them, so each rate stands from its 10-K's date and
+  $0.35 to the end of 2013 (the 8-K of 2012-03-08 restates the $0.34 rate after the FY2011 10-K).
+- **Signals,** from each release's statement of earnings and supplement as before, each against the year-ago quarter as the same release
+  shows it. From the Q4 2012 release the domestic total includes Puerto Rico ("Domestic net sales include United States and Puerto
+  Rico."), its year-ago quarter restated. PLAVIX lost U.S. exclusivity in May 2012, inside Q2 2012 (U.S. -27.3%); Q3 2012 carries the
+  $1,830 million BMS-986094 impairment (a pre-tax loss, -6,794bp).
+- **Durability: DURABLE, risk 2, unchanged.** The FY2009-FY2012 10-Ks call Bristol-Myers Squibb "a global biopharmaceutical company";
+  their risk factors keep "intense competition from other pharmaceutical manufacturers, including both innovative medicines and
+  lower-priced generic products" and "It is possible that we may lose market exclusivity of a product earlier than expected"; the FY2010
+  and FY2011 10-Ks add "Market exclusivity for PLAVIX* and AVAPRO*/AVALIDE* in the U.S. is expected to expire in May 2012 and March
+  2012, respectively". The "why" follows each 10-K. No theme is live for a pharmaceutical company through 2013; the watch list stays empty.
+- **Segment bridge** (display only): from the FY2009 10-K one segment, BioPharmaceuticals ("We report financial and operating information
+  in one segment—BioPharmaceuticals.").
+- **Adds nothing:** the 8-K of 2010-03-04 (the investor meeting's 2013 minimum non-GAAP EPS), the ZymoGenetics acquisition (2010-09-10,
+  2010-10-12), the debt tender offer (2010-11-09), the credit facilities (2011-10-04, 2012-07-31), the Inhibitex acquisition (2012-01-09,
+  2012-02-13), the dividend record-date correction (2012-03-08), the Amylin acquisition and its AstraZeneca collaboration (2012-07-03,
+  2012-08-10; its non-GAAP effect is in the Q2 2012 release), the BMS-986094 suspension and impairment (2012-08-03, 2012-08-24: no GAAP
+  range before the Q3 release), the Sanofi alliance restructuring (2012-10-03), the note offering (2013-10-31), the sale of the diabetes
+  business to AstraZeneca (2013-12-19, closing in 2014), and the officer, director, vote and proxy filings.
+
+- **Anachronism list:** the 2008-2009 batch left Eliquis at Pfizer's first use (2011-05-03). EDGAR full-text search over all filers
+  finds it first in Bristol-Myers Squibb's Q3 2010 earnings 8-K and 10-Q (2010-10-26, the 8-K accepted 07:53 ET, before the open), so
+  `taxonomy_eras.json` dates it 2010-10-26. No model of any ticker dated between the two names it, so no output changes.
+
+Seen in the build (method behaviour, not tuned):
+- **2010: CHEAP on all 52 dates** (BUY), on the multiple. The first three dates (FY09E $1.535) sit 0-2% over a 16x floor ($24.56) at
+  16.0-16.3x, CHEAP on Ratio B 0.68-0.70. From the Q4 2009 print FY10E is $1.99, then $1.89 from 2010-04-30: the stock ($22.44-27.62)
+  trades at 11.9-14.6x, the 1st-20th percentile of an 8-9-year window whose median is 19.2x before the FY2009 10-K and 21.3-22.0x after
+  it, 19-34% under a floor of 15x ($29.85) and then 18x ($34.02-35.82). The FY2009 10-K's restated history sets BEAR at the 2006 fall
+  (-65.2%/yr, $1.15 to $0.40, a BEAR price of $3; -54.1% before it) and XBULL at the 2006-2008 run (+83.7%/yr, $0.40 to $1.35; +47.6% to
+  +60.1% before it); BASE is each quarter's growth ex-FX with the share count (+6.7%, +7.7%, +1.7%, +0.7%/yr), BULL the window's CAGR
+  (+6.3% to +7.7%), so Ratio B is 0.29-0.61 from the print.
+- **2011: CHEAP on all 52 dates** (BUY on 47, ACCUMULATE on the five from 2011-12-02). FY11E $2.05 from 2011-01-28, $2.13 and $2.155
+  ($1.89 before): 12.3-16.4x (the 2nd-40th percentile of a 9-10-year window, median 18.7-21.2x), from 23% under to 2% over a 16x floor
+  ($30.24-34.48); BASE +0.7%, +3.5%, +4.5%, +11.5% (Q2 2011's +10% ex-FX) and +9.5%/yr, Ratio B 0.50-0.88.
+- **2012: CHEAP on 12, FAIR on 19, RICH on 21** (ACCUMULATE 6, WATCHLIST 35, AVOID 11). The FY2012 sales guide turns BASE to
+  -15.3%/yr from 2012-01-27 (a BASE price of $23-26 against a $32-36 stock), so Ratio B passes 1 (0.99-1.64) with the price 2-15% over a
+  16x floor ($31.20) on FY12E $1.95 at 16.4-18.4x (the 40th-55th percentile): CHEAP on 9 dates to 2012-04-13, FAIR on 17 (from
+  2012-03-16, all 13 from the Q1 2012 print). From the Q2 2012 print FY12E is $1.83 and the adjusted gap turns negative with U.S. sales
+  -27.3%: 17.3-19.6x, 2-15% over a 17x floor ($31.11), RICH on 11 and FAIR on 2 (2012-08-10, 2012-08-17). From the Q3 2012 print FY12E
+  is $1.00 after the impairment: 31.7-34.5x (the 71st-79th percentile), 76-91% over an 18x floor ($18.00), Ratio B 4.1-7.2, RICH and
+  AVOID on all 13 dates to 2013-01-18.
+- **2013: RICH on all 53 dates** (AVOID). From the Q4 2012 print FY13E is $1.59, then $1.45 from 2013-07-26: the stock ($36.58-53.41)
+  is 23.0-36.8x (the 61st-80th percentile of a window whose median is 18.9-22.5x), 28-105% over an 18x floor ($26.10-28.62; 20x and
+  $29.00 on 2013-12-31). BASE is -4.4%, -4.2% and -6.2%/yr on the sales guides; BULL is the window's CAGR, +0.9%/yr from the Q4 2012
+  print and -3.0%/yr from the FY2012 10-K (2003 $1.53 to 2012 $1.16), so the BULL price ($40-46) falls under the price and Ratio B is
+  infinite on the 34 dates from 2013-05-17.
+- **The proxy composite** is 2.55 on Q4 2009, 2.85 on Q1 2010, 2.30 and 2.25 on Q2 and Q3 2010, 2.45 on Q4 2010 and Q1 2011, 2.70 on Q2
+  2011, 3.00 on Q3 and Q4 2011, 2.45 on Q1 2012, 1.65 on Q2 2012 (U.S. -27.3% at BEAR), 1.45 on Q3 2012, 2.00 on Q4 2012, 1.70 on Q1 2013,
+  2.15 on Q2 and 2.65 on Q3 2013.
+- **Robustness:** all eight variants agree on 150 of 209 dates and seven on 24 (three in January 2010, three in December 2011, seven in
+  2012 and eleven in early 2013); the splits are in 2012 (16 dates hold on 5 of 8, 11 on 4, 2 on 3, 6 on 6).
+
+How far each call moves the classes (the 209 dates rebuilt with one encoding changed and classified offline; no outcome consulted):
+- every signal at its BEAR value: 32 classes (4 CHEAP to FAIR in 2010-2011, 9 CHEAP to RICH and 19 FAIR to RICH in January-August 2012);
+  at its XBULL value: 10 (RICH to FAIR, August-October 2012); no tier either way;
+- the non-GAAP guide midpoints as current-year EPS: 6 classes (RICH to FAIR, 2012-08-03 to 2012-10-12), 20 tiers;
+- the dollar sales guides not used (BASE on the quarter's growth ex-FX): 1 class (2012-03-16, FAIR to CHEAP);
+- BASE on reported growth instead of growth ex-FX: no class, 5 tiers; 2001 kept with the ten-year history and window: no class, 1 tier;
+- the restated 2008 ignored, or the 8-K of 2009-12-24 not used: none.
+The CHEAP calls of 2010-2011 rest on the GAAP guides against the stock's own multiples and the 2006-2007 lows; the RICH calls of late 2012
+and 2013 rest on the GAAP guides after the impairment and the lost PLAVIX sales against a price that went from $32 to $53; the FAIR/RICH
+boundary of 2012 moves with the signals.
+
+Judgement calls that could carry hindsight:
+- GAAP EPS rather than the company's non-GAAP figure (6 classes and 20 tiers in 2012), on the recurring licensing payments;
+- the "Worldwide sales" ranges read as revenue guides although they sit among the non-GAAP assumptions (1 class);
+- growth excluding foreign exchange taken from the supplement's FX column where the text gives none (5 tiers with reported growth);
+- the FY2009 10-K's restated history, which puts 2006 at $0.40 and so sets BEAR at -65%/yr and XBULL at +84%/yr from 2010 (method
+  behaviour, as published);
+- the signals and DURABLE, as in 2008-2009 (32 classes at BEAR, 10 at XBULL).
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -13980,6 +14110,8 @@ What the gates enforce:
   beverages and devices; OFFSHORE to IT services), so its watch list is empty through 2009 ("BMY"). Its FY2006-FY2008 10-Ks name
   competition "from lower-priced generic products" and the risk to lose "market exclusivity of a product earlier than expected"; exclusivity
   loss is the business's own cycle, not a substitution theme in the registry, so the words stay in the durability "why" (the PFE reading).
+  The FY2009-FY2012 10-Ks keep both sentences, the FY2010 and FY2011 10-Ks with the PLAVIX and AVAPRO/AVALIDE expiry dates; the watch list stays empty through 2013
+  ("BMY 2010-2013").
 
 ## Workflow
 
