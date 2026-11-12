@@ -13473,6 +13473,10 @@ Controls and checks:
 - **`retro_tool run`:** passes on all 201 dates, with no warnings (no release or 10-Q sentence about the next year is shown).
 - **Shared code untouched** (the engine template, `retro_tool.py`, `taxonomy_eras.json`); the builder and fact sheet are CAT's own and the
   fact sheet only gains records; the firewall changes only in its CAT branch, which now also plants Power & Energy figures.
+- **Firewall:** every kind of fact planted after the cutoff with absurd values (as for 2018-2022, the planted print now also carrying
+  Power & Energy's raw figures), and prices from the cutoff multiplied by 10, change no model and leave no planted text at any of the 39
+  cutoffs above (every release, 10-K, 10-Q, dividend and recast date of 2023-2026, 2023-01-01 and 2026-11-07; 783 to 984 dates each),
+  run on the committed series db329ef.
 
 Seen in the build (method behaviour, not tuned):
 - **CHEAP on 20 dates, FAIR on 62, RICH on 119.** 2023: CHEAP 16, FAIR 26, RICH 10; 2024: FAIR 27, RICH 24, CHEAP 1; 2025: RICH 40, FAIR 9,
