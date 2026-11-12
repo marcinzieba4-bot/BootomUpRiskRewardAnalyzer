@@ -13832,6 +13832,21 @@ Decided on 2026-11-12, before any 2010-2013 outcome was computed:
   finds it first in Bristol-Myers Squibb's Q3 2010 earnings 8-K and 10-Q (2010-10-26, the 8-K accepted 07:53 ET, before the open), so
   `taxonomy_eras.json` dates it 2010-10-26. No model of any ticker dated between the two names it, so no output changes.
 
+Controls: altering one value of each print (its U.S./international split and growth excluding foreign exchange, and each Q4 print's
+full-year EPS and restated year), vintage (its last year's EPS and its dividend), guide (its EPS range, and each dollar sales guide) and
+dividend of the whole fact sheet, rerun over all 314 dates, changes no date before its publication and changes the first weekly date on or
+after it: 106 of 113; the other 7 are the six 2007 facts inert in 2008-2009 and the FY2006 10-K's dividend, superseded before any built
+date. A scan of the 314 models for the source ids,
+titles, notes, texts and figures (four significant digits or more) of every later fact finds 79 of 67,157 pairs before publication (after
+dropping 4,523 strings an earlier fact already carries), none a leak: 49 are 2008's net sales without Mead Johnson ($17.715B, the Q4 2009
+release), which the FY2008 10-K's segment bridge already gives as the Pharmaceuticals segment's 2008 net sales (2009-02-20 on); 14 are
+"mid single-digit revenue growth" (the FY2010 words), already in the Q3 2009 release's FY2009 words (2009-10-23 on); 14 are 20.12 (Q3
+2013's pre-tax margin), which is FY2009's $18.808B grown by Q4 2009's 7% in the 13 models from 2010-01-29 to 2010-04-23 and 2008-06-13's
+close; and the two coincidences of 2008-2009 (31.42 and 21.98). The firewall changes no model and leaves no planted text at any of the 22
+cutoffs above (105 to 314 dates each), nor at 2008-07-01 and 2009-10-22 rerun after the builder change (26 and 94 dates). All 209 dates
+pass `retro_tool run`; the 46 dates from 2011-02-18 to 2011-12-30 draw one warning (2012, the year the FY2010 10-K gives for the PLAVIX
+and AVAPRO/AVALIDE exclusivity losses, in the durability "why").
+
 Seen in the build (method behaviour, not tuned):
 - **2010: CHEAP on all 52 dates** (BUY), on the multiple. The first three dates (FY09E $1.535) sit 0-2% over a 16x floor ($24.56) at
   16.0-16.3x, CHEAP on Ratio B 0.68-0.70. From the Q4 2009 print FY10E is $1.99, then $1.89 from 2010-04-30: the stock ($22.44-27.62)
