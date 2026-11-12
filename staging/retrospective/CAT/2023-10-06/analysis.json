@@ -1,0 +1,232 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "CAT",
+ "company": "Caterpillar Inc.",
+ "as_of": "2023-10-06",
+ "price_date": "2023-10-06",
+ "price": 266.04,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); machinery and engines signals",
+ "pit_profile": {
+  "kind": "CYCLICAL",
+  "risk": 2,
+  "why": "'Caterpillar is the world’s leading manufacturer of construction and mining equipment, off-highway diesel and natural gas engines, industrial gas turbines and diesel-electric locomotives' (FY2022 10-K, Item 1); 'Caterpillar products and services are sold worldwide into a variety of highly competitive markets'; 'The demand for our products and services tends to be cyclical and can be significantly reduced in periods of economic weakness characterized by lower levels of government and business investment, lower levels of business confidence, lower corporate earnings, high real interest rates, lower credit activity or tighter credit conditions, perceived or actual industry overcapacity, higher unemployment and lower consumer spending.', 'The energy and mining industries are major users of our products, including the mineral extraction, oil and natural gas industries.' and 'Changes in environmental and climate change laws or regulations, including laws relating to greenhouse gas emissions, could lead to new or additional investment in product designs and could increase environmental compliance expenditures.' (Item 1A): the 10-K calls the demand for its own products cyclical (BKR's 'Our business is cyclical'), so CYCLICAL from the FY2010 10-K; ENERGY_TRANSITION (live from 2015-12-12) is scoped to oil, gas and coal reserves and refining, which a maker of construction and mining equipment, engines and turbines does not hold, and EV (live from 2020-01-01) to battery-electric vehicles displacing ICE powertrains, auto parts suppliers and fuel retail, which its machines, off-highway engines and turbines are not, so the climate-change wording stays here",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "CYCLICAL, NEUTRALLY VALUED",
+  "quality_label": "◐ CYCLICAL, NEUTRALLY VALUED",
+  "quality_color": "#60a5fa",
+  "quality_tone": "blue",
+  "business_kind": "CYCLICAL",
+  "obsolescence_risk": 2,
+  "price_state": "FAIR",
+  "quality_note": "'Caterpillar is the world’s leading manufacturer of construction and mining equipment, off-highway diesel and natural gas engines, industrial gas turbines and diesel-electric locomotives' (FY2022 10-K, Item 1); 'Caterpillar products and services are sold worldwide into a variety of highly competitive markets'; 'The demand for our products and services tends to be cyclical and can be significantly reduced in periods of economic weakness characterized by lower levels of government and business investment, lower levels of business confidence, lower corporate earnings, high real interest rates, lower credit activity or tighter credit conditions, perceived or actual industry overcapacity, higher unemployment and lower consumer spending.', 'The energy and mining industries are major users of our products, including the mineral extraction, oil and natural gas industries.' and 'Changes in environmental and climate change laws or regulations, including laws relating to greenhouse gas emissions, could lead to new or additional investment in product designs and could increase environmental compliance expenditures.' (Item 1A): the 10-K calls the demand for its own products cyclical (BKR's 'Our business is cyclical'), so CYCLICAL from the FY2010 10-K; ENERGY_TRANSITION (live from 2015-12-12) is scoped to oil, gas and coal reserves and refining, which a maker of construction and mining equipment, engines and turbines does not hold, and EV (live from 2020-01-01) to battery-electric vehicles displacing ICE powertrains, auto parts suppliers and fuel retail, which its machines, off-highway engines and turbines are not, so the climate-change wording stays here. cyclical (obsolescence risk 2/5); price fair; Ratio B 1.48x; +48% to EPP floor; model-vs-market gap +0.80; conservative 2yr +20%.",
+  "theme": null
+ },
+ "legacy_signal_short": "WATCHLIST",
+ "legacy_signal": "◐ WATCHLIST",
+ "metrics": {
+  "ratio_b": 1.48,
+  "ratio_b_fmt": "1.48x",
+  "epp": 179.92,
+  "epp_gap_pct": 47.9,
+  "epp_adj": -0.1,
+  "proxy_composite": 3.0,
+  "sca": 0.12,
+  "adj_composite": 3.02,
+  "market_composite": 2.22,
+  "adj_gap": 0.8,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 20.2,
+  "scenarios": {
+   "BEAR": {
+    "eps": 4.58,
+    "pe": 12.1,
+    "price": 55,
+    "desc": "EPS -42.5%/yr (worst year FY13-FY22, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 21.29,
+    "pe": 15.5,
+    "price": 330,
+    "desc": "EPS +24.0%/yr (Q2 sales and revenues + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 21.29,
+    "pe": 19.2,
+    "price": 409,
+    "desc": "EPS +24.0%/yr (FY13-FY22 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 45.4,
+    "pe": 22.3,
+    "price": 1012,
+    "desc": "EPS +81.1%/yr (best 2-yr run FY13-FY22); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 1.48,
+   "epp_gap_pct": 47.9,
+   "adj_gap": 0.8,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 20.2,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.98,
+   "epp_gap_pct": 47.9,
+   "adj_gap": 1.18,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 20.2,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 3.33,
+   "epp_gap_pct": 47.9,
+   "adj_gap": 0.44,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 20.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 1.35,
+   "epp_gap_pct": 47.9,
+   "adj_gap": 0.86,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 20.2,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 1.62,
+   "epp_gap_pct": 47.9,
+   "adj_gap": 0.75,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 20.2,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 1.48,
+   "epp_gap_pct": 47.9,
+   "adj_gap": 1.1,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 20.2,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 1.48,
+   "epp_gap_pct": 20.1,
+   "adj_gap": 0.9,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 20.2,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 1.48,
+   "epp_gap_pct": 47.9,
+   "adj_gap": 0.99,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 20.2,
+   "price_state": "FAIR"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP",
+  "FAIR",
+  "RICH"
+ ],
+ "summary": "CAT (retrospective, 2023-10-06) ◐ WATCHLIST — Ratio B 1.48x (79.3% downside to Bear $55 / +53.7% upside to Bull $409) | Adj composite 3.02 vs market 2.22: gap +0.80 [UNDERVALUED] | +48% above the EPP floor $180 (13x FY23E $13.84) | Conservative 2-yr case: +20.2% total (+10.1%/yr) | At 19.2x FY23E the 15% hurdle price $352 sits between the BASE and BULL cases; Machinery sales +19.2% in Q2 2023, forward revenues +21.6% (no FY23 sales and revenues guide in numbers, Q2 2023 growth); ENERGY_TRANSITION (live from 2015-12-12) and EV (live from 2020-01-01) are scoped to oil, gas and coal reserves and refining and to battery-electric vehicles; no theme in scope has dated evidence.",
+ "sources": [
+  {
+   "id": "CT112",
+   "published": "2023-02-15",
+   "filed": "2023-02-15 10:27 ET (during the session)",
+   "title": "Caterpillar FY2022 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823023000011/cat-20221231.htm",
+   "supports": "2020-2022 sales and revenues, operating profit, profit per share - diluted and diluted shares (statement of results; Item 6 reserved), 2021-2022 adjusted profit per share, 2021-2022 external sales by segment, 2022 cash, operating cash flow and dividends; Items 1 and 1A; the Outlook's 2023 sales and revenues in words"
+  },
+  {
+   "id": "CT111",
+   "published": "2023-01-31",
+   "filed": "2023-01-31 06:32 ET (before the open)",
+   "title": "Caterpillar 8-K: fourth-quarter 2022 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823023000005/cat_exx991x4qx2022xearning.htm",
+   "supports": "fourth-quarter 2022 sales and revenues by segment and region and statement of results; full-year 2022 adjusted profit per share and statement of results; no outlook"
+  },
+  {
+   "id": "CT113",
+   "published": "2023-04-27",
+   "filed": "2023-04-27 06:32 ET (before the open)",
+   "title": "Caterpillar 8-K: first-quarter 2023 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823023000017/ex991toformcat1q2023earnin.htm",
+   "supports": "first-quarter 2023 sales and revenues by segment and region and statement of results; no outlook"
+  },
+  {
+   "id": "CT116",
+   "published": "2023-08-01",
+   "filed": "2023-08-01 06:31 ET (before the open)",
+   "title": "Caterpillar 8-K: second-quarter 2023 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823023000044/ex991toformcat2q2023earnin.htm",
+   "supports": "second-quarter 2023 sales and revenues by segment and region and statement of results; no outlook"
+  },
+  {
+   "id": "CT114",
+   "published": "2023-05-03",
+   "filed": "2023-05-03 10:19 ET (during the session)",
+   "title": "Caterpillar 10-Q for the first quarter of 2023",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823023000022/cat-20230331.htm",
+   "supports": "the Outlook's full-year 2023 sales and revenues in words"
+  },
+  {
+   "id": "CT117",
+   "published": "2023-08-02",
+   "filed": "2023-08-02 10:16 ET (during the session)",
+   "title": "Caterpillar 10-Q for the second quarter of 2023",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823023000047/cat-20230630.htm",
+   "supports": "the Outlook's full-year 2023 sales and revenues in words"
+  },
+  {
+   "id": "CT115",
+   "published": "2023-06-20",
+   "filed": "2023-06-20 06:48 ET (before the open)",
+   "title": "Caterpillar 8-K: June 2023 dividend declaration",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465923072533/tm2318728d1_ex99-1.htm",
+   "supports": "quarterly dividend $1.30 (declared June 14, 2023; first filing to state it)"
+  },
+  {
+   "id": "CT9",
+   "published": "2005-06-08",
+   "filed": "2005-06-08 12:00 ET",
+   "title": "Caterpillar 8-K: 'Caterpillar Splits Stock; Increases Dividend Rate'",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823005000429/form8k060805_dividend.htm",
+   "supports": "a two-for-one stock split; the split shares distributed on July 13 to stockholders of record on June 22, 2005"
+  },
+  {
+   "id": "W0",
+   "published": "2023-10-06",
+   "title": "Yahoo Finance daily prices, CAT and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/CAT/history",
+   "supports": "close $266.04 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-12"
+}

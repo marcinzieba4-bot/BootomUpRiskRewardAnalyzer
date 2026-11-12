@@ -53,7 +53,8 @@ print whose subscribers, margins, capital expenditures, raw figures and full-yea
 vintage before CUTOFF) and which restates every year of the history (CMCSA 2010-2013), a later guide with every guided field (a range,
 the words of a one-sided bound, the label and note); CAT: a print whose Machinery, Engines, sales, margins, profit per share, raw figures
 and full-year actuals are absurd (for the year after the latest vintage before CUTOFF), with the 2011 segments' raw figures and basis
-(CAT 2010-2013) and Energy & Transportation's, restating every year of the history (CAT 2014-2017), a later vintage of the other kind
+(CAT 2010-2013), Energy & Transportation's and Power & Energy's (CAT 2023-2026), restating every year of the history (CAT 2014-2017),
+a later vintage of the other kind
 with planted segment, normalization and theme-tail notes, a later withdrawal of every guided field (CAT 2018-2022), and a later guide
 with every guided
 field in both forms (dollar and growth ranges for sales and revenues and for profit per share, their bases, words and notes); every
@@ -196,7 +197,7 @@ PLANT = {"ACN": dict(quarter="Q9 FY99", revenue_lc=-60, margin_bp=-999, fy_eps_g
                      lines_basis="PLANTED",
                      raw=dict(mach_m=1, mach_prior_m=99, eng_m=1, eng_prior_m=99, rev_m=2, rev_prior_m=198, oi_m=-99, oi_prior_m=99,
                               diluted_shares_m=1, ci_m=1, ci_prior_m=99, ri_m=1, ri_prior_m=99, ps_m=1, ps_prior_m=99, et_m=1,
-                              et_prior_m=99))}[TICKER]
+                              et_prior_m=99, pe_m=1, pe_prior_m=99))}[TICKER]
 # LOW and AAPL guides carry more fields than UNP's: plant every one the builder reads (NKE's are words only)
 GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -999], margin_def="PLANTED", stores_guide=1,
                            store_opening_m=9999, fy_words="PLANTED",

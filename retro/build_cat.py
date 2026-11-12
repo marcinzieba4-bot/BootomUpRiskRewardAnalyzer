@@ -43,6 +43,10 @@ From 2018 (retro/README.md, "CAT 2018-2022"): the releases guide profit per shar
 given), so BASE takes the latest quarter's sales growth; a guide may withdraw named fields of its year ('withdrawn': the 8-K of
 2020-03-26), which voids them in every earlier guide for that year; no outlook follows in 2020-2022, so the last full year's EPS
 stands; EV, live from 2020-01-01, is read as out of scope as well (text only).
+From 2023 (retro/README.md, "CAT 2023-2026"): no filing guides the fiscal year in numbers (the releases give no outlook; the 10-K and
+10-Q outlooks state the year's sales and revenues in words, 'rev_words', shown in the guide line), so the last full year's company
+figure stands and BASE takes the latest quarter's sales growth; from the Q4 2025 release Energy & Transportation is named Power & Energy
+('pe_m'), still the Engines line, and from 2026 the Rail division is in Resource Industries (the recast 8-K of 2026-03-26 is a vintage).
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
 is the first trading day after it. The earnings 8-Ks of 2007-2017 were accepted before the open, except Q1 2008's and Q4 2010's
@@ -57,6 +61,7 @@ Usage
   python3 retro/build_cat.py --weekly 2010-01-04 2013-12-31
   python3 retro/build_cat.py --weekly 2014-01-06 2017-12-31
   python3 retro/build_cat.py --weekly 2018-01-01 2022-12-31
+  python3 retro/build_cat.py --weekly 2023-01-02 2026-11-08
   python3 retro/build_cat.py 2008-01-25
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/CAT/<AS_OF>
 """
@@ -142,9 +147,10 @@ def rule_t(rt):
 def lines(r):
     """The Machinery and Engines lines of a print: as reported to 2010; from the 2011 segments, Construction Industries plus Resource
     Industries and Power Systems (retro/README.md, "CAT 2010-2013"), renamed Energy & Transportation from Q1 2014 ('et_m'; "CAT
-    2014-2017")."""
+    2014-2017") and Power & Energy from the Q4 2025 release ('pe_m'; "CAT 2023-2026")."""
     if "ci_m" in r:
-        e, e0 = (r["et_m"], r["et_prior_m"]) if "et_m" in r else (r["ps_m"], r["ps_prior_m"])
+        e, e0 = ((r["pe_m"], r["pe_prior_m"]) if "pe_m" in r else (r["et_m"], r["et_prior_m"]) if "et_m" in r else
+                 (r["ps_m"], r["ps_prior_m"]))
         return r["ci_m"] + r["ri_m"], r["ci_prior_m"] + r["ri_prior_m"], e, e0
     return r["mach_m"], r["mach_prior_m"], r["eng_m"], r["eng_prior_m"]
 
@@ -411,7 +417,8 @@ def build(as_of, facts, raw, spx, engine, out):
     shares = {int(k): v for k, v in h["diluted_shares_m"].items()}
     r = latest["raw"]
     if "ci_m" in r:        # the 2011 segments read as the successors of the Machinery and Engines lines
-        e_name, e, e0 = (("Energy & Transportation", r["et_m"], r["et_prior_m"]) if "et_m" in r else
+        e_name, e, e0 = (("Power & Energy", r["pe_m"], r["pe_prior_m"]) if "pe_m" in r else
+                         ("Energy & Transportation", r["et_m"], r["et_prior_m"]) if "et_m" in r else
                          ("Power Systems", r["ps_m"], r["ps_prior_m"]))
         volumes = (f"Machinery (Construction Industries ${r['ci_m']:,}M and Resource Industries ${r['ri_m']:,}M against "
                    f"${r['ci_prior_m']:,}M and ${r['ri_prior_m']:,}M a year earlier, {latest['mach_pct']:+.1f}%), Engines ({e_name} "
