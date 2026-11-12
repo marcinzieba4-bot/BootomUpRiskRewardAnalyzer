@@ -13990,6 +13990,18 @@ the earlier batches' 526, all found). Decided on 2026-11-12, before any 2014-201
 - **Anachronism list:** unchanged. Every Bristol-Myers Squibb name the 2014-2017 models could use is listed from its first filing, and
   the new facts quote none.
 
+Controls: altering one value of each new print (its U.S./international split and its growth excluding foreign exchange, each Q4 print's
+full-year EPS, and the Q4 2015 print's full-year revenues and its exclusion), vintage (its last year's EPS and its dividend) and guide (its
+GAAP EPS range, each dollar revenue guide and each revenue guide in words), rerun over all 523 dates, changes no date before its
+publication and changes the first weekly date on or after it: 71 of 73; the other 2 are inert: the Q4 2015 print's exclusion note (the
+same print's FY2016 guide makes the rollover sentence that would quote it unnecessary, and the FY2015 10-K replaces it two weeks later)
+and the Q3 2016 release's FY2017 range (the Q4 2016 release confirms the same range when FY2017 becomes current). A scan of the 523 models
+for the source ids, titles, texts and figures (four significant digits or more) of every fact finds 39 of 276,676 pairs before
+publication (after dropping 908 strings an earlier fact already carries), none a leak: the three coincidences of 2008-2013 (21.98, 31.42
+and 20.12 in 14 models) and closes or 52-week lows that equal later pre-tax margins (2008-10-24's $17.64 and FY2013's 17.64%, 2008-06-20's $19.57,
+the 52-week low of the 15 models after it, and Q4 2013's 19.57%, 2011's 52-week low of $24.26 and Q3 2015's 24.26%, 2010-07-16's $25.17 and Q2 2017's 25.17%,
+2009-09-18's $22.52 and Q3 2017's 22.52%). All 209 dates pass `retro_tool run`, with no warning.
+
 Seen in the build (method behaviour, not tuned):
 - **2014: RICH on all 52 dates** (AVOID). The first three dates (FY13E $1.45, the Q2 2013 sales guide) are 36.4-38.7x, the 80th
   percentile of a ten-year window whose median is 22.5x, with Ratio B infinite. From the Q4 2013 print FY14E is $1.825 (with the
