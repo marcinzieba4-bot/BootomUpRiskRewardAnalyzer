@@ -1,16 +1,19 @@
 # BMY retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the BMY weekly dates: 523 from 2008-01-04 to 2017-12-29, all Bristol-Myers Squibb Company (NYSE: BMY).
+Patterns seen in `outcome.json` for the BMY weekly dates: 732 from 2008-01-04 to 2021-12-31, all Bristol-Myers Squibb Company (NYSE: BMY).
 They are **labels and hypotheses**: never feed them back into the method or the fact sheet. Each batch was scored only after its
 point-in-time build was committed and pushed (2008-2009: 4821356, firewall result 36e19d3; 2010-2013: 31cea6e, controls and firewall
-result 533d892; 2014-2017: 20cbe3e, controls and leak scan 932ebbb, firewall result 3921459); the outcomes were computed on 2026-11-12.
-Every date has its 6-month, 1-, 2- and 3-year horizons (the last ends 2020-12-29). Total returns include the quarterly dividends ($0.31
+result 533d892; 2014-2017: 20cbe3e, controls and leak scan 932ebbb, firewall result 3921459; 2018-2021: 2304926, controls, leak scan and
+firewall result 5c1e9d5); the outcomes were computed on 2026-11-12. Every date has its 6-month, 1-, 2- and 3-year horizons (the last
+ends 2024-12-30). Total returns include the quarterly dividends ($0.31
 from the ex-date of 2008-01-02, $0.32 from 2009-12-30, $0.33 from 2011-01-05, $0.34 from 2012-01-04, $0.35 from 2013-01-02, $0.36 from
 2013-12-31, $0.37 from 2014-12-30, $0.38 from 2015-12-30, $0.39 from 2017-01-04, $0.40 from 2018-01-04, $0.41 from 2019-01-03, $0.45 from
-2020-01-02). Each December's new rate was stated in no filing before the next 10-K, so the models from the declaration to the 10-K carry
+2020-01-02, $0.49 from 2020-12-31, $0.54 from 2022-01-06, $0.57 from 2023-01-05, $0.60 from 2024-01-04). Each December's new rate was stated in no filing before the next 10-K, so the models from the declaration to the 10-K carry
 the old rate ($0.31 from 2009-12-24 to 2010-02-12, $0.32 to 2011-02-11, and likewise later: $0.35 to 2014-02-07, $0.36 to 2015-02-06,
-$0.37 to 2016-02-05, $0.38 to 2017-02-17, and $0.39 through December 2017; checked after scoring; no model changes). No
-split falls in any horizon, so every price is as traded; the Mead Johnson split-off of 2009-12-23 was an exchange offer, so a holder who
+$0.37 to 2016-02-05, $0.38 to 2017-02-17, $0.39 to 2018-02-06, $0.40 to 2019-02-22, $0.41 to 2020-02-21, $0.45 to 2021-02-05, and $0.49
+through December 2021; checked after scoring; no model changes). No
+split falls in any horizon, so every price is as traded (the Celgene acquisition issued new BMY shares to Celgene's holders and needs no
+factor); the Mead Johnson split-off of 2009-12-23 was an exchange offer, so a holder who
 did not tender kept the same shares and Yahoo's series needs no factor. Medians of an even count take the upper middle value
 (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years and +52.1% over three. "Call held" is `call_check_2y`: CHEAP should
 clear the hurdle or beat the benchmark (SPY), FAIR should land within ±15pp of the benchmark, and RICH should miss the hurdle and lag the
@@ -385,3 +388,142 @@ benchmark.
   RICH dates of December 2017 FAIR; none of those 13 would have held as CHEAP (every 2016-2017 date lagged SPY and missed the hurdle), and
   the 3 RICH dates that held would have become FAIR dates 15.0-27.7pp behind SPY, two of them outside the band. Checked after scoring,
   as a label; the encoding stays as decided.
+
+
+## 2018 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 10 | +25.1% | +21.7% to +31.4% | 0 | 0 | +16.5% | 0 |
+| class CHEAP, legacy tier ACCUMULATE | 3 | +18.3% | +15.6% to +27.1% | 0 | 1 | +4.7% | 1 |
+| class CHEAP, legacy tier WATCHLIST | 2 | +13.5% | +7.9% to +13.5% | 0 | 0 | +4.2% | 0 |
+| class FAIR, legacy tier ACCUMULATE | 8 | +23.7% | +6.2% to +27.3% | 0 | 7 | +4.4% | 7 |
+| class FAIR, legacy tier WATCHLIST | 26 | +5.6% | -19.9% to +12.4% | 0 | 0 | -4.1% | 16 |
+| class RICH, legacy tier AVOID | 3 | +5.0% | +4.3% to +9.1% | 0 | 0 | -19.4% | 3 |
+| FY17E $2.41 (2018-01-05 to 2018-02-02) | 5 | +6.8% | +4.3% to +12.4% | 0 | 0 | -18.8% | 4 |
+| FY18E $3.075 (2018-02-06 to 2018-04-20) | 11 | +0.5% | -19.9% to +27.1% | 0 | 1 | -16.3% | 7 |
+| FY18E $2.75 (2018-04-27 to 2018-07-20) | 13 | +19.8% | +6.6% to +27.3% | 0 | 7 | +3.2% | 12 |
+| FY18E $2.73 (2018-07-27 to 2018-10-19) | 13 | +7.9% | -1.8% to +18.3% | 0 | 0 | -2.7% | 4 |
+| FY18E $3.1 (2018-10-26 to 2018-12-28) | 10 | +25.1% | +21.7% to +31.4% | 0 | 0 | +16.5% | 0 |
+| latest print Q3 2017 (2018-01-05 to 2018-02-02) | 5 | +6.8% | +4.3% to +12.4% | 0 | 0 | -18.8% | 4 |
+| latest print Q4 2017 (2018-02-06 to 2018-04-20) | 11 | +0.5% | -19.9% to +27.1% | 0 | 1 | -16.3% | 7 |
+| latest print Q1 2018 (2018-04-27 to 2018-07-20) | 13 | +19.8% | +6.6% to +27.3% | 0 | 7 | +3.2% | 12 |
+| latest print Q2 2018 (2018-07-27 to 2018-10-19) | 13 | +7.9% | -1.8% to +18.3% | 0 | 0 | -2.7% | 4 |
+| latest print Q3 2018 (2018-10-26 to 2018-12-28) | 10 | +25.1% | +21.7% to +31.4% | 0 | 0 | +16.5% | 0 |
+
+- **FAIR held on 23 of 34, CHEAP on 1 of 15, RICH on all 3.** The FAIR dates ($51.33-68.96) returned -19.9% to +27.3% over two years
+  against SPY's -9.3% to +27.5%; 23 landed within the ±15pp band. The CHEAP dates ($49.82-60.90, the two after the Q4 2017 print and
+  the 13 on the Q3 2018 guide of $3.10, 15-17x) returned +7.9% to +31.4%, none over the hurdle and all but one behind SPY (by up to
+  28.0pp): the stock fell 13.9% on 2019-01-03 and touched $42.77 on 2019-07-22 inside their horizons. The three RICH dates of January
+  ($62.81-64.25) returned +4.3% to +9.1%, 12.0-16.3pp behind SPY.
+- **The floor was reached on every date** ($45.79-55.35 against a two-year low of $42.77) and the two-year price landed nearest BASE on
+  all 52 (BASE +3.1% to +12.1%/yr). Over three years (to late 2021) -6.4% to +39.3%, none ahead of SPY or over the three-year hurdle.
+- **The ranks ran through the price:** the entry price ranks the two-year return at -0.89 and the m12-24 return at -0.95, the EPP gap at
+  -0.65 and -0.68, Ratio B at -0.77 and -0.87; the adjusted gap at +0.61 and +0.82 and the proxy composite at +0.47 and +0.68.
+
+## 2019 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 48 | +41.7% | +2.6% to +61.6% | 30 | 8 | +27.5% | 30 |
+| class CHEAP, legacy tier ACCUMULATE | 4 | +3.0% | -1.6% to +3.1% | 0 | 0 | -0.9% | 0 |
+| FY18E $3.1 (2019-01-04 to 2019-01-18) | 3 | +39.8% | +38.4% to +42.7% | 3 | 0 | +26.3% | 3 |
+| FY19E $3.8 (2019-01-25 to 2019-04-18) | 13 | +31.7% | +22.4% to +51.7% | 6 | 1 | +21.3% | 6 |
+| FY19E $3.89 (2019-04-26 to 2019-07-19) | 13 | +51.4% | +38.0% to +61.6% | 13 | 5 | +31.9% | 13 |
+| FY19E $3.78 (2019-07-26 to 2019-10-25) | 14 | +43.5% | +12.0% to +57.3% | 8 | 2 | +31.7% | 8 |
+| FY19E $3.51 (2019-11-01 to 2019-12-27) | 9 | +3.1% | -1.6% to +9.2% | 0 | 0 | +8.2% | 0 |
+| latest print Q3 2018 (2019-01-04 to 2019-01-18) | 3 | +39.8% | +38.4% to +42.7% | 3 | 0 | +26.3% | 3 |
+| latest print Q4 2018 (2019-01-25 to 2019-04-18) | 13 | +31.7% | +22.4% to +51.7% | 6 | 1 | +21.3% | 6 |
+| latest print Q1 2019 (2019-04-26 to 2019-07-19) | 13 | +51.4% | +38.0% to +61.6% | 13 | 5 | +31.9% | 13 |
+| latest print Q2 2019 (2019-07-26 to 2019-10-25) | 14 | +43.5% | +12.0% to +57.3% | 8 | 2 | +31.7% | 8 |
+| latest print Q3 2019 (2019-11-01 to 2019-12-27) | 9 | +3.1% | -1.6% to +9.2% | 0 | 0 | +8.2% | 0 |
+
+- **CHEAP held on 30 of 52, all by clearing the hurdle.** The 43 dates to 2019-10-25 ($43.33-54.98, 11-16x the GAAP guides that
+  excluded Celgene, all BUY) returned +12.0% to +61.6% over two years, and the 30 that held cleared the +32.2% hurdle; only 8 beat SPY,
+  whose two years from 2019 ran +42.7% to +61.0% through the 2020 rebound. The Q1 2019-print dates, at the year's lowest prices
+  ($43.33-49.34), returned +38.0% to +61.6%. The nine dates after the Q3 2019 print ($56.45-64.14, five BUY and four ACCUMULATE) returned
+  -1.6% to +9.2%, 42-52pp behind SPY.
+- **Three years made the call:** +22.4% to +86.0% to late 2022 (median +51.8%), 36 of 52 ahead of SPY and 25 over the three-year hurdle.
+  The two-year price landed nearest BASE on 42 dates and BEAR on 10; the floor ($46.50-62.24) sat above the price from the Q4 2018 print
+  to the Q2 2019 print and was reached or passed within two years on every date.
+- **The ranks were nearly perfect within the year:** the entry price ranks both measures at -0.96, the EPP gap at -0.89 and -0.90,
+  Ratio B at -0.89 and -0.88; the adjusted gap at +0.45 and +0.46, the proxy composite at +0.17 and +0.15.
+
+## 2020 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier ACCUMULATE | 5 | +3.8% | +3.1% to +9.2% | 0 | 0 | -1.9% | 0 |
+| class RICH, legacy tier AVOID | 48 | +29.9% | +5.7% to +54.7% | 19 | 27 | +13.2% | 14 |
+| FY19E $3.51 (2020-01-03 to 2020-01-31) | 5 | +3.8% | +3.1% to +9.2% | 0 | 0 | -1.9% | 0 |
+| FY20E $0.85 (2020-02-07 to 2020-05-01) | 13 | +31.4% | +5.7% to +54.7% | 6 | 0 | +7.4% | 7 |
+| FY20E $0.47 (2020-05-08 to 2020-07-31) | 13 | +33.1% | +24.4% to +44.1% | 8 | 8 | +13.2% | 4 |
+| FY20E $0.015 (2020-08-07 to 2020-10-30) | 13 | +25.8% | +19.4% to +38.5% | 1 | 10 | +13.3% | 3 |
+| FY20E $0.52 (2020-11-06 to 2020-12-31) | 9 | +29.9% | +21.8% to +36.8% | 4 | 9 | +14.9% | 0 |
+| latest print Q3 2019 (2020-01-03 to 2020-01-31) | 5 | +3.8% | +3.1% to +9.2% | 0 | 0 | -1.9% | 0 |
+| latest print Q4 2019 (2020-02-07 to 2020-05-01) | 13 | +31.4% | +5.7% to +54.7% | 6 | 0 | +7.4% | 7 |
+| latest print Q1 2020 (2020-05-08 to 2020-07-31) | 13 | +33.1% | +24.4% to +44.1% | 8 | 8 | +13.2% | 4 |
+| latest print Q2 2020 (2020-08-07 to 2020-10-30) | 13 | +25.8% | +19.4% to +38.5% | 1 | 10 | +13.3% | 3 |
+| latest print Q3 2020 (2020-11-06 to 2020-12-31) | 9 | +29.9% | +21.8% to +36.8% | 4 | 9 | +14.9% | 0 |
+
+- **RICH held on 14 of 48; the label came from purchase accounting.** From the Q4 2019 print the models read the GAAP guides after
+  the Celgene acquisition ($0.85, $0.47, $0.015, $0.52: 57-4,211x), and every date after the print is RICH. The stock ($48.40-66.38)
+  returned +5.7% to +54.7% over two years; 27 beat SPY and 19 cleared the hurdle; the 14 that held lagged SPY's rebound from March 2020
+  and missed the hurdle. The two-year price landed nearest BULL on 26 and XBULL on 21 (the scenario prices are multiples of those GAAP
+  EPS figures). Over three years (to late 2023) -12.1% to +51.4%, behind SPY on 52 of 53.
+- **The two sensitivities that undo the label would have scored better as labels** (checked after scoring; the encodings stay as
+  decided): on the non-GAAP guides all 48 dates and the 4 of January 2021 were CHEAP, and 38 of those 52 cleared the hurdle or beat SPY,
+  as CHEAP requires; on the reading of the Q2 2020 range as no numeric guide the 13 dates of August-October 2020 were CHEAP, and 10 of
+  them beat SPY. The 5 CHEAP dates of January 2020 ($62.78-66.72, before the Q4 2019 print) returned +3.1% to +9.2%, 32-48pp behind SPY.
+- **The ranks within the year carry little:** the entry price ranks the two-year return at -0.72 and the m12-24 return at -0.74; the
+  EPP gap, the adjusted gap and Ratio B (15 finite dates) at -0.29 to +0.41, around zero or the wrong sign, as the GAAP figures put the
+  floor at $0.28-16.15 and Ratio B at 3.1 to infinite.
+
+## 2021 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 12 | +19.8% | +12.4% to +29.1% | 0 | 12 | +20.5% | 12 |
+| class CHEAP, legacy tier ACCUMULATE | 6 | +5.7% | +4.0% to +13.8% | 0 | 6 | +17.2% | 6 |
+| class CHEAP, legacy tier WATCHLIST | 15 | +3.2% | -4.4% to +12.4% | 0 | 7 | +12.3% | 7 |
+| class FAIR, legacy tier WATCHLIST | 15 | -3.5% | -10.6% to +4.6% | 0 | 2 | +3.7% | 15 |
+| class RICH, legacy tier AVOID | 4 | +23.5% | +15.3% to +24.8% | 0 | 4 | +16.9% | 0 |
+| FY20E $0.52 (2021-01-08 to 2021-01-29) | 4 | +23.5% | +15.3% to +24.8% | 0 | 4 | +16.9% | 0 |
+| FY21E $3.22 (2021-02-05 to 2021-04-23) | 12 | +19.8% | +12.4% to +29.1% | 0 | 12 | +20.5% | 12 |
+| FY21E $3.28 (2021-04-30 to 2021-07-23) | 13 | +3.9% | -1.5% to +13.8% | 0 | 6 | +8.1% | 9 |
+| FY21E $2.87 (2021-07-29 to 2021-10-22) | 13 | +3.2% | -4.8% to +6.7% | 0 | 7 | +9.7% | 13 |
+| FY21E $2.755 (2021-10-28 to 2021-12-31) | 10 | -4.1% | -10.6% to -2.9% | 0 | 2 | +13.7% | 6 |
+| latest print Q3 2020 (2021-01-08 to 2021-01-29) | 4 | +23.5% | +15.3% to +24.8% | 0 | 4 | +16.9% | 0 |
+| latest print Q4 2020 (2021-02-05 to 2021-04-23) | 12 | +19.8% | +12.4% to +29.1% | 0 | 12 | +20.5% | 12 |
+| latest print Q1 2021 (2021-04-30 to 2021-07-23) | 13 | +3.9% | -1.5% to +13.8% | 0 | 6 | +8.1% | 9 |
+| latest print Q2 2021 (2021-07-29 to 2021-10-22) | 13 | +3.2% | -4.8% to +6.7% | 0 | 7 | +9.7% | 13 |
+| latest print Q3 2021 (2021-10-28 to 2021-12-31) | 10 | -4.1% | -10.6% to -2.9% | 0 | 2 | +13.7% | 6 |
+
+- **CHEAP held on 25 of 33, FAIR on all 15, RICH on none of 4.** The 12 CHEAP and BUY dates of the Q4 2020 print ($59.99-66.01, 19-21x
+  FY21E $3.22) returned +12.4% to +29.1% over two years and beat SPY by up to 20.4pp; none cleared the hurdle. The CHEAP dates from the
+  Q1 2021 print returned -4.4% to +13.8%, 13 of 21 ahead of SPY, whose two years from 2021 ran -7.6% to +9.5%. The FAIR dates returned
+  -10.6% to +4.6%, all within the band. The four RICH dates of January 2021 (FY20E $0.52) returned +15.3% to +24.8% and beat SPY.
+- **The level fell back after the first year:** the stock peaked at $81.13 on 2022-12-02 and fell to $48.48 on 2023-11-21 inside the
+  horizons, so the two-year price landed nearest BASE on 36 dates and BEAR on 12; over three years (to late 2024) -30.4% to +16.4%, none
+  ahead of SPY.
+- **Ratio B ranked best:** -0.83 against the two-year return and -0.92 against the m12-24 return; the proxy composite +0.58 and +0.49;
+  the entry price -0.07 and -0.69.
+
+## Across 2018-2021
+
+- **The call held on 111 of 209 dates:** CHEAP on 56 of 105, FAIR on 38 of 49, RICH on 17 of 55. With 2008-2017, the call held on 403
+  of 732: CHEAP on 263 of 393, FAIR on 51 of 99, RICH on 89 of 240.
+- **The 2020 RICH calls are a purchase-accounting artifact.** On GAAP EPS after the Celgene acquisition (amortization of acquired
+  intangibles near $10 billion a year, the inventory step-up, the acquired IPRD) the models priced the stock at 57-4,211x; the market
+  priced it on the company's figures and the stock rose. Hypothesis, not a rule: after a large acquisition, GAAP EPS stops measuring the
+  earnings the market prices, and a P/E on it ranked against the pre-deal history flags RICH; test it on other acquirers and periods,
+  never fit it to BMY or carry it into a BMY model. The method's rules (GAAP EPS where the adjusted figure removes recurring costs, the
+  guide midpoint as published) produce this mechanically; changing them is a method question for the owner, with a full re-run.
+- **The 2019 CHEAP calls held on the hurdle, not on SPY.** The GAAP guides that excluded Celgene put the stock at 11-15x against a
+  pre-deal window; it returned +38% to +62% from the cheapest entries, but SPY's 2020-2021 run beat most of them over two years. Three
+  years settled it in the model's favour (36 of 52 ahead of SPY).
+- **Unanimity tracked the CHEAP calls this time.** The 88 dates on which all eight robustness variants agreed held on 56 (42 of 56 CHEAP,
+  14 of 32 RICH); the 121 on seven or fewer held on 55. A label, not a filter (in 2014-2017 unanimity tracked only the RICH calls).
+- **The ranks:** across the 209 dates the entry price ranks the two-year return at -0.67 and the m12-24 return at -0.67; the EPP gap at
+  -0.18 and -0.50, the adjusted gap at +0.11 and +0.55, the proxy composite at +0.31 and +0.41: the right signs on the m12-24 measure,
+  weak on the two-year one, with 2020's GAAP figures adding noise.

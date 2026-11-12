@@ -527,3 +527,212 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2017-12-15 | $62.41 | Bristol-Myers Squibb Q3 2017 results | 2.35 | +0.07 | 1.75x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +7.5% | -15.0pp | -20.5% | ✓ |
 | 2017-12-22 | $60.96 | Bristol-Myers Squibb Q3 2017 results | 2.35 | +0.12 | 1.62x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +9.5% | -14.4pp | -18.2% | ✓ |
 | 2017-12-29 | $61.28 | Bristol-Myers Squibb Q3 2017 results | 2.35 | +0.10 | 1.65x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +10.0% | -15.0pp | -18.3% | ✓ |
+| 2018-01-05 | $61.89 | Bristol-Myers Squibb Q3 2017 results | 2.35 | +0.08 | 1.70x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +6.8% | -15.1pp | -18.7% | ✗ |
+| 2018-01-12 | $62.81 | Bristol-Myers Squibb Q3 2017 results | 2.35 | +0.06 | 1.78x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +9.1% | -12.0pp | -19.4% | ✓ |
+| 2018-01-19 | $62.28 | Bristol-Myers Squibb Q3 2017 results | 2.35 | +0.07 | 1.73x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +12.4% | -9.8pp | -18.1% | ✓ |
+| 2018-01-26 | $64.25 | Bristol-Myers Squibb Q3 2017 results | 2.35 | -0.08 | 1.92x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +5.0% | -13.5pp | -20.2% | ✓ |
+| 2018-02-02 | $63.48 | Bristol-Myers Squibb Q3 2017 results | 2.35 | +0.05 | 1.85x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +4.3% | -16.3pp | -18.8% | ✓ |
+| 2018-02-06 | $60.90 | Bristol-Myers Squibb Q4 2017 results | 2.00 | -0.05 | 0.84x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +15.6% | -12.5pp | -15.0% | ✗ |
+| 2018-02-16 | $68.96 | Bristol-Myers Squibb Q4 2017 results | 2.00 | -0.31 | 1.65x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +1.0% | -26.5pp | -24.4% | ✗ |
+| 2018-02-23 | $67.95 | Bristol-Myers Squibb Q4 2017 results | 2.00 | -0.28 | 1.58x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +1.4% | -23.9pp | -22.9% | ✗ |
+| 2018-03-02 | $66.17 | Bristol-Myers Squibb Q4 2017 results | 2.00 | -0.23 | 1.46x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -3.8% | -22.7pp | -20.5% | ✗ |
+| 2018-03-09 | $67.92 | Bristol-Myers Squibb Q4 2017 results | 2.00 | -0.28 | 1.58x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -10.3% | -12.4pp | -22.3% | ✓ |
+| 2018-03-16 | $66.60 | Bristol-Myers Squibb Q4 2017 results | 2.00 | -0.24 | 1.49x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -18.3% | -9.3pp | -20.6% | ✓ |
+| 2018-03-23 | $62.06 | Bristol-Myers Squibb Q4 2017 results | 2.00 | -0.12 | 1.22x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -19.9% | -10.6pp | -14.8% | ✓ |
+| 2018-03-29 | $63.25 | Bristol-Myers Squibb Q4 2017 results | 2.00 | -0.15 | 1.28x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -11.3% | -11.8pp | -16.3% | ✓ |
+| 2018-04-06 | $60.88 | Bristol-Myers Squibb Q4 2017 results | 2.00 | -0.09 | 1.16x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +0.5% | -5.7pp | -12.7% | ✓ |
+| 2018-04-13 | $58.65 | Bristol-Myers Squibb Q4 2017 results | 2.00 | -0.03 | 1.05x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +6.2% | -2.0pp | -9.0% | ✓ |
+| 2018-04-20 | $51.17 | Bristol-Myers Squibb Q4 2017 results | 2.00 | +0.21 | 0.76x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +27.1% | +17.3pp | +4.7% | ✓ |
+| 2018-04-27 | $52.27 | Bristol-Myers Squibb Q1 2018 results | 2.35 | +0.32 | 1.04x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +26.1% | +14.3pp | +3.2% | ✓ |
+| 2018-05-04 | $51.33 | Bristol-Myers Squibb Q1 2018 results | 2.35 | +0.36 | 0.99x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | +23.7% | +13.0pp | +5.6% | ✓ |
+| 2018-05-11 | $51.86 | Bristol-Myers Squibb Q1 2018 results | 2.35 | +0.33 | 1.02x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +27.3% | +16.0pp | +5.0% | ✗ |
+| 2018-05-18 | $52.71 | Bristol-Myers Squibb Q1 2018 results | 2.35 | +0.31 | 1.06x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +27.0% | +14.2pp | +4.0% | ✓ |
+| 2018-05-25 | $52.77 | Bristol-Myers Squibb Q1 2018 results | 2.35 | +0.30 | 1.06x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +21.5% | +8.9pp | +4.4% | ✓ |
+| 2018-06-01 | $53.13 | Bristol-Myers Squibb Q1 2018 results | 2.35 | +0.29 | 1.08x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +19.8% | +4.1pp | +4.1% | ✓ |
+| 2018-06-08 | $53.16 | Bristol-Myers Squibb Q1 2018 results | 2.35 | +0.29 | 1.08x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +21.8% | +1.7pp | +4.6% | ✓ |
+| 2018-06-15 | $54.80 | Bristol-Myers Squibb Q1 2018 results | 2.35 | +0.25 | 1.17x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +6.6% | -7.7pp | +1.9% | ✓ |
+| 2018-06-22 | $55.14 | Bristol-Myers Squibb Q1 2018 results | 2.35 | +0.24 | 1.19x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +10.4% | -6.7pp | +1.5% | ✓ |
+| 2018-06-29 | $55.34 | Bristol-Myers Squibb Q1 2018 results | 2.35 | +0.23 | 1.20x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +10.5% | -5.9pp | +1.6% | ✓ |
+| 2018-07-06 | $56.56 | Bristol-Myers Squibb Q1 2018 results | 2.35 | +0.20 | 1.28x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +12.4% | -6.8pp | -0.2% | ✓ |
+| 2018-07-13 | $56.86 | Bristol-Myers Squibb Q1 2018 results | 2.35 | +0.19 | 1.30x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +7.5% | -9.1pp | -0.3% | ✓ |
+| 2018-07-20 | $56.71 | Bristol-Myers Squibb Q1 2018 results | 2.35 | +0.20 | 1.29x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +10.8% | -9.1pp | +0.5% | ✓ |
+| 2018-07-27 | $56.92 | Bristol-Myers Squibb Q2 2018 results | 2.85 | +0.97 | 1.20x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +7.9% | -10.9pp | +0.7% | ✗ |
+| 2018-08-03 | $59.16 | Bristol-Myers Squibb Q2 2018 results | 2.85 | +0.90 | 1.33x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +5.6% | -14.2pp | -2.7% | ✓ |
+| 2018-08-10 | $59.31 | Bristol-Myers Squibb Q2 2018 results | 2.85 | +0.90 | 1.34x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +9.9% | -12.5pp | -2.4% | ✓ |
+| 2018-08-17 | $60.89 | Bristol-Myers Squibb Q2 2018 results | 2.85 | +0.84 | 1.45x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +10.1% | -12.4pp | -4.4% | ✓ |
+| 2018-08-24 | $59.97 | Bristol-Myers Squibb Q2 2018 results | 2.85 | +0.88 | 1.39x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +9.7% | -13.4pp | -2.4% | ✓ |
+| 2018-08-31 | $60.55 | Bristol-Myers Squibb Q2 2018 results | 2.85 | +0.86 | 1.43x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +8.6% | -16.0pp | -2.9% | ✗ |
+| 2018-09-07 | $61.31 | Bristol-Myers Squibb Q2 2018 results | 2.85 | +0.84 | 1.48x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +3.3% | -19.7pp | -3.8% | ✗ |
+| 2018-09-14 | $60.69 | Bristol-Myers Squibb Q2 2018 results | 2.85 | +0.86 | 1.44x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +4.0% | -16.2pp | -2.5% | ✗ |
+| 2018-09-21 | $62.25 | Bristol-Myers Squibb Q2 2018 results | 2.85 | +0.81 | 1.55x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -1.8% | -17.6pp | -4.6% | ✗ |
+| 2018-09-28 | $62.08 | Bristol-Myers Squibb Q2 2018 results | 2.85 | +0.82 | 1.54x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +1.6% | -17.1pp | -4.1% | ✗ |
+| 2018-10-05 | $62.41 | Bristol-Myers Squibb Q2 2018 results | 2.85 | +0.81 | 1.56x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +0.4% | -21.6pp | -4.3% | ✗ |
+| 2018-10-12 | $57.51 | Bristol-Myers Squibb Q2 2018 results | 2.85 | +1.00 | 1.23x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +13.5% | -18.3pp | +4.2% | ✗ |
+| 2018-10-19 | $54.30 | Bristol-Myers Squibb Q2 2018 results | 2.85 | +1.13 | 1.06x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +18.3% | -9.6pp | +10.7% | ✗ |
+| 2018-10-26 | $50.43 | Bristol-Myers Squibb Q3 2018 results | 2.95 | +1.48 | 0.64x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +25.1% | -7.0pp | +19.4% | ✗ |
+| 2018-11-02 | $50.69 | Bristol-Myers Squibb Q3 2018 results | 2.95 | +1.47 | 0.65x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +24.1% | -1.4pp | +18.9% | ✗ |
+| 2018-11-09 | $53.39 | Bristol-Myers Squibb Q3 2018 results | 2.95 | +1.40 | 0.72x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +26.5% | -5.2pp | +13.1% | ✗ |
+| 2018-11-16 | $54.07 | Bristol-Myers Squibb Q3 2018 results | 2.95 | +1.39 | 0.74x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +25.7% | -10.9pp | +11.9% | ✗ |
+| 2018-11-23 | $52.93 | Bristol-Myers Squibb Q3 2018 results | 2.95 | +1.42 | 0.71x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +23.5% | -16.5pp | +14.5% | ✗ |
+| 2018-11-30 | $53.46 | Bristol-Myers Squibb Q3 2018 results | 2.95 | +1.40 | 0.73x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +23.2% | -12.2pp | +13.5% | ✗ |
+| 2018-12-07 | $53.08 | Bristol-Myers Squibb Q3 2018 results | 2.95 | +1.42 | 0.71x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +21.8% | -22.5pp | +14.5% | ✗ |
+| 2018-12-14 | $52.12 | Bristol-Myers Squibb Q3 2018 results | 2.95 | +1.45 | 0.69x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +21.7% | -22.6pp | +16.5% | ✗ |
+| 2018-12-21 | $49.82 | Bristol-Myers Squibb Q3 2018 results | 2.95 | +1.51 | 0.62x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +31.4% | -26.2pp | +21.8% | ✗ |
+| 2018-12-28 | $50.94 | Bristol-Myers Squibb Q3 2018 results | 2.95 | +1.49 | 0.65x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +26.7% | -28.0pp | +19.1% | ✗ |
+| 2019-01-04 | $46.89 | Bristol-Myers Squibb Q3 2018 results | 2.95 | +1.58 | 0.55x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +38.4% | -12.2pp | +29.3% | ✓ |
+| 2019-01-11 | $47.99 | Bristol-Myers Squibb Q3 2018 results | 2.95 | +1.55 | 0.58x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +42.7% | -7.9pp | +26.3% | ✓ |
+| 2019-01-18 | $50.12 | Bristol-Myers Squibb Q3 2018 results | 2.95 | +1.50 | 0.63x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +39.8% | -5.5pp | +20.8% | ✓ |
+| 2019-01-25 | $48.93 | Bristol-Myers Squibb Q4 2018 results | 2.95 | +1.99 | 0.38x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +39.7% | -9.2pp | +23.8% | ✓ |
+| 2019-02-01 | $49.89 | Bristol-Myers Squibb Q4 2018 results | 2.95 | +1.98 | 0.39x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +31.7% | -11.8pp | +21.3% | ✗ |
+| 2019-02-08 | $50.22 | Bristol-Myers Squibb Q4 2018 results | 2.95 | +1.97 | 0.40x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +26.9% | -21.6pp | +20.4% | ✗ |
+| 2019-02-15 | $51.67 | Bristol-Myers Squibb Q4 2018 results | 2.95 | +1.95 | 0.42x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +22.9% | -22.7pp | +16.8% | ✗ |
+| 2019-02-22 | $50.98 | Bristol-Myers Squibb Q4 2018 results | 2.95 | +1.96 | 0.41x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +26.5% | -16.2pp | +18.2% | ✗ |
+| 2019-03-01 | $53.22 | Bristol-Myers Squibb Q4 2018 results | 2.95 | +1.93 | 0.44x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +22.4% | -20.5pp | +13.2% | ✗ |
+| 2019-03-08 | $51.39 | Bristol-Myers Squibb Q4 2018 results | 2.95 | +1.96 | 0.41x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +24.5% | -18.7pp | +17.3% | ✗ |
+| 2019-03-15 | $49.96 | Bristol-Myers Squibb Q4 2018 results | 2.95 | +1.98 | 0.39x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +29.9% | -14.6pp | +20.8% | ✗ |
+| 2019-03-22 | $48.16 | Bristol-Myers Squibb Q4 2018 results | 2.95 | +2.01 | 0.36x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +38.9% | -5.7pp | +25.8% | ✓ |
+| 2019-03-29 | $47.71 | Bristol-Myers Squibb Q4 2018 results | 2.95 | +2.02 | 0.36x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +41.7% | -2.5pp | +27.5% | ✓ |
+| 2019-04-05 | $46.64 | Bristol-Myers Squibb Q4 2018 results | 2.95 | +2.03 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +43.1% | -1.6pp | +30.8% | ✓ |
+| 2019-04-12 | $45.57 | Bristol-Myers Squibb Q4 2018 results | 2.95 | +2.05 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +45.5% | -0.3pp | +34.0% | ✓ |
+| 2019-04-18 | $45.52 | Bristol-Myers Squibb Q4 2018 results | 2.95 | +2.05 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +51.7% | +3.9pp | +34.3% | ✓ |
+| 2019-04-26 | $45.89 | Bristol-Myers Squibb Q1 2019 results | 2.70 | +1.86 | 0.28x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +51.4% | +5.2pp | +33.5% | ✓ |
+| 2019-05-03 | $48.62 | Bristol-Myers Squibb Q1 2019 results | 2.70 | +1.82 | 0.31x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +38.0% | -8.1pp | +26.1% | ✓ |
+| 2019-05-10 | $47.01 | Bristol-Myers Squibb Q1 2019 results | 2.70 | +1.84 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +45.3% | -3.7pp | +30.6% | ✓ |
+| 2019-05-17 | $46.85 | Bristol-Myers Squibb Q1 2019 results | 2.70 | +1.84 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +47.4% | -1.9pp | +31.1% | ✓ |
+| 2019-05-24 | $46.81 | Bristol-Myers Squibb Q1 2019 results | 2.70 | +1.85 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +51.4% | -0.8pp | +31.4% | ✓ |
+| 2019-05-31 | $45.37 | Bristol-Myers Squibb Q1 2019 results | 2.70 | +1.87 | 0.27x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +52.8% | -3.9pp | +35.8% | ✓ |
+| 2019-06-07 | $46.75 | Bristol-Myers Squibb Q1 2019 results | 2.70 | +1.85 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +46.2% | -4.5pp | +31.9% | ✓ |
+| 2019-06-14 | $47.56 | Bristol-Myers Squibb Q1 2019 results | 2.70 | +1.84 | 0.30x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +49.1% | -1.9pp | +30.0% | ✓ |
+| 2019-06-21 | $49.34 | Bristol-Myers Squibb Q1 2019 results | 2.70 | +1.81 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +42.7% | -4.2pp | +25.7% | ✓ |
+| 2019-06-28 | $45.35 | Bristol-Myers Squibb Q1 2019 results | 2.70 | +1.87 | 0.27x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +54.4% | +4.6pp | +37.2% | ✓ |
+| 2019-07-05 | $45.89 | Bristol-Myers Squibb Q1 2019 results | 2.70 | +1.86 | 0.28x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +53.9% | +4.8pp | +35.8% | ✓ |
+| 2019-07-12 | $44.27 | Bristol-Myers Squibb Q1 2019 results | 2.70 | +1.88 | 0.26x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +60.8% | +11.6pp | +41.1% | ✓ |
+| 2019-07-19 | $43.33 | Bristol-Myers Squibb Q1 2019 results | 2.70 | +1.89 | 0.25x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +61.6% | +14.8pp | +44.6% | ✓ |
+| 2019-07-26 | $45.37 | Bristol-Myers Squibb Q2 2019 results | 2.85 | +1.96 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +57.3% | +7.5pp | +38.4% | ✓ |
+| 2019-08-02 | $45.99 | Bristol-Myers Squibb Q2 2019 results | 2.85 | +1.95 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +55.9% | +2.5pp | +37.0% | ✓ |
+| 2019-08-09 | $47.32 | Bristol-Myers Squibb Q2 2019 results | 2.85 | +1.93 | 0.35x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +50.2% | -5.3pp | +33.5% | ✓ |
+| 2019-08-16 | $46.98 | Bristol-Myers Squibb Q2 2019 results | 2.85 | +1.93 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +54.0% | -4.6pp | +34.6% | ✓ |
+| 2019-08-23 | $46.58 | Bristol-Myers Squibb Q2 2019 results | 2.85 | +1.94 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +55.9% | -5.1pp | +36.0% | ✓ |
+| 2019-08-30 | $48.07 | Bristol-Myers Squibb Q2 2019 results | 2.85 | +1.92 | 0.36x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +47.5% | -11.0pp | +32.0% | ✓ |
+| 2019-09-06 | $48.27 | Bristol-Myers Squibb Q2 2019 results | 2.85 | +1.91 | 0.36x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +43.5% | -12.3pp | +31.7% | ✓ |
+| 2019-09-13 | $49.43 | Bristol-Myers Squibb Q2 2019 results | 2.85 | +1.90 | 0.38x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +34.6% | -17.5pp | +28.7% | ✓ |
+| 2019-09-20 | $50.57 | Bristol-Myers Squibb Q2 2019 results | 2.85 | +1.88 | 0.40x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +26.9% | -22.4pp | +25.9% | ✗ |
+| 2019-09-27 | $50.22 | Bristol-Myers Squibb Q2 2019 results | 2.85 | +1.88 | 0.39x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +26.5% | -27.2pp | +26.9% | ✗ |
+| 2019-10-04 | $50.75 | Bristol-Myers Squibb Q2 2019 results | 2.85 | +1.88 | 0.40x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +23.5% | -25.9pp | +25.5% | ✗ |
+| 2019-10-11 | $51.61 | Bristol-Myers Squibb Q2 2019 results | 2.85 | +1.86 | 0.41x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +18.5% | -32.0pp | +23.4% | ✗ |
+| 2019-10-18 | $53.03 | Bristol-Myers Squibb Q2 2019 results | 2.85 | +1.83 | 0.43x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +14.5% | -39.4pp | +19.9% | ✗ |
+| 2019-10-25 | $54.98 | Bristol-Myers Squibb Q2 2019 results | 2.85 | +1.77 | 0.47x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +12.0% | -42.8pp | +15.6% | ✗ |
+| 2019-11-01 | $57.16 | Bristol-Myers Squibb Q3 2019 results | 2.35 | +0.81 | 0.70x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +9.2% | -44.7pp | +11.1% | ✗ |
+| 2019-11-08 | $58.02 | Bristol-Myers Squibb Q3 2019 results | 2.35 | +0.79 | 0.73x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +8.9% | -46.6pp | +9.4% | ✗ |
+| 2019-11-15 | $58.59 | Bristol-Myers Squibb Q3 2019 results | 2.35 | +0.78 | 0.74x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +8.2% | -45.4pp | +8.2% | ✗ |
+| 2019-11-22 | $56.45 | Bristol-Myers Squibb Q3 2019 results | 2.35 | +0.83 | 0.68x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +7.7% | -46.3pp | +12.1% | ✗ |
+| 2019-11-29 | $56.94 | Bristol-Myers Squibb Q3 2019 results | 2.35 | +0.81 | 0.70x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +2.6% | -48.9pp | +11.0% | ✗ |
+| 2019-12-06 | $59.95 | Bristol-Myers Squibb Q3 2019 results | 2.35 | +0.74 | 0.78x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +1.1% | -48.2pp | +5.2% | ✗ |
+| 2019-12-13 | $63.82 | Bristol-Myers Squibb Q3 2019 results | 2.35 | +0.64 | 0.90x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -1.6% | -52.2pp | -1.3% | ✗ |
+| 2019-12-20 | $63.51 | Bristol-Myers Squibb Q3 2019 results | 2.35 | +0.64 | 0.89x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +3.1% | -42.3pp | -0.9% | ✗ |
+| 2019-12-27 | $64.14 | Bristol-Myers Squibb Q3 2019 results | 2.35 | +0.63 | 0.92x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +3.0% | -48.4pp | -1.8% | ✗ |
+| 2020-01-03 | $62.78 | Bristol-Myers Squibb Q3 2019 results | 2.35 | +0.67 | 0.87x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +3.8% | -47.9pp | +0.3% | ✗ |
+| 2020-01-10 | $65.23 | Bristol-Myers Squibb Q3 2019 results | 2.35 | +0.60 | 0.95x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +5.7% | -40.7pp | -3.4% | ✗ |
+| 2020-01-17 | $66.72 | Bristol-Myers Squibb Q3 2019 results | 2.35 | +0.55 | 1.01x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +3.1% | -40.3pp | -5.6% | ✗ |
+| 2020-01-24 | $64.16 | Bristol-Myers Squibb Q3 2019 results | 2.35 | +0.63 | 0.92x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +3.6% | -33.7pp | -1.9% | ✗ |
+| 2020-01-31 | $62.95 | Bristol-Myers Squibb Q3 2019 results | 2.35 | +0.67 | 0.88x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +9.2% | -31.7pp | +0.0% | ✗ |
+| 2020-02-07 | $66.25 | Bristol-Myers Squibb Q4 2019 results | 2.95 | -1.01 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +5.7% | -32.3pp | -4.9% | ✓ |
+| 2020-02-14 | $66.38 | Bristol-Myers Squibb Q4 2019 results | 2.95 | -1.18 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +6.4% | -27.0pp | -4.8% | ✓ |
+| 2020-02-21 | $65.63 | Bristol-Myers Squibb Q4 2019 results | 2.95 | -1.18 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +8.8% | -24.8pp | -3.6% | ✓ |
+| 2020-02-28 | $59.06 | Bristol-Myers Squibb Q4 2019 results | 2.95 | -0.77 | 14.23x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +22.8% | -28.4pp | +7.4% | ✓ |
+| 2020-03-06 | $60.31 | Bristol-Myers Squibb Q4 2019 results | 2.95 | -0.81 | 21.30x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +21.4% | -27.7pp | +5.4% | ✓ |
+| 2020-03-13 | $54.99 | Bristol-Myers Squibb Q4 2019 results | 2.95 | -0.55 | 6.49x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +32.2% | -28.0pp | +15.8% | ✗ |
+| 2020-03-20 | $48.40 | Bristol-Myers Squibb Q4 2019 results | 2.95 | -0.09 | 3.11x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +54.7% | -44.6pp | +31.9% | ✗ |
+| 2020-03-27 | $52.79 | Bristol-Myers Squibb Q4 2019 results | 2.95 | -0.43 | 4.44x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +46.1% | -37.0pp | +21.3% | ✗ |
+| 2020-04-03 | $55.53 | Bristol-Myers Squibb Q4 2019 results | 2.95 | -0.56 | 6.20x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +40.0% | -47.0pp | +15.7% | ✗ |
+| 2020-04-09 | $58.91 | Bristol-Myers Squibb Q4 2019 results | 2.95 | -0.72 | 10.98x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +38.7% | -26.3pp | +9.5% | ✗ |
+| 2020-04-17 | $60.60 | Bristol-Myers Squibb Q4 2019 results | 2.95 | -0.78 | 16.94x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +34.4% | -22.3pp | +6.8% | ✗ |
+| 2020-04-24 | $62.25 | Bristol-Myers Squibb Q4 2019 results | 2.95 | -0.84 | 33.86x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.0% | -26.6pp | +4.3% | ✓ |
+| 2020-05-01 | $60.26 | Bristol-Myers Squibb Q4 2019 results | 2.95 | -0.74 | 15.31x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +31.4% | -18.3pp | +8.1% | ✓ |
+| 2020-05-08 | $61.05 | Bristol-Myers Squibb Q1 2020 results | 2.95 | -1.02 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +32.0% | -12.5pp | +7.1% | ✓ |
+| 2020-05-15 | $64.09 | Bristol-Myers Squibb Q1 2020 results | 2.95 | -1.02 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +24.4% | -19.9pp | +2.4% | ✓ |
+| 2020-05-22 | $60.79 | Bristol-Myers Squibb Q1 2020 results | 2.95 | -1.02 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +31.8% | -3.9pp | +8.3% | ✓ |
+| 2020-05-29 | $59.72 | Bristol-Myers Squibb Q1 2020 results | 2.95 | -1.02 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +34.1% | -6.1pp | +10.6% | ✗ |
+| 2020-06-05 | $61.33 | Bristol-Myers Squibb Q1 2020 results | 2.95 | -1.02 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +29.0% | -3.1pp | +7.9% | ✓ |
+| 2020-06-12 | $56.17 | Bristol-Myers Squibb Q1 2020 results | 2.95 | -1.02 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +40.7% | +8.8pp | +18.2% | ✗ |
+| 2020-06-19 | $56.41 | Bristol-Myers Squibb Q1 2020 results | 2.95 | -1.05 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +37.8% | +15.5pp | +17.9% | ✗ |
+| 2020-06-26 | $57.54 | Bristol-Myers Squibb Q1 2020 results | 2.95 | -1.05 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +44.1% | +10.2pp | +15.9% | ✗ |
+| 2020-07-02 | $59.14 | Bristol-Myers Squibb Q1 2020 results | 2.95 | -1.00 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +36.7% | +10.9pp | +13.2% | ✗ |
+| 2020-07-10 | $57.43 | Bristol-Myers Squibb Q1 2020 results | 2.95 | -1.00 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +38.3% | +12.2pp | +16.8% | ✗ |
+| 2020-07-17 | $60.39 | Bristol-Myers Squibb Q1 2020 results | 2.95 | -1.18 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +31.9% | +8.6pp | +11.3% | ✗ |
+| 2020-07-24 | $57.85 | Bristol-Myers Squibb Q1 2020 results | 2.95 | -1.18 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +33.1% | +6.3pp | +16.4% | ✗ |
+| 2020-07-31 | $58.66 | Bristol-Myers Squibb Q1 2020 results | 2.95 | -1.02 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +32.6% | +2.9pp | +15.0% | ✗ |
+| 2020-08-07 | $61.02 | Bristol-Myers Squibb Q2 2020 results | 3.40 | -0.55 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +24.8% | -2.2pp | +10.7% | ✓ |
+| 2020-08-14 | $63.16 | Bristol-Myers Squibb Q2 2020 results | 3.40 | -0.55 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +26.0% | -4.2pp | +7.2% | ✓ |
+| 2020-08-21 | $62.19 | Bristol-Myers Squibb Q2 2020 results | 3.40 | -0.55 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +27.6% | -0.2pp | +9.0% | ✓ |
+| 2020-08-28 | $62.37 | Bristol-Myers Squibb Q2 2020 results | 3.40 | -0.55 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +20.6% | +1.7pp | +8.9% | ✗ |
+| 2020-09-04 | $59.95 | Bristol-Myers Squibb Q2 2020 results | 3.40 | -0.55 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +21.2% | +3.3pp | +13.3% | ✗ |
+| 2020-09-11 | $58.99 | Bristol-Myers Squibb Q2 2020 results | 3.40 | -0.55 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +25.8% | +0.6pp | +15.3% | ✗ |
+| 2020-09-18 | $59.27 | Bristol-Myers Squibb Q2 2020 results | 3.40 | -0.26 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +27.5% | +7.3pp | +15.1% | ✗ |
+| 2020-09-25 | $59.49 | Bristol-Myers Squibb Q2 2020 results | 3.40 | -0.21 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +25.6% | +10.1pp | +15.0% | ✗ |
+| 2020-10-02 | $58.72 | Bristol-Myers Squibb Q2 2020 results | 3.40 | -0.17 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +27.2% | +16.6pp | +16.9% | ✗ |
+| 2020-10-09 | $61.82 | Bristol-Myers Squibb Q2 2020 results | 3.40 | -0.20 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +19.4% | +11.4pp | +11.4% | ✗ |
+| 2020-10-16 | $61.24 | Bristol-Myers Squibb Q2 2020 results | 3.40 | -0.18 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +22.0% | +15.7pp | +12.8% | ✗ |
+| 2020-10-23 | $60.13 | Bristol-Myers Squibb Q2 2020 results | 3.40 | -0.16 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +26.9% | +15.3pp | +15.4% | ✗ |
+| 2020-10-30 | $58.45 | Bristol-Myers Squibb Q2 2020 results | 3.40 | -0.14 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +38.5% | +15.7pp | +19.3% | ✗ |
+| 2020-11-06 | $63.80 | Bristol-Myers Squibb Q3 2020 results | 3.40 | +0.02 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +29.9% | +19.1pp | +9.8% | ✗ |
+| 2020-11-13 | $63.62 | Bristol-Myers Squibb Q3 2020 results | 3.40 | +0.03 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +25.9% | +11.3pp | +10.8% | ✗ |
+| 2020-11-20 | $61.61 | Bristol-Myers Squibb Q3 2020 results | 3.40 | +0.06 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +32.4% | +17.6pp | +14.9% | ✗ |
+| 2020-11-27 | $63.05 | Bristol-Myers Squibb Q3 2020 results | 3.40 | +0.04 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +32.2% | +18.3pp | +12.9% | ✗ |
+| 2020-12-04 | $62.31 | Bristol-Myers Squibb Q3 2020 results | 3.40 | +0.06 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +36.8% | +23.6pp | +15.0% | ✗ |
+| 2020-12-11 | $60.72 | Bristol-Myers Squibb Q3 2020 results | 3.40 | +0.08 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +36.6% | +26.0pp | +18.8% | ✗ |
+| 2020-12-18 | $63.12 | Bristol-Myers Squibb Q3 2020 results | 3.40 | +0.05 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +23.0% | +15.9pp | +14.8% | ✗ |
+| 2020-12-24 | $61.15 | Bristol-Myers Squibb Q3 2020 results | 3.40 | +0.09 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +25.9% | +18.9pp | +18.8% | ✗ |
+| 2020-12-31 | $62.03 | Bristol-Myers Squibb Q3 2020 results | 3.40 | +0.07 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +21.8% | +16.3pp | +17.3% | ✗ |
+| 2021-01-08 | $62.49 | Bristol-Myers Squibb Q3 2020 results | 3.40 | +0.06 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +23.5% | +18.6pp | +16.9% | ✗ |
+| 2021-01-15 | $66.54 | Bristol-Myers Squibb Q3 2020 results | 3.40 | +0.00 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +15.3% | +6.0pp | +10.0% | ✗ |
+| 2021-01-22 | $64.56 | Bristol-Myers Squibb Q3 2020 results | 3.40 | +0.03 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +21.4% | +14.8pp | +13.5% | ✗ |
+| 2021-01-29 | $61.43 | Bristol-Myers Squibb Q3 2020 results | 3.40 | +0.09 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +24.8% | +11.9pp | +19.6% | ✗ |
+| 2021-02-05 | $60.92 | Bristol-Myers Squibb Q4 2020 results | 3.25 | +2.11 | 0.42x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +29.1% | +19.6pp | +20.9% | ✓ |
+| 2021-02-12 | $59.99 | Bristol-Myers Squibb Q4 2020 results | 3.25 | +2.13 | 0.41x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +27.4% | +20.4pp | +23.0% | ✓ |
+| 2021-02-19 | $60.60 | Bristol-Myers Squibb Q4 2020 results | 3.25 | +2.13 | 0.42x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +24.3% | +16.8pp | +21.9% | ✓ |
+| 2021-02-26 | $61.33 | Bristol-Myers Squibb Q4 2020 results | 3.25 | +2.11 | 0.43x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +21.3% | +13.9pp | +20.5% | ✓ |
+| 2021-03-05 | $60.43 | Bristol-Myers Squibb Q4 2020 results | 3.25 | +2.13 | 0.41x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +21.6% | +13.1pp | +22.3% | ✓ |
+| 2021-03-12 | $60.64 | Bristol-Myers Squibb Q4 2020 results | 3.25 | +2.13 | 0.42x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +15.3% | +14.3pp | +21.9% | ✓ |
+| 2021-03-19 | $62.70 | Bristol-Myers Squibb Q4 2020 results | 3.25 | +2.10 | 0.43x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +12.8% | +9.5pp | +17.8% | ✓ |
+| 2021-03-26 | $63.94 | Bristol-Myers Squibb Q4 2020 results | 3.25 | +2.08 | 0.45x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +12.4% | +9.4pp | +15.4% | ✓ |
+| 2021-04-01 | $62.93 | Bristol-Myers Squibb Q4 2020 results | 3.25 | +2.10 | 0.44x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +16.0% | +10.8pp | +17.0% | ✓ |
+| 2021-04-09 | $62.61 | Bristol-Myers Squibb Q4 2020 results | 3.25 | +2.10 | 0.43x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +19.8% | +17.4pp | +17.5% | ✓ |
+| 2021-04-16 | $65.46 | Bristol-Myers Squibb Q4 2020 results | 3.25 | +2.05 | 0.47x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +14.2% | +12.4pp | +12.2% | ✓ |
+| 2021-04-23 | $66.01 | Bristol-Myers Squibb Q4 2020 results | 3.25 | +2.04 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +13.3% | +11.4pp | +11.0% | ✓ |
+| 2021-04-30 | $62.42 | Bristol-Myers Squibb Q1 2021 results | 2.60 | +0.74 | 1.04x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +13.8% | +11.2pp | +17.2% | ✓ |
+| 2021-05-07 | $64.44 | Bristol-Myers Squibb Q1 2021 results | 2.60 | +0.67 | 1.13x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +12.4% | +11.7pp | +13.3% | ✓ |
+| 2021-05-14 | $64.88 | Bristol-Myers Squibb Q1 2021 results | 2.60 | +0.66 | 1.16x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +11.5% | +9.8pp | +12.3% | ✓ |
+| 2021-05-21 | $67.05 | Bristol-Myers Squibb Q1 2021 results | 2.60 | +0.58 | 1.27x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +4.6% | +0.7pp | +8.3% | ✓ |
+| 2021-05-28 | $65.72 | Bristol-Myers Squibb Q1 2021 results | 2.60 | +0.62 | 1.20x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +3.6% | +0.7pp | +10.2% | ✓ |
+| 2021-06-04 | $64.94 | Bristol-Myers Squibb Q1 2021 results | 2.60 | +0.66 | 1.14x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +7.7% | +3.5pp | +11.2% | ✓ |
+| 2021-06-11 | $67.34 | Bristol-Myers Squibb Q1 2021 results | 2.60 | +0.57 | 1.26x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +2.6% | -1.6pp | +6.9% | ✓ |
+| 2021-06-18 | $66.47 | Bristol-Myers Squibb Q1 2021 results | 2.60 | +0.61 | 1.22x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +6.0% | -3.0pp | +8.1% | ✗ |
+| 2021-06-25 | $66.74 | Bristol-Myers Squibb Q1 2021 results | 2.60 | +0.59 | 1.23x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +3.9% | -0.6pp | +7.4% | ✗ |
+| 2021-07-02 | $66.95 | Bristol-Myers Squibb Q1 2021 results | 2.60 | +0.58 | 1.24x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +1.2% | -3.9pp | +6.6% | ✗ |
+| 2021-07-09 | $67.16 | Bristol-Myers Squibb Q1 2021 results | 2.60 | +0.58 | 1.25x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | -0.2% | -3.8pp | +6.0% | ✗ |
+| 2021-07-16 | $67.30 | Bristol-Myers Squibb Q1 2021 results | 2.60 | +0.57 | 1.26x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -1.5% | -8.5pp | +5.4% | ✓ |
+| 2021-07-23 | $68.34 | Bristol-Myers Squibb Q1 2021 results | 2.60 | +0.54 | 1.32x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +1.0% | -4.6pp | +3.5% | ✓ |
+| 2021-07-29 | $68.15 | Bristol-Myers Squibb Q2 2021 results | 3.20 | +1.33 | 1.55x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -3.5% | -10.0pp | +3.5% | ✓ |
+| 2021-08-06 | $68.12 | Bristol-Myers Squibb Q2 2021 results | 3.20 | +1.33 | 1.55x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -4.8% | -8.6pp | +3.2% | ✓ |
+| 2021-08-13 | $67.51 | Bristol-Myers Squibb Q2 2021 results | 3.20 | +1.36 | 1.51x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -2.8% | -5.6pp | +3.7% | ✓ |
+| 2021-08-20 | $69.20 | Bristol-Myers Squibb Q2 2021 results | 3.20 | +1.28 | 1.60x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -4.0% | -5.3pp | +0.8% | ✓ |
+| 2021-08-27 | $66.60 | Bristol-Myers Squibb Q2 2021 results | 3.20 | +1.42 | 1.42x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -0.2% | -0.7pp | +4.4% | ✓ |
+| 2021-09-03 | $65.61 | Bristol-Myers Squibb Q2 2021 results | 3.20 | +1.46 | 1.35x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +1.2% | -1.2pp | +5.8% | ✓ |
+| 2021-09-10 | $63.13 | Bristol-Myers Squibb Q2 2021 results | 3.20 | +1.57 | 1.21x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +3.2% | +0.4pp | +9.7% | ✓ |
+| 2021-09-17 | $61.31 | Bristol-Myers Squibb Q2 2021 results | 3.20 | +1.64 | 1.11x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +3.4% | +0.1pp | +12.6% | ✓ |
+| 2021-09-24 | $60.23 | Bristol-Myers Squibb Q2 2021 results | 3.20 | +1.68 | 1.06x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +5.0% | +5.2pp | +14.3% | ✓ |
+| 2021-10-01 | $59.51 | Bristol-Myers Squibb Q2 2021 results | 3.20 | +1.70 | 1.02x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +4.0% | +2.7pp | +15.2% | ✓ |
+| 2021-10-08 | $57.26 | Bristol-Myers Squibb Q2 2021 results | 3.20 | +1.95 | 0.92x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +6.7% | +5.7pp | +19.3% | ✓ |
+| 2021-10-15 | $58.36 | Bristol-Myers Squibb Q2 2021 results | 3.20 | +1.73 | 0.97x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +4.4% | +4.7pp | +16.6% | ✓ |
+| 2021-10-22 | $57.60 | Bristol-Myers Squibb Q2 2021 results | 3.20 | +1.75 | 0.94x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +5.7% | +10.0pp | +17.6% | ✓ |
+| 2021-10-28 | $57.13 | Bristol-Myers Squibb Q3 2021 results | 2.85 | +1.24 | 1.14x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | -2.9% | +4.7pp | +17.9% | ✓ |
+| 2021-11-05 | $59.45 | Bristol-Myers Squibb Q3 2021 results | 2.85 | +1.14 | 1.29x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -3.7% | +0.8pp | +12.4% | ✓ |
+| 2021-11-12 | $59.43 | Bristol-Myers Squibb Q3 2021 results | 2.85 | +1.14 | 1.29x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -7.4% | -4.4pp | +11.5% | ✓ |
+| 2021-11-19 | $57.83 | Bristol-Myers Squibb Q3 2021 results | 2.85 | +1.22 | 1.18x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | -4.4% | -3.3pp | +13.7% | ✗ |
+| 2021-11-26 | $56.53 | Bristol-Myers Squibb Q3 2021 results | 2.85 | +1.26 | 1.11x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -4.1% | -6.1pp | +15.5% | ✗ |
+| 2021-12-03 | $56.32 | Bristol-Myers Squibb Q3 2021 results | 2.85 | +1.26 | 1.10x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -3.2% | -7.2pp | +14.8% | ✗ |
+| 2021-12-10 | $56.36 | Bristol-Myers Squibb Q3 2021 results | 2.85 | +1.26 | 1.10x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -2.9% | -3.3pp | +13.7% | ✗ |
+| 2021-12-17 | $61.56 | Bristol-Myers Squibb Q3 2021 results | 2.85 | +1.03 | 1.44x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -10.1% | -15.0pp | +3.2% | ✓ |
+| 2021-12-23 | $62.05 | Bristol-Myers Squibb Q3 2021 results | 2.85 | +1.01 | 1.47x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -8.6% | -12.0pp | +1.7% | ✓ |
+| 2021-12-31 | $62.35 | Bristol-Myers Squibb Q3 2021 results | 2.85 | +0.99 | 1.50x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -10.6% | -13.4pp | +0.7% | ✓ |
