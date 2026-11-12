@@ -191,13 +191,17 @@ MARGIN_CONTRIB    = (FY_MARGIN_BASE - PREV_FY_MARGIN) / FY_MARGIN_BASE if MARGIN
 BUYBACK           = _cagr(SHARES_HIST[max(SHARES_HIST)], SHARES_HIST[min(SHARES_HIST)], max(SHARES_HIST) - min(SHARES_HIST))
 FWD_MID           = sum(FWD_GUIDE) / 2 / 100                                         # forward revenue growth (guide, else latest quarter)
 _SPAN             = f"FY{_FY[0] % 100:02d}-FY{_FY[-1] % 100:02d}" + "".join(f" ex-FY{y % 100:02d}" for y in range(_FY[0], _FY[-1]) if y not in EPS_NORM)
+# Short history (the bounds rule of method r2): excluded years can leave a history with no two consecutive years or no two-year run;
+# where a rule cannot be measured, its own bound stands (BEAR's 0% cap, XBULL's BULL floor). Two-year runs are every run whose ends
+# are both in the history (the r2 wording, the AVGO engine's line).
+_RUNS             = [_cagr(EPS_NORM[y - 2], EPS_NORM[y], 2) for y in _FY[1:] if y - 2 in EPS_NORM]
 
 # R1  scenario EPS growth, current FY -> FY+2 (per year)
 SCENARIO_CAGR = {
-    "BEAR":  min(0.0, min(EPS_YOY)),                                    # worst year of the history, capped at 0
+    "BEAR":  min([0.0] + EPS_YOY),                                      # worst year of the history, capped at 0
     "BASE":  FWD_MID + MARGIN_CONTRIB + BUYBACK,                        # latest forward guide carried forward
     "BULL":  _cagr(EPS_NORM[_FY[0]], EPS_NORM[_FY[-1]], _FY[-1] - _FY[0]),   # EPS CAGR over the history
-    "XBULL": max(_cagr(EPS_NORM[y - 2], EPS_NORM[y], 2) for y in _FY[2:] if y - 2 in EPS_NORM),   # best 2-yr run of the history
+    "XBULL": max(_RUNS) if _RUNS else -math.inf,                         # best 2-yr run of the history (none: BULL's, below)
 }
 SCENARIO_CAGR["BULL"]  = max(SCENARIO_CAGR["BULL"], SCENARIO_CAGR["BASE"])
 SCENARIO_CAGR["XBULL"] = max(SCENARIO_CAGR["XBULL"], SCENARIO_CAGR["BULL"])
@@ -206,10 +210,12 @@ SCENARIO_EPS = {k: round(EPP_TODAY_EPS * (1 + g) ** 2, 2) for k, g in SCENARIO_C
 SCENARIO_PE  = {"BEAR": PE_PCTL["p10"], "BASE": PE_PCTL["median"], "BULL": PE_PCTL["p75"], "XBULL": PE_PCTL["p90"]}
 SCENARIO_TXT = {
     "BEAR":  (f"EPS {SCENARIO_CAGR['BEAR']*100:+.1f}%/yr (worst year {_SPAN}, capped at 0%); P/E to its 10th pct" if SCENARIO_CAGR["BEAR"] < 0
-              else f"Flat EPS (worst year {_SPAN}, capped at 0%); P/E to its 10th pct"),
+              else f"Flat EPS (worst year {_SPAN}, capped at 0%); P/E to its 10th pct" if EPS_YOY
+              else f"Flat EPS (no EPS change in {_SPAN} to measure: the 0% cap); P/E to its 10th pct"),
     "BASE":  f"EPS +{SCENARIO_CAGR['BASE']*100:.1f}%/yr ({FWD_BASIS_SHORT} + margin + buyback); P/E at its {WINDOW_LABEL} median",
     "BULL":  f"EPS +{SCENARIO_CAGR['BULL']*100:.1f}%/yr ({_SPAN} CAGR); P/E holds its 75th pct",
-    "XBULL": f"EPS +{SCENARIO_CAGR['XBULL']*100:.1f}%/yr (best 2-yr run {_SPAN}); P/E at its 90th pct",
+    "XBULL": (f"EPS +{SCENARIO_CAGR['XBULL']*100:.1f}%/yr (best 2-yr run {_SPAN}); P/E at its 90th pct" if _RUNS else
+              f"EPS +{SCENARIO_CAGR['XBULL']*100:.1f}%/yr (no 2-yr run in {_SPAN}: BULL's rate); P/E at its 90th pct"),
 }
 # R3  EPP floor P/E = median of the calendar-year P/E lows, rounded down
 EPP_MIN_PE = float(math.floor(_median([pe for _, pe, _ in YEARLY_MIN_PE])))

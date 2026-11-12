@@ -1,0 +1,147 @@
+
+════════════════════════════════════════════════════════════════════════
+  BMY  ·  Bristol-Myers Squibb Company  ·  $50.71  ·  RETROSPECTIVE as of 2025-04-11
+  Signal: ◉ BUY   Ratio B: -0.15x   Adj gap: +0.80  [UNDERVALUED]
+  Point-in-time: 9 sources, latest published 2025-04-11; latest print Q4 2024 (Feb 6)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2025E revenues, USD bn  →  FY2027E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2025E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  BioPharmaceuticals        $    45.5  $  45.5  $  57.7      +0.0     +12.2
+    +7.3% revenues in FY24
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    45.5  $  45.5  $  57.7      +0.0     +12.2
+  FY2025E = FY24 $48.30B × (1 − 5.8%: FY25 revenue guide midpoint); split pro rata to FY24 total revenues, one segment (FY2024 10-K: 'We operate in one segment engaged in the discovery, development, licensing, manufacturing, marketing, distribution and sale of biopharmaceutical products on a global basis.')
+  Q4 2024 (Feb 6): revenues $12.34B +7.5%; U.S. +8.6%; international +5.1%; gross margin 61.01% (-1507.1bp);
+  pre-tax margin 1.42% (-1316.8bp); EPS $0.04 vs $0.87
+  U.S. net sales $8.596B (+8.6%), international $3.746B (+5.1%), each against the year-ago quarter in the same release; net sales growth ex-FX +9% (+9% excluding foreign exchange, as the release's table states ('9%'))
+  FY25 guide (Q4 2024 release): no GAAP EPS range in numbers; non-GAAP EPS $6.55-6.85 (shown only: it excludes the amortization of acquired intangible assets, which recurs); total revenues about $45.5B (-5.8% on FY24's $48.30B)
+
+  FY2025E EPS check:  $45.5B × -17.4% pre-tax × (1−-6.6%) ÷ 2.037B  =  $-4.13  (FY2025E: no numeric GAAP EPS guide (non-GAAP only), FY23's $3.86 stands (FY24 is excluded: reported $(4.41) a diluted share (FY2024 10-K) is a loss against the $1.15 without its specified items ($11,288M after tax against a net loss, the FY2024 10-K's non-GAAP reconciliation), a loss has no P/E, and no figure excluding only one-offs is published (the company's non-GAAP EPS also removes the amortization of acquired intangible assets, $8,872M before tax, which recurs; the year's Acquired IPRD of $13,373M is in both figures)))
+  FY2027E BEAR check: $45.5B × -17.4% ÷ 2.122B  =  $-3.97  (scenario $3.86)
+  FY2027E BULL check: $57.7B × -17.0% ÷ 2.122B  =  $-4.91  (scenario $4.30)
+  Every 1pp of pre-tax margin ≈ $0.24 EPS ≈ $4/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  U.S. revenue growth                -22.0%   ≥-7.0%    ≥8.0%   ≥19.0%     +8.6%  ▲ BULL  ███░
+  International revenue growth       -15.0%   ≥-6.0%    ≥3.0%   ≥18.0%     +5.1%  ▲ BULL  ███░
+  Revenue growth                     -19.0%   ≥-7.0%    ≥5.0%   ≥15.0%     +7.5%  ▲ BULL  ███░
+  Gross margin change               -1030.0bp  ≥-550.0bp  ≥-70.0bp  ≥30.0bp  -1507.1bp  ⚠ BEAR  █░░░
+  Pre-tax margin change             -3670.0bp  ≥-1830.0bp  ≥10.0bp  ≥810.0bp  -1316.8bp  ◦ BASE  ██░░
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.40 / 4.00
+  Market composite:   1.95 / 4.00  (back-solved from $51 + 15% hurdle)
+  SCA adjustment:    +0.15  ·  EPP-distance adj +0.20  →  Adj composite 2.75  →  Gap +0.80  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY24 net sales +7.3% (U.S. +9.3%, international +2.9%), BioPharmaceuticals 100% of net sales; Q4 gross margin 61.01% (-1507.1bp)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 13.1x FY25E vs a 18.7x 9.3-yr ex-FY15 ex-FY17 ex-FY19 ex-FY20 ex-FY21 ex-FY22 ex-FY24 median (3rd percentile of its own range)  (+0.50 × 25%  =  +0.125)
+    -  Growth vs own history: FY25 revenue guide -5.8% vs a 8.6% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  FY24 year-end cash and marketable securities $11.18B, FY24 free cash flow $13.94B, dividend $2.40 a year, no share repurchases in 2024 (FY2024 10-K)  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  U.S. revenue growth                  +8.6%    -22.0%  -30.6%  Generic entry as U.S. patents expire
+  International revenue growth         +5.1%    -15.0%  -20.1%  Price cuts, generics and currency abroad
+  Revenue growth                       +7.5%    -19.0%  -26.5%  Exclusivity losses outrun new products
+  Gross margin change               -1507.1bp  -1030.0bp  +477.1bp  Write-offs and mix raise cost of sales
+  Pre-tax margin change             -1316.8bp  -3670.0bp  -2353.2bp  Charges and deleverage on falling sales
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$60  (model)  /  $57 (defined)
+  Bear probability (proxy model):  11.1%
+
+  KEY TRIGGER: U.S. revenue growth went from +9.1% (Q3 2024) to +8.6% (Q4 2024);
+  the bear case needs U.S. exclusivity losses that international growth (+5.1% now)
+  and the cost base no longer absorb. Exclusivity losses drive the decline, by the company's own account; the bear needs
+  new products and cost cuts to stop covering them.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $3.86  (FY2025E: no numeric GAAP EPS guide (non-GAAP only), FY23's $3.86 stands (FY24 is excluded: reported $(4.41) a diluted share (FY2024 10-K) is a loss against the $1.15 without its specified items ($11,288M after tax against a net loss, the FY2024 10-K's non-GAAP reconciliation), a loss has no P/E, and no figure excluding only one-offs is published (the company's non-GAAP EPS also removes the amortization of acquired intangible assets, $8,872M before tax, which recurs; the year's Acquired IPRD of $13,373M is in both figures)))
+  Min viable P/E at panic:          14x  [median of calendar-year P/E lows: 2016 18.6x, 2018 16.2x, 2023 12.6x, 2025 13.1x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $54/share
+  Current $51 vs Updated EPP $54:  -6%  ✓ BELOW panic floor — deep-value zone
+  Bear $57 vs Updated EPP $54:  +5%  ✓ bear stays above the floor
+  EPP-distance adjustment (v2):    +0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  U.S. revenue growth                         -7.0      -15.6   BASE floor (vs +9 now)
+  International revenue growth                -6.0      -11.1   BASE floor (vs +5 now)
+  Revenue growth                              -7.0      -14.5   BASE floor (vs +8 now)
+  Gross margin change                       -550.0     +957.1   BASE floor (vs -1507 now)
+  Pre-tax margin change                    -1830.0     -513.2   BASE floor (vs -1317 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $3.86 × (1+0.0%)² = $3.86
+  At 18x P/E (conservative):  $69/share
+  + Cumul. dividends (2yr):  +$4.94/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $69  (▲19 from $51)
+  Conservative total return:  +47% over 2yr  = +23%/yr
+
+  At 13.1x the multiple is already near its 18x median, so the conservative
+  case is a growth question: breakeven at 18x needs FY2027E EPS of $2.54,
+  i.e. -18.8%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $39.35  –  $63.33  (at 47th pct of range)
+  Annual dividend:      $2.40/share  (yield 4.7%)
+  Realized vol (1yr):   31% annualized
+  Beta vs broad market: 0.20
+  1-sigma range (1yr):  $35  –  $66  ($51 ± 31%)
+  2-sigma range (1yr):  $20  –  $82
+  ────────────────────────────────────────────────────────────
+  Bear $57 requires:  ~-0.4σ price move  (within normal vol range)
+  A pharmaceutical and health care products company with a 0.2 beta: the stock is +28% off its July
+  low while U.S. revenue growth went from +9.1% (Q3 2024) to +8.6% (Q4 2024).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        3.86  14.7x  $     57    11.1%     20.2%    -9.0pp  Flat EPS (no EPS change in FY16-FY23 ex-FY17 ex-FY19 ex-FY20 ex-FY21 ex-FY22 to measure: the 0% cap); P/E to its 10th pct
+  BASE        3.28  18.7x  $     61    38.8%     59.6%   -20.8pp  EPS +-7.9%/yr (FY25 guide + margin + buyback); P/E at its 9.3-yr ex-FY15 ex-FY17 ex-FY19 ex-FY20 ex-FY21 ex-FY22 ex-FY24 median
+  BULL        4.30  21.5x  $     92    42.1%     17.1%   +25.1pp  EPS +5.5%/yr (FY16-FY23 ex-FY17 ex-FY19 ex-FY20 ex-FY21 ex-FY22 CAGR); P/E holds its 75th pct
+  XBULL       4.38  25.2x  $    110     8.0%      3.2%    +4.7pp  EPS +6.6%/yr (best 2-yr run FY16-FY23 ex-FY17 ex-FY19 ex-FY20 ex-FY21 ex-FY22); P/E at its 90th pct
+
+  Proxy EV (2yr): $78  /  Market EV: $67  /  Current: $51
+  Conservative EV (2yr, ④): $69 + $4.94 divs = $74 total value
+  Downside (→ Bear $57): -12.4%   Upside (→ Bull $92): 81.4%   Ratio B -0.15x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $51 the market needs $67 in two years —
+  between the BASE and BULL cases. That is a market composite of 1.95 against a model
+  read of 2.75: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                      -0.15x      -6%    +0.80  UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)    -0.23x      -6%    +1.53  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)    -0.04x      -6%    +0.40  MODESTLY UNDERVALUED / BUY
+  Scenario EPS +1.5pp/yr                         -0.16x      -6%    +1.02  UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                         -0.11x      -6%    +0.69  UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)            -0.15x      -6%    +1.10  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                -0.15x     -23%    +0.80  UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                   -0.15x      -6%    +1.40  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 2025 print (late April or early May) — the next read on U.S. revenues (+8.6% now) and the guide
+  (2) Gross margin — -1507.1bp in Q4 2024: cost of sales against the mix lost to generics, what must hold if U.S. revenues do not
+  (3) A numeric FY25 GAAP EPS guide — none: the company guides non-GAAP EPS only
+  (4) Pre-tax margin — 1.42% in Q4 2024 (-1316.8bp): where restructuring, legal and acquisition charges land
+  (5) Capital return at 13x — the release reports no share repurchases: management's own read of the multiple
+  ◉ BUY  |  EPP floor $54  |  ADD below ~$52  |  TRIM above $92
+════════════════════════════════════════════════════════════════════════
+

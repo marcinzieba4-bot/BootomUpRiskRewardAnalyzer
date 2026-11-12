@@ -15,29 +15,38 @@ excludes upfront and milestone licensing payments, which recur, so it is shown a
 DuPont Pharmaceuticals in-process R&D year) is excluded and the history and the P/E window start with 2002 ('pe_window_start'; the ACN
 FY02, AAPL FY2002 and PFE 2003 rule). Each release guides the fiscal year only: GAAP and non-GAAP EPS as ranges in numbers, revenue
 growth in words. The method r2 inputs map as follows (retro/README.md, "BMY"):
-  - current-FY EPS: the fiscal-year GAAP EPS guide midpoint (none: the last full year's EPS stands),
+  - current-FY EPS: the fiscal-year GAAP EPS guide midpoint (none: the last full year's EPS stands; from the Q4 2023 release the company
+    guides non-GAAP EPS only, so from FY2024 the last full year in the history stands),
   - forward revenue growth: no next-quarter guide; the fiscal-year worldwide sales guide in dollars where a release gives one (from the
     FY2012 guide of the Q4 2011 release), read as growth on the last full year's net sales in the history (the PFE and LOW dollar-level
-    rule); before it revenue growth is guided in words only (words are not figures), so the latest quarter's net sales growth excluding
-    foreign exchange, the release's growth less the currency points it states (the NKE and MSFT rule),
+    rule); from the FY2023 guide (the Q4 2022 release), and for FY2024 from the Q3 2024 release, a fiscal-year growth guide excluding
+    foreign exchange is used as stated ('rev_guide_pct', r2's full-year LC revenue guide); the latest numeric revenue guide of either
+    kind wins, and a later restatement in words leaves it standing (the ACN rule); where a year has no revenue guide in numbers
+    (words are not figures), the latest quarter's net sales growth excluding foreign exchange, the release's growth less the currency
+    points it states (the NKE and MSFT rule),
   - guided margin step: none (the gross-margin and expense assumptions are words on the non-GAAP basis); the margin signal takes the
     latest quarter's pre-tax margin change.
 A Q4 print restates the year before it when a business became a discontinued operation ('restates': EPS and net sales from continuing
 operations); the restated figures replace that year until a 10-K vintage published after the print carries it (the PFE rule).
 A year whose reported EPS is under half the EPS without its listed specified items, with no figure excluding only one-offs, leaves the EPS
 history but stays reported ('eps_excluded' on a vintage, an 'excluded_note' and no EPS on a Q4 print's full-year actuals: 2015, retro/README.md,
-"BMY 2014-2017"; the NKE FY2018, XOM FY2020 and PFE 2023 encoding): its own days leave the P/E window, and the current year is the one after
-the latest reported year.
+"BMY 2014-2017"; 2017, 2019 and 2020; 2021, 2022 and 2024, "BMY 2022-2026"; the NKE FY2018, XOM FY2020 and PFE 2023 encoding): its own days
+leave the P/E window, and the current year is the one after the latest reported year.
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
 is the first trading day after it. The earnings 8-Ks of 2007-2009 were accepted before the open or during the session on the release
-day, none on a week's last trading day.
+day, none on a week's last trading day; four of 2022-2026 (2022-02-04, 2022-04-29, 2024-02-02, 2024-07-26) came before the open on a
+Friday, so each meets its own day's close.
 
 Output goes to staging/retrospective/BMY until the series is added to the archive (--out archive/retrospective/BMY).
 
 Usage
   python3 retro/build_bmy.py --weekly 2008-01-01 2008-12-31
   python3 retro/build_bmy.py --weekly 2009-01-05 2009-12-31
+  python3 retro/build_bmy.py --weekly 2010-01-04 2013-12-31
+  python3 retro/build_bmy.py --weekly 2014-01-01 2017-12-31
+  python3 retro/build_bmy.py --weekly 2018-01-01 2021-12-31
+  python3 retro/build_bmy.py --weekly 2022-01-01 2026-11-06
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/BMY/<AS_OF>
 """
 import argparse
@@ -76,6 +85,12 @@ def fiscal_year(day):
 def eps_rng(lo, hi):
     """an EPS range: '1.78-1.93'"""
     return money(lo) if lo == hi else f"{money(lo)}-{money(hi)}"
+
+
+def usd_rng(lo, hi):
+    """a dollar revenue guide in billions: '$17.2-18.2B', '$49.75-50.25B', 'about $47.0B' (a single figure)"""
+    b = lambda v: f"{v:.1f}" if round(v, 1) == v else f"{v:.2f}"
+    return f"about ${b(lo)}B" if lo == hi else f"${b(lo)}-{b(hi)}B"
 
 
 def rule_t_value(k, r):
@@ -237,9 +252,13 @@ def build(as_of, facts, raw, spx, engine, out):
         eps_label = f"{fy_e} GAAP EPS from continuing operations, guide midpoint"
     else:                                    # no numeric GAAP EPS guide: the last full year's EPS stands (rollover rule)
         eps_now = eps_hist[last_fy]
-        eps_label = (f"{fy_e}: no numeric GAAP EPS guide yet, FY{last_fy % 100:02d}'s ${money(eps_now)} stands" +
+        eps_label = (f"{fy_e}: no numeric GAAP EPS guide {'(non-GAAP only)' if guides else 'yet'}, FY{last_fy % 100:02d}'s "
+                     f"${money(eps_now)} stands" +
                      "".join(f" (FY{y % 100:02d} is excluded: {excluded[y]})" for y in range(last_fy + 1, cur_fy)))
-    gr = stated("rev_guide_usd_b")
+    gr, gp = stated("rev_guide_usd_b"), stated("rev_guide_pct")
+    # a revenue guide in numbers is either a dollar range or (FY2023, and FY2024 from the Q3 2024 release) a growth rate excluding
+    # foreign exchange; the latest guide that states either one wins
+    gr, gp = (gr, None) if gr and (not gp or gr["published"] > gp["published"]) else (None, gp)
     fy_prev_s = f"FY{max(rev) % 100:02d}"
     if gr:      # from the FY2012 guide (the Q4 2011 release) worldwide sales are guided in dollars: the range read as growth on the last
                 # full year's net sales in the history (the PFE and LOW dollar-level rule); no next-quarter guide. The FY2014 and FY2015
@@ -247,9 +266,15 @@ def build(as_of, facts, raw, spx, engine, out):
         noun = "sales" if gr["rev_label"] == "worldwide sales" else "revenue"
         fwd = [round((v / last_rev - 1) * 100, 1) for v in gr["rev_guide_usd_b"]]
         fwd_label, fwd_short, fwd_period = f"{fy_now} {noun} guide", f"{fy_now} guide", fy_now
-        fwd_kind = (f"fiscal-year {gr['rev_label']} guide ${gr['rev_guide_usd_b'][0]:.1f}-{gr['rev_guide_usd_b'][1]:.1f}B on {fy_prev_s}'s "
+        fwd_kind = (f"fiscal-year {gr['rev_label']} guide {usd_rng(*gr['rev_guide_usd_b'])} on {fy_prev_s}'s "
                     f"${last_rev:.3f}B (no next-quarter guide)")
         fy_rev_b, fy_rev_label = sum(gr["rev_guide_usd_b"]) / 2, f"{fy_now} {noun} guide midpoint"
+    elif gp:    # a fiscal-year growth guide excluding foreign exchange: r2's full-year LC revenue guide, used as stated
+        fwd = [float(v) for v in gp["rev_guide_pct"]]
+        fwd_label, fwd_short, fwd_period = f"{fy_now} revenue guide ex-FX", f"{fy_now} guide", fy_now
+        fwd_kind = (f"fiscal-year {gp['rev_label']} growth guide excluding foreign exchange {pct_range(*fwd)} (no next-quarter guide)")
+        fy_rev_b = last_rev * (1 + sum(fwd) / 2 / 100)
+        fy_rev_label = f"{fy_now} revenue guide ex-FX midpoint, on {fy_prev_s}'s revenues"
     else:
         # no next-quarter guide and no revenue guide in numbers (the releases state revenue growth in words only): the latest quarter's
         # net sales growth excluding foreign exchange, the release's growth less the currency points it states (the NKE and MSFT rule)
@@ -261,12 +286,18 @@ def build(as_of, facts, raw, spx, engine, out):
         fy_rev_b = last_rev * (1 + latest["lc_pct"] / 100)
         fy_rev_label = f"{latest['quarter']} net sales growth ex-FX, applied to the year"
     if guides:
+        # the non-GAAP range is shown only: to 2021 it excludes the licensing payments, from 2022 the amortization of acquired
+        # intangible assets ('adj_why' on the guide), each of which recurs
         bits = ([f"GAAP EPS ${eps_rng(*ge['eps_guide'])}"] if ge else ["no GAAP EPS range in numbers"]) + \
-               ([f"non-GAAP EPS ${eps_rng(*ga['eps_adj'])} (shown only: it excludes upfront and milestone licensing payments, which recur)"]
+               ([f"non-GAAP EPS ${eps_rng(*ga['eps_adj'])} "
+                 f"({ga.get('adj_why', 'shown only: it excludes upfront and milestone licensing payments, which recur')})"]
                 if ga else []) + \
-               ([f"{gr['rev_label']} ${gr['rev_guide_usd_b'][0]:.1f}-{gr['rev_guide_usd_b'][1]:.1f}B ({pct_range(*fwd)} on {fy_prev_s}'s "
+               ([f"{gr['rev_label']} {usd_rng(*gr['rev_guide_usd_b'])} ({pct_range(*fwd)} on {fy_prev_s}'s "
                  f"${last_rev:.2f}B)"] if gr else []) + \
-               ([f"revenue in words only: '{gw['rev_words']}'"] if gw else []) + \
+               ([f"{gp['rev_label']} {pct_range(*fwd)} excluding foreign exchange (on {fy_prev_s}'s ${last_rev:.2f}B)"] if gp else []) + \
+               ([f"revenue in words only: '{gw['rev_words']}'"] if gw and not (gr or gp) else
+                [f"revenue restated in words: '{gw['rev_words']}' (the last numeric guide stands, the ACN rule)"]
+                if gw and gw["published"] > (gr or gp)["published"] else []) + \
                ([g["note"] for g in guides[-1:] if g.get("note")])
         guide_text = f"{fy_now} guide ({', '.join(dict.fromkeys(g['doc'] for g in guides))}): " + "; ".join(bits)
     else:
@@ -317,7 +348,7 @@ def build(as_of, facts, raw, spx, engine, out):
                 "  new products and cost cuts to stop covering them.")
     theme_summary = "no disruption theme has dated evidence"
     cat3 = (f"(3) {fy_now} GAAP EPS guide ${eps_rng(*ge['eps_guide'])} ({ge['doc']})" if ge else
-            f"(3) A numeric {fy_now} GAAP EPS guide — none yet")
+            f"(3) A numeric {fy_now} GAAP EPS guide — " + ("none: the company guides non-GAAP EPS only" if guides else "none yet"))
     cat4 = (f"(4) Pre-tax margin — {latest['pretax_margin']:.2f}% in {latest['quarter']} ({latest['pretax_margin_bp']:+.1f}bp): "
             "where restructuring, legal and acquisition charges land")
 

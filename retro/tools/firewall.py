@@ -62,7 +62,8 @@ field in both forms (dollar and growth ranges for sales and revenues and for pro
 print whose net sales, growth excluding foreign exchange, U.S. and international growth, margins, quarter EPS, raw figures and full-year
 actuals are absurd (for the year after the latest vintage before CUTOFF) and which restates every year of the history, and a later guide
 with every guided field (GAAP and non-GAAP EPS ranges, revenue words, a note), a later vintage excluding a year and a later Q4 print
-whose full-year actuals exclude its own year (BMY 2014-2017); every
+whose full-year actuals exclude its own year (BMY 2014-2017), the guide with a dollar range, a growth range excluding foreign exchange,
+their label and the non-GAAP basis note (BMY 2022-2026); every
 fact sheet with a 'splits' list, SHW's from 2021-2023: a later split on the price data's next split date; a CLOUD event
 from a later 10-K, as for every live theme), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
@@ -235,7 +236,8 @@ GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -99
                "RCL": dict(note="PLANTED", fy_display="PLANTED", eps_guide_note="PLANTED", fy_rev={"ny": [-50, -40], "ny_cc": [-50, -40], "capacity": -50.0},
                            q_guide={"quarter": "Q4 2099", "ny": [-50, -40], "ny_cc": [-50, -40], "capacity": -50.0, "eps": [0.1, 0.2]}),
                "PFE": dict(rev_guide_usd_b=[0.1, 0.2], eps_adj=[0.1, 0.2], rev_label="PLANTED", note="PLANTED"),
-               "BMY": dict(eps_adj=[0.1, 0.2], rev_words="PLANTED", note="PLANTED"),
+               "BMY": dict(eps_adj=[0.1, 0.2], rev_words="PLANTED", note="PLANTED", rev_guide_usd_b=[0.1, 0.2], rev_guide_pct=[-50, -40],
+                           rev_label="PLANTED", adj_why="PLANTED"),
                "CMCSA": dict(rev_guide_pct=[-50, -40], rev_words="PLANTED", rev_label="PLANTED", note="PLANTED"),
                "CAT": dict(rev_guide_usd_b=[0.1, 0.2], rev_guide_pct=[-50, -40], rev_growth_base_b=0.01, rev_growth_base_note="PLANTED",
                            eps_growth=[-99, -98], eps_growth_base=0.01, eps_growth_base_note="PLANTED", eps_guide_note="PLANTED",
