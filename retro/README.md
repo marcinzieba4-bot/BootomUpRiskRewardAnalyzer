@@ -14000,7 +14000,7 @@ for the source ids, titles, texts and figures (four significant digits or more) 
 publication (after dropping 908 strings an earlier fact already carries), none a leak: the three coincidences of 2008-2013 (21.98, 31.42
 and 20.12 in 14 models) and closes or 52-week lows that equal later pre-tax margins (2008-10-24's $17.64 and FY2013's 17.64%, 2008-06-20's $19.57,
 the 52-week low of the 15 models after it, and Q4 2013's 19.57%, 2011's 52-week low of $24.26 and Q3 2015's 24.26%, 2010-07-16's $25.17 and Q2 2017's 25.17%,
-2009-09-18's $22.52 and Q3 2017's 22.52%). All 209 dates pass `retro_tool run`, with no warning.
+2009-09-18's $22.52 and Q3 2017's 22.52%). The firewall (every kind of fact planted after the cutoff with absurd values, now with a later vintage excluding a year and a later Q4 print excluding its own year, and prices from the cutoff multiplied by 10) changes no model and leaves no planted text at any of the 22 cutoffs above (314 to 523 dates each), nor at 2008-07-01 and 2012-01-26 rerun after the builder change (26 and 212 dates). All 209 dates pass `retro_tool run`, with no warning.
 
 Seen in the build (method behaviour, not tuned):
 - **2014: RICH on all 52 dates** (AVOID). The first three dates (FY13E $1.45, the Q2 2013 sales guide) are 36.4-38.7x, the 80th
