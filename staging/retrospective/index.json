@@ -302920,7 +302920,20 @@
    "cons_return_2yr": 48.4,
    "path": "staging/retrospective/NVDA/2008-01-04",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -58.4,
+    "tr_1y": -71.0,
+    "tr_2y": -38.4,
+    "tr_3y": -47.4,
+    "excess_6m": -48.7,
+    "excess_1y": -38.7,
+    "excess_2y": -22.0,
+    "excess_3y": -42.4,
+    "avg_m12_m24": -60.4,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -302939,7 +302952,20 @@
    "cons_return_2yr": 64.6,
    "path": "staging/retrospective/NVDA/2008-01-11",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -56.9,
+    "tr_1y": -70.7,
+    "tr_2y": -32.4,
+    "tr_3y": -24.9,
+    "excess_6m": -46.2,
+    "excess_1y": -36.2,
+    "excess_2y": -17.7,
+    "excess_3y": -21.0,
+    "avg_m12_m24": -55.3,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -302958,7 +302984,20 @@
    "cons_return_2yr": 79.2,
    "path": "staging/retrospective/NVDA/2008-01-18",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -53.5,
+    "tr_1y": -67.8,
+    "tr_2y": -31.1,
+    "tr_3y": -7.2,
+    "excess_6m": -49.9,
+    "excess_1y": -34.3,
+    "excess_2y": -20.9,
+    "excess_3y": -10.7,
+    "avg_m12_m24": -50.6,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -302977,7 +303016,20 @@
    "cons_return_2yr": 78.4,
    "path": "staging/retrospective/NVDA/2008-01-25",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -53.7,
+    "tr_1y": -69.1,
+    "tr_2y": -32.9,
+    "tr_3y": -3.9,
+    "excess_6m": -49.0,
+    "excess_1y": -33.6,
+    "excess_2y": -19.1,
+    "excess_3y": -6.4,
+    "avg_m12_m24": -50.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -302996,7 +303048,20 @@
    "cons_return_2yr": 65.7,
    "path": "staging/retrospective/NVDA/2008-02-01",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -59.6,
+    "tr_1y": -70.4,
+    "tr_2y": -38.3,
+    "tr_3y": -8.9,
+    "excess_6m": -51.0,
+    "excess_1y": -31.7,
+    "excess_2y": -20.0,
+    "excess_3y": -7.7,
+    "avg_m12_m24": -53.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -303015,7 +303080,20 @@
    "cons_return_2yr": 78.1,
    "path": "staging/retrospective/NVDA/2008-02-08",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -56.0,
+    "tr_1y": -60.5,
+    "tr_2y": -35.2,
+    "tr_3y": -4.5,
+    "excess_6m": -54.2,
+    "excess_1y": -27.9,
+    "excess_2y": -18.5,
+    "excess_3y": -9.5,
+    "avg_m12_m24": -49.0,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -303034,7 +303112,20 @@
    "cons_return_2yr": 199.8,
    "path": "staging/retrospective/NVDA/2008-02-15",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -41.8,
+    "tr_1y": -62.7,
+    "tr_2y": -22.1,
+    "tr_3y": 1.3,
+    "excess_6m": -39.1,
+    "excess_1y": -25.9,
+    "excess_2y": -5.7,
+    "excess_3y": -2.5,
+    "avg_m12_m24": -42.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -303053,7 +303144,20 @@
    "cons_return_2yr": 199.1,
    "path": "staging/retrospective/NVDA/2008-02-22",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -39.0,
+    "tr_1y": -65.9,
+    "tr_2y": -25.6,
+    "tr_3y": 4.0,
+    "excess_6m": -35.6,
+    "excess_1y": -25.0,
+    "excess_2y": -11.2,
+    "excess_3y": 1.5,
+    "avg_m12_m24": -41.5,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -303072,7 +303176,20 @@
    "cons_return_2yr": 212.1,
    "path": "staging/retrospective/NVDA/2008-02-29",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -40.9,
+    "tr_1y": -61.3,
+    "tr_2y": -24.3,
+    "tr_3y": 5.9,
+    "excess_6m": -38.1,
+    "excess_1y": -18.6,
+    "excess_2y": -10.7,
+    "excess_3y": 1.1,
+    "avg_m12_m24": -38.3,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -303091,7 +303208,20 @@
    "cons_return_2yr": 241.5,
    "path": "staging/retrospective/NVDA/2008-03-07",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -40.3,
+    "tr_1y": -57.1,
+    "tr_2y": -12.2,
+    "tr_3y": 4.7,
+    "excess_6m": -37.2,
+    "excess_1y": -12.3,
+    "excess_2y": -4.0,
+    "excess_3y": -2.1,
+    "avg_m12_m24": -31.6,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -303110,7 +303240,20 @@
    "cons_return_2yr": 264.4,
    "path": "staging/retrospective/NVDA/2008-03-14",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -44.4,
+    "tr_1y": -46.5,
+    "tr_2y": -5.8,
+    "tr_3y": -0.7,
+    "excess_6m": -42.7,
+    "excess_1y": -7.3,
+    "excess_2y": 1.3,
+    "excess_3y": -6.5,
+    "avg_m12_m24": -26.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -303129,7 +303272,20 @@
    "cons_return_2yr": 260.5,
    "path": "staging/retrospective/NVDA/2008-03-20",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -38.4,
+    "tr_1y": -48.5,
+    "tr_2y": -6.9,
+    "tr_3y": -4.9,
+    "excess_6m": -33.4,
+    "excess_1y": -8.6,
+    "excess_2y": 1.8,
+    "excess_3y": -6.9,
+    "avg_m12_m24": -26.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -303148,7 +303304,20 @@
    "cons_return_2yr": 239.2,
    "path": "staging/retrospective/NVDA/2008-03-28",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -40.6,
+    "tr_1y": -46.8,
+    "tr_2y": -11.9,
+    "tr_3y": -1.8,
+    "excess_6m": -33.5,
+    "excess_1y": -10.9,
+    "excess_2y": -4.1,
+    "excess_3y": -6.8,
+    "avg_m12_m24": -29.7,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -303167,7 +303336,20 @@
    "cons_return_2yr": 255.5,
    "path": "staging/retrospective/NVDA/2008-04-04",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -51.9,
+    "tr_1y": -39.7,
+    "tr_2y": -8.3,
+    "tr_3y": -6.5,
+    "excess_6m": -33.5,
+    "excess_1y": -3.2,
+    "excess_2y": 2.2,
+    "excess_3y": -9.1,
+    "avg_m12_m24": -25.7,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -303186,7 +303368,20 @@
    "cons_return_2yr": 260.3,
    "path": "staging/retrospective/NVDA/2008-04-11",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -63.2,
+    "tr_1y": -35.0,
+    "tr_2y": -8.3,
+    "tr_3y": -6.5,
+    "excess_6m": -30.6,
+    "excess_1y": -1.3,
+    "excess_2y": -1.5,
+    "excess_3y": -11.1,
+    "avg_m12_m24": -24.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -303205,7 +303400,20 @@
    "cons_return_2yr": 251.0,
    "path": "staging/retrospective/NVDA/2008-04-18",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -59.8,
+    "tr_1y": -38.2,
+    "tr_2y": -10.3,
+    "tr_3y": -4.9,
+    "excess_6m": -28.1,
+    "excess_1y": -3.0,
+    "excess_2y": 0.1,
+    "excess_3y": -4.3,
+    "avg_m12_m24": -25.4,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -303224,7 +303432,20 @@
    "cons_return_2yr": 231.3,
    "path": "staging/retrospective/NVDA/2008-04-25",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -67.2,
+    "tr_1y": -43.3,
+    "tr_2y": -18.4,
+    "tr_3y": -6.7,
+    "excess_6m": -30.5,
+    "excess_1y": -7.2,
+    "excess_2y": -9.1,
+    "excess_3y": -7.4,
+    "avg_m12_m24": -29.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -303243,7 +303464,20 @@
    "cons_return_2yr": 196.5,
    "path": "staging/retrospective/NVDA/2008-05-02",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -61.1,
+    "tr_1y": -48.2,
+    "tr_2y": -30.2,
+    "tr_3y": -12.4,
+    "excess_6m": -30.5,
+    "excess_1y": -12.2,
+    "excess_2y": -17.5,
+    "excess_3y": -13.7,
+    "avg_m12_m24": -36.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -303262,7 +303496,20 @@
    "cons_return_2yr": 195.4,
    "path": "staging/retrospective/NVDA/2008-05-09",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -61.3,
+    "tr_1y": -58.9,
+    "tr_2y": -38.0,
+    "tr_3y": -12.3,
+    "excess_6m": -29.8,
+    "excess_1y": -27.8,
+    "excess_2y": -21.5,
+    "excess_3y": -14.4,
+    "avg_m12_m24": -35.8,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -303281,7 +303528,20 @@
    "cons_return_2yr": 172.6,
    "path": "staging/retrospective/NVDA/2008-05-16",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -70.6,
+    "tr_1y": -64.2,
+    "tr_2y": -46.9,
+    "tr_3y": -27.5,
+    "excess_6m": -32.3,
+    "excess_1y": -28.2,
+    "excess_2y": -30.1,
+    "excess_3y": -25.8,
+    "avg_m12_m24": -40.3,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -303300,7 +303560,20 @@
    "cons_return_2yr": 188.0,
    "path": "staging/retrospective/NVDA/2008-05-23",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -72.4,
+    "tr_1y": -57.5,
+    "tr_2y": -44.9,
+    "tr_3y": -21.8,
+    "excess_6m": -31.2,
+    "excess_1y": -24.1,
+    "excess_2y": -27.6,
+    "excess_3y": -22.9,
+    "avg_m12_m24": -36.7,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -303319,7 +303592,20 @@
    "cons_return_2yr": 160.8,
    "path": "staging/retrospective/NVDA/2008-05-30",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -69.8,
+    "tr_1y": -57.8,
+    "tr_2y": -46.8,
+    "tr_3y": -21.1,
+    "excess_6m": -34.9,
+    "excess_1y": -25.6,
+    "excess_2y": -28.1,
+    "excess_3y": -21.2,
+    "avg_m12_m24": -40.6,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -303338,7 +303624,20 @@
    "cons_return_2yr": 167.7,
    "path": "staging/retrospective/NVDA/2008-06-06",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -69.4,
+    "tr_1y": -55.0,
+    "tr_2y": -49.7,
+    "tr_3y": -24.9,
+    "excess_6m": -34.9,
+    "excess_1y": -26.3,
+    "excess_2y": -31.6,
+    "excess_3y": -24.8,
+    "avg_m12_m24": -38.9,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -303357,7 +303656,20 @@
    "cons_return_2yr": 202.2,
    "path": "staging/retrospective/NVDA/2008-06-13",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -59.6,
+    "tr_1y": -46.0,
+    "tr_2y": -45.5,
+    "tr_3y": -20.2,
+    "excess_6m": -26.0,
+    "excess_1y": -17.8,
+    "excess_2y": -29.6,
+    "excess_3y": -19.2,
+    "avg_m12_m24": -31.0,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -303376,7 +303688,20 @@
    "cons_return_2yr": 225.9,
    "path": "staging/retrospective/NVDA/2008-06-20",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -56.9,
+    "tr_1y": -43.4,
+    "tr_2y": -37.8,
+    "tr_3y": -21.0,
+    "excess_6m": -25.0,
+    "excess_1y": -15.3,
+    "excess_2y": -26.2,
+    "excess_3y": -23.3,
+    "avg_m12_m24": -25.5,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -303395,7 +303720,20 @@
    "cons_return_2yr": 234.1,
    "path": "staging/retrospective/NVDA/2008-06-27",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -61.0,
+    "tr_1y": -40.0,
+    "tr_2y": -42.5,
+    "tr_3y": -20.1,
+    "excess_6m": -30.5,
+    "excess_1y": -14.0,
+    "excess_2y": -30.7,
+    "excess_3y": -25.9,
+    "avg_m12_m24": -23.6,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -303414,7 +303752,20 @@
    "cons_return_2yr": 415.7,
    "path": "staging/retrospective/NVDA/2008-07-03",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -30.3,
+    "tr_1y": -12.7,
+    "tr_2y": -17.9,
+    "tr_3y": 29.3,
+    "excess_6m": -5.0,
+    "excess_1y": 14.2,
+    "excess_2y": -2.5,
+    "excess_3y": 17.7,
+    "avg_m12_m24": 17.7,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -303433,7 +303784,20 @@
    "cons_return_2yr": 451.9,
    "path": "staging/retrospective/NVDA/2008-07-11",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -32.0,
+    "tr_1y": -11.1,
+    "tr_2y": -11.3,
+    "tr_3y": 27.6,
+    "excess_6m": -5.1,
+    "excess_1y": 15.8,
+    "excess_2y": -2.2,
+    "excess_3y": 15.3,
+    "avg_m12_m24": 26.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -303452,7 +303816,20 @@
    "cons_return_2yr": 457.1,
    "path": "staging/retrospective/NVDA/2008-07-18",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -30.9,
+    "tr_1y": 4.4,
+    "tr_2y": -13.1,
+    "tr_3y": 19.4,
+    "excess_6m": 0.5,
+    "excess_1y": 27.7,
+    "excess_2y": -1.4,
+    "excess_3y": 10.1,
+    "avg_m12_m24": 27.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -303471,7 +303848,20 @@
    "cons_return_2yr": 457.1,
    "path": "staging/retrospective/NVDA/2008-07-25",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -33.3,
+    "tr_1y": 12.1,
+    "tr_2y": -10.4,
+    "tr_3y": 27.7,
+    "excess_6m": -0.7,
+    "excess_1y": 32.0,
+    "excess_2y": -2.0,
+    "excess_3y": 15.4,
+    "avg_m12_m24": 26.9,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -303490,7 +303880,20 @@
    "cons_return_2yr": 494.2,
    "path": "staging/retrospective/NVDA/2008-08-01",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -26.7,
+    "tr_1y": 19.3,
+    "tr_2y": -15.2,
+    "tr_3y": 34.4,
+    "excess_6m": 6.6,
+    "excess_1y": 39.0,
+    "excess_2y": -6.3,
+    "excess_3y": 26.8,
+    "avg_m12_m24": 34.8,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -303509,7 +303912,20 @@
    "cons_return_2yr": 485.5,
    "path": "staging/retrospective/NVDA/2008-08-08",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -10.3,
+    "tr_1y": 24.6,
+    "tr_2y": -13.2,
+    "tr_3y": 8.5,
+    "excess_6m": 21.4,
+    "excess_1y": 44.5,
+    "excess_2y": -3.6,
+    "excess_3y": 16.2,
+    "avg_m12_m24": 32.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -303528,7 +303944,20 @@
    "cons_return_2yr": 202.3,
    "path": "staging/retrospective/NVDA/2008-08-14",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -36.1,
+    "tr_1y": 3.2,
+    "tr_2y": -27.8,
+    "tr_3y": -0.9,
+    "excess_6m": -1.1,
+    "excess_1y": 23.5,
+    "excess_2y": -14.9,
+    "excess_3y": 2.5,
+    "avg_m12_m24": 11.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -303547,7 +303976,20 @@
    "cons_return_2yr": 188.8,
    "path": "staging/retrospective/NVDA/2008-08-22",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -44.1,
+    "tr_1y": 2.4,
+    "tr_2y": -26.7,
+    "tr_3y": -12.3,
+    "excess_6m": -4.9,
+    "excess_1y": 21.0,
+    "excess_2y": -13.2,
+    "excess_3y": -4.6,
+    "avg_m12_m24": 5.6,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -303566,7 +304008,20 @@
    "cons_return_2yr": 210.9,
    "path": "staging/retrospective/NVDA/2008-08-29",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -34.5,
+    "tr_1y": 16.5,
+    "tr_2y": -19.9,
+    "tr_3y": 5.7,
+    "excess_6m": 7.0,
+    "excess_1y": 34.3,
+    "excess_2y": -6.5,
+    "excess_3y": 6.0,
+    "avg_m12_m24": 13.0,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -303585,7 +304040,20 @@
    "cons_return_2yr": 236.8,
    "path": "staging/retrospective/NVDA/2008-09-05",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -29.2,
+    "tr_1y": 29.5,
+    "tr_2y": -15.2,
+    "tr_3y": 10.7,
+    "excess_6m": 14.3,
+    "excess_1y": 45.4,
+    "excess_2y": -8.0,
+    "excess_3y": 10.3,
+    "avg_m12_m24": 21.6,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -303604,7 +304072,20 @@
    "cons_return_2yr": 285.7,
    "path": "staging/retrospective/NVDA/2008-09-12",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -3.3,
+    "tr_1y": 60.2,
+    "tr_2y": -1.2,
+    "tr_3y": 39.5,
+    "excess_6m": 35.7,
+    "excess_1y": 75.1,
+    "excess_2y": 6.8,
+    "excess_3y": 41.3,
+    "avg_m12_m24": 38.3,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -303623,7 +304104,20 @@
    "cons_return_2yr": 244.4,
    "path": "staging/retrospective/NVDA/2008-09-19",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -11.7,
+    "tr_1y": 33.4,
+    "tr_2y": -7.5,
+    "tr_3y": 32.7,
+    "excess_6m": 24.2,
+    "excess_1y": 45.6,
+    "excess_2y": -1.8,
+    "excess_3y": 30.1,
+    "avg_m12_m24": 22.6,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -303642,7 +304136,20 @@
    "cons_return_2yr": 225.0,
    "path": "staging/retrospective/NVDA/2008-09-26",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -9.7,
+    "tr_1y": 24.0,
+    "tr_2y": 4.9,
+    "tr_3y": 18.2,
+    "excess_6m": 20.5,
+    "excess_1y": 35.7,
+    "excess_2y": 6.1,
+    "excess_3y": 16.3,
+    "avg_m12_m24": 19.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -303661,7 +304168,20 @@
    "cons_return_2yr": 320.7,
    "path": "staging/retrospective/NVDA/2008-10-03",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 25.4,
+    "tr_1y": 53.4,
+    "tr_2y": 25.7,
+    "tr_3y": 30.8,
+    "excess_6m": 47.8,
+    "excess_1y": 58.4,
+    "excess_2y": 17.7,
+    "excess_3y": 24.8,
+    "avg_m12_m24": 53.6,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -303680,7 +304200,20 @@
    "cons_return_2yr": 457.9,
    "path": "staging/retrospective/NVDA/2008-10-10",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 76.8,
+    "tr_1y": 108.1,
+    "tr_2y": 59.5,
+    "tr_3y": 117.0,
+    "excess_6m": 78.4,
+    "excess_1y": 84.3,
+    "excess_2y": 22.7,
+    "excess_3y": 74.0,
+    "avg_m12_m24": 102.8,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -303699,7 +304232,20 @@
    "cons_return_2yr": 396.6,
    "path": "staging/retrospective/NVDA/2008-10-17",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 53.7,
+    "tr_1y": 72.8,
+    "tr_2y": 47.6,
+    "tr_3y": 95.3,
+    "excess_6m": 58.9,
+    "excess_1y": 53.5,
+    "excess_2y": 16.5,
+    "excess_3y": 58.8,
+    "avg_m12_m24": 79.8,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -303718,7 +304264,20 @@
    "cons_return_2yr": 474.7,
    "path": "staging/retrospective/NVDA/2008-10-24",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 72.9,
+    "tr_1y": 98.9,
+    "tr_2y": 78.5,
+    "tr_3y": 127.2,
+    "excess_6m": 71.9,
+    "excess_1y": 72.1,
+    "excess_2y": 37.4,
+    "excess_3y": 75.1,
+    "avg_m12_m24": 107.5,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -303737,7 +304296,20 @@
    "cons_return_2yr": 333.7,
    "path": "staging/retrospective/NVDA/2008-10-31",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 31.1,
+    "tr_1y": 36.5,
+    "tr_2y": 37.2,
+    "tr_3y": 78.1,
+    "excess_6m": 39.4,
+    "excess_1y": 27.2,
+    "excess_2y": 10.2,
+    "excess_3y": 38.1,
+    "avg_m12_m24": 56.5,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -303756,7 +304328,20 @@
    "cons_return_2yr": 335.7,
    "path": "staging/retrospective/NVDA/2008-11-07",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 23.1,
+    "tr_1y": 50.9,
+    "tr_2y": 44.6,
+    "tr_3y": 69.0,
+    "excess_6m": 24.9,
+    "excess_1y": 34.3,
+    "excess_2y": 9.1,
+    "excess_3y": 27.1,
+    "avg_m12_m24": 57.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -303775,7 +304360,20 @@
    "cons_return_2yr": 429.8,
    "path": "staging/retrospective/NVDA/2008-11-14",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 18.8,
+    "tr_1y": 89.1,
+    "tr_2y": 84.9,
+    "tr_3y": 104.9,
+    "excess_6m": 14.1,
+    "excess_1y": 59.9,
+    "excess_2y": 41.0,
+    "excess_3y": 52.0,
+    "avg_m12_m24": 91.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -303794,7 +304392,20 @@
    "cons_return_2yr": 495.5,
    "path": "staging/retrospective/NVDA/2008-11-21",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 51.6,
+    "tr_1y": 102.2,
+    "tr_2y": 115.5,
+    "tr_3y": 129.3,
+    "excess_6m": 37.8,
+    "excess_1y": 61.7,
+    "excess_2y": 58.6,
+    "excess_3y": 70.1,
+    "avg_m12_m24": 114.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -303813,7 +304424,20 @@
    "cons_return_2yr": 408.6,
    "path": "staging/retrospective/NVDA/2008-11-28",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 40.7,
+    "tr_1y": 71.2,
+    "tr_2y": 82.1,
+    "tr_3y": 98.5,
+    "excess_6m": 38.4,
+    "excess_1y": 47.0,
+    "excess_2y": 45.2,
+    "excess_3y": 57.9,
+    "avg_m12_m24": 83.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -303832,7 +304456,20 @@
    "cons_return_2yr": 416.2,
    "path": "staging/retrospective/NVDA/2008-12-05",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 47.1,
+    "tr_1y": 93.7,
+    "tr_2y": 101.0,
+    "tr_3y": 110.3,
+    "excess_6m": 38.2,
+    "excess_1y": 64.9,
+    "excess_2y": 56.1,
+    "excess_3y": 58.9,
+    "avg_m12_m24": 86.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -303851,7 +304488,20 @@
    "cons_return_2yr": 341.7,
    "path": "staging/retrospective/NVDA/2008-12-12",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 33.8,
+    "tr_1y": 76.9,
+    "tr_2y": 73.8,
+    "tr_3y": 69.0,
+    "excess_6m": 25.6,
+    "excess_1y": 49.4,
+    "excess_2y": 28.9,
+    "excess_3y": 21.5,
+    "avg_m12_m24": 59.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -303870,7 +304520,20 @@
    "cons_return_2yr": 345.9,
    "path": "staging/retrospective/NVDA/2008-12-19",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 31.2,
+    "tr_1y": 97.4,
+    "tr_2y": 68.7,
+    "tr_3y": 54.5,
+    "excess_6m": 25.6,
+    "excess_1y": 70.0,
+    "excess_2y": 22.7,
+    "excess_3y": 10.1,
+    "avg_m12_m24": 60.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -303889,7 +304552,20 @@
    "cons_return_2yr": 405.9,
    "path": "staging/retrospective/NVDA/2008-12-26",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 54.1,
+    "tr_1y": 140.9,
+    "tr_2y": 98.7,
+    "tr_3y": 88.7,
+    "excess_6m": 47.5,
+    "excess_1y": 109.3,
+    "excess_2y": 49.5,
+    "excess_3y": 35.6,
+    "avg_m12_m24": 81.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -303908,7 +304584,20 @@
    "cons_return_2yr": 354.5,
    "path": "staging/retrospective/NVDA/2008-12-31",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 39.9,
+    "tr_1y": 131.4,
+    "tr_2y": 85.7,
+    "tr_3y": 71.7,
+    "excess_6m": 36.8,
+    "excess_1y": 104.2,
+    "excess_2y": 41.5,
+    "excess_3y": 24.9,
+    "avg_m12_m24": 68.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -303927,7 +304616,20 @@
    "cons_return_2yr": 362.5,
    "path": "staging/retrospective/NVDA/2009-01-09",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 30.3,
+    "tr_1y": 133.9,
+    "tr_2y": 150.6,
+    "tr_3y": 83.4,
+    "excess_6m": 30.1,
+    "excess_1y": 102.9,
+    "excess_2y": 102.9,
+    "excess_3y": 31.8,
+    "avg_m12_m24": 70.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -303946,7 +304648,20 @@
    "cons_return_2yr": 359.1,
    "path": "staging/retrospective/NVDA/2009-01-16",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 46.8,
+    "tr_1y": 114.1,
+    "tr_2y": 195.2,
+    "tr_3y": 71.8,
+    "excess_6m": 36.1,
+    "excess_1y": 78.0,
+    "excess_2y": 138.0,
+    "excess_3y": 12.1,
+    "avg_m12_m24": 70.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -303965,7 +304680,20 @@
    "cons_return_2yr": 375.7,
    "path": "staging/retrospective/NVDA/2009-01-23",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 68.6,
+    "tr_1y": 113.5,
+    "tr_2y": 188.2,
+    "tr_3y": 89.5,
+    "excess_6m": 49.8,
+    "excess_1y": 79.5,
+    "excess_2y": 128.4,
+    "excess_3y": 22.7,
+    "avg_m12_m24": 77.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -303984,7 +304712,20 @@
    "cons_return_2yr": 361.4,
    "path": "staging/retrospective/NVDA/2009-01-30",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 62.0,
+    "tr_1y": 93.6,
+    "tr_2y": 198.9,
+    "tr_3y": 86.2,
+    "excess_6m": 41.6,
+    "excess_1y": 61.3,
+    "excess_2y": 139.3,
+    "excess_3y": 19.1,
+    "avg_m12_m24": 74.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -304003,7 +304744,20 @@
    "cons_return_2yr": 271.6,
    "path": "staging/retrospective/NVDA/2009-02-06",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 32.9,
+    "tr_1y": 64.3,
+    "tr_2y": 160.1,
+    "tr_3y": 59.1,
+    "excess_6m": 16.8,
+    "excess_1y": 39.2,
+    "excess_2y": 104.2,
+    "excess_3y": -3.6,
+    "avg_m12_m24": 42.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -304022,7 +304776,20 @@
    "cons_return_2yr": 388.1,
    "path": "staging/retrospective/NVDA/2009-02-12",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 61.4,
+    "tr_1y": 108.5,
+    "tr_2y": 182.1,
+    "tr_3y": 91.1,
+    "excess_6m": 39.6,
+    "excess_1y": 76.8,
+    "excess_2y": 117.7,
+    "excess_3y": 22.1,
+    "avg_m12_m24": 70.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -304041,7 +304808,20 @@
    "cons_return_2yr": 433.6,
    "path": "staging/retrospective/NVDA/2009-02-20",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 80.0,
+    "tr_1y": 117.9,
+    "tr_2y": 236.8,
+    "tr_3y": 108.3,
+    "excess_6m": 48.2,
+    "excess_1y": 71.5,
+    "excess_2y": 157.3,
+    "excess_3y": 23.0,
+    "avg_m12_m24": 88.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -304060,7 +304840,20 @@
    "cons_return_2yr": 390.5,
    "path": "staging/retrospective/NVDA/2009-02-27",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 69.2,
+    "tr_1y": 95.7,
+    "tr_2y": 179.2,
+    "tr_3y": 86.8,
+    "excess_6m": 27.9,
+    "excess_1y": 42.9,
+    "excess_2y": 94.2,
+    "excess_3y": -8.2,
+    "avg_m12_m24": 74.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -304079,7 +304872,20 @@
    "cons_return_2yr": 384.0,
    "path": "staging/retrospective/NVDA/2009-03-06",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 80.1,
+    "tr_1y": 104.6,
+    "tr_2y": 147.4,
+    "tr_3y": 75.4,
+    "excess_6m": 30.4,
+    "excess_1y": 35.7,
+    "excess_2y": 48.8,
+    "excess_3y": -30.3,
+    "avg_m12_m24": 73.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -304098,7 +304904,20 @@
    "cons_return_2yr": 314.4,
    "path": "staging/retrospective/NVDA/2009-03-13",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 66.5,
+    "tr_1y": 76.0,
+    "tr_2y": 84.2,
+    "tr_3y": 50.9,
+    "excess_6m": 27.4,
+    "excess_1y": 21.4,
+    "excess_2y": 6.4,
+    "excess_3y": -42.4,
+    "avg_m12_m24": 48.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -304117,7 +304936,20 @@
    "cons_return_2yr": 326.1,
    "path": "staging/retrospective/NVDA/2009-03-20",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 59.7,
+    "tr_1y": 81.0,
+    "tr_2y": 84.9,
+    "tr_3y": 51.1,
+    "excess_6m": 19.2,
+    "excess_1y": 27.1,
+    "excess_2y": 12.6,
+    "excess_3y": -41.2,
+    "avg_m12_m24": 52.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -304136,7 +304968,20 @@
    "cons_return_2yr": 288.2,
    "path": "staging/retrospective/NVDA/2009-03-27",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 38.6,
+    "tr_1y": 65.8,
+    "tr_2y": 78.1,
+    "tr_3y": 41.7,
+    "excess_6m": 9.4,
+    "excess_1y": 20.4,
+    "excess_2y": 11.8,
+    "excess_3y": -40.0,
+    "avg_m12_m24": 39.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -304155,7 +305000,20 @@
    "cons_return_2yr": 258.7,
    "path": "staging/retrospective/NVDA/2009-04-03",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 22.3,
+    "tr_1y": 52.1,
+    "tr_2y": 60.8,
+    "tr_3y": 33.2,
+    "excess_6m": -0.5,
+    "excess_1y": 9.8,
+    "excess_2y": -2.5,
+    "excess_3y": -42.8,
+    "avg_m12_m24": 29.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -304174,7 +305032,20 @@
    "cons_return_2yr": 237.3,
    "path": "staging/retrospective/NVDA/2009-04-09",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 17.7,
+    "tr_1y": 41.1,
+    "tr_2y": 45.8,
+    "tr_3y": 19.9,
+    "excess_6m": -8.5,
+    "excess_1y": -0.6,
+    "excess_2y": -14.2,
+    "excess_3y": -49.4,
+    "avg_m12_m24": 21.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -304193,7 +305064,20 @@
    "cons_return_2yr": 245.3,
    "path": "staging/retrospective/NVDA/2009-04-17",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 12.4,
+    "tr_1y": 45.1,
+    "tr_2y": 59.1,
+    "tr_3y": 19.2,
+    "excess_6m": -13.8,
+    "excess_1y": 5.6,
+    "excess_2y": 2.4,
+    "excess_3y": -48.6,
+    "avg_m12_m24": 24.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -304212,7 +305096,20 @@
    "cons_return_2yr": 255.3,
    "path": "staging/retrospective/NVDA/2009-04-24",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 15.0,
+    "tr_1y": 43.8,
+    "tr_2y": 62.0,
+    "tr_3y": 12.2,
+    "excess_6m": -10.9,
+    "excess_1y": 0.9,
+    "excess_2y": 2.5,
+    "excess_3y": -54.4,
+    "avg_m12_m24": 28.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -304231,7 +305128,20 @@
    "cons_return_2yr": 248.0,
    "path": "staging/retrospective/NVDA/2009-05-01",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 2.5,
+    "tr_1y": 34.6,
+    "tr_2y": 71.4,
+    "tr_3y": 13.4,
+    "excess_6m": -16.5,
+    "excess_1y": -2.9,
+    "excess_2y": 11.1,
+    "excess_3y": -54.8,
+    "avg_m12_m24": 26.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -304250,7 +305160,20 @@
    "cons_return_2yr": 339.0,
    "path": "staging/retrospective/NVDA/2009-05-08",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 42.3,
+    "tr_1y": 50.9,
+    "tr_2y": 108.9,
+    "tr_3y": 34.7,
+    "excess_6m": 25.9,
+    "excess_1y": 29.0,
+    "excess_2y": 59.8,
+    "excess_3y": -19.8,
+    "avg_m12_m24": 59.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -304269,7 +305192,20 @@
    "cons_return_2yr": 364.6,
    "path": "staging/retrospective/NVDA/2009-05-15",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 55.1,
+    "tr_1y": 48.3,
+    "tr_2y": 108.9,
+    "tr_3y": 48.7,
+    "excess_6m": 30.4,
+    "excess_1y": 17.5,
+    "excess_2y": 52.8,
+    "excess_3y": -9.5,
+    "avg_m12_m24": 70.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -304288,7 +305224,20 @@
    "cons_return_2yr": 313.5,
    "path": "staging/retrospective/NVDA/2009-05-22",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 31.4,
+    "tr_1y": 29.6,
+    "tr_2y": 84.2,
+    "tr_3y": 23.6,
+    "excess_6m": 7.3,
+    "excess_1y": 4.7,
+    "excess_2y": 29.1,
+    "excess_3y": -32.8,
+    "avg_m12_m24": 52.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -304307,7 +305256,20 @@
    "cons_return_2yr": 289.4,
    "path": "staging/retrospective/NVDA/2009-05-29",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 22.6,
+    "tr_1y": 26.0,
+    "tr_2y": 87.0,
+    "tr_3y": 22.0,
+    "excess_6m": 3.1,
+    "excess_1y": 5.5,
+    "excess_2y": 37.9,
+    "excess_3y": -30.2,
+    "avg_m12_m24": 44.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -304326,7 +305288,20 @@
    "cons_return_2yr": 275.0,
    "path": "staging/retrospective/NVDA/2009-06-05",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 31.7,
+    "tr_1y": 11.7,
+    "tr_2y": 70.5,
+    "tr_3y": 11.4,
+    "excess_6m": 13.2,
+    "excess_1y": -3.5,
+    "excess_2y": 27.8,
+    "excess_3y": -32.5,
+    "avg_m12_m24": 40.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -304345,7 +305320,20 @@
    "cons_return_2yr": 252.8,
    "path": "staging/retrospective/NVDA/2009-06-12",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 32.1,
+    "tr_1y": 0.9,
+    "tr_2y": 48.7,
+    "tr_3y": 8.7,
+    "excess_6m": 14.2,
+    "excess_1y": -16.7,
+    "excess_2y": 9.9,
+    "excess_3y": -38.5,
+    "avg_m12_m24": 33.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -304364,7 +305352,20 @@
    "cons_return_2yr": 263.2,
    "path": "staging/retrospective/NVDA/2009-06-19",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 50.4,
+    "tr_1y": 10.0,
+    "tr_2y": 41.4,
+    "tr_3y": 18.4,
+    "excess_6m": 29.5,
+    "excess_1y": -13.7,
+    "excess_2y": -1.6,
+    "excess_3y": -36.9,
+    "avg_m12_m24": 38.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -304383,7 +305384,20 @@
    "cons_return_2yr": 251.0,
    "path": "staging/retrospective/NVDA/2009-06-26",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 56.4,
+    "tr_1y": -4.2,
+    "tr_2y": 36.0,
+    "tr_3y": 10.0,
+    "excess_6m": 32.7,
+    "excess_1y": -24.0,
+    "excess_2y": -7.0,
+    "excess_3y": -41.6,
+    "avg_m12_m24": 34.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -304402,7 +305416,20 @@
    "cons_return_2yr": 272.6,
    "path": "staging/retrospective/NVDA/2009-07-02",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 71.4,
+    "tr_1y": -6.0,
+    "tr_2y": 48.2,
+    "tr_3y": 23.4,
+    "excess_6m": 46.1,
+    "excess_1y": -22.1,
+    "excess_2y": -6.0,
+    "excess_3y": -36.7,
+    "avg_m12_m24": 43.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -304421,7 +305448,20 @@
    "cons_return_2yr": 291.6,
    "path": "staging/retrospective/NVDA/2009-07-10",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 78.9,
+    "tr_1y": -0.2,
+    "tr_2y": 48.8,
+    "tr_3y": 23.6,
+    "excess_6m": 47.4,
+    "excess_1y": -25.3,
+    "excess_2y": -9.2,
+    "excess_3y": -37.1,
+    "avg_m12_m24": 51.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -304440,7 +305480,20 @@
    "cons_return_2yr": 236.5,
    "path": "staging/retrospective/NVDA/2009-07-17",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 41.8,
+    "tr_1y": -16.7,
+    "tr_2y": 16.8,
+    "tr_3y": 2.5,
+    "excess_6m": 19.9,
+    "excess_1y": -32.3,
+    "excess_2y": -27.9,
+    "excess_3y": -50.1,
+    "avg_m12_m24": 30.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -304459,7 +305512,20 @@
    "cons_return_2yr": 213.3,
    "path": "staging/retrospective/NVDA/2009-07-24",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 27.0,
+    "tr_1y": -20.1,
+    "tr_2y": 15.7,
+    "tr_3y": -0.9,
+    "excess_6m": 14.5,
+    "excess_1y": -34.8,
+    "excess_2y": -26.1,
+    "excess_3y": -44.9,
+    "avg_m12_m24": 22.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -304478,7 +305544,20 @@
    "cons_return_2yr": 214.1,
    "path": "staging/retrospective/NVDA/2009-07-31",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 19.0,
+    "tr_1y": -28.9,
+    "tr_2y": 7.0,
+    "tr_3y": 3.1,
+    "excess_6m": 9.2,
+    "excess_1y": -42.7,
+    "excess_2y": -28.5,
+    "excess_3y": -44.6,
+    "avg_m12_m24": 23.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -304497,7 +305576,20 @@
    "cons_return_2yr": 196.2,
    "path": "staging/retrospective/NVDA/2009-08-07",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 18.3,
+    "tr_1y": -30.3,
+    "tr_2y": -5.5,
+    "tr_3y": 3.2,
+    "excess_6m": 11.8,
+    "excess_1y": -43.5,
+    "excess_2y": -28.7,
+    "excess_3y": -42.6,
+    "avg_m12_m24": 17.0,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -304516,7 +305608,20 @@
    "cons_return_2yr": 202.6,
    "path": "staging/retrospective/NVDA/2009-08-14",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 29.3,
+    "tr_1y": -30.0,
+    "tr_2y": -4.0,
+    "tr_3y": 8.7,
+    "excess_6m": 21.0,
+    "excess_1y": -39.6,
+    "excess_2y": -25.7,
+    "excess_3y": -38.2,
+    "avg_m12_m24": 20.0,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -304535,7 +305640,20 @@
    "cons_return_2yr": 191.5,
    "path": "staging/retrospective/NVDA/2009-08-21",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 19.0,
+    "tr_1y": -28.4,
+    "tr_2y": -15.8,
+    "tr_3y": 4.9,
+    "excess_6m": 10.0,
+    "excess_1y": -34.9,
+    "excess_2y": -29.6,
+    "excess_3y": -39.8,
+    "avg_m12_m24": 16.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -304554,7 +305672,20 @@
    "cons_return_2yr": 175.7,
    "path": "staging/retrospective/NVDA/2009-08-28",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 10.0,
+    "tr_1y": -31.3,
+    "tr_2y": -11.7,
+    "tr_3y": -3.0,
+    "excess_6m": 1.8,
+    "excess_1y": -36.7,
+    "excess_2y": -30.2,
+    "excess_3y": -46.8,
+    "avg_m12_m24": 10.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -304573,7 +305704,20 @@
    "cons_return_2yr": 168.8,
    "path": "staging/retrospective/NVDA/2009-09-04",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 10.3,
+    "tr_1y": -34.5,
+    "tr_2y": -14.5,
+    "tr_3y": -12.1,
+    "excess_6m": -1.2,
+    "excess_1y": -45.2,
+    "excess_2y": -34.4,
+    "excess_3y": -57.4,
+    "avg_m12_m24": 7.9,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -304592,7 +305736,20 @@
    "cons_return_2yr": 148.8,
    "path": "staging/retrospective/NVDA/2009-09-11",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 5.3,
+    "tr_1y": -38.3,
+    "tr_2y": -15.0,
+    "tr_3y": -17.6,
+    "excess_6m": -5.9,
+    "excess_1y": -46.7,
+    "excess_2y": -29.9,
+    "excess_3y": -61.9,
+    "avg_m12_m24": 0.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -304611,7 +305768,20 @@
    "cons_return_2yr": 166.8,
    "path": "staging/retrospective/NVDA/2009-09-18",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 14.7,
+    "tr_1y": -30.7,
+    "tr_2y": 1.6,
+    "tr_3y": -11.0,
+    "excess_6m": 4.5,
+    "excess_1y": -38.2,
+    "excess_2y": -16.7,
+    "excess_3y": -54.7,
+    "avg_m12_m24": 8.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -304630,7 +305800,20 @@
    "cons_return_2yr": 180.1,
    "path": "staging/retrospective/NVDA/2009-09-25",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 19.6,
+    "tr_1y": -15.4,
+    "tr_2y": -4.9,
+    "tr_3y": -7.5,
+    "excess_6m": 6.9,
+    "excess_1y": -27.5,
+    "excess_2y": -18.1,
+    "excess_3y": -52.7,
+    "avg_m12_m24": 13.8,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -304649,7 +305832,20 @@
    "cons_return_2yr": 193.2,
    "path": "staging/retrospective/NVDA/2009-10-02",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 24.3,
+    "tr_1y": -18.1,
+    "tr_2y": -9.7,
+    "tr_3y": -4.9,
+    "excess_6m": 8.4,
+    "excess_1y": -32.0,
+    "excess_2y": -24.6,
+    "excess_3y": -53.2,
+    "avg_m12_m24": 19.4,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -304668,7 +305864,20 @@
    "cons_return_2yr": 186.6,
    "path": "staging/retrospective/NVDA/2009-10-09",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 19.9,
+    "tr_1y": -23.4,
+    "tr_2y": -0.1,
+    "tr_3y": -9.0,
+    "excess_6m": 7.4,
+    "excess_1y": -34.1,
+    "excess_2y": -12.4,
+    "excess_3y": -50.5,
+    "avg_m12_m24": 17.0,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -304687,7 +305896,20 @@
    "cons_return_2yr": 207.2,
    "path": "staging/retrospective/NVDA/2009-10-16",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 29.0,
+    "tr_1y": -14.6,
+    "tr_2y": 18.9,
+    "tr_3y": -0.5,
+    "excess_6m": 18.4,
+    "excess_1y": -24.7,
+    "excess_2y": 2.1,
+    "excess_3y": -41.0,
+    "avg_m12_m24": 26.0,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -304706,7 +305928,20 @@
    "cons_return_2yr": 208.8,
    "path": "staging/retrospective/NVDA/2009-10-23",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 25.0,
+    "tr_1y": -10.3,
+    "tr_2y": 10.1,
+    "tr_3y": -6.2,
+    "excess_6m": 11.3,
+    "excess_1y": -21.8,
+    "excess_2y": -8.9,
+    "excess_3y": -44.0,
+    "avg_m12_m24": 27.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -304725,7 +305960,20 @@
    "cons_return_2yr": 239.5,
    "path": "staging/retrospective/NVDA/2009-10-30",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 31.4,
+    "tr_1y": 0.5,
+    "tr_2y": 30.4,
+    "tr_3y": 0.8,
+    "excess_6m": 15.6,
+    "excess_1y": -16.0,
+    "excess_2y": 1.8,
+    "excess_3y": -43.0,
+    "avg_m12_m24": 40.4,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NVDA",
@@ -304744,7 +305992,20 @@
    "cons_return_2yr": 978.2,
    "path": "staging/retrospective/NVDA/2009-11-06",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 7.9,
+    "tr_1y": -4.2,
+    "tr_2y": 12.6,
+    "tr_3y": -1.1,
+    "excess_6m": 1.5,
+    "excess_1y": -20.8,
+    "excess_2y": -8.9,
+    "excess_3y": -41.6,
+    "avg_m12_m24": 27.9,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -304763,7 +306024,20 @@
    "cons_return_2yr": 946.4,
    "path": "staging/retrospective/NVDA/2009-11-13",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 8.0,
+    "tr_1y": -2.2,
+    "tr_2y": 10.5,
+    "tr_3y": -12.8,
+    "excess_6m": 1.3,
+    "excess_1y": -13.9,
+    "excess_2y": -9.3,
+    "excess_3y": -45.3,
+    "avg_m12_m24": 24.4,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -304782,7 +306056,20 @@
    "cons_return_2yr": 999.9,
    "path": "staging/retrospective/NVDA/2009-11-20",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -3.4,
+    "tr_1y": 6.6,
+    "tr_2y": 8.0,
+    "tr_3y": -10.3,
+    "excess_6m": -2.7,
+    "excess_1y": -5.3,
+    "excess_2y": -7.7,
+    "excess_3y": -44.4,
+    "avg_m12_m24": 31.0,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -304801,7 +306088,20 @@
    "cons_return_2yr": 1009.3,
    "path": "staging/retrospective/NVDA/2009-11-27",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 5.6,
+    "tr_1y": 6.3,
+    "tr_2y": 9.8,
+    "tr_3y": -4.3,
+    "excess_6m": 3.5,
+    "excess_1y": -4.1,
+    "excess_2y": -0.7,
+    "excess_3y": -39.3,
+    "avg_m12_m24": 32.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -304820,7 +306120,20 @@
    "cons_return_2yr": 895.0,
    "path": "staging/retrospective/NVDA/2009-12-04",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -15.1,
+    "tr_1y": 3.7,
+    "tr_2y": 10.2,
+    "tr_3y": -14.6,
+    "excess_6m": -12.3,
+    "excess_1y": -9.0,
+    "excess_2y": -6.4,
+    "excess_3y": -48.6,
+    "avg_m12_m24": 18.7,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -304839,7 +306152,20 @@
    "cons_return_2yr": 832.8,
    "path": "staging/retrospective/NVDA/2009-12-11",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -23.7,
+    "tr_1y": -1.7,
+    "tr_2y": -2.0,
+    "tr_3y": -16.3,
+    "excess_6m": -23.3,
+    "excess_1y": -15.7,
+    "excess_2y": -19.7,
+    "excess_3y": -52.2,
+    "avg_m12_m24": 11.4,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -304858,7 +306184,20 @@
    "cons_return_2yr": 743.6,
    "path": "staging/retrospective/NVDA/2009-12-18",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -26.9,
+    "tr_1y": -14.6,
+    "tr_2y": -19.7,
+    "tr_3y": -24.9,
+    "excess_6m": -29.2,
+    "excess_1y": -29.4,
+    "excess_2y": -34.4,
+    "excess_3y": -63.1,
+    "avg_m12_m24": 0.6,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -304877,7 +306216,20 @@
    "cons_return_2yr": 684.3,
    "path": "staging/retrospective/NVDA/2009-12-24",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -38.6,
+    "tr_1y": -17.5,
+    "tr_2y": -21.7,
+    "tr_3y": -31.9,
+    "excess_6m": -35.0,
+    "excess_1y": -31.2,
+    "excess_2y": -38.3,
+    "excess_3y": -65.5,
+    "avg_m12_m24": -6.6,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NVDA",
@@ -304896,7 +306248,20 @@
    "cons_return_2yr": 659.6,
    "path": "staging/retrospective/NVDA/2009-12-31",
    "generated": "2026-11-12",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -45.3,
+    "tr_1y": -19.8,
+    "tr_2y": -25.8,
+    "tr_3y": -34.8,
+    "excess_6m": -38.9,
+    "excess_1y": -34.6,
+    "excess_2y": -42.8,
+    "excess_3y": -67.6,
+    "avg_m12_m24": -9.6,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "PEP",
