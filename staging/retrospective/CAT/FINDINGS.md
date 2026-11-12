@@ -1,13 +1,16 @@
 # CAT retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the CAT weekly dates: 783 from 2008-01-04 to 2022-12-30 (105 in 2008-2009, 209 in 2010-2013,
-208 in 2014-2017, 261 in 2018-2022), all
+Patterns seen in `outcome.json` for the CAT weekly dates: 984 from 2008-01-04 to 2026-11-06 (105 in 2008-2009, 209 in 2010-2013,
+208 in 2014-2017, 261 in 2018-2022, 201 in 2023-2026), all
 Caterpillar Inc. (NYSE: CAT). They are **labels and hypotheses**: never feed them back into the method or the fact sheet. Each batch was
-scored only after its point-in-time build was committed and pushed (2008-2009: 26e9995; 2010-2013: a1a4479; 2014-2017: 6b020c8; 2018-2022: e2fcc32). Outcomes were computed on
-2026-11-11; every date has its 6-month, 1-, 2- and 3-year horizons (the last ends 2025-12-30). Total returns include the quarterly
+scored only after its point-in-time build was committed and pushed (2008-2009: 26e9995; 2010-2013: a1a4479; 2014-2017: 6b020c8; 2018-2022: e2fcc32; 2023-2026: db329ef, firewall 4c0de5b). Outcomes were computed on
+2026-11-11 (2008-2022) and 2026-11-12 (2023-2026); every date to 2022-12-30 has its 6-month, 1-, 2- and 3-year horizons (the last ends
+2025-12-30); of the 2023-2026 dates, 175 have a 6-month horizon (to 2026-05-08), 149 a 1-year (to 2025-11-07), 97 a 2-year (to
+2024-11-08) and 45 a 3-year (to 2023-11-10), each ending by 2026-11-10. Total returns include the quarterly
 dividends ($0.36, then $0.42 from July 2008, $0.44 from July 2010, $0.46 from July 2011, $0.52 from July 2012, $0.60 from July 2013,
 $0.70 from July 2014, $0.77 from July 2015, $0.78 from July 2017, $0.86 from July 2018, $1.03
-from July 2019, $1.11 from July 2021 and $1.20 from July 2022, ex-dates); no split falls in any horizon, so every price is as traded. Medians of an even
+from July 2019, $1.11 from July 2021, $1.20 from July 2022, $1.30 from July 2023, $1.41 from July 2024, $1.51 from July 2025 and $1.63 from July
+2026, ex-dates); no split falls in any horizon, so every price is as traded. Medians of an even
 count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years and +52.1% over three. "Call
 held" is `call_check_2y`: CHEAP should clear the hurdle or beat the benchmark (SPY), FAIR should land within ±15pp of the benchmark, and
 RICH should miss the hurdle and lag the benchmark.
@@ -427,4 +430,118 @@ RICH should miss the hurdle and lag the benchmark.
   one quarter's sales growth misreads both a boom (2011, 2018) and a bust (2009, 2020) for a deep cyclical; and the rollover rule's
   last-full-year EPS, applied for years when a company gives no outlook, anchors the multiple to a trough.
 - **Today's profile** files CAT CYCLICAL, risk 1 (`profile_drift`); the point-in-time kind agrees on every 2018-2022 date and only the risk
+  score differs (2 then, 1 today).
+
+## 2023 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class FAIR, legacy tier WATCHLIST | 18 | +62.7% | +34.2% to +153.9% | 18 | 15 | +44.4% | 8 |
+| class CHEAP, legacy tier ACCUMULATE | 13 | +56.8% | +34.2% to +125.7% | 13 | 13 | +64.4% | 13 |
+| class RICH, legacy tier AVOID | 10 | +104.5% | +44.3% to +134.2% | 10 | 8 | +42.8% | 0 |
+| class FAIR, legacy tier AVOID | 8 | +60.1% | +47.1% to +130.8% | 8 | 8 | +33.5% | 5 |
+| class CHEAP, legacy tier WATCHLIST | 3 | +56.9% | +48.0% to +117.7% | 3 | 2 | +53.7% | 3 |
+| latest print Q3 2022, EPS $10.81 (2023-01-06 to 2023-01-27) | 4 | +53.3% | +44.3% to +58.3% | 4 | 2 | +41.2% | 0 |
+| latest print Q4 2022, EPS $13.84 (2023-02-01 to 2023-04-21) | 12 | +48.7% | +34.2% to +64.3% | 12 | 8 | +58.6% | 12 |
+| latest print Q1 2023, EPS $13.84 (2023-04-28 to 2023-07-28) | 14 | +63.0% | +45.3% to +70.5% | 14 | 14 | +51.3% | 8 |
+| latest print Q2 2023, EPS $13.84 (2023-08-02 to 2023-10-27) | 13 | +62.7% | +47.1% to +125.7% | 13 | 13 | +35.0% | 9 |
+| latest print Q3 2023, EPS $13.84 (2023-11-01 to 2023-12-29) | 9 | +125.6% | +99.5% to +153.9% | 9 | 9 | +56.6% | 0 |
+
+- **CHEAP held on all 16, FAIR on 13 of 26, RICH on none of 10.** Every 2023 date cleared the hurdle over two years (+34.2% to +153.9%)
+  and 46 beat SPY. The 16 CHEAP dates (the February-October dips, $209.17-249.20 at 15.1-18.0x FY22's $13.84) returned +34.2% to
+  +125.7%; the two-year price landed nearest BASE on 10 and BULL on 6. The 10 RICH dates failed: the four January dates on FY21's $10.81
+  (23.0-24.5x) returned +44.3% to +58.3% (2 beat SPY), and the six of November-December on Q3 2023's slower BASE +99.5% to +134.2%. Of the
+  26 FAIR dates, 13 landed within 15pp of SPY and 13 above it (by up to 89pp). The low close was $205.75 on 2023-05-31. Over three years
+  all 45 dates with that horizon beat SPY (+147.8% to +343.4%, by 71-266pp).
+- **The anchor understated the year, as in 2022.** FY2023 came in at $21.21 against the $13.84 every 2023 date carried (Q4 2023 release),
+  so the 15-23x the models saw was 10-15x the year's own EPS; the boom-quarter BASE (+14.5% to +24.0%/yr) was the closer read.
+- **Ranking:** on the return to the m12-24 average price the entry price, the P/E, the EPP gap (-0.87 each) and Ratio B (-0.68) carried
+  the right sign; on the two-year total return none did (+0.16, +0.06, +0.06, +0.25), because the two-year endpoints of the late-2023 dates
+  land in the late-2025 run-up. The adjusted gap (+0.21, +0.67) had the right sign and the composite (+0.52, -0.32) was mixed.
+
+## 2024 (52 dates; 45 with a two-year outcome)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 24 (17 scored) | +116.2% | +45.1% to +156.2% | 17 | 17 | +87.5% | 0 |
+| class FAIR, legacy tier WATCHLIST | 23 | +156.6% | +103.3% to +204.3% | 23 | 23 | +89.6% | 0 |
+| class FAIR, legacy tier AVOID | 4 | +119.4% | +92.9% to +126.9% | 4 | 4 | +41.0% | 0 |
+| class CHEAP, legacy tier WATCHLIST | 1 | +128.6% | +128.6% to +128.6% | 1 | 1 | +38.3% | 1 |
+| latest print Q3 2023, EPS $13.84 (2024-01-05 to 2024-02-02) | 5 | +120.7% | +116.2% to +130.2% | 5 | 5 | +45.9% | 0 |
+| latest print Q4 2023, EPS $21.21 (2024-02-06 to 2024-04-19) | 11 | +119.4% | +92.1% to +144.1% | 11 | 11 | +39.7% | 1 |
+| latest print Q1 2024, EPS $21.21 (2024-04-26 to 2024-08-02) | 15 | +162.2% | +145.3% to +204.3% | 15 | 15 | +88.8% | 0 |
+| latest print Q2 2024, EPS $21.21 (2024-08-07 to 2024-10-25) | 12 | +128.1% | +80.7% to +162.2% | 12 | 12 | +100.2% | 0 |
+| latest print Q3 2024, EPS $21.21 (2024-10-31 to 2024-12-27) | 9 (2 scored) | +68.8% | +45.1% to +68.8% | 2 | 2 | +103.0% | 0 |
+
+- **Every call failed but the one CHEAP date.** The 45 dates scored (to 2024-11-08) returned +45.1% to +204.3% over two years; every one
+  cleared the hurdle and beat SPY, by 19.7-166.3pp. FAIR held on none of 27 (all 66-166pp above SPY, outside the ±15pp band), RICH on none
+  of 17, CHEAP on its one date (2024-02-06, +128.6%). The two-year price landed nearest BULL on 44 and XBULL on 1. The low close within
+  the window was $273.94 on 2025-04-08.
+- **The earnings anchor was right; the multiple was not.** FY2024 came in at $21.90 and FY2025 at $19.06 (Q4 2024 and Q4 2025 releases)
+  against the $21.21 the 2024 dates carried, and BASE (+5.3% to -1.9%/yr) was close to what earnings did. The return came from the
+  multiple: the two-year endpoints fall in 2026, when the price stood at 29-52x FY2025's EPS (a high close of $1,064.90 on 2026-06-30)
+  against a decade median of 15-16x. In the filings the change shows as the backlog ($27.5 billion at the end of 2023, $30.0 billion at
+  the end of 2024, $51.2 billion at the end of 2025, "the largest increase in Power & Energy"; the FY2023-FY2025 10-Ks) and as Power &
+  Energy's share of external segment sales (32.4% in FY2022, 34.5%, 36.8%, 39.7% in FY2025).
+- **Ranking:** on the two-year total return the entry price (-0.52), the P/E (-0.70), the EPP gap (-0.71) and Ratio B (-0.70) carried
+  the right sign; on the m12-24 average price none clearly did (+0.13, -0.19, -0.18, -0.18). The adjusted gap (+0.11, -0.70) and the
+  composite (-0.06, -0.83) had the wrong sign on the m12-24 measure.
+
+## 2025 (52 dates; no two-year outcome yet)
+
+The first two-year horizon of 2025 ends in January 2027. One-year total returns (45 dates, to 2025-11-07); provisional, not a call check:
+
+| Group | Dates | Median 1-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY |
+|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 31 (24 scored) | +91.1% | +0.3% to +143.7% | 22 | 22 |
+| class RICH, legacy tier WATCHLIST | 7 | +157.6% | +152.9% to +175.1% | 7 | 7 |
+| class FAIR, legacy tier WATCHLIST | 6 | +117.7% | +77.6% to +125.2% | 6 | 6 |
+| class FAIR, legacy tier ACCUMULATE | 3 | +112.7% | +104.5% to +173.1% | 3 | 3 |
+| class CHEAP, legacy tier ACCUMULATE | 2 | +172.1% | +171.5% to +172.1% | 2 | 2 |
+| class RICH, legacy tier ACCUMULATE | 2 | +185.3% | +177.5% to +185.3% | 2 | 2 |
+| class CHEAP, legacy tier BUY | 1 | +151.0% | +151.0% to +151.0% | 1 | 1 |
+| latest print Q3 2024, EPS $21.21 (2025-01-03 to 2025-01-24) | 4 | +69.1% | +55.2% to +77.6% | 4 | 4 |
+| latest print Q4 2024, EPS $21.90 (2025-01-31 to 2025-04-25) | 13 | +117.7% | +78.6% to +173.1% | 13 | 13 |
+| latest print Q1 2025, EPS $21.90 (2025-05-01 to 2025-08-01) | 14 | +156.7% | +91.5% to +185.3% | 14 | 14 |
+| latest print Q2 2025, EPS $21.90 (2025-08-06 to 2025-10-24) | 12 | +91.1% | +32.3% to +111.6% | 12 | 12 |
+| latest print Q3 2025, EPS $21.90 (2025-10-30 to 2025-12-26) | 9 (2 scored) | +7.9% | +0.3% to +7.9% | 0 | 0 |
+
+- **Every class rose; RICH lagged SPY only from the Q3 2025 print.** The 3 CHEAP dates (the April fall, $288.08-294.25) returned
+  +151.0% to +172.1% over one year (120-143pp over SPY), the 9 FAIR dates +77.6% to +173.1% and 31 of the 33 RICH dates beat SPY (median
+  +93.8%); the two that lagged are the Q3 2025 print's dates (2025-10-30 at $583.15 and 2025-11-07 at $563.10: +7.9% and +0.3%, 4-10pp
+  behind SPY). Over six months all 52 dates beat SPY.
+
+## 2026 (45 dates; 19 with a six-month outcome)
+
+| Group | Dates | Median 6-month total return | Range | Cleared 15%/yr hurdle | Beat SPY |
+|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 45 (19 scored) | +18.4% | -37.4% to +61.5% | 14 | 10 |
+| latest print Q3 2025, EPS $21.90 (2026-01-02 to 2026-01-23) | 4 | +52.4% | +36.1% to +61.5% | 4 | 4 |
+| latest print Q4 2025, EPS $19.06 (2026-01-30 to 2026-04-24) | 13 | +18.3% | -17.1% to +23.6% | 10 | 6 |
+| latest print Q1 2026, EPS $19.06 (2026-05-01 to 2026-07-31) | 14 (2 scored) | -29.6% | -37.4% to -29.6% | 0 | 0 |
+| latest print Q2 2026, EPS $19.06 (2026-08-05 to 2026-10-23) | 12 (0 scored) | - | - | - | - |
+| latest print Q3 2026, EPS $19.06 (2026-10-30 to 2026-11-06) | 2 (0 scored) | - | - | - | - |
+
+- **RICH on all 45; the six-month outcomes split at April.** The four January dates (still on FY24's $21.90, $598.41-646.89) returned
+  +36.1% to +61.5% over six months, 27-52pp ahead of SPY; the dates from the Q4 2025 print to 2026-04-02 ($657.36-774.20) returned +7.7%
+  to +23.6%, within 16pp of SPY either way; the five from 2026-04-10 ($790.66-897.45) returned +1.6% to -37.4% and lagged SPY by 14-38pp.
+  The close was $601.61 on 2026-11-11, 43% under the 2026-06-30 high. Too early for any two-year reading.
+
+## 2023-2026: what the third cycle shows (hindsight; two-year outcomes for 97 dates)
+
+- **Calls held:** CHEAP 17 of 17, FAIR 13 of 53, RICH 0 of 27, 30 of 97 (2023: 29 of 52; 2024: 1 of 45; 2025-2026 not yet scored). With
+  2008-2022: CHEAP 154 of 303, FAIR 27 of 105, RICH 153 of 472, 334 of 880 in all.
+- **Pooled ranking (97 dates):** the P/E (-0.37, -0.55) and the EPP gap (-0.16, -0.47) carried the right sign, Ratio B (+0.08, -0.25)
+  hardly any; the entry price (+0.54, +0.19), the adjusted gap (-0.48, -0.37) and the composite (-0.38, -0.68) the wrong one, as over
+  2008-2022: the later the date, the higher both the price and the return.
+- **The failure this time is the multiple, not the anchor.** In 2018-2022 the RICH calls failed on a trough anchor (a trough quarter's
+  growth or a trough year with no outlook). In 2023-2024 the anchor was close to the next years' earnings (FY2023 $21.21, FY2024 $21.90,
+  FY2025 $19.06), and the RICH and FAIR calls failed because the price re-rated to two to three times the decade's median multiple. A P/E
+  window built on the stock's own decade cannot place a multiple it has never had.
+- **Hypotheses, not rules** (test on other tickers and periods, then a new method version with a full re-run, never a CAT fit): a shift in
+  a cyclical's business mix (here toward Power & Energy and its backlog) can move its multiple outside its own ten-year range, which the
+  own-history window reads as RICH; and the rollover rule's last full year, applied through a year without guidance (2026, on the
+  tariff-hit $19.06 while the 10-Qs expected growth "in the mid-to-high teens"), stays a weak anchor, as in 2021. Neither may be folded into
+  the archive that produced it.
+- **Today's profile** files CAT CYCLICAL, risk 1 (`profile_drift`); the point-in-time kind agrees on every 2023-2026 date and only the risk
   score differs (2 then, 1 today).

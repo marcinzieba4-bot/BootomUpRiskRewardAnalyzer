@@ -787,155 +787,155 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2022-12-16 | $232.72 | Caterpillar 8-K: third-quarter 2022 results release | 3.00 | +0.56 | 2.10x | AVOID | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +67.3% | +5.9pp | +49.4% | ✗ |
 | 2022-12-23 | $239.87 | Caterpillar 8-K: third-quarter 2022 results release | 3.00 | +0.50 | 2.37x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +56.7% | -2.2pp | +45.5% | ✗ |
 | 2022-12-30 | $239.56 | Caterpillar 8-K: third-quarter 2022 results release | 3.00 | +0.51 | 2.36x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +55.9% | -1.5pp | +46.2% | ✗ |
-| 2023-01-06 | $248.86 | Caterpillar 8-K: third-quarter 2022 results release | 3.00 | +0.43 | 2.69x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
-| 2023-01-13 | $258.46 | Caterpillar 8-K: third-quarter 2022 results release | 3.00 | +0.35 | 3.22x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
-| 2023-01-20 | $249.71 | Caterpillar 8-K: third-quarter 2022 results release | 3.00 | +0.43 | 2.73x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
-| 2023-01-27 | $264.54 | Caterpillar 8-K: third-quarter 2022 results release | 3.00 | +0.29 | 3.65x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
-| 2023-02-01 | $249.54 | Caterpillar 8-K: fourth-quarter 2022 results release | 2.55 | +0.52 | 1.36x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2023-02-10 | $247.67 | Caterpillar 8-K: fourth-quarter 2022 results release | 2.55 | +0.53 | 1.33x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2023-02-17 | $247.79 | Caterpillar 8-K: fourth-quarter 2022 results release | 2.55 | +0.54 | 1.32x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2023-02-24 | $236.17 | Caterpillar 8-K: fourth-quarter 2022 results release | 2.55 | +0.66 | 1.15x | WATCHLIST | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2023-03-03 | $255.31 | Caterpillar 8-K: fourth-quarter 2022 results release | 2.55 | +0.37 | 1.44x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2023-03-10 | $227.01 | Caterpillar 8-K: fourth-quarter 2022 results release | 2.55 | +0.76 | 1.03x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2023-03-17 | $215.01 | Caterpillar 8-K: fourth-quarter 2022 results release | 2.55 | +0.88 | 0.89x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2023-03-24 | $217.01 | Caterpillar 8-K: fourth-quarter 2022 results release | 2.55 | +0.86 | 0.92x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2023-03-31 | $228.84 | Caterpillar 8-K: fourth-quarter 2022 results release | 2.55 | +0.74 | 1.05x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2023-04-06 | $209.17 | Caterpillar 8-K: fourth-quarter 2022 results release | 2.55 | +0.94 | 0.83x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2023-04-14 | $223.68 | Caterpillar 8-K: fourth-quarter 2022 results release | 2.55 | +0.80 | 0.99x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2023-04-21 | $220.27 | Caterpillar 8-K: fourth-quarter 2022 results release | 2.55 | +0.83 | 0.95x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2023-04-28 | $218.80 | Caterpillar 8-K: first-quarter 2023 results release | 3.00 | +1.20 | 1.08x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2023-05-05 | $215.09 | Caterpillar 8-K: first-quarter 2023 results release | 3.00 | +1.26 | 1.03x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2023-05-12 | $209.54 | Caterpillar 8-K: first-quarter 2023 results release | 3.00 | +1.33 | 0.96x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2023-05-19 | $214.78 | Caterpillar 8-K: first-quarter 2023 results release | 3.00 | +1.27 | 1.02x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2023-05-26 | $211.80 | Caterpillar 8-K: first-quarter 2023 results release | 3.00 | +1.30 | 0.98x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2023-06-02 | $226.63 | Caterpillar 8-K: first-quarter 2023 results release | 3.00 | +1.12 | 1.19x | WATCHLIST | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | - | - | - | - |
-| 2023-06-09 | $235.03 | Caterpillar 8-K: first-quarter 2023 results release | 3.00 | +1.03 | 1.32x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2023-06-16 | $245.27 | Caterpillar 8-K: first-quarter 2023 results release | 3.00 | +0.94 | 1.51x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2023-06-23 | $234.44 | Caterpillar 8-K: first-quarter 2023 results release | 3.00 | +1.03 | 1.31x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2023-06-30 | $246.05 | Caterpillar 8-K: first-quarter 2023 results release | 3.00 | +0.92 | 1.53x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2023-07-07 | $245.18 | Caterpillar 8-K: first-quarter 2023 results release | 3.00 | +0.94 | 1.51x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2023-07-14 | $255.62 | Caterpillar 8-K: first-quarter 2023 results release | 3.00 | +0.74 | 1.74x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2023-07-21 | $257.65 | Caterpillar 8-K: first-quarter 2023 results release | 3.00 | +0.73 | 1.76x | AVOID | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2023-07-28 | $260.43 | Caterpillar 8-K: first-quarter 2023 results release | 3.00 | +0.71 | 1.82x | AVOID | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2023-08-02 | $287.57 | Caterpillar 8-K: second-quarter 2023 results release | 3.00 | +0.62 | 1.98x | AVOID | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2023-08-11 | $285.22 | Caterpillar 8-K: second-quarter 2023 results release | 3.00 | +0.63 | 1.92x | AVOID | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2023-08-18 | $273.80 | Caterpillar 8-K: second-quarter 2023 results release | 3.00 | +0.73 | 1.64x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2023-08-25 | $272.56 | Caterpillar 8-K: second-quarter 2023 results release | 3.00 | +0.74 | 1.62x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2023-09-01 | $286.25 | Caterpillar 8-K: second-quarter 2023 results release | 3.00 | +0.63 | 1.92x | AVOID | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2023-09-08 | $282.28 | Caterpillar 8-K: second-quarter 2023 results release | 3.00 | +0.66 | 1.82x | AVOID | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2023-09-15 | $279.15 | Caterpillar 8-K: second-quarter 2023 results release | 3.00 | +0.68 | 1.75x | AVOID | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2023-09-22 | $273.06 | Caterpillar 8-K: second-quarter 2023 results release | 3.00 | +0.74 | 1.60x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2023-09-29 | $273.00 | Caterpillar 8-K: second-quarter 2023 results release | 3.00 | +0.74 | 1.60x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2023-10-06 | $266.04 | Caterpillar 8-K: second-quarter 2023 results release | 3.00 | +0.80 | 1.48x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2023-10-13 | $267.94 | Caterpillar 8-K: second-quarter 2023 results release | 3.00 | +0.79 | 1.49x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2023-10-20 | $249.20 | Caterpillar 8-K: second-quarter 2023 results release | 3.00 | +1.08 | 1.20x | WATCHLIST | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | - | - | - | - |
-| 2023-10-27 | $238.56 | Caterpillar 8-K: second-quarter 2023 results release | 3.00 | +1.19 | 1.06x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2023-11-01 | $231.83 | Caterpillar 8-K: third-quarter 2023 results release | 3.00 | +0.98 | 1.50x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2023-11-10 | $239.68 | Caterpillar 8-K: third-quarter 2023 results release | 3.00 | +0.91 | 1.67x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2023-11-17 | $253.07 | Caterpillar 8-K: third-quarter 2023 results release | 3.00 | +0.69 | 2.04x | AVOID | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | - | - | - | - |
-| 2023-11-24 | $247.36 | Caterpillar 8-K: third-quarter 2023 results release | 3.00 | +0.85 | 1.87x | AVOID | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2023-12-01 | $256.76 | Caterpillar 8-K: third-quarter 2023 results release | 3.00 | +0.66 | 2.16x | AVOID | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | - | - | - | - |
-| 2023-12-08 | $259.50 | Caterpillar 8-K: third-quarter 2023 results release | 3.00 | +0.63 | 2.26x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
-| 2023-12-15 | $285.74 | Caterpillar 8-K: third-quarter 2023 results release | 3.00 | +0.41 | 3.59x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
-| 2023-12-22 | $290.36 | Caterpillar 8-K: third-quarter 2023 results release | 3.00 | +0.37 | 3.95x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
-| 2023-12-29 | $295.67 | Caterpillar 8-K: third-quarter 2023 results release | 3.00 | +0.34 | 4.27x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
-| 2024-01-05 | $288.93 | Caterpillar 8-K: third-quarter 2023 results release | 3.00 | +0.40 | 3.71x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
-| 2024-01-12 | $290.41 | Caterpillar 8-K: third-quarter 2023 results release | 3.00 | +0.38 | 3.82x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
-| 2024-01-19 | $285.28 | Caterpillar 8-K: third-quarter 2023 results release | 3.00 | +0.42 | 3.45x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
-| 2024-01-26 | $299.43 | Caterpillar 8-K: third-quarter 2023 results release | 3.00 | +0.32 | 4.48x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
-| 2024-02-02 | $315.09 | Caterpillar 8-K: third-quarter 2023 results release | 3.00 | +0.21 | 6.68x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
-| 2024-02-06 | $322.72 | Caterpillar 8-K: fourth-quarter 2023 results release | 2.80 | +0.62 | 1.24x | WATCHLIST | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | - | - | - | - |
-| 2024-02-16 | $321.91 | Caterpillar 8-K: fourth-quarter 2023 results release | 2.80 | +0.59 | 1.28x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2024-02-23 | $323.88 | Caterpillar 8-K: fourth-quarter 2023 results release | 2.80 | +0.57 | 1.30x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2024-03-01 | $336.70 | Caterpillar 8-K: fourth-quarter 2023 results release | 2.80 | +0.50 | 1.48x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2024-03-08 | $339.19 | Caterpillar 8-K: fourth-quarter 2023 results release | 2.80 | +0.49 | 1.51x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2024-03-15 | $346.97 | Caterpillar 8-K: fourth-quarter 2023 results release | 2.80 | +0.44 | 1.63x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2024-03-22 | $358.11 | Caterpillar 8-K: fourth-quarter 2023 results release | 2.80 | +0.28 | 1.82x | AVOID | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2024-03-28 | $366.43 | Caterpillar 8-K: fourth-quarter 2023 results release | 2.80 | +0.24 | 1.99x | AVOID | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2024-04-05 | $379.30 | Caterpillar 8-K: fourth-quarter 2023 results release | 2.80 | +0.18 | 2.28x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
-| 2024-04-12 | $365.63 | Caterpillar 8-K: fourth-quarter 2023 results release | 2.80 | +0.25 | 1.97x | AVOID | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2024-04-19 | $354.66 | Caterpillar 8-K: fourth-quarter 2023 results release | 2.80 | +0.41 | 1.76x | AVOID | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2024-04-26 | $343.38 | Caterpillar 8-K: first-quarter 2024 results release | 2.45 | +0.09 | 1.57x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2024-05-03 | $336.75 | Caterpillar 8-K: first-quarter 2024 results release | 2.45 | +0.13 | 1.48x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2024-05-10 | $354.79 | Caterpillar 8-K: first-quarter 2024 results release | 2.45 | +0.03 | 1.76x | AVOID | TOO MUCH CYCLE RISK (RICH) | 5/8 RICH | - | - | - | - |
-| 2024-05-17 | $356.27 | Caterpillar 8-K: first-quarter 2024 results release | 2.45 | +0.02 | 1.79x | AVOID | TOO MUCH CYCLE RISK (RICH) | 5/8 RICH | - | - | - | - |
-| 2024-05-24 | $348.90 | Caterpillar 8-K: first-quarter 2024 results release | 2.45 | +0.06 | 1.66x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2024-05-31 | $338.52 | Caterpillar 8-K: first-quarter 2024 results release | 2.45 | +0.13 | 1.50x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2024-06-07 | $328.94 | Caterpillar 8-K: first-quarter 2024 results release | 2.45 | +0.19 | 1.37x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2024-06-14 | $321.47 | Caterpillar 8-K: first-quarter 2024 results release | 2.45 | +0.23 | 1.28x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2024-06-21 | $327.84 | Caterpillar 8-K: first-quarter 2024 results release | 2.45 | +0.19 | 1.36x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2024-06-28 | $333.10 | Caterpillar 8-K: first-quarter 2024 results release | 2.45 | +0.16 | 1.43x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2024-07-05 | $328.35 | Caterpillar 8-K: first-quarter 2024 results release | 2.45 | +0.19 | 1.36x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2024-07-12 | $335.59 | Caterpillar 8-K: first-quarter 2024 results release | 2.45 | +0.14 | 1.46x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2024-07-19 | $347.63 | Caterpillar 8-K: first-quarter 2024 results release | 2.45 | +0.08 | 1.64x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2024-07-26 | $350.48 | Caterpillar 8-K: first-quarter 2024 results release | 2.45 | +0.06 | 1.69x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2024-08-02 | $320.87 | Caterpillar 8-K: first-quarter 2024 results release | 2.45 | +0.23 | 1.27x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2024-08-07 | $325.80 | Caterpillar 8-K: second-quarter 2024 results release | 2.00 | -0.27 | 1.33x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2024-08-16 | $343.48 | Caterpillar 8-K: second-quarter 2024 results release | 2.00 | -0.38 | 1.58x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2024-08-23 | $348.41 | Caterpillar 8-K: second-quarter 2024 results release | 2.00 | -0.40 | 1.65x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2024-08-30 | $356.10 | Caterpillar 8-K: second-quarter 2024 results release | 2.00 | -0.44 | 1.79x | AVOID | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | - | - | - | - |
-| 2024-09-06 | $329.36 | Caterpillar 8-K: second-quarter 2024 results release | 2.00 | -0.29 | 1.37x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2024-09-13 | $345.31 | Caterpillar 8-K: second-quarter 2024 results release | 2.00 | -0.38 | 1.60x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2024-09-20 | $368.82 | Caterpillar 8-K: second-quarter 2024 results release | 2.00 | -0.60 | 2.04x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
-| 2024-09-27 | $391.08 | Caterpillar 8-K: second-quarter 2024 results release | 2.00 | -0.71 | 2.61x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
-| 2024-10-04 | $397.09 | Caterpillar 8-K: second-quarter 2024 results release | 2.00 | -0.74 | 2.80x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
-| 2024-10-11 | $402.02 | Caterpillar 8-K: second-quarter 2024 results release | 2.00 | -0.77 | 2.97x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
-| 2024-10-18 | $393.86 | Caterpillar 8-K: second-quarter 2024 results release | 2.00 | -0.72 | 2.69x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
-| 2024-10-25 | $385.97 | Caterpillar 8-K: second-quarter 2024 results release | 2.00 | -0.68 | 2.46x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
-| 2024-10-31 | $376.20 | Caterpillar 8-K: third-quarter 2024 results release | 2.00 | -0.64 | 2.21x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
-| 2024-11-08 | $393.37 | Caterpillar 8-K: third-quarter 2024 results release | 2.00 | -0.72 | 2.61x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
-| 2024-11-15 | $384.07 | Caterpillar 8-K: third-quarter 2024 results release | 2.00 | -0.67 | 2.35x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
-| 2024-11-22 | $397.49 | Caterpillar 8-K: third-quarter 2024 results release | 2.00 | -0.74 | 2.74x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
-| 2024-11-29 | $406.11 | Caterpillar 8-K: third-quarter 2024 results release | 2.00 | -0.78 | 3.04x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
-| 2024-12-06 | $395.03 | Caterpillar 8-K: third-quarter 2024 results release | 2.00 | -0.72 | 2.66x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
-| 2024-12-13 | $380.51 | Caterpillar 8-K: third-quarter 2024 results release | 2.00 | -0.65 | 2.26x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
-| 2024-12-20 | $366.04 | Caterpillar 8-K: third-quarter 2024 results release | 2.00 | -0.58 | 1.94x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
-| 2024-12-27 | $364.86 | Caterpillar 8-K: third-quarter 2024 results release | 2.00 | -0.57 | 1.92x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
-| 2025-01-03 | $363.79 | Caterpillar 8-K: third-quarter 2024 results release | 2.00 | -0.47 | 1.90x | AVOID | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | - | - | - | - |
-| 2025-01-10 | $351.00 | Caterpillar 8-K: third-quarter 2024 results release | 2.00 | -0.40 | 1.67x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2025-01-17 | $386.02 | Caterpillar 8-K: third-quarter 2024 results release | 2.00 | -0.57 | 2.40x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
-| 2025-01-24 | $407.63 | Caterpillar 8-K: third-quarter 2024 results release | 2.00 | -0.79 | 3.10x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
-| 2025-01-31 | $371.44 | Caterpillar 8-K: fourth-quarter 2024 results release | 2.00 | -0.56 | 1.96x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
-| 2025-02-07 | $363.88 | Caterpillar 8-K: fourth-quarter 2024 results release | 2.00 | -0.42 | 1.82x | AVOID | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | - | - | - | - |
-| 2025-02-14 | $353.32 | Caterpillar 8-K: fourth-quarter 2024 results release | 2.00 | -0.32 | 1.27x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2025-02-21 | $340.04 | Caterpillar 8-K: fourth-quarter 2024 results release | 2.00 | -0.25 | 1.13x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2025-02-28 | $343.95 | Caterpillar 8-K: fourth-quarter 2024 results release | 2.00 | -0.27 | 1.17x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2025-03-07 | $350.30 | Caterpillar 8-K: fourth-quarter 2024 results release | 2.00 | -0.31 | 1.23x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2025-03-14 | $339.64 | Caterpillar 8-K: fourth-quarter 2024 results release | 2.00 | -0.25 | 1.13x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2025-03-21 | $335.78 | Caterpillar 8-K: fourth-quarter 2024 results release | 2.00 | -0.22 | 1.09x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2025-03-28 | $329.69 | Caterpillar 8-K: fourth-quarter 2024 results release | 2.00 | -0.19 | 1.04x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2025-04-04 | $288.08 | Caterpillar 8-K: fourth-quarter 2024 results release | 2.00 | +0.06 | 0.73x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2025-04-11 | $293.45 | Caterpillar 8-K: fourth-quarter 2024 results release | 2.00 | +0.02 | 0.77x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2025-04-17 | $294.25 | Caterpillar 8-K: fourth-quarter 2024 results release | 2.00 | +0.01 | 0.77x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2025-04-25 | $306.45 | Caterpillar 8-K: fourth-quarter 2024 results release | 2.00 | -0.07 | 0.86x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2025-05-01 | $313.96 | Caterpillar 8-K: first-quarter 2025 results release | 1.50 | -0.66 | 0.91x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 5/8 RICH | - | - | - | - |
-| 2025-05-09 | $325.62 | Caterpillar 8-K: first-quarter 2025 results release | 1.50 | -0.71 | 1.01x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | - | - | - | - |
-| 2025-05-16 | $353.58 | Caterpillar 8-K: first-quarter 2025 results release | 1.50 | -0.86 | 1.27x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
-| 2025-05-23 | $343.39 | Caterpillar 8-K: first-quarter 2025 results release | 1.50 | -0.81 | 1.17x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
-| 2025-05-30 | $348.03 | Caterpillar 8-K: first-quarter 2025 results release | 1.50 | -0.83 | 1.21x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
-| 2025-06-06 | $353.35 | Caterpillar 8-K: first-quarter 2025 results release | 1.50 | -0.86 | 1.27x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
-| 2025-06-13 | $357.05 | Caterpillar 8-K: first-quarter 2025 results release | 1.50 | -0.87 | 1.31x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
-| 2025-06-20 | $360.52 | Caterpillar 8-K: first-quarter 2025 results release | 1.50 | -0.89 | 1.35x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
-| 2025-06-27 | $384.71 | Caterpillar 8-K: first-quarter 2025 results release | 1.50 | -1.10 | 1.66x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
-| 2025-07-03 | $397.86 | Caterpillar 8-K: first-quarter 2025 results release | 1.50 | -1.16 | 1.87x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
-| 2025-07-11 | $405.92 | Caterpillar 8-K: first-quarter 2025 results release | 1.50 | -1.19 | 2.01x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
-| 2025-07-18 | $413.71 | Caterpillar 8-K: first-quarter 2025 results release | 1.50 | -1.23 | 2.12x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
-| 2025-07-25 | $433.75 | Caterpillar 8-K: first-quarter 2025 results release | 1.50 | -1.32 | 2.59x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
-| 2025-08-01 | $428.69 | Caterpillar 8-K: first-quarter 2025 results release | 1.50 | -1.29 | 2.46x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
-| 2025-08-06 | $427.72 | Caterpillar 8-K: second-quarter 2025 results release | 1.85 | -0.89 | 2.43x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
-| 2025-08-15 | $407.79 | Caterpillar 8-K: second-quarter 2025 results release | 1.85 | -0.79 | 2.01x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
-| 2025-08-22 | $435.67 | Caterpillar 8-K: second-quarter 2025 results release | 1.85 | -0.92 | 2.58x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
-| 2025-08-29 | $419.04 | Caterpillar 8-K: second-quarter 2025 results release | 1.85 | -0.84 | 2.19x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
-| 2025-09-05 | $423.08 | Caterpillar 8-K: second-quarter 2025 results release | 1.85 | -0.86 | 2.28x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
-| 2025-09-12 | $431.52 | Caterpillar 8-K: second-quarter 2025 results release | 1.85 | -0.91 | 2.47x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
-| 2025-09-19 | $466.54 | Caterpillar 8-K: second-quarter 2025 results release | 1.85 | -1.05 | 3.63x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
-| 2025-09-26 | $465.76 | Caterpillar 8-K: second-quarter 2025 results release | 1.85 | -1.05 | 3.59x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
-| 2025-10-03 | $497.85 | Caterpillar 8-K: second-quarter 2025 results release | 1.85 | -1.16 | 5.36x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
-| 2025-10-10 | $491.30 | Caterpillar 8-K: second-quarter 2025 results release | 1.85 | -1.14 | 4.87x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
-| 2025-10-17 | $527.08 | Caterpillar 8-K: second-quarter 2025 results release | 1.85 | -1.34 | 9.25x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
-| 2025-10-24 | $522.73 | Caterpillar 8-K: second-quarter 2025 results release | 1.85 | -1.22 | 7.94x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
-| 2025-10-30 | $583.15 | Caterpillar 8-K: third-quarter 2025 results release | 2.20 | -1.05 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
-| 2025-11-07 | $563.10 | Caterpillar 8-K: third-quarter 2025 results release | 2.20 | -1.01 | 32.15x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
+| 2023-01-06 | $248.86 | Caterpillar 8-K: third-quarter 2022 results release | 3.00 | +0.43 | 2.69x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +50.5% | -6.4pp | +41.2% | ✗ |
+| 2023-01-13 | $258.46 | Caterpillar 8-K: third-quarter 2022 results release | 3.00 | +0.35 | 3.22x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +44.3% | -5.0pp | +36.5% | ✗ |
+| 2023-01-20 | $249.71 | Caterpillar 8-K: third-quarter 2022 results release | 3.00 | +0.43 | 2.73x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +58.3% | +3.9pp | +41.9% | ✗ |
+| 2023-01-27 | $264.54 | Caterpillar 8-K: third-quarter 2022 results release | 3.00 | +0.29 | 3.65x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +53.3% | +2.2pp | +34.7% | ✗ |
+| 2023-02-01 | $249.54 | Caterpillar 8-K: fourth-quarter 2022 results release | 2.55 | +0.52 | 1.36x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +53.1% | +3.3pp | +43.3% | ✓ |
+| 2023-02-10 | $247.67 | Caterpillar 8-K: fourth-quarter 2022 results release | 2.55 | +0.53 | 1.33x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +50.9% | -0.6pp | +44.8% | ✓ |
+| 2023-02-17 | $247.79 | Caterpillar 8-K: fourth-quarter 2022 results release | 2.55 | +0.54 | 1.32x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +46.9% | -6.2pp | +45.0% | ✓ |
+| 2023-02-24 | $236.17 | Caterpillar 8-K: fourth-quarter 2022 results release | 2.55 | +0.66 | 1.15x | WATCHLIST | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +48.0% | -6.1pp | +52.3% | ✓ |
+| 2023-03-03 | $255.31 | Caterpillar 8-K: fourth-quarter 2022 results release | 2.55 | +0.37 | 1.44x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +34.2% | -13.6pp | +41.0% | ✓ |
+| 2023-03-10 | $227.01 | Caterpillar 8-K: fourth-quarter 2022 results release | 2.55 | +0.76 | 1.03x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +56.8% | +7.9pp | +58.6% | ✓ |
+| 2023-03-17 | $215.01 | Caterpillar 8-K: fourth-quarter 2022 results release | 2.55 | +0.88 | 0.89x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +64.3% | +15.8pp | +67.4% | ✓ |
+| 2023-03-24 | $217.01 | Caterpillar 8-K: fourth-quarter 2022 results release | 2.55 | +0.86 | 0.92x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +62.3% | +13.8pp | +65.7% | ✓ |
+| 2023-03-31 | $228.84 | Caterpillar 8-K: fourth-quarter 2022 results release | 2.55 | +0.74 | 1.05x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +48.7% | +9.6pp | +57.0% | ✓ |
+| 2023-04-06 | $209.17 | Caterpillar 8-K: fourth-quarter 2022 results release | 2.55 | +0.94 | 0.83x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +42.8% | +15.9pp | +71.2% | ✓ |
+| 2023-04-14 | $223.68 | Caterpillar 8-K: fourth-quarter 2022 results release | 2.55 | +0.80 | 0.99x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +38.0% | +4.0pp | +59.3% | ✓ |
+| 2023-04-21 | $220.27 | Caterpillar 8-K: fourth-quarter 2022 results release | 2.55 | +0.83 | 0.95x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +34.2% | +6.2pp | +61.2% | ✓ |
+| 2023-04-28 | $218.80 | Caterpillar 8-K: first-quarter 2023 results release | 3.00 | +1.20 | 1.08x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +45.3% | +9.5pp | +61.9% | ✓ |
+| 2023-05-05 | $215.09 | Caterpillar 8-K: first-quarter 2023 results release | 3.00 | +1.26 | 1.03x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +55.3% | +15.3pp | +64.4% | ✓ |
+| 2023-05-12 | $209.54 | Caterpillar 8-K: first-quarter 2023 results release | 3.00 | +1.33 | 0.96x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +68.7% | +23.6pp | +68.6% | ✓ |
+| 2023-05-19 | $214.78 | Caterpillar 8-K: first-quarter 2023 results release | 3.00 | +1.27 | 1.02x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +69.2% | +23.8pp | +64.4% | ✓ |
+| 2023-05-26 | $211.80 | Caterpillar 8-K: first-quarter 2023 results release | 3.00 | +1.30 | 0.98x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +67.2% | +26.1pp | +66.7% | ✓ |
+| 2023-06-02 | $226.63 | Caterpillar 8-K: first-quarter 2023 results release | 3.00 | +1.12 | 1.19x | WATCHLIST | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | +56.9% | +15.1pp | +55.8% | ✓ |
+| 2023-06-09 | $235.03 | Caterpillar 8-K: first-quarter 2023 results release | 3.00 | +1.03 | 1.32x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +57.0% | +14.2pp | +50.4% | ✓ |
+| 2023-06-16 | $245.27 | Caterpillar 8-K: first-quarter 2023 results release | 3.00 | +0.94 | 1.51x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +52.2% | +12.3pp | +44.4% | ✓ |
+| 2023-06-23 | $234.44 | Caterpillar 8-K: first-quarter 2023 results release | 3.00 | +1.03 | 1.31x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +60.8% | +19.1pp | +51.3% | ✗ |
+| 2023-06-30 | $246.05 | Caterpillar 8-K: first-quarter 2023 results release | 3.00 | +0.92 | 1.53x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +62.2% | +19.6pp | +44.6% | ✗ |
+| 2023-07-07 | $245.18 | Caterpillar 8-K: first-quarter 2023 results release | 3.00 | +0.94 | 1.51x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +64.1% | +19.4pp | +45.6% | ✗ |
+| 2023-07-14 | $255.62 | Caterpillar 8-K: first-quarter 2023 results release | 3.00 | +0.74 | 1.74x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +63.0% | +20.8pp | +40.2% | ✗ |
+| 2023-07-21 | $257.65 | Caterpillar 8-K: first-quarter 2023 results release | 3.00 | +0.73 | 1.76x | AVOID | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +63.4% | +21.3pp | +39.5% | ✗ |
+| 2023-07-28 | $260.43 | Caterpillar 8-K: first-quarter 2023 results release | 3.00 | +0.71 | 1.82x | AVOID | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +70.5% | +28.0pp | +38.7% | ✗ |
+| 2023-08-02 | $287.57 | Caterpillar 8-K: second-quarter 2023 results release | 3.00 | +0.62 | 1.98x | AVOID | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +52.9% | +11.7pp | +26.2% | ✓ |
+| 2023-08-11 | $285.22 | Caterpillar 8-K: second-quarter 2023 results release | 3.00 | +0.63 | 1.92x | AVOID | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +47.1% | +1.3pp | +28.0% | ✓ |
+| 2023-08-18 | $273.80 | Caterpillar 8-K: second-quarter 2023 results release | 3.00 | +0.73 | 1.64x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +54.7% | +4.2pp | +33.8% | ✓ |
+| 2023-08-25 | $272.56 | Caterpillar 8-K: second-quarter 2023 results release | 3.00 | +0.74 | 1.62x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +62.7% | +13.5pp | +35.0% | ✓ |
+| 2023-09-01 | $286.25 | Caterpillar 8-K: second-quarter 2023 results release | 3.00 | +0.63 | 1.92x | AVOID | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +50.2% | +4.2pp | +29.0% | ✓ |
+| 2023-09-08 | $282.28 | Caterpillar 8-K: second-quarter 2023 results release | 3.00 | +0.66 | 1.82x | AVOID | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +53.7% | +4.9pp | +31.4% | ✓ |
+| 2023-09-15 | $279.15 | Caterpillar 8-K: second-quarter 2023 results release | 3.00 | +0.68 | 1.75x | AVOID | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +60.1% | +8.3pp | +33.5% | ✓ |
+| 2023-09-22 | $273.06 | Caterpillar 8-K: second-quarter 2023 results release | 3.00 | +0.74 | 1.60x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +76.9% | +18.7pp | +37.2% | ✗ |
+| 2023-09-29 | $273.00 | Caterpillar 8-K: second-quarter 2023 results release | 3.00 | +0.74 | 1.60x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +76.8% | +18.2pp | +37.9% | ✗ |
+| 2023-10-06 | $266.04 | Caterpillar 8-K: second-quarter 2023 results release | 3.00 | +0.80 | 1.48x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +90.4% | +30.7pp | +42.2% | ✗ |
+| 2023-10-13 | $267.94 | Caterpillar 8-K: second-quarter 2023 results release | 3.00 | +0.79 | 1.49x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +92.5% | +35.5pp | +41.9% | ✗ |
+| 2023-10-20 | $249.20 | Caterpillar 8-K: second-quarter 2023 results release | 3.00 | +1.08 | 1.20x | WATCHLIST | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | +117.7% | +54.9pp | +53.7% | ✓ |
+| 2023-10-27 | $238.56 | Caterpillar 8-K: second-quarter 2023 results release | 3.00 | +1.19 | 1.06x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +125.7% | +55.3pp | +61.7% | ✓ |
+| 2023-11-01 | $231.83 | Caterpillar 8-K: third-quarter 2023 results release | 3.00 | +0.98 | 1.50x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +153.9% | +89.1pp | +67.7% | ✗ |
+| 2023-11-10 | $239.68 | Caterpillar 8-K: third-quarter 2023 results release | 3.00 | +0.91 | 1.67x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +142.9% | +85.0pp | +63.9% | ✗ |
+| 2023-11-17 | $253.07 | Caterpillar 8-K: third-quarter 2023 results release | 3.00 | +0.69 | 2.04x | AVOID | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +122.6% | +71.8pp | +56.6% | ✗ |
+| 2023-11-24 | $247.36 | Caterpillar 8-K: third-quarter 2023 results release | 3.00 | +0.85 | 1.87x | AVOID | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +130.8% | +80.8pp | +61.5% | ✗ |
+| 2023-12-01 | $256.76 | Caterpillar 8-K: third-quarter 2023 results release | 3.00 | +0.66 | 2.16x | AVOID | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +125.6% | +74.3pp | +56.6% | ✗ |
+| 2023-12-08 | $259.50 | Caterpillar 8-K: third-quarter 2023 results release | 3.00 | +0.63 | 2.26x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +134.2% | +82.6pp | +56.5% | ✗ |
+| 2023-12-15 | $285.74 | Caterpillar 8-K: third-quarter 2023 results release | 3.00 | +0.41 | 3.59x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +110.3% | +62.7pp | +43.6% | ✗ |
+| 2023-12-22 | $290.36 | Caterpillar 8-K: third-quarter 2023 results release | 3.00 | +0.37 | 3.95x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +104.5% | +56.8pp | +42.8% | ✗ |
+| 2023-12-29 | $295.67 | Caterpillar 8-K: third-quarter 2023 results release | 3.00 | +0.34 | 4.27x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +99.5% | +51.8pp | +41.4% | ✗ |
+| 2024-01-05 | $288.93 | Caterpillar 8-K: third-quarter 2023 results release | 3.00 | +0.40 | 3.71x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +117.1% | +67.1pp | +45.9% | ✗ |
+| 2024-01-12 | $290.41 | Caterpillar 8-K: third-quarter 2023 results release | 3.00 | +0.38 | 3.82x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +120.7% | +71.9pp | +46.9% | ✗ |
+| 2024-01-19 | $285.28 | Caterpillar 8-K: third-quarter 2023 results release | 3.00 | +0.42 | 3.45x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +130.2% | +83.9pp | +51.1% | ✗ |
+| 2024-01-26 | $299.43 | Caterpillar 8-K: third-quarter 2023 results release | 3.00 | +0.32 | 4.48x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +116.2% | +71.1pp | +45.5% | ✗ |
+| 2024-02-02 | $315.09 | Caterpillar 8-K: third-quarter 2023 results release | 3.00 | +0.21 | 6.68x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +122.9% | +79.3pp | +40.0% | ✗ |
+| 2024-02-06 | $322.72 | Caterpillar 8-K: fourth-quarter 2023 results release | 2.80 | +0.62 | 1.24x | WATCHLIST | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | +128.6% | +85.9pp | +38.3% | ✓ |
+| 2024-02-16 | $321.91 | Caterpillar 8-K: fourth-quarter 2023 results release | 2.80 | +0.59 | 1.28x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +144.1% | +104.7pp | +41.3% | ✗ |
+| 2024-02-23 | $323.88 | Caterpillar 8-K: fourth-quarter 2023 results release | 2.80 | +0.57 | 1.30x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +137.1% | +99.9pp | +42.8% | ✗ |
+| 2024-03-01 | $336.70 | Caterpillar 8-K: fourth-quarter 2023 results release | 2.80 | +0.50 | 1.48x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +124.0% | +87.5pp | +39.5% | ✗ |
+| 2024-03-08 | $339.19 | Caterpillar 8-K: fourth-quarter 2023 results release | 2.80 | +0.49 | 1.51x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +104.1% | +69.9pp | +40.7% | ✗ |
+| 2024-03-15 | $346.97 | Caterpillar 8-K: fourth-quarter 2023 results release | 2.80 | +0.44 | 1.63x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +103.3% | +70.9pp | +39.7% | ✗ |
+| 2024-03-22 | $358.11 | Caterpillar 8-K: fourth-quarter 2023 results release | 2.80 | +0.28 | 1.82x | AVOID | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +93.3% | +66.1pp | +37.3% | ✗ |
+| 2024-03-28 | $366.43 | Caterpillar 8-K: fourth-quarter 2023 results release | 2.80 | +0.24 | 1.99x | AVOID | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +92.9% | +68.9pp | +36.2% | ✗ |
+| 2024-04-05 | $379.30 | Caterpillar 8-K: fourth-quarter 2023 results release | 2.80 | +0.18 | 2.28x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +92.1% | +62.8pp | +33.4% | ✗ |
+| 2024-04-12 | $365.63 | Caterpillar 8-K: fourth-quarter 2023 results release | 2.80 | +0.25 | 1.97x | AVOID | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +119.4% | +83.5pp | +41.0% | ✗ |
+| 2024-04-19 | $354.66 | Caterpillar 8-K: fourth-quarter 2023 results release | 2.80 | +0.41 | 1.76x | AVOID | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +126.9% | +80.6pp | +47.9% | ✗ |
+| 2024-04-26 | $343.38 | Caterpillar 8-K: first-quarter 2024 results release | 2.45 | +0.09 | 1.57x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +145.3% | +102.0pp | +55.7% | ✗ |
+| 2024-05-03 | $336.75 | Caterpillar 8-K: first-quarter 2024 results release | 2.45 | +0.13 | 1.48x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +167.7% | +123.9pp | +62.0% | ✗ |
+| 2024-05-10 | $354.79 | Caterpillar 8-K: first-quarter 2024 results release | 2.45 | +0.03 | 1.76x | AVOID | TOO MUCH CYCLE RISK (RICH) | 5/8 RICH | +156.2% | +111.8pp | +57.0% | ✗ |
+| 2024-05-17 | $356.27 | Caterpillar 8-K: first-quarter 2024 results release | 2.45 | +0.02 | 1.79x | AVOID | TOO MUCH CYCLE RISK (RICH) | 5/8 RICH | +152.6% | +110.3pp | +59.5% | ✗ |
+| 2024-05-24 | $348.90 | Caterpillar 8-K: first-quarter 2024 results release | 2.45 | +0.06 | 1.66x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +155.5% | +112.0pp | +65.8% | ✗ |
+| 2024-05-31 | $338.52 | Caterpillar 8-K: first-quarter 2024 results release | 2.45 | +0.13 | 1.50x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +162.2% | +116.0pp | +73.5% | ✗ |
+| 2024-06-07 | $328.94 | Caterpillar 8-K: first-quarter 2024 results release | 2.45 | +0.19 | 1.37x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +178.5% | +137.6pp | +82.0% | ✗ |
+| 2024-06-14 | $321.47 | Caterpillar 8-K: first-quarter 2024 results release | 2.45 | +0.23 | 1.28x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +186.9% | +147.5pp | +89.6% | ✗ |
+| 2024-06-21 | $327.84 | Caterpillar 8-K: first-quarter 2024 results release | 2.45 | +0.19 | 1.36x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +204.3% | +164.4pp | +88.8% | ✗ |
+| 2024-06-28 | $333.10 | Caterpillar 8-K: first-quarter 2024 results release | 2.45 | +0.16 | 1.43x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +203.0% | +166.3pp | +89.6% | ✗ |
+| 2024-07-05 | $328.35 | Caterpillar 8-K: first-quarter 2024 results release | 2.45 | +0.19 | 1.36x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +197.0% | +160.1pp | +95.4% | ✗ |
+| 2024-07-12 | $335.59 | Caterpillar 8-K: first-quarter 2024 results release | 2.45 | +0.14 | 1.46x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +187.3% | +149.8pp | +94.4% | ✗ |
+| 2024-07-19 | $347.63 | Caterpillar 8-K: first-quarter 2024 results release | 2.45 | +0.08 | 1.64x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +156.6% | +118.5pp | +90.6% | ✗ |
+| 2024-07-26 | $350.48 | Caterpillar 8-K: first-quarter 2024 results release | 2.45 | +0.06 | 1.69x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +157.0% | +118.5pp | +91.6% | ✗ |
+| 2024-08-02 | $320.87 | Caterpillar 8-K: first-quarter 2024 results release | 2.45 | +0.23 | 1.27x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +157.6% | +114.7pp | +111.8% | ✗ |
+| 2024-08-07 | $325.80 | Caterpillar 8-K: second-quarter 2024 results release | 2.00 | -0.27 | 1.33x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +162.2% | +110.2pp | +110.9% | ✗ |
+| 2024-08-16 | $343.48 | Caterpillar 8-K: second-quarter 2024 results release | 2.00 | -0.38 | 1.58x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +152.8% | +110.1pp | +102.9% | ✗ |
+| 2024-08-23 | $348.41 | Caterpillar 8-K: second-quarter 2024 results release | 2.00 | -0.40 | 1.65x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +141.0% | +102.2pp | +102.4% | ✗ |
+| 2024-08-30 | $356.10 | Caterpillar 8-K: second-quarter 2024 results release | 2.00 | -0.44 | 1.79x | AVOID | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +128.1% | +89.0pp | +100.2% | ✗ |
+| 2024-09-06 | $329.36 | Caterpillar 8-K: second-quarter 2024 results release | 2.00 | -0.29 | 1.37x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +150.7% | +105.5pp | +118.3% | ✗ |
+| 2024-09-13 | $345.31 | Caterpillar 8-K: second-quarter 2024 results release | 2.00 | -0.38 | 1.60x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +140.5% | +101.9pp | +110.4% | ✗ |
+| 2024-09-20 | $368.82 | Caterpillar 8-K: second-quarter 2024 results release | 2.00 | -0.60 | 2.04x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +122.6% | +85.9pp | +98.8% | ✗ |
+| 2024-09-27 | $391.08 | Caterpillar 8-K: second-quarter 2024 results release | 2.00 | -0.71 | 2.61x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +113.1% | +75.5pp | +89.3% | ✗ |
+| 2024-10-04 | $397.09 | Caterpillar 8-K: second-quarter 2024 results release | 2.00 | -0.74 | 2.80x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +115.9% | +79.0pp | +88.1% | ✗ |
+| 2024-10-11 | $402.02 | Caterpillar 8-K: second-quarter 2024 results release | 2.00 | -0.77 | 2.97x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +102.1% | +65.2pp | +87.5% | ✗ |
+| 2024-10-18 | $393.86 | Caterpillar 8-K: second-quarter 2024 results release | 2.00 | -0.72 | 2.69x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +88.6% | +55.5pp | +92.5% | ✗ |
+| 2024-10-25 | $385.97 | Caterpillar 8-K: second-quarter 2024 results release | 2.00 | -0.68 | 2.46x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +80.7% | +46.9pp | +97.5% | ✗ |
+| 2024-10-31 | $376.20 | Caterpillar 8-K: third-quarter 2024 results release | 2.00 | -0.64 | 2.21x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +68.8% | +33.2pp | +103.0% | ✗ |
+| 2024-11-08 | $393.37 | Caterpillar 8-K: third-quarter 2024 results release | 2.00 | -0.72 | 2.61x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +45.1% | +19.7pp | +94.5% | ✗ |
+| 2024-11-15 | $384.07 | Caterpillar 8-K: third-quarter 2024 results release | 2.00 | -0.67 | 2.35x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | +99.7% | - |
+| 2024-11-22 | $397.49 | Caterpillar 8-K: third-quarter 2024 results release | 2.00 | -0.74 | 2.74x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +94.1% | - |
+| 2024-11-29 | $406.11 | Caterpillar 8-K: third-quarter 2024 results release | 2.00 | -0.78 | 3.04x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +90.8% | - |
+| 2024-12-06 | $395.03 | Caterpillar 8-K: third-quarter 2024 results release | 2.00 | -0.72 | 2.66x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +97.2% | - |
+| 2024-12-13 | $380.51 | Caterpillar 8-K: third-quarter 2024 results release | 2.00 | -0.65 | 2.26x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | +105.7% | - |
+| 2024-12-20 | $366.04 | Caterpillar 8-K: third-quarter 2024 results release | 2.00 | -0.58 | 1.94x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | +115.1% | - |
+| 2024-12-27 | $364.86 | Caterpillar 8-K: third-quarter 2024 results release | 2.00 | -0.57 | 1.92x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | +116.8% | - |
+| 2025-01-03 | $363.79 | Caterpillar 8-K: third-quarter 2024 results release | 2.00 | -0.47 | 1.90x | AVOID | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | - | - | +118.5% | - |
+| 2025-01-10 | $351.00 | Caterpillar 8-K: third-quarter 2024 results release | 2.00 | -0.40 | 1.67x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | +127.7% | - |
+| 2025-01-17 | $386.02 | Caterpillar 8-K: third-quarter 2024 results release | 2.00 | -0.57 | 2.40x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | +108.0% | - |
+| 2025-01-24 | $407.63 | Caterpillar 8-K: third-quarter 2024 results release | 2.00 | -0.79 | 3.10x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +97.8% | - |
+| 2025-01-31 | $371.44 | Caterpillar 8-K: fourth-quarter 2024 results release | 2.00 | -0.56 | 1.96x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | +118.1% | - |
+| 2025-02-07 | $363.88 | Caterpillar 8-K: fourth-quarter 2024 results release | 2.00 | -0.42 | 1.82x | AVOID | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | - | - | +123.5% | - |
+| 2025-02-14 | $353.32 | Caterpillar 8-K: fourth-quarter 2024 results release | 2.00 | -0.32 | 1.27x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | +130.6% | - |
+| 2025-02-21 | $340.04 | Caterpillar 8-K: fourth-quarter 2024 results release | 2.00 | -0.25 | 1.13x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | +139.9% | - |
+| 2025-02-28 | $343.95 | Caterpillar 8-K: fourth-quarter 2024 results release | 2.00 | -0.27 | 1.17x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | +137.7% | - |
+| 2025-03-07 | $350.30 | Caterpillar 8-K: fourth-quarter 2024 results release | 2.00 | -0.31 | 1.23x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | +134.2% | - |
+| 2025-03-14 | $339.64 | Caterpillar 8-K: fourth-quarter 2024 results release | 2.00 | -0.25 | 1.13x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | +142.6% | - |
+| 2025-03-21 | $335.78 | Caterpillar 8-K: fourth-quarter 2024 results release | 2.00 | -0.22 | 1.09x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | +146.5% | - |
+| 2025-03-28 | $329.69 | Caterpillar 8-K: fourth-quarter 2024 results release | 2.00 | -0.19 | 1.04x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | +152.2% | - |
+| 2025-04-04 | $288.08 | Caterpillar 8-K: fourth-quarter 2024 results release | 2.00 | +0.06 | 0.73x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | +189.8% | - |
+| 2025-04-11 | $293.45 | Caterpillar 8-K: fourth-quarter 2024 results release | 2.00 | +0.02 | 0.77x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | +185.4% | - |
+| 2025-04-17 | $294.25 | Caterpillar 8-K: fourth-quarter 2024 results release | 2.00 | +0.01 | 0.77x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | +185.2% | - |
+| 2025-04-25 | $306.45 | Caterpillar 8-K: fourth-quarter 2024 results release | 2.00 | -0.07 | 0.86x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +174.2% | - |
+| 2025-05-01 | $313.96 | Caterpillar 8-K: first-quarter 2025 results release | 1.50 | -0.66 | 0.91x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 5/8 RICH | - | - | +167.5% | - |
+| 2025-05-09 | $325.62 | Caterpillar 8-K: first-quarter 2025 results release | 1.50 | -0.71 | 1.01x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | - | - | +157.2% | - |
+| 2025-05-16 | $353.58 | Caterpillar 8-K: first-quarter 2025 results release | 1.50 | -0.86 | 1.27x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +136.1% | - |
+| 2025-05-23 | $343.39 | Caterpillar 8-K: first-quarter 2025 results release | 1.50 | -0.81 | 1.17x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +142.7% | - |
+| 2025-05-30 | $348.03 | Caterpillar 8-K: first-quarter 2025 results release | 1.50 | -0.83 | 1.21x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +138.8% | - |
+| 2025-06-06 | $353.35 | Caterpillar 8-K: first-quarter 2025 results release | 1.50 | -0.86 | 1.27x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +134.2% | - |
+| 2025-06-13 | $357.05 | Caterpillar 8-K: first-quarter 2025 results release | 1.50 | -0.87 | 1.31x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +130.8% | - |
+| 2025-06-20 | $360.52 | Caterpillar 8-K: first-quarter 2025 results release | 1.50 | -0.89 | 1.35x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +127.2% | - |
+| 2025-06-27 | $384.71 | Caterpillar 8-K: first-quarter 2025 results release | 1.50 | -1.10 | 1.66x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +110.3% | - |
+| 2025-07-03 | $397.86 | Caterpillar 8-K: first-quarter 2025 results release | 1.50 | -1.16 | 1.87x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +101.1% | - |
+| 2025-07-11 | $405.92 | Caterpillar 8-K: first-quarter 2025 results release | 1.50 | -1.19 | 2.01x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +95.0% | - |
+| 2025-07-18 | $413.71 | Caterpillar 8-K: first-quarter 2025 results release | 1.50 | -1.23 | 2.12x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +89.6% | - |
+| 2025-07-25 | $433.75 | Caterpillar 8-K: first-quarter 2025 results release | 1.50 | -1.32 | 2.59x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +79.3% | - |
+| 2025-08-01 | $428.69 | Caterpillar 8-K: first-quarter 2025 results release | 1.50 | -1.29 | 2.46x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +80.7% | - |
+| 2025-08-06 | $427.72 | Caterpillar 8-K: second-quarter 2025 results release | 1.85 | -0.89 | 2.43x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +79.9% | - |
+| 2025-08-15 | $407.79 | Caterpillar 8-K: second-quarter 2025 results release | 1.85 | -0.79 | 2.01x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +86.9% | - |
+| 2025-08-22 | $435.67 | Caterpillar 8-K: second-quarter 2025 results release | 1.85 | -0.92 | 2.58x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +73.4% | - |
+| 2025-08-29 | $419.04 | Caterpillar 8-K: second-quarter 2025 results release | 1.85 | -0.84 | 2.19x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +79.0% | - |
+| 2025-09-05 | $423.08 | Caterpillar 8-K: second-quarter 2025 results release | 1.85 | -0.86 | 2.28x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +76.1% | - |
+| 2025-09-12 | $431.52 | Caterpillar 8-K: second-quarter 2025 results release | 1.85 | -0.91 | 2.47x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +71.1% | - |
+| 2025-09-19 | $466.54 | Caterpillar 8-K: second-quarter 2025 results release | 1.85 | -1.05 | 3.63x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +56.8% | - |
+| 2025-09-26 | $465.76 | Caterpillar 8-K: second-quarter 2025 results release | 1.85 | -1.05 | 3.59x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +54.4% | - |
+| 2025-10-03 | $497.85 | Caterpillar 8-K: second-quarter 2025 results release | 1.85 | -1.16 | 5.36x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +40.7% | - |
+| 2025-10-10 | $491.30 | Caterpillar 8-K: second-quarter 2025 results release | 1.85 | -1.14 | 4.87x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +37.0% | - |
+| 2025-10-17 | $527.08 | Caterpillar 8-K: second-quarter 2025 results release | 1.85 | -1.34 | 9.25x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +23.3% | - |
+| 2025-10-24 | $522.73 | Caterpillar 8-K: second-quarter 2025 results release | 1.85 | -1.22 | 7.94x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +19.4% | - |
+| 2025-10-30 | $583.15 | Caterpillar 8-K: third-quarter 2025 results release | 2.20 | -1.05 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +1.3% | - |
+| 2025-11-07 | $563.10 | Caterpillar 8-K: third-quarter 2025 results release | 2.20 | -1.01 | 32.15x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +5.7% | - |
 | 2025-11-14 | $554.03 | Caterpillar 8-K: third-quarter 2025 results release | 2.20 | -0.98 | 17.43x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
 | 2025-11-21 | $550.43 | Caterpillar 8-K: third-quarter 2025 results release | 2.20 | -0.98 | 15.26x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
 | 2025-11-28 | $575.76 | Caterpillar 8-K: third-quarter 2025 results release | 2.20 | -1.03 | 93.85x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
