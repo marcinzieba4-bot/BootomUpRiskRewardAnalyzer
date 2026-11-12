@@ -13696,7 +13696,10 @@ ids, titles, notes, texts and figures (four significant digits or more) of every
 none before its publication (0 of 8,326 pairs, after dropping 552 strings an earlier fact already carries; two numeric matches are
 coincidences: 2008-07-25's 52-week high of $31.42 and 2008-08-15's close of $21.98 equal the pre-tax margins of Q3 2009 and Q3 2008).
 Rebuilding the 2008 dates of ACN, UNP, LOW, AAPL, NKE, PEP, MSFT, XOM, SHW, WMT, RCL, MAR, BKR, PFE, CMCSA and CAT and the 2009 dates of
-AVGO changes nothing (870 models). All 105 dates pass `retro_tool run`; the 7 dates from 2008-01-04 to 2008-02-15 draw one warning (2011,
+AVGO changes nothing (870 models). The firewall (every kind of fact planted after the cutoff with absurd values, including absurd
+full-year actuals for the year after the latest vintage, a later print restating every year of the history, a later guide with every
+guided field, and prices from the cutoff multiplied by 10) changes no model and leaves no planted text at any of the 15 cutoffs above (1
+to 105 dates each). All 105 dates pass `retro_tool run`; the 7 dates from 2008-01-04 to 2008-02-15 draw one warning (2011,
 the year the FY2006 10-K gives for the expiry of PLAVIX's composition of matter patent, in the durability "why").
 
 Seen in the build (method behaviour, not tuned):
