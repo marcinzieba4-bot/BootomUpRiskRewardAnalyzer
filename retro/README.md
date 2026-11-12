@@ -14148,6 +14148,19 @@ batches', all found). Decided on 2026-11-12, before any 2018-2021 outcome was co
   of the 2021 conference slides (a multi-year goal, the LOW, XOM and CAT rule), the debt exchanges and tenders, the Nektar collaboration
   (2018-02-14), and the officer, director, vote and bylaw filings. The 8-Ks from 2022 lie after the range.
 
+Controls: altering one value of each new print (its U.S./international split and its growth excluding foreign exchange, each Q4 print's
+full-year revenues and, where the year is kept, its full-year EPS), vintage (its last EPS in the history and its dividend) and guide (its
+GAAP EPS range, its non-GAAP range where it gives no GAAP one, its note where it gives neither, each dollar revenue guide and each
+revenue guide in words), rerun over the 235 dates from 2017-07-07 (the firewall below covers every earlier date), changes no date before
+its publication and changes the first weekly date on or after it: 76 of 79; the other 3 are inert, superseded before their year is
+current: the 8-K of 2019-01-03's FY2019 range (the Q4 2018 release restates it when FY2019 becomes current) and the FY2021 non-GAAP-only
+ranges of the Q4 2019 and Q3 2020 releases (the Q4 2020 release replaces them). A scan of the 732 models for the source ids, titles,
+texts and figures (four significant digits or more) of every fact finds 52 of 557,740 pairs before publication (after dropping 1,364
+strings an earlier fact already carries), none a leak: the 39 coincidences of 2008-2017 and FY_REVENUE_B of $22.85B (FY2017's $20.776B
+grown by Q3 2018's +10%) in the 13 models from 2018-10-26 to 2019-01-18, equal to Q1 2021's 22.85% pre-tax margin. The firewall (every kind of fact planted after the cutoff with
+absurd values, an excluded year and prices from the cutoff multiplied by 10) changes no model and leaves no planted text at any of the 24
+cutoffs above (523 to 732 dates each). All 209 dates pass `retro_tool run`, with no warning.
+
 Seen in the build (method behaviour, not tuned):
 - **2018: CHEAP on 15, FAIR on 34, RICH on 3** (BUY 10, ACCUMULATE 11, WATCHLIST 28, AVOID 3). The first five dates rest on FY17E $2.41
   (25.7-26.7x, 63rd-67th percentile): FAIR on two and RICH on three (Ratio B 1.70-1.92, the price deciding; the tax 8-K changes only the
