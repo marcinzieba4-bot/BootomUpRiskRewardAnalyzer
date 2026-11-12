@@ -20,6 +20,7 @@ and require byte-identical models. Restores the fact sheet and the price cache a
     python3 retro/tools/firewall.py 2008-07-01 PFE          # the PFE series in staging/retrospective
     python3 retro/tools/firewall.py 2008-07-01 CMCSA        # the CMCSA series in staging/retrospective
     python3 retro/tools/firewall.py 2008-07-01 CAT          # the CAT series in staging/retrospective
+    python3 retro/tools/firewall.py 2008-07-01 BMY          # the BMY series in staging/retrospective
 
 Plants a print, a history vintage, an event per live theme and a company name (UNP: also a guide and a
 dividend; LOW and AAPL: also a guide with every guided field; NKE: a guide in words, and futures orders on the last print before
@@ -57,7 +58,10 @@ and full-year actuals are absurd (for the year after the latest vintage before C
 a later vintage of the other kind
 with planted segment, normalization and theme-tail notes, a later withdrawal of every guided field (CAT 2018-2022), and a later guide
 with every guided
-field in both forms (dollar and growth ranges for sales and revenues and for profit per share, their bases, words and notes); every
+field in both forms (dollar and growth ranges for sales and revenues and for profit per share, their bases, words and notes); BMY: a
+print whose net sales, growth excluding foreign exchange, U.S. and international growth, margins, quarter EPS, raw figures and full-year
+actuals are absurd (for the year after the latest vintage before CUTOFF) and which restates every year of the history, and a later guide
+with every guided field (GAAP and non-GAAP EPS ranges, revenue words, a note); every
 fact sheet with a 'splits' list, SHW's from 2021-2023: a later split on the price data's next split date; a CLOUD event
 from a later 10-K, as for every live theme), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
@@ -87,7 +91,8 @@ OUTDIR = {"ACN": "archive/retrospective/ACN", "UNP": "staging/retrospective/UNP"
           "PEP": "staging/retrospective/PEP", "MSFT": "staging/retrospective/MSFT", "XOM": "staging/retrospective/XOM",
           "SHW": "staging/retrospective/SHW", "WMT": "staging/retrospective/WMT", "RCL": "staging/retrospective/RCL",
           "MAR": "staging/retrospective/MAR", "BKR": "staging/retrospective/BKR",
-          "PFE": "staging/retrospective/PFE", "CMCSA": "staging/retrospective/CMCSA", "CAT": "staging/retrospective/CAT"}[TICKER]
+          "PFE": "staging/retrospective/PFE", "CMCSA": "staging/retrospective/CMCSA", "CAT": "staging/retrospective/CAT",
+          "BMY": "staging/retrospective/BMY"}[TICKER]
 ARCHIVE = os.path.join(ROOT, OUTDIR)
 BUILDER = os.path.join(ROOT, "retro", f"build_{TICKER.lower()}.py")
 # absurd values for every field the builder reads from a print
@@ -185,6 +190,12 @@ PLANT = {"ACN": dict(quarter="Q9 FY99", revenue_lc=-60, margin_bp=-999, fy_eps_g
                      release_time="PLANTED",
                      raw=dict(rev_m=2, rev_prior_m=198, cos_m=1, cos_prior_m=1, pretax_m=-99, pretax_prior_m=99, us_m=1, us_prior_m=99,
                               intl_m=1, intl_prior_m=99, diluted_shares_m=1)),
+         "BMY": dict(quarter="Q1 2099", fy=2099, q=1, release="PLANTED", sales_b=0.01, sales_pct=-60.0, lc_pct=-60.0, lc_note="PLANTED",
+                     us_pct=-60.0, intl_pct=-60.0, gross_margin=1.0, gross_margin_bp=-999.0, pretax_margin=-50.0, pretax_margin_bp=-999.0,
+                     eps_q=0.01, eps_q_prior=9.99, eps_note="PLANTED", diluted_shares_m=1.0, next_print="PLANTED",
+                     cash_return_text="PLANTED", note="PLANTED", period_end="PLANTED", release_time="PLANTED",
+                     raw=dict(rev_m=2, rev_prior_m=198, cos_m=1, cos_prior_m=1, pretax_m=-99, pretax_prior_m=99, us_m=1, us_prior_m=99,
+                              intl_m=1, intl_prior_m=99, diluted_shares_m=1)),
          "CMCSA": dict(quarter="Q1 2099", fy=2099, q=1, release="PLANTED", sales_b=0.01, sales_pct=-60.0, video_pct=-60.0, ocf_margin=1.0,
                        ocf_margin_bp=-999.0, op_margin=-50.0, op_margin_bp=-999.0, capex_pct=99.0, capex_bp=9999.0, eps_q=0.01,
                        eps_q_prior=9.99, diluted_shares_m=1.0, next_print="PLANTED", cash_return_text="PLANTED", note="PLANTED",
@@ -223,6 +234,7 @@ GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -99
                "RCL": dict(note="PLANTED", fy_display="PLANTED", eps_guide_note="PLANTED", fy_rev={"ny": [-50, -40], "ny_cc": [-50, -40], "capacity": -50.0},
                            q_guide={"quarter": "Q4 2099", "ny": [-50, -40], "ny_cc": [-50, -40], "capacity": -50.0, "eps": [0.1, 0.2]}),
                "PFE": dict(rev_guide_usd_b=[0.1, 0.2], eps_adj=[0.1, 0.2], rev_label="PLANTED", note="PLANTED"),
+               "BMY": dict(eps_adj=[0.1, 0.2], rev_words="PLANTED", note="PLANTED"),
                "CMCSA": dict(rev_guide_pct=[-50, -40], rev_words="PLANTED", rev_label="PLANTED", note="PLANTED"),
                "CAT": dict(rev_guide_usd_b=[0.1, 0.2], rev_guide_pct=[-50, -40], rev_growth_base_b=0.01, rev_growth_base_note="PLANTED",
                            eps_growth=[-99, -98], eps_growth_base=0.01, eps_growth_base_note="PLANTED", eps_guide_note="PLANTED",
@@ -437,6 +449,15 @@ try:
                               "eps_q": -9.99, "diluted_shares_m": 1.0,
                               "fy_actual": {"eps_normalized": 0.01, "normalization_note": "PLANTED", "pretax_margin": -50.0,
                                             "pretax_margin_note": "PLANTED", "tax_rate": 0.99, "tax_note": "PLANTED"}}
+    if TICKER == "BMY":    # absurd full-year actuals on the planted print, for the year after the latest vintage before CUTOFF, and a
+                           # later print restating every year of the history (the 'restates' field, as for PFE)
+        v0 = max((x for x in f["history_vintages"] if x["published"] < cutoff), key=lambda x: x["published"])
+        y0 = max(int(y) for y in v0["eps_normalized"]) + 1
+        last["fy_actual"] = {"fy": y0, "fy_label": "FY99", "eps_normalized": 0.01, "revenue_usd_b": 0.01, "diluted_shares_m": 1.0,
+                             "normalization_note": "PLANTED", "gross_margin": 1.0, "pretax_margin": -50.0, "pretax_margin_note": "PLANTED",
+                             "sales_growth": -60.0, "us_pct": -60.0, "intl_pct": -60.0, "tax_rate": 0.99, "tax_note": "PLANTED"}
+        last["restates"] = {y: {"eps": 0.01, "revenue_usd_b": 0.01} for y in v0["eps_normalized"]}
+        last["restates_note"] = "PLANTED"
     if TICKER == "CMCSA":  # absurd full-year actuals on the planted print, for the year after the latest vintage before CUTOFF
         v0 = max((x for x in f["history_vintages"] if x["published"] < cutoff), key=lambda x: x["published"])
         y0 = max(int(y) for y in v0["eps_normalized"]) + 1

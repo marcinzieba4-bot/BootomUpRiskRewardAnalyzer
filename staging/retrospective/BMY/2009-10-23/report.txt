@@ -1,0 +1,149 @@
+
+════════════════════════════════════════════════════════════════════════
+  BMY  ·  Bristol-Myers Squibb Company  ·  $22.24  ·  RETROSPECTIVE as of 2009-10-23
+  Signal: ◉ BUY   Ratio B: 0.42x   Adj gap: +1.73  [UNDERVALUED]
+  Point-in-time: 12 sources, latest published 2009-10-23; latest print Q3 2009 (Oct 22)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2009E revenues, USD bn  →  FY2011E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2009E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  BioPharmaceuticals        $    19.0  $  19.0  $  20.5      +0.0      +1.5
+    +13.4% revenues in FY08
+  Mead Johnson              $     3.1  $   3.1  $   3.3      +0.0      +0.2
+    +12.1% revenues in FY08
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    22.1  $  22.1  $  23.8      +0.0      +1.7
+  FY2009E = FY08 $20.60B × (1 + 7.0%: Q3 2009 net sales growth ex-FX, applied to the year); split pro rata to FY08 segment net sales (8-K of 2009-04-28, the 2009 segments)
+  Q3 2009 (Oct 22): revenues $5.49B +4.4%; U.S. +9.2%; international -1.8%; gross margin 71.53% (+263.3bp);
+  pre-tax margin 31.42% (+943.6bp); EPS $0.48 vs $0.29
+  U.S. net sales $3.256B (+9.2%), international $2.231B (-1.8%), each against the year-ago quarter in the same release; net sales growth ex-FX +7% (7% excluding foreign exchange impact, as the release states)
+  FY09 guide (Q4 2008 release, Q1 2009 release, Q2 2009 release, Q3 2009 release): GAAP EPS $1.72-1.77; non-GAAP EPS $2.00-2.05 (shown only: it excludes upfront and milestone licensing payments, which recur); revenue in words only: 'mid single-digit revenue growth (high single digit growth excluding foreign exchange)'
+
+  FY2009E EPS check:  $22.1B × 26.6% pre-tax × (1−24.1%) ÷ 1.984B  =  $2.24  (FY2009E GAAP EPS from continuing operations, guide midpoint)
+  FY2011E BEAR check: $22.1B × 26.6% ÷ 2.004B  =  $2.22  (scenario $0.37)
+  FY2011E BULL check: $23.8B × 27.0% ÷ 2.004B  =  $2.43  (scenario $2.00)
+  Every 1pp of pre-tax margin ≈ $0.08 EPS ≈ $2/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  U.S. revenue growth                -22.0%   ≥-7.0%    ≥8.0%   ≥19.0%     +9.2%  ▲ BULL  ███░
+  International revenue growth       -15.0%   ≥-6.0%    ≥3.0%   ≥18.0%     -1.8%  ◦ BASE  ██░░
+  Revenue growth                     -19.0%   ≥-7.0%    ≥5.0%   ≥15.0%     +4.4%  ◦ BASE  ██░░
+  Gross margin change               -1030.0bp  ≥-550.0bp  ≥-70.0bp  ≥30.0bp  +263.3bp  ★ XBULL  ████
+  Pre-tax margin change             -3670.0bp  ≥-1830.0bp  ≥10.0bp  ≥810.0bp  +943.6bp  ★ XBULL  ████
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.80 / 4.00
+  Market composite:   1.55 / 4.00  (back-solved from $22 + 15% hurdle)
+  SCA adjustment:    +0.28  ·  EPP-distance adj +0.20  →  Adj composite 3.28  →  Gap +1.73  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY08 net sales +13.2% (U.S. +15.5%, international +10.1%), BioPharmaceuticals 86% of net sales; Q3 gross margin 71.53% (+263.3bp)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 12.7x FY09E vs a 21.5x 7.8-yr median (10th percentile of its own range)  (+0.50 × 25%  =  +0.125)
+    +  Growth vs own history: no FY09 revenue guide in numbers, Q3 2009 net sales growth ex-FX +7% vs a 5.3% 6-yr median  (+0.17 × 20%  =  +0.034)
+    +  FY08 year-end cash and marketable securities $8.27B, FY08 free cash flow $2.77B, dividend $1.24 a year, no shares repurchased in 2008 (FY2008 10-K)  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  U.S. revenue growth                  +9.2%    -22.0%  -31.2%  Generic entry as U.S. patents expire
+  International revenue growth         -1.8%    -15.0%  -13.2%  Price cuts, generics and currency abroad
+  Revenue growth                       +4.4%    -19.0%  -23.4%  Exclusivity losses outrun new products
+  Gross margin change               +263.3bp  -1030.0bp  -1293.3bp  Write-offs and mix raise cost of sales
+  Pre-tax margin change             +943.6bp  -3670.0bp  -4613.6bp  Charges and deleverage on falling sales
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$18  (model)  /  $5 (defined)
+  Bear probability (proxy model):  5.2%
+
+  KEY TRIGGER: U.S. revenue growth went from +12.0% (Q2 2009) to +9.2% (Q3 2009);
+  the bear case needs U.S. exclusivity losses that international growth (-1.8% now)
+  and the cost base no longer absorb. Exclusivity losses drive the decline, by the company's own account; the bear needs
+  new products and cost cuts to stop covering them.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $1.75  (FY2009E GAAP EPS from continuing operations, guide midpoint)
+  Min viable P/E at panic:          17x  [median of calendar-year P/E lows: 2002 19.4x, 2003 13.8x, 2004 22.1x, 2005 15.6x, 2006 32.6x, 2007 29.7x, 2008 10.9x, 2009 10.0x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $30/share
+  Current $22 vs Updated EPP $30:  -25%  ✓ BELOW panic floor — deep-value zone
+  Bear $5 vs Updated EPP $30:  -83%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  U.S. revenue growth                         -7.0      -16.2   BASE floor (vs +9 now)
+  International revenue growth                -6.0       -4.2   BASE floor (vs -2 now)
+  Revenue growth                              -7.0      -11.4   BASE floor (vs +4 now)
+  Gross margin change                       -550.0     -813.3   BASE floor (vs +263 now)
+  Pre-tax margin change                    -1830.0    -2773.6   BASE floor (vs +944 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $1.75 × (1+4.5%)² = $1.91
+  At 21x P/E (conservative):  $40/share
+  + Cumul. dividends (2yr):  +$2.55/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $40  (▲18 from $22)
+  Conservative total return:  +91% over 2yr  = +46%/yr
+
+  At 12.7x the multiple is already near its 21x median, so the conservative
+  case is a growth question: breakeven at 21x needs FY2011E EPS of $0.94,
+  i.e. -26.7%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $17.10  –  $23.98  (at 75th pct of range)
+  Annual dividend:      $1.24/share  (yield 5.6%)
+  Realized vol (1yr):   36% annualized
+  Beta vs broad market: 0.59
+  1-sigma range (1yr):  $14  –  $30  ($22 ± 36%)
+  2-sigma range (1yr):  $6  –  $38
+  ────────────────────────────────────────────────────────────
+  Bear $5 requires:  ~2.1σ price move  (unusual — requires fundamental break)
+  A pharmaceutical and health care products company with a 0.6 beta: the stock is +27% off its March
+  low while U.S. revenue growth went from +12.0% (Q2 2009) to +9.2% (Q3 2009).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        0.37  12.8x  $      5     5.2%     48.9%   -43.8pp  EPS -54.1%/yr (worst year FY02-FY08, capped at 0%); P/E to its 10th pct
+  BASE        1.98  21.5x  $     43    18.0%     38.1%   -20.1pp  EPS +6.5%/yr (Q3 sales ex-FX + margin + buyback); P/E at its 7.8-yr median
+  BULL        2.00  31.7x  $     63    62.8%     10.9%   +51.9pp  EPS +7.0%/yr (FY02-FY08 CAGR); P/E holds its 75th pct
+  XBULL       4.48  39.5x  $    177    14.0%      2.1%   +12.0pp  EPS +60.1%/yr (best 2-yr run FY02-FY08); P/E at its 90th pct
+
+  Proxy EV (2yr): $72  /  Market EV: $29  /  Current: $22
+  Conservative EV (2yr, ④): $40 + $2.55 divs = $43 total value
+  Downside (→ Bear $5): 77.5%   Upside (→ Bull $63): 183.3%   Ratio B 0.42x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $22 the market needs $29 in two years —
+  at or below the BASE case. That is a market composite of 1.55 against a model
+  read of 3.28: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.42x     -25%    +1.73  UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.29x     -25%    +1.93  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.88x     -25%    +1.39  UNDERVALUED / ACCUMULATE
+  Scenario EPS +1.5pp/yr                          0.40x     -25%    +1.75  UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.43x     -25%    +1.70  UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.42x     -25%    +2.03  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.42x     -36%    +1.73  UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.42x     -25%    +1.79  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 2009 print (late January) — the next read on U.S. revenues (+9.2% now) and the guide
+  (2) Gross margin — +263.3bp in Q3 2009: cost of sales against the mix lost to generics, what must hold if U.S. revenues do not
+  (3) FY09 GAAP EPS guide $1.72-1.77 (Q3 2009 release)
+  (4) Pre-tax margin — 31.42% in Q3 2009 (+943.6bp): where restructuring, legal and acquisition charges land
+  (5) Capital return at 13x — the release reports no share repurchases: management's own read of the multiple
+  ◉ BUY  |  EPP floor $30  |  ADD below ~$37  |  TRIM above $63
+════════════════════════════════════════════════════════════════════════
+

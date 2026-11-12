@@ -1,0 +1,1961 @@
+{
+ "_doc": "Point-in-time fact sheet for BMY retrospectives (retro/build_bmy.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks of 2007-2009 were accepted before the open or during the session on their release days. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K; it also restates the year before when a business became a discontinued operation), the guides for the current fiscal year (each field from the latest guide that states it) and the latest declared dividend. Bristol-Myers Squibb's fiscal year is the calendar year. EPS is GAAP diluted EPS from continuing operations: the company's non-GAAP EPS excludes upfront and milestone licensing payments, which recur, so it is shown and never used. 2001 is excluded and the history starts with 2002. Guides: GAAP EPS ranges (the current-FY EPS) and non-GAAP ranges (shown only); revenue growth is guided in words only, so BASE takes the latest quarter's net sales growth excluding foreign exchange as each release states it. A print's growth and margins are derived from the raw figures of its release ('raw', $ millions; the builder re-derives and checks them), each against the year-ago quarter as the same release shows it; U.S. and international net sales come from the release's supplemental exhibit. Rule T's raw figures are in 'rule_t'. No later fact enters through this file: every source's published date bounds its use.",
+ "ticker": "BMY",
+ "sources": {
+  "BM1": {
+   "published": "1999-03-30",
+   "filed": "1999-03-30 (EDGAR gives the filing date only)",
+   "title": "Bristol-Myers Squibb FY1998 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/0000014272-99-000002.txt",
+   "supports": "statement of earnings 1996-1998 (net sales $15,065M, $16,701M, $18,284M; cost of products sold $3,965M, $4,464M, $4,856M); geographic areas, United States $9,661M, $11,014M, $12,527M (before inter-area eliminations)"
+  },
+  "BM2": {
+   "published": "2000-03-30",
+   "filed": "2000-03-30 (EDGAR gives the filing date only)",
+   "title": "Bristol-Myers Squibb FY1999 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/0000014272-00-000002.txt",
+   "supports": "statement of earnings 1997-1999 (net sales $16,701M, $18,284M, $20,222M; cost of products sold $4,464M, $4,856M, $5,539M); geographic areas, United States $11,014M, $12,527M, $14,445M (before inter-area eliminations)"
+  },
+  "BM3": {
+   "published": "2001-04-02",
+   "filed": "2001-04-02 (EDGAR gives the filing date only)",
+   "title": "Bristol-Myers Squibb FY2000 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000001427201500006/r10k1231.htm",
+   "supports": "statement of earnings 1998-2000 (Clairol and Zimmer discontinued: net sales $15,061M, $16,878M, $18,216M; cost of products sold $3,896M, $4,542M, $4,759M); geographic areas, United States $8,955M, $10,631M, $12,114M; five-year summary 1996-2000 (net sales $12,268M and $13,698M, earnings from continuing operations before income taxes $3,423M and $3,738M for 1996 and 1997)"
+  },
+  "BM4": {
+   "published": "2002-04-01",
+   "filed": "2002-04-01 (EDGAR gives the filing date only)",
+   "title": "Bristol-Myers Squibb FY2001 10-K405",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000091205702013034/a2074555z10-k405.htm",
+   "supports": "the Zimmer spin-off: 'On August 6, 2001, the Company spun off Zimmer Holdings, Inc., in a tax-free distribution, resulting in a common stock dividend of $203 million.'"
+  },
+  "BM5": {
+   "published": "2003-03-19",
+   "filed": "2003-03-18 21:57 ET (after the close)",
+   "title": "Bristol-Myers Squibb FY2001 10-K/A (restated)",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000104746903009157/a2105268z10-ka.htm",
+   "supports": "restated statement of earnings 1999-2001 (net sales $16,502M, $17,695M, $18,139M; cost of products sold $4,458M, $4,729M, $5,454M); geographic areas, United States $10,255M, $11,593M, $11,871M; restated five-year summary 1997-2001 (net sales $13,664M and $15,007M, pre-tax $3,671M and $3,512M for 1997 and 1998)"
+  },
+  "BM6": {
+   "published": "2003-03-28",
+   "filed": "2003-03-28 13:42 ET",
+   "title": "Bristol-Myers Squibb FY2002 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000104746903010810/a2106681z10-k.htm",
+   "supports": "statement of earnings 2000-2002 (net sales $17,538M, $17,987M, $18,119M; cost of products sold $4,730M, $5,453M, $6,388M); geographic areas, United States $11,461M, $11,744M, $11,361M; five-year summary 1998-2002 (net sales $15,007M and $16,502M, pre-tax $3,512M and $4,790M for 1998 and 1999)"
+  },
+  "BM7": {
+   "published": "2004-06-29",
+   "filed": "2004-06-28 16:18 ET (after the close)",
+   "title": "Bristol-Myers Squibb FY2003 10-K/A (restated)",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312504110278/d10ka.htm",
+   "supports": "restated statement of earnings 2001-2003 (net sales $18,044M, $18,106M, $20,894M; cost of products sold $5,515M, $6,532M, $7,592M); geographic areas, United States $11,802M, $11,348M, $12,897M; five-year summary 1999-2003 (net sales $16,491M and $17,519M, pre-tax $4,733M and $5,263M for 1999 and 2000); the items affecting the comparability of 2001 ($2,962M before and $1,905M after taxes)"
+  },
+  "BM8": {
+   "published": "2005-03-04",
+   "filed": "2005-03-03 17:41 ET (after the close)",
+   "title": "Bristol-Myers Squibb FY2004 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312505041808/d10k.htm",
+   "supports": "statement of earnings 2002-2004 (OTN discontinued: net sales $16,208M, $18,653M, $19,380M; cost of products sold $4,691M, $5,406M, $5,989M); geographic areas, United States $9,450M, $10,656M, $10,613M; five-year summary 2000-2004 (net sales $16,438M and $16,612M, pre-tax $5,244M and $2,252M for 2000 and 2001)"
+  },
+  "BM9": {
+   "published": "2006-03-14",
+   "filed": "2006-03-13 17:34 ET (after the close)",
+   "title": "Bristol-Myers Squibb FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312506052456/d10k.htm",
+   "supports": "statement of earnings 2003-2005 (net sales $18,653M, $19,380M, $19,207M; cost of products sold $5,406M, $5,989M, $5,928M); geographic areas, United States $10,656M, $10,613M, $10,461M; five-year summary 2001-2005 (2001: net sales $16,612M, pre-tax $2,252M, earnings from continuing operations $1,866M, $0.95 a diluted share, 1,965M shares; 2002 net sales $16,208M, pre-tax $2,748M)"
+  },
+  "BM10": {
+   "published": "2007-02-27",
+   "filed": "2007-02-26 17:25 ET (after the close)",
+   "title": "Bristol-Myers Squibb FY2006 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312507039915/d10k.htm",
+   "supports": "five-year summary 2002-2006 (net sales, pre-tax earnings, diluted EPS from continuing operations $1.06, $1.59, $1.21, $1.52, $0.81 and diluted shares); statement of earnings 2004-2006 (cost of products sold, provision for income taxes $610M in 2006); geographic areas 2004-2006; cash flows; segment net sales; the $0.28 quarterly dividend; durability wording (Items 1 and 1A)"
+  },
+  "BM11": {
+   "published": "2007-07-26",
+   "filed": "2007-07-26 10:29 ET (during the session)",
+   "title": "Bristol-Myers Squibb Q2 2007 results (8-K, Exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312507162526/dex991.htm",
+   "supports": "Q2 2007 statement of earnings (net sales $4,928M vs $4,871M, cost of products sold $1,549M vs $1,568M, pre-tax $1,157M vs $1,110M, diluted EPS $0.36 vs $0.34, 2,006M diluted shares); U.S. $2,830M vs $2,806M and international $2,098M vs $2,065M net sales (supplemental exhibit); net sales growth 1% less the 2% favorable foreign exchange impact the release states; FY2007 guide: GAAP EPS $1.35-1.45, non-GAAP EPS $1.35-1.45; FY2008 guide: non-GAAP EPS $1.60-1.70 (mid to high single-digit revenue growth, in words)"
+  },
+  "BM12": {
+   "published": "2007-10-25",
+   "filed": "2007-10-25 08:50 ET (before the open)",
+   "title": "Bristol-Myers Squibb Q3 2007 results (8-K, Exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312507225360/dex991.htm",
+   "supports": "Q3 2007 statement of earnings (net sales $5,050M vs $4,154M, cost of products sold $1,622M vs $1,465M, pre-tax $1,411M vs $617M, diluted EPS $0.43 vs $0.17, 2,012M diluted shares); U.S. $2,920M vs $2,170M and international $2,130M vs $1,984M net sales (supplemental exhibit); net sales growth 22% less the 3% favorable foreign exchange impact the release states; FY2007 guide: GAAP EPS $1.28-1.33, non-GAAP EPS $1.42-1.47; FY2008 guide: non-GAAP EPS $1.60-1.70 (mid to high single-digit revenue growth, in words)"
+  },
+  "BM13": {
+   "published": "2007-12-05",
+   "filed": "2007-12-05 12:14 ET (during the session)",
+   "title": "Bristol-Myers Squibb 8-K of 2007-12-05 (investor meeting release: guidance and dividend)",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312507259399/dex991.htm",
+   "supports": "2007 guidance revised (GAAP $1.15-1.20, non-GAAP $1.42-1.47 reaffirmed); 2008 guidance (GAAP $1.44-1.54, non-GAAP $1.65-1.75, high single-digit revenue growth in words); the dividend raised to $0.31 a quarter"
+  },
+  "BM14": {
+   "published": "2008-01-31",
+   "filed": "2008-01-31 07:57 ET (before the open)",
+   "title": "Bristol-Myers Squibb Q4 2007 results (8-K, Exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312508016224/dex991.htm",
+   "supports": "Q4 2007 statement of earnings (net sales $5,381M vs $4,057M, cost of products sold $1,817M vs $1,395M, pre-tax $261M vs $-337M, diluted EPS $-0.07 vs $-0.09, 1,975M diluted shares); U.S. $2,985M vs $1,977M and international $2,396M vs $2,080M net sales (supplemental exhibit); net sales growth 33% less the 5% favorable foreign exchange impact the release states; FY2007 net sales $19,348M, diluted EPS from continuing operations $0.99 (1,980M shares), provision for income taxes $803M; FY2006 restated $17,256M and $0.73; FY2008 guide: GAAP EPS $1.36-1.46, non-GAAP EPS $1.60-1.70"
+  },
+  "BM15": {
+   "published": "2008-02-22",
+   "filed": "2008-02-21 20:40 ET (after the close)",
+   "title": "Bristol-Myers Squibb FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312508035566/d10k.htm",
+   "supports": "five-year summary 2003-2007 (Medical Imaging discontinued: diluted EPS from continuing operations $1.53, $1.12, $1.44, $0.73, $0.99; net sales; diluted shares); statement of earnings 2005-2007 (cost of products sold, provision for income taxes $803M in 2007); geographic areas 2005-2007; cash flows; segment net sales; the $0.31 quarterly dividend; durability wording (Items 1, 1A and 7)"
+  },
+  "BM16": {
+   "published": "2008-04-24",
+   "filed": "2008-04-24 07:54 ET (before the open)",
+   "title": "Bristol-Myers Squibb Q1 2008 results (8-K, Exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312508088647/dex991.htm",
+   "supports": "Q1 2008 statement of earnings (net sales $5,181M vs $4,317M, cost of products sold $1,657M vs $1,340M, pre-tax $1,290M vs $852M, diluted EPS $0.35 vs $0.33, 2,008M diluted shares); U.S. $2,913M vs $2,363M and international $2,268M vs $1,954M net sales (supplemental exhibit); net sales growth 20% less the 5% favorable foreign exchange impact the release states; FY2008 guide: GAAP EPS $1.36-1.46, non-GAAP EPS $1.60-1.70"
+  },
+  "BM17": {
+   "published": "2008-07-24",
+   "filed": "2008-07-24 08:06 ET (before the open)",
+   "title": "Bristol-Myers Squibb Q2 2008 results (8-K, Exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312508156827/dex991.htm",
+   "supports": "Q2 2008 statement of earnings (net sales $5,203M vs $4,471M, cost of products sold $1,670M vs $1,408M, pre-tax $1,221M vs $985M, diluted EPS $0.36 vs $0.30, 2,008M diluted shares); U.S. $2,966M vs $2,583M and international $2,237M vs $1,888M net sales (supplemental exhibit); net sales growth 16% less the 5% favorable foreign exchange impact the release states; FY2008 guide: GAAP EPS $1.36-1.46, non-GAAP EPS $1.60-1.70"
+  },
+  "BM18": {
+   "published": "2008-10-23",
+   "filed": "2008-10-23 07:56 ET (before the open)",
+   "title": "Bristol-Myers Squibb Q3 2008 results (8-K, Exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312508214814/dex991.htm",
+   "supports": "Q3 2008 statement of earnings (net sales $5,254M vs $4,601M, cost of products sold $1,634M vs $1,478M, pre-tax $1,155M vs $1,256M, diluted EPS $0.30 vs $0.38, 2,004M diluted shares); U.S. $3,064M vs $2,683M and international $2,190M vs $1,918M net sales (supplemental exhibit); net sales growth 14% less the 3% favorable foreign exchange impact the release states; FY2008 guide: GAAP EPS $1.61-1.66, non-GAAP EPS $1.65-1.70"
+  },
+  "BM19": {
+   "published": "2009-01-27",
+   "filed": "2009-01-27 08:32 ET (before the open)",
+   "title": "Bristol-Myers Squibb Q4 2008 results (8-K, Exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312509011613/dex991.htm",
+   "supports": "Q4 2008 statement of earnings (net sales $5,249M vs $5,058M, cost of products sold $1,522M vs $1,716M, pre-tax $1,888M vs $172M, diluted EPS $0.61 vs $-0.10, 1,982M diluted shares); U.S. $3,189M vs $2,874M and international $2,060M vs $2,184M net sales (supplemental exhibit); net sales growth 8% excluding foreign exchange impact, as the release states; FY2008 net sales $20,597M, diluted EPS from continuing operations $1.59 (2,001M shares), provision for income taxes $1,320M; FY2007 restated $18,193M and $0.88; FY2009 guide: GAAP EPS $1.58-1.73, non-GAAP EPS $1.85-2.00 (low single-digit revenue growth (mid-to-high single digit growth excluding foreign exchange), in words)"
+  },
+  "BM20": {
+   "published": "2009-02-20",
+   "filed": "2009-02-20 06:11 ET (before the open)",
+   "title": "Bristol-Myers Squibb FY2008 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312509033538/d10k.htm",
+   "supports": "five-year summary 2004-2008 (ConvaTec and Medical Imaging discontinued: diluted EPS from continuing operations $1.02, $1.35, $0.62, $0.88, $1.59; net sales; diluted shares); statement of earnings 2006-2008 (cost of products sold, provision for income taxes $1,320M in 2008); geographic areas 2006-2008; cash flows; segment net sales; the $0.31 quarterly dividend; durability wording (Items 1 and 1A)"
+  },
+  "BM21": {
+   "published": "2009-04-28",
+   "filed": "2009-04-28 08:39 ET (before the open)",
+   "title": "Bristol-Myers Squibb Q1 2009 results (8-K, Exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312509089307/dex991.htm",
+   "supports": "Q1 2009 statement of earnings (net sales $5,015M vs $4,891M, cost of products sold $1,413M vs $1,570M, pre-tax $1,384M vs $1,207M, diluted EPS $0.32 vs $0.32, 1,983M diluted shares); U.S. $3,031M vs $2,747M and international $1,984M vs $2,144M net sales (supplemental exhibit); net sales growth 8% excluding foreign exchange impact, as the release states; FY2009 guide: GAAP EPS $1.58-1.73, non-GAAP EPS $1.85-2.00 (low single-digit revenue growth (mid-to-high single digit growth excluding foreign exchange), in words)"
+  },
+  "BM22": {
+   "published": "2009-04-28",
+   "filed": "2009-04-28 12:00 ET (during the session)",
+   "title": "Bristol-Myers Squibb 8-K of 2009-04-28 (FY2006-FY2008 statements revised for the 2009 segments and SFAS 160)",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312509089618/dex991.htm",
+   "supports": "revised consolidated financial statements for 2006-2008 (the 2009 segments, BioPharmaceuticals and Mead Johnson, and SFAS 160): five-year summary 2004-2008 with EPS, net sales and shares unchanged from the FY2008 10-K; statement of earnings; geographic areas; cash flows"
+  },
+  "BM23": {
+   "published": "2009-07-23",
+   "filed": "2009-07-23 10:31 ET (during the session)",
+   "title": "Bristol-Myers Squibb Q2 2009 results (8-K, Exhibits 99.1 and 99.3)",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312509153687/dex991.htm",
+   "supports": "Q2 2009 statement of earnings (net sales $5,384M vs $5,203M, cost of products sold $1,461M vs $1,670M, pre-tax $1,741M vs $1,221M, diluted EPS $0.49 vs $0.36, 1,983M diluted shares); U.S. $3,247M vs $2,898M and international $2,137M vs $2,305M net sales (supplemental exhibit); net sales growth 8% excluding foreign exchange impact, as the release states; FY2009 guide: GAAP EPS $1.58-1.68, non-GAAP EPS $1.95-2.05 (low single-digit revenue growth (high single digit growth excluding foreign exchange), in words)"
+  },
+  "BM24": {
+   "published": "2009-10-22",
+   "filed": "2009-10-22 09:24 ET (before the open)",
+   "title": "Bristol-Myers Squibb Q3 2009 results (8-K, Exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312509211606/dex991.htm",
+   "supports": "Q3 2009 statement of earnings (net sales $5,487M vs $5,254M, cost of products sold $1,562M vs $1,634M, pre-tax $1,724M vs $1,155M, diluted EPS $0.48 vs $0.29, 1,984M diluted shares); U.S. $3,256M vs $2,983M and international $2,231M vs $2,271M net sales (supplemental exhibit); net sales growth 7% excluding foreign exchange impact, as the release states; FY2009 guide: GAAP EPS $1.72-1.77, non-GAAP EPS $2.00-2.05 (mid single-digit revenue growth (high single digit growth excluding foreign exchange), in words)"
+  },
+  "BM25": {
+   "published": "2009-12-24",
+   "filed": "2009-12-24 06:07 ET (before the open)",
+   "title": "Bristol-Myers Squibb 8-K of 2009-12-24 (Mead Johnson split-off; 2009 guidance update, Exhibit 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312509259756/dex992.htm",
+   "supports": "2009 guidance updated for the Mead Johnson split-off (GAAP EPS from continuing operations $1.51-1.56, non-GAAP $1.75-1.80)"
+  }
+ },
+ "history_vintages": [
+  {
+   "published": "2007-02-27",
+   "sources": [
+    "BM10",
+    "BM9",
+    "BM7"
+   ],
+   "fy_label": "FY06",
+   "why": "'The Company, through its divisions and subsidiaries, is engaged in the discovery, development, licensing, manufacturing, marketing, distribution and sale of pharmaceuticals and other health care related products.' (FY2006 10-K, Item 1); 'In the pharmaceutical industry, the majority of an innovative product’s commercial value is usually realized during the period in which the product has market exclusivity.' (Item 1); 'The Company faces competition from other pharmaceutical manufacturers, including from lower-priced generic products.' (Item 1A heading); 'The composition of matter patent for PLAVIX*, which expires in 2011, is currently the subject of patent litigation in the U.S. with Apotex Inc. and Apotex Corp. (Apotex)' (Item 1A)",
+   "eps_gaap": {
+    "2002": 1.06,
+    "2003": 1.59,
+    "2004": 1.21,
+    "2005": 1.52,
+    "2006": 0.81
+   },
+   "eps_normalized": {
+    "2002": 1.06,
+    "2003": 1.59,
+    "2004": 1.21,
+    "2005": 1.52,
+    "2006": 0.81
+   },
+   "eps_sources": {
+    "2002": "BM10",
+    "2003": "BM10",
+    "2004": "BM10",
+    "2005": "BM10",
+    "2006": "BM10"
+   },
+   "revenue_usd_b": {
+    "2002": 16.208,
+    "2003": 18.653,
+    "2004": 19.38,
+    "2005": 19.207,
+    "2006": 17.914
+   },
+   "revenue_sources": {
+    "2002": "BM10",
+    "2003": "BM10",
+    "2004": "BM10",
+    "2005": "BM10",
+    "2006": "BM10"
+   },
+   "diluted_shares_m": {
+    "2002": 1942.0,
+    "2003": 1950.0,
+    "2004": 1976.0,
+    "2005": 1983.0,
+    "2006": 1963.0
+   },
+   "shares_sources": {
+    "2002": "BM10",
+    "2003": "BM10",
+    "2004": "BM10",
+    "2005": "BM10",
+    "2006": "BM10"
+   },
+   "fiscal_year_ends": {
+    "2002": "2002-12-31",
+    "2003": "2003-12-31",
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31"
+   },
+   "normalization": "diluted EPS from continuing operations, each year from the latest filing that reports it; GAAP throughout: the company's non-GAAP EPS excludes 'upfront and milestone payments for in-licensing of products that have not achieved regulatory approval' among its specified items, a cost listed in every year from 2005 to 2007 ($44M, $70M, $162M), so it does not exclude only one-offs (the NKE FY2007 and PFE rule) and is shown in the guide line only; 2002-2006 from the FY2006 10-K (Medical Imaging, ConvaTec and Mead Johnson in, OTN out); 2001 is excluded: $0.95 a diluted share from continuing operations (FY2005 10-K; $1,866M), while the items the FY2003 10-K/A lists as affecting the comparability of 2001 (acquired in-process research and development of $2,772 million for DuPont Pharmaceuticals, $588 million of restructuring and other items and $77 million of litigation charges, less $475 million of gains on sales of businesses) come to $1,905M after taxes, more than the year's earnings from continuing operations, so reported EPS is 49.5% of the EPS without them (under half), and no per-share figure excluding only one-offs was published; the history and the P/E window start with 2002 (the ACN FY02, AAPL FY2002 and PFE 2003 rule)",
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 14.71,
+   "prev_fy_pretax_margin_note": "FY06 earnings from continuing operations before minority interest and income taxes $2,635M / net sales $17,914M (FY2006 10-K)",
+   "prev_fy_gross_margin": 66.75,
+   "prev_fy_sales_growth": -6.7,
+   "prev_fy_us_pct": -7.0,
+   "prev_fy_intl_pct": -6.4,
+   "tax_rate": 0.2315,
+   "tax_note": "FY06 provision for income taxes $610M / pre-tax $2,635M (FY2006 10-K)",
+   "fcf_b": 1.3,
+   "fcf_label": "FY06",
+   "fcf_note": "net cash provided by operating activities $2,083M less additions to property, plant and equipment and capitalized software $785M",
+   "cash_b": 4.01,
+   "cash_note": "cash and cash equivalents $2,018M and marketable securities $1,995M at December 31",
+   "dividend_annual": 1.12,
+   "dividend_note": "$0.28 quarterly ('In December 2006, the Company declared a quarterly dividend of $.28 per common share and indicated a dividend for the full year 2007 of $1.12 per share.', FY2006 10-K)",
+   "cash_return_text": "over the past three years, the Company did not repurchase any of its common stock (FY2006 10-K)",
+   "business_line": "worldwide pharmaceutical and related health care products company: pharmaceuticals, nutritionals, ostomy and wound care, medical imaging",
+   "groups": [
+    [
+     "Pharmaceuticals",
+     13.861,
+     -9.1
+    ],
+    [
+     "Nutritionals",
+     2.347,
+     6.4
+    ],
+    [
+     "Other Health Care",
+     1.706,
+     -2.4
+    ]
+   ],
+   "groups_basis": "FY06 segment net sales (FY2006 10-K)",
+   "company": "Bristol-Myers Squibb Company",
+   "exchange": "NYSE",
+   "pe_window_start": "2002-01-01",
+   "excluded_note": "2001 is excluded: $0.95 a diluted share from continuing operations (FY2005 10-K; $1,866M), while the items the FY2003 10-K/A lists as affecting the comparability of 2001 (acquired in-process research and development of $2,772 million for DuPont Pharmaceuticals, $588 million of restructuring and other items and $77 million of litigation charges, less $475 million of gains on sales of businesses) come to $1,905M after taxes, more than the year's earnings from continuing operations, so reported EPS is 49.5% of the EPS without them (under half), and no per-share figure excluding only one-offs was published; the history and the P/E window start with 2002 (the ACN FY02, AAPL FY2002 and PFE 2003 rule)"
+  },
+  {
+   "published": "2008-02-22",
+   "sources": [
+    "BM15",
+    "BM10",
+    "BM9",
+    "BM7"
+   ],
+   "fy_label": "FY07",
+   "why": "'is a global biopharmaceutical and related health care products company' (FY2007 10-K, Item 7); 'In the pharmaceutical industry, the majority of an innovative product’s commercial value is usually realized during the period in which the product has market exclusivity.' (Item 1); 'The Company faces competition from other pharmaceutical manufacturers, including from lower-priced generic products, and it is possible that the Company may lose market exclusivity of a product earlier than expected.' (Item 1A heading); 'The patent infringement lawsuit with Apotex Inc. and Apotex Corp. (Apotex) involving PLAVIX* is ongoing, and there is a risk of generic competition from Apotex and from other generic pharmaceutical companies.' (Item 1A heading)",
+   "eps_gaap": {
+    "2002": 1.06,
+    "2003": 1.53,
+    "2004": 1.12,
+    "2005": 1.44,
+    "2006": 0.73,
+    "2007": 0.99
+   },
+   "eps_normalized": {
+    "2002": 1.06,
+    "2003": 1.53,
+    "2004": 1.12,
+    "2005": 1.44,
+    "2006": 0.73,
+    "2007": 0.99
+   },
+   "eps_sources": {
+    "2002": "BM10",
+    "2003": "BM15",
+    "2004": "BM15",
+    "2005": "BM15",
+    "2006": "BM15",
+    "2007": "BM15"
+   },
+   "revenue_usd_b": {
+    "2002": 16.208,
+    "2003": 18.145,
+    "2004": 18.791,
+    "2005": 18.605,
+    "2006": 17.256,
+    "2007": 19.348
+   },
+   "revenue_sources": {
+    "2002": "BM10",
+    "2003": "BM15",
+    "2004": "BM15",
+    "2005": "BM15",
+    "2006": "BM15",
+    "2007": "BM15"
+   },
+   "diluted_shares_m": {
+    "2002": 1942.0,
+    "2003": 1950.0,
+    "2004": 1976.0,
+    "2005": 1983.0,
+    "2006": 1963.0,
+    "2007": 1980.0
+   },
+   "shares_sources": {
+    "2002": "BM10",
+    "2003": "BM15",
+    "2004": "BM15",
+    "2005": "BM15",
+    "2006": "BM15",
+    "2007": "BM15"
+   },
+   "fiscal_year_ends": {
+    "2002": "2002-12-31",
+    "2003": "2003-12-31",
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31",
+    "2007": "2007-12-31"
+   },
+   "normalization": "diluted EPS from continuing operations, each year from the latest filing that reports it; GAAP throughout: the company's non-GAAP EPS excludes 'upfront and milestone payments for in-licensing of products that have not achieved regulatory approval' among its specified items, a cost listed in every year from 2005 to 2007 ($44M, $70M, $162M), so it does not exclude only one-offs (the NKE FY2007 and PFE rule) and is shown in the guide line only; 2003-2007 from the FY2007 10-K (Medical Imaging discontinued), 2002 from the FY2006 10-K; 2001 is excluded: $0.95 a diluted share from continuing operations (FY2005 10-K; $1,866M), while the items the FY2003 10-K/A lists as affecting the comparability of 2001 (acquired in-process research and development of $2,772 million for DuPont Pharmaceuticals, $588 million of restructuring and other items and $77 million of litigation charges, less $475 million of gains on sales of businesses) come to $1,905M after taxes, more than the year's earnings from continuing operations, so reported EPS is 49.5% of the EPS without them (under half), and no per-share figure excluding only one-offs was published; the history and the P/E window start with 2002 (the ACN FY02, AAPL FY2002 and PFE 2003 rule)",
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 18.27,
+   "prev_fy_pretax_margin_note": "FY07 earnings from continuing operations before minority interest and income taxes $3,534M / net sales $19,348M (FY2007 10-K)",
+   "prev_fy_gross_margin": 67.86,
+   "prev_fy_sales_growth": 12.1,
+   "prev_fy_us_pct": 18.2,
+   "prev_fy_intl_pct": 5.2,
+   "tax_rate": 0.2272,
+   "tax_note": "FY07 provision for income taxes $803M / pre-tax $3,534M (FY2007 10-K)",
+   "fcf_b": 2.31,
+   "fcf_label": "FY07",
+   "fcf_note": "net cash provided by operating activities $3,153M less additions to property, plant and equipment and capitalized software $843M",
+   "cash_b": 2.23,
+   "cash_note": "cash and cash equivalents $1,801M and marketable securities $424M at December 31",
+   "dividend_annual": 1.24,
+   "dividend_note": "$0.31 quarterly ('In December 2007, the Company declared a quarterly dividend of $.31 per common share and indicated a dividend for the full year 2008 of $1.24 per share.', FY2007 10-K)",
+   "cash_return_text": "over the past three years, the Company did not repurchase any of its common stock (FY2007 10-K)",
+   "business_line": "global biopharmaceutical and related health care products company: pharmaceuticals, nutritionals, ostomy and wound care",
+   "groups": [
+    [
+     "Pharmaceuticals",
+     15.622,
+     12.7
+    ],
+    [
+     "Nutritionals",
+     2.571,
+     9.5
+    ],
+    [
+     "ConvaTec",
+     1.155,
+     10.2
+    ]
+   ],
+   "groups_basis": "FY07 segment net sales (FY2007 10-K)",
+   "company": "Bristol-Myers Squibb Company",
+   "exchange": "NYSE",
+   "pe_window_start": "2002-01-01",
+   "excluded_note": "2001 is excluded: $0.95 a diluted share from continuing operations (FY2005 10-K; $1,866M), while the items the FY2003 10-K/A lists as affecting the comparability of 2001 (acquired in-process research and development of $2,772 million for DuPont Pharmaceuticals, $588 million of restructuring and other items and $77 million of litigation charges, less $475 million of gains on sales of businesses) come to $1,905M after taxes, more than the year's earnings from continuing operations, so reported EPS is 49.5% of the EPS without them (under half), and no per-share figure excluding only one-offs was published; the history and the P/E window start with 2002 (the ACN FY02, AAPL FY2002 and PFE 2003 rule)"
+  },
+  {
+   "published": "2009-02-20",
+   "sources": [
+    "BM20",
+    "BM15",
+    "BM10",
+    "BM9",
+    "BM7"
+   ],
+   "fy_label": "FY08",
+   "why": "'is engaged in the discovery, development, licensing, manufacturing, marketing, distribution and sale of pharmaceutical and nutritional products.' (FY2008 10-K, Item 1); 'Our Pharmaceuticals Segment is confronted by a record level of industry patent expirations and increasingly aggressive generic competition.' (Item 1A); 'In 2008, net sales of PLAVIX* contributed $5.6 billion, representing 27% of total net sales' (Item 1A); 'It is possible that the Company may lose market exclusivity of a product earlier than expected.' (Item 1A heading)",
+   "eps_gaap": {
+    "2002": 1.06,
+    "2003": 1.53,
+    "2004": 1.02,
+    "2005": 1.35,
+    "2006": 0.62,
+    "2007": 0.88,
+    "2008": 1.59
+   },
+   "eps_normalized": {
+    "2002": 1.06,
+    "2003": 1.53,
+    "2004": 1.02,
+    "2005": 1.35,
+    "2006": 0.62,
+    "2007": 0.88,
+    "2008": 1.59
+   },
+   "eps_sources": {
+    "2002": "BM10",
+    "2003": "BM15",
+    "2004": "BM20",
+    "2005": "BM20",
+    "2006": "BM20",
+    "2007": "BM20",
+    "2008": "BM20"
+   },
+   "revenue_usd_b": {
+    "2002": 16.208,
+    "2003": 18.145,
+    "2004": 17.837,
+    "2005": 17.613,
+    "2006": 16.208,
+    "2007": 18.193,
+    "2008": 20.597
+   },
+   "revenue_sources": {
+    "2002": "BM10",
+    "2003": "BM15",
+    "2004": "BM20",
+    "2005": "BM20",
+    "2006": "BM20",
+    "2007": "BM20",
+    "2008": "BM20"
+   },
+   "diluted_shares_m": {
+    "2002": 1942.0,
+    "2003": 1950.0,
+    "2004": 1976.0,
+    "2005": 1983.0,
+    "2006": 1963.0,
+    "2007": 1980.0,
+    "2008": 2001.0
+   },
+   "shares_sources": {
+    "2002": "BM10",
+    "2003": "BM15",
+    "2004": "BM20",
+    "2005": "BM20",
+    "2006": "BM20",
+    "2007": "BM20",
+    "2008": "BM20"
+   },
+   "fiscal_year_ends": {
+    "2002": "2002-12-31",
+    "2003": "2003-12-31",
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31",
+    "2007": "2007-12-31",
+    "2008": "2008-12-31"
+   },
+   "normalization": "diluted EPS from continuing operations, each year from the latest filing that reports it; GAAP throughout: the company's non-GAAP EPS excludes 'upfront and milestone payments for in-licensing of products that have not achieved regulatory approval' among its specified items, a cost listed in every year from 2005 to 2007 ($44M, $70M, $162M), so it does not exclude only one-offs (the NKE FY2007 and PFE rule) and is shown in the guide line only; 2004-2008 from the FY2008 10-K (ConvaTec and Medical Imaging discontinued), 2003 from the FY2007 10-K, 2002 from the FY2006 10-K; 2001 is excluded: $0.95 a diluted share from continuing operations (FY2005 10-K; $1,866M), while the items the FY2003 10-K/A lists as affecting the comparability of 2001 (acquired in-process research and development of $2,772 million for DuPont Pharmaceuticals, $588 million of restructuring and other items and $77 million of litigation charges, less $475 million of gains on sales of businesses) come to $1,905M after taxes, more than the year's earnings from continuing operations, so reported EPS is 49.5% of the EPS without them (under half), and no per-share figure excluding only one-offs was published; the history and the P/E window start with 2002 (the ACN FY02, AAPL FY2002 and PFE 2003 rule)",
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 26.56,
+   "prev_fy_pretax_margin_note": "FY08 earnings from continuing operations before minority interest and income taxes $5,471M / net sales $20,597M (FY2008 10-K)",
+   "prev_fy_gross_margin": 68.95,
+   "prev_fy_sales_growth": 13.2,
+   "prev_fy_us_pct": 15.5,
+   "prev_fy_intl_pct": 10.1,
+   "tax_rate": 0.2413,
+   "tax_note": "FY08 provision for income taxes $1,320M / pre-tax $5,471M (FY2008 10-K)",
+   "fcf_b": 2.77,
+   "fcf_label": "FY08",
+   "fcf_note": "net cash provided by operating activities $3,707M less additions to property, plant and equipment and capitalized software $941M",
+   "cash_b": 8.27,
+   "cash_note": "cash and cash equivalents $7,976M and marketable securities $289M at December 31",
+   "dividend_annual": 1.24,
+   "dividend_note": "$0.31 quarterly ('In December 2008, the Company declared a quarterly dividend of $0.31 per common share and indicated a dividend for the full year 2009 of $1.24 per share.', FY2008 10-K)",
+   "cash_return_text": "no shares repurchased in 2008 (FY2008 10-K)",
+   "business_line": "global biopharmaceutical company with a nutritionals business (Mead Johnson)",
+   "groups": [
+    [
+     "Pharmaceuticals",
+     17.715,
+     13.4
+    ],
+    [
+     "Nutritionals",
+     2.882,
+     12.1
+    ]
+   ],
+   "groups_basis": "FY08 segment net sales (FY2008 10-K)",
+   "company": "Bristol-Myers Squibb Company",
+   "exchange": "NYSE",
+   "pe_window_start": "2002-01-01",
+   "excluded_note": "2001 is excluded: $0.95 a diluted share from continuing operations (FY2005 10-K; $1,866M), while the items the FY2003 10-K/A lists as affecting the comparability of 2001 (acquired in-process research and development of $2,772 million for DuPont Pharmaceuticals, $588 million of restructuring and other items and $77 million of litigation charges, less $475 million of gains on sales of businesses) come to $1,905M after taxes, more than the year's earnings from continuing operations, so reported EPS is 49.5% of the EPS without them (under half), and no per-share figure excluding only one-offs was published; the history and the P/E window start with 2002 (the ACN FY02, AAPL FY2002 and PFE 2003 rule)"
+  },
+  {
+   "published": "2009-04-28",
+   "sources": [
+    "BM22",
+    "BM20",
+    "BM15",
+    "BM10",
+    "BM9",
+    "BM7"
+   ],
+   "fy_label": "FY08",
+   "why": "'is engaged in the discovery, development, licensing, manufacturing, marketing, distribution and sale of pharmaceutical and nutritional products.' (FY2008 10-K, Item 1); 'Our Pharmaceuticals Segment is confronted by a record level of industry patent expirations and increasingly aggressive generic competition.' (Item 1A); 'In 2008, net sales of PLAVIX* contributed $5.6 billion, representing 27% of total net sales' (Item 1A); 'It is possible that the Company may lose market exclusivity of a product earlier than expected.' (Item 1A heading)",
+   "eps_gaap": {
+    "2002": 1.06,
+    "2003": 1.53,
+    "2004": 1.02,
+    "2005": 1.35,
+    "2006": 0.62,
+    "2007": 0.88,
+    "2008": 1.59
+   },
+   "eps_normalized": {
+    "2002": 1.06,
+    "2003": 1.53,
+    "2004": 1.02,
+    "2005": 1.35,
+    "2006": 0.62,
+    "2007": 0.88,
+    "2008": 1.59
+   },
+   "eps_sources": {
+    "2002": "BM10",
+    "2003": "BM15",
+    "2004": "BM22",
+    "2005": "BM22",
+    "2006": "BM22",
+    "2007": "BM22",
+    "2008": "BM22"
+   },
+   "revenue_usd_b": {
+    "2002": 16.208,
+    "2003": 18.145,
+    "2004": 17.837,
+    "2005": 17.613,
+    "2006": 16.208,
+    "2007": 18.193,
+    "2008": 20.597
+   },
+   "revenue_sources": {
+    "2002": "BM10",
+    "2003": "BM15",
+    "2004": "BM22",
+    "2005": "BM22",
+    "2006": "BM22",
+    "2007": "BM22",
+    "2008": "BM22"
+   },
+   "diluted_shares_m": {
+    "2002": 1942.0,
+    "2003": 1950.0,
+    "2004": 1976.0,
+    "2005": 1983.0,
+    "2006": 1963.0,
+    "2007": 1980.0,
+    "2008": 2001.0
+   },
+   "shares_sources": {
+    "2002": "BM10",
+    "2003": "BM15",
+    "2004": "BM22",
+    "2005": "BM22",
+    "2006": "BM22",
+    "2007": "BM22",
+    "2008": "BM22"
+   },
+   "fiscal_year_ends": {
+    "2002": "2002-12-31",
+    "2003": "2003-12-31",
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31",
+    "2007": "2007-12-31",
+    "2008": "2008-12-31"
+   },
+   "normalization": "diluted EPS from continuing operations, each year from the latest filing that reports it; GAAP throughout: the company's non-GAAP EPS excludes 'upfront and milestone payments for in-licensing of products that have not achieved regulatory approval' among its specified items, a cost listed in every year from 2005 to 2007 ($44M, $70M, $162M), so it does not exclude only one-offs (the NKE FY2007 and PFE rule) and is shown in the guide line only; 2004-2008 from the 8-K of 2009-04-28 (FY2006-FY2008 revised for the 2009 segments and SFAS 160; EPS, net sales and shares unchanged), 2003 from the FY2007 10-K, 2002 from the FY2006 10-K; 2001 is excluded: $0.95 a diluted share from continuing operations (FY2005 10-K; $1,866M), while the items the FY2003 10-K/A lists as affecting the comparability of 2001 (acquired in-process research and development of $2,772 million for DuPont Pharmaceuticals, $588 million of restructuring and other items and $77 million of litigation charges, less $475 million of gains on sales of businesses) come to $1,905M after taxes, more than the year's earnings from continuing operations, so reported EPS is 49.5% of the EPS without them (under half), and no per-share figure excluding only one-offs was published; the history and the P/E window start with 2002 (the ACN FY02, AAPL FY2002 and PFE 2003 rule)",
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 26.56,
+   "prev_fy_pretax_margin_note": "FY08 earnings from continuing operations before income taxes $5,471M / net sales $20,597M (8-K of 2009-04-28, revised FY2008 statements)",
+   "prev_fy_gross_margin": 68.95,
+   "prev_fy_sales_growth": 13.2,
+   "prev_fy_us_pct": 15.5,
+   "prev_fy_intl_pct": 10.1,
+   "tax_rate": 0.2413,
+   "tax_note": "FY08 provision for income taxes $1,320M / pre-tax $5,471M (8-K of 2009-04-28, revised FY2008 statements)",
+   "fcf_b": 2.77,
+   "fcf_label": "FY08",
+   "fcf_note": "net cash provided by operating activities $3,707M less additions to property, plant and equipment and capitalized software $941M",
+   "cash_b": 8.27,
+   "cash_note": "cash and cash equivalents $7,976M and marketable securities $289M at December 31",
+   "dividend_annual": 1.24,
+   "dividend_note": "$0.31 quarterly ('In December 2008, the Company declared a quarterly dividend of $0.31 per common share and indicated a dividend for the full year 2009 of $1.24 per share.', FY2008 10-K)",
+   "cash_return_text": "no shares repurchased in 2008 (FY2008 10-K)",
+   "business_line": "global biopharmaceutical company with a nutritionals business (Mead Johnson)",
+   "groups": [
+    [
+     "BioPharmaceuticals",
+     17.715,
+     13.4
+    ],
+    [
+     "Mead Johnson",
+     2.882,
+     12.1
+    ]
+   ],
+   "groups_basis": "FY08 segment net sales (8-K of 2009-04-28, the 2009 segments)",
+   "company": "Bristol-Myers Squibb Company",
+   "exchange": "NYSE",
+   "pe_window_start": "2002-01-01",
+   "excluded_note": "2001 is excluded: $0.95 a diluted share from continuing operations (FY2005 10-K; $1,866M), while the items the FY2003 10-K/A lists as affecting the comparability of 2001 (acquired in-process research and development of $2,772 million for DuPont Pharmaceuticals, $588 million of restructuring and other items and $77 million of litigation charges, less $475 million of gains on sales of businesses) come to $1,905M after taxes, more than the year's earnings from continuing operations, so reported EPS is 49.5% of the EPS without them (under half), and no per-share figure excluding only one-offs was published; the history and the P/E window start with 2002 (the ACN FY02, AAPL FY2002 and PFE 2003 rule)"
+  }
+ ],
+ "prints": [
+  {
+   "quarter": "Q2 2007",
+   "fy": 2007,
+   "q": 2,
+   "published": "2007-07-26",
+   "source": "BM11",
+   "release": "Jul 26",
+   "release_time": "during the session on Jul 26: 8-K accepted 10:29 ET (conference call at 10:30 a.m.)",
+   "period_end": "2007-06-30",
+   "raw": {
+    "rev_m": 4928,
+    "rev_prior_m": 4871,
+    "cos_m": 1549,
+    "cos_prior_m": 1568,
+    "pretax_m": 1157,
+    "pretax_prior_m": 1110,
+    "us_m": 2830,
+    "us_prior_m": 2806,
+    "intl_m": 2098,
+    "intl_prior_m": 2065,
+    "diluted_shares_m": 2006
+   },
+   "sales_b": 4.928,
+   "sales_pct": 1.2,
+   "us_pct": 0.9,
+   "intl_pct": 1.6,
+   "gross_margin": 68.57,
+   "gross_margin_bp": 75.8,
+   "pretax_margin": 23.48,
+   "pretax_margin_bp": 69.0,
+   "eps_q": 0.36,
+   "eps_q_prior": 0.34,
+   "diluted_shares_m": 2006.0,
+   "lc_pct": -1.0,
+   "lc_note": "1% less the 2% favorable foreign exchange impact the release states",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q3 2007 print (late October)",
+   "eps_note": "diluted EPS from net earnings (no discontinued operations yet)"
+  },
+  {
+   "quarter": "Q3 2007",
+   "fy": 2007,
+   "q": 3,
+   "published": "2007-10-25",
+   "source": "BM12",
+   "release": "Oct 25",
+   "release_time": "before the open on Oct 25: 8-K accepted 08:50 ET (conference call at 10:30 a.m.)",
+   "period_end": "2007-09-30",
+   "raw": {
+    "rev_m": 5050,
+    "rev_prior_m": 4154,
+    "cos_m": 1622,
+    "cos_prior_m": 1465,
+    "pretax_m": 1411,
+    "pretax_prior_m": 617,
+    "us_m": 2920,
+    "us_prior_m": 2170,
+    "intl_m": 2130,
+    "intl_prior_m": 1984,
+    "diluted_shares_m": 2012
+   },
+   "sales_b": 5.05,
+   "sales_pct": 21.6,
+   "us_pct": 34.6,
+   "intl_pct": 7.4,
+   "gross_margin": 67.88,
+   "gross_margin_bp": 314.8,
+   "pretax_margin": 27.94,
+   "pretax_margin_bp": 1308.7,
+   "eps_q": 0.43,
+   "eps_q_prior": 0.17,
+   "diluted_shares_m": 2012.0,
+   "lc_pct": 19.0,
+   "lc_note": "22% less the 3% favorable foreign exchange impact the release states",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q4 2007 print (late January)",
+   "eps_note": "diluted EPS from net earnings (no discontinued operations yet)"
+  },
+  {
+   "quarter": "Q4 2007",
+   "fy": 2007,
+   "q": 4,
+   "published": "2008-01-31",
+   "source": "BM14",
+   "release": "Jan 31",
+   "release_time": "before the open on Jan 31: 8-K accepted 07:57 ET (conference call at 10:00 a.m.)",
+   "period_end": "2007-12-31",
+   "raw": {
+    "rev_m": 5381,
+    "rev_prior_m": 4057,
+    "cos_m": 1817,
+    "cos_prior_m": 1395,
+    "pretax_m": 261,
+    "pretax_prior_m": -337,
+    "us_m": 2985,
+    "us_prior_m": 1977,
+    "intl_m": 2396,
+    "intl_prior_m": 2080,
+    "diluted_shares_m": 1975
+   },
+   "sales_b": 5.381,
+   "sales_pct": 32.6,
+   "us_pct": 51.0,
+   "intl_pct": 15.2,
+   "gross_margin": 66.23,
+   "gross_margin_bp": 61.8,
+   "pretax_margin": 4.85,
+   "pretax_margin_bp": 1315.7,
+   "eps_q": -0.07,
+   "eps_q_prior": -0.09,
+   "diluted_shares_m": 1975.0,
+   "lc_pct": 28.0,
+   "lc_note": "33% less the 5% favorable foreign exchange impact the release states",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q1 2008 print (late April)",
+   "note": "Medical Imaging, sold on January 8, 2008, is a discontinued operation from this release",
+   "fy_actual": {
+    "fy": 2007,
+    "fy_label": "FY07",
+    "eps_normalized": 0.99,
+    "revenue_usd_b": 19.348,
+    "diluted_shares_m": 1980.0,
+    "normalization_note": "FY2007 $0.99 diluted EPS from continuing operations (Q4 2007 release; GAAP, the company's non-GAAP figure is shown only: it excludes upfront and milestone payments, which recur)",
+    "gross_margin": 67.86,
+    "pretax_margin": 18.27,
+    "pretax_margin_note": "FY07 earnings from continuing operations before minority interest and income taxes $3,534M / net sales $19,348M (Q4 2007 release)",
+    "sales_growth": 12.1,
+    "us_pct": 18.2,
+    "intl_pct": 5.2,
+    "tax_rate": 0.2272,
+    "tax_note": "FY07 provision for income taxes $803M / pre-tax $3,534M"
+   },
+   "restates": {
+    "2006": {
+     "eps": 0.73,
+     "revenue_usd_b": 17.256
+    }
+   },
+   "restates_note": "FY2006 $0.73 and $17.256B from continuing operations as the Q4 2007 release restates it (Medical Imaging discontinued)"
+  },
+  {
+   "quarter": "Q1 2008",
+   "fy": 2008,
+   "q": 1,
+   "published": "2008-04-24",
+   "source": "BM16",
+   "release": "Apr 24",
+   "release_time": "before the open on Apr 24: 8-K accepted 07:54 ET (conference call at 10:30 a.m.)",
+   "period_end": "2008-03-31",
+   "raw": {
+    "rev_m": 5181,
+    "rev_prior_m": 4317,
+    "cos_m": 1657,
+    "cos_prior_m": 1340,
+    "pretax_m": 1290,
+    "pretax_prior_m": 852,
+    "us_m": 2913,
+    "us_prior_m": 2363,
+    "intl_m": 2268,
+    "intl_prior_m": 1954,
+    "diluted_shares_m": 2008
+   },
+   "sales_b": 5.181,
+   "sales_pct": 20.0,
+   "us_pct": 23.3,
+   "intl_pct": 16.1,
+   "gross_margin": 68.02,
+   "gross_margin_bp": -94.2,
+   "pretax_margin": 24.9,
+   "pretax_margin_bp": 516.3,
+   "eps_q": 0.35,
+   "eps_q_prior": 0.33,
+   "diluted_shares_m": 2008.0,
+   "lc_pct": 15.0,
+   "lc_note": "20% less the 5% favorable foreign exchange impact the release states",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q2 2008 print (late July)",
+   "note": "the release also attributes 6 points of the growth to the residual generic clopidogrel bisulfate sales of Q1 2007"
+  },
+  {
+   "quarter": "Q2 2008",
+   "fy": 2008,
+   "q": 2,
+   "published": "2008-07-24",
+   "source": "BM17",
+   "release": "Jul 24",
+   "release_time": "before the open on Jul 24: 8-K accepted 08:06 ET (conference call at 10:30 a.m.)",
+   "period_end": "2008-06-30",
+   "raw": {
+    "rev_m": 5203,
+    "rev_prior_m": 4471,
+    "cos_m": 1670,
+    "cos_prior_m": 1408,
+    "pretax_m": 1221,
+    "pretax_prior_m": 985,
+    "us_m": 2966,
+    "us_prior_m": 2583,
+    "intl_m": 2237,
+    "intl_prior_m": 1888,
+    "diluted_shares_m": 2008
+   },
+   "sales_b": 5.203,
+   "sales_pct": 16.4,
+   "us_pct": 14.8,
+   "intl_pct": 18.5,
+   "gross_margin": 67.9,
+   "gross_margin_bp": -60.5,
+   "pretax_margin": 23.47,
+   "pretax_margin_bp": 143.6,
+   "eps_q": 0.36,
+   "eps_q_prior": 0.3,
+   "diluted_shares_m": 2008.0,
+   "lc_pct": 11.0,
+   "lc_note": "16% less the 5% favorable foreign exchange impact the release states",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q3 2008 print (late October)",
+   "note": "ConvaTec, agreed to be sold in May 2008, is a discontinued operation from this release"
+  },
+  {
+   "quarter": "Q3 2008",
+   "fy": 2008,
+   "q": 3,
+   "published": "2008-10-23",
+   "source": "BM18",
+   "release": "Oct 23",
+   "release_time": "before the open on Oct 23: 8-K accepted 07:56 ET (conference call at 10:30 a.m.)",
+   "period_end": "2008-09-30",
+   "raw": {
+    "rev_m": 5254,
+    "rev_prior_m": 4601,
+    "cos_m": 1634,
+    "cos_prior_m": 1478,
+    "pretax_m": 1155,
+    "pretax_prior_m": 1256,
+    "us_m": 3064,
+    "us_prior_m": 2683,
+    "intl_m": 2190,
+    "intl_prior_m": 1918,
+    "diluted_shares_m": 2004
+   },
+   "sales_b": 5.254,
+   "sales_pct": 14.2,
+   "us_pct": 14.2,
+   "intl_pct": 14.2,
+   "gross_margin": 68.9,
+   "gross_margin_bp": 102.3,
+   "pretax_margin": 21.98,
+   "pretax_margin_bp": -531.5,
+   "eps_q": 0.3,
+   "eps_q_prior": 0.38,
+   "diluted_shares_m": 2004.0,
+   "lc_pct": 11.0,
+   "lc_note": "14% less the 3% favorable foreign exchange impact the release states",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q4 2008 print (late January)"
+  },
+  {
+   "quarter": "Q4 2008",
+   "fy": 2008,
+   "q": 4,
+   "published": "2009-01-27",
+   "source": "BM19",
+   "release": "Jan 27",
+   "release_time": "before the open on Jan 27: 8-K accepted 08:32 ET (conference call at 10:30 a.m.)",
+   "period_end": "2008-12-31",
+   "raw": {
+    "rev_m": 5249,
+    "rev_prior_m": 5058,
+    "cos_m": 1522,
+    "cos_prior_m": 1716,
+    "pretax_m": 1888,
+    "pretax_prior_m": 172,
+    "us_m": 3189,
+    "us_prior_m": 2874,
+    "intl_m": 2060,
+    "intl_prior_m": 2184,
+    "diluted_shares_m": 1982
+   },
+   "sales_b": 5.249,
+   "sales_pct": 3.8,
+   "us_pct": 11.0,
+   "intl_pct": -5.7,
+   "gross_margin": 71.0,
+   "gross_margin_bp": 493.0,
+   "pretax_margin": 35.97,
+   "pretax_margin_bp": 3256.8,
+   "eps_q": 0.61,
+   "eps_q_prior": -0.1,
+   "diluted_shares_m": 1982.0,
+   "lc_pct": 8.0,
+   "lc_note": "8% excluding foreign exchange impact, as the release states",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q1 2009 print (late April)",
+   "fy_actual": {
+    "fy": 2008,
+    "fy_label": "FY08",
+    "eps_normalized": 1.59,
+    "revenue_usd_b": 20.597,
+    "diluted_shares_m": 2001.0,
+    "normalization_note": "FY2008 $1.59 diluted EPS from continuing operations (Q4 2008 release; GAAP, the company's non-GAAP figure is shown only: it excludes upfront and milestone payments, which recur)",
+    "gross_margin": 68.95,
+    "pretax_margin": 26.56,
+    "pretax_margin_note": "FY08 earnings from continuing operations before minority interest and income taxes $5,471M / net sales $20,597M (Q4 2008 release)",
+    "sales_growth": 13.2,
+    "us_pct": 15.5,
+    "intl_pct": 10.1,
+    "tax_rate": 0.2413,
+    "tax_note": "FY08 provision for income taxes $1,320M / pre-tax $5,471M"
+   },
+   "restates": {
+    "2007": {
+     "eps": 0.88,
+     "revenue_usd_b": 18.193
+    }
+   },
+   "restates_note": "FY2007 $0.88 and $18.193B from continuing operations as the Q4 2008 release restates it (ConvaTec and Medical Imaging discontinued)"
+  },
+  {
+   "quarter": "Q1 2009",
+   "fy": 2009,
+   "q": 1,
+   "published": "2009-04-28",
+   "source": "BM21",
+   "release": "Apr 28",
+   "release_time": "before the open on Apr 28: 8-K accepted 08:39 ET (conference call at 11 a.m.)",
+   "period_end": "2009-03-31",
+   "raw": {
+    "rev_m": 5015,
+    "rev_prior_m": 4891,
+    "cos_m": 1413,
+    "cos_prior_m": 1570,
+    "pretax_m": 1384,
+    "pretax_prior_m": 1207,
+    "us_m": 3031,
+    "us_prior_m": 2747,
+    "intl_m": 1984,
+    "intl_prior_m": 2144,
+    "diluted_shares_m": 1983
+   },
+   "sales_b": 5.015,
+   "sales_pct": 2.5,
+   "us_pct": 10.3,
+   "intl_pct": -7.5,
+   "gross_margin": 71.82,
+   "gross_margin_bp": 392.4,
+   "pretax_margin": 27.6,
+   "pretax_margin_bp": 291.9,
+   "eps_q": 0.32,
+   "eps_q_prior": 0.32,
+   "diluted_shares_m": 1983.0,
+   "lc_pct": 8.0,
+   "lc_note": "8% excluding foreign exchange impact, as the release states",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q2 2009 print (late July)",
+   "note": "from this release earnings are attributable to the company after noncontrolling interest (SFAS 160)"
+  },
+  {
+   "quarter": "Q2 2009",
+   "fy": 2009,
+   "q": 2,
+   "published": "2009-07-23",
+   "source": "BM23",
+   "release": "Jul 23",
+   "release_time": "during the session on Jul 23: 8-K accepted 10:31 ET (conference call at 10:30 a.m.)",
+   "period_end": "2009-06-30",
+   "raw": {
+    "rev_m": 5384,
+    "rev_prior_m": 5203,
+    "cos_m": 1461,
+    "cos_prior_m": 1670,
+    "pretax_m": 1741,
+    "pretax_prior_m": 1221,
+    "us_m": 3247,
+    "us_prior_m": 2898,
+    "intl_m": 2137,
+    "intl_prior_m": 2305,
+    "diluted_shares_m": 1983
+   },
+   "sales_b": 5.384,
+   "sales_pct": 3.5,
+   "us_pct": 12.0,
+   "intl_pct": -7.3,
+   "gross_margin": 72.86,
+   "gross_margin_bp": 496.1,
+   "pretax_margin": 32.34,
+   "pretax_margin_bp": 886.9,
+   "eps_q": 0.49,
+   "eps_q_prior": 0.36,
+   "diluted_shares_m": 1983.0,
+   "lc_pct": 8.0,
+   "lc_note": "8% excluding foreign exchange impact, as the release states",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q3 2009 print (late October)"
+  },
+  {
+   "quarter": "Q3 2009",
+   "fy": 2009,
+   "q": 3,
+   "published": "2009-10-22",
+   "source": "BM24",
+   "release": "Oct 22",
+   "release_time": "before the open on Oct 22: 8-K accepted 09:24 ET (conference call at 10:30 a.m.)",
+   "period_end": "2009-09-30",
+   "raw": {
+    "rev_m": 5487,
+    "rev_prior_m": 5254,
+    "cos_m": 1562,
+    "cos_prior_m": 1634,
+    "pretax_m": 1724,
+    "pretax_prior_m": 1155,
+    "us_m": 3256,
+    "us_prior_m": 2983,
+    "intl_m": 2231,
+    "intl_prior_m": 2271,
+    "diluted_shares_m": 1984
+   },
+   "sales_b": 5.487,
+   "sales_pct": 4.4,
+   "us_pct": 9.2,
+   "intl_pct": -1.8,
+   "gross_margin": 71.53,
+   "gross_margin_bp": 263.3,
+   "pretax_margin": 31.42,
+   "pretax_margin_bp": 943.6,
+   "eps_q": 0.48,
+   "eps_q_prior": 0.29,
+   "diluted_shares_m": 1984.0,
+   "lc_pct": 7.0,
+   "lc_note": "7% excluding foreign exchange impact, as the release states",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q4 2009 print (late January)"
+  }
+ ],
+ "guides": [
+  {
+   "fy": 2007,
+   "published": "2007-07-26",
+   "source": "BM11",
+   "doc": "Q2 2007 release",
+   "eps_guide": [
+    1.35,
+    1.45
+   ],
+   "eps_adj": [
+    1.35,
+    1.45
+   ]
+  },
+  {
+   "fy": 2008,
+   "published": "2007-07-26",
+   "source": "BM11",
+   "doc": "Q2 2007 release",
+   "eps_adj": [
+    1.6,
+    1.7
+   ],
+   "rev_words": "mid to high single-digit revenue growth",
+   "note": "the 2008 range excludes restructuring charges and specified items: a non-GAAP basis"
+  },
+  {
+   "fy": 2007,
+   "published": "2007-10-25",
+   "source": "BM12",
+   "doc": "Q3 2007 release",
+   "eps_guide": [
+    1.28,
+    1.33
+   ],
+   "eps_adj": [
+    1.42,
+    1.47
+   ],
+   "note": "GAAP cut for the Adnexus in-process research and development charge"
+  },
+  {
+   "fy": 2008,
+   "published": "2007-10-25",
+   "source": "BM12",
+   "doc": "Q3 2007 release",
+   "eps_adj": [
+    1.6,
+    1.7
+   ],
+   "rev_words": "mid to high single-digit revenue growth",
+   "note": "the 2008 range excludes restructuring and other charges and specified items: a non-GAAP basis"
+  },
+  {
+   "fy": 2007,
+   "published": "2007-12-05",
+   "source": "BM13",
+   "doc": "8-K of 2007-12-05",
+   "eps_guide": [
+    1.15,
+    1.2
+   ],
+   "eps_adj": [
+    1.42,
+    1.47
+   ],
+   "note": "GAAP cut for about $300 million of Productivity Transformation Initiative charges in the fourth quarter"
+  },
+  {
+   "fy": 2008,
+   "published": "2007-12-05",
+   "source": "BM13",
+   "doc": "8-K of 2007-12-05",
+   "eps_guide": [
+    1.44,
+    1.54
+   ],
+   "eps_adj": [
+    1.65,
+    1.75
+   ],
+   "rev_words": "high single-digit revenue growth",
+   "note": "includes Medical Imaging (its disposal would lower EPS by about $0.05)"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-01-31",
+   "source": "BM14",
+   "doc": "Q4 2007 release",
+   "eps_guide": [
+    1.36,
+    1.46
+   ],
+   "eps_adj": [
+    1.6,
+    1.7
+   ],
+   "note": "revised for the sale of Medical Imaging; GAAP includes about $500 million of Productivity Transformation Initiative charges"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-04-24",
+   "source": "BM16",
+   "doc": "Q1 2008 release",
+   "eps_guide": [
+    1.36,
+    1.46
+   ],
+   "eps_adj": [
+    1.6,
+    1.7
+   ],
+   "note": "reaffirmed"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-07-24",
+   "source": "BM17",
+   "doc": "Q2 2008 release",
+   "eps_guide": [
+    1.36,
+    1.46
+   ],
+   "eps_adj": [
+    1.6,
+    1.7
+   ],
+   "note": "reaffirmed, with ConvaTec now a discontinued operation"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-10-23",
+   "source": "BM18",
+   "doc": "Q3 2008 release",
+   "eps_guide": [
+    1.61,
+    1.66
+   ],
+   "eps_adj": [
+    1.65,
+    1.7
+   ],
+   "note": "GAAP includes the ImClone tender gain; $1.32-1.37 if the cash were not received"
+  },
+  {
+   "fy": 2009,
+   "published": "2009-01-27",
+   "source": "BM19",
+   "doc": "Q4 2008 release",
+   "eps_guide": [
+    1.58,
+    1.73
+   ],
+   "eps_adj": [
+    1.85,
+    2.0
+   ],
+   "rev_words": "low single-digit revenue growth (mid-to-high single digit growth excluding foreign exchange)"
+  },
+  {
+   "fy": 2009,
+   "published": "2009-04-28",
+   "source": "BM21",
+   "doc": "Q1 2009 release",
+   "eps_guide": [
+    1.58,
+    1.73
+   ],
+   "eps_adj": [
+    1.85,
+    2.0
+   ],
+   "rev_words": "low single-digit revenue growth (mid-to-high single digit growth excluding foreign exchange)",
+   "note": "reaffirmed"
+  },
+  {
+   "fy": 2009,
+   "published": "2009-07-23",
+   "source": "BM23",
+   "doc": "Q2 2009 release",
+   "eps_guide": [
+    1.58,
+    1.68
+   ],
+   "eps_adj": [
+    1.95,
+    2.05
+   ],
+   "rev_words": "low single-digit revenue growth (high single digit growth excluding foreign exchange)",
+   "note": "includes the planned acquisition of Medarex"
+  },
+  {
+   "fy": 2009,
+   "published": "2009-10-22",
+   "source": "BM24",
+   "doc": "Q3 2009 release",
+   "eps_guide": [
+    1.72,
+    1.77
+   ],
+   "eps_adj": [
+    2.0,
+    2.05
+   ],
+   "rev_words": "mid single-digit revenue growth (high single digit growth excluding foreign exchange)"
+  },
+  {
+   "fy": 2009,
+   "published": "2009-12-24",
+   "source": "BM25",
+   "doc": "8-K of 2009-12-24",
+   "eps_guide": [
+    1.51,
+    1.56
+   ],
+   "eps_adj": [
+    1.75,
+    1.8
+   ],
+   "note": "Mead Johnson, split off on December 23, 2009, out as a discontinued operation; GAAP also lowered for upfront licensing payments and BMS Foundation funding"
+  }
+ ],
+ "dividends": [
+  {
+   "published": "2007-12-05",
+   "source": "BM13",
+   "quarterly": 0.31,
+   "note": "$0.31 quarterly ('a quarterly dividend of thirty-one cents ($.31) per share', declared December 5, 2007; 8-K of 2007-12-05)"
+  }
+ ],
+ "events": [],
+ "company_names": [],
+ "splits": [],
+ "distributions": [
+  {
+   "effective": "2001-08-07",
+   "yahoo_ratio": [
+    1000000,
+    951777
+   ],
+   "source": "BM4",
+   "kind": "spin-off",
+   "note": "the spin-off of Zimmer Holdings on August 6, 2001 ('in a tax-free distribution', FY2001 10-K405); Yahoo books it as a 1000000:951777 split on 2001-08-07, the first day the stock traded without it; it is not a split, so its factor is undone for the days before and prices stay as traded (the MAR and PFE 'distributions' rule). Every P/E window here starts in 2002, so no model uses a price before it"
+  }
+ ],
+ "rule_t": {
+  "_doc": "Rule T over fiscal 1997-2006, the decade of the FY2006 10-K (the vintage public on 2008-01-04): each year-on-year change from the latest 10-K (or 10-K/A) published by then that reports both years. U.S. and international net sales from the geographic data (international = the consolidated total less the United States; the FY1998 and FY1999 10-Ks state the United States before inter-area eliminations), the gross margin from the statements of earnings (net sales less cost of products sold), net sales growth and the pre-tax margin (earnings from continuing operations before minority interest and income taxes) from the five-year financial summaries. Seams stay in, as published: Clairol and Zimmer discontinued from the FY2000 10-K, the 2003 restatement (wholesaler inventory) in the FY2001 10-K/A and FY2002 10-K, the 2004 restatement in the FY2003 10-K/A, OTN discontinued from the FY2004 10-K, and 2001's acquired in-process research and development ($2,772 million, DuPont Pharmaceuticals) in its pre-tax earnings. Thresholds: XBULL the best year, BULL the median, BASE the worst, BEAR one median-to-worst step beyond the worst; whole percent and 10 bp, rounded half up.",
+  "us": {
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "1997": 14.0,
+    "1998": 13.74,
+    "1999": 18.72,
+    "2000": 13.05,
+    "2001": 2.47,
+    "2002": -3.85,
+    "2003": 12.76,
+    "2004": -0.4,
+    "2005": -1.43,
+    "2006": -7.0
+   },
+   "raw": {
+    "1997": {
+     "source": "BM1",
+     "us_m": [
+      9661,
+      11014
+     ],
+     "total_m": [
+      15065,
+      16701
+     ]
+    },
+    "1998": {
+     "source": "BM2",
+     "us_m": [
+      11014,
+      12527
+     ],
+     "total_m": [
+      16701,
+      18284
+     ]
+    },
+    "1999": {
+     "source": "BM3",
+     "us_m": [
+      8955,
+      10631
+     ],
+     "total_m": [
+      15061,
+      16878
+     ]
+    },
+    "2000": {
+     "source": "BM5",
+     "us_m": [
+      10255,
+      11593
+     ],
+     "total_m": [
+      16502,
+      17695
+     ]
+    },
+    "2001": {
+     "source": "BM6",
+     "us_m": [
+      11461,
+      11744
+     ],
+     "total_m": [
+      17538,
+      17987
+     ]
+    },
+    "2002": {
+     "source": "BM7",
+     "us_m": [
+      11802,
+      11348
+     ],
+     "total_m": [
+      18044,
+      18106
+     ]
+    },
+    "2003": {
+     "source": "BM8",
+     "us_m": [
+      9450,
+      10656
+     ],
+     "total_m": [
+      16208,
+      18653
+     ]
+    },
+    "2004": {
+     "source": "BM9",
+     "us_m": [
+      10656,
+      10613
+     ],
+     "total_m": [
+      18653,
+      19380
+     ]
+    },
+    "2005": {
+     "source": "BM10",
+     "us_m": [
+      10613,
+      10461
+     ],
+     "total_m": [
+      19380,
+      19207
+     ]
+    },
+    "2006": {
+     "source": "BM10",
+     "us_m": [
+      10461,
+      9729
+     ],
+     "total_m": [
+      19207,
+      17914
+     ]
+    }
+   },
+   "thresholds": {
+    "BEAR": -22,
+    "BASE": -7,
+    "BULL": 8,
+    "XBULL": 19
+   }
+  },
+  "intl": {
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "1997": 5.24,
+    "1998": 1.23,
+    "1999": 2.31,
+    "2000": -2.32,
+    "2001": 2.73,
+    "2002": 8.27,
+    "2003": 18.33,
+    "2004": 9.63,
+    "2005": -0.24,
+    "2006": -6.41
+   },
+   "raw": {
+    "1997": {
+     "source": "BM1",
+     "us_m": [
+      9661,
+      11014
+     ],
+     "total_m": [
+      15065,
+      16701
+     ]
+    },
+    "1998": {
+     "source": "BM2",
+     "us_m": [
+      11014,
+      12527
+     ],
+     "total_m": [
+      16701,
+      18284
+     ]
+    },
+    "1999": {
+     "source": "BM3",
+     "us_m": [
+      8955,
+      10631
+     ],
+     "total_m": [
+      15061,
+      16878
+     ]
+    },
+    "2000": {
+     "source": "BM5",
+     "us_m": [
+      10255,
+      11593
+     ],
+     "total_m": [
+      16502,
+      17695
+     ]
+    },
+    "2001": {
+     "source": "BM6",
+     "us_m": [
+      11461,
+      11744
+     ],
+     "total_m": [
+      17538,
+      17987
+     ]
+    },
+    "2002": {
+     "source": "BM7",
+     "us_m": [
+      11802,
+      11348
+     ],
+     "total_m": [
+      18044,
+      18106
+     ]
+    },
+    "2003": {
+     "source": "BM8",
+     "us_m": [
+      9450,
+      10656
+     ],
+     "total_m": [
+      16208,
+      18653
+     ]
+    },
+    "2004": {
+     "source": "BM9",
+     "us_m": [
+      10656,
+      10613
+     ],
+     "total_m": [
+      18653,
+      19380
+     ]
+    },
+    "2005": {
+     "source": "BM10",
+     "us_m": [
+      10613,
+      10461
+     ],
+     "total_m": [
+      19380,
+      19207
+     ]
+    },
+    "2006": {
+     "source": "BM10",
+     "us_m": [
+      10461,
+      9729
+     ],
+     "total_m": [
+      19207,
+      17914
+     ]
+    }
+   },
+   "thresholds": {
+    "BEAR": -15,
+    "BASE": -6,
+    "BULL": 3,
+    "XBULL": 18
+   }
+  },
+  "sales": {
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "1997": 11.66,
+    "1998": 9.83,
+    "1999": 9.96,
+    "2000": 6.23,
+    "2001": 1.06,
+    "2002": -2.43,
+    "2003": 15.09,
+    "2004": 3.9,
+    "2005": -0.89,
+    "2006": -6.73
+   },
+   "raw": {
+    "1997": {
+     "source": "BM3",
+     "revenues_m": [
+      12268,
+      13698
+     ]
+    },
+    "1998": {
+     "source": "BM5",
+     "revenues_m": [
+      13664,
+      15007
+     ]
+    },
+    "1999": {
+     "source": "BM6",
+     "revenues_m": [
+      15007,
+      16502
+     ]
+    },
+    "2000": {
+     "source": "BM7",
+     "revenues_m": [
+      16491,
+      17519
+     ]
+    },
+    "2001": {
+     "source": "BM8",
+     "revenues_m": [
+      16438,
+      16612
+     ]
+    },
+    "2002": {
+     "source": "BM9",
+     "revenues_m": [
+      16612,
+      16208
+     ]
+    },
+    "2003": {
+     "source": "BM10",
+     "revenues_m": [
+      16208,
+      18653
+     ]
+    },
+    "2004": {
+     "source": "BM10",
+     "revenues_m": [
+      18653,
+      19380
+     ]
+    },
+    "2005": {
+     "source": "BM10",
+     "revenues_m": [
+      19380,
+      19207
+     ]
+    },
+    "2006": {
+     "source": "BM10",
+     "revenues_m": [
+      19207,
+      17914
+     ]
+    }
+   },
+   "thresholds": {
+    "BEAR": -19,
+    "BASE": -7,
+    "BULL": 5,
+    "XBULL": 15
+   }
+  },
+  "gross_margin": {
+   "unit": 10,
+   "lower_is_better": false,
+   "values": {
+    "1997": -41.0,
+    "1998": 17.0,
+    "1999": -104.3,
+    "2000": 29.0,
+    "2001": -334.6,
+    "2002": -551.2,
+    "2003": -3.9,
+    "2004": -192.1,
+    "2005": 3.9,
+    "2006": -238.4
+   },
+   "raw": {
+    "1997": {
+     "source": "BM1",
+     "revenues_m": [
+      15065,
+      16701
+     ],
+     "cost_of_sales_m": [
+      3965,
+      4464
+     ]
+    },
+    "1998": {
+     "source": "BM2",
+     "revenues_m": [
+      16701,
+      18284
+     ],
+     "cost_of_sales_m": [
+      4464,
+      4856
+     ]
+    },
+    "1999": {
+     "source": "BM3",
+     "revenues_m": [
+      15061,
+      16878
+     ],
+     "cost_of_sales_m": [
+      3896,
+      4542
+     ]
+    },
+    "2000": {
+     "source": "BM5",
+     "revenues_m": [
+      16502,
+      17695
+     ],
+     "cost_of_sales_m": [
+      4458,
+      4729
+     ]
+    },
+    "2001": {
+     "source": "BM6",
+     "revenues_m": [
+      17538,
+      17987
+     ],
+     "cost_of_sales_m": [
+      4730,
+      5453
+     ]
+    },
+    "2002": {
+     "source": "BM7",
+     "revenues_m": [
+      18044,
+      18106
+     ],
+     "cost_of_sales_m": [
+      5515,
+      6532
+     ]
+    },
+    "2003": {
+     "source": "BM8",
+     "revenues_m": [
+      16208,
+      18653
+     ],
+     "cost_of_sales_m": [
+      4691,
+      5406
+     ]
+    },
+    "2004": {
+     "source": "BM9",
+     "revenues_m": [
+      18653,
+      19380
+     ],
+     "cost_of_sales_m": [
+      5406,
+      5989
+     ]
+    },
+    "2005": {
+     "source": "BM10",
+     "revenues_m": [
+      19380,
+      19207
+     ],
+     "cost_of_sales_m": [
+      5989,
+      5928
+     ]
+    },
+    "2006": {
+     "source": "BM10",
+     "revenues_m": [
+      19207,
+      17914
+     ],
+     "cost_of_sales_m": [
+      5928,
+      5956
+     ]
+    }
+   },
+   "thresholds": {
+    "BEAR": -1030,
+    "BASE": -550,
+    "BULL": -70,
+    "XBULL": 30
+   }
+  },
+  "pretax_margin": {
+   "unit": 10,
+   "lower_is_better": false,
+   "values": {
+    "1997": -61.3,
+    "1998": -346.4,
+    "1999": 562.4,
+    "2000": 134.1,
+    "2001": -1834.5,
+    "2002": 339.8,
+    "2003": 813.5,
+    "2004": -229.3,
+    "2005": 71.6,
+    "2006": -880.3
+   },
+   "raw": {
+    "1997": {
+     "source": "BM3",
+     "revenues_m": [
+      12268,
+      13698
+     ],
+     "pretax_m": [
+      3423,
+      3738
+     ]
+    },
+    "1998": {
+     "source": "BM5",
+     "revenues_m": [
+      13664,
+      15007
+     ],
+     "pretax_m": [
+      3671,
+      3512
+     ]
+    },
+    "1999": {
+     "source": "BM6",
+     "revenues_m": [
+      15007,
+      16502
+     ],
+     "pretax_m": [
+      3512,
+      4790
+     ]
+    },
+    "2000": {
+     "source": "BM7",
+     "revenues_m": [
+      16491,
+      17519
+     ],
+     "pretax_m": [
+      4733,
+      5263
+     ]
+    },
+    "2001": {
+     "source": "BM8",
+     "revenues_m": [
+      16438,
+      16612
+     ],
+     "pretax_m": [
+      5244,
+      2252
+     ]
+    },
+    "2002": {
+     "source": "BM9",
+     "revenues_m": [
+      16612,
+      16208
+     ],
+     "pretax_m": [
+      2252,
+      2748
+     ]
+    },
+    "2003": {
+     "source": "BM10",
+     "revenues_m": [
+      16208,
+      18653
+     ],
+     "pretax_m": [
+      2748,
+      4680
+     ]
+    },
+    "2004": {
+     "source": "BM10",
+     "revenues_m": [
+      18653,
+      19380
+     ],
+     "pretax_m": [
+      4680,
+      4418
+     ]
+    },
+    "2005": {
+     "source": "BM10",
+     "revenues_m": [
+      19380,
+      19207
+     ],
+     "pretax_m": [
+      4418,
+      4516
+     ]
+    },
+    "2006": {
+     "source": "BM10",
+     "revenues_m": [
+      19207,
+      17914
+     ],
+     "pretax_m": [
+      4516,
+      2635
+     ]
+    }
+   },
+   "thresholds": {
+    "BEAR": -3670,
+    "BASE": -1830,
+    "BULL": 10,
+    "XBULL": 810
+   }
+  }
+ },
+ "price_basis": "Yahoo's BMY series is adjusted for the 2-for-1 splits of 1997-03-03 and 1999-03-01 and books the 2001 Zimmer spin-off as a 1000000:951777 split on 2001-08-07; none follows 2001, so from 2002 Yahoo's close is the price as traded ($26.52 on 2007-12-31, the fourth-quarter 2007 low the FY2007 10-K reports). No per-share fact in this file was published before the 1999 split (every history year comes from a filing of 2003 or later), so 'splits' is empty; the spin-off factor is a 'distributions' record."
+}

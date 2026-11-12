@@ -1,0 +1,226 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "BMY",
+ "company": "Bristol-Myers Squibb Company",
+ "as_of": "2008-01-11",
+ "price_date": "2008-01-11",
+ "price": 26.48,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); pharmaceutical signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'The Company, through its divisions and subsidiaries, is engaged in the discovery, development, licensing, manufacturing, marketing, distribution and sale of pharmaceuticals and other health care related products.' (FY2006 10-K, Item 1); 'In the pharmaceutical industry, the majority of an innovative product’s commercial value is usually realized during the period in which the product has market exclusivity.' (Item 1); 'The Company faces competition from other pharmaceutical manufacturers, including from lower-priced generic products.' (Item 1A heading); 'The composition of matter patent for PLAVIX*, which expires in 2011, is currently the subject of patent litigation in the U.S. with Apotex Inc. and Apotex Corp. (Apotex)' (Item 1A)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, NEUTRALLY VALUED",
+  "quality_label": "◎ QUALITY, NEUTRALLY VALUED",
+  "quality_color": "#f0b429",
+  "quality_tone": "amber",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "FAIR",
+  "quality_note": "'The Company, through its divisions and subsidiaries, is engaged in the discovery, development, licensing, manufacturing, marketing, distribution and sale of pharmaceuticals and other health care related products.' (FY2006 10-K, Item 1); 'In the pharmaceutical industry, the majority of an innovative product’s commercial value is usually realized during the period in which the product has market exclusivity.' (Item 1); 'The Company faces competition from other pharmaceutical manufacturers, including from lower-priced generic products.' (Item 1A heading); 'The composition of matter patent for PLAVIX*, which expires in 2011, is currently the subject of patent litigation in the U.S. with Apotex Inc. and Apotex Corp. (Apotex)' (Item 1A). durable franchise (obsolescence risk 2/5); price fair; Ratio B 1.30x; +19% to EPP floor; model-vs-market gap +1.50; conservative 2yr +43%.",
+  "theme": null
+ },
+ "legacy_signal_short": "WATCHLIST",
+ "legacy_signal": "◐ WATCHLIST",
+ "metrics": {
+  "ratio_b": 1.3,
+  "ratio_b_fmt": "1.30x",
+  "epp": 22.32,
+  "epp_gap_pct": 18.6,
+  "epp_adj": 0.0,
+  "proxy_composite": 3.5,
+  "sca": 0.22,
+  "adj_composite": 3.72,
+  "market_composite": 2.22,
+  "adj_gap": 1.5,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 42.7,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.33,
+    "pe": 15.7,
+    "price": 5,
+    "desc": "EPS -46.7%/yr (worst year FY02-FY06, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 1.66,
+    "pe": 22.3,
+    "price": 37,
+    "desc": "EPS +18.7%/yr (Q3 sales ex-FX + margin + buyback); P/E at its 6.0-yr median"
+   },
+   "BULL": {
+    "eps": 1.66,
+    "pe": 26.1,
+    "price": 43,
+    "desc": "EPS +18.7%/yr (FY02-FY06 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 1.66,
+    "pe": 30.6,
+    "price": 51,
+    "desc": "EPS +18.7%/yr (best 2-yr run FY02-FY06); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 1.3,
+   "epp_gap_pct": 18.6,
+   "adj_gap": 1.5,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 42.7,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.88,
+   "epp_gap_pct": 18.6,
+   "adj_gap": 1.89,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 42.7,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 2.04,
+   "epp_gap_pct": 18.6,
+   "adj_gap": 0.82,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 42.7,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 1.16,
+   "epp_gap_pct": 18.6,
+   "adj_gap": 1.6,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 42.7,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 1.38,
+   "epp_gap_pct": 18.6,
+   "adj_gap": 1.41,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 42.7,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 1.3,
+   "epp_gap_pct": 18.6,
+   "adj_gap": 1.8,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 42.7,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 1.3,
+   "epp_gap_pct": 2.4,
+   "adj_gap": 1.5,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 42.7,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 1.3,
+   "epp_gap_pct": 18.6,
+   "adj_gap": 1.77,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 42.7,
+   "price_state": "FAIR"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP",
+  "FAIR",
+  "RICH"
+ ],
+ "summary": "BMY (retrospective, 2008-01-11) ◐ WATCHLIST — Ratio B 1.30x (81.1% downside to Bear $5 / +62.4% upside to Bull $43) | Adj composite 3.72 vs market 2.22: gap +1.50 [UNDERVALUED] | +19% above the EPP floor $22 (19x FY07E $1.18) | Conservative 2-yr case: +42.7% total (+21.3%/yr) | At 22.5x FY07E the 15% hurdle price $35 sits at or below the BASE case; U.S. revenues +34.6% in Q3 2007, forward revenues +19% (no FY07 revenue guide in numbers, Q3 2007 net sales growth ex-FX); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "BM10",
+   "published": "2007-02-27",
+   "filed": "2007-02-26 17:25 ET (after the close)",
+   "title": "Bristol-Myers Squibb FY2006 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312507039915/d10k.htm",
+   "supports": "five-year summary 2002-2006 (net sales, pre-tax earnings, diluted EPS from continuing operations $1.06, $1.59, $1.21, $1.52, $0.81 and diluted shares); statement of earnings 2004-2006 (cost of products sold, provision for income taxes $610M in 2006); geographic areas 2004-2006; cash flows; segment net sales; the $0.28 quarterly dividend; durability wording (Items 1 and 1A)"
+  },
+  {
+   "id": "BM9",
+   "published": "2006-03-14",
+   "filed": "2006-03-13 17:34 ET (after the close)",
+   "title": "Bristol-Myers Squibb FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312506052456/d10k.htm",
+   "supports": "statement of earnings 2003-2005 (net sales $18,653M, $19,380M, $19,207M; cost of products sold $5,406M, $5,989M, $5,928M); geographic areas, United States $10,656M, $10,613M, $10,461M; five-year summary 2001-2005 (2001: net sales $16,612M, pre-tax $2,252M, earnings from continuing operations $1,866M, $0.95 a diluted share, 1,965M shares; 2002 net sales $16,208M, pre-tax $2,748M)"
+  },
+  {
+   "id": "BM7",
+   "published": "2004-06-29",
+   "filed": "2004-06-28 16:18 ET (after the close)",
+   "title": "Bristol-Myers Squibb FY2003 10-K/A (restated)",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312504110278/d10ka.htm",
+   "supports": "restated statement of earnings 2001-2003 (net sales $18,044M, $18,106M, $20,894M; cost of products sold $5,515M, $6,532M, $7,592M); geographic areas, United States $11,802M, $11,348M, $12,897M; five-year summary 1999-2003 (net sales $16,491M and $17,519M, pre-tax $4,733M and $5,263M for 1999 and 2000); the items affecting the comparability of 2001 ($2,962M before and $1,905M after taxes)"
+  },
+  {
+   "id": "BM11",
+   "published": "2007-07-26",
+   "filed": "2007-07-26 10:29 ET (during the session)",
+   "title": "Bristol-Myers Squibb Q2 2007 results (8-K, Exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312507162526/dex991.htm",
+   "supports": "Q2 2007 statement of earnings (net sales $4,928M vs $4,871M, cost of products sold $1,549M vs $1,568M, pre-tax $1,157M vs $1,110M, diluted EPS $0.36 vs $0.34, 2,006M diluted shares); U.S. $2,830M vs $2,806M and international $2,098M vs $2,065M net sales (supplemental exhibit); net sales growth 1% less the 2% favorable foreign exchange impact the release states; FY2007 guide: GAAP EPS $1.35-1.45, non-GAAP EPS $1.35-1.45; FY2008 guide: non-GAAP EPS $1.60-1.70 (mid to high single-digit revenue growth, in words)"
+  },
+  {
+   "id": "BM12",
+   "published": "2007-10-25",
+   "filed": "2007-10-25 08:50 ET (before the open)",
+   "title": "Bristol-Myers Squibb Q3 2007 results (8-K, Exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312507225360/dex991.htm",
+   "supports": "Q3 2007 statement of earnings (net sales $5,050M vs $4,154M, cost of products sold $1,622M vs $1,465M, pre-tax $1,411M vs $617M, diluted EPS $0.43 vs $0.17, 2,012M diluted shares); U.S. $2,920M vs $2,170M and international $2,130M vs $1,984M net sales (supplemental exhibit); net sales growth 22% less the 3% favorable foreign exchange impact the release states; FY2007 guide: GAAP EPS $1.28-1.33, non-GAAP EPS $1.42-1.47; FY2008 guide: non-GAAP EPS $1.60-1.70 (mid to high single-digit revenue growth, in words)"
+  },
+  {
+   "id": "BM13",
+   "published": "2007-12-05",
+   "filed": "2007-12-05 12:14 ET (during the session)",
+   "title": "Bristol-Myers Squibb 8-K of 2007-12-05 (investor meeting release: guidance and dividend)",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312507259399/dex991.htm",
+   "supports": "2007 guidance revised (GAAP $1.15-1.20, non-GAAP $1.42-1.47 reaffirmed); 2008 guidance (GAAP $1.44-1.54, non-GAAP $1.65-1.75, high single-digit revenue growth in words); the dividend raised to $0.31 a quarter"
+  },
+  {
+   "id": "BM4",
+   "published": "2002-04-01",
+   "filed": "2002-04-01 (EDGAR gives the filing date only)",
+   "title": "Bristol-Myers Squibb FY2001 10-K405",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000091205702013034/a2074555z10-k405.htm",
+   "supports": "the Zimmer spin-off: 'On August 6, 2001, the Company spun off Zimmer Holdings, Inc., in a tax-free distribution, resulting in a common stock dividend of $203 million.'"
+  },
+  {
+   "id": "W0",
+   "published": "2008-01-11",
+   "title": "Yahoo Finance daily prices, BMY and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/BMY/history",
+   "supports": "close $26.48 as traded on AS_OF, 52-week range, realized vol, beta, the 6.0-yr P/E distribution"
+  }
+ ],
+ "warnings": [
+  "calendar year(s) 2011 after 2008 outside FY labels — make sure they are forecasts"
+ ],
+ "generated": "2026-11-12"
+}
