@@ -14587,7 +14587,11 @@ and source finds none before its publication (0 of 27,362 pairs after dropping 2
 84 hits explained: a template phrase every print note carries, 32; the FY2008 10-K's FY2004-FY2007 diluted shares, which equal the FY2007
 10-K's times the 1.5 split factor, 48; the January 25, 2009 cash balance the Q4 FY09 release had already published, 4). Rebuilding the
 2008 dates of ACN, UNP, LOW, AAPL, NKE, PEP, MSFT, XOM, SHW, WMT, RCL, MAR, BKR, PFE, CMCSA, CAT and BMY and the 2009 dates of AVGO
-changes nothing (923 models). All 105 dates pass `retro_tool run`; their only warnings are digits of decimals (FY01 EPS
+changes nothing (923 models). The firewall (every kind of fact planted after the cutoff with absurd values, including absurd full-year
+actuals for the year after the latest vintage, a later Q4 print excluding its own year, a later vintage excluding a year with a planted
+share basis, a later guide in numbers and in words for every guided quarter, a later split on the price data's next split date, and
+prices from the cutoff multiplied by 10) changes no model and leaves no planted text at any of the 19 cutoffs above (1 to 105 dates
+each). All 105 dates pass `retro_tool run`; their only warnings are digits of decimals (FY01 EPS
 0.2067, a segment's $0.2081B) and fiscal-year words ("fiscal year 2009") read as calendar years.
 
 Seen in the build (method behaviour, not tuned):
