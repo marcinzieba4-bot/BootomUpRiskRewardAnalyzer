@@ -14342,6 +14342,26 @@ found). Decided on 2026-11-12, before any 2022-2026 outcome was computed:
 - **Firewall:** BMY's planted guide gains a dollar range, a growth range excluding foreign exchange, their label and the non-GAAP note.
 - **Anachronism list:** unchanged. The new facts quote no company or product name first used after 2021 (the guide notes name none).
 
+Controls: altering one value of each new print (its U.S./international split and its growth excluding foreign exchange; each Q4
+print's full-year revenues and, where the year is kept, its full-year EPS, where it is excluded, its exclusion note), vintage (its last
+year's EPS or exclusion note, and its dividend), guide (its GAAP and non-GAAP EPS ranges, each dollar and growth revenue guide and each
+revenue guide in words) and dividend, rerun over the 280 dates from 2021-07-02 (the firewall below covers every earlier date), changes no
+date before its publication and changes the first weekly date on or after it: 109 of 114. The other 5 are inert by design: the exclusion
+notes of 2021 and 2022 on their Q4 prints and vintages (a note shows only while the excluded year lies between the last full year and a
+current year without a GAAP guide, and FY2022 and FY2023 have one) and the J.P. Morgan deck's FY2022 revenue figure (the Q4 2021 release
+restates it when FY2022 becomes current). A scan of the 985 models for the source ids, titles, texts and figures (four significant
+digits or more) of every fact finds 467 of 1,087,677 pairs before publication (after dropping years and 78 texts an earlier fact
+already carries), none a leak: the coincidences of 2008-2021 and four new ones, each a price or an earlier fact's figure (the 52-week
+high of $77.12 in the 53 models from 2016-07-15 and Q2 2022's 77.12% gross margin; FY2020's $2,124M tax provision in the 53 models from
+2021-02-05 and Q4 2022's 2,124M diluted shares; 2010-04-16's close of $25.48 and Q3 2025's 25.48% pre-tax margin; 2025-06-13's close of
+$49.75 and the Q3 2026 guide's $49.75B). The firewall (every kind of fact planted after the cutoff with absurd values, now with a guide carrying a dollar range, a growth range
+excluding foreign exchange, their label and a non-GAAP note, and prices from the cutoff multiplied by 10) changes no model and leaves
+no planted text at any of the 29 cutoffs above (732 to 985 dates each). All 253 dates pass `retro_tool run`; 145 draw a warning for "2027", "2039" or
+"2078", the diluted share counts of 2024, 2025 and 2023 (2,027M, 2,039M and 2,078M) in the share history, which the year check reads
+as years. Two slips were caught before the build was committed and are fixed in it: the FY2021 vintage's normalization text first
+named the non-GAAP change of 2022-04-18 (`retro_tool run` refused the 10 dates before it), and the engine comment first named the
+excluded years of this batch (text in every model's engine, so in the 732 earlier models too; it now states the rule without dates).
+
 Seen in the build (method behaviour, not tuned):
 - **January 2022: FAIR on all 4 dates** (WATCHLIST). FY21E is the Q3 2021 guide's $2.755: $62.83-64.93 is 22.8-23.6x (33rd-38th
   percentile of a window whose median is 25.9-26.3x), 9-12% over a 21x floor ($57.85); BASE +7.0%/yr (Q3 2021's +10% ex-FX less the
