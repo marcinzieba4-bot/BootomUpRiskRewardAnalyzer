@@ -1,0 +1,147 @@
+
+════════════════════════════════════════════════════════════════════════
+  BMY  ·  Bristol-Myers Squibb Company  ·  $50.26  ·  RETROSPECTIVE as of 2014-09-12
+  Signal: ✕ AVOID   Ratio B: 9.97x   Adj gap: -0.48  [MODESTLY OVERVALUED]
+  Point-in-time: 11 sources, latest published 2014-09-12; latest print Q2 2014 (Jul 24)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2014E revenues, USD bn  →  FY2016E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2014E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  BioPharmaceuticals        $    15.5  $  15.5  $  15.2      +0.0      -0.3
+    -7.0% revenues in FY13
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    15.5  $  15.5  $  15.2      +0.0      -0.3
+  FY2014E = FY13 $16.39B × (1 − 5.4%: FY14 revenue guide midpoint); split pro rata to FY13 total revenues, one segment (FY2013 10-K)
+  Q2 2014 (Jul 24): revenues $3.89B -3.9%; U.S. -7.0%; international -0.7%; gross margin 74.52% (+188.9bp);
+  pre-tax margin 11.52% (-157.3bp); EPS $0.20 vs $0.32
+  U.S. net sales $1.901B (-7.0%), international $1.988B (-0.7%), each against the year-ago quarter in the same release; net sales growth ex-FX -4% (the supplement's -4% change with no foreign exchange impact ('—'))
+  FY14 guide (Q4 2013 release, Q1 2014 release, Q2 2014 release): GAAP EPS $1.50-1.60; non-GAAP EPS $1.70-1.80 (shown only: it excludes upfront and milestone licensing payments, which recur); worldwide revenues $15.2-15.8B (-7.2% to -3.6% on FY13's $16.39B); GAAP lowered for impairment and additional restructuring charges; line items unchanged
+
+  FY2014E EPS check:  $15.5B × 17.6% pre-tax × (1−10.8%) ÷ 1.669B  =  $1.46  (FY2014E GAAP EPS from continuing operations, guide midpoint)
+  FY2016E BEAR check: $15.5B × 17.6% ÷ 1.605B  =  $1.52  (scenario $0.19)
+  FY2016E BULL check: $15.2B × 18.0% ÷ 1.605B  =  $1.52  (scenario $1.70)
+  Every 1pp of pre-tax margin ≈ $0.08 EPS ≈ $2/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  U.S. revenue growth                -22.0%   ≥-7.0%    ≥8.0%   ≥19.0%     -7.0%  ◦ BASE  ██░░
+  International revenue growth       -15.0%   ≥-6.0%    ≥3.0%   ≥18.0%     -0.7%  ◦ BASE  ██░░
+  Revenue growth                     -19.0%   ≥-7.0%    ≥5.0%   ≥15.0%     -3.9%  ◦ BASE  ██░░
+  Gross margin change               -1030.0bp  ≥-550.0bp  ≥-70.0bp  ≥30.0bp  +188.9bp  ★ XBULL  ████
+  Pre-tax margin change             -3670.0bp  ≥-1830.0bp  ≥10.0bp  ≥810.0bp  -157.3bp  ◦ BASE  ██░░
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.30 / 4.00
+  Market composite:   2.60 / 4.00  (back-solved from $50 + 15% hurdle)
+  SCA adjustment:    -0.08  ·  EPP-distance adj -0.10  →  Adj composite 2.12  →  Gap -0.48  [MODESTLY OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY13 net sales -7.0% (U.S. -19.9%, international +11.5%), BioPharmaceuticals 100% of net sales; Q2 gross margin 74.52% (+188.9bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 32.4x FY14E vs a 22.4x 10-yr median (75th percentile of its own range)  (-0.42 × 25%  =  -0.105)
+    -  Growth vs own history: FY14 revenue guide -7.2% to -3.6% vs a 3.6% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  FY13 year-end cash and marketable securities $8.27B, FY13 free cash flow $3.01B, dividend $1.44 a year, 11 million shares repurchased in 2013 for $413 million (FY2013 10-K, statement of equity)  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  U.S. revenue growth                  -7.0%    -22.0%  -15.0%  Generic entry as U.S. patents expire
+  International revenue growth         -0.7%    -15.0%  -14.3%  Price cuts, generics and currency abroad
+  Revenue growth                       -3.9%    -19.0%  -15.1%  Exclusivity losses outrun new products
+  Gross margin change               +188.9bp  -1030.0bp  -1218.9bp  Write-offs and mix raise cost of sales
+  Pre-tax margin change             -157.3bp  -3670.0bp  -3512.7bp  Charges and deleverage on falling sales
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$15  (model)  /  $3 (defined)
+  Bear probability (proxy model):  12.9%
+
+  KEY TRIGGER: U.S. revenue growth went from -10.5% (Q1 2014) to -7.0% (Q2 2014);
+  the bear case needs U.S. exclusivity losses that international growth (-0.7% now)
+  and the cost base no longer absorb. Exclusivity losses drive the decline, by the company's own account; the bear needs
+  new products and cost cuts to stop covering them.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $1.55  (FY2014E GAAP EPS from continuing operations, guide midpoint)
+  Min viable P/E at panic:          21x  [median of calendar-year P/E lows: 2004 22.5x, 2005 18.3x, 2006 50.6x, 2007 40.2x, 2008 12.8x, 2009 10.7x, 2010 12.5x, 2011 11.6x, 2012 26.6x, 2013 21.2x, 2014 30.1x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $33/share
+  Current $50 vs Updated EPP $33:  +54%  ⚠ far above floor — large drawdown room
+  Bear $3 vs Updated EPP $33:  -91%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  U.S. revenue growth                         -7.0       +0.0   BASE floor (vs -7 now)
+  International revenue growth                -6.0       -5.3   BASE floor (vs -1 now)
+  Revenue growth                              -7.0       -3.1   BASE floor (vs -4 now)
+  Gross margin change                       -550.0     -738.9   BASE floor (vs +189 now)
+  Pre-tax margin change                    -1830.0    -1672.7   BASE floor (vs -157 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $1.55 × (1+0.0%)² = $1.55
+  At 22x P/E (conservative):  $34/share
+  + Cumul. dividends (2yr):  +$2.97/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $34  (▼16 from $50)
+  Conservative total return:  -26% over 2yr  = -13%/yr
+
+  0.0% EPS growth is what is left once the premium multiple (32.4x)
+  mean-reverts to 22x. Breakeven at 22x needs FY2016E EPS of $2.15,
+  i.e. 17.8%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $43.28  –  $57.49  (at 49th pct of range)
+  Annual dividend:      $1.44/share  (yield 2.9%)
+  Realized vol (1yr):   23% annualized
+  Beta vs broad market: 1.21
+  1-sigma range (1yr):  $39  –  $62  ($50 ± 23%)
+  2-sigma range (1yr):  $27  –  $73
+  ────────────────────────────────────────────────────────────
+  Bear $3 requires:  ~4.1σ price move  (unusual — requires fundamental break)
+  A pharmaceutical and health care products company with a 1.2 beta: the stock is +15% off its September
+  low while U.S. revenue growth went from -10.5% (Q1 2014) to -7.0% (Q2 2014).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        0.19  13.2x  $      3    12.9%      7.5%    +5.4pp  EPS -65.2%/yr (worst year FY04-FY13, capped at 0%); P/E to its 10th pct
+  BASE        1.44  22.4x  $     32    45.2%     26.3%   +18.9pp  EPS +-3.5%/yr (FY14 guide + margin + buyback); P/E at its 10-yr median
+  BULL        1.70  32.6x  $     55    35.2%     55.7%   -20.5pp  EPS +4.7%/yr (FY04-FY13 CAGR); P/E holds its 75th pct
+  XBULL       5.23  49.4x  $    258     6.6%     10.5%    -3.9pp  EPS +83.7%/yr (best 2-yr run FY04-FY13); P/E at its 90th pct
+
+  Proxy EV (2yr): $51  /  Market EV: $66  /  Current: $50
+  Conservative EV (2yr, ④): $34 + $2.97 divs = $37 total value
+  Downside (→ Bear $3): 94.0%   Upside (→ Bull $55): 9.4%   Ratio B 9.97x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $50 the market needs $66 in two years —
+  above the BULL case. That is a market composite of 2.60 against a model
+  read of 2.12: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       9.97x     +54%    -0.48  MODESTLY OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     1.40x     +54%    -0.07  FAIRLY VALUED / WATCHLIST
+  Multiples one band cheaper (p5/p25/med/p75)      infx     +54%    -0.89  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          7.01x     +54%    -0.44  MODESTLY OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                         12.90x     +54%    -0.52  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             9.97x     +54%    -0.18  FAIRLY VALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 9.97x     +35%    -0.38  MODESTLY OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    9.97x     +54%    -0.37  MODESTLY OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 2014 print (late October) — the next read on U.S. revenues (-7.0% now) and the guide
+  (2) Gross margin — +188.9bp in Q2 2014: cost of sales against the mix lost to generics, what must hold if U.S. revenues do not
+  (3) FY14 GAAP EPS guide $1.50-1.60 (Q2 2014 release)
+  (4) Pre-tax margin — 11.52% in Q2 2014 (-157.3bp): where restructuring, legal and acquisition charges land
+  (5) Capital return at 32x — the release reports no share repurchases: management's own read of the multiple
+  ✕ AVOID  |  EPP floor $33  |  ADD below ~$27  |  TRIM above $55
+════════════════════════════════════════════════════════════════════════
+

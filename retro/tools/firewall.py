@@ -61,7 +61,8 @@ with every guided
 field in both forms (dollar and growth ranges for sales and revenues and for profit per share, their bases, words and notes); BMY: a
 print whose net sales, growth excluding foreign exchange, U.S. and international growth, margins, quarter EPS, raw figures and full-year
 actuals are absurd (for the year after the latest vintage before CUTOFF) and which restates every year of the history, and a later guide
-with every guided field (GAAP and non-GAAP EPS ranges, revenue words, a note); every
+with every guided field (GAAP and non-GAAP EPS ranges, revenue words, a note), a later vintage excluding a year and a later Q4 print
+whose full-year actuals exclude its own year (BMY 2014-2017); every
 fact sheet with a 'splits' list, SHW's from 2021-2023: a later split on the price data's next split date; a CLOUD event
 from a later 10-K, as for every live theme), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
@@ -452,12 +453,20 @@ try:
     if TICKER == "BMY":    # absurd full-year actuals on the planted print, for the year after the latest vintage before CUTOFF, and a
                            # later print restating every year of the history (the 'restates' field, as for PFE)
         v0 = max((x for x in f["history_vintages"] if x["published"] < cutoff), key=lambda x: x["published"])
-        y0 = max(int(y) for y in v0["eps_normalized"]) + 1
+        # the year after the latest reported one (an excluded year is reported: BMY 2014-2017's 2015)
+        y0 = max(int(y) for y in [*v0["eps_normalized"], *v0.get("eps_excluded", {})]) + 1
         last["fy_actual"] = {"fy": y0, "fy_label": "FY99", "eps_normalized": 0.01, "revenue_usd_b": 0.01, "diluted_shares_m": 1.0,
                              "normalization_note": "PLANTED", "gross_margin": 1.0, "pretax_margin": -50.0, "pretax_margin_note": "PLANTED",
                              "sales_growth": -60.0, "us_pct": -60.0, "intl_pct": -60.0, "tax_rate": 0.99, "tax_note": "PLANTED"}
         last["restates"] = {y: {"eps": 0.01, "revenue_usd_b": 0.01} for y in v0["eps_normalized"]}
         last["restates_note"] = "PLANTED"
+        v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}     # a later vintage excluding a year (BMY 2014-2017)
+        # a later Q4 print whose full-year actuals exclude its own year (the 'excluded_note' of BMY 2014-2017, 2015)
+        q4 = copy.deepcopy(last)
+        q4.update(quarter="Q4 2098", fy=2098, q=4, published=later)
+        q4["fy_actual"] = {**last["fy_actual"], "fy": 2098, "fy_label": "FY98", "eps_normalized": None, "excluded_note": "PLANTED"}
+        q4.pop("restates", None)
+        f["prints"].append(q4)
     if TICKER == "CMCSA":  # absurd full-year actuals on the planted print, for the year after the latest vintage before CUTOFF
         v0 = max((x for x in f["history_vintages"] if x["published"] < cutoff), key=lambda x: x["published"])
         y0 = max(int(y) for y in v0["eps_normalized"]) + 1

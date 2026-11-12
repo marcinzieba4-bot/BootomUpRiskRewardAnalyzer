@@ -1,0 +1,247 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "BMY",
+ "company": "Bristol-Myers Squibb Company",
+ "as_of": "2017-05-12",
+ "price_date": "2017-05-12",
+ "price": 55.03,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); pharmaceutical signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'is a global specialty biopharmaceutical company whose mission is to discover, develop and deliver innovative medicines that help patients prevail over serious diseases.' (FY2016 10-K, Item 7); 'We face intense competition from other manufacturers, including for both innovative medicines and lower-priced generic products.' (Item 1A heading); 'We could lose market exclusivity of a product earlier than expected.' (Item 1A heading); 'We depend on several key products for most of our revenues, cash flows and earnings.' (Item 1A heading)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "'is a global specialty biopharmaceutical company whose mission is to discover, develop and deliver innovative medicines that help patients prevail over serious diseases.' (FY2016 10-K, Item 7); 'We face intense competition from other manufacturers, including for both innovative medicines and lower-priced generic products.' (Item 1A heading); 'We could lose market exclusivity of a product earlier than expected.' (Item 1A heading); 'We depend on several key products for most of our revenues, cash flows and earnings.' (Item 1A heading). durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.77x; +16% to EPP floor; model-vs-market gap +1.08; conservative 2yr +42%.",
+  "theme": null
+ },
+ "legacy_signal_short": "ACCUMULATE",
+ "legacy_signal": "◎ ACCUMULATE",
+ "metrics": {
+  "ratio_b": 0.77,
+  "ratio_b_fmt": "0.77x",
+  "epp": 47.52,
+  "epp_gap_pct": 15.8,
+  "epp_adj": 0.0,
+  "proxy_composite": 2.7,
+  "sca": 0.238,
+  "adj_composite": 2.938,
+  "market_composite": 1.86,
+  "adj_gap": 1.08,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 41.6,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.81,
+    "pe": 13.0,
+    "price": 11,
+    "desc": "EPS -46.3%/yr (worst year FY07-FY16 ex-FY15, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 3.69,
+    "pe": 21.0,
+    "price": 77,
+    "desc": "EPS +14.8%/yr (Q1 sales ex-FX + margin + buyback); P/E at its 10-yr ex-FY15 median"
+   },
+   "BULL": {
+    "eps": 3.82,
+    "pe": 29.3,
+    "price": 112,
+    "desc": "EPS +16.9%/yr (FY07-FY16 ex-FY15 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 7.01,
+    "pe": 43.3,
+    "price": 304,
+    "desc": "EPS +58.4%/yr (best 2-yr run FY07-FY16 ex-FY15); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.77,
+   "epp_gap_pct": 15.8,
+   "adj_gap": 1.08,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 41.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.39,
+   "epp_gap_pct": 15.8,
+   "adj_gap": 1.39,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 41.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 1.8,
+   "epp_gap_pct": 15.8,
+   "adj_gap": 0.52,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 41.6,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.73,
+   "epp_gap_pct": 15.8,
+   "adj_gap": 1.12,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 41.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.83,
+   "epp_gap_pct": 15.8,
+   "adj_gap": 1.03,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 41.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.77,
+   "epp_gap_pct": 15.8,
+   "adj_gap": 1.38,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 41.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.77,
+   "epp_gap_pct": -1.6,
+   "adj_gap": 1.28,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 41.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.77,
+   "epp_gap_pct": 15.8,
+   "adj_gap": 1.19,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 41.6,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP",
+  "FAIR"
+ ],
+ "summary": "BMY (retrospective, 2017-05-12) ◎ ACCUMULATE — Ratio B 0.77x (80.0% downside to Bear $11 / +103.5% upside to Bull $112) | Adj composite 2.94 vs market 1.86: gap +1.08 [UNDERVALUED] | +16% above the EPP floor $48 (17x FY17E $2.79) | Conservative 2-yr case: +41.6% total (+20.8%/yr) | At 19.7x FY17E the 15% hurdle price $73 sits at or below the BASE case; U.S. revenues +7.9% in Q1 2017, forward revenues +13% (no FY17 revenue guide in numbers, Q1 2017 net sales growth ex-FX); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "BM62",
+   "published": "2017-02-21",
+   "filed": "2017-02-21 12:04 ET (during the session)",
+   "title": "Bristol-Myers Squibb FY2016 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000001427217000047/bmy-20161231x10xk.htm",
+   "supports": "five-year summary 2012-2016 (diluted EPS $1.16, $1.54, $1.20, $0.93, $2.65; total revenues; diluted shares; cash and marketable securities); statement of earnings 2014-2016; revenues by geography 2014-2016 (the United States with Puerto Rico); cash flows; repurchases; the $0.39 quarterly dividend; durability wording (Items 1A and 7); non-GAAP reconciliation (specified items, non-GAAP EPS)"
+  },
+  {
+   "id": "BM57",
+   "published": "2016-02-12",
+   "filed": "2016-02-12 08:02 ET (before the open)",
+   "title": "Bristol-Myers Squibb FY2015 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000001427216000288/bmy-20151231x10xk.htm",
+   "supports": "five-year summary 2011-2015 (diluted EPS $2.16, $1.16, $1.54, $1.20, $0.93; total revenues; diluted shares; cash and marketable securities); statement of earnings 2013-2015; revenues by geography 2013-2015 (the United States with Puerto Rico); cash flows; repurchases; the $0.38 quarterly dividend; durability wording (Items 1A and 7); non-GAAP reconciliation (specified items, non-GAAP EPS)"
+  },
+  {
+   "id": "BM52",
+   "published": "2015-02-13",
+   "filed": "2015-02-13 09:38 ET (during the session)",
+   "title": "Bristol-Myers Squibb FY2014 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000001427215000055/bmy-20141231x10xk.htm",
+   "supports": "five-year summary 2010-2014 (diluted EPS $1.79, $2.16, $1.16, $1.54, $1.20; total revenues; diluted shares; cash and marketable securities); statement of earnings 2012-2014; revenues by geography 2012-2014 (the United States with Puerto Rico); cash flows; repurchases; the $0.37 quarterly dividend; durability wording (Items 1A and 7)"
+  },
+  {
+   "id": "BM47",
+   "published": "2014-02-14",
+   "filed": "2014-02-14 09:37 ET (during the session)",
+   "title": "Bristol-Myers Squibb FY2013 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000001427214000054/bmy-20131231x10xk.htm",
+   "supports": "five-year summary 2009-2013 (diluted EPS $1.63, $1.79, $2.16, $1.16, $1.54; total revenues; diluted shares; cash and marketable securities); statement of earnings 2011-2013; revenues by geography 2011-2013 (the United States with Puerto Rico); cash flows; repurchases; the $0.36 quarterly dividend; durability wording (Items 1A and 7)"
+  },
+  {
+   "id": "BM42",
+   "published": "2013-02-15",
+   "filed": "2013-02-15 08:55 ET (before the open)",
+   "title": "Bristol-Myers Squibb FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312513061678/d450621d10k.htm",
+   "supports": "five-year summary 2008-2012 (diluted EPS $1.35, $1.63, $1.79, $2.16, $1.16; net sales; diluted shares); statement of earnings 2010-2012; geographic areas 2010-2012 (the United States with Puerto Rico); cash flows; repurchases; the $0.35 quarterly dividend; durability wording (Items 1A and 7)"
+  },
+  {
+   "id": "BM37",
+   "published": "2012-02-17",
+   "filed": "2012-02-17 08:44 ET (before the open)",
+   "title": "Bristol-Myers Squibb FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312512066416/d302058d10k.htm",
+   "supports": "five-year summary 2007-2011 (diluted EPS $0.65, $1.35, $1.63, $1.79, $2.16; net sales; diluted shares); statement of earnings 2009-2011; geographic areas 2009-2011; cash flows; repurchases; the $0.34 quarterly dividend; durability wording (Items 1A and 7)"
+  },
+  {
+   "id": "BM61",
+   "published": "2017-01-26",
+   "filed": "2017-01-26 08:35 ET (before the open)",
+   "title": "Bristol-Myers Squibb Q4 2016 results (8-K, Exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000001427217000017/q42016ex991.htm",
+   "supports": "Q4 2016 statement of earnings (total revenues $5,243M vs $4,287M, cost of products sold $1,383M vs $952M, pre-tax $1,086M vs $-410M, diluted EPS $0.53 vs $-0.12, 1,680M diluted shares); U.S. $2,705M vs $2,263M and international $2,538M vs $2,024M revenues (supplemental exhibit); revenue growth 24% adjusted for foreign exchange impact, as the release states; FY2016 total revenues $19,427M, diluted EPS $2.65 (1,680M shares), pre-tax $5,915M, provision for income taxes $1,408M; U.S. $10,720M vs $8,188M; specified items $293M after tax, non-GAAP EPS $2.83; FY2017 guide: GAAP EPS $2.47-2.67, non-GAAP EPS $2.70-2.90, revenue in words ('Worldwide revenues increasing in the low-single digits')"
+  },
+  {
+   "id": "BM63",
+   "published": "2017-04-27",
+   "filed": "2017-04-27 08:26 ET (before the open)",
+   "title": "Bristol-Myers Squibb Q1 2017 results (8-K, Exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000001427217000130/q12017ex991.htm",
+   "supports": "Q1 2017 statement of earnings (total revenues $4,929M vs $4,391M, cost of products sold $1,259M vs $1,052M, pre-tax $1,955M vs $1,655M, diluted EPS $0.94 vs $0.71, 1,671M diluted shares); U.S. $2,738M vs $2,537M and international $2,191M vs $1,854M revenues (supplemental exhibit); revenue growth 13% adjusted for foreign exchange impact, as the release states; FY2017 guide: GAAP EPS $2.72-2.87, non-GAAP EPS $2.85-3.00, revenue in words ('Worldwide revenues increasing in the mid-single digits')"
+  },
+  {
+   "id": "BM60",
+   "published": "2016-10-27",
+   "filed": "2016-10-27 08:15 ET (before the open)",
+   "title": "Bristol-Myers Squibb Q3 2016 results (8-K, Exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000001427216000490/q32016ex991.htm",
+   "supports": "Q3 2016 statement of earnings (total revenues $4,922M vs $4,069M, cost of products sold $1,305M vs $1,097M, pre-tax $1,559M vs $987M, diluted EPS $0.72 vs $0.42, 1,679M diluted shares); U.S. $2,790M vs $2,044M and international $2,132M vs $2,025M revenues (supplemental exhibit); revenue growth 22% adjusted for foreign exchange impact, as the release states; FY2016 guide: GAAP EPS $2.62-2.72, non-GAAP EPS $2.80-2.90, revenue in words ('Worldwide revenues increasing in the high-teens'); FY2017 guide: GAAP EPS $2.47-2.67, non-GAAP EPS $2.85-3.05"
+  },
+  {
+   "id": "BM4",
+   "published": "2002-04-01",
+   "filed": "2002-04-01 (EDGAR gives the filing date only)",
+   "title": "Bristol-Myers Squibb FY2001 10-K405",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000091205702013034/a2074555z10-k405.htm",
+   "supports": "the Zimmer spin-off: 'On August 6, 2001, the Company spun off Zimmer Holdings, Inc., in a tax-free distribution, resulting in a common stock dividend of $203 million.'"
+  },
+  {
+   "id": "W0",
+   "published": "2017-05-12",
+   "title": "Yahoo Finance daily prices, BMY and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/BMY/history",
+   "supports": "close $55.03 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr ex-FY15 P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-12"
+}
