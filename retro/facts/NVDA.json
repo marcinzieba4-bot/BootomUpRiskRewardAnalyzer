@@ -1,0 +1,2489 @@
+{
+ "_doc": "Point-in-time fact sheet for NVDA retrospectives (retro/build_nvda.py), generated from NVIDIA's own filings: every raw figure is the row string it appears in (kept in 'rows'), checked against its filing, and every growth rate, margin and rule-T value is computed from those figures. Every value is tied to a source and becomes visible only on or after that source's 'published' date (EDGAR's acceptance time; after the 16:00 ET close, the next trading day; before 2002 the filing date). Per-share figures are on the share basis of their filing ('share_basis' where it predates the filing); the builder restates them for the splits effective by AS_OF.",
+ "ticker": "NVDA",
+ "sources": {
+  "NV1": {
+   "published": "1999-04-29",
+   "filed": "filed 1999-04-29 (EDGAR gives the filing date only)",
+   "title": "NVIDIA FY1999 10-K405",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000092962499000772/0000929624-99-000772.txt",
+   "supports": "Item 5: 'Public trading of our stock began on January 22, 1999.' (the listing)"
+  },
+  "NV2": {
+   "published": "2000-03-13",
+   "filed": "filed 2000-03-13 (EDGAR gives the filing date only)",
+   "title": "NVIDIA FY2000 10-K405",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000101287000001346/0001012870-00-001346.txt",
+   "supports": "balance sheet inventories and revenue, fiscal 1999-2000 (rule T)"
+  },
+  "NV3": {
+   "published": "2001-04-27",
+   "filed": "filed 2001-04-27 (EDGAR gives the filing date only)",
+   "title": "NVIDIA FY2001 10-K405",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000101287001500492/d10k405.txt",
+   "supports": "balance sheet inventories and revenue, fiscal 2000-2001 (rule T)"
+  },
+  "NV4": {
+   "published": "2002-05-14",
+   "filed": "accepted 2002-05-14 08:11 ET, before the open",
+   "title": "NVIDIA FY2002 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000101287002002262/d10k.htm",
+   "supports": "restated statements of operations fiscal 1999-2002, inventories at January 27, 2002 and January 28, 2001 (rule T)"
+  },
+  "NV5": {
+   "published": "2003-04-25",
+   "filed": "accepted 2003-04-24 21:55 ET, after the close; dated the next trading day",
+   "title": "NVIDIA FY2003 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104596903001196/d10k.htm",
+   "supports": "selected financial data fiscal 1999-2003 (FY1999 EPS, revenue, diluted shares); statements and inventories (rule T)"
+  },
+  "NV6": {
+   "published": "2004-03-29",
+   "filed": "accepted 2004-03-29 12:31 ET, during the session",
+   "title": "NVIDIA FY2004 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581004000007/annualreport.htm",
+   "supports": "selected financial data fiscal 2000-2004 (FY2000 EPS, revenue, diluted shares); statements and inventories (rule T)"
+  },
+  "NV7": {
+   "published": "2005-03-22",
+   "filed": "accepted 2005-03-22 14:33 ET, during the session",
+   "title": "NVIDIA FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581005000008/annualreport.htm",
+   "supports": "selected financial data fiscal 2001-2005 (FY2001 EPS, revenue, diluted shares); statements and inventories (rule T)"
+  },
+  "NV8": {
+   "published": "2006-03-17",
+   "filed": "accepted 2006-03-16 17:08 ET, after the close; dated the next trading day",
+   "title": "NVIDIA FY2006 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581006000014/fy2006annualreportonform10-k.htm",
+   "supports": "selected financial data fiscal 2002-2006: gross profit (rule T)"
+  },
+  "NV9": {
+   "published": "2006-11-29",
+   "filed": "accepted 2006-11-29 06:11 ET, before the open",
+   "title": "NVIDIA FY2006 10-K/A (restatement)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000119312506243224/d10ka.htm",
+   "supports": "restated selected financial data fiscal 2002-2006 (FY2002 EPS, revenue, diluted shares, on the Original Filing's share basis); restated statements and inventories (rule T)"
+  },
+  "NV10": {
+   "published": "2007-03-16",
+   "filed": "accepted 2007-03-16 14:12 ET, during the session",
+   "title": "NVIDIA FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581007000008/fy2007annualreportonform10-k.htm",
+   "supports": "selected financial data fiscal 2003-2007; statements, segments, cash flows, risk factors (the FY2007 history vintage); the 2006 split"
+  },
+  "NV11": {
+   "published": "2008-03-24",
+   "filed": "accepted 2008-03-21 16:23 ET, after the close; dated the next trading day",
+   "title": "NVIDIA FY2008 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581008000011/fy2008annualreportonform10k.htm",
+   "supports": "selected financial data fiscal 2004-2008; statements, segments, cash flows, risk factors (the FY2008 history vintage)"
+  },
+  "NV12": {
+   "published": "2009-03-13",
+   "filed": "accepted 2009-03-13 09:02 ET, before the open",
+   "title": "NVIDIA FY2009 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581009000013/fy2009form10k.htm",
+   "supports": "selected financial data fiscal 2005-2009; statements, segments, cash flows, risk factors (the FY2009 history vintage); the Q1 FY10 revenue words"
+  },
+  "NV13": {
+   "published": "2006-11-29",
+   "filed": "accepted 2006-11-29 06:16 ET, before the open",
+   "title": "NVIDIA Q1 FY07 10-Q/A (restatement)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000119312506243226/d10qa.htm",
+   "supports": "inventories at April 30, 2006 (the year-ago quarter of Q1 FY08)"
+  },
+  "NV14": {
+   "published": "2006-11-29",
+   "filed": "accepted 2006-11-29 06:20 ET, before the open",
+   "title": "NVIDIA Q2 FY07 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000119312506243229/d10q.htm",
+   "supports": "inventories at July 30, 2006 (the year-ago quarter of Q2 FY08)"
+  },
+  "NV15": {
+   "published": "2006-12-08",
+   "filed": "accepted 2006-12-07 16:23 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q3 FY07 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581006000035/q307form10q.htm",
+   "supports": "inventories at October 29, 2006 (the year-ago quarter of Q3 FY08)"
+  },
+  "NV16": {
+   "published": "2007-02-14",
+   "filed": "accepted 2007-02-13 16:54 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q4 FY07 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581007000004/pressreleaseq407.htm",
+   "supports": "Q4 FY07 revenue (the quarter before Q1 FY08)"
+  },
+  "NV17": {
+   "published": "2007-05-11",
+   "filed": "accepted 2007-05-10 16:37 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q1 FY08 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581007000014/pressreleaseq108.htm",
+   "supports": "Q1 FY08 statements and balance sheet"
+  },
+  "NV18": {
+   "published": "2007-05-24",
+   "filed": "accepted 2007-05-24 08:50 ET, before the open",
+   "title": "NVIDIA Q1 FY08 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581007000019/q108form10q.htm",
+   "supports": "inventories at April 29, 2007 (the year-ago quarter of Q1 FY09)"
+  },
+  "NV19": {
+   "published": "2007-08-10",
+   "filed": "accepted 2007-08-09 16:38 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q2 FY08 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581007000041/pressreleaseq208.htm",
+   "supports": "Q2 FY08 statements and balance sheet"
+  },
+  "NV20": {
+   "published": "2007-08-10",
+   "filed": "accepted 2007-08-09 16:47 ET, after the close; dated the next trading day",
+   "title": "NVIDIA 8-K: three-for-two stock split",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581007000042/exhibit.htm",
+   "supports": "the three-for-two split, distributed on or about September 10, 2007"
+  },
+  "NV21": {
+   "published": "2007-08-22",
+   "filed": "accepted 2007-08-22 09:08 ET, before the open",
+   "title": "NVIDIA Q2 FY08 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581007000045/q208form10q.htm",
+   "supports": "inventories at July 29, 2007 (the year-ago quarter of Q2 FY09)"
+  },
+  "NV22": {
+   "published": "2007-11-09",
+   "filed": "accepted 2007-11-08 16:37 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q3 FY08 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581007000050/pressreleaseq308.htm",
+   "supports": "Q3 FY08 statements and balance sheet"
+  },
+  "NV23": {
+   "published": "2007-11-21",
+   "filed": "accepted 2007-11-21 09:00 ET, before the open",
+   "title": "NVIDIA Q3 FY08 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581007000053/q308form10q.htm",
+   "supports": "inventories at October 28, 2007 (the year-ago quarter of Q3 FY09)"
+  },
+  "NV24": {
+   "published": "2008-02-14",
+   "filed": "accepted 2008-02-13 16:51 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q4 FY08 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581008000003/q408pressrelease.htm",
+   "supports": "Q4 FY08 and FY2008 statements and balance sheet"
+  },
+  "NV25": {
+   "published": "2008-05-09",
+   "filed": "accepted 2008-05-08 16:30 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q1 FY09 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581008000014/q109pressrelease.htm",
+   "supports": "Q1 FY09 statements and balance sheet"
+  },
+  "NV26": {
+   "published": "2008-05-22",
+   "filed": "accepted 2008-05-22 08:42 ET, before the open",
+   "title": "NVIDIA Q1 FY09 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581008000016/q109form10q.htm",
+   "supports": "inventories at April 27, 2008 (the year-ago quarter of Q1 FY10)"
+  },
+  "NV27": {
+   "published": "2008-08-13",
+   "filed": "accepted 2008-08-12 16:49 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q2 FY09 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581008000018/q209form8kpressrelease.htm",
+   "supports": "Q2 FY09 statements and balance sheet; the repurchase program"
+  },
+  "NV28": {
+   "published": "2008-08-21",
+   "filed": "accepted 2008-08-21 08:57 ET, before the open",
+   "title": "NVIDIA Q2 FY09 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581008000020/q209form10q.htm",
+   "supports": "inventories at July 27, 2008 (the year-ago quarter of Q2 FY10); the Q3 FY09 revenue words"
+  },
+  "NV29": {
+   "published": "2008-11-07",
+   "filed": "accepted 2008-11-06 16:24 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q3 FY09 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581008000027/q309earningsrelease.htm",
+   "supports": "Q3 FY09 statements and balance sheet"
+  },
+  "NV30": {
+   "published": "2008-12-02",
+   "filed": "accepted 2008-12-01 18:22 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q3 FY09 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581008000030/q309form10q.htm",
+   "supports": "inventories at October 26, 2008 (the year-ago quarter of Q3 FY10); the Q4 FY09 revenue words"
+  },
+  "NV31": {
+   "published": "2009-02-11",
+   "filed": "accepted 2009-02-10 16:29 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q4 FY09 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581009000005/pressrelease.htm",
+   "supports": "Q4 FY09 and FY2009 statements, reconciliation and balance sheet"
+  },
+  "NV32": {
+   "published": "2009-05-08",
+   "filed": "accepted 2009-05-07 16:24 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q1 FY10 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581009000015/q110pressrelease.htm",
+   "supports": "Q1 FY10 statements and balance sheet"
+  },
+  "NV33": {
+   "published": "2009-05-20",
+   "filed": "accepted 2009-05-20 08:49 ET, before the open",
+   "title": "NVIDIA Q1 FY10 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581009000017/q110form10q.htm",
+   "supports": "the Q2 FY10 revenue words"
+  },
+  "NV34": {
+   "published": "2009-08-07",
+   "filed": "accepted 2009-08-06 16:48 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q2 FY10 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581009000021/q210pressrelease.htm",
+   "supports": "Q2 FY10 statements and balance sheet; the Q3 FY10 revenue outlook"
+  },
+  "NV35": {
+   "published": "2009-08-21",
+   "filed": "accepted 2009-08-20 16:59 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q2 FY10 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581009000024/q210form10q.htm",
+   "supports": "the Q3 FY10 revenue words"
+  },
+  "NV36": {
+   "published": "2009-11-06",
+   "filed": "accepted 2009-11-05 16:25 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q3 FY10 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581009000031/q310pressrelease.htm",
+   "supports": "Q3 FY10 statements and balance sheet; the Q4 FY10 outlook"
+  },
+  "NV37": {
+   "published": "2009-11-19",
+   "filed": "accepted 2009-11-19 09:03 ET, before the open",
+   "title": "NVIDIA Q3 FY10 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581009000036/q310form10q.htm",
+   "supports": "the Q4 FY10 revenue words"
+  },
+  "NV38": {
+   "published": "2009-11-06",
+   "filed": "accepted 2009-11-05 16:25 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q3 FY10 CFO commentary (exhibit to the results 8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581009000031/cfocommentary.htm",
+   "supports": "the fourth quarter of fiscal 2010 is 14 weeks"
+  }
+ },
+ "listing": {
+  "first_trading_day": "1999-01-22",
+  "source": "NV1",
+  "exchange": "Nasdaq National Market",
+  "quote": "Public trading of our stock began on January 22, 1999."
+ },
+ "history_vintages": [
+  {
+   "published": "2007-03-16",
+   "sources": [
+    "NV10",
+    "NV5",
+    "NV6",
+    "NV7",
+    "NV9"
+   ],
+   "fy_label": "FY07",
+   "kind": "CYCLICAL",
+   "why": "'NVIDIA Corporation is the worldwide leader in programmable graphics processor technologies.' 'The market for GPUs, MCPs and handheld GPUs application processors is intensely competitive and is characterized by rapid technological change, evolving industry standards and declining average selling prices.' 'We expect substantial competition from Intel’s publicized focus on moving to selling platform solutions dominated by Intel products, such as when Intel achieved success with its Centrino platform solution.' 'Our business is cyclical in nature and an industry downturn could harm our financial results.' (FY2007 10-K); CYCLICAL on the 10-K's own words for its business (BKR's 'Our business is cyclical' reading); no theme in taxonomy_eras.json covers a CPU and a GPU integrated on one chip, so those words stay here (the PEP obesity rule)",
+   "eps_normalized": {
+    "1999": 0.04,
+    "2000": 0.28,
+    "2001": 0.62,
+    "2002": 0.84,
+    "2003": 0.15,
+    "2004": 0.14,
+    "2005": 0.25,
+    "2006": 0.82,
+    "2007": 1.15
+   },
+   "eps_sources": {
+    "1999": "NV5",
+    "2000": "NV6",
+    "2001": "NV7",
+    "2002": "NV9",
+    "2003": "NV10",
+    "2004": "NV10",
+    "2005": "NV10",
+    "2006": "NV10",
+    "2007": "NV10"
+   },
+   "eps_published": {
+    "1999": "2003-04-25",
+    "2000": "2004-03-29",
+    "2001": "2005-03-22",
+    "2002": "2006-11-29",
+    "2003": "2007-03-16",
+    "2004": "2007-03-16",
+    "2005": "2007-03-16",
+    "2006": "2007-03-16",
+    "2007": "2007-03-16"
+   },
+   "share_basis": {
+    "2002": "2006-03-17"
+   },
+   "eps_excluded": {},
+   "revenue_usd_b": {
+    "1999": 0.158237,
+    "2000": 0.374505,
+    "2001": 0.735264,
+    "2002": 1.369471,
+    "2003": 1.909447,
+    "2004": 1.822945,
+    "2005": 2.010033,
+    "2006": 2.375687,
+    "2007": 3.068771
+   },
+   "revenue_sources": {
+    "1999": "NV5",
+    "2000": "NV6",
+    "2001": "NV7",
+    "2002": "NV9",
+    "2003": "NV10",
+    "2004": "NV10",
+    "2005": "NV10",
+    "2006": "NV10",
+    "2007": "NV10"
+   },
+   "diluted_shares_m": {
+    "1999": 109.572,
+    "2000": 144.392,
+    "2001": 159.294,
+    "2002": 169.813,
+    "2003": 331.654,
+    "2004": 344.108,
+    "2005": 351.624,
+    "2006": 365.704,
+    "2007": 391.504
+   },
+   "shares_sources": {
+    "1999": "NV5",
+    "2000": "NV6",
+    "2001": "NV7",
+    "2002": "NV9",
+    "2003": "NV10",
+    "2004": "NV10",
+    "2005": "NV10",
+    "2006": "NV10",
+    "2007": "NV10"
+   },
+   "shares_published": {
+    "1999": "2003-04-25",
+    "2000": "2004-03-29",
+    "2001": "2005-03-22",
+    "2002": "2006-11-29",
+    "2003": "2007-03-16",
+    "2004": "2007-03-16",
+    "2005": "2007-03-16",
+    "2006": "2007-03-16",
+    "2007": "2007-03-16"
+   },
+   "fiscal_year_ends": {
+    "1999": "1999-01-31",
+    "2000": "2000-01-30",
+    "2001": "2001-01-28",
+    "2002": "2002-01-27",
+    "2003": "2003-01-26",
+    "2004": "2004-01-25",
+    "2005": "2005-01-30",
+    "2006": "2006-01-29",
+    "2007": "2007-01-28"
+   },
+   "normalization": "GAAP diluted EPS (NVIDIA reports no discontinued operations), each year from the latest filing that reports it: FY99 FY2003 10-K, FY00 FY2004 10-K, FY01 FY2005 10-K, FY02 FY2006 10-K/A, FY03 FY2007 10-K, FY04 FY2007 10-K, FY05 FY2007 10-K, FY06 FY2007 10-K, FY07 FY2007 10-K; the FY2006 10-K/A's restated FY02 is on the share basis before the 2006 split; the company's non-GAAP EPS excludes stock-based compensation, which recurs, so GAAP stands; NVIDIA has no fiscal 1998 (calendar 1997, a loss, then the one-month transition period of January 1998), so the history starts with FY99",
+   "eps_first_excluded": {
+    "1998": "no fiscal 1998: the year ended December 31, 1997 lost $(0.07) a share (FY2002 10-K) and January 1998 was a one-month transition period"
+   },
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 14.78,
+   "prev_fy_op_margin_note": "FY07 income from operations $453.5M / revenue $3,068.8M (FY2007 10-K)",
+   "prev_fy_pretax_margin": 16.11,
+   "prev_fy_pretax_margin_note": "FY07 income before income tax $494.5M / revenue $3,068.8M (FY2007 10-K)",
+   "prev_fy_gross_margin": 42.38,
+   "prev_fy_sales_growth": 29.2,
+   "tax_rate": 0.0937,
+   "tax_note": "FY07 income tax expense $46.4M / pre-tax $494.5M (FY2007 10-K)",
+   "fcf_b": 0.442,
+   "fcf_label": "FY07",
+   "fcf_note": "net cash provided by operating activities $587.1M less purchases of property and equipment and intangible assets $145.3M",
+   "cash_b": 1.118,
+   "dividend_annual": 0.0,
+   "dividend_note": "none: 'We have never paid and do not expect to pay cash dividends for the foreseeable future.' (FY2007 10-K)",
+   "cash_return_text": "'Through the end of fiscal 2007, we have repurchased 27.3 million shares under our stock repurchase program for a total cost of $488.1 million.' (FY2007 10-K)",
+   "business_line": "fabless GPU company: GPUs (desktop, notebook, workstation), nForce MCPs, handheld GPUs, consumer electronics (PlayStation 3)",
+   "groups": [
+    [
+     "GPU",
+     1.9943,
+     20.3
+    ],
+    [
+     "MCP",
+     0.6615,
+     87.8
+    ],
+    [
+     "All Other",
+     0.2081,
+     48.7
+    ],
+    [
+     "Handheld GPU",
+     0.1085,
+     84.7
+    ],
+    [
+     "Consumer Electronics",
+     0.0963,
+     -42.5
+    ]
+   ],
+   "groups_basis": "FY07 segment revenue (FY2007 10-K)",
+   "company": "NVIDIA Corporation",
+   "exchange": "NASDAQ Global Select Market",
+   "pe_window_start": null
+  },
+  {
+   "published": "2008-03-24",
+   "sources": [
+    "NV11",
+    "NV5",
+    "NV6",
+    "NV7",
+    "NV9",
+    "NV10"
+   ],
+   "fy_label": "FY08",
+   "kind": "CYCLICAL",
+   "why": "'NVIDIA Corporation is the worldwide leader in visual computing technologies and the inventor of the graphic processing unit, or the GPU.' 'The market for GPUs, MCPs, and application processors that support PMPs, PDAs, cellular phones or other handheld devices is intensely competitive and is characterized by rapid technological change, evolving industry standards and declining average selling prices.' 'Additionally, we expect that Intel and AMD will extend this strategy to other segments, including the possibility of successfully integrating a central processing unit, or CPU, and a GPU on the same chip, as evidenced by AMD’s announcement of its Fusion processor project.' 'Our business is cyclical in nature and an industry downturn could harm our financial results.' (FY2008 10-K); CYCLICAL on the 10-K's own words for its business (BKR's 'Our business is cyclical' reading); no theme in taxonomy_eras.json covers a CPU and a GPU integrated on one chip, so those words stay here (the PEP obesity rule)",
+   "eps_normalized": {
+    "1999": 0.04,
+    "2000": 0.28,
+    "2001": 0.62,
+    "2002": 0.84,
+    "2003": 0.15,
+    "2004": 0.09,
+    "2005": 0.17,
+    "2006": 0.55,
+    "2007": 0.76,
+    "2008": 1.31
+   },
+   "eps_sources": {
+    "1999": "NV5",
+    "2000": "NV6",
+    "2001": "NV7",
+    "2002": "NV9",
+    "2003": "NV10",
+    "2004": "NV11",
+    "2005": "NV11",
+    "2006": "NV11",
+    "2007": "NV11",
+    "2008": "NV11"
+   },
+   "eps_published": {
+    "1999": "2003-04-25",
+    "2000": "2004-03-29",
+    "2001": "2005-03-22",
+    "2002": "2006-11-29",
+    "2003": "2007-03-16",
+    "2004": "2008-03-24",
+    "2005": "2008-03-24",
+    "2006": "2008-03-24",
+    "2007": "2008-03-24",
+    "2008": "2008-03-24"
+   },
+   "share_basis": {
+    "2002": "2006-03-17"
+   },
+   "eps_excluded": {},
+   "revenue_usd_b": {
+    "1999": 0.158237,
+    "2000": 0.374505,
+    "2001": 0.735264,
+    "2002": 1.369471,
+    "2003": 1.909447,
+    "2004": 1.822945,
+    "2005": 2.010033,
+    "2006": 2.375687,
+    "2007": 3.068771,
+    "2008": 4.09786
+   },
+   "revenue_sources": {
+    "1999": "NV5",
+    "2000": "NV6",
+    "2001": "NV7",
+    "2002": "NV9",
+    "2003": "NV10",
+    "2004": "NV11",
+    "2005": "NV11",
+    "2006": "NV11",
+    "2007": "NV11",
+    "2008": "NV11"
+   },
+   "diluted_shares_m": {
+    "1999": 109.572,
+    "2000": 144.392,
+    "2001": 159.294,
+    "2002": 169.813,
+    "2003": 331.654,
+    "2004": 516.162,
+    "2005": 527.436,
+    "2006": 548.556,
+    "2007": 587.256,
+    "2008": 606.732
+   },
+   "shares_sources": {
+    "1999": "NV5",
+    "2000": "NV6",
+    "2001": "NV7",
+    "2002": "NV9",
+    "2003": "NV10",
+    "2004": "NV11",
+    "2005": "NV11",
+    "2006": "NV11",
+    "2007": "NV11",
+    "2008": "NV11"
+   },
+   "shares_published": {
+    "1999": "2003-04-25",
+    "2000": "2004-03-29",
+    "2001": "2005-03-22",
+    "2002": "2006-11-29",
+    "2003": "2007-03-16",
+    "2004": "2008-03-24",
+    "2005": "2008-03-24",
+    "2006": "2008-03-24",
+    "2007": "2008-03-24",
+    "2008": "2008-03-24"
+   },
+   "fiscal_year_ends": {
+    "1999": "1999-01-31",
+    "2000": "2000-01-30",
+    "2001": "2001-01-28",
+    "2002": "2002-01-27",
+    "2003": "2003-01-26",
+    "2004": "2004-01-25",
+    "2005": "2005-01-30",
+    "2006": "2006-01-29",
+    "2007": "2007-01-28",
+    "2008": "2008-01-27"
+   },
+   "normalization": "GAAP diluted EPS (NVIDIA reports no discontinued operations), each year from the latest filing that reports it: FY99 FY2003 10-K, FY00 FY2004 10-K, FY01 FY2005 10-K, FY02 FY2006 10-K/A, FY03 FY2007 10-K, FY04 FY2008 10-K, FY05 FY2008 10-K, FY06 FY2008 10-K, FY07 FY2008 10-K, FY08 FY2008 10-K; the FY2006 10-K/A's restated FY02 is on the share basis before the 2006 split; the company's non-GAAP EPS excludes stock-based compensation, which recurs, so GAAP stands; NVIDIA has no fiscal 1998 (calendar 1997, a loss, then the one-month transition period of January 1998), so the history starts with FY99",
+   "eps_first_excluded": {
+    "1998": "no fiscal 1998: the year ended December 31, 1997 lost $(0.07) a share (FY2002 10-K) and January 1998 was a one-month transition period"
+   },
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 20.41,
+   "prev_fy_op_margin_note": "FY08 income from operations $836.3M / revenue $4,097.9M (FY2008 10-K)",
+   "prev_fy_pretax_margin": 22.0,
+   "prev_fy_pretax_margin_note": "FY08 income before income tax $901.3M / revenue $4,097.9M (FY2008 10-K)",
+   "prev_fy_gross_margin": 45.62,
+   "prev_fy_sales_growth": 33.5,
+   "tax_rate": 0.115,
+   "tax_note": "FY08 income tax expense $103.7M / pre-tax $901.3M (FY2008 10-K)",
+   "fcf_b": 1.082,
+   "fcf_label": "FY08",
+   "fcf_note": "net cash provided by operating activities $1,270.2M less purchases of property and equipment and intangible assets $187.7M",
+   "cash_b": 1.809,
+   "dividend_annual": 0.0,
+   "dividend_note": "none: 'We have never paid and do not expect to pay cash dividends for the foreseeable future.' (FY2008 10-K)",
+   "cash_return_text": "'Through January 27, 2008, we had repurchased 61.7 million shares under our stock repurchase program for a total cost of $1.04 billion.' (FY2008 10-K)",
+   "business_line": "visual computing: GeForce GPUs, Quadro and Tesla professional solutions, nForce MCPs, consumer products",
+   "groups": [
+    [
+     "GPU",
+     2.5183,
+     47.1
+    ],
+    [
+     "MCP",
+     0.7104,
+     7.4
+    ],
+    [
+     "Professional Solutions",
+     0.5884,
+     29.4
+    ],
+    [
+     "Consumer Products",
+     0.2511,
+     7.7
+    ],
+    [
+     "All Other",
+     0.0297,
+     327.2
+    ]
+   ],
+   "groups_basis": "FY08 segment revenue (FY2008 10-K)",
+   "company": "NVIDIA Corporation",
+   "exchange": "NASDAQ Global Select Market",
+   "pe_window_start": null
+  },
+  {
+   "published": "2009-03-13",
+   "sources": [
+    "NV12",
+    "NV6",
+    "NV7",
+    "NV9",
+    "NV10",
+    "NV11"
+   ],
+   "fy_label": "FY09",
+   "kind": "CYCLICAL",
+   "why": "'NVIDIA Corporation is the worldwide leader in visual computing technologies and the inventor of the graphic processing unit, or the GPU, a high-performance processor which generates realistic, interactive graphics on workstations, personal computers, game consoles, and mobile devices.' 'The market for GPUs, MCPs, and computer-on-a-chip products that support netbooks, PNDs, PMPs, PDAs, cellular phones or other handheld devices is intensely competitive and is characterized by rapid technological change, evolving industry standards and declining average selling prices.' 'Additionally, we expect that Intel and AMD will extend this strategy to other segments, including the possibility of successfully integrating a central processing unit, or CPU, and a GPU on the same chip, as evidenced by AMD’s announcement of its Fusion processor project.' 'Our business is cyclical in nature and is currently experiencing a severe downturn, which has harmed and may continue to harm our financial results.' 'In February 2009, Intel filed suit against us, related to a patent license agreement that we signed with Intel in 2004.' (FY2009 10-K); CYCLICAL on the 10-K's own words for its business (BKR's 'Our business is cyclical' reading); no theme in taxonomy_eras.json covers a CPU and a GPU integrated on one chip, so those words stay here (the PEP obesity rule)",
+   "eps_normalized": {
+    "2000": 0.28,
+    "2001": 0.62,
+    "2002": 0.84,
+    "2003": 0.15,
+    "2004": 0.09,
+    "2005": 0.17,
+    "2006": 0.55,
+    "2007": 0.76,
+    "2008": 1.31
+   },
+   "eps_sources": {
+    "2000": "NV6",
+    "2001": "NV7",
+    "2002": "NV9",
+    "2003": "NV10",
+    "2004": "NV11",
+    "2005": "NV12",
+    "2006": "NV12",
+    "2007": "NV12",
+    "2008": "NV12",
+    "2009": "NV12"
+   },
+   "eps_published": {
+    "2000": "2004-03-29",
+    "2001": "2005-03-22",
+    "2002": "2006-11-29",
+    "2003": "2007-03-16",
+    "2004": "2008-03-24",
+    "2005": "2009-03-13",
+    "2006": "2009-03-13",
+    "2007": "2009-03-13",
+    "2008": "2009-03-13",
+    "2009": "2009-03-13"
+   },
+   "share_basis": {
+    "2002": "2006-03-17"
+   },
+   "eps_excluded": {
+    "2009": "FY09 lost $(0.05) per diluted share (FY2009 10-K); NVIDIA's non-GAAP FY09 EPS ($0.53, Q4 FY09 release) excludes stock-based compensation, which recurs, so no figure excluding only one-offs was published"
+   },
+   "revenue_usd_b": {
+    "2000": 0.374505,
+    "2001": 0.735264,
+    "2002": 1.369471,
+    "2003": 1.909447,
+    "2004": 1.822945,
+    "2005": 2.010033,
+    "2006": 2.375687,
+    "2007": 3.068771,
+    "2008": 4.09786,
+    "2009": 3.424859
+   },
+   "revenue_sources": {
+    "2000": "NV6",
+    "2001": "NV7",
+    "2002": "NV9",
+    "2003": "NV10",
+    "2004": "NV11",
+    "2005": "NV12",
+    "2006": "NV12",
+    "2007": "NV12",
+    "2008": "NV12",
+    "2009": "NV12"
+   },
+   "diluted_shares_m": {
+    "2000": 144.392,
+    "2001": 159.294,
+    "2002": 169.813,
+    "2003": 331.654,
+    "2004": 516.162,
+    "2005": 527.436,
+    "2006": 548.556,
+    "2007": 587.256,
+    "2008": 606.732,
+    "2009": 548.126
+   },
+   "shares_sources": {
+    "2000": "NV6",
+    "2001": "NV7",
+    "2002": "NV9",
+    "2003": "NV10",
+    "2004": "NV11",
+    "2005": "NV12",
+    "2006": "NV12",
+    "2007": "NV12",
+    "2008": "NV12",
+    "2009": "NV12"
+   },
+   "shares_published": {
+    "2000": "2004-03-29",
+    "2001": "2005-03-22",
+    "2002": "2006-11-29",
+    "2003": "2007-03-16",
+    "2004": "2008-03-24",
+    "2005": "2009-03-13",
+    "2006": "2009-03-13",
+    "2007": "2009-03-13",
+    "2008": "2009-03-13",
+    "2009": "2009-03-13"
+   },
+   "fiscal_year_ends": {
+    "2000": "2000-01-30",
+    "2001": "2001-01-28",
+    "2002": "2002-01-27",
+    "2003": "2003-01-26",
+    "2004": "2004-01-25",
+    "2005": "2005-01-30",
+    "2006": "2006-01-29",
+    "2007": "2007-01-28",
+    "2008": "2008-01-27",
+    "2009": "2009-01-25"
+   },
+   "normalization": "GAAP diluted EPS (NVIDIA reports no discontinued operations), each year from the latest filing that reports it: FY00 FY2004 10-K, FY01 FY2005 10-K, FY02 FY2006 10-K/A, FY03 FY2007 10-K, FY04 FY2008 10-K, FY05 FY2009 10-K, FY06 FY2009 10-K, FY07 FY2009 10-K, FY08 FY2009 10-K, FY09 FY2009 10-K; the FY2006 10-K/A's restated FY02 is on the share basis before the 2006 split; the company's non-GAAP EPS excludes stock-based compensation, which recurs, so GAAP stands",
+   "eps_first_excluded": {},
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": -2.06,
+   "prev_fy_op_margin_note": "FY09 income from operations $(70.7)M / revenue $3,424.9M (FY2009 10-K)",
+   "prev_fy_pretax_margin": -1.25,
+   "prev_fy_pretax_margin_note": "FY09 income before income tax $(43.0)M / revenue $3,424.9M (FY2009 10-K)",
+   "prev_fy_gross_margin": 34.29,
+   "prev_fy_sales_growth": -16.4,
+   "tax_rate": 0.3006,
+   "tax_note": "FY09 income tax benefit $12.9M / pre-tax $(43.0)M (FY2009 10-K)",
+   "fcf_b": -0.158,
+   "fcf_label": "FY09",
+   "fcf_note": "net cash provided by operating activities $249.4M less purchases of property and equipment and intangible assets $407.7M",
+   "cash_b": 1.255,
+   "dividend_annual": 0.0,
+   "dividend_note": "none: 'We have never paid and do not expect to pay cash dividends for the foreseeable future.' (FY2009 10-K)",
+   "cash_return_text": "'Through fiscal year 2009, we have repurchased an aggregate of 90.9 million shares under our stock repurchase program for a total cost of $1.46 billion.' (FY2009 10-K)",
+   "business_line": "visual computing: GeForce GPUs, Quadro and Tesla professional solutions, nForce MCPs, Tegra and other consumer products",
+   "groups": [
+    [
+     "GPU",
+     1.9123,
+     -24.1
+    ],
+    [
+     "Professional Solutions",
+     0.6934,
+     17.8
+    ],
+    [
+     "MCP",
+     0.6556,
+     -7.7
+    ],
+    [
+     "Consumer Products",
+     0.1363,
+     -45.7
+    ],
+    [
+     "All Other",
+     0.0273,
+     -8.1
+    ]
+   ],
+   "groups_basis": "FY09 segment revenue (FY2009 10-K)",
+   "company": "NVIDIA Corporation",
+   "exchange": "NASDAQ Global Select Market",
+   "pe_window_start": null
+  }
+ ],
+ "prints": [
+  {
+   "quarter": "Q1 FY08",
+   "fy": 2008,
+   "q": 1,
+   "published": "2007-05-11",
+   "source": "NV17",
+   "release": "May 10",
+   "release_time": "after the close on May 10: 8-K accepted 2007-05-10 16:37 ET; public before the open of the next trading day",
+   "period_end": "2007-04-29",
+   "raw": {
+    "sales_k": 844280,
+    "sales_prior_k": 681807,
+    "sales_prev_q_k": 878873,
+    "gross_profit_k": 380138,
+    "gross_profit_prior_k": 288673,
+    "rd_k": 158321,
+    "rd_prior_k": 123202,
+    "sga_k": 80571,
+    "sga_prior_k": 63962,
+    "op_income_k": 141246,
+    "op_income_prior_k": 101509,
+    "inventory_k": 332635,
+    "inventory_prior_k": 346431
+   },
+   "rows": {
+    "sales": "Revenue | 844,280 | 681,807",
+    "gp": "Gross profit | 380,138 | 288,673",
+    "rd": "Research and development | 158,321 | (22,400) | (A) | 135,921 | 123,202 | (14,426) | (A) | 108,776",
+    "sga": "Sales, general and administrative | 80,571 | (12,196) | (A) | 68,375 | 63,962 | (6,572) | (A) | 57,390",
+    "op": "Operating income | 141,246 | 101,509",
+    "eps": "Diluted net income per share | 0.33 | 0.24",
+    "shares": "Shares used in diluted per share computation | 398,866 | 389,428",
+    "inv": "Inventories | 332,635 | 354,680",
+    "cash": "Cash, cash equivalents and marketable securities | 1,307,024 | 1,117,850"
+   },
+   "inventory_prior_row": {
+    "source": "NV13",
+    "row": "Inventories | 346,431 | 254,870"
+   },
+   "sales_prev_q_row": {
+    "source": "NV16",
+    "row": "Revenue | 878,873 | 633,614 | 3,068,771 | 2,375,687"
+   },
+   "extra_sources": [
+    "NV13",
+    "NV16"
+   ],
+   "sales_b": 0.8443,
+   "sales_pct": 23.8,
+   "seq_pct": -3.9,
+   "gross_margin": 45.03,
+   "gross_margin_bp": 268.6,
+   "op_margin": 16.73,
+   "op_margin_bp": 184.2,
+   "opex_pct": 27.6,
+   "opex_gap_pp": 3.8,
+   "inventory_b": 0.3326,
+   "inventory_pct": -4.0,
+   "inventory_gap_pp": -27.8,
+   "eps_q": 0.33,
+   "eps_q_prior": 0.24,
+   "diluted_shares_m": 398.866,
+   "cash_b": 1.307,
+   "ltd_b": 0.0,
+   "debt_note": "no debt",
+   "sales_note": "revenue $844.3M vs $681.8M a year earlier, $878.9M the quarter before",
+   "inventory_note": "inventories $332.6M (2007-04-29) vs $346.4M a year earlier (Q1 FY07 10-Q/A)",
+   "eps_note": "GAAP diluted EPS $0.33 vs $0.24; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 398.9M",
+   "next_print": "Q2 FY08 print (August)",
+   "cash_return_text": null,
+   "note": null
+  },
+  {
+   "quarter": "Q2 FY08",
+   "fy": 2008,
+   "q": 2,
+   "published": "2007-08-10",
+   "source": "NV19",
+   "release": "Aug 9",
+   "release_time": "after the close on Aug 9: 8-K accepted 2007-08-09 16:38 ET; public before the open of the next trading day",
+   "period_end": "2007-07-29",
+   "raw": {
+    "sales_k": 935253,
+    "sales_prior_k": 687519,
+    "sales_prev_q_k": 844280,
+    "gross_profit_k": 423992,
+    "gross_profit_prior_k": 292128,
+    "rd_k": 157952,
+    "rd_prior_k": 127257,
+    "sga_k": 81280,
+    "sga_prior_k": 69055,
+    "op_income_k": 184760,
+    "op_income_prior_k": 95816,
+    "inventory_k": 276305,
+    "inventory_prior_k": 378661
+   },
+   "rows": {
+    "sales": "Revenue | 935,253 | 687,519 | 1,779,533 | 1,369,326",
+    "gp": "Gross profit | 423,992 | 292,128 | 804,130 | 580,801",
+    "rd": "Research and development | 157,952 | 127,257 | 316,273 | 250,459",
+    "sga": "Sales, general and administrative | 81,280 | 69,055 | 161,851 | 133,017",
+    "op": "Operating income | 184,760 | 95,816 | 326,006 | 197,325",
+    "eps": "Diluted net income per share | 0.43 | 0.22 | 0.76 | 0.46",
+    "shares": "Shares used in diluted per share computation | 402,553 | 385,589 | 400,638 | 387,485",
+    "inv": "Inventories | 276,305 | 354,680",
+    "cash": "Cash, cash equivalents and marketable securities | 1,571,563 | 1,117,850"
+   },
+   "inventory_prior_row": {
+    "source": "NV14",
+    "row": "Inventories | 378,661 | 254,870"
+   },
+   "sales_prev_q_row": {
+    "source": "NV17",
+    "row": "Revenue | 844,280 | 681,807"
+   },
+   "extra_sources": [
+    "NV14",
+    "NV17"
+   ],
+   "sales_b": 0.9353,
+   "sales_pct": 36.0,
+   "seq_pct": 10.8,
+   "gross_margin": 45.33,
+   "gross_margin_bp": 284.4,
+   "op_margin": 19.76,
+   "op_margin_bp": 581.9,
+   "opex_pct": 21.9,
+   "opex_gap_pp": -14.2,
+   "inventory_b": 0.2763,
+   "inventory_pct": -27.0,
+   "inventory_gap_pp": -63.1,
+   "eps_q": 0.43,
+   "eps_q_prior": 0.22,
+   "diluted_shares_m": 402.553,
+   "cash_b": 1.5716,
+   "ltd_b": 0.0,
+   "debt_note": "no debt",
+   "sales_note": "revenue $935.3M vs $687.5M a year earlier, $844.3M the quarter before",
+   "inventory_note": "inventories $276.3M (2007-07-29) vs $378.7M a year earlier (Q2 FY07 10-Q)",
+   "eps_note": "GAAP diluted EPS $0.43 vs $0.22; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 402.6M",
+   "next_print": "Q3 FY08 print (November)",
+   "cash_return_text": null,
+   "note": null
+  },
+  {
+   "quarter": "Q3 FY08",
+   "fy": 2008,
+   "q": 3,
+   "published": "2007-11-09",
+   "source": "NV22",
+   "release": "Nov 8",
+   "release_time": "after the close on Nov 8: 8-K accepted 2007-11-08 16:37 ET; public before the open of the next trading day",
+   "period_end": "2007-10-28",
+   "raw": {
+    "sales_k": 1115597,
+    "sales_prior_k": 820572,
+    "sales_prev_q_k": 935253,
+    "gross_profit_k": 515553,
+    "gross_profit_prior_k": 333942,
+    "rd_k": 179529,
+    "rd_prior_k": 140732,
+    "sga_k": 88183,
+    "sga_prior_k": 75597,
+    "op_income_k": 247841,
+    "op_income_prior_k": 117613,
+    "inventory_k": 306143,
+    "inventory_prior_k": 373558
+   },
+   "rows": {
+    "sales": "Revenue | 1,115,597 | 820,572 | 2,895,130 | 2,189,898",
+    "gp": "Gross profit | 515,553 | 333,942 | 1,319,683 | 914,743",
+    "rd": "Research and development | 179,529 | 140,732 | 495,802 | 391,191",
+    "sga": "Sales, general and administrative | 88,183 | 75,597 | 250,034 | 208,614",
+    "op": "Operating income | 247,841 | 117,613 | 573,847 | 314,938",
+    "eps": "Diluted net income per share | 0.38 | 0.18 | 0.89 | 0.50",
+    "shares": "Shares used in diluted per share computation (C) | 612,985 | 586,733 | 605,733 | 570,422",
+    "inv": "Inventories | 306,143 | 354,680",
+    "cash": "Cash, cash equivalents and marketable securities | 1,852,953 | 1,117,850"
+   },
+   "inventory_prior_row": {
+    "source": "NV15",
+    "row": "Inventories, net | 373,558 | 254,870"
+   },
+   "sales_prev_q_row": {
+    "source": "NV19",
+    "row": "Revenue | 935,253 | 687,519 | 1,779,533 | 1,369,326"
+   },
+   "extra_sources": [
+    "NV15",
+    "NV19"
+   ],
+   "sales_b": 1.1156,
+   "sales_pct": 36.0,
+   "seq_pct": 19.3,
+   "gross_margin": 46.21,
+   "gross_margin_bp": 551.7,
+   "op_margin": 22.22,
+   "op_margin_bp": 788.3,
+   "opex_pct": 23.8,
+   "opex_gap_pp": -12.2,
+   "inventory_b": 0.3061,
+   "inventory_pct": -18.0,
+   "inventory_gap_pp": -54.0,
+   "eps_q": 0.38,
+   "eps_q_prior": 0.18,
+   "diluted_shares_m": 612.985,
+   "cash_b": 1.853,
+   "ltd_b": 0.0,
+   "debt_note": "no debt",
+   "sales_note": "revenue $1,115.6M vs $820.6M a year earlier, $935.3M the quarter before",
+   "inventory_note": "inventories $306.1M (2007-10-28) vs $373.6M a year earlier (Q3 FY07 10-Q)",
+   "eps_note": "GAAP diluted EPS $0.38 vs $0.18; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 613.0M",
+   "next_print": "Q4 FY08 print (February)",
+   "cash_return_text": null,
+   "note": null
+  },
+  {
+   "quarter": "Q4 FY08",
+   "fy": 2008,
+   "q": 4,
+   "published": "2008-02-14",
+   "source": "NV24",
+   "release": "Feb 13",
+   "release_time": "after the close on Feb 13: 8-K accepted 2008-02-13 16:51 ET; public before the open of the next trading day",
+   "period_end": "2008-01-27",
+   "raw": {
+    "sales_k": 1202730,
+    "sales_prior_k": 878873,
+    "sales_prev_q_k": 1115597,
+    "gross_profit_k": 549597,
+    "gross_profit_prior_k": 385706,
+    "rd_k": 195835,
+    "rd_prior_k": 162276,
+    "sga_k": 91263,
+    "sga_prior_k": 84916,
+    "op_income_k": 262499,
+    "op_income_prior_k": 138514,
+    "inventory_k": 358521,
+    "inventory_prior_k": 354680
+   },
+   "rows": {
+    "sales": "Revenue | 1,202,730 | 878,873 | 4,097,860 | 3,068,771",
+    "gp": "Gross profit | 549,597 | 385,706 | 1,869,280 | 1,300,449",
+    "rd": "Research and development | 195,835 | 162,276 | 691,637 | 553,467",
+    "sga": "Sales, general and administrative | 91,263 | 84,916 | 341,297 | 293,530",
+    "op": "Operating income | 262,499 | 138,514 | 836,346 | 453,452",
+    "eps": "Diluted net income per share | 0.42 | 0.27 | 1.31 | 0.76",
+    "shares": "Shares used in diluted per share computation (C) | 609,173 | 598,491 | 606,732 | 587,256",
+    "inv": "Inventories | 358,521 | 354,680",
+    "cash": "Cash, cash equivalents and marketable securities | 1,809,478 | 1,117,850"
+   },
+   "inventory_prior_row": {
+    "source": "NV24",
+    "row": "Inventories | 358,521 | 354,680"
+   },
+   "sales_prev_q_row": {
+    "source": "NV22",
+    "row": "Revenue | 1,115,597 | 820,572 | 2,895,130 | 2,189,898"
+   },
+   "extra_sources": [
+    "NV22"
+   ],
+   "sales_b": 1.2027,
+   "sales_pct": 36.8,
+   "seq_pct": 7.8,
+   "gross_margin": 45.7,
+   "gross_margin_bp": 180.9,
+   "op_margin": 21.83,
+   "op_margin_bp": 606.5,
+   "opex_pct": 16.1,
+   "opex_gap_pp": -20.7,
+   "inventory_b": 0.3585,
+   "inventory_pct": 1.1,
+   "inventory_gap_pp": -35.8,
+   "eps_q": 0.42,
+   "eps_q_prior": 0.27,
+   "diluted_shares_m": 609.173,
+   "cash_b": 1.8095,
+   "ltd_b": 0.0,
+   "debt_note": "no debt",
+   "sales_note": "revenue $1,202.7M vs $878.9M a year earlier, $1,115.6M the quarter before",
+   "inventory_note": "inventories $358.5M (2008-01-27) vs $354.7M a year earlier (the release)",
+   "eps_note": "GAAP diluted EPS $0.42 vs $0.27; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 609.2M",
+   "next_print": "Q1 FY09 print (May)",
+   "cash_return_text": null,
+   "note": "charges stay in, as published: 'a charge for in-process research and development related to an acquisition closed during the quarter' (Q4 FY08 results (8-K))",
+   "fy_actual": {
+    "fy": 2008,
+    "fy_label": "FY08",
+    "eps_normalized": 1.31,
+    "revenue_usd_b": 4.09786,
+    "diluted_shares_m": 606.732,
+    "normalization_note": "FY08 from the Q4 FY08 release (GAAP)",
+    "op_margin": 20.41,
+    "op_margin_note": "FY08 income from operations $836.3M / revenue $4,097.9M (Q4 FY08 release)",
+    "pretax_margin": 22.0,
+    "pretax_margin_note": "FY08 income before income tax $901.3M / revenue $4,097.9M (Q4 FY08 release)",
+    "gross_margin": 45.62,
+    "sales_growth": 33.5,
+    "tax_rate": 0.115,
+    "tax_note": "FY08 income tax expense $103.7M / pre-tax $901.3M"
+   }
+  },
+  {
+   "quarter": "Q1 FY09",
+   "fy": 2009,
+   "q": 1,
+   "published": "2008-05-09",
+   "source": "NV25",
+   "release": "May 8",
+   "release_time": "after the close on May 8: 8-K accepted 2008-05-08 16:30 ET; public before the open of the next trading day",
+   "period_end": "2008-04-27",
+   "raw": {
+    "sales_k": 1153388,
+    "sales_prior_k": 844280,
+    "sales_prev_q_k": 1202730,
+    "gross_profit_k": 514843,
+    "gross_profit_prior_k": 380138,
+    "rd_k": 218830,
+    "rd_prior_k": 158321,
+    "sga_k": 93034,
+    "sga_prior_k": 80571,
+    "op_income_k": 202979,
+    "op_income_prior_k": 141246,
+    "inventory_k": 420126,
+    "inventory_prior_k": 332635
+   },
+   "rows": {
+    "sales": "Revenue | 1,153,388 | 844,280",
+    "gp": "Gross profit | 514,843 | 380,138",
+    "rd": "Research and development | 218,830 | 158,321",
+    "sga": "Sales, general and administrative | 93,034 | 80,571",
+    "op": "Operating income | 202,979 | 141,246",
+    "eps": "Diluted net income per share | 0.30 | 0.22",
+    "shares": "Shares used in diluted per share computation (B) | 591,989 | 598,299",
+    "inv": "Inventories | 420,126 | 358,521",
+    "cash": "Cash, cash equivalents and marketable securities | 1,621,639 | 1,809,478"
+   },
+   "inventory_prior_row": {
+    "source": "NV18",
+    "row": "Inventories | 332,635 | 354,680"
+   },
+   "sales_prev_q_row": {
+    "source": "NV24",
+    "row": "Revenue | 1,202,730 | 878,873 | 4,097,860 | 3,068,771"
+   },
+   "extra_sources": [
+    "NV18",
+    "NV24"
+   ],
+   "sales_b": 1.1534,
+   "sales_pct": 36.6,
+   "seq_pct": -4.1,
+   "gross_margin": 44.64,
+   "gross_margin_bp": -38.8,
+   "op_margin": 17.6,
+   "op_margin_bp": 86.9,
+   "opex_pct": 30.5,
+   "opex_gap_pp": -6.1,
+   "inventory_b": 0.4201,
+   "inventory_pct": 26.3,
+   "inventory_gap_pp": -10.3,
+   "eps_q": 0.3,
+   "eps_q_prior": 0.22,
+   "diluted_shares_m": 591.989,
+   "cash_b": 1.6216,
+   "ltd_b": 0.0,
+   "debt_note": "no debt",
+   "sales_note": "revenue $1,153.4M vs $844.3M a year earlier, $1,202.7M the quarter before",
+   "inventory_note": "inventories $420.1M (2008-04-27) vs $332.6M a year earlier (Q1 FY08 10-Q)",
+   "eps_note": "GAAP diluted EPS $0.30 vs $0.22; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 592.0M",
+   "next_print": "Q2 FY09 print (August)",
+   "cash_return_text": null,
+   "note": null
+  },
+  {
+   "quarter": "Q2 FY09",
+   "fy": 2009,
+   "q": 2,
+   "published": "2008-08-13",
+   "source": "NV27",
+   "release": "Aug 12",
+   "release_time": "after the close on Aug 12: 8-K accepted 2008-08-12 16:49 ET; public before the open of the next trading day",
+   "period_end": "2008-07-27",
+   "raw": {
+    "sales_k": 892676,
+    "sales_prior_k": 935253,
+    "sales_prev_q_k": 1153388,
+    "gross_profit_k": 149917,
+    "gross_profit_prior_k": 423992,
+    "rd_k": 212910,
+    "rd_prior_k": 157952,
+    "sga_k": 92399,
+    "sga_prior_k": 81280,
+    "op_income_k": -155392,
+    "op_income_prior_k": 184760,
+    "inventory_k": 432279,
+    "inventory_prior_k": 276305
+   },
+   "rows": {
+    "sales": "Revenue | 892,676 | 935,253 | 2,046,064 | 1,779,533",
+    "gp": "Gross profit | 149,917 | 423,992 | 664,760 | 804,130",
+    "rd": "Research and development | 212,910 | 157,952 | 431,740 | 316,273",
+    "sga": "Sales, general and administrative | 92,399 | 81,280 | 185,433 | 161,851",
+    "op": "Operating income (loss) | (155,392) | 184,760 | 47,587 | 326,006",
+    "eps": "Diluted net income (loss) per share (B) | (0.22) | 0.29 | 0.09 | 0.51",
+    "shares": "Shares used in diluted per share computation (B) | 555,417 | 603,830 | 592,181 | 600,957",
+    "inv": "Inventories | 432,279 | 358,521",
+    "cash": "Cash, cash equivalents and marketable securities | 1,657,230 | 1,809,478"
+   },
+   "inventory_prior_row": {
+    "source": "NV21",
+    "row": "Inventories | 276,305 | 354,680"
+   },
+   "sales_prev_q_row": {
+    "source": "NV25",
+    "row": "Revenue | 1,153,388 | 844,280"
+   },
+   "extra_sources": [
+    "NV21",
+    "NV25"
+   ],
+   "sales_b": 0.8927,
+   "sales_pct": -4.6,
+   "seq_pct": -22.6,
+   "gross_margin": 16.79,
+   "gross_margin_bp": -2854.0,
+   "op_margin": -17.41,
+   "op_margin_bp": -3716.3,
+   "opex_pct": 27.6,
+   "opex_gap_pp": 32.2,
+   "inventory_b": 0.4323,
+   "inventory_pct": 56.4,
+   "inventory_gap_pp": 61.0,
+   "eps_q": -0.22,
+   "eps_q_prior": 0.29,
+   "diluted_shares_m": 555.417,
+   "cash_b": 1.6572,
+   "ltd_b": 0.0,
+   "debt_note": "no debt",
+   "sales_note": "revenue $892.7M vs $935.3M a year earlier, $1,153.4M the quarter before",
+   "inventory_note": "inventories $432.3M (2008-07-27) vs $276.3M a year earlier (Q2 FY08 10-Q)",
+   "eps_note": "GAAP diluted EPS $(0.22) vs $0.29; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 555.4M",
+   "next_print": "Q3 FY09 print (November)",
+   "cash_return_text": "'NVIDIA also announced an increase of $1 billion to its stock repurchase program under which it may now purchase up to $2.7 billion of its common stock.' 'Through July 27, 2008, NVIDIA has repurchased 68.0 million shares under the stock repurchase program for a total cost of $1.16 billion.' (Q2 FY09 release)",
+   "note": "charges stay in, as published: 'the non-recurring warranty charge against cost of revenue' (Q2 FY09 results (8-K))"
+  },
+  {
+   "quarter": "Q3 FY09",
+   "fy": 2009,
+   "q": 3,
+   "published": "2008-11-07",
+   "source": "NV29",
+   "release": "Nov 6",
+   "release_time": "after the close on Nov 6: 8-K accepted 2008-11-06 16:24 ET; public before the open of the next trading day",
+   "period_end": "2008-10-26",
+   "raw": {
+    "sales_k": 897655,
+    "sales_prior_k": 1115597,
+    "sales_prev_q_k": 892676,
+    "gross_profit_k": 367843,
+    "gross_profit_prior_k": 515553,
+    "rd_k": 212360,
+    "rd_prior_k": 179529,
+    "sga_k": 90349,
+    "sga_prior_k": 88183,
+    "op_income_k": 56796,
+    "op_income_prior_k": 247841,
+    "inventory_k": 523988,
+    "inventory_prior_k": 306143
+   },
+   "rows": {
+    "sales": "Revenue | 897,655 | 1,115,597 | 2,943,719 | 2,895,130",
+    "gp": "Gross profit | 367,843 | 515,553 | 1,032,603 | 1,319,683",
+    "rd": "Research and development | 212,360 | 179,529 | 644,100 | 495,802",
+    "sga": "Sales, general and administrative | 90,349 | 88,183 | 275,782 | 250,034",
+    "op": "Operating income | 56,796 | 247,841 | 104,383 | 573,847",
+    "eps": "Diluted net income per share | 0.11 | 0.38 | 0.20 | 0.89",
+    "shares": "Shares used in diluted per share computation | 564,536 | 612,985 | 590,490 | 605,733",
+    "inv": "Inventories | 523,988 | 358,521",
+    "cash": "Cash, cash equivalents and marketable securities | 1,304,888 | 1,809,478"
+   },
+   "inventory_prior_row": {
+    "source": "NV23",
+    "row": "Inventories | 306,143 | 354,680"
+   },
+   "sales_prev_q_row": {
+    "source": "NV27",
+    "row": "Revenue | 892,676 | 935,253 | 2,046,064 | 1,779,533"
+   },
+   "extra_sources": [
+    "NV23",
+    "NV27"
+   ],
+   "sales_b": 0.8977,
+   "sales_pct": -19.5,
+   "seq_pct": 0.6,
+   "gross_margin": 40.98,
+   "gross_margin_bp": -523.5,
+   "op_margin": 6.33,
+   "op_margin_bp": -1588.9,
+   "opex_pct": 13.1,
+   "opex_gap_pp": 32.6,
+   "inventory_b": 0.524,
+   "inventory_pct": 71.2,
+   "inventory_gap_pp": 90.7,
+   "eps_q": 0.11,
+   "eps_q_prior": 0.38,
+   "diluted_shares_m": 564.536,
+   "cash_b": 1.3049,
+   "ltd_b": 0.0,
+   "debt_note": "no debt",
+   "sales_note": "revenue $897.7M vs $1,115.6M a year earlier, $892.7M the quarter before",
+   "inventory_note": "inventories $524.0M (2008-10-26) vs $306.1M a year earlier (Q3 FY08 10-Q)",
+   "eps_note": "GAAP diluted EPS $0.11 vs $0.38; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 564.5M",
+   "next_print": "Q4 FY09 print (February)",
+   "cash_return_text": null,
+   "note": "charges stay in, as published: 'a non-recurring charge against cost of revenue related to a royalty dispute, a restructuring charge against operating expenses' (Q3 FY09 results (8-K))"
+  },
+  {
+   "quarter": "Q4 FY09",
+   "fy": 2009,
+   "q": 4,
+   "published": "2009-02-11",
+   "source": "NV31",
+   "release": "Feb 10",
+   "release_time": "after the close on Feb 10: 8-K accepted 2009-02-10 16:29 ET; public before the open of the next trading day",
+   "period_end": "2009-01-25",
+   "raw": {
+    "sales_k": 481140,
+    "sales_prior_k": 1202730,
+    "sales_prev_q_k": 897655,
+    "gross_profit_k": 141666,
+    "gross_profit_prior_k": 549597,
+    "rd_k": 211779,
+    "rd_prior_k": 195835,
+    "sga_k": 86440,
+    "sga_prior_k": 91263,
+    "op_income_k": -175083,
+    "op_income_prior_k": 262499,
+    "inventory_k": 537834,
+    "inventory_prior_k": 358521
+   },
+   "rows": {
+    "sales": "Revenue | 481,140 | 1,202,730 | 3,424,859 | 4,097,860",
+    "gp": "Gross profit | 141,666 | 549,597 | 1,174,269 | 1,869,280",
+    "rd": "Research and development | 211,779 | 195,835 | 855,879 | 691,637",
+    "sga": "Sales, general and administrative | 86,440 | 91,263 | 362,222 | 341,297",
+    "op": "Operating income (loss) | (175,083) | 262,499 | (70,700) | 836,346",
+    "eps": "Diluted net income (loss) per share | (0.27) | 0.42 | (0.05) | 1.31",
+    "shares": "Shares used in diluted per share computation | 537,595 | 609,173 | 548,126 | 606,732",
+    "inv": "Inventories | 537,834 | 358,521",
+    "cash": "Cash, cash equivalents and marketable securities | 1,255,390 | 1,809,478",
+    "debt": "Capital lease obligations, long term | 25,634 | -"
+   },
+   "inventory_prior_row": {
+    "source": "NV31",
+    "row": "Inventories | 537,834 | 358,521"
+   },
+   "sales_prev_q_row": {
+    "source": "NV29",
+    "row": "Revenue | 897,655 | 1,115,597 | 2,943,719 | 2,895,130"
+   },
+   "extra_sources": [
+    "NV29"
+   ],
+   "sales_b": 0.4811,
+   "sales_pct": -60.0,
+   "seq_pct": -46.4,
+   "gross_margin": 29.44,
+   "gross_margin_bp": -1625.2,
+   "op_margin": -36.39,
+   "op_margin_bp": -5821.4,
+   "opex_pct": 3.9,
+   "opex_gap_pp": 63.9,
+   "inventory_b": 0.5378,
+   "inventory_pct": 50.0,
+   "inventory_gap_pp": 110.0,
+   "eps_q": -0.27,
+   "eps_q_prior": 0.42,
+   "diluted_shares_m": 537.595,
+   "cash_b": 1.2554,
+   "ltd_b": 0.0256,
+   "debt_note": "long-term capital lease obligations $25.6M",
+   "sales_note": "revenue $481.1M vs $1,202.7M a year earlier, $897.7M the quarter before",
+   "inventory_note": "inventories $537.8M (2009-01-25) vs $358.5M a year earlier (the release)",
+   "eps_note": "GAAP diluted EPS $(0.27) vs $0.42; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 537.6M",
+   "next_print": "Q1 FY10 print (May)",
+   "cash_return_text": null,
+   "note": "charges stay in, as published: 'a non-recurring charge against operating expenses related to termination of a development agreement' (Q4 FY09 results (8-K))",
+   "fy_actual": {
+    "fy": 2009,
+    "fy_label": "FY09",
+    "eps_normalized": null,
+    "revenue_usd_b": 3.424859,
+    "diluted_shares_m": 548.126,
+    "normalization_note": "FY09 from the Q4 FY09 release: a loss, excluded (no figure excluding only one-offs)",
+    "op_margin": -2.06,
+    "op_margin_note": "FY09 income from operations $(70.7)M / revenue $3,424.9M (Q4 FY09 release)",
+    "pretax_margin": -1.25,
+    "pretax_margin_note": "FY09 income before income tax $(43.0)M / revenue $3,424.9M (Q4 FY09 release)",
+    "gross_margin": 34.29,
+    "sales_growth": -16.4,
+    "tax_rate": 0.3006,
+    "tax_note": "FY09 income tax benefit $12.9M / pre-tax $(43.0)M",
+    "excluded_note": "FY09 lost $(0.05) per diluted share (Q4 FY09 release); NVIDIA's non-GAAP FY09 EPS ($0.53, Q4 FY09 release) excludes stock-based compensation, which recurs, so no figure excluding only one-offs was published"
+   }
+  },
+  {
+   "quarter": "Q1 FY10",
+   "fy": 2010,
+   "q": 1,
+   "published": "2009-05-08",
+   "source": "NV32",
+   "release": "May 7",
+   "release_time": "after the close on May 7: 8-K accepted 2009-05-07 16:24 ET; public before the open of the next trading day",
+   "period_end": "2009-04-26",
+   "raw": {
+    "sales_k": 664231,
+    "sales_prior_k": 1153388,
+    "sales_prev_q_k": 481140,
+    "gross_profit_k": 189696,
+    "gross_profit_prior_k": 514843,
+    "rd_k": 211341,
+    "rd_prior_k": 218830,
+    "sga_k": 80491,
+    "sga_prior_k": 93034,
+    "op_income_k": -230965,
+    "op_income_prior_k": 202979,
+    "inventory_k": 327259,
+    "inventory_prior_k": 420126
+   },
+   "rows": {
+    "sales": "Revenue | 664,231 | 1,153,388",
+    "gp": "Gross profit | 189,696 | 514,843",
+    "rd": "Research and development | 211,341 | 218,830",
+    "sga": "Sales, general and administrative | 80,491 | 93,034",
+    "op": "Operating income (loss) | (230,965) | 202,979",
+    "eps": "Diluted net income (loss) per share | (0.37) | 0.30",
+    "shares": "Shares used in diluted per share computation | 542,307 | 591,989",
+    "inv": "Inventories | 327,259 | 537,834",
+    "cash": "Cash, cash equivalents and marketable securities | 1,338,147 | 1,255,390",
+    "debt": "Capital lease obligations, long term | 25,351 | 25,634"
+   },
+   "inventory_prior_row": {
+    "source": "NV26",
+    "row": "Inventories | 420,126 | 358,521"
+   },
+   "sales_prev_q_row": {
+    "source": "NV31",
+    "row": "Revenue | 481,140 | 1,202,730 | 3,424,859 | 4,097,860"
+   },
+   "extra_sources": [
+    "NV26",
+    "NV31"
+   ],
+   "sales_b": 0.6642,
+   "sales_pct": -42.4,
+   "seq_pct": 38.1,
+   "gross_margin": 28.56,
+   "gross_margin_bp": -1607.9,
+   "op_margin": -34.77,
+   "op_margin_bp": -5237.0,
+   "opex_pct": -6.4,
+   "opex_gap_pp": 36.0,
+   "inventory_b": 0.3273,
+   "inventory_pct": -22.1,
+   "inventory_gap_pp": 20.3,
+   "eps_q": -0.37,
+   "eps_q_prior": 0.3,
+   "diluted_shares_m": 542.307,
+   "cash_b": 1.3381,
+   "ltd_b": 0.0254,
+   "debt_note": "long-term capital lease obligations $25.4M",
+   "sales_note": "revenue $664.2M vs $1,153.4M a year earlier, $481.1M the quarter before",
+   "inventory_note": "inventories $327.3M (2009-04-26) vs $420.1M a year earlier (Q1 FY09 10-Q)",
+   "eps_note": "GAAP diluted EPS $(0.37) vs $0.30; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 542.3M",
+   "next_print": "Q2 FY10 print (August)",
+   "cash_return_text": null,
+   "note": "charges stay in, as published: 'the non-recurring charge related to the tender offer' (Q1 FY10 results (8-K))"
+  },
+  {
+   "quarter": "Q2 FY10",
+   "fy": 2010,
+   "q": 2,
+   "published": "2009-08-07",
+   "source": "NV34",
+   "release": "Aug 6",
+   "release_time": "after the close on Aug 6: 8-K accepted 2009-08-06 16:48 ET; public before the open of the next trading day",
+   "period_end": "2009-07-26",
+   "raw": {
+    "sales_k": 776520,
+    "sales_prior_k": 892676,
+    "sales_prev_q_k": 664231,
+    "gross_profit_k": 156723,
+    "gross_profit_prior_k": 149917,
+    "rd_k": 192855,
+    "rd_prior_k": 212910,
+    "sga_k": 73975,
+    "sga_prior_k": 92399,
+    "op_income_k": -110107,
+    "op_income_prior_k": -155392,
+    "inventory_k": 279216,
+    "inventory_prior_k": 432279
+   },
+   "rows": {
+    "sales": "Revenue | 776,520 | 892,676 | 1,440,751 | 2,046,064",
+    "gp": "Gross profit | 156,723 | 149,917 | 346,419 | 664,760",
+    "rd": "Research and development | 192,855 | 212,910 | 494,652 | 431,740",
+    "sga": "Sales, general and administrative | 73,975 | 92,399 | 192,839 | 185,433",
+    "op": "Operating income (loss) | (110,107) | (155,392) | (341,072) | 47,587",
+    "eps": "Diluted net income (loss) per share | (0.19) | (0.22) | (0.56) | 0.09",
+    "shares": "Shares used in diluted per share computation | 546,639 | 555,417 | 544,463 | 592,181",
+    "inv": "Inventories | 279,216 | 537,834",
+    "cash": "Cash, cash equivalents and marketable securities | 1,466,105 | 1,255,390",
+    "debt": "Capital lease obligations, long term | 25,060 | 25,634"
+   },
+   "inventory_prior_row": {
+    "source": "NV28",
+    "row": "Inventories | 432,279 | 358,521"
+   },
+   "sales_prev_q_row": {
+    "source": "NV32",
+    "row": "Revenue | 664,231 | 1,153,388"
+   },
+   "extra_sources": [
+    "NV28",
+    "NV32"
+   ],
+   "sales_b": 0.7765,
+   "sales_pct": -13.0,
+   "seq_pct": 16.9,
+   "gross_margin": 20.18,
+   "gross_margin_bp": 338.9,
+   "op_margin": -14.18,
+   "op_margin_bp": 322.8,
+   "opex_pct": -12.6,
+   "opex_gap_pp": 0.4,
+   "inventory_b": 0.2792,
+   "inventory_pct": -35.4,
+   "inventory_gap_pp": -22.4,
+   "eps_q": -0.19,
+   "eps_q_prior": -0.22,
+   "diluted_shares_m": 546.639,
+   "cash_b": 1.4661,
+   "ltd_b": 0.0251,
+   "debt_note": "long-term capital lease obligations $25.1M",
+   "sales_note": "revenue $776.5M vs $892.7M a year earlier, $664.2M the quarter before",
+   "inventory_note": "inventories $279.2M (2009-07-26) vs $432.3M a year earlier (Q2 FY09 10-Q)",
+   "eps_note": "GAAP diluted EPS $(0.19) vs $(0.22); the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 546.6M",
+   "next_print": "Q3 FY10 print (November)",
+   "cash_return_text": null,
+   "note": "charges stay in, as published: 'Reflected in these results is a net charge of $119.1 million related to the weak die/packaging set used in certain previous-generation chips' (Q2 FY10 results (8-K))"
+  },
+  {
+   "quarter": "Q3 FY10",
+   "fy": 2010,
+   "q": 3,
+   "published": "2009-11-06",
+   "source": "NV36",
+   "release": "Nov 5",
+   "release_time": "after the close on Nov 5: 8-K accepted 2009-11-05 16:25 ET; public before the open of the next trading day",
+   "period_end": "2009-10-25",
+   "raw": {
+    "sales_k": 903206,
+    "sales_prior_k": 897655,
+    "sales_prev_q_k": 776520,
+    "gross_profit_k": 391783,
+    "gross_profit_prior_k": 367843,
+    "rd_k": 197948,
+    "rd_prior_k": 212360,
+    "sga_k": 85990,
+    "sga_prior_k": 90349,
+    "op_income_k": 107845,
+    "op_income_prior_k": 56796,
+    "inventory_k": 277643,
+    "inventory_prior_k": 523988
+   },
+   "rows": {
+    "sales": "Revenue | 903,206 | 897,655 | 2,343,957 | 2,943,719",
+    "gp": "Gross profit | 391,783 | 367,843 | 738,202 | 1,032,603",
+    "rd": "Research and development | 197,948 | 212,360 | 692,600 | 644,100",
+    "sga": "Sales, general and administrative | 85,990 | 90,349 | 278,829 | 275,782",
+    "op": "Operating income (loss) | 107,845 | 56,796 | (233,227) | 104,383",
+    "eps": "Diluted net income (loss) per share | 0.19 | 0.11 | (0.36) | 0.20",
+    "shares": "Shares used in diluted per share computation | 574,381 | 564,536 | 546,737 | 590,490",
+    "inv": "Inventories | 277,643 | 537,834",
+    "cash": "Cash, cash equivalents and marketable securities | 1,634,079 | 1,255,390",
+    "debt": "Capital lease obligations, long term | 24,760 | 25,634"
+   },
+   "inventory_prior_row": {
+    "source": "NV30",
+    "row": "Inventories | 523,988 | 358,521"
+   },
+   "sales_prev_q_row": {
+    "source": "NV34",
+    "row": "Revenue | 776,520 | 892,676 | 1,440,751 | 2,046,064"
+   },
+   "extra_sources": [
+    "NV30",
+    "NV34"
+   ],
+   "sales_b": 0.9032,
+   "sales_pct": 0.6,
+   "seq_pct": 16.3,
+   "gross_margin": 43.38,
+   "gross_margin_bp": 239.9,
+   "op_margin": 11.94,
+   "op_margin_bp": 561.3,
+   "opex_pct": -6.2,
+   "opex_gap_pp": -6.8,
+   "inventory_b": 0.2776,
+   "inventory_pct": -47.0,
+   "inventory_gap_pp": -47.6,
+   "eps_q": 0.19,
+   "eps_q_prior": 0.11,
+   "diluted_shares_m": 574.381,
+   "cash_b": 1.6341,
+   "ltd_b": 0.0248,
+   "debt_note": "long-term capital lease obligations $24.8M",
+   "sales_note": "revenue $903.2M vs $897.7M a year earlier, $776.5M the quarter before",
+   "inventory_note": "inventories $277.6M (2009-10-25) vs $524.0M a year earlier (Q3 FY09 10-Q)",
+   "eps_note": "GAAP diluted EPS $0.19 vs $0.11; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 574.4M",
+   "next_print": "Q4 FY10 print (February)",
+   "cash_return_text": null,
+   "note": "charges stay in, as published: 'Our third quarter GAAP results included a $25.1 million credit for insurance proceeds related to a weak die/packaging material set' (Q3 FY10 CFO commentary (exhibit to the results 8-K))"
+  }
+ ],
+ "guides": [
+  {
+   "fy": 2009,
+   "published": "2008-08-21",
+   "source": "NV28",
+   "doc": "Q2 FY09 10-Q",
+   "quarter": "Q3 FY09",
+   "words": "We expect revenue to grow slightly during the third quarter of fiscal year 2009 as compared to the second quarter of fiscal year 2009."
+  },
+  {
+   "fy": 2009,
+   "published": "2008-12-02",
+   "source": "NV30",
+   "doc": "Q3 FY09 10-Q",
+   "quarter": "Q4 FY09",
+   "words": "We expect revenue to decline slightly during the fourth quarter of fiscal year 2009 as compared to the third quarter of fiscal year 2009."
+  },
+  {
+   "fy": 2010,
+   "published": "2009-03-13",
+   "source": "NV12",
+   "doc": "FY2009 10-K",
+   "quarter": "Q1 FY10",
+   "words": "For the first quarter of fiscal 2010, we expect revenue to remain flat or improve slightly when compared to the fourth quarter of fiscal year 2009."
+  },
+  {
+   "fy": 2010,
+   "published": "2009-05-20",
+   "source": "NV33",
+   "doc": "Q1 FY10 10-Q",
+   "quarter": "Q2 FY10",
+   "words": "We expect revenue to increase slightly during the second quarter of fiscal year 2010 as compared to the first quarter of fiscal year 2010."
+  },
+  {
+   "fy": 2010,
+   "published": "2009-08-07",
+   "source": "NV34",
+   "doc": "Q2 FY10 release",
+   "quarter": "Q3 FY10",
+   "seq_pct": [
+    5,
+    7
+   ],
+   "base_quarter": "Q2 FY10",
+   "base_sales_m": 776.52,
+   "level_m": [
+    815.35,
+    830.88
+   ],
+   "prior_label": "Q3 FY09",
+   "prior_sales_m": 897.655,
+   "prior_source": "NV29",
+   "yoy_pct": [
+    -9.2,
+    -7.4
+   ],
+   "quote": "NVIDIA expects revenue in the third quarter ending October 25, 2009, to be up 5 to 7 percent over the second quarter.",
+   "display": "none (revenue only)"
+  },
+  {
+   "fy": 2010,
+   "published": "2009-08-21",
+   "source": "NV35",
+   "doc": "Q2 FY10 10-Q",
+   "quarter": "Q3 FY10",
+   "words": "We expect revenue to increase during the third quarter of fiscal year 2010 as compared to the second quarter of fiscal year 2010."
+  },
+  {
+   "fy": 2010,
+   "published": "2009-11-06",
+   "source": "NV36",
+   "doc": "Q3 FY10 release",
+   "quarter": "Q4 FY10",
+   "seq_pct": [
+    2,
+    2
+   ],
+   "base_quarter": "Q3 FY10",
+   "base_sales_m": 903.206,
+   "level_m": [
+    921.27,
+    921.27
+   ],
+   "prior_label": "Q4 FY09",
+   "prior_sales_m": 481.14,
+   "prior_source": "NV31",
+   "yoy_pct": [
+    91.5,
+    91.5
+   ],
+   "quote": "Revenue is expected to be up slightly, approximately 2 percent, from the third quarter.",
+   "display": "'GAAP gross margin is expected to be in the range of 40 to 42 percent.'; 'GAAP operating expenses are expected to be approximately $305 million.'; 'our fourth quarter being 14 weeks versus the usual 13 weeks' (the CFO commentary: the outlook's quarter is 14 weeks, the year-ago quarter 13)"
+  },
+  {
+   "fy": 2010,
+   "published": "2009-11-19",
+   "source": "NV37",
+   "doc": "Q3 FY10 10-Q",
+   "quarter": "Q4 FY10",
+   "words": "As such, revenue during the fourth quarter of fiscal year 2010 is anticipated to merely increase slightly as compared to the third quarter of fiscal year 2010."
+  }
+ ],
+ "dividends": [],
+ "events": [],
+ "company_names": [],
+ "splits": [
+  {
+   "published": "2007-03-16",
+   "source": "NV10",
+   "effective": "2006-04-07",
+   "ratio": 2,
+   "label": "two-for-one",
+   "note": "(A) Reflects a two-for-one stock-split effective April 6, 2006."
+  },
+  {
+   "published": "2007-08-10",
+   "source": "NV20",
+   "effective": "2007-09-11",
+   "ratio": 1.5,
+   "label": "three-for-two",
+   "note": "The additional shares resulting from the stock split are expected to be distributed by the Company’s transfer agent on or about Monday, September 10, 2007."
+  }
+ ],
+ "rule_t": {
+  "revenue": {
+   "measure": "revenue growth, % (five-year selected data)",
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "2000": 136.67,
+    "2001": 96.33,
+    "2002": 86.26,
+    "2003": 39.43,
+    "2004": -4.53,
+    "2005": 10.26,
+    "2006": 18.19,
+    "2007": 29.17
+   },
+   "raw": {
+    "2000": {
+     "source": "NV5",
+     "revenue_k": [
+      158237.0,
+      374505.0
+     ],
+     "rows": [
+      "Revenue | 1,909,447 | 1,369,471 | 735,264 | 374,505 | 158,237"
+     ]
+    },
+    "2001": {
+     "source": "NV6",
+     "revenue_k": [
+      374505.0,
+      735264.0
+     ],
+     "rows": [
+      "Revenue | 1,822,945 | 1,909,447 | 1,369,471 | 735,264 | 374,505"
+     ]
+    },
+    "2002": {
+     "source": "NV7",
+     "revenue_k": [
+      735264.0,
+      1369471.0
+     ],
+     "rows": [
+      "Revenue | 2,010,033 | 1,822,945 | 1,909,447 | 1,369,471 | 735,264"
+     ]
+    },
+    "2003": {
+     "source": "NV9",
+     "revenue_k": [
+      1369471.0,
+      1909447.0
+     ],
+     "rows": [
+      "Revenue | 2,375,687 | 2,010,033 | 1,822,945 | 1,909,447 | 1,369,471"
+     ]
+    },
+    "2004": {
+     "source": "NV10",
+     "revenue_k": [
+      1909447.0,
+      1822945.0
+     ],
+     "rows": [
+      "Revenue | 3,068,771 | 2,375,687 | 2,010,033 | 1,822,945 | 1,909,447"
+     ]
+    },
+    "2005": {
+     "source": "NV10",
+     "revenue_k": [
+      1822945.0,
+      2010033.0
+     ],
+     "rows": [
+      "Revenue | 3,068,771 | 2,375,687 | 2,010,033 | 1,822,945 | 1,909,447"
+     ]
+    },
+    "2006": {
+     "source": "NV10",
+     "revenue_k": [
+      2010033.0,
+      2375687.0
+     ],
+     "rows": [
+      "Revenue | 3,068,771 | 2,375,687 | 2,010,033 | 1,822,945 | 1,909,447"
+     ]
+    },
+    "2007": {
+     "source": "NV10",
+     "revenue_k": [
+      2375687.0,
+      3068771.0
+     ],
+     "rows": [
+      "Revenue | 3,068,771 | 2,375,687 | 2,010,033 | 1,822,945 | 1,909,447"
+     ]
+    }
+   },
+   "thresholds": {
+    "BEAR": -43,
+    "BASE": -5,
+    "BULL": 34,
+    "XBULL": 137
+   }
+  },
+  "gross_margin": {
+   "measure": "gross margin change, bp (gross profit on revenue)",
+   "unit": 10,
+   "lower_is_better": false,
+   "values": {
+    "2000": 723.0,
+    "2001": -76.2,
+    "2002": 80.2,
+    "2003": -774.9,
+    "2004": -115.4,
+    "2005": 340.2,
+    "2006": 609.0,
+    "2007": 407.1
+   },
+   "raw": {
+    "2000": {
+     "source": "NV5",
+     "gross_profit_k": [
+      48491.0,
+      141843.0
+     ],
+     "revenue_k": [
+      158237.0,
+      374505.0
+     ],
+     "rows": [
+      "Gross profit | 576,012 | 519,238 | 272,879 | 141,843 | 48,491",
+      "Revenue | 1,909,447 | 1,369,471 | 735,264 | 374,505 | 158,237"
+     ]
+    },
+    "2001": {
+     "source": "NV6",
+     "gross_profit_k": [
+      141843.0,
+      272879.0
+     ],
+     "revenue_k": [
+      374505.0,
+      735264.0
+     ],
+     "rows": [
+      "Gross profit | 528,878 | 576,012 | 519,238 | 272,879 | 141,843",
+      "Revenue | 1,822,945 | 1,909,447 | 1,369,471 | 735,264 | 374,505"
+     ]
+    },
+    "2002": {
+     "source": "NV7",
+     "gross_profit_k": [
+      272879.0,
+      519238.0
+     ],
+     "revenue_k": [
+      735264.0,
+      1369471.0
+     ],
+     "rows": [
+      "Gross profit | 649,486 | 528,878 | 576,012 | 519,238 | 272,879",
+      "Revenue | 2,010,033 | 1,822,945 | 1,909,447 | 1,369,471 | 735,264"
+     ]
+    },
+    "2003": {
+     "source": "NV8",
+     "gross_profit_k": [
+      519238.0,
+      576012.0
+     ],
+     "revenue_k": [
+      1369471.0,
+      1909447.0
+     ],
+     "rows": [
+      "Gross profit | 910,795 | 649,486 | 528,878 | 576,012 | 519,238",
+      "Revenue | 2,375,687 | 2,010,033 | 1,822,945 | 1,909,447 | 1,369,471"
+     ]
+    },
+    "2004": {
+     "source": "NV8",
+     "gross_profit_k": [
+      576012.0,
+      528878.0
+     ],
+     "revenue_k": [
+      1909447.0,
+      1822945.0
+     ],
+     "rows": [
+      "Gross profit | 910,795 | 649,486 | 528,878 | 576,012 | 519,238",
+      "Revenue | 2,375,687 | 2,010,033 | 1,822,945 | 1,909,447 | 1,369,471"
+     ]
+    },
+    "2005": {
+     "source": "NV9",
+     "gross_profit_k": [
+      525261.0,
+      647555.0
+     ],
+     "revenue_k": [
+      1822945.0,
+      2010033.0
+     ],
+     "rows": [
+      "Gross profit | 910,033 | 647,555 | 525,261",
+      "Revenue | 2,375,687 | 2,010,033 | 1,822,945"
+     ]
+    },
+    "2006": {
+     "source": "NV10",
+     "gross_profit_k": [
+      647555.0,
+      910033.0
+     ],
+     "revenue_k": [
+      2010033.0,
+      2375687.0
+     ],
+     "rows": [
+      "Gross profit | 1,300,449 | 910,033 | 647,555",
+      "Revenue | 3,068,771 | 2,375,687 | 2,010,033"
+     ]
+    },
+    "2007": {
+     "source": "NV10",
+     "gross_profit_k": [
+      910033.0,
+      1300449.0
+     ],
+     "revenue_k": [
+      2375687.0,
+      3068771.0
+     ],
+     "rows": [
+      "Gross profit | 1,300,449 | 910,033 | 647,555",
+      "Revenue | 3,068,771 | 2,375,687 | 2,010,033"
+     ]
+    }
+   },
+   "thresholds": {
+    "BEAR": -1760,
+    "BASE": -770,
+    "BULL": 210,
+    "XBULL": 720
+   }
+  },
+  "opex_gap": {
+   "measure": "research and development plus sales, general and administrative growth less revenue growth, pp (one statement)",
+   "unit": 1,
+   "lower_is_better": true,
+   "values": {
+    "2000": -47.42,
+    "2001": -22.41,
+    "2002": -10.98,
+    "2003": 8.92,
+    "2004": 20.17,
+    "2005": 6.77,
+    "2006": -16.95,
+    "2007": 22.29
+   },
+   "raw": {
+    "2000": {
+     "source": "NV4",
+     "rd_k": [
+      25073.0,
+      46914.0
+     ],
+     "sga_k": [
+      18902.0,
+      36312.0
+     ],
+     "revenue_k": [
+      158237.0,
+      374505.0
+     ],
+     "rows": [
+      "Research and development | 153,920 | 86,047 | 46,914 | 25,073 | 1,121 | 7,103",
+      "Sales, general andadministrative | 97,185 | 58,697 | 36,312 | 18,902 | 640 | 4,183",
+      "Total revenue | 1,369,471 | 735,264 | 374,505 | 158,237 | 13,331 | 29,071"
+     ]
+    },
+    "2001": {
+     "source": "NV4",
+     "rd_k": [
+      46914.0,
+      86047.0
+     ],
+     "sga_k": [
+      36312.0,
+      58697.0
+     ],
+     "revenue_k": [
+      374505.0,
+      735264.0
+     ],
+     "rows": [
+      "Research and development | 153,920 | 86,047 | 46,914",
+      "Sales, general and administrative | 97,185 | 58,697 | 36,312",
+      "Revenue | 1,369,471 | 735,264 | 374,505"
+     ]
+    },
+    "2002": {
+     "source": "NV5",
+     "rd_k": [
+      86047.0,
+      154752.0
+     ],
+     "sga_k": [
+      58697.0,
+      98944.0
+     ],
+     "revenue_k": [
+      735264.0,
+      1369471.0
+     ],
+     "rows": [
+      "Research and development | 224,873 | 154,752 | 86,047",
+      "Sales, general and administrative | 151,485 | 98,944 | 58,697",
+      "Revenue | 1,909,447 | 1,369,471 | 735,264"
+     ]
+    },
+    "2003": {
+     "source": "NV6",
+     "rd_k": [
+      154752.0,
+      224873.0
+     ],
+     "sga_k": [
+      98944.0,
+      151485.0
+     ],
+     "revenue_k": [
+      1369471.0,
+      1909447.0
+     ],
+     "rows": [
+      "Research and development | 269,972 | 224,873 | 154,752",
+      "Sales, general and administrative | 165,249 | 151,485 | 98,944",
+      "Revenue | 1,822,945 | 1,909,447 | 1,369,471"
+     ]
+    },
+    "2004": {
+     "source": "NV7",
+     "rd_k": [
+      224873.0,
+      269972.0
+     ],
+     "sga_k": [
+      151485.0,
+      165249.0
+     ],
+     "revenue_k": [
+      1909447.0,
+      1822945.0
+     ],
+     "rows": [
+      "Research and development | 335,104 | 269,972 | 224,873",
+      "Sales, general and administrative | 200,789 | 165,249 | 151,485",
+      "Revenue | 2,010,033 | 1,822,945 | 1,909,447"
+     ]
+    },
+    "2005": {
+     "source": "NV9",
+     "rd_k": [
+      292162.0,
+      348220.0
+     ],
+     "sga_k": [
+      179811.0,
+      204159.0
+     ],
+     "revenue_k": [
+      1822945.0,
+      2010033.0
+     ],
+     "rows": [
+      "Research and development | 357,123 | 348,220 | 292,162",
+      "Sales, general and administrative | 202,088 | 204,159 | 179,811",
+      "Revenue | 2,375,687 | 2,010,033 | 1,822,945"
+     ]
+    },
+    "2006": {
+     "source": "NV10",
+     "rd_k": [
+      348220.0,
+      357123.0
+     ],
+     "sga_k": [
+      204159.0,
+      202088.0
+     ],
+     "revenue_k": [
+      2010033.0,
+      2375687.0
+     ],
+     "rows": [
+      "Research and development | 553,467 | 357,123 | 348,220",
+      "Sales, general and administrative | 293,530 | 202,088 | 204,159",
+      "Revenue | 3,068,771 | 2,375,687 | 2,010,033"
+     ]
+    },
+    "2007": {
+     "source": "NV10",
+     "rd_k": [
+      357123.0,
+      553467.0
+     ],
+     "sga_k": [
+      202088.0,
+      293530.0
+     ],
+     "revenue_k": [
+      2375687.0,
+      3068771.0
+     ],
+     "rows": [
+      "Research and development | 553,467 | 357,123 | 348,220",
+      "Sales, general and administrative | 293,530 | 202,088 | 204,159",
+      "Revenue | 3,068,771 | 2,375,687 | 2,010,033"
+     ]
+    }
+   },
+   "thresholds": {
+    "BEAR": 47,
+    "BASE": 22,
+    "BULL": -2,
+    "XBULL": -47
+   }
+  },
+  "inventory_gap": {
+   "measure": "year-end inventory growth less revenue growth, pp (one filing)",
+   "unit": 1,
+   "lower_is_better": true,
+   "values": {
+    "2000": -105.2,
+    "2001": 42.58,
+    "2002": 50.39,
+    "2003": -71.61,
+    "2004": 66.02,
+    "2005": 24.44,
+    "2006": -37.48,
+    "2007": 9.99
+   },
+   "raw": {
+    "2000": {
+     "source": "NV2",
+     "inventory_k": [
+      28623.0,
+      37631.0
+     ],
+     "revenue_k": [
+      158237.0,
+      374505.0
+     ],
+     "rows": [
+      "Inventory............................................ 28,623 37,631",
+      "Total revenue............ 29,071 13,331 158,237 374,505"
+     ]
+    },
+    "2001": {
+     "source": "NV3",
+     "inventory_k": [
+      37631.0,
+      89905.0
+     ],
+     "revenue_k": [
+      374505.0,
+      735264.0
+     ],
+     "rows": [
+      "Inventory............................................ 89,905 37,631",
+      "Total revenues.......... 735,264 374,505 158,237"
+     ]
+    },
+    "2002": {
+     "source": "NV4",
+     "inventory_k": [
+      90380.0,
+      213877.0
+     ],
+     "revenue_k": [
+      735264.0,
+      1369471.0
+     ],
+     "rows": [
+      "Inventory | 213,877 | 90,380",
+      "Revenue | 1,369,471 | 735,264 | 374,505"
+     ]
+    },
+    "2003": {
+     "source": "NV5",
+     "inventory_k": [
+      213877.0,
+      145046.0
+     ],
+     "revenue_k": [
+      1369471.0,
+      1909447.0
+     ],
+     "rows": [
+      "Inventories | 145,046 | 213,877",
+      "Revenue | 1,909,447 | 1,369,471 | 735,264"
+     ]
+    },
+    "2004": {
+     "source": "NV6",
+     "inventory_k": [
+      145046.0,
+      234238.0
+     ],
+     "revenue_k": [
+      1909447.0,
+      1822945.0
+     ],
+     "rows": [
+      "Inventories | 234,238 | 145,046",
+      "Revenue | 1,822,945 | 1,909,447 | 1,369,471"
+     ]
+    },
+    "2005": {
+     "source": "NV7",
+     "inventory_k": [
+      234238.0,
+      315518.0
+     ],
+     "revenue_k": [
+      1822945.0,
+      2010033.0
+     ],
+     "rows": [
+      "Inventories | 315,518 | 234,238",
+      "Revenue | 2,010,033 | 1,822,945 | 1,909,447"
+     ]
+    },
+    "2006": {
+     "source": "NV9",
+     "inventory_k": [
+      315786.0,
+      254870.0
+     ],
+     "revenue_k": [
+      2010033.0,
+      2375687.0
+     ],
+     "rows": [
+      "Inventories | 254,870 | 315,786",
+      "Revenue | 2,375,687 | 2,010,033 | 1,822,945"
+     ]
+    },
+    "2007": {
+     "source": "NV10",
+     "inventory_k": [
+      254870.0,
+      354680.0
+     ],
+     "revenue_k": [
+      2375687.0,
+      3068771.0
+     ],
+     "rows": [
+      "Inventories | 354,680 | 254,870",
+      "Revenue | 3,068,771 | 2,375,687 | 2,010,033"
+     ]
+    }
+   },
+   "thresholds": {
+    "BEAR": 115,
+    "BASE": 66,
+    "BULL": 17,
+    "XBULL": -105
+   }
+  },
+  "op_margin": {
+   "measure": "operating margin change, bp (income from operations on revenue, selected data)",
+   "unit": 10,
+   "lower_is_better": false,
+   "values": {
+    "2000": 1279.8,
+    "2001": 177.5,
+    "2002": 22.4,
+    "2003": -947.6,
+    "2004": -157.4,
+    "2005": 200.4,
+    "2006": 943.6,
+    "2007": 60.5
+   },
+   "raw": {
+    "2000": {
+     "source": "NV5",
+     "op_income_k": [
+      4516.0,
+      58617.0
+     ],
+     "revenue_k": [
+      158237.0,
+      374505.0
+     ],
+     "rows": [
+      "Operating income | 143,986 | 241,732 | 128,135 | 58,617 | 4,516",
+      "Revenue | 1,909,447 | 1,369,471 | 735,264 | 374,505 | 158,237"
+     ]
+    },
+    "2001": {
+     "source": "NV6",
+     "op_income_k": [
+      58617.0,
+      128135.0
+     ],
+     "revenue_k": [
+      374505.0,
+      735264.0
+     ],
+     "rows": [
+      "Income from operations | 90,157 | 143,986 | 241,732 | 128,135 | 58,617",
+      "Revenue | 1,822,945 | 1,909,447 | 1,369,471 | 735,264 | 374,505"
+     ]
+    },
+    "2002": {
+     "source": "NV7",
+     "op_income_k": [
+      128135.0,
+      241732.0
+     ],
+     "revenue_k": [
+      735264.0,
+      1369471.0
+     ],
+     "rows": [
+      "Income from operations | 113,593 | 90,157 | 143,986 | 241,732 | 128,135",
+      "Revenue | 2,010,033 | 1,822,945 | 1,909,447 | 1,369,471 | 735,264"
+     ]
+    },
+    "2003": {
+     "source": "NV9",
+     "op_income_k": [
+      188732.0,
+      82201.0
+     ],
+     "revenue_k": [
+      1369471.0,
+      1909447.0
+     ],
+     "rows": [
+      "Income from operations | 336,664 | 95,176 | 49,788 | 82,201 | 188,732",
+      "Revenue | 2,375,687 | 2,010,033 | 1,822,945 | 1,909,447 | 1,369,471"
+     ]
+    },
+    "2004": {
+     "source": "NV10",
+     "op_income_k": [
+      82201.0,
+      49788.0
+     ],
+     "revenue_k": [
+      1909447.0,
+      1822945.0
+     ],
+     "rows": [
+      "Income from operations | 453,452 | 336,664 | 95,176 | 49,788 | 82,201",
+      "Revenue | 3,068,771 | 2,375,687 | 2,010,033 | 1,822,945 | 1,909,447"
+     ]
+    },
+    "2005": {
+     "source": "NV10",
+     "op_income_k": [
+      49788.0,
+      95176.0
+     ],
+     "revenue_k": [
+      1822945.0,
+      2010033.0
+     ],
+     "rows": [
+      "Income from operations | 453,452 | 336,664 | 95,176 | 49,788 | 82,201",
+      "Revenue | 3,068,771 | 2,375,687 | 2,010,033 | 1,822,945 | 1,909,447"
+     ]
+    },
+    "2006": {
+     "source": "NV10",
+     "op_income_k": [
+      95176.0,
+      336664.0
+     ],
+     "revenue_k": [
+      2010033.0,
+      2375687.0
+     ],
+     "rows": [
+      "Income from operations | 453,452 | 336,664 | 95,176 | 49,788 | 82,201",
+      "Revenue | 3,068,771 | 2,375,687 | 2,010,033 | 1,822,945 | 1,909,447"
+     ]
+    },
+    "2007": {
+     "source": "NV10",
+     "op_income_k": [
+      336664.0,
+      453452.0
+     ],
+     "revenue_k": [
+      2375687.0,
+      3068771.0
+     ],
+     "rows": [
+      "Income from operations | 453,452 | 336,664 | 95,176 | 49,788 | 82,201",
+      "Revenue | 3,068,771 | 2,375,687 | 2,010,033 | 1,822,945 | 1,909,447"
+     ]
+    }
+   },
+   "thresholds": {
+    "BEAR": -2010,
+    "BASE": -950,
+    "BULL": 120,
+    "XBULL": 1280
+   }
+  }
+ },
+ "fiscal_calendar": {
+  "rule": "the last Sunday in January",
+  "quote": "We operate on a 52 or 53-week year, ending on the last Sunday in January.",
+  "source": "NV12"
+ },
+ "price_basis": "Yahoo's NVDA series is adjusted for every split (2000-06-27, 2001-09-12, 2006-04-07 and 2007-09-11, and the later 2021-07-20 and 2024-06-10); the builder multiplies it by the splits after AS_OF, so every price is on the AS_OF share basis: $30.00 on 2008-01-04, the close as traded."
+}

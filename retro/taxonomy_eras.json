@@ -1621,6 +1621,61 @@
     "term": "Cobenfy",
     "first_seen": "2024-10-31",
     "note": "the brand name of xanomeline and trospium chloride (from Karuna Therapeutics); first in a Bristol-Myers Squibb filing in its Q3 2024 earnings 8-K (accepted 2024-10-31 07:52 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Tegra",
+    "first_seen": "2008-08-13",
+    "note": "NVIDIA's computer-on-a-chip brand; first in an NVIDIA filing in its Q2 FY09 earnings 8-K (accepted 2008-08-12 16:49 ET, after the close, so it counts from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "3D Vision",
+    "first_seen": "2009-02-11",
+    "note": "NVIDIA's GeForce 3D Vision stereoscopic product; first in an NVIDIA filing in its Q4 FY09 earnings 8-K (accepted 2009-02-10 16:29 ET, after the close, so it counts from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "Fermi",
+    "first_seen": "2009-11-06",
+    "note": "NVIDIA's GPU architecture announced in 2009; first in an NVIDIA filing in its Q3 FY10 earnings 8-K (accepted 2009-11-05 16:25 ET, after the close, so it counts from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "Optimus",
+    "first_seen": "2010-02-18",
+    "note": "NVIDIA's notebook graphics-switching technology; first in an NVIDIA filing in its Q4 FY10 earnings 8-K (accepted 2010-02-17 16:50 ET, after the close, so it counts from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "Kepler",
+    "first_seen": "2012-02-16",
+    "note": "NVIDIA's GPU architecture after Fermi; first in an NVIDIA filing in its Q4 FY12 earnings 8-K (accepted 2012-02-15 16:40 ET, after the close, so it counts from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "NVLink",
+    "first_seen": "2014-05-09",
+    "note": "NVIDIA's GPU interconnect; first in an NVIDIA filing in its Q1 FY15 earnings 8-K (accepted 2014-05-08 16:28 ET, after the close, so it counts from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "Jetson",
+    "first_seen": "2014-05-09",
+    "note": "NVIDIA's embedded computing modules; first in an NVIDIA filing in its Q1 FY15 earnings 8-K (accepted 2014-05-08 16:28 ET, after the close, so it counts from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "GeForce NOW",
+    "first_seen": "2015-11-06",
+    "note": "NVIDIA's cloud gaming service; first in an NVIDIA filing in its Q3 FY16 earnings 8-K (accepted 2015-11-05 16:25 ET, after the close, so it counts from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "DGX",
+    "first_seen": "2016-05-13",
+    "note": "NVIDIA's AI systems; first in an NVIDIA filing in its Q1 FY17 earnings 8-K (accepted 2016-05-12 16:39 ET, after the close, so it counts from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "DLSS",
+    "first_seen": "2019-02-15",
+    "note": "NVIDIA's deep learning super sampling; first in an NVIDIA filing in its Q4 FY19 earnings 8-K (accepted 2019-02-14 16:23 ET, after the close, so it counts from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "Omniverse",
+    "first_seen": "2019-05-17",
+    "note": "NVIDIA's 3D collaboration platform; first in an NVIDIA filing in its Q1 FY20 earnings 8-K (accepted 2019-05-16 16:22 ET, after the close, so it counts from the next trading day), EDGAR full-text search"
    }
   ]
  }
