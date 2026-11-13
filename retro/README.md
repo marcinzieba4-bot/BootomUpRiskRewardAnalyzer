@@ -14940,8 +14940,9 @@ Q3 and Q4 FY14; the $1,176.0M-$1,224.0M of Q3 FY15, repeated for Q4 FY15); 39 ar
 ($1.305B) against Q3 FY16's revenue; 4 are FY2014's year-end cash, which the Q4 FY14 release had already published ($4.672B); and 11 are
 closes and a trading-day count equal to later figures (the 2016-09-09 close of $59.52, also a 52-week low, against Q3 FY18's gross
 margin; $12.35, $13.73, $18.48, $14.91; 2397). Rebuilding the 314 dates of 2008-2013 gives the same models byte for byte; no file
-another ticker's builder reads has changed (the firewall's change adds two fields to NVDA's own planted print). The firewall runs on
-the committed build; its result follows that commit. All 208 dates pass `retro_tool run`; their only warnings are calendar years in the
+another ticker's builder reads has changed (the firewall's change adds two fields to NVDA's own planted print). The firewall (as in
+2010-2013, with the planted print released ahead of a planted outlook) changes no model and leaves no planted text at any of the 23
+cutoffs above (314 to 522 dates each). All 208 dates pass `retro_tool run`; their only warnings are calendar years in the
 filings' own words: the notes' maturities (2018, 2021, 2026) and the fiscal years of the capital return plans ("in fiscal 2016", "For
 fiscal 2019").
 
