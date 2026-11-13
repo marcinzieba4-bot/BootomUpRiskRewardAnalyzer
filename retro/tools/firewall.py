@@ -23,6 +23,7 @@ and require byte-identical models. Restores the fact sheet and the price cache a
     python3 retro/tools/firewall.py 2008-07-01 BMY          # the BMY series in staging/retrospective
     python3 retro/tools/firewall.py 2008-07-01 NVDA         # the NVDA series in staging/retrospective
     python3 retro/tools/firewall.py 2023-01-01 F            # the F series in staging/retrospective
+    python3 retro/tools/firewall.py 2009-01-01 F            # the F early era (2008-2011), also in staging/retrospective
 
 Plants a print, a history vintage, an event per live theme and a company name (UNP: also a guide and a
 dividend; LOW and AAPL: also a guide with every guided field; NKE: a guide in words, and futures orders on the last print before
@@ -556,6 +557,16 @@ try:
                  dividend_note="PLANTED", groups=[["PLANTED", 1, -99]], groups_basis="PLANTED", normalization="PLANTED")
         for g in [g for g in f["guides"] if g["published"] < cutoff]:
             f["guides"].append({**copy.deepcopy(g), "published": later, "doc": "PLANTED", "quote": "PLANTED", "note": "PLANTED"})
+        if cutoff < "2022-01-01":   # the early era (F 2008-2011): the planted print's full-year actuals exclude its own year, update every
+                                    # excluded year's note and readmit every excluded year; the planted vintage readmits none
+            ex = v.get("eps_excluded", {})
+            last["fy_actual"] = {"fy": 2099, "fy_label": "FY99", "revenue_usd_b": 0.01, "diluted_shares_m": 1.0, "pretax_margin": -50.0,
+                                 "pretax_margin_note": "PLANTED", "sales_growth": -60.0, "ws_pct": -60.0, "ws_note": "PLANTED",
+                                 "tax_rate": 0.9, "tax_note": "PLANTED", "eps_normalized": None, "excluded_note": "PLANTED",
+                                 "normalization_note": "PLANTED", "excluded_updates": {y: "PLANTED" for y in ex},
+                                 "readmits": {y: 0.01 for y in ex}, "readmit_note": "PLANTED"}
+            last["fc_note"] = "PLANTED"
+            v.update(why="PLANTED", business_line="PLANTED", tax_note="PLANTED", fcf_b=99.0)
     if TICKER == "XOM":    # the excluded-year and restatement fields (XOM 2021-2023): a later vintage excluding a year, and the planted
                            # print's full-year actuals excluding its own year and restating every earlier one
         v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}

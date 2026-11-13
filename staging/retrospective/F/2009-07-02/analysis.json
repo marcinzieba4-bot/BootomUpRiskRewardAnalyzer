@@ -1,0 +1,239 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "F",
+ "company": "Ford Motor Company",
+ "as_of": "2009-07-02",
+ "price_date": "2009-07-02",
+ "price": 5.89,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); automaker signals, the early era",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "Ford Motor Company: 'We are one of the world’s largest producers of cars and trucks.' ('As of December 31, 2008, our vehicle brands include Ford, Mercury, Lincoln, and Volvo.'); among its risk factors, 'Further declines in industry sales volume, particularly in the United States or Europe, due to financial crisis, deepening recession, geo-political events, or other factors.' and 'A further increase in or acceleration of market shift away from sales of trucks, SUVs, or other more profitable vehicles, particularly in the United States.'; 'The automotive industry is also a highly competitive, cyclical business that has a wide and growing variety of product offerings from a growing number of manufacturers.' (the industry, not the company's own earnings, is called cyclical: DURABLE, the AVGO precedent) (its own FY2008 10-K); no disruption theme in the registry is live for an automaker on this date, so the watch list is empty and the 10-K's words on the shift away from trucks and SUVs stay here (the PEP obesity rule)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "Ford Motor Company: 'We are one of the world’s largest producers of cars and trucks.' ('As of December 31, 2008, our vehicle brands include Ford, Mercury, Lincoln, and Volvo.'); among its risk factors, 'Further declines in industry sales volume, particularly in the United States or Europe, due to financial crisis, deepening recession, geo-political events, or other factors.' and 'A further increase in or acceleration of market shift away from sales of trucks, SUVs, or other more profitable vehicles, particularly in the United States.'; 'The automotive industry is also a highly competitive, cyclical business that has a wide and growing variety of product offerings from a growing number of manufacturers.' (the industry, not the company's own earnings, is called cyclical: DURABLE, the AVGO precedent) (its own FY2008 10-K); no disruption theme in the registry is live for an automaker on this date, so the watch list is empty and the 10-K's words on the shift away from trucks and SUVs stay here (the PEP obesity rule). durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.37x; -2% to EPP floor; model-vs-market gap -0.19; conservative 2yr +53%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.37,
+  "ratio_b_fmt": "0.37x",
+  "epp": 6.0,
+  "epp_gap_pct": -1.8,
+  "epp_adj": 0.2,
+  "proxy_composite": 1.3,
+  "sca": 0.15,
+  "adj_composite": 1.65,
+  "market_composite": 1.84,
+  "adj_gap": -0.19,
+  "valuation": "FAIRLY VALUED",
+  "cons_return_2yr": 52.8,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.22,
+    "pe": 6.0,
+    "price": 1,
+    "desc": "EPS -52.6%/yr (worst year FY02-FY05, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 0.29,
+    "pe": 9.5,
+    "price": 3,
+    "desc": "EPS +-46.3%/yr (Q1 revenue + margin + buyback); P/E at its 7.5-yr ex-FY06 ex-FY07 ex-FY08 median"
+   },
+   "BULL": {
+    "eps": 1.47,
+    "pe": 13.1,
+    "price": 19,
+    "desc": "EPS +21.3%/yr (FY02-FY05 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 3.77,
+    "pe": 26.1,
+    "price": 98,
+    "desc": "EPS +94.1%/yr (best 2-yr run FY02-FY05); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.37,
+   "epp_gap_pct": -1.8,
+   "adj_gap": -0.19,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 52.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.15,
+   "epp_gap_pct": -1.8,
+   "adj_gap": 0.17,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 52.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 0.6,
+   "epp_gap_pct": -1.8,
+   "adj_gap": -0.55,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 52.8,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.35,
+   "epp_gap_pct": -1.8,
+   "adj_gap": -0.15,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 52.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.37,
+   "epp_gap_pct": -1.8,
+   "adj_gap": -0.21,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 52.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.37,
+   "epp_gap_pct": -1.8,
+   "adj_gap": 0.11,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 52.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.37,
+   "epp_gap_pct": -34.6,
+   "adj_gap": -0.19,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 52.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.37,
+   "epp_gap_pct": -1.8,
+   "adj_gap": -0.09,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 52.8,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP",
+  "RICH"
+ ],
+ "summary": "F (retrospective, 2009-07-02) ◉ BUY — Ratio B 0.37x (83.0% downside to Bear $1 / +222.6% upside to Bull $19) | Adj composite 1.65 vs market 1.84: gap -0.19 [FAIRLY VALUED] | -2% above the EPP floor $6 (6x FY09E $1.00) | Conservative 2-yr case: +52.8% total (+26.4%/yr) | At 5.9x FY09E the 15% hurdle price $8 sits between the BASE and BULL cases; wholesale units -36.4% in Q1 2009, forward revenues -42.7% (no Q2 2009 revenue guide, Q1 2009 revenue as reported); no disruption theme is live for an automaker on this date.",
+ "sources": [
+  {
+   "id": "F78",
+   "published": "2009-02-26",
+   "filed": "2009-02-26 06:17 ET (before the open)",
+   "title": "Ford FY2008 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000114036109005071/form10k.htm",
+   "supports": "FY2008 annual report"
+  },
+  {
+   "id": "F76",
+   "published": "2007-03-01",
+   "filed": "2007-02-28 16:51 ET (after the close)",
+   "title": "Ford FY2006 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000095012407001201/k12522e10vk.htm",
+   "supports": "FY2006 annual report"
+  },
+  {
+   "id": "F77",
+   "published": "2008-02-28",
+   "filed": "2008-02-27 16:16 ET (after the close)",
+   "title": "Ford FY2007 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000114036108005181/form10k.htm",
+   "supports": "FY2007 annual report"
+  },
+  {
+   "id": "F83",
+   "published": "2004-01-22",
+   "filed": "2004-01-22 09:09 ET (before the open)",
+   "title": "Ford Q4 2003 results (8-K exhibit)",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000095012404000141/k82214exv99w1.htm",
+   "supports": "Q4 2003 results release: the year's EPS excluding special items"
+  },
+  {
+   "id": "F84",
+   "published": "2005-01-20",
+   "filed": "2005-01-20 08:25 ET (before the open)",
+   "title": "Ford Q4 2004 results (8-K exhibit)",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000095012405000282/k91160exv99w1.htm",
+   "supports": "Q4 2004 results release: the year's EPS excluding special items"
+  },
+  {
+   "id": "F85",
+   "published": "2006-01-23",
+   "filed": "2006-01-23 08:41 ET (before the open)",
+   "title": "Ford Q4 2005 results (8-K exhibit)",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799606000027/ex99.htm",
+   "supports": "Q4 2005 results release: the year's EPS excluding special items"
+  },
+  {
+   "id": "F86",
+   "published": "2007-01-25",
+   "filed": "2007-01-25 08:40 ET (before the open)",
+   "title": "Ford Q4 2006 results (8-K exhibit)",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799607000004/ex99.htm",
+   "supports": "Q4 2006 results release: the year's EPS excluding special items"
+  },
+  {
+   "id": "F93",
+   "published": "2009-01-29",
+   "filed": "2009-01-29 08:07 ET (before the open)",
+   "title": "Ford Q4 2008 results (8-K exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000114036109002047/ex99.htm",
+   "supports": "Q4 2008 results release: wholesales, revenue, pre-tax results, Ford Credit, EPS excluding special items, outlook"
+  },
+  {
+   "id": "F94",
+   "published": "2009-04-24",
+   "filed": "2009-04-24 08:36 ET (before the open)",
+   "title": "Ford Q1 2009 results (8-K exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000114036109010217/ex99.htm",
+   "supports": "Q1 2009 results release: wholesales, revenue, pre-tax results, Ford Credit, EPS excluding special items, outlook"
+  },
+  {
+   "id": "A0",
+   "published": "2009-07-02",
+   "title": "Yahoo Finance daily prices, F and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/F/history",
+   "supports": "close $5.89 as traded on AS_OF, 52-week range, realized vol, beta, the 7.5-yr ex-FY06 ex-FY07 ex-FY08 P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-13"
+}

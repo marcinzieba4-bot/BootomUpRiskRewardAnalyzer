@@ -1,0 +1,148 @@
+
+════════════════════════════════════════════════════════════════════════
+  F  ·  Ford Motor Company  ·  $14.60  ·  RETROSPECTIVE as of 2011-05-27
+  Signal: ◉ BUY   Ratio B: 0.28x   Adj gap: +1.77  [UNDERVALUED]
+  Point-in-time: 12 sources, latest published 2011-05-27; latest print Q1 2011 (April 26)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2011E revenues, USD bn  →  FY2013E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2011E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Automotive                $   124.9  $ 124.9  $ 117.1      +0.0      -7.8
+    +14.8% revenues in FY10
+  Financial Services        $    10.1  $  10.1  $   9.5      +0.0      -0.6
+    -22.1% revenues in FY10
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $   135.0  $ 135.0  $ 126.6      +0.0      -8.4
+  FY2011E = FY10 $128.95B × (1 + 4.7%: no Q2 2011 revenue guide, Q1 2011 revenue as reported, applied to the year (no FY11 revenue guide)); split pro rata to FY10 sector revenues (FY2010 10-K selected data)
+  Q1 2011 (April 26): total revenues $33.10B +4.7%; wholesales +12.0%; Ford Credit pre-tax -13.9%;
+  pre-tax margin 8.4% (+163bp); EPS excl. special items $0.62 vs $0.46
+  Wholesales +12.0% (1,253K to 1,403K, wholesales excluding special items, as the release shows them against the year-ago quarter); Ford Credit pre-tax -13.9% ($828M to $713M); revenue +4.7% as reported ($31.6B to $33.1B); pre-tax $2,135M to $2,776M; EPS excluding special items $0.62 vs $0.46 (GAAP $0.61 vs $0.50)
+  FY11: no EPS, revenue or margin guide in numbers in any filing (Ford's outlook is in words and planning assumptions, not encoded; BASE takes Q1 2011 revenue growth)
+
+  FY2011E EPS check:  $135.0B × 5.5% pre-tax × (1−8.3%) ÷ 4.266B  =  $1.61  (FY2011E: no EPS guide in numbers, FY10's $1.91 (excluding special items) stands)
+  FY2013E BEAR check: $135.0B × 5.5% ÷ 5.144B  =  $1.33  (scenario $0.43)
+  FY2013E BULL check: $126.6B × 5.9% ÷ 5.144B  =  $1.34  (scenario $2.60)
+  Every 1pp of pre-tax margin ≈ $0.29 EPS ≈ $3/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Wholesale units                    -10.0%   ≥-6.0%   ≥-1.0%    ≥6.0%    +12.0%  ★ XBULL  ████
+  Ford Credit pre-tax                -98.0%  ≥-33.0%   ≥32.0%   ≥85.0%    -13.9%  ◦ BASE  ██░░
+  Revenue growth                     -22.0%   ≥-9.0%    ≥3.0%    ≥6.0%     +4.7%  ▲ BULL  ███░
+  EPS growth (excl. special items)  -192.0%  ≥-53.0%   ≥87.0%  ≥102.0%    +34.8%  ◦ BASE  ██░░
+  Pre-tax margin change             -1820.0bp  ≥-1000.0bp  ≥-180.0bp  ≥630.0bp  +163.0bp  ▲ BULL  ███░
+  Disruption theme: none live for an automaker   +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.70 / 4.00
+  Market composite:   1.22 / 4.00  (back-solved from $15 + 15% hurdle)
+  SCA adjustment:    +0.29  ·  EPP-distance adj +0.00  →  Adj composite 2.99  →  Gap +1.77  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY10 revenue +10.9%, wholesales +13.5% (5,524K vs 4,866K wholesales, FY2010 10-K); Q1 2011 pre-tax margin 8.4% (+163bp)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 7.6x FY11E vs a 9.6x 9.4-yr ex-FY06 ex-FY07 ex-FY08 median (31st percentile of its own range)  (+0.32 × 25%  =  +0.080)
+    +  Growth vs own history: no Q2 2011 revenue guide, Q1 2011 revenue as reported +4.7% vs a 0.3% 8-yr median  (+0.44 × 20%  =  +0.088)
+    +  Automotive gross cash $21.3B, FY10 Automotive operating-related cash flow $4.4B, dividend $0.00 a year, no dividend and no buyback: 'We presently have no publicly-announced repurchase program in place.' (FY2010 10-K)  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Wholesale units                     +12.0%    -10.0%  -22.0%  Plant shutdowns or weaker demand cut …
+  Ford Credit pre-tax                 -13.9%    -98.0%  -84.1%  Credit losses, residuals and funding …
+  Revenue growth                       +4.7%    -22.0%  -26.7%  Volume and pricing fall together
+  EPS growth (excl. special items)    +34.8%   -192.0%  -226.8%  Volume, mix and pricing fall faster t…
+  Pre-tax margin change             +163.0bp  -1820.0bp  -1983.0bp  Pricing fades while costs stay up
+  Disruption theme: none live for an automaker    +2.0/4    +1.0/4  -1.0/4  No disruption theme is live for an au…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$53  (model)  /  $3 (defined)
+  Bear probability (proxy model):  6.0%
+
+  KEY TRIGGER: wholesale units went from -4.1% (Q4 2010) to +12.0% (Q1 2011);
+  the bear case needs a volume and pricing fall that the pre-tax margin (+163bp now)
+  and Ford Credit (-13.9% pre-tax now) no longer absorb.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $1.91  (FY2011E: no EPS guide in numbers, FY10's $1.91 (excluding special items) stands)
+  Min viable P/E at panic:          7x  [median of calendar-year P/E lows: 2002 12.8x, 2003 5.8x, 2004 6.0x, 2005 7.7x, 2009 158.0x, 2010 5.2x, 2011 7.3x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $13/share
+  Current $15 vs Updated EPP $13:  +9%  moderate distance to floor
+  Bear $3 vs Updated EPP $13:  -78%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Wholesale units                             -6.0      -18.0   BASE floor (vs +12 now)
+  Ford Credit pre-tax                        -33.0      -19.1   BASE floor (vs -14 now)
+  Revenue growth                              -9.0      -13.7   BASE floor (vs +5 now)
+  EPS growth (excl. special items)           -53.0      -87.8   BASE floor (vs +35 now)
+  Pre-tax margin change                    -1000.0    -1163.0   BASE floor (vs +163 now)
+  Disruption theme: none live for an automaker             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $1.91 × (1+0.0%)² = $1.91
+  At 9x P/E (conservative):  $17/share
+  + Cumul. dividends (2yr):  +$0.00/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $17  (▲3 from $15)
+  Conservative total return:  +18% over 2yr  = +9%/yr
+
+  At 7.6x the multiple is already near its 9x median, so the conservative
+  case is a growth question: breakeven at 9x needs FY2013E EPS of $1.62,
+  i.e. -7.8%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $9.75  –  $18.97  (at 53th pct of range)
+  Annual dividend:      $0.00/share  (yield 0.0%)
+  Realized vol (1yr):   34% annualized
+  Beta vs broad market: 1.44
+  1-sigma range (1yr):  $10  –  $20  ($15 ± 34%)
+  2-sigma range (1yr):  $5  –  $24
+  ────────────────────────────────────────────────────────────
+  Bear $3 requires:  ~2.4σ price move  (unusual — requires fundamental break)
+  An automaker with a 1.4 beta: the stock is +48% off its June
+  low while wholesale units went from -4.1% (Q4 2010) to +12.0% (Q1 2011).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        0.43   6.4x  $      3     6.0%     72.2%   -66.3pp  EPS -52.6%/yr (worst year FY02-FY10 ex-FY06 ex-FY07 ex-FY08, capped at 0%); P/E to its 10th pct
+  BASE        1.72   9.6x  $     17    20.8%     20.7%    +0.1pp  EPS +-5.1%/yr (Q1 revenue + margin + buyback); P/E at its 9.4-yr ex-FY06 ex-FY07 ex-FY08 median
+  BULL        2.60  21.6x  $     56    61.6%      5.9%   +55.6pp  EPS +16.6%/yr (FY02-FY10 ex-FY06 ex-FY07 ex-FY08 CAGR); P/E holds its 75th pct
+  XBULL       7.20  541.0x  $  3,895    11.6%      1.1%   +10.5pp  EPS +94.1%/yr (best 2-yr run FY02-FY10 ex-FY06 ex-FY07 ex-FY08); P/E at its 90th pct
+
+  Proxy EV (2yr): $491  /  Market EV: $53  /  Current: $15
+  Conservative EV (2yr, ④): $17 + $0.00 divs = $17 total value
+  Downside (→ Bear $3): 79.5%   Upside (→ Bull $56): 283.6%   Ratio B 0.28x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $15 the market needs $19 in two years —
+  between the BASE and BULL cases. That is a market composite of 1.22 against a model
+  read of 2.99: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.28x      +9%    +1.77  UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.01x      +9%    +1.82  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     1.12x      +9%    +0.91  UNDERVALUED / WATCHLIST
+  Scenario EPS +1.5pp/yr                          0.27x      +9%    +1.77  UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.29x      +9%    +1.77  UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.28x      +9%    +2.07  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.28x     -24%    +1.97  UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.28x      +9%    +1.77  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 2011 print — the next read on wholesale units (+12.0% now); no volume guide in numbers to read it against
+  (2) Pre-tax margin — +163bp in Q1 2011: net pricing, mix and structural costs against volume
+  (3) A FY11 outlook in numbers — none: Ford's outlook is in words and planning assumptions
+  (4) Ford Credit pre-tax — -13.9% in Q1 2011 ($713M vs $828M): credit losses, lease residuals and funding costs
+  (5) Capital return at 8x — no dividend and no buyback: 'We presently have no publicly-announced repurchase program in place.' (FY2010 10-K): management's own read of the multiple
+  ◉ BUY  |  EPP floor $13  |  ADD below ~$14  |  TRIM above $56
+════════════════════════════════════════════════════════════════════════
+
