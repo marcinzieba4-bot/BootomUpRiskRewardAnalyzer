@@ -1,11 +1,14 @@
 # NVDA retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the NVDA weekly dates: 522 from 2008-01-04 to 2017-12-29, all NVIDIA Corporation (Nasdaq: NVDA).
+Patterns seen in `outcome.json` for the NVDA weekly dates: 731 from 2008-01-04 to 2021-12-31, all NVIDIA Corporation (Nasdaq: NVDA).
 They are **labels and hypotheses**: never feed them back into the method or the fact sheet. Each batch was scored only after its
 point-in-time build was committed and pushed (2008-2009: 9510254, firewall result 99a5d02; 2010-2013: 69a20a9, firewall result
-858dc95; 2014-2017: 3464af5, firewall result c0c01f1); the outcomes were computed on 2026-11-12 (2008-2009) and 2026-11-13 (2010-2013,
-2014-2017). Every date has its 6-month, 1-, 2- and 3-year horizons (the last ends 2020-12-29). Prices are on the AS_OF share basis (no split falls in any horizon; the next is 2021's),
-so every price is as traded. NVIDIA paid no dividend until November 2012: its first ($0.075 a share on this basis, ex-date 2012-11-20)
+858dc95; 2014-2017: 3464af5, firewall result c0c01f1; 2018-2021: 0b46410, firewall result 6520554); the outcomes were computed on
+2026-11-12 (2008-2009) and 2026-11-13 (2010-2013, 2014-2017, 2018-2021). Every date has its 6-month, 1-, 2- and 3-year horizons (the
+last ends 2024-12-31). Prices are on the AS_OF share basis: no split falls in a horizon of the 2008-2017 dates, so their prices are as
+traded; the four-for-one split of 2021-07-20 falls in horizons of the 2018-2021 dates and the ten-for-one of 2024-06-10 in the
+three-year horizons of the dates from 2021-06-11, and prices after a split are restated to the AS_OF basis (2018 to mid-2021 dates read
+the 2022 low of $112.27 as $449.08). NVIDIA paid no dividend until November 2012: its first ($0.075 a share on this basis, ex-date 2012-11-20)
 falls only inside the three-year horizon of the dates from 2009-11-20 on, and the total returns of later dates include the dividends
 paid inside their horizons. Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is
 +32.2% over two years and +52.1% over three. "Call held" is `call_check_2y`: CHEAP should clear the hurdle or beat the benchmark
@@ -369,3 +372,129 @@ paid inside their horizons. Medians of an even count take the upper middle value
 - **The judgement calls touch few of these dates.** The variants run before any outcome moved classes only in 2014-2015 (every signal at
   BEAR 63, at XBULL 39; the guides unused 16; FY2009 and FY2010 at non-GAAP 12) and none in 2016-2017; DURABLE and the restructuring
   charges added back moved none. The RICH calls of 2016-2017 rest on GAAP EPS of a past year and the stock's own P/E history alone.
+
+## 2018 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier BUY | 5 | +269.6% | +263.4% to +312.6% | 5 | 5 | +161.1% | 0 |
+| class RICH, legacy tier ACCUMULATE | 2 | +229.6% | +228.7% to +229.6% | 2 | 2 | +126.2% | 0 |
+| class RICH, legacy tier WATCHLIST | 1 | +165.7% | +165.7% to +165.7% | 1 | 1 | +71.0% | 0 |
+| class RICH, legacy tier AVOID | 44 | +42.8% | -21.1% to +165.7% | 25 | 33 | -9.6% | 11 |
+| FY18E $2.57 (2018-01-05 to 2018-02-02) | 5 | +8.9% | +1.8% to +10.2% | 0 | 0 | -21.6% | 5 |
+| FY19E $4.82 (2018-02-09 to 2018-12-28) | 47 | +65.9% | -21.1% to +312.6% | 33 | 41 | +0.1% | 6 |
+| latest print Q3 FY18 (2018-01-05 to 2018-02-02) | 5 | +8.9% | +1.8% to +10.2% | 0 | 0 | -21.6% | 5 |
+| latest print Q4 FY18 (2018-02-09 to 2018-05-04) | 13 | +17.4% | -21.1% to +31.8% | 0 | 7 | -15.6% | 6 |
+| latest print Q1 FY19 (2018-05-11 to 2018-08-10) | 14 | +55.9% | +27.2% to +75.8% | 13 | 14 | -2.7% | 0 |
+| latest print Q2 FY19 (2018-08-17 to 2018-11-09) | 13 | +102.1% | +86.0% to +165.7% | 13 | 13 | +15.4% | 0 |
+| latest print Q3 FY19 (2018-11-16 to 2018-12-28) | 7 | +264.4% | +228.7% to +312.6% | 7 | 7 | +154.9% | 0 |
+
+- **RICH held on 11 of 52 dates, all before 2018-03-23.** The five entries of January 2018 (FY17's $2.57, $215.40-243.33, 84-95x) and
+  the first six after the Q4 FY18 print (to 2018-03-16) returned -21.1% to +20.0% over two years and lagged SPY by 1.5-22.2pp: their
+  windows end in early 2020, near the fall from $314.70 (2020-02-19). From 2018-03-23 every entry beat SPY, the later the more: the
+  seven after the Q3 FY19 print ($129.57-164.43, entered after the fall that began in October 2018) returned +228.7% to +312.6%. All but
+  one of the 52 dates had the $127.08 of 2018-12-24 as their two-year low (drawdowns of 38-56%). Over three years every 2018 date
+  returned +104.9% to +808.9% and beat SPY.
+- **The anchor rose and fell.** FY18's $4.82 stood for FY19E; FY2019 earned $6.63 and FY2020 $4.52.
+- **Little ranked the outcome.** The entry price ranks the two-year return at Spearman -0.16 (the m12-24 average at -0.24), the EPP gap
+  at -0.40 and -0.48, Ratio B at -0.42 and -0.52, the adjusted gap at +0.15 and +0.22, the proxy composite at +0.14 and +0.08.
+- **The two-year price landed nearest BULL on 45 dates, XBULL on 5 and BASE on 2.**
+
+## 2019 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class FAIR, legacy tier ACCUMULATE | 5 | +488.8% | +403.5% to +516.5% | 5 | 5 | +235.4% | 0 |
+| class RICH, legacy tier BUY | 40 | +341.6% | +189.2% to +442.4% | 40 | 40 | +231.8% | 0 |
+| class RICH, legacy tier ACCUMULATE | 5 | +353.7% | +228.6% to +493.6% | 5 | 5 | +221.8% | 0 |
+| class RICH, legacy tier WATCHLIST | 2 | +423.1% | +363.7% to +423.1% | 2 | 2 | +225.2% | 0 |
+| FY19E $4.82 (2019-01-04 to 2019-02-08) | 6 | +267.0% | +228.6% to +290.7% | 6 | 6 | +186.8% | 0 |
+| FY20E $6.63 (2019-02-15 to 2019-12-27) | 46 | +385.1% | +189.2% to +516.5% | 46 | 46 | +233.7% | 0 |
+| latest print Q3 FY19 (2019-01-04 to 2019-02-08) | 6 | +267.0% | +228.6% to +290.7% | 6 | 6 | +186.8% | 0 |
+| latest print Q4 FY19 (2019-02-15 to 2019-05-10) | 13 | +225.0% | +189.2% to +281.2% | 13 | 13 | +169.6% | 0 |
+| latest print Q1 FY20 (2019-05-17 to 2019-08-09) | 13 | +386.5% | +262.8% to +427.4% | 13 | 13 | +250.2% | 0 |
+| latest print Q2 FY20 (2019-08-16 to 2019-11-08) | 13 | +400.9% | +334.4% to +493.6% | 13 | 13 | +246.8% | 0 |
+| latest print Q3 FY20 (2019-11-15 to 2019-12-27) | 7 | +466.9% | +363.7% to +516.5% | 7 | 7 | +233.7% | 0 |
+
+- **No call held: RICH on 47 dates and FAIR on 5, and every entry returned +189.2% to +516.5% over two years**, beating SPY by
+  145.0-465.1pp. The entries ($135.46-239.37, 20-36x the last full year) included the 40 BUY-tier dates of January to October 2019,
+  whose class said RICH while their Ratio B was 0.28-0.84; the five FAIR dates of November-December 2019 returned +403.5% to +516.5%. Over
+  three years the 2019 dates returned +139.3% to +761.7%.
+- **The anchor fell, and the stock did not follow it.** FY19's $6.63 stood for FY20E; FY2020 earned $4.52, and FY2021 $6.90.
+- **The adjusted gap and the composite had the right sign, weakly:** +0.48 and +0.45 against the two-year return (+0.40 and +0.10 against
+  the m12-24 average); the entry price +0.26 and -0.13, Ratio B +0.14 and -0.33.
+- **The two-year price landed nearest BULL on 26 dates and XBULL on 26.**
+
+## 2020 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier ACCUMULATE | 1 | +287.0% | +287.0% to +287.0% | 1 | 1 | +246.3% | 0 |
+| class RICH, legacy tier WATCHLIST | 5 | +332.8% | +273.7% to +410.9% | 5 | 5 | +225.1% | 0 |
+| class RICH, legacy tier AVOID | 47 | +62.1% | -18.5% to +414.9% | 28 | 37 | +119.4% | 10 |
+| FY20E $6.63 (2020-01-03 to 2020-02-07) | 6 | +332.8% | +273.7% to +410.9% | 6 | 6 | +229.1% | 0 |
+| FY21E $4.52 (2020-02-14 to 2020-12-31) | 47 | +62.1% | -18.5% to +414.9% | 28 | 37 | +119.4% | 10 |
+| latest print Q3 FY20 (2020-01-03 to 2020-02-07) | 6 | +332.8% | +273.7% to +410.9% | 6 | 6 | +229.1% | 0 |
+| latest print Q4 FY20 (2020-02-14 to 2020-05-15) | 14 | +245.3% | +108.9% to +414.9% | 14 | 14 | +222.7% | 0 |
+| latest print Q1 FY21 (2020-05-22 to 2020-08-14) | 13 | +71.4% | +51.4% to +112.3% | 13 | 13 | +139.9% | 0 |
+| latest print Q2 FY21 (2020-08-21 to 2020-11-13) | 13 | +8.3% | -18.5% to +41.0% | 1 | 3 | +67.9% | 10 |
+| latest print Q3 FY21 (2020-11-20 to 2020-12-31) | 7 | +22.9% | +12.2% to +30.9% | 0 | 7 | +45.2% | 0 |
+
+- **RICH held on 10 of 53 dates, all after the Q2 FY21 print.** The entries of 2020-09-04 to 2020-11-06 ($486.58-582.48, 108-129x FY20's
+  $4.52) returned -18.5% to +18.5% over two years and lagged SPY by 6.6-24.9pp: their windows end in the fall of 2022, at or near the low
+  of 2022-10-14 ($112.27 after the split, $449.08 on their basis), a drawdown of up to 66%. The entries of January to mid-May 2020
+  ($205.75-339.63) returned +108.9% to +414.9%, those of May to August +51.4% to +112.3%; all of them beat SPY. Over three years every 2020
+  date returned +143.4% to +404.5% and beat SPY.
+- **The anchor was low.** FY20's $4.52 stood for FY21E; FY2021 earned $6.90 ($1.725 after the split).
+- **The price ranked the outcome.** The entry price ranks the two-year return at Spearman -0.95 (the m12-24 average at -0.97), the EPP
+  gap at -0.95 and -0.97, Ratio B at -0.75 and -0.72, the adjusted gap at +0.92 and +0.90, the proxy composite at +0.37 and +0.44.
+- **The two-year price landed nearest XBULL on 34 dates and BULL on 19.**
+
+## 2021 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 52 | +93.8% | +12.2% to +150.5% | 49 | 52 | +21.5% | 0 |
+| FY21E $4.52 (2021-01-08 to 2021-02-19) | 7 | +42.3% | +12.2% to +57.0% | 4 | 7 | +31.2% | 0 |
+| FY22E $6.90 (2021-02-26 to 2021-07-16) | 21 | +101.3% | +68.4% to +150.5% | 21 | 21 | +22.7% | 0 |
+| FY22E $1.725 (2021-07-23 to 2021-12-31) | 24 | +100.6% | +49.6% to +139.9% | 24 | 24 | +20.2% | 0 |
+| latest print Q3 FY21 (2021-01-08 to 2021-02-19) | 7 | +42.3% | +12.2% to +57.0% | 4 | 7 | +31.2% | 0 |
+| latest print Q4 FY21 (2021-02-26 to 2021-05-21) | 13 | +92.0% | +68.4% to +108.8% | 13 | 13 | +28.0% | 0 |
+| latest print Q1 FY22 (2021-05-28 to 2021-08-13) | 12 | +123.9% | +102.5% to +150.5% | 12 | 12 | +16.9% | 0 |
+| latest print Q2 FY22 (2021-08-20 to 2021-11-12) | 13 | +102.9% | +51.4% to +119.8% | 13 | 13 | +21.7% | 0 |
+| latest print Q3 FY22 (2021-11-19 to 2021-12-31) | 7 | +57.4% | +49.6% to +76.0% | 7 | 7 | +15.0% | 0 |
+
+- **RICH and AVOID on every date; the call held on none.** The entries ($498.46-819.48 before the split, $194.99-329.85 after it; 72-191x
+  the last full year) returned +12.2% to +150.5% over two years and beat SPY, which returned -7.8% to +12.9%, by 7.2-143.5pp; 49 cleared
+  the hurdle. Their windows end in 2023, after the low of 2022-10-14 ($112.27, a drawdown of 63-66%) and the rise that followed. Over three
+  years (to the end of 2024, after the ten-for-one split of 2024-06-10, restated) every 2021 date returned +293.9% to +627.7%.
+- **The anchor was low again.** FY21's $6.90 ($1.725 after the split) stood for FY22E; FY2022 earned $3.85 a share on the split basis
+  (Q4 FY22 release, 2022-02-16).
+- **Nothing ranked the outcome:** the entry price at -0.01 and -0.23, the EPP gap at -0.41 and -0.36, the adjusted gap at +0.55 and +0.15,
+  the proxy composite at +0.11 and -0.28.
+- **The two-year price landed nearest XBULL on 37 dates and BULL on 15.**
+
+## Across 2018-2021
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class FAIR | 5 | +488.8% | +403.5% to +516.5% | 5 | 5 | +235.4% | 0 |
+| class RICH | 204 | +102.7% | -21.1% to +493.6% | 163 | 183 | +54.0% | 21 |
+| legacy tier BUY | 45 | +312.6% | +189.2% to +442.4% | 45 | 45 | +221.8% | 0 |
+| legacy tier ACCUMULATE | 13 | +403.5% | +228.6% to +516.5% | 13 | 13 | +229.6% | 0 |
+| legacy tier WATCHLIST | 8 | +349.1% | +165.7% to +423.1% | 8 | 8 | +225.1% | 0 |
+| legacy tier AVOID | 143 | +69.8% | -21.1% to +414.9% | 102 | 122 | +24.3% | 21 |
+
+- **RICH held on 21 of 204 dates, FAIR on none of 5: 21 of 209 (224 of 731 with 2008-2017).** As in 2014-2017, the P/E band drawn from
+  the stock's own decade (median 19.7-26.1x) put every date of a stock trading at 20-191x the last full year in RICH or, at its lowest
+  in 2019, FAIR. The RICH call held only for the entries whose two-year windows ended at a cyclical low: those of January to mid-March
+  2018 (windows ending near the fall of February-March 2020) and of September to early November 2020 (windows ending at the low of
+  October 2022). Every other entry, including all 52 of 2019 and all 52 of 2021, beat SPY. Hypotheses only, the same as for 2014-2017: a
+  P/E band from the stock's own past marks a rerating RICH throughout and pays only at a cyclical turn. Test them on other tickers and
+  periods; never fold them into NVDA's method or fact sheet.
+- **The legacy tier diverged from the class at the 2018-2019 low.** From the Q3 FY19 print to October 2019 the class stayed RICH while
+  Ratio B (0.28-0.92) put the tier at BUY or ACCUMULATE on 52 dates; those entries returned +189.2% to +493.6% over two years.
+- **The composite has no stable sign:** +0.14 in 2018, +0.45 in 2019, +0.37 in 2020 and +0.11 in 2021 against the two-year return.
+- **The judgement calls touch few of these dates.** The variants run before any 2018-2021 outcome moved 52 classes at XBULL signals (all
+  in 2018-11-16 to 2019-11-08, RICH to FAIR), 5 at BEAR, 15 without the guides and 3 with FY2009 and FY2010 at non-GAAP, and none after
+  2020-01-31; the January 2019 update and DURABLE moved none.
