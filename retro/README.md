@@ -15097,7 +15097,8 @@ levels (the Q3 FY20 guide's $2,842.0M-$2,958.0M is the Q1 FY19 guide's $2.90 bil
 $2,156.0M-$2,244.0M is the January update's $2.20 billion); 26 are earlier guide levels equal to later figures (Q2 FY12's $1,000.5M and
 Q3 FY21's $4,400.0M against Q2 FY22's short-term debt and six-month operating income); and 9 are a P/E maximum (108.6), closes ($109.78,
 $26.07) and a trading-day count (2244) equal to later figures. Rebuilding the 522 dates of 2008-2017 gives the same models byte for
-byte; no file another ticker's builder reads has changed. The firewall runs on the committed build; its result follows that commit. All
+byte; no file another ticker's builder reads has changed. The firewall (as in 2014-2017, with a later split planted on the price data's
+next split date after each cutoff) changes no model and leaves no planted text at any of the 26 cutoffs above (522 to 731 dates each). All
 209 dates pass `retro_tool run`; their only warnings are four-digit numbers read as calendar years: the P/E window's count of trading
 days (2,072-2,099 in 2018), Q2 FY22's operating margin change (+2,072bp), the fiscal years of the capital return plans ("For fiscal
 2019", "by the end of fiscal 2020") and the notes' maturities (2021, 2026).
