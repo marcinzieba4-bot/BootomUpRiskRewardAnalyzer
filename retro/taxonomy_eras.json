@@ -1676,6 +1676,26 @@
     "term": "Omniverse",
     "first_seen": "2019-05-17",
     "note": "NVIDIA's 3D collaboration platform; first in an NVIDIA filing in its Q1 FY20 earnings 8-K (accepted 2019-05-16 16:22 ET, after the close, so it counts from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "Ford Next",
+    "first_seen": "2022-02-04",
+    "note": "Ford's former mobility business unit; first in a Ford filing in its FY2021 10-K (accepted 2022-02-03 18:24 ET, after the close, so it counts from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "Model e",
+    "first_seen": "2022-03-02",
+    "note": "Ford's electric-vehicle business segment (Ford Model e); first in a Ford filing in its 8-K of 2022-03-02 (accepted 07:03 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Universal EV Platform",
+    "first_seen": "2025-12-16",
+    "note": "Ford's low-cost EV platform; first in a Ford filing in its 8-K of 2025-12-15 (accepted 16:07 ET, after the close, so it counts from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "Ford Energy",
+    "first_seen": "2026-02-11",
+    "note": "Ford's energy-storage business; first in a Ford filing in its Q4 2025 earnings 8-K (accepted 2026-02-10 16:08 ET, after the close, so it counts from the next trading day), EDGAR full-text search"
    }
   ]
  }

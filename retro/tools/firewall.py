@@ -22,6 +22,7 @@ and require byte-identical models. Restores the fact sheet and the price cache a
     python3 retro/tools/firewall.py 2008-07-01 CAT          # the CAT series in staging/retrospective
     python3 retro/tools/firewall.py 2008-07-01 BMY          # the BMY series in staging/retrospective
     python3 retro/tools/firewall.py 2008-07-01 NVDA         # the NVDA series in staging/retrospective
+    python3 retro/tools/firewall.py 2023-01-01 F            # the F series in staging/retrospective
 
 Plants a print, a history vintage, an event per live theme and a company name (UNP: also a guide and a
 dividend; LOW and AAPL: also a guide with every guided field; NKE: a guide in words, and futures orders on the last print before
@@ -68,7 +69,9 @@ their label and the non-GAAP basis note (BMY 2022-2026); NVDA: a print whose rev
 debt and cash, notes and raw figures are absurd, with absurd full-year actuals for the year after the latest vintage before CUTOFF, a
 later Q4 print whose full-year actuals exclude its own year, a later vintage excluding a year whose per-share figures carry a planted
 share basis, and a later guide for every quarter guided before CUTOFF, in numbers and in words (from NVDA 2010-2013, the dollar-level
-fields too), the planted print released ahead of a planted outlook (NVDA 2014-2017); every
+fields too), the planted print released ahead of a planted outlook (NVDA 2014-2017); F: a print whose wholesales, Ford Credit EBT,
+revenue, margins, adjusted and GAAP EPS, notes and raw figures are absurd, a later vintage excluding a year with planted share, margin,
+wholesale, dividend, segment and normalization notes, and a later display-only outlook for every year guided before CUTOFF (F 2022-2026); every
 fact sheet with a 'splits' list, SHW's from 2021-2023: a later split on the price data's next split date; a CLOUD event
 from a later 10-K, as for every live theme), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
@@ -99,7 +102,7 @@ OUTDIR = {"ACN": "archive/retrospective/ACN", "UNP": "staging/retrospective/UNP"
           "SHW": "staging/retrospective/SHW", "WMT": "staging/retrospective/WMT", "RCL": "staging/retrospective/RCL",
           "MAR": "staging/retrospective/MAR", "BKR": "staging/retrospective/BKR",
           "PFE": "staging/retrospective/PFE", "CMCSA": "staging/retrospective/CMCSA", "CAT": "staging/retrospective/CAT",
-          "BMY": "staging/retrospective/BMY", "NVDA": "staging/retrospective/NVDA"}[TICKER]
+          "BMY": "staging/retrospective/BMY", "NVDA": "staging/retrospective/NVDA", "F": "staging/retrospective/F"}[TICKER]
 ARCHIVE = os.path.join(ROOT, OUTDIR)
 BUILDER = os.path.join(ROOT, "retro", f"build_{TICKER.lower()}.py")
 # absurd values for every field the builder reads from a print
@@ -145,6 +148,11 @@ PLANT = {"ACN": dict(quarter="Q9 FY99", revenue_lc=-60, margin_bp=-999, fy_eps_g
                       receivables_caveat="PLANTED",
                       raw=dict(sales_m=1, sales_prior_m=99, cogs_m=1, cogs_prior_m=1, op_m=-99, op_prior_m=99, ar_m=99, ar_prior_m=1,
                                unearned_m=1, unearned_prior_m=99)),
+         "F": dict(quarter="Q1 2099", fy=2099, q=1, release="PLANTED", release_time="PLANTED", period_end="PLANTED", sales_b=0.01,
+                   sales_pct=-60.0, margin=-50.0, margin_prior=50.0, margin_bp=-10000, ws_pct=-60.0, fc_pct=-60.0, eps_q=0.01,
+                   eps_q_prior=9.99, eps_pct=-99.9, eps_gaap=-9.99, eps_gaap_prior=9.99, diluted_shares_m=1.0, cash_b=99.0,
+                   ws_note="PLANTED", basis_note="PLANTED", q4_note="PLANTED",
+                   raw=dict(rev_m=4, rev_prior_m=10, ws_k=4, ws_prior_k=10, fc_ebt_m=4, fc_ebt_prior_m=10)),
          "XOM": dict(quarter="Q1 2099", fy=2099, q=1, release="PLANTED", sales_b=0.01, sales_pct=-60.0, pretax_margin=-50.0,
                      pretax_margin_bp=-999.0, production_pct=-60.0, product_sales_pct=-60.0, chem_pct=-60.0, eps_q=0.01, eps_q_prior=9.99,
                      eps_note="PLANTED", diluted_shares_m=1.0, cash_b=99.0, next_print="PLANTED", cash_return_text="PLANTED",
@@ -239,6 +247,7 @@ GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -99
                             display="PLANTED"),
                "PEP": dict(display="PLANTED", unused="PLANTED"),
                "XOM": dict(production_quote="PLANTED", note="PLANTED"),
+               "F": dict(quote="PLANTED", note="PLANTED"),
                "WMT": dict(eps_guide_note="PLANTED", fy_words="PLANTED", rev_guide_note="PLANTED", rev_basis="PLANTED", rev_words="PLANTED",
                            rev_reported=[-50, -40], rev_currency_m=-99999, rev_prior_m=1,
                            q_guide={"quarter": "Q4 FY99", "sales": [-40, -30], "comps": [-50, -40], "eps": [0.1, 0.2],
@@ -540,6 +549,13 @@ try:
         v["share_basis"] = {y: "1990-01-01" for y in v["eps_normalized"]}
     if TICKER == "BKR":    # a later vintage excluding a year (BKR 2014-2017: the 2015 and 2016 losses)
         v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}
+    if TICKER == "F":      # a later vintage excluding a year with planted share and margin notes, and a later display-only guide for every
+                           # year guided before CUTOFF (the latest guide for a year wins) (F 2022-2026)
+        v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}
+        v.update(shares_note="PLANTED", prev_fy_margin_note="PLANTED", prev_fy_ws_note="PLANTED", cash_return_text="PLANTED",
+                 dividend_note="PLANTED", groups=[["PLANTED", 1, -99]], groups_basis="PLANTED", normalization="PLANTED")
+        for g in [g for g in f["guides"] if g["published"] < cutoff]:
+            f["guides"].append({**copy.deepcopy(g), "published": later, "doc": "PLANTED", "quote": "PLANTED", "note": "PLANTED"})
     if TICKER == "XOM":    # the excluded-year and restatement fields (XOM 2021-2023): a later vintage excluding a year, and the planted
                            # print's full-year actuals excluding its own year and restating every earlier one
         v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}

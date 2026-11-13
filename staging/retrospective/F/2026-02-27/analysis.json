@@ -1,0 +1,270 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "F",
+ "company": "Ford Motor Company",
+ "as_of": "2026-02-27",
+ "price_date": "2026-02-27",
+ "price": 14.09,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); automaker signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "Ford Motor Company 'develops and delivers innovative, must-have Ford trucks, sport utility vehicles, commercial vans and cars, and Lincoln luxury vehicles, along with connected services, including BlueCruise (ADAS) and security'; among its risk factors, 'Industry sales volume can be volatile and could decline if there is a financial crisis, recession, public health emergency, or significant geopolitical event' and 'Ford’s results are dependent on sales of larger, more profitable vehicles, particularly in the United States' (its own FY2025 10-K); EV is live (from about 2020) and its 10-K risk factor puts it on the watch list: company-acknowledged, with no dated evidence that the market prices it for Ford",
+  "theme_watch": [
+   {
+    "theme": "EV",
+    "status": "live, company-acknowledged; no market read",
+    "reason": "Live: Ford's own FY2025 10-K, under 'Ford’s results are dependent on sales of larger, more profitable vehicles, particularly in the United States.', says 'A shift in consumer preferences away from larger, more profitable vehicles with internal combustion engines (including trucks and utilities) to other vehicles in our portfolio that may be less profitable could result in an adverse effect on our financial condition or results of operations.' Its business: 'develops and delivers innovative, must-have Ford trucks, sport utility vehicles, commercial vans and cars, and Lincoln luxury vehicles, along with connected services, including BlueCruise (ADAS) and security'. The stock trades at 12.9x FY26E — a premium. Re-file as DISRUPTION_EXPOSED (EV) only if dated evidence shows the market pricing electric-vehicle substitution of Ford's combustion-engine profits specifically."
+   }
+  ],
+  "evidence": [
+   "F62"
+  ]
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "Ford Motor Company 'develops and delivers innovative, must-have Ford trucks, sport utility vehicles, commercial vans and cars, and Lincoln luxury vehicles, along with connected services, including BlueCruise (ADAS) and security'; among its risk factors, 'Industry sales volume can be volatile and could decline if there is a financial crisis, recession, public health emergency, or significant geopolitical event' and 'Ford’s results are dependent on sales of larger, more profitable vehicles, particularly in the United States' (its own FY2025 10-K); EV is live (from about 2020) and its 10-K risk factor puts it on the watch list: company-acknowledged, with no dated evidence that the market prices it for Ford. durable franchise (obsolescence risk 2/5); price rich; +158% to EPP floor; model-vs-market gap -1.03; conservative 2yr -37%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": Infinity,
+  "ratio_b_fmt": "infx",
+  "epp": 5.45,
+  "epp_gap_pct": 158.5,
+  "epp_adj": -0.2,
+  "proxy_composite": 2.1,
+  "sca": -0.1,
+  "adj_composite": 1.8,
+  "market_composite": 2.83,
+  "adj_gap": -1.03,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": -37.1,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.1,
+    "pe": 6.0,
+    "price": 1,
+    "desc": "EPS -69.0%/yr (worst year FY16-FY25, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 0.99,
+    "pe": 7.6,
+    "price": 8,
+    "desc": "EPS +-4.9%/yr (Q4 revenue + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 0.99,
+    "pe": 9.2,
+    "price": 9,
+    "desc": "EPS +-4.9%/yr (FY16-FY25 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 5.69,
+    "pe": 13.1,
+    "price": 75,
+    "desc": "EPS +128.5%/yr (best 2-yr run FY16-FY25); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 158.5,
+   "adj_gap": -1.03,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -37.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 158.5,
+   "adj_gap": -0.5,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -37.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 158.5,
+   "adj_gap": -1.22,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -37.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 158.5,
+   "adj_gap": -1.02,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -37.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 158.5,
+   "adj_gap": -1.06,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -37.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 158.5,
+   "adj_gap": -0.73,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -37.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 61.6,
+   "adj_gap": -0.93,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -37.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 158.5,
+   "adj_gap": -0.98,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -37.1,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "RICH"
+ ],
+ "summary": "F (retrospective, 2026-02-27) ✕ AVOID — Ratio B infx (92.9% downside to Bear $1 / +-36.1% upside to Bull $9) | Adj composite 1.80 vs market 2.83: gap -1.03 [OVERVALUED] | +159% above the EPP floor $5 (5x FY26E $1.09) | Conservative 2-yr case: -37.1% total (-18.5%/yr) | At 12.9x FY26E the 15% hurdle price $19 sits above the BULL case; wholesale units -8.8% in Q4 2025, forward revenues -4.8% (no Q1 2026 revenue guide, Q4 2025 revenue as reported); EV is live and company-acknowledged; no dated evidence ties the multiple to it.",
+ "sources": [
+  {
+   "id": "F62",
+   "published": "2026-02-11",
+   "filed": "2026-02-10 19:08 ET (after the close)",
+   "title": "Ford FY2025 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799626000015/f-20251231.htm",
+   "supports": "FY2025 annual report"
+  },
+  {
+   "id": "F8",
+   "published": "2018-02-08",
+   "filed": "2018-02-08 11:41 ET (during the session)",
+   "title": "Ford FY2017 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799618000015/f1231201710-k.htm",
+   "supports": "FY2017 annual report"
+  },
+  {
+   "id": "F10",
+   "published": "2020-02-05",
+   "filed": "2020-02-05 12:01 ET (during the session)",
+   "title": "Ford FY2019 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799620000010/f1231201910-k.htm",
+   "supports": "FY2019 annual report"
+  },
+  {
+   "id": "F11",
+   "published": "2021-02-05",
+   "filed": "2021-02-04 18:58 ET (after the close)",
+   "title": "Ford FY2020 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799621000012/f-20201231.htm",
+   "supports": "FY2020 annual report"
+  },
+  {
+   "id": "F19",
+   "published": "2022-02-04",
+   "filed": "2022-02-03 18:24 ET (after the close)",
+   "title": "Ford FY2021 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799622000013/f-20211231.htm",
+   "supports": "FY2021 annual report"
+  },
+  {
+   "id": "F30",
+   "published": "2023-02-03",
+   "filed": "2023-02-02 19:39 ET (after the close)",
+   "title": "Ford FY2022 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799623000012/f-20221231.htm",
+   "supports": "FY2022 annual report"
+  },
+  {
+   "id": "F41",
+   "published": "2024-02-07",
+   "filed": "2024-02-06 19:33 ET (after the close)",
+   "title": "Ford FY2023 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799624000009/f-20231231.htm",
+   "supports": "FY2023 annual report"
+  },
+  {
+   "id": "F51",
+   "published": "2025-02-06",
+   "filed": "2025-02-05 20:44 ET (after the close)",
+   "title": "Ford FY2024 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799625000013/f-20241231.htm",
+   "supports": "FY2024 annual report"
+  },
+  {
+   "id": "F9",
+   "published": "2019-02-22",
+   "filed": "2019-02-21 16:10 ET (after the close)",
+   "title": "Ford FY2018 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799619000012/f1231201810-k.htm",
+   "supports": "FY2018 annual report"
+  },
+  {
+   "id": "F61",
+   "published": "2026-02-11",
+   "filed": "2026-02-10 16:08 ET (after the close)",
+   "title": "Ford Q4 2025 results (8-K exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799626000014/exhibit99tofebruary10202.htm",
+   "supports": "Q4 2025 results release: outlook, dividend, headline figures"
+  },
+  {
+   "id": "F63",
+   "published": "2026-02-11",
+   "filed": "2026-02-10 19:08 ET (after the close)",
+   "title": "Ford FY2025 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799626000015/f-20251231.htm",
+   "supports": "FY2025 key metrics, Ford Credit EBT, wholesales"
+  },
+  {
+   "id": "F59",
+   "published": "2025-10-24",
+   "filed": "2025-10-23 19:12 ET (after the close)",
+   "title": "Ford Q3 2025 Form 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799625000186/f-20250930.htm",
+   "supports": "nine months 2025 key metrics, Ford Credit EBT, wholesale units"
+  },
+  {
+   "id": "A0",
+   "published": "2026-02-27",
+   "title": "Yahoo Finance daily prices, F and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/F/history",
+   "supports": "close $14.09 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-13"
+}
