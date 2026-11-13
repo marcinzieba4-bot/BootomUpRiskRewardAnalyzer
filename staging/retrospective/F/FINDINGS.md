@@ -290,6 +290,7 @@ dividends paid in them. The hurdle is +32.2% over two years; "call held" is `cal
   small, so Ratio B was large: a stock that is RICH on its own slow EPS history.
 - **Entry price again explains the most** (two-year median): below $10 +91.6% (11), $10-12 +47.1% (27), $12-14 +28.7% (32), $14-16 -5.5% (39),
   above $16 -12.0% (47).
-- **Across 2008-2014 (hypotheses for elsewhere):** the CHEAP and RICH labels ranked returns in order in every year but 2010, when the stale 2005
-  anchor read a recovering stock as RICH and FAIR; the near-zero 2009 year distorted the upside scenarios from 2011 on. A rule that caps a
+- **Across 2008-2014 (hypotheses for elsewhere):** CHEAP, FAIR and RICH ranked two-year returns in order in every year but 2009 (its one RICH
+  date gained 120%); in 2010 they ranked in order while every class lost, the stale 2005 anchor reading a recovering stock as RICH and FAIR;
+  the near-zero 2009 year distorted the upside scenarios from 2011 on. A rule that caps a
   readmitted near-zero year, or one that suspends the class when the anchor is old, would need a new method version and a full re-run.
