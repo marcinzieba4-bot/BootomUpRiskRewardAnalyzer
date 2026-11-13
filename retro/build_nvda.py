@@ -193,6 +193,12 @@ def on_basis(facts, as_of):
             p["fy_actual"]["eps_normalized"] /= r
         if p.get("fy_actual"):
             p["fy_actual"]["diluted_shares_m"] *= r
+    # a dividend rate is a per-share figure too (from NVDA 2018-2021: the four-for-one split of 2021-07-20 restates the rates before it)
+    for d in f.get("dividends", []):
+        d["quarterly"] /= k(d["published"])
+    for v in f["history_vintages"]:
+        if v.get("dividend_annual") is not None:
+            v["dividend_annual"] /= k(v["published"])
     return f, [s["source"] for s in splits]
 
 
@@ -324,8 +330,11 @@ def build(as_of, facts, raw, spx, engine, out):
     fy_margin_base = h["prev_fy_op_margin"]
 
     # ── dividend: none ('We have never paid and do not expect to pay cash dividends for the foreseeable future.') ──
-    divs = [(d["published"], d["quarterly"] * 4, d["note"], d["source"]) for d in facts["dividends"] if d["published"] <= as_of]
-    divs.append((h["published"], h["dividend_annual"], h["dividend_note"], None))
+    per_split = lambda pub, rate: split_txt(pub, " (per share before the {l} split effective {e})") if rate else ""   # a rate, not "none"
+    divs = [(d["published"], d["quarterly"] * 4, d["note"] + per_split(d["published"], d["quarterly"]), d["source"])
+            for d in facts["dividends"] if d["published"] <= as_of]
+    if h["dividend_annual"] is not None:      # a 10-K that states no rate (the FY2021 10-K) leaves the latest filing that states one
+        divs.append((h["published"], h["dividend_annual"], h["dividend_note"] + per_split(h["published"], h["dividend_annual"]), None))
     _, dividend, dividend_note, dividend_src = max(divs, key=lambda x: x[0])
 
     # ── market statistics, prices truncated at AS_OF ──
