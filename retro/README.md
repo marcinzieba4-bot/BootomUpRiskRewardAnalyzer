@@ -15281,7 +15281,10 @@ $5.864B of inventories); 108 are diluted share counts that equal earlier ones ti
 4); 38 are earlier guide levels ($2,499.0M, $1,030.2M and $1,122.0M, the bounds of the Q1 FY20, Q2 FY16 and Q2 FY15 guides); and 63 are
 closes, 52-week highs and lows and a P/E percentile equal to later figures (115.66 holds Q4 FY23's 15.66% operating margin; 230.43,
 15.32, 174.56, 18.12, $156.93 and others). Rebuilding the 731 dates of 2008-2021 gives the same models byte for byte; no file another
-ticker's builder reads has changed. FIREWALL_RESULT All 253 dates pass `retro_tool run`; their only warnings are calendar years in the
+ticker's builder reads has changed. The firewall (as in 2018-2021: every kind of fact planted after the cutoff with absurd values,
+a later guide in numbers and in words for every guided quarter, a later Q4 print excluding its own year, a later vintage excluding a
+year with a planted share basis, a later split on the price data's next split date where there is one, and prices from the cutoff
+multiplied by 10) changes no model and leaves no planted text at any of the 26 cutoffs above (731 to 984 dates each). All 253 dates pass `retro_tool run`; their only warnings are calendar years in the
 releases' own words ("fiscal 2023" to "fiscal 2027" in the capital-return and H20 sentences) and Q3 FY24's gross margin change
 (+2038bp), read as calendar years.
 
