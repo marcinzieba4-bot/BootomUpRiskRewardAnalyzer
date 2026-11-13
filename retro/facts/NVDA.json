@@ -498,6 +498,237 @@
    "title": "NVIDIA Q3 FY14 CFO commentary (exhibit to the results 8-K)",
    "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581013000104/q314cfocommentary.htm",
    "supports": "the Q4 FY14 outlook"
+  },
+  "NV72": {
+   "published": "2014-02-13",
+   "filed": "accepted 2014-02-12 16:23 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q4 FY14 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581014000004/q414pr.htm",
+   "supports": "Q4 FY14 and FY2014 statements and balance sheet; the Q1 FY15 outlook"
+  },
+  "NV73": {
+   "published": "2014-03-13",
+   "filed": "accepted 2014-03-12 19:18 ET, after the close; dated the next trading day",
+   "title": "NVIDIA FY2014 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581014000030/nvda-2014x10k.htm",
+   "supports": "selected financial data fiscal 2010-2014; statements, segments, cash flows, risk factors, the dividend (the FY2014 history vintage)"
+  },
+  "NV74": {
+   "published": "2013-05-23",
+   "filed": "accepted 2013-05-22 17:06 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q1 FY14 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581013000054/nvda2014q110q.htm",
+   "supports": "inventories at April 28, 2013 (the year-ago quarter of Q1 FY15)"
+  },
+  "NV75": {
+   "published": "2013-08-22",
+   "filed": "accepted 2013-08-21 16:25 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q2 FY14 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581013000075/nvda2014q210q.htm",
+   "supports": "inventories at July 28, 2013 (the year-ago quarter of Q2 FY15)"
+  },
+  "NV76": {
+   "published": "2013-11-20",
+   "filed": "accepted 2013-11-19 16:30 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q3 FY14 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581013000109/nvda2014q310q.htm",
+   "supports": "inventories at October 27, 2013 (the year-ago quarter of Q3 FY15)"
+  },
+  "NV77": {
+   "published": "2014-05-06",
+   "filed": "accepted 2014-05-06 09:29 ET, before the open",
+   "title": "NVIDIA Q1 FY15 results, released early (8-K: press release and financial statements)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581014000071/q115financialstatements.htm",
+   "supports": "Q1 FY15 statements and balance sheet, published before the open of May 6 after a preliminary draft was emailed internally"
+  },
+  "NV78": {
+   "published": "2014-05-09",
+   "filed": "accepted 2014-05-08 16:28 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q1 FY15 results with the outlook (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581014000076/q115pr.htm",
+   "supports": "the Q2 FY15 outlook"
+  },
+  "NV79": {
+   "published": "2014-05-22",
+   "filed": "accepted 2014-05-21 16:11 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q1 FY15 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581014000085/nvda2015q110q.htm",
+   "supports": "inventories at April 27, 2014 (the year-ago quarter of Q1 FY16)"
+  },
+  "NV80": {
+   "published": "2014-08-08",
+   "filed": "accepted 2014-08-07 16:24 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q2 FY15 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581014000149/q215pr.htm",
+   "supports": "Q2 FY15 statements and balance sheet; the Q3 FY15 outlook"
+  },
+  "NV81": {
+   "published": "2014-08-21",
+   "filed": "accepted 2014-08-20 16:27 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q2 FY15 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581014000158/nvda2015q210q.htm",
+   "supports": "inventories at July 27, 2014 (the year-ago quarter of Q2 FY16)"
+  },
+  "NV82": {
+   "published": "2014-11-07",
+   "filed": "accepted 2014-11-06 16:25 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q3 FY15 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581014000182/q315pr.htm",
+   "supports": "Q3 FY15 statements and balance sheet; the Q4 FY15 outlook"
+  },
+  "NV83": {
+   "published": "2014-11-19",
+   "filed": "accepted 2014-11-18 19:09 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q3 FY15 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581014000188/nvda2015q310q.htm",
+   "supports": "inventories at October 26, 2014 (the year-ago quarter of Q3 FY16)"
+  },
+  "NV84": {
+   "published": "2015-02-12",
+   "filed": "accepted 2015-02-11 16:22 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q4 FY15 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581015000013/q415pr.htm",
+   "supports": "Q4 FY15 and FY2015 statements and balance sheet; the Q1 FY16 outlook"
+  },
+  "NV85": {
+   "published": "2015-03-12",
+   "filed": "accepted 2015-03-11 19:48 ET, after the close; dated the next trading day",
+   "title": "NVIDIA FY2015 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581015000036/nvda-2015x10k.htm",
+   "supports": "selected financial data fiscal 2011-2015; statements, segments, cash flows, risk factors, the dividend (the FY2015 history vintage)"
+  },
+  "NV86": {
+   "published": "2015-05-08",
+   "filed": "accepted 2015-05-07 16:29 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q1 FY16 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581015000087/q116pr.htm",
+   "supports": "Q1 FY16 statements and balance sheet; the Q2 FY16 outlook; the dividend increase"
+  },
+  "NV87": {
+   "published": "2015-05-21",
+   "filed": "accepted 2015-05-20 16:55 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q1 FY16 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581015000097/nvda2016q110q.htm",
+   "supports": "inventories at April 26, 2015 (the year-ago quarter of Q1 FY17)"
+  },
+  "NV88": {
+   "published": "2015-08-07",
+   "filed": "accepted 2015-08-06 16:24 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q2 FY16 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581015000131/q216pr.htm",
+   "supports": "Q2 FY16 statements and balance sheet; the Q3 FY16 outlook"
+  },
+  "NV89": {
+   "published": "2015-08-20",
+   "filed": "accepted 2015-08-19 16:41 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q2 FY16 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581015000143/nvda2016q210q.htm",
+   "supports": "inventories at July 26, 2015 (the year-ago quarter of Q2 FY17)"
+  },
+  "NV90": {
+   "published": "2015-11-06",
+   "filed": "accepted 2015-11-05 16:25 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q3 FY16 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581015000165/q316pr.htm",
+   "supports": "Q3 FY16 statements and balance sheet; the Q4 FY16 outlook; the dividend increase"
+  },
+  "NV91": {
+   "published": "2015-11-19",
+   "filed": "accepted 2015-11-18 16:39 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q3 FY16 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581015000173/nvda2016q310q.htm",
+   "supports": "inventories at October 25, 2015 (the year-ago quarter of Q3 FY17)"
+  },
+  "NV92": {
+   "published": "2016-02-18",
+   "filed": "accepted 2016-02-17 16:28 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q4 FY16 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581016000189/q416pr.htm",
+   "supports": "Q4 FY16 and FY2016 statements and balance sheet; the Q1 FY17 outlook"
+  },
+  "NV93": {
+   "published": "2016-03-17",
+   "filed": "accepted 2016-03-16 18:07 ET, after the close; dated the next trading day",
+   "title": "NVIDIA FY2016 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581016000205/nvda-2016x10k.htm",
+   "supports": "selected financial data fiscal 2012-2016; statements, segments, cash flows, risk factors, the dividend (the FY2016 history vintage)"
+  },
+  "NV94": {
+   "published": "2016-05-13",
+   "filed": "accepted 2016-05-12 16:39 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q1 FY17 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581016000243/q117pr.htm",
+   "supports": "Q1 FY17 statements and balance sheet; the Q2 FY17 outlook"
+  },
+  "NV95": {
+   "published": "2016-05-26",
+   "filed": "accepted 2016-05-25 16:55 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q1 FY17 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581016000275/nvda2017q110q.htm",
+   "supports": "inventories at May 1, 2016 (the year-ago quarter of Q1 FY18)"
+  },
+  "NV96": {
+   "published": "2016-08-12",
+   "filed": "accepted 2016-08-11 16:22 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q2 FY17 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581016000292/q2fy17pr.htm",
+   "supports": "Q2 FY17 statements and balance sheet; the Q3 FY17 outlook"
+  },
+  "NV97": {
+   "published": "2016-08-24",
+   "filed": "accepted 2016-08-23 17:20 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q2 FY17 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581016000300/nvda2017q210q.htm",
+   "supports": "inventories at July 31, 2016 (the year-ago quarter of Q2 FY18)"
+  },
+  "NV98": {
+   "published": "2016-11-11",
+   "filed": "accepted 2016-11-10 16:21 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q3 FY17 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581016000343/q3fy17pr.htm",
+   "supports": "Q3 FY17 statements and balance sheet; the Q4 FY17 outlook; the dividend increase"
+  },
+  "NV99": {
+   "published": "2016-11-23",
+   "filed": "accepted 2016-11-22 16:29 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q3 FY17 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581016000353/nvda2017q310q.htm",
+   "supports": "inventories at October 30, 2016 (the year-ago quarter of Q3 FY18); the early adoption of the stock-based compensation update"
+  },
+  "NV100": {
+   "published": "2017-02-10",
+   "filed": "accepted 2017-02-09 16:23 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q4 FY17 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581017000016/q4fy17pr.htm",
+   "supports": "Q4 FY17 and FY2017 statements and balance sheet; the Q1 FY18 outlook"
+  },
+  "NV101": {
+   "published": "2017-03-02",
+   "filed": "accepted 2017-03-01 17:30 ET, after the close; dated the next trading day",
+   "title": "NVIDIA FY2017 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581017000027/nvda-2017x10k.htm",
+   "supports": "selected financial data fiscal 2013-2017; statements, segments, cash flows, risk factors, the dividend (the FY2017 history vintage)"
+  },
+  "NV102": {
+   "published": "2017-05-10",
+   "filed": "accepted 2017-05-09 16:21 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q1 FY18 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581017000068/q1fy18pr.htm",
+   "supports": "Q1 FY18 statements and balance sheet; the Q2 FY18 outlook"
+  },
+  "NV103": {
+   "published": "2017-08-11",
+   "filed": "accepted 2017-08-10 16:23 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q2 FY18 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581017000117/q2fy18pr.htm",
+   "supports": "Q2 FY18 statements and balance sheet; the Q3 FY18 outlook"
+  },
+  "NV104": {
+   "published": "2017-11-10",
+   "filed": "accepted 2017-11-09 16:23 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q3 FY18 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581017000164/q3fy18pr.htm",
+   "supports": "Q3 FY18 statements and balance sheet; the Q4 FY18 outlook; the dividend increase"
   }
  },
  "listing": {
@@ -1700,6 +1931,666 @@
     ]
    ],
    "groups_basis": "FY13 segment revenue (FY2013 10-K)",
+   "company": "NVIDIA Corporation",
+   "exchange": "NASDAQ Global Select Market",
+   "pe_window_start": null
+  },
+  {
+   "published": "2014-03-13",
+   "sources": [
+    "NV73",
+    "NV12",
+    "NV39",
+    "NV40",
+    "NV41",
+    "NV42"
+   ],
+   "fy_label": "FY14",
+   "kind": "CYCLICAL",
+   "why": "'NVIDIA is a visual computing company.' 'The market for our products is intensely competitive and is characterized by rapid technological change, evolving industry standards and declining average selling prices.' 'We expect substantial competition from both Intel's and AMD's, strategy of selling platform solutions, including integrating a CPU and a GPU on the same chip or same package, as evidenced by Intel's CPUs with integrated graphics and AMD's accelerated processing unit, or APU, products.' 'Our business is cyclical in nature and has experienced severe downturns that have harmed, and may in the future harm, our business and financial results.' (FY2014 10-K); CYCLICAL on the 10-K's own words for its business (BKR's 'Our business is cyclical' reading); no theme in taxonomy_eras.json covers a CPU and a GPU integrated on one chip, so those words stay here (the PEP obesity rule)",
+   "eps_normalized": {
+    "2005": 0.17,
+    "2006": 0.55,
+    "2007": 0.76,
+    "2008": 1.31,
+    "2011": 0.43,
+    "2012": 0.94,
+    "2013": 0.9,
+    "2014": 0.74
+   },
+   "eps_sources": {
+    "2005": "NV12",
+    "2006": "NV39",
+    "2007": "NV40",
+    "2008": "NV41",
+    "2009": "NV42",
+    "2010": "NV73",
+    "2011": "NV73",
+    "2012": "NV73",
+    "2013": "NV73",
+    "2014": "NV73"
+   },
+   "eps_published": {
+    "2005": "2009-03-13",
+    "2006": "2010-03-18",
+    "2007": "2011-03-17",
+    "2008": "2012-03-14",
+    "2009": "2013-03-13",
+    "2010": "2014-03-13",
+    "2011": "2014-03-13",
+    "2012": "2014-03-13",
+    "2013": "2014-03-13",
+    "2014": "2014-03-13"
+   },
+   "share_basis": {},
+   "eps_excluded": {
+    "2009": "FY09 lost $(0.05) per diluted share (FY2013 10-K); NVIDIA's non-GAAP FY09 EPS ($0.53, Q4 FY09 release) excludes stock-based compensation, which recurs, so no figure excluding only one-offs was published",
+    "2010": "FY10 lost $(0.12) per diluted share (FY2014 10-K); NVIDIA's non-GAAP FY10 EPS ($0.26, Q4 FY10 release) excludes stock-based compensation, which recurs, so no figure excluding only one-offs was published"
+   },
+   "revenue_usd_b": {
+    "2005": 2.010033,
+    "2006": 2.375687,
+    "2007": 3.068771,
+    "2008": 4.09786,
+    "2009": 3.424859,
+    "2010": 3.326445,
+    "2011": 3.543309,
+    "2012": 3.99793,
+    "2013": 4.280159,
+    "2014": 4.130162
+   },
+   "revenue_sources": {
+    "2005": "NV12",
+    "2006": "NV39",
+    "2007": "NV40",
+    "2008": "NV41",
+    "2009": "NV42",
+    "2010": "NV73",
+    "2011": "NV73",
+    "2012": "NV73",
+    "2013": "NV73",
+    "2014": "NV73"
+   },
+   "diluted_shares_m": {
+    "2005": 527.436,
+    "2006": 548.556,
+    "2007": 587.256,
+    "2008": 606.732,
+    "2009": 548.126,
+    "2010": 549.574,
+    "2011": 588.684,
+    "2012": 616.371,
+    "2013": 624.957,
+    "2014": 594.517
+   },
+   "shares_sources": {
+    "2005": "NV12",
+    "2006": "NV39",
+    "2007": "NV40",
+    "2008": "NV41",
+    "2009": "NV42",
+    "2010": "NV73",
+    "2011": "NV73",
+    "2012": "NV73",
+    "2013": "NV73",
+    "2014": "NV73"
+   },
+   "shares_published": {
+    "2005": "2009-03-13",
+    "2006": "2010-03-18",
+    "2007": "2011-03-17",
+    "2008": "2012-03-14",
+    "2009": "2013-03-13",
+    "2010": "2014-03-13",
+    "2011": "2014-03-13",
+    "2012": "2014-03-13",
+    "2013": "2014-03-13",
+    "2014": "2014-03-13"
+   },
+   "fiscal_year_ends": {
+    "2005": "2005-01-30",
+    "2006": "2006-01-29",
+    "2007": "2007-01-28",
+    "2008": "2008-01-27",
+    "2009": "2009-01-25",
+    "2010": "2010-01-31",
+    "2011": "2011-01-30",
+    "2012": "2012-01-29",
+    "2013": "2013-01-27",
+    "2014": "2014-01-26"
+   },
+   "normalization": "GAAP diluted EPS (NVIDIA reports no discontinued operations), each year from the latest filing that reports it: FY05 FY2009 10-K, FY06 FY2010 10-K, FY07 FY2011 10-K, FY08 FY2012 10-K, FY09 FY2013 10-K, FY10 FY2014 10-K, FY11 FY2014 10-K, FY12 FY2014 10-K, FY13 FY2014 10-K, FY14 FY2014 10-K; the company's non-GAAP EPS excludes stock-based compensation, which recurs, so GAAP stands",
+   "eps_first_excluded": {},
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 12.01,
+   "prev_fy_op_margin_note": "FY14 income from operations $496.2M / revenue $4,130.2M (FY2014 10-K)",
+   "prev_fy_pretax_margin": 12.35,
+   "prev_fy_pretax_margin_note": "FY14 income before income tax $510.3M / revenue $4,130.2M (FY2014 10-K)",
+   "prev_fy_gross_margin": 54.91,
+   "prev_fy_sales_growth": -3.5,
+   "tax_rate": 0.1377,
+   "tax_note": "FY14 income tax expense $70.3M / pre-tax $510.3M (FY2014 10-K)",
+   "fcf_b": 0.58,
+   "fcf_label": "FY14",
+   "fcf_note": "net cash provided by operating activities $835.1M less purchases of property and equipment and intangible assets $255.2M",
+   "cash_b": 4.672,
+   "dividend_annual": 0.34,
+   "dividend_note": "$0.085 quarterly ('On November 7, 2013, we increased our quarterly cash dividend by 13% to $0.085 per share which was equivalent to $0.34 per share on an annual basis.', FY2014 10-K)",
+   "cash_return_text": "'Through January 26, 2014, we have repurchased an aggregate of 161.2 million shares under our stock repurchase program for a total cost of $2.45 billion.' (FY2014 10-K)",
+   "business_line": "visual computing: GPUs (GeForce, Quadro, Tesla, GRID), Tegra processors, the Intel license",
+   "groups": [
+    [
+     "GPU",
+     3.4681,
+     6.7
+    ],
+    [
+     "Tegra Processor",
+     0.398,
+     -47.9
+    ],
+    [
+     "All Other",
+     0.264,
+     0.0
+    ]
+   ],
+   "groups_basis": "FY14 segment revenue (FY2014 10-K)",
+   "company": "NVIDIA Corporation",
+   "exchange": "NASDAQ Global Select Market",
+   "pe_window_start": null
+  },
+  {
+   "published": "2015-03-12",
+   "sources": [
+    "NV85",
+    "NV39",
+    "NV40",
+    "NV41",
+    "NV42",
+    "NV73"
+   ],
+   "fy_label": "FY15",
+   "kind": "CYCLICAL",
+   "why": "'NVIDIA is dedicated to advancing visual computing.' 'The market for our products is intensely competitive and is characterized by rapid technological change, evolving industry standards and declining average selling prices.' Its current competitors include 'suppliers of discrete and integrated GPUs, including supercomputers and chipsets that incorporate 3D graphics functionality as part of their existing solutions, such as Advanced Micro Devices, or AMD, and Intel Corporation, or Intel' (FY2015 10-K); CYCLICAL kept: this 10-K no longer calls the business cyclical (the FY2014 10-K's risk factor 'Our business is cyclical in nature' is gone), and the kind stands (the BKR FY2015 rule; the class label only); no theme in taxonomy_eras.json covers GPUs integrated into other processors, so those words stay here (the PEP obesity rule)",
+   "eps_normalized": {
+    "2006": 0.55,
+    "2007": 0.76,
+    "2008": 1.31,
+    "2011": 0.43,
+    "2012": 0.94,
+    "2013": 0.9,
+    "2014": 0.74,
+    "2015": 1.12
+   },
+   "eps_sources": {
+    "2006": "NV39",
+    "2007": "NV40",
+    "2008": "NV41",
+    "2009": "NV42",
+    "2010": "NV73",
+    "2011": "NV85",
+    "2012": "NV85",
+    "2013": "NV85",
+    "2014": "NV85",
+    "2015": "NV85"
+   },
+   "eps_published": {
+    "2006": "2010-03-18",
+    "2007": "2011-03-17",
+    "2008": "2012-03-14",
+    "2009": "2013-03-13",
+    "2010": "2014-03-13",
+    "2011": "2015-03-12",
+    "2012": "2015-03-12",
+    "2013": "2015-03-12",
+    "2014": "2015-03-12",
+    "2015": "2015-03-12"
+   },
+   "share_basis": {},
+   "eps_excluded": {
+    "2009": "FY09 lost $(0.05) per diluted share (FY2013 10-K); NVIDIA's non-GAAP FY09 EPS ($0.53, Q4 FY09 release) excludes stock-based compensation, which recurs, so no figure excluding only one-offs was published",
+    "2010": "FY10 lost $(0.12) per diluted share (FY2014 10-K); NVIDIA's non-GAAP FY10 EPS ($0.26, Q4 FY10 release) excludes stock-based compensation, which recurs, so no figure excluding only one-offs was published"
+   },
+   "revenue_usd_b": {
+    "2006": 2.375687,
+    "2007": 3.068771,
+    "2008": 4.09786,
+    "2009": 3.424859,
+    "2010": 3.326445,
+    "2011": 3.543309,
+    "2012": 3.99793,
+    "2013": 4.280159,
+    "2014": 4.130162,
+    "2015": 4.681507
+   },
+   "revenue_sources": {
+    "2006": "NV39",
+    "2007": "NV40",
+    "2008": "NV41",
+    "2009": "NV42",
+    "2010": "NV73",
+    "2011": "NV85",
+    "2012": "NV85",
+    "2013": "NV85",
+    "2014": "NV85",
+    "2015": "NV85"
+   },
+   "diluted_shares_m": {
+    "2006": 548.556,
+    "2007": 587.256,
+    "2008": 606.732,
+    "2009": 548.126,
+    "2010": 549.574,
+    "2011": 588.684,
+    "2012": 616.371,
+    "2013": 624.957,
+    "2014": 594.517,
+    "2015": 563.068
+   },
+   "shares_sources": {
+    "2006": "NV39",
+    "2007": "NV40",
+    "2008": "NV41",
+    "2009": "NV42",
+    "2010": "NV73",
+    "2011": "NV85",
+    "2012": "NV85",
+    "2013": "NV85",
+    "2014": "NV85",
+    "2015": "NV85"
+   },
+   "shares_published": {
+    "2006": "2010-03-18",
+    "2007": "2011-03-17",
+    "2008": "2012-03-14",
+    "2009": "2013-03-13",
+    "2010": "2014-03-13",
+    "2011": "2015-03-12",
+    "2012": "2015-03-12",
+    "2013": "2015-03-12",
+    "2014": "2015-03-12",
+    "2015": "2015-03-12"
+   },
+   "fiscal_year_ends": {
+    "2006": "2006-01-29",
+    "2007": "2007-01-28",
+    "2008": "2008-01-27",
+    "2009": "2009-01-25",
+    "2010": "2010-01-31",
+    "2011": "2011-01-30",
+    "2012": "2012-01-29",
+    "2013": "2013-01-27",
+    "2014": "2014-01-26",
+    "2015": "2015-01-25"
+   },
+   "normalization": "GAAP diluted EPS (NVIDIA reports no discontinued operations), each year from the latest filing that reports it: FY06 FY2010 10-K, FY07 FY2011 10-K, FY08 FY2012 10-K, FY09 FY2013 10-K, FY10 FY2014 10-K, FY11 FY2015 10-K, FY12 FY2015 10-K, FY13 FY2015 10-K, FY14 FY2015 10-K, FY15 FY2015 10-K; the company's non-GAAP EPS excludes stock-based compensation, which recurs, so GAAP stands",
+   "eps_first_excluded": {},
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 16.21,
+   "prev_fy_op_margin_note": "FY15 income from operations $759.0M / revenue $4,681.5M (FY2015 10-K)",
+   "prev_fy_pretax_margin": 16.12,
+   "prev_fy_pretax_margin_note": "FY15 income before income tax $754.8M / revenue $4,681.5M (FY2015 10-K)",
+   "prev_fy_gross_margin": 55.53,
+   "prev_fy_sales_growth": 13.3,
+   "tax_rate": 0.1646,
+   "tax_note": "FY15 income tax expense $124.2M / pre-tax $754.8M (FY2015 10-K)",
+   "fcf_b": 0.783,
+   "fcf_label": "FY15",
+   "fcf_note": "net cash provided by operating activities $905.7M less purchases of property and equipment and intangible assets $122.4M",
+   "cash_b": 4.623,
+   "dividend_annual": 0.34,
+   "dividend_note": "$0.085 quarterly ('The initial quarterly dividend was $0.075 per share, or $0.30 per share on an annual basis, which was subsequently increased on November 7, 2013 by 13% to a quarterly dividend of $0.085 per share, or $0.34 per share on an annual basis.', FY2015 10-K)",
+   "cash_return_text": "'Through January 25, 2015, we have repurchased an aggregate of 205.6 million shares under our share repurchase program for a total cost of $3,265.2 million.' (FY2015 10-K)",
+   "business_line": "visual computing platforms for gaming, enterprise, HPC and cloud, and automotive: GPUs (GeForce, Quadro, Tesla, GRID), Tegra processors, the Intel license",
+   "groups": [
+    [
+     "GPU",
+     3.8389,
+     10.7
+    ],
+    [
+     "Tegra Processor",
+     0.5786,
+     45.4
+    ],
+    [
+     "All Other",
+     0.264,
+     0.0
+    ]
+   ],
+   "groups_basis": "FY15 segment revenue (FY2015 10-K)",
+   "company": "NVIDIA Corporation",
+   "exchange": "NASDAQ Global Select Market",
+   "pe_window_start": null
+  },
+  {
+   "published": "2016-03-17",
+   "sources": [
+    "NV93",
+    "NV40",
+    "NV41",
+    "NV42",
+    "NV73",
+    "NV85"
+   ],
+   "fy_label": "FY16",
+   "kind": "CYCLICAL",
+   "why": "'NVIDIA is the world leader in visual computing. It enables us to open up new avenues of exploration, facilitate creativity and discovery, and power breakthroughs in new areas like artificial intelligence, virtual reality and autonomous cars.' 'The market for our products is intensely competitive and is characterized by rapid technological change, evolving industry standards and declining average selling prices.' Its current competitors include 'suppliers of discrete and integrated GPUs, including supercomputers and chipsets that incorporate 3D graphics functionality as part of their existing solutions, such as Advanced Micro Devices, or AMD, and Intel Corporation, or Intel' (FY2016 10-K); CYCLICAL kept although the 10-K no longer calls the business cyclical (the BKR FY2015 rule; the class label only); the 10-K names artificial intelligence and autonomous cars as markets NVIDIA serves, not as substitutes for its products, so no theme in taxonomy_eras.json applies (the FY2013 10-K's cloud reading), and GPUs integrated into other processors stay here (the PEP obesity rule)",
+   "eps_normalized": {
+    "2007": 0.76,
+    "2008": 1.31,
+    "2011": 0.43,
+    "2012": 0.94,
+    "2013": 0.9,
+    "2014": 0.74,
+    "2015": 1.12,
+    "2016": 1.08
+   },
+   "eps_sources": {
+    "2007": "NV40",
+    "2008": "NV41",
+    "2009": "NV42",
+    "2010": "NV73",
+    "2011": "NV85",
+    "2012": "NV93",
+    "2013": "NV93",
+    "2014": "NV93",
+    "2015": "NV93",
+    "2016": "NV93"
+   },
+   "eps_published": {
+    "2007": "2011-03-17",
+    "2008": "2012-03-14",
+    "2009": "2013-03-13",
+    "2010": "2014-03-13",
+    "2011": "2015-03-12",
+    "2012": "2016-03-17",
+    "2013": "2016-03-17",
+    "2014": "2016-03-17",
+    "2015": "2016-03-17",
+    "2016": "2016-03-17"
+   },
+   "share_basis": {},
+   "eps_excluded": {
+    "2009": "FY09 lost $(0.05) per diluted share (FY2013 10-K); NVIDIA's non-GAAP FY09 EPS ($0.53, Q4 FY09 release) excludes stock-based compensation, which recurs, so no figure excluding only one-offs was published",
+    "2010": "FY10 lost $(0.12) per diluted share (FY2014 10-K); NVIDIA's non-GAAP FY10 EPS ($0.26, Q4 FY10 release) excludes stock-based compensation, which recurs, so no figure excluding only one-offs was published"
+   },
+   "revenue_usd_b": {
+    "2007": 3.068771,
+    "2008": 4.09786,
+    "2009": 3.424859,
+    "2010": 3.326445,
+    "2011": 3.543309,
+    "2012": 3.998,
+    "2013": 4.28,
+    "2014": 4.13,
+    "2015": 4.682,
+    "2016": 5.01
+   },
+   "revenue_sources": {
+    "2007": "NV40",
+    "2008": "NV41",
+    "2009": "NV42",
+    "2010": "NV73",
+    "2011": "NV85",
+    "2012": "NV93",
+    "2013": "NV93",
+    "2014": "NV93",
+    "2015": "NV93",
+    "2016": "NV93"
+   },
+   "diluted_shares_m": {
+    "2007": 587.256,
+    "2008": 606.732,
+    "2009": 548.126,
+    "2010": 549.574,
+    "2011": 588.684,
+    "2012": 616.0,
+    "2013": 625.0,
+    "2014": 595.0,
+    "2015": 563.0,
+    "2016": 569.0
+   },
+   "shares_sources": {
+    "2007": "NV40",
+    "2008": "NV41",
+    "2009": "NV42",
+    "2010": "NV73",
+    "2011": "NV85",
+    "2012": "NV93",
+    "2013": "NV93",
+    "2014": "NV93",
+    "2015": "NV93",
+    "2016": "NV93"
+   },
+   "shares_published": {
+    "2007": "2011-03-17",
+    "2008": "2012-03-14",
+    "2009": "2013-03-13",
+    "2010": "2014-03-13",
+    "2011": "2015-03-12",
+    "2012": "2016-03-17",
+    "2013": "2016-03-17",
+    "2014": "2016-03-17",
+    "2015": "2016-03-17",
+    "2016": "2016-03-17"
+   },
+   "fiscal_year_ends": {
+    "2007": "2007-01-28",
+    "2008": "2008-01-27",
+    "2009": "2009-01-25",
+    "2010": "2010-01-31",
+    "2011": "2011-01-30",
+    "2012": "2012-01-29",
+    "2013": "2013-01-27",
+    "2014": "2014-01-26",
+    "2015": "2015-01-25",
+    "2016": "2016-01-31"
+   },
+   "normalization": "GAAP diluted EPS (NVIDIA reports no discontinued operations), each year from the latest filing that reports it: FY07 FY2011 10-K, FY08 FY2012 10-K, FY09 FY2013 10-K, FY10 FY2014 10-K, FY11 FY2015 10-K, FY12 FY2016 10-K, FY13 FY2016 10-K, FY14 FY2016 10-K, FY15 FY2016 10-K, FY16 FY2016 10-K; FY12-FY16 from the FY2016 10-K in $ millions and millions of shares, as published; the company's non-GAAP EPS excludes stock-based compensation, which recurs, so GAAP stands",
+   "eps_first_excluded": {},
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 14.91,
+   "prev_fy_op_margin_note": "FY16 income from operations $747M / revenue $5,010M (FY2016 10-K)",
+   "prev_fy_pretax_margin": 14.83,
+   "prev_fy_pretax_margin_note": "FY16 income before income tax $743M / revenue $5,010M (FY2016 10-K)",
+   "prev_fy_gross_margin": 56.11,
+   "prev_fy_sales_growth": 7.0,
+   "tax_rate": 0.1736,
+   "tax_note": "FY16 income tax expense $129M / pre-tax $743M (FY2016 10-K)",
+   "fcf_b": 1.089,
+   "fcf_label": "FY16",
+   "fcf_note": "net cash provided by operating activities $1,175M less purchases of property and equipment and intangible assets $86M",
+   "cash_b": 5.037,
+   "dividend_annual": 0.46,
+   "dividend_note": "$0.115 quarterly ('On November 5, 2015, we again increased our quarterly cash dividend to $0.115 per share, or $0.46 on an annual basis.', FY2016 10-K)",
+   "cash_return_text": "'Through January 31, 2016, we have repurchased an aggregate of 231 million shares under our share repurchase program for a total cost of $3.85 billion.' (FY2016 10-K)",
+   "business_line": "visual computing platforms for gaming, professional visualization, datacenter and automotive: GPUs (GeForce, Quadro, Tesla, GRID), Tegra processors, the Intel license",
+   "groups": [
+    [
+     "GPU",
+     4.187,
+     9.1
+    ],
+    [
+     "Tegra Processor",
+     0.559,
+     -3.5
+    ],
+    [
+     "All Other",
+     0.264,
+     0.0
+    ]
+   ],
+   "groups_basis": "FY16 segment revenue (FY2016 10-K)",
+   "company": "NVIDIA Corporation",
+   "exchange": "NASDAQ Global Select Market",
+   "pe_window_start": null
+  },
+  {
+   "published": "2017-03-02",
+   "sources": [
+    "NV101",
+    "NV41",
+    "NV42",
+    "NV73",
+    "NV85",
+    "NV93"
+   ],
+   "fy_label": "FY17",
+   "kind": "CYCLICAL",
+   "why": "'Starting with a focus on PC graphics, NVIDIA invented the GPU to solve some of the most complex problems in computer science. We have extended our emphasis in recent years to the revolutionary field of artificial intelligence, or AI.' 'The market for our products is intensely competitive and is characterized by rapid technological change and evolving industry standards.' Its current competitors include 'suppliers of or licensors of discrete and integrated GPUs and accelerated computing processing solutions, including chipsets that incorporate 3D graphics functionality as part of their existing solutions, such as Advanced Micro Devices, or AMD, ARM Holdings plc, Imagination Technologies Group plc, Intel Corporation, or Intel, and Xilinx, Inc.' (FY2017 10-K); CYCLICAL kept although the 10-K no longer calls the business cyclical (the BKR FY2015 rule; the class label only); the 10-K names AI as the field NVIDIA has extended its emphasis to, a market it serves rather than a substitute for its products, so no theme in taxonomy_eras.json applies (the FY2013 10-K's cloud reading), and GPUs integrated into other processors stay here (the PEP obesity rule)",
+   "eps_normalized": {
+    "2008": 1.31,
+    "2011": 0.43,
+    "2012": 0.94,
+    "2013": 0.9,
+    "2014": 0.74,
+    "2015": 1.12,
+    "2016": 1.08,
+    "2017": 2.57
+   },
+   "eps_sources": {
+    "2008": "NV41",
+    "2009": "NV42",
+    "2010": "NV73",
+    "2011": "NV85",
+    "2012": "NV93",
+    "2013": "NV101",
+    "2014": "NV101",
+    "2015": "NV101",
+    "2016": "NV101",
+    "2017": "NV101"
+   },
+   "eps_published": {
+    "2008": "2012-03-14",
+    "2009": "2013-03-13",
+    "2010": "2014-03-13",
+    "2011": "2015-03-12",
+    "2012": "2016-03-17",
+    "2013": "2017-03-02",
+    "2014": "2017-03-02",
+    "2015": "2017-03-02",
+    "2016": "2017-03-02",
+    "2017": "2017-03-02"
+   },
+   "share_basis": {},
+   "eps_excluded": {
+    "2009": "FY09 lost $(0.05) per diluted share (FY2013 10-K); NVIDIA's non-GAAP FY09 EPS ($0.53, Q4 FY09 release) excludes stock-based compensation, which recurs, so no figure excluding only one-offs was published",
+    "2010": "FY10 lost $(0.12) per diluted share (FY2014 10-K); NVIDIA's non-GAAP FY10 EPS ($0.26, Q4 FY10 release) excludes stock-based compensation, which recurs, so no figure excluding only one-offs was published"
+   },
+   "revenue_usd_b": {
+    "2008": 4.09786,
+    "2009": 3.424859,
+    "2010": 3.326445,
+    "2011": 3.543309,
+    "2012": 3.998,
+    "2013": 4.28,
+    "2014": 4.13,
+    "2015": 4.682,
+    "2016": 5.01,
+    "2017": 6.91
+   },
+   "revenue_sources": {
+    "2008": "NV41",
+    "2009": "NV42",
+    "2010": "NV73",
+    "2011": "NV85",
+    "2012": "NV93",
+    "2013": "NV101",
+    "2014": "NV101",
+    "2015": "NV101",
+    "2016": "NV101",
+    "2017": "NV101"
+   },
+   "diluted_shares_m": {
+    "2008": 606.732,
+    "2009": 548.126,
+    "2010": 549.574,
+    "2011": 588.684,
+    "2012": 616.0,
+    "2013": 625.0,
+    "2014": 595.0,
+    "2015": 563.0,
+    "2016": 569.0,
+    "2017": 649.0
+   },
+   "shares_sources": {
+    "2008": "NV41",
+    "2009": "NV42",
+    "2010": "NV73",
+    "2011": "NV85",
+    "2012": "NV93",
+    "2013": "NV101",
+    "2014": "NV101",
+    "2015": "NV101",
+    "2016": "NV101",
+    "2017": "NV101"
+   },
+   "shares_published": {
+    "2008": "2012-03-14",
+    "2009": "2013-03-13",
+    "2010": "2014-03-13",
+    "2011": "2015-03-12",
+    "2012": "2016-03-17",
+    "2013": "2017-03-02",
+    "2014": "2017-03-02",
+    "2015": "2017-03-02",
+    "2016": "2017-03-02",
+    "2017": "2017-03-02"
+   },
+   "fiscal_year_ends": {
+    "2008": "2008-01-27",
+    "2009": "2009-01-25",
+    "2010": "2010-01-31",
+    "2011": "2011-01-30",
+    "2012": "2012-01-29",
+    "2013": "2013-01-27",
+    "2014": "2014-01-26",
+    "2015": "2015-01-25",
+    "2016": "2016-01-31",
+    "2017": "2017-01-29"
+   },
+   "normalization": "GAAP diluted EPS (NVIDIA reports no discontinued operations), each year from the latest filing that reports it: FY08 FY2012 10-K, FY09 FY2013 10-K, FY10 FY2014 10-K, FY11 FY2015 10-K, FY12 FY2016 10-K, FY13 FY2017 10-K, FY14 FY2017 10-K, FY15 FY2017 10-K, FY16 FY2017 10-K, FY17 FY2017 10-K; FY13-FY17 from the FY2017 10-K and FY12 from the FY2016 10-K in $ millions and millions of shares, as published; the company's non-GAAP EPS excludes stock-based compensation, which recurs, so GAAP stands",
+   "eps_first_excluded": {},
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 27.99,
+   "prev_fy_op_margin_note": "FY17 income from operations $1,934M / revenue $6,910M (FY2017 10-K)",
+   "prev_fy_pretax_margin": 27.57,
+   "prev_fy_pretax_margin_note": "FY17 income before income tax $1,905M / revenue $6,910M (FY2017 10-K)",
+   "prev_fy_gross_margin": 58.8,
+   "prev_fy_sales_growth": 37.9,
+   "tax_rate": 0.1255,
+   "tax_note": "FY17 income tax expense $239M / pre-tax $1,905M (FY2017 10-K)",
+   "fcf_b": 1.496,
+   "fcf_label": "FY17",
+   "fcf_note": "net cash provided by operating activities $1,672M less purchases of property and equipment and intangible assets $176M",
+   "cash_b": 6.798,
+   "dividend_annual": 0.56,
+   "dividend_note": "$0.14 quarterly ('On November 10, 2016, we increased our quarterly cash dividend from $0.115 per share, or $0.46 on an annual basis, to $0.14 per share, or $0.56 on an annual basis.', FY2017 10-K)",
+   "cash_return_text": "'Through January 29, 2017, we have repurchased an aggregate of 245 million shares under our share repurchase program for a total cost of $4.59 billion.' (FY2017 10-K)",
+   "business_line": "GPU computing for gaming, professional visualization, datacenter and automotive: GPUs (GeForce, Quadro, Tesla, GRID), Tegra processors, the Intel license",
+   "groups": [
+    [
+     "GPU",
+     5.822,
+     39.0
+    ],
+    [
+     "Tegra Processor",
+     0.824,
+     47.4
+    ],
+    [
+     "All Other",
+     0.264,
+     0.0
+    ]
+   ],
+   "groups_basis": "FY17 segment revenue (FY2017 10-K)",
    "company": "NVIDIA Corporation",
    "exchange": "NASDAQ Global Select Market",
    "pe_window_start": null
@@ -3788,6 +4679,1326 @@
    "next_print": "Q4 FY14 print (February)",
    "cash_return_text": "'NVIDIA intends to return $1 billion in fiscal 2015 through stock repurchases and quarterly dividend payments.' (Q3 FY14 release)",
    "note": null
+  },
+  {
+   "quarter": "Q4 FY14",
+   "fy": 2014,
+   "q": 4,
+   "published": "2014-02-13",
+   "source": "NV72",
+   "release": "Feb 12",
+   "release_time": "after the close on Feb 12: 8-K accepted 2014-02-12 16:23 ET; public before the open of the next trading day",
+   "period_end": "2014-01-26",
+   "raw": {
+    "sales_k": 1144218,
+    "sales_prior_k": 1106902,
+    "sales_prev_q_k": 1053967,
+    "gross_profit_k": 619242,
+    "gross_profit_prior_k": 585602,
+    "rd_k": 336641,
+    "rd_prior_k": 298007,
+    "sga_k": 115677,
+    "sga_prior_k": 104022,
+    "op_income_k": 166924,
+    "op_income_prior_k": 183573,
+    "inventory_k": 387765,
+    "inventory_prior_k": 412467
+   },
+   "rows": {
+    "sales": "Revenue | $ 1,144,218 | $ 1,106,902 | $ 4,130,162 | $ 4,280,159",
+    "gp": "Gross profit | 619,242 | 585,602 | 2,267,763 | 2,226,343",
+    "rd": "Research and development | 336,641 | 298,007 | 1,335,834 | 1,147,282",
+    "sga": "Sales, general and administrative | 115,677 | 104,022 | 435,702 | 430,822",
+    "op": "Operating income | 166,924 | 183,573 | 496,227 | 648,239",
+    "eps": "Diluted net income per share | $ 0.25 | $ 0.28 | $ 0.74 | $ 0.90",
+    "shares": "Shares used in diluted per share computation | 577,356 | 622,018 | 594,517 | 624,957",
+    "inv": "Inventories | 387,765 | 412,467",
+    "cash": "Cash, cash equivalents and marketable securities | $ 4,671,810 | $ 3,727,883",
+    "debt": [
+     "Long-term debt | 1,356,375 | —",
+     "Capital lease obligations, long-term | 17,500 | 18,998"
+    ]
+   },
+   "inventory_prior_row": {
+    "source": "NV72",
+    "row": "Inventories | 387,765 | 412,467"
+   },
+   "sales_prev_q_row": {
+    "source": "NV70",
+    "row": "Revenue | 1,053,967 | 1,204,110 | 2,985,944 | 3,173,257"
+   },
+   "extra_sources": [
+    "NV70"
+   ],
+   "sales_b": 1.1442,
+   "sales_pct": 3.4,
+   "seq_pct": 8.6,
+   "gross_margin": 54.12,
+   "gross_margin_bp": 121.5,
+   "op_margin": 14.59,
+   "op_margin_bp": -199.6,
+   "opex_pct": 12.5,
+   "opex_gap_pp": 9.1,
+   "inventory_b": 0.3878,
+   "inventory_pct": -6.0,
+   "inventory_gap_pp": -9.4,
+   "eps_q": 0.25,
+   "eps_q_prior": 0.28,
+   "diluted_shares_m": 577.356,
+   "cash_b": 4.6718,
+   "ltd_b": 1.3739,
+   "debt_note": "long-term debt (the 1.00% convertible senior notes due 2018) $1,356.4M; long-term capital lease obligations $17.5M",
+   "sales_note": "revenue $1,144.2M vs $1,106.9M a year earlier, $1,054.0M the quarter before",
+   "inventory_note": "inventories $387.8M (2014-01-26) vs $412.5M a year earlier (the release)",
+   "eps_note": "GAAP diluted EPS $0.25 vs $0.28; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 577.4M",
+   "next_print": "Q1 FY15 print (May)",
+   "cash_return_text": "'During the year, NVIDIA returned $1.07 billion to shareholders - $887 million towards the repurchase of 62 million shares and dividend payments totaling $181 million.' (Q4 FY14 release)",
+   "note": null,
+   "fy_actual": {
+    "fy": 2014,
+    "fy_label": "FY14",
+    "eps_normalized": 0.74,
+    "revenue_usd_b": 4.130162,
+    "diluted_shares_m": 594.517,
+    "normalization_note": "FY14 from the Q4 FY14 release (GAAP)",
+    "op_margin": 12.01,
+    "op_margin_note": "FY14 income from operations $496.2M / revenue $4,130.2M (Q4 FY14 release)",
+    "pretax_margin": 12.35,
+    "pretax_margin_note": "FY14 income before income tax $510.3M / revenue $4,130.2M (Q4 FY14 release)",
+    "gross_margin": 54.91,
+    "sales_growth": -3.5,
+    "tax_rate": 0.1377,
+    "tax_note": "FY14 income tax expense $70.3M / pre-tax $510.3M"
+   }
+  },
+  {
+   "quarter": "Q1 FY15",
+   "fy": 2015,
+   "q": 1,
+   "published": "2014-05-06",
+   "source": "NV77",
+   "release": "May 6",
+   "release_time": "before the open on May 6: 8-K accepted 2014-05-06 09:29 ET, ahead of the scheduled release of May 8 after a preliminary draft was emailed internally ('these results are being provided to the market in advance of trading in NVIDIA stock today as a precaution')",
+   "period_end": "2014-04-27",
+   "raw": {
+    "sales_k": 1102787,
+    "sales_prior_k": 954739,
+    "sales_prev_q_k": 1144218,
+    "gross_profit_k": 604202,
+    "gross_profit_prior_k": 518568,
+    "rd_k": 334263,
+    "rd_prior_k": 327161,
+    "sga_k": 118580,
+    "sga_prior_k": 108626,
+    "op_income_k": 151359,
+    "op_income_prior_k": 82781,
+    "inventory_k": 393280,
+    "inventory_prior_k": 377597
+   },
+   "rows": {
+    "sales": "Revenue | 1,102,787 | 954,739",
+    "gp": "Gross profit | 604,202 | 518,568",
+    "rd": "Research and development | 334,263 | 327,161",
+    "sga": "Sales, general and administrative | 118,580 | 108,626",
+    "op": "Operating income | 151,359 | 82,781",
+    "eps": "Diluted | 0.24 | 0.13",
+    "shares": "Diluted | 570,422 | 619,302",
+    "inv": "Inventories | 393,280 | 387,765",
+    "cash": "Cash, cash equivalents and marketable securities | 4,347,817 | 4,671,810",
+    "debt": [
+     "Long-term debt | 1,363,276 | 1,356,375",
+     "Capital lease obligations, long-term | 16,683 | 17,500"
+    ]
+   },
+   "inventory_prior_row": {
+    "source": "NV74",
+    "row": "Inventories | 377,597 | 419,686"
+   },
+   "sales_prev_q_row": {
+    "source": "NV72",
+    "row": "Revenue | $ 1,144,218 | $ 1,106,902 | $ 4,130,162 | $ 4,280,159"
+   },
+   "extra_sources": [
+    "NV74",
+    "NV72"
+   ],
+   "sales_b": 1.1028,
+   "sales_pct": 15.5,
+   "seq_pct": -3.6,
+   "gross_margin": 54.79,
+   "gross_margin_bp": 47.3,
+   "op_margin": 13.73,
+   "op_margin_bp": 505.5,
+   "opex_pct": 3.9,
+   "opex_gap_pp": -11.6,
+   "inventory_b": 0.3933,
+   "inventory_pct": 4.2,
+   "inventory_gap_pp": -11.4,
+   "eps_q": 0.24,
+   "eps_q_prior": 0.13,
+   "diluted_shares_m": 570.422,
+   "cash_b": 4.3478,
+   "ltd_b": 1.38,
+   "debt_note": "long-term debt (the 1.00% convertible senior notes due 2018) $1,363.3M; long-term capital lease obligations $16.7M",
+   "sales_note": "revenue $1,102.8M vs $954.7M a year earlier, $1,144.2M the quarter before",
+   "inventory_note": "inventories $393.3M (2014-04-27) vs $377.6M a year earlier (Q1 FY14 10-Q)",
+   "eps_note": "GAAP diluted EPS $0.24 vs $0.13; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 570.4M",
+   "next_print": "Q2 FY15 print (August)",
+   "cash_return_text": null,
+   "note": "released before the open of May 6 after a preliminary draft was emailed to an internal list; the outlook followed in the release of May 8 (8-K accepted after the close)",
+   "outlook_later": "NVIDIA will provide its full results for the first quarter, along with additional commentary and a financial outlook, on Thursday, May 8, 2014, as initially scheduled."
+  },
+  {
+   "quarter": "Q2 FY15",
+   "fy": 2015,
+   "q": 2,
+   "published": "2014-08-08",
+   "source": "NV80",
+   "release": "Aug 7",
+   "release_time": "after the close on Aug 7: 8-K accepted 2014-08-07 16:24 ET; public before the open of the next trading day",
+   "period_end": "2014-07-27",
+   "raw": {
+    "sales_k": 1102824,
+    "sales_prior_k": 977238,
+    "sales_prev_q_k": 1102787,
+    "gross_profit_k": 618974,
+    "gross_profit_prior_k": 545538,
+    "rd_k": 337124,
+    "rd_prior_k": 331738,
+    "sga_k": 118671,
+    "sga_prior_k": 108266,
+    "op_income_k": 163179,
+    "op_income_prior_k": 105534,
+    "inventory_k": 387434,
+    "inventory_prior_k": 378280
+   },
+   "rows": {
+    "sales": "Revenue | 1,102,824 | 977,238 | 2,205,611 | 1,931,977",
+    "gp": "Gross profit | 618,974 | 545,538 | 1,223,176 | 1,064,106",
+    "rd": "Research and development | 337,124 | 331,738 | 671,387 | 658,899",
+    "sga": "Sales, general and administrative | 118,671 | 108,266 | 237,251 | 216,892",
+    "op": "Operating income | 163,179 | 105,534 | 314,538 | 188,315",
+    "eps": "Diluted | 0.22 | 0.16 | 0.46 | 0.29",
+    "shares": "Diluted | 570,572 | 592,006 | 570,599 | 606,051",
+    "inv": "Inventories | 387,434 | 387,765",
+    "cash": "Cash, cash equivalents and marketable securities | 4,386,054 | 4,671,810",
+    "debt": [
+     "Long-term debt | 1,370,249 | 1,356,375",
+     "Capital lease obligations, long-term | 15,842 | 17,500"
+    ]
+   },
+   "inventory_prior_row": {
+    "source": "NV75",
+    "row": "Inventories | 378,280 | 412,467"
+   },
+   "sales_prev_q_row": {
+    "source": "NV77",
+    "row": "Revenue | 1,102,787 | 954,739"
+   },
+   "extra_sources": [
+    "NV75",
+    "NV77"
+   ],
+   "sales_b": 1.1028,
+   "sales_pct": 12.9,
+   "seq_pct": 0.0,
+   "gross_margin": 56.13,
+   "gross_margin_bp": 30.2,
+   "op_margin": 14.8,
+   "op_margin_bp": 399.7,
+   "opex_pct": 3.6,
+   "opex_gap_pp": -9.3,
+   "inventory_b": 0.3874,
+   "inventory_pct": 2.4,
+   "inventory_gap_pp": -10.4,
+   "eps_q": 0.22,
+   "eps_q_prior": 0.16,
+   "diluted_shares_m": 570.572,
+   "cash_b": 4.3861,
+   "ltd_b": 1.3861,
+   "debt_note": "long-term debt (the 1.00% convertible senior notes due 2018) $1,370.2M; long-term capital lease obligations $15.8M",
+   "sales_note": "revenue $1,102.8M vs $977.2M a year earlier, $1,102.8M the quarter before",
+   "inventory_note": "inventories $387.4M (2014-07-27) vs $378.3M a year earlier (Q2 FY14 10-Q)",
+   "eps_note": "GAAP diluted EPS $0.22 vs $0.16; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 570.6M",
+   "next_print": "Q3 FY15 print (November)",
+   "cash_return_text": "'During the second quarter, NVIDIA paid $47 million in cash dividends and received 6.8 million shares under the $500 million structured repurchase agreement it entered into in the first quarter.' (Q2 FY15 release)",
+   "note": null
+  },
+  {
+   "quarter": "Q3 FY15",
+   "fy": 2015,
+   "q": 3,
+   "published": "2014-11-07",
+   "source": "NV82",
+   "release": "Nov 6",
+   "release_time": "after the close on Nov 6: 8-K accepted 2014-11-06 16:25 ET; public before the open of the next trading day",
+   "period_end": "2014-10-26",
+   "raw": {
+    "sales_k": 1225382,
+    "sales_prior_k": 1053967,
+    "sales_prev_q_k": 1102824,
+    "gross_profit_k": 676698,
+    "gross_profit_prior_k": 584415,
+    "rd_k": 340085,
+    "rd_prior_k": 340294,
+    "sga_k": 123298,
+    "sga_prior_k": 103133,
+    "op_income_k": 213315,
+    "op_income_prior_k": 140988,
+    "inventory_k": 408081,
+    "inventory_prior_k": 380319
+   },
+   "rows": {
+    "sales": "Revenue | 1,225,382 | 1,053,967 | 3,430,993 | 2,985,944",
+    "gp": "Gross profit | 676,698 | 584,415 | 1,899,874 | 1,648,521",
+    "rd": "Research and development | 340,085 | 340,294 | 1,011,472 | 999,193",
+    "sga": "Sales, general and administrative | 123,298 | 103,133 | 360,549 | 320,025",
+    "op": "Operating income | 213,315 | 140,988 | 527,853 | 329,303",
+    "eps": "Diluted | 0.31 | 0.20 | 0.77 | 0.49",
+    "shares": "Diluted | 558,201 | 588,752 | 565,653 | 600,108",
+    "inv": "Inventories | 408,081 | 387,765",
+    "cash": "Cash, cash equivalents and marketable securities | 4,240,797 | 4,671,810",
+    "debt": [
+     "Long-term debt | 1,377,259 | 1,356,375",
+     "Capital lease obligations, long-term | 14,977 | 17,500"
+    ]
+   },
+   "inventory_prior_row": {
+    "source": "NV76",
+    "row": "Inventories | 380,319 | 412,467"
+   },
+   "sales_prev_q_row": {
+    "source": "NV80",
+    "row": "Revenue | 1,102,824 | 977,238 | 2,205,611 | 1,931,977"
+   },
+   "extra_sources": [
+    "NV76",
+    "NV80"
+   ],
+   "sales_b": 1.2254,
+   "sales_pct": 16.3,
+   "seq_pct": 11.1,
+   "gross_margin": 55.22,
+   "gross_margin_bp": -22.6,
+   "op_margin": 17.41,
+   "op_margin_bp": 403.1,
+   "opex_pct": 4.5,
+   "opex_gap_pp": -11.8,
+   "inventory_b": 0.4081,
+   "inventory_pct": 7.3,
+   "inventory_gap_pp": -9.0,
+   "eps_q": 0.31,
+   "eps_q_prior": 0.2,
+   "diluted_shares_m": 558.201,
+   "cash_b": 4.2408,
+   "ltd_b": 1.3922,
+   "debt_note": "long-term debt (the 1.00% convertible senior notes due 2018) $1,377.3M; long-term capital lease obligations $15.0M",
+   "sales_note": "revenue $1,225.4M vs $1,054.0M a year earlier, $1,102.8M the quarter before",
+   "inventory_note": "inventories $408.1M (2014-10-26) vs $380.3M a year earlier (Q3 FY14 10-Q)",
+   "eps_note": "GAAP diluted EPS $0.31 vs $0.20; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 558.2M",
+   "next_print": "Q4 FY15 print (February)",
+   "cash_return_text": "'The company intends to return approximately $600 million to shareholders in fiscal 2016 through ongoing quarterly cash dividends and share repurchases.' (Q3 FY15 release)",
+   "note": null
+  },
+  {
+   "quarter": "Q4 FY15",
+   "fy": 2015,
+   "q": 4,
+   "published": "2015-02-12",
+   "source": "NV84",
+   "release": "Feb 11",
+   "release_time": "after the close on Feb 11: 8-K accepted 2015-02-11 16:22 ET; public before the open of the next trading day",
+   "period_end": "2015-01-25",
+   "raw": {
+    "sales_k": 1250514,
+    "sales_prior_k": 1144218,
+    "sales_prev_q_k": 1225382,
+    "gross_profit_k": 699603,
+    "gross_profit_prior_k": 619242,
+    "rd_k": 348253,
+    "rd_prior_k": 336641,
+    "sga_k": 120214,
+    "sga_prior_k": 115677,
+    "op_income_k": 231136,
+    "op_income_prior_k": 166924,
+    "inventory_k": 482893,
+    "inventory_prior_k": 387765
+   },
+   "rows": {
+    "sales": "Revenue | 1,250,514 | 1,144,218 | 4,681,507 | 4,130,162",
+    "gp": "Gross profit | 699,603 | 619,242 | 2,599,477 | 2,267,763",
+    "rd": "Research and development | 348,253 | 336,641 | 1,359,725 | 1,335,834",
+    "sga": "Sales, general and administrative | 120,214 | 115,677 | 480,763 | 435,702",
+    "op": "Operating income | 231,136 | 166,924 | 758,989 | 496,227",
+    "eps": "Diluted | 0.35 | 0.25 | 1.12 | 0.74",
+    "shares": "Diluted | 556,573 | 577,356 | 563,068 | 594,517",
+    "inv": "Inventories | 482,893 | 387,765",
+    "cash": "Cash, cash equivalents and marketable securities | 4,623,339 | 4,671,810",
+    "debt": [
+     "Long-term debt | 1,384,342 | 1,356,375",
+     "Capital lease obligations, long-term | 14,086 | 17,500"
+    ]
+   },
+   "inventory_prior_row": {
+    "source": "NV84",
+    "row": "Inventories | 482,893 | 387,765"
+   },
+   "sales_prev_q_row": {
+    "source": "NV82",
+    "row": "Revenue | 1,225,382 | 1,053,967 | 3,430,993 | 2,985,944"
+   },
+   "extra_sources": [
+    "NV82"
+   ],
+   "sales_b": 1.2505,
+   "sales_pct": 9.3,
+   "seq_pct": 2.1,
+   "gross_margin": 55.95,
+   "gross_margin_bp": 182.6,
+   "op_margin": 18.48,
+   "op_margin_bp": 389.5,
+   "opex_pct": 3.6,
+   "opex_gap_pp": -5.7,
+   "inventory_b": 0.4829,
+   "inventory_pct": 24.5,
+   "inventory_gap_pp": 15.2,
+   "eps_q": 0.35,
+   "eps_q_prior": 0.25,
+   "diluted_shares_m": 556.573,
+   "cash_b": 4.6233,
+   "ltd_b": 1.3984,
+   "debt_note": "long-term debt (the 1.00% convertible senior notes due 2018) $1,384.3M; long-term capital lease obligations $14.1M",
+   "sales_note": "revenue $1,250.5M vs $1,144.2M a year earlier, $1,225.4M the quarter before",
+   "inventory_note": "inventories $482.9M (2015-01-25) vs $387.8M a year earlier (the release)",
+   "eps_note": "GAAP diluted EPS $0.35 vs $0.25; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 556.6M",
+   "next_print": "Q1 FY16 print (May)",
+   "cash_return_text": "'The company intends to return approximately $600 million to shareholders through ongoing quarterly cash dividends and share repurchases in fiscal 2016.' (Q4 FY15 release)",
+   "note": null,
+   "fy_actual": {
+    "fy": 2015,
+    "fy_label": "FY15",
+    "eps_normalized": 1.12,
+    "revenue_usd_b": 4.681507,
+    "diluted_shares_m": 563.068,
+    "normalization_note": "FY15 from the Q4 FY15 release (GAAP)",
+    "op_margin": 16.21,
+    "op_margin_note": "FY15 income from operations $759.0M / revenue $4,681.5M (Q4 FY15 release)",
+    "pretax_margin": 16.12,
+    "pretax_margin_note": "FY15 income before income tax $754.8M / revenue $4,681.5M (Q4 FY15 release)",
+    "gross_margin": 55.53,
+    "sales_growth": 13.3,
+    "tax_rate": 0.1646,
+    "tax_note": "FY15 income tax expense $124.2M / pre-tax $754.8M"
+   }
+  },
+  {
+   "quarter": "Q1 FY16",
+   "fy": 2016,
+   "q": 1,
+   "published": "2015-05-08",
+   "source": "NV86",
+   "release": "May 7",
+   "release_time": "after the close on May 7: 8-K accepted 2015-05-07 16:29 ET; public before the open of the next trading day",
+   "period_end": "2015-04-26",
+   "raw": {
+    "sales_k": 1151000,
+    "sales_prior_k": 1103000,
+    "sales_prev_q_k": 1250514,
+    "gross_profit_k": 653000,
+    "gross_profit_prior_k": 604000,
+    "rd_k": 339000,
+    "rd_prior_k": 334000,
+    "sga_k": 138000,
+    "sga_prior_k": 119000,
+    "op_income_k": 176000,
+    "op_income_prior_k": 151000,
+    "inventory_k": 438000,
+    "inventory_prior_k": 393280
+   },
+   "rows": {
+    "sales": "Revenue | 1,151 | 1,103",
+    "gp": "Gross profit | 653 | 604",
+    "rd": "Research and development | 339 | 334",
+    "sga": "Sales, general and administrative | 138 | 119",
+    "op": "Operating income | 176 | 151",
+    "eps": "Diluted | 0.24 | 0.24",
+    "shares": "Diluted | 568 | 570",
+    "inv": "Inventories | 438 | 483",
+    "cash": "Cash, cash equivalents and marketable securities | 4,792 | 4,623",
+    "debt": [
+     "Long-term debt | 1,391 | 1,384",
+     "Capital lease obligations, long-term | 13 | 14"
+    ]
+   },
+   "rows_unit": "$ millions",
+   "inventory_prior_row": {
+    "source": "NV79",
+    "row": "Inventories | 393,280 | 387,765"
+   },
+   "sales_prev_q_row": {
+    "source": "NV84",
+    "row": "Revenue | 1,250,514 | 1,144,218 | 4,681,507 | 4,130,162"
+   },
+   "extra_sources": [
+    "NV79",
+    "NV84"
+   ],
+   "sales_b": 1.151,
+   "sales_pct": 4.4,
+   "seq_pct": -8.0,
+   "gross_margin": 56.73,
+   "gross_margin_bp": 197.4,
+   "op_margin": 15.29,
+   "op_margin_bp": 160.1,
+   "opex_pct": 5.3,
+   "opex_gap_pp": 0.9,
+   "inventory_b": 0.438,
+   "inventory_pct": 11.4,
+   "inventory_gap_pp": 7.0,
+   "eps_q": 0.24,
+   "eps_q_prior": 0.24,
+   "diluted_shares_m": 568.0,
+   "cash_b": 4.792,
+   "ltd_b": 1.404,
+   "debt_note": "long-term debt (the 1.00% convertible senior notes due 2018) $1,391M; long-term capital lease obligations $13M",
+   "sales_note": "revenue $1,151M vs $1,103M a year earlier, $1,250.5M the quarter before",
+   "inventory_note": "inventories $438M (2015-04-26) vs $393.3M a year earlier (Q1 FY15 10-Q)",
+   "eps_note": "GAAP diluted EPS $0.24 vs $0.24; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 568.0M",
+   "next_print": "Q2 FY16 print (August)",
+   "cash_return_text": "'It also has announced an increase in its intended return to shareholders in fiscal 2016 to $800 million from the previously stated $600 million, through quarterly cash dividends and share repurchases.' (Q1 FY16 release)",
+   "note": "from this release the statements are in $ millions, so the margins and gaps take the rounded figures as published; the Icera modem wind-down: 'NVIDIA announced on May 5, 2015, that it will wind-down its Icera modem operations in the second quarter of fiscal 2016. It is open to a sale of the technology or operations.' (restructuring charges, display only)"
+  },
+  {
+   "quarter": "Q2 FY16",
+   "fy": 2016,
+   "q": 2,
+   "published": "2015-08-07",
+   "source": "NV88",
+   "release": "Aug 6",
+   "release_time": "after the close on Aug 6: 8-K accepted 2015-08-06 16:24 ET; public before the open of the next trading day",
+   "period_end": "2015-07-26",
+   "raw": {
+    "sales_k": 1153000,
+    "sales_prior_k": 1103000,
+    "sales_prev_q_k": 1151000,
+    "gross_profit_k": 634000,
+    "gross_profit_prior_k": 619000,
+    "rd_k": 320000,
+    "rd_prior_k": 337000,
+    "sga_k": 149000,
+    "sga_prior_k": 119000,
+    "op_income_k": 76000,
+    "op_income_prior_k": 163000,
+    "inventory_k": 441000,
+    "inventory_prior_k": 387434
+   },
+   "rows": {
+    "sales": "Revenue | 1,153 | 1,103 | 2,304 | 2,206",
+    "gp": "Gross profit | 634 | 619 | 1,286 | 1,223",
+    "rd": "Research and development | 320 | 337 | 658 | 672",
+    "sga": "Sales, general and administrative | 149 | 119 | 289 | 237",
+    "op": "Operating income | 76 | 163 | 250 | 314",
+    "eps": "Diluted | 0.05 | 0.22 | 0.28 | 0.46",
+    "shares": "Diluted | 556 | 571 | 563 | 571",
+    "inv": "Inventories | 441 | 483",
+    "cash": "Cash, cash equivalents and marketable securities | 4,505 | 4,623",
+    "debt": [
+     "Long-term debt | 1,399 | 1,384",
+     "Capital lease obligations, long-term | 12 | 14"
+    ],
+    "restructuring": "Restructuring and other charges | 89 | — | 89 | —"
+   },
+   "rows_unit": "$ millions",
+   "inventory_prior_row": {
+    "source": "NV81",
+    "row": "Inventories | 387,434 | 387,765"
+   },
+   "sales_prev_q_row": {
+    "source": "NV86",
+    "row": "Revenue | 1,151 | 1,103"
+   },
+   "extra_sources": [
+    "NV81",
+    "NV86"
+   ],
+   "sales_b": 1.153,
+   "sales_pct": 4.5,
+   "seq_pct": 0.2,
+   "gross_margin": 54.99,
+   "gross_margin_bp": -113.3,
+   "op_margin": 6.59,
+   "op_margin_bp": -818.6,
+   "opex_pct": 2.9,
+   "opex_gap_pp": -1.7,
+   "inventory_b": 0.441,
+   "inventory_pct": 13.8,
+   "inventory_gap_pp": 9.3,
+   "eps_q": 0.05,
+   "eps_q_prior": 0.22,
+   "diluted_shares_m": 556.0,
+   "cash_b": 4.505,
+   "ltd_b": 1.411,
+   "debt_note": "long-term debt (the 1.00% convertible senior notes due 2018) $1,399M; long-term capital lease obligations $12M",
+   "sales_note": "revenue $1,153M vs $1,103M a year earlier, $1,151M the quarter before",
+   "inventory_note": "inventories $441M (2015-07-26) vs $387.4M a year earlier (Q2 FY15 10-Q)",
+   "eps_note": "GAAP diluted EPS $0.05 vs $0.22; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 556.0M",
+   "next_print": "Q3 FY16 print (November)",
+   "cash_return_text": "'During the second quarter, NVIDIA paid $52 million in cash dividends and $400 million in share repurchases - returning an aggregate of $452 million to shareholders.' (Q2 FY16 release)",
+   "note": "restructuring and other charges $89M stay in operating income, as published; the opex gap takes research and development and SG&A, the two expense lines it has always taken; 'This includes a charge of $0.19 per diluted share in connection with the company’s decision to wind down its Icera® modem operations, after a viable buyer failed to emerge.'"
+  },
+  {
+   "quarter": "Q3 FY16",
+   "fy": 2016,
+   "q": 3,
+   "published": "2015-11-06",
+   "source": "NV90",
+   "release": "Nov 5",
+   "release_time": "after the close on Nov 5: 8-K accepted 2015-11-05 16:25 ET; public before the open of the next trading day",
+   "period_end": "2015-10-25",
+   "raw": {
+    "sales_k": 1305000,
+    "sales_prior_k": 1225000,
+    "sales_prev_q_k": 1153000,
+    "gross_profit_k": 734000,
+    "gross_profit_prior_k": 676000,
+    "rd_k": 329000,
+    "rd_prior_k": 340000,
+    "sga_k": 152000,
+    "sga_prior_k": 123000,
+    "op_income_k": 245000,
+    "op_income_prior_k": 213000,
+    "inventory_k": 425000,
+    "inventory_prior_k": 408081
+   },
+   "rows": {
+    "sales": "Revenue | 1,305 | 1,225 | 3,609 | 3,431",
+    "gp": "Gross profit | 734 | 676 | 2,020 | 1,900",
+    "rd": "Research and development | 329 | 340 | 987 | 1,011",
+    "sga": "Sales, general and administrative | 152 | 123 | 441 | 361",
+    "op": "Operating income | 245 | 213 | 495 | 528",
+    "eps": "Diluted | 0.44 | 0.31 | 0.72 | 0.77",
+    "shares": "Diluted | 565 | 558 | 563 | 566",
+    "inv": "Inventories | 425 | 483",
+    "cash": "Cash, cash equivalents and marketable securities | 4,728 | 4,623",
+    "debt": [
+     "Long-term debt | 1,406 | 1,384",
+     "Capital lease obligations, long-term | 11 | 14"
+    ],
+    "restructuring": "Restructuring and other charges | 8 | — | 97 | —"
+   },
+   "rows_unit": "$ millions",
+   "inventory_prior_row": {
+    "source": "NV83",
+    "row": "Inventories | 408,081 | 387,765"
+   },
+   "sales_prev_q_row": {
+    "source": "NV88",
+    "row": "Revenue | 1,153 | 1,103 | 2,304 | 2,206"
+   },
+   "extra_sources": [
+    "NV83",
+    "NV88"
+   ],
+   "sales_b": 1.305,
+   "sales_pct": 6.5,
+   "seq_pct": 13.2,
+   "gross_margin": 56.25,
+   "gross_margin_bp": 106.2,
+   "op_margin": 18.77,
+   "op_margin_bp": 138.6,
+   "opex_pct": 3.9,
+   "opex_gap_pp": -2.6,
+   "inventory_b": 0.425,
+   "inventory_pct": 4.1,
+   "inventory_gap_pp": -2.4,
+   "eps_q": 0.44,
+   "eps_q_prior": 0.31,
+   "diluted_shares_m": 565.0,
+   "cash_b": 4.728,
+   "ltd_b": 1.417,
+   "debt_note": "long-term debt (the 1.00% convertible senior notes due 2018) $1,406M; long-term capital lease obligations $11M",
+   "sales_note": "revenue $1,305M vs $1,225M a year earlier, $1,153M the quarter before",
+   "inventory_note": "inventories $425M (2015-10-25) vs $408.1M a year earlier (Q3 FY15 10-Q)",
+   "eps_note": "GAAP diluted EPS $0.44 vs $0.31; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 565.0M",
+   "next_print": "Q4 FY16 print (February)",
+   "cash_return_text": "'For fiscal 2017, NVIDIA intends to return approximately $1.0 billion to shareholders through ongoing quarterly cash dividends and share repurchases.' (Q3 FY16 release)",
+   "note": "restructuring and other charges $8M stay in operating income, as published; the opex gap takes research and development and SG&A, the two expense lines it has always taken"
+  },
+  {
+   "quarter": "Q4 FY16",
+   "fy": 2016,
+   "q": 4,
+   "published": "2016-02-18",
+   "source": "NV92",
+   "release": "Feb 17",
+   "release_time": "after the close on Feb 17: 8-K accepted 2016-02-17 16:28 ET; public before the open of the next trading day",
+   "period_end": "2016-01-31",
+   "raw": {
+    "sales_k": 1401000,
+    "sales_prior_k": 1251000,
+    "sales_prev_q_k": 1305000,
+    "gross_profit_k": 791000,
+    "gross_profit_prior_k": 699000,
+    "rd_k": 344000,
+    "rd_prior_k": 348000,
+    "sga_k": 161000,
+    "sga_prior_k": 120000,
+    "op_income_k": 252000,
+    "op_income_prior_k": 231000,
+    "inventory_k": 418000,
+    "inventory_prior_k": 483000
+   },
+   "rows": {
+    "sales": "Revenue | 1,401 | 1,251 | 5,010 | 4,682",
+    "gp": "Gross profit | 791 | 699 | 2,811 | 2,599",
+    "rd": "Research and development | 344 | 348 | 1,331 | 1,360",
+    "sga": "Sales, general and administrative | 161 | 120 | 602 | 480",
+    "op": "Operating income | 252 | 231 | 747 | 759",
+    "eps": "Diluted | 0.35 | 0.35 | 1.08 | 1.12",
+    "shares": "Diluted | 593 | 557 | 569 | 563",
+    "inv": "Inventories | 418 | 483",
+    "cash": "Cash, cash equivalents and marketable securities | 5,037 | 4,623",
+    "debt": [
+     "Convertible short-term debt | 1,413 | —",
+     "Capital lease obligations, long-term | 10 | 14"
+    ],
+    "restructuring": "Restructuring and other charges | 34 | — | 131 | —"
+   },
+   "rows_unit": "$ millions",
+   "inventory_prior_row": {
+    "source": "NV92",
+    "row": "Inventories | 418 | 483"
+   },
+   "sales_prev_q_row": {
+    "source": "NV90",
+    "row": "Revenue | 1,305 | 1,225 | 3,609 | 3,431"
+   },
+   "extra_sources": [
+    "NV90"
+   ],
+   "sales_b": 1.401,
+   "sales_pct": 12.0,
+   "seq_pct": 7.4,
+   "gross_margin": 56.46,
+   "gross_margin_bp": 58.4,
+   "op_margin": 17.99,
+   "op_margin_bp": -47.8,
+   "opex_pct": 7.9,
+   "opex_gap_pp": -4.1,
+   "inventory_b": 0.418,
+   "inventory_pct": -13.5,
+   "inventory_gap_pp": -25.4,
+   "eps_q": 0.35,
+   "eps_q_prior": 0.35,
+   "diluted_shares_m": 593.0,
+   "cash_b": 5.037,
+   "ltd_b": 1.423,
+   "debt_note": "convertible short-term debt (the 1.00% notes due 2018) $1,413M; long-term capital lease obligations $10M",
+   "sales_note": "revenue $1,401M vs $1,251M a year earlier, $1,305M the quarter before",
+   "inventory_note": "inventories $418M (2016-01-31) vs $483M a year earlier (the release)",
+   "eps_note": "GAAP diluted EPS $0.35 vs $0.35; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 593.0M",
+   "next_print": "Q1 FY17 print (May)",
+   "cash_return_text": "'For fiscal 2017, NVIDIA intends to return approximately $1.0 billion to shareholders through ongoing quarterly cash dividends and share repurchases.' (Q4 FY16 release)",
+   "note": "restructuring and other charges $34M stay in operating income, as published; the opex gap takes research and development and SG&A, the two expense lines it has always taken",
+   "fy_actual": {
+    "fy": 2016,
+    "fy_label": "FY16",
+    "eps_normalized": 1.08,
+    "revenue_usd_b": 5.01,
+    "diluted_shares_m": 569.0,
+    "normalization_note": "FY16 from the Q4 FY16 release (GAAP)",
+    "op_margin": 14.91,
+    "op_margin_note": "FY16 income from operations $747M / revenue $5,010M (Q4 FY16 release)",
+    "pretax_margin": 14.83,
+    "pretax_margin_note": "FY16 income before income tax $743M / revenue $5,010M (Q4 FY16 release)",
+    "gross_margin": 56.11,
+    "sales_growth": 7.0,
+    "tax_rate": 0.1736,
+    "tax_note": "FY16 income tax expense $129M / pre-tax $743M"
+   }
+  },
+  {
+   "quarter": "Q1 FY17",
+   "fy": 2017,
+   "q": 1,
+   "published": "2016-05-13",
+   "source": "NV94",
+   "release": "May 12",
+   "release_time": "after the close on May 12: 8-K accepted 2016-05-12 16:39 ET; public before the open of the next trading day",
+   "period_end": "2016-05-01",
+   "raw": {
+    "sales_k": 1305000,
+    "sales_prior_k": 1151000,
+    "sales_prev_q_k": 1401000,
+    "gross_profit_k": 751000,
+    "gross_profit_prior_k": 653000,
+    "rd_k": 346000,
+    "rd_prior_k": 339000,
+    "sga_k": 159000,
+    "sga_prior_k": 138000,
+    "op_income_k": 245000,
+    "op_income_prior_k": 176000,
+    "inventory_k": 394000,
+    "inventory_prior_k": 438000
+   },
+   "rows": {
+    "sales": "Revenue | 1,305 | 1,151",
+    "gp": "Gross profit | 751 | 653",
+    "rd": "Research and development | 346 | 339",
+    "sga": "Sales, general and administrative | 159 | 138",
+    "op": "Income from operations | 245 | 176",
+    "eps": "Diluted | 0.33 | 0.24",
+    "shares": "Diluted | 597 | 568",
+    "inv": "Inventories | 394 | 418",
+    "cash": "Cash, cash equivalents and marketable securities | 4,754 | 5,037",
+    "debt": [
+     "Convertible short-term debt | 1,421 | 1,413",
+     "Capital lease obligations, long-term | 9 | 10"
+    ],
+    "restructuring": "Restructuring and other charges | 1 | —"
+   },
+   "rows_unit": "$ millions",
+   "inventory_prior_row": {
+    "source": "NV87",
+    "row": "Inventories | 438 | 483"
+   },
+   "sales_prev_q_row": {
+    "source": "NV92",
+    "row": "Revenue | 1,401 | 1,251 | 5,010 | 4,682"
+   },
+   "extra_sources": [
+    "NV87",
+    "NV92"
+   ],
+   "sales_b": 1.305,
+   "sales_pct": 13.4,
+   "seq_pct": -6.9,
+   "gross_margin": 57.55,
+   "gross_margin_bp": 81.5,
+   "op_margin": 18.77,
+   "op_margin_bp": 348.3,
+   "opex_pct": 5.9,
+   "opex_gap_pp": -7.5,
+   "inventory_b": 0.394,
+   "inventory_pct": -10.0,
+   "inventory_gap_pp": -23.4,
+   "eps_q": 0.33,
+   "eps_q_prior": 0.24,
+   "diluted_shares_m": 597.0,
+   "cash_b": 4.754,
+   "ltd_b": 1.43,
+   "debt_note": "convertible short-term debt (the 1.00% notes due 2018) $1,421M; long-term capital lease obligations $9M",
+   "sales_note": "revenue $1,305M vs $1,151M a year earlier, $1,401M the quarter before",
+   "inventory_note": "inventories $394M (2016-05-01) vs $438M a year earlier (Q1 FY16 10-Q)",
+   "eps_note": "GAAP diluted EPS $0.33 vs $0.24; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 597.0M",
+   "next_print": "Q2 FY17 print (August)",
+   "cash_return_text": "'During the first quarter, NVIDIA entered into a $500 million accelerated share repurchase agreement and paid $62 million in quarterly cash dividends.' (Q1 FY17 release)",
+   "note": "restructuring and other charges $1M stay in operating income, as published; the opex gap takes research and development and SG&A, the two expense lines it has always taken"
+  },
+  {
+   "quarter": "Q2 FY17",
+   "fy": 2017,
+   "q": 2,
+   "published": "2016-08-12",
+   "source": "NV96",
+   "release": "Aug 11",
+   "release_time": "after the close on Aug 11: 8-K accepted 2016-08-11 16:22 ET; public before the open of the next trading day",
+   "period_end": "2016-07-31",
+   "raw": {
+    "sales_k": 1428000,
+    "sales_prior_k": 1153000,
+    "sales_prev_q_k": 1305000,
+    "gross_profit_k": 826000,
+    "gross_profit_prior_k": 634000,
+    "rd_k": 350000,
+    "rd_prior_k": 320000,
+    "sga_k": 157000,
+    "sga_prior_k": 149000,
+    "op_income_k": 317000,
+    "op_income_prior_k": 76000,
+    "inventory_k": 521000,
+    "inventory_prior_k": 441000
+   },
+   "rows": {
+    "sales": "Revenue | 1,428 | 1,153 | 2,733 | 2,304",
+    "gp": "Gross profit | 826 | 634 | 1,577 | 1,286",
+    "rd": "Research and development | 350 | 320 | 697 | 658",
+    "sga": "Sales, general and administrative | 157 | 149 | 316 | 289",
+    "op": "Income from operations | 317 | 76 | 561 | 250",
+    "eps": "Diluted | 0.40 | 0.05 | 0.73 | 0.28",
+    "shares": "Diluted | 631 | 556 | 617 | 563",
+    "inv": "Inventories | 521 | 418",
+    "cash": "Cash, cash equivalents and marketable securities | 4,879 | 5,037",
+    "debt": [
+     "Convertible short-term debt | 1,428 | 1,413",
+     "Capital lease obligations, long-term | 8 | 10"
+    ],
+    "restructuring": "Restructuring and other charges | 2 | 89 | 3 | 89"
+   },
+   "rows_unit": "$ millions",
+   "inventory_prior_row": {
+    "source": "NV89",
+    "row": "Inventories | 441 | 483"
+   },
+   "sales_prev_q_row": {
+    "source": "NV94",
+    "row": "Revenue | 1,305 | 1,151"
+   },
+   "extra_sources": [
+    "NV89",
+    "NV94"
+   ],
+   "sales_b": 1.428,
+   "sales_pct": 23.9,
+   "seq_pct": 9.4,
+   "gross_margin": 57.84,
+   "gross_margin_bp": 285.6,
+   "op_margin": 22.2,
+   "op_margin_bp": 1560.7,
+   "opex_pct": 8.1,
+   "opex_gap_pp": -15.7,
+   "inventory_b": 0.521,
+   "inventory_pct": 18.1,
+   "inventory_gap_pp": -5.7,
+   "eps_q": 0.4,
+   "eps_q_prior": 0.05,
+   "diluted_shares_m": 631.0,
+   "cash_b": 4.879,
+   "ltd_b": 1.436,
+   "debt_note": "convertible short-term debt (the 1.00% notes due 2018) $1,428M; long-term capital lease obligations $8M",
+   "sales_note": "revenue $1,428M vs $1,153M a year earlier, $1,305M the quarter before",
+   "inventory_note": "inventories $521M (2016-07-31) vs $441M a year earlier (Q2 FY16 10-Q)",
+   "eps_note": "GAAP diluted EPS $0.40 vs $0.05; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 631.0M",
+   "next_print": "Q3 FY17 print (November)",
+   "cash_return_text": "'During the first half of fiscal 2017, NVIDIA paid $509 million in share repurchases and $124 million in cash dividends.' (Q2 FY17 release)",
+   "note": "restructuring and other charges $2M stay in operating income, as published; the opex gap takes research and development and SG&A, the two expense lines it has always taken"
+  },
+  {
+   "quarter": "Q3 FY17",
+   "fy": 2017,
+   "q": 3,
+   "published": "2016-11-11",
+   "source": "NV98",
+   "release": "Nov 10",
+   "release_time": "after the close on Nov 10: 8-K accepted 2016-11-10 16:21 ET; public before the open of the next trading day",
+   "period_end": "2016-10-30",
+   "raw": {
+    "sales_k": 2004000,
+    "sales_prior_k": 1305000,
+    "sales_prev_q_k": 1428000,
+    "gross_profit_k": 1183000,
+    "gross_profit_prior_k": 734000,
+    "rd_k": 373000,
+    "rd_prior_k": 329000,
+    "sga_k": 171000,
+    "sga_prior_k": 152000,
+    "op_income_k": 639000,
+    "op_income_prior_k": 245000,
+    "inventory_k": 679000,
+    "inventory_prior_k": 425000
+   },
+   "rows": {
+    "sales": "Revenue | 2,004 | 1,305 | 4,737 | 3,609",
+    "gp": "Gross profit | 1,183 | 734 | 2,760 | 2,020",
+    "rd": "Research and development | 373 | 329 | 1,069 | 987",
+    "sga": "Sales, general and administrative | 171 | 152 | 487 | 441",
+    "op": "Income from operations | 639 | 245 | 1,201 | 495",
+    "eps": "Diluted | 0.83 | 0.44 | 1.59 | 0.72",
+    "shares": "Diluted | 653 | 565 | 636 | 563",
+    "inv": "Inventories | 679 | 418",
+    "cash": "Cash, cash equivalents and marketable securities | 6,671 | 5,037",
+    "debt": [
+     "Long-term debt | 1,982 | —",
+     "Convertible short-term debt | 1,011 | 1,413",
+     "Capital lease obligations, long-term | 7 | 10"
+    ],
+    "restructuring": "Restructuring and other charges | — | 8 | 3 | 97"
+   },
+   "rows_unit": "$ millions",
+   "inventory_prior_row": {
+    "source": "NV91",
+    "row": "Inventories | 425 | 483"
+   },
+   "sales_prev_q_row": {
+    "source": "NV96",
+    "row": "Revenue | 1,428 | 1,153 | 2,733 | 2,304"
+   },
+   "extra_sources": [
+    "NV91",
+    "NV96"
+   ],
+   "sales_b": 2.004,
+   "sales_pct": 53.6,
+   "seq_pct": 40.3,
+   "gross_margin": 59.03,
+   "gross_margin_bp": 278.7,
+   "op_margin": 31.89,
+   "op_margin_bp": 1311.2,
+   "opex_pct": 13.1,
+   "opex_gap_pp": -40.5,
+   "inventory_b": 0.679,
+   "inventory_pct": 59.8,
+   "inventory_gap_pp": 6.2,
+   "eps_q": 0.83,
+   "eps_q_prior": 0.44,
+   "diluted_shares_m": 653.0,
+   "cash_b": 6.671,
+   "ltd_b": 3.0,
+   "debt_note": "long-term debt (the notes due 2021 and 2026) $1,982M; convertible short-term debt (the 1.00% notes due 2018) $1,011M; long-term capital lease obligations $7M",
+   "sales_note": "revenue $2,004M vs $1,305M a year earlier, $1,428M the quarter before",
+   "inventory_note": "inventories $679M (2016-10-30) vs $425M a year earlier (Q3 FY16 10-Q)",
+   "eps_note": "GAAP diluted EPS $0.83 vs $0.44; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 653.0M",
+   "next_print": "Q4 FY17 print (February)",
+   "cash_return_text": "'For fiscal 2018, NVIDIA intends to return $1.25 billion to shareholders through ongoing quarterly cash dividends and share repurchases.' (Q3 FY17 release)",
+   "note": null
+  },
+  {
+   "quarter": "Q4 FY17",
+   "fy": 2017,
+   "q": 4,
+   "published": "2017-02-10",
+   "source": "NV100",
+   "release": "Feb 9",
+   "release_time": "after the close on Feb 9: 8-K accepted 2017-02-09 16:23 ET; public before the open of the next trading day",
+   "period_end": "2017-01-29",
+   "raw": {
+    "sales_k": 2173000,
+    "sales_prior_k": 1401000,
+    "sales_prev_q_k": 2004000,
+    "gross_profit_k": 1303000,
+    "gross_profit_prior_k": 791000,
+    "rd_k": 394000,
+    "rd_prior_k": 344000,
+    "sga_k": 176000,
+    "sga_prior_k": 161000,
+    "op_income_k": 733000,
+    "op_income_prior_k": 252000,
+    "inventory_k": 794000,
+    "inventory_prior_k": 418000
+   },
+   "rows": {
+    "sales": "Revenue | 2,173 | 1,401 | 6,910 | 5,010",
+    "gp": "Gross profit | 1,303 | 791 | 4,063 | 2,811",
+    "rd": "Research and development | 394 | 344 | 1,463 | 1,331",
+    "sga": "Sales, general and administrative | 176 | 161 | 663 | 602",
+    "op": "Income from operations | 733 | 252 | 1,934 | 747",
+    "eps": "Diluted | 0.99 | 0.35 | 2.57 | 1.08",
+    "shares": "Diluted | 660 | 593 | 649 | 569",
+    "inv": "Inventories | 794 | 418",
+    "cash": "Cash, cash equivalents and marketable securities | 6,798 | 5,037",
+    "debt": [
+     "Long-term debt | 1,983 | —",
+     "Convertible short-term debt | 796 | 1,413",
+     "Capital lease obligations, long-term | 6 | 10"
+    ],
+    "restructuring": "Restructuring and other charges | — | 34 | 3 | 131"
+   },
+   "rows_unit": "$ millions",
+   "inventory_prior_row": {
+    "source": "NV100",
+    "row": "Inventories | 794 | 418"
+   },
+   "sales_prev_q_row": {
+    "source": "NV98",
+    "row": "Revenue | 2,004 | 1,305 | 4,737 | 3,609"
+   },
+   "extra_sources": [
+    "NV98"
+   ],
+   "sales_b": 2.173,
+   "sales_pct": 55.1,
+   "seq_pct": 8.4,
+   "gross_margin": 59.96,
+   "gross_margin_bp": 350.4,
+   "op_margin": 33.73,
+   "op_margin_bp": 1574.5,
+   "opex_pct": 12.9,
+   "opex_gap_pp": -42.2,
+   "inventory_b": 0.794,
+   "inventory_pct": 90.0,
+   "inventory_gap_pp": 34.8,
+   "eps_q": 0.99,
+   "eps_q_prior": 0.35,
+   "diluted_shares_m": 660.0,
+   "cash_b": 6.798,
+   "ltd_b": 2.785,
+   "debt_note": "long-term debt (the notes due 2021 and 2026) $1,983M; convertible short-term debt (the 1.00% notes due 2018) $796M; long-term capital lease obligations $6M",
+   "sales_note": "revenue $2,173M vs $1,401M a year earlier, $2,004M the quarter before",
+   "inventory_note": "inventories $794M (2017-01-29) vs $418M a year earlier (the release)",
+   "eps_note": "GAAP diluted EPS $0.99 vs $0.35; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 660.0M",
+   "next_print": "Q1 FY18 print (May)",
+   "cash_return_text": "'For fiscal 2018, NVIDIA intends to return $1.25 billion to shareholders through ongoing quarterly cash dividends and share repurchases.' (Q4 FY17 release)",
+   "note": null,
+   "fy_actual": {
+    "fy": 2017,
+    "fy_label": "FY17",
+    "eps_normalized": 2.57,
+    "revenue_usd_b": 6.91,
+    "diluted_shares_m": 649.0,
+    "normalization_note": "FY17 from the Q4 FY17 release (GAAP)",
+    "op_margin": 27.99,
+    "op_margin_note": "FY17 income from operations $1,934M / revenue $6,910M (Q4 FY17 release)",
+    "pretax_margin": 27.57,
+    "pretax_margin_note": "FY17 income before income tax $1,905M / revenue $6,910M (Q4 FY17 release)",
+    "gross_margin": 58.8,
+    "sales_growth": 37.9,
+    "tax_rate": 0.1255,
+    "tax_note": "FY17 income tax expense $239M / pre-tax $1,905M"
+   }
+  },
+  {
+   "quarter": "Q1 FY18",
+   "fy": 2018,
+   "q": 1,
+   "published": "2017-05-10",
+   "source": "NV102",
+   "release": "May 9",
+   "release_time": "after the close on May 9: 8-K accepted 2017-05-09 16:21 ET; public before the open of the next trading day",
+   "period_end": "2017-04-30",
+   "raw": {
+    "sales_k": 1937000,
+    "sales_prior_k": 1305000,
+    "sales_prev_q_k": 2173000,
+    "gross_profit_k": 1150000,
+    "gross_profit_prior_k": 751000,
+    "rd_k": 411000,
+    "rd_prior_k": 346000,
+    "sga_k": 185000,
+    "sga_prior_k": 159000,
+    "op_income_k": 554000,
+    "op_income_prior_k": 245000,
+    "inventory_k": 821000,
+    "inventory_prior_k": 394000
+   },
+   "rows": {
+    "sales": "Revenue | 1,937 | 1,305",
+    "gp": "Gross profit | 1,150 | 751",
+    "rd": "Research and development | 411 | 346",
+    "sga": "Sales, general and administrative | 185 | 159",
+    "op": "Income from operations | 554 | 245",
+    "eps": "Diluted | 0.79 | 0.35",
+    "shares": "Diluted | 641 | 599",
+    "inv": "Inventories | 821 | 794",
+    "cash": "Cash, cash equivalents and marketable securities | 6,206 | 6,798",
+    "debt": [
+     "Long-term debt | 1,984 | 1,983",
+     "Convertible short-term debt | 215 | 796",
+     "Capital lease obligations, long-term | 4 | 6"
+    ],
+    "restructuring": "Restructuring and other charges | — | 1"
+   },
+   "rows_unit": "$ millions",
+   "inventory_prior_row": {
+    "source": "NV95",
+    "row": "Inventories | 394 | 418"
+   },
+   "sales_prev_q_row": {
+    "source": "NV100",
+    "row": "Revenue | 2,173 | 1,401 | 6,910 | 5,010"
+   },
+   "extra_sources": [
+    "NV95",
+    "NV100",
+    "NV99"
+   ],
+   "sales_b": 1.937,
+   "sales_pct": 48.4,
+   "seq_pct": -10.9,
+   "gross_margin": 59.37,
+   "gross_margin_bp": 182.2,
+   "op_margin": 28.6,
+   "op_margin_bp": 982.7,
+   "opex_pct": 18.0,
+   "opex_gap_pp": -30.4,
+   "inventory_b": 0.821,
+   "inventory_pct": 108.4,
+   "inventory_gap_pp": 59.9,
+   "eps_q": 0.79,
+   "eps_q_prior": 0.35,
+   "diluted_shares_m": 641.0,
+   "cash_b": 6.206,
+   "ltd_b": 2.203,
+   "debt_note": "long-term debt (the notes due 2021 and 2026) $1,984M; convertible short-term debt (the 1.00% notes due 2018) $215M; long-term capital lease obligations $4M",
+   "sales_note": "revenue $1,937M vs $1,305M a year earlier, $2,173M the quarter before",
+   "inventory_note": "inventories $821M (2017-04-30) vs $394M a year earlier (Q1 FY17 10-Q)",
+   "eps_note": "GAAP diluted EPS $0.79 vs $0.35; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 641.0M",
+   "next_print": "Q2 FY18 print (August)",
+   "cash_return_text": "'For fiscal 2018, NVIDIA intends to return $1.25 billion to shareholders through ongoing quarterly cash dividends and share repurchases.' (Q1 FY18 release)",
+   "note": "the year-ago quarter's EPS ($0.35 here, $0.33 in the Q1 FY17 release) reflects the stock-based compensation update NVIDIA adopted early in Q3 FY17, back to the start of fiscal 2017: 'We recorded excess tax benefits within income tax expense, rather than in APIC, of $12 million, $8 million and $42 million for the first, second and third quarters of fiscal year 2017, respectively.' (Q3 FY17 10-Q); revenue, margins, expenses and inventories, the signals' inputs, are unchanged"
+  },
+  {
+   "quarter": "Q2 FY18",
+   "fy": 2018,
+   "q": 2,
+   "published": "2017-08-11",
+   "source": "NV103",
+   "release": "Aug 10",
+   "release_time": "after the close on Aug 10: 8-K accepted 2017-08-10 16:23 ET; public before the open of the next trading day",
+   "period_end": "2017-07-30",
+   "raw": {
+    "sales_k": 2230000,
+    "sales_prior_k": 1428000,
+    "sales_prev_q_k": 1937000,
+    "gross_profit_k": 1302000,
+    "gross_profit_prior_k": 826000,
+    "rd_k": 416000,
+    "rd_prior_k": 350000,
+    "sga_k": 198000,
+    "sga_prior_k": 157000,
+    "op_income_k": 688000,
+    "op_income_prior_k": 317000,
+    "inventory_k": 855000,
+    "inventory_prior_k": 521000
+   },
+   "rows": {
+    "sales": "Revenue | 2,230 | 1,428 | 4,167 | 2,733",
+    "gp": "Gross profit | 1,302 | 826 | 2,452 | 1,577",
+    "rd": "Research and development | 416 | 350 | 827 | 697",
+    "sga": "Sales, general and administrative | 198 | 157 | 383 | 316",
+    "op": "Income from operations | 688 | 317 | 1,242 | 561",
+    "eps": "Diluted | 0.92 | 0.41 | 1.71 | 0.76",
+    "shares": "Diluted | 633 | 634 | 637 | 620",
+    "inv": "Inventories | 855 | 794",
+    "cash": "Cash, cash equivalents and marketable securities | 5,877 | 6,798",
+    "debt": [
+     "Long-term debt | 1,984 | 1,983",
+     "Convertible short-term debt | 84 | 796",
+     "Capital lease obligations, long-term | 3 | 6"
+    ],
+    "restructuring": "Restructuring and other charges | — | 2 | — | 3"
+   },
+   "rows_unit": "$ millions",
+   "inventory_prior_row": {
+    "source": "NV97",
+    "row": "Inventories | 521 | 418"
+   },
+   "sales_prev_q_row": {
+    "source": "NV102",
+    "row": "Revenue | 1,937 | 1,305"
+   },
+   "extra_sources": [
+    "NV97",
+    "NV102",
+    "NV99"
+   ],
+   "sales_b": 2.23,
+   "sales_pct": 56.2,
+   "seq_pct": 15.1,
+   "gross_margin": 58.39,
+   "gross_margin_bp": 54.3,
+   "op_margin": 30.85,
+   "op_margin_bp": 865.3,
+   "opex_pct": 21.1,
+   "opex_gap_pp": -35.1,
+   "inventory_b": 0.855,
+   "inventory_pct": 64.1,
+   "inventory_gap_pp": 7.9,
+   "eps_q": 0.92,
+   "eps_q_prior": 0.41,
+   "diluted_shares_m": 633.0,
+   "cash_b": 5.877,
+   "ltd_b": 2.071,
+   "debt_note": "long-term debt (the notes due 2021 and 2026) $1,984M; convertible short-term debt (the 1.00% notes due 2018) $84M; long-term capital lease obligations $3M",
+   "sales_note": "revenue $2,230M vs $1,428M a year earlier, $1,937M the quarter before",
+   "inventory_note": "inventories $855M (2017-07-30) vs $521M a year earlier (Q2 FY17 10-Q)",
+   "eps_note": "GAAP diluted EPS $0.92 vs $0.41; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 633.0M",
+   "next_print": "Q3 FY18 print (November)",
+   "cash_return_text": "'During the first half of fiscal 2018, NVIDIA paid $758 million in share repurchases and $166 million in cash dividends.' (Q2 FY18 release)",
+   "note": "the year-ago quarter's EPS ($0.41 here, $0.40 in the Q2 FY17 release) reflects the stock-based compensation update NVIDIA adopted early in Q3 FY17, back to the start of fiscal 2017: 'We recorded excess tax benefits within income tax expense, rather than in APIC, of $12 million, $8 million and $42 million for the first, second and third quarters of fiscal year 2017, respectively.' (Q3 FY17 10-Q); revenue, margins, expenses and inventories, the signals' inputs, are unchanged"
+  },
+  {
+   "quarter": "Q3 FY18",
+   "fy": 2018,
+   "q": 3,
+   "published": "2017-11-10",
+   "source": "NV104",
+   "release": "Nov 9",
+   "release_time": "after the close on Nov 9: 8-K accepted 2017-11-09 16:23 ET; public before the open of the next trading day",
+   "period_end": "2017-10-29",
+   "raw": {
+    "sales_k": 2636000,
+    "sales_prior_k": 2004000,
+    "sales_prev_q_k": 2230000,
+    "gross_profit_k": 1569000,
+    "gross_profit_prior_k": 1183000,
+    "rd_k": 462000,
+    "rd_prior_k": 373000,
+    "sga_k": 212000,
+    "sga_prior_k": 171000,
+    "op_income_k": 895000,
+    "op_income_prior_k": 639000,
+    "inventory_k": 857000,
+    "inventory_prior_k": 679000
+   },
+   "rows": {
+    "sales": "Revenue | 2,636 | 2,004 | 6,803 | 4,737",
+    "gp": "Gross profit | 1,569 | 1,183 | 4,021 | 2,760",
+    "rd": "Research and development | 462 | 373 | 1,290 | 1,069",
+    "sga": "Sales, general and administrative | 212 | 171 | 594 | 487",
+    "op": "Income from operations | 895 | 639 | 2,137 | 1,201",
+    "eps": "Diluted | 1.33 | 0.83 | 3.05 | 1.59",
+    "shares": "Diluted | 628 | 653 | 633 | 636",
+    "inv": "Inventories | 857 | 794",
+    "cash": "Cash, cash equivalents and marketable securities | 6,320 | 6,798",
+    "debt": [
+     "Long-term debt | 1,985 | 1,983",
+     "Convertible short-term debt | 23 | 796",
+     "Capital lease obligations, long-term | 1 | 6"
+    ]
+   },
+   "rows_unit": "$ millions",
+   "inventory_prior_row": {
+    "source": "NV99",
+    "row": "Inventories | 679 | 418"
+   },
+   "sales_prev_q_row": {
+    "source": "NV103",
+    "row": "Revenue | 2,230 | 1,428 | 4,167 | 2,733"
+   },
+   "extra_sources": [
+    "NV99",
+    "NV103"
+   ],
+   "sales_b": 2.636,
+   "sales_pct": 31.5,
+   "seq_pct": 18.2,
+   "gross_margin": 59.52,
+   "gross_margin_bp": 49.0,
+   "op_margin": 33.95,
+   "op_margin_bp": 206.7,
+   "opex_pct": 23.9,
+   "opex_gap_pp": -7.6,
+   "inventory_b": 0.857,
+   "inventory_pct": 26.2,
+   "inventory_gap_pp": -5.3,
+   "eps_q": 1.33,
+   "eps_q_prior": 0.83,
+   "diluted_shares_m": 628.0,
+   "cash_b": 6.32,
+   "ltd_b": 2.009,
+   "debt_note": "long-term debt (the notes due 2021 and 2026) $1,985M; convertible short-term debt (the 1.00% notes due 2018) $23M; long-term capital lease obligations $1M",
+   "sales_note": "revenue $2,636M vs $2,004M a year earlier, $2,230M the quarter before",
+   "inventory_note": "inventories $857M (2017-10-29) vs $679M a year earlier (Q3 FY17 10-Q)",
+   "eps_note": "GAAP diluted EPS $1.33 vs $0.83; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 628.0M",
+   "next_print": "Q4 FY18 print (February)",
+   "cash_return_text": "'For fiscal 2019, NVIDIA intends to return $1.25 billion to shareholders through ongoing quarterly cash dividends and share repurchases.' (Q3 FY18 release)",
+   "note": null
   }
  ],
  "guides": [
@@ -4290,6 +6501,374 @@
    ],
    "quote": "Revenue is expected to be $1.05 billion, plus or minus two percent.",
    "display": "'GAAP and non-GAAP gross margins are expected to be approximately 54.2 percent and 54.5 percent, respectively.'"
+  },
+  {
+   "fy": 2015,
+   "published": "2014-02-13",
+   "source": "NV72",
+   "doc": "Q4 FY14 release",
+   "quarter": "Q1 FY15",
+   "level_stated": true,
+   "level_center_m": 1050.0,
+   "level_pm_pct": 2.0,
+   "level_m": [
+    1029.0,
+    1071.0
+   ],
+   "prior_label": "Q1 FY14",
+   "prior_sales_m": 954.739,
+   "prior_source": "NV66",
+   "yoy_pct": [
+    7.8,
+    12.2
+   ],
+   "quote": "Revenue is expected to be $1.05 billion, plus or minus two percent.",
+   "display": "'GAAP and non-GAAP gross margins are expected to be approximately 54.2 percent and 54.5 percent, respectively.'"
+  },
+  {
+   "fy": 2015,
+   "published": "2014-05-09",
+   "source": "NV78",
+   "doc": "Q1 FY15 release of May 8",
+   "quarter": "Q2 FY15",
+   "level_stated": true,
+   "level_center_m": 1100.0,
+   "level_pm_pct": 2.0,
+   "level_m": [
+    1078.0,
+    1122.0
+   ],
+   "prior_label": "Q2 FY14",
+   "prior_sales_m": 977.238,
+   "prior_source": "NV68",
+   "yoy_pct": [
+    10.3,
+    14.8
+   ],
+   "quote": "Revenue is expected to be $1.1 billion, plus or minus two percent.",
+   "display": "'GAAP and non-GAAP margins are expected to be approximately 53.7 percent and 54.0 percent, respectively.'"
+  },
+  {
+   "fy": 2015,
+   "published": "2014-08-08",
+   "source": "NV80",
+   "doc": "Q2 FY15 release",
+   "quarter": "Q3 FY15",
+   "level_stated": true,
+   "level_center_m": 1200.0,
+   "level_pm_pct": 2.0,
+   "level_m": [
+    1176.0,
+    1224.0
+   ],
+   "prior_label": "Q3 FY14",
+   "prior_sales_m": 1053.967,
+   "prior_source": "NV70",
+   "yoy_pct": [
+    11.6,
+    16.1
+   ],
+   "quote": "Revenue is expected to be $1.20 billion, plus or minus two percent.",
+   "display": "'GAAP and non-GAAP gross margins are expected to be 55.2 percent and 55.5 percent, respectively, plus or minus 50 basis points.'"
+  },
+  {
+   "fy": 2015,
+   "published": "2014-11-07",
+   "source": "NV82",
+   "doc": "Q3 FY15 release",
+   "quarter": "Q4 FY15",
+   "level_stated": true,
+   "level_center_m": 1200.0,
+   "level_pm_pct": 2.0,
+   "level_m": [
+    1176.0,
+    1224.0
+   ],
+   "prior_label": "Q4 FY14",
+   "prior_sales_m": 1144.218,
+   "prior_source": "NV72",
+   "yoy_pct": [
+    2.8,
+    7.0
+   ],
+   "quote": "Revenue is expected to be $1.20 billion, plus or minus two percent.",
+   "display": "'GAAP and non-GAAP gross margins are expected to be 55.2 percent and 55.5 percent, respectively, plus or minus 50 basis points.'"
+  },
+  {
+   "fy": 2016,
+   "published": "2015-02-12",
+   "source": "NV84",
+   "doc": "Q4 FY15 release",
+   "quarter": "Q1 FY16",
+   "level_stated": true,
+   "level_center_m": 1160.0,
+   "level_pm_pct": 2.0,
+   "level_m": [
+    1136.8,
+    1183.2
+   ],
+   "prior_label": "Q1 FY15",
+   "prior_sales_m": 1102.787,
+   "prior_source": "NV77",
+   "yoy_pct": [
+    3.1,
+    7.3
+   ],
+   "quote": "Revenue is expected to be $1.16 billion, plus or minus two percent.",
+   "display": "'GAAP and non-GAAP gross margins are expected to be 56.2 percent and 56.5 percent, respectively, plus or minus 50 basis points.'"
+  },
+  {
+   "fy": 2016,
+   "published": "2015-05-08",
+   "source": "NV86",
+   "doc": "Q1 FY16 release",
+   "quarter": "Q2 FY16",
+   "level_stated": true,
+   "level_center_m": 1010.0,
+   "level_pm_pct": 2.0,
+   "level_m": [
+    989.8,
+    1030.2
+   ],
+   "prior_label": "Q2 FY15",
+   "prior_sales_m": 1102.824,
+   "prior_source": "NV80",
+   "yoy_pct": [
+    -10.2,
+    -6.6
+   ],
+   "quote": "Revenue is expected to be $1.01 billion, plus or minus two percent.",
+   "display": "'GAAP and non-GAAP gross margins are expected to be 55.7 percent and 56.0 percent, respectively, plus or minus 50 basis points.'; for the year: 'Non-GAAP operating expenses in fiscal 2016 are expected to be approximately flat with the previous year, excluding litigation costs, which are anticipated to be in the range of $70 million to $90 million as the company defends its intellectual property.' (no fiscal-year revenue, EPS or margin guide)"
+  },
+  {
+   "fy": 2016,
+   "published": "2015-08-07",
+   "source": "NV88",
+   "doc": "Q2 FY16 release",
+   "quarter": "Q3 FY16",
+   "level_stated": true,
+   "level_center_m": 1180.0,
+   "level_pm_pct": 2.0,
+   "level_m": [
+    1156.4,
+    1203.6
+   ],
+   "prior_label": "Q3 FY15",
+   "prior_sales_m": 1225.382,
+   "prior_source": "NV82",
+   "yoy_pct": [
+    -5.6,
+    -1.8
+   ],
+   "quote": "Revenue is expected to be $1.18 billion, plus or minus two percent.",
+   "display": "'GAAP and non-GAAP gross margins are expected to be 56.2 percent and 56.5 percent, respectively, plus or minus 50 basis points.'"
+  },
+  {
+   "fy": 2016,
+   "published": "2015-11-06",
+   "source": "NV90",
+   "doc": "Q3 FY16 release",
+   "quarter": "Q4 FY16",
+   "level_stated": true,
+   "level_center_m": 1300.0,
+   "level_pm_pct": 2.0,
+   "level_m": [
+    1274.0,
+    1326.0
+   ],
+   "prior_label": "Q4 FY15",
+   "prior_sales_m": 1250.514,
+   "prior_source": "NV84",
+   "yoy_pct": [
+    1.9,
+    6.0
+   ],
+   "quote": "Revenue is expected to be $1.30 billion, plus or minus two percent.",
+   "display": "'GAAP and non-GAAP gross margins are expected to be 56.7 percent and 57.0 percent, respectively, plus or minus 50 basis points.'"
+  },
+  {
+   "fy": 2017,
+   "published": "2016-02-18",
+   "source": "NV92",
+   "doc": "Q4 FY16 release",
+   "quarter": "Q1 FY17",
+   "level_stated": true,
+   "level_center_m": 1260.0,
+   "level_pm_pct": 2.0,
+   "level_m": [
+    1234.8,
+    1285.2
+   ],
+   "prior_label": "Q1 FY16",
+   "prior_sales_m": 1151,
+   "prior_source": "NV86",
+   "yoy_pct": [
+    7.3,
+    11.7
+   ],
+   "quote": "Revenue is expected to be $1.26 billion, plus or minus two percent.",
+   "display": "'GAAP and non-GAAP gross margins are expected to be 57.2 percent and 57.5 percent, respectively, plus or minus 50 basis points.'"
+  },
+  {
+   "fy": 2017,
+   "published": "2016-05-13",
+   "source": "NV94",
+   "doc": "Q1 FY17 release",
+   "quarter": "Q2 FY17",
+   "level_stated": true,
+   "level_center_m": 1350.0,
+   "level_pm_pct": 2.0,
+   "level_m": [
+    1323.0,
+    1377.0
+   ],
+   "prior_label": "Q2 FY16",
+   "prior_sales_m": 1153,
+   "prior_source": "NV88",
+   "yoy_pct": [
+    14.7,
+    19.4
+   ],
+   "quote": "Revenue is expected to be $1.35 billion, plus or minus two percent.",
+   "display": "'GAAP and non-GAAP gross margins are expected to be 57.7 percent and 58.0 percent, respectively, plus or minus 50 basis points.'"
+  },
+  {
+   "fy": 2017,
+   "published": "2016-08-12",
+   "source": "NV96",
+   "doc": "Q2 FY17 release",
+   "quarter": "Q3 FY17",
+   "level_stated": true,
+   "level_center_m": 1680.0,
+   "level_pm_pct": 2.0,
+   "level_m": [
+    1646.4,
+    1713.6
+   ],
+   "prior_label": "Q3 FY16",
+   "prior_sales_m": 1305,
+   "prior_source": "NV90",
+   "yoy_pct": [
+    26.2,
+    31.3
+   ],
+   "quote": "Revenue is expected to be $1.68 billion, plus or minus two percent.",
+   "display": "'GAAP and non-GAAP gross margins are expected to be 57.8 percent and 58.0 percent, respectively, plus or minus 50 basis points.'"
+  },
+  {
+   "fy": 2017,
+   "published": "2016-11-11",
+   "source": "NV98",
+   "doc": "Q3 FY17 release",
+   "quarter": "Q4 FY17",
+   "level_stated": true,
+   "level_center_m": 2100.0,
+   "level_pm_pct": 2.0,
+   "level_m": [
+    2058.0,
+    2142.0
+   ],
+   "prior_label": "Q4 FY16",
+   "prior_sales_m": 1401,
+   "prior_source": "NV92",
+   "yoy_pct": [
+    46.9,
+    52.9
+   ],
+   "quote": "Revenue is expected to be $2.10 billion, plus or minus two percent.",
+   "display": "'GAAP and non-GAAP gross margins are expected to be 59.0 percent and 59.2 percent, respectively, plus or minus 50 basis points.'"
+  },
+  {
+   "fy": 2018,
+   "published": "2017-02-10",
+   "source": "NV100",
+   "doc": "Q4 FY17 release",
+   "quarter": "Q1 FY18",
+   "level_stated": true,
+   "level_center_m": 1900.0,
+   "level_pm_pct": 2.0,
+   "level_m": [
+    1862.0,
+    1938.0
+   ],
+   "prior_label": "Q1 FY17",
+   "prior_sales_m": 1305,
+   "prior_source": "NV94",
+   "yoy_pct": [
+    42.7,
+    48.5
+   ],
+   "quote": "Revenue is expected to be $1.90 billion, plus or minus two percent.",
+   "display": "'GAAP and non-GAAP gross margins are expected to be 59.5 percent and 59.7 percent, respectively, plus or minus 50 basis points.'"
+  },
+  {
+   "fy": 2018,
+   "published": "2017-05-10",
+   "source": "NV102",
+   "doc": "Q1 FY18 release",
+   "quarter": "Q2 FY18",
+   "level_stated": true,
+   "level_center_m": 1950.0,
+   "level_pm_pct": 2.0,
+   "level_m": [
+    1911.0,
+    1989.0
+   ],
+   "prior_label": "Q2 FY17",
+   "prior_sales_m": 1428,
+   "prior_source": "NV96",
+   "yoy_pct": [
+    33.8,
+    39.3
+   ],
+   "quote": "Revenue is expected to be $1.95 billion, plus or minus two percent.",
+   "display": "'GAAP and non-GAAP gross margins are expected to be 58.4 percent and 58.6 percent, respectively, plus or minus 50 basis points.'"
+  },
+  {
+   "fy": 2018,
+   "published": "2017-08-11",
+   "source": "NV103",
+   "doc": "Q2 FY18 release",
+   "quarter": "Q3 FY18",
+   "level_stated": true,
+   "level_center_m": 2350.0,
+   "level_pm_pct": 2.0,
+   "level_m": [
+    2303.0,
+    2397.0
+   ],
+   "prior_label": "Q3 FY17",
+   "prior_sales_m": 2004,
+   "prior_source": "NV98",
+   "yoy_pct": [
+    14.9,
+    19.6
+   ],
+   "quote": "Revenue is expected to be $2.35 billion, plus or minus two percent.",
+   "display": "'GAAP and non-GAAP gross margins are expected to be 58.6 percent and 58.8 percent, respectively, plus or minus 50 basis points.'"
+  },
+  {
+   "fy": 2018,
+   "published": "2017-11-10",
+   "source": "NV104",
+   "doc": "Q3 FY18 release",
+   "quarter": "Q4 FY18",
+   "level_stated": true,
+   "level_center_m": 2650.0,
+   "level_pm_pct": 2.0,
+   "level_m": [
+    2597.0,
+    2703.0
+   ],
+   "prior_label": "Q4 FY17",
+   "prior_sales_m": 2173,
+   "prior_source": "NV100",
+   "yoy_pct": [
+    19.5,
+    24.4
+   ],
+   "quote": "Revenue is expected to be $2.65 billion, plus or minus two percent.",
+   "display": "'GAAP and non-GAAP gross margins are expected to be 59.7 percent and 60.0 percent, respectively, plus or minus 50 basis points.'"
   }
  ],
  "dividends": [
@@ -4304,6 +6883,30 @@
    "source": "NV70",
    "quarterly": 0.085,
    "note": "$0.085 quarterly ('NVIDIA also announced a 13 percent increase in the quarterly cash dividend to $0.085 per share ($0.34 per share on an annual basis) from $0.075 per share ($0.30 per share on an annual basis).', Q3 FY14 release)"
+  },
+  {
+   "published": "2015-05-08",
+   "source": "NV86",
+   "quarterly": 0.0975,
+   "note": "$0.0975 quarterly ('It has announced a 15 percent increase in its quarterly cash dividend to $0.0975 per share, from $0.085 per share.', Q1 FY16 release)"
+  },
+  {
+   "published": "2015-11-06",
+   "source": "NV90",
+   "quarterly": 0.115,
+   "note": "$0.115 quarterly ('The company announced an 18 percent increase in its quarterly cash dividend to $0.115 per share from $0.0975 per share.', Q3 FY16 release)"
+  },
+  {
+   "published": "2016-11-11",
+   "source": "NV98",
+   "quarterly": 0.14,
+   "note": "$0.14 quarterly ('The company announced a 22 percent increase in its quarterly cash dividend to $0.14 per share from $0.115 per share, to be paid with its next quarterly cash dividend on December 19, 2016, to all shareholders of record on November 28, 2016.', Q3 FY17 release)"
+  },
+  {
+   "published": "2017-11-10",
+   "source": "NV104",
+   "quarterly": 0.15,
+   "note": "$0.15 quarterly ('The company announced a 7 percent increase in its quarterly cash dividend to $0.15 per share from $0.14 per share, to be paid with its next quarterly cash dividend on December 15, 2017, to all shareholders of record on November 24, 2017.', Q3 FY18 release)"
   }
  ],
  "events": [],

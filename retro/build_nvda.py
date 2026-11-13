@@ -38,6 +38,11 @@ From 2010 on (decided on 2026-11-13 before any 2010-2013 date was built or score
   - the quarterly dividend from the 8-K of 2012-11-08 ($0.075) and the Q3 FY14 release ($0.085), each from the first filing that
     states it.
 
+From 2014 on (decided on 2026-11-13 before any 2014-2017 date was built or scored; retro/README.md, "NVDA 2014-2017"): the method
+and the encodings above are unchanged; the one builder change is the text for a print public before its outlook ('outlook_later':
+the Q1 FY15 results, released before the open of 2014-05-06 after a preliminary draft was emailed internally, with the Q2 FY15
+outlook only in the release of May 8), whose dates take the latest quarter's revenue growth, as for any print with no guide in scope.
+
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
 is the first trading day after it. NVIDIA released after the close, so a print is dated the next trading day; on a Friday that is
 the week's last trading day, and the print meets its close (public before the open; the AVGO rule).
@@ -48,6 +53,7 @@ Usage
   python3 retro/build_nvda.py --weekly 2008-01-01 2008-12-31
   python3 retro/build_nvda.py --weekly 2009-01-05 2009-12-31
   python3 retro/build_nvda.py --weekly 2010-01-04 2013-12-31
+  python3 retro/build_nvda.py --weekly 2014-01-06 2017-12-31
   python3 retro/build_nvda.py 2008-02-15
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/NVDA/<AS_OF>
 """
@@ -296,6 +302,15 @@ def build(as_of, facts, raw, spx, engine, out):
                           f"{later_words}; no fiscal-year revenue, EPS or margin guide")
             cat3 = f"(3) The {next_q} guide — {seq} on {g['base_quarter']} ({_range(fwd)} YoY): NVIDIA guides one quarter at a time, in revenue"
         guide_ids = [g["source"], g["prior_source"]] + ([w["source"]] if later_words else [])
+    elif latest.get("outlook_later"):   # results public before their outlook (Q1 FY15: released early on 2014-05-06, outlook on May 8)
+        fwd = [latest["sales_pct"]] * 2
+        fwd_label = f"{latest['quarter']} revenue growth (no {next_q} guide in numbers yet)"
+        fwd_short, fwd_period = f"{latest['quarter'].split()[0]} revenue YoY", latest["quarter"]
+        guide_text = (f"{next_q}: no revenue guide in numbers yet: the {latest['quarter']} results came out ahead of their outlook "
+                      f"('{latest['outlook_later']}'); the latest quarter's revenue growth stands in (the UNP rule); no fiscal-year "
+                      "revenue, EPS or margin guide")
+        cat3 = f"(3) The {next_q} guide — not published yet: '{latest['outlook_later']}'"
+        guide_ids = []
     else:
         fwd = [latest["sales_pct"]] * 2
         fwd_label = f"{latest['quarter']} revenue growth (no {next_q} guide in numbers)"

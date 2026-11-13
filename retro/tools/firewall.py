@@ -68,7 +68,7 @@ their label and the non-GAAP basis note (BMY 2022-2026); NVDA: a print whose rev
 debt and cash, notes and raw figures are absurd, with absurd full-year actuals for the year after the latest vintage before CUTOFF, a
 later Q4 print whose full-year actuals exclude its own year, a later vintage excluding a year whose per-share figures carry a planted
 share basis, and a later guide for every quarter guided before CUTOFF, in numbers and in words (from NVDA 2010-2013, the dollar-level
-fields too); every
+fields too), the planted print released ahead of a planted outlook (NVDA 2014-2017); every
 fact sheet with a 'splits' list, SHW's from 2021-2023: a later split on the price data's next split date; a CLOUD event
 from a later 10-K, as for every live theme), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
@@ -221,7 +221,7 @@ PLANT = {"ACN": dict(quarter="Q9 FY99", revenue_lc=-60, margin_bp=-999, fy_eps_g
                       opex_pct=99.0, opex_gap_pp=99.0, inventory_b=99.0, inventory_pct=99.0, inventory_gap_pp=99.0, eps_q=0.01,
                       eps_q_prior=9.99, diluted_shares_m=1.0, cash_b=99.0, ltd_b=99.0, debt_note="PLANTED", sales_note="PLANTED",
                       inventory_note="PLANTED", eps_note="PLANTED", shares_note="PLANTED", next_print="PLANTED",
-                      cash_return_text="PLANTED", note="PLANTED",
+                      cash_return_text="PLANTED", note="PLANTED", outlook_later="PLANTED", rows_unit="PLANTED",
                       raw=dict(sales_k=1, sales_prior_k=99, sales_prev_q_k=99, gross_profit_k=1, gross_profit_prior_k=1, rd_k=99,
                                rd_prior_k=1, sga_k=99, sga_prior_k=1, op_income_k=-99, op_income_prior_k=99, inventory_k=99,
                                inventory_prior_k=1))}[TICKER]

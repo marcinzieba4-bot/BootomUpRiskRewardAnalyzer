@@ -14829,6 +14829,165 @@ Judgement calls that could carry hindsight:
 - the signals and CYCLICAL, and no theme for the GPU integrated into the CPU or for the cloud as NVIDIA's own market (50 classes at
   BEAR).
 
+### NVDA 2014-2017
+
+208 weekly dates, 2014-01-10 to 2017-12-29, on the same method, engine and rule-T thresholds. The range starts on Monday 2014-01-06
+because 2013-12-31, the last date built, already holds ISO week 2014-W01. The fact sheet only gains facts (an append: its 2008-2013
+content is unchanged) and the 314 earlier models rebuild byte for byte after the builder change below.
+
+```bash
+python3 retro/build_nvda.py --weekly 2014-01-06 2017-12-31                  # 208 dates, 2014-01-10 .. 2017-12-29
+for c in 2014-01-01 2014-02-13 2014-03-13 2014-05-06 2014-05-09 2014-08-08 2014-11-07 2015-02-12 2015-03-12 2015-05-08 \
+         2015-08-07 2015-11-06 2016-02-18 2016-03-17 2016-05-13 2016-08-12 2016-11-11 2017-02-10 2017-03-02 2017-05-10 \
+         2017-08-11 2017-11-10 2018-01-01; do python3 retro/tools/firewall.py $c NVDA; done
+```
+
+Read: the 16 earnings releases from Q4 FY14 to Q3 FY18 with the CFO commentaries filed beside them, the early Q1 FY15 8-K of
+2014-05-06, the FY2014-FY2017 10-Ks (Items 1, 1A, 5, 6, 7 and 8), the 10-Qs of Q1 FY14 to Q3 FY18 (year-ago inventories; none states a
+revenue outlook, and neither does any 10-K of the period), and every other 8-K of November 2013 to December 2017 by its items and
+exhibits, all read directly, none delegated. The source ids are `NV72`-`NV104`. The fact sheet's new entries are generated, as before,
+from the row strings typed for them: 347 more strings were checked with `verbatim.py`, each against its own filing (909 with the
+earlier 562, all found). Decided on 2026-11-13, before any 2014-2017 model was built or any 2014-2017 outcome computed:
+
+- **Release timing.** Every earnings 8-K was accepted after the close (16:21-16:39 ET) and is dated the next trading day, except the
+  early Q1 FY15 results below. Eleven fall on a Friday and meet their own close (2014-08-08, 2014-11-07, 2015-05-08, 2015-08-07,
+  2015-11-06, 2016-05-13, 2016-08-12, 2016-11-11, 2017-02-10, 2017-08-11, 2017-11-10); the Q4 FY14-Q4 FY16 releases are dated a
+  Thursday and put the week's date on the Friday (2014-02-14, 2015-02-13, 2016-02-19), and Q1 FY18, dated Wednesday 2017-05-10, on
+  Thursday 2017-05-11. The four 10-Ks were accepted after the close (17:30-19:48 ET) and are dated the next trading day: 2014-03-13,
+  2015-03-12, 2016-03-17, 2017-03-02.
+- **The Q1 FY15 results came out early.** "This press release is being issued because a preliminary draft of the company's financial
+  results for the first quarter of fiscal 2015 was inadvertently emailed to an internal distribution list of about 100 individuals."
+  The 8-K with the results and the statements was accepted on 2014-05-06 at 09:29 ET, before the open ("these results are being
+  provided to the market in advance of trading in NVIDIA stock today as a precaution"); the scheduled release, with the Q2 FY15 outlook
+  and the dividend dates, followed on May 8 after the close (dated 2014-05-09). The print is the May 6 8-K's and the guide the May 8
+  release's, each from its own date. The week's date is the first trading day after the print, 2014-05-07, which has the print but no
+  guide in scope, so BASE takes the latest quarter's revenue growth (+15.5%, the UNP rule) on that one date. A new print field,
+  `outlook_later` (the May 6 release's "NVIDIA will provide its full results for the first quarter, along with additional commentary and
+  a financial outlook, on Thursday, May 8, 2014, as initially scheduled."), gives that date's guide text: the one builder change, which
+  leaves every earlier model byte for byte. The firewall's planted print carries the field too.
+- **Statements in $ millions** from the Q1 FY16 release (2015-05-08), as in the FY2016 and FY2017 10-Ks. The raw figures are the
+  published millions (times 1,000 in the fact sheet's `_k` fields, with `rows_unit`), so the margins and gaps take the rounded figures
+  NVIDIA published; the year-ago inventories come from each 10-Q in its own unit (thousands to Q3 FY15, millions after).
+- **History: four more vintages, the ten fiscal years to the 10-K's year,** each year from the latest filing that reports it. The FY2014
+  10-K gives FY2010-FY2014 (FY2014 $0.74; FY2010's loss stays excluded) and drops FY2004; FY2009 stays from the FY2013 10-K. The FY2015
+  10-K adds FY2015 ($1.12) and drops FY2005; the FY2016 10-K adds FY2016 ($1.08) and drops FY2006 and states FY2012-FY2016 in millions
+  (FY2012 revenue $3.998B instead of $3.99793B, diluted shares 616 instead of 616.371), kept as published (the seam rule); the FY2017
+  10-K adds FY2017 ($2.57) and drops FY2007. FY2009 and FY2010 stay excluded (losses) and their days out of the window ("10-yr ex-FY09
+  ex-FY10" throughout). Each Q4 print extends the history from its release to its 10-K: FY2014 from 2014-02-13, FY2015 from
+  2015-02-12, FY2016 from 2016-02-18, FY2017 from 2017-02-10.
+- **Current-FY EPS: still no EPS guide in any filing,** so the last full year in the history stands (the rollover rule): FY13's $0.90 for
+  FY14E to 2014-02-07, FY14's $0.74 for FY15E, FY15's $1.12 for FY16E, FY16's $1.08 for FY17E, FY17's $2.57 for FY18E.
+- **No year from FY2014 to FY2017 is a loss or a distorted year** (the AAPL FY2002 test on the items the releases list besides
+  stock-based compensation and acquisition-related costs): FY2014's legal settlement, warranty credit, other expense, investment gain and
+  debt discount amortization ($3.7M, $(7.8)M, $4.1M, $(3.1)M, $4.6M) against $440.0M of net income; FY2015's $28.0M of debt discount
+  amortization and $(14.5)M of investment gains against $630.6M; FY2016's $131M of restructuring and other charges (the Icera modem
+  wind-down), a $20M warranty charge and $29M of debt discount amortization against $614M; FY2017's $16M of legal settlement costs, $21M
+  loss on early debt conversions, $25M of debt discount amortization and smaller items against $1,666M. GAAP stands.
+- **Guides: the next quarter's revenue, from every release,** "$X billion, plus or minus two percent", read against the year-ago
+  quarter from its own release (the level rule), rounded to 0.1: Q1 FY15 $1.05 billion (+7.8% to +12.2%), Q2 FY15 $1.1 billion (+10.3%
+  to +14.8%), Q3 FY15 $1.20 billion (+11.6% to +16.1%), Q4 FY15 $1.20 billion (+2.8% to +7.0%), Q1 FY16 $1.16 billion (+3.1% to +7.3%),
+  Q2 FY16 $1.01 billion (-10.2% to -6.6%, in the release that announces the Icera modem wind-down), Q3 FY16 $1.18 billion (-5.6% to
+  -1.8%), Q4 FY16 $1.30 billion (+1.9% to +6.0%), Q1 FY17 $1.26 billion (+7.3% to +11.7%), Q2 FY17 $1.35 billion (+14.7% to +19.4%), Q3
+  FY17 $1.68 billion (+26.2% to +31.3%), Q4 FY17 $2.10 billion (+46.9% to +52.9%), Q1 FY18 $1.90 billion (+42.7% to +48.5%), Q2 FY18
+  $1.95 billion (+33.8% to +39.3%), Q3 FY18 $2.35 billion (+14.9% to +19.6%), Q4 FY18 $2.65 billion (+19.5% to +24.4%). From the Q4
+  FY14 release the outlook is in the release itself again (the CFO commentary repeats it, "$1,050 million"), so the guide is the
+  release's. The gross margin bullets are display only, as before, and so is the Q1 FY16 release's "Non-GAAP operating expenses in
+  fiscal 2016 are expected to be approximately flat with the previous year, excluding litigation costs" (no fiscal-year revenue, EPS
+  or margin guide); no margin step.
+- **Dividends,** each from the first filing that states the rate: $0.085 a quarter (the Q3 FY14 release; restated by the FY2014 and
+  FY2015 10-Ks), $0.0975 from the Q1 FY16 release (2015-05-08), $0.115 from the Q3 FY16 release (2015-11-06; the FY2016 10-K), $0.14
+  from the Q3 FY17 release (2016-11-11; the FY2017 10-K), $0.15 from the Q3 FY18 release (2017-11-10). The capital return sentences are
+  display only.
+- **Signals,** from each release's statements as before, each against the year-ago quarter in the same release; inventories against the
+  year-ago quarter's 10-Q (a Q4's from the release's prior year-end column). Charges stay in, as published: the restructuring and other
+  charges ($89M in Q2 FY16, $8M, $34M, $1M, $2M to Q2 FY17) stay in operating income and out of the opex gap, which takes the two
+  expense lines it always has (the 2008-2009 rule for separately stated lines); Q2 FY16's operating margin change is -819bp. Q4 FY16 is
+  a 14-week quarter against 13 (FY2016 was a 53-week year, which the FY2016 10-K states a month after the release; the release compares
+  the quarters as reported), used as published (the Q4 FY10 rule). The Q1 and Q2 FY18 releases show the year-ago quarters' EPS after
+  the stock-based compensation update NVIDIA adopted early in Q3 FY17 (the Q3 FY17 10-Q: excess tax benefits "of $12 million, $8 million
+  and $42 million for the first, second and third quarters of fiscal year 2017"); the signals' inputs do not change, and the prints'
+  notes say so.
+- **Debt, display only.** From the Q4 FY14 release the balance sheet carries the $1.5 billion of 1.00% convertible senior notes due 2018
+  (long-term debt, then convertible short-term debt from Q4 FY16) and from Q3 FY17 the notes due 2021 and 2026; `debt_note` names each
+  line. GAAP diluted shares include the notes' dilution, as published (the non-GAAP count removes it for the note hedge; GAAP stands).
+- **Durability: CYCLICAL, risk 2, kept although the FY2015-FY2017 10-Ks drop the word.** The FY2014 10-K keeps "Our business is cyclical
+  in nature and has experienced severe downturns"; from the FY2015 10-K the risk factor is gone, and the kind stands (the BKR FY2015 rule;
+  the class label only). The "why" quotes each 10-K: "NVIDIA is a visual computing company." (FY2014), "NVIDIA is dedicated to advancing
+  visual computing." (FY2015), "NVIDIA is the world leader in visual computing" with "breakthroughs in new areas like artificial
+  intelligence, virtual reality and autonomous cars" (FY2016), NVIDIA "invented the GPU" and has "extended our emphasis in recent years to
+  the revolutionary field of artificial intelligence, or AI" (FY2017); a market "intensely competitive" (with "declining average selling
+  prices" to FY2016); Intel's and AMD's CPUs with integrated graphics (FY2014) and the suppliers of integrated GPUs among its
+  competitors (FY2015-FY2017). The 10-Ks name artificial intelligence, deep learning and autonomous cars as markets NVIDIA serves, not as
+  substitutes for its products, so no theme in `taxonomy_eras.json` applies (GENAI's scope is AI substituting a core product, and its
+  live date lies years later), and the cloud stays NVIDIA's own GRID market (the FY2013 reading): the watch list is empty through 2017.
+- **Segment bridge** (display only): GPU, Tegra Processor and All Other in all four 10-Ks.
+- **Adds nothing:** the accelerated share repurchases (2014-02-14, 2016-03-23; in the share counts), the campus construction lease and
+  its amendment and purchase (2015-06-23, 2017-02-02, the Item 1.02 of 2017-11-09), the Samsung patent settlement (2016-05-02), the
+  $2 billion of senior notes (2016-09-16) and the credit agreement (2016-10-13), the warrant terminations (2016-12-13, 2017-06-05), the
+  commercial paper program (2017-12-15), the bylaws (2016-12-01), the variable compensation plans (their goals are not stated in
+  numbers) and the officer, director and vote 8-Ks (2014-05-28, 2015-03-11, 2015-05-26, 2016-05-23, 2016-06-21, 2017-01-19, 2017-05-30).
+
+Controls: altering one value of each new print (its quarter EPS, and each Q4 print's full-year revenue), guide (its quote), vintage (its
+last EPS year and its dividend note) and dividend (its rate), rerun over all 522 dates of 2008-2017, changes no date before its
+publication and changes the first weekly date on or after it: 48 of 48. The Q4 prints' full-year revenue lives exactly from each print
+to its 10-K (2014-02-14 to 2014-03-07, 2015-02-13 to 2015-03-06, 2016-02-19 to 2016-03-11, 2017-02-10 to 2017-02-24). A scan of the 522
+models for the source ids, titles, text clauses and figures (four significant digits or more) of every 2014-2017 fact finds 636 of
+518,459 (model, later fact) pairs before publication (after dropping 665 tokens an earlier fact or the engine already carries), none a
+leak: 383 are a template phrase ("no fiscal-year revenue, EPS or margin guide", which every guide line carries and the Q2 FY16 guide's
+display repeats); 52 are "2016" of the FY2016E label; 133 are guide levels equal to earlier guides' ($1,050.0M; the $1,029.0M-$1,071.0M of
+Q3 and Q4 FY14; the $1,176.0M-$1,224.0M of Q3 FY15, repeated for Q4 FY15); 39 are earlier guide levels equal to later figures
+($1,175.0M, $1,150.0M and $1,183.2M against FY2016's operating cash flow and Q1 FY18's and Q3 FY17's gross profit); 14 are Q3 FY09's cash
+($1.305B) against Q3 FY16's revenue; 4 are FY2014's year-end cash, which the Q4 FY14 release had already published ($4.672B); and 11 are
+closes and a trading-day count equal to later figures (the 2016-09-09 close of $59.52, also a 52-week low, against Q3 FY18's gross
+margin; $12.35, $13.73, $18.48, $14.91; 2397). Rebuilding the 314 dates of 2008-2013 gives the same models byte for byte; no file
+another ticker's builder reads has changed (the firewall's change adds two fields to NVDA's own planted print). The firewall runs on
+the committed build; its result follows that commit. All 208 dates pass `retro_tool run`; their only warnings are calendar years in the
+filings' own words: the notes' maturities (2018, 2021, 2026) and the fiscal years of the capital return plans ("in fiscal 2016", "For
+fiscal 2019").
+
+Seen in the build (method behaviour, not tuned):
+- **CHEAP on 8 dates, FAIR on 60, RICH on 140;** legacy tier BUY on 8, ACCUMULATE on 17, WATCHLIST on 47 and AVOID on 136. By year:
+  2014 CHEAP 5, FAIR 36, RICH 10; 2015 CHEAP 3, FAIR 24, RICH 26; 2016 and 2017 RICH and AVOID on all 104 dates.
+- **January 2014 rests on FY13's $0.90:** $15.56-15.99 is 17.3-17.8x, the 40th-44th percentile of a window whose median is 19.4-19.6x,
+  24-27% over a 14x floor ($12.60): CHEAP and BUY on the five dates to 2014-02-07 (BASE -7.2%/yr on the Q4 FY14 guide, -7.0% to -3.2%).
+- **From the Q4 FY14 print FY15E is FY14's $0.74.** The stock at $16.85-21.07 is 22.8-28.5x (the 61st-87th percentile of a 20.6x median),
+  63-103% over a 14x floor ($10.36): FAIR on 36 dates, RICH on 2014-09-05 and from 2014-10-31 to 2015-02-06. BEAR is FY2014's own fall
+  (-17.8%/yr, $0.90 to $0.74) from that print to the end of 2017. The FY2014 10-K drops FY2004, so BULL falls from +23.5%/yr (the
+  FY2004-FY2014 CAGR) to +17.8% (FY2005-FY2014) and XBULL from the FY2004-FY2006 run (+147.2%/yr) to the FY2005-FY2007 run (+111.4%).
+- **2015 on FY15's $1.12,** from the Q4 FY15 print: to 2015-09-25 the stock ($19.42-23.61) is 17.3-21.1x around a median of 18.6-19.3x,
+  24-51% over a 14x floor ($15.68): FAIR on most dates, CHEAP on three (2015-07-10, 2015-07-24, 2015-07-31; BASE -8.7%/yr on the Q2 FY16
+  guide), RICH on six (2015-03-20 and five in August-September at $22.73-23.61, 20.3-21.1x, the 60th-66th percentile). From 2015-10-02
+  it is RICH on every date ($24.80-33.75, 22.1-30.1x, the 72nd-91st percentile, 58-115% over the floor). The FY2015 10-K drops FY2005:
+  BULL is +8.2%/yr (the FY2006-FY2015 CAGR) and XBULL +54.3% (the FY2006-FY2008 run).
+- **2016-2017: RICH and AVOID on every date.** On FY15's $1.12 and then FY16's $1.08 to 2017-02-03 the stock ($25.73-114.38) is
+  23.0-105.9x, and on FY17's $2.57 from 2017-02-10 ($95.49-216.96) 37.2-84.4x: the 71st-100th percentile of a window whose median is
+  19.1-19.9x, 64-606% over a 14-15x floor ($15.12-38.55). Ratio B is infinite (the price above the BULL case) on 90 of the 113 dates from
+  2015-11-06. BASE follows the guides up: +3.7%/yr (Q4 FY16), +9.1-9.9% (Q1 FY17), +17.4%, +29.1%, +50.3% (the Q4 FY17 guide, +46.9% to
+  +52.9%), +44.6-44.9%, +35.8%, +16.5% and +21.2% (Q4 FY18); BULL equals BASE from 2016-02-19 (the decade CAGR is lower); XBULL is +54.3%
+  to the FY2016 10-K, +44.7% from it (the FY2011-FY2013 run) and +51.5% from the Q4 FY17 print (FY2015-FY2017).
+- **The proxy composite** is 2.00 on Q3 FY14, 2.15 on Q4 FY14, 2.45 on Q1-Q4 FY15, 2.30 on Q1 FY16, 2.15 on Q2 FY16 (the gross margin
+  -113bp and the operating margin -819bp with the Icera charges), 2.45 on Q3 FY16, 2.30 on Q4 FY16, 2.45 on Q1 FY17, 2.80 on Q2 FY17,
+  3.00 on Q3 FY17 (revenue +53.6%, gross margin +279bp, opex gap -40.5pp, operating margin +1,311bp), 2.85 on Q4 FY17, 2.50 on Q1 FY18
+  (inventories +59.9pp over revenue), 2.65 on Q2 FY18 and 2.45 on Q3 FY18.
+- **Robustness:** all eight variants agree on 129 of 208 dates, seven on 17, six on 34, five on 21 and four on 7.
+
+How far each call moves the classes (the 208 dates rebuilt with one encoding changed and classified offline; no outcome consulted):
+- every signal at its BEAR value: 63 classes in 2014-2015 (2014-02-14 to 2015-07-31; FAIR or CHEAP to RICH), no tier; at its XBULL
+  value: 39 classes in 2014-2015 (FAIR to CHEAP, RICH to FAIR), no tier;
+- the next-quarter guides unused (the latest quarter's revenue growth throughout): 16 classes in 2014-2015, 10 tiers;
+- FY2009 and FY2010 kept at the company's non-GAAP $0.53 and $0.26 (in the history and the window): 12 classes in 2014-2015, 22 tiers;
+- the restructuring and other charges added back to operating income: none; DURABLE instead of CYCLICAL from the FY2015 10-K: none.
+No call above moves a date of 2016-2017: the RICH calls rest on the price against FY15-FY17 GAAP EPS and the stock's own P/E history.
+
+Judgement calls that could carry hindsight:
+- CYCLICAL kept although the FY2015-FY2017 10-Ks no longer call the business cyclical (no class moves on DURABLE);
+- the 10-Ks' AI, deep learning and autonomous-car words read as NVIDIA's own markets, not a disruption theme, by a builder who knows
+  what AI became for NVIDIA (text only: the theme slot is constant either way);
+- GAAP EPS rather than the company's non-GAAP figure (FY2017 $2.57 against $3.06), and FY2009 and FY2010 still excluded (12 classes);
+- the guides used at all (16 classes) and the Q1 FY15 print dated from its early release (one date, 2014-05-07, without a guide);
+- the signals (63 classes at BEAR, 39 at XBULL, all in 2014-2015);
+- the restructuring charges and the 14-week Q4 FY16 left in as published (no class moves without the charges).
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
