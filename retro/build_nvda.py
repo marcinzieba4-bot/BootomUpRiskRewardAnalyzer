@@ -48,6 +48,12 @@ per-share figures and are restated for splits like the rest (the four-for-one sp
 rate (FY2021) leaves the dividend to the filings that state one; an outlook update between releases is a guide of its own (in numbers,
 2019-01-28) or words on the last numeric range (2021-04-12).
 
+From 2022 on (decided on 2026-11-13 before any 2022-2026 date was built or scored; retro/README.md, "NVDA 2022-2026"): no builder change.
+The preliminary Q2 FY23 revenue of the 8-K of 2022-08-08 ("approximately $6.70 billion", after the quarter ended) is a guide of its own
+for that quarter, a dollar level with no range (the 2019-01-28 rule); the 8-K of 2022-08-31 on the Q3 FY23 outlook's China sales is
+words on the last numeric range (the 2021-04-12 rule); the ten-for-one split effective 2024-06-10 restates every per-share fact, dividend
+rates included, as the four-for-one did.
+
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
 is the first trading day after it. NVIDIA released after the close, so a print is dated the next trading day; on a Friday that is
 the week's last trading day, and the print meets its close (public before the open; the AVGO rule).
@@ -60,6 +66,7 @@ Usage
   python3 retro/build_nvda.py --weekly 2010-01-04 2013-12-31
   python3 retro/build_nvda.py --weekly 2014-01-06 2017-12-31
   python3 retro/build_nvda.py --weekly 2018-01-01 2021-12-31
+  python3 retro/build_nvda.py --weekly 2022-01-03 2026-11-08
   python3 retro/build_nvda.py 2008-02-15
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/NVDA/<AS_OF>
 """

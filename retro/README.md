@@ -15152,6 +15152,204 @@ Judgement calls that could carry hindsight:
 - the signals (52 classes at XBULL, 5 at BEAR); CYCLICAL kept, and no theme for AI, cryptocurrency mining or autonomous driving read as
   NVIDIA's own markets by a builder who knows what they became (text only).
 
+### NVDA 2022-2026
+
+253 weekly dates, 2022-01-07 to 2026-11-06, on the same method, engine and rule-T thresholds. The fact sheet only gains facts (an append:
+its 2008-2021 content is unchanged), the builder's code does not change (its docstring gains the 2022-2026 paragraph) and the 731 earlier
+models rebuild byte for byte.
+
+```bash
+python3 retro/build_nvda.py --weekly 2022-01-03 2026-11-08                  # 253 dates, 2022-01-07 .. 2026-11-06
+for c in 2022-01-01 2022-02-17 2022-03-18 2022-05-26 2022-08-08 2022-08-25 2022-09-01 2022-11-17 2023-02-23 2023-02-27 \
+         2023-05-25 2023-08-24 2023-11-22 2024-02-22 2024-05-23 2024-06-10 2024-08-29 2024-11-21 2025-02-27 2025-05-29 \
+         2025-08-28 2025-11-20 2026-02-26 2026-05-21 2026-08-27 2026-11-07; do python3 retro/tools/firewall.py $c NVDA; done
+```
+
+Read: the 19 earnings releases from Q4 FY22 to Q2 FY27 with the CFO commentaries filed beside them (each repeats its release's outlook),
+the preliminary Q2 FY23 results of 2022-08-08, the FY2022-FY2026 10-Ks (Items 1, 1A, 5, 7 and 8), the 10-Qs of Q1 FY22 to Q2 FY27
+(year-ago inventories; none states a revenue outlook for the next quarter), and every other 8-K of November 2021 to November 2026 by its
+items and exhibits, all read directly, none delegated. The source ids are `NV140`-`NV179`. The new entries are generated, as before, from
+the row strings typed for them: 448 more strings were checked, each against its own filing (1,686 with the earlier 1,238, all found).
+As a second, independent check every new print, guide base and vintage figure was read back from SEC XBRL company facts: all 207 Q1-Q3
+and annual figures agree, and the Q4 quarters, which XBRL gives only as the year less nine months, agree on 26 of 30, the other four
+by $1M (the release rounds its Q4 column on its own; the release's figure stands). Each source's date comes from EDGAR's acceptance
+time. Decided on 2026-11-13, before any 2022-2026 model was built or any 2022-2026 outcome computed:
+
+- **The last date is 2026-11-06,** the last complete week: the series was built on Friday 2026-11-13 before the open. The Q3 FY27
+  release (due after 2026-11-13) is not in the range, and the newest dates have no outcome yet.
+- **Release timing.** Every earnings 8-K was accepted after the close (16:20-16:52 ET), each on a Wednesday but Q3 FY24 (Tuesday
+  2023-11-21, before Thanksgiving), and is dated the next trading day; the week's date is the trading day after that (2022-02-18,
+  2022-05-27, 2022-08-26, 2022-11-18, 2023-02-24, 2023-05-26, 2023-08-25, 2023-11-24, 2024-02-23, 2024-05-24, 2024-08-30, 2024-11-22,
+  2025-02-28, 2025-05-30, 2025-08-29, 2025-11-21, 2026-02-27, 2026-05-22, 2026-08-28). The FY2022 10-K was accepted 2022-03-17 20:33 ET
+  (dated 2022-03-18, a Friday that meets its own close), the FY2023 10-K 2023-02-24 17:23 ET (dated 2023-02-27); the FY2024-FY2026
+  10-Ks the same evening as their Q4 releases (16:36-16:48 ET), so they are dated with the prints and the Q4 prints' full-year figures
+  never reach a model (the vintage wins on the same date).
+- **The preliminary Q2 FY23 results are a guide of their own.** The 8-K of 2022-08-08 (accepted 09:16 ET, before the open, after the
+  quarter ended on July 31) says "Second quarter revenue is expected to be approximately $6.70 billion, down 19% sequentially and up 3%
+  from the prior year, primarily reflecting weaker than forecasted Gaming revenue." against the May outlook of $8.10 billion, plus or
+  minus 2%. That is the 2019-01-28 rule (an update in numbers between releases, there also after its quarter ended; the latest guide for
+  a quarter wins): a dollar level with no range, $6,700.0M against Q2 FY22's $6,507M, +3.0%, on 2022-08-12 and 2022-08-19 instead of
+  +22.0% to +27.0%. It has no statements and no EPS, so it is not a print (the Q1 FY15 early release had both). Its "approximately $1.32
+  billion of charges, primarily for inventory and related reserves" are display only, and in the Q2 FY23 print's cost of revenue.
+- **Words on the last numeric range** (the 2021-04-12 rule): the 8-K of 2022-08-31 (accepted 17:00 ET, dated 2022-09-01) on the A100
+  and H100 license requirement says "The Company’s outlook for its third fiscal quarter provided on August 24, 2022 included
+  approximately $400 million in potential sales to China which may be subject to the new license requirement ...": the $5.90 billion
+  range stands and the words go in the guide line from 2022-09-02.
+- **Guides: the next quarter's revenue, from every release,** "$X billion, plus or minus 2%", read against the year-ago quarter from its
+  own release (the level rule): Q1 FY23 $8.10 billion (+40.2% to +45.9%), Q2 FY23 $8.10 billion (+22.0% to +27.0%; "an estimated
+  reduction of approximately $500 million relating to Russia and the COVID lockdowns in China", display), Q3 FY23 $5.90 billion (-18.6%
+  to -15.3%), Q4 FY23 $6.00 billion (-23.1% to -19.9%), Q1 FY24 $6.50 billion (-23.1% to -20.0%), Q2 FY24 $11.00 billion (+60.8% to
+  +67.4%), Q3 FY24 $16.00 billion (+164.4% to +175.2%), Q4 FY24 $20.00 billion (+223.9% to +237.1%), Q1 FY25 $24.0 billion (+227.0% to
+  +240.4%), Q2 FY25 $28.0 billion (+103.2% to +111.4%), Q3 FY25 $32.5 billion (+75.8% to +82.9%), Q4 FY25 $37.5 billion (+66.3% to
+  +73.1%), Q1 FY26 $43.0 billion (+61.8% to +68.4%), Q2 FY26 $45.0 billion (+46.8% to +52.8%; "This outlook reflects a loss in H20
+  revenue of approximately $8.0 billion due to the recent export control limitations.", display), Q3 FY26 $54.0 billion (+50.8% to
+  +57.0%), Q4 FY26 $65.0 billion (+62.0% to +68.6%), Q1 FY27 $78.0 billion (+73.5% to +80.6%), Q2 FY27 $91.0 billion (+90.8% to +98.6%),
+  Q3 FY27 $108.0 billion (+85.7% to +93.2%). The gross margin and operating expense bullets, the full-year gross margin and opex words
+  of FY2025-FY2026 and the China sentences are display only; no margin step.
+- **History: five more vintages, the ten fiscal years to the 10-K's year,** each year from the latest filing that reports it. None of the
+  FY2022-FY2026 10-Ks has selected financial data, so each gives its three years from its statement of income (the FY2021 rule) and the
+  earlier years keep the latest 10-K that reported them: FY2022 ($3.85), FY2023 ($1.74), FY2024 ($11.93), FY2025 ($2.94 after the split)
+  and FY2026 ($4.90) join in turn. The 10-Ks' restated per-share figures replace the earlier ones as published (the AVGO split rule;
+  rounding only): FY2020 $1.13 and FY2021 $1.73 from the FY2022 10-K (instead of $4.52 and $6.90 divided by 4: $1.13 and $1.725), FY2023
+  $0.17 from the FY2025 10-K (instead of $1.74 divided by 10).
+- **Current-FY EPS: still no EPS guide in any filing,** so the last full year stands: FY21's $1.725 for FY22E to 2022-02-11, FY22's $3.85
+  for FY23E, FY23's $1.74 for FY24E, FY24's $11.93 ($1.193 from 2024-06-10) for FY25E, FY25's $2.94 for FY26E, FY26's $4.90 for FY27E.
+- **No year from FY2022 to FY2026 is a loss or a distorted year** (the AAPL FY2002 test and its mirror, on the items the releases list
+  besides stock-based compensation and acquisition-related costs). FY2022's domestication and foreign tax benefits ($244M and $90M) against
+  $9,752M of net income. FY2023's $1,353M Arm acquisition termination cost with $54M of restructuring, $16M of IP-related costs, $7M of
+  legal settlement costs, $2M of contributions and $45M of investment losses, about $1.5 billion against $4,368M (about $2.8 billion even
+  with the Q2 FY23 inventory charges, which the releases do not list as one-offs). FY2024-FY2025's items are small; FY2026's $8,918M of
+  net gains on equity securities against $120,067M. No figure excluding only them was published (the non-GAAP figures also exclude
+  stock-based compensation), so GAAP stands, and the Q4 prints' notes say so.
+- **The ten-for-one split.** Announced in the Q1 FY25 release ("Each record holder of common stock as of the close of market on Thursday,
+  June 6, 2024, will receive nine additional shares of common stock, to be distributed after the close of market on Friday, June 7, 2024.";
+  dated 2024-05-23); the shares traded split-adjusted from 2024-06-10, Yahoo's split date, which the builder checks. From that day every
+  per-share fact on a basis before it is divided by 10, share counts are multiplied, and prices are as traded on that basis (Yahoo's series
+  as is from 2024-06-10, x10 before, x40 before 2021-07-20). The releases from Q2 FY25 are after the split and stand as published; the 8-K
+  of 2024-06-07 (the charter amendment) adds nothing.
+- **Dividends,** each from the first filing that states the rate: $0.04 a quarter (the $0.16 of 2018 after the four-for-one split) to
+  2024-05-17, $0.10 from the Q1 FY25 release ("NVIDIA is increasing its quarterly cash dividend by 150% from $0.04 per share to $0.10 per
+  share of common stock.", 2024-05-23; $0.01 from 2024-06-10), $0.25 from the Q1 FY27 release (2026-05-21). The FY2022-FY2026 10-Ks state
+  no rate (their equity statements give only the dividends "declared and paid" per share in the year: the FY2021 reading), so the latest
+  rate a filing states stands.
+- **Signals,** from each release's statements as before, each against the year-ago quarter in the same release; inventories against the
+  year-ago quarter's 10-Q (a Q4's from the release's prior year-end column). Charges stay in, as published: the $1,353M Arm acquisition
+  termination cost of Q1 FY23 (a separately stated expense line: in operating income, out of the opex gap, the 2008-2009 rule), the Q2
+  FY23 inventory charges, the $4.5 billion H20 charge of Q1 FY26 and the $180 million release of H20 reserves in Q2 FY26 (in cost of
+  revenue). From Q1 FY27 NVIDIA's non-GAAP figures include stock-based compensation, but still exclude acquisition-related costs and gains
+  and losses on equity securities, and no fiscal-year figure on that basis is published, so GAAP stands; the Q1 and Q2 FY27 prints' notes
+  say so. From Q1 FY27 the balance sheet splits cash, marketable debt securities and marketable equity securities; the cash line is their
+  sum, which for 2026-01-25 equals the single line of the Q4 FY26 release ($62,556M), and the prints' notes say so.
+- **Debt, display only:** the long-term and short-term debt lines as the balance sheets show them ($32,366M of long-term debt at Q2 FY27,
+  after the notes of June 2026).
+- **Durability: CYCLICAL, risk 2, kept** (no FY2022-FY2026 10-K calls the business cyclical; the BKR FY2015 rule). The "why" quotes each
+  10-K: "NVIDIA pioneered accelerated computing to help solve the most challenging computational problems." (FY2022, FY2023), "NVIDIA is
+  now a full-stack computing infrastructure company with data-center-scale offerings that are reshaping industry." (FY2024, FY2025), "NVIDIA
+  is now a data center scale AI infrastructure company reshaping all industries." (FY2026); a market "intensely competitive"; among the
+  competitors the suppliers of GPUs and custom accelerators (AMD, Intel, from FY2024 Huawei) and the large cloud and internet companies
+  designing chips in house (Alibaba, Alphabet, Amazon, from FY2023 Baidu, from FY2024 Huawei and Microsoft). GENAI is live from 2022-11-30
+  and its scope is AI substituting software seats, IT services, information, search, education and mobility; the 10-Ks name AI as
+  NVIDIA's own market and offering ("Issues relating to the responsible use of our technologies, including AI in our offerings, may result
+  in reputational or financial harm and liability."), never as a substitute for its products, so GENAI stays off the watch list (the AVGO
+  reading); the in-house chips are a competitive field no theme covers, and stay in the "why" (the PEP obesity rule). The watch list is
+  empty through 2026.
+- **Segment bridge** (display only): Graphics and Compute & Networking, the FY2022-FY2026 10-Ks' segments. The Q1 FY27 release's new
+  reporting framework (Data Center and Edge Computing) is display only until a 10-K reports it.
+- **Adds nothing:** the Arm termination (2022-02-08; its charge is in the Q1 FY23 print), the export authorizations of 2022-09-01, the
+  export rule 8-Ks of 2023-10-17 and 2023-10-24 ("we do not anticipate that the additional restrictions will have a near-term meaningful
+  impact on our financial results": words on results, not on a guided number), the AI diffusion rule (2025-01-17), the H20 license
+  requirement (2025-04-15; its "up to approximately $5.5 billion of charges" is in the Q1 FY26 print as $4.5 billion), the notes of
+  2026-06-18, the SB Energy residual value guaranties (2026-08-17: a payment obligation capped at $105 billion, from 2028), the Hugging Face
+  agreement (2026-09-03), the 10-Qs' words on Hopper and Blackwell shipments (Q2 FY25: "In the fourth quarter of fiscal year 2025, we expect
+  to ship several billion dollars in Blackwell revenue.") and on China (Q3 FY24), which name product lines and regions, not the next
+  quarter's revenue, the variable compensation plans (revenue goals not stated in numbers), and the officer, director, charter and vote
+  8-Ks (2022-03-09, 2022-06-06, 2023-03-08, 2023-06-27, 2023-07-24, 2024-03-14, 2024-06-07, 2024-07-02, 2024-11-07, 2025-03-07,
+  2025-07-01, 2025-08-05, 2026-01-23, 2026-03-06, 2026-04-27, 2026-05-08, 2026-06-30, 2026-07-02).
+
+Controls: altering one value of each new print (its quarter EPS, and each Q4 print's full-year revenue), guide (its quote, or its
+words), vintage (its last EPS year and its dividend note), dividend (its rate) and the split (its label), rerun over all 984 dates of
+2008-2026, changes no date before its publication and changes the first weekly date on or after it (for the split, on or after its
+effective date): 50 of 58. The other 8 are inert by design: the Q4 FY24, FY25 and FY26 prints' full-year revenue, which their 10-Ks
+replace on the same date, and the five 10-Ks' dividend notes, which carry no rate. The Q4 FY22 print's full-year figures live from
+2022-02-18 to 2022-03-11 and the Q4 FY23 print's on 2023-02-24 only; the preliminary Q2 FY23 revenue on 2022-08-12 and 2022-08-19; the
+August 2022 words from 2022-09-02 to 2022-11-11. A scan of the 984 models for the source ids, titles,
+text clauses and figures (four significant digits or more) of every 2022-2026 fact finds 441 of 1,022,979 (model, later fact) pairs
+before publication (after dropping 697 tokens an earlier fact or the engine already carries), none a leak: 232 are substrings of longer
+earlier figures (FY2002's 509.439M diluted shares holds Q2 FY25's +509.4bp; a 2016 model's fiscal-year revenue of $5.8642B holds Q1 FY25's
+$5.864B of inventories); 108 are diluted share counts that equal earlier ones times a later split (the FY2025 10-K's FY2023 and FY2024 shares,
+25,070M and 24,940M, are the FY2024 10-K's 2,507M and 2,494M times 10; the FY2022 10-K's FY2020 2,472M is the FY2021 10-K's 618M times
+4); 38 are earlier guide levels ($2,499.0M, $1,030.2M and $1,122.0M, the bounds of the Q1 FY20, Q2 FY16 and Q2 FY15 guides); and 63 are
+closes, 52-week highs and lows and a P/E percentile equal to later figures (115.66 holds Q4 FY23's 15.66% operating margin; 230.43,
+15.32, 174.56, 18.12, $156.93 and others). Rebuilding the 731 dates of 2008-2021 gives the same models byte for byte; no file another
+ticker's builder reads has changed. FIREWALL_RESULT All 253 dates pass `retro_tool run`; their only warnings are calendar years in the
+releases' own words ("fiscal 2023" to "fiscal 2027" in the capital-return and H20 sentences) and Q3 FY24's gross margin change
+(+2038bp), read as calendar years.
+
+Seen in the build (method behaviour, not tuned):
+- **RICH on 122 dates, FAIR on 118, CHEAP on 13;** legacy tier BUY on 126, AVOID on 50, WATCHLIST on 44 and ACCUMULATE on 33. By year:
+  2022 RICH 47, FAIR 4, CHEAP 1; 2023 RICH 46, FAIR 6; 2024 FAIR 31, RICH 21; 2025 FAIR 39, RICH 8, CHEAP 5; 2026 FAIR 38, CHEAP 7 (BUY on
+  all 45). The window is the full ten years throughout, and the EPP floor is 19-20x of the anchor year's EPS on every date.
+- **January-February 2022 rests on FY21's $1.725:** $228.40-272.47 is 132.4-158.0x, the 97th-98th percentile of a window whose median is
+  26.3-26.8x, 597-731% over a 19x floor ($32.77): RICH and AVOID, Ratio B infinite.
+- **From the Q4 FY22 print FY23E is FY22's $3.85** (2022-02-18 to 2023-02-17, 53 dates): $112.27-276.92 is 29.2-71.9x (the 45th-94th
+  percentile of a median of 27.4-34.2x), 54-279% over a 19x floor ($73.15): RICH on 48, FAIR on 4 (2022-05-20, 2022-06-17, 2022-07-08,
+  2022-07-15) and CHEAP on 2022-07-01 (Ratio B 0.76). BASE follows the guides down: +42.8%/yr (Q1 FY23), +24.3% (Q2 FY23), +2.8% on the
+  preliminary $6.70 billion (2022-08-12, 2022-08-19), -17.1% (Q3 FY23), -21.7% (Q4 FY23); the proxy composite falls from 2.85 to 2.35 (Q1
+  FY23), 1.35 (Q2 FY23: gross margin -2,130bp, the opex gap +33.4pp, inventories +80.9pp over revenue, operating margin -3,012bp) and 1.15
+  (Q3 FY23, every signal at BEAR). The tier is AVOID on the 9 dates to 2022-04-14, WATCHLIST or ACCUMULATE on the 18 to 2022-08-19, BUY on
+  10 of the 12 after the Q2 FY23 print (Ratio B 0.43-0.95 at $112-163), then ACCUMULATE on 8, WATCHLIST on 2, AVOID on 3 and BUY on 1. BULL is the FY2013-FY2022 CAGR
+  (+37.1%/yr) from 2022-05-27 to 2023-02-17, BASE before; XBULL the FY2016-FY2018 run (+111.3%/yr); BEAR FY2020's fall (-31.8%/yr).
+- **From the Q4 FY23 print FY24E is FY23's $1.74,** the year of the Arm charge and the inventory charges (2023-02-24 to 2024-02-16, 52
+  dates): $229.65-726.13 is 132.0-417.3x, the 96th-100th percentile of a median of 34.6-38.0x, 595-2,096% over a 19x floor ($33.06): RICH
+  on 42 (AVOID on 28, WATCHLIST on 11, ACCUMULATE on 3), Ratio B infinite on 26 dates to 2023-08-18. BEAR is FY2023's fall (-54.8%/yr, $3.85 to $1.74). The
+  Q2 FY24 guide (+164.4% to +175.2%) puts BASE at +169.2%/yr and the Q3 FY24 guide (+223.9% to +237.1%) at +229.9%: FAIR on the 10 dates from
+  2023-11-24 to 2024-01-26 (BUY on 8, ACCUMULATE on 2; Ratio B 0.57-0.80), though the stock is at 269-417x, then RICH and ACCUMULATE on the
+  3 to 2024-02-16.
+- **From the Q4 FY24 print FY25E is FY24's $11.93** ($1.193 after the split; 2024-02-23 to 2025-02-21, 53 dates): $762.00-1,208.88 before
+  the split and $102.83-147.63 after is 63.9-123.7x (the 81st-98th percentile of a median of 36.4-39.0x), 236-551% over a 19x floor
+  ($226.67, $22.67 after the split): FAIR on 27 and RICH on 26 (BUY 19, WATCHLIST 19, ACCUMULATE 11, AVOID 4). BASE +232.6%/yr (the Q1 FY25
+  guide), then +106.2%, +78.2% and +68.6%; BULL and XBULL equal BASE while it exceeds them; the proxy composite peaks at 3.70 (Q3 FY24 to
+  Q1 FY25: revenue +205.5% to +265.3%, gross margin +1,262 to +2,039bp, operating margin +3,517 to +4,736bp, the opex and inventory gaps
+  far below revenue).
+- **From the Q4 FY25 print FY26E is FY25's $2.94** (2025-02-28 to 2026-02-20, 52 dates): $94.31-202.49 is 32.1-68.9x (the 30th-84th
+  percentile of a median of 38.0-40.1x), 69-244% over a 19-20x floor ($55.86-58.80): FAIR on 47 and CHEAP on 5 at the April 2025 low
+  (2025-03-28 to 2025-04-25: 32.1-37.8x, the 30th-49th percentile, Ratio B 0.26-0.33); BUY on 51. BASE +64.1%, +48.8% (the Q2 FY26 guide,
+  net of the H20 loss), +52.9% and +64.3%/yr. From the FY2025 10-K BEAR is -55.8%/yr ($0.385 to $0.17 on its rounding) and XBULL the
+  FY2023-FY2025 run (+315.9%/yr).
+- **From the Q4 FY26 print FY27E is FY26's $4.90** (2026-02-27 to 2026-11-06, 37 dates): $167.52-233.95 is 34.2-47.7x (the 30th-74th
+  percentile of a median of 38.2-39.4x), 80-142% over a 19-20x floor ($93.10-98.00): FAIR on 30 and CHEAP on 7 (2026-02-27 to 2026-04-02 and
+  2026-11-06), BUY on all 37. BASE +77.7%, +95.3% and +90.1%/yr.
+- **The proxy composite** is 2.85 on Q3-Q4 FY22, 2.35 on Q1 FY23, 1.35 on Q2 FY23, 1.15 on Q3 FY23, 1.35 on Q4 FY23, 1.80 on Q1 FY24, 3.35
+  on Q2 FY24, 3.70 on Q3 FY24 to Q1 FY25, 3.00 on Q2 FY25, 2.80 on Q3 FY25, 2.50 on Q4 FY25, 2.00 on Q1 FY26 (the H20 charge: gross margin
+  -1,783bp, operating margin -1,582bp), 2.20 on Q2-Q3 FY26, 2.50 on Q4 FY26, 3.05 on Q1 FY27 and 3.00 on Q2 FY27.
+- **Robustness:** all eight variants agree on 99 of 253 dates, seven on 143 and six on 11.
+
+How far each call moves the classes (the 253 dates rebuilt with one encoding changed and classified offline; no outcome consulted):
+- every signal at its BEAR value: 71 classes (FAIR to RICH on 70 dates from 2022-05-20 to 2026-02-20, CHEAP to RICH on 2022-07-01), no
+  tier; at its XBULL value: 18 classes (RICH to FAIR or CHEAP on 2022-08-26 to 2023-01-06), no tier;
+- the next-quarter guides unused (the latest quarter's revenue growth throughout): 34 classes (RICH to FAIR on 32 dates of 2022, 2024 and
+  early 2025; FAIR to RICH on 2024-01-19 and 2024-01-26), 77 tiers;
+- FY2023 at the company's non-GAAP $3.34 instead of GAAP $1.74 (in the history and as FY24E): 30 classes (RICH to FAIR on 16 dates from
+  2023-08-25 to 2024-02-16; FAIR to RICH on 14 from 2024-06-07 to 2025-10-31, where the higher FY2023 lowers the window's P/Es), 38 tiers;
+- the preliminary Q2 FY23 revenue unused, DURABLE instead of CYCLICAL, and Q1 FY26 without the $4.5 billion H20 charge: none.
+The RICH calls of 2022-2023 rest on GAAP EPS of the last full year against the stock's own P/E history: FY21's $1.725 in early 2022,
+FY22's $3.85, then FY23's $1.74; the FAIR and CHEAP calls of 2024-2026 rest on the guides (BASE at +48% to +233%/yr) and on FY25's and
+FY26's EPS once they enter; the signals move the most classes, in both directions.
+
+Judgement calls that could carry hindsight:
+- FY2023 kept at GAAP $1.74, with the Arm termination cost and the inventory charges in (30 classes at the company's non-GAAP $3.34, which
+  also excludes stock-based compensation), by a builder who knows what FY2024 earned;
+- the next-quarter guides used at all (34 classes), read against the year-ago quarter even when they imply BASE growth of +160% to +233%/yr
+  (the engine has no cap on BASE), and the preliminary Q2 FY23 revenue read as a guide (no class moves without it);
+- the signals (71 classes at BEAR, 18 at XBULL), unchanged since 2008, for a company whose data center revenue became most of the total;
+- the charges left in as published (the Arm cost, the H20 charge: no class moves without the H20 charge);
+- CYCLICAL kept (no class moves on DURABLE), GENAI kept off the watch list, and the hyperscalers' in-house chips left in the "why" with no
+  theme, by a builder who knows how the AI build-out went (text only: the theme slot is constant either way);
+- the 10-Ks' rounded restatements used as published (FY2023 $0.17 instead of $0.174, which sets BEAR at -55.8% and XBULL at +315.9%/yr
+  from 2025-02-28);
+- the builder had read the 2008-2021 NVDA findings (hindsight) before this range was built. Every 2022-2026 encoding applies a rule that
+  existed before, and none was tuned on an outcome.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -15397,7 +15595,13 @@ What the gates enforce:
   through 2013: the FY2010-FY2013 10-Ks keep the integration risk (Arrandale, Sandy Bridge, then "AMD's APU product and Intel's CPUs
   with integrated graphics"), and CLOUD (from 2012-10-30, public cloud displacing on-premise hardware) is not NVIDIA's substitution
   story: the FY2013 10-K names the cloud only as a market it targets with its own GRID products ("We target four market segments -
-  Gaming, Enterprise, Mobile and Cloud"), the AVGO FY2012 reading ("NVDA 2010-2013").
+  Gaming, Enterprise, Mobile and Cloud"), the AVGO FY2012 reading ("NVDA 2010-2013"). It stays empty through 2021: the FY2014-FY2021
+  10-Ks name artificial intelligence, deep learning, autonomous cars and cryptocurrency mining as NVIDIA's own markets, not as substitutes
+  for its products ("NVDA 2014-2017", "NVDA 2018-2021"). It stays empty through 2026: GENAI (from 2022-11-30) is scoped to AI substituting
+  software seats, IT services, information, search, education and mobility, and the FY2022-FY2026 10-Ks name AI as NVIDIA's own market
+  and offering, never as a substitute for its products; the chips large cloud and internet companies design in house, among NVIDIA's
+  competitors from the FY2022 10-K, are a competitive field that no theme in the registry covers, so the words stay in the "why" (the PEP
+  obesity rule) ("NVDA 2022-2026").
 
 ## Workflow
 

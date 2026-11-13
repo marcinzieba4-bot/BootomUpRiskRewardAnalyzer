@@ -974,6 +974,286 @@
    "title": "NVIDIA Q3 FY22 results (8-K)",
    "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581021000160/q3fy22pr.htm",
    "supports": "Q3 FY22 statements and balance sheet; the Q4 FY22 outlook"
+  },
+  "NV140": {
+   "published": "2021-05-27",
+   "filed": "accepted 2021-05-26 16:35 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q1 FY22 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581021000064/nvda-20210502.htm",
+   "supports": "inventories at 2021-05-02, the year-ago quarter of Q1 FY23"
+  },
+  "NV141": {
+   "published": "2021-08-23",
+   "filed": "accepted 2021-08-20 16:32 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q2 FY22 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581021000131/nvda-20210801.htm",
+   "supports": "inventories at 2021-08-01, the year-ago quarter of Q2 FY23"
+  },
+  "NV142": {
+   "published": "2021-11-22",
+   "filed": "accepted 2021-11-19 21:16 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q3 FY22 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581021000163/nvda-20211031.htm",
+   "supports": "inventories at 2021-10-31, the year-ago quarter of Q3 FY23"
+  },
+  "NV143": {
+   "published": "2022-02-17",
+   "filed": "accepted 2022-02-16 16:21 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q4 FY22 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581022000008/q4fy22pr.htm",
+   "supports": "Q4 FY22 and fiscal 2022 statements and balance sheet; the Q1 FY23 outlook"
+  },
+  "NV144": {
+   "published": "2022-03-18",
+   "filed": "accepted 2022-03-17 20:33 ET, after the close; dated the next trading day",
+   "title": "NVIDIA FY2022 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581022000036/nvda-20220130.htm",
+   "supports": "statements of income fiscal 2020-2022 (no selected financial data), segments, cash flows, risk factors (the FY2022 history vintage)"
+  },
+  "NV145": {
+   "published": "2022-05-26",
+   "filed": "accepted 2022-05-25 16:22 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q1 FY23 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581022000073/q1fy23pr.htm",
+   "supports": "Q1 FY23 statements and balance sheet; the Q2 FY23 outlook"
+  },
+  "NV146": {
+   "published": "2022-05-31",
+   "filed": "accepted 2022-05-27 16:21 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q1 FY23 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581022000079/nvda-20220501.htm",
+   "supports": "inventories at 2022-05-01, the year-ago quarter of Q1 FY24"
+  },
+  "NV147": {
+   "published": "2022-08-08",
+   "filed": "accepted 2022-08-08 09:16 ET, before the open",
+   "title": "NVIDIA preliminary Q2 FY23 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581022000133/pressrelease.htm",
+   "supports": "Q2 FY23 revenue of approximately $6.70 billion against the May outlook of $8.10 billion"
+  },
+  "NV148": {
+   "published": "2022-08-25",
+   "filed": "accepted 2022-08-24 16:24 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q2 FY23 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581022000136/q2fy23pr.htm",
+   "supports": "Q2 FY23 statements and balance sheet; the Q3 FY23 outlook"
+  },
+  "NV149": {
+   "published": "2022-09-01",
+   "filed": "accepted 2022-08-31 17:00 ET, after the close; dated the next trading day",
+   "title": "NVIDIA export license requirement (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581022000146/nvda-20220826.htm",
+   "supports": "the A100 and H100 license requirement for China; the Q3 FY23 outlook's China sales, in words"
+  },
+  "NV150": {
+   "published": "2022-09-01",
+   "filed": "accepted 2022-08-31 17:01 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q2 FY23 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581022000147/nvda-20220731.htm",
+   "supports": "inventories at 2022-07-31, the year-ago quarter of Q2 FY24"
+  },
+  "NV151": {
+   "published": "2022-11-17",
+   "filed": "accepted 2022-11-16 16:21 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q3 FY23 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581022000163/q3fy23pr.htm",
+   "supports": "Q3 FY23 statements and balance sheet; the Q4 FY23 outlook"
+  },
+  "NV152": {
+   "published": "2022-11-21",
+   "filed": "accepted 2022-11-18 16:35 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q3 FY23 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581022000166/nvda-20221030.htm",
+   "supports": "inventories at 2022-10-30, the year-ago quarter of Q3 FY24"
+  },
+  "NV153": {
+   "published": "2023-02-23",
+   "filed": "accepted 2023-02-22 16:52 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q4 FY23 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581023000014/q4fy23pr.htm",
+   "supports": "Q4 FY23 and fiscal 2023 statements and balance sheet; the Q1 FY24 outlook"
+  },
+  "NV154": {
+   "published": "2023-02-27",
+   "filed": "accepted 2023-02-24 17:23 ET, after the close; dated the next trading day",
+   "title": "NVIDIA FY2023 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581023000017/nvda-20230129.htm",
+   "supports": "statements of income fiscal 2021-2023 (no selected financial data), segments, cash flows, risk factors (the FY2023 history vintage)"
+  },
+  "NV155": {
+   "published": "2023-05-25",
+   "filed": "accepted 2023-05-24 16:22 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q1 FY24 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581023000087/q1fy24pr.htm",
+   "supports": "Q1 FY24 statements and balance sheet; the Q2 FY24 outlook"
+  },
+  "NV156": {
+   "published": "2023-05-30",
+   "filed": "accepted 2023-05-26 16:17 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q1 FY24 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581023000093/nvda-20230430.htm",
+   "supports": "inventories at 2023-04-30, the year-ago quarter of Q1 FY25"
+  },
+  "NV157": {
+   "published": "2023-08-24",
+   "filed": "accepted 2023-08-23 16:21 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q2 FY24 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581023000171/q2fy24pr.htm",
+   "supports": "Q2 FY24 statements and balance sheet; the Q3 FY24 outlook"
+  },
+  "NV158": {
+   "published": "2023-08-28",
+   "filed": "accepted 2023-08-25 19:36 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q2 FY24 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581023000175/nvda-20230730.htm",
+   "supports": "inventories at 2023-07-30, the year-ago quarter of Q2 FY25"
+  },
+  "NV159": {
+   "published": "2023-11-22",
+   "filed": "accepted 2023-11-21 16:22 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q3 FY24 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581023000225/q3fy24pr.htm",
+   "supports": "Q3 FY24 statements and balance sheet; the Q4 FY24 outlook"
+  },
+  "NV160": {
+   "published": "2023-11-22",
+   "filed": "accepted 2023-11-21 16:36 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q3 FY24 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581023000227/nvda-20231029.htm",
+   "supports": "inventories at 2023-10-29, the year-ago quarter of Q3 FY25"
+  },
+  "NV161": {
+   "published": "2024-02-22",
+   "filed": "accepted 2024-02-21 16:22 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q4 FY24 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000028/q4fy24pr.htm",
+   "supports": "Q4 FY24 and fiscal 2024 statements and balance sheet; the Q1 FY25 outlook"
+  },
+  "NV162": {
+   "published": "2024-02-22",
+   "filed": "accepted 2024-02-21 16:36 ET, after the close; dated the next trading day",
+   "title": "NVIDIA FY2024 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm",
+   "supports": "statements of income fiscal 2022-2024 (no selected financial data), segments, cash flows, risk factors (the FY2024 history vintage)"
+  },
+  "NV163": {
+   "published": "2024-05-23",
+   "filed": "accepted 2024-05-22 16:21 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q1 FY25 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000113/q1fy25pr.htm",
+   "supports": "Q1 FY25 statements and balance sheet; the Q2 FY25 outlook; the ten-for-one split; the $0.10 quarterly dividend"
+  },
+  "NV164": {
+   "published": "2024-05-30",
+   "filed": "accepted 2024-05-29 16:36 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q1 FY25 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000124/nvda-20240428.htm",
+   "supports": "inventories at 2024-04-28, the year-ago quarter of Q1 FY26"
+  },
+  "NV165": {
+   "published": "2024-08-29",
+   "filed": "accepted 2024-08-28 16:21 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q2 FY25 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000262/q2fy25pr.htm",
+   "supports": "Q2 FY25 statements and balance sheet (after the split); the Q3 FY25 outlook"
+  },
+  "NV166": {
+   "published": "2024-08-29",
+   "filed": "accepted 2024-08-28 17:05 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q2 FY25 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000264/nvda-20240728.htm",
+   "supports": "inventories at 2024-07-28, the year-ago quarter of Q2 FY26"
+  },
+  "NV167": {
+   "published": "2024-11-21",
+   "filed": "accepted 2024-11-20 16:21 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q3 FY25 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000315/q3fy25pr.htm",
+   "supports": "Q3 FY25 statements and balance sheet; the Q4 FY25 outlook"
+  },
+  "NV168": {
+   "published": "2024-11-21",
+   "filed": "accepted 2024-11-20 16:31 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q3 FY25 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000316/nvda-20241027.htm",
+   "supports": "inventories at 2024-10-27, the year-ago quarter of Q3 FY26"
+  },
+  "NV169": {
+   "published": "2025-02-27",
+   "filed": "accepted 2025-02-26 16:21 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q4 FY25 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000021/q4fy25pr.htm",
+   "supports": "Q4 FY25 and fiscal 2025 statements and balance sheet; the Q1 FY26 outlook"
+  },
+  "NV170": {
+   "published": "2025-02-27",
+   "filed": "accepted 2025-02-26 16:48 ET, after the close; dated the next trading day",
+   "title": "NVIDIA FY2025 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000023/nvda-20250126.htm",
+   "supports": "statements of income fiscal 2023-2025 (no selected financial data), segments, cash flows, risk factors (the FY2025 history vintage)"
+  },
+  "NV171": {
+   "published": "2025-05-29",
+   "filed": "accepted 2025-05-28 16:21 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q1 FY26 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000115/q1fy26pr.htm",
+   "supports": "Q1 FY26 statements and balance sheet; the Q2 FY26 outlook"
+  },
+  "NV172": {
+   "published": "2025-05-29",
+   "filed": "accepted 2025-05-28 16:32 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q1 FY26 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000116/nvda-20250427.htm",
+   "supports": "inventories at 2025-04-27, the year-ago quarter of Q1 FY27"
+  },
+  "NV173": {
+   "published": "2025-08-28",
+   "filed": "accepted 2025-08-27 16:22 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q2 FY26 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000207/q2fy26pr.htm",
+   "supports": "Q2 FY26 statements and balance sheet; the Q3 FY26 outlook"
+  },
+  "NV174": {
+   "published": "2025-08-28",
+   "filed": "accepted 2025-08-27 16:52 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q2 FY26 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000209/nvda-20250727.htm",
+   "supports": "inventories at 2025-07-27, the year-ago quarter of Q2 FY27"
+  },
+  "NV175": {
+   "published": "2025-11-20",
+   "filed": "accepted 2025-11-19 16:20 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q3 FY26 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000228/q3fy26pr.htm",
+   "supports": "Q3 FY26 statements and balance sheet; the Q4 FY26 outlook"
+  },
+  "NV176": {
+   "published": "2026-02-26",
+   "filed": "accepted 2026-02-25 16:31 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q4 FY26 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000019/q4fy26pr.htm",
+   "supports": "Q4 FY26 and fiscal 2026 statements and balance sheet; the Q1 FY27 outlook"
+  },
+  "NV177": {
+   "published": "2026-02-26",
+   "filed": "accepted 2026-02-25 16:42 ET, after the close; dated the next trading day",
+   "title": "NVIDIA FY2026 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
+   "supports": "statements of income fiscal 2024-2026 (no selected financial data), segments, cash flows, risk factors (the FY2026 history vintage)"
+  },
+  "NV178": {
+   "published": "2026-05-21",
+   "filed": "accepted 2026-05-20 16:21 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q1 FY27 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000051/q1fy27pr.htm",
+   "supports": "Q1 FY27 statements and balance sheet; the Q2 FY27 outlook; the $0.25 quarterly dividend"
+  },
+  "NV179": {
+   "published": "2026-08-27",
+   "filed": "accepted 2026-08-26 16:21 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q2 FY27 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/q2fy27pr.htm",
+   "supports": "Q2 FY27 statements and balance sheet; the Q3 FY27 outlook"
   }
  },
  "listing": {
@@ -3479,6 +3759,802 @@
     ]
    ],
    "groups_basis": "FY21 segment revenue (FY2021 10-K)",
+   "company": "NVIDIA Corporation",
+   "exchange": "NASDAQ Global Select Market",
+   "pe_window_start": null
+  },
+  {
+   "published": "2022-03-18",
+   "sources": [
+    "NV144",
+    "NV101",
+    "NV106",
+    "NV118",
+    "NV126",
+    "NV134"
+   ],
+   "fy_label": "FY22",
+   "kind": "CYCLICAL",
+   "why": "'NVIDIA pioneered accelerated computing to help solve the most challenging computational problems.' 'The market for our products is intensely competitive and is characterized by rapid technological change and evolving industry standards.' Its current competitors include 'suppliers and licensors designing discrete and integrated GPUs, custom chips and other accelerated computing solutions, such as Advanced Micro Devices, or AMD, and Intel Corporation, or Intel' and 'large internet services companies with internal teams designing chips that incorporate accelerated computing functionality as part of their internal solutions or platforms, such as Alibaba Group, Alphabet, and Amazon' (FY2022 10-K); CYCLICAL kept although the 10-K no longer calls the business cyclical (the BKR FY2015 rule; the class label only); the 10-K names AI as the field NVIDIA builds platforms for, a market it serves rather than a substitute for its products, so no theme in taxonomy_eras.json applies (the FY2013 10-K's cloud reading), and chips designed in-house by large cloud and internet companies, like GPUs integrated into other processors, stay here (the PEP obesity rule)",
+   "eps_normalized": {
+    "2013": 0.9,
+    "2014": 0.74,
+    "2015": 1.12,
+    "2016": 1.08,
+    "2017": 2.57,
+    "2018": 4.82,
+    "2019": 6.63,
+    "2020": 1.13,
+    "2021": 1.73,
+    "2022": 3.85
+   },
+   "eps_sources": {
+    "2013": "NV101",
+    "2014": "NV106",
+    "2015": "NV118",
+    "2016": "NV126",
+    "2017": "NV126",
+    "2018": "NV126",
+    "2019": "NV134",
+    "2020": "NV144",
+    "2021": "NV144",
+    "2022": "NV144"
+   },
+   "eps_published": {
+    "2013": "2017-03-02",
+    "2014": "2018-03-01",
+    "2015": "2019-02-22",
+    "2016": "2020-02-21",
+    "2017": "2020-02-21",
+    "2018": "2020-02-21",
+    "2019": "2021-03-01",
+    "2020": "2022-03-18",
+    "2021": "2022-03-18",
+    "2022": "2022-03-18"
+   },
+   "share_basis": {},
+   "eps_excluded": {},
+   "revenue_usd_b": {
+    "2013": 4.28,
+    "2014": 4.13,
+    "2015": 4.682,
+    "2016": 5.01,
+    "2017": 6.91,
+    "2018": 9.714,
+    "2019": 11.716,
+    "2020": 10.918,
+    "2021": 16.675,
+    "2022": 26.914
+   },
+   "revenue_sources": {
+    "2013": "NV101",
+    "2014": "NV106",
+    "2015": "NV118",
+    "2016": "NV126",
+    "2017": "NV126",
+    "2018": "NV126",
+    "2019": "NV134",
+    "2020": "NV144",
+    "2021": "NV144",
+    "2022": "NV144"
+   },
+   "diluted_shares_m": {
+    "2013": 625.0,
+    "2014": 595.0,
+    "2015": 563.0,
+    "2016": 569.0,
+    "2017": 649.0,
+    "2018": 632.0,
+    "2019": 625.0,
+    "2020": 2472.0,
+    "2021": 2510.0,
+    "2022": 2535.0
+   },
+   "shares_sources": {
+    "2013": "NV101",
+    "2014": "NV106",
+    "2015": "NV118",
+    "2016": "NV126",
+    "2017": "NV126",
+    "2018": "NV126",
+    "2019": "NV134",
+    "2020": "NV144",
+    "2021": "NV144",
+    "2022": "NV144"
+   },
+   "shares_published": {
+    "2013": "2017-03-02",
+    "2014": "2018-03-01",
+    "2015": "2019-02-22",
+    "2016": "2020-02-21",
+    "2017": "2020-02-21",
+    "2018": "2020-02-21",
+    "2019": "2021-03-01",
+    "2020": "2022-03-18",
+    "2021": "2022-03-18",
+    "2022": "2022-03-18"
+   },
+   "fiscal_year_ends": {
+    "2013": "2013-01-27",
+    "2014": "2014-01-26",
+    "2015": "2015-01-25",
+    "2016": "2016-01-31",
+    "2017": "2017-01-29",
+    "2018": "2018-01-28",
+    "2019": "2019-01-27",
+    "2020": "2020-01-26",
+    "2021": "2021-01-31",
+    "2022": "2022-01-30"
+   },
+   "normalization": "GAAP diluted EPS (NVIDIA reports no discontinued operations), each year from the latest filing that reports it: FY13 FY2017 10-K, FY14 FY2018 10-K, FY15 FY2019 10-K, FY16 FY2020 10-K, FY17 FY2020 10-K, FY18 FY2020 10-K, FY19 FY2021 10-K, FY20 FY2022 10-K, FY21 FY2022 10-K, FY22 FY2022 10-K; in $ millions and millions of shares, as the 10-Ks publish them; the FY2022 10-K, like every 10-K from FY2021, has no selected financial data, so it gives FY20-FY22 from its statement of income and earlier years keep the latest 10-K that reported them; the company's non-GAAP EPS excludes stock-based compensation, which recurs, so GAAP stands",
+   "eps_first_excluded": {},
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 37.31,
+   "prev_fy_op_margin_note": "FY22 income from operations $10,041M / revenue $26,914M (FY2022 10-K)",
+   "prev_fy_pretax_margin": 36.94,
+   "prev_fy_pretax_margin_note": "FY22 income before income tax $9,941M / revenue $26,914M (FY2022 10-K)",
+   "prev_fy_gross_margin": 64.93,
+   "prev_fy_sales_growth": 61.4,
+   "tax_rate": 0.019,
+   "tax_note": "FY22 income tax expense $189M / pre-tax $9,941M (FY2022 10-K)",
+   "fcf_b": 8.132,
+   "fcf_label": "FY22",
+   "fcf_note": "net cash provided by operating activities $9,108M less purchases related to property and equipment and intangible assets $976M",
+   "cash_b": 21.208,
+   "dividend_annual": null,
+   "dividend_note": "none stated in the FY2022 10-K: the latest rate a filing states stands",
+   "cash_return_text": "'Since the inception of our share repurchase program, we have repurchased an aggregate of 1.04 billion shares for a total cost of $7.08 billion through January 30, 2022.' (FY2022 10-K)",
+   "business_line": "accelerated computing: Graphics (GeForce, GeForce NOW, Quadro/NVIDIA RTX, vGPU, infotainment, Omniverse) and Compute & Networking (Data Center platforms, Mellanox networking, automotive AI, CMP, Jetson, NVIDIA AI Enterprise)",
+   "groups": [
+    [
+     "Graphics",
+     15.868,
+     61.4
+    ],
+    [
+     "Compute & Networking",
+     11.046,
+     61.5
+    ]
+   ],
+   "groups_basis": "FY22 segment revenue (FY2022 10-K)",
+   "company": "NVIDIA Corporation",
+   "exchange": "NASDAQ Global Select Market",
+   "pe_window_start": null
+  },
+  {
+   "published": "2023-02-27",
+   "sources": [
+    "NV154",
+    "NV106",
+    "NV118",
+    "NV126",
+    "NV134",
+    "NV144"
+   ],
+   "fy_label": "FY23",
+   "kind": "CYCLICAL",
+   "why": "'NVIDIA pioneered accelerated computing to help solve the most challenging computational problems.' 'The market for our products is intensely competitive and is characterized by rapid technological change and evolving industry standards.' Its current competitors include 'suppliers and licensors of hardware and software for discrete and integrated GPUs, custom chips and other accelerated computing solutions, including solutions offered for AI, such as Advanced Micro Devices, Inc., or AMD, and Intel Corporation, or Intel' and 'large cloud services companies with internal teams designing chips and software that incorporate accelerated or AI computing functionality as part of their internal solutions or platforms, such as Alibaba Group, Alphabet Inc., Amazon, Inc., and Baidu, Inc.' (FY2023 10-K); CYCLICAL kept although the 10-K no longer calls the business cyclical (the BKR FY2015 rule; the class label only); the 10-K names AI as the field NVIDIA builds platforms for, a market it serves rather than a substitute for its products, so no theme in taxonomy_eras.json applies (the FY2013 10-K's cloud reading), and chips designed in-house by large cloud and internet companies, like GPUs integrated into other processors, stay here (the PEP obesity rule); GENAI, live from 2022-11-30, is scoped to AI substituting software seats, IT services and BPO hours, professional information, search, education content and mobility: the 10-K names AI as NVIDIA's own market and offering ('Issues relating to the responsible use of our technologies, including AI in our offerings, may result in reputational and financial harm and liability.'), never as a substitute for its products, so it stays off the watch list (the AVGO reading)",
+   "eps_normalized": {
+    "2014": 0.74,
+    "2015": 1.12,
+    "2016": 1.08,
+    "2017": 2.57,
+    "2018": 4.82,
+    "2019": 6.63,
+    "2020": 1.13,
+    "2021": 1.73,
+    "2022": 3.85,
+    "2023": 1.74
+   },
+   "eps_sources": {
+    "2014": "NV106",
+    "2015": "NV118",
+    "2016": "NV126",
+    "2017": "NV126",
+    "2018": "NV126",
+    "2019": "NV134",
+    "2020": "NV144",
+    "2021": "NV154",
+    "2022": "NV154",
+    "2023": "NV154"
+   },
+   "eps_published": {
+    "2014": "2018-03-01",
+    "2015": "2019-02-22",
+    "2016": "2020-02-21",
+    "2017": "2020-02-21",
+    "2018": "2020-02-21",
+    "2019": "2021-03-01",
+    "2020": "2022-03-18",
+    "2021": "2023-02-27",
+    "2022": "2023-02-27",
+    "2023": "2023-02-27"
+   },
+   "share_basis": {},
+   "eps_excluded": {},
+   "revenue_usd_b": {
+    "2014": 4.13,
+    "2015": 4.682,
+    "2016": 5.01,
+    "2017": 6.91,
+    "2018": 9.714,
+    "2019": 11.716,
+    "2020": 10.918,
+    "2021": 16.675,
+    "2022": 26.914,
+    "2023": 26.974
+   },
+   "revenue_sources": {
+    "2014": "NV106",
+    "2015": "NV118",
+    "2016": "NV126",
+    "2017": "NV126",
+    "2018": "NV126",
+    "2019": "NV134",
+    "2020": "NV144",
+    "2021": "NV154",
+    "2022": "NV154",
+    "2023": "NV154"
+   },
+   "diluted_shares_m": {
+    "2014": 595.0,
+    "2015": 563.0,
+    "2016": 569.0,
+    "2017": 649.0,
+    "2018": 632.0,
+    "2019": 625.0,
+    "2020": 2472.0,
+    "2021": 2510.0,
+    "2022": 2535.0,
+    "2023": 2507.0
+   },
+   "shares_sources": {
+    "2014": "NV106",
+    "2015": "NV118",
+    "2016": "NV126",
+    "2017": "NV126",
+    "2018": "NV126",
+    "2019": "NV134",
+    "2020": "NV144",
+    "2021": "NV154",
+    "2022": "NV154",
+    "2023": "NV154"
+   },
+   "shares_published": {
+    "2014": "2018-03-01",
+    "2015": "2019-02-22",
+    "2016": "2020-02-21",
+    "2017": "2020-02-21",
+    "2018": "2020-02-21",
+    "2019": "2021-03-01",
+    "2020": "2022-03-18",
+    "2021": "2023-02-27",
+    "2022": "2023-02-27",
+    "2023": "2023-02-27"
+   },
+   "fiscal_year_ends": {
+    "2014": "2014-01-26",
+    "2015": "2015-01-25",
+    "2016": "2016-01-31",
+    "2017": "2017-01-29",
+    "2018": "2018-01-28",
+    "2019": "2019-01-27",
+    "2020": "2020-01-26",
+    "2021": "2021-01-31",
+    "2022": "2022-01-30",
+    "2023": "2023-01-29"
+   },
+   "normalization": "GAAP diluted EPS (NVIDIA reports no discontinued operations), each year from the latest filing that reports it: FY14 FY2018 10-K, FY15 FY2019 10-K, FY16 FY2020 10-K, FY17 FY2020 10-K, FY18 FY2020 10-K, FY19 FY2021 10-K, FY20 FY2022 10-K, FY21 FY2023 10-K, FY22 FY2023 10-K, FY23 FY2023 10-K; in $ millions and millions of shares, as the 10-Ks publish them; the FY2023 10-K, like every 10-K from FY2021, has no selected financial data, so it gives FY21-FY23 from its statement of income and earlier years keep the latest 10-K that reported them; the company's non-GAAP EPS excludes stock-based compensation, which recurs, so GAAP stands",
+   "eps_first_excluded": {},
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 15.66,
+   "prev_fy_op_margin_note": "FY23 income from operations $4,224M / revenue $26,974M (FY2023 10-K)",
+   "prev_fy_pretax_margin": 15.5,
+   "prev_fy_pretax_margin_note": "FY23 income before income tax $4,181M / revenue $26,974M (FY2023 10-K)",
+   "prev_fy_gross_margin": 56.93,
+   "prev_fy_sales_growth": 0.2,
+   "tax_rate": -0.0447,
+   "tax_note": "FY23 income tax expense $-187M / pre-tax $4,181M (FY2023 10-K)",
+   "fcf_b": 3.808,
+   "fcf_label": "FY23",
+   "fcf_note": "net cash provided by operating activities $5,641M less purchases related to property and equipment and intangible assets $1,833M",
+   "cash_b": 13.296,
+   "dividend_annual": null,
+   "dividend_note": "none stated in the FY2023 10-K: the latest rate a filing states stands",
+   "cash_return_text": "'Since the inception of our share repurchase program, we have repurchased an aggregate of 1.10 billion shares for a total cost of $17.12 billion through January 29, 2023.' (FY2023 10-K)",
+   "business_line": "accelerated computing: Compute & Networking (Data Center accelerated computing, networking, automotive AI, Jetson, NVIDIA AI Enterprise, CMP) and Graphics (GeForce, GeForce NOW, Quadro/NVIDIA RTX, vGPU, infotainment, Omniverse Enterprise)",
+   "groups": [
+    [
+     "Compute & Networking",
+     15.068,
+     36.4
+    ],
+    [
+     "Graphics",
+     11.906,
+     -25.0
+    ]
+   ],
+   "groups_basis": "FY23 segment revenue (FY2023 10-K)",
+   "company": "NVIDIA Corporation",
+   "exchange": "NASDAQ Global Select Market",
+   "pe_window_start": null
+  },
+  {
+   "published": "2024-02-22",
+   "sources": [
+    "NV162",
+    "NV118",
+    "NV126",
+    "NV134",
+    "NV144",
+    "NV154"
+   ],
+   "fy_label": "FY24",
+   "kind": "CYCLICAL",
+   "why": "'NVIDIA pioneered accelerated computing to help solve the most challenging computational problems. NVIDIA is now a full-stack computing infrastructure company with data-center-scale offerings that are reshaping industry.' 'The market for our products is intensely competitive and is characterized by rapid technological change and evolving industry standards.' Its current competitors include 'suppliers and licensors of hardware and software for discrete and integrated GPUs, custom chips and other accelerated computing solutions, including solutions offered for AI, such as Advanced Micro Devices, Inc., or AMD, Huawei Technologies Co. Ltd., or Huawei, and Intel Corporation, or Intel' and 'large cloud services companies with internal teams designing hardware and software that incorporate accelerated or AI computing functionality as part of their internal solutions or platforms, such as Alibaba Group, Alphabet Inc., Amazon, Inc., or Amazon, Baidu, Inc., Huawei, and Microsoft Corporation, or Microsoft' (FY2024 10-K); CYCLICAL kept although the 10-K no longer calls the business cyclical (the BKR FY2015 rule; the class label only); the 10-K names AI as the field NVIDIA builds platforms for, a market it serves rather than a substitute for its products, so no theme in taxonomy_eras.json applies (the FY2013 10-K's cloud reading), and chips designed in-house by large cloud and internet companies, like GPUs integrated into other processors, stay here (the PEP obesity rule); GENAI, live from 2022-11-30, is scoped to AI substituting software seats, IT services and BPO hours, professional information, search, education content and mobility: the 10-K names AI as NVIDIA's own market and offering ('Issues relating to the responsible use of our technologies, including AI in our offerings, may result in reputational or financial harm and liability.'), never as a substitute for its products, so it stays off the watch list (the AVGO reading)",
+   "eps_normalized": {
+    "2015": 1.12,
+    "2016": 1.08,
+    "2017": 2.57,
+    "2018": 4.82,
+    "2019": 6.63,
+    "2020": 1.13,
+    "2021": 1.73,
+    "2022": 3.85,
+    "2023": 1.74,
+    "2024": 11.93
+   },
+   "eps_sources": {
+    "2015": "NV118",
+    "2016": "NV126",
+    "2017": "NV126",
+    "2018": "NV126",
+    "2019": "NV134",
+    "2020": "NV144",
+    "2021": "NV154",
+    "2022": "NV162",
+    "2023": "NV162",
+    "2024": "NV162"
+   },
+   "eps_published": {
+    "2015": "2019-02-22",
+    "2016": "2020-02-21",
+    "2017": "2020-02-21",
+    "2018": "2020-02-21",
+    "2019": "2021-03-01",
+    "2020": "2022-03-18",
+    "2021": "2023-02-27",
+    "2022": "2024-02-22",
+    "2023": "2024-02-22",
+    "2024": "2024-02-22"
+   },
+   "share_basis": {},
+   "eps_excluded": {},
+   "revenue_usd_b": {
+    "2015": 4.682,
+    "2016": 5.01,
+    "2017": 6.91,
+    "2018": 9.714,
+    "2019": 11.716,
+    "2020": 10.918,
+    "2021": 16.675,
+    "2022": 26.914,
+    "2023": 26.974,
+    "2024": 60.922
+   },
+   "revenue_sources": {
+    "2015": "NV118",
+    "2016": "NV126",
+    "2017": "NV126",
+    "2018": "NV126",
+    "2019": "NV134",
+    "2020": "NV144",
+    "2021": "NV154",
+    "2022": "NV162",
+    "2023": "NV162",
+    "2024": "NV162"
+   },
+   "diluted_shares_m": {
+    "2015": 563.0,
+    "2016": 569.0,
+    "2017": 649.0,
+    "2018": 632.0,
+    "2019": 625.0,
+    "2020": 2472.0,
+    "2021": 2510.0,
+    "2022": 2535.0,
+    "2023": 2507.0,
+    "2024": 2494.0
+   },
+   "shares_sources": {
+    "2015": "NV118",
+    "2016": "NV126",
+    "2017": "NV126",
+    "2018": "NV126",
+    "2019": "NV134",
+    "2020": "NV144",
+    "2021": "NV154",
+    "2022": "NV162",
+    "2023": "NV162",
+    "2024": "NV162"
+   },
+   "shares_published": {
+    "2015": "2019-02-22",
+    "2016": "2020-02-21",
+    "2017": "2020-02-21",
+    "2018": "2020-02-21",
+    "2019": "2021-03-01",
+    "2020": "2022-03-18",
+    "2021": "2023-02-27",
+    "2022": "2024-02-22",
+    "2023": "2024-02-22",
+    "2024": "2024-02-22"
+   },
+   "fiscal_year_ends": {
+    "2015": "2015-01-25",
+    "2016": "2016-01-31",
+    "2017": "2017-01-29",
+    "2018": "2018-01-28",
+    "2019": "2019-01-27",
+    "2020": "2020-01-26",
+    "2021": "2021-01-31",
+    "2022": "2022-01-30",
+    "2023": "2023-01-29",
+    "2024": "2024-01-28"
+   },
+   "normalization": "GAAP diluted EPS (NVIDIA reports no discontinued operations), each year from the latest filing that reports it: FY15 FY2019 10-K, FY16 FY2020 10-K, FY17 FY2020 10-K, FY18 FY2020 10-K, FY19 FY2021 10-K, FY20 FY2022 10-K, FY21 FY2023 10-K, FY22 FY2024 10-K, FY23 FY2024 10-K, FY24 FY2024 10-K; in $ millions and millions of shares, as the 10-Ks publish them; the FY2024 10-K, like every 10-K from FY2021, has no selected financial data, so it gives FY22-FY24 from its statement of income and earlier years keep the latest 10-K that reported them; the company's non-GAAP EPS excludes stock-based compensation, which recurs, so GAAP stands",
+   "eps_first_excluded": {},
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 54.12,
+   "prev_fy_op_margin_note": "FY24 operating income $32,972M / revenue $60,922M (FY2024 10-K)",
+   "prev_fy_pretax_margin": 55.51,
+   "prev_fy_pretax_margin_note": "FY24 income before income tax $33,818M / revenue $60,922M (FY2024 10-K)",
+   "prev_fy_gross_margin": 72.72,
+   "prev_fy_sales_growth": 125.9,
+   "tax_rate": 0.12,
+   "tax_note": "FY24 income tax expense $4,058M / pre-tax $33,818M (FY2024 10-K)",
+   "fcf_b": 27.021,
+   "fcf_label": "FY24",
+   "fcf_note": "net cash provided by operating activities $28,090M less purchases related to property and equipment and intangible assets $1,069M",
+   "cash_b": 25.984,
+   "dividend_annual": null,
+   "dividend_note": "none stated in the FY2024 10-K: the latest rate a filing states stands",
+   "cash_return_text": "'During fiscal year 2024, we repurchased 21 million shares of our common stock for $9.7 billion.' (FY2024 10-K)",
+   "business_line": "full-stack accelerated computing: Compute & Networking (Data Center accelerated computing, networking, automotive AI, Jetson, NVIDIA AI Enterprise, DGX Cloud) and Graphics (GeForce, GeForce NOW, Quadro/NVIDIA RTX, vGPU, infotainment, Omniverse Enterprise)",
+   "groups": [
+    [
+     "Compute & Networking",
+     47.405,
+     214.6
+    ],
+    [
+     "Graphics",
+     13.517,
+     13.5
+    ]
+   ],
+   "groups_basis": "FY24 segment revenue (FY2024 10-K)",
+   "company": "NVIDIA Corporation",
+   "exchange": "NASDAQ Global Select Market",
+   "pe_window_start": null
+  },
+  {
+   "published": "2025-02-27",
+   "sources": [
+    "NV170",
+    "NV126",
+    "NV134",
+    "NV144",
+    "NV154",
+    "NV162"
+   ],
+   "fy_label": "FY25",
+   "kind": "CYCLICAL",
+   "why": "'NVIDIA pioneered accelerated computing to help solve the most challenging computational problems. NVIDIA is now a full-stack computing infrastructure company with data-center-scale offerings that are reshaping industry.' 'The market for our products is intensely competitive and is characterized by rapid technological change and evolving industry standards.' Its current competitors include 'suppliers and licensors of hardware and software for discrete and integrated GPUs, custom chips and other accelerated computing solutions, including solutions offered for AI, such as Advanced Micro Devices, Inc., or AMD, Huawei Technologies Co. Ltd., or Huawei, and Intel Corporation, or Intel' and 'large cloud services companies with internal teams designing hardware and software that incorporate accelerated or AI computing functionality as part of their internal solutions or platforms, such as Alibaba Group, Alphabet Inc., Amazon, Inc., or Amazon, Baidu, Inc., Huawei, and Microsoft Corporation, or Microsoft' (FY2025 10-K); CYCLICAL kept although the 10-K no longer calls the business cyclical (the BKR FY2015 rule; the class label only); the 10-K names AI as the field NVIDIA builds platforms for, a market it serves rather than a substitute for its products, so no theme in taxonomy_eras.json applies (the FY2013 10-K's cloud reading), and chips designed in-house by large cloud and internet companies, like GPUs integrated into other processors, stay here (the PEP obesity rule); GENAI, live from 2022-11-30, is scoped to AI substituting software seats, IT services and BPO hours, professional information, search, education content and mobility: the 10-K names AI as NVIDIA's own market and offering ('Issues relating to the responsible use of our technologies, including AI in our offerings, may result in reputational or financial harm and liability.'), never as a substitute for its products, so it stays off the watch list (the AVGO reading)",
+   "eps_normalized": {
+    "2016": 1.08,
+    "2017": 2.57,
+    "2018": 4.82,
+    "2019": 6.63,
+    "2020": 1.13,
+    "2021": 1.73,
+    "2022": 3.85,
+    "2023": 0.17,
+    "2024": 1.19,
+    "2025": 2.94
+   },
+   "eps_sources": {
+    "2016": "NV126",
+    "2017": "NV126",
+    "2018": "NV126",
+    "2019": "NV134",
+    "2020": "NV144",
+    "2021": "NV154",
+    "2022": "NV162",
+    "2023": "NV170",
+    "2024": "NV170",
+    "2025": "NV170"
+   },
+   "eps_published": {
+    "2016": "2020-02-21",
+    "2017": "2020-02-21",
+    "2018": "2020-02-21",
+    "2019": "2021-03-01",
+    "2020": "2022-03-18",
+    "2021": "2023-02-27",
+    "2022": "2024-02-22",
+    "2023": "2025-02-27",
+    "2024": "2025-02-27",
+    "2025": "2025-02-27"
+   },
+   "share_basis": {},
+   "eps_excluded": {},
+   "revenue_usd_b": {
+    "2016": 5.01,
+    "2017": 6.91,
+    "2018": 9.714,
+    "2019": 11.716,
+    "2020": 10.918,
+    "2021": 16.675,
+    "2022": 26.914,
+    "2023": 26.974,
+    "2024": 60.922,
+    "2025": 130.497
+   },
+   "revenue_sources": {
+    "2016": "NV126",
+    "2017": "NV126",
+    "2018": "NV126",
+    "2019": "NV134",
+    "2020": "NV144",
+    "2021": "NV154",
+    "2022": "NV162",
+    "2023": "NV170",
+    "2024": "NV170",
+    "2025": "NV170"
+   },
+   "diluted_shares_m": {
+    "2016": 569.0,
+    "2017": 649.0,
+    "2018": 632.0,
+    "2019": 625.0,
+    "2020": 2472.0,
+    "2021": 2510.0,
+    "2022": 2535.0,
+    "2023": 25070.0,
+    "2024": 24940.0,
+    "2025": 24804.0
+   },
+   "shares_sources": {
+    "2016": "NV126",
+    "2017": "NV126",
+    "2018": "NV126",
+    "2019": "NV134",
+    "2020": "NV144",
+    "2021": "NV154",
+    "2022": "NV162",
+    "2023": "NV170",
+    "2024": "NV170",
+    "2025": "NV170"
+   },
+   "shares_published": {
+    "2016": "2020-02-21",
+    "2017": "2020-02-21",
+    "2018": "2020-02-21",
+    "2019": "2021-03-01",
+    "2020": "2022-03-18",
+    "2021": "2023-02-27",
+    "2022": "2024-02-22",
+    "2023": "2025-02-27",
+    "2024": "2025-02-27",
+    "2025": "2025-02-27"
+   },
+   "fiscal_year_ends": {
+    "2016": "2016-01-31",
+    "2017": "2017-01-29",
+    "2018": "2018-01-28",
+    "2019": "2019-01-27",
+    "2020": "2020-01-26",
+    "2021": "2021-01-31",
+    "2022": "2022-01-30",
+    "2023": "2023-01-29",
+    "2024": "2024-01-28",
+    "2025": "2025-01-26"
+   },
+   "normalization": "GAAP diluted EPS (NVIDIA reports no discontinued operations), each year from the latest filing that reports it: FY16 FY2020 10-K, FY17 FY2020 10-K, FY18 FY2020 10-K, FY19 FY2021 10-K, FY20 FY2022 10-K, FY21 FY2023 10-K, FY22 FY2024 10-K, FY23 FY2025 10-K, FY24 FY2025 10-K, FY25 FY2025 10-K; in $ millions and millions of shares, as the 10-Ks publish them; the FY2025 10-K, like every 10-K from FY2021, has no selected financial data, so it gives FY23-FY25 from its statement of income and earlier years keep the latest 10-K that reported them; the company's non-GAAP EPS excludes stock-based compensation, which recurs, so GAAP stands",
+   "eps_first_excluded": {},
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 62.42,
+   "prev_fy_op_margin_note": "FY25 operating income $81,453M / revenue $130,497M (FY2025 10-K)",
+   "prev_fy_pretax_margin": 64.39,
+   "prev_fy_pretax_margin_note": "FY25 income before income tax $84,026M / revenue $130,497M (FY2025 10-K)",
+   "prev_fy_gross_margin": 74.99,
+   "prev_fy_sales_growth": 114.2,
+   "tax_rate": 0.1326,
+   "tax_note": "FY25 income tax expense $11,146M / pre-tax $84,026M (FY2025 10-K)",
+   "fcf_b": 60.853,
+   "fcf_label": "FY25",
+   "fcf_note": "net cash provided by operating activities $64,089M less purchases related to property and equipment and intangible assets $3,236M",
+   "cash_b": 43.21,
+   "dividend_annual": null,
+   "dividend_note": "none stated in the FY2025 10-K: the latest rate a filing states stands",
+   "cash_return_text": "'In fiscal year 2025, we repurchased 310 million shares of our common stock for $34.0 billion.' (FY2025 10-K)",
+   "business_line": "full-stack accelerated computing: Compute & Networking (Data Center accelerated computing platforms and AI software, networking, automotive, Jetson, DGX Cloud) and Graphics (GeForce, GeForce NOW, Quadro/NVIDIA RTX, vGPU, infotainment, Omniverse Enterprise)",
+   "groups": [
+    [
+     "Compute & Networking",
+     116.193,
+     145.1
+    ],
+    [
+     "Graphics",
+     14.304,
+     5.8
+    ]
+   ],
+   "groups_basis": "FY25 segment revenue (FY2025 10-K)",
+   "company": "NVIDIA Corporation",
+   "exchange": "NASDAQ Global Select Market",
+   "pe_window_start": null
+  },
+  {
+   "published": "2026-02-26",
+   "sources": [
+    "NV177",
+    "NV126",
+    "NV134",
+    "NV144",
+    "NV154",
+    "NV162",
+    "NV170"
+   ],
+   "fy_label": "FY26",
+   "kind": "CYCLICAL",
+   "why": "'NVIDIA pioneered accelerated computing to help solve the most challenging computational problems. NVIDIA is now a data center scale AI infrastructure company reshaping all industries.' 'The market for our products is intensely competitive and is characterized by rapid technological change and evolving industry standards.' Its current competitors include 'suppliers and licensors of hardware and software for discrete and integrated GPUs, custom chips and other accelerated computing solutions, including solutions offered for AI, such as Advanced Micro Devices, Inc., or AMD, Huawei Technologies Co. Ltd., or Huawei, and Intel Corporation, or Intel' and 'large cloud services companies with internal teams designing hardware and software that incorporate accelerated or AI computing functionality as part of their internal solutions or platforms, such as Alibaba Group, Alphabet Inc., Amazon, Inc., or Amazon, Baidu, Inc., Huawei, and Microsoft Corporation, or Microsoft' (FY2026 10-K); CYCLICAL kept although the 10-K no longer calls the business cyclical (the BKR FY2015 rule; the class label only); the 10-K names AI as the field NVIDIA builds platforms for, a market it serves rather than a substitute for its products, so no theme in taxonomy_eras.json applies (the FY2013 10-K's cloud reading), and chips designed in-house by large cloud and internet companies, like GPUs integrated into other processors, stay here (the PEP obesity rule); GENAI, live from 2022-11-30, is scoped to AI substituting software seats, IT services and BPO hours, professional information, search, education content and mobility: the 10-K names AI as NVIDIA's own market and offering ('Issues relating to the responsible use of our technologies, including AI in our offerings, may result in reputational or financial harm and liability.'), never as a substitute for its products, so it stays off the watch list (the AVGO reading)",
+   "eps_normalized": {
+    "2017": 2.57,
+    "2018": 4.82,
+    "2019": 6.63,
+    "2020": 1.13,
+    "2021": 1.73,
+    "2022": 3.85,
+    "2023": 0.17,
+    "2024": 1.19,
+    "2025": 2.94,
+    "2026": 4.9
+   },
+   "eps_sources": {
+    "2017": "NV126",
+    "2018": "NV126",
+    "2019": "NV134",
+    "2020": "NV144",
+    "2021": "NV154",
+    "2022": "NV162",
+    "2023": "NV170",
+    "2024": "NV177",
+    "2025": "NV177",
+    "2026": "NV177"
+   },
+   "eps_published": {
+    "2017": "2020-02-21",
+    "2018": "2020-02-21",
+    "2019": "2021-03-01",
+    "2020": "2022-03-18",
+    "2021": "2023-02-27",
+    "2022": "2024-02-22",
+    "2023": "2025-02-27",
+    "2024": "2026-02-26",
+    "2025": "2026-02-26",
+    "2026": "2026-02-26"
+   },
+   "share_basis": {},
+   "eps_excluded": {},
+   "revenue_usd_b": {
+    "2017": 6.91,
+    "2018": 9.714,
+    "2019": 11.716,
+    "2020": 10.918,
+    "2021": 16.675,
+    "2022": 26.914,
+    "2023": 26.974,
+    "2024": 60.922,
+    "2025": 130.497,
+    "2026": 215.938
+   },
+   "revenue_sources": {
+    "2017": "NV126",
+    "2018": "NV126",
+    "2019": "NV134",
+    "2020": "NV144",
+    "2021": "NV154",
+    "2022": "NV162",
+    "2023": "NV170",
+    "2024": "NV177",
+    "2025": "NV177",
+    "2026": "NV177"
+   },
+   "diluted_shares_m": {
+    "2017": 649.0,
+    "2018": 632.0,
+    "2019": 625.0,
+    "2020": 2472.0,
+    "2021": 2510.0,
+    "2022": 2535.0,
+    "2023": 25070.0,
+    "2024": 24940.0,
+    "2025": 24804.0,
+    "2026": 24514.0
+   },
+   "shares_sources": {
+    "2017": "NV126",
+    "2018": "NV126",
+    "2019": "NV134",
+    "2020": "NV144",
+    "2021": "NV154",
+    "2022": "NV162",
+    "2023": "NV170",
+    "2024": "NV177",
+    "2025": "NV177",
+    "2026": "NV177"
+   },
+   "shares_published": {
+    "2017": "2020-02-21",
+    "2018": "2020-02-21",
+    "2019": "2021-03-01",
+    "2020": "2022-03-18",
+    "2021": "2023-02-27",
+    "2022": "2024-02-22",
+    "2023": "2025-02-27",
+    "2024": "2026-02-26",
+    "2025": "2026-02-26",
+    "2026": "2026-02-26"
+   },
+   "fiscal_year_ends": {
+    "2017": "2017-01-29",
+    "2018": "2018-01-28",
+    "2019": "2019-01-27",
+    "2020": "2020-01-26",
+    "2021": "2021-01-31",
+    "2022": "2022-01-30",
+    "2023": "2023-01-29",
+    "2024": "2024-01-28",
+    "2025": "2025-01-26",
+    "2026": "2026-01-25"
+   },
+   "normalization": "GAAP diluted EPS (NVIDIA reports no discontinued operations), each year from the latest filing that reports it: FY17 FY2020 10-K, FY18 FY2020 10-K, FY19 FY2021 10-K, FY20 FY2022 10-K, FY21 FY2023 10-K, FY22 FY2024 10-K, FY23 FY2025 10-K, FY24 FY2026 10-K, FY25 FY2026 10-K, FY26 FY2026 10-K; in $ millions and millions of shares, as the 10-Ks publish them; the FY2026 10-K, like every 10-K from FY2021, has no selected financial data, so it gives FY24-FY26 from its statement of income and earlier years keep the latest 10-K that reported them; the company's non-GAAP EPS excludes stock-based compensation, which recurs, so GAAP stands",
+   "eps_first_excluded": {},
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 60.38,
+   "prev_fy_op_margin_note": "FY26 operating income $130,387M / revenue $215,938M (FY2026 10-K)",
+   "prev_fy_pretax_margin": 65.5,
+   "prev_fy_pretax_margin_note": "FY26 income before income tax $141,450M / revenue $215,938M (FY2026 10-K)",
+   "prev_fy_gross_margin": 71.07,
+   "prev_fy_sales_growth": 65.5,
+   "tax_rate": 0.1512,
+   "tax_note": "FY26 income tax expense $21,383M / pre-tax $141,450M (FY2026 10-K)",
+   "fcf_b": 96.676,
+   "fcf_label": "FY26",
+   "fcf_note": "net cash provided by operating activities $102,718M less purchases related to property and equipment and intangible assets $6,042M",
+   "cash_b": 62.556,
+   "dividend_annual": null,
+   "dividend_note": "none stated in the FY2026 10-K: the latest rate a filing states stands",
+   "cash_return_text": "'In fiscal year 2026, we repurchased 282 million shares of our common stock for $40.4 billion.' (FY2026 10-K)",
+   "business_line": "data center scale AI infrastructure: Compute & Networking (Data Center accelerated computing and networking platforms, AI software, automotive) and Graphics (GeForce, Quadro/NVIDIA RTX)",
+   "groups": [
+    [
+     "Compute & Networking",
+     193.479,
+     66.5
+    ],
+    [
+     "Graphics",
+     22.459,
+     57.0
+    ]
+   ],
+   "groups_basis": "FY26 segment revenue (FY2026 10-K)",
    "company": "NVIDIA Corporation",
    "exchange": "NASDAQ Global Select Market",
    "pe_window_start": null
@@ -8171,6 +9247,1583 @@
    "next_print": "Q4 FY22 print (February)",
    "cash_return_text": "'NVIDIA paid quarterly cash dividends of $100 million in the third quarter.' (Q3 FY22 release)",
    "note": null
+  },
+  {
+   "quarter": "Q4 FY22",
+   "fy": 2022,
+   "q": 4,
+   "published": "2022-02-17",
+   "source": "NV143",
+   "release": "Feb 16",
+   "release_time": "after the close on Feb 16: 8-K accepted 2022-02-16 16:21 ET; public before the open of the next trading day",
+   "period_end": "2022-01-30",
+   "raw": {
+    "sales_k": 7643000.0,
+    "sales_prior_k": 5003000.0,
+    "sales_prev_q_k": 7103000.0,
+    "gross_profit_k": 4999000.0,
+    "gross_profit_prior_k": 3157000.0,
+    "rd_k": 1466000.0,
+    "rd_prior_k": 1147000.0,
+    "sga_k": 563000.0,
+    "sga_prior_k": 503000.0,
+    "op_income_k": 2970000.0,
+    "op_income_prior_k": 1507000.0,
+    "inventory_k": 2605000.0,
+    "inventory_prior_k": 1826000.0
+   },
+   "rows": {
+    "sales": "Revenue | 7,643 | 5,003 | 26,914 | 16,675",
+    "gp": "Gross profit | 4,999 | 3,157 | 17,475 | 10,396",
+    "rd": "Research and development | 1,466 | 1,147 | 5,268 | 3,924",
+    "sga": "Sales, general and administrative | 563 | 503 | 2,166 | 1,940",
+    "op": "Income from operations | 2,970 | 1,507 | 10,041 | 4,532",
+    "pretax": "Income before income tax | 2,865 | 1,470 | 9,941 | 4,409",
+    "tax": "Income tax expense (benefit) | (138) | 13 | 189 | 77",
+    "eps": "Diluted | 1.18 | 0.58 | 3.85 | 1.73",
+    "shares": "Diluted | 2,545 | 2,524 | 2,535 | 2,510",
+    "inv": "Inventories | 2,605 | 1,826",
+    "cash": "Cash, cash equivalents and marketable securities | 21,208 | 11,561",
+    "debt": "Long-term debt | 10,946 | 5,964"
+   },
+   "rows_unit": "$ millions",
+   "inventory_prior_row": {
+    "source": "NV143",
+    "row": "Inventories | 2,605 | 1,826"
+   },
+   "sales_prev_q_row": {
+    "source": "NV139",
+    "row": "Revenue | 7,103 | 4,726 | 19,271 | 11,672"
+   },
+   "extra_sources": [
+    "NV139"
+   ],
+   "sales_b": 7.643,
+   "sales_pct": 52.8,
+   "seq_pct": 7.6,
+   "gross_margin": 65.41,
+   "gross_margin_bp": 230.4,
+   "op_margin": 38.86,
+   "op_margin_bp": 873.7,
+   "opex_pct": 23.0,
+   "opex_gap_pp": -29.8,
+   "inventory_b": 2.605,
+   "inventory_pct": 42.7,
+   "inventory_gap_pp": -10.1,
+   "eps_q": 1.18,
+   "eps_q_prior": 0.58,
+   "diluted_shares_m": 2545.0,
+   "cash_b": 21.208,
+   "ltd_b": 10.946,
+   "debt_note": "long-term debt $10,946M",
+   "sales_note": "revenue $7,643M vs $5,003M a year earlier, $7,103M the quarter before",
+   "inventory_note": "inventories $2,605M (2022-01-30) vs $1,826M a year earlier (the release)",
+   "eps_note": "GAAP diluted EPS $1.18 vs $0.58; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 2,545.0M",
+   "next_print": "Q1 FY23 print (May)",
+   "cash_return_text": "'NVIDIA paid quarterly cash dividends of $100 million in the fourth quarter and $399 million in fiscal 2022.' (Q4 FY22 release)",
+   "note": "the GAAP results include tax benefits the release lists ('Domestication tax adjustments | 7 | — | — | (244) | —' and 'Foreign tax benefit | (90) | — | — | (90) | —' in the non-GAAP reconciliation, $ millions, the quarter, Q3 FY22, Q4 FY21, FY22, FY21), small against FY22's $9,752M net income; no figure excluding only them was published, so FY22 stays at GAAP",
+   "fy_actual": {
+    "fy": 2022,
+    "fy_label": "FY22",
+    "eps_normalized": 3.85,
+    "revenue_usd_b": 26.914,
+    "diluted_shares_m": 2535.0,
+    "normalization_note": "FY22 from the Q4 FY22 release (GAAP)",
+    "op_margin": 37.31,
+    "op_margin_note": "FY22 income from operations $10,041M / revenue $26,914M (Q4 FY22 release)",
+    "pretax_margin": 36.94,
+    "pretax_margin_note": "FY22 income before income tax $9,941M / revenue $26,914M (Q4 FY22 release)",
+    "gross_margin": 64.93,
+    "sales_growth": 61.4,
+    "tax_rate": 0.019,
+    "tax_note": "FY22 income tax expense $189M / pre-tax $9,941M"
+   }
+  },
+  {
+   "quarter": "Q1 FY23",
+   "fy": 2023,
+   "q": 1,
+   "published": "2022-05-26",
+   "source": "NV145",
+   "release": "May 25",
+   "release_time": "after the close on May 25: 8-K accepted 2022-05-25 16:22 ET; public before the open of the next trading day",
+   "period_end": "2022-05-01",
+   "raw": {
+    "sales_k": 8288000.0,
+    "sales_prior_k": 5661000.0,
+    "sales_prev_q_k": 7643000.0,
+    "gross_profit_k": 5431000.0,
+    "gross_profit_prior_k": 3629000.0,
+    "rd_k": 1618000.0,
+    "rd_prior_k": 1153000.0,
+    "sga_k": 592000.0,
+    "sga_prior_k": 520000.0,
+    "op_income_k": 1868000.0,
+    "op_income_prior_k": 1956000.0,
+    "inventory_k": 3163000.0,
+    "inventory_prior_k": 1992000.0
+   },
+   "rows": {
+    "sales": "Revenue | 8,288 | 5,661",
+    "gp": "Gross profit | 5,431 | 3,629",
+    "rd": "Research and development | 1,618 | 1,153",
+    "sga": "Sales, general and administrative | 592 | 520",
+    "op": "Income from operations | 1,868 | 1,956",
+    "eps": "Diluted | 0.64 | 0.76",
+    "shares": "Diluted | 2,537 | 2,528",
+    "inv": "Inventories | 3,163 | 2,605",
+    "cash": "Cash, cash equivalents and marketable securities | 20,338 | 21,208",
+    "debt": "Long-term debt | 10,947 | 10,946"
+   },
+   "rows_unit": "$ millions",
+   "inventory_prior_row": {
+    "source": "NV140",
+    "row": "Inventories | 1,992 | 1,826"
+   },
+   "sales_prev_q_row": {
+    "source": "NV143",
+    "row": "Revenue | 7,643 | 5,003 | 26,914 | 16,675"
+   },
+   "extra_sources": [
+    "NV140",
+    "NV143"
+   ],
+   "sales_b": 8.288,
+   "sales_pct": 46.4,
+   "seq_pct": 8.4,
+   "gross_margin": 65.53,
+   "gross_margin_bp": 142.3,
+   "op_margin": 22.54,
+   "op_margin_bp": -1201.4,
+   "opex_pct": 32.1,
+   "opex_gap_pp": -14.3,
+   "inventory_b": 3.163,
+   "inventory_pct": 58.8,
+   "inventory_gap_pp": 12.4,
+   "eps_q": 0.64,
+   "eps_q_prior": 0.76,
+   "diluted_shares_m": 2537.0,
+   "cash_b": 20.338,
+   "ltd_b": 10.947,
+   "debt_note": "long-term debt $10,947M",
+   "sales_note": "revenue $8,288M vs $5,661M a year earlier, $7,643M the quarter before",
+   "inventory_note": "inventories $3,163M (2022-05-01) vs $1,992M a year earlier (Q1 FY22 10-Q)",
+   "eps_note": "GAAP diluted EPS $0.64 vs $0.76; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 2,537.0M",
+   "next_print": "Q2 FY23 print (August)",
+   "cash_return_text": "'During the first quarter of fiscal 2023, NVIDIA returned to shareholders $2.10 billion in share repurchases and cash dividends.' (Q1 FY23 release)",
+   "note": "operating income includes the Arm acquisition termination charge ('Acquisition termination cost | 1,353 | —'), a separately stated expense line: it stays in, as published, and out of the opex gap, which takes the two expense lines it always has (the 2008-2009 rule)",
+   "fy_actual": null
+  },
+  {
+   "quarter": "Q2 FY23",
+   "fy": 2023,
+   "q": 2,
+   "published": "2022-08-25",
+   "source": "NV148",
+   "release": "Aug 24",
+   "release_time": "after the close on Aug 24: 8-K accepted 2022-08-24 16:24 ET; public before the open of the next trading day",
+   "period_end": "2022-07-31",
+   "raw": {
+    "sales_k": 6704000.0,
+    "sales_prior_k": 6507000.0,
+    "sales_prev_q_k": 8288000.0,
+    "gross_profit_k": 2915000.0,
+    "gross_profit_prior_k": 4215000.0,
+    "rd_k": 1824000.0,
+    "rd_prior_k": 1245000.0,
+    "sga_k": 592000.0,
+    "sga_prior_k": 526000.0,
+    "op_income_k": 499000.0,
+    "op_income_prior_k": 2444000.0,
+    "inventory_k": 3889000.0,
+    "inventory_prior_k": 2114000.0
+   },
+   "rows": {
+    "sales": "Revenue | 6,704 | 6,507 | 14,992 | 12,168",
+    "gp": "Gross profit | 2,915 | 4,215 | 8,346 | 7,844",
+    "rd": "Research and development | 1,824 | 1,245 | 3,443 | 2,398",
+    "sga": "Sales, general and administrative | 592 | 526 | 1,183 | 1,046",
+    "op": "Income from operations | 499 | 2,444 | 2,367 | 4,400",
+    "eps": "Diluted | 0.26 | 0.94 | 0.90 | 1.69",
+    "shares": "Diluted | 2,516 | 2,532 | 2,526 | 2,529",
+    "inv": "Inventories | 3,889 | 2,605",
+    "cash": "Cash, cash equivalents and marketable securities | 17,037 | 21,208",
+    "debt": [
+     "Long-term debt | 9,700 | 10,946",
+     "Short-term debt | 1,249 | —"
+    ]
+   },
+   "rows_unit": "$ millions",
+   "inventory_prior_row": {
+    "source": "NV141",
+    "row": "Inventories | 2,114 | 1,826"
+   },
+   "sales_prev_q_row": {
+    "source": "NV145",
+    "row": "Revenue | 8,288 | 5,661"
+   },
+   "extra_sources": [
+    "NV141",
+    "NV145"
+   ],
+   "sales_b": 6.704,
+   "sales_pct": 3.0,
+   "seq_pct": -19.1,
+   "gross_margin": 43.48,
+   "gross_margin_bp": -2129.5,
+   "op_margin": 7.44,
+   "op_margin_bp": -3011.6,
+   "opex_pct": 36.4,
+   "opex_gap_pp": 33.4,
+   "inventory_b": 3.889,
+   "inventory_pct": 84.0,
+   "inventory_gap_pp": 80.9,
+   "eps_q": 0.26,
+   "eps_q_prior": 0.94,
+   "diluted_shares_m": 2516.0,
+   "cash_b": 17.037,
+   "ltd_b": 10.949,
+   "debt_note": "long-term debt $9,700M; short-term debt $1,249M",
+   "sales_note": "revenue $6,704M vs $6,507M a year earlier, $8,288M the quarter before",
+   "inventory_note": "inventories $3,889M (2022-07-31) vs $2,114M a year earlier (Q2 FY22 10-Q)",
+   "eps_note": "GAAP diluted EPS $0.26 vs $0.94; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 2,516.0M",
+   "next_print": "Q3 FY23 print (November)",
+   "cash_return_text": "'During the second quarter of fiscal 2023, NVIDIA returned to shareholders $3.44 billion in share repurchases and cash dividends, following a return of $2.10 billion in the first quarter.' (Q2 FY23 release)",
+   "note": "cost of revenue includes the charges the preliminary results of 2022-08-08 put at about $1.32 billion ('Second quarter results are expected to include approximately $1.32 billion of charges, primarily for inventory and related reserves, based on revised expectations of future demand.'), as published",
+   "fy_actual": null
+  },
+  {
+   "quarter": "Q3 FY23",
+   "fy": 2023,
+   "q": 3,
+   "published": "2022-11-17",
+   "source": "NV151",
+   "release": "Nov 16",
+   "release_time": "after the close on Nov 16: 8-K accepted 2022-11-16 16:21 ET; public before the open of the next trading day",
+   "period_end": "2022-10-30",
+   "raw": {
+    "sales_k": 5931000.0,
+    "sales_prior_k": 7103000.0,
+    "sales_prev_q_k": 6704000.0,
+    "gross_profit_k": 3177000.0,
+    "gross_profit_prior_k": 4631000.0,
+    "rd_k": 1945000.0,
+    "rd_prior_k": 1403000.0,
+    "sga_k": 631000.0,
+    "sga_prior_k": 557000.0,
+    "op_income_k": 601000.0,
+    "op_income_prior_k": 2671000.0,
+    "inventory_k": 4454000.0,
+    "inventory_prior_k": 2233000.0
+   },
+   "rows": {
+    "sales": "Revenue | 5,931 | 7,103 | 20,923 | 19,271",
+    "gp": "Gross profit | 3,177 | 4,631 | 11,523 | 12,476",
+    "rd": "Research and development | 1,945 | 1,403 | 5,387 | 3,802",
+    "sga": "Sales, general and administrative | 631 | 557 | 1,815 | 1,603",
+    "op": "Income from operations | 601 | 2,671 | 2,968 | 7,071",
+    "eps": "Diluted | 0.27 | 0.97 | 1.17 | 2.67",
+    "shares": "Diluted | 2,499 | 2,538 | 2,517 | 2,532",
+    "inv": "Inventories | 4,454 | 2,605",
+    "cash": "Cash, cash equivalents and marketable securities | 13,143 | 21,208",
+    "debt": [
+     "Long-term debt | 9,701 | 10,946",
+     "Short-term debt | 1,249 | —"
+    ]
+   },
+   "rows_unit": "$ millions",
+   "inventory_prior_row": {
+    "source": "NV142",
+    "row": "Inventories | 2,233 | 1,826"
+   },
+   "sales_prev_q_row": {
+    "source": "NV148",
+    "row": "Revenue | 6,704 | 6,507 | 14,992 | 12,168"
+   },
+   "extra_sources": [
+    "NV142",
+    "NV148"
+   ],
+   "sales_b": 5.931,
+   "sales_pct": -16.5,
+   "seq_pct": -11.5,
+   "gross_margin": 53.57,
+   "gross_margin_bp": -1163.2,
+   "op_margin": 10.13,
+   "op_margin_bp": -2747.1,
+   "opex_pct": 31.4,
+   "opex_gap_pp": 47.9,
+   "inventory_b": 4.454,
+   "inventory_pct": 99.5,
+   "inventory_gap_pp": 116.0,
+   "eps_q": 0.27,
+   "eps_q_prior": 0.97,
+   "diluted_shares_m": 2499.0,
+   "cash_b": 13.143,
+   "ltd_b": 10.95,
+   "debt_note": "long-term debt $9,701M; short-term debt $1,249M",
+   "sales_note": "revenue $5,931M vs $7,103M a year earlier, $6,704M the quarter before",
+   "inventory_note": "inventories $4,454M (2022-10-30) vs $2,233M a year earlier (Q3 FY22 10-Q)",
+   "eps_note": "GAAP diluted EPS $0.27 vs $0.97; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 2,499.0M",
+   "next_print": "Q4 FY23 print (February)",
+   "cash_return_text": "'During the third quarter of fiscal 2023, NVIDIA returned to shareholders $3.75 billion in share repurchases and cash dividends, bringing the return in the first three quarters to $9.29 billion.' (Q3 FY23 release)",
+   "note": null,
+   "fy_actual": null
+  },
+  {
+   "quarter": "Q4 FY23",
+   "fy": 2023,
+   "q": 4,
+   "published": "2023-02-23",
+   "source": "NV153",
+   "release": "Feb 22",
+   "release_time": "after the close on Feb 22: 8-K accepted 2023-02-22 16:52 ET; public before the open of the next trading day",
+   "period_end": "2023-01-29",
+   "raw": {
+    "sales_k": 6051000.0,
+    "sales_prior_k": 7643000.0,
+    "sales_prev_q_k": 5931000.0,
+    "gross_profit_k": 3833000.0,
+    "gross_profit_prior_k": 4999000.0,
+    "rd_k": 1951000.0,
+    "rd_prior_k": 1466000.0,
+    "sga_k": 625000.0,
+    "sga_prior_k": 563000.0,
+    "op_income_k": 1257000.0,
+    "op_income_prior_k": 2970000.0,
+    "inventory_k": 5159000.0,
+    "inventory_prior_k": 2605000.0
+   },
+   "rows": {
+    "sales": "Revenue | 6,051 | 7,643 | 26,974 | 26,914",
+    "gp": "Gross profit | 3,833 | 4,999 | 15,356 | 17,475",
+    "rd": "Research and development | 1,951 | 1,466 | 7,339 | 5,268",
+    "sga": "Sales, general and administrative | 625 | 563 | 2,440 | 2,166",
+    "op": "Income from operations | 1,257 | 2,970 | 4,224 | 10,041",
+    "pretax": "Income before income tax | 1,289 | 2,865 | 4,181 | 9,941",
+    "tax": "Income tax expense (benefit) | (125) | (138) | (187) | 189",
+    "eps": "Diluted | 0.57 | 1.18 | 1.74 | 3.85",
+    "shares": "Diluted | 2,477 | 2,545 | 2,507 | 2,535",
+    "inv": "Inventories | 5,159 | 2,605",
+    "cash": "Cash, cash equivalents and marketable securities | 13,296 | 21,208",
+    "debt": [
+     "Long-term debt | 9,703 | 10,946",
+     "Short-term debt | 1,250 | —"
+    ]
+   },
+   "rows_unit": "$ millions",
+   "inventory_prior_row": {
+    "source": "NV153",
+    "row": "Inventories | 5,159 | 2,605"
+   },
+   "sales_prev_q_row": {
+    "source": "NV151",
+    "row": "Revenue | 5,931 | 7,103 | 20,923 | 19,271"
+   },
+   "extra_sources": [
+    "NV151"
+   ],
+   "sales_b": 6.051,
+   "sales_pct": -20.8,
+   "seq_pct": 2.0,
+   "gross_margin": 63.34,
+   "gross_margin_bp": -206.1,
+   "op_margin": 20.77,
+   "op_margin_bp": -1808.6,
+   "opex_pct": 27.0,
+   "opex_gap_pp": 47.8,
+   "inventory_b": 5.159,
+   "inventory_pct": 98.0,
+   "inventory_gap_pp": 118.9,
+   "eps_q": 0.57,
+   "eps_q_prior": 1.18,
+   "diluted_shares_m": 2477.0,
+   "cash_b": 13.296,
+   "ltd_b": 10.953,
+   "debt_note": "long-term debt $9,703M; short-term debt $1,250M",
+   "sales_note": "revenue $6,051M vs $7,643M a year earlier, $5,931M the quarter before",
+   "inventory_note": "inventories $5,159M (2023-01-29) vs $2,605M a year earlier (the release)",
+   "eps_note": "GAAP diluted EPS $0.57 vs $1.18; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 2,477.0M",
+   "next_print": "Q1 FY24 print (May)",
+   "cash_return_text": "'During the fourth quarter of fiscal 2023, NVIDIA returned to shareholders $1.15 billion in share repurchases and cash dividends, bringing the return in the fiscal year to $10.44 billion.' (Q4 FY23 release)",
+   "note": "the GAAP results include the Arm acquisition termination charge ('Acquisition termination cost | — | — | — | (1,353) | —' in the non-GAAP reconciliation, $ millions, the quarter, Q3 FY23, Q4 FY22, FY23, FY22) and smaller listed items ('Restructuring costs and other | (38) | (16) | — | (54) | —', 'Legal settlement costs | — | — | — | (7) | —', 'Contributions | — | — | — | (2) | —', IP-related costs of $16M, losses from non-affiliated investments of $45M): together about $1.5 billion, under FY23's $4,368M net income, so FY23 is not a distorted year (the AAPL FY2002 test, even with the Q2 inventory charges); no figure excluding only them was published, so FY23 stays at GAAP",
+   "fy_actual": {
+    "fy": 2023,
+    "fy_label": "FY23",
+    "eps_normalized": 1.74,
+    "revenue_usd_b": 26.974,
+    "diluted_shares_m": 2507.0,
+    "normalization_note": "FY23 from the Q4 FY23 release (GAAP)",
+    "op_margin": 15.66,
+    "op_margin_note": "FY23 income from operations $4,224M / revenue $26,974M (Q4 FY23 release)",
+    "pretax_margin": 15.5,
+    "pretax_margin_note": "FY23 income before income tax $4,181M / revenue $26,974M (Q4 FY23 release)",
+    "gross_margin": 56.93,
+    "sales_growth": 0.2,
+    "tax_rate": -0.0447,
+    "tax_note": "FY23 income tax expense $-187M / pre-tax $4,181M"
+   }
+  },
+  {
+   "quarter": "Q1 FY24",
+   "fy": 2024,
+   "q": 1,
+   "published": "2023-05-25",
+   "source": "NV155",
+   "release": "May 24",
+   "release_time": "after the close on May 24: 8-K accepted 2023-05-24 16:22 ET; public before the open of the next trading day",
+   "period_end": "2023-04-30",
+   "raw": {
+    "sales_k": 7192000.0,
+    "sales_prior_k": 8288000.0,
+    "sales_prev_q_k": 6051000.0,
+    "gross_profit_k": 4648000.0,
+    "gross_profit_prior_k": 5431000.0,
+    "rd_k": 1875000.0,
+    "rd_prior_k": 1618000.0,
+    "sga_k": 633000.0,
+    "sga_prior_k": 592000.0,
+    "op_income_k": 2140000.0,
+    "op_income_prior_k": 1868000.0,
+    "inventory_k": 4611000.0,
+    "inventory_prior_k": 3163000.0
+   },
+   "rows": {
+    "sales": "Revenue | 7,192 | 8,288",
+    "gp": "Gross profit | 4,648 | 5,431",
+    "rd": "Research and development | 1,875 | 1,618",
+    "sga": "Sales, general and administrative | 633 | 592",
+    "op": "Income from operations | 2,140 | 1,868",
+    "eps": "Diluted | 0.82 | 0.64",
+    "shares": "Diluted | 2,490 | 2,537",
+    "inv": "Inventories | 4,611 | 5,159",
+    "cash": "Cash, cash equivalents and marketable securities | 15,320 | 13,296",
+    "debt": [
+     "Long-term debt | 9,704 | 9,703",
+     "Short-term debt | 1,250 | 1,250"
+    ]
+   },
+   "rows_unit": "$ millions",
+   "inventory_prior_row": {
+    "source": "NV146",
+    "row": "Inventories | 3,163 | 2,605"
+   },
+   "sales_prev_q_row": {
+    "source": "NV153",
+    "row": "Revenue | 6,051 | 7,643 | 26,974 | 26,914"
+   },
+   "extra_sources": [
+    "NV146",
+    "NV153"
+   ],
+   "sales_b": 7.192,
+   "sales_pct": -13.2,
+   "seq_pct": 18.9,
+   "gross_margin": 64.63,
+   "gross_margin_bp": -90.1,
+   "op_margin": 29.76,
+   "op_margin_bp": 721.7,
+   "opex_pct": 13.5,
+   "opex_gap_pp": 26.7,
+   "inventory_b": 4.611,
+   "inventory_pct": 45.8,
+   "inventory_gap_pp": 59.0,
+   "eps_q": 0.82,
+   "eps_q_prior": 0.64,
+   "diluted_shares_m": 2490.0,
+   "cash_b": 15.32,
+   "ltd_b": 10.954,
+   "debt_note": "long-term debt $9,704M; short-term debt $1,250M",
+   "sales_note": "revenue $7,192M vs $8,288M a year earlier, $6,051M the quarter before",
+   "inventory_note": "inventories $4,611M (2023-04-30) vs $3,163M a year earlier (Q1 FY23 10-Q)",
+   "eps_note": "GAAP diluted EPS $0.82 vs $0.64; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 2,490.0M",
+   "next_print": "Q2 FY24 print (August)",
+   "cash_return_text": "'During the first quarter of fiscal 2024, NVIDIA returned to shareholders $99 million in cash dividends.' (Q1 FY24 release)",
+   "note": "the year-ago quarter's operating income includes the $1,353M Arm acquisition termination charge, as published",
+   "fy_actual": null
+  },
+  {
+   "quarter": "Q2 FY24",
+   "fy": 2024,
+   "q": 2,
+   "published": "2023-08-24",
+   "source": "NV157",
+   "release": "Aug 23",
+   "release_time": "after the close on Aug 23: 8-K accepted 2023-08-23 16:21 ET; public before the open of the next trading day",
+   "period_end": "2023-07-30",
+   "raw": {
+    "sales_k": 13507000.0,
+    "sales_prior_k": 6704000.0,
+    "sales_prev_q_k": 7192000.0,
+    "gross_profit_k": 9462000.0,
+    "gross_profit_prior_k": 2915000.0,
+    "rd_k": 2040000.0,
+    "rd_prior_k": 1824000.0,
+    "sga_k": 622000.0,
+    "sga_prior_k": 592000.0,
+    "op_income_k": 6800000.0,
+    "op_income_prior_k": 499000.0,
+    "inventory_k": 4319000.0,
+    "inventory_prior_k": 3889000.0
+   },
+   "rows": {
+    "sales": "Revenue | 13,507 | 6,704 | 20,699 | 14,992",
+    "gp": "Gross profit | 9,462 | 2,915 | 14,110 | 8,346",
+    "rd": "Research and development | 2,040 | 1,824 | 3,916 | 3,443",
+    "sga": "Sales, general and administrative | 622 | 592 | 1,253 | 1,183",
+    "op": "Operating income | 6,800 | 499 | 8,941 | 2,367",
+    "eps": "Diluted | 2.48 | 0.26 | 3.30 | 0.90",
+    "shares": "Diluted | 2,499 | 2,516 | 2,495 | 2,526",
+    "inv": "Inventories | 4,319 | 5,159",
+    "cash": "Cash, cash equivalents and marketable securities | 16,023 | 13,296",
+    "debt": [
+     "Long-term debt | 8,456 | 9,703",
+     "Short-term debt | 1,249 | 1,250"
+    ]
+   },
+   "rows_unit": "$ millions",
+   "inventory_prior_row": {
+    "source": "NV150",
+    "row": "Inventories | 3,889 | 2,605"
+   },
+   "sales_prev_q_row": {
+    "source": "NV155",
+    "row": "Revenue | 7,192 | 8,288"
+   },
+   "extra_sources": [
+    "NV150",
+    "NV155"
+   ],
+   "sales_b": 13.507,
+   "sales_pct": 101.5,
+   "seq_pct": 87.8,
+   "gross_margin": 70.05,
+   "gross_margin_bp": 2657.1,
+   "op_margin": 50.34,
+   "op_margin_bp": 4290.1,
+   "opex_pct": 10.2,
+   "opex_gap_pp": -91.3,
+   "inventory_b": 4.319,
+   "inventory_pct": 11.1,
+   "inventory_gap_pp": -90.4,
+   "eps_q": 2.48,
+   "eps_q_prior": 0.26,
+   "diluted_shares_m": 2499.0,
+   "cash_b": 16.023,
+   "ltd_b": 9.705,
+   "debt_note": "long-term debt $8,456M; short-term debt $1,249M",
+   "sales_note": "revenue $13,507M vs $6,704M a year earlier, $7,192M the quarter before",
+   "inventory_note": "inventories $4,319M (2023-07-30) vs $3,889M a year earlier (Q2 FY23 10-Q)",
+   "eps_note": "GAAP diluted EPS $2.48 vs $0.26; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 2,499.0M",
+   "next_print": "Q3 FY24 print (November)",
+   "cash_return_text": "'During the second quarter of fiscal 2024, NVIDIA returned $3.38 billion to shareholders in the form of 7.5 million shares repurchased for $3.28 billion, and cash dividends.' (Q2 FY24 release)",
+   "note": "the year-ago quarter's cost of revenue includes the Q2 FY23 inventory charges, as published",
+   "fy_actual": null
+  },
+  {
+   "quarter": "Q3 FY24",
+   "fy": 2024,
+   "q": 3,
+   "published": "2023-11-22",
+   "source": "NV159",
+   "release": "Nov 21",
+   "release_time": "after the close on Nov 21: 8-K accepted 2023-11-21 16:22 ET; public before the open of the next trading day",
+   "period_end": "2023-10-29",
+   "raw": {
+    "sales_k": 18120000.0,
+    "sales_prior_k": 5931000.0,
+    "sales_prev_q_k": 13507000.0,
+    "gross_profit_k": 13400000.0,
+    "gross_profit_prior_k": 3177000.0,
+    "rd_k": 2294000.0,
+    "rd_prior_k": 1945000.0,
+    "sga_k": 689000.0,
+    "sga_prior_k": 631000.0,
+    "op_income_k": 10417000.0,
+    "op_income_prior_k": 601000.0,
+    "inventory_k": 4779000.0,
+    "inventory_prior_k": 4454000.0
+   },
+   "rows": {
+    "sales": "Revenue | 18,120 | 5,931 | 38,819 | 20,923",
+    "gp": "Gross profit | 13,400 | 3,177 | 27,510 | 11,523",
+    "rd": "Research and development | 2,294 | 1,945 | 6,210 | 5,387",
+    "sga": "Sales, general and administrative | 689 | 631 | 1,942 | 1,815",
+    "op": "Operating income | 10,417 | 601 | 19,358 | 2,968",
+    "eps": "Diluted | 3.71 | 0.27 | 7.01 | 1.17",
+    "shares": "Diluted | 2,494 | 2,499 | 2,494 | 2,517",
+    "inv": "Inventories | 4,779 | 5,159",
+    "cash": "Cash, cash equivalents and marketable securities | 18,281 | 13,296",
+    "debt": [
+     "Long-term debt | 8,457 | 9,703",
+     "Short-term debt | 1,249 | 1,250"
+    ]
+   },
+   "rows_unit": "$ millions",
+   "inventory_prior_row": {
+    "source": "NV152",
+    "row": "Inventories | 4,454 | 2,605"
+   },
+   "sales_prev_q_row": {
+    "source": "NV157",
+    "row": "Revenue | 13,507 | 6,704 | 20,699 | 14,992"
+   },
+   "extra_sources": [
+    "NV152",
+    "NV157"
+   ],
+   "sales_b": 18.12,
+   "sales_pct": 205.5,
+   "seq_pct": 34.2,
+   "gross_margin": 73.95,
+   "gross_margin_bp": 2038.5,
+   "op_margin": 57.49,
+   "op_margin_bp": 4735.6,
+   "opex_pct": 15.8,
+   "opex_gap_pp": -189.7,
+   "inventory_b": 4.779,
+   "inventory_pct": 7.3,
+   "inventory_gap_pp": -198.2,
+   "eps_q": 3.71,
+   "eps_q_prior": 0.27,
+   "diluted_shares_m": 2494.0,
+   "cash_b": 18.281,
+   "ltd_b": 9.706,
+   "debt_note": "long-term debt $8,457M; short-term debt $1,249M",
+   "sales_note": "revenue $18,120M vs $5,931M a year earlier, $13,507M the quarter before",
+   "inventory_note": "inventories $4,779M (2023-10-29) vs $4,454M a year earlier (Q3 FY23 10-Q)",
+   "eps_note": "GAAP diluted EPS $3.71 vs $0.27; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 2,494.0M",
+   "next_print": "Q4 FY24 print (February)",
+   "cash_return_text": "'NVIDIA will pay its next quarterly cash dividend of $0.04 per share on December 28, 2023, to all shareholders of record on December 6, 2023.' (Q3 FY24 release)",
+   "note": null,
+   "fy_actual": null
+  },
+  {
+   "quarter": "Q4 FY24",
+   "fy": 2024,
+   "q": 4,
+   "published": "2024-02-22",
+   "source": "NV161",
+   "release": "Feb 21",
+   "release_time": "after the close on Feb 21: 8-K accepted 2024-02-21 16:22 ET; public before the open of the next trading day",
+   "period_end": "2024-01-28",
+   "raw": {
+    "sales_k": 22103000.0,
+    "sales_prior_k": 6051000.0,
+    "sales_prev_q_k": 18120000.0,
+    "gross_profit_k": 16791000.0,
+    "gross_profit_prior_k": 3833000.0,
+    "rd_k": 2465000.0,
+    "rd_prior_k": 1951000.0,
+    "sga_k": 711000.0,
+    "sga_prior_k": 625000.0,
+    "op_income_k": 13615000.0,
+    "op_income_prior_k": 1257000.0,
+    "inventory_k": 5282000.0,
+    "inventory_prior_k": 5159000.0
+   },
+   "rows": {
+    "sales": "Revenue | 22,103 | 6,051 | 60,922 | 26,974",
+    "gp": "Gross profit | 16,791 | 3,833 | 44,301 | 15,356",
+    "rd": "Research and development | 2,465 | 1,951 | 8,675 | 7,339",
+    "sga": "Sales, general and administrative | 711 | 625 | 2,654 | 2,440",
+    "op": "Operating income | 13,615 | 1,257 | 32,972 | 4,224",
+    "pretax": "Income before income tax | 14,106 | 1,289 | 33,818 | 4,181",
+    "tax": "Income tax expense (benefit) | 1,821 | (125) | 4,058 | (187)",
+    "eps": "Diluted | 4.93 | 0.57 | 11.93 | 1.74",
+    "shares": "Diluted | 2,490 | 2,477 | 2,494 | 2,507",
+    "inv": "Inventories | 5,282 | 5,159",
+    "cash": "Cash, cash equivalents and marketable securities | 25,984 | 13,296",
+    "debt": [
+     "Long-term debt | 8,459 | 9,703",
+     "Short-term debt | 1,250 | 1,250"
+    ]
+   },
+   "rows_unit": "$ millions",
+   "inventory_prior_row": {
+    "source": "NV161",
+    "row": "Inventories | 5,282 | 5,159"
+   },
+   "sales_prev_q_row": {
+    "source": "NV159",
+    "row": "Revenue | 18,120 | 5,931 | 38,819 | 20,923"
+   },
+   "extra_sources": [
+    "NV159"
+   ],
+   "sales_b": 22.103,
+   "sales_pct": 265.3,
+   "seq_pct": 22.0,
+   "gross_margin": 75.97,
+   "gross_margin_bp": 1262.2,
+   "op_margin": 61.6,
+   "op_margin_bp": 4082.5,
+   "opex_pct": 23.3,
+   "opex_gap_pp": -242.0,
+   "inventory_b": 5.282,
+   "inventory_pct": 2.4,
+   "inventory_gap_pp": -262.9,
+   "eps_q": 4.93,
+   "eps_q_prior": 0.57,
+   "diluted_shares_m": 2490.0,
+   "cash_b": 25.984,
+   "ltd_b": 9.709,
+   "debt_note": "long-term debt $8,459M; short-term debt $1,250M",
+   "sales_note": "revenue $22,103M vs $6,051M a year earlier, $18,120M the quarter before",
+   "inventory_note": "inventories $5,282M (2024-01-28) vs $5,159M a year earlier (the release)",
+   "eps_note": "GAAP diluted EPS $4.93 vs $0.57; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 2,490.0M",
+   "next_print": "Q1 FY25 print (May)",
+   "cash_return_text": "'NVIDIA will pay its next quarterly cash dividend of $0.04 per share on March 27, 2024, to all shareholders of record on March 6, 2024.' (Q4 FY24 release)",
+   "note": null,
+   "fy_actual": {
+    "fy": 2024,
+    "fy_label": "FY24",
+    "eps_normalized": 11.93,
+    "revenue_usd_b": 60.922,
+    "diluted_shares_m": 2494.0,
+    "normalization_note": "FY24 from the Q4 FY24 release (GAAP)",
+    "op_margin": 54.12,
+    "op_margin_note": "FY24 operating income $32,972M / revenue $60,922M (Q4 FY24 release)",
+    "pretax_margin": 55.51,
+    "pretax_margin_note": "FY24 income before income tax $33,818M / revenue $60,922M (Q4 FY24 release)",
+    "gross_margin": 72.72,
+    "sales_growth": 125.9,
+    "tax_rate": 0.12,
+    "tax_note": "FY24 income tax expense $4,058M / pre-tax $33,818M"
+   }
+  },
+  {
+   "quarter": "Q1 FY25",
+   "fy": 2025,
+   "q": 1,
+   "published": "2024-05-23",
+   "source": "NV163",
+   "release": "May 22",
+   "release_time": "after the close on May 22: 8-K accepted 2024-05-22 16:21 ET; public before the open of the next trading day",
+   "period_end": "2024-04-28",
+   "raw": {
+    "sales_k": 26044000.0,
+    "sales_prior_k": 7192000.0,
+    "sales_prev_q_k": 22103000.0,
+    "gross_profit_k": 20406000.0,
+    "gross_profit_prior_k": 4648000.0,
+    "rd_k": 2720000.0,
+    "rd_prior_k": 1875000.0,
+    "sga_k": 777000.0,
+    "sga_prior_k": 633000.0,
+    "op_income_k": 16909000.0,
+    "op_income_prior_k": 2140000.0,
+    "inventory_k": 5864000.0,
+    "inventory_prior_k": 4611000.0
+   },
+   "rows": {
+    "sales": "Revenue | 26,044 | 7,192",
+    "gp": "Gross profit | 20,406 | 4,648",
+    "rd": "Research and development | 2,720 | 1,875",
+    "sga": "Sales, general and administrative | 777 | 633",
+    "op": "Operating income | 16,909 | 2,140",
+    "eps": "Diluted | 5.98 | 0.82",
+    "shares": "Diluted | 2,489 | 2,490",
+    "inv": "Inventories | 5,864 | 5,282",
+    "cash": "Cash, cash equivalents and marketable securities | 31,438 | 25,984",
+    "debt": [
+     "Long-term debt | 8,460 | 8,459",
+     "Short-term debt | 1,250 | 1,250"
+    ]
+   },
+   "rows_unit": "$ millions",
+   "inventory_prior_row": {
+    "source": "NV156",
+    "row": "Inventories | 4,611 | 5,159"
+   },
+   "sales_prev_q_row": {
+    "source": "NV161",
+    "row": "Revenue | 22,103 | 6,051 | 60,922 | 26,974"
+   },
+   "extra_sources": [
+    "NV156",
+    "NV161"
+   ],
+   "sales_b": 26.044,
+   "sales_pct": 262.1,
+   "seq_pct": 17.8,
+   "gross_margin": 78.35,
+   "gross_margin_bp": 1372.5,
+   "op_margin": 64.92,
+   "op_margin_bp": 3516.9,
+   "opex_pct": 39.4,
+   "opex_gap_pp": -222.7,
+   "inventory_b": 5.864,
+   "inventory_pct": 27.2,
+   "inventory_gap_pp": -235.0,
+   "eps_q": 5.98,
+   "eps_q_prior": 0.82,
+   "diluted_shares_m": 2489.0,
+   "cash_b": 31.438,
+   "ltd_b": 9.71,
+   "debt_note": "long-term debt $8,460M; short-term debt $1,250M",
+   "sales_note": "revenue $26,044M vs $7,192M a year earlier, $22,103M the quarter before",
+   "inventory_note": "inventories $5,864M (2024-04-28) vs $4,611M a year earlier (Q1 FY24 10-Q)",
+   "eps_note": "GAAP diluted EPS $5.98 vs $0.82; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 2,489.0M",
+   "next_print": "Q2 FY25 print (August)",
+   "cash_return_text": "'The increased dividend is equivalent to $0.01 per share on a post-split basis and will be paid on Friday, June 28, 2024, to all shareholders of record on Tuesday, June 11, 2024.' (Q1 FY25 release)",
+   "note": null,
+   "fy_actual": null
+  },
+  {
+   "quarter": "Q2 FY25",
+   "fy": 2025,
+   "q": 2,
+   "published": "2024-08-29",
+   "source": "NV165",
+   "release": "Aug 28",
+   "release_time": "after the close on Aug 28: 8-K accepted 2024-08-28 16:21 ET; public before the open of the next trading day",
+   "period_end": "2024-07-28",
+   "raw": {
+    "sales_k": 30040000.0,
+    "sales_prior_k": 13507000.0,
+    "sales_prev_q_k": 26044000.0,
+    "gross_profit_k": 22574000.0,
+    "gross_profit_prior_k": 9462000.0,
+    "rd_k": 3090000.0,
+    "rd_prior_k": 2040000.0,
+    "sga_k": 842000.0,
+    "sga_prior_k": 622000.0,
+    "op_income_k": 18642000.0,
+    "op_income_prior_k": 6800000.0,
+    "inventory_k": 6675000.0,
+    "inventory_prior_k": 4319000.0
+   },
+   "rows": {
+    "sales": "Revenue | 30,040 | 13,507 | 56,084 | 20,699",
+    "gp": "Gross profit | 22,574 | 9,462 | 42,979 | 14,110",
+    "rd": "Research and development | 3,090 | 2,040 | 5,810 | 3,916",
+    "sga": "Sales, general and administrative | 842 | 622 | 1,618 | 1,253",
+    "op": "Operating income | 18,642 | 6,800 | 35,551 | 8,941",
+    "eps": "Diluted | 0.67 | 0.25 | 1.27 | 0.33",
+    "shares": "Diluted | 24,848 | 24,994 | 24,869 | 24,948",
+    "inv": "Inventories | 6,675 | 5,282",
+    "cash": "Cash, cash equivalents and marketable securities | 34,800 | 25,984",
+    "debt": [
+     "Long-term debt | 8,461 | 8,459",
+     "Short-term debt | — | 1,250"
+    ]
+   },
+   "rows_unit": "$ millions",
+   "inventory_prior_row": {
+    "source": "NV158",
+    "row": "Inventories | 4,319 | 5,159"
+   },
+   "sales_prev_q_row": {
+    "source": "NV163",
+    "row": "Revenue | 26,044 | 7,192"
+   },
+   "extra_sources": [
+    "NV158",
+    "NV163"
+   ],
+   "sales_b": 30.04,
+   "sales_pct": 122.4,
+   "seq_pct": 15.3,
+   "gross_margin": 75.15,
+   "gross_margin_bp": 509.4,
+   "op_margin": 62.06,
+   "op_margin_bp": 1171.3,
+   "opex_pct": 47.7,
+   "opex_gap_pp": -74.7,
+   "inventory_b": 6.675,
+   "inventory_pct": 54.5,
+   "inventory_gap_pp": -67.9,
+   "eps_q": 0.67,
+   "eps_q_prior": 0.25,
+   "diluted_shares_m": 24848.0,
+   "cash_b": 34.8,
+   "ltd_b": 8.461,
+   "debt_note": "long-term debt $8,461M",
+   "sales_note": "revenue $30,040M vs $13,507M a year earlier, $26,044M the quarter before",
+   "inventory_note": "inventories $6,675M (2024-07-28) vs $4,319M a year earlier (Q2 FY24 10-Q)",
+   "eps_note": "GAAP diluted EPS $0.67 vs $0.25; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 24,848.0M",
+   "next_print": "Q3 FY25 print (November)",
+   "cash_return_text": "'During the first half of fiscal 2025, NVIDIA returned $15.4 billion to shareholders in the form of shares repurchased and cash dividends.' (Q2 FY25 release)",
+   "note": "per-share figures after the ten-for-one split: 'On June 7, 2024, NVIDIA completed a ten-for-one forward stock split. All share and per-share amounts presented have been retroactively adjusted to reflect the stock split.'",
+   "fy_actual": null
+  },
+  {
+   "quarter": "Q3 FY25",
+   "fy": 2025,
+   "q": 3,
+   "published": "2024-11-21",
+   "source": "NV167",
+   "release": "Nov 20",
+   "release_time": "after the close on Nov 20: 8-K accepted 2024-11-20 16:21 ET; public before the open of the next trading day",
+   "period_end": "2024-10-27",
+   "raw": {
+    "sales_k": 35082000.0,
+    "sales_prior_k": 18120000.0,
+    "sales_prev_q_k": 30040000.0,
+    "gross_profit_k": 26156000.0,
+    "gross_profit_prior_k": 13400000.0,
+    "rd_k": 3390000.0,
+    "rd_prior_k": 2294000.0,
+    "sga_k": 897000.0,
+    "sga_prior_k": 689000.0,
+    "op_income_k": 21869000.0,
+    "op_income_prior_k": 10417000.0,
+    "inventory_k": 7654000.0,
+    "inventory_prior_k": 4779000.0
+   },
+   "rows": {
+    "sales": "Revenue | 35,082 | 18,120 | 91,166 | 38,819",
+    "gp": "Gross profit | 26,156 | 13,400 | 69,135 | 27,510",
+    "rd": "Research and development | 3,390 | 2,294 | 9,200 | 6,210",
+    "sga": "Sales, general and administrative | 897 | 689 | 2,516 | 1,942",
+    "op": "Operating income | 21,869 | 10,417 | 57,419 | 19,358",
+    "eps": "Diluted | 0.78 | 0.37 | 2.04 | 0.70",
+    "shares": "Diluted | 24,774 | 24,940 | 24,837 | 24,940",
+    "inv": "Inventories | 7,654 | 5,282",
+    "cash": "Cash, cash equivalents and marketable securities | 38,487 | 25,984",
+    "debt": [
+     "Long-term debt | 8,462 | 8,459",
+     "Short-term debt | — | 1,250"
+    ]
+   },
+   "rows_unit": "$ millions",
+   "inventory_prior_row": {
+    "source": "NV160",
+    "row": "Inventories | 4,779 | 5,159"
+   },
+   "sales_prev_q_row": {
+    "source": "NV165",
+    "row": "Revenue | 30,040 | 13,507 | 56,084 | 20,699"
+   },
+   "extra_sources": [
+    "NV160",
+    "NV165"
+   ],
+   "sales_b": 35.082,
+   "sales_pct": 93.6,
+   "seq_pct": 16.8,
+   "gross_margin": 74.56,
+   "gross_margin_bp": 60.5,
+   "op_margin": 62.34,
+   "op_margin_bp": 484.8,
+   "opex_pct": 43.7,
+   "opex_gap_pp": -49.9,
+   "inventory_b": 7.654,
+   "inventory_pct": 60.2,
+   "inventory_gap_pp": -33.5,
+   "eps_q": 0.78,
+   "eps_q_prior": 0.37,
+   "diluted_shares_m": 24774.0,
+   "cash_b": 38.487,
+   "ltd_b": 8.462,
+   "debt_note": "long-term debt $8,462M",
+   "sales_note": "revenue $35,082M vs $18,120M a year earlier, $30,040M the quarter before",
+   "inventory_note": "inventories $7,654M (2024-10-27) vs $4,779M a year earlier (Q3 FY24 10-Q)",
+   "eps_note": "GAAP diluted EPS $0.78 vs $0.37; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 24,774.0M",
+   "next_print": "Q4 FY25 print (February)",
+   "cash_return_text": "'NVIDIA will pay its next quarterly cash dividend of $0.01 per share on December 27, 2024, to all shareholders of record on December 5, 2024.' (Q3 FY25 release)",
+   "note": null,
+   "fy_actual": null
+  },
+  {
+   "quarter": "Q4 FY25",
+   "fy": 2025,
+   "q": 4,
+   "published": "2025-02-27",
+   "source": "NV169",
+   "release": "Feb 26",
+   "release_time": "after the close on Feb 26: 8-K accepted 2025-02-26 16:21 ET; public before the open of the next trading day",
+   "period_end": "2025-01-26",
+   "raw": {
+    "sales_k": 39331000.0,
+    "sales_prior_k": 22103000.0,
+    "sales_prev_q_k": 35082000.0,
+    "gross_profit_k": 28723000.0,
+    "gross_profit_prior_k": 16791000.0,
+    "rd_k": 3714000.0,
+    "rd_prior_k": 2465000.0,
+    "sga_k": 975000.0,
+    "sga_prior_k": 711000.0,
+    "op_income_k": 24034000.0,
+    "op_income_prior_k": 13615000.0,
+    "inventory_k": 10080000.0,
+    "inventory_prior_k": 5282000.0
+   },
+   "rows": {
+    "sales": "Revenue | 39,331 | 22,103 | 130,497 | 60,922",
+    "gp": "Gross profit | 28,723 | 16,791 | 97,858 | 44,301",
+    "rd": "Research and development | 3,714 | 2,465 | 12,914 | 8,675",
+    "sga": "Sales, general and administrative | 975 | 711 | 3,491 | 2,654",
+    "op": "Operating income | 24,034 | 13,615 | 81,453 | 32,972",
+    "pretax": "Income before income tax | 25,217 | 14,106 | 84,026 | 33,818",
+    "tax": "Income tax expense | 3,126 | 1,821 | 11,146 | 4,058",
+    "eps": "Diluted | 0.89 | 0.49 | 2.94 | 1.19",
+    "shares": "Diluted | 24,706 | 24,900 | 24,804 | 24,940",
+    "inv": "Inventories | 10,080 | 5,282",
+    "cash": "Cash, cash equivalents and marketable securities | 43,210 | 25,984",
+    "debt": [
+     "Long-term debt | 8,463 | 8,459",
+     "Short-term debt | — | 1,250"
+    ]
+   },
+   "rows_unit": "$ millions",
+   "inventory_prior_row": {
+    "source": "NV169",
+    "row": "Inventories | 10,080 | 5,282"
+   },
+   "sales_prev_q_row": {
+    "source": "NV167",
+    "row": "Revenue | 35,082 | 18,120 | 91,166 | 38,819"
+   },
+   "extra_sources": [
+    "NV167"
+   ],
+   "sales_b": 39.331,
+   "sales_pct": 77.9,
+   "seq_pct": 12.1,
+   "gross_margin": 73.03,
+   "gross_margin_bp": -293.8,
+   "op_margin": 61.11,
+   "op_margin_bp": -49.1,
+   "opex_pct": 47.6,
+   "opex_gap_pp": -30.3,
+   "inventory_b": 10.08,
+   "inventory_pct": 90.8,
+   "inventory_gap_pp": 12.9,
+   "eps_q": 0.89,
+   "eps_q_prior": 0.49,
+   "diluted_shares_m": 24706.0,
+   "cash_b": 43.21,
+   "ltd_b": 8.463,
+   "debt_note": "long-term debt $8,463M",
+   "sales_note": "revenue $39,331M vs $22,103M a year earlier, $35,082M the quarter before",
+   "inventory_note": "inventories $10,080M (2025-01-26) vs $5,282M a year earlier (the release)",
+   "eps_note": "GAAP diluted EPS $0.89 vs $0.49; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 24,706.0M",
+   "next_print": "Q1 FY26 print (May)",
+   "cash_return_text": "'NVIDIA will pay its next quarterly cash dividend of $0.01 per share on April 2, 2025, to all shareholders of record on March 12, 2025.' (Q4 FY25 release)",
+   "note": null,
+   "fy_actual": {
+    "fy": 2025,
+    "fy_label": "FY25",
+    "eps_normalized": 2.94,
+    "revenue_usd_b": 130.497,
+    "diluted_shares_m": 24804.0,
+    "normalization_note": "FY25 from the Q4 FY25 release (GAAP)",
+    "op_margin": 62.42,
+    "op_margin_note": "FY25 operating income $81,453M / revenue $130,497M (Q4 FY25 release)",
+    "pretax_margin": 64.39,
+    "pretax_margin_note": "FY25 income before income tax $84,026M / revenue $130,497M (Q4 FY25 release)",
+    "gross_margin": 74.99,
+    "sales_growth": 114.2,
+    "tax_rate": 0.1326,
+    "tax_note": "FY25 income tax expense $11,146M / pre-tax $84,026M"
+   }
+  },
+  {
+   "quarter": "Q1 FY26",
+   "fy": 2026,
+   "q": 1,
+   "published": "2025-05-29",
+   "source": "NV171",
+   "release": "May 28",
+   "release_time": "after the close on May 28: 8-K accepted 2025-05-28 16:21 ET; public before the open of the next trading day",
+   "period_end": "2025-04-27",
+   "raw": {
+    "sales_k": 44062000.0,
+    "sales_prior_k": 26044000.0,
+    "sales_prev_q_k": 39331000.0,
+    "gross_profit_k": 26668000.0,
+    "gross_profit_prior_k": 20406000.0,
+    "rd_k": 3989000.0,
+    "rd_prior_k": 2720000.0,
+    "sga_k": 1041000.0,
+    "sga_prior_k": 777000.0,
+    "op_income_k": 21638000.0,
+    "op_income_prior_k": 16909000.0,
+    "inventory_k": 11333000.0,
+    "inventory_prior_k": 5864000.0
+   },
+   "rows": {
+    "sales": "Revenue | 44,062 | 26,044",
+    "gp": "Gross profit | 26,668 | 20,406",
+    "rd": "Research and development | 3,989 | 2,720",
+    "sga": "Sales, general and administrative | 1,041 | 777",
+    "op": "Operating income | 21,638 | 16,909",
+    "eps": "Diluted | 0.76 | 0.60",
+    "shares": "Diluted | 24,611 | 24,890",
+    "inv": "Inventories | 11,333 | 10,080",
+    "cash": "Cash, cash equivalents and marketable securities | 53,691 | 43,210",
+    "debt": "Long-term debt | 8,464 | 8,463"
+   },
+   "rows_unit": "$ millions",
+   "inventory_prior_row": {
+    "source": "NV164",
+    "row": "Inventories | 5,864 | 5,282"
+   },
+   "sales_prev_q_row": {
+    "source": "NV169",
+    "row": "Revenue | 39,331 | 22,103 | 130,497 | 60,922"
+   },
+   "extra_sources": [
+    "NV164",
+    "NV169"
+   ],
+   "sales_b": 44.062,
+   "sales_pct": 69.2,
+   "seq_pct": 12.0,
+   "gross_margin": 60.52,
+   "gross_margin_bp": -1782.8,
+   "op_margin": 49.11,
+   "op_margin_bp": -1581.7,
+   "opex_pct": 43.8,
+   "opex_gap_pp": -25.3,
+   "inventory_b": 11.333,
+   "inventory_pct": 93.3,
+   "inventory_gap_pp": 24.1,
+   "eps_q": 0.76,
+   "eps_q_prior": 0.6,
+   "diluted_shares_m": 24611.0,
+   "cash_b": 53.691,
+   "ltd_b": 8.464,
+   "debt_note": "long-term debt $8,464M",
+   "sales_note": "revenue $44,062M vs $26,044M a year earlier, $39,331M the quarter before",
+   "inventory_note": "inventories $11,333M (2025-04-27) vs $5,864M a year earlier (Q1 FY25 10-Q)",
+   "eps_note": "GAAP diluted EPS $0.76 vs $0.60; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 24,611.0M",
+   "next_print": "Q2 FY26 print (August)",
+   "cash_return_text": "'NVIDIA will pay its next quarterly cash dividend of $0.01 per share on July 3, 2025, to all shareholders of record on June 11, 2025.' (Q1 FY26 release)",
+   "note": "cost of revenue includes the H20 charge, as published: 'As a result of these new requirements, NVIDIA incurred a $4.5 billion charge in the first quarter of fiscal 2026 associated with H20 excess inventory and purchase obligations as the demand for H20 diminished.'",
+   "fy_actual": null
+  },
+  {
+   "quarter": "Q2 FY26",
+   "fy": 2026,
+   "q": 2,
+   "published": "2025-08-28",
+   "source": "NV173",
+   "release": "Aug 27",
+   "release_time": "after the close on Aug 27: 8-K accepted 2025-08-27 16:22 ET; public before the open of the next trading day",
+   "period_end": "2025-07-27",
+   "raw": {
+    "sales_k": 46743000.0,
+    "sales_prior_k": 30040000.0,
+    "sales_prev_q_k": 44062000.0,
+    "gross_profit_k": 33853000.0,
+    "gross_profit_prior_k": 22574000.0,
+    "rd_k": 4291000.0,
+    "rd_prior_k": 3090000.0,
+    "sga_k": 1122000.0,
+    "sga_prior_k": 842000.0,
+    "op_income_k": 28440000.0,
+    "op_income_prior_k": 18642000.0,
+    "inventory_k": 14962000.0,
+    "inventory_prior_k": 6675000.0
+   },
+   "rows": {
+    "sales": "Revenue | 46,743 | 30,040 | 90,805 | 56,084",
+    "gp": "Gross profit | 33,853 | 22,574 | 60,521 | 42,979",
+    "rd": "Research and development | 4,291 | 3,090 | 8,280 | 5,810",
+    "sga": "Sales, general and administrative | 1,122 | 842 | 2,163 | 1,618",
+    "op": "Operating income | 28,440 | 18,642 | 50,078 | 35,551",
+    "eps": "Diluted | 1.08 | 0.67 | 1.84 | 1.27",
+    "shares": "Diluted | 24,532 | 24,848 | 24,571 | 24,869",
+    "inv": "Inventories | 14,962 | 10,080",
+    "cash": "Cash, cash equivalents and marketable securities | 56,791 | 43,210",
+    "debt": "Long-term debt | 8,466 | 8,463"
+   },
+   "rows_unit": "$ millions",
+   "inventory_prior_row": {
+    "source": "NV166",
+    "row": "Inventories | 6,675 | 5,282"
+   },
+   "sales_prev_q_row": {
+    "source": "NV171",
+    "row": "Revenue | 44,062 | 26,044"
+   },
+   "extra_sources": [
+    "NV166",
+    "NV171"
+   ],
+   "sales_b": 46.743,
+   "sales_pct": 55.6,
+   "seq_pct": 6.1,
+   "gross_margin": 72.42,
+   "gross_margin_bp": -272.3,
+   "op_margin": 60.84,
+   "op_margin_bp": -121.4,
+   "opex_pct": 37.7,
+   "opex_gap_pp": -17.9,
+   "inventory_b": 14.962,
+   "inventory_pct": 124.1,
+   "inventory_gap_pp": 68.5,
+   "eps_q": 1.08,
+   "eps_q_prior": 0.67,
+   "diluted_shares_m": 24532.0,
+   "cash_b": 56.791,
+   "ltd_b": 8.466,
+   "debt_note": "long-term debt $8,466M",
+   "sales_note": "revenue $46,743M vs $30,040M a year earlier, $44,062M the quarter before",
+   "inventory_note": "inventories $14,962M (2025-07-27) vs $6,675M a year earlier (Q2 FY25 10-Q)",
+   "eps_note": "GAAP diluted EPS $1.08 vs $0.67; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 24,532.0M",
+   "next_print": "Q3 FY26 print (November)",
+   "cash_return_text": "'During the first half of fiscal 2026, NVIDIA returned $24.3 billion to shareholders in the form of shares repurchased and cash dividends.' (Q2 FY26 release)",
+   "note": "cost of revenue includes a release of H20 reserves, as published: 'NVIDIA benefited from a $180 million release of previously reserved H20 inventory, from approximately $650 million in unrestricted H20 sales to a customer outside of China.'",
+   "fy_actual": null
+  },
+  {
+   "quarter": "Q3 FY26",
+   "fy": 2026,
+   "q": 3,
+   "published": "2025-11-20",
+   "source": "NV175",
+   "release": "Nov 19",
+   "release_time": "after the close on Nov 19: 8-K accepted 2025-11-19 16:20 ET; public before the open of the next trading day",
+   "period_end": "2025-10-26",
+   "raw": {
+    "sales_k": 57006000.0,
+    "sales_prior_k": 35082000.0,
+    "sales_prev_q_k": 46743000.0,
+    "gross_profit_k": 41849000.0,
+    "gross_profit_prior_k": 26156000.0,
+    "rd_k": 4705000.0,
+    "rd_prior_k": 3390000.0,
+    "sga_k": 1134000.0,
+    "sga_prior_k": 897000.0,
+    "op_income_k": 36010000.0,
+    "op_income_prior_k": 21869000.0,
+    "inventory_k": 19784000.0,
+    "inventory_prior_k": 7654000.0
+   },
+   "rows": {
+    "sales": "Revenue | 57,006 | 35,082 | 147,811 | 91,166",
+    "gp": "Gross profit | 41,849 | 26,156 | 102,370 | 69,135",
+    "rd": "Research and development | 4,705 | 3,390 | 12,985 | 9,200",
+    "sga": "Sales, general and administrative | 1,134 | 897 | 3,297 | 2,516",
+    "op": "Operating income | 36,010 | 21,869 | 86,088 | 57,419",
+    "eps": "Diluted | 1.30 | 0.78 | 3.14 | 2.04",
+    "shares": "Diluted | 24,483 | 24,774 | 24,542 | 24,837",
+    "inv": "Inventories | 19,784 | 10,080",
+    "cash": "Cash, cash equivalents and marketable securities | 60,608 | 43,210",
+    "debt": [
+     "Long-term debt | 7,468 | 8,463",
+     "Short-term debt | 999 | —"
+    ]
+   },
+   "rows_unit": "$ millions",
+   "inventory_prior_row": {
+    "source": "NV168",
+    "row": "Inventories | 7,654 | 5,282"
+   },
+   "sales_prev_q_row": {
+    "source": "NV173",
+    "row": "Revenue | 46,743 | 30,040 | 90,805 | 56,084"
+   },
+   "extra_sources": [
+    "NV168",
+    "NV173"
+   ],
+   "sales_b": 57.006,
+   "sales_pct": 62.5,
+   "seq_pct": 22.0,
+   "gross_margin": 73.41,
+   "gross_margin_bp": -114.5,
+   "op_margin": 63.17,
+   "op_margin_bp": 83.2,
+   "opex_pct": 36.2,
+   "opex_gap_pp": -26.3,
+   "inventory_b": 19.784,
+   "inventory_pct": 158.5,
+   "inventory_gap_pp": 96.0,
+   "eps_q": 1.3,
+   "eps_q_prior": 0.78,
+   "diluted_shares_m": 24483.0,
+   "cash_b": 60.608,
+   "ltd_b": 8.467,
+   "debt_note": "long-term debt $7,468M; short-term debt $999M",
+   "sales_note": "revenue $57,006M vs $35,082M a year earlier, $46,743M the quarter before",
+   "inventory_note": "inventories $19,784M (2025-10-26) vs $7,654M a year earlier (Q3 FY25 10-Q)",
+   "eps_note": "GAAP diluted EPS $1.30 vs $0.78; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 24,483.0M",
+   "next_print": "Q4 FY26 print (February)",
+   "cash_return_text": "'During the first nine months of fiscal 2026, NVIDIA returned $37.0 billion to shareholders in the form of shares repurchased and cash dividends.' (Q3 FY26 release)",
+   "note": null,
+   "fy_actual": null
+  },
+  {
+   "quarter": "Q4 FY26",
+   "fy": 2026,
+   "q": 4,
+   "published": "2026-02-26",
+   "source": "NV176",
+   "release": "Feb 25",
+   "release_time": "after the close on Feb 25: 8-K accepted 2026-02-25 16:31 ET; public before the open of the next trading day",
+   "period_end": "2026-01-25",
+   "raw": {
+    "sales_k": 68127000.0,
+    "sales_prior_k": 39331000.0,
+    "sales_prev_q_k": 57006000.0,
+    "gross_profit_k": 51093000.0,
+    "gross_profit_prior_k": 28723000.0,
+    "rd_k": 5512000.0,
+    "rd_prior_k": 3714000.0,
+    "sga_k": 1282000.0,
+    "sga_prior_k": 975000.0,
+    "op_income_k": 44299000.0,
+    "op_income_prior_k": 24034000.0,
+    "inventory_k": 21403000.0,
+    "inventory_prior_k": 10080000.0
+   },
+   "rows": {
+    "sales": "Revenue | 68,127 | 39,331 | 215,938 | 130,497",
+    "gp": "Gross profit | 51,093 | 28,723 | 153,463 | 97,858",
+    "rd": "Research and development | 5,512 | 3,714 | 18,497 | 12,914",
+    "sga": "Sales, general and administrative | 1,282 | 975 | 4,579 | 3,491",
+    "op": "Operating income | 44,299 | 24,034 | 130,387 | 81,453",
+    "pretax": "Income before income tax | 50,397 | 25,217 | 141,450 | 84,026",
+    "tax": "Income tax expense | 7,437 | 3,126 | 21,383 | 11,146",
+    "eps": "Diluted | 1.76 | 0.89 | 4.90 | 2.94",
+    "shares": "Diluted | 24,432 | 24,706 | 24,514 | 24,804",
+    "inv": "Inventories | 21,403 | 10,080",
+    "cash": "Cash, cash equivalents and marketable securities | 62,556 | 43,210",
+    "debt": [
+     "Long-term debt | 7,469 | 8,463",
+     "Short-term debt | 999 | —"
+    ]
+   },
+   "rows_unit": "$ millions",
+   "inventory_prior_row": {
+    "source": "NV176",
+    "row": "Inventories | 21,403 | 10,080"
+   },
+   "sales_prev_q_row": {
+    "source": "NV175",
+    "row": "Revenue | 57,006 | 35,082 | 147,811 | 91,166"
+   },
+   "extra_sources": [
+    "NV175"
+   ],
+   "sales_b": 68.127,
+   "sales_pct": 73.2,
+   "seq_pct": 19.5,
+   "gross_margin": 75.0,
+   "gross_margin_bp": 196.8,
+   "op_margin": 65.02,
+   "op_margin_bp": 391.7,
+   "opex_pct": 44.9,
+   "opex_gap_pp": -28.3,
+   "inventory_b": 21.403,
+   "inventory_pct": 112.3,
+   "inventory_gap_pp": 39.1,
+   "eps_q": 1.76,
+   "eps_q_prior": 0.89,
+   "diluted_shares_m": 24432.0,
+   "cash_b": 62.556,
+   "ltd_b": 8.468,
+   "debt_note": "long-term debt $7,469M; short-term debt $999M",
+   "sales_note": "revenue $68,127M vs $39,331M a year earlier, $57,006M the quarter before",
+   "inventory_note": "inventories $21,403M (2026-01-25) vs $10,080M a year earlier (the release)",
+   "eps_note": "GAAP diluted EPS $1.76 vs $0.89; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 24,432.0M",
+   "next_print": "Q1 FY27 print (May)",
+   "cash_return_text": "'During fiscal 2026, NVIDIA returned $41.1 billion to shareholders in the form of shares repurchased and cash dividends.' (Q4 FY26 release)",
+   "note": "the GAAP results include net gains on equity securities the release lists ('Gains from non-marketable equity securities and publicly-held equity securities, net | (5,491) | (1,354) | (727) | (8,918) | (1,030)' in the non-GAAP reconciliation, $ millions, the quarter, Q3 FY26, Q4 FY25, FY26, FY25), a fraction of FY26's $120,067M net income (the mirror of the AAPL FY2002 test); no figure excluding only them was published, so FY26 stays at GAAP",
+   "fy_actual": {
+    "fy": 2026,
+    "fy_label": "FY26",
+    "eps_normalized": 4.9,
+    "revenue_usd_b": 215.938,
+    "diluted_shares_m": 24514.0,
+    "normalization_note": "FY26 from the Q4 FY26 release (GAAP)",
+    "op_margin": 60.38,
+    "op_margin_note": "FY26 operating income $130,387M / revenue $215,938M (Q4 FY26 release)",
+    "pretax_margin": 65.5,
+    "pretax_margin_note": "FY26 income before income tax $141,450M / revenue $215,938M (Q4 FY26 release)",
+    "gross_margin": 71.07,
+    "sales_growth": 65.5,
+    "tax_rate": 0.1512,
+    "tax_note": "FY26 income tax expense $21,383M / pre-tax $141,450M"
+   }
+  },
+  {
+   "quarter": "Q1 FY27",
+   "fy": 2027,
+   "q": 1,
+   "published": "2026-05-21",
+   "source": "NV178",
+   "release": "May 20",
+   "release_time": "after the close on May 20: 8-K accepted 2026-05-20 16:21 ET; public before the open of the next trading day",
+   "period_end": "2026-04-26",
+   "raw": {
+    "sales_k": 81615000.0,
+    "sales_prior_k": 44062000.0,
+    "sales_prev_q_k": 68127000.0,
+    "gross_profit_k": 61157000.0,
+    "gross_profit_prior_k": 26668000.0,
+    "rd_k": 6321000.0,
+    "rd_prior_k": 3989000.0,
+    "sga_k": 1300000.0,
+    "sga_prior_k": 1041000.0,
+    "op_income_k": 53536000.0,
+    "op_income_prior_k": 21638000.0,
+    "inventory_k": 25797000.0,
+    "inventory_prior_k": 11333000.0
+   },
+   "rows": {
+    "sales": "Revenue | 81,615 | 44,062",
+    "gp": "Gross profit | 61,157 | 26,668",
+    "rd": "Research and development | 6,321 | 3,989",
+    "sga": "Sales, general and administrative | 1,300 | 1,041",
+    "op": "Operating income | 53,536 | 21,638",
+    "eps": "Diluted | 2.39 | 0.76",
+    "shares": "Diluted | 24,391 | 24,611",
+    "inv": "Inventories | 25,797 | 21,403",
+    "cash": [
+     "Cash and cash equivalents | 13,237 | 10,605",
+     "Marketable debt securities | 37,098 | 39,065",
+     "Marketable equity securities | 30,237 | 12,886"
+    ],
+    "debt": [
+     "Long-term debt | 7,470 | 7,469",
+     "Short-term debt | 1,000 | 999"
+    ]
+   },
+   "rows_unit": "$ millions",
+   "inventory_prior_row": {
+    "source": "NV172",
+    "row": "Inventories | 11,333 | 10,080"
+   },
+   "sales_prev_q_row": {
+    "source": "NV176",
+    "row": "Revenue | 68,127 | 39,331 | 215,938 | 130,497"
+   },
+   "extra_sources": [
+    "NV172",
+    "NV176"
+   ],
+   "sales_b": 81.615,
+   "sales_pct": 85.2,
+   "seq_pct": 19.8,
+   "gross_margin": 74.93,
+   "gross_margin_bp": 1441.0,
+   "op_margin": 65.6,
+   "op_margin_bp": 1648.8,
+   "opex_pct": 51.5,
+   "opex_gap_pp": -33.7,
+   "inventory_b": 25.797,
+   "inventory_pct": 127.6,
+   "inventory_gap_pp": 42.4,
+   "eps_q": 2.39,
+   "eps_q_prior": 0.76,
+   "diluted_shares_m": 24391.0,
+   "cash_b": 80.572,
+   "ltd_b": 8.47,
+   "debt_note": "long-term debt $7,470M; short-term debt $1,000M",
+   "sales_note": "revenue $81,615M vs $44,062M a year earlier, $68,127M the quarter before",
+   "inventory_note": "inventories $25,797M (2026-04-26) vs $11,333M a year earlier (Q1 FY26 10-Q)",
+   "eps_note": "GAAP diluted EPS $2.39 vs $0.76; from Q1 FY27 the release's non-GAAP figure includes stock-based compensation but still excludes acquisition-related costs and gains and losses from equity securities ('These reconciliations adjust the related GAAP financial measures to exclude acquisition-related and other costs, other, gains/losses from equity securities, net, certain other income and expense, and the associated tax impact of these items where applicable.'), and no fiscal-year figure on that basis is published, so it is not used",
+   "shares_note": "diluted shares 24,391.0M",
+   "next_print": "Q2 FY27 print (August)",
+   "cash_return_text": "'During the first quarter of fiscal 2027, NVIDIA returned a record level of approximately $20.0 billion to shareholders in the form of shares repurchased and cash dividends.' (Q1 FY27 release)",
+   "note": "cash, cash equivalents and marketable securities is the sum of the balance sheet's three lines (cash and cash equivalents, marketable debt securities, marketable equity securities), which for 2026-01-25 ($10,605M, $39,065M and $12,886M) equals the single line of the Q4 FY26 release ($62,556M)",
+   "fy_actual": null
+  },
+  {
+   "quarter": "Q2 FY27",
+   "fy": 2027,
+   "q": 2,
+   "published": "2026-08-27",
+   "source": "NV179",
+   "release": "Aug 26",
+   "release_time": "after the close on Aug 26: 8-K accepted 2026-08-26 16:21 ET; public before the open of the next trading day",
+   "period_end": "2026-07-26",
+   "raw": {
+    "sales_k": 96221000.0,
+    "sales_prior_k": 46743000.0,
+    "sales_prev_q_k": 81615000.0,
+    "gross_profit_k": 72142000.0,
+    "gross_profit_prior_k": 33853000.0,
+    "rd_k": 7054000.0,
+    "rd_prior_k": 4291000.0,
+    "sga_k": 1354000.0,
+    "sga_prior_k": 1122000.0,
+    "op_income_k": 63734000.0,
+    "op_income_prior_k": 28440000.0,
+    "inventory_k": 31575000.0,
+    "inventory_prior_k": 14962000.0
+   },
+   "rows": {
+    "sales": "Revenue | 96,221 | 46,743 | 177,837 | 90,805",
+    "gp": "Gross profit | 72,142 | 33,853 | 133,299 | 60,521",
+    "rd": "Research and development | 7,054 | 4,291 | 13,375 | 8,280",
+    "sga": "Sales, general and administrative | 1,354 | 1,122 | 2,654 | 2,163",
+    "op": "Operating income | 63,734 | 28,440 | 117,270 | 50,078",
+    "eps": "Diluted | 2.46 | 1.08 | 4.85 | 1.84",
+    "shares": "Diluted | 24,285 | 24,532 | 24,338 | 24,571",
+    "inv": "Inventories | 31,575 | 21,403",
+    "cash": [
+     "Cash and cash equivalents | 22,443 | 10,605",
+     "Marketable debt securities | 34,143 | 39,065",
+     "Marketable equity securities | 42,783 | 12,886"
+    ],
+    "debt": [
+     "Long-term debt | 32,366 | 7,469",
+     "Short-term debt | 1,000 | 999"
+    ]
+   },
+   "rows_unit": "$ millions",
+   "inventory_prior_row": {
+    "source": "NV174",
+    "row": "Inventories | 14,962 | 10,080"
+   },
+   "sales_prev_q_row": {
+    "source": "NV178",
+    "row": "Revenue | 81,615 | 44,062"
+   },
+   "extra_sources": [
+    "NV174",
+    "NV178"
+   ],
+   "sales_b": 96.221,
+   "sales_pct": 105.9,
+   "seq_pct": 17.9,
+   "gross_margin": 74.98,
+   "gross_margin_bp": 255.2,
+   "op_margin": 66.24,
+   "op_margin_bp": 539.4,
+   "opex_pct": 55.3,
+   "opex_gap_pp": -50.5,
+   "inventory_b": 31.575,
+   "inventory_pct": 111.0,
+   "inventory_gap_pp": 5.2,
+   "eps_q": 2.46,
+   "eps_q_prior": 1.08,
+   "diluted_shares_m": 24285.0,
+   "cash_b": 99.369,
+   "ltd_b": 33.366,
+   "debt_note": "long-term debt $32,366M; short-term debt $1,000M",
+   "sales_note": "revenue $96,221M vs $46,743M a year earlier, $81,615M the quarter before",
+   "inventory_note": "inventories $31,575M (2026-07-26) vs $14,962M a year earlier (Q2 FY26 10-Q)",
+   "eps_note": "GAAP diluted EPS $2.46 vs $1.08; from Q1 FY27 the release's non-GAAP figure includes stock-based compensation but still excludes acquisition-related costs and gains and losses from equity securities ('These reconciliations adjust the related GAAP financial measures to exclude acquisition-related and other costs, other, gains/losses from equity securities, net, certain other income and expense, and the associated tax impact of these items where applicable.'), and no fiscal-year figure on that basis is published, so it is not used",
+   "shares_note": "diluted shares 24,285.0M",
+   "next_print": "Q3 FY27 print (November)",
+   "cash_return_text": "'During the second quarter of fiscal 2027, NVIDIA returned approximately $26.0 billion to shareholders in the form of shares repurchased and cash dividends.' (Q2 FY27 release)",
+   "note": "cash, cash equivalents and marketable securities is the sum of the balance sheet's three lines (cash and cash equivalents, marketable debt securities, marketable equity securities), which for 2026-01-25 ($10,605M, $39,065M and $12,886M) equals the single line of the Q4 FY26 release ($62,556M)",
+   "fy_actual": null
   }
  ],
  "guides": [
@@ -9440,6 +12093,472 @@
    ],
    "quote": "Revenue is expected to be $7.40 billion, plus or minus 2 percent.",
    "display": "'GAAP and non-GAAP gross margins are expected to be 65.3 percent and 67.0 percent, respectively, plus or minus 50 basis points.'"
+  },
+  {
+   "fy": 2023,
+   "published": "2022-02-17",
+   "source": "NV143",
+   "doc": "Q4 FY22 release",
+   "quarter": "Q1 FY23",
+   "level_stated": true,
+   "level_center_m": 8100.0,
+   "level_pm_pct": 2.0,
+   "level_m": [
+    7938.0,
+    8262.0
+   ],
+   "prior_label": "Q1 FY22",
+   "prior_sales_m": 5661,
+   "prior_source": "NV137",
+   "yoy_pct": [
+    40.2,
+    45.9
+   ],
+   "quote": "Revenue is expected to be $8.10 billion, plus or minus 2 percent.",
+   "display": "'GAAP and non-GAAP gross margins are expected to be 65.2 percent and 67.0 percent, respectively, plus or minus 50 basis points.'; 'GAAP operating expenses are expected to be $3.55 billion, including the Arm Write-off of $1.36 billion. Non-GAAP operating expenses are expected to be $1.60 billion.'"
+  },
+  {
+   "fy": 2023,
+   "published": "2022-05-26",
+   "source": "NV145",
+   "doc": "Q1 FY23 release",
+   "quarter": "Q2 FY23",
+   "level_stated": true,
+   "level_center_m": 8100.0,
+   "level_pm_pct": 2.0,
+   "level_m": [
+    7938.0,
+    8262.0
+   ],
+   "prior_label": "Q2 FY22",
+   "prior_sales_m": 6507,
+   "prior_source": "NV138",
+   "yoy_pct": [
+    22.0,
+    27.0
+   ],
+   "quote": "Revenue is expected to be $8.10 billion, plus or minus 2%.",
+   "display": "'This includes an estimated reduction of approximately $500 million relating to Russia and the COVID lockdowns in China.'; 'GAAP and non-GAAP gross margins are expected to be 65.1% and 67.1%, respectively, plus or minus 50 basis points.'"
+  },
+  {
+   "fy": 2023,
+   "published": "2022-08-08",
+   "source": "NV147",
+   "doc": "preliminary Q2 FY23 results (8-K)",
+   "quarter": "Q2 FY23",
+   "level_stated": true,
+   "level_m": [
+    6700.0,
+    6700.0
+   ],
+   "prior_label": "Q2 FY22",
+   "prior_sales_m": 6507,
+   "prior_source": "NV138",
+   "yoy_pct": [
+    3.0,
+    3.0
+   ],
+   "quote": "Second quarter revenue is expected to be approximately $6.70 billion, down 19% sequentially and up 3% from the prior year, primarily reflecting weaker than forecasted Gaming revenue.",
+   "display": "the 8-K's table: 'Revenue | $8.10 billion, plus or minus 2% | $6.70 billion'; 'Second quarter results are expected to include approximately $1.32 billion of charges, primarily for inventory and related reserves, based on revised expectations of future demand.'"
+  },
+  {
+   "fy": 2023,
+   "published": "2022-08-25",
+   "source": "NV148",
+   "doc": "Q2 FY23 release",
+   "quarter": "Q3 FY23",
+   "level_stated": true,
+   "level_center_m": 5900.0,
+   "level_pm_pct": 2.0,
+   "level_m": [
+    5782.0,
+    6018.0
+   ],
+   "prior_label": "Q3 FY22",
+   "prior_sales_m": 7103,
+   "prior_source": "NV139",
+   "yoy_pct": [
+    -18.6,
+    -15.3
+   ],
+   "quote": "Revenue is expected to be $5.90 billion, plus or minus 2%.",
+   "display": "'Gaming and Professional Visualization revenue are expected to decline sequentially, as OEMs and channel partners reduce inventory levels to align with current levels of demand and prepare for NVIDIA’s new product generation.'; 'GAAP and non-GAAP gross margins are expected to be 62.4% and 65.0%, respectively, plus or minus 50 basis points.'"
+  },
+  {
+   "fy": 2023,
+   "published": "2022-09-01",
+   "source": "NV149",
+   "doc": "export license 8-K",
+   "quarter": "Q3 FY23",
+   "words": "The Company’s outlook for its third fiscal quarter provided on August 24, 2022 included approximately $400 million in potential sales to China which may be subject to the new license requirement if customers do not want to purchase the Company’s alternative product offerings or if the USG does not grant licenses in a timely manner or denies licenses to significant customers."
+  },
+  {
+   "fy": 2023,
+   "published": "2022-11-17",
+   "source": "NV151",
+   "doc": "Q3 FY23 release",
+   "quarter": "Q4 FY23",
+   "level_stated": true,
+   "level_center_m": 6000.0,
+   "level_pm_pct": 2.0,
+   "level_m": [
+    5880.0,
+    6120.0
+   ],
+   "prior_label": "Q4 FY22",
+   "prior_sales_m": 7643,
+   "prior_source": "NV143",
+   "yoy_pct": [
+    -23.1,
+    -19.9
+   ],
+   "quote": "Revenue is expected to be $6.00 billion, plus or minus 2%.",
+   "display": "'GAAP and non-GAAP gross margins are expected to be 63.2% and 66.0%, respectively, plus or minus 50 basis points.'"
+  },
+  {
+   "fy": 2024,
+   "published": "2023-02-23",
+   "source": "NV153",
+   "doc": "Q4 FY23 release",
+   "quarter": "Q1 FY24",
+   "level_stated": true,
+   "level_center_m": 6500.0,
+   "level_pm_pct": 2.0,
+   "level_m": [
+    6370.0,
+    6630.0
+   ],
+   "prior_label": "Q1 FY23",
+   "prior_sales_m": 8288,
+   "prior_source": "NV145",
+   "yoy_pct": [
+    -23.1,
+    -20.0
+   ],
+   "quote": "Revenue is expected to be $6.50 billion, plus or minus 2%.",
+   "display": "'GAAP and non-GAAP gross margins are expected to be 64.1% and 66.5%, respectively, plus or minus 50 basis points.'"
+  },
+  {
+   "fy": 2024,
+   "published": "2023-05-25",
+   "source": "NV155",
+   "doc": "Q1 FY24 release",
+   "quarter": "Q2 FY24",
+   "level_stated": true,
+   "level_center_m": 11000.0,
+   "level_pm_pct": 2.0,
+   "level_m": [
+    10780.0,
+    11220.0
+   ],
+   "prior_label": "Q2 FY23",
+   "prior_sales_m": 6704,
+   "prior_source": "NV148",
+   "yoy_pct": [
+    60.8,
+    67.4
+   ],
+   "quote": "Revenue is expected to be $11.00 billion, plus or minus 2%.",
+   "display": "'GAAP and non-GAAP gross margins are expected to be 68.6% and 70.0%, respectively, plus or minus 50 basis points.'"
+  },
+  {
+   "fy": 2024,
+   "published": "2023-08-24",
+   "source": "NV157",
+   "doc": "Q2 FY24 release",
+   "quarter": "Q3 FY24",
+   "level_stated": true,
+   "level_center_m": 16000.0,
+   "level_pm_pct": 2.0,
+   "level_m": [
+    15680.0,
+    16320.0
+   ],
+   "prior_label": "Q3 FY23",
+   "prior_sales_m": 5931,
+   "prior_source": "NV151",
+   "yoy_pct": [
+    164.4,
+    175.2
+   ],
+   "quote": "Revenue is expected to be $16.00 billion, plus or minus 2%.",
+   "display": "'GAAP and non-GAAP gross margins are expected to be 71.5% and 72.5%, respectively, plus or minus 50 basis points.'"
+  },
+  {
+   "fy": 2024,
+   "published": "2023-11-22",
+   "source": "NV159",
+   "doc": "Q3 FY24 release",
+   "quarter": "Q4 FY24",
+   "level_stated": true,
+   "level_center_m": 20000.0,
+   "level_pm_pct": 2.0,
+   "level_m": [
+    19600.0,
+    20400.0
+   ],
+   "prior_label": "Q4 FY23",
+   "prior_sales_m": 6051,
+   "prior_source": "NV153",
+   "yoy_pct": [
+    223.9,
+    237.1
+   ],
+   "quote": "Revenue is expected to be $20.00 billion, plus or minus 2%.",
+   "display": "'GAAP and non-GAAP gross margins are expected to be 74.5% and 75.5%, respectively, plus or minus 50 basis points.'"
+  },
+  {
+   "fy": 2025,
+   "published": "2024-02-22",
+   "source": "NV161",
+   "doc": "Q4 FY24 release",
+   "quarter": "Q1 FY25",
+   "level_stated": true,
+   "level_center_m": 24000.0,
+   "level_pm_pct": 2.0,
+   "level_m": [
+    23520.0,
+    24480.0
+   ],
+   "prior_label": "Q1 FY24",
+   "prior_sales_m": 7192,
+   "prior_source": "NV155",
+   "yoy_pct": [
+    227.0,
+    240.4
+   ],
+   "quote": "Revenue is expected to be $24.0 billion, plus or minus 2%.",
+   "display": "'GAAP and non-GAAP gross margins are expected to be 76.3% and 77.0%, respectively, plus or minus 50 basis points.'"
+  },
+  {
+   "fy": 2025,
+   "published": "2024-05-23",
+   "source": "NV163",
+   "doc": "Q1 FY25 release",
+   "quarter": "Q2 FY25",
+   "level_stated": true,
+   "level_center_m": 28000.0,
+   "level_pm_pct": 2.0,
+   "level_m": [
+    27440.0,
+    28560.0
+   ],
+   "prior_label": "Q2 FY24",
+   "prior_sales_m": 13507,
+   "prior_source": "NV157",
+   "yoy_pct": [
+    103.2,
+    111.4
+   ],
+   "quote": "Revenue is expected to be $28.0 billion, plus or minus 2%.",
+   "display": "'GAAP and non-GAAP gross margins are expected to be 74.8% and 75.5%, respectively, plus or minus 50 basis points. For the full year, gross margins are expected to be in the mid-70% range.'"
+  },
+  {
+   "fy": 2025,
+   "published": "2024-08-29",
+   "source": "NV165",
+   "doc": "Q2 FY25 release",
+   "quarter": "Q3 FY25",
+   "level_stated": true,
+   "level_center_m": 32500.0,
+   "level_pm_pct": 2.0,
+   "level_m": [
+    31850.0,
+    33150.0
+   ],
+   "prior_label": "Q3 FY24",
+   "prior_sales_m": 18120,
+   "prior_source": "NV159",
+   "yoy_pct": [
+    75.8,
+    82.9
+   ],
+   "quote": "Revenue is expected to be $32.5 billion, plus or minus 2%.",
+   "display": "'GAAP and non-GAAP gross margins are expected to be 74.4% and 75.0%, respectively, plus or minus 50 basis points. For the full year, gross margins are expected to be in the mid-70% range.'"
+  },
+  {
+   "fy": 2025,
+   "published": "2024-11-21",
+   "source": "NV167",
+   "doc": "Q3 FY25 release",
+   "quarter": "Q4 FY25",
+   "level_stated": true,
+   "level_center_m": 37500.0,
+   "level_pm_pct": 2.0,
+   "level_m": [
+    36750.0,
+    38250.0
+   ],
+   "prior_label": "Q4 FY24",
+   "prior_sales_m": 22103,
+   "prior_source": "NV161",
+   "yoy_pct": [
+    66.3,
+    73.1
+   ],
+   "quote": "Revenue is expected to be $37.5 billion, plus or minus 2%.",
+   "display": "'GAAP and non-GAAP gross margins are expected to be 73.0% and 73.5%, respectively, plus or minus 50 basis points.'"
+  },
+  {
+   "fy": 2026,
+   "published": "2025-02-27",
+   "source": "NV169",
+   "doc": "Q4 FY25 release",
+   "quarter": "Q1 FY26",
+   "level_stated": true,
+   "level_center_m": 43000.0,
+   "level_pm_pct": 2.0,
+   "level_m": [
+    42140.0,
+    43860.0
+   ],
+   "prior_label": "Q1 FY25",
+   "prior_sales_m": 26044,
+   "prior_source": "NV163",
+   "yoy_pct": [
+    61.8,
+    68.4
+   ],
+   "quote": "Revenue is expected to be $43.0 billion, plus or minus 2%.",
+   "display": "'GAAP and non-GAAP gross margins are expected to be 70.6% and 71.0%, respectively, plus or minus 50 basis points.'"
+  },
+  {
+   "fy": 2026,
+   "published": "2025-05-29",
+   "source": "NV171",
+   "doc": "Q1 FY26 release",
+   "quarter": "Q2 FY26",
+   "level_stated": true,
+   "level_center_m": 45000.0,
+   "level_pm_pct": 2.0,
+   "level_m": [
+    44100.0,
+    45900.0
+   ],
+   "prior_label": "Q2 FY25",
+   "prior_sales_m": 30040,
+   "prior_source": "NV165",
+   "yoy_pct": [
+    46.8,
+    52.8
+   ],
+   "quote": "Revenue is expected to be $45.0 billion, plus or minus 2%.",
+   "display": "'This outlook reflects a loss in H20 revenue of approximately $8.0 billion due to the recent export control limitations.'; 'GAAP and non-GAAP gross margins are expected to be 71.8% and 72.0%, respectively, plus or minus 50 basis points.'"
+  },
+  {
+   "fy": 2026,
+   "published": "2025-08-28",
+   "source": "NV173",
+   "doc": "Q2 FY26 release",
+   "quarter": "Q3 FY26",
+   "level_stated": true,
+   "level_center_m": 54000.0,
+   "level_pm_pct": 2.0,
+   "level_m": [
+    52920.0,
+    55080.0
+   ],
+   "prior_label": "Q3 FY25",
+   "prior_sales_m": 35082,
+   "prior_source": "NV167",
+   "yoy_pct": [
+    50.8,
+    57.0
+   ],
+   "quote": "Revenue is expected to be $54.0 billion, plus or minus 2%.",
+   "display": "'The company has not assumed any H20 shipments to China in the outlook.'; 'GAAP and non-GAAP gross margins are expected to be 73.3% and 73.5%, respectively, plus or minus 50 basis points.'"
+  },
+  {
+   "fy": 2026,
+   "published": "2025-11-20",
+   "source": "NV175",
+   "doc": "Q3 FY26 release",
+   "quarter": "Q4 FY26",
+   "level_stated": true,
+   "level_center_m": 65000.0,
+   "level_pm_pct": 2.0,
+   "level_m": [
+    63700.0,
+    66300.0
+   ],
+   "prior_label": "Q4 FY25",
+   "prior_sales_m": 39331,
+   "prior_source": "NV169",
+   "yoy_pct": [
+    62.0,
+    68.6
+   ],
+   "quote": "Revenue is expected to be $65.0 billion, plus or minus 2%.",
+   "display": "'GAAP and non-GAAP gross margins are expected to be 74.8% and 75.0%, respectively, plus or minus 50 basis points.'"
+  },
+  {
+   "fy": 2027,
+   "published": "2026-02-26",
+   "source": "NV176",
+   "doc": "Q4 FY26 release",
+   "quarter": "Q1 FY27",
+   "level_stated": true,
+   "level_center_m": 78000.0,
+   "level_pm_pct": 2.0,
+   "level_m": [
+    76440.0,
+    79560.0
+   ],
+   "prior_label": "Q1 FY26",
+   "prior_sales_m": 44062,
+   "prior_source": "NV171",
+   "yoy_pct": [
+    73.5,
+    80.6
+   ],
+   "quote": "Revenue is expected to be $78.0 billion, plus or minus 2%.",
+   "display": "'NVIDIA is not assuming any Data Center compute revenue from China in its outlook.'; 'GAAP and non-GAAP gross margins are expected to be 74.9% and 75.0%, respectively, plus or minus 50 basis points, inclusive of a 0.1% impact from stock-based compensation expense.'"
+  },
+  {
+   "fy": 2027,
+   "published": "2026-05-21",
+   "source": "NV178",
+   "doc": "Q1 FY27 release",
+   "quarter": "Q2 FY27",
+   "level_stated": true,
+   "level_center_m": 91000.0,
+   "level_pm_pct": 2.0,
+   "level_m": [
+    89180.0,
+    92820.0
+   ],
+   "prior_label": "Q2 FY26",
+   "prior_sales_m": 46743,
+   "prior_source": "NV173",
+   "yoy_pct": [
+    90.8,
+    98.6
+   ],
+   "quote": "Revenue is expected to be $91.0 billion, plus or minus 2%.",
+   "display": "'NVIDIA is not assuming any Data Center compute revenue from China in its outlook.'; 'GAAP and non-GAAP gross margins are expected to be 74.9% and 75.0%, respectively, plus or minus 50 basis points.'"
+  },
+  {
+   "fy": 2027,
+   "published": "2026-08-27",
+   "source": "NV179",
+   "doc": "Q2 FY27 release",
+   "quarter": "Q3 FY27",
+   "level_stated": true,
+   "level_center_m": 108000.0,
+   "level_pm_pct": 2.0,
+   "level_m": [
+    105840.0,
+    110160.0
+   ],
+   "prior_label": "Q3 FY26",
+   "prior_sales_m": 57006,
+   "prior_source": "NV175",
+   "yoy_pct": [
+    85.7,
+    93.2
+   ],
+   "quote": "Revenue is expected to be $108.0 billion, plus or minus 2%.",
+   "display": "'NVIDIA is not assuming any Data Center compute revenue from China in its outlook.'; 'GAAP and non-GAAP gross margins are expected to be 74.0%, plus or minus 50 basis points.'"
   }
  ],
  "dividends": [
@@ -9484,6 +12603,18 @@
    "source": "NV114",
    "quarterly": 0.16,
    "note": "$0.16 quarterly ('NVIDIA announced a 7 percent increase in its quarterly cash dividend to $0.16 per share from $0.15 per share, to be paid with its next quarterly cash dividend on December 21, 2018, to all shareholders of record on November 30, 2018.', Q3 FY19 release)"
+  },
+  {
+   "published": "2024-05-23",
+   "source": "NV163",
+   "quarterly": 0.1,
+   "note": "$0.10 quarterly ('NVIDIA is increasing its quarterly cash dividend by 150% from $0.04 per share to $0.10 per share of common stock.', Q1 FY25 release)"
+  },
+  {
+   "published": "2026-05-21",
+   "source": "NV178",
+   "quarterly": 0.25,
+   "note": "$0.25 quarterly ('NVIDIA is increasing its quarterly cash dividend from $0.01 per share to $0.25 per share of common stock, which will be paid on June 26, 2026, to all shareholders of record on June 4, 2026.', Q1 FY27 release)"
   }
  ],
  "events": [],
@@ -9512,6 +12643,14 @@
    "ratio": 4,
    "label": "four-for-one",
    "note": "If approval is obtained, each NVIDIA stockholder of record at the close of business on June 21, 2021, will receive a dividend of three additional shares of common stock for every share held on the record date, to be distributed after the close of trading on July 19, 2021."
+  },
+  {
+   "published": "2024-05-23",
+   "source": "NV163",
+   "effective": "2024-06-10",
+   "ratio": 10,
+   "label": "ten-for-one",
+   "note": "Each record holder of common stock as of the close of market on Thursday, June 6, 2024, will receive nine additional shares of common stock, to be distributed after the close of market on Friday, June 7, 2024."
   }
  ],
  "rule_t": {
