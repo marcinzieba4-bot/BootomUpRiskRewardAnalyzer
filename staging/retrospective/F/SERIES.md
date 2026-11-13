@@ -4,6 +4,215 @@ Point-in-time columns use only information public on the as-of date. The last fo
 
 | as of | price | latest results known | proxy | adj gap | Ratio B | model tier | class | robustness | 2y TR | vs SPY | m12-24 avg | call |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2008-01-04 | $6.13 | Ford Q3 2007 results | 2.80 | +1.64 | 0.43x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +67.7% | +84.0pp | -5.4% | ✓ |
+| 2008-01-11 | $6.06 | Ford Q3 2007 results | 2.80 | +1.64 | 0.46x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +99.8% | +114.5pp | -1.4% | ✓ |
+| 2008-01-18 | $5.92 | Ford Q3 2007 results | 2.80 | +1.85 | 0.44x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +95.9% | +106.2pp | +3.7% | ✓ |
+| 2008-01-25 | $6.58 | Ford Q4 2007 results | 2.45 | +1.30 | 0.39x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +67.6% | +81.4pp | -4.2% | ✓ |
+| 2008-02-01 | $6.85 | Ford Q4 2007 results | 2.45 | +1.28 | 0.41x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +62.3% | +80.7pp | -5.3% | ✓ |
+| 2008-02-08 | $6.08 | Ford Q4 2007 results | 2.45 | +1.35 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +80.4% | +97.2pp | +9.7% | ✓ |
+| 2008-02-15 | $6.45 | Ford Q4 2007 results | 2.45 | +1.32 | 0.37x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +72.4% | +88.8pp | +6.0% | ✓ |
+| 2008-02-22 | $6.25 | Ford Q4 2007 results | 2.45 | +1.34 | 0.36x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +79.4% | +93.8pp | +12.2% | ✓ |
+| 2008-02-29 | $6.53 | Ford Q4 2007 results | 2.45 | +1.28 | 0.38x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +79.8% | +93.4pp | +10.1% | ✓ |
+| 2008-03-07 | $5.78 | Ford Q4 2007 results | 2.45 | +1.56 | 0.31x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +124.9% | +133.1pp | +28.1% | ✓ |
+| 2008-03-14 | $5.29 | Ford Q4 2007 results | 2.45 | +1.61 | 0.27x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +152.2% | +159.3pp | +44.1% | ✓ |
+| 2008-03-20 | $5.62 | Ford Q4 2007 results | 2.45 | +1.57 | 0.30x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +136.5% | +145.1pp | +39.6% | ✓ |
+| 2008-03-28 | $5.59 | Ford Q4 2007 results | 2.45 | +1.57 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +147.9% | +155.7pp | +44.2% | ✓ |
+| 2008-04-04 | $6.49 | Ford Q4 2007 results | 2.45 | +1.28 | 0.41x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +94.6% | +105.1pp | +27.1% | ✓ |
+| 2008-04-11 | $6.69 | Ford Q4 2007 results | 2.45 | +1.26 | 0.43x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +90.1% | +97.0pp | +25.6% | ✓ |
+| 2008-04-18 | $7.45 | Ford Q4 2007 results | 2.45 | +1.14 | 0.51x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +80.1% | +90.5pp | +15.2% | ✓ |
+| 2008-04-25 | $7.50 | Ford Q1 2008 results | 1.75 | +0.27 | 0.52x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +89.5% | +98.8pp | +17.1% | ✓ |
+| 2008-05-02 | $8.27 | Ford Q1 2008 results | 1.75 | +0.14 | 0.62x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +57.4% | +70.1pp | +8.1% | ✓ |
+| 2008-05-09 | $8.10 | Ford Q1 2008 results | 1.75 | +0.15 | 0.65x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +42.1% | +58.6pp | +11.9% | ✓ |
+| 2008-05-16 | $8.11 | Ford Q1 2008 results | 1.75 | +0.15 | 0.65x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +49.3% | +66.2pp | +13.5% | ✓ |
+| 2008-05-23 | $6.87 | Ford Q1 2008 results | 1.75 | +0.35 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +63.9% | +81.2pp | +35.7% | ✓ |
+| 2008-05-30 | $6.80 | Ford Q1 2008 results | 1.75 | +0.36 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +72.5% | +91.2pp | +38.6% | ✓ |
+| 2008-06-06 | $6.04 | Ford Q1 2008 results | 1.75 | +0.46 | 0.39x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +90.4% | +108.5pp | +57.7% | ✓ |
+| 2008-06-13 | $6.27 | Ford Q1 2008 results | 1.75 | +0.40 | 0.41x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +81.8% | +97.8pp | +53.5% | ✓ |
+| 2008-06-20 | $5.81 | Ford Q1 2008 results | 1.75 | +0.65 | 0.36x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +97.2% | +108.8pp | +67.7% | ✓ |
+| 2008-06-27 | $4.98 | Ford Q1 2008 results | 1.75 | +0.75 | 0.28x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +115.9% | +127.7pp | +97.8% | ✓ |
+| 2008-07-03 | $4.42 | Ford Q1 2008 results | 1.75 | +0.81 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +132.6% | +148.0pp | +124.5% | ✓ |
+| 2008-07-11 | $4.86 | Ford Q1 2008 results | 1.75 | +0.76 | 0.27x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +123.3% | +132.4pp | +106.1% | ✓ |
+| 2008-07-18 | $5.44 | Ford Q1 2008 results | 1.75 | +0.69 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +108.5% | +120.1pp | +86.2% | ✓ |
+| 2008-07-25 | $5.05 | Ford Q2 2008 results | 1.30 | +0.19 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +151.9% | +160.2pp | +102.7% | ✓ |
+| 2008-08-01 | $4.65 | Ford Q2 2008 results | 1.30 | +0.24 | 0.25x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +174.6% | +183.6pp | +122.5% | ✓ |
+| 2008-08-08 | $5.26 | Ford Q2 2008 results | 1.30 | +0.16 | 0.31x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +147.9% | +157.5pp | +98.5% | ✓ |
+| 2008-08-15 | $5.11 | Ford Q2 2008 results | 1.30 | +0.18 | 0.30x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +137.8% | +151.0pp | +106.2% | ✓ |
+| 2008-08-22 | $4.47 | Ford Q2 2008 results | 1.30 | +0.26 | 0.24x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +163.3% | +176.8pp | +137.7% | ✓ |
+| 2008-08-29 | $4.46 | Ford Q2 2008 results | 1.30 | +0.26 | 0.24x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +159.2% | +172.7pp | +139.9% | ✓ |
+| 2008-09-05 | $4.41 | Ford Q2 2008 results | 1.30 | +0.27 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +173.7% | +180.9pp | +144.6% | ✓ |
+| 2008-09-12 | $4.91 | Ford Q2 2008 results | 1.30 | +0.21 | 0.28x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +140.1% | +148.1pp | +121.1% | ✓ |
+| 2008-09-19 | $5.29 | Ford Q2 2008 results | 1.30 | +0.16 | 0.31x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +136.1% | +141.8pp | +107.1% | ✓ |
+| 2008-09-26 | $4.81 | Ford Q2 2008 results | 1.30 | +0.22 | 0.27x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +161.1% | +162.4pp | +130.0% | ✓ |
+| 2008-10-03 | $4.05 | Ford Q2 2008 results | 1.30 | +0.32 | 0.20x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +202.7% | +194.8pp | +175.7% | ✓ |
+| 2008-10-10 | $1.99 | Ford Q2 2008 results | 1.30 | +0.60 | 0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +586.4% | +549.7pp | +467.1% | ✓ |
+| 2008-10-17 | $2.43 | Ford Q2 2008 results | 1.30 | +0.60 | 0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +467.9% | +436.8pp | +369.5% | ✓ |
+| 2008-10-24 | $2.01 | Ford Q2 2008 results | 1.30 | +0.43 | 0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +594.0% | +552.9pp | +473.6% | ✓ |
+| 2008-10-31 | $2.19 | Ford Q2 2008 results | 1.30 | +0.43 | 0.08x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +545.2% | +518.2pp | +432.8% | ✓ |
+| 2008-11-07 | $2.02 | Ford Q3 2008 results | 1.60 | +0.73 | 0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +702.5% | +666.9pp | +485.3% | ✓ |
+| 2008-11-14 | $1.80 | Ford Q3 2008 results | 1.60 | +0.73 | 0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +805.6% | +761.6pp | +565.8% | ✓ |
+| 2008-11-21 | $1.43 | Ford Q3 2008 results | 1.60 | +0.73 | 0.03x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +1038.5% | +981.5pp | +748.8% | ✓ |
+| 2008-11-28 | $2.69 | Ford Q3 2008 results | 1.60 | +0.73 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +498.5% | +461.6pp | +355.5% | ✓ |
+| 2008-12-05 | $2.72 | Ford Q3 2008 results | 1.60 | +0.73 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +517.6% | +472.8pp | +355.9% | ✓ |
+| 2008-12-12 | $3.04 | Ford Q3 2008 results | 1.60 | +0.68 | 0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +450.3% | +405.4pp | +313.0% | ✓ |
+| 2008-12-19 | $2.95 | Ford Q3 2008 results | 1.60 | +0.79 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +469.5% | +423.5pp | +330.5% | ✓ |
+| 2008-12-26 | $2.29 | Ford Q3 2008 results | 1.60 | +0.73 | 0.08x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +632.8% | +583.6pp | +459.4% | ✓ |
+| 2009-01-02 | $2.46 | Ford Q3 2008 results | 1.60 | +0.73 | 0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +582.5% | +542.5pp | +425.7% | ✓ |
+| 2009-01-09 | $2.63 | Ford Q3 2008 results | 1.60 | +0.73 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +594.7% | +547.0pp | +396.7% | ✓ |
+| 2009-01-16 | $2.19 | Ford Q3 2008 results | 1.60 | +0.73 | 0.08x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +751.6% | +694.4pp | +502.6% | ✓ |
+| 2009-01-23 | $1.80 | Ford Q3 2008 results | 1.60 | +0.73 | 0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +897.2% | +837.4pp | +639.2% | ✓ |
+| 2009-01-30 | $1.87 | Ford Q4 2008 results | 1.45 | +0.58 | 0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +770.1% | +710.5pp | +618.6% | ✓ |
+| 2009-02-06 | $1.94 | Ford Q4 2008 results | 1.45 | +0.58 | 0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +710.3% | +654.4pp | +597.3% | ✓ |
+| 2009-02-13 | $1.76 | Ford Q4 2008 results | 1.45 | +0.58 | 0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +830.7% | +764.5pp | +674.3% | ✓ |
+| 2009-02-20 | $1.58 | Ford Q4 2008 results | 1.45 | +0.58 | 0.03x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +898.1% | +818.6pp | +767.7% | ✓ |
+| 2009-02-27 | $2.00 | Ford Q4 2008 results | 1.45 | +0.58 | 0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +653.5% | +568.5pp | +588.6% | ✓ |
+| 2009-03-06 | $1.70 | Ford Q4 2008 results | 1.45 | +0.58 | 0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +748.2% | +649.6pp | +712.5% | ✓ |
+| 2009-03-13 | $2.19 | Ford Q4 2008 results | 1.45 | +0.58 | 0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +555.7% | +477.9pp | +531.9% | ✓ |
+| 2009-03-20 | $2.75 | Ford Q4 2008 results | 1.45 | +0.58 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +426.9% | +354.6pp | +403.8% | ✓ |
+| 2009-03-27 | $2.84 | Ford Q4 2008 results | 1.45 | +0.63 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +428.5% | +362.2pp | +388.4% | ✓ |
+| 2009-04-03 | $3.25 | Ford Q4 2008 results | 1.45 | +0.49 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +366.5% | +303.2pp | +327.8% | ✓ |
+| 2009-04-09 | $4.24 | Ford Q4 2008 results | 1.45 | +0.33 | 0.21x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +261.6% | +201.6pp | +229.3% | ✓ |
+| 2009-04-17 | $4.00 | Ford Q4 2008 results | 1.45 | +0.36 | 0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +267.8% | +211.0pp | +249.8% | ✓ |
+| 2009-04-24 | $5.00 | Ford Q1 2009 results | 1.30 | +0.01 | 0.27x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +208.6% | +149.1pp | +180.2% | ✓ |
+| 2009-05-01 | $5.69 | Ford Q1 2009 results | 1.30 | -0.12 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +171.9% | +111.6pp | +146.9% | ✓ |
+| 2009-05-08 | $6.24 | Ford Q1 2009 results | 1.30 | -0.43 | 0.38x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +142.1% | +93.0pp | +126.0% | ✓ |
+| 2009-05-15 | $5.49 | Ford Q1 2009 results | 1.30 | -0.10 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +174.7% | +118.6pp | +157.9% | ✓ |
+| 2009-05-22 | $5.26 | Ford Q1 2009 results | 1.30 | -0.06 | 0.31x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +185.2% | +130.1pp | +170.6% | ✓ |
+| 2009-05-29 | $5.75 | Ford Q1 2009 results | 1.30 | -0.16 | 0.36x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +153.9% | +104.8pp | +148.6% | ✓ |
+| 2009-06-05 | $6.36 | Ford Q1 2009 results | 1.30 | -0.50 | 0.42x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +120.3% | +77.7pp | +125.4% | ✗ |
+| 2009-06-12 | $6.11 | Ford Q1 2009 results | 1.30 | -0.44 | 0.40x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +118.5% | +79.6pp | +135.5% | ✓ |
+| 2009-06-19 | $5.72 | Ford Q1 2009 results | 1.30 | -0.15 | 0.36x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +123.3% | +80.3pp | +152.1% | ✓ |
+| 2009-06-26 | $5.61 | Ford Q1 2009 results | 1.30 | -0.13 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +136.0% | +93.0pp | +157.8% | ✓ |
+| 2009-07-02 | $5.89 | Ford Q1 2009 results | 1.30 | -0.19 | 0.37x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +138.0% | +83.9pp | +146.7% | ✓ |
+| 2009-07-10 | $5.72 | Ford Q1 2009 results | 1.30 | -0.15 | 0.36x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +142.7% | +84.7pp | +155.0% | ✓ |
+| 2009-07-17 | $6.14 | Ford Q1 2009 results | 1.30 | -0.45 | 0.40x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 2/8 FAIR | +113.2% | +68.5pp | +138.0% | ✗ |
+| 2009-07-24 | $6.78 | Ford Q2 2009 results | 1.95 | +0.13 | 0.47x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +96.3% | +54.4pp | +115.9% | ✓ |
+| 2009-07-31 | $8.00 | Ford Q2 2009 results | 1.95 | -0.06 | 0.64x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +52.6% | +17.1pp | +82.9% | ✓ |
+| 2009-08-07 | $8.01 | Ford Q2 2009 results | 1.95 | -0.06 | 0.64x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +35.3% | +12.2pp | +82.3% | ✓ |
+| 2009-08-14 | $7.83 | Ford Q2 2009 results | 1.95 | -0.04 | 0.61x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +41.3% | +19.5pp | +86.0% | ✓ |
+| 2009-08-21 | $7.74 | Ford Q2 2009 results | 1.95 | -0.03 | 0.60x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +29.1% | +15.3pp | +87.9% | ✓ |
+| 2009-08-28 | $7.73 | Ford Q2 2009 results | 1.95 | -0.04 | 0.60x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +34.5% | +16.0pp | +87.8% | ✓ |
+| 2009-09-04 | $7.43 | Ford Q2 2009 results | 1.95 | -0.00 | 0.56x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +40.2% | +20.3pp | +95.2% | ✓ |
+| 2009-09-11 | $7.33 | Ford Q2 2009 results | 1.95 | +0.01 | 0.54x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +37.1% | +22.1pp | +97.6% | ✓ |
+| 2009-09-18 | $6.94 | Ford Q2 2009 results | 1.95 | +0.08 | 0.49x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +53.0% | +34.8pp | +108.2% | ✓ |
+| 2009-09-25 | $7.29 | Ford Q2 2009 results | 1.95 | +0.02 | 0.54x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +35.3% | +22.1pp | +97.5% | ✓ |
+| 2009-10-02 | $6.84 | Ford Q2 2009 results | 1.95 | +0.12 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +41.4% | +26.4pp | +109.8% | ✓ |
+| 2009-10-09 | $7.12 | Ford Q2 2009 results | 1.95 | +0.05 | 0.52x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +50.1% | +37.9pp | +100.8% | ✓ |
+| 2009-10-16 | $7.42 | Ford Q2 2009 results | 1.95 | -0.01 | 0.55x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +55.8% | +39.0pp | +92.0% | ✓ |
+| 2009-10-23 | $7.63 | Ford Q2 2009 results | 1.95 | -0.02 | 0.58x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +60.7% | +41.7pp | +86.2% | ✓ |
+| 2009-10-30 | $7.00 | Ford Q2 2009 results | 1.95 | +0.05 | 0.55x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +71.4% | +42.7pp | +102.4% | ✓ |
+| 2009-11-03 | $7.44 | Ford Q3 2009 results | 2.75 | +1.08 | 0.61x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +52.2% | +27.1pp | +89.7% | ✓ |
+| 2009-11-13 | $8.41 | Ford Q3 2009 results | 2.75 | +0.78 | 0.77x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +32.5% | +12.7pp | +66.3% | ✓ |
+| 2009-11-20 | $8.64 | Ford Q3 2009 results | 2.75 | +0.72 | 0.82x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +16.9% | +1.2pp | +60.5% | ✓ |
+| 2009-11-27 | $8.73 | Ford Q3 2009 results | 2.75 | +0.71 | 0.83x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +11.7% | +1.3pp | +57.7% | ✓ |
+| 2009-12-04 | $8.94 | Ford Q3 2009 results | 2.75 | +0.69 | 0.88x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +21.9% | +5.2pp | +52.7% | ✓ |
+| 2009-12-11 | $9.00 | Ford Q3 2009 results | 2.75 | +0.67 | 0.89x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +22.6% | +4.9pp | +50.4% | ✓ |
+| 2009-12-18 | $9.68 | Ford Q3 2009 results | 2.75 | +0.59 | 1.04x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +5.9% | -8.8pp | +38.6% | ✓ |
+| 2009-12-24 | $10.13 | Ford Q3 2009 results | 2.75 | +0.52 | 1.16x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +8.1% | -8.6pp | +31.3% | ✓ |
+| 2009-12-31 | $10.00 | Ford Q3 2009 results | 2.75 | +0.53 | 1.12x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +7.6% | -9.4pp | +32.1% | ✓ |
+| 2010-01-08 | $11.69 | Ford Q3 2009 results | 2.75 | +0.35 | 1.69x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +0.2% | -15.5pp | +11.8% | ✓ |
+| 2010-01-15 | $11.60 | Ford Q3 2009 results | 2.75 | +0.35 | 1.96x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +3.8% | -13.8pp | +11.6% | ✓ |
+| 2010-01-22 | $10.52 | Ford Q3 2009 results | 2.75 | +0.45 | 1.47x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +19.7% | -5.6pp | +22.2% | ✓ |
+| 2010-01-29 | $10.84 | Ford Q4 2009 results | 3.00 | +1.22 | 0.97x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +13.1% | -14.2pp | +17.6% | ✗ |
+| 2010-02-05 | $10.91 | Ford Q4 2009 results | 3.00 | +1.21 | 0.98x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +17.7% | -13.0pp | +16.3% | ✗ |
+| 2010-02-12 | $11.12 | Ford Q4 2009 results | 3.00 | +1.18 | 1.02x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +12.3% | -16.5pp | +13.5% | ✗ |
+| 2010-02-19 | $11.29 | Ford Q4 2009 results | 3.00 | +1.15 | 1.06x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +13.4% | -13.7pp | +11.1% | ✗ |
+| 2010-02-26 | $11.74 | Ford Q4 2009 results | 3.00 | +1.02 | 1.16x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +4.6% | -23.4pp | +6.5% | ✗ |
+| 2010-03-05 | $13.00 | Ford Q4 2009 results | 3.00 | +0.89 | 1.50x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -3.8% | -27.7pp | -4.1% | ✗ |
+| 2010-03-12 | $13.34 | Ford Q4 2009 results | 3.00 | +0.85 | 1.61x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | -6.4% | -29.8pp | -6.9% | ✗ |
+| 2010-03-19 | $13.29 | Ford Q4 2009 results | 3.00 | +0.86 | 1.59x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | -4.6% | -30.3pp | -6.8% | ✗ |
+| 2010-03-26 | $13.86 | Ford Q4 2009 results | 3.00 | +0.81 | 1.80x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -9.6% | -35.3pp | -10.9% | ✗ |
+| 2010-04-01 | $12.63 | Ford Q4 2009 results | 3.00 | +0.93 | 1.39x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -0.8% | -24.5pp | -2.6% | ✗ |
+| 2010-04-09 | $12.72 | Ford Q4 2009 results | 3.00 | +0.91 | 1.61x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -3.5% | -23.3pp | -3.8% | ✗ |
+| 2010-04-16 | $13.42 | Ford Q4 2009 results | 3.00 | +0.83 | 1.89x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | -11.1% | -30.1pp | -9.3% | ✗ |
+| 2010-04-23 | $14.21 | Ford Q4 2009 results | 3.00 | +0.69 | 1.95x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -19.8% | -36.2pp | -14.7% | ✓ |
+| 2010-04-28 | $13.25 | Ford Q1 2010 results | 3.00 | +0.94 | 1.58x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -12.1% | -33.8pp | -9.0% | ✗ |
+| 2010-05-07 | $11.51 | Ford Q1 2010 results | 3.00 | +1.17 | 1.24x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -6.5% | -34.2pp | +3.9% | ✗ |
+| 2010-05-14 | $12.11 | Ford Q1 2010 results | 3.00 | +1.08 | 1.41x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -14.0% | -36.1pp | -2.0% | ✗ |
+| 2010-05-21 | $11.26 | Ford Q1 2010 results | 3.00 | +1.20 | 1.17x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -8.5% | -34.0pp | +4.5% | ✗ |
+| 2010-05-28 | $11.73 | Ford Q1 2010 results | 3.00 | +1.13 | 1.30x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -8.8% | -34.1pp | -0.3% | ✗ |
+| 2010-06-04 | $11.50 | Ford Q1 2010 results | 3.00 | +1.17 | 1.24x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -11.8% | -36.4pp | +1.1% | ✗ |
+| 2010-06-11 | $11.40 | Ford Q1 2010 results | 3.00 | +1.18 | 1.21x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -7.5% | -31.8pp | +1.4% | ✗ |
+| 2010-06-18 | $11.46 | Ford Q1 2010 results | 3.00 | +1.18 | 1.22x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -8.9% | -33.8pp | +0.4% | ✗ |
+| 2010-06-25 | $10.75 | Ford Q1 2010 results | 3.00 | +1.29 | 1.05x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -6.0% | -32.5pp | +6.5% | ✗ |
+| 2010-07-02 | $10.28 | Ford Q1 2010 results | 3.00 | +1.35 | 0.95x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -7.7% | -46.3pp | +10.6% | ✗ |
+| 2010-07-09 | $10.85 | Ford Q1 2010 results | 3.00 | +1.26 | 1.08x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -12.0% | -42.1pp | +4.2% | ✗ |
+| 2010-07-16 | $11.34 | Ford Q1 2010 results | 3.00 | +1.19 | 1.19x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | -17.5% | -49.2pp | -1.0% | ✗ |
+| 2010-07-23 | $12.72 | Ford Q2 2010 results | 3.05 | +1.04 | 1.61x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -27.1% | -54.1pp | -12.4% | ✗ |
+| 2010-07-30 | $12.77 | Ford Q2 2010 results | 3.05 | +1.03 | 1.63x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -28.0% | -58.4pp | -13.3% | ✗ |
+| 2010-08-06 | $13.04 | Ford Q2 2010 results | 3.05 | +0.99 | 1.73x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -28.7% | -57.5pp | -15.4% | ✗ |
+| 2010-08-13 | $12.15 | Ford Q2 2010 results | 3.05 | +1.11 | 1.42x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -21.4% | -56.1pp | -9.4% | ✗ |
+| 2010-08-20 | $11.77 | Ford Q2 2010 results | 3.05 | +1.17 | 1.31x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -16.9% | -53.9pp | -6.7% | ✗ |
+| 2010-08-27 | $11.56 | Ford Q2 2010 results | 3.05 | +1.21 | 1.25x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -17.5% | -54.7pp | -5.2% | ✗ |
+| 2010-09-03 | $12.07 | Ford Q2 2010 results | 3.05 | +1.12 | 1.40x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -21.4% | -53.3pp | -9.4% | ✗ |
+| 2010-09-10 | $11.79 | Ford Q2 2010 results | 3.05 | +1.17 | 1.31x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -13.0% | -46.3pp | -7.3% | ✗ |
+| 2010-09-17 | $12.49 | Ford Q2 2010 results | 3.05 | +1.12 | 1.53x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -15.6% | -50.1pp | -12.5% | ✗ |
+| 2010-09-24 | $12.56 | Ford Q2 2010 results | 3.05 | +1.11 | 1.55x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -16.6% | -48.1pp | -13.0% | ✗ |
+| 2010-10-01 | $12.26 | Ford Q2 2010 results | 3.05 | +1.16 | 1.45x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -17.8% | -48.4pp | -10.8% | ✗ |
+| 2010-10-08 | $13.66 | Ford Q2 2010 results | 3.05 | +0.95 | 2.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -25.3% | -54.9pp | -20.0% | ✓ |
+| 2010-10-15 | $13.80 | Ford Q2 2010 results | 3.05 | +0.94 | 2.06x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -24.9% | -51.8pp | -21.0% | ✓ |
+| 2010-10-22 | $13.95 | Ford Q2 2010 results | 3.05 | +0.92 | 2.14x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -26.0% | -51.7pp | -22.1% | ✓ |
+| 2010-10-27 | $14.23 | Ford Q3 2010 results | 2.35 | -0.22 | 2.29x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -26.1% | -50.0pp | -23.8% | ✓ |
+| 2010-11-05 | $16.21 | Ford Q3 2010 results | 2.35 | -0.34 | 4.01x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -29.4% | -49.3pp | -33.2% | ✓ |
+| 2010-11-12 | $16.30 | Ford Q3 2010 results | 2.35 | -0.35 | 4.14x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -31.5% | -50.9pp | -33.6% | ✓ |
+| 2010-11-19 | $16.28 | Ford Q3 2010 results | 2.35 | -0.35 | 4.11x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -32.2% | -52.3pp | -33.4% | ✓ |
+| 2010-11-26 | $16.10 | Ford Q3 2010 results | 2.35 | -0.33 | 3.87x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -29.8% | -53.0pp | -32.6% | ✓ |
+| 2010-12-03 | $16.80 | Ford Q3 2010 results | 2.35 | -0.38 | 4.94x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -30.9% | -50.3pp | -35.3% | ✓ |
+| 2010-12-10 | $16.73 | Ford Q3 2010 results | 2.35 | -0.38 | 4.81x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -30.2% | -49.0pp | -35.0% | ✓ |
+| 2010-12-17 | $16.80 | Ford Q3 2010 results | 2.35 | -0.38 | 4.94x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -31.0% | -50.4pp | -35.1% | ✓ |
+| 2010-12-23 | $16.78 | Ford Q3 2010 results | 2.35 | -0.36 | 3.74x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -28.1% | -46.3pp | -34.9% | ✓ |
+| 2010-12-31 | $16.79 | Ford Q3 2010 results | 2.35 | -0.36 | 3.75x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -22.2% | -38.0pp | -34.8% | ✓ |
+| 2011-01-07 | $18.27 | Ford Q3 2010 results | 2.35 | -0.46 | 6.33x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -25.4% | -44.7pp | -39.9% | ✓ |
+| 2011-01-14 | $18.65 | Ford Q3 2010 results | 2.35 | -0.48 | 7.51x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -23.9% | -42.0pp | -40.9% | ✓ |
+| 2011-01-21 | $17.95 | Ford Q3 2010 results | 2.35 | -0.44 | 5.56x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -20.3% | -40.3pp | -38.4% | ✓ |
+| 2011-01-28 | $16.27 | Ford Q4 2010 results | 2.15 | +1.18 | 0.28x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -13.5% | -35.4pp | -31.9% | ✗ |
+| 2011-02-04 | $15.72 | Ford Q4 2010 results | 2.15 | +1.01 | 0.28x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -16.2% | -34.5pp | -29.5% | ✗ |
+| 2011-02-11 | $16.38 | Ford Q4 2010 results | 2.15 | +1.00 | 0.30x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -18.1% | -36.4pp | -32.3% | ✗ |
+| 2011-02-18 | $15.77 | Ford Q4 2010 results | 2.15 | +1.01 | 0.28x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -15.5% | -32.8pp | -29.6% | ✗ |
+| 2011-02-25 | $15.07 | Ford Q4 2010 results | 2.15 | +1.03 | 0.27x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -17.5% | -34.4pp | -26.3% | ✗ |
+| 2011-03-04 | $14.42 | Ford Q4 2010 results | 2.15 | +1.20 | 0.25x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -9.5% | -29.2pp | -23.0% | ✗ |
+| 2011-03-11 | $14.36 | Ford Q4 2010 results | 2.15 | +1.03 | 0.25x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -5.0% | -28.6pp | -22.6% | ✗ |
+| 2011-03-18 | $14.49 | Ford Q4 2010 results | 2.15 | +1.03 | 0.26x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -6.4% | -32.3pp | -23.2% | ✗ |
+| 2011-03-25 | $15.01 | Ford Q4 2010 results | 2.15 | +1.02 | 0.28x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -9.5% | -31.9pp | -25.7% | ✗ |
+| 2011-04-01 | $15.16 | Ford Q4 2010 results | 2.15 | +1.02 | 0.28x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -12.9% | -34.5pp | -26.4% | ✗ |
+| 2011-04-08 | $15.33 | Ford Q4 2010 results | 2.15 | +1.02 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -14.7% | -36.6pp | -27.2% | ✗ |
+| 2011-04-15 | $14.71 | Ford Q4 2010 results | 2.15 | +1.03 | 0.27x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -9.9% | -31.8pp | -23.9% | ✗ |
+| 2011-04-21 | $15.43 | Ford Q4 2010 results | 2.15 | +1.01 | 0.30x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -14.3% | -34.8pp | -27.4% | ✗ |
+| 2011-04-27 | $15.58 | Ford Q1 2011 results | 2.70 | +1.75 | 0.30x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -10.3% | -31.3pp | -27.8% | ✗ |
+| 2011-05-06 | $15.11 | Ford Q1 2011 results | 2.70 | +1.76 | 0.30x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -4.1% | -29.0pp | -25.2% | ✗ |
+| 2011-05-13 | $15.08 | Ford Q1 2011 results | 2.70 | +1.76 | 0.30x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -4.4% | -30.8pp | -24.6% | ✗ |
+| 2011-05-20 | $15.00 | Ford Q1 2011 results | 2.70 | +1.76 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +3.0% | -26.3pp | -23.5% | ✗ |
+| 2011-05-27 | $14.60 | Ford Q1 2011 results | 2.70 | +1.77 | 0.28x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +4.0% | -24.1pp | -20.9% | ✗ |
+| 2011-06-03 | $14.01 | Ford Q1 2011 results | 2.70 | +1.96 | 0.26x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +16.3% | -14.2pp | -16.9% | ✗ |
+| 2011-06-10 | $13.35 | Ford Q1 2011 results | 2.70 | +2.18 | 0.25x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +20.7% | -13.0pp | -12.0% | ✗ |
+| 2011-06-17 | $12.77 | Ford Q1 2011 results | 2.70 | +1.99 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +24.9% | -8.6pp | -7.2% | ✗ |
+| 2011-06-24 | $13.24 | Ford Q1 2011 results | 2.70 | +1.98 | 0.25x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +13.8% | -14.8pp | -9.8% | ✗ |
+| 2011-07-01 | $14.02 | Ford Q1 2011 results | 2.70 | +1.78 | 0.27x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +15.1% | -9.9pp | -14.0% | ✗ |
+| 2011-07-08 | $13.88 | Ford Q1 2011 results | 2.70 | +1.79 | 0.26x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +24.0% | -2.5pp | -12.4% | ✗ |
+| 2011-07-15 | $13.09 | Ford Q1 2011 results | 2.70 | +1.81 | 0.24x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +33.8% | +1.6pp | -5.9% | ✓ |
+| 2011-07-22 | $13.31 | Ford Q1 2011 results | 2.70 | +1.98 | 0.25x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +31.0% | +0.6pp | -6.3% | ✓ |
+| 2011-07-27 | $12.37 | Ford Q2 2011 results | 2.55 | +1.77 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +40.8% | +6.7pp | +1.9% | ✓ |
+| 2011-08-05 | $10.84 | Ford Q2 2011 results | 2.55 | +1.80 | 0.18x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +63.2% | +16.0pp | +18.0% | ✓ |
+| 2011-08-12 | $11.06 | Ford Q2 2011 results | 2.55 | +1.80 | 0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +58.9% | +10.6pp | +17.0% | ✓ |
+| 2011-08-19 | $9.99 | Ford Q2 2011 results | 2.55 | +1.80 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +66.4% | +14.7pp | +31.0% | ✓ |
+| 2011-08-26 | $10.40 | Ford Q2 2011 results | 2.55 | +1.80 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +62.6% | +16.8pp | +27.1% | ✓ |
+| 2011-09-02 | $10.42 | Ford Q2 2011 results | 2.55 | +1.80 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +60.2% | +16.2pp | +28.1% | ✓ |
+| 2011-09-09 | $10.05 | Ford Q2 2011 results | 2.55 | +1.80 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +77.2% | +27.4pp | +34.1% | ✓ |
+| 2011-09-16 | $10.62 | Ford Q2 2011 results | 2.55 | +1.80 | 0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +68.1% | +23.5pp | +28.2% | ✓ |
+| 2011-09-23 | $9.86 | Ford Q2 2011 results | 2.55 | +1.97 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +79.5% | +24.3pp | +39.5% | ✓ |
+| 2011-09-30 | $9.67 | Ford Q2 2011 results | 2.55 | +1.97 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +79.6% | +25.6pp | +43.8% | ✓ |
+| 2011-10-07 | $10.69 | Ford Q2 2011 results | 2.55 | +1.80 | 0.20x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +61.9% | +11.8pp | +31.4% | ✓ |
+| 2011-10-14 | $11.56 | Ford Q2 2011 results | 2.55 | +1.60 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +52.9% | +8.4pp | +22.6% | ✓ |
+| 2011-10-21 | $12.26 | Ford Q2 2011 results | 2.55 | +1.60 | 0.25x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +46.8% | +1.1pp | +16.8% | ✓ |
+| 2011-10-27 | $12.08 | Ford Q3 2011 results | 2.85 | +1.98 | 0.24x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +49.8% | +8.2pp | +19.7% | ✓ |
+| 2011-11-04 | $11.27 | Ford Q3 2011 results | 2.85 | +2.35 | 0.21x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +56.2% | +10.3pp | +29.2% | ✓ |
+| 2011-11-11 | $11.14 | Ford Q3 2011 results | 2.85 | +2.18 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +57.0% | +12.1pp | +31.7% | ✓ |
+| 2011-11-18 | $10.10 | Ford Q3 2011 results | 2.85 | +2.18 | 0.18x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +74.1% | +21.9pp | +46.5% | ✓ |
+| 2011-11-25 | $9.75 | Ford Q3 2011 results | 2.85 | +2.18 | 0.18x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +79.9% | +19.3pp | +52.8% | ✓ |
+| 2011-12-02 | $10.90 | Ford Q3 2011 results | 2.85 | +2.35 | 0.21x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +62.0% | +12.4pp | +37.7% | ✓ |
+| 2011-12-09 | $11.03 | Ford Q3 2011 results | 2.85 | +2.35 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +55.6% | +6.7pp | +37.0% | ✓ |
+| 2011-12-16 | $10.25 | Ford Q3 2011 results | 2.85 | +2.18 | 0.20x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +70.3% | +18.4pp | +48.4% | ✓ |
+| 2011-12-23 | $10.95 | Ford Q3 2011 results | 2.85 | +2.18 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +43.8% | -5.7pp | +39.7% | ✓ |
+| 2011-12-30 | $10.76 | Ford Q3 2011 results | 2.85 | +2.35 | 0.21x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +47.6% | -4.0pp | +42.5% | ✓ |
 | 2022-01-07 | $24.44 | Ford Q3 2021 results | 2.35 | -1.82 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -44.4% | -47.5pp | -49.6% | ✓ |
 | 2022-01-14 | $25.19 | Ford Q3 2021 results | 2.35 | -1.82 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -47.6% | -52.9pp | -51.2% | ✓ |
 | 2022-01-21 | $20.65 | Ford Q3 2021 results | 2.35 | -1.82 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -37.3% | -50.4pp | -40.6% | ✓ |

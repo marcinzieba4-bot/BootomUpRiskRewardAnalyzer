@@ -240,3 +240,32 @@ crisis year need a sounder anchor than the crisis year itself.
 | legacy tier ACCUMULATE | 66 | 66 | +3.2% | -17.3% to +57.5% | 25 | 17 | -3.7% | - |
 | legacy tier WATCHLIST | 71 | 71 | -8.0% | -26.6% to +58.4% | 18 | 15 | -2.9% | - |
 | legacy tier AVOID | 87 | 35 | +18.8% | -47.5% to +73.8% | 19 | 17 | +6.6% | - |
+
+## F 2008-2011 (hindsight)
+
+Patterns seen in `outcome.json` for the 209 weekly dates from 2008-01-04 to 2011-12-30. **Labels and hypotheses**: never feed them back into
+the method or the fact sheet. The point-in-time build (3d3e2d059) and the README's decisions, controls, leak scan and firewall result
+(a296995b4) were committed before any of these outcomes was computed (2026-11-13). Every date has one-, two- and three-year horizons. The
+dividend reinstated in December 2011 ($0.05 a quarter) is in the total returns of the 2010-2011 dates; no split falls in a horizon. Medians of an
+even count take the upper middle value. The hurdle is +32.2% over two years; "call held" is `call_check_2y` (`hit`).
+
+**Hindsight the model could not see:** Ford took no government bridge loan and did not file for bankruptcy; the stock fell to $1.43 (2008
+close, among these dates) and $1.58 (2009), rose to $18.65 by January 2011 and ended 2011 near $10. SPY's median two-year total return over
+these windows was +25.5%; Ford's +50.1%.
+
+- **The classes rank in the right order, and two of three held.** Two-year median total return: CHEAP +70.3% (160 dates; held 121, cleared
+  the hurdle on 119, beat SPY on 119), FAIR -8.8% (29; held 8), RICH -25.4% (20; held 19). Legacy tiers in the same order: BUY +79.8% (146),
+  ACCUMULATE +13.1% (13), WATCHLIST -8.9% (30), AVOID -25.4% (20).
+- **2008-2009: CHEAP on 96 of 105 dates, all 96 held** (+136.1% and +142.7% two-year medians). The anchor was 2005's $1.00, three years
+  stale and from before three loss years: the method bought a loss-making automaker at 1.4-10x a pre-crisis figure, and it paid because Ford
+  survived. **That is a survivor's result.** The same rule on an automaker that went bankrupt in 2009 would have read CHEAP as well; F alone
+  cannot test the rule, only show that it does not protect against a stale anchor. Do not read the 2008 calls as skill.
+- **2010: the stale anchor cut the other way.** On the same $1.00, 10-19x as the price recovered: RICH 16 (all held, -26.1%), FAIR 21 (1 held,
+  -13.0%), CHEAP 15 (none held, -7.5%). Every 2010 entry lost over two years whatever its class; the classes still ranked in order.
+- **2011: CHEAP on 49 of 52 at 5-8.6x FY10's $1.91** (from the Q4 2010 print): two-year median +31.0%, 25 held (24 cleared the hurdle, 23 beat
+  SPY), but the m12-24 average price was -6.3%: the stock fell through 2011-2012 before recovering, so the result depends on the endpoint.
+- **Entry price explains more than the class** (two-year median): below $3, +632.8% (24 dates); $3-6, +151.9% (34); $6-10, +63.9% (49);
+  $10-14, +3.8% (68); above $14, -15.5% (34). Over one stock and four years that mostly tests "buy lower", as the README warns.
+- **What to test elsewhere (never here):** whether an anchor more than two years old should suspend CHEAP and RICH for a cyclical, and whether
+  a near-zero year readmitted to the P/E window (2009's $0.01, 158-1,020x) should be capped. Both would be rule changes: a new method version
+  and a full re-run, not an edit to this archive.
