@@ -267,6 +267,237 @@
    "title": "NVIDIA Q3 FY10 CFO commentary (exhibit to the results 8-K)",
    "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581009000031/cfocommentary.htm",
    "supports": "the fourth quarter of fiscal 2010 is 14 weeks"
+  },
+  "NV39": {
+   "published": "2010-03-18",
+   "filed": "accepted 2010-03-17 19:16 ET, after the close; dated the next trading day",
+   "title": "NVIDIA FY2010 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581010000006/fy2010form10k.htm",
+   "supports": "selected financial data fiscal 2006-2010; statements, segments, cash flows, risk factors (the FY2010 history vintage)"
+  },
+  "NV40": {
+   "published": "2011-03-17",
+   "filed": "accepted 2011-03-16 16:33 ET, after the close; dated the next trading day",
+   "title": "NVIDIA FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581011000015/fy2011form10k.htm",
+   "supports": "selected financial data fiscal 2007-2011; statements, segments, cash flows, risk factors (the FY2011 history vintage)"
+  },
+  "NV41": {
+   "published": "2012-03-14",
+   "filed": "accepted 2012-03-13 16:56 ET, after the close; dated the next trading day",
+   "title": "NVIDIA FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581012000013/nvda-2012x10k.htm",
+   "supports": "selected financial data fiscal 2008-2012; statements, segments, cash flows, risk factors (the FY2012 history vintage)"
+  },
+  "NV42": {
+   "published": "2013-03-13",
+   "filed": "accepted 2013-03-12 17:03 ET, after the close; dated the next trading day",
+   "title": "NVIDIA FY2013 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581013000008/nvda-2013x10k.htm",
+   "supports": "selected financial data fiscal 2009-2013; statements, segments, cash flows, risk factors, the dividend (the FY2013 history vintage)"
+  },
+  "NV43": {
+   "published": "2010-02-18",
+   "filed": "accepted 2010-02-17 16:50 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q4 FY10 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581010000002/q410pressrelease.htm",
+   "supports": "Q4 FY10 and FY2010 statements, reconciliation and balance sheet; the Q1 FY11 outlook"
+  },
+  "NV44": {
+   "published": "2010-05-14",
+   "filed": "accepted 2010-05-13 16:29 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q1 FY11 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581010000015/q11earningsrelease.htm",
+   "supports": "Q1 FY11 statements and balance sheet; the Q2 FY11 outlook"
+  },
+  "NV45": {
+   "published": "2010-05-24",
+   "filed": "accepted 2010-05-21 16:36 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q1 FY11 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581010000018/q111form10q.htm",
+   "supports": "inventories at May 2, 2010 (the year-ago quarter of Q1 FY12)"
+  },
+  "NV46": {
+   "published": "2010-08-13",
+   "filed": "accepted 2010-08-12 16:24 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q2 FY11 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581010000022/q211earningrelease.htm",
+   "supports": "Q2 FY11 statements and balance sheet; the Q3 FY11 outlook"
+  },
+  "NV47": {
+   "published": "2010-08-31",
+   "filed": "accepted 2010-08-30 16:18 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q2 FY11 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581010000029/q211form10q.htm",
+   "supports": "inventories at August 1, 2010 (the year-ago quarter of Q2 FY12); the Q3 FY11 revenue words"
+  },
+  "NV48": {
+   "published": "2010-11-12",
+   "filed": "accepted 2010-11-12 06:11 ET, before the open",
+   "title": "NVIDIA Q3 FY11 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581010000038/q311earningsrelease.htm",
+   "supports": "Q3 FY11 statements and balance sheet; the Q4 FY11 outlook"
+  },
+  "NV49": {
+   "published": "2010-12-08",
+   "filed": "accepted 2010-12-07 16:44 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q3 FY11 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581010000045/q311form10q.htm",
+   "supports": "inventories at October 31, 2010 (the year-ago quarter of Q3 FY12); the Q4 FY11 revenue words"
+  },
+  "NV50": {
+   "published": "2011-02-17",
+   "filed": "accepted 2011-02-16 16:22 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q4 FY11 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581011000006/earningrelease.htm",
+   "supports": "Q4 FY11 and FY2011 statements and balance sheet; the Q1 FY12 outlook"
+  },
+  "NV51": {
+   "published": "2011-05-13",
+   "filed": "accepted 2011-05-12 16:25 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q1 FY12 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581011000022/earningsrelease.htm",
+   "supports": "Q1 FY12 statements and balance sheet; the Q2 FY12 outlook"
+  },
+  "NV52": {
+   "published": "2011-05-31",
+   "filed": "accepted 2011-05-27 17:08 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q1 FY12 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581011000031/q112form10q.htm",
+   "supports": "inventories at May 1, 2011 (the year-ago quarter of Q1 FY13)"
+  },
+  "NV53": {
+   "published": "2011-08-12",
+   "filed": "accepted 2011-08-11 16:26 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q2 FY12 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581011000039/earningsrelease.htm",
+   "supports": "Q2 FY12 statements and balance sheet; the Q3 FY12 outlook"
+  },
+  "NV54": {
+   "published": "2011-08-26",
+   "filed": "accepted 2011-08-25 16:18 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q2 FY12 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581011000046/q212form10q.htm",
+   "supports": "inventories at July 31, 2011 (the year-ago quarter of Q2 FY13)"
+  },
+  "NV55": {
+   "published": "2011-11-11",
+   "filed": "accepted 2011-11-10 16:21 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q3 FY12 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581011000052/earningsrelease.htm",
+   "supports": "Q3 FY12 statements and balance sheet; the Q4 FY12 outlook"
+  },
+  "NV56": {
+   "published": "2011-11-23",
+   "filed": "accepted 2011-11-22 16:31 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q3 FY12 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581011000056/nvda2011q310q.htm",
+   "supports": "inventories at October 30, 2011 (the year-ago quarter of Q3 FY13)"
+  },
+  "NV57": {
+   "published": "2012-02-16",
+   "filed": "accepted 2012-02-15 16:40 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q4 FY12 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581012000008/q412earningsrelease.htm",
+   "supports": "Q4 FY12 and FY2012 statements and balance sheet; the Q1 FY13 outlook"
+  },
+  "NV58": {
+   "published": "2012-05-11",
+   "filed": "accepted 2012-05-11 07:32 ET, before the open",
+   "title": "NVIDIA Q1 FY13 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581012000024/q113pressrelease.htm",
+   "supports": "Q1 FY13 statements and balance sheet; the Q2 FY13 outlook"
+  },
+  "NV59": {
+   "published": "2012-05-24",
+   "filed": "accepted 2012-05-23 16:32 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q1 FY13 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581012000027/nvda2013q110q.htm",
+   "supports": "inventories at April 29, 2012 (the year-ago quarter of Q1 FY14)"
+  },
+  "NV60": {
+   "published": "2012-08-10",
+   "filed": "accepted 2012-08-09 16:27 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q2 FY13 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581012000032/q213earningsrelease.htm",
+   "supports": "Q2 FY13 statements and balance sheet; the Q3 FY13 outlook"
+  },
+  "NV61": {
+   "published": "2012-08-23",
+   "filed": "accepted 2012-08-22 16:40 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q2 FY13 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581012000036/nvda2013q210q.htm",
+   "supports": "inventories at July 29, 2012 (the year-ago quarter of Q2 FY14)"
+  },
+  "NV62": {
+   "published": "2012-11-09",
+   "filed": "accepted 2012-11-08 16:24 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q3 FY13 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581012000055/ex991q313pressrelease.htm",
+   "supports": "Q3 FY13 statements and balance sheet; the Q4 FY13 outlook; the dividend's initiation"
+  },
+  "NV63": {
+   "published": "2012-11-09",
+   "filed": "accepted 2012-11-08 16:24 ET, after the close; dated the next trading day",
+   "title": "NVIDIA 8-K: quarterly cash dividend (Item 8.01, with the Q3 FY13 results)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581012000055/form8-k.htm",
+   "supports": "the initial quarterly dividend of $0.075"
+  },
+  "NV64": {
+   "published": "2012-11-20",
+   "filed": "accepted 2012-11-19 16:38 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q3 FY13 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581012000060/nvda2013q310q.htm",
+   "supports": "inventories at October 28, 2012 (the year-ago quarter of Q3 FY14)"
+  },
+  "NV65": {
+   "published": "2013-02-14",
+   "filed": "accepted 2013-02-13 16:26 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q4 FY13 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581013000003/q413pressrelease.htm",
+   "supports": "Q4 FY13 and FY2013 statements and balance sheet; the Q1 FY14 outlook"
+  },
+  "NV66": {
+   "published": "2013-05-10",
+   "filed": "accepted 2013-05-09 16:30 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q1 FY14 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581013000029/q114pressrelease.htm",
+   "supports": "Q1 FY14 statements and balance sheet"
+  },
+  "NV67": {
+   "published": "2013-05-10",
+   "filed": "accepted 2013-05-09 16:30 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q1 FY14 CFO commentary (exhibit to the results 8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581013000029/q114cfocommentary.htm",
+   "supports": "the Q2 FY14 outlook"
+  },
+  "NV68": {
+   "published": "2013-08-09",
+   "filed": "accepted 2013-08-08 16:29 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q2 FY14 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581013000069/q214pr.htm",
+   "supports": "Q2 FY14 statements and balance sheet"
+  },
+  "NV69": {
+   "published": "2013-08-09",
+   "filed": "accepted 2013-08-08 16:29 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q2 FY14 CFO commentary (exhibit to the results 8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581013000069/q214cfocommentary.htm",
+   "supports": "the Q3 FY14 outlook"
+  },
+  "NV70": {
+   "published": "2013-11-08",
+   "filed": "accepted 2013-11-07 16:26 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q3 FY14 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581013000104/q314pr.htm",
+   "supports": "Q3 FY14 statements and balance sheet; the dividend increase"
+  },
+  "NV71": {
+   "published": "2013-11-08",
+   "filed": "accepted 2013-11-07 16:26 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q3 FY14 CFO commentary (exhibit to the results 8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581013000104/q314cfocommentary.htm",
+   "supports": "the Q4 FY14 outlook"
   }
  },
  "listing": {
@@ -795,6 +1026,680 @@
     ]
    ],
    "groups_basis": "FY09 segment revenue (FY2009 10-K)",
+   "company": "NVIDIA Corporation",
+   "exchange": "NASDAQ Global Select Market",
+   "pe_window_start": null
+  },
+  {
+   "published": "2010-03-18",
+   "sources": [
+    "NV39",
+    "NV7",
+    "NV9",
+    "NV10",
+    "NV11",
+    "NV12"
+   ],
+   "fy_label": "FY10",
+   "kind": "CYCLICAL",
+   "why": "'NVIDIA Corporation helped awaken the world to the power of computer graphics when it invented the graphics processor unit, or GPU, in 1999.' 'The market for our products is intensely competitive and is characterized by rapid technological change, evolving industry standards and declining average selling prices.' 'Additionally, Intel and AMD have each announced its intention to integrate a central processing unit, or CPU, and a GPU on the same chip or same package, as evidenced by AMD’s announcement of its Fusion processor project and Intel’s announcement of its multichip packaged solution codenamed Arrandale.' 'Our business is cyclical in nature and has experienced severe downturns that have, and may in the future, materially adversely affect our business and financial results.' (FY2010 10-K); CYCLICAL on the 10-K's own words for its business (BKR's 'Our business is cyclical' reading); no theme in taxonomy_eras.json covers a CPU and a GPU integrated on one chip, so those words stay here (the PEP obesity rule)",
+   "eps_normalized": {
+    "2001": 0.62,
+    "2002": 0.84,
+    "2003": 0.15,
+    "2004": 0.09,
+    "2005": 0.17,
+    "2006": 0.55,
+    "2007": 0.76,
+    "2008": 1.31
+   },
+   "eps_sources": {
+    "2001": "NV7",
+    "2002": "NV9",
+    "2003": "NV10",
+    "2004": "NV11",
+    "2005": "NV12",
+    "2006": "NV39",
+    "2007": "NV39",
+    "2008": "NV39",
+    "2009": "NV39",
+    "2010": "NV39"
+   },
+   "eps_published": {
+    "2001": "2005-03-22",
+    "2002": "2006-11-29",
+    "2003": "2007-03-16",
+    "2004": "2008-03-24",
+    "2005": "2009-03-13",
+    "2006": "2010-03-18",
+    "2007": "2010-03-18",
+    "2008": "2010-03-18",
+    "2009": "2010-03-18",
+    "2010": "2010-03-18"
+   },
+   "share_basis": {
+    "2002": "2006-03-17"
+   },
+   "eps_excluded": {
+    "2009": "FY09 lost $(0.05) per diluted share (FY2010 10-K); NVIDIA's non-GAAP FY09 EPS ($0.53, Q4 FY09 release) excludes stock-based compensation, which recurs, so no figure excluding only one-offs was published",
+    "2010": "FY10 lost $(0.12) per diluted share (FY2010 10-K); NVIDIA's non-GAAP FY10 EPS ($0.26, Q4 FY10 release) excludes stock-based compensation, which recurs, so no figure excluding only one-offs was published"
+   },
+   "revenue_usd_b": {
+    "2001": 0.735264,
+    "2002": 1.369471,
+    "2003": 1.909447,
+    "2004": 1.822945,
+    "2005": 2.010033,
+    "2006": 2.375687,
+    "2007": 3.068771,
+    "2008": 4.09786,
+    "2009": 3.424859,
+    "2010": 3.326445
+   },
+   "revenue_sources": {
+    "2001": "NV7",
+    "2002": "NV9",
+    "2003": "NV10",
+    "2004": "NV11",
+    "2005": "NV12",
+    "2006": "NV39",
+    "2007": "NV39",
+    "2008": "NV39",
+    "2009": "NV39",
+    "2010": "NV39"
+   },
+   "diluted_shares_m": {
+    "2001": 159.294,
+    "2002": 169.813,
+    "2003": 331.654,
+    "2004": 516.162,
+    "2005": 527.436,
+    "2006": 548.556,
+    "2007": 587.256,
+    "2008": 606.732,
+    "2009": 548.126,
+    "2010": 549.574
+   },
+   "shares_sources": {
+    "2001": "NV7",
+    "2002": "NV9",
+    "2003": "NV10",
+    "2004": "NV11",
+    "2005": "NV12",
+    "2006": "NV39",
+    "2007": "NV39",
+    "2008": "NV39",
+    "2009": "NV39",
+    "2010": "NV39"
+   },
+   "shares_published": {
+    "2001": "2005-03-22",
+    "2002": "2006-11-29",
+    "2003": "2007-03-16",
+    "2004": "2008-03-24",
+    "2005": "2009-03-13",
+    "2006": "2010-03-18",
+    "2007": "2010-03-18",
+    "2008": "2010-03-18",
+    "2009": "2010-03-18",
+    "2010": "2010-03-18"
+   },
+   "fiscal_year_ends": {
+    "2001": "2001-01-28",
+    "2002": "2002-01-27",
+    "2003": "2003-01-26",
+    "2004": "2004-01-25",
+    "2005": "2005-01-30",
+    "2006": "2006-01-29",
+    "2007": "2007-01-28",
+    "2008": "2008-01-27",
+    "2009": "2009-01-25",
+    "2010": "2010-01-31"
+   },
+   "normalization": "GAAP diluted EPS (NVIDIA reports no discontinued operations), each year from the latest filing that reports it: FY01 FY2005 10-K, FY02 FY2006 10-K/A, FY03 FY2007 10-K, FY04 FY2008 10-K, FY05 FY2009 10-K, FY06 FY2010 10-K, FY07 FY2010 10-K, FY08 FY2010 10-K, FY09 FY2010 10-K, FY10 FY2010 10-K; the FY2006 10-K/A's restated FY02 is on the share basis before the 2006 split; the company's non-GAAP EPS excludes stock-based compensation, which recurs, so GAAP stands",
+   "eps_first_excluded": {},
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": -2.97,
+   "prev_fy_op_margin_note": "FY10 income from operations $(98.9)M / revenue $3,326.4M (FY2010 10-K)",
+   "prev_fy_pretax_margin": -2.47,
+   "prev_fy_pretax_margin_note": "FY10 income before income tax $(82.3)M / revenue $3,326.4M (FY2010 10-K)",
+   "prev_fy_gross_margin": 35.38,
+   "prev_fy_sales_growth": -2.9,
+   "tax_rate": 0.1739,
+   "tax_note": "FY10 income tax benefit $14.3M / pre-tax $(82.3)M (FY2010 10-K)",
+   "fcf_b": 0.41,
+   "fcf_label": "FY10",
+   "fcf_note": "net cash provided by operating activities $487.8M less purchases of property and equipment and intangible assets $77.6M",
+   "cash_b": 1.728,
+   "dividend_annual": 0.0,
+   "dividend_note": "none: 'We have never paid and do not expect to pay cash dividends for the foreseeable future.' (FY2010 10-K)",
+   "cash_return_text": "'Through January 31, 2010, we have repurchased an aggregate of 90.9 million shares under our stock repurchase program for a total cost of $1.46 billion.' (FY2010 10-K)",
+   "business_line": "visual computing: GeForce GPUs, Quadro and Tesla professional solutions, nForce MCPs, Tegra and other consumer products",
+   "groups": [
+    [
+     "GPU",
+     1.7647,
+     -7.7
+    ],
+    [
+     "MCP",
+     0.8716,
+     33.0
+    ],
+    [
+     "Professional Solutions",
+     0.5102,
+     -26.4
+    ],
+    [
+     "Consumer Products",
+     0.1639,
+     20.2
+    ],
+    [
+     "All Other",
+     0.0161,
+     -41.2
+    ]
+   ],
+   "groups_basis": "FY10 segment revenue (FY2010 10-K)",
+   "company": "NVIDIA Corporation",
+   "exchange": "NASDAQ Global Select Market",
+   "pe_window_start": null
+  },
+  {
+   "published": "2011-03-17",
+   "sources": [
+    "NV40",
+    "NV9",
+    "NV10",
+    "NV11",
+    "NV12",
+    "NV39"
+   ],
+   "fy_label": "FY11",
+   "kind": "CYCLICAL",
+   "why": "'NVIDIA Corporation invented the graphics processing unit, or GPU, in 1999.' 'The market for our products is intensely competitive and is characterized by rapid technological change, evolving industry standards and declining average selling prices.' 'We expect substantial competition from both Intel’s and AMD’s strategy of selling platform solutions, including integrating a CPU and a GPU on the same chip or same package, as evidenced by AMD’s announcement of its Fusion processors and Intel’s announcement of its family of CPUs codenamed Sandy Bridge.' 'Our business is cyclical in nature and has experienced severe downturns that have, and may in the future harm our business and financial results.' (FY2011 10-K); CYCLICAL on the 10-K's own words for its business (BKR's 'Our business is cyclical' reading); no theme in taxonomy_eras.json covers a CPU and a GPU integrated on one chip, so those words stay here (the PEP obesity rule)",
+   "eps_normalized": {
+    "2002": 0.84,
+    "2003": 0.15,
+    "2004": 0.09,
+    "2005": 0.17,
+    "2006": 0.55,
+    "2007": 0.76,
+    "2008": 1.31,
+    "2011": 0.43
+   },
+   "eps_sources": {
+    "2002": "NV9",
+    "2003": "NV10",
+    "2004": "NV11",
+    "2005": "NV12",
+    "2006": "NV39",
+    "2007": "NV40",
+    "2008": "NV40",
+    "2009": "NV40",
+    "2010": "NV40",
+    "2011": "NV40"
+   },
+   "eps_published": {
+    "2002": "2006-11-29",
+    "2003": "2007-03-16",
+    "2004": "2008-03-24",
+    "2005": "2009-03-13",
+    "2006": "2010-03-18",
+    "2007": "2011-03-17",
+    "2008": "2011-03-17",
+    "2009": "2011-03-17",
+    "2010": "2011-03-17",
+    "2011": "2011-03-17"
+   },
+   "share_basis": {
+    "2002": "2006-03-17"
+   },
+   "eps_excluded": {
+    "2009": "FY09 lost $(0.05) per diluted share (FY2011 10-K); NVIDIA's non-GAAP FY09 EPS ($0.53, Q4 FY09 release) excludes stock-based compensation, which recurs, so no figure excluding only one-offs was published",
+    "2010": "FY10 lost $(0.12) per diluted share (FY2011 10-K); NVIDIA's non-GAAP FY10 EPS ($0.26, Q4 FY10 release) excludes stock-based compensation, which recurs, so no figure excluding only one-offs was published"
+   },
+   "revenue_usd_b": {
+    "2002": 1.369471,
+    "2003": 1.909447,
+    "2004": 1.822945,
+    "2005": 2.010033,
+    "2006": 2.375687,
+    "2007": 3.068771,
+    "2008": 4.09786,
+    "2009": 3.424859,
+    "2010": 3.326445,
+    "2011": 3.543309
+   },
+   "revenue_sources": {
+    "2002": "NV9",
+    "2003": "NV10",
+    "2004": "NV11",
+    "2005": "NV12",
+    "2006": "NV39",
+    "2007": "NV40",
+    "2008": "NV40",
+    "2009": "NV40",
+    "2010": "NV40",
+    "2011": "NV40"
+   },
+   "diluted_shares_m": {
+    "2002": 169.813,
+    "2003": 331.654,
+    "2004": 516.162,
+    "2005": 527.436,
+    "2006": 548.556,
+    "2007": 587.256,
+    "2008": 606.732,
+    "2009": 548.126,
+    "2010": 549.574,
+    "2011": 588.684
+   },
+   "shares_sources": {
+    "2002": "NV9",
+    "2003": "NV10",
+    "2004": "NV11",
+    "2005": "NV12",
+    "2006": "NV39",
+    "2007": "NV40",
+    "2008": "NV40",
+    "2009": "NV40",
+    "2010": "NV40",
+    "2011": "NV40"
+   },
+   "shares_published": {
+    "2002": "2006-11-29",
+    "2003": "2007-03-16",
+    "2004": "2008-03-24",
+    "2005": "2009-03-13",
+    "2006": "2010-03-18",
+    "2007": "2011-03-17",
+    "2008": "2011-03-17",
+    "2009": "2011-03-17",
+    "2010": "2011-03-17",
+    "2011": "2011-03-17"
+   },
+   "fiscal_year_ends": {
+    "2002": "2002-01-27",
+    "2003": "2003-01-26",
+    "2004": "2004-01-25",
+    "2005": "2005-01-30",
+    "2006": "2006-01-29",
+    "2007": "2007-01-28",
+    "2008": "2008-01-27",
+    "2009": "2009-01-25",
+    "2010": "2010-01-31",
+    "2011": "2011-01-30"
+   },
+   "normalization": "GAAP diluted EPS (NVIDIA reports no discontinued operations), each year from the latest filing that reports it: FY02 FY2006 10-K/A, FY03 FY2007 10-K, FY04 FY2008 10-K, FY05 FY2009 10-K, FY06 FY2010 10-K, FY07 FY2011 10-K, FY08 FY2011 10-K, FY09 FY2011 10-K, FY10 FY2011 10-K, FY11 FY2011 10-K; the FY2006 10-K/A's restated FY02 is on the share basis before the 2006 split; the company's non-GAAP EPS excludes stock-based compensation, which recurs, so GAAP stands",
+   "eps_first_excluded": {},
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 7.22,
+   "prev_fy_op_margin_note": "FY11 income from operations $255.7M / revenue $3,543.3M (FY2011 10-K)",
+   "prev_fy_pretax_margin": 7.65,
+   "prev_fy_pretax_margin_note": "FY11 income before income tax $271.2M / revenue $3,543.3M (FY2011 10-K)",
+   "prev_fy_gross_margin": 39.77,
+   "prev_fy_sales_growth": 6.5,
+   "tax_rate": 0.0665,
+   "tax_note": "FY11 income tax expense $18.0M / pre-tax $271.2M (FY2011 10-K)",
+   "fcf_b": 0.578,
+   "fcf_label": "FY11",
+   "fcf_note": "net cash provided by operating activities $675.8M less purchases of property and equipment and intangible assets $97.9M",
+   "cash_b": 2.491,
+   "dividend_annual": 0.0,
+   "dividend_note": "none: 'We have never paid and do not expect to pay cash dividends for the foreseeable future.' (FY2011 10-K)",
+   "cash_return_text": "'Through January 30, 2011, we have repurchased an aggregate of 90.9 million shares under our stock repurchase program for a total cost of $1.46 billion.' (FY2011 10-K)",
+   "business_line": "visual computing: GeForce GPUs and chipsets, Quadro and Tesla professional solutions, Tegra and other consumer products",
+   "groups": [
+    [
+     "GPU",
+     2.5271,
+     -5.0
+    ],
+    [
+     "Professional Solutions",
+     0.8186,
+     60.4
+    ],
+    [
+     "Consumer Products",
+     0.1976,
+     26.6
+    ]
+   ],
+   "groups_basis": "FY11 segment revenue (FY2011 10-K)",
+   "company": "NVIDIA Corporation",
+   "exchange": "NASDAQ Global Select Market",
+   "pe_window_start": null
+  },
+  {
+   "published": "2012-03-14",
+   "sources": [
+    "NV41",
+    "NV10",
+    "NV11",
+    "NV12",
+    "NV39",
+    "NV40"
+   ],
+   "fy_label": "FY12",
+   "kind": "CYCLICAL",
+   "why": "'NVIDIA is known to millions around the world for creating the graphics chips used in personal computers, or PCs, that bring games and home movies to life.' 'The market for our products is intensely competitive and is characterized by rapid technological change, evolving industry standards and declining average selling prices.' 'We expect substantial competition from both Intel's and AMD's strategy of selling platform solutions, including integrating a CPU and a GPU on the same chip or same package, as evidenced by AMD's announcement of its Fusion processors and Intel's announcement of its family of CPUs codenamed Sandy Bridge.' 'Our business is cyclical in nature and has experienced severe downturns that have harmed, and may in the future harm, our business and financial results.' (FY2012 10-K); CYCLICAL on the 10-K's own words for its business (BKR's 'Our business is cyclical' reading); no theme in taxonomy_eras.json covers a CPU and a GPU integrated on one chip, so those words stay here (the PEP obesity rule)",
+   "eps_normalized": {
+    "2003": 0.15,
+    "2004": 0.09,
+    "2005": 0.17,
+    "2006": 0.55,
+    "2007": 0.76,
+    "2008": 1.31,
+    "2011": 0.43,
+    "2012": 0.94
+   },
+   "eps_sources": {
+    "2003": "NV10",
+    "2004": "NV11",
+    "2005": "NV12",
+    "2006": "NV39",
+    "2007": "NV40",
+    "2008": "NV41",
+    "2009": "NV41",
+    "2010": "NV41",
+    "2011": "NV41",
+    "2012": "NV41"
+   },
+   "eps_published": {
+    "2003": "2007-03-16",
+    "2004": "2008-03-24",
+    "2005": "2009-03-13",
+    "2006": "2010-03-18",
+    "2007": "2011-03-17",
+    "2008": "2012-03-14",
+    "2009": "2012-03-14",
+    "2010": "2012-03-14",
+    "2011": "2012-03-14",
+    "2012": "2012-03-14"
+   },
+   "share_basis": {},
+   "eps_excluded": {
+    "2009": "FY09 lost $(0.05) per diluted share (FY2012 10-K); NVIDIA's non-GAAP FY09 EPS ($0.53, Q4 FY09 release) excludes stock-based compensation, which recurs, so no figure excluding only one-offs was published",
+    "2010": "FY10 lost $(0.12) per diluted share (FY2012 10-K); NVIDIA's non-GAAP FY10 EPS ($0.26, Q4 FY10 release) excludes stock-based compensation, which recurs, so no figure excluding only one-offs was published"
+   },
+   "revenue_usd_b": {
+    "2003": 1.909447,
+    "2004": 1.822945,
+    "2005": 2.010033,
+    "2006": 2.375687,
+    "2007": 3.068771,
+    "2008": 4.09786,
+    "2009": 3.424859,
+    "2010": 3.326445,
+    "2011": 3.543309,
+    "2012": 3.99793
+   },
+   "revenue_sources": {
+    "2003": "NV10",
+    "2004": "NV11",
+    "2005": "NV12",
+    "2006": "NV39",
+    "2007": "NV40",
+    "2008": "NV41",
+    "2009": "NV41",
+    "2010": "NV41",
+    "2011": "NV41",
+    "2012": "NV41"
+   },
+   "diluted_shares_m": {
+    "2003": 331.654,
+    "2004": 516.162,
+    "2005": 527.436,
+    "2006": 548.556,
+    "2007": 587.256,
+    "2008": 606.732,
+    "2009": 548.126,
+    "2010": 549.574,
+    "2011": 588.684,
+    "2012": 616.371
+   },
+   "shares_sources": {
+    "2003": "NV10",
+    "2004": "NV11",
+    "2005": "NV12",
+    "2006": "NV39",
+    "2007": "NV40",
+    "2008": "NV41",
+    "2009": "NV41",
+    "2010": "NV41",
+    "2011": "NV41",
+    "2012": "NV41"
+   },
+   "shares_published": {
+    "2003": "2007-03-16",
+    "2004": "2008-03-24",
+    "2005": "2009-03-13",
+    "2006": "2010-03-18",
+    "2007": "2011-03-17",
+    "2008": "2012-03-14",
+    "2009": "2012-03-14",
+    "2010": "2012-03-14",
+    "2011": "2012-03-14",
+    "2012": "2012-03-14"
+   },
+   "fiscal_year_ends": {
+    "2003": "2003-01-26",
+    "2004": "2004-01-25",
+    "2005": "2005-01-30",
+    "2006": "2006-01-29",
+    "2007": "2007-01-28",
+    "2008": "2008-01-27",
+    "2009": "2009-01-25",
+    "2010": "2010-01-31",
+    "2011": "2011-01-30",
+    "2012": "2012-01-29"
+   },
+   "normalization": "GAAP diluted EPS (NVIDIA reports no discontinued operations), each year from the latest filing that reports it: FY03 FY2007 10-K, FY04 FY2008 10-K, FY05 FY2009 10-K, FY06 FY2010 10-K, FY07 FY2011 10-K, FY08 FY2012 10-K, FY09 FY2012 10-K, FY10 FY2012 10-K, FY11 FY2012 10-K, FY12 FY2012 10-K; the FY2006 10-K/A's restated FY02 is on the share basis before the 2006 split; the company's non-GAAP EPS excludes stock-based compensation, which recurs, so GAAP stands",
+   "eps_first_excluded": {},
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 16.22,
+   "prev_fy_op_margin_note": "FY12 income from operations $648.3M / revenue $3,997.9M (FY2012 10-K)",
+   "prev_fy_pretax_margin": 16.59,
+   "prev_fy_pretax_margin_note": "FY12 income before income tax $663.4M / revenue $3,997.9M (FY2012 10-K)",
+   "prev_fy_gross_margin": 51.44,
+   "prev_fy_sales_growth": 12.8,
+   "tax_rate": 0.1241,
+   "tax_note": "FY12 income tax expense $82.3M / pre-tax $663.4M (FY2012 10-K)",
+   "fcf_b": 0.77,
+   "fcf_label": "FY12",
+   "fcf_note": "net cash provided by operating activities $909.2M less purchases of property and equipment and intangible assets $138.7M",
+   "cash_b": 3.13,
+   "dividend_annual": 0.0,
+   "dividend_note": "none: 'We have never paid and do not expect to pay cash dividends for the foreseeable future.' (FY2012 10-K)",
+   "cash_return_text": "'Through January 29, 2012, we have repurchased an aggregate of 90.9 million shares under our stock repurchase program for a total cost of $1.46 billion.' (FY2012 10-K)",
+   "business_line": "visual computing: GeForce GPUs, Quadro and Tesla professional solutions, Tegra mobile processors, the Intel license",
+   "groups": [
+    [
+     "GPU",
+     2.5424,
+     0.6
+    ],
+    [
+     "Professional Solutions",
+     0.8643,
+     5.6
+    ],
+    [
+     "Consumer Products",
+     0.5912,
+     199.2
+    ]
+   ],
+   "groups_basis": "FY12 segment revenue (FY2012 10-K)",
+   "company": "NVIDIA Corporation",
+   "exchange": "NASDAQ Global Select Market",
+   "pe_window_start": null
+  },
+  {
+   "published": "2013-03-13",
+   "sources": [
+    "NV42",
+    "NV11",
+    "NV12",
+    "NV39",
+    "NV40",
+    "NV41"
+   ],
+   "fy_label": "FY13",
+   "kind": "CYCLICAL",
+   "why": "'NVIDIA is a visual computing company, connecting people through the powerful medium of computer graphics.' 'The market for our products is intensely competitive and is characterized by rapid technological change, evolving industry standards and declining average selling prices.' 'We expect substantial competition from both Intel's and AMD's strategy of selling platform solutions, including integrating a CPU and a GPU on the same chip or same package, as evidenced by AMD's APU product and Intel's CPUs with integrated graphics.' 'Our business is cyclical in nature and has experienced severe downturns that have harmed, and may in the future harm, our business and financial results.' (FY2013 10-K); CYCLICAL on the 10-K's own words for its business (BKR's 'Our business is cyclical' reading); no theme in taxonomy_eras.json covers a CPU and a GPU integrated on one chip, so those words stay here (the PEP obesity rule)",
+   "eps_normalized": {
+    "2004": 0.09,
+    "2005": 0.17,
+    "2006": 0.55,
+    "2007": 0.76,
+    "2008": 1.31,
+    "2011": 0.43,
+    "2012": 0.94,
+    "2013": 0.9
+   },
+   "eps_sources": {
+    "2004": "NV11",
+    "2005": "NV12",
+    "2006": "NV39",
+    "2007": "NV40",
+    "2008": "NV41",
+    "2009": "NV42",
+    "2010": "NV42",
+    "2011": "NV42",
+    "2012": "NV42",
+    "2013": "NV42"
+   },
+   "eps_published": {
+    "2004": "2008-03-24",
+    "2005": "2009-03-13",
+    "2006": "2010-03-18",
+    "2007": "2011-03-17",
+    "2008": "2012-03-14",
+    "2009": "2013-03-13",
+    "2010": "2013-03-13",
+    "2011": "2013-03-13",
+    "2012": "2013-03-13",
+    "2013": "2013-03-13"
+   },
+   "share_basis": {},
+   "eps_excluded": {
+    "2009": "FY09 lost $(0.05) per diluted share (FY2013 10-K); NVIDIA's non-GAAP FY09 EPS ($0.53, Q4 FY09 release) excludes stock-based compensation, which recurs, so no figure excluding only one-offs was published",
+    "2010": "FY10 lost $(0.12) per diluted share (FY2013 10-K); NVIDIA's non-GAAP FY10 EPS ($0.26, Q4 FY10 release) excludes stock-based compensation, which recurs, so no figure excluding only one-offs was published"
+   },
+   "revenue_usd_b": {
+    "2004": 1.822945,
+    "2005": 2.010033,
+    "2006": 2.375687,
+    "2007": 3.068771,
+    "2008": 4.09786,
+    "2009": 3.424859,
+    "2010": 3.326445,
+    "2011": 3.543309,
+    "2012": 3.99793,
+    "2013": 4.280159
+   },
+   "revenue_sources": {
+    "2004": "NV11",
+    "2005": "NV12",
+    "2006": "NV39",
+    "2007": "NV40",
+    "2008": "NV41",
+    "2009": "NV42",
+    "2010": "NV42",
+    "2011": "NV42",
+    "2012": "NV42",
+    "2013": "NV42"
+   },
+   "diluted_shares_m": {
+    "2004": 516.162,
+    "2005": 527.436,
+    "2006": 548.556,
+    "2007": 587.256,
+    "2008": 606.732,
+    "2009": 548.126,
+    "2010": 549.574,
+    "2011": 588.684,
+    "2012": 616.371,
+    "2013": 624.957
+   },
+   "shares_sources": {
+    "2004": "NV11",
+    "2005": "NV12",
+    "2006": "NV39",
+    "2007": "NV40",
+    "2008": "NV41",
+    "2009": "NV42",
+    "2010": "NV42",
+    "2011": "NV42",
+    "2012": "NV42",
+    "2013": "NV42"
+   },
+   "shares_published": {
+    "2004": "2008-03-24",
+    "2005": "2009-03-13",
+    "2006": "2010-03-18",
+    "2007": "2011-03-17",
+    "2008": "2012-03-14",
+    "2009": "2013-03-13",
+    "2010": "2013-03-13",
+    "2011": "2013-03-13",
+    "2012": "2013-03-13",
+    "2013": "2013-03-13"
+   },
+   "fiscal_year_ends": {
+    "2004": "2004-01-25",
+    "2005": "2005-01-30",
+    "2006": "2006-01-29",
+    "2007": "2007-01-28",
+    "2008": "2008-01-27",
+    "2009": "2009-01-25",
+    "2010": "2010-01-31",
+    "2011": "2011-01-30",
+    "2012": "2012-01-29",
+    "2013": "2013-01-27"
+   },
+   "normalization": "GAAP diluted EPS (NVIDIA reports no discontinued operations), each year from the latest filing that reports it: FY04 FY2008 10-K, FY05 FY2009 10-K, FY06 FY2010 10-K, FY07 FY2011 10-K, FY08 FY2012 10-K, FY09 FY2013 10-K, FY10 FY2013 10-K, FY11 FY2013 10-K, FY12 FY2013 10-K, FY13 FY2013 10-K; the FY2006 10-K/A's restated FY02 is on the share basis before the 2006 split; the company's non-GAAP EPS excludes stock-based compensation, which recurs, so GAAP stands",
+   "eps_first_excluded": {},
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 15.15,
+   "prev_fy_op_margin_note": "FY13 income from operations $648.2M / revenue $4,280.2M (FY2013 10-K)",
+   "prev_fy_pretax_margin": 15.47,
+   "prev_fy_pretax_margin_note": "FY13 income before income tax $662.0M / revenue $4,280.2M (FY2013 10-K)",
+   "prev_fy_gross_margin": 52.02,
+   "prev_fy_sales_growth": 7.1,
+   "tax_rate": 0.1503,
+   "tax_note": "FY13 income tax expense $99.5M / pre-tax $662.0M (FY2013 10-K)",
+   "fcf_b": 0.641,
+   "fcf_label": "FY13",
+   "fcf_note": "net cash provided by operating activities $824.2M less purchases of property and equipment and intangible assets $183.3M",
+   "cash_b": 3.728,
+   "dividend_annual": 0.3,
+   "dividend_note": "$0.075 quarterly ('On November 8, 2012, we announced the initiation of a quarterly cash dividend program. This quarterly dividend of $0.075 per share is equivalent to $0.30 per share on an annual basis.', FY2013 10-K)",
+   "cash_return_text": "'Through January 27, 2013, we have repurchased an aggregate of 99.3 million shares under our stock repurchase program for a total cost of $1.56 billion.' (FY2013 10-K)",
+   "business_line": "visual computing: GPUs (GeForce, Quadro, Tesla, GRID), Tegra processors, the Intel license",
+   "groups": [
+    [
+     "GPU",
+     3.2517,
+     2.0
+    ],
+    [
+     "Tegra Processor",
+     0.7644,
+     29.3
+    ],
+    [
+     "All Other",
+     0.264,
+     20.0
+    ]
+   ],
+   "groups_basis": "FY13 segment revenue (FY2013 10-K)",
    "company": "NVIDIA Corporation",
    "exchange": "NASDAQ Global Select Market",
    "pe_window_start": null
@@ -1638,6 +2543,1251 @@
    "next_print": "Q4 FY10 print (February)",
    "cash_return_text": null,
    "note": "charges stay in, as published: 'Our third quarter GAAP results included a $25.1 million credit for insurance proceeds related to a weak die/packaging material set' (Q3 FY10 CFO commentary (exhibit to the results 8-K))"
+  },
+  {
+   "quarter": "Q4 FY10",
+   "fy": 2010,
+   "q": 4,
+   "published": "2010-02-18",
+   "source": "NV43",
+   "release": "Feb 17",
+   "release_time": "after the close on Feb 17: 8-K accepted 2010-02-17 16:50 ET; public before the open of the next trading day",
+   "period_end": "2010-01-31",
+   "raw": {
+    "sales_k": 982488,
+    "sales_prior_k": 481140,
+    "sales_prev_q_k": 903206,
+    "gross_profit_k": 438721,
+    "gross_profit_prior_k": 141666,
+    "rd_k": 216251,
+    "rd_prior_k": 211779,
+    "sga_k": 88188,
+    "sga_prior_k": 86440,
+    "op_income_k": 134282,
+    "op_income_prior_k": -175083,
+    "inventory_k": 330674,
+    "inventory_prior_k": 537834
+   },
+   "rows": {
+    "sales": "Revenue | 982,488 | 481,140 | 3,326,445 | 3,424,859",
+    "gp": "Gross profit | 438,721 | 141,666 | 1,176,923 | 1,174,269",
+    "rd": "Research and development | 216,251 | 211,779 | 908,851 | 855,879",
+    "sga": "Sales, general and administrative | 88,188 | 86,440 | 367,017 | 362,222",
+    "op": "Operating income (loss) | 134,282 | (175,083) | (98,945) | (70,700)",
+    "eps": "Diluted net income (loss) per share | 0.23 | (0.27) | (0.12) | (0.05)",
+    "shares": "Shares used in diluted per share computation | 582,081 | 537,595 | 549,574 | 548,126",
+    "inv": "Inventories | 330,674 | 537,834",
+    "cash": "Cash, cash equivalents and marketable securities | 1,728,227 | 1,255,390",
+    "debt": "Capital lease obligations, long term | 24,450 | 25,634"
+   },
+   "inventory_prior_row": {
+    "source": "NV43",
+    "row": "Inventories | 330,674 | 537,834"
+   },
+   "sales_prev_q_row": {
+    "source": "NV36",
+    "row": "Revenue | 903,206 | 897,655 | 2,343,957 | 2,943,719"
+   },
+   "extra_sources": [
+    "NV36"
+   ],
+   "sales_b": 0.9825,
+   "sales_pct": 104.2,
+   "seq_pct": 8.8,
+   "gross_margin": 44.65,
+   "gross_margin_bp": 1521.0,
+   "op_margin": 13.67,
+   "op_margin_bp": 5005.7,
+   "opex_pct": 2.1,
+   "opex_gap_pp": -102.1,
+   "inventory_b": 0.3307,
+   "inventory_pct": -38.5,
+   "inventory_gap_pp": -142.7,
+   "eps_q": 0.23,
+   "eps_q_prior": -0.27,
+   "diluted_shares_m": 582.081,
+   "cash_b": 1.7282,
+   "ltd_b": 0.0244,
+   "debt_note": "long-term capital lease obligations $24.4M",
+   "sales_note": "revenue $982.5M vs $481.1M a year earlier, $903.2M the quarter before",
+   "inventory_note": "inventories $330.7M (2010-01-31) vs $537.8M a year earlier (the release)",
+   "eps_note": "GAAP diluted EPS $0.23 vs $(0.27); the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 582.1M",
+   "next_print": "Q1 FY11 print (May)",
+   "cash_return_text": null,
+   "note": null,
+   "fy_actual": {
+    "fy": 2010,
+    "fy_label": "FY10",
+    "eps_normalized": null,
+    "revenue_usd_b": 3.326445,
+    "diluted_shares_m": 549.574,
+    "normalization_note": "FY10 from the Q4 FY10 release: a loss, excluded (no figure excluding only one-offs)",
+    "op_margin": -2.97,
+    "op_margin_note": "FY10 income from operations $(98.9)M / revenue $3,326.4M (Q4 FY10 release)",
+    "pretax_margin": -2.47,
+    "pretax_margin_note": "FY10 income before income tax $(82.3)M / revenue $3,326.4M (Q4 FY10 release)",
+    "gross_margin": 35.38,
+    "sales_growth": -2.9,
+    "tax_rate": 0.1739,
+    "tax_note": "FY10 income tax benefit $14.3M / pre-tax $(82.3)M",
+    "excluded_note": "FY10 lost $(0.12) per diluted share (Q4 FY10 release); NVIDIA's non-GAAP FY10 EPS ($0.26, Q4 FY10 release) excludes stock-based compensation, which recurs, so no figure excluding only one-offs was published"
+   }
+  },
+  {
+   "quarter": "Q1 FY11",
+   "fy": 2011,
+   "q": 1,
+   "published": "2010-05-14",
+   "source": "NV44",
+   "release": "May 13",
+   "release_time": "after the close on May 13: 8-K accepted 2010-05-13 16:29 ET; public before the open of the next trading day",
+   "period_end": "2010-05-02",
+   "raw": {
+    "sales_k": 1001813,
+    "sales_prior_k": 664231,
+    "sales_prev_q_k": 982488,
+    "gross_profit_k": 456377,
+    "gross_profit_prior_k": 189696,
+    "rd_k": 218105,
+    "rd_prior_k": 211341,
+    "sga_k": 90879,
+    "sga_prior_k": 80491,
+    "op_income_k": 147393,
+    "op_income_prior_k": -230965,
+    "inventory_k": 388139,
+    "inventory_prior_k": 327259
+   },
+   "rows": {
+    "sales": "Revenue | 1,001,813 | 982,488 | 664,231",
+    "gp": "Gross profit | 456,377 | 438,721 | 189,696",
+    "rd": "Research and development | 218,105 | 216,251 | 211,341",
+    "sga": "Sales, general and administrative | 90,879 | 88,188 | 80,491",
+    "op": "Operating income (loss) | 147,393 | 134,282 | (230,965)",
+    "eps": "Diluted net income (loss) per share | 0.23 | 0.23 | (0.37)",
+    "shares": "Shares used in diluted per share computation | 590,997 | 582,081 | 542,307",
+    "inv": "Inventories | 388,139 | 330,674",
+    "cash": "Cash, cash equivalents and marketable securities | 1,764,896 | 1,728,227",
+    "debt": "Capital lease obligations, long term | 24,098 | 24,450"
+   },
+   "inventory_prior_row": {
+    "source": "NV33",
+    "row": "Inventories | 327,259 | 537,834"
+   },
+   "sales_prev_q_row": {
+    "source": "NV43",
+    "row": "Revenue | 982,488 | 481,140 | 3,326,445 | 3,424,859"
+   },
+   "extra_sources": [
+    "NV33",
+    "NV43"
+   ],
+   "sales_b": 1.0018,
+   "sales_pct": 50.8,
+   "seq_pct": 2.0,
+   "gross_margin": 45.56,
+   "gross_margin_bp": 1699.6,
+   "op_margin": 14.71,
+   "op_margin_bp": 4948.4,
+   "opex_pct": 5.9,
+   "opex_gap_pp": -44.9,
+   "inventory_b": 0.3881,
+   "inventory_pct": 18.6,
+   "inventory_gap_pp": -32.2,
+   "eps_q": 0.23,
+   "eps_q_prior": -0.37,
+   "diluted_shares_m": 590.997,
+   "cash_b": 1.7649,
+   "ltd_b": 0.0241,
+   "debt_note": "long-term capital lease obligations $24.1M",
+   "sales_note": "revenue $1,001.8M vs $664.2M a year earlier, $982.5M the quarter before",
+   "inventory_note": "inventories $388.1M (2010-05-02) vs $327.3M a year earlier (Q1 FY10 10-Q)",
+   "eps_note": "GAAP diluted EPS $0.23 vs $(0.37); the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 591.0M",
+   "next_print": "Q2 FY11 print (August)",
+   "cash_return_text": null,
+   "note": null
+  },
+  {
+   "quarter": "Q2 FY11",
+   "fy": 2011,
+   "q": 2,
+   "published": "2010-08-13",
+   "source": "NV46",
+   "release": "Aug 12",
+   "release_time": "after the close on Aug 12: 8-K accepted 2010-08-12 16:24 ET; public before the open of the next trading day",
+   "period_end": "2010-08-01",
+   "raw": {
+    "sales_k": 811208,
+    "sales_prior_k": 776520,
+    "sales_prev_q_k": 1001813,
+    "gross_profit_k": 134292,
+    "gross_profit_prior_k": 156723,
+    "rd_k": 210635,
+    "rd_prior_k": 192855,
+    "sga_k": 98864,
+    "sga_prior_k": 73975,
+    "op_income_k": -175207,
+    "op_income_prior_k": -110107,
+    "inventory_k": 434227,
+    "inventory_prior_k": 279216
+   },
+   "rows": {
+    "sales": "Revenue | 811,208 | 776,520 | 1,813,021 | 1,440,751",
+    "gp": "Gross profit | 134,292 | 156,723 | 590,669 | 346,419",
+    "rd": "Research and development | 210,635 | 192,855 | 428,740 | 494,652",
+    "sga": "Sales, general and administrative | 98,864 | 73,975 | 189,743 | 192,839",
+    "op": "Operating loss | (175,207) | (110,107) | (27,814) | (341,072)",
+    "eps": "Diluted net loss per share | (0.25) | (0.19) | (0.01) | (0.56)",
+    "shares": "Shares used in diluted per share computation | 572,764 | 546,639 | 569,971 | 544,463",
+    "inv": "Inventories | 434,227 | 330,674",
+    "cash": "Cash, cash equivalents and marketable securities | 1,772,500 | 1,728,227",
+    "debt": "Capital lease obligations, long term | 23,734 | 24,450"
+   },
+   "inventory_prior_row": {
+    "source": "NV35",
+    "row": "Inventories | 279,216 | 537,834"
+   },
+   "sales_prev_q_row": {
+    "source": "NV44",
+    "row": "Revenue | 1,001,813 | 982,488 | 664,231"
+   },
+   "extra_sources": [
+    "NV35",
+    "NV44"
+   ],
+   "sales_b": 0.8112,
+   "sales_pct": 4.5,
+   "seq_pct": -19.0,
+   "gross_margin": 16.55,
+   "gross_margin_bp": -362.8,
+   "op_margin": -21.6,
+   "op_margin_bp": -741.9,
+   "opex_pct": 16.0,
+   "opex_gap_pp": 11.5,
+   "inventory_b": 0.4342,
+   "inventory_pct": 55.5,
+   "inventory_gap_pp": 51.0,
+   "eps_q": -0.25,
+   "eps_q_prior": -0.19,
+   "diluted_shares_m": 572.764,
+   "cash_b": 1.7725,
+   "ltd_b": 0.0237,
+   "debt_note": "long-term capital lease obligations $23.7M",
+   "sales_note": "revenue $811.2M vs $776.5M a year earlier, $1,001.8M the quarter before",
+   "inventory_note": "inventories $434.2M (2010-08-01) vs $279.2M a year earlier (Q2 FY10 10-Q)",
+   "eps_note": "GAAP diluted EPS $(0.25) vs $(0.19); the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 572.8M",
+   "next_print": "Q3 FY11 print (November)",
+   "cash_return_text": null,
+   "note": "charges stay in, as published: 'Results were impacted by a large inventory write-down and a charge related to a weak die/packaging material set' (Q2 FY11 results (8-K))"
+  },
+  {
+   "quarter": "Q3 FY11",
+   "fy": 2011,
+   "q": 3,
+   "published": "2010-11-12",
+   "source": "NV48",
+   "release": "Nov 11",
+   "release_time": "8-K accepted 2010-11-12 06:11 ET, before the open (the release is dated Nov 11); public before that day's open",
+   "period_end": "2010-10-31",
+   "raw": {
+    "sales_k": 843912,
+    "sales_prior_k": 903206,
+    "sales_prev_q_k": 811208,
+    "gross_profit_k": 392062,
+    "gross_profit_prior_k": 391783,
+    "rd_k": 204527,
+    "rd_prior_k": 197948,
+    "sga_k": 83752,
+    "sga_prior_k": 85990,
+    "op_income_k": 103783,
+    "op_income_prior_k": 107845,
+    "inventory_k": 377812,
+    "inventory_prior_k": 277643
+   },
+   "rows": {
+    "sales": "Revenue | 843,912 | 903,206 | 2,656,933 | 2,343,957",
+    "gp": "Gross profit | 392,062 | 391,783 | 982,731 | 738,202",
+    "rd": "Research and development | 204,527 | 197,948 | 633,267 | 692,600",
+    "sga": "Sales, general and administrative | 83,752 | 85,990 | 273,495 | 278,829",
+    "op": "Operating income (loss) | 103,783 | 107,845 | 75,969 | (233,227)",
+    "eps": "Diluted net income (loss) per share | 0.15 | 0.19 | 0.14 | (0.36)",
+    "shares": "Shares used in diluted per share computation | 582,648 | 574,381 | 584,500 | 546,737",
+    "inv": "Inventories | 377,812 | 330,674",
+    "cash": "Cash, cash equivalents and marketable securities | 1,987,220 | 1,728,227",
+    "debt": "Capital lease obligations, long term | 23,359 | 24,450"
+   },
+   "inventory_prior_row": {
+    "source": "NV37",
+    "row": "Inventories | 277,643 | 537,834"
+   },
+   "sales_prev_q_row": {
+    "source": "NV46",
+    "row": "Revenue | 811,208 | 776,520 | 1,813,021 | 1,440,751"
+   },
+   "extra_sources": [
+    "NV37",
+    "NV46"
+   ],
+   "sales_b": 0.8439,
+   "sales_pct": -6.6,
+   "seq_pct": 4.0,
+   "gross_margin": 46.46,
+   "gross_margin_bp": 308.1,
+   "op_margin": 12.3,
+   "op_margin_bp": 35.8,
+   "opex_pct": 1.5,
+   "opex_gap_pp": 8.1,
+   "inventory_b": 0.3778,
+   "inventory_pct": 36.1,
+   "inventory_gap_pp": 42.6,
+   "eps_q": 0.15,
+   "eps_q_prior": 0.19,
+   "diluted_shares_m": 582.648,
+   "cash_b": 1.9872,
+   "ltd_b": 0.0234,
+   "debt_note": "long-term capital lease obligations $23.4M",
+   "sales_note": "revenue $843.9M vs $903.2M a year earlier, $811.2M the quarter before",
+   "inventory_note": "inventories $377.8M (2010-10-31) vs $277.6M a year earlier (Q3 FY10 10-Q)",
+   "eps_note": "GAAP diluted EPS $0.15 vs $0.19; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 582.6M",
+   "next_print": "Q4 FY11 print (February)",
+   "cash_return_text": null,
+   "note": null
+  },
+  {
+   "quarter": "Q4 FY11",
+   "fy": 2011,
+   "q": 4,
+   "published": "2011-02-17",
+   "source": "NV50",
+   "release": "Feb 16",
+   "release_time": "after the close on Feb 16: 8-K accepted 2011-02-16 16:22 ET; public before the open of the next trading day",
+   "period_end": "2011-01-30",
+   "raw": {
+    "sales_k": 886376,
+    "sales_prior_k": 982488,
+    "sales_prev_q_k": 843912,
+    "gross_profit_k": 426359,
+    "gross_profit_prior_k": 438721,
+    "rd_k": 215563,
+    "rd_prior_k": 216251,
+    "sga_k": 88018,
+    "sga_prior_k": 88188,
+    "op_income_k": 179778,
+    "op_income_prior_k": 134282,
+    "inventory_k": 345525,
+    "inventory_prior_k": 330674
+   },
+   "rows": {
+    "sales": "Revenue | 886,376 | 982,488 | 3,543,309 | $ 3,326,445",
+    "gp": "Gross profit | 426,359 | 438,721 | 1,409,090 | 1,176,923",
+    "rd": "Research and development | 215,563 | 216,251 | 848,830 | 908,851",
+    "sga": "Sales, general and administrative | 88,018 | 88,188 | 361,513 | 367,017",
+    "op": "Operating income (loss) | 179,778 | 134,282 | 255,747 | (98,945)",
+    "eps": "Diluted net income (loss) per share | 0.29 | 0.23 | 0.43 | (0.12)",
+    "shares": "Shares used in diluted per share computation | 601,559 | 582,081 | 588,684 | 549,574",
+    "inv": "Inventories | 345,525 | 330,674",
+    "cash": "Cash, cash equivalents and marketable securities | 2,490,563 | 1,728,227",
+    "debt": "Capital lease obligations, long term | 23,389 | 24,450"
+   },
+   "inventory_prior_row": {
+    "source": "NV50",
+    "row": "Inventories | 345,525 | 330,674"
+   },
+   "sales_prev_q_row": {
+    "source": "NV48",
+    "row": "Revenue | 843,912 | 903,206 | 2,656,933 | 2,343,957"
+   },
+   "extra_sources": [
+    "NV48"
+   ],
+   "sales_b": 0.8864,
+   "sales_pct": -9.8,
+   "seq_pct": 5.0,
+   "gross_margin": 48.1,
+   "gross_margin_bp": 344.7,
+   "op_margin": 20.28,
+   "op_margin_bp": 661.5,
+   "opex_pct": -0.3,
+   "opex_gap_pp": 9.5,
+   "inventory_b": 0.3455,
+   "inventory_pct": 4.5,
+   "inventory_gap_pp": 14.3,
+   "eps_q": 0.29,
+   "eps_q_prior": 0.23,
+   "diluted_shares_m": 601.559,
+   "cash_b": 2.4906,
+   "ltd_b": 0.0234,
+   "debt_note": "long-term capital lease obligations $23.4M",
+   "sales_note": "revenue $886.4M vs $982.5M a year earlier, $843.9M the quarter before",
+   "inventory_note": "inventories $345.5M (2011-01-30) vs $330.7M a year earlier (the release)",
+   "eps_note": "GAAP diluted EPS $0.29 vs $0.23; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 601.6M",
+   "next_print": "Q1 FY12 print (May)",
+   "cash_return_text": null,
+   "note": "charges stay in, as published: '(A) On January 10, 2011, the Company and Intel entered into a new six-year cross licensing agreement and both parties also agreed to settle all outstanding legal disputes. For accounting purposes, the fair valued benefit prescribed to the settlement portion was $57.0 million.' (Q4 FY11 results (8-K))",
+   "fy_actual": {
+    "fy": 2011,
+    "fy_label": "FY11",
+    "eps_normalized": 0.43,
+    "revenue_usd_b": 3.543309,
+    "diluted_shares_m": 588.684,
+    "normalization_note": "FY11 from the Q4 FY11 release (GAAP)",
+    "op_margin": 7.22,
+    "op_margin_note": "FY11 income from operations $255.7M / revenue $3,543.3M (Q4 FY11 release)",
+    "pretax_margin": 7.65,
+    "pretax_margin_note": "FY11 income before income tax $271.2M / revenue $3,543.3M (Q4 FY11 release)",
+    "gross_margin": 39.77,
+    "sales_growth": 6.5,
+    "tax_rate": 0.0665,
+    "tax_note": "FY11 income tax expense $18.0M / pre-tax $271.2M"
+   }
+  },
+  {
+   "quarter": "Q1 FY12",
+   "fy": 2012,
+   "q": 1,
+   "published": "2011-05-13",
+   "source": "NV51",
+   "release": "May 12",
+   "release_time": "after the close on May 12: 8-K accepted 2011-05-12 16:25 ET; public before the open of the next trading day",
+   "period_end": "2011-05-01",
+   "raw": {
+    "sales_k": 962039,
+    "sales_prior_k": 1001813,
+    "sales_prev_q_k": 886376,
+    "gross_profit_k": 484503,
+    "gross_profit_prior_k": 456377,
+    "rd_k": 231524,
+    "rd_prior_k": 218105,
+    "sga_k": 98117,
+    "sga_prior_k": 90879,
+    "op_income_k": 154862,
+    "op_income_prior_k": 147393,
+    "inventory_k": 380964,
+    "inventory_prior_k": 388139
+   },
+   "rows": {
+    "sales": "Revenue | 962,039 | 1,001,813",
+    "gp": "Gross profit | 484,503 | 456,377",
+    "rd": "Research and development | 231,524 | 218,105",
+    "sga": "Sales, general and administrative | 98,117 | 90,879",
+    "op": "Operating income | 154,862 | 147,393",
+    "eps": "Diluted net income per share | 0.22 | 0.23",
+    "shares": "Shares used in diluted per share computation | 613,474 | 590,997",
+    "inv": "Inventories | 380,964 | 345,525",
+    "cash": "Cash, cash equivalents and marketable securities | 2,726,541 | 2,490,563",
+    "debt": "Capital lease obligations, long term | 22,957 | 23,389"
+   },
+   "inventory_prior_row": {
+    "source": "NV45",
+    "row": "Inventories | 388,139 | 330,674"
+   },
+   "sales_prev_q_row": {
+    "source": "NV50",
+    "row": "Revenue | 886,376 | 982,488 | 3,543,309 | $ 3,326,445"
+   },
+   "extra_sources": [
+    "NV45",
+    "NV50"
+   ],
+   "sales_b": 0.962,
+   "sales_pct": -4.0,
+   "seq_pct": 8.5,
+   "gross_margin": 50.36,
+   "gross_margin_bp": 480.7,
+   "op_margin": 16.1,
+   "op_margin_bp": 138.5,
+   "opex_pct": 6.7,
+   "opex_gap_pp": 10.7,
+   "inventory_b": 0.381,
+   "inventory_pct": -1.8,
+   "inventory_gap_pp": 2.1,
+   "eps_q": 0.22,
+   "eps_q_prior": 0.23,
+   "diluted_shares_m": 613.474,
+   "cash_b": 2.7265,
+   "ltd_b": 0.023,
+   "debt_note": "long-term capital lease obligations $23.0M",
+   "sales_note": "revenue $962.0M vs $1,001.8M a year earlier, $886.4M the quarter before",
+   "inventory_note": "inventories $381.0M (2011-05-01) vs $388.1M a year earlier (Q1 FY11 10-Q)",
+   "eps_note": "GAAP diluted EPS $0.22 vs $0.23; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 613.5M",
+   "next_print": "Q2 FY12 print (August)",
+   "cash_return_text": null,
+   "note": null
+  },
+  {
+   "quarter": "Q2 FY12",
+   "fy": 2012,
+   "q": 2,
+   "published": "2011-08-12",
+   "source": "NV53",
+   "release": "Aug 11",
+   "release_time": "after the close on Aug 11: 8-K accepted 2011-08-11 16:26 ET; public before the open of the next trading day",
+   "period_end": "2011-07-31",
+   "raw": {
+    "sales_k": 1016517,
+    "sales_prior_k": 811208,
+    "sales_prev_q_k": 962039,
+    "gross_profit_k": 525284,
+    "gross_profit_prior_k": 134292,
+    "rd_k": 247721,
+    "rd_prior_k": 210635,
+    "sga_k": 103533,
+    "sga_prior_k": 98864,
+    "op_income_k": 174030,
+    "op_income_prior_k": -175207,
+    "inventory_k": 361911,
+    "inventory_prior_k": 434227
+   },
+   "rows": {
+    "sales": "Revenue | 1,016,517 | 811,208 | 1,978,556 | 1,813,021",
+    "gp": "Gross profit | 525,284 | 134,292 | 1,009,787 | 590,669",
+    "rd": "Research and development | 247,721 | 210,635 | 479,245 | 428,740",
+    "sga": "Sales, general and administrative | 103,533 | 98,864 | 201,650 | 189,743",
+    "op": "Operating income (loss) | 174,030 | (175,207) | 328,892 | (27,814)",
+    "eps": "Diluted net income (loss) per share | 0.25 | (0.25) | 0.47 | (0.01)",
+    "shares": "Shares used in diluted per share computation | 613,934 | 572,764 | 615,552 | 569,971",
+    "inv": "Inventories | 361,911 | 345,525",
+    "cash": "Cash, cash equivalents and marketable securities | 2,474,496 | 2,490,563",
+    "debt": "Capital lease obligations, long term | 22,493 | 23,389"
+   },
+   "inventory_prior_row": {
+    "source": "NV47",
+    "row": "Inventories | 434,227 | 330,674"
+   },
+   "sales_prev_q_row": {
+    "source": "NV51",
+    "row": "Revenue | 962,039 | 1,001,813"
+   },
+   "extra_sources": [
+    "NV47",
+    "NV51"
+   ],
+   "sales_b": 1.0165,
+   "sales_pct": 25.3,
+   "seq_pct": 5.7,
+   "gross_margin": 51.67,
+   "gross_margin_bp": 3512.0,
+   "op_margin": 17.12,
+   "op_margin_bp": 3871.9,
+   "opex_pct": 13.5,
+   "opex_gap_pp": -11.8,
+   "inventory_b": 0.3619,
+   "inventory_pct": -16.7,
+   "inventory_gap_pp": -42.0,
+   "eps_q": 0.25,
+   "eps_q_prior": -0.25,
+   "diluted_shares_m": 613.934,
+   "cash_b": 2.4745,
+   "ltd_b": 0.0225,
+   "debt_note": "long-term capital lease obligations $22.5M",
+   "sales_note": "revenue $1,016.5M vs $811.2M a year earlier, $962.0M the quarter before",
+   "inventory_note": "inventories $361.9M (2011-07-31) vs $434.2M a year earlier (Q2 FY11 10-Q)",
+   "eps_note": "GAAP diluted EPS $0.25 vs $(0.25); the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 613.9M",
+   "next_print": "Q3 FY12 print (November)",
+   "cash_return_text": null,
+   "note": null
+  },
+  {
+   "quarter": "Q3 FY12",
+   "fy": 2012,
+   "q": 3,
+   "published": "2011-11-11",
+   "source": "NV55",
+   "release": "Nov 10",
+   "release_time": "after the close on Nov 10: 8-K accepted 2011-11-10 16:21 ET; public before the open of the next trading day",
+   "period_end": "2011-10-30",
+   "raw": {
+    "sales_k": 1066180,
+    "sales_prior_k": 843912,
+    "sales_prev_q_k": 1016517,
+    "gross_profit_k": 556717,
+    "gross_profit_prior_k": 392062,
+    "rd_k": 256498,
+    "rd_prior_k": 204527,
+    "sga_k": 103129,
+    "sga_prior_k": 83752,
+    "op_income_k": 197090,
+    "op_income_prior_k": 103783,
+    "inventory_k": 319602,
+    "inventory_prior_k": 377812
+   },
+   "rows": {
+    "sales": "Revenue | 1,066,180 | 843,912 | 3,044,736 | 2,656,933",
+    "gp": "Gross profit | 556,717 | 392,062 | 1,566,504 | 982,731",
+    "rd": "Research and development | 256,498 | 204,527 | 735,743 | 633,267",
+    "sga": "Sales, general and administrative | 103,129 | 83,752 | 304,779 | 273,495",
+    "op": "Operating income | 197,090 | 103,783 | 525,982 | 75,969",
+    "eps": "Diluted net income per share | 0.29 | 0.15 | 0.76 | 0.14",
+    "shares": "Shares used in diluted per share computation | 613,560 | 582,648 | 614,688 | 584,500",
+    "inv": "Inventories | 319,602 | 345,525",
+    "cash": "Cash, cash equivalents and marketable securities | 2,748,354 | 2,490,563",
+    "debt": "Capital lease obligations, long term | 21,949 | 23,389"
+   },
+   "inventory_prior_row": {
+    "source": "NV49",
+    "row": "Inventories | 377,812 | 330,674"
+   },
+   "sales_prev_q_row": {
+    "source": "NV53",
+    "row": "Revenue | 1,016,517 | 811,208 | 1,978,556 | 1,813,021"
+   },
+   "extra_sources": [
+    "NV49",
+    "NV53"
+   ],
+   "sales_b": 1.0662,
+   "sales_pct": 26.3,
+   "seq_pct": 4.9,
+   "gross_margin": 52.22,
+   "gross_margin_bp": 575.8,
+   "op_margin": 18.49,
+   "op_margin_bp": 618.8,
+   "opex_pct": 24.7,
+   "opex_gap_pp": -1.6,
+   "inventory_b": 0.3196,
+   "inventory_pct": -15.4,
+   "inventory_gap_pp": -41.7,
+   "eps_q": 0.29,
+   "eps_q_prior": 0.15,
+   "diluted_shares_m": 613.56,
+   "cash_b": 2.7484,
+   "ltd_b": 0.0219,
+   "debt_note": "long-term capital lease obligations $21.9M",
+   "sales_note": "revenue $1,066.2M vs $843.9M a year earlier, $1,016.5M the quarter before",
+   "inventory_note": "inventories $319.6M (2011-10-30) vs $377.8M a year earlier (Q3 FY11 10-Q)",
+   "eps_note": "GAAP diluted EPS $0.29 vs $0.15; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 613.6M",
+   "next_print": "Q4 FY12 print (February)",
+   "cash_return_text": null,
+   "note": null
+  },
+  {
+   "quarter": "Q4 FY12",
+   "fy": 2012,
+   "q": 4,
+   "published": "2012-02-16",
+   "source": "NV57",
+   "release": "Feb 15",
+   "release_time": "after the close on Feb 15: 8-K accepted 2012-02-15 16:40 ET; public before the open of the next trading day",
+   "period_end": "2012-01-29",
+   "raw": {
+    "sales_k": 953194,
+    "sales_prior_k": 886376,
+    "sales_prev_q_k": 1066180,
+    "gross_profit_k": 490013,
+    "gross_profit_prior_k": 426359,
+    "rd_k": 266862,
+    "rd_prior_k": 215563,
+    "sga_k": 100834,
+    "sga_prior_k": 88018,
+    "op_income_k": 122317,
+    "op_income_prior_k": 179778,
+    "inventory_k": 340297,
+    "inventory_prior_k": 345525
+   },
+   "rows": {
+    "sales": "Revenue | 953,194 | 886,376 | 3,997,930 | 3,543,309",
+    "gp": "Gross profit | 490,013 | 426,359 | 2,056,517 | 1,409,090",
+    "rd": "Research and development | 266,862 | 215,563 | 1,002,605 | 848,830",
+    "sga": "Sales, general and administrative | 100,834 | 88,018 | 405,613 | 361,513",
+    "op": "Operating income | 122,317 | 179,778 | 648,299 | 255,747",
+    "eps": "Diluted net income per share | 0.19 | 0.29 | 0.94 | 0.43",
+    "shares": "Shares used in diluted per share computation | 618,599 | 601,559 | 616,371 | 588,684",
+    "inv": "Inventories | 340,297 | 345,525",
+    "cash": "Cash, cash equivalents and marketable securities | 3,129,576 | 2,490,563",
+    "debt": "Capital lease obligations, long term | 21,439 | 23,389"
+   },
+   "inventory_prior_row": {
+    "source": "NV57",
+    "row": "Inventories | 340,297 | 345,525"
+   },
+   "sales_prev_q_row": {
+    "source": "NV55",
+    "row": "Revenue | 1,066,180 | 843,912 | 3,044,736 | 2,656,933"
+   },
+   "extra_sources": [
+    "NV55"
+   ],
+   "sales_b": 0.9532,
+   "sales_pct": 7.5,
+   "seq_pct": -10.6,
+   "gross_margin": 51.41,
+   "gross_margin_bp": 330.6,
+   "op_margin": 12.83,
+   "op_margin_bp": -745.0,
+   "opex_pct": 21.1,
+   "opex_gap_pp": 13.6,
+   "inventory_b": 0.3403,
+   "inventory_pct": -1.5,
+   "inventory_gap_pp": -9.1,
+   "eps_q": 0.19,
+   "eps_q_prior": 0.29,
+   "diluted_shares_m": 618.599,
+   "cash_b": 3.1296,
+   "ltd_b": 0.0214,
+   "debt_note": "long-term capital lease obligations $21.4M",
+   "sales_note": "revenue $953.2M vs $886.4M a year earlier, $1,066.2M the quarter before",
+   "inventory_note": "inventories $340.3M (2012-01-29) vs $345.5M a year earlier (the release)",
+   "eps_note": "GAAP diluted EPS $0.19 vs $0.29; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 618.6M",
+   "next_print": "Q1 FY13 print (May)",
+   "cash_return_text": null,
+   "note": null,
+   "fy_actual": {
+    "fy": 2012,
+    "fy_label": "FY12",
+    "eps_normalized": 0.94,
+    "revenue_usd_b": 3.99793,
+    "diluted_shares_m": 616.371,
+    "normalization_note": "FY12 from the Q4 FY12 release (GAAP)",
+    "op_margin": 16.22,
+    "op_margin_note": "FY12 income from operations $648.3M / revenue $3,997.9M (Q4 FY12 release)",
+    "pretax_margin": 16.59,
+    "pretax_margin_note": "FY12 income before income tax $663.4M / revenue $3,997.9M (Q4 FY12 release)",
+    "gross_margin": 51.44,
+    "sales_growth": 12.8,
+    "tax_rate": 0.1241,
+    "tax_note": "FY12 income tax expense $82.3M / pre-tax $663.4M"
+   }
+  },
+  {
+   "quarter": "Q1 FY13",
+   "fy": 2013,
+   "q": 1,
+   "published": "2012-05-11",
+   "source": "NV58",
+   "release": "May 11",
+   "release_time": "8-K accepted 2012-05-11 07:32 ET, before the open (the release is dated May 11); public before that day's open",
+   "period_end": "2012-04-29",
+   "raw": {
+    "sales_k": 924877,
+    "sales_prior_k": 962039,
+    "sales_prev_q_k": 953194,
+    "gross_profit_k": 463364,
+    "gross_profit_prior_k": 484503,
+    "rd_k": 283902,
+    "rd_prior_k": 231524,
+    "sga_k": 106636,
+    "sga_prior_k": 98117,
+    "op_income_k": 72826,
+    "op_income_prior_k": 154862,
+    "inventory_k": 342707,
+    "inventory_prior_k": 380964
+   },
+   "rows": {
+    "sales": "Revenue | 924,877 | 962,039",
+    "gp": "Gross profit | 463,364 | 484,503",
+    "rd": "Research and development | 283,902 | 231,524",
+    "sga": "Sales, general and administrative | 106,636 | 98,117",
+    "op": "Operating income | 72,826 | 154,862",
+    "eps": "Diluted net income per share | 0.10 | 0.22",
+    "shares": "Shares used in diluted per share computation | 623,786 | 613,474",
+    "inv": "Inventories | 342,707 | 340,297",
+    "cash": "Cash, cash equivalents and marketable securities | 3,130,812 | 3,129,576",
+    "debt": "Capital lease obligations, long term | 20,830 | 21,439"
+   },
+   "inventory_prior_row": {
+    "source": "NV52",
+    "row": "Inventories | 380,964 | 345,525"
+   },
+   "sales_prev_q_row": {
+    "source": "NV57",
+    "row": "Revenue | 953,194 | 886,376 | 3,997,930 | 3,543,309"
+   },
+   "extra_sources": [
+    "NV52",
+    "NV57"
+   ],
+   "sales_b": 0.9249,
+   "sales_pct": -3.9,
+   "seq_pct": -3.0,
+   "gross_margin": 50.1,
+   "gross_margin_bp": -26.2,
+   "op_margin": 7.87,
+   "op_margin_bp": -822.3,
+   "opex_pct": 18.5,
+   "opex_gap_pp": 22.3,
+   "inventory_b": 0.3427,
+   "inventory_pct": -10.0,
+   "inventory_gap_pp": -6.2,
+   "eps_q": 0.1,
+   "eps_q_prior": 0.22,
+   "diluted_shares_m": 623.786,
+   "cash_b": 3.1308,
+   "ltd_b": 0.0208,
+   "debt_note": "long-term capital lease obligations $20.8M",
+   "sales_note": "revenue $924.9M vs $962.0M a year earlier, $953.2M the quarter before",
+   "inventory_note": "inventories $342.7M (2012-04-29) vs $381.0M a year earlier (Q1 FY12 10-Q)",
+   "eps_note": "GAAP diluted EPS $0.10 vs $0.22; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 623.8M",
+   "next_print": "Q2 FY13 print (August)",
+   "cash_return_text": null,
+   "note": null
+  },
+  {
+   "quarter": "Q2 FY13",
+   "fy": 2013,
+   "q": 2,
+   "published": "2012-08-10",
+   "source": "NV60",
+   "release": "Aug 9",
+   "release_time": "after the close on Aug 9: 8-K accepted 2012-08-09 16:27 ET; public before the open of the next trading day",
+   "period_end": "2012-07-29",
+   "raw": {
+    "sales_k": 1044270,
+    "sales_prior_k": 1016517,
+    "sales_prev_q_k": 924877,
+    "gross_profit_k": 540719,
+    "gross_profit_prior_k": 525284,
+    "rd_k": 281193,
+    "rd_prior_k": 247721,
+    "sga_k": 119903,
+    "sga_prior_k": 103533,
+    "op_income_k": 139623,
+    "op_income_prior_k": 174030,
+    "inventory_k": 387185,
+    "inventory_prior_k": 361911
+   },
+   "rows": {
+    "sales": "Revenue | 1,044,270 | 1,016,517 | 1,969,147 | 1,978,556",
+    "gp": "Gross profit | 540,719 | 525,284 | 1,004,083 | 1,009,787",
+    "rd": "Research and development | 281,193 | 247,721 | 565,095 | 479,245",
+    "sga": "Sales, general and administrative | 119,903 | 103,533 | 226,539 | 201,650",
+    "op": "Operating income | 139,623 | 174,030 | 212,449 | 328,892",
+    "eps": "Diluted net income per share | 0.19 | 0.25 | 0.29 | 0.47",
+    "shares": "Shares used in diluted per share computation | 623,143 | 613,934 | 623,397 | 615,552",
+    "inv": "Inventories | 387,185 | 340,297",
+    "cash": "Cash, cash equivalents and marketable securities | 3,278,100 | 3,129,576",
+    "debt": "Capital lease obligations, long term | 20,237 | 21,439"
+   },
+   "inventory_prior_row": {
+    "source": "NV54",
+    "row": "Inventories | 361,911 | 345,525"
+   },
+   "sales_prev_q_row": {
+    "source": "NV58",
+    "row": "Revenue | 924,877 | 962,039"
+   },
+   "extra_sources": [
+    "NV54",
+    "NV58"
+   ],
+   "sales_b": 1.0443,
+   "sales_pct": 2.7,
+   "seq_pct": 12.9,
+   "gross_margin": 51.78,
+   "gross_margin_bp": 10.5,
+   "op_margin": 13.37,
+   "op_margin_bp": -375.0,
+   "opex_pct": 14.2,
+   "opex_gap_pp": 11.5,
+   "inventory_b": 0.3872,
+   "inventory_pct": 7.0,
+   "inventory_gap_pp": 4.3,
+   "eps_q": 0.19,
+   "eps_q_prior": 0.25,
+   "diluted_shares_m": 623.143,
+   "cash_b": 3.2781,
+   "ltd_b": 0.0202,
+   "debt_note": "long-term capital lease obligations $20.2M",
+   "sales_note": "revenue $1,044.3M vs $1,016.5M a year earlier, $924.9M the quarter before",
+   "inventory_note": "inventories $387.2M (2012-07-29) vs $361.9M a year earlier (Q2 FY12 10-Q)",
+   "eps_note": "GAAP diluted EPS $0.19 vs $0.25; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 623.1M",
+   "next_print": "Q3 FY13 print (November)",
+   "cash_return_text": null,
+   "note": null
+  },
+  {
+   "quarter": "Q3 FY13",
+   "fy": 2013,
+   "q": 3,
+   "published": "2012-11-09",
+   "source": "NV62",
+   "release": "Nov 8",
+   "release_time": "after the close on Nov 8: 8-K accepted 2012-11-08 16:24 ET; public before the open of the next trading day",
+   "period_end": "2012-10-28",
+   "raw": {
+    "sales_k": 1204110,
+    "sales_prior_k": 1066180,
+    "sales_prev_q_k": 1044270,
+    "gross_profit_k": 636658,
+    "gross_profit_prior_k": 556717,
+    "rd_k": 284180,
+    "rd_prior_k": 256498,
+    "sga_k": 100261,
+    "sga_prior_k": 103129,
+    "op_income_k": 252217,
+    "op_income_prior_k": 197090,
+    "inventory_k": 428983,
+    "inventory_prior_k": 319602
+   },
+   "rows": {
+    "sales": "Revenue | 1,204,110 | 1,066,180 | 3,173,257 | 3,044,736",
+    "gp": "Gross profit | 636,658 | 556,717 | 1,640,741 | 1,566,504",
+    "rd": "Research and development | 284,180 | 256,498 | 849,275 | 735,743",
+    "sga": "Sales, general and administrative | 100,261 | 103,129 | 326,800 | 304,779",
+    "op": "Operating income | 252,217 | 197,090 | 464,666 | 525,982",
+    "eps": "Diluted net income per share | 0.33 | 0.29 | 0.62 | 0.76",
+    "shares": "Shares used in diluted per share computation | 628,845 | 613,560 | 625,973 | 614,688",
+    "inv": "Inventories | 428,983 | 340,297",
+    "cash": "Cash, cash equivalents and marketable securities | 3,434,772 | 3,129,576",
+    "debt": "Capital lease obligations, long term | 19,627 | 21,439"
+   },
+   "inventory_prior_row": {
+    "source": "NV56",
+    "row": "Inventories | 319,602 | 345,525"
+   },
+   "sales_prev_q_row": {
+    "source": "NV60",
+    "row": "Revenue | 1,044,270 | 1,016,517 | 1,969,147 | 1,978,556"
+   },
+   "extra_sources": [
+    "NV56",
+    "NV60"
+   ],
+   "sales_b": 1.2041,
+   "sales_pct": 12.9,
+   "seq_pct": 15.3,
+   "gross_margin": 52.87,
+   "gross_margin_bp": 65.8,
+   "op_margin": 20.95,
+   "op_margin_bp": 246.1,
+   "opex_pct": 6.9,
+   "opex_gap_pp": -6.0,
+   "inventory_b": 0.429,
+   "inventory_pct": 34.2,
+   "inventory_gap_pp": 21.3,
+   "eps_q": 0.33,
+   "eps_q_prior": 0.29,
+   "diluted_shares_m": 628.845,
+   "cash_b": 3.4348,
+   "ltd_b": 0.0196,
+   "debt_note": "long-term capital lease obligations $19.6M",
+   "sales_note": "revenue $1,204.1M vs $1,066.2M a year earlier, $1,044.3M the quarter before",
+   "inventory_note": "inventories $429.0M (2012-10-28) vs $319.6M a year earlier (Q3 FY12 10-Q)",
+   "eps_note": "GAAP diluted EPS $0.33 vs $0.29; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 628.8M",
+   "next_print": "Q4 FY13 print (February)",
+   "cash_return_text": "'The company also announced that it is initiating the payment of a quarterly cash dividend, and extending its existing $2.7 billion share-repurchase program, initiated in August 2004, through December 2014.' (Q3 FY13 release)",
+   "note": null
+  },
+  {
+   "quarter": "Q4 FY13",
+   "fy": 2013,
+   "q": 4,
+   "published": "2013-02-14",
+   "source": "NV65",
+   "release": "Feb 13",
+   "release_time": "after the close on Feb 13: 8-K accepted 2013-02-13 16:26 ET; public before the open of the next trading day",
+   "period_end": "2013-01-27",
+   "raw": {
+    "sales_k": 1106902,
+    "sales_prior_k": 953194,
+    "sales_prev_q_k": 1204110,
+    "gross_profit_k": 585602,
+    "gross_profit_prior_k": 490013,
+    "rd_k": 298007,
+    "rd_prior_k": 266862,
+    "sga_k": 104022,
+    "sga_prior_k": 100834,
+    "op_income_k": 183573,
+    "op_income_prior_k": 122317,
+    "inventory_k": 419686,
+    "inventory_prior_k": 340297
+   },
+   "rows": {
+    "sales": "Revenue | 1,106,902 | 953,194 | 4,280,159 | 3,997,930",
+    "gp": "Gross profit | 585,602 | 490,013 | 2,226,343 | 2,056,517",
+    "rd": "Research and development | 298,007 | 266,862 | 1,147,282 | 1,002,605",
+    "sga": "Sales, general and administrative | 104,022 | 100,834 | 430,822 | 405,613",
+    "op": "Operating income | 183,573 | 122,317 | 648,239 | 648,299",
+    "eps": "Diluted net income per share | 0.28 | 0.19 | 0.90 | 0.94",
+    "shares": "Shares used in diluted per share computation | 622,018 | 618,599 | 624,957 | 616,371",
+    "inv": "Inventories | 419,686 | 340,297",
+    "cash": "Cash, cash equivalents and marketable securities | 3,727,883 | 3,129,576",
+    "debt": "Capital lease obligations, long term | 18,998 | 21,439"
+   },
+   "inventory_prior_row": {
+    "source": "NV65",
+    "row": "Inventories | 419,686 | 340,297"
+   },
+   "sales_prev_q_row": {
+    "source": "NV62",
+    "row": "Revenue | 1,204,110 | 1,066,180 | 3,173,257 | 3,044,736"
+   },
+   "extra_sources": [
+    "NV62"
+   ],
+   "sales_b": 1.1069,
+   "sales_pct": 16.1,
+   "seq_pct": -8.1,
+   "gross_margin": 52.9,
+   "gross_margin_bp": 149.7,
+   "op_margin": 16.58,
+   "op_margin_bp": 375.2,
+   "opex_pct": 9.3,
+   "opex_gap_pp": -6.8,
+   "inventory_b": 0.4197,
+   "inventory_pct": 23.3,
+   "inventory_gap_pp": 7.2,
+   "eps_q": 0.28,
+   "eps_q_prior": 0.19,
+   "diluted_shares_m": 622.018,
+   "cash_b": 3.7279,
+   "ltd_b": 0.019,
+   "debt_note": "long-term capital lease obligations $19.0M",
+   "sales_note": "revenue $1,106.9M vs $953.2M a year earlier, $1,204.1M the quarter before",
+   "inventory_note": "inventories $419.7M (2013-01-27) vs $340.3M a year earlier (the release)",
+   "eps_note": "GAAP diluted EPS $0.28 vs $0.19; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 622.0M",
+   "next_print": "Q1 FY14 print (May)",
+   "cash_return_text": "'During the quarter, NVIDIA repurchased $100.0 million of stock and paid a dividend of $0.075 per share, equivalent to $46.9 million.' (Q4 FY13 release)",
+   "note": null,
+   "fy_actual": {
+    "fy": 2013,
+    "fy_label": "FY13",
+    "eps_normalized": 0.9,
+    "revenue_usd_b": 4.280159,
+    "diluted_shares_m": 624.957,
+    "normalization_note": "FY13 from the Q4 FY13 release (GAAP)",
+    "op_margin": 15.15,
+    "op_margin_note": "FY13 income from operations $648.2M / revenue $4,280.2M (Q4 FY13 release)",
+    "pretax_margin": 15.47,
+    "pretax_margin_note": "FY13 income before income tax $662.0M / revenue $4,280.2M (Q4 FY13 release)",
+    "gross_margin": 52.02,
+    "sales_growth": 7.1,
+    "tax_rate": 0.1503,
+    "tax_note": "FY13 income tax expense $99.5M / pre-tax $662.0M"
+   }
+  },
+  {
+   "quarter": "Q1 FY14",
+   "fy": 2014,
+   "q": 1,
+   "published": "2013-05-10",
+   "source": "NV66",
+   "release": "May 9",
+   "release_time": "after the close on May 9: 8-K accepted 2013-05-09 16:30 ET; public before the open of the next trading day",
+   "period_end": "2013-04-28",
+   "raw": {
+    "sales_k": 954739,
+    "sales_prior_k": 924877,
+    "sales_prev_q_k": 1106902,
+    "gross_profit_k": 518568,
+    "gross_profit_prior_k": 463364,
+    "rd_k": 327161,
+    "rd_prior_k": 283902,
+    "sga_k": 108626,
+    "sga_prior_k": 106636,
+    "op_income_k": 82781,
+    "op_income_prior_k": 72826,
+    "inventory_k": 377597,
+    "inventory_prior_k": 342707
+   },
+   "rows": {
+    "sales": "Revenue | 954,739 | 924,877",
+    "gp": "Gross profit | 518,568 | 463,364",
+    "rd": "Research and development | 327,161 | 283,902",
+    "sga": "Sales, general and administrative | 108,626 | 106,636",
+    "op": "Operating income | 82,781 | 72,826",
+    "eps": "Diluted net income per share | 0.13 | 0.10",
+    "shares": "Shares used in diluted per share computation | 619,302 | 623,786",
+    "inv": "Inventories | 377,597 | 419,686",
+    "cash": "Cash, cash equivalents and marketable securities | 3,713,351 | 3,727,883",
+    "debt": "Capital lease obligations, long term | 18,333 | 18,998"
+   },
+   "inventory_prior_row": {
+    "source": "NV59",
+    "row": "Inventories | 342,707 | 340,297"
+   },
+   "sales_prev_q_row": {
+    "source": "NV65",
+    "row": "Revenue | 1,106,902 | 953,194 | 4,280,159 | 3,997,930"
+   },
+   "extra_sources": [
+    "NV59",
+    "NV65"
+   ],
+   "sales_b": 0.9547,
+   "sales_pct": 3.2,
+   "seq_pct": -13.7,
+   "gross_margin": 54.32,
+   "gross_margin_bp": 421.5,
+   "op_margin": 8.67,
+   "op_margin_bp": 79.6,
+   "opex_pct": 11.6,
+   "opex_gap_pp": 8.4,
+   "inventory_b": 0.3776,
+   "inventory_pct": 10.2,
+   "inventory_gap_pp": 7.0,
+   "eps_q": 0.13,
+   "eps_q_prior": 0.1,
+   "diluted_shares_m": 619.302,
+   "cash_b": 3.7134,
+   "ltd_b": 0.0183,
+   "debt_note": "long-term capital lease obligations $18.3M",
+   "sales_note": "revenue $954.7M vs $924.9M a year earlier, $1,106.9M the quarter before",
+   "inventory_note": "inventories $377.6M (2013-04-28) vs $342.7M a year earlier (Q1 FY13 10-Q)",
+   "eps_note": "GAAP diluted EPS $0.13 vs $0.10; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 619.3M",
+   "next_print": "Q2 FY14 print (August)",
+   "cash_return_text": "'As part of NVIDIA's capital return program, the company plans to continue its quarterly dividend program at $0.075 per share and to return additional cash of at least $750 million during fiscal 2014, largely through a structured share repurchase program.' (Q1 FY14 release)",
+   "note": null
+  },
+  {
+   "quarter": "Q2 FY14",
+   "fy": 2014,
+   "q": 2,
+   "published": "2013-08-09",
+   "source": "NV68",
+   "release": "Aug 8",
+   "release_time": "after the close on Aug 8: 8-K accepted 2013-08-08 16:29 ET; public before the open of the next trading day",
+   "period_end": "2013-07-28",
+   "raw": {
+    "sales_k": 977238,
+    "sales_prior_k": 1044270,
+    "sales_prev_q_k": 954739,
+    "gross_profit_k": 545538,
+    "gross_profit_prior_k": 540719,
+    "rd_k": 331738,
+    "rd_prior_k": 281193,
+    "sga_k": 108266,
+    "sga_prior_k": 119903,
+    "op_income_k": 105534,
+    "op_income_prior_k": 139623,
+    "inventory_k": 378280,
+    "inventory_prior_k": 387185
+   },
+   "rows": {
+    "sales": "Revenue | 977,238 | 1,044,270 | 1,931,977 | 1,969,147",
+    "gp": "Gross profit | 545,538 | 540,719 | 1,064,106 | 1,004,083",
+    "rd": "Research and development | 331,738 | 281,193 | 658,899 | 565,095",
+    "sga": "Sales, general and administrative | 108,266 | 119,903 | 216,892 | 226,539",
+    "op": "Operating income | 105,534 | 139,623 | 188,315 | 212,449",
+    "eps": "Diluted net income per share | 0.16 | 0.19 | 0.29 | 0.29",
+    "shares": "Shares used in diluted per share computation | 592,006 | 623,143 | 606,051 | 623,397",
+    "inv": "Inventories | 378,280 | 412,467",
+    "cash": "Cash, cash equivalents and marketable securities | 2,935,893 | 3,727,883",
+    "debt": "Capital lease obligations, long term | 17,685 | 18,998"
+   },
+   "inventory_prior_row": {
+    "source": "NV61",
+    "row": "Inventories | 387,185 | 340,297"
+   },
+   "sales_prev_q_row": {
+    "source": "NV66",
+    "row": "Revenue | 954,739 | 924,877"
+   },
+   "extra_sources": [
+    "NV61",
+    "NV66"
+   ],
+   "sales_b": 0.9772,
+   "sales_pct": -6.4,
+   "seq_pct": 2.4,
+   "gross_margin": 55.82,
+   "gross_margin_bp": 404.5,
+   "op_margin": 10.8,
+   "op_margin_bp": -257.1,
+   "opex_pct": 9.7,
+   "opex_gap_pp": 16.1,
+   "inventory_b": 0.3783,
+   "inventory_pct": -2.3,
+   "inventory_gap_pp": 4.1,
+   "eps_q": 0.16,
+   "eps_q_prior": 0.19,
+   "diluted_shares_m": 592.006,
+   "cash_b": 2.9359,
+   "ltd_b": 0.0177,
+   "debt_note": "long-term capital lease obligations $17.7M",
+   "sales_note": "revenue $977.2M vs $1,044.3M a year earlier, $954.7M the quarter before",
+   "inventory_note": "inventories $378.3M (2013-07-28) vs $387.2M a year earlier (Q2 FY13 10-Q)",
+   "eps_note": "GAAP diluted EPS $0.16 vs $0.19; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 592.0M",
+   "next_print": "Q3 FY14 print (November)",
+   "cash_return_text": "'On May 14, 2013, NVIDIA executed an accelerated share repurchase (ASR) agreement with Goldman, Sachs & Co. such that NVIDIA paid Goldman Sachs $750 million and Goldman Sachs delivered 36.9 million shares on May 16, 2013.' (Q2 FY14 release)",
+   "note": null
+  },
+  {
+   "quarter": "Q3 FY14",
+   "fy": 2014,
+   "q": 3,
+   "published": "2013-11-08",
+   "source": "NV70",
+   "release": "Nov 7",
+   "release_time": "after the close on Nov 7: 8-K accepted 2013-11-07 16:26 ET; public before the open of the next trading day",
+   "period_end": "2013-10-27",
+   "raw": {
+    "sales_k": 1053967,
+    "sales_prior_k": 1204110,
+    "sales_prev_q_k": 977238,
+    "gross_profit_k": 584415,
+    "gross_profit_prior_k": 636658,
+    "rd_k": 340294,
+    "rd_prior_k": 284180,
+    "sga_k": 103133,
+    "sga_prior_k": 100261,
+    "op_income_k": 140988,
+    "op_income_prior_k": 252217,
+    "inventory_k": 380319,
+    "inventory_prior_k": 428983
+   },
+   "rows": {
+    "sales": "Revenue | 1,053,967 | 1,204,110 | 2,985,944 | 3,173,257",
+    "gp": "Gross profit | 584,415 | 636,658 | 1,648,521 | 1,640,741",
+    "rd": "Research and development | 340,294 | 284,180 | 999,193 | 849,275",
+    "sga": "Sales, general and administrative | 103,133 | 100,261 | 320,025 | 326,800",
+    "op": "Operating income | 140,988 | 252,217 | 329,303 | 464,666",
+    "eps": "Diluted net income per share | 0.20 | 0.33 | 0.49 | 0.62",
+    "shares": "Shares used in diluted per share computation | 588,752 | 628,845 | 600,108 | 625,973",
+    "inv": "Inventories | 380,319 | 412,467",
+    "cash": "Cash, cash equivalents and marketable securities | 3,032,954 | 3,727,883",
+    "debt": "Capital lease obligations, long term | 17,015 | 18,998"
+   },
+   "inventory_prior_row": {
+    "source": "NV64",
+    "row": "Inventories | 428,983 | 340,297"
+   },
+   "sales_prev_q_row": {
+    "source": "NV68",
+    "row": "Revenue | 977,238 | 1,044,270 | 1,931,977 | 1,969,147"
+   },
+   "extra_sources": [
+    "NV64",
+    "NV68"
+   ],
+   "sales_b": 1.054,
+   "sales_pct": -12.5,
+   "seq_pct": 7.9,
+   "gross_margin": 55.45,
+   "gross_margin_bp": 257.5,
+   "op_margin": 13.38,
+   "op_margin_bp": -756.9,
+   "opex_pct": 15.3,
+   "opex_gap_pp": 27.8,
+   "inventory_b": 0.3803,
+   "inventory_pct": -11.3,
+   "inventory_gap_pp": 1.1,
+   "eps_q": 0.2,
+   "eps_q_prior": 0.33,
+   "diluted_shares_m": 588.752,
+   "cash_b": 3.033,
+   "ltd_b": 0.017,
+   "debt_note": "long-term capital lease obligations $17.0M",
+   "sales_note": "revenue $1,054.0M vs $1,204.1M a year earlier, $977.2M the quarter before",
+   "inventory_note": "inventories $380.3M (2013-10-27) vs $429.0M a year earlier (Q3 FY13 10-Q)",
+   "eps_note": "GAAP diluted EPS $0.20 vs $0.33; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used",
+   "shares_note": "diluted shares 588.8M",
+   "next_print": "Q4 FY14 print (February)",
+   "cash_return_text": "'NVIDIA intends to return $1 billion in fiscal 2015 through stock repurchases and quarterly dividend payments.' (Q3 FY14 release)",
+   "note": null
   }
  ],
  "guides": [
@@ -1740,9 +3890,422 @@
    "doc": "Q3 FY10 10-Q",
    "quarter": "Q4 FY10",
    "words": "As such, revenue during the fourth quarter of fiscal year 2010 is anticipated to merely increase slightly as compared to the third quarter of fiscal year 2010."
+  },
+  {
+   "fy": 2011,
+   "published": "2010-02-18",
+   "source": "NV43",
+   "doc": "Q4 FY10 release",
+   "quarter": "Q1 FY11",
+   "seq_pct": [
+    0,
+    0
+   ],
+   "base_quarter": "Q4 FY10",
+   "base_sales_m": 982.488,
+   "level_m": [
+    982.49,
+    982.49
+   ],
+   "prior_label": "Q1 FY10",
+   "prior_sales_m": 664.231,
+   "prior_source": "NV32",
+   "yoy_pct": [
+    47.9,
+    47.9
+   ],
+   "quote": "Revenue is expected to be flat from the fourth quarter.",
+   "display": "'GAAP gross margin is expected to be in the range of 44 to 45 percent.'"
+  },
+  {
+   "fy": 2011,
+   "published": "2010-05-14",
+   "source": "NV44",
+   "doc": "Q1 FY11 release",
+   "quarter": "Q2 FY11",
+   "seq_pct": [
+    -5,
+    -3
+   ],
+   "base_quarter": "Q1 FY11",
+   "base_sales_m": 1001.813,
+   "level_m": [
+    951.72,
+    971.76
+   ],
+   "prior_label": "Q2 FY10",
+   "prior_sales_m": 776.52,
+   "prior_source": "NV34",
+   "yoy_pct": [
+    22.6,
+    25.1
+   ],
+   "quote": "Revenue is expected to be down seasonally 3 to 5 percent from the first quarter.",
+   "display": "'GAAP gross margin is expected to increase to 46 to 47 percent.'"
+  },
+  {
+   "fy": 2011,
+   "published": "2010-08-13",
+   "source": "NV46",
+   "doc": "Q2 FY11 release",
+   "quarter": "Q3 FY11",
+   "seq_pct": [
+    3,
+    5
+   ],
+   "base_quarter": "Q2 FY11",
+   "base_sales_m": 811.208,
+   "level_m": [
+    835.54,
+    851.77
+   ],
+   "prior_label": "Q3 FY10",
+   "prior_sales_m": 903.206,
+   "prior_source": "NV36",
+   "yoy_pct": [
+    -7.5,
+    -5.7
+   ],
+   "quote": "Revenue is expected to be up 3 to 5 percent from the second quarter.",
+   "display": "'GAAP gross margin is expected to increase to 46.5 to 47.5 percent.'"
+  },
+  {
+   "fy": 2011,
+   "published": "2010-08-31",
+   "source": "NV47",
+   "doc": "Q2 FY11 10-Q",
+   "quarter": "Q3 FY11",
+   "words": "We expect revenue to increase slightly during the third quarter of fiscal year 2011 as compared to the second quarter of fiscal year 2011."
+  },
+  {
+   "fy": 2011,
+   "published": "2010-11-12",
+   "source": "NV48",
+   "doc": "Q3 FY11 release",
+   "quarter": "Q4 FY11",
+   "seq_pct": [
+    3,
+    5
+   ],
+   "base_quarter": "Q3 FY11",
+   "base_sales_m": 843.912,
+   "level_m": [
+    869.23,
+    886.11
+   ],
+   "prior_label": "Q4 FY10",
+   "prior_sales_m": 982.488,
+   "prior_source": "NV43",
+   "yoy_pct": [
+    -11.5,
+    -9.8
+   ],
+   "quote": "Revenue is expected to be up 3 to 5 percent from the third quarter.",
+   "display": "'GAAP gross margin is expected to be flat.'"
+  },
+  {
+   "fy": 2011,
+   "published": "2010-12-08",
+   "source": "NV49",
+   "doc": "Q3 FY11 10-Q",
+   "quarter": "Q4 FY11",
+   "words": "We expect revenue to increase slightly during the fourth quarter of fiscal year 2011 as compared to the third quarter of fiscal year 2011."
+  },
+  {
+   "fy": 2012,
+   "published": "2011-02-17",
+   "source": "NV50",
+   "doc": "Q4 FY11 release",
+   "quarter": "Q1 FY12",
+   "seq_pct": [
+    6,
+    8
+   ],
+   "base_quarter": "Q4 FY11",
+   "base_sales_m": 886.376,
+   "level_m": [
+    939.56,
+    957.29
+   ],
+   "prior_label": "Q1 FY11",
+   "prior_sales_m": 1001.813,
+   "prior_source": "NV44",
+   "yoy_pct": [
+    -6.2,
+    -4.4
+   ],
+   "quote": "Revenue is expected to be up 6 to 8 percent from the fourth quarter.",
+   "display": "'GAAP gross margin is expected to be 48.5 to 49.5 percent.'"
+  },
+  {
+   "fy": 2012,
+   "published": "2011-05-13",
+   "source": "NV51",
+   "doc": "Q1 FY12 release",
+   "quarter": "Q2 FY12",
+   "seq_pct": [
+    4,
+    6
+   ],
+   "base_quarter": "Q1 FY12",
+   "base_sales_m": 962.039,
+   "level_m": [
+    1000.52,
+    1019.76
+   ],
+   "prior_label": "Q2 FY11",
+   "prior_sales_m": 811.208,
+   "prior_source": "NV46",
+   "yoy_pct": [
+    23.3,
+    25.7
+   ],
+   "quote": "Revenue is expected to be up 4 to 6 percent from the first quarter.",
+   "display": "'GAAP gross margin is expected to be 50.5 to 51.5 percent.'"
+  },
+  {
+   "fy": 2012,
+   "published": "2011-08-12",
+   "source": "NV53",
+   "doc": "Q2 FY12 release",
+   "quarter": "Q3 FY12",
+   "seq_pct": [
+    4,
+    6
+   ],
+   "base_quarter": "Q2 FY12",
+   "base_sales_m": 1016.517,
+   "level_m": [
+    1057.18,
+    1077.51
+   ],
+   "prior_label": "Q3 FY11",
+   "prior_sales_m": 843.912,
+   "prior_source": "NV48",
+   "yoy_pct": [
+    25.3,
+    27.7
+   ],
+   "quote": "Revenue is expected to be up 4 to 6 percent from the second quarter",
+   "display": "'GAAP and non-GAAP gross margins are expected to be flat'"
+  },
+  {
+   "fy": 2012,
+   "published": "2011-11-11",
+   "source": "NV55",
+   "doc": "Q3 FY12 release",
+   "quarter": "Q4 FY12",
+   "seq_pct": [
+    -2,
+    2
+   ],
+   "base_quarter": "Q3 FY12",
+   "base_sales_m": 1066.18,
+   "level_m": [
+    1044.86,
+    1087.5
+   ],
+   "prior_label": "Q4 FY11",
+   "prior_sales_m": 886.376,
+   "prior_source": "NV50",
+   "yoy_pct": [
+    17.9,
+    22.7
+   ],
+   "quote": "Revenue is expected to be relatively flat, plus or minus two percent, from the third quarter.",
+   "display": "'GAAP and non-GAAP gross margins are expected to be flat to up 0.5 percentage points from the respective GAAP and non-GAAP gross margins in the third quarter.'"
+  },
+  {
+   "fy": 2013,
+   "published": "2012-02-16",
+   "source": "NV57",
+   "doc": "Q4 FY12 release",
+   "quarter": "Q1 FY13",
+   "level_stated": true,
+   "level_m": [
+    900.0,
+    930.0
+   ],
+   "prior_label": "Q1 FY12",
+   "prior_sales_m": 962.039,
+   "prior_source": "NV51",
+   "yoy_pct": [
+    -6.4,
+    -3.3
+   ],
+   "quote": "Revenue is expected to be between $900 million and $930 million.",
+   "display": "'GAAP gross margins are expected to be 49.2 percent, plus or minus 1 percentage point; non-GAAP gross margins are expected to be 49.5 percent, plus or minus 1 percentage point.'"
+  },
+  {
+   "fy": 2013,
+   "published": "2012-05-11",
+   "source": "NV58",
+   "doc": "Q1 FY13 release",
+   "quarter": "Q2 FY13",
+   "level_stated": true,
+   "level_m": [
+    990.0,
+    1050.0
+   ],
+   "prior_label": "Q2 FY12",
+   "prior_sales_m": 1016.517,
+   "prior_source": "NV53",
+   "yoy_pct": [
+    -2.6,
+    3.3
+   ],
+   "quote": "Revenue is expected to be between $990 million and $1.05 billion.",
+   "display": "'GAAP gross margin is expected to be 51.2 percent, plus or minus one percentage point.'"
+  },
+  {
+   "fy": 2013,
+   "published": "2012-08-10",
+   "source": "NV60",
+   "doc": "Q2 FY13 release",
+   "quarter": "Q3 FY13",
+   "level_stated": true,
+   "level_m": [
+    1150.0,
+    1250.0
+   ],
+   "prior_label": "Q3 FY12",
+   "prior_sales_m": 1066.18,
+   "prior_source": "NV55",
+   "yoy_pct": [
+    7.9,
+    17.2
+   ],
+   "quote": "Revenue is expected to be between $1.15 billion and $1.25 billion.",
+   "display": "'GAAP and non-GAAP gross margins are expected to be flat relative to the prior quarter, at 51.8 percent and 52.0 percent, respectively.'"
+  },
+  {
+   "fy": 2013,
+   "published": "2012-11-09",
+   "source": "NV62",
+   "doc": "Q3 FY13 release",
+   "quarter": "Q4 FY13",
+   "level_stated": true,
+   "level_m": [
+    1025.0,
+    1175.0
+   ],
+   "prior_label": "Q4 FY12",
+   "prior_sales_m": 953.194,
+   "prior_source": "NV57",
+   "yoy_pct": [
+    7.5,
+    23.3
+   ],
+   "quote": "Revenue is expected to be between $1.025 billion and $1.175 billion.",
+   "display": "'GAAP and non-GAAP gross margins are expected to be flat relative to the prior quarter, 52.9 percent and 53.1 percent, respectively.'"
+  },
+  {
+   "fy": 2014,
+   "published": "2013-02-14",
+   "source": "NV65",
+   "doc": "Q4 FY13 release",
+   "quarter": "Q1 FY14",
+   "level_stated": true,
+   "level_center_m": 940.0,
+   "level_pm_pct": 2.0,
+   "level_m": [
+    921.2,
+    958.8
+   ],
+   "prior_label": "Q1 FY13",
+   "prior_sales_m": 924.877,
+   "prior_source": "NV58",
+   "yoy_pct": [
+    -0.4,
+    3.7
+   ],
+   "quote": "Revenue is expected to be $940 million, plus or minus two percent.",
+   "display": "'GAAP and non-GAAP gross margins are expected to be flat relative to the prior quarter, at 52.9 percent and 53.2 percent, respectively.'"
+  },
+  {
+   "fy": 2014,
+   "published": "2013-05-10",
+   "source": "NV67",
+   "doc": "Q1 FY14 CFO commentary",
+   "quarter": "Q2 FY14",
+   "level_stated": true,
+   "level_center_m": 975.0,
+   "level_pm_pct": 2.0,
+   "level_m": [
+    955.5,
+    994.5
+   ],
+   "prior_label": "Q2 FY13",
+   "prior_sales_m": 1044.27,
+   "prior_source": "NV60",
+   "yoy_pct": [
+    -8.5,
+    -4.8
+   ],
+   "quote": "Revenue is expected to be $975 million, plus or minus two percent.",
+   "display": "'GAAP and non-GAAP gross margins are expected to be approximately flat relative to the prior quarter of 54.3 percent and 54.6 percent, respectively.'"
+  },
+  {
+   "fy": 2014,
+   "published": "2013-08-09",
+   "source": "NV69",
+   "doc": "Q2 FY14 CFO commentary",
+   "quarter": "Q3 FY14",
+   "level_stated": true,
+   "level_center_m": 1050.0,
+   "level_pm_pct": 2.0,
+   "level_m": [
+    1029.0,
+    1071.0
+   ],
+   "prior_label": "Q3 FY13",
+   "prior_sales_m": 1204.11,
+   "prior_source": "NV62",
+   "yoy_pct": [
+    -14.5,
+    -11.1
+   ],
+   "quote": "Revenue is expected to be $1.050 billion, plus or minus two percent.",
+   "display": "'GAAP and non-GAAP gross margins are expected to be approximately flat relative to the prior quarter at 56.0 percent and 56.3 percent, respectively.'"
+  },
+  {
+   "fy": 2014,
+   "published": "2013-11-08",
+   "source": "NV71",
+   "doc": "Q3 FY14 CFO commentary",
+   "quarter": "Q4 FY14",
+   "level_stated": true,
+   "level_center_m": 1050.0,
+   "level_pm_pct": 2.0,
+   "level_m": [
+    1029.0,
+    1071.0
+   ],
+   "prior_label": "Q4 FY13",
+   "prior_sales_m": 1106.902,
+   "prior_source": "NV65",
+   "yoy_pct": [
+    -7.0,
+    -3.2
+   ],
+   "quote": "Revenue is expected to be $1.05 billion, plus or minus two percent.",
+   "display": "'GAAP and non-GAAP gross margins are expected to be approximately 54.2 percent and 54.5 percent, respectively.'"
   }
  ],
- "dividends": [],
+ "dividends": [
+  {
+   "published": "2012-11-09",
+   "source": "NV63",
+   "quarterly": 0.075,
+   "note": "$0.075 quarterly ('The initial quarterly cash dividend of $0.075 per share of common stock outstanding will be payable on December 14, 2012 to all common stockholders of record at the close of business on November 23, 2012.', 8-K of 2012-11-08)"
+  },
+  {
+   "published": "2013-11-08",
+   "source": "NV70",
+   "quarterly": 0.085,
+   "note": "$0.085 quarterly ('NVIDIA also announced a 13 percent increase in the quarterly cash dividend to $0.085 per share ($0.34 per share on an annual basis) from $0.075 per share ($0.30 per share on an annual basis).', Q3 FY14 release)"
+  }
+ ],
  "events": [],
  "company_names": [],
  "splits": [

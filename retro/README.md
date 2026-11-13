@@ -14649,6 +14649,186 @@ Judgement calls that could carry hindsight:
   guides);
 - CYCLICAL rather than DURABLE (the class label only), and no theme for the GPU integrated into the CPU.
 
+### NVDA 2010-2013
+
+209 weekly dates, 2010-01-08 to 2013-12-31, on the same method, engine and rule-T thresholds. The fact sheet only gains facts: its
+2008-2009 content is unchanged and the 105 earlier models rebuild byte for byte after the builder change below.
+
+```bash
+python3 retro/build_nvda.py --weekly 2010-01-04 2013-12-31                  # 209 dates, 2010-01-08 .. 2013-12-31
+for c in 2010-01-01 2010-02-18 2010-03-18 2010-05-14 2010-08-13 2010-08-31 2010-11-12 2010-12-08 2011-02-17 2011-03-17 2011-05-13 \
+         2011-08-12 2011-11-11 2012-02-16 2012-03-14 2012-05-11 2012-08-10 2012-11-09 2013-02-14 2013-03-13 2013-05-10 2013-08-09 \
+         2013-11-08 2014-01-01; do python3 retro/tools/firewall.py $c NVDA; done
+```
+
+Read: the 16 earnings releases from Q4 FY10 to Q3 FY14 with the CFO commentaries filed beside them, the FY2010-FY2013 10-Ks (Items 1,
+1A, 5, 6, 7 and 8), the 10-Qs of Q1 FY11 to Q3 FY14 for year-ago inventories and their revenue words, and every other 8-K of February
+2010 to January 2014 by its items and exhibits, all read directly, none delegated. The source ids are `NV39`-`NV71`. 304 more strings
+were checked with `verbatim.py`, each against its own filing (562 with the 2008-2009 batch's 258, all found). Decided on 2026-11-13,
+before any 2010-2013 model was built or any 2010-2013 outcome computed:
+
+- **Release timing.** Every earnings 8-K was accepted after the close (16:21-16:50 ET) and is dated the next trading day, except two
+  accepted before the open of their own day: Q3 FY11 (2010-11-12 06:11 ET; the release is dated Nov 11) and Q1 FY13 (2012-05-11 07:32
+  ET). Twelve of the sixteen fall on a Friday and meet their own close (2010-05-14, 2010-08-13, 2010-11-12, 2011-05-13, 2011-08-12,
+  2011-11-11, 2012-05-11, 2012-08-10, 2012-11-09, 2013-05-10, 2013-08-09, 2013-11-08); the four Q4 releases are dated a Thursday and
+  put the week's date on the Friday (2010-02-19, 2011-02-18, 2012-02-17, 2013-02-15). The four 10-Ks were accepted after the close
+  (16:33-19:16 ET) and are dated the next trading day: 2010-03-18, 2011-03-17, 2012-03-14, 2013-03-13.
+- **FY2010 is excluded, as FY2009 is.** The Q4 FY10 release reports a loss of $(0.12) a share for FY2010; its only other figure is the
+  non-GAAP $0.26, which excludes stock-based compensation, which recurs, so no figure excluding only one-offs was published (the AVGO
+  FY2009 and XOM FY2020 rule). FY2010 leaves the EPS history while its revenue and shares stay, its own days (2009-01-26 to 2010-01-31)
+  leave the P/E window from 2010-02-19 ("10-yr ex-FY09 ex-FY10"), and FY08's $1.31 stays the last full year until FY2011 enters with
+  the Q4 FY11 print: FY2011 $0.43 (2011-02-18), FY2012 $0.94 (2012-02-17), FY2013 $0.90 (2013-02-15), each GAAP diluted EPS from its Q4
+  release and then its 10-K. Charges stay in, as published: Q2 FY11 ("Results were impacted by a large inventory write-down and a
+  charge related to a weak die/packaging material set", a loss of $(0.25) a share) and Q4 FY11 (the $57.0 million settlement benefit of
+  the Intel cross license of 2011-01-10). No year from FY2011 is a loss or a distorted year (the AAPL FY2002 test on the items the
+  releases list besides stock-based compensation and amortization): FY2011's $193.9 million net warranty charge (FY2011 10-K) is under
+  its $253.1 million net income, which also carries the $57.0 million settlement benefit; FY2012's $27.6 million (a legal settlement and
+  acquisition costs) against $581.1 million; FY2013's $39.1 million (acquisition costs and a contribution expense) against $562.5
+  million. The Q2 FY11 inventory write-down is not a listed item: the release calls it "large" and gives no amount; the 10-Q's
+  reserves "approximately $94 million" above the year-ago quarter's would bring FY2011's items to $287.9 million, over its net income
+  (a variant below).
+- **History: four more vintages, the ten fiscal years to the 10-K's year,** each year from the latest filing that reports it. The
+  FY2010 10-K gives FY2006-FY2010 (FY2006 $0.55, FY2007 $0.76, FY2008 $1.31, FY2009 and FY2010 losses, excluded); FY2001 stays from the
+  FY2005 10-K, FY2002 from the FY2006 10-K/A (its `share_basis`), FY2003 from the FY2007 10-K, FY2004 from the FY2008 10-K and FY2005
+  from the FY2009 10-K. The FY2011 10-K adds FY2011 ($0.43) and drops FY2001; the FY2012 10-K adds FY2012 ($0.94) and drops FY2002, so
+  the 10-K/A's share basis no longer reaches the history; the FY2013 10-K adds FY2013 ($0.90) and drops FY2003. Revenue and diluted
+  shares likewise. The window has run the full ten years since December 2008.
+- **Current-FY EPS: still no EPS guide in any filing,** so the last full year in the history stands (the rollover rule): FY08's $1.31
+  for FY10E and FY11E (2010-01-08 to 2011-02-11), FY11's $0.43 for FY12E, FY12's $0.94 for FY13E, FY13's $0.90 for FY14E.
+- **Guides: the next quarter's revenue, from every release,** read against the year-ago quarter from its own release, rounded to 0.1:
+  - Q1 FY11 to Q4 FY12, as growth on the quarter just reported (the 2009 encoding): "Revenue is expected to be flat from the fourth
+    quarter." (Q4 FY10; "flat" is 0, the RCL and LOW rule: $982.5M against Q1 FY10's $664.2M, +47.9%); "down seasonally 3 to 5 percent"
+    (Q1 FY11: +22.6% to +25.1%); "up 3 to 5 percent" (Q2 FY11: -7.5% to -5.7%; Q3 FY11: -11.5% to -9.8%); "up 6 to 8 percent" (Q4 FY11:
+    -6.2% to -4.4%); "up 4 to 6 percent" (Q1 FY12: +23.3% to +25.7%; Q2 FY12: +25.3% to +27.7%); "relatively flat, plus or minus two
+    percent" (Q3 FY12: +17.9% to +22.7%);
+  - from the Q4 FY12 release the outlook is a dollar level, read against the year-ago quarter directly (the AAPL and AVGO level rule),
+    a builder change (`level_stated`, and `level_center_m` with `level_pm_pct` for "a figure, plus or minus a percent"): "between $900
+    million and $930 million" (Q1 FY13: -6.4% to -3.3%), "$990 million and $1.05 billion" (Q2 FY13: -2.6% to +3.3%), "$1.15 billion and
+    $1.25 billion" (Q3 FY13: +7.9% to +17.2%), "$1.025 billion and $1.175 billion" (Q4 FY13: +7.5% to +23.3%), "$940 million, plus or
+    minus two percent" (Q1 FY14: -0.4% to +3.7%), $975 million (Q2 FY14: -8.5% to -4.8%), $1.050 billion (Q3 FY14: -14.5% to -11.1%)
+    and $1.05 billion (Q4 FY14: -7.0% to -3.2%), each plus or minus two percent. From the Q1 FY14 release the outlook is stated only in
+    the CFO commentary filed with it (an exhibit to the same 8-K), so the guide is the commentary's;
+  - the 10-Qs of Q2 and Q3 FY11 put the next quarter in words ("We expect revenue to increase slightly"), display only and after the
+    numeric guide (the ACN rule); the FY2011 10-K and the Q1-Q3 FY12 10-Qs repeat the releases' numbers and add nothing; the FY2010 and
+    FY2012-FY2013 10-Ks and the other 10-Qs state no outlook;
+  - each outlook's gross margin (44-45% for Q1 FY11 to "approximately 54.2 percent" for Q4 FY14) and operating expenses are display
+    only, as before; no margin step.
+- **Dividends,** each from the first filing that states the rate: none to 2012-11-08 (each 10-K: "We have never paid and do not expect
+  to pay cash dividends for the foreseeable future."); $0.075 a quarter from the 8-K of 2012-11-08 (accepted 16:24 ET, dated
+  2012-11-09: "The initial quarterly cash dividend of $0.075 per share of common stock outstanding will be payable on December 14,
+  2012"), restated by the FY2013 10-K ("equivalent to $0.30 per share on an annual basis"); $0.085 from the Q3 FY14 release ("a 13
+  percent increase in the quarterly cash dividend to $0.085 per share"). The capital return sentences (the buyback extension through
+  December 2014, the at least $750 million of fiscal 2014 and its accelerated repurchase, the $1 billion of fiscal 2015) are display only.
+- **Signals,** from each release's statements as before, each against the year-ago quarter in the same release; inventories against the
+  year-ago quarter's end from that quarter's 10-Q (a Q4's from the release's prior year-end column).
+- **Durability: CYCLICAL, risk 2, unchanged.** Each 10-K keeps "Our business is cyclical in nature and has experienced severe
+  downturns" (FY2010-FY2013 wording). The "why" quotes the latest 10-K: NVIDIA invented the GPU in 1999 (FY2010, FY2011), "is known to
+  millions around the world for creating the graphics chips used in personal computers" (FY2012), "is a visual computing company"
+  (FY2013); the market "intensely competitive" with "declining average selling prices"; and the CPU and GPU integrated "on the same chip
+  or same package" by Intel and AMD (Fusion and Arrandale in the FY2010 10-K, Fusion and Sandy Bridge in FY2011-FY2012, "AMD's APU
+  product and Intel's CPUs with integrated graphics" in FY2013). No theme in `taxonomy_eras.json` covers that integration, so the words
+  stay in the "why" (the PEP obesity rule). CLOUD is live from 2012-10-30, scoped to public cloud displacing on-premise hardware; the
+  FY2013 10-K names the cloud only as a market NVIDIA targets with its own GRID products ("We target four market segments - Gaming,
+  Enterprise, Mobile and Cloud"), the AVGO FY2012 reading, so no event is added and the watch list stays empty through 2013.
+- **Segment bridge** (display only): the FY2010 10-K's GPU, MCP, Professional Solutions, Consumer Products and All Other; the FY2011 and
+  FY2012 10-Ks' GPU, Professional Solutions and Consumer Products; the FY2013 10-K's GPU, Tegra Processor and All Other.
+- **Adds nothing:** the Rambus memory controller license (2010-08-13: "NVIDIA's financial outlook and gross margin for the third
+  quarter of 2011 as set forth in its earnings release ... contemplated the impact"; terminated by the settlement of 2012-02-09), the
+  Sobrato lease extensions (2010-08-24), the Intel cross license and settlement (2011-01-10; its effects are in the prints), the
+  accelerated share repurchase (2013-05-14; in the share counts), the $1.5 billion of 1.00% convertible notes due 2018 (2013-12-02: no
+  guided number; the balance-sheet line, display only, stays the Q3 FY14 release's to the end of 2013), the bylaws (2011-05-24,
+  2013-11-14), and the officer, director, compensation and vote 8-Ks (2010-05-05, 2010-09-13, 2011-03-15, 2011-03-25, 2011-05-24,
+  2011-10-14, 2011-12-14, 2012-03-28, 2013-03-05, 2013-04-02, 2013-05-21, 2013-07-23, 2013-09-16).
+
+Controls: altering one value of each print (its quarter EPS, and each Q4 print's full-year revenue), guide (its quote or words),
+vintage (its last EPS year and its dividend note), dividend (its rate), split (its label) and the listing (its exchange), rerun over all
+314 dates, changes no date before its publication and changes the first weekly date on or after it: 76 of 78; the other 2 are the Q1
+and Q2 FY08 prints' quarter EPS, superseded before any built date. The Q4 prints' full-year revenue lives exactly from each print to
+its 10-K (2010-02-19 to 2010-03-12, 2011-02-18 to 2011-03-11, 2012-02-17 to 2012-03-09, 2013-02-15 to 2013-03-08); the 8-K dividend
+lives to the FY2013 10-K, which restates it (2012-11-09 to 2013-03-08). A scan of the 314 models for the source ids, titles, notes,
+quotes, words and figures (four significant digits or more) of every later fact finds 599 of 258,323 pairs before publication (after
+dropping 711 strings an earlier fact or the engine already carries), none a leak: 245 are the guides' fiscal years (2011-2014, as
+integers), which every model carries in its dates; 208 are four clauses of the FY2012 10-K's sentence on Intel's and AMD's platforms,
+which the FY2011 10-K already states with curly apostrophes, so the scan cuts it differently (2011-03-18 to 2012-03-09); 34 are "$0.30
+per share on an annual basis" of the Q3 FY14 release, already in the FY2013 10-K's dividend sentence (2013-03-15 to 2013-11-01); 16
+are year-end cash balances each Q4 release had already published, to three decimals, before its 10-K ($1.255B, $1.728B, $2.491B,
+$3.728B); 16 are coincidences of 2009-2011 prices with later figures (16.58, Q4 FY13's operating margin, a 52-week high in 14 models;
+the closes 16.22 and 17.12); and the 80 of 2008-2009 (a template phrase, 32; the FY2008 10-K's FY2004-FY2007 diluted shares, 48).
+Rebuilding the 105 dates of 2008-2009 gives the same models byte for byte; no file another ticker's builder reads has changed (the
+firewall's change adds fields to NVDA's own planted guide). The firewall runs on the committed build; its result follows that
+commit. All 209 dates pass `retro_tool run`; their only
+warnings are digits of decimals (FY01 EPS 0.2067 to 2011-03-11, Q3 FY13 revenue $1.2041B), the P/E window's count of trading days
+(2013, 2014) and fiscal years in filings' words ("fiscal year 2011" in the 10-Q words, "through December 2014" for the buyback,
+"fiscal 2014" and "fiscal 2015" for the capital return plans).
+
+Seen in the build (method behaviour, not tuned):
+- **CHEAP on 190 dates, FAIR on 2, RICH on 17;** legacy tier BUY on 165, ACCUMULATE on 23, WATCHLIST on 9 and AVOID on 12.
+- **2010: CHEAP and BUY on all 52 dates, on FY08's $1.31.** To 2010-02-12 the stock ($15.39-18.55) is 11.7-14.2x, the 9th-12th
+  percentile of a window whose median is 30.6-31.0x, 6-22% under a 15x and then 17x floor ($19.65, $22.27). From the Q4 FY10 print
+  FY2010's days leave the window (median 35.2x, falling to 28.7x by December) and the floor is 18x ($23.58): $9.19-17.34 is 7.0-13.2x,
+  the 0th-6th percentile, 26-61% under it, to 2010-11-05, and $13.26-15.40 (10.1-11.8x, 31-44% under) to the end of the year.
+- **BASE follows the guides.** +88.9%/yr on the Q4 FY10 guide (+91.5% on the trough quarter), +45.5% on the Q1 FY11 "flat" (+47.9% YoY;
+  +46.4% on the FY2010 10-K's shares), +22.3% (Q2 FY11), -8.1% (Q3 FY11), -12.2% (Q4 FY11), -7.4% and -6.9% (Q1 FY12), +22.9% (Q2
+  FY12), +24.9% (Q3 FY12), +18.7% (Q4 FY12), -6.7% and -7.2% (Q1 FY13), -2.0% (Q2 FY13), +10.2% (Q3 FY13), +13.0% (Q4 FY13), -0.6% and
+  -0.5% (Q1 FY14), -8.8% (Q2 FY14), -14.9% (Q3 FY14), -7.2% (Q4 FY14). BULL is at least BASE: it equals BASE to 2010-05-07 and is the
+  FY2001-FY2008 CAGR (+30.2%/yr) from 2010-05-14 to the Q4 FY11 print, then +7.6% and +4.9% (to FY11's $0.43) and BASE again from
+  2011-05-13.
+- **2011: FY11's $0.43 turns the call.** The six dates of January-February 2011 ($19.87-25.67, 15.2-19.6x on FY08's $1.31, from 5%
+  under to 22% over a 16x floor) stay CHEAP and BUY. From the Q4 FY11 print (2011-02-18) FY12E is FY11's $0.43: the stock at
+  $17.12-25.63 is 39.8-59.6x (the 59th-83rd percentile of a window whose median is 32.1-32.4x), 110-214% over a 19x floor ($8.17):
+  RICH on the 17 dates to 2011-06-10, AVOID on the 12 to 2011-05-06 (BASE -7.4% and -6.9%), then WATCHLIST and ACCUMULATE once the Q2
+  FY12 guide puts BASE at +22.9%. From 2011-06-17 to 2012-01-27 the class is CHEAP (33 dates; Ratio B 0.54-1.23 on BASE +18.7% to
+  +24.9%) while the stock ($11.73-16.15, 27.3-37.6x, the 38th-59th percentile) is 44-98% over the floor: tier ACCUMULATE on 22, BUY on
+  8 and WATCHLIST on 3.
+- **2012: FAIR on two dates, then CHEAP on FY12's $0.94.** 2012-02-03 and 2012-02-10 ($15.82-15.90, 36.8-37.0x, Ratio B 1.34-1.35) are
+  FAIR and WATCHLIST. From the Q4 FY12 print FY13E is $0.94: $11.38-15.85 is 12.1-16.9x (the 0th-17th percentile of a window whose
+  median falls from 26.8x to 23.5x), from 24% under to 5% over a 16x floor ($15.04): CHEAP and BUY on the 46 dates to the end of the
+  year. The FY2012 10-K drops FY2002, so BEAR is the FY2004 dip (-10.0%/yr, $0.10 to $0.09 on the 2012 basis) instead of the FY2003
+  fall (-64.3%/yr), and the BEAR price rises from $1.88 to $11.86; BULL is the FY2003-FY2012 CAGR (+28.3%/yr), XBULL the FY2004-FY2006
+  run (+147.2%/yr) throughout. Ratio B is 0.01-0.07 from 2012-03-16.
+- **2013: CHEAP and BUY on all 53 dates.** The floor falls to 14x ($13.16 on FY12's $0.94, then $12.60 on FY13's $0.90); the stock
+  ($12.17-16.17) is 12.9-18.0x (the 2nd-44th percentile of a window whose median falls from 23.4x to 19.7x), from 8% under to 28% over
+  the floor. The FY2013 10-K makes BEAR the FY2013 dip itself (-4.3%/yr, $0.94 to $0.90) and BULL the FY2004-FY2013 CAGR (+29.2%/yr);
+  BASE is +13.0%/yr to 2013-02-08 and -0.5% to -14.9%/yr from the Q4 FY13 print; Ratio B is 0.02-0.17.
+- **The proxy composite** is 2.65 on Q3 FY10, 3.50 on Q4 FY10 (revenue +104.2%, gross margin +1,521bp, inventories -142.7pp against
+  revenue, operating margin +5,006bp), 3.20 on Q1 FY11, 2.00 on Q2 and Q3 FY11, 2.30 on Q4 FY11, 2.50 on Q1 FY12, 3.00 on Q2 FY12, 2.50
+  on Q3 FY12, 2.35 on Q4 FY12, 2.00 on Q1 FY13, 2.15 on Q2 FY13, 2.30 on Q3 FY13, 2.45 on Q4 FY13, 2.35 on Q1 FY14, 2.15 on Q2 FY14 and
+  2.00 on Q3 FY14.
+- **Robustness:** all eight variants agree on 165 of 209 dates, seven on 37 (33 from 2011-03-11 to 2011-12-30, four in January 2012),
+  six on 6 and five on one (2012-02-03).
+
+How far each call moves the classes (the 314 dates rebuilt with one encoding changed and classified offline; no outcome consulted; the
+2008-2009 counts are as before):
+- FY2009 and FY2010 kept at the company's non-GAAP $0.53 and $0.26 (in the history and the window, and FY10E-FY11E on them): 63 classes
+  in 2010-2012 (49 in 2010, 12 in 2011 to 2011-12-02, 2 in February 2012; CHEAP to FAIR or RICH, FAIR to RICH), 54 tiers;
+- every signal at its BEAR value: 50 classes in 2011-2013 (29 from 2011-06-17 to 2011-12-30, 6 from 2012-01-06 to 2012-02-10, 15 from
+  2013-09-13 on; CHEAP to FAIR or RICH), no tier; at its XBULL value: none;
+- the 10-K/A's FY2002 on its filing date's share basis (FY02 $0.56 instead of $0.28, which sets BEAR to the FY2012 10-K): 23 classes in
+  2011-2012 (2011-06-17 to 2012-02-10), 38 tiers;
+- FY2011 excluded as a distorted year (the inventory reserves counted with the warranty charge, so FY08's $1.31 carries FY12E): 19
+  classes (the 17 RICH dates of 2011-02-18 to 2011-06-10 and the 2 FAIR of February 2012, to CHEAP), 44 tiers;
+- the next-quarter guides unused (the latest quarter's revenue growth throughout): 10 classes (8 from 2011-06-17 to 2011-08-05, CHEAP to
+  FAIR or RICH; 2012-02-03 and 2012-02-10, FAIR to CHEAP), 19 tiers;
+- the dollar-level guides unused (the latest quarter's growth from the Q4 FY12 print), "flat" read as words (the Q1 FY11 guide unused),
+  and rule T with calendar 1997: none.
+The CHEAP calls of 2010 and of 2012-2013 rest on GAAP EPS of a past year (FY08's $1.31; FY12's $0.94, FY13's $0.90) against the
+stock's own P/E history and calendar-year lows; the RICH calls of early 2011 on FY11's $0.43 kept at GAAP (all 17 move if FY2011 is
+excluded) and on the guides of Q4 FY11 and Q1 FY12; the CHEAP calls of mid-2011 on Ratio B with the Q2-Q4 FY12 guides, and they move
+with the signals, the FY2002 share basis and the guides.
+
+Judgement calls that could carry hindsight:
+- FY2010 excluded as a loss, as FY2009, rather than kept at the company's non-GAAP $0.26, so FY08's $1.31 carries 2010 (63 classes in
+  2010-2012 on the other reading);
+- FY2011 kept at GAAP, the inventory write-down the Q2 FY11 release calls large not counted as a listed one-off (19 classes, all the
+  RICH and FAIR calls, on the other reading);
+- GAAP EPS rather than the company's non-GAAP figure, and the Q2 FY11 charges and the Q4 FY11 Intel benefit left in as published;
+- "flat" read as 0% growth and the dollar levels read against the year-ago quarter (no class moves either way), and the guides used at
+  all (10 classes);
+- the CFO commentary's outlook taken as the release's from Q1 FY14 (filed with the same 8-K);
+- the FY2002 share basis, as in 2008-2009 (23 classes in 2011-2012);
+- the signals and CYCLICAL, and no theme for the GPU integrated into the CPU or for the cloud as NVIDIA's own market (50 classes at
+  BEAR).
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -14890,7 +15070,11 @@ What the gates enforce:
   to IT services; GENAI from 2022-11-30), so its watch list is empty through 2009 ("NVDA"). From its FY2008 10-K (2008-03-24) a risk
   factor names "the possibility of successfully integrating a central processing unit, or CPU, and a GPU on the same chip, as evidenced by
   AMD's announcement of its Fusion processor project"; no theme in the registry covers a GPU absorbed into the CPU, so the words stay in
-  the durability "why" (the PEP obesity rule), and whether the registry should carry such a theme is left to the owner.
+  the durability "why" (the PEP obesity rule), and whether the registry should carry such a theme is left to the owner. It stays empty
+  through 2013: the FY2010-FY2013 10-Ks keep the integration risk (Arrandale, Sandy Bridge, then "AMD's APU product and Intel's CPUs
+  with integrated graphics"), and CLOUD (from 2012-10-30, public cloud displacing on-premise hardware) is not NVIDIA's substitution
+  story: the FY2013 10-K names the cloud only as a market it targets with its own GRID products ("We target four market segments -
+  Gaming, Enterprise, Mobile and Cloud"), the AVGO FY2012 reading ("NVDA 2010-2013").
 
 ## Workflow
 

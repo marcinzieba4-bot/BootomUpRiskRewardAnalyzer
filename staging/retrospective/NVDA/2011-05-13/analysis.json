@@ -1,0 +1,272 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "NVDA",
+ "company": "NVIDIA Corporation",
+ "as_of": "2011-05-13",
+ "price_date": "2011-05-13",
+ "price": 18.26,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); semiconductor signals with NVIDIA's rule-T thresholds; the listing rule (NVDA listed 1999-01-22)",
+ "pit_profile": {
+  "kind": "CYCLICAL",
+  "risk": 2,
+  "why": "'NVIDIA Corporation invented the graphics processing unit, or GPU, in 1999.' 'The market for our products is intensely competitive and is characterized by rapid technological change, evolving industry standards and declining average selling prices.' 'We expect substantial competition from both Intel’s and AMD’s strategy of selling platform solutions, including integrating a CPU and a GPU on the same chip or same package, as evidenced by AMD’s announcement of its Fusion processors and Intel’s announcement of its family of CPUs codenamed Sandy Bridge.' 'Our business is cyclical in nature and has experienced severe downturns that have, and may in the future harm our business and financial results.' (FY2011 10-K); CYCLICAL on the 10-K's own words for its business (BKR's 'Our business is cyclical' reading); no theme in taxonomy_eras.json covers a CPU and a GPU integrated on one chip, so those words stay here (the PEP obesity rule)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "TOO MUCH CYCLE RISK",
+  "quality_label": "✕ TOO MUCH CYCLE RISK",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "CYCLICAL",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "'NVIDIA Corporation invented the graphics processing unit, or GPU, in 1999.' 'The market for our products is intensely competitive and is characterized by rapid technological change, evolving industry standards and declining average selling prices.' 'We expect substantial competition from both Intel’s and AMD’s strategy of selling platform solutions, including integrating a CPU and a GPU on the same chip or same package, as evidenced by AMD’s announcement of its Fusion processors and Intel’s announcement of its family of CPUs codenamed Sandy Bridge.' 'Our business is cyclical in nature and has experienced severe downturns that have, and may in the future harm our business and financial results.' (FY2011 10-K); CYCLICAL on the 10-K's own words for its business (BKR's 'Our business is cyclical' reading); no theme in taxonomy_eras.json covers a CPU and a GPU integrated on one chip, so those words stay here (the PEP obesity rule). cyclical (obsolescence risk 2/5); price rich; Ratio B 1.20x; +124% to EPP floor; model-vs-market gap +0.56; conservative 2yr +10%.",
+  "theme": null
+ },
+ "legacy_signal_short": "WATCHLIST",
+ "legacy_signal": "◐ WATCHLIST",
+ "metrics": {
+  "ratio_b": 1.2,
+  "ratio_b_fmt": "1.20x",
+  "epp": 8.17,
+  "epp_gap_pct": 123.5,
+  "epp_adj": -0.2,
+  "proxy_composite": 2.5,
+  "sca": 0.168,
+  "adj_composite": 2.467,
+  "market_composite": 1.91,
+  "adj_gap": 0.56,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 10.2,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.05,
+    "pe": 17.1,
+    "price": 0.86,
+    "desc": "EPS -64.3%/yr (worst year FY02-FY11 ex-FY09 ex-FY10, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 0.65,
+    "pe": 32.4,
+    "price": 21.06,
+    "desc": "EPS +22.9%/yr (Q2 FY12 guide YoY + margin + buyback); P/E at its 10-yr ex-FY09 ex-FY10 median"
+   },
+   "BULL": {
+    "eps": 0.65,
+    "pe": 50.3,
+    "price": 32.7,
+    "desc": "EPS +22.9%/yr (FY02-FY11 ex-FY09 ex-FY10 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 2.63,
+    "pe": 77.6,
+    "price": 204.09,
+    "desc": "EPS +147.2%/yr (best 2-yr run FY02-FY11 ex-FY09 ex-FY10, at least BULL); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 1.2,
+   "epp_gap_pct": 123.5,
+   "adj_gap": 0.56,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 10.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.53,
+   "epp_gap_pct": 123.5,
+   "adj_gap": 1.06,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 10.2,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 6.24,
+   "epp_gap_pct": 123.5,
+   "adj_gap": 0.12,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 10.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 1.13,
+   "epp_gap_pct": 123.5,
+   "adj_gap": 0.6,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 10.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 1.29,
+   "epp_gap_pct": 123.5,
+   "adj_gap": 0.52,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 10.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 1.2,
+   "epp_gap_pct": 123.5,
+   "adj_gap": 0.86,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 10.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 1.2,
+   "epp_gap_pct": 93.0,
+   "adj_gap": 0.66,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 10.2,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 1.2,
+   "epp_gap_pct": 123.5,
+   "adj_gap": 0.67,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 10.2,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP",
+  "FAIR",
+  "RICH"
+ ],
+ "summary": "NVDA (retrospective, 2011-05-13) ◐ WATCHLIST — Ratio B 1.20x (95.3% downside to Bear $0.86 / +79.1% upside to Bull $32.70) | Adj composite 2.47 vs market 1.91: gap +0.56 [UNDERVALUED] | +124% above the EPP floor $8.17 (19x FY12E $0.43) | Conservative 2-yr case: +10.2% total (+5.1%/yr) | At 42.5x FY12E the 15% hurdle price $24.15 sits between the BASE and BULL cases; revenue -4.0% YoY in Q1 FY12, forward revenues +23.3-25.7% (Q2 FY12 revenue guide (Q1 FY12 release)); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "NV40",
+   "published": "2011-03-17",
+   "filed": "accepted 2011-03-16 16:33 ET, after the close; dated the next trading day",
+   "title": "NVIDIA FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581011000015/fy2011form10k.htm",
+   "supports": "selected financial data fiscal 2007-2011; statements, segments, cash flows, risk factors (the FY2011 history vintage)"
+  },
+  {
+   "id": "NV9",
+   "published": "2006-11-29",
+   "filed": "accepted 2006-11-29 06:11 ET, before the open",
+   "title": "NVIDIA FY2006 10-K/A (restatement)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000119312506243224/d10ka.htm",
+   "supports": "restated selected financial data fiscal 2002-2006 (FY2002 EPS, revenue, diluted shares, on the Original Filing's share basis); restated statements and inventories (rule T)"
+  },
+  {
+   "id": "NV10",
+   "published": "2007-03-16",
+   "filed": "accepted 2007-03-16 14:12 ET, during the session",
+   "title": "NVIDIA FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581007000008/fy2007annualreportonform10-k.htm",
+   "supports": "selected financial data fiscal 2003-2007; statements, segments, cash flows, risk factors (the FY2007 history vintage); the 2006 split"
+  },
+  {
+   "id": "NV11",
+   "published": "2008-03-24",
+   "filed": "accepted 2008-03-21 16:23 ET, after the close; dated the next trading day",
+   "title": "NVIDIA FY2008 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581008000011/fy2008annualreportonform10k.htm",
+   "supports": "selected financial data fiscal 2004-2008; statements, segments, cash flows, risk factors (the FY2008 history vintage)"
+  },
+  {
+   "id": "NV12",
+   "published": "2009-03-13",
+   "filed": "accepted 2009-03-13 09:02 ET, before the open",
+   "title": "NVIDIA FY2009 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581009000013/fy2009form10k.htm",
+   "supports": "selected financial data fiscal 2005-2009; statements, segments, cash flows, risk factors (the FY2009 history vintage); the Q1 FY10 revenue words"
+  },
+  {
+   "id": "NV39",
+   "published": "2010-03-18",
+   "filed": "accepted 2010-03-17 19:16 ET, after the close; dated the next trading day",
+   "title": "NVIDIA FY2010 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581010000006/fy2010form10k.htm",
+   "supports": "selected financial data fiscal 2006-2010; statements, segments, cash flows, risk factors (the FY2010 history vintage)"
+  },
+  {
+   "id": "NV1",
+   "published": "1999-04-29",
+   "filed": "filed 1999-04-29 (EDGAR gives the filing date only)",
+   "title": "NVIDIA FY1999 10-K405",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000092962499000772/0000929624-99-000772.txt",
+   "supports": "Item 5: 'Public trading of our stock began on January 22, 1999.' (the listing)"
+  },
+  {
+   "id": "NV50",
+   "published": "2011-02-17",
+   "filed": "accepted 2011-02-16 16:22 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q4 FY11 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581011000006/earningrelease.htm",
+   "supports": "Q4 FY11 and FY2011 statements and balance sheet; the Q1 FY12 outlook"
+  },
+  {
+   "id": "NV48",
+   "published": "2010-11-12",
+   "filed": "accepted 2010-11-12 06:11 ET, before the open",
+   "title": "NVIDIA Q3 FY11 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581010000038/q311earningsrelease.htm",
+   "supports": "Q3 FY11 statements and balance sheet; the Q4 FY11 outlook"
+  },
+  {
+   "id": "NV51",
+   "published": "2011-05-13",
+   "filed": "accepted 2011-05-12 16:25 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q1 FY12 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581011000022/earningsrelease.htm",
+   "supports": "Q1 FY12 statements and balance sheet; the Q2 FY12 outlook"
+  },
+  {
+   "id": "NV45",
+   "published": "2010-05-24",
+   "filed": "accepted 2010-05-21 16:36 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q1 FY11 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581010000018/q111form10q.htm",
+   "supports": "inventories at May 2, 2010 (the year-ago quarter of Q1 FY12)"
+  },
+  {
+   "id": "NV46",
+   "published": "2010-08-13",
+   "filed": "accepted 2010-08-12 16:24 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q2 FY11 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581010000022/q211earningrelease.htm",
+   "supports": "Q2 FY11 statements and balance sheet; the Q3 FY11 outlook"
+  },
+  {
+   "id": "NV20",
+   "published": "2007-08-10",
+   "filed": "accepted 2007-08-09 16:47 ET, after the close; dated the next trading day",
+   "title": "NVIDIA 8-K: three-for-two stock split",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581007000042/exhibit.htm",
+   "supports": "the three-for-two split, distributed on or about September 10, 2007"
+  },
+  {
+   "id": "Y0",
+   "published": "2011-05-13",
+   "title": "Yahoo Finance daily prices, NVDA and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/NVDA/history",
+   "supports": "close $18.26 as traded on AS_OF (Yahoo's split-adjusted close x40), 52-week range, realized vol, beta, the 10-yr ex-FY09 ex-FY10 P/E distribution from the listing on 1999-01-22"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-13"
+}

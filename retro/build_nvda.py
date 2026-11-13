@@ -29,6 +29,15 @@ restates the Original Filing without reflecting later events, so its FY2002 EPS 
 The kind is CYCLICAL on the 10-Ks' own "Our business is cyclical in nature" (the BKR reading); no disruption theme in
 taxonomy_eras.json is live for a GPU maker in 2008-2009, so the builder refuses events until a theme encoding is decided.
 
+From 2010 on (decided on 2026-11-13 before any 2010-2013 date was built or scored; retro/README.md, "NVDA 2010-2013"):
+  - FY2010 lost $(0.12) and is excluded like FY2009, so both leave the EPS history and the P/E window and FY2008 stays the last full
+    year until FY2011 enters with the Q4 FY11 print;
+  - from the Q4 FY12 release the next quarter's revenue is guided as a dollar level, a range or a figure plus or minus a percent
+    ('level_stated', 'level_center_m', 'level_pm_pct'), read against the year-ago quarter directly (the AAPL and AVGO level rule);
+    "flat" is 0 (the RCL and LOW rule);
+  - the quarterly dividend from the 8-K of 2012-11-08 ($0.075) and the Q3 FY14 release ($0.085), each from the first filing that
+    states it.
+
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
 is the first trading day after it. NVIDIA released after the close, so a print is dated the next trading day; on a Friday that is
 the week's last trading day, and the print meets its close (public before the open; the AVGO rule).
@@ -38,6 +47,7 @@ Output goes to staging/retrospective/NVDA until the series is added to the archi
 Usage
   python3 retro/build_nvda.py --weekly 2008-01-01 2008-12-31
   python3 retro/build_nvda.py --weekly 2009-01-05 2009-12-31
+  python3 retro/build_nvda.py --weekly 2010-01-04 2013-12-31
   python3 retro/build_nvda.py 2008-02-15
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/NVDA/<AS_OF>
 """
@@ -60,9 +70,10 @@ FACTS = os.path.join(HERE, "facts", "NVDA.json")
 ENGINE = os.path.join(HERE, "templates", "nvda_engine.py.tmpl")
 OUT = os.path.join(ROOT, "staging", "retrospective", "NVDA")
 # the guide fields this builder has an encoding for; any other field needs its encoding decided first (a next-quarter revenue guide
-# stated as sequential growth, read against the year-ago quarter; or words, display only)
+# stated as sequential growth, or from the Q4 FY12 release as a dollar level, a range or a figure plus or minus a percent
+# ('level_stated', 'level_center_m', 'level_pm_pct'), each read against the year-ago quarter; or words, display only)
 GUIDE_KEYS = {"fy", "published", "source", "doc", "quarter", "seq_pct", "base_quarter", "base_sales_m", "level_m", "prior_label",
-              "prior_sales_m", "prior_source", "yoy_pct", "quote", "display", "words"}
+              "prior_sales_m", "prior_source", "yoy_pct", "quote", "display", "words", "level_stated", "level_center_m", "level_pm_pct"}
 # rule T, the engine's signal thresholds: (BEAR, BASE, BULL, XBULL); the builder checks the fact sheet against them
 ENGINE_THRESHOLDS = {"revenue": (-43, -5, 34, 137), "gross_margin": (-1760, -770, 210, 720), "opex_gap": (47, 22, -2, -47),
                      "inventory_gap": (115, 66, 17, -105), "op_margin": (-2010, -950, 120, 1280)}
@@ -141,7 +152,11 @@ def check_guide(g):
     if "words" in g:              # words only: no figure, display only
         assert not set(g) & {"seq_pct", "level_m", "yoy_pct"}, (g["doc"], "a words-only guide carries no number")
         return
-    lv = [round(g["base_sales_m"] * (1 + s / 100), 2) for s in g["seq_pct"]]
+    if g.get("level_stated"):     # a dollar level: a range as stated, or a figure plus or minus a percent
+        c, pm = g.get("level_center_m"), g.get("level_pm_pct")
+        lv = [round(c * (1 - pm / 100), 2), round(c * (1 + pm / 100), 2)] if c is not None else g["level_m"]
+    else:
+        lv = [round(g["base_sales_m"] * (1 + s / 100), 2) for s in g["seq_pct"]]
     assert lv == g["level_m"] and lv[0] <= lv[1], (g["doc"], lv)
     assert [round((x / g["prior_sales_m"] - 1) * 100 + 0.0, 1) for x in lv] == g["yoy_pct"], (g["doc"], "yoy")
 
@@ -255,7 +270,7 @@ def build(as_of, facts, raw, spx, engine, out):
     # ── forward revenue growth: the latest numeric guide for the quarter after the latest print, as growth on the year-ago quarter;
     # with none in scope, the latest quarter's revenue growth (the UNP rule); revenue words are display only ──
     live = [g for g in facts["guides"] if g["published"] <= as_of and g.get("quarter") == next_q]
-    qg = [g for g in live if "seq_pct" in g]
+    qg = [g for g in live if "seq_pct" in g or g.get("level_stated")]
     words = [g for g in live if "words" in g]
     w = words[-1] if words else None
     if qg:
@@ -263,15 +278,23 @@ def build(as_of, facts, raw, spx, engine, out):
         fwd = list(g["yoy_pct"])
         lvl = f"${g['level_m'][0]:,.1f}M" if g["level_m"][0] == g["level_m"][1] else f"${g['level_m'][0]:,.1f}M-${g['level_m'][1]:,.1f}M"
         sg = lambda x: f"{x:+g}%" if x else "0%"
-        seq = sg(g["seq_pct"][0]) if g["seq_pct"][0] == g["seq_pct"][1] else f"{sg(g['seq_pct'][0])} to {sg(g['seq_pct'][1])}"
+        seq = (None if g.get("level_stated") else
+               sg(g["seq_pct"][0]) if g["seq_pct"][0] == g["seq_pct"][1] else f"{sg(g['seq_pct'][0])} to {sg(g['seq_pct'][1])}")
         later_words = (f"; restated in words in the {w['doc']}: '{w['words']}' (the last numeric range stands, the ACN rule)"
                        if w and w["published"] > g["published"] else "")
         fwd_label = f"{next_q} revenue guide ({g['doc']})"
         fwd_short, fwd_period = f"{next_q} guide YoY", next_q
-        guide_text = (f"{next_q} outlook ({g['doc']}): revenue {seq} on {g['base_quarter']}'s ${g['base_sales_m']:,.1f}M ('{g['quote']}'), "
-                      f"i.e. {lvl} against {g['prior_label']}'s ${g['prior_sales_m']:,.1f}M: {_range(fwd)} YoY; display only: {g['display']}"
-                      f"{later_words}; no fiscal-year revenue, EPS or margin guide")
-        cat3 = f"(3) The {next_q} guide — {seq} on {g['base_quarter']} ({_range(fwd)} YoY): NVIDIA guides one quarter at a time, in revenue"
+        if g.get("level_stated"):     # a dollar level, read against the year-ago quarter directly (the AAPL and AVGO rule)
+            stated = (f"${g['level_center_m']:,.1f}M ±{g['level_pm_pct']:g}%, i.e. {lvl}" if g.get("level_center_m") is not None else lvl)
+            guide_text = (f"{next_q} outlook ({g['doc']}): revenue {stated} ('{g['quote']}') against {g['prior_label']}'s "
+                          f"${g['prior_sales_m']:,.1f}M: {_range(fwd)} YoY; display only: {g['display']}{later_words}; "
+                          "no fiscal-year revenue, EPS or margin guide")
+            cat3 = f"(3) The {next_q} guide — revenue {stated} ({_range(fwd)} YoY): NVIDIA guides one quarter at a time, in revenue"
+        else:
+            guide_text = (f"{next_q} outlook ({g['doc']}): revenue {seq} on {g['base_quarter']}'s ${g['base_sales_m']:,.1f}M ('{g['quote']}'), "
+                          f"i.e. {lvl} against {g['prior_label']}'s ${g['prior_sales_m']:,.1f}M: {_range(fwd)} YoY; display only: {g['display']}"
+                          f"{later_words}; no fiscal-year revenue, EPS or margin guide")
+            cat3 = f"(3) The {next_q} guide — {seq} on {g['base_quarter']} ({_range(fwd)} YoY): NVIDIA guides one quarter at a time, in revenue"
         guide_ids = [g["source"], g["prior_source"]] + ([w["source"]] if later_words else [])
     else:
         fwd = [latest["sales_pct"]] * 2

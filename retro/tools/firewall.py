@@ -67,7 +67,8 @@ whose full-year actuals exclude its own year (BMY 2014-2017), the guide with a d
 their label and the non-GAAP basis note (BMY 2022-2026); NVDA: a print whose revenue, margins, opex and inventory gaps, quarter EPS,
 debt and cash, notes and raw figures are absurd, with absurd full-year actuals for the year after the latest vintage before CUTOFF, a
 later Q4 print whose full-year actuals exclude its own year, a later vintage excluding a year whose per-share figures carry a planted
-share basis, and a later guide for every quarter guided before CUTOFF, in numbers and in words; every
+share basis, and a later guide for every quarter guided before CUTOFF, in numbers and in words (from NVDA 2010-2013, the dollar-level
+fields too); every
 fact sheet with a 'splits' list, SHW's from 2021-2023: a later split on the price data's next split date; a CLOUD event
 from a later 10-K, as for every live theme), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
@@ -254,7 +255,7 @@ GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -99
                "CMCSA": dict(rev_guide_pct=[-50, -40], rev_words="PLANTED", rev_label="PLANTED", note="PLANTED"),
                "NVDA": dict(quarter="Q9 FY99", seq_pct=[-50, -40], base_quarter="PLANTED", base_sales_m=1, level_m=[0.5, 0.6],
                             prior_label="PLANTED", prior_sales_m=1, prior_source="NV1", yoy_pct=[-50, -40], quote="PLANTED",
-                            display="PLANTED"),
+                            display="PLANTED", level_stated=True, level_center_m=0.55, level_pm_pct=9.0),
                "CAT": dict(rev_guide_usd_b=[0.1, 0.2], rev_guide_pct=[-50, -40], rev_growth_base_b=0.01, rev_growth_base_note="PLANTED",
                            eps_growth=[-99, -98], eps_growth_base=0.01, eps_growth_base_note="PLANTED", eps_guide_note="PLANTED",
                            rev_words="PLANTED", note="PLANTED"),
