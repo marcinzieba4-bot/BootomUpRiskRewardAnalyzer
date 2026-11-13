@@ -1,14 +1,17 @@
 # NVDA retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the NVDA weekly dates: 731 from 2008-01-04 to 2021-12-31, all NVIDIA Corporation (Nasdaq: NVDA).
+Patterns seen in `outcome.json` for the NVDA weekly dates: 984 from 2008-01-04 to 2026-11-06, all NVIDIA Corporation (Nasdaq: NVDA).
 They are **labels and hypotheses**: never feed them back into the method or the fact sheet. Each batch was scored only after its
 point-in-time build was committed and pushed (2008-2009: 9510254, firewall result 99a5d02; 2010-2013: 69a20a9, firewall result
-858dc95; 2014-2017: 3464af5, firewall result c0c01f1; 2018-2021: 0b46410, firewall result 6520554); the outcomes were computed on
-2026-11-12 (2008-2009) and 2026-11-13 (2010-2013, 2014-2017, 2018-2021). Every date has its 6-month, 1-, 2- and 3-year horizons (the
-last ends 2024-12-31). Prices are on the AS_OF share basis: no split falls in a horizon of the 2008-2017 dates, so their prices are as
+858dc95; 2014-2017: 3464af5, firewall result c0c01f1; 2018-2021: 0b46410, firewall result 6520554; 2022-2026: d00f7e9, firewall result c67ed96); the outcomes were computed on
+2026-11-12 (2008-2009) and 2026-11-13 (2010-2013, 2014-2017, 2018-2021, 2022-2026). Every date to 2021 has its 6-month, 1-, 2- and
+3-year horizons; the 2022-2026 dates have those that ended by 2026-11-12, the last close in the data: the two-year horizon to the
+entries of 2024-11-08 (149 dates), the three-year to 2023-11-10 (97), the one-year to 2025-11-07 (201) and the six-month to 2026-05-08
+(227). Prices are on the AS_OF share basis: no split falls in a horizon of the 2008-2017 dates, so their prices are as
 traded; the four-for-one split of 2021-07-20 falls in horizons of the 2018-2021 dates and the ten-for-one of 2024-06-10 in the
-three-year horizons of the dates from 2021-06-11, and prices after a split are restated to the AS_OF basis (2018 to mid-2021 dates read
-the 2022 low of $112.27 as $449.08). NVIDIA paid no dividend until November 2012: its first ($0.075 a share on this basis, ex-date 2012-11-20)
+three-year horizons of the dates from 2021-06-11 and in every horizon of the 2022 to mid-2024 dates that ends after it, and prices after a
+split are restated to the AS_OF basis (2018 to mid-2021 dates read the 2022 low of $112.27 as $449.08; 2022 to mid-2024 dates read the
+2025-04-04 close of $94.31 as $943.10). NVIDIA paid no dividend until November 2012: its first ($0.075 a share on this basis, ex-date 2012-11-20)
 falls only inside the three-year horizon of the dates from 2009-11-20 on, and the total returns of later dates include the dividends
 paid inside their horizons. Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is
 +32.2% over two years and +52.1% over three. "Call held" is `call_check_2y`: CHEAP should clear the hurdle or beat the benchmark
@@ -498,3 +501,130 @@ paid inside their horizons. Medians of an even count take the upper middle value
 - **The judgement calls touch few of these dates.** The variants run before any 2018-2021 outcome moved 52 classes at XBULL signals (all
   in 2018-11-16 to 2019-11-08, RICH to FAIR), 5 at BEAR, 15 without the guides and 3 with FY2009 and FY2010 at non-GAAP, and none after
   2020-01-31; the January 2019 update and DURABLE moved none.
+
+## 2022 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier ACCUMULATE | 1 | +756.1% | +756.1% to +756.1% | 1 | 1 | +357.0% | 1 |
+| class FAIR, legacy tier ACCUMULATE | 4 | +715.1% | +467.9% to +725.1% | 4 | 4 | +327.5% | 0 |
+| class RICH, legacy tier ACCUMULATE | 9 | +721.7% | +410.7% to +818.8% | 9 | 9 | +505.2% | 0 |
+| class RICH, legacy tier AVOID | 15 | +226.4% | +80.3% to +315.0% | 15 | 15 | +77.1% | 0 |
+| class RICH, legacy tier BUY | 11 | +861.4% | +640.3% to +1130.2% | 11 | 11 | +564.4% | 0 |
+| class RICH, legacy tier WATCHLIST | 12 | +514.5% | +307.6% to +628.5% | 12 | 12 | +277.8% | 0 |
+| FY22E $1.725 (2022-01-07 to 2022-02-11) | 6 | +167.4% | +80.3% to +201.3% | 6 | 6 | +65.2% | 0 |
+| FY23E $3.85 (2022-02-18 to 2022-12-30) | 46 | +640.3% | +207.3% to +1130.2% | 46 | 46 | +327.5% | 1 |
+| latest print Q3 FY22 (2022-01-07 to 2022-02-11) | 6 | +167.4% | +80.3% to +201.3% | 6 | 6 | +65.2% | 0 |
+| latest print Q4 FY22 (2022-02-18 to 2022-05-20) | 14 | +288.3% | +207.3% to +467.9% | 14 | 14 | +117.9% | 0 |
+| latest print Q1 FY23 (2022-05-27 to 2022-08-19) | 13 | +613.5% | +429.2% to +756.1% | 13 | 13 | +298.9% | 1 |
+| latest print Q2 FY23 (2022-08-26 to 2022-11-11) | 12 | +861.4% | +640.3% to +1130.2% | 12 | 12 | +564.3% | 0 |
+| latest print Q3 FY23 (2022-11-18 to 2022-12-30) | 7 | +736.3% | +696.9% to +841.2% | 7 | 7 | +531.4% | 0 |
+
+- **RICH on 47 dates, FAIR on 4, CHEAP on 1: the call held on one (the CHEAP of 2022-07-01).** Every 2022 entry returned +80.3% to
+  +1,130.2% over two years and beat SPY, which returned +3.2% to +67.2%, by 77.1-1,063.0pp; all 52 cleared the hurdle. The two-year
+  windows run through the low of 2022-10-14 ($112.27) and the rise from mid-2023: the 33 entries to 2022-08-19 sat through drawdowns of
+  37-61% first (their six-month returns were -54.8% to +19.9%), the 19 from the Q2 FY23 print on through 27-31%. The four FAIR dates
+  (2022-05-20 to 2022-07-15) beat SPY by 428-672pp, far outside FAIR's ±15pp. Over three years (to the end of 2025) every 2022 date
+  returned +312.6% to +1,504.3%.
+- **The anchors were low.** FY21's $1.725 stood for FY22E (FY2022 earned $3.85), and FY22's $3.85 for FY23E: FY2023 earned $1.74 with
+  the Arm charge and the inventory charges inside it, so the anchor of 2022 was not low for FY2023 itself, but FY2024 earned $11.93.
+  The RICH calls rested on 29-72x FY22's $3.85 against a decade median of 27-34x; the two-year price landed nearest XBULL on all 52.
+- **The price and the gap ranked the outcome, the composite had the wrong sign.** The entry price ranks the two-year return at Spearman
+  -0.95 (the m12-24 average at -0.93), the EPP gap at -0.96 and -0.94, Ratio B at -0.95 and -0.93; the adjusted gap at -0.50 and -0.56
+  and the proxy composite at -0.88 and -0.92, the wrong signs: the composite fell to 1.35 and 1.15 on the Q2 and Q3 FY23 prints, whose
+  2022 entries returned the most (+640.3% to +1,130.2%).
+- **The legacy tier was BUY on 10 of the 12 dates after the Q2 FY23 print** (Ratio B 0.43-0.95 while the class stayed RICH): those
+  entries returned +640.3% to +1,130.2%, the best of the series.
+
+## 2023 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class FAIR, legacy tier BUY | 6 | +282.2% | +260.7% to +290.7% | 6 | 6 | +212.8% | 0 |
+| class RICH, legacy tier ACCUMULATE | 2 | +906.0% | +688.7% to +906.0% | 2 | 2 | +635.0% | 0 |
+| class RICH, legacy tier AVOID | 31 | +295.0% | +237.3% to +549.4% | 31 | 31 | +298.0% | 0 |
+| class RICH, legacy tier WATCHLIST | 13 | +318.2% | +269.5% to +672.2% | 13 | 13 | +224.8% | 0 |
+| FY23E $3.85 (2023-01-06 to 2023-02-17) | 7 | +549.4% | +453.1% to +906.0% | 7 | 7 | +457.7% | 0 |
+| FY24E $1.74 (2023-02-24 to 2023-12-29) | 45 | +292.0% | +237.3% to +459.7% | 45 | 45 | +219.2% | 0 |
+| latest print Q3 FY23 (2023-01-06 to 2023-02-17) | 7 | +549.4% | +453.1% to +906.0% | 7 | 7 | +457.7% | 0 |
+| latest print Q4 FY23 (2023-02-24 to 2023-05-19) | 13 | +333.8% | +249.0% to +459.7% | 13 | 13 | +350.2% | 0 |
+| latest print Q1 FY24 (2023-05-26 to 2023-08-18) | 13 | +272.4% | +237.3% to +345.8% | 13 | 13 | +200.4% | 0 |
+| latest print Q2 FY24 (2023-08-25 to 2023-11-17) | 13 | +312.0% | +259.2% to +373.0% | 13 | 13 | +216.1% | 0 |
+| latest print Q3 FY24 (2023-11-24 to 2023-12-29) | 6 | +282.2% | +260.7% to +290.7% | 6 | 6 | +212.8% | 0 |
+
+- **RICH on 46 dates and FAIR on 6: the call held on none.** Every entry ($148.59-495.22) returned +237.3% to +906.0% over two years and
+  beat SPY by 196.1-849.0pp; the 45 with a three-year horizon returned +250.6% to +1,160.7%. The 26 dates with Ratio B infinite
+  (2023-02-24 to 2023-08-18, the price above the BULL case on FY23's $1.74 at 132-269x) returned +237.3% to +459.7%.
+- **The anchor was the trough year.** From the Q4 FY23 print FY24E was FY23's $1.74, after the Arm termination cost and the Q2 FY23
+  inventory charges, at 132-417x; FY2024 earned $11.93, 6.9 times as much. The guides of Q2-Q4 FY24 (+60.8% to +237.1% year on year)
+  put BASE at +63.5% to +229.9%/yr and the class at FAIR from 2023-11-24, but the window's P/E band (median 34.6-38.0x) kept RICH
+  until then. The two-year price landed nearest XBULL on 48 dates and BULL on 4.
+- **The price ranked the outcome; Ratio B and the adjusted gap did not.** The entry price ranks the two-year return at -0.59 (the m12-24
+  average at -0.87), the EPP gap the same, Ratio B at -0.21 and -0.03, the adjusted gap at +0.02 and -0.23, the proxy composite at -0.48
+  and -0.71 (the wrong sign again).
+
+## 2024 (52 dates; 45 with a two-year horizon, to 2024-11-08)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class FAIR, legacy tier ACCUMULATE | 10 | +69.9% | +55.1% to +213.2% | 10 | 10 | +52.1% | 0 |
+| class FAIR, legacy tier BUY | 21 | +114.0% | +72.2% to +283.3% | 21 | 21 | +91.7% | 0 |
+| class RICH, legacy tier ACCUMULATE | 5 | +151.9% | +55.8% to +180.7% | 5 | 5 | +120.6% | 0 |
+| class RICH, legacy tier AVOID | 1 of 4 | +26.8% | +26.8% to +26.8% | 0 | 1 | +35.8% | 0 |
+| class RICH, legacy tier WATCHLIST | 8 of 12 | +82.5% | +49.4% to +87.7% | 8 | 8 | +58.4% | 0 |
+| FY24E $1.74 (2024-01-05 to 2024-02-16) | 7 | +205.7% | +151.9% to +283.3% | 7 | 7 | +156.9% | 0 |
+| FY25E $11.93 (2024-02-23 to 2024-06-07) | 16 | +114.0% | +69.9% to +164.8% | 16 | 16 | +93.0% | 0 |
+| FY25E $1.193 (2024-06-14 to 2024-12-27) | 22 of 29 | +72.2% | +26.8% to +124.3% | 21 | 22 | +54.0% | 0 |
+| latest print Q3 FY24 (2024-01-05 to 2024-02-16) | 7 | +205.7% | +151.9% to +283.3% | 7 | 7 | +156.9% | 0 |
+| latest print Q4 FY24 (2024-02-23 to 2024-05-17) | 13 | +115.4% | +83.2% to +164.8% | 13 | 13 | +93.9% | 0 |
+| latest print Q1 FY25 (2024-05-24 to 2024-08-23) | 14 | +72.2% | +55.1% to +114.1% | 14 | 14 | +54.0% | 0 |
+| latest print Q2 FY25 (2024-08-30 to 2024-11-15) | 11 of 12 | +82.5% | +26.8% to +124.3% | 10 | 11 | +58.4% | 0 |
+| latest print Q3 FY25 (2024-11-22 to 2024-12-27) | 6 | no 2-yr outcome yet | | | | | |
+
+- **FAIR on 31 dates and RICH on 21: the call held on none of the 45 scored.** The entries returned +26.8% to +283.3% over two years and
+  beat SPY (+24.0% to +50.0%) by 1.4-233.3pp; 44 cleared the hurdle. The FAIR entries beat SPY by more than FAIR's ±15pp on all 31, the
+  RICH entries beat it on all 14 scored. The four RICH entries of 2024-10-18 to 2024-11-08 ($135.40-147.63, 114-124x FY24's $1.193
+  after the split) returned +26.8% to +55.6%, the weakest of the batch.
+- **The anchor was FY24's $11.93 ($1.193 after the split); FY2025 earned $2.94 after the split, 2.5 times as much.** From the Q4 FY24
+  print every date sat at the 81st-98th percentile of its window, and the guides (+66% to +240% year on year) set BASE at +68.6% to
+  +232.6%/yr. The two-year price landed nearest BULL on 17 dates, BASE on 15 and BEAR on 13: the first year with landings below BULL.
+- **The ranks reversed.** The entry price ranks the two-year return at +0.34 (the m12-24 average at +0.39), the wrong sign; Ratio B at
+  -0.52 and -0.59, the adjusted gap at +0.39 and +0.47 and the proxy composite at +0.39 and +0.46, the right signs for the first time in
+  this batch.
+
+## 2025-2026 (97 dates; no two-year horizon yet)
+
+- **2025: FAIR on 39, RICH on 8, CHEAP on 5.** No 2025 date has a two-year outcome. Over one year (45 dates to 2025-11-07) the entries
+  returned -0.5% to +98.8% (median +35.3%), 41 beat SPY and 42 cleared the 15% hurdle. The five CHEAP dates at the April 2025 low
+  (2025-03-28 to 2025-04-25, $94.31-111.01) returned +52.8% to +98.8% over one year and beat SPY by 37.3-62.5pp.
+- **2026: FAIR on 38 and CHEAP on 7, BUY on all 45.** Only six-month outcomes exist (19 dates to 2026-05-08): -13.0% to +34.7%, median
+  +14.4%, 13 beat SPY. They are too short to read.
+
+## Across 2022-2026 (149 dates with a two-year horizon)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 1 of 13 | +756.1% | +756.1% to +756.1% | 1 | 1 | +357.0% | 1 |
+| class FAIR | 41 of 118 | +123.6% | +55.1% to +725.1% | 41 | 41 | +93.9% | 0 |
+| class RICH | 107 of 122 | +314.4% | +26.8% to +1130.2% | 106 | 107 | +221.2% | 0 |
+| legacy tier BUY | 38 of 126 | +238.2% | +72.2% to +1130.2% | 38 | 38 | +183.5% | 0 |
+| legacy tier ACCUMULATE | 31 of 33 | +410.7% | +55.1% to +906.0% | 31 | 31 | +217.4% | 1 |
+| legacy tier WATCHLIST | 33 of 44 | +341.4% | +49.4% to +672.2% | 33 | 33 | +216.1% | 0 |
+| legacy tier AVOID | 47 of 50 | +273.6% | +26.8% to +549.4% | 46 | 47 | +199.8% | 0 |
+
+- **The call held on 1 of 149 scored dates (225 of 880 with 2008-2021).** RICH held on none of 107, FAIR on none of 41: every scored
+  entry from 2022-01-07 to 2024-11-08 beat SPY over two years, by 1.4-1,063.0pp. As in 2014-2021, a P/E band from the stock's own decade
+  (median 26-40x) marked a stock re-rated by its own growth RICH, and the last full year's GAAP EPS anchored the multiple to a year that
+  later years outgrew: FY21 in early 2022, FY23 (with the Arm and inventory charges) in 2023, FY24 in 2024. Hypotheses only: the anchor
+  lags a company whose quarters grow faster than its years, and the band from its own past reads a rerating as rich. Test them on other
+  tickers and periods; never fold them into NVDA's method or fact sheet.
+- **The tier, not the class, caught the 2022 low.** Ratio B put the tier at BUY on 10 of 12 dates after the Q2 FY23 print while the class
+  stayed RICH; those entries returned the most. Across the 149 the legacy tier BUY returned a median +238.2%, AVOID +273.6%: no tier
+  ordered the outcomes.
+- **The composite has no stable sign:** -0.88 in 2022, -0.48 in 2023 and +0.39 in 2024 against the two-year return (-0.73 across the
+  149). The trough quarters' signals (Q2-Q3 FY23 at 1.35 and 1.15) came at the best entries.
+- **The two-year price landed nearest XBULL on 100 dates, BULL on 21, BASE on 15 and BEAR on 13** (the BEAR landings all from 2024).
+- **The judgement calls touch few of these outcomes.** The variants run before any 2022-2026 outcome moved 71 classes at BEAR signals
+  (FAIR to RICH), 18 at XBULL (RICH to FAIR or CHEAP, August 2022 to January 2023), 34 without the guides and 30 with FY2023 at the
+  non-GAAP $3.34; the preliminary Q2 FY23 revenue, DURABLE and the H20 charge moved none. On the outcomes above, no variant turns the
+  2022-2024 record: every scored entry beat SPY, so a FAIR or RICH call would have failed either way, and a CHEAP call would have held.
