@@ -14755,8 +14755,8 @@ are year-end cash balances each Q4 release had already published, to three decim
 $3.728B); 16 are coincidences of 2009-2011 prices with later figures (16.58, Q4 FY13's operating margin, a 52-week high in 14 models;
 the closes 16.22 and 17.12); and the 80 of 2008-2009 (a template phrase, 32; the FY2008 10-K's FY2004-FY2007 diluted shares, 48).
 Rebuilding the 105 dates of 2008-2009 gives the same models byte for byte; no file another ticker's builder reads has changed (the
-firewall's change adds fields to NVDA's own planted guide). The firewall runs on the committed build; its result follows that
-commit. All 209 dates pass `retro_tool run`; their only
+firewall's change adds fields to NVDA's own planted guide). The firewall (as in 2008-2009, with the later guides planted in dollar
+levels too) changes no model and leaves no planted text at any of the 24 cutoffs above (105 to 314 dates each). All 209 dates pass `retro_tool run`; their only
 warnings are digits of decimals (FY01 EPS 0.2067 to 2011-03-11, Q3 FY13 revenue $1.2041B), the P/E window's count of trading days
 (2013, 2014) and fiscal years in filings' words ("fiscal year 2011" in the 10-Q words, "through December 2014" for the buyback,
 "fiscal 2014" and "fiscal 2015" for the capital return plans).
