@@ -269,3 +269,27 @@ these windows was +25.5%; Ford's +50.1%.
 - **What to test elsewhere (never here):** whether an anchor more than two years old should suspend CHEAP and RICH for a cyclical, and whether
   a near-zero year readmitted to the P/E window (2009's $0.01, 158-1,020x) should be capped. Both would be rule changes: a new method version
   and a full re-run, not an edit to this archive.
+
+## F 2012-2014 (hindsight)
+
+Patterns seen in `outcome.json` for the 156 weekly dates from 2012-01-06 to 2014-12-26. **Labels and hypotheses**, never inputs. The build
+(1600913fd) and the README's decisions, controls, leak scan, firewall result and class sensitivities (32b893135) were committed before any of
+these outcomes was computed (2026-11-13). Every date has one-, two- and three-year horizons; total returns include the $0.05-$0.15 quarterly
+dividends paid in them. The hurdle is +32.2% over two years; "call held" is `call_check_2y` (`hit`).
+
+**Hindsight the model could not see:** Ford earned $1.41-1.62 a share excluding special items in 2012-2014 and the stock ranged from about $9 (mid
+2012) to about $18 (early 2014); SPY's median two-year total return over these windows was +31.8%, Ford's +0.7%.
+
+- **The classes ranked in order and the calls mostly held.** CHEAP +46.1% two-year median (51 dates, all in 2012; held 42, cleared the hurdle on
+  42, beat SPY on 27), FAIR +19.8% (3; held none), RICH -7.3% (102; held 98, lagged SPY on all 102). 140 of 156 calls held.
+- **2012 CHEAP at 5.9-9.3x FY11's $1.51 worked;** the entries below $12 cleared the hurdle on every date. 36 of these CHEAP calls (2012-01-27 to
+  2013-01-25) depend on 2009's readmitted $0.01 (they read FAIR without it): the call that is mechanically weakest was, here, on the right side.
+  That is not evidence for the readmission rule.
+- **RICH from 2013 held because the price did not grow into the multiple.** FY12's $1.41 and FY13's $1.62 against $12-18 prices read RICH on 100
+  consecutive dates; the 2014 entries lost 11.1% over two years (all 52 held), the 2013 entries were flat (+0.3%). A low decade EPS CAGR made BULL
+  small, so Ratio B was large: a stock that is RICH on its own slow EPS history.
+- **Entry price again explains the most** (two-year median): below $10 +91.6% (11), $10-12 +47.1% (27), $12-14 +28.7% (32), $14-16 -5.5% (39),
+  above $16 -12.0% (47).
+- **Across 2008-2014 (hypotheses for elsewhere):** the CHEAP and RICH labels ranked returns in order in every year but 2010, when the stale 2005
+  anchor read a recovering stock as RICH and FAIR; the near-zero 2009 year distorted the upside scenarios from 2011 on. A rule that caps a
+  readmitted near-zero year, or one that suspends the class when the anchor is old, would need a new method version and a full re-run.
