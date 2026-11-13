@@ -1,10 +1,10 @@
 # NVDA retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the NVDA weekly dates: 314 from 2008-01-04 to 2013-12-31, all NVIDIA Corporation (Nasdaq: NVDA).
+Patterns seen in `outcome.json` for the NVDA weekly dates: 522 from 2008-01-04 to 2017-12-29, all NVIDIA Corporation (Nasdaq: NVDA).
 They are **labels and hypotheses**: never feed them back into the method or the fact sheet. Each batch was scored only after its
 point-in-time build was committed and pushed (2008-2009: 9510254, firewall result 99a5d02; 2010-2013: 69a20a9, firewall result
-858dc95); the outcomes were computed on 2026-11-12 (2008-2009) and 2026-11-13 (2010-2013). Every date has its 6-month, 1-, 2- and
-3-year horizons (the last ends 2016-12-31). Prices are on the AS_OF share basis (no split falls in any horizon; the next is 2021's),
+858dc95; 2014-2017: 3464af5, firewall result c0c01f1); the outcomes were computed on 2026-11-12 (2008-2009) and 2026-11-13 (2010-2013,
+2014-2017). Every date has its 6-month, 1-, 2- and 3-year horizons (the last ends 2020-12-29). Prices are on the AS_OF share basis (no split falls in any horizon; the next is 2021's),
 so every price is as traded. NVIDIA paid no dividend until November 2012: its first ($0.075 a share on this basis, ex-date 2012-11-20)
 falls only inside the three-year horizon of the dates from 2009-11-20 on, and the total returns of later dates include the dividends
 paid inside their horizons. Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is
@@ -240,3 +240,132 @@ paid inside their horizons. Medians of an even count take the upper middle value
   excluded); the CHEAP calls of 2010 depend on FY2010 excluded rather than kept at its non-GAAP $0.26 (49 of the 63 classes the
   non-GAAP variant moves in 2010-2012 are 2010's). Both were decided by the frozen rules before any 2010-2013 outcome was computed, and
   the variants were run before it too; they are the calls a reader with hindsight should check first.
+
+## 2014 (51 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 5 | +87.6% | +71.2% to +93.0% | 5 | 5 | +55.0% | 5 |
+| class FAIR, legacy tier ACCUMULATE | 6 | +80.3% | +47.8% to +303.1% | 6 | 6 | +37.8% | 0 |
+| class FAIR, legacy tier WATCHLIST | 30 | +155.4% | +87.0% to +287.1% | 30 | 30 | +66.0% | 0 |
+| class RICH, legacy tier AVOID | 10 | +353.0% | +217.3% to +437.5% | 10 | 10 | +130.1% | 0 |
+| FY14E $0.90 (2014-01-10 to 2014-02-07) | 5 | +87.6% | +71.2% to +93.0% | 5 | 5 | +55.0% | 5 |
+| FY15E $0.74 (2014-02-14 to 2014-12-26) | 46 | +213.3% | +47.8% to +437.5% | 46 | 46 | +81.1% | 0 |
+| latest print Q3 FY14 (2014-01-10 to 2014-02-07) | 5 | +87.6% | +71.2% to +93.0% | 5 | 5 | +55.0% | 5 |
+| latest print Q4 FY14 (2014-02-14 to 2014-05-02) | 12 | +98.7% | +47.8% to +104.2% | 12 | 12 | +43.2% | 0 |
+| latest print Q1 FY15 (2014-05-07 to 2014-08-01) | 13 | +150.5% | +97.6% to +225.2% | 13 | 13 | +59.0% | 0 |
+| latest print Q2 FY15 (2014-08-08 to 2014-10-31) | 13 | +238.0% | +213.3% to +303.1% | 13 | 13 | +104.0% | 0 |
+| latest print Q3 FY15 (2014-11-07 to 2014-12-26) | 8 | +358.3% | +264.3% to +437.5% | 8 | 8 | +132.0% | 0 |
+
+- **CHEAP held on all 5 dates, FAIR on none of 36, RICH on none of 10.** The five CHEAP entries of January-February 2014 (FY13's $0.90,
+  $15.56-15.99, 17.3-17.8x) returned +71.2% to +93.0% over two years and beat SPY by 62.1-84.5pp. Every later entry (FY14's $0.74 for
+  FY15E, $16.85-21.07, 22.8-28.5x) returned more: the 36 FAIR ones +47.8% to +303.1%, beating SPY by 42.0-285.2pp, so none landed within
+  the ±15pp a FAIR call allows, and the 10 RICH ones (2014-09-05 and 2014-10-31 to 2014-12-26) +217.3% to +437.5%. The later the entry,
+  the further its window reached into the rise that began in October 2015: the two-year prices run from $25.73 to $109.78. The two-year
+  lows were the $16.79 of 2014-10-13 for 35 dates (drawdowns of 18-25%). Over three years every 2014 date returned +441.5% to
+  +1,043.1%.
+- **The anchor was low, then far too low.** FY14's $0.74 stood for FY15E; FY2015 earned $1.12, FY2016 $1.08 and FY2017 $2.57.
+- **Every rank had the wrong sign.** The entry price ranks the two-year return at Spearman +0.62 (the m12-24 average at +0.46), the EPP
+  gap at +0.62 and +0.46, Ratio B at +0.77 and +0.63, the proxy composite at +0.80 and +0.70; the adjusted gap at -0.25 and -0.03. The
+  dearer entries came later and caught more of the rise.
+- **The two-year price landed nearest BULL on 36 dates, XBULL on 13 and BASE on 2.**
+
+## 2015 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier ACCUMULATE | 3 | +728.9% | +683.2% to +760.6% | 3 | 3 | +411.6% | 3 |
+| class FAIR, legacy tier BUY | 3 | +383.9% | +377.5% to +389.7% | 3 | 3 | +187.6% | 0 |
+| class FAIR, legacy tier ACCUMULATE | 8 | +612.7% | +337.3% to +723.3% | 8 | 8 | +316.8% | 0 |
+| class FAIR, legacy tier WATCHLIST | 13 | +535.0% | +333.7% to +688.4% | 13 | 13 | +278.6% | 0 |
+| class RICH, legacy tier WATCHLIST | 4 | +654.3% | +477.6% to +709.7% | 4 | 4 | +386.7% | 0 |
+| class RICH, legacy tier AVOID | 22 | +567.7% | +370.3% to +628.6% | 22 | 22 | +348.8% | 0 |
+| FY15E $0.74 (2015-01-02 to 2015-02-06) | 6 | +442.4% | +411.7% to +479.4% | 6 | 6 | +183.1% | 0 |
+| FY16E $1.12 (2015-02-13 to 2015-12-31) | 47 | +584.9% | +333.7% to +760.6% | 47 | 47 | +346.1% | 3 |
+| latest print Q3 FY15 (2015-01-02 to 2015-02-06) | 6 | +442.4% | +411.7% to +479.4% | 6 | 6 | +183.1% | 0 |
+| latest print Q4 FY15 (2015-02-13 to 2015-05-01) | 12 | +372.9% | +333.7% to +421.7% | 12 | 12 | +224.4% | 0 |
+| latest print Q1 FY16 (2015-05-08 to 2015-07-31) | 13 | +615.1% | +397.9% to +760.6% | 13 | 13 | +316.8% | 3 |
+| latest print Q2 FY16 (2015-08-07 to 2015-10-30) | 13 | +628.6% | +591.3% to +709.7% | 13 | 13 | +386.7% | 0 |
+| latest print Q3 FY16 (2015-11-06 to 2015-12-31) | 9 | +519.0% | +456.2% to +616.9% | 9 | 9 | +347.5% | 0 |
+
+- **CHEAP held on all 3 dates, FAIR on none of 24, RICH on none of 26.** Every 2015 entry ($19.20-33.75) returned +333.7% to +760.6% over
+  two years (two-year prices $97.67-214.14) and beat SPY by 317-738pp: the three CHEAP entries of July 2015 +683.2% to +760.6%, the RICH
+  ones +370.3% to +709.7% (median +584.9%). The two-year lows were the $19.31 of 2015-07-27 (26 dates) and the $25.22 of 2016-02-08
+  (14); the drawdowns were 24-25%. Over three years the 2015 dates returned +288.1% to +1,211.8%.
+- **The anchor held; the multiple did not.** FY15's $1.12 stood for FY16E and FY2016 earned $1.08, close; the stock's price multiplied
+  by four to eight in two years while FY2017 earned $2.57, so the multiple rose with the earnings.
+- **Within the year the price ranks nothing** (Spearman -0.05 and +0.23); the proxy composite ranks the two-year return at -0.77 and the
+  m12-24 average at -0.72, the wrong sign.
+- **The two-year price landed nearest XBULL on all 53 dates.**
+
+## 2016 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 52 | +410.1% | +19.1% to +790.3% | 50 | 52 | +335.3% | 0 |
+| FY16E $1.12 (2016-01-08 to 2016-02-12) | 6 | +726.4% | +652.8% to +790.3% | 6 | 6 | +467.5% | 0 |
+| FY17E $1.08 (2016-02-19 to 2016-12-30) | 46 | +361.0% | +19.1% to +704.5% | 44 | 46 | +294.6% | 0 |
+| latest print Q3 FY16 (2016-01-08 to 2016-02-12) | 6 | +726.4% | +652.8% to +790.3% | 6 | 6 | +467.5% | 0 |
+| latest print Q4 FY16 (2016-02-19 to 2016-05-06) | 12 | +579.7% | +503.9% to +704.5% | 12 | 12 | +424.2% | 0 |
+| latest print Q1 FY17 (2016-05-13 to 2016-08-05) | 13 | +445.5% | +335.1% to +523.8% | 13 | 13 | +337.1% | 0 |
+| latest print Q2 FY17 (2016-08-12 to 2016-11-04) | 13 | +306.0% | +182.7% to +358.7% | 13 | 13 | +257.7% | 0 |
+| latest print Q3 FY17 (2016-11-11 to 2016-12-30) | 8 | +62.0% | +19.1% to +135.1% | 6 | 8 | +155.1% | 0 |
+
+- **RICH and AVOID on every date; the call held on none.** The entries ($25.73-109.78, 23-106x the last full year's EPS) returned +19.1%
+  to +790.3% over two years (median +410.1%), 50 cleared the hurdle and all beat SPY, by 8.1-743.2pp. The eight entries after the Q3 FY17
+  print (2016-11-11 to 2016-12-30, $87.97-109.78) returned least, +19.1% to +135.1%: their windows end in November-December 2018, after
+  the stock's fall from the $289.36 of 2018-10-01. Over three years the 2016 dates returned +119.2% to +494.0%.
+- **The cheaper the entry, the more it returned:** the entry price ranks the two-year return at Spearman -0.99 (the m12-24 average at
+  -0.99), Ratio B at -0.62 and -0.58, the proxy composite at -0.85 and -0.87. The class did not move, so it ranked nothing.
+- **The two-year price landed nearest XBULL on all 52 dates.**
+
+## 2017 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 52 | +10.3% | -4.8% to +100.2% | 17 | 19 | +30.1% | 33 |
+| FY17E $1.08 (2017-01-06 to 2017-02-03) | 5 | +44.3% | +27.6% to +52.0% | 4 | 5 | +119.7% | 0 |
+| FY18E $2.57 (2017-02-10 to 2017-12-29) | 47 | +7.2% | -4.8% to +100.2% | 13 | 14 | +15.4% | 33 |
+| latest print Q3 FY17 (2017-01-06 to 2017-02-03) | 5 | +44.3% | +27.6% to +52.0% | 4 | 5 | +119.7% | 0 |
+| latest print Q4 FY17 (2017-02-10 to 2017-05-05) | 13 | +65.9% | +31.4% to +100.2% | 12 | 13 | +106.9% | 0 |
+| latest print Q1 FY18 (2017-05-11 to 2017-08-04) | 13 | +2.4% | -4.8% to +34.4% | 1 | 1 | +30.9% | 12 |
+| latest print Q2 FY18 (2017-08-11 to 2017-11-03) | 13 | -0.4% | -3.8% to +9.9% | 0 | 0 | -3.8% | 13 |
+| latest print Q3 FY18 (2017-11-10 to 2017-12-29) | 8 | +11.5% | -3.3% to +23.2% | 0 | 0 | -11.8% | 8 |
+
+- **RICH held on 33 of 52 dates, every one from 2017-05-11.** The 18 entries of January to early May 2017 ($95.49-114.38; FY16's $1.08,
+  then FY17's $2.57 from 2017-02-10) returned +27.6% to +100.2% over two years (median +60.2%) and beat SPY by 5.5-71.1pp: the call
+  missed. The 34 from 2017-05-11 ($126.50-216.96, 49-84x FY17's $2.57) returned -4.8% to +34.4% (median +0.9%); all but the first
+  (2017-05-11, +34.4%, 9.8pp over SPY) lagged SPY and missed the hurdle: their windows end in 2019, after the fall from $289.36 (2018-10-01) to $127.08 (2018-12-24), a drawdown of 56.1%,
+  when the Q4 FY19 guide was cut from $2.70 billion to $2.20 billion. Over three years (to the end of 2020) every 2017 date returned
+  +106.6% to +225.4% and beat SPY.
+- **The anchor was low again.** FY17's $2.57 stood for FY18E; FY2018 earned $4.82 and FY2019 $6.63, FY2020 $4.52.
+- **The price and the adjusted gap ranked the outcome; the composite did not.** The entry price ranks the two-year return at Spearman
+  -0.75 (the m12-24 average at -0.99), the EPP gap at -0.47 and -0.55, Ratio B at -0.74 and -0.63, the adjusted gap at +0.74 and +0.79,
+  the proxy composite at +0.58 and +0.73.
+- **The two-year price landed nearest XBULL on 35 dates and BULL on 17.**
+
+## Across 2014-2017
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 8 | +93.0% | +71.2% to +760.6% | 8 | 8 | +56.0% | 8 |
+| class FAIR | 60 | +238.0% | +47.8% to +723.3% | 60 | 60 | +104.0% | 0 |
+| class RICH | 140 | +307.4% | -4.8% to +790.3% | 103 | 107 | +171.2% | 33 |
+| legacy tier BUY | 8 | +93.0% | +71.2% to +389.7% | 8 | 8 | +56.0% | 5 |
+| legacy tier ACCUMULATE | 17 | +421.7% | +47.8% to +760.6% | 17 | 17 | +279.0% | 3 |
+| legacy tier WATCHLIST | 47 | +231.4% | +87.0% to +709.7% | 47 | 47 | +90.4% | 0 |
+| legacy tier AVOID | 136 | +305.4% | -4.8% to +790.3% | 99 | 103 | +166.9% | 33 |
+
+- **The P/E band from the stock's own decade read every rerating as RICH.** CHEAP held on 8 of 8 dates, FAIR on none of 60, RICH on 33 of
+  140: 41 of 208 (203 of 522 with 2008-2013). The class rested on the last full GAAP year against the stock's ten-year P/E history, whose
+  median stayed at 19-21x; NVIDIA's EPS rose from $0.74 (FY2014) to $2.57 (FY2017) and $4.82 (FY2018), and the stock went from 17-28x the
+  trailing year in 2014-2015 to 37-106x in 2016-2017. RICH missed on every date of 2014-2016 and the first months of 2017 and held only
+  for the entries whose two-year windows ended after the fall of late 2018. Hypotheses only: for a company whose earnings base shifts, a
+  P/E band drawn from its own past marks every rerating RICH, and the RICH call pays only at a cyclical turn; a FAIR call's ±15pp band
+  is too narrow for a stock that moves this much (none of 60 held). Test them on other tickers and periods; never fold them into NVDA's
+  method or fact sheet.
+- **The composite has no stable sign.** The proxy composite ranks the two-year return at +0.80 in 2014, -0.77 in 2015, -0.85 in 2016 and
+  +0.58 in 2017.
+- **The judgement calls touch few of these dates.** The variants run before any outcome moved classes only in 2014-2015 (every signal at
+  BEAR 63, at XBULL 39; the guides unused 16; FY2009 and FY2010 at non-GAAP 12) and none in 2016-2017; DURABLE and the restructuring
+  charges added back moved none. The RICH calls of 2016-2017 rest on GAAP EPS of a past year and the stock's own P/E history alone.

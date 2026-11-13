@@ -318,3 +318,211 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2013-12-20 | $15.69 | NVIDIA Q3 FY14 results | 2.00 | +0.51 | 0.15x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +109.5% | +94.9pp | +48.7% | ✓ |
 | 2013-12-27 | $15.76 | NVIDIA Q3 FY14 results | 2.00 | +0.50 | 0.16x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +115.1% | +98.9pp | +49.3% | ✓ |
 | 2013-12-31 | $16.02 | NVIDIA Q3 FY14 results | 2.00 | +0.46 | 0.17x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +113.0% | +97.2pp | +47.7% | ✓ |
+| 2014-01-10 | $15.73 | NVIDIA Q3 FY14 results | 2.00 | +0.49 | 0.16x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +93.0% | +84.5pp | +52.4% | ✓ |
+| 2014-01-17 | $15.99 | NVIDIA Q3 FY14 results | 2.00 | +0.45 | 0.17x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +74.1% | +67.5pp | +51.0% | ✓ |
+| 2014-01-24 | $15.56 | NVIDIA Q3 FY14 results | 2.00 | +0.51 | 0.15x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +87.6% | +76.6pp | +56.0% | ✓ |
+| 2014-01-31 | $15.70 | NVIDIA Q3 FY14 results | 2.00 | +0.48 | 0.16x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +91.2% | +78.0pp | +55.7% | ✓ |
+| 2014-02-07 | $15.87 | NVIDIA Q3 FY14 results | 2.00 | +0.46 | 0.17x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +71.2% | +62.1pp | +55.0% | ✓ |
+| 2014-02-14 | $17.91 | NVIDIA Q4 FY14 results | 2.15 | +0.12 | 0.85x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +47.8% | +42.0pp | +37.8% | ✗ |
+| 2014-02-21 | $18.64 | NVIDIA Q4 FY14 results | 2.15 | +0.06 | 0.97x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +67.3% | +58.5pp | +33.0% | ✗ |
+| 2014-02-28 | $18.38 | NVIDIA Q4 FY14 results | 2.15 | +0.09 | 0.93x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +75.9% | +66.9pp | +35.9% | ✗ |
+| 2014-03-07 | $18.36 | NVIDIA Q4 FY14 results | 2.15 | +0.08 | 0.94x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +80.3% | +69.5pp | +37.3% | ✗ |
+| 2014-03-14 | $17.82 | NVIDIA Q4 FY14 results | 2.15 | +0.03 | 1.09x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +85.6% | +71.5pp | +42.5% | ✗ |
+| 2014-03-21 | $18.54 | NVIDIA Q4 FY14 results | 2.15 | -0.04 | 1.27x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +87.0% | +72.7pp | +38.0% | ✗ |
+| 2014-03-28 | $17.90 | NVIDIA Q4 FY14 results | 2.15 | +0.01 | 1.13x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +98.9% | +84.8pp | +44.1% | ✗ |
+| 2014-04-04 | $18.15 | NVIDIA Q4 FY14 results | 2.15 | -0.02 | 1.20x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +101.5% | +86.4pp | +43.7% | ✗ |
+| 2014-04-11 | $18.12 | NVIDIA Q4 FY14 results | 2.15 | -0.02 | 1.19x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +102.2% | +85.3pp | +45.4% | ✗ |
+| 2014-04-17 | $18.56 | NVIDIA Q4 FY14 results | 2.15 | -0.07 | 1.32x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +104.2% | +88.3pp | +43.2% | ✗ |
+| 2014-04-25 | $18.73 | NVIDIA Q4 FY14 results | 2.15 | -0.08 | 1.37x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +98.7% | +82.3pp | +43.7% | ✗ |
+| 2014-05-02 | $18.43 | NVIDIA Q4 FY14 results | 2.15 | -0.07 | 1.30x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +99.5% | +84.5pp | +47.5% | ✗ |
+| 2014-05-07 | $18.27 | NVIDIA Q4 FY14 results | 2.45 | +0.35 | 1.26x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +97.6% | +83.7pp | +49.9% | ✗ |
+| 2014-05-16 | $17.96 | NVIDIA Q1 FY15 results with the outlook | 2.45 | +0.35 | 1.21x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +139.2% | +124.8pp | +54.7% | ✗ |
+| 2014-05-23 | $18.49 | NVIDIA Q1 FY15 results with the outlook | 2.45 | +0.29 | 1.35x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +143.8% | +131.7pp | +52.7% | ✗ |
+| 2014-05-30 | $19.00 | NVIDIA Q1 FY15 results with the outlook | 2.45 | +0.23 | 1.50x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +145.8% | +132.4pp | +50.6% | ✗ |
+| 2014-06-06 | $19.03 | NVIDIA Q1 FY15 results with the outlook | 2.45 | +0.22 | 1.53x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +147.2% | +134.8pp | +52.9% | ✗ |
+| 2014-06-13 | $19.54 | NVIDIA Q1 FY15 results with the outlook | 2.45 | +0.17 | 1.71x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +143.5% | +131.9pp | +51.5% | ✗ |
+| 2014-06-20 | $18.93 | NVIDIA Q1 FY15 results with the outlook | 2.45 | +0.22 | 1.50x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +155.4% | +145.1pp | +59.0% | ✗ |
+| 2014-06-27 | $18.38 | NVIDIA Q1 FY15 results with the outlook | 2.45 | +0.28 | 1.35x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +150.5% | +144.2pp | +66.6% | ✗ |
+| 2014-07-03 | $18.85 | NVIDIA Q1 FY15 results with the outlook | 2.45 | +0.22 | 1.50x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +151.8% | +141.6pp | +64.6% | ✗ |
+| 2014-07-11 | $19.05 | NVIDIA Q1 FY15 results with the outlook | 2.45 | +0.20 | 1.58x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +177.2% | +164.4pp | +66.0% | ✗ |
+| 2014-07-18 | $18.44 | NVIDIA Q1 FY15 results with the outlook | 2.45 | +0.27 | 1.39x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +191.6% | +177.9pp | +75.0% | ✗ |
+| 2014-07-25 | $17.79 | NVIDIA Q1 FY15 results with the outlook | 2.45 | +0.34 | 1.21x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +217.5% | +203.6pp | +85.3% | ✗ |
+| 2014-08-01 | $17.69 | NVIDIA Q1 FY15 results with the outlook | 2.45 | +0.35 | 1.20x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +225.2% | +208.1pp | +90.4% | ✗ |
+| 2014-08-08 | $19.00 | NVIDIA Q2 FY15 results | 2.45 | +0.22 | 1.59x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +213.3% | +196.2pp | +81.1% | ✗ |
+| 2014-08-15 | $19.04 | NVIDIA Q2 FY15 results | 2.45 | +0.21 | 1.60x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +235.0% | +218.7pp | +84.6% | ✗ |
+| 2014-08-22 | $19.08 | NVIDIA Q2 FY15 results | 2.45 | +0.21 | 1.62x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +231.4% | +217.5pp | +88.3% | ✗ |
+| 2014-08-29 | $19.45 | NVIDIA Q2 FY15 results | 2.45 | +0.17 | 1.73x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +223.0% | +210.0pp | +88.8% | ✗ |
+| 2014-09-05 | $19.97 | NVIDIA Q2 FY15 results | 2.45 | +0.13 | 1.95x | AVOID | TOO MUCH CYCLE RISK (RICH) | 4/8 RICH | +217.3% | +204.5pp | +87.4% | ✗ |
+| 2014-09-12 | $19.12 | NVIDIA Q2 FY15 results | 2.45 | +0.21 | 1.61x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +222.1% | +209.2pp | +99.5% | ✗ |
+| 2014-09-19 | $19.08 | NVIDIA Q2 FY15 results | 2.45 | +0.21 | 1.59x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +238.0% | +227.4pp | +104.0% | ✗ |
+| 2014-09-26 | $18.55 | NVIDIA Q2 FY15 results | 2.45 | +0.27 | 1.42x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +251.3% | +238.7pp | +114.2% | ✗ |
+| 2014-10-03 | $18.23 | NVIDIA Q2 FY15 results | 2.45 | +0.31 | 1.34x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +280.0% | +265.9pp | +122.7% | ✗ |
+| 2014-10-10 | $16.85 | NVIDIA Q2 FY15 results | 2.45 | +0.46 | 1.00x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 2/8 FAIR | +303.1% | +285.2pp | +145.8% | ✗ |
+| 2014-10-17 | $17.42 | NVIDIA Q2 FY15 results | 2.45 | +0.39 | 1.13x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +281.4% | +264.2pp | +142.2% | ✗ |
+| 2014-10-24 | $18.48 | NVIDIA Q2 FY15 results | 2.45 | +0.27 | 1.44x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +287.1% | +273.3pp | +132.6% | ✗ |
+| 2014-10-31 | $19.54 | NVIDIA Q2 FY15 results | 2.45 | +0.15 | 1.82x | AVOID | TOO MUCH CYCLE RISK (RICH) | 4/8 RICH | +265.3% | +255.7pp | +123.8% | ✗ |
+| 2014-11-07 | $19.79 | NVIDIA Q3 FY15 results | 2.45 | -0.07 | 1.93x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +264.3% | +255.3pp | +125.5% | ✗ |
+| 2014-11-14 | $19.79 | NVIDIA Q3 FY15 results | 2.45 | -0.08 | 1.93x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +326.8% | +316.6pp | +130.1% | ✗ |
+| 2014-11-21 | $20.45 | NVIDIA Q3 FY15 results | 2.45 | -0.12 | 2.26x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +358.3% | +347.6pp | +128.5% | ✗ |
+| 2014-11-28 | $20.97 | NVIDIA Q3 FY15 results | 2.45 | -0.26 | 2.58x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +353.0% | +342.4pp | +127.6% | ✗ |
+| 2014-12-05 | $21.07 | NVIDIA Q3 FY15 results | 2.45 | -0.27 | 2.65x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +340.3% | +329.9pp | +132.0% | ✗ |
+| 2014-12-12 | $19.63 | NVIDIA Q3 FY15 results | 2.45 | -0.08 | 1.86x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +360.9% | +344.0pp | +155.0% | ✗ |
+| 2014-12-19 | $20.42 | NVIDIA Q3 FY15 results | 2.45 | -0.14 | 2.24x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +402.0% | +388.6pp | +151.5% | ✗ |
+| 2014-12-26 | $20.59 | NVIDIA Q3 FY15 results | 2.45 | -0.15 | 2.34x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +437.5% | +425.0pp | +155.1% | ✗ |
+| 2015-01-02 | $20.13 | NVIDIA Q3 FY15 results | 2.45 | -0.12 | 2.09x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +434.6% | +421.6pp | +167.1% | ✗ |
+| 2015-01-09 | $19.94 | NVIDIA Q3 FY15 results | 2.45 | -0.11 | 2.00x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +442.4% | +427.3pp | +176.8% | ✗ |
+| 2015-01-16 | $19.96 | NVIDIA Q3 FY15 results | 2.45 | -0.11 | 2.01x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +422.6% | +405.7pp | +183.1% | ✗ |
+| 2015-01-23 | $20.71 | NVIDIA Q3 FY15 results | 2.45 | -0.17 | 2.41x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +411.7% | +397.1pp | +179.6% | ✗ |
+| 2015-01-30 | $19.20 | NVIDIA Q3 FY15 results | 2.45 | -0.07 | 1.68x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +477.6% | +459.1pp | +209.9% | ✗ |
+| 2015-02-06 | $20.40 | NVIDIA Q3 FY15 results | 2.45 | -0.15 | 2.23x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +479.4% | +463.7pp | +200.0% | ✗ |
+| 2015-02-13 | $22.31 | NVIDIA Q4 FY15 results | 2.45 | +0.25 | 0.73x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +389.7% | +374.6pp | +182.3% | ✗ |
+| 2015-02-20 | $22.34 | NVIDIA Q4 FY15 results | 2.45 | +0.25 | 0.73x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +383.9% | +368.5pp | +187.6% | ✗ |
+| 2015-02-27 | $22.06 | NVIDIA Q4 FY15 results | 2.45 | +0.28 | 0.70x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | +377.5% | +360.8pp | +197.9% | ✗ |
+| 2015-03-06 | $22.55 | NVIDIA Q4 FY15 results | 2.45 | +0.23 | 0.76x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +337.3% | +318.5pp | +197.3% | ✗ |
+| 2015-03-13 | $22.70 | NVIDIA Q4 FY15 results | 2.45 | -0.07 | 1.52x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +352.8% | +333.0pp | +201.3% | ✗ |
+| 2015-03-20 | $23.47 | NVIDIA Q4 FY15 results | 2.45 | -0.15 | 1.80x | AVOID | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +370.3% | +353.6pp | +197.5% | ✗ |
+| 2015-03-27 | $21.38 | NVIDIA Q4 FY15 results | 2.45 | +0.19 | 1.15x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +410.7% | +392.8pp | +232.7% | ✗ |
+| 2015-04-02 | $21.06 | NVIDIA Q4 FY15 results | 2.45 | +0.23 | 1.08x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +421.7% | +403.2pp | +243.9% | ✗ |
+| 2015-04-10 | $22.76 | NVIDIA Q4 FY15 results | 2.45 | -0.07 | 1.53x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +333.7% | +317.4pp | +224.4% | ✗ |
+| 2015-04-17 | $22.20 | NVIDIA Q4 FY15 results | 2.45 | +0.00 | 1.36x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +351.2% | +334.1pp | +237.6% | ✗ |
+| 2015-04-24 | $22.03 | NVIDIA Q4 FY15 results | 2.45 | +0.03 | 1.31x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +371.6% | +355.3pp | +246.0% | ✗ |
+| 2015-05-01 | $22.75 | NVIDIA Q4 FY15 results | 2.45 | -0.07 | 1.52x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +372.9% | +355.4pp | +241.1% | ✗ |
+| 2015-05-08 | $20.83 | NVIDIA Q1 FY16 results | 2.30 | -0.09 | 1.01x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +397.9% | +380.4pp | +279.0% | ✗ |
+| 2015-05-15 | $21.30 | NVIDIA Q1 FY16 results | 2.30 | -0.13 | 1.11x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +535.0% | +517.7pp | +278.6% | ✗ |
+| 2015-05-22 | $20.86 | NVIDIA Q1 FY16 results | 2.30 | -0.09 | 1.02x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +570.6% | +553.9pp | +295.3% | ✗ |
+| 2015-05-29 | $22.13 | NVIDIA Q1 FY16 results | 2.30 | -0.32 | 1.33x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +545.4% | +526.7pp | +280.0% | ✗ |
+| 2015-06-05 | $22.26 | NVIDIA Q1 FY16 results | 2.30 | -0.33 | 1.36x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +569.3% | +548.8pp | +285.9% | ✗ |
+| 2015-06-12 | $21.11 | NVIDIA Q1 FY16 results | 2.30 | -0.11 | 1.07x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +615.1% | +595.0pp | +316.8% | ✗ |
+| 2015-06-19 | $21.87 | NVIDIA Q1 FY16 results | 2.30 | -0.19 | 1.26x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +623.8% | +603.5pp | +311.9% | ✗ |
+| 2015-06-26 | $20.74 | NVIDIA Q1 FY16 results | 2.30 | -0.08 | 0.99x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +638.3% | +618.1pp | +344.7% | ✗ |
+| 2015-07-02 | $20.42 | NVIDIA Q1 FY16 results | 2.30 | -0.04 | 0.93x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +612.7% | +591.7pp | +360.5% | ✗ |
+| 2015-07-10 | $19.75 | NVIDIA Q1 FY16 results | 2.30 | +0.03 | 0.81x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | +683.2% | +662.0pp | +384.9% | ✓ |
+| 2015-07-17 | $20.07 | NVIDIA Q1 FY16 results | 2.30 | -0.01 | 0.86x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +723.3% | +703.5pp | +388.0% | ✗ |
+| 2015-07-24 | $19.42 | NVIDIA Q1 FY16 results | 2.30 | +0.06 | 0.75x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +760.6% | +737.6pp | +415.8% | ✓ |
+| 2015-07-31 | $19.95 | NVIDIA Q1 FY16 results | 2.30 | +0.01 | 0.84x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | +728.9% | +707.3pp | +411.6% | ✓ |
+| 2015-08-07 | $22.98 | NVIDIA Q2 FY16 results | 2.15 | -0.54 | 1.59x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 3/8 RICH | +654.3% | +630.7pp | +354.7% | ✗ |
+| 2015-08-14 | $23.54 | NVIDIA Q2 FY16 results | 2.15 | -0.59 | 1.81x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +619.5% | +597.5pp | +352.9% | ✗ |
+| 2015-08-21 | $21.47 | NVIDIA Q2 FY16 results | 2.15 | -0.25 | 1.15x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +645.4% | +618.0pp | +405.9% | ✗ |
+| 2015-08-28 | $22.73 | NVIDIA Q2 FY16 results | 2.15 | -0.50 | 1.51x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 3/8 RICH | +630.3% | +603.0pp | +386.7% | ✗ |
+| 2015-09-04 | $21.75 | NVIDIA Q2 FY16 results | 2.15 | -0.28 | 1.22x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +688.4% | +655.1pp | +417.3% | ✗ |
+| 2015-09-11 | $22.65 | NVIDIA Q2 FY16 results | 2.15 | -0.49 | 1.48x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +650.6% | +619.4pp | +405.0% | ✗ |
+| 2015-09-18 | $23.29 | NVIDIA Q2 FY16 results | 2.15 | -0.56 | 1.71x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 4/8 RICH | +709.7% | +677.2pp | +400.8% | ✗ |
+| 2015-09-25 | $23.61 | NVIDIA Q2 FY16 results | 2.15 | -0.60 | 1.83x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +628.6% | +594.7pp | +403.8% | ✗ |
+| 2015-10-02 | $24.80 | NVIDIA Q2 FY16 results | 2.15 | -0.74 | 2.44x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +625.9% | +591.8pp | +388.4% | ✗ |
+| 2015-10-09 | $26.07 | NVIDIA Q2 FY16 results | 2.15 | -0.85 | 3.45x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +615.0% | +584.3pp | +373.3% | ✗ |
+| 2015-10-16 | $27.86 | NVIDIA Q2 FY16 results | 2.15 | -0.97 | 6.27x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +614.1% | +584.0pp | +351.9% | ✗ |
+| 2015-10-23 | $28.59 | NVIDIA Q2 FY16 results | 2.15 | -1.00 | 8.46x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +591.3% | +563.4pp | +349.4% | ✗ |
+| 2015-10-30 | $28.37 | NVIDIA Q2 FY16 results | 2.15 | -0.99 | 7.11x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +622.1% | +594.2pp | +361.8% | ✗ |
+| 2015-11-06 | $31.55 | NVIDIA Q3 FY16 results | 2.45 | -0.87 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +567.7% | +540.1pp | +324.0% | ✗ |
+| 2015-11-13 | $29.80 | NVIDIA Q3 FY16 results | 2.45 | -0.69 | 14.90x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +616.9% | +584.9pp | +358.0% | ✗ |
+| 2015-11-20 | $31.39 | NVIDIA Q3 FY16 results | 2.45 | -0.86 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +584.9% | +557.1pp | +342.6% | ✗ |
+| 2015-11-27 | $31.39 | NVIDIA Q3 FY16 results | 2.45 | -0.85 | 404.40x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +585.6% | +557.0pp | +348.8% | ✗ |
+| 2015-12-04 | $33.75 | NVIDIA Q3 FY16 results | 2.45 | -0.94 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +456.2% | +425.8pp | +323.7% | ✗ |
+| 2015-12-11 | $32.49 | NVIDIA Q3 FY16 results | 2.45 | -0.89 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +502.4% | +465.9pp | +346.1% | ✗ |
+| 2015-12-18 | $32.14 | NVIDIA Q3 FY16 results | 2.45 | -0.87 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +519.0% | +480.3pp | +356.8% | ✗ |
+| 2015-12-24 | $33.17 | NVIDIA Q3 FY16 results | 2.45 | -0.90 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +491.9% | +457.3pp | +347.5% | ✗ |
+| 2015-12-31 | $32.96 | NVIDIA Q3 FY16 results | 2.45 | -0.89 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +490.3% | +454.8pp | +354.4% | ✗ |
+| 2016-01-08 | $29.63 | NVIDIA Q3 FY16 results | 2.45 | -0.65 | 7.50x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +652.8% | +605.2pp | +412.2% | ✗ |
+| 2016-01-15 | $27.11 | NVIDIA Q3 FY16 results | 2.45 | -0.49 | 3.20x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +726.4% | +673.4pp | +467.5% | ✗ |
+| 2016-01-22 | $28.45 | NVIDIA Q3 FY16 results | 2.45 | -0.58 | 4.75x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +725.1% | +671.8pp | +448.6% | ✗ |
+| 2016-01-29 | $29.29 | NVIDIA Q3 FY16 results | 2.45 | -0.63 | 6.47x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +746.4% | +694.6pp | +441.8% | ✗ |
+| 2016-02-05 | $26.43 | NVIDIA Q3 FY16 results | 2.45 | -0.43 | 2.70x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +712.5% | +667.1pp | +509.7% | ✗ |
+| 2016-02-12 | $25.73 | NVIDIA Q3 FY16 results | 2.45 | -0.34 | 2.29x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +790.3% | +743.2pp | +534.7% | ✗ |
+| 2016-02-19 | $30.44 | NVIDIA Q4 FY16 results | 2.30 | -0.84 | 15.28x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +704.5% | +657.4pp | +444.2% | ✗ |
+| 2016-02-26 | $31.68 | NVIDIA Q4 FY16 results | 2.30 | -0.90 | 116.39x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +682.1% | +634.9pp | +430.8% | ✗ |
+| 2016-03-04 | $32.55 | NVIDIA Q4 FY16 results | 2.30 | -0.92 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +630.0% | +591.1pp | +424.2% | ✗ |
+| 2016-03-11 | $32.22 | NVIDIA Q4 FY16 results | 2.30 | -0.91 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +664.8% | +622.7pp | +438.4% | ✗ |
+| 2016-03-18 | $33.81 | NVIDIA Q4 FY16 results | 2.30 | -1.07 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +644.1% | +605.3pp | +421.7% | ✗ |
+| 2016-03-24 | $34.48 | NVIDIA Q4 FY16 results | 2.30 | -1.09 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +578.8% | +547.2pp | +419.4% | ✗ |
+| 2016-04-01 | $36.15 | NVIDIA Q4 FY16 results | 2.30 | -1.16 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +543.7% | +511.9pp | +401.6% | ✗ |
+| 2016-04-08 | $35.66 | NVIDIA Q4 FY16 results | 2.30 | -1.13 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +503.9% | +472.3pp | +415.2% | ✗ |
+| 2016-04-15 | $37.13 | NVIDIA Q4 FY16 results | 2.30 | -1.19 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +526.4% | +494.3pp | +400.8% | ✗ |
+| 2016-04-22 | $36.27 | NVIDIA Q4 FY16 results | 2.30 | -1.15 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +533.6% | +501.5pp | +420.0% | ✗ |
+| 2016-04-29 | $35.53 | NVIDIA Q4 FY16 results | 2.30 | -1.12 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +540.1% | +506.3pp | +437.4% | ✗ |
+| 2016-05-06 | $35.33 | NVIDIA Q4 FY16 results | 2.30 | -1.11 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +579.7% | +545.9pp | +447.6% | ✗ |
+| 2016-05-13 | $40.98 | NVIDIA Q1 FY17 results | 2.45 | -1.06 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +523.8% | +485.9pp | +378.8% | ✗ |
+| 2016-05-20 | $44.33 | NVIDIA Q1 FY17 results | 2.45 | -1.21 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +457.3% | +420.6pp | +347.7% | ✗ |
+| 2016-05-27 | $45.90 | NVIDIA Q1 FY17 results | 2.45 | -1.38 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +445.5% | +411.6pp | +337.1% | ✗ |
+| 2016-06-03 | $46.48 | NVIDIA Q1 FY17 results | 2.45 | -1.41 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +456.7% | +422.1pp | +335.3% | ✗ |
+| 2016-06-10 | $46.20 | NVIDIA Q1 FY17 results | 2.45 | -1.38 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +470.1% | +433.2pp | +342.9% | ✗ |
+| 2016-06-17 | $46.72 | NVIDIA Q1 FY17 results | 2.45 | -1.40 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +470.2% | +431.4pp | +342.7% | ✗ |
+| 2016-06-24 | $45.73 | NVIDIA Q1 FY17 results | 2.45 | -1.33 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +451.2% | +411.3pp | +356.7% | ✗ |
+| 2016-07-01 | $46.66 | NVIDIA Q1 FY17 results | 2.45 | -1.37 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +410.1% | +376.3pp | +351.5% | ✗ |
+| 2016-07-08 | $50.85 | NVIDIA Q1 FY17 results | 2.45 | -1.52 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +388.6% | +354.6pp | +317.4% | ✗ |
+| 2016-07-15 | $52.70 | NVIDIA Q1 FY17 results | 2.45 | -1.52 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +375.2% | +341.3pp | +306.2% | ✗ |
+| 2016-07-22 | $54.67 | NVIDIA Q1 FY17 results | 2.45 | -1.52 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +361.0% | +327.8pp | +294.6% | ✗ |
+| 2016-07-29 | $57.10 | NVIDIA Q1 FY17 results | 2.45 | -1.52 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +343.3% | +309.3pp | +280.9% | ✗ |
+| 2016-08-05 | $58.20 | NVIDIA Q1 FY17 results | 2.45 | -1.52 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +335.1% | +300.7pp | +276.5% | ✗ |
+| 2016-08-12 | $63.04 | NVIDIA Q2 FY17 results | 2.80 | -1.33 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +306.0% | +272.0pp | +250.4% | ✗ |
+| 2016-08-19 | $62.26 | NVIDIA Q2 FY17 results | 2.80 | -1.20 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +295.0% | +260.2pp | +257.7% | ✗ |
+| 2016-08-26 | $62.03 | NVIDIA Q2 FY17 results | 2.80 | -1.20 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +340.5% | +303.8pp | +262.2% | ✗ |
+| 2016-09-02 | $62.53 | NVIDIA Q2 FY17 results | 2.80 | -1.15 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +350.7% | +313.4pp | +262.8% | ✗ |
+| 2016-09-09 | $59.52 | NVIDIA Q2 FY17 results | 2.80 | -1.17 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +358.7% | +319.4pp | +284.1% | ✗ |
+| 2016-09-16 | $62.84 | NVIDIA Q2 FY17 results | 2.80 | -1.15 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +341.7% | +301.4pp | +267.0% | ✗ |
+| 2016-09-23 | $64.95 | NVIDIA Q2 FY17 results | 2.80 | -1.17 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +307.4% | +267.7pp | +257.7% | ✗ |
+| 2016-09-30 | $68.52 | NVIDIA Q2 FY17 results | 2.80 | -1.15 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +311.8% | +272.9pp | +241.8% | ✗ |
+| 2016-10-07 | $66.85 | NVIDIA Q2 FY17 results | 2.80 | -1.15 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +305.4% | +267.0pp | +253.4% | ✗ |
+| 2016-10-14 | $65.99 | NVIDIA Q2 FY17 results | 2.80 | -1.15 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +275.4% | +241.3pp | +259.9% | ✗ |
+| 2016-10-21 | $67.54 | NVIDIA Q2 FY17 results | 2.80 | -1.15 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +241.0% | +207.3pp | +252.8% | ✗ |
+| 2016-10-28 | $70.56 | NVIDIA Q2 FY17 results | 2.80 | -1.17 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +182.7% | +153.2pp | +238.1% | ✗ |
+| 2016-11-04 | $67.57 | NVIDIA Q2 FY17 results | 2.80 | -1.17 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +219.8% | +184.7pp | +253.1% | ✗ |
+| 2016-11-11 | $87.97 | NVIDIA Q3 FY17 results | 3.00 | -0.95 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +135.1% | +102.2pp | +171.2% | ✗ |
+| 2016-11-18 | $93.36 | NVIDIA Q3 FY17 results | 3.00 | -1.00 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +77.4% | +47.6pp | +155.1% | ✗ |
+| 2016-11-25 | $94.16 | NVIDIA Q3 FY17 results | 3.00 | -1.00 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +55.1% | +31.8pp | +151.7% | ✗ |
+| 2016-12-02 | $88.45 | NVIDIA Q3 FY17 results | 3.00 | -1.00 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +86.1% | +56.2pp | +166.9% | ✗ |
+| 2016-12-09 | $91.82 | NVIDIA Q3 FY17 results | 3.00 | -1.00 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +62.0% | +41.4pp | +156.8% | ✗ |
+| 2016-12-16 | $100.41 | NVIDIA Q3 FY17 results | 3.00 | -1.00 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +47.0% | +27.5pp | +134.0% | ✗ |
+| 2016-12-23 | $109.78 | NVIDIA Q3 FY17 results | 3.00 | -1.00 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +19.1% | +8.1pp | +113.0% | ✗ |
+| 2016-12-30 | $106.74 | NVIDIA Q3 FY17 results | 3.00 | -1.00 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +26.3% | +11.1pp | +118.1% | ✗ |
+| 2017-01-06 | $103.10 | NVIDIA Q3 FY17 results | 3.00 | -1.00 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +33.2% | +17.8pp | +124.6% | ✗ |
+| 2017-01-13 | $103.43 | NVIDIA Q3 FY17 results | 3.00 | -0.95 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +45.0% | +26.6pp | +122.3% | ✗ |
+| 2017-01-20 | $104.01 | NVIDIA Q3 FY17 results | 3.00 | -1.00 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +52.0% | +30.1pp | +119.7% | ✗ |
+| 2017-01-27 | $111.77 | NVIDIA Q3 FY17 results | 3.00 | -0.95 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +44.3% | +23.9pp | +103.2% | ✗ |
+| 2017-02-03 | $114.38 | NVIDIA Q3 FY17 results | 3.00 | -1.00 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +27.6% | +5.5pp | +96.8% | ✗ |
+| 2017-02-10 | $113.62 | NVIDIA Q4 FY17 results | 2.85 | -0.74 | 5.63x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +31.4% | +10.3pp | +96.8% | ✗ |
+| 2017-02-17 | $107.23 | NVIDIA Q4 FY17 results | 2.85 | -0.45 | 3.63x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +47.8% | +25.6pp | +106.9% | ✗ |
+| 2017-02-24 | $101.46 | NVIDIA Q4 FY17 results | 2.85 | -0.27 | 2.64x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +57.9% | +35.8pp | +117.3% | ✗ |
+| 2017-03-03 | $98.43 | NVIDIA Q4 FY17 results | 2.85 | -0.13 | 2.23x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +60.2% | +38.4pp | +122.3% | ✗ |
+| 2017-03-10 | $99.12 | NVIDIA Q4 FY17 results | 2.85 | -0.14 | 2.30x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +53.2% | +33.6pp | +118.9% | ✗ |
+| 2017-03-17 | $106.07 | NVIDIA Q4 FY17 results | 2.85 | -0.34 | 3.13x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +61.2% | +38.3pp | +103.0% | ✗ |
+| 2017-03-24 | $107.47 | NVIDIA Q4 FY17 results | 2.85 | -0.36 | 3.37x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +66.3% | +42.5pp | +99.1% | ✗ |
+| 2017-03-31 | $108.93 | NVIDIA Q4 FY17 results | 2.85 | -0.46 | 3.56x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +65.9% | +41.8pp | +95.5% | ✗ |
+| 2017-04-07 | $100.33 | NVIDIA Q4 FY17 results | 2.85 | -0.09 | 2.34x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +91.5% | +64.5pp | +111.6% | ✗ |
+| 2017-04-13 | $95.49 | NVIDIA Q4 FY17 results | 2.85 | +0.11 | 1.88x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +100.2% | +71.1pp | +121.6% | ✗ |
+| 2017-04-21 | $101.68 | NVIDIA Q4 FY17 results | 2.85 | -0.10 | 2.37x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +84.4% | +56.5pp | +107.3% | ✗ |
+| 2017-04-28 | $104.30 | NVIDIA Q4 FY17 results | 2.85 | -0.17 | 2.66x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +71.9% | +44.4pp | +101.4% | ✗ |
+| 2017-05-05 | $103.86 | NVIDIA Q4 FY17 results | 2.85 | -0.14 | 2.52x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +77.4% | +50.5pp | +101.3% | ✗ |
+| 2017-05-11 | $126.50 | NVIDIA Q1 FY18 results | 2.50 | -1.15 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +34.4% | +9.8pp | +64.0% | ✗ |
+| 2017-05-19 | $136.00 | NVIDIA Q1 FY18 results | 2.50 | -1.28 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +15.9% | -8.3pp | +51.2% | ✓ |
+| 2017-05-26 | $141.84 | NVIDIA Q1 FY18 results | 2.50 | -1.37 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +3.1% | -18.1pp | +43.7% | ✓ |
+| 2017-06-02 | $143.64 | NVIDIA Q1 FY18 results | 2.50 | -1.39 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -4.8% | -21.7pp | +40.6% | ✓ |
+| 2017-06-09 | $149.60 | NVIDIA Q1 FY18 results | 2.50 | -1.47 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -1.9% | -24.3pp | +33.4% | ✓ |
+| 2017-06-16 | $151.62 | NVIDIA Q1 FY18 results | 2.50 | -1.47 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -3.8% | -26.7pp | +30.1% | ✓ |
+| 2017-06-23 | $153.83 | NVIDIA Q1 FY18 results | 2.50 | -1.47 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -0.6% | -25.7pp | +26.8% | ✓ |
+| 2017-06-30 | $144.56 | NVIDIA Q1 FY18 results | 2.50 | -1.31 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +14.5% | -11.0pp | +33.8% | ✓ |
+| 2017-07-07 | $146.76 | NVIDIA Q1 FY18 results | 2.50 | -1.33 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +10.0% | -17.5pp | +30.9% | ✓ |
+| 2017-07-14 | $164.95 | NVIDIA Q1 FY18 results | 2.50 | -1.45 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +2.4% | -24.3pp | +15.4% | ✓ |
+| 2017-07-21 | $168.10 | NVIDIA Q1 FY18 results | 2.50 | -1.47 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +0.9% | -23.6pp | +12.3% | ✓ |
+| 2017-07-28 | $164.39 | NVIDIA Q1 FY18 results | 2.50 | -1.47 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +7.2% | -19.3pp | +13.9% | ✓ |
+| 2017-08-04 | $167.21 | NVIDIA Q1 FY18 results | 2.50 | -1.63 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -2.9% | -25.3pp | +11.0% | ✓ |
+| 2017-08-11 | $155.96 | NVIDIA Q2 FY18 results | 2.65 | -1.32 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -0.4% | -24.1pp | +17.7% | ✓ |
+| 2017-08-18 | $161.50 | NVIDIA Q2 FY18 results | 2.65 | -1.32 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -0.4% | -23.7pp | +12.4% | ✓ |
+| 2017-08-25 | $163.81 | NVIDIA Q2 FY18 results | 2.65 | -1.32 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -0.2% | -20.9pp | +9.7% | ✓ |
+| 2017-09-01 | $170.46 | NVIDIA Q2 FY18 results | 2.65 | -1.32 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -1.0% | -23.2pp | +4.1% | ✓ |
+| 2017-09-08 | $163.69 | NVIDIA Q2 FY18 results | 2.65 | -1.32 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +9.9% | -15.2pp | +7.4% | ✓ |
+| 2017-09-15 | $180.11 | NVIDIA Q2 FY18 results | 2.65 | -1.32 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +1.7% | -22.8pp | -3.4% | ✓ |
+| 2017-09-22 | $179.00 | NVIDIA Q2 FY18 results | 2.65 | -1.32 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -2.8% | -26.6pp | -3.8% | ✓ |
+| 2017-09-29 | $178.77 | NVIDIA Q2 FY18 results | 2.65 | -1.30 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -3.2% | -25.0pp | -4.8% | ✓ |
+| 2017-10-06 | $181.30 | NVIDIA Q2 FY18 results | 2.65 | -1.32 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +1.1% | -18.8pp | -7.3% | ✓ |
+| 2017-10-13 | $194.59 | NVIDIA Q2 FY18 results | 2.65 | -1.32 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -3.8% | -24.1pp | -14.3% | ✓ |
+| 2017-10-20 | $196.90 | NVIDIA Q2 FY18 results | 2.65 | -1.32 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -2.6% | -22.6pp | -15.8% | ✓ |
+| 2017-10-27 | $201.86 | NVIDIA Q2 FY18 results | 2.65 | -1.32 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +1.9% | -19.2pp | -18.0% | ✓ |
+| 2017-11-03 | $208.69 | NVIDIA Q2 FY18 results | 2.65 | -1.32 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -2.3% | -24.8pp | -20.7% | ✓ |
+| 2017-11-10 | $216.14 | NVIDIA Q3 FY18 results | 2.45 | -1.55 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -3.3% | -27.1pp | -23.4% | ✓ |
+| 2017-11-17 | $211.36 | NVIDIA Q3 FY18 results | 2.45 | -1.68 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -2.8% | -27.8pp | -21.5% | ✓ |
+| 2017-11-24 | $216.96 | NVIDIA Q3 FY18 results | 2.45 | -1.68 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | -2.3% | -25.8pp | -23.0% | ✓ |
+| 2017-12-01 | $197.68 | NVIDIA Q3 FY18 results | 2.45 | -1.52 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +10.3% | -12.5pp | -15.0% | ✓ |
+| 2017-12-08 | $191.49 | NVIDIA Q3 FY18 results | 2.45 | -1.52 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +11.5% | -11.1pp | -11.7% | ✓ |
+| 2017-12-15 | $191.56 | NVIDIA Q3 FY18 results | 2.45 | -1.52 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +17.6% | -4.9pp | -11.0% | ✓ |
+| 2017-12-22 | $195.27 | NVIDIA Q3 FY18 results | 2.45 | -1.52 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +23.2% | -0.7pp | -11.8% | ✓ |
+| 2017-12-29 | $193.50 | NVIDIA Q3 FY18 results | 2.45 | -1.52 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +23.1% | -1.9pp | -10.1% | ✓ |
