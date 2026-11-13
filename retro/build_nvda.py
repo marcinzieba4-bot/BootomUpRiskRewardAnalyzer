@@ -43,6 +43,11 @@ and the encodings above are unchanged; the one builder change is the text for a 
 the Q1 FY15 results, released before the open of 2014-05-06 after a preliminary draft was emailed internally, with the Q2 FY15
 outlook only in the release of May 8), whose dates take the latest quarter's revenue growth, as for any print with no guide in scope.
 
+From 2018 on (decided on 2026-11-13 before any 2018-2021 date was built or scored; retro/README.md, "NVDA 2018-2021"): dividend rates are
+per-share figures and are restated for splits like the rest (the four-for-one split effective 2021-07-20), and a 10-K that states no
+rate (FY2021) leaves the dividend to the filings that state one; an outlook update between releases is a guide of its own (in numbers,
+2019-01-28) or words on the last numeric range (2021-04-12).
+
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
 is the first trading day after it. NVIDIA released after the close, so a print is dated the next trading day; on a Friday that is
 the week's last trading day, and the print meets its close (public before the open; the AVGO rule).
@@ -54,6 +59,7 @@ Usage
   python3 retro/build_nvda.py --weekly 2009-01-05 2009-12-31
   python3 retro/build_nvda.py --weekly 2010-01-04 2013-12-31
   python3 retro/build_nvda.py --weekly 2014-01-06 2017-12-31
+  python3 retro/build_nvda.py --weekly 2018-01-01 2021-12-31
   python3 retro/build_nvda.py 2008-02-15
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/NVDA/<AS_OF>
 """

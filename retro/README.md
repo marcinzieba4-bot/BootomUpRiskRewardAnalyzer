@@ -14989,6 +14989,168 @@ Judgement calls that could carry hindsight:
 - the signals (63 classes at BEAR, 39 at XBULL, all in 2014-2015);
 - the restructuring charges and the 14-week Q4 FY16 left in as published (no class moves without the charges).
 
+### NVDA 2018-2021
+
+209 weekly dates, 2018-01-05 to 2021-12-31, on the same method, engine and rule-T thresholds. The fact sheet only gains facts (an append:
+its 2008-2017 content is unchanged) and the 522 earlier models rebuild byte for byte after the builder changes below.
+
+```bash
+python3 retro/build_nvda.py --weekly 2018-01-01 2021-12-31                  # 209 dates, 2018-01-05 .. 2021-12-31
+for c in 2018-01-01 2018-02-09 2018-03-01 2018-05-11 2018-08-17 2018-11-16 2019-01-28 2019-02-15 2019-02-22 \
+         2019-05-17 2019-08-16 2019-11-15 2020-02-14 2020-02-21 2020-05-22 2020-08-20 2020-11-19 2021-02-25 2021-03-01 \
+         2021-04-12 2021-05-21 2021-05-27 2021-07-20 2021-08-19 2021-11-18 2022-01-01; do python3 retro/tools/firewall.py $c NVDA; done
+```
+
+Read: the 16 earnings releases from Q4 FY18 to Q3 FY22 with the CFO commentaries filed beside them, the updated Q4 FY19 guidance of
+2019-01-28, the Q1 FY22 outlook update of 2021-04-12, the FY2018-FY2021 10-Ks (Items 1, 1A, 5, 6, 7 and 8), the 10-Qs of Q1 FY18 to Q3
+FY22 (year-ago inventories; none states a revenue outlook, and neither does any 10-K of the period), and every other 8-K of December
+2017 to December 2021 by its items and exhibits, all read directly, none delegated. The source ids are `NV105`-`NV139`. 329 more strings
+were checked with `verbatim.py`, each against its own filing (1,238 with the earlier 909, all found). Decided on 2026-11-13, before any
+2018-2021 model was built or any 2018-2021 outcome computed:
+
+- **Release timing.** Every earnings 8-K was accepted after the close (16:20-16:27 ET) and is dated the next trading day. The Thursday
+  releases of Q4 FY18 to Q1 FY21 are dated a Friday and meet their own close (2018-02-09, 2018-05-11, 2018-08-17, 2018-11-16,
+  2019-02-15, 2019-05-17, 2019-08-16, 2019-11-15, 2020-02-14, 2020-05-22); from Q2 FY21 the releases come on a Wednesday, are dated the
+  Thursday and put the week's date on the Friday (2020-08-21, 2020-11-20, 2021-02-26, 2021-05-28, 2021-08-20, 2021-11-19). The four
+  10-Ks were accepted after the close (16:31-17:03 ET) and are dated the next trading day: 2018-03-01, 2019-02-22, 2020-02-21,
+  2021-03-01.
+- **Two outlook updates between releases.** The 8-K of 2019-01-28 (accepted 09:04 ET, before the open) "updated its financial guidance
+  for the fourth quarter of fiscal year 2019": "Fourth quarter revenue expected to be $2.20 billion versus previous guidance of $2.70
+  billion", plus or minus 2% in its table. It is a new numeric guide for Q4 FY19 from its own date (the latest guide for a quarter
+  wins): -25.9% to -22.9% against Q4 FY18's $2,911M instead of -9.1% to -5.4%, first on 2019-02-01. The 8-K of 2021-04-12 (accepted
+  14:08 ET, during the session) says "Q1 total revenue is tracking above the $5.30 billion outlook": words, so the last numeric range
+  stands and the words go in the guide line (the ACN rule), from 2021-04-16. The Q4 FY19 release's "For fiscal 2020, revenue is expected
+  to be flat to down slightly." is display only (words; no fiscal-year figure). The 7.01 of 2021-06-28 updates only the tax rate outlook
+  (the Domestication's discrete benefit of "approximately $250 million to $300 million"): it adds nothing.
+- **Guides: the next quarter's revenue, from every release,** "$X billion, plus or minus 2 percent", read against the year-ago quarter
+  from its own release (the level rule): Q1 FY19 $2.90 billion (+46.7% to +52.7%), Q2 FY19 $3.10 billion (+36.2% to +41.8%), Q3 FY19
+  $3.25 billion (+20.8% to +25.8%), Q4 FY19 $2.70 billion (-9.1% to -5.4%; $2.20 billion from 2019-01-28), Q1 FY20 $2.20 billion (-32.8%
+  to -30.0%), Q2 FY20 $2.55 billion (-20.0% to -16.7%), Q3 FY20 $2.90 billion (-10.7% to -7.0%), Q4 FY20 $2.95 billion (+31.1% to +36.5%;
+  "does not include any contribution from the pending acquisition of Mellanox"), Q1 FY21 $3.00 billion (+32.4% to +37.8%; "reduced ... by
+  $100 million" for the coronavirus), Q2 FY21 $3.65 billion (+38.7% to +44.4%; Mellanox "a low-teens percentage" of it), Q3 FY21 $4.40
+  billion (+43.1% to +48.9%), Q4 FY21 $4.80 billion (+51.5% to +57.7%), Q1 FY22 $5.30 billion (+68.6% to +75.5%), Q2 FY22 $6.30 billion
+  (+59.7% to +66.2%), Q3 FY22 $6.80 billion (+41.0% to +46.8%), Q4 FY22 $7.40 billion (+45.0% to +50.9%). The gross margin bullets and the
+  outlook sentences around them are display only; no margin step.
+- **Mellanox, as published.** NVIDIA closed the acquisition on 2020-04-27, the first day of Q2 FY21 ("NVIDIA closed its acquisition of
+  Mellanox Technologies Ltd. on April 27, 2020."): from that quarter its revenue, costs, expenses and inventories are in the release's
+  figures and not in the year-ago quarter's, and the guides include it from Q2 FY21. An acquisition stays in the growth as reported (the
+  BKR pipeline rule); its acquisition costs (inventory step-up in cost of revenue, amortization, transaction costs) stay in the margins.
+- **History: four more vintages, the ten fiscal years to the 10-K's year,** each year from the latest filing that reports it: the FY2018
+  10-K adds FY2018 ($4.82) and drops FY2008; the FY2019 10-K adds FY2019 ($6.63) and drops FY2009; the FY2020 10-K adds FY2020 ($4.52)
+  and drops FY2010; the FY2021 10-K has no selected financial data ("No longer required as we have adopted certain provisions within the
+  amendments to Regulation S-K that eliminate Item 301."), so it gives FY2019-FY2021 from its statement of income (FY2021 $6.90) and the
+  earlier years keep the latest 10-K that reported them (the ACN FY21 rule): FY2016-FY2018 the FY2020 10-K, FY2015 the FY2019 10-K, FY2014
+  the FY2018 10-K, FY2013 the FY2017 10-K, FY2012 the FY2016 10-K. Each Q4 print extends the history from its release to its 10-K.
+- **The window loses FY2009 and FY2010 by the rules already in place.** While ten years back from AS_OF falls inside the excluded
+  FY2009-FY2010 days, the window starts with FY2011 (2010-02-01) and its label counts its years: "10-yr ex-FY09 ex-FY10" to 2018-01-19,
+  "8.0-yr ex-FY09 ex-FY10" from 2018-01-26 (ten years back is then a FY2009 day), "9.0-yr ex-FY10" from 2019-01-25 (FY2009's days have
+  left the ten years), "10-yr ex-FY10" from 2019-12-27 and "10-yr" from 2020-01-31 (so have FY2010's).
+- **Current-FY EPS: still no EPS guide in any filing,** so the last full year stands: FY17's $2.57 for FY18E to 2018-02-02, FY18's $4.82
+  for FY19E, FY19's $6.63 for FY20E, FY20's $4.52 for FY21E, FY21's $6.90 for FY22E ($1.725 from 2021-07-20, after the split).
+- **No year from FY2018 to FY2021 is a loss or a distorted year.** The tax reform benefits the releases list are benefits, so the mirror
+  test applies, and they are small: FY2018's "Provisional tax benefit from income tax reform" of $133M against $3,047M of net income,
+  FY2019's $368M against $4,141M. NVIDIA published no figure excluding only them (its non-GAAP figure also excludes stock-based
+  compensation), so GAAP stands (the ACN FY22 rule for a one-off without a figure excluding it), and the Q4 prints' notes say so. FY2020's
+  listed items besides stock-based compensation and acquisition costs are $15M; FY2021's acquisition-related and other costs ($836M,
+  mostly Mellanox amortization and inventory step-up) and IP-related costs ($38M) against $4,332M.
+- **The four-for-one split.** The 8-K of 2021-05-21 (accepted 09:02 ET) declared it, "conditioned on obtaining stockholder approval" on
+  June 3, "to be distributed after the close of trading on July 19, 2021"; the shares traded split-adjusted from 2021-07-20, Yahoo's split
+  date, which the builder checks. Per-share facts on a basis before it are restated from 2021-07-20 (the share basis rule: ÷4, shares x4),
+  and prices are as traded on that basis (Yahoo's series x10 from 2021-07-20, x40 before). The releases from Q2 FY22 are after the split
+  and stand as published. A builder change restates dividend rates too, which are per-share figures: no earlier dividend was on a basis
+  before a split, so no earlier model changes.
+- **Dividends,** each from the first filing that states the rate: $0.15 a quarter (the Q3 FY18 release; the FY2018 10-K), $0.16 from the
+  Q3 FY19 release (2018-11-16; restated by the FY2019 and FY2020 10-Ks), $0.04 from 2021-07-20 ($0.16 before the split). The FY2021 10-K
+  states no rate (only the dividends paid), so the latest rate a filing states stands: a builder change lets a vintage with no rate leave
+  the dividend to the filings that state one (no earlier vintage lacks a rate, so no earlier model changes).
+- **Signals,** from each release's statements as before, each against the year-ago quarter in the same release; inventories against
+  the year-ago quarter's 10-Q (a Q4's from the release's prior year-end column). Charges stay in, as published: the excess DRAM and
+  component charges of Q4 FY19 (about $120 million, as the January update said) and the Mellanox acquisition costs from Q2 FY21. Q4 FY21
+  is a 14-week quarter against 13 (FY2021 was a 53-week year, which the FY2021 10-K states after the release), used as published.
+- **Debt, display only:** the last of the 1.00% convertible notes (to Q4 FY19), the notes due 2021 and 2026, the $5 billion of notes of
+  March 2020 and the $5 billion of June 2021 (long-term and short-term debt lines as the balance sheets show them).
+- **Durability: CYCLICAL, risk 2, kept** (no FY2018-FY2021 10-K calls the business cyclical; the BKR FY2015 rule). The "why" quotes each
+  10-K: NVIDIA "invented the graphics processing unit" and "extended our focus in recent years to the revolutionary field of artificial
+  intelligence, or AI" (FY2018, FY2019), "NVIDIA pioneered accelerated computing to help solve the most challenging computational
+  problems" (FY2020, FY2021); a market "intensely competitive"; the suppliers of integrated GPUs and accelerated computing among its
+  competitors. AI is the market NVIDIA serves in its own words, not a substitute for its products; CRYPTO (live from 2020-10-21) is scoped
+  to payments, banks and exchanges, and the 10-Ks' cryptocurrency mining is a source of NVIDIA's demand; EV (live from 2020-01-01) is
+  scoped to combustion powertrains; so no theme is in scope and the watch list is empty through 2021.
+- **Segment bridge** (display only): GPU, Tegra Processor and All Other (FY2018 All Other $43M, the end of the Intel license; none in
+  FY2019-FY2020, so the group leaves the bridge); the FY2021 10-K's Graphics and Compute & Networking.
+- **Adds nothing:** the Mellanox merger agreement (2019-03-11), antitrust approval (2020-04-16), closing (2020-04-27; its effect is in
+  the prints) and pro forma 8-K/A (2020-06-30); the notes (2020-03-31, 2021-06-16) and the commercial paper program (2017-12-15); the Arm
+  agreement (2020-09-14); the tax-rate update (2021-06-28); the variable compensation plans (goals not stated in numbers); and the
+  officer, director, charter and vote 8-Ks (2018-05-21, 2019-04-01, 2019-05-29, 2019-06-17, 2020-06-15, 2020-07-13, 2020-11-09,
+  2021-06-04).
+
+Controls: altering one value of each new print (its quarter EPS, and each Q4 print's full-year revenue), guide (its quote, or its
+words), vintage (its last EPS year and its dividend note), dividend (its rate) and the split (its label), rerun over all 731 dates of
+2008-2021, changes no date before its publication and changes the first weekly date on or after it (for the split, on or after its
+effective date, when per-share facts first change): 47 of 48. The other is inert by design: the FY2021 10-K's dividend note, which
+carries no rate, so the dividend comes from the filings that state one. The Q4 prints' full-year revenue lives exactly from each print
+to its 10-K (2018-02-09 to 2018-02-23, 2019-02-15, 2020-02-14, 2021-02-26); the January 2019 update lives from 2019-02-01 to the Q4 FY19
+print, and the April 2021 words from 2021-04-16 to the Q1 FY22 print. A scan of the 731 models for the source ids, titles, text clauses
+and figures (four significant digits or more) of every 2018-2021 fact finds 80 of 801,409 (model, later fact) pairs before
+publication (after dropping 668 tokens an earlier fact or the engine already carries), none a leak: 45 are guides that repeat earlier
+levels (the Q3 FY20 guide's $2,842.0M-$2,958.0M is the Q1 FY19 guide's $2.90 billion plus or minus 2%; the Q1 FY20 guide's
+$2,156.0M-$2,244.0M is the January update's $2.20 billion); 26 are earlier guide levels equal to later figures (Q2 FY12's $1,000.5M and
+Q3 FY21's $4,400.0M against Q2 FY22's short-term debt and six-month operating income); and 9 are a P/E maximum (108.6), closes ($109.78,
+$26.07) and a trading-day count (2244) equal to later figures. Rebuilding the 522 dates of 2008-2017 gives the same models byte for
+byte; no file another ticker's builder reads has changed. The firewall runs on the committed build; its result follows that commit. All
+209 dates pass `retro_tool run`; their only warnings are four-digit numbers read as calendar years: the P/E window's count of trading
+days (2,072-2,099 in 2018), Q2 FY22's operating margin change (+2,072bp), the fiscal years of the capital return plans ("For fiscal
+2019", "by the end of fiscal 2020") and the notes' maturities (2021, 2026).
+
+Seen in the build (method behaviour, not tuned):
+- **RICH on 204 dates, FAIR on 5;** legacy tier AVOID on 143, BUY on 45, ACCUMULATE on 13 and WATCHLIST on 8. By year: 2018 RICH on all 52
+  (AVOID 44, BUY 5, ACCUMULATE 2, WATCHLIST 1); 2019 RICH 47 and FAIR 5 (BUY 40, ACCUMULATE 10, WATCHLIST 2); 2020 RICH on all 53 (AVOID
+  47, WATCHLIST 5, ACCUMULATE 1); 2021 RICH and AVOID on all 52.
+- **January 2018 rests on FY17's $2.57:** $215.40-243.33 is 83.8-94.7x, the 100th percentile of a window whose median is 19.7-19.8x,
+  459-628% over a 13-15x floor ($33.41-38.55).
+- **From the Q4 FY18 print FY19E is FY18's $4.82.** To 2018-11-09 the stock ($198.29-281.02) is 41.1-58.3x (the 88th-100th percentile of
+  a median of 19.8-20.5x), 216-348% over a 13x floor ($62.66): RICH and AVOID, but for WATCHLIST on 2018-10-26. BASE follows the guides
+  (+48.1-49.3%/yr, +37.4%, +21.7%); BULL is the FY2011-FY2018 CAGR (+41.2%/yr) and XBULL the FY2016-FY2018 run (+111.3%/yr) from the
+  FY2018 10-K; BEAR stays FY2014's fall (-17.8%/yr).
+- **From the Q3 FY19 print (2018-11-16) the price falls and the class stays RICH.** The Q4 FY19 guide (-9.1% to -5.4%) puts BASE at
+  -8.8%/yr and the 2019-01-28 update at -26.0% from 2019-02-01; the stock at $129.57-164.43 (2018) and $136.19-160.15 (2019 to
+  2019-02-08) is 26.9-34.1x, the 69th-79th percentile, 88-162% over the floor: RICH, with tier BUY or ACCUMULATE (Ratio B 0.50-0.92).
+- **2019 on FY19's $6.63:** to 2019-11-08 the stock ($135.46-207.78) is 20.4-31.3x (the 46th-79th percentile of a median of
+  20.6-21.1x), 36-109% over a 15x floor ($99.45): RICH on every date, tier BUY on 36 and ACCUMULATE on 3 (Ratio B 0.28-0.83 with BASE at
+  -32.7% to -10.3%/yr on the Q1-Q3 FY20 guides and the proxy composite at 1.35-1.50). The Q3 FY20 print's Q4 FY20 guide (+31.1% to
+  +36.5%) lifts BASE to +32.4%: FAIR on 2019-11-15 to 2019-12-13 ($204.19-223.99, ACCUMULATE), then RICH.
+- **2020-2021: RICH on every date.** From the Q4 FY20 print FY21E is FY20's $4.52, and BEAR is FY2020's fall (-31.8%/yr, $6.63 to $4.52):
+  $205.75-598.45 is 45.5-132.4x to 2021-02-19; from the Q4 FY21 print FY22E is FY21's $6.90 ($498.46-819.48, 72.2-118.8x) and from
+  2021-07-20 its $1.725 after the split ($194.99-329.85, 113.0-191.2x): the 95th-100th percentile of a window whose median rises from
+  21.2x to 26.1x, 168-1,025% over a 15-18x floor. BASE follows the guides: +33.9-34.6%/yr (Q1 FY21), +41.0% (Q2 FY21, with Mellanox),
+  +45.5%, +54.1%, +71.4-71.8% (Q1 FY22), +62.7%, +43.7%, +47.7%; BULL equals BASE from 2020-02-14 and XBULL stays +111.3%/yr.
+- **The proxy composite** is 2.45 on Q3 FY18, 2.65 on Q4 FY18, 2.85 on Q1-Q2 FY19, 2.00 on Q3 FY19 (inventories +44.7pp over revenue),
+  1.35 on Q4 FY19 and Q1 FY20 (revenue -24.3% and -30.8%, gross margin -713bp and -611bp, the opex gap +49.7pp and +52.1pp, inventories
+  +122.1pp and +109.7pp over revenue, operating margin -2,353bp and -2,425bp), 1.50 on Q2 FY20, 2.15 on Q3 FY20, 3.20 on Q4 FY20, 3.00 on
+  Q1 FY21, 2.35 on Q2-Q3 FY21, 2.20 on Q4 FY21, 2.65 on Q1 FY22, 3.15 on Q2 FY22 and 2.85 on Q3 FY22.
+- **Robustness:** all eight variants agree on 185 of 209 dates, seven on 13 and six on 11.
+
+How far each call moves the classes (the 209 dates rebuilt with one encoding changed and classified offline; no outcome consulted):
+- every signal at its BEAR value: 5 classes (the FAIR dates of 2019-11-15 to 2019-12-13, to RICH), no tier; at its XBULL value: 52
+  classes (2018-11-16 to 2019-11-08; RICH to FAIR, and to CHEAP on 2019-05-31), no tier;
+- the next-quarter guides unused (the latest quarter's revenue growth throughout): 15 classes (RICH to FAIR on 10 dates of 2018-11-23 to
+  2019-02-08, FAIR to RICH on the 5 of 2019-11-15 to 2019-12-13), 3 tiers; the 2019-01-28 update unused: none;
+- FY2009 and FY2010 kept at the company's non-GAAP $0.53 and $0.26: 3 classes (RICH to FAIR on 2019-05-31, 2020-01-03 and 2020-01-31),
+  25 tiers;
+- DURABLE instead of CYCLICAL: none.
+No call above moves a date after 2020-01-31: the RICH calls of 2020-2021 rest on GAAP EPS of the last full year and the stock's own P/E
+history.
+
+Judgement calls that could carry hindsight:
+- the next-quarter guides used at all (15 classes), and the January 2019 update read as a new guide (no class moves without it);
+- GAAP EPS with the tax reform benefits of FY2018-FY2019 left in, no figure excluding only them being published;
+- FY2009 and FY2010 still excluded while in the history (3 classes);
+- Mellanox in the growth and the guides as published, and its acquisition costs in the margins;
+- the window starting at FY2011 while the excluded years lie ten years back (an "8.0-yr" to "9.9-yr" window in 2018-2019), a mechanical
+  reading of the r2 rule that no variant tests;
+- the signals (52 classes at XBULL, 5 at BEAR); CYCLICAL kept, and no theme for AI, cryptocurrency mining or autonomous driving read as
+  NVIDIA's own markets by a builder who knows what they became (text only).
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
