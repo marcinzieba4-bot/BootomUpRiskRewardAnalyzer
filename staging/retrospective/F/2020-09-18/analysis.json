@@ -1,0 +1,318 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "F",
+ "company": "Ford Motor Company",
+ "as_of": "2020-09-18",
+ "price_date": "2020-09-18",
+ "price": 7.23,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); automaker signals, the early era",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "Ford Motor Company: 'We are a global company based in Dearborn, Michigan.' ('Our vehicle brands are Ford and Lincoln.'); among its risk factors, 'Industry sales volume in any of our key markets can be volatile and could decline if there is a financial crisis, recession, or significant geopolitical event.' and 'Ford’s results are dependent on sales of larger, more profitable vehicles, particularly in the United States.' (its own FY2019 10-K); EV (live from about 2020) is not on the watch list: no risk factor of this 10-K names a shift away from Ford's combustion-engine vehicles, so its words on larger, more profitable vehicles stay here (the PEP obesity rule)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "Ford Motor Company: 'We are a global company based in Dearborn, Michigan.' ('Our vehicle brands are Ford and Lincoln.'); among its risk factors, 'Industry sales volume in any of our key markets can be volatile and could decline if there is a financial crisis, recession, or significant geopolitical event.' and 'Ford’s results are dependent on sales of larger, more profitable vehicles, particularly in the United States.' (its own FY2019 10-K); EV (live from about 2020) is not on the watch list: no risk factor of this 10-K names a shift away from Ford's combustion-engine vehicles, so its words on larger, more profitable vehicles stay here (the PEP obesity rule). durable franchise (obsolescence risk 2/5); price rich; Ratio B 1.82x; +1% to EPP floor; model-vs-market gap -1.40; conservative 2yr +15%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": 1.82,
+  "ratio_b_fmt": "1.82x",
+  "epp": 7.14,
+  "epp_gap_pct": 1.3,
+  "epp_adj": 0.0,
+  "proxy_composite": 1.45,
+  "sca": 0.15,
+  "adj_composite": 1.6,
+  "market_composite": 3.0,
+  "adj_gap": -1.4,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": 15.2,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.62,
+    "pe": 6.4,
+    "price": 4,
+    "desc": "EPS -28.0%/yr (worst year FY10-FY19, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 0.3,
+    "pe": 7.6,
+    "price": 2,
+    "desc": "EPS +-49.6%/yr (Q2 revenue + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 1.07,
+    "pe": 8.7,
+    "price": 9,
+    "desc": "EPS +-5.1%/yr (FY10-FY19 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 1.56,
+    "pe": 10.6,
+    "price": 17,
+    "desc": "EPS +14.6%/yr (best 2-yr run FY10-FY19); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 1.82,
+   "epp_gap_pct": 1.3,
+   "adj_gap": -1.4,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 15.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.86,
+   "epp_gap_pct": 1.3,
+   "adj_gap": -1.02,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 15.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 4.19,
+   "epp_gap_pct": 1.3,
+   "adj_gap": -1.63,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 15.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 1.17,
+   "epp_gap_pct": 1.3,
+   "adj_gap": -1.28,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 15.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 1.82,
+   "epp_gap_pct": 1.3,
+   "adj_gap": -1.44,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 15.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 1.82,
+   "epp_gap_pct": 1.3,
+   "adj_gap": -1.1,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 15.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 1.82,
+   "epp_gap_pct": -32.5,
+   "adj_gap": -1.2,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 15.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 1.82,
+   "epp_gap_pct": 1.3,
+   "adj_gap": -1.24,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 15.2,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "RICH"
+ ],
+ "summary": "F (retrospective, 2020-09-18) ✕ AVOID — Ratio B 1.82x (44.7% downside to Bear $4 / +24.5% upside to Bull $9) | Adj composite 1.60 vs market 3.00: gap -1.40 [OVERVALUED] | +1% above the EPP floor $7 (6x FY20E $1.19) | Conservative 2-yr case: +15.2% total (+7.6%/yr) | At 6.1x FY20E the 15% hurdle price $10 sits above the BULL case; wholesale units -52.7% in Q2 2020, forward revenues -50.1% (no Q3 2020 revenue guide, Q2 2020 revenue as reported); EV is live but no 10-K risk factor names a shift away from Ford's combustion-engine vehicles yet.",
+ "sources": [
+  {
+   "id": "F10",
+   "published": "2020-02-05",
+   "filed": "2020-02-05 12:01 ET (during the session)",
+   "title": "Ford FY2019 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799620000010/f1231201910-k.htm",
+   "supports": "FY2019 annual report"
+  },
+  {
+   "id": "F109",
+   "published": "2012-01-27",
+   "filed": "2012-01-27 08:15 ET (before the open)",
+   "title": "Ford Q4 2011 results (8-K exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000115752312000341/a50146220ex99.htm",
+   "supports": "Q4 2011 results release: wholesales, revenue, pre-tax results, Ford Credit, EPS excluding special items"
+  },
+  {
+   "id": "F113",
+   "published": "2013-01-29",
+   "filed": "2013-01-29 07:43 ET (before the open)",
+   "title": "Ford Q4 2012 results (8-K exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799613000008/exhibit99toearnings8-kdate.htm",
+   "supports": "Q4 2012 results release: wholesales, revenue, pre-tax results, Ford Credit, EPS excluding special items"
+  },
+  {
+   "id": "F117",
+   "published": "2014-01-28",
+   "filed": "2014-01-28 07:25 ET (before the open)",
+   "title": "Ford Q4 2013 results (8-K exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799614000004/exhibit99toearnings8-kdate.htm",
+   "supports": "Q4 2013 results release: wholesales, revenue, pre-tax results, Ford Credit, EPS excluding special items"
+  },
+  {
+   "id": "F126",
+   "published": "2016-01-07",
+   "filed": "2016-01-07 08:16 ET (before the open)",
+   "title": "Ford 8-K of 2016-01-07 (mark-to-market pension accounting; exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799616000076/exhibit992tomtm8-kdated1x7.htm",
+   "supports": "2013 and 2014 EPS excluding special items revised for mark-to-market pension and OPEB accounting"
+  },
+  {
+   "id": "F129",
+   "published": "2016-02-11",
+   "filed": "2016-02-11 08:13 ET (before the open)",
+   "title": "Ford FY2015 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799616000092/f1231201510-k.htm",
+   "supports": "FY2015 annual report (revised for mark-to-market pension accounting)"
+  },
+  {
+   "id": "F144",
+   "published": "2018-02-08",
+   "filed": "2018-02-08 11:41 ET (during the session)",
+   "title": "Ford FY2017 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799618000015/f1231201710-k.htm",
+   "supports": "FY2017 annual report"
+  },
+  {
+   "id": "F122",
+   "published": "2015-02-13",
+   "filed": "2015-02-13 07:03 ET (before the open)",
+   "title": "Ford FY2014 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799615000013/f1231201410-k.htm",
+   "supports": "FY2014 annual report"
+  },
+  {
+   "id": "F135",
+   "published": "2017-02-09",
+   "filed": "2017-02-09 08:44 ET (before the open)",
+   "title": "Ford FY2016 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799617000013/f1231201610-k.htm",
+   "supports": "FY2016 annual report"
+  },
+  {
+   "id": "F9",
+   "published": "2019-02-22",
+   "filed": "2019-02-21 16:10 ET (after the close)",
+   "title": "Ford FY2018 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799619000012/f1231201810-k.htm",
+   "supports": "FY2018 annual report"
+  },
+  {
+   "id": "F107",
+   "published": "2013-02-19",
+   "filed": "2013-02-19 07:12 ET (before the open)",
+   "title": "Ford FY2012 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799613000014/f12312012-10k.htm",
+   "supports": "FY2012 annual report"
+  },
+  {
+   "id": "F159",
+   "published": "2020-02-05",
+   "filed": "2020-02-04 16:14 ET (after the close)",
+   "title": "Ford Q4 2019 results (8-K exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799620000008/exhibit99tofebruary2020e.htm",
+   "supports": "Q4 2019 results release: income statements, EPS reconciliation, Ford Credit"
+  },
+  {
+   "id": "F157",
+   "published": "2019-10-24",
+   "filed": "2019-10-23 16:10 ET (after the close)",
+   "title": "Ford Q3 2019 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799619000076/exhibit991tooctober2019e.htm",
+   "supports": "Q3 2019 results release, the 2019 adjusted EPS guide"
+  },
+  {
+   "id": "F158",
+   "published": "2019-10-24",
+   "filed": "2019-10-23 18:35 ET (after the close)",
+   "title": "Ford Q3 2019 Form 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799619000078/f0930201910-q.htm",
+   "supports": "Q3 2019 wholesale units and segment note"
+  },
+  {
+   "id": "F161",
+   "published": "2020-04-29",
+   "filed": "2020-04-28 16:12 ET (after the close)",
+   "title": "Ford Q1 2020 results (8-K exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799620000039/exhibit99toapril282020ea.htm",
+   "supports": "Q1 2020 results release"
+  },
+  {
+   "id": "F162",
+   "published": "2020-04-29",
+   "filed": "2020-04-28 19:03 ET (after the close)",
+   "title": "Ford Q1 2020 Form 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799620000041/f0331202010-q.htm",
+   "supports": "Q1 2020 wholesale units and segment note"
+  },
+  {
+   "id": "F163",
+   "published": "2020-07-31",
+   "filed": "2020-07-30 19:56 ET (after the close)",
+   "title": "Ford Q2 2020 results (8-K exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799620000056/exhibit99tojuly302020for.htm",
+   "supports": "Q2 2020 results release"
+  },
+  {
+   "id": "F164",
+   "published": "2020-07-31",
+   "filed": "2020-07-30 20:47 ET (after the close)",
+   "title": "Ford Q2 2020 Form 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799620000057/f0630202010-q.htm",
+   "supports": "Q2 2020 wholesale units and segment note"
+  },
+  {
+   "id": "F160",
+   "published": "2020-03-19",
+   "filed": "2020-03-19 09:07 ET (before the open)",
+   "title": "Ford 8-K of 2020-03-19 (exhibit 99: dividend suspended, 2020 guidance withdrawn)",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799620000020/exhibit99march192020pres.htm",
+   "supports": "the dividend suspension and the withdrawal of the 2020 guidance"
+  },
+  {
+   "id": "A0",
+   "published": "2020-09-18",
+   "title": "Yahoo Finance daily prices, F and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/F/history",
+   "supports": "close $7.23 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-14"
+}

@@ -552,6 +552,12 @@ try:
         v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}
     if TICKER == "F":      # a later vintage excluding a year with planted share and margin notes, and a later display-only guide for every
                            # year guided before CUTOFF (the latest guide for a year wins) (F 2022-2026)
+        # the planted print and vintage belong to the era the cutoff's dates are built in (F 2019-2021: the early era's records for 2021
+        # carry era "r2008", and each builder reads only its own era's)
+        for x in (last, v):
+            x.pop("era", None)
+            if cutoff < "2022-01-01":
+                x["era"] = "r2008"
         v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}
         v.update(shares_note="PLANTED", prev_fy_margin_note="PLANTED", prev_fy_ws_note="PLANTED", cash_return_text="PLANTED",
                  dividend_note="PLANTED", groups=[["PLANTED", 1, -99]], groups_basis="PLANTED", normalization="PLANTED")

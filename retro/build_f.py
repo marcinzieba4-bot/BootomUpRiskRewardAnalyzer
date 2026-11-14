@@ -103,6 +103,9 @@ def check_print(p):
 def build(as_of, facts, raw, spx, engine, out):
     if as_of not in raw:
         sys.exit(f"{as_of} is not a trading day")
+    # the early era's records for 2019-2021 (era "r2008") are not inputs here: this era has its own Q2 and Q3 2021 prints and FY2020 vintage
+    facts = {**facts, "prints": [p for p in facts["prints"] if p.get("era") != "r2008"],
+             "history_vintages": [v for v in facts["history_vintages"] if v.get("era") != "r2008"]}
     chart = retro_tool.chart("F")
     fx = retro_tool.split_factor(chart, as_of)
     assert fx == 1.0, "a split after 2000-08-03 needs its encoding first (prices on the AS_OF share basis, the UNP rule)"
@@ -385,6 +388,10 @@ def check_print_r2008(p):
 def build_r2008(as_of, facts, raw, spx, engine, out):
     if as_of not in raw:
         sys.exit(f"{as_of} is not a trading day")
+    # the 2022 era's own records for 2021 (its Q2 and Q3 2021 prints and its FY2020 vintage) are not inputs here: the early era has its
+    # own, marked era "r2008" (retro/README.md, "F 2019-2021")
+    facts = {**facts, "prints": [p for p in facts["prints"] if p["fy"] < 2021 or p.get("era") == "r2008"],
+             "history_vintages": [v for v in facts["history_vintages"] if v["published"] < "2021-01-01" or v.get("era") == "r2008"]}
     chart = retro_tool.chart("F")
     assert retro_tool.split_factor(chart, as_of) == 1.0, "a split after 2000-08-03 needs its encoding first"
     assert not [x for x in facts.get("splits", []) if x["published"] <= as_of], "the F builder has no split encoding"
@@ -393,7 +400,10 @@ def build_r2008(as_of, facts, raw, spx, engine, out):
         for y, end in v.get("fiscal_year_ends", {}).items():
             assert fiscal_year_end(int(y)).isoformat() == end, (y, end)
     assert rule_t(facts["rule_t_r2008"]) == ENGINE_THRESHOLDS_R2008, "the early-era thresholds must follow rule T on the fact sheet's values"
-    assert not [g for g in facts["guides"] if g["published"] <= as_of], "an early-era guide needs its encoding first (none is in numbers)"
+    # the 2022 era's display-only adjusted EBIT outlooks (from the Q3 2021 release) are dollar profit outlooks, which the early era leaves
+    # unencoded (the 2012-2014 decision); any other guide needs its encoding first
+    assert all(g["fy"] >= 2021 and set(g) <= GUIDE_KEYS for g in facts["guides"] if g["published"] <= as_of), \
+        "an early-era guide needs its encoding first (its EPS guides are eps_guides_r2008)"
     public = [p for p in facts["prints"] if p["published"] <= as_of]
     for p in public:
         check_print_r2008(p)
@@ -406,7 +416,7 @@ def build_r2008(as_of, facts, raw, spx, engine, out):
     guide_fy = lambda p: p["fy"] + (1 if p["q"] == 4 else 0)
     prints = [p for p in public if guide_fy(p) >= first_fy]
     events = [e for e in facts["events"] if e["published"] <= as_of]
-    assert not events, f"{as_of}: no event kind is encoded for the early era (no theme is live for an automaker before 2020-01-01)"
+    assert not events, f"{as_of}: no event kind is encoded for the early era (no 10-K before FY2021 puts a theme on the watch list)"
     if not prints:
         sys.exit(f"{as_of}: no quarterly print after FY{first_fy - 1} is public yet")
     # a Q4 print's full-year actuals extend the annual history from its release until the next 10-K vintage
@@ -459,6 +469,9 @@ def build_r2008(as_of, facts, raw, spx, engine, out):
     # a fiscal-year adjusted EPS guide in numbers (Ford guides a range from the Q2 2017 release; a preliminary full-year figure is
     # recorded as a guide, the SHW rule): the latest one for the current year, its midpoint (the CAT encoding)
     ge = ([g for g in facts.get("eps_guides_r2008", []) if g["published"] <= as_of and g["fy"] == cur_fy] or [None])[-1]
+    wd = None
+    if ge and ge.get("withdrawn"):     # a withdrawal voids the year's guide (the WMT, LOW, SHW and CAT rule): the rollover rule applies
+        wd, ge = ge, None
 
     # ── no revenue guide in numbers: BASE takes the latest quarter's revenue growth; without an EPS guide the last full year's EPS stands ──
     if ge:
@@ -467,14 +480,19 @@ def build_r2008(as_of, facts, raw, spx, engine, out):
         eps_label = f"{fy_e} EPS, guide midpoint: adjusted EPS {eps_fig} ({ge['doc']}, {ge['published']})"
     else:
         eps_now = eps_hist[last_fy]
-        eps_label = (f"{fy_e}: no EPS guide in numbers, FY{last_fy % 100:02d}'s ${money(eps_now)} (excluding special items) stands"
-                     + "".join(f" (FY{y % 100:02d} is excluded: {excluded[y]})" for y in range(last_fy + 1, cur_fy)))
+        eps_label = ((f"{fy_e}: the {wd['doc']} withdrew the EPS guide ('{wd['quote']}'), FY{last_fy % 100:02d}'s ${money(eps_now)} "
+                      "(excluding special items) stands") if wd else
+                     f"{fy_e}: no EPS guide in numbers, FY{last_fy % 100:02d}'s ${money(eps_now)} (excluding special items) stands")
+        eps_label += "".join(f" (FY{y % 100:02d} is excluded: {excluded[y]})" for y in range(last_fy + 1, cur_fy))
     fwd = [latest["sales_pct"]] * 2
     fwd_label, fwd_short, fwd_period = (f"no {next_q} revenue guide, {latest['quarter']} revenue as reported",
                                         f"{latest['quarter'][:2]} revenue", latest["quarter"])
     if ge:
         guide_text = (f"{fy_now}: adjusted EPS {eps_fig} ({ge['doc']}, {ge['published']}: '{ge['quote']}'); no revenue or margin guide "
                       f"in numbers (BASE takes {latest['quarter']} revenue growth)")
+    elif wd:
+        guide_text = (f"{fy_now}: the EPS guide was withdrawn ({wd['doc']}, {wd['published']}: '{wd['quote']}'); no revenue or margin "
+                      f"guide in numbers (BASE takes {latest['quarter']} revenue growth)")
     else:
         guide_text = (f"{fy_now}: no EPS, revenue or margin guide in numbers in any filing (Ford's outlook is in words and planning "
                       f"assumptions, not encoded; BASE takes {latest['quarter']} revenue growth)")
@@ -523,8 +541,16 @@ def build_r2008(as_of, facts, raw, spx, engine, out):
     theme_summary = "no disruption theme is live for an automaker on this date"
     why = h["why"] + ("; no disruption theme in the registry is live for an automaker on this date, so the watch list is empty "
                       "and the 10-K's words on the shift away from trucks and SUVs stay here (the PEP obesity rule)")
+    if retro_tool.load_taxonomy()["themes"]["EV"]["live_from"] <= as_of:
+        # EV is live from about 2020 and scoped to ICE powertrains; it goes on the watch list only when a 10-K risk factor names a shift
+        # away from Ford's combustion-engine vehicles (the 2022 era's rule, first met by the FY2021 10-K), so until then the text says so
+        sig_name, trigger = "Disruption theme: EV live, not on the watch list", "No risk factor of the 10-K names a shift to electric vehicles"
+        theme_summary = "EV is live but no 10-K risk factor names a shift away from Ford's combustion-engine vehicles yet"
+        why = h["why"] + ("; EV (live from about 2020) is not on the watch list: no risk factor of this 10-K names a shift away from "
+                          "Ford's combustion-engine vehicles, so its words on larger, more profitable vehicles stay here (the PEP obesity rule)")
     kind, pit_risk = "DURABLE", 2
     cat3 = (f"(3) The {fy_now} adjusted EPS guide — {eps_fig} ({ge['doc']}): the EPS anchor" if ge else
+            f"(3) The {fy_now} EPS guide — withdrawn ({wd['doc']}): the last full year's EPS stands" if wd else
             f"(3) A {fy_now} outlook in numbers — none: Ford's outlook is in words and planning assumptions")
     fc_txt = (f"{latest['fc_pct']:+.1f}%" if latest["fc_pct"] is not None else "n/r")
     cat4 = (f"(4) Ford Credit pre-tax — {fc_txt} in {latest['quarter']} (${latest['raw']['fc_ebt_m']:,.0f}M vs "
@@ -539,7 +565,7 @@ def build_r2008(as_of, facts, raw, spx, engine, out):
 
     company, exchange = h["company"], h["exchange"]
     ids = (list(h["sources"]) + [x for p in prints for x in [p["source"]] + p.get("extra_sources", [])]
-           + ([dividend_src] if dividend_src else []) + ([ge["source"]] if ge else []))
+           + ([dividend_src] if dividend_src else []) + ([ge["source"]] if ge else []) + ([wd["source"]] if wd else []))
     sources = [dict(id=i, **facts["sources"][i]) for i in dict.fromkeys(ids)]
     sources.append({"id": "A0", "published": as_of, "title": "Yahoo Finance daily prices, F and S&P 500, truncated at AS_OF",
                     "url": "https://finance.yahoo.com/quote/F/history",
