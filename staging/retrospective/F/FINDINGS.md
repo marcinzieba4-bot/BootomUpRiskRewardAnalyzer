@@ -323,3 +323,32 @@ windows was +23.7%, Ford's -11.8%. No date of the range cleared the 2-year hurdl
   in 2010 (0 of 15) and 2016-2018 (0 of 153). 2009's readmitted $0.01 sat behind 36 CHEAP calls of 2012, a year whose CHEAP calls mostly held, and
   128 of 2016-2018 that all failed: it does not separate good calls from bad, it inflates the upside scenarios (XBULL from 2012, BULL from 2016). A rule that caps a
   readmitted near-zero year, or that measures BULL only from a year with a normal multiple, would need a new method version and a full re-run.
+
+## F 2019-2021 (hindsight)
+
+Patterns seen in `outcome.json` for the 157 weekly dates from 2019-01-04 to 2021-12-31. **Labels and hypotheses**, never inputs. The build
+(b004dcb20) and the README's decisions, controls, leak scan, firewall result and class sensitivities (d62ae3c85) were committed before any of
+these outcomes was computed (2026-11-14). Every date has one-, two- and three-year horizons; total returns include the dividends paid in them
+(none from the second quarter of 2020 to the third quarter of 2021). "Call held" is `call_check_2y` (`hit`).
+
+**Hindsight the model could not see:** Ford fell to about $4 in March 2020, recovered through 2021 to a peak of $25.19 (2022-01-14, among these
+windows) on its EV plans and a 2021 adjusted EPS of $1.59 (as the 2022 series records it), then fell back to $10-15 in 2022-2023. SPY's
+median two-year total return over these windows was +29.7%, Ford's +46.4%.
+
+- **CHEAP held, RICH mostly failed.** CHEAP +57.4% two-year median (67 dates; held 59, cleared the hurdle on 59, beat SPY on 40), FAIR +79.2%
+  (3; held none), RICH +16.4% (87; held 21). The classes ranked CHEAP above RICH, but FAIR beat both.
+- **The 2019 CHEAP calls held on the endpoint, not on the path.** Two-year median +49.2% (52 dates, 44 held), because the windows end in the
+  2021-2022 rally; one-year -20.4% (through the COVID fall) and the m12-m24 average price -3.0%. 55 of these calls depend on 2009's readmitted
+  $0.01 (they read RICH without it): this time the artifact sat on the right side of a two-year point return, on the wrong side of the one-year.
+- **The COVID-low CHEAP calls were the best of the series:** the 10 dates of 2020-03-13 to 2020-05-15 at $4.24-5.63 returned +197.3% (two-year
+  median), all held.
+- **RICH failed through the recovery and half-held on FY20's $0.41.** The 34 RICH dates of 2020-05-29 to 2021-01-29 (BASE carrying the COVID
+  revenue falls) returned +82.1%, none held. The 48 dates anchored on FY20's $0.41 (28-52x) returned +3.8% (21 held, 2 cleared the hurdle):
+  the stock doubled first and then gave it back, so the two-year point return straddles the call.
+- **Entry price ranked returns in order** (two-year median): below $10 +79.1% (99), $10-12 +22.2% (17), $12-14 +7.3% (20), $14-16 -0.1% (10),
+  above $16 -35.6% (11).
+- **Across 2008-2021 (hypotheses for elsewhere):** the classes ranked in order where the anchor was a normal year (2011-2015) and went wrong
+  where it was stale or extreme: 2005's $1.00 through 2008-2010, 2009's $0.01 in the upside scenarios of 2012 and 2016-2019 (right in 2012
+  and 2019 on the two-year point return, wrong in 2016-2018), the COVID quarter in BASE (mid 2020) and the COVID year as the anchor (2021). A
+  rule that caps a readmitted near-zero year, or that suspends a call while the anchor or the BASE quarter is a crisis outlier, would need a new
+  method version and a full re-run.
