@@ -338,8 +338,8 @@ median two-year total return over these windows was +29.7%, Ford's +46.4%.
 - **CHEAP held, RICH mostly failed.** CHEAP +57.4% two-year median (67 dates; held 59, cleared the hurdle on 59, beat SPY on 40), FAIR +79.2%
   (3; held none), RICH +16.4% (87; held 21). The classes ranked CHEAP above RICH, but FAIR beat both.
 - **The 2019 CHEAP calls held on the endpoint, not on the path.** Two-year median +49.2% (52 dates, 44 held), because the windows end in the
-  2021-2022 rally; one-year -20.4% (through the COVID fall) and the m12-m24 average price -3.0%. 55 of these calls depend on 2009's readmitted
-  $0.01 (they read RICH without it): this time the artifact sat on the right side of a two-year point return, on the wrong side of the one-year.
+  2021-2022 rally; one-year -20.4% (through the COVID fall) and the m12-m24 average price -3.0%. 51 of these calls depend on 2009's readmitted
+  $0.01 (50 read RICH without it, one FAIR): this time the artifact sat on the right side of a two-year point return, on the wrong side of the one-year.
 - **The COVID-low CHEAP calls were the best of the series:** the 10 dates of 2020-03-13 to 2020-05-15 at $4.24-5.63 returned +197.3% (two-year
   median), all held.
 - **RICH failed through the recovery and half-held on FY20's $0.41.** The 34 RICH dates of 2020-05-29 to 2021-01-29 (BASE carrying the COVID
