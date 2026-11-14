@@ -436,6 +436,16 @@ def build_r2008(as_of, facts, raw, spx, engine, out):
                      prev_fy_sales_growth=a["sales_growth"], prev_fy_ws_pct=a["ws_pct"], prev_fy_ws_note=a["ws_note"],
                      tax_rate=a["tax_rate"], tax_note=f'{a["tax_note"]} ({p["source"]})',
                      sources=h["sources"] + [p["source"]], extended=f'{h["extended"]}, FY{y[2:]} from {p["source"]} ({p["published"]})')
+    # a later filing that republishes an earlier year's company figure restates it until a 10-K vintage published after it (the CAT
+    # 'restates' encoding, EPS only; retro/README.md, "F 2015-2018"): the Q4 2014 release's 2013, and the 8-K of 2016-01-07's 2013 and
+    # 2014 on mark-to-market pension accounting
+    for r in facts.get("restatements_r2008", []):
+        if h["published"] < r["published"] <= as_of:
+            for yy, x in r["years"].items():
+                assert yy in h["eps_normalized"], (r["doc"], yy, "restates a year outside the history")
+                h.update(eps_normalized={**h["eps_normalized"], yy: x["eps"]}, normalization=f'{h["normalization"]}; {x["note"]}',
+                         sources=h["sources"] + [r["source"]],
+                         extended=f'{h["extended"]}, FY{yy[2:]} restated by {r["source"]} ({r["published"]})')
     latest = prints[-1]
     i = public.index(latest)
     prev = (public[i - 1]["ws_pct"], public[i - 1]["quarter"]) if i > 0 else (h["prev_q_ws_pct"], h["prev_q_label"])
@@ -446,16 +456,28 @@ def build_r2008(as_of, facts, raw, spx, engine, out):
     fy_e, fy_e_s, fy_h, fy_now = f"FY{cur_fy}E", f"FY{cur_fy % 100:02d}E", f"FY{cur_fy + 2}E", f"FY{cur_fy % 100:02d}"
     nq = latest["q"]
     next_q = f"Q{nq % 4 + 1} {latest['fy'] + (1 if nq == 4 else 0)}"
+    # a fiscal-year adjusted EPS guide in numbers (Ford guides a range from the Q2 2017 release; a preliminary full-year figure is
+    # recorded as a guide, the SHW rule): the latest one for the current year, its midpoint (the CAT encoding)
+    ge = ([g for g in facts.get("eps_guides_r2008", []) if g["published"] <= as_of and g["fy"] == cur_fy] or [None])[-1]
 
-    # ── no guide in numbers: the last full year's EPS stands, and BASE takes the latest quarter's revenue growth ──
-    eps_now = eps_hist[last_fy]
-    eps_label = (f"{fy_e}: no EPS guide in numbers, FY{last_fy % 100:02d}'s ${money(eps_now)} (excluding special items) stands"
-                 + "".join(f" (FY{y % 100:02d} is excluded: {excluded[y]})" for y in range(last_fy + 1, cur_fy)))
+    # ── no revenue guide in numbers: BASE takes the latest quarter's revenue growth; without an EPS guide the last full year's EPS stands ──
+    if ge:
+        eps_now = round(sum(ge["eps"]) / 2, 3)
+        eps_fig = f"${ge['eps'][0]:.2f}" if ge["eps"][0] == ge["eps"][1] else f"${ge['eps'][0]:.2f}-{ge['eps'][1]:.2f}"
+        eps_label = f"{fy_e} EPS, guide midpoint: adjusted EPS {eps_fig} ({ge['doc']}, {ge['published']})"
+    else:
+        eps_now = eps_hist[last_fy]
+        eps_label = (f"{fy_e}: no EPS guide in numbers, FY{last_fy % 100:02d}'s ${money(eps_now)} (excluding special items) stands"
+                     + "".join(f" (FY{y % 100:02d} is excluded: {excluded[y]})" for y in range(last_fy + 1, cur_fy)))
     fwd = [latest["sales_pct"]] * 2
     fwd_label, fwd_short, fwd_period = (f"no {next_q} revenue guide, {latest['quarter']} revenue as reported",
                                         f"{latest['quarter'][:2]} revenue", latest["quarter"])
-    guide_text = (f"{fy_now}: no EPS, revenue or margin guide in numbers in any filing (Ford's outlook is in words and planning "
-                  f"assumptions, not encoded; BASE takes {latest['quarter']} revenue growth)")
+    if ge:
+        guide_text = (f"{fy_now}: adjusted EPS {eps_fig} ({ge['doc']}, {ge['published']}: '{ge['quote']}'); no revenue or margin guide "
+                      f"in numbers (BASE takes {latest['quarter']} revenue growth)")
+    else:
+        guide_text = (f"{fy_now}: no EPS, revenue or margin guide in numbers in any filing (Ford's outlook is in words and planning "
+                      f"assumptions, not encoded; BASE takes {latest['quarter']} revenue growth)")
     margin_guided = False
     fy_margin_base = h["prev_fy_margin"]
 
@@ -502,7 +524,8 @@ def build_r2008(as_of, facts, raw, spx, engine, out):
     why = h["why"] + ("; no disruption theme in the registry is live for an automaker on this date, so the watch list is empty "
                       "and the 10-K's words on the shift away from trucks and SUVs stay here (the PEP obesity rule)")
     kind, pit_risk = "DURABLE", 2
-    cat3 = f"(3) A {fy_now} outlook in numbers — none: Ford's outlook is in words and planning assumptions"
+    cat3 = (f"(3) The {fy_now} adjusted EPS guide — {eps_fig} ({ge['doc']}): the EPS anchor" if ge else
+            f"(3) A {fy_now} outlook in numbers — none: Ford's outlook is in words and planning assumptions")
     fc_txt = (f"{latest['fc_pct']:+.1f}%" if latest["fc_pct"] is not None else "n/r")
     cat4 = (f"(4) Ford Credit pre-tax — {fc_txt} in {latest['quarter']} (${latest['raw']['fc_ebt_m']:,.0f}M vs "
             f"${latest['raw']['fc_ebt_prior_m']:,.0f}M): credit losses, lease residuals and funding costs")
@@ -516,7 +539,7 @@ def build_r2008(as_of, facts, raw, spx, engine, out):
 
     company, exchange = h["company"], h["exchange"]
     ids = (list(h["sources"]) + [x for p in prints for x in [p["source"]] + p.get("extra_sources", [])]
-           + ([dividend_src] if dividend_src else []))
+           + ([dividend_src] if dividend_src else []) + ([ge["source"]] if ge else []))
     sources = [dict(id=i, **facts["sources"][i]) for i in dict.fromkeys(ids)]
     sources.append({"id": "A0", "published": as_of, "title": "Yahoo Finance daily prices, F and S&P 500, truncated at AS_OF",
                     "url": "https://finance.yahoo.com/quote/F/history",
@@ -529,6 +552,9 @@ def build_r2008(as_of, facts, raw, spx, engine, out):
     rev = {int(k): v for k, v in h["revenue_usd_b"].items()}
     shares = {int(k): v for k, v in h["diluted_shares_m"].items()}
     rw = latest["raw"]
+    # the cash measure the print states (Automotive gross cash to 2015, Automotive cash, then Company cash); n/r when its filings state none
+    cash_txt = (f"{latest.get('cash_label', 'Automotive gross cash')} ${latest['cash_b']:.1f}B" if latest["cash_b"] is not None
+                else f"{latest.get('cash_label', 'Automotive gross cash')} n/r")
     volumes = (f"Wholesales {latest['ws_pct']:+.1f}% ({rw['ws_prior_k']:,.0f}K to {rw['ws_k']:,.0f}K, {latest['ws_note']}); "
                f"Ford Credit pre-tax {fc_txt} (${rw['fc_ebt_prior_m']:,.0f}M to ${rw['fc_ebt_m']:,.0f}M"
                + (f"; {latest['fc_note']}" if latest.get("fc_note") else "") + "); "
@@ -615,7 +641,7 @@ GROUPS          = {R([tuple(g) for g in h["groups"]])}
 GROUPS_BASIS    = {R(h["groups_basis"])}
 NEXT_PRINT      = {R(f"{next_q} print")}
 SHARE_GAIN_TEXT = {R(f"Franchise: {h['fy_label']} revenue {h['prev_fy_sales_growth']:+.1f}%, wholesales {h['prev_fy_ws_pct']:+.1f}% ({h['prev_fy_ws_note']}); {latest['quarter']} pre-tax margin {latest['margin']:.1f}% ({latest['margin_bp']:+d}bp)")}
-BALANCE_TEXT    = {R(f"Automotive gross cash ${latest['cash_b']:.1f}B, {h['fcf_label']} Automotive operating-related cash flow ${h['fcf_b']:.1f}B, dividend ${dividend:.2f} a year, {h['cash_return_text']}")}
+BALANCE_TEXT    = {R(f"{cash_txt}, {h['fcf_label']} {h.get('fcf_name', 'Automotive operating-related cash flow')} ${h['fcf_b']:.1f}B, dividend ${dividend:.2f} a year, {h['cash_return_text']}")}
 VOLUMES_TEXT    = {R(volumes)}
 CAPITAL_RETURN  = {R(h["cash_return_text"])}
 THEME_FACTORS   = {R(factors)}

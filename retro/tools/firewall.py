@@ -566,7 +566,16 @@ try:
                                  "normalization_note": "PLANTED", "excluded_updates": {y: "PLANTED" for y in ex},
                                  "readmits": {y: 0.01 for y in ex}, "readmit_note": "PLANTED"}
             last["fc_note"] = "PLANTED"
-            v.update(why="PLANTED", business_line="PLANTED", tax_note="PLANTED", fcf_b=99.0)
+            v.update(why="PLANTED", business_line="PLANTED", tax_note="PLANTED", fcf_b=99.0, fcf_name="PLANTED")
+            # (F 2015-2018) a planted cash label, a later adjusted EPS guide for every year guided before CUTOFF and for the next two, and a
+            # later restatement of every year of the latest vintage before CUTOFF
+            last.update(cash_label="PLANTED", cash_b=99.0)
+            for y in sorted({g["fy"] for g in f.get("eps_guides_r2008", []) if g["published"] < cutoff} | {int(cutoff[:4]), int(cutoff[:4]) + 1}):
+                f.setdefault("eps_guides_r2008", []).append({"fy": y, "published": later, "source": last["source"], "doc": "PLANTED",
+                                                             "eps": [0.01, 0.02], "quote": "PLANTED", "note": "PLANTED"})
+            v0 = max((x for x in f["history_vintages"] if x["published"] < cutoff), key=lambda x: x["published"])
+            f.setdefault("restatements_r2008", []).append({"published": later, "source": last["source"], "doc": "PLANTED",
+                                                           "years": {y: {"eps": 0.01, "note": "PLANTED"} for y in v0["eps_normalized"]}})
     if TICKER == "XOM":    # the excluded-year and restatement fields (XOM 2021-2023): a later vintage excluding a year, and the planted
                            # print's full-year actuals excluding its own year and restating every earlier one
         v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}

@@ -1,0 +1,270 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "F",
+ "company": "Ford Motor Company",
+ "as_of": "2016-04-22",
+ "price_date": "2016-04-22",
+ "price": 13.61,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); automaker signals, the early era",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "Ford Motor Company: 'We are a global automotive and mobility company based in Dearborn, Michigan.' ('Our vehicle brands are Ford and Lincoln.'); among its risk factors, 'Decline in industry sales volume, particularly in the United States, Europe, or China, due to financial crisis, recession, geopolitical events, or other factors.' and 'Market shift away from sales of larger, more profitable vehicles beyond Ford’s current planning assumption, particularly in the United States.' (its own FY2015 10-K); no disruption theme in the registry is live for an automaker on this date, so the watch list is empty and the 10-K's words on the shift away from trucks and SUVs stay here (the PEP obesity rule)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "Ford Motor Company: 'We are a global automotive and mobility company based in Dearborn, Michigan.' ('Our vehicle brands are Ford and Lincoln.'); among its risk factors, 'Decline in industry sales volume, particularly in the United States, Europe, or China, due to financial crisis, recession, geopolitical events, or other factors.' and 'Market shift away from sales of larger, more profitable vehicles beyond Ford’s current planning assumption, particularly in the United States.' (its own FY2015 10-K); no disruption theme in the registry is live for an automaker on this date, so the watch list is empty and the 10-K's words on the shift away from trucks and SUVs stay here (the PEP obesity rule). durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.06x; +18% to EPP floor; model-vs-market gap +2.28; conservative 2yr +28%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.06,
+  "ratio_b_fmt": "0.06x",
+  "epp": 11.58,
+  "epp_gap_pct": 17.5,
+  "epp_adj": 0.0,
+  "proxy_composite": 3.15,
+  "sca": 0.345,
+  "adj_composite": 3.495,
+  "market_composite": 1.22,
+  "adj_gap": 2.28,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 27.6,
+  "scenarios": {
+   "BEAR": {
+    "eps": 1.0,
+    "pe": 6.6,
+    "price": 7,
+    "desc": "EPS -28.0%/yr (worst year FY09-FY15, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 2.1,
+    "pe": 8.3,
+    "price": 17,
+    "desc": "EPS +4.2%/yr (Q4 revenue + margin + buyback); P/E at its 7.3-yr ex-FY06 ex-FY07 ex-FY08 median"
+   },
+   "BULL": {
+    "eps": 11.15,
+    "pe": 11.4,
+    "price": 127,
+    "desc": "EPS +140.4%/yr (FY09-FY15 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 291.43,
+    "pe": 380.0,
+    "price": 110743,
+    "desc": "EPS +1128.8%/yr (best 2-yr run FY09-FY15); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.06,
+   "epp_gap_pct": 17.5,
+   "adj_gap": 2.28,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 27.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.0,
+   "epp_gap_pct": 17.5,
+   "adj_gap": 2.28,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 27.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 0.1,
+   "epp_gap_pct": 17.5,
+   "adj_gap": 2.28,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 27.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.06,
+   "epp_gap_pct": 17.5,
+   "adj_gap": 2.28,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 27.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.07,
+   "epp_gap_pct": 17.5,
+   "adj_gap": 2.45,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 27.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.06,
+   "epp_gap_pct": 17.5,
+   "adj_gap": 2.58,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 27.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.06,
+   "epp_gap_pct": -21.6,
+   "adj_gap": 2.48,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 27.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.06,
+   "epp_gap_pct": 17.5,
+   "adj_gap": 2.28,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 27.6,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "F (retrospective, 2016-04-22) ◉ BUY — Ratio B 0.06x (48.6% downside to Bear $7 / +833.1% upside to Bull $127) | Adj composite 3.50 vs market 1.22: gap +2.28 [UNDERVALUED] | +18% above the EPP floor $12 (6x FY16E $1.93) | Conservative 2-yr case: +27.6% total (+13.8%/yr) | At 7.1x FY16E the 15% hurdle price $18 sits between the BASE and BULL cases; wholesale units +12.3% in Q4 2015, forward revenues +12.3% (no Q1 2016 revenue guide, Q4 2015 revenue as reported); no disruption theme is live for an automaker on this date.",
+ "sources": [
+  {
+   "id": "F129",
+   "published": "2016-02-11",
+   "filed": "2016-02-11 08:13 ET (before the open)",
+   "title": "Ford FY2015 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799616000092/f1231201510-k.htm",
+   "supports": "FY2015 annual report (revised for mark-to-market pension accounting)"
+  },
+  {
+   "id": "F101",
+   "published": "2011-01-28",
+   "filed": "2011-01-28 07:20 ET (before the open)",
+   "title": "Ford Q4 2010 results (8-K exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000115752311000435/a6589107ex99-1.htm",
+   "supports": "Q4 2010 results release: wholesales, revenue, pre-tax results, Ford Credit, EPS excluding special items, outlook"
+  },
+  {
+   "id": "F109",
+   "published": "2012-01-27",
+   "filed": "2012-01-27 08:15 ET (before the open)",
+   "title": "Ford Q4 2011 results (8-K exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000115752312000341/a50146220ex99.htm",
+   "supports": "Q4 2011 results release: wholesales, revenue, pre-tax results, Ford Credit, EPS excluding special items"
+  },
+  {
+   "id": "F113",
+   "published": "2013-01-29",
+   "filed": "2013-01-29 07:43 ET (before the open)",
+   "title": "Ford Q4 2012 results (8-K exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799613000008/exhibit99toearnings8-kdate.htm",
+   "supports": "Q4 2012 results release: wholesales, revenue, pre-tax results, Ford Credit, EPS excluding special items"
+  },
+  {
+   "id": "F117",
+   "published": "2014-01-28",
+   "filed": "2014-01-28 07:25 ET (before the open)",
+   "title": "Ford Q4 2013 results (8-K exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799614000004/exhibit99toearnings8-kdate.htm",
+   "supports": "Q4 2013 results release: wholesales, revenue, pre-tax results, Ford Credit, EPS excluding special items"
+  },
+  {
+   "id": "F126",
+   "published": "2016-01-07",
+   "filed": "2016-01-07 08:16 ET (before the open)",
+   "title": "Ford 8-K of 2016-01-07 (mark-to-market pension accounting; exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799616000076/exhibit992tomtm8-kdated1x7.htm",
+   "supports": "2013 and 2014 EPS excluding special items revised for mark-to-market pension and OPEB accounting"
+  },
+  {
+   "id": "F80",
+   "published": "2011-02-28",
+   "filed": "2011-02-28 07:33 ET (before the open)",
+   "title": "Ford FY2010 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000115752311001210/a6622311.htm",
+   "supports": "FY2010 annual report"
+  },
+  {
+   "id": "F106",
+   "published": "2012-02-21",
+   "filed": "2012-02-21 15:45 ET (during the session)",
+   "title": "Ford FY2011 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799612000007/f12312011-10k.htm",
+   "supports": "FY2011 annual report"
+  },
+  {
+   "id": "F107",
+   "published": "2013-02-19",
+   "filed": "2013-02-19 07:12 ET (before the open)",
+   "title": "Ford FY2012 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799613000014/f12312012-10k.htm",
+   "supports": "FY2012 annual report"
+  },
+  {
+   "id": "F108",
+   "published": "2014-02-18",
+   "filed": "2014-02-18 14:09 ET (during the session)",
+   "title": "Ford FY2013 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799614000010/f1231201310k.htm",
+   "supports": "FY2013 annual report"
+  },
+  {
+   "id": "F122",
+   "published": "2015-02-13",
+   "filed": "2015-02-13 07:03 ET (before the open)",
+   "title": "Ford FY2014 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799615000013/f1231201410-k.htm",
+   "supports": "FY2014 annual report"
+  },
+  {
+   "id": "F78",
+   "published": "2009-02-26",
+   "filed": "2009-02-26 06:17 ET (before the open)",
+   "title": "Ford FY2008 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000114036109005071/form10k.htm",
+   "supports": "FY2008 annual report"
+  },
+  {
+   "id": "F128",
+   "published": "2016-01-28",
+   "filed": "2016-01-28 07:59 ET (before the open)",
+   "title": "Ford Q4 2015 results (8-K exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799616000085/a2015fy4qpressreleasefin.htm",
+   "supports": "Q4 2015 results release: summary in text; income, EPS and Ford Credit tables in its images (a2015fy4qpressreleasefin005.jpg)"
+  },
+  {
+   "id": "A0",
+   "published": "2016-04-22",
+   "title": "Yahoo Finance daily prices, F and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/F/history",
+   "supports": "close $13.61 as traded on AS_OF, 52-week range, realized vol, beta, the 7.3-yr ex-FY06 ex-FY07 ex-FY08 P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-14"
+}
