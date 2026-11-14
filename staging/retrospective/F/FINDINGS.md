@@ -320,6 +320,6 @@ windows was +23.7%, Ford's -11.8%. No date of the range cleared the 2-year hurdl
   $10.
 - **Across 2008-2018 (hypotheses for elsewhere):** RICH held in 2010 (16 of 16), 2013-2014 (98 of 102) and 2015 (53 of 53), as the price did
   not grow into a flat EPS history. CHEAP held in 2008-2009 (96 of 96, a survivor's result), 2011 (25 of 49) and 2012 (42 of 51), and failed
-  in 2010 (0 of 15) and 2016-2018 (0 of 153). 2009's readmitted $0.01 sat behind 36 CHEAP calls of 2012 that held and 128 of 2016-2018 that
-  failed: it does not separate good calls from bad, it inflates the upside scenarios (XBULL from 2012, BULL from 2016). A rule that caps a
+  in 2010 (0 of 15) and 2016-2018 (0 of 153). 2009's readmitted $0.01 sat behind 36 CHEAP calls of 2012, a year whose CHEAP calls mostly held, and
+  128 of 2016-2018 that all failed: it does not separate good calls from bad, it inflates the upside scenarios (XBULL from 2012, BULL from 2016). A rule that caps a
   readmitted near-zero year, or that measures BULL only from a year with a normal multiple, would need a new method version and a full re-run.
