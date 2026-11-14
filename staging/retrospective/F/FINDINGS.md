@@ -294,3 +294,32 @@ dividends paid in them. The hurdle is +32.2% over two years; "call held" is `cal
   date gained 120%); in 2010 they ranked in order while every class lost, the stale 2005 anchor reading a recovering stock as RICH and FAIR;
   the near-zero 2009 year distorted the upside scenarios from 2011 on. A rule that caps a
   readmitted near-zero year, or one that suspends the class when the anchor is old, would need a new method version and a full re-run.
+
+## F 2015-2018 (hindsight)
+
+Patterns seen in `outcome.json` for the 209 weekly dates from 2015-01-02 to 2018-12-28. **Labels and hypotheses**, never inputs. The build
+(ded93f2ce) and the README's decisions, controls, leak scan, firewall result and class sensitivities (ac954c691) were committed before any of
+these outcomes was computed (2026-11-14). Every date has one-, two- and three-year horizons; total returns include the $0.15 quarterly and the
+supplemental dividends paid in them. "Call held" is `call_check_2y` (`hit`).
+
+**Hindsight the model could not see:** Ford's adjusted EPS fell from $1.78 (2017) to $1.30 (2018), $1.16 (2019, as restated) and $0.36 (2020,
+COVID), and the stock fell from about $13 to $4.01 (2020-03-23, among these windows) before recovering in 2021; SPY's median two-year total return over these
+windows was +23.7%, Ford's -11.8%. No date of the range cleared the 2-year hurdle or beat SPY over two years.
+
+- **RICH held, CHEAP failed.** RICH -11.6% two-year median (53 dates, all of 2015; held all 53), FAIR +16.8% (3, January 2016; held none),
+  CHEAP -12.3% (153, 2016-01-29 to 2018-12-28; held none, cleared the hurdle on none, beat SPY on none). 53 of 209 calls held.
+- **The CHEAP run rests on the 2009 artifact, and the artifact's dates did worse.** The 128 CHEAP dates that read FAIR or RICH with 2009 kept out
+  returned -13.6% (two-year median), the 25 that stay CHEAP without it -2.2%. In 2012 the same readmission sat on the right side; here it sat
+  on the wrong one for almost three years. That is evidence against reading a BULL rate of +91-140%/yr (a near-zero first year) as upside,
+  not for any rule in the archive.
+- **The low multiple was a falling-earnings multiple.** The CHEAP dates priced Ford at 5.6-7.7x an anchor of $1.40-1.93 that the next years
+  did not keep; BASE (the latest quarter's revenue growth, -14% to +6%/yr) and the 6x floor did not register the 2018-2020 decline, and BEAR
+  (-28%/yr) was the scenario closest to what followed.
+- **Entry price did not rank returns here** (two-year median): below $10 -7.2% (22), $10-12 -11.3% (62), $12-14 -12.4% (81), $14-16 -11.6%
+  (36), above $16 -15.2% (8). Three-year returns from the cheapest entries (late 2018, landing in 2021) were the exception: +88.7% median below
+  $10.
+- **Across 2008-2018 (hypotheses for elsewhere):** RICH held in 2010 (16 of 16), 2013-2014 (98 of 102) and 2015 (53 of 53), as the price did
+  not grow into a flat EPS history. CHEAP held in 2008-2009 (96 of 96, a survivor's result), 2011 (25 of 49) and 2012 (42 of 51), and failed
+  in 2010 (0 of 15) and 2016-2018 (0 of 153). 2009's readmitted $0.01 sat behind 36 CHEAP calls of 2012 that held and 128 of 2016-2018 that
+  failed: it does not separate good calls from bad, it inflates the upside scenarios (XBULL from 2012, BULL from 2016). A rule that caps a
+  readmitted near-zero year, or that measures BULL only from a year with a normal multiple, would need a new method version and a full re-run.
