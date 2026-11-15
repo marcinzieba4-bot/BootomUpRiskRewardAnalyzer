@@ -1,19 +1,21 @@
 # SO retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the SO weekly dates: 314 from 2008-01-04 to 2013-12-31, all The Southern Company (NYSE: SO). They are
+Patterns seen in `outcome.json` for the SO weekly dates: 523 from 2008-01-04 to 2017-12-29, all The Southern Company (NYSE: SO). They are
 **labels and hypotheses**: never feed them back into the method or the fact sheet. Each batch was scored only after its point-in-time build
-and README were committed: 2008-2009 (db1a562, fe0a6be) and 2010-2013 (bcf8478, fa842e0, with the firewall result); both were scored on
-2026-11-15. While reading the FY2009 10-K for 2010-2013 the builder found that the FY2008 10-K already gave the company's EPS excluding
+and README were committed: 2008-2009 (db1a562, fe0a6be), 2010-2013 (bcf8478, fa842e0, with the firewall result) and 2014-2017 (ac2436a,
+4131feb, with the firewall result); all were scored on 2026-11-15. While reading the FY2009 10-K for 2010-2013 the builder found that the FY2008 10-K already gave the company's EPS excluding
 only the leveraged lease charges ($2.37); under the rule decided for 2008-2009 that is FY2008's figure from 2009-02-25, so the 45 dates from
 2009-02-27 were rebuilt and re-scored (3 classes moved, all toward calls that held: retro/README.md, "SO 2010-2013"). The 2009 figures below
-are the corrected ones. Every date has its 6-month, 1-, 2- and 3-year horizons (the last ends 2016-12-30). Total returns include the
+are the corrected ones. Every date has its 6-month, 1-, 2- and 3-year horizons (the last ends 2020-12-29). Total returns include the
 quarterly dividends ($0.4025 from the ex-date of 2008-01-31, $0.42 from 2008-05-01, $0.4375 from 2009-04-30, $0.455 from 2010-04-29,
 $0.4725 from 2011-04-28, $0.49 from 2012-05-03, $0.5075 from 2013-05-02, $0.525 from 2014-05-01, $0.5425 from 2015-05-14, $0.56 from
-2016-05-12): $3.12-4.24 a share over two years, 7.7-13.2% of the entry price. No split or distribution falls in any horizon, so every price
+2016-05-12, $0.58 from 2017-05-11, $0.60 from 2018-05-18, $0.62 from 2019-05-17, $0.64 from 2020-05-15): $3.12-4.84 a share over two years,
+7.7-13.2% of the entry price. No split or distribution falls in any horizon, so every price
 is as traded. Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years
 and +52.1% over three. "Call held" is `call_check_2y`: CHEAP should clear the hurdle or beat the benchmark (SPY), FAIR should land within
 ±15pp of the benchmark, and RICH should miss the hurdle and lag the benchmark. A year's table runs to the last date of the calendar year;
-2009-01-02 closes the ISO week of 2008-12-29 and sits in the 2009 table.
+2009-01-02 closes the ISO week of 2008-12-29 and sits in the 2009 table; 2014-01-03 shares ISO week 2014-W01 with 2013-12-31 (the batch
+boundary) and sits in the 2014 table.
 
 ## 2008 (52 dates)
 
@@ -165,7 +167,107 @@ and +52.1% over three. "Call held" is `call_check_2y`: CHEAP should clear the hu
   $40.12-48.09, 15.0-17.9x) the 37 dates returned +1.9% to +25.6% over two years, none over the hurdle, and held on 31: the six misses beat SPY
   over two years. Over three years 17 of the 37 beat SPY. The Kemper encoding moved no class (README); the multiple did the work.
 
-## Across the six years
+## 2014 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 13 | +24.9% | +19.1% to +32.1% | 0 | 13 | +5.8% | 13 |
+| class RICH, legacy tier BUY | 3 | +26.4% | +26.1% to +28.8% | 0 | 3 | +9.4% | 0 |
+| class RICH, legacy tier ACCUMULATE | 4 | +25.1% | +22.9% to +25.3% | 0 | 4 | +8.8% | 0 |
+| class RICH, legacy tier WATCHLIST | 6 | +24.8% | +22.7% to +27.6% | 0 | 6 | +5.3% | 0 |
+| class RICH, legacy tier AVOID | 26 | +21.8% | +6.4% to +32.7% | 2 | 20 | +7.0% | 6 |
+| FY13E = FY12's $2.68 (FY2012 10-K) (2014-01-03 to 2014-01-24) | 4 | +25.1% | +22.9% to +26.1% | 0 | 4 | +9.1% | 0 |
+| FY14E = FY13's $2.71 (Q4 2013 release) (2014-01-30 to 2014-02-21) | 4 | +26.4% | +22.7% to +28.8% | 0 | 4 | +8.8% | 0 |
+| FY14E = FY13's $2.71 (FY2013 10-K) (2014-02-28 to 2014-12-26) | 44 | +24.7% | +6.4% to +32.7% | 2 | 38 | +5.9% | 19 |
+| latest print Q3 2013 (2014-01-03 to 2014-01-24) | 4 | +25.1% | +22.9% to +26.1% | 0 | 4 | +9.1% | 0 |
+| latest print Q4 2013 (2014-01-30 to 2014-04-25) | 13 | +24.8% | +15.7% to +28.8% | 0 | 12 | +5.2% | 1 |
+| latest print Q1 2014 (2014-05-01 to 2014-07-25) | 13 | +24.9% | +19.1% to +32.1% | 0 | 13 | +5.8% | 13 |
+| latest print Q2 2014 (2014-07-31 to 2014-10-24) | 13 | +28.6% | +16.4% to +32.7% | 2 | 13 | +10.6% | 0 |
+| latest print Q3 2014 (2014-10-30 to 2014-12-26) | 9 | +10.3% | +6.4% to +17.4% | 0 | 4 | +5.4% | 5 |
+
+- **CHEAP on the Q1 2014 print held on all 13, by beating SPY, never by the hurdle.** At $43.08-45.22 (15.9-16.7x FY13's $2.71) the dates
+  returned +19.1% to +32.1% over two years, dividends included, against SPY's +6.2% to +14.4%: 5-22pp ahead, none over the 32.2% hurdle; the
+  m12-24 average price was 1-7% above the entry. Each sat through a 21% drawdown to the June 2015 low.
+- **RICH missed on 33 of 39, for the same reason.** The 17 RICH dates of January to April 2014 (FY12's $2.68, then FY13's $2.71, 15.1-17.1x)
+  returned +15.7% to +28.8% and held on one; the 13 dates of the Q2 2014 print (AVOID on all, $43.29-47.41, 16.0-17.5x) returned +16.4% to
+  +32.7%, two over the hurdle, and held on none: SPY's two-year return from 2014 entries was only +5.8% to +17.9%, so a stock that compounded
+  its dividend beat it. From the Q3 2014 print ($46.45-52.23, 17.1-19.3x) RICH held on 5 of the 9 dates of 2014 (+1.9% to +17.4% over the 14
+  dates to 2015-01-30, 10 of them held). The 2014 dates landed at the BASE, BULL or XBULL scenario price after two years (16, 16, 20), never at
+  BEAR.
+
+## 2015 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier BUY | 4 | +30.2% | +25.6% to +30.7% | 0 | 3 | +19.2% | 1 |
+| class RICH, legacy tier ACCUMULATE | 12 | +25.6% | +18.3% to +30.7% | 0 | 6 | +15.8% | 6 |
+| class RICH, legacy tier WATCHLIST | 19 | +22.4% | +17.1% to +26.9% | 0 | 10 | +12.3% | 9 |
+| class RICH, legacy tier AVOID | 18 | +13.4% | +1.9% to +23.7% | 0 | 2 | +7.2% | 16 |
+| FY14E = FY13's $2.71 (FY2013 10-K) (2015-01-02 to 2015-01-30) | 5 | +4.6% | +1.9% to +8.5% | 0 | 0 | -0.7% | 5 |
+| FY15E = FY14's $2.80 (Q4 2014 release) (2015-02-05 to 2015-02-27) | 4 | +15.7% | +7.0% to +19.4% | 0 | 2 | +9.7% | 2 |
+| FY15E = FY14's $2.80 (FY2014 10-K) (2015-03-06 to 2015-12-31) | 44 | +22.9% | +12.4% to +30.7% | 0 | 19 | +13.3% | 25 |
+| latest print Q3 2014 (2015-01-02 to 2015-01-30) | 5 | +4.6% | +1.9% to +8.5% | 0 | 0 | -0.7% | 5 |
+| latest print Q4 2014 (2015-02-05 to 2015-04-24) | 12 | +21.6% | +7.0% to +24.3% | 0 | 10 | +12.9% | 2 |
+| latest print Q1 2015 (2015-04-30 to 2015-07-24) | 13 | +24.5% | +18.3% to +30.7% | 0 | 10 | +16.5% | 3 |
+| latest print Q2 2015 (2015-07-30 to 2015-10-23) | 13 | +20.4% | +13.4% to +29.0% | 0 | 0 | +10.3% | 13 |
+| latest print Q3 2015 (2015-10-29 to 2015-12-31) | 10 | +25.8% | +12.4% to +28.8% | 0 | 1 | +10.7% | 9 |
+
+- **RICH on all 53 held on 32, and the tier ordered the returns.** The five dates of January 2015 (the Q3 2014 print, 18.2-19.3x, Ratio B infinite
+  on all five) held on all five (+1.9% to +8.5%). The 25 dates of the Q4 2014 and Q1 2015 prints (2015-02-05 to 2015-07-24, 15.0-17.8x,
+  $41.89-49.71, the 22nd-98th percentile) held on 5: from the spring 2015 prices they returned +7.0% to +30.7% and beat SPY on 20. From the
+  Q2 2015 print RICH held on 22 of 23 (+12.4% to +29.0%, behind SPY's +21.4% to +38.8%). By tier: AVOID held on 16 of 18 (median +13.4%),
+  WATCHLIST 9 of 19 (+22.4%), ACCUMULATE 6 of 12 (+25.6%), BUY 1 of 4 (+30.2%).
+- **Every 2015 date landed at the BULL (47) or XBULL (6) price after two years**: the stock's 2016-2017 range sat above the RICH dates' BASE.
+
+## 2016 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 5 | +7.8% | +5.5% to +11.2% | 0 | 0 | -4.2% | 0 |
+| class FAIR, legacy tier ACCUMULATE | 4 | +0.9% | -1.9% to +6.3% | 0 | 0 | -8.1% | 2 |
+| class RICH, legacy tier AVOID | 43 | -2.4% | -9.1% to +10.9% | 0 | 0 | -5.5% | 43 |
+| FY15E = FY14's $2.80 (FY2014 10-K) (2016-01-08 to 2016-01-29) | 4 | +4.6% | -0.8% to +10.9% | 0 | 0 | +5.3% | 4 |
+| FY16E = FY15's $2.89 (Q4 2015 release) (2016-02-04 to 2016-02-19) | 3 | +0.6% | -0.2% to +1.6% | 0 | 0 | +2.0% | 3 |
+| FY16E = FY15's $2.89 (FY2015 10-K) (2016-02-26 to 2016-12-30) | 45 | -2.0% | -9.1% to +11.2% | 0 | 0 | -7.3% | 38 |
+| latest print Q3 2015 (2016-01-08 to 2016-01-29) | 4 | +4.6% | -0.8% to +10.9% | 0 | 0 | +5.3% | 4 |
+| latest print Q4 2015 (2016-02-04 to 2016-04-22) | 12 | -0.2% | -6.3% to +1.6% | 0 | 0 | -1.8% | 12 |
+| latest print Q1 2016 (2016-04-28 to 2016-07-22) | 13 | -2.7% | -6.3% to +2.2% | 0 | 0 | -7.1% | 13 |
+| latest print Q2 2016 (2016-07-28 to 2016-10-28) | 14 | -2.7% | -9.1% to +1.7% | 0 | 0 | -9.2% | 14 |
+| latest print Q3 2016 (2016-11-01 to 2016-12-30) | 9 | +6.3% | -1.9% to +11.2% | 0 | 0 | -5.2% | 2 |
+
+- **RICH held on all 43** (2016-01-08 to 2016-10-28, $46.62-54.54, 16.6-18.9x FY14's $2.80, then FY15's $2.89, the 79th-100th percentile,
+  AVOID on all 43, Ratio B infinite on 15): two-year returns -9.1% to +10.9%, dividends included, against SPY's +29.4% to +53.3%; the m12-24
+  average price was a median 5.5% under the entry, and 25 of the 52 dates of 2016 landed at the BEAR price.
+- **The CHEAP and FAIR calls of the Q3 2016 print held on 2 of 9 in 2016** (2016-11-01 to 2016-12-30, $46.76-50.48, 16.2-17.5x): CHEAP
+  returned +5.5% to +11.2% and FAIR -1.9% to +6.3%, against SPY's +11.0% to +34.3%, so CHEAP missed on all five and FAIR on two of four (more
+  than 15pp behind). These are the dates the README's sensitivity moves to RICH with Southern Company Gas out of BASE.
+
+## 2017 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 21 | +16.4% | +10.9% to +29.1% | 0 | 4 | -5.7% | 4 |
+| class FAIR, legacy tier BUY | 5 | +8.6% | +5.1% to +12.3% | 0 | 0 | -8.5% | 5 |
+| class FAIR, legacy tier ACCUMULATE | 4 | +8.9% | +0.8% to +9.7% | 0 | 0 | -7.4% | 3 |
+| class RICH, legacy tier WATCHLIST | 8 | +30.7% | +25.9% to +35.5% | 3 | 8 | +4.1% | 0 |
+| class RICH, legacy tier AVOID | 14 | +30.2% | +25.9% to +42.0% | 2 | 14 | +5.3% | 0 |
+| FY16E = FY15's $2.89 (FY2015 10-K) (2017-01-06 to 2017-02-17) | 7 | +7.6% | +0.8% to +11.5% | 0 | 0 | -7.4% | 5 |
+| FY17E = FY16's GAAP $2.55 (FY2016 10-K) (2017-02-23 to 2017-12-29) | 45 | +26.3% | +8.6% to +42.0% | 5 | 26 | +0.7% | 7 |
+| latest print Q3 2016 (2017-01-06 to 2017-02-17) | 7 | +7.6% | +0.8% to +11.5% | 0 | 0 | -7.4% | 5 |
+| latest print Q4 2016 (2017-02-23 to 2017-04-28) | 10 | +13.3% | +8.6% to +15.8% | 0 | 0 | -7.0% | 3 |
+| latest print Q1 2017 (2017-05-04 to 2017-07-28) | 13 | +17.4% | +14.2% to +29.1% | 0 | 4 | -5.1% | 4 |
+| latest print Q2 2017 (2017-08-03 to 2017-10-27) | 13 | +29.3% | +25.9% to +35.5% | 3 | 13 | +2.5% | 0 |
+| latest print Q3 2017 (2017-11-02 to 2017-12-29) | 9 | +31.2% | +25.9% to +42.0% | 2 | 9 | +6.4% | 0 |
+
+- **FAIR held on 8 of 9, CHEAP on 4 of 21.** The Q3 2016 print's dates of January-February 2017 (FAIR 6, CHEAP 1) returned +0.8% to +11.5%,
+  inside the ±15pp band on five FAIR dates. On FY16's GAAP $2.55 (2017-02-23 to 2017-07-28; 18.5-20.2x, the 85th-98th percentile; BUY on all
+  23) the 20 CHEAP dates returned +10.9% to +29.1%, none over the hurdle, and held only on the four of July 2017 (+25.4% to +29.1%, 0.8-1.5pp
+  ahead of SPY); the three FAIR dates of March held. BASE was +42.7%/yr and +42.1%/yr, Southern Company Gas's revenue counted as growth.
+- **RICH from the Q2 2017 print missed on all 22** ($48.09-53.25, 18.9-20.9x the GAAP $2.55, Ratio B infinite from 2017-11-02): +25.9% to
+  +42.0% over two years, five over the hurdle, 3-18pp ahead of SPY (+19.8% to +25.1%); the m12-24 average price was -0.1% to +15.6%. Each sat
+  through a 13-20% drawdown to the September 2018 low before the rise.
+
+## Across 2008-2013
 
 - **Calls held on 199 of 314:** CHEAP 50 of 55, FAIR 1 of 6, RICH 148 of 253. By year: 26 of 52 in 2008, 18 of 53 in 2009, 22 of 52 in 2010,
   34 of 52 in 2011, 52 of 52 in 2012 and 47 of 53 in 2013. The RICH class missed through the 2009-2010 rebound (when SO rose with the
@@ -190,3 +292,30 @@ Hypotheses for the live model (test them on other tickers and periods; never fol
   AVOID, 2011-2013) both were.
 - A defensive stock's CHEAP call "holds" in a falling market by beating SPY with a flat return (2008) and its RICH call misses in a rebound by
   rising with the market (2009-2010): the benchmark leg of the call rule cuts both ways for a low-beta stock.
+
+## Across 2014-2017, and the ten years
+
+- **Calls held on 108 of 209 in 2014-2017:** CHEAP 17 of 39, FAIR 10 of 13, RICH 81 of 157; by year 19 of 52 (2014), 32 of 53 (2015), 45 of 52
+  (2016) and 12 of 52 (2017). Over 2008-2017, 307 of 523: CHEAP 67 of 94, FAIR 11 of 19, RICH 229 of 410.
+- **The price and the multiple's place in its decade ranked the outcomes again; the signals did not.** In 2014-2017 the entry price ranks the
+  two-year return at Spearman -0.56 and the return to the m12-24 average price at -0.81, the P/E percentile at -0.51 and -0.76, the EPP gap at
+  -0.26 and -0.70, Ratio B at -0.39 and -0.19; the adjusted gap at +0.01 and -0.28, the proxy composite at -0.12 and -0.09. Over 2008-2017: the
+  price -0.56 and -0.57, Ratio B -0.60 and -0.46, the P/E percentile -0.60 and -0.54, the EPP gap -0.48 and -0.50, the adjusted gap +0.19 and
+  +0.01, the proxy composite -0.15 and -0.11.
+- **Ratio B infinite** (33 dates of 2014-2017): held on 23. The misses are 2014-10-24 (+16.4%, 2.6pp ahead of SPY) and the nine dates from the
+  Q3 2017 print (+25.9% to +42.0%, 3-18pp ahead): unlike 2011-2013, an infinite Ratio B did not guarantee a lagging stock.
+- **The measured calls, read against the outcomes (hindsight; the README's sensitivities were computed before any outcome).** Southern Company
+  Gas out of BASE would have moved 39 calls to RICH, of which 35 would have held against the 14 that did; the company's figures throughout
+  (FY16 $2.89) would have held 7 of its 10 moves against 3; GAAP throughout would have held 3 of its 23 against 16; weather-adjusted kWh 10 of
+  10 against 7; every signal at BEAR 37 of 50 against 25, at XBULL 50 of 68 against 26 (a bracket, not a choice).
+- **Profile drift:** the models' DURABLE, risk 2, against today's profile of DURABLE, risk 1 (`outcome.json`; label only).
+
+Hypotheses for the live model (test them on other tickers and periods; never fold them into this archive):
+- An acquisition that enters reported revenue growth against a year-ago quarter without it (Southern Company Gas, +45%) turned BASE into a
+  purchase effect and the class to CHEAP while the multiple sat at the 85th-98th percentile of its decade; here the calls missed. Test it on
+  the other series that keep acquisitions in growth (BKR's BJ Services, PFE's Wyeth and King, SHW's Valspar) before proposing a
+  pro forma or organic BASE; the BJ Services rule stays the rule of this archive.
+- For a regulated utility the multiple against its own decade carried the ranking in all ten years (the P/E percentile at -0.76 against the
+  m12-24 average price in 2014-2017), and the quarter's signals carried little (the proxy composite at -0.09).
+- The benchmark leg of the call rule keeps cutting both ways for a low-beta stock: RICH missed when SPY's two-year return was weak (2014
+  entries, +6% to +18%) and when SO outran SPY into 2019 (the 2017 entries), and held when SPY ran (2016 entries).
