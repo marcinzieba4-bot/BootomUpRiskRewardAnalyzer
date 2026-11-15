@@ -15993,14 +15993,15 @@ Judgement calls that could carry hindsight (beyond the 2008-2018 lists):
   before (withdrawals: WMT, LOW, SHW and CAT; preliminary results: SHW; the year less the nine months: the 2022 series), and none was tuned on
   an outcome.
 
-## SO (Southern Company): the twenty-first ticker, in staging, 2008-2009
+## SO (Southern Company): the twenty-first ticker, in staging, 2008-2013
 
 The SO series is built apart from the other twenty and shares nothing with them but the machinery: its own fact sheet
 (`retro/facts/SO.json`), builder (`retro/build_so.py`, the F early-era builder with BMY's `distributions` rule) and engine
 (`retro/templates/so_engine.py.tmpl`, the F early-era engine with electric utility signals and Southern Company's own rule-T thresholds).
 The method is still r2. No fact, parameter, outcome or finding of another ticker enters an SO model, and neither does the profile of SO in
 `data/business_profiles.json` (a 2026 judgement: not read for this series, and first seen by the builder after the build). Outputs go to
-`staging/retrospective/SO/`, beside the others, with the same `index.json` and their own `SERIES.md`. The owner asked for 2008-2009.
+`staging/retrospective/SO/`, beside the others, with the same `index.json` and their own `SERIES.md`. The owner asked for 2008-2009, then
+2010-2013 ("SO 2010-2013", below); this part describes the 2008-2009 build.
 
 ```bash
 python3 retro/build_so.py --weekly 2008-01-01 2009-12-31                    # 105 dates, 2008-01-04 .. 2009-12-31
@@ -16048,9 +16049,11 @@ filings (297/297). Each source's date comes from EDGAR's acceptance time (before
     with synthetic fuels (FY2008 $2.37). Synthetic fuel investments contributed every year until their tax credits expired on
     2007-12-31: an ongoing operation, not a one-off, so these figures do not exclude only one-offs (the AAPL 2008, NKE FY2013 and BMY rule)
     and GAAP stands; the notes keep them. From the Q1 2009 release the figure excludes only one-offs (the $202 million MC Asset Recovery
-    settlement; in its 2008 comparisons only the leveraged lease charge), so the quarterly EPS signal uses it from that print. No filing
-    public in 2009 gives FY2008 excluding only the leveraged lease charges, so FY2008 stays at GAAP $2.25 (the Q4 2008 print's $2.26 basic
-    until the FY2008 10-K). No year is excluded; no window starts late.
+    settlement; in its 2008 comparisons only the leveraged lease charge), so the quarterly EPS signal uses it from that print. The Q4 2008
+    release's FY2008 $2.37 also excludes synthetic fuels, so the Q4 2008 print keeps GAAP $2.26 basic; the FY2008 10-K's key performance
+    indicators give "EPS, excluding leveraged lease charges | — | 2.37", so FY2008 is $2.37 from 2009-02-25 (corrected on 2026-11-15: this
+    section first said no filing public in 2009 gave that figure and kept GAAP $2.25; see below and "SO 2010-2013"). No year is excluded; no
+    window starts late.
 - **No guide in numbers.** No release, 10-Q, 10-K or other 8-K of 2007-2009 guides EPS, revenue or a margin in numbers: each release says the
   CEO and CFO "will discuss earnings and earnings guidance" on the analyst call, and no transcript or slides are filed (the UNP 2008 reading
   of a call: a later date can only lag). So on every date the current-FY EPS is the last full year's (the rollover rule), BASE is the
@@ -16165,9 +16168,146 @@ Judgement calls that could carry hindsight:
   though Southern gave it on every call (it cannot lead, only lag);
 - DURABLE, risk 2, rather than the regulated monopoly's risk 1 (label only), and no theme on the watch list.
 
+**Corrected on 2026-11-15, after these dates were scored** ("SO 2010-2013"): FY2008 is $2.37 from the FY2008 10-K (a missed fact under the
+rule above, not a new rule), so the 45 dates from 2009-02-27 carry it instead of GAAP $2.25: 3 classes move (RICH to CHEAP on 2009-05-15 and
+2009-05-22, RICH to FAIR on 2009-05-29) and no tier, so 2009 is RICH 37, CHEAP 15, FAIR 1, 2008-2009 is RICH 64, CHEAP 35, FAIR 6, and the RICH
+run from the Q1 2009 print covers 33 of its 36 dates. The guide line of all 105 dates now quotes the latest release that mentions the analyst
+call (text only), and the Q4 2008 full-year note ends "the 10-K's figure replaces it". The figures and sensitivities above are those of the
+first build; the outcomes and findings were re-scored on the corrected one.
+
 After the outcomes were computed (2026-11-15) the ten release titles were renamed to the repository's form ("Southern Company Q3 2007
 results (8-K, Exhibits 99.01-99.07)") so that `SERIES.md` names each date's latest print: text only; the 105 dates were rebuilt and re-run,
 and every class, tier and metric is identical. The hindsight results are in `staging/retrospective/SO/FINDINGS.md`: hypotheses, never inputs.
+
+### SO 2010-2013: four more vintages, the company's figures excluding one-offs, Kemper, and a correction to 2009
+
+209 weekly dates, 2010-01-08 to 2013-12-31, on the same fact sheet, builder, engine and method (r2), with the 1997-2006 rule-T thresholds
+frozen. Built on 2026-11-15, after the 2008-2009 dates had been scored (their findings are hindsight and were not read for any decision
+below; each decision applies a rule that existed before, and the one correction to 2009 is a fact that was missed, not a rule changed).
+
+```bash
+python3 retro/build_so.py --weekly 2010-01-04 2013-12-31                    # 209 dates, 2010-01-08 .. 2013-12-31
+for d in staging/retrospective/SO/201[0-3]-*/; do
+  python3 retro/retro_tool.py --archive staging/retrospective run "$d"
+  python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
+done
+python3 retro/retro_tool.py --archive staging/retrospective series SO
+for c in 2008-01-30 2008-07-01 2009-01-28 2009-02-25 2009-04-29 2009-05-08 2009-07-29 2009-10-28 2010-01-01 2010-01-27 2010-02-26 \
+         2010-04-28 2010-05-07 2010-07-28 2010-10-27 2011-01-01 2011-01-26 2011-02-25 2011-04-01 2011-04-27 2011-05-09 2011-07-27 \
+         2011-10-26 2012-01-01 2012-01-25 2012-02-27 2012-04-25 2012-05-07 2012-07-25 2012-11-05 2013-01-01 2013-01-30 2013-02-28 \
+         2013-04-24 2013-05-10 2013-07-31 2013-10-30 2014-01-01; do python3 retro/tools/firewall.py $c SO; done
+```
+
+Read, by the session's model directly with no delegated transcription: the sixteen earnings releases of Q4 2009 to Q3 2013 (8-K exhibits
+99.01-99.07), the Southern Company sections of the FY2009-FY2012 10-Ks (selected data, the statements of income and cash flows, the
+segment note, the key performance indicators chart, Items 1, 1A and 5), the Q1 2010-Q3 2013 10-Qs for the dividend, and every other 8-K of
+February 2010 to February 2014 by its items: the Kemper 8-Ks of 2013 (items 2.02 and 7.01, each accepted after the close the evening before a
+release), the Mississippi Power monthly Kemper reports (7.01), the rate-case and PSC notices, the Plant Daniel 8-Ks of 2011, the share
+sales-agency, debt, director, officer, meeting and bylaw 8-Ks. None guides a number. The fact sheet's generator (the 2008-2009 script,
+extended) asserts every row in its own filing and computes every rate: 617 strings checked with `verbatim.py`, 617 found. Sources `SO25`-`SO48`
+(the 10-Ks `SO25`-`SO28`, the releases `SO29`-`SO44`, the 10-Qs `SO45`-`SO48`); `SO1`-`SO24` are unchanged. Decided on 2026-11-15, before any
+2010-2013 model was built or any of its outcomes computed:
+
+- **A correction to 2009, found while reading the FY2009 10-K.** The 10-Ks' key performance indicators chart states the company's EPS
+  without its one-offs: the FY2009 10-K "EPS, excluding the MC Asset Recovery litigation settlement ... 2.32". Checking the earlier 10-Ks for
+  the same row found the FY2008 10-K's "EPS, excluding leveraged lease charges | — | 2.37", public on 2009-02-25. The 2008-2009 section said
+  no filing public in 2009 gave FY2008 excluding only the leveraged lease charges; that was wrong. Under the rule decided for 2008-2009 (the
+  company's figure excluding only one-offs, from the latest filing that states it), FY2008 is $2.37 from the FY2008 10-K. The 45 dates from
+  2009-02-27 to 2009-12-31 were rebuilt on it: the anchor moves from $2.25 to $2.37 (the P/E down 5%), **3 classes move** (RICH to CHEAP on
+  2009-05-15 and 2009-05-22, RICH to FAIR on 2009-05-29) and no tier. The fact was found after those dates had been scored, and the 3 moves
+  happen to turn RICH calls that missed in hindsight into calls that held: a correction that flatters the score, disclosed as such. The
+  FY2006 and FY2007 charts exclude synthetic fuels (an ongoing operation), so 2006 and 2007 stay at GAAP.
+- **Text-only corrections to 2008-2009.** The guide line said "the {latest} release: earnings guidance is discussed on the analyst call",
+  but the Q3 2007 and Q1-Q3 2008 releases carry no sentence on the call. Each print now records its own call words (`call_words`, verbatim)
+  and the line quotes the latest release that has them; from the Q2 2011 release they no longer name guidance ("will discuss earnings and
+  provide a general business update"), and the line says so. The Q4 2008 full-year note now ends "the 10-K's figure replaces it" (it said
+  "diluted figure"). All 105 dates of 2008-2009 change in that text; nothing else moves on the 60 dates outside the 45 above.
+- **EPS: the company's figure where every item it excludes is a one-off** (the ACN rule, the same test as 2008-2009), from the latest filing
+  that states it, else GAAP diluted EPS from the latest 10-K. 2009 $2.32 (excluding the $202 million MC Asset Recovery settlement: the Q4 2009
+  release, then the FY2009 10-K's chart and the Q4 2010 release; GAAP $2.06 diluted), 2010 $2.36 and 2011 $2.55 (GAAP diluted: nothing is
+  excluded; the Q4 releases' basic $2.37 and $2.57 until the 10-K), 2012 $2.68 (excluding the $21 million MC Asset Recovery insurance gain:
+  the Q4 2012 release and the FY2012 10-K's chart; GAAP $2.67 diluted, $2.70 basic). The company's figures are basic EPS, as published, so
+  the history mixes basic and diluted years (the releases state diluted EPS differs by not more than 1 cent). Mississippi Power restated its
+  own 2012 for a $78 million pre-tax Kemper charge (the Q2 2013 release notes it); Southern Company's 2012 stands ($2.70 basic in the FY2013
+  10-K).
+- **The quarterly EPS signal** takes the release's figure excluding items wherever every item is a one-off: the MC Asset Recovery settlement
+  and its insurance gain (Q2-Q4 2012), the leveraged lease charges (in the 2008 comparisons) and the leveraged lease restructure (Q1 2013), and
+  the Kemper losses (2013). From Q1 2011 to Q1 2012 the releases exclude nothing and GAAP is the figure.
+- **Kemper.** The estimated probable losses on Mississippi Power's Kemper IGCC ($333 million, $278 million and $93 million after tax in Q1-Q3
+  2013; $540 million, $450 million and $150 million pre-tax, an operating-expense line) are charges on one construction project, so
+  one-offs (the F 2022-2026 EV-charge precedent), although they come three quarters running and the releases say similar charges "are not
+  expected to occur with any regularity in the future, although it is possible such charges could occur". They are out of the EPS signal and
+  in the electric utilities' net income and the operating margin, which the releases publish only with them (the Q1 2009 settlement rule: no
+  figure is derived from a published amount). The Kemper 8-Ks before each release add nothing: their charge reaches the print the next morning.
+- **No guide in numbers**, as before. The 10-Ks' charts give an EPS target for the year just ended ("Basic EPS | $2.58 — $2.70 | $2.70" for
+  2012), published after it: not a guide for any date.
+- **Vintages.** FY2009 accepted 2010-02-25 16:38 ET (dated 2010-02-26), FY2010 2011-02-25 15:19 ET, FY2011 2012-02-24 16:40 ET (dated
+  2012-02-27), FY2012 2013-02-27 18:33 ET (dated 2013-02-28). From the FY2009 10-K earnings before income taxes are restated for SFAS No. 160
+  (2008: $2,722 million against $2,657 million), which only the display-only EPS check uses. The cash-flow line is "Common stock issuances"
+  from the FY2009 10-K; the FY2012 10-K shows $430 million repurchased.
+- **Dividends** from each first-quarter 10-Q: $0.455 (2010-05-07), $0.4725 (accepted 2011-05-06 16:30 ET, so 2011-05-09), $0.49 (2012-05-07),
+  $0.5075 (2013-05-10); each January rate from its 10-K.
+- **Release timing.** Every release of the period was accepted before the open on a Wednesday, except Q3 2012 (Monday 2012-11-05, 08:25 ET):
+  each week's date is the next trading day, 2012-11-06 for Q3 2012.
+- **Mirant.** The ten-year windows of the dates to 2011-04-01 still reach before the 2001-04-03 distribution, so their first days are priced
+  as traded with Mirant; from 2011-04-08 no window does, and the model's window comment says which.
+
+Controls and checks (before any outcome):
+- **Controls:** altering one value of each fact published from the FY2008 10-K on changes no model dated before its publication and changes the
+  first weekly date on or after it: 42 of 42 (each print's retail kWh, each Q4 print's full-year revenue and EPS, each vintage's last-year
+  revenue and EPS, each dividend), each reaching exactly its scope (a Q4 print's actuals for four or five dates until the 10-K).
+- **Leak scan:** 0 hits in 93,354 (model, later token) pairs over the 314 dates of 2008-2013, after dropping 16,297 tokens an earlier fact or the
+  engine carries. A first pass flagged one phrase: the Q4 2010 full-year note's "the release excludes no item for the year" contained a later
+  print's "the release excludes no item"; generic wording, reworded ("no item is excluded for the year").
+- **`retro_tool run` passes on all 314 dates** with no warning (run once per date with the index rebuilt at the end, the same outputs).
+- **Firewall** (run on the committed build, before any outcome): passes at the 38 cutoffs above (every print, vintage and dividend date of
+  2009-2013, the year boundaries, 2011-04-01, two 2008 cutoffs and 2014-01-01), 0 files changed and no planted text. The SO plant now also
+  carries call words, a segment note, a planted full-year EPS basis and a later vintage with every year on a planted EPS basis. A full rebuild
+  of 2008-2013 is byte-identical.
+
+Seen in the build (method behaviour, not tuned):
+- **2010-2013: RICH 189, CHEAP 20, FAIR 0.** 2010: RICH 32, CHEAP 20. 2011, 2012 and 2013: RICH on all 52, 52 and 53. Legacy tiers: BUY 33,
+  ACCUMULATE 28, WATCHLIST 20, AVOID 128. Robustness: all eight variants agree on 170 dates, seven on 16, six on 14, five on 5, three on 4.
+  With the corrected 2009 (RICH 37, CHEAP 15, FAIR 1), 2008-2013 totals RICH 253, CHEAP 55, FAIR 6.
+- **January 2010 on FY08's $2.37** (2010-01-08 to 2010-01-22, 3 dates): $32.54-33.34 is 13.7-14.1x, the 10th-16th percentile, but BASE is
+  -15.0%/yr (Q3 2009 revenue -13.7%): RICH, BUY.
+- **CHEAP only in the first half of 2010, on FY09's $2.32:** 7 of 13 dates on the Q4 2009 print ($31.17-34.73, 13.4-15.0x, the 5th-45th
+  percentile, BASE -9.0% to -9.9%/yr) and all 13 on the Q1 2010 print ($32.13-35.89, 13.9-15.5x), when retail kWh rose 10.3% as reported
+  (2.6% weather-adjusted) and the electric utilities' net income 49.8% (proxy composite 3.55, BASE +11.2%/yr).
+- **RICH from the Q2 2010 print without a break** (2010-07-29 to 2013-12-31, 180 dates): the price ran from $35.49 to $48.51 while the anchor
+  went $2.32, $2.36 (FY10), $2.55 (FY11) and $2.68 (FY12): 15.0-19.6x, the 30th-100th percentile of a 15.1-15.7x median and at or above the
+  80th on 139 of the 180. Ratio B is
+  infinite on 63 dates (2011-09-16 to 2013-04-19: the price above the BULL case) and the tier AVOID on 128. BASE follows the quarter's
+  revenue, which fell with fuel prices: -12.3%/yr (Q1 2012) to +11.4% (Q3 2010).
+- **The 2013 Kemper quarters** read the electric utilities' net income at -74.3%, -50.3% and -12.8% and the operating margin at -1,291bp,
+  -1,227bp and -474bp (BEAR) while EPS excluding the charges reads +16.7%, -4.3% and -2.7%; the multiple fell back to 15.0-16.6x (the 30th-79th
+  percentile) and the tier to ACCUMULATE or BUY on 15 dates of the second half.
+- **BEAR is mild:** -2.1%/yr (2009 against 2008, $2.32 against $2.37) from the Q4 2009 print on (-1.4%/yr before it). The EPP floor is 13x to 2012-11-30 and 14x from
+  2012-12-07.
+- **The proxy composite** is 1.95 on Q3 2009, 2.70 on Q4 2009, 3.55 on Q1 2010, 2.90, 2.60 and 2.00 on Q2-Q4 2010, 1.30, 3.00, 2.45 and 2.80 on
+  Q1-Q4 2011, 1.45, 2.15, 2.30 and 3.20 on Q1-Q4 2012, and 2.30, 1.65 and 1.65 on Q1-Q3 2013; the market composite is 3.8-3.9 on most dates from
+  2011, near the top of its scale.
+
+How far each call moves the classes of 2010-2013 (the 209 dates rebuilt with one encoding changed and classified offline with `retro_tool`'s
+own classifier; no outcome consulted):
+- GAAP EPS throughout (FY08 $2.25, FY09 $2.06, FY12 $2.67; GAAP quarterly EPS): 20 classes (CHEAP to RICH on 8, CHEAP to FAIR on 12;
+  2010-01-28 to 2010-07-23) and 76 tiers: every CHEAP call of 2010 rests on FY09 excluding the MC Asset Recovery settlement;
+- Yahoo's Mirant factor kept: 6 classes (CHEAP to RICH or FAIR, 2010-01-28 to 2010-03-12), 14 tiers; none after April 2011, when the windows
+  pass the spin-off;
+- BASE on retail non-fuel revenue growth: 2 classes (2010-03-19 and 2010-03-26), 11 tiers;
+- the 2013 margin and segment without the Kemper loss (+94bp, -167bp, -175bp; +16.0%, -3.7%, -3.3%): none; the 2013 EPS signal on GAAP: none;
+- retail kWh weather-adjusted where published: none;
+- every signal at its BEAR value: 20 classes (CHEAP to RICH, 2010-01-28 to 2010-07-23); at its XBULL value: 61 classes (RICH to FAIR on 38,
+  to CHEAP on 23, 2010-01-08 to 2013-12-31); no tier either way.
+The RICH calls from mid-2010 rest on the multiple against the stock's own decade (79th-100th percentile, Ratio B infinite on 63 dates), not on
+any one encoding; the 2010 CHEAP calls rest on the company's EPS figure and the 2010 signals.
+
+Judgement calls that could carry hindsight:
+- the company's EPS excluding only one-offs (20 classes and 76 tiers if GAAP), by a builder who knows the MC Asset Recovery and leveraged lease
+  charges did not recur and the Kemper losses did;
+- the Kemper losses read as one-offs for EPS and kept in the segment and margin (no class either way);
+- the FY2008 correction, found after the 2009 dates were scored (3 classes, all toward calls that held);
+- the frozen 1997-2006 thresholds, the signals and DURABLE, risk 2, as in 2008-2009.
 
 ## Categories change with the era
 
