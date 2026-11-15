@@ -16165,6 +16165,10 @@ Judgement calls that could carry hindsight:
   though Southern gave it on every call (it cannot lead, only lag);
 - DURABLE, risk 2, rather than the regulated monopoly's risk 1 (label only), and no theme on the watch list.
 
+After the outcomes were computed (2026-11-15) the ten release titles were renamed to the repository's form ("Southern Company Q3 2007
+results (8-K, Exhibits 99.01-99.07)") so that `SERIES.md` names each date's latest print: text only; the 105 dates were rebuilt and re-run,
+and every class, tier and metric is identical. The hindsight results are in `staging/retrospective/SO/FINDINGS.md`: hypotheses, never inputs.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are

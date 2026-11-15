@@ -78,7 +78,7 @@ SOURCES = [
         "id": "SO18",
         "published": "2009-01-28",
         "filed": "2009-01-28 09:00 ET (before the open)",
-        "title": "Southern Company Q4 2008 earnings release (Form 8-K, Exhibits 99.01-99.07)",
+        "title": "Southern Company Q4 2008 results (8-K, Exhibits 99.01-99.07)",
         "url": "https://www.sec.gov/Archives/edgar/data/92122/000009212209000005/x99-1.htm",
         "supports": "Q4 2008 results: financial highlights, EPS, consolidated earnings, kilowatt-hour sales"
     },
@@ -86,7 +86,7 @@ SOURCES = [
         "id": "SO19",
         "published": "2009-04-29",
         "filed": "2009-04-29 08:45 ET (before the open)",
-        "title": "Southern Company Q1 2009 earnings release (Form 8-K, Exhibits 99.01-99.07)",
+        "title": "Southern Company Q1 2009 results (8-K, Exhibits 99.01-99.07)",
         "url": "https://www.sec.gov/Archives/edgar/data/92122/000009212209000033/x99-1.htm",
         "supports": "Q1 2009 results: financial highlights, EPS, consolidated earnings, kilowatt-hour sales"
     },

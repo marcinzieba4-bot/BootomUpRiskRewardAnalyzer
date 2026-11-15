@@ -78,7 +78,7 @@ SOURCES = [
         "id": "SO12",
         "published": "2007-07-26",
         "filed": "2007-07-26 10:29 ET (during the session)",
-        "title": "Southern Company Q2 2007 earnings release (Form 8-K, Exhibits 99.01-99.07)",
+        "title": "Southern Company Q2 2007 results (8-K, Exhibits 99.01-99.07)",
         "url": "https://www.sec.gov/Archives/edgar/data/92122/000009212207000069/x99-1.htm",
         "supports": "Q2 2007 results: financial highlights, EPS, consolidated earnings, kilowatt-hour sales"
     },
@@ -86,7 +86,7 @@ SOURCES = [
         "id": "SO13",
         "published": "2007-10-25",
         "filed": "2007-10-25 09:06 ET (before the open)",
-        "title": "Southern Company Q3 2007 earnings release (Form 8-K, Exhibits 99.01-99.07)",
+        "title": "Southern Company Q3 2007 results (8-K, Exhibits 99.01-99.07)",
         "url": "https://www.sec.gov/Archives/edgar/data/92122/000009212207000101/x99-01.htm",
         "supports": "Q3 2007 results: financial highlights, EPS, consolidated earnings, kilowatt-hour sales"
     },

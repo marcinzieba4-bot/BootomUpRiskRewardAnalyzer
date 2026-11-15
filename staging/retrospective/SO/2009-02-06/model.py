@@ -78,7 +78,7 @@ SOURCES = [
         "id": "SO18",
         "published": "2009-01-28",
         "filed": "2009-01-28 09:00 ET (before the open)",
-        "title": "Southern Company Q4 2008 earnings release (Form 8-K, Exhibits 99.01-99.07)",
+        "title": "Southern Company Q4 2008 results (8-K, Exhibits 99.01-99.07)",
         "url": "https://www.sec.gov/Archives/edgar/data/92122/000009212209000005/x99-1.htm",
         "supports": "Q4 2008 results: financial highlights, EPS, consolidated earnings, kilowatt-hour sales"
     },
@@ -86,7 +86,7 @@ SOURCES = [
         "id": "SO14",
         "published": "2008-01-30",
         "filed": "2008-01-30 09:56 ET (during the session)",
-        "title": "Southern Company Q4 2007 earnings release (Form 8-K, Exhibits 99.01-99.07)",
+        "title": "Southern Company Q4 2007 results (8-K, Exhibits 99.01-99.07)",
         "url": "https://www.sec.gov/Archives/edgar/data/92122/000009212208000006/x99-01.htm",
         "supports": "Q4 2007 results: financial highlights, EPS, consolidated earnings, kilowatt-hour sales"
     },
@@ -94,7 +94,7 @@ SOURCES = [
         "id": "SO15",
         "published": "2008-04-30",
         "filed": "2008-04-30 09:59 ET (during the session)",
-        "title": "Southern Company Q1 2008 earnings release (Form 8-K, Exhibits 99.01-99.07)",
+        "title": "Southern Company Q1 2008 results (8-K, Exhibits 99.01-99.07)",
         "url": "https://www.sec.gov/Archives/edgar/data/92122/000009212208000030/x99-01.htm",
         "supports": "Q1 2008 results: financial highlights, EPS, consolidated earnings, kilowatt-hour sales"
     },
@@ -102,7 +102,7 @@ SOURCES = [
         "id": "SO16",
         "published": "2008-07-30",
         "filed": "2008-07-30 09:55 ET (during the session)",
-        "title": "Southern Company Q2 2008 earnings release (Form 8-K, Exhibits 99.01-99.07)",
+        "title": "Southern Company Q2 2008 results (8-K, Exhibits 99.01-99.07)",
         "url": "https://www.sec.gov/Archives/edgar/data/92122/000009212208000046/x99-1.htm",
         "supports": "Q2 2008 results: financial highlights, EPS, consolidated earnings, kilowatt-hour sales"
     },
@@ -110,7 +110,7 @@ SOURCES = [
         "id": "SO17",
         "published": "2008-10-23",
         "filed": "2008-10-23 09:30 ET (during the session)",
-        "title": "Southern Company Q3 2008 earnings release (Form 8-K, Exhibits 99.01-99.07)",
+        "title": "Southern Company Q3 2008 results (8-K, Exhibits 99.01-99.07)",
         "url": "https://www.sec.gov/Archives/edgar/data/92122/000009212208000059/x99-1.htm",
         "supports": "Q3 2008 results: financial highlights, EPS, consolidated earnings, kilowatt-hour sales"
     },

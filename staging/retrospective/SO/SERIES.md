@@ -1,0 +1,111 @@
+# SO retrospective series
+
+Point-in-time columns use only information public on the as-of date. The last four columns are hindsight: 2-year total return incl. dividends, its excess vs SPY, the return to the average price over months 12-24 (endpoint-robust), and whether the price-state call held.
+
+| as of | price | latest results known | proxy | adj gap | Ratio B | model tier | class | robustness | 2y TR | vs SPY | m12-24 avg | call |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2008-01-04 | $38.71 | Southern Company Q3 2007 results | 2.35 | -1.44 | 3.86x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -5.3% | +11.0pp | -19.0% | ✗ |
+| 2008-01-11 | $39.76 | Southern Company Q3 2007 results | 2.35 | -1.44 | 6.14x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -7.8% | +6.8pp | -21.3% | ✗ |
+| 2008-01-18 | $37.74 | Southern Company Q3 2007 results | 2.35 | -1.31 | 2.76x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -2.7% | +7.6pp | -17.2% | ✗ |
+| 2008-01-25 | $36.09 | Southern Company Q3 2007 results | 2.35 | -1.04 | 1.71x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +0.3% | +14.1pp | -13.4% | ✗ |
+| 2008-01-31 | $36.37 | Southern Company Q4 2007 results | 2.35 | -0.68 | 0.85x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | -2.6% | +15.7pp | -14.2% | ✗ |
+| 2008-02-08 | $35.75 | Southern Company Q4 2007 results | 2.35 | -0.58 | 0.73x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | -3.3% | +13.4pp | -12.8% | ✗ |
+| 2008-02-15 | $35.78 | Southern Company Q4 2007 results | 2.35 | -0.58 | 0.74x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | -3.3% | +13.1pp | -12.9% | ✗ |
+| 2008-02-22 | $35.52 | Southern Company Q4 2007 results | 2.35 | -0.59 | 0.77x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +0.7% | +15.1pp | -12.2% | ✗ |
+| 2008-02-29 | $34.53 | Southern Company Q4 2007 results | 2.35 | -0.44 | 0.58x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +1.9% | +15.5pp | -9.6% | ✓ |
+| 2008-03-07 | $34.29 | Southern Company Q4 2007 results | 2.35 | -0.40 | 0.54x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +4.0% | +12.1pp | -8.8% | ✓ |
+| 2008-03-14 | $34.45 | Southern Company Q4 2007 results | 2.35 | -0.43 | 0.57x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +4.2% | +11.4pp | -8.9% | ✓ |
+| 2008-03-20 | $36.13 | Southern Company Q4 2007 results | 2.35 | -0.71 | 0.91x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +1.3% | +9.9pp | -12.9% | ✗ |
+| 2008-03-28 | $35.37 | Southern Company Q4 2007 results | 2.35 | -0.59 | 0.74x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +3.3% | +11.0pp | -10.9% | ✗ |
+| 2008-04-04 | $36.51 | Southern Company Q4 2007 results | 2.35 | -0.77 | 1.00x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +0.9% | +11.4pp | -13.6% | ✗ |
+| 2008-04-11 | $36.30 | Southern Company Q4 2007 results | 2.35 | -0.75 | 0.95x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +2.9% | +9.7pp | -12.9% | ✗ |
+| 2008-04-18 | $36.95 | Southern Company Q4 2007 results | 2.35 | -0.85 | 1.13x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +1.0% | +11.3pp | -14.3% | ✗ |
+| 2008-04-25 | $37.10 | Southern Company Q4 2007 results | 2.35 | -0.88 | 1.17x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +2.9% | +12.2pp | -14.4% | ✗ |
+| 2008-05-01 | $36.92 | Southern Company Q1 2008 results | 2.70 | -0.41 | 0.98x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | +3.0% | +15.5pp | -13.7% | ✗ |
+| 2008-05-09 | $36.29 | Southern Company Q1 2008 results | 2.70 | -0.29 | 0.84x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +3.0% | +19.5pp | -11.9% | ✓ |
+| 2008-05-16 | $36.74 | Southern Company Q1 2008 results | 2.70 | -0.38 | 0.94x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | +3.3% | +20.1pp | -12.6% | ✗ |
+| 2008-05-23 | $36.00 | Southern Company Q1 2008 results | 2.70 | -0.25 | 0.78x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +3.0% | +20.3pp | -10.5% | ✓ |
+| 2008-05-30 | $36.20 | Southern Company Q1 2008 results | 2.70 | -0.28 | 0.82x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | -0.1% | +18.6pp | -10.8% | ✓ |
+| 2008-06-06 | $34.92 | Southern Company Q1 2008 results | 2.70 | -0.04 | 0.59x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +1.9% | +20.1pp | -7.3% | ✓ |
+| 2008-06-13 | $35.09 | Southern Company Q1 2008 results | 2.70 | -0.14 | 0.68x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +4.0% | +20.0pp | -7.6% | ✓ |
+| 2008-06-20 | $34.49 | Southern Company Q1 2008 results | 2.70 | -0.03 | 0.58x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +9.0% | +20.5pp | -5.8% | ✓ |
+| 2008-06-27 | $34.43 | Southern Company Q1 2008 results | 2.70 | -0.02 | 0.57x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +6.7% | +18.5pp | -5.5% | ✓ |
+| 2008-07-03 | $35.32 | Southern Company Q1 2008 results | 2.70 | -0.18 | 0.73x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +4.3% | +19.8pp | -7.7% | ✓ |
+| 2008-07-11 | $35.99 | Southern Company Q1 2008 results | 2.70 | -0.29 | 0.87x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +6.1% | +15.2pp | -9.3% | ✗ |
+| 2008-07-18 | $34.84 | Southern Company Q1 2008 results | 2.70 | -0.09 | 0.64x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +9.8% | +21.5pp | -6.1% | ✓ |
+| 2008-07-25 | $35.13 | Southern Company Q1 2008 results | 2.70 | -0.15 | 0.69x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +12.0% | +20.4pp | -6.7% | ✓ |
+| 2008-07-31 | $35.39 | Southern Company Q2 2008 results | 2.55 | +0.03 | 0.55x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +9.7% | +19.2pp | -7.1% | ✓ |
+| 2008-08-08 | $36.57 | Southern Company Q2 2008 results | 2.55 | -0.29 | 0.73x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +7.7% | +17.3pp | -9.9% | ✓ |
+| 2008-08-15 | $37.44 | Southern Company Q2 2008 results | 2.55 | -0.48 | 0.88x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | +5.1% | +18.3pp | -11.7% | ✗ |
+| 2008-08-22 | $37.79 | Southern Company Q2 2008 results | 2.55 | -0.54 | 0.95x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +3.9% | +17.5pp | -12.3% | ✗ |
+| 2008-08-29 | $37.51 | Southern Company Q2 2008 results | 2.55 | -0.49 | 0.90x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | +7.9% | +21.4pp | -11.4% | ✗ |
+| 2008-09-05 | $37.10 | Southern Company Q2 2008 results | 2.55 | -0.41 | 0.82x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +9.1% | +16.3pp | -10.1% | ✓ |
+| 2008-09-12 | $38.14 | Southern Company Q2 2008 results | 2.55 | -0.60 | 1.03x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +6.5% | +14.4pp | -12.3% | ✗ |
+| 2008-09-19 | $38.40 | Southern Company Q2 2008 results | 2.55 | -0.64 | 1.09x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +5.6% | +11.4pp | -12.6% | ✗ |
+| 2008-09-26 | $38.62 | Southern Company Q2 2008 results | 2.55 | -0.68 | 1.15x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +6.1% | +7.4pp | -12.9% | ✗ |
+| 2008-10-03 | $37.15 | Southern Company Q2 2008 results | 2.55 | -0.42 | 0.83x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +9.4% | +1.4pp | -9.1% | ✓ |
+| 2008-10-10 | $32.26 | Southern Company Q2 2008 results | 2.55 | +0.82 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +27.7% | -9.0pp | +5.0% | ✗ |
+| 2008-10-17 | $33.49 | Southern Company Q2 2008 results | 2.55 | +0.52 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +23.0% | -8.1pp | +1.5% | ✗ |
+| 2008-10-24 | $34.61 | Southern Company Q3 2008 results | 1.80 | -0.51 | 0.45x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +20.8% | -20.3pp | -1.5% | ✓ |
+| 2008-10-31 | $34.34 | Southern Company Q3 2008 results | 1.80 | -0.44 | 0.42x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +20.6% | -6.4pp | -0.4% | ✗ |
+| 2008-11-07 | $34.83 | Southern Company Q3 2008 results | 1.80 | -0.57 | 0.48x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +20.6% | -14.9pp | -1.4% | ✓ |
+| 2008-11-14 | $35.21 | Southern Company Q3 2008 results | 1.80 | -0.68 | 0.53x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +18.2% | -25.7pp | -2.1% | ✓ |
+| 2008-11-21 | $35.59 | Southern Company Q3 2008 results | 1.80 | -0.83 | 0.58x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +16.9% | -40.0pp | -2.8% | ✓ |
+| 2008-11-28 | $36.32 | Southern Company Q3 2008 results | 1.80 | -1.06 | 0.69x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +13.9% | -23.0pp | -4.5% | ✓ |
+| 2008-12-05 | $36.89 | Southern Company Q3 2008 results | 1.80 | -1.21 | 0.78x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +12.9% | -32.0pp | -5.7% | ✓ |
+| 2008-12-12 | $36.34 | Southern Company Q3 2008 results | 1.80 | -1.07 | 0.69x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +13.8% | -31.1pp | -4.0% | ✓ |
+| 2008-12-19 | $35.84 | Southern Company Q3 2008 results | 1.80 | -0.94 | 0.61x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +15.6% | -30.4pp | -2.4% | ✓ |
+| 2008-12-26 | $35.97 | Southern Company Q3 2008 results | 1.80 | -0.97 | 0.63x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +16.2% | -33.0pp | -2.6% | ✓ |
+| 2009-01-02 | $37.47 | Southern Company Q3 2008 results | 1.80 | -1.34 | 0.89x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +11.5% | -28.6pp | -6.2% | ✓ |
+| 2009-01-09 | $35.53 | Southern Company Q3 2008 results | 1.80 | -0.84 | 0.57x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +17.1% | -30.6pp | -0.8% | ✓ |
+| 2009-01-16 | $35.03 | Southern Company Q3 2008 results | 1.80 | -0.66 | 0.50x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +20.0% | -37.2pp | +0.9% | ✓ |
+| 2009-01-23 | $34.65 | Southern Company Q3 2008 results | 1.80 | -0.54 | 0.46x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +20.6% | -39.2pp | +2.2% | ✓ |
+| 2009-01-29 | $33.86 | Southern Company Q4 2008 results | 1.75 | -0.27 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +20.8% | -35.6pp | +4.9% | ✗ |
+| 2009-02-06 | $33.59 | Southern Company Q4 2008 results | 1.75 | -0.20 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +21.8% | -34.1pp | +6.1% | ✗ |
+| 2009-02-13 | $31.39 | Southern Company Q4 2008 results | 1.75 | +0.26 | 0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +32.5% | -33.7pp | +13.9% | ✓ |
+| 2009-02-20 | $30.17 | Southern Company Q4 2008 results | 1.75 | +0.39 | 0.07x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +37.4% | -42.1pp | +18.9% | ✓ |
+| 2009-02-27 | $30.31 | Southern Company Q4 2008 results | 1.75 | +0.42 | -0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +37.4% | -47.6pp | +18.7% | ✓ |
+| 2009-03-06 | $28.05 | Southern Company Q4 2008 results | 1.75 | +0.87 | -0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +48.1% | -50.6pp | +28.7% | ✓ |
+| 2009-03-13 | $27.14 | Southern Company Q4 2008 results | 1.75 | +0.97 | -0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +54.2% | -23.6pp | +33.4% | ✓ |
+| 2009-03-20 | $30.58 | Southern Company Q4 2008 results | 1.75 | +0.39 | -0.03x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +32.7% | -39.7pp | +18.6% | ✓ |
+| 2009-03-27 | $30.57 | Southern Company Q4 2008 results | 1.75 | +0.39 | -0.03x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +34.6% | -31.7pp | +19.0% | ✓ |
+| 2009-04-03 | $31.08 | Southern Company Q4 2008 results | 1.75 | +0.33 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +34.8% | -28.5pp | +17.3% | ✓ |
+| 2009-04-09 | $30.89 | Southern Company Q4 2008 results | 1.75 | +0.31 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +35.9% | -24.1pp | +18.3% | ✓ |
+| 2009-04-17 | $29.64 | Southern Company Q4 2008 results | 1.75 | +0.46 | -0.08x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +41.4% | -15.4pp | +23.6% | ✓ |
+| 2009-04-24 | $29.46 | Southern Company Q4 2008 results | 1.75 | +0.48 | -0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +43.0% | -16.5pp | +24.5% | ✓ |
+| 2009-04-30 | $28.88 | Southern Company Q1 2009 results | 1.30 | -0.76 | -0.17x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +47.7% | -13.5pp | +27.3% | ✗ |
+| 2009-05-08 | $28.76 | Southern Company Q1 2009 results | 1.30 | -0.74 | -0.18x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +49.9% | +0.8pp | +28.2% | ✗ |
+| 2009-05-15 | $28.12 | Southern Company Q1 2009 results | 1.30 | -0.64 | -0.22x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +56.8% | +0.7pp | +31.5% | ✗ |
+| 2009-05-22 | $27.70 | Southern Company Q1 2009 results | 1.30 | -0.56 | -0.25x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +59.1% | +4.1pp | +34.0% | ✗ |
+| 2009-05-29 | $28.41 | Southern Company Q1 2009 results | 1.30 | -0.69 | -0.21x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +52.8% | +3.7pp | +31.1% | ✗ |
+| 2009-06-05 | $28.91 | Southern Company Q1 2009 results | 1.30 | -0.78 | -0.17x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +48.7% | +6.0pp | +29.3% | ✗ |
+| 2009-06-12 | $30.55 | Southern Company Q1 2009 results | 1.30 | -1.30 | -0.04x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +40.5% | +1.7pp | +22.7% | ✗ |
+| 2009-06-19 | $30.61 | Southern Company Q1 2009 results | 1.30 | -1.32 | -0.04x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +41.8% | -1.1pp | +22.9% | ✗ |
+| 2009-06-26 | $31.90 | Southern Company Q1 2009 results | 1.30 | -1.60 | 0.10x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +34.9% | -8.1pp | +18.3% | ✗ |
+| 2009-07-02 | $31.01 | Southern Company Q1 2009 results | 1.30 | -1.45 | 0.00x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +42.9% | -11.2pp | +22.1% | ✗ |
+| 2009-07-10 | $30.70 | Southern Company Q1 2009 results | 1.30 | -1.38 | -0.03x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +43.1% | -14.9pp | +23.7% | ✗ |
+| 2009-07-17 | $31.48 | Southern Company Q1 2009 results | 1.30 | -1.55 | 0.05x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +39.2% | -5.5pp | +21.0% | ✗ |
+| 2009-07-24 | $32.63 | Southern Company Q1 2009 results | 1.30 | -1.77 | 0.19x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +35.4% | -6.5pp | +17.0% | ✗ |
+| 2009-07-30 | $31.85 | Southern Company Q2 2009 results | 1.60 | -1.41 | 0.09x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +35.6% | -0.1pp | +20.1% | ✗ |
+| 2009-08-07 | $31.51 | Southern Company Q2 2009 results | 1.60 | -1.36 | 0.05x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +38.1% | +14.9pp | +21.6% | ✗ |
+| 2009-08-14 | $31.47 | Southern Company Q2 2009 results | 1.60 | -1.35 | 0.05x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +36.2% | +14.5pp | +21.9% | ✗ |
+| 2009-08-21 | $31.51 | Southern Company Q2 2009 results | 1.60 | -1.36 | 0.05x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +38.4% | +24.6pp | +22.1% | ✗ |
+| 2009-08-28 | $31.58 | Southern Company Q2 2009 results | 1.60 | -1.37 | 0.06x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +40.8% | +22.3pp | +22.1% | ✗ |
+| 2009-09-04 | $31.42 | Southern Company Q2 2009 results | 1.60 | -1.34 | 0.04x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +42.6% | +22.7pp | +23.0% | ✗ |
+| 2009-09-11 | $31.03 | Southern Company Q2 2009 results | 1.60 | -1.32 | 0.00x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +43.0% | +28.0pp | +24.7% | ✗ |
+| 2009-09-18 | $32.03 | Southern Company Q2 2009 results | 1.60 | -1.48 | 0.11x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +44.3% | +26.1pp | +21.1% | ✗ |
+| 2009-09-25 | $31.90 | Southern Company Q2 2009 results | 1.60 | -1.46 | 0.10x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +44.4% | +31.2pp | +21.9% | ✗ |
+| 2009-10-02 | $31.73 | Southern Company Q2 2009 results | 1.60 | -1.43 | 0.08x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +45.0% | +30.1pp | +22.9% | ✗ |
+| 2009-10-09 | $31.84 | Southern Company Q2 2009 results | 1.60 | -1.45 | 0.09x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +44.5% | +32.3pp | +22.8% | ✗ |
+| 2009-10-16 | $32.50 | Southern Company Q2 2009 results | 1.60 | -1.56 | 0.18x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +42.5% | +25.7pp | +20.6% | ✗ |
+| 2009-10-23 | $32.67 | Southern Company Q2 2009 results | 1.60 | -1.60 | 0.20x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +45.6% | +26.6pp | +20.3% | ✗ |
+| 2009-10-29 | $31.71 | Southern Company Q3 2009 results | 1.95 | -1.13 | 0.08x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +46.7% | +21.7pp | +24.2% | ✗ |
+| 2009-11-06 | $31.59 | Southern Company Q3 2009 results | 1.95 | -1.12 | 0.06x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +48.4% | +26.9pp | +25.0% | ✗ |
+| 2009-11-13 | $31.58 | Southern Company Q3 2009 results | 1.95 | -1.12 | 0.06x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +50.8% | +31.0pp | +25.4% | ✗ |
+| 2009-11-20 | $31.40 | Southern Company Q3 2009 results | 1.95 | -1.13 | 0.04x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +49.3% | +33.6pp | +26.4% | ✗ |
+| 2009-11-27 | $31.61 | Southern Company Q3 2009 results | 1.95 | -1.16 | 0.06x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +46.0% | +35.6pp | +25.8% | ✗ |
+| 2009-12-04 | $32.83 | Southern Company Q3 2009 results | 1.95 | -1.38 | 0.22x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +44.5% | +27.8pp | +21.5% | ✗ |
+| 2009-12-11 | $34.22 | Southern Company Q3 2009 results | 1.95 | -1.68 | 0.47x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +41.0% | +23.3pp | +16.9% | ✗ |
+| 2009-12-18 | $33.79 | Southern Company Q3 2009 results | 1.95 | -1.58 | 0.39x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +42.7% | +28.0pp | +18.8% | ✗ |
+| 2009-12-24 | $33.45 | Southern Company Q3 2009 results | 1.95 | -1.52 | 0.32x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +48.2% | +31.5pp | +20.4% | ✗ |
+| 2009-12-31 | $33.32 | Southern Company Q3 2009 results | 1.95 | -1.49 | 0.30x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +50.0% | +33.0pp | +21.3% | ✗ |
