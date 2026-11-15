@@ -16309,6 +16309,9 @@ Judgement calls that could carry hindsight:
 - the FY2008 correction, found after the 2009 dates were scored (3 classes, all toward calls that held);
 - the frozen 1997-2006 thresholds, the signals and DURABLE, risk 2, as in 2008-2009.
 
+The hindsight results for 2008-2013 (2009 re-scored on the corrected build) are in `staging/retrospective/SO/FINDINGS.md`: hypotheses, never
+inputs.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are

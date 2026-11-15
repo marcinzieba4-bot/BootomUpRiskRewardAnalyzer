@@ -54,7 +54,7 @@
   "max_drawdown_pct": -9.0,
   "return_to_avg_price_m12_m24_pct": 22.7
  },
- "scenario_landing_2y": "BULL",
+ "scenario_landing_2y": "BASE",
  "call_check_2y": {
   "expectation": "RICH: should miss the hurdle and lag the benchmark",
   "hit": false
