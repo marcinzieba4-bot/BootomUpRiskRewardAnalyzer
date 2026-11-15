@@ -32,6 +32,13 @@ earnings slides on the company's website, which are not filings ('slides_words',
 10-K's own words on its coal and lignite reserves and the CO2 rules put the theme on the watch list ('transition_quote', 'reserves_quote':
 company-acknowledged, no market read, no factor pair, so text only).
 
+SO 2018-2021: every release excludes Wholesale Gas Services, so GAAP stands for every quarter's EPS signal; FY2017 is a distorted year
+with no figure excluding only its one-offs, so it leaves the EPS history ('eps_excluded', the NKE FY2018 and XOM FY2020 encoding: its own
+days leave the P/E window, "ex-FY17", and the rollover's last full year is the last year in the history); growth against a year-ago loss
+is measured over the loss's absolute value (the CAT rule); a release whose analyst-call words name guidance is quoted in the guide line;
+the 2019 releases' comparison without Gulf Power is shown as a 'kwh_note'; the watch list takes each 10-K's own lead-in
+('transition_intro').
+
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
 is the first trading day after it (every release of the period came on a Wednesday or Thursday).
 
@@ -97,11 +104,13 @@ def check_print(p):
     """Re-derive a print's growth rates, margins and EPS growth from its raw published figures (they must match the fact sheet)."""
     r = p["raw"]
     pct = lambda a, b: round((b / a - 1) * 100, 1)
+    # growth against a year-ago loss is measured over the loss's absolute value (the CAT 2014-2017 rule; SO 2018-2021)
+    gpct = lambda a, b: pct(a, b) if a > 0 else round((b - a) / abs(a) * 100, 1)
     m, m0 = r["opinc_m"] / r["rev_m"] * 100, r["opinc_prior_m"] / r["rev_prior_m"] * 100
     want = {"sales_b": round(r["rev_m"] / 1000, 3), "sales_pct": pct(r["rev_prior_m"], r["rev_m"]),
-            "kwh_pct": pct(r["kwh_prior_m"], r["kwh_m"]), "seg_pct": pct(r["seg_prior_m"], r["seg_m"]),
+            "kwh_pct": pct(r["kwh_prior_m"], r["kwh_m"]), "seg_pct": gpct(r["seg_prior_m"], r["seg_m"]),
             "margin": round(m, 2), "margin_prior": round(m0, 2), "margin_bp": round((m - m0) * 100, 1),
-            "eps_pct": pct(p["eps_q_prior"], p["eps_q"])}
+            "eps_pct": gpct(p["eps_q_prior"], p["eps_q"])}
     for k, v in want.items():
         assert p[k] == v or abs(p[k] - v) < 1e-9, (p["quarter"], k, p[k], v)
     # the EPS signal's basis: the company's figure excluding items only when every item it excludes is a one-off
@@ -145,7 +154,10 @@ def build(as_of, facts, raw, spx, engine, out):
     if not vintages:
         sys.exit(f"{as_of}: no history vintage in the fact sheet is public yet")
     h = vintages[-1]                                   # latest annual history public on AS_OF
-    first_fy = max(int(k) for k in h["eps_normalized"]) + 1
+    # a year excluded from the EPS history (eps_excluded: a distorted year, the r2 rule as encoded for NKE FY2018 and XOM FY2020; SO
+    # FY2017) is still a reported year: the prints in scope, the current year and the rollover follow every reported year
+    reported = lambda h: {int(k) for k in h["eps_normalized"]} | {int(k) for k in h.get("eps_excluded", {})}
+    first_fy = max(reported(h)) + 1
     guide_fy = lambda p: p["fy"] + (1 if p["q"] == 4 else 0)
     prints = [p for p in public if guide_fy(p) >= first_fy]
     if not prints:
@@ -154,7 +166,7 @@ def build(as_of, facts, raw, spx, engine, out):
     h = {**h, "extended": ""}
     for p in prints:
         a = p.get("fy_actual")
-        if a and str(a["fy"]) not in h["eps_normalized"]:          # the 10-K vintage, once out, wins
+        if a and a["fy"] not in reported(h):                      # the 10-K vintage, once out, wins
             y = str(a["fy"])
             shares = dict(h["diluted_shares_m"])
             if a["diluted_shares_m"] is not None:                 # a release with no diluted count leaves the shares history to the 10-K
@@ -174,8 +186,9 @@ def build(as_of, facts, raw, spx, engine, out):
     assert i > 0, "the previous quarter must be in the fact sheet"
     prev = (public[i - 1]["kwh_pct"], public[i - 1]["quarter"])
     eps_hist = {int(k): v for k, v in h["eps_normalized"].items()}
-    cur_fy = max(eps_hist) + 1
-    last_fy = cur_fy - 1
+    excluded = {int(k): v for k, v in h.get("eps_excluded", {}).items()}
+    cur_fy = max(reported(h)) + 1
+    last_fy = max(eps_hist)        # the last full year in the history: cur_fy - 1 unless that year is excluded
     fy_e, fy_e_s, fy_h, fy_now = f"FY{cur_fy}E", f"FY{cur_fy % 100:02d}E", f"FY{cur_fy + 2}E", f"FY{cur_fy % 100:02d}"
     nq = latest["q"]
     next_q = f"Q{nq % 4 + 1} {latest['fy'] + (1 if nq == 4 else 0)}"
@@ -186,6 +199,7 @@ def build(as_of, facts, raw, spx, engine, out):
     basis = h.get("eps_bases", {}).get(str(last_fy))
     eps_label = (f"{fy_e}: no EPS guide in numbers in any filing, FY{last_fy % 100:02d}'s ${money(eps_now)} "
                  + (f"(the company's figure {basis})" if basis else "(GAAP)") + " stands")
+    eps_label += "".join(f" (FY{y % 100:02d} is excluded: {excluded[y]})" for y in range(last_fy + 1, cur_fy))
     fwd = [latest["sales_pct"]] * 2
     fwd_label, fwd_short, fwd_period = (f"no {next_q} revenue guide, {latest['quarter']} revenue as reported",
                                         f"{latest['quarter'][:2]} revenue", latest["quarter"])
@@ -210,6 +224,8 @@ def build(as_of, facts, raw, spx, engine, out):
                     + (f", {s['slides_words']}," if s["slides_words"] else "") + " are on the company's website"
                     + (f" (the {named[-1]['quarter']} release named among them '{named[-1]['slides_words']}')"
                        if named and not s["slides_words"] else "")
+                    # a release whose call words name guidance is quoted too (Q4 2019, Q2 and Q3 2021: SO 2018-2021)
+                    + (f", and that management '{s['call_words']}' on the analyst call" if "guidance" in s.get("call_words", "") else "")
                     + ": website posts are not filings, so they add nothing; no transcript is filed")
     guide_text = (f"{fy_now}: no EPS, revenue or margin guide in numbers in any filing ({call_txt}; BASE takes {latest['quarter']} "
                   "revenue growth)")
@@ -235,9 +251,11 @@ def build(as_of, facts, raw, spx, engine, out):
     eps = {**eps_hist, cur_fy: eps_now}
     fy = lambda d: min(fiscal_year(d), cur_fy)     # a day past the last guided year keeps that year's EPS
     window = [d for d in days if d > minus_years(as_of, 10) and (not h["pe_window_start"] or d >= h["pe_window_start"])]
+    gone = sorted({fy(d) for d in window} & set(excluded))     # an excluded year's own days leave the window ("10-yr ex-FY17")
+    window = [d for d in window if fy(d) not in excluded]
     assert all(fy(d) in eps for d in window), (as_of, "P/E window needs EPS for every fiscal year")
     years = (dt.date.fromisoformat(as_of) - dt.date.fromisoformat(window[0])).days / 365.25
-    window_label = "10-yr" if years > 9.9 else f"{years:.1f}-yr"
+    window_label = ("10-yr" if years > 9.9 else f"{years:.1f}-yr") + "".join(f" ex-FY{y % 100:02d}" for y in gone)
     pe = {d: px[d][2] / eps[fy(d)] for d in window}
     srt = sorted(pe.values())
     qtl = lambda p: round(srt[int(p * (len(srt) - 1))], 1)
@@ -268,8 +286,9 @@ def build(as_of, facts, raw, spx, engine, out):
         val_word = ("a premium" if pe_now_pctl >= 70 else "a discount to its own history" if pe_now_pctl <= 30 else "near its own median")
         stage = "transition"
         watch = [{"theme": "ENERGY_TRANSITION", "status": "live, company-acknowledged; no market read",
-                  "reason": (f"Live: Southern Company's own FY{last_fy} 10-K says '{h['reserves_quote']}' and, of the EPA's CO2 rules for "
-                             f"fossil fuel-fired units, '{h['transition_quote']}' The stock trades at {close / eps_now:.1f}x {fy_e_s} — "
+                  "reason": (f"Live: Southern Company's own FY20{h['fy_label'][2:]} 10-K says '{h['reserves_quote']}' and, "
+                             + h.get("transition_intro", "of the EPA's CO2 rules for fossil fuel-fired units,")
+                             + f" '{h['transition_quote']}' The stock trades at {close / eps_now:.1f}x {fy_e_s} — "
                              f"{val_word}. Re-file as DISRUPTION_EXPOSED (ENERGY_TRANSITION) only if dated evidence shows the market "
                              "pricing decarbonisation of Southern Company's coal reserves and the units they supply specifically.")}]
         sig_name = "Energy transition: CO2 rules on coal reserves and units"
@@ -311,7 +330,7 @@ def build(as_of, facts, raw, spx, engine, out):
     shares = {int(k): v for k, v in h["diluted_shares_m"].items()}
     rw = latest["raw"]
     wa = (f", weather-adjusted {latest['kwh_wa_pct']:+.1f}%" if latest["kwh_wa_pct"] is not None
-          else ", no weather-adjusted figure in the release")
+          else ", no weather-adjusted figure in the release") + (f"; {latest['kwh_note']}" if latest.get("kwh_note") else "")
     volumes = (f"Retail kWh {latest['kwh_pct']:+.1f}% as reported ({rw['kwh_prior_m']:,.0f} to {rw['kwh_m']:,.0f} million kWh{wa}); "
                f"electric utilities' net income {latest['seg_pct']:+.1f}% (${rw['seg_prior_m']:,.0f}M to ${rw['seg_m']:,.0f}M, the "
                f"traditional operating companies and Southern Power" + (f"; {latest['seg_note']}" if latest.get("seg_note") else "")
