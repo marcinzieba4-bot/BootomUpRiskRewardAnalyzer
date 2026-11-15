@@ -1,7 +1,7 @@
 
 ════════════════════════════════════════════════════════════════════════
   SO  ·  The Southern Company  ·  $31.58  ·  RETROSPECTIVE as of 2009-08-28
-  Signal: ◉ BUY   Ratio B: 0.06x   Adj gap: -1.37  [OVERVALUED]
+  Signal: ◉ BUY   Ratio B: -0.03x   Adj gap: -1.00  [OVERVALUED]
   Point-in-time: 12 sources, latest published 2009-08-28; latest print Q2 2009 (2009-07-29)
 ════════════════════════════════════════════════════════════════════════
 
@@ -27,11 +27,11 @@
   Q2 2009 (2009-07-29): total revenues $3.88B -7.8%; retail kWh -6.5% (weather-adjusted -6.8%); electric utilities' net income -7.4%;
   operating margin 22.81% (+88.4bp); EPS $0.61 vs $0.63 (excluding items)
   Retail kWh -6.5% as reported (39,882 to 37,281 million kWh, weather-adjusted -6.8%); electric utilities' net income -7.4% ($487M to $451M, the traditional operating companies and Southern Power); revenue -7.8% as reported ($4,215M to $3,885M); operating income $924M to $886M; EPS: basic EPS excluding items $0.61 vs $0.63 (excludes only Leveraged Lease Adjustment and MC Asset Recovery Litigation Settlement; GAAP $0.61 vs $0.54)
-  FY09: no EPS, revenue or margin guide in numbers in any filing (the Q2 2009 release: earnings guidance is discussed on the analyst call, and no transcript or slides are filed; BASE takes Q2 2009 revenue growth)
+  FY09: no EPS, revenue or margin guide in numbers in any filing (the Q2 2009 release: management 'will discuss earnings and earnings guidance' on the analyst call, and no transcript or slides are filed; BASE takes Q2 2009 revenue growth)
 
-  FY2009E EPS check:  $15.7B × 15.5% pre-tax × (1−34.4%) ÷ 0.791B  =  $2.02  (FY2009E: no EPS guide in numbers in any filing, FY08's $2.25 (GAAP) stands)
-  FY2011E BEAR check: $15.7B × 15.5% ÷ 0.812B  =  $1.97  (scenario $2.19)
-  FY2011E BULL check: $18.0B × 15.9% ÷ 0.812B  =  $2.31  (scenario $2.53)
+  FY2009E EPS check:  $15.7B × 15.5% pre-tax × (1−34.4%) ÷ 0.791B  =  $2.02  (FY2009E: no EPS guide in numbers in any filing, FY08's $2.37 (the company's figure excluding the leveraged lease charges) stands)
+  FY2011E BEAR check: $15.7B × 15.5% ÷ 0.812B  =  $1.97  (scenario $2.30)
+  FY2011E BULL check: $18.0B × 15.9% ÷ 0.812B  =  $2.31  (scenario $2.69)
   Every 1pp of pre-tax margin ≈ $0.13 EPS ≈ $2/share at the median P/E
 
   ① SIGNAL DASHBOARD
@@ -45,12 +45,12 @@
   Disruption theme: none live for a utility   +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
 
   Proxy composite:    1.60 / 4.00
-  Market composite:   3.12 / 4.00  (back-solved from $32 + 15% hurdle)
-  SCA adjustment:    +0.15  ·  EPP-distance adj +0.00  →  Adj composite 1.75  →  Gap -1.37  [OVERVALUED]
+  Market composite:   2.75 / 4.00  (back-solved from $32 + 15% hurdle)
+  SCA adjustment:    +0.15  ·  EPP-distance adj +0.00  →  Adj composite 1.75  →  Gap -1.00  [OVERVALUED]
 
   Structural factors:
     +  Franchise: FY08 revenue +11.6%, retail kWh -2.1%, electric utilities' net income +7.8%; Q2 2009 operating margin 22.8% (+88.4bp)  (+0.40 × 20%  =  +0.080)
-    +  Multiple: 14.0x FY09E vs a 15.5x 10-yr median (11th percentile of its own range)  (+0.50 × 25%  =  +0.125)
+    +  Multiple: 13.3x FY09E vs a 15.3x 10-yr median (5th percentile of its own range)  (+0.50 × 25%  =  +0.125)
     -  Growth vs own history: no Q3 2009 revenue guide, Q2 2009 revenue as reported -7.8% vs a 6.5% 9-yr median  (-0.50 × 20%  =  -0.100)
     +  FY08 year-end cash $0.417B, FY08 free cash flow $-0.56B (net cash provided from operating activities $3,398M less property additions $3,961M (SO11)), dividend $1.75 a year, common stock issued $474M in 2008, none repurchased (SO11 cash flows): the dividend is the return  (+0.30 × 15%  =  +0.045)
 
@@ -64,7 +64,7 @@
   Operating margin change            +88.4bp  -410.0bp  -498.4bp  Fuel and O&M costs outrun recovery
   Disruption theme: none live for a utility    +2.0/4    +1.0/4  -1.0/4  No disruption theme is live for an el…
 
-  Bear composite:  1.00  →  Bear scenario price: ~$31  (model)  /  $31 (defined)
+  Bear composite:  1.00  →  Bear scenario price: ~$33  (model)  /  $32 (defined)
   Bear probability (proxy model):  44.8%
 
   KEY TRIGGER: retail kWh sales went from -6.6% (Q1 2009) to -6.5% (Q2 2009);
@@ -73,12 +73,12 @@
 
   ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
   ──────────────────────────────────────────────────────────────────────
-  Today's normalized EPS:          $2.25  (FY2009E: no EPS guide in numbers in any filing, FY08's $2.25 (GAAP) stands)
-  Min viable P/E at panic:          13x  [median of calendar-year P/E lows: 1999 16.6x, 2000 13.5x, 2001 13.3x, 2002 12.9x, 2003 13.7x, 2004 13.5x, 2005 14.7x, 2006 14.5x, 2007 14.7x, 2008 14.3x, 2009 11.9x]
+  Today's normalized EPS:          $2.37  (FY2009E: no EPS guide in numbers in any filing, FY08's $2.37 (the company's figure excluding the leveraged lease charges) stands)
+  Min viable P/E at panic:          13x  [median of calendar-year P/E lows: 1999 16.6x, 2000 13.5x, 2001 13.3x, 2002 12.9x, 2003 13.7x, 2004 13.5x, 2005 14.7x, 2006 14.5x, 2007 14.7x, 2008 13.6x, 2009 11.3x]
   ────────────────────────────────────────────────────────────
-  UPDATED EPP:                     $29/share
-  Current $32 vs Updated EPP $29:  +8%  moderate distance to floor
-  Bear $31 vs Updated EPP $29:  +6%  ✓ bear stays above the floor
+  UPDATED EPP:                     $31/share
+  Current $32 vs Updated EPP $31:  +2%  moderate distance to floor
+  Bear $32 vs Updated EPP $31:  +4%  ✓ bear stays above the floor
   EPP-distance adjustment (v2):    +0.00 on the composite
 
   ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
@@ -91,16 +91,16 @@
   Operating margin change                   -220.0     -308.4   BASE floor (vs +88 now)
   Disruption theme: none live for a utility             2.0       +0.0   BASE floor (vs +2 now)
 
-  Conservative 2yr EPS:   $2.25 × (1+0.0%)² = $2.25
-  At 15x P/E (conservative):  $34/share
+  Conservative 2yr EPS:   $2.37 × (1+0.0%)² = $2.37
+  At 15x P/E (conservative):  $36/share
   + Cumul. dividends (2yr):  +$3.60/share
   ────────────────────────────────────────────────────────────
-  Conservative 2yr price:     $34  (▲2 from $32)
-  Conservative total return:  +18% over 2yr  = +9%/yr
+  Conservative 2yr price:     $36  (▲4 from $32)
+  Conservative total return:  +24% over 2yr  = +12%/yr
 
-  At 14.0x the multiple is already near its 15x median, so the conservative
+  At 13.3x the multiple is already near its 15x median, so the conservative
   case is a growth question: breakeven at 15x needs FY2011E EPS of $1.86,
-  i.e. -9.0%/yr — the business, not the multiple, carries the risk.
+  i.e. -11.3%/yr — the business, not the multiple, carries the risk.
 
   ⑤ VOLATILITY CONTEXT
   ──────────────────────────────────────────────────────────────────────
@@ -111,7 +111,7 @@
   1-sigma range (1yr):  $21  –  $42  ($32 ± 32%)
   2-sigma range (1yr):  $11  –  $52
   ────────────────────────────────────────────────────────────
-  Bear $31 requires:  ~0.1σ price move  (within normal vol range)
+  Bear $32 requires:  ~-0.0σ price move  (within normal vol range)
   A regulated utility with a 0.5 beta: the stock is +18% off its March
   low while retail kWh sales went from -6.6% (Q1 2009) to -6.5% (Q2 2009).
   The rally is in the multiple, not the numbers.
@@ -119,30 +119,30 @@
   ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
   ──────────────────────────────────────────────────────────────────────
   Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
-  BEAR        2.19  14.0x  $     31    44.8%      4.1%   +40.7pp  EPS -1.4%/yr (worst year FY99-FY08, capped at 0%); P/E to its 10th pct
-  BASE        1.86  15.5x  $     29    41.2%     14.2%   +27.0pp  EPS +-9.1%/yr (Q2 revenue + margin + buyback); P/E at its 10-yr median
-  BULL        2.53  16.3x  $     41    11.8%     49.6%   -37.8pp  EPS +6.0%/yr (FY99-FY08 CAGR); P/E holds its 75th pct
-  XBULL       2.82  17.6x  $     50     2.2%     32.1%   -29.9pp  EPS +12.0%/yr (best 2-yr run FY99-FY08); P/E at its 90th pct
+  BEAR        2.30  13.9x  $     32    44.8%      5.3%   +39.5pp  EPS -1.4%/yr (worst year FY99-FY08, capped at 0%); P/E to its 10th pct
+  BASE        1.96  15.3x  $     30    41.2%     18.4%   +22.8pp  EPS +-9.1%/yr (Q2 revenue + margin + buyback); P/E at its 10-yr median
+  BULL        2.69  16.2x  $     44    11.8%     64.2%   -52.4pp  EPS +6.6%/yr (FY99-FY08 CAGR); P/E holds its 75th pct
+  XBULL       2.97  17.5x  $     52     2.2%     12.1%    -9.9pp  EPS +12.0%/yr (best 2-yr run FY99-FY08); P/E at its 90th pct
 
-  Proxy EV (2yr): $32  /  Market EV: $42  /  Current: $32
-  Conservative EV (2yr, ④): $34 + $3.60 divs = $37 total value
-  Downside (→ Bear $31): 1.8%   Upside (→ Bull $41): 29.8%   Ratio B 0.06x  →  ◉ BUY
+  Proxy EV (2yr): $33  /  Market EV: $42  /  Current: $32
+  Conservative EV (2yr, ④): $36 + $3.60 divs = $39 total value
+  Downside (→ Bear $32): -1.3%   Upside (→ Bull $44): 39.3%   Ratio B -0.03x  →  ◉ BUY
 
   To earn the 15%/yr hurdle from $32 the market needs $42 in two years —
-  above the BULL case. That is a market composite of 3.12 against a model
+  between the BASE and BULL cases. That is a market composite of 2.75 against a model
   read of 1.75: the price asks for more than the numbers support.
 
   ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
   ──────────────────────────────────────────────────────────────────────
   Variant                                       Ratio B  EPP gap  Adj gap  Verdict
-  Main case                                       0.06x      +8%    -1.37  OVERVALUED / BUY
-  Multiples one band richer (p25/p75/p90/max)    -0.03x      +8%    -0.83  OVERVALUED / BUY
-  Multiples one band cheaper (p5/p25/med/p75)     0.21x      +8%    -1.69  OVERVALUED / BUY
-  Scenario EPS +1.5pp/yr                         -0.04x      +8%    -1.24  OVERVALUED / BUY
-  Scenario EPS -1.5pp/yr                          0.19x      +8%    -1.52  OVERVALUED / BUY
-  Structural read +0.30 (bullish SCA)             0.06x      +8%    -1.07  OVERVALUED / BUY
-  EPP P/E +3 turns (softer floor)                 0.06x     -12%    -1.17  OVERVALUED / BUY
-  Hurdle 10%/yr instead of 15%                    0.06x      +8%    -0.87  OVERVALUED / BUY
+  Main case                                      -0.03x      +2%    -1.00  OVERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)    -0.09x      +2%    -0.69  OVERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.06x      +2%    -1.47  OVERVALUED / BUY
+  Scenario EPS +1.5pp/yr                         -0.11x      +2%    -0.89  OVERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.06x      +2%    -1.31  OVERVALUED / BUY
+  Structural read +0.30 (bullish SCA)            -0.03x      +2%    -0.70  OVERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                -0.03x     -17%    -0.80  OVERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                   -0.03x      +2%    -0.68  OVERVALUED / BUY
 
 ════════════════════════════════════════════════════════════════════════
   Key catalysts to watch (from the as-of date):
@@ -150,7 +150,7 @@
   (2) Operating margin — +88.4bp in Q2 2009: fuel and purchased power, non-fuel O&M and depreciation against rate relief
   (3) A FY09 earnings guide in numbers — none in any filing (guidance is given on the analyst call only)
   (4) Electric utilities' net income — -7.4% in Q2 2009 ($451M vs $487M): rate relief against sales, weather and costs
-  (5) Capital return at 14x — common stock issued $474M in 2008, none repurchased (SO11 cash flows): the dividend is the return: management's own read of the multiple
-  ◉ BUY  |  EPP floor $29  |  ADD below ~$25  |  TRIM above $41
+  (5) Capital return at 13x — common stock issued $474M in 2008, none repurchased (SO11 cash flows): the dividend is the return: management's own read of the multiple
+  ◉ BUY  |  EPP floor $31  |  ADD below ~$26  |  TRIM above $44
 ════════════════════════════════════════════════════════════════════════
 

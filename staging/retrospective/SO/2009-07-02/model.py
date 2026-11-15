@@ -120,10 +120,10 @@ PIT_PROFILE = {
 CURRENT_PRICE   = 31.01   # USD, NYSE close 2009-07-02
 REQUIRED_RETURN = 0.15
 HORIZON_YEARS   = 2
-PE_PCTL         = {'p5': 13.7, 'p10': 14.0, 'p25': 14.5, 'median': 15.6, 'p75': 16.4, 'p90': 17.9, 'max': 22.4}   # current-FY P/E over the window below
-PE_NOW_PCTL     = 6    # share of those daily P/Es at or below the AS_OF one
+PE_PCTL         = {'p5': 13.5, 'p10': 14.0, 'p25': 14.5, 'median': 15.4, 'p75': 16.3, 'p90': 17.9, 'max': 22.4}   # current-FY P/E over the window below
+PE_NOW_PCTL     = 3    # share of those daily P/Es at or below the AS_OF one
 WINDOW_LABEL    = '10-yr'   # P/E window: 1999-07-06 .. AS_OF (days before 2001-04-03 as traded, with Mirant)
-YEARLY_MIN_PE   = [('1999', 16.6, '1999-12-09'), ('2000', 13.5, '2000-03-14'), ('2001', 13.3, '2001-04-06'), ('2002', 12.9, '2002-07-19'), ('2003', 13.7, '2003-02-12'), ('2004', 13.5, '2004-05-12'), ('2005', 14.7, '2005-03-29'), ('2006', 14.5, '2006-05-17'), ('2007', 14.7, '2007-08-03'), ('2008', 14.3, '2008-10-10'), ('2009', 11.9, '2009-03-12')]   # (calendar year, lowest P/E, date)
+YEARLY_MIN_PE   = [('1999', 16.6, '1999-12-09'), ('2000', 13.5, '2000-03-14'), ('2001', 13.3, '2001-04-06'), ('2002', 12.9, '2002-07-19'), ('2003', 13.7, '2003-02-12'), ('2004', 13.5, '2004-05-12'), ('2005', 14.7, '2005-03-29'), ('2006', 14.5, '2006-05-17'), ('2007', 14.7, '2007-08-03'), ('2008', 13.6, '2008-10-10'), ('2009', 11.3, '2009-03-12')]   # (calendar year, lowest P/E, date)
 VOL_ANNUAL_PCT  = 0.328   # 1-yr realized, daily log returns
 VOL_BETA        = 0.47    # 1-yr beta vs S&P 500
 VOL_52W_LOW     = 26.48
@@ -132,7 +132,7 @@ REF_LOW         = 26.81   # lowest close of the last 52 weeks, 2009-03-12
 REF_LOW_LABEL   = 'March'
 
 # ── FACTS: company history (SO4, SO6, SO7, SO8, SO9, SO10, SO11, vintage 2009-02-25) ──
-EPS_NORM      = {1999: 1.33, 2000: 1.52, 2001: 1.61, 2002: 1.85, 2003: 2.02, 2004: 2.06, 2005: 2.13, 2006: 2.1, 2007: 2.28, 2008: 2.25}   # GAAP diluted EPS from continuing operations where the 10-K reports the line, else diluted EPS (the LOW and UNP rule), each year from the latest 10-K that reports it: 1999 $1.33 (SO6); 2000 $1.52 (SO7); 2001 $1.61 (SO8); 2002 $1.85 (SO9); 2003 $2.02 (SO10); 2004 $2.06 (SO11); 2005 $2.13 (SO11); 2006 $2.10 (SO11); 2007 $2.28 (SO11); 2008 $2.25 (SO11). 1997-2000 exclude Mirant (discontinued operations from the FY2000 10-K, spun off on April 2, 2001). The company's figures excluding synthetic fuels (2006 $2.10, 2007 $2.21, basic) remove an ongoing operation, not a one-off, so GAAP stands (the AAPL 2008 and NKE FY2013 rule)
+EPS_NORM      = {1999: 1.33, 2000: 1.52, 2001: 1.61, 2002: 1.85, 2003: 2.02, 2004: 2.06, 2005: 2.13, 2006: 2.1, 2007: 2.28, 2008: 2.37}   # the company's EPS excluding only one-offs where a filing states it, from the latest that does (the ACN rule), else GAAP diluted EPS from continuing operations where the 10-K reports the line, else diluted EPS (the LOW and UNP rule), each year from the latest 10-K that reports it: 1999 $1.33 (SO6); 2000 $1.52 (SO7); 2001 $1.61 (SO8); 2002 $1.85 (SO9); 2003 $2.02 (SO10); 2004 $2.06 (SO11); 2005 $2.13 (SO11); 2006 $2.10 (SO11); 2007 $2.28 (SO11); 2008 $2.37 (SO11, the FY2008 10-K's key performance indicators: the company's basic EPS excluding the leveraged lease charges; GAAP $2.25 diluted, SO11). 1997-2000 exclude Mirant (discontinued operations from the FY2000 10-K, spun off on April 2, 2001). The company's figures excluding synthetic fuels (2006 $2.10, 2007 $2.21, basic) remove an ongoing operation, not a one-off, so GAAP stands (the AAPL 2008 and NKE FY2013 rule)
 REVENUE_HIST  = {1999: 9.317, 2000: 10.066, 2001: 10.155, 2002: 10.447, 2003: 11.018, 2004: 11.729, 2005: 13.554, 2006: 14.356, 2007: 15.353, 2008: 17.127}   # total operating revenues, USD bn
 SHARES_HIST   = {1999: 686.0, 2008: 775.0}   # diluted, millions (1999: 686M (SO4, the income statement's diluted average shares); 2008: 775M diluted (SO11))
 FY_E, FY_E_S, FY_H, FY_PREV = 'FY2009E', 'FY09E', 'FY2011E', 'FY08'
@@ -146,11 +146,11 @@ MARGIN_SIGNAL_NAME = 'Operating margin change'
 # ── FACTS: latest print (SO19, published 2009-04-29) and FY09 guide ──
 LATEST          = {'quarter': 'Q1 2009', 'release': '2009-04-29', 'sales_b': 3.666, 'sales_pct': -0.5, 'margin': 13.37, 'margin_bp': -585.7, 'kwh_pct': -6.6, 'kwh_wa_pct': -6.3, 'seg_pct': -10.8, 'eps_q': 0.42, 'eps_q_prior': 0.47, 'eps_pct': -10.6, 'eps_basis': 'excluding items'}
 PREV_KWH        = (-3.3, 'Q4 2008')
-EPP_TODAY_EPS   = 2.25   # FY2009E: no EPS guide in numbers in any filing, FY08's $2.25 (GAAP) stands
-EPS_LABEL       = "FY2009E: no EPS guide in numbers in any filing, FY08's $2.25 (GAAP) stands"
+EPP_TODAY_EPS   = 2.37   # FY2009E: no EPS guide in numbers in any filing, FY08's $2.37 (the company's figure excluding the leveraged lease charges) stands
+EPS_LABEL       = "FY2009E: no EPS guide in numbers in any filing, FY08's $2.37 (the company's figure excluding the leveraged lease charges) stands"
 FWD_GUIDE       = (-0.5, -0.5)   # no revenue guide: the latest quarter's revenue growth, as reported
 FWD_GUIDE_LABEL, FWD_PERIOD, FWD_BASIS_SHORT = 'no Q2 2009 revenue guide, Q1 2009 revenue as reported', 'Q1 2009', 'Q1 revenue'
-GUIDE_TEXT      = 'FY09: no EPS, revenue or margin guide in numbers in any filing (the Q1 2009 release: earnings guidance is discussed on the analyst call, and no transcript or slides are filed; BASE takes Q1 2009 revenue growth)'
+GUIDE_TEXT      = "FY09: no EPS, revenue or margin guide in numbers in any filing (the Q1 2009 release: management 'will discuss earnings and earnings guidance' on the analyst call, and no transcript or slides are filed; BASE takes Q1 2009 revenue growth)"
 MARGIN_GUIDED   = False   # False: no margin guide, so no guided step; the signal uses the latest quarter's change
 FY_MARGIN_BASE  = 20.47
 FY_REVENUE_B    = 17.04

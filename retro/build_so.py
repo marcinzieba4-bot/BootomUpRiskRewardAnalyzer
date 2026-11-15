@@ -152,6 +152,8 @@ def build(as_of, facts, raw, spx, engine, out):
             shares = dict(h["diluted_shares_m"])
             if a["diluted_shares_m"] is not None:                 # a release with no diluted count leaves the shares history to the 10-K
                 shares[y] = a["diluted_shares_m"]
+            if a.get("eps_basis"):                               # the release's own figure excluding only one-offs (SO 2010-2013)
+                h["eps_bases"] = {**h.get("eps_bases", {}), y: a["eps_basis"]}
             h.update(fy_label=a["fy_label"], eps_normalized={**h["eps_normalized"], y: a["eps_normalized"]},
                      revenue_usd_b={**h["revenue_usd_b"], y: a["revenue_usd_b"]}, diluted_shares_m=shares,
                      normalization=f'{h["normalization"]}; {a["normalization_note"]}',
@@ -173,12 +175,27 @@ def build(as_of, facts, raw, spx, engine, out):
 
     # ── no guide in numbers: BASE takes the latest quarter's revenue growth; the last full year's EPS stands ──
     eps_now = eps_hist[last_fy]
-    eps_label = f"{fy_e}: no EPS guide in numbers in any filing, FY{last_fy % 100:02d}'s ${money(eps_now)} (GAAP) stands"
+    # the last full year's EPS, on its basis: GAAP, or the company's figure excluding only one-offs where a filing states it (SO 2010-2013)
+    basis = h.get("eps_bases", {}).get(str(last_fy))
+    eps_label = (f"{fy_e}: no EPS guide in numbers in any filing, FY{last_fy % 100:02d}'s ${money(eps_now)} "
+                 + (f"(the company's figure {basis})" if basis else "(GAAP)") + " stands")
     fwd = [latest["sales_pct"]] * 2
     fwd_label, fwd_short, fwd_period = (f"no {next_q} revenue guide, {latest['quarter']} revenue as reported",
                                         f"{latest['quarter'][:2]} revenue", latest["quarter"])
-    guide_text = (f"{fy_now}: no EPS, revenue or margin guide in numbers in any filing (the {latest['quarter']} release: earnings guidance "
-                  f"is discussed on the analyst call, and no transcript or slides are filed; BASE takes {latest['quarter']} revenue growth)")
+    # what the latest release that mentions the analyst call says about it (from the Q2 2011 release it no longer names earnings guidance)
+    calls = [p for p in public if p.get("call_words")]
+    said = [p for p in calls if "guidance" in p["call_words"]]
+    if calls and "guidance" in calls[-1]["call_words"]:
+        call_txt = (f"the {calls[-1]['quarter']} release: management 'will discuss earnings and earnings guidance' on the analyst call, and "
+                    "no transcript or slides are filed")
+    elif calls:
+        call_txt = (f"the {calls[-1]['quarter']} release says only that management '{calls[-1]['call_words']}' on the analyst call"
+                    + (f"; the {said[-1]['quarter']} release was the last to name earnings guidance" if said else "")
+                    + "; no transcript or slides are filed")
+    else:
+        call_txt = "no transcript or slides of the analyst calls are filed"
+    guide_text = (f"{fy_now}: no EPS, revenue or margin guide in numbers in any filing ({call_txt}; BASE takes {latest['quarter']} "
+                  "revenue growth)")
     margin_guided = False
     fy_margin_base = h["prev_fy_margin"]
 
@@ -209,6 +226,9 @@ def build(as_of, facts, raw, spx, engine, out):
     qtl = lambda p: round(srt[int(p * (len(srt) - 1))], 1)
     pctl = {"p5": qtl(.05), "p10": qtl(.10), "p25": qtl(.25), "median": qtl(.5), "p75": qtl(.75), "p90": qtl(.9), "max": round(srt[-1], 1)}
     pe_now_pctl = round(sum(v <= close / eps_now for v in srt) / len(srt) * 100)
+    # the window's days before the Mirant distribution are priced as traded, with Mirant (the 'distributions' rule)
+    mirant_txt = "".join(f" (days before {x['effective']} as traded, with Mirant)" for x in facts.get("distributions", [])
+                         if window[0] < x["effective"] <= as_of)
     yearly = []
     for y in sorted({d[:4] for d in window}):
         dd = min((d for d in window if d.startswith(y)), key=lambda d: pe[d])
@@ -254,7 +274,8 @@ def build(as_of, facts, raw, spx, engine, out):
           else ", no weather-adjusted figure in the release")
     volumes = (f"Retail kWh {latest['kwh_pct']:+.1f}% as reported ({rw['kwh_prior_m']:,.0f} to {rw['kwh_m']:,.0f} million kWh{wa}); "
                f"electric utilities' net income {latest['seg_pct']:+.1f}% (${rw['seg_prior_m']:,.0f}M to ${rw['seg_m']:,.0f}M, the "
-               f"traditional operating companies and Southern Power); revenue {latest['sales_pct']:+.1f}% as reported "
+               f"traditional operating companies and Southern Power" + (f"; {latest['seg_note']}" if latest.get("seg_note") else "")
+               + f"); revenue {latest['sales_pct']:+.1f}% as reported "
                f"(${rw['rev_prior_m']:,.0f}M to ${rw['rev_m']:,.0f}M); operating income ${rw['opinc_prior_m']:,.0f}M to ${rw['opinc_m']:,.0f}M"
                + (f" ({latest['margin_note']})" if latest.get("margin_note") else "") + f"; EPS: {latest['eps_note']}")
     fy_rev = rev[max(rev)] * (1 + sum(fwd) / 2 / 100)
@@ -298,7 +319,7 @@ REQUIRED_RETURN = 0.15
 HORIZON_YEARS   = 2
 PE_PCTL         = {R(pctl)}   # current-FY P/E over the window below
 PE_NOW_PCTL     = {pe_now_pctl}    # share of those daily P/Es at or below the AS_OF one
-WINDOW_LABEL    = {R(window_label)}   # P/E window: {window[0]} .. AS_OF (days before 2001-04-03 as traded, with Mirant)
+WINDOW_LABEL    = {R(window_label)}   # P/E window: {window[0]} .. AS_OF{mirant_txt}
 YEARLY_MIN_PE   = {R(yearly)}   # (calendar year, lowest P/E, date)
 VOL_ANNUAL_PCT  = {vol:.3f}   # 1-yr realized, daily log returns
 VOL_BETA        = {beta:.2f}    # 1-yr beta vs S&P 500

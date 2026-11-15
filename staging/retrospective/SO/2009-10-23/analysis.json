@@ -21,47 +21,47 @@
   "business_kind": "DURABLE",
   "obsolescence_risk": 2,
   "price_state": "RICH",
-  "quality_note": "The Southern Company: 'Southern Company owns all of the outstanding common stock of Alabama Power, Georgia Power, Gulf Power, and Mississippi Power, each of which is an operating public utility company. The traditional operating companies supply electric service in the states of Alabama, Georgia, Florida, and Mississippi.'; among its risk factors, 'Southern Company and its subsidiaries are subject to substantial governmental regulation.', 'The operating results of Southern Company, the traditional operating companies, and Southern Power are affected by weather conditions and may fluctuate on a seasonal and quarterly basis.' and 'The costs of compliance with future environmental laws, including laws and regulations designed to address global climate change and renewable energy standards, and the incurrence of environmental liabilities could affect unit retirement decisions and negatively impact the net income, cash flows, and financial condition of Southern Company, the traditional operating companies, or Southern Power.' (its own FY2008 10-K); no disruption theme in the registry is live for an electric utility on this date, so the watch list is empty and the 10-K's words on climate change legislation stay here (the PEP obesity rule). durable franchise (obsolescence risk 2/5); price rich; Ratio B 0.20x; +12% to EPP floor; model-vs-market gap -1.60; conservative 2yr +14%.",
+  "quality_note": "The Southern Company: 'Southern Company owns all of the outstanding common stock of Alabama Power, Georgia Power, Gulf Power, and Mississippi Power, each of which is an operating public utility company. The traditional operating companies supply electric service in the states of Alabama, Georgia, Florida, and Mississippi.'; among its risk factors, 'Southern Company and its subsidiaries are subject to substantial governmental regulation.', 'The operating results of Southern Company, the traditional operating companies, and Southern Power are affected by weather conditions and may fluctuate on a seasonal and quarterly basis.' and 'The costs of compliance with future environmental laws, including laws and regulations designed to address global climate change and renewable energy standards, and the incurrence of environmental liabilities could affect unit retirement decisions and negatively impact the net income, cash flows, and financial condition of Southern Company, the traditional operating companies, or Southern Power.' (its own FY2008 10-K); no disruption theme in the registry is live for an electric utility on this date, so the watch list is empty and the 10-K's words on climate change legislation stay here (the PEP obesity rule). durable franchise (obsolescence risk 2/5); price rich; Ratio B 0.06x; +6% to EPP floor; model-vs-market gap -1.36; conservative 2yr +20%.",
   "theme": null
  },
  "legacy_signal_short": "BUY",
  "legacy_signal": "◉ BUY",
  "metrics": {
-  "ratio_b": 0.2,
-  "ratio_b_fmt": "0.20x",
-  "epp": 29.25,
-  "epp_gap_pct": 11.7,
+  "ratio_b": 0.06,
+  "ratio_b_fmt": "0.06x",
+  "epp": 30.81,
+  "epp_gap_pct": 6.0,
   "epp_adj": 0.0,
   "proxy_composite": 1.6,
-  "sca": 0.118,
-  "adj_composite": 1.717,
-  "market_composite": 3.32,
-  "adj_gap": -1.6,
+  "sca": 0.15,
+  "adj_composite": 1.75,
+  "market_composite": 3.11,
+  "adj_gap": -1.36,
   "valuation": "OVERVALUED",
-  "cons_return_2yr": 14.3,
+  "cons_return_2yr": 19.9,
   "scenarios": {
    "BEAR": {
-    "eps": 2.19,
-    "pe": 14.0,
-    "price": 31,
+    "eps": 2.3,
+    "pe": 13.8,
+    "price": 32,
     "desc": "EPS -1.4%/yr (worst year FY99-FY08, capped at 0%); P/E to its 10th pct"
    },
    "BASE": {
-    "eps": 1.86,
-    "pe": 15.5,
-    "price": 29,
+    "eps": 1.96,
+    "pe": 15.3,
+    "price": 30,
     "desc": "EPS +-9.1%/yr (Q2 revenue + margin + buyback); P/E at its 10-yr median"
    },
    "BULL": {
-    "eps": 2.53,
-    "pe": 16.3,
-    "price": 41,
-    "desc": "EPS +6.0%/yr (FY99-FY08 CAGR); P/E holds its 75th pct"
+    "eps": 2.69,
+    "pe": 16.1,
+    "price": 43,
+    "desc": "EPS +6.6%/yr (FY99-FY08 CAGR); P/E holds its 75th pct"
    },
    "XBULL": {
-    "eps": 2.82,
+    "eps": 2.97,
     "pe": 17.2,
-    "price": 49,
+    "price": 51,
     "desc": "EPS +12.0%/yr (best 2-yr run FY99-FY08); P/E at its 90th pct"
    }
   }
@@ -69,89 +69,89 @@
  "robustness": [
   {
    "variant": "Main case",
-   "ratio_b": 0.2,
-   "epp_gap_pct": 11.7,
-   "adj_gap": -1.6,
+   "ratio_b": 0.06,
+   "epp_gap_pct": 6.0,
+   "adj_gap": -1.36,
    "verdict": "OVERVALUED",
    "legacy_tier": "BUY",
-   "cons_return_2yr": 14.3,
+   "cons_return_2yr": 19.9,
    "price_state": "RICH"
   },
   {
    "variant": "Multiples one band richer (p25/p75/p90/max)",
-   "ratio_b": 0.06,
-   "epp_gap_pct": 11.7,
-   "adj_gap": -1.04,
+   "ratio_b": -0.02,
+   "epp_gap_pct": 6.0,
+   "adj_gap": -0.82,
    "verdict": "OVERVALUED",
    "legacy_tier": "BUY",
-   "cons_return_2yr": 14.3,
+   "cons_return_2yr": 19.9,
    "price_state": "RICH"
   },
   {
    "variant": "Multiples one band cheaper (p5/p25/med/p75)",
-   "ratio_b": 0.42,
-   "epp_gap_pct": 11.7,
-   "adj_gap": -1.91,
+   "ratio_b": 0.2,
+   "epp_gap_pct": 6.0,
+   "adj_gap": -1.64,
    "verdict": "OVERVALUED",
    "legacy_tier": "BUY",
-   "cons_return_2yr": 14.3,
+   "cons_return_2yr": 19.9,
    "price_state": "RICH"
   },
   {
    "variant": "Scenario EPS +1.5pp/yr",
-   "ratio_b": 0.07,
-   "epp_gap_pct": 11.7,
-   "adj_gap": -1.49,
+   "ratio_b": -0.03,
+   "epp_gap_pct": 6.0,
+   "adj_gap": -1.1,
    "verdict": "OVERVALUED",
    "legacy_tier": "BUY",
-   "cons_return_2yr": 14.3,
+   "cons_return_2yr": 19.9,
    "price_state": "RICH"
   },
   {
    "variant": "Scenario EPS -1.5pp/yr",
-   "ratio_b": 0.36,
-   "epp_gap_pct": 11.7,
-   "adj_gap": -1.78,
+   "ratio_b": 0.18,
+   "epp_gap_pct": 6.0,
+   "adj_gap": -1.48,
    "verdict": "OVERVALUED",
    "legacy_tier": "BUY",
-   "cons_return_2yr": 14.3,
+   "cons_return_2yr": 19.9,
    "price_state": "RICH"
   },
   {
    "variant": "Structural read +0.30 (bullish SCA)",
-   "ratio_b": 0.2,
-   "epp_gap_pct": 11.7,
-   "adj_gap": -1.3,
+   "ratio_b": 0.06,
+   "epp_gap_pct": 6.0,
+   "adj_gap": -1.06,
    "verdict": "OVERVALUED",
    "legacy_tier": "BUY",
-   "cons_return_2yr": 14.3,
+   "cons_return_2yr": 19.9,
    "price_state": "RICH"
   },
   {
    "variant": "EPP P/E +3 turns (softer floor)",
-   "ratio_b": 0.2,
-   "epp_gap_pct": -9.2,
-   "adj_gap": -1.4,
+   "ratio_b": 0.06,
+   "epp_gap_pct": -13.8,
+   "adj_gap": -1.16,
    "verdict": "OVERVALUED",
    "legacy_tier": "BUY",
-   "cons_return_2yr": 14.3,
+   "cons_return_2yr": 19.9,
    "price_state": "RICH"
   },
   {
    "variant": "Hurdle 10%/yr instead of 15%",
-   "ratio_b": 0.2,
-   "epp_gap_pct": 11.7,
-   "adj_gap": -1.1,
+   "ratio_b": 0.06,
+   "epp_gap_pct": 6.0,
+   "adj_gap": -0.84,
    "verdict": "OVERVALUED",
    "legacy_tier": "BUY",
-   "cons_return_2yr": 14.3,
+   "cons_return_2yr": 19.9,
    "price_state": "RICH"
   }
  ],
  "robustness_price_states": [
   "RICH"
  ],
- "summary": "SO (retrospective, 2009-10-23) ◉ BUY — Ratio B 0.20x (5.1% downside to Bear $31 / +25.5% upside to Bull $41) | Adj composite 1.72 vs market 3.32: gap -1.60 [OVERVALUED] | +12% above the EPP floor $29 (13x FY09E $2.25) | Conservative 2-yr case: +14.3% total (+7.2%/yr) | At 14.5x FY09E the 15% hurdle price $43 sits above the BULL case; retail kWh sales -6.5% in Q2 2009, forward revenues -7.8% (no Q3 2009 revenue guide, Q2 2009 revenue as reported); no disruption theme is live for an electric utility on this date.",
+ "summary": "SO (retrospective, 2009-10-23) ◉ BUY — Ratio B 0.06x (2.1% downside to Bear $32 / +31.6% upside to Bull $43) | Adj composite 1.75 vs market 3.11: gap -1.36 [OVERVALUED] | +6% above the EPP floor $31 (13x FY09E $2.37) | Conservative 2-yr case: +19.9% total (+9.9%/yr) | At 13.8x FY09E the 15% hurdle price $43 sits above the BULL case; retail kWh sales -6.5% in Q2 2009, forward revenues -7.8% (no Q3 2009 revenue guide, Q2 2009 revenue as reported); no disruption theme is live for an electric utility on this date.",
  "sources": [
   {
    "id": "SO4",

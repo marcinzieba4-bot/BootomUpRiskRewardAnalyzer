@@ -14,54 +14,54 @@
   "evidence": []
  },
  "classification": {
-  "quality_class": "QUALITY, PRICED FOR PERFECTION",
-  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
-  "quality_color": "#f87171",
-  "quality_tone": "red",
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
   "business_kind": "DURABLE",
   "obsolescence_risk": 2,
-  "price_state": "RICH",
-  "quality_note": "The Southern Company: 'Southern Company owns all of the outstanding common stock of Alabama Power, Georgia Power, Gulf Power, and Mississippi Power, each of which is an operating public utility company. The traditional operating companies supply electric service in the states of Alabama, Georgia, Florida, and Mississippi.'; among its risk factors, 'Southern Company and its subsidiaries are subject to substantial governmental regulation.', 'The operating results of Southern Company, the traditional operating companies, and Southern Power are affected by weather conditions and may fluctuate on a seasonal and quarterly basis.' and 'The costs of compliance with future environmental laws, including laws and regulations designed to address global climate change and renewable energy standards, and the incurrence of environmental liabilities could affect unit retirement decisions and negatively impact the net income, cash flows, and financial condition of Southern Company, the traditional operating companies, or Southern Power.' (its own FY2008 10-K); no disruption theme in the registry is live for an electric utility on this date, so the watch list is empty and the 10-K's words on climate change legislation stay here (the PEP obesity rule). durable franchise (obsolescence risk 2/5); price rich; Ratio B -0.22x; -4% to EPP floor; model-vs-market gap -0.64; conservative 2yr +33%.",
+  "price_state": "CHEAP",
+  "quality_note": "The Southern Company: 'Southern Company owns all of the outstanding common stock of Alabama Power, Georgia Power, Gulf Power, and Mississippi Power, each of which is an operating public utility company. The traditional operating companies supply electric service in the states of Alabama, Georgia, Florida, and Mississippi.'; among its risk factors, 'Southern Company and its subsidiaries are subject to substantial governmental regulation.', 'The operating results of Southern Company, the traditional operating companies, and Southern Power are affected by weather conditions and may fluctuate on a seasonal and quarterly basis.' and 'The costs of compliance with future environmental laws, including laws and regulations designed to address global climate change and renewable energy standards, and the incurrence of environmental liabilities could affect unit retirement decisions and negatively impact the net income, cash flows, and financial condition of Southern Company, the traditional operating companies, or Southern Power.' (its own FY2008 10-K); no disruption theme in the registry is live for an electric utility on this date, so the watch list is empty and the 10-K's words on climate change legislation stay here (the PEP obesity rule). durable franchise (obsolescence risk 2/5); price cheap; Ratio B -0.24x; -9% to EPP floor; model-vs-market gap -0.42; conservative 2yr +39%.",
   "theme": null
  },
  "legacy_signal_short": "BUY",
  "legacy_signal": "◉ BUY",
  "metrics": {
-  "ratio_b": -0.22,
-  "ratio_b_fmt": "-0.22x",
-  "epp": 29.25,
-  "epp_gap_pct": -3.9,
+  "ratio_b": -0.24,
+  "ratio_b_fmt": "-0.24x",
+  "epp": 30.81,
+  "epp_gap_pct": -8.7,
   "epp_adj": 0.2,
   "proxy_composite": 1.3,
   "sca": 0.15,
   "adj_composite": 1.65,
-  "market_composite": 2.29,
-  "adj_gap": -0.64,
-  "valuation": "OVERVALUED",
-  "cons_return_2yr": 32.8,
+  "market_composite": 2.07,
+  "adj_gap": -0.42,
+  "valuation": "MODESTLY OVERVALUED",
+  "cons_return_2yr": 39.2,
   "scenarios": {
    "BEAR": {
-    "eps": 2.19,
-    "pe": 14.1,
-    "price": 31,
+    "eps": 2.3,
+    "pe": 14.0,
+    "price": 32,
     "desc": "EPS -1.4%/yr (worst year FY99-FY08, capped at 0%); P/E to its 10th pct"
    },
    "BASE": {
-    "eps": 2.17,
-    "pe": 15.6,
-    "price": 34,
+    "eps": 2.28,
+    "pe": 15.4,
+    "price": 35,
     "desc": "EPS +-1.8%/yr (Q1 revenue + margin + buyback); P/E at its 10-yr median"
    },
    "BULL": {
-    "eps": 2.53,
-    "pe": 16.4,
-    "price": 41,
-    "desc": "EPS +6.0%/yr (FY99-FY08 CAGR); P/E holds its 75th pct"
+    "eps": 2.69,
+    "pe": 16.3,
+    "price": 44,
+    "desc": "EPS +6.6%/yr (FY99-FY08 CAGR); P/E holds its 75th pct"
    },
    "XBULL": {
-    "eps": 2.82,
+    "eps": 2.97,
     "pe": 18.5,
-    "price": 52,
+    "price": 55,
     "desc": "EPS +12.0%/yr (best 2-yr run FY99-FY08); P/E at its 90th pct"
    }
   }
@@ -69,91 +69,90 @@
  "robustness": [
   {
    "variant": "Main case",
-   "ratio_b": -0.22,
-   "epp_gap_pct": -3.9,
-   "adj_gap": -0.64,
-   "verdict": "OVERVALUED",
+   "ratio_b": -0.24,
+   "epp_gap_pct": -8.7,
+   "adj_gap": -0.42,
+   "verdict": "MODESTLY OVERVALUED",
    "legacy_tier": "BUY",
-   "cons_return_2yr": 32.8,
-   "price_state": "RICH"
+   "cons_return_2yr": 39.2,
+   "price_state": "CHEAP"
   },
   {
    "variant": "Multiples one band richer (p25/p75/p90/max)",
-   "ratio_b": -0.21,
-   "epp_gap_pct": -3.9,
-   "adj_gap": -0.14,
+   "ratio_b": -0.22,
+   "epp_gap_pct": -8.7,
+   "adj_gap": 0.08,
    "verdict": "FAIRLY VALUED",
    "legacy_tier": "BUY",
-   "cons_return_2yr": 32.8,
+   "cons_return_2yr": 39.2,
    "price_state": "CHEAP"
   },
   {
    "variant": "Multiples one band cheaper (p5/p25/med/p75)",
-   "ratio_b": -0.17,
-   "epp_gap_pct": -3.9,
-   "adj_gap": -0.95,
+   "ratio_b": -0.3,
+   "epp_gap_pct": -8.7,
+   "adj_gap": -0.72,
    "verdict": "OVERVALUED",
    "legacy_tier": "BUY",
-   "cons_return_2yr": 32.8,
+   "cons_return_2yr": 39.2,
    "price_state": "RICH"
   },
   {
    "variant": "Scenario EPS +1.5pp/yr",
-   "ratio_b": -0.26,
-   "epp_gap_pct": -3.9,
-   "adj_gap": -0.46,
-   "verdict": "MODESTLY OVERVALUED",
+   "ratio_b": -0.29,
+   "epp_gap_pct": -8.7,
+   "adj_gap": -0.18,
+   "verdict": "FAIRLY VALUED",
    "legacy_tier": "BUY",
-   "cons_return_2yr": 32.8,
-   "price_state": "FAIR"
+   "cons_return_2yr": 39.2,
+   "price_state": "CHEAP"
   },
   {
    "variant": "Scenario EPS -1.5pp/yr",
-   "ratio_b": -0.16,
-   "epp_gap_pct": -3.9,
-   "adj_gap": -0.77,
+   "ratio_b": -0.19,
+   "epp_gap_pct": -8.7,
+   "adj_gap": -0.55,
    "verdict": "OVERVALUED",
    "legacy_tier": "BUY",
-   "cons_return_2yr": 32.8,
+   "cons_return_2yr": 39.2,
    "price_state": "RICH"
   },
   {
    "variant": "Structural read +0.30 (bullish SCA)",
-   "ratio_b": -0.22,
-   "epp_gap_pct": -3.9,
-   "adj_gap": -0.34,
-   "verdict": "MODESTLY OVERVALUED",
+   "ratio_b": -0.24,
+   "epp_gap_pct": -8.7,
+   "adj_gap": -0.12,
+   "verdict": "FAIRLY VALUED",
    "legacy_tier": "BUY",
-   "cons_return_2yr": 32.8,
+   "cons_return_2yr": 39.2,
    "price_state": "CHEAP"
   },
   {
    "variant": "EPP P/E +3 turns (softer floor)",
-   "ratio_b": -0.22,
-   "epp_gap_pct": -21.9,
-   "adj_gap": -0.64,
-   "verdict": "OVERVALUED",
+   "ratio_b": -0.24,
+   "epp_gap_pct": -25.8,
+   "adj_gap": -0.42,
+   "verdict": "MODESTLY OVERVALUED",
    "legacy_tier": "BUY",
-   "cons_return_2yr": 32.8,
-   "price_state": "RICH"
+   "cons_return_2yr": 39.2,
+   "price_state": "CHEAP"
   },
   {
    "variant": "Hurdle 10%/yr instead of 15%",
-   "ratio_b": -0.22,
-   "epp_gap_pct": -3.9,
-   "adj_gap": 0.02,
-   "verdict": "FAIRLY VALUED",
+   "ratio_b": -0.24,
+   "epp_gap_pct": -8.7,
+   "adj_gap": 0.29,
+   "verdict": "MODESTLY UNDERVALUED",
    "legacy_tier": "BUY",
-   "cons_return_2yr": 32.8,
+   "cons_return_2yr": 39.2,
    "price_state": "CHEAP"
   }
  ],
  "robustness_price_states": [
   "CHEAP",
-  "FAIR",
   "RICH"
  ],
- "summary": "SO (retrospective, 2009-05-15) ◉ BUY — Ratio B -0.22x (-10.2% downside to Bear $31 / +45.8% upside to Bull $41) | Adj composite 1.65 vs market 2.29: gap -0.64 [OVERVALUED] | -4% above the EPP floor $29 (13x FY09E $2.25) | Conservative 2-yr case: +32.8% total (+16.4%/yr) | At 12.5x FY09E the 15% hurdle price $37 sits between the BASE and BULL cases; retail kWh sales -6.6% in Q1 2009, forward revenues -0.5% (no Q2 2009 revenue guide, Q1 2009 revenue as reported); no disruption theme is live for an electric utility on this date.",
+ "summary": "SO (retrospective, 2009-05-15) ◉ BUY — Ratio B -0.24x (-13.8% downside to Bear $32 / +56.5% upside to Bull $44) | Adj composite 1.65 vs market 2.07: gap -0.42 [MODESTLY OVERVALUED] | -9% above the EPP floor $31 (13x FY09E $2.37) | Conservative 2-yr case: +39.2% total (+19.6%/yr) | At 11.9x FY09E the 15% hurdle price $37 sits between the BASE and BULL cases; retail kWh sales -6.6% in Q1 2009, forward revenues -0.5% (no Q2 2009 revenue guide, Q1 2009 revenue as reported); no disruption theme is live for an electric utility on this date.",
  "sources": [
   {
    "id": "SO4",
