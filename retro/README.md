@@ -15993,7 +15993,7 @@ Judgement calls that could carry hindsight (beyond the 2008-2018 lists):
   before (withdrawals: WMT, LOW, SHW and CAT; preliminary results: SHW; the year less the nine months: the 2022 series), and none was tuned on
   an outcome.
 
-## SO (Southern Company): the twenty-first ticker, in staging, 2008-2013
+## SO (Southern Company): the twenty-first ticker, in staging, 2008-2017
 
 The SO series is built apart from the other twenty and shares nothing with them but the machinery: its own fact sheet
 (`retro/facts/SO.json`), builder (`retro/build_so.py`, the F early-era builder with BMY's `distributions` rule) and engine
@@ -16001,7 +16001,7 @@ The SO series is built apart from the other twenty and shares nothing with them 
 The method is still r2. No fact, parameter, outcome or finding of another ticker enters an SO model, and neither does the profile of SO in
 `data/business_profiles.json` (a 2026 judgement: not read for this series, and first seen by the builder after the build). Outputs go to
 `staging/retrospective/SO/`, beside the others, with the same `index.json` and their own `SERIES.md`. The owner asked for 2008-2009, then
-2010-2013 ("SO 2010-2013", below); this part describes the 2008-2009 build.
+2010-2013 and 2014-2017 ("SO 2010-2013" and "SO 2014-2017", below); this part describes the 2008-2009 build.
 
 ```bash
 python3 retro/build_so.py --weekly 2008-01-01 2009-12-31                    # 105 dates, 2008-01-04 .. 2009-12-31
@@ -16312,6 +16312,162 @@ Judgement calls that could carry hindsight:
 The hindsight results for 2008-2013 (2009 re-scored on the corrected build) are in `staging/retrospective/SO/FINDINGS.md`: hypotheses, never
 inputs.
 
+### SO 2014-2017: Kemper to its suspension, Southern Company Gas in revenue, GAAP from Q3 2016, the energy transition on the watch list
+
+209 weekly dates, 2014-01-03 to 2017-12-29, on the same fact sheet, builder, engine and method (r2), with the 1997-2006 rule-T thresholds
+frozen. Built on 2026-11-15 at the owner's request ("SO, 2014-2017, same rules as before"), after the 2008-2013 dates had been scored.
+`FINDINGS.md` was not opened before the build; this README's earlier SO sections were read for the rules, and they carry one hindsight remark
+(the 2009 correction "happen[s] to turn RICH calls that missed in hindsight into calls that held"), which bears on no decision below: each
+applies a rule that existed before.
+
+```bash
+python3 retro/build_so.py --weekly 2014-01-01 2017-12-31                    # 209 dates, 2014-01-03 .. 2017-12-29 (the BMY boundary)
+for d in staging/retrospective/SO/201[4-7]-*/; do
+  python3 retro/retro_tool.py --archive staging/retrospective run "$d"
+  python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
+done
+python3 retro/retro_tool.py --archive staging/retrospective series SO
+for c in 2014-01-01 2014-01-29 2014-02-28 2014-04-30 2014-05-08 2014-07-30 2014-10-29 2015-01-01 2015-02-04 2015-03-02 2015-04-29 \
+         2015-05-07 2015-07-29 2015-10-28 2015-12-12 2016-01-01 2016-02-03 2016-02-26 2016-04-27 2016-07-27 2016-08-08 2016-10-31 \
+         2017-01-01 2017-02-22 2017-05-03 2017-08-02 2017-11-01 2018-01-01; do python3 retro/tools/firewall.py $c SO; done
+```
+
+Read, by the session's model directly with no delegated transcription: the sixteen earnings releases of Q4 2013 to Q3 2017 (8-K exhibits
+99.01-99.07), the Southern Company sections of the FY2013-FY2016 10-Ks (selected data, the statements of income and cash flows, the segment
+note, the key performance indicators chart, Items 1, 1A and 5), the FY2006-FY2009 10-Ks' income statements (the first-year diluted shares),
+the 2014-2017 first-quarter 10-Qs and the 2016 and 2017 second-quarter 10-Qs for the dividend, and every other 8-K of December 2013 to
+February 2018 by its items: Mississippi Power's monthly Kemper reports (7.01, with 2.02 the evening before a release), the Kemper,
+Vogtle, Westinghouse and rate-case notices, the Supreme Court of Mississippi 8-K of 2015-02-13 (2.02 and 8.01: it states no revised figure),
+the AGL Resources merger 8-Ks of 2015-08-24 and its pro forma statements (2016-05-05, 2016-08-08), the closing of 2016-07-01, the SNG agreement
+of 2016-07-11, the monetization 8-K of 2017-12-11, and the financing, director, officer and meeting 8-Ks. None guides a number. The new
+entries come from a generator script written for these filings (the 2008-2013 script was not kept in the repository; this one was not either,
+as it reads the session's downloads): it asserts every row in its own filing, under an anchored heading, and computes every rate: 461 strings checked with `verbatim.py`, 461 found. Sources `SO49`-`SO72` (the 10-Ks `SO49`-`SO52`, the releases `SO53`-`SO68`,
+the 10-Qs `SO69`-`SO72`); `SO1`-`SO48` and every earlier entry are unchanged. Decided on 2026-11-15, before any 2014-2017 model was built or
+any of its outcomes computed:
+
+- **No guide in numbers, as before.** From the Q2 2016 release each release points to "earnings slides with supplemental financial
+  information" on the company's website, from Q2 to Q4 2016 "including its earnings estimate for the third quarter of 2016", then "including
+  its earnings estimate for the fourth quarter of 2016, earnings guidance for 2017 and the company’s financial outlook for the next five years"
+  (the analyst day of 2016-10-31) and "including its earnings guidance for 2017"; the 2017 releases name none. None of it was filed: website
+  posts are not filings (the XOM, NKE and MSFT rule), so they add nothing, and the guide line quotes the release's own words
+  (`slides_words`). The merger 8-K's "Accelerate expected long-term EPS growth to 4-5 percent" and "accretive to earnings per share (EPS) in the
+  first full year" are multi-year and accretion statements, not a current-year figure (the LOW and UNP merger rules). The 10-Ks' charts give
+  an EPS target for the year just ended ("Basic EPS — As Reported | $2.68-$2.80" for 2013), published after it: not a guide.
+- **EPS: the company's figure where every item it excludes is a one-off** (the rule of 2008-2013), from the latest filing that states it.
+  Q4 2013 to Q2 2016 qualify: the Kemper losses ("Kemper IGCC Impacts" in the Q4 2015 release, which adds the reversal of 2013-2014 revenue
+  after the Mississippi Supreme Court's 2015 decision), the leveraged lease restructure, the MC Asset Recovery insurance settlement and its
+  additional costs, and the AGL Resources (later "Acquisition and Integration") costs. So 2012 $2.68 (the Q4 2013 release), 2013 $2.71 (the
+  FY2013 10-K's chart, then the Q4 2014 release), 2014 $2.80 (the FY2014 10-K's chart, then the Q4 2015 release) and 2015 $2.89 (the FY2015
+  10-K's chart, then the Q4 2016 release, whose 2015 column excludes only one-offs). From the Q3 2016 release the company's "Excluding Items"
+  also removes Southern Company Gas's earnings, the acquisition debt financing costs and the shares issued for SNG (2016), then "Wholesale Gas
+  Services" (the volatility of an ongoing business) and the Kemper schedule-extension equity return (to 2017): not only one-offs, so GAAP
+  stands (the AAPL 2008, NKE FY2013 and synthetic-fuel rule) for the quarterly EPS signal from Q3 2016 and for FY2016, $2.55 diluted (the
+  FY2016 10-K, which has no chart of its own). The releases' "Subtotal" net income excluding only the one-offs has no per-share figure, and
+  none is derived. FY2016 is then 11.8% under FY2015's $2.89: BEAR becomes -11.8%/yr and the anchor's P/E jumps 13% from 2017-02-23.
+- **Kemper,** as decided for 2013: out of the EPS signal while the company's figure qualifies, in the electric utilities' net income and the
+  operating margin as published; each print's note gives the loss in both quarters. The Q2 2017 charge ($3,012M pre-tax, the suspension of
+  the gasifier) meets GAAP, so Q2 2017 reads EPS -$1.38 against $0.67 (-306%), the segment -297.7% and the margin -5,593bp.
+- **Southern Company Gas** (acquired 2016-07-01) **stays in revenue, as published** (the BKR BJ Services, PEP, XOM and AVGO rule): BASE takes
+  Q3 2016 revenue +16.0%, Q4 2016 +45.2%, Q1 2017 +44.6% and Q2 2017 +21.8%, and each print says so (`sales_note`, its natural gas revenues
+  against none a year earlier). The electric utilities' signal sums the traditional electric operating companies and Southern Power, the
+  10-K's electric utilities, since the release's "Total" now includes Southern Company Gas (`seg_note`).
+- **Vintages.** FY2013 accepted 2014-02-27 16:36 ET (dated 2014-02-28), FY2014 2015-03-02 10:52 ET, FY2015 2016-02-26 15:42 ET, FY2016
+  2017-02-21 21:23 ET (dated 2017-02-22, the morning of the Q4 2016 release, so that print never extends the history). Each year from the
+  latest 10-K that reports it; the FY2014 10-K restates 2014 for the Supreme Court decision (revenue $18,467M against the release's $18,499M,
+  GAAP $2.19 basic against $2.21). First-year diluted shares from the FY2006-FY2009 10-Ks (743M, 749M, 748M, 761M); the last year's rise to
+  958M (2016) makes the "buyback" a dilution, 1.9%/yr in the FY2013 vintage and 2.5%/yr in the FY2016 one.
+- **Dividends:** $0.525 (Q1 2014 10-Q, 2014-05-08) and $0.5425 (Q1 2015 10-Q, 2015-05-07), as before; the Q1 2016 and Q1 2017 10-Qs no longer
+  state the April increase, so $0.56 and $0.58 enter with the second-quarter 10-Qs' "Cash dividends paid per share of common stock" (2016-08-08;
+  accepted 2017-08-01 18:43 ET, so 2017-08-02), a lag of about three months. January rates from each 10-K: 50.75, 52.50, 54.25 and 56 cents.
+- **ENERGY_TRANSITION goes on the watch list from its live date** (2015-12-12, the first weekly date 2015-12-18). Its scope is "decarbonisation
+  strands oil, gas and coal reserves and refining", and Southern Company's 10-Ks say "Alabama Power owns coal reserves near its Plant Gorgas
+  and uses the output of coal from the reserves in its generating plants" and "Mississippi Power owns a lignite mine and equipment and has
+  acquired and will continue to acquire mineral reserves located around the Kemper IGCC site"; of the EPA's CO2 rules they say "The proposed
+  guidelines and standards could result in operational restrictions and material compliance costs, including capital expenditures, which
+  could affect future unit retirement and replacement decisions." That is the XOM case (a holder of reserves, company-acknowledged, no market
+  read), not BKR's or CAT's (no reserves), so DURABLE stands and the watch list quotes the latest 10-K (`transition_quote`,
+  `reserves_quote`). The theme's market pricing is dated 2020-08-31, after the range. No factor pair is added (the SO composite sums the
+  factors, and a pair netting to zero could still move a float), so only text changes; dates before 2015-12-12 keep the old text.
+- **Release timing.** Every release was accepted before the open on a Wednesday, except Q3 2016 (Monday 2016-10-31, 07:52 ET); each week's
+  date is the next trading day. The next print's month in the text comes from the year-ago release (the Q4 prints moved to February).
+- **The range starts on 2014-01-01** (the BMY, CMCSA and PFE boundary), so 2013-12-31 and 2014-01-03 share ISO week 2014-W01, as in those series.
+
+Builder changes (each acts only on facts or dates the earlier models do not have; the 314 dates of 2008-2013 rebuild byte-identical): the
+guide line and catalyst (3) quote the website-slides words when a print carries them; from ENERGY_TRANSITION's live date the watch list, theme
+signal name, summary and "why" follow the vintage's 10-K words; the volumes text adds a print's `sales_note`. The firewall's SO plant also
+plants a revenue note, slides words and the energy-transition quotes.
+
+Controls and checks (before any outcome):
+- **Controls:** altering one value of each fact published from the Q4 2013 release on (each print's retail kWh, each Q4 print's full-year
+  revenue and EPS, each vintage's last-year revenue and EPS, each dividend) changes no model dated before its publication: 36 of 36. 34 change
+  the first weekly date on or after it and reach exactly their scope (a print's kWh for two print periods, a Q4 print's actuals for three or
+  four dates until the 10-K, a vintage for its year, a dividend until the next rate or vintage). The other two, the Q4 2016 print's full-year
+  revenue and EPS, are inert by design: the FY2016 10-K was public the same morning, so the vintage wins on every date.
+- **Leak scan:** 0 hits in 225,916 (model, later token) pairs over the 523 dates of 2008-2017, after dropping 31,932 tokens an earlier fact,
+  the builder or the engine carries. A first pass flagged wording that earlier filings and the builder share ("will discuss earnings and
+  earnings guidance", the 10-Ks' business sentences) and one coincidence (Q2 2016 operating income $1,226M inside Q2 2013's -1226.5bp); the
+  scan now drops tokens contained in an earlier fact's text and matches a figure only as a whole number.
+- **`retro_tool run` passes on all 209 dates.** It warns on 9 (2016-11-01 to 2016-12-30) for "calendar year(s) 2017": the Q3 2016 release's own
+  words "earnings guidance for 2017", a forecast year named on 2016-10-31, as the warning asks.
+- **Firewall** (run on the committed build, before any outcome): passes at the 28 cutoffs above (every print, vintage and dividend date of
+  2014-2017, the year boundaries, ENERGY_TRANSITION's live date 2015-12-12, 2014-01-01 and 2018-01-01), 314 to 523 dates each, 0 files
+  changed and no planted text; the 2018-01-01 run rebuilds all 523 dates of 2008-2017 byte-identical.
+- **Regression:** only `build_so.py`, `SO.json` and the firewall's SO plant changed; the 2008-2013 dates rebuild byte-identical.
+
+Seen in the build (method behaviour, not tuned):
+- **2014-2017: RICH 157, CHEAP 39, FAIR 13.** 2014: RICH 39, CHEAP 13. 2015: RICH on all 53. 2016: RICH 43, FAIR 4, CHEAP 5. 2017: CHEAP 21,
+  RICH 22, FAIR 9. Legacy tiers: AVOID 101, BUY 51, WATCHLIST 33, ACCUMULATE 24. Robustness: all eight variants agree on 187 dates, seven on
+  10, five on 3, four on 2, three on 7.
+- **January 2014 to the Q1 2014 print** (17 dates, RICH): FY12's $2.68, then FY13's $2.71, at 15.1-17.1x (the 33rd-92nd percentile).
+- **CHEAP on the Q1 2014 print** (2014-05-01 to 2014-07-25, 13 dates): revenue +19.2% (retail kWh +7.1% as reported, 1.3%
+  weather-adjusted) puts BASE at +17.3%/yr, and the electric utilities' net income +269.5% against Q1 2013's Kemper charge; $43.08-45.22,
+  15.9-16.7x, the 56th-83rd percentile; tier BUY on all 13.
+- **RICH from the Q2 2014 print to the Q3 2016 print without a break** (2014-07-31 to 2016-10-28, 118 dates): the anchor goes $2.71, $2.80 and
+  $2.89 while the price runs $41.89-54.54 (15.0-19.3x, at or above the 80th percentile on 62 of the 118); BASE follows the quarter's revenue,
+  -12.4%/yr (Q4 2015) to +4.5% (Q3 2014). Ratio B is infinite on 33 dates of the range (most in 2014-12 to 2015-02,
+  2016-06 to 2016-09 and 2017-11 to 2017-12); tiers AVOID 83, WATCHLIST 19, ACCUMULATE 12, BUY 4.
+- **FAIR and CHEAP on the Q3 2016 print** (2016-11-01 to 2017-02-17, 16 dates: FAIR 10, CHEAP 6): revenue +16.0% with Southern Company Gas lifts
+  BASE to +13.8%/yr at 16.2-17.5x (the 65th-91st percentile).
+- **CHEAP or FAIR on FY16's GAAP $2.55** (2017-02-23 to 2017-07-28, 23 dates: CHEAP 20, FAIR 3): the P/E is 18.5-20.2x, the 85th-98th
+  percentile, but revenue +45.2% (Q4 2016) and +44.6% (Q1 2017) with Southern Company Gas put BASE at +42.7%/yr and +42.1%/yr, and BULL and
+  XBULL at least as high; tier BUY on all 23. The proxy composite is 1.80 and 2.20, the market composite 1.7-1.8.
+- **RICH from the Q2 2017 print** (2017-08-03 to 2017-12-29, 22 dates): the Kemper suspension quarter reads the segment, EPS and margin at
+  BEAR, retail kWh at BASE and revenue (+21.8%) at XBULL; BASE falls to +19.3%/yr, then -3.5%/yr on Q3 2017 revenue -1.0%; 18.9-20.9x; Ratio B infinite from 2017-11-02.
+- **BEAR** is -2.1%/yr (2009 against 2008) until FY2016 joins the history, then -11.8%/yr; the EPP floor is 14x throughout.
+- **The proxy composite** is 2.70 on Q4 2013, 3.70, 3.05, 2.00 and 1.50 on Q1-Q4 2014, 2.40, 2.35, 2.85 and 2.45 on Q1-Q4 2015, 2.15, 2.85,
+  3.20 and 1.80 on Q1-Q4 2016, and 2.20, 1.80 and 1.75 on Q1-Q3 2017; the market composite is 3.75-3.93 on most dates, 2.3-2.9 in mid-2014
+  and 1.7-1.8 in the first half of 2017.
+
+How far each call moves the classes of 2014-2017 (the 209 dates rebuilt with one encoding changed and classified offline with `retro_tool`'s
+own classifier; no outcome consulted):
+- BASE and the revenue signal without the natural gas revenues line (Q3 2016 to Q3 2017): **39 classes** (CHEAP to RICH on 26, FAIR to RICH on
+  13; 2016-11-01 to 2017-07-28) and 47 tiers: every CHEAP and FAIR call from the Q3 2016 print to the Q2 2017 print rests on Southern Company
+  Gas in growth;
+- GAAP EPS throughout (FY08 $2.25, FY09 $2.06, FY12 $2.67, FY13 $1.87, FY14 $2.18, FY15 $2.59, and the quarterly signal on GAAP): 23 classes
+  (CHEAP to RICH on 13, CHEAP to FAIR on 6, FAIR to CHEAP on 3, FAIR to RICH on 1; the 13 CHEAP dates of mid-2014 among them) and 82 tiers;
+- the company's figures throughout (FY16 at its $2.89, and its quarterly figure from Q3 2016): 10 classes (RICH to CHEAP on 6, FAIR to CHEAP on
+  3, RICH to FAIR on 1; 2017-03-03 to 2017-09-29) and 13 tiers;
+- retail kWh weather-adjusted where published: 10 classes (FAIR to RICH, 2016-11-01 to 2017-02-10), no tier;
+- every signal at its BEAR value: 50 classes (to RICH on 47, CHEAP to FAIR on 3; 2014-05-01 to 2017-07-28); at its XBULL value: 68 classes (RICH
+  to FAIR on 45, to CHEAP on 23; 2014-01-03 to 2017-10-06); no tier either way;
+- the segment on the release's "Total", Southern Company Gas included: none; the 2016 and 2017 dividends dated by the first-quarter 10-Qs: none;
+- ENERGY_TRANSITION read as out of scope (the BKR text): text only, by construction.
+The 2014-2016 RICH calls rest on the multiple against the stock's own decade; the 2016-2017 CHEAP and FAIR calls rest on Southern Company Gas in
+revenue growth, and so on the BJ Services rule.
+
+Judgement calls that could carry hindsight:
+- Southern Company Gas kept in revenue growth, as published (39 classes and 47 tiers), by a builder who knows how the acquisition and the
+  stock fared;
+- GAAP for FY2016 and the quarterly EPS signal from Q3 2016, because the company's figure also excludes ongoing items (10 classes against its
+  figures), and the company's figures where they exclude only one-offs in 2013-2015 (23 classes against GAAP), by a builder who knows the
+  Kemper gasifier was suspended in June 2017;
+- ENERGY_TRANSITION on the watch list for a utility that holds coal and lignite reserves (text only), by a builder who knows how the theme
+  later priced utilities;
+- the frozen 1997-2006 thresholds, the signals and DURABLE, risk 2, as in 2008-2013 (50 classes at BEAR, 68 at XBULL);
+- the dividend dated by the second-quarter 10-Qs in 2016 and 2017 (no class).
+
+The hindsight results for 2014-2017 are in `staging/retrospective/SO/FINDINGS.md`: hypotheses, never inputs.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -16576,6 +16732,13 @@ What the gates enforce:
   with internal combustion engines" to electric vehicles that may be less profitable, so F carries EV on the watch list,
   company-acknowledged, with no market read, through 2026; the registry's evidence (Tesla joining the S&P 500) names no Ford fact, so
   it is never re-filed. GENAI stays off: the 10-Ks name AI only as regulation and Ford's own features ("F 2022-2026").
+  SO in 2008-2015 carries none: no theme in the registry is live for an electric utility before ENERGY_TRANSITION (2015-12-12; OFFSHORE is
+  scoped to IT services), so its watch list is empty and the 10-Ks' climate-change wording stays in the "why" (the PEP obesity rule) ("SO",
+  "SO 2010-2013"). From 2015-12-18, the first weekly date on or after the live date, SO carries ENERGY_TRANSITION on the watch list,
+  company-acknowledged, with no market read, in the latest 10-K's own words (the XOM rule): Alabama Power "owns coal reserves near its Plant
+  Gorgas", Mississippi Power owns a lignite mine and mineral reserves around the Kemper IGCC, and the EPA's CO2 rules "could affect future
+  unit retirement and replacement decisions". The theme's market-pricing evidence (2020-08-31) lies after 2017, so DURABLE stands; reading
+  the scope as excluding a utility's captive reserves (the BKR and CAT text) is left to the owner ("SO 2014-2017").
 
 ## Workflow
 
