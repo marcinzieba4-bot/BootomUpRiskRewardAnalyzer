@@ -15993,7 +15993,7 @@ Judgement calls that could carry hindsight (beyond the 2008-2018 lists):
   before (withdrawals: WMT, LOW, SHW and CAT; preliminary results: SHW; the year less the nine months: the 2022 series), and none was tuned on
   an outcome.
 
-## SO (Southern Company): the twenty-first ticker, in staging, 2008-2017
+## SO (Southern Company): the twenty-first ticker, in staging, 2008-2021
 
 The SO series is built apart from the other twenty and shares nothing with them but the machinery: its own fact sheet
 (`retro/facts/SO.json`), builder (`retro/build_so.py`, the F early-era builder with BMY's `distributions` rule) and engine
@@ -16001,7 +16001,7 @@ The SO series is built apart from the other twenty and shares nothing with them 
 The method is still r2. No fact, parameter, outcome or finding of another ticker enters an SO model, and neither does the profile of SO in
 `data/business_profiles.json` (a 2026 judgement: not read for this series, and first seen by the builder after the build). Outputs go to
 `staging/retrospective/SO/`, beside the others, with the same `index.json` and their own `SERIES.md`. The owner asked for 2008-2009, then
-2010-2013 and 2014-2017 ("SO 2010-2013" and "SO 2014-2017", below); this part describes the 2008-2009 build.
+2010-2013, 2014-2017 and 2018-2021 ("SO 2010-2013", "SO 2014-2017" and "SO 2018-2021", below); this part describes the 2008-2009 build.
 
 ```bash
 python3 retro/build_so.py --weekly 2008-01-01 2009-12-31                    # 105 dates, 2008-01-04 .. 2009-12-31
@@ -16468,6 +16468,132 @@ Judgement calls that could carry hindsight:
 
 The hindsight results for 2014-2017 are in `staging/retrospective/SO/FINDINGS.md`: hypotheses, never inputs.
 
+### SO 2018-2021: FY2017 excluded, GAAP every quarter, the Gulf Power sale and its gain, Vogtle charges, COVID
+
+209 weekly dates, 2018-01-05 to 2021-12-31, on the same fact sheet, builder, engine and method (r2), with the 1997-2006 rule-T thresholds
+frozen. Built on 2026-11-15 at the owner's request ("Do 2018-2021"), after the 2008-2017 dates had been scored; their findings were written
+in this session and were not read for any decision below, each of which applies a rule that existed before.
+
+```bash
+python3 retro/build_so.py --weekly 2018-01-01 2021-12-31                    # 209 dates, 2018-01-05 .. 2021-12-31
+for d in staging/retrospective/SO/20{18,19,20,21}-*/; do
+  python3 retro/retro_tool.py --archive staging/retrospective run "$d"
+  python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
+done
+python3 retro/retro_tool.py --archive staging/retrospective series SO
+for c in 2018-01-01 2018-02-21 2018-05-02 2018-08-08 2018-11-07 2019-01-01 2019-02-20 2019-05-01 2019-07-31 2019-10-30 2020-01-01 \
+         2020-02-20 2020-04-30 2020-07-30 2020-08-31 2020-10-29 2021-01-01 2021-02-18 2021-04-29 2021-07-29 2021-11-04 2022-01-01; do
+  python3 retro/tools/firewall.py $c SO; done
+```
+
+Read, by the session's model directly with no delegated transcription: the sixteen earnings releases of Q4 2017 to Q3 2021 (8-K exhibits
+99.01-99.07, and the 8-K body of Q4 2019, whose item 7.01 says an earnings presentation "containing earnings guidance for 2020" is posted to
+the website), the Southern Company sections of the FY2017-FY2020 10-Ks (selected data to FY2019, the statements of income and cash flows,
+the segment note, the MD&A's KWH table in the FY2020 10-K, Items 1, 1A and 5), the FY2010-FY2013 10-Ks' income statements (the first-year
+diluted shares), the 2018-2021 first- and second-quarter 10-Qs for the dividend, and every other 8-K of December 2017 to February 2022 by its
+items: the Kemper settlement and rate order, the Vogtle notices, the Gulf Power sale agreement (2018-05-21) and its closing with pro forma
+statements (2019-01-04: pro forma figures are not used, the BJ Services rule), the Pivotal Home Solutions closing (2018-07-30), the tender
+offer (2019-01-16), the equity units (2019-08-16), the COVID risk factors (2020-04-01), financing, officers and meetings. None guides a number in a
+filing; the first filed numeric guide is the Q4 2021 release's "adjusted earnings guidance range for 2022" (2022-02-17), after the range.
+The generator (written for these filings, not kept) asserts every row in its own filing and computes every rate: 505 strings checked with
+`verbatim.py`, 505 found. Sources `SO73`-`SO96` (the 10-Ks `SO73`-`SO76`, the releases `SO77`-`SO92`, the second-quarter 10-Qs
+`SO93`-`SO96`); every earlier entry is unchanged. Decided on 2026-11-15, before any 2018-2021 model was built or any of its outcomes computed:
+
+- **No guide in numbers, as before.** Each release points to earnings slides on the website ("including its earnings guidance for 2018",
+  "including its updated earnings guidance for 2018", "including its earnings guidance for 2019", "including earnings guidance for 2021",
+  "including long-term earnings guidance", "including earnings guidance"); the Q4 2019 8-K's item 7.01 and the Q4 2019, Q2 2021 and Q3 2021
+  call words name guidance too. None of it was filed: website posts and calls add nothing (the XOM, NKE and MSFT rule); the guide line now
+  also quotes call words that name guidance.
+- **GAAP for every quarter's EPS signal.** Every release's "Excluding Items" also removes Wholesale Gas Services (an ongoing business, its
+  mark-to-market volatility; in Q3 2021 only in the year-ago column) and, to Q4 2017, the Kemper
+  schedule-extension equity return: not only one-offs, so GAAP stands, as from Q3 2016. The releases' figures are in each print's note.
+- **FY2017 is excluded, a distorted year with no figure excluding only its one-offs** (the AAPL FY2002 test and the NKE FY2018 encoding):
+  GAAP $0.84 a diluted share after the Kemper charges ($3,366M pre-tax for the year); the one-offs exceed the year's $842M net income, and the
+  company's $3.02 also excludes Wholesale Gas Services and the Kemper equity return. It leaves the EPS history (`eps_excluded`) from the
+  FY2017 10-K; its revenue, shares and margins stay; its own days leave the P/E window ("10-yr ex-FY17"); EPS growth is measured only between
+  years in the history; and the rollover's last full year is the last in it, so FY16's GAAP $2.55 stands for FY2018E until the Q4 2018
+  print. The builder gains F's early-era encoding of an excluded year (no earlier output changes).
+- **FY2018-FY2020 at GAAP diluted from the 10-Ks:** $2.17 (the Vogtle charge of $1.1 billion pre-tax in it), $4.50 and $2.93. FY2019 carries
+  the "$2.6 billion pre-tax ($1.4 billion after tax) gain associated with the sale of Gulf Power" (FY2019 10-K); the mirror test (one-off
+  benefits larger than the year's income without them) is not met, as the gain is under the $4,739M net income less it, so the year stands
+  at GAAP, and $4.50 anchors every 2020 date. BEAR becomes -34.9%/yr (2020 against 2019) from the FY2020 10-K.
+- **Growth against a year-ago loss is measured over the loss's absolute value** (the CAT 2014-2017 rule): Q2 2018's EPS and segment (against
+  Q2 2017's Kemper loss) read +89.1% and +98.1%, Q2 2019's (against Q2 2018's Vogtle loss) +673.3% and +3,776.9%. No class moves on the
+  plain ratio.
+- **The Gulf Power sale (2019-01-01) and the 2018 gas dispositions stay in the comparisons, as published**: revenue, retail kWh and the
+  segment of the 2019 prints compare a quarter without Gulf Power to one with it, and Q3 2018 to Q2 2019 a year-ago quarter with
+  Elizabethtown, Elkton and Florida City Gas (`sales_note`). The 2019 releases' adjusted kWh comparison without Gulf Power is shown, not used
+  (`kwh_note`: no class moves on it). Q1 2019's operating income includes the $2,497M gain, so its margin reads +4,661bp.
+- **Vintages.** Each 10-K was accepted the evening before its Q4 release (FY2017 2018-02-20 21:22 ET, FY2018 2019-02-19 18:34 ET, FY2019
+  2020-02-19 17:55 ET, FY2020 2021-02-17 17:48 ET), so the Q4 prints carry no full-year actuals. The FY2020 10-K has no selected data (Item 6
+  removed and reserved): it supplies 2018-2020 from its income statement and the year's retail kWh change (-5.3%) from the MD&A, and earlier
+  years keep the latest 10-K that reported them (the ACN FY21 rule); its revenue lines replace the customer classes in the segment bridge.
+- **Dividends** from the second-quarter 10-Qs: $0.60 (2018-08-08), $0.62 (2019-07-31), $0.64 (2020-07-30), $0.66 (2021-07-29), each the
+  first filing to state the April rate (the first-quarter 10-Qs do not); January rates from the 10-Ks (58, 60, 62 and 64 cents).
+- **ENERGY_TRANSITION stays on the watch list**: each 10-K still says Alabama Power owns coal reserves near Plant Gorgas and Mississippi Power
+  owns a lignite mine and mineral reserves, and its risk factor is now "The Southern Company system may be exposed to regulatory and
+  financial risks related to the impact of GHG legislation, regulation, and emission reduction goals" (FY2017: "greenhouse gas (GHG)
+  legislation and regulation"), quoted with the lead-in "among its risk factors" (`transition_intro`). The theme's registered
+  market-pricing event (2020-08-31) is ExxonMobil's removal from the Dow; it names no Southern Company fact, so the stock is not re-filed
+  (the CMCSA and LOW reading of sector evidence). EV (from 2020) is scoped to ICE powertrains and fuel retail: not recorded.
+- **Release timing.** Every release was accepted before the open, Wednesdays to Q3 2019 and Thursdays from Q4 2019; each week's date is the
+  next trading day. Each 10-Q came the evening before its release.
+
+Controls and checks (before any outcome):
+- **Controls:** altering one value of each fact published from the Q4 2017 release on (each print's retail kWh, each vintage's last-year
+  revenue and last EPS in the history, each dividend) changes no model dated before its publication and changes the first weekly date on or
+  after it: 28 of 28, each reaching exactly its scope.
+- **Leak scan:** 0 hits in 457,769 (model, later token) pairs over the 732 dates of 2008-2021, after dropping 53,046 tokens an earlier fact,
+  the builder or the engine carries. A first pass flagged "1,060" on 26 dates: Q2 2018's $1,060M plant loss in that print's own note, which
+  is also Q1 2021's share count; the scan now drops a figure that an earlier fact's text contains.
+- **`retro_tool run` passes on all 209 dates** with no warning.
+- **Firewall** (run on the committed build, before any outcome): passes at the 22 cutoffs above (every print, vintage and dividend date of
+  2018-2021, the year boundaries, 2020-08-31 and 2022-01-01), 523 to 732 dates each, 0 files changed and no planted text; the 2022-01-01
+  run rebuilds all 732 dates of 2008-2021 byte-identical. The SO plant now also plants a kWh note, a later vintage's excluded-year notes
+  and its watch-list lead-in.
+- **Regression:** the 523 dates of 2008-2017 rebuild byte-identical after every builder change.
+
+Seen in the build (method behaviour, not tuned):
+- **2018-2021: RICH 188, CHEAP 21, FAIR 0.** 2018 and 2019: RICH on all 52 and 52. 2020: CHEAP 21, RICH 32. 2021: RICH on all 52. Legacy tiers:
+  AVOID 157, BUY 49, ACCUMULATE 3. Robustness: all eight variants agree on 186 dates, seven on 19, six on 4.
+- **2018 on FY16's GAAP $2.55** (2018-01-05 to 2019-02-15, 59 dates): $42.73-49.12 is 16.8-19.3x, the 70th-92nd percentile of the ex-FY17
+  window; RICH and AVOID on all, Ratio B infinite on 19. The proxy composite is 3.35, 3.40 and 3.20 on Q4 2017-Q2 2018: the signals were
+  good, the multiple was not.
+- **On FY18's GAAP $2.17** (2019-02-21 to 2020-02-14, 52 dates): $49.98-70.40 is 23.0-32.4x, the 98th-100th percentile; Ratio B infinite on
+  every one (the price above the BULL case); BASE -17.9% to -5.5%/yr on revenue without Gulf Power. The EPP floor is 14x, 15x from
+  2020-01-03.
+- **CHEAP on FY19's GAAP $4.50** (2020-02-21 to 2020-07-24, 21 of 23 dates; RICH on 2020-02-21 and 2020-03-06): $46.36-68.99 is 10.3-15.3x,
+  the 0th-31st percentile, under the 14x floor ($63.00) from March; tier BUY on 21, ACCUMULATE on 2. Then **RICH from the Q2 2020 print** (2020-07-31 to 2021-02-12,
+  29 dates) at 11.5-14.2x and the 3rd-19th percentile, because BASE is -11.9% and -8.8%/yr and the proxy composite 1.15 and 1.30 (COVID
+  quarters: retail kWh -11.7% and -6.7%): class RICH, tier BUY on 28 and ACCUMULATE on 1.
+- **RICH on FY20's GAAP $2.93** (2021-02-19 to 2021-12-31, 46 dates): 19.4-23.4x, the 74th-99th percentile, AVOID on all; BEAR -34.9%/yr
+  puts the BEAR price at $17 and Ratio B at 2.7 to infinite. The EPP floor is 14x, then 15x from 2021-08-13.
+- **The proxy composite** is 3.35 on Q4 2017, 3.40, 3.20, 2.85 and 1.35 on Q1-Q4 2018, 2.05, 2.65, 2.20 and 2.05 on Q1-Q4 2019, 1.95, 1.15, 1.30
+  and 2.40 on Q1-Q4 2020, and 3.30, 2.05 and 1.65 on Q1-Q3 2021.
+
+How far each call moves the classes of 2018-2021 (the 209 dates rebuilt with one encoding changed and classified offline with `retro_tool`'s
+own classifier; no outcome consulted):
+- the company's figures throughout (FY17 $3.02, FY18 $3.07, FY19 $3.11, FY20 $3.25, and its quarterly figures): **60 classes** (RICH to FAIR on
+  29, CHEAP to RICH on 21, RICH to CHEAP on 10; 2018-02-22 to 2021-07-09) and 96 tiers;
+- FY2019 excluded as distorted by the Gulf Power gain: 25 classes (every CHEAP date of 2020 to RICH, and 4 of 2021 to FAIR) and 56 tiers;
+- FY2017 at GAAP $0.84 instead of excluded: 23 classes (RICH to CHEAP on 20, to FAIR on 3; 2020-03-06 to 2021-02-12) and 51 tiers;
+- every signal at its BEAR value: 20 classes (the CHEAP dates of 2020 to RICH); at its XBULL value: 31 classes (RICH to CHEAP, 2020-02-21 to
+  2021-02-12); no tier either way;
+- retail kWh weather-adjusted, the adjusted kWh without Gulf Power, and the plain ratio against a year-ago loss: none.
+The RICH calls of 2018-2019 and 2021 rest on the multiple at the top of its decade; the CHEAP calls of 2020 rest on FY2019's GAAP figure with
+the Gulf Power gain in it.
+
+Judgement calls that could carry hindsight:
+- GAAP rather than the company's figures because they exclude Wholesale Gas Services (60 classes and 96 tiers), by a builder who knows the
+  later earnings path;
+- FY2019's gain-lifted $4.50 kept as the 2020 anchor, the mirror test not met (25 classes if excluded), and FY2017 excluded rather than kept
+  at $0.84 (23 classes), by a builder who knows how 2020 and 2021 traded;
+- the Gulf Power sale left in the comparisons, as published;
+- ENERGY_TRANSITION kept on the watch list and not re-filed after ExxonMobil's Dow removal (text only);
+- the frozen 1997-2006 thresholds, the signals and DURABLE, risk 2 (20 classes at BEAR, 31 at XBULL).
+
+The hindsight results for 2018-2021 are in `staging/retrospective/SO/FINDINGS.md`: hypotheses, never inputs.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -16738,7 +16864,10 @@ What the gates enforce:
   company-acknowledged, with no market read, in the latest 10-K's own words (the XOM rule): Alabama Power "owns coal reserves near its Plant
   Gorgas", Mississippi Power owns a lignite mine and mineral reserves around the Kemper IGCC, and the EPA's CO2 rules "could affect future
   unit retirement and replacement decisions". The theme's market-pricing evidence (2020-08-31) lies after 2017, so DURABLE stands; reading
-  the scope as excluding a utility's captive reserves (the BKR and CAT text) is left to the owner ("SO 2014-2017").
+  the scope as excluding a utility's captive reserves (the BKR and CAT text) is left to the owner ("SO 2014-2017"). It stays on the watch
+  list through 2021 in the FY2017-FY2020 10-Ks' words (the reserves and a GHG risk factor); the registered market-pricing event, ExxonMobil's
+  Dow removal (2020-08-31), names no Southern Company fact, so the stock is not re-filed, and EV (from 2020) is scoped to ICE powertrains and
+  fuel retail ("SO 2018-2021").
 
 ## Workflow
 
