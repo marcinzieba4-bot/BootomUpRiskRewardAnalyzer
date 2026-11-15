@@ -76,7 +76,8 @@ revenue, margins, adjusted and GAAP EPS, notes and raw figures are absurd, a lat
 wholesale, dividend, segment and normalization notes, and a later display-only outlook for every year guided before CUTOFF (F 2022-2026); SO: a
 print whose retail kWh, electric utilities' net income, revenue, operating margin, EPS on every basis, notes, call words and raw figures are
 absurd, with absurd full-year actuals (on a planted EPS basis) for the year after the latest vintage before CUTOFF, and a later vintage with
-planted notes and every year on a planted EPS basis (SO 2010-2013); every
+planted notes and every year on a planted EPS basis (SO 2010-2013), the print with a planted revenue note and website-slides words and the
+vintage with planted energy-transition quotes (SO 2014-2017); every
 fact sheet with a 'splits' list, SHW's from 2021-2023: a later split on the price data's next split date; a CLOUD event
 from a later 10-K, as for every live theme), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
@@ -163,7 +164,7 @@ PLANT = {"ACN": dict(quarter="Q9 FY99", revenue_lc=-60, margin_bp=-999, fy_eps_g
                     kwh_pct=-60.0, kwh_wa_pct=-60.0, seg_pct=-60.0, margin=-50.0, margin_prior=50.0, margin_bp=-10000.0, eps_q=0.01,
                     eps_q_prior=9.99, eps_pct=-99.9, eps_basis="GAAP", eps_gaap=0.01, eps_gaap_prior=9.99, eps_ex=0.01, eps_ex_prior=9.99,
                     eps_note="PLANTED", margin_note="PLANTED", seg_note="PLANTED", call_words="PLANTED earnings guidance", shares_m=1.0,
-                    next_print="PLANTED",
+                    next_print="PLANTED", sales_note="PLANTED", slides_words="PLANTED earnings guidance",
                     raw=dict(rev_m=4, rev_prior_m=10, opinc_m=-2, opinc_prior_m=5, seg_m=4, seg_prior_m=10, kwh_m=4, kwh_prior_m=10,
                              ni_m=1, ni_prior_m=99)),
          "XOM": dict(quarter="Q1 2099", fy=2099, q=1, release="PLANTED", sales_b=0.01, sales_pct=-60.0, pretax_margin=-50.0,
@@ -603,7 +604,8 @@ try:
         v.update(business_line="PLANTED", normalization="PLANTED", shares_note="PLANTED", prev_fy_margin_note="PLANTED",
                  check_pretax_note="PLANTED", tax_note="PLANTED", dividend_note="PLANTED", fcf_note="PLANTED", cash_return_text="PLANTED",
                  groups=[["PLANTED", 1, -99]], groups_basis="PLANTED", prev_fy_margin=-50.0, dividend_annual=9.99,
-                 eps_bases={y: "PLANTED" for y in v["eps_normalized"]})   # every year on a planted basis (SO 2010-2013)
+                 eps_bases={y: "PLANTED" for y in v["eps_normalized"]},   # every year on a planted basis (SO 2010-2013)
+                 transition_quote="PLANTED", reserves_quote="PLANTED")      # the energy-transition watch-list words (SO 2014-2017)
     if TICKER == "XOM":    # the excluded-year and restatement fields (XOM 2021-2023): a later vintage excluding a year, and the planted
                            # print's full-year actuals excluding its own year and restating every earlier one
         v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}

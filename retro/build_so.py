@@ -25,6 +25,13 @@ EPS signal uses it. A Q4 release comes weeks before its 10-K, so a Q4 print carr
 disruption theme in taxonomy_eras.json is live for an electric utility in 2008-2009 (ENERGY_TRANSITION, scoped to reserves and refining,
 from 2015-12-12), so the watch list is empty and the builder refuses events until a theme encoding is decided.
 
+SO 2014-2017 (retro/README.md): from Q3 2016 the company's figure excluding items also excludes ongoing items (Southern Company Gas's
+earnings, acquisition financing, Wholesale Gas Services, the Kemper schedule-extension equity return), so GAAP stands for the quarterly EPS
+signal and for FY2016; revenue keeps Southern Company Gas in, as published ('sales_note'); from the Q2 2016 release each release points to
+earnings slides on the company's website, which are not filings ('slides_words', text only); and from ENERGY_TRANSITION's live date the
+10-K's own words on its coal and lignite reserves and the CO2 rules put the theme on the watch list ('transition_quote', 'reserves_quote':
+company-acknowledged, no market read, no factor pair, so text only).
+
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
 is the first trading day after it (every release of the period came on a Wednesday or Thursday).
 
@@ -194,6 +201,16 @@ def build(as_of, facts, raw, spx, engine, out):
                     + "; no transcript or slides are filed")
     else:
         call_txt = "no transcript or slides of the analyst calls are filed"
+    # from the Q2 2016 release each release points to earnings slides on the company's website, Q2 2016 to Q4 2016 with an earnings
+    # estimate or guidance among them; website posts are not filings (the XOM, NKE and MSFT rule), so they add nothing (SO 2014-2017)
+    slides = [p for p in public if p.get("slides_words") is not None]
+    if slides:
+        s, named = slides[-1], [p for p in slides if p["slides_words"]]
+        call_txt = (f"the {s['quarter']} release says its earnings slides with supplemental financial information"
+                    + (f", {s['slides_words']}," if s["slides_words"] else "") + " are on the company's website"
+                    + (f" (the {named[-1]['quarter']} release named among them '{named[-1]['slides_words']}')"
+                       if named and not s["slides_words"] else "")
+                    + ": website posts are not filings, so they add nothing; no transcript is filed")
     guide_text = (f"{fy_now}: no EPS, revenue or margin guide in numbers in any filing ({call_txt}; BASE takes {latest['quarter']} "
                   "revenue growth)")
     margin_guided = False
@@ -241,8 +258,31 @@ def build(as_of, facts, raw, spx, engine, out):
     theme_summary = "no disruption theme is live for an electric utility on this date"
     why = h["why"] + ("; no disruption theme in the registry is live for an electric utility on this date, so the watch list is empty and "
                       "the 10-K's words on climate change legislation stay here (the PEP obesity rule)")
+    # ENERGY_TRANSITION is live from 2015-12-12 and scoped to oil, gas and coal reserves and refining; Southern Company's 10-Ks say it owns
+    # coal and lignite reserves for its own plants, and their CO2 risk factor puts the theme on the watch list (the XOM rule:
+    # company-acknowledged, no market read). No factor pair is added, so only text changes; re-filing needs dated evidence of market
+    # pricing for Southern Company (retro/README.md, "SO 2014-2017"). Dates before the live date keep the text above
+    et = retro_tool.load_taxonomy()["themes"]["ENERGY_TRANSITION"]
+    if et["live_from"] <= as_of:
+        assert h.get("transition_quote") and h.get("reserves_quote"), (as_of, "the vintage needs its own 10-K words for the watch list")
+        val_word = ("a premium" if pe_now_pctl >= 70 else "a discount to its own history" if pe_now_pctl <= 30 else "near its own median")
+        stage = "transition"
+        watch = [{"theme": "ENERGY_TRANSITION", "status": "live, company-acknowledged; no market read",
+                  "reason": (f"Live: Southern Company's own FY{last_fy} 10-K says '{h['reserves_quote']}' and, of the EPA's CO2 rules for "
+                             f"fossil fuel-fired units, '{h['transition_quote']}' The stock trades at {close / eps_now:.1f}x {fy_e_s} — "
+                             f"{val_word}. Re-file as DISRUPTION_EXPOSED (ENERGY_TRANSITION) only if dated evidence shows the market "
+                             "pricing decarbonisation of Southern Company's coal reserves and the units they supply specifically.")}]
+        sig_name = "Energy transition: CO2 rules on coal reserves and units"
+        trigger = "CO2 rules retire coal units and strand their reserves faster than rates recover them"
+        theme_summary = "the energy transition is live and company-acknowledged; no dated evidence ties the multiple to it"
+        why = h["why"] + ("; ENERGY_TRANSITION is live (from " + et["live_from"] + "): the company owns coal and lignite reserves and its "
+                          "CO2 risk factor puts the theme on the watch list, company-acknowledged, with no dated evidence that the market "
+                          "prices it for Southern Company")
     kind, pit_risk = "DURABLE", 2
     cat3 = f"(3) A {fy_now} earnings guide in numbers — none in any filing (guidance is given on the analyst call only)"
+    if slides:
+        cat3 = (f"(3) A {fy_now} earnings guide in numbers — none in any filing (guidance is given on the analyst call and in slides on "
+                "the company's website only)")
     cat4 = (f"(4) Electric utilities' net income — {latest['seg_pct']:+.1f}% in {latest['quarter']} (${latest['raw']['seg_m']:,.0f}M vs "
             f"${latest['raw']['seg_prior_m']:,.0f}M): rate relief against sales, weather and costs")
 
@@ -276,7 +316,8 @@ def build(as_of, facts, raw, spx, engine, out):
                f"electric utilities' net income {latest['seg_pct']:+.1f}% (${rw['seg_prior_m']:,.0f}M to ${rw['seg_m']:,.0f}M, the "
                f"traditional operating companies and Southern Power" + (f"; {latest['seg_note']}" if latest.get("seg_note") else "")
                + f"); revenue {latest['sales_pct']:+.1f}% as reported "
-               f"(${rw['rev_prior_m']:,.0f}M to ${rw['rev_m']:,.0f}M); operating income ${rw['opinc_prior_m']:,.0f}M to ${rw['opinc_m']:,.0f}M"
+               f"(${rw['rev_prior_m']:,.0f}M to ${rw['rev_m']:,.0f}M" + (f"; {latest['sales_note']}" if latest.get("sales_note") else "")
+               + f"); operating income ${rw['opinc_prior_m']:,.0f}M to ${rw['opinc_m']:,.0f}M"
                + (f" ({latest['margin_note']})" if latest.get("margin_note") else "") + f"; EPS: {latest['eps_note']}")
     fy_rev = rev[max(rev)] * (1 + sum(fwd) / 2 / 100)
     fy_rev_label = f"{fwd_label}, applied to the year (no {fy_now} revenue guide)"
