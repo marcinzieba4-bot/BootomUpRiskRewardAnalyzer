@@ -1,0 +1,246 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "SO",
+ "company": "The Southern Company",
+ "as_of": "2008-01-11",
+ "price_date": "2008-01-11",
+ "price": 39.76,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); electric utility signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "The Southern Company: 'Southern Company owns all the outstanding common stock of Alabama Power, Georgia Power, Gulf Power and Mississippi Power, each of which is an operating public utility company. The traditional operating companies supply electric service in the states of Alabama, Georgia, Florida and Mississippi.'; among its risk factors, 'Southern Company and its subsidiaries are subject to substantial governmental regulation.', 'The operating results of Southern Company, the traditional operating companies and Southern Power are affected by weather conditions and may fluctuate on a seasonal and quarterly basis.' and 'Existing environmental laws and regulations may be revised or new laws and regulations related to global climate change, air quality or other environmental and health concerns may be adopted or become applicable to Southern Company, the traditional operating companies and Southern Power.' (its own FY2006 10-K); no disruption theme in the registry is live for an electric utility on this date, so the watch list is empty and the 10-K's words on climate change legislation stay here (the PEP obesity rule)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "The Southern Company: 'Southern Company owns all the outstanding common stock of Alabama Power, Georgia Power, Gulf Power and Mississippi Power, each of which is an operating public utility company. The traditional operating companies supply electric service in the states of Alabama, Georgia, Florida and Mississippi.'; among its risk factors, 'Southern Company and its subsidiaries are subject to substantial governmental regulation.', 'The operating results of Southern Company, the traditional operating companies and Southern Power are affected by weather conditions and may fluctuate on a seasonal and quarterly basis.' and 'Existing environmental laws and regulations may be revised or new laws and regulations related to global climate change, air quality or other environmental and health concerns may be adopted or become applicable to Southern Company, the traditional operating companies and Southern Power.' (its own FY2006 10-K); no disruption theme in the registry is live for an electric utility on this date, so the watch list is empty and the 10-K's words on climate change legislation stay here (the PEP obesity rule). durable franchise (obsolescence risk 2/5); price rich; Ratio B 6.14x; +35% to EPP floor; model-vs-market gap -1.44; conservative 2yr -2%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": 6.14,
+  "ratio_b_fmt": "6.14x",
+  "epp": 29.4,
+  "epp_gap_pct": 35.2,
+  "epp_adj": 0.0,
+  "proxy_composite": 2.35,
+  "sca": 0.006,
+  "adj_composite": 2.356,
+  "market_composite": 3.8,
+  "adj_gap": -1.44,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": -1.6,
+  "scenarios": {
+   "BEAR": {
+    "eps": 1.87,
+    "pe": 14.1,
+    "price": 26,
+    "desc": "EPS -5.7%/yr (worst year FY97-FY06, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 2.33,
+    "pe": 16.1,
+    "price": 38,
+    "desc": "EPS +5.2%/yr (Q3 revenue + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 2.33,
+    "pe": 17.9,
+    "price": 42,
+    "desc": "EPS +5.2%/yr (FY97-FY06 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 2.65,
+    "pe": 19.9,
+    "price": 53,
+    "desc": "EPS +12.3%/yr (best 2-yr run FY97-FY06); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 6.14,
+   "epp_gap_pct": 35.2,
+   "adj_gap": -1.44,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -1.6,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 2.04,
+   "epp_gap_pct": 35.2,
+   "adj_gap": -1.07,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -1.6,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 35.2,
+   "adj_gap": -1.41,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -1.6,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 3.94,
+   "epp_gap_pct": 35.2,
+   "adj_gap": -1.4,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -1.6,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 57.33,
+   "epp_gap_pct": 35.2,
+   "adj_gap": -1.41,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -1.6,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 6.14,
+   "epp_gap_pct": 35.2,
+   "adj_gap": -1.14,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -1.6,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 6.14,
+   "epp_gap_pct": 11.4,
+   "adj_gap": -1.44,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -1.6,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 6.14,
+   "epp_gap_pct": 35.2,
+   "adj_gap": -1.13,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -1.6,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "RICH"
+ ],
+ "summary": "SO (retrospective, 2008-01-11) ✕ AVOID — Ratio B 6.14x (34.6% downside to Bear $26 / +5.6% upside to Bull $42) | Adj composite 2.36 vs market 3.80: gap -1.44 [OVERVALUED] | +35% above the EPP floor $29 (14x FY07E $2.10) | Conservative 2-yr case: -1.6% total (-0.8%/yr) | At 18.9x FY07E the 15% hurdle price $53 sits above the BULL case; retail kWh sales +1.2% in Q3 2007, forward revenues +6.2% (no Q4 2007 revenue guide, Q3 2007 revenue as reported); no disruption theme is live for an electric utility on this date.",
+ "sources": [
+  {
+   "id": "SO2",
+   "published": "2000-03-27",
+   "filed": "2000-03-27 (time not recorded by EDGAR)",
+   "title": "Southern Company FY1999 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/92122/000009212200000068/0000092122-00-000068.txt",
+   "supports": "FY1999 annual report (combined filing with the traditional operating companies and Southern Power)"
+  },
+  {
+   "id": "SO4",
+   "published": "2002-03-25",
+   "filed": "2002-03-25 (time not recorded by EDGAR)",
+   "title": "Southern Company FY2001 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/92122/000009212202000045/form10k.txt",
+   "supports": "FY2001 annual report (combined filing with the traditional operating companies and Southern Power)"
+  },
+  {
+   "id": "SO5",
+   "published": "2003-03-10",
+   "filed": "2003-03-10 11:53 ET (during the session)",
+   "title": "Southern Company FY2002 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/92122/000009212203000074/form10k2002.txt",
+   "supports": "FY2002 annual report (combined filing with the traditional operating companies and Southern Power)"
+  },
+  {
+   "id": "SO6",
+   "published": "2004-03-01",
+   "filed": "2004-03-01 11:42 ET (during the session)",
+   "title": "Southern Company FY2003 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/92122/000009212204000119/form10k2003.txt",
+   "supports": "FY2003 annual report (combined filing with the traditional operating companies and Southern Power)"
+  },
+  {
+   "id": "SO7",
+   "published": "2005-03-01",
+   "filed": "2005-02-28 21:51 ET (after the close)",
+   "title": "Southern Company FY2004 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/92122/000095014405001905/southernco10k2004.htm",
+   "supports": "FY2004 annual report (combined filing with the traditional operating companies and Southern Power)"
+  },
+  {
+   "id": "SO8",
+   "published": "2006-02-28",
+   "filed": "2006-02-27 17:30 ET (after the close)",
+   "title": "Southern Company FY2005 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/92122/000009212206000153/g99802e10vk.htm",
+   "supports": "FY2005 annual report (combined filing with the traditional operating companies and Southern Power)"
+  },
+  {
+   "id": "SO9",
+   "published": "2007-02-27",
+   "filed": "2007-02-26 18:11 ET (after the close)",
+   "title": "Southern Company FY2006 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/92122/000009212207000016/soco10k.htm",
+   "supports": "FY2006 annual report (combined filing with the traditional operating companies and Southern Power)"
+  },
+  {
+   "id": "SO12",
+   "published": "2007-07-26",
+   "filed": "2007-07-26 10:29 ET (during the session)",
+   "title": "Southern Company Q2 2007 earnings release (Form 8-K, Exhibits 99.01-99.07)",
+   "url": "https://www.sec.gov/Archives/edgar/data/92122/000009212207000069/x99-1.htm",
+   "supports": "Q2 2007 results: financial highlights, EPS, consolidated earnings, kilowatt-hour sales"
+  },
+  {
+   "id": "SO13",
+   "published": "2007-10-25",
+   "filed": "2007-10-25 09:06 ET (before the open)",
+   "title": "Southern Company Q3 2007 earnings release (Form 8-K, Exhibits 99.01-99.07)",
+   "url": "https://www.sec.gov/Archives/edgar/data/92122/000009212207000101/x99-01.htm",
+   "supports": "Q3 2007 results: financial highlights, EPS, consolidated earnings, kilowatt-hour sales"
+  },
+  {
+   "id": "SO22",
+   "published": "2007-05-07",
+   "filed": "2007-05-07 14:26 ET (during the session)",
+   "title": "Southern Company Q1 2007 Form 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/92122/000009212207000045/soco10q1stqt.htm",
+   "supports": "Q1 2007 quarterly report: the common dividend rate"
+  },
+  {
+   "id": "W0",
+   "published": "2008-01-11",
+   "title": "Yahoo Finance daily prices, SO and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/SO/history",
+   "supports": "close $39.76 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-15"
+}
