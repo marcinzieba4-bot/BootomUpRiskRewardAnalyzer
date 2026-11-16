@@ -612,8 +612,8 @@ try:
     if TICKER == "CTVA":   # absurd full-year actuals on the planted print, for the year after the latest vintage before CUTOFF, a later vintage
                            # whose every text and figure the models quote is planted and which excludes a year, and later guides for every
                            # year guided before CUTOFF: one without a net sales range and one with only a display (the latest guide wins)
-        last["fy_actual"] = {"fy": int(max(k for k in v["eps_normalized"] if k != "2099")) + 1, "fy_label": "FY99", "eps_normalized": 0.01,
-                             "excluded_note": None, "revenue_usd_b": 0.01, "diluted_shares_m": 1.0, "normalization_note": "PLANTED",
+        last["fy_actual"] = {"fy": int(max(k for k in list(v["eps_normalized"]) + list(v.get("eps_excluded", {})) if k != "2099")) + 1,
+                             "fy_label": "FY99", "eps_normalized": 0.01, "excluded_note": None, "revenue_usd_b": 0.01, "diluted_shares_m": 1.0, "normalization_note": "PLANTED",
                              "op_margin": -50.0, "op_margin_note": "PLANTED", "sales_growth": -60.0, "seed_growth": -60.0, "cp_growth": -60.0,
                              "seed_org_pct": -60.0, "cp_org_pct": -60.0, "org_pct": -60.0, "check_pretax_margin": -50.0,
                              "check_pretax_note": "PLANTED", "tax_rate": 0.99, "tax_note": "PLANTED", "groups": [["PLANTED", 1, -99]],
