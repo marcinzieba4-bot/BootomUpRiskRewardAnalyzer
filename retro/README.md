@@ -16594,6 +16594,35 @@ Judgement calls that could carry hindsight:
 
 The hindsight results for 2018-2021 are in `staging/retrospective/SO/FINDINGS.md`: hypotheses, never inputs.
 
+## CTVA (Corteva): 2008-2009 requested, no date can be built
+
+**What the owner asked for and what could be built.** On 2026-11-16 the owner asked for CTVA 2008-2009 on the same rules. Under method
+r2 **no date of 2008-2009 can be built**, and none was: no fact sheet, builder, engine or staging folder exists for CTVA. Nothing was
+invented to fill the gap (the BKR 2018 precedent). Checked against the filings, before any price or outcome of those years was read:
+
+- **No company.** Corteva, Inc. (CIK 1755672) filed nothing with the SEC before its Form 10 of 2018-10-18. Its information statement
+  (Form 10/A of 2019-05-06, exhibit 99.1): "Corteva Parent is a wholly owned subsidiary of DowDuPont that was formed on March 16, 2018 to
+  serve as a holding company for Corteva." So no CTVA fact carries a `published` date in 2008-2009.
+- **No stock, so no P/E of its own (the listing rule).** The same statement: "there is no current trading market for Corteva common
+  stock". The distribution was "on June 1, 2019" (a Saturday), with regular-way trading from the next trading day, 2019-06-03.
+  Yahoo's CTVA series starts on 2019-05-24 (when-issued). A model needs the stock's own P/E window, which runs from the listing.
+- **No single predecessor (why the BKR/BHI route does not apply).** BKR's 2008-2017 dates are Baker Hughes Incorporated because Yahoo
+  serves BHI's history under BKR and the business is the same. Neither holds here. Corteva is "the agriculture business of DowDuPont",
+  which in 2008-2009 was split between two separately listed companies: Historical DuPont's agriculture segment ("Historical DuPont
+  operating a global business that included agriculture, electronics and communications, ...") and Historical Dow's Dow AgroSciences
+  ("Historical Dow operating a global business that included agricultural sciences"). Corteva holds EID, the legal entity of Historical
+  DuPont, but Historical DuPont's price history sits under DD on Yahoo (from 1972), not under CTVA, and its 2008-2009 business was a
+  diversified chemicals company. A 2008-2009 model of it would be a DD retrospective, not CTVA's.
+
+Building either alternative is the owner's call and a method note, not a rule this request decides: (a) Historical DuPont (EID, NYSE: DD)
+as a ticker of its own, with its own fact sheet and builder, 2008 onward; (b) CTVA from its listing, whose first date also needs a full
+year of EPS published by Corteva itself (the BKR 2018 rule; not yet determined). For (b): Yahoo's CTVA series records a split event on
+2026-10-01 (ratio 6665:1000), which `retro_tool.py` undoes as a split when it rebuilds the close as traded; a build from the listing must
+first confirm that the rebuilt close matches a printed one.
+
+Sources (each quoted string checked with `verbatim.py` against its own filing, 9/9): EDGAR submissions for CIK 1755672; Form 10/A
+0001193125-19-138437, exhibit 99.1 (accepted 2019-05-06 21:12 UTC); Yahoo chart API, CTVA and DD, read 2026-11-16.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are

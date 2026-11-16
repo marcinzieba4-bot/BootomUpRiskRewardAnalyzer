@@ -32,6 +32,8 @@ touching either directory.
   2019-02-01 are Baker Hughes, a GE company (BHGE, then BKR), a new listing with its own facts and engine: no date between is built, as
   the new company had no full year of EPS before its Q4 2018 release (retro/README.md, "BKR 2018-2021"). SO's P/E windows to 2011-04-01 reach back before the
   2001 Mirant spin-off: by the `distributions` rule those days are priced as traded, with Mirant, against EPS that excludes it
-  (retro/README.md, "SO"; the largest call of the series).
+  (retro/README.md, "SO"; the largest call of the series). CTVA (Corteva) has no retrospective: it was asked for 2008-2009, when
+  neither the company (formed 2018) nor its stock (listed 2019) existed, so no date was built and DuPont's or Dow's history was not
+  substituted (retro/README.md, "CTVA"; either alternative is the owner's call).
 - **Never use the owner's personal email** in request headers to external
   services (SEC asks for a contact in the User-Agent).
