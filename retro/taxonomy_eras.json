@@ -1706,6 +1706,21 @@
     "term": "Vylor",
     "first_seen": "2026-05-06",
     "note": "the name of the seed company Corteva spun off; first in a Corteva filing in the Q1 2026 release (8-K accepted 2026-05-05 16:41 ET, after the close, so from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "Information Systems & Global Solutions",
+    "first_seen": "2010-06-02",
+    "note": "Lockheed Martin's renamed IS&GS segment; first in a Lockheed Martin filing in the 8-K of 2010-06-02 (accepted 08:47 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Mission Systems and Training",
+    "first_seen": "2012-10-24",
+    "note": "a Lockheed Martin business segment; first in a Lockheed Martin filing in its Q3 2012 earnings 8-K (accepted 2012-10-24 07:37 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Rotary and Mission Systems",
+    "first_seen": "2016-10-25",
+    "note": "a Lockheed Martin business segment after the Sikorsky acquisition; first in a Lockheed Martin filing in its Q3 2016 earnings 8-K (accepted 2016-10-25 07:32 ET, before the open), EDGAR full-text search"
    }
   ]
  }

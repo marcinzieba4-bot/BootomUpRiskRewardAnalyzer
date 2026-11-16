@@ -1,0 +1,1687 @@
+{
+ "_doc": "Point-in-time fact sheet for LMT retrospectives (retro/build_lmt.py), generated from the converted rows of Lockheed Martin's filings (every figure read from its labelled row, the row asserted present in its own filing). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks of 2006-2009 were accepted before the open on their release days. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the guides for the current fiscal year (each field from the latest guide that states it) and the latest declared dividend (else the vintage's). Lockheed Martin's fiscal year is the calendar year. EPS is diluted EPS (from continuing operations where reported), each year from the latest 10-K that reports it; FY2002 is excluded (unusual items larger than its earnings, no per-share figure excluding them), so the history and the P/E window start with FY2003 ('pe_window_start'). A print's growth and margins are derived from the raw figures of its release ('raw', $ millions; the builder re-derives and checks them), each against the year-ago quarter as the same release shows it; backlog against the year-ago quarter's end as that quarter's own release shows it ('backlog_prior_source'). Guides: the fiscal-year outlook table's 'Current Update' column (net sales and diluted EPS ranges; segment operating profit and cash from operations are display only: no margin is derived from two guided figures), and the third-quarter release's preliminary outlook for the next year. Rule T's raw figures are in 'rule_t'.",
+ "ticker": "LMT",
+ "sources": {
+  "LM1": {
+   "published": "1999-03-22",
+   "filed": "1999-03-22 (EDGAR gives the filing date only)",
+   "title": "Lockheed Martin FY1998 10-K (plain text)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000092838599000878/0000928385-99-000878.txt",
+   "supports": "negotiated backlog '96 $50,406M, '97 $47,059M, '98 $45,345M (chart)"
+  },
+  "LM2": {
+   "published": "2000-03-09",
+   "filed": "2000-03-09 (EDGAR gives the filing date only)",
+   "title": "Lockheed Martin FY1999 10-K (plain text)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000092838500000644/0000928385-00-000644.txt",
+   "supports": "negotiated backlog '97 $47,059M, '98 $45,345M, '99 $45,913M (chart)"
+  },
+  "LM3": {
+   "published": "2001-03-09",
+   "filed": "2001-03-09 (EDGAR gives the filing date only)",
+   "title": "Lockheed Martin FY2000 10-K (plain text)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000092838501000795/0000928385-01-000795.txt",
+   "supports": "net sales 2000-1996 $25,329M, $25,530M, $26,266M, $28,069M, $26,875M (five-year summary); negotiated backlog 2000 $56,424M, 1999 $45,913M, 1998 $45,345M"
+  },
+  "LM4": {
+   "published": "2002-03-07",
+   "filed": "2002-03-07 (EDGAR gives the filing date only)",
+   "title": "Lockheed Martin FY2001 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000092838502000673/d10k.txt",
+   "supports": "net sales 2001-1997 $23,990M, $24,541M, $24,999M, $25,809M, $27,764M (five-year summary)"
+  },
+  "LM5": {
+   "published": "2003-03-07",
+   "filed": "2003-03-06 17:02 ET, after the close (dated the next trading day)",
+   "title": "Lockheed Martin FY2002 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000092838503000487/d10k.htm",
+   "supports": "net sales 2002-1998 (five-year summary); total business segments operating profit 2002-2000 $2,020M, $1,709M, $1,712M on net sales $26,578M, $23,990M, $24,541M; 2002 unusual items ($632M after tax, $1.40 per diluted share) against $533M of earnings from continuing operations"
+  },
+  "LM6": {
+   "published": "2004-03-08",
+   "filed": "2004-03-05 19:57 ET, after the close (dated the next trading day)",
+   "title": "Lockheed Martin FY2003 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312504035751/d10k.htm",
+   "supports": "net sales and negotiated backlog 2003-1999 (five-year summary); total business segments operating profit 2003-2001 $2,468M, $2,020M, $1,709M"
+  },
+  "LM7": {
+   "published": "2005-03-01",
+   "filed": "2005-02-28 17:24 ET, after the close (dated the next trading day)",
+   "title": "Lockheed Martin FY2004 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312505038829/d10k.htm",
+   "supports": "net sales and negotiated backlog 2004-2000 (five-year summary); total business segments operating profit 2004-2002 $2,976M, $2,468M, $2,020M"
+  },
+  "LM8": {
+   "published": "2006-02-28",
+   "filed": "2006-02-28 13:22 ET, during the session",
+   "title": "Lockheed Martin FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312506040986/d10k.htm",
+   "supports": "net sales and negotiated backlog 2005-2001 (five-year summary); total business segments operating profit 2005-2003 $3,432M, $2,976M, $2,468M; average diluted shares 2005-2003 445.7M, 447.1M, 450.0M"
+  },
+  "LM9": {
+   "published": "2007-02-27",
+   "filed": "2007-02-26 17:21 ET, after the close (dated the next trading day)",
+   "title": "Lockheed Martin FY2006 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312507039899/d10k.htm",
+   "supports": "five-year summary 2006-2002 (net sales $39,620M, $37,213M, $35,526M, $31,824M, $26,578M; diluted EPS from continuing operations $5.80, $4.10, $2.83, $2.34, $1.18; negotiated backlog $75,905M, $74,825M, $73,986M, $76,899M, $70,385M); total business segments operating profit 2006-2004 $4,048M, $3,432M, $2,976M; average diluted shares 436.4M, 445.7M, 447.1M; Items 1 and 1A"
+  },
+  "LM10": {
+   "published": "2006-01-26",
+   "filed": "2006-01-26 06:39 ET, before the open",
+   "title": "Lockheed Martin Q4 2005 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312506012292/dex99.htm",
+   "supports": "total backlog $74,825M at December 31, 2005 (Operating Data)"
+  },
+  "LM11": {
+   "published": "2006-04-25",
+   "filed": "2006-04-25 07:34 ET, before the open",
+   "title": "Lockheed Martin Q1 2006 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312506087272/dex99.htm",
+   "supports": "total backlog $75,437M at March 31, 2006 (Operating Data)"
+  },
+  "LM12": {
+   "published": "2006-07-25",
+   "filed": "2006-07-25 07:39 ET, before the open",
+   "title": "Lockheed Martin Q2 2006 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312506152172/dex99.htm",
+   "supports": "total backlog $73,680M at June 30, 2006 (Operating Data)"
+  },
+  "LM13": {
+   "published": "2006-10-24",
+   "filed": "2006-10-24 07:40 ET, before the open",
+   "title": "Lockheed Martin Q3 2006 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312506213328/dex991.htm",
+   "supports": "total backlog $77,923M at September 30, 2006 (Operating Data)"
+  },
+  "LM14": {
+   "published": "2007-01-25",
+   "filed": "2007-01-25 06:38 ET, before the open",
+   "title": "Lockheed Martin Q4 2006 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312507012335/dex99.htm",
+   "supports": "Q4 2006: net sales $10,840M vs $10,229M, segment operating profit $1,166M vs $949M, diluted EPS $1.68 vs $1.29, total backlog $75,905M, average diluted shares 432.8M; FY2007 outlook net sales $40.25-41.25B, diluted EPS $5.80-6.00"
+  },
+  "LM15": {
+   "published": "2007-04-24",
+   "filed": "2007-04-24 07:20 ET, before the open",
+   "title": "Lockheed Martin Q1 2007 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312507088194/dex99.htm",
+   "supports": "Q1 2007: net sales $9,275M vs $9,214M, segment operating profit $1,003M vs $931M, diluted EPS $1.60 vs $1.34, total backlog $74,700M, average diluted shares 432.1M; FY2007 outlook net sales $40.35-41.35B, diluted EPS $6.20-6.35"
+  },
+  "LM16": {
+   "published": "2007-07-24",
+   "filed": "2007-07-24 07:33 ET, before the open",
+   "title": "Lockheed Martin Q2 2007 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312507160269/dex99.htm",
+   "supports": "Q2 2007: net sales $10,651M vs $9,961M, segment operating profit $1,214M vs $976M, diluted EPS $1.82 vs $1.34, total backlog $70,700M, average diluted shares 426.5M; FY2007 outlook net sales $41-41.75B, diluted EPS $6.65-6.80"
+  },
+  "LM17": {
+   "published": "2007-10-23",
+   "filed": "2007-10-23 07:42 ET, before the open",
+   "title": "Lockheed Martin Q3 2007 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312507223289/dex99.htm",
+   "supports": "Q3 2007: net sales $11,095M vs $9,605M, segment operating profit $1,232M vs $975M, diluted EPS $1.80 vs $1.46, total backlog $72,700M, average diluted shares 424.5M; FY2007 outlook net sales $41-41.75B, diluted EPS $6.70-6.85; FY2008 outlook net sales $41.25-42.75B, diluted EPS $6.95-7.15 (preliminary)"
+  },
+  "LM18": {
+   "published": "2008-02-29",
+   "filed": "2008-02-28 16:21 ET, after the close (dated the next trading day)",
+   "title": "Lockheed Martin FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312508041793/d10k.htm",
+   "supports": "five-year summary 2007-2003 (net sales, diluted EPS $7.10, $5.80, $4.10, $2.83, $2.34, negotiated backlog $76,660M and $75,905M); total business segments operating profit 2007-2005 $4,691M, $4,031M, $3,421M; average diluted shares 427.1M, 436.4M, 445.7M; Items 1 and 1A"
+  },
+  "LM19": {
+   "published": "2008-01-24",
+   "filed": "2008-01-24 06:35 ET, before the open",
+   "title": "Lockheed Martin Q4 2007 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312508010954/dex991.htm",
+   "supports": "Q4 2007: net sales $10,841M vs $10,840M, segment operating profit $1,256M vs $1,161M, diluted EPS $1.89 vs $1.68, total backlog $76,700M, average diluted shares 423.4M; FY2008 outlook net sales $41.8-42.8B, diluted EPS $7.05-7.25"
+  },
+  "LM20": {
+   "published": "2008-04-22",
+   "filed": "2008-04-22 07:39 ET, before the open",
+   "title": "Lockheed Martin Q1 2008 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420408023530/v111138_ex99-1.htm",
+   "supports": "Q1 2008: net sales $9,983M vs $9,275M, segment operating profit $1,150M vs $999M, diluted EPS $1.75 vs $1.60, total backlog $74,700M, average diluted shares 416.8M; FY2008 outlook net sales $41.8-42.8B, diluted EPS $7.15-7.35"
+  },
+  "LM21": {
+   "published": "2008-07-22",
+   "filed": "2008-07-22 07:35 ET, before the open",
+   "title": "Lockheed Martin Q2 2008 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420408041033/v120214_ex99-1.htm",
+   "supports": "Q2 2008: net sales $11,039M vs $10,651M, segment operating profit $1,315M vs $1,210M, diluted EPS $2.15 vs $1.82, total backlog $74,500M, average diluted shares 409.5M; FY2008 outlook net sales $41.9-42.9B, diluted EPS $7.45-7.60"
+  },
+  "LM22": {
+   "published": "2008-10-21",
+   "filed": "2008-10-21 07:35 ET, before the open",
+   "title": "Lockheed Martin Q3 2008 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420408058541/v129088_ex99-1.htm",
+   "supports": "Q3 2008: net sales $10,577M vs $11,095M, segment operating profit $1,250M vs $1,226M, diluted EPS $1.92 vs $1.80, total backlog $76,000M, average diluted shares 407.1M; FY2008 outlook net sales $41.9-42.9B, diluted EPS $7.55-7.70; FY2009 outlook net sales $44.25-45.25B, diluted EPS $7.65-7.90 (preliminary)"
+  },
+  "LM23": {
+   "published": "2009-02-26",
+   "filed": "2009-02-26 13:09 ET, during the session",
+   "title": "Lockheed Martin FY2008 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312509038670/d10k.htm",
+   "supports": "five-year summary 2008-2004 (net sales, diluted EPS $7.86, $7.10, $5.80, $4.10, $2.83, negotiated backlog $80,914M and $76,660M); total business segments operating profit 2008-2006 $4,970M, $4,691M, $4,031M; average diluted shares 409.4M, 427.1M, 436.4M; Items 1 and 1A"
+  },
+  "LM24": {
+   "published": "2009-01-22",
+   "filed": "2009-01-22 06:40 ET, before the open",
+   "title": "Lockheed Martin Q4 2008 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420409002887/v137488_ex99-1.htm",
+   "supports": "Q4 2008: net sales $11,132M vs $10,841M, segment operating profit $1,255M vs $1,256M, diluted EPS $2.05 vs $1.89, total backlog $80,900M, average diluted shares 400.7M; FY2009 outlook net sales $44.7-45.7B, diluted EPS $7.05-7.25"
+  },
+  "LM25": {
+   "published": "2009-04-21",
+   "filed": "2009-04-21 07:33 ET, before the open",
+   "title": "Lockheed Martin Q1 2009 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420409021550/v146634_ex99.htm",
+   "supports": "Q1 2009: net sales $10,373M vs $9,983M, segment operating profit $1,199M vs $1,150M, diluted EPS $1.68 vs $1.75, total backlog $80,800M, average diluted shares 397.5M; FY2009 outlook net sales $44.7-45.7B, diluted EPS $7.15-7.35"
+  },
+  "LM26": {
+   "published": "2009-07-21",
+   "filed": "2009-07-21 07:34 ET, before the open",
+   "title": "Lockheed Martin Q2 2009 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420409038026/v154988_ex99.htm",
+   "supports": "Q2 2009: net sales $11,236M vs $11,039M, segment operating profit $1,277M vs $1,315M, diluted EPS $1.88 vs $2.15, total backlog $79,200M, average diluted shares 390.9M; FY2009 outlook net sales $44.7-45.7B, diluted EPS $7.15-7.35"
+  },
+  "LM27": {
+   "published": "2009-10-20",
+   "filed": "2009-10-20 07:36 ET, before the open",
+   "title": "Lockheed Martin Q3 2009 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420409053660/v163069_ex99-1.htm",
+   "supports": "Q3 2009: net sales $11,056M vs $10,577M, segment operating profit $1,266M vs $1,250M, diluted EPS $2.07 vs $1.92, total backlog $76,400M, average diluted shares 385.5M; FY2009 outlook net sales $44.7-45.7B, diluted EPS $7.40-7.60; FY2010 outlook net sales $46.25-47.25B, diluted EPS $7.05-7.25 (preliminary)"
+  }
+ },
+ "history_vintages": [
+  {
+   "published": "2007-02-27",
+   "sources": [
+    "LM9",
+    "LM8"
+   ],
+   "company": "Lockheed Martin Corporation",
+   "exchange": "NYSE",
+   "fy_label": "FY06",
+   "why": "'In 2006, 84% of our net sales were made to the U.S. Government, either as a prime contractor or as a subcontractor.' (FY2006 10-K, Item 1); 'Reduced funding for defense procurement and research and development programs could adversely affect our ability to grow or maintain our sales and profitability.' (Item 1A): sales that depend on Congressional appropriations are not earnings that are the cycle, so DURABLE (the CAT and SO precedent); OFFSHORE (live from 2004-11-05) is scoped to offshore delivery taking share in Western consulting, systems integration and outsourcing, and the 10-K names no offshore competition, so no disruption theme in scope is live",
+   "fiscal_year_ends": {
+    "1997": "1997-12-31",
+    "1998": "1998-12-31",
+    "1999": "1999-12-31",
+    "2000": "2000-12-31",
+    "2001": "2001-12-31",
+    "2002": "2002-12-31",
+    "2003": "2003-12-31",
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31"
+   },
+   "eps_normalized": {
+    "2003": 2.34,
+    "2004": 2.83,
+    "2005": 4.1,
+    "2006": 5.8
+   },
+   "eps_sources": {
+    "2003": "LM9",
+    "2004": "LM9",
+    "2005": "LM9",
+    "2006": "LM9"
+   },
+   "normalization": "diluted EPS (from continuing operations where the five-year summary reports the line), each year from the latest 10-K that reports it; no filing publishes a figure excluding the unusual items for 2003-2008, whose per-share effects stay in (the NKE FY2008 rule: 2003 -$0.22 with the debt-repayment charge, 2004 -$0.02, 2005 +$0.25, 2006 +$0.45, 2007 +$0.25, 2008 +$0.31), none of them more than half the year's earnings; FY02 excluded: $1.18 diluted EPS from continuing operations (FY2006 10-K), depressed by unusual items that 'decreased earnings from continuing operations before income taxes by $1,112 million, $632 million after tax ($1.40 per diluted share)' (FY2002 10-K), more than the year's $533M of earnings from continuing operations; no per-share figure excluding them was published (the FY2002 10-K's 'would have been $1.2 billion in 2002' is in dollars only: nothing is derived, the XOM 1997 rule), so the history and the P/E window start with FY03 (the ACN FY02 and AAPL FY2002 rule)",
+   "revenue_usd_b": {
+    "2003": 31.824,
+    "2004": 35.526,
+    "2005": 37.213,
+    "2006": 39.62
+   },
+   "revenue_sources": {
+    "2003": "LM9",
+    "2004": "LM9",
+    "2005": "LM9",
+    "2006": "LM9"
+   },
+   "diluted_shares_m": {
+    "2003": 450.0,
+    "2004": 447.1,
+    "2005": 445.7,
+    "2006": 436.4
+   },
+   "shares_sources": {
+    "2003": "LM8",
+    "2004": "LM9",
+    "2005": "LM9",
+    "2006": "LM9"
+   },
+   "pe_window_start": "2003-01-01",
+   "margin_signal_name": "Segment operating margin change",
+   "prev_fy_op_margin": 10.22,
+   "prev_fy_op_margin_note": "segment operating profit $4,048M / net sales $39,620M (FY2006 10-K)",
+   "prev_fy_pretax_margin": 9.07,
+   "prev_fy_pretax_margin_note": "earnings before income taxes $3,592M / net sales $39,620M (FY2006 10-K)",
+   "prev_fy_sales_growth": 6.5,
+   "prev_fy_backlog_pct": 1.4,
+   "prev_fy_segop_pct": 17.9,
+   "tax_rate": 0.2959,
+   "tax_note": "income tax expense $1,063M / earnings before income taxes $3,592M (FY2006 10-K)",
+   "cash_b": 2.293,
+   "cash_label": "FY06",
+   "cash_note": "cash and cash equivalents $1,912M and short-term investments $381M at December 31, 2006 (FY2006 10-K)",
+   "ocf_b": 3.783,
+   "ocf_note": "cash provided by operating activities $3,783M in 2006 (FY2006 10-K)",
+   "dividend_annual": 1.25,
+   "dividend_note": "cash dividends $1.25 per share in 2006 (FY2006 10-K)",
+   "cash_return_text": "repurchases of common stock $2,115M in 2006 (FY2006 10-K)",
+   "business_line": "advanced technology systems, products and services, principally for agencies of the U.S. Government",
+   "groups": [
+    [
+     "Aeronautics",
+     11.401,
+     -2.3
+    ],
+    [
+     "Electronic Systems",
+     11.304,
+     6.8
+    ],
+    [
+     "Space Systems",
+     7.923,
+     16.2
+    ],
+    [
+     "Information Technology & Global Services",
+     4.605,
+     14.8
+    ],
+    [
+     "Integrated Systems & Solutions",
+     4.387,
+     6.2
+    ]
+   ],
+   "groups_basis": "FY06 net sales by business segment (FY2006 10-K, Selected Financial Data by Business Segment)"
+  },
+  {
+   "published": "2008-02-29",
+   "sources": [
+    "LM18",
+    "LM8",
+    "LM9"
+   ],
+   "company": "Lockheed Martin Corporation",
+   "exchange": "NYSE",
+   "fy_label": "FY07",
+   "why": "'In 2007, 84% of our net sales were made to the U.S. Government, either as a prime contractor or as a subcontractor.' (FY2007 10-K, Item 1); 'Reduced funding for defense procurement and research and development programs could result in terminated or delayed contracts and adversely affect our ability to grow or maintain our sales and profitability.' (Item 1A): sales that depend on Congressional appropriations are not earnings that are the cycle, so DURABLE (the CAT and SO precedent); OFFSHORE (live from 2004-11-05) is scoped to offshore delivery taking share in Western consulting, systems integration and outsourcing, and the 10-K names no offshore competition, so no disruption theme in scope is live",
+   "fiscal_year_ends": {
+    "1998": "1998-12-31",
+    "1999": "1999-12-31",
+    "2000": "2000-12-31",
+    "2001": "2001-12-31",
+    "2002": "2002-12-31",
+    "2003": "2003-12-31",
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31",
+    "2007": "2007-12-31"
+   },
+   "eps_normalized": {
+    "2003": 2.34,
+    "2004": 2.83,
+    "2005": 4.1,
+    "2006": 5.8,
+    "2007": 7.1
+   },
+   "eps_sources": {
+    "2003": "LM18",
+    "2004": "LM18",
+    "2005": "LM18",
+    "2006": "LM18",
+    "2007": "LM18"
+   },
+   "normalization": "diluted EPS (from continuing operations where the five-year summary reports the line), each year from the latest 10-K that reports it; no filing publishes a figure excluding the unusual items for 2003-2008, whose per-share effects stay in (the NKE FY2008 rule: 2003 -$0.22 with the debt-repayment charge, 2004 -$0.02, 2005 +$0.25, 2006 +$0.45, 2007 +$0.25, 2008 +$0.31), none of them more than half the year's earnings; FY02 excluded: $1.18 diluted EPS from continuing operations (FY2006 10-K), depressed by unusual items that 'decreased earnings from continuing operations before income taxes by $1,112 million, $632 million after tax ($1.40 per diluted share)' (FY2002 10-K), more than the year's $533M of earnings from continuing operations; no per-share figure excluding them was published (the FY2002 10-K's 'would have been $1.2 billion in 2002' is in dollars only: nothing is derived, the XOM 1997 rule), so the history and the P/E window start with FY03 (the ACN FY02 and AAPL FY2002 rule)",
+   "revenue_usd_b": {
+    "2003": 31.824,
+    "2004": 35.526,
+    "2005": 37.213,
+    "2006": 39.62,
+    "2007": 41.862
+   },
+   "revenue_sources": {
+    "2003": "LM18",
+    "2004": "LM18",
+    "2005": "LM18",
+    "2006": "LM18",
+    "2007": "LM18"
+   },
+   "diluted_shares_m": {
+    "2003": 450.0,
+    "2004": 447.1,
+    "2005": 445.7,
+    "2006": 436.4,
+    "2007": 427.1
+   },
+   "shares_sources": {
+    "2003": "LM8",
+    "2004": "LM9",
+    "2005": "LM18",
+    "2006": "LM18",
+    "2007": "LM18"
+   },
+   "pe_window_start": "2003-01-01",
+   "margin_signal_name": "Segment operating margin change",
+   "prev_fy_op_margin": 11.21,
+   "prev_fy_op_margin_note": "segment operating profit $4,691M / net sales $41,862M (FY2007 10-K)",
+   "prev_fy_pretax_margin": 10.43,
+   "prev_fy_pretax_margin_note": "earnings before income taxes $4,368M / net sales $41,862M (FY2007 10-K)",
+   "prev_fy_sales_growth": 5.7,
+   "prev_fy_backlog_pct": 1.0,
+   "prev_fy_segop_pct": 16.4,
+   "tax_rate": 0.3056,
+   "tax_note": "income tax expense $1,335M / earnings before income taxes $4,368M (FY2007 10-K)",
+   "cash_b": 2.981,
+   "cash_label": "FY07",
+   "cash_note": "cash and cash equivalents $2,648M and short-term investments $333M at December 31, 2007 (FY2007 10-K)",
+   "ocf_b": 4.241,
+   "ocf_note": "cash provided by operating activities $4,241M in 2007 (FY2007 10-K)",
+   "dividend_annual": 1.47,
+   "dividend_note": "cash dividends $1.47 per share in 2007 (FY2007 10-K)",
+   "cash_return_text": "repurchases of common stock $2,127M in 2007 (FY2007 10-K)",
+   "business_line": "advanced technology systems, products and services, principally for agencies of the U.S. Government",
+   "groups": [
+    [
+     "Aeronautics",
+     12.303,
+     0.9
+    ],
+    [
+     "Electronic Systems",
+     11.143,
+     5.9
+    ],
+    [
+     "Information Systems & Global Services",
+     10.213,
+     13.6
+    ],
+    [
+     "Space Systems",
+     8.203,
+     3.5
+    ]
+   ],
+   "groups_basis": "FY07 net sales by business segment (FY2007 10-K, Selected Financial Data by Business Segment)"
+  },
+  {
+   "published": "2009-02-26",
+   "sources": [
+    "LM23",
+    "LM18",
+    "LM8",
+    "LM9"
+   ],
+   "company": "Lockheed Martin Corporation",
+   "exchange": "NYSE",
+   "fy_label": "FY08",
+   "why": "'In 2008, 84% of our net sales were made to the U.S. Government, either as a prime contractor or as a subcontractor. Each of our business segments is heavily dependent on sales to the U.S. Government.' (FY2008 10-K, Item 1); 'Reduced funding for defense procurement and research and development programs could result in terminated or delayed contracts and adversely affect our ability to grow or maintain our sales and profitability.' (Item 1A): sales that depend on Congressional appropriations are not earnings that are the cycle, so DURABLE (the CAT and SO precedent); OFFSHORE (live from 2004-11-05) is scoped to offshore delivery taking share in Western consulting, systems integration and outsourcing, and the 10-K names no offshore competition, so no disruption theme in scope is live",
+   "fiscal_year_ends": {
+    "1999": "1999-12-31",
+    "2000": "2000-12-31",
+    "2001": "2001-12-31",
+    "2002": "2002-12-31",
+    "2003": "2003-12-31",
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31",
+    "2007": "2007-12-31",
+    "2008": "2008-12-31"
+   },
+   "eps_normalized": {
+    "2003": 2.34,
+    "2004": 2.83,
+    "2005": 4.1,
+    "2006": 5.8,
+    "2007": 7.1,
+    "2008": 7.86
+   },
+   "eps_sources": {
+    "2003": "LM18",
+    "2004": "LM23",
+    "2005": "LM23",
+    "2006": "LM23",
+    "2007": "LM23",
+    "2008": "LM23"
+   },
+   "normalization": "diluted EPS (from continuing operations where the five-year summary reports the line), each year from the latest 10-K that reports it; no filing publishes a figure excluding the unusual items for 2003-2008, whose per-share effects stay in (the NKE FY2008 rule: 2003 -$0.22 with the debt-repayment charge, 2004 -$0.02, 2005 +$0.25, 2006 +$0.45, 2007 +$0.25, 2008 +$0.31), none of them more than half the year's earnings; FY02 excluded: $1.18 diluted EPS from continuing operations (FY2006 10-K), depressed by unusual items that 'decreased earnings from continuing operations before income taxes by $1,112 million, $632 million after tax ($1.40 per diluted share)' (FY2002 10-K), more than the year's $533M of earnings from continuing operations; no per-share figure excluding them was published (the FY2002 10-K's 'would have been $1.2 billion in 2002' is in dollars only: nothing is derived, the XOM 1997 rule), so the history and the P/E window start with FY03 (the ACN FY02 and AAPL FY2002 rule)",
+   "revenue_usd_b": {
+    "2003": 31.824,
+    "2004": 35.526,
+    "2005": 37.213,
+    "2006": 39.62,
+    "2007": 41.862,
+    "2008": 42.731
+   },
+   "revenue_sources": {
+    "2003": "LM18",
+    "2004": "LM23",
+    "2005": "LM23",
+    "2006": "LM23",
+    "2007": "LM23",
+    "2008": "LM23"
+   },
+   "diluted_shares_m": {
+    "2003": 450.0,
+    "2004": 447.1,
+    "2005": 445.7,
+    "2006": 436.4,
+    "2007": 427.1,
+    "2008": 409.4
+   },
+   "shares_sources": {
+    "2003": "LM8",
+    "2004": "LM9",
+    "2005": "LM18",
+    "2006": "LM23",
+    "2007": "LM23",
+    "2008": "LM23"
+   },
+   "pe_window_start": "2003-01-01",
+   "margin_signal_name": "Segment operating margin change",
+   "prev_fy_op_margin": 11.63,
+   "prev_fy_op_margin_note": "segment operating profit $4,970M / net sales $42,731M (FY2008 10-K)",
+   "prev_fy_pretax_margin": 11.0,
+   "prev_fy_pretax_margin_note": "earnings before income taxes $4,702M / net sales $42,731M (FY2008 10-K)",
+   "prev_fy_sales_growth": 2.1,
+   "prev_fy_backlog_pct": 5.5,
+   "prev_fy_segop_pct": 5.9,
+   "tax_rate": 0.3158,
+   "tax_note": "income tax expense $1,485M / earnings before income taxes $4,702M (FY2008 10-K)",
+   "cash_b": 2.229,
+   "cash_label": "FY08",
+   "cash_note": "cash and cash equivalents $2,168M and short-term investments $61M at December 31, 2008 (FY2008 10-K)",
+   "ocf_b": 4.421,
+   "ocf_note": "cash provided by operating activities $4,421M in 2008 (FY2008 10-K)",
+   "dividend_annual": 1.83,
+   "dividend_note": "cash dividends $1.83 per share in 2008 (FY2008 10-K)",
+   "cash_return_text": "repurchases of common stock $2,931M in 2008 (FY2008 10-K)",
+   "business_line": "advanced technology systems, products and services, principally for agencies of the U.S. Government",
+   "groups": [
+    [
+     "Electronic Systems",
+     11.62,
+     4.3
+    ],
+    [
+     "Information Systems & Global Services",
+     11.611,
+     13.7
+    ],
+    [
+     "Aeronautics",
+     11.473,
+     -6.7
+    ],
+    [
+     "Space Systems",
+     8.027,
+     -2.1
+    ]
+   ],
+   "groups_basis": "FY08 net sales by business segment (FY2008 10-K, Selected Financial Data by Business Segment)"
+  }
+ ],
+ "prints": [
+  {
+   "quarter": "Q4 2006",
+   "fy": 2006,
+   "q": 4,
+   "published": "2007-01-25",
+   "source": "LM14",
+   "release": "Jan 25",
+   "release_time": "before the open on Jan 25: 8-K accepted 06:38 ET",
+   "period_end": "2006-12-31",
+   "raw": {
+    "rev_m": 10840.0,
+    "rev_prior_m": 10229.0,
+    "segop_m": 1166.0,
+    "segop_prior_m": 949.0,
+    "backlog_m": 75905.0,
+    "backlog_prior_m": 74825.0,
+    "diluted_shares_m": 432.8
+   },
+   "backlog_prior_source": "LM10",
+   "backlog_prior_label": "December 31, 2005 (Q4 2005 release)",
+   "sales_b": 10.84,
+   "sales_pct": 6.0,
+   "backlog_pct": 1.4,
+   "segop_pct": 22.9,
+   "seg_margin": 10.76,
+   "seg_margin_bp": 147.9,
+   "eps_q": 1.68,
+   "eps_q_prior": 1.29,
+   "eps_pct": 30.2,
+   "diluted_shares_m": 432.8,
+   "cash_return_text": "Repurchased 2.3 million shares at a cost of $197 million in the quarter and 27.6 million shares at a cost of $2.1 billion for the year",
+   "next_print": "Q1 2007 print (late April)",
+   "fy_actual": {
+    "fy": 2006,
+    "fy_label": "FY06",
+    "eps_normalized": 5.8,
+    "revenue_usd_b": 39.62,
+    "diluted_shares_m": 436.4,
+    "normalization_note": "FY2006 $5.80, diluted EPS as reported (Q4 2006 release; its unusual items' per-share effects stay in)",
+    "op_margin": 10.22,
+    "pretax_margin": 9.07,
+    "pretax_margin_note": "FY06 earnings before income taxes $3,592M / net sales $39,620M (LM14)",
+    "sales_growth": 6.5,
+    "backlog_pct": 1.4,
+    "segop_pct": 17.9,
+    "tax_rate": 0.2959,
+    "tax_note": "FY06 income tax expense $1,063M / earnings before income taxes $3,592M"
+   }
+  },
+  {
+   "quarter": "Q1 2007",
+   "fy": 2007,
+   "q": 1,
+   "published": "2007-04-24",
+   "source": "LM15",
+   "release": "Apr 24",
+   "release_time": "before the open on Apr 24: 8-K accepted 07:20 ET",
+   "period_end": "2007-03-31",
+   "raw": {
+    "rev_m": 9275.0,
+    "rev_prior_m": 9214.0,
+    "segop_m": 1003.0,
+    "segop_prior_m": 931.0,
+    "backlog_m": 74700.0,
+    "backlog_prior_m": 75437.0,
+    "diluted_shares_m": 432.1
+   },
+   "backlog_prior_source": "LM11",
+   "backlog_prior_label": "March 31, 2006 (Q1 2006 release)",
+   "sales_b": 9.275,
+   "sales_pct": 0.7,
+   "backlog_pct": -1.0,
+   "segop_pct": 7.7,
+   "seg_margin": 10.81,
+   "seg_margin_bp": 71.0,
+   "eps_q": 1.6,
+   "eps_q_prior": 1.34,
+   "eps_pct": 19.4,
+   "diluted_shares_m": 432.1,
+   "cash_return_text": "Repurchased 7.6 million shares at a cost of $739 million",
+   "next_print": "Q2 2007 print (late July)"
+  },
+  {
+   "quarter": "Q2 2007",
+   "fy": 2007,
+   "q": 2,
+   "published": "2007-07-24",
+   "source": "LM16",
+   "release": "Jul 24",
+   "release_time": "before the open on Jul 24: 8-K accepted 07:33 ET",
+   "period_end": "2007-06-30",
+   "raw": {
+    "rev_m": 10651.0,
+    "rev_prior_m": 9961.0,
+    "segop_m": 1214.0,
+    "segop_prior_m": 976.0,
+    "backlog_m": 70700.0,
+    "backlog_prior_m": 73680.0,
+    "diluted_shares_m": 426.5
+   },
+   "backlog_prior_source": "LM12",
+   "backlog_prior_label": "June 30, 2006 (Q2 2006 release)",
+   "sales_b": 10.651,
+   "sales_pct": 6.9,
+   "backlog_pct": -4.0,
+   "segop_pct": 24.4,
+   "seg_margin": 11.4,
+   "seg_margin_bp": 160.0,
+   "eps_q": 1.82,
+   "eps_q_prior": 1.34,
+   "eps_pct": 35.8,
+   "diluted_shares_m": 426.5,
+   "cash_return_text": "Repurchased 6.8 million shares at a cost of $655 million in the quarter and 14.4 million shares at a cost of $1.4 billion for the year-to-date period",
+   "next_print": "Q3 2007 print (late October)"
+  },
+  {
+   "quarter": "Q3 2007",
+   "fy": 2007,
+   "q": 3,
+   "published": "2007-10-23",
+   "source": "LM17",
+   "release": "Oct 23",
+   "release_time": "before the open on Oct 23: 8-K accepted 07:42 ET",
+   "period_end": "2007-09-30",
+   "raw": {
+    "rev_m": 11095.0,
+    "rev_prior_m": 9605.0,
+    "segop_m": 1232.0,
+    "segop_prior_m": 975.0,
+    "backlog_m": 72700.0,
+    "backlog_prior_m": 77923.0,
+    "diluted_shares_m": 424.5
+   },
+   "backlog_prior_source": "LM13",
+   "backlog_prior_label": "September 30, 2006 (Q3 2006 release)",
+   "sales_b": 11.095,
+   "sales_pct": 15.5,
+   "backlog_pct": -6.7,
+   "segop_pct": 26.4,
+   "seg_margin": 11.1,
+   "seg_margin_bp": 95.3,
+   "eps_q": 1.8,
+   "eps_q_prior": 1.46,
+   "eps_pct": 23.3,
+   "diluted_shares_m": 424.5,
+   "cash_return_text": "Repurchased 4.2 million shares at a cost of $411 million in the quarter and 18.6 million shares at a cost of $1.8 billion in the nine month period",
+   "next_print": "Q4 2007 print (late January)"
+  },
+  {
+   "quarter": "Q4 2007",
+   "fy": 2007,
+   "q": 4,
+   "published": "2008-01-24",
+   "source": "LM19",
+   "release": "Jan 24",
+   "release_time": "before the open on Jan 24: 8-K accepted 06:35 ET",
+   "period_end": "2007-12-31",
+   "raw": {
+    "rev_m": 10841.0,
+    "rev_prior_m": 10840.0,
+    "segop_m": 1256.0,
+    "segop_prior_m": 1161.0,
+    "backlog_m": 76700.0,
+    "backlog_prior_m": 75905.0,
+    "diluted_shares_m": 423.4
+   },
+   "backlog_prior_source": "LM14",
+   "backlog_prior_label": "December 31, 2006 (Q4 2006 release)",
+   "sales_b": 10.841,
+   "sales_pct": 0.0,
+   "backlog_pct": 1.0,
+   "segop_pct": 8.2,
+   "seg_margin": 11.59,
+   "seg_margin_bp": 87.5,
+   "eps_q": 1.89,
+   "eps_q_prior": 1.68,
+   "eps_pct": 12.5,
+   "diluted_shares_m": 423.4,
+   "cash_return_text": "Repurchased 3.0 million shares at a cost of $322 million in the quarter and 21.6 million shares at a cost of $2.1 billion in the year",
+   "next_print": "Q1 2008 print (late April)",
+   "fy_actual": {
+    "fy": 2007,
+    "fy_label": "FY07",
+    "eps_normalized": 7.1,
+    "revenue_usd_b": 41.862,
+    "diluted_shares_m": 427.1,
+    "normalization_note": "FY2007 $7.10, diluted EPS as reported (Q4 2007 release; its unusual items' per-share effects stay in)",
+    "op_margin": 11.21,
+    "pretax_margin": 10.43,
+    "pretax_margin_note": "FY07 earnings before income taxes $4,368M / net sales $41,862M (LM19)",
+    "sales_growth": 5.7,
+    "backlog_pct": 1.0,
+    "segop_pct": 16.4,
+    "tax_rate": 0.3056,
+    "tax_note": "FY07 income tax expense $1,335M / earnings before income taxes $4,368M"
+   }
+  },
+  {
+   "quarter": "Q1 2008",
+   "fy": 2008,
+   "q": 1,
+   "published": "2008-04-22",
+   "source": "LM20",
+   "release": "Apr 22",
+   "release_time": "before the open on Apr 22: 8-K accepted 07:39 ET",
+   "period_end": "2008-03-30",
+   "raw": {
+    "rev_m": 9983.0,
+    "rev_prior_m": 9275.0,
+    "segop_m": 1150.0,
+    "segop_prior_m": 999.0,
+    "backlog_m": 74700.0,
+    "backlog_prior_m": 74700.0,
+    "diluted_shares_m": 416.8
+   },
+   "backlog_prior_source": "LM15",
+   "backlog_prior_label": "March 31, 2007 (Q1 2007 release)",
+   "sales_b": 9.983,
+   "sales_pct": 7.6,
+   "backlog_pct": 0.0,
+   "segop_pct": 15.1,
+   "seg_margin": 11.52,
+   "seg_margin_bp": 74.9,
+   "eps_q": 1.75,
+   "eps_q_prior": 1.6,
+   "eps_pct": 9.4,
+   "diluted_shares_m": 416.8,
+   "cash_return_text": "Repurchased 11.3 million shares at a cost of $1.2 billion",
+   "next_print": "Q2 2008 print (late July)"
+  },
+  {
+   "quarter": "Q2 2008",
+   "fy": 2008,
+   "q": 2,
+   "published": "2008-07-22",
+   "source": "LM21",
+   "release": "Jul 22",
+   "release_time": "before the open on Jul 22: 8-K accepted 07:35 ET",
+   "period_end": "2008-06-29",
+   "raw": {
+    "rev_m": 11039.0,
+    "rev_prior_m": 10651.0,
+    "segop_m": 1315.0,
+    "segop_prior_m": 1210.0,
+    "backlog_m": 74500.0,
+    "backlog_prior_m": 70700.0,
+    "diluted_shares_m": 409.5
+   },
+   "backlog_prior_source": "LM16",
+   "backlog_prior_label": "June 30, 2007 (Q2 2007 release)",
+   "sales_b": 11.039,
+   "sales_pct": 3.6,
+   "backlog_pct": 5.4,
+   "segop_pct": 8.7,
+   "seg_margin": 11.91,
+   "seg_margin_bp": 55.2,
+   "eps_q": 2.15,
+   "eps_q_prior": 1.82,
+   "eps_pct": 18.1,
+   "diluted_shares_m": 409.5,
+   "cash_return_text": "Repurchased 7.3 million shares at a cost of $770 million in the quarter and 18.6 million shares at a cost of $2.0 billion for the year-to-date period",
+   "next_print": "Q3 2008 print (late October)"
+  },
+  {
+   "quarter": "Q3 2008",
+   "fy": 2008,
+   "q": 3,
+   "published": "2008-10-21",
+   "source": "LM22",
+   "release": "Oct 21",
+   "release_time": "before the open on Oct 21: 8-K accepted 07:35 ET",
+   "period_end": "2008-09-28",
+   "raw": {
+    "rev_m": 10577.0,
+    "rev_prior_m": 11095.0,
+    "segop_m": 1250.0,
+    "segop_prior_m": 1226.0,
+    "backlog_m": 76000.0,
+    "backlog_prior_m": 72700.0,
+    "diluted_shares_m": 407.1
+   },
+   "backlog_prior_source": "LM17",
+   "backlog_prior_label": "September 30, 2007 (Q3 2007 release)",
+   "sales_b": 10.577,
+   "sales_pct": -4.7,
+   "backlog_pct": 4.5,
+   "segop_pct": 2.0,
+   "seg_margin": 11.82,
+   "seg_margin_bp": 76.8,
+   "eps_q": 1.92,
+   "eps_q_prior": 1.8,
+   "eps_pct": 6.7,
+   "diluted_shares_m": 407.1,
+   "cash_return_text": "Repurchased 3.7 million shares at a cost of $401 million in the quarter and 22.3 million shares at a cost of $2.4 billion in the nine month period",
+   "next_print": "Q4 2008 print (late January)"
+  },
+  {
+   "quarter": "Q4 2008",
+   "fy": 2008,
+   "q": 4,
+   "published": "2009-01-22",
+   "source": "LM24",
+   "release": "Jan 22",
+   "release_time": "before the open on Jan 22: 8-K accepted 06:40 ET",
+   "period_end": "2008-12-31",
+   "raw": {
+    "rev_m": 11132.0,
+    "rev_prior_m": 10841.0,
+    "segop_m": 1255.0,
+    "segop_prior_m": 1256.0,
+    "backlog_m": 80900.0,
+    "backlog_prior_m": 76700.0,
+    "diluted_shares_m": 400.7
+   },
+   "backlog_prior_source": "LM19",
+   "backlog_prior_label": "December 31, 2007 (Q4 2007 release)",
+   "sales_b": 11.132,
+   "sales_pct": 2.7,
+   "backlog_pct": 5.5,
+   "segop_pct": -0.1,
+   "seg_margin": 11.27,
+   "seg_margin_bp": -31.2,
+   "eps_q": 2.05,
+   "eps_q_prior": 1.89,
+   "eps_pct": 8.5,
+   "diluted_shares_m": 400.7,
+   "cash_return_text": "Repurchasing 6.7 million shares at a cost of $575 million in the quarter and 29.0 million shares at a cost of $2.9 billion in the year",
+   "next_print": "Q1 2009 print (late April)",
+   "fy_actual": {
+    "fy": 2008,
+    "fy_label": "FY08",
+    "eps_normalized": 7.86,
+    "revenue_usd_b": 42.731,
+    "diluted_shares_m": 409.4,
+    "normalization_note": "FY2008 $7.86, diluted EPS as reported (Q4 2008 release; its unusual items' per-share effects stay in)",
+    "op_margin": 11.63,
+    "pretax_margin": 11.0,
+    "pretax_margin_note": "FY08 earnings before income taxes $4,702M / net sales $42,731M (LM24)",
+    "sales_growth": 2.1,
+    "backlog_pct": 5.5,
+    "segop_pct": 5.9,
+    "tax_rate": 0.3158,
+    "tax_note": "FY08 income tax expense $1,485M / earnings before income taxes $4,702M"
+   }
+  },
+  {
+   "quarter": "Q1 2009",
+   "fy": 2009,
+   "q": 1,
+   "published": "2009-04-21",
+   "source": "LM25",
+   "release": "Apr 21",
+   "release_time": "before the open on Apr 21: 8-K accepted 07:33 ET",
+   "period_end": "2009-03-29",
+   "raw": {
+    "rev_m": 10373.0,
+    "rev_prior_m": 9983.0,
+    "segop_m": 1199.0,
+    "segop_prior_m": 1150.0,
+    "backlog_m": 80800.0,
+    "backlog_prior_m": 74700.0,
+    "diluted_shares_m": 397.5
+   },
+   "backlog_prior_source": "LM20",
+   "backlog_prior_label": "March 30, 2008 (Q1 2008 release)",
+   "sales_b": 10.373,
+   "sales_pct": 3.9,
+   "backlog_pct": 8.2,
+   "segop_pct": 4.3,
+   "seg_margin": 11.56,
+   "seg_margin_bp": 3.9,
+   "eps_q": 1.68,
+   "eps_q_prior": 1.75,
+   "eps_pct": -4.0,
+   "diluted_shares_m": 397.5,
+   "cash_return_text": "Repurchasing 8.1 million shares at a cost of $555 million",
+   "next_print": "Q2 2009 print (late July)"
+  },
+  {
+   "quarter": "Q2 2009",
+   "fy": 2009,
+   "q": 2,
+   "published": "2009-07-21",
+   "source": "LM26",
+   "release": "Jul 21",
+   "release_time": "before the open on Jul 21: 8-K accepted 07:34 ET",
+   "period_end": "2009-06-28",
+   "raw": {
+    "rev_m": 11236.0,
+    "rev_prior_m": 11039.0,
+    "segop_m": 1277.0,
+    "segop_prior_m": 1315.0,
+    "backlog_m": 79200.0,
+    "backlog_prior_m": 74500.0,
+    "diluted_shares_m": 390.9
+   },
+   "backlog_prior_source": "LM21",
+   "backlog_prior_label": "June 29, 2008 (Q2 2008 release)",
+   "sales_b": 11.236,
+   "sales_pct": 1.8,
+   "backlog_pct": 6.3,
+   "segop_pct": -2.9,
+   "seg_margin": 11.37,
+   "seg_margin_bp": -54.7,
+   "eps_q": 1.88,
+   "eps_q_prior": 2.15,
+   "eps_pct": -12.6,
+   "diluted_shares_m": 390.9,
+   "cash_return_text": "Repurchasing 5.6 million shares at a cost of $453 million in the quarter and 13.7 million shares at a cost of $1.0 billion for the year-to-date period",
+   "next_print": "Q3 2009 print (late October)"
+  },
+  {
+   "quarter": "Q3 2009",
+   "fy": 2009,
+   "q": 3,
+   "published": "2009-10-20",
+   "source": "LM27",
+   "release": "Oct 20",
+   "release_time": "before the open on Oct 20: 8-K accepted 07:36 ET",
+   "period_end": "2009-09-27",
+   "raw": {
+    "rev_m": 11056.0,
+    "rev_prior_m": 10577.0,
+    "segop_m": 1266.0,
+    "segop_prior_m": 1250.0,
+    "backlog_m": 76400.0,
+    "backlog_prior_m": 76000.0,
+    "diluted_shares_m": 385.5
+   },
+   "backlog_prior_source": "LM22",
+   "backlog_prior_label": "September 28, 2008 (Q3 2008 release)",
+   "sales_b": 11.056,
+   "sales_pct": 4.5,
+   "backlog_pct": 0.5,
+   "segop_pct": 1.3,
+   "seg_margin": 11.45,
+   "seg_margin_bp": -36.7,
+   "eps_q": 2.07,
+   "eps_q_prior": 1.92,
+   "eps_pct": 7.8,
+   "diluted_shares_m": 385.5,
+   "cash_return_text": "Repurchasing 4.6 million shares at a cost of $354 million during the quarter and 18.3 million shares at a cost of $1.4 billion during the nine month period of the year",
+   "next_print": "Q4 2009 print (late January)"
+  }
+ ],
+ "guides": [
+  {
+   "fy": 2007,
+   "published": "2007-01-25",
+   "source": "LM14",
+   "doc": "Q4 2006 release",
+   "rev_guide_usd_b": [
+    40.25,
+    41.25
+   ],
+   "eps_guide": [
+    5.8,
+    6.0
+   ],
+   "segop_guide_usd_b": [
+    4.2,
+    4.325
+   ],
+   "cfo_words": "at least $3,900",
+   "note": "the 'Current Update' column (beside 'October 2006')"
+  },
+  {
+   "fy": 2007,
+   "published": "2007-04-24",
+   "source": "LM15",
+   "doc": "Q1 2007 release",
+   "rev_guide_usd_b": [
+    40.35,
+    41.35
+   ],
+   "eps_guide": [
+    6.2,
+    6.35
+   ],
+   "segop_guide_usd_b": [
+    4.3,
+    4.4
+   ],
+   "cfo_words": "at least $4,000",
+   "note": "the 'Current Update' column (beside 'January 2007')"
+  },
+  {
+   "fy": 2007,
+   "published": "2007-07-24",
+   "source": "LM16",
+   "doc": "Q2 2007 release",
+   "rev_guide_usd_b": [
+    41.0,
+    41.75
+   ],
+   "eps_guide": [
+    6.65,
+    6.8
+   ],
+   "segop_guide_usd_b": [
+    4.5,
+    4.6
+   ],
+   "cfo_words": "at least $4,200",
+   "note": "the 'Current Update' column (beside 'April 2007')"
+  },
+  {
+   "fy": 2007,
+   "published": "2007-10-23",
+   "source": "LM17",
+   "doc": "Q3 2007 release",
+   "rev_guide_usd_b": [
+    41.0,
+    41.75
+   ],
+   "eps_guide": [
+    6.7,
+    6.85
+   ],
+   "segop_guide_usd_b": [
+    4.5,
+    4.6
+   ],
+   "cfo_words": "at least $4,200",
+   "note": "the 'Current Update' column (beside 'July 2007')"
+  },
+  {
+   "fy": 2008,
+   "published": "2007-10-23",
+   "source": "LM17",
+   "doc": "Q3 2007 release",
+   "rev_guide_usd_b": [
+    41.25,
+    42.75
+   ],
+   "eps_guide": [
+    6.95,
+    7.15
+   ],
+   "segop_guide_usd_b": [
+    4.675,
+    4.8
+   ],
+   "cfo_words": "at least $4,000",
+   "note": "a preliminary outlook"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-01-24",
+   "source": "LM19",
+   "doc": "Q4 2007 release",
+   "rev_guide_usd_b": [
+    41.8,
+    42.8
+   ],
+   "eps_guide": [
+    7.05,
+    7.25
+   ],
+   "segop_guide_usd_b": [
+    4.715,
+    4.84
+   ],
+   "cfo_words": "at least $4,200",
+   "note": "the 'Current Update' column (beside 'October 2007')"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-04-22",
+   "source": "LM20",
+   "doc": "Q1 2008 release",
+   "rev_guide_usd_b": [
+    41.8,
+    42.8
+   ],
+   "eps_guide": [
+    7.15,
+    7.35
+   ],
+   "segop_guide_usd_b": [
+    4.75,
+    4.875
+   ],
+   "cfo_words": "at least $4,200",
+   "note": "the 'Current Update' column (beside 'January 2008')"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-07-22",
+   "source": "LM21",
+   "doc": "Q2 2008 release",
+   "rev_guide_usd_b": [
+    41.9,
+    42.9
+   ],
+   "eps_guide": [
+    7.45,
+    7.6
+   ],
+   "segop_guide_usd_b": [
+    4.825,
+    4.925
+   ],
+   "cfo_words": "at least $4,300",
+   "note": "the 'Current Update' column (beside 'April 2008')"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-10-21",
+   "source": "LM22",
+   "doc": "Q3 2008 release",
+   "rev_guide_usd_b": [
+    41.9,
+    42.9
+   ],
+   "eps_guide": [
+    7.55,
+    7.7
+   ],
+   "segop_guide_usd_b": [
+    4.85,
+    4.95
+   ],
+   "cfo_words": "at least $4,300",
+   "note": "the 'Current Update' column (beside 'July 2008')"
+  },
+  {
+   "fy": 2009,
+   "published": "2008-10-21",
+   "source": "LM22",
+   "doc": "Q3 2008 release",
+   "rev_guide_usd_b": [
+    44.25,
+    45.25
+   ],
+   "eps_guide": [
+    7.65,
+    7.9
+   ],
+   "segop_guide_usd_b": [
+    5.1,
+    5.25
+   ],
+   "cfo_words": "at least $4,000",
+   "note": "a preliminary outlook"
+  },
+  {
+   "fy": 2009,
+   "published": "2009-01-22",
+   "source": "LM24",
+   "doc": "Q4 2008 release",
+   "rev_guide_usd_b": [
+    44.7,
+    45.7
+   ],
+   "eps_guide": [
+    7.05,
+    7.25
+   ],
+   "segop_guide_usd_b": [
+    5.175,
+    5.275
+   ],
+   "cfo_words": "at least $4,000",
+   "note": "the 'Current Update' column (beside 'October 2008')"
+  },
+  {
+   "fy": 2009,
+   "published": "2009-04-21",
+   "source": "LM25",
+   "doc": "Q1 2009 release",
+   "rev_guide_usd_b": [
+    44.7,
+    45.7
+   ],
+   "eps_guide": [
+    7.15,
+    7.35
+   ],
+   "segop_guide_usd_b": [
+    5.175,
+    5.275
+   ],
+   "cfo_words": "at least $4,100",
+   "note": "the 'Current Update' column (beside 'January 2009')"
+  },
+  {
+   "fy": 2009,
+   "published": "2009-07-21",
+   "source": "LM26",
+   "doc": "Q2 2009 release",
+   "rev_guide_usd_b": [
+    44.7,
+    45.7
+   ],
+   "eps_guide": [
+    7.15,
+    7.35
+   ],
+   "segop_guide_usd_b": [
+    5.075,
+    5.175
+   ],
+   "cfo_words": "at least $4,100",
+   "note": "the 'Current Update' column (beside 'April 2009')"
+  },
+  {
+   "fy": 2009,
+   "published": "2009-10-20",
+   "source": "LM27",
+   "doc": "Q3 2009 release",
+   "rev_guide_usd_b": [
+    44.7,
+    45.7
+   ],
+   "eps_guide": [
+    7.4,
+    7.6
+   ],
+   "segop_guide_usd_b": [
+    5.075,
+    5.175
+   ],
+   "cfo_words": "at least $3,100",
+   "note": "the 'Current Update' column (beside 'July 2009')"
+  },
+  {
+   "fy": 2010,
+   "published": "2009-10-20",
+   "source": "LM27",
+   "doc": "Q3 2009 release",
+   "rev_guide_usd_b": [
+    46.25,
+    47.25
+   ],
+   "eps_guide": [
+    7.05,
+    7.25
+   ],
+   "segop_guide_usd_b": [
+    5.025,
+    5.125
+   ],
+   "cfo_words": "at least $3,200",
+   "note": "a preliminary outlook"
+  }
+ ],
+ "dividends": [
+  {
+   "published": "2007-01-25",
+   "source": "LM14",
+   "quarterly": 0.35,
+   "note": "$0.35 quarterly ('a dividend ($0.35 per share) paid in the fourth quarter', Q4 2006 release)"
+  },
+  {
+   "published": "2007-10-23",
+   "source": "LM17",
+   "quarterly": 0.42,
+   "note": "$0.42 quarterly ('a dividend ($0.42 per share) that was declared on September 27, 2007', Q3 2007 release)"
+  },
+  {
+   "published": "2008-10-21",
+   "source": "LM22",
+   "quarterly": 0.57,
+   "note": "$0.57 quarterly ('a dividend ($0.57 per share) that was declared on September 25, 2008', Q3 2008 release)"
+  },
+  {
+   "published": "2009-10-20",
+   "source": "LM27",
+   "quarterly": 0.63,
+   "note": "$0.63 quarterly ('a dividend ($0.63 per share) that was declared on September 24, 2009', Q3 2009 release)"
+  }
+ ],
+ "events": [],
+ "company_names": [],
+ "splits": [],
+ "rule_t": {
+  "backlog": {
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "1997": -6.64,
+    "1998": -3.64,
+    "1999": 1.25,
+    "2000": 22.92,
+    "2001": 29.4,
+    "2002": -1.24,
+    "2003": 9.25,
+    "2004": -3.79,
+    "2005": 1.13,
+    "2006": 1.44
+   },
+   "raw": {
+    "1997": {
+     "source": "LM1",
+     "backlog_m": [
+      50406,
+      47059
+     ]
+    },
+    "1998": {
+     "source": "LM2",
+     "backlog_m": [
+      47059,
+      45345
+     ]
+    },
+    "1999": {
+     "source": "LM3",
+     "backlog_m": [
+      45345,
+      45913
+     ]
+    },
+    "2000": {
+     "source": "LM6",
+     "backlog_m": [
+      44807,
+      55076
+     ]
+    },
+    "2001": {
+     "source": "LM7",
+     "backlog_m": [
+      55076,
+      71269
+     ]
+    },
+    "2002": {
+     "source": "LM8",
+     "backlog_m": [
+      71269,
+      70385
+     ]
+    },
+    "2003": {
+     "source": "LM9",
+     "backlog_m": [
+      70385,
+      76899
+     ]
+    },
+    "2004": {
+     "source": "LM9",
+     "backlog_m": [
+      76899,
+      73986
+     ]
+    },
+    "2005": {
+     "source": "LM9",
+     "backlog_m": [
+      73986,
+      74825
+     ]
+    },
+    "2006": {
+     "source": "LM9",
+     "backlog_m": [
+      74825,
+      75905
+     ]
+    }
+   },
+   "thresholds": {
+    "BEAR": -14,
+    "BASE": -7,
+    "BULL": 1,
+    "XBULL": 29
+   }
+  },
+  "sales": {
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "1997": 4.44,
+    "1998": -7.04,
+    "1999": -3.14,
+    "2000": -1.83,
+    "2001": -2.25,
+    "2002": 10.79,
+    "2003": 19.74,
+    "2004": 11.63,
+    "2005": 4.75,
+    "2006": 6.47
+   },
+   "raw": {
+    "1997": {
+     "source": "LM3",
+     "sales_m": [
+      26875,
+      28069
+     ]
+    },
+    "1998": {
+     "source": "LM4",
+     "sales_m": [
+      27764,
+      25809
+     ]
+    },
+    "1999": {
+     "source": "LM5",
+     "sales_m": [
+      25809,
+      24999
+     ]
+    },
+    "2000": {
+     "source": "LM6",
+     "sales_m": [
+      24999,
+      24541
+     ]
+    },
+    "2001": {
+     "source": "LM7",
+     "sales_m": [
+      24541,
+      23990
+     ]
+    },
+    "2002": {
+     "source": "LM8",
+     "sales_m": [
+      23990,
+      26578
+     ]
+    },
+    "2003": {
+     "source": "LM9",
+     "sales_m": [
+      26578,
+      31824
+     ]
+    },
+    "2004": {
+     "source": "LM9",
+     "sales_m": [
+      31824,
+      35526
+     ]
+    },
+    "2005": {
+     "source": "LM9",
+     "sales_m": [
+      35526,
+      37213
+     ]
+    },
+    "2006": {
+     "source": "LM9",
+     "sales_m": [
+      37213,
+      39620
+     ]
+    }
+   },
+   "thresholds": {
+    "BEAR": -19,
+    "BASE": -7,
+    "BULL": 5,
+    "XBULL": 20
+   }
+  },
+  "segop": {
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "2001": -0.18,
+    "2002": 18.2,
+    "2003": 22.18,
+    "2004": 20.58,
+    "2005": 15.32,
+    "2006": 17.95
+   },
+   "raw": {
+    "2001": {
+     "source": "LM5",
+     "segop_m": [
+      1712.0,
+      1709.0
+     ]
+    },
+    "2002": {
+     "source": "LM6",
+     "segop_m": [
+      1709.0,
+      2020.0
+     ]
+    },
+    "2003": {
+     "source": "LM7",
+     "segop_m": [
+      2020.0,
+      2468.0
+     ]
+    },
+    "2004": {
+     "source": "LM8",
+     "segop_m": [
+      2468.0,
+      2976.0
+     ]
+    },
+    "2005": {
+     "source": "LM9",
+     "segop_m": [
+      2976.0,
+      3432.0
+     ]
+    },
+    "2006": {
+     "source": "LM9",
+     "segop_m": [
+      3432.0,
+      4048.0
+     ]
+    }
+   },
+   "thresholds": {
+    "BEAR": -18,
+    "BASE": 0,
+    "BULL": 18,
+    "XBULL": 22
+   }
+  },
+  "eps": {
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "2004": 20.94,
+    "2005": 44.88,
+    "2006": 41.46
+   },
+   "raw": {
+    "2004": {
+     "source": "LM9",
+     "eps": [
+      2.34,
+      2.83
+     ]
+    },
+    "2005": {
+     "source": "LM9",
+     "eps": [
+      2.83,
+      4.1
+     ]
+    },
+    "2006": {
+     "source": "LM9",
+     "eps": [
+      4.1,
+      5.8
+     ]
+    }
+   },
+   "thresholds": {
+    "BEAR": 0,
+    "BASE": 21,
+    "BULL": 41,
+    "XBULL": 45
+   }
+  },
+  "seg_margin": {
+   "unit": 10,
+   "lower_is_better": false,
+   "values": {
+    "2001": 14.8,
+    "2002": 47.6,
+    "2003": 15.5,
+    "2004": 62.2,
+    "2005": 84.6,
+    "2006": 99.4
+   },
+   "raw": {
+    "2001": {
+     "source": "LM5",
+     "segop_m": [
+      1712.0,
+      1709.0
+     ],
+     "sales_m": [
+      24541.0,
+      23990.0
+     ]
+    },
+    "2002": {
+     "source": "LM6",
+     "segop_m": [
+      1709.0,
+      2020.0
+     ],
+     "sales_m": [
+      23990.0,
+      26578.0
+     ]
+    },
+    "2003": {
+     "source": "LM7",
+     "segop_m": [
+      2020.0,
+      2468.0
+     ],
+     "sales_m": [
+      26578.0,
+      31824.0
+     ]
+    },
+    "2004": {
+     "source": "LM8",
+     "segop_m": [
+      2468.0,
+      2976.0
+     ],
+     "sales_m": [
+      31824.0,
+      35526.0
+     ]
+    },
+    "2005": {
+     "source": "LM9",
+     "segop_m": [
+      2976.0,
+      3432.0
+     ],
+     "sales_m": [
+      35526.0,
+      37213.0
+     ]
+    },
+    "2006": {
+     "source": "LM9",
+     "segop_m": [
+      3432.0,
+      4048.0
+     ],
+     "sales_m": [
+      37213.0,
+      39620.0
+     ]
+    }
+   },
+   "thresholds": {
+    "BEAR": -30,
+    "BASE": 10,
+    "BULL": 50,
+    "XBULL": 100
+   }
+  },
+  "_doc": "Rule T over fiscal 1997-2006, the decade of the FY2006 10-K (the vintage public on 2008-01-04): each annual change from the latest 10-K published by then that tabulates both years, as tabulated. Backlog is total negotiated backlog at year-end and net sales the five-year summaries' (the FY1998-FY2000 10-Ks' backlog charts; seams stay in: discontinued operations restate 1999 and 2000 backlog and net sales in later 10-Ks). Segment operating profit and the segment margin ('Total business segments' operating profit on the table's total net sales) are tabulated on the recast basis of the 8-K of 2003-01-16 (unusual items, the FAS/CAS pension adjustment and stock-based compensation outside the segments) from the FY2002 10-K, so they have 2001-2006 (the AVGO rule): the FY1998-FY2001 10-Ks report segments that include unusual items and pension income, with a Corporate and Other segment, a different measure. EPS is the FY2006 history's (2004-2006: FY2002 is excluded and the history starts with FY2003; the F and SO rule)"
+ },
+ "price_basis": "Yahoo's LMT series is adjusted for the 1995-03-16 factor (1.63, the Lockheed and Martin Marietta combination) and the 2-for-1 split of 1999-01-04; both precede every per-share fact in this file (the history starts with FY2003), so Yahoo's close is the price as traded on every day of every P/E window"
+}

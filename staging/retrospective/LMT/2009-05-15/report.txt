@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  LMT  ·  Lockheed Martin Corporation  ·  $79.93  ·  RETROSPECTIVE as of 2009-05-15
+  Signal: ◉ BUY   Ratio B: -0.02x   Adj gap: +1.01  [UNDERVALUED]
+  Point-in-time: 9 sources, latest published 2009-05-15; latest print Q1 2009 (Apr 21)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2009E net sales, USD bn  →  FY2011E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Business segment             FY2009E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Electronic Systems        $    12.3  $  12.3  $  13.8      +0.0      +1.5
+    +4.3% net sales in FY08
+  Information Systems & Gl  $    12.3  $  12.3  $  13.8      +0.0      +1.5
+    +13.7% net sales in FY08
+  Aeronautics               $    12.1  $  12.1  $  13.7      +0.0      +1.6
+    -6.7% net sales in FY08
+  Space Systems             $     8.5  $   8.5  $   9.6      +0.0      +1.1
+    -2.1% net sales in FY08
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    45.2  $  45.2  $  50.9      +0.0      +5.7
+  FY2009E = FY08 $42.73B × (1 + 5.8%: FY09 net sales guide midpoint); split pro rata to FY08 net sales by business segment (FY2008 10-K, Selected Financial Data by Business Segment)
+  Q1 2009 (Apr 21): net sales $10.37B +3.9%; backlog +8.2%; segment operating profit +4.3%;
+  segment margin 11.56% (+3.9bp); diluted EPS $1.68 vs $1.75 (-4.0%)
+  Total backlog $80,800M at the quarter's end against $74,700M at March 30, 2008 (Q1 2008 release) (+8.2%); segment operating profit $1,199M against $1,150M a year earlier (+4.3%), as the releases show them
+  FY09 guide (Q3 2008 release, Q4 2008 release, Q1 2009 release): net sales $44.7-45.7B; diluted EPS $7.15-7.35; segment operating profit $5.175-5.275B and cash from operations at least $4,100M (display only: no margin is derived from two guided figures); the 'Current Update' column (beside 'January 2009')
+
+  FY2009E EPS check:  $45.2B × 11.0% pre-tax × (1−31.6%) ÷ 0.398B  =  $8.56  (FY2009E EPS, guide midpoint (Q1 2009 release))
+  FY2011E BEAR check: $45.2B × 11.0% ÷ 0.382B  =  $8.89  (scenario $7.25)
+  FY2011E BULL check: $50.9B × 11.4% ÷ 0.382B  =  $10.38  (scenario $11.77)
+  Every 1pp of pre-tax margin ≈ $0.78 EPS ≈ $12/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Backlog growth                     -14.0%   ≥-7.0%    ≥1.0%   ≥29.0%     +8.2%  ▲ BULL  ███░
+  Net sales growth                   -19.0%   ≥-7.0%    ≥5.0%   ≥20.0%     +3.9%  ◦ BASE  ██░░
+  Segment operating profit growth    -18.0%    ≥0.0%   ≥18.0%   ≥22.0%     +4.3%  ◦ BASE  ██░░
+  Diluted EPS growth                  +0.0%   ≥21.0%   ≥41.0%   ≥45.0%     -4.0%  ⚠ BEAR  █░░░
+  Segment operating margin change   -30.0bp  ≥10.0bp  ≥50.0bp  ≥100.0bp    +3.9bp  ⚠ BEAR  █░░░
+  Disruption theme: none in scope    +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.90 / 4.00
+  Market composite:   1.34 / 4.00  (back-solved from $80 + 15% hurdle)
+  SCA adjustment:    +0.25  ·  EPP-distance adj +0.20  →  Adj composite 2.35  →  Gap +1.01  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY08 net sales +2.1%, backlog +5.5%, segment operating profit +5.9%; Q1 segment margin 11.56% (+3.9bp)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 11.0x FY09E vs a 14.8x 6.4-yr median (7th percentile of its own range)  (+0.50 × 25%  =  +0.125)
+    +  Growth vs own history: FY09 net sales guide +4.6-6.9% vs a 5.7% 5-yr median  (+0.01 × 20%  =  +0.002)
+    +  FY08 year-end cash and short-term investments $2.229B, FY08 operating cash flow $4.421B, dividend $2.28 a year, repurchases of common stock $2,931M in 2008 (FY2008 10-K)  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Backlog growth                       +8.2%    -14.0%  -22.2%  Orders stop replacing sales
+  Net sales growth                     +3.9%    -19.0%  -22.9%  Program volume falls
+  Segment operating profit growth      +4.3%    -18.0%  -22.3%  Program profits stop growing
+  Diluted EPS growth                   -4.0%     +0.0%   +4.0%  Pension and tax lines take the gains
+  Segment operating margin change     +3.9bp   -30.0bp  -33.9bp  Program margins slip on fixed-price work
+  Disruption theme: none in scope     +2.0/4    +1.0/4  -1.0/4  No live disruption theme covers defen…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$102  (model)  /  $83 (defined)
+  Bear probability (proxy model):  23.0%
+
+  KEY TRIGGER: Backlog growth went from +5.5% (Q4 2008) to +8.2% (Q1 2009);
+  the bear case needs orders to stop replacing sales (net sales +3.9% now) while
+  program margins slip. The 10-K ties future sales to Congressional appropriations for defense procurement
+  and research and development; a terminated or delayed program leaves the backlog.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $7.25  (FY2009E EPS, guide midpoint (Q1 2009 release))
+  Min viable P/E at panic:          12x  [median of calendar-year P/E lows: 2003 17.6x, 2004 15.5x, 2005 13.0x, 2006 11.0x, 2007 12.9x, 2008 8.6x, 2009 8.0x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $87/share
+  Current $80 vs Updated EPP $87:  -8%  ✓ BELOW panic floor — deep-value zone
+  Bear $83 vs Updated EPP $87:  -5%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Backlog growth                              -7.0      -15.2   BASE floor (vs +8 now)
+  Net sales growth                            -7.0      -10.9   BASE floor (vs +4 now)
+  Segment operating profit growth              0.0       -4.3   BASE floor (vs +4 now)
+  Diluted EPS growth                          21.0      +25.0   BASE floor (vs -4 now)
+  Segment operating margin change             10.0       +6.1   BASE floor (vs +4 now)
+  Disruption theme: none in scope              2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $7.25 × (1+5.7%)² = $8.09
+  At 14x P/E (conservative):  $113/share
+  + Cumul. dividends (2yr):  +$4.70/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $113  (▲33 from $80)
+  Conservative total return:  +48% over 2yr  = +24%/yr
+
+  At 11.0x the multiple is already near its 14x median, so the conservative
+  case is a growth question: breakeven at 14x needs FY2011E EPS of $5.37,
+  i.e. -13.9%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $57.41  –  $120.30  (at 36th pct of range)
+  Annual dividend:      $2.28/share  (yield 2.9%)
+  Realized vol (1yr):   46% annualized
+  Beta vs broad market: 0.69
+  1-sigma range (1yr):  $43  –  $116  ($80 ± 46%)
+  2-sigma range (1yr):  $7  –  $153
+  ────────────────────────────────────────────────────────────
+  Bear $83 requires:  ~-0.1σ price move  (within normal vol range)
+  A defense prime contractor with a 0.7 beta: the stock is +37% off its March
+  low while Backlog growth went from +5.5% (Q4 2008) to +8.2% (Q1 2009).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        7.25  11.5x  $     83    23.0%     65.9%   -42.9pp  Flat EPS (worst year FY03-FY08, capped at 0%); P/E to its 10th pct
+  BASE        8.40  14.8x  $    124    57.5%     25.5%   +32.0pp  EPS +7.7%/yr (FY09 guide + margin + buyback); P/E at its 6.4-yr median
+  BULL       11.77  17.8x  $    210    16.5%      7.3%    +9.2pp  EPS +27.4%/yr (FY03-FY08 CAGR); P/E holds its 75th pct
+  XBULL      14.86  20.5x  $    305     3.1%      1.4%    +1.7pp  EPS +43.2%/yr (best 2-yr run FY03-FY08); P/E at its 90th pct
+
+  Proxy EV (2yr): $134  /  Market EV: $106  /  Current: $80
+  Conservative EV (2yr, ④): $113 + $4.70 divs = $118 total value
+  Downside (→ Bear $83): -3.8%   Upside (→ Bull $210): 162.7%   Ratio B -0.02x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $80 the market needs $106 in two years —
+  at or below the BASE case. That is a market composite of 1.34 against a model
+  read of 2.35: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                      -0.02x      -8%    +1.01  UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)    -0.11x      -8%    +1.13  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.05x      -8%    +0.77  UNDERVALUED / BUY
+  Scenario EPS +1.5pp/yr                         -0.04x      -8%    +1.08  UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                         -0.01x      -8%    +0.96  UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)            -0.02x      -8%    +1.31  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                -0.02x     -27%    +1.01  UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                   -0.02x      -8%    +1.13  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 2009 print (late July) — the next read on backlog (+8.2% now) and the outlook
+  (2) Segment margin — +3.9bp in Q1 2009: program execution on fixed-price and cost-plus work, what must hold if volume does not
+  (3) FY09 diluted EPS guide $7.15-7.35 (Q1 2009 release): the company's own read of the year, FAS/CAS pension adjustment included
+  (4) FY09 net sales guide $44.7-45.7B (Q1 2009 release): program volume in one number
+  (5) Capital return at 11x — Repurchasing 8.1 million shares at a cost of $555 million: management's own read of the multiple
+  ◉ BUY  |  EPP floor $87  |  ADD below ~$105  |  TRIM above $210
+════════════════════════════════════════════════════════════════════════
+
