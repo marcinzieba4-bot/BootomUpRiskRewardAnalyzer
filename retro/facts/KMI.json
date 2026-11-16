@@ -155,6 +155,146 @@
    "title": "Kinder Morgan, Inc. Q3 2014 10-Q",
    "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630714000065/kmi-09302014x10q.htm",
    "supports": "Q3 2014 segment EBDA (the segment note's three-month columns): total and Natural Gas Pipelines"
+  },
+  "KM40": {
+   "published": "2015-01-22",
+   "filed": "2015-01-21 16:10 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. Q4 2014 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630715000003/kmidec20148-kexh991.htm",
+   "supports": "Q4 2014 print: the preliminary consolidated statement of income (revenues, operating income, income before income taxes, EPS, diluted shares, the declared dividend), the segment EBDA table and the dividend outlook"
+  },
+  "KM5": {
+   "published": "2015-02-23",
+   "filed": "2015-02-23 06:07 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. FY2014 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630715000014/kmi-2014x10k.htm",
+   "supports": "FY2014 annual history: the five-year review (revenues, Class P diluted EPS from continuing operations, diluted shares), the statements of income and cash flows, the segment note, the business description and the risk factors"
+  },
+  "KM41": {
+   "published": "2015-04-16",
+   "filed": "2015-04-15 16:10 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. Q1 2015 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630715000016/kmimar20158-kexh991.htm",
+   "supports": "Q1 2015 print: the preliminary consolidated statement of income (revenues, operating income, income before income taxes, EPS, diluted shares, the declared dividend), the segment EBDA table and the dividend outlook"
+  },
+  "KM42": {
+   "published": "2015-07-16",
+   "filed": "2015-07-15 16:07 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. Q2 2015 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630715000040/kmijune20158-kexh991.htm",
+   "supports": "Q2 2015 print: the preliminary consolidated statement of income (revenues, operating income, income before income taxes, EPS, diluted shares, the declared dividend), the segment EBDA table and the dividend outlook"
+  },
+  "KM43": {
+   "published": "2015-10-22",
+   "filed": "2015-10-21 16:14 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. Q3 2015 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630715000052/kmiq320158-kexh991.htm",
+   "supports": "Q3 2015 print: the preliminary consolidated statement of income (revenues, operating income, income before income taxes, EPS, diluted shares, the declared dividend), the segment EBDA table and the dividend outlook"
+  },
+  "KM44": {
+   "published": "2016-01-21",
+   "filed": "2016-01-20 16:09 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. Q4 2015 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630716000067/kmiq420158-kexh991.htm",
+   "supports": "Q4 2015 print: the preliminary consolidated statement of income (revenues, operating income, income before income taxes, EPS, diluted shares, the declared dividend), the segment EBDA table and the dividend outlook"
+  },
+  "KM6": {
+   "published": "2016-02-16",
+   "filed": "2016-02-16 07:26 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. FY2015 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630716000072/kmi-2015x10k.htm",
+   "supports": "FY2015 annual history: the five-year review (revenues, Class P diluted EPS from continuing operations, diluted shares), the statements of income and cash flows, the segment note, the business description and the risk factors"
+  },
+  "KM45": {
+   "published": "2016-04-21",
+   "filed": "2016-04-20 16:14 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. Q1 2016 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630716000081/kmiq120168-kexh991.htm",
+   "supports": "Q1 2016 print: the preliminary consolidated statement of income (revenues, operating income, income before income taxes, EPS, diluted shares, the declared dividend), the segment EBDA table and the dividend outlook"
+  },
+  "KM46": {
+   "published": "2016-07-21",
+   "filed": "2016-07-20 16:08 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. Q2 2016 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630716000101/kmiq220168-kexh991.htm",
+   "supports": "Q2 2016 print: the preliminary consolidated statement of income (revenues, operating income, income before income taxes, EPS, diluted shares, the declared dividend), the segment EBDA table and the dividend outlook"
+  },
+  "KM47": {
+   "published": "2016-10-20",
+   "filed": "2016-10-19 16:11 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. Q3 2016 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630716000117/kmiq320168-kexh991.htm",
+   "supports": "Q3 2016 print: the preliminary consolidated statement of income (revenues, operating income, income before income taxes, EPS, diluted shares, the declared dividend), the segment EBDA table and the dividend outlook"
+  },
+  "KM48": {
+   "published": "2017-01-19",
+   "filed": "2017-01-18 16:09 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. Q4 2016 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630717000003/kmiq420168-kexh991.htm",
+   "supports": "Q4 2016 print: the preliminary consolidated statement of income (revenues, operating income, income before income taxes, EPS, diluted shares, the declared dividend), the segment EBDA table and the dividend outlook"
+  },
+  "KM7": {
+   "published": "2017-02-13",
+   "filed": "2017-02-10 16:47 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. FY2016 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630717000008/kmi-2016x10k.htm",
+   "supports": "FY2016 annual history: the five-year review (revenues, Class P diluted EPS from continuing operations, diluted shares), the statements of income and cash flows, the segment note, the business description and the risk factors"
+  },
+  "KM49": {
+   "published": "2017-04-20",
+   "filed": "2017-04-19 16:12 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. Q1 2017 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630717000014/kmiq120178-kexh991.htm",
+   "supports": "Q1 2017 print: the preliminary consolidated statement of income (revenues, operating income, income before income taxes, EPS, diluted shares, the declared dividend), the segment EBDA table and the dividend outlook"
+  },
+  "KM50": {
+   "published": "2017-07-20",
+   "filed": "2017-07-19 16:10 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. Q2 2017 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630717000032/kmiq220178-kexh991.htm",
+   "supports": "Q2 2017 print: the preliminary consolidated statement of income (revenues, operating income, income before income taxes, EPS, diluted shares, the declared dividend), the segment EBDA table and the dividend outlook"
+  },
+  "KM51": {
+   "published": "2017-10-19",
+   "filed": "2017-10-18 16:13 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. Q3 2017 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630717000043/kmiq320178-kexh991.htm",
+   "supports": "Q3 2017 print: the preliminary consolidated statement of income (revenues, operating income, income before income taxes, EPS, diluted shares, the declared dividend), the segment EBDA table and the dividend outlook"
+  },
+  "KM52": {
+   "published": "2018-01-18",
+   "filed": "2018-01-17 16:12 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. Q4 2017 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630718000003/kmiq420178-kexh991.htm",
+   "supports": "Q4 2017 print: the preliminary consolidated statement of income (revenues, operating income, income before income taxes, EPS, diluted shares, the declared dividend), the segment EBDA table and the dividend outlook"
+  },
+  "KM8": {
+   "published": "2018-02-12",
+   "filed": "2018-02-09 17:10 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. FY2017 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630718000010/kmi-2017x10k.htm",
+   "supports": "FY2017 annual history: the five-year review (revenues, Class P diluted EPS from continuing operations, diluted shares), the statements of income and cash flows, the segment note, the business description and the risk factors"
+  },
+  "KM53": {
+   "published": "2018-04-19",
+   "filed": "2018-04-18 16:12 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. Q1 2018 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630718000016/kmiq120188-kexh991.htm",
+   "supports": "Q1 2018 print: the preliminary consolidated statement of income (revenues, operating income, income before income taxes, EPS, diluted shares, the declared dividend), the segment EBDA table and the dividend outlook"
+  },
+  "KM54": {
+   "published": "2018-07-19",
+   "filed": "2018-07-18 16:13 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. Q2 2018 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630718000037/kmiq220188-kexh991.htm",
+   "supports": "Q2 2018 print: the preliminary consolidated statement of income (revenues, operating income, income before income taxes, EPS, diluted shares, the declared dividend), the segment EBDA table and the dividend outlook"
+  },
+  "KM55": {
+   "published": "2018-10-18",
+   "filed": "2018-10-17 16:24 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. Q3 2018 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630718000076/kmiq320188-kexh991.htm",
+   "supports": "Q3 2018 print: the preliminary consolidated statement of income (revenues, operating income, income before income taxes, EPS, diluted shares, the declared dividend), the segment EBDA table and the dividend outlook"
   }
  },
  "listing": {
@@ -219,27 +359,27 @@
    "groups": [
     [
      "Products Pipelines",
-     914.0,
+     0.914,
      3.5
     ],
     [
      "Natural Gas Pipelines",
-     4265.1,
+     4.265,
      -3.4
     ],
     [
      "CO2",
-     1433.7,
+     1.434,
      10.4
     ],
     [
      "Terminals",
-     1313.5,
+     1.313,
      3.9
     ],
     [
      "Kinder Morgan Canada",
-     302.4,
+     0.302,
      12.6
     ]
    ],
@@ -306,28 +446,28 @@
    "cash_return_text": "$1,184M of cash dividends and distributions paid in FY12, no share repurchases",
    "groups": [
     [
-     "Natural Gas Pipelines(a)",
-     5230.0,
+     "Natural Gas Pipelines",
+     5.23,
      32.6
     ],
     [
      "Products Pipelines",
-     1370.0,
+     1.37,
      49.9
     ],
     [
      "CO2",
-     1677.0,
+     1.677,
      16.9
     ],
     [
      "Terminals",
-     1356.0,
+     1.356,
      3.2
     ],
     [
      "Kinder Morgan Canada",
-     311.0,
+     0.311,
      3.0
     ]
    ],
@@ -399,28 +539,28 @@
    "cash_return_text": "$1,622M of cash dividends and distributions paid in FY13, $637M of shares and warrants repurchased",
    "groups": [
     [
-     "Natural Gas Pipelines(a)",
-     8613.0,
+     "Natural Gas Pipelines",
+     8.613,
      64.7
     ],
     [
      "CO2",
-     1857.0,
+     1.857,
      10.7
     ],
     [
      "Products Pipelines",
-     1853.0,
+     1.853,
      35.3
     ],
     [
      "Terminals",
-     1408.0,
+     1.408,
      3.8
     ],
     [
      "Kinder Morgan Canada",
-     302.0,
+     0.302,
      -2.9
     ]
    ],
@@ -430,6 +570,430 @@
    "business_line": "Natural gas, products and CO2 pipelines, terminals (the general partner of KMP and EPB)",
    "margin_signal_name": "Pre-tax margin change",
    "normalization": "diluted EPS from continuing operations of the Class P common stock, GAAP, each year from the latest filing that reports it; 2011 covers only February 11 to December 31 and is not a year"
+  },
+  {
+   "published": "2015-02-23",
+   "sources": [
+    "KM5",
+    "KM1",
+    "KM3",
+    "KM4"
+   ],
+   "company": "Kinder Morgan, Inc.",
+   "exchange": "NYSE",
+   "symbol": "KMI",
+   "fy_label": "FY14",
+   "fiscal_year_ends": {
+    "2014": "2014-12-31"
+   },
+   "eps_normalized": {
+    "2012": 0.56,
+    "2013": 1.15,
+    "2014": 0.89
+   },
+   "eps_excluded": {
+    "2011": "$0.70 a diluted Class P share from continuing operations for February 11 to December 31, 2011 (the IPO period), not a year"
+   },
+   "revenue_usd_b": {
+    "2006": 10.209,
+    "2008": 11.716,
+    "2009": 6.879,
+    "2010": 7.852,
+    "2011": 7.943,
+    "2012": 9.973,
+    "2013": 14.07,
+    "2014": 16.226
+   },
+   "revenue_sources": {
+    "2006": "KM1",
+    "2008": "KM3",
+    "2009": "KM4",
+    "2010": "KM5",
+    "2011": "KM5",
+    "2012": "KM5",
+    "2013": "KM5",
+    "2014": "KM5"
+   },
+   "diluted_shares_m": {
+    "2011": 708.0,
+    "2012": 908.0,
+    "2013": 1036.0,
+    "2014": 1137.0
+   },
+   "shares_note": "diluted weighted-average Class P shares of the five-year reviews (2011: February 11 to December 31; the KMP, KMR and EPB acquisition of 2014-11-26 more than doubles the count from 2015)",
+   "pe_window_start": "2011-02-11",
+   "prev_fy_op_margin": 19.05,
+   "prev_fy_op_margin_note": "FY14 income before income taxes $3,091M / revenues $16,226M ( FY2014 10-K)",
+   "prev_fy_sales_growth": 15.3,
+   "check_pretax_margin": 19.05,
+   "check_pretax_note": "FY14 income before income taxes / revenues ( FY2014 10-K)",
+   "tax_rate": 0.21,
+   "tax_note": "FY14 effective rate: income tax expense $648M on $3,091M",
+   "dividend_annual": 1.8,
+   "dividend_note": "$0.45 a quarter for the quarter ended December 31, 2014 (KM5, the FY14 10-K)",
+   "fcf_b": 0.85,
+   "fcf_label": "FY14",
+   "fcf_note": "net cash provided by operating activities $4,467M less capital expenditures $3,617M ( FY2014 10-K)",
+   "cash_return_text": "$1,760M of cash dividends on common shares paid in FY14, $192M of shares and warrants repurchased",
+   "groups": [
+    [
+     "Natural Gas Pipelines",
+     10.153,
+     17.9
+    ],
+    [
+     "CO2",
+     1.96,
+     5.5
+    ],
+    [
+     "Terminals",
+     1.717,
+     21.9
+    ],
+    [
+     "Products Pipelines",
+     2.068,
+     11.6
+    ],
+    [
+     "Kinder Morgan Canada",
+     0.291,
+     -3.6
+    ]
+   ],
+   "groups_basis": "FY14 segment revenues from external customers ( FY2014 10-K)",
+   "why": "The overwhelming majority of cash generated by our assets is fee-based and is not sensitive to commodity prices. Risk factor: A sharp decline in the prices of oil, NGL or natural gas would result in a commensurate reduction in our revenues, income and cash flows from the production of oil, NGL, and natural gas and could have a material adverse effect on the carrying value of our proved reserves.",
+   "reserves_quote": "We own approximately 97% working interest in the SACROC unit, an approximately 50% working interest in the Yates unit, an approximately 99% working interest in the Katz unit and a 99% working interest in the Goldsmith Landreth unit.",
+   "transition_quote": "Although we currently cannot predict the magnitude and direction of these impacts, greenhouse gas regulations could have material adverse effects on our business, financial position, results of operations or cash flows.",
+   "kind_text": "A pipeline transportation and energy storage company",
+   "business_line": "Natural gas, products and CO2 pipelines, terminals and Kinder Morgan Canada",
+   "margin_signal_name": "Pre-tax margin change",
+   "normalization": "diluted EPS from continuing operations of the Class P common stock, GAAP, each year from the latest filing that reports it; 2011 covers only February 11 to December 31, and a year whose listed certain items after tax exceed its income is excluded (no figure excluding only one-offs is published)"
+  },
+  {
+   "published": "2016-02-16",
+   "sources": [
+    "KM6",
+    "KM1",
+    "KM3",
+    "KM4",
+    "KM5"
+   ],
+   "company": "Kinder Morgan, Inc.",
+   "exchange": "NYSE",
+   "symbol": "KMI",
+   "fy_label": "FY15",
+   "fiscal_year_ends": {
+    "2015": "2015-12-31"
+   },
+   "eps_normalized": {
+    "2012": 0.56,
+    "2013": 1.15,
+    "2014": 0.89
+   },
+   "eps_excluded": {
+    "2011": "$0.70 a diluted Class P share from continuing operations for February 11 to December 31, 2011 (the IPO period), not a year",
+    "2015": "$0.10 a diluted Class P share from continuing operations (Kinder Morgan, Inc. FY2015 10-K); its listed certain items after tax ($1,314M) exceed its net income available to common stockholders ($311M), with no figure excluding only one-offs"
+   },
+   "revenue_usd_b": {
+    "2006": 10.209,
+    "2008": 11.716,
+    "2009": 6.879,
+    "2010": 7.852,
+    "2011": 7.943,
+    "2012": 9.973,
+    "2013": 14.07,
+    "2014": 16.226,
+    "2015": 14.403
+   },
+   "revenue_sources": {
+    "2006": "KM1",
+    "2008": "KM3",
+    "2009": "KM4",
+    "2010": "KM5",
+    "2011": "KM6",
+    "2012": "KM6",
+    "2013": "KM6",
+    "2014": "KM6",
+    "2015": "KM6"
+   },
+   "diluted_shares_m": {
+    "2011": 708.0,
+    "2012": 908.0,
+    "2013": 1036.0,
+    "2014": 1137.0,
+    "2015": 2193.0
+   },
+   "shares_note": "diluted weighted-average Class P shares of the five-year reviews (2011: February 11 to December 31; the KMP, KMR and EPB acquisition of 2014-11-26 more than doubles the count from 2015)",
+   "pe_window_start": "2011-02-11",
+   "prev_fy_op_margin": 5.36,
+   "prev_fy_op_margin_note": "FY15 income before income taxes $772M / revenues $14,403M ( FY2015 10-K)",
+   "prev_fy_sales_growth": -11.2,
+   "check_pretax_margin": 5.36,
+   "check_pretax_note": "FY15 income before income taxes / revenues ( FY2015 10-K)",
+   "tax_rate": 0.731,
+   "tax_note": "FY15 effective rate: income tax expense $564M on $772M",
+   "dividend_annual": 0.5,
+   "dividend_note": "$0.125 a quarter for the quarter ended December 31, 2015 (KM6, the FY15 10-K)",
+   "fcf_b": 1.407,
+   "fcf_label": "FY15",
+   "fcf_note": "net cash provided by operating activities $5,303M less capital expenditures $3,896M ( FY2015 10-K)",
+   "cash_return_text": "$4,224M of cash dividends on common shares paid in FY15, $12M of shares and warrants repurchased",
+   "groups": [
+    [
+     "Natural Gas Pipelines",
+     8.704,
+     -14.3
+    ],
+    [
+     "CO2",
+     1.699,
+     -13.3
+    ],
+    [
+     "Terminals",
+     1.878,
+     9.4
+    ],
+    [
+     "Products Pipelines",
+     1.828,
+     -11.6
+    ],
+    [
+     "Kinder Morgan Canada",
+     0.26,
+     -10.7
+    ]
+   ],
+   "groups_basis": "FY15 segment revenues from external customers ( FY2015 10-K)",
+   "why": "The overwhelming majority of cash we generate is fee-based and therefore is not directly exposed to commodity prices. Risk factor: A sharp decline in the prices of oil, NGL or natural gas, or a prolonged unfavorable price environment, would result in a commensurate reduction in our revenues, income and cash flows from our businesses that produce, process, or purchase and sell oil, NGL, or natural gas, and could have a material adverse effect on the carrying value of our CO2 business segment’s proved reserves.",
+   "reserves_quote": "We own approximately 97% working interest in the SACROC unit, an approximately 50% working interest in the Yates unit, an approximately 99% working interest in the Katz unit and a 99% working interest in the Goldsmith Landreth unit.",
+   "transition_quote": "Such laws or regulations could also lead to reduced demand for hydrocarbon products that are deemed to contribute to greenhouse gases, or restrictions on their use, which in turn could adversely affect demand for our products and services.",
+   "kind_text": "A pipeline transportation and energy storage company",
+   "business_line": "Natural gas, products and CO2 pipelines, terminals and Kinder Morgan Canada",
+   "margin_signal_name": "Pre-tax margin change",
+   "normalization": "diluted EPS from continuing operations of the Class P common stock, GAAP, each year from the latest filing that reports it; 2011 covers only February 11 to December 31, and a year whose listed certain items after tax exceed its income is excluded (no figure excluding only one-offs is published)"
+  },
+  {
+   "published": "2017-02-13",
+   "sources": [
+    "KM7",
+    "KM3",
+    "KM4",
+    "KM5",
+    "KM6"
+   ],
+   "company": "Kinder Morgan, Inc.",
+   "exchange": "NYSE",
+   "symbol": "KMI",
+   "fy_label": "FY16",
+   "fiscal_year_ends": {
+    "2016": "2016-12-31"
+   },
+   "eps_normalized": {
+    "2012": 0.56,
+    "2013": 1.15,
+    "2014": 0.89
+   },
+   "eps_excluded": {
+    "2011": "$0.70 a diluted Class P share from continuing operations for February 11 to December 31, 2011 (the IPO period), not a year",
+    "2015": "$0.10 a diluted Class P share from continuing operations (Kinder Morgan, Inc. FY2016 10-K); its listed certain items after tax ($1,314M) exceed its net income available to common stockholders ($311M), with no figure excluding only one-offs",
+    "2016": "$0.25 a diluted Class P share from continuing operations (Kinder Morgan, Inc. FY2016 10-K); its listed certain items after tax ($933M) exceed its net income available to common stockholders ($552M), with no figure excluding only one-offs"
+   },
+   "revenue_usd_b": {
+    "2008": 11.716,
+    "2009": 6.879,
+    "2010": 7.852,
+    "2011": 7.943,
+    "2012": 9.973,
+    "2013": 14.07,
+    "2014": 16.226,
+    "2015": 14.403,
+    "2016": 13.058
+   },
+   "revenue_sources": {
+    "2008": "KM3",
+    "2009": "KM4",
+    "2010": "KM5",
+    "2011": "KM6",
+    "2012": "KM7",
+    "2013": "KM7",
+    "2014": "KM7",
+    "2015": "KM7",
+    "2016": "KM7"
+   },
+   "diluted_shares_m": {
+    "2011": 708.0,
+    "2012": 908.0,
+    "2013": 1036.0,
+    "2014": 1137.0,
+    "2015": 2193.0,
+    "2016": 2230.0
+   },
+   "shares_note": "diluted weighted-average Class P shares of the five-year reviews (2011: February 11 to December 31; the KMP, KMR and EPB acquisition of 2014-11-26 more than doubles the count from 2015)",
+   "pe_window_start": "2011-02-11",
+   "prev_fy_op_margin": 12.54,
+   "prev_fy_op_margin_note": "FY16 income before income taxes $1,638M / revenues $13,058M ( FY2016 10-K)",
+   "prev_fy_sales_growth": -9.3,
+   "check_pretax_margin": 12.54,
+   "check_pretax_note": "FY16 income before income taxes / revenues ( FY2016 10-K)",
+   "tax_rate": 0.56,
+   "tax_note": "FY16 effective rate: income tax expense $917M on $1,638M",
+   "dividend_annual": 0.5,
+   "dividend_note": "$0.125 a quarter for the quarter ended December 31, 2016 (KM7, the FY16 10-K)",
+   "fcf_b": 1.905,
+   "fcf_label": "FY16",
+   "fcf_note": "net cash provided by operating activities $4,787M less capital expenditures $2,882M ( FY2016 10-K)",
+   "cash_return_text": "$1,118M of cash dividends on common shares paid in FY16, no share repurchases",
+   "groups": [
+    [
+     "Natural Gas Pipelines",
+     7.998,
+     -8.1
+    ],
+    [
+     "CO2",
+     1.221,
+     -28.1
+    ],
+    [
+     "Terminals",
+     1.921,
+     2.3
+    ],
+    [
+     "Products Pipelines",
+     1.631,
+     -10.8
+    ],
+    [
+     "Kinder Morgan Canada",
+     0.253,
+     -2.7
+    ]
+   ],
+   "groups_basis": "FY16 segment revenues from external customers ( FY2016 10-K)",
+   "why": "The overwhelming majority of cash we generate is supported by multi-year fee-based customer arrangements and therefore is not directly exposed to commodity prices. Risk factor: A sharp decline in the prices of oil, NGL or natural gas, or a prolonged unfavorable price environment, would result in a commensurate reduction in our revenues, income and cash flows from our businesses that produce, process, or purchase and sell oil, NGL, or natural gas, and could have a material adverse effect on the carrying value of our CO2 business segment’s proved reserves.",
+   "reserves_quote": "We own approximately 97% working interest in the SACROC unit, an approximately 50% working interest in the Yates unit, an approximately 99% working interest in the Katz unit and a 99% working interest in the Goldsmith Landreth unit and a 100% working interest in the Tall Cotton field.",
+   "transition_quote": "Such laws or regulations could also lead to reduced demand for hydrocarbon products that are deemed to contribute to greenhouse gases, or restrictions on their use, which in turn could adversely affect demand for our products and services.",
+   "kind_text": "A pipeline transportation and energy storage company",
+   "business_line": "Natural gas, products and CO2 pipelines, terminals and Kinder Morgan Canada",
+   "margin_signal_name": "Pre-tax margin change",
+   "normalization": "diluted EPS from continuing operations of the Class P common stock, GAAP, each year from the latest filing that reports it; 2011 covers only February 11 to December 31, and a year whose listed certain items after tax exceed its income is excluded (no figure excluding only one-offs is published)"
+  },
+  {
+   "published": "2018-02-12",
+   "sources": [
+    "KM8",
+    "KM3",
+    "KM4",
+    "KM5",
+    "KM6",
+    "KM7"
+   ],
+   "company": "Kinder Morgan, Inc.",
+   "exchange": "NYSE",
+   "symbol": "KMI",
+   "fy_label": "FY17",
+   "fiscal_year_ends": {
+    "2017": "2017-12-31"
+   },
+   "eps_normalized": {
+    "2012": 0.56,
+    "2013": 1.15,
+    "2014": 0.89
+   },
+   "eps_excluded": {
+    "2011": "$0.70 a diluted Class P share from continuing operations for February 11 to December 31, 2011 (the IPO period), not a year",
+    "2015": "$0.10 a diluted Class P share from continuing operations (Kinder Morgan, Inc. FY2017 10-K); its listed certain items after tax ($1,314M) exceed its net income available to common stockholders ($311M), with no figure excluding only one-offs",
+    "2016": "$0.25 a diluted Class P share from continuing operations (Kinder Morgan, Inc. FY2017 10-K); its listed certain items after tax ($933M) exceed its net income available to common stockholders ($552M), with no figure excluding only one-offs",
+    "2017": "$0.01 a diluted Class P share from continuing operations (Kinder Morgan, Inc. FY2017 10-K); its listed certain items after tax ($1,445M) exceed its net income available to common stockholders ($27M), with no figure excluding only one-offs"
+   },
+   "revenue_usd_b": {
+    "2008": 11.716,
+    "2009": 6.879,
+    "2010": 7.852,
+    "2011": 7.943,
+    "2012": 9.973,
+    "2013": 14.07,
+    "2014": 16.226,
+    "2015": 14.403,
+    "2016": 13.058,
+    "2017": 13.705
+   },
+   "revenue_sources": {
+    "2008": "KM3",
+    "2009": "KM4",
+    "2010": "KM5",
+    "2011": "KM6",
+    "2012": "KM7",
+    "2013": "KM8",
+    "2014": "KM8",
+    "2015": "KM8",
+    "2016": "KM8",
+    "2017": "KM8"
+   },
+   "diluted_shares_m": {
+    "2011": 708.0,
+    "2012": 908.0,
+    "2013": 1036.0,
+    "2014": 1137.0,
+    "2015": 2193.0,
+    "2016": 2230.0,
+    "2017": 2230.0
+   },
+   "shares_note": "diluted weighted-average Class P shares of the five-year reviews (2011: February 11 to December 31; the KMP, KMR and EPB acquisition of 2014-11-26 more than doubles the count from 2015)",
+   "pe_window_start": "2011-02-11",
+   "prev_fy_op_margin": 15.77,
+   "prev_fy_op_margin_note": "FY17 income before income taxes $2,161M / revenues $13,705M ( FY2017 10-K)",
+   "prev_fy_sales_growth": 5.0,
+   "check_pretax_margin": 15.77,
+   "check_pretax_note": "FY17 income before income taxes / revenues ( FY2017 10-K)",
+   "tax_rate": 0.897,
+   "tax_note": "FY17 effective rate: income tax expense $1,938M on $2,161M",
+   "dividend_annual": 0.5,
+   "dividend_note": "$0.125 a quarter for the quarter ended December 31, 2017 (KM8, the FY17 10-K)",
+   "fcf_b": 1.413,
+   "fcf_label": "FY17",
+   "fcf_note": "net cash provided by operating activities $4,601M less capital expenditures $3,188M ( FY2017 10-K)",
+   "cash_return_text": "$1,120M of cash dividends on common shares paid in FY17, $250M of shares and warrants repurchased",
+   "groups": [
+    [
+     "Natural Gas Pipelines",
+     8.608,
+     7.6
+    ],
+    [
+     "CO2",
+     1.196,
+     -2.0
+    ],
+    [
+     "Terminals",
+     1.965,
+     2.3
+    ],
+    [
+     "Products Pipelines",
+     1.645,
+     0.9
+    ],
+    [
+     "Kinder Morgan Canada",
+     0.256,
+     1.2
+    ]
+   ],
+   "groups_basis": "FY17 segment revenues from external customers ( FY2017 10-K)",
+   "why": "These long-term contracts are typically structured with a fixed-fee reserving the right to transport or store natural gas and specify that we receive the majority of our fee for making the capacity available, whether or not the customer actually chooses to utilize the capacity. Risk factor: A sharp decline in the prices of oil, NGL or natural gas, or a prolonged unfavorable price environment, would result in a commensurate reduction in our revenues, income and cash flows from our businesses that produce, process, or purchase and sell oil, NGL, or natural gas, and could have a material adverse effect on the carrying value of our CO2 business segment’s proved reserves.",
+   "reserves_quote": "We own an approximately 97% working interest in the SACROC unit, an approximately 50% working interest in the Yates unit, an approximately 99% working interest in the Katz unit and a 99% working interest in the Goldsmith Landreth unit and a 100% working interest in the Tall Cotton field.",
+   "transition_quote": "Such laws or regulations could also lead to reduced demand for hydrocarbon products that are deemed to contribute to greenhouse gases, or restrictions on their use, which in turn could adversely affect demand for our products and services.",
+   "kind_text": "A pipeline transportation and energy storage company",
+   "business_line": "Natural gas, products and CO2 pipelines, terminals and Kinder Morgan Canada",
+   "margin_signal_name": "Pre-tax margin change",
+   "normalization": "diluted EPS from continuing operations of the Class P common stock, GAAP, each year from the latest filing that reports it; 2011 covers only February 11 to December 31, and a year whose listed certain items after tax exceed its income is excluded (no figure excluding only one-offs is published)"
   }
  ],
  "prints": [
@@ -896,6 +1460,818 @@
     "source": "KM26",
     "note": "the Q3 2014 10-Q (accepted 2014-10-29 16:14 ET): total segment EBDA $2,097M vs $1,757M, Natural Gas Pipelines $1,182M vs $958M"
    }
+  },
+  {
+   "quarter": "Q4 2014",
+   "fy": 2014,
+   "q": 4,
+   "published": "2015-01-22",
+   "source": "KM40",
+   "release": "Jan 21",
+   "release_time": "after the close on Jan 21: the 8-K was accepted 16:10 ET, the call at 4:30 p.m. ET; public before the open on 2015-01-22",
+   "period_end": "2014-12-31",
+   "raw": {
+    "rev_m": 3951.0,
+    "rev_prior_m": 3872.0,
+    "oi_m": 956.0,
+    "oi_prior_m": 1160.0,
+    "pti_m": 590.0,
+    "pti_prior_m": 773.0,
+    "eps_q": 0.08,
+    "eps_q_prior": 0.33,
+    "dil_sh_m": 1457.0,
+    "div_q": 0.45,
+    "cad_ps": 0.6,
+    "cad_ps_prior": 0.46,
+    "seg_m": 1735.0,
+    "seg_prior_m": 1804.0,
+    "ngp_m": 1051.0,
+    "ngp_prior_m": 926.0
+   },
+   "sales_b": 3.951,
+   "sales_pct": 2.0,
+   "opm": 24.2,
+   "opm_bp": -576.0,
+   "ptm": 14.93,
+   "ptm_bp": -503.0,
+   "eps_q": 0.08,
+   "eps_q_prior": 0.33,
+   "diluted_shares_m": 1457.0,
+   "seg_pct": -3.8,
+   "ngp_pct": 13.5,
+   "seg_note": "the release's segment EBDA table (GAAP): total $1,735M vs $1,804M, Natural Gas Pipelines $1,051M vs $926M",
+   "sales_note": "revenues $3,951M vs $3,872M",
+   "margin_note": "operating income $956M vs $1,160M; income before income taxes $590M vs $773M",
+   "eps_note": "GAAP, diluted per Class P common share, $0.08 against $0.33 a year earlier",
+   "cash_note": "DCF per share before certain items $0.60 vs $0.46 (non-GAAP, display only)",
+   "next_print": "the Q1 2015 release",
+   "fy_actual": {
+    "fy": 2014,
+    "fy_label": "FY14",
+    "eps_normalized": 0.89,
+    "excluded_note": null,
+    "revenue_usd_b": 16.226,
+    "diluted_shares_m": 1137.0,
+    "normalization_note": "FY14 $0.89 diluted per Class P share from the Q4 2014 release (2015-01-22) until the 10-K",
+    "op_margin": 19.05,
+    "op_margin_note": "FY14 income before income taxes $3,091M / revenues $16,226M (Q4 2014 release)",
+    "sales_growth": 15.3,
+    "check_pretax_margin": 19.05,
+    "check_pretax_note": "FY14 income before income taxes / revenues (Q4 2014 release)",
+    "tax_rate": 0.21,
+    "tax_note": "FY14 effective rate: income tax expense $648M on $3,091M",
+    "one_off_test": {
+     "kind": "benefits",
+     "items_after_tax_m": 103.0,
+     "income_attributable_m": 923.0,
+     "distorted": false,
+     "note": "the release's total certain items (after tax) of $103M against the year's net income attributable to KMI of $1,026M (the mirror test: $103M of net benefit against $923M without it): kept at GAAP"
+    }
+   }
+  },
+  {
+   "quarter": "Q1 2015",
+   "fy": 2015,
+   "q": 1,
+   "published": "2015-04-16",
+   "source": "KM41",
+   "release": "Apr 15",
+   "release_time": "after the close on Apr 15: the 8-K was accepted 16:10 ET, the call at 4:30 p.m. ET; public before the open on 2015-04-16",
+   "period_end": "2015-03-31",
+   "raw": {
+    "rev_m": 3597.0,
+    "rev_prior_m": 4047.0,
+    "oi_m": 1115.0,
+    "oi_prior_m": 1147.0,
+    "pti_m": 703.0,
+    "pti_prior_m": 801.0,
+    "eps_q": 0.22,
+    "eps_q_prior": 0.28,
+    "dil_sh_m": 2151.0,
+    "div_q": 0.48,
+    "cad_ps": 0.58,
+    "cad_ps_prior": 0.55,
+    "seg_m": 1902.0,
+    "seg_prior_m": 1906.0,
+    "ngp_m": 1015.0,
+    "ngp_prior_m": 1070.0
+   },
+   "sales_b": 3.597,
+   "sales_pct": -11.1,
+   "opm": 31.0,
+   "opm_bp": 266.0,
+   "ptm": 19.54,
+   "ptm_bp": -25.0,
+   "eps_q": 0.22,
+   "eps_q_prior": 0.28,
+   "diluted_shares_m": 2151.0,
+   "seg_pct": -0.2,
+   "ngp_pct": -5.1,
+   "seg_note": "the release's segment EBDA table (GAAP): total $1,902M vs $1,906M, Natural Gas Pipelines $1,015M vs $1,070M",
+   "sales_note": "revenues $3,597M vs $4,047M",
+   "margin_note": "operating income $1,115M vs $1,147M; income before income taxes $703M vs $801M",
+   "eps_note": "GAAP, diluted per Class P common share, $0.22 against $0.28 a year earlier",
+   "cash_note": "DCF per share before certain items $0.58 vs $0.55 (non-GAAP, display only)",
+   "next_print": "the Q2 2015 release"
+  },
+  {
+   "quarter": "Q2 2015",
+   "fy": 2015,
+   "q": 2,
+   "published": "2015-07-16",
+   "source": "KM42",
+   "release": "Jul 15",
+   "release_time": "after the close on Jul 15: the 8-K was accepted 16:07 ET, the call at 4:30 p.m. ET; public before the open on 2015-07-16",
+   "period_end": "2015-06-30",
+   "raw": {
+    "rev_m": 3463.0,
+    "rev_prior_m": 3937.0,
+    "oi_m": 892.0,
+    "oi_prior_m": 1013.0,
+    "pti_m": 531.0,
+    "pti_prior_m": 675.0,
+    "eps_q": 0.15,
+    "eps_q_prior": 0.27,
+    "dil_sh_m": 2187.0,
+    "div_q": 0.49,
+    "cad_ps": 0.5,
+    "cad_ps_prior": 0.32,
+    "seg_m": 1721.0,
+    "seg_prior_m": 1762.0,
+    "ngp_m": 928.0,
+    "ngp_prior_m": 955.0
+   },
+   "sales_b": 3.463,
+   "sales_pct": -12.0,
+   "opm": 25.76,
+   "opm_bp": 3.0,
+   "ptm": 15.33,
+   "ptm_bp": -182.0,
+   "eps_q": 0.15,
+   "eps_q_prior": 0.27,
+   "diluted_shares_m": 2187.0,
+   "seg_pct": -2.3,
+   "ngp_pct": -2.8,
+   "seg_note": "the release's segment EBDA table (GAAP): total $1,721M vs $1,762M, Natural Gas Pipelines $928M vs $955M",
+   "sales_note": "revenues $3,463M vs $3,937M",
+   "margin_note": "operating income $892M vs $1,013M; income before income taxes $531M vs $675M",
+   "eps_note": "GAAP, diluted per Class P common share, $0.15 against $0.27 a year earlier",
+   "cash_note": "DCF per share before certain items $0.50 vs $0.32 (non-GAAP, display only)",
+   "next_print": "the Q3 2015 release"
+  },
+  {
+   "quarter": "Q3 2015",
+   "fy": 2015,
+   "q": 3,
+   "published": "2015-10-22",
+   "source": "KM43",
+   "release": "Oct 21",
+   "release_time": "after the close on Oct 21: the 8-K was accepted 16:14 ET, the call at 4:30 p.m. ET; public before the open on 2015-10-22",
+   "period_end": "2015-09-30",
+   "raw": {
+    "rev_m": 3707.0,
+    "rev_prior_m": 4291.0,
+    "oi_m": 721.0,
+    "oi_prior_m": 1332.0,
+    "pti_m": 291.0,
+    "pti_prior_m": 1025.0,
+    "eps_q": 0.08,
+    "eps_q_prior": 0.32,
+    "dil_sh_m": 2203.0,
+    "div_q": 0.51,
+    "cad_ps": 0.51,
+    "cad_ps_prior": 0.42,
+    "seg_m": 1592.0,
+    "seg_prior_m": 2097.0,
+    "ngp_m": 993.0,
+    "ngp_prior_m": 1182.0
+   },
+   "sales_b": 3.707,
+   "sales_pct": -13.6,
+   "opm": 19.45,
+   "opm_bp": -1159.0,
+   "ptm": 7.85,
+   "ptm_bp": -1604.0,
+   "eps_q": 0.08,
+   "eps_q_prior": 0.32,
+   "diluted_shares_m": 2203.0,
+   "seg_pct": -24.1,
+   "ngp_pct": -16.0,
+   "seg_note": "the release's segment EBDA table (GAAP): total $1,592M vs $2,097M, Natural Gas Pipelines $993M vs $1,182M",
+   "sales_note": "revenues $3,707M vs $4,291M",
+   "margin_note": "operating income $721M vs $1,332M; income before income taxes $291M vs $1,025M",
+   "eps_note": "GAAP, diluted per Class P common share, $0.08 against $0.32 a year earlier",
+   "cash_note": "DCF per share before certain items $0.51 vs $0.42 (non-GAAP, display only)",
+   "next_print": "the Q4 2015 release"
+  },
+  {
+   "quarter": "Q4 2015",
+   "fy": 2015,
+   "q": 4,
+   "published": "2016-01-21",
+   "source": "KM44",
+   "release": "Jan 20",
+   "release_time": "after the close on Jan 20: the 8-K was accepted 16:09 ET, the call at 4:30 p.m. ET; public before the open on 2016-01-21",
+   "period_end": "2015-12-31",
+   "raw": {
+    "rev_m": 3636.0,
+    "rev_prior_m": 3951.0,
+    "oi_m": -69.0,
+    "oi_prior_m": 956.0,
+    "pti_m": -518.0,
+    "pti_prior_m": 590.0,
+    "eps_q": -0.29,
+    "eps_q_prior": 0.08,
+    "dil_sh_m": 2229.0,
+    "div_q": 0.125,
+    "cad_ps": 0.55,
+    "cad_ps_prior": 0.6,
+    "seg_m": 739.0,
+    "seg_prior_m": 1729.0,
+    "ngp_m": 127.0,
+    "ngp_prior_m": 1052.0
+   },
+   "sales_b": 3.636,
+   "sales_pct": -8.0,
+   "opm": -1.9,
+   "opm_bp": -2610.0,
+   "ptm": -14.25,
+   "ptm_bp": -2918.0,
+   "eps_q": -0.29,
+   "eps_q_prior": 0.08,
+   "diluted_shares_m": 2229.0,
+   "seg_pct": -57.3,
+   "ngp_pct": -87.9,
+   "seg_note": "the release's segment EBDA table (GAAP): total $739M vs $1,729M, Natural Gas Pipelines $127M vs $1,052M",
+   "sales_note": "revenues $3,636M vs $3,951M",
+   "margin_note": "operating income $-69M vs $956M; income before income taxes $-518M vs $590M",
+   "eps_note": "GAAP, diluted per Class P common share, $(0.29) against $0.08 a year earlier",
+   "cash_note": "DCF per common share before certain items $0.55 vs $0.60 (non-GAAP, display only)",
+   "next_print": "the Q1 2016 release",
+   "fy_actual": {
+    "fy": 2015,
+    "fy_label": "FY15",
+    "eps_normalized": null,
+    "excluded_note": "$0.14 a diluted Class P share (Q4 2015 release); its listed certain items after tax ($1,314M) exceed its net income available to common stockholders ($311M), with no figure excluding only one-offs",
+    "revenue_usd_b": 14.403,
+    "diluted_shares_m": 2193.0,
+    "normalization_note": "FY15 $0.14 diluted per Class P share from the Q4 2015 release (2016-01-21) is excluded (distorted)",
+    "op_margin": 6.58,
+    "op_margin_note": "FY15 income before income taxes $947M / revenues $14,403M (Q4 2015 release)",
+    "sales_growth": -11.2,
+    "check_pretax_margin": 6.58,
+    "check_pretax_note": "FY15 income before income taxes / revenues (Q4 2015 release)",
+    "tax_rate": 0.646,
+    "tax_note": "FY15 effective rate: income tax expense $612M on $947M",
+    "one_off_test": {
+     "kind": "charges",
+     "items_after_tax_m": 1314.0,
+     "income_attributable_m": 311.0,
+     "distorted": true,
+     "note": "the release's total certain items (after tax) of $(1,314)M against the year's net income available to common stockholders of $311M: distorted, and no figure excluding only one-offs is published (KMI's certain items include recurring fair value amortization and derivative mark-to-market), so the year is excluded"
+    }
+   }
+  },
+  {
+   "quarter": "Q1 2016",
+   "fy": 2016,
+   "q": 1,
+   "published": "2016-04-21",
+   "source": "KM45",
+   "release": "Apr 20",
+   "release_time": "after the close on Apr 20: the 8-K was accepted 16:14 ET, the call at 4:30 p.m. ET; public before the open on 2016-04-21",
+   "period_end": "2016-03-31",
+   "raw": {
+    "rev_m": 3195.0,
+    "rev_prior_m": 3597.0,
+    "oi_m": 816.0,
+    "oi_prior_m": 1078.0,
+    "pti_m": 468.0,
+    "pti_prior_m": 643.0,
+    "eps_q": 0.12,
+    "eps_q_prior": 0.2,
+    "dil_sh_m": 2229.0,
+    "div_q": 0.125,
+    "cad_ps": 0.55,
+    "cad_ps_prior": 0.58,
+    "seg_m": 1642.0,
+    "seg_prior_m": 1902.0,
+    "ngp_m": 992.0,
+    "ngp_prior_m": 1015.0
+   },
+   "sales_b": 3.195,
+   "sales_pct": -11.2,
+   "opm": 25.54,
+   "opm_bp": -443.0,
+   "ptm": 14.65,
+   "ptm_bp": -323.0,
+   "eps_q": 0.12,
+   "eps_q_prior": 0.2,
+   "diluted_shares_m": 2229.0,
+   "seg_pct": -13.7,
+   "ngp_pct": -2.3,
+   "seg_note": "the release's segment EBDA table (GAAP): total $1,642M vs $1,902M, Natural Gas Pipelines $992M vs $1,015M",
+   "sales_note": "revenues $3,195M vs $3,597M",
+   "margin_note": "operating income $816M vs $1,078M; income before income taxes $468M vs $643M",
+   "eps_note": "GAAP, diluted per Class P common share, $0.12 against $0.20 a year earlier",
+   "cash_note": "DCF per common share before certain items $0.55 vs $0.58 (non-GAAP, display only)",
+   "next_print": "the Q2 2016 release"
+  },
+  {
+   "quarter": "Q2 2016",
+   "fy": 2016,
+   "q": 2,
+   "published": "2016-07-21",
+   "source": "KM46",
+   "release": "Jul 20",
+   "release_time": "after the close on Jul 20: the 8-K was accepted 16:08 ET, the call at 4:30 p.m. ET; public before the open on 2016-07-21",
+   "period_end": "2016-06-30",
+   "raw": {
+    "rev_m": 3144.0,
+    "rev_prior_m": 3463.0,
+    "oi_m": 940.0,
+    "oi_prior_m": 892.0,
+    "pti_m": 588.0,
+    "pti_prior_m": 531.0,
+    "eps_q": 0.15,
+    "eps_q_prior": 0.15,
+    "dil_sh_m": 2229.0,
+    "div_q": 0.125,
+    "cad_ps": 0.47,
+    "cad_ps_prior": 0.5,
+    "seg_m": 1789.0,
+    "seg_prior_m": 1721.0,
+    "ngp_m": 966.0,
+    "ngp_prior_m": 928.0
+   },
+   "sales_b": 3.144,
+   "sales_pct": -9.2,
+   "opm": 29.9,
+   "opm_bp": 414.0,
+   "ptm": 18.7,
+   "ptm_bp": 337.0,
+   "eps_q": 0.15,
+   "eps_q_prior": 0.15,
+   "diluted_shares_m": 2229.0,
+   "seg_pct": 4.0,
+   "ngp_pct": 4.1,
+   "seg_note": "the release's segment EBDA table (GAAP): total $1,789M vs $1,721M, Natural Gas Pipelines $966M vs $928M",
+   "sales_note": "revenues $3,144M vs $3,463M",
+   "margin_note": "operating income $940M vs $892M; income before income taxes $588M vs $531M",
+   "eps_note": "GAAP, diluted per Class P common share, $0.15 against $0.15 a year earlier",
+   "cash_note": "DCF per common share $0.47 vs $0.50 (non-GAAP, display only)",
+   "next_print": "the Q3 2016 release"
+  },
+  {
+   "quarter": "Q3 2016",
+   "fy": 2016,
+   "q": 3,
+   "published": "2016-10-20",
+   "source": "KM47",
+   "release": "Oct 19",
+   "release_time": "after the close on Oct 19: the 8-K was accepted 16:11 ET, the call at 4:30 p.m. ET; public before the open on 2016-10-20",
+   "period_end": "2016-09-30",
+   "raw": {
+    "rev_m": 3330.0,
+    "rev_prior_m": 3707.0,
+    "oi_m": 882.0,
+    "oi_prior_m": 721.0,
+    "pti_m": 194.0,
+    "pti_prior_m": 291.0,
+    "eps_q": -0.1,
+    "eps_q_prior": 0.08,
+    "dil_sh_m": 2230.0,
+    "div_q": 0.125,
+    "cad_ps": 0.48,
+    "cad_ps_prior": 0.51,
+    "seg_m": 1381.0,
+    "seg_prior_m": 1592.0,
+    "ngp_m": 540.0,
+    "ngp_prior_m": 993.0
+   },
+   "sales_b": 3.33,
+   "sales_pct": -10.2,
+   "opm": 26.49,
+   "opm_bp": 704.0,
+   "ptm": 5.83,
+   "ptm_bp": -202.0,
+   "eps_q": -0.1,
+   "eps_q_prior": 0.08,
+   "diluted_shares_m": 2230.0,
+   "seg_pct": -13.3,
+   "ngp_pct": -45.6,
+   "seg_note": "the release's segment EBDA table (GAAP): total $1,381M vs $1,592M, Natural Gas Pipelines $540M vs $993M",
+   "sales_note": "revenues $3,330M vs $3,707M",
+   "margin_note": "operating income $882M vs $721M; income before income taxes $194M vs $291M",
+   "eps_note": "GAAP, diluted per Class P common share, $(0.10) against $0.08 a year earlier",
+   "cash_note": "DCF per common share $0.48 vs $0.51 (non-GAAP, display only)",
+   "next_print": "the Q4 2016 release"
+  },
+  {
+   "quarter": "Q4 2016",
+   "fy": 2016,
+   "q": 4,
+   "published": "2017-01-19",
+   "source": "KM48",
+   "release": "Jan 18",
+   "release_time": "after the close on Jan 18: the 8-K was accepted 16:09 ET, the call at 4:30 p.m. ET; public before the open on 2017-01-19",
+   "period_end": "2016-12-31",
+   "raw": {
+    "rev_m": 3389.0,
+    "rev_prior_m": 3636.0,
+    "oi_m": 934.0,
+    "oi_prior_m": -244.0,
+    "pti_m": 388.0,
+    "pti_prior_m": -693.0,
+    "eps_q": 0.08,
+    "eps_q_prior": -0.32,
+    "dil_sh_m": 2230.0,
+    "div_q": 0.125,
+    "cad_ps": 0.51,
+    "cad_ps_prior": 0.55,
+    "seg_m": 1472.0,
+    "seg_prior_m": 564.0,
+    "ngp_m": 706.0,
+    "ngp_prior_m": 127.0
+   },
+   "sales_b": 3.389,
+   "sales_pct": -6.8,
+   "opm": 27.56,
+   "opm_bp": 3427.0,
+   "ptm": 11.45,
+   "ptm_bp": 3051.0,
+   "eps_q": 0.08,
+   "eps_q_prior": -0.32,
+   "diluted_shares_m": 2230.0,
+   "seg_pct": 161.0,
+   "ngp_pct": 455.9,
+   "seg_note": "the release's segment EBDA table (GAAP): total $1,472M vs $564M, Natural Gas Pipelines $706M vs $127M",
+   "sales_note": "revenues $3,389M vs $3,636M",
+   "margin_note": "operating income $934M vs $-244M; income before income taxes $388M vs $-693M",
+   "eps_note": "GAAP, diluted per Class P common share, $0.08 against $(0.32) a year earlier",
+   "cash_note": "DCF per common share $0.51 vs $0.55 (non-GAAP, display only)",
+   "next_print": "the Q1 2017 release",
+   "fy_actual": {
+    "fy": 2016,
+    "fy_label": "FY16",
+    "eps_normalized": null,
+    "excluded_note": "$0.25 a diluted Class P share (Q4 2016 release); its listed certain items after tax ($933M) exceed its net income available to common stockholders ($552M), with no figure excluding only one-offs",
+    "revenue_usd_b": 13.058,
+    "diluted_shares_m": 2230.0,
+    "normalization_note": "FY16 $0.25 diluted per Class P share from the Q4 2016 release (2017-01-19) is excluded (distorted)",
+    "op_margin": 12.54,
+    "op_margin_note": "FY16 income before income taxes $1,638M / revenues $13,058M (Q4 2016 release)",
+    "sales_growth": -9.3,
+    "check_pretax_margin": 12.54,
+    "check_pretax_note": "FY16 income before income taxes / revenues (Q4 2016 release)",
+    "tax_rate": 0.56,
+    "tax_note": "FY16 effective rate: income tax expense $917M on $1,638M",
+    "one_off_test": {
+     "kind": "charges",
+     "items_after_tax_m": 933.0,
+     "income_attributable_m": 552.0,
+     "distorted": true,
+     "note": "the release's total certain items (after tax) of $(933)M against the year's net income available to common stockholders of $552M: distorted, and no figure excluding only one-offs is published (KMI's certain items include recurring fair value amortization and derivative mark-to-market), so the year is excluded"
+    }
+   }
+  },
+  {
+   "quarter": "Q1 2017",
+   "fy": 2017,
+   "q": 1,
+   "published": "2017-04-20",
+   "source": "KM49",
+   "release": "Apr 19",
+   "release_time": "after the close on Apr 19: the 8-K was accepted 16:12 ET, the call at 4:30 p.m. ET; public before the open on 2017-04-20",
+   "period_end": "2017-03-31",
+   "raw": {
+    "rev_m": 3424.0,
+    "rev_prior_m": 3195.0,
+    "oi_m": 980.0,
+    "oi_prior_m": 816.0,
+    "pti_m": 691.0,
+    "pti_prior_m": 468.0,
+    "eps_q": 0.18,
+    "eps_q_prior": 0.12,
+    "dil_sh_m": 2230.0,
+    "div_q": 0.125,
+    "cad_ps": 0.54,
+    "cad_ps_prior": 0.55,
+    "seg_m": 1910.0,
+    "seg_prior_m": 1664.0,
+    "ngp_m": 1055.0,
+    "ngp_prior_m": 994.0
+   },
+   "sales_b": 3.424,
+   "sales_pct": 7.2,
+   "opm": 28.62,
+   "opm_bp": 308.0,
+   "ptm": 20.18,
+   "ptm_bp": 553.0,
+   "eps_q": 0.18,
+   "eps_q_prior": 0.12,
+   "diluted_shares_m": 2230.0,
+   "seg_pct": 14.8,
+   "ngp_pct": 6.1,
+   "seg_note": "the release's segment EBDA table (GAAP): total $1,910M vs $1,664M, Natural Gas Pipelines $1,055M vs $994M",
+   "sales_note": "revenues $3,424M vs $3,195M",
+   "margin_note": "operating income $980M vs $816M; income before income taxes $691M vs $468M",
+   "eps_note": "GAAP, diluted per Class P common share, $0.18 against $0.12 a year earlier",
+   "cash_note": "DCF per common share $0.54 vs $0.55; adjusted earnings per common share $0.17 vs $0.18 (non-GAAP, display only)",
+   "next_print": "the Q2 2017 release"
+  },
+  {
+   "quarter": "Q2 2017",
+   "fy": 2017,
+   "q": 2,
+   "published": "2017-07-20",
+   "source": "KM50",
+   "release": "Jul 19",
+   "release_time": "after the close on Jul 19: the 8-K was accepted 16:10 ET, the call at 4:30 p.m. ET; public before the open on 2017-07-20",
+   "period_end": "2017-06-30",
+   "raw": {
+    "rev_m": 3368.0,
+    "rev_prior_m": 3144.0,
+    "oi_m": 922.0,
+    "oi_prior_m": 940.0,
+    "pti_m": 599.0,
+    "pti_prior_m": 588.0,
+    "eps_q": 0.15,
+    "eps_q_prior": 0.15,
+    "dil_sh_m": 2230.0,
+    "div_q": 0.125,
+    "cad_ps": 0.46,
+    "cad_ps_prior": 0.47,
+    "seg_m": 1799.0,
+    "seg_prior_m": 1811.0,
+    "ngp_m": 907.0,
+    "ngp_prior_m": 967.0
+   },
+   "sales_b": 3.368,
+   "sales_pct": 7.1,
+   "opm": 27.38,
+   "opm_bp": -252.0,
+   "ptm": 17.79,
+   "ptm_bp": -91.0,
+   "eps_q": 0.15,
+   "eps_q_prior": 0.15,
+   "diluted_shares_m": 2230.0,
+   "seg_pct": -0.7,
+   "ngp_pct": -6.2,
+   "seg_note": "the release's segment EBDA table (GAAP): total $1,799M vs $1,811M, Natural Gas Pipelines $907M vs $967M",
+   "sales_note": "revenues $3,368M vs $3,144M",
+   "margin_note": "operating income $922M vs $940M; income before income taxes $599M vs $588M",
+   "eps_note": "GAAP, diluted per Class P common share, $0.15 against $0.15 a year earlier",
+   "cash_note": "DCF per common share $0.46 vs $0.47; adjusted earnings per common share $0.14 vs $0.14 (non-GAAP, display only)",
+   "next_print": "the Q3 2017 release"
+  },
+  {
+   "quarter": "Q3 2017",
+   "fy": 2017,
+   "q": 3,
+   "published": "2017-10-19",
+   "source": "KM51",
+   "release": "Oct 18",
+   "release_time": "after the close on Oct 18: the 8-K was accepted 16:13 ET, the call at 4:30 p.m. ET; public before the open on 2017-10-19",
+   "period_end": "2017-09-30",
+   "raw": {
+    "rev_m": 3281.0,
+    "rev_prior_m": 3330.0,
+    "oi_m": 830.0,
+    "oi_prior_m": 882.0,
+    "pti_m": 547.0,
+    "pti_prior_m": 194.0,
+    "eps_q": 0.15,
+    "eps_q_prior": -0.1,
+    "dil_sh_m": 2231.0,
+    "div_q": 0.125,
+    "cad_ps": 0.47,
+    "cad_ps_prior": 0.48,
+    "seg_m": 1747.0,
+    "seg_prior_m": 1393.0,
+    "ngp_m": 884.0,
+    "ngp_prior_m": 542.0
+   },
+   "sales_b": 3.281,
+   "sales_pct": -1.5,
+   "opm": 25.3,
+   "opm_bp": -119.0,
+   "ptm": 16.67,
+   "ptm_bp": 1084.0,
+   "eps_q": 0.15,
+   "eps_q_prior": -0.1,
+   "diluted_shares_m": 2231.0,
+   "seg_pct": 25.4,
+   "ngp_pct": 63.1,
+   "seg_note": "the release's segment EBDA table (GAAP): total $1,747M vs $1,393M, Natural Gas Pipelines $884M vs $542M",
+   "sales_note": "revenues $3,281M vs $3,330M",
+   "margin_note": "operating income $830M vs $882M; income before income taxes $547M vs $194M",
+   "eps_note": "GAAP, diluted per Class P common share, $0.15 against $(0.10) a year earlier",
+   "cash_note": "DCF per common share $0.47 vs $0.48; adjusted earnings per common share $0.15 vs $0.15 (non-GAAP, display only)",
+   "next_print": "the Q4 2017 release"
+  },
+  {
+   "quarter": "Q4 2017",
+   "fy": 2017,
+   "q": 4,
+   "published": "2018-01-18",
+   "source": "KM52",
+   "release": "Jan 17",
+   "release_time": "after the close on Jan 17: the 8-K was accepted 16:12 ET, the call at 4:30 p.m. ET; public before the open on 2018-01-18",
+   "period_end": "2017-12-31",
+   "raw": {
+    "rev_m": 3632.0,
+    "rev_prior_m": 3389.0,
+    "oi_m": 812.0,
+    "oi_prior_m": 934.0,
+    "pti_m": 324.0,
+    "pti_prior_m": 388.0,
+    "eps_q": -0.47,
+    "eps_q_prior": 0.08,
+    "dil_sh_m": 2229.0,
+    "div_q": 0.125,
+    "cad_ps": 0.53,
+    "cad_ps_prior": 0.51,
+    "seg_m": 1519.0,
+    "seg_prior_m": 1496.0,
+    "ngp_m": 641.0,
+    "ngp_prior_m": 708.0
+   },
+   "sales_b": 3.632,
+   "sales_pct": 7.2,
+   "opm": 22.36,
+   "opm_bp": -520.0,
+   "ptm": 8.92,
+   "ptm_bp": -253.0,
+   "eps_q": -0.47,
+   "eps_q_prior": 0.08,
+   "diluted_shares_m": 2229.0,
+   "seg_pct": 1.5,
+   "ngp_pct": -9.5,
+   "seg_note": "the release's segment EBDA table (GAAP): total $1,519M vs $1,496M, Natural Gas Pipelines $641M vs $708M",
+   "sales_note": "revenues $3,632M vs $3,389M",
+   "margin_note": "operating income $812M vs $934M; income before income taxes $324M vs $388M",
+   "eps_note": "GAAP, diluted per Class P common share, $(0.47) against $0.08 a year earlier",
+   "cash_note": "DCF per common share $0.53 vs $0.51; adjusted earnings per common share $0.21 vs $0.18 (non-GAAP, display only)",
+   "next_print": "the Q1 2018 release",
+   "fy_actual": {
+    "fy": 2017,
+    "fy_label": "FY17",
+    "eps_normalized": null,
+    "excluded_note": "$0.01 a diluted Class P share (Q4 2017 release); its listed certain items after tax ($1,445M) exceed its net income available to common stockholders ($27M), with no figure excluding only one-offs",
+    "revenue_usd_b": 13.705,
+    "diluted_shares_m": 2230.0,
+    "normalization_note": "FY17 $0.01 diluted per Class P share from the Q4 2017 release (2018-01-18) is excluded (distorted)",
+    "op_margin": 15.77,
+    "op_margin_note": "FY17 income before income taxes $2,161M / revenues $13,705M (Q4 2017 release)",
+    "sales_growth": 5.0,
+    "check_pretax_margin": 15.77,
+    "check_pretax_note": "FY17 income before income taxes / revenues (Q4 2017 release)",
+    "tax_rate": 0.897,
+    "tax_note": "FY17 effective rate: income tax expense $1,938M on $2,161M",
+    "one_off_test": {
+     "kind": "charges",
+     "items_after_tax_m": 1445.0,
+     "income_attributable_m": 27.0,
+     "distorted": true,
+     "note": "the release's total certain items (after tax) of $(1,445)M against the year's net income available to common stockholders of $27M: distorted, and no figure excluding only one-offs is published (KMI's certain items include recurring fair value amortization and derivative mark-to-market), so the year is excluded"
+    }
+   }
+  },
+  {
+   "quarter": "Q1 2018",
+   "fy": 2018,
+   "q": 1,
+   "published": "2018-04-19",
+   "source": "KM53",
+   "release": "Apr 18",
+   "release_time": "after the close on Apr 18: the 8-K was accepted 16:12 ET, the call at 4:30 p.m. ET; public before the open on 2018-04-19",
+   "period_end": "2018-03-31",
+   "raw": {
+    "rev_m": 3418.0,
+    "rev_prior_m": 3424.0,
+    "oi_m": 949.0,
+    "oi_prior_m": 977.0,
+    "pti_m": 706.0,
+    "pti_prior_m": 691.0,
+    "eps_q": 0.22,
+    "eps_q_prior": 0.18,
+    "dil_sh_m": 2207.0,
+    "div_q": 0.2,
+    "cad_ps": 0.56,
+    "cad_ps_prior": 0.54,
+    "seg_m": 1935.0,
+    "seg_prior_m": 1910.0,
+    "ngp_m": 1136.0,
+    "ngp_prior_m": 1055.0
+   },
+   "sales_b": 3.418,
+   "sales_pct": -0.2,
+   "opm": 27.76,
+   "opm_bp": -77.0,
+   "ptm": 20.66,
+   "ptm_bp": 48.0,
+   "eps_q": 0.22,
+   "eps_q_prior": 0.18,
+   "diluted_shares_m": 2207.0,
+   "seg_pct": 1.3,
+   "ngp_pct": 7.7,
+   "seg_note": "the release's segment EBDA table (GAAP): total $1,935M vs $1,910M, Natural Gas Pipelines $1,136M vs $1,055M",
+   "sales_note": "revenues $3,418M vs $3,424M",
+   "margin_note": "operating income $949M vs $977M; income before income taxes $706M vs $691M",
+   "eps_note": "GAAP, diluted per Class P common share, $0.22 against $0.18 a year earlier",
+   "cash_note": "DCF per common share $0.56 vs $0.54; adjusted earnings per common share $0.22 vs $0.17 (non-GAAP, display only)",
+   "next_print": "the Q2 2018 release"
+  },
+  {
+   "quarter": "Q2 2018",
+   "fy": 2018,
+   "q": 2,
+   "published": "2018-07-19",
+   "source": "KM54",
+   "release": "Jul 18",
+   "release_time": "after the close on Jul 18: the 8-K was accepted 16:13 ET, the call at 4:30 p.m. ET; public before the open on 2018-07-19",
+   "period_end": "2018-06-30",
+   "raw": {
+    "rev_m": 3428.0,
+    "rev_prior_m": 3368.0,
+    "oi_m": 272.0,
+    "oi_prior_m": 918.0,
+    "pti_m": -176.0,
+    "pti_prior_m": 599.0,
+    "eps_q": -0.08,
+    "eps_q_prior": 0.15,
+    "dil_sh_m": 2204.0,
+    "div_q": 0.2,
+    "cad_ps": 0.5,
+    "cad_ps_prior": 0.46,
+    "seg_m": 1109.0,
+    "seg_prior_m": 1799.0,
+    "ngp_m": 313.0,
+    "ngp_prior_m": 907.0
+   },
+   "sales_b": 3.428,
+   "sales_pct": 1.8,
+   "opm": 7.93,
+   "opm_bp": -1933.0,
+   "ptm": -5.13,
+   "ptm_bp": -2292.0,
+   "eps_q": -0.08,
+   "eps_q_prior": 0.15,
+   "diluted_shares_m": 2204.0,
+   "seg_pct": -38.4,
+   "ngp_pct": -65.5,
+   "seg_note": "the release's segment EBDA table (GAAP): total $1,109M vs $1,799M, Natural Gas Pipelines $313M vs $907M",
+   "sales_note": "revenues $3,428M vs $3,368M",
+   "margin_note": "operating income $272M vs $918M; income before income taxes $-176M vs $599M",
+   "eps_note": "GAAP, diluted per Class P common share, $(0.08) against $0.15 a year earlier",
+   "cash_note": "DCF per common share $0.50 vs $0.46; adjusted earnings per common share $0.21 vs $0.14 (non-GAAP, display only)",
+   "next_print": "the Q3 2018 release"
+  },
+  {
+   "quarter": "Q3 2018",
+   "fy": 2018,
+   "q": 3,
+   "published": "2018-10-18",
+   "source": "KM55",
+   "release": "Oct 17",
+   "release_time": "after the close on Oct 17: the 8-K was accepted 16:24 ET, the call at 4:30 p.m. ET; public before the open on 2018-10-18",
+   "period_end": "2018-09-30",
+   "raw": {
+    "rev_m": 3517.0,
+    "rev_prior_m": 3281.0,
+    "oi_m": 1515.0,
+    "oi_prior_m": 826.0,
+    "pti_m": 1201.0,
+    "pti_prior_m": 547.0,
+    "eps_q": 0.31,
+    "eps_q_prior": 0.15,
+    "dil_sh_m": 2205.0,
+    "div_q": 0.2,
+    "cad_ps": 0.49,
+    "cad_ps_prior": 0.47,
+    "seg_m": 2415.0,
+    "seg_prior_m": 1747.0,
+    "ngp_m": 976.0,
+    "ngp_prior_m": 884.0
+   },
+   "sales_b": 3.517,
+   "sales_pct": 7.2,
+   "opm": 43.08,
+   "opm_bp": 1790.0,
+   "ptm": 34.15,
+   "ptm_bp": 1748.0,
+   "eps_q": 0.31,
+   "eps_q_prior": 0.15,
+   "diluted_shares_m": 2205.0,
+   "seg_pct": 38.2,
+   "ngp_pct": 10.4,
+   "seg_note": "the release's segment EBDA table (GAAP): total $2,415M vs $1,747M, Natural Gas Pipelines $976M vs $884M",
+   "sales_note": "revenues $3,517M vs $3,281M",
+   "margin_note": "operating income $1,515M vs $826M; income before income taxes $1,201M vs $547M",
+   "eps_note": "GAAP, diluted per Class P common share, $0.31 against $0.15 a year earlier",
+   "cash_note": "DCF per common share $0.49 vs $0.47; adjusted earnings per common share $0.21 vs $0.15 (non-GAAP, display only)",
+   "next_print": "the Q4 2018 release"
   }
  ],
  "guides": [
@@ -970,6 +2346,134 @@
    "doc": "Q2 2014 release",
    "rev_none": true,
    "display": "dividends: \"as previously announced, KMI expects to declare dividends of at least $1.72 per share for 2014\" (a dividend outlook, not an earnings or revenue guide: display only)"
+  },
+  {
+   "fy": 2015,
+   "published": "2015-01-22",
+   "source": "KM40",
+   "doc": "Q4 2014 release",
+   "rev_none": true,
+   "display": "dividends: \"kMI issued its preliminary financial projections for 2015 and said it expected to declare dividends of $2.00 per share\" (a dividend outlook, not an earnings or revenue guide: display only)"
+  },
+  {
+   "fy": 2015,
+   "published": "2015-04-16",
+   "source": "KM41",
+   "doc": "Q1 2015 release",
+   "rev_none": true,
+   "display": "dividends: \"kMI expects to declare dividends of $2.00 per share for 2015\" (a dividend outlook, not an earnings or revenue guide: display only)"
+  },
+  {
+   "fy": 2015,
+   "published": "2015-07-16",
+   "source": "KM42",
+   "doc": "Q2 2015 release",
+   "rev_none": true,
+   "display": "dividends: \"kMI expects to declare dividends of $2.00 per share for 2015\" (a dividend outlook, not an earnings or revenue guide: display only)"
+  },
+  {
+   "fy": 2015,
+   "published": "2015-10-22",
+   "source": "KM43",
+   "doc": "Q3 2015 release",
+   "rev_none": true,
+   "display": "dividends: \"our full-year dividend target of $2.00 per share\" (a dividend outlook, not an earnings or revenue guide: display only)"
+  },
+  {
+   "fy": 2016,
+   "published": "2016-01-21",
+   "source": "KM44",
+   "doc": "Q4 2015 release",
+   "rev_none": true,
+   "display": "dividends: \"kMI expects to declare dividends of $0.50 per share for 2016\" (a dividend outlook, not an earnings or revenue guide: display only)"
+  },
+  {
+   "fy": 2016,
+   "published": "2016-04-21",
+   "source": "KM45",
+   "doc": "Q1 2016 release",
+   "rev_none": true,
+   "display": "dividends: \"kMI expects to declare dividends of $0.50 per share for 2016\" (a dividend outlook, not an earnings or revenue guide: display only)"
+  },
+  {
+   "fy": 2016,
+   "published": "2016-07-21",
+   "source": "KM46",
+   "doc": "Q2 2016 release",
+   "rev_none": true,
+   "display": "dividends: \"kMI expects to declare dividends of $0.50 per share for 2016\" (a dividend outlook, not an earnings or revenue guide: display only)"
+  },
+  {
+   "fy": 2016,
+   "published": "2016-10-20",
+   "source": "KM47",
+   "doc": "Q3 2016 release",
+   "rev_none": true,
+   "display": "dividends: \"kMI expects to declare dividends of $0.50 per share for 2016\" (a dividend outlook, not an earnings or revenue guide: display only)"
+  },
+  {
+   "fy": 2017,
+   "published": "2017-01-19",
+   "source": "KM48",
+   "doc": "Q4 2016 release",
+   "rev_none": true,
+   "display": "dividends: \"kMI issued its preliminary 2017 financial projections and said it expects to declare dividends of $0.50 per share\" (a dividend outlook, not an earnings or revenue guide: display only)"
+  },
+  {
+   "fy": 2017,
+   "published": "2017-04-20",
+   "source": "KM49",
+   "doc": "Q1 2017 release",
+   "rev_none": true,
+   "display": "dividends: \"kMI expects to declare dividends of $0.50 per share for 2017\" (a dividend outlook, not an earnings or revenue guide: display only)"
+  },
+  {
+   "fy": 2017,
+   "published": "2017-07-20",
+   "source": "KM50",
+   "doc": "Q2 2017 release",
+   "rev_none": true,
+   "display": "dividends: \"kMI expects to declare dividends of $0.50 per share for 2017\" (a dividend outlook, not an earnings or revenue guide: display only)"
+  },
+  {
+   "fy": 2017,
+   "published": "2017-10-19",
+   "source": "KM51",
+   "doc": "Q3 2017 release",
+   "rev_none": true,
+   "display": "dividends: \"kMI continues to expect to declare dividends of $0.50 per share for 2017\" (a dividend outlook, not an earnings or revenue guide: display only)"
+  },
+  {
+   "fy": 2018,
+   "published": "2018-01-18",
+   "source": "KM52",
+   "doc": "Q4 2017 release",
+   "rev_none": true,
+   "display": "dividends: \"for 2018, KMI’s budget is set to declare dividends of $0.80 per common share\" (a dividend outlook, not an earnings or revenue guide: display only)"
+  },
+  {
+   "fy": 2018,
+   "published": "2018-04-19",
+   "source": "KM53",
+   "doc": "Q1 2018 release",
+   "rev_none": true,
+   "display": "dividends: \"for 2018, KMI’s budget is set to declare dividends of $0.80 per common share\" (a dividend outlook, not an earnings or revenue guide: display only)"
+  },
+  {
+   "fy": 2018,
+   "published": "2018-07-19",
+   "source": "KM54",
+   "doc": "Q2 2018 release",
+   "rev_none": true,
+   "display": "dividends: \"for 2018, KMI’s budget contemplates declared dividends of $0.80 per common share\" (a dividend outlook, not an earnings or revenue guide: display only)"
+  },
+  {
+   "fy": 2018,
+   "published": "2018-10-18",
+   "source": "KM55",
+   "doc": "Q3 2018 release",
+   "rev_none": true,
+   "display": "dividends: \"for 2018, KMI’s budget contemplates declared dividends of $0.80 per common share\" (a dividend outlook, not an earnings or revenue guide: display only)"
   }
  ],
  "dividends": [
@@ -1026,6 +2530,102 @@
    "source": "KM18",
    "quarterly": 0.44,
    "note": "$0.44 a quarter, declared for Q3 2014 (Q3 2014 release)"
+  },
+  {
+   "published": "2015-01-22",
+   "source": "KM40",
+   "quarterly": 0.45,
+   "note": "$0.45 a quarter, declared for Q4 2014 (Q4 2014 release)"
+  },
+  {
+   "published": "2015-04-16",
+   "source": "KM41",
+   "quarterly": 0.48,
+   "note": "$0.48 a quarter, declared for Q1 2015 (Q1 2015 release)"
+  },
+  {
+   "published": "2015-07-16",
+   "source": "KM42",
+   "quarterly": 0.49,
+   "note": "$0.49 a quarter, declared for Q2 2015 (Q2 2015 release)"
+  },
+  {
+   "published": "2015-10-22",
+   "source": "KM43",
+   "quarterly": 0.51,
+   "note": "$0.501 a quarter, declared for Q3 2015 (Q3 2015 release)"
+  },
+  {
+   "published": "2016-01-21",
+   "source": "KM44",
+   "quarterly": 0.125,
+   "note": "$0.125 a quarter, declared for Q4 2015 (Q4 2015 release)"
+  },
+  {
+   "published": "2016-04-21",
+   "source": "KM45",
+   "quarterly": 0.125,
+   "note": "$0.125 a quarter, declared for Q1 2016 (Q1 2016 release)"
+  },
+  {
+   "published": "2016-07-21",
+   "source": "KM46",
+   "quarterly": 0.125,
+   "note": "$0.125 a quarter, declared for Q2 2016 (Q2 2016 release)"
+  },
+  {
+   "published": "2016-10-20",
+   "source": "KM47",
+   "quarterly": 0.125,
+   "note": "$0.125 a quarter, declared for Q3 2016 (Q3 2016 release)"
+  },
+  {
+   "published": "2017-01-19",
+   "source": "KM48",
+   "quarterly": 0.125,
+   "note": "$0.125 a quarter, declared for Q4 2016 (Q4 2016 release)"
+  },
+  {
+   "published": "2017-04-20",
+   "source": "KM49",
+   "quarterly": 0.125,
+   "note": "$0.125 a quarter, declared for Q1 2017 (Q1 2017 release)"
+  },
+  {
+   "published": "2017-07-20",
+   "source": "KM50",
+   "quarterly": 0.125,
+   "note": "$0.125 a quarter, declared for Q2 2017 (Q2 2017 release)"
+  },
+  {
+   "published": "2017-10-19",
+   "source": "KM51",
+   "quarterly": 0.125,
+   "note": "$0.125 a quarter, declared for Q3 2017 (Q3 2017 release)"
+  },
+  {
+   "published": "2018-01-18",
+   "source": "KM52",
+   "quarterly": 0.125,
+   "note": "$0.125 a quarter, declared for Q4 2017 (Q4 2017 release)"
+  },
+  {
+   "published": "2018-04-19",
+   "source": "KM53",
+   "quarterly": 0.2,
+   "note": "$0.2 a quarter, declared for Q1 2018 (Q1 2018 release)"
+  },
+  {
+   "published": "2018-07-19",
+   "source": "KM54",
+   "quarterly": 0.2,
+   "note": "$0.2 a quarter, declared for Q2 2018 (Q2 2018 release)"
+  },
+  {
+   "published": "2018-10-18",
+   "source": "KM55",
+   "quarterly": 0.2,
+   "note": "$0.2 a quarter, declared for Q3 2018 (Q3 2018 release)"
   }
  ],
  "events": [],

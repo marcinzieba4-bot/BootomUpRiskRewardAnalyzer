@@ -104,6 +104,8 @@ def check_print(p):
             "eps_q": r["eps_q"], "eps_q_prior": r["eps_q_prior"], "diluted_shares_m": r["dil_sh_m"]}
     for k, v in want.items():
         assert p[k] == v or (v is not None and abs(p[k] - v) < 1e-9), (p["quarter"], k, p[k], v)
+    if "seg_m" in r:                        # a release that tabulates segment EBDA (from Q4 2014): the growth from its own rows
+        assert (p["seg_pct"], p["ngp_pct"]) == (pct(r["seg_prior_m"], r["seg_m"]), pct(r["ngp_prior_m"], r["ngp_m"])), p["quarter"]
     sl = p.get("seg_later")                 # segment EBDA absent from the release: the quarter's 10-Q, on its own date
     if sl:
         assert p["seg_pct"] is None and set(sl) == {"seg_pct", "ngp_pct", "published", "source", "note"}, p["quarter"]
@@ -254,6 +256,26 @@ def build(as_of, facts, raw, spx, engine, out):
     key_tail = ("Contracted transport and storage fees drive most of the cash, by the company's own account;\n"
                 "  the bear needs volumes and rates to fall, not one quarter's commodity prices.")
     why = h["why"]
+    # ENERGY_TRANSITION is live from 2015-12-12 and scoped to oil, gas and coal reserves and refining; Kinder Morgan's 10-Ks say its CO2
+    # segment owns working interests in oil fields (SACROC, Yates, ...) and their greenhouse gas risk factor names the theme, so it goes on
+    # the watch list (the XOM and SO rule: company-acknowledged, no market read). No factor pair is added, so only text changes; re-filing
+    # needs dated evidence of market pricing for Kinder Morgan (retro/README.md, "KMI 2015-2018"). Dates before the live date keep the text above
+    et = retro_tool.load_taxonomy()["themes"]["ENERGY_TRANSITION"]
+    if et["live_from"] <= as_of:
+        assert h.get("transition_quote") and h.get("reserves_quote"), (as_of, "the vintage needs its own 10-K words for the watch list")
+        val_word = ("a premium" if pe_now_pctl >= 70 else "a discount to its own history" if pe_now_pctl <= 30 else "near its own median")
+        stage = "transition"
+        watch = [{"theme": "ENERGY_TRANSITION", "status": "live, company-acknowledged; no market read",
+                  "reason": (f"Live: Kinder Morgan's own FY20{h['fy_label'][2:]} 10-K says '{h['reserves_quote']}' and, of greenhouse gas "
+                             f"laws and regulations, '{h['transition_quote']}' The stock trades at {close / eps_now:.1f}x {fy_e_s} — "
+                             f"{val_word}. Re-file as DISRUPTION_EXPOSED (ENERGY_TRANSITION) only if dated evidence shows the market "
+                             "pricing decarbonisation of Kinder Morgan's oil reserves and the hydrocarbons its pipelines carry specifically.")}]
+        sig_name = "Energy transition: oil reserves and hydrocarbon demand"
+        trigger = "Greenhouse gas rules cut hydrocarbon demand and strand the CO2 segment's oil reserves"
+        theme_summary = "the energy transition is live and company-acknowledged; no dated evidence ties the multiple to it"
+        why += ("; ENERGY_TRANSITION is live (from " + et["live_from"] + "): the CO2 segment owns working interests in oil fields and the "
+                "greenhouse gas risk factor puts the theme on the watch list, company-acknowledged, with no dated evidence that the market "
+                "prices it for Kinder Morgan")
     kind, pit_risk = "DURABLE", 2
     cat3 = (f"(3) The {fy_now} outlook — no revenue, EPS or margin guide in numbers"
             + (f"; {gl['display']}" if gl else "; no dividend outlook for the year yet"))
@@ -361,7 +383,7 @@ MARGIN_GUIDED   = {margin_guided}   # False: no margin guide, so no guided step;
 FY_MARGIN_BASE  = {fy_margin_base}
 FY_REVENUE_B    = {fy_rev:.2f}
 FY_REVENUE_LABEL = {R(fy_rev_label)}
-SHARES_DIL_B    = {latest["diluted_shares_m"] / 1000:.4f}
+SHARES_DIL_B    = {round(latest["diluted_shares_m"] / 1000, 4)!r}   # diluted shares, bn
 GROUPS          = {R([tuple(g) for g in h["groups"]])}
 GROUPS_BASIS    = {R(h["groups_basis"])}
 NEXT_PRINT      = {R(latest["next_print"])}

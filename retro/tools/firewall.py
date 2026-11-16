@@ -655,7 +655,8 @@ try:
                  check_pretax_note="PLANTED", tax_note="PLANTED", dividend_note="PLANTED", fcf_note="PLANTED", cash_return_text="PLANTED",
                  groups=[["PLANTED", 1, -99]], groups_basis="PLANTED", prev_fy_op_margin=-50.0, dividend_annual=9.99, fcf_b=99.0,
                  kind_text="PLANTED", revenue_usd_b={**v["revenue_usd_b"], "2099": 0.01}, diluted_shares_m={**v["diluted_shares_m"], "2099": 1.0},
-                 eps_excluded={**v.get("eps_excluded", {}), "2098": "PLANTED"})
+                 eps_excluded={**v.get("eps_excluded", {}), "2098": "PLANTED"},
+                 reserves_quote="PLANTED", transition_quote="PLANTED")      # the energy-transition watch-list words (KMI 2015-2018)
     if TICKER == "SO":     # absurd full-year actuals on the planted print, for the year after the latest vintage before CUTOFF, and a later
                            # vintage whose every text and figure the models quote is planted (SO 2008-2009)
         last["fy_actual"] = {"fy": int(max(k for k in v["eps_normalized"] if k != "2099")) + 1, "fy_label": "FY99", "eps_normalized": 0.01,
