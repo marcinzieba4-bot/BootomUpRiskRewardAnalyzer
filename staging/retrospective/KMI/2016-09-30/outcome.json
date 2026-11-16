@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "KMI",
+ "as_of": "2016-09-30",
+ "computed": "2026-11-16",
+ "data_source": "Yahoo Finance daily closes + dividends (KMI, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2017-03-30",
+   "price": 21.43,
+   "dividends": 0.25,
+   "total_return_pct": -6.3,
+   "benchmark_total_return_pct": 10.3,
+   "excess_pct": -16.6,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2017-09-29",
+   "price": 19.18,
+   "dividends": 0.5,
+   "total_return_pct": -14.9,
+   "benchmark_total_return_pct": 18.4,
+   "excess_pct": -33.3,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2018-09-28",
+   "price": 17.73,
+   "dividends": 1.15,
+   "total_return_pct": -18.4,
+   "benchmark_total_return_pct": 38.9,
+   "excess_pct": -57.3,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2019-09-30",
+   "price": 20.61,
+   "dividends": 2.05,
+   "total_return_pct": -2.0,
+   "benchmark_total_return_pct": 44.3,
+   "excess_pct": -46.3,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2016-10-03",
+   "price": 23.01
+  },
+  "low": {
+   "date": "2018-03-28",
+   "price": 14.81
+  },
+  "max_drawdown_pct": -36.0,
+  "return_to_avg_price_m12_m24_pct": -24.9
+ },
+ "scenario_landing_2y": "BASE",
+ "call_check_2y": {
+  "expectation": "CHEAP: should clear the hurdle or beat the benchmark",
+  "hit": false
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "DURABLE",
+   "risk": 2
+  },
+  "today": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Kinder Morgan: fee-based gas pipelines",
+   "reviewed": "2026-09-22"
+  }
+ }
+}
