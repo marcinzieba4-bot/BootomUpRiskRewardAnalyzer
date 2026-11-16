@@ -1696,6 +1696,16 @@
     "term": "Ford Energy",
     "first_seen": "2026-02-11",
     "note": "Ford's energy-storage business; first in a Ford filing in its Q4 2025 earnings 8-K (accepted 2026-02-10 16:08 ET, after the close, so it counts from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "New Corteva",
+    "first_seen": "2025-10-01",
+    "note": "Corteva's name for its crop protection business after the planned separation; first in a Corteva filing in the 8-K announcing the plan (accepted 2025-10-01 06:55 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Vylor",
+    "first_seen": "2026-05-06",
+    "note": "the name of the seed company Corteva spun off; first in a Corteva filing in the Q1 2026 release (8-K accepted 2026-05-05 16:41 ET, after the close, so from the next trading day), EDGAR full-text search"
    }
   ]
  }

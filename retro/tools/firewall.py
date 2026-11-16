@@ -25,6 +25,7 @@ and require byte-identical models. Restores the fact sheet and the price cache a
     python3 retro/tools/firewall.py 2023-01-01 F            # the F series in staging/retrospective
     python3 retro/tools/firewall.py 2009-01-01 F            # the F early era (2008-2011), also in staging/retrospective
     python3 retro/tools/firewall.py 2009-01-01 SO           # the SO series in staging/retrospective
+    python3 retro/tools/firewall.py 2022-01-01 CTVA         # the CTVA series in staging/retrospective (from the 2019 listing)
 
 Plants a print, a history vintage, an event per live theme and a company name (UNP: also a guide and a
 dividend; LOW and AAPL: also a guide with every guided field; NKE: a guide in words, and futures orders on the last print before
@@ -78,7 +79,9 @@ print whose retail kWh, electric utilities' net income, revenue, operating margi
 absurd, with absurd full-year actuals (on a planted EPS basis) for the year after the latest vintage before CUTOFF, and a later vintage with
 planted notes and every year on a planted EPS basis (SO 2010-2013), the print with a planted revenue note and website-slides words and the
 vintage with planted energy-transition quotes (SO 2014-2017), a planted kWh note and a later vintage's excluded-year notes and watch-list
-lead-in (SO 2018-2021); every
+lead-in (SO 2018-2021); CTVA: a print whose organic growth, price, margins, EPS, notes, raw figures and previous-quarter value are absurd,
+with absurd full-year actuals for the year after the latest vintage before CUTOFF, a later vintage with planted texts, figures and an
+excluded year, and a later net sales guide, a later guide without one and a later display for every year guided before CUTOFF; every
 fact sheet with a 'splits' list, SHW's from 2021-2023: a later split on the price data's next split date; a CLOUD event
 from a later 10-K, as for every live theme), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
@@ -110,7 +113,7 @@ OUTDIR = {"ACN": "archive/retrospective/ACN", "UNP": "staging/retrospective/UNP"
           "MAR": "staging/retrospective/MAR", "BKR": "staging/retrospective/BKR",
           "PFE": "staging/retrospective/PFE", "CMCSA": "staging/retrospective/CMCSA", "CAT": "staging/retrospective/CAT",
           "BMY": "staging/retrospective/BMY", "NVDA": "staging/retrospective/NVDA", "F": "staging/retrospective/F",
-          "SO": "staging/retrospective/SO"}[TICKER]
+          "SO": "staging/retrospective/SO", "CTVA": "staging/retrospective/CTVA"}[TICKER]
 ARCHIVE = os.path.join(ROOT, OUTDIR)
 BUILDER = os.path.join(ROOT, "retro", f"build_{TICKER.lower()}.py")
 # absurd values for every field the builder reads from a print
@@ -169,6 +172,14 @@ PLANT = {"ACN": dict(quarter="Q9 FY99", revenue_lc=-60, margin_bp=-999, fy_eps_g
                     kwh_adj_pct=-60.0,
                     raw=dict(rev_m=4, rev_prior_m=10, opinc_m=-2, opinc_prior_m=5, seg_m=4, seg_prior_m=10, kwh_m=4, kwh_prior_m=10,
                              ni_m=1, ni_prior_m=99)),
+         "CTVA": dict(quarter="Q1 2099", fy=2099, q=1, release="PLANTED", release_time="PLANTED", period_end="PLANTED", sales_b=0.01,
+                      sales_pct=-60.0, seed_org_pct=-60.0, cp_org_pct=-60.0, price_pct=-60.0, vol_pct=-60.0, fx_pct=-60.0, org_pct=-60.0,
+                      seed_pct=-60.0, cp_pct=-60.0, gross_margin=1.0, gross_margin_bp=-999.0, ptm=-50.0, ptm_bp=-999.0, eps_q=0.01,
+                      eps_q_prior=9.99, diluted_shares_m=1.0, cash_b=99.0, sales_note="PLANTED", segments_note="PLANTED",
+                      margin_note="PLANTED", eps_note="PLANTED", cash_note="PLANTED", next_print="PLANTED", prev_seed_org=[-60.0, "PLANTED"],
+                      raw=dict(rev_m=4, rev_prior_m=10, cogs_m=4, cogs_prior_m=1, pti_m=-2, pti_prior_m=5, seed_m=1, seed_prior_m=5,
+                               cp_m=3, cp_prior_m=5, cash_m=99000, mkt_sec_m=0,
+                               pvc_total={"price_pct": -60.0}, pvc_seed={"org_pct": -60.0}, pvc_cp={"org_pct": -60.0})),
          "XOM": dict(quarter="Q1 2099", fy=2099, q=1, release="PLANTED", sales_b=0.01, sales_pct=-60.0, pretax_margin=-50.0,
                      pretax_margin_bp=-999.0, production_pct=-60.0, product_sales_pct=-60.0, chem_pct=-60.0, eps_q=0.01, eps_q_prior=9.99,
                      eps_note="PLANTED", diluted_shares_m=1.0, cash_b=99.0, next_print="PLANTED", cash_return_text="PLANTED",
@@ -278,6 +289,7 @@ GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -99
                "BMY": dict(eps_adj=[0.1, 0.2], rev_words="PLANTED", note="PLANTED", rev_guide_usd_b=[0.1, 0.2], rev_guide_pct=[-50, -40],
                            rev_label="PLANTED", adj_why="PLANTED"),
                "CMCSA": dict(rev_guide_pct=[-50, -40], rev_words="PLANTED", rev_label="PLANTED", note="PLANTED"),
+               "CTVA": dict(rev_guide_m=[1, 2], rev_guide_note="PLANTED", display="PLANTED", release_time="PLANTED before the open"),
                "NVDA": dict(quarter="Q9 FY99", seq_pct=[-50, -40], base_quarter="PLANTED", base_sales_m=1, level_m=[0.5, 0.6],
                             prior_label="PLANTED", prior_sales_m=1, prior_source="NV1", yoy_pct=[-50, -40], quote="PLANTED",
                             display="PLANTED", level_stated=True, level_center_m=0.55, level_pm_pct=9.0),
@@ -597,6 +609,23 @@ try:
             v0 = max((x for x in f["history_vintages"] if x["published"] < cutoff), key=lambda x: x["published"])
             f.setdefault("restatements_r2008", []).append({"published": later, "source": last["source"], "doc": "PLANTED",
                                                            "years": {y: {"eps": 0.01, "note": "PLANTED"} for y in v0["eps_normalized"]}})
+    if TICKER == "CTVA":   # absurd full-year actuals on the planted print, for the year after the latest vintage before CUTOFF, a later vintage
+                           # whose every text and figure the models quote is planted and which excludes a year, and later guides for every
+                           # year guided before CUTOFF: one without a net sales range and one with only a display (the latest guide wins)
+        last["fy_actual"] = {"fy": int(max(k for k in v["eps_normalized"] if k != "2099")) + 1, "fy_label": "FY99", "eps_normalized": 0.01,
+                             "excluded_note": None, "revenue_usd_b": 0.01, "diluted_shares_m": 1.0, "normalization_note": "PLANTED",
+                             "op_margin": -50.0, "op_margin_note": "PLANTED", "sales_growth": -60.0, "seed_growth": -60.0, "cp_growth": -60.0,
+                             "seed_org_pct": -60.0, "cp_org_pct": -60.0, "org_pct": -60.0, "check_pretax_margin": -50.0,
+                             "check_pretax_note": "PLANTED", "tax_rate": 0.99, "tax_note": "PLANTED", "groups": [["PLANTED", 1, -99]],
+                             "groups_basis": "PLANTED", "one_off_test": {"items_after_tax_m": 0, "income_cont_attributable_m": 1,
+                                                                         "distorted": False, "row": "PLANTED"}}
+        v.update(business_line="PLANTED", normalization="PLANTED", shares_note="PLANTED", prev_fy_op_margin_note="PLANTED",
+                 check_pretax_note="PLANTED", tax_note="PLANTED", dividend_note="PLANTED", fcf_note="PLANTED", cash_return_text="PLANTED",
+                 groups=[["PLANTED", 1, -99]], groups_basis="PLANTED", prev_fy_op_margin=-50.0, dividend_annual=9.99, fcf_b=99.0,
+                 kind_text="PLANTED", revenue_usd_b={**v["revenue_usd_b"], "2099": 0.01}, diluted_shares_m={**v["diluted_shares_m"], "2099": 1.0},
+                 eps_excluded={**v.get("eps_excluded", {}), "2098": "PLANTED"})
+        for y in sorted({g["fy"] for g in f["guides"] if g["published"] < cutoff}):
+            f["guides"].append({"fy": y, "published": later, "source": last["source"], "doc": "PLANTED", "display": "PLANTED", "rev_none": "PLANTED"})
     if TICKER == "SO":     # absurd full-year actuals on the planted print, for the year after the latest vintage before CUTOFF, and a later
                            # vintage whose every text and figure the models quote is planted (SO 2008-2009)
         last["fy_actual"] = {"fy": int(max(k for k in v["eps_normalized"] if k != "2099")) + 1, "fy_label": "FY99", "eps_normalized": 0.01,
