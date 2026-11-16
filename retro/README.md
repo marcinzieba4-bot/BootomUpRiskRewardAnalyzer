@@ -16782,6 +16782,8 @@ Judgement calls that could carry hindsight:
 - the regular-way trading day as the listing rather than the first when-issued day (five trading days, outside every window);
 - the non-earnings 8-Ks read by their item text and exhibits for guided numbers only.
 
+The hindsight results are in `staging/retrospective/CTVA/FINDINGS.md`: hypotheses, never inputs.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
