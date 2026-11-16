@@ -1,7 +1,7 @@
 # KMI retrospective findings (hindsight)
 
 Patterns seen in `outcome.json` for the KMI weekly dates: first the 103 of 2013-01-18 to 2014-12-31, then the 210 of 2015-2018 ("2015-2018",
-below) and the 209 of 2019-2022 ("2019-2022", below). The first part covers the 103 dates 2013-01-18 to 2014-12-31: Kinder Morgan, Inc. (NYSE: KMI, Class P common
+below), the 209 of 2019-2022 ("2019-2022", below) and the 202 of 2023-2026 ("2023-2026", below). The first part covers the 103 dates 2013-01-18 to 2014-12-31: Kinder Morgan, Inc. (NYSE: KMI, Class P common
 stock), from the first date after its first full year of GAAP EPS to the year end before its first print as the combined company.
 They are **labels and hypotheses**: never feed them back into the method or the fact sheet. The series was scored only after its
 point-in-time build was committed and pushed (d0407fb6d; the firewall fix 3be3f9e66; README and firewall result 3f80e93e6). Outcomes were computed on
@@ -270,3 +270,89 @@ dates).
 - **One stock through a crash and a commodity cycle.** The 2019 results are the COVID crash, the 2020-2022 results the recovery and the 2022
   energy surge; the series tests buying under the floor and the stock's own multiple history, not stock selection, and needs other midstream
   names on the same dates.
+
+## 2023-2026 (202 dates)
+
+The 202 weekly dates 2023-01-06 to 2026-11-13, built on 2026-11-16 after the 2019-2022 part above (the build 86f68447c, README and firewall
+result 2f9f5e2f4, both pushed before any outcome was computed), scored the same way as far as the prices reach: the two-year horizon exists
+for the 98 dates to 2024-11-15, the one-year horizon for the 150 dates to 2025-11-14, the six-month one for 176; the 26 dates from
+2026-05-22 have none yet. The same labels-only rule applies, and the late dates' results will change as their horizons fill.
+
+**Hindsight the model could not see:** the rerating of natural gas pipelines from 2024 on power demand (the stock went from a low of $16.03
+on 2023-10-04 to a high of $34.43 on 2026-10-23 within these windows), and the earnings beats of 2025-2026 that the adjusted guides only
+began to state in words.
+
+### 2023 (52 dates; two-year outcomes)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 52 | +71.2% | +55.7% to +86.2% | 52 | 52 | +48.8% | 52 |
+| EPS anchor $1.143 (2023-01-06 to 2023-01-13) | 2 | +63.4% | +62.0% to +63.4% | 2 | 2 | +13.6% | 2 |
+| EPS anchor $1.12 (2023-01-20 to 2023-12-29) | 50 | +71.3% | +55.7% to +86.2% | 50 | 50 | +50.0% | 50 |
+| latest print Q3 2022 (2023-01-06 to 2023-01-13) | 2 | +63.4% | +62.0% to +63.4% | 2 | 2 | +13.6% | 2 |
+| latest print Q4 2022 (2023-01-20 to 2023-04-14) | 13 | +64.9% | +55.7% to +84.7% | 13 | 13 | +29.0% | 13 |
+| latest print Q1 2023 (2023-04-21 to 2023-07-14) | 13 | +77.9% | +61.6% to +86.2% | 13 | 13 | +48.2% | 13 |
+| latest print Q2 2023 (2023-07-21 to 2023-10-13) | 13 | +71.3% | +63.7% to +85.9% | 13 | 13 | +55.6% | 13 |
+| latest print Q3 2023 (2023-10-20 to 2023-12-29) | 11 | +68.3% | +64.8% to +78.7% | 11 | 11 | +57.9% | 11 |
+
+### 2024 to 2024-11-15 (46 dates; two-year outcomes)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 37 | +76.9% | +56.6% to +103.9% | 37 | 37 | +51.4% | 37 |
+| class FAIR, legacy tier BUY | 1 | +56.9% | +56.9% to +56.9% | 1 | 1 | +39.7% | 0 |
+| class RICH, legacy tier BUY | 1 | +51.9% | +51.9% to +51.9% | 1 | 1 | +40.0% | 0 |
+| class RICH, legacy tier WATCHLIST | 1 | +41.5% | +41.5% to +41.5% | 1 | 1 | +29.4% | 0 |
+| class RICH, legacy tier AVOID | 6 | +46.5% | +20.2% to +48.6% | 4 | 4 | +23.8% | 2 |
+| EPS anchor $1.12 (2024-01-05 to 2024-01-12) | 2 | +67.7% | +62.7% to +67.7% | 2 | 2 | +52.2% | 2 |
+| EPS anchor $1.22 (2024-01-19 to 2024-11-15) | 44 | +73.4% | +20.2% to +103.9% | 42 | 42 | +48.7% | 37 |
+| latest print Q3 2023 (2024-01-05 to 2024-01-12) | 2 | +67.7% | +62.7% to +67.7% | 2 | 2 | +52.2% | 2 |
+| latest print Q4 2023 (2024-01-19 to 2024-04-12) | 13 | +98.2% | +76.0% to +103.9% | 13 | 13 | +58.7% | 13 |
+| latest print Q1 2024 (2024-04-19 to 2024-07-12) | 13 | +76.9% | +70.6% to +89.4% | 13 | 13 | +49.4% | 13 |
+| latest print Q2 2024 (2024-07-19 to 2024-10-11) | 13 | +57.2% | +41.0% to +66.8% | 13 | 13 | +40.0% | 9 |
+| latest print Q3 2024 (2024-10-18 to 2024-11-15) | 5 | +46.5% | +20.2% to +48.6% | 3 | 3 | +23.3% | 2 |
+
+### 2024-11-22 to 2025-11-14 (52 dates; one-year outcomes only)
+
+| Group | Dates | Median 1-yr total return | Range | Cleared 15% hurdle | Beat SPY | Class test held over one year |
+|---|---|---|---|---|---|---|
+| class FAIR, legacy tier ACCUMULATE | 11 | +24.3% | +17.3% to +37.7% | 11 | 10 | 9 |
+| class FAIR, legacy tier WATCHLIST | 7 | +17.7% | +13.2% to +20.7% | 5 | 3 | 7 |
+| class RICH, legacy tier ACCUMULATE | 2 | +35.0% | +32.9% to +35.0% | 2 | 2 | 0 |
+| class RICH, legacy tier WATCHLIST | 17 | +22.6% | +15.0% to +28.4% | 17 | 5 | 0 |
+| class RICH, legacy tier AVOID | 15 | +3.8% | -3.9% to +24.1% | 5 | 2 | 10 |
+| EPS anchor $1.22 (2024-11-22 to 2025-01-17) | 9 | +2.1% | -3.9% to +4.3% | 0 | 0 | 9 |
+| EPS anchor $1.26 (2025-01-24 to 2025-10-17) | 39 | +21.4% | +1.5% to +35.0% | 36 | 18 | 15 |
+| EPS anchor $1.259 (2025-10-24 to 2025-11-14) | 4 | +33.8% | +17.3% to +37.7% | 4 | 4 | 2 |
+| latest print Q3 2024 (2024-11-22 to 2025-01-17) | 9 | +2.1% | -3.9% to +4.3% | 0 | 0 | 9 |
+| latest print Q4 2024 (2025-01-24 to 2025-04-11) | 12 | +27.1% | +1.5% to +35.0% | 11 | 9 | 1 |
+| latest print Q1 2025 (2025-04-17 to 2025-07-11) | 13 | +19.6% | +15.0% to +25.5% | 13 | 0 | 0 |
+| latest print Q2 2025 (2025-07-18 to 2025-10-17) | 14 | +20.5% | +13.2% to +29.2% | 12 | 9 | 14 |
+| latest print Q3 2025 (2025-10-24 to 2025-11-14) | 4 | +33.8% | +17.3% to +37.7% | 4 | 4 | 2 |
+
+### Across the dates with two-year outcomes
+
+| Group | Dates | Mean 2-yr total return | Mean 2-yr excess vs SPY | Mean m12-24 avg price | Call held |
+|---|---|---|---|---|---|
+| class CHEAP | 89 | +74.8% | +30.1pp | +48.0% | 89 of 89 |
+| class FAIR | 1 | +56.9% | +20.2pp | +39.7% | 0 of 1 |
+| class RICH | 8 | +40.4% | +6.6pp | +24.9% | 2 of 8 |
+
+- **The CHEAP calls of 2023 and 2024 held on all 89 dates with a two-year outcome** (mean +74.8% over two years, +30.1pp against SPY; every
+  one cleared the hurdle and beat SPY). The price sat at 14-18x the year's guided EPS, under the EPP floor on 71 of these dates, and the
+  two-year price landed nearest BULL on 83 of the 98 dates, the first part of the series where BULL was the usual landing.
+- **The RICH calls came early.** From 2024-09-27 the stock traded at 20-25x against a window median near 20x and the class turned RICH;
+  the 8 RICH dates with a two-year outcome returned +40.4% on average and held on 2 (the rerating continued). Over one year the 42 RICH
+  dates to 2025-11-14 returned +16.1% (-4.1pp against SPY) and held on 15, the AVOID dates of November 2024 to January 2025 best (+2.1%
+  median over one year, every one held); the 19 FAIR dates returned +22.7% over one year, the 89 CHEAP dates +37.8%.
+- **The readings, on the m12-24 averages of the 98 two-year dates:** the entry price ranks at Spearman -0.57 and the EPP gap at -0.62 (buying
+  lower and nearer the floor helped), Ratio B at -0.07 (the right sign, weak), the adjusted gap at -0.13 and the proxy composite at -0.16
+  (the wrong signs).
+- **The sensitivities, scored in hindsight, reverse the 2019-2022 reading:** every signal at its BEAR value turns 73 of the 98 two-year dates
+  RICH or FAIR and those calls would have held on none (the archive's on 72), where in 2019-2022 the same variant would have held 54 of 57;
+  the adjusted-EPS variant would have held 4 of its 53 changed dates against 52, no earnings guide 0 of 11 against 10. Over one year the
+  XBULL-signal variant would have held all 40 of its changed dates against 15. One stock's sensitivities flip with the period, which is
+  the reason they must not change the archive's rules (a rule change is a new method version, decided before scoring and tested out of
+  sample).
+- **One stock through a rerating.** The 2023-2024 results are a multiple expansion from the bottom of the stock's own range; the series tests
+  buying near the floor and the stock's own multiple history, not stock selection, and the 2025-2026 calls are not scored yet over two years.

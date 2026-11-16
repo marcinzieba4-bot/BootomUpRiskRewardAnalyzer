@@ -526,3 +526,205 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2022-12-16 | $17.69 | Kinder Morgan, Inc. Q3 2022 results | 2.75 | +1.96 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +63.0% | +1.6pp | +16.5% | ✓ |
 | 2022-12-23 | $18.14 | Kinder Morgan, Inc. Q3 2022 results | 2.75 | +1.94 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +61.7% | +2.8pp | +14.6% | ✓ |
 | 2022-12-30 | $18.08 | Kinder Morgan, Inc. Q3 2022 results | 2.75 | +1.94 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +63.9% | +6.5pp | +15.8% | ✓ |
+| 2023-01-06 | $18.58 | Kinder Morgan, Inc. Q3 2022 results | 2.75 | +1.92 | 0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +62.0% | +5.1pp | +13.6% | ✓ |
+| 2023-01-13 | $18.85 | Kinder Morgan, Inc. Q3 2022 results | 2.75 | +1.91 | 0.20x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +63.4% | +14.0pp | +12.9% | ✓ |
+| 2023-01-20 | $18.64 | Kinder Morgan, Inc. Q4 2022 results | 2.60 | +1.21 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +74.8% | +20.4pp | +15.2% | ✓ |
+| 2023-01-27 | $18.66 | Kinder Morgan, Inc. Q4 2022 results | 2.60 | +1.20 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +59.3% | +8.2pp | +16.4% | ✓ |
+| 2023-02-03 | $18.28 | Kinder Morgan, Inc. Q4 2022 results | 2.60 | +1.24 | 0.31x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +63.4% | +15.1pp | +20.0% | ✓ |
+| 2023-02-10 | $18.36 | Kinder Morgan, Inc. Q4 2022 results | 2.60 | +1.09 | 0.42x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +59.9% | +8.3pp | +20.6% | ✓ |
+| 2023-02-17 | $17.73 | Kinder Morgan, Inc. Q4 2022 results | 2.60 | +1.18 | 0.37x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +62.6% | +9.6pp | +25.9% | ✓ |
+| 2023-02-24 | $17.44 | Kinder Morgan, Inc. Q4 2022 results | 2.60 | +1.14 | 0.37x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +64.9% | +10.8pp | +29.0% | ✓ |
+| 2023-03-03 | $17.65 | Kinder Morgan, Inc. Q4 2022 results | 2.60 | +1.11 | 0.38x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +66.7% | +18.9pp | +28.5% | ✓ |
+| 2023-03-10 | $16.77 | Kinder Morgan, Inc. Q4 2022 results | 2.60 | +1.23 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +69.5% | +20.7pp | +36.3% | ✓ |
+| 2023-03-17 | $16.28 | Kinder Morgan, Inc. Q4 2022 results | 2.60 | +1.29 | 0.28x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +84.7% | +36.2pp | +41.5% | ✓ |
+| 2023-03-24 | $16.79 | Kinder Morgan, Inc. Q4 2022 results | 2.60 | +1.23 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +84.6% | +36.0pp | +38.4% | ✓ |
+| 2023-03-31 | $17.51 | Kinder Morgan, Inc. Q4 2022 results | 2.60 | +1.13 | 0.37x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +75.1% | +35.9pp | +33.7% | ✓ |
+| 2023-04-06 | $17.71 | Kinder Morgan, Inc. Q4 2022 results | 2.60 | +1.10 | 0.39x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +55.7% | +28.8pp | +33.2% | ✓ |
+| 2023-04-14 | $17.81 | Kinder Morgan, Inc. Q4 2022 results | 2.60 | +1.06 | 0.42x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +63.3% | +29.2pp | +33.4% | ✓ |
+| 2023-04-21 | $17.37 | Kinder Morgan, Inc. Q1 2023 results | 2.75 | +0.87 | 0.38x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +61.6% | +33.6pp | +37.7% | ✓ |
+| 2023-04-28 | $17.15 | Kinder Morgan, Inc. Q1 2023 results | 2.75 | +0.88 | 0.36x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +69.5% | +33.7pp | +40.4% | ✓ |
+| 2023-05-05 | $17.04 | Kinder Morgan, Inc. Q1 2023 results | 2.75 | +0.89 | 0.36x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +71.2% | +31.2pp | +42.3% | ✓ |
+| 2023-05-12 | $16.80 | Kinder Morgan, Inc. Q1 2023 results | 2.75 | +0.92 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +76.2% | +31.2pp | +45.3% | ✓ |
+| 2023-05-19 | $16.52 | Kinder Morgan, Inc. Q1 2023 results | 2.75 | +0.94 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +83.4% | +38.0pp | +48.8% | ✓ |
+| 2023-05-26 | $16.21 | Kinder Morgan, Inc. Q1 2023 results | 2.75 | +0.97 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +86.0% | +44.8pp | +52.6% | ✓ |
+| 2023-06-02 | $16.75 | Kinder Morgan, Inc. Q1 2023 results | 2.75 | +0.92 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +84.7% | +43.0pp | +48.6% | ✓ |
+| 2023-06-09 | $17.03 | Kinder Morgan, Inc. Q1 2023 results | 2.75 | +0.89 | 0.36x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +75.1% | +32.4pp | +47.1% | ✓ |
+| 2023-06-16 | $17.04 | Kinder Morgan, Inc. Q1 2023 results | 2.75 | +0.87 | 0.38x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +75.8% | +35.9pp | +48.0% | ✓ |
+| 2023-06-23 | $16.32 | Kinder Morgan, Inc. Q1 2023 results | 2.75 | +0.89 | 0.38x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +86.2% | +44.4pp | +55.3% | ✓ |
+| 2023-06-30 | $17.22 | Kinder Morgan, Inc. Q1 2023 results | 2.75 | +0.80 | 0.49x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +84.1% | +41.5pp | +48.2% | ✓ |
+| 2023-07-07 | $16.92 | Kinder Morgan, Inc. Q1 2023 results | 2.75 | +0.82 | 0.46x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +81.0% | +36.3pp | +51.6% | ✓ |
+| 2023-07-14 | $17.21 | Kinder Morgan, Inc. Q1 2023 results | 2.75 | +0.80 | 0.49x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +77.9% | +35.7pp | +50.0% | ✓ |
+| 2023-07-21 | $17.80 | Kinder Morgan, Inc. Q2 2023 results | 2.70 | +0.55 | 0.55x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +65.2% | +23.0pp | +45.8% | ✓ |
+| 2023-07-28 | $17.57 | Kinder Morgan, Inc. Q2 2023 results | 2.70 | +0.54 | 0.56x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +66.3% | +23.8pp | +48.4% | ✓ |
+| 2023-08-04 | $17.36 | Kinder Morgan, Inc. Q2 2023 results | 2.70 | +0.56 | 0.54x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +76.2% | +31.8pp | +51.0% | ✓ |
+| 2023-08-11 | $17.78 | Kinder Morgan, Inc. Q2 2023 results | 2.70 | +0.53 | 0.59x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +64.2% | +18.4pp | +48.1% | ✓ |
+| 2023-08-18 | $17.43 | Kinder Morgan, Inc. Q2 2023 results | 2.70 | +0.55 | 0.55x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +63.7% | +13.1pp | +51.7% | ✓ |
+| 2023-08-25 | $17.34 | Kinder Morgan, Inc. Q2 2023 results | 2.70 | +0.53 | 0.58x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +66.0% | +16.8pp | +53.1% | ✓ |
+| 2023-09-01 | $17.14 | Kinder Morgan, Inc. Q2 2023 results | 2.70 | +0.55 | 0.56x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +70.9% | +24.8pp | +55.6% | ✓ |
+| 2023-09-08 | $16.80 | Kinder Morgan, Inc. Q2 2023 results | 2.70 | +0.57 | 0.52x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +71.3% | +22.6pp | +59.2% | ✓ |
+| 2023-09-15 | $17.07 | Kinder Morgan, Inc. Q2 2023 results | 2.70 | +0.55 | 0.55x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +73.8% | +21.9pp | +57.4% | ✓ |
+| 2023-09-22 | $16.60 | Kinder Morgan, Inc. Q2 2023 results | 2.70 | +0.59 | 0.49x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +77.6% | +19.4pp | +62.6% | ✓ |
+| 2023-09-29 | $16.58 | Kinder Morgan, Inc. Q2 2023 results | 2.70 | +0.59 | 0.49x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +85.0% | +26.4pp | +63.5% | ✓ |
+| 2023-10-06 | $16.26 | Kinder Morgan, Inc. Q2 2023 results | 2.70 | +0.61 | 0.46x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +85.9% | +26.3pp | +67.4% | ✓ |
+| 2023-10-13 | $17.11 | Kinder Morgan, Inc. Q2 2023 results | 2.70 | +0.55 | 0.55x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +73.3% | +16.3pp | +59.5% | ✓ |
+| 2023-10-20 | $16.99 | Kinder Morgan, Inc. Q3 2023 results | 2.35 | +0.25 | 0.54x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +75.5% | +12.8pp | +60.9% | ✓ |
+| 2023-10-27 | $16.37 | Kinder Morgan, Inc. Q3 2023 results | 2.35 | +0.29 | 0.47x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +73.8% | +3.5pp | +67.2% | ✓ |
+| 2023-11-03 | $16.87 | Kinder Morgan, Inc. Q3 2023 results | 2.35 | +0.26 | 0.52x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +68.3% | +7.8pp | +62.5% | ✓ |
+| 2023-11-10 | $16.44 | Kinder Morgan, Inc. Q3 2023 results | 2.35 | +0.29 | 0.47x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +78.7% | +20.8pp | +66.8% | ✓ |
+| 2023-11-17 | $16.96 | Kinder Morgan, Inc. Q3 2023 results | 2.35 | +0.25 | 0.53x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +73.7% | +22.8pp | +61.7% | ✓ |
+| 2023-11-24 | $17.35 | Kinder Morgan, Inc. Q3 2023 results | 2.35 | +0.22 | 0.58x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +67.9% | +17.9pp | +57.9% | ✓ |
+| 2023-12-01 | $17.75 | Kinder Morgan, Inc. Q3 2023 results | 2.35 | +0.16 | 0.69x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +66.8% | +15.5pp | +54.2% | ✓ |
+| 2023-12-08 | $17.70 | Kinder Morgan, Inc. Q3 2023 results | 2.35 | +0.16 | 0.68x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +67.3% | +15.6pp | +54.6% | ✓ |
+| 2023-12-15 | $17.49 | Kinder Morgan, Inc. Q3 2023 results | 2.35 | +0.18 | 0.65x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +66.0% | +18.3pp | +56.5% | ✓ |
+| 2023-12-22 | $17.72 | Kinder Morgan, Inc. Q3 2023 results | 2.35 | +0.16 | 0.68x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +64.8% | +17.2pp | +54.5% | ✓ |
+| 2023-12-29 | $17.64 | Kinder Morgan, Inc. Q3 2023 results | 2.35 | +0.17 | 0.67x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +68.3% | +20.6pp | +55.2% | ✓ |
+| 2024-01-05 | $18.02 | Kinder Morgan, Inc. Q3 2023 results | 2.35 | -0.07 | 0.73x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +67.7% | +17.6pp | +51.9% | ✓ |
+| 2024-01-12 | $17.97 | Kinder Morgan, Inc. Q3 2023 results | 2.35 | -0.07 | 0.72x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +62.7% | +13.8pp | +52.2% | ✓ |
+| 2024-01-19 | $17.20 | Kinder Morgan, Inc. Q4 2023 results | 2.20 | +0.34 | 0.45x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +76.0% | +29.7pp | +58.8% | ✓ |
+| 2024-01-26 | $17.44 | Kinder Morgan, Inc. Q4 2023 results | 2.20 | +0.32 | 0.47x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +81.5% | +36.4pp | +56.5% | ✓ |
+| 2024-02-02 | $16.96 | Kinder Morgan, Inc. Q4 2023 results | 2.20 | +0.36 | 0.42x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +88.3% | +44.7pp | +61.2% | ✓ |
+| 2024-02-09 | $16.61 | Kinder Morgan, Inc. Q4 2023 results | 2.20 | +0.39 | 0.39x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +100.6% | +59.2pp | +65.0% | ✓ |
+| 2024-02-16 | $17.11 | Kinder Morgan, Inc. Q4 2023 results | 2.20 | +0.33 | 0.47x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +102.5% | +63.1pp | +60.7% | ✓ |
+| 2024-02-23 | $17.25 | Kinder Morgan, Inc. Q4 2023 results | 2.20 | +0.42 | 0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +103.0% | +65.8pp | +60.0% | ✓ |
+| 2024-03-01 | $17.46 | Kinder Morgan, Inc. Q4 2023 results | 2.20 | +0.40 | 0.03x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +103.9% | +67.3pp | +58.7% | ✓ |
+| 2024-03-08 | $17.83 | Kinder Morgan, Inc. Q4 2023 results | 2.20 | +0.36 | 0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +101.4% | +67.2pp | +56.2% | ✓ |
+| 2024-03-15 | $17.60 | Kinder Morgan, Inc. Q4 2023 results | 2.20 | +0.38 | 0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +102.9% | +70.5pp | +59.0% | ✓ |
+| 2024-03-22 | $18.06 | Kinder Morgan, Inc. Q4 2023 results | 2.20 | +0.34 | 0.08x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +94.7% | +67.5pp | +55.5% | ✓ |
+| 2024-03-28 | $18.34 | Kinder Morgan, Inc. Q4 2023 results | 2.20 | +0.30 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +98.2% | +74.2pp | +53.8% | ✓ |
+| 2024-04-05 | $18.46 | Kinder Morgan, Inc. Q4 2023 results | 2.20 | +0.29 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +91.2% | +61.9pp | +53.2% | ✓ |
+| 2024-04-12 | $18.13 | Kinder Morgan, Inc. Q4 2023 results | 2.20 | +0.32 | 0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +93.1% | +57.2pp | +56.8% | ✓ |
+| 2024-04-19 | $18.84 | Kinder Morgan, Inc. Q1 2024 results | 2.40 | +0.80 | 0.15x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +82.3% | +35.9pp | +51.4% | ✓ |
+| 2024-04-26 | $18.68 | Kinder Morgan, Inc. Q1 2024 results | 2.40 | +0.82 | 0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +82.4% | +39.0pp | +53.3% | ✓ |
+| 2024-05-03 | $18.57 | Kinder Morgan, Inc. Q1 2024 results | 2.40 | +0.84 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +86.1% | +42.3pp | +54.7% | ✓ |
+| 2024-05-10 | $19.08 | Kinder Morgan, Inc. Q1 2024 results | 2.40 | +0.78 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +76.9% | +32.4pp | +51.1% | ✓ |
+| 2024-05-17 | $19.70 | Kinder Morgan, Inc. Q1 2024 results | 2.40 | +0.50 | 0.24x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +82.6% | +40.2pp | +46.9% | ✓ |
+| 2024-05-24 | $19.07 | Kinder Morgan, Inc. Q1 2024 results | 2.40 | +0.78 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +89.4% | +45.8pp | +52.3% | ✓ |
+| 2024-05-31 | $19.49 | Kinder Morgan, Inc. Q1 2024 results | 2.40 | +0.66 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +71.4% | +25.2pp | +49.4% | ✓ |
+| 2024-06-07 | $19.62 | Kinder Morgan, Inc. Q1 2024 results | 2.40 | +0.39 | 0.25x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +73.4% | +32.5pp | +48.7% | ✓ |
+| 2024-06-14 | $19.59 | Kinder Morgan, Inc. Q1 2024 results | 2.40 | +0.41 | 0.25x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +75.0% | +35.6pp | +49.4% | ✓ |
+| 2024-06-21 | $19.71 | Kinder Morgan, Inc. Q1 2024 results | 2.40 | +0.37 | 0.26x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +72.1% | +32.3pp | +48.7% | ✓ |
+| 2024-06-28 | $19.87 | Kinder Morgan, Inc. Q1 2024 results | 2.40 | +0.33 | 0.28x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +78.8% | +42.1pp | +48.0% | ✓ |
+| 2024-07-05 | $19.89 | Kinder Morgan, Inc. Q1 2024 results | 2.40 | +0.32 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +72.9% | +36.0pp | +48.1% | ✓ |
+| 2024-07-12 | $20.19 | Kinder Morgan, Inc. Q1 2024 results | 2.40 | +0.27 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +70.6% | +33.2pp | +46.3% | ✓ |
+| 2024-07-19 | $21.49 | Kinder Morgan, Inc. Q2 2024 results | 2.00 | -0.33 | 0.53x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +61.2% | +23.1pp | +37.9% | ✓ |
+| 2024-07-26 | $21.37 | Kinder Morgan, Inc. Q2 2024 results | 2.00 | -0.31 | 0.51x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +64.7% | +26.3pp | +39.2% | ✓ |
+| 2024-08-02 | $20.68 | Kinder Morgan, Inc. Q2 2024 results | 2.00 | -0.19 | 0.39x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +65.5% | +22.6pp | +44.2% | ✓ |
+| 2024-08-09 | $21.02 | Kinder Morgan, Inc. Q2 2024 results | 2.00 | -0.25 | 0.45x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +57.9% | +10.1pp | +42.2% | ✓ |
+| 2024-08-16 | $21.08 | Kinder Morgan, Inc. Q2 2024 results | 2.00 | -0.33 | 0.52x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +66.8% | +24.1pp | +42.3% | ✓ |
+| 2024-08-23 | $21.28 | Kinder Morgan, Inc. Q2 2024 results | 2.00 | -0.37 | 0.55x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +56.6% | +17.8pp | +41.5% | ✓ |
+| 2024-08-30 | $21.57 | Kinder Morgan, Inc. Q2 2024 results | 2.00 | -0.43 | 0.62x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +57.2% | +18.1pp | +40.0% | ✓ |
+| 2024-09-06 | $21.13 | Kinder Morgan, Inc. Q2 2024 results | 2.00 | -0.34 | 0.52x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +59.7% | +14.4pp | +43.3% | ✓ |
+| 2024-09-13 | $21.14 | Kinder Morgan, Inc. Q2 2024 results | 2.00 | -0.34 | 0.53x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +57.1% | +18.5pp | +43.6% | ✓ |
+| 2024-09-20 | $21.79 | Kinder Morgan, Inc. Q2 2024 results | 2.00 | -0.48 | 0.66x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 1/8 FAIR | +56.9% | +20.2pp | +39.7% | ✗ |
+| 2024-09-27 | $21.79 | Kinder Morgan, Inc. Q2 2024 results | 2.00 | -0.50 | 0.66x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +51.9% | +14.3pp | +40.0% | ✗ |
+| 2024-10-04 | $23.62 | Kinder Morgan, Inc. Q2 2024 results | 2.00 | -0.84 | 1.51x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +41.5% | +4.6pp | +29.4% | ✗ |
+| 2024-10-11 | $24.70 | Kinder Morgan, Inc. Q2 2024 results | 2.00 | -0.98 | 2.33x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +41.0% | +4.1pp | +24.1% | ✗ |
+| 2024-10-18 | $24.95 | Kinder Morgan, Inc. Q3 2024 results | 2.60 | -0.51 | 2.61x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +46.5% | +13.4pp | +23.3% | ✗ |
+| 2024-10-25 | $24.95 | Kinder Morgan, Inc. Q3 2024 results | 2.60 | -0.51 | 2.61x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +47.4% | +13.6pp | +23.8% | ✗ |
+| 2024-11-01 | $24.18 | Kinder Morgan, Inc. Q3 2024 results | 2.60 | -0.42 | 1.88x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +48.6% | +13.6pp | +28.4% | ✗ |
+| 2024-11-08 | $26.88 | Kinder Morgan, Inc. Q3 2024 results | 2.60 | -0.75 | 8.82x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +20.2% | -5.2pp | +15.9% | ✓ |
+| 2024-11-15 | $27.27 | Kinder Morgan, Inc. Q3 2024 results | 2.60 | -0.84 | 14.07x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +25.7% | -5.6pp | +14.6% | ✓ |
+| 2024-11-22 | $28.49 | Kinder Morgan, Inc. Q3 2024 results | 2.60 | -1.07 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +10.0% | - |
+| 2024-11-29 | $28.27 | Kinder Morgan, Inc. Q3 2024 results | 2.60 | -1.05 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +11.1% | - |
+| 2024-12-06 | $27.77 | Kinder Morgan, Inc. Q3 2024 results | 2.60 | -1.00 | 46.83x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +13.4% | - |
+| 2024-12-13 | $26.88 | Kinder Morgan, Inc. Q3 2024 results | 2.60 | -0.79 | 8.82x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | +17.5% | - |
+| 2024-12-20 | $26.85 | Kinder Morgan, Inc. Q3 2024 results | 2.60 | -0.79 | 8.57x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | +18.1% | - |
+| 2024-12-27 | $27.18 | Kinder Morgan, Inc. Q3 2024 results | 2.60 | -0.87 | 12.41x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +17.0% | - |
+| 2025-01-03 | $28.27 | Kinder Morgan, Inc. Q3 2024 results | 2.60 | -1.10 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +12.7% | - |
+| 2025-01-10 | $28.16 | Kinder Morgan, Inc. Q3 2024 results | 2.60 | -1.09 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +13.5% | - |
+| 2025-01-17 | $30.31 | Kinder Morgan, Inc. Q3 2024 results | 2.60 | -1.24 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +5.9% | - |
+| 2025-01-24 | $30.27 | Kinder Morgan, Inc. Q4 2024 results | 2.20 | -1.53 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +6.2% | - |
+| 2025-01-31 | $27.48 | Kinder Morgan, Inc. Q4 2024 results | 2.20 | -1.10 | 3.76x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +17.2% | - |
+| 2025-02-07 | $27.04 | Kinder Morgan, Inc. Q4 2024 results | 2.20 | -1.09 | 3.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +19.3% | - |
+| 2025-02-14 | $26.55 | Kinder Morgan, Inc. Q4 2024 results | 2.20 | -0.88 | 1.15x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +21.6% | - |
+| 2025-02-21 | $26.41 | Kinder Morgan, Inc. Q4 2024 results | 2.20 | -0.85 | 1.11x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +22.2% | - |
+| 2025-02-28 | $27.10 | Kinder Morgan, Inc. Q4 2024 results | 2.20 | -0.98 | 1.32x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | +19.0% | - |
+| 2025-03-07 | $26.14 | Kinder Morgan, Inc. Q4 2024 results | 2.20 | -0.79 | 1.04x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | +23.2% | - |
+| 2025-03-14 | $27.10 | Kinder Morgan, Inc. Q4 2024 results | 2.20 | -0.97 | 1.32x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | +18.7% | - |
+| 2025-03-21 | $27.93 | Kinder Morgan, Inc. Q4 2024 results | 2.20 | -1.11 | 1.64x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +15.1% | - |
+| 2025-03-28 | $28.37 | Kinder Morgan, Inc. Q4 2024 results | 2.20 | -1.27 | 1.84x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +13.1% | - |
+| 2025-04-04 | $25.29 | Kinder Morgan, Inc. Q4 2024 results | 2.20 | -0.59 | 0.84x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | +26.8% | - |
+| 2025-04-11 | $26.47 | Kinder Morgan, Inc. Q4 2024 results | 2.20 | -0.84 | 1.12x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +21.0% | - |
+| 2025-04-17 | $27.10 | Kinder Morgan, Inc. Q1 2025 results | 2.00 | -0.98 | 1.32x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +18.2% | - |
+| 2025-04-25 | $26.85 | Kinder Morgan, Inc. Q1 2025 results | 2.00 | -0.92 | 1.24x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +19.4% | - |
+| 2025-05-02 | $26.83 | Kinder Morgan, Inc. Q1 2025 results | 2.00 | -0.92 | 1.23x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +19.5% | - |
+| 2025-05-09 | $27.31 | Kinder Morgan, Inc. Q1 2025 results | 2.00 | -1.02 | 1.39x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +17.4% | - |
+| 2025-05-16 | $28.09 | Kinder Morgan, Inc. Q1 2025 results | 2.00 | -1.16 | 1.71x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | +14.0% | - |
+| 2025-05-23 | $27.86 | Kinder Morgan, Inc. Q1 2025 results | 2.00 | -1.13 | 1.61x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | +14.7% | - |
+| 2025-05-30 | $28.04 | Kinder Morgan, Inc. Q1 2025 results | 2.00 | -1.15 | 1.68x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | +14.0% | - |
+| 2025-06-06 | $28.14 | Kinder Morgan, Inc. Q1 2025 results | 2.00 | -1.17 | 1.73x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | +13.6% | - |
+| 2025-06-13 | $27.64 | Kinder Morgan, Inc. Q1 2025 results | 2.00 | -1.08 | 1.52x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | +15.8% | - |
+| 2025-06-20 | $28.01 | Kinder Morgan, Inc. Q1 2025 results | 2.00 | -1.15 | 1.67x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | +14.3% | - |
+| 2025-06-27 | $28.98 | Kinder Morgan, Inc. Q1 2025 results | 2.00 | -1.41 | 2.19x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +10.4% | - |
+| 2025-07-03 | $28.41 | Kinder Morgan, Inc. Q1 2025 results | 2.00 | -1.32 | 1.86x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +12.6% | - |
+| 2025-07-11 | $27.84 | Kinder Morgan, Inc. Q1 2025 results | 2.00 | -1.12 | 1.60x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | +14.8% | - |
+| 2025-07-18 | $27.88 | Kinder Morgan, Inc. Q2 2025 results | 2.75 | -0.21 | 1.22x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | +14.6% | - |
+| 2025-07-25 | $27.39 | Kinder Morgan, Inc. Q2 2025 results | 2.75 | -0.08 | 1.09x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +16.5% | - |
+| 2025-08-01 | $28.10 | Kinder Morgan, Inc. Q2 2025 results | 2.75 | -0.26 | 1.28x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | +13.6% | - |
+| 2025-08-08 | $26.89 | Kinder Morgan, Inc. Q2 2025 results | 2.75 | +0.11 | 0.98x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +18.9% | - |
+| 2025-08-15 | $26.67 | Kinder Morgan, Inc. Q2 2025 results | 2.75 | +0.20 | 0.93x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | +19.9% | - |
+| 2025-08-22 | $26.70 | Kinder Morgan, Inc. Q2 2025 results | 2.75 | +0.19 | 0.94x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | +19.7% | - |
+| 2025-08-29 | $26.98 | Kinder Morgan, Inc. Q2 2025 results | 2.75 | +0.06 | 1.00x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +18.7% | - |
+| 2025-09-05 | $26.59 | Kinder Morgan, Inc. Q2 2025 results | 2.75 | +0.23 | 0.91x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | +20.5% | - |
+| 2025-09-12 | $27.58 | Kinder Morgan, Inc. Q2 2025 results | 2.75 | -0.14 | 1.14x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | +16.4% | - |
+| 2025-09-19 | $27.42 | Kinder Morgan, Inc. Q2 2025 results | 2.75 | -0.09 | 1.10x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +17.5% | - |
+| 2025-09-26 | $28.21 | Kinder Morgan, Inc. Q2 2025 results | 2.75 | -0.29 | 1.31x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | +14.6% | - |
+| 2025-10-03 | $28.46 | Kinder Morgan, Inc. Q2 2025 results | 2.75 | -0.44 | 1.39x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | +14.6% | - |
+| 2025-10-10 | $27.10 | Kinder Morgan, Inc. Q2 2025 results | 2.75 | +0.03 | 1.02x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +20.8% | - |
+| 2025-10-17 | $27.38 | Kinder Morgan, Inc. Q2 2025 results | 2.75 | -0.06 | 1.09x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +19.0% | - |
+| 2025-10-24 | $25.86 | Kinder Morgan, Inc. Q3 2025 results | 2.55 | +0.15 | 0.86x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | +24.6% | - |
+| 2025-10-31 | $26.19 | Kinder Morgan, Inc. Q3 2025 results | 2.55 | +0.04 | 0.93x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | +20.2% | - |
+| 2025-11-07 | $26.55 | Kinder Morgan, Inc. Q3 2025 results | 2.55 | -0.12 | 1.01x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +18.6% | - |
+| 2025-11-14 | $27.42 | Kinder Morgan, Inc. Q3 2025 results | 2.55 | -0.38 | 1.24x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +15.3% | - |
+| 2025-11-21 | $26.98 | Kinder Morgan, Inc. Q3 2025 results | 2.55 | -0.26 | 1.12x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2025-11-28 | $27.32 | Kinder Morgan, Inc. Q3 2025 results | 2.55 | -0.35 | 1.21x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2025-12-05 | $27.77 | Kinder Morgan, Inc. Q3 2025 results | 2.55 | -0.47 | 1.35x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2025-12-12 | $26.73 | Kinder Morgan, Inc. Q3 2025 results | 2.55 | -0.18 | 1.06x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2025-12-19 | $26.49 | Kinder Morgan, Inc. Q3 2025 results | 2.55 | -0.09 | 1.00x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2025-12-26 | $27.19 | Kinder Morgan, Inc. Q3 2025 results | 2.55 | -0.32 | 1.18x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-01-02 | $27.71 | Kinder Morgan, Inc. Q3 2025 results | 2.55 | -0.45 | 1.33x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-01-09 | $27.12 | Kinder Morgan, Inc. Q3 2025 results | 2.55 | -0.30 | 1.16x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-01-16 | $27.96 | Kinder Morgan, Inc. Q3 2025 results | 2.55 | -0.50 | 1.41x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | - | - |
+| 2026-01-23 | $29.57 | Kinder Morgan, Inc. Q4 2025 results | 3.10 | +0.21 | 1.14x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2026-01-30 | $30.49 | Kinder Morgan, Inc. Q4 2025 results | 3.10 | +0.02 | 1.40x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-02-06 | $30.50 | Kinder Morgan, Inc. Q4 2025 results | 3.10 | +0.02 | 1.40x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-02-13 | $32.32 | Kinder Morgan, Inc. Q4 2025 results | 3.10 | -0.37 | 2.17x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2026-02-20 | $32.73 | Kinder Morgan, Inc. Q4 2025 results | 3.10 | -0.43 | 2.42x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-02-27 | $33.27 | Kinder Morgan, Inc. Q4 2025 results | 3.10 | -0.50 | 2.32x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-03-06 | $33.58 | Kinder Morgan, Inc. Q4 2025 results | 3.10 | -0.56 | 2.51x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-03-13 | $33.39 | Kinder Morgan, Inc. Q4 2025 results | 3.10 | -0.51 | 2.39x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-03-20 | $32.84 | Kinder Morgan, Inc. Q4 2025 results | 3.10 | -0.41 | 2.08x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-03-27 | $34.03 | Kinder Morgan, Inc. Q4 2025 results | 3.10 | -0.70 | 2.82x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-04-02 | $32.97 | Kinder Morgan, Inc. Q4 2025 results | 3.10 | -0.43 | 2.15x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-04-10 | $32.68 | Kinder Morgan, Inc. Q4 2025 results | 3.10 | -0.38 | 2.01x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2026-04-17 | $32.02 | Kinder Morgan, Inc. Q4 2025 results | 3.10 | -0.27 | 1.72x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-04-24 | $31.74 | Kinder Morgan, Inc. Q1 2026 results | 2.75 | -0.58 | 1.62x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | - | - | - | - |
+| 2026-05-01 | $32.53 | Kinder Morgan, Inc. Q1 2026 results | 2.75 | -0.67 | 1.68x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
+| 2026-05-08 | $31.41 | Kinder Morgan, Inc. Q1 2026 results | 2.75 | -0.46 | 1.33x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-05-15 | $33.63 | Kinder Morgan, Inc. Q1 2026 results | 2.75 | -0.88 | 2.14x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-05-22 | $33.79 | Kinder Morgan, Inc. Q1 2026 results | 2.75 | -0.91 | 2.22x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-05-29 | $31.08 | Kinder Morgan, Inc. Q1 2026 results | 2.75 | -0.30 | 1.24x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-06-05 | $31.68 | Kinder Morgan, Inc. Q1 2026 results | 2.75 | -0.51 | 1.40x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | - | - | - | - |
+| 2026-06-12 | $31.94 | Kinder Morgan, Inc. Q1 2026 results | 2.75 | -0.56 | 1.48x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | - | - | - | - |
+| 2026-06-18 | $31.59 | Kinder Morgan, Inc. Q1 2026 results | 2.75 | -0.49 | 1.38x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-06-26 | $33.19 | Kinder Morgan, Inc. Q1 2026 results | 2.75 | -0.79 | 1.94x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-07-02 | $32.06 | Kinder Morgan, Inc. Q1 2026 results | 2.75 | -0.58 | 1.52x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | - | - | - | - |
+| 2026-07-10 | $32.12 | Kinder Morgan, Inc. Q1 2026 results | 2.75 | -0.59 | 1.54x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | - | - | - | - |
+| 2026-07-17 | $32.30 | Kinder Morgan, Inc. Q1 2026 results | 2.75 | -0.63 | 1.60x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
+| 2026-07-24 | $32.86 | Kinder Morgan, Inc. Q2 2026 results | 2.75 | -0.81 | 2.50x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-07-31 | $32.18 | Kinder Morgan, Inc. Q2 2026 results | 2.75 | -0.75 | 1.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-08-07 | $30.85 | Kinder Morgan, Inc. Q2 2026 results | 2.75 | -0.38 | 1.33x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-08-14 | $32.82 | Kinder Morgan, Inc. Q2 2026 results | 2.75 | -0.87 | 2.07x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-08-21 | $30.98 | Kinder Morgan, Inc. Q2 2026 results | 2.75 | -0.42 | 1.37x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-08-28 | $31.56 | Kinder Morgan, Inc. Q2 2026 results | 2.75 | -0.62 | 1.55x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | - | - |
+| 2026-09-04 | $31.40 | Kinder Morgan, Inc. Q2 2026 results | 2.75 | -0.58 | 1.50x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | - | - | - | - |
+| 2026-09-11 | $30.86 | Kinder Morgan, Inc. Q2 2026 results | 2.75 | -0.37 | 1.33x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-09-18 | $31.84 | Kinder Morgan, Inc. Q2 2026 results | 2.75 | -0.66 | 1.65x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | - | - |
+| 2026-09-25 | $30.75 | Kinder Morgan, Inc. Q2 2026 results | 2.75 | -0.35 | 1.30x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2026-10-02 | $31.07 | Kinder Morgan, Inc. Q2 2026 results | 2.75 | -0.42 | 1.40x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-10-09 | $32.49 | Kinder Morgan, Inc. Q2 2026 results | 2.75 | -0.80 | 1.92x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-10-16 | $34.20 | Kinder Morgan, Inc. Q2 2026 results | 2.75 | -1.18 | 2.96x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-10-23 | $34.43 | Kinder Morgan, Inc. Q3 2026 results | 2.75 | -1.18 | 3.16x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-10-30 | $33.87 | Kinder Morgan, Inc. Q3 2026 results | 2.75 | -1.18 | 2.70x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-11-06 | $29.96 | Kinder Morgan, Inc. Q3 2026 results | 2.75 | -0.19 | 1.10x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-11-13 | $31.92 | Kinder Morgan, Inc. Q3 2026 results | 2.75 | -0.69 | 1.68x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
