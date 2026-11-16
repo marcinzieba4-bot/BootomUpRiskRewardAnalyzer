@@ -1,0 +1,1124 @@
+{
+ "_doc": "Kinder Morgan, Inc. (NYSE: KMI, Class P common stock), point-in-time facts for retro/build_kmi.py. Every value carries its source and the source's publication date (EDGAR acceptance time; after the 16:00 ET close it counts from the next trading day). Generated from the filings' converted rows: each figure is read from its labelled row and every rate is computed. Retro method r2 (retro/README.md, 'KMI').",
+ "ticker": "KMI",
+ "sources": {
+  "KM1": {
+   "published": "2011-03-02",
+   "filed": "2011-03-02 14:00 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. FY2010 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630711000009/kmi10k2010.htm",
+   "supports": "the five-year review's 2006 revenues (the Predecessor Company's full year), the 2008-2010 statements of income and the 2008-2010 segment EBDA table (rule T)"
+  },
+  "KM0": {
+   "published": "2011-05-09",
+   "filed": "2011-05-06 16:18 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. Q1 2011 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630711000057/kmi10k1_2011.htm",
+   "supports": "the EPS note: earnings per share are computed only from February 11, 2011, the date of the initial public offering"
+  },
+  "KM2": {
+   "published": "2012-02-23",
+   "filed": "2012-02-22 20:57 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000113501712000009/kmi10k2011.htm",
+   "supports": "FY2011 annual history: the five-year review (revenues 2008-2011), the statements of income (operating income, income from continuing operations before income taxes, income tax expense, 2009-2011), the segment EBDA table (2009-2011), the EPS note's period, the cash flow statement, Item 5 (the listing and dividends) and the risk factors"
+  },
+  "KM10": {
+   "published": "2012-10-18",
+   "filed": "2012-10-17 18:16 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. Q3 2012 results (8-K/A, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630712000114/kmiexhibit991.htm",
+   "supports": "Q3 2012 print: the preliminary consolidated statement of income (revenues, operating income, income before income taxes, Class P EPS from continuing operations, diluted Class P shares, the declared dividend) and the dividend outlook"
+  },
+  "KM20": {
+   "published": "2012-11-14",
+   "filed": "2012-11-14 14:18 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. Q3 2012 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630712000118/kmi-2012930x10q.htm",
+   "supports": "Q3 2012 segment EBDA (the segment note's three-month columns): total and Natural Gas Pipelines"
+  },
+  "KM11": {
+   "published": "2013-01-17",
+   "filed": "2013-01-16 16:11 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. Q4 2012 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630713000002/kmiexhibit991.htm",
+   "supports": "Q4 2012 print: the preliminary consolidated statement of income (revenues, operating income, income before income taxes, Class P EPS from continuing operations, diluted Class P shares, the declared dividend) and the dividend outlook"
+  },
+  "KM3": {
+   "published": "2013-03-01",
+   "filed": "2013-03-01 08:16 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630713000015/kmi-20121231x10k.htm",
+   "supports": "FY2012 annual history: the five-year review (revenues, Class P diluted EPS from continuing operations, diluted Class P shares), the statements of income and cash flows, the segment note and the risk factors"
+  },
+  "KM12": {
+   "published": "2013-04-18",
+   "filed": "2013-04-17 16:08 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. Q1 2013 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630713000027/kmiq12013exhibit991.htm",
+   "supports": "Q1 2013 print: the preliminary consolidated statement of income (revenues, operating income, income before income taxes, Class P EPS from continuing operations, diluted Class P shares, the declared dividend) and the dividend outlook"
+  },
+  "KM21": {
+   "published": "2013-05-06",
+   "filed": "2013-05-03 17:01 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. Q1 2013 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630713000030/kmi-3312013x10q.htm",
+   "supports": "Q1 2013 segment EBDA (the segment note's three-month columns): total and Natural Gas Pipelines"
+  },
+  "KM13": {
+   "published": "2013-07-18",
+   "filed": "2013-07-17 16:09 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. Q2 2013 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630713000051/kmiq22013exhibit991.htm",
+   "supports": "Q2 2013 print: the preliminary consolidated statement of income (revenues, operating income, income before income taxes, Class P EPS from continuing operations, diluted Class P shares, the declared dividend) and the dividend outlook"
+  },
+  "KM22": {
+   "published": "2013-08-05",
+   "filed": "2013-08-02 20:19 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. Q2 2013 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630713000054/kmi-6302013x10q.htm",
+   "supports": "Q2 2013 segment EBDA (the segment note's three-month columns): total and Natural Gas Pipelines"
+  },
+  "KM14": {
+   "published": "2013-10-17",
+   "filed": "2013-10-16 16:11 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. Q3 2013 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630713000065/kmiq32013exhibit991.htm",
+   "supports": "Q3 2013 print: the preliminary consolidated statement of income (revenues, operating income, income before income taxes, Class P EPS from continuing operations, diluted Class P shares, the declared dividend) and the dividend outlook"
+  },
+  "KM23": {
+   "published": "2013-10-31",
+   "filed": "2013-10-30 16:14 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. Q3 2013 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630713000068/kmi-9302013x10q.htm",
+   "supports": "Q3 2013 segment EBDA (the segment note's three-month columns): total and Natural Gas Pipelines"
+  },
+  "KM15": {
+   "published": "2014-01-16",
+   "filed": "2014-01-15 16:18 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. Q4 2013 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630714000002/kmi10-k2013exhibit991.htm",
+   "supports": "Q4 2013 print: the preliminary consolidated statement of income (revenues, operating income, income before income taxes, Class P EPS from continuing operations, diluted Class P shares, the declared dividend) and the dividend outlook"
+  },
+  "KM4": {
+   "published": "2014-02-24",
+   "filed": "2014-02-21 17:55 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. FY2013 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630714000010/kmi-2013x10k.htm",
+   "supports": "FY2013 annual history: the five-year review (revenues, Class P diluted EPS from continuing operations, diluted Class P shares), the statements of income and cash flows, the segment note and the risk factors"
+  },
+  "KM16": {
+   "published": "2014-04-17",
+   "filed": "2014-04-16 16:08 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. Q1 2014 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630714000023/kmiq120148-kexh991.htm",
+   "supports": "Q1 2014 print: the preliminary consolidated statement of income (revenues, operating income, income before income taxes, Class P EPS from continuing operations, diluted Class P shares, the declared dividend) and the dividend outlook"
+  },
+  "KM24": {
+   "published": "2014-05-01",
+   "filed": "2014-04-30 18:52 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. Q1 2014 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630714000029/kmi-03312014x10q.htm",
+   "supports": "Q1 2014 segment EBDA (the segment note's three-month columns): total and Natural Gas Pipelines"
+  },
+  "KM17": {
+   "published": "2014-07-17",
+   "filed": "2014-07-16 16:21 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. Q2 2014 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630714000048/kmiq220148-kexh991.htm",
+   "supports": "Q2 2014 print: the preliminary consolidated statement of income (revenues, operating income, income before income taxes, Class P EPS from continuing operations, diluted Class P shares, the declared dividend) and the dividend outlook"
+  },
+  "KM25": {
+   "published": "2014-07-31",
+   "filed": "2014-07-30 19:05 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. Q2 2014 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630714000052/kmi-06302014x10q.htm",
+   "supports": "Q2 2014 segment EBDA (the segment note's three-month columns): total and Natural Gas Pipelines"
+  },
+  "KM18": {
+   "published": "2014-10-16",
+   "filed": "2014-10-15 16:15 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. Q3 2014 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630714000061/kmiq320148-kexh991.htm",
+   "supports": "Q3 2014 print: the preliminary consolidated statement of income (revenues, operating income, income before income taxes, Class P EPS from continuing operations, diluted Class P shares, the declared dividend) and the dividend outlook"
+  },
+  "KM26": {
+   "published": "2014-10-30",
+   "filed": "2014-10-29 16:14 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. Q3 2014 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630714000065/kmi-09302014x10q.htm",
+   "supports": "Q3 2014 segment EBDA (the segment note's three-month columns): total and Natural Gas Pipelines"
+  }
+ },
+ "listing": {
+  "first_trading_day": "2011-02-11",
+  "exchange": "NYSE",
+  "symbol": "KMI",
+  "published": "2012-02-23",
+  "source": "KM2",
+  "note": "Kinder Morgan, Inc.'s Class P common stock listed on the NYSE as KMI with its initial public offering; its own P/E exists only from the first trading day (the listing rule of method r2): the FY2011 10-K's price table begins 'First Quarter (beginning February 11, 2011)', and Yahoo's KMI series starts on 2011-02-11"
+ },
+ "distributions": [],
+ "history_vintages": [
+  {
+   "published": "2012-02-23",
+   "sources": [
+    "KM2",
+    "KM1"
+   ],
+   "company": "Kinder Morgan, Inc.",
+   "exchange": "NYSE",
+   "symbol": "KMI",
+   "fy_label": "FY11",
+   "fiscal_year_ends": {
+    "2011": "2011-12-31"
+   },
+   "eps_normalized": {},
+   "eps_excluded": {
+    "2011": "$0.74 a diluted Class P share for February 11 to December 31, 2011 (FY2011 10-K: the period from the initial public offering), not a year"
+   },
+   "revenue_usd_b": {
+    "2006": 10.209,
+    "2011": 8.265,
+    "2010": 8.191,
+    "2009": 7.185,
+    "2008": 12.095
+   },
+   "revenue_sources": {
+    "2006": "KM1",
+    "2008": "KM2",
+    "2009": "KM2",
+    "2010": "KM2",
+    "2011": "KM2"
+   },
+   "diluted_shares_m": {
+    "2011": 707.6
+   },
+   "shares_note": "diluted weighted-average Class P shares of the EPS note, which assume the Class A shares' conversion (2011: February 11 to December 31); none before the listing",
+   "pe_window_start": "2011-02-11",
+   "prev_fy_op_margin": 12.28,
+   "prev_fy_op_margin_note": "FY11 income from continuing operations before income taxes $1,015.0M / revenues $8,264.9M (FY2011 10-K)",
+   "prev_fy_sales_growth": 0.9,
+   "check_pretax_margin": 12.28,
+   "check_pretax_note": "FY11 income from continuing operations before income taxes / revenues (FY2011 10-K), before the noncontrolling interests (KMP's other unitholders), so the check overstates KMI's own EPS",
+   "tax_rate": 0.357,
+   "tax_note": "FY11 effective rate: income tax expense $362.8M on $1,015.0M (FY2011 10-K)",
+   "dividend_annual": 1.24,
+   "dividend_note": "$0.31 a quarter, declared in January 2012 (FY2011 10-K)",
+   "fcf_b": 1.165,
+   "fcf_label": "FY11",
+   "fcf_note": "net cash provided by operating activities $2,365.1M less capital expenditures $1,200.1M (FY2011 10-K, consolidated with KMP)",
+   "cash_return_text": "$769.6M of cash dividends and distributions paid in FY11, no share repurchases",
+   "groups": [
+    [
+     "Products Pipelines",
+     914.0,
+     3.5
+    ],
+    [
+     "Natural Gas Pipelines",
+     4265.1,
+     -3.4
+    ],
+    [
+     "CO2",
+     1433.7,
+     10.4
+    ],
+    [
+     "Terminals",
+     1313.5,
+     3.9
+    ],
+    [
+     "Kinder Morgan Canada",
+     302.4,
+     12.6
+    ]
+   ],
+   "groups_basis": "FY11 segment revenues from external customers (FY2011 10-K)",
+   "why": "Although the majority of the cash generated by KMP’s assets is fee based and is not sensitive to commodity prices, the CO2–KMP business segment is exposed to commodity price risk related to the price volatility of crude oil and natural gas liquids. Risk factor: We are dependent on cash distributions received from KMP.",
+   "kind_text": "A pipeline transportation and energy storage company",
+   "business_line": "Natural gas, products and CO2 pipelines, terminals (the general partner of KMP)",
+   "margin_signal_name": "Pre-tax margin change",
+   "normalization": "diluted EPS from continuing operations of the Class P common stock, GAAP, each year from the latest filing that reports it (where a filing reports no continuing-operations line, its diluted EPS); 2011 covers only February 11 to December 31 and is not a year"
+  },
+  {
+   "published": "2013-03-01",
+   "sources": [
+    "KM3",
+    "KM1"
+   ],
+   "company": "Kinder Morgan, Inc.",
+   "exchange": "NYSE",
+   "symbol": "KMI",
+   "fy_label": "FY12",
+   "fiscal_year_ends": {
+    "2012": "2012-12-31"
+   },
+   "eps_normalized": {
+    "2012": 0.56
+   },
+   "eps_excluded": {
+    "2011": "$0.70 a diluted Class P share from continuing operations for February 11 to December 31, 2011 (the IPO period), not a year"
+   },
+   "revenue_usd_b": {
+    "2006": 10.209,
+    "2008": 11.716,
+    "2009": 6.879,
+    "2010": 7.852,
+    "2011": 7.943,
+    "2012": 9.973
+   },
+   "revenue_sources": {
+    "2006": "KM1",
+    "2008": "KM3",
+    "2009": "KM3",
+    "2010": "KM3",
+    "2011": "KM3",
+    "2012": "KM3"
+   },
+   "diluted_shares_m": {
+    "2011": 708.0,
+    "2012": 908.0
+   },
+   "shares_note": "diluted weighted-average Class P shares of the five-year review, which assume the Class A shares' conversion (2011: February 11 to December 31)",
+   "pe_window_start": "2011-02-11",
+   "prev_fy_op_margin": 13.47,
+   "prev_fy_op_margin_note": "FY12 income from continuing operations before income taxes $1,343M / revenues $9,973M ( FY2012 10-K)",
+   "prev_fy_sales_growth": 25.6,
+   "check_pretax_margin": 13.47,
+   "check_pretax_note": "FY12 income from continuing operations before income taxes / revenues, before the noncontrolling interests (KMP's and EPB's other unitholders), so the check overstates KMI's own EPS",
+   "tax_rate": 0.103,
+   "tax_note": "FY12 effective rate: income tax expense $139M on $1,343M",
+   "dividend_annual": 1.48,
+   "dividend_note": "$0.37 a quarter, declared in January 2013 (FY2012 10-K)",
+   "fcf_b": 0.773,
+   "fcf_label": "FY12",
+   "fcf_note": "net cash provided by operating activities $2,795M less capital expenditures $2,022M (consolidated with KMP and EPB)",
+   "cash_return_text": "$1,184M of cash dividends and distributions paid in FY12, no share repurchases",
+   "groups": [
+    [
+     "Natural Gas Pipelines(a)",
+     5230.0,
+     32.6
+    ],
+    [
+     "Products Pipelines",
+     1370.0,
+     49.9
+    ],
+    [
+     "CO2",
+     1677.0,
+     16.9
+    ],
+    [
+     "Terminals",
+     1356.0,
+     3.2
+    ],
+    [
+     "Kinder Morgan Canada",
+     311.0,
+     3.0
+    ]
+   ],
+   "groups_basis": "FY12 segment revenues from external customers ( FY2012 10-K)",
+   "why": "Although the overwhelming majority of the cash generated by KMP’s assets is fee based and is not sensitive to commodity prices, the CO2-KMP business segment is exposed to commodity price risk related to the price volatility of crude oil and natural gas liquids. Risk factor: We are dependent on cash distributions received from KMP and EPB.",
+   "kind_text": "A pipeline transportation and energy storage company",
+   "business_line": "Natural gas, products and CO2 pipelines, terminals (the general partner of KMP and EPB)",
+   "margin_signal_name": "Pre-tax margin change",
+   "normalization": "diluted EPS from continuing operations of the Class P common stock, GAAP, each year from the latest filing that reports it; 2011 covers only February 11 to December 31 and is not a year"
+  },
+  {
+   "published": "2014-02-24",
+   "sources": [
+    "KM4",
+    "KM1",
+    "KM3"
+   ],
+   "company": "Kinder Morgan, Inc.",
+   "exchange": "NYSE",
+   "symbol": "KMI",
+   "fy_label": "FY13",
+   "fiscal_year_ends": {
+    "2013": "2013-12-31"
+   },
+   "eps_normalized": {
+    "2013": 1.15,
+    "2012": 0.56
+   },
+   "eps_excluded": {
+    "2011": "$0.70 a diluted Class P share from continuing operations for February 11 to December 31, 2011 (the IPO period), not a year"
+   },
+   "revenue_usd_b": {
+    "2006": 10.209,
+    "2008": 11.716,
+    "2009": 6.879,
+    "2010": 7.852,
+    "2011": 7.943,
+    "2012": 9.973,
+    "2013": 14.07
+   },
+   "revenue_sources": {
+    "2006": "KM1",
+    "2008": "KM3",
+    "2009": "KM4",
+    "2010": "KM4",
+    "2011": "KM4",
+    "2012": "KM4",
+    "2013": "KM4"
+   },
+   "diluted_shares_m": {
+    "2011": 708.0,
+    "2012": 908.0,
+    "2013": 1036.0
+   },
+   "shares_note": "diluted weighted-average Class P shares of the five-year review, which assume the Class A shares' conversion (2011: February 11 to December 31)",
+   "pe_window_start": "2011-02-11",
+   "prev_fy_op_margin": 24.43,
+   "prev_fy_op_margin_note": "FY13 income from continuing operations before income taxes $3,438M / revenues $14,070M ( FY2013 10-K)",
+   "prev_fy_sales_growth": 41.1,
+   "check_pretax_margin": 24.43,
+   "check_pretax_note": "FY13 income from continuing operations before income taxes / revenues, before the noncontrolling interests (KMP's and EPB's other unitholders), so the check overstates KMI's own EPS",
+   "tax_rate": 0.216,
+   "tax_note": "FY13 effective rate: income tax expense $742M on $3,438M",
+   "dividend_annual": 1.64,
+   "dividend_note": "$0.41 a quarter, declared in January 2014 (FY2013 10-K)",
+   "fcf_b": 0.695,
+   "fcf_label": "FY13",
+   "fcf_note": "net cash provided by operating activities $4,064M less capital expenditures $3,369M (consolidated with KMP and EPB)",
+   "cash_return_text": "$1,622M of cash dividends and distributions paid in FY13, $637M of shares and warrants repurchased",
+   "groups": [
+    [
+     "Natural Gas Pipelines(a)",
+     8613.0,
+     64.7
+    ],
+    [
+     "CO2",
+     1857.0,
+     10.7
+    ],
+    [
+     "Products Pipelines",
+     1853.0,
+     35.3
+    ],
+    [
+     "Terminals",
+     1408.0,
+     3.8
+    ],
+    [
+     "Kinder Morgan Canada",
+     302.0,
+     -2.9
+    ]
+   ],
+   "groups_basis": "FY13 segment revenues from external customers ( FY2013 10-K)",
+   "why": "Although cash generated by KMP’s assets is predominantly fee based and is generally not sensitive to commodity prices, the CO2-KMP business segment is exposed to commodity price risk related to the price volatility of crude oil and NGL. Risk factor: We are dependent on cash distributions received from KMP and EPB.",
+   "kind_text": "A pipeline transportation and energy storage company",
+   "business_line": "Natural gas, products and CO2 pipelines, terminals (the general partner of KMP and EPB)",
+   "margin_signal_name": "Pre-tax margin change",
+   "normalization": "diluted EPS from continuing operations of the Class P common stock, GAAP, each year from the latest filing that reports it; 2011 covers only February 11 to December 31 and is not a year"
+  }
+ ],
+ "prints": [
+  {
+   "quarter": "Q3 2012",
+   "fy": 2012,
+   "q": 3,
+   "published": "2012-10-18",
+   "source": "KM10",
+   "release": "Oct 17",
+   "release_time": "after the close on Oct 17: the 8-K/A was accepted 18:16 ET, the call at 4:30 p.m. ET; public before the open on 2012-10-18",
+   "period_end": "2012-09-30",
+   "raw": {
+    "rev_m": 2870.0,
+    "rev_prior_m": 2122.0,
+    "oi_m": 852.0,
+    "oi_prior_m": 381.0,
+    "pti_m": 446.0,
+    "pti_prior_m": 95.0,
+    "eps_q": 0.21,
+    "eps_q_prior": 0.2,
+    "dil_sh_m": 1039.0,
+    "div_q": 0.36,
+    "cad_ps": null,
+    "cad_ps_prior": null
+   },
+   "sales_b": 2.87,
+   "sales_pct": 35.2,
+   "opm": 29.69,
+   "opm_bp": 1174.0,
+   "ptm": 15.54,
+   "ptm_bp": 1106.0,
+   "eps_q": 0.21,
+   "eps_q_prior": 0.2,
+   "diluted_shares_m": 1039.0,
+   "seg_pct": null,
+   "ngp_pct": null,
+   "seg_note": "no quarterly segment EBDA in the release",
+   "sales_note": "revenues $2,870M vs $2,122M",
+   "margin_note": "operating income $852M vs $381M; income from continuing operations before income taxes $446M vs $95M",
+   "eps_note": "GAAP, diluted from continuing operations per Class P share, $0.21 against $0.20 a year earlier",
+   "cash_note": "no cash available per share in the release",
+   "next_print": "the Q4 2012 release",
+   "seg_later": {
+    "seg_pct": 136.9,
+    "ngp_pct": 4025.0,
+    "published": "2012-11-14",
+    "source": "KM20",
+    "note": "the Q3 2012 10-Q (accepted 2012-11-14 14:18 ET): total segment EBDA $1,535M vs $648M, Natural Gas Pipelines $825M vs $20M"
+   }
+  },
+  {
+   "quarter": "Q4 2012",
+   "fy": 2012,
+   "q": 4,
+   "published": "2013-01-17",
+   "source": "KM11",
+   "release": "Jan 16",
+   "release_time": "after the close on Jan 16: the 8-K was accepted 16:11 ET, the call at 4:30 p.m. ET; public before the open on 2013-01-17",
+   "period_end": "2012-12-31",
+   "raw": {
+    "rev_m": 3079.0,
+    "rev_prior_m": 1937.0,
+    "oi_m": 965.0,
+    "oi_prior_m": 441.0,
+    "pti_m": 650.0,
+    "pti_prior_m": 340.0,
+    "eps_q": 0.34,
+    "eps_q_prior": 0.21,
+    "dil_sh_m": 1039.0,
+    "div_q": 0.37,
+    "cad_ps": 0.42,
+    "cad_ps_prior": 0.34
+   },
+   "sales_b": 3.079,
+   "sales_pct": 59.0,
+   "opm": 31.34,
+   "opm_bp": 857.0,
+   "ptm": 21.11,
+   "ptm_bp": 356.0,
+   "eps_q": 0.34,
+   "eps_q_prior": 0.21,
+   "diluted_shares_m": 1039.0,
+   "seg_pct": null,
+   "ngp_pct": null,
+   "seg_note": "no quarterly segment EBDA in the release",
+   "sales_note": "revenues $3,079M vs $1,937M",
+   "margin_note": "operating income $965M vs $441M; income from continuing operations before income taxes $650M vs $340M",
+   "eps_note": "GAAP, diluted from continuing operations per Class P share, $0.34 against $0.21 a year earlier",
+   "cash_note": "cash available to pay dividends $0.42 a share vs $0.34 (non-GAAP, display only)",
+   "next_print": "the Q1 2013 release",
+   "fy_actual": {
+    "fy": 2012,
+    "fy_label": "FY12",
+    "eps_normalized": 0.7,
+    "excluded_note": null,
+    "revenue_usd_b": 9.973,
+    "diluted_shares_m": 908.0,
+    "normalization_note": "FY12 $0.70 diluted from continuing operations per Class P share from the Q4 2012 release (2013-01-17) until the 10-K",
+    "op_margin": 15.47,
+    "op_margin_note": "FY12 income from continuing operations before income taxes $1,543M / revenues $9,973M (Q4 2012 release)",
+    "sales_growth": 25.6,
+    "check_pretax_margin": 15.47,
+    "check_pretax_note": "FY12 income from continuing operations before income taxes / revenues (Q4 2012 release), before the noncontrolling interests",
+    "tax_rate": 0.136,
+    "tax_note": "FY12 effective rate: income tax expense $210M on $1,543M",
+    "one_off_test": {
+     "items_after_tax_m": 310.0,
+     "income_attributable_m": 444.0,
+     "distorted": false,
+     "note": "the release's $310M after-tax expenses of the EP acquisition and EP Energy sale (the only one-off it states after tax) against net income attributable to KMI of $444M: kept at GAAP",
+     "kind": "charges"
+    }
+   }
+  },
+  {
+   "quarter": "Q1 2013",
+   "fy": 2013,
+   "q": 1,
+   "published": "2013-04-18",
+   "source": "KM12",
+   "release": "Apr 17",
+   "release_time": "after the close on Apr 17: the 8-K was accepted 16:08 ET, the call at 4:30 p.m. ET; public before the open on 2013-04-18",
+   "period_end": "2013-03-31",
+   "raw": {
+    "rev_m": 3060.0,
+    "rev_prior_m": 1857.0,
+    "oi_m": 1020.0,
+    "oi_prior_m": 516.0,
+    "pti_m": 937.0,
+    "pti_prior_m": 401.0,
+    "eps_q": 0.28,
+    "eps_q_prior": 0.23,
+    "dil_sh_m": 1038.0,
+    "div_q": 0.38,
+    "cad_ps": 0.49,
+    "cad_ps_prior": 0.43
+   },
+   "sales_b": 3.06,
+   "sales_pct": 64.8,
+   "opm": 33.33,
+   "opm_bp": 554.0,
+   "ptm": 30.62,
+   "ptm_bp": 903.0,
+   "eps_q": 0.28,
+   "eps_q_prior": 0.23,
+   "diluted_shares_m": 1038.0,
+   "seg_pct": null,
+   "ngp_pct": null,
+   "seg_note": "no quarterly segment EBDA in the release",
+   "sales_note": "revenues $3,060M vs $1,857M",
+   "margin_note": "operating income $1,020M vs $516M; income from continuing operations before income taxes $937M vs $401M",
+   "eps_note": "GAAP, diluted from continuing operations per Class P share, $0.28 against $0.23 a year earlier",
+   "cash_note": "cash available to pay dividends $0.49 a share vs $0.43 (non-GAAP, display only)",
+   "next_print": "the Q2 2013 release",
+   "seg_later": {
+    "seg_pct": 86.0,
+    "ngp_pct": 294.7,
+    "published": "2013-05-06",
+    "source": "KM21",
+    "note": "the Q1 2013 10-Q (accepted 2013-05-03 17:01 ET): total segment EBDA $1,806M vs $971M, Natural Gas Pipelines $896M vs $227M"
+   }
+  },
+  {
+   "quarter": "Q2 2013",
+   "fy": 2013,
+   "q": 2,
+   "published": "2013-07-18",
+   "source": "KM13",
+   "release": "Jul 17",
+   "release_time": "after the close on Jul 17: the 8-K was accepted 16:09 ET, the call at 4:30 p.m. ET; public before the open on 2013-07-18",
+   "period_end": "2013-06-30",
+   "raw": {
+    "rev_m": 3382.0,
+    "rev_prior_m": 2167.0,
+    "oi_m": 775.0,
+    "oi_prior_m": 260.0,
+    "pti_m": 1006.0,
+    "pti_prior_m": 46.0,
+    "eps_q": 0.27,
+    "eps_q_prior": -0.11,
+    "dil_sh_m": 1038.0,
+    "div_q": 0.4,
+    "cad_ps": 0.28,
+    "cad_ps_prior": 0.36
+   },
+   "sales_b": 3.382,
+   "sales_pct": 56.1,
+   "opm": 22.92,
+   "opm_bp": 1092.0,
+   "ptm": 29.75,
+   "ptm_bp": 2763.0,
+   "eps_q": 0.27,
+   "eps_q_prior": -0.11,
+   "diluted_shares_m": 1038.0,
+   "seg_pct": null,
+   "ngp_pct": null,
+   "seg_note": "no quarterly segment EBDA in the release",
+   "sales_note": "revenues $3,382M vs $2,167M",
+   "margin_note": "operating income $775M vs $260M; income from continuing operations before income taxes $1,006M vs $46M",
+   "eps_note": "GAAP, diluted from continuing operations per Class P share, $0.27 against $(0.11) a year earlier",
+   "cash_note": "cash available to pay dividends $0.28 a share vs $0.36 (non-GAAP, display only)",
+   "next_print": "the Q3 2013 release",
+   "seg_later": {
+    "seg_pct": 76.0,
+    "ngp_pct": 235.9,
+    "published": "2013-08-05",
+    "source": "KM22",
+    "note": "the Q2 2013 10-Q (accepted 2013-08-02 20:19 ET): total segment EBDA $2,042M vs $1,160M, Natural Gas Pipelines $1,421M vs $423M"
+   }
+  },
+  {
+   "quarter": "Q3 2013",
+   "fy": 2013,
+   "q": 3,
+   "published": "2013-10-17",
+   "source": "KM14",
+   "release": "Oct 16",
+   "release_time": "after the close on Oct 16: the 8-K was accepted 16:11 ET, the call at 4:30 p.m. ET; public before the open on 2013-10-17",
+   "period_end": "2013-09-30",
+   "raw": {
+    "rev_m": 3654.0,
+    "rev_prior_m": 2870.0,
+    "oi_m": 1041.0,
+    "oi_prior_m": 852.0,
+    "pti_m": 722.0,
+    "pti_prior_m": 446.0,
+    "eps_q": 0.27,
+    "eps_q_prior": 0.21,
+    "dil_sh_m": 1036.0,
+    "div_q": 0.41,
+    "cad_ps": 0.41,
+    "cad_ps_prior": 0.35
+   },
+   "sales_b": 3.654,
+   "sales_pct": 27.3,
+   "opm": 28.49,
+   "opm_bp": -120.0,
+   "ptm": 19.76,
+   "ptm_bp": 422.0,
+   "eps_q": 0.27,
+   "eps_q_prior": 0.21,
+   "diluted_shares_m": 1036.0,
+   "seg_pct": null,
+   "ngp_pct": null,
+   "seg_note": "no quarterly segment EBDA in the release",
+   "sales_note": "revenues $3,654M vs $2,870M",
+   "margin_note": "operating income $1,041M vs $852M; income from continuing operations before income taxes $722M vs $446M",
+   "eps_note": "GAAP, diluted from continuing operations per Class P share, $0.27 against $0.21 a year earlier",
+   "cash_note": "cash available to pay dividends $0.41 a share vs $0.35 (non-GAAP, display only)",
+   "next_print": "the Q4 2013 release",
+   "seg_later": {
+    "seg_pct": 12.7,
+    "ngp_pct": 16.5,
+    "published": "2013-10-31",
+    "source": "KM23",
+    "note": "the Q3 2013 10-Q (accepted 2013-10-30 16:14 ET): total segment EBDA $1,757M vs $1,559M, Natural Gas Pipelines $958M vs $822M"
+   }
+  },
+  {
+   "quarter": "Q4 2013",
+   "fy": 2013,
+   "q": 4,
+   "published": "2014-01-16",
+   "source": "KM15",
+   "release": "Jan 15",
+   "release_time": "after the close on Jan 15: the 8-K was accepted 16:18 ET, the call at 4:30 p.m. ET; public before the open on 2014-01-16",
+   "period_end": "2013-12-31",
+   "raw": {
+    "rev_m": 3872.0,
+    "rev_prior_m": 3079.0,
+    "oi_m": 1160.0,
+    "oi_prior_m": 965.0,
+    "pti_m": 773.0,
+    "pti_prior_m": 450.0,
+    "eps_q": 0.33,
+    "eps_q_prior": 0.21,
+    "dil_sh_m": 1035.0,
+    "div_q": 0.41,
+    "cad_ps": 0.46,
+    "cad_ps_prior": 0.42
+   },
+   "sales_b": 3.872,
+   "sales_pct": 25.8,
+   "opm": 29.96,
+   "opm_bp": -138.0,
+   "ptm": 19.96,
+   "ptm_bp": 534.0,
+   "eps_q": 0.33,
+   "eps_q_prior": 0.21,
+   "diluted_shares_m": 1035.0,
+   "seg_pct": null,
+   "ngp_pct": null,
+   "seg_note": "no quarterly segment EBDA in the release",
+   "sales_note": "revenues $3,872M vs $3,079M",
+   "margin_note": "operating income $1,160M vs $965M; income from continuing operations before income taxes $773M vs $450M",
+   "eps_note": "GAAP, diluted from continuing operations per Class P share, $0.33 against $0.21 a year earlier",
+   "cash_note": "cash available to pay dividends $0.46 a share vs $0.42 (non-GAAP, display only)",
+   "next_print": "the Q1 2014 release",
+   "fy_actual": {
+    "fy": 2013,
+    "fy_label": "FY13",
+    "eps_normalized": 1.15,
+    "excluded_note": null,
+    "revenue_usd_b": 14.07,
+    "diluted_shares_m": 1036.0,
+    "normalization_note": "FY13 $1.15 diluted from continuing operations per Class P share from the Q4 2013 release (2014-01-16) until the 10-K",
+    "op_margin": 24.43,
+    "op_margin_note": "FY13 income from continuing operations before income taxes $3,438M / revenues $14,070M (Q4 2013 release)",
+    "sales_growth": 41.1,
+    "check_pretax_margin": 24.43,
+    "check_pretax_note": "FY13 income from continuing operations before income taxes / revenues (Q4 2013 release), before the noncontrolling interests",
+    "tax_rate": 0.216,
+    "tax_note": "FY13 effective rate: income tax expense $742M on $3,438M",
+    "one_off_test": {
+     "kind": "benefits",
+     "items_after_tax_m": 504.0,
+     "income_attributable_m": 689.0,
+     "distorted": false,
+     "note": "the release lists KMP certain items of $559M (net gains: Eagle Ford remeasurement, the Express sale) and KMI certain items of $55M, pre-tax and before the noncontrolling interests; even all $504M of the net benefit credited to KMI is less than the year's $1,193M of net income attributable to KMI without it ($689M), the mirror test (method r2): kept at GAAP"
+    }
+   }
+  },
+  {
+   "quarter": "Q1 2014",
+   "fy": 2014,
+   "q": 1,
+   "published": "2014-04-17",
+   "source": "KM16",
+   "release": "Apr 16",
+   "release_time": "after the close on Apr 16: the 8-K was accepted 16:08 ET, the call at 4:30 p.m. ET; public before the open on 2014-04-17",
+   "period_end": "2014-03-31",
+   "raw": {
+    "rev_m": 4047.0,
+    "rev_prior_m": 3060.0,
+    "oi_m": 1147.0,
+    "oi_prior_m": 1017.0,
+    "pti_m": 801.0,
+    "pti_prior_m": 937.0,
+    "eps_q": 0.28,
+    "eps_q_prior": 0.28,
+    "dil_sh_m": 1029.0,
+    "div_q": 0.42,
+    "cad_ps": 0.55,
+    "cad_ps_prior": 0.49
+   },
+   "sales_b": 4.047,
+   "sales_pct": 32.3,
+   "opm": 28.34,
+   "opm_bp": -490.0,
+   "ptm": 19.79,
+   "ptm_bp": -1083.0,
+   "eps_q": 0.28,
+   "eps_q_prior": 0.28,
+   "diluted_shares_m": 1029.0,
+   "seg_pct": null,
+   "ngp_pct": null,
+   "seg_note": "no quarterly segment EBDA in the release",
+   "sales_note": "revenues $4,047M vs $3,060M",
+   "margin_note": "operating income $1,147M vs $1,017M; income from continuing operations before income taxes $801M vs $937M",
+   "eps_note": "GAAP, diluted from continuing operations per Class P share, $0.28 against $0.28 a year earlier",
+   "cash_note": "cash available to pay dividends $0.55 a share vs $0.49 (non-GAAP, display only)",
+   "next_print": "the Q2 2014 release",
+   "seg_later": {
+    "seg_pct": 5.6,
+    "ngp_pct": 19.1,
+    "published": "2014-05-01",
+    "source": "KM24",
+    "note": "the Q1 2014 10-Q (accepted 2014-04-30 18:52 ET): total segment EBDA $1,911M vs $1,809M, Natural Gas Pipelines $1,071M vs $899M"
+   }
+  },
+  {
+   "quarter": "Q2 2014",
+   "fy": 2014,
+   "q": 2,
+   "published": "2014-07-17",
+   "source": "KM17",
+   "release": "Jul 16",
+   "release_time": "after the close on Jul 16: the 8-K was accepted 16:21 ET, the call at 4:30 p.m. ET; public before the open on 2014-07-17",
+   "period_end": "2014-06-30",
+   "raw": {
+    "rev_m": 3937.0,
+    "rev_prior_m": 3382.0,
+    "oi_m": 1013.0,
+    "oi_prior_m": 772.0,
+    "pti_m": 675.0,
+    "pti_prior_m": 1006.0,
+    "eps_q": 0.27,
+    "eps_q_prior": 0.27,
+    "dil_sh_m": 1028.0,
+    "div_q": 0.43,
+    "cad_ps": 0.32,
+    "cad_ps_prior": 0.28
+   },
+   "sales_b": 3.937,
+   "sales_pct": 16.4,
+   "opm": 25.73,
+   "opm_bp": 290.0,
+   "ptm": 17.15,
+   "ptm_bp": -1260.0,
+   "eps_q": 0.27,
+   "eps_q_prior": 0.27,
+   "diluted_shares_m": 1028.0,
+   "seg_pct": null,
+   "ngp_pct": null,
+   "seg_note": "no quarterly segment EBDA in the release",
+   "sales_note": "revenues $3,937M vs $3,382M",
+   "margin_note": "operating income $1,013M vs $772M; income from continuing operations before income taxes $675M vs $1,006M",
+   "eps_note": "GAAP, diluted from continuing operations per Class P share, $0.27 against $0.27 a year earlier",
+   "cash_note": "cash available to pay dividends $0.32 a share vs $0.28 (non-GAAP, display only)",
+   "next_print": "the Q3 2014 release",
+   "seg_later": {
+    "seg_pct": -13.8,
+    "ngp_pct": -32.9,
+    "published": "2014-07-31",
+    "source": "KM25",
+    "note": "the Q2 2014 10-Q (accepted 2014-07-30 19:05 ET): total segment EBDA $1,762M vs $2,045M, Natural Gas Pipelines $955M vs $1,424M"
+   }
+  },
+  {
+   "quarter": "Q3 2014",
+   "fy": 2014,
+   "q": 3,
+   "published": "2014-10-16",
+   "source": "KM18",
+   "release": "Oct 15",
+   "release_time": "after the close on Oct 15: the 8-K was accepted 16:15 ET, the call at 4:30 p.m. ET; public before the open on 2014-10-16",
+   "period_end": "2014-09-30",
+   "raw": {
+    "rev_m": 4291.0,
+    "rev_prior_m": 3756.0,
+    "oi_m": 1332.0,
+    "oi_prior_m": 1041.0,
+    "pti_m": 1025.0,
+    "pti_prior_m": 722.0,
+    "eps_q": 0.32,
+    "eps_q_prior": 0.27,
+    "dil_sh_m": 1028.0,
+    "div_q": 0.44,
+    "cad_ps": 0.42,
+    "cad_ps_prior": 0.41
+   },
+   "sales_b": 4.291,
+   "sales_pct": 14.2,
+   "opm": 31.04,
+   "opm_bp": 332.0,
+   "ptm": 23.89,
+   "ptm_bp": 467.0,
+   "eps_q": 0.32,
+   "eps_q_prior": 0.27,
+   "diluted_shares_m": 1028.0,
+   "seg_pct": null,
+   "ngp_pct": null,
+   "seg_note": "no quarterly segment EBDA in the release",
+   "sales_note": "revenues $4,291M vs $3,756M",
+   "margin_note": "operating income $1,332M vs $1,041M; income from continuing operations before income taxes $1,025M vs $722M",
+   "eps_note": "GAAP, diluted from continuing operations per Class P share, $0.32 against $0.27 a year earlier",
+   "cash_note": "cash available to pay dividends $0.42 a share vs $0.41 (non-GAAP, display only)",
+   "next_print": "the Q4 2014 release",
+   "seg_later": {
+    "seg_pct": 19.4,
+    "ngp_pct": 23.4,
+    "published": "2014-10-30",
+    "source": "KM26",
+    "note": "the Q3 2014 10-Q (accepted 2014-10-29 16:14 ET): total segment EBDA $2,097M vs $1,757M, Natural Gas Pipelines $1,182M vs $958M"
+   }
+  }
+ ],
+ "guides": [
+  {
+   "fy": 2012,
+   "published": "2012-10-18",
+   "source": "KM10",
+   "doc": "Q3 2012 release",
+   "rev_none": true,
+   "display": "dividends: \"as previously announced, KMI expects to declare dividends of at least $1.40 per share for 2012\" (a dividend outlook, not an earnings or revenue guide: display only)"
+  },
+  {
+   "fy": 2013,
+   "published": "2013-01-17",
+   "source": "KM11",
+   "doc": "Q4 2012 release",
+   "rev_none": true,
+   "display": "dividends: \"as previously announced, KMI expects to declare dividends of $1.57 per share for 2013\" (a dividend outlook, not an earnings or revenue guide: display only)"
+  },
+  {
+   "fy": 2013,
+   "published": "2013-04-18",
+   "source": "KM12",
+   "doc": "Q1 2013 release",
+   "rev_none": true,
+   "display": "dividends: \"as previously announced, KMI expects to declare dividends of $1.57 per share for 2013\" (a dividend outlook, not an earnings or revenue guide: display only)"
+  },
+  {
+   "fy": 2013,
+   "published": "2013-07-18",
+   "source": "KM13",
+   "doc": "Q2 2013 release",
+   "rev_none": true,
+   "display": "dividends: \"expects to declare dividends totaling $1.60 per share\" (a dividend outlook, not an earnings or revenue guide: display only)"
+  },
+  {
+   "fy": 2013,
+   "published": "2013-10-17",
+   "source": "KM14",
+   "doc": "Q3 2013 release",
+   "rev_none": true,
+   "display": "dividends: \"as previously announced, KMI expects to declare dividends of at least $1.60 per share for 2013\" (a dividend outlook, not an earnings or revenue guide: display only)"
+  },
+  {
+   "fy": 2014,
+   "published": "2014-01-16",
+   "source": "KM15",
+   "doc": "Q4 2013 release",
+   "rev_none": true,
+   "display": "dividends: \"as previously announced, KMI expects to declare dividends of $1.72 per share for 2014\" (a dividend outlook, not an earnings or revenue guide: display only)"
+  },
+  {
+   "fy": 2014,
+   "published": "2014-04-17",
+   "source": "KM16",
+   "doc": "Q1 2014 release",
+   "rev_none": true,
+   "display": "dividends: \"as previously announced, KMI expects to declare dividends of $1.72 per share for 2014\" (a dividend outlook, not an earnings or revenue guide: display only)"
+  },
+  {
+   "fy": 2014,
+   "published": "2014-07-17",
+   "source": "KM17",
+   "doc": "Q2 2014 release",
+   "rev_none": true,
+   "display": "dividends: \"as previously announced, KMI expects to declare dividends of at least $1.72 per share for 2014\" (a dividend outlook, not an earnings or revenue guide: display only)"
+  }
+ ],
+ "dividends": [
+  {
+   "published": "2012-10-18",
+   "source": "KM10",
+   "quarterly": 0.36,
+   "note": "$0.36 a quarter, declared for Q3 2012 (Q3 2012 release)"
+  },
+  {
+   "published": "2013-01-17",
+   "source": "KM11",
+   "quarterly": 0.37,
+   "note": "$0.37 a quarter, declared for Q4 2012 (Q4 2012 release)"
+  },
+  {
+   "published": "2013-04-18",
+   "source": "KM12",
+   "quarterly": 0.38,
+   "note": "$0.38 a quarter, declared for Q1 2013 (Q1 2013 release)"
+  },
+  {
+   "published": "2013-07-18",
+   "source": "KM13",
+   "quarterly": 0.4,
+   "note": "$0.40 a quarter, declared for Q2 2013 (Q2 2013 release)"
+  },
+  {
+   "published": "2013-10-17",
+   "source": "KM14",
+   "quarterly": 0.41,
+   "note": "$0.41 a quarter, declared for Q3 2013 (Q3 2013 release)"
+  },
+  {
+   "published": "2014-01-16",
+   "source": "KM15",
+   "quarterly": 0.41,
+   "note": "$0.41 a quarter, declared for Q4 2013 (Q4 2013 release)"
+  },
+  {
+   "published": "2014-04-17",
+   "source": "KM16",
+   "quarterly": 0.42,
+   "note": "$0.42 a quarter, declared for Q1 2014 (Q1 2014 release)"
+  },
+  {
+   "published": "2014-07-17",
+   "source": "KM17",
+   "quarterly": 0.43,
+   "note": "$0.43 a quarter, declared for Q2 2014 (Q2 2014 release)"
+  },
+  {
+   "published": "2014-10-16",
+   "source": "KM18",
+   "quarterly": 0.44,
+   "note": "$0.44 a quarter, declared for Q3 2014 (Q3 2014 release)"
+  }
+ ],
+ "events": [],
+ "company_names": [],
+ "rule_t": {
+  "seg": {
+   "values": {
+    "2010": -9.1,
+    "2011": 18.1
+   },
+   "sources": {
+    "2010": "KM2",
+    "2011": "KM2"
+   },
+   "note": "2009 against 2008's loss (goodwill impairments, FY2010 10-K: $(1,039.2)M) is no growth rate",
+   "unit": 1,
+   "lower_is_better": false,
+   "thresholds": {
+    "BEAR": -23,
+    "BASE": -9,
+    "BULL": 5,
+    "XBULL": 18
+   }
+  },
+  "ngp": {
+   "values": {
+    "2010": 5.1,
+    "2011": -6.8
+   },
+   "sources": {
+    "2010": "KM2",
+    "2011": "KM2"
+   },
+   "note": "2009 against 2008's loss (FY2010 10-K: $(1,344.3)M) is no growth rate",
+   "unit": 1,
+   "lower_is_better": false,
+   "thresholds": {
+    "BEAR": -13,
+    "BASE": -7,
+    "BULL": -1,
+    "XBULL": 5
+   }
+  },
+  "revenue": {
+   "values": {
+    "2009": -40.6,
+    "2010": 14.0,
+    "2011": 0.9,
+    "2012": 25.6
+   },
+   "sources": {
+    "2009": "KM2",
+    "2010": "KM2",
+    "2011": "KM2",
+    "2012": "KM11"
+   },
+   "unit": 1,
+   "lower_is_better": false,
+   "thresholds": {
+    "BEAR": -89,
+    "BASE": -41,
+    "BULL": 7,
+    "XBULL": 26
+   }
+  },
+  "op_margin": {
+   "values": {
+    "2009": 4002.4,
+    "2010": -394.8,
+    "2011": 298.1,
+    "2012": 808.5
+   },
+   "sources": {
+    "2009": "KM2",
+    "2010": "KM2",
+    "2011": "KM2",
+    "2012": "KM11"
+   },
+   "unit": 10,
+   "lower_is_better": false,
+   "thresholds": {
+    "BEAR": -1340,
+    "BASE": -390,
+    "BULL": 550,
+    "XBULL": 4000
+   }
+  },
+  "pretax_margin": {
+   "values": {
+    "2009": 3926.2,
+    "2010": -958.8,
+    "2011": 656.8,
+    "2012": 527.4
+   },
+   "sources": {
+    "2009": "KM1",
+    "2010": "KM2",
+    "2011": "KM2",
+    "2012": "KM11"
+   },
+   "unit": 10,
+   "lower_is_better": false,
+   "thresholds": {
+    "BEAR": -2510,
+    "BASE": -960,
+    "BULL": 590,
+    "XBULL": 3930
+   }
+  }
+ }
+}
