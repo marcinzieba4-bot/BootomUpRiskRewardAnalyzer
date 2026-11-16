@@ -16784,6 +16784,51 @@ Judgement calls that could carry hindsight:
 
 The hindsight results are in `staging/retrospective/CTVA/FINDINGS.md`: hypotheses, never inputs.
 
+## KMI (Kinder Morgan): requested for 2008-2009, no date can be built
+
+**What the owner asked for and what could be built.** On 2026-11-16 the owner asked for KMI 2008-2009 on the same rules. Under method
+r2 **no date of 2008-2009 can be built**, and none was: no fact sheet, builder, engine or staging folder was made, and nothing was invented
+to fill the gap (the BKR 2018 and CTVA 2008-2009 precedents). Checked against the filings, before any price or outcome of those years was
+read (Yahoo was asked for its series metadata only):
+
+- **No KMI stock in 2008-2009.** The Kinder Morgan, Inc. listed on the NYSE as KMI until 2007 (CIK 54502, formerly K N Energy) was taken
+  private: "On May 30, 2007, Kinder Morgan, Inc. (the “Corporation”) completed its merger (the “Merger”) with Knight Acquisition Co.", and
+  it "requested that the NYSE file with the Securities and Exchange Commission an application on Form 25 to report that the shares of
+  common stock of the Corporation are no longer listed on the NYSE" (8-K accepted 2007-06-04 18:40 ET). The NYSE's Form 25 for the common
+  stock was accepted the same day (14:24 ET), and Forms 15-12B followed on 2007-06-04 and 2007-06-05. Through 2008-2009 the company kept
+  filing 10-Ks and 10-Qs, as Knight Inc. and from 2009-07-15 as Kinder Morgan, Inc. again, but only as an issuer of public debt: "Knight
+  Midco Inc., an indirect wholly owned subsidiary of Knight Holdco LLC, owns 100% of our outstanding common stock", its balance sheet shows
+  "Common Stock – Authorized and Outstanding – 100 Shares, Par Value $0.01 Per Share", and the 2008 columns of its quarterly price table
+  read "n/a" (FY2008 10-K, 2009-03-31 15:50 ET). The FY2009 10-K (2010-03-08 14:47 ET): "As a result of the Going Private transaction, our
+  common stock ceased trading on May 30, 2007." So no date of 2008-2009 has a KMI price, a P/E of its own or a per-share EPS of a traded
+  share.
+- **Today's KMI did not trade until 2011 (the listing rule).** Today's Kinder Morgan, Inc. (CIK 1506307) is the former parent, Knight
+  Holdco LLC (later Kinder Morgan Holdco LLC): "We were formed in 2006 in connection with a transaction we refer to as the "Going Private
+  Transaction,"" and "Prior to this offering there has been no public market for our common stock." (Form S-1, its first SEC filing,
+  accepted 2010-11-23 10:47 ET). It converted to a corporation on 2011-02-10 (FY2010 10-K) and its offering priced at $30.00 (424B1,
+  2011-02-11 06:06 ET). Yahoo's KMI series starts on 2011-02-11 (`firstTradeDate` and the first point; none in 2008-2009). A model needs
+  the stock's own P/E window, which runs from the listing.
+- **No predecessor price under KMI (why the BKR/BHI route does not apply).** BKR's 2008-2017 dates are Baker Hughes Incorporated because
+  BHI was listed on those dates and Yahoo serves its history under BKR. Here the business is largely the same (Knight Inc. consolidated
+  Kinder Morgan Energy Partners), but no KMI equity was listed on any date of 2008-2009, and Yahoo serves nothing under KMI before 2011. The
+  listed Kinder Morgan equities of those years were other securities: "Kinder Morgan Energy Partners is a publicly traded pipeline limited
+  partnership whose limited partnership units are traded on the New York Stock Exchange under the ticker symbol “KMP.”" and "Kinder Morgan
+  Management’s shares (other than the voting shares held by Kinder Morgan G.P., Inc.) are traded on the New York Stock Exchange under the
+  ticker symbol “KMR.”" (FY2008 10-K). Knight Inc. owned "the general partner interest and a significant limited partner interest" in KMP,
+  but KMP's units are a partnership's, with their own earnings per unit and distributions; a 2008-2009 model of them would be a KMP
+  retrospective, not KMI's. Yahoo serves neither KMP nor KMR ("No data found, symbol may be delisted").
+
+Building either alternative is the owner's call and a method note, not a rule this request decides: (a) KMP (Kinder Morgan Energy
+Partners) as a ticker of its own, with its own fact sheet, builder and engine, 2008 onward; it needs a price source other than Yahoo and a
+rule for a partnership's earnings per unit after the general partner's incentive distributions; (b) KMI from its 2011-02-11 listing, whose
+first date also needs a full year of EPS published by KMI itself (the BKR 2018 rule; not yet determined: a search of the FY2010 10-K, the
+first after the listing, finds no earnings per share, since Kinder Morgan Holdco LLC had units, not shares).
+
+Sources (each quoted string checked with `verbatim.py` against its own filing, 29/29): EDGAR submissions for CIK 54502 and CIK 1506307;
+8-K 0000054502-07-000044; Form 25 0000876661-07-000471; FY2008 10-K 0000054502-09-000005; 8-K 0000054502-09-000011 (the 2009 name
+change); FY2009 10-K 0000054502-10-000002; Form S-1 0001047469-10-010001; 424B1 0001047469-11-000769; FY2010 10-K 0001506307-11-000009;
+Yahoo chart API, KMI, KMP and KMR, read 2026-11-16 (metadata only). No model output changes.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are

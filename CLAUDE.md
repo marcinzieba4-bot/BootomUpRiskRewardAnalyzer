@@ -36,6 +36,8 @@ touching either directory.
   (listed 2019-06-03) existed, and DuPont's or Dow's history was not substituted. From the listing its EPS is GAAP (Operating EPS removes
   recurring amortization), so no date precedes the first full year (FY2020, released 2021-02-03), and none follows the 2026-10-01
   reverse spin-off of the seed business (Vylor), after which the only per-share history is pro forma; both gaps are the owner's call
-  (retro/README.md, "CTVA").
+  (retro/README.md, "CTVA"). KMI (Kinder Morgan) has no retrospective: it was asked for 2008-2009, when no KMI stock traded (the old KMI
+  went private on 2007-05-30; today's KMI listed on 2011-02-11), so no date was built and KMP's or KMR's history was not substituted
+  (retro/README.md, "KMI"; either alternative is the owner's call).
 - **Never use the owner's personal email** in request headers to external
   services (SEC asks for a contact in the User-Agent).
