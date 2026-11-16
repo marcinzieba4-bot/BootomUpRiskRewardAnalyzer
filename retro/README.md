@@ -17597,6 +17597,8 @@ Judgement calls that could carry hindsight:
 - GAAP EPS with the unusual items' per-share effects in, the published figures, rather than figures derived from them (no class);
 - DURABLE, risk 2, and OFFSHORE read as out of scope for a government IT business (label only).
 
+The hindsight results are in `staging/retrospective/LMT/FINDINGS.md`: hypotheses, never inputs.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
