@@ -123,7 +123,7 @@ def segments(p, as_of):
     sl = p.get("seg_later")
     if p["seg_pct"] is None and sl and sl["published"] <= as_of:
         return sl["seg_pct"], sl["ngp_pct"], sl["note"], sl["source"]
-    return p["seg_pct"], p["ngp_pct"], p["seg_note"] + (" (the quarter's 10-Q is not public yet)" if sl else ""), None
+    return p["seg_pct"], p["ngp_pct"], p["seg_note"], None      # nothing about a filing not yet public may show (the firewall)
 
 
 def build(as_of, facts, raw, spx, engine, out):
