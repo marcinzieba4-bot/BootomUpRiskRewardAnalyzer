@@ -16986,6 +16986,8 @@ Judgement calls that could carry hindsight:
 - DURABLE although the CO2 segment is exposed to oil prices, as each 10-K says;
 - the non-earnings 8-Ks read by their item text and exhibits for guided numbers only.
 
+The hindsight results are in `staging/retrospective/KMI/FINDINGS.md`: hypotheses, never inputs.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
