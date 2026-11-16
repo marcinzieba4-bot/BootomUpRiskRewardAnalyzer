@@ -32,7 +32,8 @@ trading day and the week's date is the trading day after that (the AAPL rule).
 Output goes to staging/retrospective/KMI until the series is added to the archive (--out archive/retrospective/KMI).
 
 Usage
-  python3 retro/build_kmi.py --weekly 2013-01-14 2014-12-31      # 2013-01-18 .. 2014-12-31
+  python3 retro/build_kmi.py --weekly 2013-01-14 2014-12-31      # 103 dates, 2013-01-18 .. 2014-12-31
+  python3 retro/build_kmi.py --weekly 2015-01-01 2018-12-31      # 210 dates, 2015-01-02 .. 2018-12-31 (README, "KMI 2015-2018")
   python3 retro/build_kmi.py 2013-01-18
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/KMI/<AS_OF>
 """
