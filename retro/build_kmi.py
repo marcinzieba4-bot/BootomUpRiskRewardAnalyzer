@@ -14,16 +14,19 @@ EPS (the BKR 2017 and CTVA 2017 rule) and is excluded: its days leave the P/E wi
 can be built before the Q4 2012 release (8-K accepted 2013-01-16 16:11 ET, public from 2013-01-17; the first weekly date is
 2013-01-18). EPS is GAAP diluted EPS from continuing operations per Class P share, each year from the latest filing that reports it.
 
-Kinder Morgan guides dividends and cash available to pay dividends, never revenue, EPS or a margin in numbers (2011-2014), so:
-  - current-FY EPS: the last full year's GAAP EPS stands (the PFE rule for a year with no reported-EPS guide),
+Kinder Morgan guides dividends and cash available to pay dividends, never revenue or a margin in numbers, so:
+  - current-FY EPS: the last full year's GAAP EPS stands (the PFE rule for a year with no reported-EPS guide), until the 2021 budget
+    (the Q4 2020 release) begins to guide GAAP earnings: from it, the guide's per-share figure where the release states one, else its
+    net income attributable to KMI (midpoint, or the budget times the stated percentage) over the release's own diluted
+    weighted-average shares (README, "KMI 2019-2022"),
   - BASE growth and the growth factor: the latest quarter's revenue growth as reported (the SO and UNP no-guide rule),
   - guided margin step: none; the margin signal uses the latest quarter's change.
-The dividend outlook is shown in the guide line, display only.
+The dividend, DCF and EBITDA outlooks are shown in the guide line, display only.
 
 Signals (each against the year-ago quarter): total segment EBDA and Natural Gas Pipelines segment EBDA growth, from the release where
 it tabulates the quarter, else from the quarter's 10-Q once that is public (the PEP servings_later rule; a fourth quarter, in no 10-Q,
 is not reported until a release tabulates it); revenue growth, the operating margin change and the pre-tax margin change from the
-release's statement of income.
+release's statement of income. Growth against a year-ago loss is measured over the loss's absolute value (the CAT and SO rule).
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
 is the first trading day after it. Every earnings 8-K of the series was accepted after the close, so each print is dated the next
@@ -34,6 +37,7 @@ Output goes to staging/retrospective/KMI until the series is added to the archiv
 Usage
   python3 retro/build_kmi.py --weekly 2013-01-14 2014-12-31      # 103 dates, 2013-01-18 .. 2014-12-31
   python3 retro/build_kmi.py --weekly 2015-01-01 2018-12-31      # 210 dates, 2015-01-02 .. 2018-12-31 (README, "KMI 2015-2018")
+  python3 retro/build_kmi.py --weekly 2019-01-01 2022-12-31      # 209 dates, 2019-01-04 .. 2022-12-30 (README, "KMI 2019-2022")
   python3 retro/build_kmi.py 2013-01-18
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/KMI/<AS_OF>
 """
@@ -64,7 +68,9 @@ PRINT_KEYS = {"quarter", "fy", "q", "published", "source", "release", "release_t
               "seg_later", "sales_note", "margin_note", "eps_note", "cash_note", "next_print", "fy_actual"}
 FY_KEYS = {"fy", "fy_label", "eps_normalized", "excluded_note", "revenue_usd_b", "diluted_shares_m", "normalization_note", "op_margin",
            "op_margin_note", "sales_growth", "check_pretax_margin", "check_pretax_note", "tax_rate", "tax_note", "one_off_test"}
-GUIDE_KEYS = {"fy", "published", "source", "doc", "release_time", "display", "rev_none"}
+GUIDE_KEYS = {"fy", "published", "source", "doc", "release_time", "display", "rev_none", "eps_guide", "ni_guide_m", "ni_budget_m",
+              "ni_vs_budget_pct", "earnings_words"}
+EARNINGS_KEYS = ("eps_guide", "ni_guide_m", "ni_budget_m")      # a GAAP earnings guide (from the 2021 budget, README "KMI 2019-2022")
 
 
 def fiscal_year_end(n):
@@ -97,7 +103,9 @@ def check_print(p):
     """Re-derive a print's growth rates and margins from its raw published figures (they must match the fact sheet)."""
     assert set(p) <= PRINT_KEYS, (p["quarter"], sorted(set(p) - PRINT_KEYS), "a print field with no encoding yet; decide one first")
     r = p["raw"]
-    pct = lambda a, b: round((b / a - 1) * 100, 1) if a > 0 else None
+    # growth on the year-ago figure; against a year-ago loss, over the loss's absolute value (the CAT 2014-2017 and SO 2018-2021 rule,
+    # first needed for KMI in Q2 2021, whose year-ago Natural Gas Pipelines EBDA is a loss)
+    pct = lambda a, b: round((b / a - 1) * 100, 1) if a > 0 else round((b - a) / abs(a) * 100, 1) if a < 0 else None
     mg = lambda x, rev: round(x / rev * 100 + 0.0, 2)
     want = {"sales_b": round(r["rev_m"] / 1000, 3), "sales_pct": pct(r["rev_prior_m"], r["rev_m"]),
             "opm": mg(r["oi_m"], r["rev_m"]), "opm_bp": round((mg(r["oi_m"], r["rev_m"]) - mg(r["oi_prior_m"], r["rev_prior_m"])) * 100, 1),
@@ -196,16 +204,48 @@ def build(as_of, facts, raw, spx, engine, out):
     nq = latest["q"]
     next_q = f"Q{nq % 4 + 1} {latest['fy'] + (1 if nq == 4 else 0)}"
 
-    # ── no GAAP EPS guide: the last full year's EPS stands (the PFE rule); the dividend outlook is display only ──
-    eps_now = eps_hist[last_fy]
-    eps_label = (f"{fy_e}: no reported (GAAP) EPS guide, FY{last_fy % 100:02d}'s ${money(eps_now)} stands" + "".join(
-        f" (FY{y % 100:02d} is excluded: {excluded[y]})" for y in range(last_fy + 1, cur_fy)))
+    # ── current-FY EPS; the dividend, DCF and EBITDA outlooks are display only ──
     guides = [g for g in facts["guides"] if g["published"] <= as_of and g["fy"] == cur_fy]
     gl = guides[-1] if guides else None                                        # the latest outlook for the year (display)
+    excluded_tail = "".join(f" (FY{y % 100:02d} is excluded: {excluded[y]})" for y in range(last_fy + 1, cur_fy))
+    # ── a GAAP earnings guide (from the 2021 budget): current-FY EPS is its per-share figure where the release states one, else its net
+    # income attributable to KMI (midpoint; a percentage on the budget's figure where it is stated that way) divided by the release's own
+    # diluted weighted-average Class P shares; an earnings outlook in words keeps the last figure (the ACN rule). With none, the last full
+    # year's EPS stands (the PFE rule) ──
+    eg = next((g for g in reversed(guides) if any(k in g for k in EARNINGS_KEYS)), None)
+    if eg:
+        rel = [p for p in public if p["source"] == eg["source"]]
+        assert len(rel) == 1, (eg["doc"], "an earnings guide must come with its release's print")
+        if "eps_guide" in eg:
+            eps_now = round(sum(eg["eps_guide"]) / 2, 3)
+            how = f"the {eg['doc']}'s ${eg['eps_guide'][0]:.2f} a share" if eg["eps_guide"][0] == eg["eps_guide"][1] else \
+                f"the {eg['doc']}'s ${eg['eps_guide'][0]:.2f}-{eg['eps_guide'][1]:.2f} a share, midpoint"
+        else:
+            if "ni_guide_m" in eg:
+                lo, hi = eg["ni_guide_m"]
+                ni = (lo + hi) / 2
+                ni_txt = f"${lo / 1000:.1f} billion" if lo == hi else f"${lo / 1000:.1f}-{hi / 1000:.1f} billion (midpoint ${ni / 1000:.1f} billion)"
+            else:
+                ni = eg["ni_budget_m"] * (1 + eg["ni_vs_budget_pct"] / 100)
+                ni_txt = (f"${ni / 1000:.3f} billion (the ${eg['ni_budget_m'] / 1000:.1f} billion budget "
+                          f"{eg['ni_vs_budget_pct']:+g}%)")
+            sh = rel[0]["diluted_shares_m"]
+            eps_now = round(ni / sh, 3)
+            how = f"the {eg['doc']}'s net income attributable to KMI of {ni_txt} / {sh:,.0f}M diluted shares"
+        eps_label = f"{fy_e}: GAAP earnings guide, {how} = ${money(eps_now)}" + excluded_tail
+        if eg.get("earnings_words"):
+            eps_label += f"; restated in words: '{eg['earnings_words']}' (the last figure stands)"
+    else:
+        eps_now = eps_hist[last_fy]
+        eps_label = (f"{fy_e}: no reported (GAAP) EPS guide, FY{last_fy % 100:02d}'s ${money(eps_now)} stands" + excluded_tail)
     fwd = [latest["sales_pct"]] * 2
     fwd_label, fwd_short, fwd_period = (f"no {fy_now} revenue guide in numbers, {latest['quarter']} revenues as reported",
                                         f"{latest['quarter'][:2]} revenues", latest["quarter"])
-    guide_text = f"{fy_now}: no revenue, EPS or margin guide in numbers (BASE takes {latest['quarter']} revenue growth as reported)"
+    if eg:
+        guide_text = (f"{fy_now}: no revenue or margin guide in numbers (BASE takes {latest['quarter']} revenue growth as reported); "
+                      f"GAAP EPS ${money(eps_now)} from the {eg['doc']}'s earnings guide")
+    else:
+        guide_text = f"{fy_now}: no revenue, EPS or margin guide in numbers (BASE takes {latest['quarter']} revenue growth as reported)"
     if gl:
         guide_text += f"; the {gl['doc']}'s {gl['display']}"
     margin_guided = False                          # no margin guide: no guided step
@@ -278,7 +318,8 @@ def build(as_of, facts, raw, spx, engine, out):
                 "greenhouse gas risk factor puts the theme on the watch list, company-acknowledged, with no dated evidence that the market "
                 "prices it for Kinder Morgan")
     kind, pit_risk = "DURABLE", 2
-    cat3 = (f"(3) The {fy_now} outlook — no revenue, EPS or margin guide in numbers"
+    cat3 = ((f"(3) The {fy_now} outlook — GAAP EPS ${money(eps_now)} ({how}); no revenue or margin guide in numbers" if eg else
+             f"(3) The {fy_now} outlook — no revenue, EPS or margin guide in numbers")
             + (f"; {gl['display']}" if gl else "; no dividend outlook for the year yet"))
     cat4 = f"(4) Free cash flow — {h['fcf_label']} {h['fcf_note']}"
 

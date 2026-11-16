@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  KMI  ·  Kinder Morgan, Inc.  ·  $13.08  ·  RETROSPECTIVE as of 2020-09-18
+  Signal: ◉ BUY   Ratio B: 0.09x   Adj gap: +0.05  [FAIRLY VALUED]
+  Point-in-time: 11 sources, latest published 2020-09-18; latest print Q2 2020 (Jul 22)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2020E revenues, USD bn  →  FY2022E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2020E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Natural Gas Pipelines     $     6.5  $   6.5  $   7.3      +0.0      +0.8
+    -7.7% revenues in FY19
+  CO2                       $     1.0  $   1.0  $   1.1      +0.0      +0.1
+    -2.9% revenues in FY19
+  Terminals                 $     1.6  $   1.6  $   1.8      +0.0      +0.2
+    +0.3% revenues in FY19
+  Products Pipelines        $     1.5  $   1.5  $   1.6      +0.0      +0.1
+    -3.0% revenues in FY19
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    10.6  $  10.6  $  11.8      +0.0      +1.2
+  FY2020E = FY19 $13.21B × (1 − 20.3%: no FY20 revenue guide in numbers, Q2 2020 revenues as reported, applied to the year (no FY20 revenue guide)); split pro rata to FY19 segment revenues from external customers (FY2019 10-K)
+  Q2 2020 (Jul 22): revenues $2.56B -20.3%; segment EBDA -68.2%, Natural Gas Pipelines -100.3%;
+  operating margin -11.02% (-4129.0bp); pre-tax margin -20.31% (-4134.0bp); EPS $(0.28) vs $0.23
+  Activity: revenues $2,560M vs $3,214M; segment EBDA: the release's supplemental information (GAAP segment EBDA): total $599M vs $1,881M, Natural Gas Pipelines $(3)M vs $1,088M; operating income $(282)M vs $973M; income before income taxes $(520)M vs $676M; DCF per common share $0.44 vs $0.50; adjusted earnings per common share $0.17 vs $0.22 (non-GAAP, display only); EPS GAAP, diluted per Class P common share, $(0.28) against $0.23 a year earlier
+  FY20: no revenue, EPS or margin guide in numbers (BASE takes Q2 2020 revenue growth as reported); the Q2 2020 release's DCF: "the company now expects DCF to be below plan by slightly more than 10 percent" (a cash-flow outlook, not an earnings or revenue guide: display only)
+
+  FY2020E EPS check:  $10.6B × 24.0% pre-tax × (1−29.3%) ÷ 2.261B  =  $0.79  (FY2020E: no reported (GAAP) EPS guide, FY19's $0.96 stands)
+  FY2022E BEAR check: $10.6B × 24.0% ÷ 2.914B  =  $0.62  (scenario $0.57)
+  FY2022E BULL check: $11.8B × 24.4% ÷ 2.914B  =  $0.70  (scenario $1.12)
+  Every 1pp of pre-tax margin ≈ $0.03 EPS ≈ $1/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Segment EBDA growth                -23.0%   ≥-9.0%    ≥5.0%   ≥18.0%    -68.2%  ⚠ BEAR  █░░░
+  Natural Gas Pipelines EBDA growth   -13.0%   ≥-7.0%   ≥-1.0%    ≥5.0%   -100.3%  ⚠ BEAR  █░░░
+  Revenue growth                     -89.0%  ≥-41.0%    ≥7.0%   ≥26.0%    -20.3%  ◦ BASE  ██░░
+  Operating margin change           -1340.0bp  ≥-390.0bp  ≥550.0bp  ≥4000.0bp  -4129.0bp  ⚠ BEAR  █░░░
+  Pre-tax margin change             -2510.0bp  ≥-960.0bp  ≥590.0bp  ≥3930.0bp  -4134.0bp  ⚠ BEAR  █░░░
+  Energy transition: oil reserves and hydrocarbon demand   +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.30 / 4.00
+  Market composite:   1.60 / 4.00  (back-solved from $13 + 15% hurdle)
+  SCA adjustment:    +0.15  ·  EPP-distance adj +0.20  →  Adj composite 1.65  →  Gap +0.05  [FAIRLY VALUED]
+
+  Structural factors:
+    +  Franchise: FY19 revenues -6.6%; Q2 operating margin -11.02% (-4129bp)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 13.6x FY20E vs a 30.7x 8.7-yr ex-FY11 ex-FY15 ex-FY16 ex-FY17 median (1st percentile of its own range)  (+0.50 × 25%  =  +0.125)
+    -  Growth vs own history: no FY20 revenue guide in numbers, Q2 2020 revenues as reported -20.3% vs a 3.2% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  FY19 free cash flow $2.48B (consolidated), dividend $1.05 a year, $2,163M of cash dividends on common shares paid in FY19, $2M of common shares repurchased  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Segment EBDA growth                 -68.2%    -23.0%  +45.2%  Volumes and rates fall across the seg…
+  Natural Gas Pipelines EBDA growth   -100.3%    -13.0%  +87.3%  Gas transport and storage contracts r…
+  Revenue growth                      -20.3%    -89.0%  -68.7%  Commodity sales and volumes fall
+  Operating margin change           -4129.0bp  -1340.0bp  +2789.0bp  Charges and costs outrun revenues
+  Pre-tax margin change             -4134.0bp  -2510.0bp  +1624.0bp  Interest and charges as earnings fall
+  Energy transition: oil reserves and hydrocarbon demand    +2.0/4    +1.0/4  -1.0/4  Greenhouse gas rules cut hydrocarbon …
+
+  Bear composite:  1.00  →  Bear scenario price: ~$14  (model)  /  $10 (defined)
+  Bear probability (proxy model):  68.8%
+
+  KEY TRIGGER: Segment EBDA growth went from -51.0% (Q1 2020) to -68.2% (Q2 2020);
+  the bear case needs Natural Gas Pipelines (-100.3% now) and revenues
+  (-20.3% now) to give way as well. Contracted transport and storage fees drive most of the cash, by the company's own account;
+  the bear needs volumes and rates to fall, not one quarter's commodity prices.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $0.96  (FY2020E: no reported (GAAP) EPS guide, FY19's $0.96 stands)
+  Min viable P/E at panic:          25x  [median of calendar-year P/E lows: 2012 54.9x, 2013 28.3x, 2014 34.8x, 2018 22.3x, 2019 16.4x, 2020 10.4x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $24/share
+  Current $13 vs Updated EPP $24:  -46%  ✓ BELOW panic floor — deep-value zone
+  Bear $10 vs Updated EPP $24:  -58%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Segment EBDA growth                         -9.0      +59.2   BASE floor (vs -68 now)
+  Natural Gas Pipelines EBDA growth            -7.0      +93.3   BASE floor (vs -100 now)
+  Revenue growth                             -41.0      -20.7   BASE floor (vs -20 now)
+  Operating margin change                   -390.0    +3739.0   BASE floor (vs -4129 now)
+  Pre-tax margin change                     -960.0    +3174.0   BASE floor (vs -4134 now)
+  Energy transition: oil reserves and hydrocarbon demand             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $0.96 × (1+0.0%)² = $0.96
+  At 30x P/E (conservative):  $29/share
+  + Cumul. dividends (2yr):  +$2.16/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $29  (▲16 from $13)
+  Conservative total return:  +137% over 2yr  = +68%/yr
+
+  At 13.6x the multiple is already near its 30x median, so the conservative
+  case is a growth question: breakeven at 30x needs FY2022E EPS of $0.36,
+  i.e. -38.4%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $9.42  –  $22.58  (at 28th pct of range)
+  Annual dividend:      $1.05/share  (yield 8.0%)
+  Realized vol (1yr):   55% annualized
+  Beta vs broad market: 1.14
+  1-sigma range (1yr):  $6  –  $20  ($13 ± 55%)
+  2-sigma range (1yr):  $-1  –  $27
+  ────────────────────────────────────────────────────────────
+  Bear $10 requires:  ~0.4σ price move  (within normal vol range)
+  A pipeline transportation and energy storage company with a 1.1 beta: the stock is +31% off its March
+  low while Segment EBDA growth went from -51.0% (Q1 2020) to -68.2% (Q2 2020).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        0.57  18.0x  $     10    68.8%     44.8%   +24.0pp  EPS -22.6%/yr (worst year FY12-FY19 ex-FY15 ex-FY16 ex-FY17, capped at 0%); P/E to its 10th pct
+  BASE        0.42  30.7x  $     13    23.3%     41.2%   -17.9pp  EPS -33.8%/yr (Q2 revenues + margin + buyback); P/E at its 8.7-yr ex-FY11 ex-FY15 ex-FY16 ex-FY17 median
+  BULL        1.12  40.7x  $     46     6.7%     11.8%    -5.1pp  EPS +8.0%/yr (FY12-FY19 ex-FY15 ex-FY16 ex-FY17 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL       1.53  60.9x  $     93     1.3%      2.2%    -1.0pp  EPS +26.1%/yr (best 2-yr run FY12-FY19 ex-FY15 ex-FY16 ex-FY17, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $14  /  Market EV: $17  /  Current: $13
+  Conservative EV (2yr, ④): $29 + $2.16 divs = $31 total value
+  Downside (→ Bear $10): 23.5%   Upside (→ Bull $46): 251.7%   Ratio B 0.09x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $13 the market needs $17 in two years —
+  between the BASE and BULL cases. That is a market composite of 1.60 against a model
+  read of 1.65: price and numbers roughly agree.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.09x     -46%    +0.05  FAIRLY VALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.02x     -46%    +0.43  MODESTLY UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.20x     -46%    -0.47  MODESTLY OVERVALUED / BUY
+  Scenario EPS +1.5pp/yr                          0.06x     -46%    +0.11  FAIRLY VALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.10x     -46%    +0.02  FAIRLY VALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.09x     -46%    +0.35  MODESTLY UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.09x     -51%    +0.05  FAIRLY VALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.09x     -46%    +0.19  FAIRLY VALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) the Q3 2020 release — the next read on segment EBDA (-68.2% now) and Natural Gas Pipelines (-100.3% now)
+  (2) Margins — operating -4129.0bp and pre-tax -4134.0bp in Q2 2020: charges, interest and commodity prices
+  (3) The FY20 outlook — no revenue, EPS or margin guide in numbers; DCF: "the company now expects DCF to be below plan by slightly more than 10 percent" (a cash-flow outlook, not an earnings or revenue guide: display only)
+  (4) Free cash flow — FY19 net cash provided by operating activities $4,748M less capital expenditures $2,270M (FY2019 10-K)
+  (5) Capital return at 14x — $2,163M of cash dividends on common shares paid in FY19, $2M of common shares repurchased: management's own read of the multiple
+  ◉ BUY  |  EPP floor $24  |  ADD below ~$11  |  TRIM above $46
+════════════════════════════════════════════════════════════════════════
+

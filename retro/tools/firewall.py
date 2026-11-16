@@ -85,7 +85,8 @@ with absurd full-year actuals for the year after the latest vintage before CUTOF
 excluded year, and a later net sales guide, a later guide without one and a later display for every year guided before CUTOFF; KMI: a
 print whose segment EBDA, revenue, margins, EPS, notes and raw figures are absurd, with absurd full-year actuals for the year after the
 latest vintage before CUTOFF, segment EBDA that a 10-Q after CUTOFF first states on the last print before it (the 'seg_later' rule), a
-later vintage with planted texts, figures and an excluded year, and a later display-only outlook for every year; every
+later vintage with planted texts, figures and an excluded year, and a later display-only outlook for every year, with a later GAAP
+earnings guide in each form for every year (a per-share figure, net income, a percentage on the budget, words; KMI 2019-2022); every
 fact sheet with a 'splits' list, SHW's from 2021-2023: a later split on the price data's next split date; a CLOUD event
 from a later 10-K, as for every live theme), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
@@ -657,6 +658,10 @@ try:
                  kind_text="PLANTED", revenue_usd_b={**v["revenue_usd_b"], "2099": 0.01}, diluted_shares_m={**v["diluted_shares_m"], "2099": 1.0},
                  eps_excluded={**v.get("eps_excluded", {}), "2098": "PLANTED"},
                  reserves_quote="PLANTED", transition_quote="PLANTED")      # the energy-transition watch-list words (KMI 2015-2018)
+        for y in sorted({g["fy"] for g in f["guides"]} | {2099}):     # a later GAAP earnings guide in each form (KMI 2019-2022)
+            for extra in ({"ni_guide_m": [1.0, 2.0]}, {"ni_budget_m": 1.0, "ni_vs_budget_pct": -99.0, "earnings_words": "PLANTED"}):
+                f["guides"].append({"fy": y, "published": later, "source": last["source"], "doc": "PLANTED", "display": "PLANTED",
+                                    "rev_none": True, **extra})
     if TICKER == "SO":     # absurd full-year actuals on the planted print, for the year after the latest vintage before CUTOFF, and a later
                            # vintage whose every text and figure the models quote is planted (SO 2008-2009)
         last["fy_actual"] = {"fy": int(max(k for k in v["eps_normalized"] if k != "2099")) + 1, "fy_label": "FY99", "eps_normalized": 0.01,

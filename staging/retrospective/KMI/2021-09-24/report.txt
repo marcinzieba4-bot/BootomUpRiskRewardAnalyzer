@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  KMI  ·  Kinder Morgan, Inc.  ·  $16.53  ·  RETROSPECTIVE as of 2021-09-24
+  Signal: ◉ BUY   Ratio B: 0.37x   Adj gap: +0.37  [MODESTLY UNDERVALUED]
+  Point-in-time: 11 sources, latest published 2021-09-24; latest print Q2 2021 (Jul 21)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2021E revenues, USD bn  →  FY2023E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2021E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Natural Gas Pipelines     $     8.9  $   8.9  $   9.7      +0.0      +0.8
+    -11.1% revenues in FY20
+  CO2                       $     1.3  $   1.3  $   1.4      +0.0      +0.1
+    -14.8% revenues in FY20
+  Terminals                 $     2.1  $   2.1  $   2.3      +0.0      +0.2
+    -15.4% revenues in FY20
+  Products Pipelines        $     2.1  $   2.1  $   2.3      +0.0      +0.2
+    -6.0% revenues in FY20
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    14.4  $  14.4  $  15.7      +0.0      +1.3
+  FY2021E = FY20 $11.70B × (1 + 23.0%: no FY21 revenue guide in numbers, Q2 2021 revenues as reported, applied to the year (no FY21 revenue guide)); split pro rata to FY20 segment revenues from external customers (FY2020 10-K)
+  Q2 2021 (Jul 21): revenues $3.15B +23.0%; segment EBDA -84.8%, Natural Gas Pipelines -18900.0%;
+  operating margin -24.25% (-1323.0bp); pre-tax margin -31.02% (-1071.0bp); EPS $(0.34) vs $(0.28)
+  Activity: revenues $3,150M vs $2,560M; segment EBDA: the release's supplemental information (GAAP segment EBDA): total $91M vs $599M, Natural Gas Pipelines $(570)M vs $(3)M; growth against a year-ago loss over its absolute value; operating income $(764)M vs $(282)M; income before income taxes $(977)M vs $(520)M; DCF per common share $0.45 vs $0.44; adjusted earnings per common share $0.23 vs $0.17 (non-GAAP, display only); EPS GAAP, diluted per Class P common share, $(0.34) against $(0.28) a year earlier
+  FY21: no revenue or margin guide in numbers (BASE takes Q2 2021 revenue growth as reported); GAAP EPS $0.751 from the Q2 2021 release's earnings guide; the Q2 2021 release's "for 2021, KMI now expects to generate net income attributable to KMI of $1.7 billion and declare dividends of $1.08 per share" (the earnings figure is a GAAP guide; the dividend outlook is display only)
+
+  FY2021E EPS check:  $14.4B × 5.7% pre-tax × (1−72.8%) ÷ 2.265B  =  $0.10  (FY2021E: GAAP earnings guide, the Q2 2021 release's net income attributable to KMI of $1.7 billion / 2,265M diluted shares = $0.751 (FY20 is excluded: $0.05 a diluted Class P share from continuing operations (Kinder Morgan, Inc. FY2020 10-K); its listed certain items after tax ($1,892M) exceed its net income attributable to KMI ($119M), with no figure excluding only one-offs))
+  FY2023E BEAR check: $14.4B × 5.7% ÷ 2.847B  =  $0.08  (scenario $0.45)
+  FY2023E BULL check: $15.7B × 6.0% ÷ 2.847B  =  $0.09  (scenario $0.92)
+  Every 1pp of pre-tax margin ≈ $0.02 EPS ≈ $1/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Segment EBDA growth                -23.0%   ≥-9.0%    ≥5.0%   ≥18.0%    -84.8%  ⚠ BEAR  █░░░
+  Natural Gas Pipelines EBDA growth   -13.0%   ≥-7.0%   ≥-1.0%    ≥5.0%  -18900.0%  ⚠ BEAR  █░░░
+  Revenue growth                     -89.0%  ≥-41.0%    ≥7.0%   ≥26.0%    +23.0%  ▲ BULL  ███░
+  Operating margin change           -1340.0bp  ≥-390.0bp  ≥550.0bp  ≥4000.0bp  -1323.0bp  ⚠ BEAR  █░░░
+  Pre-tax margin change             -2510.0bp  ≥-960.0bp  ≥590.0bp  ≥3930.0bp  -1071.0bp  ⚠ BEAR  █░░░
+  Energy transition: oil reserves and hydrocarbon demand   +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.45 / 4.00
+  Market composite:   1.62 / 4.00  (back-solved from $17 + 15% hurdle)
+  SCA adjustment:    +0.34  ·  EPP-distance adj +0.20  →  Adj composite 1.99  →  Gap +0.37  [MODESTLY UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY20 revenues -11.4%; Q2 operating margin -24.25% (-1323bp)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 22.0x FY21E vs a 30.7x 9.7-yr ex-FY11 ex-FY15 ex-FY16 ex-FY17 ex-FY20 median (23rd percentile of its own range)  (+0.45 × 25%  =  +0.113)
+    +  Growth vs own history: no FY21 revenue guide in numbers, Q2 2021 revenues as reported +23% vs a 3.2% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  FY20 free cash flow $2.84B (consolidated), dividend $1.08 a year, $2,362M of cash dividends on common shares paid in FY20, $50M of common shares repurchased  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Segment EBDA growth                 -84.8%    -23.0%  +61.8%  Volumes and rates fall across the seg…
+  Natural Gas Pipelines EBDA growth  -18900.0%    -13.0%  +18887.0%  Gas transport and storage contracts r…
+  Revenue growth                      +23.0%    -89.0%  -112.0%  Commodity sales and volumes fall
+  Operating margin change           -1323.0bp  -1340.0bp  -17.0bp  Charges and costs outrun revenues
+  Pre-tax margin change             -1071.0bp  -2510.0bp  -1439.0bp  Interest and charges as earnings fall
+  Energy transition: oil reserves and hydrocarbon demand    +2.0/4    +1.0/4  -1.0/4  Greenhouse gas rules cut hydrocarbon …
+
+  Bear composite:  1.00  →  Bear scenario price: ~$15  (model)  /  $9 (defined)
+  Bear probability (proxy model):  57.2%
+
+  KEY TRIGGER: Segment EBDA growth went from +196.2% (Q1 2021) to -84.8% (Q2 2021);
+  the bear case needs Natural Gas Pipelines (-18900.0% now) and revenues
+  (+23.0% now) to give way as well. Contracted transport and storage fees drive most of the cash, by the company's own account;
+  the bear needs volumes and rates to fall, not one quarter's commodity prices.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $0.75  (FY2021E: GAAP earnings guide, the Q2 2021 release's net income attributable to KMI of $1.7 billion / 2,265M diluted shares = $0.751 (FY20 is excluded: $0.05 a diluted Class P share from continuing operations (Kinder Morgan, Inc. FY2020 10-K); its listed certain items after tax ($1,892M) exceed its net income attributable to KMI ($119M), with no figure excluding only one-offs))
+  Min viable P/E at panic:          25x  [median of calendar-year P/E lows: 2012 54.9x, 2013 28.3x, 2014 34.8x, 2018 22.3x, 2019 16.4x, 2021 18.1x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $19/share
+  Current $17 vs Updated EPP $19:  -12%  ✓ BELOW panic floor — deep-value zone
+  Bear $9 vs Updated EPP $19:  -52%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Segment EBDA growth                         -9.0      +75.8   BASE floor (vs -85 now)
+  Natural Gas Pipelines EBDA growth            -7.0   +18893.0   BASE floor (vs -18900 now)
+  Revenue growth                             -41.0      -64.0   BASE floor (vs +23 now)
+  Operating margin change                   -390.0     +933.0   BASE floor (vs -1323 now)
+  Pre-tax margin change                     -960.0     +111.0   BASE floor (vs -1071 now)
+  Energy transition: oil reserves and hydrocarbon demand             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $0.75 × (1+8.9%)² = $0.89
+  At 30x P/E (conservative):  $27/share
+  + Cumul. dividends (2yr):  +$2.22/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $27  (▲10 from $17)
+  Conservative total return:  +75% over 2yr  = +38%/yr
+
+  At 22.0x the multiple is already near its 30x median, so the conservative
+  case is a growth question: breakeven at 30x needs FY2023E EPS of $0.48,
+  i.e. -20.3%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $11.45  –  $19.29  (at 65th pct of range)
+  Annual dividend:      $1.08/share  (yield 6.5%)
+  Realized vol (1yr):   28% annualized
+  Beta vs broad market: 0.89
+  1-sigma range (1yr):  $12  –  $21  ($17 ± 28%)
+  2-sigma range (1yr):  $7  –  $26
+  ────────────────────────────────────────────────────────────
+  Bear $9 requires:  ~1.6σ price move  (unusual — requires fundamental break)
+  A pipeline transportation and energy storage company with a 0.9 beta: the stock is +44% off its November
+  low while Segment EBDA growth went from +196.2% (Q1 2021) to -84.8% (Q2 2021).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        0.45  20.8x  $      9    57.2%     43.1%   +14.1pp  EPS -22.6%/yr (worst year FY12-FY19 ex-FY15 ex-FY16 ex-FY17, capped at 0%); P/E to its 10th pct
+  BASE        0.92  30.7x  $     28    31.9%     42.4%   -10.5pp  EPS +10.9%/yr (Q2 revenues + margin + buyback); P/E at its 9.7-yr ex-FY11 ex-FY15 ex-FY16 ex-FY17 ex-FY20 median
+  BULL        0.92  40.7x  $     37     9.1%     12.2%    -3.0pp  EPS +10.9%/yr (FY12-FY19 ex-FY15 ex-FY16 ex-FY17 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL       1.19  60.9x  $     72     1.7%      2.3%    -0.6pp  EPS +26.1%/yr (best 2-yr run FY12-FY19 ex-FY15 ex-FY16 ex-FY17, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $19  /  Market EV: $22  /  Current: $17
+  Conservative EV (2yr, ④): $27 + $2.22 divs = $29 total value
+  Downside (→ Bear $9): 45.6%   Upside (→ Bull $37): 123.8%   Ratio B 0.37x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $17 the market needs $22 in two years —
+  at or below the BASE case. That is a market composite of 1.62 against a model
+  read of 1.99: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.37x     -12%    +0.37  MODESTLY UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.17x     -12%    +0.63  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.66x     -12%    -0.12  FAIRLY VALUED / BUY
+  Scenario EPS +1.5pp/yr                          0.29x     -12%    +0.43  MODESTLY UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.39x     -12%    +0.34  MODESTLY UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.37x     -12%    +0.67  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.37x     -21%    +0.37  MODESTLY UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.37x     -12%    +0.47  MODESTLY UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) the Q3 2021 release — the next read on segment EBDA (-84.8% now) and Natural Gas Pipelines (-18900.0% now)
+  (2) Margins — operating -1323.0bp and pre-tax -1071.0bp in Q2 2021: charges, interest and commodity prices
+  (3) The FY21 outlook — GAAP EPS $0.751 (the Q2 2021 release's net income attributable to KMI of $1.7 billion / 2,265M diluted shares); no revenue or margin guide in numbers; "for 2021, KMI now expects to generate net income attributable to KMI of $1.7 billion and declare dividends of $1.08 per share" (the earnings figure is a GAAP guide; the dividend outlook is display only)
+  (4) Free cash flow — FY20 net cash provided by operating activities $4,550M less capital expenditures $1,707M (FY2020 10-K)
+  (5) Capital return at 22x — $2,362M of cash dividends on common shares paid in FY20, $50M of common shares repurchased: management's own read of the multiple
+  ◉ BUY  |  EPP floor $19  |  ADD below ~$24  |  TRIM above $37
+════════════════════════════════════════════════════════════════════════
+
