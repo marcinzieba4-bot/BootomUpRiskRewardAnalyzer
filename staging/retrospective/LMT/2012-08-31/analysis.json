@@ -1,0 +1,262 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "LMT",
+ "company": "Lockheed Martin Corporation",
+ "as_of": "2012-08-31",
+ "price_date": "2012-08-31",
+ "price": 91.14,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); defense prime contractor signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'In 2011, 82% of our $46.5 billion in net sales were from the U.S. Government, either as a prime contractor or as a subcontractor (including 61% from the Department of Defense (DoD))' (FY2011 10-K, Item 1); 'We depend heavily on U.S. Government contracts. A decline or reprioritization of funding in the U.S. defense budget or delays in the budget process could adversely affect our ability to grow or maintain our sales, earnings, and cash flow.' (Item 1A): sales that depend on Congressional appropriations are not earnings that are the cycle, so DURABLE (the CAT and SO precedent); OFFSHORE (live from 2004-11-05) is scoped to offshore delivery taking share in Western consulting, systems integration and outsourcing, and the 10-K names no offshore competition, so no disruption theme in scope is live",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "'In 2011, 82% of our $46.5 billion in net sales were from the U.S. Government, either as a prime contractor or as a subcontractor (including 61% from the Department of Defense (DoD))' (FY2011 10-K, Item 1); 'We depend heavily on U.S. Government contracts. A decline or reprioritization of funding in the U.S. defense budget or delays in the budget process could adversely affect our ability to grow or maintain our sales, earnings, and cash flow.' (Item 1A): sales that depend on Congressional appropriations are not earnings that are the cycle, so DURABLE (the CAT and SO precedent); OFFSHORE (live from 2004-11-05) is scoped to offshore delivery taking share in Western consulting, systems integration and outsourcing, and the 10-K names no offshore competition, so no disruption theme in scope is live. durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.30x; +14% to EPP floor; model-vs-market gap +0.08; conservative 2yr +23%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.3,
+  "ratio_b_fmt": "0.30x",
+  "epp": 80.0,
+  "epp_gap_pct": 13.9,
+  "epp_adj": 0.0,
+  "proxy_composite": 2.0,
+  "sca": 0.08,
+  "adj_composite": 2.08,
+  "market_composite": 2.0,
+  "adj_gap": 0.08,
+  "valuation": "FAIRLY VALUED",
+  "cons_return_2yr": 23.2,
+  "scenarios": {
+   "BEAR": {
+    "eps": 6.93,
+    "pe": 9.8,
+    "price": 68,
+    "desc": "EPS -6.9%/yr (worst year FY03-FY11, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 8.23,
+    "pe": 13.5,
+    "price": 111,
+    "desc": "EPS +1.4%/yr (FY12 guide + margin + buyback); P/E at its 9.7-yr median"
+   },
+   "BULL": {
+    "eps": 10.83,
+    "pe": 15.6,
+    "price": 169,
+    "desc": "EPS +16.3%/yr (FY03-FY11 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 16.2,
+    "pe": 19.6,
+    "price": 318,
+    "desc": "EPS +42.3%/yr (best 2-yr run FY03-FY11); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.3,
+   "epp_gap_pct": 13.9,
+   "adj_gap": 0.08,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 23.2,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.16,
+   "epp_gap_pct": 13.9,
+   "adj_gap": 0.46,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 23.2,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 0.44,
+   "epp_gap_pct": 13.9,
+   "adj_gap": -0.29,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 23.2,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.26,
+   "epp_gap_pct": 13.9,
+   "adj_gap": 0.18,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 23.2,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.35,
+   "epp_gap_pct": 13.9,
+   "adj_gap": 0.01,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 23.2,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.3,
+   "epp_gap_pct": 13.9,
+   "adj_gap": 0.38,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 23.2,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.3,
+   "epp_gap_pct": -12.4,
+   "adj_gap": 0.28,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 23.2,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.3,
+   "epp_gap_pct": 13.9,
+   "adj_gap": 0.34,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 23.2,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "LMT (retrospective, 2012-08-31) ◉ BUY — Ratio B 0.30x (25.4% downside to Bear $68 / +85.4% upside to Bull $169) | Adj composite 2.08 vs market 2.00: gap +0.08 [FAIRLY VALUED] | +14% above the EPP floor $80 (10x FY12E $8.00) | Conservative 2-yr case: +23.2% total (+11.6%/yr) | At 11.4x FY12E the 15% hurdle price $121 sits between the BASE and BULL cases; backlog -2.3% in Q2 2012, forward revenues -3.2% to -1.1% (FY12 net sales guide); OFFSHORE (live from 2004-11-05) is scoped to offshore delivery in Western consulting, systems integration and outsourcing, and the 10-Ks name no offshore competition; no theme in scope has dated evidence.",
+ "sources": [
+  {
+   "id": "LM39",
+   "published": "2012-02-23",
+   "filed": "2012-02-23 14:21 ET, during the session",
+   "title": "Lockheed Martin FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312512074929/d221578d10k.htm",
+   "supports": "five-year summary 2011-2007 (net sales $46,499M to $40,612M; diluted EPS from continuing operations $7.85, $7.10, $7.63, $7.64, $7.00; backlog $80,700M and $78,400M); total business segment operating profit 2011-2010 $5,281M, $5,028M; average diluted shares 339.9M, 368.3M, 388.9M; Items 1 and 1A"
+  },
+  {
+   "id": "LM34",
+   "published": "2011-02-25",
+   "filed": "2011-02-24 18:26 ET, after the close (dated the next trading day)",
+   "title": "Lockheed Martin FY2010 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312511045739/d10k.htm",
+   "supports": "five-year summary 2010-2006 (net sales $45,803M to $39,076M; diluted EPS from continuing operations $7.18, $7.71, $7.74, $7.03, $5.73; backlog $78,200M and $77,200M); total business segment operating profit 2010-2009 $5,076M, $5,104M; average diluted shares 368.3M, 388.9M, 409.4M; Items 1 and 1A"
+  },
+  {
+   "id": "LM29",
+   "published": "2010-02-25",
+   "filed": "2010-02-25 15:13 ET, during the session",
+   "title": "Lockheed Martin FY2009 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312510040520/d10k.htm",
+   "supports": "five-year summary 2009-2005 (net sales $45,189M to $37,213M; diluted EPS $7.78, $7.86, $7.10, $5.80, $4.10; backlog $78,006M and $80,914M); total business segment operating profit 2009-2008 $5,155M, $4,970M; average diluted shares 388.9M, 409.4M, 427.1M; Items 1 and 1A"
+  },
+  {
+   "id": "LM23",
+   "published": "2009-02-26",
+   "filed": "2009-02-26 13:09 ET, during the session",
+   "title": "Lockheed Martin FY2008 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312509038670/d10k.htm",
+   "supports": "five-year summary 2008-2004 (net sales, diluted EPS $7.86, $7.10, $5.80, $4.10, $2.83, negotiated backlog $80,914M and $76,660M); total business segments operating profit 2008-2006 $4,970M, $4,691M, $4,031M; average diluted shares 409.4M, 427.1M, 436.4M; Items 1 and 1A"
+  },
+  {
+   "id": "LM18",
+   "published": "2008-02-29",
+   "filed": "2008-02-28 16:21 ET, after the close (dated the next trading day)",
+   "title": "Lockheed Martin FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312508041793/d10k.htm",
+   "supports": "five-year summary 2007-2003 (net sales, diluted EPS $7.10, $5.80, $4.10, $2.83, $2.34, negotiated backlog $76,660M and $75,905M); total business segments operating profit 2007-2005 $4,691M, $4,031M, $3,421M; average diluted shares 427.1M, 436.4M, 445.7M; Items 1 and 1A"
+  },
+  {
+   "id": "LM8",
+   "published": "2006-02-28",
+   "filed": "2006-02-28 13:22 ET, during the session",
+   "title": "Lockheed Martin FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312506040986/d10k.htm",
+   "supports": "net sales and negotiated backlog 2005-2001 (five-year summary); total business segments operating profit 2005-2003 $3,432M, $2,976M, $2,468M; average diluted shares 2005-2003 445.7M, 447.1M, 450.0M"
+  },
+  {
+   "id": "LM9",
+   "published": "2007-02-27",
+   "filed": "2007-02-26 17:21 ET, after the close (dated the next trading day)",
+   "title": "Lockheed Martin FY2006 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312507039899/d10k.htm",
+   "supports": "five-year summary 2006-2002 (net sales $39,620M, $37,213M, $35,526M, $31,824M, $26,578M; diluted EPS from continuing operations $5.80, $4.10, $2.83, $2.34, $1.18; negotiated backlog $75,905M, $74,825M, $73,986M, $76,899M, $70,385M); total business segments operating profit 2006-2004 $4,048M, $3,432M, $2,976M; average diluted shares 436.4M, 445.7M, 447.1M; Items 1 and 1A"
+  },
+  {
+   "id": "LM38",
+   "published": "2012-01-26",
+   "filed": "2012-01-26 06:33 ET, before the open",
+   "title": "Lockheed Martin Q4 2011 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420412003993/v245877_ex99.htm",
+   "supports": "Q4 2011: net sales $12,211M vs $12,761M, segment operating profit $1,404M vs $1,382M, diluted EPS from continuing operations $2.14 vs $2.28, total backlog $80,700M, average diluted shares 326.7M; FY2012 outlook net sales $45-46B, diluted EPS from continuing operations $7.70-7.90"
+  },
+  {
+   "id": "LM40",
+   "published": "2012-04-26",
+   "filed": "2012-04-26 06:50 ET, before the open",
+   "title": "Lockheed Martin Q1 2012 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420412023860/v310178_ex99.htm",
+   "supports": "Q1 2012: net sales $11,293M vs $10,626M, segment operating profit $1,340M vs $1,171M, diluted EPS from continuing operations $2.02 vs $1.57, total backlog $76,600M, average diluted shares 328.6M; FY2012 outlook net sales $45-46B, diluted EPS from continuing operations $7.70-7.90"
+  },
+  {
+   "id": "LM41",
+   "published": "2012-07-24",
+   "filed": "2012-07-24 07:37 ET, before the open",
+   "title": "Lockheed Martin Q2 2012 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420412040637/v319115_ex99.htm",
+   "supports": "Q2 2012: net sales $11,921M vs $11,543M, segment operating profit $1,470M vs $1,351M, diluted EPS from continuing operations $2.38 vs $2.16, total backlog $75,500M, average diluted shares 328.8M; FY2012 outlook net sales $45-46B, diluted EPS from continuing operations $7.90-8.10"
+  },
+  {
+   "id": "LM36",
+   "published": "2011-07-26",
+   "filed": "2011-07-26 07:34 ET, before the open",
+   "title": "Lockheed Martin Q2 2011 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420411042005/v229629_ex-99.htm",
+   "supports": "Q2 2011: net sales $11,551M vs $11,280M, segment operating profit $1,342M vs $1,267M, diluted EPS from continuing operations $2.14 vs $1.92, total backlog $77,300M, average diluted shares 346.6M; FY2011 outlook net sales $46-47B, diluted EPS from continuing operations $7.35-7.55"
+  },
+  {
+   "id": "LM37",
+   "published": "2011-10-26",
+   "filed": "2011-10-26 07:34 ET, before the open",
+   "title": "Lockheed Martin Q3 2011 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420411059333/v237835_ex-99.htm",
+   "supports": "Q3 2011: net sales $12,119M vs $11,343M, segment operating profit $1,355M vs $1,261M, diluted EPS from continuing operations $1.99 vs $1.53, total backlog $73,000M, average diluted shares 333.6M; FY2011 outlook net sales $46-47B, diluted EPS from continuing operations $7.40-7.60"
+  },
+  {
+   "id": "W0",
+   "published": "2012-08-31",
+   "title": "Yahoo Finance daily prices, LMT and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/LMT/history",
+   "supports": "close $91.14 as traded on AS_OF, 52-week range, realized vol, beta, the 9.7-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-16"
+}

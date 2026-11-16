@@ -23,18 +23,23 @@ preliminary outlook for the next year. The method r2 inputs map as follows (retr
   - guided margin step: none (the segment operating profit guide is a dollar range: no margin is derived from two guided figures, the
     MSFT, AAPL and AVGO rule); the margin signal takes the latest quarter's segment margin change; segment operating profit and cash
     from operations are shown in the guide line only.
+From 2010 (retro/README.md, "LMT 2010-2013"): diluted EPS from continuing operations where the release or the five-year summary reports
+the line (PAE and EIG in discontinued operations from mid-2010); a release that republishes earlier years' EPS restates them until a later
+10-K ('restates', EPS only: the Q4 2010 and Q4 2011 releases' prior year, the Q1 2011 release's 2008-2010 adjusted for the change in
+revenue recognition); words in the outlook's current column keep the last numeric range, and a level stated as about is a number.
 Signals: backlog growth (total backlog at the quarter's end against the year-ago quarter's end, as that quarter's own release shows it:
 the MSFT rule), net sales growth, segment operating profit growth, diluted EPS growth and the segment operating margin change, each
 against the year-ago quarter as the release shows it.
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
-is the first trading day after it. Every earnings 8-K of 2006-2009 was accepted before the open (06:35-07:42 ET) on a Tuesday or a
-Thursday, so each such week is dated the next trading day.
+is the first trading day after it. Every earnings 8-K of 2006-2013 was accepted before the open (06:30-07:42 ET) on a Tuesday, a
+Wednesday or a Thursday, so each such week is dated the next trading day.
 
 Output goes to staging/retrospective/LMT until the series is added to the archive (--out archive/retrospective/LMT).
 
 Usage
   python3 retro/build_lmt.py --weekly 2008-01-01 2009-12-31
+  python3 retro/build_lmt.py --weekly 2010-01-04 2013-12-31
   python3 retro/build_lmt.py 2008-01-25
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/LMT/<AS_OF>
 """
@@ -61,8 +66,10 @@ ENGINE_THRESHOLDS = {"backlog": (-14, -7, 1, 29), "sales": (-19, -7, 5, 20), "se
 RULE_T_KEYS = {"backlog": (1, False), "sales": (1, False), "segop": (1, False), "eps": (1, False),
                "seg_margin": (10, False)}          # (rounding unit, lower is better)
 # the disruption themes this builder has an encoding for: OFFSHORE is live from 2004-11-05 but scoped to offshore delivery in
-# Western consulting, systems integration and outsourcing, which Lockheed Martin's 10-Ks never name as competition
-ENCODED_THEMES = {"OFFSHORE"}
+# Western consulting, systems integration and outsourcing, which Lockheed Martin's 10-Ks never name as competition; CLOUD is live from
+# 2012-10-30 but scoped to public cloud displacing on-premise hardware, storage, databases and data-center outsourcing, and the
+# FY2009-FY2012 10-Ks never mention cloud (retro/README.md, "LMT 2010-2013"; text only)
+ENCODED_THEMES = {"OFFSHORE", "CLOUD"}
 
 
 def fiscal_year_end(n):
@@ -192,6 +199,16 @@ def build(as_of, facts, raw, spx, engine, out):
                      prev_fy_sales_growth=a["sales_growth"], prev_fy_backlog_pct=a["backlog_pct"], prev_fy_segop_pct=a["segop_pct"],
                      tax_rate=a["tax_rate"], tax_note=f'{a["tax_note"]} ({p["source"]})',
                      extended=f'{h["extended"]}, FY{y[2:]} from {p["source"]} ({p["published"]})')
+    # a release may republish earlier years' EPS (the Q4 2010 and Q4 2011 releases' prior year from continuing operations, the Q1 2011
+    # release's 2008-2010 adjusted for the change in revenue recognition); each year comes from the latest filing that reports it, so the
+    # figure replaces the year from the print until a 10-K vintage published after the print carries the year (the PFE and CAT
+    # 'restates' encoding, EPS only; retro/README.md, "LMT 2010-2013")
+    for p in prints:
+        if p.get("restates") and p["published"] > h["published"]:
+            for yy, rr in p["restates"].items():
+                assert yy in h["eps_normalized"], (p["quarter"], yy, "restates a year outside the history")
+                h.update(eps_normalized={**h["eps_normalized"], yy: rr["eps"]}, normalization=f'{h["normalization"]}; {rr["note"]}',
+                         extended=f'{h["extended"]}, FY{yy[2:]} restated by {p["source"]} ({p["published"]})')
     latest = prints[-1]
     # the previous quarter is the print published just before the latest one (in or out of the history's scope)
     public = [p for p in facts["prints"] if p["published"] <= as_of]
@@ -234,7 +251,7 @@ def build(as_of, facts, raw, spx, engine, out):
         fwd_short, fwd_period = f"{latest['quarter'][:2]} net sales", latest["quarter"]
     if guides:
         bits = ([f"net sales {rev_fig}"] if gr else []) + \
-               ([f"diluted EPS {eps_fig}"] if ge else ["no diluted EPS guide in numbers"]) + \
+               ([f"{ge.get('eps_label', 'diluted EPS')} {eps_fig}"] if ge else ["no diluted EPS guide in numbers"]) + \
                ([f"segment operating profit {usd_rng(*gs['segop_guide_usd_b'])} and cash from operations {gs['cfo_words']}M "
                  "(display only: no margin is derived from two guided figures)"] if gs else []) + \
                [g["note"] for g in guides[-1:] if g.get("note")]
@@ -287,8 +304,14 @@ def build(as_of, facts, raw, spx, engine, out):
     off = themes["OFFSHORE"]
     theme_summary = (f"OFFSHORE (live from {off['live_from']}) is scoped to offshore delivery in Western consulting, systems integration "
                      "and outsourcing, and the 10-Ks name no offshore competition; no theme in scope has dated evidence")
+    cl = themes["CLOUD"]
+    if cl["live_from"] <= as_of:
+        theme_summary = (f"OFFSHORE (live from {off['live_from']}) is scoped to offshore delivery in Western consulting, systems "
+                         f"integration and outsourcing, and CLOUD (live from {cl['live_from']}) to public cloud displacing on-premise "
+                         "hardware, storage, databases and data-center outsourcing; the 10-Ks name no offshore competition and do not "
+                         "mention cloud, so no theme in scope has dated evidence")
     why = h["why"]
-    cat3 = (f"(3) {fy_now} diluted EPS guide {eps_fig} ({ge['doc']}): the company's own read of the year, FAS/CAS pension adjustment included"
+    cat3 = (f"(3) {fy_now} {ge.get('eps_label', 'diluted EPS')} guide {eps_fig} ({ge['doc']}): the company's own read of the year, FAS/CAS pension adjustment included"
             if ge else f"(3) A {fy_now} diluted EPS guide in numbers — none yet")
     cat4 = (f"(4) {fy_now} net sales guide {rev_fig} ({gr['doc']}): program volume in one number" if gr else
             f"(4) A {fy_now} net sales guide in numbers — none yet")
@@ -396,7 +419,7 @@ GROUPS          = {R(groups)}
 GROUPS_BASIS    = {R(h["groups_basis"])}
 NEXT_PRINT      = {R(latest["next_print"])}
 SHARE_GAIN_TEXT = {R(f"Franchise: {h['fy_label']} net sales {h['prev_fy_sales_growth']:+.1f}%, backlog {h['prev_fy_backlog_pct']:+.1f}%, segment operating profit {h['prev_fy_segop_pct']:+.1f}%; {latest['quarter'].split()[0]} segment margin {latest['seg_margin']:.2f}% ({latest['seg_margin_bp']:+.1f}bp)")}
-BALANCE_TEXT    = {R(f"{h['cash_label']} year-end cash and short-term investments ${h['cash_b']:.3f}B, {h['cash_label']} operating cash flow ${h['ocf_b']:.3f}B, dividend ${dividend:.2f} a year, {h['cash_return_text']}")}
+BALANCE_TEXT    = {R(f"{h['cash_label']} year-end {h.get('cash_words', 'cash and short-term investments')} ${h['cash_b']:.3f}B, {h['cash_label']} operating cash flow ${h['ocf_b']:.3f}B, dividend ${dividend:.2f} a year, {h['cash_return_text']}")}
 VOLUMES_TEXT    = {R(volumes)}
 CAPITAL_RETURN  = {R(latest["cash_return_text"])}
 THEME_FACTORS   = {R(factors)}

@@ -90,7 +90,8 @@ later vintage with planted texts, figures and an excluded year, and a later disp
 earnings guide in each form for every year (a per-share figure, net income, a percentage on the budget, words; KMI 2019-2022); LMT: a
 print whose backlog, net sales, segment operating profit, segment margin, EPS, notes, labels and raw figures are absurd, with absurd
 full-year actuals for the year after the latest vintage before CUTOFF, a later guide with every guided field (net sales, EPS and segment
-operating profit ranges, cash-from-operations words, a note), and a later vintage whose every quoted text and figure is planted; every
+operating profit ranges, cash-from-operations words, a note), and a later vintage whose every quoted text and figure is planted, the
+planted print restating every year of the history and the guide with an EPS label (LMT 2010-2013); every
 fact sheet with a 'splits' list, SHW's from 2021-2023: a later split on the price data's next split date; a CLOUD event
 from a later 10-K, as for every live theme), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
@@ -316,7 +317,8 @@ GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -99
                "NVDA": dict(quarter="Q9 FY99", seq_pct=[-50, -40], base_quarter="PLANTED", base_sales_m=1, level_m=[0.5, 0.6],
                             prior_label="PLANTED", prior_sales_m=1, prior_source="NV1", yoy_pct=[-50, -40], quote="PLANTED",
                             display="PLANTED", level_stated=True, level_center_m=0.55, level_pm_pct=9.0),
-               "LMT": dict(rev_guide_usd_b=[0.1, 0.2], segop_guide_usd_b=[0.1, 0.2], cfo_words="PLANTED", note="PLANTED"),
+               "LMT": dict(rev_guide_usd_b=[0.1, 0.2], segop_guide_usd_b=[0.1, 0.2], cfo_words="PLANTED", note="PLANTED",
+                           eps_label="PLANTED"),
                "CAT": dict(rev_guide_usd_b=[0.1, 0.2], rev_guide_pct=[-50, -40], rev_growth_base_b=0.01, rev_growth_base_note="PLANTED",
                            eps_growth=[-99, -98], eps_growth_base=0.01, eps_growth_base_note="PLANTED", eps_guide_note="PLANTED",
                            rev_words="PLANTED", note="PLANTED"),
@@ -696,7 +698,9 @@ try:
                  prev_fy_pretax_margin=-50.0, prev_fy_pretax_margin_note="PLANTED", prev_fy_sales_growth=-60.0, prev_fy_backlog_pct=-60.0,
                  prev_fy_segop_pct=-60.0, tax_rate=0.99, tax_note="PLANTED", cash_b=99.0, cash_label="PLANTED", ocf_b=99.0,
                  dividend_annual=9.99, dividend_note="PLANTED", cash_return_text="PLANTED", groups=[["PLANTED", 1, -99]],
-                 groups_basis="PLANTED", margin_signal_name="PLANTED")
+                 groups_basis="PLANTED", margin_signal_name="PLANTED", cash_words="PLANTED")
+        # a later print restating every year of the history before CUTOFF (the 'restates' field of LMT 2010-2013)
+        last["restates"] = {y: {"eps": 0.01, "note": "PLANTED"} for y in v0["eps_normalized"]}
     if TICKER == "XOM":    # the excluded-year and restatement fields (XOM 2021-2023): a later vintage excluding a year, and the planted
                            # print's full-year actuals excluding its own year and restating every earlier one
         v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}

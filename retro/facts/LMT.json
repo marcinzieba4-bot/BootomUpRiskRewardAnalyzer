@@ -1,5 +1,5 @@
 {
- "_doc": "Point-in-time fact sheet for LMT retrospectives (retro/build_lmt.py), generated from the converted rows of Lockheed Martin's filings (every figure read from its labelled row, the row asserted present in its own filing). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks of 2006-2009 were accepted before the open on their release days. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the guides for the current fiscal year (each field from the latest guide that states it) and the latest declared dividend (else the vintage's). Lockheed Martin's fiscal year is the calendar year. EPS is diluted EPS (from continuing operations where reported), each year from the latest 10-K that reports it; FY2002 is excluded (unusual items larger than its earnings, no per-share figure excluding them), so the history and the P/E window start with FY2003 ('pe_window_start'). A print's growth and margins are derived from the raw figures of its release ('raw', $ millions; the builder re-derives and checks them), each against the year-ago quarter as the same release shows it; backlog against the year-ago quarter's end as that quarter's own release shows it ('backlog_prior_source'). Guides: the fiscal-year outlook table's 'Current Update' column (net sales and diluted EPS ranges; segment operating profit and cash from operations are display only: no margin is derived from two guided figures), and the third-quarter release's preliminary outlook for the next year. Rule T's raw figures are in 'rule_t'.",
+ "_doc": "Point-in-time fact sheet for LMT retrospectives (retro/build_lmt.py), generated from the converted rows of Lockheed Martin's filings (every figure read from its labelled row, the row asserted present in its own filing). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks of 2006-2013 were accepted before the open on their release days. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the guides for the current fiscal year (each field from the latest guide that states it) and the latest declared dividend (else the vintage's). Lockheed Martin's fiscal year is the calendar year. EPS is diluted EPS (from continuing operations where reported), each year from the latest 10-K that reports it; FY2002 is excluded (unusual items larger than its earnings, no per-share figure excluding them), so the history and the P/E window start with FY2003 ('pe_window_start'). A print's growth and margins are derived from the raw figures of its release ('raw', $ millions; the builder re-derives and checks them), each against the year-ago quarter as the same release shows it; backlog against the year-ago quarter's end as that quarter's own release shows it ('backlog_prior_source'). From 2010 a print takes diluted EPS from continuing operations where the release reports the line, and a release that republishes earlier years' EPS restates them until a later 10-K ('restates', EPS only). Guides: the fiscal-year outlook table's current column (net sales and diluted EPS ranges, a level stated as about read as a number, words keeping the last numeric range; segment operating profit and cash from operations are display only: no margin is derived from two guided figures), and the third-quarter release's preliminary outlook for the next year. Rule T's raw figures are in 'rule_t'.",
  "ticker": "LMT",
  "sources": {
   "LM1": {
@@ -190,6 +190,146 @@
    "title": "Lockheed Martin Q3 2009 results (8-K, Exhibit 99.1)",
    "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420409053660/v163069_ex99-1.htm",
    "supports": "Q3 2009: net sales $11,056M vs $10,577M, segment operating profit $1,266M vs $1,250M, diluted EPS $2.07 vs $1.92, total backlog $76,400M, average diluted shares 385.5M; FY2009 outlook net sales $44.7-45.7B, diluted EPS $7.40-7.60; FY2010 outlook net sales $46.25-47.25B, diluted EPS $7.05-7.25 (preliminary)"
+  },
+  "LM28": {
+   "published": "2010-01-28",
+   "filed": "2010-01-28 06:34 ET, before the open",
+   "title": "Lockheed Martin Q4 2009 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420410003985/v172058_ex99.htm",
+   "supports": "Q4 2009: net sales $12,524M vs $11,132M, segment operating profit $1,413M vs $1,255M, diluted EPS $2.17 vs $2.05, total backlog $78,000M, average diluted shares 381.9M; FY2010 outlook net sales $46.25-47.25B, diluted EPS $7.15-7.35"
+  },
+  "LM29": {
+   "published": "2010-02-25",
+   "filed": "2010-02-25 15:13 ET, during the session",
+   "title": "Lockheed Martin FY2009 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312510040520/d10k.htm",
+   "supports": "five-year summary 2009-2005 (net sales $45,189M to $37,213M; diluted EPS $7.78, $7.86, $7.10, $5.80, $4.10; backlog $78,006M and $80,914M); total business segment operating profit 2009-2008 $5,155M, $4,970M; average diluted shares 388.9M, 409.4M, 427.1M; Items 1 and 1A"
+  },
+  "LM30": {
+   "published": "2010-04-21",
+   "filed": "2010-04-21 06:34 ET, before the open",
+   "title": "Lockheed Martin Q1 2010 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420410021401/v181557_ex-99.htm",
+   "supports": "Q1 2010: net sales $10,637M vs $10,373M, segment operating profit $1,158M vs $1,199M, diluted EPS $1.45 vs $1.68, total backlog $75,000M, average diluted shares 377.7M; FY2010 outlook net sales $46.25-47.25B, diluted EPS $7.00-7.20"
+  },
+  "LM31": {
+   "published": "2010-07-27",
+   "filed": "2010-07-27 07:38 ET, before the open",
+   "title": "Lockheed Martin Q2 2010 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420410039408/v191287_ex-99.htm",
+   "supports": "Q2 2010: net sales $11,442M vs $11,072M, segment operating profit $1,287M vs $1,272M, diluted EPS from continuing operations $1.96 vs $1.87, total backlog $72,800M, average diluted shares 371.7M; FY2010 outlook net sales $45.5-46.5B, diluted EPS from continuing operations $7.15-7.35"
+  },
+  "LM32": {
+   "published": "2010-10-19",
+   "filed": "2010-10-19 07:35 ET, before the open",
+   "title": "Lockheed Martin Q3 2010 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420410054328/v199233_ex-99.htm",
+   "supports": "Q3 2010: net sales $11,375M vs $10,767M, segment operating profit $1,273M vs $1,249M, diluted EPS from continuing operations $1.55 vs $2.04, total backlog $70,500M, average diluted shares 363.9M; FY2010 outlook net sales $44.9-45.9B, diluted EPS from continuing operations $6.75-6.95"
+  },
+  "LM33": {
+   "published": "2011-01-27",
+   "filed": "2011-01-27 06:37 ET, before the open",
+   "title": "Lockheed Martin Q4 2010 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420411004243/v208911_ex-99.htm",
+   "supports": "Q4 2010: net sales $12,794M vs $12,203M, segment operating profit $1,395M vs $1,416M, diluted EPS from continuing operations $2.30 vs $2.19, total backlog $78,200M, average diluted shares 359.7M; FY2011 outlook net sales $45.75-47.25B, diluted EPS from continuing operations $6.70-7.00"
+  },
+  "LM34": {
+   "published": "2011-02-25",
+   "filed": "2011-02-24 18:26 ET, after the close (dated the next trading day)",
+   "title": "Lockheed Martin FY2010 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312511045739/d10k.htm",
+   "supports": "five-year summary 2010-2006 (net sales $45,803M to $39,076M; diluted EPS from continuing operations $7.18, $7.71, $7.74, $7.03, $5.73; backlog $78,200M and $77,200M); total business segment operating profit 2010-2009 $5,076M, $5,104M; average diluted shares 368.3M, 388.9M, 409.4M; Items 1 and 1A"
+  },
+  "LM35": {
+   "published": "2011-04-26",
+   "filed": "2011-04-26 07:32 ET, before the open",
+   "title": "Lockheed Martin Q1 2011 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420411023919/v219330_ex-99.htm",
+   "supports": "Q1 2011: net sales $10,633M vs $10,337M, segment operating profit $1,159M vs $1,114M, diluted EPS from continuing operations $1.55 vs $1.38, total backlog $80,000M, average diluted shares 352.6M; FY2011 outlook net sales $45.75-47.25B, diluted EPS from continuing operations $6.95-7.25"
+  },
+  "LM36": {
+   "published": "2011-07-26",
+   "filed": "2011-07-26 07:34 ET, before the open",
+   "title": "Lockheed Martin Q2 2011 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420411042005/v229629_ex-99.htm",
+   "supports": "Q2 2011: net sales $11,551M vs $11,280M, segment operating profit $1,342M vs $1,267M, diluted EPS from continuing operations $2.14 vs $1.92, total backlog $77,300M, average diluted shares 346.6M; FY2011 outlook net sales $46-47B, diluted EPS from continuing operations $7.35-7.55"
+  },
+  "LM37": {
+   "published": "2011-10-26",
+   "filed": "2011-10-26 07:34 ET, before the open",
+   "title": "Lockheed Martin Q3 2011 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420411059333/v237835_ex-99.htm",
+   "supports": "Q3 2011: net sales $12,119M vs $11,343M, segment operating profit $1,355M vs $1,261M, diluted EPS from continuing operations $1.99 vs $1.53, total backlog $73,000M, average diluted shares 333.6M; FY2011 outlook net sales $46-47B, diluted EPS from continuing operations $7.40-7.60"
+  },
+  "LM38": {
+   "published": "2012-01-26",
+   "filed": "2012-01-26 06:33 ET, before the open",
+   "title": "Lockheed Martin Q4 2011 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420412003993/v245877_ex99.htm",
+   "supports": "Q4 2011: net sales $12,211M vs $12,761M, segment operating profit $1,404M vs $1,382M, diluted EPS from continuing operations $2.14 vs $2.28, total backlog $80,700M, average diluted shares 326.7M; FY2012 outlook net sales $45-46B, diluted EPS from continuing operations $7.70-7.90"
+  },
+  "LM39": {
+   "published": "2012-02-23",
+   "filed": "2012-02-23 14:21 ET, during the session",
+   "title": "Lockheed Martin FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312512074929/d221578d10k.htm",
+   "supports": "five-year summary 2011-2007 (net sales $46,499M to $40,612M; diluted EPS from continuing operations $7.85, $7.10, $7.63, $7.64, $7.00; backlog $80,700M and $78,400M); total business segment operating profit 2011-2010 $5,281M, $5,028M; average diluted shares 339.9M, 368.3M, 388.9M; Items 1 and 1A"
+  },
+  "LM40": {
+   "published": "2012-04-26",
+   "filed": "2012-04-26 06:50 ET, before the open",
+   "title": "Lockheed Martin Q1 2012 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420412023860/v310178_ex99.htm",
+   "supports": "Q1 2012: net sales $11,293M vs $10,626M, segment operating profit $1,340M vs $1,171M, diluted EPS from continuing operations $2.02 vs $1.57, total backlog $76,600M, average diluted shares 328.6M; FY2012 outlook net sales $45-46B, diluted EPS from continuing operations $7.70-7.90"
+  },
+  "LM41": {
+   "published": "2012-07-24",
+   "filed": "2012-07-24 07:37 ET, before the open",
+   "title": "Lockheed Martin Q2 2012 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420412040637/v319115_ex99.htm",
+   "supports": "Q2 2012: net sales $11,921M vs $11,543M, segment operating profit $1,470M vs $1,351M, diluted EPS from continuing operations $2.38 vs $2.16, total backlog $75,500M, average diluted shares 328.8M; FY2012 outlook net sales $45-46B, diluted EPS from continuing operations $7.90-8.10"
+  },
+  "LM42": {
+   "published": "2012-10-24",
+   "filed": "2012-10-24 07:37 ET, before the open",
+   "title": "Lockheed Martin Q3 2012 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420412057437/v326157_ex99.htm",
+   "supports": "Q3 2012: net sales $11,869M vs $12,119M, segment operating profit $1,434M vs $1,355M, diluted EPS from continuing operations $2.21 vs $1.99, total backlog $75,600M, average diluted shares 328.3M; FY2012 outlook net sales $45.5-46.5B, diluted EPS from continuing operations $8.20-8.40"
+  },
+  "LM43": {
+   "published": "2013-01-24",
+   "filed": "2013-01-24 06:30 ET, before the open",
+   "title": "Lockheed Martin Q4 2012 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420413003718/v332654_ex99-1.htm",
+   "supports": "Q4 2012: net sales $12,099M vs $12,211M, segment operating profit $1,339M vs $1,404M, diluted EPS from continuing operations $1.73 vs $2.14, total backlog $82,300M, average diluted shares 328.0M; FY2013 outlook net sales $44.5-46B, diluted EPS from continuing operations $8.80-9.10"
+  },
+  "LM44": {
+   "published": "2013-02-28",
+   "filed": "2013-02-28 11:47 ET, during the session",
+   "title": "Lockheed Martin FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312513082873/d428940d10k.htm",
+   "supports": "five-year summary 2012-2008 (net sales $47,182M to $41,212M; diluted EPS from continuing operations $8.36, $7.85, $7.10, $7.63, $7.64; backlog $82,300M and $80,700M); total business segment operating profit 2012-2011 $5,583M, $5,281M; average diluted shares 328.4M, 339.9M, 368.3M; Items 1 and 1A"
+  },
+  "LM45": {
+   "published": "2013-04-23",
+   "filed": "2013-04-23 07:28 ET, before the open",
+   "title": "Lockheed Martin Q1 2013 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420413023270/v341995_ex99-1.htm",
+   "supports": "Q1 2013: net sales $11,070M vs $11,293M, segment operating profit $1,343M vs $1,340M, diluted EPS $2.33 vs $2.03, total backlog $77,900M, average diluted shares 326.3M; FY2013 outlook (in words)"
+  },
+  "LM46": {
+   "published": "2013-07-23",
+   "filed": "2013-07-23 07:31 ET, before the open",
+   "title": "Lockheed Martin Q2 2013 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420413040586/v350370_ex99-1.htm",
+   "supports": "Q2 2013: net sales $11,408M vs $11,921M, segment operating profit $1,533M vs $1,470M, diluted EPS $2.64 vs $2.38, total backlog $75,100M, average diluted shares 325.9M; FY2013 outlook, diluted EPS $9.20-9.50"
+  },
+  "LM47": {
+   "published": "2013-10-22",
+   "filed": "2013-10-22 07:33 ET, before the open",
+   "title": "Lockheed Martin Q3 2013 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420413056178/v357642_ex99-1.htm",
+   "supports": "Q3 2013: net sales $11,347M vs $11,869M, segment operating profit $1,455M vs $1,434M, diluted EPS from continuing operations $2.57 vs $2.21, total backlog $78,700M, average diluted shares 327.5M; FY2013 outlook net sales $45-45B, diluted EPS $9.40-9.70"
   }
  },
  "history_vintages": [
@@ -227,7 +367,7 @@
     "2005": "LM9",
     "2006": "LM9"
    },
-   "normalization": "diluted EPS (from continuing operations where the five-year summary reports the line), each year from the latest 10-K that reports it; no filing publishes a figure excluding the unusual items for 2003-2008, whose per-share effects stay in (the NKE FY2008 rule: 2003 -$0.22 with the debt-repayment charge, 2004 -$0.02, 2005 +$0.25, 2006 +$0.45, 2007 +$0.25, 2008 +$0.31), none of them more than half the year's earnings; FY02 excluded: $1.18 diluted EPS from continuing operations (FY2006 10-K), depressed by unusual items that 'decreased earnings from continuing operations before income taxes by $1,112 million, $632 million after tax ($1.40 per diluted share)' (FY2002 10-K), more than the year's $533M of earnings from continuing operations; no per-share figure excluding them was published (the FY2002 10-K's 'would have been $1.2 billion in 2002' is in dollars only: nothing is derived, the XOM 1997 rule), so the history and the P/E window start with FY03 (the ACN FY02 and AAPL FY2002 rule)",
+   "normalization": "diluted EPS (from continuing operations where the five-year summary reports the line), each year from the latest 10-K that reports it; no filing publishes a figure excluding the unusual items for 2003-2006, whose per-share effects stay in (the NKE FY2008 rule: 2003 -$0.22 with the debt-repayment charge, 2004 -$0.02, 2005 +$0.25, 2006 +$0.45), none of them more than half the year's earnings; FY02 excluded: $1.18 diluted EPS from continuing operations (FY2006 10-K), depressed by unusual items that 'decreased earnings from continuing operations before income taxes by $1,112 million, $632 million after tax ($1.40 per diluted share)' (FY2002 10-K), more than the year's $533M of earnings from continuing operations; no per-share figure excluding them was published (the FY2002 10-K's 'would have been $1.2 billion in 2002' is in dollars only: nothing is derived, the XOM 1997 rule), so the history and the P/E window start with FY03 (the ACN FY02 and AAPL FY2002 rule)",
    "revenue_usd_b": {
     "2003": 31.824,
     "2004": 35.526,
@@ -338,7 +478,7 @@
     "2006": "LM18",
     "2007": "LM18"
    },
-   "normalization": "diluted EPS (from continuing operations where the five-year summary reports the line), each year from the latest 10-K that reports it; no filing publishes a figure excluding the unusual items for 2003-2008, whose per-share effects stay in (the NKE FY2008 rule: 2003 -$0.22 with the debt-repayment charge, 2004 -$0.02, 2005 +$0.25, 2006 +$0.45, 2007 +$0.25, 2008 +$0.31), none of them more than half the year's earnings; FY02 excluded: $1.18 diluted EPS from continuing operations (FY2006 10-K), depressed by unusual items that 'decreased earnings from continuing operations before income taxes by $1,112 million, $632 million after tax ($1.40 per diluted share)' (FY2002 10-K), more than the year's $533M of earnings from continuing operations; no per-share figure excluding them was published (the FY2002 10-K's 'would have been $1.2 billion in 2002' is in dollars only: nothing is derived, the XOM 1997 rule), so the history and the P/E window start with FY03 (the ACN FY02 and AAPL FY2002 rule)",
+   "normalization": "diluted EPS (from continuing operations where the five-year summary reports the line), each year from the latest 10-K that reports it; no filing publishes a figure excluding the unusual items for 2003-2007, whose per-share effects stay in (the NKE FY2008 rule: 2003 -$0.22 with the debt-repayment charge, 2004 -$0.02, 2005 +$0.25, 2006 +$0.45, 2007 +$0.25), none of them more than half the year's earnings; FY02 excluded: $1.18 diluted EPS from continuing operations (FY2006 10-K), depressed by unusual items that 'decreased earnings from continuing operations before income taxes by $1,112 million, $632 million after tax ($1.40 per diluted share)' (FY2002 10-K), more than the year's $533M of earnings from continuing operations; no per-share figure excluding them was published (the FY2002 10-K's 'would have been $1.2 billion in 2002' is in dollars only: nothing is derived, the XOM 1997 rule), so the history and the P/E window start with FY03 (the ACN FY02 and AAPL FY2002 rule)",
    "revenue_usd_b": {
     "2003": 31.824,
     "2004": 35.526,
@@ -527,6 +667,551 @@
     ]
    ],
    "groups_basis": "FY08 net sales by business segment (FY2008 10-K, Selected Financial Data by Business Segment)"
+  },
+  {
+   "published": "2010-02-25",
+   "sources": [
+    "LM29",
+    "LM23",
+    "LM18",
+    "LM8",
+    "LM9"
+   ],
+   "company": "Lockheed Martin Corporation",
+   "exchange": "NYSE",
+   "fy_label": "FY09",
+   "why": "'In 2009, 85% of our net sales were made to the U.S. Government, either as a prime contractor or as a subcontractor. Each of our business segments is heavily dependent on sales to the U.S. Government.' (FY2009 10-K, Item 1); 'Reduced funding for defense procurement and research and development programs could result in terminated or delayed contracts and adversely affect our ability to grow or maintain our sales and profitability.' (Item 1A): sales that depend on Congressional appropriations are not earnings that are the cycle, so DURABLE (the CAT and SO precedent); OFFSHORE (live from 2004-11-05) is scoped to offshore delivery taking share in Western consulting, systems integration and outsourcing, and the 10-K names no offshore competition, so no disruption theme in scope is live",
+   "fiscal_year_ends": {
+    "2000": "2000-12-31",
+    "2001": "2001-12-31",
+    "2002": "2002-12-31",
+    "2003": "2003-12-31",
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31",
+    "2007": "2007-12-31",
+    "2008": "2008-12-31",
+    "2009": "2009-12-31"
+   },
+   "eps_normalized": {
+    "2003": 2.34,
+    "2004": 2.83,
+    "2005": 4.1,
+    "2006": 5.8,
+    "2007": 7.1,
+    "2008": 7.86,
+    "2009": 7.78
+   },
+   "eps_sources": {
+    "2003": "LM18",
+    "2004": "LM23",
+    "2005": "LM29",
+    "2006": "LM29",
+    "2007": "LM29",
+    "2008": "LM29",
+    "2009": "LM29"
+   },
+   "normalization": "diluted EPS, each year from the latest 10-K that reports it (the FY2009 10-K reports no discontinued operations); no filing publishes a figure excluding one-off items for 2003-2009, so their per-share effects stay in (the NKE FY2008 rule), none of them more than half a year's earnings; FY02 excluded: $1.18 diluted EPS from continuing operations (FY2006 10-K), depressed by unusual items that 'decreased earnings from continuing operations before income taxes by $1,112 million, $632 million after tax ($1.40 per diluted share)' (FY2002 10-K), more than the year's $533M of earnings from continuing operations; no per-share figure excluding them was published (the FY2002 10-K's 'would have been $1.2 billion in 2002' is in dollars only: nothing is derived, the XOM 1997 rule), so the history and the P/E window start with FY03 (the ACN FY02 and AAPL FY2002 rule)",
+   "revenue_usd_b": {
+    "2003": 31.824,
+    "2004": 35.526,
+    "2005": 37.213,
+    "2006": 39.62,
+    "2007": 41.862,
+    "2008": 42.731,
+    "2009": 45.189
+   },
+   "revenue_sources": {
+    "2003": "LM18",
+    "2004": "LM23",
+    "2005": "LM29",
+    "2006": "LM29",
+    "2007": "LM29",
+    "2008": "LM29",
+    "2009": "LM29"
+   },
+   "diluted_shares_m": {
+    "2003": 450.0,
+    "2004": 447.1,
+    "2005": 445.7,
+    "2006": 436.4,
+    "2007": 427.1,
+    "2008": 409.4,
+    "2009": 388.9
+   },
+   "shares_sources": {
+    "2003": "LM8",
+    "2004": "LM9",
+    "2005": "LM18",
+    "2006": "LM23",
+    "2007": "LM29",
+    "2008": "LM29",
+    "2009": "LM29"
+   },
+   "pe_window_start": "2003-01-01",
+   "margin_signal_name": "Segment operating margin change",
+   "prev_fy_op_margin": 11.41,
+   "prev_fy_op_margin_note": "segment operating profit $5,155M / net sales $45,189M (FY2009 10-K)",
+   "prev_fy_pretax_margin": 9.48,
+   "prev_fy_pretax_margin_note": "earnings before income taxes $4,284M / net sales $45,189M (FY2009 10-K)",
+   "prev_fy_sales_growth": 5.8,
+   "prev_fy_backlog_pct": -3.6,
+   "prev_fy_segop_pct": 3.7,
+   "tax_rate": 0.2941,
+   "tax_note": "income tax expense $1,260M / earnings before income taxes $4,284M (FY2009 10-K)",
+   "cash_b": 2.391,
+   "cash_label": "FY09",
+   "cash_note": "cash and cash equivalents $2,391M at December 31, 2009 (FY2009 10-K)",
+   "ocf_b": 3.173,
+   "ocf_note": "cash provided by operating activities $3,173M in 2009 (FY2009 10-K)",
+   "dividend_annual": 2.34,
+   "dividend_note": "cash dividends $2.34 per share in 2009 (FY2009 10-K)",
+   "cash_return_text": "repurchases of common stock $1,851M in 2009 (FY2009 10-K)",
+   "business_line": "advanced technology systems, products and services, principally for agencies of the U.S. Government",
+   "groups": [
+    [
+     "Aeronautics",
+     12.201,
+     6.3
+    ],
+    [
+     "Electronic Systems",
+     12.204,
+     5.0
+    ],
+    [
+     "Information Systems & Global Services",
+     12.13,
+     4.5
+    ],
+    [
+     "Space Systems",
+     8.654,
+     7.8
+    ]
+   ],
+   "groups_basis": "FY09 net sales by business segment (FY2009 10-K, Selected Financial Data by Business Segment)",
+   "cash_words": "cash and cash equivalents"
+  },
+  {
+   "published": "2011-02-28",
+   "sources": [
+    "LM34",
+    "LM29",
+    "LM23",
+    "LM18",
+    "LM8",
+    "LM9"
+   ],
+   "company": "Lockheed Martin Corporation",
+   "exchange": "NYSE",
+   "fy_label": "FY10",
+   "why": "'In 2010, 84% of our $45.8 billion in net sales were made to the U.S. Government, either as a prime contractor or as a subcontractor.' (FY2010 10-K, Item 1); 'We depend heavily on U.S. Government contracts. A decline or reprioritization of funding in the U.S. defense budget, that of other customers, or delays in the budget process could adversely affect our ability to grow or maintain our sales, earnings, and cash flow.' (Item 1A): sales that depend on Congressional appropriations are not earnings that are the cycle, so DURABLE (the CAT and SO precedent); OFFSHORE (live from 2004-11-05) is scoped to offshore delivery taking share in Western consulting, systems integration and outsourcing, and the 10-K names no offshore competition, so no disruption theme in scope is live",
+   "fiscal_year_ends": {
+    "2001": "2001-12-31",
+    "2002": "2002-12-31",
+    "2003": "2003-12-31",
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31",
+    "2007": "2007-12-31",
+    "2008": "2008-12-31",
+    "2009": "2009-12-31",
+    "2010": "2010-12-31"
+   },
+   "eps_normalized": {
+    "2003": 2.34,
+    "2004": 2.83,
+    "2005": 4.1,
+    "2006": 5.73,
+    "2007": 7.03,
+    "2008": 7.74,
+    "2009": 7.71,
+    "2010": 7.18
+   },
+   "eps_sources": {
+    "2003": "LM18",
+    "2004": "LM23",
+    "2005": "LM29",
+    "2006": "LM34",
+    "2007": "LM34",
+    "2008": "LM34",
+    "2009": "LM34",
+    "2010": "LM34"
+   },
+   "normalization": "diluted EPS from continuing operations where the five-year summary reports the line (the FY2010 10-K restates 2006-2010 for the businesses in discontinued operations), else diluted EPS, each year from the latest 10-K that reports it; no filing publishes a figure excluding one-off items for 2003-2010 (the 2010 Voluntary Executive Separation Program and health care tax charge among them), so their per-share effects stay in (the NKE FY2008 rule), none of them more than half a year's earnings; FY02 excluded: $1.18 diluted EPS from continuing operations (FY2006 10-K), depressed by unusual items that 'decreased earnings from continuing operations before income taxes by $1,112 million, $632 million after tax ($1.40 per diluted share)' (FY2002 10-K), more than the year's $533M of earnings from continuing operations; no per-share figure excluding them was published (the FY2002 10-K's 'would have been $1.2 billion in 2002' is in dollars only: nothing is derived, the XOM 1997 rule), so the history and the P/E window start with FY03 (the ACN FY02 and AAPL FY2002 rule)",
+   "revenue_usd_b": {
+    "2003": 31.824,
+    "2004": 35.526,
+    "2005": 37.213,
+    "2006": 39.076,
+    "2007": 40.726,
+    "2008": 41.372,
+    "2009": 43.995,
+    "2010": 45.803
+   },
+   "revenue_sources": {
+    "2003": "LM18",
+    "2004": "LM23",
+    "2005": "LM29",
+    "2006": "LM34",
+    "2007": "LM34",
+    "2008": "LM34",
+    "2009": "LM34",
+    "2010": "LM34"
+   },
+   "diluted_shares_m": {
+    "2003": 450.0,
+    "2004": 447.1,
+    "2005": 445.7,
+    "2006": 436.4,
+    "2007": 427.1,
+    "2008": 409.4,
+    "2009": 388.9,
+    "2010": 368.3
+   },
+   "shares_sources": {
+    "2003": "LM8",
+    "2004": "LM9",
+    "2005": "LM18",
+    "2006": "LM23",
+    "2007": "LM29",
+    "2008": "LM34",
+    "2009": "LM34",
+    "2010": "LM34"
+   },
+   "pe_window_start": "2003-01-01",
+   "margin_signal_name": "Segment operating margin change",
+   "prev_fy_op_margin": 11.08,
+   "prev_fy_op_margin_note": "segment operating profit $5,076M / net sales $45,803M (FY2010 10-K)",
+   "prev_fy_pretax_margin": 8.35,
+   "prev_fy_pretax_margin_note": "earnings before income taxes $3,826M / net sales $45,803M (FY2010 10-K)",
+   "prev_fy_sales_growth": 4.1,
+   "prev_fy_backlog_pct": 1.3,
+   "prev_fy_segop_pct": -0.5,
+   "tax_rate": 0.3087,
+   "tax_note": "income tax expense $1,181M / earnings before income taxes $3,826M (FY2010 10-K)",
+   "cash_b": 2.777,
+   "cash_label": "FY10",
+   "cash_note": "cash and cash equivalents $2,261M and short-term investments $516M at December 31, 2010 (FY2010 10-K)",
+   "ocf_b": 3.547,
+   "ocf_note": "cash provided by operating activities $3,547M in 2010 (FY2010 10-K)",
+   "dividend_annual": 2.64,
+   "dividend_note": "cash dividends $2.64 per share in 2010 (FY2010 10-K)",
+   "cash_return_text": "repurchases of common stock $2,420M in 2010 (FY2010 10-K)",
+   "business_line": "advanced technology systems, products and services, principally for agencies of the U.S. Government",
+   "groups": [
+    [
+     "Aeronautics",
+     13.235,
+     8.5
+    ],
+    [
+     "Electronic Systems",
+     14.363,
+     6.1
+    ],
+    [
+     "Information Systems & Global Solutions",
+     9.959,
+     3.7
+    ],
+    [
+     "Space Systems",
+     8.246,
+     -4.7
+    ]
+   ],
+   "groups_basis": "FY10 net sales by business segment (FY2010 10-K, Selected Financial Data by Business Segment)"
+  },
+  {
+   "published": "2012-02-23",
+   "sources": [
+    "LM39",
+    "LM34",
+    "LM29",
+    "LM23",
+    "LM18",
+    "LM8",
+    "LM9"
+   ],
+   "company": "Lockheed Martin Corporation",
+   "exchange": "NYSE",
+   "fy_label": "FY11",
+   "why": "'In 2011, 82% of our $46.5 billion in net sales were from the U.S. Government, either as a prime contractor or as a subcontractor (including 61% from the Department of Defense (DoD))' (FY2011 10-K, Item 1); 'We depend heavily on U.S. Government contracts. A decline or reprioritization of funding in the U.S. defense budget or delays in the budget process could adversely affect our ability to grow or maintain our sales, earnings, and cash flow.' (Item 1A): sales that depend on Congressional appropriations are not earnings that are the cycle, so DURABLE (the CAT and SO precedent); OFFSHORE (live from 2004-11-05) is scoped to offshore delivery taking share in Western consulting, systems integration and outsourcing, and the 10-K names no offshore competition, so no disruption theme in scope is live",
+   "fiscal_year_ends": {
+    "2002": "2002-12-31",
+    "2003": "2003-12-31",
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31",
+    "2007": "2007-12-31",
+    "2008": "2008-12-31",
+    "2009": "2009-12-31",
+    "2010": "2010-12-31",
+    "2011": "2011-12-31"
+   },
+   "eps_normalized": {
+    "2003": 2.34,
+    "2004": 2.83,
+    "2005": 4.1,
+    "2006": 5.73,
+    "2007": 7.0,
+    "2008": 7.64,
+    "2009": 7.63,
+    "2010": 7.1,
+    "2011": 7.85
+   },
+   "eps_sources": {
+    "2003": "LM18",
+    "2004": "LM23",
+    "2005": "LM29",
+    "2006": "LM34",
+    "2007": "LM39",
+    "2008": "LM39",
+    "2009": "LM39",
+    "2010": "LM39",
+    "2011": "LM39"
+   },
+   "normalization": "diluted EPS from continuing operations where the five-year summary reports the line, else diluted EPS, each year from the latest 10-K that reports it (the FY2011 10-K's 2007-2011 reflect the 2011 change to percentage-of-completion revenue recognition on service contracts; earlier years stay as published); no filing publishes a figure excluding one-off items for 2003-2011 (the 2010 Voluntary Executive Separation Program and health care tax charge and the 2011 severance charges among them), so their per-share effects stay in (the NKE FY2008 rule), none of them more than half a year's earnings; FY02 excluded: $1.18 diluted EPS from continuing operations (FY2006 10-K), depressed by unusual items that 'decreased earnings from continuing operations before income taxes by $1,112 million, $632 million after tax ($1.40 per diluted share)' (FY2002 10-K), more than the year's $533M of earnings from continuing operations; no per-share figure excluding them was published (the FY2002 10-K's 'would have been $1.2 billion in 2002' is in dollars only: nothing is derived, the XOM 1997 rule), so the history and the P/E window start with FY03 (the ACN FY02 and AAPL FY2002 rule)",
+   "revenue_usd_b": {
+    "2003": 31.824,
+    "2004": 35.526,
+    "2005": 37.213,
+    "2006": 39.076,
+    "2007": 40.612,
+    "2008": 41.212,
+    "2009": 43.867,
+    "2010": 45.671,
+    "2011": 46.499
+   },
+   "revenue_sources": {
+    "2003": "LM18",
+    "2004": "LM23",
+    "2005": "LM29",
+    "2006": "LM34",
+    "2007": "LM39",
+    "2008": "LM39",
+    "2009": "LM39",
+    "2010": "LM39",
+    "2011": "LM39"
+   },
+   "diluted_shares_m": {
+    "2003": 450.0,
+    "2004": 447.1,
+    "2005": 445.7,
+    "2006": 436.4,
+    "2007": 427.1,
+    "2008": 409.4,
+    "2009": 388.9,
+    "2010": 368.3,
+    "2011": 339.9
+   },
+   "shares_sources": {
+    "2003": "LM8",
+    "2004": "LM9",
+    "2005": "LM18",
+    "2006": "LM23",
+    "2007": "LM29",
+    "2008": "LM34",
+    "2009": "LM39",
+    "2010": "LM39",
+    "2011": "LM39"
+   },
+   "pe_window_start": "2003-01-01",
+   "margin_signal_name": "Segment operating margin change",
+   "prev_fy_op_margin": 11.36,
+   "prev_fy_op_margin_note": "segment operating profit $5,281M / net sales $46,499M (FY2011 10-K)",
+   "prev_fy_pretax_margin": 7.81,
+   "prev_fy_pretax_margin_note": "earnings before income taxes $3,631M / net sales $46,499M (FY2011 10-K)",
+   "prev_fy_sales_growth": 1.8,
+   "prev_fy_backlog_pct": 2.9,
+   "prev_fy_segop_pct": 5.0,
+   "tax_rate": 0.2655,
+   "tax_note": "income tax expense $964M / earnings before income taxes $3,631M (FY2011 10-K)",
+   "cash_b": 3.585,
+   "cash_label": "FY11",
+   "cash_note": "cash and cash equivalents $3,582M and short-term investments $3M at December 31, 2011 (FY2011 10-K)",
+   "ocf_b": 4.253,
+   "ocf_note": "cash provided by operating activities $4,253M in 2011 (FY2011 10-K)",
+   "dividend_annual": 3.25,
+   "dividend_note": "cash dividends $3.25 per share in 2011 (FY2011 10-K)",
+   "cash_return_text": "repurchases of common stock $2,465M in 2011 (FY2011 10-K)",
+   "business_line": "advanced technology systems, products and services, principally for agencies of the U.S. Government",
+   "groups": [
+    [
+     "Aeronautics",
+     14.362,
+     9.6
+    ],
+    [
+     "Electronic Systems",
+     14.622,
+     1.5
+    ],
+    [
+     "Information Systems & Global Solutions",
+     9.381,
+     -5.4
+    ],
+    [
+     "Space Systems",
+     8.134,
+     -1.3
+    ]
+   ],
+   "groups_basis": "FY11 net sales by business segment (FY2011 10-K, Selected Financial Data by Business Segment)"
+  },
+  {
+   "published": "2013-02-28",
+   "sources": [
+    "LM44",
+    "LM39",
+    "LM34",
+    "LM29",
+    "LM23",
+    "LM18",
+    "LM8",
+    "LM9"
+   ],
+   "company": "Lockheed Martin Corporation",
+   "exchange": "NYSE",
+   "fy_label": "FY12",
+   "why": "'In 2012, 82% of our $47.2 billion in net sales were from the U.S. Government, either as a prime contractor or as a subcontractor (including 61% from the Department of Defense (DoD))' (FY2012 10-K, Item 1); 'We depend heavily on U.S. Government contracts. Our programs could be materially reduced, extended, or terminated as a result of the government’s continuing assessment of priorities, changes in government priorities, the implementation of sequestration, or other budget cuts intended to avoid sequestration.' (Item 1A): sales that depend on Congressional appropriations are not earnings that are the cycle, so DURABLE (the CAT and SO precedent); OFFSHORE (live from 2004-11-05) is scoped to offshore delivery taking share in Western consulting, systems integration and outsourcing, and CLOUD (live from 2012-10-30) to public cloud displacing on-premise hardware, storage, databases and data-center outsourcing; the 10-K names no offshore competition and does not mention cloud, so no disruption theme in scope is live",
+   "fiscal_year_ends": {
+    "2003": "2003-12-31",
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31",
+    "2007": "2007-12-31",
+    "2008": "2008-12-31",
+    "2009": "2009-12-31",
+    "2010": "2010-12-31",
+    "2011": "2011-12-31",
+    "2012": "2012-12-31"
+   },
+   "eps_normalized": {
+    "2003": 2.34,
+    "2004": 2.83,
+    "2005": 4.1,
+    "2006": 5.73,
+    "2007": 7.0,
+    "2008": 7.64,
+    "2009": 7.63,
+    "2010": 7.1,
+    "2011": 7.85,
+    "2012": 8.36
+   },
+   "eps_sources": {
+    "2003": "LM18",
+    "2004": "LM23",
+    "2005": "LM29",
+    "2006": "LM34",
+    "2007": "LM39",
+    "2008": "LM44",
+    "2009": "LM44",
+    "2010": "LM44",
+    "2011": "LM44",
+    "2012": "LM44"
+   },
+   "normalization": "diluted EPS from continuing operations where the five-year summary reports the line, else diluted EPS, each year from the latest 10-K that reports it (the FY2011 and FY2012 10-Ks' 2007-2012 reflect the 2011 change to percentage-of-completion revenue recognition on service contracts; earlier years stay as published); no filing publishes a figure excluding one-off items for 2003-2012 (the 2010 Voluntary Executive Separation Program and health care tax charge and the 2011 and 2012 severance charges among them), so their per-share effects stay in (the NKE FY2008 rule), none of them more than half a year's earnings; the decade of the FY2012 10-K (2003-2012) no longer reaches FY02, which stays excluded as before, so the history still starts with FY03",
+   "revenue_usd_b": {
+    "2003": 31.824,
+    "2004": 35.526,
+    "2005": 37.213,
+    "2006": 39.076,
+    "2007": 40.612,
+    "2008": 41.212,
+    "2009": 43.867,
+    "2010": 45.671,
+    "2011": 46.499,
+    "2012": 47.182
+   },
+   "revenue_sources": {
+    "2003": "LM18",
+    "2004": "LM23",
+    "2005": "LM29",
+    "2006": "LM34",
+    "2007": "LM39",
+    "2008": "LM44",
+    "2009": "LM44",
+    "2010": "LM44",
+    "2011": "LM44",
+    "2012": "LM44"
+   },
+   "diluted_shares_m": {
+    "2003": 450.0,
+    "2004": 447.1,
+    "2005": 445.7,
+    "2006": 436.4,
+    "2007": 427.1,
+    "2008": 409.4,
+    "2009": 388.9,
+    "2010": 368.3,
+    "2011": 339.9,
+    "2012": 328.4
+   },
+   "shares_sources": {
+    "2003": "LM8",
+    "2004": "LM9",
+    "2005": "LM18",
+    "2006": "LM23",
+    "2007": "LM29",
+    "2008": "LM34",
+    "2009": "LM39",
+    "2010": "LM44",
+    "2011": "LM44",
+    "2012": "LM44"
+   },
+   "pe_window_start": "2003-01-01",
+   "margin_signal_name": "Segment operating margin change",
+   "prev_fy_op_margin": 11.83,
+   "prev_fy_op_margin_note": "segment operating profit $5,583M / net sales $47,182M (FY2012 10-K)",
+   "prev_fy_pretax_margin": 8.63,
+   "prev_fy_pretax_margin_note": "earnings before income taxes $4,072M / net sales $47,182M (FY2012 10-K)",
+   "prev_fy_sales_growth": 1.5,
+   "prev_fy_backlog_pct": 2.0,
+   "prev_fy_segop_pct": 5.7,
+   "tax_rate": 0.3259,
+   "tax_note": "income tax expense $1,327M / earnings before income taxes $4,072M (FY2012 10-K)",
+   "cash_b": 1.898,
+   "cash_label": "FY12",
+   "cash_note": "cash and cash equivalents $1,898M at December 31, 2012 (FY2012 10-K)",
+   "ocf_b": 1.561,
+   "ocf_note": "cash provided by operating activities $1,561M in 2012 (FY2012 10-K)",
+   "dividend_annual": 4.15,
+   "dividend_note": "cash dividends $4.15 per share in 2012 (FY2012 10-K)",
+   "cash_return_text": "repurchases of common stock $990M in 2012 (FY2012 10-K)",
+   "business_line": "advanced technology systems, products and services, principally for agencies of the U.S. Government",
+   "groups": [
+    [
+     "Aeronautics",
+     14.953,
+     4.1
+    ],
+    [
+     "Information Systems & Global Solutions",
+     8.846,
+     -5.7
+    ],
+    [
+     "Missiles and Fire Control",
+     7.457,
+     -0.1
+    ],
+    [
+     "Mission Systems and Training",
+     7.579,
+     6.3
+    ],
+    [
+     "Space Systems",
+     8.347,
+     2.3
+    ]
+   ],
+   "groups_basis": "FY12 net sales by business segment (FY2012 10-K, Selected Financial Data by Business Segment)",
+   "cash_words": "cash and cash equivalents"
   }
  ],
  "prints": [
@@ -973,6 +1658,636 @@
    "diluted_shares_m": 385.5,
    "cash_return_text": "Repurchasing 4.6 million shares at a cost of $354 million during the quarter and 18.3 million shares at a cost of $1.4 billion during the nine month period of the year",
    "next_print": "Q4 2009 print (late January)"
+  },
+  {
+   "quarter": "Q4 2009",
+   "fy": 2009,
+   "q": 4,
+   "published": "2010-01-28",
+   "source": "LM28",
+   "release": "Jan 28",
+   "release_time": "before the open on Jan 28: 8-K accepted 06:34 ET",
+   "period_end": "2009-12-31",
+   "raw": {
+    "rev_m": 12524.0,
+    "rev_prior_m": 11132.0,
+    "segop_m": 1413.0,
+    "segop_prior_m": 1255.0,
+    "backlog_m": 78000.0,
+    "backlog_prior_m": 80900.0,
+    "diluted_shares_m": 381.9
+   },
+   "backlog_prior_source": "LM24",
+   "backlog_prior_label": "December 31, 2008 (Q4 2008 release)",
+   "sales_b": 12.524,
+   "sales_pct": 12.5,
+   "backlog_pct": -3.6,
+   "segop_pct": 12.6,
+   "seg_margin": 11.28,
+   "seg_margin_bp": 0.9,
+   "eps_q": 2.17,
+   "eps_q_prior": 2.05,
+   "eps_pct": 5.9,
+   "diluted_shares_m": 381.9,
+   "cash_return_text": "Repurchasing 6.6 million shares at a cost of $489 million during the quarter and 24.9 million shares at a cost of $1.9 billion during the year",
+   "next_print": "Q1 2010 print (late April)",
+   "fy_actual": {
+    "fy": 2009,
+    "fy_label": "FY09",
+    "eps_normalized": 7.78,
+    "revenue_usd_b": 45.189,
+    "diluted_shares_m": 388.9,
+    "normalization_note": "FY2009 $7.78, diluted EPS as reported (Q4 2009 release; one-off items' per-share effects stay in)",
+    "op_margin": 11.41,
+    "pretax_margin": 9.48,
+    "pretax_margin_note": "FY09 earnings before income taxes $4,284M / net sales $45,189M (LM28)",
+    "sales_growth": 5.8,
+    "backlog_pct": -3.6,
+    "segop_pct": 3.7,
+    "tax_rate": 0.2941,
+    "tax_note": "FY09 income tax expense $1,260M / earnings before income taxes $4,284M"
+   }
+  },
+  {
+   "quarter": "Q1 2010",
+   "fy": 2010,
+   "q": 1,
+   "published": "2010-04-21",
+   "source": "LM30",
+   "release": "Apr 21",
+   "release_time": "before the open on Apr 21: 8-K accepted 06:34 ET",
+   "period_end": "2010-03-28",
+   "raw": {
+    "rev_m": 10637.0,
+    "rev_prior_m": 10373.0,
+    "segop_m": 1158.0,
+    "segop_prior_m": 1199.0,
+    "backlog_m": 75000.0,
+    "backlog_prior_m": 80800.0,
+    "diluted_shares_m": 377.7
+   },
+   "backlog_prior_source": "LM25",
+   "backlog_prior_label": "March 29, 2009 (Q1 2009 release)",
+   "sales_b": 10.637,
+   "sales_pct": 2.5,
+   "backlog_pct": -7.2,
+   "segop_pct": -3.4,
+   "seg_margin": 10.89,
+   "seg_margin_bp": -67.2,
+   "eps_q": 1.45,
+   "eps_q_prior": 1.68,
+   "eps_pct": -13.7,
+   "diluted_shares_m": 377.7,
+   "cash_return_text": "Repurchasing 6.5 million shares at a cost of $516 million",
+   "next_print": "Q2 2010 print (late July)"
+  },
+  {
+   "quarter": "Q2 2010",
+   "fy": 2010,
+   "q": 2,
+   "published": "2010-07-27",
+   "source": "LM31",
+   "release": "Jul 27",
+   "release_time": "before the open on Jul 27: 8-K accepted 07:38 ET",
+   "period_end": "2010-06-27",
+   "raw": {
+    "rev_m": 11442.0,
+    "rev_prior_m": 11072.0,
+    "segop_m": 1287.0,
+    "segop_prior_m": 1272.0,
+    "backlog_m": 72800.0,
+    "backlog_prior_m": 79200.0,
+    "diluted_shares_m": 371.7
+   },
+   "backlog_prior_source": "LM26",
+   "backlog_prior_label": "June 28, 2009 (Q2 2009 release)",
+   "sales_b": 11.442,
+   "sales_pct": 3.3,
+   "backlog_pct": -8.1,
+   "segop_pct": 1.2,
+   "seg_margin": 11.25,
+   "seg_margin_bp": -24.0,
+   "eps_q": 1.96,
+   "eps_q_prior": 1.87,
+   "eps_pct": 4.8,
+   "diluted_shares_m": 371.7,
+   "cash_return_text": "Repurchasing 9.7 million shares at a cost of $782 million in the quarter and 16.2 million shares at a cost of $1.3 billion for the year-to-date period",
+   "next_print": "Q3 2010 print (late October)",
+   "note": "diluted EPS from continuing operations (the release reports discontinued operations)"
+  },
+  {
+   "quarter": "Q3 2010",
+   "fy": 2010,
+   "q": 3,
+   "published": "2010-10-19",
+   "source": "LM32",
+   "release": "Oct 19",
+   "release_time": "before the open on Oct 19: 8-K accepted 07:35 ET",
+   "period_end": "2010-09-26",
+   "raw": {
+    "rev_m": 11375.0,
+    "rev_prior_m": 10767.0,
+    "segop_m": 1273.0,
+    "segop_prior_m": 1249.0,
+    "backlog_m": 70500.0,
+    "backlog_prior_m": 76400.0,
+    "diluted_shares_m": 363.9
+   },
+   "backlog_prior_source": "LM27",
+   "backlog_prior_label": "September 27, 2009 (Q3 2009 release)",
+   "sales_b": 11.375,
+   "sales_pct": 5.6,
+   "backlog_pct": -7.7,
+   "segop_pct": 1.9,
+   "seg_margin": 11.19,
+   "seg_margin_bp": -40.9,
+   "eps_q": 1.55,
+   "eps_q_prior": 2.04,
+   "eps_pct": -24.0,
+   "diluted_shares_m": 363.9,
+   "cash_return_text": "Repurchasing 3.6 million shares at a cost of $268 million in the quarter and 19.8 million shares at a cost of $1.6 billion for the year-to-date period",
+   "next_print": "Q4 2010 print (late January)",
+   "note": "diluted EPS from continuing operations (the release reports discontinued operations)"
+  },
+  {
+   "quarter": "Q4 2010",
+   "fy": 2010,
+   "q": 4,
+   "published": "2011-01-27",
+   "source": "LM33",
+   "release": "Jan 27",
+   "release_time": "before the open on Jan 27: 8-K accepted 06:37 ET",
+   "period_end": "2010-12-31",
+   "raw": {
+    "rev_m": 12794.0,
+    "rev_prior_m": 12203.0,
+    "segop_m": 1395.0,
+    "segop_prior_m": 1416.0,
+    "backlog_m": 78200.0,
+    "backlog_prior_m": 78000.0,
+    "diluted_shares_m": 359.7
+   },
+   "backlog_prior_source": "LM28",
+   "backlog_prior_label": "December 31, 2009 (Q4 2009 release)",
+   "sales_b": 12.794,
+   "sales_pct": 4.8,
+   "backlog_pct": 0.3,
+   "segop_pct": -1.5,
+   "seg_margin": 10.9,
+   "seg_margin_bp": -70.0,
+   "eps_q": 2.3,
+   "eps_q_prior": 2.19,
+   "eps_pct": 5.0,
+   "diluted_shares_m": 359.7,
+   "cash_return_text": "Repurchasing 13.2 million shares at a cost of $916 million in the quarter and 33.0 million shares at a cost of $2.5 billion for the year-to-date period",
+   "next_print": "Q1 2011 print (late April)",
+   "note": "diluted EPS from continuing operations (the release reports discontinued operations)",
+   "fy_actual": {
+    "fy": 2010,
+    "fy_label": "FY10",
+    "eps_normalized": 7.18,
+    "revenue_usd_b": 45.803,
+    "diluted_shares_m": 368.3,
+    "normalization_note": "FY2010 $7.18, diluted EPS from continuing operations as reported (Q4 2010 release; one-off items' per-share effects stay in)",
+    "op_margin": 11.08,
+    "pretax_margin": 8.35,
+    "pretax_margin_note": "FY10 earnings before income taxes $3,826M / net sales $45,803M (LM33)",
+    "sales_growth": 4.1,
+    "backlog_pct": 0.3,
+    "segop_pct": -0.5,
+    "tax_rate": 0.3087,
+    "tax_note": "FY10 income tax expense $1,181M / earnings before income taxes $3,826M"
+   },
+   "restates": {
+    "2009": {
+     "eps": 7.71,
+     "note": "FY09 $7.71, diluted EPS from continuing operations as the Q4 2010 release restates it (EIG and PAE in discontinued operations)"
+    }
+   }
+  },
+  {
+   "quarter": "Q1 2011",
+   "fy": 2011,
+   "q": 1,
+   "published": "2011-04-26",
+   "source": "LM35",
+   "release": "Apr 26",
+   "release_time": "before the open on Apr 26: 8-K accepted 07:32 ET",
+   "period_end": "2011-03-27",
+   "raw": {
+    "rev_m": 10633.0,
+    "rev_prior_m": 10337.0,
+    "segop_m": 1159.0,
+    "segop_prior_m": 1114.0,
+    "backlog_m": 80000.0,
+    "backlog_prior_m": 75000.0,
+    "diluted_shares_m": 352.6
+   },
+   "backlog_prior_source": "LM30",
+   "backlog_prior_label": "March 28, 2010 (Q1 2010 release)",
+   "sales_b": 10.633,
+   "sales_pct": 2.9,
+   "backlog_pct": 6.7,
+   "segop_pct": 4.0,
+   "seg_margin": 10.9,
+   "seg_margin_bp": 12.3,
+   "eps_q": 1.55,
+   "eps_q_prior": 1.38,
+   "eps_pct": 12.3,
+   "diluted_shares_m": 352.6,
+   "cash_return_text": "Repurchasing 3.5 million shares at a cost of $281 million",
+   "next_print": "Q2 2011 print (late July)",
+   "note": "diluted EPS from continuing operations (the release reports discontinued operations)",
+   "restates": {
+    "2008": {
+     "eps": 7.64,
+     "note": "FY08 $7.64, diluted EPS from continuing operations as the Q1 2011 release adjusts it for the 2011 change to percentage-of-completion revenue recognition on service contracts"
+    },
+    "2009": {
+     "eps": 7.6,
+     "note": "FY09 $7.60, diluted EPS from continuing operations as the Q1 2011 release adjusts it for the 2011 change to percentage-of-completion revenue recognition on service contracts"
+    },
+    "2010": {
+     "eps": 7.03,
+     "note": "FY10 $7.03, diluted EPS from continuing operations as the Q1 2011 release adjusts it for the 2011 change to percentage-of-completion revenue recognition on service contracts"
+    }
+   }
+  },
+  {
+   "quarter": "Q2 2011",
+   "fy": 2011,
+   "q": 2,
+   "published": "2011-07-26",
+   "source": "LM36",
+   "release": "Jul 26",
+   "release_time": "before the open on Jul 26: 8-K accepted 07:34 ET",
+   "period_end": "2011-06-26",
+   "raw": {
+    "rev_m": 11551.0,
+    "rev_prior_m": 11280.0,
+    "segop_m": 1342.0,
+    "segop_prior_m": 1267.0,
+    "backlog_m": 77300.0,
+    "backlog_prior_m": 72800.0,
+    "diluted_shares_m": 346.6
+   },
+   "backlog_prior_source": "LM31",
+   "backlog_prior_label": "June 27, 2010 (Q2 2010 release)",
+   "sales_b": 11.551,
+   "sales_pct": 2.4,
+   "backlog_pct": 6.2,
+   "segop_pct": 5.9,
+   "seg_margin": 11.62,
+   "seg_margin_bp": 38.6,
+   "eps_q": 2.14,
+   "eps_q_prior": 1.92,
+   "eps_pct": 11.5,
+   "diluted_shares_m": 346.6,
+   "cash_return_text": "Repurchasing 13.0 million shares at a cost of $1.0 billion in the second quarter and 16.5 million shares at a cost of $1.3 billion for the year-to-date period",
+   "next_print": "Q3 2011 print (late October)",
+   "note": "diluted EPS from continuing operations (the release reports discontinued operations)"
+  },
+  {
+   "quarter": "Q3 2011",
+   "fy": 2011,
+   "q": 3,
+   "published": "2011-10-26",
+   "source": "LM37",
+   "release": "Oct 26",
+   "release_time": "before the open on Oct 26: 8-K accepted 07:34 ET",
+   "period_end": "2011-09-25",
+   "raw": {
+    "rev_m": 12119.0,
+    "rev_prior_m": 11343.0,
+    "segop_m": 1355.0,
+    "segop_prior_m": 1261.0,
+    "backlog_m": 73000.0,
+    "backlog_prior_m": 70500.0,
+    "diluted_shares_m": 333.6
+   },
+   "backlog_prior_source": "LM32",
+   "backlog_prior_label": "September 26, 2010 (Q3 2010 release)",
+   "sales_b": 12.119,
+   "sales_pct": 6.8,
+   "backlog_pct": 3.5,
+   "segop_pct": 7.5,
+   "seg_margin": 11.18,
+   "seg_margin_bp": 6.4,
+   "eps_q": 1.99,
+   "eps_q_prior": 1.53,
+   "eps_pct": 30.1,
+   "diluted_shares_m": 333.6,
+   "cash_return_text": "Repurchasing 13.4 million shares at a cost of $964 million in the third quarter and 29.9 million shares at a cost of $2.3 billion for the year-to-date period",
+   "next_print": "Q4 2011 print (late January)",
+   "note": "diluted EPS from continuing operations (the release reports discontinued operations)"
+  },
+  {
+   "quarter": "Q4 2011",
+   "fy": 2011,
+   "q": 4,
+   "published": "2012-01-26",
+   "source": "LM38",
+   "release": "Jan 26",
+   "release_time": "before the open on Jan 26: 8-K accepted 06:33 ET",
+   "period_end": "2011-12-31",
+   "raw": {
+    "rev_m": 12211.0,
+    "rev_prior_m": 12761.0,
+    "segop_m": 1404.0,
+    "segop_prior_m": 1382.0,
+    "backlog_m": 80700.0,
+    "backlog_prior_m": 78200.0,
+    "diluted_shares_m": 326.7
+   },
+   "backlog_prior_source": "LM33",
+   "backlog_prior_label": "December 31, 2010 (Q4 2010 release)",
+   "sales_b": 12.211,
+   "sales_pct": -4.3,
+   "backlog_pct": 3.2,
+   "segop_pct": 1.6,
+   "seg_margin": 11.5,
+   "seg_margin_bp": 66.8,
+   "eps_q": 2.14,
+   "eps_q_prior": 2.28,
+   "eps_pct": -6.1,
+   "diluted_shares_m": 326.7,
+   "cash_return_text": "Repurchasing 1.9 million shares at a cost of $139 million in the fourth quarter and 31.8 million shares at a cost of $2.4 billion during the year",
+   "next_print": "Q1 2012 print (late April)",
+   "note": "diluted EPS from continuing operations (the release reports discontinued operations)",
+   "fy_actual": {
+    "fy": 2011,
+    "fy_label": "FY11",
+    "eps_normalized": 7.85,
+    "revenue_usd_b": 46.499,
+    "diluted_shares_m": 339.9,
+    "normalization_note": "FY2011 $7.85, diluted EPS from continuing operations as reported (Q4 2011 release; one-off items' per-share effects stay in)",
+    "op_margin": 11.36,
+    "pretax_margin": 7.81,
+    "pretax_margin_note": "FY11 earnings before income taxes $3,631M / net sales $46,499M (LM38)",
+    "sales_growth": 1.8,
+    "backlog_pct": 3.2,
+    "segop_pct": 5.0,
+    "tax_rate": 0.2655,
+    "tax_note": "FY11 income tax expense $964M / earnings before income taxes $3,631M"
+   },
+   "restates": {
+    "2010": {
+     "eps": 7.1,
+     "note": "FY10 $7.10, diluted EPS from continuing operations as the Q4 2011 release restates it"
+    }
+   }
+  },
+  {
+   "quarter": "Q1 2012",
+   "fy": 2012,
+   "q": 1,
+   "published": "2012-04-26",
+   "source": "LM40",
+   "release": "Apr 26",
+   "release_time": "before the open on Apr 26: 8-K accepted 06:50 ET",
+   "period_end": "2012-03-25",
+   "raw": {
+    "rev_m": 11293.0,
+    "rev_prior_m": 10626.0,
+    "segop_m": 1340.0,
+    "segop_prior_m": 1171.0,
+    "backlog_m": 76600.0,
+    "backlog_prior_m": 80000.0,
+    "diluted_shares_m": 328.6
+   },
+   "backlog_prior_source": "LM35",
+   "backlog_prior_label": "March 27, 2011 (Q1 2011 release)",
+   "sales_b": 11.293,
+   "sales_pct": 6.3,
+   "backlog_pct": -4.2,
+   "segop_pct": 14.4,
+   "seg_margin": 11.87,
+   "seg_margin_bp": 84.6,
+   "eps_q": 2.02,
+   "eps_q_prior": 1.57,
+   "eps_pct": 28.7,
+   "diluted_shares_m": 328.6,
+   "cash_return_text": "The Corporation repurchased 2.7 million shares of its common stock for $242 million during the quarter ended March 25, 2012",
+   "next_print": "Q2 2012 print (late July)",
+   "note": "diluted EPS from continuing operations (the release reports discontinued operations)"
+  },
+  {
+   "quarter": "Q2 2012",
+   "fy": 2012,
+   "q": 2,
+   "published": "2012-07-24",
+   "source": "LM41",
+   "release": "Jul 24",
+   "release_time": "before the open on Jul 24: 8-K accepted 07:37 ET",
+   "period_end": "2012-06-24",
+   "raw": {
+    "rev_m": 11921.0,
+    "rev_prior_m": 11543.0,
+    "segop_m": 1470.0,
+    "segop_prior_m": 1351.0,
+    "backlog_m": 75500.0,
+    "backlog_prior_m": 77300.0,
+    "diluted_shares_m": 328.8
+   },
+   "backlog_prior_source": "LM36",
+   "backlog_prior_label": "June 26, 2011 (Q2 2011 release)",
+   "sales_b": 11.921,
+   "sales_pct": 3.3,
+   "backlog_pct": -2.3,
+   "segop_pct": 8.8,
+   "seg_margin": 12.33,
+   "seg_margin_bp": 62.7,
+   "eps_q": 2.38,
+   "eps_q_prior": 2.16,
+   "eps_pct": 10.2,
+   "diluted_shares_m": 328.8,
+   "cash_return_text": "Repurchasing 2.2 million shares at a cost of $186 million in the second quarter and 4.9 million shares at a cost of $428 million during the year-to-date period",
+   "next_print": "Q3 2012 print (late October)",
+   "note": "diluted EPS from continuing operations (the release reports discontinued operations)"
+  },
+  {
+   "quarter": "Q3 2012",
+   "fy": 2012,
+   "q": 3,
+   "published": "2012-10-24",
+   "source": "LM42",
+   "release": "Oct 24",
+   "release_time": "before the open on Oct 24: 8-K accepted 07:37 ET",
+   "period_end": "2012-09-30",
+   "raw": {
+    "rev_m": 11869.0,
+    "rev_prior_m": 12119.0,
+    "segop_m": 1434.0,
+    "segop_prior_m": 1355.0,
+    "backlog_m": 75600.0,
+    "backlog_prior_m": 73000.0,
+    "diluted_shares_m": 328.3
+   },
+   "backlog_prior_source": "LM37",
+   "backlog_prior_label": "September 25, 2011 (Q3 2011 release)",
+   "sales_b": 11.869,
+   "sales_pct": -2.1,
+   "backlog_pct": 3.6,
+   "segop_pct": 5.8,
+   "seg_margin": 12.08,
+   "seg_margin_bp": 90.1,
+   "eps_q": 2.21,
+   "eps_q_prior": 1.99,
+   "eps_pct": 11.1,
+   "diluted_shares_m": 328.3,
+   "cash_return_text": "Repurchasing 3.3 million shares at a cost of $294 million in the third quarter and 8.2 million shares at a cost of $722 million during the year-to-date period",
+   "next_print": "Q4 2012 print (late January)",
+   "note": "diluted EPS from continuing operations (the release reports discontinued operations)"
+  },
+  {
+   "quarter": "Q4 2012",
+   "fy": 2012,
+   "q": 4,
+   "published": "2013-01-24",
+   "source": "LM43",
+   "release": "Jan 24",
+   "release_time": "before the open on Jan 24: 8-K accepted 06:30 ET",
+   "period_end": "2012-12-31",
+   "raw": {
+    "rev_m": 12099.0,
+    "rev_prior_m": 12211.0,
+    "segop_m": 1339.0,
+    "segop_prior_m": 1404.0,
+    "backlog_m": 82300.0,
+    "backlog_prior_m": 80700.0,
+    "diluted_shares_m": 328.0
+   },
+   "backlog_prior_source": "LM38",
+   "backlog_prior_label": "December 31, 2011 (Q4 2011 release)",
+   "sales_b": 12.099,
+   "sales_pct": -0.9,
+   "backlog_pct": 2.0,
+   "segop_pct": -4.6,
+   "seg_margin": 11.07,
+   "seg_margin_bp": -43.1,
+   "eps_q": 1.73,
+   "eps_q_prior": 2.14,
+   "eps_pct": -19.2,
+   "diluted_shares_m": 328.0,
+   "cash_return_text": "Repurchasing 3.1 million shares for $286 million in the fourth quarter and 11.3 million shares for $1.0 billion during the year",
+   "next_print": "Q1 2013 print (late April)",
+   "note": "diluted EPS from continuing operations (the release reports discontinued operations)",
+   "fy_actual": {
+    "fy": 2012,
+    "fy_label": "FY12",
+    "eps_normalized": 8.36,
+    "revenue_usd_b": 47.182,
+    "diluted_shares_m": 328.4,
+    "normalization_note": "FY2012 $8.36, diluted EPS from continuing operations as reported (Q4 2012 release; one-off items' per-share effects stay in)",
+    "op_margin": 11.83,
+    "pretax_margin": 8.63,
+    "pretax_margin_note": "FY12 earnings before income taxes $4,072M / net sales $47,182M (LM43)",
+    "sales_growth": 1.5,
+    "backlog_pct": 2.0,
+    "segop_pct": 5.7,
+    "tax_rate": 0.3259,
+    "tax_note": "FY12 income tax expense $1,327M / earnings before income taxes $4,072M"
+   }
+  },
+  {
+   "quarter": "Q1 2013",
+   "fy": 2013,
+   "q": 1,
+   "published": "2013-04-23",
+   "source": "LM45",
+   "release": "Apr 23",
+   "release_time": "before the open on Apr 23: 8-K accepted 07:28 ET",
+   "period_end": "2013-03-31",
+   "raw": {
+    "rev_m": 11070.0,
+    "rev_prior_m": 11293.0,
+    "segop_m": 1343.0,
+    "segop_prior_m": 1340.0,
+    "backlog_m": 77900.0,
+    "backlog_prior_m": 76600.0,
+    "diluted_shares_m": 326.3
+   },
+   "backlog_prior_source": "LM40",
+   "backlog_prior_label": "March 25, 2012 (Q1 2012 release)",
+   "sales_b": 11.07,
+   "sales_pct": -2.0,
+   "backlog_pct": 1.7,
+   "segop_pct": 0.2,
+   "seg_margin": 12.13,
+   "seg_margin_bp": 26.6,
+   "eps_q": 2.33,
+   "eps_q_prior": 2.03,
+   "eps_pct": 14.8,
+   "diluted_shares_m": 326.3,
+   "cash_return_text": "Repurchasing 5.1 million shares for $461 million, compared to 2.7 million shares for $242 million in the first quarter of 2012",
+   "next_print": "Q2 2013 print (late July)"
+  },
+  {
+   "quarter": "Q2 2013",
+   "fy": 2013,
+   "q": 2,
+   "published": "2013-07-23",
+   "source": "LM46",
+   "release": "Jul 23",
+   "release_time": "before the open on Jul 23: 8-K accepted 07:31 ET",
+   "period_end": "2013-06-30",
+   "raw": {
+    "rev_m": 11408.0,
+    "rev_prior_m": 11921.0,
+    "segop_m": 1533.0,
+    "segop_prior_m": 1470.0,
+    "backlog_m": 75100.0,
+    "backlog_prior_m": 75500.0,
+    "diluted_shares_m": 325.9
+   },
+   "backlog_prior_source": "LM41",
+   "backlog_prior_label": "June 24, 2012 (Q2 2012 release)",
+   "sales_b": 11.408,
+   "sales_pct": -4.3,
+   "backlog_pct": -0.5,
+   "segop_pct": 4.3,
+   "seg_margin": 13.44,
+   "seg_margin_bp": 110.7,
+   "eps_q": 2.64,
+   "eps_q_prior": 2.38,
+   "eps_pct": 10.9,
+   "diluted_shares_m": 325.9,
+   "cash_return_text": "Repurchasing 4.5 million shares for $465 million and 9.6 million shares for $926 million during the second quarter and first six months of 2013, respectively, compared to 2.2 million shares for $181 million and 4.9 million shares for $423 million during the second quarter and first six months of 2012, respectively",
+   "next_print": "Q3 2013 print (late October)"
+  },
+  {
+   "quarter": "Q3 2013",
+   "fy": 2013,
+   "q": 3,
+   "published": "2013-10-22",
+   "source": "LM47",
+   "release": "Oct 22",
+   "release_time": "before the open on Oct 22: 8-K accepted 07:33 ET",
+   "period_end": "2013-09-29",
+   "raw": {
+    "rev_m": 11347.0,
+    "rev_prior_m": 11869.0,
+    "segop_m": 1455.0,
+    "segop_prior_m": 1434.0,
+    "backlog_m": 78700.0,
+    "backlog_prior_m": 75600.0,
+    "diluted_shares_m": 327.5
+   },
+   "backlog_prior_source": "LM42",
+   "backlog_prior_label": "September 30, 2012 (Q3 2012 release)",
+   "sales_b": 11.347,
+   "sales_pct": -4.4,
+   "backlog_pct": 4.1,
+   "segop_pct": 1.5,
+   "seg_margin": 12.82,
+   "seg_margin_bp": 74.1,
+   "eps_q": 2.57,
+   "eps_q_prior": 2.21,
+   "eps_pct": 16.3,
+   "diluted_shares_m": 327.5,
+   "cash_return_text": "Repurchasing 4.9 million shares for $607 million and 14.5 million shares for $1.5 billion during the third quarter and first nine months of 2013, respectively, compared to 3.2 million shares for $285 million and 8.1 million shares for $708 million during the third quarter and first nine months of 2012, respectively",
+   "next_print": "Q4 2013 print (late January)",
+   "note": "diluted EPS from continuing operations (the release reports discontinued operations)"
   }
  ],
  "guides": [
@@ -1275,6 +2590,318 @@
    ],
    "cfo_words": "at least $3,200",
    "note": "a preliminary outlook"
+  },
+  {
+   "fy": 2010,
+   "published": "2010-01-28",
+   "source": "LM28",
+   "doc": "Q4 2009 release",
+   "rev_guide_usd_b": [
+    46.25,
+    47.25
+   ],
+   "eps_guide": [
+    7.15,
+    7.35
+   ],
+   "segop_guide_usd_b": [
+    5.025,
+    5.125
+   ],
+   "cfo_words": "at least $3,200",
+   "note": "the 'Current Update' column (beside 'October 2009')"
+  },
+  {
+   "fy": 2010,
+   "published": "2010-04-21",
+   "source": "LM30",
+   "doc": "Q1 2010 release",
+   "rev_guide_usd_b": [
+    46.25,
+    47.25
+   ],
+   "eps_guide": [
+    7.0,
+    7.2
+   ],
+   "segop_guide_usd_b": [
+    5.025,
+    5.125
+   ],
+   "cfo_words": "at least $3,300",
+   "note": "the 'Current Update' column (beside 'January 2010')"
+  },
+  {
+   "fy": 2010,
+   "published": "2010-07-27",
+   "source": "LM31",
+   "doc": "Q2 2010 release",
+   "rev_guide_usd_b": [
+    45.5,
+    46.5
+   ],
+   "eps_guide": [
+    7.15,
+    7.35
+   ],
+   "eps_label": "diluted EPS from continuing operations",
+   "segop_guide_usd_b": [
+    5.025,
+    5.125
+   ],
+   "cfo_words": "at least $3,400",
+   "note": "the 'Current Update' column (beside 'April 2010')"
+  },
+  {
+   "fy": 2010,
+   "published": "2010-10-19",
+   "source": "LM32",
+   "doc": "Q3 2010 release",
+   "rev_guide_usd_b": [
+    44.9,
+    45.9
+   ],
+   "eps_guide": [
+    6.75,
+    6.95
+   ],
+   "eps_label": "diluted EPS from continuing operations",
+   "segop_guide_usd_b": [
+    4.965,
+    5.065
+   ],
+   "cfo_words": "at least $3,400",
+   "note": "the 'Current Update' column (beside 'July 2010')"
+  },
+  {
+   "fy": 2011,
+   "published": "2011-01-27",
+   "source": "LM33",
+   "doc": "Q4 2010 release",
+   "rev_guide_usd_b": [
+    45.75,
+    47.25
+   ],
+   "eps_guide": [
+    6.7,
+    7.0
+   ],
+   "eps_label": "diluted EPS from continuing operations",
+   "segop_guide_usd_b": [
+    4.95,
+    5.1
+   ],
+   "cfo_words": "at least $4,000"
+  },
+  {
+   "fy": 2011,
+   "published": "2011-04-26",
+   "source": "LM35",
+   "doc": "Q1 2011 release",
+   "rev_guide_usd_b": [
+    45.75,
+    47.25
+   ],
+   "eps_guide": [
+    6.95,
+    7.25
+   ],
+   "eps_label": "diluted EPS from continuing operations",
+   "segop_guide_usd_b": [
+    4.95,
+    5.1
+   ],
+   "cfo_words": "at least $4,100",
+   "note": "the 'Current Update' column (beside 'January 2011')"
+  },
+  {
+   "fy": 2011,
+   "published": "2011-07-26",
+   "source": "LM36",
+   "doc": "Q2 2011 release",
+   "rev_guide_usd_b": [
+    46.0,
+    47.0
+   ],
+   "eps_guide": [
+    7.35,
+    7.55
+   ],
+   "eps_label": "diluted EPS from continuing operations",
+   "segop_guide_usd_b": [
+    5.05,
+    5.15
+   ],
+   "cfo_words": "at least $4,200",
+   "note": "the 'Current Update' column (beside 'April 2011')"
+  },
+  {
+   "fy": 2011,
+   "published": "2011-10-26",
+   "source": "LM37",
+   "doc": "Q3 2011 release",
+   "rev_guide_usd_b": [
+    46.0,
+    47.0
+   ],
+   "eps_guide": [
+    7.4,
+    7.6
+   ],
+   "eps_label": "diluted EPS from continuing operations",
+   "segop_guide_usd_b": [
+    5.075,
+    5.175
+   ],
+   "cfo_words": "at least $4,200",
+   "note": "the 'Current Update' column (beside 'July 2011')"
+  },
+  {
+   "fy": 2012,
+   "published": "2012-01-26",
+   "source": "LM38",
+   "doc": "Q4 2011 release",
+   "rev_guide_usd_b": [
+    45.0,
+    46.0
+   ],
+   "eps_guide": [
+    7.7,
+    7.9
+   ],
+   "eps_label": "diluted EPS from continuing operations",
+   "segop_guide_usd_b": [
+    5.025,
+    5.125
+   ],
+   "cfo_words": "$3,800"
+  },
+  {
+   "fy": 2012,
+   "published": "2012-04-26",
+   "source": "LM40",
+   "doc": "Q1 2012 release",
+   "rev_guide_usd_b": [
+    45.0,
+    46.0
+   ],
+   "eps_guide": [
+    7.7,
+    7.9
+   ],
+   "eps_label": "diluted EPS from continuing operations",
+   "segop_guide_usd_b": [
+    5.075,
+    5.175
+   ],
+   "cfo_words": "at least $3,800",
+   "note": "the 'Current Update' column (beside 'January 2012')"
+  },
+  {
+   "fy": 2012,
+   "published": "2012-07-24",
+   "source": "LM41",
+   "doc": "Q2 2012 release",
+   "rev_guide_usd_b": [
+    45.0,
+    46.0
+   ],
+   "eps_guide": [
+    7.9,
+    8.1
+   ],
+   "eps_label": "diluted EPS from continuing operations",
+   "segop_guide_usd_b": [
+    5.2,
+    5.3
+   ],
+   "cfo_words": "at least $3,900",
+   "note": "the 'Current Update' column (beside 'April 2012')"
+  },
+  {
+   "fy": 2012,
+   "published": "2012-10-24",
+   "source": "LM42",
+   "doc": "Q3 2012 release",
+   "rev_guide_usd_b": [
+    45.5,
+    46.5
+   ],
+   "eps_guide": [
+    8.2,
+    8.4
+   ],
+   "eps_label": "diluted EPS from continuing operations",
+   "segop_guide_usd_b": [
+    5.375,
+    5.475
+   ],
+   "cfo_words": "at least $4,000",
+   "note": "the 'Current' column (beside 'July 2012')"
+  },
+  {
+   "fy": 2013,
+   "published": "2013-01-24",
+   "source": "LM43",
+   "doc": "Q4 2012 release",
+   "rev_guide_usd_b": [
+    44.5,
+    46.0
+   ],
+   "eps_guide": [
+    8.8,
+    9.1
+   ],
+   "eps_label": "diluted EPS from continuing operations",
+   "segop_guide_usd_b": [
+    5.175,
+    5.325
+   ],
+   "cfo_words": "at least $4,000"
+  },
+  {
+   "fy": 2013,
+   "published": "2013-04-23",
+   "source": "LM45",
+   "doc": "Q1 2013 release",
+   "cfo_words": "No change",
+   "note": "the 'Current Outlook' column (beside 'January Outlook'): net sales 'Low-end of range', segment operating profit 'No change', diluted EPS 'No change' (words: the last numeric range stands)"
+  },
+  {
+   "fy": 2013,
+   "published": "2013-07-23",
+   "source": "LM46",
+   "doc": "Q2 2013 release",
+   "eps_guide": [
+    9.2,
+    9.5
+   ],
+   "segop_guide_usd_b": [
+    5.4,
+    5.55
+   ],
+   "cfo_words": "at least $4,200",
+   "note": "the 'Current Update' column (beside 'April 2013'): net sales 'No Change' (words: the last numeric range stands)"
+  },
+  {
+   "fy": 2013,
+   "published": "2013-10-22",
+   "source": "LM47",
+   "doc": "Q3 2013 release",
+   "rev_guide_usd_b": [
+    45.0,
+    45.0
+   ],
+   "eps_guide": [
+    9.4,
+    9.7
+   ],
+   "segop_guide_usd_b": [
+    5.525,
+    5.675
+   ],
+   "cfo_words": "at least $4,300",
+   "note": "the 'Current Update' column (beside 'July 2013')"
   }
  ],
  "dividends": [
@@ -1301,6 +2928,30 @@
    "source": "LM27",
    "quarterly": 0.63,
    "note": "$0.63 quarterly ('a dividend ($0.63 per share) that was declared on September 24, 2009', Q3 2009 release)"
+  },
+  {
+   "published": "2010-10-19",
+   "source": "LM32",
+   "quarterly": 0.75,
+   "note": "$0.75 quarterly ('The new quarterly dividend will be $0.75 per share', Q3 2010 release)"
+  },
+  {
+   "published": "2011-10-26",
+   "source": "LM37",
+   "quarterly": 1.0,
+   "note": "$1.00 quarterly ('The new quarterly dividend amount will be $1.00 per share', Q3 2011 release)"
+  },
+  {
+   "published": "2012-10-24",
+   "source": "LM42",
+   "quarterly": 1.15,
+   "note": "$1.15 quarterly ('increased its quarterly dividend rate 15 percent, or $0.15 per share, to $1.15 per share', Q3 2012 release)"
+  },
+  {
+   "published": "2013-10-22",
+   "source": "LM47",
+   "quarterly": 1.33,
+   "note": "$1.33 quarterly ('increased its quarterly dividend 16 percent, or $0.18 per share, to $1.33 per share', Q3 2013 release)"
   }
  ],
  "events": [],
