@@ -1,7 +1,7 @@
 # KMI retrospective findings (hindsight)
 
 Patterns seen in `outcome.json` for the KMI weekly dates: first the 103 of 2013-01-18 to 2014-12-31, then the 210 of 2015-2018 ("2015-2018",
-below). The first part covers the 103 dates 2013-01-18 to 2014-12-31: Kinder Morgan, Inc. (NYSE: KMI, Class P common
+below) and the 209 of 2019-2022 ("2019-2022", below). The first part covers the 103 dates 2013-01-18 to 2014-12-31: Kinder Morgan, Inc. (NYSE: KMI, Class P common
 stock), from the first date after its first full year of GAAP EPS to the year end before its first print as the combined company.
 They are **labels and hypotheses**: never feed them back into the method or the fact sheet. The series was scored only after its
 point-in-time build was committed and pushed (d0407fb6d; the firewall fix 3be3f9e66; README and firewall result 3f80e93e6). Outcomes were computed on
@@ -162,3 +162,111 @@ two-year horizons of the 2018 dates reach (2018-12-31 to 2020-12-30: +1.2%, -52.
   mostly sort the high-priced early-2015 dates from the rest.
 - **BEAR was too mild again in 2015,** as in 2014: flat-to-falling EPS at the 10th-percentile P/E, while the price fell to a third. From 2016
   the price sat under the EPP floor on most dates (168 of 210) and stayed there.
+
+## 2019-2022 (209 dates)
+
+The 209 weekly dates 2019-01-04 to 2022-12-30, built on 2026-11-16 after the 2015-2018 part above (the build ab586a2f6, README and firewall
+result 99a564ef9, both pushed before any outcome was computed), scored the same way. Every date has its 6-month, 1-, 2- and 3-year outcomes (the
+last two-year horizon ends 2024-12-30, the last three-year one 2025-12-30). The same labels-only rule applies.
+
+**Hindsight the model could not see:** the COVID crash and the oil price collapse of March-April 2020 (the two-year windows of the 2019 dates
+reach a low of $9.98 on 2020-03-18), Winter Storm Uri in February 2021 (a windfall the model first reads in the Q1 2021 release), the
+2022 energy price surge, and the 2024 rerating of natural gas pipelines (a high of $28.54 on 2024-11-21 within the windows of the late-2022
+dates).
+
+### 2019 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 11 | -6.9% | -13.4% to -2.2% | 0 | 0 | -19.2% | 0 |
+| class CHEAP, legacy tier ACCUMULATE | 22 | -6.1% | -15.0% to +4.2% | 0 | 0 | -24.8% | 0 |
+| class FAIR, legacy tier ACCUMULATE | 6 | -1.4% | -7.6% to +3.3% | 0 | 0 | -27.2% | 0 |
+| class FAIR, legacy tier WATCHLIST | 3 | -3.3% | -4.8% to -2.2% | 0 | 0 | -28.6% | 0 |
+| class RICH, legacy tier ACCUMULATE | 7 | -7.2% | -10.7% to +2.7% | 0 | 0 | -18.1% | 7 |
+| class RICH, legacy tier WATCHLIST | 3 | -14.9% | -17.3% to -6.5% | 0 | 0 | -20.7% | 3 |
+| EPS anchor $0.89 (2019-01-04 to 2019-01-11) | 2 | -2.2% | -4.3% to -2.2% | 0 | 0 | -5.7% | 0 |
+| EPS anchor $0.66 (2019-01-18 to 2019-12-27) | 50 | -6.1% | -17.3% to +4.2% | 0 | 0 | -23.9% | 10 |
+| latest print Q3 2018 (2019-01-04 to 2019-01-11) | 2 | -2.2% | -4.3% to -2.2% | 0 | 0 | -5.7% | 0 |
+| latest print Q4 2018 (2019-01-18 to 2019-04-12) | 13 | -7.4% | -13.4% to -2.8% | 0 | 0 | -26.8% | 0 |
+| latest print Q1 2019 (2019-04-18 to 2019-07-12) | 13 | -1.4% | -6.3% to +4.2% | 0 | 0 | -27.2% | 0 |
+| latest print Q2 2019 (2019-07-19 to 2019-10-11) | 13 | -6.1% | -15.0% to -2.0% | 0 | 0 | -23.4% | 0 |
+| latest print Q3 2019 (2019-10-18 to 2019-12-27) | 11 | -7.6% | -17.3% to +2.7% | 0 | 0 | -19.3% | 10 |
+
+### 2020 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 50 | +41.1% | -15.4% to +77.2% | 38 | 29 | +21.7% | 40 |
+| class RICH, legacy tier WATCHLIST | 3 | -9.1% | -12.9% to -6.4% | 0 | 0 | -21.4% | 3 |
+| EPS anchor $0.66 (2020-01-03 to 2020-01-17) | 3 | -9.1% | -12.9% to -6.4% | 0 | 0 | -21.4% | 3 |
+| EPS anchor $0.96 (2020-01-24 to 2020-12-31) | 50 | +41.1% | -15.4% to +77.2% | 38 | 29 | +21.7% | 40 |
+| latest print Q3 2019 (2020-01-03 to 2020-01-17) | 3 | -9.1% | -12.9% to -6.4% | 0 | 0 | -21.4% | 3 |
+| latest print Q4 2019 (2020-01-24 to 2020-04-17) | 13 | +8.5% | -15.4% to +59.2% | 6 | 0 | -11.0% | 6 |
+| latest print Q1 2020 (2020-04-24 to 2020-07-17) | 13 | +36.6% | +17.2% to +45.6% | 8 | 5 | +15.5% | 10 |
+| latest print Q2 2020 (2020-07-24 to 2020-10-16) | 13 | +50.5% | +37.1% to +59.7% | 13 | 13 | +30.1% | 13 |
+| latest print Q3 2020 (2020-10-23 to 2020-12-31) | 11 | +46.9% | +33.1% to +77.2% | 11 | 11 | +30.0% | 11 |
+
+### 2021 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 52 | +16.2% | +0.0% to +46.1% | 8 | 44 | +6.9% | 44 |
+| EPS anchor $0.96 (2021-01-08 to 2021-01-15) | 2 | +43.3% | +35.7% to +43.3% | 2 | 2 | +24.6% | 2 |
+| EPS anchor $0.92 (2021-01-22 to 2021-04-16) | 13 | +25.0% | +13.0% to +46.1% | 6 | 13 | +14.5% | 13 |
+| EPS anchor $1.237 (2021-04-23 to 2021-07-16) | 13 | +3.5% | +0.0% to +16.6% | 0 | 5 | -3.2% | 5 |
+| EPS anchor $0.751 (2021-07-23 to 2021-10-15) | 13 | +15.2% | +4.7% to +23.3% | 0 | 13 | +3.5% | 13 |
+| EPS anchor $0.75 (2021-10-22 to 2021-12-31) | 11 | +20.4% | +8.7% to +28.2% | 0 | 11 | +6.9% | 11 |
+| latest print Q3 2020 (2021-01-08 to 2021-01-15) | 2 | +43.3% | +35.7% to +43.3% | 2 | 2 | +24.6% | 2 |
+| latest print Q4 2020 (2021-01-22 to 2021-04-16) | 13 | +25.0% | +13.0% to +46.1% | 6 | 13 | +14.5% | 13 |
+| latest print Q1 2021 (2021-04-23 to 2021-07-16) | 13 | +3.5% | +0.0% to +16.6% | 0 | 5 | -3.2% | 5 |
+| latest print Q2 2021 (2021-07-23 to 2021-10-15) | 13 | +15.2% | +4.7% to +23.3% | 0 | 13 | +3.5% | 13 |
+| latest print Q3 2021 (2021-10-22 to 2021-12-31) | 11 | +20.4% | +8.7% to +28.2% | 0 | 11 | +6.9% | 11 |
+
+### 2022 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 46 | +29.8% | +5.2% to +68.3% | 20 | 10 | +3.1% | 22 |
+| class FAIR, legacy tier BUY | 3 | +14.2% | +8.1% to +16.1% | 0 | 0 | -8.6% | 0 |
+| class RICH, legacy tier BUY | 3 | +9.2% | +6.9% to +15.9% | 0 | 0 | -12.2% | 3 |
+| EPS anchor $0.75 (2022-01-07 to 2022-01-14) | 2 | +17.3% | +12.9% to +17.3% | 0 | 2 | -0.1% | 2 |
+| EPS anchor $1.103 (2022-01-21 to 2022-07-15) | 26 | +12.8% | +5.2% to +36.6% | 3 | 0 | -4.9% | 6 |
+| EPS anchor $1.159 (2022-07-22 to 2022-10-14) | 13 | +30.8% | +24.0% to +57.9% | 6 | 0 | +1.3% | 6 |
+| EPS anchor $1.143 (2022-10-21 to 2022-12-30) | 11 | +61.7% | +47.3% to +68.3% | 11 | 8 | +8.5% | 11 |
+| latest print Q3 2021 (2022-01-07 to 2022-01-14) | 2 | +17.3% | +12.9% to +17.3% | 0 | 2 | -0.1% | 2 |
+| latest print Q4 2021 (2022-01-21 to 2022-04-14) | 13 | +10.7% | +5.2% to +16.6% | 0 | 0 | -2.3% | 0 |
+| latest print Q1 2022 (2022-04-22 to 2022-07-15) | 13 | +15.9% | +6.9% to +36.6% | 3 | 0 | -7.5% | 6 |
+| latest print Q2 2022 (2022-07-22 to 2022-10-14) | 13 | +30.8% | +24.0% to +57.9% | 6 | 0 | +1.3% | 6 |
+| latest print Q3 2022 (2022-10-21 to 2022-12-30) | 11 | +61.7% | +47.3% to +68.3% | 11 | 8 | +8.5% | 11 |
+
+### Across 2019-2022
+
+| Group | Dates | Mean 2-yr total return | Mean 2-yr excess vs SPY | Mean m12-24 avg price | Mean 3-yr total return | Call held |
+|---|---|---|---|---|---|---|
+| class CHEAP | 181 | +22.4% | -5.9pp | +3.7% | +44.2% | 106 of 181 |
+| class FAIR | 12 | +1.2% | -44.2pp | -22.3% | +17.6% | 0 of 12 |
+| class RICH | 16 | -4.8% | -52.7pp | -18.0% | +14.8% | 16 of 16 |
+
+- **The CHEAP calls of 2020-2022 held on 106 of 148; those of 2019 on none of 33.** On FY18's $0.66 the 2019 dates sat at 27-33x, near the
+  window median; their two-year windows ran through the COVID crash (median drawdown -55.1%) and every 2019 date lagged SPY (median -54.4pp),
+  so the 10 RICH calls of late 2019 held and the 33 CHEAP and 9 FAIR calls did not. From the Q4 2019 print FY19's $0.96 put the stock at
+  12-23x, under the EPP floor, and the 2020 dates returned a median +40.7% over two years (38 of 53 cleared the hurdle). Across the series:
+  CHEAP held 106 of 181 (mean +22.4% over two years, -5.9pp against SPY), FAIR none of 12 (+1.2%), RICH all 16 (-4.8%, -52.7pp).
+- **Under the floor did better.** The price was under the EPP floor on 158 dates (median two-year return +26.4%) and above it on 51 (median
+  -6.3%). On the m12-24 averages the entry price ranks at Spearman -0.94 and the EPP gap at -0.83 (buying lower and nearer the floor helped),
+  Ratio B at -0.66 (the right sign), the adjusted gap at +0.11 and the proxy composite at -0.39 (the wrong signs). Over one year: CHEAP +9.2%
+  on average, FAIR -18.1%, RICH -24.9%.
+- **The earnings-guide encoding, scored in hindsight:** without it (the last full year's EPS standing, the 2013-2018 encoding) 10 dates of
+  2022 change class (CHEAP or FAIR to RICH, 2022-04-22 to 2022-07-15), and the variant would have held 7 of them against 3 for the archive.
+  **The largest sensitivity, scored the same way:** every signal at its BEAR value turns 57 dates (40 of 2019, 7 of early 2020, 10 of 2022) RICH or FAIR,
+  and those calls would have held on 54 against 3; the adjusted-EPS variant (32 dates) on 7 against 16, the dividend-outlook BASE (28) and
+  the signals at XBULL (28) on none against 16, FY2019 excluded on the KML gain alone (17) on none against 14, no buyback term (11) on none
+  against 8, FY2020 at GAAP (6) on none against 3. These are the sensitivities' own outcomes and must not change the archive's rules (a rule
+  change is a new method version, decided before scoring and tested out of sample): one stock, and the BEAR-signal result mostly reflects
+  that the 2019 dates met the COVID crash.
+- **Where the two-year price landed:** nearest BASE on 136 dates and BEAR on 73, never BULL; BEAR (2014's -22.6%/yr at the 10th-percentile
+  P/E, $9-15) was close for the 2021 and 2022 dates (37 and 34 BEAR landings) whose prices rose, because BULL and BASE ran to $37-128 on the
+  revenue-driven BASE of the Uri and 2022 quarters.
+- **One stock through a crash and a commodity cycle.** The 2019 results are the COVID crash, the 2020-2022 results the recovery and the 2022
+  energy surge; the series tests buying under the floor and the stock's own multiple history, not stock selection, and needs other midstream
+  names on the same dates.
