@@ -60,6 +60,14 @@ SOURCES = [
         "supports": "FY2011 annual history: the five-year review (revenues 2008-2011), the statements of income (operating income, income from continuing operations before income taxes, income tax expense, 2009-2011), the segment EBDA table (2009-2011), the EPS note's period, the cash flow statement, Item 5 (the listing and dividends) and the risk factors"
     },
     {
+        "id": "KM30",
+        "published": "2013-05-14",
+        "filed": "2013-05-13 17:58 ET (EDGAR acceptance)",
+        "title": "Kinder Morgan, Inc. 8-K of 2013-05-14 (Exhibit 99.1, increased 2013 expectations)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630713000036/a0513revisedexpectations.htm",
+        "supports": "the 2013 dividend outlook raised after the Copano acquisition (no revenue, EPS or margin guide)"
+    },
+    {
         "id": "KM21",
         "published": "2013-05-06",
         "filed": "2013-05-03 17:01 ET (EDGAR acceptance)",
@@ -120,7 +128,7 @@ EPP_TODAY_EPS   = 0.56   # FY2013E: no reported (GAAP) EPS guide, FY12's $0.56 s
 EPS_LABEL       = "FY2013E: no reported (GAAP) EPS guide, FY12's $0.56 stands"
 FWD_GUIDE       = (64.8, 64.8)   # no revenue guide in numbers: the latest quarter's revenue growth as reported
 FWD_GUIDE_LABEL, FWD_PERIOD, FWD_BASIS_SHORT = 'no FY13 revenue guide in numbers, Q1 2013 revenues as reported', 'Q1 2013', 'Q1 revenues'
-GUIDE_TEXT      = 'FY13: no revenue, EPS or margin guide in numbers (BASE takes Q1 2013 revenue growth as reported); the Q1 2013 release\'s dividends: "as previously announced, KMI expects to declare dividends of $1.57 per share for 2013" (a dividend outlook, not an earnings or revenue guide: display only)'
+GUIDE_TEXT      = 'FY13: no revenue, EPS or margin guide in numbers (BASE takes Q1 2013 revenue growth as reported); the 8-K of 2013-05-14\'s dividends: "kMI now expects to declare dividends of $1.60 per share for 2013" (a dividend outlook, not an earnings or revenue guide: display only)'
 MARGIN_GUIDED   = False   # False: no margin guide, so no guided step; the signal uses the latest quarter's change
 FY_MARGIN_BASE  = 13.47
 FY_REVENUE_B    = 16.44
@@ -138,7 +146,7 @@ THEME_SIGNAL_NAME    = 'Disruption theme: none in scope'
 THEME_SIGNAL_TRIGGER = 'No live disruption theme covers pipelines and terminals'
 THEME_SUMMARY        = 'no theme in the registry is live for a pipeline company on this date; none has dated evidence'
 KEY_TRIGGER_TAIL     = "Contracted transport and storage fees drive most of the cash, by the company's own account;\n  the bear needs volumes and rates to fall, not one quarter's commodity prices."
-CATALYST_3      = '(3) The FY13 outlook — no revenue, EPS or margin guide in numbers; dividends: "as previously announced, KMI expects to declare dividends of $1.57 per share for 2013" (a dividend outlook, not an earnings or revenue guide: display only)'
+CATALYST_3      = '(3) The FY13 outlook — no revenue, EPS or margin guide in numbers; dividends: "kMI now expects to declare dividends of $1.60 per share for 2013" (a dividend outlook, not an earnings or revenue guide: display only)'
 CATALYST_4      = '(4) Free cash flow — FY12 net cash provided by operating activities $2,795M less capital expenditures $2,022M (consolidated with KMP and EPB)'
 
 # ═════════════════════════════════════════════════════════════════════════════

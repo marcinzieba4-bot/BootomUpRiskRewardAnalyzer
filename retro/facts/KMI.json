@@ -65,6 +65,13 @@
    "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630713000030/kmi-3312013x10q.htm",
    "supports": "Q1 2013 segment EBDA (the segment note's three-month columns): total and Natural Gas Pipelines"
   },
+  "KM30": {
+   "published": "2013-05-14",
+   "filed": "2013-05-13 17:58 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. 8-K of 2013-05-14 (Exhibit 99.1, increased 2013 expectations)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630713000036/a0513revisedexpectations.htm",
+   "supports": "the 2013 dividend outlook raised after the Copano acquisition (no revenue, EPS or margin guide)"
+  },
   "KM13": {
    "published": "2013-07-18",
    "filed": "2013-07-17 16:09 ET (EDGAR acceptance)",
@@ -915,6 +922,14 @@
    "doc": "Q1 2013 release",
    "rev_none": true,
    "display": "dividends: \"as previously announced, KMI expects to declare dividends of $1.57 per share for 2013\" (a dividend outlook, not an earnings or revenue guide: display only)"
+  },
+  {
+   "fy": 2013,
+   "published": "2013-05-14",
+   "source": "KM30",
+   "doc": "8-K of 2013-05-14",
+   "rev_none": true,
+   "display": "dividends: \"kMI now expects to declare dividends of $1.60 per share for 2013\" (a dividend outlook, not an earnings or revenue guide: display only)"
   },
   {
    "fy": 2013,
