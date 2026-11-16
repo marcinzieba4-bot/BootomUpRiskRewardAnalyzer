@@ -38,6 +38,7 @@ Usage
   python3 retro/build_kmi.py --weekly 2013-01-14 2014-12-31      # 103 dates, 2013-01-18 .. 2014-12-31
   python3 retro/build_kmi.py --weekly 2015-01-01 2018-12-31      # 210 dates, 2015-01-02 .. 2018-12-31 (README, "KMI 2015-2018")
   python3 retro/build_kmi.py --weekly 2019-01-01 2022-12-31      # 209 dates, 2019-01-04 .. 2022-12-30 (README, "KMI 2019-2022")
+  python3 retro/build_kmi.py --weekly 2023-01-01 2026-11-15      # 202 dates, 2023-01-06 .. 2026-11-13 (README, "KMI 2023-2026")
   python3 retro/build_kmi.py 2013-01-18
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/KMI/<AS_OF>
 """
