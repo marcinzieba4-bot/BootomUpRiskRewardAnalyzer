@@ -148,7 +148,8 @@ two-year horizons of the 2018 dates reach (2018-12-31 to 2020-12-30: +1.2%, -52.
   CHEAP dates held 18 (mean -4.7%, -31.1pp against SPY). The two-year price landed nearest BASE on 120 dates and BEAR on 90, never BULL;
   the median drawdown within two years was -36.0%.
 - **2015's calls were on FY14's $0.89 while the stock fell by two thirds.** The 2015 dates returned a median -40.8% over two years (-61.3pp
-  against SPY); CHEAP 40, FAIR 6 and RICH 7 all lost about as much, so the class did not separate them.
+  against SPY); every class lost heavily (medians: CHEAP -37.3%, FAIR -41.3%, RICH -48.7%), so the RICH calls held only in the
+  sense that nothing cleared the hurdle.
 - **2016-2018's CHEAP calls rested on excluding the distorted years.** With FY15-FY17 out, FY14's $0.89 stayed the anchor and the stock sat
   at 15-29x, the bottom of its own range: CHEAP on every date. The returns were flat to modest (median two-year -7.8% for 2016, +12.8% for
   2017, +0.5% for 2018) and lagged SPY on 141 of the 157 (SPY beaten on 1, 6 and 9 dates). **The GAAP-kept
