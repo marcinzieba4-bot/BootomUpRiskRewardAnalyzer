@@ -16796,6 +16796,7 @@ this series). Outputs go to `staging/retrospective/KMI/`.
 python3 retro/build_kmi.py --weekly 2013-01-14 2014-12-31                   # 103 dates, 2013-01-18 .. 2014-12-31
 python3 retro/build_kmi.py --weekly 2015-01-01 2018-12-31                   # 210 dates, 2015-01-02 .. 2018-12-31 ("KMI 2015-2018")
 python3 retro/build_kmi.py --weekly 2019-01-01 2022-12-31                   # 209 dates, 2019-01-04 .. 2022-12-30 ("KMI 2019-2022")
+python3 retro/build_kmi.py --weekly 2023-01-01 2026-11-15                   # 202 dates, 2023-01-06 .. 2026-11-13 ("KMI 2023-2026")
 for d in staging/retrospective/KMI/20*/; do
   python3 retro/retro_tool.py --archive staging/retrospective run "$d"
   python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
@@ -16803,7 +16804,7 @@ done
 python3 retro/retro_tool.py --archive staging/retrospective series KMI
 for c in 2013-02-01 2013-03-01 2013-04-18 2013-05-06 2013-07-01 2013-07-18 2013-08-05 2013-10-17 2013-10-31 2014-01-01 2014-01-16 \
          2014-02-24 2014-04-17 2014-05-01 2014-07-17 2014-07-31 2014-10-16 2014-10-30 2015-01-01; do
-  python3 retro/tools/firewall.py $c KMI; done                             # later: "KMI 2015-2018", "KMI 2019-2022"
+  python3 retro/tools/firewall.py $c KMI; done                             # later: "KMI 2015-2018", "KMI 2019-2022", "KMI 2023-2026"
 ```
 
 ### KMI 2008-2009: requested, no date can be built
@@ -17283,6 +17284,131 @@ Judgement calls that could carry hindsight:
 - ENERGY_TRANSITION kept on the watch list and not re-filed after ExxonMobil's Dow removal, EV not recorded, DURABLE kept (text only);
 - the non-earnings 8-Ks read by their item text and exhibits for guided numbers only, and the budget releases and investor-day slides that
   were posted to the website but not filed left out.
+
+The hindsight results are in `staging/retrospective/KMI/FINDINGS.md`: hypotheses, never inputs.
+
+### KMI 2023-2026: GAAP earnings guides every year, segment totals summed, GAAP kept for 2022-2025, the last date 2026-11-13
+
+202 weekly dates, 2023-01-06 to 2026-11-13, on the same fact sheet, builder, engine and method (r2), with the rule-T thresholds of
+2013-01-18 frozen. Built on 2026-11-16 at the owner's request ("Do 2023-2026"), after the 2013-2022 dates had been scored; their
+`FINDINGS.md` was not opened for any decision below, each of which applies a rule that existed before (the one new encoding, the summed
+segment total, was decided before any 2023-2026 model was built). The builder is unchanged but for its usage line.
+
+```bash
+python3 retro/build_kmi.py --weekly 2023-01-01 2026-11-15                   # 202 dates, 2023-01-06 .. 2026-11-13
+for c in 2023-01-19 2023-02-09 2023-04-20 2023-07-20 2023-10-19 2024-01-01 2024-01-18 2024-02-20 2024-04-18 2024-07-18 2024-10-17 \
+         2025-01-01 2025-01-23 2025-02-14 2025-04-17 2025-07-17 2025-10-23 2026-01-01 2026-01-22 2026-02-17 2026-04-23 2026-07-23 \
+         2026-10-22 2026-11-14; do
+  python3 retro/tools/firewall.py $c KMI; done
+```
+
+Read: the 16 earnings releases from Q4 2022 to Q3 2026 (each 8-K's Exhibit 99.1), the FY2022-FY2025 10-Ks (the statements of income and
+cash flows, the segment notes, the dividend tables, Items 1 and 1A), and every other 8-K of January 2023 to November 2026 by its item
+text and the exhibits it links (none guides revenue, EPS or a margin: conference and website notices, debt offerings, credit agreements,
+officer, board, charter, bylaw and vote 8-Ks). All by the session's model directly. The fact sheet's new entries come from the same
+generator, extended for these filings' labels; 328 strings were checked with `verbatim.py`, each against its own filing, all 328 found
+(1,100 over 2013-2026). Source ids: `KM80`-`KM95` (the releases), `KM96`-`KM99` (the 10-Ks); every earlier entry is unchanged. Decided on
+2026-11-16, before any outcome of these dates was computed:
+
+- **The last date.** The series was built on 2026-11-16 during the session, so that day's Yahoo bar is not a close: the range ends on
+  2026-11-15 and the last date is 2026-11-13. A rebuild after the close of a later week adds dates; it does not move these.
+- **Release timing.** Every earnings 8-K was accepted after the close (16:09-16:21 ET; the call at 4:30 p.m. ET), so each print is dated the
+  next trading day. Good Friday 2025 makes the Q1 2025 print's day, 2025-04-17, the week's last trading day, so that day's date meets it
+  (`release_time`, the 2014 and 2019 precedent). The 10-Ks are dated 2023-02-09 (2023-02-08 16:33 ET), 2024-02-20 (08:56 ET, before the
+  open), 2025-02-14 (2025-02-13 17:22 ET) and 2026-02-17 (2026-02-13 16:11 ET; 2026-02-16 is Presidents' Day).
+- **EPS: GAAP diluted per share, the one-off test as before:** 2022 $88M of net charges against $2,548M of net income attributable to
+  KMI, kept at $1.12; 2023 $19M against $2,391M, kept at $1.06; 2024 a net benefit of $42M against $2,571M without it, kept at $1.17;
+  2025 a net benefit of $157M (the year includes the gain on an asset sale the release treats as a certain item) against $2,899M without
+  it, kept at $1.37. The adjusted EPS stays display only (certain items still include the derivative marks).
+- **The GAAP earnings guide, the 2019-2022 encoding unchanged:**
+  - FY2023: $1.12 a share ("$2.5 billion ($1.12 per share)", the Q4 2022 release, restated in each 2023 release); Q2 and Q3 2023 add
+    "slightly below our plan" in words, so $1.12 stands;
+  - FY2024: $1.22, the "final 2024 budgeted EPS" of the Q4 2023 release (after the STX Midstream acquisition; the December 2023 preliminary
+    budget was posted to the website, not filed) and "$2.7 billion ($1.22 per share)" from Q1 2024; Q2 2024's "roughly in-line with our
+    budget for the full year (on budget or within 1-2% below)" names no metric, so it is words; Q3 2024's "below budget ... on Adjusted EPS
+    by approximately 4%" is an adjusted figure, display only;
+  - FY2025: $2.8 billion of net income attributable to KMI over the release's diluted shares (no GAAP per-share figure; the "Adjusted EPS of
+    $1.27" is display only): 2,222M, $1.26, from the Q4 2024 release; Q1 2025's "exceed budget by at least the contributions from the
+    Outrigger acquisition" is words;
+  - FY2026: $3.1 billion over 2,225M = $1.393 from the Q4 2025 release ("Adjusted EPS is $1.36", display only); Q1 2026's "more than 3%
+    favorable to budget" is a one-sided bound (words), and Q2 and Q3 2026 restate the $3.1 billion and give adjusted, one-sided figures only.
+- **New: the segment total is summed.** From Q1 2023 the release's "Preliminary Reconciliation of Segment EBDA to Adjusted Segment EBDA"
+  gives each segment's GAAP EBDA ("Natural Gas Pipelines Segment EBDA", ...) but no total, so total segment EBDA is the sum of the four
+  segments' rows, for the quarter and the year-ago quarter as the release shows them (Q1 2022's own total, $1,913M, equals that sum). Decided
+  before any 2023-2026 model was built; without it the signal reads n/r (10 classes).
+- **The history.** No 10-K of the range has a five-year review (Item 6 reserved), so each supplies the three years of its statement of
+  income and earlier years keep the latest 10-K that reported them. The ten years drop 2012 (FY2022 10-K), 2013, 2014 and 2015 (FY2025
+  10-K), so BEAR becomes 2023's -5.4%/yr from the FY2023 10-K (2014's -22.6% needs 2013 in the history), BULL the CAGR from 2014 ($0.89) and
+  then 2018 ($0.66), and XBULL the 2021-2023 run (+16.6%/yr). The net buyback runs from about -9.7%/yr to zero as 2011-2015's smaller
+  counts leave. Segment revenues of the FY2024 and FY2025 10-Ks come from their one-table-per-year layout (ASU 2023-07), each year's
+  column for "Revenues from external customers".
+- **No revenue or margin guide**, so BASE is still the latest quarter's revenue growth as reported plus the buyback term.
+- **Dividends** each quarter from its release ($0.2775 for Q4 2022 to $0.2975 in 2026). The releases stop reporting DCF in 2025, so the
+  activity line shows the adjusted EPS only.
+- **Themes.** ENERGY_TRANSITION stays on the watch list in each 10-K's words: "We also own and operate oil and gas producing fields, and RNG,
+  LNG and landfill GTE facilities." (FY2022-FY2025, the FY2019 rule for the sentence) and the greenhouse gas sentence, which adds "emissions
+  of" (FY2023) and "increases in the costs for such products" (FY2024). Not re-filed (no dated evidence names Kinder Morgan). GENAI, live
+  since 2022-11-30, stays off: the FY2023-FY2025 10-Ks name generative AI only as a technology the company or its counterparties rely on, a
+  source of regulatory scrutiny and misuse, never as a substitute for its services (the AVGO and MSFT reading). EV is not recorded (the
+  2019-2022 reading). Text only.
+- **The "why"** quotes each 10-K's long-term contract sentence ("... utilize that capacity.") and its commodity-price risk factor.
+- **Adds nothing:** every 7.01 8-K (conference, investor-day and website notices: the investor days, the budget presentations of
+  2025-02-05 and 2026-01-29 and the December preliminary budgets were posted to the website, not filed), the debt offerings (8.01), the
+  credit agreements, and the officer, board, charter, bylaw and vote 8-Ks.
+
+Controls and checks (before any outcome):
+- **Controls:** raising each print's revenues and its segment EBDA, each Q4 print's full-year EPS, each dividend, each outlook's display and
+  earnings figure, and each vintage's last revenue and EPS changes no model dated before its publication and changes the first weekly date
+  on or after it: 72 of 72.
+- **Leak scan:** 0 hits in 452,817 (model, later token) pairs over the 724 models of 2013-2026, after dropping 310 tokens an earlier fact,
+  the builder or the engine already carries.
+- **Regression:** the 522 dates of 2013-2022 rebuild byte-identical.
+- **`retro_tool run`:** passes on all 202 dates with no warnings. A scan for years after the as-of date finds only "-2026.0bp", a margin
+  move in the reports of the 13 dates of one print, not a year.
+- **Firewall** (run after the build was committed, before any outcome): passes at the 24 cutoffs above (every print and vintage date of 2023-2026, the year boundaries and
+  2026-11-14), with 0 files changed and no planted text (524 to 724 dates each); the 2026-11-14 run rebuilds all 724 dates of 2013-2026
+  byte-identical.
+
+Seen in the build (method behaviour, not tuned):
+- **Totals: CHEAP 89, FAIR 40, RICH 73.** 2023: CHEAP on all 52; 2024: CHEAP 37, FAIR 1, RICH 14; 2025: RICH 28, FAIR 24; 2026 (46 dates):
+  FAIR 15, RICH 31. Legacy tiers: BUY 91, WATCHLIST 56, AVOID 40, ACCUMULATE 15. Robustness: all eight variants agree on 88 dates, seven
+  on 46, six on 27, five or fewer on 41.
+- **2023 on the $1.12 guide** (2023-01-20 to 2024-01-12): $16.21-18.66 is 14.5-16.7x against a window median of 21.0-23.5x (the 0th-23rd
+  percentile), under the 16-17x floor on every date of 2023; CHEAP and BUY throughout, although BASE is -4.8% to -40.3%/yr (revenues fell
+  with gas prices: Q2 2023 -32.0%).
+- **2024 on the $1.22 guide:** CHEAP to 2024-09-13 (13.6-17.7x); as the price rose from $20.68 to $30.31 (17.0-24.8x, the 37th-88th
+  percentile against a median of 19.5-20.4x) the class turned FAIR on 2024-09-20 and RICH from 2024-09-27 (AVOID on 15 dates to 2025-01-17;
+  Ratio B infinite on 6, the price above the BULL case).
+- **2025 on $1.26 and 2026 on $1.393:** $25.29-34.43 is 20.1-24.7x against medians of 19.8-20.8x (the 49th-90th percentile): RICH or FAIR on
+  every date, WATCHLIST or AVOID on most. BASE turns positive (+10% to +14%/yr) on revenues up 9-14% a quarter; BULL is the 2018-2024 CAGR
+  (+10.0%/yr) in 2025 and the 2018-2025 one (+11.0%/yr) in 2026, or BASE where higher; BEAR is -5.4%/yr ($18-20).
+- **The price was under the EPP floor on 71 of the 202 dates** (52 of 2023, 19 of 2024, none after); the proxy composite runs from 2.00
+  (Q2 2024, Q1 2025) to 3.10 (Q4 2025).
+
+Sensitivity (each call changed alone, the 202 dates rebuilt and reclassified offline with `retro_tool`'s own classifier; no outcome
+consulted):
+- **every signal at its BEAR value: 112 classes** (CHEAP to RICH 69, FAIR to RICH 40, CHEAP to FAIR 3; 2023-04-21 to 2026-11-06); **at its
+  XBULL value:** 62 classes (RICH to FAIR 29, FAIR to CHEAP 25, RICH to CHEAP 8); no tier either way: the largest call;
+- **2018-2025 at the company's adjusted EPS** ($0.89, $0.95, $0.88, $1.32, $1.16, $1.07, $1.15, $1.30): 92 classes (CHEAP to FAIR 43, FAIR to
+  RICH 40, CHEAP to RICH 9; 2023-04-21 to 2026-11-06) and 141 tiers;
+- **no earnings guide** (the last full year's EPS stands): 38 classes (FAIR to RICH 28, CHEAP to RICH 9, CHEAP to FAIR 1; 2024-07-12 to
+  2026-10-02), 65 tiers; **per-share guides only** (FY24's $1.17 in 2025, FY25's $1.37 in 2026): 27 classes (FAIR to RICH), 47 tiers;
+- **BASE on the dividend outlook's growth** (+1.7% to +1.8% a year): 18 classes (FAIR to RICH; 2025-08-01 to 2026-10-02), 22 tiers;
+- **total segment EBDA n/r from Q1 2023** (the sum not used): 10 classes (FAIR to RICH; 2025-10-03 to 2026-10-02), no tier;
+- **no net buyback term:** 3 classes, 1 tier; **Q2 2024's "within 1-2% below" read as -1.5%:** 1 class, 2 tiers.
+The CHEAP calls of 2023 and early 2024 rest on a price of 14-17x the year's guided EPS against a window median of 20-23x; the RICH and FAIR
+calls from late 2024 rest on the price rising to 20-25x against a median that stayed near 20x. The earnings-guide encoding matters more
+here than in 2019-2022 (38 classes), and so does the EPS basis.
+
+Judgement calls that could carry hindsight:
+- the earnings-guide encoding (net income over the release's shares when no GAAP per-share figure is stated; 38 classes without any guide,
+  27 with per-share guides only), and reading adjusted, one-sided and metric-less outlook words as display only;
+- GAAP over the company's adjusted EPS (92 classes, 141 tiers);
+- the summed segment total from Q1 2023 (10 classes if n/r);
+- BASE on revenue as reported when no revenue is guided (18 classes on the dividend outlook);
+- the signals (112 classes at BEAR, 62 at XBULL), chosen by a builder who knows 2013-2014;
+- ENERGY_TRANSITION kept on the watch list, GENAI and EV not recorded, DURABLE kept (text only);
+- the last date set by the build time (2026-11-13), and the website-only budgets and presentations left out.
 
 The hindsight results are in `staging/retrospective/KMI/FINDINGS.md`: hypotheses, never inputs.
 
