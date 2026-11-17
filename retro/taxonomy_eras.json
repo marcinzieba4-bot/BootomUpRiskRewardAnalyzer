@@ -1721,6 +1721,26 @@
     "term": "Rotary and Mission Systems",
     "first_seen": "2016-10-25",
     "note": "a Lockheed Martin business segment after the Sikorsky acquisition; first in a Lockheed Martin filing in its Q3 2016 earnings 8-K (accepted 2016-10-25 07:32 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "MeiYa",
+    "first_seen": "2008-04-23",
+    "note": "Micron's stack DRAM joint venture with Nanya (MeiYa Technology); first in a Micron filing in its 8-K of 2008-04-23 (accepted 12:50 ET, during the session), EDGAR full-text search"
+   },
+   {
+    "term": "Aptina",
+    "first_seen": "2008-07-08",
+    "note": "Micron's imaging business (Aptina Imaging); first in a Micron filing in its Q3 FY08 10-Q (accepted 2008-07-08 15:30 ET, during the session), EDGAR full-text search"
+   },
+   {
+    "term": "Hybrid Memory Cube",
+    "first_seen": "2013-02-06",
+    "note": "Micron's stacked DRAM architecture; first in a Micron filing in its 8-K of 2013-02-05 (accepted 16:07 ET, after the close, so it counts from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "3D XPoint",
+    "first_seen": "2015-10-27",
+    "note": "the memory technology Micron and Intel announced in 2015; first in a Micron filing in its FY2015 10-K (accepted 2015-10-27 15:37 ET, during the session), EDGAR full-text search"
    }
   ]
  }

@@ -1,0 +1,2224 @@
+{
+ "_doc": "Point-in-time fact sheet for MU retrospectives (retro/build_mu.py), generated from Micron's own filings: every raw figure is the row string it appears in (kept in 'rows'), checked against its filing, and every growth rate, margin, gap and rule-T value is computed from those figures. Every value is tied to a source and becomes visible only on or after that source's 'published' date (EDGAR's acceptance time; after the 16:00 ET close, the next trading day; before 2002 the filing date). Dollar figures in millions as the filings print them (whole millions from the FY2006 10-K, one decimal before).",
+ "ticker": "MU",
+ "sources": {
+  "MU1": {
+   "published": "1998-11-02",
+   "filed": "filed 1998-11-02 (EDGAR gives the filing date only)",
+   "title": "Micron FY1998 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000101287098002758/0001012870-98-002758.txt",
+   "supports": "rule T: FY1998 year-end inventories against FY1997 with that filing's net sales"
+  },
+  "MU2": {
+   "published": "1999-11-09",
+   "filed": "filed 1999-11-09 (EDGAR gives the filing date only)",
+   "title": "Micron FY1999 10-K405",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000101287099004047/0001012870-99-004047.txt",
+   "supports": "rule T: FY1998 SG&A and R&D against FY1997 (statement of operations), FY1999 year-end inventories"
+  },
+  "MU3": {
+   "published": "2000-10-18",
+   "filed": "filed 2000-10-18 (EDGAR gives the filing date only)",
+   "title": "Micron FY2000 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000091205700045119/a2027772z10-k.txt",
+   "supports": "rule T: FY1999 SG&A and R&D against FY1998, FY2000 year-end inventories"
+  },
+  "MU4": {
+   "published": "2001-10-15",
+   "filed": "filed 2001-10-15 (EDGAR gives the filing date only)",
+   "title": "Micron FY2001 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000091205701535432/a2060999z10-k.htm",
+   "supports": "rule T: FY1997-FY1998 selected data (continuing operations), FY2000 SG&A and R&D, FY2001 inventories"
+  },
+  "MU5": {
+   "published": "2002-10-16",
+   "filed": "accepted 2002-10-15 16:18 ET (after the 16:00 ET close)",
+   "title": "Micron FY2002 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000091205702038669/a2091284z10-k.htm",
+   "supports": "rule T: FY1998-FY1999 selected data, FY2001 SG&A and R&D, FY2002 inventories"
+  },
+  "MU6": {
+   "published": "2003-10-16",
+   "filed": "accepted 2003-10-15 17:05 ET (after the 16:00 ET close)",
+   "title": "Micron FY2003 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000104746903033422/a2120427z10-k.htm",
+   "supports": "rule T: FY1999-FY2000 selected data, FY2002 SG&A and R&D, FY2003 inventories; FY2003's year end"
+  },
+  "MU7": {
+   "published": "2004-10-15",
+   "filed": "accepted 2004-10-15 15:19 ET (during the session)",
+   "title": "Micron FY2004 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000110465904030617/a04-11602_110k.htm",
+   "supports": "rule T: FY2000-FY2001 selected data, FY2003 SG&A and R&D, FY2004 inventories"
+  },
+  "MU8": {
+   "published": "2005-11-07",
+   "filed": "accepted 2005-11-04 16:21 ET (after the 16:00 ET close)",
+   "title": "Micron FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000110465905052716/a05-19263_110k.htm",
+   "supports": "rule T: FY2001-FY2002 selected data, FY2004 SG&A and R&D, FY2005 inventories"
+  },
+  "MU9": {
+   "published": "2006-11-08",
+   "filed": "accepted 2006-11-07 19:56 ET (after the 16:00 ET close)",
+   "title": "Micron FY2006 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000110465906072331/a06-20825_210k.htm",
+   "supports": "rule T: FY2002-FY2003 selected data, FY2005 SG&A and R&D, FY2006 inventories; FY2004 diluted shares"
+  },
+  "MU10": {
+   "published": "2007-10-29",
+   "filed": "accepted 2007-10-26 16:27 ET (after the 16:00 ET close)",
+   "title": "Micron FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312507000108/mti10k-fy2007.htm",
+   "supports": "history FY2003-FY2007 (selected data, statements of operations), FY2006's listed one-off benefits, segments, Items 1, 1A and 5; rule T FY2004-FY2007"
+  },
+  "MU11": {
+   "published": "2008-10-28",
+   "filed": "accepted 2008-10-27 16:38 ET (after the 16:00 ET close)",
+   "title": "Micron FY2008 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312508000111/fy08-10k.htm",
+   "supports": "history FY2004-FY2008 (selected data, statements of operations), segments, Items 1, 1A and 5"
+  },
+  "MU12": {
+   "published": "2009-10-28",
+   "filed": "accepted 2009-10-28 13:00 ET (during the session)",
+   "title": "Micron FY2009 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312509000128/fy200910-k.htm",
+   "supports": "history FY2005-FY2009 (selected data, statements of operations), segments, Items 1, 1A and 5"
+  },
+  "MU13": {
+   "published": "2007-10-03",
+   "filed": "accepted 2007-10-02 16:04 ET (after the 16:00 ET close)",
+   "title": "Micron Q4 FY07 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312507000086/exhibit99-1.htm",
+   "supports": "Q4 FY07 net sales, gross margin, SG&A, R&D, operating income, diluted EPS and shares against the year-ago quarter; inventories, cash and debt"
+  },
+  "MU14": {
+   "published": "2007-12-21",
+   "filed": "accepted 2007-12-20 16:01 ET (after the 16:00 ET close)",
+   "title": "Micron Q1 FY08 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312507000134/exhibit99-1.htm",
+   "supports": "Q1 FY08 net sales, gross margin, SG&A, R&D, operating income, diluted EPS and shares against the year-ago quarter; inventories, cash and debt"
+  },
+  "MU15": {
+   "published": "2008-04-03",
+   "filed": "accepted 2008-04-02 16:03 ET (after the 16:00 ET close)",
+   "title": "Micron Q2 FY08 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312508000020/exhibit99-1.htm",
+   "supports": "Q2 FY08 net sales, gross margin, SG&A, R&D, operating income, diluted EPS and shares against the year-ago quarter; inventories, cash and debt"
+  },
+  "MU16": {
+   "published": "2008-06-27",
+   "filed": "accepted 2008-06-26 16:04 ET (after the 16:00 ET close)",
+   "title": "Micron Q3 FY08 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312508000038/exhibit99-1.htm",
+   "supports": "Q3 FY08 net sales, gross margin, SG&A, R&D, operating income, diluted EPS and shares against the year-ago quarter; inventories, cash and debt"
+  },
+  "MU17": {
+   "published": "2008-10-02",
+   "filed": "accepted 2008-10-01 16:03 ET (after the 16:00 ET close)",
+   "title": "Micron Q4 FY08 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312508000072/exhibit99-1.htm",
+   "supports": "Q4 FY08 net sales, gross margin, SG&A, R&D, operating income, diluted EPS and shares against the year-ago quarter; inventories, cash and debt"
+  },
+  "MU18": {
+   "published": "2008-12-24",
+   "filed": "accepted 2008-12-23 16:05 ET (after the 16:00 ET close)",
+   "title": "Micron Q1 FY09 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312508000127/exhibit99_1.htm",
+   "supports": "Q1 FY09 net sales, gross margin, SG&A, R&D, operating income, diluted EPS and shares against the year-ago quarter; inventories, cash and debt"
+  },
+  "MU19": {
+   "published": "2009-04-03",
+   "filed": "accepted 2009-04-02 16:02 ET (after the 16:00 ET close)",
+   "title": "Micron Q2 FY09 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312509000026/exhibit_99-1.htm",
+   "supports": "Q2 FY09 net sales, gross margin, SG&A, R&D, operating income, diluted EPS and shares against the year-ago quarter; inventories, cash and debt"
+  },
+  "MU20": {
+   "published": "2009-06-26",
+   "filed": "accepted 2009-06-25 16:01 ET (after the 16:00 ET close)",
+   "title": "Micron Q3 FY09 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312509000041/exhibit_99-1.htm",
+   "supports": "Q3 FY09 net sales, gross margin, SG&A, R&D, operating income, diluted EPS and shares against the year-ago quarter; inventories, cash and debt"
+  },
+  "MU21": {
+   "published": "2009-09-30",
+   "filed": "accepted 2009-09-29 16:01 ET (after the 16:00 ET close)",
+   "title": "Micron Q4 FY09 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312509000077/exhibit99-1.htm",
+   "supports": "Q4 FY09 net sales, gross margin, SG&A, R&D, operating income, diluted EPS and shares against the year-ago quarter; inventories, cash and debt"
+  },
+  "MU22": {
+   "published": "2009-12-23",
+   "filed": "accepted 2009-12-22 16:01 ET (after the 16:00 ET close)",
+   "title": "Micron Q1 FY10 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312509000150/exhibit99-1.htm",
+   "supports": "Q1 FY10 net sales, gross margin, SG&A, R&D, operating income, diluted EPS and shares against the year-ago quarter; inventories, cash and debt"
+  },
+  "MU23": {
+   "published": "2007-01-17",
+   "filed": "accepted 2007-01-16 16:14 ET (after the 16:00 ET close)",
+   "title": "Micron Q1 FY07 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000110465907002662/a07-1385_110q.htm",
+   "supports": "inventories at the end of Q1 FY07 (the year-ago quarter of a later print)"
+  },
+  "MU24": {
+   "published": "2007-04-11",
+   "filed": "accepted 2007-04-10 16:20 ET (after the 16:00 ET close)",
+   "title": "Micron Q2 FY07 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312507000028/mti10q2-07.htm",
+   "supports": "inventories at the end of Q2 FY07 (the year-ago quarter of a later print)"
+  },
+  "MU25": {
+   "published": "2007-07-11",
+   "filed": "accepted 2007-07-10 17:01 ET (after the 16:00 ET close)",
+   "title": "Micron Q3 FY07 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312507000047/mti10q3-07.htm",
+   "supports": "inventories at the end of Q3 FY07 (the year-ago quarter of a later print)"
+  },
+  "MU26": {
+   "published": "2008-01-09",
+   "filed": "accepted 2008-01-08 16:34 ET (after the 16:00 ET close)",
+   "title": "Micron Q1 FY08 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312508000004/q108-10q.htm",
+   "supports": "inventories at the end of Q1 FY08 (the year-ago quarter of a later print)"
+  },
+  "MU27": {
+   "published": "2008-04-08",
+   "filed": "accepted 2008-04-08 15:17 ET (during the session)",
+   "title": "Micron Q2 FY08 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312508000030/q2-10q2008.htm",
+   "supports": "inventories at the end of Q2 FY08 (the year-ago quarter of a later print)"
+  },
+  "MU28": {
+   "published": "2008-07-08",
+   "filed": "accepted 2008-07-08 15:30 ET (during the session)",
+   "title": "Micron Q3 FY08 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312508000053/q308-10q.htm",
+   "supports": "inventories at the end of Q3 FY08 (the year-ago quarter of a later print)"
+  },
+  "MU29": {
+   "published": "2009-01-13",
+   "filed": "accepted 2009-01-13 15:00 ET (during the session)",
+   "title": "Micron Q1 FY09 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312509000003/q109_10-q.htm",
+   "supports": "inventories at the end of Q1 FY09 (the year-ago quarter of a later print)"
+  },
+  "MU30": {
+   "published": "2009-12-18",
+   "filed": "accepted 2009-12-18 10:01 ET (during the session)",
+   "title": "Micron 8-K of 2009-12-18 (Item 3.01, transfer of listing)",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312509000140/form8kmarketchange.htm",
+   "supports": "the move from the NYSE to the NASDAQ Global Select Market"
+  }
+ },
+ "history_vintages": [
+  {
+   "published": "2007-10-29",
+   "sources": [
+    "MU9",
+    "MU10"
+   ],
+   "fy_label": "FY07",
+   "kind": "DURABLE",
+   "why": "'The Company is a global manufacturer and marketer of semiconductor devices, principally DRAM and NAND Flash memory and CMOS image sensors.' 'We have experienced dramatic declines in average selling prices for our semiconductor memory products which have adversely affected our business.' 'The semiconductor memory industry is highly competitive.' 'Some of our competitors are large corporations or conglomerates that may have greater resources to withstand downturns in the semiconductor markets in which we compete' (FY2007 10-K); DURABLE: no Micron 10-K calls its own business cyclical (CYCLICAL needs the company's 'our business is cyclical', as BKR, CAT and NVDA said; the F and AVGO reading of industry words), so the kind is DURABLE, the label only; no theme in taxonomy_eras.json is live for a memory maker (OFFSHORE is scoped to IT services), so the watch list is empty",
+   "eps_normalized": {
+    "2004": 0.24,
+    "2005": 0.29
+   },
+   "eps_sources": {
+    "2004": "MU10",
+    "2005": "MU10"
+   },
+   "eps_excluded": {
+    "2006": "a year distorted by one-off benefits (the AVGO FY2018 mirror test): its $408M net income ($0.57 a diluted share) includes '$230 million of net proceeds for the sale of the Company’s existing NAND Flash memory designs ... to Intel' and '$23 million in additional amounts expected to be reimbursed resulting from the extension of an economic development agreement' (FY2007 10-K): $253M of listed benefits against $155M of income without them, so reported EPS is 2.7 times the $0.21 without them (the $230M alone against $178M; with the year's whole $18M tax provision charged to it, $212M against $196M); no figure excluding them was published, so no P/E. FY2007 is a loss, so starting the history after FY2006 would leave no year: only the year itself leaves (the NKE FY2018 reading of 'would leave neither')",
+    "2007": "a loss: $(0.42) a diluted share (FY2007 10-K); Micron published no figure excluding one-offs, so no P/E (the XOM FY2020 rule); excluded as the latest year, it stays a gap after (the NKE FY2018 and XOM FY2020 rule)"
+   },
+   "eps_first_excluded": {
+    "2003": "a loss: $(2.11) a diluted share (FY2007 10-K), no figure excluding only one-offs; an excluded year that is not the latest takes the years before it (the PFE 2003 and CMCSA 2003 rule), so the history and the P/E window start with FY2004 (FY2003 ended on August 28, 2003: the window starts 2003-08-29)"
+   },
+   "revenue_usd_b": {
+    "2004": 4.404,
+    "2005": 4.88,
+    "2006": 5.272,
+    "2007": 5.688
+   },
+   "revenue_sources": {
+    "2004": "MU10",
+    "2005": "MU10",
+    "2006": "MU10",
+    "2007": "MU10"
+   },
+   "diluted_shares_m": {
+    "2004": 646.0,
+    "2005": 702.0,
+    "2006": 725.1,
+    "2007": 769.1
+   },
+   "shares_sources": {
+    "2004": "MU9",
+    "2005": "MU10",
+    "2006": "MU10",
+    "2007": "MU10"
+   },
+   "fiscal_year_ends": {
+    "2007": "2007-08-30",
+    "2006": "2006-08-31",
+    "2005": "2005-09-01"
+   },
+   "normalization": "GAAP diluted EPS (Micron reports no discontinued operations after FY2001), each year from the latest filing that reports it: FY04 FY2007 10-K, FY05 FY2007 10-K; Micron published no EPS excluding one-offs for FY2004 or FY2005, whose listed items are small fractions of their income (FY2004: a $22.5M restructure credit, $7.2M from Virginia and $17.2M of currency losses against $157.2M; FY2005: $13M of equipment gains and $12M of anti-dumping receipts against $188M); the non-GAAP figures of its releases from Q2 FY08 exclude the goodwill impairment and, from Q4 FY08, inventory write-downs",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": -4.92,
+   "prev_fy_op_margin_note": "FY07 operating income $(280)M / net sales $5,688M (FY2007 10-K)",
+   "prev_fy_pretax_margin": -2.95,
+   "prev_fy_pretax_margin_note": "FY07 income before taxes and noncontrolling interests $(168)M / net sales $5,688M (FY2007 10-K)",
+   "prev_fy_gross_margin": 18.95,
+   "prev_fy_sales_growth": 7.9,
+   "tax_rate": -0.1786,
+   "tax_note": "FY07 income tax provision $30M / pre-tax $(168)M (FY2007 10-K; a provision on a loss)",
+   "fcf_b": -2.666,
+   "fcf_label": "FY07",
+   "fcf_note": "net cash provided by operating activities $937M less expenditures for property, plant and equipment $3,603M",
+   "cash_b": 2.616,
+   "dividend_annual": 0.0,
+   "dividend_note": "none: 'The Company has not declared or paid cash dividends since 1996 and does not intend to pay cash dividends on its common stock for the foreseeable future.' (FY2007 10-K)",
+   "cash_return_text": "no dividend ('The Company has not declared or paid cash dividends since 1996 and does not intend to pay cash dividends on its common stock for the foreseeable future.', FY2007 10-K) and no repurchase program",
+   "business_line": "memory maker: DRAM and NAND Flash (the IM Flash joint ventures with Intel), and CMOS image sensors (Imaging)",
+   "groups": [
+    [
+     "Memory",
+     5.001,
+     10.6
+    ],
+    [
+     "Imaging",
+     0.687,
+     -8.3
+    ]
+   ],
+   "groups_basis": "FY07 segment net sales (FY2007 10-K)",
+   "company": "Micron Technology, Inc.",
+   "exchange": "NYSE",
+   "pe_window_start": "2003-08-29",
+   "rows": {
+    "eps": "Diluted earnings (loss) per share | (0.42) | 0.57 | 0.29 | 0.24 | (2.11)",
+    "sales": "Net sales | 5,688 | 5,272 | 4,880",
+    "cash": "Cash and short-term investments | 2,616 | 3,079 | 1,290 | 1,231 | 922",
+    "oi": "Operating income (loss) | (280) | 350 | 217",
+    "pt": "Income (loss) before taxes and noncontrolling interests in net income | (168) | 433 | 199",
+    "tax": "Income tax (provision) | (30) | (18) | (11)",
+    "gm": "Gross margin | 1,078 | 1,200 | 1,146",
+    "sh": "Diluted | 769.1 | 725.1 | 702.0",
+    "ocf": "Net cash provided by operating activities | 937 | 2,019 | 1,237",
+    "capex": "Expenditures for property, plant and equipment | (3,603) | (1,365) | (1,065)",
+    "mem": "Memory | 5,001 | 4,523 | 4,577",
+    "img": "Imaging | 687 | 749 | 303",
+    "fy_ends": "For the year ended | August 30, 2007 | August 31, 2006 | September 1, 2005"
+   },
+   "fy2006_rows": [
+    "Other operating income for 2006 includes $230 million of net proceeds for the sale of the Company’s existing NAND Flash memory designs and certain related technology to Intel net of amounts paid by the Company for a perpetual, paid-up license to use and modify such designs.",
+    "Other operating income for 2006 also includes $23 million in additional amounts expected to be reimbursed resulting from the extension of an economic development agreement",
+    "Net income (loss) | (320) | 408 | 188",
+    "Income tax (provision) | (30) | (18) | (11)",
+    "Diluted | 769.1 | 725.1 | 702.0"
+   ]
+  },
+  {
+   "published": "2008-10-28",
+   "sources": [
+    "MU9",
+    "MU10",
+    "MU11"
+   ],
+   "fy_label": "FY08",
+   "kind": "DURABLE",
+   "why": "'The Company is a global manufacturer and marketer of semiconductor devices, principally DRAM and NAND Flash memory and CMOS image sensors.' 'We have experienced dramatic declines in average selling prices for our semiconductor memory products which have adversely affected our business.' 'For 2008 average selling prices of DRAM products and NAND Flash products decreased approximately 50% and 65%, respectively, as compared to 2007.' 'The semiconductor memory industry is highly competitive.' (FY2008 10-K); DURABLE: no Micron 10-K calls its own business cyclical (CYCLICAL needs the company's 'our business is cyclical', as BKR, CAT and NVDA said; the F and AVGO reading of industry words), so the kind is DURABLE, the label only; no theme in taxonomy_eras.json is live for a memory maker (OFFSHORE is scoped to IT services), so the watch list is empty",
+   "eps_normalized": {
+    "2004": 0.24,
+    "2005": 0.29
+   },
+   "eps_sources": {
+    "2004": "MU11",
+    "2005": "MU11"
+   },
+   "eps_excluded": {
+    "2006": "a year distorted by one-off benefits (the AVGO FY2018 mirror test): its $408M net income ($0.57 a diluted share) includes '$230 million of net proceeds for the sale of the Company’s existing NAND Flash memory designs ... to Intel' and '$23 million in additional amounts expected to be reimbursed resulting from the extension of an economic development agreement' (FY2007 10-K): $253M of listed benefits against $155M of income without them, so reported EPS is 2.7 times the $0.21 without them (the $230M alone against $178M; with the year's whole $18M tax provision charged to it, $212M against $196M); no figure excluding them was published, so no P/E. FY2007 is a loss, so starting the history after FY2006 would leave no year: only the year itself leaves (the NKE FY2018 reading of 'would leave neither')",
+    "2007": "a loss: $(0.42) a diluted share (FY2007 10-K); Micron published no figure excluding one-offs, so no P/E (the XOM FY2020 rule); excluded as the latest year, it stays a gap after (the NKE FY2018 and XOM FY2020 rule)",
+    "2008": "a loss: $(2.10) a diluted share; the company's non-GAAP FY08 loss, without the goodwill impairment, the fourth-quarter inventory write-down and the NAND price adjustments, was $(1.32) (Q4 FY08 release): a loss even on the company's figure (the XOM FY2020 rule), a gap after"
+   },
+   "eps_first_excluded": {
+    "2003": "a loss: $(2.11) a diluted share (FY2007 10-K), no figure excluding only one-offs; an excluded year that is not the latest takes the years before it (the PFE 2003 and CMCSA 2003 rule), so the history and the P/E window start with FY2004 (FY2003 ended on August 28, 2003: the window starts 2003-08-29)"
+   },
+   "revenue_usd_b": {
+    "2004": 4.404,
+    "2005": 4.88,
+    "2006": 5.272,
+    "2007": 5.688,
+    "2008": 5.841
+   },
+   "revenue_sources": {
+    "2004": "MU11",
+    "2005": "MU11",
+    "2006": "MU11",
+    "2007": "MU11",
+    "2008": "MU11"
+   },
+   "diluted_shares_m": {
+    "2004": 646.0,
+    "2005": 702.0,
+    "2006": 725.1,
+    "2007": 769.1,
+    "2008": 772.5
+   },
+   "shares_sources": {
+    "2004": "MU9",
+    "2005": "MU10",
+    "2006": "MU11",
+    "2007": "MU11",
+    "2008": "MU11"
+   },
+   "fiscal_year_ends": {
+    "2008": "2008-08-28",
+    "2007": "2007-08-30",
+    "2006": "2006-08-31"
+   },
+   "normalization": "GAAP diluted EPS (Micron reports no discontinued operations after FY2001), each year from the latest filing that reports it: FY04 FY2008 10-K, FY05 FY2008 10-K; Micron published no EPS excluding one-offs for FY2004 or FY2005, whose listed items are small fractions of their income (FY2004: a $22.5M restructure credit, $7.2M from Virginia and $17.2M of currency losses against $157.2M; FY2005: $13M of equipment gains and $12M of anti-dumping receipts against $188M); the non-GAAP figures of its releases from Q2 FY08 exclude the goodwill impairment and, from Q4 FY08, inventory write-downs",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": -27.31,
+   "prev_fy_op_margin_note": "FY08 operating income $(1,595)M / net sales $5,841M (FY2008 10-K)",
+   "prev_fy_pretax_margin": -27.58,
+   "prev_fy_pretax_margin_note": "FY08 income before taxes and noncontrolling interests $(1,611)M / net sales $5,841M (FY2008 10-K)",
+   "prev_fy_gross_margin": -0.94,
+   "prev_fy_sales_growth": 2.7,
+   "tax_rate": -0.0112,
+   "tax_note": "FY08 income tax provision $18M / pre-tax $(1,611)M (FY2008 10-K; a provision on a loss)",
+   "fcf_b": -1.511,
+   "fcf_label": "FY08",
+   "fcf_note": "net cash provided by operating activities $1,018M less expenditures for property, plant and equipment $2,529M",
+   "cash_b": 1.362,
+   "dividend_annual": 0.0,
+   "dividend_note": "none: 'The Company has not declared or paid cash dividends since 1996 and does not intend to pay cash dividends on its common stock for the foreseeable future.' (FY2008 10-K)",
+   "cash_return_text": "no dividend ('The Company has not declared or paid cash dividends since 1996 and does not intend to pay cash dividends on its common stock for the foreseeable future.', FY2008 10-K) and no repurchase program",
+   "business_line": "memory maker: DRAM and NAND Flash (the IM Flash joint ventures with Intel), and CMOS image sensors (Imaging)",
+   "groups": [
+    [
+     "Memory",
+     5.188,
+     3.7
+    ],
+    [
+     "Imaging",
+     0.653,
+     -4.9
+    ]
+   ],
+   "groups_basis": "FY08 segment net sales (FY2008 10-K)",
+   "company": "Micron Technology, Inc.",
+   "exchange": "NYSE",
+   "pe_window_start": "2003-08-29",
+   "rows": {
+    "eps": "Diluted earnings (loss) per share | (2.10) | (0.42) | 0.57 | 0.29 | 0.24",
+    "sales": "Net sales | 5,841 | 5,688 | 5,272 | 4,880 | 4,404",
+    "cash": "Cash and short-term investments | 1,362 | 2,616 | 3,079 | 1,290 | 1,231",
+    "oi": "Operating income (loss) | (1,595) | (280) | 350",
+    "pt": "Income (loss) before taxes and noncontrolling interests | (1,611) | (168) | 433",
+    "tax": "Income tax (provision) | (18) | (30) | (18)",
+    "gm": "Gross margin | (55) | 1,078 | 1,200",
+    "sh": "Diluted | 772.5 | 769.1 | 725.1",
+    "ocf": "Net cash provided by operating activities | 1,018 | 937 | 2,019",
+    "capex": "Expenditures for property, plant and equipment | (2,529) | (3,603) | (1,365)",
+    "mem": "Memory | 5,188 | 5,001 | 4,523",
+    "img": "Imaging | 653 | 687 | 749",
+    "fy_ends": "For the year ended | August 28, 2008 | August 30, 2007 | August 31, 2006"
+   },
+   "fy2006_rows": [
+    "Other operating income for 2006 includes $230 million of net proceeds for the sale of the Company’s existing NAND Flash memory designs and certain related technology to Intel net of amounts paid by the Company for a perpetual, paid-up license to use and modify such designs.",
+    "Other operating income for 2006 also includes $23 million in additional amounts expected to be reimbursed resulting from the extension of an economic development agreement",
+    "Net income (loss) | (320) | 408 | 188",
+    "Income tax (provision) | (30) | (18) | (11)",
+    "Diluted | 769.1 | 725.1 | 702.0"
+   ]
+  },
+  {
+   "published": "2009-10-28",
+   "sources": [
+    "MU9",
+    "MU10",
+    "MU11",
+    "MU12"
+   ],
+   "fy_label": "FY09",
+   "kind": "DURABLE",
+   "why": "'The Company is a global manufacturer and marketer of semiconductor devices, principally DRAM and NAND Flash memory.' 'We have experienced dramatic declines in average selling prices for our semiconductor memory products which have adversely affected our business.' 'For 2009, average selling prices of DRAM and NAND Flash products decreased 52% and 56%, respectively, as compared to 2008.' 'The recent economic downturn in the worldwide economy and the semiconductor industry may harm our business.' (FY2009 10-K); DURABLE: no Micron 10-K calls its own business cyclical (CYCLICAL needs the company's 'our business is cyclical', as BKR, CAT and NVDA said; the F and AVGO reading of industry words), so the kind is DURABLE, the label only; no theme in taxonomy_eras.json is live for a memory maker (OFFSHORE is scoped to IT services), so the watch list is empty",
+   "eps_normalized": {
+    "2004": 0.24,
+    "2005": 0.29
+   },
+   "eps_sources": {
+    "2004": "MU11",
+    "2005": "MU12"
+   },
+   "eps_excluded": {
+    "2006": "a year distorted by one-off benefits (the AVGO FY2018 mirror test): its $408M net income ($0.57 a diluted share) includes '$230 million of net proceeds for the sale of the Company’s existing NAND Flash memory designs ... to Intel' and '$23 million in additional amounts expected to be reimbursed resulting from the extension of an economic development agreement' (FY2007 10-K): $253M of listed benefits against $155M of income without them, so reported EPS is 2.7 times the $0.21 without them (the $230M alone against $178M; with the year's whole $18M tax provision charged to it, $212M against $196M); no figure excluding them was published, so no P/E. FY2007 is a loss, so starting the history after FY2006 would leave no year: only the year itself leaves (the NKE FY2018 reading of 'would leave neither')",
+    "2007": "a loss: $(0.42) a diluted share (FY2007 10-K); Micron published no figure excluding one-offs, so no P/E (the XOM FY2020 rule); excluded as the latest year, it stays a gap after (the NKE FY2018 and XOM FY2020 rule)",
+    "2008": "a loss: $(2.10) a diluted share; the company's non-GAAP FY08 loss, without the goodwill impairment, the fourth-quarter inventory write-down and the NAND price adjustments, was $(1.32) (Q4 FY08 release): a loss even on the company's figure (the XOM FY2020 rule), a gap after",
+    "2009": "a loss: $(2.29) a diluted share (Q4 FY09 release); no figure excluding one-offs was published for the year, so no P/E (the XOM FY2020 rule), a gap after"
+   },
+   "eps_first_excluded": {
+    "2003": "a loss: $(2.11) a diluted share (FY2007 10-K), no figure excluding only one-offs; an excluded year that is not the latest takes the years before it (the PFE 2003 and CMCSA 2003 rule), so the history and the P/E window start with FY2004 (FY2003 ended on August 28, 2003: the window starts 2003-08-29)"
+   },
+   "revenue_usd_b": {
+    "2004": 4.404,
+    "2005": 4.88,
+    "2006": 5.272,
+    "2007": 5.688,
+    "2008": 5.841,
+    "2009": 4.803
+   },
+   "revenue_sources": {
+    "2004": "MU11",
+    "2005": "MU12",
+    "2006": "MU12",
+    "2007": "MU12",
+    "2008": "MU12",
+    "2009": "MU12"
+   },
+   "diluted_shares_m": {
+    "2004": 646.0,
+    "2005": 702.0,
+    "2006": 725.1,
+    "2007": 769.1,
+    "2008": 772.5,
+    "2009": 800.7
+   },
+   "shares_sources": {
+    "2004": "MU9",
+    "2005": "MU10",
+    "2006": "MU11",
+    "2007": "MU12",
+    "2008": "MU12",
+    "2009": "MU12"
+   },
+   "fiscal_year_ends": {
+    "2009": "2009-09-03",
+    "2008": "2008-08-28",
+    "2007": "2007-08-30"
+   },
+   "normalization": "GAAP diluted EPS (Micron reports no discontinued operations after FY2001), each year from the latest filing that reports it: FY04 FY2008 10-K, FY05 FY2009 10-K; Micron published no EPS excluding one-offs for FY2004 or FY2005, whose listed items are small fractions of their income (FY2004: a $22.5M restructure credit, $7.2M from Virginia and $17.2M of currency losses against $157.2M; FY2005: $13M of equipment gains and $12M of anti-dumping receipts against $188M); the non-GAAP figures of its releases from Q2 FY08 exclude the goodwill impairment and, from Q4 FY08, inventory write-downs",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": -34.87,
+   "prev_fy_op_margin_note": "FY09 operating income $(1,675)M / net sales $4,803M (FY2009 10-K)",
+   "prev_fy_pretax_margin": -37.56,
+   "prev_fy_pretax_margin_note": "FY09 income before taxes and noncontrolling interests $(1,804)M / net sales $4,803M (FY2009 10-K)",
+   "prev_fy_gross_margin": -9.14,
+   "prev_fy_sales_growth": -17.8,
+   "tax_rate": -0.0011,
+   "tax_note": "FY09 income tax provision $2M / pre-tax $(1,804)M (FY2009 10-K; a provision on a loss)",
+   "fcf_b": 0.718,
+   "fcf_label": "FY09",
+   "fcf_note": "net cash provided by operating activities $1,206M less expenditures for property, plant and equipment $488M",
+   "cash_b": 1.485,
+   "dividend_annual": 0.0,
+   "dividend_note": "none: 'The Company has not declared or paid cash dividends since 1996 and does not intend to pay cash dividends on its common stock for the foreseeable future.' (FY2009 10-K)",
+   "cash_return_text": "no dividend ('The Company has not declared or paid cash dividends since 1996 and does not intend to pay cash dividends on its common stock for the foreseeable future.', FY2009 10-K) and no repurchase program",
+   "business_line": "memory maker: DRAM and NAND Flash (the IM Flash joint ventures with Intel), and CMOS image sensors, made under a wafer foundry arrangement after the 2009 sale of a majority of the Imaging business",
+   "groups": [
+    [
+     "Memory",
+     4.29,
+     -17.3
+    ],
+    [
+     "Imaging",
+     0.513,
+     -21.4
+    ]
+   ],
+   "groups_basis": "FY09 segment net sales (FY2009 10-K)",
+   "company": "Micron Technology, Inc.",
+   "exchange": "NYSE",
+   "pe_window_start": "2003-08-29",
+   "rows": {
+    "eps": "Diluted earnings (loss) per share | (2.29) | (2.10) | (0.42) | 0.57 | 0.29",
+    "sales": "Net sales | 4,803 | 5,841 | 5,688 | 5,272 | 4,880",
+    "cash": "Cash and short-term investments | 1,485 | 1,362 | 2,616 | 3,079 | 1,290",
+    "oi": "Operating loss | (1,675) | (1,595) | (280)",
+    "pt": "(1,804) | (1,611) | (168)",
+    "tax": "Income tax (provision) | (2) | (18) | (30)",
+    "gm": "Gross margin | (439) | (55) | 1,078",
+    "sh": "Diluted | 800.7 | 772.5 | 769.1",
+    "ocf": "Net cash provided by operating activities | 1,206 | 1,018 | 937",
+    "capex": "Expenditures for property, plant and equipment | (488) | (2,529) | (3,603)",
+    "mem": "Memory | 4,290 | 5,188 | 5,001",
+    "img": "Imaging | 513 | 653 | 687",
+    "fy_ends": "For the year ended | September 3, 2009 | August 28, 2008 | August 30, 2007"
+   },
+   "fy2006_rows": [
+    "Other operating income for 2006 includes $230 million of net proceeds for the sale of the Company’s existing NAND Flash memory designs and certain related technology to Intel net of amounts paid by the Company for a perpetual, paid-up license to use and modify such designs.",
+    "Other operating income for 2006 also includes $23 million in additional amounts expected to be reimbursed resulting from the extension of an economic development agreement",
+    "Net income (loss) | (320) | 408 | 188",
+    "Income tax (provision) | (30) | (18) | (11)",
+    "Diluted | 769.1 | 725.1 | 702.0"
+   ]
+  }
+ ],
+ "prints": [
+  {
+   "quarter": "Q4 FY07",
+   "fy": 2007,
+   "q": 4,
+   "published": "2007-10-03",
+   "source": "MU13",
+   "release": "Oct 2",
+   "release_time": "after the close on Oct 2: 8-K accepted 2007-10-02 16:04 ET; public before the open of the next trading day",
+   "period_end": "2007-08-30",
+   "raw": {
+    "sales_m": 1437.0,
+    "sales_prior_m": 1373.0,
+    "sales_prev_q_m": 1294.0,
+    "gross_profit_m": 173.0,
+    "gross_profit_prior_m": 324.0,
+    "rd_m": 184.0,
+    "rd_prior_m": 163.0,
+    "sga_m": 143.0,
+    "sga_prior_m": 144.0,
+    "op_income_m": -161.0,
+    "op_income_prior_m": 53.0,
+    "inventory_m": 1532.0,
+    "inventory_prior_m": 963.0
+   },
+   "rows": {
+    "sales": "Net sales | 1,437 | 1,294 | 1,373 | 5,688 | 5,272",
+    "gp": "Gross margin | 173 | 106 | 324 | 1,078 | 1,200",
+    "sga": "Selling, general and administrative | 143 | 134 | 144 | 610 | 460",
+    "rd": "Research and development | 184 | 195 | 163 | 805 | 656",
+    "op": "Operating income (loss) | (161) | (195) | 53 | (280) | 350",
+    "eps": "Diluted | (0.21) | (0.29) | 0.08 | (0.42) | 0.57",
+    "shares": "Diluted | 770.9 | 769.9 | 759.5 | 769.1 | 725.1",
+    "inv": "Inventories | 1,532 | 1,449 | 963",
+    "cash": "Cash and short-term investments | 2,616 | 2,920 | 3,079",
+    "ltd": "Long-term debt (5) | 1,987 | 1,913 | 405",
+    "cur": "Current portion of long-term debt | 423 | 411 | 166",
+    "interest": "Interest income (expense), net | 15 | 17 | 36 | 103 | 76",
+    "other": "Other non-operating income (expense) | -- | 1 | 3 | 9 | 7",
+    "tax": "Income tax (provision) (4) | (6) | (9) | (4) | (30) | (18)"
+   },
+   "inventory_prior_row": {
+    "source": "MU13",
+    "row": "Inventories | 1,532 | 1,449 | 963"
+   },
+   "extra_sources": [],
+   "sales_b": 1.437,
+   "sales_pct": 4.7,
+   "seq_pct": 11.1,
+   "gross_margin": 12.04,
+   "gross_margin_bp": -1155.9,
+   "op_margin": -11.2,
+   "op_margin_bp": -1506.4,
+   "opex_pct": 6.5,
+   "opex_gap_pp": 1.9,
+   "inventory_b": 1.532,
+   "inventory_pct": 59.1,
+   "inventory_gap_pp": 54.4,
+   "eps_q": -0.21,
+   "eps_q_prior": 0.08,
+   "diluted_shares_m": 770.9,
+   "cash_b": 2.616,
+   "ltd_b": 1.987,
+   "debt_note": "long-term debt $1,987M and its current portion $423M",
+   "sales_note": "net sales $1,437M vs $1,373M a year earlier, $1,294M the quarter before",
+   "inventory_note": "inventories $1,532M (2007-08-30) vs $963M a year earlier (the release's prior year-end column)",
+   "eps_note": "GAAP diluted EPS $(0.21) vs $0.08",
+   "shares_note": "diluted shares 770.9M",
+   "next_print": "Q1 FY08 print (the quarter ends in late November)",
+   "cash_return_text": null,
+   "note": "'The results for the fourth quarter include a charge of $20 million to write down the carrying value of work in process and finished goods inventories of memory products to their estimated fair market values.' (as published; charges stay in)",
+   "fy_actual": {
+    "fy": 2007,
+    "fy_label": "FY07",
+    "eps_normalized": null,
+    "revenue_usd_b": 5.688,
+    "diluted_shares_m": 769.1,
+    "normalization_note": "FY07 from the Q4 FY07 release: a loss, excluded (no figure excluding only one-offs)",
+    "op_margin": -4.92,
+    "op_margin_note": "FY07 operating income $(280)M / net sales $5,688M (Q4 FY07 release)",
+    "pretax_margin": -2.95,
+    "pretax_margin_note": "FY07 operating income $(280)M, net interest $103M and other non-operating $9M: pre-tax $(168)M / net sales $5,688M (Q4 FY07 release)",
+    "gross_margin": 18.95,
+    "sales_growth": 7.9,
+    "tax_rate": -0.1786,
+    "tax_note": "FY07 income tax $(30)M on pre-tax $(168)M",
+    "excluded_note": "a loss: $(0.42) a diluted share (FY2007 10-K); Micron published no figure excluding one-offs, so no P/E (the XOM FY2020 rule); excluded as the latest year, it stays a gap after (the NKE FY2018 and XOM FY2020 rule)"
+   }
+  },
+  {
+   "quarter": "Q1 FY08",
+   "fy": 2008,
+   "q": 1,
+   "published": "2007-12-21",
+   "source": "MU14",
+   "release": "Dec 20",
+   "release_time": "after the close on Dec 20: 8-K accepted 2007-12-20 16:01 ET; public before the open of the next trading day",
+   "period_end": "2007-11-29",
+   "raw": {
+    "sales_m": 1535.0,
+    "sales_prior_m": 1530.0,
+    "sales_prev_q_m": 1437.0,
+    "gross_profit_m": 5.0,
+    "gross_profit_prior_m": 442.0,
+    "rd_m": 163.0,
+    "rd_prior_m": 183.0,
+    "sga_m": 112.0,
+    "sga_prior_m": 180.0,
+    "op_income_m": -260.0,
+    "op_income_prior_m": 110.0,
+    "inventory_m": 1443.0,
+    "inventory_prior_m": 1114.0
+   },
+   "rows": {
+    "sales": "Net sales | 1,535 | 1,437 | 1,530",
+    "gp": "Gross margin | 5 | 173 | 442",
+    "sga": "Selling, general and administrative | 112 | 143 | 180",
+    "rd": "Research and development | 163 | 184 | 183",
+    "op": "Operating income (loss) | (260) | (161) | 110",
+    "eps": "Diluted | (0.34) | (0.21) | 0.15",
+    "shares": "Diluted | 771.9 | 770.9 | 779.6",
+    "inv": "Inventories | 1,443 | 1,532",
+    "cash": "Cash and short-term investments | 2,031 | 2,616",
+    "ltd": "Long-term debt | 1,936 | 1,987",
+    "cur": "Current portion of long-term debt | 281 | 423"
+   },
+   "inventory_prior_row": {
+    "source": "MU23",
+    "row": "Inventories | 1,114 | 963"
+   },
+   "extra_sources": [
+    "MU23"
+   ],
+   "sales_b": 1.535,
+   "sales_pct": 0.3,
+   "seq_pct": 6.8,
+   "gross_margin": 0.33,
+   "gross_margin_bp": -2856.3,
+   "op_margin": -16.94,
+   "op_margin_bp": -2412.8,
+   "opex_pct": -24.2,
+   "opex_gap_pp": -24.6,
+   "inventory_b": 1.443,
+   "inventory_pct": 29.5,
+   "inventory_gap_pp": 29.2,
+   "eps_q": -0.34,
+   "eps_q_prior": 0.15,
+   "diluted_shares_m": 771.9,
+   "cash_b": 2.031,
+   "ltd_b": 1.936,
+   "debt_note": "long-term debt $1,936M and its current portion $281M",
+   "sales_note": "net sales $1,535M vs $1,530M a year earlier, $1,437M the quarter before",
+   "inventory_note": "inventories $1,443M (2007-11-29) vs $1,114M a year earlier (Q1 FY07 10-Q)",
+   "eps_note": "GAAP diluted EPS $(0.34) vs $0.15",
+   "shares_note": "diluted shares 771.9M",
+   "next_print": "Q2 FY08 print (the quarter ends in late February)",
+   "cash_return_text": null,
+   "note": "'Primarily due to prevailing market conditions, the company recorded a $62 million write-down of its finished goods and work in process inventories for memory products to reduce their carrying values to their estimated market values.' (as published; charges stay in)"
+  },
+  {
+   "quarter": "Q2 FY08",
+   "fy": 2008,
+   "q": 2,
+   "published": "2008-04-03",
+   "source": "MU15",
+   "release": "Apr 2",
+   "release_time": "after the close on Apr 2: 8-K accepted 2008-04-02 16:03 ET; public before the open of the next trading day",
+   "period_end": "2008-02-28",
+   "raw": {
+    "sales_m": 1359.0,
+    "sales_prior_m": 1427.0,
+    "sales_prev_q_m": 1535.0,
+    "gross_profit_m": -43.0,
+    "gross_profit_prior_m": 357.0,
+    "rd_m": 180.0,
+    "rd_prior_m": 243.0,
+    "sga_m": 120.0,
+    "sga_prior_m": 153.0,
+    "op_income_m": -772.0,
+    "op_income_prior_m": -34.0,
+    "inventory_m": 1449.0,
+    "inventory_prior_m": 1293.0
+   },
+   "rows": {
+    "sales": "Net sales | 1,359 | 1,535 | 1,427 | 2,894 | 2,957",
+    "gp": "Gross margin | (43) | 5 | 357 | (38) | 799",
+    "sga": "Selling, general and administrative | 120 | 112 | 153 | 232 | 333",
+    "rd": "Research and development | 180 | 163 | 243 | 343 | 426",
+    "op": "Operating income (loss) | (772) | (260) | (34) | (1,032) | 76",
+    "eps": "Diluted | (1.01) | (0.34) | (0.07) | (1.35) | 0.08",
+    "shares": "Diluted | 772.4 | 771.9 | 768.7 | 772.2 | 776.3",
+    "inv": "Inventories (1) | 1,449 | 1,443 | 1,532",
+    "cash": "Cash and short-term investments | 1,853 | 2,031 | 2,616",
+    "ltd": "Long-term debt (7) | 2,162 | 1,936 | 1,987",
+    "cur": "Current portion of long-term debt | 244 | 281 | 423"
+   },
+   "inventory_prior_row": {
+    "source": "MU24",
+    "row": "Inventories | 1,293 | 963"
+   },
+   "extra_sources": [
+    "MU24"
+   ],
+   "sales_b": 1.359,
+   "sales_pct": -4.8,
+   "seq_pct": -11.5,
+   "gross_margin": -3.16,
+   "gross_margin_bp": -2818.2,
+   "op_margin": -56.81,
+   "op_margin_bp": -5442.4,
+   "opex_pct": -24.2,
+   "opex_gap_pp": -19.5,
+   "inventory_b": 1.449,
+   "inventory_pct": 12.1,
+   "inventory_gap_pp": 16.8,
+   "eps_q": -1.01,
+   "eps_q_prior": -0.07,
+   "diluted_shares_m": 772.4,
+   "cash_b": 1.853,
+   "ltd_b": 2.162,
+   "debt_note": "long-term debt $2,162M and its current portion $244M",
+   "sales_note": "net sales $1,359M vs $1,427M a year earlier, $1,535M the quarter before",
+   "inventory_note": "inventories $1,449M (2008-02-28) vs $1,293M a year earlier (Q2 FY07 10-Q)",
+   "eps_note": "GAAP diluted EPS $(1.01) vs $(0.07)",
+   "shares_note": "diluted shares 772.4M",
+   "next_print": "Q3 FY08 print (the quarter ends in late May)",
+   "cash_return_text": null,
+   "note": "'On a non-GAAP basis, without the effect of the charge, the company’s net loss for the second quarter would have been $0.41 per diluted share or $314 million.' (as published; charges stay in)"
+  },
+  {
+   "quarter": "Q3 FY08",
+   "fy": 2008,
+   "q": 3,
+   "published": "2008-06-27",
+   "source": "MU16",
+   "release": "Jun 26",
+   "release_time": "after the close on Jun 26: 8-K accepted 2008-06-26 16:04 ET; public before the open of the next trading day",
+   "period_end": "2008-05-29",
+   "raw": {
+    "sales_m": 1498.0,
+    "sales_prior_m": 1294.0,
+    "sales_prev_q_m": 1359.0,
+    "gross_profit_m": 48.0,
+    "gross_profit_prior_m": 106.0,
+    "rd_m": 170.0,
+    "rd_prior_m": 195.0,
+    "sga_m": 116.0,
+    "sga_prior_m": 134.0,
+    "op_income_m": -225.0,
+    "op_income_prior_m": -195.0,
+    "inventory_m": 1453.0,
+    "inventory_prior_m": 1449.0
+   },
+   "rows": {
+    "sales": "Net sales | 1,498 | 1,359 | 1,294 | 4,392 | 4,251",
+    "gp": "Gross margin | 48 | (43) | 106 | 10 | 905",
+    "sga": "Selling, general and administrative | 116 | 120 | 134 | 348 | 467",
+    "rd": "Research and development | 170 | 180 | 195 | 513 | 621",
+    "op": "Operating income (loss) | (225) | (772) | (195) | (1,257) | (119)",
+    "eps": "Diluted | (0.30) | (1.01) | (0.29) | (1.65) | (0.21)",
+    "shares": "Diluted | 772.8 | 772.4 | 769.9 | 772.4 | 768.5",
+    "inv": "Inventories (1) | 1,453 | 1,449 | 1,532",
+    "cash": "Cash and short-term investments | 1,584 | 1,853 | 2,616",
+    "ltd": "Long-term debt (7) | 2,159 | 2,162 | 1,987",
+    "cur": "Current portion of long-term debt | 262 | 244 | 423"
+   },
+   "inventory_prior_row": {
+    "source": "MU25",
+    "row": "Inventories | 1,449 | 963"
+   },
+   "extra_sources": [
+    "MU25"
+   ],
+   "sales_b": 1.498,
+   "sales_pct": 15.8,
+   "seq_pct": 10.2,
+   "gross_margin": 3.2,
+   "gross_margin_bp": -498.7,
+   "op_margin": -15.02,
+   "op_margin_bp": 5.0,
+   "opex_pct": -13.1,
+   "opex_gap_pp": -28.8,
+   "inventory_b": 1.453,
+   "inventory_pct": 0.3,
+   "inventory_gap_pp": -15.5,
+   "eps_q": -0.3,
+   "eps_q_prior": -0.29,
+   "diluted_shares_m": 772.8,
+   "cash_b": 1.584,
+   "ltd_b": 2.159,
+   "debt_note": "long-term debt $2,159M and its current portion $262M",
+   "sales_note": "net sales $1,498M vs $1,294M a year earlier, $1,359M the quarter before",
+   "inventory_note": "inventories $1,453M (2008-05-29) vs $1,449M a year earlier (Q3 FY07 10-Q)",
+   "eps_note": "GAAP diluted EPS $(0.30) vs $(0.29)",
+   "shares_note": "diluted shares 772.8M",
+   "next_print": "Q4 FY08 print (the quarter ends in late August)",
+   "cash_return_text": null,
+   "note": null
+  },
+  {
+   "quarter": "Q4 FY08",
+   "fy": 2008,
+   "q": 4,
+   "published": "2008-10-02",
+   "source": "MU17",
+   "release": "Oct 1",
+   "release_time": "after the close on Oct 1: 8-K accepted 2008-10-01 16:03 ET; public before the open of the next trading day",
+   "period_end": "2008-08-28",
+   "raw": {
+    "sales_m": 1449.0,
+    "sales_prior_m": 1437.0,
+    "sales_prev_q_m": 1498.0,
+    "gross_profit_m": -65.0,
+    "gross_profit_prior_m": 173.0,
+    "rd_m": 167.0,
+    "rd_prior_m": 184.0,
+    "sga_m": 107.0,
+    "sga_prior_m": 143.0,
+    "op_income_m": -338.0,
+    "op_income_prior_m": -161.0,
+    "inventory_m": 1291.0,
+    "inventory_prior_m": 1532.0
+   },
+   "rows": {
+    "sales": "Net sales | 1,449 | 1,498 | 1,437 | 5,841 | 5,688",
+    "gp": "Gross margin | (65) | 48 | 173 | (55) | 1,078",
+    "sga": "Selling, general and administrative | 107 | 116 | 143 | 455 | 610",
+    "rd": "Research and development | 167 | 170 | 184 | 680 | 805",
+    "op": "Operating loss | (338) | (225) | (161) | (1,595) | (280)",
+    "eps": "Diluted | (0.45) | (0.30) | (0.21) | (2.10) | (0.42)",
+    "shares": "Diluted | 772.9 | 772.8 | 770.9 | 772.5 | 769.1",
+    "inv": "Inventories (1) | 1,291 | 1,453 | 1,532",
+    "cash": "Cash and short-term investments | 1,362 | 1,584 | 2,616",
+    "ltd": "Long-term debt (7) | 2,451 | 2,159 | 1,987",
+    "cur": "Current portion of long-term debt | 275 | 262 | 423",
+    "interest": "Interest income (expense), net | (9) | (6) | 15 | (3) | 103",
+    "other": "Other non-operating income (expense), net | (6) | -- | -- | (13) | 9",
+    "tax": "Income tax provision (5) | (2) | (13) | (6) | (18) | (30)"
+   },
+   "inventory_prior_row": {
+    "source": "MU17",
+    "row": "Inventories (1) | 1,291 | 1,453 | 1,532"
+   },
+   "extra_sources": [],
+   "sales_b": 1.449,
+   "sales_pct": 0.8,
+   "seq_pct": -3.3,
+   "gross_margin": -4.49,
+   "gross_margin_bp": -1652.5,
+   "op_margin": -23.33,
+   "op_margin_bp": -1212.3,
+   "opex_pct": -16.2,
+   "opex_gap_pp": -17.0,
+   "inventory_b": 1.291,
+   "inventory_pct": -15.7,
+   "inventory_gap_pp": -16.6,
+   "eps_q": -0.45,
+   "eps_q_prior": -0.21,
+   "diluted_shares_m": 772.9,
+   "cash_b": 1.362,
+   "ltd_b": 2.451,
+   "debt_note": "long-term debt $2,451M and its current portion $275M",
+   "sales_note": "net sales $1,449M vs $1,437M a year earlier, $1,498M the quarter before",
+   "inventory_note": "inventories $1,291M (2008-08-28) vs $1,532M a year earlier (the release's prior year-end column)",
+   "eps_note": "GAAP diluted EPS $(0.45) vs $(0.21)",
+   "shares_note": "diluted shares 772.9M",
+   "next_print": "Q1 FY09 print (the quarter ends in early December)",
+   "cash_return_text": null,
+   "note": "'These results include a non-cash charge to cost of goods sold of $205 million to write down the value of work in process and finished goods inventories of memory products to their estimated market values and the effect of a recovery of $70 million for price adjustments for NAND products purchased from other suppliers in prior periods.' (as published; charges stay in)",
+   "fy_actual": {
+    "fy": 2008,
+    "fy_label": "FY08",
+    "eps_normalized": null,
+    "revenue_usd_b": 5.841,
+    "diluted_shares_m": 772.5,
+    "normalization_note": "FY08 from the Q4 FY08 release: a loss, excluded (no figure excluding only one-offs)",
+    "op_margin": -27.31,
+    "op_margin_note": "FY08 operating income $(1,595)M / net sales $5,841M (Q4 FY08 release)",
+    "pretax_margin": -27.58,
+    "pretax_margin_note": "FY08 operating income $(1,595)M, net interest $(3)M and other non-operating $(13)M: pre-tax $(1,611)M / net sales $5,841M (Q4 FY08 release)",
+    "gross_margin": -0.94,
+    "sales_growth": 2.7,
+    "tax_rate": -0.0112,
+    "tax_note": "FY08 income tax $(18)M on pre-tax $(1,611)M",
+    "excluded_note": "a loss: $(2.10) a diluted share; the company's non-GAAP FY08 loss, without the goodwill impairment, the fourth-quarter inventory write-down and the NAND price adjustments, was $(1.32) (Q4 FY08 release): a loss even on the company's figure (the XOM FY2020 rule), a gap after"
+   }
+  },
+  {
+   "quarter": "Q1 FY09",
+   "fy": 2009,
+   "q": 1,
+   "published": "2008-12-24",
+   "source": "MU18",
+   "release": "Dec 23",
+   "release_time": "after the close on Dec 23: 8-K accepted 2008-12-23 16:05 ET; public before the open of the next trading day",
+   "period_end": "2008-12-04",
+   "raw": {
+    "sales_m": 1402.0,
+    "sales_prior_m": 1535.0,
+    "sales_prev_q_m": 1449.0,
+    "gross_profit_m": -449.0,
+    "gross_profit_prior_m": 5.0,
+    "rd_m": 178.0,
+    "rd_prior_m": 163.0,
+    "sga_m": 102.0,
+    "sga_prior_m": 112.0,
+    "op_income_m": -672.0,
+    "op_income_prior_m": -260.0,
+    "inventory_m": 883.0,
+    "inventory_prior_m": 1443.0
+   },
+   "rows": {
+    "sales": "Net sales | 1,402 | 1,449 | 1,535",
+    "gp": "Gross margin | (449) | (65) | 5",
+    "sga": "Selling, general and administrative | 102 | 107 | 112",
+    "rd": "Research and development | 178 | 167 | 163",
+    "op": "Operating loss | (672) | (338) | (260)",
+    "eps": "Diluted | (0.91) | (0.45) | (0.34)",
+    "shares": "Diluted | 773.3 | 772.9 | 771.9",
+    "inv": "Inventories (1) | 883 | 1,291",
+    "cash": "Cash and short-term investments | 1,028 | 1,362",
+    "ltd": "Long-term debt | 2,523 | 2,451",
+    "cur": "Current portion of long-term debt | 343 | 275"
+   },
+   "inventory_prior_row": {
+    "source": "MU26",
+    "row": "Inventories | 1,443 | 1,532"
+   },
+   "extra_sources": [
+    "MU26"
+   ],
+   "sales_b": 1.402,
+   "sales_pct": -8.7,
+   "seq_pct": -3.2,
+   "gross_margin": -32.03,
+   "gross_margin_bp": -3235.1,
+   "op_margin": -47.93,
+   "op_margin_bp": -3099.3,
+   "opex_pct": 1.8,
+   "opex_gap_pp": 10.5,
+   "inventory_b": 0.883,
+   "inventory_pct": -38.8,
+   "inventory_gap_pp": -30.1,
+   "eps_q": -0.91,
+   "eps_q_prior": -0.34,
+   "diluted_shares_m": 773.3,
+   "cash_b": 1.028,
+   "ltd_b": 2.523,
+   "debt_note": "long-term debt $2,523M and its current portion $343M",
+   "sales_note": "net sales $1,402M vs $1,535M a year earlier, $1,449M the quarter before",
+   "inventory_note": "inventories $883M (2008-12-04) vs $1,443M a year earlier (Q1 FY08 10-Q)",
+   "eps_note": "GAAP diluted EPS $(0.91) vs $(0.34)",
+   "shares_note": "diluted shares 773.3M",
+   "next_print": "Q2 FY09 print (the quarter ends in early March)",
+   "cash_return_text": null,
+   "note": "'These results reflect a non-cash charge to cost of goods sold of $369 million to write down the value of work in process and finished goods inventories of memory products to their estimated market values and a benefit of $157 million from first quarter sales of products that were subject to previous write-downs.'; 'The company’s first quarter of fiscal 2009 included 14 weeks while the company’s fourth quarter and first quarter of fiscal 2008 each included 13 weeks.' (as published; charges stay in)"
+  },
+  {
+   "quarter": "Q2 FY09",
+   "fy": 2009,
+   "q": 2,
+   "published": "2009-04-03",
+   "source": "MU19",
+   "release": "Apr 2",
+   "release_time": "after the close on Apr 2: 8-K accepted 2009-04-02 16:02 ET; public before the open of the next trading day",
+   "period_end": "2009-03-05",
+   "raw": {
+    "sales_m": 993.0,
+    "sales_prior_m": 1359.0,
+    "sales_prev_q_m": 1402.0,
+    "gross_profit_m": -267.0,
+    "gross_profit_prior_m": -43.0,
+    "rd_m": 168.0,
+    "rd_prior_m": 180.0,
+    "sga_m": 90.0,
+    "sga_prior_m": 120.0,
+    "op_income_m": -708.0,
+    "op_income_prior_m": -772.0,
+    "inventory_m": 859.0,
+    "inventory_prior_m": 1449.0
+   },
+   "rows": {
+    "sales": "Net sales | 993 | 1,402 | 1,359 | 2,395 | 2,894",
+    "gp": "Gross margin | (267) | (449) | (43) | (716) | (38)",
+    "sga": "Selling, general and administrative | 90 | 102 | 120 | 192 | 232",
+    "rd": "Research and development | 168 | 178 | 180 | 346 | 343",
+    "op": "Operating loss | (708) | (672) | (772) | (1,380) | (1,032)",
+    "eps": "Diluted | (0.97) | (0.91) | (1.01) | (1.88) | (1.35)",
+    "shares": "Diluted | 773.9 | 773.3 | 772.4 | 773.6 | 772.2",
+    "inv": "Inventories (1) | 859 | 883 | 1,291",
+    "cash": "Cash and short-term investments | 932 | 1,028 | 1,362",
+    "ltd": "Long-term debt | 2,542 | 2,523 | 2,451",
+    "cur": "Current portion of long-term debt | 353 | 343 | 275"
+   },
+   "inventory_prior_row": {
+    "source": "MU27",
+    "row": "Inventories | 1,449 | 1,532"
+   },
+   "extra_sources": [
+    "MU27"
+   ],
+   "sales_b": 0.993,
+   "sales_pct": -26.9,
+   "seq_pct": -29.2,
+   "gross_margin": -26.89,
+   "gross_margin_bp": -2372.4,
+   "op_margin": -71.3,
+   "op_margin_bp": -1449.3,
+   "opex_pct": -14.0,
+   "opex_gap_pp": 12.9,
+   "inventory_b": 0.859,
+   "inventory_pct": -40.7,
+   "inventory_gap_pp": -13.8,
+   "eps_q": -0.97,
+   "eps_q_prior": -1.01,
+   "diluted_shares_m": 773.9,
+   "cash_b": 0.932,
+   "ltd_b": 2.542,
+   "debt_note": "long-term debt $2,542M and its current portion $353M",
+   "sales_note": "net sales $993M vs $1,359M a year earlier, $1,402M the quarter before",
+   "inventory_note": "inventories $859M (2009-03-05) vs $1,449M a year earlier (Q2 FY08 10-Q)",
+   "eps_note": "GAAP diluted EPS $(0.97) vs $(1.01)",
+   "shares_note": "diluted shares 773.9M",
+   "next_print": "Q3 FY09 print (the quarter ends in early June)",
+   "cash_return_text": null,
+   "note": "'These results reflect a number of cash and non-cash items resulting in a net charge of $120 million in the second quarter of fiscal 2009.' (as published; charges stay in)"
+  },
+  {
+   "quarter": "Q3 FY09",
+   "fy": 2009,
+   "q": 3,
+   "published": "2009-06-26",
+   "source": "MU20",
+   "release": "Jun 25",
+   "release_time": "after the close on Jun 25: 8-K accepted 2009-06-25 16:01 ET; public before the open of the next trading day",
+   "period_end": "2009-06-04",
+   "raw": {
+    "sales_m": 1106.0,
+    "sales_prior_m": 1498.0,
+    "sales_prev_q_m": 993.0,
+    "gross_profit_m": 107.0,
+    "gross_profit_prior_m": 48.0,
+    "rd_m": 162.0,
+    "rd_prior_m": 170.0,
+    "sga_m": 80.0,
+    "sga_prior_m": 116.0,
+    "op_income_m": -246.0,
+    "op_income_prior_m": -225.0,
+    "inventory_m": 999.0,
+    "inventory_prior_m": 1453.0
+   },
+   "rows": {
+    "sales": "Net sales | 1,106 | 993 | 1,498 | 3,501 | 4,392",
+    "gp": "Gross margin | 107 | (267) | 48 | (609) | 10",
+    "sga": "Selling, general and administrative | 80 | 90 | 116 | 272 | 348",
+    "rd": "Research and development | 162 | 168 | 170 | 508 | 513",
+    "op": "Operating loss | (246) | (708) | (225) | (1,626) | (1,257)",
+    "eps": "Diluted | (0.36) | (0.97) | (0.30) | (2.22) | (1.65)",
+    "shares": "Diluted | 813.3 | 773.9 | 772.8 | 786.5 | 772.4",
+    "inv": "Inventories (1) | 999 | 859 | 1,291",
+    "cash": "Cash and short-term investments | 1,306 | 932 | 1,362",
+    "ltd": "Long-term debt (7) | 2,752 | 2,542 | 2,451",
+    "cur": "Current portion of long-term debt | 372 | 353 | 275"
+   },
+   "inventory_prior_row": {
+    "source": "MU28",
+    "row": "Inventories | 1,453 | 1,532"
+   },
+   "extra_sources": [
+    "MU28"
+   ],
+   "sales_b": 1.106,
+   "sales_pct": -26.2,
+   "seq_pct": 11.4,
+   "gross_margin": 9.67,
+   "gross_margin_bp": 647.0,
+   "op_margin": -22.24,
+   "op_margin_bp": -722.2,
+   "opex_pct": -15.4,
+   "opex_gap_pp": 10.8,
+   "inventory_b": 0.999,
+   "inventory_pct": -31.2,
+   "inventory_gap_pp": -5.1,
+   "eps_q": -0.36,
+   "eps_q_prior": -0.3,
+   "diluted_shares_m": 813.3,
+   "cash_b": 1.306,
+   "ltd_b": 2.752,
+   "debt_note": "long-term debt $2,752M and its current portion $372M",
+   "sales_note": "net sales $1,106M vs $1,498M a year earlier, $993M the quarter before",
+   "inventory_note": "inventories $999M (2009-06-04) vs $1,453M a year earlier (Q3 FY08 10-Q)",
+   "eps_note": "GAAP diluted EPS $(0.36) vs $(0.30)",
+   "shares_note": "diluted shares 813.3M",
+   "next_print": "Q4 FY09 print (the quarter ends in early September)",
+   "cash_return_text": null,
+   "note": "'In connection with the sale, the company recorded a $53 million charge, the estimated loss on the transaction, to write down the value of Aptina assets now classified as held for sale.' (as published; charges stay in)"
+  },
+  {
+   "quarter": "Q4 FY09",
+   "fy": 2009,
+   "q": 4,
+   "published": "2009-09-30",
+   "source": "MU21",
+   "release": "Sep 29",
+   "release_time": "after the close on Sep 29: 8-K accepted 2009-09-29 16:01 ET; public before the open of the next trading day",
+   "period_end": "2009-09-03",
+   "raw": {
+    "sales_m": 1302.0,
+    "sales_prior_m": 1449.0,
+    "sales_prev_q_m": 1106.0,
+    "gross_profit_m": 170.0,
+    "gross_profit_prior_m": -65.0,
+    "rd_m": 139.0,
+    "rd_prior_m": 167.0,
+    "sga_m": 82.0,
+    "sga_prior_m": 107.0,
+    "op_income_m": -49.0,
+    "op_income_prior_m": -338.0,
+    "inventory_m": 987.0,
+    "inventory_prior_m": 1291.0
+   },
+   "rows": {
+    "sales": "Net sales | 1,302 | 1,106 | 1,449 | 4,803 | 5,841",
+    "gp": "Gross margin | 170 | 107 | (65) | (439) | (55)",
+    "sga": "Selling, general and administrative | 82 | 80 | 107 | 354 | 455",
+    "rd": "Research and development | 139 | 162 | 167 | 647 | 680",
+    "op": "Operating loss | (49) | (246) | (338) | (1,675) | (1,595)",
+    "eps": "Diluted | (0.10) | (0.36) | (0.45) | (2.29) | (2.10)",
+    "shares": "Diluted | 844.3 | 813.3 | 772.9 | 800.7 | 772.5",
+    "inv": "Inventories (1) | 987 | 999 | 1,291",
+    "cash": "Cash and short-term investments | 1,485 | 1,306 | 1,362",
+    "ltd": "Long-term debt (8) | 2,674 | 2,752 | 2,451",
+    "cur": "Current portion of long-term debt | 424 | 372 | 275",
+    "interest": "Interest income (expense), net | (31) | (31) | (9) | (113) | (3)",
+    "other": "Other non-operating income (expense) | (1) | (3) | (6) | (16) | (13)",
+    "tax": "Income tax (provision) benefit (5) | 13 | 2 | (2) | (2) | (18)"
+   },
+   "inventory_prior_row": {
+    "source": "MU21",
+    "row": "Inventories (1) | 987 | 999 | 1,291"
+   },
+   "extra_sources": [],
+   "sales_b": 1.302,
+   "sales_pct": -10.1,
+   "seq_pct": 17.7,
+   "gross_margin": 13.06,
+   "gross_margin_bp": 1754.3,
+   "op_margin": -3.76,
+   "op_margin_bp": 1956.3,
+   "opex_pct": -19.3,
+   "opex_gap_pp": -9.2,
+   "inventory_b": 0.987,
+   "inventory_pct": -23.5,
+   "inventory_gap_pp": -13.4,
+   "eps_q": -0.1,
+   "eps_q_prior": -0.45,
+   "diluted_shares_m": 844.3,
+   "cash_b": 1.485,
+   "ltd_b": 2.674,
+   "debt_note": "long-term debt $2,674M and its current portion $424M",
+   "sales_note": "net sales $1,302M vs $1,449M a year earlier, $1,106M the quarter before",
+   "inventory_note": "inventories $987M (2009-09-03) vs $1,291M a year earlier (the release's prior year-end column)",
+   "eps_note": "GAAP diluted EPS $(0.10) vs $(0.45)",
+   "shares_note": "diluted shares 844.3M",
+   "next_print": "Q1 FY10 print (the quarter ends in early December)",
+   "cash_return_text": null,
+   "note": "'Cost of goods sold in the fourth quarter includes approximately $37 million of charges for unused production capacity at the company’s Inotera and IM Flash joint ventures.' (as published; charges stay in)",
+   "fy_actual": {
+    "fy": 2009,
+    "fy_label": "FY09",
+    "eps_normalized": null,
+    "revenue_usd_b": 4.803,
+    "diluted_shares_m": 800.7,
+    "normalization_note": "FY09 from the Q4 FY09 release: a loss, excluded (no figure excluding only one-offs)",
+    "op_margin": -34.87,
+    "op_margin_note": "FY09 operating income $(1,675)M / net sales $4,803M (Q4 FY09 release)",
+    "pretax_margin": -37.56,
+    "pretax_margin_note": "FY09 operating income $(1,675)M, net interest $(113)M and other non-operating $(16)M: pre-tax $(1,804)M / net sales $4,803M (Q4 FY09 release)",
+    "gross_margin": -9.14,
+    "sales_growth": -17.8,
+    "tax_rate": -0.0011,
+    "tax_note": "FY09 income tax $(2)M on pre-tax $(1,804)M",
+    "excluded_note": "a loss: $(2.29) a diluted share (Q4 FY09 release); no figure excluding one-offs was published for the year, so no P/E (the XOM FY2020 rule), a gap after"
+   }
+  },
+  {
+   "quarter": "Q1 FY10",
+   "fy": 2010,
+   "q": 1,
+   "published": "2009-12-23",
+   "source": "MU22",
+   "release": "Dec 22",
+   "release_time": "after the close on Dec 22: 8-K accepted 2009-12-22 16:01 ET; public before the open of the next trading day",
+   "period_end": "2009-12-03",
+   "raw": {
+    "sales_m": 1740.0,
+    "sales_prior_m": 1402.0,
+    "sales_prev_q_m": 1302.0,
+    "gross_profit_m": 443.0,
+    "gross_profit_prior_m": -449.0,
+    "rd_m": 137.0,
+    "rd_prior_m": 178.0,
+    "sga_m": 97.0,
+    "sga_prior_m": 102.0,
+    "op_income_m": 201.0,
+    "op_income_prior_m": -672.0,
+    "inventory_m": 1037.0,
+    "inventory_prior_m": 883.0
+   },
+   "rows": {
+    "sales": "Net sales | 1,740 | 1,302 | 1,402",
+    "gp": "Gross margin | 443 | 169 | (449)",
+    "sga": "Selling, general and administrative | 97 | 82 | 102",
+    "rd": "Research and development | 137 | 139 | 178",
+    "op": "Operating income (loss) | 201 | (49) | (672)",
+    "eps": "Diluted | 0.23 | (0.12) | (0.93)",
+    "shares": "Diluted | 1,000.7 | 844.3 | 773.3",
+    "inv": "Inventories (1) | 1,037 | 987",
+    "cash": "Cash and short-term investments | 1,565 | 1,485",
+    "ltd": "Long-term debt (6) | 2,143 | 2,379",
+    "cur": "Current portion of long-term debt | 618 | 424"
+   },
+   "inventory_prior_row": {
+    "source": "MU29",
+    "row": "Inventories | 883 | 1,291"
+   },
+   "extra_sources": [
+    "MU29",
+    "MU18"
+   ],
+   "sales_b": 1.74,
+   "sales_pct": 24.1,
+   "seq_pct": 33.6,
+   "gross_margin": 25.46,
+   "gross_margin_bp": 5748.5,
+   "op_margin": 11.55,
+   "op_margin_bp": 5948.3,
+   "opex_pct": -16.4,
+   "opex_gap_pp": -40.5,
+   "inventory_b": 1.037,
+   "inventory_pct": 17.4,
+   "inventory_gap_pp": -6.7,
+   "eps_q": 0.23,
+   "eps_q_prior": -0.93,
+   "diluted_shares_m": 1000.7,
+   "cash_b": 1.565,
+   "ltd_b": 2.143,
+   "debt_note": "long-term debt $2,143M and its current portion $618M",
+   "sales_note": "net sales $1,740M vs $1,402M a year earlier, $1,302M the quarter before",
+   "inventory_note": "inventories $1,037M (2009-12-03) vs $883M a year earlier (Q1 FY09 10-Q)",
+   "eps_note": "GAAP diluted EPS $0.23 vs $(0.93)",
+   "shares_note": "diluted shares 1000.7M",
+   "next_print": "Q2 FY10 print (the quarter ends in early March)",
+   "cash_return_text": null,
+   "note": "'Amounts and presentations for periods prior to fiscal 2010 have been recast for the effects of the adoption of new accounting standards for convertible debt and noncontrolling interests.' (as published; charges stay in); the year-ago quarter: 'The company’s first quarter of fiscal 2009 included 14 weeks while the company’s fourth quarter and first quarter of fiscal 2008 each included 13 weeks.' (Q1 FY09 results (8-K ex.99.1))"
+  }
+ ],
+ "guides": [],
+ "dividends": [],
+ "events": [],
+ "company_names": [],
+ "splits": [],
+ "listings": [
+  {
+   "published": "2009-12-18",
+   "effective": "2009-12-30",
+   "exchange": "NASDAQ Global Select Market",
+   "source": "MU30",
+   "note": "'On December 18, 2009, Micron Technology, Inc., (“Company”), provided written notice to the New York Stock Exchange (“NYSE”) that the Company expects to voluntarily cease trading on the NYSE, prior to the opening of trading on December 30, 2009, and intends to transfer its listing to the NASDAQ Global Select Market (“NASDAQ”) to commence trading on December 30, 2009.' (8-K of 2009-12-18)"
+  }
+ ],
+ "rule_t": {
+  "revenue": {
+   "values": {
+    "1998": -24.01,
+    "1999": 64.6,
+    "2000": 147.07,
+    "2001": -38.14,
+    "2002": -34.22,
+    "2003": 19.39,
+    "2004": 42.48,
+    "2005": 10.81,
+    "2006": 8.03,
+    "2007": 7.89
+   },
+   "raw": {
+    "1998": {
+     "source": "MU4",
+     "revenue_m": [
+      2058.9,
+      1564.5
+     ],
+     "rows": [
+      "Net sales | 3,935.9 | 6,362.4 | 2,575.1 | 1,564.5 | 2,058.9"
+     ]
+    },
+    "1999": {
+     "source": "MU5",
+     "revenue_m": [
+      1564.5,
+      2575.1
+     ],
+     "rows": [
+      "Net sales | 2,589.0 | 3,935.9 | 6,362.4 | 2,575.1 | 1,564.5"
+     ]
+    },
+    "2000": {
+     "source": "MU6",
+     "revenue_m": [
+      2575.1,
+      6362.4
+     ],
+     "rows": [
+      "Net sales | 3,091.3 | 2,589.0 | 3,935.9 | 6,362.4 | 2,575.1"
+     ]
+    },
+    "2001": {
+     "source": "MU7",
+     "revenue_m": [
+      6362.4,
+      3935.9
+     ],
+     "rows": [
+      "Net sales | 4,404.2 | 3,091.3 | 2,589.0 | 3,935.9 | 6,362.4"
+     ]
+    },
+    "2002": {
+     "source": "MU8",
+     "revenue_m": [
+      3935.9,
+      2589.0
+     ],
+     "rows": [
+      "Net sales | 4,880.2 | 4,404.2 | 3,091.3 | 2,589.0 | 3,935.9"
+     ]
+    },
+    "2003": {
+     "source": "MU9",
+     "revenue_m": [
+      2589.0,
+      3091.0
+     ],
+     "rows": [
+      "Net sales | 5,272 | 4,880 | 4,404 | 3,091 | 2,589"
+     ]
+    },
+    "2004": {
+     "source": "MU10",
+     "revenue_m": [
+      3091.0,
+      4404.0
+     ],
+     "rows": [
+      "Net sales | 5,688 | 5,272 | 4,880 | 4,404 | 3,091"
+     ]
+    },
+    "2005": {
+     "source": "MU10",
+     "revenue_m": [
+      4404.0,
+      4880.0
+     ],
+     "rows": [
+      "Net sales | 5,688 | 5,272 | 4,880 | 4,404 | 3,091"
+     ]
+    },
+    "2006": {
+     "source": "MU10",
+     "revenue_m": [
+      4880.0,
+      5272.0
+     ],
+     "rows": [
+      "Net sales | 5,688 | 5,272 | 4,880 | 4,404 | 3,091"
+     ]
+    },
+    "2007": {
+     "source": "MU10",
+     "revenue_m": [
+      5272.0,
+      5688.0
+     ],
+     "rows": [
+      "Net sales | 5,688 | 5,272 | 4,880 | 4,404 | 3,091"
+     ]
+    }
+   },
+   "measure": "revenue growth, % (five-year selected data of the latest 10-K reporting both years)",
+   "unit": 1,
+   "lower_is_better": false,
+   "thresholds": {
+    "BEAR": -86,
+    "BASE": -38,
+    "BULL": 9,
+    "XBULL": 147
+   }
+  },
+  "gross_margin": {
+   "values": {
+    "1998": -2870.3,
+    "1999": 1827.4,
+    "2000": 2666.0,
+    "2001": -4823.9,
+    "2002": -708.4,
+    "2003": 360.8,
+    "2004": 3051.6,
+    "2005": -635.3,
+    "2006": -72.2,
+    "2007": -381.0
+   },
+   "raw": {
+    "1998": {
+     "source": "MU4",
+     "gross_margin_m": [
+      716.9,
+      95.7
+     ],
+     "revenue_m": [
+      2058.9,
+      1564.5
+     ],
+     "rows": [
+      "Net sales | 3,935.9 | 6,362.4 | 2,575.1 | 1,564.5 | 2,058.9",
+      "Gross margin | 110.7 | 3,248.1 | 628.1 | 95.7 | 716.9"
+     ]
+    },
+    "1999": {
+     "source": "MU5",
+     "gross_margin_m": [
+      95.7,
+      628.1
+     ],
+     "revenue_m": [
+      1564.5,
+      2575.1
+     ],
+     "rows": [
+      "Net sales | 2,589.0 | 3,935.9 | 6,362.4 | 2,575.1 | 1,564.5",
+      "Gross margin | (110.6) | 110.7 | 3,248.1 | 628.1 | 95.7"
+     ]
+    },
+    "2000": {
+     "source": "MU6",
+     "gross_margin_m": [
+      628.1,
+      3248.1
+     ],
+     "revenue_m": [
+      2575.1,
+      6362.4
+     ],
+     "rows": [
+      "Net sales | 3,091.3 | 2,589.0 | 3,935.9 | 6,362.4 | 2,575.1",
+      "Gross margin | (20.7) | (110.6) | 110.7 | 3,248.1 | 628.1"
+     ]
+    },
+    "2001": {
+     "source": "MU7",
+     "gross_margin_m": [
+      3248.1,
+      110.7
+     ],
+     "revenue_m": [
+      6362.4,
+      3935.9
+     ],
+     "rows": [
+      "Net sales | 4,404.2 | 3,091.3 | 2,589.0 | 3,935.9 | 6,362.4",
+      "Gross margin | 1,314.7 | (20.7) | (110.6) | 110.7 | 3,248.1"
+     ]
+    },
+    "2002": {
+     "source": "MU8",
+     "gross_margin_m": [
+      110.7,
+      -110.6
+     ],
+     "revenue_m": [
+      3935.9,
+      2589.0
+     ],
+     "rows": [
+      "Net sales | 4,880.2 | 4,404.2 | 3,091.3 | 2,589.0 | 3,935.9",
+      "Gross margin | 1,145.8 | 1,314.7 | (20.7) | (110.6) | 110.7"
+     ]
+    },
+    "2003": {
+     "source": "MU9",
+     "gross_margin_m": [
+      -111.0,
+      -21.0
+     ],
+     "revenue_m": [
+      2589.0,
+      3091.0
+     ],
+     "rows": [
+      "Net sales | 5,272 | 4,880 | 4,404 | 3,091 | 2,589",
+      "Gross margin | 1,200 | 1,146 | 1,314 | (21) | (111)"
+     ]
+    },
+    "2004": {
+     "source": "MU10",
+     "gross_margin_m": [
+      -21.0,
+      1314.0
+     ],
+     "revenue_m": [
+      3091.0,
+      4404.0
+     ],
+     "rows": [
+      "Net sales | 5,688 | 5,272 | 4,880 | 4,404 | 3,091",
+      "Gross margin | 1,078 | 1,200 | 1,146 | 1,314 | (21)"
+     ]
+    },
+    "2005": {
+     "source": "MU10",
+     "gross_margin_m": [
+      1314.0,
+      1146.0
+     ],
+     "revenue_m": [
+      4404.0,
+      4880.0
+     ],
+     "rows": [
+      "Net sales | 5,688 | 5,272 | 4,880 | 4,404 | 3,091",
+      "Gross margin | 1,078 | 1,200 | 1,146 | 1,314 | (21)"
+     ]
+    },
+    "2006": {
+     "source": "MU10",
+     "gross_margin_m": [
+      1146.0,
+      1200.0
+     ],
+     "revenue_m": [
+      4880.0,
+      5272.0
+     ],
+     "rows": [
+      "Net sales | 5,688 | 5,272 | 4,880 | 4,404 | 3,091",
+      "Gross margin | 1,078 | 1,200 | 1,146 | 1,314 | (21)"
+     ]
+    },
+    "2007": {
+     "source": "MU10",
+     "gross_margin_m": [
+      1200.0,
+      1078.0
+     ],
+     "revenue_m": [
+      5272.0,
+      5688.0
+     ],
+     "rows": [
+      "Net sales | 5,688 | 5,272 | 4,880 | 4,404 | 3,091",
+      "Gross margin | 1,078 | 1,200 | 1,146 | 1,314 | (21)"
+     ]
+    }
+   },
+   "measure": "gross-margin change, bp (five-year selected data)",
+   "unit": 10,
+   "lower_is_better": false,
+   "thresholds": {
+    "BEAR": -9420,
+    "BASE": -4820,
+    "BULL": -230,
+    "XBULL": 3050
+   }
+  },
+  "opex_gap": {
+   "values": {
+    "1998": 39.83,
+    "1999": -18.44,
+    "2000": -102.2,
+    "2001": 55.25,
+    "2002": 22.38,
+    "2003": -5.86,
+    "2004": -35.34,
+    "2005": -23.23,
+    "2006": 9.19,
+    "2007": 18.9
+   },
+   "raw": {
+    "1998": {
+     "source": "MU2",
+     "rd_m": [
+      223.9,
+      286.4
+     ],
+     "sga_m": [
+      382.7,
+      476.1
+     ],
+     "revenue_m": [
+      3523.2,
+      3025.3
+     ],
+     "rows": [
+      "Net sales................................................ $3,764.0 $3,025.3 $3,523.2",
+      "Research and development.............................. 322.1 286.4 223.9",
+      "Selling, general and administrative................... 486.0 476.1 382.7"
+     ]
+    },
+    "1999": {
+     "source": "MU3",
+     "rd_m": [
+      286.4,
+      322.1
+     ],
+     "sga_m": [
+      476.1,
+      486.0
+     ],
+     "revenue_m": [
+      3025.3,
+      3764.0
+     ],
+     "rows": [
+      "Net sales................................................... $ 7,336.3 $ 3,764.0 $ 3,025.3",
+      "Research and development.............................. 427.5 322.1 286.4",
+      "Selling, general and administrative................... 666.5 486.0 476.1"
+     ]
+    },
+    "2000": {
+     "source": "MU4",
+     "rd_m": [
+      320.5,
+      427.0
+     ],
+     "sga_m": [
+      276.9,
+      438.5
+     ],
+     "revenue_m": [
+      2575.1,
+      6362.4
+     ],
+     "rows": [
+      "Net sales | 3,935.9 | 6,362.4 | 2,575.1",
+      "Research and development | 489.5 | 427.0 | 320.5",
+      "Selling, general and administrative | 524.1 | 438.5 | 276.9"
+     ]
+    },
+    "2001": {
+     "source": "MU5",
+     "rd_m": [
+      427.0,
+      489.5
+     ],
+     "sga_m": [
+      438.5,
+      524.1
+     ],
+     "revenue_m": [
+      6362.4,
+      3935.9
+     ],
+     "rows": [
+      "Net sales | 2,589.0 | 3,935.9 | 6,362.4",
+      "Research and development | 561.3 | 489.5 | 427.0",
+      "Selling, general and administrative | 332.3 | 524.1 | 438.5"
+     ]
+    },
+    "2002": {
+     "source": "MU6",
+     "rd_m": [
+      489.5,
+      561.3
+     ],
+     "sga_m": [
+      524.1,
+      332.3
+     ],
+     "revenue_m": [
+      3935.9,
+      2589.0
+     ],
+     "rows": [
+      "Net sales | 3,091.3 | 2,589.0 | 3,935.9",
+      "Research and development (\"R&D\") expenses vary primarily with the number of development wafers processed, the cost of advanced equipment dedicated to new product and process development, and personnel costs. The Company deems development of a product complete once the product has been thoroughly reviewed and tested for performance and reliability and is internally qualified for sale to customers. Because of the lead times necessary to manufacture the Company's products, the Company typically begins to process a significant volume of product before it is internally qualified. As a result, R&D expenses can vary significantly depending on the timing of product qualification. Product development costs are recorded as R&D expense. The Company's R&D expenses were $656.4 million, $561.3 million and $489.5 million in 2003, 2002 and 2001, respectively.",
+      "Selling, general and administrative | 358.2 | 332.3 | 524.1"
+     ]
+    },
+    "2003": {
+     "source": "MU7",
+     "rd_m": [
+      561.3,
+      656.4
+     ],
+     "sga_m": [
+      332.3,
+      358.2
+     ],
+     "revenue_m": [
+      2589.0,
+      3091.3
+     ],
+     "rows": [
+      "Net sales | 4,404.2 | 3,091.3 | 2,589.0",
+      "Research and development | 754.9 | 656.4 | 561.3",
+      "Selling, general and administrative | 332.0 | 358.2 | 332.3"
+     ]
+    },
+    "2004": {
+     "source": "MU8",
+     "rd_m": [
+      656.4,
+      754.9
+     ],
+     "sga_m": [
+      358.2,
+      332.0
+     ],
+     "revenue_m": [
+      3091.3,
+      4404.2
+     ],
+     "rows": [
+      "Net sales | 4,880.2 | 4,404.2 | 3,091.3",
+      "Research and development | 603.7 | 754.9 | 656.4",
+      "Selling, general and administrative | 348.3 | 332.0 | 358.2"
+     ]
+    },
+    "2005": {
+     "source": "MU9",
+     "rd_m": [
+      755.0,
+      604.0
+     ],
+     "sga_m": [
+      332.0,
+      348.0
+     ],
+     "revenue_m": [
+      4404.0,
+      4880.0
+     ],
+     "rows": [
+      "Net sales | 5,272 | 4,880 | 4,404",
+      "Research and development | 656 | 604 | 755",
+      "Selling, general and administrative | 460 | 348 | 332"
+     ]
+    },
+    "2006": {
+     "source": "MU10",
+     "rd_m": [
+      604.0,
+      656.0
+     ],
+     "sga_m": [
+      348.0,
+      460.0
+     ],
+     "revenue_m": [
+      4880.0,
+      5272.0
+     ],
+     "rows": [
+      "Net sales | 5,688 | 5,272 | 4,880",
+      "Research and development | 805 | 656 | 604",
+      "Selling, general and administrative | 610 | 460 | 348"
+     ]
+    },
+    "2007": {
+     "source": "MU10",
+     "rd_m": [
+      656.0,
+      805.0
+     ],
+     "sga_m": [
+      460.0,
+      610.0
+     ],
+     "revenue_m": [
+      5272.0,
+      5688.0
+     ],
+     "rows": [
+      "Net sales | 5,688 | 5,272 | 4,880",
+      "Research and development | 805 | 656 | 604",
+      "Selling, general and administrative | 610 | 460 | 348"
+     ]
+    }
+   },
+   "measure": "growth of R&D plus SG&A less net sales growth, pp (statements of operations, three years)",
+   "unit": 1,
+   "lower_is_better": true,
+   "thresholds": {
+    "BEAR": 109,
+    "BASE": 55,
+    "BULL": 2,
+    "XBULL": -102
+   }
+  },
+  "inventory_gap": {
+   "values": {
+    "1998": -21.58,
+    "1999": 0.99,
+    "2000": -2.18,
+    "2001": 9.46,
+    "2002": 45.28,
+    "2003": -42.87,
+    "2004": -3.97,
+    "2005": 22.65,
+    "2006": 16.87,
+    "2007": 51.2
+   },
+   "raw": {
+    "1998": {
+     "source": "MU1",
+     "inventory_m": [
+      454.2,
+      291.1
+     ],
+     "revenue_m": [
+      3515.5,
+      3011.9
+     ],
+     "rows": [
+      "Inventories..................................................................... 291.1 454.2",
+      "Net sales................................................ $3,011.9 $3,515.5 $3,653.8"
+     ]
+    },
+    "1999": {
+     "source": "MU2",
+     "inventory_m": [
+      291.6,
+      365.7
+     ],
+     "revenue_m": [
+      3025.3,
+      3764.0
+     ],
+     "rows": [
+      "Inventories........................................................... 365.7 291.6",
+      "Net sales................................................ $3,764.0 $3,025.3 $3,523.2"
+     ]
+    },
+    "2000": {
+     "source": "MU3",
+     "inventory_m": [
+      365.7,
+      704.8
+     ],
+     "revenue_m": [
+      3764.0,
+      7336.3
+     ],
+     "rows": [
+      "Inventories ............................................................ 704.8 365.7",
+      "Net sales................................................... $ 7,336.3 $ 3,764.0 $ 3,025.3"
+     ]
+    },
+    "2001": {
+     "source": "MU4",
+     "inventory_m": [
+      688.6,
+      491.1
+     ],
+     "revenue_m": [
+      6362.4,
+      3935.9
+     ],
+     "rows": [
+      "Inventories | 491.1 | 688.6",
+      "Net sales | 3,935.9 | 6,362.4 | 2,575.1"
+     ]
+    },
+    "2002": {
+     "source": "MU5",
+     "inventory_m": [
+      491.1,
+      545.4
+     ],
+     "revenue_m": [
+      3935.9,
+      2589.0
+     ],
+     "rows": [
+      "Inventories | 545.4 | 491.1",
+      "Net sales | 2,589.0 | 3,935.9 | 6,362.4"
+     ]
+    },
+    "2003": {
+     "source": "MU6",
+     "inventory_m": [
+      545.4,
+      417.4
+     ],
+     "revenue_m": [
+      2589.0,
+      3091.3
+     ],
+     "rows": [
+      "Inventories | 417.4 | 545.4",
+      "Net sales | 3,091.3 | 2,589.0 | 3,935.9"
+     ]
+    },
+    "2004": {
+     "source": "MU7",
+     "inventory_m": [
+      417.4,
+      578.1
+     ],
+     "revenue_m": [
+      3091.3,
+      4404.2
+     ],
+     "rows": [
+      "Inventories | 578.1 | 417.4",
+      "Net sales | 4,404.2 | 3,091.3 | 2,589.0"
+     ]
+    },
+    "2005": {
+     "source": "MU8",
+     "inventory_m": [
+      578.1,
+      771.5
+     ],
+     "revenue_m": [
+      4404.2,
+      4880.2
+     ],
+     "rows": [
+      "Inventories | 771.5 | 578.1",
+      "Net sales | 4,880.2 | 4,404.2 | 3,091.3"
+     ]
+    },
+    "2006": {
+     "source": "MU9",
+     "inventory_m": [
+      771,
+      963
+     ],
+     "revenue_m": [
+      4880.0,
+      5272.0
+     ],
+     "rows": [
+      "Inventories | 963 | 771",
+      "Net sales | 5,272 | 4,880 | 4,404"
+     ]
+    },
+    "2007": {
+     "source": "MU10",
+     "inventory_m": [
+      963,
+      1532
+     ],
+     "revenue_m": [
+      5272.0,
+      5688.0
+     ],
+     "rows": [
+      "Inventories | 1,532 | 963",
+      "Net sales | 5,688 | 5,272 | 4,880"
+     ]
+    }
+   },
+   "measure": "year-end inventory growth less net sales growth, pp (each year's own 10-K)",
+   "unit": 1,
+   "lower_is_better": true,
+   "thresholds": {
+    "BEAR": 97,
+    "BASE": 51,
+    "BULL": 5,
+    "XBULL": -43
+   }
+  },
+  "op_margin": {
+   "values": {
+    "1998": -4100.7,
+    "1999": 2561.2,
+    "2000": 3836.8,
+    "2001": -6241.7,
+    "2002": -1479.2,
+    "2003": 122.1,
+    "2004": 4404.6,
+    "2005": -123.0,
+    "2006": 219.2,
+    "2007": -1156.1
+   },
+   "raw": {
+    "1998": {
+     "source": "MU4",
+     "op_income_m": [
+      301.3,
+      -412.6
+     ],
+     "revenue_m": [
+      2058.9,
+      1564.5
+     ],
+     "rows": [
+      "Net sales | 3,935.9 | 6,362.4 | 2,575.1 | 1,564.5 | 2,058.9",
+      "Operating income (loss) | (976.5) | 2,392.7 | (19.6) | (412.6) | 301.3"
+     ]
+    },
+    "1999": {
+     "source": "MU5",
+     "op_income_m": [
+      -412.6,
+      -19.6
+     ],
+     "revenue_m": [
+      1564.5,
+      2575.1
+     ],
+     "rows": [
+      "Net sales | 2,589.0 | 3,935.9 | 6,362.4 | 2,575.1 | 1,564.5",
+      "Operating income (loss) | (1,025.3) | (976.5) | 2,392.7 | (19.6) | (412.6)"
+     ]
+    },
+    "2000": {
+     "source": "MU6",
+     "op_income_m": [
+      -19.6,
+      2392.7
+     ],
+     "revenue_m": [
+      2575.1,
+      6362.4
+     ],
+     "rows": [
+      "Net sales | 3,091.3 | 2,589.0 | 3,935.9 | 6,362.4 | 2,575.1",
+      "Operating income (loss) | (1,186.5) | (1,025.3) | (976.5) | 2,392.7 | (19.6)"
+     ]
+    },
+    "2001": {
+     "source": "MU7",
+     "op_income_m": [
+      2392.7,
+      -976.5
+     ],
+     "revenue_m": [
+      6362.4,
+      3935.9
+     ],
+     "rows": [
+      "Net sales | 4,404.2 | 3,091.3 | 2,589.0 | 3,935.9 | 6,362.4",
+      "Operating income (loss) | 249.7 | (1,186.5) | (1,025.3) | (976.5) | 2,392.7"
+     ]
+    },
+    "2002": {
+     "source": "MU8",
+     "op_income_m": [
+      -976.5,
+      -1025.3
+     ],
+     "revenue_m": [
+      3935.9,
+      2589.0
+     ],
+     "rows": [
+      "Net sales | 4,880.2 | 4,404.2 | 3,091.3 | 2,589.0 | 3,935.9",
+      "Operating income (loss) | 217.5 | 249.7 | (1,186.5) | (1,025.3) | (976.5)"
+     ]
+    },
+    "2003": {
+     "source": "MU9",
+     "op_income_m": [
+      -1025.0,
+      -1186.0
+     ],
+     "revenue_m": [
+      2589.0,
+      3091.0
+     ],
+     "rows": [
+      "Net sales | 5,272 | 4,880 | 4,404 | 3,091 | 2,589",
+      "Operating income (loss) | 350 | 217 | 250 | (1,186) | (1,025)"
+     ]
+    },
+    "2004": {
+     "source": "MU10",
+     "op_income_m": [
+      -1186.0,
+      250.0
+     ],
+     "revenue_m": [
+      3091.0,
+      4404.0
+     ],
+     "rows": [
+      "Net sales | 5,688 | 5,272 | 4,880 | 4,404 | 3,091",
+      "Operating income (loss) | (280) | 350 | 217 | 250 | (1,186)"
+     ]
+    },
+    "2005": {
+     "source": "MU10",
+     "op_income_m": [
+      250.0,
+      217.0
+     ],
+     "revenue_m": [
+      4404.0,
+      4880.0
+     ],
+     "rows": [
+      "Net sales | 5,688 | 5,272 | 4,880 | 4,404 | 3,091",
+      "Operating income (loss) | (280) | 350 | 217 | 250 | (1,186)"
+     ]
+    },
+    "2006": {
+     "source": "MU10",
+     "op_income_m": [
+      217.0,
+      350.0
+     ],
+     "revenue_m": [
+      4880.0,
+      5272.0
+     ],
+     "rows": [
+      "Net sales | 5,688 | 5,272 | 4,880 | 4,404 | 3,091",
+      "Operating income (loss) | (280) | 350 | 217 | 250 | (1,186)"
+     ]
+    },
+    "2007": {
+     "source": "MU10",
+     "op_income_m": [
+      350.0,
+      -280.0
+     ],
+     "revenue_m": [
+      5272.0,
+      5688.0
+     ],
+     "rows": [
+      "Net sales | 5,688 | 5,272 | 4,880 | 4,404 | 3,091",
+      "Operating income (loss) | (280) | 350 | 217 | 250 | (1,186)"
+     ]
+    }
+   },
+   "measure": "operating-margin change, bp (five-year selected data)",
+   "unit": 10,
+   "lower_is_better": false,
+   "thresholds": {
+    "BEAR": -12480,
+    "BASE": -6240,
+    "BULL": 0,
+    "XBULL": 4400
+   }
+  }
+ },
+ "fiscal_calendar": {
+  "rule": "the Thursday closest to August 31",
+  "quote": "The Company operates on a 52/53 week fiscal year which ends on the Thursday closest to August 31.",
+  "source": "MU10",
+  "fy2003_end": {
+   "quote": "Fiscal years 2003, 2002 and 2001 each contained 52 weeks and ended on August 28, 2003, August 29, 2002, and August 30, 2001, respectively.",
+   "source": "MU6"
+  }
+ },
+ "price_basis": "Yahoo's MU series is adjusted for the splits of 1994-04-19, 1995-05-23 and 2000-05-02; none is later than the P/E window's start (2003-08-29), so every price the models use is the close as traded."
+}

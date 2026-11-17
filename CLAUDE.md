@@ -23,9 +23,9 @@ touching either directory.
   outcomes or findings enters another's models. UNP (2008-2026 so far), LOW (2008-2026 so far), AAPL (2008-2026 so far),
   NKE (2008-2026 so far), AVGO (from its 2009-08-06 listing to 2026-10-30 so far), PEP (2008 to 2026-10-30 so far), MSFT
   (2008 to 2026-10-30 so far), XOM (2008 to 2026-10-30 so far), SHW (2008 to 2026-11-06 so far), WMT (2008 to 2026-11-06 so far), RCL (2008 to 2026-11-06 so far), MAR (2008 to 2026-11-03 so far), BKR (2008 to 2017-06-30, then 2019-02-01 to 2026-11-06 so far), PFE (2008 to 2026-11-04 so far), CMCSA (2008 to 2026-11-06 so far), CAT (2008 to 2026-11-06 so far), BMY (2008 to 2026-11-06 so far), NVDA (2008 to 2026-11-06 so far), F (2008-01-04 to 2026-11-06 so far; 2022-01-07 onward was built first at the owner's request, and dates before 2022 are an early era with its
-  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) and LMT (2008-01-04 to 2026-11-13 so far) sit in `staging/retrospective/` until the owner adds
+  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far) and MU (2008-01-04 to 2009-12-31 so far) sit in `staging/retrospective/` until the owner adds
   them to the archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM", "SHW", "WMT", "RCL", "MAR", "BKR", "PFE", "CMCSA", "CAT",
-  "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py` files
+  "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py` and `mu_signal_model.py` files
   and today's profiles in `data/business_profiles.json` (NVDA's and SO's included) are 2026 analyses: never inputs to a retrospective. AVGO did not trade
   before its IPO, so its series starts at the listing (the listing and bounds rules of method r2). BKR's 2008 to 2017-06-30 dates are Baker
   Hughes Incorporated, listed as BHI: BKR is only the series key (and Yahoo's symbol for the history); the models print BHI. Its dates from
@@ -60,5 +60,11 @@ touching either directory.
   performance (2024); an outlook that includes a booked one-off with no figure without it stands as published (2022's pension settlement,
   2025's program losses); segment profit excludes intangible amortization from 2023, each print against the year-ago quarter as its
   release recasts it; GENAI and GLP1 are out of scope; the last date is 2026-11-13 (retro/README.md, "LMT 2022-2026").
+  MU (Micron) EPS is GAAP diluted EPS; FY2003 is a loss and takes the years before it, so the history and the P/E window start with
+  FY2004 (2003-08-29); FY2006 is excluded by the mirror test (the $230M sale of NAND designs to Intel and $23M of reimbursements
+  against $155M of income without them) and, since FY2007 is a loss, leaves only itself (the "would leave neither" note applied to a
+  year that is not the latest, the owner's call); FY2007-FY2009 are losses and gaps, so FY05's $0.29 anchors every 2008-2009 date;
+  no filing guides revenue, EPS or a margin, so BASE is the latest quarter's revenue growth; DURABLE (no 10-K calls the business
+  cyclical); the listing moves to NASDAQ on 2009-12-30 (retro/README.md, "MU").
 - **Never use the owner's personal email** in request headers to external
   services (SEC asks for a contact in the User-Agent).
