@@ -61,8 +61,10 @@ Annual return / Sharpe / worst drawdown:
 | ALL without tech | +12.5% / 0.89 / -30% | +13.6% / 0.88 / -30% | +15.2% / 0.80 / -40% |
 
 On the new thirteen and without tech, the pick added only about one point a year over the hedged equal-weight basket,
-at a slightly lower Sharpe. Most of the edge on all twenty-four comes from the tech names: AAPL, AVGO and NVDA often
-trade at the top of their own range.
+at a slightly lower Sharpe. Most of the edge on all twenty-four comes from the tech names. Tech made up 38% of the
+book's weight (AVGO 11%, MSFT 10%, AAPL 8%, NVDA 6%, ACN the rest), but supplied 60% of its summed monthly returns.
+NVDA alone supplied 27%; MSFT 15%, AVGO 11%. These figures were computed after the run and are not printed by the
+script.
 
 ## 3. Crashes, and the year it failed
 
