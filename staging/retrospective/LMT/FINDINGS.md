@@ -1,7 +1,7 @@
 # LMT retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the LMT weekly dates: 522 from 2008-01-04 to 2017-12-29 (105 to 2009-12-31, 209 from 2010-01-08 to
-2013-12-31, 208 from 2014-01-10), all
+Patterns seen in `outcome.json` for the LMT weekly dates: 731 from 2008-01-04 to 2021-12-31 (105 to 2009-12-31, 209 from 2010-01-08 to
+2013-12-31, 208 from 2014-01-10 to 2017-12-29, 209 from 2018-01-05), all
 Lockheed Martin Corporation (NYSE: LMT). They are **labels and hypotheses**: never feed them back into the method or the fact sheet. Each
 batch has its own section below.
 
@@ -462,3 +462,143 @@ Every 2014-2017 date is RICH, so the tables split the dates by tier, by latest p
 - **The signals did not decide it.** Every signal at BEAR moves no class; every signal at XBULL moves 22 dates of 2014 to FAIR, and none of
   those would have held as FAIR (each beat SPY by at least 25.9pp, outside FAIR's 15pp). The proxy composite (1.55-2.55) was below the market
   composite (2.69-3.93) on every date.
+
+# 2018-2021 (209 dates)
+
+The 209 weekly dates from 2018-01-05 to 2021-12-31 were scored only after their point-in-time build was committed (806b18c2f) and their
+decisions, controls, leak scan, sensitivities and firewall result were written to the README and committed (acfb06dcc); the outcomes were
+computed on 2026-11-17, and nothing below was read for any 2018-2021 decision. Every date has its 6-month, 1-, 2- and 3-year horizons (the
+last ends 2024-12-30). Total returns include the quarterly dividends: $16.00-23.55 a share over two years,
+4.5-7.3% of the entry price. No split falls in any horizon. The hurdle, the call checks and the medians are as above:
+CHEAP should clear the hurdle or beat SPY, FAIR land within 15pp of SPY and RICH miss the hurdle and lag SPY, over two years.
+
+## 2018 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier ACCUMULATE | 2 | +43.5% | +42.8% to +43.5% | 2 | 0 | +48.5% | 2 |
+| class CHEAP, legacy tier WATCHLIST | 2 | +33.5% | +30.9% to +33.5% | 1 | 0 | +33.9% | 1 |
+| class FAIR, legacy tier AVOID | 1 | +26.2% | +26.2% to +26.2% | 0 | 0 | +23.5% | 1 |
+| class FAIR, legacy tier WATCHLIST | 4 | +31.3% | +23.9% to +31.8% | 0 | 0 | +28.2% | 4 |
+| class RICH, legacy tier AVOID | 43 | +23.3% | -12.5% to +34.1% | 3 | 31 | +16.8% | 11 |
+| latest print Q3 2017 (2018-01-05 to 2018-01-26) | 4 | +30.7% | +28.2% to +33.4% | 1 | 4 | +5.9% | 0 |
+| latest print Q4 2017 (2018-01-30 to 2018-04-20) | 12 | +15.2% | -12.5% to +33.7% | 1 | 8 | +8.8% | 4 |
+| latest print Q1 2018 (2018-04-25 to 2018-07-20) | 13 | +26.2% | +16.5% to +34.1% | 1 | 11 | +20.1% | 1 |
+| latest print Q2 2018 (2018-07-25 to 2018-10-19) | 13 | +23.3% | +15.9% to +30.1% | 0 | 8 | +17.2% | 5 |
+| latest print Q3 2018 (2018-10-24 to 2018-12-28) | 10 | +31.3% | +22.1% to +43.5% | 3 | 0 | +29.6% | 9 |
+| price 25-50% over the EPP floor | 4 | +42.8% | +30.9% to +43.5% | 3 | 0 | +45.6% | 3 |
+| price 50% or more over the EPP floor | 48 | +24.3% | -12.5% to +34.1% | 3 | 31 | +17.2% | 16 |
+
+- **RICH held on 11 of 43.** The dates to 2018-11-09 ($295-361, 17.9-26.5x the FY17 and FY18 guides) returned -12.5% to +34.1% over two
+  years, ahead of SPY on 31 (SPY's two years ran into the 2020 crash and rebound: -9.3% to +57.5%); the 11 that held are the ones whose
+  two years ended around the February-March 2020 sell-off or from July to November 2020, when the stock lagged the rebound. Over three years no 2018 date cleared the hurdle or beat SPY (-0.4% to +46.7%, 22.9-57.6pp behind).
+- **The four CHEAP dates of December 2018 ($256.55-287.70)** cleared the hurdle on three (+30.9% to +43.5%) but lagged SPY, which rose from
+  its December 2018 low; the five FAIR dates of October and November all landed within 15pp of SPY.
+- The two-year price landed at BULL on 36 dates, XBULL on 8 and BASE on 8, and over the BULL price on 34.
+
+## 2019 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier ACCUMULATE | 11 | +23.5% | +16.0% to +37.1% | 1 | 0 | +23.1% | 1 |
+| class CHEAP, legacy tier WATCHLIST | 6 | +26.2% | +14.0% to +31.4% | 0 | 0 | +19.0% | 0 |
+| class FAIR, legacy tier AVOID | 3 | +8.4% | +7.9% to +9.9% | 0 | 0 | +0.2% | 0 |
+| class FAIR, legacy tier WATCHLIST | 25 | +3.4% | -7.7% to +30.8% | 0 | 0 | -2.1% | 0 |
+| class RICH, legacy tier WATCHLIST | 7 | -6.9% | -8.3% to -5.3% | 0 | 0 | -7.7% | 7 |
+| latest print Q3 2018 (2019-01-04 to 2019-01-25) | 4 | +29.4% | +26.2% to +37.1% | 1 | 0 | +36.2% | 1 |
+| latest print Q4 2018 (2019-01-30 to 2019-04-18) | 12 | +23.5% | +14.0% to +31.5% | 0 | 0 | +21.6% | 0 |
+| latest print Q1 2019 (2019-04-24 to 2019-07-19) | 13 | +16.7% | +7.9% to +21.4% | 0 | 0 | +5.4% | 0 |
+| latest print Q2 2019 (2019-07-24 to 2019-10-18) | 13 | -1.2% | -7.7% to +8.5% | 0 | 0 | -4.2% | 0 |
+| latest print Q3 2019 (2019-10-23 to 2019-12-27) | 10 | -6.6% | -8.3% to +5.8% | 0 | 0 | -7.1% | 7 |
+| price under 25% over the EPP floor | 15 | +26.2% | +14.0% to +37.1% | 1 | 0 | +23.1% | 1 |
+| price 25-50% over the EPP floor | 23 | +8.5% | -7.4% to +30.8% | 0 | 0 | +2.3% | 3 |
+| price 50% or more over the EPP floor | 14 | -3.7% | -8.3% to +9.9% | 0 | 0 | -5.0% | 4 |
+
+- **Every 2019 date lagged SPY over two years** (SPY +42.5% to +61.0%, the stock -8.3% to +37.1%), so CHEAP held on 1 of 17 (by the
+  hurdle, 2019-01-04) and FAIR on none of 28 (each 17-61pp behind, outside its 15pp).
+- **RICH held on all 7, at the multiple's high:** 2019-11-15 to 2019-12-27 ($386.47-393.60) returned -8.3% to -5.3% over two years, 52.8-61.8pp
+  behind SPY, and +26.7% to +34.0% over three. Every 2019 date landed at BASE two years on, under the BASE price on 42.
+
+## 2020 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier ACCUMULATE | 2 | +29.4% | +22.9% to +29.4% | 0 | 1 | +10.2% | 1 |
+| class CHEAP, legacy tier BUY | 18 | +39.3% | +23.4% to +53.5% | 13 | 11 | +13.0% | 15 |
+| class FAIR, legacy tier ACCUMULATE | 23 | +14.8% | +5.5% to +30.0% | 0 | 1 | +1.3% | 15 |
+| class FAIR, legacy tier WATCHLIST | 3 | +12.9% | -4.9% to +21.7% | 0 | 0 | -6.4% | 0 |
+| class RICH, legacy tier AVOID | 5 | -7.7% | -9.4% to -4.7% | 0 | 0 | -15.5% | 5 |
+| class RICH, legacy tier WATCHLIST | 2 | -6.0% | -7.0% to -6.0% | 0 | 0 | -17.0% | 2 |
+| latest print Q3 2019 (2020-01-03 to 2020-01-24) | 4 | -7.7% | -9.4% to -7.3% | 0 | 0 | -13.3% | 4 |
+| latest print Q4 2019 (2020-01-29 to 2020-04-17) | 12 | +25.2% | -7.0% to +53.5% | 4 | 0 | -1.2% | 7 |
+| latest print Q1 2020 (2020-04-22 to 2020-07-17) | 13 | +20.7% | +12.9% to +26.5% | 0 | 1 | +3.7% | 4 |
+| latest print Q2 2020 (2020-07-22 to 2020-10-16) | 13 | +13.8% | +5.5% to +18.4% | 0 | 1 | +2.2% | 12 |
+| latest print Q3 2020 (2020-10-21 to 2020-12-31) | 11 | +39.8% | +29.4% to +44.7% | 9 | 11 | +14.9% | 11 |
+| price under 25% over the EPP floor | 5 | +39.9% | +22.9% to +53.5% | 3 | 1 | +12.5% | 3 |
+| price 25-50% over the EPP floor | 42 | +20.6% | -9.4% to +44.7% | 10 | 12 | +3.8% | 31 |
+| price 50% or more over the EPP floor | 6 | +12.9% | -9.0% to +21.7% | 0 | 0 | -6.1% | 4 |
+
+- **RICH held on all 7 again** (2020-01-03 to 2020-02-14, $413.74-439.17, the price's high before the pandemic sell-off): -9.4% to -4.7% over
+  two years, 40.4-61.1pp behind SPY.
+- **CHEAP held on 16 of 20 and FAIR on 15 of 26.** The CHEAP dates (around the March 2020 low, in May to July and from the Q3 2020
+  print; $291-375) returned +22.9% to +53.5%; the FAIR dates between them ($368.50-427.80) returned -4.9% to +30.0%, within 15pp of SPY on
+  15. Over three
+  years only 9 of the 53 beat SPY. Every 2020 date landed at BASE two years on, under the BASE price on all 53.
+
+## 2021 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 52 | +32.4% | +19.8% to +51.3% | 27 | 52 | +28.1% | 52 |
+| latest print Q3 2020 (2021-01-08 to 2021-01-22) | 3 | +36.9% | +35.9% to +47.3% | 3 | 3 | +28.5% | 3 |
+| latest print Q4 2020 (2021-01-27 to 2021-04-16) | 12 | +44.8% | +30.3% to +51.3% | 11 | 12 | +30.6% | 12 |
+| latest print Q1 2021 (2021-04-21 to 2021-07-23) | 14 | +25.7% | +21.1% to +30.4% | 0 | 14 | +18.2% | 14 |
+| latest print Q2 2021 (2021-07-27 to 2021-10-22) | 13 | +29.0% | +19.8% to +33.2% | 3 | 13 | +28.4% | 13 |
+| latest print Q3 2021 (2021-10-27 to 2021-12-31) | 10 | +38.0% | +34.2% to +41.7% | 10 | 10 | +34.4% | 10 |
+| price under 25% over the EPP floor | 52 | +32.4% | +19.8% to +51.3% | 27 | 52 | +28.1% | 52 |
+
+- **CHEAP held on all 52**, every date by beating SPY: $330.25-394.10 (12.2-15.0x the FY21 guides, the 8th-34th percentile, 5-25% over
+  the floor) returned +19.8% to +51.3% over two years against SPY's -6.7% to +11.6%, 16.9-47.7pp ahead; 27 also cleared the hurdle. Over
+  three years 37 of the 52 beat SPY. Every date landed at BASE, under the BASE price.
+
+## Across 2018-2021 (hypotheses, not rules)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 93 | +31.2% | +14.0% to +53.5% | 44 | 64 | +22.5% | 72 |
+| class FAIR | 59 | +13.8% | -7.7% to +31.8% | 0 | 1 | +1.1% | 20 |
+| class RICH | 57 | +21.2% | -12.5% to +34.1% | 3 | 31 | +10.6% | 25 |
+| legacy tier ACCUMULATE | 38 | +18.3% | +5.5% to +43.5% | 3 | 2 | +3.8% | 19 |
+| legacy tier AVOID | 52 | +22.7% | -12.5% to +34.1% | 3 | 31 | +13.8% | 17 |
+| legacy tier BUY | 70 | +33.5% | +19.8% to +53.5% | 40 | 63 | +22.5% | 67 |
+| legacy tier WATCHLIST | 49 | +7.2% | -8.3% to +33.5% | 1 | 0 | -2.1% | 14 |
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| CHEAP, under 25% over the floor | 71 | +30.6% | +14.0% to +53.5% | 31 | 53 | +26.1% | 56 |
+| CHEAP, 25-50% over the floor | 22 | +34.9% | +20.1% to +44.7% | 13 | 11 | +13.0% | 16 |
+| FAIR, under 25% over the floor | 1 | +25.2% | +25.2% to +25.2% | 0 | 0 | -3.9% | 0 |
+| FAIR, 25-50% over the floor | 39 | +14.2% | -7.4% to +30.8% | 0 | 1 | +2.2% | 13 |
+| FAIR, 50% or more over the floor | 19 | +9.9% | -7.7% to +31.8% | 0 | 0 | -0.1% | 7 |
+| RICH, 25-50% over the floor | 8 | -6.9% | -9.4% to -4.7% | 0 | 0 | -13.2% | 8 |
+| RICH, 50% or more over the floor | 49 | +22.7% | -12.5% to +34.1% | 3 | 31 | +13.8% | 17 |
+| Ratio B 0-0.5 | 43 | +33.5% | +19.8% to +53.5% | 25 | 42 | +29.1% | 43 |
+| Ratio B 0.5-1.0 | 56 | +25.6% | +6.3% to +44.7% | 18 | 23 | +11.2% | 41 |
+| Ratio B 1.0-2.0 | 66 | +9.9% | -9.4% to +33.5% | 1 | 0 | +0.4% | 21 |
+| Ratio B 2.0 or more | 30 | +23.3% | -9.0% to +34.1% | 1 | 21 | +18.2% | 8 |
+| Ratio B infinite | 14 | +26.2% | -12.5% to +33.7% | 2 | 10 | +6.7% | 4 |
+
+- **CHEAP did best, then RICH, then FAIR.** CHEAP held on 72 of 93 (median +31.2% over two years), FAIR on 20 of 59 (+13.8%) and RICH on 25
+  of 57 (+21.2%); by tier BUY returned +33.5%, AVOID +22.7%, ACCUMULATE +18.3% and WATCHLIST +7.2%. RICH returned more than FAIR because
+  most RICH dates are 2018's, before the 2020 crash and rebound, and most FAIR dates 2019's, whose two years ended at the 2021 high of SPY;
+  the class order is again largely the calendar.
+- **The RICH calls held at the multiple's highs.** The 14 RICH dates from 2019-11-15 to 2020-02-14 ($386-439, the stock's high to the end
+  of 2021) all held, losing 4.7-9.4% over two years; the 43 of 2018 held on 11. With 2014-2017 (29 of 208) and 2010-2013 (0 of 25), LMT's FAIR
+  and RICH calls have held on 74 of 349, the CHEAP calls on 223 of 382 (2008-2021).
+- **The two largest encodings, checked against the outcome (hindsight, never a reason to change them):** of the 85 classes that FY2017 at
+  GAAP would move, 38 held as built and 43 would have held as moved; of the 94 that the IS&GS history on one basis would move (toward
+  CHEAP), 37 held as built and 22 would have. Every signal at BEAR moves 121 classes: 61 held as built, 78 as moved; at XBULL 41: 28 held as
+  built, 2 as moved. As in 2008-2009 the BEAR signals would have helped and as in 2010-2013 they would not: one stock, opposite answers.
+- **Ratio B and the gap over the floor sort mostly by year again.** Ratio B under 0.5 (43 dates, 2020-03-20 to 2021-12-31) held on all 43; Ratio
+  B 1-2 (66, mostly 2019) held on 21. The floor gaps split the same way. One stock over four years mostly tests "buy lower" within a year,
+  not across years (retro/README.md, "Scoring a single stock").
