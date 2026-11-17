@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "SO",
+ "as_of": "2022-01-07",
+ "computed": "2026-11-17",
+ "data_source": "Yahoo Finance daily closes + dividends (SO, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2022-07-07",
+   "price": 71.29,
+   "dividends": 1.34,
+   "total_return_pct": 5.8,
+   "benchmark_total_return_pct": -15.9,
+   "excess_pct": 21.7,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2023-01-06",
+   "price": 71.63,
+   "dividends": 2.7,
+   "total_return_pct": 8.3,
+   "benchmark_total_return_pct": -15.4,
+   "excess_pct": 23.7,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2024-01-05",
+   "price": 71.61,
+   "dividends": 5.48,
+   "total_return_pct": 12.3,
+   "benchmark_total_return_pct": 3.2,
+   "excess_pct": 9.1,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2025-01-07",
+   "price": 81.09,
+   "dividends": 8.34,
+   "total_return_pct": 30.3,
+   "benchmark_total_return_pct": 30.6,
+   "excess_pct": -0.3,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2022-08-19",
+   "price": 80.16
+  },
+  "low": {
+   "date": "2022-10-12",
+   "price": 61.5
+  },
+  "max_drawdown_pct": -23.3,
+  "return_to_avg_price_m12_m24_pct": 0.9
+ },
+ "scenario_landing_2y": "BULL",
+ "call_check_2y": {
+  "expectation": "RICH: should miss the hurdle and lag the benchmark",
+  "hit": false
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "DURABLE",
+   "risk": 2
+  },
+  "today": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Southern: regulated utility, Vogtle in rate base, data-center pipeline",
+   "reviewed": "2026-09-22"
+  }
+ }
+}

@@ -1,15 +1,17 @@
 # SO retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the SO weekly dates: 732 from 2008-01-04 to 2021-12-31, all The Southern Company (NYSE: SO). They are
+Patterns seen in `outcome.json` for the SO weekly dates: 986 from 2008-01-04 to 2026-11-13, all The Southern Company (NYSE: SO). They are
 **labels and hypotheses**: never feed them back into the method or the fact sheet. Each batch was scored only after its point-in-time build
 and README were committed: 2008-2009 (db1a562, fe0a6be), 2010-2013 (bcf8478, fa842e0, with the firewall result), 2014-2017 (ac2436a,
-4131feb, with the firewall result) and 2018-2021 (5feab16, 2113b51, with the firewall result); all were scored on 2026-11-15. While reading the FY2009 10-K for 2010-2013 the builder found that the FY2008 10-K already gave the company's EPS excluding
+4131feb, with the firewall result) and 2018-2021 (5feab16, 2113b51, with the firewall result), scored on 2026-11-15; 2022-2026 (018f169, ba41361, 56a7739, with the firewall
+result), scored on 2026-11-17. While reading the FY2009 10-K for 2010-2013 the builder found that the FY2008 10-K already gave the company's EPS excluding
 only the leveraged lease charges ($2.37); under the rule decided for 2008-2009 that is FY2008's figure from 2009-02-25, so the 45 dates from
 2009-02-27 were rebuilt and re-scored (3 classes moved, all toward calls that held: retro/README.md, "SO 2010-2013"). The 2009 figures below
-are the corrected ones. Every date has its 6-month, 1-, 2- and 3-year horizons (the last ends 2024-12-30). Total returns include the
+are the corrected ones. Every date to 2021 has its 6-month, 1-, 2- and 3-year horizons; from 2022 the horizons end with the price data (2026-11-16), so
+the 2-year call is scored on the 150 dates to 2024-11-15 and the 104 later dates are read on their 6-month and 1-year returns only. Total returns include the
 quarterly dividends ($0.4025 from the ex-date of 2008-01-31, $0.42 from 2008-05-01, $0.4375 from 2009-04-30, $0.455 from 2010-04-29,
 $0.4725 from 2011-04-28, $0.49 from 2012-05-03, $0.5075 from 2013-05-02, $0.525 from 2014-05-01, $0.5425 from 2015-05-14, $0.56 from
-2016-05-12, $0.58 from 2017-05-11, $0.60 from 2018-05-18, $0.62 from 2019-05-17, $0.64 from 2020-05-15, $0.66 from 2021-05-14, $0.68 from 2022-05-13, $0.70 from 2023-05-12, $0.72 from 2024-05-17): $3.12-5.48 a
+2016-05-12, $0.58 from 2017-05-11, $0.60 from 2018-05-18, $0.62 from 2019-05-17, $0.64 from 2020-05-15, $0.66 from 2021-05-14, $0.68 from 2022-05-13, $0.70 from 2023-05-12, $0.72 from 2024-05-17, $0.74 from 2025-05-19, $0.76 from 2026-05-18): $3.12-5.48 a
 share over two years, 6.6-13.2% of the entry price. No split or distribution falls in any horizon, so every price
 is as traded. Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years
 and +52.1% over three. "Call held" is `call_check_2y`: CHEAP should clear the hurdle or beat the benchmark (SPY), FAIR should land within
@@ -423,3 +425,37 @@ Hypotheses for the live model (test them on other tickers and periods; never fol
   is a reason to change the rules here: test the mirror and distorted-year tests on other tickers with large disposal gains.
 - The benchmark leg of the call rule decided most RICH misses for this low-beta stock again (2018 and 2021): a RICH call on a defensive stock
   is a call on relative return as much as on value.
+
+## 2022-2026 (254 dates; 150 scored on two years)
+
+- **RICH on FY20's $2.93 and the FY2022 guide's $3.55** (2022-01-07 to 2022-07-22, 29 dates; 18.0-23.5x, the 54th-99th percentile): held
+  27 of 29. Two-year returns -2.3% to +27.3%, under the +32.2% hurdle on every date; the two misses beat the benchmark.
+- **CHEAP from the Q2 2022 print** (2022-07-29 to 2023-03-24, 35 dates, at 17.8-22.6x, the 43rd-88th percentile, the same multiple as
+  before; BASE +38.6%, +34.3% and +22.2% on fuel-lifted revenue): held 20 of 35. Every two-year return was positive (+15.2% to +54.3%), but
+  the dates of late 2022 rose less than the hurdle while SPY rose more (excess -36.0% to +5.5%).
+- **FAIR** (2023-03-31 to 2023-04-21, 4 dates): held 4 of 4, two-year returns +30.3% to +39.1%, within 4pp of the benchmark.
+- **RICH from the Q1 2023 print** (2023-04-28 to 2026-11-13, 186 dates): scored on 82 (to 2024-11-15), held 35. The misses are absolute:
+  47 of the 49 cleared the hurdle (two-year returns up to +57.4%) as utilities re-rated in 2024, while only 13 beat SPY. The 104 later
+  dates (2024-11-22 on) have one-year returns of -9.3% to +46.2% where measured; no two-year score yet.
+
+## Across 2022-2026, and the nineteen years
+
+- **Calls held on 86 of 150 scored dates of 2022-2024:** CHEAP 20 of 35, FAIR 4 of 4, RICH 62 of 111; by year 37 of 52 (2022), 21 of 52
+  (2023) and 28 of 46 (2024). Over 2008-2024, 464 of 882: CHEAP 107 of 150, FAIR 15 of 23, RICH 342 of 709.
+- **The P/E percentile ranked the outcomes best again.** On the scored dates of 2022-2024 the percentile ranks the two-year return at
+  Spearman -0.87 and the price at -0.65 (the price against the return to the m12-24 average price: -0.53). Over 2008-2024: the percentile
+  -0.54, the price -0.11.
+- **The measured calls, read against the outcomes (hindsight; the README's sensitivities were computed before any outcome).** Ignoring the
+  FY2022 guide would have held 15 of its 29 moves against the 14 that held; GAAP throughout 5 of 8 against 8; the company's figure from
+  Q4 2021 2 of 2 against 2; every signal at BEAR 13 of 25 against 10, at XBULL 2 of 3 against 3. The repowering call moved nothing. No
+  call is clearly better in hindsight.
+- **Profile drift:** the models' DURABLE, risk 2, against today's profile of DURABLE, risk 1 (`outcome.json`; label only).
+
+Hypotheses for the live model (test them on other tickers and periods; never fold them into this archive):
+- Revenue as reported made a fuel-price spike look like growth: the CHEAP run of 2022-2023 came at an unchanged multiple and held only 20
+  of 35. Test BASE on non-fuel revenue (or margin-neutral pass-through stripped) for regulated utilities before trusting a CHEAP call made
+  in a commodity spike.
+- RICH calls on a regulated utility missed in 2024 because the whole group re-rated on power demand, not because the company's own
+  numbers surprised (the misses cleared the hurdle; most still lagged SPY): as in 2018-2021, test a sector-relative multiple.
+- The P/E percentile in its own decade ranked SO's two-year returns well in every batch (-0.87 here); the composite signals did not add
+  to it. A defensive stock's call is mostly a call on its multiple.
