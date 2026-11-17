@@ -18631,14 +18631,20 @@ model was built or any 2010-2013 outcome computed:
   director, officer, trading-plan, bylaw and vote 8-Ks. None changes a guided number; none states a dividend.
 
 Controls and checks (before any outcome):
-- **Controls:** run over all 314 dates after this build was committed; the result is in the next paragraph with the firewall's.
+- **Controls** (all 314 dates rebuilt with one real fact altered at a time): 52 of 54 alterations change the models exactly from the
+  first weekly date on or after their publication, until a later fact supersedes them, and none changes an earlier date; 2 are inert
+  (the Q4 FY07 print's quarter EPS and full-year net sales, superseded before the first built date). The kept FY10 EPS of the Q4 FY10
+  print lives from 2010-10-08 to 2010-10-22, each vintage's FY10 EPS over its own vintage, and the NASDAQ listing from 2009-12-31 on.
 - **Leak scan:** 5 hits in 233,276 (model, later token) pairs over the 314 dates, after dropping 58,199 an earlier fact or the engine
   carries, none a leak: a 2009 model's realized volatility (1.054) equals the FY2012 10-K's ESG net sales ($1.054B), and four 2012 models'
   52-week high ($11.83) equals the Q1 FY13 gross margin (11.83%).
 - **`retro_tool run` passes on all 209 dates;** its only warnings (2010-12-23, 2010-12-31) are the Samsung payment dates and "fiscal 2011"
   in the Q1 FY11 release's own words. No file of the 314 dates carries an ISO date after its as-of date.
 - **Regression:** the 105 dates of 2008-2009 rebuild byte for byte; no file another ticker's builder reads has changed.
-- **Firewall** (run after the build was committed, before any outcome): see the next paragraph.
+- **Firewall** (run after the build was committed, before any outcome): passes at the 21 cutoffs above (every print and vintage
+  date of the range: 15 prints, the four 10-Ks and the adjusting 8-K of 2010-03-04; and 2014-01-01), 0 files changed and no planted
+  text (113 to 314 dates each), with the same plants as for 2008-2009. As a positive control the plants reach the first date after
+  them: rebuilding 2013-11-01 with the plants of the 2013-10-29 cutoff changes its model. A full rebuild is byte-identical.
 
 Seen in the build (method behaviour, not tuned):
 - **CHEAP on 188 dates, FAIR on 21, legacy tier BUY on all 209.** FAIR runs from 2013-05-17 to 2013-10-04; CHEAP everywhere else.
@@ -18661,15 +18667,15 @@ Seen in the build (method behaviour, not tuned):
 
 How far each call moves the classes (the 314 dates rebuilt with one encoding changed and classified offline; no outcome consulted; the
 2008-2009 counts are as before):
-- FY2011 kept at GAAP /bin/bash.17 (the mirror test not applied; FY11's /bin/bash.17 the anchor from 2011-09-30): 118 classes (CHEAP to RICH on 96,
+- FY2011 kept at GAAP $0.17 (the mirror test not applied; FY11's $0.17 the anchor from 2011-09-30): 118 classes (CHEAP to RICH on 96,
   FAIR to RICH on 21, CHEAP to FAIR on 1; 2011-10-07 to 2013-12-31), 119 tiers (to AVOID on 117);
 - FY2006 taking FY2004-FY2005 with it from the FY2010 10-K (the literal PFE 2003 reading once later years return; the history FY2010
   alone and the window from 2006-09-01): 152 classes (CHEAP to RICH on 127, FAIR to RICH on 21, CHEAP to FAIR on 4; 2011-01-14 to
   2013-12-31), 110 tiers;
-- FY2013 kept at GAAP .13 (its Elpida gain in; FY13's .13 the anchor from 2013-10-11): 13 classes (CHEAP to FAIR), no tier;
-- FY2006 kept at GAAP /bin/bash.57 throughout: 21 classes in 2013 (the FAIR dates to CHEAP), no tier;
+- FY2013 kept at GAAP $1.13 (its Elpida gain in; FY13's $1.13 the anchor from 2013-10-11): 13 classes (CHEAP to FAIR), no tier;
+- FY2006 kept at GAAP $0.57 throughout: 21 classes in 2013 (the FAIR dates to CHEAP), no tier;
 - every signal at its BEAR value: 13 classes in 2012-2013 (CHEAP to FAIR or RICH, FAIR to RICH), no tier; at its XBULL value: none.
-The CHEAP calls from the Q4 FY10 print rest on FY10's .85 standing for three later years, two of them excluded by the mirror test and
+The CHEAP calls from the Q4 FY10 print rest on FY10's $1.85 standing for three later years, two of them excluded by the mirror test and
 one a loss, against a window that still holds FY2004-FY2005: both of the series' largest calls (FY2011 excluded, FY2006 kept as a gap)
 move the same dates the same way, toward RICH, if read the other way.
 

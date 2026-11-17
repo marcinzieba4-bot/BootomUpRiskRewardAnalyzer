@@ -66,9 +66,9 @@ touching either directory.
   year that is not the latest, the owner's call); FY2007-FY2009 are losses and gaps, so FY05's $0.29 anchors every 2008-2009 date;
   no filing guides revenue, EPS or a margin, so BASE is the latest quarter's revenue growth; DURABLE (no 10-K calls the business
   cyclical); the listing moves to NASDAQ on 2009-12-30 (retro/README.md, "MU"). From 2010: the 8-K of 2010-03-04 that adjusts the FY2009
-  10-K is a vintage of its own; FY2010's .85 is kept (the Numonyx gain under the test), FY2011 is excluded by the mirror test (the
+  10-K is a vintage of its own; FY2010's $1.85 is kept (the Numonyx gain under the test), FY2011 is excluded by the mirror test (the
   Samsung cross-license gains) and FY2013 by it too (the Elpida gain; a loss without it), FY2012 is a loss, and FY2006 stays a gap, so
-  FY10's .85 anchors 2010-10-08 to 2013-12-31; the FY2011 and FY2006 readings are the series' largest calls (118 and 152 classes the
+  FY10's $1.85 anchors 2010-10-08 to 2013-12-31; the FY2011 and FY2006 readings are the series' largest calls (118 and 152 classes the
   other way) (retro/README.md, "MU 2010-2013").
 - **Never use the owner's personal email** in request headers to external
   services (SEC asks for a contact in the User-Agent).
