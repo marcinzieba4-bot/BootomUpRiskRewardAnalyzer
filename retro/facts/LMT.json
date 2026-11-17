@@ -1,5 +1,5 @@
 {
- "_doc": "Point-in-time fact sheet for LMT retrospectives (retro/build_lmt.py), generated from the converted rows of Lockheed Martin's filings (every figure read from its labelled row, the row asserted present in its own filing). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks of 2006-2017 were accepted before the open on their release days. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the guides for the current fiscal year (each field from the latest guide that states it) and the latest declared dividend (else the vintage's). Lockheed Martin's fiscal year is the calendar year. EPS is diluted EPS (from continuing operations where reported), each year from the latest 10-K that reports it; FY2002 is excluded (unusual items larger than its earnings, no per-share figure excluding them), so the history and the P/E window start with FY2003 ('pe_window_start'). A print's growth and margins are derived from the raw figures of its release ('raw', $ millions; the builder re-derives and checks them), each against the year-ago quarter as the same release shows it; backlog against the year-ago quarter's end as that quarter's own release shows it ('backlog_prior_source'). From 2010 a print takes diluted EPS from continuing operations where the release reports the line, and a release that republishes earlier years' EPS restates them until a later 10-K ('restates', EPS only; the Q4 2016 release's FY2015 without IS&GS). From the FY2013 vintage ('why_themes') the builder ends the durability 'why' with every live theme's reading as of AS_OF, from the vintage's own words ('cloud_words', 'climate_words'). Guides: the fiscal-year outlook table's current column (net sales and diluted EPS ranges, a level stated as about read as a number, words keeping the last numeric range; segment operating profit and cash from operations are display only: no margin is derived from two guided figures), and the third-quarter release's preliminary outlook for the next year. Rule T's raw figures are in 'rule_t'.",
+ "_doc": "Point-in-time fact sheet for LMT retrospectives (retro/build_lmt.py), generated from the converted rows of Lockheed Martin's filings (every figure read from its labelled row, the row asserted present in its own filing). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks of 2006-2021 were accepted before the open on their release days. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the guides for the current fiscal year (each field from the latest guide that states it) and the latest declared dividend (else the vintage's). Lockheed Martin's fiscal year is the calendar year. EPS is diluted EPS (from continuing operations where reported), each year from the latest 10-K that reports it; FY2002 is excluded (unusual items larger than its earnings, no per-share figure excluding them), so the history and the P/E window start with FY2003 ('pe_window_start'). A print's growth and margins are derived from the raw figures of its release ('raw', $ millions; the builder re-derives and checks them), each against the year-ago quarter as the same release shows it; backlog against the year-ago quarter's end as that quarter's own release shows it ('backlog_prior_source'). From 2010 a print takes diluted EPS from continuing operations where the release reports the line, and a release that republishes earlier years' EPS restates them until a later 10-K ('restates', EPS only; the Q4 2016 release's FY2015 without IS&GS). From the FY2013 vintage ('why_themes') the builder ends the durability 'why' with every live theme's reading as of AS_OF, from the vintage's own words ('cloud_words', 'climate_words', 'oil_words'). From 2018 (retro/README.md, \"LMT 2018-2021\"): a year whose GAAP EPS fails the AAPL FY2002 test takes the company's figure from the latest filing that publishes one (2017, the Tax Act), a release may restate it ('restates'), a guide may carry the restated base the release states beside it ('rev_base_usd_b'), and a guide given with and without an announced item takes the figure without it. Guides: the fiscal-year outlook table's current column (net sales and diluted EPS ranges, a level stated as about read as a number, words keeping the last numeric range; segment operating profit and cash from operations are display only: no margin is derived from two guided figures), and the third-quarter release's preliminary outlook for the next year. Rule T's raw figures are in 'rule_t'.",
  "ticker": "LMT",
  "sources": {
   "LM1": {
@@ -470,6 +470,153 @@
    "title": "Lockheed Martin Q3 2017 results (8-K, Exhibit 99.1)",
    "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646817000011/ex991q32017.htm",
    "supports": "Q3 2017: net sales $12,169M vs $11,551M, segment operating profit $1,249M vs $1,423M, diluted EPS from continuing operations $3.24 vs $3.61, total backlog $103,600M, average diluted shares 290.0M; FY2017 outlook net sales $50-51.2B, diluted EPS $12.85-13.15"
+  },
+  "LM68": {
+   "published": "2018-01-29",
+   "filed": "2018-01-29 07:31 ET, before the open",
+   "title": "Lockheed Martin Q4 2017 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646818000004/ex991q42017.htm",
+   "supports": "Q4 2017: net sales $15,137M vs $13,752M, segment operating profit $1,487M vs $1,290M, diluted EPS from continuing operations $-2.50 vs $3.25, total backlog $99,936M, average diluted shares 285.9M; FY2018 outlook net sales $50-51.5B, diluted EPS $15.20-15.50"
+  },
+  "LM69": {
+   "published": "2018-02-07",
+   "filed": "2018-02-06 16:22 ET, after the close (dated the next trading day)",
+   "title": "Lockheed Martin FY2017 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646818000009/lmtq4201710k.htm",
+   "supports": "five-year summary 2017-2013 (net sales $51,048M to $39,243M; diluted EPS from continuing operations $6.64, $12.38, $9.93, $10.09, $8.27; backlog $99,936M and $96,158M); total business segment operating profit 2017-2016 $5,115M, $5,100M; average diluted shares 290.6M, 303.1M, 314.7M; Items 1 and 1A"
+  },
+  "LM70": {
+   "published": "2018-04-24",
+   "filed": "2018-04-24 07:32 ET, before the open",
+   "title": "Lockheed Martin Q1 2018 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646818000019/ex991q12018.htm",
+   "supports": "Q1 2018: net sales $11,635M vs $11,212M, segment operating profit $1,310M vs $1,091M, diluted EPS $4.02 vs $2.69, total backlog $104,756M, average diluted shares 287.9M; FY2018 outlook net sales $50.35-51.85B, diluted EPS $15.80-16.10"
+  },
+  "LM71": {
+   "published": "2018-07-24",
+   "filed": "2018-07-24 07:31 ET, before the open",
+   "title": "Lockheed Martin Q2 2018 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646818000051/ex991q22018.htm",
+   "supports": "Q2 2018: net sales $13,398M vs $12,563M, segment operating profit $1,466M vs $1,347M, diluted EPS $4.05 vs $3.28, total backlog $105,003M, average diluted shares 287.1M; FY2018 outlook net sales $51.6-53.1B, diluted EPS $16.75-17.05"
+  },
+  "LM72": {
+   "published": "2018-10-23",
+   "filed": "2018-10-23 07:31 ET, before the open",
+   "title": "Lockheed Martin Q3 2018 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646818000064/ex991q32018.htm",
+   "supports": "Q3 2018: net sales $14,318M vs $12,341M, segment operating profit $1,586M vs $1,287M, diluted EPS $5.14 vs $3.32, total backlog $109,191M, average diluted shares 286.7M; FY2018 outlook net sales ~$53B, diluted EPS ~$17.50"
+  },
+  "LM73": {
+   "published": "2019-01-29",
+   "filed": "2019-01-29 07:31 ET, before the open",
+   "title": "Lockheed Martin Q4 2018 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646819000004/ex991q42018.htm",
+   "supports": "Q4 2018: net sales $14,411M vs $13,844M, segment operating profit $1,515M vs $1,367M, diluted EPS from continuing operations $4.39 vs $-2.85, total backlog $130,468M, average diluted shares 285.5M; FY2019 outlook net sales $55.75-57.25B, diluted EPS $19.15-19.45"
+  },
+  "LM74": {
+   "published": "2019-02-08",
+   "filed": "2019-02-08 11:38 ET, during the session",
+   "title": "Lockheed Martin FY2018 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646819000009/lmtq4201810k.htm",
+   "supports": "five-year summary 2018-2014 (net sales $53,762M to $39,946M; diluted EPS from continuing operations $17.59, $6.50, $12.08, $9.93, $10.09; backlog $130,468M and $105,493M); total business segment operating profit 2018-2017 $5,877M, $5,092M; average diluted shares 286.8M, 290.6M, 303.1M; Items 1 and 1A"
+  },
+  "LM75": {
+   "published": "2019-04-23",
+   "filed": "2019-04-23 07:31 ET, before the open",
+   "title": "Lockheed Martin Q1 2019 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646819000019/ex991q12019.htm",
+   "supports": "Q1 2019: net sales $14,336M vs $11,635M, segment operating profit $1,715M vs $1,310M, diluted EPS $5.99 vs $4.02, total backlog $133,470M, average diluted shares 284.3M; FY2019 outlook net sales $56.75-58.25B, diluted EPS $20.05-20.35"
+  },
+  "LM76": {
+   "published": "2019-07-23",
+   "filed": "2019-07-23 07:33 ET, before the open",
+   "title": "Lockheed Martin Q2 2019 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646819000055/ex991q22019.htm",
+   "supports": "Q2 2019: net sales $14,427M vs $13,398M, segment operating profit $1,554M vs $1,466M, diluted EPS $5.00 vs $4.05, total backlog $136,683M, average diluted shares 283.9M; FY2019 outlook net sales $58.25-59.75B, diluted EPS $20.85-21.15"
+  },
+  "LM77": {
+   "published": "2019-10-22",
+   "filed": "2019-10-22 07:34 ET, before the open",
+   "title": "Lockheed Martin Q3 2019 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646819000066/ex991q32019.htm",
+   "supports": "Q3 2019: net sales $15,171M vs $14,318M, segment operating profit $1,665M vs $1,586M, diluted EPS $5.66 vs $5.14, total backlog $137,355M, average diluted shares 283.9M; FY2019 outlook net sales ~$59.1B, diluted EPS ~$21.55"
+  },
+  "LM78": {
+   "published": "2020-01-28",
+   "filed": "2020-01-28 07:33 ET, before the open",
+   "title": "Lockheed Martin Q4 2019 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646820000010/ex991q42019.htm",
+   "supports": "Q4 2019: net sales $15,878M vs $14,411M, segment operating profit $1,640M vs $1,515M, diluted EPS $5.29 vs $4.39, total backlog $143,981M, average diluted shares 283.3M; FY2020 outlook net sales $62.75-64.25B, diluted EPS $23.65-23.95"
+  },
+  "LM79": {
+   "published": "2020-02-07",
+   "filed": "2020-02-07 11:44 ET, during the session",
+   "title": "Lockheed Martin FY2019 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646820000016/lmtq4201910k.htm",
+   "supports": "five-year summary 2019-2015 (net sales $59,812M to $40,536M; diluted EPS from continuing operations $21.95, $17.59, $6.50, $12.08, $9.93; backlog $143,981M and $130,468M); total business segment operating profit 2019-2018 $6,574M, $5,877M; average diluted shares 283.8M, 286.8M, 290.6M; Items 1 and 1A"
+  },
+  "LM80": {
+   "published": "2020-04-21",
+   "filed": "2020-04-21 07:33 ET, before the open",
+   "title": "Lockheed Martin Q1 2020 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646820000041/ex991q12020.htm",
+   "supports": "Q1 2020: net sales $15,651M vs $14,336M, segment operating profit $1,725M vs $1,715M, diluted EPS $6.08 vs $5.99, total backlog $144,120M, average diluted shares 282.6M; FY2020 outlook net sales $62.25-64B, diluted EPS $23.65-23.95"
+  },
+  "LM81": {
+   "published": "2020-07-21",
+   "filed": "2020-07-21 07:41 ET, before the open",
+   "title": "Lockheed Martin Q2 2020 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646820000113/ex991q22020.htm",
+   "supports": "Q2 2020: net sales $16,220M vs $14,427M, segment operating profit $1,790M vs $1,554M, diluted EPS $5.79 vs $5.00, total backlog $150,314M, average diluted shares 280.8M; FY2020 outlook net sales $63.5-65B, diluted EPS $23.75-24.05"
+  },
+  "LM82": {
+   "published": "2020-10-20",
+   "filed": "2020-10-20 07:33 ET, before the open",
+   "title": "Lockheed Martin Q3 2020 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646820000120/ex991q32020.htm",
+   "supports": "Q3 2020: net sales $16,495M vs $15,171M, segment operating profit $1,762M vs $1,665M, diluted EPS from continuing operations $6.25 vs $5.66, total backlog $150,447M, average diluted shares 280.6M; FY2020 outlook net sales ~$65.25B, diluted EPS from continuing operations ~$24.45"
+  },
+  "LM83": {
+   "published": "2021-01-26",
+   "filed": "2021-01-26 07:35 ET, before the open",
+   "title": "Lockheed Martin Q4 2020 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646821000009/ex991q42020.htm",
+   "supports": "Q4 2020: net sales $17,032M vs $15,878M, segment operating profit $1,875M vs $1,640M, diluted EPS from continuing operations $6.38 vs $5.29, total backlog $147,131M, average diluted shares 281.0M; FY2021 outlook net sales $67.1-68.5B, diluted EPS $26.00-26.30"
+  },
+  "LM84": {
+   "published": "2021-01-29",
+   "filed": "2021-01-28 17:08 ET, after the close (dated the next trading day)",
+   "title": "Lockheed Martin FY2020 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646821000013/lmt-20201231.htm",
+   "supports": "five-year summary 2020-2016 (net sales $65,398M to $47,290M; diluted EPS from continuing operations $24.50, $21.95, $17.59, $6.50, $12.08; backlog $147,131M and $143,981M); total business segment operating profit 2020-2019 $7,152M, $6,574M; average diluted shares 281.2M, 283.8M, 286.8M; Items 1 and 1A"
+  },
+  "LM85": {
+   "published": "2021-04-20",
+   "filed": "2021-04-20 07:32 ET, before the open",
+   "title": "Lockheed Martin Q1 2021 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646821000040/ex991q12021.htm",
+   "supports": "Q1 2021: net sales $16,258M vs $15,651M, segment operating profit $1,749M vs $1,725M, diluted EPS $6.56 vs $6.08, total backlog $147,370M, average diluted shares 280.0M; FY2021 outlook net sales $67.3-68.7B, diluted EPS $26.40-26.70"
+  },
+  "LM86": {
+   "published": "2021-07-26",
+   "filed": "2021-07-26 07:33 ET, before the open",
+   "title": "Lockheed Martin Q2 2021 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646821000069/ex991q22021.htm",
+   "supports": "Q2 2021: net sales $17,029M vs $16,220M, segment operating profit $1,766M vs $1,790M, diluted EPS $6.52 vs $5.79, total backlog $141,664M, average diluted shares 278.4M; FY2021 outlook net sales $67.3-68.7B, diluted EPS $26.70-27.00"
+  },
+  "LM87": {
+   "published": "2021-08-04",
+   "filed": "2021-08-03 16:19 ET, after the close (dated the next trading day)",
+   "title": "Lockheed Martin 8-K of 2021-08-03 (pension annuity purchase, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646821000081/lmt832021pressrelease.htm",
+   "supports": "FY2021 outlook: diluted EPS $21.95 - $22.25 including an expected noncash pension settlement charge of $4.75 a share, $26.70 - $27.00 before it (July 2021 guidance); net sales, segment operating profit and cash from operations reaffirmed"
+  },
+  "LM88": {
+   "published": "2021-10-26",
+   "filed": "2021-10-26 07:31 ET, before the open",
+   "title": "Lockheed Martin Q3 2021 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646821000098/ex991q32021.htm",
+   "supports": "Q3 2021: net sales $16,028M vs $16,495M, segment operating profit $1,850M vs $1,762M, diluted EPS from continuing operations $2.21 vs $6.25, total backlog $134,848M, average diluted shares 277.3M; FY2021 outlook net sales ~$67B, diluted EPS - adjusted (without the pension settlement charge) ~$27.17"
   }
  },
  "history_vintages": [
@@ -1960,6 +2107,609 @@
    "cash_words": "cash and cash equivalents",
    "cloud_words": "Technological advances in such areas as: additive manufacturing, cloud computing, advanced materials, autonomy, robotics, and big data and new business models such as commercial access to space are enabling new factors of competition for both traditional and non-traditional competitors.",
    "climate_words": "we could be affected by future regulations imposed or claims asserted in response to concerns over climate change, other aspects of the environment or natural resources"
+  },
+  {
+   "published": "2018-02-07",
+   "sources": [
+    "LM69",
+    "LM68",
+    "LM64",
+    "LM59",
+    "LM54",
+    "LM49",
+    "LM44",
+    "LM34",
+    "LM39"
+   ],
+   "company": "Lockheed Martin Corporation",
+   "exchange": "NYSE",
+   "fy_label": "FY17",
+   "why": "'In 2017, 69% of our $51.0 billion in net sales were from the U.S. Government, either as a prime contractor or as a subcontractor (including 58% from the Department of Defense (DoD))' (FY2017 10-K, Item 1); 'We depend heavily on contracts with the U.S. Government for a substantial portion of our business. ... Those contracts are conditioned upon the continuing availability of Congressional appropriations.' (Item 1A): sales that depend on Congressional appropriations are not earnings that are the cycle, so DURABLE (the CAT and SO precedent)",
+   "why_themes": true,
+   "fiscal_year_ends": {
+    "2008": "2008-12-31",
+    "2009": "2009-12-31",
+    "2010": "2010-12-31",
+    "2011": "2011-12-31",
+    "2012": "2012-12-31",
+    "2013": "2013-12-31",
+    "2014": "2014-12-31",
+    "2015": "2015-12-31",
+    "2016": "2016-12-31",
+    "2017": "2017-12-31"
+   },
+   "eps_normalized": {
+    "2008": 7.64,
+    "2009": 7.63,
+    "2010": 7.1,
+    "2011": 7.85,
+    "2012": 6.99,
+    "2013": 8.27,
+    "2014": 10.09,
+    "2015": 9.93,
+    "2016": 12.38,
+    "2017": 13.33
+   },
+   "eps_sources": {
+    "2008": "LM44",
+    "2009": "LM49",
+    "2010": "LM54",
+    "2011": "LM59",
+    "2012": "LM64",
+    "2013": "LM69",
+    "2014": "LM69",
+    "2015": "LM69",
+    "2016": "LM69",
+    "2017": "LM68"
+   },
+   "normalization": "diluted EPS from continuing operations where the five-year summary reports the line, each year from the latest 10-K that reports it, except 2017: its GAAP EPS from continuing operations is under half its EPS without the Tax Act charge (the AAPL FY2002 test), so it is the company's figure from the latest filing that publishes one, the Q4 2017 release's $13.33, excluding the Tax Act's net one-time charge (the ACN and CAT rules); 2012 on exclude IS&GS, divested on Aug. 16, 2016, while the years before keep it (a seam, as published); no filing publishes a figure excluding other one-off items for 2008-2017, so their per-share effects stay in (the NKE FY2008 rule), none of them more than half a year's earnings",
+   "revenue_usd_b": {
+    "2008": 41.212,
+    "2009": 43.867,
+    "2010": 45.671,
+    "2011": 46.499,
+    "2012": 40.573,
+    "2013": 39.243,
+    "2014": 39.946,
+    "2015": 40.536,
+    "2016": 47.248,
+    "2017": 51.048
+   },
+   "revenue_sources": {
+    "2008": "LM44",
+    "2009": "LM49",
+    "2010": "LM54",
+    "2011": "LM59",
+    "2012": "LM64",
+    "2013": "LM69",
+    "2014": "LM69",
+    "2015": "LM69",
+    "2016": "LM69",
+    "2017": "LM69"
+   },
+   "diluted_shares_m": {
+    "2008": 409.4,
+    "2009": 388.9,
+    "2010": 368.3,
+    "2011": 339.9,
+    "2012": 328.4,
+    "2013": 326.5,
+    "2014": 322.4,
+    "2015": 314.7,
+    "2016": 303.1,
+    "2017": 290.6
+   },
+   "shares_sources": {
+    "2008": "LM34",
+    "2009": "LM39",
+    "2010": "LM44",
+    "2011": "LM49",
+    "2012": "LM54",
+    "2013": "LM59",
+    "2014": "LM64",
+    "2015": "LM69",
+    "2016": "LM69",
+    "2017": "LM69"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Segment operating margin change",
+   "prev_fy_op_margin": 10.02,
+   "prev_fy_op_margin_note": "segment operating profit $5,115M / net sales $51,048M (FY2017 10-K)",
+   "prev_fy_pretax_margin": 10.32,
+   "prev_fy_pretax_margin_note": "earnings before income taxes $5,269M / net sales $51,048M (FY2017 10-K)",
+   "prev_fy_sales_growth": 8.0,
+   "prev_fy_backlog_pct": 3.9,
+   "prev_fy_segop_pct": 0.3,
+   "tax_rate": 0.6339,
+   "tax_note": "income tax expense $3,340M / earnings before income taxes $5,269M (FY2017 10-K) (GAAP, the Tax Act charge in; display only)",
+   "cash_b": 2.861,
+   "cash_label": "FY17",
+   "cash_note": "cash and cash equivalents $2,861M at December 31, 2017 (FY2017 10-K)",
+   "ocf_b": 6.476,
+   "ocf_note": "cash provided by operating activities $6,476M in 2017 (FY2017 10-K)",
+   "dividend_annual": 7.46,
+   "dividend_note": "cash dividends $7.46 per share in 2017 (FY2017 10-K)",
+   "cash_return_text": "repurchases of common stock $2,001M in 2017 (FY2017 10-K)",
+   "business_line": "advanced technology systems, products and services, principally for agencies of the U.S. Government",
+   "groups": [
+    [
+     "Aeronautics",
+     20.148,
+     13.4
+    ],
+    [
+     "Missiles and Fire Control",
+     7.212,
+     9.1
+    ],
+    [
+     "Rotary and Mission Systems",
+     14.215,
+     5.6
+    ],
+    [
+     "Space",
+     9.473,
+     0.7
+    ]
+   ],
+   "groups_basis": "FY17 net sales by business segment (FY2017 10-K, Selected Financial Data by Business Segment)",
+   "cash_words": "cash and cash equivalents",
+   "cloud_words": "Technological advances in such areas as: additive manufacturing, cloud computing, advanced materials, autonomy, robotics, and big data and new business models such as commercial access to space are enabling new factors of competition for both traditional and non-traditional competitors.",
+   "climate_words": "we could be affected by future regulations imposed or claims asserted in response to concerns over climate change, other aspects of the environment or natural resources",
+   "oil_words": "demand for its products may be adversely affected by global economic conditions, including oil and gas trends that are outside of our control"
+  },
+  {
+   "published": "2019-02-08",
+   "sources": [
+    "LM74",
+    "LM73",
+    "LM69",
+    "LM64",
+    "LM59",
+    "LM54",
+    "LM49",
+    "LM39",
+    "LM44"
+   ],
+   "company": "Lockheed Martin Corporation",
+   "exchange": "NYSE",
+   "fy_label": "FY18",
+   "why": "'In 2018, 70% of our $53.8 billion in net sales were from the U.S. Government, either as a prime contractor or as a subcontractor (including 60% from the Department of Defense (DoD))' (FY2018 10-K, Item 1); 'We depend heavily on contracts with the U.S. Government for a substantial portion of our business. ... Those contracts are conditioned upon the continuing availability of Congressional appropriations.' (Item 1A): sales that depend on Congressional appropriations are not earnings that are the cycle, so DURABLE (the CAT and SO precedent)",
+   "why_themes": true,
+   "fiscal_year_ends": {
+    "2009": "2009-12-31",
+    "2010": "2010-12-31",
+    "2011": "2011-12-31",
+    "2012": "2012-12-31",
+    "2013": "2013-12-31",
+    "2014": "2014-12-31",
+    "2015": "2015-12-31",
+    "2016": "2016-12-31",
+    "2017": "2017-12-31",
+    "2018": "2018-12-31"
+   },
+   "eps_normalized": {
+    "2009": 7.63,
+    "2010": 7.1,
+    "2011": 7.85,
+    "2012": 6.99,
+    "2013": 8.27,
+    "2014": 10.09,
+    "2015": 9.93,
+    "2016": 12.08,
+    "2017": 13.27,
+    "2018": 17.59
+   },
+   "eps_sources": {
+    "2009": "LM49",
+    "2010": "LM54",
+    "2011": "LM59",
+    "2012": "LM64",
+    "2013": "LM69",
+    "2014": "LM74",
+    "2015": "LM74",
+    "2016": "LM74",
+    "2017": "LM73",
+    "2018": "LM74"
+   },
+   "normalization": "diluted EPS from continuing operations where the five-year summary reports the line, each year from the latest 10-K that reports it, except 2017: its GAAP EPS from continuing operations is under half its EPS without the Tax Act charge (the AAPL FY2002 test), so it is the company's figure from the latest filing that publishes one, the Q4 2018 release's $13.27, excluding the Tax Act's net one-time charge, on the 2018 standards (the ACN and CAT rules); 2012 on exclude IS&GS, divested on Aug. 16, 2016, while the years before keep it (a seam, as published); the FY2018 10-K restates 2016-2018 for ASC 606 (adopted Jan. 1, 2018, full retrospective) while 2014 and 2015 stay as published (a seam, as published); no filing publishes a figure excluding other one-off items for 2009-2018, so their per-share effects stay in (the NKE FY2008 rule), none of them more than half a year's earnings",
+   "revenue_usd_b": {
+    "2009": 43.867,
+    "2010": 45.671,
+    "2011": 46.499,
+    "2012": 40.573,
+    "2013": 39.243,
+    "2014": 39.946,
+    "2015": 40.536,
+    "2016": 47.29,
+    "2017": 49.96,
+    "2018": 53.762
+   },
+   "revenue_sources": {
+    "2009": "LM49",
+    "2010": "LM54",
+    "2011": "LM59",
+    "2012": "LM64",
+    "2013": "LM69",
+    "2014": "LM74",
+    "2015": "LM74",
+    "2016": "LM74",
+    "2017": "LM74",
+    "2018": "LM74"
+   },
+   "diluted_shares_m": {
+    "2009": 388.9,
+    "2010": 368.3,
+    "2011": 339.9,
+    "2012": 328.4,
+    "2013": 326.5,
+    "2014": 322.4,
+    "2015": 314.7,
+    "2016": 303.1,
+    "2017": 290.6,
+    "2018": 286.8
+   },
+   "shares_sources": {
+    "2009": "LM39",
+    "2010": "LM44",
+    "2011": "LM49",
+    "2012": "LM54",
+    "2013": "LM59",
+    "2014": "LM64",
+    "2015": "LM69",
+    "2016": "LM74",
+    "2017": "LM74",
+    "2018": "LM74"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Segment operating margin change",
+   "prev_fy_op_margin": 10.93,
+   "prev_fy_op_margin_note": "segment operating profit $5,877M / net sales $53,762M (FY2018 10-K)",
+   "prev_fy_pretax_margin": 10.86,
+   "prev_fy_pretax_margin_note": "earnings before income taxes $5,838M / net sales $53,762M (FY2018 10-K)",
+   "prev_fy_sales_growth": 7.6,
+   "prev_fy_backlog_pct": 23.7,
+   "prev_fy_segop_pct": 15.4,
+   "tax_rate": 0.1357,
+   "tax_note": "income tax expense $792M / earnings before income taxes $5,838M (FY2018 10-K)",
+   "cash_b": 0.772,
+   "cash_label": "FY18",
+   "cash_note": "cash and cash equivalents $772M at December 31, 2018 (FY2018 10-K)",
+   "ocf_b": 3.138,
+   "ocf_note": "cash provided by operating activities $3,138M in 2018 (FY2018 10-K)",
+   "dividend_annual": 8.2,
+   "dividend_note": "cash dividends $8.20 per share in 2018 (FY2018 10-K)",
+   "cash_return_text": "repurchases of common stock $1,492M in 2018 (FY2018 10-K)",
+   "business_line": "advanced technology systems, products and services, principally for agencies of the U.S. Government",
+   "groups": [
+    [
+     "Aeronautics",
+     21.242,
+     9.4
+    ],
+    [
+     "Missiles and Fire Control",
+     8.462,
+     16.2
+    ],
+    [
+     "Rotary and Mission Systems",
+     14.25,
+     4.3
+    ],
+    [
+     "Space",
+     9.808,
+     2.1
+    ]
+   ],
+   "groups_basis": "FY18 net sales by business segment (FY2018 10-K, Selected Financial Data by Business Segment)",
+   "cash_words": "cash and cash equivalents",
+   "cloud_words": "Technological advances in such areas as additive manufacturing, cloud computing, advanced materials, autonomy, robotics, and big data and new business models such as commercial access to space are enabling new factors of competition for both traditional and non-traditional competitors.",
+   "climate_words": "we could be affected by future regulations imposed or claims asserted in response to concerns over climate change, other aspects of the environment or natural resources",
+   "oil_words": "demand for its products may be adversely affected by global economic conditions, including oil and gas trends that are outside of our control"
+  },
+  {
+   "published": "2020-02-07",
+   "sources": [
+    "LM79",
+    "LM74",
+    "LM73",
+    "LM69",
+    "LM64",
+    "LM59",
+    "LM54",
+    "LM44",
+    "LM49"
+   ],
+   "company": "Lockheed Martin Corporation",
+   "exchange": "NYSE",
+   "fy_label": "FY19",
+   "why": "'In 2019, 71% of our $59.8 billion in net sales were from the U.S. Government, either as a prime contractor or as a subcontractor (including 61% from the Department of Defense (DoD))' (FY2019 10-K, Item 1); 'We depend heavily on contracts with the U.S. Government, including contracts related to the F-35 program, for a substantial portion of our business. ... Those contracts are conditioned upon the continuing availability of Congressional appropriations.' (Item 1A): sales that depend on Congressional appropriations are not earnings that are the cycle, so DURABLE (the CAT and SO precedent)",
+   "why_themes": true,
+   "fiscal_year_ends": {
+    "2010": "2010-12-31",
+    "2011": "2011-12-31",
+    "2012": "2012-12-31",
+    "2013": "2013-12-31",
+    "2014": "2014-12-31",
+    "2015": "2015-12-31",
+    "2016": "2016-12-31",
+    "2017": "2017-12-31",
+    "2018": "2018-12-31",
+    "2019": "2019-12-31"
+   },
+   "eps_normalized": {
+    "2010": 7.1,
+    "2011": 7.85,
+    "2012": 6.99,
+    "2013": 8.27,
+    "2014": 10.09,
+    "2015": 9.93,
+    "2016": 12.08,
+    "2017": 13.27,
+    "2018": 17.59,
+    "2019": 21.95
+   },
+   "eps_sources": {
+    "2010": "LM54",
+    "2011": "LM59",
+    "2012": "LM64",
+    "2013": "LM69",
+    "2014": "LM74",
+    "2015": "LM79",
+    "2016": "LM79",
+    "2017": "LM73",
+    "2018": "LM79",
+    "2019": "LM79"
+   },
+   "normalization": "diluted EPS from continuing operations where the five-year summary reports the line, each year from the latest 10-K that reports it, except 2017: its GAAP EPS from continuing operations is under half its EPS without the Tax Act charge (the AAPL FY2002 test), so it is the company's figure from the latest filing that publishes one, the Q4 2018 release's $13.27, excluding the Tax Act's net one-time charge, on the 2018 standards (the ACN and CAT rules); 2012 on exclude IS&GS, divested on Aug. 16, 2016, while the years before keep it (a seam, as published); the 10-Ks from FY2018 restate 2016 on for ASC 606 (adopted Jan. 1, 2018) while 2015 stays as published (a seam, as published); no filing publishes a figure excluding other one-off items for 2010-2019, so their per-share effects stay in (the NKE FY2008 rule), none of them more than half a year's earnings",
+   "revenue_usd_b": {
+    "2010": 45.671,
+    "2011": 46.499,
+    "2012": 40.573,
+    "2013": 39.243,
+    "2014": 39.946,
+    "2015": 40.536,
+    "2016": 47.29,
+    "2017": 49.96,
+    "2018": 53.762,
+    "2019": 59.812
+   },
+   "revenue_sources": {
+    "2010": "LM54",
+    "2011": "LM59",
+    "2012": "LM64",
+    "2013": "LM69",
+    "2014": "LM74",
+    "2015": "LM79",
+    "2016": "LM79",
+    "2017": "LM79",
+    "2018": "LM79",
+    "2019": "LM79"
+   },
+   "diluted_shares_m": {
+    "2010": 368.3,
+    "2011": 339.9,
+    "2012": 328.4,
+    "2013": 326.5,
+    "2014": 322.4,
+    "2015": 314.7,
+    "2016": 303.1,
+    "2017": 290.6,
+    "2018": 286.8,
+    "2019": 283.8
+   },
+   "shares_sources": {
+    "2010": "LM44",
+    "2011": "LM49",
+    "2012": "LM54",
+    "2013": "LM59",
+    "2014": "LM64",
+    "2015": "LM69",
+    "2016": "LM74",
+    "2017": "LM79",
+    "2018": "LM79",
+    "2019": "LM79"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Segment operating margin change",
+   "prev_fy_op_margin": 10.99,
+   "prev_fy_op_margin_note": "segment operating profit $6,574M / net sales $59,812M (FY2019 10-K)",
+   "prev_fy_pretax_margin": 12.11,
+   "prev_fy_pretax_margin_note": "earnings before income taxes $7,241M / net sales $59,812M (FY2019 10-K)",
+   "prev_fy_sales_growth": 11.3,
+   "prev_fy_backlog_pct": 10.4,
+   "prev_fy_segop_pct": 11.9,
+   "tax_rate": 0.1396,
+   "tax_note": "income tax expense $1,011M / earnings before income taxes $7,241M (FY2019 10-K)",
+   "cash_b": 1.514,
+   "cash_label": "FY19",
+   "cash_note": "cash and cash equivalents $1,514M at December 31, 2019 (FY2019 10-K)",
+   "ocf_b": 7.311,
+   "ocf_note": "cash provided by operating activities $7,311M in 2019 (FY2019 10-K)",
+   "dividend_annual": 9.0,
+   "dividend_note": "cash dividends $9.00 per share in 2019 (FY2019 10-K)",
+   "cash_return_text": "repurchases of common stock $1,200M in 2019 (FY2019 10-K)",
+   "business_line": "advanced technology systems, products and services, principally for agencies of the U.S. Government",
+   "groups": [
+    [
+     "Aeronautics",
+     23.693,
+     11.5
+    ],
+    [
+     "Missiles and Fire Control",
+     10.131,
+     19.7
+    ],
+    [
+     "Rotary and Mission Systems",
+     15.128,
+     6.2
+    ],
+    [
+     "Space",
+     10.86,
+     10.7
+    ]
+   ],
+   "groups_basis": "FY19 net sales by business segment (FY2019 10-K, Selected Financial Data by Business Segment)",
+   "cash_words": "cash and cash equivalents",
+   "cloud_words": "Technological advances in such areas as additive manufacturing, cloud computing, advanced materials, autonomy, robotics, and big data and new business models such as commercial access to space are enabling new factors of competition for both traditional and non-traditional competitors.",
+   "climate_words": "we could be affected by future regulations imposed or claims asserted in response to concerns over climate change, other aspects of the environment or natural resources",
+   "oil_words": "demand for its products may be adversely affected by global economic conditions, including oil and gas trends that are outside of our control"
+  },
+  {
+   "published": "2021-01-29",
+   "sources": [
+    "LM84",
+    "LM79",
+    "LM74",
+    "LM73",
+    "LM69",
+    "LM64",
+    "LM59",
+    "LM49",
+    "LM54"
+   ],
+   "company": "Lockheed Martin Corporation",
+   "exchange": "NYSE",
+   "fy_label": "FY20",
+   "why": "'In 2020, 74% of our $65.4 billion in net sales were from the U.S. Government, either as a prime contractor or as a subcontractor (including 64% from the Department of Defense (DoD))' (FY2020 10-K, Item 1); 'We depend heavily on contracts with the U.S. Government, including contracts related to the F-35 program, for a substantial portion of our business. ... Those contracts are conditioned upon the continuing availability of Congressional appropriations.' (Item 1A): sales that depend on Congressional appropriations are not earnings that are the cycle, so DURABLE (the CAT and SO precedent)",
+   "why_themes": true,
+   "fiscal_year_ends": {
+    "2011": "2011-12-31",
+    "2012": "2012-12-31",
+    "2013": "2013-12-31",
+    "2014": "2014-12-31",
+    "2015": "2015-12-31",
+    "2016": "2016-12-31",
+    "2017": "2017-12-31",
+    "2018": "2018-12-31",
+    "2019": "2019-12-31",
+    "2020": "2020-12-31"
+   },
+   "eps_normalized": {
+    "2011": 7.85,
+    "2012": 6.99,
+    "2013": 8.27,
+    "2014": 10.09,
+    "2015": 9.93,
+    "2016": 12.08,
+    "2017": 13.27,
+    "2018": 17.59,
+    "2019": 21.95,
+    "2020": 24.5
+   },
+   "eps_sources": {
+    "2011": "LM59",
+    "2012": "LM64",
+    "2013": "LM69",
+    "2014": "LM74",
+    "2015": "LM79",
+    "2016": "LM84",
+    "2017": "LM73",
+    "2018": "LM84",
+    "2019": "LM84",
+    "2020": "LM84"
+   },
+   "normalization": "diluted EPS from continuing operations where the five-year summary reports the line, each year from the latest 10-K that reports it, except 2017: its GAAP EPS from continuing operations is under half its EPS without the Tax Act charge (the AAPL FY2002 test), so it is the company's figure from the latest filing that publishes one, the Q4 2018 release's $13.27, excluding the Tax Act's net one-time charge, on the 2018 standards (the ACN and CAT rules); 2012 on exclude IS&GS, divested on Aug. 16, 2016, while the years before keep it (a seam, as published); 2016 on are on ASC 606 (adopted Jan. 1, 2018); no filing publishes a figure excluding other one-off items for 2011-2020, so their per-share effects stay in (the NKE FY2008 rule), none of them more than half a year's earnings",
+   "revenue_usd_b": {
+    "2011": 46.499,
+    "2012": 40.573,
+    "2013": 39.243,
+    "2014": 39.946,
+    "2015": 40.536,
+    "2016": 47.29,
+    "2017": 49.96,
+    "2018": 53.762,
+    "2019": 59.812,
+    "2020": 65.398
+   },
+   "revenue_sources": {
+    "2011": "LM59",
+    "2012": "LM64",
+    "2013": "LM69",
+    "2014": "LM74",
+    "2015": "LM79",
+    "2016": "LM84",
+    "2017": "LM84",
+    "2018": "LM84",
+    "2019": "LM84",
+    "2020": "LM84"
+   },
+   "diluted_shares_m": {
+    "2011": 339.9,
+    "2012": 328.4,
+    "2013": 326.5,
+    "2014": 322.4,
+    "2015": 314.7,
+    "2016": 303.1,
+    "2017": 290.6,
+    "2018": 286.8,
+    "2019": 283.8,
+    "2020": 281.2
+   },
+   "shares_sources": {
+    "2011": "LM49",
+    "2012": "LM54",
+    "2013": "LM59",
+    "2014": "LM64",
+    "2015": "LM69",
+    "2016": "LM74",
+    "2017": "LM79",
+    "2018": "LM84",
+    "2019": "LM84",
+    "2020": "LM84"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Segment operating margin change",
+   "prev_fy_op_margin": 10.94,
+   "prev_fy_op_margin_note": "segment operating profit $7,152M / net sales $65,398M (FY2020 10-K)",
+   "prev_fy_pretax_margin": 12.59,
+   "prev_fy_pretax_margin_note": "earnings before income taxes $8,235M / net sales $65,398M (FY2020 10-K)",
+   "prev_fy_sales_growth": 9.3,
+   "prev_fy_backlog_pct": 2.2,
+   "prev_fy_segop_pct": 8.8,
+   "tax_rate": 0.1636,
+   "tax_note": "income tax expense $1,347M / earnings before income taxes $8,235M (FY2020 10-K)",
+   "cash_b": 3.16,
+   "cash_label": "FY20",
+   "cash_note": "cash and cash equivalents $3,160M at December 31, 2020 (FY2020 10-K)",
+   "ocf_b": 8.183,
+   "ocf_note": "cash provided by operating activities $8,183M in 2020 (FY2020 10-K)",
+   "dividend_annual": 9.8,
+   "dividend_note": "cash dividends $9.80 per share in 2020 (FY2020 10-K)",
+   "cash_return_text": "repurchases of common stock $1,100M in 2020 (FY2020 10-K)",
+   "business_line": "advanced technology systems, products and services, principally for agencies of the U.S. Government",
+   "groups": [
+    [
+     "Aeronautics",
+     26.266,
+     10.9
+    ],
+    [
+     "Missiles and Fire Control",
+     11.257,
+     11.1
+    ],
+    [
+     "Rotary and Mission Systems",
+     15.995,
+     5.7
+    ],
+    [
+     "Space",
+     11.88,
+     9.4
+    ]
+   ],
+   "groups_basis": "FY20 net sales by business segment (FY2020 10-K, Selected Financial Data by Business Segment)",
+   "cash_words": "cash and cash equivalents",
+   "climate_words": "we could be affected by future regulations imposed or claims asserted in response to concerns over climate change, other aspects of the environment or natural resources",
+   "oil_words": "demand for its products may be adversely affected by global economic conditions, including oil and gas trends that are outside of our control"
   }
  ],
  "prints": [
@@ -3643,6 +4393,613 @@
    "cash_return_text": "Repurchasing 1.6 million shares for $500 million, compared to 1.2 million shares for $278 million in the third quarter of 2016",
    "next_print": "Q4 2017 print (late January)",
    "note": "diluted EPS from continuing operations (the release reports discontinued operations)"
+  },
+  {
+   "quarter": "Q4 2017",
+   "fy": 2017,
+   "q": 4,
+   "published": "2018-01-29",
+   "source": "LM68",
+   "release": "Jan 29",
+   "release_time": "before the open on Jan 29: 8-K accepted 07:31 ET",
+   "period_end": "2017-12-31",
+   "raw": {
+    "rev_m": 15137.0,
+    "rev_prior_m": 13752.0,
+    "segop_m": 1487.0,
+    "segop_prior_m": 1290.0,
+    "backlog_m": 99936.0,
+    "backlog_prior_m": 96200.0,
+    "diluted_shares_m": 285.9
+   },
+   "backlog_prior_source": "LM63",
+   "backlog_prior_label": "December 31, 2016 (Q4 2016 release)",
+   "sales_b": 15.137,
+   "sales_pct": 10.1,
+   "backlog_pct": 3.9,
+   "segop_pct": 15.3,
+   "seg_margin": 9.82,
+   "seg_margin_bp": 44.3,
+   "eps_q": -2.5,
+   "eps_q_prior": 3.25,
+   "eps_pct": -176.9,
+   "diluted_shares_m": 285.9,
+   "cash_return_text": "Repurchasing 1.6 million shares for $501 million and 7.1 million shares for $2.0 billion during the quarter and year ended Dec. 31, 2017, compared to 3.2 million shares for $816 million and 8.9 million shares for $2.1 billion during the quarter and year ended Dec. 31, 2016",
+   "next_print": "Q1 2018 print (late April)",
+   "note": "diluted EPS from continuing operations (the release reports discontinued operations); GAAP EPS, the Tax Act charge in ($6.80 a share in the quarter); the release: 'Adjusted earnings per share from continuing operations of $4.30 in the fourth quarter and $13.33 in 2017, excluding a net $1.9 billion one-time charge related to tax reform'",
+   "fy_actual": {
+    "fy": 2017,
+    "fy_label": "FY17",
+    "eps_normalized": 13.33,
+    "revenue_usd_b": 51.048,
+    "diluted_shares_m": 290.6,
+    "normalization_note": "FY2017 $13.33, the company's adjusted diluted EPS from continuing operations excluding the net one-time charge of the Tax Act ($6.69 a share; GAAP $6.64, under half the figure without it) (Q4 2017 release)",
+    "op_margin": 10.02,
+    "pretax_margin": 10.32,
+    "pretax_margin_note": "FY17 earnings before income taxes $5,269M / net sales $51,048M (LM68)",
+    "sales_growth": 8.0,
+    "backlog_pct": 3.9,
+    "segop_pct": 0.3,
+    "tax_rate": 0.6339,
+    "tax_note": "FY17 income tax expense $3,340M / earnings before income taxes $5,269M (GAAP, the Tax Act charge in; display only)"
+   }
+  },
+  {
+   "quarter": "Q1 2018",
+   "fy": 2018,
+   "q": 1,
+   "published": "2018-04-24",
+   "source": "LM70",
+   "release": "Apr 24",
+   "release_time": "before the open on Apr 24: 8-K accepted 07:32 ET",
+   "period_end": "2018-03-25",
+   "raw": {
+    "rev_m": 11635.0,
+    "rev_prior_m": 11212.0,
+    "segop_m": 1310.0,
+    "segop_prior_m": 1091.0,
+    "backlog_m": 104756.0,
+    "backlog_prior_m": 93500.0,
+    "diluted_shares_m": 287.9
+   },
+   "backlog_prior_source": "LM65",
+   "backlog_prior_label": "March 26, 2017 (Q1 2017 release)",
+   "sales_b": 11.635,
+   "sales_pct": 3.8,
+   "backlog_pct": 12.0,
+   "segop_pct": 20.1,
+   "seg_margin": 11.26,
+   "seg_margin_bp": 152.8,
+   "eps_q": 4.02,
+   "eps_q_prior": 2.69,
+   "eps_pct": 49.4,
+   "diluted_shares_m": 287.9,
+   "cash_return_text": "Repurchasing 0.9 million shares for $300 million, compared to 1.9 million shares for $500 million in the first quarter of 2017",
+   "next_print": "Q2 2018 print (late July)",
+   "note": "the year-ago quarter as this release restates it for the standards adopted on Jan. 1, 2018 (ASC 606 and ASU 2017-07); the year-ago backlog is the Q1 2017 release's, before ASC 606"
+  },
+  {
+   "quarter": "Q2 2018",
+   "fy": 2018,
+   "q": 2,
+   "published": "2018-07-24",
+   "source": "LM71",
+   "release": "Jul 24",
+   "release_time": "before the open on Jul 24: 8-K accepted 07:31 ET",
+   "period_end": "2018-06-24",
+   "raw": {
+    "rev_m": 13398.0,
+    "rev_prior_m": 12563.0,
+    "segop_m": 1466.0,
+    "segop_prior_m": 1347.0,
+    "backlog_m": 105003.0,
+    "backlog_prior_m": 92100.0,
+    "diluted_shares_m": 287.1
+   },
+   "backlog_prior_source": "LM66",
+   "backlog_prior_label": "June 25, 2017 (Q2 2017 release)",
+   "sales_b": 13.398,
+   "sales_pct": 6.6,
+   "backlog_pct": 14.0,
+   "segop_pct": 8.8,
+   "seg_margin": 10.94,
+   "seg_margin_bp": 22.0,
+   "eps_q": 4.05,
+   "eps_q_prior": 3.28,
+   "eps_pct": 23.5,
+   "diluted_shares_m": 287.1,
+   "cash_return_text": "Repurchasing 1.0 million shares for $310 million, compared to 1.9 million shares for $500 million in the second quarter of 2017",
+   "next_print": "Q3 2018 print (late October)",
+   "note": "the year-ago quarter as this release restates it for the standards adopted on Jan. 1, 2018 (ASC 606 and ASU 2017-07); the year-ago backlog is the Q2 2017 release's, before ASC 606"
+  },
+  {
+   "quarter": "Q3 2018",
+   "fy": 2018,
+   "q": 3,
+   "published": "2018-10-23",
+   "source": "LM72",
+   "release": "Oct 23",
+   "release_time": "before the open on Oct 23: 8-K accepted 07:31 ET",
+   "period_end": "2018-09-30",
+   "raw": {
+    "rev_m": 14318.0,
+    "rev_prior_m": 12341.0,
+    "segop_m": 1586.0,
+    "segop_prior_m": 1287.0,
+    "backlog_m": 109191.0,
+    "backlog_prior_m": 103600.0,
+    "diluted_shares_m": 286.7
+   },
+   "backlog_prior_source": "LM67",
+   "backlog_prior_label": "September 24, 2017 (Q3 2017 release)",
+   "sales_b": 14.318,
+   "sales_pct": 16.0,
+   "backlog_pct": 5.4,
+   "segop_pct": 23.2,
+   "seg_margin": 11.08,
+   "seg_margin_bp": 64.8,
+   "eps_q": 5.14,
+   "eps_q_prior": 3.32,
+   "eps_pct": 54.8,
+   "diluted_shares_m": 286.7,
+   "cash_return_text": "Repurchasing 0.6 million shares for $216 million, compared to 1.6 million shares for $500 million in the third quarter of 2017",
+   "next_print": "Q4 2018 print (late January)",
+   "note": "the year-ago quarter as this release restates it for the standards adopted on Jan. 1, 2018 (ASC 606 and ASU 2017-07); the year-ago backlog is the Q3 2017 release's, before ASC 606"
+  },
+  {
+   "quarter": "Q4 2018",
+   "fy": 2018,
+   "q": 4,
+   "published": "2019-01-29",
+   "source": "LM73",
+   "release": "Jan 29",
+   "release_time": "before the open on Jan 29: 8-K accepted 07:31 ET",
+   "period_end": "2018-12-31",
+   "raw": {
+    "rev_m": 14411.0,
+    "rev_prior_m": 13844.0,
+    "segop_m": 1515.0,
+    "segop_prior_m": 1367.0,
+    "backlog_m": 130468.0,
+    "backlog_prior_m": 99936.0,
+    "diluted_shares_m": 285.5
+   },
+   "backlog_prior_source": "LM68",
+   "backlog_prior_label": "December 31, 2017 (Q4 2017 release)",
+   "sales_b": 14.411,
+   "sales_pct": 4.1,
+   "backlog_pct": 30.6,
+   "segop_pct": 10.8,
+   "seg_margin": 10.51,
+   "seg_margin_bp": 63.8,
+   "eps_q": 4.39,
+   "eps_q_prior": -2.85,
+   "eps_pct": 254.0,
+   "diluted_shares_m": 285.5,
+   "cash_return_text": "Repurchasing 2.2 million shares for $666 million and 4.7 million shares for $1.5 billion during the quarter and year ended Dec. 31, 2018, compared to 1.6 million shares for $501 million and 7.1 million shares for $2.0 billion during the quarter and year ended Dec. 31, 2017",
+   "next_print": "Q1 2019 print (late April)",
+   "note": "diluted EPS from continuing operations (the release reports discontinued operations); the year-ago quarter, restated for the 2018 standards, is a loss, so EPS growth is over its absolute value (the CAT rule); the release's adjusted EPS excluding the Tax Act: $4.03 (Q4 2017) and $13.27 (2017); the year-ago backlog is the Q4 2017 release's, before ASC 606",
+   "fy_actual": {
+    "fy": 2018,
+    "fy_label": "FY18",
+    "eps_normalized": 17.59,
+    "revenue_usd_b": 53.762,
+    "diluted_shares_m": 286.8,
+    "normalization_note": "FY2018 $17.59, diluted EPS from continuing operations as reported (Q4 2018 release; one-off items' per-share effects stay in)",
+    "op_margin": 10.93,
+    "pretax_margin": 10.86,
+    "pretax_margin_note": "FY18 earnings before income taxes $5,838M / net sales $53,762M (LM73)",
+    "sales_growth": 7.6,
+    "backlog_pct": 30.6,
+    "segop_pct": 15.4,
+    "tax_rate": 0.1357,
+    "tax_note": "FY18 income tax expense $792M / earnings before income taxes $5,838M"
+   },
+   "restates": {
+    "2017": {
+     "eps": 13.27,
+     "note": "FY17 $13.27, the company's adjusted diluted EPS from continuing operations excluding the Tax Act charge, as the Q4 2018 release restates it for the 2018 standards"
+    }
+   }
+  },
+  {
+   "quarter": "Q1 2019",
+   "fy": 2019,
+   "q": 1,
+   "published": "2019-04-23",
+   "source": "LM75",
+   "release": "Apr 23",
+   "release_time": "before the open on Apr 23: 8-K accepted 07:31 ET",
+   "period_end": "2019-03-31",
+   "raw": {
+    "rev_m": 14336.0,
+    "rev_prior_m": 11635.0,
+    "segop_m": 1715.0,
+    "segop_prior_m": 1310.0,
+    "backlog_m": 133470.0,
+    "backlog_prior_m": 104756.0,
+    "diluted_shares_m": 284.3
+   },
+   "backlog_prior_source": "LM70",
+   "backlog_prior_label": "March 25, 2018 (Q1 2018 release)",
+   "sales_b": 14.336,
+   "sales_pct": 23.2,
+   "backlog_pct": 27.4,
+   "segop_pct": 30.9,
+   "seg_margin": 11.96,
+   "seg_margin_bp": 70.4,
+   "eps_q": 5.99,
+   "eps_q_prior": 4.02,
+   "eps_pct": 49.0,
+   "diluted_shares_m": 284.3,
+   "cash_return_text": "Repurchasing 1.0 million shares for $281 million, compared to 0.9 million shares for $300 million in the first quarter of 2018",
+   "next_print": "Q2 2019 print (late July)"
+  },
+  {
+   "quarter": "Q2 2019",
+   "fy": 2019,
+   "q": 2,
+   "published": "2019-07-23",
+   "source": "LM76",
+   "release": "Jul 23",
+   "release_time": "before the open on Jul 23: 8-K accepted 07:33 ET",
+   "period_end": "2019-06-30",
+   "raw": {
+    "rev_m": 14427.0,
+    "rev_prior_m": 13398.0,
+    "segop_m": 1554.0,
+    "segop_prior_m": 1466.0,
+    "backlog_m": 136683.0,
+    "backlog_prior_m": 105003.0,
+    "diluted_shares_m": 283.9
+   },
+   "backlog_prior_source": "LM71",
+   "backlog_prior_label": "June 24, 2018 (Q2 2018 release)",
+   "sales_b": 14.427,
+   "sales_pct": 7.7,
+   "backlog_pct": 30.2,
+   "segop_pct": 6.0,
+   "seg_margin": 10.77,
+   "seg_margin_bp": -17.0,
+   "eps_q": 5.0,
+   "eps_q_prior": 4.05,
+   "eps_pct": 23.5,
+   "diluted_shares_m": 283.9,
+   "cash_return_text": "Repurchasing 0.6 million shares for $219 million, compared to 1.0 million shares for $310 million in the second quarter of 2018",
+   "next_print": "Q3 2019 print (late October)"
+  },
+  {
+   "quarter": "Q3 2019",
+   "fy": 2019,
+   "q": 3,
+   "published": "2019-10-22",
+   "source": "LM77",
+   "release": "Oct 22",
+   "release_time": "before the open on Oct 22: 8-K accepted 07:34 ET",
+   "period_end": "2019-09-29",
+   "raw": {
+    "rev_m": 15171.0,
+    "rev_prior_m": 14318.0,
+    "segop_m": 1665.0,
+    "segop_prior_m": 1586.0,
+    "backlog_m": 137355.0,
+    "backlog_prior_m": 109191.0,
+    "diluted_shares_m": 283.9
+   },
+   "backlog_prior_source": "LM72",
+   "backlog_prior_label": "September 30, 2018 (Q3 2018 release)",
+   "sales_b": 15.171,
+   "sales_pct": 6.0,
+   "backlog_pct": 25.8,
+   "segop_pct": 5.0,
+   "seg_margin": 10.97,
+   "seg_margin_bp": -10.2,
+   "eps_q": 5.66,
+   "eps_q_prior": 5.14,
+   "eps_pct": 10.1,
+   "diluted_shares_m": 283.9,
+   "cash_return_text": "Repurchasing 0.6 million shares for $210 million, compared to 0.6 million shares for $216 million in the third quarter of 2018",
+   "next_print": "Q4 2019 print (late January)"
+  },
+  {
+   "quarter": "Q4 2019",
+   "fy": 2019,
+   "q": 4,
+   "published": "2020-01-28",
+   "source": "LM78",
+   "release": "Jan 28",
+   "release_time": "before the open on Jan 28: 8-K accepted 07:33 ET",
+   "period_end": "2019-12-31",
+   "raw": {
+    "rev_m": 15878.0,
+    "rev_prior_m": 14411.0,
+    "segop_m": 1640.0,
+    "segop_prior_m": 1515.0,
+    "backlog_m": 143981.0,
+    "backlog_prior_m": 130468.0,
+    "diluted_shares_m": 283.3
+   },
+   "backlog_prior_source": "LM73",
+   "backlog_prior_label": "December 31, 2018 (Q4 2018 release)",
+   "sales_b": 15.878,
+   "sales_pct": 10.2,
+   "backlog_pct": 10.4,
+   "segop_pct": 8.3,
+   "seg_margin": 10.33,
+   "seg_margin_bp": -18.4,
+   "eps_q": 5.29,
+   "eps_q_prior": 4.39,
+   "eps_pct": 20.5,
+   "diluted_shares_m": 283.3,
+   "cash_return_text": "Repurchasing 1.3 million shares for $490 million and 3.5 million shares for $1.2 billion during the quarter and year ended Dec. 31, 2019, compared to 2.2 million shares for $666 million and 4.7 million shares for $1.5 billion during the quarter and year ended Dec. 31, 2018",
+   "next_print": "Q1 2020 print (late April)",
+   "fy_actual": {
+    "fy": 2019,
+    "fy_label": "FY19",
+    "eps_normalized": 21.95,
+    "revenue_usd_b": 59.812,
+    "diluted_shares_m": 283.8,
+    "normalization_note": "FY2019 $21.95, diluted EPS as reported (Q4 2019 release; one-off items' per-share effects stay in)",
+    "op_margin": 10.99,
+    "pretax_margin": 12.11,
+    "pretax_margin_note": "FY19 earnings before income taxes $7,241M / net sales $59,812M (LM78)",
+    "sales_growth": 11.3,
+    "backlog_pct": 10.4,
+    "segop_pct": 11.9,
+    "tax_rate": 0.1396,
+    "tax_note": "FY19 income tax expense $1,011M / earnings before income taxes $7,241M"
+   }
+  },
+  {
+   "quarter": "Q1 2020",
+   "fy": 2020,
+   "q": 1,
+   "published": "2020-04-21",
+   "source": "LM80",
+   "release": "Apr 21",
+   "release_time": "before the open on Apr 21: 8-K accepted 07:33 ET",
+   "period_end": "2020-03-29",
+   "raw": {
+    "rev_m": 15651.0,
+    "rev_prior_m": 14336.0,
+    "segop_m": 1725.0,
+    "segop_prior_m": 1715.0,
+    "backlog_m": 144120.0,
+    "backlog_prior_m": 133470.0,
+    "diluted_shares_m": 282.6
+   },
+   "backlog_prior_source": "LM75",
+   "backlog_prior_label": "March 31, 2019 (Q1 2019 release)",
+   "sales_b": 15.651,
+   "sales_pct": 9.2,
+   "backlog_pct": 8.0,
+   "segop_pct": 0.6,
+   "seg_margin": 11.02,
+   "seg_margin_bp": -94.1,
+   "eps_q": 6.08,
+   "eps_q_prior": 5.99,
+   "eps_pct": 1.5,
+   "diluted_shares_m": 282.6,
+   "cash_return_text": "Repurchasing 1.7 million shares for $756 million, which includes $500 million paid pursuant to an accelerated share repurchase agreement (ASR), which will settle in the second quarter; compared to 1.0 million shares for $281 million in the first quarter of 2019",
+   "next_print": "Q2 2020 print (late July)"
+  },
+  {
+   "quarter": "Q2 2020",
+   "fy": 2020,
+   "q": 2,
+   "published": "2020-07-21",
+   "source": "LM81",
+   "release": "Jul 21",
+   "release_time": "before the open on Jul 21: 8-K accepted 07:41 ET",
+   "period_end": "2020-06-28",
+   "raw": {
+    "rev_m": 16220.0,
+    "rev_prior_m": 14427.0,
+    "segop_m": 1790.0,
+    "segop_prior_m": 1554.0,
+    "backlog_m": 150314.0,
+    "backlog_prior_m": 136683.0,
+    "diluted_shares_m": 280.8
+   },
+   "backlog_prior_source": "LM76",
+   "backlog_prior_label": "June 30, 2019 (Q2 2019 release)",
+   "sales_b": 16.22,
+   "sales_pct": 12.4,
+   "backlog_pct": 10.0,
+   "segop_pct": 15.2,
+   "seg_margin": 11.04,
+   "seg_margin_bp": 26.4,
+   "eps_q": 5.79,
+   "eps_q_prior": 5.0,
+   "eps_pct": 15.8,
+   "diluted_shares_m": 280.8,
+   "cash_return_text": "Repurchasing 0.7 million shares for $259 million; compared to repurchasing 0.6 million shares for $219 million in the second quarter of 2019",
+   "next_print": "Q3 2020 print (late October)",
+   "note": "GAAP EPS includes a non-cash impairment charge on a joint venture investment ($0.34 a share)"
+  },
+  {
+   "quarter": "Q3 2020",
+   "fy": 2020,
+   "q": 3,
+   "published": "2020-10-20",
+   "source": "LM82",
+   "release": "Oct 20",
+   "release_time": "before the open on Oct 20: 8-K accepted 07:33 ET",
+   "period_end": "2020-09-27",
+   "raw": {
+    "rev_m": 16495.0,
+    "rev_prior_m": 15171.0,
+    "segop_m": 1762.0,
+    "segop_prior_m": 1665.0,
+    "backlog_m": 150447.0,
+    "backlog_prior_m": 137355.0,
+    "diluted_shares_m": 280.6
+   },
+   "backlog_prior_source": "LM77",
+   "backlog_prior_label": "September 29, 2019 (Q3 2019 release)",
+   "sales_b": 16.495,
+   "sales_pct": 8.7,
+   "backlog_pct": 9.5,
+   "segop_pct": 5.8,
+   "seg_margin": 10.68,
+   "seg_margin_bp": -29.3,
+   "eps_q": 6.25,
+   "eps_q_prior": 5.66,
+   "eps_pct": 10.4,
+   "diluted_shares_m": 280.6,
+   "cash_return_text": "Repurchasing 0.2 million shares for $85 million, which includes $26 million paid for shares repurchased in the second quarter of 2020; compared to repurchasing 0.6 million shares for $210 million in the third quarter of 2019",
+   "next_print": "Q4 2020 print (late January)",
+   "note": "diluted EPS from continuing operations (the release reports discontinued operations)"
+  },
+  {
+   "quarter": "Q4 2020",
+   "fy": 2020,
+   "q": 4,
+   "published": "2021-01-26",
+   "source": "LM83",
+   "release": "Jan 26",
+   "release_time": "before the open on Jan 26: 8-K accepted 07:35 ET",
+   "period_end": "2020-12-31",
+   "raw": {
+    "rev_m": 17032.0,
+    "rev_prior_m": 15878.0,
+    "segop_m": 1875.0,
+    "segop_prior_m": 1640.0,
+    "backlog_m": 147131.0,
+    "backlog_prior_m": 143981.0,
+    "diluted_shares_m": 281.0
+   },
+   "backlog_prior_source": "LM78",
+   "backlog_prior_label": "December 31, 2019 (Q4 2019 release)",
+   "sales_b": 17.032,
+   "sales_pct": 7.3,
+   "backlog_pct": 2.2,
+   "segop_pct": 14.3,
+   "seg_margin": 11.01,
+   "seg_margin_bp": 68.0,
+   "eps_q": 6.38,
+   "eps_q_prior": 5.29,
+   "eps_pct": 20.6,
+   "diluted_shares_m": 281.0,
+   "cash_return_text": "No shares repurchased and repurchasing 3.0 million shares for $1.1 billion during the quarter and year ended Dec. 31, 2020, compared to repurchasing 1.3 million shares for $490 million and 3.5 million shares for $1.2 billion during the quarter and year ended Dec. 31, 2019.",
+   "next_print": "Q1 2021 print (late April)",
+   "note": "diluted EPS from continuing operations (the release reports discontinued operations)",
+   "fy_actual": {
+    "fy": 2020,
+    "fy_label": "FY20",
+    "eps_normalized": 24.5,
+    "revenue_usd_b": 65.398,
+    "diluted_shares_m": 281.2,
+    "normalization_note": "FY2020 $24.50, diluted EPS from continuing operations as reported (Q4 2020 release; one-off items' per-share effects stay in)",
+    "op_margin": 10.94,
+    "pretax_margin": 12.59,
+    "pretax_margin_note": "FY20 earnings before income taxes $8,235M / net sales $65,398M (LM83)",
+    "sales_growth": 9.3,
+    "backlog_pct": 2.2,
+    "segop_pct": 8.8,
+    "tax_rate": 0.1636,
+    "tax_note": "FY20 income tax expense $1,347M / earnings before income taxes $8,235M"
+   }
+  },
+  {
+   "quarter": "Q1 2021",
+   "fy": 2021,
+   "q": 1,
+   "published": "2021-04-20",
+   "source": "LM85",
+   "release": "Apr 20",
+   "release_time": "before the open on Apr 20: 8-K accepted 07:32 ET",
+   "period_end": "2021-03-28",
+   "raw": {
+    "rev_m": 16258.0,
+    "rev_prior_m": 15651.0,
+    "segop_m": 1749.0,
+    "segop_prior_m": 1725.0,
+    "backlog_m": 147370.0,
+    "backlog_prior_m": 144120.0,
+    "diluted_shares_m": 280.0
+   },
+   "backlog_prior_source": "LM80",
+   "backlog_prior_label": "March 29, 2020 (Q1 2020 release)",
+   "sales_b": 16.258,
+   "sales_pct": 3.9,
+   "backlog_pct": 2.3,
+   "segop_pct": 1.4,
+   "seg_margin": 10.76,
+   "seg_margin_bp": -26.4,
+   "eps_q": 6.56,
+   "eps_q_prior": 6.08,
+   "eps_pct": 7.9,
+   "diluted_shares_m": 280.0,
+   "cash_return_text": "Repurchasing 1.9 million shares for $1.0 billion pursuant to an accelerated share repurchase agreement (ASR), which settled in the second quarter of 2021; compared to repurchasing 1.7 million shares for $756 million in the first quarter of 2020, which included $500 million paid pursuant to an ASR, which settled in second quarter of 2020",
+   "next_print": "Q2 2021 print (late July)"
+  },
+  {
+   "quarter": "Q2 2021",
+   "fy": 2021,
+   "q": 2,
+   "published": "2021-07-26",
+   "source": "LM86",
+   "release": "Jul 26",
+   "release_time": "before the open on Jul 26: 8-K accepted 07:33 ET",
+   "period_end": "2021-06-27",
+   "raw": {
+    "rev_m": 17029.0,
+    "rev_prior_m": 16220.0,
+    "segop_m": 1766.0,
+    "segop_prior_m": 1790.0,
+    "backlog_m": 141664.0,
+    "backlog_prior_m": 150314.0,
+    "diluted_shares_m": 278.4
+   },
+   "backlog_prior_source": "LM81",
+   "backlog_prior_label": "June 28, 2020 (Q2 2020 release)",
+   "sales_b": 17.029,
+   "sales_pct": 5.0,
+   "backlog_pct": -5.8,
+   "segop_pct": -1.3,
+   "seg_margin": 10.37,
+   "seg_margin_bp": -66.5,
+   "eps_q": 6.52,
+   "eps_q_prior": 5.79,
+   "eps_pct": 12.6,
+   "diluted_shares_m": 278.4,
+   "cash_return_text": "Repurchasing 1.3 million shares for $500 million pursuant to an accelerated share repurchase agreement (ASR) (and retiring an additional 1.0 million shares for a first quarter 2021 ASR that settled in the second quarter of 2021); compared to repurchasing 0.7 million shares for $259 million in the second quarter of 2020 (and retiring an additional 0.4 million shares for a first quarter 2020 ASR that settled in the second quarter of 2020)",
+   "next_print": "Q3 2021 print (late October)"
+  },
+  {
+   "quarter": "Q3 2021",
+   "fy": 2021,
+   "q": 3,
+   "published": "2021-10-26",
+   "source": "LM88",
+   "release": "Oct 26",
+   "release_time": "before the open on Oct 26: 8-K accepted 07:31 ET",
+   "period_end": "2021-09-26",
+   "raw": {
+    "rev_m": 16028.0,
+    "rev_prior_m": 16495.0,
+    "segop_m": 1850.0,
+    "segop_prior_m": 1762.0,
+    "backlog_m": 134848.0,
+    "backlog_prior_m": 150447.0,
+    "diluted_shares_m": 277.3
+   },
+   "backlog_prior_source": "LM82",
+   "backlog_prior_label": "September 27, 2020 (Q3 2020 release)",
+   "sales_b": 16.028,
+   "sales_pct": -2.8,
+   "backlog_pct": -10.4,
+   "segop_pct": 5.0,
+   "seg_margin": 11.54,
+   "seg_margin_bp": 86.0,
+   "eps_q": 2.21,
+   "eps_q_prior": 6.25,
+   "eps_pct": -64.6,
+   "diluted_shares_m": 277.3,
+   "cash_return_text": "Repurchasing 1.4 million shares for $500 million pursuant to an accelerated share repurchase agreement (ASR); compared to repurchasing 0.2 million shares for $85 million in the third quarter of 2020, which includes $26 million paid for shares repurchased in the second quarter of 2020",
+   "next_print": "Q4 2021 print (late January)",
+   "note": "diluted EPS from continuing operations (the release reports discontinued operations); GAAP EPS includes the noncash pension settlement charge ($4.72 a share)"
   }
  ],
  "guides": [
@@ -4563,6 +5920,351 @@
    ],
    "cfo_words": "at least $6,200",
    "note": "the 'Current Update' column (beside 'July Outlook'); the EPS range includes a gain the release expects to book in the fourth quarter ('a previously deferred non-cash gain of approximately $200 million related to properties sold in 2015', $0.40 per share), and no range excluding it is published: nothing is derived"
+  },
+  {
+   "fy": 2018,
+   "published": "2018-01-29",
+   "source": "LM68",
+   "doc": "Q4 2017 release",
+   "rev_guide_usd_b": [
+    50.0,
+    51.5
+   ],
+   "eps_guide": [
+    15.2,
+    15.5
+   ],
+   "segop_guide_usd_b": [
+    5.2,
+    5.35
+   ],
+   "cfo_words": "at least $3,000",
+   "note": "the '2018 Current Outlook' column (beside '2017 Pro Forma for New Accounting Standards'); the outlook is on the standards adopted on Jan. 1, 2018 (ASC 606 and ASU 2017-07), beside the '2017 Pro Forma' column ('The 2017 Pro Forma for New Accounting Standards and the 2018 Current Outlook reflect the changes resulting from the adoption of the new accounting standards'), so net sales are read against its $49,976 million (the ACN restated-base rule); the EPS range is GAAP (the pro forma 2017 column also gives $13.31 adjusted for the Tax Act)",
+   "rev_base_usd_b": 49.976,
+   "rev_base_label": "FY17 pro forma for the 2018 standards (Q4 2017 release)"
+  },
+  {
+   "fy": 2018,
+   "published": "2018-04-24",
+   "source": "LM70",
+   "doc": "Q1 2018 release",
+   "rev_guide_usd_b": [
+    50.35,
+    51.85
+   ],
+   "eps_guide": [
+    15.8,
+    16.1
+   ],
+   "segop_guide_usd_b": [
+    5.315,
+    5.465
+   ],
+   "cfo_words": "at least $3,000",
+   "note": "the 'Current Update' column (beside 'January 2018')"
+  },
+  {
+   "fy": 2018,
+   "published": "2018-07-24",
+   "source": "LM71",
+   "doc": "Q2 2018 release",
+   "rev_guide_usd_b": [
+    51.6,
+    53.1
+   ],
+   "eps_guide": [
+    16.75,
+    17.05
+   ],
+   "segop_guide_usd_b": [
+    5.575,
+    5.725
+   ],
+   "cfo_words": "at least $3,300",
+   "note": "the 'Current Update' column (beside 'April Outlook')"
+  },
+  {
+   "fy": 2018,
+   "published": "2018-10-23",
+   "source": "LM72",
+   "doc": "Q3 2018 release",
+   "rev_guide_usd_b": [
+    53.0,
+    53.0
+   ],
+   "eps_guide": [
+    17.5,
+    17.5
+   ],
+   "segop_guide_usd_b": [
+    5.8,
+    5.8
+   ],
+   "cfo_words": "at least $3,400",
+   "note": "the 'Current Update' column (beside 'July Outlook')"
+  },
+  {
+   "fy": 2019,
+   "published": "2019-01-29",
+   "source": "LM73",
+   "doc": "Q4 2018 release",
+   "rev_guide_usd_b": [
+    55.75,
+    57.25
+   ],
+   "eps_guide": [
+    19.15,
+    19.45
+   ],
+   "segop_guide_usd_b": [
+    6.0,
+    6.15
+   ],
+   "cfo_words": "at least $7,400",
+   "note": "the '2019 Current Outlook' column"
+  },
+  {
+   "fy": 2019,
+   "published": "2019-04-23",
+   "source": "LM75",
+   "doc": "Q1 2019 release",
+   "rev_guide_usd_b": [
+    56.75,
+    58.25
+   ],
+   "eps_guide": [
+    20.05,
+    20.35
+   ],
+   "segop_guide_usd_b": [
+    6.1,
+    6.25
+   ],
+   "cfo_words": "at least $7,500",
+   "note": "the 'Current Update' column (beside 'January 2019')"
+  },
+  {
+   "fy": 2019,
+   "published": "2019-07-23",
+   "source": "LM76",
+   "doc": "Q2 2019 release",
+   "rev_guide_usd_b": [
+    58.25,
+    59.75
+   ],
+   "eps_guide": [
+    20.85,
+    21.15
+   ],
+   "segop_guide_usd_b": [
+    6.325,
+    6.475
+   ],
+   "cfo_words": "at least $7,600",
+   "note": "the 'Current Update' column (beside 'April Outlook')"
+  },
+  {
+   "fy": 2019,
+   "published": "2019-10-22",
+   "source": "LM77",
+   "doc": "Q3 2019 release",
+   "rev_guide_usd_b": [
+    59.1,
+    59.1
+   ],
+   "eps_guide": [
+    21.55,
+    21.55
+   ],
+   "segop_guide_usd_b": [
+    6.425,
+    6.425
+   ],
+   "cfo_words": "at least $7,600",
+   "note": "the 'Current Update' column (beside 'July Outlook')"
+  },
+  {
+   "fy": 2020,
+   "published": "2020-01-28",
+   "source": "LM78",
+   "doc": "Q4 2019 release",
+   "rev_guide_usd_b": [
+    62.75,
+    64.25
+   ],
+   "eps_guide": [
+    23.65,
+    23.95
+   ],
+   "segop_guide_usd_b": [
+    6.8,
+    6.95
+   ],
+   "cfo_words": "at least $7,600",
+   "note": "the '2020 Current Outlook' column"
+  },
+  {
+   "fy": 2020,
+   "published": "2020-04-21",
+   "source": "LM80",
+   "doc": "Q1 2020 release",
+   "rev_guide_usd_b": [
+    62.25,
+    64.0
+   ],
+   "eps_guide": [
+    23.65,
+    23.95
+   ],
+   "segop_guide_usd_b": [
+    6.8,
+    6.95
+   ],
+   "cfo_words": "at least $7,600",
+   "note": "the 'Current Guidance' column (beside 'January 2020')"
+  },
+  {
+   "fy": 2020,
+   "published": "2020-07-21",
+   "source": "LM81",
+   "doc": "Q2 2020 release",
+   "rev_guide_usd_b": [
+    63.5,
+    65.0
+   ],
+   "eps_guide": [
+    23.75,
+    24.05
+   ],
+   "segop_guide_usd_b": [
+    6.9,
+    7.05
+   ],
+   "cfo_words": "at least $8,000",
+   "note": "the 'Current Guidance' column (beside 'April 2020 Outlook')"
+  },
+  {
+   "fy": 2020,
+   "published": "2020-10-20",
+   "source": "LM82",
+   "doc": "Q3 2020 release",
+   "rev_guide_usd_b": [
+    65.25,
+    65.25
+   ],
+   "eps_guide": [
+    24.45,
+    24.45
+   ],
+   "segop_guide_usd_b": [
+    7.125,
+    7.125
+   ],
+   "cfo_words": "at least $8,000",
+   "note": "the 'Current Guidance' column (beside 'July 2020 Outlook')",
+   "eps_label": "diluted EPS from continuing operations"
+  },
+  {
+   "fy": 2021,
+   "published": "2021-01-26",
+   "source": "LM83",
+   "doc": "Q4 2020 release",
+   "rev_guide_usd_b": [
+    67.1,
+    68.5
+   ],
+   "eps_guide": [
+    26.0,
+    26.3
+   ],
+   "segop_guide_usd_b": [
+    7.355,
+    7.495
+   ],
+   "cfo_words": "at least $8,300",
+   "note": "the '2021 Current Outlook' column"
+  },
+  {
+   "fy": 2021,
+   "published": "2021-04-20",
+   "source": "LM85",
+   "doc": "Q1 2021 release",
+   "rev_guide_usd_b": [
+    67.3,
+    68.7
+   ],
+   "eps_guide": [
+    26.4,
+    26.7
+   ],
+   "segop_guide_usd_b": [
+    7.38,
+    7.52
+   ],
+   "cfo_words": "at least $8,900",
+   "note": "the 'Current Guidance' column (beside 'January 2021 Outlook')"
+  },
+  {
+   "fy": 2021,
+   "published": "2021-07-26",
+   "source": "LM86",
+   "doc": "Q2 2021 release",
+   "rev_guide_usd_b": [
+    67.3,
+    68.7
+   ],
+   "eps_guide": [
+    26.7,
+    27.0
+   ],
+   "segop_guide_usd_b": [
+    7.38,
+    7.52
+   ],
+   "cfo_words": "at least $8,900",
+   "note": "the 'Current Guidance' column (beside 'April 2021 Outlook')"
+  },
+  {
+   "fy": 2021,
+   "published": "2021-08-04",
+   "source": "LM87",
+   "doc": "8-K of 2021-08-03",
+   "rev_guide_usd_b": [
+    67.3,
+    68.7
+   ],
+   "eps_guide": [
+    26.7,
+    27.0
+   ],
+   "segop_guide_usd_b": [
+    7.38,
+    7.52
+   ],
+   "cfo_words": "at least $8,900",
+   "note": "the 'Current Update' column (beside 'July 2021 Guidance' and 'Pension Transfer Impact'); the EPS outlook incorporates an expected noncash pension settlement charge of $4.75 a share (GAAP $21.95 - $22.25); the figure without it, the July guidance column's $26.70 - $27.00, stands (the ACN rule for a guide given with and without an announced item)",
+   "eps_label": "diluted EPS without the expected pension settlement charge"
+  },
+  {
+   "fy": 2021,
+   "published": "2021-10-26",
+   "source": "LM88",
+   "doc": "Q3 2021 release",
+   "rev_guide_usd_b": [
+    67.0,
+    67.0
+   ],
+   "eps_guide": [
+    27.17,
+    27.17
+   ],
+   "segop_guide_usd_b": [
+    7.35,
+    7.35
+   ],
+   "cfo_words": "at least $8,300",
+   "note": "the 'Current Update' column (beside 'August 2021'); the EPS outlook is given with and without the pension settlement charge booked in the third quarter; the figure without it stands (the ACN rule): diluted EPS - adjusted ~$27.17, diluted EPS ~$22.45 (GAAP)",
+   "eps_label": "diluted EPS - adjusted (without the pension settlement charge)"
   }
  ],
  "dividends": [
@@ -4637,6 +6339,30 @@
    "source": "LM67",
    "quarterly": 2.0,
    "note": "$2.00 quarterly ('increased its quarterly dividend rate by 10 percent, or $0.18 per share, to $2.00 per share', Q3 2017 release)"
+  },
+  {
+   "published": "2018-10-23",
+   "source": "LM72",
+   "quarterly": 2.2,
+   "note": "$2.20 quarterly ('As previously reported on Sept. 27, 2018, the corporation increased its quarterly dividend by $0.20 per share, to $2.20 per share', Q3 2018 release; no 8-K that day)"
+  },
+  {
+   "published": "2019-10-22",
+   "source": "LM77",
+   "quarterly": 2.4,
+   "note": "$2.40 quarterly ('As previously reported on Sept. 26, 2019, the corporation increased its quarterly dividend by $0.20 per share, to $2.40 per share', Q3 2019 release; no 8-K that day)"
+  },
+  {
+   "published": "2020-10-20",
+   "source": "LM82",
+   "quarterly": 2.6,
+   "note": "$2.60 quarterly ('As previously reported on Sept. 25, 2020, the corporation increased its quarterly dividend by $0.20 per share, to $2.60 per share', Q3 2020 release; no 8-K that day)"
+  },
+  {
+   "published": "2021-10-26",
+   "source": "LM88",
+   "quarterly": 2.8,
+   "note": "$2.80 quarterly ('As previously announced on Sept. 23, 2021, the company increased its quarterly dividend by $0.20 per share, to $2.80 per share', Q3 2021 release; no 8-K that day)"
   }
  ],
  "events": [],

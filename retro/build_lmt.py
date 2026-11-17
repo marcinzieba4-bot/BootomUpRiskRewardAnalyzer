@@ -31,13 +31,18 @@ From 2014 (retro/README.md, "LMT 2014-2017"): the same encodings through Sikorsk
 discontinued operations from the Q3 2016 release; the Q4 2016 release restates FY2015's EPS, the FY2016 10-K 2012-2016, earlier years
 stay as published: a seam); the current column is found by its header (the Q3 2016 release's 'Current Outlook Adjusted for IS&GS');
 ECOMMERCE, STREAMING and ENERGY_TRANSITION are read as out of scope, and the texts give every live theme's reading as of AS_OF.
+From 2018 (retro/README.md, "LMT 2018-2021"): FY2017's GAAP EPS fails the AAPL FY2002 test (the Tax Act), so it is the company's figure
+from the latest filing that publishes one ($13.33, restated to $13.27 by the Q4 2018 release); the 2018 net sales guide is read against
+the 2017 pro forma for the 2018 standards that the release states beside it ('rev_base_usd_b', the ACN restated-base rule); a guide given
+with and without an announced item takes the figure without it (the 2021 pension settlement); EPS growth against a year-ago loss is over
+the loss's absolute value (the CAT rule); EV and CRYPTO are read as out of scope.
 Signals: backlog growth (total backlog at the quarter's end against the year-ago quarter's end, as that quarter's own release shows it:
 the MSFT rule), net sales growth, segment operating profit growth, diluted EPS growth and the segment operating margin change, each
 against the year-ago quarter as the release shows it.
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
-is the first trading day after it. Every earnings 8-K of 2006-2017 was accepted before the open (06:30-07:42 ET) on a Monday (Q2 2015
-only), a Tuesday, a Wednesday or a Thursday, so each such week is dated the next trading day.
+is the first trading day after it. Every earnings 8-K of 2006-2021 was accepted before the open (06:30-07:42 ET) on a Monday (Q2 2015,
+Q4 2017 and Q2 2021), a Tuesday, a Wednesday or a Thursday, so each such week is dated the next trading day.
 
 Output goes to staging/retrospective/LMT until the series is added to the archive (--out archive/retrospective/LMT).
 
@@ -45,6 +50,7 @@ Usage
   python3 retro/build_lmt.py --weekly 2008-01-01 2009-12-31
   python3 retro/build_lmt.py --weekly 2010-01-04 2013-12-31
   python3 retro/build_lmt.py --weekly 2014-01-06 2017-12-31
+  python3 retro/build_lmt.py --weekly 2018-01-01 2021-12-31
   python3 retro/build_lmt.py 2008-01-25
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/LMT/<AS_OF>
 """
@@ -77,13 +83,18 @@ RULE_T_KEYS = {"backlog": (1, False), "sales": (1, False), "segop": (1, False), 
 # ENERGY_TRANSITION become live; their scopes (physical retail, linear TV, oil, gas and coal reserves and refining) name nothing Lockheed
 # Martin sells or holds, so they are read as out of scope too, and the FY2016 10-K's one mention of cloud computing (a technology
 # advance in its competition paragraph) leaves CLOUD out of scope (retro/README.md, "LMT 2014-2017"; text only)
-ENCODED_THEMES = {"OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING", "ENERGY_TRANSITION"}
-THEME_ORDER = ("OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING", "ENERGY_TRANSITION")
+# From 2020 EV and CRYPTO become live; their scopes (road vehicles' powertrains and fuel retail, payments, banks and exchanges) name
+# nothing Lockheed Martin sells or holds either, and from the FY2017 vintage the theme reading quotes the 10-K's oil and gas market for
+# Sikorsky's commercial helicopters ('oil_words'); text only (retro/README.md, "LMT 2018-2021")
+ENCODED_THEMES = {"OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING", "ENERGY_TRANSITION", "EV", "CRYPTO"}
+THEME_ORDER = ("OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING", "ENERGY_TRANSITION", "EV", "CRYPTO")
 THEME_SCOPE = {"OFFSHORE": "offshore delivery taking share in Western consulting, systems integration and outsourcing",
                "CLOUD": "public cloud displacing on-premise hardware, storage, databases and data-center outsourcing",
                "ECOMMERCE": "e-commerce displacing physical retail, malls, grocery and distribution",
                "STREAMING": "streaming displacing linear TV networks and pay-TV bundles",
-               "ENERGY_TRANSITION": "decarbonisation stranding oil, gas and coal reserves and refining"}
+               "ENERGY_TRANSITION": "decarbonisation stranding oil, gas and coal reserves and refining",
+               "EV": "battery-electric vehicles displacing ICE powertrains, auto parts suppliers and fuel retail",
+               "CRYPTO": "crypto-assets disintermediating payments networks, banks, exchanges and remittance"}
 
 
 def theme_reading(themes, as_of, h, plural):
@@ -94,14 +105,19 @@ def theme_reading(themes, as_of, h, plural):
     scope = scopes[0] if len(scopes) == 1 else ", ".join(scopes[:-1]) + ", and " + scopes[-1]
     s = (lambda one, many: many if plural else one)
     doc = s("the 10-K", "the 10-Ks")
-    absent = ["offshore competition"] + [w for k, w in (("ECOMMERCE", "e-commerce"), ("STREAMING", "streaming")) if k in live]
+    absent = ["offshore competition"] + [w for k, w in (("ECOMMERCE", "e-commerce"), ("STREAMING", "streaming"),
+                                                         ("EV", "electric vehicles"), ("CRYPTO", "crypto-assets")) if k in live]
     text = f"{scope}; {doc} {s('names', 'name')} no " + (absent[0] if len(absent) == 1 else
                                                          ", ".join(absent[:-1]) + " or " + absent[-1])
     if "CLOUD" in live:
         text += (f" and {s('names', 'name')} cloud computing only among technological advances 'enabling new factors of competition for "
                  "both traditional and non-traditional competitors', not as a substitute for its products" if h.get("cloud_words") else
                  f" and {s('does', 'do')} not mention cloud")
-    if "ENERGY_TRANSITION" in live:
+    if "ENERGY_TRANSITION" in live and h.get("oil_words"):
+        text += (f"; Lockheed Martin holds no oil, gas or coal reserves or refining, and {doc} {s('names', 'name')} oil and gas only as a "
+                 f"market for Sikorsky's commercial helicopters ('{h['oil_words']}') and climate change only among concerns that could "
+                 f"bring future regulation ('{h['climate_words']}')")
+    elif "ENERGY_TRANSITION" in live:
         text += (f"; Lockheed Martin holds no oil, gas or coal reserves or refining, and {doc} {s('names', 'name')} climate change only "
                  f"among concerns that could bring future regulation ('{h['climate_words']}')")
     return text
@@ -170,7 +186,9 @@ def check_print(p):
             "backlog_pct": round((r["backlog_m"] / r["backlog_prior_m"] - 1) * 100, 1),
             "segop_pct": round((r["segop_m"] / r["segop_prior_m"] - 1) * 100, 1),
             "seg_margin": round(m, 2), "seg_margin_bp": round((m - m0) * 100, 1),
-            "eps_pct": round((p["eps_q"] / p["eps_q_prior"] - 1) * 100, 1),
+            # against a year-ago loss, growth over the loss's absolute value (the CAT rule; first needed for Q4 2018)
+            "eps_pct": round((p["eps_q"] / p["eps_q_prior"] - 1) * 100, 1) if p["eps_q_prior"] > 0 else
+                       round((p["eps_q"] - p["eps_q_prior"]) / abs(p["eps_q_prior"]) * 100, 1),
             "diluted_shares_m": float(r["diluted_shares_m"])}
     for k, v in want.items():
         assert p[k] == v or abs(p[k] - v) < 1e-9, (p["quarter"], k, p[k], v)
@@ -270,10 +288,15 @@ def build(as_of, facts, raw, spx, engine, out):
         eps_now = eps_hist[last_fy]
         eps_fig = None
         eps_label = f"{fy_e}: no numeric diluted EPS guide yet, FY{last_fy % 100:02d}'s ${money(eps_now)} stands"
+    # a release that states the last full year restated for an accounting change beside the guide gives the base the guide is read
+    # against (the ACN restated-base rule; 'rev_base_usd_b': the Q4 2017 release's 2017 pro forma for the 2018 standards); otherwise the
+    # last full year in the history (retro/README.md, "LMT 2018-2021")
+    gb = stated("rev_base_usd_b")
     if gr:                                             # a dollar range, read against the last full year (the PFE rule)
-        fwd = [round((v / last_rev - 1) * 100, 1) for v in gr["rev_guide_usd_b"]]
+        base_rev, base_txt = ((gb["rev_base_usd_b"], gb["rev_base_label"]) if gb else (last_rev, f"{fy_prev_s}'s"))
+        fwd = [round((v / base_rev - 1) * 100, 1) for v in gr["rev_guide_usd_b"]]
         rev_fig = usd_rng(*gr["rev_guide_usd_b"])
-        fwd_kind = f"fiscal-year net sales guide {rev_fig} on {fy_prev_s}'s ${last_rev:.3f}B (no next-quarter guide)"
+        fwd_kind = f"fiscal-year net sales guide {rev_fig} on {base_txt} ${base_rev:.3f}B (no next-quarter guide)"
         fy_rev_b, fy_rev_label = sum(gr["rev_guide_usd_b"]) / 2, f"{fy_now} net sales guide midpoint"
         fwd_label, fwd_short, fwd_period = f"{fy_now} net sales guide", f"{fy_now} guide", fy_now
     else:                                              # no net sales guide in numbers: the latest quarter's growth as reported
