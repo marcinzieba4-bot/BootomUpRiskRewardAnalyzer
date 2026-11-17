@@ -93,7 +93,7 @@ full-year actuals for the year after the latest vintage before CUTOFF, a later g
 operating profit ranges, cash-from-operations words, a note), and a later vintage whose every quoted text and figure is planted, the
 planted print restating every year of the history and the guide with an EPS label (LMT 2010-2013), the later vintage with planted
 cloud and climate words for the theme reading (LMT 2014-2017), and the guide with a planted base and the vintage with planted oil
-words (LMT 2018-2021); every
+words (LMT 2018-2021), and the vintage with planted severe-weather and artificial-intelligence words (LMT 2022-2026); every
 fact sheet with a 'splits' list, SHW's from 2021-2023: a later split on the price data's next split date; a CLOUD event
 from a later 10-K, as for every live theme), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
@@ -702,7 +702,8 @@ try:
                  dividend_annual=9.99, dividend_note="PLANTED", cash_return_text="PLANTED", groups=[["PLANTED", 1, -99]],
                  groups_basis="PLANTED", margin_signal_name="PLANTED", cash_words="PLANTED",
                  why_themes=True, cloud_words="PLANTED", climate_words="PLANTED",   # the theme reading's words (LMT 2014-2017)
-                 oil_words="PLANTED")                                               # and the oil and gas market (LMT 2018-2021)
+                 oil_words="PLANTED",                                               # and the oil and gas market (LMT 2018-2021)
+                 weather_words="PLANTED", ai_words=["PLANTED"] * 3)                 # the climate and AI words (LMT 2022-2026)
         # a later print restating every year of the history before CUTOFF (the 'restates' field of LMT 2010-2013)
         last["restates"] = {y: {"eps": 0.01, "note": "PLANTED"} for y in v0["eps_normalized"]}
     if TICKER == "XOM":    # the excluded-year and restatement fields (XOM 2021-2023): a later vintage excluding a year, and the planted
