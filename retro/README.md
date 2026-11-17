@@ -18546,6 +18546,8 @@ Judgement calls that could carry hindsight:
 - the capital-expenditure estimates and product-line words left unencoded (no input either way);
 - DURABLE rather than CYCLICAL (label only), and no theme for the competitors in Taiwan and China.
 
+The hindsight results are in `staging/retrospective/MU/FINDINGS.md`: hypotheses, never inputs.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
