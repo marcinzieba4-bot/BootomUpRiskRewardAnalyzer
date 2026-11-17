@@ -1,7 +1,7 @@
 # LMT retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the LMT weekly dates: 731 from 2008-01-04 to 2021-12-31 (105 to 2009-12-31, 209 from 2010-01-08 to
-2013-12-31, 208 from 2014-01-10 to 2017-12-29, 209 from 2018-01-05), all
+Patterns seen in `outcome.json` for the LMT weekly dates: 985 from 2008-01-04 to 2026-11-13 (105 to 2009-12-31, 209 from 2010-01-08 to
+2013-12-31, 208 from 2014-01-10 to 2017-12-29, 209 from 2018-01-05 to 2021-12-31, 254 from 2022-01-07), all
 Lockheed Martin Corporation (NYSE: LMT). They are **labels and hypotheses**: never feed them back into the method or the fact sheet. Each
 batch has its own section below.
 
@@ -602,3 +602,128 @@ CHEAP should clear the hurdle or beat SPY, FAIR land within 15pp of SPY and RICH
 - **Ratio B and the gap over the floor sort mostly by year again.** Ratio B under 0.5 (43 dates, 2020-03-20 to 2021-12-31) held on all 43; Ratio
   B 1-2 (66, mostly 2019) held on 21. The floor gaps split the same way. One stock over four years mostly tests "buy lower" within a year,
   not across years (retro/README.md, "Scoring a single stock").
+
+# 2022-2026 (254 dates)
+
+The 254 weekly dates from 2022-01-07 to 2026-11-13 were scored only after their point-in-time build was committed (eabc0244c) and their
+decisions, controls, leak scan and sensitivities (01f9ab51b) and firewall result (f82175e69) were written to the README and committed; the
+outcomes were computed on 2026-11-17, and nothing below was read for any 2022-2026 decision. Only the 150 dates to 2024-11-15 have a 2-year
+horizon (the last ends 2026-11-13); 2025's have 1 year on 46 dates and 2026's 6 months on 20, and 26 dates of 2026 have no horizon yet.
+Total returns include the quarterly dividends: $21.45-27.00 a share over two years, 4.4-6.5% of the entry price. No split falls in any
+horizon. The hurdle, the call checks and the medians are as above: CHEAP should clear the hurdle or beat SPY, FAIR land within 15pp of
+SPY and RICH miss the hurdle and lag SPY, over two years.
+
+## 2022 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 7 | +15.9% | +13.6% to +33.3% | 1 | 5 | +16.9% | 5 |
+| class RICH, legacy tier ACCUMULATE | 6 | +41.1% | +1.4% to +63.2% | 3 | 0 | +15.3% | 3 |
+| class RICH, legacy tier AVOID | 10 | +11.8% | +4.5% to +28.3% | 0 | 0 | +2.2% | 10 |
+| class RICH, legacy tier BUY | 19 | +11.1% | -0.5% to +22.5% | 0 | 0 | +3.0% | 19 |
+| class RICH, legacy tier WATCHLIST | 10 | +38.0% | +32.4% to +46.5% | 10 | 3 | +8.8% | 0 |
+| latest print Q3 2021 (2022-01-07 to 2022-01-21) | 3 | +30.6% | +29.7% to +33.3% | 1 | 3 | +22.5% | 3 |
+| latest print Q4 2021 (2022-01-26 to 2022-04-14) | 12 | +7.1% | -0.5% to +15.9% | 0 | 2 | +3.8% | 10 |
+| latest print Q1 2022 (2022-04-20 to 2022-07-15) | 13 | +13.7% | +7.5% to +22.5% | 0 | 0 | +3.1% | 13 |
+| latest print Q2 2022 (2022-07-20 to 2022-10-14) | 13 | +40.8% | +26.3% to +63.2% | 12 | 3 | +9.6% | 1 |
+| latest print Q3 2022 (2022-10-19 to 2022-12-30) | 11 | +13.0% | +4.5% to +44.7% | 1 | 0 | +2.2% | 10 |
+| price 25-50% over the EPP floor | 25 | +32.4% | -0.5% to +63.2% | 13 | 3 | +4.2% | 12 |
+| price 50% or more over the EPP floor | 10 | +11.8% | +4.5% to +28.3% | 0 | 0 | +2.2% | 10 |
+| price under 25% over the EPP floor | 17 | +15.8% | +7.3% to +33.3% | 1 | 5 | +10.5% | 15 |
+
+- **CHEAP on the 7 dates to 2022-02-18** ($360.14-396.19) held on 5: +13.6% to +33.3% over two years against SPY's +3.2% to +18.0%.
+- **RICH held on 32 of 45.** Every RICH date of the BUY and AVOID tiers held (29, -0.5% to +28.3%, behind SPY, which ran +14.3% to +67.2%); the 13 dates after the Q2 2022 print (2022-07-20 to 2022-10-14, on the GAAP ~$21.55 outlook) held on 1, returning
+  +26.3% to +63.2% (12 cleared the hurdle) as their two years ended in July-October 2024, around the highest price of the 2024 dates
+  ($611.81 on 2024-10-18).
+- Over three years 3 of the 52 beat SPY and none cleared the hurdle. The two-year price landed at BASE on 28 dates and BULL on 24.
+
+## 2023 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 13 | +8.4% | -0.5% to +34.8% | 1 | 0 | +11.8% | 1 |
+| class FAIR, legacy tier BUY | 3 | +15.6% | +14.9% to +15.6% | 0 | 0 | +7.1% | 0 |
+| class RICH, legacy tier ACCUMULATE | 7 | -1.6% | -6.7% to +2.6% | 0 | 0 | +4.0% | 7 |
+| class RICH, legacy tier AVOID | 1 | +3.7% | +3.7% to +3.7% | 0 | 0 | +5.0% | 1 |
+| class RICH, legacy tier BUY | 26 | +8.2% | -3.0% to +16.8% | 0 | 0 | +7.9% | 26 |
+| class RICH, legacy tier WATCHLIST | 2 | +14.6% | +12.9% to +16.2% | 0 | 0 | +11.4% | 2 |
+| latest print Q3 2022 (2023-01-06 to 2023-01-20) | 3 | +12.9% | +3.7% to +16.2% | 0 | 0 | +10.5% | 3 |
+| latest print Q4 2022 (2023-01-25 to 2023-04-14) | 12 | -0.8% | -6.7% to +14.9% | 0 | 0 | +5.3% | 11 |
+| latest print Q1 2023 (2023-04-19 to 2023-07-14) | 13 | +8.4% | -1.2% to +11.0% | 0 | 0 | +9.7% | 13 |
+| latest print Q2 2023 (2023-07-19 to 2023-10-13) | 13 | +8.4% | -0.5% to +34.8% | 1 | 0 | +11.8% | 1 |
+| latest print Q3 2023 (2023-10-18 to 2023-12-29) | 11 | +13.3% | +3.5% to +16.8% | 0 | 0 | +4.5% | 9 |
+| price 25-50% over the EPP floor | 12 | -1.2% | -6.7% to +16.2% | 0 | 0 | +5.0% | 12 |
+| price 50% or more over the EPP floor | 1 | +3.7% | +3.7% to +3.7% | 0 | 0 | +5.0% | 1 |
+| price under 25% over the EPP floor | 39 | +9.4% | -0.5% to +34.8% | 1 | 0 | +9.4% | 24 |
+
+- **RICH held on all 36**: -6.7% to +16.8% over two years against SPY's +26.9% to +60.5%, 27.8-58.9pp behind.
+- **The CHEAP run of 2023-07-19 to 2023-10-13** ($400.73-454.05, after the Q2 2023 print) held on 1 of 13: -0.5% to +34.8% against SPY's
+  +40.9% to +59.7%, 24.9-47.0pp behind; the price landed at BASE on 10 and at BEAR on 3. The 3 FAIR dates missed SPY by 32-55pp.
+- Over three years (45 dates) none beat SPY or cleared the hurdle.
+
+## 2024 (52 dates, 46 with a 2-year horizon)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 9 | +23.9% | +16.7% to +60.0% | 4 | 4 | +12.8% | 4 |
+| class FAIR, legacy tier BUY | 10 | +17.8% | +13.7% to +61.3% | 3 | 2 | +10.5% | 1 |
+| class RICH, legacy tier ACCUMULATE | 1 | +12.7% | +12.7% to +12.7% | 0 | 0 | +10.3% | 1 |
+| class RICH, legacy tier AVOID | 14 | +1.0% | -12.0% to +13.4% | 0 | 0 | -4.6% | 14 |
+| class RICH, legacy tier BUY | 9 | +41.2% | +17.8% to +54.3% | 7 | 5 | +10.4% | 2 |
+| class RICH, legacy tier WATCHLIST | 3 | +18.3% | +16.5% to +21.7% | 0 | 0 | +2.0% | 3 |
+| latest print Q3 2023 (2024-01-05 to 2024-01-19) | 3 | +24.6% | +17.8% to +32.9% | 1 | 0 | +2.0% | 2 |
+| latest print Q4 2023 (2024-01-24 to 2024-04-19) | 13 | +54.3% | +33.4% to +61.3% | 13 | 11 | +11.8% | 5 |
+| latest print Q1 2024 (2024-04-24 to 2024-07-19) | 13 | +17.1% | +12.7% to +23.9% | 0 | 0 | +11.1% | 1 |
+| latest print Q2 2024 (2024-07-24 to 2024-10-18) | 13 | -2.0% | -12.0% to +18.3% | 0 | 0 | -4.7% | 13 |
+| latest print Q3 2024 (2024-10-23 to 2024-12-27) | 4 | +13.5% | +5.2% to +21.7% | 0 | 0 | -0.5% | 4 |
+| price 25-50% over the EPP floor | 14 | +8.4% | -6.1% to +21.7% | 0 | 0 | -3.9% | 14 |
+| price 50% or more over the EPP floor | 3 | -11.2% | -12.0% to -5.3% | 0 | 0 | -9.8% | 3 |
+| price under 25% over the EPP floor | 29 | +24.6% | +12.7% to +61.3% | 14 | 11 | +11.1% | 8 |
+
+- **The dates after the Q4 2023 print** (2024-01-24 to 2024-04-19) returned +33.4% to +61.3%: all 13 cleared the hurdle and 11 beat SPY,
+  whatever their class (held on 5).
+- **RICH after the Q2 2024 print** (2024-07-24 to 2024-10-18, $515.20-611.81) held on all 13 (-12.0% to +18.3%); the 14 RICH-AVOID dates of 2024
+  all held. CHEAP held on 4 of 9, FAIR on 1 of 10. The 6 dates from 2024-11-22 have no 2-year horizon yet.
+
+## 2025 and 2026 (98 dates, no 2-year horizon yet)
+
+- **2025, 1 year (46 dates):** CHEAP (9) returned a median +45.8% and beat SPY on 7; RICH (22) +28.0%, ahead on 14; FAIR (15) +13.6%, ahead on 3.
+  One year is not the method's horizon, and these labels will move.
+- **2026, 6 months (20 dates):** RICH (17) a median -10.6%, behind SPY on 15; FAIR (3) +19.0%, ahead on all 3. 26 dates have no horizon.
+
+## Across 2022-2024 (150 dates with a 2-year horizon; hypotheses, not rules)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP | 29 | +17.7% | -0.5% to +60.0% | 6 | 9 | +13.1% | 10 |
+| class FAIR | 13 | +16.3% | +13.7% to +61.3% | 3 | 2 | +10.2% | 1 |
+| class RICH | 108 | +10.8% | -12.0% to +63.2% | 20 | 8 | +4.2% | 88 |
+| legacy tier ACCUMULATE | 14 | +2.0% | -6.7% to +63.2% | 3 | 0 | +4.4% | 11 |
+| legacy tier AVOID | 25 | +6.4% | -12.0% to +28.3% | 0 | 0 | -3.0% | 25 |
+| legacy tier BUY | 96 | +14.3% | -3.0% to +61.3% | 16 | 16 | +9.8% | 58 |
+| legacy tier WATCHLIST | 15 | +33.6% | +12.9% to +46.5% | 10 | 3 | +8.4% | 5 |
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| CHEAP, under 25% over the floor | 29 | +17.7% | -0.5% to +60.0% | 6 | 9 | +13.1% | 10 |
+| FAIR, under 25% over the floor | 13 | +16.3% | +13.7% to +61.3% | 3 | 2 | +10.2% | 1 |
+| RICH, under 25% over the floor | 43 | +12.7% | +3.5% to +54.3% | 7 | 5 | +8.5% | 36 |
+| RICH, 25-50% over the floor | 51 | +9.0% | -6.7% to +63.2% | 13 | 3 | +2.4% | 38 |
+| RICH, 50% or more over the floor | 14 | +8.6% | -12.0% to +28.3% | 0 | 0 | +1.9% | 14 |
+| Ratio B 0-0.5 | 45 | +15.8% | -0.5% to +61.3% | 10 | 12 | +11.0% | 26 |
+| Ratio B 0.5-1.0 | 65 | +10.6% | -6.7% to +63.2% | 9 | 4 | +8.8% | 43 |
+| Ratio B 1.0-2.0 | 17 | +33.4% | +11.1% to +46.5% | 10 | 3 | +5.9% | 7 |
+| Ratio B 2.0 or more | 23 | +5.8% | -12.0% to +28.3% | 0 | 0 | -2.0% | 23 |
+
+- **RICH held, CHEAP and FAIR did not: the reverse of 2008-2021.** RICH held on 88 of 108 (median +10.8% over two years, ahead of SPY on 8),
+  CHEAP on 10 of 29 (+17.7%) and FAIR on 1 of 13. LMT beat SPY over two years on only 19 of the 150 dates, so RICH's "miss the hurdle and lag
+  SPY" held almost by default and CHEAP's "clear the hurdle or beat SPY" rarely: the class order is again largely the calendar (SPY's
+  2023-2024 rise). With 2008-2021, LMT's CHEAP calls have held on 233 of 411 and its FAIR and RICH calls on 163 of 470 (2008-2024).
+- **The gap over the floor and Ratio B sort by calendar too.** RICH 50% or more over the floor (14) and Ratio B 2 or more (23) held on every
+  date; Ratio B 1-2 (17, 10 of them the dates after the Q2 2022 print) returned the most (+33.4%) and held on 7.
+- **The largest encodings, checked against the outcome (hindsight, never a reason to change them):** of the 58 classes that the company's
+  adjusted EPS would move, 22 have a 2-year horizon: 5 held as built, 13 would have held as moved; FY2017 at GAAP, 54 with a horizon: 28
+  as built, 21 as moved; the 2022 outlook without the settlement, 7: 4 as built, 3 as moved. Every signal at BEAR (42 with a horizon) would
+  have held on 29 against 11 as built, and at XBULL (98) on 24 against 66: as in 2008-2009 and 2018-2021 the BEAR signals would have helped,
+  as in 2010-2013 they would not. One stock, opposite answers; none of it is a rule.
+- The two-year price landed at BASE on 106 dates, BULL on 41 and BEAR on 3.
