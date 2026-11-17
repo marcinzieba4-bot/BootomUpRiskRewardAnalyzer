@@ -27,7 +27,12 @@ Every number is printed by `python3 staging/retrospective/ratio_b_eps_24.py`.
   later one.
 - The audit was widened for two guide forms the thirteen use: a guide quoted with its date in the model's comment (F,
   SO), and a net-income guide divided by shares (KMI).
-- The repo's point-in-time lint, on the thirteen's first-of-month signal dates: pending; running, and recorded in a follow-up commit.
+- The repo's point-in-time lint, on the thirteen's first-of-month signal dates: passed on all 2,701 dates: 0 errors, and every as-of price matched Yahoo's close within 0.5%.
+  Its 583 warnings are the tool's "a later calendar year appears" check. A sample of 541 dates found only:
+  - numbers read as years: share counts (BMY 2,078 and 2,027 million), segment revenue (BKR Digital Solutions $2,057
+    million), a margin in basis points (PFE 2,079);
+  - patent expiries quoted from a 10-K (PFE 2009: Lipitor's U.S. patent "expires in March 2010").
+  None is a later fact.
 
 ## 1. The result: the strategy failed on the new stocks
 
