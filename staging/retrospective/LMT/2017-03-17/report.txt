@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  LMT  ·  Lockheed Martin Corporation  ·  $271.98  ·  RETROSPECTIVE as of 2017-03-17
+  Signal: ✕ AVOID   Ratio B: infx   Adj gap: -1.74  [OVERVALUED]
+  Point-in-time: 12 sources, latest published 2017-03-17; latest print Q4 2016 (Jan 24)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2017E net sales, USD bn  →  FY2019E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Business segment             FY2017E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Aeronautics               $    18.8  $  18.8  $  19.4      +0.0      +0.6
+    +14.1% net sales in FY16
+  Missiles and Fire Contro  $     7.0  $   7.0  $   7.2      +0.0      +0.2
+    -2.4% net sales in FY16
+  Rotary and Mission Syste  $    14.2  $  14.2  $  14.7      +0.0      +0.5
+    +48.1% net sales in FY16
+  Space Systems             $    10.0  $  10.0  $  10.3      +0.0      +0.3
+    +3.3% net sales in FY16
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    50.0  $  50.0  $  51.6      +0.0      +1.6
+  FY2017E = FY16 $47.25B × (1 + 5.8%: FY17 net sales guide midpoint); split pro rata to FY16 net sales by business segment (FY2016 10-K, Selected Financial Data by Business Segment)
+  Q4 2016 (Jan 24): net sales $13.75B +19.4%; backlog -3.4%; segment operating profit +0.8%;
+  segment margin 9.38% (-173.1bp); diluted EPS $3.25 vs $2.63 (+23.6%)
+  Total backlog $96,200M at the quarter's end against $99,600M at December 31, 2015 (Q4 2015 release) (-3.4%); segment operating profit $1,290M against $1,280M a year earlier (+0.8%), as the releases show them; diluted EPS from continuing operations (the release reports discontinued operations); the year-ago backlog is the Q4 2015 release's, with IS&GS
+  FY17 guide (Q4 2016 release): net sales $49.4-50.6B; diluted EPS $12.25-12.55; segment operating profit $5.015-5.135B and cash from operations at least $5,700M (display only: no margin is derived from two guided figures)
+
+  FY2017E EPS check:  $50.0B × 10.3% pre-tax × (1−23.2%) ÷ 0.295B  =  $13.45  (FY2017E EPS, guide midpoint (Q4 2016 release))
+  FY2019E BEAR check: $50.0B × 10.3% ÷ 0.273B  =  $14.56  (scenario $9.83)
+  FY2019E BULL check: $51.6B × 10.7% ÷ 0.273B  =  $15.61  (scenario $14.93)
+  Every 1pp of pre-tax margin ≈ $1.30 EPS ≈ $18/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Backlog growth                     -14.0%   ≥-7.0%    ≥1.0%   ≥29.0%     -3.4%  ◦ BASE  ██░░
+  Net sales growth                   -19.0%   ≥-7.0%    ≥5.0%   ≥20.0%    +19.4%  ▲ BULL  ███░
+  Segment operating profit growth    -18.0%    ≥0.0%   ≥18.0%   ≥22.0%     +0.8%  ◦ BASE  ██░░
+  Diluted EPS growth                  +0.0%   ≥21.0%   ≥41.0%   ≥45.0%    +23.6%  ◦ BASE  ██░░
+  Segment operating margin change   -30.0bp  ≥10.0bp  ≥50.0bp  ≥100.0bp  -173.1bp  ⚠ BEAR  █░░░
+  Disruption theme: none in scope    +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.05 / 4.00
+  Market composite:   3.77 / 4.00  (back-solved from $272 + 15% hurdle)
+  SCA adjustment:    +0.08  ·  EPP-distance adj -0.10  →  Adj composite 2.03  →  Gap -1.74  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY16 net sales +16.6%, backlog +1.5%, segment operating profit +2.5%; Q4 segment margin 9.38% (-173.1bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 21.9x FY17E vs a 13.5x 10-yr median (99th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: FY17 net sales guide +4.6-7.1% vs a 1.8% 9-yr median  (+0.41 × 20%  =  +0.082)
+    +  FY16 year-end cash and cash equivalents $1.837B, FY16 operating cash flow $5.189B, dividend $7.28 a year, repurchases of common stock $2,096M in 2016 (FY2016 10-K)  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Backlog growth                       -3.4%    -14.0%  -10.6%  Orders stop replacing sales
+  Net sales growth                    +19.4%    -19.0%  -38.4%  Program volume falls
+  Segment operating profit growth      +0.8%    -18.0%  -18.8%  Program profits stop growing
+  Diluted EPS growth                  +23.6%     +0.0%  -23.6%  Pension and tax lines take the gains
+  Segment operating margin change   -173.1bp   -30.0bp  +143.1bp  Program margins slip on fixed-price work
+  Disruption theme: none in scope     +2.0/4    +1.0/4  -1.0/4  No live disruption theme covers defen…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$131  (model)  /  $96 (defined)
+  Bear probability (proxy model):  17.0%
+
+  KEY TRIGGER: Backlog growth went from +27.5% (Q3 2016) to -3.4% (Q4 2016);
+  the bear case needs orders to stop replacing sales (net sales +19.4% now) while
+  program margins slip. The 10-K ties future sales to Congressional appropriations for defense procurement
+  and research and development; a terminated or delayed program leaves the backlog.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $12.40  (FY2017E EPS, guide midpoint (Q4 2016 release))
+  Min viable P/E at panic:          11x  [median of calendar-year P/E lows: 2007 13.1x, 2008 8.9x, 2009 7.6x, 2010 9.6x, 2011 8.5x, 2012 11.4x, 2013 10.5x, 2014 14.5x, 2015 18.7x, 2016 16.6x, 2017 20.2x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $136/share
+  Current $272 vs Updated EPP $136:  +99%  ⚠ far above floor — large drawdown room
+  Bear $96 vs Updated EPP $136:  -30%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Backlog growth                              -7.0       -3.6   BASE floor (vs -3 now)
+  Net sales growth                            -7.0      -26.4   BASE floor (vs +19 now)
+  Segment operating profit growth              0.0       -0.8   BASE floor (vs +1 now)
+  Diluted EPS growth                          21.0       -2.6   BASE floor (vs +24 now)
+  Segment operating margin change             10.0     +183.1   BASE floor (vs -173 now)
+  Disruption theme: none in scope              2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $12.40 × (1+7.7%)² = $14.39
+  At 13x P/E (conservative):  $187/share
+  + Cumul. dividends (2yr):  +$15.00/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $187  (▼85 from $272)
+  Conservative total return:  -26% over 2yr  = -13%/yr
+
+  7.7% EPS growth is what is left once the premium multiple (21.9x)
+  mean-reverts to 13x. Breakeven at 13x needs FY2019E EPS of $19.77,
+  i.e. 26.3%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $217.14  –  $272.18  (at 100th pct of range)
+  Annual dividend:      $7.28/share  (yield 2.7%)
+  Realized vol (1yr):   16% annualized
+  Beta vs broad market: 0.46
+  1-sigma range (1yr):  $229  –  $315  ($272 ± 16%)
+  2-sigma range (1yr):  $187  –  $357
+  ────────────────────────────────────────────────────────────
+  Bear $96 requires:  ~4.1σ price move  (unusual — requires fundamental break)
+  A defense prime contractor with a 0.5 beta: the stock is +25% off its March
+  low while Backlog growth went from +27.5% (Q3 2016) to -3.4% (Q4 2016).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        9.83   9.8x  $     96    17.0%      1.2%   +15.7pp  EPS -11.0%/yr (worst year FY07-FY16, capped at 0%); P/E to its 10th pct
+  BASE       14.93  13.5x  $    202    59.2%      4.3%   +54.9pp  EPS +9.7%/yr (FY17 guide + margin + buyback); P/E at its 10-yr median
+  BULL       14.93  17.3x  $    258    20.0%     15.0%    +5.0pp  EPS +9.7%/yr (FY07-FY16 CAGR); P/E holds its 75th pct
+  XBULL      17.90  20.2x  $    362     3.8%     79.5%   -75.7pp  EPS +20.1%/yr (best 2-yr run FY07-FY16); P/E at its 90th pct
+
+  Proxy EV (2yr): $201  /  Market EV: $336  /  Current: $272
+  Conservative EV (2yr, ④): $187 + $15.00 divs = $202 total value
+  Downside (→ Bear $96): 64.7%   Upside (→ Bull $258): -5.1%   Ratio B infx  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $272 the market needs $360 in two years —
+  above the BULL case. That is a market composite of 3.77 against a model
+  read of 2.03: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                        infx     +99%    -1.74  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     5.60x     +99%    -1.46  OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx     +99%    -1.74  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                           infx     +99%    -1.74  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                           infx     +99%    -1.74  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)              infx     +99%    -1.44  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                  infx     +57%    -1.74  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                     infx     +99%    -1.62  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 2017 print (late April) — the next read on backlog (-3.4% now) and the outlook
+  (2) Segment margin — -173.1bp in Q4 2016: program execution on fixed-price and cost-plus work, what must hold if volume does not
+  (3) FY17 diluted EPS guide $12.25-12.55 (Q4 2016 release): the company's own read of the year, FAS/CAS pension adjustment included
+  (4) FY17 net sales guide $49.4-50.6B (Q4 2016 release): program volume in one number
+  (5) Capital return at 22x — Repurchasing 3.2 million shares for $816 million and 8.9 million shares for $2.1 billion during the quarter and year ended Dec. 31, 2016, compared to 3.2 million shares for $707 million and 15.2 million shares for $3.1 billion during the quarter and year ended Dec. 31, 2015: management's own read of the multiple
+  ✕ AVOID  |  EPP floor $136  |  ADD below ~$172  |  TRIM above $258
+════════════════════════════════════════════════════════════════════════
+

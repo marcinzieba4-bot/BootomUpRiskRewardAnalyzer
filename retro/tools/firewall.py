@@ -91,7 +91,8 @@ earnings guide in each form for every year (a per-share figure, net income, a pe
 print whose backlog, net sales, segment operating profit, segment margin, EPS, notes, labels and raw figures are absurd, with absurd
 full-year actuals for the year after the latest vintage before CUTOFF, a later guide with every guided field (net sales, EPS and segment
 operating profit ranges, cash-from-operations words, a note), and a later vintage whose every quoted text and figure is planted, the
-planted print restating every year of the history and the guide with an EPS label (LMT 2010-2013); every
+planted print restating every year of the history and the guide with an EPS label (LMT 2010-2013), the later vintage with planted
+cloud and climate words for the theme reading (LMT 2014-2017); every
 fact sheet with a 'splits' list, SHW's from 2021-2023: a later split on the price data's next split date; a CLOUD event
 from a later 10-K, as for every live theme), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
@@ -698,7 +699,8 @@ try:
                  prev_fy_pretax_margin=-50.0, prev_fy_pretax_margin_note="PLANTED", prev_fy_sales_growth=-60.0, prev_fy_backlog_pct=-60.0,
                  prev_fy_segop_pct=-60.0, tax_rate=0.99, tax_note="PLANTED", cash_b=99.0, cash_label="PLANTED", ocf_b=99.0,
                  dividend_annual=9.99, dividend_note="PLANTED", cash_return_text="PLANTED", groups=[["PLANTED", 1, -99]],
-                 groups_basis="PLANTED", margin_signal_name="PLANTED", cash_words="PLANTED")
+                 groups_basis="PLANTED", margin_signal_name="PLANTED", cash_words="PLANTED",
+                 why_themes=True, cloud_words="PLANTED", climate_words="PLANTED")   # the theme reading's words (LMT 2014-2017)
         # a later print restating every year of the history before CUTOFF (the 'restates' field of LMT 2010-2013)
         last["restates"] = {y: {"eps": 0.01, "note": "PLANTED"} for y in v0["eps_normalized"]}
     if TICKER == "XOM":    # the excluded-year and restatement fields (XOM 2021-2023): a later vintage excluding a year, and the planted

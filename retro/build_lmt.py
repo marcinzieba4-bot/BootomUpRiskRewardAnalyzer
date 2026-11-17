@@ -27,19 +27,24 @@ From 2010 (retro/README.md, "LMT 2010-2013"): diluted EPS from continuing operat
 the line (PAE and EIG in discontinued operations from mid-2010); a release that republishes earlier years' EPS restates them until a later
 10-K ('restates', EPS only: the Q4 2010 and Q4 2011 releases' prior year, the Q1 2011 release's 2008-2010 adjusted for the change in
 revenue recognition); words in the outlook's current column keep the last numeric range, and a level stated as about is a number.
+From 2014 (retro/README.md, "LMT 2014-2017"): the same encodings through Sikorsky (acquired 2015-11-06) and the IS&GS divestiture (in
+discontinued operations from the Q3 2016 release; the Q4 2016 release restates FY2015's EPS, the FY2016 10-K 2012-2016, earlier years
+stay as published: a seam); the current column is found by its header (the Q3 2016 release's 'Current Outlook Adjusted for IS&GS');
+ECOMMERCE, STREAMING and ENERGY_TRANSITION are read as out of scope, and the texts give every live theme's reading as of AS_OF.
 Signals: backlog growth (total backlog at the quarter's end against the year-ago quarter's end, as that quarter's own release shows it:
 the MSFT rule), net sales growth, segment operating profit growth, diluted EPS growth and the segment operating margin change, each
 against the year-ago quarter as the release shows it.
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
-is the first trading day after it. Every earnings 8-K of 2006-2013 was accepted before the open (06:30-07:42 ET) on a Tuesday, a
-Wednesday or a Thursday, so each such week is dated the next trading day.
+is the first trading day after it. Every earnings 8-K of 2006-2017 was accepted before the open (06:30-07:42 ET) on a Monday (Q2 2015
+only), a Tuesday, a Wednesday or a Thursday, so each such week is dated the next trading day.
 
 Output goes to staging/retrospective/LMT until the series is added to the archive (--out archive/retrospective/LMT).
 
 Usage
   python3 retro/build_lmt.py --weekly 2008-01-01 2009-12-31
   python3 retro/build_lmt.py --weekly 2010-01-04 2013-12-31
+  python3 retro/build_lmt.py --weekly 2014-01-06 2017-12-31
   python3 retro/build_lmt.py 2008-01-25
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/LMT/<AS_OF>
 """
@@ -68,8 +73,38 @@ RULE_T_KEYS = {"backlog": (1, False), "sales": (1, False), "segop": (1, False), 
 # the disruption themes this builder has an encoding for: OFFSHORE is live from 2004-11-05 but scoped to offshore delivery in
 # Western consulting, systems integration and outsourcing, which Lockheed Martin's 10-Ks never name as competition; CLOUD is live from
 # 2012-10-30 but scoped to public cloud displacing on-premise hardware, storage, databases and data-center outsourcing, and the
-# FY2009-FY2012 10-Ks never mention cloud (retro/README.md, "LMT 2010-2013"; text only)
-ENCODED_THEMES = {"OFFSHORE", "CLOUD"}
+# FY2009-FY2012 10-Ks never mention cloud (retro/README.md, "LMT 2010-2013"; text only). From 2015 ECOMMERCE, STREAMING and
+# ENERGY_TRANSITION become live; their scopes (physical retail, linear TV, oil, gas and coal reserves and refining) name nothing Lockheed
+# Martin sells or holds, so they are read as out of scope too, and the FY2016 10-K's one mention of cloud computing (a technology
+# advance in its competition paragraph) leaves CLOUD out of scope (retro/README.md, "LMT 2014-2017"; text only)
+ENCODED_THEMES = {"OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING", "ENERGY_TRANSITION"}
+THEME_ORDER = ("OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING", "ENERGY_TRANSITION")
+THEME_SCOPE = {"OFFSHORE": "offshore delivery taking share in Western consulting, systems integration and outsourcing",
+               "CLOUD": "public cloud displacing on-premise hardware, storage, databases and data-center outsourcing",
+               "ECOMMERCE": "e-commerce displacing physical retail, malls, grocery and distribution",
+               "STREAMING": "streaming displacing linear TV networks and pay-TV bundles",
+               "ENERGY_TRANSITION": "decarbonisation stranding oil, gas and coal reserves and refining"}
+
+
+def theme_reading(themes, as_of, h, plural):
+    """Every live theme's scope and what the 10-K (or, plural, the 10-Ks) say about it, from the vintage's own words (LMT 2014-2017)."""
+    live = [k for k in THEME_ORDER if themes[k]["live_from"] <= as_of]
+    scopes = [f"{k} (live from {themes[k]['live_from']}) " + ("is scoped to " if i == 0 else "to ") + THEME_SCOPE[k]
+              for i, k in enumerate(live)]
+    scope = scopes[0] if len(scopes) == 1 else ", ".join(scopes[:-1]) + ", and " + scopes[-1]
+    s = (lambda one, many: many if plural else one)
+    doc = s("the 10-K", "the 10-Ks")
+    absent = ["offshore competition"] + [w for k, w in (("ECOMMERCE", "e-commerce"), ("STREAMING", "streaming")) if k in live]
+    text = f"{scope}; {doc} {s('names', 'name')} no " + (absent[0] if len(absent) == 1 else
+                                                         ", ".join(absent[:-1]) + " or " + absent[-1])
+    if "CLOUD" in live:
+        text += (f" and {s('names', 'name')} cloud computing only among technological advances 'enabling new factors of competition for "
+                 "both traditional and non-traditional competitors', not as a substitute for its products" if h.get("cloud_words") else
+                 f" and {s('does', 'do')} not mention cloud")
+    if "ENERGY_TRANSITION" in live:
+        text += (f"; Lockheed Martin holds no oil, gas or coal reserves or refining, and {doc} {s('names', 'name')} climate change only "
+                 f"among concerns that could bring future regulation ('{h['climate_words']}')")
+    return text
 
 
 def fiscal_year_end(n):
@@ -310,7 +345,14 @@ def build(as_of, facts, raw, spx, engine, out):
                          f"integration and outsourcing, and CLOUD (live from {cl['live_from']}) to public cloud displacing on-premise "
                          "hardware, storage, databases and data-center outsourcing; the 10-Ks name no offshore competition and do not "
                          "mention cloud, so no theme in scope has dated evidence")
+    # from 2015 more themes are live, and from the FY2016 10-K cloud is mentioned: the texts name every live theme's scope and what the
+    # 10-Ks say, and from the FY2013 vintage ('why_themes') the "why" ends with that reading as of AS_OF, not a fixed clause; every
+    # earlier vintage keeps its text, and every earlier date has only OFFSHORE and CLOUD live, so those dates rebuild byte-identical
+    if any(themes[k]["live_from"] <= as_of for k in ("ECOMMERCE", "STREAMING", "ENERGY_TRANSITION")) or h.get("cloud_words"):
+        theme_summary = theme_reading(themes, as_of, h, plural=True) + ", so no theme in scope has dated evidence"
     why = h["why"]
+    if h.get("why_themes"):
+        why += "; " + theme_reading(themes, as_of, h, plural=False) + ", so no disruption theme in scope is live"
     cat3 = (f"(3) {fy_now} {ge.get('eps_label', 'diluted EPS')} guide {eps_fig} ({ge['doc']}): the company's own read of the year, FAS/CAS pension adjustment included"
             if ge else f"(3) A {fy_now} diluted EPS guide in numbers — none yet")
     cat4 = (f"(4) {fy_now} net sales guide {rev_fig} ({gr['doc']}): program volume in one number" if gr else

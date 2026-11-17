@@ -1,5 +1,5 @@
 {
- "_doc": "Point-in-time fact sheet for LMT retrospectives (retro/build_lmt.py), generated from the converted rows of Lockheed Martin's filings (every figure read from its labelled row, the row asserted present in its own filing). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks of 2006-2013 were accepted before the open on their release days. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the guides for the current fiscal year (each field from the latest guide that states it) and the latest declared dividend (else the vintage's). Lockheed Martin's fiscal year is the calendar year. EPS is diluted EPS (from continuing operations where reported), each year from the latest 10-K that reports it; FY2002 is excluded (unusual items larger than its earnings, no per-share figure excluding them), so the history and the P/E window start with FY2003 ('pe_window_start'). A print's growth and margins are derived from the raw figures of its release ('raw', $ millions; the builder re-derives and checks them), each against the year-ago quarter as the same release shows it; backlog against the year-ago quarter's end as that quarter's own release shows it ('backlog_prior_source'). From 2010 a print takes diluted EPS from continuing operations where the release reports the line, and a release that republishes earlier years' EPS restates them until a later 10-K ('restates', EPS only). Guides: the fiscal-year outlook table's current column (net sales and diluted EPS ranges, a level stated as about read as a number, words keeping the last numeric range; segment operating profit and cash from operations are display only: no margin is derived from two guided figures), and the third-quarter release's preliminary outlook for the next year. Rule T's raw figures are in 'rule_t'.",
+ "_doc": "Point-in-time fact sheet for LMT retrospectives (retro/build_lmt.py), generated from the converted rows of Lockheed Martin's filings (every figure read from its labelled row, the row asserted present in its own filing). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks of 2006-2017 were accepted before the open on their release days. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the guides for the current fiscal year (each field from the latest guide that states it) and the latest declared dividend (else the vintage's). Lockheed Martin's fiscal year is the calendar year. EPS is diluted EPS (from continuing operations where reported), each year from the latest 10-K that reports it; FY2002 is excluded (unusual items larger than its earnings, no per-share figure excluding them), so the history and the P/E window start with FY2003 ('pe_window_start'). A print's growth and margins are derived from the raw figures of its release ('raw', $ millions; the builder re-derives and checks them), each against the year-ago quarter as the same release shows it; backlog against the year-ago quarter's end as that quarter's own release shows it ('backlog_prior_source'). From 2010 a print takes diluted EPS from continuing operations where the release reports the line, and a release that republishes earlier years' EPS restates them until a later 10-K ('restates', EPS only; the Q4 2016 release's FY2015 without IS&GS). From the FY2013 vintage ('why_themes') the builder ends the durability 'why' with every live theme's reading as of AS_OF, from the vintage's own words ('cloud_words', 'climate_words'). Guides: the fiscal-year outlook table's current column (net sales and diluted EPS ranges, a level stated as about read as a number, words keeping the last numeric range; segment operating profit and cash from operations are display only: no margin is derived from two guided figures), and the third-quarter release's preliminary outlook for the next year. Rule T's raw figures are in 'rule_t'.",
  "ticker": "LMT",
  "sources": {
   "LM1": {
@@ -330,6 +330,146 @@
    "title": "Lockheed Martin Q3 2013 results (8-K, Exhibit 99.1)",
    "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420413056178/v357642_ex99-1.htm",
    "supports": "Q3 2013: net sales $11,347M vs $11,869M, segment operating profit $1,455M vs $1,434M, diluted EPS from continuing operations $2.57 vs $2.21, total backlog $78,700M, average diluted shares 327.5M; FY2013 outlook net sales $45-45B, diluted EPS $9.40-9.70"
+  },
+  "LM48": {
+   "published": "2014-01-23",
+   "filed": "2014-01-23 06:30 ET, before the open",
+   "title": "Lockheed Martin Q4 2013 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420414003468/v365818_ex99-1.htm",
+   "supports": "Q4 2013: net sales $11,533M vs $12,099M, segment operating profit $1,421M vs $1,339M, diluted EPS from continuing operations $1.50 vs $1.73, total backlog $82,600M, average diluted shares 326.3M; FY2014 outlook net sales $44-45.5B, diluted EPS from continuing operations $10.25-10.55"
+  },
+  "LM49": {
+   "published": "2014-02-18",
+   "filed": "2014-02-14 16:51 ET, after the close (dated the next trading day)",
+   "title": "Lockheed Martin FY2013 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312514055034/d621068d10k.htm",
+   "supports": "five-year summary 2013-2009 (net sales $45,358M to $43,867M; diluted EPS from continuing operations $9.04, $8.36, $7.85, $7.10, $7.63; backlog $82,600M and $82,300M); total business segment operating profit 2013-2012 $5,752M, $5,583M; average diluted shares 326.5M, 328.4M, 339.9M; Items 1 and 1A"
+  },
+  "LM50": {
+   "published": "2014-04-22",
+   "filed": "2014-04-22 07:34 ET, before the open",
+   "title": "Lockheed Martin Q1 2014 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420414023965/v375130_ex99-1.htm",
+   "supports": "Q1 2014: net sales $10,650M vs $11,070M, segment operating profit $1,429M vs $1,343M, diluted EPS $2.87 vs $2.33, total backlog $79,600M, average diluted shares 325.1M; FY2014 outlook diluted EPS $10.50-10.80"
+  },
+  "LM51": {
+   "published": "2014-07-22",
+   "filed": "2014-07-22 07:29 ET, before the open",
+   "title": "Lockheed Martin Q2 2014 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420414044048/v384113_ex99-1.htm",
+   "supports": "Q2 2014: net sales $11,306M vs $11,408M, segment operating profit $1,406M vs $1,533M, diluted EPS $2.76 vs $2.64, total backlog $77,800M, average diluted shares 322.1M; FY2014 outlook net sales $44-45.5B, diluted EPS $10.85-11.15"
+  },
+  "LM52": {
+   "published": "2014-10-21",
+   "filed": "2014-10-21 07:28 ET, before the open",
+   "title": "Lockheed Martin Q3 2014 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420414062046/v391550_ex99-1.htm",
+   "supports": "Q3 2014: net sales $11,114M vs $11,347M, segment operating profit $1,346M vs $1,455M, diluted EPS from continuing operations $2.76 vs $2.57, total backlog $76,500M, average diluted shares 321.8M; FY2014 outlook net sales ~$45B, diluted EPS ~$11.15"
+  },
+  "LM53": {
+   "published": "2015-01-27",
+   "filed": "2015-01-27 07:33 ET, before the open",
+   "title": "Lockheed Martin Q4 2014 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420415003908/v399257_ex99-1.htm",
+   "supports": "Q4 2014: net sales $12,530M vs $11,533M, segment operating profit $1,407M vs $1,421M, diluted EPS from continuing operations $2.82 vs $1.50, total backlog $80,500M, average diluted shares 320.6M; FY2015 outlook net sales $43.5-45B, diluted EPS $10.80-11.10"
+  },
+  "LM54": {
+   "published": "2015-02-09",
+   "filed": "2015-02-09 12:39 ET, during the session",
+   "title": "Lockheed Martin FY2014 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312515038681/d808572d10k.htm",
+   "supports": "five-year summary 2014-2010 (net sales $45,600M to $45,671M; diluted EPS from continuing operations $11.21, $9.04, $8.36, $7.85, $7.10; backlog $80,547M and $82,600M); total business segment operating profit 2014-2013 $5,588M, $5,752M; average diluted shares 322.4M, 326.5M, 328.4M; Items 1 and 1A"
+  },
+  "LM55": {
+   "published": "2015-04-21",
+   "filed": "2015-04-21 07:32 ET, before the open",
+   "title": "Lockheed Martin Q1 2015 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420415023942/v407517_ex99-1.htm",
+   "supports": "Q1 2015: net sales $10,111M vs $10,650M, segment operating profit $1,306M vs $1,429M, diluted EPS $2.74 vs $2.87, total backlog $76,900M, average diluted shares 320.2M; FY2015 outlook diluted EPS $10.85-11.15"
+  },
+  "LM56": {
+   "published": "2015-07-20",
+   "filed": "2015-07-20 07:37 ET, before the open",
+   "title": "Lockheed Martin Q2 2015 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420415043188/v415620_ex99-1.htm",
+   "supports": "Q2 2015: net sales $11,643M vs $11,306M, segment operating profit $1,400M vs $1,406M, diluted EPS $2.94 vs $2.76, total backlog $72,800M, average diluted shares 316.1M; FY2015 outlook diluted EPS $11.00-11.30"
+  },
+  "LM57": {
+   "published": "2015-10-20",
+   "filed": "2015-10-20 07:30 ET, before the open",
+   "title": "Lockheed Martin Q3 2015 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420415060046/v422286_ex99-1.htm",
+   "supports": "Q3 2015: net sales $11,461M vs $11,114M, segment operating profit $1,369M vs $1,346M, diluted EPS $2.77 vs $2.76, total backlog $71,700M, average diluted shares 312.7M; FY2015 outlook net sales ~$45B, diluted EPS ~$11.30"
+  },
+  "LM58": {
+   "published": "2016-01-26",
+   "filed": "2016-01-26 07:07 ET, before the open",
+   "title": "Lockheed Martin Q4 2015 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420416076908/v429338_ex99-1.htm",
+   "supports": "Q4 2015: net sales $12,917M vs $12,530M, segment operating profit $1,411M vs $1,407M, diluted EPS $3.01 vs $2.82, total backlog $99,600M, average diluted shares 310.2M; FY2016 outlook net sales $49.5-51B, diluted EPS $11.45-11.75"
+  },
+  "LM59": {
+   "published": "2016-02-25",
+   "filed": "2016-02-24 17:21 ET, after the close (dated the next trading day)",
+   "title": "Lockheed Martin FY2015 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312516476010/d62685d10k.htm",
+   "supports": "five-year summary 2015-2011 (net sales $46,132M to $46,499M; diluted EPS from continuing operations $11.46, $11.21, $9.04, $8.36, $7.85; backlog $99,600M and $80,547M); total business segment operating profit 2015-2014 $5,486M, $5,588M; average diluted shares 314.7M, 322.4M, 326.5M; Items 1 and 1A"
+  },
+  "LM60": {
+   "published": "2016-04-26",
+   "filed": "2016-04-26 07:35 ET, before the open",
+   "title": "Lockheed Martin Q1 2016 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420416096184/v437602_ex99-1.htm",
+   "supports": "Q1 2016: net sales $11,702M vs $10,111M, segment operating profit $1,223M vs $1,306M, diluted EPS $2.58 vs $2.74, total backlog $97,900M, average diluted shares 307.8M; FY2016 outlook net sales $49.6-51.1B, diluted EPS $11.50-11.80"
+  },
+  "LM61": {
+   "published": "2016-07-19",
+   "filed": "2016-07-19 07:32 ET, before the open",
+   "title": "Lockheed Martin Q2 2016 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420416113450/v444273_ex99-1.htm",
+   "supports": "Q2 2016: net sales $12,914M vs $11,643M, segment operating profit $1,424M vs $1,400M, diluted EPS $3.32 vs $2.94, total backlog $96,400M, average diluted shares 307.1M; FY2016 outlook net sales $50-51.5B, diluted EPS $12.15-12.45"
+  },
+  "LM62": {
+   "published": "2016-10-25",
+   "filed": "2016-10-25 07:32 ET, before the open",
+   "title": "Lockheed Martin Q3 2016 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420416129270/v450813_ex99-1.htm",
+   "supports": "Q3 2016: net sales $11,551M vs $10,060M, segment operating profit $1,423M vs $1,244M, diluted EPS from continuing operations $3.61 vs $2.42, total backlog $91,400M, average diluted shares 302.1M; FY2016 outlook net sales ~$46.5B, diluted EPS from continuing operations ~$12.10"
+  },
+  "LM63": {
+   "published": "2017-01-24",
+   "filed": "2017-01-24 07:30 ET, before the open",
+   "title": "Lockheed Martin Q4 2016 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420417003517/v457219_ex99-1.htm",
+   "supports": "Q4 2016: net sales $13,752M vs $11,520M, segment operating profit $1,290M vs $1,280M, diluted EPS from continuing operations $3.25 vs $2.63, total backlog $96,200M, average diluted shares 295.2M; FY2017 outlook net sales $49.4-50.6B, diluted EPS $12.25-12.55"
+  },
+  "LM64": {
+   "published": "2017-02-10",
+   "filed": "2017-02-09 16:32 ET, after the close (dated the next trading day)",
+   "title": "Lockheed Martin FY2016 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312517036192/d290249d10k.htm",
+   "supports": "five-year summary 2016-2012 (net sales $47,248M to $40,573M; diluted EPS from continuing operations $12.38, $9.93, $10.09, $8.27, $6.99; backlog $96,200M and $94,800M); total business segment operating profit 2016-2015 $5,100M, $4,978M; average diluted shares 303.1M, 314.7M, 322.4M; Items 1 and 1A"
+  },
+  "LM65": {
+   "published": "2017-04-25",
+   "filed": "2017-04-25 07:31 ET, before the open",
+   "title": "Lockheed Martin Q1 2017 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420417021852/v464557_ex99-1.htm",
+   "supports": "Q1 2017: net sales $11,057M vs $10,368M, segment operating profit $1,051M vs $1,114M, diluted EPS from continuing operations $2.61 vs $2.61, total backlog $93,500M, average diluted shares 292.8M; FY2017 outlook net sales $49.5-50.7B, diluted EPS $12.15-12.45"
+  },
+  "LM66": {
+   "published": "2017-07-18",
+   "filed": "2017-07-18 07:35 ET, before the open",
+   "title": "Lockheed Martin Q2 2017 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000114420417037080/v470758_ex99-1.htm",
+   "supports": "Q2 2017: net sales $12,685M vs $11,577M, segment operating profit $1,328M vs $1,273M, diluted EPS from continuing operations $3.23 vs $2.93, total backlog $92,100M, average diluted shares 291.2M; FY2017 outlook net sales $49.8-51B, diluted EPS $12.30-12.60"
+  },
+  "LM67": {
+   "published": "2017-10-24",
+   "filed": "2017-10-24 07:32 ET, before the open",
+   "title": "Lockheed Martin Q3 2017 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646817000011/ex991q32017.htm",
+   "supports": "Q3 2017: net sales $12,169M vs $11,551M, segment operating profit $1,249M vs $1,423M, diluted EPS from continuing operations $3.24 vs $3.61, total backlog $103,600M, average diluted shares 290.0M; FY2017 outlook net sales $50-51.2B, diluted EPS $12.85-13.15"
   }
  },
  "history_vintages": [
@@ -1212,6 +1352,614 @@
    ],
    "groups_basis": "FY12 net sales by business segment (FY2012 10-K, Selected Financial Data by Business Segment)",
    "cash_words": "cash and cash equivalents"
+  },
+  {
+   "published": "2014-02-18",
+   "sources": [
+    "LM49",
+    "LM44",
+    "LM39",
+    "LM34",
+    "LM29",
+    "LM23",
+    "LM9",
+    "LM18"
+   ],
+   "company": "Lockheed Martin Corporation",
+   "exchange": "NYSE",
+   "fy_label": "FY13",
+   "why": "'In 2013, 82% of our $45.4 billion in net sales were from the U.S. Government, either as a prime contractor or as a subcontractor (including 61% from the Department of Defense (DoD))' (FY2013 10-K, Item 1); 'We depend heavily on contracts with the U.S. Government. ... Those contracts are conditioned upon the continuing availability of Congressional appropriations.' (Item 1A): sales that depend on Congressional appropriations are not earnings that are the cycle, so DURABLE (the CAT and SO precedent)",
+   "why_themes": true,
+   "fiscal_year_ends": {
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31",
+    "2007": "2007-12-31",
+    "2008": "2008-12-31",
+    "2009": "2009-12-31",
+    "2010": "2010-12-31",
+    "2011": "2011-12-31",
+    "2012": "2012-12-31",
+    "2013": "2013-12-31"
+   },
+   "eps_normalized": {
+    "2004": 2.83,
+    "2005": 4.1,
+    "2006": 5.73,
+    "2007": 7.0,
+    "2008": 7.64,
+    "2009": 7.63,
+    "2010": 7.1,
+    "2011": 7.85,
+    "2012": 8.36,
+    "2013": 9.04
+   },
+   "eps_sources": {
+    "2004": "LM23",
+    "2005": "LM29",
+    "2006": "LM34",
+    "2007": "LM39",
+    "2008": "LM44",
+    "2009": "LM49",
+    "2010": "LM49",
+    "2011": "LM49",
+    "2012": "LM49",
+    "2013": "LM49"
+   },
+   "normalization": "diluted EPS from continuing operations where the five-year summary reports the line, else diluted EPS, each year from the latest 10-K that reports it (the 10-Ks from FY2011 reflect the 2011 change to percentage-of-completion revenue recognition on service contracts for the years from 2007; earlier years stay as published); no filing publishes a figure excluding one-off items for 2004-2013 (the 2010 Voluntary Executive Separation Program and health care tax charge, the 2011-2013 severance charges and the 2013 goodwill impairment charge among them), so their per-share effects stay in (the NKE FY2008 rule), none of them more than half a year's earnings; the decade of the FY2013 10-K (2004-2013) no longer reaches FY02, which stays excluded as before",
+   "revenue_usd_b": {
+    "2004": 35.526,
+    "2005": 37.213,
+    "2006": 39.076,
+    "2007": 40.612,
+    "2008": 41.212,
+    "2009": 43.867,
+    "2010": 45.671,
+    "2011": 46.499,
+    "2012": 47.182,
+    "2013": 45.358
+   },
+   "revenue_sources": {
+    "2004": "LM23",
+    "2005": "LM29",
+    "2006": "LM34",
+    "2007": "LM39",
+    "2008": "LM44",
+    "2009": "LM49",
+    "2010": "LM49",
+    "2011": "LM49",
+    "2012": "LM49",
+    "2013": "LM49"
+   },
+   "diluted_shares_m": {
+    "2004": 447.1,
+    "2005": 445.7,
+    "2006": 436.4,
+    "2007": 427.1,
+    "2008": 409.4,
+    "2009": 388.9,
+    "2010": 368.3,
+    "2011": 339.9,
+    "2012": 328.4,
+    "2013": 326.5
+   },
+   "shares_sources": {
+    "2004": "LM9",
+    "2005": "LM18",
+    "2006": "LM23",
+    "2007": "LM29",
+    "2008": "LM34",
+    "2009": "LM39",
+    "2010": "LM44",
+    "2011": "LM49",
+    "2012": "LM49",
+    "2013": "LM49"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Segment operating margin change",
+   "prev_fy_op_margin": 12.68,
+   "prev_fy_op_margin_note": "segment operating profit $5,752M / net sales $45,358M (FY2013 10-K)",
+   "prev_fy_pretax_margin": 9.16,
+   "prev_fy_pretax_margin_note": "earnings before income taxes $4,155M / net sales $45,358M (FY2013 10-K)",
+   "prev_fy_sales_growth": -3.9,
+   "prev_fy_backlog_pct": 0.4,
+   "prev_fy_segop_pct": 3.0,
+   "tax_rate": 0.29,
+   "tax_note": "income tax expense $1,205M / earnings before income taxes $4,155M (FY2013 10-K)",
+   "cash_b": 2.617,
+   "cash_label": "FY13",
+   "cash_note": "cash and cash equivalents $2,617M at December 31, 2013 (FY2013 10-K)",
+   "ocf_b": 4.546,
+   "ocf_note": "cash provided by operating activities $4,546M in 2013 (FY2013 10-K)",
+   "dividend_annual": 4.78,
+   "dividend_note": "cash dividends $4.78 per share in 2013 (FY2013 10-K)",
+   "cash_return_text": "repurchases of common stock $1,762M in 2013 (FY2013 10-K)",
+   "business_line": "advanced technology systems, products and services, principally for agencies of the U.S. Government",
+   "groups": [
+    [
+     "Aeronautics",
+     14.123,
+     -5.6
+    ],
+    [
+     "Information Systems & Global Solutions",
+     8.367,
+     -5.4
+    ],
+    [
+     "Missiles and Fire Control",
+     7.757,
+     4.0
+    ],
+    [
+     "Mission Systems and Training",
+     7.153,
+     -5.6
+    ],
+    [
+     "Space Systems",
+     7.958,
+     -4.7
+    ]
+   ],
+   "groups_basis": "FY13 net sales by business segment (FY2013 10-K, Selected Financial Data by Business Segment)",
+   "cash_words": "cash and cash equivalents",
+   "climate_words": "we could be affected by future regulations imposed in response to concerns over climate change, other aspects of the environment, or natural resources"
+  },
+  {
+   "published": "2015-02-09",
+   "sources": [
+    "LM54",
+    "LM49",
+    "LM44",
+    "LM39",
+    "LM34",
+    "LM29",
+    "LM18",
+    "LM23"
+   ],
+   "company": "Lockheed Martin Corporation",
+   "exchange": "NYSE",
+   "fy_label": "FY14",
+   "why": "'In 2014, 79% of our $45.6 billion in net sales were from the U.S. Government, either as a prime contractor or as a subcontractor (including 59% from the Department of Defense (DoD))' (FY2014 10-K, Item 1); 'We depend heavily on contracts with the U.S. Government. ... Those contracts are conditioned upon the continuing availability of Congressional appropriations.' (Item 1A): sales that depend on Congressional appropriations are not earnings that are the cycle, so DURABLE (the CAT and SO precedent)",
+   "why_themes": true,
+   "fiscal_year_ends": {
+    "2005": "2005-12-31",
+    "2006": "2006-12-31",
+    "2007": "2007-12-31",
+    "2008": "2008-12-31",
+    "2009": "2009-12-31",
+    "2010": "2010-12-31",
+    "2011": "2011-12-31",
+    "2012": "2012-12-31",
+    "2013": "2013-12-31",
+    "2014": "2014-12-31"
+   },
+   "eps_normalized": {
+    "2005": 4.1,
+    "2006": 5.73,
+    "2007": 7.0,
+    "2008": 7.64,
+    "2009": 7.63,
+    "2010": 7.1,
+    "2011": 7.85,
+    "2012": 8.36,
+    "2013": 9.04,
+    "2014": 11.21
+   },
+   "eps_sources": {
+    "2005": "LM29",
+    "2006": "LM34",
+    "2007": "LM39",
+    "2008": "LM44",
+    "2009": "LM49",
+    "2010": "LM54",
+    "2011": "LM54",
+    "2012": "LM54",
+    "2013": "LM54",
+    "2014": "LM54"
+   },
+   "normalization": "diluted EPS from continuing operations where the five-year summary reports the line, else diluted EPS, each year from the latest 10-K that reports it (the 10-Ks from FY2011 reflect the 2011 change to percentage-of-completion revenue recognition on service contracts for the years from 2007; earlier years stay as published); no filing publishes a figure excluding one-off items for 2005-2014 (the 2010 Voluntary Executive Separation Program and health care tax charge, the 2011 and 2013 severance charges and the 2013 and 2014 goodwill impairment charges among them), so their per-share effects stay in (the NKE FY2008 rule), none of them more than half a year's earnings; the decade of the FY2014 10-K (2005-2014) no longer reaches FY02, which stays excluded as before",
+   "revenue_usd_b": {
+    "2005": 37.213,
+    "2006": 39.076,
+    "2007": 40.612,
+    "2008": 41.212,
+    "2009": 43.867,
+    "2010": 45.671,
+    "2011": 46.499,
+    "2012": 47.182,
+    "2013": 45.358,
+    "2014": 45.6
+   },
+   "revenue_sources": {
+    "2005": "LM29",
+    "2006": "LM34",
+    "2007": "LM39",
+    "2008": "LM44",
+    "2009": "LM49",
+    "2010": "LM54",
+    "2011": "LM54",
+    "2012": "LM54",
+    "2013": "LM54",
+    "2014": "LM54"
+   },
+   "diluted_shares_m": {
+    "2005": 445.7,
+    "2006": 436.4,
+    "2007": 427.1,
+    "2008": 409.4,
+    "2009": 388.9,
+    "2010": 368.3,
+    "2011": 339.9,
+    "2012": 328.4,
+    "2013": 326.5,
+    "2014": 322.4
+   },
+   "shares_sources": {
+    "2005": "LM18",
+    "2006": "LM23",
+    "2007": "LM29",
+    "2008": "LM34",
+    "2009": "LM39",
+    "2010": "LM44",
+    "2011": "LM49",
+    "2012": "LM54",
+    "2013": "LM54",
+    "2014": "LM54"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Segment operating margin change",
+   "prev_fy_op_margin": 12.25,
+   "prev_fy_op_margin_note": "segment operating profit $5,588M / net sales $45,600M (FY2014 10-K)",
+   "prev_fy_pretax_margin": 11.53,
+   "prev_fy_pretax_margin_note": "earnings before income taxes $5,258M / net sales $45,600M (FY2014 10-K)",
+   "prev_fy_sales_growth": 0.5,
+   "prev_fy_backlog_pct": -2.5,
+   "prev_fy_segop_pct": -2.9,
+   "tax_rate": 0.3127,
+   "tax_note": "income tax expense $1,644M / earnings before income taxes $5,258M (FY2014 10-K)",
+   "cash_b": 1.446,
+   "cash_label": "FY14",
+   "cash_note": "cash and cash equivalents $1,446M at December 31, 2014 (FY2014 10-K)",
+   "ocf_b": 3.866,
+   "ocf_note": "cash provided by operating activities $3,866M in 2014 (FY2014 10-K)",
+   "dividend_annual": 5.49,
+   "dividend_note": "cash dividends $5.49 per share in 2014 (FY2014 10-K)",
+   "cash_return_text": "repurchases of common stock $1,900M in 2014 (FY2014 10-K)",
+   "business_line": "advanced technology systems, products and services, principally for agencies of the U.S. Government",
+   "groups": [
+    [
+     "Aeronautics",
+     14.92,
+     5.6
+    ],
+    [
+     "Information Systems & Global Solutions",
+     7.788,
+     -6.9
+    ],
+    [
+     "Missiles and Fire Control",
+     7.68,
+     -1.0
+    ],
+    [
+     "Mission Systems and Training",
+     7.147,
+     -0.1
+    ],
+    [
+     "Space Systems",
+     8.065,
+     1.3
+    ]
+   ],
+   "groups_basis": "FY14 net sales by business segment (FY2014 10-K, Selected Financial Data by Business Segment)",
+   "cash_words": "cash and cash equivalents",
+   "climate_words": "we could be affected by future regulations imposed in response to concerns over climate change, other aspects of the environment or natural resources"
+  },
+  {
+   "published": "2016-02-25",
+   "sources": [
+    "LM59",
+    "LM54",
+    "LM49",
+    "LM44",
+    "LM39",
+    "LM34",
+    "LM23",
+    "LM29"
+   ],
+   "company": "Lockheed Martin Corporation",
+   "exchange": "NYSE",
+   "fy_label": "FY15",
+   "why": "'In 2015, 78% of our $46.1 billion in net sales were from the U.S. Government, either as a prime contractor or as a subcontractor (including 58% from the Department of Defense (DoD))' (FY2015 10-K, Item 1); 'We depend heavily on contracts with the U.S. Government for a substantial portion of our business. ... Those contracts are conditioned upon the continuing availability of Congressional appropriations.' (Item 1A): sales that depend on Congressional appropriations are not earnings that are the cycle, so DURABLE (the CAT and SO precedent)",
+   "why_themes": true,
+   "fiscal_year_ends": {
+    "2006": "2006-12-31",
+    "2007": "2007-12-31",
+    "2008": "2008-12-31",
+    "2009": "2009-12-31",
+    "2010": "2010-12-31",
+    "2011": "2011-12-31",
+    "2012": "2012-12-31",
+    "2013": "2013-12-31",
+    "2014": "2014-12-31",
+    "2015": "2015-12-31"
+   },
+   "eps_normalized": {
+    "2006": 5.73,
+    "2007": 7.0,
+    "2008": 7.64,
+    "2009": 7.63,
+    "2010": 7.1,
+    "2011": 7.85,
+    "2012": 8.36,
+    "2013": 9.04,
+    "2014": 11.21,
+    "2015": 11.46
+   },
+   "eps_sources": {
+    "2006": "LM34",
+    "2007": "LM39",
+    "2008": "LM44",
+    "2009": "LM49",
+    "2010": "LM54",
+    "2011": "LM59",
+    "2012": "LM59",
+    "2013": "LM59",
+    "2014": "LM59",
+    "2015": "LM59"
+   },
+   "normalization": "diluted EPS from continuing operations where the five-year summary reports the line, else diluted EPS, each year from the latest 10-K that reports it (the 10-Ks from FY2011 reflect the 2011 change to percentage-of-completion revenue recognition on service contracts for the years from 2007; earlier years stay as published); no filing publishes a figure excluding one-off items for 2006-2015 (the 2011, 2013 and 2015 severance charges, the 2013 and 2014 goodwill impairment charges and the 2015 Sikorsky transaction costs among them), so their per-share effects stay in (the NKE FY2008 rule), none of them more than half a year's earnings; the decade of the FY2015 10-K (2006-2015) no longer reaches FY02, which stays excluded as before",
+   "revenue_usd_b": {
+    "2006": 39.076,
+    "2007": 40.612,
+    "2008": 41.212,
+    "2009": 43.867,
+    "2010": 45.671,
+    "2011": 46.499,
+    "2012": 47.182,
+    "2013": 45.358,
+    "2014": 45.6,
+    "2015": 46.132
+   },
+   "revenue_sources": {
+    "2006": "LM34",
+    "2007": "LM39",
+    "2008": "LM44",
+    "2009": "LM49",
+    "2010": "LM54",
+    "2011": "LM59",
+    "2012": "LM59",
+    "2013": "LM59",
+    "2014": "LM59",
+    "2015": "LM59"
+   },
+   "diluted_shares_m": {
+    "2006": 436.4,
+    "2007": 427.1,
+    "2008": 409.4,
+    "2009": 388.9,
+    "2010": 368.3,
+    "2011": 339.9,
+    "2012": 328.4,
+    "2013": 326.5,
+    "2014": 322.4,
+    "2015": 314.7
+   },
+   "shares_sources": {
+    "2006": "LM23",
+    "2007": "LM29",
+    "2008": "LM34",
+    "2009": "LM39",
+    "2010": "LM44",
+    "2011": "LM49",
+    "2012": "LM54",
+    "2013": "LM59",
+    "2014": "LM59",
+    "2015": "LM59"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Segment operating margin change",
+   "prev_fy_op_margin": 11.89,
+   "prev_fy_op_margin_note": "segment operating profit $5,486M / net sales $46,132M (FY2015 10-K)",
+   "prev_fy_pretax_margin": 10.89,
+   "prev_fy_pretax_margin_note": "earnings before income taxes $5,023M / net sales $46,132M (FY2015 10-K)",
+   "prev_fy_sales_growth": 1.2,
+   "prev_fy_backlog_pct": 23.7,
+   "prev_fy_segop_pct": -1.8,
+   "tax_rate": 0.2823,
+   "tax_note": "income tax expense $1,418M / earnings before income taxes $5,023M (FY2015 10-K)",
+   "cash_b": 1.09,
+   "cash_label": "FY15",
+   "cash_note": "cash and cash equivalents $1,090M at December 31, 2015 (FY2015 10-K)",
+   "ocf_b": 5.101,
+   "ocf_note": "cash provided by operating activities $5,101M in 2015 (FY2015 10-K)",
+   "dividend_annual": 6.15,
+   "dividend_note": "cash dividends $6.15 per share in 2015 (FY2015 10-K)",
+   "cash_return_text": "repurchases of common stock $3,071M in 2015 (FY2015 10-K)",
+   "business_line": "advanced technology systems, products and services, principally for agencies of the U.S. Government",
+   "groups": [
+    [
+     "Aeronautics",
+     15.57,
+     4.4
+    ],
+    [
+     "Information Systems & Global Solutions",
+     5.596,
+     -1.0
+    ],
+    [
+     "Missiles and Fire Control",
+     6.77,
+     -4.5
+    ],
+    [
+     "Mission Systems and Training",
+     9.091,
+     4.1
+    ],
+    [
+     "Space Systems",
+     9.105,
+     -1.1
+    ]
+   ],
+   "groups_basis": "FY15 net sales by business segment (FY2015 10-K, Selected Financial Data by Business Segment)",
+   "cash_words": "cash and cash equivalents",
+   "climate_words": "we could be affected by future regulations imposed or claims asserted in response to concerns over climate change, other aspects of the environment or natural resources"
+  },
+  {
+   "published": "2017-02-10",
+   "sources": [
+    "LM64",
+    "LM59",
+    "LM54",
+    "LM49",
+    "LM44",
+    "LM39",
+    "LM29",
+    "LM34"
+   ],
+   "company": "Lockheed Martin Corporation",
+   "exchange": "NYSE",
+   "fy_label": "FY16",
+   "why": "'In 2016, 71% of our $47.2 billion in net sales were from the U.S. Government, either as a prime contractor or as a subcontractor (including 59% from the Department of Defense (DoD))' (FY2016 10-K, Item 1); 'We depend heavily on contracts with the U.S. Government for a substantial portion of our business. ... Those contracts are conditioned upon the continuing availability of Congressional appropriations.' (Item 1A): sales that depend on Congressional appropriations are not earnings that are the cycle, so DURABLE (the CAT and SO precedent)",
+   "why_themes": true,
+   "fiscal_year_ends": {
+    "2007": "2007-12-31",
+    "2008": "2008-12-31",
+    "2009": "2009-12-31",
+    "2010": "2010-12-31",
+    "2011": "2011-12-31",
+    "2012": "2012-12-31",
+    "2013": "2013-12-31",
+    "2014": "2014-12-31",
+    "2015": "2015-12-31",
+    "2016": "2016-12-31"
+   },
+   "eps_normalized": {
+    "2007": 7.0,
+    "2008": 7.64,
+    "2009": 7.63,
+    "2010": 7.1,
+    "2011": 7.85,
+    "2012": 6.99,
+    "2013": 8.27,
+    "2014": 10.09,
+    "2015": 9.93,
+    "2016": 12.38
+   },
+   "eps_sources": {
+    "2007": "LM39",
+    "2008": "LM44",
+    "2009": "LM49",
+    "2010": "LM54",
+    "2011": "LM59",
+    "2012": "LM64",
+    "2013": "LM64",
+    "2014": "LM64",
+    "2015": "LM64",
+    "2016": "LM64"
+   },
+   "normalization": "diluted EPS from continuing operations where the five-year summary reports the line, else diluted EPS, each year from the latest 10-K that reports it: the FY2016 10-K's 2012-2016 exclude IS&GS, divested on Aug. 16, 2016 and in discontinued operations, while 2007-2011 stay as the latest 10-K that reports them published them, with IS&GS (a seam, as published; the LOW and PEP rule), and 2016 includes the 2016 adoption of the standard on employee share-based payment awards (a change in accounting with no published figure without it stays GAAP, the ACN FY17 rule); no filing publishes a figure excluding one-off items for 2007-2016 (the 2013, 2015 and 2016 severance charges, the 2013 and 2014 goodwill impairment charges and the 2016 gain on the consolidation of the AWE venture among them), so their per-share effects stay in (the NKE FY2008 rule), none of them more than half a year's earnings",
+   "revenue_usd_b": {
+    "2007": 40.612,
+    "2008": 41.212,
+    "2009": 43.867,
+    "2010": 45.671,
+    "2011": 46.499,
+    "2012": 40.573,
+    "2013": 39.243,
+    "2014": 39.946,
+    "2015": 40.536,
+    "2016": 47.248
+   },
+   "revenue_sources": {
+    "2007": "LM39",
+    "2008": "LM44",
+    "2009": "LM49",
+    "2010": "LM54",
+    "2011": "LM59",
+    "2012": "LM64",
+    "2013": "LM64",
+    "2014": "LM64",
+    "2015": "LM64",
+    "2016": "LM64"
+   },
+   "diluted_shares_m": {
+    "2007": 427.1,
+    "2008": 409.4,
+    "2009": 388.9,
+    "2010": 368.3,
+    "2011": 339.9,
+    "2012": 328.4,
+    "2013": 326.5,
+    "2014": 322.4,
+    "2015": 314.7,
+    "2016": 303.1
+   },
+   "shares_sources": {
+    "2007": "LM29",
+    "2008": "LM34",
+    "2009": "LM39",
+    "2010": "LM44",
+    "2011": "LM49",
+    "2012": "LM54",
+    "2013": "LM59",
+    "2014": "LM64",
+    "2015": "LM64",
+    "2016": "LM64"
+   },
+   "pe_window_start": null,
+   "margin_signal_name": "Segment operating margin change",
+   "prev_fy_op_margin": 10.79,
+   "prev_fy_op_margin_note": "segment operating profit $5,100M / net sales $47,248M (FY2016 10-K)",
+   "prev_fy_pretax_margin": 10.34,
+   "prev_fy_pretax_margin_note": "earnings before income taxes $4,886M / net sales $47,248M (FY2016 10-K)",
+   "prev_fy_sales_growth": 16.6,
+   "prev_fy_backlog_pct": 1.5,
+   "prev_fy_segop_pct": 2.5,
+   "tax_rate": 0.2319,
+   "tax_note": "income tax expense $1,133M / earnings before income taxes $4,886M (FY2016 10-K)",
+   "cash_b": 1.837,
+   "cash_label": "FY16",
+   "cash_note": "cash and cash equivalents $1,837M at December 31, 2016 (FY2016 10-K)",
+   "ocf_b": 5.189,
+   "ocf_note": "cash provided by operating activities $5,189M in 2016 (FY2016 10-K)",
+   "dividend_annual": 6.77,
+   "dividend_note": "cash dividends $6.77 per share in 2016 (FY2016 10-K)",
+   "cash_return_text": "repurchases of common stock $2,096M in 2016 (FY2016 10-K)",
+   "business_line": "advanced technology systems, products and services, principally for agencies of the U.S. Government",
+   "groups": [
+    [
+     "Aeronautics",
+     17.769,
+     14.1
+    ],
+    [
+     "Missiles and Fire Control",
+     6.608,
+     -2.4
+    ],
+    [
+     "Rotary and Mission Systems",
+     13.462,
+     48.1
+    ],
+    [
+     "Space Systems",
+     9.409,
+     3.3
+    ]
+   ],
+   "groups_basis": "FY16 net sales by business segment (FY2016 10-K, Selected Financial Data by Business Segment)",
+   "cash_words": "cash and cash equivalents",
+   "cloud_words": "Technological advances in such areas as: additive manufacturing, cloud computing, advanced materials, autonomy, robotics, and big data and new business models such as commercial access to space are enabling new factors of competition for both traditional and non-traditional competitors.",
+   "climate_words": "we could be affected by future regulations imposed or claims asserted in response to concerns over climate change, other aspects of the environment or natural resources"
   }
  ],
  "prints": [
@@ -2288,6 +3036,613 @@
    "cash_return_text": "Repurchasing 4.9 million shares for $607 million and 14.5 million shares for $1.5 billion during the third quarter and first nine months of 2013, respectively, compared to 3.2 million shares for $285 million and 8.1 million shares for $708 million during the third quarter and first nine months of 2012, respectively",
    "next_print": "Q4 2013 print (late January)",
    "note": "diluted EPS from continuing operations (the release reports discontinued operations)"
+  },
+  {
+   "quarter": "Q4 2013",
+   "fy": 2013,
+   "q": 4,
+   "published": "2014-01-23",
+   "source": "LM48",
+   "release": "Jan 23",
+   "release_time": "before the open on Jan 23: 8-K accepted 06:30 ET",
+   "period_end": "2013-12-31",
+   "raw": {
+    "rev_m": 11533.0,
+    "rev_prior_m": 12099.0,
+    "segop_m": 1421.0,
+    "segop_prior_m": 1339.0,
+    "backlog_m": 82600.0,
+    "backlog_prior_m": 82300.0,
+    "diluted_shares_m": 326.3
+   },
+   "backlog_prior_source": "LM43",
+   "backlog_prior_label": "December 31, 2012 (Q4 2012 release)",
+   "sales_b": 11.533,
+   "sales_pct": -4.7,
+   "backlog_pct": 0.4,
+   "segop_pct": 6.1,
+   "seg_margin": 12.32,
+   "seg_margin_bp": 125.4,
+   "eps_q": 1.5,
+   "eps_q_prior": 1.73,
+   "eps_pct": -13.3,
+   "diluted_shares_m": 326.3,
+   "cash_return_text": "Repurchasing 1.7 million shares for $229 million and 16.2 million shares for $1.8 billion during the quarter and year ended Dec. 31, 2013, respectively, compared to 3.1 million shares for $282 million and 11.2 million shares for $990 million during the quarter and year ended Dec. 31, 2012, respectively",
+   "next_print": "Q1 2014 print (late April)",
+   "note": "diluted EPS from continuing operations (the release reports discontinued operations)",
+   "fy_actual": {
+    "fy": 2013,
+    "fy_label": "FY13",
+    "eps_normalized": 9.04,
+    "revenue_usd_b": 45.358,
+    "diluted_shares_m": 326.5,
+    "normalization_note": "FY2013 $9.04, diluted EPS from continuing operations as reported (Q4 2013 release; one-off items' per-share effects stay in)",
+    "op_margin": 12.68,
+    "pretax_margin": 9.16,
+    "pretax_margin_note": "FY13 earnings before income taxes $4,155M / net sales $45,358M (LM48)",
+    "sales_growth": -3.9,
+    "backlog_pct": 0.4,
+    "segop_pct": 3.0,
+    "tax_rate": 0.29,
+    "tax_note": "FY13 income tax expense $1,205M / earnings before income taxes $4,155M"
+   }
+  },
+  {
+   "quarter": "Q1 2014",
+   "fy": 2014,
+   "q": 1,
+   "published": "2014-04-22",
+   "source": "LM50",
+   "release": "Apr 22",
+   "release_time": "before the open on Apr 22: 8-K accepted 07:34 ET",
+   "period_end": "2014-03-30",
+   "raw": {
+    "rev_m": 10650.0,
+    "rev_prior_m": 11070.0,
+    "segop_m": 1429.0,
+    "segop_prior_m": 1343.0,
+    "backlog_m": 79600.0,
+    "backlog_prior_m": 77900.0,
+    "diluted_shares_m": 325.1
+   },
+   "backlog_prior_source": "LM45",
+   "backlog_prior_label": "March 31, 2013 (Q1 2013 release)",
+   "sales_b": 10.65,
+   "sales_pct": -3.8,
+   "backlog_pct": 2.2,
+   "segop_pct": 6.4,
+   "seg_margin": 13.42,
+   "seg_margin_bp": 128.6,
+   "eps_q": 2.87,
+   "eps_q_prior": 2.33,
+   "eps_pct": 23.2,
+   "diluted_shares_m": 325.1,
+   "cash_return_text": "Repurchasing 7.0 million shares for $1.1 billion, compared to 5.1 million shares for $461 million in the first quarter of 2013",
+   "next_print": "Q2 2014 print (late July)"
+  },
+  {
+   "quarter": "Q2 2014",
+   "fy": 2014,
+   "q": 2,
+   "published": "2014-07-22",
+   "source": "LM51",
+   "release": "Jul 22",
+   "release_time": "before the open on Jul 22: 8-K accepted 07:29 ET",
+   "period_end": "2014-06-29",
+   "raw": {
+    "rev_m": 11306.0,
+    "rev_prior_m": 11408.0,
+    "segop_m": 1406.0,
+    "segop_prior_m": 1533.0,
+    "backlog_m": 77800.0,
+    "backlog_prior_m": 75100.0,
+    "diluted_shares_m": 322.1
+   },
+   "backlog_prior_source": "LM46",
+   "backlog_prior_label": "June 30, 2013 (Q2 2013 release)",
+   "sales_b": 11.306,
+   "sales_pct": -0.9,
+   "backlog_pct": 3.6,
+   "segop_pct": -8.3,
+   "seg_margin": 12.44,
+   "seg_margin_bp": -100.2,
+   "eps_q": 2.76,
+   "eps_q_prior": 2.64,
+   "eps_pct": 4.5,
+   "diluted_shares_m": 322.1,
+   "cash_return_text": "Repurchasing 0.8 million shares for $124 million during the second quarter of 2014, compared to 4.5 million shares for $465 million during the second quarter of 2013",
+   "next_print": "Q3 2014 print (late October)"
+  },
+  {
+   "quarter": "Q3 2014",
+   "fy": 2014,
+   "q": 3,
+   "published": "2014-10-21",
+   "source": "LM52",
+   "release": "Oct 21",
+   "release_time": "before the open on Oct 21: 8-K accepted 07:28 ET",
+   "period_end": "2014-09-28",
+   "raw": {
+    "rev_m": 11114.0,
+    "rev_prior_m": 11347.0,
+    "segop_m": 1346.0,
+    "segop_prior_m": 1455.0,
+    "backlog_m": 76500.0,
+    "backlog_prior_m": 78700.0,
+    "diluted_shares_m": 321.8
+   },
+   "backlog_prior_source": "LM47",
+   "backlog_prior_label": "September 29, 2013 (Q3 2013 release)",
+   "sales_b": 11.114,
+   "sales_pct": -2.1,
+   "backlog_pct": -2.8,
+   "segop_pct": -7.5,
+   "seg_margin": 12.11,
+   "seg_margin_bp": -71.2,
+   "eps_q": 2.76,
+   "eps_q_prior": 2.57,
+   "eps_pct": 7.4,
+   "diluted_shares_m": 321.8,
+   "cash_return_text": "Repurchasing 2.6 million shares for $446 million during the third quarter of 2014, compared to 4.9 million shares for $607 million during the third quarter of 2013",
+   "next_print": "Q4 2014 print (late January)",
+   "note": "diluted EPS from continuing operations (the release reports discontinued operations)"
+  },
+  {
+   "quarter": "Q4 2014",
+   "fy": 2014,
+   "q": 4,
+   "published": "2015-01-27",
+   "source": "LM53",
+   "release": "Jan 27",
+   "release_time": "before the open on Jan 27: 8-K accepted 07:33 ET",
+   "period_end": "2014-12-31",
+   "raw": {
+    "rev_m": 12530.0,
+    "rev_prior_m": 11533.0,
+    "segop_m": 1407.0,
+    "segop_prior_m": 1421.0,
+    "backlog_m": 80500.0,
+    "backlog_prior_m": 82600.0,
+    "diluted_shares_m": 320.6
+   },
+   "backlog_prior_source": "LM48",
+   "backlog_prior_label": "December 31, 2013 (Q4 2013 release)",
+   "sales_b": 12.53,
+   "sales_pct": 8.6,
+   "backlog_pct": -2.5,
+   "segop_pct": -1.0,
+   "seg_margin": 11.23,
+   "seg_margin_bp": -109.2,
+   "eps_q": 2.82,
+   "eps_q_prior": 1.5,
+   "eps_pct": 88.0,
+   "diluted_shares_m": 320.6,
+   "cash_return_text": "Repurchasing 1.2 million shares for $224 million and 11.5 million shares for $1.9 billion during the quarter and year ended Dec. 31, 2014, compared to 1.7 million shares for $229 million and 16.2 million shares for $1.8 billion during the quarter and year ended Dec. 31, 2013",
+   "next_print": "Q1 2015 print (late April)",
+   "note": "diluted EPS from continuing operations (the release reports discontinued operations)",
+   "fy_actual": {
+    "fy": 2014,
+    "fy_label": "FY14",
+    "eps_normalized": 11.21,
+    "revenue_usd_b": 45.6,
+    "diluted_shares_m": 322.4,
+    "normalization_note": "FY2014 $11.21, diluted EPS from continuing operations as reported (Q4 2014 release; one-off items' per-share effects stay in)",
+    "op_margin": 12.25,
+    "pretax_margin": 11.53,
+    "pretax_margin_note": "FY14 earnings before income taxes $5,258M / net sales $45,600M (LM53)",
+    "sales_growth": 0.5,
+    "backlog_pct": -2.5,
+    "segop_pct": -2.9,
+    "tax_rate": 0.3127,
+    "tax_note": "FY14 income tax expense $1,644M / earnings before income taxes $5,258M"
+   }
+  },
+  {
+   "quarter": "Q1 2015",
+   "fy": 2015,
+   "q": 1,
+   "published": "2015-04-21",
+   "source": "LM55",
+   "release": "Apr 21",
+   "release_time": "before the open on Apr 21: 8-K accepted 07:32 ET",
+   "period_end": "2015-03-29",
+   "raw": {
+    "rev_m": 10111.0,
+    "rev_prior_m": 10650.0,
+    "segop_m": 1306.0,
+    "segop_prior_m": 1429.0,
+    "backlog_m": 76900.0,
+    "backlog_prior_m": 79600.0,
+    "diluted_shares_m": 320.2
+   },
+   "backlog_prior_source": "LM50",
+   "backlog_prior_label": "March 30, 2014 (Q1 2014 release)",
+   "sales_b": 10.111,
+   "sales_pct": -5.1,
+   "backlog_pct": -3.4,
+   "segop_pct": -8.6,
+   "seg_margin": 12.92,
+   "seg_margin_bp": -50.1,
+   "eps_q": 2.74,
+   "eps_q_prior": 2.87,
+   "eps_pct": -4.5,
+   "diluted_shares_m": 320.2,
+   "cash_return_text": "Repurchasing 3.0 million shares for $604 million, compared to 7.0 million shares for $1.1 billion in the first quarter of 2014",
+   "next_print": "Q2 2015 print (late July)"
+  },
+  {
+   "quarter": "Q2 2015",
+   "fy": 2015,
+   "q": 2,
+   "published": "2015-07-20",
+   "source": "LM56",
+   "release": "Jul 20",
+   "release_time": "before the open on Jul 20: 8-K accepted 07:37 ET",
+   "period_end": "2015-06-28",
+   "raw": {
+    "rev_m": 11643.0,
+    "rev_prior_m": 11306.0,
+    "segop_m": 1400.0,
+    "segop_prior_m": 1406.0,
+    "backlog_m": 72800.0,
+    "backlog_prior_m": 77800.0,
+    "diluted_shares_m": 316.1
+   },
+   "backlog_prior_source": "LM51",
+   "backlog_prior_label": "June 29, 2014 (Q2 2014 release)",
+   "sales_b": 11.643,
+   "sales_pct": 3.0,
+   "backlog_pct": -6.4,
+   "segop_pct": -0.4,
+   "seg_margin": 12.02,
+   "seg_margin_bp": -41.1,
+   "eps_q": 2.94,
+   "eps_q_prior": 2.76,
+   "eps_pct": 6.5,
+   "diluted_shares_m": 316.1,
+   "cash_return_text": "Repurchasing 4.9 million shares for $937 million, compared to 0.8 million shares for $124 million in the second quarter of 2014",
+   "next_print": "Q3 2015 print (late October)"
+  },
+  {
+   "quarter": "Q3 2015",
+   "fy": 2015,
+   "q": 3,
+   "published": "2015-10-20",
+   "source": "LM57",
+   "release": "Oct 20",
+   "release_time": "before the open on Oct 20: 8-K accepted 07:30 ET",
+   "period_end": "2015-09-27",
+   "raw": {
+    "rev_m": 11461.0,
+    "rev_prior_m": 11114.0,
+    "segop_m": 1369.0,
+    "segop_prior_m": 1346.0,
+    "backlog_m": 71700.0,
+    "backlog_prior_m": 76500.0,
+    "diluted_shares_m": 312.7
+   },
+   "backlog_prior_source": "LM52",
+   "backlog_prior_label": "September 28, 2014 (Q3 2014 release)",
+   "sales_b": 11.461,
+   "sales_pct": 3.1,
+   "backlog_pct": -6.3,
+   "segop_pct": 1.7,
+   "seg_margin": 11.94,
+   "seg_margin_bp": -16.6,
+   "eps_q": 2.77,
+   "eps_q_prior": 2.76,
+   "eps_pct": 0.4,
+   "diluted_shares_m": 312.7,
+   "cash_return_text": "Repurchasing 4.1 million shares for $823 million, compared to 2.6 million shares for $446 million in the third quarter of 2014",
+   "next_print": "Q4 2015 print (late January)"
+  },
+  {
+   "quarter": "Q4 2015",
+   "fy": 2015,
+   "q": 4,
+   "published": "2016-01-26",
+   "source": "LM58",
+   "release": "Jan 26",
+   "release_time": "before the open on Jan 26: 8-K accepted 07:07 ET",
+   "period_end": "2015-12-31",
+   "raw": {
+    "rev_m": 12917.0,
+    "rev_prior_m": 12530.0,
+    "segop_m": 1411.0,
+    "segop_prior_m": 1407.0,
+    "backlog_m": 99600.0,
+    "backlog_prior_m": 80500.0,
+    "diluted_shares_m": 310.2
+   },
+   "backlog_prior_source": "LM53",
+   "backlog_prior_label": "December 31, 2014 (Q4 2014 release)",
+   "sales_b": 12.917,
+   "sales_pct": 3.1,
+   "backlog_pct": 23.7,
+   "segop_pct": 0.3,
+   "seg_margin": 10.92,
+   "seg_margin_bp": -30.5,
+   "eps_q": 3.01,
+   "eps_q_prior": 2.82,
+   "eps_pct": 6.7,
+   "diluted_shares_m": 310.2,
+   "cash_return_text": "Repurchasing 3.2 million shares for $707 million and 15.2 million shares for $3.1 billion during the quarter and year ended Dec. 31, 2015, compared to 1.2 million shares for $224 million and 11.5 million shares for $1.9 billion during the quarter and year ended Dec. 31, 2014",
+   "next_print": "Q1 2016 print (late April)",
+   "note": "Sikorsky in the results from Nov. 6, 2015, under Mission Systems and Training",
+   "fy_actual": {
+    "fy": 2015,
+    "fy_label": "FY15",
+    "eps_normalized": 11.46,
+    "revenue_usd_b": 46.132,
+    "diluted_shares_m": 314.7,
+    "normalization_note": "FY2015 $11.46, diluted EPS as reported (Q4 2015 release; one-off items' per-share effects stay in)",
+    "op_margin": 11.89,
+    "pretax_margin": 10.89,
+    "pretax_margin_note": "FY15 earnings before income taxes $5,023M / net sales $46,132M (LM58)",
+    "sales_growth": 1.2,
+    "backlog_pct": 23.7,
+    "segop_pct": -1.8,
+    "tax_rate": 0.2823,
+    "tax_note": "FY15 income tax expense $1,418M / earnings before income taxes $5,023M"
+   }
+  },
+  {
+   "quarter": "Q1 2016",
+   "fy": 2016,
+   "q": 1,
+   "published": "2016-04-26",
+   "source": "LM60",
+   "release": "Apr 26",
+   "release_time": "before the open on Apr 26: 8-K accepted 07:35 ET",
+   "period_end": "2016-03-27",
+   "raw": {
+    "rev_m": 11702.0,
+    "rev_prior_m": 10111.0,
+    "segop_m": 1223.0,
+    "segop_prior_m": 1306.0,
+    "backlog_m": 97900.0,
+    "backlog_prior_m": 76900.0,
+    "diluted_shares_m": 307.8
+   },
+   "backlog_prior_source": "LM55",
+   "backlog_prior_label": "March 29, 2015 (Q1 2015 release)",
+   "sales_b": 11.702,
+   "sales_pct": 15.7,
+   "backlog_pct": 27.3,
+   "segop_pct": -6.4,
+   "seg_margin": 10.45,
+   "seg_margin_bp": -246.5,
+   "eps_q": 2.58,
+   "eps_q_prior": 2.74,
+   "eps_pct": -5.8,
+   "diluted_shares_m": 307.8,
+   "cash_return_text": "Repurchasing 2.4 million shares for $501 million, compared to 3.0 million shares for $604 million in the first quarter of 2015",
+   "next_print": "Q2 2016 print (late July)"
+  },
+  {
+   "quarter": "Q2 2016",
+   "fy": 2016,
+   "q": 2,
+   "published": "2016-07-19",
+   "source": "LM61",
+   "release": "Jul 19",
+   "release_time": "before the open on Jul 19: 8-K accepted 07:32 ET",
+   "period_end": "2016-06-26",
+   "raw": {
+    "rev_m": 12914.0,
+    "rev_prior_m": 11643.0,
+    "segop_m": 1424.0,
+    "segop_prior_m": 1400.0,
+    "backlog_m": 96400.0,
+    "backlog_prior_m": 72800.0,
+    "diluted_shares_m": 307.1
+   },
+   "backlog_prior_source": "LM56",
+   "backlog_prior_label": "June 28, 2015 (Q2 2015 release)",
+   "sales_b": 12.914,
+   "sales_pct": 10.9,
+   "backlog_pct": 32.4,
+   "segop_pct": 1.7,
+   "seg_margin": 11.03,
+   "seg_margin_bp": -99.8,
+   "eps_q": 3.32,
+   "eps_q_prior": 2.94,
+   "eps_pct": 12.9,
+   "diluted_shares_m": 307.1,
+   "cash_return_text": "Repurchasing 2.1 million shares for $501 million, compared to 4.9 million shares for $937 million in the second quarter of 2015",
+   "next_print": "Q3 2016 print (late October)"
+  },
+  {
+   "quarter": "Q3 2016",
+   "fy": 2016,
+   "q": 3,
+   "published": "2016-10-25",
+   "source": "LM62",
+   "release": "Oct 25",
+   "release_time": "before the open on Oct 25: 8-K accepted 07:32 ET",
+   "period_end": "2016-09-25",
+   "raw": {
+    "rev_m": 11551.0,
+    "rev_prior_m": 10060.0,
+    "segop_m": 1423.0,
+    "segop_prior_m": 1244.0,
+    "backlog_m": 91400.0,
+    "backlog_prior_m": 71700.0,
+    "diluted_shares_m": 302.1
+   },
+   "backlog_prior_source": "LM57",
+   "backlog_prior_label": "September 27, 2015 (Q3 2015 release)",
+   "sales_b": 11.551,
+   "sales_pct": 14.8,
+   "backlog_pct": 27.5,
+   "segop_pct": 14.4,
+   "seg_margin": 12.32,
+   "seg_margin_bp": -4.7,
+   "eps_q": 3.61,
+   "eps_q_prior": 2.42,
+   "eps_pct": 49.2,
+   "diluted_shares_m": 302.1,
+   "cash_return_text": "Repurchasing 1.2 million shares for $278 million, compared to 4.1 million shares for $823 million in the third quarter of 2015",
+   "next_print": "Q4 2016 print (late January)",
+   "note": "diluted EPS from continuing operations (the release reports discontinued operations); IS&GS, divested on Aug. 16, 2016, is in discontinued operations, and the year-ago quarter's net sales, segment operating profit and EPS are as this release restates them; the year-ago backlog is the Q3 2015 release's, with IS&GS"
+  },
+  {
+   "quarter": "Q4 2016",
+   "fy": 2016,
+   "q": 4,
+   "published": "2017-01-24",
+   "source": "LM63",
+   "release": "Jan 24",
+   "release_time": "before the open on Jan 24: 8-K accepted 07:30 ET",
+   "period_end": "2016-12-31",
+   "raw": {
+    "rev_m": 13752.0,
+    "rev_prior_m": 11520.0,
+    "segop_m": 1290.0,
+    "segop_prior_m": 1280.0,
+    "backlog_m": 96200.0,
+    "backlog_prior_m": 99600.0,
+    "diluted_shares_m": 295.2
+   },
+   "backlog_prior_source": "LM58",
+   "backlog_prior_label": "December 31, 2015 (Q4 2015 release)",
+   "sales_b": 13.752,
+   "sales_pct": 19.4,
+   "backlog_pct": -3.4,
+   "segop_pct": 0.8,
+   "seg_margin": 9.38,
+   "seg_margin_bp": -173.1,
+   "eps_q": 3.25,
+   "eps_q_prior": 2.63,
+   "eps_pct": 23.6,
+   "diluted_shares_m": 295.2,
+   "cash_return_text": "Repurchasing 3.2 million shares for $816 million and 8.9 million shares for $2.1 billion during the quarter and year ended Dec. 31, 2016, compared to 3.2 million shares for $707 million and 15.2 million shares for $3.1 billion during the quarter and year ended Dec. 31, 2015",
+   "next_print": "Q1 2017 print (late April)",
+   "note": "diluted EPS from continuing operations (the release reports discontinued operations); the year-ago backlog is the Q4 2015 release's, with IS&GS",
+   "fy_actual": {
+    "fy": 2016,
+    "fy_label": "FY16",
+    "eps_normalized": 12.38,
+    "revenue_usd_b": 47.248,
+    "diluted_shares_m": 303.1,
+    "normalization_note": "FY2016 $12.38, diluted EPS from continuing operations as reported (Q4 2016 release; one-off items' per-share effects stay in)",
+    "op_margin": 10.79,
+    "pretax_margin": 10.34,
+    "pretax_margin_note": "FY16 earnings before income taxes $4,886M / net sales $47,248M (LM63)",
+    "sales_growth": 16.6,
+    "backlog_pct": -3.4,
+    "segop_pct": 2.5,
+    "tax_rate": 0.2319,
+    "tax_note": "FY16 income tax expense $1,133M / earnings before income taxes $4,886M"
+   },
+   "restates": {
+    "2015": {
+     "eps": 9.93,
+     "note": "FY15 $9.93, diluted EPS from continuing operations as the Q4 2016 release restates it (IS&GS in discontinued operations)"
+    }
+   }
+  },
+  {
+   "quarter": "Q1 2017",
+   "fy": 2017,
+   "q": 1,
+   "published": "2017-04-25",
+   "source": "LM65",
+   "release": "Apr 25",
+   "release_time": "before the open on Apr 25: 8-K accepted 07:31 ET",
+   "period_end": "2017-03-26",
+   "raw": {
+    "rev_m": 11057.0,
+    "rev_prior_m": 10368.0,
+    "segop_m": 1051.0,
+    "segop_prior_m": 1114.0,
+    "backlog_m": 93500.0,
+    "backlog_prior_m": 97900.0,
+    "diluted_shares_m": 292.8
+   },
+   "backlog_prior_source": "LM60",
+   "backlog_prior_label": "March 27, 2016 (Q1 2016 release)",
+   "sales_b": 11.057,
+   "sales_pct": 6.6,
+   "backlog_pct": -4.5,
+   "segop_pct": -5.7,
+   "seg_margin": 9.51,
+   "seg_margin_bp": -123.9,
+   "eps_q": 2.61,
+   "eps_q_prior": 2.61,
+   "eps_pct": 0.0,
+   "diluted_shares_m": 292.8,
+   "cash_return_text": "Repurchasing 1.9 million shares for $500 million, compared to 2.4 million shares for $501 million in the first quarter of 2016",
+   "next_print": "Q2 2017 print (late July)",
+   "note": "diluted EPS from continuing operations (the release reports discontinued operations); the year-ago backlog is the Q1 2016 release's, with IS&GS"
+  },
+  {
+   "quarter": "Q2 2017",
+   "fy": 2017,
+   "q": 2,
+   "published": "2017-07-18",
+   "source": "LM66",
+   "release": "Jul 18",
+   "release_time": "before the open on Jul 18: 8-K accepted 07:35 ET",
+   "period_end": "2017-06-25",
+   "raw": {
+    "rev_m": 12685.0,
+    "rev_prior_m": 11577.0,
+    "segop_m": 1328.0,
+    "segop_prior_m": 1273.0,
+    "backlog_m": 92100.0,
+    "backlog_prior_m": 96400.0,
+    "diluted_shares_m": 291.2
+   },
+   "backlog_prior_source": "LM61",
+   "backlog_prior_label": "June 26, 2016 (Q2 2016 release)",
+   "sales_b": 12.685,
+   "sales_pct": 9.6,
+   "backlog_pct": -4.5,
+   "segop_pct": 4.3,
+   "seg_margin": 10.47,
+   "seg_margin_bp": -52.7,
+   "eps_q": 3.23,
+   "eps_q_prior": 2.93,
+   "eps_pct": 10.2,
+   "diluted_shares_m": 291.2,
+   "cash_return_text": "Repurchasing 1.9 million shares for $500 million, compared to 2.1 million shares for $501 million in the second quarter of 2016",
+   "next_print": "Q3 2017 print (late October)",
+   "note": "diluted EPS from continuing operations (the release reports discontinued operations); the year-ago backlog is the Q2 2016 release's, with IS&GS"
+  },
+  {
+   "quarter": "Q3 2017",
+   "fy": 2017,
+   "q": 3,
+   "published": "2017-10-24",
+   "source": "LM67",
+   "release": "Oct 24",
+   "release_time": "before the open on Oct 24: 8-K accepted 07:32 ET",
+   "period_end": "2017-09-24",
+   "raw": {
+    "rev_m": 12169.0,
+    "rev_prior_m": 11551.0,
+    "segop_m": 1249.0,
+    "segop_prior_m": 1423.0,
+    "backlog_m": 103600.0,
+    "backlog_prior_m": 91400.0,
+    "diluted_shares_m": 290.0
+   },
+   "backlog_prior_source": "LM62",
+   "backlog_prior_label": "September 25, 2016 (Q3 2016 release)",
+   "sales_b": 12.169,
+   "sales_pct": 5.4,
+   "backlog_pct": 13.3,
+   "segop_pct": -12.2,
+   "seg_margin": 10.26,
+   "seg_margin_bp": -205.5,
+   "eps_q": 3.24,
+   "eps_q_prior": 3.61,
+   "eps_pct": -10.2,
+   "diluted_shares_m": 290.0,
+   "cash_return_text": "Repurchasing 1.6 million shares for $500 million, compared to 1.2 million shares for $278 million in the third quarter of 2016",
+   "next_print": "Q4 2017 print (late January)",
+   "note": "diluted EPS from continuing operations (the release reports discontinued operations)"
   }
  ],
  "guides": [
@@ -2902,6 +4257,312 @@
    ],
    "cfo_words": "at least $4,300",
    "note": "the 'Current Update' column (beside 'July 2013')"
+  },
+  {
+   "fy": 2014,
+   "published": "2014-01-23",
+   "source": "LM48",
+   "doc": "Q4 2013 release",
+   "rev_guide_usd_b": [
+    44.0,
+    45.5
+   ],
+   "eps_guide": [
+    10.25,
+    10.55
+   ],
+   "eps_label": "diluted EPS from continuing operations",
+   "segop_guide_usd_b": [
+    5.175,
+    5.325
+   ],
+   "cfo_words": "at least $4,600"
+  },
+  {
+   "fy": 2014,
+   "published": "2014-04-22",
+   "source": "LM50",
+   "doc": "Q1 2014 release",
+   "eps_guide": [
+    10.5,
+    10.8
+   ],
+   "segop_guide_usd_b": [
+    5.25,
+    5.4
+   ],
+   "cfo_words": "at least $4,700",
+   "note": "the 'Current Update' column (beside 'January 2014'): net sales 'No Change' (words: the last numeric range stands)"
+  },
+  {
+   "fy": 2014,
+   "published": "2014-07-22",
+   "source": "LM51",
+   "doc": "Q2 2014 release",
+   "rev_guide_usd_b": [
+    44.0,
+    45.5
+   ],
+   "eps_guide": [
+    10.85,
+    11.15
+   ],
+   "segop_guide_usd_b": [
+    5.375,
+    5.525
+   ],
+   "cfo_words": "at least $4,800",
+   "note": "the 'Current Update' column (beside 'April 2014')"
+  },
+  {
+   "fy": 2014,
+   "published": "2014-10-21",
+   "source": "LM52",
+   "doc": "Q3 2014 release",
+   "rev_guide_usd_b": [
+    45.0,
+    45.0
+   ],
+   "eps_guide": [
+    11.15,
+    11.15
+   ],
+   "segop_guide_usd_b": [
+    5.5,
+    5.5
+   ],
+   "cfo_words": "at least $3,800",
+   "note": "the 'Current Update' column (beside 'July 2014')"
+  },
+  {
+   "fy": 2015,
+   "published": "2015-01-27",
+   "source": "LM53",
+   "doc": "Q4 2014 release",
+   "rev_guide_usd_b": [
+    43.5,
+    45.0
+   ],
+   "eps_guide": [
+    10.8,
+    11.1
+   ],
+   "segop_guide_usd_b": [
+    5.1,
+    5.25
+   ],
+   "cfo_words": "at least $5,000"
+  },
+  {
+   "fy": 2015,
+   "published": "2015-04-21",
+   "source": "LM55",
+   "doc": "Q1 2015 release",
+   "eps_guide": [
+    10.85,
+    11.15
+   ],
+   "segop_guide_usd_b": [
+    5.15,
+    5.3
+   ],
+   "cfo_words": "at least $5,000",
+   "note": "the 'Current Update' column (beside 'January 2015'): net sales 'No Change', cash from operations 'No Change' (words: the last numeric range stands)"
+  },
+  {
+   "fy": 2015,
+   "published": "2015-07-20",
+   "source": "LM56",
+   "doc": "Q2 2015 release",
+   "eps_guide": [
+    11.0,
+    11.3
+   ],
+   "segop_guide_usd_b": [
+    5.225,
+    5.375
+   ],
+   "cfo_words": "at least $5,000",
+   "note": "the 'Current Outlook' column (beside 'April Outlook'): net sales 'No Change', cash from operations 'No Change' (words: the last numeric range stands)"
+  },
+  {
+   "fy": 2015,
+   "published": "2015-10-20",
+   "source": "LM57",
+   "doc": "Q3 2015 release",
+   "rev_guide_usd_b": [
+    45.0,
+    45.0
+   ],
+   "eps_guide": [
+    11.3,
+    11.3
+   ],
+   "segop_guide_usd_b": [
+    5.4,
+    5.4
+   ],
+   "cfo_words": "at least $5,000",
+   "note": "the 'Current Update' column (beside 'July Outlook'): cash from operations 'No Change' (words: the last numeric range stands)"
+  },
+  {
+   "fy": 2016,
+   "published": "2016-01-26",
+   "source": "LM58",
+   "doc": "Q4 2015 release",
+   "rev_guide_usd_b": [
+    49.5,
+    51.0
+   ],
+   "eps_guide": [
+    11.45,
+    11.75
+   ],
+   "segop_guide_usd_b": [
+    4.9,
+    5.05
+   ],
+   "cfo_words": "at least $5,300"
+  },
+  {
+   "fy": 2016,
+   "published": "2016-04-26",
+   "source": "LM60",
+   "doc": "Q1 2016 release",
+   "rev_guide_usd_b": [
+    49.6,
+    51.1
+   ],
+   "eps_guide": [
+    11.5,
+    11.8
+   ],
+   "segop_guide_usd_b": [
+    5.025,
+    5.175
+   ],
+   "cfo_words": "at least $5,400",
+   "note": "the 'Current Update' column (beside 'January 2016')"
+  },
+  {
+   "fy": 2016,
+   "published": "2016-07-19",
+   "source": "LM61",
+   "doc": "Q2 2016 release",
+   "rev_guide_usd_b": [
+    50.0,
+    51.5
+   ],
+   "eps_guide": [
+    12.15,
+    12.45
+   ],
+   "segop_guide_usd_b": [
+    5.15,
+    5.3
+   ],
+   "cfo_words": "at least $5,500",
+   "note": "the 'Current Outlook' column (beside 'April Outlook')"
+  },
+  {
+   "fy": 2016,
+   "published": "2016-10-25",
+   "source": "LM62",
+   "doc": "Q3 2016 release",
+   "rev_guide_usd_b": [
+    46.5,
+    46.5
+   ],
+   "eps_guide": [
+    12.1,
+    12.1
+   ],
+   "eps_label": "diluted EPS from continuing operations",
+   "segop_guide_usd_b": [
+    5.025,
+    5.025
+   ],
+   "cfo_words": "at least $5,700",
+   "note": "the 'Current Outlook Adjusted for IS&GS' column (beside 'July Outlook' and 'July Outlook Adjusted for IS&GS'); the outlook excludes IS&GS, divested on Aug. 16, 2016, for the full year ('updated to exclude the operating results of the IS&GS business segment for the full year'); cash from operations is the row 'with F-35 Collection in 2016'"
+  },
+  {
+   "fy": 2017,
+   "published": "2017-01-24",
+   "source": "LM63",
+   "doc": "Q4 2016 release",
+   "rev_guide_usd_b": [
+    49.4,
+    50.6
+   ],
+   "eps_guide": [
+    12.25,
+    12.55
+   ],
+   "segop_guide_usd_b": [
+    5.015,
+    5.135
+   ],
+   "cfo_words": "at least $5,700"
+  },
+  {
+   "fy": 2017,
+   "published": "2017-04-25",
+   "source": "LM65",
+   "doc": "Q1 2017 release",
+   "rev_guide_usd_b": [
+    49.5,
+    50.7
+   ],
+   "eps_guide": [
+    12.15,
+    12.45
+   ],
+   "segop_guide_usd_b": [
+    4.985,
+    5.105
+   ],
+   "cfo_words": "at least $6,000",
+   "note": "the 'Current Update' column (beside 'January 2017')"
+  },
+  {
+   "fy": 2017,
+   "published": "2017-07-18",
+   "source": "LM66",
+   "doc": "Q2 2017 release",
+   "rev_guide_usd_b": [
+    49.8,
+    51.0
+   ],
+   "eps_guide": [
+    12.3,
+    12.6
+   ],
+   "segop_guide_usd_b": [
+    5.02,
+    5.14
+   ],
+   "cfo_words": "at least $6,000",
+   "note": "the 'Current Update' column (beside 'April Outlook')"
+  },
+  {
+   "fy": 2017,
+   "published": "2017-10-24",
+   "source": "LM67",
+   "doc": "Q3 2017 release",
+   "rev_guide_usd_b": [
+    50.0,
+    51.2
+   ],
+   "eps_guide": [
+    12.85,
+    13.15
+   ],
+   "segop_guide_usd_b": [
+    5.04,
+    5.16
+   ],
+   "cfo_words": "at least $6,200",
+   "note": "the 'Current Update' column (beside 'July Outlook'); the EPS range includes a gain the release expects to book in the fourth quarter ('a previously deferred non-cash gain of approximately $200 million related to properties sold in 2015', $0.40 per share), and no range excluding it is published: nothing is derived"
   }
  ],
  "dividends": [
@@ -2952,6 +4613,30 @@
    "source": "LM47",
    "quarterly": 1.33,
    "note": "$1.33 quarterly ('increased its quarterly dividend 16 percent, or $0.18 per share, to $1.33 per share', Q3 2013 release)"
+  },
+  {
+   "published": "2014-10-21",
+   "source": "LM52",
+   "quarterly": 1.5,
+   "note": "$1.50 quarterly ('increased its quarterly dividend 13 percent, or $0.17 per share, to $1.50 per share', Q3 2014 release)"
+  },
+  {
+   "published": "2015-10-20",
+   "source": "LM57",
+   "quarterly": 1.65,
+   "note": "$1.65 quarterly ('increased its quarterly dividend 10 percent, or $0.15 per share, to $1.65 per share', Q3 2015 release)"
+  },
+  {
+   "published": "2016-10-25",
+   "source": "LM62",
+   "quarterly": 1.82,
+   "note": "$1.82 quarterly ('Increased quarterly dividend rate 10 percent to $1.82 per share', Q3 2016 release)"
+  },
+  {
+   "published": "2017-10-24",
+   "source": "LM67",
+   "quarterly": 2.0,
+   "note": "$2.00 quarterly ('increased its quarterly dividend rate by 10 percent, or $0.18 per share, to $2.00 per share', Q3 2017 release)"
   }
  ],
  "events": [],
