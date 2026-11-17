@@ -36,13 +36,19 @@ from the latest filing that publishes one ($13.33, restated to $13.27 by the Q4 
 the 2017 pro forma for the 2018 standards that the release states beside it ('rev_base_usd_b', the ACN restated-base rule); a guide given
 with and without an announced item takes the figure without it (the 2021 pension settlement); EPS growth against a year-ago loss is over
 the loss's absolute value (the CAT rule); EV and CRYPTO are read as out of scope.
+From 2022 (retro/README.md, "LMT 2022-2026"): GAAP EPS throughout, as the company's adjusted EPS also removes recurring mark-to-market
+investment items (2021-2023) or results of programs in performance (2024); an outlook that includes a booked one-off with no figure
+without it stands as published (the 2022 pension settlement, the 2025 program losses); from 2023 segment operating profit excludes
+intangible asset amortization, each print against the year-ago quarter as its own release recasts it; GENAI and GLP1 are read as out of
+scope from each vintage's own words.
 Signals: backlog growth (total backlog at the quarter's end against the year-ago quarter's end, as that quarter's own release shows it:
 the MSFT rule), net sales growth, segment operating profit growth, diluted EPS growth and the segment operating margin change, each
 against the year-ago quarter as the release shows it.
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
 is the first trading day after it. Every earnings 8-K of 2006-2021 was accepted before the open (06:30-07:42 ET) on a Monday (Q2 2015,
-Q4 2017 and Q2 2021), a Tuesday, a Wednesday or a Thursday, so each such week is dated the next trading day.
+Q4 2017 and Q2 2021), a Tuesday, a Wednesday or a Thursday, so each such week is dated the next trading day; so was every one of
+2022-2026 (06:26-07:42 ET, Tuesdays, and Thursdays from Q4 2025).
 
 Output goes to staging/retrospective/LMT until the series is added to the archive (--out archive/retrospective/LMT).
 
@@ -51,6 +57,7 @@ Usage
   python3 retro/build_lmt.py --weekly 2010-01-04 2013-12-31
   python3 retro/build_lmt.py --weekly 2014-01-06 2017-12-31
   python3 retro/build_lmt.py --weekly 2018-01-01 2021-12-31
+  python3 retro/build_lmt.py --weekly 2022-01-03 2026-11-15
   python3 retro/build_lmt.py 2008-01-25
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/LMT/<AS_OF>
 """
@@ -86,15 +93,26 @@ RULE_T_KEYS = {"backlog": (1, False), "sales": (1, False), "segop": (1, False), 
 # From 2020 EV and CRYPTO become live; their scopes (road vehicles' powertrains and fuel retail, payments, banks and exchanges) name
 # nothing Lockheed Martin sells or holds either, and from the FY2017 vintage the theme reading quotes the 10-K's oil and gas market for
 # Sikorsky's commercial helicopters ('oil_words'); text only (retro/README.md, "LMT 2018-2021")
-ENCODED_THEMES = {"OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING", "ENERGY_TRANSITION", "EV", "CRYPTO"}
-THEME_ORDER = ("OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING", "ENERGY_TRANSITION", "EV", "CRYPTO")
+# From 2022-11-30 GENAI and from 2023-08-08 GLP1 become live; their scopes (software seats, IT services, professional information,
+# search, education content and mobility; snacks, beverages and sleep-apnea, diabetes and cardio devices) name nothing Lockheed Martin
+# sells, and its 10-Ks name artificial intelligence only among the technological advances enabling new competitors (and from the FY2023
+# 10-K a technology others may misuse, from FY2024 one it must integrate into its own processes and offerings: 'ai_words'), never as a
+# substitute for its products, and never name GLP-1 drugs; from the FY2021 10-K the climate reading quotes the vintage's regulation and
+# severe-weather words ('climate_words', 'weather_words'); text only (retro/README.md, "LMT 2022-2026")
+ENCODED_THEMES = {"OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING", "ENERGY_TRANSITION", "EV", "CRYPTO", "GENAI", "GLP1"}
+THEME_ORDER = ("OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING", "ENERGY_TRANSITION", "EV", "CRYPTO", "GENAI", "GLP1")
 THEME_SCOPE = {"OFFSHORE": "offshore delivery taking share in Western consulting, systems integration and outsourcing",
                "CLOUD": "public cloud displacing on-premise hardware, storage, databases and data-center outsourcing",
                "ECOMMERCE": "e-commerce displacing physical retail, malls, grocery and distribution",
                "STREAMING": "streaming displacing linear TV networks and pay-TV bundles",
                "ENERGY_TRANSITION": "decarbonisation stranding oil, gas and coal reserves and refining",
                "EV": "battery-electric vehicles displacing ICE powertrains, auto parts suppliers and fuel retail",
-               "CRYPTO": "crypto-assets disintermediating payments networks, banks, exchanges and remittance"}
+               "CRYPTO": "crypto-assets disintermediating payments networks, banks, exchanges and remittance",
+               "GENAI": "generative or autonomous AI substituting software seats, IT services and BPO hours, professional information, search, "
+                        "education content and mobility",
+               "GLP1": "GLP-1 obesity drugs reducing demand for snacks, beverages and sleep-apnea, diabetes and cardio devices"}
+AI_ROLES = ("among technological advances enabling new factors of competition", "as a threat in others' hands",
+            "as a technology to integrate into its own processes and offerings")
 
 
 def theme_reading(themes, as_of, h, plural):
@@ -106,20 +124,27 @@ def theme_reading(themes, as_of, h, plural):
     s = (lambda one, many: many if plural else one)
     doc = s("the 10-K", "the 10-Ks")
     absent = ["offshore competition"] + [w for k, w in (("ECOMMERCE", "e-commerce"), ("STREAMING", "streaming"),
-                                                         ("EV", "electric vehicles"), ("CRYPTO", "crypto-assets")) if k in live]
+                                                         ("EV", "electric vehicles"), ("CRYPTO", "crypto-assets"),
+                                                         ("GLP1", "GLP-1 drugs")) if k in live]
     text = f"{scope}; {doc} {s('names', 'name')} no " + (absent[0] if len(absent) == 1 else
                                                          ", ".join(absent[:-1]) + " or " + absent[-1])
     if "CLOUD" in live:
         text += (f" and {s('names', 'name')} cloud computing only among technological advances 'enabling new factors of competition for "
                  "both traditional and non-traditional competitors', not as a substitute for its products" if h.get("cloud_words") else
                  f" and {s('does', 'do')} not mention cloud")
+    # from the FY2021 10-K the climate words name regulation and severe weather, not only future regulation (LMT 2022-2026)
+    climate = (f"climate change only as a source of regulation and cost ('{h['climate_words']}') and of severe weather "
+               f"('{h['weather_words']}')" if h.get("weather_words") else
+               f"climate change only among concerns that could bring future regulation ('{h.get('climate_words')}')")
     if "ENERGY_TRANSITION" in live and h.get("oil_words"):
         text += (f"; Lockheed Martin holds no oil, gas or coal reserves or refining, and {doc} {s('names', 'name')} oil and gas only as a "
-                 f"market for Sikorsky's commercial helicopters ('{h['oil_words']}') and climate change only among concerns that could "
-                 f"bring future regulation ('{h['climate_words']}')")
+                 f"market for Sikorsky's commercial helicopters ('{h['oil_words']}') and {climate}")
     elif "ENERGY_TRANSITION" in live:
-        text += (f"; Lockheed Martin holds no oil, gas or coal reserves or refining, and {doc} {s('names', 'name')} climate change only "
-                 f"among concerns that could bring future regulation ('{h['climate_words']}')")
+        text += f"; Lockheed Martin holds no oil, gas or coal reserves or refining, and {doc} {s('names', 'name')} {climate}"
+    if "GENAI" in live:
+        roles = [f"{AI_ROLES[i]} ('{w}')" for i, w in enumerate(h["ai_words"])]
+        text += (f"; {doc} {s('names', 'name')} artificial intelligence only " + (roles[0] if len(roles) == 1 else
+                 ", ".join(roles[:-1]) + " and " + roles[-1]) + ", never as a substitute for its aircraft, missiles, helicopters and satellites")
     return text
 
 

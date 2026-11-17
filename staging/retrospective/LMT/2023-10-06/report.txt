@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  LMT  ·  Lockheed Martin Corporation  ·  $400.73  ·  RETROSPECTIVE as of 2023-10-06
+  Signal: ◉ BUY   Ratio B: 0.19x   Adj gap: +0.66  [UNDERVALUED]
+  Point-in-time: 15 sources, latest published 2023-10-06; latest print Q2 2023 (Jul 18)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2023E net sales, USD bn  →  FY2025E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Business segment             FY2023E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Aeronautics               $    27.2  $  27.2  $  30.5      +0.0      +3.3
+    +0.9% net sales in FY22
+  Missiles and Fire Contro  $    11.4  $  11.4  $  12.8      +0.0      +1.4
+    -3.2% net sales in FY22
+  Rotary and Mission Syste  $    16.3  $  16.3  $  18.3      +0.0      +2.0
+    -3.8% net sales in FY22
+  Space                     $    11.6  $  11.6  $  13.0      +0.0      +1.4
+    -2.4% net sales in FY22
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    66.5  $  66.5  $  74.6      +0.0      +8.1
+  FY2023E = FY22 $65.98B × (1 + 0.8%: FY23 net sales guide midpoint); split pro rata to FY22 net sales by business segment (FY2022 10-K, Selected Financial Data by Business Segment)
+  Q2 2023 (Jul 18): net sales $16.69B +8.1%; backlog +17.4%; segment operating profit +5.2%;
+  segment margin 11.11% (-30.2bp); diluted EPS $6.63 vs $1.16 (+471.6%)
+  Total backlog $158,011M at the quarter's end against $134,641M at June 26, 2022 (Q2 2022 release) (+17.4%); segment operating profit $1,855M against $1,763M a year earlier (+5.2%), as the releases show them; the year-ago quarter's GAAP EPS includes the pension settlement charge ($4.33 a share); the release's adjusted (non-GAAP) EPS of $6.73 also removes mark-to-market investment gains and losses, which recur, so it is display only (GAAP stands)
+  FY23 guide (Q4 2022 release, Q1 2023 release, Q2 2023 release): net sales $66.25-66.75B; diluted EPS $27.00-27.20; segment operating profit $7.325-7.375B and cash from operations at least $8,150M (display only: no margin is derived from two guided figures); the 'Current Update' column (beside 'April 2023')
+
+  FY2023E EPS check:  $66.5B × 10.1% pre-tax × (1−14.2%) ÷ 0.254B  =  $22.77  (FY2023E EPS, guide midpoint (Q2 2023 release))
+  FY2025E BEAR check: $66.5B × 10.1% ÷ 0.242B  =  $23.89  (scenario $23.39)
+  FY2025E BULL check: $74.6B × 10.5% ÷ 0.242B  =  $27.86  (scenario $33.57)
+  Every 1pp of pre-tax margin ≈ $2.25 EPS ≈ $40/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Backlog growth                     -14.0%   ≥-7.0%    ≥1.0%   ≥29.0%    +17.4%  ▲ BULL  ███░
+  Net sales growth                   -19.0%   ≥-7.0%    ≥5.0%   ≥20.0%     +8.1%  ▲ BULL  ███░
+  Segment operating profit growth    -18.0%    ≥0.0%   ≥18.0%   ≥22.0%     +5.2%  ◦ BASE  ██░░
+  Diluted EPS growth                  +0.0%   ≥21.0%   ≥41.0%   ≥45.0%   +471.6%  ★ XBULL  ████
+  Segment operating margin change   -30.0bp  ≥10.0bp  ≥50.0bp  ≥100.0bp   -30.2bp  ⚠ BEAR  █░░░
+  Disruption theme: none in scope    +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.55 / 4.00
+  Market composite:   2.04 / 4.00  (back-solved from $401 + 15% hurdle)
+  SCA adjustment:    +0.15  ·  EPP-distance adj +0.00  →  Adj composite 2.70  →  Gap +0.66  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY22 net sales -1.6%, backlog +10.8%, segment operating profit -2.2%; Q2 segment margin 11.11% (-30.2bp)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 14.8x FY23E vs a 17.7x 10-yr median (7th percentile of its own range)  (+0.50 × 25%  =  +0.125)
+    -  Growth vs own history: FY23 net sales guide +0.4-1.2% vs a 5.6% 9-yr median  (-0.48 × 20%  =  -0.096)
+    +  FY22 year-end cash and cash equivalents $2.547B, FY22 operating cash flow $7.802B, dividend $12.00 a year, repurchases of common stock $7,900M in 2022 (FY2022 10-K)  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Backlog growth                      +17.4%    -14.0%  -31.4%  Orders stop replacing sales
+  Net sales growth                     +8.1%    -19.0%  -27.1%  Program volume falls
+  Segment operating profit growth      +5.2%    -18.0%  -23.2%  Program profits stop growing
+  Diluted EPS growth                 +471.6%     +0.0%  -471.6%  Pension and tax lines take the gains
+  Segment operating margin change    -30.2bp   -30.0bp  +0.2bp  Program margins slip on fixed-price work
+  Disruption theme: none in scope     +2.0/4    +1.0/4  -1.0/4  No live disruption theme covers defen…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$410  (model)  /  $351 (defined)
+  Bear probability (proxy model):  8.4%
+
+  KEY TRIGGER: Backlog growth went from +8.1% (Q1 2023) to +17.4% (Q2 2023);
+  the bear case needs orders to stop replacing sales (net sales +8.1% now) while
+  program margins slip. The 10-K ties future sales to Congressional appropriations for defense procurement
+  and research and development; a terminated or delayed program leaves the backlog.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $27.10  (FY2023E EPS, guide midpoint (Q2 2023 release))
+  Min viable P/E at panic:          14x  [median of calendar-year P/E lows: 2013 14.8x, 2014 14.5x, 2015 18.7x, 2016 17.1x, 2017 18.9x, 2018 13.9x, 2019 11.8x, 2020 11.3x, 2021 14.1x, 2022 16.4x, 2023 14.7x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $379/share
+  Current $401 vs Updated EPP $379:  +6%  moderate distance to floor
+  Bear $351 vs Updated EPP $379:  -7%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Backlog growth                              -7.0      -24.4   BASE floor (vs +17 now)
+  Net sales growth                            -7.0      -15.1   BASE floor (vs +8 now)
+  Segment operating profit growth              0.0       -5.2   BASE floor (vs +5 now)
+  Diluted EPS growth                          21.0     -450.6   BASE floor (vs +472 now)
+  Segment operating margin change             10.0      +40.2   BASE floor (vs -30 now)
+  Disruption theme: none in scope              2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $27.10 × (1+1.2%)² = $27.73
+  At 17x P/E (conservative):  $471/share
+  + Cumul. dividends (2yr):  +$24.72/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $471  (▲71 from $401)
+  Conservative total return:  +24% over 2yr  = +12%/yr
+
+  At 14.8x the multiple is already near its 17x median, so the conservative
+  case is a growth question: breakeven at 17x needs FY2025E EPS of $22.12,
+  i.e. -9.7%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $388.10  –  $508.10  (at 11th pct of range)
+  Annual dividend:      $12.00/share  (yield 3.0%)
+  Realized vol (1yr):   20% annualized
+  Beta vs broad market: 0.40
+  1-sigma range (1yr):  $319  –  $482  ($401 ± 20%)
+  2-sigma range (1yr):  $237  –  $564
+  ────────────────────────────────────────────────────────────
+  Bear $351 requires:  ~0.6σ price move  (within normal vol range)
+  A defense prime contractor with a 0.4 beta: the stock is +3% off its October
+  low while Backlog growth went from +8.1% (Q1 2023) to +17.4% (Q2 2023).
+  Near the low: the multiple has de-rated alongside the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR       23.39  15.0x  $    351     8.4%     17.1%    -8.7pp  EPS -7.1%/yr (worst year FY13-FY22, capped at 0%); P/E to its 10th pct
+  BASE       28.84  17.7x  $    510    29.3%     59.7%   -30.4pp  EPS +3.2%/yr (FY23 guide + margin + buyback); P/E at its 10-yr median
+  BULL       33.57  19.9x  $    668    52.4%     19.5%   +32.9pp  EPS +11.3%/yr (FY13-FY22 CAGR); P/E holds its 75th pct
+  XBULL      44.83  21.4x  $    959     9.9%      3.7%    +6.2pp  EPS +28.6%/yr (best 2-yr run FY13-FY22); P/E at its 90th pct
+
+  Proxy EV (2yr): $624  /  Market EV: $530  /  Current: $401
+  Conservative EV (2yr, ④): $471 + $24.72 divs = $496 total value
+  Downside (→ Bear $351): 12.4%   Upside (→ Bull $668): 66.7%   Ratio B 0.19x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $401 the market needs $530 in two years —
+  between the BASE and BULL cases. That is a market composite of 2.04 against a model
+  read of 2.70: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.19x      +6%    +0.66  UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.07x      +6%    +1.03  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.32x      +6%    +0.36  MODESTLY UNDERVALUED / BUY
+  Scenario EPS +1.5pp/yr                          0.14x      +6%    +0.79  UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.25x      +6%    +0.56  UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.19x      +6%    +0.96  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.19x     -13%    +0.86  UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.19x      +6%    +1.00  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 2023 print (late October) — the next read on backlog (+17.4% now) and the outlook
+  (2) Segment margin — -30.2bp in Q2 2023: program execution on fixed-price and cost-plus work, what must hold if volume does not
+  (3) FY23 diluted EPS guide $27.00-27.20 (Q2 2023 release): the company's own read of the year, FAS/CAS pension adjustment included
+  (4) FY23 net sales guide $66.25-66.75B (Q2 2023 release): program volume in one number
+  (5) Capital return at 15x — Paying $750 million to repurchase 1.6 million shares (including 0.1 million shares received upon settlement of an accelerated share repurchase agreement (ASR) in the third quarter 2023: management's own read of the multiple
+  ◉ BUY  |  EPP floor $379  |  ADD below ~$434  |  TRIM above $668
+════════════════════════════════════════════════════════════════════════
+

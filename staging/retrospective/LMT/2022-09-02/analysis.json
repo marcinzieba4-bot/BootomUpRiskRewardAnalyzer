@@ -1,0 +1,278 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "LMT",
+ "company": "Lockheed Martin Corporation",
+ "as_of": "2022-09-02",
+ "price_date": "2022-09-02",
+ "price": 418.57,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); defense prime contractor signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'In 2021, 71% of our $67.0 billion in net sales were from the U.S. Government, either as a prime contractor or as a subcontractor (including 62% from the Department of Defense (DoD))' (FY2021 10-K, Item 1); 'We depend heavily on contracts with the U.S. Government for a substantial portion of our business. ... Those contracts are conditioned upon the continuing availability of Congressional appropriations.' (Item 1A): sales that depend on Congressional appropriations are not earnings that are the cycle, so DURABLE (the CAT and SO precedent); OFFSHORE (live from 2004-11-05) is scoped to offshore delivery taking share in Western consulting, systems integration and outsourcing, CLOUD (live from 2012-10-30) to public cloud displacing on-premise hardware, storage, databases and data-center outsourcing, ECOMMERCE (live from 2015-01-01) to e-commerce displacing physical retail, malls, grocery and distribution, STREAMING (live from 2015-08-04) to streaming displacing linear TV networks and pay-TV bundles, ENERGY_TRANSITION (live from 2015-12-12) to decarbonisation stranding oil, gas and coal reserves and refining, EV (live from 2020-01-01) to battery-electric vehicles displacing ICE powertrains, auto parts suppliers and fuel retail, and CRYPTO (live from 2020-10-21) to crypto-assets disintermediating payments networks, banks, exchanges and remittance; the 10-K names no offshore competition, e-commerce, streaming, electric vehicles or crypto-assets and does not mention cloud; Lockheed Martin holds no oil, gas or coal reserves or refining, and the 10-K names oil and gas only as a market for Sikorsky's commercial helicopters ('demand for its products may be adversely affected by global economic conditions, including oil and gas trends that are outside of our control') and climate change only as a source of regulation and cost ('potential impacts relating to climate change could result in laws, regulations or policies that significantly increase our direct and indirect operational and compliance burdens') and of severe weather ('weather conditions, some of which may be exacerbated by climate-change'), so no disruption theme in scope is live",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "'In 2021, 71% of our $67.0 billion in net sales were from the U.S. Government, either as a prime contractor or as a subcontractor (including 62% from the Department of Defense (DoD))' (FY2021 10-K, Item 1); 'We depend heavily on contracts with the U.S. Government for a substantial portion of our business. ... Those contracts are conditioned upon the continuing availability of Congressional appropriations.' (Item 1A): sales that depend on Congressional appropriations are not earnings that are the cycle, so DURABLE (the CAT and SO precedent); OFFSHORE (live from 2004-11-05) is scoped to offshore delivery taking share in Western consulting, systems integration and outsourcing, CLOUD (live from 2012-10-30) to public cloud displacing on-premise hardware, storage, databases and data-center outsourcing, ECOMMERCE (live from 2015-01-01) to e-commerce displacing physical retail, malls, grocery and distribution, STREAMING (live from 2015-08-04) to streaming displacing linear TV networks and pay-TV bundles, ENERGY_TRANSITION (live from 2015-12-12) to decarbonisation stranding oil, gas and coal reserves and refining, EV (live from 2020-01-01) to battery-electric vehicles displacing ICE powertrains, auto parts suppliers and fuel retail, and CRYPTO (live from 2020-10-21) to crypto-assets disintermediating payments networks, banks, exchanges and remittance; the 10-K names no offshore competition, e-commerce, streaming, electric vehicles or crypto-assets and does not mention cloud; Lockheed Martin holds no oil, gas or coal reserves or refining, and the 10-K names oil and gas only as a market for Sikorsky's commercial helicopters ('demand for its products may be adversely affected by global economic conditions, including oil and gas trends that are outside of our control') and climate change only as a source of regulation and cost ('potential impacts relating to climate change could result in laws, regulations or policies that significantly increase our direct and indirect operational and compliance burdens') and of severe weather ('weather conditions, some of which may be exacerbated by climate-change'), so no disruption theme in scope is live. durable franchise (obsolescence risk 2/5); price rich; Ratio B 1.21x; +39% to EPP floor; model-vs-market gap -1.37; conservative 2yr -7%.",
+  "theme": null
+ },
+ "legacy_signal_short": "WATCHLIST",
+ "legacy_signal": "◐ WATCHLIST",
+ "metrics": {
+  "ratio_b": 1.21,
+  "ratio_b_fmt": "1.21x",
+  "epp": 301.7,
+  "epp_gap_pct": 38.7,
+  "epp_adj": 0.0,
+  "proxy_composite": 1.65,
+  "sca": -0.062,
+  "adj_composite": 1.587,
+  "market_composite": 2.96,
+  "adj_gap": -1.37,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": -7.0,
+  "scenarios": {
+   "BEAR": {
+    "eps": 18.6,
+    "pe": 13.6,
+    "price": 253,
+    "desc": "EPS -7.1%/yr (worst year FY12-FY21, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 21.2,
+    "pe": 17.4,
+    "price": 369,
+    "desc": "EPS +-0.8%/yr (FY22 guide + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 28.01,
+    "pe": 19.8,
+    "price": 555,
+    "desc": "EPS +14.0%/yr (FY12-FY21 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 35.65,
+    "pe": 21.1,
+    "price": 752,
+    "desc": "EPS +28.6%/yr (best 2-yr run FY12-FY21); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 1.21,
+   "epp_gap_pct": 38.7,
+   "adj_gap": -1.37,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": -7.0,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.77,
+   "epp_gap_pct": 38.7,
+   "adj_gap": -1.02,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": -7.0,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 2.64,
+   "epp_gap_pct": 38.7,
+   "adj_gap": -1.67,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -7.0,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 1.03,
+   "epp_gap_pct": 38.7,
+   "adj_gap": -1.25,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": -7.0,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 1.45,
+   "epp_gap_pct": 38.7,
+   "adj_gap": -1.48,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": -7.0,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 1.21,
+   "epp_gap_pct": 38.7,
+   "adj_gap": -1.07,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": -7.0,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 1.21,
+   "epp_gap_pct": 14.3,
+   "adj_gap": -1.37,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": -7.0,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 1.21,
+   "epp_gap_pct": 38.7,
+   "adj_gap": -1.02,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": -7.0,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "RICH"
+ ],
+ "summary": "LMT (retrospective, 2022-09-02) ◐ WATCHLIST — Ratio B 1.21x (39.6% downside to Bear $253 / +32.6% upside to Bull $555) | Adj composite 1.59 vs market 2.96: gap -1.37 [OVERVALUED] | +39% above the EPP floor $302 (14x FY22E $21.55) | Conservative 2-yr case: -7.0% total (-3.5%/yr) | At 19.4x FY22E the 15% hurdle price $554 sits between the BASE and BULL cases; backlog -5.0% in Q2 2022, forward revenues -2.7% (FY22 net sales guide); OFFSHORE (live from 2004-11-05) is scoped to offshore delivery taking share in Western consulting, systems integration and outsourcing, CLOUD (live from 2012-10-30) to public cloud displacing on-premise hardware, storage, databases and data-center outsourcing, ECOMMERCE (live from 2015-01-01) to e-commerce displacing physical retail, malls, grocery and distribution, STREAMING (live from 2015-08-04) to streaming displacing linear TV networks and pay-TV bundles, ENERGY_TRANSITION (live from 2015-12-12) to decarbonisation stranding oil, gas and coal reserves and refining, EV (live from 2020-01-01) to battery-electric vehicles displacing ICE powertrains, auto parts suppliers and fuel retail, and CRYPTO (live from 2020-10-21) to crypto-assets disintermediating payments networks, banks, exchanges and remittance; the 10-Ks name no offshore competition, e-commerce, streaming, electric vehicles or crypto-assets and do not mention cloud; Lockheed Martin holds no oil, gas or coal reserves or refining, and the 10-Ks name oil and gas only as a market for Sikorsky's commercial helicopters ('demand for its products may be adversely affected by global economic conditions, including oil and gas trends that are outside of our control') and climate change only as a source of regulation and cost ('potential impacts relating to climate change could result in laws, regulations or policies that significantly increase our direct and indirect operational and compliance burdens') and of severe weather ('weather conditions, some of which may be exacerbated by climate-change'), so no theme in scope has dated evidence.",
+ "sources": [
+  {
+   "id": "LM90",
+   "published": "2022-01-25",
+   "filed": "2022-01-25 07:58 ET, before the open",
+   "title": "Lockheed Martin FY2021 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646822000008/lmt-20211231.htm",
+   "supports": "five-year summary 2021-2017 (net sales $67,044M to $49,960M; diluted EPS $22.76, $24.50, $21.95, $17.59, $6.50); total business segment operating profit $7,379M, $7,152M; average diluted shares 277.4M, 281.2M, 283.8M; Items 1 and 1A"
+  },
+  {
+   "id": "LM73",
+   "published": "2019-01-29",
+   "filed": "2019-01-29 07:31 ET, before the open",
+   "title": "Lockheed Martin Q4 2018 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646819000004/ex991q42018.htm",
+   "supports": "Q4 2018: net sales $14,411M vs $13,844M, segment operating profit $1,515M vs $1,367M, diluted EPS from continuing operations $4.39 vs $-2.85, total backlog $130,468M, average diluted shares 285.5M; FY2019 outlook net sales $55.75-57.25B, diluted EPS $19.15-19.45"
+  },
+  {
+   "id": "LM84",
+   "published": "2021-01-29",
+   "filed": "2021-01-28 17:08 ET, after the close (dated the next trading day)",
+   "title": "Lockheed Martin FY2020 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646821000013/lmt-20201231.htm",
+   "supports": "five-year summary 2020-2016 (net sales $65,398M to $47,290M; diluted EPS from continuing operations $24.50, $21.95, $17.59, $6.50, $12.08; backlog $147,131M and $143,981M); total business segment operating profit 2020-2019 $7,152M, $6,574M; average diluted shares 281.2M, 283.8M, 286.8M; Items 1 and 1A"
+  },
+  {
+   "id": "LM79",
+   "published": "2020-02-07",
+   "filed": "2020-02-07 11:44 ET, during the session",
+   "title": "Lockheed Martin FY2019 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646820000016/lmtq4201910k.htm",
+   "supports": "five-year summary 2019-2015 (net sales $59,812M to $40,536M; diluted EPS from continuing operations $21.95, $17.59, $6.50, $12.08, $9.93; backlog $143,981M and $130,468M); total business segment operating profit 2019-2018 $6,574M, $5,877M; average diluted shares 283.8M, 286.8M, 290.6M; Items 1 and 1A"
+  },
+  {
+   "id": "LM74",
+   "published": "2019-02-08",
+   "filed": "2019-02-08 11:38 ET, during the session",
+   "title": "Lockheed Martin FY2018 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646819000009/lmtq4201810k.htm",
+   "supports": "five-year summary 2018-2014 (net sales $53,762M to $39,946M; diluted EPS from continuing operations $17.59, $6.50, $12.08, $9.93, $10.09; backlog $130,468M and $105,493M); total business segment operating profit 2018-2017 $5,877M, $5,092M; average diluted shares 286.8M, 290.6M, 303.1M; Items 1 and 1A"
+  },
+  {
+   "id": "LM69",
+   "published": "2018-02-07",
+   "filed": "2018-02-06 16:22 ET, after the close (dated the next trading day)",
+   "title": "Lockheed Martin FY2017 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646818000009/lmtq4201710k.htm",
+   "supports": "five-year summary 2017-2013 (net sales $51,048M to $39,243M; diluted EPS from continuing operations $6.64, $12.38, $9.93, $10.09, $8.27; backlog $99,936M and $96,158M); total business segment operating profit 2017-2016 $5,115M, $5,100M; average diluted shares 290.6M, 303.1M, 314.7M; Items 1 and 1A"
+  },
+  {
+   "id": "LM64",
+   "published": "2017-02-10",
+   "filed": "2017-02-09 16:32 ET, after the close (dated the next trading day)",
+   "title": "Lockheed Martin FY2016 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312517036192/d290249d10k.htm",
+   "supports": "five-year summary 2016-2012 (net sales $47,248M to $40,573M; diluted EPS from continuing operations $12.38, $9.93, $10.09, $8.27, $6.99; backlog $96,200M and $94,800M); total business segment operating profit 2016-2015 $5,100M, $4,978M; average diluted shares 303.1M, 314.7M, 322.4M; Items 1 and 1A"
+  },
+  {
+   "id": "LM59",
+   "published": "2016-02-25",
+   "filed": "2016-02-24 17:21 ET, after the close (dated the next trading day)",
+   "title": "Lockheed Martin FY2015 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312516476010/d62685d10k.htm",
+   "supports": "five-year summary 2015-2011 (net sales $46,132M to $46,499M; diluted EPS from continuing operations $11.46, $11.21, $9.04, $8.36, $7.85; backlog $99,600M and $80,547M); total business segment operating profit 2015-2014 $5,486M, $5,588M; average diluted shares 314.7M, 322.4M, 326.5M; Items 1 and 1A"
+  },
+  {
+   "id": "LM54",
+   "published": "2015-02-09",
+   "filed": "2015-02-09 12:39 ET, during the session",
+   "title": "Lockheed Martin FY2014 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312515038681/d808572d10k.htm",
+   "supports": "five-year summary 2014-2010 (net sales $45,600M to $45,671M; diluted EPS from continuing operations $11.21, $9.04, $8.36, $7.85, $7.10; backlog $80,547M and $82,600M); total business segment operating profit 2014-2013 $5,588M, $5,752M; average diluted shares 322.4M, 326.5M, 328.4M; Items 1 and 1A"
+  },
+  {
+   "id": "LM89",
+   "published": "2022-01-25",
+   "filed": "2022-01-25 07:32 ET, before the open",
+   "title": "Lockheed Martin Q4 2021 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646822000006/ex991q42021.htm",
+   "supports": "Q4 2021: net sales $17,729M vs $17,032M, segment operating profit $2,014M vs $1,875M, diluted EPS from continuing operations $7.47 vs $6.38, total backlog $135,355M, average diluted shares 274.3M"
+  },
+  {
+   "id": "LM91",
+   "published": "2022-04-19",
+   "filed": "2022-04-19 07:31 ET, before the open",
+   "title": "Lockheed Martin Q1 2022 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646822000044/ex991q12022.htm",
+   "supports": "Q1 2022: net sales $14,964M vs $16,258M, segment operating profit $1,656M vs $1,749M, diluted EPS $6.44 vs $6.56, total backlog $134,230M, average diluted shares 269.2M"
+  },
+  {
+   "id": "LM92",
+   "published": "2022-07-19",
+   "filed": "2022-07-19 07:31 ET, before the open",
+   "title": "Lockheed Martin Q2 2022 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646822000091/ex991q22022.htm",
+   "supports": "Q2 2022: net sales $15,446M vs $17,029M, segment operating profit $1,701M vs $1,766M, diluted EPS $1.16 vs $6.52, total backlog $134,641M, average diluted shares 266.7M"
+  },
+  {
+   "id": "LM86",
+   "published": "2021-07-26",
+   "filed": "2021-07-26 07:33 ET, before the open",
+   "title": "Lockheed Martin Q2 2021 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646821000069/ex991q22021.htm",
+   "supports": "Q2 2021: net sales $17,029M vs $16,220M, segment operating profit $1,766M vs $1,790M, diluted EPS $6.52 vs $5.79, total backlog $141,664M, average diluted shares 278.4M; FY2021 outlook net sales $67.3-68.7B, diluted EPS $26.70-27.00"
+  },
+  {
+   "id": "LM88",
+   "published": "2021-10-26",
+   "filed": "2021-10-26 07:31 ET, before the open",
+   "title": "Lockheed Martin Q3 2021 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646821000098/ex991q32021.htm",
+   "supports": "Q3 2021: net sales $16,028M vs $16,495M, segment operating profit $1,850M vs $1,762M, diluted EPS from continuing operations $2.21 vs $6.25, total backlog $134,848M, average diluted shares 277.3M; FY2021 outlook net sales ~$67B, diluted EPS - adjusted (without the pension settlement charge) ~$27.17"
+  },
+  {
+   "id": "W0",
+   "published": "2022-09-02",
+   "title": "Yahoo Finance daily prices, LMT and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/LMT/history",
+   "supports": "close $418.57 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-17"
+}
