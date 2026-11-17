@@ -14,7 +14,9 @@ THE CHECKS, fixed in this docstring before the first run.
   2%, after any split between the guide and the date. These are the guides list, or ACN's prints' fy_eps_guide. A
   date whose comment says the EPS comes from a growth guide counts if an EPS growth guide for that fiscal year was
   published by then. [Both widened after the first run: some sheets label Q4 prints only by name ("Q4 2007"), and some
-  dates use growth guides, so the first pass flagged ACN and UNP Q4 dates and NKE and WMT growth-guide dates. Count
+  dates use growth guides, so the first pass flagged ACN and UNP Q4 dates and NKE and WMT growth-guide dates. With the
+  thirteen later tickers (RETRO_UNIVERSE=all) two more forms were added: a guide quoted in the date's own comment with
+  its publication date (F, SO), and a net-income guide divided by shares (KMI). Count
   the dates where only a guide published AFTER the as-of date matches: that would be a leak.
 - The trade is entered at the close of the next trading day after the as-of date, so anything published on the as-of
   date (after-close releases are already dated the next day in retro/facts) is public before the entry.
@@ -82,6 +84,9 @@ for t, d in FACTS.items():
 
 GROWTH_GUIDES = {t: sorted((g["published"], g["fy"]) for g in d.get("guides", []) if g.get("eps_growth") is not None)
                  for t, d in FACTS.items()}                      # EPS growth guides (a percentage on the prior year)
+NI_GUIDES = {t: sorted((g["published"], g["fy"]) for g in d.get("guides", []) if g.get("ni_guide_m") is not None)
+             for t, d in FACTS.items()}                          # net-income guides divided by shares (KMI)
+ISO_DATE = re.compile(r"\d{4}-\d{2}-\d{2}")
 GUIDES = {}                                                      # ticker -> [(published, fy, value)]
 for t, d in FACTS.items():
     out = []
@@ -149,9 +154,13 @@ def section_audit():
             growth = "growth" in r["eps_comment"]
             g_before = growth and any(pub <= r["as_of"] and fy == r["eps_fy"] for pub, fy in GROWTH_GUIDES[t])
             g_after = growth and any(pub > r["as_of"] and fy == r["eps_fy"] for pub, fy in GROWTH_GUIDES[t])
-            if match(before) or g_before:
+            cited = ISO_DATE.findall(r["eps_comment"])          # a guide quoted in the comment with its publication date
+            c_before, c_after = bool(cited) and max(cited) <= r["as_of"], bool(cited) and max(cited) > r["as_of"]
+            ni = "net income" in r["eps_comment"]
+            n_before = ni and any(pub <= r["as_of"] and fy == r["eps_fy"] for pub, fy in NI_GUIDES[t])
+            if match(before) or g_before or c_before or n_before:
                 ok += 1
-            elif match(after) or g_after:
+            elif match(after) or g_after or c_after:
                 leak += 1
             else:
                 none += 1

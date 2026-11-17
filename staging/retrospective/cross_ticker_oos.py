@@ -33,7 +33,10 @@ from collections import Counter, defaultdict
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 DISCOVERY = ("ACN", "UNP", "LOW")
 TEST = ("AAPL", "AVGO", "MSFT", "NKE", "PEP", "SHW", "WMT", "XOM")
-ALL = DISCOVERY + TEST
+# The thirteen tickers built after the Ratio B / EPS studies (November 2026). Off by default, so every script and
+# document written on the first eleven reproduces unchanged; RETRO_UNIVERSE=all adds them (ratio_b_eps_24.py sets it).
+LATER = ("BKR", "BMY", "CAT", "CMCSA", "CTVA", "F", "KMI", "LMT", "MAR", "NVDA", "PFE", "RCL", "SO")
+ALL = DISCOVERY + TEST + (LATER if os.environ.get("RETRO_UNIVERSE") == "all" else ())
 SERIES = {t: "archive/retrospective/ACN" if t == "ACN" else f"staging/retrospective/{t}" for t in ALL}
 SETS = (("discovery (ACN, UNP, LOW)", DISCOVERY), ("out of sample (the eight newer tickers)", TEST), ("all eleven", ALL))
 PE_NOW = re.compile(r"^PE_NOW_PCTL\s*=\s*(\d+)\s*(?:#.*)?$", re.M)
