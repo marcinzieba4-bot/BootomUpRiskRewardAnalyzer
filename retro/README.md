@@ -18177,7 +18177,10 @@ Controls and checks (before any 2022-2026 outcome):
   a copy of a 2022 model are found.
 - **`retro_tool run` passes on all 254 dates** with no warning; a scan of the new models, reports and analyses for calendar years after
   their date (FY labels, URLs and the `generated` stamp aside) finds none.
-- **Firewall** (after the build was committed, before any outcome), at the 32 cutoffs above: in progress at this commit; the result follows.
+- **Firewall** (after the build was committed, before any outcome), at the 32 cutoffs above (every release and 10-K date of 2022-2026,
+  the GENAI and GLP1 live dates, each January 1 from 2022 to 2026, and 2026-11-14): every cutoff reports 0 files changed and 0 models
+  containing planted text (731 to 985 dates each); the 2026-11-14 run rebuilds all 985 dates of 2008-2026 byte-identical. The plant's
+  later vintage gains planted severe-weather and artificial-intelligence words.
 - **Regression:** the 731 dates of 2008-2021 rebuild byte-identical after the builder, fact-sheet and firewall changes (with a price
   cache fetched afresh on 2026-11-17); no shared code changed.
 
