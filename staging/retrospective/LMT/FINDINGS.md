@@ -1,6 +1,7 @@
 # LMT retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the LMT weekly dates: 314 from 2008-01-04 to 2013-12-31 (105 to 2009-12-31, 209 from 2010-01-08), all
+Patterns seen in `outcome.json` for the LMT weekly dates: 522 from 2008-01-04 to 2017-12-29 (105 to 2009-12-31, 209 from 2010-01-08 to
+2013-12-31, 208 from 2014-01-10), all
 Lockheed Martin Corporation (NYSE: LMT). They are **labels and hypotheses**: never feed them back into the method or the fact sheet. Each
 batch has its own section below.
 
@@ -220,3 +221,244 @@ FAIR should land within 15pp of SPY over two years and RICH should miss the hurd
   moves 106 classes from 2011-01-21 to 2013-10-11: as built 89 of them held, and as moved 13 would have (CHEAP to RICH: 76 held as built, 6
   as moved). Every signal at XBULL moves 25 FAIR and RICH dates of 2013 toward CHEAP: 0 held as built, 13 as moved. With the 2008
   observation above this is one stock, two regimes and opposite answers: no reason to read the signals differently.
+
+# 2014-2017 (208 dates)
+
+The 208 weekly dates from 2014-01-10 to 2017-12-29 were scored only after their point-in-time build was committed (0ebda7172) and their
+decisions, controls, leak scan, sensitivities and firewall result were written to the README and committed (a9966ccba); the outcomes were
+computed on 2026-11-17, and nothing below was read for any 2014-2017 decision. Every date has its 6-month, 1-, 2- and 3-year horizons (the
+last ends 2020-12-29). Total returns include the quarterly dividends: $10.95-17.20 a share over two years, 5.3-7.9% of the entry price. No
+split falls in any horizon; the 2016 exchange offer for Leidos shares was a choice offered to holders, not a distribution, so no price is
+adjusted. The hurdle, the call checks and the medians are as above: RICH should miss the hurdle and lag SPY over two years.
+
+Every 2014-2017 date is RICH, so the tables split the dates by tier, by latest print and by where the price stood against the EPP floor.
+
+## 2014 (51 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 44 | +47.4% | +33.4% to +65.3% | 44 | 44 | +28.9% | 0 |
+| class RICH, legacy tier WATCHLIST | 7 | +53.8% | +44.1% to +66.3% | 7 | 7 | +35.4% | 0 |
+| latest print Q3 2013 (2014-01-10 to 2014-01-17) | 2 | +50.3% | +48.0% to +50.3% | 2 | 2 | +36.0% | 0 |
+| latest print Q4 2013 (2014-01-24 to 2014-04-17) | 13 | +44.1% | +33.7% to +53.8% | 13 | 13 | +29.8% | 0 |
+| latest print Q1 2014 (2014-04-23 to 2014-07-18) | 13 | +54.2% | +47.4% to +66.3% | 13 | 13 | +30.7% | 0 |
+| latest print Q2 2014 (2014-07-23 to 2014-10-17) | 13 | +46.6% | +39.2% to +64.8% | 13 | 13 | +30.6% | 0 |
+| latest print Q3 2014 (2014-10-22 to 2014-12-26) | 10 | +43.7% | +33.4% to +50.0% | 10 | 10 | +24.4% | 0 |
+| price 0-100% over the EPP floor | 51 | +47.5% | +33.4% to +66.3% | 51 | 51 | +30.1% | 0 |
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 53 | +49.5% | +36.0% to +58.8% | 53 | 53 | +29.1% | 0 |
+| latest print Q3 2014 (2015-01-02 to 2015-01-23) | 4 | +37.4% | +36.0% to +38.8% | 4 | 4 | +23.0% | 0 |
+| latest print Q4 2014 (2015-01-28 to 2015-04-17) | 12 | +40.9% | +36.4% to +45.3% | 12 | 12 | +24.3% | 0 |
+| latest print Q1 2015 (2015-04-22 to 2015-07-17) | 13 | +52.1% | +44.9% to +57.0% | 13 | 13 | +33.8% | 0 |
+| latest print Q2 2015 (2015-07-21 to 2015-10-16) | 13 | +54.8% | +46.8% to +58.7% | 13 | 13 | +29.4% | 0 |
+| latest print Q3 2015 (2015-10-21 to 2015-12-31) | 11 | +52.0% | +45.3% to +58.8% | 11 | 11 | +30.6% | 0 |
+| price 0-100% over the EPP floor | 20 | +49.0% | +36.0% to +57.0% | 20 | 20 | +32.1% | 0 |
+| price 100% or more over the EPP floor | 33 | +50.1% | +36.4% to +58.8% | 33 | 33 | +28.8% | 0 |
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 52 | +39.9% | +9.1% to +75.4% | 36 | 34 | +32.9% | 15 |
+| latest print Q3 2015 (2016-01-08 to 2016-01-22) | 3 | +61.9% | +60.8% to +62.3% | 3 | 3 | +35.7% | 0 |
+| latest print Q4 2015 (2016-01-27 to 2016-04-22) | 13 | +62.9% | +54.3% to +75.4% | 13 | 13 | +38.2% | 0 |
+| latest print Q1 2016 (2016-04-27 to 2016-07-15) | 12 | +38.8% | +24.5% to +44.1% | 8 | 7 | +31.7% | 4 |
+| latest print Q2 2016 (2016-07-20 to 2016-10-21) | 14 | +43.6% | +24.2% to +55.2% | 11 | 10 | +32.7% | 3 |
+| latest print Q3 2016 (2016-10-26 to 2016-12-30) | 10 | +20.3% | +9.1% to +33.1% | 1 | 1 | +29.0% | 8 |
+| price 0-100% over the EPP floor | 2 | +74.7% | +72.8% to +74.7% | 2 | 2 | +44.1% | 0 |
+| price 100% or more over the EPP floor | 50 | +39.6% | +9.1% to +75.4% | 34 | 32 | +32.7% | 15 |
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 52 | +27.7% | +8.9% to +36.9% | 10 | 38 | +10.0% | 14 |
+| latest print Q3 2016 (2017-01-06 to 2017-01-20) | 3 | +15.3% | +8.9% to +15.8% | 0 | 0 | +24.6% | 3 |
+| latest print Q4 2016 (2017-01-25 to 2017-04-21) | 13 | +20.6% | +14.8% to +21.7% | 0 | 2 | +16.5% | 11 |
+| latest print Q1 2017 (2017-04-26 to 2017-07-14) | 12 | +31.8% | +25.1% to +36.9% | 5 | 12 | +12.1% | 0 |
+| latest print Q2 2017 (2017-07-19 to 2017-10-20) | 14 | +30.4% | +21.7% to +33.2% | 4 | 14 | +6.9% | 0 |
+| latest print Q3 2017 (2017-10-25 to 2017-12-29) | 10 | +28.0% | +24.0% to +32.5% | 1 | 10 | +7.8% | 0 |
+| price 0-100% over the EPP floor | 11 | +21.3% | +14.8% to +27.4% | 0 | 2 | +16.4% | 9 |
+| price 100% or more over the EPP floor | 41 | +28.5% | +8.9% to +36.9% | 10 | 36 | +8.3% | 5 |
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH | 208 | +41.3% | +8.9% to +75.4% | 150 | 176 | +27.9% | 29 |
+| legacy tier AVOID | 201 | +40.8% | +8.9% to +75.4% | 143 | 169 | +27.5% | 29 |
+| legacy tier WATCHLIST | 7 | +53.8% | +44.1% to +66.3% | 7 | 7 | +35.4% | 0 |
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| RICH, 0-75% over the floor | 29 | +51.7% | +33.7% to +66.3% | 29 | 29 | +31.2% | 0 |
+| RICH, 75-100% over the floor | 55 | +40.9% | +14.8% to +74.7% | 44 | 46 | +26.2% | 9 |
+| RICH, 100-125% over the floor | 89 | +44.5% | +20.6% to +75.4% | 68 | 87 | +26.8% | 1 |
+| RICH, 125-1000000000.0% over the floor | 35 | +26.7% | +8.9% to +40.2% | 9 | 14 | +25.8% | 19 |
+| RICH, Ratio B finite | 93 | +48.2% | +33.4% to +75.4% | 93 | 93 | +31.0% | 0 |
+| RICH, Ratio B infinite (price over BULL) | 115 | +31.8% | +8.9% to +70.9% | 57 | 83 | +24.3% | 29 |
+
+- **RICH held on none of the 51.** $147.76-196.84 (14.2-17.7x the FY13 and FY14 guides, 58-96% over the floor) returned +33.4% to +66.3%
+  over two years, 20.9-53.5pp ahead of SPY (+5.8% to +17.9%), and +72.2% to +93.5% over three, 37.4-60.9pp ahead. The largest drawdown
+  within two years was 10.2-13.5%.
+- **The seven WATCHLIST dates did no worse than the AVOID ones** (+44.1% to +66.3% against +33.4% to +65.3%).
+- **Every 2014 date landed at BULL and over the BULL price** (two-year price $206.08-267.24); none passed XBULL.
+
+## 2015 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 53 | +49.5% | +36.0% to +58.8% | 53 | 53 | +29.1% | 0 |
+| latest print Q3 2014 (2015-01-02 to 2015-01-23) | 4 | +37.4% | +36.0% to +38.8% | 4 | 4 | +23.0% | 0 |
+| latest print Q4 2014 (2015-01-28 to 2015-04-17) | 12 | +40.9% | +36.4% to +45.3% | 12 | 12 | +24.3% | 0 |
+| latest print Q1 2015 (2015-04-22 to 2015-07-17) | 13 | +52.1% | +44.9% to +57.0% | 13 | 13 | +33.8% | 0 |
+| latest print Q2 2015 (2015-07-21 to 2015-10-16) | 13 | +54.8% | +46.8% to +58.7% | 13 | 13 | +29.4% | 0 |
+| latest print Q3 2015 (2015-10-21 to 2015-12-31) | 11 | +52.0% | +45.3% to +58.8% | 11 | 11 | +30.6% | 0 |
+| price 0-100% over the EPP floor | 20 | +49.0% | +36.0% to +57.0% | 20 | 20 | +32.1% | 0 |
+| price 100% or more over the EPP floor | 33 | +50.1% | +36.4% to +58.8% | 33 | 33 | +28.8% | 0 |
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 52 | +39.9% | +9.1% to +75.4% | 36 | 34 | +32.9% | 15 |
+| latest print Q3 2015 (2016-01-08 to 2016-01-22) | 3 | +61.9% | +60.8% to +62.3% | 3 | 3 | +35.7% | 0 |
+| latest print Q4 2015 (2016-01-27 to 2016-04-22) | 13 | +62.9% | +54.3% to +75.4% | 13 | 13 | +38.2% | 0 |
+| latest print Q1 2016 (2016-04-27 to 2016-07-15) | 12 | +38.8% | +24.5% to +44.1% | 8 | 7 | +31.7% | 4 |
+| latest print Q2 2016 (2016-07-20 to 2016-10-21) | 14 | +43.6% | +24.2% to +55.2% | 11 | 10 | +32.7% | 3 |
+| latest print Q3 2016 (2016-10-26 to 2016-12-30) | 10 | +20.3% | +9.1% to +33.1% | 1 | 1 | +29.0% | 8 |
+| price 0-100% over the EPP floor | 2 | +74.7% | +72.8% to +74.7% | 2 | 2 | +44.1% | 0 |
+| price 100% or more over the EPP floor | 50 | +39.6% | +9.1% to +75.4% | 34 | 32 | +32.7% | 15 |
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 52 | +27.7% | +8.9% to +36.9% | 10 | 38 | +10.0% | 14 |
+| latest print Q3 2016 (2017-01-06 to 2017-01-20) | 3 | +15.3% | +8.9% to +15.8% | 0 | 0 | +24.6% | 3 |
+| latest print Q4 2016 (2017-01-25 to 2017-04-21) | 13 | +20.6% | +14.8% to +21.7% | 0 | 2 | +16.5% | 11 |
+| latest print Q1 2017 (2017-04-26 to 2017-07-14) | 12 | +31.8% | +25.1% to +36.9% | 5 | 12 | +12.1% | 0 |
+| latest print Q2 2017 (2017-07-19 to 2017-10-20) | 14 | +30.4% | +21.7% to +33.2% | 4 | 14 | +6.9% | 0 |
+| latest print Q3 2017 (2017-10-25 to 2017-12-29) | 10 | +28.0% | +24.0% to +32.5% | 1 | 10 | +7.8% | 0 |
+| price 0-100% over the EPP floor | 11 | +21.3% | +14.8% to +27.4% | 0 | 2 | +16.4% | 9 |
+| price 100% or more over the EPP floor | 41 | +28.5% | +8.9% to +36.9% | 10 | 36 | +8.3% | 5 |
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH | 208 | +41.3% | +8.9% to +75.4% | 150 | 176 | +27.9% | 29 |
+| legacy tier AVOID | 201 | +40.8% | +8.9% to +75.4% | 143 | 169 | +27.5% | 29 |
+| legacy tier WATCHLIST | 7 | +53.8% | +44.1% to +66.3% | 7 | 7 | +35.4% | 0 |
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| RICH, 0-75% over the floor | 29 | +51.7% | +33.7% to +66.3% | 29 | 29 | +31.2% | 0 |
+| RICH, 75-100% over the floor | 55 | +40.9% | +14.8% to +74.7% | 44 | 46 | +26.2% | 9 |
+| RICH, 100-125% over the floor | 89 | +44.5% | +20.6% to +75.4% | 68 | 87 | +26.8% | 1 |
+| RICH, 125-1000000000.0% over the floor | 35 | +26.7% | +8.9% to +40.2% | 9 | 14 | +25.8% | 19 |
+| RICH, Ratio B finite | 93 | +48.2% | +33.4% to +75.4% | 93 | 93 | +31.0% | 0 |
+| RICH, Ratio B infinite (price over BULL) | 115 | +31.8% | +8.9% to +70.9% | 57 | 83 | +24.3% | 29 |
+
+- **RICH held on none of the 53.** $187.30-226.06 (17.0-20.0x the FY15 and FY16 guides, the 95th-100th percentile, 89-122% over the floor)
+  returned +36.0% to +58.8% over two years, 15.6-38.3pp ahead of SPY, and every date beat SPY over three years too (+22.5% to +93.0%,
+  1.5-55.6pp ahead; 44 cleared the three-year hurdle).
+- **The price passed the scenarios built on it.** Every 2015 date ended over the BULL price ($249.94-322.76 two years on), 47 nearest XBULL
+  and 7 over the XBULL price itself, while Ratio B was infinite (the price already over BULL) on 25 of them.
+
+## 2016 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 52 | +39.9% | +9.1% to +75.4% | 36 | 34 | +32.9% | 15 |
+| latest print Q3 2015 (2016-01-08 to 2016-01-22) | 3 | +61.9% | +60.8% to +62.3% | 3 | 3 | +35.7% | 0 |
+| latest print Q4 2015 (2016-01-27 to 2016-04-22) | 13 | +62.9% | +54.3% to +75.4% | 13 | 13 | +38.2% | 0 |
+| latest print Q1 2016 (2016-04-27 to 2016-07-15) | 12 | +38.8% | +24.5% to +44.1% | 8 | 7 | +31.7% | 4 |
+| latest print Q2 2016 (2016-07-20 to 2016-10-21) | 14 | +43.6% | +24.2% to +55.2% | 11 | 10 | +32.7% | 3 |
+| latest print Q3 2016 (2016-10-26 to 2016-12-30) | 10 | +20.3% | +9.1% to +33.1% | 1 | 1 | +29.0% | 8 |
+| price 0-100% over the EPP floor | 2 | +74.7% | +72.8% to +74.7% | 2 | 2 | +44.1% | 0 |
+| price 100% or more over the EPP floor | 50 | +39.6% | +9.1% to +75.4% | 34 | 32 | +32.7% | 15 |
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 52 | +27.7% | +8.9% to +36.9% | 10 | 38 | +10.0% | 14 |
+| latest print Q3 2016 (2017-01-06 to 2017-01-20) | 3 | +15.3% | +8.9% to +15.8% | 0 | 0 | +24.6% | 3 |
+| latest print Q4 2016 (2017-01-25 to 2017-04-21) | 13 | +20.6% | +14.8% to +21.7% | 0 | 2 | +16.5% | 11 |
+| latest print Q1 2017 (2017-04-26 to 2017-07-14) | 12 | +31.8% | +25.1% to +36.9% | 5 | 12 | +12.1% | 0 |
+| latest print Q2 2017 (2017-07-19 to 2017-10-20) | 14 | +30.4% | +21.7% to +33.2% | 4 | 14 | +6.9% | 0 |
+| latest print Q3 2017 (2017-10-25 to 2017-12-29) | 10 | +28.0% | +24.0% to +32.5% | 1 | 10 | +7.8% | 0 |
+| price 0-100% over the EPP floor | 11 | +21.3% | +14.8% to +27.4% | 0 | 2 | +16.4% | 9 |
+| price 100% or more over the EPP floor | 41 | +28.5% | +8.9% to +36.9% | 10 | 36 | +8.3% | 5 |
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH | 208 | +41.3% | +8.9% to +75.4% | 150 | 176 | +27.9% | 29 |
+| legacy tier AVOID | 201 | +40.8% | +8.9% to +75.4% | 143 | 169 | +27.5% | 29 |
+| legacy tier WATCHLIST | 7 | +53.8% | +44.1% to +66.3% | 7 | 7 | +35.4% | 0 |
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| RICH, 0-75% over the floor | 29 | +51.7% | +33.7% to +66.3% | 29 | 29 | +31.2% | 0 |
+| RICH, 75-100% over the floor | 55 | +40.9% | +14.8% to +74.7% | 44 | 46 | +26.2% | 9 |
+| RICH, 100-125% over the floor | 89 | +44.5% | +20.6% to +75.4% | 68 | 87 | +26.8% | 1 |
+| RICH, 125-1000000000.0% over the floor | 35 | +26.7% | +8.9% to +40.2% | 9 | 14 | +25.8% | 19 |
+| RICH, Ratio B finite | 93 | +48.2% | +33.4% to +75.4% | 93 | 93 | +31.0% | 0 |
+| RICH, Ratio B infinite (price over BULL) | 115 | +31.8% | +8.9% to +70.9% | 57 | 83 | +24.3% | 29 |
+
+- **RICH held on 15 of 52, all from the summer.** The 16 dates to 2016-04-22, from the January low ($206.08, 17.8x the first FY16 guide)
+  to the Q4 2015 print, returned +54.3% to +75.4% over two years, 8.6-29.5pp ahead of SPY. Of the 29 dates from 2016-06-17 ($230.52-267.62),
+  18 trailed SPY by 0.6-11.8pp and 15 of those also missed the hurdle (+9.1% to +31.5%): the call held there.
+- **The IS&GS seam's 13 dates (2016-10-26 to 2017-01-20) are where it held most:** 8 of the 10 of 2016 held, and the three of January 2017
+  below. The README's sensitivity reading the guide on the pro forma 2015 base moves no class there, so this says nothing for or against
+  either reading.
+- **Over three years the misses narrow.** 43 of the 52 beat SPY over three years (+37.3% to +75.5%; -8.1pp to +31.3pp), 30 cleared the
+  three-year hurdle. The two-year price was over the BULL price on all 52 and over XBULL on 48.
+
+## 2017 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 52 | +27.7% | +8.9% to +36.9% | 10 | 38 | +10.0% | 14 |
+| latest print Q3 2016 (2017-01-06 to 2017-01-20) | 3 | +15.3% | +8.9% to +15.8% | 0 | 0 | +24.6% | 3 |
+| latest print Q4 2016 (2017-01-25 to 2017-04-21) | 13 | +20.6% | +14.8% to +21.7% | 0 | 2 | +16.5% | 11 |
+| latest print Q1 2017 (2017-04-26 to 2017-07-14) | 12 | +31.8% | +25.1% to +36.9% | 5 | 12 | +12.1% | 0 |
+| latest print Q2 2017 (2017-07-19 to 2017-10-20) | 14 | +30.4% | +21.7% to +33.2% | 4 | 14 | +6.9% | 0 |
+| latest print Q3 2017 (2017-10-25 to 2017-12-29) | 10 | +28.0% | +24.0% to +32.5% | 1 | 10 | +7.8% | 0 |
+| price 0-100% over the EPP floor | 11 | +21.3% | +14.8% to +27.4% | 0 | 2 | +16.4% | 9 |
+| price 100% or more over the EPP floor | 41 | +28.5% | +8.9% to +36.9% | 10 | 36 | +8.3% | 5 |
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH | 208 | +41.3% | +8.9% to +75.4% | 150 | 176 | +27.9% | 29 |
+| legacy tier AVOID | 201 | +40.8% | +8.9% to +75.4% | 143 | 169 | +27.5% | 29 |
+| legacy tier WATCHLIST | 7 | +53.8% | +44.1% to +66.3% | 7 | 7 | +35.4% | 0 |
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| RICH, 0-75% over the floor | 29 | +51.7% | +33.7% to +66.3% | 29 | 29 | +31.2% | 0 |
+| RICH, 75-100% over the floor | 55 | +40.9% | +14.8% to +74.7% | 44 | 46 | +26.2% | 9 |
+| RICH, 100-125% over the floor | 89 | +44.5% | +20.6% to +75.4% | 68 | 87 | +26.8% | 1 |
+| RICH, 125-1000000000.0% over the floor | 35 | +26.7% | +8.9% to +40.2% | 9 | 14 | +25.8% | 19 |
+| RICH, Ratio B finite | 93 | +48.2% | +33.4% to +75.4% | 93 | 93 | +31.0% | 0 |
+| RICH, Ratio B infinite (price over BULL) | 115 | +31.8% | +8.9% to +70.9% | 57 | 83 | +24.3% | 29 |
+
+- **RICH held on 14 of 52, from 2017-01-06 to 2017-04-21.** Those dates ($254.46-273.09, 20.5-22.0x the FY16 and FY17 guides) returned
+  +8.9% to +21.7% over two years, 0.2-9.1pp behind SPY; the other two of that stretch (2017-01-25 and 2017-02-10) beat SPY by 0.5-0.6pp.
+  Over three years the 14 returned +17.5% to +76.3%, 6.7-28.2pp ahead of SPY. From its 2018 high the price fell 32.1% to $245.22 on
+  2018-12-24, inside every 2017 date's two-year window.
+- **The 36 dates from the Q1 2017 print on beat SPY over two years** ($270.35-322.82, 22.0-25.7x the FY17 guides, the 99th-100th
+  percentile): +21.7% to +36.9%, 0.1-11.8pp ahead, so RICH missed by beating SPY while 26 of them missed the hurdle. Over three years they
+  returned +17.9% to +56.8%, from 26.7pp behind SPY to 26.2pp ahead.
+- **Every 2017 date ended over the BULL price** (two-year price $265.04-393.60), 42 nearest XBULL and 13 over it.
+
+## Across 2014-2017 (hypotheses, not rules)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH | 208 | +41.3% | +8.9% to +75.4% | 150 | 176 | +27.9% | 29 |
+| legacy tier AVOID | 201 | +40.8% | +8.9% to +75.4% | 143 | 169 | +27.5% | 29 |
+| legacy tier WATCHLIST | 7 | +53.8% | +44.1% to +66.3% | 7 | 7 | +35.4% | 0 |
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| RICH, 0-75% over the floor | 29 | +51.7% | +33.7% to +66.3% | 29 | 29 | +31.2% | 0 |
+| RICH, 75-100% over the floor | 55 | +40.9% | +14.8% to +74.7% | 44 | 46 | +26.2% | 9 |
+| RICH, 100-125% over the floor | 89 | +44.5% | +20.6% to +75.4% | 68 | 87 | +26.8% | 1 |
+| RICH, 125% or more over the floor | 35 | +26.7% | +8.9% to +40.2% | 9 | 14 | +25.8% | 19 |
+| RICH, Ratio B finite | 93 | +48.2% | +33.4% to +75.4% | 93 | 93 | +31.0% | 0 |
+| RICH, Ratio B infinite (price over BULL) | 115 | +31.8% | +8.9% to +70.9% | 57 | 83 | +24.3% | 29 |
+
+- **RICH was the call on all 208 dates and held on 29, all from mid-2016.** The stock returned a median of +41.3% over two years, cleared
+  the hurdle on 150 dates and beat SPY on 176; over three years it beat SPY on 174 and cleared the three-year hurdle on 135. Every one of
+  the 208 ended over the BULL price two years on (140 nearest XBULL, 68 over the XBULL price). With 2010-2013's FAIR and RICH dates
+  (0 of 25 held), the method's FAIR and RICH calls on LMT held on 29 of 233, all of them at 20.5-22.1x the current-year guide.
+- **The window's median was the de-rated era's.** The P/E window of 2014-2017 holds 2008-2012, when the stock traded at 8-12x the guides,
+  so the median stayed at 12.6-13.6x while the stock re-rated from 14x to 25x; from 2015 every date sat at the 92nd-100th percentile, and
+  the valuation factor and the BASE exit at the median priced a return to the 2008-2012 multiple that never came. Hypothesis: after a
+  re-rating, a ten-year window anchored in the de-rated years reads every later price as rich; it mirrors 2008-2009, where a window from
+  the 2003-2007 re-rating set the floor above the next trough. Test it on other series whose windows straddle a re-rating (the 2010-2013
+  note above), never by changing LMT's rules.
+- **The more over the floor, the lower the return, but not by enough to make RICH right.** Dates under 75% over the floor returned a
+  median of +51.7% and held on none; dates 125% or more over it +26.7%, holding on 19 of 35. The split is mostly the calendar again (the
+  highest gaps came last, in late 2016 and 2017).
+- **Ratio B infinite (the price over BULL) marked the lower returns,** +31.8% median against +48.2% for the finite dates, and all 29 held
+  calls are infinite-Ratio-B dates. One stock, one re-rating: a hypothesis for the cross-ticker tests, not a rule.
+- **The signals did not decide it.** Every signal at BEAR moves no class; every signal at XBULL moves 22 dates of 2014 to FAIR, and none of
+  those would have held as FAIR (each beat SPY by at least 25.9pp, outside FAIR's 15pp). The proxy composite (1.55-2.55) was below the market
+  composite (2.69-3.93) on every date.
