@@ -18548,6 +18548,141 @@ Judgement calls that could carry hindsight:
 
 The hindsight results are in `staging/retrospective/MU/FINDINGS.md`: hypotheses, never inputs.
 
+### MU 2010-2013: the FY2009 10-K as adjusted, FY10's $1.85, FY2011 and FY2013 excluded by the mirror test
+
+209 weekly dates, 2010-01-08 to 2013-12-31, on the same method, builder, engine and rule-T thresholds. The fact sheet only gains facts:
+its 2008-2009 content is unchanged (the generator's print loop became a function and its footnote pattern takes "(5)(7)"; the regenerated
+2008-2009 part is byte-identical) and the 105 earlier models rebuild byte for byte. No builder change was needed.
+
+```bash
+python3 retro/build_mu.py --weekly 2010-01-04 2013-12-31                    # 209 dates, 2010-01-08 .. 2013-12-31
+for c in 2010-03-04 2010-04-01 2010-06-29 2010-10-08 2010-10-26 2010-12-23 2011-03-24 2011-06-24 2011-09-30 2011-10-25 \
+         2011-12-22 2012-03-23 2012-06-21 2012-09-28 2012-10-31 2012-12-21 2013-03-22 2013-06-20 2013-10-11 2013-10-29 2014-01-01; do python3 retro/tools/firewall.py $c MU; done
+```
+
+Read, by the session's model directly with no delegated transcription: the 15 earnings releases of Q2 FY10 to Q4 FY13 (narratives,
+financial summaries, balance-sheet lines and footnotes), the 8-K of 2010-03-04 that retrospectively adjusts the FY2009 10-K (its 8-K text,
+ex.99.2 selected data and ex.99.5 financial statements), the FY2010-FY2013 10-Ks (Items 1, 1A, 5, 6, 7 and 8), the 10-Qs of Q2 FY09 to Q3
+FY12 for the year-ago quarters' inventories (the 10-Q/As of 2012-11-20, 2013-07-17 and 2013-08-07 re-file exhibits or MD&A text only), and
+every other 8-K of February 2010 to January 2014 by its items and exhibits. The source ids are `MU31`-`MU63`. 572 strings were checked
+with `verbatim.py`, each against its own filing (572/572, the 2008-2009 batch's 266 included). Decided on 2026-11-17, before any 2010-2013
+model was built or any 2010-2013 outcome computed:
+
+- **Release timing.** Every earnings 8-K of the period was accepted after the close (16:00-16:05 ET) and is dated the next trading day.
+  Ten of those days are the last trading day of their week and meet their own close (public before the open; the AVGO rule): eight
+  Fridays (2010-10-08, 2011-06-24, 2011-09-30, 2012-03-23, 2012-09-28, 2012-12-21, 2013-03-22, 2013-10-11) and two Thursdays before a
+  market holiday (2010-04-01, before Good Friday; 2010-12-23, before the Christmas holiday of 2010-12-24). The other five put the week's
+  date on the next trading day (2010-06-30, 2011-03-25, 2011-12-23, 2012-06-22, 2013-06-21). The FY2010 and FY2011 10-Ks were accepted during the session (dated 2010-10-26, 2011-10-25); the
+  FY2012 10-K after the close of 2012-10-29, when the market was shut for Hurricane Sandy, so it is dated 2012-10-31; the FY2013 10-K after
+  the close (2013-10-29). A Q4 print extends the history from its release to the 10-K, as before.
+- **The FY2009 10-K as adjusted is a vintage of its own** (the UNP 2010, AAPL 2010 and MSFT 2017 rule for a filing that re-presents the
+  10-K). The 8-K of 2010-03-04 (accepted 15:27 ET) re-presents FY2005-FY2009 "to retrospectively adjust portions of the Company's Annual
+  Report on Form 10-K for the fiscal year ended September 3, 2009" for the new noncontrolling-interest and convertible-debt standards:
+  FY2007 $(0.43), FY2008 $(2.14), FY2009 $(2.35) (as first reported $(0.42), $(2.10), $(2.29)); FY2005's $0.29 and FY2006's $0.57 are
+  unchanged. From that date its years replace the FY2009 10-K's; its wording stays the 10-K's (the AAPL 10-K/A rule).
+- **FY2010 at GAAP $1.85, kept.** Its listed items, the $437M gain on the acquisition of Numonyx, its $51M tax benefit, the $56M Inotera
+  gain and the $41M NAND price benefit against $64M of antitrust accruals (Q3 and Q4 FY10 releases), net to $521M of benefits against
+  $1,329M of income without them: the mirror test is not met. It enters the history with the Q4 FY10 print (2010-10-08) and, after the
+  gaps, is the last full year from then to the end of 2013.
+- **FY2011 is excluded, a year distorted by one-off benefits** (the AVGO FY2018 mirror test, read as for FY2006). Its $167M of net income
+  attributable to Micron ($0.17 a diluted share) includes the "Samsung patent cross-license agreement" gains of $275M, with "charges
+  aggregating $45 million in connection with the Samsung cross-license agreement" in taxes ($230M after tax), a $54M gain on the sale of
+  the Japan facility with a $74M tax charge, and $15M for the release of a debt guarantee, against the $111M loss on the debt repurchase
+  and exchange and a $19M tax charge for a change in tax rates. The Q4 FY11 release (public 2011-09-30) lists them all, so the exclusion
+  starts there (the AVGO rule). The Samsung gains alone exceed the year's income without them ($(63)M), and net of every listed item ($95M
+  of benefits) they exceed the $72M without them: reported EPS is 2.4 times the $0.07 without them. No figure excluding them was
+  published. It is the latest year at its Q4 print, so it leaves only itself and stays a gap after.
+- **FY2012 is a loss,** $(1.04) a diluted share (Q4 FY12 release, 2012-09-28): excluded, a gap after (the XOM FY2020 rule).
+- **FY2013 is excluded:** its $1,190M ($1.13) "include $1,484 million, or $1.31 per diluted share, in purchase accounting gains relating
+  to the acquisition" of Elpida (Q4 FY13 release, 2013-10-11); without them the year is a loss ($(294)M), so the mirror test is met on any
+  reading, and no figure excluding them was published.
+- **FY2006 stays the gap it was in 2008-2009.** From the FY2010 10-K later years return to the history, so the literal PFE 2003 reading
+  would now start the history after FY2006 (FY2007 on, leaving FY2010 alone); the encoding is instead the one for a year excluded as a gap,
+  which stays one when later years follow (the NKE FY2018, XOM FY2020 and PFE 2023 rule), so FY2004-FY2005 stay in. The other reading is
+  measured below.
+- **So the anchor is FY05's $0.29 to 2010-10-07 and FY10's $1.85 from the Q4 FY10 print to the end of 2013** (the rollover rule; no EPS
+  guide in any filing). The history on the last dates is FY2004, FY2005 and FY2010; FY2006-FY2009 and FY2011-FY2013 are gaps. With the
+  FY2013 10-K (2013-10-29) the ten fiscal years are FY2004-FY2013, so FY2003 leaves the decade: no first-excluded year, and the ten-year
+  limit sets the window's start (`pe_window_start` null).
+- **No guide in any filing,** as in 2008-2009: no release, 10-Q, 10-K or other 8-K of 2010-2013 guides revenue, EPS or a margin, in numbers
+  or words (the 2011-02-17 8-K gives preliminary first-quarter revenue by new business unit, a past quarter). BASE is the latest
+  quarter's revenue growth plus the buyback (the UNP rule); no margin step.
+- **Revenue and shares** each year from the latest filing that reports it (FY2004 net sales from the FY2008 10-K, FY2005 from the
+  adjusted FY2009 10-K, FY2006 from the FY2010 10-K, and so on; FY2007's 769.1M diluted shares from the adjusted statements). Numonyx's
+  138 million shares make the net-issuance term -7.8%/yr on the FY2010 10-K, then -6.2% to -5.2%.
+- **Signals,** from each release's statements as before, against the year-ago quarter in the same release (several releases recast the
+  comparison quarters: the Q3 FY12 release's Q2 FY12 net sales are $2,009M against $2,067M first reported, after a $58M charge to revenue);
+  inventories against the year-ago quarter's end from that quarter's 10-Q (a Q4's from the release's prior year-end column). Charges and
+  gains stay in, as published.
+- **Segments** (display only): the adjusted FY2009 10-K's Memory and All Other; the FY2010 10-K's Memory (external sales), Numonyx (new,
+  no prior year) and All Other; from the FY2011 10-K DSG, NSG, WSG, ESG and All Other (the 2011-04-14 8-K recasts FY2010 to them: it changes
+  no input and adds nothing, the ACN rule).
+- **Durability: DURABLE, risk 2, unchanged.** No FY2010-FY2013 10-K calls the business cyclical; the "why" quotes the latest 10-K's
+  business sentence ("a global manufacturer and marketer of semiconductor devices, principally DRAM, NAND Flash and NOR Flash memory" from
+  FY2010; "one of the world's leading providers of advanced semiconductor solutions" in FY2013) and its two lead risk factors on falling
+  selling prices and competition. CLOUD is live from 2012-10-30, scoped to public cloud displacing on-premise IT, and no Micron 10-K of the
+  period names the cloud, so the watch list stays empty (the AVGO and NVDA reading); from the FY2012 10-K the "why" says so.
+- **Capital return** (display only): no dividend ("We have not declared or paid cash dividends since 1996", each 10-K); the $150M buyback
+  of 2011-07-26 ("On July 26, 2011, we paid $150 million to repurchase 19.7 million shares", FY2011 and FY2013 10-Ks; the Q4 FY11 release's
+  own sentence on its print).
+- **Adds nothing:** the Numonyx and Elpida transaction 8-Ks (their effects reach the prints), the Inotera, Hynix, Nanya, Intel (IM Flash
+  restructuring) and TECH agreements, the Rambus and Oracle litigation 8-Ks, the convertible note offerings, exchanges and repurchases (in
+  the share counts and the prints), the 2013-02-05 disclosures (Elpida's financials, risk factors, a business presentation), and the
+  director, officer, trading-plan, bylaw and vote 8-Ks. None changes a guided number; none states a dividend.
+
+Controls and checks (before any outcome):
+- **Controls:** run over all 314 dates after this build was committed; the result is in the next paragraph with the firewall's.
+- **Leak scan:** 5 hits in 233,276 (model, later token) pairs over the 314 dates, after dropping 58,199 an earlier fact or the engine
+  carries, none a leak: a 2009 model's realized volatility (1.054) equals the FY2012 10-K's ESG net sales ($1.054B), and four 2012 models'
+  52-week high ($11.83) equals the Q1 FY13 gross margin (11.83%).
+- **`retro_tool run` passes on all 209 dates;** its only warnings (2010-12-23, 2010-12-31) are the Samsung payment dates and "fiscal 2011"
+  in the Q1 FY11 release's own words. No file of the 314 dates carries an ISO date after its as-of date.
+- **Regression:** the 105 dates of 2008-2009 rebuild byte for byte; no file another ticker's builder reads has changed.
+- **Firewall** (run after the build was committed, before any outcome): see the next paragraph.
+
+Seen in the build (method behaviour, not tuned):
+- **CHEAP on 188 dates, FAIR on 21, legacy tier BUY on all 209.** FAIR runs from 2013-05-17 to 2013-10-04; CHEAP everywhere else.
+- **2010 to the Q4 FY10 print (39 dates), still on FY05's $0.29:** $6.51-11.10 is 22.4-38.3x, the 0th-37th percentile of a 6.4-7.1-year
+  window whose median is 38.7-41.2x; the floor is 32-37x ($9.28-10.73). BASE runs +19.9%/yr (Q1 FY10) to +102.7% (Q3 FY10, net sales
+  +106.9% on the trough quarter).
+- **From the Q4 FY10 print, on FY10's $1.85:** $4.95-11.70 is 2.7-6.3x to September 2012. The window turns bimodal: FY2004-FY2005's days at
+  32-75x on their small EPS and the days from FY2010 at 3-6x on $1.85, so its median falls from 38.6x to 6.3x as the new days accumulate,
+  then rises back toward 35-38x once FY2011's and FY2012's own days leave it (2011-09-30, 2012-09-28); its 75th and 90th percentiles stay
+  at 42-62x (FY2004-FY2005), so the BULL and XBULL prices are $150-385. The floor (the median of the calendar-year lows: 2003 47.9x, 2004
+  38.2x, 2005 32.4x and the new years' 2.3-3.6x) falls from 32x to 3x as the low years outnumber the old ones.
+- **The FAIR dates of 2013 (21):** $11.31-18.47 is 6.1-10.0x (the 45th-52nd percentile) and 104-233% over a 3x floor ($5.55), so the
+  EPP-distance adjustment turns negative; from the Q4 FY13 print FY2013's days leave the window, the floor is 7-19x and the class is CHEAP
+  again ($16.58-23.08, 9.0-12.5x, the 35th-43rd percentile).
+- **BEAR is flat EPS** (the 0% cap; FY2004 to FY2005 is the only one-year change) at the 10th percentile, 3.3-4.4x from 2011: the BEAR
+  price is $6-8 and above the price on 41 dates. **BULL** is the FY2004-FY2010 CAGR (+40.5%/yr) from the FY2010 10-K; XBULL is BULL's rate
+  (no two-year run).
+- **The proxy composite** is 3.20 on Q1 FY10, 3.35 on Q2 FY10, 3.00 on Q3 FY10, 2.85 on Q4 FY10, 2.40 on Q1 FY11, 2.05 on Q2 FY11, 2.00 on
+  Q3 FY11 to Q2 FY12, 2.15 on Q3 FY12 to Q1 FY13, 2.65 on Q2 and Q3 FY13 and 2.85 on Q4 FY13.
+
+How far each call moves the classes (the 314 dates rebuilt with one encoding changed and classified offline; no outcome consulted; the
+2008-2009 counts are as before):
+- FY2011 kept at GAAP /bin/bash.17 (the mirror test not applied; FY11's /bin/bash.17 the anchor from 2011-09-30): 118 classes (CHEAP to RICH on 96,
+  FAIR to RICH on 21, CHEAP to FAIR on 1; 2011-10-07 to 2013-12-31), 119 tiers (to AVOID on 117);
+- FY2006 taking FY2004-FY2005 with it from the FY2010 10-K (the literal PFE 2003 reading once later years return; the history FY2010
+  alone and the window from 2006-09-01): 152 classes (CHEAP to RICH on 127, FAIR to RICH on 21, CHEAP to FAIR on 4; 2011-01-14 to
+  2013-12-31), 110 tiers;
+- FY2013 kept at GAAP .13 (its Elpida gain in; FY13's .13 the anchor from 2013-10-11): 13 classes (CHEAP to FAIR), no tier;
+- FY2006 kept at GAAP /bin/bash.57 throughout: 21 classes in 2013 (the FAIR dates to CHEAP), no tier;
+- every signal at its BEAR value: 13 classes in 2012-2013 (CHEAP to FAIR or RICH, FAIR to RICH), no tier; at its XBULL value: none.
+The CHEAP calls from the Q4 FY10 print rest on FY10's .85 standing for three later years, two of them excluded by the mirror test and
+one a loss, against a window that still holds FY2004-FY2005: both of the series' largest calls (FY2011 excluded, FY2006 kept as a gap)
+move the same dates the same way, toward RICH, if read the other way.
+
+Judgement calls that could carry hindsight:
+- FY2011 excluded by the mirror test, the Samsung cross-license gains counted as listed one-offs (118 classes on the other reading: the
+  largest call of the series);
+- FY2013 excluded on its Elpida gain (13 classes on the other reading);
+- FY2006 kept as a gap rather than taking FY2004-FY2005 with it once later years return (152 classes on the other reading, the second-largest call);
+- FY2010 kept at GAAP with the Numonyx gain in it (the mirror test not met);
+- the adjusted FY2009 10-K read as a vintage of its own;
+- GAAP EPS throughout, the gaps leaving FY10's $1.85 as the anchor for 2010-10-08 to 2013-12-31 and a bimodal window behind it;
+- the signals (as in 2008-2009) and DURABLE, and CLOUD read as out of scope for a memory maker.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -18834,7 +18969,8 @@ What the gates enforce:
   databases and data-center outsourcing, and the FY2009-FY2012 10-Ks never mention cloud ("LMT 2010-2013").
   MU in 2008-2009 carries none: no theme in the registry is live for a memory maker (OFFSHORE, from 2004-11-05, is scoped to IT services;
   CLOUD is not live before 2012-10-30), so its watch list is empty and the FY2007-FY2009 10-Ks' competitors "from emerging companies in
-  Taiwan and China" stay in the "why" (the PEP obesity rule) ("MU").
+  Taiwan and China" stay in the "why" (the PEP obesity rule) ("MU"). It stays empty through 2013: CLOUD, live from 2012-10-30, is scoped to
+  public cloud displacing on-premise IT, and no FY2010-FY2013 10-K names the cloud ("MU 2010-2013").
 
 ## Workflow
 
