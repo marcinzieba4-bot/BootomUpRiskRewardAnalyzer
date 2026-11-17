@@ -18553,6 +18553,11 @@ The hindsight results are in `staging/retrospective/MU/FINDINGS.md`: hypotheses,
 209 weekly dates, 2010-01-08 to 2013-12-31, on the same method, builder, engine and rule-T thresholds. The fact sheet only gains facts:
 its 2008-2009 content is unchanged (the generator's print loop became a function and its footnote pattern takes "(5)(7)"; the regenerated
 2008-2009 part is byte-identical) and the 105 earlier models rebuild byte for byte. No builder change was needed.
+Built on 2026-11-17 at the owner's request ("do retrospective analysis for MU, 2010-2013. same rules"), in the same session that had
+scored the 2008-2009 dates and written their `FINDINGS.md`, so those outcomes were known when this batch was read. No decision below
+uses them: each applies a rule that existed before (the AVGO FY2018 mirror test, the XOM FY2020 and NKE FY2018 gap rules, the UNP 2010
+vintage rule, the AVGO timing rule, the UNP BASE rule) or a 2008-2009 encoding. The readings that could still carry hindsight (FY2006
+kept as a gap, FY2011 excluded) are listed at the end with how far the other reading moves the classes.
 
 ```bash
 python3 retro/build_mu.py --weekly 2010-01-04 2013-12-31                    # 209 dates, 2010-01-08 .. 2013-12-31
@@ -18688,6 +18693,8 @@ Judgement calls that could carry hindsight:
 - the adjusted FY2009 10-K read as a vintage of its own;
 - GAAP EPS throughout, the gaps leaving FY10's $1.85 as the anchor for 2010-10-08 to 2013-12-31 and a bimodal window behind it;
 - the signals (as in 2008-2009) and DURABLE, and CLOUD read as out of scope for a memory maker.
+
+The hindsight results are in `staging/retrospective/MU/FINDINGS.md`: hypotheses, never inputs.
 
 ## Categories change with the era
 

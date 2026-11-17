@@ -109,3 +109,212 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2009-12-18 | $8.78 | Micron Q4 FY09 results | 2.65 | +1.15 | 0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -35.3% | -50.0pp | -6.4% | ✗ |
 | 2009-12-24 | $10.16 | Micron Q1 FY10 results | 3.20 | +2.06 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -37.0% | -53.7pp | -19.6% | ✗ |
 | 2009-12-31 | $10.56 | Micron Q1 FY10 results | 3.20 | +1.98 | 0.15x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -40.4% | -57.4pp | -22.9% | ✗ |
+| 2010-01-08 | $11.10 | Micron Q1 FY10 results | 3.20 | +1.87 | 0.20x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -35.1% | -50.8pp | -26.8% | ✗ |
+| 2010-01-15 | $10.13 | Micron Q1 FY10 results | 3.20 | +2.06 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -28.6% | -46.3pp | -20.2% | ✗ |
+| 2010-01-22 | $9.13 | Micron Q1 FY10 results | 3.20 | +2.42 | 0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -15.0% | -40.3pp | -11.8% | ✗ |
+| 2010-01-29 | $8.72 | Micron Q1 FY10 results | 3.20 | +2.51 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -14.8% | -42.1pp | -8.2% | ✗ |
+| 2010-02-05 | $8.70 | Micron Q1 FY10 results | 3.20 | +2.51 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -8.6% | -39.3pp | -8.7% | ✗ |
+| 2010-02-12 | $8.44 | Micron Q1 FY10 results | 3.20 | +2.65 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -6.3% | -35.1pp | -6.7% | ✗ |
+| 2010-02-19 | $8.90 | Micron Q1 FY10 results | 3.20 | +2.46 | 0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -5.3% | -32.4pp | -12.3% | ✗ |
+| 2010-02-26 | $9.06 | Micron Q1 FY10 results | 3.20 | +2.43 | 0.03x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -12.3% | -40.3pp | -14.4% | ✗ |
+| 2010-03-05 | $9.46 | Micron Q1 FY10 results | 3.20 | +2.16 | 0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -13.3% | -37.3pp | -18.5% | ✗ |
+| 2010-03-12 | $9.97 | Micron Q1 FY10 results | 3.20 | +2.08 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -19.0% | -42.3pp | -23.1% | ✗ |
+| 2010-03-19 | $9.95 | Micron Q1 FY10 results | 3.20 | +2.08 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -13.3% | -39.0pp | -23.3% | ✗ |
+| 2010-03-26 | $10.49 | Micron Q1 FY10 results | 3.20 | +1.95 | 0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -21.4% | -47.1pp | -27.7% | ✗ |
+| 2010-04-01 | $10.17 | Micron Q2 FY10 results | 3.35 | +2.69 | 0.03x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -20.4% | -44.1pp | -26.1% | ✗ |
+| 2010-04-09 | $10.73 | Micron Q2 FY10 results | 3.35 | +2.65 | 0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -31.5% | -51.3pp | -30.5% | ✗ |
+| 2010-04-16 | $10.92 | Micron Q2 FY10 results | 3.35 | +2.63 | 0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -34.8% | -53.8pp | -32.4% | ✗ |
+| 2010-04-23 | $11.00 | Micron Q2 FY10 results | 3.35 | +2.63 | 0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -39.7% | -56.1pp | -33.5% | ✗ |
+| 2010-04-30 | $9.35 | Micron Q2 FY10 results | 3.35 | +2.70 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -29.5% | -51.4pp | -22.8% | ✗ |
+| 2010-05-07 | $8.57 | Micron Q2 FY10 results | 3.35 | +2.90 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -24.2% | -51.9pp | -16.8% | ✗ |
+| 2010-05-14 | $8.94 | Micron Q2 FY10 results | 3.35 | +2.86 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -30.5% | -52.7pp | -21.2% | ✗ |
+| 2010-05-21 | $8.93 | Micron Q2 FY10 results | 3.35 | +2.86 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -35.3% | -60.8pp | -22.0% | ✗ |
+| 2010-05-28 | $9.09 | Micron Q2 FY10 results | 3.35 | +2.80 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -34.4% | -59.8pp | -24.2% | ✗ |
+| 2010-06-04 | $8.86 | Micron Q2 FY10 results | 3.35 | +2.90 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -39.2% | -63.7pp | -23.0% | ✗ |
+| 2010-06-11 | $8.93 | Micron Q2 FY10 results | 3.35 | +2.90 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -36.1% | -60.4pp | -24.2% | ✗ |
+| 2010-06-18 | $10.00 | Micron Q2 FY10 results | 3.35 | +2.68 | 0.03x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -40.6% | -65.5pp | -32.8% | ✗ |
+| 2010-06-25 | $9.46 | Micron Q2 FY10 results | 3.35 | +2.48 | 0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -40.9% | -67.4pp | -29.4% | ✗ |
+| 2010-06-30 | $8.49 | Micron Q3 FY10 results | 3.00 | +2.55 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -25.7% | -62.5pp | -21.6% | ✗ |
+| 2010-07-09 | $8.57 | Micron Q3 FY10 results | 3.00 | +2.55 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -24.3% | -54.4pp | -22.6% | ✗ |
+| 2010-07-16 | $8.27 | Micron Q3 FY10 results | 3.00 | +2.45 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -27.4% | -59.2pp | -20.1% | ✗ |
+| 2010-07-23 | $8.48 | Micron Q3 FY10 results | 3.00 | +2.33 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -33.7% | -60.7pp | -22.5% | ✗ |
+| 2010-07-30 | $7.28 | Micron Q3 FY10 results | 3.00 | +2.55 | -0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -16.1% | -46.5pp | -10.2% | ✗ |
+| 2010-08-06 | $7.58 | Micron Q3 FY10 results | 3.00 | +2.33 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -13.3% | -42.1pp | -13.8% | ✗ |
+| 2010-08-13 | $7.28 | Micron Q3 FY10 results | 3.00 | +2.55 | -0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -7.7% | -42.4pp | -10.1% | ✗ |
+| 2010-08-20 | $7.12 | Micron Q3 FY10 results | 3.00 | +2.45 | -0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -8.8% | -45.9pp | -7.9% | ✗ |
+| 2010-08-27 | $6.83 | Micron Q3 FY10 results | 3.00 | +2.55 | -0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -8.8% | -46.0pp | -3.7% | ✗ |
+| 2010-09-03 | $7.05 | Micron Q3 FY10 results | 3.00 | +2.55 | -0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -11.9% | -43.8pp | -6.6% | ✗ |
+| 2010-09-10 | $6.51 | Micron Q3 FY10 results | 3.00 | +2.55 | -0.03x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -1.5% | -34.9pp | +1.2% | ✗ |
+| 2010-09-17 | $6.76 | Micron Q3 FY10 results | 3.00 | +2.55 | -0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -2.8% | -37.3pp | -2.7% | ✗ |
+| 2010-09-24 | $7.20 | Micron Q3 FY10 results | 3.00 | +2.55 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -13.1% | -44.5pp | -8.7% | ✗ |
+| 2010-10-01 | $7.29 | Micron Q3 FY10 results | 3.00 | +2.55 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -20.9% | -51.4pp | -9.8% | ✗ |
+| 2010-10-08 | $7.59 | Micron Q4 FY10 results | 2.85 | +2.36 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -22.9% | -52.5pp | -13.1% | ✗ |
+| 2010-10-15 | $7.61 | Micron Q4 FY10 results | 2.85 | +2.36 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -24.8% | -51.8pp | -13.3% | ✗ |
+| 2010-10-22 | $7.69 | Micron Q4 FY10 results | 2.85 | +2.40 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -29.3% | -54.9pp | -14.1% | ✗ |
+| 2010-10-29 | $8.26 | Micron Q4 FY10 results | 2.85 | +2.40 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -33.8% | -57.6pp | -20.1% | ✗ |
+| 2010-11-05 | $8.66 | Micron Q4 FY10 results | 2.85 | +2.30 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -32.6% | -52.5pp | -23.7% | ✗ |
+| 2010-11-12 | $7.72 | Micron Q4 FY10 results | 2.85 | +2.30 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -27.8% | -47.3pp | -14.3% | ✗ |
+| 2010-11-19 | $7.39 | Micron Q4 FY10 results | 2.85 | +2.30 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -25.0% | -45.1pp | -10.6% | ✗ |
+| 2010-11-26 | $7.63 | Micron Q4 FY10 results | 2.85 | +2.40 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -25.3% | -48.5pp | -13.5% | ✗ |
+| 2010-12-03 | $7.92 | Micron Q4 FY10 results | 2.85 | +2.30 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -25.1% | -44.6pp | -16.6% | ✗ |
+| 2010-12-10 | $8.25 | Micron Q4 FY10 results | 2.85 | +2.40 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -19.2% | -37.9pp | -19.9% | ✗ |
+| 2010-12-17 | $8.21 | Micron Q4 FY10 results | 2.85 | +2.40 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -19.5% | -38.9pp | -19.2% | ✗ |
+| 2010-12-23 | $7.94 | Micron Q1 FY11 results | 2.40 | +1.95 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -20.4% | -38.6pp | -16.3% | ✗ |
+| 2010-12-31 | $8.02 | Micron Q1 FY11 results | 2.40 | +1.95 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -23.6% | -39.4pp | -17.1% | ✗ |
+| 2011-01-07 | $8.65 | Micron Q1 FY11 results | 2.40 | +1.93 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -17.0% | -36.3pp | -23.2% | ✗ |
+| 2011-01-14 | $9.71 | Micron Q1 FY11 results | 2.40 | +1.90 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -21.7% | -39.8pp | -31.5% | ✗ |
+| 2011-01-21 | $9.84 | Micron Q1 FY11 results | 2.40 | +1.89 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -19.8% | -39.8pp | -32.4% | ✗ |
+| 2011-01-28 | $10.37 | Micron Q1 FY11 results | 2.40 | +1.66 | 0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -24.6% | -46.5pp | -35.9% | ✗ |
+| 2011-02-04 | $11.05 | Micron Q1 FY11 results | 2.40 | +1.64 | 0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -29.8% | -48.1pp | -39.8% | ✗ |
+| 2011-02-11 | $11.32 | Micron Q1 FY11 results | 2.40 | +1.86 | 0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -30.1% | -48.4pp | -41.3% | ✗ |
+| 2011-02-18 | $11.70 | Micron Q1 FY11 results | 2.40 | +1.86 | 0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -32.4% | -49.7pp | -43.3% | ✗ |
+| 2011-02-25 | $11.44 | Micron Q1 FY11 results | 2.40 | +1.76 | 0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -30.7% | -47.6pp | -41.9% | ✗ |
+| 2011-03-04 | $11.64 | Micron Q1 FY11 results | 2.40 | +1.86 | 0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -27.8% | -47.6pp | -43.0% | ✗ |
+| 2011-03-11 | $10.24 | Micron Q1 FY11 results | 2.40 | +1.79 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -8.7% | -32.3pp | -35.1% | ✗ |
+| 2011-03-18 | $10.07 | Micron Q1 FY11 results | 2.40 | +1.89 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -8.8% | -34.7pp | -33.8% | ✗ |
+| 2011-03-25 | $11.55 | Micron Q2 FY11 results | 2.05 | +1.51 | 0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -14.5% | -36.9pp | -42.1% | ✗ |
+| 2011-04-01 | $11.30 | Micron Q2 FY11 results | 2.05 | +1.51 | 0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -17.0% | -38.6pp | -40.7% | ✗ |
+| 2011-04-08 | $11.07 | Micron Q2 FY11 results | 2.05 | +1.29 | 0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -15.2% | -37.1pp | -39.2% | ✗ |
+| 2011-04-15 | $10.75 | Micron Q2 FY11 results | 2.05 | +1.52 | 0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -11.1% | -33.0pp | -36.9% | ✗ |
+| 2011-04-21 | $11.52 | Micron Q2 FY11 results | 2.05 | +1.28 | 0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -18.8% | -39.4pp | -40.8% | ✗ |
+| 2011-04-29 | $11.32 | Micron Q2 FY11 results | 2.05 | +1.51 | 0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -17.4% | -38.4pp | -39.1% | ✗ |
+| 2011-05-06 | $10.87 | Micron Q2 FY11 results | 2.05 | +1.42 | 0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -10.2% | -35.1pp | -36.1% | ✗ |
+| 2011-05-13 | $10.40 | Micron Q2 FY11 results | 2.05 | +1.53 | 0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +2.5% | -23.9pp | -32.4% | ✗ |
+| 2011-05-20 | $10.00 | Micron Q2 FY11 results | 2.05 | +1.55 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +12.1% | -17.2pp | -28.7% | ✗ |
+| 2011-05-27 | $10.02 | Micron Q2 FY11 results | 2.05 | +1.55 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +15.7% | -12.5pp | -27.9% | ✗ |
+| 2011-06-03 | $9.16 | Micron Q2 FY11 results | 2.05 | +1.57 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +28.1% | -2.4pp | -19.9% | ✗ |
+| 2011-06-10 | $8.44 | Micron Q2 FY11 results | 2.05 | +1.38 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +53.4% | +19.7pp | -11.5% | ✓ |
+| 2011-06-17 | $7.83 | Micron Q2 FY11 results | 2.05 | +1.50 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +69.1% | +35.6pp | -2.8% | ✓ |
+| 2011-06-24 | $7.21 | Micron Q3 FY11 results | 2.00 | +1.35 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +86.7% | +58.1pp | +7.8% | ✓ |
+| 2011-07-01 | $7.83 | Micron Q3 FY11 results | 2.00 | +1.35 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +82.2% | +57.3pp | +1.4% | ✓ |
+| 2011-07-08 | $7.68 | Micron Q3 FY11 results | 2.00 | +1.35 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +82.7% | +56.2pp | +4.9% | ✓ |
+| 2011-07-15 | $7.41 | Micron Q3 FY11 results | 2.00 | +1.35 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +76.4% | +44.1pp | +10.5% | ✓ |
+| 2011-07-22 | $8.09 | Micron Q3 FY11 results | 2.00 | +1.13 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +71.0% | +40.5pp | +3.1% | ✓ |
+| 2011-07-29 | $7.37 | Micron Q3 FY11 results | 2.00 | +1.35 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +69.2% | +34.2pp | +15.1% | ✓ |
+| 2011-08-05 | $6.31 | Micron Q3 FY11 results | 2.00 | +1.35 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +124.6% | +77.4pp | +36.8% | ✓ |
+| 2011-08-12 | $6.18 | Micron Q3 FY11 results | 2.00 | +1.35 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +123.8% | +75.5pp | +42.0% | ✓ |
+| 2011-08-19 | $5.25 | Micron Q3 FY11 results | 2.00 | +1.13 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +162.9% | +111.2pp | +70.1% | ✓ |
+| 2011-08-26 | $5.66 | Micron Q3 FY11 results | 2.00 | +1.35 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +143.5% | +97.6pp | +60.4% | ✓ |
+| 2011-09-02 | $5.50 | Micron Q3 FY11 results | 2.00 | +1.13 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +146.7% | +102.7pp | +67.3% | ✓ |
+| 2011-09-09 | $6.35 | Micron Q3 FY11 results | 2.00 | +1.18 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +146.0% | +96.2pp | +47.5% | ✓ |
+| 2011-09-16 | $7.03 | Micron Q3 FY11 results | 2.00 | +1.13 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +133.9% | +89.3pp | +36.0% | ✓ |
+| 2011-09-23 | $6.65 | Micron Q3 FY11 results | 2.00 | +1.13 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +156.4% | +101.2pp | +47.0% | ✓ |
+| 2011-09-30 | $5.04 | Micron Q4 FY11 results | 2.00 | +1.35 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +246.6% | +192.6pp | +98.4% | ✓ |
+| 2011-10-07 | $4.95 | Micron Q4 FY11 results | 2.00 | +1.35 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +273.5% | +223.4pp | +106.9% | ✓ |
+| 2011-10-14 | $5.70 | Micron Q4 FY11 results | 2.00 | +1.13 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +199.5% | +154.9pp | +83.9% | ✓ |
+| 2011-10-21 | $5.46 | Micron Q4 FY11 results | 2.00 | +1.35 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +203.5% | +157.8pp | +96.1% | ✓ |
+| 2011-10-28 | $5.88 | Micron Q4 FY11 results | 2.00 | +1.35 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +184.4% | +142.5pp | +85.9% | ✓ |
+| 2011-11-04 | $5.89 | Micron Q4 FY11 results | 2.00 | +1.25 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +203.7% | +157.8pp | +88.9% | ✓ |
+| 2011-11-11 | $5.43 | Micron Q4 FY11 results | 2.00 | +1.25 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +236.5% | +191.5pp | +109.3% | ✓ |
+| 2011-11-18 | $6.29 | Micron Q4 FY11 results | 2.00 | +1.35 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +206.7% | +154.5pp | +85.0% | ✓ |
+| 2011-11-25 | $5.50 | Micron Q4 FY11 results | 2.00 | +1.35 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +261.1% | +200.5pp | +116.1% | ✓ |
+| 2011-12-02 | $5.80 | Micron Q4 FY11 results | 2.00 | +1.35 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +266.7% | +217.1pp | +109.5% | ✓ |
+| 2011-12-09 | $5.89 | Micron Q4 FY11 results | 2.00 | +1.35 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +292.5% | +243.7pp | +111.7% | ✓ |
+| 2011-12-16 | $5.68 | Micron Q4 FY11 results | 2.00 | +1.13 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +300.9% | +249.0pp | +125.1% | ✓ |
+| 2011-12-23 | $6.40 | Micron Q1 FY12 results | 2.00 | +1.13 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +235.8% | +186.3pp | +104.5% | ✓ |
+| 2011-12-30 | $6.29 | Micron Q1 FY12 results | 2.00 | +1.35 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +238.6% | +187.0pp | +112.0% | ✓ |
+| 2012-01-06 | $7.20 | Micron Q1 FY12 results | 2.00 | +0.93 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +187.1% | +139.2pp | +88.4% | ✓ |
+| 2012-01-13 | $7.23 | Micron Q1 FY12 results | 2.00 | +0.93 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +222.7% | +176.7pp | +92.0% | ✓ |
+| 2012-01-20 | $7.76 | Micron Q1 FY12 results | 2.00 | +0.93 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +188.4% | +144.3pp | +82.4% | ✓ |
+| 2012-01-27 | $7.43 | Micron Q1 FY12 results | 2.00 | +1.15 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +208.2% | +168.3pp | +94.2% | ✓ |
+| 2012-02-03 | $7.95 | Micron Q1 FY12 results | 2.00 | +1.05 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +186.9% | +152.7pp | +85.4% | ✓ |
+| 2012-02-10 | $7.91 | Micron Q1 FY12 results | 2.00 | +0.83 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +214.4% | +175.6pp | +90.3% | ✓ |
+| 2012-02-17 | $8.43 | Micron Q1 FY12 results | 2.00 | +0.94 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +197.5% | +157.9pp | +82.1% | ✓ |
+| 2012-02-24 | $7.95 | Micron Q1 FY12 results | 2.00 | +1.05 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +211.3% | +171.6pp | +97.1% | ✓ |
+| 2012-03-02 | $8.65 | Micron Q1 FY12 results | 2.00 | +1.02 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +179.7% | +139.3pp | +84.4% | ✓ |
+| 2012-03-09 | $8.33 | Micron Q1 FY12 results | 2.00 | +0.94 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +193.2% | +151.6pp | +95.3% | ✓ |
+| 2012-03-16 | $8.82 | Micron Q1 FY12 results | 2.00 | +1.01 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +171.7% | +135.9pp | +87.9% | ✓ |
+| 2012-03-23 | $8.40 | Micron Q2 FY12 results | 2.00 | +1.03 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +181.7% | +143.6pp | +100.8% | ✓ |
+| 2012-03-30 | $8.10 | Micron Q2 FY12 results | 2.00 | +0.95 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +170.5% | +134.0pp | +111.0% | ✓ |
+| 2012-04-05 | $7.59 | Micron Q2 FY12 results | 2.00 | +1.15 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +197.5% | +159.4pp | +129.0% | ✓ |
+| 2012-04-13 | $6.96 | Micron Q2 FY12 results | 2.00 | +0.93 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +203.6% | +166.4pp | +153.1% | ✓ |
+| 2012-04-20 | $6.64 | Micron Q2 FY12 results | 2.00 | +0.93 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +260.1% | +220.1pp | +169.0% | ✓ |
+| 2012-04-27 | $6.57 | Micron Q2 FY12 results | 2.00 | +1.15 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +284.5% | +247.0pp | +176.8% | ✓ |
+| 2012-05-04 | $6.55 | Micron Q2 FY12 results | 2.00 | +1.15 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +301.7% | +259.5pp | +182.6% | ✓ |
+| 2012-05-11 | $6.36 | Micron Q2 FY12 results | 2.00 | +1.15 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +322.0% | +278.5pp | +196.2% | ✓ |
+| 2012-05-18 | $5.63 | Micron Q2 FY12 results | 2.00 | +1.15 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +362.3% | +312.3pp | +240.2% | ✓ |
+| 2012-05-25 | $5.96 | Micron Q2 FY12 results | 2.00 | +1.15 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +358.6% | +309.4pp | +226.6% | ✓ |
+| 2012-06-01 | $5.45 | Micron Q2 FY12 results | 2.00 | +1.35 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +424.6% | +369.0pp | +262.1% | ✓ |
+| 2012-06-08 | $5.88 | Micron Q2 FY12 results | 2.00 | +0.93 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +402.4% | +350.6pp | +241.3% | ✓ |
+| 2012-06-15 | $5.89 | Micron Q2 FY12 results | 2.00 | +1.15 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +429.2% | +380.0pp | +246.7% | ✓ |
+| 2012-06-22 | $5.74 | Micron Q3 FY12 results | 2.15 | +1.08 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +454.9% | +402.9pp | +262.1% | ✓ |
+| 2012-06-29 | $6.31 | Micron Q3 FY12 results | 2.15 | +1.30 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +399.4% | +350.4pp | +235.0% | ✓ |
+| 2012-07-06 | $6.72 | Micron Q3 FY12 results | 2.15 | +1.20 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +401.9% | +350.5pp | +219.2% | ✓ |
+| 2012-07-13 | $6.13 | Micron Q3 FY12 results | 2.15 | +1.30 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +435.1% | +385.1pp | +256.4% | ✓ |
+| 2012-07-20 | $5.83 | Micron Q3 FY12 results | 2.15 | +1.30 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +468.6% | +418.7pp | +281.6% | ✓ |
+| 2012-07-27 | $6.28 | Micron Q3 FY12 results | 2.15 | +1.08 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +432.2% | +384.6pp | +260.7% | ✓ |
+| 2012-08-03 | $6.33 | Micron Q3 FY12 results | 2.15 | +1.08 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +391.2% | +348.1pp | +263.7% | ✓ |
+| 2012-08-10 | $6.76 | Micron Q3 FY12 results | 2.15 | +1.08 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +344.4% | +302.3pp | +245.4% | ✓ |
+| 2012-08-17 | $6.57 | Micron Q3 FY12 results | 2.15 | +1.30 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +379.3% | +336.8pp | +260.5% | ✓ |
+| 2012-08-24 | $6.30 | Micron Q3 FY12 results | 2.15 | +1.30 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +428.4% | +382.8pp | +282.0% | ✓ |
+| 2012-08-31 | $6.21 | Micron Q3 FY12 results | 2.15 | +1.30 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +425.0% | +377.9pp | +293.7% | ✓ |
+| 2012-09-07 | $6.42 | Micron Q3 FY12 results | 2.15 | +1.30 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +413.1% | +369.0pp | +285.1% | ✓ |
+| 2012-09-14 | $6.70 | Micron Q3 FY12 results | 2.15 | +1.08 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +370.6% | +330.7pp | +273.8% | ✓ |
+| 2012-09-21 | $6.36 | Micron Q3 FY12 results | 2.15 | +1.30 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +397.3% | +354.9pp | +298.3% | ✓ |
+| 2012-09-28 | $5.98 | Micron Q4 FY12 results | 2.15 | +1.28 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +465.7% | +423.3pp | +328.5% | ✓ |
+| 2012-10-05 | $5.89 | Micron Q4 FY12 results | 2.15 | +1.28 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +476.2% | +436.9pp | +340.6% | ✓ |
+| 2012-10-12 | $5.67 | Micron Q4 FY12 results | 2.15 | +1.28 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +390.1% | +351.8pp | +362.2% | ✓ |
+| 2012-10-19 | $5.45 | Micron Q4 FY12 results | 2.15 | +1.50 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +427.9% | +391.5pp | +384.8% | ✓ |
+| 2012-10-26 | $5.47 | Micron Q4 FY12 results | 2.15 | +1.28 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +467.8% | +423.9pp | +388.2% | ✓ |
+| 2012-11-02 | $5.71 | Micron Q4 FY12 results | 2.15 | +1.50 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +479.5% | +432.1pp | +372.9% | ✓ |
+| 2012-11-09 | $5.62 | Micron Q4 FY12 results | 2.15 | +1.40 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +487.4% | +435.1pp | +386.0% | ✓ |
+| 2012-11-16 | $5.47 | Micron Q4 FY12 results | 2.15 | +1.33 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +496.3% | +441.4pp | +404.5% | ✓ |
+| 2012-11-23 | $5.68 | Micron Q4 FY12 results | 2.15 | +1.50 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +503.9% | +452.7pp | +390.6% | ✓ |
+| 2012-11-30 | $5.97 | Micron Q4 FY12 results | 2.15 | +1.28 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +502.2% | +451.4pp | +370.7% | ✓ |
+| 2012-12-07 | $6.44 | Micron Q4 FY12 results | 2.15 | +1.28 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +466.6% | +415.6pp | +340.7% | ✓ |
+| 2012-12-14 | $6.85 | Micron Q4 FY12 results | 2.15 | +1.28 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +396.4% | +350.0pp | +317.9% | ✓ |
+| 2012-12-21 | $6.32 | Micron Q1 FY13 results | 2.15 | +1.50 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +445.7% | +396.1pp | +356.6% | ✓ |
+| 2012-12-28 | $6.13 | Micron Q1 FY13 results | 2.15 | +1.50 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +471.0% | +417.0pp | +374.2% | ✓ |
+| 2013-01-04 | $6.96 | Micron Q1 FY13 results | 2.15 | +1.30 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +399.3% | +354.0pp | +320.8% | ✓ |
+| 2013-01-11 | $7.54 | Micron Q1 FY13 results | 2.15 | +1.30 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +344.7% | +300.9pp | +291.2% | ✓ |
+| 2013-01-18 | $7.89 | Micron Q1 FY13 results | 2.15 | +1.20 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +267.4% | +226.6pp | +275.6% | ✓ |
+| 2013-01-25 | $7.87 | Micron Q1 FY13 results | 2.15 | +1.20 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +293.3% | +252.1pp | +278.0% | ✓ |
+| 2013-02-01 | $7.83 | Micron Q1 FY13 results | 2.15 | +1.20 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +273.8% | +237.2pp | +281.6% | ✓ |
+| 2013-02-08 | $7.75 | Micron Q1 FY13 results | 2.15 | +1.30 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +273.0% | +232.9pp | +287.0% | ✓ |
+| 2013-02-15 | $7.91 | Micron Q1 FY13 results | 2.15 | +0.98 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +302.7% | +260.0pp | +280.6% | ✓ |
+| 2013-02-22 | $8.02 | Micron Q1 FY13 results | 2.15 | +1.19 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +299.4% | +255.6pp | +276.8% | ✓ |
+| 2013-03-01 | $8.25 | Micron Q1 FY13 results | 2.15 | +1.19 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +271.8% | +228.5pp | +267.8% | ✓ |
+| 2013-03-08 | $9.20 | Micron Q1 FY13 results | 2.15 | +1.15 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +209.8% | +171.7pp | +230.9% | ✓ |
+| 2013-03-15 | $9.37 | Micron Q1 FY13 results | 2.15 | +0.92 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +206.5% | +170.3pp | +225.7% | ✓ |
+| 2013-03-22 | $10.04 | Micron Q2 FY13 results | 2.65 | +1.68 | 0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +185.7% | +145.7pp | +204.8% | ✓ |
+| 2013-03-28 | $9.98 | Micron Q2 FY13 results | 2.65 | +1.68 | 0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +167.3% | +131.3pp | +207.5% | ✓ |
+| 2013-04-05 | $9.31 | Micron Q2 FY13 results | 2.65 | +1.60 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +187.1% | +149.3pp | +230.4% | ✓ |
+| 2013-04-12 | $10.01 | Micron Q2 FY13 results | 2.65 | +1.67 | 0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +179.9% | +143.0pp | +208.4% | ✓ |
+| 2013-04-19 | $9.35 | Micron Q2 FY13 results | 2.65 | +1.48 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +199.7% | +161.2pp | +231.0% | ✓ |
+| 2013-04-26 | $9.43 | Micron Q2 FY13 results | 2.65 | +1.69 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +209.7% | +171.2pp | +228.9% | ✓ |
+| 2013-05-03 | $9.63 | Micron Q2 FY13 results | 2.65 | +1.51 | 0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +201.0% | +165.9pp | +222.7% | ✓ |
+| 2013-05-10 | $10.82 | Micron Q2 FY13 results | 2.65 | +1.65 | 0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +151.2% | +117.2pp | +187.4% | ✓ |
+| 2013-05-17 | $11.31 | Micron Q2 FY13 results | 2.65 | +1.33 | 0.03x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +132.8% | +101.1pp | +175.0% | ✗ |
+| 2013-05-24 | $11.59 | Micron Q2 FY13 results | 2.65 | +1.33 | 0.03x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +135.8% | +102.5pp | +168.3% | ✗ |
+| 2013-05-31 | $11.68 | Micron Q2 FY13 results | 2.65 | +1.33 | 0.03x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +139.1% | +105.4pp | +166.2% | ✗ |
+| 2013-06-07 | $12.65 | Micron Q2 FY13 results | 2.65 | +1.32 | 0.03x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +110.2% | +78.4pp | +145.5% | ✗ |
+| 2013-06-14 | $12.76 | Micron Q2 FY13 results | 2.65 | +1.54 | 0.03x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +96.9% | +63.7pp | +142.6% | ✗ |
+| 2013-06-21 | $13.90 | Micron Q3 FY13 results | 2.65 | +1.61 | 0.04x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +76.0% | +38.7pp | +121.6% | ✗ |
+| 2013-06-28 | $14.33 | Micron Q3 FY13 results | 2.65 | +1.61 | 0.04x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +37.2% | +1.7pp | +113.8% | ✓ |
+| 2013-07-05 | $14.31 | Micron Q3 FY13 results | 2.65 | +1.39 | 0.04x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +33.3% | +1.4pp | +112.4% | ✓ |
+| 2013-07-12 | $12.69 | Micron Q3 FY13 results | 2.65 | +1.39 | 0.03x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +38.5% | +10.0pp | +137.2% | ✓ |
+| 2013-07-19 | $13.73 | Micron Q3 FY13 results | 2.65 | +1.61 | 0.04x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +46.5% | +16.4pp | +117.1% | ✗ |
+| 2013-07-26 | $12.59 | Micron Q3 FY13 results | 2.65 | +1.44 | 0.03x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +45.7% | +18.2pp | +134.4% | ✗ |
+| 2013-08-02 | $13.50 | Micron Q3 FY13 results | 2.65 | +1.39 | 0.04x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +37.1% | +9.5pp | +116.8% | ✓ |
+| 2013-08-09 | $13.99 | Micron Q3 FY13 results | 2.65 | +1.38 | 0.04x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +31.8% | +4.5pp | +107.5% | ✓ |
+| 2013-08-16 | $14.01 | Micron Q3 FY13 results | 2.65 | +1.38 | 0.04x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +21.0% | -9.9pp | +105.3% | ✓ |
+| 2013-08-23 | $13.86 | Micron Q3 FY13 results | 2.65 | +1.38 | 0.04x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +4.8% | -18.5pp | +105.1% | ✗ |
+| 2013-08-30 | $13.57 | Micron Q3 FY13 results | 2.65 | +1.39 | 0.04x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +17.6% | -8.8pp | +106.8% | ✓ |
+| 2013-09-06 | $15.26 | Micron Q3 FY13 results | 2.65 | +1.37 | 0.06x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +10.2% | -10.4pp | +82.0% | ✓ |
+| 2013-09-13 | $16.20 | Micron Q3 FY13 results | 2.65 | +1.30 | 0.07x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +3.7% | -17.0pp | +69.9% | ✗ |
+| 2013-09-20 | $17.23 | Micron Q3 FY13 results | 2.65 | +1.16 | 0.07x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | -10.0% | -29.1pp | +57.9% | ✗ |
+| 2013-09-27 | $17.62 | Micron Q3 FY13 results | 2.65 | +1.14 | 0.08x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | -15.4% | -34.2pp | +52.6% | ✗ |
+| 2013-10-04 | $18.47 | Micron Q3 FY13 results | 2.65 | +1.11 | 0.08x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | -13.9% | -33.9pp | +43.5% | ✗ |
+| 2013-10-11 | $16.84 | Micron Q4 FY13 results | 2.85 | +2.34 | 0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +7.8% | -15.0pp | +55.9% | ✗ |
+| 2013-10-18 | $17.03 | Micron Q4 FY13 results | 2.85 | +2.24 | 0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +8.6% | -12.4pp | +53.0% | ✗ |
+| 2013-10-25 | $16.58 | Micron Q4 FY13 results | 2.85 | +2.34 | 0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +4.0% | -18.4pp | +55.6% | ✗ |
+| 2013-11-01 | $17.58 | Micron Q4 FY13 results | 2.85 | +2.33 | 0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -5.8% | -28.2pp | +44.9% | ✗ |
+| 2013-11-08 | $18.11 | Micron Q4 FY13 results | 2.85 | +2.32 | 0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -9.2% | -32.0pp | +38.9% | ✗ |
+| 2013-11-15 | $19.46 | Micron Q4 FY13 results | 2.85 | +2.32 | 0.07x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -22.9% | -39.7pp | +27.5% | ✗ |
+| 2013-11-22 | $20.19 | Micron Q4 FY13 results | 2.85 | +2.31 | 0.08x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -23.6% | -43.7pp | +21.1% | ✗ |
+| 2013-11-29 | $21.10 | Micron Q4 FY13 results | 2.85 | +2.31 | 0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -26.3% | -46.3pp | +14.4% | ✗ |
+| 2013-12-06 | $22.31 | Micron Q4 FY13 results | 2.85 | +2.31 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -30.5% | -50.7pp | +6.4% | ✗ |
+| 2013-12-13 | $23.08 | Micron Q4 FY13 results | 2.85 | +2.21 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -39.2% | -56.9pp | +1.1% | ✗ |
+| 2013-12-20 | $22.17 | Micron Q4 FY13 results | 2.85 | +2.31 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -35.2% | -49.8pp | +3.4% | ✗ |
+| 2013-12-27 | $21.52 | Micron Q4 FY13 results | 2.85 | +2.31 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -32.7% | -49.0pp | +5.1% | ✗ |
+| 2013-12-31 | $21.75 | Micron Q4 FY13 results | 2.85 | +2.00 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -34.9% | -50.8pp | +3.0% | ✗ |
