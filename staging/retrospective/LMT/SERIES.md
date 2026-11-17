@@ -526,3 +526,212 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2017-12-15 | $322.82 | Lockheed Martin Q3 2017 results | 1.95 | -1.90 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +25.0% | +2.5pp | +6.1% | ✗ |
 | 2017-12-22 | $318.03 | Lockheed Martin Q3 2017 results | 1.95 | -1.90 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +26.9% | +3.0pp | +8.4% | ✗ |
 | 2017-12-29 | $321.05 | Lockheed Martin Q3 2017 results | 1.95 | -1.90 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.0% | +3.0pp | +8.1% | ✗ |
+| 2018-01-05 | $329.68 | Lockheed Martin Q3 2017 results | 1.95 | -1.92 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +30.7% | +8.9pp | +5.9% | ✗ |
+| 2018-01-12 | $336.25 | Lockheed Martin Q3 2017 results | 1.95 | -1.92 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.2% | +7.1pp | +4.6% | ✗ |
+| 2018-01-19 | $332.00 | Lockheed Martin Q3 2017 results | 1.95 | -1.92 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +33.4% | +11.2pp | +6.9% | ✗ |
+| 2018-01-26 | $344.90 | Lockheed Martin Q3 2017 results | 1.95 | -1.92 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +30.4% | +11.9pp | +3.5% | ✗ |
+| 2018-01-30 | $350.39 | Lockheed Martin Q4 2017 results | 2.25 | -1.76 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +29.3% | +9.2pp | +2.5% | ✗ |
+| 2018-02-09 | $341.42 | Lockheed Martin Q4 2017 results | 2.25 | -1.76 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +33.7% | +2.5pp | +6.2% | ✗ |
+| 2018-02-16 | $360.53 | Lockheed Martin Q4 2017 results | 2.25 | -1.76 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +26.2% | -1.3pp | +1.3% | ✓ |
+| 2018-02-23 | $358.69 | Lockheed Martin Q4 2017 results | 2.25 | -1.76 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +24.1% | -1.2pp | +2.4% | ✓ |
+| 2018-03-02 | $341.72 | Lockheed Martin Q4 2017 results | 2.25 | -1.76 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +16.7% | -2.1pp | +8.0% | ✓ |
+| 2018-03-09 | $340.49 | Lockheed Martin Q4 2017 results | 2.25 | -1.72 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +8.6% | +6.4pp | +8.8% | ✗ |
+| 2018-03-16 | $331.40 | Lockheed Martin Q4 2017 results | 2.25 | -1.66 | 59.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -7.8% | +1.2pp | +12.0% | ✗ |
+| 2018-03-23 | $336.31 | Lockheed Martin Q4 2017 results | 2.25 | -1.66 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -12.5% | -3.1pp | +10.4% | ✓ |
+| 2018-03-29 | $337.93 | Lockheed Martin Q4 2017 results | 2.25 | -1.76 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +8.3% | +7.8pp | +10.1% | ✗ |
+| 2018-04-06 | $334.66 | Lockheed Martin Q4 2017 results | 2.25 | -1.66 | 634.29x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +15.2% | +9.0pp | +11.5% | ✗ |
+| 2018-04-13 | $342.60 | Lockheed Martin Q4 2017 results | 2.25 | -1.76 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +13.1% | +5.0pp | +9.2% | ✗ |
+| 2018-04-20 | $351.99 | Lockheed Martin Q4 2017 results | 2.25 | -1.76 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +13.9% | +4.1pp | +6.7% | ✗ |
+| 2018-04-25 | $329.50 | Lockheed Martin Q1 2018 results | 2.95 | -0.73 | 10.02x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +21.2% | +9.7pp | +14.2% | ✗ |
+| 2018-05-04 | $311.44 | Lockheed Martin Q1 2018 results | 2.95 | -0.53 | 4.86x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +27.7% | +17.0pp | +21.2% | ✗ |
+| 2018-05-11 | $324.04 | Lockheed Martin Q1 2018 results | 2.95 | -0.68 | 7.71x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +21.6% | +10.4pp | +16.8% | ✗ |
+| 2018-05-18 | $320.45 | Lockheed Martin Q1 2018 results | 2.95 | -0.64 | 6.65x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +23.3% | +10.5pp | +18.2% | ✗ |
+| 2018-05-25 | $320.80 | Lockheed Martin Q1 2018 results | 2.95 | -0.64 | 6.74x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +20.5% | +7.9pp | +18.3% | ✗ |
+| 2018-06-01 | $316.63 | Lockheed Martin Q1 2018 results | 2.95 | -0.59 | 5.45x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.5% | +12.8pp | +20.1% | ✗ |
+| 2018-06-08 | $322.31 | Lockheed Martin Q1 2018 results | 2.95 | -0.65 | 6.68x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +34.1% | +14.0pp | +18.3% | ✗ |
+| 2018-06-15 | $310.14 | Lockheed Martin Q1 2018 results | 2.95 | -0.51 | 4.45x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +26.2% | +11.8pp | +23.2% | ✗ |
+| 2018-06-22 | $299.38 | Lockheed Martin Q1 2018 results | 2.95 | -0.38 | 3.33x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +31.6% | +14.5pp | +27.8% | ✗ |
+| 2018-06-29 | $295.43 | Lockheed Martin Q1 2018 results | 2.95 | -0.34 | 3.03x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +30.5% | +14.1pp | +29.5% | ✗ |
+| 2018-07-06 | $299.19 | Lockheed Martin Q1 2018 results | 2.95 | -0.37 | 3.32x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +27.2% | +8.0pp | +27.9% | ✗ |
+| 2018-07-13 | $318.37 | Lockheed Martin Q1 2018 results | 2.95 | -0.60 | 5.78x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +16.5% | -0.0pp | +20.1% | ✗ |
+| 2018-07-20 | $322.55 | Lockheed Martin Q1 2018 results | 2.95 | -0.65 | 6.74x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +18.9% | -1.0pp | +18.5% | ✓ |
+| 2018-07-25 | $324.36 | Lockheed Martin Q2 2018 results | 2.40 | -0.93 | 3.09x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +24.6% | +7.7pp | +18.0% | ✗ |
+| 2018-08-03 | $320.55 | Lockheed Martin Q2 2018 results | 2.40 | -0.88 | 2.85x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +23.3% | +3.4pp | +19.5% | ✗ |
+| 2018-08-10 | $313.12 | Lockheed Martin Q2 2018 results | 2.40 | -0.79 | 2.47x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +30.1% | +7.6pp | +22.4% | ✗ |
+| 2018-08-17 | $325.23 | Lockheed Martin Q2 2018 results | 2.40 | -0.94 | 3.14x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +25.1% | +2.7pp | +18.0% | ✗ |
+| 2018-08-24 | $321.29 | Lockheed Martin Q2 2018 results | 2.40 | -0.89 | 2.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.6% | +5.4pp | +19.5% | ✗ |
+| 2018-08-31 | $320.41 | Lockheed Martin Q2 2018 results | 2.40 | -0.88 | 2.84x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.5% | +3.9pp | +19.9% | ✗ |
+| 2018-09-07 | $328.53 | Lockheed Martin Q2 2018 results | 2.40 | -0.98 | 3.38x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +22.8% | -0.2pp | +16.9% | ✓ |
+| 2018-09-14 | $335.80 | Lockheed Martin Q2 2018 results | 2.40 | -1.07 | 4.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +22.7% | +2.5pp | +14.4% | ✗ |
+| 2018-09-21 | $337.66 | Lockheed Martin Q2 2018 results | 2.40 | -1.09 | 4.19x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +17.9% | +2.1pp | +13.8% | ✗ |
+| 2018-09-28 | $345.96 | Lockheed Martin Q2 2018 results | 2.40 | -1.18 | 5.24x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +18.2% | -0.6pp | +11.0% | ✓ |
+| 2018-10-05 | $347.21 | Lockheed Martin Q2 2018 results | 2.40 | -1.19 | 5.43x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +15.9% | -6.0pp | +10.6% | ✓ |
+| 2018-10-12 | $327.62 | Lockheed Martin Q2 2018 results | 2.40 | -0.97 | 3.31x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +24.3% | -7.4pp | +17.2% | ✓ |
+| 2018-10-19 | $328.14 | Lockheed Martin Q2 2018 results | 2.40 | -0.97 | 3.35x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +22.5% | -5.3pp | +17.1% | ✓ |
+| 2018-10-24 | $311.13 | Lockheed Martin Q3 2018 results | 3.15 | +0.21 | 1.79x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +26.2% | -8.3pp | +23.5% | ✓ |
+| 2018-11-02 | $299.28 | Lockheed Martin Q3 2018 results | 3.15 | +0.45 | 1.48x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +23.9% | -1.6pp | +28.2% | ✓ |
+| 2018-11-09 | $313.12 | Lockheed Martin Q3 2018 results | 3.15 | +0.19 | 1.84x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +22.1% | -9.6pp | +22.5% | ✓ |
+| 2018-11-16 | $301.24 | Lockheed Martin Q3 2018 results | 3.15 | +0.40 | 1.52x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +31.3% | -5.2pp | +27.2% | ✓ |
+| 2018-11-23 | $295.38 | Lockheed Martin Q3 2018 results | 3.15 | +0.52 | 1.39x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +31.8% | -8.2pp | +29.6% | ✓ |
+| 2018-11-30 | $300.43 | Lockheed Martin Q3 2018 results | 3.15 | +0.43 | 1.51x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +27.8% | -7.6pp | +27.3% | ✓ |
+| 2018-12-07 | $285.40 | Lockheed Martin Q3 2018 results | 3.15 | +0.67 | 1.20x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +33.5% | -10.8pp | +33.9% | ✓ |
+| 2018-12-14 | $287.70 | Lockheed Martin Q3 2018 results | 3.15 | +0.64 | 1.24x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +30.9% | -13.4pp | +32.6% | ✗ |
+| 2018-12-21 | $256.55 | Lockheed Martin Q3 2018 results | 3.15 | +1.15 | 0.78x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +43.5% | -14.0pp | +48.5% | ✓ |
+| 2018-12-28 | $261.26 | Lockheed Martin Q3 2018 results | 3.15 | +1.08 | 0.84x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +42.8% | -12.0pp | +45.6% | ✓ |
+| 2019-01-04 | $265.04 | Lockheed Martin Q3 2018 results | 3.15 | +1.04 | 0.89x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +37.1% | -13.5pp | +43.2% | ✓ |
+| 2019-01-11 | $277.73 | Lockheed Martin Q3 2018 results | 3.15 | +0.88 | 1.07x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +28.4% | -22.2pp | +36.2% | ✗ |
+| 2019-01-18 | $282.87 | Lockheed Martin Q3 2018 results | 3.15 | +0.82 | 1.16x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +29.4% | -15.8pp | +33.2% | ✗ |
+| 2019-01-25 | $287.04 | Lockheed Martin Q3 2018 results | 3.15 | +0.76 | 1.23x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +26.2% | -22.7pp | +30.8% | ✗ |
+| 2019-01-30 | $291.67 | Lockheed Martin Q4 2018 results | 2.85 | +0.63 | 0.95x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +16.8% | -25.7pp | +28.1% | ✗ |
+| 2019-02-08 | $301.50 | Lockheed Martin Q4 2018 results | 2.85 | +0.59 | 1.01x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +18.3% | -30.3pp | +23.1% | ✗ |
+| 2019-02-15 | $307.23 | Lockheed Martin Q4 2018 results | 2.85 | +0.54 | 1.09x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +16.0% | -29.6pp | +20.2% | ✗ |
+| 2019-02-22 | $307.13 | Lockheed Martin Q4 2018 results | 2.85 | +0.54 | 1.09x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +17.0% | -25.7pp | +19.8% | ✗ |
+| 2019-03-01 | $309.47 | Lockheed Martin Q4 2018 results | 2.85 | +0.52 | 1.12x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +14.0% | -29.0pp | +18.5% | ✗ |
+| 2019-03-08 | $300.95 | Lockheed Martin Q4 2018 results | 2.85 | +0.61 | 1.00x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +19.8% | -23.4pp | +21.6% | ✗ |
+| 2019-03-15 | $296.15 | Lockheed Martin Q4 2018 results | 2.85 | +0.66 | 0.94x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +23.5% | -21.0pp | +23.5% | ✗ |
+| 2019-03-22 | $294.01 | Lockheed Martin Q4 2018 results | 2.85 | +0.68 | 0.91x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +28.2% | -16.5pp | +24.7% | ✗ |
+| 2019-03-29 | $300.16 | Lockheed Martin Q4 2018 results | 2.85 | +0.62 | 0.99x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +30.6% | -13.5pp | +22.5% | ✗ |
+| 2019-04-05 | $302.58 | Lockheed Martin Q4 2018 results | 2.85 | +0.60 | 1.02x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +31.5% | -13.2pp | +21.6% | ✗ |
+| 2019-04-12 | $309.70 | Lockheed Martin Q4 2018 results | 2.85 | +0.52 | 1.12x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +31.4% | -14.3pp | +19.0% | ✗ |
+| 2019-04-18 | $314.26 | Lockheed Martin Q4 2018 results | 2.85 | +0.46 | 1.19x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | +30.8% | -17.0pp | +17.3% | ✗ |
+| 2019-04-24 | $330.12 | Lockheed Martin Q1 2019 results | 3.35 | +1.03 | 1.16x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +20.1% | -26.4pp | +11.7% | ✗ |
+| 2019-05-03 | $334.07 | Lockheed Martin Q1 2019 results | 3.35 | +0.99 | 1.22x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +21.1% | -25.0pp | +10.3% | ✗ |
+| 2019-05-10 | $341.35 | Lockheed Martin Q1 2019 results | 3.35 | +0.79 | 1.33x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +20.8% | -28.2pp | +8.0% | ✗ |
+| 2019-05-17 | $337.99 | Lockheed Martin Q1 2019 results | 3.35 | +0.94 | 1.28x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +21.4% | -27.9pp | +9.2% | ✗ |
+| 2019-05-24 | $338.78 | Lockheed Martin Q1 2019 results | 3.35 | +0.93 | 1.29x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +20.1% | -32.1pp | +9.1% | ✗ |
+| 2019-05-31 | $338.54 | Lockheed Martin Q1 2019 results | 3.35 | +0.94 | 1.29x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +18.7% | -38.0pp | +9.1% | ✗ |
+| 2019-06-07 | $355.23 | Lockheed Martin Q1 2019 results | 3.35 | +0.59 | 1.60x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +15.7% | -35.0pp | +3.9% | ✗ |
+| 2019-06-14 | $350.14 | Lockheed Martin Q1 2019 results | 3.35 | +0.69 | 1.49x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +16.7% | -34.2pp | +5.4% | ✗ |
+| 2019-06-21 | $359.36 | Lockheed Martin Q1 2019 results | 3.35 | +0.53 | 1.69x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +11.9% | -35.1pp | +2.7% | ✗ |
+| 2019-06-28 | $363.54 | Lockheed Martin Q1 2019 results | 3.35 | +0.46 | 1.79x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +9.9% | -39.8pp | +1.6% | ✗ |
+| 2019-07-05 | $369.92 | Lockheed Martin Q1 2019 results | 3.35 | +0.37 | 1.95x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +8.4% | -40.7pp | -0.1% | ✗ |
+| 2019-07-12 | $369.45 | Lockheed Martin Q1 2019 results | 3.35 | +0.38 | 1.94x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +7.9% | -41.2pp | +0.2% | ✗ |
+| 2019-07-19 | $356.96 | Lockheed Martin Q1 2019 results | 3.35 | +0.57 | 1.64x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +9.7% | -37.1pp | +3.8% | ✗ |
+| 2019-07-24 | $368.90 | Lockheed Martin Q2 2019 results | 2.45 | -0.10 | 1.34x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +8.5% | -41.2pp | +0.4% | ✗ |
+| 2019-08-02 | $361.91 | Lockheed Martin Q2 2019 results | 2.45 | -0.02 | 1.23x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +7.2% | -46.2pp | +2.3% | ✗ |
+| 2019-08-09 | $377.01 | Lockheed Martin Q2 2019 results | 2.45 | -0.21 | 1.47x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +1.0% | -54.5pp | -1.9% | ✗ |
+| 2019-08-16 | $377.00 | Lockheed Martin Q2 2019 results | 2.45 | -0.20 | 1.47x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +0.8% | -57.9pp | -2.1% | ✗ |
+| 2019-08-23 | $376.89 | Lockheed Martin Q2 2019 results | 2.45 | -0.20 | 1.46x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +0.0% | -61.0pp | -2.2% | ✗ |
+| 2019-08-30 | $384.11 | Lockheed Martin Q2 2019 results | 2.45 | -0.34 | 1.59x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -1.2% | -59.7pp | -4.2% | ✗ |
+| 2019-09-06 | $386.56 | Lockheed Martin Q2 2019 results | 2.45 | -0.38 | 1.64x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -2.7% | -58.5pp | -5.0% | ✗ |
+| 2019-09-13 | $384.86 | Lockheed Martin Q2 2019 results | 2.45 | -0.35 | 1.61x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -4.8% | -56.9pp | -4.7% | ✗ |
+| 2019-09-20 | $388.25 | Lockheed Martin Q2 2019 results | 2.45 | -0.40 | 1.67x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -7.7% | -57.0pp | -5.8% | ✗ |
+| 2019-09-27 | $387.87 | Lockheed Martin Q2 2019 results | 2.45 | -0.40 | 1.67x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -3.7% | -57.4pp | -5.9% | ✗ |
+| 2019-10-04 | $384.95 | Lockheed Martin Q2 2019 results | 2.45 | -0.35 | 1.61x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -4.9% | -54.4pp | -5.4% | ✗ |
+| 2019-10-11 | $381.47 | Lockheed Martin Q2 2019 results | 2.45 | -0.27 | 1.54x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -1.2% | -51.7pp | -4.7% | ✗ |
+| 2019-10-18 | $372.48 | Lockheed Martin Q2 2019 results | 2.45 | -0.11 | 1.38x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +3.4% | -50.5pp | -2.5% | ✗ |
+| 2019-10-23 | $373.09 | Lockheed Martin Q3 2019 results | 2.10 | -0.35 | 1.22x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +5.8% | -49.1pp | -2.7% | ✗ |
+| 2019-11-01 | $379.17 | Lockheed Martin Q3 2019 results | 2.10 | -0.41 | 1.31x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -7.4% | -61.4pp | -4.4% | ✗ |
+| 2019-11-08 | $381.86 | Lockheed Martin Q3 2019 results | 2.10 | -0.45 | 1.35x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -5.3% | -60.7pp | -5.2% | ✗ |
+| 2019-11-15 | $393.55 | Lockheed Martin Q3 2019 results | 2.10 | -0.63 | 1.54x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | -8.3% | -61.8pp | -8.2% | ✓ |
+| 2019-11-22 | $390.74 | Lockheed Martin Q3 2019 results | 2.10 | -0.56 | 1.49x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | -6.6% | -60.6pp | -7.7% | ✓ |
+| 2019-11-29 | $391.03 | Lockheed Martin Q3 2019 results | 2.10 | -0.57 | 1.49x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | -8.2% | -59.7pp | -7.9% | ✓ |
+| 2019-12-06 | $386.86 | Lockheed Martin Q3 2019 results | 2.10 | -0.52 | 1.42x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | -6.9% | -56.2pp | -7.1% | ✓ |
+| 2019-12-13 | $386.47 | Lockheed Martin Q3 2019 results | 2.10 | -0.50 | 1.42x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | -5.3% | -55.9pp | -7.0% | ✓ |
+| 2019-12-20 | $386.47 | Lockheed Martin Q3 2019 results | 2.10 | -0.50 | 1.42x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | -7.4% | -52.8pp | -7.1% | ✓ |
+| 2019-12-27 | $393.60 | Lockheed Martin Q3 2019 results | 2.10 | -0.62 | 1.54x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | -5.8% | -57.2pp | -8.8% | ✓ |
+| 2020-01-03 | $413.74 | Lockheed Martin Q3 2019 results | 2.10 | -0.95 | 1.95x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -9.4% | -61.1pp | -13.3% | ✓ |
+| 2020-01-10 | $413.83 | Lockheed Martin Q3 2019 results | 2.10 | -0.96 | 1.96x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -7.3% | -53.7pp | -13.2% | ✓ |
+| 2020-01-17 | $425.66 | Lockheed Martin Q3 2019 results | 2.10 | -1.10 | 2.27x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -7.7% | -51.1pp | -15.5% | ✓ |
+| 2020-01-24 | $432.50 | Lockheed Martin Q3 2019 results | 2.10 | -1.18 | 2.48x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -9.0% | -46.2pp | -16.7% | ✓ |
+| 2020-01-29 | $433.84 | Lockheed Martin Q4 2019 results | 2.10 | -0.70 | 1.78x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -4.7% | -43.5pp | -16.7% | ✓ |
+| 2020-02-07 | $439.17 | Lockheed Martin Q4 2019 results | 2.10 | -0.63 | 1.61x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | -6.0% | -44.1pp | -17.5% | ✓ |
+| 2020-02-14 | $437.85 | Lockheed Martin Q4 2019 results | 2.10 | -0.61 | 1.59x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | -7.0% | -40.4pp | -17.0% | ✓ |
+| 2020-02-21 | $427.80 | Lockheed Martin Q4 2019 results | 2.10 | -0.40 | 1.43x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -4.9% | -38.5pp | -14.8% | ✗ |
+| 2020-02-28 | $369.87 | Lockheed Martin Q4 2019 results | 2.10 | +0.13 | 0.80x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +22.9% | -28.3pp | -1.2% | ✗ |
+| 2020-03-06 | $382.47 | Lockheed Martin Q4 2019 results | 2.10 | +0.03 | 0.91x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +25.2% | -23.9pp | -3.9% | ✗ |
+| 2020-03-13 | $328.59 | Lockheed Martin Q4 2019 results | 2.10 | +0.50 | 0.52x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +39.9% | -20.3pp | +12.5% | ✓ |
+| 2020-03-20 | $291.22 | Lockheed Martin Q4 2019 results | 2.10 | +0.76 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +53.5% | -45.8pp | +27.5% | ✓ |
+| 2020-03-27 | $348.38 | Lockheed Martin Q4 2019 results | 2.10 | +0.35 | 0.64x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +36.2% | -46.9pp | +7.1% | ✓ |
+| 2020-04-03 | $350.50 | Lockheed Martin Q4 2019 results | 2.10 | +0.33 | 0.66x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +33.2% | -53.9pp | +6.8% | ✓ |
+| 2020-04-09 | $371.00 | Lockheed Martin Q4 2019 results | 2.10 | +0.02 | 0.81x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +30.0% | -35.0pp | +1.3% | ✗ |
+| 2020-04-17 | $401.51 | Lockheed Martin Q4 2019 results | 2.10 | -0.24 | 1.10x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +21.7% | -35.0pp | -6.1% | ✗ |
+| 2020-04-22 | $380.40 | Lockheed Martin Q1 2020 results | 2.10 | -0.09 | 0.89x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +22.7% | -34.1pp | -0.5% | ✗ |
+| 2020-05-01 | $383.47 | Lockheed Martin Q1 2020 results | 2.10 | -0.11 | 0.92x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +18.1% | -31.6pp | -1.0% | ✗ |
+| 2020-05-08 | $378.40 | Lockheed Martin Q1 2020 results | 2.10 | -0.06 | 0.87x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +24.3% | -20.3pp | +0.6% | ✗ |
+| 2020-05-15 | $360.40 | Lockheed Martin Q1 2020 results | 2.10 | +0.19 | 0.73x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +26.5% | -17.8pp | +5.9% | ✗ |
+| 2020-05-22 | $369.00 | Lockheed Martin Q1 2020 results | 2.10 | +0.02 | 0.79x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +20.6% | -15.1pp | +3.7% | ✗ |
+| 2020-05-29 | $388.44 | Lockheed Martin Q1 2020 results | 2.10 | -0.16 | 0.97x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +20.7% | -19.5pp | -1.2% | ✗ |
+| 2020-06-05 | $410.75 | Lockheed Martin Q1 2020 results | 2.10 | -0.35 | 1.21x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +12.9% | -19.2pp | -6.4% | ✗ |
+| 2020-06-12 | $381.87 | Lockheed Martin Q1 2020 results | 2.10 | -0.09 | 0.90x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +18.2% | -13.7pp | +1.0% | ✓ |
+| 2020-06-19 | $372.20 | Lockheed Martin Q1 2020 results | 2.10 | -0.01 | 0.82x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +14.2% | -8.0pp | +3.8% | ✓ |
+| 2020-06-26 | $356.76 | Lockheed Martin Q1 2020 results | 2.10 | +0.23 | 0.70x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +23.4% | -10.5pp | +8.4% | ✗ |
+| 2020-07-02 | $362.00 | Lockheed Martin Q1 2020 results | 2.10 | +0.18 | 0.74x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +25.6% | -0.2pp | +7.1% | ✗ |
+| 2020-07-10 | $349.25 | Lockheed Martin Q1 2020 results | 2.10 | +0.31 | 0.65x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +26.4% | +0.4pp | +11.2% | ✓ |
+| 2020-07-17 | $368.50 | Lockheed Martin Q1 2020 results | 2.10 | +0.02 | 0.79x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +13.9% | -9.4pp | +5.6% | ✓ |
+| 2020-07-22 | $394.08 | Lockheed Martin Q2 2020 results | 2.25 | +0.02 | 1.01x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +5.5% | -18.9pp | -1.2% | ✗ |
+| 2020-07-31 | $378.97 | Lockheed Martin Q2 2020 results | 2.25 | +0.17 | 0.87x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +14.8% | -14.9pp | +2.9% | ✓ |
+| 2020-08-07 | $385.62 | Lockheed Martin Q2 2020 results | 2.25 | +0.11 | 0.93x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +16.1% | -11.0pp | +1.4% | ✓ |
+| 2020-08-14 | $391.42 | Lockheed Martin Q2 2020 results | 2.25 | +0.05 | 0.98x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +16.4% | -13.9pp | +0.3% | ✓ |
+| 2020-08-21 | $389.57 | Lockheed Martin Q2 2020 results | 2.25 | +0.07 | 0.96x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +18.4% | -9.4pp | +1.2% | ✓ |
+| 2020-08-28 | $395.59 | Lockheed Martin Q2 2020 results | 2.25 | +0.01 | 1.02x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +14.3% | -4.6pp | -0.0% | ✓ |
+| 2020-09-04 | $385.02 | Lockheed Martin Q2 2020 results | 2.25 | +0.11 | 0.92x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +14.3% | -3.6pp | +3.1% | ✓ |
+| 2020-09-11 | $389.45 | Lockheed Martin Q2 2020 results | 2.25 | +0.07 | 0.95x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +13.8% | -11.4pp | +2.2% | ✓ |
+| 2020-09-18 | $395.14 | Lockheed Martin Q2 2020 results | 2.25 | +0.01 | 1.01x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +10.3% | -9.9pp | +1.1% | ✓ |
+| 2020-09-25 | $386.70 | Lockheed Martin Q2 2020 results | 2.25 | +0.10 | 0.93x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +12.4% | -3.1pp | +3.7% | ✓ |
+| 2020-10-02 | $380.58 | Lockheed Martin Q2 2020 results | 2.25 | +0.16 | 0.87x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +7.2% | -3.4pp | +5.6% | ✓ |
+| 2020-10-09 | $385.93 | Lockheed Martin Q2 2020 results | 2.25 | +0.11 | 0.92x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +10.3% | +2.3pp | +4.4% | ✓ |
+| 2020-10-16 | $386.50 | Lockheed Martin Q2 2020 results | 2.25 | +0.10 | 0.92x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +6.3% | -0.0pp | +4.5% | ✓ |
+| 2020-10-21 | $367.14 | Lockheed Martin Q3 2020 results | 2.10 | +0.40 | 0.70x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +29.7% | +17.0pp | +10.3% | ✓ |
+| 2020-10-30 | $350.13 | Lockheed Martin Q3 2020 results | 2.10 | +0.54 | 0.58x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +44.7% | +21.9pp | +16.4% | ✓ |
+| 2020-11-06 | $361.27 | Lockheed Martin Q3 2020 results | 2.10 | +0.46 | 0.65x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +39.3% | +28.4pp | +13.6% | ✓ |
+| 2020-11-13 | $375.14 | Lockheed Martin Q3 2020 results | 2.10 | +0.31 | 0.75x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +29.4% | +14.8pp | +10.2% | ✓ |
+| 2020-11-20 | $368.02 | Lockheed Martin Q3 2020 results | 2.10 | +0.40 | 0.69x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +35.4% | +20.6pp | +13.0% | ✓ |
+| 2020-11-27 | $374.34 | Lockheed Martin Q3 2020 results | 2.10 | +0.32 | 0.74x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +34.9% | +21.0pp | +11.7% | ✓ |
+| 2020-12-04 | $366.61 | Lockheed Martin Q3 2020 results | 2.10 | +0.41 | 0.68x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +41.4% | +28.1pp | +14.9% | ✓ |
+| 2020-12-11 | $361.71 | Lockheed Martin Q3 2020 results | 2.10 | +0.46 | 0.64x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +39.8% | +29.2pp | +17.2% | ✓ |
+| 2020-12-18 | $356.03 | Lockheed Martin Q3 2020 results | 2.10 | +0.50 | 0.61x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +41.5% | +34.4pp | +19.9% | ✓ |
+| 2020-12-24 | $351.97 | Lockheed Martin Q3 2020 results | 2.10 | +0.53 | 0.58x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +43.6% | +36.5pp | +22.0% | ✓ |
+| 2020-12-31 | $354.98 | Lockheed Martin Q3 2020 results | 2.10 | +0.51 | 0.59x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +43.2% | +37.7pp | +21.5% | ✓ |
+| 2021-01-08 | $336.10 | Lockheed Martin Q3 2020 results | 2.10 | +0.63 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +47.3% | +42.4pp | +29.1% | ✓ |
+| 2021-01-15 | $347.27 | Lockheed Martin Q3 2020 results | 2.10 | +0.56 | 0.54x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +35.9% | +26.6pp | +25.5% | ✓ |
+| 2021-01-22 | $339.88 | Lockheed Martin Q3 2020 results | 2.10 | +0.62 | 0.50x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +36.9% | +30.4pp | +28.5% | ✓ |
+| 2021-01-27 | $332.51 | Lockheed Martin Q4 2020 results | 2.40 | +0.90 | 0.35x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +44.8% | +33.3pp | +31.7% | ✓ |
+| 2021-02-05 | $337.04 | Lockheed Martin Q4 2020 results | 2.40 | +0.82 | 0.36x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +42.7% | +33.3pp | +30.4% | ✓ |
+| 2021-02-12 | $337.73 | Lockheed Martin Q4 2020 results | 2.40 | +0.83 | 0.35x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +48.9% | +41.9pp | +30.6% | ✓ |
+| 2021-02-19 | $335.42 | Lockheed Martin Q4 2020 results | 2.40 | +0.85 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +48.4% | +40.9pp | +32.1% | ✓ |
+| 2021-02-26 | $330.25 | Lockheed Martin Q4 2020 results | 2.40 | +0.88 | 0.30x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +51.3% | +44.0pp | +34.6% | ✓ |
+| 2021-03-05 | $340.43 | Lockheed Martin Q4 2020 results | 2.40 | +0.81 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +47.0% | +38.5pp | +30.7% | ✓ |
+| 2021-03-12 | $340.19 | Lockheed Martin Q4 2020 results | 2.40 | +0.81 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +46.4% | +45.4pp | +30.9% | ✓ |
+| 2021-03-19 | $355.07 | Lockheed Martin Q4 2020 results | 2.40 | +0.70 | 0.40x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +37.5% | +34.2pp | +25.7% | ✓ |
+| 2021-03-26 | $364.71 | Lockheed Martin Q4 2020 results | 2.40 | +0.62 | 0.45x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +36.3% | +33.2pp | +22.5% | ✓ |
+| 2021-04-01 | $371.02 | Lockheed Martin Q4 2020 results | 2.40 | +0.56 | 0.47x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +33.5% | +28.2pp | +20.6% | ✓ |
+| 2021-04-09 | $386.23 | Lockheed Martin Q4 2020 results | 2.40 | +0.43 | 0.56x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +32.7% | +30.3pp | +16.0% | ✓ |
+| 2021-04-16 | $391.81 | Lockheed Martin Q4 2020 results | 2.40 | +0.38 | 0.58x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +30.3% | +28.5pp | +14.5% | ✓ |
+| 2021-04-21 | $387.24 | Lockheed Martin Q1 2021 results | 1.90 | -0.01 | 0.52x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +30.4% | +28.4pp | +16.0% | ✓ |
+| 2021-04-30 | $380.56 | Lockheed Martin Q1 2021 results | 1.90 | +0.05 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +27.9% | +25.3pp | +18.2% | ✓ |
+| 2021-05-07 | $390.34 | Lockheed Martin Q1 2021 results | 1.90 | -0.04 | 0.53x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +22.4% | +21.8pp | +15.3% | ✓ |
+| 2021-05-14 | $390.78 | Lockheed Martin Q1 2021 results | 1.90 | -0.04 | 0.53x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +21.1% | +19.3pp | +15.3% | ✓ |
+| 2021-05-21 | $387.22 | Lockheed Martin Q1 2021 results | 1.90 | -0.01 | 0.50x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +23.2% | +19.3pp | +16.4% | ✓ |
+| 2021-05-28 | $382.20 | Lockheed Martin Q1 2021 results | 1.90 | +0.04 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +22.5% | +19.6pp | +18.0% | ✓ |
+| 2021-06-04 | $394.10 | Lockheed Martin Q1 2021 results | 1.90 | -0.06 | 0.54x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +21.1% | +16.9pp | +14.5% | ✓ |
+| 2021-06-11 | $387.72 | Lockheed Martin Q1 2021 results | 1.90 | -0.01 | 0.51x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +25.2% | +21.0pp | +16.4% | ✓ |
+| 2021-06-18 | $379.19 | Lockheed Martin Q1 2021 results | 1.90 | +0.08 | 0.46x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +27.1% | +18.2pp | +19.3% | ✓ |
+| 2021-06-25 | $382.01 | Lockheed Martin Q1 2021 results | 1.90 | +0.05 | 0.47x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +26.2% | +21.7pp | +18.6% | ✓ |
+| 2021-07-02 | $381.49 | Lockheed Martin Q1 2021 results | 1.90 | +0.05 | 0.46x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +26.7% | +21.6pp | +18.9% | ✓ |
+| 2021-07-09 | $383.11 | Lockheed Martin Q1 2021 results | 1.90 | +0.04 | 0.46x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +25.7% | +22.1pp | +18.6% | ✓ |
+| 2021-07-16 | $377.14 | Lockheed Martin Q1 2021 results | 1.90 | +0.11 | 0.43x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +29.2% | +22.1pp | +20.8% | ✓ |
+| 2021-07-23 | $380.77 | Lockheed Martin Q1 2021 results | 1.90 | +0.06 | 0.45x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +25.4% | +19.8pp | +20.0% | ✓ |
+| 2021-07-27 | $374.73 | Lockheed Martin Q2 2021 results | 1.75 | +0.01 | 0.39x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +25.8% | +19.9pp | +22.1% | ✓ |
+| 2021-08-06 | $362.05 | Lockheed Martin Q2 2021 results | 1.75 | +0.12 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +29.4% | +25.6pp | +26.5% | ✓ |
+| 2021-08-13 | $357.98 | Lockheed Martin Q2 2021 results | 1.75 | +0.16 | 0.31x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +33.2% | +30.5pp | +28.1% | ✓ |
+| 2021-08-20 | $357.17 | Lockheed Martin Q2 2021 results | 1.75 | +0.16 | 0.30x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +32.4% | +31.1pp | +28.4% | ✓ |
+| 2021-08-27 | $361.99 | Lockheed Martin Q2 2021 results | 1.75 | +0.12 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +30.9% | +30.4pp | +26.8% | ✓ |
+| 2021-09-03 | $356.00 | Lockheed Martin Q2 2021 results | 1.75 | +0.18 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +32.4% | +30.1pp | +29.1% | ✓ |
+| 2021-09-10 | $345.88 | Lockheed Martin Q2 2021 results | 1.75 | +0.24 | 0.25x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +29.0% | +26.2pp | +32.9% | ✓ |
+| 2021-09-17 | $340.98 | Lockheed Martin Q2 2021 results | 1.75 | +0.27 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +31.2% | +27.8pp | +34.9% | ✓ |
+| 2021-09-24 | $349.52 | Lockheed Martin Q2 2021 results | 1.75 | +0.22 | 0.26x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +25.0% | +25.2pp | +31.6% | ✓ |
+| 2021-10-01 | $347.80 | Lockheed Martin Q2 2021 results | 1.75 | +0.23 | 0.25x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +24.3% | +22.9pp | +32.3% | ✓ |
+| 2021-10-08 | $353.75 | Lockheed Martin Q2 2021 results | 1.75 | +0.20 | 0.28x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +19.8% | +18.8pp | +30.1% | ✓ |
+| 2021-10-15 | $365.62 | Lockheed Martin Q2 2021 results | 1.75 | +0.10 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +27.0% | +27.4pp | +26.1% | ✓ |
+| 2021-10-22 | $374.60 | Lockheed Martin Q2 2021 results | 1.75 | +0.02 | 0.37x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +24.8% | +29.0pp | +23.1% | ✓ |
+| 2021-10-27 | $330.94 | Lockheed Martin Q3 2021 results | 1.80 | +0.35 | 0.18x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +41.0% | +47.7pp | +39.3% | ✓ |
+| 2021-11-05 | $339.89 | Lockheed Martin Q3 2021 results | 1.80 | +0.29 | 0.21x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +40.2% | +44.7pp | +35.4% | ✓ |
+| 2021-11-12 | $339.06 | Lockheed Martin Q3 2021 results | 1.80 | +0.30 | 0.21x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +38.0% | +41.0pp | +35.5% | ✓ |
+| 2021-11-19 | $341.44 | Lockheed Martin Q3 2021 results | 1.80 | +0.28 | 0.21x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +37.0% | +38.2pp | +34.4% | ✓ |
+| 2021-11-26 | $342.72 | Lockheed Martin Q3 2021 results | 1.80 | +0.28 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +38.7% | +36.7pp | +33.7% | ✓ |
+| 2021-12-03 | $333.81 | Lockheed Martin Q3 2021 results | 1.80 | +0.33 | 0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +41.7% | +37.6pp | +37.1% | ✓ |
+| 2021-12-10 | $344.88 | Lockheed Martin Q3 2021 results | 1.80 | +0.26 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +36.7% | +36.3pp | +32.5% | ✓ |
+| 2021-12-17 | $344.14 | Lockheed Martin Q3 2021 results | 1.80 | +0.27 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +35.2% | +30.4pp | +32.5% | ✓ |
+| 2021-12-23 | $347.02 | Lockheed Martin Q3 2021 results | 1.80 | +0.25 | 0.24x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +35.9% | +32.5pp | +31.2% | ✓ |
+| 2021-12-31 | $355.41 | Lockheed Martin Q3 2021 results | 1.80 | +0.20 | 0.26x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +34.2% | +31.4pp | +28.0% | ✓ |
