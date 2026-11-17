@@ -18502,7 +18502,13 @@ Controls and checks (before any outcome):
 - **Regression:** rebuilding the 2008-2009 dates of ACN, AAPL, AVGO, BKR, BMY, CAT, CMCSA, F, LMT, LOW, MAR, MSFT, NKE, NVDA, PEP,
   PFE, RCL, SHW, SO, UNP, WMT and XOM changes nothing (2,227 models); the shared code is untouched, and the four new anachronism terms
   appear in no other model.
-- **Firewall** (run after the build was committed, before any outcome): see the next paragraph.
+- **Firewall** (run after the build was committed, before any outcome): passes at the 16 cutoffs above (every print, vintage, year-ago
+  10-Q and listing date of the range, 2008-01-10 and 2010-01-01), 0 files changed and no planted text (1 to 105 dates each). The planted
+  facts include a print with absurd values in every field, absurd full-year actuals for the year after the latest vintage, a later Q4
+  print excluding its own year, a later vintage excluding a year with planted texts, figures, exchange and window start, a later guide
+  for every guided year, a dividend, a listing, a company name and prices from the cutoff multiplied by 10. As a positive control the
+  plants reach the first date after them: rebuilding 2009-12-31 with the plants of the 2009-12-18 cutoff stops at the builder's refusal
+  of the planted guide ("no encoding for guides"). A full rebuild is byte-identical.
 
 Seen in the build (method behaviour, not tuned):
 - **CHEAP on all 105 dates, legacy tier BUY on all 105;** robustness 8 of 8 on every date.
