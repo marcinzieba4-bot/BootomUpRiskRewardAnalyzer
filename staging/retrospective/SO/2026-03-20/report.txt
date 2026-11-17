@@ -1,0 +1,154 @@
+
+════════════════════════════════════════════════════════════════════════
+  SO  ·  The Southern Company  ·  $93.39  ·  RETROSPECTIVE as of 2026-03-20
+  Signal: ✕ AVOID   Ratio B: 4.68x   Adj gap: -0.79  [OVERVALUED]
+  Point-in-time: 17 sources, latest published 2026-03-20; latest print Q4 2025 (2026-02-19)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2026E revenues, USD bn  →  FY2028E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Revenue line                 FY2026E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Retail electric           $    21.3  $  21.3  $  23.2      +0.0      +1.9
+    +8.7% revenues in FY25
+  Wholesale electric        $     3.2  $   3.2  $   3.5      +0.0      +0.3
+    +21.0% revenues in FY25
+  Other electric            $     1.0  $   1.0  $   1.1      +0.0      +0.1
+    +6.4% revenues in FY25
+  Natural gas               $     5.6  $   5.6  $   6.1      +0.0      +0.5
+    +13.2% revenues in FY25
+  Other revenues            $     1.4  $   1.4  $   1.5      +0.0      +0.1
+    +11.6% revenues in FY25
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    32.5  $  32.5  $  35.4      +0.0      +2.9
+  FY2026E = FY25 $29.55B × (1 + 10.1%: no Q1 2026 revenue guide, Q4 2025 revenue as reported, applied to the year (no FY26 revenue guide)); split pro rata to FY25 operating revenues by line (SO101 income statement; the 10-K has no selected data)
+  Q4 2025 (2026-02-19): total revenues $6.98B +10.1%; retail kWh +1.7% (weather-adjusted +1.4%); electric utilities' net income -1.2%;
+  operating margin 13.14% (-354.9bp); EPS $0.55 vs $0.50 (excluding items)
+  Retail kWh +1.7% as reported (34,752 to 35,330 million kWh, weather-adjusted +1.4%); electric utilities' net income -1.2% ($579M to $572M, the traditional operating companies and Southern Power; the release's Total also includes Southern Company Gas, so the signal sums the traditional electric operating companies and Southern Power, the 10-K's electric utilities, each as reported); revenue +10.1% as reported ($6,341M to $6,981M); operating income $1,058M to $917M; EPS: basic EPS excluding items $0.55 vs $0.50 (excludes only Estimated Loss on Plants Under Construction, Accelerated Depreciation from Repowering, Loss on Extinguishment of Debt, Estimated Loss on Nicor Gas Capital Investments and Adjustment to Certain Tax Benefit from Tax Reform; GAAP $0.38 vs $0.49)
+  FY26: no EPS, revenue or margin guide in numbers in any filing (the Q4 2025 release says its earnings slides with supplemental financial information, including earnings guidance, are on the company's website: website posts are not filings, so they add nothing; no transcript is filed; BASE takes Q4 2025 revenue growth)
+
+  FY2026E EPS check:  $32.5B × 16.9% pre-tax × (1−16.6%) ÷ 1.109B  =  $4.14  (FY2026E: no EPS guide in numbers in any filing, FY25's $4.30 (the company's figure excluding 'Estimated Loss on Plants Under Construction', 'Accelerated Depreciation from Repowering', 'Loss on Extinguishment of Debt', 'Disposition Impacts', 'Estimated Loss on Nicor Gas Capital Investments' and 'Adjustment to Certain Tax Benefit from Tax Reform') stands)
+  FY2028E BEAR check: $32.5B × 16.9% ÷ 1.145B  =  $4.01  (scenario $1.82)
+  FY2028E BULL check: $35.4B × 17.3% ÷ 1.145B  =  $4.47  (scenario $5.06)
+  Every 1pp of pre-tax margin ≈ $0.24 EPS ≈ $5/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Retail kWh sales                    -8.0%   ≥-3.0%    ≥2.0%    ≥6.0%     +1.7%  ◦ BASE  ██░░
+  Electric utilities net income       -7.0%   ≥-2.0%    ≥3.0%   ≥13.0%     -1.2%  ◦ BASE  ██░░
+  Revenue growth                     -10.0%   ≥-2.0%    ≥6.0%   ≥16.0%    +10.1%  ▲ BULL  ███░
+  EPS growth                         -15.0%   ≥-6.0%    ≥3.0%   ≥15.0%    +10.0%  ▲ BULL  ███░
+  Operating margin change           -410.0bp  ≥-220.0bp  ≥-30.0bp  ≥150.0bp  -354.9bp  ⚠ BEAR  █░░░
+  Disruption theme: none in scope for a utility   +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.15 / 4.00
+  Market composite:   3.03 / 4.00  (back-solved from $93 + 15% hurdle)
+  SCA adjustment:    +0.09  ·  EPP-distance adj +0.00  →  Adj composite 2.24  →  Gap -0.79  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY25 revenue +10.6%, retail kWh +1.6%, electric utilities' net income +5.2%; Q4 2025 operating margin 13.1% (-354.9bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 21.7x FY26E vs a 20.1x 10-yr ex-FY17 median (79th percentile of its own range)  (-0.48 × 25%  =  -0.120)
+    +  Growth vs own history: no Q1 2026 revenue guide, Q4 2025 revenue as reported +10.1% vs a 5.8% 9-yr median  (+0.43 × 20%  =  +0.086)
+    +  FY25 year-end cash $1.640B, FY25 free cash flow $-2.94B (net cash provided from operating activities $9,802M less property additions $12,737M (SO101)), dividend $2.96 a year, common stock issued $1,623M in 2025, none repurchased (SO101 cash flows): the dividend is the return  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Retail kWh sales                     +1.7%     -8.0%   -9.7%  Recession and mild weather cut retail…
+  Electric utilities net income        -1.2%     -7.0%   -5.8%  Rate relief lags costs and lost sales
+  Revenue growth                      +10.1%    -10.0%  -20.1%  Sales and fuel recovery fall together
+  EPS growth                          +10.0%    -15.0%  -25.0%  Costs, interest and dilution outrun r…
+  Operating margin change           -354.9bp  -410.0bp  -55.1bp  Fuel and O&M costs outrun recovery
+  Disruption theme: none in scope for a utility    +2.0/4    +1.0/4  -1.0/4  No live disruption theme is in scope …
+
+  Bear composite:  1.00  →  Bear scenario price: ~$48  (model)  /  $25 (defined)
+  Bear probability (proxy model):  15.5%
+
+  KEY TRIGGER: retail kWh sales went from +1.1% (Q3 2025) to +1.7% (Q4 2025);
+  the bear case needs a demand and cost squeeze that the operating margin (-354.9bp now)
+  and the electric utilities' earnings (-1.2% now) no longer absorb.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $4.30  (FY2026E: no EPS guide in numbers in any filing, FY25's $4.30 (the company's figure excluding 'Estimated Loss on Plants Under Construction', 'Accelerated Depreciation from Repowering', 'Loss on Extinguishment of Debt', 'Disposition Impacts', 'Estimated Loss on Nicor Gas Capital Investments' and 'Adjustment to Certain Tax Benefit from Tax Reform') stands)
+  Min viable P/E at panic:          17x  [median of calendar-year P/E lows: 2016 18.3x, 2018 19.7x, 2019 9.7x, 2020 14.8x, 2021 25.3x, 2022 17.1x, 2023 17.1x, 2024 16.4x, 2025 18.8x, 2026 20.1x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $73/share
+  Current $93 vs Updated EPP $73:  +28%  moderate distance to floor
+  Bear $25 vs Updated EPP $73:  -66%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Retail kWh sales                            -3.0       -4.7   BASE floor (vs +2 now)
+  Electric utilities net income               -2.0       -0.8   BASE floor (vs -1 now)
+  Revenue growth                              -2.0      -12.1   BASE floor (vs +10 now)
+  EPS growth                                  -6.0      -16.0   BASE floor (vs +10 now)
+  Operating margin change                   -220.0     +134.9   BASE floor (vs -355 now)
+  Disruption theme: none in scope for a utility             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $4.30 × (1+6.5%)² = $4.88
+  At 20x P/E (conservative):  $98/share
+  + Cumul. dividends (2yr):  +$6.10/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $98  (▲4 from $93)
+  Conservative total return:  +11% over 2yr  = +5%/yr
+
+  At 21.7x the multiple is already near its 20x median, so the conservative
+  case is a growth question: breakeven at 20x needs FY2028E EPS of $4.36,
+  i.e. 0.7%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $83.09  –  $100.84  (at 58th pct of range)
+  Annual dividend:      $2.96/share  (yield 3.2%)
+  Realized vol (1yr):   17% annualized
+  Beta vs broad market: 0.03
+  1-sigma range (1yr):  $78  –  $109  ($93 ± 17%)
+  2-sigma range (1yr):  $62  –  $125
+  ────────────────────────────────────────────────────────────
+  Bear $25 requires:  ~4.3σ price move  (unusual — requires fundamental break)
+  A regulated utility with a 0.0 beta: the stock is +11% off its December
+  low while retail kWh sales went from +1.1% (Q3 2025) to +1.7% (Q4 2025).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        1.82  13.8x  $     25    15.5%      4.4%   +11.1pp  EPS -34.9%/yr (worst year FY16-FY25 ex-FY17, capped at 0%); P/E to its 10th pct
+  BASE        5.06  20.1x  $    102    54.1%     15.5%   +38.6pp  EPS +8.5%/yr (Q4 revenue + margin + buyback); P/E at its 10-yr ex-FY17 median
+  BULL        5.06  21.4x  $    108    25.6%     54.1%   -28.5pp  EPS +8.5%/yr (FY16-FY25 ex-FY17 CAGR); P/E holds its 75th pct
+  XBULL       7.01  26.6x  $    186     4.8%     26.0%   -21.2pp  EPS +27.7%/yr (best 2-yr run FY16-FY25 ex-FY17); P/E at its 90th pct
+
+  Proxy EV (2yr): $96  /  Market EV: $124  /  Current: $93
+  Conservative EV (2yr, ④): $98 + $6.10 divs = $104 total value
+  Downside (→ Bear $25): 73.2%   Upside (→ Bull $108): 15.6%   Ratio B 4.68x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $93 the market needs $124 in two years —
+  above the BULL case. That is a market composite of 3.03 against a model
+  read of 2.24: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       4.68x     +28%    -0.79  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     1.43x     +28%    -0.24  MODESTLY OVERVALUED / WATCHLIST
+  Multiples one band cheaper (p5/p25/med/p75)     8.29x     +28%    -1.12  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          3.62x     +28%    -0.71  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                          5.98x     +28%    -0.85  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             4.68x     +28%    -0.49  MODESTLY OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 4.68x      +9%    -0.79  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    4.68x     +28%    -0.54  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 2026 print (early May) — the next read on retail kWh sales (+1.7% now); no sales guide in numbers to read it against
+  (2) Operating margin — -354.9bp in Q4 2025: fuel and purchased power, non-fuel O&M and depreciation against rate relief
+  (3) A FY26 earnings guide in numbers — none in any filing (guidance is given on the analyst call and in slides on the company's website only)
+  (4) Electric utilities' net income — -1.2% in Q4 2025 ($572M vs $579M): rate relief against sales, weather and costs
+  (5) Capital return at 22x — common stock issued $1,623M in 2025, none repurchased (SO101 cash flows): the dividend is the return: management's own read of the multiple
+  ✕ AVOID  |  EPP floor $73  |  ADD below ~$87  |  TRIM above $108
+════════════════════════════════════════════════════════════════════════
+

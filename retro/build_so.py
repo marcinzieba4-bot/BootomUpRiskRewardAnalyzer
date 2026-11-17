@@ -39,6 +39,13 @@ is measured over the loss's absolute value (the CAT rule); a release whose analy
 the 2019 releases' comparison without Gulf Power is shown as a 'kwh_note'; the watch list takes each 10-K's own lead-in
 ('transition_intro').
 
+SO 2022-2026: the Q4 2021 release guides FY2022 adjusted EPS at $3.50-3.60, the only fiscal-year guide in numbers in any filing; it
+excludes only one-off kinds, so FY2022E is its midpoint ('eps_guides', the F, MAR and RCL encoding), and the release's quarter estimate and
+multi-year targets add nothing. From Q3 2022 both quarter columns exclude only one-offs, so the quarterly EPS signal uses the company's
+figure, and from FY2022 the history does (the accelerated depreciation of Southern Power's wind repowering, excluded from Q4 2024, is read
+as a one-off: a judgement call). From the FY2021 10-K no sentence says the company owns coal reserves for its plants, so ENERGY_TRANSITION
+is read as out of scope ('mine_quote', 'reclaim_quote': text only); GENAI and GLP1 are out of scope too.
+
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
 is the first trading day after it (every release of the period came on a Wednesday or Thursday).
 
@@ -193,13 +200,22 @@ def build(as_of, facts, raw, spx, engine, out):
     nq = latest["q"]
     next_q = f"Q{nq % 4 + 1} {latest['fy'] + (1 if nq == 4 else 0)}"
 
-    # ── no guide in numbers: BASE takes the latest quarter's revenue growth; the last full year's EPS stands ──
-    eps_now = eps_hist[last_fy]
-    # the last full year's EPS, on its basis: GAAP, or the company's figure excluding only one-offs where a filing states it (SO 2010-2013)
-    basis = h.get("eps_bases", {}).get(str(last_fy))
-    eps_label = (f"{fy_e}: no EPS guide in numbers in any filing, FY{last_fy % 100:02d}'s ${money(eps_now)} "
-                 + (f"(the company's figure {basis})" if basis else "(GAAP)") + " stands")
-    eps_label += "".join(f" (FY{y % 100:02d} is excluded: {excluded[y]})" for y in range(last_fy + 1, cur_fy))
+    # a fiscal-year adjusted EPS guide in numbers (the Q4 2021 release's FY2022 range, the only one any filing gives: SO 2022-2026): the
+    # latest one for the current year, its midpoint (the F, MAR and RCL encoding); it excludes only one-off kinds, so it is the company's
+    # figure (the ACN rule)
+    ge = ([g for g in facts.get("eps_guides", []) if g["published"] <= as_of and g["fy"] == cur_fy] or [None])[-1]
+    if ge:
+        eps_now = round(sum(ge["eps"]) / 2, 3)
+        eps_fig = f"${ge['eps'][0]:.2f}" if ge["eps"][0] == ge["eps"][1] else f"${ge['eps'][0]:.2f}-{ge['eps'][1]:.2f}"
+        eps_label = f"{fy_e} EPS, guide midpoint: adjusted EPS {eps_fig} ({ge['doc']}, {ge['published']}; it excludes only one-offs)"
+    else:
+        # ── no guide in numbers: BASE takes the latest quarter's revenue growth; the last full year's EPS stands ──
+        eps_now = eps_hist[last_fy]
+        # the last full year's EPS, on its basis: GAAP, or the company's figure excluding only one-offs where a filing states it (SO 2010-2013)
+        basis = h.get("eps_bases", {}).get(str(last_fy))
+        eps_label = (f"{fy_e}: no EPS guide in numbers in any filing, FY{last_fy % 100:02d}'s ${money(eps_now)} "
+                     + (f"(the company's figure {basis})" if basis else "(GAAP)") + " stands")
+        eps_label += "".join(f" (FY{y % 100:02d} is excluded: {excluded[y]})" for y in range(last_fy + 1, cur_fy))
     fwd = [latest["sales_pct"]] * 2
     fwd_label, fwd_short, fwd_period = (f"no {next_q} revenue guide, {latest['quarter']} revenue as reported",
                                         f"{latest['quarter'][:2]} revenue", latest["quarter"])
@@ -229,6 +245,9 @@ def build(as_of, facts, raw, spx, engine, out):
                     + ": website posts are not filings, so they add nothing; no transcript is filed")
     guide_text = (f"{fy_now}: no EPS, revenue or margin guide in numbers in any filing ({call_txt}; BASE takes {latest['quarter']} "
                   "revenue growth)")
+    if ge:
+        guide_text = (f"{fy_now}: adjusted EPS {eps_fig} ({ge['doc']}, {ge['published']}: '{ge['quote']}'; {ge['note']}); no revenue or "
+                      f"margin guide in numbers ({call_txt}; BASE takes {latest['quarter']} revenue growth)")
     margin_guided = False
     fy_margin_base = h["prev_fy_margin"]
 
@@ -281,7 +300,7 @@ def build(as_of, facts, raw, spx, engine, out):
     # company-acknowledged, no market read). No factor pair is added, so only text changes; re-filing needs dated evidence of market
     # pricing for Southern Company (retro/README.md, "SO 2014-2017"). Dates before the live date keep the text above
     et = retro_tool.load_taxonomy()["themes"]["ENERGY_TRANSITION"]
-    if et["live_from"] <= as_of:
+    if et["live_from"] <= as_of and "mine_quote" not in h:
         assert h.get("transition_quote") and h.get("reserves_quote"), (as_of, "the vintage needs its own 10-K words for the watch list")
         val_word = ("a premium" if pe_now_pctl >= 70 else "a discount to its own history" if pe_now_pctl <= 30 else "near its own median")
         stage = "transition"
@@ -297,11 +316,26 @@ def build(as_of, facts, raw, spx, engine, out):
         why = h["why"] + ("; ENERGY_TRANSITION is live (from " + et["live_from"] + "): the company owns coal and lignite reserves and its "
                           "CO2 risk factor puts the theme on the watch list, company-acknowledged, with no dated evidence that the market "
                           "prices it for Southern Company")
+    elif et["live_from"] <= as_of:
+        # from the FY2021 10-K no sentence says the company owns coal reserves for its plants (the Plant Gorgas sentence is gone), and
+        # the one mine it names served the abandoned Kemper IGCC and has been reclaimed: no reserves remain for decarbonisation to
+        # strand, so ENERGY_TRANSITION is out of scope and the watch list empties; text only (retro/README.md, "SO 2022-2026")
+        assert h.get("transition_quote") and h.get("mine_quote") and h.get("reclaim_quote") and not h.get("reserves_quote"), as_of
+        sig_name = "Disruption theme: none in scope for a utility"
+        trigger = "No live disruption theme is in scope for an electric utility"
+        theme_summary = "ENERGY_TRANSITION is live but out of scope: the 10-K names no coal reserves for the company's plants"
+        why = h["why"] + (f"; ENERGY_TRANSITION is live (from {et['live_from']}) but out of scope: Southern Company's own "
+                          f"FY20{h['fy_label'][2:]} 10-K no longer says it owns coal reserves for its plants, and the one mine it names "
+                          f"('{h['mine_quote']}') served the abandoned Kemper IGCC ('{h['reclaim_quote']}'), so it holds no reserves for "
+                          "decarbonisation to strand; no other live theme's scope names what an electric utility sells, so the watch list "
+                          f"is empty and its risk factor '{h['transition_quote']}' stays here (the PEP obesity rule)")
     kind, pit_risk = "DURABLE", 2
     cat3 = f"(3) A {fy_now} earnings guide in numbers — none in any filing (guidance is given on the analyst call only)"
     if slides:
         cat3 = (f"(3) A {fy_now} earnings guide in numbers — none in any filing (guidance is given on the analyst call and in slides on "
                 "the company's website only)")
+    if ge:
+        cat3 = f"(3) The {fy_now} adjusted EPS guide — {eps_fig} ({ge['doc']}): the EPS anchor"
     cat4 = (f"(4) Electric utilities' net income — {latest['seg_pct']:+.1f}% in {latest['quarter']} (${latest['raw']['seg_m']:,.0f}M vs "
             f"${latest['raw']['seg_prior_m']:,.0f}M): rate relief against sales, weather and costs")
 
@@ -316,7 +350,7 @@ def build(as_of, facts, raw, spx, engine, out):
 
     company, exchange = h["company"], h["exchange"]
     ids = (list(h["sources"]) + [p["source"] for p in prints] + [public[i - 1]["source"]] + ([dividend_src] if dividend_src else [])
-           + [x["source"] for x in facts.get("distributions", []) if x["effective"] <= as_of])
+           + [x["source"] for x in facts.get("distributions", []) if x["effective"] <= as_of] + ([ge["source"]] if ge else []))
     sources = [dict(id=i, **facts["sources"][i]) for i in dict.fromkeys(ids)]
     sources.append({"id": "W0", "published": as_of, "title": "Yahoo Finance daily prices, SO and S&P 500, truncated at AS_OF",
                     "url": "https://finance.yahoo.com/quote/SO/history",

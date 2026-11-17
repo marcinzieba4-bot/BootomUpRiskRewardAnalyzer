@@ -1,0 +1,305 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "SO",
+ "company": "The Southern Company",
+ "as_of": "2025-11-21",
+ "price_date": "2025-11-21",
+ "price": 89.27,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); electric utility signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "The Southern Company: 'The traditional electric operating companies – Alabama Power, Georgia Power, and Mississippi Power – are each operating public utility companies providing electric service to retail customers in three Southeastern states in addition to wholesale customers in the Southeast. Southern Company Gas is an energy services holding company whose primary business is the distribution of natural gas in four states – Illinois, Georgia, Virginia, and Tennessee – through the natural gas distribution utilities.'; among its risk factors, 'Southern Company and its subsidiaries are subject to substantial federal, state, and local governmental regulation, including with respect to rates.', 'The operating results of the Registrants are affected by weather conditions and may fluctuate on a seasonal basis.' and 'The Southern Company system's costs of compliance with environmental laws and satisfying related AROs are significant.' (its own FY2024 10-K); ENERGY_TRANSITION is live (from 2015-12-12) but out of scope: Southern Company's own FY2024 10-K no longer says it owns coal reserves for its plants, and the one mine it names ('Mississippi Power owns a lignite mine that was intended to provide fuel for the Kemper IGCC.') served the abandoned Kemper IGCC ('As a result of the abandonment of the Kemper IGCC, final mine reclamation began in 2018 and was substantially completed in 2020, with monitoring expected to continue through 2028.'), so it holds no reserves for decarbonisation to strand; no other live theme's scope names what an electric utility sells, so the watch list is empty and its risk factor 'The Southern Company system may be exposed to regulatory and financial risks related to the impact of GHG legislation, regulation, and emission reduction goals.' stays here (the PEP obesity rule)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "The Southern Company: 'The traditional electric operating companies – Alabama Power, Georgia Power, and Mississippi Power – are each operating public utility companies providing electric service to retail customers in three Southeastern states in addition to wholesale customers in the Southeast. Southern Company Gas is an energy services holding company whose primary business is the distribution of natural gas in four states – Illinois, Georgia, Virginia, and Tennessee – through the natural gas distribution utilities.'; among its risk factors, 'Southern Company and its subsidiaries are subject to substantial federal, state, and local governmental regulation, including with respect to rates.', 'The operating results of the Registrants are affected by weather conditions and may fluctuate on a seasonal basis.' and 'The Southern Company system's costs of compliance with environmental laws and satisfying related AROs are significant.' (its own FY2024 10-K); ENERGY_TRANSITION is live (from 2015-12-12) but out of scope: Southern Company's own FY2024 10-K no longer says it owns coal reserves for its plants, and the one mine it names ('Mississippi Power owns a lignite mine that was intended to provide fuel for the Kemper IGCC.') served the abandoned Kemper IGCC ('As a result of the abandonment of the Kemper IGCC, final mine reclamation began in 2018 and was substantially completed in 2020, with monitoring expected to continue through 2028.'), so it holds no reserves for decarbonisation to strand; no other live theme's scope names what an electric utility sells, so the watch list is empty and its risk factor 'The Southern Company system may be exposed to regulatory and financial risks related to the impact of GHG legislation, regulation, and emission reduction goals.' stays here (the PEP obesity rule). durable franchise (obsolescence risk 2/5); price rich; Ratio B 7.48x; +30% to EPP floor; model-vs-market gap -0.22; conservative 2yr +4%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": 7.48,
+  "ratio_b_fmt": "7.48x",
+  "epp": 68.85,
+  "epp_gap_pct": 29.7,
+  "epp_adj": 0.0,
+  "proxy_composite": 2.85,
+  "sca": 0.042,
+  "adj_composite": 2.892,
+  "market_composite": 3.11,
+  "adj_gap": -0.22,
+  "valuation": "MODESTLY OVERVALUED",
+  "cons_return_2yr": 3.9,
+  "scenarios": {
+   "BEAR": {
+    "eps": 1.72,
+    "pe": 13.8,
+    "price": 24,
+    "desc": "EPS -34.9%/yr (worst year FY15-FY24 ex-FY17, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 4.5,
+    "pe": 20.0,
+    "price": 90,
+    "desc": "EPS +5.4%/yr (Q3 revenue + margin + buyback); P/E at its 10-yr ex-FY17 median"
+   },
+   "BULL": {
+    "eps": 4.5,
+    "pe": 21.8,
+    "price": 98,
+    "desc": "EPS +5.4%/yr (FY15-FY24 ex-FY17 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 6.6,
+    "pe": 26.6,
+    "price": 176,
+    "desc": "EPS +27.7%/yr (best 2-yr run FY15-FY24 ex-FY17); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 7.48,
+   "epp_gap_pct": 29.7,
+   "adj_gap": -0.22,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 3.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 1.86,
+   "epp_gap_pct": 29.7,
+   "adj_gap": 0.24,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 3.9,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 93.52,
+   "epp_gap_pct": 29.7,
+   "adj_gap": -0.53,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 3.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 5.56,
+   "epp_gap_pct": 29.7,
+   "adj_gap": -0.16,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 3.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 11.57,
+   "epp_gap_pct": 29.7,
+   "adj_gap": -0.28,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 3.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 7.48,
+   "epp_gap_pct": 29.7,
+   "adj_gap": 0.08,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 3.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 7.48,
+   "epp_gap_pct": 10.2,
+   "adj_gap": -0.22,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 3.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 7.48,
+   "epp_gap_pct": 29.7,
+   "adj_gap": -0.02,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 3.9,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "FAIR",
+  "RICH"
+ ],
+ "summary": "SO (retrospective, 2025-11-21) ✕ AVOID — Ratio B 7.48x (73.1% downside to Bear $24 / +9.8% upside to Bull $98) | Adj composite 2.89 vs market 3.11: gap -0.22 [MODESTLY OVERVALUED] | +30% above the EPP floor $69 (17x FY25E $4.05) | Conservative 2-yr case: +3.9% total (+2.0%/yr) | At 22.0x FY25E the 15% hurdle price $118 sits above the BULL case; retail kWh sales +1.1% in Q3 2025, forward revenues +7.5% (no Q4 2025 revenue guide, Q3 2025 revenue as reported); ENERGY_TRANSITION is live but out of scope: the 10-K names no coal reserves for the company's plants.",
+ "sources": [
+  {
+   "id": "SO65",
+   "published": "2017-02-22",
+   "filed": "2017-02-22 08:54 ET (before the open)",
+   "title": "Southern Company Q4 2016 results (8-K, Exhibits 99.01-99.07)",
+   "url": "https://www.sec.gov/Archives/edgar/data/92122/000009212217000009/ex9901-pressreleaseq42016.htm",
+   "supports": "Q4 2016 results: financial highlights, EPS, consolidated earnings, kilowatt-hour sales"
+  },
+  {
+   "id": "SO73",
+   "published": "2018-02-21",
+   "filed": "2018-02-20 21:22 ET (after the close)",
+   "title": "Southern Company FY2017 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/92122/000009212218000012/so_10-kx12312017.htm",
+   "supports": "FY2017 annual report (combined filing with the traditional electric operating companies, Southern Power and Southern Company Gas)"
+  },
+  {
+   "id": "SO75",
+   "published": "2020-02-20",
+   "filed": "2020-02-19 17:55 ET (after the close)",
+   "title": "Southern Company FY2019 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/92122/000009212220000017/so10-k12312019.htm",
+   "supports": "FY2019 annual report (combined filing with the traditional electric operating companies, Southern Power and Southern Company Gas)"
+  },
+  {
+   "id": "SO76",
+   "published": "2021-02-18",
+   "filed": "2021-02-17 17:48 ET (after the close)",
+   "title": "Southern Company FY2020 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/92122/000009212221000006/so-20201231.htm",
+   "supports": "FY2020 annual report (combined filing with the traditional electric operating companies, Southern Power and Southern Company Gas)"
+  },
+  {
+   "id": "SO77",
+   "published": "2018-02-21",
+   "filed": "2018-02-21 08:13 ET (before the open)",
+   "title": "Southern Company Q4 2017 results (8-K, Exhibits 99.01-99.07)",
+   "url": "https://www.sec.gov/Archives/edgar/data/92122/000009212218000014/ex9901-pressreleaseq42017.htm",
+   "supports": "Q4 2017 results: financial highlights, EPS, consolidated earnings, kilowatt-hour sales"
+  },
+  {
+   "id": "SO97",
+   "published": "2022-02-17",
+   "filed": "2022-02-16 17:44 ET (after the close)",
+   "title": "Southern Company FY2021 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/92122/000009212222000003/so-20211231.htm",
+   "supports": "FY2021 annual report (combined filing with the traditional electric operating companies, Southern Power and Southern Company Gas)"
+  },
+  {
+   "id": "SO98",
+   "published": "2023-02-16",
+   "filed": "2023-02-15 17:59 ET (after the close)",
+   "title": "Southern Company FY2022 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/92122/000009212223000012/so-20221231.htm",
+   "supports": "FY2022 annual report (combined filing with the traditional electric operating companies, Southern Power and Southern Company Gas)"
+  },
+  {
+   "id": "SO99",
+   "published": "2024-02-15",
+   "filed": "2024-02-14 17:44 ET (after the close)",
+   "title": "Southern Company FY2023 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/92122/000009212224000009/so-20231231.htm",
+   "supports": "FY2023 annual report (combined filing with the traditional electric operating companies, Southern Power and Southern Company Gas)"
+  },
+  {
+   "id": "SO100",
+   "published": "2025-02-20",
+   "filed": "2025-02-19 17:55 ET (after the close)",
+   "title": "Southern Company FY2024 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/92122/000009212225000018/so-20241231.htm",
+   "supports": "FY2024 annual report (combined filing with the traditional electric operating companies, Southern Power and Southern Company Gas)"
+  },
+  {
+   "id": "SO106",
+   "published": "2023-02-16",
+   "filed": "2023-02-16 08:20 ET (before the open)",
+   "title": "Southern Company Q4 2022 results (8-K, Exhibits 99.01-99.07)",
+   "url": "https://www.sec.gov/Archives/edgar/data/92122/000009212223000014/ex9901-pressreleaseq42022.htm",
+   "supports": "Q4 2022 results: financial highlights, EPS, consolidated earnings, kilowatt-hour sales"
+  },
+  {
+   "id": "SO110",
+   "published": "2024-02-15",
+   "filed": "2024-02-15 08:16 ET (before the open)",
+   "title": "Southern Company Q4 2023 results (8-K, Exhibits 99.01-99.07)",
+   "url": "https://www.sec.gov/Archives/edgar/data/92122/000009212224000011/ex9901-pressreleaseq42023.htm",
+   "supports": "Q4 2023 results: financial highlights, EPS, consolidated earnings, kilowatt-hour sales"
+  },
+  {
+   "id": "SO114",
+   "published": "2025-02-20",
+   "filed": "2025-02-20 08:13 ET (before the open)",
+   "title": "Southern Company Q4 2024 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/92122/000009212225000020/ex99-pressreleaseq42024.htm",
+   "supports": "Q4 2024 results: financial highlights, EPS, consolidated earnings, kilowatt-hour sales"
+  },
+  {
+   "id": "SO115",
+   "published": "2025-05-01",
+   "filed": "2025-05-01 08:11 ET (before the open)",
+   "title": "Southern Company Q1 2025 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/92122/000009212225000044/ex99-pressreleaseq12025.htm",
+   "supports": "Q1 2025 results: financial highlights, EPS, consolidated earnings, kilowatt-hour sales"
+  },
+  {
+   "id": "SO116",
+   "published": "2025-07-31",
+   "filed": "2025-07-31 08:12 ET (before the open)",
+   "title": "Southern Company Q2 2025 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/92122/000009212225000078/ex99-pressreleaseq22025.htm",
+   "supports": "Q2 2025 results: financial highlights, EPS, consolidated earnings, kilowatt-hour sales"
+  },
+  {
+   "id": "SO117",
+   "published": "2025-10-30",
+   "filed": "2025-10-30 08:12 ET (before the open)",
+   "title": "Southern Company Q3 2025 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/92122/000009212225000086/ex99-pressreleaseq32025.htm",
+   "supports": "Q3 2025 results: financial highlights, EPS, consolidated earnings, kilowatt-hour sales"
+  },
+  {
+   "id": "SO125",
+   "published": "2025-07-31",
+   "filed": "2025-07-30 17:41 ET (after the close)",
+   "title": "Southern Company Q2 2025 Form 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/92122/000009212225000076/so-20250630.htm",
+   "supports": "Q2 2025 quarterly report: the common dividend rate (its statements)"
+  },
+  {
+   "id": "SO4",
+   "published": "2002-03-25",
+   "filed": "2002-03-25 (time not recorded by EDGAR)",
+   "title": "Southern Company FY2001 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/92122/000009212202000045/form10k.txt",
+   "supports": "FY2001 annual report (combined filing with the traditional operating companies and Southern Power)"
+  },
+  {
+   "id": "W0",
+   "published": "2025-11-21",
+   "title": "Yahoo Finance daily prices, SO and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/SO/history",
+   "supports": "close $89.27 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr ex-FY17 P/E distribution"
+  }
+ ],
+ "warnings": [
+  "calendar year(s) 2028 after 2025 outside FY labels — make sure they are forecasts"
+ ],
+ "generated": "2026-11-17"
+}

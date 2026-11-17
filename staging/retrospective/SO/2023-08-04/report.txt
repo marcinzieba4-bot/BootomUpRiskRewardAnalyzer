@@ -1,0 +1,154 @@
+
+════════════════════════════════════════════════════════════════════════
+  SO  ·  The Southern Company  ·  $67.84  ·  RETROSPECTIVE as of 2023-08-04
+  Signal: ✕ AVOID   Ratio B: 4.20x   Adj gap: -1.84  [OVERVALUED]
+  Point-in-time: 17 sources, latest published 2023-08-04; latest print Q2 2023 (2023-08-03)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2023E revenues, USD bn  →  FY2025E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Revenue line                 FY2023E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Retail electric           $    14.5  $  14.5  $  16.4      +0.0      +1.9
+    +22.5% revenues in FY22
+  Wholesale electric        $     2.9  $   2.9  $   3.3      +0.0      +0.4
+    +48.3% revenues in FY22
+  Other electric            $     0.6  $   0.6  $   0.7      +0.0      +0.1
+    +4.0% revenues in FY22
+  Natural gas               $     4.8  $   4.8  $   5.4      +0.0      +0.6
+    +36.1% revenues in FY22
+  Other revenues            $     0.6  $   0.6  $   0.7      +0.0      +0.1
+    +3.4% revenues in FY22
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    23.4  $  23.4  $  26.5      +0.0      +3.1
+  FY2023E = FY22 $29.28B × (1 − 20.2%: no Q3 2023 revenue guide, Q2 2023 revenue as reported, applied to the year (no FY23 revenue guide)); split pro rata to FY22 operating revenues by line (SO98 income statement; the 10-K has no selected data)
+  Q2 2023 (2023-08-03): total revenues $5.75B -20.2%; retail kWh -5.7% (weather-adjusted -0.7%); electric utilities' net income -19.9%;
+  operating margin 22.44% (-52.4bp); EPS $0.79 vs $1.07 (excluding items)
+  Retail kWh -5.7% as reported (37,072 to 34,969 million kWh, weather-adjusted -0.7%); electric utilities' net income -19.9% ($1,134M to $908M, the traditional operating companies and Southern Power; the release's Total also includes Southern Company Gas, so the signal sums the traditional electric operating companies and Southern Power, the 10-K's electric utilities, each as reported); revenue -20.2% as reported ($7,206M to $5,748M); operating income $1,655M to $1,290M (operating income includes, as the release publishes it, Estimated Loss on Plant Vogtle Units 3 and 4 none ($52M a year earlier); no operating income excluding them is published, so the margin is as reported); EPS: basic EPS excluding items $0.79 vs $1.07 (excludes only Estimated Loss on Plants Under Construction, Acquisition and Disposition Impacts and Estimated Loss on Qualifying Infrastructure Plant; GAAP $0.77 vs $1.04)
+  FY23: no EPS, revenue or margin guide in numbers in any filing (the Q2 2023 release says its earnings slides with supplemental financial information are on the company's website (the Q4 2022 release named among them 'including earnings guidance'): website posts are not filings, so they add nothing; no transcript is filed; BASE takes Q2 2023 revenue growth)
+
+  FY2023E EPS check:  $23.4B × 14.4% pre-tax × (1−18.8%) ÷ 1.092B  =  $2.51  (FY2023E: no EPS guide in numbers in any filing, FY22's $3.60 (the company's figure excluding 'Estimated Loss on Plants Under Construction', 'Acquisition and Disposition Impacts' and 'Impairments') stands)
+  FY2025E BEAR check: $23.4B × 14.4% ÷ 1.142B  =  $2.40  (scenario $1.53)
+  FY2025E BULL check: $26.5B × 14.8% ÷ 1.142B  =  $2.79  (scenario $3.83)
+  Every 1pp of pre-tax margin ≈ $0.17 EPS ≈ $3/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Retail kWh sales                    -8.0%   ≥-3.0%    ≥2.0%    ≥6.0%     -5.7%  ⚠ BEAR  █░░░
+  Electric utilities net income       -7.0%   ≥-2.0%    ≥3.0%   ≥13.0%    -19.9%  ⚠ BEAR  █░░░
+  Revenue growth                     -10.0%   ≥-2.0%    ≥6.0%   ≥16.0%    -20.2%  ⚠ BEAR  █░░░
+  EPS growth                         -15.0%   ≥-6.0%    ≥3.0%   ≥15.0%    -26.2%  ⚠ BEAR  █░░░
+  Operating margin change           -410.0bp  ≥-220.0bp  ≥-30.0bp  ≥150.0bp   -52.4bp  ◦ BASE  ██░░
+  Disruption theme: none in scope for a utility   +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.30 / 4.00
+  Market composite:   3.17 / 4.00  (back-solved from $68 + 15% hurdle)
+  SCA adjustment:    +0.03  ·  EPP-distance adj +0.00  →  Adj composite 1.33  →  Gap -1.84  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY22 revenue +26.7%, retail kWh +3.2%, electric utilities' net income +63.4%; Q2 2023 operating margin 22.4% (-52.4bp)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 18.8x FY23E vs a 18.9x 10-yr ex-FY17 median (49th percentile of its own range)  (+0.02 × 25%  =  +0.005)
+    -  Growth vs own history: no Q3 2023 revenue guide, Q2 2023 revenue as reported -20.2% vs a 8.1% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  FY22 year-end cash $2.037B, FY22 free cash flow $-1.62B (net cash provided from operating activities $6,302M less property additions $7,923M (SO98)), dividend $2.80 a year, common stock issued $1,808M in 2022, none repurchased (SO98 cash flows): the dividend is the return  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Retail kWh sales                     -5.7%     -8.0%   -2.3%  Recession and mild weather cut retail…
+  Electric utilities net income       -19.9%     -7.0%  +12.9%  Rate relief lags costs and lost sales
+  Revenue growth                      -20.2%    -10.0%  +10.2%  Sales and fuel recovery fall together
+  EPS growth                          -26.2%    -15.0%  +11.2%  Costs, interest and dilution outrun r…
+  Operating margin change            -52.4bp  -410.0bp  -357.6bp  Fuel and O&M costs outrun recovery
+  Disruption theme: none in scope for a utility    +2.0/4    +1.0/4  -1.0/4  No live disruption theme is in scope …
+
+  Bear composite:  1.00  →  Bear scenario price: ~$30  (model)  /  $21 (defined)
+  Bear probability (proxy model):  68.8%
+
+  KEY TRIGGER: retail kWh sales went from -5.0% (Q1 2023) to -5.7% (Q2 2023);
+  the bear case needs a demand and cost squeeze that the operating margin (-52.4bp now)
+  and the electric utilities' earnings (-19.9% now) no longer absorb.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $3.60  (FY2023E: no EPS guide in numbers in any filing, FY22's $3.60 (the company's figure excluding 'Estimated Loss on Plants Under Construction', 'Acquisition and Disposition Impacts' and 'Impairments') stands)
+  Min viable P/E at panic:          15x  [median of calendar-year P/E lows: 2013 14.8x, 2014 14.4x, 2015 14.4x, 2016 18.2x, 2018 19.7x, 2019 9.7x, 2020 14.8x, 2021 25.3x, 2022 17.1x, 2023 17.3x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $54/share
+  Current $68 vs Updated EPP $54:  +26%  moderate distance to floor
+  Bear $21 vs Updated EPP $54:  -61%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Retail kWh sales                            -3.0       +2.7   BASE floor (vs -6 now)
+  Electric utilities net income               -2.0      +17.9   BASE floor (vs -20 now)
+  Revenue growth                              -2.0      +18.2   BASE floor (vs -20 now)
+  EPS growth                                  -6.0      +20.2   BASE floor (vs -26 now)
+  Operating margin change                   -220.0     -167.6   BASE floor (vs -52 now)
+  Disruption theme: none in scope for a utility             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $3.60 × (1+0.0%)² = $3.60
+  At 18x P/E (conservative):  $65/share
+  + Cumul. dividends (2yr):  +$5.77/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $65  (▼3 from $68)
+  Conservative total return:  +4% over 2yr  = +2%/yr
+
+  At 18.8x the multiple is already near its 18x median, so the conservative
+  case is a growth question: breakeven at 18x needs FY2025E EPS of $3.45,
+  i.e. -2.1%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $60.71  –  $80.57  (at 36th pct of range)
+  Annual dividend:      $2.80/share  (yield 4.1%)
+  Realized vol (1yr):   22% annualized
+  Beta vs broad market: 0.62
+  1-sigma range (1yr):  $53  –  $82  ($68 ± 22%)
+  2-sigma range (1yr):  $39  –  $97
+  ────────────────────────────────────────────────────────────
+  Bear $21 requires:  ~3.2σ price move  (unusual — requires fundamental break)
+  A regulated utility with a 0.6 beta: the stock is +10% off its October
+  low while retail kWh sales went from -5.0% (Q1 2023) to -5.7% (Q2 2023).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        1.53  13.8x  $     21    68.8%      3.8%   +64.9pp  EPS -34.9%/yr (worst year FY13-FY22 ex-FY17, capped at 0%); P/E to its 10th pct
+  BASE        2.17  18.9x  $     41    23.3%     13.4%    +9.9pp  EPS +-22.4%/yr (Q2 revenue + margin + buyback); P/E at its 10-yr ex-FY17 median
+  BULL        3.83  20.6x  $     79     6.7%     46.8%   -40.2pp  EPS +3.2%/yr (FY13-FY22 ex-FY17 CAGR); P/E holds its 75th pct
+  XBULL       4.86  26.6x  $    129     1.3%     35.9%   -34.6pp  EPS +16.2%/yr (best 2-yr run FY13-FY22 ex-FY17); P/E at its 90th pct
+
+  Proxy EV (2yr): $31  /  Market EV: $90  /  Current: $68
+  Conservative EV (2yr, ④): $65 + $5.77 divs = $71 total value
+  Downside (→ Bear $21): 69.0%   Upside (→ Bull $79): 16.5%   Ratio B 4.20x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $68 the market needs $90 in two years —
+  above the BULL case. That is a market composite of 3.17 against a model
+  read of 1.33: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       4.20x     +26%    -1.84  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     1.28x     +26%    -1.34  OVERVALUED / WATCHLIST
+  Multiples one band cheaper (p5/p25/med/p75)    11.74x     +26%    -2.32  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          3.48x     +26%    -1.79  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                          5.22x     +26%    -1.90  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             4.20x     +26%    -1.54  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 4.20x      +5%    -1.84  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    4.20x     +26%    -1.66  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 2023 print (late October) — the next read on retail kWh sales (-5.7% now); no sales guide in numbers to read it against
+  (2) Operating margin — -52.4bp in Q2 2023: fuel and purchased power, non-fuel O&M and depreciation against rate relief
+  (3) A FY23 earnings guide in numbers — none in any filing (guidance is given on the analyst call and in slides on the company's website only)
+  (4) Electric utilities' net income — -19.9% in Q2 2023 ($908M vs $1,134M): rate relief against sales, weather and costs
+  (5) Capital return at 19x — common stock issued $1,808M in 2022, none repurchased (SO98 cash flows): the dividend is the return: management's own read of the multiple
+  ✕ AVOID  |  EPP floor $54  |  ADD below ~$35  |  TRIM above $79
+════════════════════════════════════════════════════════════════════════
+

@@ -81,7 +81,8 @@ print whose retail kWh, electric utilities' net income, revenue, operating margi
 absurd, with absurd full-year actuals (on a planted EPS basis) for the year after the latest vintage before CUTOFF, and a later vintage with
 planted notes and every year on a planted EPS basis (SO 2010-2013), the print with a planted revenue note and website-slides words and the
 vintage with planted energy-transition quotes (SO 2014-2017), a planted kWh note and a later vintage's excluded-year notes and watch-list
-lead-in (SO 2018-2021); CTVA: a print whose organic growth, price, margins, EPS, notes, raw figures and previous-quarter value are absurd,
+lead-in (SO 2018-2021), and a later adjusted EPS guide for every year guided before CUTOFF, the cutoff's year and the next, and a
+vintage with planted out-of-scope words (SO 2022-2026); CTVA: a print whose organic growth, price, margins, EPS, notes, raw figures and previous-quarter value are absurd,
 with absurd full-year actuals for the year after the latest vintage before CUTOFF, a later vintage with planted texts, figures and an
 excluded year, and a later net sales guide, a later guide without one and a later display for every year guided before CUTOFF; KMI: a
 print whose segment EBDA, revenue, margins, EPS, notes and raw figures are absurd, with absurd full-year actuals for the year after the
@@ -688,7 +689,12 @@ try:
                  groups=[["PLANTED", 1, -99]], groups_basis="PLANTED", prev_fy_margin=-50.0, dividend_annual=9.99,
                  eps_bases={y: "PLANTED" for y in v["eps_normalized"]},   # every year on a planted basis (SO 2010-2013)
                  transition_quote="PLANTED", reserves_quote="PLANTED",      # the energy-transition watch-list words (SO 2014-2017)
-                 transition_intro="PLANTED", eps_excluded={y: "PLANTED" for y in v.get("eps_excluded", {})})   # (SO 2018-2021)
+                 transition_intro="PLANTED", eps_excluded={y: "PLANTED" for y in v.get("eps_excluded", {})},   # (SO 2018-2021)
+                 mine_quote="PLANTED", reclaim_quote="PLANTED")      # the out-of-scope reading's words (SO 2022-2026)
+        # (SO 2022-2026) a later adjusted EPS guide for every year guided before CUTOFF and for the cutoff's year and the next
+        for y in sorted({g["fy"] for g in f.get("eps_guides", []) if g["published"] < cutoff} | {int(cutoff[:4]), int(cutoff[:4]) + 1}):
+            f.setdefault("eps_guides", []).append({"fy": y, "published": later, "source": last["source"], "doc": "PLANTED",
+                                                   "eps": [0.01, 0.02], "quote": "PLANTED", "note": "PLANTED"})
     if TICKER == "LMT":    # absurd full-year actuals on the planted print, for the year after the latest vintage before CUTOFF, and a later
                            # vintage whose every text and figure the models quote is planted (LMT 2008-2009)
         v0 = max((x for x in f["history_vintages"] if x["published"] < cutoff), key=lambda x: x["published"])
