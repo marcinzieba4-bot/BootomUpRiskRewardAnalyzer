@@ -117,11 +117,13 @@ The script also prints the 2008-2016 periods.
 1. **Rates beat the ISM as a growth/value switch.** The yield-trend and curve rules never pointed the wrong way. The ISM
    rules did, in two of the four periods, and added nothing on top of rates.
 2. **The rule that held up best:** hold value when the 10-year yield is above its level 6 months ago, growth when below.
-   It added about 1.5-4 points a year over a fixed 50/50 split from 2008, with lower drawdowns on the baskets.
+   From 2008 it added about 1.3-5 points a year over a fixed 50/50 split (ETFs 2008-2016 +1.3, baskets 2017-2026 +4.5,
+   ETFs 2017-2026 +5.0), with lower drawdowns on the baskets.
 3. **But it is a rates-regime bet:** most of the gain came in 2009, 2020, 2022 and 2024. It did nothing in the 2000-2007
    value run, and the signal-to-return link is statistically strong only since 2017.
-4. **A 50/50 growth/value split is the baseline to beat,** and it is already decent: it beat always-growth on Sharpe in
-   every period tested here.
+4. **A 50/50 growth/value split is the baseline to beat,** and it is already decent. It beat always-growth on Sharpe in
+   most periods tested here. The exceptions are the ETFs in 2008-2016 (0.47 against 0.51) and 2017-2026 (0.91 against
+   0.93).
 
 ## Now (2026-11-17)
 
