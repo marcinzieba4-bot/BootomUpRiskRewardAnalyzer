@@ -100,7 +100,7 @@ print whose net sales, margins, opex and inventory gaps, quarter EPS, cash, debt
 full-year actuals for the year after the latest vintage before CUTOFF, a later Q4 print whose full-year actuals exclude its own
 year, and a later vintage excluding a year with planted texts, figures, exchange and window start (the guide, dividend and listing
 every fact sheet with those lists gets, too), and from MU 2014-2017 a planted call sentence on the print and a later guide for every
-quarter guided before CUTOFF, in numbers and in words; every
+quarter guided before CUTOFF, in numbers and in words, and from MU 2022-2026 the later vintage of the other kind; every
 fact sheet with a 'splits' list, SHW's from 2021-2023: a later split on the price data's next split date; a CLOUD event
 from a later 10-K, as for every live theme), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
@@ -647,6 +647,8 @@ try:
                  prev_fy_sales_growth=-99.0, tax_rate=0.99, tax_note="PLANTED", fcf_b=-99.0, fcf_note="PLANTED", cash_b=99.0,
                  dividend_annual=9.99, dividend_note="PLANTED", cash_return_text="PLANTED", groups=[["PLANTED", 1, -99]],
                  groups_basis="PLANTED", exchange="PLANTED", pe_window_start="1990-01-02")
+        # (MU 2022-2026) the later vintage of the other kind (the CAT encoding; MU is CYCLICAL from the FY2025 10-K)
+        v.update(kind="DURABLE" if v.get("kind") == "CYCLICAL" else "CYCLICAL")
     if TICKER == "NVDA":   # a later vintage excluding a year, with every per-share figure on a planted share basis before every split
         v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}
         v["share_basis"] = {y: "1990-01-01" for y in v["eps_normalized"]}
