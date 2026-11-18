@@ -1,0 +1,155 @@
+
+════════════════════════════════════════════════════════════════════════
+  MU  ·  Micron Technology, Inc.  ·  $43.48  ·  RETROSPECTIVE as of 2020-03-27
+  Signal: ◐ WATCHLIST   Ratio B: 1.66x   Adj gap: -0.55  [OVERVALUED]
+  Point-in-time: 16 sources, latest published 2020-03-27; latest print Q2 FY20 (Mar 25)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2020E revenue, USD bn  →  FY2022E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2020E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  CNBU                          $ 10.20  $10.20  $12.78    +0.00    +2.58
+    -34.6% revenue in FY19
+  MBU                           $  6.55  $ 6.55  $ 8.21    +0.00    +1.66
+    -2.7% revenue in FY19
+  SBU                           $  3.92  $ 3.92  $ 4.91    +0.00    +0.99
+    -23.8% revenue in FY19
+  EBU                           $  3.21  $ 3.21  $ 4.02    +0.00    +0.81
+    -9.8% revenue in FY19
+  All Other                     $  0.07  $ 0.07  $ 0.09    +0.00    +0.02
+    +22.0% revenue in FY19
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $ 23.95  $23.95  $30.01    +0.00    +6.06
+  FY2020E = FY19 $23.406B × (1 + 2.3%: the Q3 FY20 revenue guide (Q2 FY20 results (8-K ex.99.1, Business Outlook)), YoY, applied to the year (no FY20 revenue guide)); split pro rata to FY19 segment revenue (FY2019 10-K)
+  Q2 FY20 (Mar 25): revenue $4.797B -17.8% YoY (-6.7% QoQ); inventories +18.6%; R&D + SG&A +11.6%;
+  gross margin 28.25% (-2083.6bp); operating margin 9.17% (-2436.7bp); EPS $0.36 vs $1.42
+  Revenue: revenue $4,797M vs $5,835M a year earlier, $5,144M the quarter before; inventories $5,208M (2020-02-27) vs $4,390M a year earlier (Q2 FY19 10-Q); GAAP diluted EPS $0.36 vs $1.42; diluted shares 1133.0M
+  Q3 FY20 outlook (Q2 FY20 results (8-K ex.99.1, Business Outlook)): revenue $4,600.0M-$5,200.0M ('Revenue | $4.6 billion - $5.2 billion | $4.6 billion - $5.2 billion') against Q3 FY19's $4,788.0M: -3.9% to +8.6% YoY; display only: GAAP (non-GAAP) gross margin 30% ± 1.5% (31% ± 1.5%), operating expenses $891 million ± $25 million ($825 million ± $25 million), diluted EPS $0.41 ± $0.15 ($0.55 ± $0.15); no fiscal-year revenue, EPS or margin guide
+
+  FY2020E EPS check:  $23.950B × 30.1% pre-tax × (1−9.8%) ÷ 1.133B  =  $5.74  (FY2020E: no EPS guide in numbers, FY19's $5.51 stands)
+  FY2022E BEAR check: $23.950B × 30.1% ÷ 1.154B  =  $5.63  (scenario $1.26)
+  FY2022E BULL check: $30.010B × 30.5% ÷ 1.154B  =  $7.15  (scenario $7.02)
+  Every 1pp of pre-tax margin ≈ $0.191 EPS ≈ $1.35/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Revenue growth                        -86.0%   ≥-38.0%     ≥9.0%   ≥147.0%    -17.8%  ◦ BASE  ██░░
+  Gross margin change                 -9420.0bp  ≥-4820.0bp  ≥-230.0bp  ≥3050.0bp  -2083.6bp  ◦ BASE  ██░░
+  Opex growth less revenue            +109.0pp   ≤55.0pp    ≤2.0pp  ≤-102.0pp   +29.4pp  ◦ BASE  ██░░
+  Inventory growth less revenue        +97.0pp   ≤51.0pp    ≤5.0pp  ≤-43.0pp   +36.4pp  ◦ BASE  ██░░
+  Operating margin change             -12480.0bp  ≥-6240.0bp    ≥0.0bp  ≥4400.0bp  -2436.7bp  ◦ BASE  ██░░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.00 / 4.00
+  Market composite:   2.50 / 4.00  (back-solved from $43.48 + 15% hurdle)
+  SCA adjustment:    +0.05  ·  EPP-distance adj -0.10  →  Adj composite 1.95  →  Gap -0.55  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY19 net sales -23.0%, gross margin 45.7%; Q2 gross margin 28.25% (-2084bp YoY)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 7.9x FY20E vs a 7.1x 10-yr ex-FY11 ex-FY12 ex-FY13 ex-FY16 median (62nd percentile of its own range)  (-0.20 × 25%  =  -0.050)
+    -  Growth vs own history: Q3 FY20 revenue guide (Q2 FY20 results (8-K ex.99.1, Business Outlook)) -3.9% to +8.6% vs a 3.6% 9-yr median  (-0.13 × 20%  =  -0.026)
+    +  Cash and short-term investments $7.481B, long-term debt $5,188M and current debt $237M (Q2 FY20), FY19 free cash flow $3.409B (net cash provided by operating activities $13,189M less expenditures for property, plant, and equipment $9,780M), no dividend  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Revenue growth                        -17.8%    -86.0%  -68.2%  Oversupply and falling selling prices…
+  Gross margin change                 -2083.6bp  -9420.0bp  -7336.4bp  Selling prices fall faster than cost …
+  Opex growth less revenue             +29.4pp  +109.0pp  +79.6pp  R&D and SG&A do not come down with re…
+  Inventory growth less revenue        +36.4pp   +97.0pp  +60.6pp  Inventory builds ahead of demand: wri…
+  Operating margin change             -2436.7bp  -12480.0bp  -10043.3bp  Operating leverage works in reverse
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$17.27  (model)  /  $5.04 (defined)
+  Bear probability (proxy model):  17.6%
+
+  KEY TRIGGER: revenue went from -35.0% (Q1 FY20) to -17.8% YoY (Q2 FY20), -6.7% on the quarter before;
+  the bear case needs a downturn in gross margin (-2083.6bp now)
+  and inventories (+36.4pp against revenue) giving way. A memory downturn shows up in average selling prices and inventories
+  first; the bear needs it in gross margin as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $5.51  (FY2020E: no EPS guide in numbers, FY19's $5.51 stands)
+  Min viable P/E at panic:          5x  [median of calendar-year P/E lows: 2010 3.5x, 2013 5.3x, 2014 8.1x, 2015 5.8x, 2016 3.8x, 2017 2.8x, 2018 3.4x, 2019 5.6x, 2020 6.3x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $27.55/share
+  Current $43.48 vs Updated EPP $27.55:  +58%  ⚠ far above floor — large drawdown room
+  Bear $5.04 vs Updated EPP $27.55:  -82%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Revenue growth                               -38.0      -20.2   BASE floor (vs -18 now)
+  Gross margin change                        -4820.0    -2736.4   BASE floor (vs -2084 now)
+  Opex growth less revenue                      55.0      +25.6   BASE floor (vs +29 now)
+  Inventory growth less revenue                 51.0      +14.6   BASE floor (vs +36 now)
+  Operating margin change                    -6240.0    -3803.3   BASE floor (vs -2437 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $5.51 × (1+0.0%)² = $5.51
+  At 7x P/E (conservative):  $38.57/share
+  + Cumul. dividends (2yr):  +$0.00/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $38.57  (▼4.91 from $43.48)
+  Conservative total return:  -11% over 2yr  = -6%/yr
+
+  0.0% EPS growth is what is left once the premium multiple (7.9x)
+  mean-reverts to 7x. Breakeven at 7x needs FY2022E EPS of $6.21,
+  i.e. 6.2%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $31.13  –  $61.19  (at 41th pct of range)
+  Annual dividend:      $0.00/share  (yield 0.0%)
+  Realized vol:         55% annualized (1-yr daily log returns)
+  Beta vs broad market: 1.39
+  1-sigma range (1yr):  $19.44  –  $67.52  ($43.48 ± 55%)
+  2-sigma range (1yr):  $-4.61  –  $91.57
+  ────────────────────────────────────────────────────────────
+  Bear $5.04 requires:  ~1.6σ price move  (unusual — requires fundamental break)
+  A memory maker whose selling prices follow industry supply: the stock is +34% off its June
+  low (52 weeks) while revenue went from -35.0% (Q1 FY20) to -17.8% YoY (Q2 FY20), -6.7% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        1.26    4.0x  $   5.04    17.6%      9.3%    +8.3pp  EPS -52.1%/yr (worst year FY10-FY19 ex-FY11 ex-FY12 ex-FY13 ex-FY16, capped at 0%); P/E to its 10th pct
+  BASE        5.67    7.1x  $  40.26    61.5%     32.4%   +29.1pp  EPS +1.4%/yr (Q3 FY20 guide YoY + margin + buyback); P/E at its 10-yr ex-FY11 ex-FY12 ex-FY13 ex-FY16 median
+  BULL        7.02    9.5x  $  66.69    17.6%     49.1%   -31.5pp  EPS +12.9%/yr (FY10-FY19 ex-FY11 ex-FY12 ex-FY13 ex-FY16 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL       9.84   12.2x  $ 120.05     3.3%      9.3%    -5.9pp  EPS +33.6%/yr (best 2-yr run FY10-FY19 ex-FY11 ex-FY12 ex-FY13 ex-FY16, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $41.37  /  Market EV: $57.37  /  Current: $43.48
+  Conservative EV (2yr, ④): $38.57 + $0.00 divs = $38.57 total value
+  Downside (→ Bear $5.04): 88.4%   Upside (→ Bull $66.69): 53.4%   Ratio B 1.66x  →  ◐ WATCHLIST
+
+  To earn the 15%/yr hurdle from $43.48 the market needs $57.50 in two years —
+  between the BASE and BULL cases. That is a market composite of 2.50 against a model
+  read of 1.95: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       1.66x     +58%    -0.55  OVERVALUED / WATCHLIST
+  Multiples one band richer (p25/p75/p90/max)     0.88x     +58%    -0.16  FAIRLY VALUED / ACCUMULATE
+  Multiples one band cheaper (p5/p25/med/p75)     6.10x     +58%    -1.13  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          1.52x     +58%    -0.51  OVERVALUED / WATCHLIST
+  Scenario EPS -1.5pp/yr                          1.82x     +58%    -0.61  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             1.66x     +58%    -0.25  MODESTLY OVERVALUED / WATCHLIST
+  EPP P/E +3 turns (softer floor)                 1.66x      -1%    -0.25  MODESTLY OVERVALUED / WATCHLIST
+  Hurdle 10%/yr instead of 15%                    1.66x     +58%    -0.42  MODESTLY OVERVALUED / WATCHLIST
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 FY20 print (the quarter ends in late May) — revenue against the Q3 FY20 revenue guide (Q2 FY20 results (8-K ex.99.1, Business Outlook)): -3.9% to +8.6% YoY
+  (2) Gross margin — -2083.6bp in Q2 FY20: selling prices against cost per bit, what must hold if revenue does not
+  (3) The Q3 FY20 guide — revenue $4,600.0M-$5,200.0M (-3.9% to +8.6% YoY): Micron guides one quarter at a time, in revenue
+  (4) Inventories — +18.6% against revenue -17.8% in Q2 FY20 (+36.4pp): write-downs follow if selling prices fall below cost
+  (5) Capital structure at 8x — 'Micron repurchased approximately 785,000 shares of its common stock for $44 million during the second quarter of fiscal 2020' (Q2 FY20 results (8-K ex.99.1))
+  ◐ WATCHLIST  |  EPP floor $27.55  |  ADD below ~$34.22  |  TRIM above $66.69
+════════════════════════════════════════════════════════════════════════
+

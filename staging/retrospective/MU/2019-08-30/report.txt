@@ -1,0 +1,155 @@
+
+════════════════════════════════════════════════════════════════════════
+  MU  ·  Micron Technology, Inc.  ·  $45.27  ·  RETROSPECTIVE as of 2019-08-30
+  Signal: ◉ BUY   Ratio B: 0.06x   Adj gap: -0.29  [MODESTLY OVERVALUED]
+  Point-in-time: 17 sources, latest published 2019-08-30; latest print Q3 FY19 (Jun 25)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2019E revenue, USD bn  →  FY2021E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2019E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  CNBU                          $  9.36  $ 9.36  $14.11    +0.00    +4.75
+    +76.9% revenue in FY18
+  MBU                           $  4.04  $ 4.04  $ 6.09    +0.00    +2.05
+    +48.7% revenue in FY18
+  SBU                           $  3.08  $ 3.08  $ 4.65    +0.00    +1.57
+    +11.3% revenue in FY18
+  EBU                           $  2.14  $ 2.14  $ 3.22    +0.00    +1.08
+    +29.1% revenue in FY18
+  All Other                     $  0.04  $ 0.04  $ 0.05    +0.00    +0.01
+    -9.2% revenue in FY18
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $ 18.66  $18.66  $28.12    +0.00    +9.46
+  FY2019E = FY18 $30.391B × (1 − 38.6%: the Q3 FY19 revenue growth (no Q4 FY19 guide), YoY, applied to the year (no FY19 revenue guide)); split pro rata to FY18 segment net sales (FY2018 10-K)
+  Q3 FY19 (Jun 25): revenue $4.788B -38.6% YoY (-17.9% QoQ); inventories +45.6%; R&D + SG&A -0.2%;
+  gross margin 38.18% (-2239.6bp); operating margin 21.09% (-2960.5bp); EPS $0.74 vs $3.10
+  Revenue: revenue $4,788M vs $7,797M a year earlier, $5,835M the quarter before; inventories $4,905M (2019-05-30) vs $3,369M a year earlier (Q3 FY18 10-Q); GAAP diluted EPS $0.74 vs $3.10; diluted shares 1129.0M
+  Q4 FY19: no revenue guide in numbers in any filing (the Q3 FY19 release: 'to discuss financial results and provide forward-looking guidance for its fiscal fourth quarter. The call, audio, and slides will be available online at investors.micron.com'; a call and its website are not filings, the NVDA rule); the latest quarter's revenue growth stands in (the UNP rule); no fiscal-year revenue, EPS or margin guide
+
+  FY2019E EPS check:  $18.660B × 47.1% pre-tax × (1−1.2%) ÷ 1.129B  =  $7.69  (FY2019E: no EPS guide in numbers, FY18's $11.51 stands)
+  FY2021E BEAR check: $18.660B × 47.1% ÷ 1.236B  =  $7.02  (scenario $10.88)
+  FY2021E BULL check: $28.120B × 47.5% ÷ 1.236B  =  $10.67  (scenario $18.18)
+  Every 1pp of pre-tax margin ≈ $0.163 EPS ≈ $0.83/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Revenue growth                        -86.0%   ≥-38.0%     ≥9.0%   ≥147.0%    -38.6%  ⚠ BEAR  █░░░
+  Gross margin change                 -9420.0bp  ≥-4820.0bp  ≥-230.0bp  ≥3050.0bp  -2239.6bp  ◦ BASE  ██░░
+  Opex growth less revenue            +109.0pp   ≤55.0pp    ≤2.0pp  ≤-102.0pp   +38.3pp  ◦ BASE  ██░░
+  Inventory growth less revenue        +97.0pp   ≤51.0pp    ≤5.0pp  ≤-43.0pp   +84.2pp  ⚠ BEAR  █░░░
+  Operating margin change             -12480.0bp  ≥-6240.0bp    ≥0.0bp  ≥4400.0bp  -2960.5bp  ◦ BASE  ██░░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.65 / 4.00
+  Market composite:   2.07 / 4.00  (back-solved from $45.27 + 15% hurdle)
+  SCA adjustment:    +0.12  ·  EPP-distance adj +0.00  →  Adj composite 1.77  →  Gap -0.29  [MODESTLY OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY18 net sales +49.5%, gross margin 58.9%; Q3 gross margin 38.18% (-2240bp YoY)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 3.9x FY19E vs a 5.1x 10-yr ex-FY09 ex-FY11 ex-FY12 ex-FY13 ex-FY16 median (26th percentile of its own range)  (+0.40 × 25%  =  +0.100)
+    -  Growth vs own history: Q3 FY19 revenue growth (no Q4 FY19 guide) -38.6% vs a 10.2% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  Cash and short-term investments $6.689B, long-term debt $3,563M and current debt $1,346M (Q3 FY19), FY18 free cash flow $8.521B (net cash provided by operating activities $17,400M less expenditures for property, plant, and equipment $8,879M), no dividend  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Revenue growth                        -38.6%    -86.0%  -47.4%  Oversupply and falling selling prices…
+  Gross margin change                 -2239.6bp  -9420.0bp  -7180.4bp  Selling prices fall faster than cost …
+  Opex growth less revenue             +38.3pp  +109.0pp  +70.7pp  R&D and SG&A do not come down with re…
+  Inventory growth less revenue        +84.2pp   +97.0pp  +12.8pp  Inventory builds ahead of demand: wri…
+  Operating margin change             -2960.5bp  -12480.0bp  -9519.5bp  Operating leverage works in reverse
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$43.51  (model)  /  $38.08 (defined)
+  Bear probability (proxy model):  40.7%
+
+  KEY TRIGGER: revenue went from -20.6% (Q2 FY19) to -38.6% YoY (Q3 FY19), -17.9% on the quarter before;
+  the bear case needs a downturn in gross margin (-2239.6bp now)
+  and inventories (+84.2pp against revenue) giving way. A memory downturn shows up in average selling prices and inventories
+  first; the bear needs it in gross margin as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $11.51  (FY2019E: no EPS guide in numbers, FY18's $11.51 stands)
+  Min viable P/E at panic:          3x  [median of calendar-year P/E lows: 2009 3.6x, 2010 3.5x, 2013 5.3x, 2014 8.1x, 2015 5.8x, 2016 3.8x, 2017 2.8x, 2018 2.5x, 2019 2.7x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $34.53/share
+  Current $45.27 vs Updated EPP $34.53:  +31%  moderate distance to floor
+  Bear $38.08 vs Updated EPP $34.53:  +10%  ✓ bear stays above the floor
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Revenue growth                               -38.0       +0.6   BASE floor (vs -39 now)
+  Gross margin change                        -4820.0    -2580.4   BASE floor (vs -2240 now)
+  Opex growth less revenue                      55.0      +16.7   BASE floor (vs +38 now)
+  Inventory growth less revenue                 51.0      -33.2   BASE floor (vs +84 now)
+  Operating margin change                    -6240.0    -3279.5   BASE floor (vs -2960 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $11.51 × (1+0.0%)² = $11.51
+  At 5x P/E (conservative):  $57.55/share
+  + Cumul. dividends (2yr):  +$0.00/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $57.55  (▲12.28 from $45.27)
+  Conservative total return:  +27% over 2yr  = +14%/yr
+
+  At 3.9x the multiple is already near its 5x median, so the conservative
+  case is a growth question: breakeven at 5x needs FY2021E EPS of $9.05,
+  i.e. -11.3%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $28.39  –  $53.23  (at 68th pct of range)
+  Annual dividend:      $0.00/share  (yield 0.0%)
+  Realized vol:         48% annualized (1-yr daily log returns)
+  Beta vs broad market: 1.88
+  1-sigma range (1yr):  $23.45  –  $67.09  ($45.27 ± 48%)
+  2-sigma range (1yr):  $1.63  –  $88.91
+  ────────────────────────────────────────────────────────────
+  Bear $38.08 requires:  ~0.3σ price move  (within normal vol range)
+  A memory maker whose selling prices follow industry supply: the stock is +56% off its December
+  low (52 weeks) while revenue went from -20.6% (Q2 FY19) to -38.6% YoY (Q3 FY19), -17.9% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR       10.88    3.5x  $  38.08    40.7%     16.7%   +24.0pp  EPS -2.8%/yr (worst year FY10-FY18 ex-FY11 ex-FY12 ex-FY13 ex-FY16, capped at 0%); P/E to its 10th pct
+  BASE        3.71    5.1x  $  18.92    44.2%     58.3%   -14.0pp  EPS -43.2%/yr (Q3 revenue YoY + margin + buyback); P/E at its 10-yr ex-FY09 ex-FY11 ex-FY12 ex-FY13 ex-FY16 median
+  BULL       18.18    8.6x  $ 156.35    12.7%     21.1%    -8.4pp  EPS +25.7%/yr (FY10-FY18 ex-FY11 ex-FY12 ex-FY13 ex-FY16 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL      20.55   12.2x  $ 250.71     2.4%      4.0%    -1.6pp  EPS +33.6%/yr (best 2-yr run FY10-FY18 ex-FY11 ex-FY12 ex-FY13 ex-FY16, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $49.68  /  Market EV: $60.31  /  Current: $45.27
+  Conservative EV (2yr, ④): $57.55 + $0.00 divs = $57.55 total value
+  Downside (→ Bear $38.08): 15.9%   Upside (→ Bull $156.35): 245.4%   Ratio B 0.06x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $45.27 the market needs $59.87 in two years —
+  between the BASE and BULL cases. That is a market composite of 2.07 against a model
+  read of 1.77: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.06x     +31%    -0.29  MODESTLY OVERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.02x     +31%    +0.32  MODESTLY UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.24x     +31%    -0.58  OVERVALUED / BUY
+  Scenario EPS +1.5pp/yr                          0.05x     +31%    -0.27  MODESTLY OVERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.08x     +31%    -0.31  MODESTLY OVERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.06x     +31%    +0.00  FAIRLY VALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.06x     -34%    -0.09  FAIRLY VALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.06x     +31%    -0.23  MODESTLY OVERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 FY19 print (the quarter ends in late August) — revenue against the Q3 FY19 revenue growth (no Q4 FY19 guide): -38.6% YoY
+  (2) Gross margin — -2239.6bp in Q3 FY19: selling prices against cost per bit, what must hold if revenue does not
+  (3) A Q4 FY19 revenue guide — none in any filing
+  (4) Inventories — +45.6% against revenue -38.6% in Q3 FY19 (+84.2pp): write-downs follow if selling prices fall below cost
+  (5) Capital structure at 4x — 'Micron repurchased an aggregate of 67 million shares of its common stock for $2.66 billion during the first nine months of 2019 in connection with its $10 billion share repurchase authorization.' (Q3 FY19 results (8-K ex.99.1))
+  ◉ BUY  |  EPP floor $34.53  |  ADD below ~$16.08  |  TRIM above $156.35
+════════════════════════════════════════════════════════════════════════
+
