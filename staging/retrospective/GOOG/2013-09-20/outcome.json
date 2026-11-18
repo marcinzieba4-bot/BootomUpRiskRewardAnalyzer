@@ -1,0 +1,62 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "GOOG",
+ "as_of": "2013-09-20",
+ "computed": "2026-11-18",
+ "data_source": "Yahoo Finance daily closes + dividends (GOOG, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2014-03-20",
+   "price": 1197.16,
+   "dividends": 0,
+   "total_return_pct": 32.6,
+   "benchmark_total_return_pct": 10.5,
+   "excess_pct": 22.0,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2014-09-19",
+   "price": 1193.35,
+   "dividends": 0,
+   "total_return_pct": 32.1,
+   "benchmark_total_return_pct": 19.7,
+   "excess_pct": 12.4,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2015-09-18",
+   "price": 1263.22,
+   "dividends": 0,
+   "total_return_pct": 39.9,
+   "benchmark_total_return_pct": 19.1,
+   "excess_pct": 20.8,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2016-09-20",
+   "price": 1548.6,
+   "dividends": 0,
+   "total_return_pct": 71.5,
+   "benchmark_total_return_pct": 32.2,
+   "excess_pct": 39.3,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2015-07-17",
+   "price": 1350.9
+  },
+  "low": {
+   "date": "2013-10-08",
+   "price": 853.67
+  },
+  "max_drawdown_pct": -19.2,
+  "return_to_avg_price_m12_m24_pct": 23.3
+ },
+ "scenario_landing_2y": "BASE",
+ "call_check_2y": {
+  "expectation": "CHEAP: should clear the hurdle or beat the benchmark",
+  "hit": true
+ }
+}

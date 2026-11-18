@@ -1,13 +1,16 @@
 # GOOG retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the GOOG weekly dates: 105, from 2008-01-04 to 2009-12-31, all Google Inc. (the Class A common
-stock, NASDAQ: GOOG). They are **labels and hypotheses**: never feed them back into the method or the fact sheet. The batch was scored
-only after its point-in-time build was committed and pushed (f268b6d, firewall result 4d0926c); the outcomes were computed on
-2026-11-18. Every date has its 6-month, 1-, 2- and 3-year horizons (the last ends 2012-12-31). Google paid no dividend, so total
-returns are price returns, and the 2014 share distribution falls after every horizon, so prices are as traded. Medians of an even count
-take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years and +52.1% over three. "Call held" is
-`call_check_2y`: CHEAP should clear the hurdle or beat the benchmark (SPY); FAIR should land within 15 points of the benchmark; RICH
-should miss the hurdle and lag the benchmark.
+Patterns seen in `outcome.json` for the GOOG weekly dates: 314 in all, 105 from 2008-01-04 to 2009-12-31 and 209 from 2010-01-08 to
+2013-12-31, all Google Inc. (the Class A common stock, NASDAQ: GOOG). They are **labels and hypotheses**: never feed them back into the
+method or the fact sheet. Each batch was scored only after its point-in-time build was committed and pushed (2008-2009: f268b6d,
+firewall result 4d0926c; 2010-2013: 538c9a3, with the correction of two 2008-2009 vintage notes, firewall result b0b6461); the outcomes
+were computed on 2026-11-18. Every date has its 6-month, 1-, 2- and 3-year horizons (the last ends 2016-12-31). Google paid no dividend,
+so total returns are price returns. The horizons that end after the 2014-04-02 distribution of one Class C share per Class A share
+(92 two-year horizons, from the 2012-04-13 entry on) are measured on Yahoo's GOOG series, which counts one Class A share as 2.002 Class C
+shares; a holder's one A plus one C share was worth 0.1 to 3.2 points more over two years (the Class A traded above the Class C), and no
+call below changes on that measure. Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle
+is +32.2% over two years and +52.1% over three. "Call held" is `call_check_2y`: CHEAP should clear the hurdle or beat the benchmark (SPY);
+FAIR should land within 15 points of the benchmark; RICH should miss the hurdle and lag the benchmark.
 
 ## 2008 (53 dates)
 
@@ -79,3 +82,102 @@ should miss the hurdle and lag the benchmark.
   the right way, unlike MU's 2009; (3) the turn to FAIR and RICH in late 2009 came from the conservative case (BASE falling to zero as
   revenue growth met the dilution) with the price 25-41% above a floor of the stock's own post-listing lows, and those entries lagged the
   market by 9-17 points over two years.
+
+## 2010 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 50 | +17.9% | +4.4% to +47.2% | 10 | 14 | +9.8% | 15 |
+| class FAIR, legacy tier BUY | 2 | +8.0% | +7.8% to +8.0% | 0 | 0 | -1.8% | 2 |
+| latest print Q3 2009 (2010-01-08 to 2010-01-15) | 2 | +8.0% | +7.8% to +8.0% | 0 | 0 | -1.8% | 2 |
+| latest print Q4 2009 (2010-01-22 to 2010-04-09) | 12 | +12.2% | +4.4% to +15.8% | 0 | 0 | +3.6% | 0 |
+| latest print Q1 2010 (2010-04-16 to 2010-07-09) | 13 | +18.6% | +9.7% to +33.0% | 1 | 1 | +17.4% | 2 |
+| latest print Q2 2010 (2010-07-16 to 2010-10-08) | 13 | +42.1% | +25.1% to +47.2% | 9 | 9 | +22.1% | 9 |
+| latest print Q3 2010 (2010-10-15 to 2010-12-31) | 12 | +15.7% | +9.3% to +23.2% | 0 | 4 | +7.3% | 4 |
+
+- **CHEAP held on 15 of 50 dates: every 2010 entry made money, most less than the market.** The two-year returns were +4.4% to +47.2%,
+  while SPY returned +15.9% to +38.6% from the same dates; ten cleared the hurdle, nine of them entries of the Q2 2010 print ($459-536,
+  July to October) and one of the Q1 2010 print. The 35 misses are the twelve of the Q4 2009 print (+4.4% to +15.8%, 8-19 points behind SPY), eleven of the Q1
+  2010 print, the first four of the Q2 2010 print (+25.1% to +30.4%, at most 6.7 points behind) and eight of the Q3 2010 print ($590-625).
+  The two FAIR dates of January 2010 held (+7.8%, +8.0%, within 15 points of SPY). Over three years (to the end of 2013) the 2010 dates
+  returned +21.8% to +102.1% (median +73.5%); 44 beat SPY and 35 cleared the three-year hurdle.
+- **The earnings came; the multiple fell.** The anchors were FY09's $20.41 and, from 2011-01-21, FY10's $26.31; FY2010 came in at $26.31
+  and FY2011 at $29.76 (+29% and +13%), while the price two years on ($561-762) was 0.53-1.24 times the BASE price. The two-year price
+  landed nearest BEAR on 42 dates, and above the EPP floor ($633-674) on only 18.
+- **Within the year the price ranked the outcomes; the composite had the wrong sign.** The entry price ranks the two-year return at
+  Spearman -0.68 and the m12-24 average at -0.86, the EPP gap at -0.70 and -0.88, Ratio B at -0.70 and -0.86; the adjusted gap at -0.00
+  and -0.10 (none) and the proxy composite at -0.47 and -0.57.
+
+## 2011 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 52 | +64.4% | +15.1% to +85.8% | 44 | 49 | +36.8% | 49 |
+| latest print Q3 2010 (2011-01-07 to 2011-01-14) | 2 | +19.2% | +15.9% to +19.2% | 0 | 0 | +4.5% | 0 |
+| latest print Q4 2010 (2011-01-21 to 2011-04-08) | 12 | +34.0% | +15.1% to +44.8% | 6 | 11 | +11.2% | 11 |
+| latest print Q1 2011 (2011-04-15 to 2011-07-08) | 13 | +67.7% | +47.3% to +83.2% | 13 | 13 | +37.7% | 13 |
+| latest print Q2 2011 (2011-07-15 to 2011-10-07) | 13 | +62.4% | +46.1% to +76.3% | 13 | 13 | +49.7% | 13 |
+| latest print Q3 2011 (2011-10-14 to 2011-12-30) | 12 | +71.8% | +48.1% to +85.8% | 12 | 12 | +37.8% | 12 |
+
+- **CHEAP held on 49 of 52.** The three misses are the first three weeks of the year ($612-624, +15.1% to +19.2%, 0.1-4.8 points behind
+  SPY); from 2011-01-28 every entry beat SPY or cleared the hurdle, and from the Q1 2011 print ($475-646) all 38 cleared it (+46.1% to
+  +85.8%). The 2011 low, $474.88 on 2011-06-24, was 18.0x FY10's $26.31, the series' lowest multiple of the period. Over three years (to
+  the end of 2014) the 2011 dates returned +58.4% to +139.3% (median +95.9%); all 52 cleared the three-year hurdle and 47 beat SPY.
+- **The ranks weakened as the whole year paid.** The entry price ranks the two-year return at -0.40 and the m12-24 average at -0.63, the
+  EPP gap at -0.32 and -0.55, Ratio B at -0.45 and -0.63; the adjusted gap at +0.21 and +0.08 and the proxy composite at +0.25 and +0.01.
+
+## 2012 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 52 | +74.8% | +44.5% to +102.4% | 52 | 50 | +60.6% | 52 |
+| latest print Q3 2011 (2012-01-06 to 2012-01-13) | 2 | +79.7% | +71.9% to +79.7% | 2 | 2 | +43.5% | 2 |
+| latest print Q4 2011 (2012-01-20 to 2012-04-05) | 12 | +93.6% | +72.0% to +102.4% | 12 | 12 | +54.3% | 12 |
+| latest print Q1 2012 (2012-04-13 to 2012-07-13) | 14 | +91.9% | +68.0% to +101.1% | 14 | 14 | +76.4% | 14 |
+| latest print Q2 2012 (2012-07-20 to 2012-10-12) | 13 | +67.0% | +46.4% to +95.0% | 13 | 13 | +58.5% | 13 |
+| latest print Q3 2012 (2012-10-19 to 2012-12-28) | 11 | +55.3% | +44.5% to +68.4% | 11 | 9 | +64.3% | 11 |
+
+- **CHEAP held on all 52, every entry clearing the hurdle** (+44.5% to +102.4%); 50 beat SPY (+34.3% to +55.5% from the same dates).
+  The best were the Q4 2011 and Q1 2012 prints' entries ($565-643, 19.0-21.6x FY11's $29.76). Over three years (to the end of 2015) the
+  2012 dates returned +54.6% to +127.2% (median +81.9%); all cleared the three-year hurdle and 50 beat SPY.
+- **The two-year price landed nearest BASE on 41 dates**, 0.55-0.81 times the BASE price ($1,023-1,216 against BASE prices carried by
+  +20-41%/yr revenue growth, Motorola's included); no two-year price came within 0.38 times BULL.
+- **The price ranked the two-year return again** (-0.87; the m12-24 average -0.50), the EPP gap -0.84 and -0.41, Ratio B -0.87 and
+  -0.39; the adjusted gap +0.50 and +0.37 and the proxy composite +0.37 and +0.47, the right signs.
+
+## 2013 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 47 | +38.4% | +15.3% to +53.9% | 34 | 24 | +27.3% | 35 |
+| class FAIR, legacy tier BUY | 6 | +39.8% | +34.3% to +43.9% | 6 | 6 | +9.9% | 0 |
+| latest print Q3 2012 (2013-01-04 to 2013-01-18) | 3 | +42.4% | +34.2% to +44.4% | 3 | 1 | +52.3% | 3 |
+| latest print Q4 2012 (2013-01-24 to 2013-04-12) | 12 | +38.0% | +34.6% to +43.3% | 12 | 3 | +39.3% | 12 |
+| latest print Q1 2013 (2013-04-19 to 2013-07-12) | 13 | +22.3% | +15.3% to +41.2% | 1 | 1 | +25.2% | 1 |
+| latest print Q2 2013 (2013-07-19 to 2013-10-11) | 13 | +41.4% | +37.1% to +53.9% | 13 | 13 | +26.3% | 13 |
+| latest print Q3 2013 (2013-10-18 to 2013-12-31) | 12 | +39.3% | +31.4% to +47.2% | 11 | 12 | +11.3% | 6 |
+
+- **CHEAP held on 35 of 47; FAIR missed on all 6.** The CHEAP misses are twelve of the thirteen entries of the Q1 2013 print ($800-923,
+  April to July: +15.3% to +31.2%, short of the hurdle and 7-15 points behind SPY). The six FAIR entries of 2013-11-29 to 2013-12-31
+  ($1,060-1,121, 63-73% over the floor) returned +34.3% to +43.9% and beat SPY by 18-24 points: the call expected the market's return
+  within 15 points and got much more. FY2013 came in at $36.05 a diluted share from continuing operations (+11% on FY12's $32.46; the Q4
+  2013 release of 2014-01-30, after the close). Over three years (to the end of 2016) the 2013 dates returned +38.3% to +101.8% (median
+  +70.7%); all 53 beat SPY and 45 cleared the three-year hurdle.
+- **The m12-24 average ranked by the entry price almost exactly** (Spearman -0.99, the EPP gap -0.99, Ratio B -0.85, the adjusted gap
+  +0.87), while the two-year point return did not (+0.01): the two-year ends fell before and after the stock's jump of July 2015.
+
+## Across 2010-2013
+
+- **The class stayed CHEAP while the stock more than doubled, and it held on 153 of 209 dates** (CHEAP 151 of 201, FAIR 2 of 8): the
+  anchor rose with each year's EPS ($20.41 to $32.46) and the window's median multiple fell toward the post-2008 years, so the price, from
+  $437 to $1,121, stayed at the 5th-71st percentile of its own range. Every 2010-2013 entry made money over two years (+4.4% to +102.4%,
+  median +44.8%); 146 cleared the hurdle and 143 beat SPY. Over three years 194 beat SPY and 184 cleared the hurdle.
+- **The misses cluster where the market ran harder:** 2010 (35, SPY +16% to +39%), the first three weeks of 2011, the Q1 2013 print's
+  entries and the late-2013 FAIR dates. Across the four years no point-in-time measure ranks the outcomes (the entry price -0.03 and +0.04,
+  the EPP gap +0.04 and +0.12, the adjusted gap -0.05 and -0.19, the proxy composite -0.37 and -0.51): within a year the entry price did,
+  as in 2008-2009, but the level moved with the earnings.
+- Hypotheses only, to test on other tickers and periods and never to fold into GOOG's method or fact sheet: (1) when the anchor is the
+  last reported year and earnings keep growing, a CHEAP class can persist for years without a timing signal, and its misses are relative
+  (positive returns behind a strong market) rather than losses; (2) the FAIR turn of late 2013 came from BASE falling to the quarter's
+  +11.9% revenue growth less the dilution while EPS grew faster than revenue, and those entries beat the market by 18-24 points; (3) the
+  composite had the wrong sign in 2010 and 2013 and the right one in 2011-2012, so its sign is not stable for this ticker.
