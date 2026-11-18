@@ -18890,6 +18890,8 @@ Judgement calls that could carry hindsight:
 - the 14-week Q1 FY15 and its 13-week comparison in Q1 FY16 used as published, and charges left in the signals as published;
 - the signals (123 classes at BEAR, 27 at XBULL) and DURABLE, with the cloud read as Micron's own market.
 
+The hindsight results are in `staging/retrospective/MU/FINDINGS.md`: hypotheses, never inputs.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
