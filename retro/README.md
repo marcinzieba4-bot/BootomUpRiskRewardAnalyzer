@@ -19465,7 +19465,8 @@ Controls and checks (before any outcome):
 - **Leak scan:** 0 hits in 34,908 (model, later token) pairs: the source ids, titles, notes, quotes and figures (four significant digits or
   more) of every fact published after each model's date, after dropping 16,593 tokens an earlier fact or the engine already carries (a
   later string contained in an earlier fact's string included: the FY2007 and FY2008 10-Ks' operating-margin notes repeat their Q4
-  prints'). As a positive control, 12 to 44 of each latest print's own tokens appear in its model.
+  prints'). As a positive control, 12 to 44 of each latest print's own tokens appear in its model. (A leak the scan could not see, the FY2006 and FY2007 vintages'
+  EPS note naming two items of Q3 and Q4 2008, was found and corrected while building 2010-2013: "GOOG 2010-2013".)
 - **`retro_tool run` passes on all 105 dates,** with no warning. A first build failed it: the "why" named a theme not live in 2008 and
   its date, which the validator rejected; the text was cut to the MU form before any outcome existed.
 - **Regression:** rebuilding the 2008-2009 dates of ACN, AAPL, AVGO, BKR, BMY, CAT, CMCSA, F, LMT, LOW, MAR, MSFT, MU, NKE, NVDA, PEP,
@@ -19523,6 +19524,153 @@ Judgement calls that could carry hindsight:
 - the Q3 2008 10-Q restatement read as replacing the release from its own date (no class moves);
 - CYCLICAL rather than DURABLE (label only), on the 10-K's "cyclicality ... in our business";
 - the outlook words, stock-based compensation, dilution and capital-expenditure estimates left unencoded (no input either way).
+
+The hindsight results are in `staging/retrospective/GOOG/FINDINGS.md`: hypotheses, never inputs.
+
+### GOOG 2010-2013: millions from 2010, the DOJ charge restated by its 10-Q, Motorola, continuing operations, and a correction to 2008-2009
+
+209 weekly dates, 2010-01-08 to 2013-12-31, on the same method, builder, engine and rule-T thresholds. The fact sheet only gains facts:
+its 2008-2009 content is unchanged except the correction below (the generator gained a second print function for the millions tables,
+summed cost lines and debt rows, and per-vintage notes; the regenerated 2008-2009 part is otherwise byte-identical). No builder or engine
+change was needed. Built on 2026-11-18 at the owner's request ("do 2010-2013"), in the same session that had scored the 2008-2009 dates
+and written their `FINDINGS.md`, so those outcomes were known when this batch was read. No decision below uses them: each applies a rule
+that existed before (the r2 rollover and decade rules, the UNP BASE rule, the UNP and LOW continuing-operations rule, the ACN rule for a
+filing during market hours, the AAPL 10-K/A rule) or a 2008-2009 encoding (GAAP EPS, the Q3 2008 `restated` field, receivables from the
+year-ago 10-Q, CYCLICAL). The readings that could still carry hindsight are listed at the end with how far the other reading moves.
+
+```bash
+python3 retro/build_goog.py --weekly 2010-01-04 2013-12-31                  # 209 dates, 2010-01-08 .. 2013-12-31
+for c in 2010-01-22 2010-02-16 2010-04-16 2010-07-16 2010-10-15 2011-01-21 2011-02-14 2011-04-15 2011-05-11 2011-07-15 2011-10-14 \
+         2012-01-20 2012-01-27 2012-04-13 2012-07-20 2012-10-18 2013-01-23 2013-01-30 2013-04-19 2013-07-19 2013-10-18 2014-01-01; do
+  python3 retro/tools/firewall.py $c GOOG; done
+```
+
+Read, by the session's model directly with no delegated transcription: the 16 earnings releases of Q4 2009 to Q3 2013 (ex.99.1: the
+narrative, balance sheet, statements of income and cash flows, revenues by source; the Q3 2012 release both as filed during the session
+and as completed by its 8-K/A), the FY2009-FY2012 10-Ks (Items 1, 1A, 5, 6, 7, the statements and the EPS note) and the FY2011 10-K/A
+(Part III only), the 10-Qs of Q1 2009 to Q3 2013 (the year-ago quarters' receivables, and each quarter's figures against its release),
+and every other 8-K of January 2010 to December 2013 by its items and exhibits, the call transcript of 2011-01-21 and the Motorola
+reporting framework of 2012-06-26 included (neither gives a figure for a coming period). The source ids are `GOOG30`-`GOOG61`. 739
+strings were checked with `verbatim.py`, each against its own filing (739/739, the 2008-2009 batch's 319 included). Decided on
+2026-11-18, before any 2010-2013 model was built or any 2010-2013 outcome computed:
+
+- **Release timing.** Every earnings 8-K but one was accepted after the close (16:01-16:13 ET) and is dated the next trading day; on a
+  Friday that day meets its own close (the AVGO rule): 2010-01-22, 2010-04-16, 2010-07-16, 2010-10-15, 2011-01-21, 2011-04-15,
+  2011-07-15, 2011-10-14, 2012-01-20, 2012-04-13, 2012-07-20, 2013-04-19, 2013-07-19, 2013-10-18. The Q4 2012 release came on a Tuesday
+  (dated 2013-01-23; the week's date 2013-01-24). The Q3 2012 release was filed during the session, at 12:30 ET on 2012-10-18, ahead of
+  the release planned for after the close (its 8-K/A at 14:58 ET adds the CEO's quote and changes no figure): public before that day's
+  close (the ACN rule for a filing during market hours), dated 2012-10-18, the week's date 2012-10-19. The FY2009-FY2012 10-Ks were
+  accepted after the close and are dated 2010-02-16, 2011-02-14, 2012-01-27 and 2013-01-30. A Q4 print extends the history from its
+  release to the 10-K: FY2009 from 2010-01-22 (4 dates), FY2010 from 2011-01-21 (4), FY2011 from 2012-01-20 (1), FY2012 from 2013-01-24 (1).
+- **Units.** The releases from Q1 2010, the 10-Qs from Q1 2010 and the 10-Ks from FY2010 print millions; every dollar figure is stored in
+  thousands as before, a millions figure times 1,000 exactly. Each year comes from the latest filing that reports it, so revenue from the
+  FY2010 10-K on is in whole millions (FY2006 $10,605M against the FY2009 10-K's $10,604.917M).
+- **The decade rolls.** The FY2009 10-K's ten years are FY2000-FY2009: FY2000, a loss, is the first year and takes FY1999 with it, so the
+  history still starts with FY2001's $0.04. From the FY2010 10-K no loss is left in the decade; the FY2011 10-K's decade starts with
+  FY2002 and the FY2012 10-K's with FY2003, so FY2001 and then FY2002 leave the history. The P/E window still starts at the listing
+  (2004-08-19): 5.4 years on 2010-01-08, 9.4 at the end of 2013.
+- **EPS: GAAP diluted EPS** as in 2008-2009. FY2009 $20.41, FY2010 $26.31, FY2011 $29.76 (with the $500M Department of Justice charge),
+  FY2012 $32.46. The releases' non-GAAP EPS removes stock-based compensation, which recurs, with the DOJ charge (2011) and Motorola
+  Mobile's restructuring charges (from Q3 2012): no figure excluding only one-offs, so each year stays at GAAP (each item a fraction of
+  its year's income). **FY2012 is EPS from continuing operations** (the UNP and LOW rule): from the Q4 2012 release Motorola Home is a
+  discontinued operation ($32.46; $32.31 with it). No filing gives an EPS guide, so the last full year anchors each date (the rollover
+  rule): FY08's $13.31 to 2010-01-15, FY09's $20.41, FY10's $26.31, FY11's $29.76 and FY12's $32.46 from their Q4 prints.
+- **The Q1 2011 10-Q restates the quarter** (the Q3 2008 encoding, `restated`): "In May 2011, in connection with a potential resolution
+  of an investigation by the United States Department of Justice into the use of Google advertising by certain advertisers, we accrued
+  $500 million for the three month period ended March 31, 2011." The release (2011-04-15) had operating income of $2,796M and EPS of
+  $7.04; the 10-Q (accepted 2011-05-10 17:17 ET, dated 2011-05-11) has $2,296M and $5.51, the charge a line of its own outside the
+  expense lines. Its figures replace the release's from 2011-05-13 to 2011-07-08. Every other 10-Q of 2009-2013 matches its release.
+- **Motorola, as published.** Motorola Mobility is consolidated from 2012-05-22 (8-K of that day). From the Q2 2012 release its revenues
+  and costs are in the quarter (two cost-of-revenues lines, summed), against a year-ago quarter without it: revenue +35.3% and +45.1%,
+  the gross margin -590bp and -1,173bp in Q2 and Q3 2012. From the Q4 2012 release Motorola Home is a discontinued operation and the
+  quarter's figures are without it; the Q2 and Q3 2013 releases print their year-ago quarters without it too, while the year-ago
+  receivables (the Q2 and Q3 2012 10-Qs) include it. The Q4 2012 print's sequential change is against the Q3 2012 release's revenues,
+  with Motorola Home (a seam, display only). The receivables and opex gaps take the consolidated lines as published.
+- **No guide in any filing,** as in 2008-2009. The 10-Ks' words change from "We expect our revenue growth rate to decline..." (FY2009,
+  FY2010) to "Our revenue growth rate could decline over time, and we anticipate downward pressure on our operating margin in the
+  future." (FY2011, FY2012), display only. BASE is the latest quarter's revenue growth plus the buyback (the UNP rule): -7.3%/yr to
+  -2.8%/yr of net issuance as the decade rolls.
+- **Debt** (display only): commercial paper from Q3 2010 and notes from Q2 2011 ($3B, the 8-Ks of 2011-05-17 and 2011-05-19) appear in
+  the balance text from the prints that carry them.
+- **Durability: CYCLICAL, risk 2, unchanged.** Each FY2009-FY2012 10-K keeps "As our growth rate has slowed, the cyclicality and
+  seasonality in our business has become more pronounced and caused our operating results to fluctuate." The "why" quotes the latest
+  10-K's business sentence, its advertising risk factor (from FY2012: "We generate a significant portion of our revenues from
+  advertising..."), its competition sentence (from FY2012: "We face intense competition.") and "In addition, expenditures by advertisers
+  tend to be cyclical, reflecting overall economic conditions and budgeting and buying patterns." CLOUD is live from 2012-10-30, scoped to
+  public cloud displacing on-premise IT; the FY2012 10-K names the cloud only for Google's own products, so it is out of scope (the AVGO
+  FY2012 and NVDA reading), and from that 10-K the "why" says so. The watch list stays empty.
+- **Adds nothing:** the China and On2 8-Ks (2010-01-13, 2010-01-16), the founders' trading plans (2010-01-22, 2012-02-17, 2013-02-08),
+  the officer, director, compensation and meeting 8-Ks, the 23andMe investments, the call transcript of 2011-01-21, the note offering
+  (2011-05-17, 2011-05-19), the FTC subpoena (2011-06-24) and the closing of its investigation (2013-01-03), the Motorola agreement,
+  closing and restructuring 8-Ks (2011-08-15, 2011-08-18, 2012-05-22, 2012-08-13, 2012-10-04; their effects reach the prints), the
+  reporting framework (2012-06-26), the Motorola Home sale (2012-12-20), the Class C proposal and its litigation (2012-04-12 ex.99.3-99.4,
+  2012-04-13, 2013-06-17, 2013-10-30) and the FY2011 10-K/A (Part III only; the AAPL 10-K/A rule). None changes a guided number; none
+  states a dividend.
+
+**A correction to 2008-2009, found while building this batch.** A new scan of every fact's own text for dates, years and quarters after
+the fact's publication found that the FY2006 and FY2007 vintages' EPS note (in the `EPS_NORM` comment of each model) named "the Authors
+Guild settlement (Q3 2008) and the equity impairments (Q4 2008)" among the items Google's non-GAAP EPS removes: the 2008-2009 build had
+given every vintage the note written for the FY2008 10-K. Those two items were not public on the vintages' dates. The two vintages now
+carry a note naming only the items public then (the Google Foundation contribution of FY2005); the FY2008 vintage keeps its note. The 59
+models of 2008-01-04 to 2009-02-13 change in that comment only: no number, class, report or analysis changes, and their outcomes stand.
+The validator could not see it (a year equal to the as-of year is not flagged), nor the leak scan (the text belonged to an earlier
+fact), so the new scan joins the checks. The 2010-2013 vintages' notes were written the same way at first and the scan caught it before
+any were committed; each now names only the items public by its date.
+
+Controls and checks (before any outcome):
+- **Controls** (all 314 dates rebuilt with one real fact altered at a time): 47 of 51 alterations change the models exactly from the
+  first weekly date on or after their publication, until a later fact supersedes them, and none changes an earlier date; 4 are inert,
+  as in 2008-2009 (superseded before the first built date). The Q1 2011 restatement lives from 2011-05-13 to 2011-07-08.
+- **Leak scan:** 0 hits in 369,235 (model, later token) pairs over the 314 dates, after dropping 51,004 tokens an earlier fact or the
+  engine carries, figures matched as whole numbers (a later 10-K's rounded $5,853M is not a hit in an earlier model's $5,853.6M) and bare
+  years left out. **Fact scan** (new, above): no fact's text names a date, year or quarter after its own publication (one hit is a rule's
+  name, "the AVGO and NKE FY2007 rule").
+- **`retro_tool run` passes on all 209 dates;** its 31 warnings are numbers read as years: 13 decimals in 2010 (FY revenue 29.2084) and
+  18 trading-day counts of the window (2,016-2,097, August to December 2012). The 59 corrected 2008-2009 dates pass again with no
+  warning.
+- **Regression:** the 105 dates of 2008-2009 rebuild byte for byte apart from the corrected comment; no file another ticker's builder
+  reads has changed.
+
+Seen in the build (method behaviour, not tuned):
+- **CHEAP on 201 dates, FAIR on 8; legacy tier BUY on all 209;** robustness agrees with the class on every date. FAIR is the two dates of
+  January 2010 still on the Q3 2009 print (as in late 2009) and the last six, 2013-11-29 to 2013-12-31.
+- **The anchors and the multiple.** FY09's $20.41 (2010-01-22 to 2011-01-14): $437-625 is 21.4-30.6x, the 10th-36th percentile of a
+  window whose median is 37.1-38.6x. FY10's $26.31 (to 2012-01-13): $475-650 is 18.0-24.7x, the 5th-39th percentile (median 35.1-37.0x).
+  FY11's $29.76 (to 2013-01-18): $565-768 is 19.0-25.8x, the 14th-46th (median 28.7-35.0x). FY12's $32.46 (from 2013-01-24): $754-1,121
+  is 23.2-34.5x, the 44th-59th (median 26.9-28.7x). The window's median falls as the post-2008 years at 14-25x outweigh 2004-2007.
+- **The floor** (the median of the calendar-year lows, 2004 67.1x to 2009 13.9x, 2010 16.6x, 2011 16.0x, 2012 17.2x, 2013 21.7x) falls
+  from 31-33x in 2010 to 19-21x in 2012-2013, an EPP of $565-710: the price is under it on 103 dates (2010-01-22 to 2011-12-30, and
+  2012-06-15), at most 35% under, and up to 73% above it at the end of 2013.
+- **BULL and XBULL stay the history's hypergrowth.** BULL is the EPS CAGR from the decade's first year: +118.0%/yr (FY2001-FY2009),
+  +105.6% (to FY2010), +93.7% (2012-01-20, to FY2011 on the FY2010 10-K), +59.3% (FY2002-FY2011), +53.4% (2013-01-24) and +62.5%
+  (FY2003-FY2012); XBULL is FY2003-FY2005's +249.9%/yr throughout. The BULL price is $3,090-4,895, so Ratio B is 0.01-0.23 and the tier
+  is BUY on every date.
+- **BEAR** is FY2002-FY2003's -8.9%/yr until the FY2012 10-K, whose decade starts with FY2003: from 2013-02-01 no year in the history
+  fell, so BEAR is flat EPS (the 0% cap). The BEAR price is below the price on every date.
+- **BASE follows the quarters:** +10.6%/yr (Q4 2009) to +27.5% (Q3 2011), +31.0% and +40.8% on Q2 and Q3 2012 (Motorola in the quarter
+  against a year-ago quarter without it), then +32.2% to +33.4% (Q4 2012), +28.4%, +16.7% and +9.1% (Q3 2013). With BASE at 9.1% and the price
+  63-73% above the floor, the conservative case turns negative (-5.2% to -10.3% over two years) and the last six dates read FAIR.
+- **The proxy composite** is 1.80-2.00 throughout: revenue at BEAR (the rule-T bands of the start-up years), the gross margin at BULL on
+  Q4 2009 and Q3 2010 (+233bp, +242bp) and the receivables gap at BULL on six quarters (Q1 and Q2 2010, Q3 2011, Q1 2012, Q2 and Q3
+  2013); Motorola's lower margins (the gross margin -337bp to -1,173bp from Q2 2012 to Q2 2013) stay inside the BASE bands.
+
+How far each call moves the classes (all 314 dates rebuilt with one encoding changed and classified offline; no outcome consulted):
+- Q1 2011 as its release printed it (no 10-Q restatement): no class, no tier;
+- FY2012 at its net $32.31 (with Motorola Home) rather than continuing operations' $32.46: no class, no tier;
+- rule T without the 1999-2000 change, or on the FY2006 10-K's own years: no class in 2010-2013 (2 in 2009, as before);
+- every signal at its BEAR value: 13 classes (2013-07-12 to 2013-12-31: 6 CHEAP and 6 FAIR to RICH, 1 CHEAP to FAIR), no tier; at its
+  XBULL value: none;
+- BULL and XBULL at BASE's rate (no rule says so; it shows what the tier rests on): 14 classes (8 FAIR and 6 CHEAP to RICH) and 14 tiers.
+The classes rest on the multiple against the stock's own post-listing history and on the floor of its calendar-year lows; the BUY tier
+rests on the start-up years in BULL and XBULL, as in 2008-2009.
+
+Judgement calls that could carry hindsight:
+- Motorola's revenues and costs in the signals as published, against year-ago quarters without it (not measured: the releases' Google
+  segment figures would support Google-only signals, an encoding no ticker has used);
+- the Q1 2011 10-Q read as replacing the release from its own date (no class moves either way);
+- FY2012 from continuing operations (no class moves);
+- CLOUD read as out of scope for a company whose 10-K names the cloud as its own products (label only);
+- the signals and rule T as in 2008-2009, which put revenue growth at BEAR on every date; GAAP EPS throughout.
 
 The hindsight results are in `staging/retrospective/GOOG/FINDINGS.md`: hypotheses, never inputs.
 
@@ -19819,7 +19967,9 @@ What the gates enforce:
   "MU 2018-2021").
   GOOG in 2008-2009 carries none: no theme in the registry is live for a search and advertising company (OFFSHORE, from 2004-11-05, is
   scoped to IT services; CLOUD is not live before 2012-10-30), so its watch list is empty and the FY2006-FY2008 10-Ks' "significant
-  competition from Microsoft and Yahoo" stays in the "why" (the PEP obesity rule) ("GOOG").
+  competition from Microsoft and Yahoo" stays in the "why" (the PEP obesity rule) ("GOOG"). It stays empty through 2013: CLOUD, live from
+  2012-10-30, is scoped to public cloud displacing on-premise IT, and the FY2012 10-K names the cloud only for Google's own products
+  ("GOOG 2010-2013").
 
 ## Workflow
 

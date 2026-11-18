@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  GOOG  ·  Google Inc.  ·  $810.31  ·  RETROSPECTIVE as of 2013-03-22
+  Signal: ◉ BUY   Ratio B: 0.08x   Adj gap: +0.79  [UNDERVALUED]
+  Point-in-time: 12 sources, latest published 2013-03-22; latest print Q4 2012 (Jan 22)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2013E revenue, USD bn  →  FY2015E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2013E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Google websites               $ 42.52  $42.52  $93.24    +0.00   +50.72
+    +19.4% revenue in FY12
+  Google Network Members' webs  $ 16.98  $16.98  $37.23    +0.00   +20.25
+    +20.0% revenue in FY12
+  Other revenues                $  3.20  $ 3.20  $ 7.03    +0.00    +3.83
+    +71.3% revenue in FY12
+  Motorola Mobile               $  5.63  $ 5.63  $12.35    +0.00    +6.72
+    new in FY12, no prior-year revenue
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $ 68.33  $68.33  $149.85    +0.00   +81.52
+  FY2013E = FY12 $50.175B × (1 + 36.2%: the Q4 2012 revenue growth (no Q1 2013 guide), YoY, applied to the year (no FY13 revenue guide)); split pro rata to FY12 revenues by source (FY12 growth)
+  Q4 2012 (Jan 22): revenue $14.419B +36.2% YoY (+2.3% QoQ); receivables +45.3%; R&D + S&M + G&A +42.6%;
+  gross margin 56.91% (-811.2bp); operating margin 23.54% (-959.7bp); EPS $8.68 vs $8.22
+  Revenue: revenues $14,419.0M vs $10,584.0M a year earlier, $14,101.0M the quarter before (Google web sites $8,640.0M, Google Network web sites $3,436.0M, other $829.0M, Motorola $1,514.0M); 'Aggregate paid clicks, which include clicks related to ads served on Google sites and the sites of our Network members, increased approximately 24% over the fourth quarter of 2011 and increased approximately 9% over the third quarter of 2012.'; accounts receivable $7,885.0M (2012-12-31) vs $5,427.0M a year earlier (the release's December 31, 2011 column); GAAP diluted EPS from continuing operations $8.68 vs $8.22; diluted shares 335.0M; 'Headcount - On a worldwide basis, we employed 53,861 full-time employees (37,544 in Google and 11,113 in Motorola Mobile and 5,204 in Motorola Home) as of December 31, 2012, compared to 53,546 full-time employees as of September 30, 2012.'; 'TAC as a percentage of advertising revenues was 25% in the fourth quarter of 2012, compared to 24% in the fourth quarter of 2011.'; Motorola Home a discontinued operation from this release: 'As a result, financial results related to the Home business are presented as net loss from discontinued operations on the consolidated statements of income, and are excluded from all other results unless otherwise noted.'; the quarter before is the Q3 2012 release's, with Motorola Home in it (a seam in the sequential change, display only)
+  Q1 2013: no revenue, EPS or margin guide in numbers in any filing; the latest quarter's revenue growth stands in (the UNP rule); in words only, the FY12 10-K: 'Our revenue growth rate could decline over time, and we anticipate downward pressure on our operating margin in the future.' (display only); the releases estimate stock-based compensation, dilution and capital expenditure, which method r2 has no input for
+
+  FY2013E EPS check:  $68.330B × 26.7% pre-tax × (1−19.4%) ÷ 0.335B  =  $43.86  (FY2013E: no EPS guide in numbers, FY12's $32.46 stands)
+  FY2015E BEAR check: $68.330B × 26.7% ÷ 0.354B  =  $41.48  (scenario $32.46)
+  FY2015E BULL check: $149.850B × 27.1% ÷ 0.354B  =  $92.32  (scenario $85.75)
+  Every 1pp of pre-tax margin ≈ $1.644 EPS ≈ $45.37/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Revenue growth                        -88.0%    ≥73.0%   ≥234.0%  ≥8585.0%    +36.2%  ⚠ BEAR  █░░░
+  Gross margin change                 -2910.0bp  ≥-1350.0bp  ≥210.0bp  ≥38090.0bp  -811.2bp  ◦ BASE  ██░░
+  Opex growth less revenue            +183.0pp   ≤72.0pp  ≤-38.0pp  ≤-8252.0pp    +6.3pp  ◦ BASE  ██░░
+  Receivables growth less revenue      +55.0pp   ≤28.0pp    ≤2.0pp  ≤-84.0pp    +9.1pp  ◦ BASE  ██░░
+  Operating margin change             -5090.0bp  ≥-1910.0bp  ≥1280.0bp  ≥288470.0bp  -959.7bp  ◦ BASE  ██░░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.80 / 4.00
+  Market composite:   1.22 / 4.00  (back-solved from $810.31 + 15% hurdle)
+  SCA adjustment:    +0.21  ·  EPP-distance adj +0.00  →  Adj composite 2.01  →  Gap +0.79  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY12 revenues +32.4%, gross margin 58.9%; Q4 gross margin 56.91% (-811bp YoY)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 25.0x FY13E vs a 27.6x 8.6-yr median (48th percentile of its own range)  (+0.03 × 25%  =  +0.007)
+    +  Growth vs own history: Q4 2012 revenue growth (no Q1 2013 guide) +36.2% vs a 32.4% 9-yr median  (+0.38 × 20%  =  +0.076)
+    +  Cash, cash equivalents and marketable securities $48.088B, short-term debt $2,549.0M and long-term debt $2,988.0M (Q4 2012), FY12 free cash flow $13.346B (cash from operations $16,619.0M less purchases of property and equipment $3,273.0M), no dividend  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Revenue growth                        +36.2%    -88.0%  -124.2%  Advertisers cut budgets: fewer paid c…
+  Gross margin change                 -811.2bp  -2910.0bp  -2098.8bp  Traffic acquisition and data-center c…
+  Opex growth less revenue              +6.3pp  +183.0pp  +176.7pp  Hiring and R&D do not slow with revenue
+  Receivables growth less revenue       +9.1pp   +55.0pp  +45.9pp  Advertisers pay more slowly: collecti…
+  Operating margin change             -959.7bp  -5090.0bp  -4130.3bp  Operating leverage works in reverse
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$1,215.99  (model)  /  $587.53 (defined)
+  Bear probability (proxy model):  29.4%
+
+  KEY TRIGGER: revenue went from +45.1% (Q3 2012) to +36.2% YoY (Q4 2012), +2.3% on the quarter before;
+  the bear case needs a downturn in gross margin (-811.2bp now)
+  and receivables (+9.1pp against revenue) giving way. An advertising slowdown shows up in paid clicks and revenue growth first;
+  the bear needs it in gross margin as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $32.46  (FY2013E: no EPS guide in numbers, FY12's $32.46 stands)
+  Min viable P/E at panic:          20x  [median of calendar-year P/E lows: 2004 67.1x, 2005 34.9x, 2006 33.9x, 2007 33.0x, 2008 19.3x, 2009 13.9x, 2010 16.6x, 2011 16.0x, 2012 17.2x, 2013 21.7x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $649.20/share
+  Current $810.31 vs Updated EPP $649.20:  +25%  moderate distance to floor
+  Bear $587.53 vs Updated EPP $649.20:  -9%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Revenue growth                                73.0      +36.8   BASE floor (vs +36 now)
+  Gross margin change                        -1350.0     -538.8   BASE floor (vs -811 now)
+  Opex growth less revenue                      72.0      +65.7   BASE floor (vs +6 now)
+  Receivables growth less revenue               28.0      +18.9   BASE floor (vs +9 now)
+  Operating margin change                    -1910.0     -950.3   BASE floor (vs -960 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $32.46 × (1+31.4%)² = $56.02
+  At 27x P/E (conservative):  $1,512.53/share
+  + Cumul. dividends (2yr):  +$0.00/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $1,512.53  (▲702.22 from $810.31)
+  Conservative total return:  +87% over 2yr  = +43%/yr
+
+  At 25.0x the multiple is already near its 27x median, so the conservative
+  case is a growth question: breakeven at 27x needs FY2015E EPS of $30.01,
+  i.e. -3.8%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $556.52  –  $844.00  (at 88th pct of range)
+  Annual dividend:      $0.00/share  (yield 0.0%)
+  Realized vol:         22% annualized (1-yr daily log returns)
+  Beta vs broad market: 0.90
+  1-sigma range (1yr):  $635.28  –  $985.34  ($810.31 ± 22%)
+  2-sigma range (1yr):  $460.26  –  $1,160.36
+  ────────────────────────────────────────────────────────────
+  Bear $587.53 requires:  ~1.3σ price move  (within normal vol range)
+  An advertising business whose revenue follows advertisers' budgets: the stock is +45% off its June
+  low (52 weeks) while revenue went from +45.1% (Q3 2012) to +36.2% YoY (Q4 2012), +2.3% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR       32.46   18.1x  $ 587.53    29.4%     72.2%   -42.9pp  EPS +0.0%/yr (worst year FY03-FY12, capped at 0%); P/E to its 10th pct
+  BASE       57.74   27.6x  $1,593.62    52.7%     20.7%   +32.0pp  EPS +33.4%/yr (Q4 revenue YoY + margin + buyback); P/E at its 8.6-yr median
+  BULL       85.75   40.7x  $3,490.03    15.1%      5.9%    +9.2pp  EPS +62.5%/yr (FY03-FY12 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL     397.44   57.2x  $22,733.57     2.9%      1.1%    +1.7pp  EPS +249.9%/yr (best 2-yr run FY03-FY12, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $2,186.60  /  Market EV: $1,215.99  /  Current: $810.31
+  Conservative EV (2yr, ④): $1,512.53 + $0.00 divs = $1,512.53 total value
+  Downside (→ Bear $587.53): 27.5%   Upside (→ Bull $3490.03): 330.7%   Ratio B 0.08x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $810.31 the market needs $1,071.63 in two years —
+  at or below the BASE case. That is a market composite of 1.22 against a model
+  read of 2.01: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.08x     +25%    +0.79  UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.04x     +25%    +0.79  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.16x     +25%    +0.66  UNDERVALUED / BUY
+  Scenario EPS +1.5pp/yr                          0.07x     +25%    +1.01  UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.09x     +25%    +1.01  UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.08x     +25%    +1.09  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.08x      +9%    +0.79  UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.08x     +25%    +0.79  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 2013 print (the quarter ends in March) — revenue against the Q4 2012 revenue growth (no Q1 2013 guide): +36.2% YoY
+  (2) Gross margin — -811.2bp in Q4 2012: traffic acquisition and data-center costs against revenue, what must hold if revenue does not
+  (3) A Q1 2013 revenue guide — none: Google gives no revenue, EPS or margin outlook in any filing; aggregate paid clicks and traffic acquisition costs are in each release
+  (4) Receivables — +45.3% against revenue +36.2% in Q4 2012 (+9.1pp): advertisers paying more slowly would show here first
+  (5) Capital structure at 25x — no dividend ('We have never declared or paid any cash dividend on our common stock.') and no share repurchase in the period
+  ◉ BUY  |  EPP floor $649.20  |  ADD below ~$1,354.58  |  TRIM above $3,490.03
+════════════════════════════════════════════════════════════════════════
+
