@@ -1,0 +1,279 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "GOOG",
+ "company": "Google Inc.",
+ "as_of": "2014-07-03",
+ "price_date": "2014-07-03",
+ "price": 584.73,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); revenue, margin, expense and receivables signals with Google's rule-T thresholds",
+ "pit_profile": {
+  "kind": "CYCLICAL",
+  "risk": 2,
+  "why": "'Google is a global technology leader focused on improving the ways people connect with information.' 'We generate a significant portion of our revenues from advertising, and a reduction in spending by or loss of advertisers could seriously harm our business.' 'We face intense competition.' 'As our growth rate has slowed, the cyclicality and seasonality in our business has become more pronounced and caused our operating results to fluctuate.' 'In addition, expenditures by advertisers tend to be cyclical, reflecting overall economic conditions and budgeting and buying patterns.' (FY2013 10-K); CYCLICAL: the 10-K says so of its own business ('the cyclicality and seasonality in our business'), the BKR, CAT and NVDA reading, not an industry's words; no theme in taxonomy_eras.json is live for a search and advertising company on these dates (OFFSHORE is scoped to IT services; CLOUD, live from 2012-10-30, is scoped to public cloud displacing on-premise IT, and this 10-K names the cloud only as Google's own products and services ('We now also offer infrastructure and cloud services to developers and businesses with Google Cloud Platform.'), so it is out of scope (the AVGO FY2012 and NVDA reading)), so the watch list is empty; the competition named is a competitive field, not a theme, and stays here (the PEP obesity rule)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "CYCLICAL, RISK PRICED IN",
+  "quality_label": "◎ CYCLICAL, RISK PRICED IN",
+  "quality_color": "#f0b429",
+  "quality_tone": "amber",
+  "business_kind": "CYCLICAL",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "'Google is a global technology leader focused on improving the ways people connect with information.' 'We generate a significant portion of our revenues from advertising, and a reduction in spending by or loss of advertisers could seriously harm our business.' 'We face intense competition.' 'As our growth rate has slowed, the cyclicality and seasonality in our business has become more pronounced and caused our operating results to fluctuate.' 'In addition, expenditures by advertisers tend to be cyclical, reflecting overall economic conditions and budgeting and buying patterns.' (FY2013 10-K); CYCLICAL: the 10-K says so of its own business ('the cyclicality and seasonality in our business'), the BKR, CAT and NVDA reading, not an industry's words; no theme in taxonomy_eras.json is live for a search and advertising company on these dates (OFFSHORE is scoped to IT services; CLOUD, live from 2012-10-30, is scoped to public cloud displacing on-premise IT, and this 10-K names the cloud only as Google's own products and services ('We now also offer infrastructure and cloud services to developers and businesses with Google Cloud Platform.'), so it is out of scope (the AVGO FY2012 and NVDA reading)), so the watch list is empty; the competition named is a competitive field, not a theme, and stays here (the PEP obesity rule). cyclical (obsolescence risk 2/5); price cheap; Ratio B 0.30x; +71% to EPP floor; model-vs-market gap +0.19; conservative 2yr +14%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.3,
+  "ratio_b_fmt": "0.30x",
+  "epp": 342.47,
+  "epp_gap_pct": 70.7,
+  "epp_adj": -0.1,
+  "proxy_composite": 1.95,
+  "sca": -0.007,
+  "adj_composite": 1.842,
+  "market_composite": 1.65,
+  "adj_gap": 0.19,
+  "valuation": "FAIRLY VALUED",
+  "cons_return_2yr": 13.6,
+  "scenarios": {
+   "BEAR": {
+    "eps": 18.02,
+    "pe": 18.3,
+    "price": 329.77,
+    "desc": "EPS +0.0%/yr (worst year FY04-FY13, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 24.56,
+    "pe": 28.1,
+    "price": 690.14,
+    "desc": "EPS +16.7%/yr (Q1 revenue YoY + margin + buyback); P/E at its 9.9-yr median"
+   },
+   "BULL": {
+    "eps": 36.59,
+    "pe": 39.2,
+    "price": 1434.33,
+    "desc": "EPS +42.5%/yr (FY04-FY13 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 120.25,
+    "pe": 53.7,
+    "price": 6457.43,
+    "desc": "EPS +158.3%/yr (best 2-yr run FY04-FY13, at least BULL); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.3,
+   "epp_gap_pct": 70.7,
+   "adj_gap": 0.19,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 13.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.16,
+   "epp_gap_pct": 70.7,
+   "adj_gap": 0.58,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 13.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 0.61,
+   "epp_gap_pct": 70.7,
+   "adj_gap": -0.26,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 13.6,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.27,
+   "epp_gap_pct": 70.7,
+   "adj_gap": 0.23,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 13.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.33,
+   "epp_gap_pct": 70.7,
+   "adj_gap": 0.15,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 13.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.3,
+   "epp_gap_pct": 70.7,
+   "adj_gap": 0.49,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 13.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.3,
+   "epp_gap_pct": 47.5,
+   "adj_gap": 0.19,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 13.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.3,
+   "epp_gap_pct": 70.7,
+   "adj_gap": 0.3,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 13.6,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP",
+  "FAIR"
+ ],
+ "summary": "GOOG (retrospective, 2014-07-03) ◉ BUY — Ratio B 0.30x (43.6% downside to Bear $329.77 / +145.3% upside to Bull $1434.33) | Adj composite 1.84 vs market 1.65: gap +0.19 [FAIRLY VALUED] | +71% above the EPP floor $342.47 (19x FY14E $18.02) | Conservative 2-yr case: +13.6% total (+6.8%/yr) | At 32.4x FY14E the 15% hurdle price $773.31 sits between the BASE and BULL cases; revenue +19.1% YoY in Q1 2014, forward revenues +19.1% (Q1 2014 revenue growth (no Q2 2014 guide)); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "GOOG66",
+   "published": "2014-02-12",
+   "filed": "accepted 2014-02-11 18:08 ET (after the 16:00 ET close)",
+   "title": "Google FY2013 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000128877614000020/goog2013123110-k.htm",
+   "supports": "selected financial data 2009-2013 (EPS from continuing operations), statements of income and cash flows 2011-2013, diluted shares 2011-2013, revenues by source 2011-2013, the business description, risk factors and Item 5"
+  },
+  {
+   "id": "GOOG58",
+   "published": "2013-01-30",
+   "filed": "accepted 2013-01-29 17:29 ET (after the 16:00 ET close)",
+   "title": "Google FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312513028362/d452134d10k.htm",
+   "supports": "selected financial data 2008-2012 (EPS from continuing operations), statements of income and cash flows 2010-2012, diluted shares 2010-2012, revenues by source 2010-2012, the business description, risk factors and Item 5"
+  },
+  {
+   "id": "GOOG50",
+   "published": "2012-01-27",
+   "filed": "accepted 2012-01-26 17:12 ET (after the 16:00 ET close)",
+   "title": "Google FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312512025336/d260164d10k.htm",
+   "supports": "selected financial data 2007-2011, statements of income and cash flows 2009-2011, diluted shares 2009-2011, revenues by source 2009-2011, the business description, risk factors and Item 5"
+  },
+  {
+   "id": "GOOG42",
+   "published": "2011-02-14",
+   "filed": "accepted 2011-02-11 17:13 ET (after the 16:00 ET close)",
+   "title": "Google FY2010 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312511032930/d10k.htm",
+   "supports": "selected financial data 2006-2010 (in millions), statements of income and cash flows 2008-2010, diluted shares 2008-2010, revenues by source 2008-2010, the business description, risk factors and Item 5"
+  },
+  {
+   "id": "GOOG34",
+   "published": "2010-02-16",
+   "filed": "accepted 2010-02-12 17:19 ET (after the 16:00 ET close)",
+   "title": "Google FY2009 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312510030774/d10k.htm",
+   "supports": "selected financial data 2005-2009, statements of income and cash flows 2007-2009, diluted shares 2007-2009, revenues by source 2007-2009, the business description, risk factors and Item 5"
+  },
+  {
+   "id": "GOOG26",
+   "published": "2009-02-17",
+   "filed": "accepted 2009-02-13 17:22 ET (after the 16:00 ET close)",
+   "title": "Google FY2008 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312509029448/d10k.htm",
+   "supports": "selected financial data 2004-2008, diluted shares 2006-2008, revenues by source 2006-2008, cash flows, the business description, risk factors and Item 5"
+  },
+  {
+   "id": "GOOG18",
+   "published": "2008-02-19",
+   "filed": "accepted 2008-02-15 17:20 ET (after the 16:00 ET close)",
+   "title": "Google FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312508032690/d10k.htm",
+   "supports": "selected financial data 2003-2007, diluted shares 2005-2007, revenues by source 2005-2007, cash flows, the business description, risk factors and Item 5"
+  },
+  {
+   "id": "GOOG5",
+   "published": "2007-03-02",
+   "filed": "accepted 2007-03-01 16:52 ET (after the 16:00 ET close)",
+   "title": "Google FY2006 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312507044494/d10k.htm",
+   "supports": "selected financial data 2002-2006, diluted shares 2004-2006, revenues by source 2004-2006, cash flows, the December 2005 and 2006 receivables (rule T), the business description, risk factors and Item 5"
+  },
+  {
+   "id": "GOOG3",
+   "published": "2005-02-02",
+   "filed": "accepted 2005-02-01 16:29 ET (after the 16:00 ET close)",
+   "title": "Google Q4 2004 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312505016344/dex991.htm",
+   "supports": "FY2004 diluted EPS of $1.49 before material non-recurring and other items (GAAP $1.46)"
+  },
+  {
+   "id": "GOOG65",
+   "published": "2014-01-31",
+   "filed": "accepted 2014-01-30 16:01 ET (after the 16:00 ET close)",
+   "title": "Google Q4 2013 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000128877614000013/googq42013exhibit991.htm",
+   "supports": "revenues by source, costs and expenses, operating income, diluted EPS and shares against the year-ago quarter; receivables, cash and debt; paid clicks, TAC and headcount; FY2013 actuals"
+  },
+  {
+   "id": "GOOG61",
+   "published": "2013-10-18",
+   "filed": "accepted 2013-10-17 16:13 ET (after the 16:00 ET close)",
+   "title": "Google Q3 2013 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000128877613000063/googq32013exhibit991.htm",
+   "supports": "Q3 2013 revenues by source, costs and expenses, operating income, diluted EPS and shares against the year-ago quarter; receivables, cash and debt; paid clicks, TAC and headcount"
+  },
+  {
+   "id": "GOOG68",
+   "published": "2014-04-17",
+   "filed": "accepted 2014-04-16 16:02 ET (after the 16:00 ET close)",
+   "title": "Google Q1 2014 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000128877614000034/googq12014exhibit991.htm",
+   "supports": "revenues by source, costs and expenses, operating income, diluted EPS and shares against the year-ago quarter; receivables, cash and debt; paid clicks, TAC and headcount; Motorola Mobile discontinued"
+  },
+  {
+   "id": "GOOG62",
+   "published": "2013-04-26",
+   "filed": "accepted 2013-04-25 17:21 ET (after the 16:00 ET close)",
+   "title": "Google Q1 2013 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000128877613000030/goog-2013331x10q.htm",
+   "supports": "the quarter's receivables (the year-ago comparison of the next year's print) and the quarter's figures against its release"
+  },
+  {
+   "id": "GOOG67",
+   "published": "2014-03-27",
+   "filed": "accepted 2014-03-26 16:05 ET (after the 16:00 ET close)",
+   "title": "Google 8-K (Class C capital stock dividend; Item 3.03)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312514116456/d699871d8k.htm",
+   "supports": "the dividend of one share of Class C capital stock for each share of Class A and Class B common stock outstanding on its record date (a two-for-one split of the share count)"
+  },
+  {
+   "id": "Y0",
+   "published": "2014-07-03",
+   "title": "Yahoo Finance daily prices, GOOG and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/GOOG/history",
+   "supports": "close $584.73 as traded on AS_OF, 52-week range, realized vol, beta, the 9.9-yr P/E distribution from 2004-08-19"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-18"
+}

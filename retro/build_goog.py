@@ -27,6 +27,11 @@ model was built or scored):
 The kind is CYCLICAL: each 10-K says so of its own business ("the cyclicality and seasonality in our business"; the BKR, CAT and NVDA
 reading). No disruption theme in taxonomy_eras.json is live for a search and advertising company in 2008-2009, so the builder refuses
 events until a theme encoding is decided, and it refuses guides, dividends and listings until their encodings are decided.
+From 2014 (retro/README.md, "GOOG 2014-2017"): the Class C dividend of 2014 is a two-for-one split ('splits', effective on its record
+date 2014-03-27, Yahoo's split date), and every history figure is restated on the basis of the filing it comes from; Yahoo's GOOG series
+is the Class C capital stock from that date, and EPS is the priced class's (Class C from the split); Alphabet Inc. is the successor
+issuer from its 8-K12B ('company_names', the ACN rule); a Q4 release that prints no full-year diluted share count leaves the share
+history as it was until the 10-K.
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
 is the first trading day after it. Google released after the close on Thursdays, so a print is dated the Friday, the week's last
@@ -142,18 +147,22 @@ def as_restated(p, as_of):
 
 def on_basis(facts, as_of):
     """The fact sheet with every per-share fact on the AS_OF share basis: a split effective on or before AS_OF divides per-share values
-    whose share basis predates it and multiplies share counts by it (the NVDA helper; Google has no split in scope, so this is the
-    identity unless a split is added)."""
+    whose share basis predates it and multiplies share counts by it (the NVDA helper). A history figure's basis is the date of the
+    filing it comes from (each year from the latest filing that reports it: 'eps_sources', 'shares_sources'), unless 'share_basis'
+    says otherwise; a print's is its own date. Google's one split in scope is the Class C distribution (2014-03-27): before it this
+    is the identity."""
     f = copy.deepcopy(facts)
     splits = [s for s in f.get("splits", []) if s["effective"] <= as_of]
     k = lambda basis: math.prod(s["ratio"] for s in splits if basis < s["effective"])
+    pub = lambda v, kind, y: (f["sources"][v[kind][y]]["published"] if y in v.get(kind, {}) else v["published"])
     for v in f["history_vintages"]:
-        basis = lambda y: v.get("share_basis", {}).get(y, v["published"])
-        v["eps_normalized"] = {y: e / k(basis(y)) for y, e in v["eps_normalized"].items()}
-        v["diluted_shares_m"] = {y: n * k(basis(y)) for y, n in v["diluted_shares_m"].items()}
+        eps_basis = lambda y: v.get("share_basis", {}).get(y, pub(v, "eps_sources", y))
+        shares_basis = lambda y: v.get("share_basis", {}).get(y, pub(v, "shares_sources", y))
+        v["eps_normalized"] = {y: e / k(eps_basis(y)) for y, e in v["eps_normalized"].items()}
+        v["diluted_shares_m"] = {y: n * k(shares_basis(y)) for y, n in v["diluted_shares_m"].items()}
         notes = []
         for s in splits:
-            restated = [y for y in sorted(v["eps_normalized"]) if basis(y) < s["effective"]]
+            restated = [y for y in sorted(v["eps_normalized"]) if eps_basis(y) < s["effective"]]
             if restated:
                 notes.append(f"per share ÷{s['ratio']:g} for the split effective {s['effective']} ({s['source']}) on "
                              f"FY{restated[0][2:]}-FY{restated[-1][2:]}")
@@ -168,7 +177,7 @@ def on_basis(facts, as_of):
                 x["diluted_shares_m"] = x["diluted_shares_m"] * r
         if p.get("fy_actual") and p["fy_actual"]["eps_normalized"] is not None:
             p["fy_actual"]["eps_normalized"] /= r
-        if p.get("fy_actual"):
+        if p.get("fy_actual") and p["fy_actual"]["diluted_shares_m"] is not None:
             p["fy_actual"]["diluted_shares_m"] *= r
     for d in f.get("dividends", []):
         d["quarterly"] /= k(d["published"])
@@ -192,14 +201,15 @@ def build(as_of, facts, raw, spx, engine, out):
                     for v in chart.get("events", {}).get("splits", {}).values()}
     assert all(s["effective"] in yahoo_splits for s in facts.get("splits", [])), "a split's effective date must match the price data"
     # no filing of the period guides revenue, EPS or a margin and none states a dividend or a listing change: the builder refuses
-    # any such fact until its encoding is decided
-    for kind in ("guides", "dividends", "listings", "company_names"):
+    # any such fact until its encoding is decided (a change of company name is applied below: Alphabet Inc., the successor issuer)
+    for kind in ("guides", "dividends", "listings"):
         if [x for x in facts.get(kind, []) if x["published"] <= as_of]:
             sys.exit(f"{as_of}: the GOOG builder has no encoding for {kind}; decide one first")
     for p in [p for p in facts["prints"] if p["published"] <= as_of]:  # a print public on AS_OF must match its raw figures
         check_print(p, as_of)
     assert rule_t(facts["rule_t"]) == ENGINE_THRESHOLDS, "the engine's thresholds must follow rule T on the fact sheet's values"
     facts, split_ids = on_basis(facts, as_of)
+    split_dates = [s["effective"] for s in facts.get("splits", []) if s["effective"] <= as_of]
     vintages = [v for v in facts["history_vintages"] if v["published"] <= as_of]
     if not vintages:
         sys.exit(f"{as_of}: no history vintage in the fact sheet is public yet")
@@ -229,7 +239,10 @@ def build(as_of, facts, raw, spx, engine, out):
             h.update(fy_label=a["fy_label"],
                      eps_normalized={**h["eps_normalized"], **({y: a["eps_normalized"]} if a["eps_normalized"] is not None else {})},
                      revenue_usd_b={**h["revenue_usd_b"], y: a["revenue_usd_b"]},
-                     diluted_shares_m={**h["diluted_shares_m"], y: a["diluted_shares_m"]},
+                     # a Q4 release that prints no full-year diluted share count (Q4 2015, Q4 2016) leaves the share history as
+                     # it was until the 10-K
+                     diluted_shares_m={**h["diluted_shares_m"],
+                                       **({y: a["diluted_shares_m"]} if a["diluted_shares_m"] is not None else {})},
                      normalization=f'{h["normalization"]}; {a["normalization_note"]}',
                      prev_fy_op_margin=a["op_margin"], prev_fy_op_margin_note=a["op_margin_note"],
                      prev_fy_pretax_margin=a["pretax_margin"], prev_fy_pretax_margin_note=a["pretax_margin_note"],
@@ -323,9 +336,14 @@ def build(as_of, facts, raw, spx, engine, out):
         assert "before the open" in same_day[-1].get("release_time", ""), (as_of, same_day[-1]["quarter"], "released on AS_OF, not before the open")
         tag = f"(day of the {same_day[-1]['quarter']} print, public before the open)"
 
-    company = h["company"]
+    # a change of company name filed after the vintage (the ACN rule; Alphabet Inc., the successor issuer, from its 8-K12B)
+    renames = [n for n in facts.get("company_names", []) if h["published"] < n["published"] <= as_of]
+    company = renames[-1]["name"] if renames else h["company"]
     ids = (list(h["sources"]) + [x for p in prints for x in [p["source"]] + p.get("extra_sources", [])]
-           + [public[i - 1]["source"]] + ([dividend_src] if dividend_src else []) + split_ids)
+           + [public[i - 1]["source"]] + ([dividend_src] if dividend_src else []) + split_ids + [n["source"] for n in renames])
+    # the security priced: Yahoo's GOOG series is the Class A common stock before the Class C distribution, the Class C capital stock
+    # from its split date
+    security = (f"; the Class C capital stock (Yahoo's GOOG series from {split_dates[-1]})" if split_dates else "")
     sources = [dict(id=x, **facts["sources"][x]) for x in dict.fromkeys(ids)]
     sources.append({"id": "Y0", "published": as_of, "title": "Yahoo Finance daily prices, GOOG and S&P 500, truncated at AS_OF",
                     "url": "https://finance.yahoo.com/quote/GOOG/history",
@@ -377,7 +395,7 @@ PIT_PROFILE = {{
 
 # ── FACTS: market (prices truncated at AS_OF, as traded) ─────────────────────
 EXCHANGE        = {R(exchange)}   # display only
-CURRENT_PRICE   = {close:.2f}   # USD, {exchange} close {as_of}, as traded
+CURRENT_PRICE   = {close:.2f}   # USD, {exchange} close {as_of}, as traded{security}
 REQUIRED_RETURN = 0.15
 HORIZON_YEARS   = 2
 PE_PCTL         = {R(pctl)}   # current-FY P/E over the window below

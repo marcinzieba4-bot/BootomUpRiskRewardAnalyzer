@@ -1771,6 +1771,51 @@
     "term": "Alphabet Inc",
     "first_seen": "2015-08-11",
     "note": "the holding company announced for Google; first in a Google filing in its 8-K of 2015-08-10 (accepted 16:45 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "Other Bets",
+    "first_seen": "2015-10-23",
+    "note": "Alphabet's reporting name for its non-Google businesses (2015); first in a Google filing in the Q3 2015 earnings 8-K (ex.99.1, accepted 2015-10-22 16:09 ET under Google Inc., after the close), EDGAR full-text search"
+   },
+   {
+    "term": "Verily",
+    "first_seen": "2016-02-12",
+    "note": "Alphabet's life sciences unit (renamed from Google Life Sciences in 2015); first in a Google or Alphabet filing in the FY2015 10-K (accepted 2016-02-11 16:38 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "Waymo",
+    "first_seen": "2017-02-03",
+    "note": "Alphabet's self-driving car unit (2016); first in a Google or Alphabet filing in the FY2016 10-K (accepted 2017-02-02 18:13 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "Google Assistant",
+    "first_seen": "2017-02-03",
+    "note": "Google's voice assistant (2016); first in a Google or Alphabet filing in the FY2016 10-K (accepted 2017-02-02 18:13 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "Google Home",
+    "first_seen": "2017-02-03",
+    "note": "Google's smart speaker (2016); first in a Google or Alphabet filing in the FY2016 10-K (accepted 2017-02-02 18:13 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "DeepMind",
+    "first_seen": "2017-04-28",
+    "note": "Google's AI research unit (acquired 2014); first in a Google or Alphabet filing in the Q1 2017 earnings 8-K (the founders' letter, accepted 2017-04-27 16:02 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "YouTube TV",
+    "first_seen": "2020-02-04",
+    "note": "YouTube's live TV subscription (2017); first in a Google or Alphabet filing in the FY2019 10-K (accepted 2020-02-03 21:03 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "Google Pixel",
+    "first_seen": "2023-04-24",
+    "note": "Google's phone line (2016) by its full name; first in a Google or Alphabet filing in the 2022 annual report to shareholders (ARS, accepted 2023-04-21 17:13 ET on a Friday, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "Tensor Processing Unit",
+    "first_seen": "2026-04-27",
+    "note": "Google's AI accelerator (2016) by its full name; first in a Google or Alphabet filing in the 2026 proxy statement (DEF 14A, accepted 2026-04-24 16:15 ET on a Friday, after the close), EDGAR full-text search"
    }
   ]
  }

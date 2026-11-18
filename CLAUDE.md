@@ -23,7 +23,7 @@ touching either directory.
   outcomes or findings enters another's models. UNP (2008-2026 so far), LOW (2008-2026 so far), AAPL (2008-2026 so far),
   NKE (2008-2026 so far), AVGO (from its 2009-08-06 listing to 2026-10-30 so far), PEP (2008 to 2026-10-30 so far), MSFT
   (2008 to 2026-10-30 so far), XOM (2008 to 2026-10-30 so far), SHW (2008 to 2026-11-06 so far), WMT (2008 to 2026-11-06 so far), RCL (2008 to 2026-11-06 so far), MAR (2008 to 2026-11-03 so far), BKR (2008 to 2017-06-30, then 2019-02-01 to 2026-11-06 so far), PFE (2008 to 2026-11-04 so far), CMCSA (2008 to 2026-11-06 so far), CAT (2008 to 2026-11-06 so far), BMY (2008 to 2026-11-06 so far), NVDA (2008 to 2026-11-06 so far), F (2008-01-04 to 2026-11-06 so far; 2022-01-07 onward was built first at the owner's request, and dates before 2022 are an early era with its
-  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far) and GOOG (2008-01-04 to 2013-12-31 so far) sit in `staging/retrospective/` until the owner adds
+  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far) and GOOG (2008-01-04 to 2017-12-29 so far) sit in `staging/retrospective/` until the owner adds
   them to the archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM", "SHW", "WMT", "RCL", "MAR", "BKR", "PFE", "CMCSA", "CAT",
   "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py` and `mu_signal_model.py` files
   and today's profiles in `data/business_profiles.json` (NVDA's and SO's included) are 2026 analyses: never inputs to a retrospective. AVGO did not trade
@@ -89,6 +89,12 @@ touching either directory.
   $500M DOJ charge (the same encoding); Motorola is in the prints as published from Q2 2012 and FY2012 is EPS from continuing operations
   (Motorola Home discontinued); the Q3 2012 release, filed during the session, is dated that day; the decade rolls, so FY2001 and
   FY2002 leave the history; CLOUD is out of scope; each fact's text is scanned for dates, years and quarters after its own publication,
-  which found and corrected a leak in two 2008-2009 vintage notes (retro/README.md, "GOOG 2010-2013").
+  which found and corrected a leak in two 2008-2009 vintage notes (retro/README.md, "GOOG 2010-2013"). From 2014: the Class C dividend
+  is a two-for-one split effective on its record date, 2014-03-27 (Yahoo's split date), each history figure restated on the basis of its
+  own filing; Yahoo's GOOG series is the Class C capital stock from that date and EPS is the priced class's (FY2015 $24.34 for Class C,
+  which carries the $522M Adjustment Payment; $22.84 for Class A and B); Motorola Mobile is discontinued from the Q1 2014 release, while
+  FY2013 keeps it until the FY2014 10-K; Alphabet Inc. is the successor issuer from 2015-10-05; the Q2 2017 EC fine is at the company's
+  figure without it (the ACN rule); the 8-K recast of 2016-05-03 is a vintage of its own (display cash flow only); the classes now rest
+  mostly on the signals' rule-T bands (retro/README.md, "GOOG 2014-2017").
 - **Never use the owner's personal email** in request headers to external
   services (SEC asks for a contact in the User-Agent).

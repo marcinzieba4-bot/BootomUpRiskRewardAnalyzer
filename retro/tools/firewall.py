@@ -103,8 +103,9 @@ year, and a later vintage excluding a year with planted texts, figures, exchange
 every fact sheet with those lists gets, too); GOOG: a print whose revenues, margins, opex and receivables gaps, quarter EPS, cash,
 notes and raw figures are absurd, with absurd full-year actuals for the year after the latest vintage before CUTOFF, a later Q4 print
 whose full-year actuals exclude its own year, a later 10-Q restatement of the last print before CUTOFF with absurd figures, and a later
-vintage excluding a year with planted texts, figures, outlook words, exchange and window start (the guide, dividend, listing and
-company name every fact sheet with those lists gets, too), and from MU 2014-2017 a planted call sentence on the print and a later guide for every
+vintage excluding a year with planted texts, figures, outlook words, exchange and window start, every per-share figure on a planted
+share basis before every split (GOOG 2014-2017) (the guide, dividend, listing and company name every fact sheet with those lists gets,
+too), and from MU 2014-2017 a planted call sentence on the print and a later guide for every
 quarter guided before CUTOFF, in numbers and in words, and from MU 2022-2026 the later vintage of the other kind; every
 fact sheet with a 'splits' list, SHW's from 2021-2023: a later split on the price data's next split date; a CLOUD event
 from a later 10-K, as for every live theme), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
@@ -681,6 +682,8 @@ try:
                  prev_fy_sales_growth=-99.0, tax_rate=0.99, tax_note="PLANTED", fcf_b=-99.0, fcf_note="PLANTED", cash_b=99.0,
                  dividend_annual=9.99, dividend_note="PLANTED", cash_return_text="PLANTED", groups=[["PLANTED", 1, -99]],
                  groups_basis="PLANTED", exchange="PLANTED", pe_window_start="1990-01-02", outlook_words="PLANTED")
+        # (GOOG 2014-2017) every per-share figure of the later vintage on a planted share basis before every split
+        v["share_basis"] = {y: "1990-01-01" for y in v["eps_normalized"]}
     if TICKER == "MU":     # a later vintage excluding a year and readmitting none, with planted texts and figures
         v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}
         v.update(normalization="PLANTED", business_line="PLANTED", prev_fy_op_margin=-99.0, prev_fy_op_margin_note="PLANTED",
