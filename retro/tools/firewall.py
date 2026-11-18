@@ -99,7 +99,8 @@ words (LMT 2018-2021), and the vintage with planted severe-weather and artificia
 print whose net sales, margins, opex and inventory gaps, quarter EPS, cash, debt, notes and raw figures are absurd, with absurd
 full-year actuals for the year after the latest vintage before CUTOFF, a later Q4 print whose full-year actuals exclude its own
 year, and a later vintage excluding a year with planted texts, figures, exchange and window start (the guide, dividend and listing
-every fact sheet with those lists gets, too); every
+every fact sheet with those lists gets, too), and from MU 2014-2017 a planted call sentence on the print and a later guide for every
+quarter guided before CUTOFF, in numbers and in words; every
 fact sheet with a 'splits' list, SHW's from 2021-2023: a later split on the price data's next split date; a CLOUD event
 from a later 10-K, as for every live theme), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
@@ -287,7 +288,7 @@ PLANT = {"ACN": dict(quarter="Q9 FY99", revenue_lc=-60, margin_bp=-999, fy_eps_g
                     opex_pct=99.0, opex_gap_pp=99.0, inventory_b=99.0, inventory_pct=99.0, inventory_gap_pp=99.0, eps_q=0.01,
                     eps_q_prior=9.99, diluted_shares_m=1.0, cash_b=99.0, ltd_b=99.0, debt_note="PLANTED", sales_note="PLANTED",
                     inventory_note="PLANTED", eps_note="PLANTED", shares_note="PLANTED", next_print="PLANTED",
-                    cash_return_text="PLANTED", note="PLANTED",
+                    cash_return_text="PLANTED", note="PLANTED", outlook_venue="PLANTED",
                     raw=dict(sales_m=1, sales_prior_m=99, sales_prev_q_m=99, gross_profit_m=1, gross_profit_prior_m=1, rd_m=99,
                              rd_prior_m=1, sga_m=99, sga_prior_m=1, op_income_m=-99, op_income_prior_m=99, inventory_m=99,
                              inventory_prior_m=1)),
@@ -585,6 +586,17 @@ try:
         q4.update(quarter="Q4 FY98", fy=2098, q=4, published=later)
         q4["fy_actual"] = {**fa, "fy": 2098, "fy_label": "FY98", "eps_normalized": None, "excluded_note": "PLANTED"}
         f["prints"].append(q4)
+    if TICKER == "MU":     # (MU 2014-2017) a later guide for every quarter guided before CUTOFF (the latest guide for a quarter wins), in
+                           # numbers (a valid planted level, so it would reach a model) and in words, and planted words for every guided quarter
+        for g in [g for g in f["guides"] if g["published"] < cutoff]:
+            if "words" in g:
+                f["guides"].append({**copy.deepcopy(g), "published": later, "doc": "PLANTED", "words": "PLANTED"})
+            else:
+                f["guides"].append({**{k: v for k, v in copy.deepcopy(g).items() if k not in ("level_center_m", "level_pm_m", "level_pm_pct")},
+                                    "published": later, "doc": "PLANTED", "level_m": [0.5, 0.6], "prior_sales_m": 1.0,
+                                    "yoy_pct": [-50.0, -40.0], "quote": "PLANTED", "display": "PLANTED"})
+        for q in sorted({g["quarter"] for g in f["guides"] if g.get("quarter")}):
+            f["guides"].append({"fy": 2099, "published": later, "source": last["source"], "doc": "PLANTED", "quarter": q, "words": "PLANTED"})
     if TICKER == "MU":     # absurd full-year actuals on the planted print for the year after the latest vintage (or Q4 print) before
                            # CUTOFF, and a later Q4 print whose full-year actuals exclude its own year (FY2007-FY2009's encoding)
         v0 = max((x for x in f["history_vintages"] if x["published"] < cutoff), key=lambda x: x["published"])

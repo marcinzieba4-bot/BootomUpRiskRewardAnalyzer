@@ -23,7 +23,7 @@ touching either directory.
   outcomes or findings enters another's models. UNP (2008-2026 so far), LOW (2008-2026 so far), AAPL (2008-2026 so far),
   NKE (2008-2026 so far), AVGO (from its 2009-08-06 listing to 2026-10-30 so far), PEP (2008 to 2026-10-30 so far), MSFT
   (2008 to 2026-10-30 so far), XOM (2008 to 2026-10-30 so far), SHW (2008 to 2026-11-06 so far), WMT (2008 to 2026-11-06 so far), RCL (2008 to 2026-11-06 so far), MAR (2008 to 2026-11-03 so far), BKR (2008 to 2017-06-30, then 2019-02-01 to 2026-11-06 so far), PFE (2008 to 2026-11-04 so far), CMCSA (2008 to 2026-11-06 so far), CAT (2008 to 2026-11-06 so far), BMY (2008 to 2026-11-06 so far), NVDA (2008 to 2026-11-06 so far), F (2008-01-04 to 2026-11-06 so far; 2022-01-07 onward was built first at the owner's request, and dates before 2022 are an early era with its
-  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far) and MU (2008-01-04 to 2013-12-31 so far) sit in `staging/retrospective/` until the owner adds
+  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far) and MU (2008-01-04 to 2017-12-29 so far) sit in `staging/retrospective/` until the owner adds
   them to the archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM", "SHW", "WMT", "RCL", "MAR", "BKR", "PFE", "CMCSA", "CAT",
   "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py` and `mu_signal_model.py` files
   and today's profiles in `data/business_profiles.json` (NVDA's and SO's included) are 2026 analyses: never inputs to a retrospective. AVGO did not trade
@@ -69,6 +69,10 @@ touching either directory.
   10-K is a vintage of its own; FY2010's $1.85 is kept (the Numonyx gain under the test), FY2011 is excluded by the mirror test (the
   Samsung cross-license gains) and FY2013 by it too (the Elpida gain; a loss without it), FY2012 is a loss, and FY2006 stays a gap, so
   FY10's $1.85 anchors 2010-10-08 to 2013-12-31; the FY2011 and FY2006 readings are the series' largest calls (118 and 152 classes the
-  other way) (retro/README.md, "MU 2010-2013").
+  other way) (retro/README.md, "MU 2010-2013"). From 2014: GAAP still (the non-GAAP figures remove recurring items: debt discount
+  amortization, currency results, from FY17 stock compensation); FY2014 ($2.54), FY2015 ($2.47) and FY2017 ($4.41) are kept, FY2016 is
+  a loss and a gap; the outlook reaches the filings on 8-K slides from 2016-11-29 (two conference updates, then each quarter's guidance
+  slide), read against the year-ago quarter (the NVDA level rule, with a dollar plus-or-minus form); guidance given only on the call is not
+  a filing (retro/README.md, "MU 2014-2017").
 - **Never use the owner's personal email** in request headers to external
   services (SEC asks for a contact in the User-Agent).

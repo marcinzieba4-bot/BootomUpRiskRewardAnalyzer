@@ -1,0 +1,155 @@
+
+════════════════════════════════════════════════════════════════════════
+  MU  ·  Micron Technology, Inc.  ·  $32.34  ·  RETROSPECTIVE as of 2014-06-25
+  Signal: ◉ BUY   Ratio B: 0.15x   Adj gap: +1.55  [UNDERVALUED]
+  Point-in-time: 18 sources, latest published 2014-06-25; latest print Q3 FY14 (Jun 23)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2014E revenue, USD bn  →  FY2016E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2014E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  DSG                           $  6.05  $ 6.05  $ 7.10    +0.00    +1.05
+    +30.8% revenue in FY13
+  NSG                           $  4.88  $ 4.88  $ 5.73    +0.00    +0.85
+    -0.4% revenue in FY13
+  WSG                           $  2.10  $ 2.10  $ 2.46    +0.00    +0.36
+    +3.1% revenue in FY13
+  ESG                           $  2.05  $ 2.05  $ 2.41    +0.00    +0.36
+    +13.3% revenue in FY13
+  All Other                     $  0.51  $ 0.51  $ 0.60    +0.00    +0.09
+    -34.1% revenue in FY13
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $ 15.59  $15.59  $18.30    +0.00    +2.71
+  FY2014E = FY13 $9.073B × (1 + 71.8%: the Q3 FY14 revenue growth (no Q4 FY14 guide), YoY, applied to the year (no FY14 revenue guide)); split pro rata to FY13 segment net sales (FY2013 10-K)
+  Q3 FY14 (Jun 23): revenue $3.982B +71.8% YoY (-3.0% QoQ); inventories +46.2%; R&D + SG&A +48.2%;
+  gross margin 34.35% (+1036.8bp); operating margin 21.07% (+1464.2bp); EPS $0.68 vs $0.04
+  Revenue: net sales $3,982M vs $2,318M a year earlier, $4,107M the quarter before; inventories $2,532M (2014-05-29) vs $1,732M a year earlier (Q3 FY13 10-Q); GAAP diluted EPS $0.68 vs $0.04; diluted shares 1190.0M
+  Q4 FY14: no revenue guide in numbers in any filing (the Q3 FY14 release: 'The call, audio, slides, other operational and financial information, and guidance will be available online at http://investors.micron.com/events.cfm'; a call and its website are not filings, the NVDA rule); the latest quarter's revenue growth stands in (the UNP rule); no fiscal-year revenue, EPS or margin guide
+
+  FY2014E EPS check:  $15.590B × 14.2% pre-tax × (1−0.6%) ÷ 1.190B  =  $1.84  (FY2014E: no EPS guide in numbers, FY10's $1.85 stands (FY11, FY12, FY13 excluded))
+  FY2016E BEAR check: $15.590B × 14.2% ÷ 1.320B  =  $1.66  (scenario $1.85)
+  FY2016E BULL check: $18.300B × 14.6% ÷ 1.320B  =  $2.01  (scenario $5.13)
+  Every 1pp of pre-tax margin ≈ $0.130 EPS ≈ $1.69/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Revenue growth                        -86.0%   ≥-38.0%     ≥9.0%   ≥147.0%    +71.8%  ▲ BULL  ███░
+  Gross margin change                 -9420.0bp  ≥-4820.0bp  ≥-230.0bp  ≥3050.0bp  +1036.8bp  ▲ BULL  ███░
+  Opex growth less revenue            +109.0pp   ≤55.0pp    ≤2.0pp  ≤-102.0pp   -23.6pp  ▲ BULL  ███░
+  Inventory growth less revenue        +97.0pp   ≤51.0pp    ≤5.0pp  ≤-43.0pp   -25.6pp  ▲ BULL  ███░
+  Operating margin change             -12480.0bp  ≥-6240.0bp    ≥0.0bp  ≥4400.0bp  +1464.2bp  ▲ BULL  ███░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.85 / 4.00
+  Market composite:   1.38 / 4.00  (back-solved from $32.34 + 15% hurdle)
+  SCA adjustment:    +0.18  ·  EPP-distance adj -0.10  →  Adj composite 2.93  →  Gap +1.55  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY13 net sales +10.2%, gross margin 20.4%; Q3 gross margin 34.35% (+1037bp YoY)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 17.5x FY14E vs a 13.0x 10-yr ex-FY06 ex-FY07 ex-FY08 ex-FY09 ex-FY11 ex-FY12 ex-FY13 median (60th percentile of its own range)  (-0.17 × 25%  =  -0.043)
+    +  Growth vs own history: Q3 FY14 revenue growth (no Q4 FY14 guide) +71.8% vs a 7.9% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  Cash and short-term investments $4.264B, long-term debt $4,137M and current debt $1,508M (Q3 FY14), FY13 free cash flow $0.567B (net cash provided by operating activities $1,811M less expenditures for property, plant and equipment $1,244M), no dividend  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Revenue growth                        +71.8%    -86.0%  -157.8%  Oversupply and falling selling prices…
+  Gross margin change                 +1036.8bp  -9420.0bp  -10456.8bp  Selling prices fall faster than cost …
+  Opex growth less revenue             -23.6pp  +109.0pp  +132.6pp  R&D and SG&A do not come down with re…
+  Inventory growth less revenue        -25.6pp   +97.0pp  +122.6pp  Inventory builds ahead of demand: wri…
+  Operating margin change             +1464.2bp  -12480.0bp  -13944.2bp  Operating leverage works in reverse
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$33.81  (model)  /  $8.14 (defined)
+  Bear probability (proxy model):  5.0%
+
+  KEY TRIGGER: revenue went from +97.6% (Q2 FY14) to +71.8% YoY (Q3 FY14), -3.0% on the quarter before;
+  the bear case needs a downturn in gross margin (+1036.8bp now)
+  and inventories (-25.6pp against revenue) giving way. A memory downturn shows up in average selling prices and inventories
+  first; the bear needs it in gross margin as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $1.85  (FY2014E: no EPS guide in numbers, FY10's $1.85 stands (FY11, FY12, FY13 excluded))
+  Min viable P/E at panic:          9x  [median of calendar-year P/E lows: 2004 38.2x, 2005 32.4x, 2009 3.6x, 2010 3.5x, 2013 7.3x, 2014 11.2x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $16.65/share
+  Current $32.34 vs Updated EPP $16.65:  +94%  ⚠ far above floor — large drawdown room
+  Bear $8.14 vs Updated EPP $16.65:  -51%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Revenue growth                               -38.0     -109.8   BASE floor (vs +72 now)
+  Gross margin change                        -4820.0    -5856.8   BASE floor (vs +1037 now)
+  Opex growth less revenue                      55.0      +78.6   BASE floor (vs -24 now)
+  Inventory growth less revenue                 51.0      +76.6   BASE floor (vs -26 now)
+  Operating margin change                    -6240.0    -7704.2   BASE floor (vs +1464 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $1.85 × (1+64.5%)² = $5.01
+  At 13x P/E (conservative):  $65.07/share
+  + Cumul. dividends (2yr):  +$0.00/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $65.07  (▲32.73 from $32.34)
+  Conservative total return:  +101% over 2yr  = +51%/yr
+
+  64.5% EPS growth is what is left once the premium multiple (17.5x)
+  mean-reverts to 13x. Breakeven at 13x needs FY2016E EPS of $2.49,
+  i.e. 16.0%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $12.31  –  $32.97  (at 97th pct of range)
+  Annual dividend:      $0.00/share  (yield 0.0%)
+  Realized vol:         38% annualized (1-yr daily log returns)
+  Beta vs broad market: 1.48
+  1-sigma range (1yr):  $20.05  –  $44.63  ($32.34 ± 38%)
+  2-sigma range (1yr):  $7.76  –  $56.92
+  ────────────────────────────────────────────────────────────
+  Bear $8.14 requires:  ~2.0σ price move  (unusual — requires fundamental break)
+  A memory maker whose selling prices follow industry supply: the stock is +159% off its July
+  low (52 weeks) while revenue went from +97.6% (Q2 FY14) to +71.8% YoY (Q3 FY14), -3.0% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        1.85    4.4x  $   8.14     5.0%     62.8%   -57.8pp  EPS +0.0%/yr (worst year FY04-FY10 ex-FY06 ex-FY07 ex-FY08 ex-FY09, capped at 0%); P/E to its 10th pct
+  BASE        5.13   13.0x  $  66.69    17.6%     27.8%   -10.2pp  EPS +66.5%/yr (Q3 revenue YoY + margin + buyback); P/E at its 10-yr ex-FY06 ex-FY07 ex-FY08 ex-FY09 ex-FY11 ex-FY12 ex-FY13 median
+  BULL        5.13   38.5x  $ 197.50    61.3%      8.0%   +53.3pp  EPS +66.5%/yr (FY04-FY10 ex-FY06 ex-FY07 ex-FY08 ex-FY09 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL       5.13   41.9x  $ 214.95    16.1%      1.5%   +14.6pp  EPS +66.5%/yr (no 2-yr run in FY04-FY10 ex-FY06 ex-FY07 ex-FY08 ex-FY09: BULL's rate); P/E at its 90th pct
+
+  Proxy EV (2yr): $167.83  /  Market EV: $42.55  /  Current: $32.34
+  Conservative EV (2yr, ④): $65.07 + $0.00 divs = $65.07 total value
+  Downside (→ Bear $8.14): 74.8%   Upside (→ Bull $197.50): 510.7%   Ratio B 0.15x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $32.34 the market needs $42.77 in two years —
+  at or below the BASE case. That is a market composite of 1.38 against a model
+  read of 2.93: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.15x     +94%    +1.55  UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.12x     +94%    +1.83  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.73x     +94%    +0.77  UNDERVALUED / BUY
+  Scenario EPS +1.5pp/yr                          0.14x     +94%    +1.56  UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.15x     +94%    +1.53  UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.15x     +94%    +1.85  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.15x     +46%    +1.55  UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.15x     +94%    +1.60  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 FY14 print (the quarter ends in late August) — revenue against the Q3 FY14 revenue growth (no Q4 FY14 guide): +71.8% YoY
+  (2) Gross margin — +1036.8bp in Q3 FY14: selling prices against cost per bit, what must hold if revenue does not
+  (3) A Q4 FY14 revenue guide — none in any filing
+  (4) Inventories — +46.2% against revenue +71.8% in Q3 FY14 (-25.6pp): write-downs follow if selling prices fall below cost
+  (5) Capital structure at 17x — 'On July 26, 2011, we paid $150 million to repurchase 19.7 million shares of our common stock at $7.60 per share.' No dividend: 'We have not declared or paid cash dividends since 1996 and do not intend to pay cash dividends for the foreseeable future.' (FY2013 10-K)
+  ◉ BUY  |  EPP floor $16.65  |  ADD below ~$56.69  |  TRIM above $197.50
+════════════════════════════════════════════════════════════════════════
+

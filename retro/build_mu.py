@@ -20,11 +20,22 @@ inputs map as follows (retro/README.md, "MU"; decided before any MU model was bu
     Starting the history after FY2006 would leave no year, so only FY2006 itself leaves (the NKE FY2018 reading);
   - current-FY EPS: no filing of the period gives an EPS guide, so the last full year in the history stands (the rollover rule);
   - forward revenue growth: no filing of the period guides revenue in numbers or words (the releases estimate fiscal-year capital
-    expenditures only), so the latest quarter's revenue growth stands in (the UNP rule); the builder refuses any guide;
+    expenditures only), so the latest quarter's revenue growth stands in (the UNP rule) (guides are encoded from MU 2014-2017, below);
   - guided margin step: none (no margin guide); the margin signal uses the latest quarter's operating-margin change.
 The kind is DURABLE: no Micron 10-K calls its own business cyclical (the F and AVGO reading). No disruption theme in
 taxonomy_eras.json is live for a memory maker in 2008-2009, so the builder refuses events until a theme encoding is decided.
 The listing moved from the NYSE to the NASDAQ Global Select Market on 2009-12-30 ('listings', display only; the PEP 2017 encoding).
+
+From 2014 on (decided on 2026-11-18 before any 2014-2017 date was built or scored; retro/README.md, "MU 2014-2017"): GAAP EPS as
+before (the releases' non-GAAP figures remove recurring items: debt discount amortization, currency results and, from Q1 FY17,
+stock-based compensation); FY2014, FY2015 and FY2017 are kept, FY2016 is a loss and a gap (the XOM FY2020 and NVDA FY2009 rule).
+Micron's outlook reaches its filings from 2016-11-29: the next quarter's revenue as a dollar range on slides furnished with the 8-Ks
+(and two outlook updates between releases, a figure plus or minus a dollar amount), read against the year-ago quarter from its own
+release (the NVDA level rule; 'level_pm_m' is the dollar form of NVDA's 'level_pm_pct'); words on a quarter are display only; the
+slides' non-GAAP gross margin, expenses and EPS are display only. Before the first guide in a filing (the releases put their guidance
+on the call and its website, which are not filings), the latest quarter's revenue growth stands in (the UNP rule), and a print's own
+sentence on its call ('outlook_venue') replaces the 2008-2013 text on capital expenditure estimates, which the 2014-2017 releases no
+longer give. Prints without that field, and dates with no guide in scope, keep their 2008-2013 text byte for byte.
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
 is the first trading day after it. Micron released after the close, so a print is dated the next trading day; on a Friday that is
@@ -33,7 +44,10 @@ the week's last trading day, and the print meets its close (public before the op
 Output goes to staging/retrospective/MU until the series is added to the archive (--out archive/retrospective/MU).
 
 Usage
-  python3 retro/build_mu.py --weekly 2008-01-01 2009-12-31
+  python3 retro/build_mu.py --weekly 2008-01-01 2008-12-31
+  python3 retro/build_mu.py --weekly 2009-01-05 2009-12-31
+  python3 retro/build_mu.py --weekly 2010-01-04 2013-12-31
+  python3 retro/build_mu.py --weekly 2014-01-06 2017-12-31
   python3 retro/build_mu.py 2008-04-04
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/MU/<AS_OF>
 """
@@ -60,6 +74,10 @@ ENGINE_THRESHOLDS = {"revenue": (-86, -38, 9, 147), "gross_margin": (-9420, -482
                      "inventory_gap": (97, 51, 5, -43), "op_margin": (-12480, -6240, 0, 4400)}
 RULE_T_KEYS = {"revenue": (1, False), "gross_margin": (10, False), "opex_gap": (1, True), "inventory_gap": (1, True),
                "op_margin": (10, False)}           # (rounding unit, lower is better)
+# the guide fields this builder has an encoding for (from MU 2014-2017; the NVDA level fields, with a figure plus or minus a dollar
+# amount, 'level_pm_m', beside NVDA's percent); any other field needs its encoding decided first
+GUIDE_KEYS = {"fy", "published", "source", "doc", "quarter", "level_stated", "level_m", "level_center_m", "level_pm_m", "level_pm_pct",
+              "prior_label", "prior_sales_m", "prior_source", "yoy_pct", "quote", "display", "words"}
 
 
 def fiscal_year_end(n):
@@ -130,6 +148,29 @@ def check_print(p):
         assert p[k] == v, (p["quarter"], k, p[k], v)
 
 
+def check_guide(g):
+    """A next-quarter revenue guide: a dollar level (a range as stated, or a figure plus or minus a dollar amount or a percent), read
+    against the year-ago quarter (the NVDA level rule); or words, display only."""
+    if "words" in g:              # words only: no figure, display only
+        assert not set(g) & {"level_m", "yoy_pct"}, (g["doc"], "a words-only guide carries no number")
+        return
+    assert g.get("level_stated"), (g["doc"], "a numeric guide must be a stated dollar level")
+    c, pm, pmp = g.get("level_center_m"), g.get("level_pm_m"), g.get("level_pm_pct")
+    if c is not None and pm is not None:
+        lv = [round(c - pm, 2), round(c + pm, 2)]
+    elif c is not None:
+        lv = [round(c * (1 - pmp / 100), 2), round(c * (1 + pmp / 100), 2)]
+    else:
+        lv = g["level_m"]
+    assert lv == g["level_m"] and lv[0] <= lv[1], (g["doc"], lv)
+    assert [round((x / g["prior_sales_m"] - 1) * 100 + 0.0, 1) for x in lv] == g["yoy_pct"], (g["doc"], "yoy")
+
+
+def _range(v):
+    lo, hi = v
+    return f"{lo:+g}%" if lo == hi else f"{lo:+g}% to {hi:+g}%"
+
+
 def on_basis(facts, as_of):
     """The fact sheet with every per-share fact on the AS_OF share basis: a split effective on or before AS_OF divides per-share values
     whose share basis predates it and multiplies share counts by it (the NVDA helper; Micron has no split in scope, so this is the
@@ -179,10 +220,10 @@ def build(as_of, facts, raw, spx, engine, out):
     for v in facts["history_vintages"]:            # the fiscal calendar the filings state must match the rule above
         for y, end in v.get("fiscal_year_ends", {}).items():
             assert fiscal_year_end(int(y)).isoformat() == end, (y, end)
-    # no filing of the period guides revenue, EPS or a margin: a guide public on AS_OF needs its encoding decided first
-    guides = [g for g in facts.get("guides", []) if g["published"] <= as_of]
-    if guides:
-        sys.exit(f"{as_of}: the MU builder has no encoding for guides ({sorted({g['doc'] for g in guides})}); decide one first")
+    # a guide public on AS_OF may carry only encoded fields (none before 2016-09-08; from MU 2014-2017, NVDA's level rule)
+    for g in [g for g in facts.get("guides", []) if g["published"] <= as_of]:
+        assert set(g) <= GUIDE_KEYS, (g["doc"], "a guide field with no encoding yet; decide one first")
+        check_guide(g)
     for p in [p for p in facts["prints"] if p["published"] <= as_of]:  # a print public on AS_OF must match its raw figures
         check_print(p)
     assert rule_t(facts["rule_t"]) == ENGINE_THRESHOLDS, "the engine's thresholds must follow rule T on the fact sheet's values"
@@ -242,14 +283,44 @@ def build(as_of, facts, raw, spx, engine, out):
         f" (FY{y % 100:02d} is excluded: {excluded[y]})" for y in range(last_fy + 1, cur_fy))
     eps_label_short = (f"{fy_e}: no EPS guide in numbers, FY{last_fy % 100:02d}'s ${money(eps_now)} stands (FY" +
                        ", FY".join(f"{y % 100:02d}" for y in range(last_fy + 1, cur_fy)) + " excluded)") if cur_fy > last_fy + 1 else eps_label
-    # ── forward revenue growth: no guide in numbers or words in any filing, so the latest quarter's revenue growth (the UNP rule) ──
-    fwd = [latest["sales_pct"]] * 2
-    fwd_label = f"{latest['quarter']} revenue growth (no {next_q} guide)"
-    fwd_short, fwd_period = f"{latest['quarter'].split()[0]} revenue YoY", latest["quarter"]
-    guide_text = (f"{next_q}: no revenue guide in numbers or words in any filing; the latest quarter's revenue growth stands in "
-                  "(the UNP rule); no fiscal-year revenue, EPS or margin guide (the releases estimate fiscal-year capital "
-                  "expenditures only, which method r2 has no input for)")
-    cat3 = (f"(3) A {next_q} revenue guide — none: Micron gives no revenue, EPS or margin outlook in any filing")
+    # ── forward revenue growth: the latest numeric guide in a filing for the quarter after the latest print, as growth on the year-ago
+    # quarter (the NVDA level rule, from MU 2014-2017); with none in scope, the latest quarter's revenue growth (the UNP rule) ──
+    live = [g for g in facts.get("guides", []) if g["published"] <= as_of and g.get("quarter") == next_q]
+    qg = [g for g in live if g.get("level_stated")]
+    words = [g for g in live if "words" in g]
+    w = words[-1] if words else None
+    guide_ids = []
+    if qg:
+        g = qg[-1]
+        fwd = list(g["yoy_pct"])
+        lvl = f"${g['level_m'][0]:,.1f}M" if g["level_m"][0] == g["level_m"][1] else f"${g['level_m'][0]:,.1f}M-${g['level_m'][1]:,.1f}M"
+        stated = (f"${g['level_center_m']:,.1f}M ±${g['level_pm_m']:,.1f}M, i.e. {lvl}" if g.get("level_pm_m") is not None else
+                  f"${g['level_center_m']:,.1f}M ±{g['level_pm_pct']:g}%, i.e. {lvl}" if g.get("level_center_m") is not None else lvl)
+        later_words = (f"; restated in words in the {w['doc']}: '{w['words']}' (the last numeric range stands, the ACN rule)"
+                       if w and w["published"] > g["published"] else "")
+        fwd_label = f"{next_q} revenue guide ({g['doc']})"
+        fwd_short, fwd_period = f"{next_q} guide YoY", next_q
+        guide_text = (f"{next_q} outlook ({g['doc']}): revenue {stated} ('{g['quote']}') against {g['prior_label']}'s "
+                      f"${g['prior_sales_m']:,.1f}M: {_range(fwd)} YoY; display only: {g['display']}{later_words}; "
+                      "no fiscal-year revenue, EPS or margin guide")
+        cat3 = f"(3) The {next_q} guide — revenue {stated} ({_range(fwd)} YoY): Micron guides one quarter at a time, in revenue"
+        guide_ids = [g["source"], g["prior_source"]] + ([w["source"]] if later_words else [])
+    else:
+        fwd = [latest["sales_pct"]] * 2
+        fwd_label = f"{latest['quarter']} revenue growth (no {next_q} guide)"
+        fwd_short, fwd_period = f"{latest['quarter'].split()[0]} revenue YoY", latest["quarter"]
+        if latest.get("outlook_venue") is None and w is None:      # the 2008-2013 prints: their text as built then
+            guide_text = (f"{next_q}: no revenue guide in numbers or words in any filing; the latest quarter's revenue growth stands in "
+                          "(the UNP rule); no fiscal-year revenue, EPS or margin guide (the releases estimate fiscal-year capital "
+                          "expenditures only, which method r2 has no input for)")
+            cat3 = (f"(3) A {next_q} revenue guide — none: Micron gives no revenue, EPS or margin outlook in any filing")
+        else:
+            guide_text = (f"{next_q}: no revenue guide in numbers in any filing (the {latest['quarter']} release: "
+                          f"'{latest['outlook_venue']}'; a call and its website are not filings, the NVDA rule)"
+                          + (f"; in words only ({w['doc']}): '{w['words']}'" if w else "")
+                          + "; the latest quarter's revenue growth stands in (the UNP rule); no fiscal-year revenue, EPS or margin guide")
+            cat3 = (f"(3) A {next_q} revenue guide — none in any filing" + (f"; the {w['doc']} says '{w['words']}'" if w else ""))
+            guide_ids = [w["source"]] if w else []
     margin_guided = False                          # no margin guide: no guided step; the signal uses the latest quarter
     fy_margin_base = h["prev_fy_op_margin"]
 
@@ -316,7 +387,7 @@ def build(as_of, facts, raw, spx, engine, out):
 
     company = h["company"]
     ids = (list(h["sources"]) + [x for p in prints for x in [p["source"]] + p.get("extra_sources", [])]
-           + [public[i - 1]["source"]] + ([dividend_src] if dividend_src else []) + split_ids + listing_ids)
+           + [public[i - 1]["source"]] + guide_ids + ([dividend_src] if dividend_src else []) + split_ids + listing_ids)
     sources = [dict(id=x, **facts["sources"][x]) for x in dict.fromkeys(ids)]
     sources.append({"id": "Y0", "published": as_of, "title": "Yahoo Finance daily prices, MU and S&P 500, truncated at AS_OF",
                     "url": "https://finance.yahoo.com/quote/MU/history",
@@ -401,7 +472,7 @@ LATEST          = {R({k: latest.get(k) for k in latest_keys})}
 PREV_SALES      = {R(prev)}
 EPP_TODAY_EPS   = {round(eps_now, 6)}   # {eps_label_short}
 EPS_LABEL       = {R(eps_label_short)}
-FWD_GUIDE       = {R(tuple(fwd))}   # no revenue guide in any filing: the latest quarter's revenue growth (the UNP rule)
+FWD_GUIDE       = {R(tuple(fwd))}   # {"the next-quarter revenue guide as growth on the year-ago quarter (the NVDA level rule)" if qg else "no revenue guide in any filing: the latest quarter's revenue growth (the UNP rule)"}
 FWD_GUIDE_LABEL, FWD_PERIOD, FWD_BASIS_SHORT = {R(fwd_label)}, {R(fwd_period)}, {R(fwd_short)}
 GUIDE_TEXT      = {R(guide_text)}
 MARGIN_GUIDED   = {margin_guided}   # False: no margin guide, so no guided step; the signal uses the latest quarter's change
