@@ -1741,6 +1741,36 @@
     "term": "3D XPoint",
     "first_seen": "2015-10-27",
     "note": "the memory technology Micron and Intel announced in 2015; first in a Micron filing in its FY2015 10-K (accepted 2015-10-27 15:37 ET, during the session), EDGAR full-text search"
+   },
+   {
+    "term": "Google Chrome",
+    "first_seen": "2009-02-04",
+    "note": "Google's web browser (released 2008-09-02); first in a Google filing in its option-exchange tender offer (SC TO-I, accepted 2009-02-03 17:25 ET, after the close, so it counts from the next trading day), then the FY2008 10-K, EDGAR full-text search"
+   },
+   {
+    "term": "Nexus One",
+    "first_seen": "2010-02-16",
+    "note": "Google's phone (2010); first in a Google filing in its FY2009 10-K (accepted 2010-02-12 17:19 ET, after the close; 2010-02-15 was a market holiday), EDGAR full-text search"
+   },
+   {
+    "term": "Google Play",
+    "first_seen": "2012-04-16",
+    "note": "Google's app and content store (2012); first in a Google filing in a DEFA14A (accepted 2012-04-13 17:28 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "Chromebook",
+    "first_seen": "2014-02-12",
+    "note": "Chrome OS laptops (2011); first in a Google filing in its FY2013 10-K (accepted 2014-02-11 18:08 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "GOOGL",
+    "first_seen": "2014-02-12",
+    "note": "the NASDAQ symbol the Class A common stock took when the Class C capital stock was distributed in 2014 (the Class A traded as GOOG before); first in a Google filing in its FY2013 10-K (accepted 2014-02-11 18:08 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "Alphabet Inc",
+    "first_seen": "2015-08-11",
+    "note": "the holding company announced for Google; first in a Google filing in its 8-K of 2015-08-10 (accepted 16:45 ET, after the close), EDGAR full-text search"
    }
   ]
  }

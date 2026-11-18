@@ -23,9 +23,9 @@ touching either directory.
   outcomes or findings enters another's models. UNP (2008-2026 so far), LOW (2008-2026 so far), AAPL (2008-2026 so far),
   NKE (2008-2026 so far), AVGO (from its 2009-08-06 listing to 2026-10-30 so far), PEP (2008 to 2026-10-30 so far), MSFT
   (2008 to 2026-10-30 so far), XOM (2008 to 2026-10-30 so far), SHW (2008 to 2026-11-06 so far), WMT (2008 to 2026-11-06 so far), RCL (2008 to 2026-11-06 so far), MAR (2008 to 2026-11-03 so far), BKR (2008 to 2017-06-30, then 2019-02-01 to 2026-11-06 so far), PFE (2008 to 2026-11-04 so far), CMCSA (2008 to 2026-11-06 so far), CAT (2008 to 2026-11-06 so far), BMY (2008 to 2026-11-06 so far), NVDA (2008 to 2026-11-06 so far), F (2008-01-04 to 2026-11-06 so far; 2022-01-07 onward was built first at the owner's request, and dates before 2022 are an early era with its
-  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far) and MU (2008-01-04 to 2021-12-31 so far) sit in `staging/retrospective/` until the owner adds
+  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far) and GOOG (2008-01-04 to 2009-12-31 so far) sit in `staging/retrospective/` until the owner adds
   them to the archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM", "SHW", "WMT", "RCL", "MAR", "BKR", "PFE", "CMCSA", "CAT",
-  "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py` and `mu_signal_model.py` files
+  "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py` and `mu_signal_model.py` files
   and today's profiles in `data/business_profiles.json` (NVDA's and SO's included) are 2026 analyses: never inputs to a retrospective. AVGO did not trade
   before its IPO, so its series starts at the listing (the listing and bounds rules of method r2). BKR's 2008 to 2017-06-30 dates are Baker
   Hughes Incorporated, listed as BHI: BKR is only the series key (and Yahoo's symbol for the history); the models print BHI. Its dates from
@@ -78,5 +78,13 @@ touching either directory.
   only for the Q3 FY18-Q3 FY19 releases (two 8-Ks that restate the call's range in numbers, 2018-07-05 and 2018-11-28, are read as guides),
   then in each release's Business Outlook from Q4 FY19; the first dividend ($0.10 a quarter) counts from 2021-08-03; spare parts leave
   inventories from Q2 FY21 while the year-ago 10-Qs keep them, a seam in the inventory signal (retro/README.md, "MU 2018-2021").
+  GOOG (Google) is the Class A common stock that traded as NASDAQ: GOOG from the 2004-08-19 listing (Yahoo's GOOG series before 2014,
+  as traded); the models print only GOOG. EPS is GAAP diluted EPS, except FY2004 at the company's $1.49 before non-recurring items (the
+  later non-GAAP figures also remove stock-based compensation, which recurs); FY1999-FY2000 are losses and the first years, so the history
+  starts with FY2001's $0.04 and the P/E window at the listing; no filing guides revenue, EPS or a margin (the 10-Ks' words that growth
+  will decline are display only), so BASE is the latest quarter's revenue growth; CYCLICAL on the 10-K's own "cyclicality ... in our
+  business"; receivables replace inventories among the signals, under rule T over the years the filings report (1999 on, start-up years
+  included); a quarter its own 10-Q restates takes the 10-Q's figures from the 10-Q's date (Q3 2008, the Authors Guild settlement)
+  (retro/README.md, "GOOG").
 - **Never use the owner's personal email** in request headers to external
   services (SEC asks for a contact in the User-Agent).

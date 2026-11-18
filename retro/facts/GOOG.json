@@ -1,0 +1,2230 @@
+{
+ "_doc": "Point-in-time fact sheet for GOOG retrospectives (retro/build_goog.py), generated from Google's own filings: every raw figure is the row string it appears in (kept in 'rows'), checked against its filing, and every growth rate, margin, gap and rule-T value is computed from those figures. Every value is tied to a source and becomes visible only on or after that source's 'published' date (EDGAR's acceptance time; after the 16:00 ET close, the next trading day). Dollar figures in thousands as the filings print them ('_k'); per-share figures as published (no split before 2010).",
+ "ticker": "GOOG",
+ "sources": {
+  "GOOG1": {
+   "published": "2004-08-19",
+   "filed": "accepted 2004-08-19 06:19 ET (before the open)",
+   "title": "Google initial public offering prospectus (424B4)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312504143377/d424b4.htm",
+   "supports": "selected financial data 1999-2003 (FY1999 diluted EPS, a loss), the 1999-2000 rule-T changes and the December 2002 and 2003 receivables (rule T)"
+  },
+  "GOOG2": {
+   "published": "2005-03-31",
+   "filed": "accepted 2005-03-30 17:27 ET (after the 16:00 ET close)",
+   "title": "Google FY2004 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312505065298/d10k.htm",
+   "supports": "selected financial data 2000-2004 (FY2000 diluted EPS, a loss), the 2000-2001 rule-T changes, the December 2003 and 2004 receivables with that filing's revenues (rule T)"
+  },
+  "GOOG3": {
+   "published": "2005-02-02",
+   "filed": "accepted 2005-02-01 16:29 ET (after the 16:00 ET close)",
+   "title": "Google Q4 2004 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312505016344/dex991.htm",
+   "supports": "FY2004 diluted EPS of $1.49 before material non-recurring and other items (GAAP $1.46)"
+  },
+  "GOOG4": {
+   "published": "2006-03-16",
+   "filed": "accepted 2006-03-16 15:34 ET (during the session)",
+   "title": "Google FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312506056598/d10k.htm",
+   "supports": "selected financial data 2001-2005 (FY2001 EPS, revenue and diluted shares; FY2002-FY2003 diluted shares), the 2001-2002 rule-T changes, the December 2004 and 2005 receivables with that filing's revenues (rule T)"
+  },
+  "GOOG5": {
+   "published": "2007-03-02",
+   "filed": "accepted 2007-03-01 16:52 ET (after the 16:00 ET close)",
+   "title": "Google FY2006 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312507044494/d10k.htm",
+   "supports": "selected financial data 2002-2006, diluted shares 2004-2006, revenues by source 2004-2006, cash flows, the December 2005 and 2006 receivables (rule T), the business description, risk factors and Item 5"
+  },
+  "GOOG6": {
+   "published": "2006-05-11",
+   "filed": "accepted 2006-05-10 16:51 ET (after the 16:00 ET close)",
+   "title": "Google Q1 2006 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312506107734/d10q.htm",
+   "supports": "receivables at the end of Q1 2006 (the year-ago quarter of a later print)"
+  },
+  "GOOG7": {
+   "published": "2006-08-10",
+   "filed": "accepted 2006-08-09 17:07 ET (after the 16:00 ET close)",
+   "title": "Google Q2 2006 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312506167945/d10q.htm",
+   "supports": "receivables at the end of Q2 2006 (the year-ago quarter of a later print)"
+  },
+  "GOOG8": {
+   "published": "2006-10-20",
+   "filed": "accepted 2006-10-19 16:12 ET (after the 16:00 ET close)",
+   "title": "Google Q3 2006 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312506211121/dex991.htm",
+   "supports": "Q3 2006 revenues (the quarter before a later print)"
+  },
+  "GOOG9": {
+   "published": "2006-11-08",
+   "filed": "accepted 2006-11-08 14:35 ET (during the session)",
+   "title": "Google Q3 2006 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312506228163/d10q.htm",
+   "supports": "receivables at the end of Q3 2006 (the year-ago quarter of a later print)"
+  },
+  "GOOG10": {
+   "published": "2007-02-01",
+   "filed": "accepted 2007-01-31 16:05 ET (after the 16:00 ET close)",
+   "title": "Google Q4 2006 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312507017352/dex991.htm",
+   "supports": "Q4 2006 revenues by source, costs and expenses, operating income, diluted EPS and shares against the year-ago quarter and the fiscal year; receivables and cash; paid clicks, TAC and headcount"
+  },
+  "GOOG11": {
+   "published": "2007-04-20",
+   "filed": "accepted 2007-04-19 16:13 ET (after the 16:00 ET close)",
+   "title": "Google Q1 2007 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312507085176/dex991.htm",
+   "supports": "Q1 2007 revenues by source, costs and expenses, operating income, diluted EPS and shares against the year-ago quarter; receivables and cash; paid clicks, TAC and headcount"
+  },
+  "GOOG12": {
+   "published": "2007-05-10",
+   "filed": "accepted 2007-05-09 17:25 ET (after the 16:00 ET close)",
+   "title": "Google Q1 2007 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312507108436/d10q.htm",
+   "supports": "receivables at the end of Q1 2007 (the year-ago quarter of a later print)"
+  },
+  "GOOG13": {
+   "published": "2007-07-20",
+   "filed": "accepted 2007-07-19 16:06 ET (after the 16:00 ET close)",
+   "title": "Google Q2 2007 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312507158138/dex991.htm",
+   "supports": "Q2 2007 revenues by source, costs and expenses, operating income, diluted EPS and shares against the year-ago quarter; receivables and cash; paid clicks, TAC and headcount"
+  },
+  "GOOG14": {
+   "published": "2007-08-09",
+   "filed": "accepted 2007-08-08 18:11 ET (after the 16:00 ET close)",
+   "title": "Google Q2 2007 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312507175880/d10q.htm",
+   "supports": "receivables at the end of Q2 2007 (the year-ago quarter of a later print)"
+  },
+  "GOOG15": {
+   "published": "2007-10-19",
+   "filed": "accepted 2007-10-18 16:10 ET (after the 16:00 ET close)",
+   "title": "Google Q3 2007 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312507221254/dex991.htm",
+   "supports": "Q3 2007 revenues by source, costs and expenses, operating income, diluted EPS and shares against the year-ago quarter; receivables and cash; paid clicks, TAC and headcount"
+  },
+  "GOOG16": {
+   "published": "2007-11-08",
+   "filed": "accepted 2007-11-07 16:18 ET (after the 16:00 ET close)",
+   "title": "Google Q3 2007 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312507238468/d10q.htm",
+   "supports": "receivables at the end of Q3 2007 (the year-ago quarter of a later print)"
+  },
+  "GOOG17": {
+   "published": "2008-02-01",
+   "filed": "accepted 2008-01-31 16:06 ET (after the 16:00 ET close)",
+   "title": "Google Q4 2007 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312508016919/dex991.htm",
+   "supports": "Q4 2007 revenues by source, costs and expenses, operating income, diluted EPS and shares against the year-ago quarter and the fiscal year; receivables and cash; paid clicks, TAC and headcount"
+  },
+  "GOOG18": {
+   "published": "2008-02-19",
+   "filed": "accepted 2008-02-15 17:20 ET (after the 16:00 ET close)",
+   "title": "Google FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312508032690/d10k.htm",
+   "supports": "selected financial data 2003-2007, diluted shares 2005-2007, revenues by source 2005-2007, cash flows, the business description, risk factors and Item 5"
+  },
+  "GOOG19": {
+   "published": "2008-04-18",
+   "filed": "accepted 2008-04-17 16:11 ET (after the 16:00 ET close)",
+   "title": "Google Q1 2008 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312508083665/dex991.htm",
+   "supports": "Q1 2008 revenues by source, costs and expenses, operating income, diluted EPS and shares against the year-ago quarter; receivables and cash; paid clicks, TAC and headcount"
+  },
+  "GOOG20": {
+   "published": "2008-05-13",
+   "filed": "accepted 2008-05-12 17:07 ET (after the 16:00 ET close)",
+   "title": "Google Q1 2008 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312508111739/d10q.htm",
+   "supports": "receivables at the end of Q1 2008 (the year-ago quarter of a later print)"
+  },
+  "GOOG21": {
+   "published": "2008-07-18",
+   "filed": "accepted 2008-07-17 16:13 ET (after the 16:00 ET close)",
+   "title": "Google Q2 2008 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312508152814/dex991.htm",
+   "supports": "Q2 2008 revenues by source, costs and expenses, operating income, diluted EPS and shares against the year-ago quarter; receivables and cash; paid clicks, TAC and headcount"
+  },
+  "GOOG22": {
+   "published": "2008-08-08",
+   "filed": "accepted 2008-08-07 17:25 ET (after the 16:00 ET close)",
+   "title": "Google Q2 2008 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312508170309/d10q.htm",
+   "supports": "receivables at the end of Q2 2008 (the year-ago quarter of a later print)"
+  },
+  "GOOG23": {
+   "published": "2008-10-17",
+   "filed": "accepted 2008-10-16 16:20 ET (after the 16:00 ET close)",
+   "title": "Google Q3 2008 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312508211628/dex991.htm",
+   "supports": "Q3 2008 revenues by source, costs and expenses, operating income, diluted EPS and shares against the year-ago quarter; receivables and cash; paid clicks, TAC and headcount"
+  },
+  "GOOG24": {
+   "published": "2008-11-10",
+   "filed": "accepted 2008-11-07 17:23 ET (after the 16:00 ET close)",
+   "title": "Google Q3 2008 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312508230197/d10q.htm",
+   "supports": "Q3 2008 general and administrative expenses, operating income and diluted EPS as restated for the $95.1M Authors Guild and AAP settlement expensed in the quarter; receivables at the end of Q3 2008"
+  },
+  "GOOG25": {
+   "published": "2009-01-23",
+   "filed": "accepted 2009-01-22 16:17 ET (after the 16:00 ET close)",
+   "title": "Google Q4 2008 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312509009712/dex991.htm",
+   "supports": "Q4 2008 revenues by source, costs and expenses, operating income, diluted EPS and shares against the year-ago quarter and the fiscal year; receivables and cash; paid clicks, TAC and headcount"
+  },
+  "GOOG26": {
+   "published": "2009-02-17",
+   "filed": "accepted 2009-02-13 17:22 ET (after the 16:00 ET close)",
+   "title": "Google FY2008 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312509029448/d10k.htm",
+   "supports": "selected financial data 2004-2008, diluted shares 2006-2008, revenues by source 2006-2008, cash flows, the business description, risk factors and Item 5"
+  },
+  "GOOG27": {
+   "published": "2009-04-17",
+   "filed": "accepted 2009-04-16 16:07 ET (after the 16:00 ET close)",
+   "title": "Google Q1 2009 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312509080681/dex991.htm",
+   "supports": "Q1 2009 revenues by source, costs and expenses, operating income, diluted EPS and shares against the year-ago quarter; receivables and cash; paid clicks, TAC and headcount"
+  },
+  "GOOG28": {
+   "published": "2009-07-17",
+   "filed": "accepted 2009-07-16 16:08 ET (after the 16:00 ET close)",
+   "title": "Google Q2 2009 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312509150129/dex991.htm",
+   "supports": "Q2 2009 revenues by source, costs and expenses, operating income, diluted EPS and shares against the year-ago quarter; receivables and cash; paid clicks, TAC and headcount"
+  },
+  "GOOG29": {
+   "published": "2009-10-16",
+   "filed": "accepted 2009-10-15 16:06 ET (after the 16:00 ET close)",
+   "title": "Google Q3 2009 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312509208479/dex991.htm",
+   "supports": "Q3 2009 revenues by source, costs and expenses, operating income, diluted EPS and shares against the year-ago quarter; receivables and cash; paid clicks, TAC and headcount"
+  }
+ },
+ "history_vintages": [
+  {
+   "published": "2007-03-02",
+   "sources": [
+    "GOOG5",
+    "GOOG4",
+    "GOOG3"
+   ],
+   "fy_label": "FY06",
+   "kind": "CYCLICAL",
+   "why": "'Google is a global technology leader focused on improving the ways people connect with information.' 'We generate our revenue almost entirely from advertising, and the reduction in spending by or loss of advertisers could seriously harm our business.' 'We face significant competition from Microsoft and Yahoo.' 'As our growth rate has slowed, the cyclicality and seasonality in our business has become more pronounced and will cause our operating results to fluctuate in the future.' (FY2006 10-K); CYCLICAL: the 10-K says so of its own business ('the cyclicality and seasonality in our business'), the BKR, CAT and NVDA reading, not an industry's words; no theme in taxonomy_eras.json is live for a search and advertising company on these dates (OFFSHORE is scoped to IT services), so the watch list is empty; the competitors named are a competitive field, not a theme, and stay here (the PEP obesity rule)",
+   "eps_normalized": {
+    "2001": 0.04,
+    "2002": 0.45,
+    "2003": 0.41,
+    "2004": 1.49,
+    "2005": 5.02,
+    "2006": 9.94
+   },
+   "eps_sources": {
+    "2001": "GOOG4",
+    "2002": "GOOG5",
+    "2003": "GOOG5",
+    "2004": "GOOG3",
+    "2005": "GOOG5",
+    "2006": "GOOG5"
+   },
+   "eps_excluded": {},
+   "eps_first_excluded": {
+    "1999": "a loss: $(0.14) a diluted share (424B4); no figure excluding one-offs; the first years' losses take the years before them (the PFE 2003 rule), so the history starts with FY2001",
+    "2000": "a loss: $(0.22) a diluted share (FY2004 10-K); no figure excluding one-offs; with FY1999, the history starts with FY2001 (the P/E window starts at the listing anyway: 2004-08-19)"
+   },
+   "revenue_usd_b": {
+    "2001": 0.086426,
+    "2002": 0.439508,
+    "2003": 1.465934,
+    "2004": 3.189223,
+    "2005": 6.13856,
+    "2006": 10.604917
+   },
+   "revenue_sources": {
+    "2001": "GOOG4",
+    "2002": "GOOG5",
+    "2003": "GOOG5",
+    "2004": "GOOG5",
+    "2005": "GOOG5",
+    "2006": "GOOG5"
+   },
+   "diluted_shares_m": {
+    "2001": 186.776,
+    "2002": 220.633,
+    "2003": 256.638,
+    "2004": 272.781,
+    "2005": 291.874,
+    "2006": 309.548
+   },
+   "shares_sources": {
+    "2001": "GOOG4",
+    "2002": "GOOG4",
+    "2003": "GOOG4",
+    "2004": "GOOG5",
+    "2005": "GOOG5",
+    "2006": "GOOG5"
+   },
+   "normalization": "GAAP diluted EPS (two-class method; Class A and Class B earn the same per share), each year from the latest filing that reports it, except FY2004 at the company's figure without one-offs; the non-GAAP EPS of the releases from Q4 2005 removes stock-based compensation, which recurs (the AVGO and NKE FY2007 rule), together with the Google Foundation contribution (FY2005), the Authors Guild settlement (Q3 2008) and the equity impairments (Q4 2008), so no later year has a figure excluding only one-offs, and each stays at GAAP (each item is a fraction of its year's income: the AAPL FY2003 test); FY04 $1.49: the company's diluted EPS before material non-recurring and other items (Q4 2004 release: the $201.0M non-recurring portion of the Yahoo settlement and its $82.0M tax benefit, $70.0M of tax benefits on pre-IPO stock-based compensation and a $42.2M benefit on ISO disqualifying dispositions), GAAP $1.46 (the ACN rule for a company-published figure without one-offs; no stock-based compensation is removed from it)",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 33.48,
+   "prev_fy_op_margin_note": "FY06 income from operations $3,550.0M / revenues $10,604.9M",
+   "prev_fy_pretax_margin": 37.82,
+   "prev_fy_pretax_margin_note": "FY06 income before income taxes $4,011.0M / revenues $10,604.9M (interest income and other)",
+   "prev_fy_gross_margin": 60.16,
+   "prev_fy_sales_growth": 72.8,
+   "tax_rate": 0.2328,
+   "tax_note": "FY06 provision $933.6M on pre-tax $4,011.0M",
+   "fcf_b": 1.678,
+   "fcf_label": "FY06",
+   "fcf_note": "cash from operations $3,580.5M less purchases of property and equipment $1,902.8M",
+   "cash_b": 11.244,
+   "dividend_annual": 0.0,
+   "dividend_note": "no dividend: 'We have never declared or paid any cash dividend on our common stock.' (Item 5)",
+   "cash_return_text": "no dividend ('We have never declared or paid any cash dividend on our common stock.') and no share repurchase in the period",
+   "outlook_words": "We expect our revenue growth rate to decline and anticipate downward pressure on our operating margin in the future.",
+   "business_line": "search and advertising: Google web sites, the Google Network (AdSense), licensing",
+   "groups": [
+    [
+     "Google web sites",
+     6.332797,
+     87.5
+    ],
+    [
+     "Google Network web sites",
+     4.159831,
+     54.8
+    ],
+    [
+     "Licensing and other",
+     0.112289,
+     52.7
+    ]
+   ],
+   "groups_basis": "FY06 revenues by source (FY06 growth)",
+   "company": "Google Inc.",
+   "exchange": "NASDAQ",
+   "pe_window_start": "2004-08-19",
+   "fiscal_year": "Year Ended December 31,",
+   "rows": [
+    "Revenues | 439,508 | 1,465,934 | 3,189,223 | 6,138,560 | 10,604,917",
+    "Cost of revenues | 132,575 | 634,411 | 1,468,967 | 2,577,088 | 4,225,027",
+    "Research and development | 40,494 | 229,605 | 395,164 | 599,510 | 1,228,589",
+    "Sales and marketing | 48,783 | 164,935 | 295,749 | 468,152 | 849,518",
+    "General and administrative | 31,190 | 94,519 | 188,151 | 386,532 | 751,787",
+    "Income from operations | 186,466 | 342,464 | 640,192 | 2,017,278 | 3,549,996",
+    "Income before income taxes | 184,915 | 346,654 | 650,234 | 2,141,677 | 4,011,040",
+    "Provision for income taxes | 85,259 | 241,006 | 251,115 | 676,280 | 933,594",
+    "Diluted | 0.45 | 0.41 | 1.46 | 5.02 | 9.94",
+    "Number of shares used in per share computations | 272,781 | 227,927 | 291,874 | 120,580 | 309,548 | 88,160",
+    "Revenues | 86,426 | 439,508 | 1,465,934 | 3,189,223 | 6,138,560",
+    "Diluted | 0.04 | 0.45 | 0.41 | 1.46 | 5.02",
+    "Diluted | 186,776 | 220,633 | 256,638 | 272,781 | 291,874",
+    "Net income per share - diluted | 0.19 | 0.45 | 0.71 | 0.48 | 1.46 | 1.49",
+    "Cash and cash equivalents | 3,877,174 | 3,544,671",
+    "Marketable securities | 4,157,073 | 7,699,243",
+    "Net cash provided by operating activities | 977,044 | 2,459,422 | 3,580,508",
+    "Purchases of property and equipment | (318,995) | (838,217) | (1,902,798)",
+    "Google web sites | 1,589,032 | 3,377,060 | 6,332,797",
+    "Google Network web sites | 1,554,256 | 2,687,942 | 4,159,831",
+    "Licensing and other revenues | 45,935 | 73,558 | 112,289"
+   ]
+  },
+  {
+   "published": "2008-02-19",
+   "sources": [
+    "GOOG18",
+    "GOOG5",
+    "GOOG4",
+    "GOOG3"
+   ],
+   "fy_label": "FY07",
+   "kind": "CYCLICAL",
+   "why": "'Google is a global technology leader focused on improving the ways people connect with information.' 'We generate our revenue almost entirely from advertising, and the reduction in spending by or loss of advertisers could seriously harm our business.' 'We face significant competition from Microsoft and Yahoo.' 'As our growth rate has slowed, the cyclicality and seasonality in our business has become more pronounced and caused our operating results to fluctuate.' (FY2007 10-K); CYCLICAL: the 10-K says so of its own business ('the cyclicality and seasonality in our business'), the BKR, CAT and NVDA reading, not an industry's words; no theme in taxonomy_eras.json is live for a search and advertising company on these dates (OFFSHORE is scoped to IT services), so the watch list is empty; the competitors named are a competitive field, not a theme, and stay here (the PEP obesity rule)",
+   "eps_normalized": {
+    "2001": 0.04,
+    "2002": 0.45,
+    "2003": 0.41,
+    "2004": 1.49,
+    "2005": 5.02,
+    "2006": 9.94,
+    "2007": 13.29
+   },
+   "eps_sources": {
+    "2001": "GOOG4",
+    "2002": "GOOG5",
+    "2003": "GOOG18",
+    "2004": "GOOG3",
+    "2005": "GOOG18",
+    "2006": "GOOG18",
+    "2007": "GOOG18"
+   },
+   "eps_excluded": {},
+   "eps_first_excluded": {
+    "1999": "a loss: $(0.14) a diluted share (424B4); no figure excluding one-offs; the first years' losses take the years before them (the PFE 2003 rule), so the history starts with FY2001",
+    "2000": "a loss: $(0.22) a diluted share (FY2004 10-K); no figure excluding one-offs; with FY1999, the history starts with FY2001 (the P/E window starts at the listing anyway: 2004-08-19)"
+   },
+   "revenue_usd_b": {
+    "2001": 0.086426,
+    "2002": 0.439508,
+    "2003": 1.465934,
+    "2004": 3.189223,
+    "2005": 6.13856,
+    "2006": 10.604917,
+    "2007": 16.593986
+   },
+   "revenue_sources": {
+    "2001": "GOOG4",
+    "2002": "GOOG5",
+    "2003": "GOOG18",
+    "2004": "GOOG18",
+    "2005": "GOOG18",
+    "2006": "GOOG18",
+    "2007": "GOOG18"
+   },
+   "diluted_shares_m": {
+    "2001": 186.776,
+    "2002": 220.633,
+    "2003": 256.638,
+    "2004": 272.781,
+    "2005": 291.874,
+    "2006": 309.548,
+    "2007": 316.21
+   },
+   "shares_sources": {
+    "2001": "GOOG4",
+    "2002": "GOOG4",
+    "2003": "GOOG4",
+    "2004": "GOOG5",
+    "2005": "GOOG18",
+    "2006": "GOOG18",
+    "2007": "GOOG18"
+   },
+   "normalization": "GAAP diluted EPS (two-class method; Class A and Class B earn the same per share), each year from the latest filing that reports it, except FY2004 at the company's figure without one-offs; the non-GAAP EPS of the releases from Q4 2005 removes stock-based compensation, which recurs (the AVGO and NKE FY2007 rule), together with the Google Foundation contribution (FY2005), the Authors Guild settlement (Q3 2008) and the equity impairments (Q4 2008), so no later year has a figure excluding only one-offs, and each stays at GAAP (each item is a fraction of its year's income: the AAPL FY2003 test); FY04 $1.49: the company's diluted EPS before material non-recurring and other items (Q4 2004 release: the $201.0M non-recurring portion of the Yahoo settlement and its $82.0M tax benefit, $70.0M of tax benefits on pre-IPO stock-based compensation and a $42.2M benefit on ISO disqualifying dispositions), GAAP $1.46 (the ACN rule for a company-published figure without one-offs; no stock-based compensation is removed from it)",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 30.64,
+   "prev_fy_op_margin_note": "FY07 income from operations $5,084.4M / revenues $16,594.0M",
+   "prev_fy_pretax_margin": 34.19,
+   "prev_fy_pretax_margin_note": "FY07 income before income taxes $5,674.0M / revenues $16,594.0M (interest income and other)",
+   "prev_fy_gross_margin": 59.93,
+   "prev_fy_sales_growth": 56.5,
+   "tax_rate": 0.2591,
+   "tax_note": "FY07 provision $1,470.3M on pre-tax $5,674.0M",
+   "fcf_b": 3.373,
+   "fcf_label": "FY07",
+   "fcf_note": "cash from operations $5,775.4M less purchases of property and equipment $2,402.8M",
+   "cash_b": 14.219,
+   "dividend_annual": 0.0,
+   "dividend_note": "no dividend: 'We have never declared or paid any cash dividend on our common stock.' (Item 5)",
+   "cash_return_text": "no dividend ('We have never declared or paid any cash dividend on our common stock.') and no share repurchase in the period",
+   "outlook_words": "We expect our revenue growth rate to decline and anticipate downward pressure on our operating margin in the future.",
+   "business_line": "search and advertising: Google web sites, the Google Network (AdSense), licensing",
+   "groups": [
+    [
+     "Google web sites",
+     10.624705,
+     67.8
+    ],
+    [
+     "Google Network web sites",
+     5.787938,
+     39.1
+    ],
+    [
+     "Licensing and other",
+     0.181343,
+     61.5
+    ]
+   ],
+   "groups_basis": "FY07 revenues by source (FY07 growth)",
+   "company": "Google Inc.",
+   "exchange": "NASDAQ",
+   "pe_window_start": "2004-08-19",
+   "fiscal_year": "Year Ended December 31,",
+   "rows": [
+    "Revenues | 1,465,934 | 3,189,223 | 6,138,560 | 10,604,917 | 16,593,986",
+    "Cost of revenues | 634,411 | 1,468,967 | 2,577,088 | 4,225,027 | 6,649,085",
+    "Income from operations | 342,464 | 640,192 | 2,017,278 | 3,549,996 | 5,084,400",
+    "Income before income taxes | 346,654 | 650,234 | 2,141,677 | 4,011,040 | 5,673,980",
+    "Provision for income taxes | 241,006 | 251,115 | 676,280 | 933,594 | 1,470,260",
+    "Diluted | 0.41 | 1.46 | 5.02 | 9.94 | 13.29",
+    "Number of shares used in per share computations | 291,874 | 120,580 | 309,548 | 88,160 | 316,210 | 80,088",
+    "Number of shares used in per share computations | 272,781 | 227,927 | 291,874 | 120,580 | 309,548 | 88,160",
+    "Revenues | 439,508 | 1,465,934 | 3,189,223 | 6,138,560 | 10,604,917",
+    "Diluted | 0.45 | 0.41 | 1.46 | 5.02 | 9.94",
+    "Revenues | 86,426 | 439,508 | 1,465,934 | 3,189,223 | 6,138,560",
+    "Diluted | 0.04 | 0.45 | 0.41 | 1.46 | 5.02",
+    "Diluted | 186,776 | 220,633 | 256,638 | 272,781 | 291,874",
+    "Net income per share - diluted | 0.19 | 0.45 | 0.71 | 0.48 | 1.46 | 1.49",
+    "Cash and cash equivalents | 3,544,671 | 6,081,593",
+    "Marketable securities | 7,699,243 | 8,137,020",
+    "Net cash provided by operating activities | 2,459,422 | 3,580,508 | 5,775,410",
+    "Purchases of property and equipment | (838,217) | (1,902,798) | (2,402,840)",
+    "Google web sites | 3,377,060 | 6,332,797 | 10,624,705",
+    "Google Network web sites | 2,687,942 | 4,159,831 | 5,787,938",
+    "Licensing and other revenues | 73,558 | 112,289 | 181,343"
+   ]
+  },
+  {
+   "published": "2009-02-17",
+   "sources": [
+    "GOOG26",
+    "GOOG18",
+    "GOOG5",
+    "GOOG4",
+    "GOOG3"
+   ],
+   "fy_label": "FY08",
+   "kind": "CYCLICAL",
+   "why": "'Google is a global technology leader focused on improving the ways people connect with information.' 'We generate our revenue almost entirely from advertising, and the reduction in spending by or loss of advertisers could seriously harm our business.' 'We face significant competition from Microsoft and Yahoo.' 'As our growth rate has slowed, the cyclicality and seasonality in our business has become more pronounced and caused our operating results to fluctuate.' 'In addition, the current general economic downturn may result in fewer commercial queries by our users and may cause advertisers to reduce the amount they spend on online advertising, which could negatively affect the growth rate of our revenues.' (FY2008 10-K); CYCLICAL: the 10-K says so of its own business ('the cyclicality and seasonality in our business'), the BKR, CAT and NVDA reading, not an industry's words; no theme in taxonomy_eras.json is live for a search and advertising company on these dates (OFFSHORE is scoped to IT services), so the watch list is empty; the competitors named are a competitive field, not a theme, and stay here (the PEP obesity rule)",
+   "eps_normalized": {
+    "2001": 0.04,
+    "2002": 0.45,
+    "2003": 0.41,
+    "2004": 1.49,
+    "2005": 5.02,
+    "2006": 9.94,
+    "2007": 13.29,
+    "2008": 13.31
+   },
+   "eps_sources": {
+    "2001": "GOOG4",
+    "2002": "GOOG5",
+    "2003": "GOOG18",
+    "2004": "GOOG3",
+    "2005": "GOOG26",
+    "2006": "GOOG26",
+    "2007": "GOOG26",
+    "2008": "GOOG26"
+   },
+   "eps_excluded": {},
+   "eps_first_excluded": {
+    "1999": "a loss: $(0.14) a diluted share (424B4); no figure excluding one-offs; the first years' losses take the years before them (the PFE 2003 rule), so the history starts with FY2001",
+    "2000": "a loss: $(0.22) a diluted share (FY2004 10-K); no figure excluding one-offs; with FY1999, the history starts with FY2001 (the P/E window starts at the listing anyway: 2004-08-19)"
+   },
+   "revenue_usd_b": {
+    "2001": 0.086426,
+    "2002": 0.439508,
+    "2003": 1.465934,
+    "2004": 3.189223,
+    "2005": 6.13856,
+    "2006": 10.604917,
+    "2007": 16.593986,
+    "2008": 21.79555
+   },
+   "revenue_sources": {
+    "2001": "GOOG4",
+    "2002": "GOOG5",
+    "2003": "GOOG18",
+    "2004": "GOOG26",
+    "2005": "GOOG26",
+    "2006": "GOOG26",
+    "2007": "GOOG26",
+    "2008": "GOOG26"
+   },
+   "diluted_shares_m": {
+    "2001": 186.776,
+    "2002": 220.633,
+    "2003": 256.638,
+    "2004": 272.781,
+    "2005": 291.874,
+    "2006": 309.548,
+    "2007": 316.21,
+    "2008": 317.514
+   },
+   "shares_sources": {
+    "2001": "GOOG4",
+    "2002": "GOOG4",
+    "2003": "GOOG4",
+    "2004": "GOOG5",
+    "2005": "GOOG18",
+    "2006": "GOOG26",
+    "2007": "GOOG26",
+    "2008": "GOOG26"
+   },
+   "normalization": "GAAP diluted EPS (two-class method; Class A and Class B earn the same per share), each year from the latest filing that reports it, except FY2004 at the company's figure without one-offs; the non-GAAP EPS of the releases from Q4 2005 removes stock-based compensation, which recurs (the AVGO and NKE FY2007 rule), together with the Google Foundation contribution (FY2005), the Authors Guild settlement (Q3 2008) and the equity impairments (Q4 2008), so no later year has a figure excluding only one-offs, and each stays at GAAP (each item is a fraction of its year's income: the AAPL FY2003 test); FY04 $1.49: the company's diluted EPS before material non-recurring and other items (Q4 2004 release: the $201.0M non-recurring portion of the Yahoo settlement and its $82.0M tax benefit, $70.0M of tax benefits on pre-IPO stock-based compensation and a $42.2M benefit on ISO disqualifying dispositions), GAAP $1.46 (the ACN rule for a company-published figure without one-offs; no stock-based compensation is removed from it)",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 30.43,
+   "prev_fy_op_margin_note": "FY08 income from operations $6,632.0M / revenues $21,795.5M",
+   "prev_fy_pretax_margin": 26.86,
+   "prev_fy_pretax_margin_note": "FY08 income before income taxes $5,853.6M / revenues $21,795.5M (interest income and other, and the $1,094.8M impairment of equity investments)",
+   "prev_fy_gross_margin": 60.44,
+   "prev_fy_sales_growth": 31.3,
+   "tax_rate": 0.2779,
+   "tax_note": "FY08 provision $1,626.7M on pre-tax $5,853.6M",
+   "fcf_b": 5.494,
+   "fcf_label": "FY08",
+   "fcf_note": "cash from operations $7,852.9M less purchases of property and equipment $2,358.5M",
+   "cash_b": 15.846,
+   "dividend_annual": 0.0,
+   "dividend_note": "no dividend: 'We have never declared or paid any cash dividend on our common stock.' (Item 5)",
+   "cash_return_text": "no dividend ('We have never declared or paid any cash dividend on our common stock.') and no share repurchase in the period",
+   "outlook_words": "We expect our revenue growth rate to decline and anticipate downward pressure on our operating margin in the future.",
+   "business_line": "search and advertising: Google web sites, the Google Network (AdSense), licensing",
+   "groups": [
+    [
+     "Google web sites",
+     14.413826,
+     35.7
+    ],
+    [
+     "Google Network web sites",
+     6.714688,
+     16.0
+    ],
+    [
+     "Licensing and other",
+     0.667036,
+     267.8
+    ]
+   ],
+   "groups_basis": "FY08 revenues by source (FY08 growth)",
+   "company": "Google Inc.",
+   "exchange": "NASDAQ",
+   "pe_window_start": "2004-08-19",
+   "fiscal_year": "Year Ended December 31,",
+   "rows": [
+    "Revenues | 3,189,223 | 6,138,560 | 10,604,917 | 16,593,986 | 21,795,550",
+    "Cost of revenues | 1,468,967 | 2,577,088 | 4,225,027 | 6,649,085 | 8,621,506",
+    "Income from operations | 640,192 | 2,017,278 | 3,549,996 | 5,084,400 | 6,631,969",
+    "Income before income taxes | 650,234 | 2,141,677 | 4,011,040 | 5,673,980 | 5,853,596",
+    "Provision for income taxes | 251,115 | 676,280 | 933,594 | 1,470,260 | 1,626,738",
+    "Diluted | 1.46 | 5.02 | 9.94 | 13.29 | 13.31",
+    "Number of shares used in per share computations | 309,548 | 88,160 | 316,210 | 80,088 | 317,514 | 75,837",
+    "Number of shares used in per share computations | 291,874 | 120,580 | 309,548 | 88,160 | 316,210 | 80,088",
+    "Number of shares used in per share computations | 272,781 | 227,927 | 291,874 | 120,580 | 309,548 | 88,160",
+    "Revenues | 1,465,934 | 3,189,223 | 6,138,560 | 10,604,917 | 16,593,986",
+    "Diluted | 0.41 | 1.46 | 5.02 | 9.94 | 13.29",
+    "Revenues | 439,508 | 1,465,934 | 3,189,223 | 6,138,560 | 10,604,917",
+    "Diluted | 0.45 | 0.41 | 1.46 | 5.02 | 9.94",
+    "Revenues | 86,426 | 439,508 | 1,465,934 | 3,189,223 | 6,138,560",
+    "Diluted | 0.04 | 0.45 | 0.41 | 1.46 | 5.02",
+    "Diluted | 186,776 | 220,633 | 256,638 | 272,781 | 291,874",
+    "Net income per share - diluted | 0.19 | 0.45 | 0.71 | 0.48 | 1.46 | 1.49",
+    "Cash and cash equivalents | 6,081,593 | 8,656,672",
+    "Marketable securities | 8,137,020 | 7,189,099",
+    "Net cash provided by operating activities | 3,580,508 | 5,775,410 | 7,852,857",
+    "Purchases of property and equipment | (1,902,798) | (2,402,840) | (2,358,461)",
+    "Google web sites | 6,332,797 | 10,624,705 | 14,413,826",
+    "Google Network web sites | 4,159,831 | 5,787,938 | 6,714,688",
+    "Licensing and other revenues | 112,289 | 181,343 | 667,036"
+   ]
+  }
+ ],
+ "prints": [
+  {
+   "quarter": "Q4 2006",
+   "fy": 2006,
+   "q": 4,
+   "published": "2007-02-01",
+   "source": "GOOG10",
+   "release": "Jan 31",
+   "release_time": "after the close on Jan 31: 8-K accepted 2007-01-31 16:05 ET (after the 16:00 ET close); the call at 4:30 PM (ET); public before the open of the next trading day",
+   "period_end": "2006-12-31",
+   "raw": {
+    "sales_k": 3205498.0,
+    "sales_prior_k": 1919093.0,
+    "sales_prev_q_k": 2689673.0,
+    "gross_profit_k": 1922350.0,
+    "gross_profit_prior_k": 1142058.0,
+    "rd_k": 386806.0,
+    "rd_prior_k": 189871.0,
+    "sm_k": 255206.0,
+    "sm_prior_k": 162632.0,
+    "ga_k": 219744.0,
+    "ga_prior_k": 129915.0,
+    "op_income_k": 1060594.0,
+    "op_income_prior_k": 569640.0,
+    "receivables_k": 1322340.0,
+    "receivables_prior_k": 687976.0
+   },
+   "rows": {
+    "rev": "Revenues | 1,919,093 | 3,205,498 | 6,138,560 | 10,604,917",
+    "cor": "Cost of revenues (including stock-based compensation expense of $1,654, $10,874, $5,579, $17,629)* | 777,035 | 1,283,148 | 2,577,088 | 4,225,027",
+    "rd": "Research and development (including stock-based compensation expense of $32,799, $82,122, $115,532, $287,485)* | 189,871 | 386,806 | 599,510 | 1,228,589",
+    "sm": "Sales and marketing (including stock-based compensation expense of $7,863, $14,502, $28,411, $59,389)* | 162,632 | 255,206 | 468,152 | 849,518",
+    "ga": "General and administrative (including stock-based compensation expense of $15,838, $26,929, $51,187, $93,597)* | 129,915 | 219,744 | 386,532 | 751,787",
+    "op": "Income from operations | 569,640 | 1,060,594 | 2,017,278 | 3,549,996",
+    "eps": "Net income per share - diluted | 1.22 | 3.29 | 5.02 | 9.94",
+    "sh": "Shares used in per share calculation - diluted | 303,972 | 313,459 | 291,874 | 309,548",
+    "web": "Google web sites | 1,098,213 | 1,977,042 | 3,377,060 | 6,332,797",
+    "net": "Google Network web sites | 798,573 | 1,197,867 | 2,687,942 | 4,159,831",
+    "lic": "Licensing and other revenues | 22,307 | 30,589 | 73,558 | 112,289",
+    "pre": "Income before income taxes | 639,833 | 1,184,733 | 2,141,677 | 4,011,040",
+    "tax": "Provision for income taxes | 267,625 | 154,017 | 676,280 | 933,594",
+    "ar": "Accounts receivable, net of allowance | 687,976 | 1,322,340",
+    "cash": "Cash and cash equivalents | 3,877,174 | 3,544,671",
+    "mkt": "Marketable securities | 4,157,073 | 7,699,243",
+    "ar_prior": "Accounts receivable, net of allowance | 687,976 | 1,322,340",
+    "prev_q_revenue": "Revenues | 1,578,456 | 2,689,673 | 4,219,468 | 7,399,419"
+   },
+   "extra_sources": [
+    "GOOG8"
+   ],
+   "sales_b": 3.2055,
+   "sales_pct": 67.0,
+   "seq_pct": 19.2,
+   "gross_margin": 59.97,
+   "gross_margin_bp": 46.0,
+   "op_margin": 33.09,
+   "op_margin_bp": 340.4,
+   "opex_pct": 78.6,
+   "opex_gap_pp": 11.6,
+   "receivables_b": 1.3223,
+   "receivables_pct": 92.2,
+   "receivables_gap_pp": 25.2,
+   "eps_q": 3.29,
+   "eps_q_prior": 1.22,
+   "diluted_shares_m": 313.459,
+   "cash_b": 11.244,
+   "debt_note": "no borrowings on the release's balance sheet",
+   "sales_note": "revenues $3,205.5M vs $1,919.1M a year earlier, $2,689.7M the quarter before (Google web sites $1,977.0M, Google Network web sites $1,197.9M, licensing and other $30.6M); 'Aggregate paid clicks, which include clicks related to ads served on Google sites and our AdSense partners, increased approximately 61% over the fourth quarter of 2005 and approximately 22% over the third quarter of 2006.'",
+   "receivables_note": "accounts receivable $1,322.3M (2006-12-31) vs $688.0M a year earlier (the release's December 31, 2005 column)",
+   "eps_note": "GAAP diluted EPS $3.29 vs $1.22",
+   "shares_note": "diluted shares 313.5M; 'Google employed 10,674 full-time employees as of December 31, 2006, up from 9,378 full time employees as of September 30, 2006.'",
+   "next_print": "Q1 2007 print (the quarter ends in March)",
+   "cash_return_text": null,
+   "note": "'TAC as a percentage of advertising revenues was 31% in both the fourth quarter and the third quarter.'",
+   "fy_actual": {
+    "fy": 2006,
+    "fy_label": "FY06",
+    "eps_normalized": 9.94,
+    "revenue_usd_b": 10.604917,
+    "diluted_shares_m": 309.548,
+    "normalization_note": "FY06 $9.94, GAAP, from the Q4 2006 release (its non-GAAP figure removes stock-based compensation, which recurs)",
+    "op_margin": 33.48,
+    "op_margin_note": "FY06 income from operations $3,550.0M / revenues $10,604.9M (Q4 2006 release)",
+    "pretax_margin": 37.82,
+    "pretax_margin_note": "FY06 income before income taxes $4,011.0M / revenues $10,604.9M (Q4 2006 release)",
+    "gross_margin": 60.16,
+    "sales_growth": 72.8,
+    "tax_rate": 0.2328,
+    "tax_note": "FY06 provision $933.6M on pre-tax $4,011.0M"
+   }
+  },
+  {
+   "quarter": "Q1 2007",
+   "fy": 2007,
+   "q": 1,
+   "published": "2007-04-20",
+   "source": "GOOG11",
+   "release": "Apr 19",
+   "release_time": "after the close on Apr 19: 8-K accepted 2007-04-19 16:13 ET (after the 16:00 ET close); the call at 4:30 PM (ET); public before the open of the next trading day",
+   "period_end": "2007-03-31",
+   "raw": {
+    "sales_k": 3663971.0,
+    "sales_prior_k": 2253755.0,
+    "sales_prev_q_k": 3205498.0,
+    "gross_profit_k": 2193545.0,
+    "gross_profit_prior_k": 1349636.0,
+    "rd_k": 408384.0,
+    "rd_prior_k": 246599.0,
+    "sm_k": 302552.0,
+    "sm_prior_k": 190943.0,
+    "ga_k": 261400.0,
+    "ga_prior_k": 169395.0,
+    "op_income_k": 1221209.0,
+    "op_income_prior_k": 742699.0,
+    "receivables_k": 1477090.0,
+    "receivables_prior_k": 844378.0
+   },
+   "rows": {
+    "rev": "Revenues | 2,253,755 | 3,663,971",
+    "cor": "Cost of revenues (including stock-based compensation expense of $2,283, $4,389) | 904,119 | 1,470,426",
+    "rd": "Research and development (including stock-based compensation expense of $73,086, $120,787) | 246,599 | 408,384",
+    "sm": "Sales and marketing (including stock-based compensation expense of $15,929, $27,250) | 190,943 | 302,552",
+    "ga": "General and administrative (including stock-based compensation expense of $23,366, $31,440) | 169,395 | 261,400",
+    "op": "Income from operations | 742,699 | 1,221,209",
+    "eps": "Net income per share – diluted | 1.95 | 3.18",
+    "sh": "Shares used in per share calculation – diluted | 304,123 | 314,870",
+    "web": "Google web sites | 1,297,317 | 2,282,121",
+    "net": "Google Network web sites | 928,376 | 1,345,329",
+    "lic": "Licensing and other revenues | 28,062 | 36,521",
+    "ar": "Accounts receivable, net of allowance | 1,322,340 | 1,477,090",
+    "cash": "Cash and cash equivalents | 3,544,671 | 4,081,340",
+    "mkt": "Marketable securities | 7,699,243 | 7,854,579",
+    "ar_prior": "Accounts receivable, net of allowance of $14,852 and $15,604 | 687,976 | 844,378",
+    "prev_q_revenue": "Revenues | 1,919,093 | 3,205,498 | 6,138,560 | 10,604,917"
+   },
+   "extra_sources": [
+    "GOOG6",
+    "GOOG10"
+   ],
+   "sales_b": 3.664,
+   "sales_pct": 62.6,
+   "seq_pct": 14.3,
+   "gross_margin": 59.87,
+   "gross_margin_bp": -1.6,
+   "op_margin": 33.33,
+   "op_margin_bp": 37.6,
+   "opex_pct": 60.2,
+   "opex_gap_pp": -2.4,
+   "receivables_b": 1.4771,
+   "receivables_pct": 74.9,
+   "receivables_gap_pp": 12.4,
+   "eps_q": 3.18,
+   "eps_q_prior": 1.95,
+   "diluted_shares_m": 314.87,
+   "cash_b": 11.936,
+   "debt_note": "no borrowings on the release's balance sheet",
+   "sales_note": "revenues $3,664.0M vs $2,253.8M a year earlier, $3,205.5M the quarter before (Google web sites $2,282.1M, Google Network web sites $1,345.3M, licensing and other $36.5M); 'Aggregate paid clicks, which include clicks related to ads served on Google sites and our AdSense partners, increased approximately 52% over the first quarter of 2006 and approximately 13% over the fourth quarter of 2006.'",
+   "receivables_note": "accounts receivable $1,477.1M (2007-03-31) vs $844.4M a year earlier (Q1 2006 10-Q)",
+   "eps_note": "GAAP diluted EPS $3.18 vs $1.95",
+   "shares_note": "diluted shares 314.9M; 'Google employed 12,238 full-time employees as of March 31, 2007, up from 10,674 full time employees as of December 31, 2006.'",
+   "next_print": "Q2 2007 print (the quarter ends in June)",
+   "cash_return_text": null,
+   "note": "'TAC as a percentage of advertising revenues was 31% in the first quarter of 2007 and the fourth quarter of 2006.'"
+  },
+  {
+   "quarter": "Q2 2007",
+   "fy": 2007,
+   "q": 2,
+   "published": "2007-07-20",
+   "source": "GOOG13",
+   "release": "Jul 19",
+   "release_time": "after the close on Jul 19: 8-K accepted 2007-07-19 16:06 ET (after the 16:00 ET close); the call at 4:30 PM (ET); public before the open of the next trading day",
+   "period_end": "2007-06-30",
+   "raw": {
+    "sales_k": 3871985.0,
+    "sales_prior_k": 2455991.0,
+    "sales_prev_q_k": 3663971.0,
+    "gross_profit_k": 2311730.0,
+    "gross_profit_prior_k": 1466959.0,
+    "rd_k": 532106.0,
+    "rd_prior_k": 282552.0,
+    "sm_k": 355604.0,
+    "sm_prior_k": 196397.0,
+    "ga_k": 319405.0,
+    "ga_prior_k": 172638.0,
+    "op_income_k": 1104615.0,
+    "op_income_prior_k": 815372.0,
+    "receivables_k": 1648680.0,
+    "receivables_prior_k": 885088.0
+   },
+   "rows": {
+    "rev": "Revenues | 2,455,991 | 3,871,985 | 4,709,746 | 7,535,956",
+    "cor": "Cost of revenues (including stock-based compensation expense of $2,322, $7,659, $4,606, $12,048) | 989,032 | 1,560,255 | 1,893,151 | 3,030,682",
+    "rd": "Research and development (including stock-based compensation expense of $70,564, $156,983, $143,650, $277,771) | 282,552 | 532,106 | 529,151 | 940,490",
+    "sm": "Sales and marketing (including stock-based compensation expense of $14,285, $36,385, $30,214, $63,635) | 196,397 | 355,604 | 387,340 | 658,156",
+    "ga": "General and administrative (including stock-based compensation expense of $21,978, $40,497, $45,343, $71,936) | 172,638 | 319,405 | 342,033 | 580,804",
+    "op": "Income from operations | 815,372 | 1,104,615 | 1,558,071 | 2,325,824",
+    "eps": "Net income per share—diluted | 2.33 | 2.93 | 4.28 | 6.12",
+    "sh": "Shares used in per share calculation—diluted | 310,038 | 315,469 | 307,080 | 315,170",
+    "web": "Google web sites | 1,432,461 | 2,486,290 | 2,729,778 | 4,768,411",
+    "net": "Google Network web sites | 996,567 | 1,352,051 | 1,924,942 | 2,697,381",
+    "lic": "Licensing and other revenues | 26,963 | 33,644 | 55,026 | 70,164",
+    "ar": "Accounts receivable, net of allowance | 1,322,340 | 1,648,680",
+    "cash": "Cash and cash equivalents | 3,544,671 | 4,493,652",
+    "mkt": "Marketable securities | 7,699,243 | 8,009,883",
+    "ar_prior": "Accounts receivable, net of allowance of $14,852 and $13,891 | 687,976 | 885,088",
+    "prev_q_revenue": "Revenues | 2,253,755 | 3,663,971"
+   },
+   "extra_sources": [
+    "GOOG7",
+    "GOOG11"
+   ],
+   "sales_b": 3.872,
+   "sales_pct": 57.7,
+   "seq_pct": 5.7,
+   "gross_margin": 59.7,
+   "gross_margin_bp": -2.6,
+   "op_margin": 28.53,
+   "op_margin_bp": -467.1,
+   "opex_pct": 85.3,
+   "opex_gap_pp": 27.6,
+   "receivables_b": 1.6487,
+   "receivables_pct": 86.3,
+   "receivables_gap_pp": 28.6,
+   "eps_q": 2.93,
+   "eps_q_prior": 2.33,
+   "diluted_shares_m": 315.469,
+   "cash_b": 12.504,
+   "debt_note": "no borrowings on the release's balance sheet",
+   "sales_note": "revenues $3,872.0M vs $2,456.0M a year earlier, $3,664.0M the quarter before (Google web sites $2,486.3M, Google Network web sites $1,352.1M, licensing and other $33.6M); 'Aggregate paid clicks, which include clicks related to ads served on Google sites and the sites of our AdSense partners, increased approximately 47% over the second quarter of 2006 and remained approximately the same as the first quarter of 2007.'",
+   "receivables_note": "accounts receivable $1,648.7M (2007-06-30) vs $885.1M a year earlier (Q2 2006 10-Q)",
+   "eps_note": "GAAP diluted EPS $2.93 vs $2.33",
+   "shares_note": "diluted shares 315.5M; 'Google employed 13,786 full-time employees as of June 30, 2007, up from 12,238 full time employees as of March 31, 2007.'",
+   "next_print": "Q3 2007 print (the quarter ends in September)",
+   "cash_return_text": null,
+   "note": "'TAC as a percentage of advertising revenues was 30% in the second quarter, compared to 31% in the first quarter of 2007.'"
+  },
+  {
+   "quarter": "Q3 2007",
+   "fy": 2007,
+   "q": 3,
+   "published": "2007-10-19",
+   "source": "GOOG15",
+   "release": "Oct 18",
+   "release_time": "after the close on Oct 18: 8-K accepted 2007-10-18 16:10 ET (after the 16:00 ET close); the call at 4:30 PM (ET); public before the open of the next trading day",
+   "period_end": "2007-09-30",
+   "raw": {
+    "sales_k": 4231351.0,
+    "sales_prior_k": 2689673.0,
+    "sales_prev_q_k": 3871985.0,
+    "gross_profit_k": 2568772.0,
+    "gross_profit_prior_k": 1640945.0,
+    "rd_k": 548712.0,
+    "rd_prior_k": 312632.0,
+    "sm_k": 380820.0,
+    "sm_prior_k": 206972.0,
+    "ga_k": 321398.0,
+    "ga_prior_k": 190010.0,
+    "op_income_k": 1317842.0,
+    "op_income_prior_k": 931331.0,
+    "receivables_k": 1887860.0,
+    "receivables_prior_k": 1031055.0
+   },
+   "rows": {
+    "rev": "Revenues | 2,689,673 | 4,231,351 | 7,399,419 | 11,767,307",
+    "cor": "Cost of revenues (including stock-based compensation expense of $2,149, $4,031, $6,754, $16,080) | 1,048,728 | 1,662,579 | 2,941,879 | 4,693,261",
+    "rd": "Research and development (including stock-based compensation expense of $61,714, $130,655, $205,364, $408,425) | 312,632 | 548,712 | 841,783 | 1,489,202",
+    "sm": "Sales and marketing (including stock-based compensation expense of $14,673, $29,918, $44,887, $93,553) | 206,972 | 380,820 | 594,312 | 1,038,976",
+    "ga": "General and administrative (including stock-based compensation expense of $21,324, $33,352, $66,668, $105,288) | 190,010 | 321,398 | 532,043 | 902,202",
+    "op": "Income from operations | 931,331 | 1,317,842 | 2,489,402 | 3,643,666",
+    "eps": "Net income per share - diluted | 2.36 | 3.38 | 6.64 | 9.50",
+    "sh": "Shares used in per share calculation - diluted | 310,574 | 316,576 | 308,245 | 315,638",
+    "web": "Google web sites | 1,625,977 | 2,734,756 | 4,355,754 | 7,503,167",
+    "net": "Google Network web sites | 1,037,022 | 1,454,721 | 2,961,965 | 4,152,102",
+    "lic": "Licensing and other revenues | 26,674 | 41,874 | 81,700 | 112,038",
+    "ar": "Accounts receivable, net of allowance | 1,322,340 | 1,887,860",
+    "cash": "Cash and cash equivalents | 3,544,671 | 5,106,404",
+    "mkt": "Marketable securities | 7,699,243 | 7,980,941",
+    "ar_prior": "Accounts receivable, net of allowance of $14,852 and $20,870 | 687,976 | 1,031,055",
+    "prev_q_revenue": "Revenues | 2,455,991 | 3,871,985 | 4,709,746 | 7,535,956"
+   },
+   "extra_sources": [
+    "GOOG9",
+    "GOOG13"
+   ],
+   "sales_b": 4.2314,
+   "sales_pct": 57.3,
+   "seq_pct": 9.3,
+   "gross_margin": 60.71,
+   "gross_margin_bp": -30.1,
+   "op_margin": 31.14,
+   "op_margin_bp": -348.1,
+   "opex_pct": 76.3,
+   "opex_gap_pp": 19.0,
+   "receivables_b": 1.8879,
+   "receivables_pct": 83.1,
+   "receivables_gap_pp": 25.8,
+   "eps_q": 3.38,
+   "eps_q_prior": 2.36,
+   "diluted_shares_m": 316.576,
+   "cash_b": 13.087,
+   "debt_note": "no borrowings on the release's balance sheet",
+   "sales_note": "revenues $4,231.4M vs $2,689.7M a year earlier, $3,872.0M the quarter before (Google web sites $2,734.8M, Google Network web sites $1,454.7M, licensing and other $41.9M); 'Aggregate paid clicks, which include clicks related to ads served on Google sites and the sites of our AdSense partners, increased approximately 45% over the third quarter of 2006 and approximately 5% over the second quarter of 2007.'",
+   "receivables_note": "accounts receivable $1,887.9M (2007-09-30) vs $1,031.1M a year earlier (Q3 2006 10-Q)",
+   "eps_note": "GAAP diluted EPS $3.38 vs $2.36",
+   "shares_note": "diluted shares 316.6M; 'Google employed 15,916 full-time employees as of September 30, 2007, up from 13,786 full time employees as of June 30, 2007.'",
+   "next_print": "Q4 2007 print (the quarter ends in December)",
+   "cash_return_text": null,
+   "note": "'TAC as a percentage of advertising revenues was 29% in the third quarter, compared to 30% in the second quarter of 2007.'"
+  },
+  {
+   "quarter": "Q4 2007",
+   "fy": 2007,
+   "q": 4,
+   "published": "2008-02-01",
+   "source": "GOOG17",
+   "release": "Jan 31",
+   "release_time": "after the close on Jan 31: 8-K accepted 2008-01-31 16:06 ET (after the 16:00 ET close); the call at 4:30 PM (ET); public before the open of the next trading day",
+   "period_end": "2007-12-31",
+   "raw": {
+    "sales_k": 4826679.0,
+    "sales_prior_k": 3205498.0,
+    "sales_prev_q_k": 4231351.0,
+    "gross_profit_k": 2870854.0,
+    "gross_profit_prior_k": 1922350.0,
+    "rd_k": 630783.0,
+    "rd_prior_k": 386806.0,
+    "sm_k": 422291.0,
+    "sm_prior_k": 255206.0,
+    "ga_k": 377046.0,
+    "ga_prior_k": 219744.0,
+    "op_income_k": 1440734.0,
+    "op_income_prior_k": 1060594.0,
+    "receivables_k": 2162521.0,
+    "receivables_prior_k": 1322340.0
+   },
+   "rows": {
+    "rev": "Revenues | 3,205,498 | 4,826,679 | 10,604,917 | 16,593,986",
+    "cor": "Cost of revenues (including stock-based compensation expense of $10,874, $6,255, $17,629, $22,335) | 1,283,148 | 1,955,825 | 4,225,027 | 6,649,085",
+    "rd": "Research and development (including stock-based compensation expense of $82,122, $161,372, $287,485, $569,797) | 386,806 | 630,783 | 1,228,589 | 2,119,985",
+    "sm": "Sales and marketing (including stock-based compensation expense of $14,502, $38,085, $59,389, $131,638) | 255,206 | 422,291 | 849,518 | 1,461,266",
+    "ga": "General and administrative (including stock-based compensation expense of $26,929, $39,588, $93,597, $144,876) | 219,744 | 377,046 | 751,787 | 1,279,250",
+    "op": "Income from operations | 1,060,594 | 1,440,734 | 3,549,996 | 5,084,400",
+    "eps": "Net income per share - diluted | 3.29 | 3.79 | 9.94 | 13.29",
+    "sh": "Shares used in per share calculation - diluted | 313,459 | 317,925 | 309,548 | 316,210",
+    "web": "Google web sites | 1,977,042 | 3,121,539 | 6,332,797 | 10,624,705",
+    "net": "Google Network web sites | 1,197,867 | 1,635,836 | 4,159,831 | 5,787,938",
+    "lic": "Licensing and other revenues | 30,589 | 69,304 | 112,289 | 181,343",
+    "pre": "Income before income taxes | 1,184,733 | 1,608,028 | 4,011,040 | 5,673,980",
+    "tax": "Provision for income taxes | 154,017 | 401,579 | 933,594 | 1,470,260",
+    "ar": "Accounts receivable, net of allowance | 1,322,340 | 2,162,521",
+    "cash": "Cash and cash equivalents | 3,544,671 | 6,081,593",
+    "mkt": "Marketable securities | 7,699,243 | 8,137,020",
+    "ar_prior": "Accounts receivable, net of allowance | 1,322,340 | 2,162,521",
+    "prev_q_revenue": "Revenues | 2,689,673 | 4,231,351 | 7,399,419 | 11,767,307"
+   },
+   "extra_sources": [
+    "GOOG15"
+   ],
+   "sales_b": 4.8267,
+   "sales_pct": 50.6,
+   "seq_pct": 14.1,
+   "gross_margin": 59.48,
+   "gross_margin_bp": -49.2,
+   "op_margin": 29.85,
+   "op_margin_bp": -323.7,
+   "opex_pct": 66.0,
+   "opex_gap_pp": 15.4,
+   "receivables_b": 2.1625,
+   "receivables_pct": 63.5,
+   "receivables_gap_pp": 13.0,
+   "eps_q": 3.79,
+   "eps_q_prior": 3.29,
+   "diluted_shares_m": 317.925,
+   "cash_b": 14.219,
+   "debt_note": "no borrowings on the release's balance sheet",
+   "sales_note": "revenues $4,826.7M vs $3,205.5M a year earlier, $4,231.4M the quarter before (Google web sites $3,121.5M, Google Network web sites $1,635.8M, licensing and other $69.3M); 'Aggregate paid clicks, which include clicks related to ads served on Google sites and the sites of our AdSense partners, increased approximately 30% over the fourth quarter of 2006 and approximately 9% over the third quarter of 2007.'",
+   "receivables_note": "accounts receivable $2,162.5M (2007-12-31) vs $1,322.3M a year earlier (the release's December 31, 2006 column)",
+   "eps_note": "GAAP diluted EPS $3.79 vs $3.29",
+   "shares_note": "diluted shares 317.9M; 'Google employed 16,805 full-time employees as of December 31, 2007, up from 15,916 full-time employees as of September 30, 2007.'",
+   "next_print": "Q1 2008 print (the quarter ends in March)",
+   "cash_return_text": null,
+   "note": "'TAC as a percentage of advertising revenues was 30% in the fourth quarter, compared to 29% in the third quarter of 2007.'",
+   "fy_actual": {
+    "fy": 2007,
+    "fy_label": "FY07",
+    "eps_normalized": 13.29,
+    "revenue_usd_b": 16.593986,
+    "diluted_shares_m": 316.21,
+    "normalization_note": "FY07 $13.29, GAAP, from the Q4 2007 release (its non-GAAP figure removes stock-based compensation, which recurs)",
+    "op_margin": 30.64,
+    "op_margin_note": "FY07 income from operations $5,084.4M / revenues $16,594.0M (Q4 2007 release)",
+    "pretax_margin": 34.19,
+    "pretax_margin_note": "FY07 income before income taxes $5,674.0M / revenues $16,594.0M (Q4 2007 release)",
+    "gross_margin": 59.93,
+    "sales_growth": 56.5,
+    "tax_rate": 0.2591,
+    "tax_note": "FY07 provision $1,470.3M on pre-tax $5,674.0M"
+   }
+  },
+  {
+   "quarter": "Q1 2008",
+   "fy": 2008,
+   "q": 1,
+   "published": "2008-04-18",
+   "source": "GOOG19",
+   "release": "Apr 17",
+   "release_time": "after the close on Apr 17: 8-K accepted 2008-04-17 16:11 ET (after the 16:00 ET close); the call at 4:30 PM (ET); public before the open of the next trading day",
+   "period_end": "2008-03-31",
+   "raw": {
+    "sales_k": 5186043.0,
+    "sales_prior_k": 3663971.0,
+    "sales_prev_q_k": 4826679.0,
+    "gross_profit_k": 3075507.0,
+    "gross_profit_prior_k": 2193545.0,
+    "rd_k": 673069.0,
+    "rd_prior_k": 408384.0,
+    "sm_k": 446898.0,
+    "sm_prior_k": 302552.0,
+    "ga_k": 409305.0,
+    "ga_prior_k": 261400.0,
+    "op_income_k": 1546235.0,
+    "op_income_prior_k": 1221209.0,
+    "receivables_k": 2560909.0,
+    "receivables_prior_k": 1477090.0
+   },
+   "rows": {
+    "rev": "Revenues | 3,663,971 | 5,186,043",
+    "cor": "Cost of revenues (including stock-based compensation expense of $4,389, $9,148) | 1,470,426 | 2,110,536",
+    "rd": "Research and development (including stock-based compensation expense of $120,787, $193,800) | 408,384 | 673,069",
+    "sm": "Sales and marketing (including stock-based compensation expense of $27,250, $42,576) | 302,552 | 446,898",
+    "ga": "General and administrative (including stock-based compensation expense of $31,440, $35,255) | 261,400 | 409,305",
+    "op": "Income from operations | 1,221,209 | 1,546,235",
+    "eps": "Net income per share - diluted | 3.18 | 4.12",
+    "sh": "Shares used in per share calculation - diluted | 314,870 | 317,392",
+    "web": "Google web sites | 2,282,121 | 3,400,405",
+    "net": "Google Network web sites | 1,345,329 | 1,686,141",
+    "lic": "Licensing and other revenues | 36,521 | 99,497",
+    "ar": "Accounts receivable, net of allowance | 2,162,521 | 2,560,909",
+    "cash": "Cash and cash equivalents | 6,081,593 | 6,519,749",
+    "mkt": "Marketable securities | 8,137,020 | 5,614,759",
+    "ar_prior": "Accounts receivable, net of allowance of $16,914 and $18,562 | 1,322,340 | 1,477,090",
+    "prev_q_revenue": "Revenues | 3,205,498 | 4,826,679 | 10,604,917 | 16,593,986"
+   },
+   "extra_sources": [
+    "GOOG12",
+    "GOOG17"
+   ],
+   "sales_b": 5.186,
+   "sales_pct": 41.5,
+   "seq_pct": 7.4,
+   "gross_margin": 59.3,
+   "gross_margin_bp": -56.4,
+   "op_margin": 29.82,
+   "op_margin_bp": -351.5,
+   "opex_pct": 57.3,
+   "opex_gap_pp": 15.7,
+   "receivables_b": 2.5609,
+   "receivables_pct": 73.4,
+   "receivables_gap_pp": 31.8,
+   "eps_q": 4.12,
+   "eps_q_prior": 3.18,
+   "diluted_shares_m": 317.392,
+   "cash_b": 12.135,
+   "debt_note": "no borrowings on the release's balance sheet",
+   "sales_note": "revenues $5,186.0M vs $3,664.0M a year earlier, $4,826.7M the quarter before (Google web sites $3,400.4M, Google Network web sites $1,686.1M, licensing and other $99.5M); 'Aggregate paid clicks, which include clicks related to ads served on Google sites and the sites of our AdSense partners, increased approximately 20% over the first quarter of 2007 and approximately 4% over the fourth quarter of 2007.'",
+   "receivables_note": "accounts receivable $2,560.9M (2008-03-31) vs $1,477.1M a year earlier (Q1 2007 10-Q)",
+   "eps_note": "GAAP diluted EPS $4.12 vs $3.18",
+   "shares_note": "diluted shares 317.4M; 'Google employed 19,156 full-time employees as of March 31, 2008, up from 16,805 full-time employees as of December 31, 2007.'",
+   "next_print": "Q2 2008 print (the quarter ends in June)",
+   "cash_return_text": null,
+   "note": "'TAC as a percentage of advertising revenues was 29% in the first quarter, compared to 30% in the fourth quarter of 2007.'; DoubleClick consolidated from March 11, 2008 (8-K of 2008-03-14, which changes no figure)"
+  },
+  {
+   "quarter": "Q2 2008",
+   "fy": 2008,
+   "q": 2,
+   "published": "2008-07-18",
+   "source": "GOOG21",
+   "release": "Jul 17",
+   "release_time": "after the close on Jul 17: 8-K accepted 2008-07-17 16:13 ET (after the 16:00 ET close); the call at 4:30 PM (ET); public before the open of the next trading day",
+   "period_end": "2008-06-30",
+   "raw": {
+    "sales_k": 5367212.0,
+    "sales_prior_k": 3871985.0,
+    "sales_prev_q_k": 5186043.0,
+    "gross_profit_k": 3219637.0,
+    "gross_profit_prior_k": 2311730.0,
+    "rd_k": 682210.0,
+    "rd_prior_k": 532106.0,
+    "sm_k": 484552.0,
+    "sm_prior_k": 355604.0,
+    "ga_k": 474910.0,
+    "ga_prior_k": 319405.0,
+    "op_income_k": 1577965.0,
+    "op_income_prior_k": 1104615.0,
+    "receivables_k": 2641901.0,
+    "receivables_prior_k": 1648680.0
+   },
+   "rows": {
+    "rev": "Revenues | 3,871,985 | 5,367,212 | 7,535,956 | 10,553,255",
+    "cor": "Cost of revenues (including stock-based compensation expense of $7,659, $9,363, $12,048, $18,511) | 1,560,255 | 2,147,575 | 3,030,682 | 4,258,111",
+    "rd": "Research and development (including stock-based compensation expense of $156,983, $187,281, $277,771, $381,081) | 532,106 | 682,210 | 940,490 | 1,355,279",
+    "sm": "Sales and marketing (including stock-based compensation expense of $36,385, $42,593, $63,635, $85,169) | 355,604 | 484,552 | 658,156 | 931,450",
+    "ga": "General and administrative (including stock-based compensation expense of $40,497, $33,539, $71,936, $68,794) | 319,405 | 474,910 | 580,804 | 884,215",
+    "op": "Income from operations | 1,104,615 | 1,577,965 | 2,325,824 | 3,124,200",
+    "eps": "Net income per share - diluted | 2.93 | 3.92 | 6.12 | 8.04",
+    "sh": "Shares used in per share calculation - diluted | 315,469 | 318,023 | 315,170 | 317,708",
+    "web": "Google web sites | 2,486,290 | 3,530,145 | 4,768,411 | 6,930,550",
+    "net": "Google Network web sites | 1,352,051 | 1,655,280 | 2,697,381 | 3,341,421",
+    "lic": "Licensing and other revenues | 33,644 | 181,787 | 70,164 | 281,284",
+    "ar": "Accounts receivable, net of allowance | 2,162,521 | 2,641,901",
+    "cash": "Cash and cash equivalents | 6,081,593 | 7,363,536",
+    "mkt": "Marketable securities | 8,137,020 | 5,370,133",
+    "ar_prior": "Accounts receivable, net of allowance of $16,914 and $26,747 | 1,322,340 | 1,648,680",
+    "prev_q_revenue": "Revenues | 3,663,971 | 5,186,043"
+   },
+   "extra_sources": [
+    "GOOG14",
+    "GOOG19"
+   ],
+   "sales_b": 5.3672,
+   "sales_pct": 38.6,
+   "seq_pct": 3.5,
+   "gross_margin": 59.99,
+   "gross_margin_bp": 28.3,
+   "op_margin": 29.4,
+   "op_margin_bp": 87.2,
+   "opex_pct": 36.0,
+   "opex_gap_pp": -2.6,
+   "receivables_b": 2.6419,
+   "receivables_pct": 60.2,
+   "receivables_gap_pp": 21.6,
+   "eps_q": 3.92,
+   "eps_q_prior": 2.93,
+   "diluted_shares_m": 318.023,
+   "cash_b": 12.734,
+   "debt_note": "no borrowings on the release's balance sheet",
+   "sales_note": "revenues $5,367.2M vs $3,872.0M a year earlier, $5,186.0M the quarter before (Google web sites $3,530.1M, Google Network web sites $1,655.3M, licensing and other $181.8M); 'Aggregate paid clicks, which include clicks related to ads served on Google sites and the sites of our AdSense partners, increased approximately 19% over the second quarter of 2007 and decreased approximately 1% over the first quarter of 2008.'",
+   "receivables_note": "accounts receivable $2,641.9M (2008-06-30) vs $1,648.7M a year earlier (Q2 2007 10-Q)",
+   "eps_note": "GAAP diluted EPS $3.92 vs $2.93",
+   "shares_note": "diluted shares 318.0M; 'Google employed 19,604 full-time employees as of June 30, 2008, up from 19,156 full-time employees as of March 31, 2008.'",
+   "next_print": "Q3 2008 print (the quarter ends in September)",
+   "cash_return_text": null,
+   "note": "'TAC as a percentage of advertising revenues was 28% in the second quarter, compared to 29% in the first quarter of 2008.'"
+  },
+  {
+   "quarter": "Q3 2008",
+   "fy": 2008,
+   "q": 3,
+   "published": "2008-10-17",
+   "source": "GOOG23",
+   "release": "Oct 16",
+   "release_time": "after the close on Oct 16: 8-K accepted 2008-10-16 16:20 ET (after the 16:00 ET close); the call at 4:30 PM (ET); public before the open of the next trading day",
+   "period_end": "2008-09-30",
+   "raw": {
+    "sales_k": 5541391.0,
+    "sales_prior_k": 4231351.0,
+    "sales_prev_q_k": 5367212.0,
+    "gross_profit_k": 3368001.0,
+    "gross_profit_prior_k": 2568772.0,
+    "rd_k": 704571.0,
+    "rd_prior_k": 548712.0,
+    "sm_k": 508801.0,
+    "sm_prior_k": 380820.0,
+    "ga_k": 411964.0,
+    "ga_prior_k": 321398.0,
+    "op_income_k": 1742665.0,
+    "op_income_prior_k": 1317842.0,
+    "receivables_k": 2541492.0,
+    "receivables_prior_k": 1887860.0
+   },
+   "rows": {
+    "rev": "Revenues | 4,231,351 | 5,541,391 | 11,767,307 | 16,094,646",
+    "cor": "Cost of revenues (including stock-based compensation expense of $4,031, $10,729, $16,080, $29,240) | 1,662,579 | 2,173,390 | 4,693,261 | 6,431,501",
+    "rd": "Research and development (including stock-based compensation expense of $130,655, $169,263, $408,425, $550,343) | 548,712 | 704,571 | 1,489,202 | 2,059,851",
+    "sm": "Sales and marketing (including stock-based compensation expense of $29,918, $64,497, $93,553, $149,666) | 380,820 | 508,801 | 1,038,976 | 1,440,252",
+    "ga": "General and administrative (including stock-based compensation expense of $33,352, $35,550, $105,288, $104,345) | 321,398 | 411,964 | 902,202 | 1,296,178",
+    "op": "Income from operations | 1,317,842 | 1,742,665 | 3,643,666 | 4,866,864",
+    "eps": "Net income per share - diluted | 3.38 | 4.24 | 9.50 | 12.28",
+    "sh": "Shares used in per share calculation - diluted | 316,576 | 317,776 | 315,638 | 317,730",
+    "web": "Google web sites | 2,734,756 | 3,672,111 | 7,503,167 | 10,602,660",
+    "net": "Google Network web sites | 1,454,721 | 1,679,861 | 4,152,102 | 5,021,283",
+    "lic": "Licensing and other revenues | 41,874 | 189,419 | 112,038 | 470,703",
+    "ar": "Accounts receivable, net of allowance | 2,162,521 | 2,541,492",
+    "cash": "Cash and cash equivalents | 6,081,593 | 8,370,469",
+    "mkt": "Marketable securities | 8,137,020 | 6,042,140",
+    "ar_prior": "Accounts receivable, net of allowance of $16,914 and $38,130 | 1,322,340 | 1,887,860",
+    "prev_q_revenue": "Revenues | 3,871,985 | 5,367,212 | 7,535,956 | 10,553,255"
+   },
+   "extra_sources": [
+    "GOOG16",
+    "GOOG21"
+   ],
+   "sales_b": 5.5414,
+   "sales_pct": 31.0,
+   "seq_pct": 3.2,
+   "gross_margin": 60.78,
+   "gross_margin_bp": 7.1,
+   "op_margin": 31.45,
+   "op_margin_bp": 30.3,
+   "opex_pct": 29.9,
+   "opex_gap_pp": -1.0,
+   "receivables_b": 2.5415,
+   "receivables_pct": 34.6,
+   "receivables_gap_pp": 3.7,
+   "eps_q": 4.24,
+   "eps_q_prior": 3.38,
+   "diluted_shares_m": 317.776,
+   "cash_b": 14.413,
+   "debt_note": "no borrowings on the release's balance sheet",
+   "sales_note": "revenues $5,541.4M vs $4,231.4M a year earlier, $5,367.2M the quarter before (Google web sites $3,672.1M, Google Network web sites $1,679.9M, licensing and other $189.4M); 'Aggregate paid clicks, which include clicks related to ads served on Google sites and the sites of our AdSense partners, increased approximately 18% over the third quarter of 2007 and increased approximately 4% over the second quarter of 2008.'",
+   "receivables_note": "accounts receivable $2,541.5M (2008-09-30) vs $1,887.9M a year earlier (Q3 2007 10-Q)",
+   "eps_note": "GAAP diluted EPS $4.24 vs $3.38",
+   "shares_note": "diluted shares 317.8M; 'Google employed 20,123 full-time employees as of September 30, 2008, up from 19,604 full-time employees as of June 30, 2008.'",
+   "next_print": "Q4 2008 print (the quarter ends in December)",
+   "cash_return_text": null,
+   "note": "'TAC as a percentage of advertising revenues was 28% in the third quarter, compared to 28% in the second quarter of 2008.'",
+   "restated": {
+    "published": "2008-11-10",
+    "source": "GOOG24",
+    "raw": {
+     "sales_k": 5541391.0,
+     "sales_prior_k": 4231351.0,
+     "sales_prev_q_k": 5367212.0,
+     "gross_profit_k": 3368001.0,
+     "gross_profit_prior_k": 2568772.0,
+     "rd_k": 704571.0,
+     "rd_prior_k": 548712.0,
+     "sm_k": 508801.0,
+     "sm_prior_k": 380820.0,
+     "ga_k": 507064.0,
+     "ga_prior_k": 321398.0,
+     "op_income_k": 1647565.0,
+     "op_income_prior_k": 1317842.0,
+     "receivables_k": 2541492.0,
+     "receivables_prior_k": 1887860.0
+    },
+    "sales_b": 5.5414,
+    "sales_pct": 31.0,
+    "seq_pct": 3.2,
+    "gross_margin": 60.78,
+    "gross_margin_bp": 7.1,
+    "op_margin": 29.73,
+    "op_margin_bp": -141.3,
+    "opex_pct": 37.5,
+    "opex_gap_pp": 6.6,
+    "receivables_b": 2.5415,
+    "receivables_pct": 34.6,
+    "receivables_gap_pp": 3.7,
+    "eps_q": 4.06,
+    "rows": {
+     "ga": "General and administrative (including stock-based compensation expense of $33,352, $35,550, $105,288 and $104,345) | 321,398 | 507,064 | 902,202 | 1,391,278",
+     "op": "Income from operations | 1,317,842 | 1,647,565 | 3,643,666 | 4,771,764",
+     "rev": "Revenues | 4,231,351 | 5,541,391 | 11,767,307 | 16,094,646",
+     "eps": "Diluted | 3.38 | 4.06 | 9.50 | 12.10"
+    },
+    "eps_note": "GAAP diluted EPS $4.06 vs $3.38 (the Q3 2008 10-Q; the release had $4.24)",
+    "note": "'TAC as a percentage of advertising revenues was 28% in the third quarter, compared to 28% in the second quarter of 2008.'; restated by the Q3 2008 10-Q: 'For accounting purposes, $95.1 million was determined to be the fair value of the settlement portion of the agreement and was expensed in the quarter ended September 30, 2008' (general and administrative $507.1M against the release's $412.0M; operating income $1,647.6M against $1,742.7M)"
+   }
+  },
+  {
+   "quarter": "Q4 2008",
+   "fy": 2008,
+   "q": 4,
+   "published": "2009-01-23",
+   "source": "GOOG25",
+   "release": "Jan 22",
+   "release_time": "after the close on Jan 22: 8-K accepted 2009-01-22 16:17 ET (after the 16:00 ET close); the call at 4:30 PM (ET); public before the open of the next trading day",
+   "period_end": "2008-12-31",
+   "raw": {
+    "sales_k": 5700904.0,
+    "sales_prior_k": 4826679.0,
+    "sales_prev_q_k": 5541391.0,
+    "gross_profit_k": 3510899.0,
+    "gross_profit_prior_k": 2870854.0,
+    "rd_k": 733342.0,
+    "rd_prior_k": 630783.0,
+    "sm_k": 505993.0,
+    "sm_prior_k": 422291.0,
+    "ga_k": 411360.0,
+    "ga_prior_k": 377046.0,
+    "op_income_k": 1860204.0,
+    "op_income_prior_k": 1440734.0,
+    "receivables_k": 2642192.0,
+    "receivables_prior_k": 2162521.0
+   },
+   "rows": {
+    "rev": "Revenues | 4,826,679 | 5,700,904 | 16,593,986 | 21,795,550",
+    "cor": "Cost of revenues (including stock-based compensation expense of $6,255, $12,099, $22,335, $41,340) | 1,955,825 | 2,190,005 | 6,649,085 | 8,621,506",
+    "rd": "Research and development (including stock-based compensation expense of $161,372, $182,075, $569,797, $732,418) | 630,783 | 733,342 | 2,119,985 | 2,793,192",
+    "sm": "Sales and marketing (including stock-based compensation expense of $38,085, $56,354, $131,638, $206,020) | 422,291 | 505,993 | 1,461,266 | 1,946,244",
+    "ga": "General and administrative (including stock-based compensation expense of $39,588, $35,644, $144,876, $139,988) | 377,046 | 411,360 | 1,279,250 | 1,802,639",
+    "op": "Income from operations | 1,440,734 | 1,860,204 | 5,084,400 | 6,631,969",
+    "eps": "Net income per share - diluted | 3.79 | 1.21 | 13.29 | 13.31",
+    "sh": "Shares used in per share calculation - diluted | 317,925 | 316,864 | 316,210 | 317,514",
+    "web": "Google web sites | 3,121,539 | 3,811,166 | 10,624,705 | 14,413,826",
+    "net": "Google Network web sites | 1,635,836 | 1,693,405 | 5,787,938 | 6,714,688",
+    "lic": "Licensing and other revenues | 69,304 | 196,333 | 181,343 | 667,036",
+    "pre": "Income before income taxes | 1,608,028 | 835,346 | 5,673,980 | 5,853,596",
+    "tax": "Provision for income taxes | 401,579 | 452,904 | 1,470,260 | 1,626,738",
+    "ar": "Accounts receivable, net of allowance | 2,162,521 | 2,642,192",
+    "cash": "Cash and cash equivalents | 6,081,593 | 8,656,672",
+    "mkt": "Marketable securities | 8,137,020 | 7,189,099",
+    "ar_prior": "Accounts receivable, net of allowance | 2,162,521 | 2,642,192",
+    "prev_q_revenue": "Revenues | 4,231,351 | 5,541,391 | 11,767,307 | 16,094,646"
+   },
+   "extra_sources": [
+    "GOOG23"
+   ],
+   "sales_b": 5.7009,
+   "sales_pct": 18.1,
+   "seq_pct": 2.9,
+   "gross_margin": 61.58,
+   "gross_margin_bp": 210.6,
+   "op_margin": 32.63,
+   "op_margin_bp": 278.1,
+   "opex_pct": 15.4,
+   "opex_gap_pp": -2.7,
+   "receivables_b": 2.6422,
+   "receivables_pct": 22.2,
+   "receivables_gap_pp": 4.1,
+   "eps_q": 1.21,
+   "eps_q_prior": 3.79,
+   "diluted_shares_m": 316.864,
+   "cash_b": 15.846,
+   "debt_note": "no borrowings on the release's balance sheet",
+   "sales_note": "revenues $5,700.9M vs $4,826.7M a year earlier, $5,541.4M the quarter before (Google web sites $3,811.2M, Google Network web sites $1,693.4M, licensing and other $196.3M); 'Aggregate paid clicks, which include clicks related to ads served on Google sites and the sites of our AdSense partners, increased approximately 18% over the fourth quarter of 2007 and increased approximately 10% over the third quarter of 2008.'",
+   "receivables_note": "accounts receivable $2,642.2M (2008-12-31) vs $2,162.5M a year earlier (the release's December 31, 2007 column)",
+   "eps_note": "GAAP diluted EPS $1.21 vs $3.79",
+   "shares_note": "diluted shares 316.9M; 'Google employed 20,222 full-time employees as of December 31, 2008, up from 20,123 full-time employees as of September 30, 2008.'",
+   "next_print": "Q1 2009 print (the quarter ends in March)",
+   "cash_return_text": null,
+   "note": "'TAC as a percentage of advertising revenues was 27% in the fourth quarter, compared to 28% in the third quarter of 2008.'; the quarter's $1.21 EPS is after the $1,094.8M impairment of equity investments (below operating income): 'In the fourth quarter of 2008, the impairment charge on these assets was $1.09 billion, including charges of $726 million and $355 million related to our investments in AOL and Clearwire, respectively.'",
+   "fy_actual": {
+    "fy": 2008,
+    "fy_label": "FY08",
+    "eps_normalized": 13.31,
+    "revenue_usd_b": 21.79555,
+    "diluted_shares_m": 317.514,
+    "normalization_note": "FY08 $13.31, GAAP, from the Q4 2008 release (its non-GAAP figure removes stock-based compensation, which recurs)",
+    "op_margin": 30.43,
+    "op_margin_note": "FY08 income from operations $6,632.0M / revenues $21,795.5M (Q4 2008 release)",
+    "pretax_margin": 26.86,
+    "pretax_margin_note": "FY08 income before income taxes $5,853.6M / revenues $21,795.5M (Q4 2008 release; after the $1,094.8M impairment of equity investments)",
+    "gross_margin": 60.44,
+    "sales_growth": 31.3,
+    "tax_rate": 0.2779,
+    "tax_note": "FY08 provision $1,626.7M on pre-tax $5,853.6M"
+   }
+  },
+  {
+   "quarter": "Q1 2009",
+   "fy": 2009,
+   "q": 1,
+   "published": "2009-04-17",
+   "source": "GOOG27",
+   "release": "Apr 16",
+   "release_time": "after the close on Apr 16: 8-K accepted 2009-04-16 16:07 ET (after the 16:00 ET close); the call at 4:30 PM (ET); public before the open of the next trading day",
+   "period_end": "2009-03-31",
+   "raw": {
+    "sales_k": 5508990.0,
+    "sales_prior_k": 5186043.0,
+    "sales_prev_q_k": 5700904.0,
+    "gross_profit_k": 3407486.0,
+    "gross_profit_prior_k": 3075507.0,
+    "rd_k": 641643.0,
+    "rd_prior_k": 673069.0,
+    "sm_k": 433941.0,
+    "sm_prior_k": 446898.0,
+    "ga_k": 448311.0,
+    "ga_prior_k": 409305.0,
+    "op_income_k": 1883591.0,
+    "op_income_prior_k": 1546235.0,
+    "receivables_k": 2543105.0,
+    "receivables_prior_k": 2560909.0
+   },
+   "rows": {
+    "rev": "Revenues | 5,186,043 | 5,508,990",
+    "cor": "Cost of revenues (including stock-based compensation expense of $9,148, $12,537) | 2,110,536 | 2,101,504",
+    "rd": "Research and development (including stock-based compensation expense of $193,800, $168,561) | 673,069 | 641,643",
+    "sm": "Sales and marketing (including stock-based compensation expense of $42,576, $59,026) | 446,898 | 433,941",
+    "ga": "General and administrative (including stock-based compensation expense of $35,255, $37,359) | 409,305 | 448,311",
+    "op": "Income from operations | 1,546,235 | 1,883,591",
+    "eps": "Net income per share—diluted | 4.12 | 4.49",
+    "sh": "Shares used in per share calculation—diluted | 317,392 | 317,221",
+    "web": "Google web sites | 3,400,405 | 3,692,823",
+    "net": "Google Network web sites | 1,686,141 | 1,638,042",
+    "lic": "Licensing and other revenues | 99,497 | 178,125",
+    "ar": "Accounts receivable, net of allowance | 2,642,192 | 2,543,105",
+    "cash": "Cash and cash equivalents | 8,656,672 | 10,426,291",
+    "mkt": "Marketable securities | 7,189,099 | 7,358,642",
+    "ar_prior": "Accounts receivable, net of allowance of $32,887 and $50,278 | 2,162,521 | 2,560,909",
+    "prev_q_revenue": "Revenues | 4,826,679 | 5,700,904 | 16,593,986 | 21,795,550"
+   },
+   "extra_sources": [
+    "GOOG20",
+    "GOOG25"
+   ],
+   "sales_b": 5.509,
+   "sales_pct": 6.2,
+   "seq_pct": -3.4,
+   "gross_margin": 61.85,
+   "gross_margin_bp": 255.0,
+   "op_margin": 34.19,
+   "op_margin_bp": 437.6,
+   "opex_pct": -0.4,
+   "opex_gap_pp": -6.6,
+   "receivables_b": 2.5431,
+   "receivables_pct": -0.7,
+   "receivables_gap_pp": -6.9,
+   "eps_q": 4.49,
+   "eps_q_prior": 4.12,
+   "diluted_shares_m": 317.221,
+   "cash_b": 17.785,
+   "debt_note": "no borrowings on the release's balance sheet",
+   "sales_note": "revenues $5,509.0M vs $5,186.0M a year earlier, $5,700.9M the quarter before (Google web sites $3,692.8M, Google Network web sites $1,638.0M, licensing and other $178.1M); 'Aggregate paid clicks, which include clicks related to ads served on Google sites and the sites of our AdSense partners, increased approximately 17% over the first quarter of 2008 and increased approximately 3% over the fourth quarter of 2008.'",
+   "receivables_note": "accounts receivable $2,543.1M (2009-03-31) vs $2,560.9M a year earlier (Q1 2008 10-Q)",
+   "eps_note": "GAAP diluted EPS $4.49 vs $4.12",
+   "shares_note": "diluted shares 317.2M; 'Google employed 20,164 full-time employees as of March 31, 2009, down from 20,222 full-time employees as of December 31, 2008.'",
+   "next_print": "Q2 2009 print (the quarter ends in June)",
+   "cash_return_text": null,
+   "note": "'TAC as a percentage of advertising revenues was 27% in the first quarter of 2009, compared to 27% in the fourth quarter of 2008.'"
+  },
+  {
+   "quarter": "Q2 2009",
+   "fy": 2009,
+   "q": 2,
+   "published": "2009-07-17",
+   "source": "GOOG28",
+   "release": "Jul 16",
+   "release_time": "after the close on Jul 16: 8-K accepted 2009-07-16 16:08 ET (after the 16:00 ET close); the call at 4:30 PM (ET); public before the open of the next trading day",
+   "period_end": "2009-06-30",
+   "raw": {
+    "sales_k": 5522897.0,
+    "sales_prior_k": 5367212.0,
+    "sales_prev_q_k": 5508990.0,
+    "gross_profit_k": 3414926.0,
+    "gross_profit_prior_k": 3219637.0,
+    "rd_k": 707626.0,
+    "rd_prior_k": 682210.0,
+    "sm_k": 469039.0,
+    "sm_prior_k": 484552.0,
+    "ga_k": 364367.0,
+    "ga_prior_k": 474910.0,
+    "op_income_k": 1873894.0,
+    "op_income_prior_k": 1577965.0,
+    "receivables_k": 2701912.0,
+    "receivables_prior_k": 2641901.0
+   },
+   "rows": {
+    "rev": "Revenues | 5,367,212 | 5,522,897 | 10,553,255 | 11,031,887",
+    "cor": "Cost of revenues (including stock-based compensation expense of $9,363, $13,592, $18,511, $26,129) | 2,147,575 | 2,107,971 | 4,258,111 | 4,209,475",
+    "rd": "Research and development (including stock-based compensation expense of $187,281, $182,209, $381,081, $350,770) | 682,210 | 707,626 | 1,355,279 | 1,349,269",
+    "sm": "Sales and marketing (including stock-based compensation expense of $42,593, $57,294, $85,169, $116,320) | 484,552 | 469,039 | 931,450 | 902,980",
+    "ga": "General and administrative (including stock-based compensation expense of $33,539, $39,975, $68,794, $77,334) | 474,910 | 364,367 | 884,215 | 812,678",
+    "op": "Income from operations | 1,577,965 | 1,873,894 | 3,124,200 | 3,757,485",
+    "eps": "Net income per share - diluted | 3.92 | 4.66 | 8.04 | 9.15",
+    "sh": "Shares used in per share calculation - diluted | 318,023 | 318,536 | 317,708 | 317,878",
+    "web": "Google web sites | 3,530,145 | 3,652,628 | 6,930,550 | 7,345,451",
+    "net": "Google Network web sites | 1,655,280 | 1,683,500 | 3,341,421 | 3,321,542",
+    "lic": "Licensing and other revenues | 181,787 | 186,769 | 281,284 | 364,894",
+    "ar": "Accounts receivable, net of allowance | 2,642,192 | 2,701,912",
+    "cash": "Cash and cash equivalents | 8,656,672 | 11,911,351",
+    "mkt": "Marketable securities | 7,189,099 | 7,432,655",
+    "ar_prior": "Accounts receivable, net of allowance of $32,887 and $67,326 | 2,162,521 | 2,641,901",
+    "prev_q_revenue": "Revenues | 5,186,043 | 5,508,990"
+   },
+   "extra_sources": [
+    "GOOG22",
+    "GOOG27"
+   ],
+   "sales_b": 5.5229,
+   "sales_pct": 2.9,
+   "seq_pct": 0.3,
+   "gross_margin": 61.83,
+   "gross_margin_bp": 184.5,
+   "op_margin": 33.93,
+   "op_margin_bp": 452.9,
+   "opex_pct": -6.1,
+   "opex_gap_pp": -9.0,
+   "receivables_b": 2.7019,
+   "receivables_pct": 2.3,
+   "receivables_gap_pp": -0.6,
+   "eps_q": 4.66,
+   "eps_q_prior": 3.92,
+   "diluted_shares_m": 318.536,
+   "cash_b": 19.344,
+   "debt_note": "no borrowings on the release's balance sheet",
+   "sales_note": "revenues $5,522.9M vs $5,367.2M a year earlier, $5,509.0M the quarter before (Google web sites $3,652.6M, Google Network web sites $1,683.5M, licensing and other $186.8M); 'Paid Clicks - Aggregate paid clicks, which include clicks related to ads served on Google sites and the sites of our AdSense partners, increased approximately 15% over the second quarter of 2008 and decreased approximately 2% over the first quarter of 2009.'",
+   "receivables_note": "accounts receivable $2,701.9M (2009-06-30) vs $2,641.9M a year earlier (Q2 2008 10-Q)",
+   "eps_note": "GAAP diluted EPS $4.66 vs $3.92",
+   "shares_note": "diluted shares 318.5M; 'Google employed 19,786 full-time employees as of June 30, 2009, down from 20,164 full-time employees as of March 31, 2009.'",
+   "next_print": "Q3 2009 print (the quarter ends in September)",
+   "cash_return_text": null,
+   "note": "'TAC as a percentage of advertising revenues was 27% in the second quarter of 2009, compared to 28% in the second quarter of 2008.'"
+  },
+  {
+   "quarter": "Q3 2009",
+   "fy": 2009,
+   "q": 3,
+   "published": "2009-10-16",
+   "source": "GOOG29",
+   "release": "Oct 15",
+   "release_time": "after the close on Oct 15: 8-K accepted 2009-10-15 16:06 ET (after the 16:00 ET close); the call at 4:30 PM (ET); public before the open of the next trading day",
+   "period_end": "2009-09-30",
+   "raw": {
+    "sales_k": 5944851.0,
+    "sales_prior_k": 5541391.0,
+    "sales_prev_q_k": 5522897.0,
+    "gross_profit_k": 3718611.0,
+    "gross_profit_prior_k": 3368001.0,
+    "rd_k": 757524.0,
+    "rd_prior_k": 704571.0,
+    "sm_k": 497812.0,
+    "sm_prior_k": 508801.0,
+    "ga_k": 389557.0,
+    "ga_prior_k": 507064.0,
+    "op_income_k": 2073718.0,
+    "op_income_prior_k": 1647565.0,
+    "receivables_k": 2807341.0,
+    "receivables_prior_k": 2541492.0
+   },
+   "rows": {
+    "rev": "Revenues | 5,541,391 | 5,944,851 | 16,094,646 | 16,976,738",
+    "cor": "Cost of revenues (including stock-based compensation expense of $10,729, $14,871, $29,240, $41,000) | 2,173,390 | 2,226,240 | 6,431,501 | 6,435,715",
+    "rd": "Research and development (including stock-based compensation expense of $169,263, $195,624, $550,343, $546,394) | 704,571 | 757,524 | 2,059,851 | 2,106,793",
+    "sm": "Sales and marketing (including stock-based compensation expense of $64,497, $62,260, $149,666, $178,580) | 508,801 | 497,812 | 1,440,252 | 1,400,792",
+    "ga": "General and administrative (including stock-based compensation expense of $35,550, $44,772, $104,345, $122,106) | 507,064 | 389,557 | 1,391,278 | 1,202,235",
+    "op": "Income from operations | 1,647,565 | 2,073,718 | 4,771,764 | 5,831,203",
+    "eps": "Net income per share - diluted | 4.06 | 5.13 | 12.10 | 14.27",
+    "sh": "Shares used in per share calculation - diluted | 317,776 | 319,746 | 317,730 | 318,501",
+    "web": "Google web sites | 3,672,111 | 3,955,731 | 10,602,660 | 11,301,182",
+    "net": "Google Network web sites | 1,679,861 | 1,800,890 | 5,021,283 | 5,122,432",
+    "lic": "Licensing and other revenues | 189,419 | 188,230 | 470,703 | 553,124",
+    "ar": "Accounts receivable, net of allowance | 2,642,192 | 2,807,341",
+    "cash": "Cash and cash equivalents | 8,656,672 | 12,087,115",
+    "mkt": "Marketable securities | 7,189,099 | 9,907,276",
+    "ar_prior": "Accounts receivable, net of allowance of $32,887 and $75,259 | 2,162,521 | 2,541,492",
+    "prev_q_revenue": "Revenues | 5,367,212 | 5,522,897 | 10,553,255 | 11,031,887"
+   },
+   "extra_sources": [
+    "GOOG24",
+    "GOOG28"
+   ],
+   "sales_b": 5.9449,
+   "sales_pct": 7.3,
+   "seq_pct": 7.6,
+   "gross_margin": 62.55,
+   "gross_margin_bp": 177.3,
+   "op_margin": 34.88,
+   "op_margin_bp": 515.1,
+   "opex_pct": -4.4,
+   "opex_gap_pp": -11.7,
+   "receivables_b": 2.8073,
+   "receivables_pct": 10.5,
+   "receivables_gap_pp": 3.2,
+   "eps_q": 5.13,
+   "eps_q_prior": 4.06,
+   "diluted_shares_m": 319.746,
+   "cash_b": 21.994,
+   "debt_note": "no borrowings on the release's balance sheet",
+   "sales_note": "revenues $5,944.9M vs $5,541.4M a year earlier, $5,522.9M the quarter before (Google web sites $3,955.7M, Google Network web sites $1,800.9M, licensing and other $188.2M); 'Aggregate paid clicks, which include clicks related to ads served on Google sites and the sites of our AdSense partners, increased approximately 14% over the third quarter of 2008 and increased approximately 4% over the second quarter of 2009.'",
+   "receivables_note": "accounts receivable $2,807.3M (2009-09-30) vs $2,541.5M a year earlier (Q3 2008 10-Q)",
+   "eps_note": "GAAP diluted EPS $5.13 vs $4.06",
+   "shares_note": "diluted shares 319.7M; 'Google employed 19,665 full-time employees as of September 30, 2009, down from 19,786 full-time employees as of June 30, 2009.'",
+   "next_print": "Q4 2009 print (the quarter ends in December)",
+   "cash_return_text": null,
+   "note": "'TAC as a percentage of advertising revenues was 27% in the third quarter of 2009, compared to 28% in the third quarter of 2008.'; the year-ago Q3 2008 is as this release prints it, with the Authors Guild settlement its 10-Q recorded"
+  }
+ ],
+ "guides": [],
+ "dividends": [],
+ "events": [],
+ "company_names": [],
+ "splits": [],
+ "listings": [],
+ "rule_t": {
+  "revenue": {
+   "measure": "revenue growth, % (each pair of years from the latest filing published by 2008-01-04 that reports both: the 424B4 for 1999-2000, the FY2004 10-K for 2000-2001, the FY2005 10-K for 2001-2002, the FY2006 10-K for 2002-2006)",
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "2000": 8585.45,
+    "2001": 352.3,
+    "2002": 408.54,
+    "2003": 233.54,
+    "2004": 117.56,
+    "2005": 92.48,
+    "2006": 72.76
+   },
+   "thresholds": {
+    "BEAR": -88,
+    "BASE": 73,
+    "BULL": 234,
+    "XBULL": 8585
+   },
+   "raw": {
+    "2000": {
+     "source": "GOOG1",
+     "revenue_k": [
+      220.0,
+      19108.0
+     ],
+     "rows": [
+      "Revenues | 220 | 19,108 | 86,426 | 439,508 | 1,465,934 | 559,817 | 1,351,835"
+     ]
+    },
+    "2001": {
+     "source": "GOOG2",
+     "revenue_k": [
+      19108.0,
+      86426.0
+     ],
+     "rows": [
+      "Revenues | 19,108 | 86,426 | 439,508 | 1,465,934 | 3,189,223"
+     ]
+    },
+    "2002": {
+     "source": "GOOG4",
+     "revenue_k": [
+      86426.0,
+      439508.0
+     ],
+     "rows": [
+      "Revenues | 86,426 | 439,508 | 1,465,934 | 3,189,223 | 6,138,560"
+     ]
+    },
+    "2003": {
+     "source": "GOOG5",
+     "revenue_k": [
+      439508.0,
+      1465934.0
+     ],
+     "rows": [
+      "Revenues | 439,508 | 1,465,934 | 3,189,223 | 6,138,560 | 10,604,917"
+     ]
+    },
+    "2004": {
+     "source": "GOOG5",
+     "revenue_k": [
+      1465934.0,
+      3189223.0
+     ],
+     "rows": [
+      "Revenues | 439,508 | 1,465,934 | 3,189,223 | 6,138,560 | 10,604,917"
+     ]
+    },
+    "2005": {
+     "source": "GOOG5",
+     "revenue_k": [
+      3189223.0,
+      6138560.0
+     ],
+     "rows": [
+      "Revenues | 439,508 | 1,465,934 | 3,189,223 | 6,138,560 | 10,604,917"
+     ]
+    },
+    "2006": {
+     "source": "GOOG5",
+     "revenue_k": [
+      6138560.0,
+      10604917.0
+     ],
+     "rows": [
+      "Revenues | 439,508 | 1,465,934 | 3,189,223 | 6,138,560 | 10,604,917"
+     ]
+    }
+   }
+  },
+  "gross_margin": {
+   "measure": "change in (revenues less cost of revenues) / revenues, bp, the same filings: cost of revenues as published (stock-based compensation a separate line in the 424B4 and the FY2004 and FY2005 10-Ks, allocated to cost of revenues in the FY2006 10-K's restated 2002-2006: a seam, as published)",
+   "unit": 10,
+   "lower_is_better": false,
+   "values": {
+    "2000": 38090.3,
+    "2001": 1536.2,
+    "2002": -1345.9,
+    "2003": -1311.3,
+    "2004": -278.3,
+    "2005": 407.8,
+    "2006": 214.2
+   },
+   "thresholds": {
+    "BEAR": -2910,
+    "BASE": -1350,
+    "BULL": 210,
+    "XBULL": 38090
+   },
+   "raw": {
+    "2000": {
+     "source": "GOOG1",
+     "revenue_k": [
+      220.0,
+      19108.0
+     ],
+     "cost_k": [
+      908.0,
+      6081.0
+     ],
+     "rows": [
+      "Revenues | 220 | 19,108 | 86,426 | 439,508 | 1,465,934 | 559,817 | 1,351,835",
+      "Cost of revenues | 908 | 6,081 | 14,228 | 131,510 | 625,854 | 204,596 | 641,775"
+     ]
+    },
+    "2001": {
+     "source": "GOOG2",
+     "revenue_k": [
+      19108.0,
+      86426.0
+     ],
+     "cost_k": [
+      6081.0,
+      14228.0
+     ],
+     "rows": [
+      "Revenues | 19,108 | 86,426 | 439,508 | 1,465,934 | 3,189,223",
+      "Cost of revenues | 6,081 | 14,228 | 131,510 | 625,854 | 1,457,653"
+     ]
+    },
+    "2002": {
+     "source": "GOOG4",
+     "revenue_k": [
+      86426.0,
+      439508.0
+     ],
+     "cost_k": [
+      14228.0,
+      131510.0
+     ],
+     "rows": [
+      "Revenues | 86,426 | 439,508 | 1,465,934 | 3,189,223 | 6,138,560",
+      "Cost of revenues | 14,228 | 131,510 | 625,854 | 1,457,653 | 2,571,509"
+     ]
+    },
+    "2003": {
+     "source": "GOOG5",
+     "revenue_k": [
+      439508.0,
+      1465934.0
+     ],
+     "cost_k": [
+      132575.0,
+      634411.0
+     ],
+     "rows": [
+      "Revenues | 439,508 | 1,465,934 | 3,189,223 | 6,138,560 | 10,604,917",
+      "Cost of revenues | 132,575 | 634,411 | 1,468,967 | 2,577,088 | 4,225,027"
+     ]
+    },
+    "2004": {
+     "source": "GOOG5",
+     "revenue_k": [
+      1465934.0,
+      3189223.0
+     ],
+     "cost_k": [
+      634411.0,
+      1468967.0
+     ],
+     "rows": [
+      "Revenues | 439,508 | 1,465,934 | 3,189,223 | 6,138,560 | 10,604,917",
+      "Cost of revenues | 132,575 | 634,411 | 1,468,967 | 2,577,088 | 4,225,027"
+     ]
+    },
+    "2005": {
+     "source": "GOOG5",
+     "revenue_k": [
+      3189223.0,
+      6138560.0
+     ],
+     "cost_k": [
+      1468967.0,
+      2577088.0
+     ],
+     "rows": [
+      "Revenues | 439,508 | 1,465,934 | 3,189,223 | 6,138,560 | 10,604,917",
+      "Cost of revenues | 132,575 | 634,411 | 1,468,967 | 2,577,088 | 4,225,027"
+     ]
+    },
+    "2006": {
+     "source": "GOOG5",
+     "revenue_k": [
+      6138560.0,
+      10604917.0
+     ],
+     "cost_k": [
+      2577088.0,
+      4225027.0
+     ],
+     "rows": [
+      "Revenues | 439,508 | 1,465,934 | 3,189,223 | 6,138,560 | 10,604,917",
+      "Cost of revenues | 132,575 | 634,411 | 1,468,967 | 2,577,088 | 4,225,027"
+     ]
+    }
+   }
+  },
+  "opex_gap": {
+   "measure": "growth of research and development plus sales and marketing plus general and administrative less revenue growth, pp (lower is better), the same filings; the separate stock-based compensation, Yahoo settlement and Google Foundation lines are not in it",
+   "unit": 1,
+   "lower_is_better": true,
+   "values": {
+    "2000": -8252.06,
+    "2001": -258.89,
+    "2002": -304.04,
+    "2003": 72.43,
+    "2004": -37.81,
+    "2005": -27.05,
+    "2006": 21.84
+   },
+   "thresholds": {
+    "BEAR": 183,
+    "BASE": 72,
+    "BULL": -38,
+    "XBULL": -8252
+   },
+   "raw": {
+    "2000": {
+     "source": "GOOG1",
+     "revenue_k": [
+      220.0,
+      19108.0
+     ],
+     "rd_k": [
+      2930.0,
+      10516.0
+     ],
+     "sm_k": [
+      1677.0,
+      10385.0
+     ],
+     "ga_k": [
+      1221.0,
+      4357.0
+     ],
+     "rows": [
+      "Revenues | 220 | 19,108 | 86,426 | 439,508 | 1,465,934 | 559,817 | 1,351,835",
+      "Research and development | 2,930 | 10,516 | 16,500 | 31,748 | 91,228 | 29,997 | 80,781",
+      "Sales and marketing | 1,677 | 10,385 | 20,076 | 43,849 | 120,328 | 42,589 | 104,681",
+      "General and administrative | 1,221 | 4,357 | 12,275 | 24,300 | 56,699 | 22,562 | 47,083"
+     ]
+    },
+    "2001": {
+     "source": "GOOG2",
+     "revenue_k": [
+      19108.0,
+      86426.0
+     ],
+     "rd_k": [
+      10516.0,
+      16500.0
+     ],
+     "sm_k": [
+      10385.0,
+      20076.0
+     ],
+     "ga_k": [
+      4357.0,
+      12275.0
+     ],
+     "rows": [
+      "Revenues | 19,108 | 86,426 | 439,508 | 1,465,934 | 3,189,223",
+      "Research and development | 10,516 | 16,500 | 31,748 | 91,228 | 225,632",
+      "Sales and marketing | 10,385 | 20,076 | 43,849 | 120,328 | 246,300",
+      "General and administrative | 4,357 | 12,275 | 24,300 | 56,699 | 139,700"
+     ]
+    },
+    "2002": {
+     "source": "GOOG4",
+     "revenue_k": [
+      86426.0,
+      439508.0
+     ],
+     "rd_k": [
+      16500.0,
+      31748.0
+     ],
+     "sm_k": [
+      20076.0,
+      43849.0
+     ],
+     "ga_k": [
+      12275.0,
+      24300.0
+     ],
+     "rows": [
+      "Revenues | 86,426 | 439,508 | 1,465,934 | 3,189,223 | 6,138,560",
+      "Research and development | 16,500 | 31,748 | 91,228 | 225,632 | 483,978",
+      "Sales and marketing | 20,076 | 43,849 | 120,328 | 246,300 | 439,741",
+      "General and administrative | 12,275 | 24,300 | 56,699 | 139,700 | 335,345"
+     ]
+    },
+    "2003": {
+     "source": "GOOG5",
+     "revenue_k": [
+      439508.0,
+      1465934.0
+     ],
+     "rd_k": [
+      40494.0,
+      229605.0
+     ],
+     "sm_k": [
+      48783.0,
+      164935.0
+     ],
+     "ga_k": [
+      31190.0,
+      94519.0
+     ],
+     "rows": [
+      "Revenues | 439,508 | 1,465,934 | 3,189,223 | 6,138,560 | 10,604,917",
+      "Research and development | 40,494 | 229,605 | 395,164 | 599,510 | 1,228,589",
+      "Sales and marketing | 48,783 | 164,935 | 295,749 | 468,152 | 849,518",
+      "General and administrative | 31,190 | 94,519 | 188,151 | 386,532 | 751,787"
+     ]
+    },
+    "2004": {
+     "source": "GOOG5",
+     "revenue_k": [
+      1465934.0,
+      3189223.0
+     ],
+     "rd_k": [
+      229605.0,
+      395164.0
+     ],
+     "sm_k": [
+      164935.0,
+      295749.0
+     ],
+     "ga_k": [
+      94519.0,
+      188151.0
+     ],
+     "rows": [
+      "Revenues | 439,508 | 1,465,934 | 3,189,223 | 6,138,560 | 10,604,917",
+      "Research and development | 40,494 | 229,605 | 395,164 | 599,510 | 1,228,589",
+      "Sales and marketing | 48,783 | 164,935 | 295,749 | 468,152 | 849,518",
+      "General and administrative | 31,190 | 94,519 | 188,151 | 386,532 | 751,787"
+     ]
+    },
+    "2005": {
+     "source": "GOOG5",
+     "revenue_k": [
+      3189223.0,
+      6138560.0
+     ],
+     "rd_k": [
+      395164.0,
+      599510.0
+     ],
+     "sm_k": [
+      295749.0,
+      468152.0
+     ],
+     "ga_k": [
+      188151.0,
+      386532.0
+     ],
+     "rows": [
+      "Revenues | 439,508 | 1,465,934 | 3,189,223 | 6,138,560 | 10,604,917",
+      "Research and development | 40,494 | 229,605 | 395,164 | 599,510 | 1,228,589",
+      "Sales and marketing | 48,783 | 164,935 | 295,749 | 468,152 | 849,518",
+      "General and administrative | 31,190 | 94,519 | 188,151 | 386,532 | 751,787"
+     ]
+    },
+    "2006": {
+     "source": "GOOG5",
+     "revenue_k": [
+      6138560.0,
+      10604917.0
+     ],
+     "rd_k": [
+      599510.0,
+      1228589.0
+     ],
+     "sm_k": [
+      468152.0,
+      849518.0
+     ],
+     "ga_k": [
+      386532.0,
+      751787.0
+     ],
+     "rows": [
+      "Revenues | 439,508 | 1,465,934 | 3,189,223 | 6,138,560 | 10,604,917",
+      "Research and development | 40,494 | 229,605 | 395,164 | 599,510 | 1,228,589",
+      "Sales and marketing | 48,783 | 164,935 | 295,749 | 468,152 | 849,518",
+      "General and administrative | 31,190 | 94,519 | 188,151 | 386,532 | 751,787"
+     ]
+    }
+   }
+  },
+  "op_margin": {
+   "measure": "change in operating income / revenues, bp, the same filings as revenue; GAAP as published (the 2004 Yahoo settlement and the 2005 Google Foundation contribution in operating income)",
+   "unit": 10,
+   "lower_is_better": false,
+   "values": {
+    "2000": 288469.3,
+    "2001": 8981.1,
+    "2002": 2974.0,
+    "2003": -1906.5,
+    "2004": -328.8,
+    "2005": 1278.9,
+    "2006": 61.3
+   },
+   "thresholds": {
+    "BEAR": -5090,
+    "BASE": -1910,
+    "BULL": 1280,
+    "XBULL": 288470
+   },
+   "raw": {
+    "2000": {
+     "source": "GOOG1",
+     "revenue_k": [
+      220.0,
+      19108.0
+     ],
+     "op_income_k": [
+      -6516.0,
+      -14737.0
+     ],
+     "rows": [
+      "Revenues | 220 | 19,108 | 86,426 | 439,508 | 1,465,934 | 559,817 | 1,351,835",
+      "Income (loss) from operations | (6,516) | (14,737) | 10,964 | 186,466 | 342,464 | 189,490 | 326,281"
+     ]
+    },
+    "2001": {
+     "source": "GOOG2",
+     "revenue_k": [
+      19108.0,
+      86426.0
+     ],
+     "op_income_k": [
+      -14737.0,
+      10964.0
+     ],
+     "rows": [
+      "Revenues | 19,108 | 86,426 | 439,508 | 1,465,934 | 3,189,223",
+      "Income (loss) from operations | (14,737) | 10,964 | 186,466 | 342,464 | 640,192"
+     ]
+    },
+    "2002": {
+     "source": "GOOG4",
+     "revenue_k": [
+      86426.0,
+      439508.0
+     ],
+     "op_income_k": [
+      10964.0,
+      186466.0
+     ],
+     "rows": [
+      "Revenues | 86,426 | 439,508 | 1,465,934 | 3,189,223 | 6,138,560",
+      "Income from operations | 10,964 | 186,466 | 342,464 | 640,192 | 2,017,278"
+     ]
+    },
+    "2003": {
+     "source": "GOOG5",
+     "revenue_k": [
+      439508.0,
+      1465934.0
+     ],
+     "op_income_k": [
+      186466.0,
+      342464.0
+     ],
+     "rows": [
+      "Revenues | 439,508 | 1,465,934 | 3,189,223 | 6,138,560 | 10,604,917",
+      "Income from operations | 186,466 | 342,464 | 640,192 | 2,017,278 | 3,549,996",
+      "Income before income taxes | 184,915 | 346,654 | 650,234 | 2,141,677 | 4,011,040"
+     ]
+    },
+    "2004": {
+     "source": "GOOG5",
+     "revenue_k": [
+      1465934.0,
+      3189223.0
+     ],
+     "op_income_k": [
+      342464.0,
+      640192.0
+     ],
+     "rows": [
+      "Revenues | 439,508 | 1,465,934 | 3,189,223 | 6,138,560 | 10,604,917",
+      "Income from operations | 186,466 | 342,464 | 640,192 | 2,017,278 | 3,549,996",
+      "Income before income taxes | 184,915 | 346,654 | 650,234 | 2,141,677 | 4,011,040"
+     ]
+    },
+    "2005": {
+     "source": "GOOG5",
+     "revenue_k": [
+      3189223.0,
+      6138560.0
+     ],
+     "op_income_k": [
+      640192.0,
+      2017278.0
+     ],
+     "rows": [
+      "Revenues | 439,508 | 1,465,934 | 3,189,223 | 6,138,560 | 10,604,917",
+      "Income from operations | 186,466 | 342,464 | 640,192 | 2,017,278 | 3,549,996",
+      "Income before income taxes | 184,915 | 346,654 | 650,234 | 2,141,677 | 4,011,040"
+     ]
+    },
+    "2006": {
+     "source": "GOOG5",
+     "revenue_k": [
+      6138560.0,
+      10604917.0
+     ],
+     "op_income_k": [
+      2017278.0,
+      3549996.0
+     ],
+     "rows": [
+      "Revenues | 439,508 | 1,465,934 | 3,189,223 | 6,138,560 | 10,604,917",
+      "Income from operations | 186,466 | 342,464 | 640,192 | 2,017,278 | 3,549,996",
+      "Income before income taxes | 184,915 | 346,654 | 650,234 | 2,141,677 | 4,011,040"
+     ]
+    }
+   }
+  },
+  "receivables_gap": {
+   "measure": "growth of year-end accounts receivable, net, less revenue growth, pp (lower is better), each pair of year ends from the latest filing published by 2008-01-04 whose balance sheet reports both (the 424B4 for 2002-2003, the FY2004, FY2005 and FY2006 10-Ks after), with that filing's revenues",
+   "unit": 1,
+   "lower_is_better": true,
+   "values": {
+    "2003": -84.02,
+    "2004": -15.97,
+    "2005": 28.14,
+    "2006": 19.45
+   },
+   "thresholds": {
+    "BEAR": 55,
+    "BASE": 28,
+    "BULL": 2,
+    "XBULL": -84
+   },
+   "raw": {
+    "2003": {
+     "source": "GOOG1",
+     "receivables_k": [
+      61994.0,
+      154690.0
+     ],
+     "revenue_k": [
+      439508.0,
+      1465934.0
+     ],
+     "rows": [
+      "Accounts receivable, net of allowance of $2,297, $4,670 and $5,611 | 61,994 | 154,690 | 191,187",
+      "Revenues | 220 | 19,108 | 86,426 | 439,508 | 1,465,934 | 559,817 | 1,351,835"
+     ]
+    },
+    "2004": {
+     "source": "GOOG2",
+     "receivables_k": [
+      154690.0,
+      311836.0
+     ],
+     "revenue_k": [
+      1465934.0,
+      3189223.0
+     ],
+     "rows": [
+      "Accounts receivable, net of allowance of $4,670 and $3,962 | 154,690 | 311,836",
+      "Revenues | 19,108 | 86,426 | 439,508 | 1,465,934 | 3,189,223"
+     ]
+    },
+    "2005": {
+     "source": "GOOG4",
+     "receivables_k": [
+      311836.0,
+      687976.0
+     ],
+     "revenue_k": [
+      3189223.0,
+      6138560.0
+     ],
+     "rows": [
+      "Accounts receivable, net of allowances of $3,962 and $14,852 | 311,836 | 687,976",
+      "Revenues | 86,426 | 439,508 | 1,465,934 | 3,189,223 | 6,138,560"
+     ]
+    },
+    "2006": {
+     "source": "GOOG5",
+     "receivables_k": [
+      687976.0,
+      1322340.0
+     ],
+     "revenue_k": [
+      6138560.0,
+      10604917.0
+     ],
+     "rows": [
+      "Accounts receivable, net of allowance of $14,852 and $16,914 | 687,976 | 1,322,340",
+      "Revenues | 439,508 | 1,465,934 | 3,189,223 | 6,138,560 | 10,604,917"
+     ]
+    }
+   }
+  }
+ },
+ "fiscal_calendar": {
+  "rule": "the calendar year (fiscal years end on December 31)",
+  "quote": "Year Ended December 31,",
+  "source": "GOOG5"
+ },
+ "price_basis": "Yahoo's GOOG series before 2014 is the Class A common stock that traded as NASDAQ: GOOG from the 2004-08-19 listing; Yahoo adjusts it for later share distributions, which the builder undoes (retro_tool.split_factor), so every price the models use is the close as traded ($657.00 on 2008-01-04)."
+}
