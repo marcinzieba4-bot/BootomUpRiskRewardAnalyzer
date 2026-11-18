@@ -1,16 +1,20 @@
 # GOOG retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the GOOG weekly dates: 314 in all, 105 from 2008-01-04 to 2009-12-31 and 209 from 2010-01-08 to
-2013-12-31, all Google Inc. (the Class A common stock, NASDAQ: GOOG). They are **labels and hypotheses**: never feed them back into the
-method or the fact sheet. Each batch was scored only after its point-in-time build was committed and pushed (2008-2009: f268b6d,
-firewall result 4d0926c; 2010-2013: 538c9a3, with the correction of two 2008-2009 vintage notes, firewall result b0b6461); the outcomes
-were computed on 2026-11-18. Every date has its 6-month, 1-, 2- and 3-year horizons (the last ends 2016-12-31). Google paid no dividend,
-so total returns are price returns. The horizons that end after the 2014-04-02 distribution of one Class C share per Class A share
-(92 two-year horizons, from the 2012-04-13 entry on) are measured on Yahoo's GOOG series, which counts one Class A share as 2.002 Class C
-shares; a holder's one A plus one C share was worth 0.1 to 3.2 points more over two years (the Class A traded above the Class C), and no
-call below changes on that measure. Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle
-is +32.2% over two years and +52.1% over three. "Call held" is `call_check_2y`: CHEAP should clear the hurdle or beat the benchmark (SPY);
-FAIR should land within 15 points of the benchmark; RICH should miss the hurdle and lag the benchmark.
+Patterns seen in `outcome.json` for the GOOG weekly dates: 522 in all, 105 from 2008-01-04 to 2009-12-31, 209 from 2010-01-08 to
+2013-12-31 and 208 from 2014-01-10 to 2017-12-29: Google Inc. to 2015-10-02 and Alphabet Inc. after, the Class A common stock (NASDAQ:
+GOOG) to 2014-03-26 and the Class C capital stock (Yahoo's GOOG series) from 2014-03-27. They are **labels and hypotheses**: never feed
+them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was committed and pushed
+(2008-2009: f268b6d, firewall result 4d0926c; 2010-2013: 538c9a3, with the correction of two 2008-2009 vintage notes, firewall result
+b0b6461; 2014-2017: 3ff288d, firewall result 9fa6d66); the outcomes were computed on 2026-11-18. Every date has its 6-month, 1-, 2- and
+3-year horizons (the last ends 2020-12-29). Google paid no dividend in these horizons, so total returns are price returns. The horizons
+that end after the 2014-04-02 distribution of one Class C share per Class A share (92 two-year horizons of 2010-2013, from the 2012-04-13
+entry on, and the 11 entries of 2014-01-10 to 2014-03-21) are measured on Yahoo's GOOG series, which counts one Class A share as 2.002
+Class C shares and the 2015 Adjustment Payment as 1.0027455 more; a holder's one A plus one C share was worth 0.1 to 3.2 points more over
+two years for the 2010-2013 entries (no call changes) and 1.1 to 1.8 points more for the 2014 entries (one call changes: below). Medians
+of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years and +52.1% over
+three. "Call held" is `call_check_2y`: CHEAP should clear the hurdle or beat the benchmark (SPY); FAIR should land within 15 points of
+the benchmark; RICH should miss the hurdle and lag the benchmark. Spearman ranks are given against the two-year return and the m12-24
+average price return.
 
 ## 2008 (53 dates)
 
@@ -181,3 +185,107 @@ FAIR should land within 15 points of the benchmark; RICH should miss the hurdle 
   (positive returns behind a strong market) rather than losses; (2) the FAIR turn of late 2013 came from BASE falling to the quarter's
   +11.9% revenue growth less the dilution while EPS grew faster than revenue, and those entries beat the market by 18-24 points; (3) the
   composite had the wrong sign in 2010 and 2013 and the right one in 2011-2012, so its sign is not stable for this ticker.
+
+## 2014 (51 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+| class CHEAP, legacy tier BUY | 46 | +34.7% | +14.9% to +54.2% | 27 | 46 | +24.2% | 46 |
+| class FAIR, legacy tier BUY | 5 | +21.2% | +13.9% to +29.6% | 0 | 5 | +6.6% | 3 |
+| latest print Q3 2013 (2014-01-10 to 2014-01-24) | 3 | +26.9% | +21.2% to +29.6% | 0 | 3 | +7.8% | 1 |
+| latest print Q4 2013 (2014-01-31 to 2014-04-11) | 11 | +25.0% | +13.9% to +39.1% | 2 | 11 | +6.1% | 11 |
+| latest print Q1 2014 (2014-04-17 to 2014-07-11) | 13 | +30.6% | +16.1% to +42.0% | 5 | 13 | +22.6% | 13 |
+| latest print Q2 2014 (2014-07-18 to 2014-10-10) | 13 | +34.5% | +23.6% to +44.7% | 9 | 13 | +24.5% | 13 |
+| latest print Q3 2014 (2014-10-17 to 2014-12-26) | 11 | +45.6% | +35.6% to +54.2% | 11 | 11 | +38.2% | 11 |
+
+- **CHEAP held on all 46 and every entry beat SPY** (+14.9% to +54.2% against SPY's +6.2% to +17.9%, by 4.1 to 40.8 points); 27 cleared
+  the hurdle, the 19 that did not being entries of 2014-01-31 to 2014-09-19 ($552-1,216 as priced: the Class A before the split, the Class C
+  from 2014-03-27). Of the five FAIR dates (January and February, on the Q3 2013 print and then the FY2013 10-K's lower BASE), three held and
+  two missed upward: 2014-01-10 and 2014-01-24 beat SPY by 18.3 and 18.6 points. On a Class A holder's A plus C package the FAIR entry of
+  2014-01-17 would miss too (+15.6 points over SPY instead of +14.5). The two-year price landed nearest BASE on all 51 (0.97-1.38 times
+  the BASE price) and above the EPP floor on all. Over three years (to the end of 2017) the 2014 dates returned +35.9% to +107.9% (median
+  +62.4%); all beat SPY and 39 cleared the three-year hurdle.
+- **The entry price ranked the outcomes:** Spearman -0.84 against the two-year return and -0.85 against the m12-24 average, the EPP gap
+  -0.83 and -0.80, Ratio B -0.65 and -0.55, the adjusted gap +0.65 and +0.57 (the composite was 1.95 on every date).
+
+## 2015 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+| class CHEAP, legacy tier BUY | 23 | +60.2% | +47.5% to +84.4% | 23 | 23 | +45.3% | 23 |
+| class FAIR, legacy tier BUY | 18 | +50.5% | +40.4% to +74.4% | 18 | 18 | +36.3% | 1 |
+| class RICH, legacy tier BUY | 1 | +49.8% | +49.8% to +49.8% | 1 | 1 | +31.4% | 0 |
+| class RICH, legacy tier ACCUMULATE | 10 | +40.9% | +34.6% to +45.7% | 10 | 10 | +22.8% | 0 |
+| class RICH, legacy tier WATCHLIST | 1 | +30.2% | +30.2% to +30.2% | 0 | 0 | +17.7% | 1 |
+| latest print Q3 2014 (2015-01-02 to 2015-01-23) | 4 | +59.4% | +47.5% to +63.0% | 4 | 4 | +47.3% | 4 |
+| latest print Q4 2014 (2015-01-30 to 2015-04-17) | 12 | +51.8% | +46.2% to +60.2% | 12 | 12 | +40.7% | 9 |
+| latest print Q1 2015 (2015-04-24 to 2015-07-10) | 12 | +75.5% | +53.1% to +84.4% | 12 | 12 | +50.0% | 10 |
+| latest print Q2 2015 (2015-07-17 to 2015-10-16) | 14 | +49.8% | +40.4% to +57.2% | 14 | 14 | +34.6% | 1 |
+| latest print Q3 2015 (2015-10-23 to 2015-12-31) | 11 | +40.5% | +30.2% to +45.7% | 10 | 10 | +22.6% | 1 |
+
+- **CHEAP held on all 23, FAIR on 1 of 18, RICH on 1 of 12: every miss was an upside miss.** The CHEAP entries ($496-549, January to June)
+  returned +47.5% to +84.4% and beat SPY by 32.0 to 63.9 points. The FAIR entries ($540-673) returned +40.4% to +74.4% and beat SPY by 12.9
+  to 57.8 points, so 17 fell outside the 15-point band on the upside (only 2015-09-18 held). The RICH entries of 2015-10-16 to 2015-12-31
+  ($662-767, after the Q3 2015 print) returned +30.2% to +49.8%; only 2015-12-04 lagged SPY (by 0.2 points, +30.2%, short of the hurdle)
+  and held, the other eleven cleared the hurdle and beat SPY by 2.4 to 19.7 points. The two-year price landed nearest BULL on 35 dates
+  and BASE on 18. Over three years the 2015 dates returned +30.4% to +123.6% (median +95.0%); all beat SPY and 43 cleared the hurdle.
+- **The price ranked the outcomes again** (-0.83 and -0.95), the EPP gap -0.86 and -0.93, Ratio B -0.77 and -0.89, the adjusted gap +0.76
+  and +0.88; the proxy composite -0.67 and -0.69, the wrong sign.
+
+## 2016 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+| class RICH, legacy tier BUY | 9 | +56.2% | +48.6% to +71.1% | 9 | 9 | +37.1% | 0 |
+| class RICH, legacy tier ACCUMULATE | 23 | +54.0% | +35.6% to +65.1% | 23 | 23 | +40.8% | 0 |
+| class RICH, legacy tier WATCHLIST | 20 | +48.2% | +24.0% to +61.1% | 17 | 20 | +41.0% | 0 |
+| latest print Q3 2015 (2016-01-08 to 2016-01-29) | 4 | +59.4% | +54.9% to +61.6% | 4 | 4 | +29.8% | 0 |
+| latest print Q4 2015 (2016-02-03 to 2016-04-15) | 11 | +53.0% | +35.6% to +62.2% | 11 | 11 | +34.4% | 0 |
+| latest print Q1 2016 (2016-04-22 to 2016-07-22) | 14 | +55.8% | +46.8% to +71.1% | 14 | 14 | +42.9% | 0 |
+| latest print Q2 2016 (2016-07-29 to 2016-10-21) | 13 | +53.5% | +37.2% to +61.1% | 13 | 13 | +39.7% | 0 |
+| latest print Q3 2016 (2016-10-28 to 2016-12-30) | 10 | +34.7% | +24.0% to +45.8% | 7 | 10 | +45.9% | 0 |
+
+- **RICH on all 52 and held on none: every entry beat SPY** (+24.0% to +71.1% against SPY's +11.0% to +53.3%, by 3.5 to 31.2 points) and
+  49 cleared the hurdle (the three that did not, 2016-12-09 to 2016-12-23, returned +24.0% to +31.8% and still beat SPY). The class rested
+  on a multiple at the 62nd-84th percentile of a window whose median had fallen to 23x, and on a conservative case of -18.7% to +8.0% over two years; FY15's $24.34
+  (the Class C's, with the Adjustment Payment) gave way to FY2016's $27.85 (+14%). The two-year price landed nearest BULL on all 52
+  (1.23-1.81 times BASE). Over three years the 2016 dates returned +42.8% to +85.8% (median +59.6%); 51 beat SPY and 44 cleared the hurdle.
+- **The tiers inside RICH ordered the returns** (BUY median +56.2%, ACCUMULATE +54.0%, WATCHLIST +48.2%), but the ranks were weak: the price
+  -0.53 and -0.09, the EPP gap -0.32 and -0.33, Ratio B -0.49 and +0.05, the adjusted gap +0.59 and -0.18, the composite +0.27 and -0.44.
+
+## 2017 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+| class FAIR, legacy tier ACCUMULATE | 1 | +38.6% | +38.6% to +38.6% | 1 | 1 | +38.3% | 0 |
+| class RICH, legacy tier ACCUMULATE | 11 | +37.6% | +32.5% to +48.0% | 11 | 11 | +34.7% | 0 |
+| class RICH, legacy tier WATCHLIST | 7 | +32.8% | +18.9% to +40.4% | 4 | 5 | +30.5% | 2 |
+| class RICH, legacy tier AVOID | 33 | +26.7% | +12.2% to +34.7% | 2 | 26 | +17.7% | 7 |
+| latest print Q3 2016 (2017-01-06 to 2017-01-20) | 3 | +32.8% | +30.9% to +36.4% | 2 | 3 | +38.0% | 0 |
+| latest print Q4 2016 (2017-01-27 to 2017-04-21) | 13 | +38.6% | +32.5% to +48.0% | 13 | 13 | +34.7% | 0 |
+| latest print Q1 2017 (2017-04-28 to 2017-07-21) | 13 | +18.9% | +12.2% to +40.4% | 1 | 4 | +21.1% | 9 |
+| latest print Q2 2017 (2017-07-26 to 2017-10-20) | 13 | +28.7% | +22.8% to +34.7% | 2 | 13 | +21.9% | 0 |
+| latest print Q3 2017 (2017-10-27 to 2017-12-29) | 10 | +27.6% | +23.4% to +31.0% | 0 | 10 | +11.9% | 0 |
+
+- **RICH held on 9 of 51, the FAIR date (2017-02-03) missed upward.** The entries of the Q4 2016 print ($801-852, January to April)
+  returned +32.5% to +48.0% and beat SPY by 11.9 to 24.3 points. The calls held from the Q1 2017 print: the entries of 2017-05-26 to
+  2017-07-21 ($909-976, AVOID or WATCHLIST, 32.6-35.0x FY16's $27.85) returned +12.2% to +23.2% and lagged SPY by 3.8 to 10.1 points,
+  short of the hurdle; the later Q2 and Q3 2017 entries ($911-1,064) returned +22.8% to +34.7% and beat SPY again by 0.9 to 10.2 points.
+  The AVOID tier (33 dates from 2017-05-05) returned a median +26.7%, cleared the hurdle twice and beat SPY 26 times. Over three years (to
+  the end of 2020) the 2017 dates returned +31.4% to +85.4% (median +59.8%); all beat SPY and 37 cleared the hurdle.
+- **The m12-24 average ranked by the entry price almost exactly** (-0.99; the EPP gap -0.94, Ratio B -0.97, the adjusted gap +0.84), the
+  two-year return less so (-0.67, -0.67, -0.66, +0.51); the composite +0.05 and +0.41.
+
+## Across 2014-2017
+
+- **Every entry made money and almost every one beat the market,** so the calls held where they expected gains and missed where they did
+  not: over two years +12.2% to +84.4% (median +40.5%), 198 of 208 beat SPY and 146 cleared the hurdle; over three years 207 beat SPY. The
+  call held on 83: CHEAP 69 of 69, FAIR 4 of 24 (every miss above the band), RICH 10 of 115 (one in December 2015, nine in May to July
+  2017). The ten entries that lagged SPY are those ten.
+- **The classes ordered the excess return, not the return:** median two-year excess over SPY +26.1 points for CHEAP, +20.7 for FAIR and
+  +9.8 for RICH, while the median returns were +42.0%, +48.0% and +38.0%. The legacy tier ordered both: BUY (102 dates) +46.3% and +22.5
+  points, ACCUMULATE (45) +45.7% and +13.5, WATCHLIST (28) +39.0% and +12.4, AVOID (33) +26.7% and +3.8. Across the four years the EPP gap
+  ranks the outcomes best (-0.67 and -0.74), then the entry price (-0.59 and -0.55); Ratio B -0.36 and -0.27, the adjusted gap +0.25 and
+  +0.16, the composite -0.12 and -0.33.
+- Hypotheses only, to test on other tickers and periods and never to fold into GOOG's method or fact sheet: (1) a RICH class built on a
+  multiple ranked against a window whose median falls as cheap post-crisis years enter it says little about a company compounding EPS
+  at 12-23% a year: the 2016-2017 RICH entries still beat the market by a median of about 10 points; (2) as BULL and XBULL lost the
+  start-up years, the legacy tier became informative (its four levels ordered both return and excess), unlike 2008-2013 when it was BUY
+  throughout; (3) the FAIR misses were all upside misses, as in late 2013, so for this ticker FAIR behaved like a weaker CHEAP; (4) the
+  composite's sign changed from year to year again (wrong in 2015, flat in 2014, mixed in 2016-2017).

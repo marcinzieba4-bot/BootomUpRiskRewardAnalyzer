@@ -318,3 +318,211 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2013-12-20 | $1100.62 | Google Q3 2013 results | 1.95 | +0.33 | 0.22x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +34.8% | +20.3pp | +8.5% | ✗ |
 | 2013-12-27 | $1118.40 | Google Q3 2013 results | 1.95 | +0.32 | 0.23x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +34.3% | +18.1pp | +7.4% | ✗ |
 | 2013-12-31 | $1120.71 | Google Q3 2013 results | 1.95 | +0.31 | 0.23x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +38.1% | +22.3pp | +7.7% | ✗ |
+| 2014-01-10 | $1130.18 | Google Q3 2013 results | 1.95 | +0.30 | 0.24x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +26.9% | +18.3pp | +7.8% | ✗ |
+| 2014-01-17 | $1150.53 | Google Q3 2013 results | 1.95 | +0.27 | 0.25x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +21.2% | +14.5pp | +6.6% | ✓ |
+| 2014-01-24 | $1123.83 | Google Q3 2013 results | 1.95 | +0.31 | 0.24x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +29.6% | +18.6pp | +9.7% | ✗ |
+| 2014-01-31 | $1180.97 | Google Q4 2013 results | 1.95 | +0.35 | 0.23x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +26.3% | +13.1pp | +5.1% | ✓ |
+| 2014-02-07 | $1177.44 | Google Q4 2013 results | 1.95 | +0.36 | 0.23x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +16.5% | +7.5pp | +6.1% | ✓ |
+| 2014-02-14 | $1202.80 | Google Q4 2013 results | 1.95 | +0.10 | 0.32x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +13.9% | +8.1pp | +4.3% | ✓ |
+| 2014-02-21 | $1203.79 | Google Q4 2013 results | 1.95 | +0.10 | 0.32x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | +16.9% | +8.1pp | +4.6% | ✓ |
+| 2014-02-28 | $1215.65 | Google Q4 2013 results | 1.95 | +0.09 | 0.33x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +16.4% | +7.4pp | +4.1% | ✓ |
+| 2014-03-07 | $1214.79 | Google Q4 2013 results | 1.95 | +0.09 | 0.33x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +14.9% | +4.1pp | +4.7% | ✓ |
+| 2014-03-14 | $1172.80 | Google Q4 2013 results | 1.95 | +0.16 | 0.30x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +25.0% | +11.0pp | +9.0% | ✓ |
+| 2014-03-21 | $1183.04 | Google Q4 2013 results | 1.95 | +0.15 | 0.31x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +25.9% | +11.6pp | +8.7% | ✓ |
+| 2014-03-28 | $559.99 | Google Q4 2013 results | 1.95 | +0.23 | 0.26x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +31.3% | +17.3pp | +15.3% | ✓ |
+| 2014-04-04 | $543.14 | Google Q4 2013 results | 1.95 | +0.27 | 0.24x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +37.6% | +22.5pp | +19.5% | ✓ |
+| 2014-04-11 | $530.60 | Google Q4 2013 results | 1.95 | +0.30 | 0.22x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +39.1% | +22.2pp | +23.1% | ✓ |
+| 2014-04-17 | $536.10 | Google Q1 2014 results | 1.95 | +0.31 | 0.23x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +42.0% | +26.1pp | +22.6% | ✓ |
+| 2014-04-25 | $516.18 | Google Q1 2014 results | 1.95 | +0.36 | 0.20x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +40.5% | +24.1pp | +28.2% | ✓ |
+| 2014-05-02 | $527.93 | Google Q1 2014 results | 1.95 | +0.32 | 0.22x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +32.6% | +17.6pp | +25.9% | ✓ |
+| 2014-05-09 | $518.73 | Google Q1 2014 results | 1.95 | +0.35 | 0.21x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +37.8% | +23.9pp | +28.8% | ✓ |
+| 2014-05-16 | $520.63 | Google Q1 2014 results | 1.95 | +0.34 | 0.21x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +38.0% | +23.6pp | +29.0% | ✓ |
+| 2014-05-23 | $552.70 | Google Q1 2014 results | 1.95 | +0.27 | 0.25x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +27.8% | +15.6pp | +22.1% | ✓ |
+| 2014-05-30 | $559.89 | Google Q1 2014 results | 1.95 | +0.25 | 0.26x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +31.2% | +17.8pp | +21.1% | ✓ |
+| 2014-06-06 | $556.33 | Google Q1 2014 results | 1.95 | +0.26 | 0.26x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +29.2% | +16.7pp | +22.5% | ✓ |
+| 2014-06-13 | $551.76 | Google Q1 2014 results | 1.95 | +0.27 | 0.25x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +30.6% | +18.9pp | +24.2% | ✓ |
+| 2014-06-20 | $556.36 | Google Q1 2014 results | 1.95 | +0.26 | 0.26x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +25.0% | +14.7pp | +23.8% | ✓ |
+| 2014-06-27 | $577.24 | Google Q1 2014 results | 1.95 | +0.22 | 0.29x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +16.1% | +9.9pp | +19.9% | ✓ |
+| 2014-07-03 | $584.73 | Google Q1 2014 results | 1.95 | +0.19 | 0.30x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +19.9% | +9.8pp | +18.8% | ✓ |
+| 2014-07-11 | $579.18 | Google Q1 2014 results | 1.95 | +0.22 | 0.29x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +23.8% | +11.0pp | +20.6% | ✓ |
+| 2014-07-18 | $595.08 | Google Q2 2014 results | 1.95 | +0.20 | 0.32x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +23.6% | +9.9pp | +17.8% | ✓ |
+| 2014-07-25 | $589.02 | Google Q2 2014 results | 1.95 | +0.21 | 0.31x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +25.9% | +12.1pp | +19.3% | ✓ |
+| 2014-08-01 | $566.07 | Google Q2 2014 results | 1.95 | +0.27 | 0.27x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +36.9% | +19.8pp | +24.6% | ✓ |
+| 2014-08-08 | $568.77 | Google Q2 2014 results | 1.95 | +0.26 | 0.28x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +37.8% | +20.6pp | +24.5% | ✓ |
+| 2014-08-15 | $573.48 | Google Q2 2014 results | 1.95 | +0.25 | 0.29x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +36.8% | +20.6pp | +23.9% | ✓ |
+| 2014-08-22 | $582.56 | Google Q2 2014 results | 1.95 | +0.22 | 0.30x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +32.9% | +19.0pp | +22.4% | ✓ |
+| 2014-08-29 | $571.60 | Google Q2 2014 results | 1.95 | +0.25 | 0.28x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +35.5% | +22.5pp | +25.3% | ✓ |
+| 2014-09-05 | $586.08 | Google Q2 2014 results | 1.95 | +0.21 | 0.31x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +32.0% | +19.2pp | +22.7% | ✓ |
+| 2014-09-12 | $575.62 | Google Q2 2014 results | 1.95 | +0.23 | 0.29x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +34.0% | +21.1pp | +25.4% | ✓ |
+| 2014-09-19 | $596.08 | Google Q2 2014 results | 1.95 | +0.18 | 0.32x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +28.8% | +18.2pp | +21.6% | ✓ |
+| 2014-09-26 | $577.10 | Google Q2 2014 results | 1.95 | +0.22 | 0.29x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +34.5% | +21.9pp | +26.1% | ✓ |
+| 2014-10-03 | $575.28 | Google Q2 2014 results | 1.95 | +0.23 | 0.29x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +34.7% | +20.5pp | +27.1% | ✓ |
+| 2014-10-10 | $544.49 | Google Q2 2014 results | 1.95 | +0.31 | 0.25x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +44.7% | +26.8pp | +34.8% | ✓ |
+| 2014-10-17 | $511.17 | Google Q3 2014 results | 1.95 | +0.38 | 0.20x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +53.0% | +35.8pp | +44.0% | ✓ |
+| 2014-10-24 | $539.78 | Google Q3 2014 results | 1.95 | +0.30 | 0.24x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +51.1% | +37.3pp | +36.9% | ✓ |
+| 2014-10-31 | $559.08 | Google Q3 2014 results | 1.95 | +0.25 | 0.27x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +42.7% | +33.0pp | +32.5% | ✓ |
+| 2014-11-07 | $541.01 | Google Q3 2014 results | 1.95 | +0.30 | 0.24x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +45.0% | +36.0pp | +37.1% | ✓ |
+| 2014-11-14 | $544.40 | Google Q3 2014 results | 1.95 | +0.29 | 0.25x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +35.6% | +25.3pp | +36.4% | ✓ |
+| 2014-11-21 | $537.50 | Google Q3 2014 results | 1.95 | +0.30 | 0.24x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +43.5% | +32.8pp | +38.2% | ✓ |
+| 2014-11-28 | $541.83 | Google Q3 2014 results | 1.95 | +0.29 | 0.25x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +42.2% | +31.6pp | +37.2% | ✓ |
+| 2014-12-05 | $525.26 | Google Q3 2014 results | 1.95 | +0.34 | 0.22x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +45.6% | +35.2pp | +41.5% | ✓ |
+| 2014-12-12 | $518.66 | Google Q3 2014 results | 1.95 | +0.35 | 0.21x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +52.6% | +35.7pp | +43.4% | ✓ |
+| 2014-12-19 | $516.35 | Google Q3 2014 results | 1.95 | +0.35 | 0.21x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +54.2% | +40.8pp | +44.2% | ✓ |
+| 2014-12-26 | $534.03 | Google Q3 2014 results | 1.95 | +0.30 | 0.24x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +48.3% | +35.8pp | +39.6% | ✓ |
+| 2015-01-02 | $524.81 | Google Q3 2014 results | 1.95 | +0.33 | 0.22x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +47.5% | +34.4pp | +42.1% | ✓ |
+| 2015-01-09 | $496.17 | Google Q3 2014 results | 1.95 | +0.40 | 0.19x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +63.0% | +47.9pp | +50.5% | ✓ |
+| 2015-01-16 | $508.08 | Google Q3 2014 results | 1.95 | +0.37 | 0.20x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +59.4% | +42.5pp | +47.3% | ✓ |
+| 2015-01-23 | $539.95 | Google Q3 2014 results | 1.95 | +0.28 | 0.25x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +52.2% | +37.6pp | +39.0% | ✓ |
+| 2015-01-30 | $534.52 | Google Q4 2014 results | 1.95 | +0.47 | 0.17x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +50.5% | +32.0pp | +40.7% | ✓ |
+| 2015-02-06 | $531.00 | Google Q4 2014 results | 1.95 | +0.47 | 0.17x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +51.3% | +35.7pp | +42.0% | ✓ |
+| 2015-02-13 | $549.01 | Google Q4 2014 results | 1.95 | +0.04 | 0.28x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | +49.6% | +34.5pp | +37.8% | ✓ |
+| 2015-02-20 | $538.95 | Google Q4 2014 results | 1.95 | +0.18 | 0.26x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +54.1% | +38.6pp | +40.7% | ✓ |
+| 2015-02-27 | $558.40 | Google Q4 2014 results | 1.95 | -0.01 | 0.30x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 2/8 FAIR | +48.9% | +32.2pp | +36.3% | ✗ |
+| 2015-03-06 | $567.68 | Google Q4 2014 results | 1.95 | -0.06 | 0.32x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 2/8 FAIR | +46.2% | +27.4pp | +34.4% | ✗ |
+| 2015-03-13 | $547.32 | Google Q4 2014 results | 1.95 | +0.04 | 0.28x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | +54.9% | +35.1pp | +39.9% | ✓ |
+| 2015-03-20 | $560.36 | Google Q4 2014 results | 1.95 | -0.02 | 0.30x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 2/8 FAIR | +51.8% | +35.1pp | +37.1% | ✗ |
+| 2015-03-27 | $548.34 | Google Q4 2014 results | 1.95 | +0.03 | 0.28x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | +49.9% | +32.0pp | +40.4% | ✓ |
+| 2015-04-02 | $535.53 | Google Q4 2014 results | 1.95 | +0.20 | 0.26x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +55.3% | +36.9pp | +44.0% | ✓ |
+| 2015-04-10 | $540.01 | Google Q4 2014 results | 1.95 | +0.08 | 0.27x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +53.1% | +36.9pp | +43.2% | ✓ |
+| 2015-04-17 | $524.05 | Google Q4 2014 results | 1.95 | +0.25 | 0.24x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +60.2% | +43.1pp | +47.8% | ✓ |
+| 2015-04-24 | $565.06 | Google Q1 2015 results | 1.95 | -0.13 | 0.32x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | +53.1% | +36.9pp | +37.4% | ✗ |
+| 2015-05-01 | $537.90 | Google Q1 2015 results | 1.95 | +0.11 | 0.27x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +69.7% | +52.2pp | +44.6% | ✓ |
+| 2015-05-08 | $538.22 | Google Q1 2015 results | 1.95 | +0.11 | 0.27x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +73.6% | +56.2pp | +45.3% | ✓ |
+| 2015-05-15 | $533.85 | Google Q1 2015 results | 1.95 | +0.13 | 0.26x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +75.5% | +58.3pp | +47.3% | ✓ |
+| 2015-05-22 | $540.11 | Google Q1 2015 results | 1.95 | -0.01 | 0.28x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | +74.4% | +57.8pp | +46.5% | ✗ |
+| 2015-05-29 | $532.11 | Google Q1 2015 results | 1.95 | +0.14 | 0.26x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +82.6% | +63.9pp | +49.4% | ✓ |
+| 2015-06-05 | $533.33 | Google Q1 2015 results | 1.95 | +0.13 | 0.26x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +84.4% | +63.9pp | +50.0% | ✓ |
+| 2015-06-12 | $532.33 | Google Q1 2015 results | 1.95 | +0.13 | 0.26x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +77.1% | +57.0pp | +51.1% | ✓ |
+| 2015-06-19 | $536.69 | Google Q1 2015 results | 1.95 | +0.10 | 0.28x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +78.4% | +58.1pp | +50.8% | ✓ |
+| 2015-06-26 | $531.69 | Google Q1 2015 results | 1.95 | +0.13 | 0.27x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +79.1% | +58.9pp | +53.2% | ✓ |
+| 2015-07-02 | $523.40 | Google Q1 2015 results | 1.95 | +0.17 | 0.25x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +73.6% | +52.6pp | +56.5% | ✓ |
+| 2015-07-10 | $530.13 | Google Q1 2015 results | 1.95 | +0.12 | 0.27x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +75.2% | +54.0pp | +55.2% | ✓ |
+| 2015-07-17 | $672.93 | Google Q2 2015 results | 1.95 | -0.48 | 0.63x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +41.7% | +21.9pp | +22.9% | ✗ |
+| 2015-07-24 | $623.56 | Google Q2 2015 results | 1.95 | -0.38 | 0.49x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +57.2% | +34.2pp | +33.4% | ✗ |
+| 2015-07-31 | $625.61 | Google Q2 2015 results | 1.95 | -0.39 | 0.50x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +50.5% | +28.9pp | +33.5% | ✗ |
+| 2015-08-07 | $635.30 | Google Q2 2015 results | 1.95 | -0.41 | 0.53x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +46.3% | +22.8pp | +32.0% | ✗ |
+| 2015-08-14 | $657.12 | Google Q2 2015 results | 1.95 | -0.46 | 0.60x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +40.4% | +18.4pp | +28.0% | ✗ |
+| 2015-08-21 | $612.48 | Google Q2 2015 results | 1.95 | -0.37 | 0.47x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +48.0% | +20.7pp | +37.8% | ✗ |
+| 2015-08-28 | $630.38 | Google Q2 2015 results | 1.95 | -0.41 | 0.52x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +45.0% | +17.7pp | +34.4% | ✗ |
+| 2015-09-04 | $600.70 | Google Q2 2015 results | 1.95 | -0.34 | 0.44x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +56.0% | +22.7pp | +41.5% | ✗ |
+| 2015-09-11 | $625.77 | Google Q2 2015 results | 1.95 | -0.41 | 0.52x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +48.5% | +17.2pp | +36.3% | ✗ |
+| 2015-09-18 | $629.25 | Google Q2 2015 results | 1.95 | -0.42 | 0.53x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +45.4% | +12.9pp | +36.0% | ✓ |
+| 2015-09-25 | $611.97 | Google Q2 2015 results | 1.95 | -0.37 | 0.48x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +50.5% | +16.6pp | +40.3% | ✗ |
+| 2015-10-02 | $626.91 | Google Q2 2015 results | 1.95 | -0.42 | 0.52x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +52.1% | +17.9pp | +37.5% | ✗ |
+| 2015-10-09 | $643.61 | Google Q2 2015 results | 1.95 | -0.46 | 0.58x | BUY | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +51.8% | +21.1pp | +34.6% | ✗ |
+| 2015-10-16 | $662.20 | Google Q2 2015 results | 1.95 | -0.51 | 0.65x | BUY | TOO MUCH CYCLE RISK (RICH) | 4/8 RICH | +49.8% | +19.7pp | +31.4% | ✗ |
+| 2015-10-23 | $702.00 | Alphabet Q3 2015 results | 2.00 | -0.55 | 0.80x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 4/8 RICH | +38.0% | +10.1pp | +24.5% | ✗ |
+| 2015-10-30 | $710.81 | Alphabet Q3 2015 results | 2.00 | -0.57 | 0.84x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +43.1% | +15.2pp | +23.5% | ✗ |
+| 2015-11-06 | $733.76 | Alphabet Q3 2015 results | 2.00 | -0.63 | 0.95x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +39.8% | +12.2pp | +20.3% | ✗ |
+| 2015-11-13 | $717.00 | Alphabet Q3 2015 results | 2.00 | -0.59 | 0.87x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +43.1% | +11.0pp | +23.8% | ✗ |
+| 2015-11-20 | $756.60 | Alphabet Q3 2015 results | 2.00 | -0.70 | 1.07x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +34.6% | +6.8pp | +18.0% | ✗ |
+| 2015-11-27 | $750.26 | Alphabet Q3 2015 results | 2.00 | -0.68 | 1.04x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +40.5% | +11.9pp | +19.6% | ✗ |
+| 2015-12-04 | $766.81 | Alphabet Q3 2015 results | 2.00 | -0.72 | 1.13x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +30.2% | -0.2pp | +17.7% | ✓ |
+| 2015-12-11 | $738.87 | Alphabet Q3 2015 results | 2.00 | -0.66 | 0.98x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +40.9% | +4.4pp | +22.8% | ✗ |
+| 2015-12-18 | $739.31 | Alphabet Q3 2015 results | 2.00 | -0.66 | 0.98x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +45.7% | +6.9pp | +23.5% | ✗ |
+| 2015-12-24 | $748.40 | Alphabet Q3 2015 results | 2.00 | -0.68 | 1.03x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +41.7% | +7.0pp | +22.6% | ✗ |
+| 2015-12-31 | $758.88 | Alphabet Q3 2015 results | 2.00 | -0.81 | 1.08x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +37.9% | +2.4pp | +21.5% | ✗ |
+| 2016-01-08 | $714.47 | Alphabet Q3 2015 results | 2.00 | -0.59 | 0.86x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +54.9% | +7.3pp | +29.8% | ✗ |
+| 2016-01-15 | $694.45 | Alphabet Q3 2015 results | 2.00 | -0.53 | 0.77x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 4/8 RICH | +61.6% | +8.7pp | +34.3% | ✗ |
+| 2016-01-22 | $725.25 | Alphabet Q3 2015 results | 2.00 | -0.62 | 0.91x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +59.4% | +6.1pp | +29.4% | ✗ |
+| 2016-01-29 | $742.95 | Alphabet Q3 2015 results | 2.00 | -0.67 | 1.00x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +58.2% | +6.5pp | +27.2% | ✗ |
+| 2016-02-03 | $726.95 | Alphabet Q4 2015 results | 1.80 | -0.56 | 0.53x | BUY | TOO MUCH CYCLE RISK (RICH) | 4/8 RICH | +53.0% | +4.1pp | +30.9% | ✗ |
+| 2016-02-12 | $682.40 | Alphabet Q4 2015 results | 1.80 | -0.52 | 0.53x | BUY | TOO MUCH CYCLE RISK (RICH) | 3/8 RICH | +54.2% | +7.0pp | +40.2% | ✗ |
+| 2016-02-19 | $700.91 | Alphabet Q4 2015 results | 1.80 | -0.60 | 0.60x | BUY | TOO MUCH CYCLE RISK (RICH) | 5/8 RICH | +56.2% | +9.1pp | +37.1% | ✗ |
+| 2016-02-26 | $705.07 | Alphabet Q4 2015 results | 1.80 | -0.62 | 0.63x | BUY | TOO MUCH CYCLE RISK (RICH) | 5/8 RICH | +62.2% | +15.0pp | +37.1% | ✗ |
+| 2016-03-04 | $710.89 | Alphabet Q4 2015 results | 1.80 | -0.65 | 0.65x | BUY | TOO MUCH CYCLE RISK (RICH) | 5/8 RICH | +51.8% | +12.9pp | +36.6% | ✗ |
+| 2016-03-11 | $726.82 | Alphabet Q4 2015 results | 1.80 | -0.71 | 0.74x | BUY | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +59.6% | +17.5pp | +34.4% | ✗ |
+| 2016-03-18 | $737.60 | Alphabet Q4 2015 results | 1.80 | -0.75 | 0.81x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +54.0% | +15.2pp | +33.2% | ✗ |
+| 2016-03-24 | $735.30 | Alphabet Q4 2015 results | 1.80 | -0.77 | 0.85x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +38.9% | +7.3pp | +34.3% | ✗ |
+| 2016-04-01 | $749.91 | Alphabet Q4 2015 results | 1.80 | -0.83 | 0.95x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +37.6% | +5.9pp | +32.2% | ✗ |
+| 2016-04-08 | $739.15 | Alphabet Q4 2015 results | 1.80 | -0.79 | 0.90x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +36.2% | +4.6pp | +34.6% | ✗ |
+| 2016-04-15 | $759.00 | Alphabet Q4 2015 results | 1.80 | -0.87 | 1.03x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +35.6% | +3.5pp | +31.5% | ✗ |
+| 2016-04-22 | $718.77 | Alphabet Q1 2016 results | 1.80 | -0.74 | 0.81x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +49.3% | +17.2pp | +39.5% | ✗ |
+| 2016-04-29 | $693.01 | Alphabet Q1 2016 results | 1.80 | -0.65 | 0.69x | BUY | TOO MUCH CYCLE RISK (RICH) | 5/8 RICH | +48.6% | +14.9pp | +45.2% | ✗ |
+| 2016-05-06 | $711.12 | Alphabet Q1 2016 results | 1.80 | -0.72 | 0.78x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +47.4% | +13.5pp | +41.8% | ✗ |
+| 2016-05-13 | $710.83 | Alphabet Q1 2016 results | 1.80 | -0.73 | 0.79x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +54.5% | +16.7pp | +42.3% | ✗ |
+| 2016-05-20 | $709.74 | Alphabet Q1 2016 results | 1.80 | -0.72 | 0.78x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +50.2% | +13.6pp | +42.9% | ✗ |
+| 2016-05-27 | $732.66 | Alphabet Q1 2016 results | 1.80 | -0.81 | 0.91x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +46.8% | +12.9pp | +38.7% | ✗ |
+| 2016-06-03 | $722.34 | Alphabet Q1 2016 results | 1.80 | -0.78 | 0.86x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +55.0% | +20.4pp | +41.0% | ✗ |
+| 2016-06-10 | $719.41 | Alphabet Q1 2016 results | 1.80 | -0.76 | 0.85x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +55.8% | +18.9pp | +42.0% | ✗ |
+| 2016-06-17 | $691.72 | Alphabet Q1 2016 results | 1.80 | -0.65 | 0.71x | BUY | TOO MUCH CYCLE RISK (RICH) | 5/8 RICH | +66.6% | +27.8pp | +48.2% | ✗ |
+| 2016-06-24 | $675.22 | Alphabet Q1 2016 results | 1.80 | -0.59 | 0.64x | BUY | TOO MUCH CYCLE RISK (RICH) | 4/8 RICH | +71.1% | +31.2pp | +52.5% | ✗ |
+| 2016-07-01 | $699.21 | Alphabet Q1 2016 results | 1.80 | -0.69 | 0.75x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 5/8 RICH | +59.6% | +25.8pp | +47.8% | ✗ |
+| 2016-07-08 | $705.63 | Alphabet Q1 2016 results | 1.80 | -0.73 | 0.79x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +61.6% | +27.6pp | +46.9% | ✗ |
+| 2016-07-15 | $719.85 | Alphabet Q1 2016 results | 1.80 | -0.79 | 0.87x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +65.1% | +31.2pp | +44.6% | ✗ |
+| 2016-07-22 | $742.74 | Alphabet Q1 2016 results | 1.80 | -0.87 | 1.01x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +59.5% | +26.4pp | +40.8% | ✗ |
+| 2016-07-29 | $768.79 | Alphabet Q2 2016 results | 1.80 | -0.84 | 1.14x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +61.1% | +27.1pp | +36.8% | ✗ |
+| 2016-08-05 | $782.22 | Alphabet Q2 2016 results | 1.80 | -0.89 | 1.24x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +56.4% | +22.1pp | +35.2% | ✗ |
+| 2016-08-12 | $783.22 | Alphabet Q2 2016 results | 1.80 | -0.89 | 1.25x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +58.0% | +24.0pp | +35.8% | ✗ |
+| 2016-08-19 | $775.42 | Alphabet Q2 2016 results | 1.80 | -0.87 | 1.19x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +54.9% | +20.1pp | +37.9% | ✗ |
+| 2016-08-26 | $769.54 | Alphabet Q2 2016 results | 1.80 | -0.84 | 1.15x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +58.6% | +21.9pp | +39.7% | ✗ |
+| 2016-09-02 | $771.46 | Alphabet Q2 2016 results | 1.80 | -0.85 | 1.16x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +57.9% | +20.6pp | +40.2% | ✗ |
+| 2016-09-09 | $759.66 | Alphabet Q2 2016 results | 1.80 | -0.81 | 1.08x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +53.3% | +14.0pp | +42.9% | ✗ |
+| 2016-09-16 | $768.88 | Alphabet Q2 2016 results | 1.80 | -0.84 | 1.14x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +52.5% | +12.2pp | +41.8% | ✗ |
+| 2016-09-23 | $786.90 | Alphabet Q2 2016 results | 1.80 | -0.91 | 1.28x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +48.2% | +8.5pp | +39.2% | ✗ |
+| 2016-09-30 | $777.29 | Alphabet Q2 2016 results | 1.80 | -0.88 | 1.20x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +53.5% | +14.6pp | +41.5% | ✗ |
+| 2016-10-07 | $775.08 | Alphabet Q2 2016 results | 1.80 | -0.87 | 1.19x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +49.3% | +10.9pp | +42.5% | ✗ |
+| 2016-10-14 | $778.53 | Alphabet Q2 2016 results | 1.80 | -0.89 | 1.21x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +42.6% | +8.5pp | +42.2% | ✗ |
+| 2016-10-21 | $799.37 | Alphabet Q2 2016 results | 1.80 | -0.97 | 1.39x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +37.2% | +3.5pp | +38.8% | ✗ |
+| 2016-10-28 | $795.37 | Alphabet Q3 2016 results | 1.80 | -1.02 | 1.42x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +34.7% | +5.3pp | +39.7% | ✗ |
+| 2016-11-04 | $762.02 | Alphabet Q3 2016 results | 1.80 | -0.88 | 1.14x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +38.8% | +3.7pp | +45.9% | ✗ |
+| 2016-11-11 | $754.02 | Alphabet Q3 2016 results | 1.80 | -0.85 | 1.08x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +41.4% | +8.5pp | +47.6% | ✗ |
+| 2016-11-18 | $760.54 | Alphabet Q3 2016 results | 1.80 | -0.88 | 1.14x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +39.6% | +9.8pp | +46.4% | ✗ |
+| 2016-11-25 | $761.68 | Alphabet Q3 2016 results | 1.80 | -0.89 | 1.15x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +34.4% | +11.2pp | +46.1% | ✗ |
+| 2016-12-02 | $750.50 | Alphabet Q3 2016 results | 1.80 | -0.84 | 1.07x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +45.8% | +15.9pp | +48.4% | ✗ |
+| 2016-12-09 | $789.29 | Alphabet Q3 2016 results | 1.80 | -1.02 | 1.38x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +31.3% | +10.6pp | +41.3% | ✗ |
+| 2016-12-16 | $790.80 | Alphabet Q3 2016 results | 1.80 | -1.03 | 1.40x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +31.8% | +12.3pp | +41.0% | ✗ |
+| 2016-12-23 | $789.91 | Alphabet Q3 2016 results | 1.80 | -1.02 | 1.39x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +24.0% | +13.0pp | +41.0% | ✗ |
+| 2016-12-30 | $771.82 | Alphabet Q3 2016 results | 1.80 | -0.95 | 1.23x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +34.4% | +19.1pp | +44.3% | ✗ |
+| 2017-01-06 | $806.15 | Alphabet Q3 2016 results | 1.80 | -1.09 | 1.53x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +32.8% | +17.4pp | +38.0% | ✗ |
+| 2017-01-13 | $807.88 | Alphabet Q3 2016 results | 1.80 | -1.10 | 1.55x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +30.9% | +12.4pp | +37.7% | ✗ |
+| 2017-01-20 | $805.02 | Alphabet Q3 2016 results | 1.80 | -1.09 | 1.52x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +36.4% | +14.5pp | +38.0% | ✗ |
+| 2017-01-27 | $823.31 | Alphabet Q4 2016 results | 1.95 | -0.56 | 0.96x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 3/8 RICH | +32.5% | +12.1pp | +34.8% | ✗ |
+| 2017-02-03 | $801.49 | Alphabet Q4 2016 results | 1.95 | -0.45 | 0.83x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +38.6% | +16.5pp | +38.3% | ✗ |
+| 2017-02-10 | $813.67 | Alphabet Q4 2016 results | 1.95 | -0.50 | 0.90x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 3/8 RICH | +34.6% | +13.5pp | +36.4% | ✗ |
+| 2017-02-17 | $828.07 | Alphabet Q4 2016 results | 1.95 | -0.56 | 0.98x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 3/8 RICH | +34.5% | +12.3pp | +34.1% | ✗ |
+| 2017-02-24 | $828.64 | Alphabet Q4 2016 results | 1.95 | -0.56 | 0.98x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 3/8 RICH | +34.0% | +11.9pp | +34.0% | ✗ |
+| 2017-03-03 | $829.08 | Alphabet Q4 2016 results | 1.95 | -0.56 | 0.98x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 3/8 RICH | +37.6% | +15.9pp | +34.0% | ✗ |
+| 2017-03-10 | $843.25 | Alphabet Q4 2016 results | 1.95 | -0.61 | 1.07x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 5/8 RICH | +35.5% | +15.8pp | +31.8% | ✗ |
+| 2017-03-17 | $852.12 | Alphabet Q4 2016 results | 1.95 | -0.64 | 1.13x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 5/8 RICH | +39.0% | +16.1pp | +30.5% | ✗ |
+| 2017-03-24 | $814.43 | Alphabet Q4 2016 results | 1.95 | -0.50 | 0.90x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 3/8 RICH | +48.0% | +24.3pp | +36.9% | ✗ |
+| 2017-03-31 | $829.56 | Alphabet Q4 2016 results | 1.95 | -0.56 | 0.99x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 3/8 RICH | +41.4% | +17.3pp | +34.7% | ✗ |
+| 2017-04-07 | $824.67 | Alphabet Q4 2016 results | 1.95 | -0.55 | 0.96x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 3/8 RICH | +46.4% | +19.4pp | +36.0% | ✗ |
+| 2017-04-13 | $823.56 | Alphabet Q4 2016 results | 1.95 | -0.54 | 0.95x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 3/8 RICH | +47.9% | +18.7pp | +36.6% | ✗ |
+| 2017-04-21 | $843.19 | Alphabet Q4 2016 results | 1.95 | -0.61 | 1.07x | ACCUMULATE | TOO MUCH CYCLE RISK (RICH) | 5/8 RICH | +46.6% | +18.7pp | +33.8% | ✗ |
+| 2017-04-28 | $905.96 | Alphabet Q1 2017 results | 1.95 | -0.86 | 1.57x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +40.4% | +12.9pp | +25.0% | ✗ |
+| 2017-05-05 | $927.13 | Alphabet Q1 2017 results | 1.95 | -0.94 | 1.79x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +27.9% | +1.0pp | +22.5% | ✗ |
+| 2017-05-12 | $932.22 | Alphabet Q1 2017 results | 1.95 | -0.95 | 1.85x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +24.9% | +0.1pp | +22.0% | ✗ |
+| 2017-05-19 | $934.01 | Alphabet Q1 2017 results | 1.95 | -0.96 | 1.87x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +24.4% | +0.3pp | +21.9% | ✗ |
+| 2017-05-26 | $971.47 | Alphabet Q1 2017 results | 1.95 | -1.06 | 2.42x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +16.7% | -4.5pp | +17.4% | ✓ |
+| 2017-06-02 | $975.60 | Alphabet Q1 2017 results | 1.95 | -1.08 | 2.49x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +13.1% | -3.8pp | +16.9% | ✓ |
+| 2017-06-09 | $949.83 | Alphabet Q1 2017 results | 1.95 | -1.03 | 2.08x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +12.2% | -10.1pp | +19.9% | ✓ |
+| 2017-06-16 | $939.78 | Alphabet Q1 2017 results | 1.95 | -1.00 | 1.95x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +15.5% | -7.4pp | +21.1% | ✓ |
+| 2017-06-23 | $965.59 | Alphabet Q1 2017 results | 1.95 | -1.08 | 2.32x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +16.2% | -9.0pp | +17.7% | ✓ |
+| 2017-06-30 | $908.73 | Alphabet Q1 2017 results | 1.95 | -0.91 | 1.59x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +18.9% | -6.5pp | +25.0% | ✓ |
+| 2017-07-07 | $918.59 | Alphabet Q1 2017 results | 1.95 | -0.95 | 1.70x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +23.2% | -4.4pp | +23.7% | ✓ |
+| 2017-07-14 | $955.99 | Alphabet Q1 2017 results | 1.95 | -1.07 | 2.17x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +19.8% | -6.9pp | +18.8% | ✓ |
+| 2017-07-21 | $972.92 | Alphabet Q1 2017 results | 1.95 | -1.12 | 2.45x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +16.2% | -8.4pp | +16.6% | ✓ |
+| 2017-07-26 | $947.80 | Alphabet Q2 2017 results | 1.95 | -1.11 | 2.29x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +31.9% | +5.7pp | +19.6% | ✗ |
+| 2017-08-04 | $927.96 | Alphabet Q2 2017 results | 1.95 | -1.06 | 1.99x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +28.7% | +6.2pp | +22.1% | ✗ |
+| 2017-08-11 | $914.39 | Alphabet Q2 2017 results | 1.95 | -1.02 | 1.81x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +29.9% | +6.2pp | +23.7% | ✗ |
+| 2017-08-18 | $910.67 | Alphabet Q2 2017 results | 1.95 | -1.01 | 1.77x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +29.3% | +6.0pp | +24.2% | ✗ |
+| 2017-08-25 | $915.89 | Alphabet Q2 2017 results | 1.95 | -1.03 | 1.83x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +25.7% | +5.0pp | +23.4% | ✗ |
+| 2017-09-01 | $937.34 | Alphabet Q2 2017 results | 1.95 | -1.10 | 2.13x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +26.8% | +4.6pp | +20.4% | ✗ |
+| 2017-09-08 | $926.50 | Alphabet Q2 2017 results | 1.95 | -1.07 | 1.97x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +30.1% | +5.0pp | +21.9% | ✗ |
+| 2017-09-15 | $920.29 | Alphabet Q2 2017 results | 1.95 | -1.05 | 1.89x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +34.7% | +10.2pp | +22.8% | ✗ |
+| 2017-09-22 | $928.53 | Alphabet Q2 2017 results | 1.95 | -1.08 | 2.00x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +32.5% | +8.7pp | +21.9% | ✗ |
+| 2017-09-29 | $959.11 | Alphabet Q2 2017 results | 1.95 | -1.17 | 2.49x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +27.7% | +6.0pp | +18.1% | ✗ |
+| 2017-10-06 | $978.89 | Alphabet Q2 2017 results | 1.95 | -1.22 | 2.91x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +23.5% | +3.7pp | +15.7% | ✗ |
+| 2017-10-13 | $989.68 | Alphabet Q2 2017 results | 1.95 | -1.24 | 3.18x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +22.8% | +2.5pp | +14.6% | ✗ |
+| 2017-10-20 | $988.20 | Alphabet Q2 2017 results | 1.95 | -1.24 | 3.14x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +26.0% | +6.1pp | +15.1% | ✗ |
+| 2017-10-27 | $1019.27 | Alphabet Q3 2017 results | 1.80 | -1.36 | 2.94x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +24.1% | +3.0pp | +11.9% | ✗ |
+| 2017-11-03 | $1032.48 | Alphabet Q3 2017 results | 1.80 | -1.39 | 3.26x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +23.4% | +0.9pp | +10.9% | ✗ |
+| 2017-11-10 | $1028.07 | Alphabet Q3 2017 results | 1.80 | -1.38 | 3.15x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +27.6% | +3.8pp | +11.8% | ✗ |
+| 2017-11-17 | $1019.09 | Alphabet Q3 2017 results | 1.80 | -1.35 | 2.94x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +31.0% | +6.0pp | +13.3% | ✗ |
+| 2017-11-24 | $1040.61 | Alphabet Q3 2017 results | 1.80 | -1.41 | 3.48x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +24.5% | +1.0pp | +11.5% | ✗ |
+| 2017-12-01 | $1010.17 | Alphabet Q3 2017 results | 1.80 | -1.33 | 2.75x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +29.2% | +6.4pp | +15.2% | ✗ |
+| 2017-12-08 | $1037.05 | Alphabet Q3 2017 results | 1.80 | -1.40 | 3.38x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +29.3% | +6.7pp | +12.7% | ✗ |
+| 2017-12-15 | $1064.19 | Alphabet Q3 2017 results | 1.80 | -1.56 | 4.27x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +26.7% | +4.2pp | +10.4% | ✗ |
+| 2017-12-22 | $1060.12 | Alphabet Q3 2017 results | 1.80 | -1.55 | 4.12x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +27.3% | +3.4pp | +11.4% | ✗ |
+| 2017-12-29 | $1046.40 | Alphabet Q3 2017 results | 1.80 | -1.42 | 3.65x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +29.2% | +4.2pp | +13.4% | ✗ |

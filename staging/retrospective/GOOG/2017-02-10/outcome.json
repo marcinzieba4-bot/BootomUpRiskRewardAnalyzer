@@ -1,0 +1,62 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "GOOG",
+ "as_of": "2017-02-10",
+ "computed": "2026-11-18",
+ "data_source": "Yahoo Finance daily closes + dividends (GOOG, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2017-08-10",
+   "price": 907.24,
+   "dividends": 0,
+   "total_return_pct": 11.5,
+   "benchmark_total_return_pct": 6.2,
+   "excess_pct": 5.3,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2018-02-09",
+   "price": 1037.78,
+   "dividends": 0,
+   "total_return_pct": 27.5,
+   "benchmark_total_return_pct": 15.0,
+   "excess_pct": 12.5,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2019-02-08",
+   "price": 1095.06,
+   "dividends": 0,
+   "total_return_pct": 34.6,
+   "benchmark_total_return_pct": 21.1,
+   "excess_pct": 13.5,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2020-02-10",
+   "price": 1508.68,
+   "dividends": 0,
+   "total_return_pct": 85.4,
+   "benchmark_total_return_pct": 51.3,
+   "excess_pct": 34.1,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2018-07-26",
+   "price": 1268.33
+  },
+  "low": {
+   "date": "2017-03-24",
+   "price": 814.43
+  },
+  "max_drawdown_pct": -23.0,
+  "return_to_avg_price_m12_m24_pct": 36.4
+ },
+ "scenario_landing_2y": "BULL",
+ "call_check_2y": {
+  "expectation": "RICH: should miss the hurdle and lag the benchmark",
+  "hit": false
+ }
+}
