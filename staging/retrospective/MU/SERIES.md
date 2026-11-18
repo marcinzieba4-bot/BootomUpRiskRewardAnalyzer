@@ -526,3 +526,212 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2017-12-15 | $42.40 | Micron Q4 FY17 results | 3.20 | +1.52 | 0.36x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +20.8% | -1.7pp | -2.0% | ✓ |
 | 2017-12-21 | $44.42 | Micron Q1 FY18 results | 3.00 | +1.13 | 0.48x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +24.0% | +0.1pp | -5.5% | ✓ |
 | 2017-12-29 | $41.12 | Micron Q1 FY18 results | 3.00 | +1.27 | 0.40x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +31.4% | +6.4pp | +3.0% | ✓ |
+| 2018-01-05 | $45.80 | Micron Q1 FY18 results | 3.00 | +1.08 | 0.52x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +19.1% | -2.8pp | -6.7% | ✓ |
+| 2018-01-12 | $42.81 | Micron Q1 FY18 results | 3.00 | +1.32 | 0.44x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +32.4% | +11.3pp | +0.8% | ✓ |
+| 2018-01-19 | $42.75 | Micron Q1 FY18 results | 3.00 | +1.31 | 0.45x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +34.9% | +12.7pp | +2.0% | ✓ |
+| 2018-01-26 | $43.67 | Micron Q1 FY18 results | 3.00 | +1.28 | 0.47x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +32.3% | +13.8pp | +0.7% | ✓ |
+| 2018-02-02 | $40.82 | Micron Q1 FY18 results | 3.00 | +1.39 | 0.40x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +30.1% | +9.4pp | +8.5% | ✓ |
+| 2018-02-09 | $40.41 | Micron Q1 FY18 results | 3.00 | +1.47 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +40.8% | +9.6pp | +10.4% | ✓ |
+| 2018-02-16 | $44.21 | Micron Q1 FY18 results | 3.00 | +1.24 | 0.42x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +32.3% | +4.8pp | +1.7% | ✓ |
+| 2018-02-23 | $46.53 | Micron Q1 FY18 results | 3.00 | +1.18 | 0.48x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +22.5% | -2.8pp | -2.8% | ✓ |
+| 2018-03-02 | $49.11 | Micron Q1 FY18 results | 3.00 | +1.09 | 0.54x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +11.2% | -7.7pp | -7.4% | ✓ |
+| 2018-03-09 | $54.59 | Micron Q1 FY18 results | 3.00 | +0.90 | 0.69x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -15.8% | -18.0pp | -16.2% | ✗ |
+| 2018-03-16 | $60.58 | Micron Q1 FY18 results | 3.00 | +0.67 | 0.90x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -43.1% | -34.1pp | -24.4% | ✗ |
+| 2018-03-23 | $54.21 | Micron Q2 FY18 results | 3.00 | +0.21 | 1.54x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -29.4% | -20.1pp | -15.7% | ✓ |
+| 2018-03-29 | $52.14 | Micron Q2 FY18 results | 3.00 | +0.34 | 1.29x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -16.6% | -17.1pp | -12.2% | ✓ |
+| 2018-04-06 | $48.46 | Micron Q2 FY18 results | 3.00 | +0.51 | 1.01x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | -4.3% | -10.5pp | -5.6% | ✓ |
+| 2018-04-13 | $52.23 | Micron Q2 FY18 results | 3.00 | +0.33 | 1.29x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -11.6% | -19.7pp | -12.2% | ✓ |
+| 2018-04-20 | $50.62 | Micron Q2 FY18 results | 3.00 | +0.42 | 1.13x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -14.3% | -24.0pp | -9.4% | ✓ |
+| 2018-04-27 | $47.52 | Micron Q2 FY18 results | 3.00 | +0.57 | 0.93x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -4.7% | -16.5pp | -3.4% | ✗ |
+| 2018-05-04 | $47.58 | Micron Q2 FY18 results | 3.00 | +0.57 | 0.95x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -6.6% | -17.3pp | -3.4% | ✗ |
+| 2018-05-11 | $51.82 | Micron Q2 FY18 results | 3.00 | +0.38 | 1.23x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -7.0% | -18.2pp | -11.0% | ✓ |
+| 2018-05-18 | $53.39 | Micron Q2 FY18 results | 3.00 | +0.30 | 1.36x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -14.0% | -26.8pp | -13.3% | ✓ |
+| 2018-05-25 | $61.35 | Micron Q2 FY18 results | 3.00 | +0.15 | 1.62x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -26.7% | -39.4pp | -24.2% | ✓ |
+| 2018-06-01 | $58.74 | Micron Q2 FY18 results | 3.00 | +0.29 | 1.38x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -21.1% | -36.8pp | -20.5% | ✓ |
+| 2018-06-08 | $61.39 | Micron Q2 FY18 results | 3.00 | +0.16 | 1.62x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -12.5% | -32.7pp | -23.4% | ✓ |
+| 2018-06-15 | $58.23 | Micron Q2 FY18 results | 3.00 | +0.32 | 1.34x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -15.4% | -29.8pp | -18.6% | ✓ |
+| 2018-06-22 | $57.10 | Micron Q3 FY18 results | 2.85 | +0.26 | 1.18x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -10.4% | -27.5pp | -16.4% | ✓ |
+| 2018-06-29 | $52.44 | Micron Q3 FY18 results | 2.85 | +0.46 | 0.91x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -6.3% | -22.6pp | -8.5% | ✗ |
+| 2018-07-06 | $53.23 | Micron Q3 FY18 results | 2.85 | +0.24 | 1.20x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -4.3% | -23.5pp | -9.5% | ✓ |
+| 2018-07-13 | $56.35 | Micron Q3 FY18 results | 2.85 | +0.10 | 1.47x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -12.2% | -28.8pp | -14.3% | ✓ |
+| 2018-07-20 | $55.02 | Micron Q3 FY18 results | 2.85 | +0.18 | 1.31x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -6.9% | -26.9pp | -12.0% | ✓ |
+| 2018-07-27 | $53.96 | Micron Q3 FY18 results | 2.85 | +0.23 | 1.23x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -4.4% | -23.2pp | -10.1% | ✓ |
+| 2018-08-03 | $52.81 | Micron Q3 FY18 results | 2.85 | +0.29 | 1.13x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -4.6% | -24.4pp | -8.0% | ✓ |
+| 2018-08-10 | $51.37 | Micron Q3 FY18 results | 2.85 | +0.36 | 1.03x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | -4.3% | -26.8pp | -5.1% | ✓ |
+| 2018-08-17 | $47.11 | Micron Q3 FY18 results | 2.85 | +0.60 | 0.80x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -4.0% | -26.5pp | +3.6% | ✗ |
+| 2018-08-24 | $50.70 | Micron Q3 FY18 results | 2.85 | +0.40 | 0.99x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -13.7% | -36.8pp | -3.7% | ✗ |
+| 2018-08-31 | $52.52 | Micron Q3 FY18 results | 2.85 | +0.33 | 1.08x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | -13.0% | -37.6pp | -7.0% | ✓ |
+| 2018-09-07 | $44.86 | Micron Q3 FY18 results | 2.85 | +0.79 | 0.68x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +3.6% | -19.4pp | +8.8% | ✗ |
+| 2018-09-14 | $44.30 | Micron Q3 FY18 results | 2.85 | +0.82 | 0.67x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +10.7% | -9.5pp | +10.0% | ✓ |
+| 2018-09-21 | $44.74 | Micron Q4 FY18 results | 2.85 | +2.10 | 0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +9.9% | -5.9pp | +9.0% | ✗ |
+| 2018-09-28 | $45.23 | Micron Q4 FY18 results | 2.85 | +2.10 | 0.03x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +9.9% | -8.9pp | +7.9% | ✗ |
+| 2018-10-05 | $43.58 | Micron Q4 FY18 results | 2.85 | +2.20 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +9.2% | -12.7pp | +12.2% | ✗ |
+| 2018-10-12 | $42.47 | Micron Q4 FY18 results | 2.85 | +2.20 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +19.3% | -12.4pp | +15.4% | ✗ |
+| 2018-10-19 | $40.45 | Micron Q4 FY18 results | 2.85 | +1.98 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +30.1% | +2.3pp | +21.5% | ✓ |
+| 2018-10-26 | $35.40 | Micron Q4 FY18 results | 2.85 | +1.98 | -0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +47.3% | +15.2pp | +39.2% | ✓ |
+| 2018-11-02 | $40.32 | Micron Q4 FY18 results | 2.85 | +2.20 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +23.3% | -2.3pp | +22.3% | ✗ |
+| 2018-11-09 | $39.11 | Micron Q4 FY18 results | 2.85 | +1.98 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +43.1% | +11.4pp | +26.4% | ✓ |
+| 2018-11-16 | $39.44 | Micron Q4 FY18 results | 2.85 | +1.98 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +56.8% | +20.3pp | +25.9% | ✓ |
+| 2018-11-23 | $36.40 | Micron Q4 FY18 results | 2.85 | +1.98 | -0.03x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +76.3% | +36.3pp | +37.2% | ✓ |
+| 2018-11-30 | $38.56 | Micron Q4 FY18 results | 2.85 | +1.98 | -0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +66.2% | +30.8pp | +30.2% | ✓ |
+| 2018-12-07 | $35.31 | Micron Q4 FY18 results | 2.85 | +1.98 | -0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +105.6% | +61.4pp | +43.6% | ✓ |
+| 2018-12-14 | $34.20 | Micron Q4 FY18 results | 2.85 | +2.18 | -0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +109.2% | +64.9pp | +49.5% | ✓ |
+| 2018-12-20 | $31.28 | Micron Q1 FY19 results | 2.55 | +2.10 | -0.07x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +128.5% | +73.9pp | +64.4% | ✓ |
+| 2018-12-28 | $31.57 | Micron Q1 FY19 results | 2.55 | +2.10 | -0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +123.8% | +69.0pp | +63.9% | ✓ |
+| 2019-01-04 | $32.70 | Micron Q1 FY19 results | 2.55 | +2.10 | -0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +126.5% | +75.9pp | +59.2% | ✓ |
+| 2019-01-11 | $36.01 | Micron Q1 FY19 results | 2.55 | +1.80 | -0.03x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +118.5% | +67.9pp | +45.7% | ✓ |
+| 2019-01-18 | $35.76 | Micron Q1 FY19 results | 2.55 | +1.80 | -0.03x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +125.7% | +80.5pp | +47.7% | ✓ |
+| 2019-01-25 | $38.96 | Micron Q1 FY19 results | 2.55 | +1.80 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +108.6% | +59.7pp | +36.9% | ✓ |
+| 2019-02-01 | $39.60 | Micron Q1 FY19 results | 2.55 | +1.68 | -0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +103.1% | +59.6pp | +35.8% | ✓ |
+| 2019-02-08 | $38.58 | Micron Q1 FY19 results | 2.55 | +1.80 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +117.8% | +69.2pp | +40.7% | ✓ |
+| 2019-02-15 | $41.99 | Micron Q1 FY19 results | 2.55 | +1.80 | 0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +109.6% | +64.0pp | +30.3% | ✓ |
+| 2019-02-22 | $42.57 | Micron Q1 FY19 results | 2.55 | +1.80 | 0.03x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +102.7% | +60.0pp | +29.9% | ✓ |
+| 2019-03-01 | $41.58 | Micron Q1 FY19 results | 2.55 | +1.90 | 0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +127.9% | +84.9pp | +34.8% | ✓ |
+| 2019-03-08 | $38.65 | Micron Q1 FY19 results | 2.55 | +1.90 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +120.1% | +76.9pp | +46.8% | ✓ |
+| 2019-03-15 | $39.54 | Micron Q1 FY19 results | 2.55 | +1.90 | 0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +124.7% | +80.2pp | +45.7% | ✓ |
+| 2019-03-22 | $41.62 | Micron Q2 FY19 results | 1.85 | +0.47 | 0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +119.3% | +74.7pp | +41.1% | ✓ |
+| 2019-03-29 | $41.33 | Micron Q2 FY19 results | 1.85 | +0.49 | 0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +109.5% | +65.4pp | +44.2% | ✓ |
+| 2019-04-05 | $43.32 | Micron Q2 FY19 results | 1.85 | +0.39 | 0.03x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +116.4% | +71.7pp | +39.5% | ✓ |
+| 2019-04-12 | $42.01 | Micron Q2 FY19 results | 1.85 | +0.46 | 0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +127.5% | +81.8pp | +46.0% | ✓ |
+| 2019-04-18 | $43.40 | Micron Q2 FY19 results | 1.85 | +0.37 | 0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +108.9% | +61.1pp | +43.1% | ✓ |
+| 2019-04-26 | $42.10 | Micron Q2 FY19 results | 1.85 | +0.43 | 0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +108.6% | +62.4pp | +49.8% | ✓ |
+| 2019-05-03 | $43.33 | Micron Q2 FY19 results | 1.85 | +0.37 | 0.03x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +96.2% | +50.1pp | +47.4% | ✓ |
+| 2019-05-10 | $38.94 | Micron Q2 FY19 results | 1.85 | +0.60 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +107.6% | +58.6pp | +65.9% | ✓ |
+| 2019-05-17 | $36.06 | Micron Q2 FY19 results | 1.85 | +0.87 | -0.02x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +122.9% | +73.6pp | +81.0% | ✓ |
+| 2019-05-24 | $34.00 | Micron Q2 FY19 results | 1.85 | +1.10 | -0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +143.8% | +91.6pp | +94.1% | ✓ |
+| 2019-05-31 | $32.61 | Micron Q2 FY19 results | 1.85 | +0.98 | -0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +158.0% | +101.3pp | +104.1% | ✓ |
+| 2019-06-07 | $33.99 | Micron Q2 FY19 results | 1.85 | +0.98 | -0.03x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +147.2% | +96.5pp | +97.8% | ✓ |
+| 2019-06-14 | $32.66 | Micron Q2 FY19 results | 1.85 | +0.98 | -0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +146.4% | +95.5pp | +107.5% | ✓ |
+| 2019-06-21 | $33.25 | Micron Q2 FY19 results | 1.85 | +0.98 | -0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +131.8% | +84.8pp | +105.6% | ✓ |
+| 2019-06-27 | $38.07 | Micron Q3 FY19 results | 1.65 | +0.16 | -0.00x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +115.5% | +65.2pp | +81.0% | ✓ |
+| 2019-07-05 | $39.42 | Micron Q3 FY19 results | 1.65 | +0.04 | 0.01x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +103.8% | +54.7pp | +76.3% | ✓ |
+| 2019-07-12 | $44.51 | Micron Q3 FY19 results | 1.65 | -0.25 | 0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +78.7% | +29.6pp | +57.4% | ✓ |
+| 2019-07-19 | $45.52 | Micron Q3 FY19 results | 1.65 | -0.29 | 0.07x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +63.8% | +17.0pp | +55.1% | ✓ |
+| 2019-07-26 | $47.49 | Micron Q3 FY19 results | 1.65 | -0.33 | 0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +60.7% | +10.9pp | +49.7% | ✓ |
+| 2019-08-02 | $44.08 | Micron Q3 FY19 results | 1.65 | -0.25 | 0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +76.1% | +22.7pp | +62.4% | ✓ |
+| 2019-08-09 | $41.52 | Micron Q3 FY19 results | 1.65 | -0.21 | 0.03x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +93.2% | +37.7pp | +73.9% | ✓ |
+| 2019-08-16 | $43.55 | Micron Q3 FY19 results | 1.65 | -0.24 | 0.05x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +62.9% | +4.2pp | +67.0% | ✓ |
+| 2019-08-23 | $42.96 | Micron Q3 FY19 results | 1.65 | -0.23 | 0.04x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +67.0% | +6.0pp | +70.5% | ✓ |
+| 2019-08-30 | $45.27 | Micron Q3 FY19 results | 1.65 | -0.29 | 0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +61.6% | +3.1pp | +63.0% | ✓ |
+| 2019-09-06 | $48.97 | Micron Q3 FY19 results | 1.65 | -0.48 | 0.10x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +50.7% | -5.1pp | +51.8% | ✓ |
+| 2019-09-13 | $50.50 | Micron Q3 FY19 results | 1.65 | -0.50 | 0.12x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +47.2% | -4.8pp | +48.1% | ✗ |
+| 2019-09-20 | $49.16 | Micron Q3 FY19 results | 1.65 | -0.48 | 0.10x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +47.2% | -2.1pp | +53.1% | ✓ |
+| 2019-09-27 | $43.21 | Micron Q4 FY19 results | 1.65 | -1.35 | 1.99x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +74.0% | +20.3pp | +75.3% | ✗ |
+| 2019-10-04 | $44.55 | Micron Q4 FY19 results | 1.65 | -1.42 | 2.21x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +58.7% | +9.3pp | +71.1% | ✗ |
+| 2019-10-11 | $45.10 | Micron Q4 FY19 results | 1.65 | -1.45 | 2.31x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +53.7% | +3.2pp | +69.9% | ✗ |
+| 2019-10-18 | $43.47 | Micron Q4 FY19 results | 1.65 | -1.35 | 2.03x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +55.0% | +1.1pp | +77.0% | ✗ |
+| 2019-10-25 | $48.03 | Micron Q4 FY19 results | 1.65 | -1.56 | 2.98x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +43.4% | -11.4pp | +60.8% | ✗ |
+| 2019-11-01 | $48.38 | Micron Q4 FY19 results | 1.65 | -1.58 | 3.08x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +46.3% | -7.6pp | +60.4% | ✗ |
+| 2019-11-08 | $47.19 | Micron Q4 FY19 results | 1.65 | -1.53 | 2.77x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +58.2% | +2.8pp | +65.3% | ✗ |
+| 2019-11-15 | $47.71 | Micron Q4 FY19 results | 1.65 | -1.55 | 2.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +61.1% | +7.6pp | +64.3% | ✗ |
+| 2019-11-22 | $45.87 | Micron Q4 FY19 results | 1.65 | -1.47 | 2.46x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +83.0% | +29.0pp | +71.6% | ✗ |
+| 2019-11-29 | $47.51 | Micron Q4 FY19 results | 1.65 | -1.54 | 2.84x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +81.5% | +30.1pp | +66.4% | ✗ |
+| 2019-12-06 | $47.93 | Micron Q4 FY19 results | 1.65 | -1.56 | 2.95x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +72.2% | +22.9pp | +65.6% | ✗ |
+| 2019-12-13 | $51.20 | Micron Q4 FY19 results | 1.65 | -1.68 | 4.09x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +64.9% | +14.3pp | +55.5% | ✗ |
+| 2019-12-20 | $55.06 | Micron Q1 FY20 results | 1.85 | -1.46 | 6.16x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +49.2% | +3.8pp | +45.0% | ✗ |
+| 2019-12-27 | $54.03 | Micron Q1 FY20 results | 1.85 | -1.43 | 5.35x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +75.0% | +23.6pp | +48.4% | ✗ |
+| 2020-01-03 | $54.53 | Micron Q1 FY20 results | 1.85 | -1.44 | 5.72x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +76.0% | +24.3pp | +47.8% | ✗ |
+| 2020-01-10 | $56.67 | Micron Q1 FY20 results | 1.85 | -1.59 | 7.16x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +66.0% | +19.6pp | +42.9% | ✗ |
+| 2020-01-17 | $57.66 | Micron Q1 FY20 results | 1.85 | -1.62 | 8.46x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +69.2% | +25.8pp | +40.8% | ✗ |
+| 2020-01-24 | $57.76 | Micron Q1 FY20 results | 1.85 | -1.61 | 7.73x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +44.0% | +6.7pp | +40.7% | ✗ |
+| 2020-01-31 | $53.09 | Micron Q1 FY20 results | 1.85 | -1.37 | 4.18x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +49.7% | +8.8pp | +53.1% | ✗ |
+| 2020-02-07 | $56.88 | Micron Q1 FY20 results | 1.85 | -1.58 | 6.16x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +42.5% | +4.5pp | +43.0% | ✗ |
+| 2020-02-14 | $58.50 | Micron Q1 FY20 results | 1.85 | -1.63 | 7.87x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +53.9% | +20.5pp | +39.2% | ✗ |
+| 2020-02-21 | $56.99 | Micron Q1 FY20 results | 1.85 | -1.58 | 5.77x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +59.7% | +26.0pp | +43.0% | ✗ |
+| 2020-02-28 | $52.56 | Micron Q1 FY20 results | 1.85 | -1.33 | 3.54x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +69.4% | +18.2pp | +55.0% | ✗ |
+| 2020-03-06 | $51.47 | Micron Q1 FY20 results | 1.85 | -1.28 | 3.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +59.5% | +10.4pp | +58.2% | ✗ |
+| 2020-03-13 | $42.99 | Micron Q1 FY20 results | 1.85 | -0.88 | 1.60x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +69.9% | +9.6pp | +88.9% | ✗ |
+| 2020-03-20 | $36.11 | Micron Q1 FY20 results | 1.85 | -0.49 | 1.02x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +120.5% | +21.2pp | +124.1% | ✗ |
+| 2020-03-27 | $43.48 | Micron Q2 FY20 results | 2.00 | -0.55 | 1.66x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +80.1% | -3.0pp | +85.7% | ✗ |
+| 2020-04-03 | $41.22 | Micron Q2 FY20 results | 2.00 | -0.44 | 1.42x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +85.3% | -1.8pp | +95.5% | ✓ |
+| 2020-04-09 | $46.13 | Micron Q2 FY20 results | 2.00 | -0.68 | 2.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +57.0% | -7.9pp | +73.8% | ✗ |
+| 2020-04-17 | $45.70 | Micron Q2 FY20 results | 2.00 | -0.66 | 1.94x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +54.1% | -2.6pp | +74.7% | ✗ |
+| 2020-04-24 | $44.16 | Micron Q2 FY20 results | 2.00 | -0.58 | 1.74x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +57.9% | +3.3pp | +80.1% | ✗ |
+| 2020-05-01 | $45.06 | Micron Q2 FY20 results | 2.00 | -0.62 | 1.85x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +52.0% | +2.3pp | +75.6% | ✗ |
+| 2020-05-08 | $48.25 | Micron Q2 FY20 results | 2.00 | -0.78 | 2.34x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +46.4% | +1.9pp | +63.5% | ✗ |
+| 2020-05-15 | $44.41 | Micron Q2 FY20 results | 2.00 | -0.58 | 1.77x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +62.6% | +18.3pp | +77.1% | ✗ |
+| 2020-05-22 | $44.94 | Micron Q2 FY20 results | 2.00 | -0.62 | 1.83x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +54.0% | +18.3pp | +74.6% | ✗ |
+| 2020-05-29 | $47.91 | Micron Q2 FY20 results | 2.00 | -0.58 | 2.28x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +53.7% | +13.5pp | +63.2% | ✗ |
+| 2020-06-05 | $53.72 | Micron Q2 FY20 results | 2.00 | -0.91 | 3.75x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +30.8% | -1.4pp | +45.3% | ✓ |
+| 2020-06-12 | $48.69 | Micron Q2 FY20 results | 2.00 | -0.62 | 2.42x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +29.2% | -2.6pp | +59.8% | ✓ |
+| 2020-06-19 | $50.83 | Micron Q2 FY20 results | 2.00 | -0.75 | 2.89x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +10.3% | -12.0pp | +52.2% | ✓ |
+| 2020-06-26 | $48.49 | Micron Q2 FY20 results | 2.00 | -0.60 | 2.39x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +21.1% | -12.7pp | +58.8% | ✓ |
+| 2020-07-01 | $49.70 | Micron Q3 FY20 results | 2.50 | +0.16 | 1.56x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +8.6% | -18.0pp | +53.9% | ✗ |
+| 2020-07-10 | $50.70 | Micron Q3 FY20 results | 2.50 | +0.12 | 1.66x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +17.5% | -8.6pp | +50.2% | ✓ |
+| 2020-07-17 | $49.47 | Micron Q3 FY20 results | 2.50 | +0.18 | 1.54x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +25.2% | +1.9pp | +53.2% | ✓ |
+| 2020-07-24 | $50.02 | Micron Q3 FY20 results | 2.50 | +0.17 | 1.59x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +23.4% | -3.4pp | +50.9% | ✓ |
+| 2020-07-31 | $50.06 | Micron Q3 FY20 results | 2.50 | +0.17 | 1.60x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +24.4% | -5.3pp | +50.2% | ✓ |
+| 2020-08-07 | $48.75 | Micron Q3 FY20 results | 2.50 | +0.24 | 1.48x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +29.0% | +1.9pp | +53.5% | ✓ |
+| 2020-08-14 | $45.60 | Micron Q3 FY20 results | 2.50 | +0.44 | 1.24x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 2/8 FAIR | +43.5% | +13.3pp | +63.6% | ✓ |
+| 2020-08-21 | $42.66 | Micron Q3 FY20 results | 2.50 | +0.63 | 1.06x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +42.8% | +15.1pp | +74.5% | ✓ |
+| 2020-08-28 | $45.69 | Micron Q3 FY20 results | 2.50 | +0.43 | 1.25x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 2/8 FAIR | +27.0% | +8.1pp | +62.3% | ✓ |
+| 2020-09-04 | $46.48 | Micron Q3 FY20 results | 2.50 | +0.38 | 1.30x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +22.1% | +4.2pp | +58.8% | ✓ |
+| 2020-09-11 | $46.09 | Micron Q3 FY20 results | 2.50 | +0.40 | 1.28x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +25.5% | +0.3pp | +59.6% | ✓ |
+| 2020-09-18 | $50.74 | Micron Q3 FY20 results | 2.50 | +0.14 | 1.66x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +5.0% | -15.2pp | +44.2% | ✗ |
+| 2020-09-25 | $49.14 | Micron Q3 FY20 results | 2.50 | +0.23 | 1.51x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +2.8% | -12.7pp | +47.9% | ✓ |
+| 2020-10-01 | $47.92 | Micron Q4 FY20 results | 2.85 | -0.94 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +5.4% | -4.1pp | +50.8% | ✓ |
+| 2020-10-09 | $49.89 | Micron Q4 FY20 results | 2.85 | -1.00 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +7.1% | -0.9pp | +44.2% | ✓ |
+| 2020-10-16 | $51.61 | Micron Q4 FY20 results | 2.85 | -1.05 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +3.2% | -3.2pp | +38.8% | ✓ |
+| 2020-10-23 | $52.85 | Micron Q4 FY20 results | 2.85 | -1.05 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +7.1% | -4.6pp | +35.0% | ✓ |
+| 2020-10-30 | $50.34 | Micron Q4 FY20 results | 2.85 | -0.96 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +8.4% | -14.4pp | +41.2% | ✓ |
+| 2020-11-06 | $55.16 | Micron Q4 FY20 results | 2.85 | -1.12 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +2.8% | -8.1pp | +28.2% | ✓ |
+| 2020-11-13 | $57.93 | Micron Q4 FY20 results | 2.85 | -1.18 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +8.8% | -5.8pp | +21.5% | ✓ |
+| 2020-11-20 | $61.40 | Micron Q4 FY20 results | 2.85 | -1.17 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -3.7% | -18.5pp | +14.1% | ✓ |
+| 2020-11-27 | $64.23 | Micron Q4 FY20 results | 2.85 | -1.17 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -8.2% | -22.1pp | +8.4% | ✓ |
+| 2020-12-04 | $73.34 | Micron Q4 FY20 results | 2.85 | -1.28 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -24.7% | -37.9pp | -5.8% | ✓ |
+| 2020-12-11 | $70.53 | Micron Q4 FY20 results | 2.85 | -1.28 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -21.5% | -32.0pp | -2.9% | ✓ |
+| 2020-12-18 | $71.46 | Micron Q4 FY20 results | 2.85 | -1.28 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -26.4% | -33.5pp | -5.0% | ✓ |
+| 2020-12-24 | $70.58 | Micron Q4 FY20 results | 2.85 | -1.12 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -28.1% | -35.2pp | -4.8% | ✓ |
+| 2020-12-31 | $75.18 | Micron Q4 FY20 results | 2.85 | -1.12 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -32.7% | -38.2pp | -11.6% | ✓ |
+| 2021-01-08 | $77.42 | Micron Q1 FY21 results | 2.85 | -1.12 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -25.8% | -30.8pp | -15.3% | ✓ |
+| 2021-01-15 | $80.72 | Micron Q1 FY21 results | 2.85 | -1.10 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -28.7% | -37.9pp | -19.7% | ✓ |
+| 2021-01-22 | $82.28 | Micron Q1 FY21 results | 2.85 | -1.10 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -28.2% | -34.7pp | -21.8% | ✓ |
+| 2021-01-29 | $78.27 | Micron Q1 FY21 results | 2.85 | -1.12 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -17.6% | -30.4pp | -18.3% | ✓ |
+| 2021-02-05 | $81.10 | Micron Q1 FY21 results | 2.85 | -1.12 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -22.3% | -31.7pp | -21.6% | ✓ |
+| 2021-02-12 | $88.01 | Micron Q1 FY21 results | 2.85 | -1.12 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -31.3% | -38.3pp | -28.4% | ✓ |
+| 2021-02-19 | $90.96 | Micron Q1 FY21 results | 2.85 | -1.12 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -34.4% | -41.9pp | -31.4% | ✓ |
+| 2021-02-26 | $91.53 | Micron Q1 FY21 results | 2.85 | -1.12 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -35.7% | -43.1pp | -32.4% | ✓ |
+| 2021-03-05 | $88.93 | Micron Q1 FY21 results | 2.85 | -1.12 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -35.4% | -43.9pp | -31.1% | ✓ |
+| 2021-03-12 | $87.77 | Micron Q1 FY21 results | 2.85 | -1.20 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -36.7% | -37.7pp | -30.7% | ✓ |
+| 2021-03-19 | $90.51 | Micron Q1 FY21 results | 2.85 | -1.12 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -36.7% | -40.0pp | -33.2% | ✓ |
+| 2021-03-26 | $87.99 | Micron Q1 FY21 results | 2.85 | -1.12 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -29.8% | -32.8pp | -31.7% | ✓ |
+| 2021-04-01 | $92.41 | Micron Q2 FY21 results | 2.85 | -1.12 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -34.0% | -39.3pp | -35.4% | ✓ |
+| 2021-04-09 | $95.30 | Micron Q2 FY21 results | 2.85 | -1.12 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -37.8% | -40.2pp | -37.7% | ✓ |
+| 2021-04-16 | $90.66 | Micron Q2 FY21 results | 2.85 | -1.12 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -30.1% | -31.9pp | -34.6% | ✓ |
+| 2021-04-23 | $86.03 | Micron Q2 FY21 results | 2.85 | -1.10 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -28.1% | -29.9pp | -31.3% | ✓ |
+| 2021-04-30 | $86.07 | Micron Q2 FY21 results | 2.85 | -1.12 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -24.3% | -27.0pp | -31.5% | ✓ |
+| 2021-05-07 | $85.98 | Micron Q2 FY21 results | 2.85 | -1.12 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -27.9% | -28.6pp | -31.7% | ✓ |
+| 2021-05-14 | $79.70 | Micron Q2 FY21 results | 2.85 | -1.12 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -22.6% | -24.4pp | -26.5% | ✓ |
+| 2021-05-21 | $80.72 | Micron Q2 FY21 results | 2.85 | -1.12 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -14.6% | -18.4pp | -27.6% | ✓ |
+| 2021-05-28 | $84.14 | Micron Q2 FY21 results | 2.85 | -1.12 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -11.2% | -14.1pp | -30.5% | ✓ |
+| 2021-06-04 | $83.76 | Micron Q2 FY21 results | 2.85 | -1.12 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -16.5% | -20.7pp | -30.3% | ✓ |
+| 2021-06-11 | $79.34 | Micron Q2 FY21 results | 2.85 | -1.12 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -16.6% | -20.8pp | -26.4% | ✓ |
+| 2021-06-18 | $76.95 | Micron Q2 FY21 results | 2.85 | -1.12 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -11.1% | -20.0pp | -23.9% | ✓ |
+| 2021-06-25 | $82.03 | Micron Q2 FY21 results | 2.85 | -1.12 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -19.5% | -24.0pp | -28.4% | ✓ |
+| 2021-07-02 | $80.33 | Micron Q3 FY21 results | 3.00 | -0.97 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -20.5% | -25.6pp | -26.7% | ✓ |
+| 2021-07-09 | $78.74 | Micron Q3 FY21 results | 3.00 | -0.95 | 153.88x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -21.9% | -25.4pp | -25.1% | ✓ |
+| 2021-07-16 | $75.01 | Micron Q3 FY21 results | 3.00 | -1.13 | 14.41x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -13.4% | -20.5pp | -21.3% | ✓ |
+| 2021-07-23 | $75.94 | Micron Q3 FY21 results | 3.00 | -1.13 | 17.87x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -12.4% | -18.0pp | -22.2% | ✓ |
+| 2021-07-30 | $77.58 | Micron Q3 FY21 results | 3.00 | -0.95 | 25.86x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -7.1% | -14.2pp | -23.6% | ✓ |
+| 2021-08-06 | $82.00 | Micron Q3 FY21 results | 3.00 | -1.00 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -13.7% | -17.5pp | -27.6% | ✓ |
+| 2021-08-13 | $70.92 | Micron Q3 FY21 results | 3.00 | -0.55 | 6.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -8.0% | -10.8pp | -16.1% | ✓ |
+| 2021-08-20 | $70.23 | Micron Q3 FY21 results | 3.00 | -0.47 | 6.14x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -8.2% | -9.5pp | -15.3% | ✓ |
+| 2021-08-27 | $74.00 | Micron Q3 FY21 results | 3.00 | -0.56 | 9.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -12.7% | -13.2pp | -19.4% | ✓ |
+| 2021-09-03 | $73.81 | Micron Q3 FY21 results | 3.00 | -0.55 | 9.02x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -3.4% | -5.8pp | -18.9% | ✓ |
+| 2021-09-10 | $73.50 | Micron Q3 FY21 results | 3.00 | -0.53 | 8.65x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -3.3% | -6.2pp | -18.3% | ✓ |
+| 2021-09-17 | $74.30 | Micron Q3 FY21 results | 3.00 | -0.54 | 9.15x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -4.8% | -8.1pp | -18.7% | ✓ |
+| 2021-09-24 | $74.05 | Micron Q3 FY21 results | 3.00 | -0.52 | 8.84x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -5.8% | -5.6pp | -17.9% | ✓ |
+| 2021-09-30 | $70.98 | Micron Q4 FY21 results | 3.00 | +0.60 | 1.22x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -3.1% | -5.6pp | -13.9% | ✓ |
+| 2021-10-08 | $70.12 | Micron Q4 FY21 results | 3.00 | +0.61 | 1.20x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +1.0% | +0.0pp | -12.4% | ✗ |
+| 2021-10-15 | $67.68 | Micron Q4 FY21 results | 3.00 | +0.68 | 1.11x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +3.6% | +4.0pp | -8.7% | ✗ |
+| 2021-10-22 | $67.51 | Micron Q4 FY21 results | 3.00 | +0.69 | 1.12x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +0.9% | +5.1pp | -8.1% | ✗ |
+| 2021-10-29 | $69.10 | Micron Q4 FY21 results | 3.00 | +0.65 | 1.18x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -3.7% | +4.1pp | -9.8% | ✗ |
+| 2021-11-05 | $72.92 | Micron Q4 FY21 results | 3.00 | +0.54 | 1.34x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +0.8% | +5.3pp | -14.2% | ✗ |
+| 2021-11-12 | $77.30 | Micron Q4 FY21 results | 3.00 | +0.33 | 1.53x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -1.4% | +1.6pp | -18.6% | ✗ |
+| 2021-11-19 | $83.03 | Micron Q4 FY21 results | 3.00 | +0.20 | 1.88x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -5.5% | -4.4pp | -23.9% | ✓ |
+| 2021-11-26 | $83.42 | Micron Q4 FY21 results | 3.00 | +0.19 | 1.91x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -6.8% | -8.7pp | -23.9% | ✓ |
+| 2021-12-03 | $81.62 | Micron Q4 FY21 results | 3.00 | +0.23 | 1.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -5.9% | -9.9pp | -21.7% | ✓ |
+| 2021-12-10 | $85.54 | Micron Q4 FY21 results | 3.00 | +0.14 | 2.02x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -11.3% | -11.8pp | -24.8% | ✓ |
+| 2021-12-17 | $83.00 | Micron Q4 FY21 results | 3.00 | +0.21 | 1.84x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -0.8% | -5.7pp | -21.9% | ✓ |
+| 2021-12-22 | $90.34 | Micron Q1 FY22 results | 3.00 | -0.34 | 6.14x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -3.3% | -7.3pp | -27.6% | ✓ |
+| 2021-12-31 | $93.15 | Micron Q1 FY22 results | 3.00 | -0.39 | 7.93x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -7.4% | -10.2pp | -29.1% | ✓ |

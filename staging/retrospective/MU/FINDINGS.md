@@ -1,12 +1,14 @@
 # MU retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the MU weekly dates: 522 in all, 105 from 2008-01-04 to 2009-12-31, 209 from 2010-01-08 to
-2013-12-31 and 208 from 2014-01-09 to 2017-12-29, all Micron Technology, Inc. (NYSE: MU, NASDAQ from 2009-12-30). They are **labels and hypotheses**: never feed them back into
+Patterns seen in `outcome.json` for the MU weekly dates: 731 in all, 105 from 2008-01-04 to 2009-12-31, 209 from 2010-01-08 to
+2013-12-31, 208 from 2014-01-09 to 2017-12-29 and 209 from 2018-01-05 to 2021-12-31, all Micron Technology, Inc. (NYSE: MU, NASDAQ from 2009-12-30). They are **labels and hypotheses**: never feed them back into
 the method or the fact sheet. Each batch was scored only after its point-in-time build was committed and pushed (2008-2009: 504c033,
-firewall result 483f3a2; 2010-2013: 5324605, controls and firewall result 03d226a; 2014-2017: c2143cb, firewall result eac7c42); the outcomes were computed on
-2026-11-17 (2008-2013) and 2026-11-18 (2014-2017). Every date
-has its 6-month, 1-, 2- and 3-year horizons. No split falls in any horizon and Micron paid no dividend in any of them (to the end of
-2020), so prices are as traded and total returns are price returns. Medians of an even count take the upper middle value
+firewall result 483f3a2; 2010-2013: 5324605, controls and firewall result 03d226a; 2014-2017: c2143cb, firewall result eac7c42;
+2018-2021: e2f36cc, controls, sensitivities and firewall result 5809542); the outcomes were computed on
+2026-11-17 (2008-2013) and 2026-11-18 (2014-2021). Every date
+has its 6-month, 1-, 2- and 3-year horizons. No split falls in any horizon, so prices are as traded. Micron paid no dividend until
+2021-10-18 (the first $0.10 a quarter, declared 2021-08-02): total returns are price returns for every horizon ending before it, and
+include the dividends for the 118 two-year horizons (2019-10-18 to 2021-12-31 entries) that span it, at most $0.91 a share. Medians of an even count take the upper middle value
 (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years and +52.1% over three. "Call held" is `call_check_2y`: CHEAP should
 clear the hurdle or beat the benchmark (SPY); FAIR should land within 15 points of it; RICH should miss the hurdle and lag it.
 
@@ -362,3 +364,137 @@ clear the hurdle or beat the benchmark (SPY); FAIR should land within 15 points 
   and margins near the price peak, so it ranked outcomes the wrong way across the decade; (4) BEAR as flat EPS at the 10th-percentile
   multiple was below every 2014-2017 two-year price (all 208 above it), after 2010, when 51 of 52 fell below it: as a bound it was too
   low in one regime and too high in another.
+
+## 2018 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 20 | +40.8% | +9.2% to +128.5% | 13 | 15 | +22.3% | 15 |
+| class FAIR, legacy tier BUY 7, ACCUMULATE 6 | 13 | -4.0% | -43.1% to +32.3% | 1 | 1 | -3.4% | 5 |
+| class RICH, legacy tier WATCHLIST 16, ACCUMULATE 3 | 19 | -12.2% | -29.4% to -4.3% | 0 | 0 | -12.2% | 19 |
+| latest print Q1 FY18 (2018-01-05 to 2018-03-16) | 11 | +30.1% | -43.1% to +40.8% | 5 | 6 | +0.7% | 9 |
+| latest print Q2 FY18 (2018-03-23 to 2018-06-15) | 13 | -14.0% | -29.4% to -4.3% | 0 | 0 | -12.2% | 11 |
+| latest print Q3 FY18 (2018-06-22 to 2018-09-14) | 13 | -4.6% | -13.7% to +10.7% | 0 | 0 | -8.0% | 9 |
+| latest print Q4 FY18 (2018-09-21 to 2018-12-14) | 13 | +43.1% | +9.2% to +109.2% | 7 | 8 | +25.9% | 8 |
+| latest print Q1 FY19 (2018-12-20 to 2018-12-28) | 2 | +128.5% | +123.8% to +128.5% | 2 | 2 | +64.4% | 2 |
+
+- **RICH held on all 19, CHEAP on 15 of 20, FAIR on 5 of 13.** The RICH entries (2018-03-23 to 2018-08-31, $48.46-61.39, 11.0-13.9x
+  FY17's $4.41) returned -29.4% to -4.3% over two years while SPY returned -9.3% to +24.6%; 18 of 19 lagged it by more than 15 points.
+  The FAIR entries ($44.21-60.58) returned -43.1% to +32.3%: 5 stayed within 15 points of SPY and 8 lagged it by more (2018-03-09 to
+  2018-09-07). CHEAP held on the 5 entries of January and February ($40.41-43.67, +30.1% to +40.8%) and on 10 of the 15 from the Q4 FY18
+  print; the 5 misses (2018-09-21 to 2018-10-12 and 2018-11-02, $40.32-45.23) returned +9.2% to +23.3% against SPY's +15.8% to +31.8%:
+  under the hurdle and behind SPY. The 8 CHEAP entries from 2018-11-09 ($31.28-39.44) returned
+  +43.1% to +128.5%. Over three years the 2018 dates returned +31.2% to +194.7% (median +66.1%); 32 beat SPY and 38 cleared the
+  three-year hurdle.
+- **The anchor turned at a constant price.** On 2018-09-21 FY18's $11.51, the record year, replaced FY17's $4.41: at $44-45 the
+  multiple fell from 10.0x (2018-09-14) to 3.9x and the class from FAIR to CHEAP. FY2019 then earned $5.51 and FY2020 $2.37 (inside the series, after
+  these dates). The CHEAP class held where the price kept falling first: 51 of the 52 dates had the two-year low at $29.02 (2018-12-24).
+- **The ranks, strong and the right way for price and valuation:** price -0.92 and -0.97, EPP gap -0.91 and -0.98, Ratio B -0.89 and
+  -0.93, and the adjusted gap +0.79 and +0.87; the proxy composite -0.42 and -0.55, the wrong sign (3.00 in the first half, 2.85 to
+  2.55 later, as the entries improved).
+- **The two-year price landed nearest BASE on 40 dates and BEAR on 12,** above the BEAR price on all 52; it was 0.40-0.89 times BASE and
+  at most 0.62 times BULL.
+
+## 2019 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 35 | +109.6% | +60.7% to +158.0% | 35 | 35 | +49.8% | 35 |
+| class FAIR, legacy tier BUY | 2 | +50.7% | +47.2% to +50.7% | 2 | 0 | +53.1% | 2 |
+| class RICH, legacy tier AVOID 14, BUY 1 | 15 | +58.7% | +43.4% to +83.0% | 15 | 12 | +65.3% | 0 |
+| latest print Q1 FY19 (2019-01-04 to 2019-03-15) | 11 | +118.5% | +102.7% to +127.9% | 11 | 11 | +40.7% | 11 |
+| latest print Q2 FY19 (2019-03-22 to 2019-06-21) | 14 | +122.9% | +96.2% to +158.0% | 14 | 14 | +65.9% | 14 |
+| latest print Q3 FY19 (2019-06-27 to 2019-09-20) | 13 | +63.8% | +47.2% to +115.5% | 13 | 10 | +62.4% | 12 |
+| latest print Q4 FY19 (2019-09-27 to 2019-12-13) | 12 | +61.1% | +43.4% to +83.0% | 12 | 10 | +66.4% | 0 |
+| latest print Q1 FY20 (2019-12-20 to 2019-12-27) | 2 | +75.0% | +49.2% to +75.0% | 2 | 2 | +48.4% | 0 |
+
+- **CHEAP held on all 35 and FAIR on both; RICH missed on all 15, by outperforming.** The CHEAP entries (2019-01-04 to 2019-08-30,
+  $32.61-47.49, 2.8-4.1x FY18's $11.51) returned +60.7% to +158.0% and all cleared the hurdle and beat SPY (+42.7% to +61.0%), 31 by more
+  than 15 points. The RICH entries (2019-09-13 and 2019-09-27 to 2019-12-27, $43.21-55.06) returned +43.4% to +83.0%: all cleared the
+  hurdle and 12 beat SPY, where RICH should miss it and lag. Over three years the 2019 dates returned -7.0% to +195.2% (median +55.2%);
+  29 beat SPY and 26 cleared the three-year hurdle.
+- **The RICH calls rested on the downturn year** (14 of the 15). From the Q4 FY19 print FY20E was FY19's $5.51 (down 52% on FY18), BEAR was that fall
+  (-52.1%/yr), BASE the Q1 FY20 guide (-40.3%/yr), and the proxy composite 1.65: the price at 7.8-10.0x sat at the 68th-81st percentile.
+  FY2020 then earned $2.37 and FY2021 $5.14; the price reached $95.59 on 2021-04-12, the two-year high of 38 of the 52 dates.
+- **The ranks split by measure:** price -0.88, EPP gap -0.88 and Ratio B -0.87 against the two-year return, but -0.15, -0.01 and -0.02
+  against the m12-24 average; the adjusted gap +0.83 and -0.31 and the
+  proxy composite +0.72 and -0.54.
+- **The two-year price landed nearest BEAR on 27 dates, BULL on 13, BASE on 11 and XBULL on 1,** above the BEAR price on all 52; it was
+  0.92-5.92 times BASE and up to 1.49 times BULL.
+
+## 2020 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier ACCUMULATE | 1 | +42.8% | +42.8% to +42.8% | 1 | 1 | +74.5% | 1 |
+| class FAIR, legacy tier WATCHLIST 13, ACCUMULATE 1 | 14 | +25.2% | +2.8% to +120.5% | 3 | 7 | +53.9% | 11 |
+| class RICH, legacy tier AVOID 35, WATCHLIST 3 | 38 | +44.0% | -32.7% to +80.1% | 20 | 17 | +45.3% | 18 |
+| latest print Q1 FY20 (2020-01-03 to 2020-03-20) | 12 | +66.0% | +42.5% to +120.5% | 12 | 12 | +47.8% | 0 |
+| latest print Q2 FY20 (2020-03-27 to 2020-06-26) | 14 | +54.0% | +10.3% to +85.3% | 10 | 6 | +74.6% | 5 |
+| latest print Q3 FY20 (2020-07-01 to 2020-09-25) | 13 | +24.4% | +2.8% to +43.5% | 2 | 7 | +53.5% | 11 |
+| latest print Q4 FY20 (2020-10-01 to 2020-12-31) | 14 | +2.8% | -32.7% to +8.8% | 0 | 0 | +21.5% | 14 |
+
+- **RICH held on 18 of 38, FAIR on 11 of 14, and the CHEAP date (2020-08-21) held.** The 20 RICH entries of January to May ($42.99-58.50,
+  on FY19's $5.51) returned +42.5% to +80.1% over two years: all cleared the hurdle and 17 beat SPY, so the call missed on each. The 4 of
+  June ($48.49-53.72) returned +10.3% to +30.8% and the 14 from the Q4 FY20 print ($47.92-75.18, 20.2-31.7x FY20's $2.37) -32.7% to +8.8%,
+  under the hurdle and behind SPY: all 18 held. FAIR missed on 2020-03-20 (+120.5%, beating SPY by 21 points) and on
+  2020-07-01 and 2020-09-18 (lagging it by 18 and 15 points). Over three years the 2020 dates returned -6.4% to +61.4% (median +33.2%);
+  17 beat SPY and 4 cleared the three-year hurdle.
+- **The ranks:** price -0.51 and -0.94, EPP gap -0.65 and -0.97, Ratio B -0.44 and -0.79 (the right signs); the adjusted gap -0.01 and
+  +0.61; the proxy composite -0.87 and -0.49, the wrong sign (1.85-2.00 in the first half, when the entries did best, and 2.50-2.85 after).
+- **The two-year price landed nearest BULL on 35 dates, BASE on 14 and XBULL on 4,** above the BEAR price on all 53; it was 0.80-4.13
+  times BASE and up to 2.04 times BULL.
+
+## 2021 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID 45, WATCHLIST 7 | 52 | -13.4% | -37.8% to +3.6% | 0 | 5 | -23.9% | 46 |
+| latest print Q1 FY21 (2021-01-08 to 2021-03-26) | 12 | -29.8% | -36.7% to -17.6% | 0 | 0 | -28.4% | 12 |
+| latest print Q2 FY21 (2021-04-01 to 2021-06-25) | 13 | -22.6% | -37.8% to -11.1% | 0 | 0 | -30.5% | 13 |
+| latest print Q3 FY21 (2021-07-02 to 2021-09-24) | 13 | -8.2% | -21.9% to -3.3% | 0 | 0 | -19.4% | 13 |
+| latest print Q4 FY21 (2021-09-30 to 2021-12-17) | 12 | -1.4% | -11.3% to +3.6% | 0 | 5 | -14.2% | 6 |
+| latest print Q1 FY22 (2021-12-22 to 2021-12-31) | 2 | -3.3% | -7.4% to -3.3% | 0 | 0 | -27.6% | 2 |
+
+- **RICH on all 52; the call held on 46.** The entries ($67.51-95.30) returned -37.8% to +3.6% over two years (median -13.4%) and none
+  cleared the hurdle; all had the two-year high at $97.36 (2022-01-14) and the low at $48.88 (2022-09-26), a 49.8% drawdown. The 38
+  entries on FY20's $2.37 (to 2021-09-24, 29.6-40.2x) held on all 38, 29 lagging SPY by more than 15 points; the 14 on FY21's $5.14 held on
+  8: the 6 misses (2021-10-08 to 2021-11-12) returned -3.7% to +3.6% while SPY returned -7.8% to +1.0%, matching or beating it. Over three
+  years the 2021 dates returned -11.4% to +101.0% (median +33.9%); 28 beat SPY and 15 cleared the three-year hurdle.
+- **The ranks, all the right way:** price -0.69 and -0.91, EPP gap -0.93 and -0.83, Ratio B -0.87 and -0.71, the adjusted gap +0.80 and
+  +0.64 and the proxy composite +0.80 and +0.63.
+- **The two-year price landed nearest BULL on 39 dates and BASE on 13,** above the BEAR price on all 52; it was 0.83-2.38 times BASE and up
+  to 1.41 times BULL.
+
+## Across 2018-2021
+
+- **The call held on 152 of 209 dates** (CHEAP 51 of 56, FAIR 18 of 29, RICH 83 of 124); the median two-year return was +19.3% (-43.1% to
+  +158.0%), 90 dates cleared the hurdle and 93 beat SPY. Over three years the median was +42.0%, with 106 beating SPY and 83 clearing the
+  hurdle. By anchor: 29 of the 37 dates on FY17's $4.41 (median -6.3%), 47 of the 53 on FY18's $11.51 (+105.6%), 16 of the 53 on FY19's
+  $5.51 (+53.7%), 52 of the 52 on FY20's $2.37 (-17.6%) and 8 of the 14 on FY21's $5.14 (-3.1%).
+- **Across the four years the entry price ranks the two-year return at Spearman -0.85 and the m12-24 average at -0.78, the EPP gap at
+  -0.85 and -0.74 and Ratio B at -0.65 and -0.45 (the right signs, strong); the adjusted gap at +0.30 and +0.08 (right, weak); the proxy
+  composite at -0.69 and -0.80 (the wrong sign).** The composite read 1.65 at the 2019 trough and 3.00 at the 2018 and 2021 peaks.
+- **The two-year price landed nearest BULL on 87 dates, BASE on 78, BEAR on 39 and XBULL on 5,** above the BEAR price on all 209.
+- **The readings measured before any outcome, in hindsight** (retro/README.md, "MU 2018-2021"; each moved date scored with the same
+  call rule under the other class): the next-quarter guides held on 28 of the 33 dates they moved (9 would have held without them), and the
+  two 8-Ks' restated ranges on all 5 (none without them). The earlier exclusions went the other way: FY2016 read as a loss held on 17 of
+  the 40 dates it moved (32 at the company's $0.06), FY2011 excluded on 14 of 28 (20 at GAAP $0.17), FY2013 excluded on 13 of 17 (12 at
+  $1.13), and GAAP for FY2018-FY2021 on 8 of 16 (15 at the company's non-GAAP figures). These are observations, not grounds to change a
+  reading: the readings are frozen and were made without outcomes.
+
+## Across 2008-2021
+
+- **The call held on 442 of 731 dates** (CHEAP 300 of 455, FAIR 51 of 135, RICH 91 of 141); 380 cleared the hurdle and 402 beat SPY over
+  two years; over three years the median was +55.9%, with 445 beating SPY.
+- **Across the 731 dates the entry price ranks the two-year return at Spearman -0.41, the EPP gap at -0.31 and Ratio B at -0.34 (the right
+  signs, weak); the adjusted gap at -0.23 and the proxy composite at -0.70 (the wrong sign).** Year by year the composite ranked the
+  two-year return the wrong way in nine of fourteen years for MU (2009, 2010, 2011, 2013, 2015, 2016, 2017, 2018 and 2020) and the right
+  way in 2008, 2012, 2014 (weakly), 2019 and 2021.
+- **The models said DURABLE on every date; today's profile says CYCLICAL.** No 10-K of 2007-2021 called the business cyclical.
+- Hypotheses only, to test on other tickers and periods and never to fold into MU's method or fact sheet: (5) within two years the
+  rollover anchor swung from a record year (FY18's $11.51) to a trough (FY20's $2.37), and the class followed the anchor rather than the
+  price: CHEAP at 2.7-4.4x near the 2018-2019 low and RICH at 20-40x near the 2021 high, both of which held, while the one stretch on a
+  middling anchor (FY19's $5.51) held on 16 of 53; (6) a next-quarter guide in a filing turned BASE ahead of the latest quarter's growth at
+  both turns (2018 and 2020), and the guides held on most of the dates they moved; (7) the year-on-year composite ranked the outcomes
+  the wrong way in 2018 and 2020 and the right way in 2019 and 2021, so across 2018-2021 it again ranked them the wrong way (-0.69).
