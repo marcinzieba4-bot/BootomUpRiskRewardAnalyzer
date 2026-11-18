@@ -19470,6 +19470,15 @@ Controls and checks (before any outcome):
   its date, which the validator rejected; the text was cut to the MU form before any outcome existed.
 - **Regression:** rebuilding the 2008-2009 dates of ACN, AAPL, AVGO, BKR, BMY, CAT, CMCSA, F, LMT, LOW, MAR, MSFT, MU, NKE, NVDA, PEP,
   PFE, RCL, SHW, SO, UNP, WMT and XOM changes nothing (2,332 models); the shared code is untouched (the firewall tool gains a GOOG entry).
+- **Firewall** (run after the build was committed, before any outcome): passes at the 15 cutoffs above (every print, vintage, year-ago
+  10-Q and restatement date of the range, 2008-01-10 and 2010-01-01), 0 files changed and no planted text (1 to 105 dates each). The
+  planted facts include a print with absurd values in every field, absurd full-year actuals for the year after the latest vintage, a later
+  Q4 print excluding its own year, a later 10-Q restatement of the last print before the cutoff, a later vintage excluding a year with
+  planted texts, figures, outlook words, exchange and window start, a later guide for every guided year, a dividend, a listing, a company
+  name, a split on the price data's next split date and prices from the cutoff multiplied by 10. As a positive control the plants reach
+  the first date after them: rebuilding 2008-11-21 with the plants of the 2008-11-10 cutoff stops at the builder's refusal of the planted
+  guide ("no encoding for guides"), and with the guide, dividend, listing and name taken out, at its check of the planted restatement
+  (2008-11-21) or print (2009-03-06, the 2009-02-17 cutoff). A full rebuild is byte-identical.
 
 Seen in the build (method behaviour, not tuned):
 - **CHEAP on 93 dates (2008-01-04 to 2009-10-09), FAIR on 10 (2009-10-16 to 2009-12-18), RICH on 2 (2009-12-24, 2009-12-31); legacy
