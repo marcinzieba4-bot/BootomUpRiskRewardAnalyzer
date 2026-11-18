@@ -18828,6 +18828,15 @@ Controls and checks (before any outcome):
   in the FY2015 10-K). No file of the 522 dates carries an ISO date after its as-of date.
 - **Regression:** the 314 dates of 2008-2013 rebuild byte for byte; no file another ticker's builder reads has changed (the firewall's
   new plants are MU's own).
+- **Firewall** (run after the build was committed, before any outcome): passes at the 25 cutoffs above (every print, vintage and guide
+  date of the range, and 2018-01-01), 0 files changed and no planted text (314 to 522 dates each), with the plants of 2010-2013 plus a
+  planted call sentence on the print and a later guide, in numbers and in words, for every quarter guided before the cutoff. As positive
+  controls, the prices multiplied from the cutoff change the first date on or after it (2016-09-09 and 2017-03-03 for the cutoffs of
+  2016-09-08 and 2017-03-02), and the plants reach the first date after them: rebuilt with them, 2016-09-23 and 2017-03-17 stop at the
+  builder's refusals (the generic planted guide's unencoded fields; the planted print, whose figures contradict its raw rows; the planted
+  vintage, which leaves no print after its last year); with those three left out, the planted listing, prices and words reach the model,
+  and with a cutoff of 2017-03-03 the planted later guide replaces the Q2 FY17 update on 2017-03-17 (-50% to -40%). A full rebuild is
+  byte-identical.
 
 Seen in the build (method behaviour, not tuned):
 - **CHEAP on 106 dates, FAIR on 85, RICH on 17; legacy tier BUY on 190, ACCUMULATE on 17, WATCHLIST on 1.** By year: 2014 CHEAP 37, FAIR
