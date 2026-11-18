@@ -19630,6 +19630,11 @@ Controls and checks (before any outcome):
   warning.
 - **Regression:** the 105 dates of 2008-2009 rebuild byte for byte apart from the corrected comment; no file another ticker's builder
   reads has changed.
+- **Firewall** (run after the build was committed, before any outcome): passes at the 22 cutoffs above (every print, vintage and
+  restatement date of the range, and 2014-01-01), 0 files changed and no planted text (107 to 314 dates each), with the same plants as for
+  2008-2009. As a positive control the plants reach the first date after them: rebuilding 2013-11-01 with the plants of the 2013-10-18
+  cutoff stops at the builder's refusal of the planted guide, and without the guide, dividend, listing and name at its check of the
+  planted Q2 2013 restatement (and 2011-05-27, for the 2011-05-11 cutoff, at the planted Q1 2011 one). A full rebuild is byte-identical.
 
 Seen in the build (method behaviour, not tuned):
 - **CHEAP on 201 dates, FAIR on 8; legacy tier BUY on all 209;** robustness agrees with the class on every date. FAIR is the two dates of
