@@ -1,0 +1,65 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "MU",
+ "as_of": "2024-11-08",
+ "computed": "2026-11-18",
+ "data_source": "Yahoo Finance daily closes + dividends (MU, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2025-05-08",
+   "price": 85.15,
+   "dividends": 0.23,
+   "total_return_pct": -23.7,
+   "benchmark_total_return_pct": -4.9,
+   "excess_pct": -18.8,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2025-11-07",
+   "price": 237.92,
+   "dividends": 0.46,
+   "total_return_pct": 113.0,
+   "benchmark_total_return_pct": 13.4,
+   "excess_pct": 99.7,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2026-11-06",
+   "price": 690.0,
+   "dividends": 1.02,
+   "total_return_pct": 517.5,
+   "benchmark_total_return_pct": 25.4,
+   "excess_pct": 492.1,
+   "hurdle_pct": 32.2
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2026-06-25",
+   "price": 1213.56
+  },
+  "low": {
+   "date": "2025-04-04",
+   "price": 64.72
+  },
+  "max_drawdown_pct": -45.9,
+  "return_to_avg_price_m12_m24_pct": 490.1
+ },
+ "scenario_landing_2y": "XBULL",
+ "call_check_2y": {
+  "expectation": "RICH: should miss the hurdle and lag the benchmark",
+  "hit": false
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "DURABLE",
+   "risk": 2
+  },
+  "today": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Micron: HBM/DRAM; memory cycle at a record, CXMT competition",
+   "reviewed": "2026-09-22"
+  }
+ }
+}

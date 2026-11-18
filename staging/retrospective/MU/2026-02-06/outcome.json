@@ -1,0 +1,42 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "MU",
+ "as_of": "2026-02-06",
+ "computed": "2026-11-18",
+ "data_source": "Yahoo Finance daily closes + dividends (MU, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2026-08-06",
+   "price": 881.47,
+   "dividends": 0.3,
+   "total_return_pct": 123.4,
+   "benchmark_total_return_pct": 11.8,
+   "excess_pct": 111.6,
+   "hurdle_pct": 7.2
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2026-06-25",
+   "price": 1213.56
+  },
+  "low": {
+   "date": "2026-03-30",
+   "price": 321.8
+  },
+  "max_drawdown_pct": -45.9,
+  "return_to_avg_price_m12_m24_pct": null
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "CYCLICAL",
+   "risk": 2
+  },
+  "today": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Micron: HBM/DRAM; memory cycle at a record, CXMT competition",
+   "reviewed": "2026-09-22"
+  }
+ }
+}
