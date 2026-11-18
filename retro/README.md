@@ -19524,6 +19524,8 @@ Judgement calls that could carry hindsight:
 - CYCLICAL rather than DURABLE (label only), on the 10-K's "cyclicality ... in our business";
 - the outlook words, stock-based compensation, dilution and capital-expenditure estimates left unencoded (no input either way).
 
+The hindsight results are in `staging/retrospective/GOOG/FINDINGS.md`: hypotheses, never inputs.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
