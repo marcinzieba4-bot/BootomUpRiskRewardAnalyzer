@@ -19804,7 +19804,12 @@ Controls and checks (before any outcome):
 - **Regression:** the 314 dates of 2008-2013 rebuild byte for byte with the new builder and fact sheet. The shared files that change are
   `taxonomy_eras.json` (the names above, in no other ticker's model) and `retro/tools/firewall.py` (a GOOG-only plant: the later
   vintage's per-share figures on a planted share basis before every split).
-- **Firewall:** see below (run after the build was committed, before any outcome).
+- **Firewall** (run after the build was committed and pushed, before any outcome): passes at the 24 cutoffs above (every print, vintage,
+  split and rename date of the range, and 2018-01-01), 0 files changed and no planted text (317 to 522 dates each), with the plants of
+  2008-2013 and the later vintage's per-share figures on a planted share basis. As a positive control the plants reach the first date
+  after them: rebuilding 2017-11-10 with the plants of the 2017-10-27 cutoff (and 2015-10-16 with those of 2015-10-05) stops at the
+  builder's refusal of the planted guide, and without the guide, dividend and listing at its check of the planted restatement of the last
+  print before the cutoff. A full rebuild is byte-identical.
 
 Seen in the build (method behaviour, not tuned):
 - **CHEAP on 69 dates, FAIR on 24, RICH on 115.** By year: 2014 CHEAP 46 and FAIR 5; 2015 CHEAP 23, FAIR 18 and RICH 12 (from
