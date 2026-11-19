@@ -21013,7 +21013,11 @@ Controls and checks (before any outcome):
 - **`retro_tool run` passes on all 254 dates,** with no warning (the 34 corrected dates re-run after the fix).
 - **Regression:** with the new fact sheet the 731 dates of 2008-2021 rebuild byte for byte, with a fresh price cache, before the text fix;
   after it, all but the six corrected 2021 dates.
-- **Firewall:** run after the build is committed (below).
+- **Firewall** (run after the build was committed and pushed, before any outcome): passes at the 27 cutoffs above (every print,
+  vintage, restatement and dividend date of the range, 2022-01-02 and 2026-11-14), 0 files changed and no planted text (731 to 985 dates
+  each), with the JPM plants of 2008-2021 (a print absurd in every field with absurd full-year actuals, a later Q4 print, a later 10-Q
+  restatement of the last print before the cutoff, a later vintage with planted CRYPTO words, a guide, a dividend, a listing, a company
+  name and prices multiplied by 10). The 73 controls above are the positive control: each real fact reaches the first date after it.
 
 Seen in the build (method behaviour, not tuned):
 - **RICH on 124 dates, CHEAP on 90, FAIR on 40; legacy tier AVOID 122, BUY 82, WATCHLIST 27, ACCUMULATE 23.** By year: 2022 CHEAP 51
