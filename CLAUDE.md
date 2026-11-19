@@ -23,9 +23,9 @@ touching either directory.
   outcomes or findings enters another's models. UNP (2008-2026 so far), LOW (2008-2026 so far), AAPL (2008-2026 so far),
   NKE (2008-2026 so far), AVGO (from its 2009-08-06 listing to 2026-10-30 so far), PEP (2008 to 2026-10-30 so far), MSFT
   (2008 to 2026-10-30 so far), XOM (2008 to 2026-10-30 so far), SHW (2008 to 2026-11-06 so far), WMT (2008 to 2026-11-06 so far), RCL (2008 to 2026-11-06 so far), MAR (2008 to 2026-11-03 so far), BKR (2008 to 2017-06-30, then 2019-02-01 to 2026-11-06 so far), PFE (2008 to 2026-11-04 so far), CMCSA (2008 to 2026-11-06 so far), CAT (2008 to 2026-11-06 so far), BMY (2008 to 2026-11-06 so far), NVDA (2008 to 2026-11-06 so far), F (2008-01-04 to 2026-11-06 so far; 2022-01-07 onward was built first at the owner's request, and dates before 2022 are an early era with its
-  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far) and GOOG (2008-01-04 to 2026-11-13 so far) sit in `staging/retrospective/` until the owner adds
+  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far) and JPM (2008-01-04 to 2009-12-31 so far) sit in `staging/retrospective/` until the owner adds
   them to the archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM", "SHW", "WMT", "RCL", "MAR", "BKR", "PFE", "CMCSA", "CAT",
-  "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py` and `mu_signal_model.py` files
+  "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG", "JPM"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py` and `mu_signal_model.py` files
   and today's profiles in `data/business_profiles.json` (NVDA's and SO's included) are 2026 analyses: never inputs to a retrospective. AVGO did not trade
   before its IPO, so its series starts at the listing (the listing and bounds rules of method r2). BKR's 2008 to 2017-06-30 dates are Baker
   Hughes Incorporated, listed as BHI: BKR is only the series key (and Yahoo's symbol for the history); the models print BHI. Its dates from
@@ -104,5 +104,14 @@ touching either directory.
   filing that states each rate ($0.20 from 2024-04-26); FY2024-FY2025 EPS is the Class C figure of the 10-K's EPS note ($8.03, $10.80);
   the Q3 2025 EC fine is out of the quarter's operating margin at the company's published 33.9% (EPS stays GAAP); GENAI is on the watch
   list from the FY2023 10-K's competition wording (2024-02-01 on), company-acknowledged, never re-filed (retro/README.md, "GOOG 2022-2026").
+  JPM (JPMorgan Chase) is the first bank: revenue is total net revenue on the reported basis (not the managed basis), acquisitions in
+  as published (Bear Stearns, Washington Mutual); EPS is diluted EPS from continuing operations (before the 2008 extraordinary gain), at
+  the company's figure excluding merger costs where a supplement on the same basis prints it (FY2005 on); FY2002 is excluded by the AAPL
+  test (its operating EPS is on an earlier basis), so the history and the P/E window start with FY2003, and FY2004's $1.48 is kept (the
+  test passed by $515M): the two largest calls (39 and 33 classes the other way); no filing guides revenue, EPS or a margin, so BASE is
+  the latest quarter's revenue growth less the net share issuance (the Bank One merger); the signals are a bank's (net revenue, the
+  provision as a share of revenue, the expense gap, nonperforming assets against loans, the pre-tax margin) under rule T over
+  1997-2006; two 10-Q restatements of nonperforming assets (Q2 and Q3 2008) and the EPS revision 8-K of 2009-05-29 are dated facts of
+  their own; DURABLE; parts of the filings were not read (retro/README.md, "JPM", lists them).
 - **Never use the owner's personal email** in request headers to external
   services (SEC asks for a contact in the User-Agent).
