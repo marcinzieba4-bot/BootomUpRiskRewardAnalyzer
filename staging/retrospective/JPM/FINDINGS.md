@@ -1,7 +1,7 @@
 # JPM retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the JPM weekly dates (JPMorgan Chase & Co., NYSE: JPM): 522 in all, 105 from 2008-01-04 to 2009-12-31,
-209 from 2010-01-08 to 2013-12-31 and 208 from 2014-01-10 to 2017-12-29 (the second and third sections below). They are
+Patterns seen in `outcome.json` for the JPM weekly dates (JPMorgan Chase & Co., NYSE: JPM): 731 in all, 105 from 2008-01-04 to 2009-12-31,
+209 from 2010-01-08 to 2013-12-31, 208 from 2014-01-10 to 2017-12-29 and 209 from 2018-01-05 to 2021-12-31 (the later sections below). They are
 **labels and hypotheses**: never feed them back into the method or the fact sheet. The outcomes were computed on 2026-11-19, after the
 point-in-time build and its one text correction were committed (735d7d4, ed681b3) and the firewall had passed at 16 cutoffs; the build
 was not yet pushed when they were computed. Every date has its 6-month, 1-, 2- and 3-year horizons. Total returns include dividends
@@ -161,3 +161,64 @@ Across the three batches (522 dates): the classes ordered the outcomes in 2008 a
 of 2014-2017. Each failure traces to the history's trough year: as the anchor at the 2009 low, and as BEAR from the Q4 2008 print on. A hypothesis for
 the live model, as in 2010-2013 and still untested elsewhere: a last-year-EPS method needs a rule for a single collapse year, here for
 BEAR as well as for the anchor. Not tested here: any other bank, any other cycle.
+
+## 2018-2021 (209 dates)
+
+Scored on 2026-11-19, after the point-in-time build was committed (ab268ad), the firewall had passed at 25 cutoffs, and the decisions,
+checks and sensitivities of retro/README.md ("JPM 2018-2021") were written; the build was not yet pushed when the outcomes were computed.
+Every date has its 6-month, 1-, 2- and 3-year horizons (the 2021 entries' third year ends in 2024). Dividends are $0.56 a quarter to
+October 2018, then $0.80, $0.90 (from October 2019) and $1.00 (from October 2021). This section was written by the session that wrote the
+2014-2017 one, so the P/E percentile rows test that section's hypothesis on four years it was not drawn from.
+
+| Group | Dates | Mean 2-yr total return | Median | Mean vs SPY | Beat SPY | Cleared hurdle | Mean m12-24 avg price | Mean max drawdown | Call held |
+|---|---|---|---|---|---|---|---|---|---|
+| all | 209 | +18.2% | +17.5% | -8.7pp | 58 | 61 | +10.0% | -40.1% | 147 |
+| 2018 | 52 | +2.9% | -2.8% | -18.4pp | 5 | 3 | +3.1% | -39.9% | 42 |
+| 2018, FAIR | 5 | +25.8% | +24.8% | -20.8pp | 0 | 2 | +8.0% | -44.0% | 0 |
+| 2018, RICH | 47 | +0.4% | -3.7% | -18.2pp | 5 | 1 | +2.5% | -39.5% | 42 |
+| 2019 | 52 | +43.3% | +44.1% | -6.8pp | 14 | 44 | +12.0% | -44.0% | 30 |
+| 2019, CHEAP | 6 | +40.5% | +41.3% | -5.8pp | 1 | 5 | +2.6% | -44.0% | 5 |
+| 2019, FAIR | 20 | +51.8% | +52.6% | +1.7pp | 12 | 19 | +11.6% | -44.0% | 19 |
+| 2019, RICH | 26 | +37.4% | +38.8% | -13.6pp | 1 | 20 | +14.5% | -44.0% | 6 |
+| 2020 | 53 | +28.4% | +25.4% | -4.5pp | 26 | 14 | +39.6% | -36.1% | 36 |
+| 2020, CHEAP | 32 | +33.7% | +29.9% | -2.0pp | 17 | 14 | +52.7% | -34.0% | 25 |
+| 2020, FAIR | 8 | +23.7% | +24.4% | -9.0pp | 3 | 0 | +31.5% | -36.8% | 4 |
+| 2020, RICH | 13 | +18.2% | +17.0% | -7.8pp | 6 | 0 | +12.2% | -40.9% | 7 |
+| 2021 | 52 | -2.0% | -2.2% | -5.3pp | 13 | 0 | -15.2% | -40.4% | 39 |
+| 2021, RICH | 52 | -2.0% | -2.2% | -5.3pp | 13 | 0 | -15.2% | -40.4% | 39 |
+| class CHEAP | 38 | +34.8% | +33.0% | -2.6pp | 18 | 19 | +44.8% | -35.6% | 30 |
+| class FAIR | 33 | +41.0% | +46.6% | -4.3pp | 15 | 21 | +15.9% | -42.3% | 23 |
+| class RICH | 138 | +8.1% | +2.0% | -11.5pp | 25 | 21 | -1.0% | -40.8% | 94 |
+| tier BUY | 36 | +34.1% | +30.9% | -2.5pp | 17 | 17 | +47.9% | -35.1% | 29 |
+| tier ACCUMULATE | 9 | +41.4% | +40.5% | -0.2pp | 5 | 5 | +21.0% | -38.3% | 7 |
+| tier WATCHLIST | 35 | +38.4% | +43.9% | -4.8pp | 15 | 22 | +12.4% | -43.1% | 18 |
+| tier AVOID | 129 | +6.6% | +1.1% | -12.1pp | 21 | 17 | -2.0% | -40.8% | 93 |
+| P/E percentile 0-39 | 35 | +33.2% | +29.7% | -2.5pp | 18 | 14 | +52.5% | -33.7% | 27 |
+| P/E percentile 40-59 | 8 | +34.7% | +26.9% | +2.6pp | 5 | 3 | +16.9% | -40.1% | 6 |
+| P/E percentile 60-79 | 31 | +42.9% | +48.0% | -0.8pp | 16 | 25 | +9.8% | -43.5% | 20 |
+| P/E percentile 80-100 | 135 | +7.6% | +1.5% | -12.8pp | 19 | 19 | -1.4% | -41.0% | 94 |
+| RICH, Ratio B infinite | 58 | +1.6% | -0.4% | -4.4pp | 17 | 1 | -12.9% | -37.9% | 41 |
+
+What the labels say, as hypotheses only:
+
+- **The class ordered the outcomes again, mostly through RICH.** CHEAP +34.8% over two years (-2.6 points against SPY), FAIR +41.0%
+  (-4.3), RICH +8.1% (-11.5); AVOID +6.6% against +34-41% for the other tiers. "Call held" reads 147 of 209, against 22 of 208 in
+  2014-2017: with FY2008 gone from BEAR (from 2018-03-02) Ratio B measured the price again. Every class and tier lagged SPY on average
+  (ACCUMULATE by only 0.2 points); FAIR in 2019 (+1.7) and the 40-59th percentile (+2.6) are the groups that led.
+- **The RICH years were the weak ones.** 2018 (RICH on 47 of 52) returned +2.9% and lagged SPY by 18.4 points; 2021 (RICH on all 52, on
+  FY20's reserve-build EPS) returned -2.0%, 5.3 points behind. The 2020 entries, CHEAP on 32 dates through the COVID fall, returned
+  +33.7% (the CHEAP ones), and their m12-24 average price was 52.7% above entry.
+- **The percentile hypothesis of 2014-2017, out of period: half held.** Entries at the 80th percentile of the ten-year range or above
+  (135 dates, mostly 2018 and 2021) returned +7.6% and lagged SPY by 12.8 points, again the worst group. Below the 80th the order did not
+  hold: the 0-39th returned +33.2%, the 40-59th +34.7%, the 60-79th +42.9% (25 of its 31 dates are 2019 entries, whose two years end in
+  2021). So "expensive against its own range lags" survived one more period; "cheaper is better all the way down" did not.
+- **Scenario landing:** BULL on 107 dates, BASE on 100 and BEAR on 2 (2020-10-02 and 2020-10-09, CHEAP entries whose two years ended at
+  the 2022 low): the first JPM dates near BEAR, now that BEAR is a -16% to -17% year rather than 2008's -80%.
+- **Drawdowns:** a mean -40.1% inside the two years, every entry year through the COVID fall or the 2022 decline.
+- **Three-year horizon:** a mean +40.6%, 4.5 points behind SPY; CHEAP entries +59.9% (+11.0), FAIR +40.1% (-16.4), RICH +35.4% (-5.8).
+
+Across the four batches (731 dates): the class ordered JPM's outcomes in 2008, 2010-2013 and 2018-2021 and failed in 2009 (the trough
+year as the anchor) and 2014-2017 (the trough year as BEAR, -80%/yr, while the price rose away from a shrinking BULL). In 2010-2013 BEAR
+was the trough too, but the price sat far enough under BULL for Ratio B to separate the dates. The hypothesis for the live model, still
+untested on any other bank: with a single collapse year as BEAR, Ratio B depends on the BULL upside alone and stops measuring the price
+once the price nears BULL; the class became informative again when that year left BEAR.

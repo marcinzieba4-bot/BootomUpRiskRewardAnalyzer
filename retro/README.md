@@ -20163,7 +20163,7 @@ Judgement calls that could carry hindsight:
 
 The hindsight results are in `staging/retrospective/GOOG/FINDINGS.md`: hypotheses, never inputs.
 
-## JPM (JPMorgan Chase): the twenty-seventh ticker, in staging, 2008-2017
+## JPM (JPMorgan Chase): the twenty-seventh ticker, in staging, 2008-2021
 
 The JPM series is built apart from the other twenty-six and shares nothing with them but the machinery: its own fact sheet
 (`retro/facts/JPM.json`), builder (`retro/build_jpm.py`, the GOOG builder with a bank's fields, figures in millions, no splits and a
@@ -20705,6 +20705,160 @@ Judgement calls that could carry hindsight:
 - DURABLE rather than CYCLICAL, and "financial technology companies" left without a theme (none in the taxonomy is scoped to a bank
   on these dates);
 - the decks and the 10-K and 10-Q text read only by the searches and rows above: a firm-wide guide in an unread passage would be missed.
+
+The hindsight results are in `staging/retrospective/JPM/FINDINGS.md`: hypotheses, never inputs.
+
+### JPM 2018-2021: FY2017 at the company's figure, revisions by filing, a 10-Q restatement in 2020, CRYPTO on the watch list
+
+209 weekly dates, 2018-01-05 to 2021-12-31 (52, 52, 53, 52), added to the 522 of 2008-2017 at the owner's request. The code is the newest
+branch of the repository (this session's push of 2014-2017; no other branch has later commits). **Disclosure:** this batch was decided in
+the same session that computed the 2014-2017 outcomes and wrote their findings, so its builder had read the 2008-2017 hindsight results
+before any decision here. No decision uses them: each applies a rule that existed before or another ticker's encoding, named in its
+bullet, and every alternative is measured below before any 2018-2021 outcome was computed. The method is still r2, the engine and its
+rule-T thresholds are unchanged, and the 522 earlier models rebuild byte-identical. The fact sheet only gains facts (`JPM74`-`JPM95`);
+the builder gains the CRYPTO watch list (below), which changes no earlier output.
+
+```bash
+python3 retro/build_jpm.py --weekly 2018-01-01 2021-12-31                   # 209 dates, 2018-01-05 .. 2021-12-31
+for c in 2018-01-02 2018-01-12 2018-02-28 2018-04-13 2018-07-13 2018-10-05 2018-10-12 2019-01-15 2019-02-27 2019-04-12 2019-07-16 \
+         2019-10-15 2020-01-14 2020-02-26 2020-04-14 2020-07-14 2020-10-13 2020-10-21 2020-11-03 2021-01-15 2021-02-24 2021-04-14 \
+         2021-07-13 2021-10-13 2022-01-01; do python3 retro/tools/firewall.py $c JPM; done
+```
+
+What was read, and how (the session's model directly). The filing list is EDGAR's for CIK 19617, cut at 2021-12-31: the 152 8-Ks,
+10-Ks and 10-Qs filed from 2017-10-20 to 2021-12-17. Read by row and by search, as for 2014-2017: the 16 supplements of the Q4 2017 to Q3
+2021 releases, each compared by script with every later supplement that reprints its quarters; the releases' headlines, significant
+items, figures excluding them and dividend sentences; the five-year summaries, statements of income, Items 1 and 1A and business outlook
+sections of the FY2017-FY2020 10-Ks; the twelve 10-Qs of 2018-2021 against their releases on seven rows (net revenue, provision,
+noninterest expense, pre-tax income, diluted EPS, nonperforming assets, loans), and their outlook sections; every other 8-K by its item
+text, its exhibits searched for per-share, revenue, outlook and dividend statements, and the decks of the 23 Item 7.01 8-Ks for
+firm-wide outlooks. **Not read:** the decks' and the 10-K and 10-Q text beyond those searches and rows. 266 strings were checked with
+`verbatim.py`, each against its own filing (266/266). Decided on 2026-11-19, before any 2018-2021 outcome was computed:
+
+- **Release timing.** Every earnings 8-K was accepted before the open (06:43-06:47 ET). Six came on a Friday and are dated their own day
+  (2018-01-12, 2018-04-13, 2018-07-13, 2018-10-12, 2019-04-12, 2021-01-15); the others' weeks are dated the next trading day. The 10-Ks
+  were accepted after the close: FY2017 (2018-02-27 16:23 ET) dated 2018-02-28, FY2018 (2019-02-26 16:57) 2019-02-27, FY2019 (2020-02-25
+  16:31) 2020-02-26, FY2020 (2021-02-23 16:17) 2021-02-24. A Q4 print extends the history to its 10-K for 7, 6, 6 and 6 dates.
+- **History: four vintages, the ten years to each 10-K's year** (2008-2017, 2009-2018, 2010-2019, 2011-2020), each year from the latest
+  filing that reports it. The 10-Ks revise earlier years as they go: the FY2017 10-K restates the diluted share counts of 2013-2016
+  (3,864.9M to 3,690.0M against 3,814.9M to 3,649.8M before; EPS unchanged), the FY2018 10-K puts 2014-2016 revenue on the 2018 basis
+  (the revenue recognition guidance, "applied retrospectively"), and the FY2020 10-K revises 2016-2019 revenue for the 2020
+  reclassifications. Years older than each 10-K's five keep their earlier filings' figures: seams as published (the ACN FY19 reading).
+- **FY2017 at the company's figure excluding significant items, $6.87** (GAAP $6.31). The Q4 2017 release: "FULL-YEAR 2017 RECORD NET
+  INCOME OF $26.5 BILLION, OR $6.87 PER SHARE EXCLUDING SIGNIFICANT ITEMS": the Tax Cuts and Jobs Act's estimated $2.4 billion decrease
+  in net income and a $406 million after-tax legal benefit (the Washington Mutual settlements). A company-published full year without
+  one-offs is used (the ACN rule), as LMT's FY2017 $13.33. The items are well under the year's net income, so the AAPL test would keep
+  GAAP; the figure is used because it is published, not because the year is distorted. No later filing republishes 2017 without them
+  (the 10-Ks give GAAP $6.31), so the release's figure stays as the latest filing that publishes one (the LMT and CAT rule), in every
+  vintage that holds 2017. The quarter's EPS stays GAAP ($1.07; the release's $1.76 in the note), as for Q4 2013.
+- **FY2018 $9.00, FY2019 $10.72 and FY2020 $8.88 are GAAP.** No release prints a full year without its significant items (Q4 2020 prints
+  the quarter "EXCLUDING CREDIT RESERVE RELEASES OF $2.9 BILLION ($3.07 PER SHARE)", a quarter only). FY2020's credit reserve builds are
+  the provision, not a listed one-off, and the year earned $29.1 billion: neither the AAPL test nor its mirror is met in any year.
+- **Revenue restated from the first filing that prints it** (`restates_revenue`, the 2014-2017 field): FY2017 at $100,705M from the Q4
+  2018 supplement ($99,624M in the FY2017 10-K; the revenue recognition guidance), FY2019 at $115,399M from the Q4 2020 supplement
+  ($115,627M in the FY2019 10-K; certain fees and card reward costs reclassified in 2020), each to its next 10-K. The supplements of Q1
+  2018, Q2 2020, Q3 2020 and Q1 2021 revise their earlier quarters ("prior period amounts have been revised"); from each, a print's
+  year-ago quarter is its own supplement's, and no revised "previous quarter" changes a figure a model uses.
+- **Q3 2020 restated by its own 10-Q** (`restated`, the 2008 and 2012 encoding): nonperforming assets $11,462M against the release's
+  $11,445M (the 10-Q's row: "Nonperforming assets(d) | 11,462 | 9,715 | 7,062 | 5,054 | 5,993"), from the 10-Q's date (accepted 2020-11-02
+  16:23 ET, dated 2020-11-03) to the Q4 2020 print. Every other row of every 10-Q matches its release. The Q3 2020 supplement itself
+  revises earlier quarters' loans (about $31-35 billion higher) and nonperforming assets: "the Firm reclassified certain fair value option
+  elected lending-related positions from trading assets to loans"; Q3 2020's year-ago figures are that supplement's.
+- **CECL** from 2020-01-01: the provision is on the new basis from Q1 2020 and the year-ago quarters on the old one, as published (the
+  note on the Q1 2020 print). COVID-19's reserve builds and releases are in the provision as published.
+- **No guide in any filing.** The 10-Ks' and 10-Qs' outlook sections give net interest income on the managed basis ("$54 to $55 billion"
+  for 2018, then "in excess of $58 billion", "approximately $57 billion", "$55 billion", "$52.5 billion"), adjusted expense, and for 2018
+  only noninterest revenue on the managed basis ("up approximately 7%"): components, so nothing is derived (the MSFT segment rule, as
+  in 2016). The 2018 Investor Day's "Medium-term pretax income $44-47B", ROTCE and overhead targets are later years' (the UNP rule).
+  BASE stays the latest quarter's revenue growth plus the buyback term, which turns positive as the share count falls (3,822.2M in 2012,
+  3,087.4M in 2020): -0.2%/yr over FY2008-FY2017, then +1.4%, +2.3% and +2.7%/yr.
+- **Dividends,** each from the first filing that states the declared rate: $0.80 from the last warrant-adjustment 8-K (2018-10-04 16:21 ET,
+  dated 2018-10-05: "This adjustment resulted from the declaration by the Board of Directors of JPMorgan Chase on September 18, 2018 of a
+  quarterly dividend of $0.80 per share"), $0.90 from the Q3 2019 supplement (2019-10-15) and $1.00 from the Q3 2021 supplement
+  (2021-10-13). The warrants expired in 2018; the CCAR 8-Ks of 2018-06-28, 2019-06-27 and 2021-06-28 state intentions, and those of 2020
+  an intention to maintain $0.90: no new rate (the 2013 rule).
+- **Signals and thresholds: unchanged** (rule T over 1997-2006). 2020's provision builds and 2021's releases are scored as published:
+  the credit cost change runs from +2,776bp (Q2 2020) to -4,217bp (Q1 2021), both beyond the thresholds' extremes.
+- **Durability: DURABLE, risk 2,** in each 10-K's own words (FY2017: "JPMorgan Chase’s businesses are materially affected by economic
+  and market conditions"; FY2019-FY2020: "Unfavorable market and economic conditions can have an adverse effect on JPMorgan Chase’s
+  wholesale businesses."); "cyclical" appears only as "countercyclical capital buffer". The business line is each 10-K's four segments
+  and Corporate.
+- **CRYPTO on the watch list from its live date** (new for JPM; `crypto_quote` on the vintage, the SO encoding). From the FY2017 10-K the
+  competition risk factor says "both financial institutions and their non-banking competitors face the risk that payments processing and
+  other services could be significantly disrupted by technologies, such as cryptocurrencies, that require no intermediation" (FY2017:
+  "payment processing ... could be disrupted"). CRYPTO is live from 2020-10-21 and its scope names banks and payments, so from that date
+  the current 10-K's words put it on the watch list, company-acknowledged, with no market read (the LOW, NKE, GOOG and SO rule; the
+  registry's dated evidence names no pricing of JPMorgan Chase). Before the live date the words stay in the "why" (the PEP obesity rule).
+  A theme is judged on the vintage in force, so the FY2019 10-K's words carry it from 2020-10-23 and the FY2020 10-K's from 2021-02-26
+  (63 dates). No 10-K names a crypto product of the Firm's own, so no factor pair is added (the SO encoding) and the theme signal stays
+  at 2/4: text only, by construction. The class stays DURABLE.
+- **Adds nothing:** the 7.01 decks beyond the outlooks above; the CCAR and DFAST results and capital plans; the officer, bylaw,
+  annual-meeting, debt, preferred stock, redemption and warrant 8-Ks (the warrants' last adjustments and expiry in October 2018).
+
+Controls and checks (before any outcome):
+- **Term check:** 37 dated wordings and figures of the new facts (FY17's $6.87 and its quote, each 10-K's new sentences and "leaves the
+  history" note, each restated revenue, the 10-Q's $11,462M, each dividend's declaration date, CECL and each reclassification note, the
+  CRYPTO text against its live date) were searched in all 731 models: none appears before its filing (or the live date), and each first
+  appears on the first weekly date on or after it.
+- **Controls:** 58 single-value alterations (each print's quarter EPS and revenue, each Q4 print's full-year revenue and EPS, both revenue
+  restatements, the Q3 2020 restatement, each vintage's last-year EPS and revenue and its CRYPTO words, each dividend), rebuilt over the
+  eight weekly dates before each and the first on or after it: none changes an earlier model; 55 change the first date on or after their
+  filing, and the three CRYPTO words of FY2017-FY2019 are inert there by design (before the live date the "why" carries them). Altering the
+  FY2019 words changes 2020-10-23 to 2021-02-19 and nothing before the live date.
+- **Leak scan:** 6 hits in 47,280 (model, later token) pairs, all the as-of year itself in the first January models; as a positive
+  control, 9 to 10 of each latest print's own tokens appear in its model.
+- **`retro_tool run` passes on all 209 dates.** Its year warning fires for FY18's tax rate of 0.2034 (52 dates, 2019-01-16 to 2020-01-10)
+  and Q3 2019's 3.2072 billion diluted shares (13 dates).
+- **Regression:** the 522 dates of 2008-2017 rebuild byte-identical. The firewall's JPM entry now plants CRYPTO words on the later vintage.
+- **Firewall** (after the build was committed, before any outcome): passes at the 25 cutoffs above (every print, vintage, restatement
+  and dividend date, CRYPTO's live date, 2018-01-02 and 2022-01-01), 0 files changed and no planted text, 522 to 731 dates each.
+
+Seen in the build (method behaviour, not tuned):
+- **RICH on 138 dates, FAIR on 33, CHEAP on 38; legacy tier AVOID 129, BUY 36, WATCHLIST 35, ACCUMULATE 9.** 2018: RICH 47, FAIR 5. 2019:
+  RICH 26, FAIR 20, CHEAP 6. 2020: CHEAP 32, RICH 13, FAIR 8. 2021: RICH on all 52. Robustness agrees on a single class on 116 dates.
+- **The 2008 trough leaves in two steps.** BEAR is FY07 to FY08, -80.1%/yr, on the 8 dates to 2018-02-23; from the FY2017 10-K FY2007
+  leaves the ten years, so BEAR is FY12 to FY13, -16.4%/yr (a BEAR price of $38-59), and from the FY2020 Q4 print FY19 to FY20, -17.2%.
+  XBULL stays FY08 to FY10, +112.1%/yr, to 2019-02-22; then FY09 to FY11 (+39.0%) and from the FY2019 10-K FY17 to FY19 (+24.9%).
+  BULL runs from the history's first year: from FY08's $0.88 it is +25.7%/yr (+26.2% in the Q4 2018 interval) from 2018-03-02 to
+  2019-02-22, then +16.3% (from FY09), +11.7% (FY10) and +7.9% (FY11), and BASE sets it where higher.
+- **The classes follow the price against those bands.** 2018 ($94-118, 13.7-17.5x FY17's $6.87, the 79th-93rd percentile) reads RICH; the
+  late-2018 fall and the Q4 2018 print's FY18 $9.00 make late 2018 and most of the first half of 2019 FAIR or CHEAP; COVID's fall makes
+  2020 CHEAP ($83.50 at the low, 7.8x FY19's $10.72; under the 9x EPP floor on 13 dates from 2020-03-20 to 2020-09-25); FY20's $8.88 makes
+  2021's $129-172 12.7-19.3x, the 85th-100th percentile, RICH throughout, with Ratio B infinite on 50 of its dates (the price above the
+  BULL price).
+- **The proxy composite** runs from 1.65 (the Q1 2020 print, 2020-04-15 on) to 2.90 (the Q1 2021 print, 2021-04-15 on).
+
+How far each call moves the classes (the 209 dates rebuilt with one encoding changed and classified offline; no outcome consulted):
+- FY2017 at GAAP, $6.31, instead of the company's $6.87: 13 classes (6 FAIR to RICH, 6 RICH to FAIR, 1 FAIR to CHEAP), 9 tiers;
+- the Q4-print intervals with ten years (the oldest year leaves with the Q4 print, the PFE reading): 8 of the 25 dates (6 CHEAP to FAIR, 2
+  FAIR to RICH), 8 tiers;
+- no `restates_revenue` (FY2017 and FY2019 as their 10-Ks print them until the next 10-K): 12 dates, no class, no tier;
+- the 2018 outlooks summed into a FY2018 revenue guide (net interest income at the $54.5 billion midpoint plus 2017's $52,231M of managed
+  noninterest revenue grown 7%, against 2017's $103,641M managed: +6.5%, from 2018-02-28 to the Q4 2018 print; derived for the test
+  only): 46 dates, no class, no tier;
+- the dividends from the intention 8-Ks (2018-06-29, 2019-06-28, 2021-06-29): no class, no tier;
+- no buyback term in BASE (a flat share history; no rule says so): 4 classes (3 FAIR to RICH, 1 CHEAP to FAIR), no tier;
+- FY2008 out of the history (no rule says so; to 2019-02-26, where it sets BULL and XBULL): 13 classes (7 FAIR to RICH, 6 CHEAP to
+  FAIR), 13 tiers;
+- every signal at its BEAR value: 54 classes (33 FAIR and 21 CHEAP to RICH), no tier; at its XBULL value: 37 classes (24 RICH to FAIR, 12
+  FAIR to CHEAP, 1 RICH to CHEAP), no tier;
+- CRYPTO only from the FY2020 10-K (not from the live date on the FY2019 10-K's words): 18 dates, no class, no tier (text only);
+- Q3 2020 as released (no 10-Q restatement): 10 dates, no class, no tier.
+
+Judgement calls that could carry hindsight:
+- the builder had read the 2008-2017 hindsight findings before deciding this batch (the disclosure above); every decision applies an
+  earlier rule, and each alternative's effect is listed above;
+- the signals, chosen in 2008 by a builder who knew the credit cycle: with COVID's provision swings beyond their 1997-2006 extremes they
+  move 54 classes at BEAR and 37 at XBULL, the largest call here;
+- FY2017 at the company's figure rather than GAAP (13 classes, 9 tiers);
+- everything listed for 2008-2017 that still reaches these dates: the signals and their 1997-2006 thresholds, the company's figures for
+  FY08-FY10 (to FY2010's exit from the ten years), reported rather than managed revenue, the eleven-year history between a Q4 print and
+  its 10-K (8 classes);
+- the component outlooks left unencoded, the medium-term targets read as later years', the warrant-adjustment 8-Ks as the first
+  statements of the 2018 rate, the CCAR announcements as intentions;
+- CRYPTO judged on the vintage in force from its live date, so the FY2019 10-K's words carry it for 17 weeks (text only), and DURABLE
+  rather than CYCLICAL;
+- the decks and the 10-K and 10-Q text read only by the searches and rows above.
 
 The hindsight results are in `staging/retrospective/JPM/FINDINGS.md`: hypotheses, never inputs.
 
