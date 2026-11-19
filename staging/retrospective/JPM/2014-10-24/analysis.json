@@ -1,0 +1,303 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "JPM",
+ "company": "JPMorgan Chase & Co.",
+ "as_of": "2014-10-24",
+ "price_date": "2014-10-24",
+ "price": 58.74,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); net revenue, credit cost, expense, nonperforming-asset and pre-tax margin signals with JPMorgan Chase's rule-T thresholds",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'JPMorgan Chase & Co. ... is a leading global financial services firm and one of the largest banking institutions in the United States' 'JPMorgan Chase’s businesses are materially affected by economic and market conditions' 'The financial services industry is highly competitive, and JPMorgan Chase’s inability to compete successfully may adversely affect its results of operations.' (FY2013 10-K); DURABLE, risk 2: the 10-K ties results to markets and the economy, a cycle and a competitive field, and does not call its own business cyclical (the word does not appear in it: the LOW and SHW reading); among its competitors it lists 'e-commerce and other Internet-based companies'; no theme in taxonomy_eras.json is live for a bank holding company on these dates (OFFSHORE is scoped to IT services, CLOUD to on-premise IT, ECOMMERCE to physical retail), so the watch list is empty and these words stay here (the PEP obesity rule)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "'JPMorgan Chase & Co. ... is a leading global financial services firm and one of the largest banking institutions in the United States' 'JPMorgan Chase’s businesses are materially affected by economic and market conditions' 'The financial services industry is highly competitive, and JPMorgan Chase’s inability to compete successfully may adversely affect its results of operations.' (FY2013 10-K); DURABLE, risk 2: the 10-K ties results to markets and the economy, a cycle and a competitive field, and does not call its own business cyclical (the word does not appear in it: the LOW and SHW reading); among its competitors it lists 'e-commerce and other Internet-based companies'; no theme in taxonomy_eras.json is live for a bank holding company on these dates (OFFSHORE is scoped to IT services, CLOUD to on-premise IT, ECOMMERCE to physical retail), so the watch list is empty and these words stay here (the PEP obesity rule). durable franchise (obsolescence risk 2/5); price rich; Ratio B 2.78x; +50% to EPP floor; model-vs-market gap +0.56; conservative 2yr -13%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": 2.78,
+  "ratio_b_fmt": "2.78x",
+  "epp": 39.15,
+  "epp_gap_pct": 50.0,
+  "epp_adj": -0.1,
+  "proxy_composite": 2.75,
+  "sca": 0.102,
+  "adj_composite": 2.752,
+  "market_composite": 2.19,
+  "adj_gap": 0.56,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": -12.9,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.17,
+    "pe": 7.9,
+    "price": 1.34,
+    "desc": "EPS -80.1%/yr (worst year FY04-FY13, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 4.5,
+    "pe": 11.7,
+    "price": 52.65,
+    "desc": "EPS +1.7%/yr (Q3 revenue YoY + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 5.55,
+    "pe": 14.3,
+    "price": 79.36,
+    "desc": "EPS +13.0%/yr (FY04-FY13 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 19.57,
+    "pe": 27.1,
+    "price": 530.35,
+    "desc": "EPS +112.1%/yr (best 2-yr run FY04-FY13, at least BULL); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 2.78,
+   "epp_gap_pct": 50.0,
+   "adj_gap": 0.56,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -12.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.62,
+   "epp_gap_pct": 50.0,
+   "adj_gap": 1.07,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": -12.9,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 9.29,
+   "epp_gap_pct": 50.0,
+   "adj_gap": 0.15,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -12.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 2.49,
+   "epp_gap_pct": 50.0,
+   "adj_gap": 0.59,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -12.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 3.15,
+   "epp_gap_pct": 50.0,
+   "adj_gap": 0.53,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -12.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 2.78,
+   "epp_gap_pct": 50.0,
+   "adj_gap": 0.86,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -12.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 2.78,
+   "epp_gap_pct": 12.5,
+   "adj_gap": 0.66,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -12.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 2.78,
+   "epp_gap_pct": 50.0,
+   "adj_gap": 0.65,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -12.9,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "FAIR",
+  "RICH"
+ ],
+ "summary": "JPM (retrospective, 2014-10-24) ✕ AVOID — Ratio B 2.78x (97.7% downside to Bear $1.34 / +35.1% upside to Bull $79.36) | Adj composite 2.75 vs market 2.19: gap +0.56 [UNDERVALUED] | +50% above the EPP floor $39.15 (9x FY14E $4.35) | Conservative 2-yr case: -12.9% total (-6.5%/yr) | At 13.5x FY14E the 15% hurdle price $77.68 sits between the BASE and BULL cases; revenue +4.9% YoY in Q3 2014, forward revenues +4.9% (Q3 2014 revenue growth (no Q4 2014 guide)); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "JPM50",
+   "published": "2014-02-20",
+   "filed": "accepted 2014-02-19 20:02 ET (after the 16:00 ET close, so dated the next trading day)",
+   "title": "JPMorgan Chase & Co. FY2013 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961714000289/corp10k2013.htm",
+   "supports": "five-year summary 2009-2013: the FY13 history vintage; Item 1 and 1A wording"
+  },
+  {
+   "id": "JPM23",
+   "published": "2009-05-29",
+   "filed": "accepted 2009-05-29 09:26 ET (before the open)",
+   "title": "JPMorgan Chase 8-K revising the EPS of the FY2008 10-K's selected financial data (participating securities)",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000095012309009707/x77500e8vk.htm",
+   "supports": "diluted EPS from continuing operations 2004-2008 as revised: FY2004 in the history from this date"
+  },
+  {
+   "id": "JPM7",
+   "published": "2007-01-17",
+   "filed": "accepted 2007-01-17 07:59 ET (before the open)",
+   "title": "JPMorgan Chase Q4 2006 earnings release and financial supplement (8-K, exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000095012307000454/y28968exv99w2.htm",
+   "supports": "Q4 2006 print; FY2005 and FY2006 diluted EPS from continuing operations excluding merger costs"
+  },
+  {
+   "id": "JPM12",
+   "published": "2008-01-16",
+   "filed": "accepted 2008-01-16 07:18 ET (before the open)",
+   "title": "JPMorgan Chase Q4 2007 earnings release and financial supplement (8-K, exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000095012308000442/y46643exv99w2.htm",
+   "supports": "Q4 2007 print; FY2007 actuals; FY2006 and FY2007 diluted EPS from continuing operations excluding merger costs"
+  },
+  {
+   "id": "JPM19",
+   "published": "2009-01-15",
+   "filed": "accepted 2009-01-15 06:56 ET (before the open)",
+   "title": "JPMorgan Chase Q4 2008 earnings release and financial supplement (8-K, exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000095012309000686/y74000exv99w2.htm",
+   "supports": "Q4 2008 print; FY2008 actuals; FY2007 and FY2008 diluted EPS before extraordinary gain excluding merger costs"
+  },
+  {
+   "id": "JPM26",
+   "published": "2010-01-15",
+   "filed": "accepted 2010-01-15 07:07 ET (before the open)",
+   "title": "JPMorgan Chase Q4 2009 earnings release and financial supplement (8-K, exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000095012310002767/y81536exv99w2.htm",
+   "supports": "Q4 2009 print; FY2009 actuals; FY2008 and FY2009 diluted EPS before extraordinary gain excluding merger costs, on the basis revised for participating securities"
+  },
+  {
+   "id": "JPM31",
+   "published": "2011-01-14",
+   "filed": "accepted 2011-01-14 07:09 ET (before the open)",
+   "title": "JPMorgan Chase Q4 2010 earnings release and financial supplement (8-K, exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000095012311002828/y88989exv99w2.htm",
+   "supports": "Q4 2010 print; FY2010 actuals"
+  },
+  {
+   "id": "JPM21",
+   "published": "2009-03-03",
+   "filed": "accepted 2009-03-02 16:12 ET (after the 16:00 ET close, so dated the next trading day)",
+   "title": "JPMorgan Chase & Co. FY2008 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000095012309003840/y74757e10vk.htm",
+   "supports": "five-year summary 2004-2008: the FY08 history vintage; Item 1 and 1A wording"
+  },
+  {
+   "id": "JPM27",
+   "published": "2010-02-24",
+   "filed": "accepted 2010-02-24 06:19 ET (before the open)",
+   "title": "JPMorgan Chase & Co. FY2009 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000095012310016029/e82150e10vk.htm",
+   "supports": "five-year summary 2005-2009: the FY09 history vintage; Item 1 and 1A wording"
+  },
+  {
+   "id": "JPM32",
+   "published": "2011-03-01",
+   "filed": "accepted 2011-02-28 16:27 ET (after the 16:00 ET close, so dated the next trading day)",
+   "title": "JPMorgan Chase & Co. FY2010 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000095012311019773/y86143e10vk.htm",
+   "supports": "five-year summary 2006-2010: the FY10 history vintage; Item 1 and 1A wording"
+  },
+  {
+   "id": "JPM38",
+   "published": "2012-02-29",
+   "filed": "accepted 2012-02-29 10:29 ET (during market hours)",
+   "title": "JPMorgan Chase & Co. FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961712000163/corp10k2011.htm",
+   "supports": "five-year summary 2007-2011: the FY11 history vintage; Item 1 and 1A wording"
+  },
+  {
+   "id": "JPM45",
+   "published": "2013-03-01",
+   "filed": "accepted 2013-02-28 16:06 ET (after the 16:00 ET close, so dated the next trading day)",
+   "title": "JPMorgan Chase & Co. FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961713000221/corp10k2012.htm",
+   "supports": "five-year summary 2008-2012: the FY12 history vintage; Item 1 and 1A wording"
+  },
+  {
+   "id": "JPM49",
+   "published": "2014-01-14",
+   "filed": "accepted 2014-01-14 07:04 ET (before the open)",
+   "title": "JPMorgan Chase Q4 2013 earnings release and financial supplement (8-K, exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961714000025/a4q13erfexhibit992suppleme.htm",
+   "supports": "Q4 2013 print; FY2013 actuals"
+  },
+  {
+   "id": "JPM51",
+   "published": "2014-04-11",
+   "filed": "accepted 2014-04-11 07:03 ET (before the open)",
+   "title": "JPMorgan Chase Q1 2014 earnings release and financial supplement (8-K, exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961714000328/a1q14erfexhibit992suppleme.htm",
+   "supports": "Q1 2014 print"
+  },
+  {
+   "id": "JPM53",
+   "published": "2014-07-15",
+   "filed": "accepted 2014-07-15 07:02 ET (before the open)",
+   "title": "JPMorgan Chase Q2 2014 earnings release and financial supplement (8-K, exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961714000392/a2q14erfexhibit992suppleme.htm",
+   "supports": "Q2 2014 print"
+  },
+  {
+   "id": "JPM54",
+   "published": "2014-10-14",
+   "filed": "accepted 2014-10-14 06:41 ET (before the open)",
+   "title": "JPMorgan Chase Q3 2014 earnings release and financial supplement (8-K, exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961714000445/a3q14erfexhibit992suppleme.htm",
+   "supports": "Q3 2014 print"
+  },
+  {
+   "id": "JPM52",
+   "published": "2014-07-02",
+   "filed": "accepted 2014-07-01 16:14 ET (after the 16:00 ET close, so dated the next trading day)",
+   "title": "JPMorgan Chase & Co. 8-K of 2014-07-01 (Item 8.01: adjustment to the exercise price of the warrants to purchase common stock)",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961714000384/pressrelease991-warrantexe.htm",
+   "supports": "the quarterly dividend of $0.40 declared 2014-05-20"
+  },
+  {
+   "id": "Y0",
+   "published": "2014-10-24",
+   "title": "Yahoo Finance daily prices, JPM and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/JPM/history",
+   "supports": "close $58.74 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution from 2004-10-25"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-19"
+}

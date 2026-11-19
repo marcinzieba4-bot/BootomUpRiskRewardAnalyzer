@@ -1,0 +1,149 @@
+
+════════════════════════════════════════════════════════════════════════
+  JPM  ·  JPMorgan Chase & Co.  ·  $57.53  ·  RETROSPECTIVE as of 2014-06-27
+  Signal: ✕ AVOID   Ratio B: 2.28x   Adj gap: -0.22  [MODESTLY OVERVALUED]
+  Point-in-time: 16 sources, latest published 2014-06-27; latest print Q1 2014 (Apr 11)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2014E revenue, USD bn  →  FY2016E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2014E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Noninterest revenue           $ 48.76  $48.76  $58.45    +0.00    +9.69
+    +2.2% revenue in FY13
+  Net interest income           $ 39.64  $39.64  $47.51    +0.00    +7.87
+    -3.5% revenue in FY13
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $ 88.40  $88.40  $105.96    +0.00   +17.56
+  FY2014E = FY13 $96.606B × (1 − 8.5%: the Q1 2014 revenue growth (no Q2 2014 guide), YoY, applied to the year (no FY14 revenue guide)); split pro rata to FY13 total net revenue by component, reported basis (FY13 growth)
+  Q1 2014 (Apr 11): total net revenue $22.993B -8.5% YoY (-0.7% QoQ); nonperforming assets -19.3% (loans +0.3%); noninterest expense -5.1%;
+  provision 3.70% of revenue (+124.1bp); pre-tax margin 32.65% (-350.3bp); EPS $1.28 vs $1.59
+  Revenue: total net revenue $22,993M vs $25,122M a year earlier, $23,156M the quarter before (reported basis); provision for credit losses $850M vs $617M; nonperforming assets $9,473M vs $11,739M a year earlier; loans $730,971M vs $728,886M; GAAP diluted EPS $1.28 vs $1.59 (the supplement prints no figure excluding merger costs); diluted shares 3,823.6M; Tier 1 capital ratio 12.1%; cash dividends declared $0.38 a share in the quarter
+  Q2 2014: no revenue, EPS or margin guide in numbers in any filing; the latest quarter's revenue growth stands in (the UNP rule); the releases, 10-Qs and investor slides give credit-loss and segment outlooks only, which method r2 has no input for
+
+  FY2014E EPS check:  $88.400B × 26.8% pre-tax × (1−30.8%) ÷ 3.824B  =  $4.29  (FY2014E: no EPS guide in numbers, FY13's $4.35 stands)
+  FY2016E BEAR check: $88.400B × 26.8% ÷ 4.071B  =  $4.02  (scenario $0.17)
+  FY2016E BULL check: $105.960B × 27.2% ÷ 4.071B  =  $4.90  (scenario $5.55)
+  Every 1pp of pre-tax margin ≈ $0.160 EPS ≈ $1.87/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Net revenue growth                    -33.0%   ≥-12.0%    ≥10.0%    ≥29.0%     -8.5%  ◦ BASE  ██░░
+  Credit cost (provision/revenue)     +1340.0bp  ≤670.0bp    ≤0.0bp  ≤-1020.0bp  +124.1bp  ◦ BASE  ██░░
+  Expense growth less revenue          +65.0pp   ≤29.0pp   ≤-7.0pp  ≤-17.0pp    +3.4pp  ◦ BASE  ██░░
+  Nonperforming assets less loans     +231.0pp  ≤109.0pp  ≤-12.0pp  ≤-85.0pp   -19.6pp  ▲ BULL  ███░
+  Pre-tax margin change               -3910.0bp  ≥-1760.0bp  ≥400.0bp  ≥2200.0bp  -350.3bp  ◦ BASE  ██░░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.15 / 4.00
+  Market composite:   2.23 / 4.00  (back-solved from $57.53 + 15% hurdle)
+  SCA adjustment:    -0.04  ·  EPP-distance adj -0.10  →  Adj composite 2.01  →  Gap -0.22  [MODESTLY OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY13 total net revenue -0.4%, provision 0.2% of revenue; Q1 provision 3.7% of revenue (+124bp YoY)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 13.2x FY14E vs a 11.7x 10-yr median (65th percentile of its own range)  (-0.25 × 25%  =  -0.062)
+    -  Growth vs own history: Q1 2014 revenue growth (no Q2 2014 guide) -8.5% vs a 2.3% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  Tier 1 capital ratio 12.1%, nonperforming assets $9.473B (-19.3% YoY) at the end of Q1 2014, dividend $1.52 a year  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Net revenue growth                     -8.5%    -33.0%  -24.5%  Markets and fee revenue fall with the…
+  Credit cost (provision/revenue)     +124.1bp  +1340.0bp  +1215.9bp  Loan losses and reserve builds take m…
+  Expense growth less revenue           +3.4pp   +65.0pp  +61.6pp  Noninterest expense does not fall wit…
+  Nonperforming assets less loans      -19.6pp  +231.0pp  +250.6pp  Problem assets grow faster than the l…
+  Pre-tax margin change               -350.3bp  -3910.0bp  -3559.7bp  Credit costs and expenses outrun revenue
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$20.12  (model)  /  $1.34 (defined)
+  Bear probability (proxy model):  15.5%
+
+  KEY TRIGGER: revenue went from -2.1% (Q4 2013) to -8.5% YoY (Q1 2014), -0.7% on the quarter before;
+  the bear case needs credit costs (+124.1bp of revenue now) rising further
+  and nonperforming assets (-19.6pp against loans) outgrowing the loan book. A credit downturn shows up in nonperforming assets and the provision first;
+  the bear needs it in net revenue as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $4.35  (FY2014E: no EPS guide in numbers, FY13's $4.35 stands)
+  Min viable P/E at panic:          9x  [median of calendar-year P/E lows: 2004 24.7x, 2005 13.6x, 2006 9.8x, 2007 9.2x, 2008 25.8x, 2009 6.9x, 2010 9.0x, 2011 6.3x, 2012 6.0x, 2013 10.2x, 2014 12.3x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $39.15/share
+  Current $57.53 vs Updated EPP $39.15:  +47%  ⚠ far above floor — large drawdown room
+  Bear $1.34 vs Updated EPP $39.15:  -97%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Net revenue growth                           -12.0       -3.5   BASE floor (vs -8 now)
+  Credit cost (provision/revenue)              670.0     +545.9   BASE floor (vs +124 now)
+  Expense growth less revenue                   29.0      +25.6   BASE floor (vs +3 now)
+  Nonperforming assets less loans              109.0     +128.6   BASE floor (vs -20 now)
+  Pre-tax margin change                      -1760.0    -1409.7   BASE floor (vs -350 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $4.35 × (1+0.0%)² = $4.35
+  At 11x P/E (conservative):  $47.85/share
+  + Cumul. dividends (2yr):  +$3.13/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $47.85  (▼9.68 from $57.53)
+  Conservative total return:  -11% over 2yr  = -6%/yr
+
+  0.0% EPS growth is what is left once the premium multiple (13.2x)
+  mean-reverts to 11x. Breakeven at 11x needs FY2016E EPS of $4.95,
+  i.e. 6.6%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $50.06  –  $61.48  (at 65th pct of range)
+  Annual dividend:      $1.52/share  (yield 2.6%)
+  Realized vol:         18% annualized (1-yr daily log returns)
+  Beta vs broad market: 1.20
+  1-sigma range (1yr):  $47.17  –  $67.89  ($57.53 ± 18%)
+  2-sigma range (1yr):  $36.82  –  $78.24
+  ────────────────────────────────────────────────────────────
+  Bear $1.34 requires:  ~5.4σ price move  (unusual — requires fundamental break)
+  A bank whose earnings follow credit and markets: the stock is +14% off its September
+  low (52 weeks) while revenue went from -2.1% (Q4 2013) to -8.5% YoY (Q1 2014), -0.7% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        0.17    7.9x  $   1.34    15.5%     14.2%    +1.3pp  EPS -80.1%/yr (worst year FY04-FY13, capped at 0%); P/E to its 10th pct
+  BASE        3.39   11.7x  $  39.66    54.1%     49.5%    +4.6pp  EPS -11.7%/yr (Q1 revenue YoY + margin + buyback); P/E at its 10-yr median
+  BULL        5.55   14.8x  $  82.14    25.6%     30.5%    -5.0pp  EPS +13.0%/yr (FY04-FY13 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL      19.57   27.7x  $ 542.09     4.8%      5.8%    -0.9pp  EPS +112.1%/yr (best 2-yr run FY04-FY13, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $68.83  /  Market EV: $76.17  /  Current: $57.53
+  Conservative EV (2yr, ④): $47.85 + $3.13 divs = $50.98 total value
+  Downside (→ Bear $1.34): 97.7%   Upside (→ Bull $82.14): 42.8%   Ratio B 2.28x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $57.53 the market needs $76.08 in two years —
+  between the BASE and BULL cases. That is a market composite of 2.23 against a model
+  read of 2.01: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       2.28x     +47%    -0.22  MODESTLY OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     0.58x     +47%    +0.28  MODESTLY UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     7.61x     +47%    -0.60  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          2.07x     +47%    -0.20  FAIRLY VALUED / AVOID
+  Scenario EPS -1.5pp/yr                          2.54x     +47%    -0.24  MODESTLY OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             2.28x     +47%    +0.08  FAIRLY VALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 2.28x     +10%    -0.12  FAIRLY VALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    2.28x     +47%    -0.15  FAIRLY VALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 2014 print (the quarter ends in June) — revenue against the Q1 2014 revenue growth (no Q2 2014 guide): -8.5% YoY
+  (2) Credit costs — the provision took 3.7% of revenue in Q1 2014 (+124.1bp YoY): what must turn before earnings can
+  (3) A Q2 2014 revenue guide — none: JPMorgan Chase gives no firm-wide revenue, EPS or margin outlook in any filing; net charge-offs and reserve builds by business are in each supplement
+  (4) Nonperforming assets — -19.3% against loans +0.3% in Q1 2014 (-19.6pp): problem loans outgrowing the book would show here first
+  (5) Capital at 13x — dividend $0.38 a quarter: 'On May 21, 2013, the Board of Directors of JPMorgan Chase increased the Firm's quarterly stock dividend from $0.30 to $0.38 per share.' (Q2 2013 supplement, the first filing to state the declared rate; the 8-K of 2013-03-15 states an intention); Tier 1 capital ratio 12.1% at the end of Q1 2014
+  ✕ AVOID  |  EPP floor $39.15  |  ADD below ~$33.71  |  TRIM above $82.14
+════════════════════════════════════════════════════════════════════════
+

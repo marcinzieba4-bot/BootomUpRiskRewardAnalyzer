@@ -105,7 +105,8 @@ every fact sheet with those lists gets, too); JPM: a print whose net revenue, cr
 pre-tax margin, quarter EPS, Tier 1 ratio, notes and raw figures are absurd, with absurd full-year actuals for the year after the
 latest vintage before CUTOFF, a later Q4 print excluding its own year, a later 10-Q restatement of the last print before CUTOFF and a
 later vintage of the other kind excluding a year with planted texts, figures and window start (the guide, dividend, listing and company
-name every fact sheet with those lists gets, too); GOOG: a print whose revenues, margins, opex and receivables gaps, quarter EPS, cash,
+name every fact sheet with those lists gets, too), and from JPM 2014-2017 planted actuals that restate every year's EPS and revenue
+('restates', 'restates_revenue'); GOOG: a print whose revenues, margins, opex and receivables gaps, quarter EPS, cash,
 notes and raw figures are absurd, with absurd full-year actuals for the year after the latest vintage before CUTOFF, a later Q4 print
 whose full-year actuals exclude its own year, a later 10-Q restatement of the last print before CUTOFF with absurd figures, and a later
 vintage excluding a year with planted texts, figures, outlook words, exchange and window start, every per-share figure on a planted
@@ -721,6 +722,9 @@ try:
         # and the planted print's full-year actuals restate every year of the history before CUTOFF (the 'restates' field)
         fa["restates"] = {y: 0.01 for y in v0["eps_normalized"]}
         fa["restates_note"] = "PLANTED"
+        # (JPM 2014-2017) and every year's total net revenue (the 'restates_revenue' field)
+        fa["restates_revenue"] = {y: 0.01 for y in v0["revenue_usd_b"]}
+        fa["restates_revenue_note"] = "PLANTED"
         v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}
         v.update(normalization="PLANTED", business_line="PLANTED", prev_fy_op_margin=-99.0, prev_fy_op_margin_note="PLANTED",
                  prev_fy_pretax_margin=-99.0, prev_fy_pretax_margin_note="PLANTED", prev_fy_credit_cost=99.0,

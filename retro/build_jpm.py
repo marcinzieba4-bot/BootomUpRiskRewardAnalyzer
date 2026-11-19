@@ -25,7 +25,8 @@ model was built or scored):
     10-Q's date, and a quarter a later release prints as restated (Q1 2012, the synthetic credit portfolio) takes that release's from
     its date ('restated', a list in publication order: a quarter from the latest filing that reports it);
   - a Q4 supplement that republishes the previous year's company figure on a revised basis restates it in the history from its own
-    date ('restates' on the full-year actuals: FY2008 at $0.88 from the Q4 2009 supplement);
+    date ('restates' on the full-year actuals: FY2008 at $0.88 from the Q4 2009 supplement), and the same for its total net revenue
+    ('restates_revenue', JPM 2014-2017: FY2014 at $95,112M from the Q4 2015 supplement, the affordable housing accounting);
   - dividend: the latest declared quarterly rate, each from the first filing that states it ('dividends').
 The kind is DURABLE: the 10-Ks tie results to markets and the economy but do not call the business cyclical (the LOW and SHW
 reading). No disruption theme in taxonomy_eras.json is live for a bank holding company in 2008-2009, so the builder refuses events
@@ -41,6 +42,7 @@ Usage
   python3 retro/build_jpm.py --weekly 2008-01-01 2008-12-31
   python3 retro/build_jpm.py --weekly 2009-01-05 2009-12-31
   python3 retro/build_jpm.py --weekly 2010-01-04 2013-12-31
+  python3 retro/build_jpm.py --weekly 2014-01-06 2017-12-31
   python3 retro/build_jpm.py 2008-04-17
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/JPM/<AS_OF>
 """
@@ -193,6 +195,10 @@ def build(as_of, facts, raw, spx, engine, out):
             if a.get("restates"):                     # an earlier year's company figure the same supplement republishes on a revised basis
                 h.update(eps_normalized={**h["eps_normalized"], **a["restates"]},
                          normalization=f'{h["normalization"]}; {a["restates_note"]}')
+            if a.get("restates_revenue"):             # (JPM 2014-2017) an earlier year's total net revenue the same supplement
+                                                      # republishes on a revised basis: FY2014 from the Q4 2015 supplement
+                h.update(revenue_usd_b={**h["revenue_usd_b"], **a["restates_revenue"]},
+                         extended=f'{h["extended"]}; {a["restates_revenue_note"]}')
     latest = prints[-1]
     # the previous quarter is the print published just before the latest one (in or out of the history's scope)
     i = public.index(latest)
