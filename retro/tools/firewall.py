@@ -712,11 +712,15 @@ try:
         q4["fy_actual"] = {**fa, "fy": 2098, "fy_label": "FY98", "eps_normalized": None, "excluded_note": "PLANTED"}
         f["prints"].append(q4)
         p0 = max((p for p in f["prints"] if p["published"] < cutoff), key=lambda p: p["published"])
-        if p0.get("restated", {}).get("published", cutoff) >= cutoff:
-            p0["restated"] = {"published": later, "source": p0["source"], "raw": dict(PLANT["raw"]),
-                              **{k: PLANT[k] for k in ("sales_pct", "seq_pct", "credit_cost", "credit_cost_bp", "pretax_margin",
-                                                       "pretax_margin_bp", "expense_pct", "expense_gap_pp", "npa_b", "npa_pct",
-                                                       "loans_pct", "npa_gap_pp", "credit_note")}, "rows": {}}
+        # ('restated' is a list in publication order from JPM 2010-2013; the planted one follows any real one)
+        p0["restated"] = list(p0.get("restated", [])) + [
+            {"published": later, "source": p0["source"], "raw": dict(PLANT["raw"]),
+             **{k: PLANT[k] for k in ("sales_pct", "seq_pct", "credit_cost", "credit_cost_bp", "pretax_margin", "pretax_margin_bp",
+                                      "expense_pct", "expense_gap_pp", "npa_b", "npa_pct", "loans_pct", "npa_gap_pp", "credit_note",
+                                      "sales_b", "eps_q", "sales_note", "eps_note", "note")}, "rows": {}}]
+        # and the planted print's full-year actuals restate every year of the history before CUTOFF (the 'restates' field)
+        fa["restates"] = {y: 0.01 for y in v0["eps_normalized"]}
+        fa["restates_note"] = "PLANTED"
         v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}
         v.update(normalization="PLANTED", business_line="PLANTED", prev_fy_op_margin=-99.0, prev_fy_op_margin_note="PLANTED",
                  prev_fy_pretax_margin=-99.0, prev_fy_pretax_margin_note="PLANTED", prev_fy_credit_cost=99.0,

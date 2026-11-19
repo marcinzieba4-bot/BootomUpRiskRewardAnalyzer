@@ -21,8 +21,11 @@ model was built or scored):
   - forward revenue growth: no filing of the period guides revenue in numbers (the releases and slides give credit-loss and
     segment outlooks only), so the latest quarter's revenue growth stands in (the UNP rule);
   - guided margin step: none (no margin guide); the margin signal uses the latest quarter's pre-tax margin change;
-  - a quarter's figure its own 10-Q restates (nonperforming assets, Q2 and Q3 2008) takes the 10-Q's figures from the 10-Q's date
-    ('restated': a quarter from the latest filing that reports it);
+  - a quarter's figure its own 10-Q restates (nonperforming assets, Q2 and Q3 2008 and Q1 2012) takes the 10-Q's figures from the
+    10-Q's date, and a quarter a later release prints as restated (Q1 2012, the synthetic credit portfolio) takes that release's from
+    its date ('restated', a list in publication order: a quarter from the latest filing that reports it);
+  - a Q4 supplement that republishes the previous year's company figure on a revised basis restates it in the history from its own
+    date ('restates' on the full-year actuals: FY2008 at $0.88 from the Q4 2009 supplement);
   - dividend: the latest declared quarterly rate, each from the first filing that states it ('dividends').
 The kind is DURABLE: the 10-Ks tie results to markets and the economy but do not call the business cyclical (the LOW and SHW
 reading). No disruption theme in taxonomy_eras.json is live for a bank holding company in 2008-2009, so the builder refuses events
@@ -37,6 +40,7 @@ Output goes to staging/retrospective/JPM until the series is added to the archiv
 Usage
   python3 retro/build_jpm.py --weekly 2008-01-01 2008-12-31
   python3 retro/build_jpm.py --weekly 2009-01-05 2009-12-31
+  python3 retro/build_jpm.py --weekly 2010-01-04 2013-12-31
   python3 retro/build_jpm.py 2008-04-17
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/JPM/<AS_OF>
 """
@@ -122,18 +126,19 @@ def derived(r):
 def check_print(p, as_of):
     """Re-derive a print's (and its restatement's, once public) margins, growth and gaps from its raw figures; they must match the
     fact sheet."""
-    for x in [p] + ([p["restated"]] if p.get("restated") and p["restated"]["published"] <= as_of else []):
+    for x in [p] + [r for r in p.get("restated", []) if r["published"] <= as_of]:
         for k, v in derived(x["raw"]).items():
             assert x[k] == v, (p["quarter"], k, x[k], v)
 
 
 def as_restated(p, as_of):
-    """A print with its 10-Q restatement applied once the 10-Q is public (the 10-Q is the latest filing reporting the quarter)."""
-    rs = p.get("restated")
-    if not rs or rs["published"] > as_of:
-        return p
-    q = {**p, **{k: v for k, v in rs.items() if k not in ("published", "source", "rows")}}
-    q["extra_sources"] = list(p.get("extra_sources", [])) + [rs["source"]]
+    """A print with its restatements applied, in order, once each is public (a quarter from the latest filing that reports it): a 10-Q
+    that reports a figure differently from the release, or a later release that prints the quarter as restated."""
+    q = p
+    for rs in p.get("restated", []):
+        if rs["published"] <= as_of:
+            q = {**q, **{k: v for k, v in rs.items() if k not in ("published", "source", "rows")}}
+            q["extra_sources"] = list(q.get("extra_sources", [])) + [rs["source"]]
     return q
 
 
@@ -185,6 +190,9 @@ def build(as_of, facts, raw, spx, engine, out):
                      prev_fy_credit_cost=a["credit_cost"], prev_fy_sales_growth=a["sales_growth"],
                      tax_rate=a["tax_rate"], tax_note=f'{a["tax_note"]} ({p["source"]})',
                      extended=f'{h["extended"]}, FY{y[2:]} from {p["source"]} ({p["published"]})')
+            if a.get("restates"):                     # an earlier year's company figure the same supplement republishes on a revised basis
+                h.update(eps_normalized={**h["eps_normalized"], **a["restates"]},
+                         normalization=f'{h["normalization"]}; {a["restates_note"]}')
     latest = prints[-1]
     # the previous quarter is the print published just before the latest one (in or out of the history's scope)
     i = public.index(latest)
