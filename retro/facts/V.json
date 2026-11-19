@@ -1,0 +1,1023 @@
+{
+ "_doc": "Point-in-time fact sheet for V retrospectives (retro/build_v.py), generated from Visa Inc.'s own filings: every raw figure is the row string it appears in (kept in 'rows'), checked against its filing, and every growth rate, margin, gap and rule-T value is computed from those figures. Every value is tied to a source and becomes visible only on or after that source's 'published' date (EDGAR's acceptance time; after the 16:00 ET close, the next trading day). Dollar figures in millions as the filings print them ('_m'; the Visa U.S.A. statements in thousands are stored divided by 1,000); per-share figures as published, the class A common stock's.",
+ "ticker": "V",
+ "sources": {
+  "V1": {
+   "published": "2007-09-13",
+   "filed": "accepted 2007-09-12 21:15 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. Form S-4/A, Amendment No. 5 (proxy statement-prospectus for the reorganization)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312507200042/ds4a.htm",
+   "supports": "Visa U.S.A. selected financial data for fiscal 2002-2006 (operating revenues, volume and support agreements, operating expenses, litigation provision, operating income) and its balance sheets at September 30, 2006 and 2005"
+  },
+  "V3": {
+   "published": "2008-03-20",
+   "filed": "accepted 2008-03-19 17:14 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. final prospectus (424B4) for the initial public offering",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312508060989/d424b4.htm",
+   "supports": "Visa U.S.A. selected financial data for fiscal 2003-2007 and its audited statements for fiscal 2005-2007 (volume and support incentives, revenues, the September 30, 2007 and 2006 balance sheets)"
+  },
+  "V4": {
+   "published": "2008-08-13",
+   "filed": "accepted 2008-08-13 13:56 ET (during market hours)",
+   "title": "Visa Inc. 10-Q for the quarter ended June 30, 2008",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312508176170/d10q.htm",
+   "supports": "accounts receivable at June 30, 2008 (the year-ago balance for the Q3 FY09 print)"
+  },
+  "V5": {
+   "published": "2008-06-12",
+   "filed": "accepted 2008-06-11 21:34 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 8-K of 2008-06-11: quarterly dividend declared (ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312508132256/dex991.htm",
+   "supports": "the first declared quarterly dividend, $0.105 a class A share"
+  },
+  "V6": {
+   "published": "2008-10-30",
+   "filed": "accepted 2008-10-29 16:46 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q4 and full-year 2008 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312508219089/dex991.htm",
+   "supports": "fiscal 2008 GAAP and adjusted net income and diluted class A EPS, the reconciliation of the adjustments, the effective tax rate, and 'no comparable earnings per share measure for 2007'"
+  },
+  "V7": {
+   "published": "2008-11-21",
+   "filed": "accepted 2008-11-20 21:38 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-K for the fiscal year ended September 30, 2008",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312508240384/d10k.htm",
+   "supports": "fiscal 2008 statements of operations (Visa U.S.A. for 2006-2007), selected data for 2004-2008, the balance sheet, cash flows, diluted class A EPS and shares, Item 1, 1A and 5 wording"
+  },
+  "V8": {
+   "published": "2009-07-30",
+   "filed": "accepted 2009-07-29 16:29 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q3 2009 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312509158179/dex991.htm",
+   "supports": "Q3 FY09 revenues, incentives, expenses, operating income, diluted class A EPS and shares against Q3 FY08; the five-quarter revenue table; receivables; the financial outlook through 2010"
+  },
+  "V9": {
+   "published": "2009-10-21",
+   "filed": "accepted 2009-10-21 08:22 ET (before the open)",
+   "title": "Visa Inc. 8-K of 2009-10-21: quarterly dividend declared, rate up 19% (ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312509210766/dex991.htm",
+   "supports": "the declared quarterly dividend, $0.125 a class A share"
+  },
+  "V10": {
+   "published": "2009-10-28",
+   "filed": "accepted 2009-10-27 16:13 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q4 and full-year 2009 results (8-K ex.99.1, with the ex.99.2 presentation)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312509214847/dex991.htm",
+   "supports": "Q4 FY09 and fiscal 2009 revenues, incentives, expenses, operating and pre-tax income, taxes, diluted class A EPS and shares against Q4 FY08 and fiscal 2008; receivables, cash and debt; the FY2010 outlook; the presentation's gross revenues"
+  },
+  "V11": {
+   "published": "2009-11-23",
+   "filed": "accepted 2009-11-20 16:07 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-K for the fiscal year ended September 30, 2009",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312509239249/d10k.htm",
+   "supports": "fiscal 2009 statements of operations and cash flows, selected data, diluted class A EPS and shares, Item 1, 1A and 5 wording"
+  }
+ },
+ "history_vintages": [
+  {
+   "published": "2008-11-21",
+   "sources": [
+    "V7",
+    "V6"
+   ],
+   "fy_label": "FY08",
+   "kind": "DURABLE",
+   "why": "'Visa operates the world’s largest retail electronic payments network and manages the world’s most recognized global financial services brand.' 'The global payments industry depends heavily upon the overall level of consumer, business and government spending.' 'Within the general purpose payment card industry, we face substantial and intense competition worldwide.'; no 10-K calls the business cyclical (the economy and spending are a 'why', not the company's own label: the LOW, SHW and JPM reading), so the kind is DURABLE; no disruption theme in taxonomy_eras.json is live for a payments network on these dates, so the watch list is empty",
+   "eps_normalized": {},
+   "eps_sources": {},
+   "eps_excluded": {},
+   "eps_first_excluded": {
+    "2008": "a distorted year with no figure excluding only one-offs: GAAP $0.96 a diluted class A share (FY2008 10-K) carries the $1,457M covered-litigation reserve (the Q4 FY08 release's reconciliation; $1,470M litigation provision), about $874M after the year's 40% GAAP tax rate against $804M of net income, so reported EPS is under half the EPS without it (the AAPL FY2002 test); the company's adjusted $2.25 also removes asset step-up amortization ('Non-cash amortization and depreciation of the incremental basis in technology and building assets acquired in the reorganization.', $68M a year), which recurs, applies 'a normalized tax rate of 41%' and counts the IPO shares as issued at October 1, 2007, so it does not exclude only one-offs (the NKE FY2007, AVGO and PFE rule); FY2008 is Visa Inc.'s first year with EPS ('There is no comparable earnings per share measure for 2007 as we were a non-stock company.'), so the history and the P/E window start after it (the ACN FY02 and JPM FY2002 rule): FY2009, from 2008-10-01"
+   },
+   "revenue_usd_b": {},
+   "revenue_sources": {},
+   "diluted_shares_m": {},
+   "shares_sources": {},
+   "normalization": "GAAP diluted EPS of the class A common stock (the two-class method; class B and C as converted), each year from the latest filing that reports it; a company figure excluding only one-offs where published (the ACN rule): none is, as the adjusted figures also remove asset step-up amortization, which recurs; FY2008 is excluded (a distorted year)",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 19.67,
+   "prev_fy_op_margin_note": "FY08 operating income $1,232M / total operating revenues $6,263M (the $1,470M litigation provision in)",
+   "prev_fy_pretax_margin": 21.33,
+   "prev_fy_pretax_margin_note": "FY08 income before income taxes $1,336M / total operating revenues $6,263M",
+   "prev_fy_net_to_gross": 84.36,
+   "prev_fy_sales_growth": 74.5,
+   "tax_rate": 0.3982,
+   "tax_note": "FY08 income tax expense $532M on pre-tax $1,336M",
+   "fcf_b": 0.116,
+   "fcf_label": "FY08",
+   "fcf_note": "net cash provided by operating activities $531M less purchases of property, equipment and technology $415M",
+   "cash_b": 4.979,
+   "business_line": "payments network: service, data processing, international transaction and other revenues, net of client incentives",
+   "groups": [
+    [
+     "Service revenues",
+     3.061,
+     57.4
+    ],
+    [
+     "Data processing revenues",
+     2.073,
+     46.4
+    ],
+    [
+     "International transaction revenues",
+     1.721,
+     279.1
+    ],
+    [
+     "Other revenues",
+     0.569,
+     103.2
+    ],
+    [
+     "Volume and support incentives",
+     -1.161,
+     129.9
+    ]
+   ],
+   "groups_basis": "FY08 operating revenues by line, incentives as reported (FY08 growth on Visa U.S.A.'s FY07, as published)",
+   "company": "Visa Inc.",
+   "exchange": "NYSE",
+   "listing": "2008-03-19",
+   "listing_quote": "Our Class A common stock commenced trading on the New York Stock Exchange under the symbol “V” on March 19, 2008.",
+   "pe_window_start": "2008-10-01",
+   "fiscal_year": "For the fiscal year ended September 30, 2008",
+   "rows": [
+    "Service fees | 3,061 | 1,945 | 1,610",
+    "Data processing fees | 2,073 | 1,416 | 1,248",
+    "International transaction fees | 1,721 | 454 | 398",
+    "Other revenues | 569 | 280 | 280",
+    "Volume and support incentives | (1,161) | (505) | (588)",
+    "Total operating revenues | 6,263 | 3,590 | 2,948",
+    "Litigation provision | 1,470 | 2,653 | 23",
+    "Total operating expenses | 5,031 | 5,039 | 2,218",
+    "Operating income (loss) | 1,232 | (1,449) | 730",
+    "Income (loss) before income taxes and minority interest | 1,336 | (1,387) | 722",
+    "Income tax expense (benefit) | 532 | (316) | 251",
+    "Class A common stock | 0.96",
+    "Class A common stock | 769",
+    "Net cash provided by operating activities | 531 | 505 | 450",
+    "Purchases of property, equipment and technology | (415) | (160) | (102)",
+    "Cash and cash equivalents | 4,979 | 275",
+    "For the years ended September 30, 2007 and 2006, Visa U.S.A. Inc. was a non-stock corporation and therefore there was no comparable metric for net income per share and no common stock outstanding."
+   ]
+  },
+  {
+   "published": "2009-11-23",
+   "sources": [
+    "V11",
+    "V6"
+   ],
+   "fy_label": "FY09",
+   "kind": "DURABLE",
+   "why": "'Visa operates the world’s largest retail electronic payments network and manages a leading global payments brand.' 'We depend heavily upon the overall level of consumer, business and government spending.' 'Within the general purpose payment card industry, we face substantial and intense competition worldwide in the provision of payments services to financial institution customers and their cardholder merchants.' 'Interchange reimbursement fees and related practices have been the topic of recent committee hearings in the U.S. House of Representatives and the U.S. Senate, as well as conferences held by a number of U.S. Federal Reserve Banks.'; no 10-K calls the business cyclical (the economy and spending are a 'why', not the company's own label: the LOW, SHW and JPM reading), so the kind is DURABLE; no disruption theme in taxonomy_eras.json is live for a payments network on these dates, so the watch list is empty",
+   "eps_normalized": {
+    "2009": 3.1
+   },
+   "eps_sources": {
+    "2009": "V11"
+   },
+   "eps_excluded": {},
+   "eps_first_excluded": {
+    "2008": "a distorted year with no figure excluding only one-offs: GAAP $0.96 a diluted class A share (FY2009 10-K) carries the $1,457M covered-litigation reserve (the Q4 FY08 release's reconciliation; $1,470M litigation provision), about $874M after the year's 40% GAAP tax rate against $804M of net income, so reported EPS is under half the EPS without it (the AAPL FY2002 test); the company's adjusted $2.25 also removes asset step-up amortization ('Non-cash amortization and depreciation of the incremental basis in technology and building assets acquired in the reorganization.', $68M a year), which recurs, applies 'a normalized tax rate of 41%' and counts the IPO shares as issued at October 1, 2007, so it does not exclude only one-offs (the NKE FY2007, AVGO and PFE rule); FY2008 is Visa Inc.'s first year with EPS ('There is no comparable earnings per share measure for 2007 as we were a non-stock company.'), so the history and the P/E window start after it (the ACN FY02 and JPM FY2002 rule): FY2009, from 2008-10-01"
+   },
+   "revenue_usd_b": {
+    "2009": 6.911
+   },
+   "revenue_sources": {
+    "2009": "V11"
+   },
+   "diluted_shares_m": {
+    "2009": 758.0
+   },
+   "shares_sources": {
+    "2009": "V11"
+   },
+   "normalization": "GAAP diluted EPS of the class A common stock (the two-class method; class B and C as converted), each year from the latest filing that reports it; a company figure excluding only one-offs where published (the ACN rule): none is, as the adjusted figures also remove asset step-up amortization, which recurs; FY2008 is excluded (a distorted year); FY09 $3.10 GAAP, its VisaNet do Brasil gain in (a fraction of the year's income: the mirror test is not met)",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 51.19,
+   "prev_fy_op_margin_note": "FY09 operating income $3,538M / total operating revenues $6,911M",
+   "prev_fy_pretax_margin": 57.88,
+   "prev_fy_pretax_margin_note": "FY09 income before income taxes $4,000M / total operating revenues $6,911M (the VisaNet do Brasil gain in investment income)",
+   "prev_fy_net_to_gross": 84.85,
+   "prev_fy_sales_growth": 10.3,
+   "tax_rate": 0.412,
+   "tax_note": "FY09 income tax expense $1,648M on pre-tax $4,000M",
+   "fcf_b": 0.252,
+   "fcf_label": "FY09",
+   "fcf_note": "net cash provided by operating activities $558M (after litigation settlement payments) less purchases of property, equipment and technology $306M",
+   "cash_b": 4.617,
+   "business_line": "payments network: service, data processing, international transaction and other revenues, net of client incentives",
+   "groups": [
+    [
+     "Service revenues",
+     3.174,
+     3.7
+    ],
+    [
+     "Data processing revenues",
+     2.43,
+     17.2
+    ],
+    [
+     "International transaction revenues",
+     1.916,
+     11.3
+    ],
+    [
+     "Other revenues",
+     0.625,
+     9.8
+    ],
+    [
+     "Volume and support incentives",
+     -1.234,
+     6.3
+    ]
+   ],
+   "groups_basis": "FY09 operating revenues by line, incentives as reported (FY09 growth)",
+   "company": "Visa Inc.",
+   "exchange": "NYSE",
+   "listing": "2008-03-19",
+   "listing_quote": "Our class A common stock has been listed on the New York Stock Exchange under the symbol “V” since March 19, 2008.",
+   "pe_window_start": "2008-10-01",
+   "fiscal_year": "For the fiscal year ended September 30, 2008",
+   "rows": [
+    "Service revenues | 3,174 | 3,061 | 1,945",
+    "Data processing revenues | 2,430 | 2,073 | 1,416",
+    "International transaction revenues | 1,916 | 1,721 | 454",
+    "Other revenues | 625 | 569 | 280",
+    "Volume and support incentives | (1,234) | (1,161) | (505)",
+    "Total operating revenues | 6,911 | 6,263 | 3,590",
+    "Operating income (loss) | 3,538 | 1,232 | (1,449)",
+    "Income (loss) before income taxes and minority interest | 4,000 | 1,336 | (1,387)",
+    "Income tax expense (benefit) (Note 20) | 1,648 | 532 | (316)",
+    "Class A common stock | 3.10 | 0.96",
+    "Class A common stock | 758 | 769",
+    "Net cash provided by operating activities | 558 | 531 | 505",
+    "Purchases of property, equipment and technology | (306) | (415) | (160)",
+    "Cash and cash equivalents | 4,617 | 4,979"
+   ]
+  }
+ ],
+ "prints": [
+  {
+   "quarter": "Q3 FY09",
+   "fy": 2009,
+   "q": 3,
+   "published": "2009-07-30",
+   "source": "V8",
+   "release": "Jul 29",
+   "release_time": "after the close on Jul 29: 8-K accepted 2009-07-29 16:29 ET (after the 16:00 ET close); the call at 5:00 p.m. EDT; public before the open of the next trading day",
+   "period_end": "2009-06-30",
+   "raw": {
+    "sales_m": 1646.0,
+    "sales_prior_m": 1613.0,
+    "sales_prev_q_m": 1647.0,
+    "gross_m": 1990.0,
+    "gross_prior_m": 1887.0,
+    "opex_m": 824.0,
+    "opex_prior_m": 965.0,
+    "litigation_m": 1.0,
+    "litigation_prior_m": 50.0,
+    "op_income_m": 822.0,
+    "op_income_prior_m": 648.0,
+    "receivables_m": 419.0,
+    "receivables_prior_m": 342.0
+   },
+   "rows": {
+    "svc": "Service revenues | 769 | 749 | 2,366 | 2,273",
+    "dp": "Data processing revenues | 605 | 539 | 1,703 | 1,525",
+    "intl": "International transaction revenues | 458 | 449 | 1,409 | 1,209",
+    "oth": "Other revenues | 158 | 150 | 462 | 409",
+    "vs": "Volume and support incentives | (344) | (274) | (908) | (862)",
+    "rev": "Total operating revenues | 1,646 | 1,613 | 5,032 | 4,554",
+    "lit": "Litigation provision | 1 | 50 | 1 | 342",
+    "opex": "Total operating expenses | 824 | 965 | 2,363 | 2,879",
+    "op": "Operating income | 822 | 648 | 2,669 | 1,675",
+    "eps": "Class A common stock | 0.97 | 0.51 | 2.41 | 1.44",
+    "sh": "Class A common stock | 756 | 776 | 761 | 767",
+    "ar": "Accounts receivable | 419 | 342",
+    "cash": "Cash and cash equivalents | 4,200 | 4,979",
+    "prev_q_revenue": "Total operating revenues | 1,613 | 1,709 | 1,739 | 1,647 | 1,646",
+    "ar_prior": "Accounts receivable | 342 | 245"
+   },
+   "extra_sources": [
+    "V4"
+   ],
+   "sales_pct": 2.0,
+   "seq_pct": -0.1,
+   "net_to_gross": 82.71,
+   "net_to_gross_bp": -276.6,
+   "op_margin": 49.94,
+   "op_margin_bp": 976.6,
+   "opex_pct": -10.1,
+   "opex_gap_pp": -12.1,
+   "receivables_pct": 22.5,
+   "receivables_gap_pp": 20.5,
+   "sales_b": 1.646,
+   "eps_q": 0.97,
+   "eps_q_prior": 0.51,
+   "diluted_shares_m": 756.0,
+   "receivables_b": 0.419,
+   "cash_b": 4.2,
+   "sales_note": "total operating revenues $1,646M vs $1,613M a year earlier, $1,647M the quarter before (service $769M, data processing $605M, international transaction $458M, other $158M, less volume and support incentives $344M)",
+   "receivables_note": "accounts receivable $419M (2009-06-30) vs $342M a year earlier (the Q3 FY08 10-Q's June 30, 2008 column)",
+   "eps_note": "GAAP diluted class A EPS $0.97 vs $0.51, with 'Visa recorded a GAAP gain from the sale in the quarter ended June 30, 2009, net of tax, of $237 million.'",
+   "shares_note": "diluted class A shares 756M (as converted)",
+   "next_print": "Q4 FY09 print (the quarter ends in September)",
+   "guide": {
+    "fy": 2009,
+    "revenue_words": "Annual net revenue growth of high single digits in 2009 and at the lower end of the 11% to 15% range in 2010, given certain economic recovery assumptions;",
+    "eps_words": "Annual adjusted diluted class A common stock earnings per share growth of greater than 20%;",
+    "margin_words": "Annual adjusted operating margin in the low 50% range.",
+    "revenue_growth": null,
+    "note": "FY2009 revenue growth 'of high single digits' is words (no range); FY2010's range is given before its year"
+   },
+   "note": null
+  },
+  {
+   "quarter": "Q4 FY09",
+   "fy": 2009,
+   "q": 4,
+   "published": "2009-10-28",
+   "source": "V10",
+   "release": "Oct 27",
+   "release_time": "after the close on Oct 27: 8-K accepted 2009-10-27 16:13 ET (after the 16:00 ET close); the call at 5:00 p.m. ET; public before the open of the next trading day",
+   "period_end": "2009-09-30",
+   "raw": {
+    "sales_m": 1879.0,
+    "sales_prior_m": 1709.0,
+    "sales_prev_q_m": 1646.0,
+    "gross_m": 2205.0,
+    "gross_prior_m": 2008.0,
+    "opex_m": 1010.0,
+    "opex_prior_m": 2152.0,
+    "litigation_m": 1.0,
+    "litigation_prior_m": 1128.0,
+    "op_income_m": 869.0,
+    "op_income_prior_m": -443.0,
+    "receivables_m": 444.0,
+    "receivables_prior_m": 342.0
+   },
+   "rows": {
+    "svc": "Service revenues | 808 | 788 | 3,174 | 3,061",
+    "dp": "Data processing revenues | 727 | 548 | 2,430 | 2,073",
+    "intl": "International transaction revenues | 507 | 512 | 1,916 | 1,721",
+    "oth": "Other revenues | 163 | 160 | 625 | 569",
+    "vs": "Volume and support incentives | (326) | (299) | (1,234) | (1,161)",
+    "rev": "Total operating revenues | 1,879 | 1,709 | 6,911 | 6,263",
+    "lit": "Litigation provision | 1 | 1,128 | 2 | 1,470",
+    "opex": "Total operating expenses | 1,010 | 2,152 | 3,373 | 5,031",
+    "op": "Operating income (loss) | 869 | (443) | 3,538 | 1,232",
+    "eps": "Class A common stock | 0.69 | (0.45) | 3.10 | 0.96",
+    "sh": "Class A common stock | 747 | 774 | 758 | 769",
+    "ar": "Accounts receivable | 444 | 342",
+    "cash": "Cash and cash equivalents | 4,617 | 4,979",
+    "prev_q_revenue": "Total operating revenues | 1,646 | 1,613 | 5,032 | 4,554",
+    "pre": "Income (loss) before income taxes and minority interest | 863 | (431) | 4,000 | 1,336",
+    "tax": "Income tax expense (benefit) | 349 | (75) | 1,648 | 532",
+    "ni": "Net income (loss) | 514 | (356) | 2,353 | 804",
+    "debt_c": "Current portion of long-term debt | 12 | 51",
+    "debt_l": "Long-term debt | 44 | 55"
+   },
+   "extra_sources": [
+    "V8"
+   ],
+   "sales_pct": 9.9,
+   "seq_pct": 14.2,
+   "net_to_gross": 85.22,
+   "net_to_gross_bp": 10.6,
+   "op_margin": 46.25,
+   "op_margin_bp": 7217.0,
+   "opex_pct": -1.5,
+   "opex_gap_pp": -11.4,
+   "receivables_pct": 29.8,
+   "receivables_gap_pp": 19.9,
+   "sales_b": 1.879,
+   "eps_q": 0.69,
+   "eps_q_prior": -0.45,
+   "diluted_shares_m": 747.0,
+   "receivables_b": 0.444,
+   "cash_b": 4.617,
+   "debt_note": "debt $56M (current $12M, long-term $44M)",
+   "sales_note": "total operating revenues $1,879M vs $1,709M a year earlier, $1,646M the quarter before (service $808M, data processing $727M, international transaction $507M, other $163M, less volume and support incentives $326M); 'Payments volume growth, on a nominal basis, was a negative 2% over the prior year at $687 billion;' 'Total processed transactions, which represent transactions processed by VisaNet for the three months ending September 30, 2009, totaled 10.5 billion, a 9% increase over the prior year.'",
+   "receivables_note": "accounts receivable $444M (2009-09-30) vs $342M a year earlier (the release's September 30, 2008 column)",
+   "eps_note": "GAAP diluted class A EPS $0.69 vs $(0.45) (Q4 FY08 carried the $1,128M litigation provision for the Discover settlement)",
+   "shares_note": "diluted class A shares 747M (as converted)",
+   "next_print": "Q1 FY10 print (the quarter ends in December)",
+   "cash_return_text": "'Today, the Company announces that its Board of Directors has authorized a $1 billion share repurchase plan.' (a plan, no guided number: it adds nothing)",
+   "guide": {
+    "fy": 2010,
+    "revenue_growth": [
+     11,
+     15
+    ],
+    "affirm": "Visa Inc. affirms its financial outlook for the following metrics for 2010:",
+    "revenue_words": "Annual net revenue growth at the lower end of the 11% to 15% range, given certain economic recovery assumptions; and",
+    "eps_words": "Annual diluted class A common stock earnings per share growth of greater than 20%.",
+    "margin_words": "Annual operating margin in the mid 50% range;",
+    "other_words": [
+     "Volume and support incentives in the range of 16-17% of gross revenue;",
+     "GAAP tax rate in the range of 38 to 39%;"
+    ],
+    "fy11_words": "Visa Inc. provides its financial outlook for the following metric for 2011:",
+    "note": "the 11-15% range stands with its words 'at the lower end' in the note (the ACN words rule); EPS growth 'of greater than 20%' is a one-sided bound and gives no field (the PEP, UNP and LOW rule); the operating margin 'in the mid 50% range' is words and gives no step; incentives, advertising, tax, capital expenditure and free cash flow have no input in method r2"
+   },
+   "note": "the company's adjusted figures are 'on an adjusted basis (reflective of restructuring and purchase amortization)': 'Adjusted full-year 2009 net income of $2.4 billion or $3.23 per diluted class A common share inclusive of the impact from the VisaNet do Brasil sale'; 'Excluding the sale, net income for the full-year was $2.2 billion, or $2.92 per diluted class A common share.'",
+   "fy_actual": {
+    "fy": 2009,
+    "fy_label": "FY09",
+    "eps_normalized": 3.1,
+    "revenue_usd_b": 6.911,
+    "diluted_shares_m": 758.0,
+    "normalization_note": "FY09 $3.10, GAAP diluted class A EPS from the Q4 FY09 release; its gain on the VisaNet do Brasil sale stays in (a fraction of the year's income: the mirror test is not met), and the company's adjusted $3.23 ($2.92 excluding the sale) also removes asset step-up amortization, which recurs (the NKE FY2007 rule)",
+    "op_margin": 51.19,
+    "op_margin_note": "FY09 operating income $3,538M / total operating revenues $6,911M (Q4 FY09 release)",
+    "pretax_margin": 57.88,
+    "pretax_margin_note": "FY09 income before income taxes $4,000M / total operating revenues $6,911M (Q4 FY09 release; the VisaNet do Brasil gain in investment income)",
+    "net_to_gross": 84.85,
+    "sales_growth": 10.3,
+    "tax_rate": 0.412,
+    "tax_note": "FY09 income tax expense $1,648M on pre-tax $4,000M",
+    "groups": [
+     [
+      "Service revenues",
+      3.174,
+      3.7
+     ],
+     [
+      "Data processing revenues",
+      2.43,
+      17.2
+     ],
+     [
+      "International transaction revenues",
+      1.916,
+      11.3
+     ],
+     [
+      "Other revenues",
+      0.625,
+      9.8
+     ],
+     [
+      "Volume and support incentives",
+      -1.234,
+      6.3
+     ]
+    ],
+    "groups_basis": "FY09 operating revenues by line, incentives as reported (FY09 growth)",
+    "rows": [
+     "Service revenues | 808 | 788 | 3,174 | 3,061",
+     "Data processing revenues | 727 | 548 | 2,430 | 2,073",
+     "International transaction revenues | 507 | 512 | 1,916 | 1,721",
+     "Other revenues | 163 | 160 | 625 | 569",
+     "Volume and support incentives | (326) | (299) | (1,234) | (1,161)",
+     "Total operating revenues | 1,879 | 1,709 | 6,911 | 6,263",
+     "Operating income (loss) | 869 | (443) | 3,538 | 1,232",
+     "Income (loss) before income taxes and minority interest | 863 | (431) | 4,000 | 1,336",
+     "Income tax expense (benefit) | 349 | (75) | 1,648 | 532",
+     "Class A common stock | 0.69 | (0.45) | 3.10 | 0.96",
+     "Class A common stock | 747 | 774 | 758 | 769"
+    ]
+   }
+  }
+ ],
+ "guides": [],
+ "events": [],
+ "company_names": [],
+ "splits": [],
+ "listings": [],
+ "dividends": [
+  {
+   "published": "2008-06-12",
+   "quarterly": 0.105,
+   "source": "V5",
+   "note": "$0.105 a quarter, the first declared (8-K of 2008-06-11, after the close)",
+   "quote": "SAN FRANCISCO, CA, June 11, 2008 – Visa Inc. (NYSE:V) today announced that its Board of Directors has declared a quarterly dividend in the aggregate amount of $0.105 per share of Class A Common Stock (determined in the case of Class B and Class C Common Stock on an “as converted” basis) payable on August 29, 2008 to all holders of record of the Company’s Class A, Class B and Class C Common Stock as of August 15, 2008."
+  },
+  {
+   "published": "2009-10-21",
+   "quarterly": 0.125,
+   "source": "V9",
+   "note": "$0.125 a quarter, declared 2009-10-21 ('Increases Dividend Rate 19%')",
+   "quote": "today announced that its Board of Directors had declared a quarterly dividend in the aggregate amount of $0.125 per share of class A common stock"
+  }
+ ],
+ "rule_t": {
+  "revenue": {
+   "measure": "growth of total operating revenues (net of volume and support incentives), %",
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "2003": 26.6,
+    "2004": 22.68,
+    "2005": 9.72,
+    "2006": 10.62,
+    "2007": 21.78,
+    "2008": 74.46
+   },
+   "thresholds": {
+    "BEAR": -3,
+    "BASE": 10,
+    "BULL": 22,
+    "XBULL": 74
+   },
+   "raw": {
+    "2003": {
+     "source": "V1",
+     "rows": [
+      "Operating Revenues | 2,599 | 2,203 | 2,948 | 2,665 | 2,429 | 1,980 | 1,564"
+     ],
+     "revenue_m": [
+      1564.0,
+      1980.0
+     ]
+    },
+    "2004": {
+     "source": "V3",
+     "rows": [
+      "Total operating revenues | 3,590 | 2,948 | 2,665 | 2,429 | 1,980"
+     ],
+     "revenue_m": [
+      1980.0,
+      2429.0
+     ]
+    },
+    "2005": {
+     "source": "V7",
+     "rows": [
+      "Total operating revenues | 6,263 | 5,193 | 3,590 | 2,948 | 2,665 | 2,429"
+     ],
+     "revenue_m": [
+      2429.0,
+      2665.0
+     ]
+    },
+    "2006": {
+     "source": "V7",
+     "rows": [
+      "Total operating revenues | 6,263 | 5,193 | 3,590 | 2,948 | 2,665 | 2,429"
+     ],
+     "revenue_m": [
+      2665.0,
+      2948.0
+     ]
+    },
+    "2007": {
+     "source": "V7",
+     "rows": [
+      "Total operating revenues | 6,263 | 5,193 | 3,590 | 2,948 | 2,665 | 2,429"
+     ],
+     "revenue_m": [
+      2948.0,
+      3590.0
+     ]
+    },
+    "2008": {
+     "source": "V7",
+     "rows": [
+      "Total operating revenues | 6,263 | 5,193 | 3,590 | 2,948 | 2,665 | 2,429"
+     ],
+     "revenue_m": [
+      3590.0,
+      6263.0
+     ]
+    }
+   }
+  },
+  "net_to_gross": {
+   "measure": "change in total operating revenues as a share of gross operating revenues (service, data processing, international transaction and other revenues before volume and support incentives), bp: the share of gross revenues kept after client incentives, in the place of the gross margin",
+   "unit": 10,
+   "lower_is_better": false,
+   "values": {
+    "2003": 98.6,
+    "2004": -49.6,
+    "2005": -33.5,
+    "2006": -18.6,
+    "2007": 429.7,
+    "2008": -330.6
+   },
+   "thresholds": {
+    "BEAR": -640,
+    "BASE": -330,
+    "BULL": -30,
+    "XBULL": 430
+   },
+   "raw": {
+    "2003": {
+     "source": "V1",
+     "rows": [
+      "Operating Revenues | 2,599 | 2,203 | 2,948 | 2,665 | 2,429 | 1,980 | 1,564",
+      "Volume and Support Agreements | (356) | (409) | (588) | (524) | (466) | (366) | (311)"
+     ],
+     "revenue_m": [
+      1564.0,
+      1980.0
+     ],
+     "incentives_m": [
+      311.0,
+      366.0
+     ]
+    },
+    "2004": {
+     "source": "V1",
+     "rows": [
+      "Operating Revenues | 2,599 | 2,203 | 2,948 | 2,665 | 2,429 | 1,980 | 1,564",
+      "Volume and Support Agreements | (356) | (409) | (588) | (524) | (466) | (366) | (311)"
+     ],
+     "revenue_m": [
+      1980.0,
+      2429.0
+     ],
+     "incentives_m": [
+      366.0,
+      466.0
+     ]
+    },
+    "2005": {
+     "source": "V1",
+     "rows": [
+      "Operating Revenues | 2,599 | 2,203 | 2,948 | 2,665 | 2,429 | 1,980 | 1,564",
+      "Volume and Support Agreements | (356) | (409) | (588) | (524) | (466) | (366) | (311)"
+     ],
+     "revenue_m": [
+      2429.0,
+      2665.0
+     ],
+     "incentives_m": [
+      466.0,
+      524.0
+     ]
+    },
+    "2006": {
+     "source": "V3",
+     "rows": [
+      "Total operating revenues | 3,589,796 | 2,948,126 | 2,664,605",
+      "Volume and support incentives | (504,780) | (587,751) | (524,107)"
+     ],
+     "revenue_m": [
+      2664.605,
+      2948.126
+     ],
+     "incentives_m": [
+      524.107,
+      587.751
+     ]
+    },
+    "2007": {
+     "source": "V7",
+     "rows": [
+      "Total operating revenues | 6,263 | 3,590 | 2,948",
+      "Volume and support incentives | (1,161) | (505) | (588)"
+     ],
+     "revenue_m": [
+      2948.0,
+      3590.0
+     ],
+     "incentives_m": [
+      588.0,
+      505.0
+     ]
+    },
+    "2008": {
+     "source": "V7",
+     "rows": [
+      "Total operating revenues | 6,263 | 3,590 | 2,948",
+      "Volume and support incentives | (1,161) | (505) | (588)"
+     ],
+     "revenue_m": [
+      3590.0,
+      6263.0
+     ],
+     "incentives_m": [
+      505.0,
+      1161.0
+     ]
+    }
+   }
+  },
+  "opex_gap": {
+   "measure": "growth of operating expenses excluding the litigation provision line, less revenue growth, pp (lower is better)",
+   "unit": 1,
+   "lower_is_better": true,
+   "values": {
+    "2003": 1.82,
+    "2004": -19.3,
+    "2005": -3.7,
+    "2006": -5.09,
+    "2007": -13.08,
+    "2008": -25.21
+   },
+   "thresholds": {
+    "BEAR": 13,
+    "BASE": 2,
+    "BULL": -9,
+    "XBULL": -25
+   },
+   "raw": {
+    "2003": {
+     "source": "V1",
+     "rows": [
+      "Operating Revenues | 2,599 | 2,203 | 2,948 | 2,665 | 2,429 | 1,980 | 1,564",
+      "Operating Expenses | 1,685 | 1,651 | 2,219 | 2,212 | 1,999 | 3,398 | 1,478",
+      "Litigation Provision | 15 | 22 | 23 | 132 | 37 | 1,500 | —"
+     ],
+     "revenue_m": [
+      1564.0,
+      1980.0
+     ],
+     "opex_m": [
+      1478.0,
+      3398.0
+     ],
+     "litigation_m": [
+      0,
+      1500
+     ]
+    },
+    "2004": {
+     "source": "V3",
+     "rows": [
+      "Total operating revenues | 3,590 | 2,948 | 2,665 | 2,429 | 1,980",
+      "Operating expenses | 5,039 | 2,218 | 2,212 | 1,999 | 3,398",
+      "Litigation provision | 2,653 | 23 | 132 | 37 | 1,500"
+     ],
+     "revenue_m": [
+      1980.0,
+      2429.0
+     ],
+     "opex_m": [
+      3398.0,
+      1999.0
+     ],
+     "litigation_m": [
+      1500.0,
+      37.0
+     ]
+    },
+    "2005": {
+     "source": "V7",
+     "rows": [
+      "Total operating revenues | 6,263 | 5,193 | 3,590 | 2,948 | 2,665 | 2,429",
+      "Operating expenses | 5,031 | 6,309 | 5,039 | 2,218 | 2,212 | 1,999",
+      "Litigation provision | 1,470 | 2,653 | 2,653 | 23 | 132 | 37"
+     ],
+     "revenue_m": [
+      2429.0,
+      2665.0
+     ],
+     "opex_m": [
+      1999.0,
+      2212.0
+     ],
+     "litigation_m": [
+      37.0,
+      132.0
+     ]
+    },
+    "2006": {
+     "source": "V7",
+     "rows": [
+      "Total operating revenues | 6,263 | 5,193 | 3,590 | 2,948 | 2,665 | 2,429",
+      "Operating expenses | 5,031 | 6,309 | 5,039 | 2,218 | 2,212 | 1,999",
+      "Litigation provision | 1,470 | 2,653 | 2,653 | 23 | 132 | 37"
+     ],
+     "revenue_m": [
+      2665.0,
+      2948.0
+     ],
+     "opex_m": [
+      2212.0,
+      2218.0
+     ],
+     "litigation_m": [
+      132.0,
+      23.0
+     ]
+    },
+    "2007": {
+     "source": "V7",
+     "rows": [
+      "Total operating revenues | 6,263 | 5,193 | 3,590 | 2,948 | 2,665 | 2,429",
+      "Operating expenses | 5,031 | 6,309 | 5,039 | 2,218 | 2,212 | 1,999",
+      "Litigation provision | 1,470 | 2,653 | 2,653 | 23 | 132 | 37"
+     ],
+     "revenue_m": [
+      2948.0,
+      3590.0
+     ],
+     "opex_m": [
+      2218.0,
+      5039.0
+     ],
+     "litigation_m": [
+      23.0,
+      2653.0
+     ]
+    },
+    "2008": {
+     "source": "V7",
+     "rows": [
+      "Total operating revenues | 6,263 | 5,193 | 3,590 | 2,948 | 2,665 | 2,429",
+      "Operating expenses | 5,031 | 6,309 | 5,039 | 2,218 | 2,212 | 1,999",
+      "Litigation provision | 1,470 | 2,653 | 2,653 | 23 | 132 | 37"
+     ],
+     "revenue_m": [
+      3590.0,
+      6263.0
+     ],
+     "opex_m": [
+      5039.0,
+      5031.0
+     ],
+     "litigation_m": [
+      2653.0,
+      1470.0
+     ]
+    }
+   }
+  },
+  "receivables_gap": {
+   "measure": "growth of year-end accounts receivable less revenue growth, pp (lower is better), each pair of year ends from the latest filing published by 2009-10-29 whose balance sheet reports both (the S-4/A for 2005-2006, the 424B4 for 2006-2007, the FY2008 10-K for 2007-2008), with that filing's revenues",
+   "unit": 1,
+   "lower_is_better": true,
+   "values": {
+    "2006": -1.37,
+    "2007": -8.55,
+    "2008": -34.86
+   },
+   "thresholds": {
+    "BEAR": 6,
+    "BASE": -1,
+    "BULL": -9,
+    "XBULL": -35
+   },
+   "raw": {
+    "2006": {
+     "source": "V1",
+     "rows": [
+      "Accounts receivable | 216,585 | 198,248",
+      "Operating Revenues | 2,599 | 2,203 | 2,948 | 2,665 | 2,429 | 1,980 | 1,564"
+     ],
+     "receivables_m": [
+      198.248,
+      216.585
+     ],
+     "revenue_m": [
+      2665.0,
+      2948.0
+     ]
+    },
+    "2007": {
+     "source": "V3",
+     "rows": [
+      "Accounts receivable | 245,215 | 216,585",
+      "Total operating revenues | 3,589,796 | 2,948,126 | 2,664,605"
+     ],
+     "receivables_m": [
+      216.585,
+      245.215
+     ],
+     "revenue_m": [
+      2948.126,
+      3589.796
+     ]
+    },
+    "2008": {
+     "source": "V7",
+     "rows": [
+      "Accounts receivable | 342 | 245",
+      "Total operating revenues | 6,263 | 3,590 | 2,948"
+     ],
+     "receivables_m": [
+      245.0,
+      342.0
+     ],
+     "revenue_m": [
+      3590.0,
+      6263.0
+     ]
+    }
+   }
+  },
+  "op_margin": {
+   "measure": "change in operating margin (operating income over total operating revenues, litigation provisions in, as published), bp",
+   "unit": 10,
+   "lower_is_better": false,
+   "values": {
+    "2003": -7711.5,
+    "2004": 8931.9,
+    "2005": -70.5,
+    "2006": 776.4,
+    "2007": -6512.5,
+    "2008": 6003.3
+   },
+   "thresholds": {
+    "BEAR": -15780,
+    "BASE": -7710,
+    "BULL": 350,
+    "XBULL": 8930
+   },
+   "raw": {
+    "2003": {
+     "source": "V1",
+     "rows": [
+      "Operating Revenues | 2,599 | 2,203 | 2,948 | 2,665 | 2,429 | 1,980 | 1,564",
+      "Operating Income (Loss) | 914 | 552 | 730 | 453 | 430 | (1,418) | 86"
+     ],
+     "revenue_m": [
+      1564.0,
+      1980.0
+     ],
+     "op_income_m": [
+      86.0,
+      -1418.0
+     ]
+    },
+    "2004": {
+     "source": "V3",
+     "rows": [
+      "Total operating revenues | 3,590 | 2,948 | 2,665 | 2,429 | 1,980",
+      "Operating income (loss) | (1,449) | 730 | 453 | 430 | (1,418)"
+     ],
+     "revenue_m": [
+      1980.0,
+      2429.0
+     ],
+     "op_income_m": [
+      -1418.0,
+      430.0
+     ]
+    },
+    "2005": {
+     "source": "V7",
+     "rows": [
+      "Total operating revenues | 6,263 | 5,193 | 3,590 | 2,948 | 2,665 | 2,429",
+      "Operating income (loss) | 1,232 | (1,116) | (1,449) | 730 | 453 | 430"
+     ],
+     "revenue_m": [
+      2429.0,
+      2665.0
+     ],
+     "op_income_m": [
+      430.0,
+      453.0
+     ]
+    },
+    "2006": {
+     "source": "V7",
+     "rows": [
+      "Total operating revenues | 6,263 | 5,193 | 3,590 | 2,948 | 2,665 | 2,429",
+      "Operating income (loss) | 1,232 | (1,116) | (1,449) | 730 | 453 | 430"
+     ],
+     "revenue_m": [
+      2665.0,
+      2948.0
+     ],
+     "op_income_m": [
+      453.0,
+      730.0
+     ]
+    },
+    "2007": {
+     "source": "V7",
+     "rows": [
+      "Total operating revenues | 6,263 | 5,193 | 3,590 | 2,948 | 2,665 | 2,429",
+      "Operating income (loss) | 1,232 | (1,116) | (1,449) | 730 | 453 | 430"
+     ],
+     "revenue_m": [
+      2948.0,
+      3590.0
+     ],
+     "op_income_m": [
+      730.0,
+      -1449.0
+     ]
+    },
+    "2008": {
+     "source": "V7",
+     "rows": [
+      "Total operating revenues | 6,263 | 5,193 | 3,590 | 2,948 | 2,665 | 2,429",
+      "Operating income (loss) | 1,232 | (1,116) | (1,449) | 730 | 453 | 430"
+     ],
+     "revenue_m": [
+      3590.0,
+      6263.0
+     ],
+     "op_income_m": [
+      -1449.0,
+      1232.0
+     ]
+    }
+   }
+  }
+ },
+ "fiscal_calendar": {
+  "rule": "the fiscal year ends on September 30 (FY2009 = 2008-10-01 to 2009-09-30)",
+  "quote": "For the fiscal year ended September 30, 2008",
+  "source": "V7"
+ },
+ "price_basis": "Yahoo's V series is the class A common stock, NYSE: V, from its 2008-03-19 listing; Yahoo adjusts it for the four-for-one split of 2015-03-19, which the builder undoes (retro_tool.split_factor), so every price the models use is the close as traded"
+}

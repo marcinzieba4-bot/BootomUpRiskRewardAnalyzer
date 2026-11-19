@@ -21071,6 +21071,198 @@ Judgement calls that could carry hindsight:
 
 The hindsight results are in `staging/retrospective/JPM/FINDINGS.md`: hypotheses, never inputs.
 
+## V (Visa): the twenty-eighth ticker, in staging, 2008-2009 (from the Q4 FY09 print)
+
+The V series is built apart from the other twenty-seven and shares nothing with them but the machinery: its own fact sheet
+(`retro/facts/V.json`), builder (`retro/build_v.py`, the GOOG builder with Visa's September fiscal year, figures in millions, a fiscal-year
+revenue range and a dividend list) and engine (`retro/templates/v_engine.py.tmpl`, the GOOG engine with the share of gross revenues kept
+after client incentives in the place of the gross margin and Visa's own rule-T thresholds). The method is still r2. No fact, parameter,
+outcome or finding of another ticker enters a V model. The live `v_signal_model.py` (on other branches) and today's V profile in
+`data/business_profiles.json` are 2026 analyses; neither was opened for this series, and neither is an input. Outputs go to
+`staging/retrospective/V/`, beside the others, with the same `index.json` and their own `SERIES.md`. The owner asked for 2008-2009 ("same
+rules as before"); the code is the newest branch of the repository (its commit "JPM retrospective: hindsight outcomes and findings for
+2022-2026; README and CLAUDE.md", 2026-11-19), every other recent retro branch being its ancestor.
+
+```bash
+python3 retro/build_v.py --weekly 2009-10-26 2009-12-31                     # 10 dates, 2009-10-29 .. 2009-12-31
+for d in staging/retrospective/V/20*/; do
+  python3 retro/retro_tool.py --archive staging/retrospective run "$d"
+  python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
+done
+python3 retro/retro_tool.py --archive staging/retrospective series V
+for c in 2009-10-30 2009-11-23 2009-11-28 2010-01-01; do python3 retro/tools/firewall.py $c V; done
+```
+
+**What the owner asked for and what could be built.** Under method r2 **10 of the 94 weekly dates of 2008-2009 can be built: 2009-10-29
+to 2009-12-31**, and only they were. Nothing was invented to fill the rest (the BKR 2018, CTVA and KMI precedents):
+
+- **2008-03-20 to 2008-10-24 (32 weeks): no full year of EPS.** Visa Inc.'s class A common stock listed on 2008-03-19 ("Our Class A common
+  stock commenced trading on the New York Stock Exchange under the symbol “V” on March 19, 2008.", FY2008 10-K), but its predecessor had no
+  shares: "There is no comparable earnings per share measure for 2007 as we were a non-stock company." (Q4 FY08 release). The first year
+  with EPS is FY2008 (to 2008-09-30), first published in the Q4 FY08 release (2008-10-30). A model needs the stock's own current-FY P/E,
+  so no date precedes it (the KMI and CTVA rule; a 2008 date would need an EPS anchor for a period that is not a year).
+- **2008-10-31 to 2009-10-23 (52 weeks): FY2008 is a distorted year with no figure excluding only one-offs**, and it is the only year. Its
+  GAAP $0.96 a diluted class A share carries the $1,457M covered-litigation reserve (the Discover settlement among it; $1,470M of
+  litigation provision), about $874M after the year's 40% GAAP tax rate ("Visa’s GAAP effective tax rate was 40% for the twelve months
+  ended September 30, 2008.") against $804M of net income, so reported EPS is under half the EPS without it (the AAPL FY2002 test, met by
+  about $70M on the reserve alone). The company's adjusted $2.25 ("Adjusted full-year 2008 net income of $1.7 billion or $2.25 per diluted
+  Class A common share") also removes asset step-up amortization, $68M a year ("Non-cash amortization and depreciation of the incremental
+  basis in technology and building assets acquired in the reorganization."), which recurs, applies "a normalized tax rate of 41%" and
+  counts the IPO shares as issued at October 1, 2007, so it is not a figure excluding only one-offs (the NKE FY2007, AVGO and PFE rule).
+  FY2008 is excluded; as the first year it takes the history and the window with it (the ACN FY02 and JPM FY2002 rule), and until the
+  Q4 FY09 print no year is left: the builder refuses each such date ("no fiscal year in the EPS history yet").
+- **From 2009-10-29:** the Q4 FY09 print (2009-10-28) adds FY2009, GAAP $3.10, and the series runs to 2009-12-31.
+
+Building either gap takes a new rule, which is the owner's call and a method note, not something this request decides: (a) FY2008 at the
+company's $2.25 despite the recurring amortization in it (the SHW Valspar reading, which kept purchase-accounting amortization in a
+company figure), which would also allow the 52 dates from 2008-10-31; or (b) an EPS anchor for the listing year. The sensitivity below
+shows that (a) is the call that decides every built date.
+
+Read, by the session's model directly with no delegated transcription: the reorganization proxy statement-prospectus (S-4/A No. 5,
+2007-09-13: Visa U.S.A.'s selected data for fiscal 2002-2006 and its 2005-2006 balance sheets), the IPO prospectus (424B4, 2008-03-20:
+Visa U.S.A.'s selected data for 2003-2007 and its audited fiscal 2005-2007 statements), the FY2008 and FY2009 10-Ks (Items 1, 1A, 5, 6, 7,
+the statements of operations, balance sheets and cash flows, the EPS lines), the Q4 FY08 release (the fiscal 2008 GAAP and adjusted
+figures and their reconciliation), the Q3 FY09 and Q4 FY09 releases (each release and its schedules; the Q4 FY09 presentation, exhibit
+99.2, for gross revenues), the Q3 FY08 and Q3 FY09 10-Qs (receivables), the dividend 8-Ks of 2008-06-11 and 2009-10-21, and the other 8-Ks
+of August to December 2009 by their items and exhibits (none guides a number; below). **Not read:** the FY2007 10-K and its two
+amendments beyond their selected data (the 424B4 is later and reports the same years), the S-1 and its amendments, the releases and 10-Qs
+of Q2 FY08 to Q2 FY09 (no built date uses them: the Q3 FY09 print is the previous quarter on every date), and the 8-Ks of 2007 to July
+2009 other than the dividend and earnings ones. The fact sheet is generated by a script from the filings' converted rows: each figure is
+read from its own row by label and number (the script asserts the row exists exactly; the row is kept in the fact sheet), every growth
+rate, share, margin, gap and rule-T value is computed, not typed, and every quoted sentence is asserted present in its own filing; the
+127 strings were checked with `verbatim.py` against their own filings (127/127). Each source's date comes from EDGAR's acceptance time
+(UTC, converted to ET); the source ids are `V1` and `V3`-`V11`. Decided on 2026-11-19, before any V model was built or any V outcome
+computed:
+
+- **Prices as traded.** Yahoo's V series is the class A common stock, NYSE: V, from its 2008-03-19 listing (Yahoo's first point); Yahoo
+  adjusts it for the four-for-one split of 2015-03-19, which the builder and `retro_tool` undo (`split_factor`), so the close is the price
+  as traded: $77.28 on 2009-10-29, $87.46 on 2009-12-31.
+- **Fiscal calendar.** The fiscal year ends on September 30 ("For the fiscal year ended September 30, 2008"): FY2009 is 2008-10-01 to
+  2009-09-30.
+- **Release timing.** Each earnings 8-K was accepted after the close (Q3 FY09 2009-07-29 16:29 ET, Q4 FY09 2009-10-27 16:13 ET; the call at
+  5:00 p.m. ET) and is dated the next trading day, public before its open; the weekly date is the trading day after that (the MU
+  encoding): 2009-10-29. The FY2009 10-K was accepted after the close (2009-11-20 16:07 ET) and is dated 2009-11-23. A Q4 print extends
+  the history from its release to the 10-K: FY2009 from 2009-10-28 (4 dates).
+- **Revenue: total operating revenues**, net of volume and support incentives (the income statement's own total), each year from the
+  latest filing that reports it.
+- **EPS: GAAP diluted EPS of the class A common stock** (the two-class method; class B and C as converted), each year from the latest
+  filing that reports it. FY2008 is excluded (above). FY2009 stays at GAAP $3.10: its gain on the sale of the VisaNet do Brasil stake ($237M
+  after tax, Q3 FY09 release) is a fraction of the year's $2,353M net income (the mirror test is not met), and the company's adjusted $3.23
+  ($2.92 excluding the sale) also removes the recurring step-up amortization. The history is FY2009 alone on every built date.
+- **Current-FY EPS:** the FY2010 guide, "Annual diluted class A common stock earnings per share growth of greater than 20%.", is a
+  one-sided bound and gives no field (the PEP, UNP and LOW rule), so FY09's $3.10 stands (the rollover rule).
+- **Forward revenue growth: the fiscal year's range.** Visa guides no quarter, so method r2's fallback ("No next-quarter guide") takes
+  the fiscal-year net revenue growth range: the Q4 FY09 release "affirms its financial outlook for the following metrics for 2010:", with
+  "Annual net revenue growth at the lower end of the 11% to 15% range, given certain economic recovery assumptions; and". The 11-15% range
+  stands and its words go in the note (the ACN words rule); BASE takes its 13% midpoint. "Annual operating margin in the mid 50% range;"
+  is words and gives no margin step; the incentive, advertising, tax, capital expenditure and free cash flow outlooks have no input in
+  method r2. The Q3 FY09 release's outlook ("high single digits in 2009 and at the lower end of the 11% to 15% range in 2010") is in the
+  previous print only and reaches no input.
+- **The bounds rule** (method r2, "A history too short to measure a rule"; the AVGO precedent): with FY2009 alone there is no EPS change,
+  CAGR or two-year run, so BEAR is flat EPS (the 0% cap), BULL and XBULL take BASE's rate, the net buyback is 0 (one diluted share count,
+  758M), the growth factor is 0 and the segment bridge's bull is flat.
+- **The P/E window** runs from 2008-10-01, the first day of FY2009 (FY2008 and the days from the listing leave with it): 1.1 years on
+  2009-10-29, 1.2 years at the end of 2009. Days of FY2010 keep FY09's $3.10 (no FY2010 EPS field).
+- **Dividends,** the latest declared quarterly rate, each from the first filing that states it: $0.105 from the 8-K of 2008-06-11 (after
+  the close; dated 2008-06-12), $0.125 from the 8-K of 2009-10-21 (before the open; "Increases Dividend Rate 19%"): $0.50 a year on every
+  built date. The $1 billion repurchase plan of the Q4 FY09 release is a plan, not a guided number, and adds nothing.
+- **Signals.** The GOOG set, with ACN's weights: revenue growth (0.20); the change in total operating revenues as a share of gross
+  operating revenues (service, data processing, international transaction and other revenues before volume and support incentives; 0.20:
+  the share of gross revenues kept after client incentives, which Visa calls "a form of price reduction", in the place of the gross
+  margin); growth of operating expenses excluding the litigation provision line, less revenue growth (0.15, lower is better; the GOOG
+  reading, whose opex sum leaves out the separate settlement lines); growth of accounts receivable less revenue growth (0.15, lower is
+  better: no inventories, the GOOG and MSFT collection signal); and the operating-margin change (0.15; the litigation provisions in, as
+  published), plus the theme slot at 2/4. Payments volume and processed transactions, the drivers Visa names, are shown in the revenue
+  text, not scored: the prints give them for different periods (volume for the quarter before), and no weight was added to the six. Each
+  value is the release's own against the year-ago quarter in the same release; receivables against the year-ago quarter's end from the
+  release's September 30 column (Q4) or the year-ago 10-Q (Q3). The Q4 FY09 gross revenues ($2,205M against $2,008M) match the release's
+  presentation.
+- **Thresholds by rule T over the decade of the FY2008 10-K** (the vintage public on 2009-10-29; FY1999-FY2008, of which the filings report
+  2002 on): Visa U.S.A., the accounting acquirer, for 2002-2007 and Visa Inc. for 2008, as published: nothing is made pro forma (the JPM
+  rule), so the 2007-2008 change carries the October 2007 reorganization (Visa International and Visa Canada in from 2007-10-01, the
+  first day of fiscal 2008). Each pair of years comes from the latest filing published by 2009-10-29 that reports both: the S-4/A for
+  2002-2003 (and the incentives to 2004-2005, which no later filing reports), the 424B4 for 2003-2004 and for the 2005-2006 incentives and the
+  2006-2007 receivables, the FY2008 10-K for the rest; receivables from the S-4/A for 2005-2006 (no filing gives an earlier pair). Six
+  values, three for receivables. The raw figures and values are in the fact sheet (`rule_t`); the builder re-derives every value and
+  threshold and refuses to build if they differ.
+
+  | Signal | Annual values | BEAR / BASE / BULL / XBULL |
+  |---|---|---|
+  | revenue growth | 2003-2008: 26.60, 22.68, 9.72, 10.62, 21.78, 74.46 % | -3 / 10 / 22 / 74 % |
+  | net-to-gross change | 98.6, -49.6, -33.5, -18.6, 429.7, -330.6 bp | -640 / -330 / -30 / 430 bp |
+  | opex (ex litigation) growth less revenue | 1.82, -19.30, -3.70, -5.09, -13.08, -25.21 pp | 13 / 2 / -9 / -25 pp |
+  | receivables growth less revenue | 2006-2008: -1.37, -8.55, -34.86 pp | 6 / -1 / -9 / -35 pp |
+  | operating-margin change | -7711.5, 8931.9, -70.5, 776.4, -6512.5, 6003.3 bp | -15780 / -7710 / 350 / 8930 bp |
+
+- **Durability: DURABLE, risk 2.** The 10-Ks tie results to spending ("The global payments industry depends heavily upon the overall level
+  of consumer, business and government spending.", FY2008; "We depend heavily upon the overall level of consumer, business and government
+  spending.", FY2009) and name competition ("we face substantial and intense competition worldwide") and, in the FY2009 10-K, the
+  interchange hearings, but never call the business cyclical (the LOW, SHW and JPM reading). No theme in `taxonomy_eras.json` is live for
+  a payments network on these dates, so the watch list is empty. The kind changes the class label only.
+- **Segment bridge and EPS check** (display only): the year's operating revenues by line, the incentives as a negative line, the total from
+  the last year's revenues grown at the BASE revenue rate; the EPS check runs on the last year's pre-tax margin (FY2009's includes the
+  VisaNet do Brasil gain) and tax rate.
+- **Adds nothing:** the 8-Ks of 2009-08-31 (an agreement), 2009-09-14 (July and August payments volume and transactions ahead of a
+  conference, no guided number), 2009-10-06 and the officer 8-K of 2009-10-21. None changes a guided number; the dividend 8-K is encoded
+  above.
+- **Anachronism list:** nothing added. A term check on the models takes its place: no later Visa product, acquisition or regulation name
+  appears; the FY2009 10-K's words ("a leading global payments brand", its $558M operating cash flow) first appear on 2009-11-27, after
+  its filing.
+
+Controls and checks (before any outcome):
+- **`retro_tool run` passes on all 10 dates,** with no warning. A first build failed it: the "why" named the CRYPTO theme's live date
+  (2020), which the validator rejected; the clause was cut before any outcome existed, and a source description's "fiscal 2010 outlook"
+  became "FY2010 outlook" to clear the year warning.
+- **Controls:** altering one value of each print (the Q3 FY09 revenue, the Q4 FY09 quarter EPS and its full-year revenue), each vintage
+  (the FY2008 10-K's free cash flow, the FY2009 10-K's FY09 EPS) and each dividend changes no model dated before its publication: the Q3
+  FY09 print, the Q4 FY09 quarter and the $0.125 dividend change all 10 dates; the Q4 FY09 full-year figures and the FY2008 10-K live from
+  2009-10-29 to 2009-11-20 (4 dates), the FY2009 10-K from 2009-11-27 (6); the $0.105 dividend is inert, superseded before any built date.
+- **Leak scan:** 0 hits in 100 (model, later token) pairs: the source ids, titles, notes, quotes and figures (four significant digits or
+  more) of every fact published after each model's date, after dropping 53 tokens an earlier fact or the engine already carries. As a
+  positive control, 11 of the latest print's own tokens appear in each model. Each fact's own text was scanned for dates and years after its
+  publication: the only hits are the outlooks' own years (2010, 2011), forecasts in the filings' words.
+- **Regression:** the shared code is untouched (the firewall tool gains a V entry); rebuilding the 2008-2009 dates of GOOG and JPM, MU's
+  2008 and AVGO's 2009 changes nothing.
+
+Seen in the build (method behaviour, not tuned):
+- **RICH on all 10 dates; legacy tier AVOID on all 10.** Robustness agrees on every date (every variant RICH).
+- **The multiple is at the top of a crisis-year window.** $77.28-88.97 is 24.9-28.7x FY09's $3.10, the 96th-100th percentile of a 1.1-1.2
+  year window (2008-10-01 on) whose median is 19.1-19.8x and whose calendar-year lows are 15.0x (2008-11-21) and 13.7x (2009-01-20): an EPP
+  floor of 14x, $43.40, which the price is 78-105% above.
+- **The scenarios are the guide's.** BASE is +13.0%/yr (the 11-15% range's midpoint, no margin step, no buyback), and with FY2009 alone
+  BULL and XBULL take BASE's rate and BEAR is flat (the bounds rule): BEAR $49.91-50.84 (16.1-16.4x), BULL $86.72-89.50. From 2009-12-18 the
+  price is at or above BULL (Ratio B `inf` on 2009-12-18, 12.6 and 18.0 on the last two dates).
+- **The proxy composite** is 2.15 on every date: revenue (+9.9%, just under the 10% BASE band) and receivables (+19.9pp against revenue)
+  at BEAR; net-to-gross (+10.6bp), the opex gap (-11.4pp) and the operating margin (+7,217bp against Q4 FY08's litigation-laden loss) at BULL.
+
+How far each call moves the classes (the 10 dates rebuilt with one encoding changed and classified offline; no outcome consulted):
+- **FY2008 in the history** (at the company's $2.25, the window from the 2008-03-19 listing): all 10 classes (7 RICH to CHEAP, 3 RICH to
+  FAIR) and all 10 tiers (AVOID to BUY); at GAAP $0.96 (the AAPL test read as not met): all 10 classes (8 to CHEAP, 2 to FAIR) and all 10
+  tiers (to BUY). The largest call by far: FY2008 brings an EPS run into BULL and XBULL and the listing year's higher multiples into the window;
+- rule T on the pro forma 2007 for the 2007-2008 pair: no class, no tier (revenue's XBULL band falls from 74% to 27%);
+- operating expenses with the litigation provision in: no class, no tier;
+- every signal at its BEAR value, or at its XBULL value: no class, no tier;
+- no FY2010 revenue range (Q4 FY09's +9.9% instead): no class, no tier;
+- the EPS bound read as a point (+20%, FY10E $3.72): no class, 9 tiers (6 to ACCUMULATE, 2 to WATCHLIST, 1 to BUY).
+The RICH calls rest on the exclusion of FY2008, which leaves a one-year history and a window that starts in the crisis.
+
+Judgement calls that could carry hindsight:
+- FY2008 excluded: the AAPL test met by about $70M on the reserve alone, at the year's GAAP tax rate (no filing states the reserve after
+  tax), and the company's $2.25 read as not excluding only one-offs for its $68M of step-up amortization, its tax normalization and its
+  share basis; it decides every built date and 52 unbuilt ones;
+- the covered-litigation reserve read as a one-off (the company's own reading, funded by the escrow) although Visa recorded such provisions
+  in fiscal 2003, 2007 and 2008;
+- the signals, chosen in 2026 by a builder who knows the 2009 volume decline: the net-to-gross share in the place of the gross margin,
+  the opex sum without the litigation line, and receivables; their extremes move no class here;
+- rule T on Visa U.S.A. to 2007 and Visa Inc. in 2008, as published, with the reorganization in the 2007-2008 change (no class moves on
+  the pro forma reading);
+- the "at the lower end" words left in the note with the 11-15% range standing, and the EPS bound read as no field (tiers only);
+- DURABLE rather than CYCLICAL (label only);
+- the filings listed above as not read: a guide in an unread passage would be missed, though none could reach a built date but the
+  FY2010 one, which is read.
+
+The hindsight results are in `staging/retrospective/V/FINDINGS.md`: hypotheses, never inputs.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are

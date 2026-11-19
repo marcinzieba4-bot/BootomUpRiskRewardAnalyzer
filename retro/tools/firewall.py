@@ -31,6 +31,7 @@ and require byte-identical models. Restores the fact sheet and the price cache a
     python3 retro/tools/firewall.py 2009-01-01 MU           # the MU series in staging/retrospective
     python3 retro/tools/firewall.py 2009-01-01 GOOG         # the GOOG series in staging/retrospective
     python3 retro/tools/firewall.py 2009-01-01 JPM          # the JPM series in staging/retrospective
+    python3 retro/tools/firewall.py 2009-11-23 V            # the V series in staging/retrospective (from the Q4 FY09 print)
 
 Plants a print, a history vintage, an event per live theme and a company name (UNP: also a guide and a
 dividend; LOW and AAPL: also a guide with every guided field; NKE: a guide in words, and futures orders on the last print before
@@ -106,7 +107,12 @@ pre-tax margin, quarter EPS, Tier 1 ratio, notes and raw figures are absurd, wit
 latest vintage before CUTOFF, a later Q4 print excluding its own year, a later 10-Q restatement of the last print before CUTOFF and a
 later vintage of the other kind excluding a year with planted texts, figures and window start (the guide, dividend, listing and company
 name every fact sheet with those lists gets, too), and from JPM 2014-2017 planted actuals that restate every year's EPS and revenue
-('restates', 'restates_revenue'), and from JPM 2018-2021 a later vintage with planted CRYPTO words ('crypto_quote'); GOOG: a print whose revenues, margins, opex and receivables gaps, quarter EPS, cash,
+('restates', 'restates_revenue'), and from JPM 2018-2021 a later vintage with planted CRYPTO words ('crypto_quote'); V: a print whose
+revenues, net-to-gross share, margins, opex and receivables gaps, quarter EPS, cash, debt, notes, raw figures and fiscal-year guide
+(range and words) are absurd, with absurd full-year actuals for the year after the latest vintage before CUTOFF, a later Q4 print whose
+full-year actuals exclude its own year, and a later vintage excluding a year and readmitting the distorted first year, with planted
+texts, figures, listing, exchange and window start (the guide, dividend, listing, split and company name every fact sheet with those
+lists gets, too); GOOG: a print whose revenues, margins, opex and receivables gaps, quarter EPS, cash,
 notes and raw figures are absurd, with absurd full-year actuals for the year after the latest vintage before CUTOFF, a later Q4 print
 whose full-year actuals exclude its own year, a later 10-Q restatement of the last print before CUTOFF with absurd figures, and a later
 vintage excluding a year with planted texts, figures, outlook words, exchange and window start, every per-share figure on a planted
@@ -146,7 +152,7 @@ OUTDIR = {"ACN": "archive/retrospective/ACN", "UNP": "staging/retrospective/UNP"
           "BMY": "staging/retrospective/BMY", "NVDA": "staging/retrospective/NVDA", "F": "staging/retrospective/F",
           "SO": "staging/retrospective/SO", "CTVA": "staging/retrospective/CTVA",
           "KMI": "staging/retrospective/KMI", "LMT": "staging/retrospective/LMT", "MU": "staging/retrospective/MU",
-          "GOOG": "staging/retrospective/GOOG", "JPM": "staging/retrospective/JPM"}[TICKER]
+          "GOOG": "staging/retrospective/GOOG", "JPM": "staging/retrospective/JPM", "V": "staging/retrospective/V"}[TICKER]
 ARCHIVE = os.path.join(ROOT, OUTDIR)
 BUILDER = os.path.join(ROOT, "retro", f"build_{TICKER.lower()}.py")
 # absurd values for every field the builder reads from a print
@@ -303,6 +309,15 @@ PLANT = {"ACN": dict(quarter="Q9 FY99", revenue_lc=-60, margin_bp=-999, fy_eps_g
                      eps_note="PLANTED", shares_note="PLANTED", next_print="PLANTED", cash_return_text="PLANTED", note="PLANTED",
                      raw=dict(revenue_m=1, revenue_prior_m=99, revenue_prev_q_m=99, provision_m=99, provision_prior_m=1, expense_m=99,
                               expense_prior_m=1, pretax_m=-99, pretax_prior_m=99, npa_m=99, npa_prior_m=1, loans_m=1, loans_prior_m=99)),
+         "V": dict(quarter="Q1 FY99", fy=2099, q=1, release="PLANTED", release_time="PLANTED", period_end="PLANTED", sales_b=0.01,
+                   sales_pct=-60.0, seq_pct=-60.0, net_to_gross=1.0, net_to_gross_bp=-999.0, op_margin=-50.0, op_margin_bp=-999.0,
+                   opex_pct=99.0, opex_gap_pp=99.0, receivables_b=99.0, receivables_pct=99.0, receivables_gap_pp=99.0, eps_q=0.01,
+                   eps_q_prior=9.99, diluted_shares_m=1.0, cash_b=99.0, debt_note="PLANTED", sales_note="PLANTED",
+                   receivables_note="PLANTED", eps_note="PLANTED", shares_note="PLANTED", next_print="PLANTED",
+                   cash_return_text="PLANTED", note="PLANTED", extra_sources=[],
+                   raw=dict(sales_m=1, sales_prior_m=99, sales_prev_q_m=99, gross_m=99, gross_prior_m=1, opex_m=99, opex_prior_m=1,
+                            litigation_m=0, litigation_prior_m=0, op_income_m=-99, op_income_prior_m=99, receivables_m=99,
+                            receivables_prior_m=1)),
          "GOOG": dict(quarter="Q1 2099", fy=2099, q=1, release="PLANTED", release_time="PLANTED", period_end="PLANTED", sales_b=0.01,
                       sales_pct=-60.0, seq_pct=-60.0, gross_margin=1.0, gross_margin_bp=-999.0, op_margin=-50.0, op_margin_bp=-999.0,
                       opex_pct=99.0, opex_gap_pp=99.0, receivables_b=99.0, receivables_pct=99.0, receivables_gap_pp=99.0, eps_q=0.01,
@@ -732,6 +747,30 @@ try:
                  groups_basis="PLANTED", exchange="PLANTED", pe_window_start="1990-01-02", kind="CYCLICAL",
                  eps_first_excluded={"1990": "PLANTED"})
         v["crypto_quote"] = "PLANTED"      # (JPM 2018-2021) a later 10-K's cryptocurrency words, the CRYPTO watch-list text
+    if TICKER == "V":      # absurd full-year actuals on the planted print for the year after the latest vintage before CUTOFF (its
+                           # first excluded year counted: the FY2008 vintage reports FY2008 only), a planted fiscal-year guide for the year
+                           # after it, a later Q4 print whose full-year actuals exclude its own year, and a later vintage excluding a year and
+                           # readmitting the excluded first year, with planted texts, figures, listing and window start
+        v0 = max((x for x in f["history_vintages"] if x["published"] < cutoff), key=lambda x: x["published"])
+        y0 = max(int(y) for y in [*v0["eps_normalized"], *v0.get("eps_excluded", {}), *v0.get("eps_first_excluded", {})]) + 1
+        fa = {"fy": y0, "fy_label": "FY99", "eps_normalized": 0.01, "revenue_usd_b": 0.01, "diluted_shares_m": 1.0,
+              "normalization_note": "PLANTED", "op_margin": -99.0, "op_margin_note": "PLANTED", "pretax_margin": -99.0,
+              "pretax_margin_note": "PLANTED", "net_to_gross": 1.0, "sales_growth": -99.0, "tax_rate": 0.99, "tax_note": "PLANTED",
+              "groups": [["PLANTED", 1, -99]], "groups_basis": "PLANTED"}
+        last["fy_actual"] = fa
+        last["guide"] = {"fy": y0 + 1, "revenue_growth": [-50, -40], "revenue_words": "PLANTED", "eps_words": "PLANTED",
+                         "margin_words": "PLANTED", "note": "PLANTED"}
+        q4 = copy.deepcopy(last)
+        q4.update(quarter="Q4 FY98", fy=2098, q=4, published=later)
+        q4["fy_actual"] = {**fa, "fy": 2098, "fy_label": "FY98", "eps_normalized": None, "excluded_note": "PLANTED"}
+        f["prints"].append(q4)
+        v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}
+        v["eps_normalized"] = {**v["eps_normalized"], **{y: 0.01 for y in v.get("eps_first_excluded", {})}}
+        v.update(normalization="PLANTED", business_line="PLANTED", prev_fy_op_margin=-99.0, prev_fy_op_margin_note="PLANTED",
+                 prev_fy_pretax_margin=-99.0, prev_fy_pretax_margin_note="PLANTED", prev_fy_net_to_gross=1.0,
+                 prev_fy_sales_growth=-99.0, tax_rate=0.99, tax_note="PLANTED", fcf_b=-99.0, fcf_note="PLANTED", cash_b=99.0,
+                 groups=[["PLANTED", 1, -99]], groups_basis="PLANTED", exchange="PLANTED", pe_window_start="2008-03-19",
+                 listing="1990-01-02", kind="CYCLICAL", eps_first_excluded={}, margin_signal_name="PLANTED")
     if TICKER == "MU":     # a later vintage excluding a year and readmitting none, with planted texts and figures
         v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}
         v.update(normalization="PLANTED", business_line="PLANTED", prev_fy_op_margin=-99.0, prev_fy_op_margin_note="PLANTED",

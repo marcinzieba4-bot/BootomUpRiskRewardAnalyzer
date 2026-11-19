@@ -23,10 +23,10 @@ touching either directory.
   outcomes or findings enters another's models. UNP (2008-2026 so far), LOW (2008-2026 so far), AAPL (2008-2026 so far),
   NKE (2008-2026 so far), AVGO (from its 2009-08-06 listing to 2026-10-30 so far), PEP (2008 to 2026-10-30 so far), MSFT
   (2008 to 2026-10-30 so far), XOM (2008 to 2026-10-30 so far), SHW (2008 to 2026-11-06 so far), WMT (2008 to 2026-11-06 so far), RCL (2008 to 2026-11-06 so far), MAR (2008 to 2026-11-03 so far), BKR (2008 to 2017-06-30, then 2019-02-01 to 2026-11-06 so far), PFE (2008 to 2026-11-04 so far), CMCSA (2008 to 2026-11-06 so far), CAT (2008 to 2026-11-06 so far), BMY (2008 to 2026-11-06 so far), NVDA (2008 to 2026-11-06 so far), F (2008-01-04 to 2026-11-06 so far; 2022-01-07 onward was built first at the owner's request, and dates before 2022 are an early era with its
-  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far) and JPM (2008-01-04 to 2026-11-13 so far) sit in `staging/retrospective/` until the owner adds
+  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far) and V (2009-10-29 to 2009-12-31 so far) sit in `staging/retrospective/` until the owner adds
   them to the archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM", "SHW", "WMT", "RCL", "MAR", "BKR", "PFE", "CMCSA", "CAT",
-  "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG", "JPM"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py` and `mu_signal_model.py` files
-  and today's profiles in `data/business_profiles.json` (NVDA's and SO's included) are 2026 analyses: never inputs to a retrospective. AVGO did not trade
+  "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG", "JPM", "V"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py`, `mu_signal_model.py` and `v_signal_model.py` (other branches) files
+  and today's profiles in `data/business_profiles.json` (NVDA's, SO's and V's included) are 2026 analyses: never inputs to a retrospective. AVGO did not trade
   before its IPO, so its series starts at the listing (the listing and bounds rules of method r2). BKR's 2008 to 2017-06-30 dates are Baker
   Hughes Incorporated, listed as BHI: BKR is only the series key (and Yahoo's symbol for the history); the models print BHI. Its dates from
   2019-02-01 are Baker Hughes, a GE company (BHGE, then BKR), a new listing with its own facts and engine: no date between is built, as
@@ -140,5 +140,16 @@ touching either directory.
   first states it; CRYPTO stays on the watch list on the FY2025 10-K's tokenized-securities and stablecoin words, and GENAI is out of
   scope (its registered scope names no bank); the CRYPTO line names the 10-K in force (a text fix that corrected six 2021 models); the
   last date is 2026-11-13 (retro/README.md, "JPM 2022-2026").
+  V (Visa) is the class A common stock, NYSE: V, from its 2008-03-19 listing (prices as traded: the 2015 four-for-one split undone);
+  the fiscal year ends on September 30. Of 2008-2009 only 2009-10-29 to 2009-12-31 (10 dates) can be built: Visa U.S.A. was a
+  non-stock company, so FY2008 is the first year with EPS, and FY2008 is excluded as a distorted year (the AAPL test: the $1,457M
+  covered-litigation reserve exceeds its $804M net income after tax) with no figure excluding only one-offs (the adjusted $2.25 also
+  removes recurring step-up amortization: the NKE FY2007, AVGO and PFE rule), so no year is in the history until the Q4 FY09 print
+  adds FY2009 (GAAP $3.10); the 32 weeks from the listing and the 52 after the Q4 FY08 print are the owner's call (an EPS anchor, or
+  FY2008 at $2.25: that call flips all 10 built dates from RICH to CHEAP or FAIR). EPS is GAAP diluted class A; BASE is the fiscal-year
+  net revenue range (FY2010 11-15%, "at the lower end" in the note), the EPS growth bound ("greater than 20%") gives no field, and the
+  margin words no step; the bounds rule applies (FY2009 alone); rule T is on Visa U.S.A. 2002-2007 and Visa Inc. 2008 as published,
+  nothing pro forma; the signals are revenue, the share of gross revenues kept after client incentives, opex excluding the litigation
+  line, receivables and the operating margin; DURABLE, no live theme (retro/README.md, "V").
 - **Never use the owner's personal email** in request headers to external
   services (SEC asks for a contact in the User-Agent).
