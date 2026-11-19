@@ -21223,6 +21223,15 @@ Controls and checks (before any outcome):
   publication: the only hits are the outlooks' own years (2010, 2011), forecasts in the filings' words.
 - **Regression:** the shared code is untouched (the firewall tool gains a V entry); rebuilding the 2008-2009 dates of GOOG and JPM, MU's
   2008 and AVGO's 2009 changes nothing.
+- **Firewall** (run after the build was committed, before any outcome): passes at the 4 cutoffs above (the first built date, the FY2009
+  10-K, the first date after it, and 2010-01-01), 0 files changed and no planted text (1, 4, 5 and 10 dates). The planted facts include
+  a print with absurd values in every field and an absurd fiscal-year guide, absurd full-year actuals for the year after the latest
+  vintage, a later Q4 print excluding its own year, a later vintage of the other kind that excludes a year and readmits FY2008, with
+  planted texts, figures, listing and window start, a guide, a dividend, a listing, a company name, a split on the price data's next
+  split date and prices from the cutoff multiplied by 10. As a positive control the plants reach the first date after them: rebuilding
+  2009-11-13 (cutoff 2009-10-30) and 2009-12-04 (cutoff 2009-11-23) with the plants stops at the builder's refusal of the planted guide
+  ("no encoding for guides"), and with the guide, dividend, listing, split and name taken out, at its check of the planted print. A full
+  rebuild is byte-identical.
 
 Seen in the build (method behaviour, not tuned):
 - **RICH on all 10 dates; legacy tier AVOID on all 10.** Robustness agrees on every date (every variant RICH).
