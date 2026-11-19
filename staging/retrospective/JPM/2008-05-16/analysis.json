@@ -1,0 +1,210 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "JPM",
+ "company": "JPMorgan Chase & Co.",
+ "as_of": "2008-05-16",
+ "price_date": "2008-05-16",
+ "price": 46.53,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); net revenue, credit cost, expense, nonperforming-asset and pre-tax margin signals with JPMorgan Chase's rule-T thresholds",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'JPMorgan Chase & Co. ... is a leading global financial services firm and one of the largest banking institutions in the United States' 'JPMorgan Chase’s results of operations could be adversely affected by U.S. and international markets and economic conditions.' 'The Firm’s consumer businesses are particularly affected by domestic economic conditions' 'There is increasing competition in the financial services industry which may adversely affect JPMorgan Chase’s results of operations.' (FY2007 10-K); DURABLE, risk 2: the 10-K ties results to markets and the economy, a cycle and a competitive field, and does not call its own business cyclical (its one use of the word is for consumer loan losses: the LOW and SHW reading); no theme in taxonomy_eras.json is live for a bank holding company on these dates (OFFSHORE is scoped to IT services), so the watch list is empty and these words stay here (the PEP obesity rule)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "'JPMorgan Chase & Co. ... is a leading global financial services firm and one of the largest banking institutions in the United States' 'JPMorgan Chase’s results of operations could be adversely affected by U.S. and international markets and economic conditions.' 'The Firm’s consumer businesses are particularly affected by domestic economic conditions' 'There is increasing competition in the financial services industry which may adversely affect JPMorgan Chase’s results of operations.' (FY2007 10-K); DURABLE, risk 2: the 10-K ties results to markets and the economy, a cycle and a competitive field, and does not call its own business cyclical (its one use of the word is for consumer loan losses: the LOW and SHW reading); no theme in taxonomy_eras.json is live for a bank holding company on these dates (OFFSHORE is scoped to IT services), so the watch list is empty and these words stay here (the PEP obesity rule). durable franchise (obsolescence risk 2/5); price rich; Ratio B 1.19x; +17% to EPP floor; model-vs-market gap -0.51; conservative 2yr +11%.",
+  "theme": null
+ },
+ "legacy_signal_short": "WATCHLIST",
+ "legacy_signal": "◐ WATCHLIST",
+ "metrics": {
+  "ratio_b": 1.19,
+  "ratio_b_fmt": "1.19x",
+  "epp": 39.78,
+  "epp_gap_pct": 17.0,
+  "epp_adj": 0.0,
+  "proxy_composite": 1.65,
+  "sca": 0.133,
+  "adj_composite": 1.782,
+  "market_composite": 2.29,
+  "adj_gap": -0.51,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": 11.2,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.96,
+    "pe": 9.7,
+    "price": 9.31,
+    "desc": "EPS -53.3%/yr (worst year FY03-FY07, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 2.59,
+    "pe": 11.5,
+    "price": 29.78,
+    "desc": "EPS -23.5%/yr (Q1 revenue YoY + margin + buyback); P/E at its 5.4-yr median"
+   },
+   "BULL": {
+    "eps": 5.22,
+    "pe": 14.9,
+    "price": 77.78,
+    "desc": "EPS +8.7%/yr (FY03-FY07 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 11.56,
+    "pe": 26.0,
+    "price": 300.56,
+    "desc": "EPS +61.7%/yr (best 2-yr run FY03-FY07, at least BULL); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 1.19,
+   "epp_gap_pct": 17.0,
+   "adj_gap": -0.51,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 11.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.41,
+   "epp_gap_pct": 17.0,
+   "adj_gap": -0.23,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 11.2,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 2.84,
+   "epp_gap_pct": 17.0,
+   "adj_gap": -0.88,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 11.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 1.1,
+   "epp_gap_pct": 17.0,
+   "adj_gap": -0.49,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 11.2,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 1.3,
+   "epp_gap_pct": 17.0,
+   "adj_gap": -0.54,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 11.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 1.19,
+   "epp_gap_pct": 17.0,
+   "adj_gap": -0.21,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 11.2,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 1.19,
+   "epp_gap_pct": -12.3,
+   "adj_gap": -0.31,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 11.2,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 1.19,
+   "epp_gap_pct": 17.0,
+   "adj_gap": -0.44,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 11.2,
+   "price_state": "FAIR"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP",
+  "FAIR",
+  "RICH"
+ ],
+ "summary": "JPM (retrospective, 2008-05-16) ◐ WATCHLIST — Ratio B 1.19x (80.0% downside to Bear $9.31 / +67.2% upside to Bull $77.78) | Adj composite 1.78 vs market 2.29: gap -0.51 [OVERVALUED] | +17% above the EPP floor $39.78 (9x FY08E $4.42) | Conservative 2-yr case: +11.2% total (+5.6%/yr) | At 10.5x FY08E the 15% hurdle price $61.54 sits between the BASE and BULL cases; revenue -11.0% YoY in Q1 2008, forward revenues -11% (Q1 2008 revenue growth (no Q2 2008 guide)); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "JPM13",
+   "published": "2008-02-29",
+   "filed": "accepted 2008-02-29 15:24 ET (during market hours)",
+   "title": "JPMorgan Chase & Co. FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000119312508043536/d10k.htm",
+   "supports": "five-year summary 2003-2007: the FY07 history vintage; Item 1 and 1A wording"
+  },
+  {
+   "id": "JPM7",
+   "published": "2007-01-17",
+   "filed": "accepted 2007-01-17 07:59 ET (before the open)",
+   "title": "JPMorgan Chase Q4 2006 earnings release and financial supplement (8-K, exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000095012307000454/y28968exv99w2.htm",
+   "supports": "Q4 2006 print; FY2005 and FY2006 diluted EPS from continuing operations excluding merger costs"
+  },
+  {
+   "id": "JPM12",
+   "published": "2008-01-16",
+   "filed": "accepted 2008-01-16 07:18 ET (before the open)",
+   "title": "JPMorgan Chase Q4 2007 earnings release and financial supplement (8-K, exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000095012308000442/y46643exv99w2.htm",
+   "supports": "Q4 2007 print; FY2007 actuals; FY2006 and FY2007 diluted EPS from continuing operations excluding merger costs"
+  },
+  {
+   "id": "JPM14",
+   "published": "2008-04-16",
+   "filed": "accepted 2008-04-16 07:15 ET (before the open)",
+   "title": "JPMorgan Chase Q1 2008 earnings release and financial supplement (8-K, exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000095012308004183/y54615exv99w2.htm",
+   "supports": "Q1 2008 print"
+  },
+  {
+   "id": "JPM9",
+   "published": "2007-04-18",
+   "filed": "accepted 2007-04-18 07:14 ET (before the open)",
+   "title": "JPMorgan Chase Q1 2007 earnings release and financial supplement (8-K, exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000095012307005573/y33468exv99w2.htm",
+   "supports": "Q1 2007 print; the quarterly dividend of $0.38 declared 2007-04-17"
+  },
+  {
+   "id": "Y0",
+   "published": "2008-05-16",
+   "title": "Yahoo Finance daily prices, JPM and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/JPM/history",
+   "supports": "close $46.53 as traded on AS_OF, 52-week range, realized vol, beta, the 5.4-yr P/E distribution from 2003-01-02"
+  }
+ ],
+ "warnings": [
+  "calendar year(s) 2055, 2087, 2088 after 2008 outside FY labels — make sure they are forecasts"
+ ],
+ "generated": "2026-11-19"
+}

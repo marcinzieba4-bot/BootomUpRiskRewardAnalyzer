@@ -1,0 +1,2299 @@
+{
+ "_doc": "Point-in-time fact sheet for JPM retrospectives (retro/build_jpm.py), generated from JPMorgan Chase's own filings: every raw figure is read from the row it appears in (kept in 'rows'), checked against its filing, and every growth rate, margin, gap and rule-T value is computed from those figures. Every value carries a source with its publication date (EDGAR acceptance time, ET; a filing accepted after the 16:00 ET close is dated the next trading day). Decisions: retro/README.md, 'JPM'.",
+ "ticker": "JPM",
+ "sources": {
+  "JPM1": {
+   "published": "2001-03-22",
+   "filed": "accepted 2001-03-22 00:00 ET (before the open)",
+   "title": "J.P. Morgan Chase & Co. FY2000 10-K405",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000095012301002499/y46253e10-k405.txt",
+   "supports": "five-year summary 1996-2000 and the five-year loan and nonperforming-asset tables: the 1996-1997 rule-T changes"
+  },
+  "JPM2": {
+   "published": "2002-03-22",
+   "filed": "accepted 2002-03-22 00:00 ET (before the open)",
+   "title": "J.P. Morgan Chase & Co. FY2001 10-K405",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000095012302002823/y57010e10-k405.htm",
+   "supports": "five-year summary 1997-2001: the 1997-1998 rule-T changes"
+  },
+  "JPM3": {
+   "published": "2003-03-19",
+   "filed": "accepted 2003-03-19 15:16 ET (during market hours)",
+   "title": "J.P. Morgan Chase & Co. FY2002 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000095012303002985/y83354e10vk.htm",
+   "supports": "five-year summary 1998-2002: the 1998-1999 rule-T changes; the 2002 special items (the FY2002 exclusion)"
+  },
+  "JPM4": {
+   "published": "2004-02-19",
+   "filed": "accepted 2004-02-18 16:17 ET (after the 16:00 ET close, so dated the next trading day)",
+   "title": "J.P. Morgan Chase & Co. FY2003 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000095012304002022/y94051e10vk.htm",
+   "supports": "five-year summary 1999-2003: the 1999-2000 rule-T changes"
+  },
+  "JPM5": {
+   "published": "2005-03-03",
+   "filed": "accepted 2005-03-02 16:42 ET (after the 16:00 ET close, so dated the next trading day)",
+   "title": "JPMorgan Chase & Co. FY2004 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000095012305002539/y05475e10vk.htm",
+   "supports": "selected annual data 2000-2004: the 2000-2001 rule-T changes"
+  },
+  "JPM6": {
+   "published": "2006-03-10",
+   "filed": "accepted 2006-03-09 17:01 ET (after the 16:00 ET close, so dated the next trading day)",
+   "title": "JPMorgan Chase & Co. FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000095012306002875/y17599e10vk.htm",
+   "supports": "selected annual data 2001-2005: the 2001-2002 rule-T changes; the 2004 nonoperating items (the FY2004 test)"
+  },
+  "JPM7": {
+   "published": "2007-01-17",
+   "filed": "accepted 2007-01-17 07:59 ET (before the open)",
+   "title": "JPMorgan Chase Q4 2006 earnings release and financial supplement (8-K, exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000095012307000454/y28968exv99w2.htm",
+   "supports": "Q4 2006 print; FY2005 and FY2006 diluted EPS from continuing operations excluding merger costs"
+  },
+  "JPM8": {
+   "published": "2007-03-01",
+   "filed": "accepted 2007-03-01 14:41 ET (during market hours)",
+   "title": "JPMorgan Chase & Co. FY2006 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000095012307003015/y30834e10vk.htm",
+   "supports": "five-year summary 2002-2006 (EPS from continuing operations, revenue, diluted shares): the FY06 history vintage; the 2002-2006 rule-T changes; Item 1 and 1A wording"
+  },
+  "JPM9": {
+   "published": "2007-04-18",
+   "filed": "accepted 2007-04-18 07:14 ET (before the open)",
+   "title": "JPMorgan Chase Q1 2007 earnings release and financial supplement (8-K, exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000095012307005573/y33468exv99w2.htm",
+   "supports": "Q1 2007 print; the quarterly dividend of $0.38 declared 2007-04-17"
+  },
+  "JPM10": {
+   "published": "2007-07-18",
+   "filed": "accepted 2007-07-18 07:10 ET (before the open)",
+   "title": "JPMorgan Chase Q2 2007 earnings release and financial supplement (8-K, exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000095012307009984/y37191exv99w2.htm",
+   "supports": "Q2 2007 print"
+  },
+  "JPM11": {
+   "published": "2007-10-17",
+   "filed": "accepted 2007-10-17 07:14 ET (before the open)",
+   "title": "JPMorgan Chase Q3 2007 earnings release and financial supplement (8-K, exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000095012307013899/y40444exv99w2.htm",
+   "supports": "Q3 2007 print"
+  },
+  "JPM12": {
+   "published": "2008-01-16",
+   "filed": "accepted 2008-01-16 07:18 ET (before the open)",
+   "title": "JPMorgan Chase Q4 2007 earnings release and financial supplement (8-K, exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000095012308000442/y46643exv99w2.htm",
+   "supports": "Q4 2007 print; FY2007 actuals; FY2006 and FY2007 diluted EPS from continuing operations excluding merger costs"
+  },
+  "JPM13": {
+   "published": "2008-02-29",
+   "filed": "accepted 2008-02-29 15:24 ET (during market hours)",
+   "title": "JPMorgan Chase & Co. FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000119312508043536/d10k.htm",
+   "supports": "five-year summary 2003-2007: the FY07 history vintage; Item 1 and 1A wording"
+  },
+  "JPM14": {
+   "published": "2008-04-16",
+   "filed": "accepted 2008-04-16 07:15 ET (before the open)",
+   "title": "JPMorgan Chase Q1 2008 earnings release and financial supplement (8-K, exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000095012308004183/y54615exv99w2.htm",
+   "supports": "Q1 2008 print"
+  },
+  "JPM15": {
+   "published": "2008-07-17",
+   "filed": "accepted 2008-07-17 06:50 ET (before the open)",
+   "title": "JPMorgan Chase Q2 2008 earnings release and financial supplement (8-K, exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000095012308007952/y63117exv99w2.htm",
+   "supports": "Q2 2008 print"
+  },
+  "JPM16": {
+   "published": "2008-08-12",
+   "filed": "accepted 2008-08-11 16:31 ET (after the 16:00 ET close, so dated the next trading day)",
+   "title": "JPMorgan Chase & Co. Q2 2008 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000095012308009300/y63389e10vq.htm",
+   "supports": "nonperforming assets at June 30, 2008 and 2007 as the 10-Q reports them (the release's figures restated)"
+  },
+  "JPM17": {
+   "published": "2008-10-15",
+   "filed": "accepted 2008-10-15 07:09 ET (before the open)",
+   "title": "JPMorgan Chase Q3 2008 earnings release and financial supplement (8-K, exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000095012308012848/y71827exv99w2.htm",
+   "supports": "Q3 2008 print"
+  },
+  "JPM18": {
+   "published": "2008-11-07",
+   "filed": "accepted 2008-11-06 21:44 ET (after the 16:00 ET close, so dated the next trading day)",
+   "title": "JPMorgan Chase & Co. Q3 2008 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000095012308014621/y72204e10vq.htm",
+   "supports": "nonperforming assets at September 30, 2008 as the 10-Q reports them (the release's figure restated)"
+  },
+  "JPM19": {
+   "published": "2009-01-15",
+   "filed": "accepted 2009-01-15 06:56 ET (before the open)",
+   "title": "JPMorgan Chase Q4 2008 earnings release and financial supplement (8-K, exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000095012309000686/y74000exv99w2.htm",
+   "supports": "Q4 2008 print; FY2008 actuals; FY2007 and FY2008 diluted EPS before extraordinary gain excluding merger costs"
+  },
+  "JPM20": {
+   "published": "2009-02-24",
+   "filed": "accepted 2009-02-24 12:09 ET (during market hours)",
+   "title": "JPMorgan Chase 8-K: press release of 2009-02-23, quarterly common stock dividend reduced to $0.05",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961709000397/feb24exh.htm",
+   "supports": "the quarterly dividend of $0.05"
+  },
+  "JPM21": {
+   "published": "2009-03-03",
+   "filed": "accepted 2009-03-02 16:12 ET (after the 16:00 ET close, so dated the next trading day)",
+   "title": "JPMorgan Chase & Co. FY2008 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000095012309003840/y74757e10vk.htm",
+   "supports": "five-year summary 2004-2008: the FY08 history vintage; Item 1 and 1A wording"
+  },
+  "JPM22": {
+   "published": "2009-04-16",
+   "filed": "accepted 2009-04-16 06:45 ET (before the open)",
+   "title": "JPMorgan Chase Q1 2009 earnings release and financial supplement (8-K, exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000095012309006635/y76121exv99w2.htm",
+   "supports": "Q1 2009 print"
+  },
+  "JPM23": {
+   "published": "2009-05-29",
+   "filed": "accepted 2009-05-29 09:26 ET (before the open)",
+   "title": "JPMorgan Chase 8-K revising the EPS of the FY2008 10-K's selected financial data (participating securities)",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000095012309009707/x77500e8vk.htm",
+   "supports": "diluted EPS from continuing operations 2004-2008 as revised: FY2004 in the history from this date"
+  },
+  "JPM24": {
+   "published": "2009-07-16",
+   "filed": "accepted 2009-07-16 06:47 ET (before the open)",
+   "title": "JPMorgan Chase Q2 2009 earnings release and financial supplement (8-K, exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000095012309022605/y78252exv99w2.htm",
+   "supports": "Q2 2009 print"
+  },
+  "JPM25": {
+   "published": "2009-10-14",
+   "filed": "accepted 2009-10-14 07:08 ET (before the open)",
+   "title": "JPMorgan Chase Q3 2009 earnings release and financial supplement (8-K, exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000095012309050167/y79736exv99w2.htm",
+   "supports": "Q3 2009 print"
+  }
+ },
+ "history_vintages": [
+  {
+   "published": "2007-03-01",
+   "sources": [
+    "JPM8",
+    "JPM7"
+   ],
+   "fy_label": "FY06",
+   "kind": "DURABLE",
+   "why": "'JPMorgan Chase & Co. ... is a leading global financial services firm and one of the largest banking institutions in the United States' 'JPMorgan Chase’s results of operations could be adversely affected by U.S. and international markets and economic conditions.' 'The Firm’s consumer businesses are particularly affected by domestic economic conditions' 'There is increasing competition in the financial services industry which may adversely affect JPMorgan Chase’s results of operations.' (FY2006 10-K); DURABLE, risk 2: the 10-K ties results to markets and the economy, a cycle and a competitive field, and does not call its own business cyclical (its one use of the word is for consumer loan losses: the LOW and SHW reading); no theme in taxonomy_eras.json is live for a bank holding company on these dates (OFFSHORE is scoped to IT services), so the watch list is empty and these words stay here (the PEP obesity rule)",
+   "eps_normalized": {
+    "2003": 3.17,
+    "2004": 1.48,
+    "2005": 2.45,
+    "2006": 3.87
+   },
+   "eps_sources": {
+    "2003": "JPM8",
+    "2004": "JPM8",
+    "2005": "JPM7",
+    "2006": "JPM7"
+   },
+   "eps_excluded": {},
+   "eps_first_excluded": {
+    "2002": "a distorted year (the AAPL FY2002 test): the special items the FY2002 10-K lists ($1,210M of merger and restructuring costs, the $1,300M Enron-related surety and litigation charge and $98M of excess real estate, $1,721M after tax) exceed the year's $1,514M income from continuing operations as the FY2006 10-K restates it ($0.73 a diluted share); the operating EPS without them ($1.66) was published before that restatement, on the earlier basis (the UNP trucking rule), so the history and the P/E window start with FY2003"
+   },
+   "revenue_usd_b": {
+    "2003": 32.803,
+    "2004": 42.372,
+    "2005": 53.748,
+    "2006": 61.437
+   },
+   "revenue_sources": {
+    "2003": "JPM8",
+    "2004": "JPM8",
+    "2005": "JPM8",
+    "2006": "JPM8"
+   },
+   "diluted_shares_m": {
+    "2003": 2055.0,
+    "2004": 2851.0,
+    "2005": 3557.0,
+    "2006": 3574.0
+   },
+   "shares_sources": {
+    "2003": "JPM8",
+    "2004": "JPM8",
+    "2005": "JPM8",
+    "2006": "JPM8"
+   },
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_op_margin": 32.37,
+   "prev_fy_op_margin_note": "FY06 income from continuing operations before income tax expense $19,886M / total net revenue $61,437M",
+   "prev_fy_pretax_margin": 32.37,
+   "prev_fy_pretax_margin_note": "FY06 income from continuing operations before income tax expense $19,886M / total net revenue $61,437M",
+   "prev_fy_credit_cost": 5.32,
+   "prev_fy_sales_growth": 14.3,
+   "tax_rate": 0.3136,
+   "tax_note": "FY06 income tax expense $6,237M on pre-tax $19,886M",
+   "dividend_annual": null,
+   "dividend_note": null,
+   "business_line": "bank holding company: investment bank, retail financial services, card services, commercial banking, treasury and securities services, asset management",
+   "groups": [
+    [
+     "Noninterest revenue",
+     40.195,
+     17.6
+    ],
+    [
+     "Net interest income",
+     21.242,
+     8.6
+    ]
+   ],
+   "groups_basis": "FY06 total net revenue by component, reported basis (FY06 growth)",
+   "company": "JPMorgan Chase & Co.",
+   "exchange": "NYSE",
+   "pe_window_start": "2003-01-01",
+   "fiscal_year": "year ended December 31,",
+   "rows": [
+    "Total net revenue | 61,437 | 53,748 | 42,372 | 32,803 | $29,076",
+    "Income from continuing operations before income tax expense | 19,886 | 11,839 | 5,856 | 9,773 | 2,274",
+    "Income tax expense | 6,237 | 3,585 | 1,596 | 3,209 | 760",
+    "Provision for credit losses | 3,270 | 3,483 | 2,544 | 1,540 | 4,331",
+    "Income from continuing operations | 3.82 | 2.32 | 1.48 | 3.17 | 0.73",
+    "Diluted | 3,574 | 3,557 | 2,851 | 2,055 | 2,009",
+    "Cash dividends declared per share | 1.36 | 1.36 | 1.36 | 1.36 | 1.36",
+    "Noninterest revenue | 40,195 | 34,193 | 25,845",
+    "Net interest income | 21,242 | 19,555 | 16,527"
+   ],
+   "normalization": "diluted EPS from continuing operations (before the 2008 extraordinary gain), each year from the latest filing that reports it; where a supplement on the same basis publishes the figure excluding merger costs, that figure (the ACN rule): FY05 $2.45 (GAAP $2.32) and FY06 $3.87 (GAAP $3.82), Q4 2006 supplement; FY03 $3.17 and FY04 $1.48 are GAAP (no figure on the continuing-operations basis excludes their items; the operating EPS of the FY2004 and FY2005 10-Ks is on the earlier basis: the UNP trucking rule), and FY04's listed nonoperating items ($3,745M after tax: merger costs, the litigation reserve charge, accounting policy conformity) are under its $4,260M income from continuing operations, so the AAPL FY2002 test is not met; FY02 is excluded"
+  },
+  {
+   "published": "2008-02-29",
+   "sources": [
+    "JPM13",
+    "JPM7",
+    "JPM12"
+   ],
+   "fy_label": "FY07",
+   "kind": "DURABLE",
+   "why": "'JPMorgan Chase & Co. ... is a leading global financial services firm and one of the largest banking institutions in the United States' 'JPMorgan Chase’s results of operations could be adversely affected by U.S. and international markets and economic conditions.' 'The Firm’s consumer businesses are particularly affected by domestic economic conditions' 'There is increasing competition in the financial services industry which may adversely affect JPMorgan Chase’s results of operations.' (FY2007 10-K); DURABLE, risk 2: the 10-K ties results to markets and the economy, a cycle and a competitive field, and does not call its own business cyclical (its one use of the word is for consumer loan losses: the LOW and SHW reading); no theme in taxonomy_eras.json is live for a bank holding company on these dates (OFFSHORE is scoped to IT services), so the watch list is empty and these words stay here (the PEP obesity rule)",
+   "eps_normalized": {
+    "2003": 3.17,
+    "2004": 1.48,
+    "2005": 2.45,
+    "2006": 3.87,
+    "2007": 4.42
+   },
+   "eps_sources": {
+    "2003": "JPM13",
+    "2004": "JPM13",
+    "2005": "JPM7",
+    "2006": "JPM12",
+    "2007": "JPM12"
+   },
+   "eps_excluded": {},
+   "eps_first_excluded": {
+    "2002": "a distorted year (the AAPL FY2002 test): the special items the FY2002 10-K lists ($1,210M of merger and restructuring costs, the $1,300M Enron-related surety and litigation charge and $98M of excess real estate, $1,721M after tax) exceed the year's $1,514M income from continuing operations as the FY2006 10-K restates it ($0.73 a diluted share); the operating EPS without them ($1.66) was published before that restatement, on the earlier basis (the UNP trucking rule), so the history and the P/E window start with FY2003"
+   },
+   "revenue_usd_b": {
+    "2003": 33.191,
+    "2004": 42.736,
+    "2005": 54.248,
+    "2006": 61.999,
+    "2007": 71.372
+   },
+   "revenue_sources": {
+    "2003": "JPM13",
+    "2004": "JPM13",
+    "2005": "JPM13",
+    "2006": "JPM13",
+    "2007": "JPM13"
+   },
+   "diluted_shares_m": {
+    "2003": 2055.0,
+    "2004": 2851.0,
+    "2005": 3557.0,
+    "2006": 3574.0,
+    "2007": 3508.0
+   },
+   "shares_sources": {
+    "2003": "JPM13",
+    "2004": "JPM13",
+    "2005": "JPM13",
+    "2006": "JPM13",
+    "2007": "JPM13"
+   },
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_op_margin": 31.95,
+   "prev_fy_op_margin_note": "FY07 income from continuing operations before income tax expense $22,805M / total net revenue $71,372M",
+   "prev_fy_pretax_margin": 31.95,
+   "prev_fy_pretax_margin_note": "FY07 income from continuing operations before income tax expense $22,805M / total net revenue $71,372M",
+   "prev_fy_credit_cost": 9.62,
+   "prev_fy_sales_growth": 15.1,
+   "tax_rate": 0.3262,
+   "tax_note": "FY07 income tax expense $7,440M on pre-tax $22,805M",
+   "dividend_annual": null,
+   "dividend_note": null,
+   "business_line": "bank holding company: investment bank, retail financial services, card services, commercial banking, treasury and securities services, asset management",
+   "groups": [
+    [
+     "Noninterest revenue",
+     44.966,
+     10.3
+    ],
+    [
+     "Net interest income",
+     26.406,
+     24.3
+    ]
+   ],
+   "groups_basis": "FY07 total net revenue by component, reported basis (FY07 growth)",
+   "company": "JPMorgan Chase & Co.",
+   "exchange": "NYSE",
+   "pe_window_start": "2003-01-01",
+   "fiscal_year": "year ended December 31,",
+   "rows": [
+    "Total net revenue | 71,372 | 61,999 | 54,248 | 42,736 | 33,191",
+    "Income from continuing operations before income tax expense | 22,805 | 19,886 | 11,839 | 5,856 | 9,773",
+    "Income tax expense | 7,440 | 6,237 | 3,585 | 1,596 | 3,209",
+    "Provision for credit losses | 6,864 | 3,270 | 3,483 | 2,544 | 1,540",
+    "Income from continuing operations | 4.38 | 3.82 | 2.32 | 1.48 | 3.17",
+    "Diluted | 3,508 | 3,574 | 3,557 | 2,851 | 2,055",
+    "Cash dividends declared per share | 1.48 | 1.36 | 1.36 | 1.36 | 1.36",
+    "Noninterest revenue | 44,966 | 40,757 | 34,693",
+    "Net interest income | 26,406 | 21,242 | 19,555"
+   ],
+   "normalization": "diluted EPS from continuing operations (before the 2008 extraordinary gain), each year from the latest filing that reports it; where a supplement on the same basis publishes the figure excluding merger costs, that figure (the ACN rule): FY05 $2.45 (GAAP $2.32; Q4 2006 supplement), FY06 $3.87 (GAAP $3.82) and FY07 $4.42 (GAAP $4.38), Q4 2007 supplement; FY03 $3.17 and FY04 $1.48 are GAAP (no figure on the continuing-operations basis excludes their items; the operating EPS of the FY2004 and FY2005 10-Ks is on the earlier basis: the UNP trucking rule), and FY04's listed nonoperating items ($3,745M after tax: merger costs, the litigation reserve charge, accounting policy conformity) are under its $4,260M income from continuing operations, so the AAPL FY2002 test is not met; FY02 is excluded"
+  },
+  {
+   "published": "2009-03-03",
+   "sources": [
+    "JPM21",
+    "JPM13",
+    "JPM7",
+    "JPM12",
+    "JPM19"
+   ],
+   "fy_label": "FY08",
+   "kind": "DURABLE",
+   "why": "'JPMorgan Chase & Co. ... is a leading global financial services firm and one of the largest banking institutions in the United States' 'Our businesses have been, and in the future will continue to be, materially affected by economic and market conditions' 'There is increasing competition in the financial services industry which may adversely affect our results of operations.' (FY2008 10-K); DURABLE, risk 2: the 10-K ties results to markets and the economy, a cycle and a competitive field, and does not call its own business cyclical (its one use of the word is for consumer loan losses: the LOW and SHW reading); no theme in taxonomy_eras.json is live for a bank holding company on these dates (OFFSHORE is scoped to IT services), so the watch list is empty and these words stay here (the PEP obesity rule)",
+   "eps_normalized": {
+    "2003": 3.17,
+    "2004": 1.48,
+    "2005": 2.45,
+    "2006": 3.87,
+    "2007": 4.42,
+    "2008": 0.92
+   },
+   "eps_sources": {
+    "2003": "JPM13",
+    "2004": "JPM21",
+    "2005": "JPM7",
+    "2006": "JPM12",
+    "2007": "JPM19",
+    "2008": "JPM19"
+   },
+   "eps_excluded": {},
+   "eps_first_excluded": {
+    "2002": "a distorted year (the AAPL FY2002 test): the special items the FY2002 10-K lists ($1,210M of merger and restructuring costs, the $1,300M Enron-related surety and litigation charge and $98M of excess real estate, $1,721M after tax) exceed the year's $1,514M income from continuing operations as the FY2006 10-K restates it ($0.73 a diluted share); the operating EPS without them ($1.66) was published before that restatement, on the earlier basis (the UNP trucking rule), so the history and the P/E window start with FY2003"
+   },
+   "revenue_usd_b": {
+    "2003": 33.191,
+    "2004": 42.736,
+    "2005": 54.248,
+    "2006": 61.999,
+    "2007": 71.372,
+    "2008": 67.252
+   },
+   "revenue_sources": {
+    "2003": "JPM13",
+    "2004": "JPM21",
+    "2005": "JPM21",
+    "2006": "JPM21",
+    "2007": "JPM21",
+    "2008": "JPM21"
+   },
+   "diluted_shares_m": {
+    "2003": 2055.0,
+    "2004": 2851.0,
+    "2005": 3557.0,
+    "2006": 3574.0,
+    "2007": 3508.0,
+    "2008": 3605.0
+   },
+   "shares_sources": {
+    "2003": "JPM13",
+    "2004": "JPM21",
+    "2005": "JPM21",
+    "2006": "JPM21",
+    "2007": "JPM21",
+    "2008": "JPM21"
+   },
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_op_margin": 4.12,
+   "prev_fy_op_margin_note": "FY08 income from continuing operations before income tax expense $2,773M / total net revenue $67,252M",
+   "prev_fy_pretax_margin": 4.12,
+   "prev_fy_pretax_margin_note": "FY08 income from continuing operations before income tax expense $2,773M / total net revenue $67,252M",
+   "prev_fy_credit_cost": 31.19,
+   "prev_fy_sales_growth": -5.8,
+   "tax_rate": -0.3339,
+   "tax_note": "FY08 income tax benefit $926M on pre-tax $2,773M",
+   "dividend_annual": null,
+   "dividend_note": null,
+   "business_line": "bank holding company: investment bank, retail financial services, card services, commercial banking, treasury and securities services, asset management",
+   "groups": [
+    [
+     "Noninterest revenue",
+     28.473,
+     -36.7
+    ],
+    [
+     "Net interest income",
+     38.779,
+     46.9
+    ]
+   ],
+   "groups_basis": "FY08 total net revenue by component, reported basis (FY08 growth)",
+   "company": "JPMorgan Chase & Co.",
+   "exchange": "NYSE",
+   "pe_window_start": "2003-01-01",
+   "fiscal_year": "year ended December 31,",
+   "rows": [
+    "Total net revenue | 67,252 | 71,372 | 61,999 | 54,248 | 42,736",
+    "Income from continuing operations before income tax expense (benefit) | 2,773 | 22,805 | 19,886 | 11,839 | 5,856",
+    "Income tax expense (benefit)(b) | (926) | 7,440 | 6,237 | 3,585 | 1,596",
+    "Provision for credit losses | 19,445 | 6,864 | 3,270 | 3,483 | 1,686",
+    "Provision for credit losses – accounting conformity(a) | 1,534 | — | — | — | 858",
+    "Income from continuing operations | 0.84 | 4.38 | 3.82 | 2.32 | 1.48",
+    "Diluted | 3,605 | 3,508 | 3,574 | 3,557 | 2,851",
+    "Cash dividends declared per share | 1.52 | 1.48 | 1.36 | 1.36 | 1.36",
+    "Noninterest revenue | 28,473 | 44,966 | 40,757",
+    "Net interest income | 38,779 | 26,406 | 21,242"
+   ],
+   "normalization": "diluted EPS from continuing operations (before the 2008 extraordinary gain), each year from the latest filing that reports it; where a supplement on the same basis publishes the figure excluding merger costs, that figure (the ACN rule): FY05 $2.45 (GAAP $2.32; Q4 2006 supplement), FY06 $3.87 (GAAP $3.82; Q4 2007 supplement), FY07 $4.42 (GAAP $4.38) and FY08 $0.92 (GAAP $0.84 before the extraordinary gain; net income $1.37), Q4 2008 supplement; FY03 $3.17 and FY04 $1.48 are GAAP (no figure on the continuing-operations basis excludes their items; the operating EPS of the FY2004 and FY2005 10-Ks is on the earlier basis: the UNP trucking rule), and FY04's listed nonoperating items ($3,745M after tax: merger costs, the litigation reserve charge, accounting policy conformity) are under its $4,260M income from continuing operations, so the AAPL FY2002 test is not met; FY02 is excluded"
+  },
+  {
+   "published": "2009-05-29",
+   "sources": [
+    "JPM23",
+    "JPM21",
+    "JPM13",
+    "JPM7",
+    "JPM12",
+    "JPM19"
+   ],
+   "fy_label": "FY08",
+   "kind": "DURABLE",
+   "why": "'JPMorgan Chase & Co. ... is a leading global financial services firm and one of the largest banking institutions in the United States' 'Our businesses have been, and in the future will continue to be, materially affected by economic and market conditions' 'There is increasing competition in the financial services industry which may adversely affect our results of operations.' (FY2008 10-K); DURABLE, risk 2: the 10-K ties results to markets and the economy, a cycle and a competitive field, and does not call its own business cyclical (its one use of the word is for consumer loan losses: the LOW and SHW reading); no theme in taxonomy_eras.json is live for a bank holding company on these dates (OFFSHORE is scoped to IT services), so the watch list is empty and these words stay here (the PEP obesity rule)",
+   "eps_normalized": {
+    "2003": 3.17,
+    "2004": 1.45,
+    "2005": 2.45,
+    "2006": 3.87,
+    "2007": 4.42,
+    "2008": 0.92
+   },
+   "eps_sources": {
+    "2003": "JPM13",
+    "2004": "JPM23",
+    "2005": "JPM7",
+    "2006": "JPM12",
+    "2007": "JPM19",
+    "2008": "JPM19"
+   },
+   "eps_excluded": {},
+   "eps_first_excluded": {
+    "2002": "a distorted year (the AAPL FY2002 test): the special items the FY2002 10-K lists ($1,210M of merger and restructuring costs, the $1,300M Enron-related surety and litigation charge and $98M of excess real estate, $1,721M after tax) exceed the year's $1,514M income from continuing operations as the FY2006 10-K restates it ($0.73 a diluted share); the operating EPS without them ($1.66) was published before that restatement, on the earlier basis (the UNP trucking rule), so the history and the P/E window start with FY2003"
+   },
+   "revenue_usd_b": {
+    "2003": 33.191,
+    "2004": 42.736,
+    "2005": 54.248,
+    "2006": 61.999,
+    "2007": 71.372,
+    "2008": 67.252
+   },
+   "revenue_sources": {
+    "2003": "JPM13",
+    "2004": "JPM21",
+    "2005": "JPM21",
+    "2006": "JPM21",
+    "2007": "JPM21",
+    "2008": "JPM21"
+   },
+   "diluted_shares_m": {
+    "2003": 2055.0,
+    "2004": 2851.0,
+    "2005": 3557.0,
+    "2006": 3574.0,
+    "2007": 3508.0,
+    "2008": 3605.0
+   },
+   "shares_sources": {
+    "2003": "JPM13",
+    "2004": "JPM21",
+    "2005": "JPM21",
+    "2006": "JPM21",
+    "2007": "JPM21",
+    "2008": "JPM21"
+   },
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_op_margin": 4.12,
+   "prev_fy_op_margin_note": "FY08 income from continuing operations before income tax expense $2,773M / total net revenue $67,252M",
+   "prev_fy_pretax_margin": 4.12,
+   "prev_fy_pretax_margin_note": "FY08 income from continuing operations before income tax expense $2,773M / total net revenue $67,252M",
+   "prev_fy_credit_cost": 31.19,
+   "prev_fy_sales_growth": -5.8,
+   "tax_rate": -0.3339,
+   "tax_note": "FY08 income tax benefit $926M on pre-tax $2,773M",
+   "dividend_annual": null,
+   "dividend_note": null,
+   "business_line": "bank holding company: investment bank, retail financial services, card services, commercial banking, treasury and securities services, asset management",
+   "groups": [
+    [
+     "Noninterest revenue",
+     28.473,
+     -36.7
+    ],
+    [
+     "Net interest income",
+     38.779,
+     46.9
+    ]
+   ],
+   "groups_basis": "FY08 total net revenue by component, reported basis (FY08 growth)",
+   "company": "JPMorgan Chase & Co.",
+   "exchange": "NYSE",
+   "pe_window_start": "2003-01-01",
+   "fiscal_year": "year ended December 31,",
+   "rows": [
+    "Total net revenue | 67,252 | 71,372 | 61,999 | 54,248 | 42,736",
+    "Income from continuing operations before income tax expense (benefit) | 2,773 | 22,805 | 19,886 | 11,839 | 5,856",
+    "Income tax expense (benefit)(b) | (926) | 7,440 | 6,237 | 3,585 | 1,596",
+    "Provision for credit losses | 19,445 | 6,864 | 3,270 | 3,483 | 1,686",
+    "Provision for credit losses – accounting conformity(a) | 1,534 | — | — | — | 858",
+    "Income from continuing operations | 0.84 | 4.38 | 3.82 | 2.32 | 1.48",
+    "Diluted | 3,605 | 3,508 | 3,574 | 3,557 | 2,851",
+    "Cash dividends declared per share | 1.52 | 1.48 | 1.36 | 1.36 | 1.36",
+    "Noninterest revenue | 28,473 | 44,966 | 40,757",
+    "Net interest income | 38,779 | 26,406 | 21,242",
+    "As revised | 0.81 | 4.33 | 3.78 | 2.29 | 1.45"
+   ],
+   "normalization": "diluted EPS from continuing operations (before the 2008 extraordinary gain), each year from the latest filing that reports it; where a supplement on the same basis publishes the figure excluding merger costs, that figure (the ACN rule): FY05 $2.45 (GAAP $2.32; Q4 2006 supplement), FY06 $3.87 (GAAP $3.82; Q4 2007 supplement), FY07 $4.42 (GAAP $4.38) and FY08 $0.92 (GAAP $0.84 before the extraordinary gain; net income $1.37), Q4 2008 supplement; FY03 $3.17 and FY04 $1.45 are GAAP (no figure on the continuing-operations basis excludes their items; the operating EPS of the FY2004 and FY2005 10-Ks is on the earlier basis: the UNP trucking rule), and FY04's listed nonoperating items ($3,745M after tax: merger costs, the litigation reserve charge, accounting policy conformity) are under its $4,260M income from continuing operations, so the AAPL FY2002 test is not met; FY02 is excluded; the 8-K of 2009-05-29 revises the FY2008 10-K's EPS for unvested share awards that participate in dividends (diluted, continuing operations: $1.45, $2.29, $3.78, $4.33, $0.81 for 2004-2008): FY04 takes the revised $1.45, and the years with a company figure excluding merger costs keep it, first published on the earlier basis and not republished (a seam; the XOM 2009 reading of the same accounting change)"
+  }
+ ],
+ "prints": [
+  {
+   "quarter": "Q4 2006",
+   "fy": 2006,
+   "q": 4,
+   "published": "2007-01-17",
+   "source": "JPM7",
+   "release": "Jan 17",
+   "release_time": "before the open on Jan 17: 8-K accepted 2007-01-17 07:59 ET (before the open)",
+   "period_end": "2006-12-31",
+   "raw": {
+    "revenue_m": 16054.0,
+    "revenue_prior_m": 13482.0,
+    "revenue_prev_q_m": 15400.0,
+    "provision_m": 1134.0,
+    "provision_prior_m": 1224.0,
+    "expense_m": 9746.0,
+    "expense_prior_m": 8430.0,
+    "pretax_m": 5174.0,
+    "pretax_prior_m": 3828.0,
+    "npa_m": 2341.0,
+    "npa_prior_m": 2590.0,
+    "loans_m": 483127.0,
+    "loans_prior_m": 419148.0
+   },
+   "rows": {
+    "rev": "TOTAL NET REVENUE | 16,054 | 15,400 | 14,940 | 15,043 | 13,482 | 4 | 19 | 61,437 | 53,748 | 14",
+    "exp": "TOTAL NONINTEREST EXPENSE | 9,746 | 9,651 | 9,236 | 9,648 | 8,430 | 1 | 16 | 38,281 | 38,426 | —",
+    "pre": "Income from Continuing Operations before Income Tax Expense | 5,174 | 4,937 | 5,211 | 4,564 | 3,828 | 5 | 35 | 19,886 | 11,839 | 68",
+    "tax": "Income Tax Expense | 1,268 | 1,705 | 1,727 | 1,537 | 1,186 | (26) | 7 | 6,237 | 3,585 | 74",
+    "eps": "Income from Continuing Operations | 1.09 | 0.90 | 0.98 | 0.85 | 0.74 | 21 | 47 | 3.82 | 2.32 | 65",
+    "eps_ex_merger": "Income from Continuing Operations Excluding Merger Costs | 1.11 | 0.91 | 0.99 | 0.86 | 0.75 | 22 | 48 | 3.87 | 2.45 | 58",
+    "npa": "TOTAL NONPERFORMING ASSETS (b) | 2,341 | 2,300 | 2,384 | 2,348 | 2,590 | 2 | (10)",
+    "loans": "TOTAL LOANS — REPORTED | 483,127 | 463,544 | 455,104 | 432,081 | 419,148 | 4 | 15",
+    "sh": "Weighted-Average Diluted Shares Outstanding | 3,578.6 | 3,574.0 | 3,572.2 | 3,570.8 | 3,563.9 | — | — | 3,573.9 | 3,557.3 | —",
+    "div": "Cash Dividends Declared | 0.34 | 0.34 | 0.34 | 0.34 | 0.34 | — | — | 1.36 | 1.36 | —",
+    "t1": "Tier 1 Capital Ratio | 8.7 | (e) | 8.6 | 8.5 | 8.5 | 8.5",
+    "prov": "Provision for Credit Losses | 1,134 | 812 | 493 | 831 | 1,224 | 40 | (7) | 3,270 | 3,483 | (6)"
+   },
+   "sales_b": 16.054,
+   "npa_b": 2.341,
+   "sales_pct": 19.1,
+   "seq_pct": 4.2,
+   "credit_cost": 7.06,
+   "credit_cost_bp": -201.5,
+   "pretax_margin": 32.23,
+   "pretax_margin_bp": 383.5,
+   "expense_pct": 15.6,
+   "expense_gap_pp": -3.5,
+   "npa_pct": -9.6,
+   "loans_pct": 15.3,
+   "npa_gap_pp": -24.9,
+   "eps_q": 1.11,
+   "eps_q_prior": 0.75,
+   "diluted_shares_m": 3578.6,
+   "tier1": 8.7,
+   "sales_note": "total net revenue $16,054M vs $13,482M a year earlier, $15,400M the quarter before (reported basis)",
+   "credit_note": "provision for credit losses $1,134M vs $1,224M; nonperforming assets $2,341M vs $2,590M a year earlier; loans $483,127M vs $419,148M",
+   "eps_note": "diluted EPS from continuing operations excluding merger costs $1.11 vs $0.75, the company's figure (GAAP $1.09 vs $0.74)",
+   "shares_note": "diluted shares 3,578.6M; Tier 1 capital ratio 8.7%; cash dividends declared $0.34 a share in the quarter",
+   "next_print": "Q1 2007 print (the quarter ends in March)",
+   "cash_return_text": null,
+   "note": "",
+   "fy_actual": {
+    "fy": 2006,
+    "fy_label": "FY06",
+    "eps_normalized": 3.87,
+    "revenue_usd_b": 61.437,
+    "diluted_shares_m": 3573.9,
+    "normalization_note": "FY06 $3.87, the company's diluted EPS from continuing operations excluding merger costs (Q4 2006 supplement; GAAP $3.82)",
+    "op_margin": 32.37,
+    "op_margin_note": "FY06 income before income tax expense $19,886M / total net revenue $61,437M (Q4 2006 release)",
+    "pretax_margin": 32.37,
+    "pretax_margin_note": "FY06 income before income tax expense $19,886M / total net revenue $61,437M (Q4 2006 release)",
+    "credit_cost": 5.32,
+    "sales_growth": 14.3,
+    "tax_rate": 0.3136,
+    "tax_note": "FY06 income tax expense $6,237M on pre-tax $19,886M"
+   }
+  },
+  {
+   "quarter": "Q1 2007",
+   "fy": 2007,
+   "q": 1,
+   "published": "2007-04-18",
+   "source": "JPM9",
+   "release": "Apr 18",
+   "release_time": "before the open on Apr 18: 8-K accepted 2007-04-18 07:14 ET (before the open)",
+   "period_end": "2007-03-31",
+   "raw": {
+    "revenue_m": 18968.0,
+    "revenue_prior_m": 15175.0,
+    "revenue_prev_q_m": 16193.0,
+    "provision_m": 1008.0,
+    "provision_prior_m": 831.0,
+    "expense_m": 10628.0,
+    "expense_prior_m": 9780.0,
+    "pretax_m": 7332.0,
+    "pretax_prior_m": 4564.0,
+    "npa_m": 2421.0,
+    "npa_prior_m": 2348.0,
+    "loans_m": 449765.0,
+    "loans_prior_m": 432081.0
+   },
+   "rows": {
+    "rev": "TOTAL NET REVENUE | 18,968 | 16,193 | 15,545 | 15,086 | 15,175 | 17 | 25",
+    "exp": "TOTAL NONINTEREST EXPENSE | 10,628 | 9,885 | 9,796 | 9,382 | 9,780 | 8 | 9",
+    "pre": "Income from Continuing Operations before Income Tax Expense | 7,332 | 5,174 | 4,937 | 5,211 | 4,564 | 42 | 61",
+    "tax": "Income Tax Expense | 2,545 | 1,268 | 1,705 | 1,727 | 1,537 | 101 | 66",
+    "eps": "Income from Continuing Operations | 1.34 | 1.09 | 0.90 | 0.98 | 0.85 | 23 | 58",
+    "eps_ex_merger": "Income from Continuing Operations Excluding Merger Costs | 1.35 | 1.11 | 0.91 | 0.99 | 0.86 | 22 | 57",
+    "npa": "TOTAL NONPERFORMING ASSETS (b) | 2,421 | 2,341 | 2,300 | 2,384 | 2,348 | 3 | 3",
+    "loans": "TOTAL LOANS - REPORTED | 449,765 | 483,127 | 463,544 | 455,104 | 432,081 | (7) | 4",
+    "sh": "Weighted-Average Diluted Shares Outstanding | 3,559.5 | 3,578.6 | 3,574.0 | 3,572.2 | 3,570.8 | (1) | -",
+    "div": "Cash Dividends Declared | 0.34 | 0.34 | 0.34 | 0.34 | 0.34 | - | -",
+    "t1": "Tier 1 Capital Ratio | 8.5 | (h) | 8.7 | 8.6 | 8.5 | 8.5",
+    "prov": "Provision for Credit Losses | 1,008 | 1,134 | 812 | 493 | 831 | (11) | 21"
+   },
+   "sales_b": 18.968,
+   "npa_b": 2.421,
+   "sales_pct": 25.0,
+   "seq_pct": 17.1,
+   "credit_cost": 5.31,
+   "credit_cost_bp": -16.2,
+   "pretax_margin": 38.65,
+   "pretax_margin_bp": 857.9,
+   "expense_pct": 8.7,
+   "expense_gap_pp": -16.3,
+   "npa_pct": 3.1,
+   "loans_pct": 4.1,
+   "npa_gap_pp": -1.0,
+   "eps_q": 1.35,
+   "eps_q_prior": 0.86,
+   "diluted_shares_m": 3559.5,
+   "tier1": 8.5,
+   "sales_note": "total net revenue $18,968M vs $15,175M a year earlier, $16,193M the quarter before (reported basis)",
+   "credit_note": "provision for credit losses $1,008M vs $831M; nonperforming assets $2,421M vs $2,348M a year earlier; loans $449,765M vs $432,081M",
+   "eps_note": "diluted EPS from continuing operations excluding merger costs $1.35 vs $0.86, the company's figure (GAAP $1.34 vs $0.85)",
+   "shares_note": "diluted shares 3,559.5M; Tier 1 capital ratio 8.5%; cash dividends declared $0.34 a share in the quarter",
+   "next_print": "Q2 2007 print (the quarter ends in June)",
+   "cash_return_text": null,
+   "note": ""
+  },
+  {
+   "quarter": "Q2 2007",
+   "fy": 2007,
+   "q": 2,
+   "published": "2007-07-18",
+   "source": "JPM10",
+   "release": "Jul 18",
+   "release_time": "before the open on Jul 18: 8-K accepted 2007-07-18 07:10 ET (before the open)",
+   "period_end": "2007-06-30",
+   "raw": {
+    "revenue_m": 18908.0,
+    "revenue_prior_m": 15086.0,
+    "revenue_prev_q_m": 18968.0,
+    "provision_m": 1529.0,
+    "provision_prior_m": 493.0,
+    "expense_m": 11028.0,
+    "expense_prior_m": 9382.0,
+    "pretax_m": 6351.0,
+    "pretax_prior_m": 5211.0,
+    "npa_m": 2586.0,
+    "npa_prior_m": 2384.0,
+    "loans_m": 465037.0,
+    "loans_prior_m": 455104.0
+   },
+   "rows": {
+    "rev": "TOTAL NET REVENUE | 18,908 | 18,968 | 16,193 | 15,545 | 15,086 | — | 25 | 37,876 | 30,261 | 25",
+    "exp": "TOTAL NONINTEREST EXPENSE | 11,028 | 10,628 | 9,885 | 9,796 | 9,382 | 4 | 18 | 21,656 | 19,162 | 13",
+    "pre": "Income from Continuing Operations before Income Tax Expense | 6,351 | 7,332 | 5,174 | 4,937 | 5,211 | (13) | 22 | 13,683 | 9,775 | 40",
+    "tax": "Income Tax Expense | 2,117 | 2,545 | 1,268 | 1,705 | 1,727 | (17) | 23 | 4,662 | 3,264 | 43",
+    "eps": "Income from Continuing Operations | 1.20 | 1.34 | 1.09 | 0.90 | 0.98 | (10) | 22 | 2.55 | 1.82 | 40",
+    "eps_ex_merger": "Income from Continuing Operations Excluding Merger Costs | 1.21 | 1.35 | 1.11 | 0.91 | 0.99 | (10) | 22 | 2.57 | 1.85 | 39",
+    "npa": "TOTAL NONPERFORMING ASSETS (b) | 2,586 | 2,421 | 2,341 | 2,300 | 2,384 | 7 | 8",
+    "loans": "TOTAL LOANS — REPORTED (e) | 465,037 | 449,765 | 483,127 | 463,544 | 455,104 | 3 | 2",
+    "sh": "Weighted-Average Diluted Shares Outstanding | 3,521.6 | 3,559.5 | 3,578.6 | 3,574.0 | 3,572.2 | (1) | (1) | 3,540.5 | 3,571.5 | (1)",
+    "div": "Cash Dividends Declared | 0.38 | 0.34 | 0.34 | 0.34 | 0.34 | 12 | 12 | 0.72 | 0.68 | 6",
+    "t1": "Tier 1 Capital Ratio | 8.4 | (h) | 8.5 | 8.7 | 8.6 | 8.5",
+    "prov": "Provision for Credit Losses | 1,529 | 1,008 | 1,134 | 812 | 493 | 52 | 210 | 2,537 | 1,324 | 92"
+   },
+   "sales_b": 18.908,
+   "npa_b": 2.586,
+   "sales_pct": 25.3,
+   "seq_pct": -0.3,
+   "credit_cost": 8.09,
+   "credit_cost_bp": 481.9,
+   "pretax_margin": 33.59,
+   "pretax_margin_bp": -95.3,
+   "expense_pct": 17.5,
+   "expense_gap_pp": -7.8,
+   "npa_pct": 8.5,
+   "loans_pct": 2.2,
+   "npa_gap_pp": 6.3,
+   "eps_q": 1.21,
+   "eps_q_prior": 0.99,
+   "diluted_shares_m": 3521.6,
+   "tier1": 8.4,
+   "sales_note": "total net revenue $18,908M vs $15,086M a year earlier, $18,968M the quarter before (reported basis)",
+   "credit_note": "provision for credit losses $1,529M vs $493M; nonperforming assets $2,586M vs $2,384M a year earlier; loans $465,037M vs $455,104M",
+   "eps_note": "diluted EPS from continuing operations excluding merger costs $1.21 vs $0.99, the company's figure (GAAP $1.20 vs $0.98)",
+   "shares_note": "diluted shares 3,521.6M; Tier 1 capital ratio 8.4%; cash dividends declared $0.38 a share in the quarter",
+   "next_print": "Q3 2007 print (the quarter ends in September)",
+   "cash_return_text": null,
+   "note": ""
+  },
+  {
+   "quarter": "Q3 2007",
+   "fy": 2007,
+   "q": 3,
+   "published": "2007-10-17",
+   "source": "JPM11",
+   "release": "Oct 17",
+   "release_time": "before the open on Oct 17: 8-K accepted 2007-10-17 07:14 ET (before the open)",
+   "period_end": "2007-09-30",
+   "raw": {
+    "revenue_m": 16112.0,
+    "revenue_prior_m": 15545.0,
+    "revenue_prev_q_m": 18908.0,
+    "provision_m": 1785.0,
+    "provision_prior_m": 812.0,
+    "expense_m": 9327.0,
+    "expense_prior_m": 9796.0,
+    "pretax_m": 5000.0,
+    "pretax_prior_m": 4937.0,
+    "npa_m": 3181.0,
+    "npa_prior_m": 2300.0,
+    "loans_m": 486320.0,
+    "loans_prior_m": 463544.0
+   },
+   "rows": {
+    "rev": "TOTAL NET REVENUE | 16,112 | 18,908 | 18,968 | 16,193 | 15,545 | (15) | 4 | 53,988 | 45,806 | 18",
+    "exp": "TOTAL NONINTEREST EXPENSE | 9,327 | 11,028 | 10,628 | 9,885 | 9,796 | (15) | (5) | 30,983 | 28,958 | 7",
+    "pre": "Income from Continuing Operations before Income Tax Expense | 5,000 | 6,351 | 7,332 | 5,174 | 4,937 | (21) | 1 | 18,683 | 14,712 | 27",
+    "tax": "Income Tax Expense | 1,627 | 2,117 | 2,545 | 1,268 | 1,705 | (23) | (5) | 6,289 | 4,969 | 27",
+    "eps": "Income from Continuing Operations | 0.97 | 1.20 | 1.34 | 1.09 | 0.90 | (19) | 8 | 3.52 | 2.73 | 29",
+    "eps_ex_merger": "Income from Continuing Operations Excluding Merger Costs | 0.98 | 1.21 | 1.35 | 1.11 | 0.91 | (19) | 8 | 3.55 | 2.76 | 29",
+    "npa": "TOTAL NONPERFORMING ASSETS | 3,181 | 2,586 | 2,421 | 2,341 | 2,300 | 23 | 38",
+    "loans": "TOTAL LOANS — REPORTED | 486,320 | 465,037 | 449,765 | 483,127 | 463,544 | 5 | 5",
+    "sh": "Weighted-Average Diluted Shares Outstanding | 3,477.7 | # | 3,521.6 | # | 3,559.5 | # | 3,578.6 | # | 3,574.0 | # | (1) | (3) | 3,519.6 | # | 3,572.3 | # | (1)",
+    "div": "Cash Dividends Declared | 0.38 | 0.38 | 0.34 | 0.34 | 0.34 | – | 12 | 1.10 | 1.02 | 8",
+    "t1": "Tier 1 Capital Ratio | 8.4 | (h) | 8.4 | 8.5 | 8.7 | 8.6",
+    "prov": "Provision for Credit Losses | 1,785 | 1,529 | 1,008 | 1,134 | 812 | 17 | 120 | 4,322 | 2,136 | 102"
+   },
+   "sales_b": 16.112,
+   "npa_b": 3.181,
+   "sales_pct": 3.6,
+   "seq_pct": -14.8,
+   "credit_cost": 11.08,
+   "credit_cost_bp": 585.5,
+   "pretax_margin": 31.03,
+   "pretax_margin_bp": -72.7,
+   "expense_pct": -4.8,
+   "expense_gap_pp": -8.4,
+   "npa_pct": 38.3,
+   "loans_pct": 4.9,
+   "npa_gap_pp": 33.4,
+   "eps_q": 0.98,
+   "eps_q_prior": 0.91,
+   "diluted_shares_m": 3477.7,
+   "tier1": 8.4,
+   "sales_note": "total net revenue $16,112M vs $15,545M a year earlier, $18,908M the quarter before (reported basis)",
+   "credit_note": "provision for credit losses $1,785M vs $812M; nonperforming assets $3,181M vs $2,300M a year earlier; loans $486,320M vs $463,544M",
+   "eps_note": "diluted EPS from continuing operations excluding merger costs $0.98 vs $0.91, the company's figure (GAAP $0.97 vs $0.90)",
+   "shares_note": "diluted shares 3,477.7M; Tier 1 capital ratio 8.4%; cash dividends declared $0.38 a share in the quarter",
+   "next_print": "Q4 2007 print (the quarter ends in December)",
+   "cash_return_text": null,
+   "note": ""
+  },
+  {
+   "quarter": "Q4 2007",
+   "fy": 2007,
+   "q": 4,
+   "published": "2008-01-16",
+   "source": "JPM12",
+   "release": "Jan 16",
+   "release_time": "before the open on Jan 16: 8-K accepted 2008-01-16 07:18 ET (before the open)",
+   "period_end": "2007-12-31",
+   "raw": {
+    "revenue_m": 17384.0,
+    "revenue_prior_m": 16193.0,
+    "revenue_prev_q_m": 16112.0,
+    "provision_m": 2542.0,
+    "provision_prior_m": 1134.0,
+    "expense_m": 10720.0,
+    "expense_prior_m": 9885.0,
+    "pretax_m": 4122.0,
+    "pretax_prior_m": 5174.0,
+    "npa_m": 4237.0,
+    "npa_prior_m": 2341.0,
+    "loans_m": 519374.0,
+    "loans_prior_m": 483127.0
+   },
+   "rows": {
+    "rev": "TOTAL NET REVENUE | 17,384 | 16,112 | 18,908 | 18,968 | 16,193 | 8 | 7 | 71,372 | 61,999 | 15",
+    "exp": "TOTAL NONINTEREST EXPENSE | 10,720 | 9,327 | 11,028 | 10,628 | 9,885 | 15 | 8 | 41,703 | 38,843 | 7",
+    "pre": "Income from Continuing Operations before Income Tax Expense | 4,122 | 5,000 | 6,351 | 7,332 | 5,174 | (18) | (20) | 22,805 | 19,886 | 15",
+    "tax": "Income Tax Expense | 1,151 | 1,627 | 2,117 | 2,545 | 1,268 | (29) | (9) | 7,440 | 6,237 | 19",
+    "eps": "Income from Continuing Operations | 0.86 | 0.97 | 1.20 | 1.34 | 1.09 | (11) | (21) | 4.38 | 3.82 | 15",
+    "eps_ex_merger": "Income from Continuing Operations Excluding Merger Costs | 0.86 | 0.98 | 1.21 | 1.35 | 1.11 | (12) | (23) | 4.42 | 3.87 | 14",
+    "npa": "TOTAL NONPERFORMING ASSETS | 4,237 | 3,181 | 2,586 | 2,421 | 2,341 | 33 | 81",
+    "loans": "TOTAL LOANS — REPORTED | 519,374 | 486,320 | 465,037 | 449,765 | 483,127 | 7 | 8",
+    "sh": "Weighted-Average Diluted Shares Outstanding | 3,471.8 | # | 3,477.7 | # | 3,521.6 | # | 3,559.5 | # | 3,578.6 | # | – | (3) | 3,507.6 | # | 3,573.9 | # | (2)",
+    "div": "Cash Dividends Declared | 0.38 | 0.38 | 0.38 | 0.34 | 0.34 | – | 12 | 1.48 | 1.36 | 9",
+    "t1": "Tier 1 Capital Ratio | 8.4 | (g) | 8.4 | 8.4 | 8.5 | 8.7",
+    "prov": "Provision for Credit Losses | 2,542 | 1,785 | 1,529 | 1,008 | 1,134 | 42 | 124 | 6,864 | 3,270 | 110"
+   },
+   "sales_b": 17.384,
+   "npa_b": 4.237,
+   "sales_pct": 7.4,
+   "seq_pct": 7.9,
+   "credit_cost": 14.62,
+   "credit_cost_bp": 762.0,
+   "pretax_margin": 23.71,
+   "pretax_margin_bp": -824.1,
+   "expense_pct": 8.4,
+   "expense_gap_pp": 1.1,
+   "npa_pct": 81.0,
+   "loans_pct": 7.5,
+   "npa_gap_pp": 73.5,
+   "eps_q": 0.86,
+   "eps_q_prior": 1.11,
+   "diluted_shares_m": 3471.8,
+   "tier1": 8.4,
+   "sales_note": "total net revenue $17,384M vs $16,193M a year earlier, $16,112M the quarter before (reported basis)",
+   "credit_note": "provision for credit losses $2,542M vs $1,134M; nonperforming assets $4,237M vs $2,341M a year earlier; loans $519,374M vs $483,127M",
+   "eps_note": "diluted EPS from continuing operations excluding merger costs $0.86 vs $1.11, the company's figure (GAAP $0.86 vs $1.09)",
+   "shares_note": "diluted shares 3,471.8M; Tier 1 capital ratio 8.4%; cash dividends declared $0.38 a share in the quarter",
+   "next_print": "Q1 2008 print (the quarter ends in March)",
+   "cash_return_text": null,
+   "note": "",
+   "fy_actual": {
+    "fy": 2007,
+    "fy_label": "FY07",
+    "eps_normalized": 4.42,
+    "revenue_usd_b": 71.372,
+    "diluted_shares_m": 3507.6,
+    "normalization_note": "FY07 $4.42, the company's diluted EPS from continuing operations excluding merger costs (Q4 2007 supplement; GAAP $4.38)",
+    "op_margin": 31.95,
+    "op_margin_note": "FY07 income before income tax expense $22,805M / total net revenue $71,372M (Q4 2007 release)",
+    "pretax_margin": 31.95,
+    "pretax_margin_note": "FY07 income before income tax expense $22,805M / total net revenue $71,372M (Q4 2007 release)",
+    "credit_cost": 9.62,
+    "sales_growth": 15.1,
+    "tax_rate": 0.3262,
+    "tax_note": "FY07 income tax expense $7,440M on pre-tax $22,805M"
+   }
+  },
+  {
+   "quarter": "Q1 2008",
+   "fy": 2008,
+   "q": 1,
+   "published": "2008-04-16",
+   "source": "JPM14",
+   "release": "Apr 16",
+   "release_time": "before the open on Apr 16: 8-K accepted 2008-04-16 07:15 ET (before the open)",
+   "period_end": "2008-03-31",
+   "raw": {
+    "revenue_m": 16890.0,
+    "revenue_prior_m": 18968.0,
+    "revenue_prev_q_m": 17384.0,
+    "provision_m": 4424.0,
+    "provision_prior_m": 1008.0,
+    "expense_m": 8931.0,
+    "expense_prior_m": 10628.0,
+    "pretax_m": 3535.0,
+    "pretax_prior_m": 7332.0,
+    "npa_m": 5443.0,
+    "npa_prior_m": 2421.0,
+    "loans_m": 537056.0,
+    "loans_prior_m": 449765.0
+   },
+   "rows": {
+    "rev": "TOTAL NET REVENUE | 16,890 | 17,384 | 16,112 | 18,908 | 18,968 | (3) | (11)",
+    "exp": "TOTAL NONINTEREST EXPENSE | 8,931 | 10,720 | 9,327 | 11,028 | 10,628 | (17) | (16)",
+    "pre": "Income before income tax expense | 3,535 | 4,122 | 5,000 | 6,351 | 7,332 | (14) | (52)",
+    "tax": "Income tax expense | 1,162 | 1,151 | 1,627 | 2,117 | 2,545 | 1 | (54)",
+    "eps": "Net income | 0.68 | 0.86 | 0.97 | 1.20 | 1.34 | (21) | (49)",
+    "eps_ex_merger": "Net income excluding merger costs | 0.68 | 0.86 | 0.98 | 1.21 | 1.35 | (21) | (50)",
+    "npa": "TOTAL NONPERFORMING ASSETS | 5,443 | 4,237 | 3,181 | 2,586 | 2,421 | 28 | 125",
+    "loans": "TOTAL LOANS — REPORTED | 537,056 | 519,374 | 486,320 | 465,037 | 449,765 | 3 | 19",
+    "sh": "Weighted-average diluted shares outstanding | 3,494.7 | 3,471.8 | 3,477.7 | 3,521.6 | 3,559.5 | 1 | (2)",
+    "div": "Cash dividends declared | 0.38 | 0.38 | 0.38 | 0.38 | 0.34 | — | 12",
+    "t1": "Tier 1 capital ratio | 8.3 | (d) | 8.4 | 8.4 | 8.4 | 8.5",
+    "prov": "Provision for credit losses | 4,424 | 2,542 | 1,785 | 1,529 | 1,008 | 74 | 339"
+   },
+   "sales_b": 16.89,
+   "npa_b": 5.443,
+   "sales_pct": -11.0,
+   "seq_pct": -2.8,
+   "credit_cost": 26.19,
+   "credit_cost_bp": 2087.9,
+   "pretax_margin": 20.93,
+   "pretax_margin_bp": -1772.5,
+   "expense_pct": -16.0,
+   "expense_gap_pp": -5.0,
+   "npa_pct": 124.8,
+   "loans_pct": 19.4,
+   "npa_gap_pp": 105.4,
+   "eps_q": 0.68,
+   "eps_q_prior": 1.35,
+   "diluted_shares_m": 3494.7,
+   "tier1": 8.3,
+   "sales_note": "total net revenue $16,890M vs $18,968M a year earlier, $17,384M the quarter before (reported basis)",
+   "credit_note": "provision for credit losses $4,424M vs $1,008M; nonperforming assets $5,443M vs $2,421M a year earlier; loans $537,056M vs $449,765M",
+   "eps_note": "diluted EPS (net income) excluding merger costs $0.68 vs $1.35, the company's figure (GAAP $0.68 vs $1.34)",
+   "shares_note": "diluted shares 3,494.7M; Tier 1 capital ratio 8.3%; cash dividends declared $0.38 a share in the quarter",
+   "next_print": "Q2 2008 print (the quarter ends in June)",
+   "cash_return_text": null,
+   "note": "The Bear Stearns merger, agreed 2008-03-16, is not in the quarter"
+  },
+  {
+   "quarter": "Q2 2008",
+   "fy": 2008,
+   "q": 2,
+   "published": "2008-07-17",
+   "source": "JPM15",
+   "release": "Jul 17",
+   "release_time": "before the open on Jul 17: 8-K accepted 2008-07-17 06:50 ET (before the open)",
+   "period_end": "2008-06-30",
+   "raw": {
+    "revenue_m": 18399.0,
+    "revenue_prior_m": 18908.0,
+    "revenue_prev_q_m": 16890.0,
+    "provision_m": 3455.0,
+    "provision_prior_m": 1529.0,
+    "expense_m": 12177.0,
+    "expense_prior_m": 11028.0,
+    "pretax_m": 2767.0,
+    "pretax_prior_m": 6351.0,
+    "npa_m": 6591.0,
+    "npa_prior_m": 2586.0,
+    "loans_m": 538029.0,
+    "loans_prior_m": 465037.0
+   },
+   "rows": {
+    "rev": "TOTAL NET REVENUE | 18,399 | 16,890 | 17,384 | 16,112 | 18,908 | 9 | (3) | 35,289 | 37,876 | (7)",
+    "exp": "TOTAL NONINTEREST EXPENSE | 12,177 | 8,931 | 10,720 | 9,327 | 11,028 | 36 | 10 | 21,108 | 21,656 | (3)",
+    "pre": "Income before income tax expense | 2,767 | 3,535 | 4,122 | 5,000 | 6,351 | (22) | (56) | 6,302 | 13,683 | (54)",
+    "tax": "Income tax expense | 764 | 1,162 | 1,151 | 1,627 | 2,117 | (34) | (64) | 1,926 | 4,662 | (59)",
+    "eps": "Net income | 0.54 | 0.68 | 0.86 | 0.97 | 1.20 | (21) | (55) | 1.22 | 2.55 | (52)",
+    "eps_ex_merger": "Net income excluding merger costs | 0.57 | 0.68 | 0.86 | 0.98 | 1.21 | (16) | (53) | 1.25 | 2.57 | (51)",
+    "npa": "TOTAL NONPERFORMING ASSETS | 6,591 | 5,443 | 4,237 | 3,181 | 2,586 | 21 | 155",
+    "loans": "TOTAL LOANS — REPORTED | 538,029 | 537,056 | 519,374 | 486,320 | 465,037 | — | 16",
+    "sh": "Weighted-average diluted shares outstanding | 3,531.0 | 3,494.7 | 3,471.8 | 3,477.7 | 3,521.6 | 1 | — | 3,512.9 | 3,540.5 | (1)",
+    "div": "Cash dividends declared | 0.38 | 0.38 | 0.38 | 0.38 | 0.38 | — | — | 0.76 | 0.72 | 6",
+    "t1": "Tier 1 capital ratio | 9.1 | (d) | 8.3 | 8.4 | 8.4 | 8.4",
+    "prov": "Provision for credit losses | 3,455 | 4,424 | 2,542 | 1,785 | 1,529 | (22) | 126 | 7,879 | 2,537 | 211"
+   },
+   "sales_b": 18.399,
+   "npa_b": 6.591,
+   "sales_pct": -2.7,
+   "seq_pct": 8.9,
+   "credit_cost": 18.78,
+   "credit_cost_bp": 1069.2,
+   "pretax_margin": 15.04,
+   "pretax_margin_bp": -1855.0,
+   "expense_pct": 10.4,
+   "expense_gap_pp": 13.1,
+   "npa_pct": 154.9,
+   "loans_pct": 15.7,
+   "npa_gap_pp": 139.2,
+   "eps_q": 0.57,
+   "eps_q_prior": 1.21,
+   "diluted_shares_m": 3531.0,
+   "tier1": 9.1,
+   "sales_note": "total net revenue $18,399M vs $18,908M a year earlier, $16,890M the quarter before (reported basis)",
+   "credit_note": "provision for credit losses $3,455M vs $1,529M; nonperforming assets $6,591M vs $2,586M a year earlier; loans $538,029M vs $465,037M",
+   "eps_note": "diluted EPS (net income) excluding merger costs $0.57 vs $1.21, the company's figure (GAAP $0.54 vs $1.20)",
+   "shares_note": "diluted shares 3,531.0M; Tier 1 capital ratio 9.1%; cash dividends declared $0.38 a share in the quarter",
+   "next_print": "Q3 2008 print (the quarter ends in September)",
+   "cash_return_text": null,
+   "note": "",
+   "restated": {
+    "published": "2008-08-12",
+    "source": "JPM16",
+    "raw": {
+     "revenue_m": 18399.0,
+     "revenue_prior_m": 18908.0,
+     "revenue_prev_q_m": 16890.0,
+     "provision_m": 3455.0,
+     "provision_prior_m": 1529.0,
+     "expense_m": 12177.0,
+     "expense_prior_m": 11028.0,
+     "pretax_m": 2767.0,
+     "pretax_prior_m": 6351.0,
+     "npa_m": 6233.0,
+     "npa_prior_m": 2423.0,
+     "loans_m": 538029.0,
+     "loans_prior_m": 465037.0
+    },
+    "rows": {
+     "npa": "Nonperforming assets(b) | 6,233 | 5,143 | 3,933 | 3,009 | 2,423"
+    },
+    "npa_b": 6.233,
+    "sales_pct": -2.7,
+    "seq_pct": 8.9,
+    "credit_cost": 18.78,
+    "credit_cost_bp": 1069.2,
+    "pretax_margin": 15.04,
+    "pretax_margin_bp": -1855.0,
+    "expense_pct": 10.4,
+    "expense_gap_pp": 13.1,
+    "npa_pct": 157.2,
+    "loans_pct": 15.7,
+    "npa_gap_pp": 141.5,
+    "credit_note": "provision for credit losses $3,455M vs $1,529M; nonperforming assets $6,233M vs $2,423M a year earlier, as the 10-Q reports them (subprime mortgage and home equity loans classified as nonperforming on the policy of the other home lending products; the release had $6,591M vs $2,586M); loans $538,029M vs $465,037M"
+   }
+  },
+  {
+   "quarter": "Q3 2008",
+   "fy": 2008,
+   "q": 3,
+   "published": "2008-10-15",
+   "source": "JPM17",
+   "release": "Oct 15",
+   "release_time": "before the open on Oct 15: 8-K accepted 2008-10-15 07:09 ET (before the open)",
+   "period_end": "2008-09-30",
+   "raw": {
+    "revenue_m": 14737.0,
+    "revenue_prior_m": 16112.0,
+    "revenue_prev_q_m": 18399.0,
+    "provision_m": 5787.0,
+    "provision_prior_m": 1785.0,
+    "expense_m": 11137.0,
+    "expense_prior_m": 9327.0,
+    "pretax_m": -2187.0,
+    "pretax_prior_m": 5000.0,
+    "npa_m": 15910.0,
+    "npa_prior_m": 3009.0,
+    "loans_m": 761381.0,
+    "loans_prior_m": 486320.0
+   },
+   "rows": {
+    "rev": "TOTAL NET REVENUE | 14,737 | 18,399 | 16,890 | 17,384 | 16,112 | (20) | (9) | 50,026 | 53,988 | (7)",
+    "exp": "TOTAL NONINTEREST EXPENSE | 11,137 | 12,177 | 8,931 | 10,720 | 9,327 | (9) | 19 | 32,245 | 30,983 | 4",
+    "pre": "Income (loss) before income tax expense and extraordinary gain | (2,187) | 2,767 | 3,535 | 4,122 | 5,000 | NM | NM | 4,115 | 18,683 | (78)",
+    "tax": "Income tax expense (benefit) (b) | (2,133) | 764 | 1,162 | 1,151 | 1,627 | NM | NM | (207) | 6,289 | NM",
+    "eps": "Income (loss) before extraordinary gain | (0.06) | 0.54 | 0.68 | 0.86 | 0.97 | NM | NM | 1.15 | 3.52 | (67)",
+    "eps_ex_merger": "Income (loss) before extraordinary gain excluding merger costs | (0.04) | 0.57 | 0.68 | 0.86 | 0.98 | NM | NM | 1.20 | 3.55 | (66)",
+    "npa": "TOTAL NONPERFORMING ASSETS | 15,910 | 6,233 | 5,143 | 3,933 | 3,009 | 155 | 429",
+    "loans": "TOTAL LOANS — REPORTED | 761,381 | 538,029 | 537,056 | 519,374 | 486,320 | 42 | 57",
+    "sh": "Weighted-average diluted shares outstanding | 3,444.6 | (g) | 3,531.0 | 3,494.7 | 3,471.8 | 3,477.7 | (2) | (1) | 3,525.3 | 3,519.6 | —",
+    "div": "Cash dividends declared | 0.38 | 0.38 | 0.38 | 0.38 | 0.38 | — | — | 1.14 | 1.10 | 4",
+    "t1": "Tier 1 capital ratio | 8.9 | (h) | 9.2 | 8.3 | 8.4 | 8.4",
+    "prov": "Provision for credit losses | 3,811 | 3,455 | 4,424 | 2,542 | 1,785 | 10 | 114 | 11,690 | 4,322 | 170",
+    "prov1": "Provision for credit losses — accounting conformity (a) | 1,976 | — | — | — | — | NM | NM | 1,976 | — | NM"
+   },
+   "sales_b": 14.737,
+   "npa_b": 15.91,
+   "sales_pct": -8.5,
+   "seq_pct": -19.9,
+   "credit_cost": 39.27,
+   "credit_cost_bp": 2819.0,
+   "pretax_margin": -14.84,
+   "pretax_margin_bp": -4587.3,
+   "expense_pct": 19.4,
+   "expense_gap_pp": 27.9,
+   "npa_pct": 428.7,
+   "loans_pct": 56.6,
+   "npa_gap_pp": 372.2,
+   "eps_q": -0.04,
+   "eps_q_prior": 0.98,
+   "diluted_shares_m": 3444.6,
+   "tier1": 8.9,
+   "sales_note": "total net revenue $14,737M vs $16,112M a year earlier, $18,399M the quarter before (reported basis)",
+   "credit_note": "provision for credit losses $5,787M vs $1,785M; nonperforming assets $15,910M vs $3,009M a year earlier; loans $761,381M vs $486,320M",
+   "eps_note": "diluted EPS before extraordinary gain excluding merger costs $(0.04) vs $0.98, the company's figure (GAAP $(0.06) vs $0.97)",
+   "shares_note": "diluted shares 3,444.6M; Tier 1 capital ratio 8.9%; cash dividends declared $0.38 a share in the quarter",
+   "next_print": "Q4 2008 print (the quarter ends in December)",
+   "cash_return_text": null,
+   "note": "the provision includes the $1,976M accounting conformity provision for Washington Mutual's banking operations; EPS is before the $581M extraordinary gain on that acquisition; the release's estimate of that transaction's addition to earnings per share is one transaction's effect, not an EPS guide (not encoded)",
+   "restated": {
+    "published": "2008-11-07",
+    "source": "JPM18",
+    "raw": {
+     "revenue_m": 14737.0,
+     "revenue_prior_m": 16112.0,
+     "revenue_prev_q_m": 18399.0,
+     "provision_m": 5787.0,
+     "provision_prior_m": 1785.0,
+     "expense_m": 11137.0,
+     "expense_prior_m": 9327.0,
+     "pretax_m": -2187.0,
+     "pretax_prior_m": 5000.0,
+     "npa_m": 9520.0,
+     "npa_prior_m": 3009.0,
+     "loans_m": 761381.0,
+     "loans_prior_m": 486320.0
+    },
+    "rows": {
+     "npa": "Nonperforming assets(e) | 9,520 | 6,233 | 5,143 | 3,933 | 3,009"
+    },
+    "npa_b": 9.52,
+    "sales_pct": -8.5,
+    "seq_pct": -19.9,
+    "credit_cost": 39.27,
+    "credit_cost_bp": 2819.0,
+    "pretax_margin": -14.84,
+    "pretax_margin_bp": -4587.3,
+    "expense_pct": 19.4,
+    "expense_gap_pp": 27.9,
+    "npa_pct": 216.4,
+    "loans_pct": 56.6,
+    "npa_gap_pp": 159.8,
+    "credit_note": "provision for credit losses $5,787M vs $1,785M; nonperforming assets $9,520M vs $3,009M a year earlier, as the 10-Q reports them (without the nonperforming loans acquired from Washington Mutual that are accounted for as purchased credit-impaired; the release had $15,910M vs $3,009M); loans $761,381M vs $486,320M"
+   }
+  },
+  {
+   "quarter": "Q4 2008",
+   "fy": 2008,
+   "q": 4,
+   "published": "2009-01-15",
+   "source": "JPM19",
+   "release": "Jan 15",
+   "release_time": "before the open on Jan 15: 8-K accepted 2009-01-15 06:56 ET (before the open)",
+   "period_end": "2008-12-31",
+   "raw": {
+    "revenue_m": 17226.0,
+    "revenue_prior_m": 17384.0,
+    "revenue_prev_q_m": 14737.0,
+    "provision_m": 7313.0,
+    "provision_prior_m": 2542.0,
+    "expense_m": 11255.0,
+    "expense_prior_m": 10720.0,
+    "pretax_m": -1342.0,
+    "pretax_prior_m": 4122.0,
+    "npa_m": 12714.0,
+    "npa_prior_m": 3933.0,
+    "loans_m": 744898.0,
+    "loans_prior_m": 519374.0
+   },
+   "rows": {
+    "rev": "TOTAL NET REVENUE | 17,226 | 14,737 | 18,399 | 16,890 | 17,384 | 17 | (1) | 67,252 | 71,372 | (6)",
+    "exp": "TOTAL NONINTEREST EXPENSE | 11,255 | 11,137 | 12,177 | 8,931 | 10,720 | 1 | 5 | 43,500 | 41,703 | 4",
+    "pre": "Income (loss) before income tax expense and extraordinary gain | (1,342) | (2,187) | 2,767 | 3,535 | 4,122 | 39 | NM | 2,773 | 22,805 | (88)",
+    "tax": "Income tax expense (benefit) (b) | (719) | (2,133) | 764 | 1,162 | 1,151 | 66 | NM | (926) | 7,440 | NM",
+    "eps": "Income (loss) before extraordinary gain | (0.28) | (0.06) | 0.54 | 0.68 | 0.86 | (367) | NM | 0.84 | 4.38 | (81)",
+    "eps_ex_merger": "Income (loss) before extraordinary gain excluding merger costs | (0.25) | (0.04) | 0.57 | 0.68 | 0.86 | NM | NM | 0.92 | 4.42 | (79)",
+    "npa": "TOTAL NONPERFORMING ASSETS | 12,714 | 9,520 | 6,233 | 5,143 | 3,933 | 34 | 223",
+    "loans": "TOTAL LOANS — REPORTED | 744,898 | 761,381 | 538,029 | 537,056 | 519,374 | (2) | 43",
+    "sh": "Weighted-average diluted shares outstanding | 3,737.5 | (h) | 3,444.6 | (h) | 3,531.0 | 3,494.7 | 3,471.8 | 9 | 8 | 3,604.9 | 3,507.6 | 3",
+    "div": "Cash dividends declared | 0.38 | 0.38 | 0.38 | 0.38 | 0.38 | — | — | 1.52 | 1.48 | 3",
+    "t1": "Tier 1 capital ratio | 10.8 | (i) | 8.9 | 9.2 | 8.3 | 8.4",
+    "prov": "Provision for credit losses (a) | 7,313 | 5,787 | 3,455 | 4,424 | 2,542 | 26 | 188 | 20,979 | 6,864 | 206"
+   },
+   "sales_b": 17.226,
+   "npa_b": 12.714,
+   "sales_pct": -0.9,
+   "seq_pct": 16.9,
+   "credit_cost": 42.45,
+   "credit_cost_bp": 2783.1,
+   "pretax_margin": -7.79,
+   "pretax_margin_bp": -3150.2,
+   "expense_pct": 5.0,
+   "expense_gap_pp": 5.9,
+   "npa_pct": 223.3,
+   "loans_pct": 43.4,
+   "npa_gap_pp": 179.8,
+   "eps_q": -0.25,
+   "eps_q_prior": 0.86,
+   "diluted_shares_m": 3737.5,
+   "tier1": 10.8,
+   "sales_note": "total net revenue $17,226M vs $17,384M a year earlier, $14,737M the quarter before (reported basis)",
+   "credit_note": "provision for credit losses $7,313M vs $2,542M; nonperforming assets $12,714M vs $3,933M a year earlier; loans $744,898M vs $519,374M",
+   "eps_note": "diluted EPS before extraordinary gain excluding merger costs $(0.25) vs $0.86, the company's figure (GAAP $(0.28) vs $0.86)",
+   "shares_note": "diluted shares 3,737.5M; Tier 1 capital ratio 10.8%; cash dividends declared $0.38 a share in the quarter",
+   "next_print": "Q1 2009 print (the quarter ends in March)",
+   "cash_return_text": null,
+   "note": "EPS is before the $1,325M extraordinary gain on the Washington Mutual acquisition (full year $1,906M)",
+   "fy_actual": {
+    "fy": 2008,
+    "fy_label": "FY08",
+    "eps_normalized": 0.92,
+    "revenue_usd_b": 67.252,
+    "diluted_shares_m": 3604.9,
+    "normalization_note": "FY08 $0.92, the company's diluted EPS before extraordinary gain excluding merger costs (Q4 2008 supplement; GAAP $0.84)",
+    "op_margin": 4.12,
+    "op_margin_note": "FY08 income before income tax expense $2,773M / total net revenue $67,252M (Q4 2008 release)",
+    "pretax_margin": 4.12,
+    "pretax_margin_note": "FY08 income before income tax expense $2,773M / total net revenue $67,252M (Q4 2008 release)",
+    "credit_cost": 31.19,
+    "sales_growth": -5.8,
+    "tax_rate": -0.3339,
+    "tax_note": "FY08 income tax benefit $926M on pre-tax $2,773M"
+   }
+  },
+  {
+   "quarter": "Q1 2009",
+   "fy": 2009,
+   "q": 1,
+   "published": "2009-04-16",
+   "source": "JPM22",
+   "release": "Apr 16",
+   "release_time": "before the open on Apr 16: 8-K accepted 2009-04-16 06:45 ET (before the open)",
+   "period_end": "2009-03-31",
+   "raw": {
+    "revenue_m": 25025.0,
+    "revenue_prior_m": 16890.0,
+    "revenue_prev_q_m": 17226.0,
+    "provision_m": 8596.0,
+    "provision_prior_m": 4424.0,
+    "expense_m": 13373.0,
+    "expense_prior_m": 8931.0,
+    "pretax_m": 3056.0,
+    "pretax_prior_m": 3535.0,
+    "npa_m": 14654.0,
+    "npa_prior_m": 5143.0,
+    "loans_m": 708243.0,
+    "loans_prior_m": 537056.0
+   },
+   "rows": {
+    "rev": "TOTAL NET REVENUE | 25,025 | 17,226 | 14,737 | 18,399 | 16,890 | 45 | 48",
+    "exp": "TOTAL NONINTEREST EXPENSE | 13,373 | 11,255 | 11,137 | 12,177 | 8,931 | 19 | 50",
+    "pre": "Income (loss) before income tax expense and extraordinary gain | 3,056 | (1,342) | (2,187) | 2,767 | 3,535 | NM | (14)",
+    "tax": "Income tax expense (benefit) (a) | 915 | (719) | (2,133) | 764 | 1,162 | NM | (21)",
+    "eps": "Income (loss) before extraordinary gain (c) | 0.40 | (0.29) | (0.08) | 0.53 | 0.67 | NM | (40)",
+    "eps_ex_merger": "Income (loss) before extraordinary gain excluding merger costs (c) | 0.43 | (0.26) | (0.06) | 0.56 | 0.67 | NM | (36)",
+    "npa": "TOTAL NONPERFORMING ASSETS | 14,654 | 12,714 | 9,520 | 6,233 | 5,143 | 15 | 185",
+    "loans": "TOTAL LOANS — REPORTED | 708,243 | 744,898 | 761,381 | 538,029 | 537,056 | (5) | 32",
+    "sh": "Weighted-average diluted shares outstanding (b) | 3,758.7 | 3,737.5 | 3,444.6 | 3,453.1 | 3,423.3 | 1 | 10",
+    "div": "Cash dividends declared | 0.05 | 0.38 | 0.38 | 0.38 | 0.38 | (87) | (87)",
+    "t1": "Tier 1 capital ratio | 11.3 | (f) | 10.9 | 8.9 | 9.2 | 8.3",
+    "prov": "Provision for credit losses | 8,596 | 7,313 | 5,787 | 3,455 | 4,424 | 18 | 94"
+   },
+   "sales_b": 25.025,
+   "npa_b": 14.654,
+   "sales_pct": 48.2,
+   "seq_pct": 45.3,
+   "credit_cost": 34.35,
+   "credit_cost_bp": 815.7,
+   "pretax_margin": 12.21,
+   "pretax_margin_bp": -871.8,
+   "expense_pct": 49.7,
+   "expense_gap_pp": 1.6,
+   "npa_pct": 184.9,
+   "loans_pct": 31.9,
+   "npa_gap_pp": 153.1,
+   "eps_q": 0.43,
+   "eps_q_prior": 0.67,
+   "diluted_shares_m": 3758.7,
+   "tier1": 11.3,
+   "sales_note": "total net revenue $25,025M vs $16,890M a year earlier, $17,226M the quarter before (reported basis)",
+   "credit_note": "provision for credit losses $8,596M vs $4,424M; nonperforming assets $14,654M vs $5,143M a year earlier; loans $708,243M vs $537,056M",
+   "eps_note": "diluted EPS before extraordinary gain excluding merger costs $0.43 vs $0.67, the company's figure (GAAP $0.40 vs $0.67)",
+   "shares_note": "diluted shares 3,758.7M; Tier 1 capital ratio 11.3%; cash dividends declared $0.05 a share in the quarter",
+   "next_print": "Q2 2009 print (the quarter ends in June)",
+   "cash_return_text": null,
+   "note": ""
+  },
+  {
+   "quarter": "Q2 2009",
+   "fy": 2009,
+   "q": 2,
+   "published": "2009-07-16",
+   "source": "JPM24",
+   "release": "Jul 16",
+   "release_time": "before the open on Jul 16: 8-K accepted 2009-07-16 06:47 ET (before the open)",
+   "period_end": "2009-06-30",
+   "raw": {
+    "revenue_m": 25623.0,
+    "revenue_prior_m": 18399.0,
+    "revenue_prev_q_m": 25025.0,
+    "provision_m": 8031.0,
+    "provision_prior_m": 3455.0,
+    "expense_m": 13520.0,
+    "expense_prior_m": 12177.0,
+    "pretax_m": 4072.0,
+    "pretax_prior_m": 2767.0,
+    "npa_m": 17517.0,
+    "npa_prior_m": 6233.0,
+    "loans_m": 680601.0,
+    "loans_prior_m": 538029.0
+   },
+   "rows": {
+    "rev": "TOTAL NET REVENUE | 25,623 | 25,025 | 17,226 | 14,737 | 18,399 | 2 | 39 | 50,648 | 35,289 | 44",
+    "exp": "TOTAL NONINTEREST EXPENSE | 13,520 | 13,373 | 11,255 | 11,137 | 12,177 | 1 | 11 | 26,893 | 21,108 | 27",
+    "pre": "Income (loss) before income tax expense and extraordinary gain | 4,072 | 3,056 | (1,342) | (2,187) | 2,767 | 33 | 47 | 7,128 | 6,302 | 13",
+    "tax": "Income tax expense (benefit) (b) | 1,351 | 915 | (719) | (2,133) | 764 | 48 | 77 | 2,266 | 1,926 | 18",
+    "eps": "Income (loss) before extraordinary gain (d)(e) | 0.28 | 0.40 | (0.29) | (0.08) | 0.53 | (30) | (47) | 0.68 | 1.20 | (43)",
+    "eps_ex_merger": "Income (loss) before extraordinary gain excluding merger costs (d)(e) | 0.30 | 0.43 | (0.26) | (0.06) | 0.56 | (30) | (46) | 0.73 | 1.23 | (41)",
+    "npa": "TOTAL NONPERFORMING ASSETS | 17,517 | 14,654 | 12,714 | 9,520 | 6,233 | 20 | 181",
+    "loans": "TOTAL LOANS — REPORTED | 680,601 | 708,243 | 744,898 | 761,381 | 538,029 | (4) | 26",
+    "sh": "Weighted-average diluted shares outstanding (b) | 3,824.1 | 3,758.7 | 3,737.5 | 3,444.6 | 3,453.1 | 2 | 11 | 3,791.4 | 3,438.2 | 10",
+    "div": "Cash dividends declared | 0.05 | 0.05 | 0.38 | 0.38 | 0.38 | — | (87) | 0.10 | 0.76 | (87)",
+    "t1": "Tier 1 capital ratio | 9.7 | (g) | 11.4 | 10.9 | 8.9 | 9.2",
+    "prov": "Provision for credit losses | 8,031 | 8,596 | 7,313 | 5,787 | 3,455 | (7) | 132 | 16,627 | 7,879 | 111"
+   },
+   "sales_b": 25.623,
+   "npa_b": 17.517,
+   "sales_pct": 39.3,
+   "seq_pct": 2.4,
+   "credit_cost": 31.34,
+   "credit_cost_bp": 1256.5,
+   "pretax_margin": 15.89,
+   "pretax_margin_bp": 85.3,
+   "expense_pct": 11.0,
+   "expense_gap_pp": -28.2,
+   "npa_pct": 181.0,
+   "loans_pct": 26.5,
+   "npa_gap_pp": 154.5,
+   "eps_q": 0.3,
+   "eps_q_prior": 0.56,
+   "diluted_shares_m": 3824.1,
+   "tier1": 9.7,
+   "sales_note": "total net revenue $25,623M vs $18,399M a year earlier, $25,025M the quarter before (reported basis)",
+   "credit_note": "provision for credit losses $8,031M vs $3,455M; nonperforming assets $17,517M vs $6,233M a year earlier; loans $680,601M vs $538,029M",
+   "eps_note": "diluted EPS before extraordinary gain excluding merger costs $0.30 vs $0.56, the company's figure (GAAP $0.28 vs $0.53)",
+   "shares_note": "diluted shares 3,824.1M; Tier 1 capital ratio 9.7%; cash dividends declared $0.05 a share in the quarter",
+   "next_print": "Q3 2009 print (the quarter ends in September)",
+   "cash_return_text": null,
+   "note": "'The calculation of second quarter 2009 earnings per share includes a one-time, non-cash reduction of $1.1 billion, or $0.27 per share, resulting from repayment of TARP preferred capital.'"
+  },
+  {
+   "quarter": "Q3 2009",
+   "fy": 2009,
+   "q": 3,
+   "published": "2009-10-14",
+   "source": "JPM25",
+   "release": "Oct 14",
+   "release_time": "before the open on Oct 14: 8-K accepted 2009-10-14 07:08 ET (before the open)",
+   "period_end": "2009-09-30",
+   "raw": {
+    "revenue_m": 26622.0,
+    "revenue_prior_m": 14737.0,
+    "revenue_prev_q_m": 25623.0,
+    "provision_m": 8104.0,
+    "provision_prior_m": 5787.0,
+    "expense_m": 13455.0,
+    "expense_prior_m": 11137.0,
+    "pretax_m": 5063.0,
+    "pretax_prior_m": -2187.0,
+    "npa_m": 20362.0,
+    "npa_prior_m": 9520.0,
+    "loans_m": 653144.0,
+    "loans_prior_m": 761381.0
+   },
+   "rows": {
+    "rev": "TOTAL NET REVENUE | 26,622 | 25,623 | 25,025 | 17,226 | 14,737 | 4 | 81 | 77,270 | 50,026 | 54",
+    "exp": "TOTAL NONINTEREST EXPENSE | 13,455 | 13,520 | 13,373 | 11,255 | 11,137 | — | 21 | 40,348 | 32,245 | 25",
+    "pre": "Income (loss) before income tax expense and extraordinary gain | 5,063 | 4,072 | 3,056 | (1,342) | (2,187) | 24 | NM | 12,191 | 4,115 | 196",
+    "tax": "Income tax expense (benefit) (b) | 1,551 | 1,351 | 915 | (719) | (2,133) | 15 | NM | 3,817 | (207) | NM",
+    "eps": "Income (loss) before extraordinary gain (d)(e) | 0.80 | 0.28 | 0.40 | (0.29) | (0.08) | 186 | NM | 1.50 | 1.13 | 33",
+    "eps_ex_merger": "Income (loss) before extraordinary gain excluding merger costs (d)(e) | 0.82 | 0.30 | 0.43 | (0.26) | (0.06) | 173 | NM | 1.57 | 1.18 | 33",
+    "npa": "TOTAL NONPERFORMING ASSETS (b) | 20,362 | 17,517 | 14,654 | 12,714 | 9,520 | 16 | 114",
+    "loans": "TOTAL LOANS — REPORTED | 653,144 | 680,601 | 708,243 | 744,898 | 761,381 | (4) | (14)",
+    "sh": "Weighted-average diluted shares outstanding (b) | 3,962.0 | 3,824.1 | 3,758.7 | 3,737.5 | 3,444.6 | 4 | 15 | 3,848.3 | 3,446.2 | 12",
+    "div": "Cash dividends declared | 0.05 | 0.05 | 0.05 | 0.38 | 0.38 | — | (87) | 0.15 | 1.14 | (87)",
+    "t1": "Tier 1 capital ratio | 10.2 | (g) | 9.7 | 11.4 | 10.9 | 8.9",
+    "prov": "Provision for credit losses | 8,104 | 8,031 | 8,596 | 7,313 | 5,787 | 1 | 40 | 24,731 | 13,666 | 81"
+   },
+   "sales_b": 26.622,
+   "npa_b": 20.362,
+   "sales_pct": 80.6,
+   "seq_pct": 3.9,
+   "credit_cost": 30.44,
+   "credit_cost_bp": -882.8,
+   "pretax_margin": 19.02,
+   "pretax_margin_bp": 3385.8,
+   "expense_pct": 20.8,
+   "expense_gap_pp": -59.8,
+   "npa_pct": 113.9,
+   "loans_pct": -14.2,
+   "npa_gap_pp": 128.1,
+   "eps_q": 0.82,
+   "eps_q_prior": -0.06,
+   "diluted_shares_m": 3962.0,
+   "tier1": 10.2,
+   "sales_note": "total net revenue $26,622M vs $14,737M a year earlier, $25,623M the quarter before (reported basis)",
+   "credit_note": "provision for credit losses $8,104M vs $5,787M; nonperforming assets $20,362M vs $9,520M a year earlier; loans $653,144M vs $761,381M",
+   "eps_note": "diluted EPS before extraordinary gain excluding merger costs $0.82 vs $(0.06), the company's figure (GAAP $0.80 vs $(0.08))",
+   "shares_note": "diluted shares 3,962.0M; Tier 1 capital ratio 10.2%; cash dividends declared $0.05 a share in the quarter",
+   "next_print": "Q4 2009 print (the quarter ends in December)",
+   "cash_return_text": null,
+   "note": ""
+  }
+ ],
+ "guides": [],
+ "dividends": [
+  {
+   "published": "2007-01-17",
+   "quarterly": 0.34,
+   "source": "JPM7",
+   "note": "$0.34 a quarter: 'Cash Dividends Declared | 0.34 | 0.34 | 0.34 | 0.34 | 0.34 | — | — | 1.36 | 1.36 | —' (Q4 2006 supplement)"
+  },
+  {
+   "published": "2007-04-18",
+   "quarterly": 0.38,
+   "source": "JPM9",
+   "note": "$0.38 a quarter: 'The Board of Directors has declared a quarterly dividend of $0.38 per share on the outstanding shares of the corporation’s common stock, an increase of $0.04 per share, or 12%.' (Q1 2007 release)"
+  },
+  {
+   "published": "2009-02-24",
+   "quarterly": 0.05,
+   "source": "JPM20",
+   "note": "$0.05 a quarter: 'reduced the company's quarterly common stock dividend from $0.38 to $0.05 per share' (8-K of 2009-02-24)"
+  }
+ ],
+ "events": [],
+ "company_names": [],
+ "splits": [],
+ "listings": [],
+ "rule_t": {
+  "revenue": {
+   "measure": "total net revenue growth, % (each pair of years from the latest 10-K published by 2008-01-04 that reports both)",
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "1997": 5.71,
+    "1998": 7.18,
+    "1999": 20.38,
+    "2000": 6.55,
+    "2001": -11.58,
+    "2002": 0.92,
+    "2003": 12.82,
+    "2004": 29.17,
+    "2005": 26.85,
+    "2006": 14.31
+   },
+   "thresholds": {
+    "BEAR": -33,
+    "BASE": -12,
+    "BULL": 10,
+    "XBULL": 29
+   },
+   "raw": {
+    "1997": {
+     "source": "JPM1",
+     "revenue_m": [
+      22730.0,
+      24028.0
+     ],
+     "rows": [
+      "Revenue $ 32,934 $ 30,930 $ 25,753 $ 24,028 $ 22,730"
+     ]
+    },
+    "1998": {
+     "source": "JPM2",
+     "revenue_m": [
+      24028.0,
+      25753.0
+     ],
+     "rows": [
+      "Revenue | 29,050 | 32,934 | 30,930 | 25,753 | 24,028"
+     ]
+    },
+    "1999": {
+     "source": "JPM3",
+     "revenue_m": [
+      25873.0,
+      31146.0
+     ],
+     "rows": [
+      "Revenue | 29,614 | 29,344 | 33,186 | 31,146 | 25,873"
+     ]
+    },
+    "2000": {
+     "source": "JPM4",
+     "revenue_m": [
+      31146.0,
+      33186.0
+     ],
+     "rows": [
+      "Revenue | 33,256 | 29,614 | 29,344 | 33,186 | 31,146"
+     ]
+    },
+    "2001": {
+     "source": "JPM5",
+     "revenue_m": [
+      33186.0,
+      29344.0
+     ],
+     "rows": [
+      "Total net revenue | 43,097 | 33,384 | 29,614 | 29,344 | 33,186"
+     ]
+    },
+    "2002": {
+     "source": "JPM6",
+     "revenue_m": [
+      29344.0,
+      29614.0
+     ],
+     "rows": [
+      "Total net revenue | 54,533 | 43,097 | 33,384 | 29,614 | 29,344"
+     ]
+    },
+    "2003": {
+     "source": "JPM8",
+     "revenue_m": [
+      29076.0,
+      32803.0
+     ],
+     "rows": [
+      "Total net revenue | 61,437 | 53,748 | 42,372 | 32,803 | $29,076"
+     ]
+    },
+    "2004": {
+     "source": "JPM8",
+     "revenue_m": [
+      32803.0,
+      42372.0
+     ],
+     "rows": [
+      "Total net revenue | 61,437 | 53,748 | 42,372 | 32,803 | $29,076"
+     ]
+    },
+    "2005": {
+     "source": "JPM8",
+     "revenue_m": [
+      42372.0,
+      53748.0
+     ],
+     "rows": [
+      "Total net revenue | 61,437 | 53,748 | 42,372 | 32,803 | $29,076"
+     ]
+    },
+    "2006": {
+     "source": "JPM8",
+     "revenue_m": [
+      53748.0,
+      61437.0
+     ],
+     "rows": [
+      "Total net revenue | 61,437 | 53,748 | 42,372 | 32,803 | $29,076"
+     ]
+    }
+   }
+  },
+  "credit_cost": {
+   "measure": "change in the provision for credit losses as a share of total net revenue, bp (each pair of years from the latest 10-K published by 2008-01-04 that reports both)",
+   "unit": 10,
+   "lower_is_better": true,
+   "values": {
+    "1997": -60.0,
+    "1998": 229.6,
+    "1999": -74.1,
+    "2000": -48.4,
+    "2001": 668.5,
+    "2002": 378.1,
+    "2003": -1020.1,
+    "2004": 130.9,
+    "2005": 47.6,
+    "2006": -115.8
+   },
+   "thresholds": {
+    "BEAR": 1340,
+    "BASE": 670,
+    "BULL": 0,
+    "XBULL": -1020
+   },
+   "raw": {
+    "1997": {
+     "source": "JPM1",
+     "provision_m": [
+      897.0,
+      804.0
+     ],
+     "revenue_m": [
+      22730.0,
+      24028.0
+     ],
+     "rows": [
+      "Provision for Loan Losses 1,377 1,446 1,453 804 897",
+      "Revenue $ 32,934 $ 30,930 $ 25,753 $ 24,028 $ 22,730"
+     ]
+    },
+    "1998": {
+     "source": "JPM2",
+     "provision_m": [
+      804.0,
+      1453.0
+     ],
+     "revenue_m": [
+      24028.0,
+      25753.0
+     ],
+     "rows": [
+      "Provision for loan losses | 3,185 | 1,377 | 1,446 | 1,453 | 804",
+      "Revenue | 29,050 | 32,934 | 30,930 | 25,753 | 24,028"
+     ]
+    },
+    "1999": {
+     "source": "JPM3",
+     "provision_m": [
+      1393.0,
+      1446.0
+     ],
+     "revenue_m": [
+      25873.0,
+      31146.0
+     ],
+     "rows": [
+      "Provision for credit losses | 4,331 | 3,182 | 1,380 | 1,446 | 1,393",
+      "Revenue | 29,614 | 29,344 | 33,186 | 31,146 | 25,873"
+     ]
+    },
+    "2000": {
+     "source": "JPM4",
+     "provision_m": [
+      1446.0,
+      1380.0
+     ],
+     "revenue_m": [
+      31146.0,
+      33186.0
+     ],
+     "rows": [
+      "Provision for credit losses | 1,540 | 4,331 | 3,182 | 1,380 | 1,446",
+      "Revenue | 33,256 | 29,614 | 29,344 | 33,186 | 31,146"
+     ]
+    },
+    "2001": {
+     "source": "JPM5",
+     "provision_m": [
+      1380.0,
+      3182.0
+     ],
+     "revenue_m": [
+      33186.0,
+      29344.0
+     ],
+     "rows": [
+      "Provision for credit losses | 2,544 | 1,540 | 4,331 | 3,182 | 1,380",
+      "Total net revenue | 43,097 | 33,384 | 29,614 | 29,344 | 33,186"
+     ]
+    },
+    "2002": {
+     "source": "JPM6",
+     "provision_m": [
+      3182.0,
+      4331.0
+     ],
+     "revenue_m": [
+      29344.0,
+      29614.0
+     ],
+     "rows": [
+      "Provision for credit losses | 3,483 | 2,544 | 1,540 | 4,331 | 3,182",
+      "Total net revenue | 54,533 | 43,097 | 33,384 | 29,614 | 29,344"
+     ]
+    },
+    "2003": {
+     "source": "JPM8",
+     "provision_m": [
+      4331.0,
+      1540.0
+     ],
+     "revenue_m": [
+      29076.0,
+      32803.0
+     ],
+     "rows": [
+      "Provision for credit losses | 3,270 | 3,483 | 2,544 | 1,540 | 4,331",
+      "Total net revenue | 61,437 | 53,748 | 42,372 | 32,803 | $29,076"
+     ]
+    },
+    "2004": {
+     "source": "JPM8",
+     "provision_m": [
+      1540.0,
+      2544.0
+     ],
+     "revenue_m": [
+      32803.0,
+      42372.0
+     ],
+     "rows": [
+      "Provision for credit losses | 3,270 | 3,483 | 2,544 | 1,540 | 4,331",
+      "Total net revenue | 61,437 | 53,748 | 42,372 | 32,803 | $29,076"
+     ]
+    },
+    "2005": {
+     "source": "JPM8",
+     "provision_m": [
+      2544.0,
+      3483.0
+     ],
+     "revenue_m": [
+      42372.0,
+      53748.0
+     ],
+     "rows": [
+      "Provision for credit losses | 3,270 | 3,483 | 2,544 | 1,540 | 4,331",
+      "Total net revenue | 61,437 | 53,748 | 42,372 | 32,803 | $29,076"
+     ]
+    },
+    "2006": {
+     "source": "JPM8",
+     "provision_m": [
+      3483.0,
+      3270.0
+     ],
+     "revenue_m": [
+      53748.0,
+      61437.0
+     ],
+     "rows": [
+      "Provision for credit losses | 3,270 | 3,483 | 2,544 | 1,540 | 4,331",
+      "Total net revenue | 61,437 | 53,748 | 42,372 | 32,803 | $29,076"
+     ]
+    }
+   }
+  },
+  "expense_gap": {
+   "measure": "growth of total noninterest expense less growth of total net revenue, pp (each pair of years from the latest 10-K published by 2008-01-04 that reports both)",
+   "unit": 1,
+   "lower_is_better": true,
+   "values": {
+    "1997": -9.09,
+    "1998": 4.65,
+    "1999": -14.09,
+    "2000": 20.15,
+    "2001": 13.84,
+    "2002": -4.45,
+    "2003": -17.18,
+    "2004": 28.91,
+    "2005": -13.74,
+    "2006": -14.68
+   },
+   "thresholds": {
+    "BEAR": 65,
+    "BASE": 29,
+    "BULL": -7,
+    "XBULL": -17
+   },
+   "raw": {
+    "1997": {
+     "source": "JPM1",
+     "expense_m": [
+      15690.0,
+      15160.0
+     ],
+     "revenue_m": [
+      22730.0,
+      24028.0
+     ],
+     "rows": [
+      "Noninterest Expense (Excluding Restructuring Costs) 21,393 17,972 16,066 14,968 13,876",
+      "Merger and Restructuring Costs 1,431 23 887 192 1,814",
+      "Revenue $ 32,934 $ 30,930 $ 25,753 $ 24,028 $ 22,730"
+     ]
+    },
+    "1998": {
+     "source": "JPM2",
+     "expense_m": [
+      15160.0,
+      16953.0
+     ],
+     "revenue_m": [
+      24028.0,
+      25753.0
+     ],
+     "rows": [
+      "Noninterest expense (excluding restructuring costs) | 20,776 | 21,393 | 17,972 | 16,066 | 14,968",
+      "Merger and restructuring costs | 2,523 | 1,431 | 23 | 887 | 192",
+      "Revenue | 29,050 | 32,934 | 30,930 | 25,753 | 24,028"
+     ]
+    },
+    "1999": {
+     "source": "JPM3",
+     "expense_m": [
+      17133.0,
+      18211.0
+     ],
+     "revenue_m": [
+      25873.0,
+      31146.0
+     ],
+     "rows": [
+      "Noninterest expense (excluding merger and restructuring costs) | 21,554 | (a) | 21,073 | 21,642 | 18,188 | 16,246",
+      "Merger and restructuring costs | 1,210 | 2,523 | 1,431 | 23 | 887",
+      "Revenue | 29,614 | 29,344 | 33,186 | 31,146 | 25,873"
+     ]
+    },
+    "2000": {
+     "source": "JPM4",
+     "expense_m": [
+      18211.0,
+      23073.0
+     ],
+     "revenue_m": [
+      31146.0,
+      33186.0
+     ],
+     "rows": [
+      "(excluding merger and restructuring costs) | 21,688 | 21,554 | (a) | 21,073 | 21,642 | 18,188",
+      "Merger and restructuring costs | — | 1,210 | 2,523 | 1,431 | 23",
+      "Revenue | 33,256 | 29,614 | 29,344 | 33,186 | 31,146"
+     ]
+    },
+    "2001": {
+     "source": "JPM5",
+     "expense_m": [
+      23073.0,
+      23596.0
+     ],
+     "revenue_m": [
+      33186.0,
+      29344.0
+     ],
+     "rows": [
+      "Total noninterest expense | 34,359 | 21,816 | 22,764 | 23,596 | 23,073",
+      "Total net revenue | 43,097 | 33,384 | 29,614 | 29,344 | 33,186"
+     ]
+    },
+    "2002": {
+     "source": "JPM6",
+     "expense_m": [
+      23596.0,
+      22764.0
+     ],
+     "revenue_m": [
+      29344.0,
+      29614.0
+     ],
+     "rows": [
+      "Total noninterest expense | 38,835 | 34,359 | 21,816 | 22,764 | 23,596",
+      "Total net revenue | 54,533 | 43,097 | 33,384 | 29,614 | 29,344"
+     ]
+    },
+    "2003": {
+     "source": "JPM8",
+     "expense_m": [
+      22471.0,
+      21490.0
+     ],
+     "revenue_m": [
+      29076.0,
+      32803.0
+     ],
+     "rows": [
+      "Total noninterest expense | 38,281 | 38,426 | 33,972 | 21,490 | 22,471",
+      "Total net revenue | 61,437 | 53,748 | 42,372 | 32,803 | $29,076"
+     ]
+    },
+    "2004": {
+     "source": "JPM8",
+     "expense_m": [
+      21490.0,
+      33972.0
+     ],
+     "revenue_m": [
+      32803.0,
+      42372.0
+     ],
+     "rows": [
+      "Total noninterest expense | 38,281 | 38,426 | 33,972 | 21,490 | 22,471",
+      "Total net revenue | 61,437 | 53,748 | 42,372 | 32,803 | $29,076"
+     ]
+    },
+    "2005": {
+     "source": "JPM8",
+     "expense_m": [
+      33972.0,
+      38426.0
+     ],
+     "revenue_m": [
+      42372.0,
+      53748.0
+     ],
+     "rows": [
+      "Total noninterest expense | 38,281 | 38,426 | 33,972 | 21,490 | 22,471",
+      "Total net revenue | 61,437 | 53,748 | 42,372 | 32,803 | $29,076"
+     ]
+    },
+    "2006": {
+     "source": "JPM8",
+     "expense_m": [
+      38426.0,
+      38281.0
+     ],
+     "revenue_m": [
+      53748.0,
+      61437.0
+     ],
+     "rows": [
+      "Total noninterest expense | 38,281 | 38,426 | 33,972 | 21,490 | 22,471",
+      "Total net revenue | 61,437 | 53,748 | 42,372 | 32,803 | $29,076"
+     ]
+    }
+   }
+  },
+  "npa_gap": {
+   "measure": "growth of nonperforming assets less growth of loans, pp (each pair of years from the latest 10-K published by 2008-01-04 that reports both)",
+   "unit": 1,
+   "lower_is_better": true,
+   "values": {
+    "1997": -20.2,
+    "1998": 53.68,
+    "1999": 5.99,
+    "2000": -3.75,
+    "2001": 109.29,
+    "2002": 19.92,
+    "2003": -33.69,
+    "2004": -85.02,
+    "2005": -24.08,
+    "2006": -24.88
+   },
+   "thresholds": {
+    "BEAR": 231,
+    "BASE": 109,
+    "BULL": -12,
+    "XBULL": -85
+   },
+   "raw": {
+    "1997": {
+     "source": "JPM1",
+     "npa_m": [
+      1271.0,
+      1131.0
+     ],
+     "loans_m": [
+      183212.0,
+      200032.0
+     ],
+     "rows": [
+      "Total Nonperforming Assets $1,923 $1,873 $1,728 $1,131 $1,271",
+      "Total Loans(a) $216,050 $203,008 $198,249 $200,032 $183,212"
+     ]
+    },
+    "1998": {
+     "source": "JPM2",
+     "npa_m": [
+      1131.0,
+      1728.0
+     ],
+     "loans_m": [
+      200032.0,
+      198249.0
+     ],
+     "rows": [
+      "Total nonperforming assets | 3,920 | 1,923 | 1,873 | 1,728 | 1,131",
+      "Total loans(a) | 217,444 | 216,050 | 203,008 | 198,249 | 200,032"
+     ]
+    },
+    "1999": {
+     "source": "JPM3",
+     "npa_m": [
+      1728.0,
+      1873.0
+     ],
+     "loans_m": [
+      198249.0,
+      203008.0
+     ],
+     "rows": [
+      "Total nonperforming assets | 4,780 | 3,920 | 1,923 | 1,873 | 1,728",
+      "Total loans(a) | 216,364 | 217,444 | 216,050 | 203,008 | 198,249"
+     ]
+    },
+    "2000": {
+     "source": "JPM4",
+     "npa_m": [
+      1873.0,
+      1923.0
+     ],
+     "loans_m": [
+      203008.0,
+      216050.0
+     ],
+     "rows": [
+      "Total nonperforming assets | 3,086 | 4,780 | 3,920 | 1,923 | 1,873",
+      "Total loans(a) | 219,518 | 216,364 | 217,444 | 216,050 | 203,008"
+     ]
+    },
+    "2001": {
+     "source": "JPM5",
+     "npa_m": [
+      1923.0,
+      4037.0
+     ],
+     "loans_m": [
+      216050.0,
+      217444.0
+     ],
+     "rows": [
+      "Nonperforming assets | 3,231 | 3,161 | 4,821 | 4,037 | 1,923",
+      "Loans | 402,114 | 214,766 | 216,364 | 217,444 | 216,050"
+     ]
+    },
+    "2002": {
+     "source": "JPM6",
+     "npa_m": [
+      4037.0,
+      4821.0
+     ],
+     "loans_m": [
+      217444.0,
+      216364.0
+     ],
+     "rows": [
+      "Nonperforming assets(b) | 2,590 | 3,231 | 3,161 | 4,821 | 4,037",
+      "Loans | 419,148 | 402,114 | 214,766 | 216,364 | 217,444"
+     ]
+    },
+    "2003": {
+     "source": "JPM8",
+     "npa_m": [
+      4821.0,
+      3161.0
+     ],
+     "loans_m": [
+      216364.0,
+      214766.0
+     ],
+     "rows": [
+      "Nonperforming assets(b) | 2,341 | 2,590 | 3,231 | 3,161 | 4,821",
+      "Loans | 483,127 | 419,148 | 402,114 | 214,766 | 216,364"
+     ]
+    },
+    "2004": {
+     "source": "JPM8",
+     "npa_m": [
+      3161.0,
+      3231.0
+     ],
+     "loans_m": [
+      214766.0,
+      402114.0
+     ],
+     "rows": [
+      "Nonperforming assets(b) | 2,341 | 2,590 | 3,231 | 3,161 | 4,821",
+      "Loans | 483,127 | 419,148 | 402,114 | 214,766 | 216,364"
+     ]
+    },
+    "2005": {
+     "source": "JPM8",
+     "npa_m": [
+      3231.0,
+      2590.0
+     ],
+     "loans_m": [
+      402114.0,
+      419148.0
+     ],
+     "rows": [
+      "Nonperforming assets(b) | 2,341 | 2,590 | 3,231 | 3,161 | 4,821",
+      "Loans | 483,127 | 419,148 | 402,114 | 214,766 | 216,364"
+     ]
+    },
+    "2006": {
+     "source": "JPM8",
+     "npa_m": [
+      2590.0,
+      2341.0
+     ],
+     "loans_m": [
+      419148.0,
+      483127.0
+     ],
+     "rows": [
+      "Nonperforming assets(b) | 2,341 | 2,590 | 3,231 | 3,161 | 4,821",
+      "Loans | 483,127 | 419,148 | 402,114 | 214,766 | 216,364"
+     ]
+    }
+   }
+  },
+  "pretax_margin": {
+   "measure": "change in income before income tax expense as a share of total net revenue, bp (each pair of years from the latest 10-K published by 2008-01-04 that reports both)",
+   "unit": 10,
+   "lower_is_better": false,
+   "values": {
+    "1999": 849.1,
+    "2000": -1057.2,
+    "2001": -1757.1,
+    "2002": -23.8,
+    "2003": 2197.2,
+    "2004": -1597.3,
+    "2005": 820.6,
+    "2006": 1034.1
+   },
+   "thresholds": {
+    "BEAR": -3910,
+    "BASE": -1760,
+    "BULL": 400,
+    "XBULL": 2200
+   },
+   "raw": {
+    "1999": {
+     "source": "JPM3",
+     "pretax_m": [
+      7347.0,
+      11489.0
+     ],
+     "revenue_m": [
+      25873.0,
+      31146.0
+     ],
+     "rows": [
+      "Net income | 1,663 | 1,694 | 5,727 | 7,501 | 4,745",
+      "Net effect of change in accounting principle | — | (25) | — | — | —",
+      "Income tax expense | 856 | 847 | 3,006 | 3,988 | 2,602",
+      "Revenue | 29,614 | 29,344 | 33,186 | 31,146 | 25,873"
+     ]
+    },
+    "2000": {
+     "source": "JPM4",
+     "pretax_m": [
+      11489.0,
+      8733.0
+     ],
+     "revenue_m": [
+      31146.0,
+      33186.0
+     ],
+     "rows": [
+      "Net income | 6,719 | 1,663 | 1,694 | 5,727 | 7,501",
+      "Net effect of change in accounting principle | — | — | (25) | — | —",
+      "Income tax expense | 3,309 | 856 | 847 | 3,006 | 3,988",
+      "Revenue | 33,256 | 29,614 | 29,344 | 33,186 | 31,146"
+     ]
+    },
+    "2001": {
+     "source": "JPM5",
+     "pretax_m": [
+      8733.0,
+      2566.0
+     ],
+     "revenue_m": [
+      33186.0,
+      29344.0
+     ],
+     "rows": [
+      "Income before income tax expense and effect of accounting change | 6,194 | 10,028 | 2,519 | 2,566 | 8,733",
+      "Total net revenue | 43,097 | 33,384 | 29,614 | 29,344 | 33,186"
+     ]
+    },
+    "2002": {
+     "source": "JPM6",
+     "pretax_m": [
+      2566.0,
+      2519.0
+     ],
+     "revenue_m": [
+      29344.0,
+      29614.0
+     ],
+     "rows": [
+      "Income before income tax expense and effect of accounting change | 12,215 | 6,194 | 10,028 | 2,519 | 2,566",
+      "Total net revenue | 54,533 | 43,097 | 33,384 | 29,614 | 29,344"
+     ]
+    },
+    "2003": {
+     "source": "JPM8",
+     "pretax_m": [
+      2274.0,
+      9773.0
+     ],
+     "revenue_m": [
+      29076.0,
+      32803.0
+     ],
+     "rows": [
+      "Income from continuing operations before income tax expense | 19,886 | 11,839 | 5,856 | 9,773 | 2,274",
+      "Total net revenue | 61,437 | 53,748 | 42,372 | 32,803 | $29,076"
+     ]
+    },
+    "2004": {
+     "source": "JPM8",
+     "pretax_m": [
+      9773.0,
+      5856.0
+     ],
+     "revenue_m": [
+      32803.0,
+      42372.0
+     ],
+     "rows": [
+      "Income from continuing operations before income tax expense | 19,886 | 11,839 | 5,856 | 9,773 | 2,274",
+      "Total net revenue | 61,437 | 53,748 | 42,372 | 32,803 | $29,076"
+     ]
+    },
+    "2005": {
+     "source": "JPM8",
+     "pretax_m": [
+      5856.0,
+      11839.0
+     ],
+     "revenue_m": [
+      42372.0,
+      53748.0
+     ],
+     "rows": [
+      "Income from continuing operations before income tax expense | 19,886 | 11,839 | 5,856 | 9,773 | 2,274",
+      "Total net revenue | 61,437 | 53,748 | 42,372 | 32,803 | $29,076"
+     ]
+    },
+    "2006": {
+     "source": "JPM8",
+     "pretax_m": [
+      11839.0,
+      19886.0
+     ],
+     "revenue_m": [
+      53748.0,
+      61437.0
+     ],
+     "rows": [
+      "Income from continuing operations before income tax expense | 19,886 | 11,839 | 5,856 | 9,773 | 2,274",
+      "Total net revenue | 61,437 | 53,748 | 42,372 | 32,803 | $29,076"
+     ]
+    }
+   }
+  }
+ },
+ "fiscal_calendar": {
+  "rule": "the calendar year",
+  "quote": "As of or for the year ended December 31, | 2006 | 2005 | 2004 | (d) | 2003 | 2002",
+  "source": "JPM8"
+ },
+ "price_basis": "Yahoo's JPM series is the stock of the registrant (CIK 19617): The Chase Manhattan Corporation to 2000, J.P. Morgan Chase & Co. from the merger of 2000-12-31, JPMorgan Chase & Co. since. Its two splits (1998-06-15 and 2000-06-12) precede every date in the P/E window (2003-01-01 on), so every price the models use is the close as traded."
+}

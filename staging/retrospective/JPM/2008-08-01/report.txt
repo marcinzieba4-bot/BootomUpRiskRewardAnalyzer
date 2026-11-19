@@ -1,0 +1,149 @@
+
+════════════════════════════════════════════════════════════════════════
+  JPM  ·  JPMorgan Chase & Co.  ·  $40.76  ·  RETROSPECTIVE as of 2008-08-01
+  Signal: ◎ ACCUMULATE   Ratio B: 0.88x   Adj gap: -0.48  [MODESTLY OVERVALUED]
+  Point-in-time: 7 sources, latest published 2008-08-01; latest print Q2 2008 (Jul 17)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2008E revenue, USD bn  →  FY2010E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2008E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Noninterest revenue           $ 43.75  $43.75  $64.16    +0.00   +20.41
+    +10.3% revenue in FY07
+  Net interest income           $ 25.69  $25.69  $37.68    +0.00   +11.99
+    +24.3% revenue in FY07
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $ 69.44  $69.44  $101.84    +0.00   +32.40
+  FY2008E = FY07 $71.372B × (1 − 2.7%: the Q2 2008 revenue growth (no Q3 2008 guide), YoY, applied to the year (no FY08 revenue guide)); split pro rata to FY07 total net revenue by component, reported basis (FY07 growth)
+  Q2 2008 (Jul 17): total net revenue $18.399B -2.7% YoY (+8.9% QoQ); nonperforming assets +154.9% (loans +15.7%); noninterest expense +10.4%;
+  provision 18.78% of revenue (+1069.2bp); pre-tax margin 15.04% (-1855.0bp); EPS $0.57 vs $1.21
+  Revenue: total net revenue $18,399M vs $18,908M a year earlier, $16,890M the quarter before (reported basis); provision for credit losses $3,455M vs $1,529M; nonperforming assets $6,591M vs $2,586M a year earlier; loans $538,029M vs $465,037M; diluted EPS (net income) excluding merger costs $0.57 vs $1.21, the company's figure (GAAP $0.54 vs $1.20); diluted shares 3,531.0M; Tier 1 capital ratio 9.1%; cash dividends declared $0.38 a share in the quarter
+  Q3 2008: no revenue, EPS or margin guide in numbers in any filing; the latest quarter's revenue growth stands in (the UNP rule); the releases, 10-Qs and investor slides give credit-loss and segment outlooks only, which method r2 has no input for
+
+  FY2008E EPS check:  $69.440B × 31.9% pre-tax × (1−32.6%) ÷ 3.531B  =  $4.23  (FY2008E: no EPS guide in numbers, FY07's $4.42 stands)
+  FY2010E BEAR check: $69.440B × 31.9% ÷ 4.470B  =  $3.34  (scenario $0.96)
+  FY2010E BULL check: $101.840B × 32.4% ÷ 4.470B  =  $4.97  (scenario $5.22)
+  Every 1pp of pre-tax margin ≈ $0.133 EPS ≈ $1.51/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Net revenue growth                    -33.0%   ≥-12.0%    ≥10.0%    ≥29.0%     -2.7%  ◦ BASE  ██░░
+  Credit cost (provision/revenue)     +1340.0bp  ≤670.0bp    ≤0.0bp  ≤-1020.0bp  +1069.2bp  ⚠ BEAR  █░░░
+  Expense growth less revenue          +65.0pp   ≤29.0pp   ≤-7.0pp  ≤-17.0pp   +13.1pp  ◦ BASE  ██░░
+  Nonperforming assets less loans     +231.0pp  ≤109.0pp  ≤-12.0pp  ≤-85.0pp  +139.2pp  ⚠ BEAR  █░░░
+  Pre-tax margin change               -3910.0bp  ≥-1760.0bp  ≥400.0bp  ≥2200.0bp  -1855.0bp  ⚠ BEAR  █░░░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.50 / 4.00
+  Market composite:   2.13 / 4.00  (back-solved from $40.76 + 15% hurdle)
+  SCA adjustment:    +0.15  ·  EPP-distance adj +0.00  →  Adj composite 1.65  →  Gap -0.48  [MODESTLY OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY07 total net revenue +15.1%, provision 9.6% of revenue; Q2 provision 18.8% of revenue (+1069bp YoY)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 9.2x FY08E vs a 11.4x 5.6-yr median (10th percentile of its own range)  (+0.50 × 25%  =  +0.125)
+    -  Growth vs own history: Q2 2008 revenue growth (no Q3 2008 guide) -2.7% vs a 21.0% 4-yr median  (-0.50 × 20%  =  -0.100)
+    +  Tier 1 capital ratio 9.1%, nonperforming assets $6.591B (+154.9% YoY) at the end of Q2 2008, dividend $1.52 a year  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Net revenue growth                     -2.7%    -33.0%  -30.3%  Markets and fee revenue fall with the…
+  Credit cost (provision/revenue)     +1069.2bp  +1340.0bp  +270.8bp  Loan losses and reserve builds take m…
+  Expense growth less revenue          +13.1pp   +65.0pp  +51.9pp  Noninterest expense does not fall wit…
+  Nonperforming assets less loans     +139.2pp  +231.0pp  +91.8pp  Problem assets grow faster than the l…
+  Pre-tax margin change               -1855.0bp  -3910.0bp  -2055.0bp  Credit costs and expenses outrun revenue
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$21.87  (model)  /  $8.93 (defined)
+  Bear probability (proxy model):  53.1%
+
+  KEY TRIGGER: revenue went from -11.0% (Q1 2008) to -2.7% YoY (Q2 2008), +8.9% on the quarter before;
+  the bear case needs credit costs (+1069.2bp of revenue now) rising further
+  and nonperforming assets (+139.2pp against loans) outgrowing the loan book. A credit downturn shows up in nonperforming assets and the provision first;
+  the bear needs it in net revenue as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $4.42  (FY2008E: no EPS guide in numbers, FY07's $4.42 stands)
+  Min viable P/E at panic:          9x  [median of calendar-year P/E lows: 2003 6.5x, 2004 23.8x, 2005 13.6x, 2006 9.8x, 2007 9.2x, 2008 7.0x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $39.78/share
+  Current $40.76 vs Updated EPP $39.78:  +2%  moderate distance to floor
+  Bear $8.93 vs Updated EPP $39.78:  -78%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Net revenue growth                           -12.0       -9.3   BASE floor (vs -3 now)
+  Credit cost (provision/revenue)              670.0     -399.2   BASE floor (vs +1069 now)
+  Expense growth less revenue                   29.0      +15.9   BASE floor (vs +13 now)
+  Nonperforming assets less loans              109.0      -30.2   BASE floor (vs +139 now)
+  Pre-tax margin change                      -1760.0      +95.0   BASE floor (vs -1855 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $4.42 × (1+0.0%)² = $4.42
+  At 11x P/E (conservative):  $48.62/share
+  + Cumul. dividends (2yr):  +$3.13/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $48.62  (▲7.86 from $40.76)
+  Conservative total return:  +27% over 2yr  = +13%/yr
+
+  At 9.2x the multiple is already near its 11x median, so the conservative
+  case is a growth question: breakeven at 11x needs FY2010E EPS of $3.42,
+  i.e. -12.0%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $29.24  –  $49.95  (at 56th pct of range)
+  Annual dividend:      $1.52/share  (yield 3.7%)
+  Realized vol:         49% annualized (1-yr daily log returns)
+  Beta vs broad market: 1.70
+  1-sigma range (1yr):  $20.91  –  $60.61  ($40.76 ± 49%)
+  2-sigma range (1yr):  $1.06  –  $80.46
+  ────────────────────────────────────────────────────────────
+  Bear $8.93 requires:  ~1.6σ price move  (unusual — requires fundamental break)
+  A bank whose earnings follow credit and markets: the stock is +31% off its July
+  low (52 weeks) while revenue went from -11.0% (Q1 2008) to -2.7% YoY (Q2 2008), +8.9% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        0.96    9.3x  $   8.93    53.1%     15.8%   +37.3pp  EPS -53.3%/yr (worst year FY03-FY07, capped at 0%); P/E to its 10th pct
+  BASE        3.18   11.4x  $  36.25    35.0%     55.2%   -20.2pp  EPS -15.2%/yr (Q2 revenue YoY + margin + buyback); P/E at its 5.6-yr median
+  BULL        5.22   14.7x  $  76.73    10.0%     24.4%   -14.4pp  EPS +8.7%/yr (FY03-FY07 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL      11.56   26.0x  $ 300.56     1.9%      4.6%    -2.7pp  EPS +61.7%/yr (best 2-yr run FY03-FY07, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $30.81  /  Market EV: $53.98  /  Current: $40.76
+  Conservative EV (2yr, ④): $48.62 + $3.13 divs = $51.75 total value
+  Downside (→ Bear $8.93): 78.1%   Upside (→ Bull $76.73): 88.2%   Ratio B 0.88x  →  ◎ ACCUMULATE
+
+  To earn the 15%/yr hurdle from $40.76 the market needs $53.91 in two years —
+  between the BASE and BULL cases. That is a market composite of 2.13 against a model
+  read of 1.65: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.88x      +2%    -0.48  MODESTLY OVERVALUED / ACCUMULATE
+  Multiples one band richer (p25/p75/p90/max)     0.32x      +2%    -0.07  FAIRLY VALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     1.76x      +2%    -0.79  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          0.82x      +2%    -0.45  MODESTLY OVERVALUED / ACCUMULATE
+  Scenario EPS -1.5pp/yr                          0.95x      +2%    -0.51  OVERVALUED / ACCUMULATE
+  Structural read +0.30 (bullish SCA)             0.88x      +2%    -0.18  FAIRLY VALUED / ACCUMULATE
+  EPP P/E +3 turns (softer floor)                 0.88x     -23%    -0.28  MODESTLY OVERVALUED / ACCUMULATE
+  Hurdle 10%/yr instead of 15%                    0.88x      +2%    -0.39  MODESTLY OVERVALUED / ACCUMULATE
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 2008 print (the quarter ends in September) — revenue against the Q2 2008 revenue growth (no Q3 2008 guide): -2.7% YoY
+  (2) Credit costs — the provision took 18.8% of revenue in Q2 2008 (+1069.2bp YoY): what must turn before earnings can
+  (3) A Q3 2008 revenue guide — none: JPMorgan Chase gives no firm-wide revenue, EPS or margin outlook in any filing; net charge-offs and reserve builds by business are in each supplement
+  (4) Nonperforming assets — +154.9% against loans +15.7% in Q2 2008 (+139.2pp): problem loans outgrowing the book would show here first
+  (5) Capital at 9x — dividend $0.38 a quarter: 'The Board of Directors has declared a quarterly dividend of $0.38 per share on the outstanding shares of the corporation’s common stock, an increase of $0.04 per share, or 12%.' (Q1 2007 release); Tier 1 capital ratio 9.1% at the end of Q2 2008
+  ◎ ACCUMULATE  |  EPP floor $39.78  |  ADD below ~$30.81  |  TRIM above $76.73
+════════════════════════════════════════════════════════════════════════
+
