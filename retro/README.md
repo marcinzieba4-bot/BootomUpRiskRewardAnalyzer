@@ -19941,7 +19941,11 @@ Controls and checks (before any outcome):
   March 2021).
 - **Regression:** the 522 dates of 2008-2017 rebuild byte for byte; no file another ticker's builder reads has changed but
   `taxonomy_eras.json` (two names in no model).
-- **Firewall:** see below (run after the build was committed and pushed, before any outcome).
+- **Firewall** (run after the build was committed and pushed, before any outcome): passes at the 18 cutoffs above (every print and
+  vintage date of the range, and 2022-01-01), 0 files changed and no planted text (526 to 731 dates each). As a positive control the plants
+  reach the first date after them: rebuilding 2021-11-12 with the plants of the 2021-10-27 cutoff (and 2019-08-09 with those of
+  2019-07-26) stops at the builder's refusal of the planted guide, and without the guide, dividend and listing at its check of the planted
+  restatement of the last print before the cutoff.
 
 Seen in the build (method behaviour, not tuned):
 - **RICH on 190 dates, FAIR on 19** (2019-02-06 to 2019-06-28, after the FY2018 print, and 2020-03-13 to 2020-04-24, in the COVID fall);
