@@ -30,7 +30,10 @@ model was built or scored):
   - (JPM 2018-2021) CRYPTO (live from 2020-10-21, scoped to banks and payments) joins the watch list from its live date on the current
     10-K's own words ('crypto_quote': payments processing "could be ... disrupted by technologies, such as cryptocurrencies"),
     company-acknowledged, text only;
-  - dividend: the latest declared quarterly rate, each from the first filing that states it ('dividends').
+  - dividend: the latest declared quarterly rate, each from the first filing that states it ('dividends');
+  - (JPM 2022-2026, no code change) FY2024 at the company's figure excluding significant items ($18.22, the Q4 2024 release), as
+    FY2017; a Q4 quarter its own 10-K restates ('restated': Q4 2024's nonperforming assets in the FY2024 10-K); the FY2025 10-K's
+    words on tokenized securities and distributed ledger technology keep CRYPTO on the watch list ('crypto_quote').
 The kind is DURABLE: the 10-Ks tie results to markets and the economy but do not call the business cyclical (the LOW and SHW
 reading). No disruption theme in taxonomy_eras.json is live for a bank holding company in 2008-2009, so the builder refuses events
 until a theme encoding is decided, and it refuses guides, listings, splits and company names until their encodings are decided.
@@ -47,6 +50,7 @@ Usage
   python3 retro/build_jpm.py --weekly 2010-01-04 2013-12-31
   python3 retro/build_jpm.py --weekly 2014-01-06 2017-12-31
   python3 retro/build_jpm.py --weekly 2018-01-01 2021-12-31
+  python3 retro/build_jpm.py --weekly 2022-01-03 2026-11-15
   python3 retro/build_jpm.py 2008-04-17
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/JPM/<AS_OF>
 """
@@ -175,7 +179,9 @@ def build(as_of, facts, raw, spx, engine, out):
     prints = [p for p in public if guide_fy(p) >= first_fy]
     if not prints:
         sys.exit(f"{as_of}: no quarterly print after FY{first_fy - 1} is public yet")
-    # a Q4 print's full-year actuals extend the annual history from its release until the next 10-K vintage
+    # a Q4 print's full-year actuals extend the annual history from its release until the next 10-K vintage; the 10-K in force keeps
+    # its own label for the words quoted from it (JPM 2022-2026: the CRYPTO line had named the extended year's 10-K before it was filed)
+    tenk_label = h["fy_label"]
     h = {**h, "extended": ""}
     for p in prints:
         a = p.get("fy_actual")
@@ -290,7 +296,7 @@ def build(as_of, facts, raw, spx, engine, out):
             val_word = "a premium" if pe_now_pctl >= 70 else "a discount to its own history" if pe_now_pctl <= 30 else "near its own median"
             stage = "crypto"
             watch = [{"theme": "CRYPTO", "status": "live, company-acknowledged; no market read",
-                      "reason": (f"Live: JPMorgan Chase's own FY20{h['fy_label'][2:]} 10-K says '{h['crypto_quote']}'. The stock trades at "
+                      "reason": (f"Live: JPMorgan Chase's own FY20{tenk_label[2:]} 10-K says '{h['crypto_quote']}'. The stock trades at "
                                  f"{close / eps_now:.1f}x {fy_e_s} — {val_word}. Re-file as DISRUPTION_EXPOSED (CRYPTO) only if dated "
                                  "evidence shows the market pricing crypto disintermediation of JPMorgan Chase's payments and banking "
                                  "specifically.")}]

@@ -14,7 +14,7 @@
    {
     "theme": "CRYPTO",
     "status": "live, company-acknowledged; no market read",
-    "reason": "Live: JPMorgan Chase's own FY2020 10-K says 'both financial institutions and their non-banking competitors face the risk that payments processing and other services could be significantly disrupted by technologies, such as cryptocurrencies, that require no intermediation'. The stock trades at 15.1x FY21E — a premium. Re-file as DISRUPTION_EXPOSED (CRYPTO) only if dated evidence shows the market pricing crypto disintermediation of JPMorgan Chase's payments and banking specifically."
+    "reason": "Live: JPMorgan Chase's own FY2019 10-K says 'both financial institutions and their non-banking competitors face the risk that payments processing and other services could be significantly disrupted by technologies, such as cryptocurrencies, that require no intermediation'. The stock trades at 15.1x FY21E — a premium. Re-file as DISRUPTION_EXPOSED (CRYPTO) only if dated evidence shows the market pricing crypto disintermediation of JPMorgan Chase's payments and banking specifically."
    }
   ],
   "evidence": []
