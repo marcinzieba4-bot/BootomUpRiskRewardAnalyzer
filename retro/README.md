@@ -20110,7 +20110,12 @@ Controls and checks (before any outcome):
   ($2,024.17 to $2,044.16 in 2022) and one diluted share count (12.2030 billion, 2025-10-31 to 2026-01-30).
 - **Regression:** the 731 dates of 2008-2021 rebuild byte for byte with the new builder, fact sheet and a fresh price cache; the shared file
   that changes is `taxonomy_eras.json` (ten names in no model).
-- **Firewall:** see the result below, run after the build was committed and pushed and before any outcome.
+- **Firewall** (run after the build was committed and pushed, before any outcome): passes at the 24 cutoffs above (every print, vintage,
+  dividend and GENAI-event date of the range, the split's 8-K and effective date, GENAI's live date and 2026-11-14), 0 files changed and no
+  planted text (735 to 985 dates each), with the plants of 2008-2021 and a later copy of the GENAI event. As a positive control the plants
+  reach the first date after them: rebuilding 2026-11-13 with the plants of the 2026-10-29 cutoff (and 2024-02-16 with those of
+  2024-01-31) stops at the builder's refusal of the planted guide, and without the guide, listing and dividend at its check of the planted
+  10-Q restatement of the last print before the cutoff.
 
 Seen in the build (method behaviour, not tuned):
 - **CHEAP on 83 dates, FAIR on 37, RICH on 134.** By year: 2022 CHEAP 48 and RICH 4 (January, on FY20's anchor); 2023 CHEAP 11, FAIR 11
