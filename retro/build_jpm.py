@@ -27,6 +27,9 @@ model was built or scored):
   - a Q4 supplement that republishes the previous year's company figure on a revised basis restates it in the history from its own
     date ('restates' on the full-year actuals: FY2008 at $0.88 from the Q4 2009 supplement), and the same for its total net revenue
     ('restates_revenue', JPM 2014-2017: FY2014 at $95,112M from the Q4 2015 supplement, the affordable housing accounting);
+  - (JPM 2018-2021) CRYPTO (live from 2020-10-21, scoped to banks and payments) joins the watch list from its live date on the current
+    10-K's own words ('crypto_quote': payments processing "could be ... disrupted by technologies, such as cryptocurrencies"),
+    company-acknowledged, text only;
   - dividend: the latest declared quarterly rate, each from the first filing that states it ('dividends').
 The kind is DURABLE: the 10-Ks tie results to markets and the economy but do not call the business cyclical (the LOW and SHW
 reading). No disruption theme in taxonomy_eras.json is live for a bank holding company in 2008-2009, so the builder refuses events
@@ -43,6 +46,7 @@ Usage
   python3 retro/build_jpm.py --weekly 2009-01-05 2009-12-31
   python3 retro/build_jpm.py --weekly 2010-01-04 2013-12-31
   python3 retro/build_jpm.py --weekly 2014-01-06 2017-12-31
+  python3 retro/build_jpm.py --weekly 2018-01-01 2021-12-31
   python3 retro/build_jpm.py 2008-04-17
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/JPM/<AS_OF>
 """
@@ -274,6 +278,30 @@ def build(as_of, facts, raw, spx, engine, out):
     theme_summary = "no disruption theme has dated evidence"
     cat4 = (f"(4) Nonperforming assets — {latest['npa_pct']:+.1f}% against loans {latest['loans_pct']:+.1f}% in {latest['quarter']} "
             f"({latest['npa_gap_pp']:+.1f}pp): problem loans outgrowing the book would show here first")
+    why = h["why"]
+    # (JPM 2018-2021) from the FY2017 10-K the competition risk factor says payments processing could be disrupted by technologies "such
+    # as cryptocurrencies" ('crypto_quote' on the vintage). CRYPTO is live from 2020-10-21 and its scope names banks and payments, so from
+    # that date the current 10-K's words put it on the watch list, company-acknowledged, with no market read (the SO and LOW encoding: no
+    # factor pair, since no 10-K names a crypto offering of the Firm's own; the theme signal stays at 2/4, so only text changes). Before
+    # the live date the words stay in the "why" (the PEP obesity rule) (retro/README.md, "JPM 2018-2021")
+    if h.get("crypto_quote"):
+        cr = retro_tool.load_taxonomy()["themes"]["CRYPTO"]
+        if cr["live_from"] <= as_of:
+            val_word = "a premium" if pe_now_pctl >= 70 else "a discount to its own history" if pe_now_pctl <= 30 else "near its own median"
+            stage = "crypto"
+            watch = [{"theme": "CRYPTO", "status": "live, company-acknowledged; no market read",
+                      "reason": (f"Live: JPMorgan Chase's own FY20{h['fy_label'][2:]} 10-K says '{h['crypto_quote']}'. The stock trades at "
+                                 f"{close / eps_now:.1f}x {fy_e_s} — {val_word}. Re-file as DISRUPTION_EXPOSED (CRYPTO) only if dated "
+                                 "evidence shows the market pricing crypto disintermediation of JPMorgan Chase's payments and banking "
+                                 "specifically.")}]
+            sig_name = "Crypto: disintermediation of payments and banking"
+            trigger = "Payments move to crypto rails that need no bank faster than the Firm adapts its own products"
+            theme_summary = "crypto is live and company-acknowledged; no dated evidence ties the multiple to it"
+            why += (f"; CRYPTO is live (from {cr['live_from']}) and scoped to banks and payments: these words put it on the watch list, "
+                    "company-acknowledged, with no dated evidence that the market prices it for JPMorgan Chase")
+        else:
+            why += ("; no disruption theme in taxonomy_eras.json is live for a bank holding company on this date, so the watch list is "
+                    "empty and these words stay here (the PEP obesity rule)")
 
     after_print = [p for p in prints if p["published"] < as_of and not any(p["published"] < d < as_of for d in days)]
     tag = f"(day after the {after_print[-1]['quarter']} print)" if after_print else f"(pre-{next_q} print)"
@@ -331,7 +359,7 @@ SOURCES = {json.dumps(sources, ensure_ascii=False, indent=4)}
 PIT_PROFILE = {{
     "kind": {R(h["kind"])},
     "risk": 2,
-    "why": {R(h["why"])},
+    "why": {R(why)},
     "theme_watch": {R(watch)},
     "evidence": [],
 }}

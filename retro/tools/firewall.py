@@ -106,7 +106,7 @@ pre-tax margin, quarter EPS, Tier 1 ratio, notes and raw figures are absurd, wit
 latest vintage before CUTOFF, a later Q4 print excluding its own year, a later 10-Q restatement of the last print before CUTOFF and a
 later vintage of the other kind excluding a year with planted texts, figures and window start (the guide, dividend, listing and company
 name every fact sheet with those lists gets, too), and from JPM 2014-2017 planted actuals that restate every year's EPS and revenue
-('restates', 'restates_revenue'); GOOG: a print whose revenues, margins, opex and receivables gaps, quarter EPS, cash,
+('restates', 'restates_revenue'), and from JPM 2018-2021 a later vintage with planted CRYPTO words ('crypto_quote'); GOOG: a print whose revenues, margins, opex and receivables gaps, quarter EPS, cash,
 notes and raw figures are absurd, with absurd full-year actuals for the year after the latest vintage before CUTOFF, a later Q4 print
 whose full-year actuals exclude its own year, a later 10-Q restatement of the last print before CUTOFF with absurd figures, and a later
 vintage excluding a year with planted texts, figures, outlook words, exchange and window start, every per-share figure on a planted
@@ -731,6 +731,7 @@ try:
                  prev_fy_sales_growth=-99.0, tax_rate=0.99, tax_note="PLANTED", groups=[["PLANTED", 1, -99]],
                  groups_basis="PLANTED", exchange="PLANTED", pe_window_start="1990-01-02", kind="CYCLICAL",
                  eps_first_excluded={"1990": "PLANTED"})
+        v["crypto_quote"] = "PLANTED"      # (JPM 2018-2021) a later 10-K's cryptocurrency words, the CRYPTO watch-list text
     if TICKER == "MU":     # a later vintage excluding a year and readmitting none, with planted texts and figures
         v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}
         v.update(normalization="PLANTED", business_line="PLANTED", prev_fy_op_margin=-99.0, prev_fy_op_margin_note="PLANTED",
