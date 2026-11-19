@@ -1826,6 +1826,56 @@
     "term": "Google Workspace",
     "first_seen": "2020-10-30",
     "note": "Google's renamed productivity suite (G Suite until 2020); first in a Google or Alphabet filing in the Q3 2020 10-Q (accepted 2020-10-29 19:30 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "YouTube Shorts",
+    "first_seen": "2022-10-26",
+    "note": "YouTube's short-video format (2020) by its full name; first in a Google or Alphabet filing in the Q3 2022 earnings 8-K (ex.99.1, accepted 2022-10-25 16:01 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "Pixel Watch",
+    "first_seen": "2023-02-03",
+    "note": "Google's smartwatch (2022); first in a Google or Alphabet filing in the FY2022 10-K (accepted 2023-02-02 21:23 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "Google DeepMind",
+    "first_seen": "2023-04-21",
+    "note": "the AI unit formed by combining DeepMind and Google Research's Brain team (2023); first in a Google or Alphabet filing in the 8-K of 2023-04-20 (ex.99.1, accepted 16:24 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "Search Generative Experience",
+    "first_seen": "2024-01-31",
+    "note": "Google's generative-AI search test (2023); first in a Google or Alphabet filing in the FY2023 10-K (accepted 2024-01-30 21:43 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "Duet AI",
+    "first_seen": "2024-01-31",
+    "note": "Google's AI assistant for Workspace and Cloud (2023); first in a Google or Alphabet filing in the FY2023 10-K (accepted 2024-01-30 21:43 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "Gemini App",
+    "first_seen": "2024-10-30",
+    "note": "Google's Gemini assistant app (2024); first in a Google or Alphabet filing in the Q3 2024 earnings 8-K (ex.99.1, accepted 2024-10-29 16:01 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "AI Overviews",
+    "first_seen": "2025-02-05",
+    "note": "Google Search's generative-AI summaries (2024); first in a Google or Alphabet filing in the Q4 2024 earnings 8-K (ex.99.1, accepted 2025-02-04 16:01 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "NotebookLM",
+    "first_seen": "2025-02-05",
+    "note": "Google's AI research notebook (2023); first in a Google or Alphabet filing in the FY2024 10-K (accepted 2025-02-04 20:41 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "Gemini Enterprise",
+    "first_seen": "2025-10-30",
+    "note": "Google Cloud's AI agent platform (2025); first in a Google or Alphabet filing in the Q3 2025 10-Q (accepted 2025-10-29 21:55 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "Gemini 3",
+    "first_seen": "2026-02-05",
+    "note": "Google's model generation released in November 2025; first in a Google or Alphabet filing in the Q4 2025 earnings 8-K (ex.99.1, accepted 2026-02-04 16:01 ET, after the close), EDGAR full-text search"
    }
   ]
  }

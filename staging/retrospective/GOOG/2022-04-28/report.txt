@@ -1,0 +1,159 @@
+
+════════════════════════════════════════════════════════════════════════
+  GOOG  ·  Alphabet Inc.  ·  $2,388.23  ·  RETROSPECTIVE as of 2022-04-28
+  Signal: ◉ BUY   Ratio B: 0.62x   Adj gap: +0.58  [UNDERVALUED]
+  Point-in-time: 14 sources, latest published 2022-04-28; latest print Q1 2022 (Apr 26)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2022E revenue, USD bn  →  FY2024E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2022E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Google Search & other         $183.21  $183.21  $268.62    +0.00   +85.41
+    +43.1% revenue in FY21
+  YouTube ads                   $ 35.48  $35.48  $52.02    +0.00   +16.54
+    +45.9% revenue in FY21
+  Google Network                $ 38.99  $38.99  $57.17    +0.00   +18.18
+    +37.3% revenue in FY21
+  Google other                  $ 34.48  $34.48  $50.55    +0.00   +16.07
+    +29.1% revenue in FY21
+  Google Cloud                  $ 23.62  $23.62  $34.64    +0.00   +11.02
+    +47.1% revenue in FY21
+  Other Bets                    $  0.93  $ 0.93  $ 1.36    +0.00    +0.43
+    +14.6% revenue in FY21
+  Hedging gains (losses)        $  0.18  $ 0.18  $ 0.27    +0.00    +0.09
+    -15.3% revenue in FY21
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $316.89  $316.89  $464.63    +0.00   +147.74
+  FY2022E = FY21 $257.637B × (1 + 23.0%: the Q1 2022 revenue growth (no Q2 2022 guide), YoY, applied to the year (no FY22 revenue guide)); split pro rata to FY21 revenues by type (FY21 growth)
+  Q1 2022 (Apr 26): revenue $68.011B +23.0% YoY (-9.7% QoQ); receivables +23.9%; R&D + S&M + G&A +24.0%;
+  gross margin 56.48% (+5.4bp); operating margin 29.55% (-17.1bp); EPS $24.62 vs $26.29
+  Revenue: revenues $68,011.0M vs $55,314.0M a year earlier, $75,325.0M the quarter before (Google Search & other $39,618.0M, YouTube ads $6,869.0M, Google Network $8,174.0M, Google other $6,811.0M, Google Cloud $5,821.0M, Other Bets $440.0M, hedging gains (losses) $278.0M); the release gives no paid-click table; accounts receivable $34,703.0M (2022-03-31) vs $28,006.0M a year earlier (Q1 2021 10-Q); GAAP diluted EPS $24.62 vs $26.29 (every class); diluted shares 667.6M; employees: 'Number of employees | 139,995 | 163,906'; TAC: 'Total TAC | 9,712 | 11,990'
+  Q2 2022: no revenue, EPS or margin guide in numbers in any filing; the latest quarter's revenue growth stands in (the UNP rule); in words only, the FY21 10-K: 'Our revenue growth rate could decline over time, and we anticipate downward pressure on our operating margin in the future.' (display only); the releases estimate stock-based compensation, dilution and capital expenditure, which method r2 has no input for
+
+  FY2022E EPS check:  $316.890B × 35.2% pre-tax × (1−16.2%) ÷ 0.668B  =  $140.10  (FY2022E: no EPS guide in numbers, FY21's $112.20 stands)
+  FY2024E BEAR check: $316.890B × 35.2% ÷ 0.670B  =  $139.49  (scenario $46.87)
+  FY2024E BULL check: $464.630B × 35.6% ÷ 0.670B  =  $206.85  (scenario $170.19)
+  Every 1pp of pre-tax margin ≈ $3.978 EPS ≈ $100.64/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Revenue growth                        -88.0%    ≥73.0%   ≥234.0%  ≥8585.0%    +23.0%  ⚠ BEAR  █░░░
+  Gross margin change                 -2910.0bp  ≥-1350.0bp  ≥210.0bp  ≥38090.0bp    +5.4bp  ◦ BASE  ██░░
+  Opex growth less revenue            +183.0pp   ≤72.0pp  ≤-38.0pp  ≤-8252.0pp    +1.0pp  ◦ BASE  ██░░
+  Receivables growth less revenue      +55.0pp   ≤28.0pp    ≤2.0pp  ≤-84.0pp    +1.0pp  ▲ BULL  ███░
+  Operating margin change             -5090.0bp  ≥-1910.0bp  ≥1280.0bp  ≥288470.0bp   -17.1bp  ◦ BASE  ██░░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.95 / 4.00
+  Market composite:   1.67 / 4.00  (back-solved from $2,388.23 + 15% hurdle)
+  SCA adjustment:    +0.30  ·  EPP-distance adj +0.00  →  Adj composite 2.25  →  Gap +0.58  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY21 revenues +41.2%, gross margin 56.9%; Q1 gross margin 56.48% (+5bp YoY)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 21.3x FY22E vs a 25.3x 10-yr median (15th percentile of its own range)  (+0.50 × 25%  =  +0.125)
+    +  Growth vs own history: Q1 2022 revenue growth (no Q2 2022 guide) +23% vs a 20.4% 9-yr median  (+0.26 × 20%  =  +0.052)
+    +  Cash, cash equivalents and marketable securities $133.970B, long-term debt $14,791.0M (no short-term debt line) (Q1 2022), FY21 free cash flow $67.012B (cash from operations $91,652.0M less purchases of property and equipment $24,640.0M), no dividend  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Revenue growth                        +23.0%    -88.0%  -111.0%  Advertisers cut budgets: fewer paid c…
+  Gross margin change                   +5.4bp  -2910.0bp  -2915.4bp  Traffic acquisition and data-center c…
+  Opex growth less revenue              +1.0pp  +183.0pp  +182.0pp  Hiring and R&D do not slow with revenue
+  Receivables growth less revenue       +1.0pp   +55.0pp  +54.0pp  Advertisers pay more slowly: collecti…
+  Operating margin change              -17.1bp  -5090.0bp  -5072.9bp  Operating leverage works in reverse
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$1,957.27  (model)  /  $946.77 (defined)
+  Bear probability (proxy model):  20.2%
+
+  KEY TRIGGER: revenue went from +32.4% (Q4 2021) to +23.0% YoY (Q1 2022), -9.7% on the quarter before;
+  the bear case needs a downturn in gross margin (+5.4bp now)
+  and receivables (+1.0pp against revenue) giving way. An advertising slowdown shows up in paid clicks and revenue growth first;
+  the bear needs it in gross margin as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $112.20  (FY2022E: no EPS guide in numbers, FY21's $112.20 stands)
+  Min viable P/E at panic:          20x  [median of calendar-year P/E lows: 2012 16.2x, 2013 18.0x, 2014 24.9x, 2015 20.2x, 2016 24.0x, 2017 43.7x, 2018 22.3x, 2019 20.7x, 2020 18.0x, 2021 15.4x, 2022 20.5x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $2,244.00/share
+  Current $2,388.23 vs Updated EPP $2,244.00:  +6%  moderate distance to floor
+  Bear $946.77 vs Updated EPP $2,244.00:  -58%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Revenue growth                                73.0      +50.0   BASE floor (vs +23 now)
+  Gross margin change                        -1350.0    -1355.4   BASE floor (vs +5 now)
+  Opex growth less revenue                      72.0      +71.0   BASE floor (vs +1 now)
+  Receivables growth less revenue               28.0      +27.0   BASE floor (vs +1 now)
+  Operating margin change                    -1910.0    -1892.9   BASE floor (vs -17 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $112.20 × (1+20.8%)² = $163.69
+  At 25x P/E (conservative):  $4,092.15/share
+  + Cumul. dividends (2yr):  +$0.00/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $4,092.15  (▲1,703.92 from $2,388.23)
+  Conservative total return:  +71% over 2yr  = +36%/yr
+
+  At 21.3x the multiple is already near its 25x median, so the conservative
+  case is a growth question: breakeven at 25x needs FY2024E EPS of $95.53,
+  i.e. -7.7%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $2,230.05  –  $3,042.00  (at 19th pct of range)
+  Annual dividend:      $0.00/share  (yield 0.0%)
+  Realized vol:         26% annualized (1-yr daily log returns)
+  Beta vs broad market: 1.33
+  1-sigma range (1yr):  $1,760.13  –  $3,016.33  ($2,388.23 ± 26%)
+  2-sigma range (1yr):  $1,132.02  –  $3,644.44
+  ────────────────────────────────────────────────────────────
+  Bear $946.77 requires:  ~2.3σ price move  (unusual — requires fundamental break)
+  An advertising business whose revenue follows advertisers' budgets: the stock is +7% off its May
+  low (52 weeks) while revenue went from +32.4% (Q4 2021) to +23.0% YoY (Q1 2022), -9.7% on the quarter before.
+  Near the low: the multiple has not run ahead of the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR       46.87   20.2x  $ 946.77    20.2%     39.1%   -18.9pp  EPS -35.4%/yr (worst year FY12-FY21, capped at 0%); P/E to its 10th pct
+  BASE      169.15   25.3x  $4,279.49    59.6%     45.4%   +14.1pp  EPS +22.8%/yr (Q1 revenue YoY + margin + buyback); P/E at its 10-yr median
+  BULL      170.19   27.6x  $4,697.24    17.1%     13.0%    +4.0pp  EPS +23.2%/yr (FY12-FY21 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL     306.43   31.7x  $9,713.83     3.2%      2.5%    +0.8pp  EPS +65.3%/yr (best 2-yr run FY12-FY21, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $3,854.11  /  Market EV: $3,164.37  /  Current: $2,388.23
+  Conservative EV (2yr, ④): $4,092.15 + $0.00 divs = $4,092.15 total value
+  Downside (→ Bear $946.77): 60.4%   Upside (→ Bull $4697.24): 96.7%   Ratio B 0.62x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $2,388.23 the market needs $3,158.43 in two years —
+  at or below the BASE case. That is a market composite of 1.67 against a model
+  read of 2.25: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.62x      +6%    +0.58  UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.44x      +6%    +0.73  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.79x      +6%    +0.45  MODESTLY UNDERVALUED / ACCUMULATE
+  Scenario EPS +1.5pp/yr                          0.58x      +6%    +0.61  UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.68x      +6%    +0.55  UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.62x      +6%    +0.88  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.62x      -7%    +0.78  UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.62x      +6%    +0.67  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 2022 print (the quarter ends in June) — revenue against the Q1 2022 revenue growth (no Q2 2022 guide): +23% YoY
+  (2) Gross margin — +5.4bp in Q1 2022: traffic acquisition and data-center costs against revenue, what must hold if revenue does not
+  (3) A Q2 2022 revenue guide — none: Google gives no revenue, EPS or margin outlook in any filing; aggregate paid clicks and traffic acquisition costs are in each release
+  (4) Receivables — +23.9% against revenue +23.0% in Q1 2022 (+1.0pp): advertisers paying more slowly would show here first
+  (5) Capital structure at 21x — repurchases of stock $13,300.0M in Q1 2022 (the cash flow statement); 'On April 20, 2022, the Board of Directors of Alphabet authorized the company to repurchase up to an additional $70.0 billion of its Class A and Class C shares'; no dividend
+  ◉ BUY  |  EPP floor $2,244.00  |  ADD below ~$3,637.57  |  TRIM above $4,697.24
+════════════════════════════════════════════════════════════════════════
+

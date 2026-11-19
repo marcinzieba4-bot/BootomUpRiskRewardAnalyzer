@@ -32,6 +32,12 @@ date 2014-03-27, Yahoo's split date), and every history figure is restated on th
 is the Class C capital stock from that date, and EPS is the priced class's (Class C from the split); Alphabet Inc. is the successor
 issuer from its 8-K12B ('company_names', the ACN rule); a Q4 release that prints no full-year diluted share count leaves the share
 history as it was until the 10-K.
+From 2022 (retro/README.md, "GOOG 2022-2026"): the 20-for-one stock dividend of 2022 is a split ('splits', effective on the first
+split-adjusted trading day, 2022-07-18, Yahoo's split date); dividends, from the first in April 2024, are the latest declared rate, each
+from the first filing that states it (the MSFT rule); GENAI (live from 2022-11-30 and scoped to generative AI substituting search among
+other products) joins the watch list from the first 10-K whose competition risk factor names other companies' AI products
+(genai_company_acknowledged, the FY2023 10-K; the MSFT rule), company-acknowledged with no market read: its factor pair nets to zero and
+the theme signal stays at 2/4, so only text changes; a 10-K's words are replaced by the next 10-K's.
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
 is the first trading day after it. Google released after the close on Thursdays, so a print is dated the Friday, the week's last
@@ -200,9 +206,10 @@ def build(as_of, facts, raw, spx, engine, out):
     yahoo_splits = {dt.datetime.fromtimestamp(v["date"] + chart["meta"]["gmtoffset"], dt.timezone.utc).date().isoformat()
                     for v in chart.get("events", {}).get("splits", {}).values()}
     assert all(s["effective"] in yahoo_splits for s in facts.get("splits", [])), "a split's effective date must match the price data"
-    # no filing of the period guides revenue, EPS or a margin and none states a dividend or a listing change: the builder refuses
-    # any such fact until its encoding is decided (a change of company name is applied below: Alphabet Inc., the successor issuer)
-    for kind in ("guides", "dividends", "listings"):
+    # no filing guides revenue, EPS or a margin in numbers and none states a listing change: the builder refuses any such fact until
+    # its encoding is decided (a change of company name is applied below: Alphabet Inc., the successor issuer; dividends, from 2024, are
+    # the latest declared rate)
+    for kind in ("guides", "listings"):
         if [x for x in facts.get(kind, []) if x["published"] <= as_of]:
             sys.exit(f"{as_of}: the GOOG builder has no encoding for {kind}; decide one first")
     for p in [p for p in facts["prints"] if p["published"] <= as_of]:  # a print public on AS_OF must match its raw figures
@@ -221,11 +228,15 @@ def build(as_of, facts, raw, spx, engine, out):
     guide_fy = lambda p: p["fy"] + (1 if p["quarter"].startswith("Q4") else 0)
     public = [as_restated(p, as_of) for p in facts["prints"] if p["published"] <= as_of]
     prints = [p for p in public if guide_fy(p) >= first_fy]
-    # no disruption theme in taxonomy_eras.json is live for a search and advertising company in 2008-2009: the builder refuses events
-    # until a theme encoding is decided
-    events = [e for e in facts["events"] if e["published"] <= as_of]
-    if events:
+    # no disruption theme in taxonomy_eras.json is live for a search and advertising company to 2022-11-29. The one encoding decided
+    # (retro/README.md, "GOOG 2022-2026"): each 10-K whose competition risk factor names other companies' AI products puts GENAI (live
+    # from 2022-11-30) on the watch list with that 10-K's words (genai_company_acknowledged; a 10-K's wording is replaced by the next
+    # 10-K's, an event without a 'doc' would stay in scope once public). Any other event kind needs its encoding decided first
+    events = [e for e in facts["events"] if e["published"] <= as_of and (h["published"] <= e["published"] or "doc" not in e)]
+    if any(e["kind"] != "genai_company_acknowledged" for e in events):
         sys.exit(f"{as_of}: the GOOG builder has no encoding for event kinds {sorted({e['kind'] for e in events})}; decide one first")
+    themes = retro_tool.load_taxonomy()["themes"]
+    events = [e for e in events if themes[e["theme"]]["live_from"] <= as_of]      # a theme counts only from its live date
     if not prints:
         sys.exit(f"{as_of}: no quarterly print after FY{first_fy - 1} is public yet")
     # a Q4 print's full-year actuals extend the annual history from its release until the next 10-K vintage
@@ -326,6 +337,23 @@ def build(as_of, facts, raw, spx, engine, out):
     theme_summary = "no disruption theme has dated evidence"
     cat4 = (f"(4) Receivables — {latest['receivables_pct']:+.1f}% against revenue {latest['sales_pct']:+.1f}% in {latest['quarter']} "
             f"({latest['receivables_gap_pp']:+.1f}pp): advertisers paying more slowly would show here first")
+    for e in [e for e in events if e["kind"] == "genai_company_acknowledged"][-1:]:
+        # GENAI is live from 2022-11-30 and its scope names search; the latest 10-K's competition risk factor names other companies' AI
+        # products, so it joins the watch list (the MSFT rule: company-acknowledged, no market read). The factor pair nets to zero and the
+        # theme signal stays at 2/4, so only text changes; re-filing needs dated evidence of the market pricing it for Google
+        val_word = "a premium" if pe_now_pctl >= 70 else "a discount to its own history" if pe_now_pctl <= 30 else "near its own median"
+        stage = "genai"
+        watch = [{"theme": "GENAI", "status": "live, company-acknowledged; no market read",
+                  "reason": (f"Live: Alphabet's own {e['doc']}, under '{e['heading']}', says '{e['risk_quote']}' and '{e['rival_quote']}'"
+                             + (f" and that '{e['usage_quote']}'" if e.get("usage_quote") else "") +
+                             f" It builds generative AI of its own: '{e['offering']}' The stock trades at {close / eps_now:.1f}x {fy_e_s} — "
+                             f"{val_word}. Re-file as DISRUPTION_EXPOSED (GENAI) only if dated evidence shows the market pricing "
+                             "generative-AI substitution of Google Search specifically.")}]
+        factors = [(f"Generative AI: {e['offering_short']}", 0.2, 0.10),
+                   (f"AI competition ({e['doc']}): {e['risk_short']}", -0.2, 0.10)]
+        sig_name = "Generative AI: net effect on Search and advertising"
+        trigger = "Users take queries to other companies' AI products faster than Google's own AI keeps them"
+        theme_summary = "generative AI is live and company-acknowledged; no dated evidence ties the multiple to it"
 
     after_print = [p for p in prints if p["published"] < as_of and not any(p["published"] < d < as_of for d in days)]
     tag = f"(day after the {after_print[-1]['quarter']} print)" if after_print else f"(pre-{next_q} print)"
@@ -340,10 +368,11 @@ def build(as_of, facts, raw, spx, engine, out):
     renames = [n for n in facts.get("company_names", []) if h["published"] < n["published"] <= as_of]
     company = renames[-1]["name"] if renames else h["company"]
     ids = (list(h["sources"]) + [x for p in prints for x in [p["source"]] + p.get("extra_sources", [])]
-           + [public[i - 1]["source"]] + ([dividend_src] if dividend_src else []) + split_ids + [n["source"] for n in renames])
+           + [public[i - 1]["source"]] + ([dividend_src] if dividend_src else []) + split_ids + [n["source"] for n in renames]
+           + [e["id"] for e in events])
     # the security priced: Yahoo's GOOG series is the Class A common stock before the Class C distribution, the Class C capital stock
-    # from its split date
-    security = (f"; the Class C capital stock (Yahoo's GOOG series from {split_dates[-1]})" if split_dates else "")
+    # from its split date (the first split, 2014-03-27; the 2022 split is a split of the same stock)
+    security = (f"; the Class C capital stock (Yahoo's GOOG series from {split_dates[0]})" if split_dates else "")
     sources = [dict(id=x, **facts["sources"][x]) for x in dict.fromkeys(ids)]
     sources.append({"id": "Y0", "published": as_of, "title": "Yahoo Finance daily prices, GOOG and S&P 500, truncated at AS_OF",
                     "url": "https://finance.yahoo.com/quote/GOOG/history",

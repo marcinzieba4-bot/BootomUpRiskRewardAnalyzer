@@ -23,7 +23,7 @@ touching either directory.
   outcomes or findings enters another's models. UNP (2008-2026 so far), LOW (2008-2026 so far), AAPL (2008-2026 so far),
   NKE (2008-2026 so far), AVGO (from its 2009-08-06 listing to 2026-10-30 so far), PEP (2008 to 2026-10-30 so far), MSFT
   (2008 to 2026-10-30 so far), XOM (2008 to 2026-10-30 so far), SHW (2008 to 2026-11-06 so far), WMT (2008 to 2026-11-06 so far), RCL (2008 to 2026-11-06 so far), MAR (2008 to 2026-11-03 so far), BKR (2008 to 2017-06-30, then 2019-02-01 to 2026-11-06 so far), PFE (2008 to 2026-11-04 so far), CMCSA (2008 to 2026-11-06 so far), CAT (2008 to 2026-11-06 so far), BMY (2008 to 2026-11-06 so far), NVDA (2008 to 2026-11-06 so far), F (2008-01-04 to 2026-11-06 so far; 2022-01-07 onward was built first at the owner's request, and dates before 2022 are an early era with its
-  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far) and GOOG (2008-01-04 to 2021-12-31 so far) sit in `staging/retrospective/` until the owner adds
+  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far) and GOOG (2008-01-04 to 2026-11-13 so far) sit in `staging/retrospective/` until the owner adds
   them to the archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM", "SHW", "WMT", "RCL", "MAR", "BKR", "PFE", "CMCSA", "CAT",
   "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py` and `mu_signal_model.py` files
   and today's profiles in `data/business_profiles.json` (NVDA's and SO's included) are 2026 analyses: never inputs to a retrospective. AVGO did not trade
@@ -99,6 +99,10 @@ touching either directory.
   one-offs (the Tax Act's $9,857M and the EC fine's $2,736M) fall $69M short of its $12,662M income (the AAPL FY2002 test) and no filing
   publishes the year without them, so BEAR is -35.4%/yr from 2018-02-02 and the tier AVOID on most dates (the series' largest call: 67
   tiers move if FY2017 is excluded); FY2018-FY2020 are GAAP; quarters whose release publishes a figure without an EC fine or the Tax Act
-  use it, year-ago quarters included (the ACN rule); RICH on 190 of 209 dates (retro/README.md, "GOOG 2018-2021").
+  use it, year-ago quarters included (the ACN rule); RICH on 190 of 209 dates (retro/README.md, "GOOG 2018-2021"). From 2022: the
+  20-for-one split is effective on Yahoo's split date, 2022-07-18 (the first split-adjusted trading day); dividends count from the first
+  filing that states each rate ($0.20 from 2024-04-26); FY2024-FY2025 EPS is the Class C figure of the 10-K's EPS note ($8.03, $10.80);
+  the Q3 2025 EC fine is out of the quarter's operating margin at the company's published 33.9% (EPS stays GAAP); GENAI is on the watch
+  list from the FY2023 10-K's competition wording (2024-02-01 on), company-acknowledged, never re-filed (retro/README.md, "GOOG 2022-2026").
 - **Never use the owner's personal email** in request headers to external
   services (SEC asks for a contact in the User-Agent).
