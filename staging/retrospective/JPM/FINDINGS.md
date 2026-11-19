@@ -102,7 +102,7 @@ last-year-EPS anchor needs a rule for the year after a collapse. Not tested here
 
 ## 2014-2017 (208 dates)
 
-Scored on 2026-11-19, after the point-in-time build was committed (753c09c) and the firewall had passed at 27 cutoffs, and after the
+Scored on 2026-11-19, after the point-in-time build was committed (0441b24) and the firewall had passed at 27 cutoffs, and after the
 decisions, checks and sensitivities of retro/README.md ("JPM 2014-2017") were written; the build was not yet pushed when the outcomes were
 computed. Every date has its 6-month, 1-, 2- and 3-year horizons. Dividends are $0.38 a quarter to mid-2014, then $0.40, $0.44, $0.48,
 $0.50 and $0.56 (from late 2017). The P/E percentile rows group the dates by `PE_NOW_PCTL`, the multiple's place in its own ten-year range
