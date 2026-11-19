@@ -735,3 +735,257 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2021-12-17 | $2856.06 | Alphabet Q3 2021 results | 2.15 | -0.76 | 4.35x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -6.3% | -11.2pp | -17.5% | ✓ |
 | 2021-12-23 | $2942.85 | Alphabet Q3 2021 results | 2.15 | -0.82 | 5.37x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -3.0% | -6.4pp | -19.3% | ✓ |
 | 2021-12-31 | $2893.59 | Alphabet Q3 2021 results | 2.15 | -0.78 | 4.64x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | -2.6% | -5.4pp | -17.3% | ✓ |
+| 2022-01-07 | $2740.09 | Alphabet Q3 2021 results | 2.15 | -0.63 | 3.35x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +0.3% | -2.9pp | -12.1% | ✓ |
+| 2022-01-14 | $2795.73 | Alphabet Q3 2021 results | 2.15 | -0.69 | 3.67x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +3.2% | -2.2pp | -13.1% | ✓ |
+| 2022-01-21 | $2601.84 | Alphabet Q3 2021 results | 2.15 | -0.47 | 2.57x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +13.7% | +0.6pp | -6.0% | ✗ |
+| 2022-01-28 | $2665.79 | Alphabet Q3 2021 results | 2.15 | -0.53 | 2.82x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +15.4% | +2.2pp | -7.5% | ✗ |
+| 2022-02-03 | $2853.01 | Alphabet Q4 2021 results | 1.95 | +0.43 | 0.76x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +0.6% | -13.0pp | -12.9% | ✗ |
+| 2022-02-11 | $2682.60 | Alphabet Q4 2021 results | 1.95 | +0.56 | 0.65x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +12.0% | -4.7pp | -6.7% | ✗ |
+| 2022-02-18 | $2609.35 | Alphabet Q4 2021 results | 1.95 | +0.61 | 0.60x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +8.7% | -9.4pp | -3.3% | ✗ |
+| 2022-02-25 | $2690.39 | Alphabet Q4 2021 results | 1.95 | +0.56 | 0.65x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +8.0% | -11.0pp | -5.6% | ✗ |
+| 2022-03-04 | $2642.44 | Alphabet Q4 2021 results | 1.95 | +0.59 | 0.62x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +1.6% | -20.0pp | -3.2% | ✗ |
+| 2022-03-11 | $2609.51 | Alphabet Q4 2021 results | 1.95 | +0.61 | 0.60x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +6.5% | -18.3pp | -1.3% | ✗ |
+| 2022-03-18 | $2736.03 | Alphabet Q4 2021 results | 1.95 | +0.52 | 0.67x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +8.5% | -9.8pp | -5.2% | ✗ |
+| 2022-03-25 | $2830.43 | Alphabet Q4 2021 results | 1.95 | +0.44 | 0.74x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +6.8% | -10.9pp | -7.7% | ✗ |
+| 2022-04-01 | $2814.00 | Alphabet Q4 2021 results | 1.95 | +0.46 | 0.72x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | +11.2% | -7.0pp | -6.5% | ✗ |
+| 2022-04-08 | $2680.21 | Alphabet Q4 2021 results | 1.95 | +0.57 | 0.64x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +16.5% | -2.3pp | -1.2% | ✗ |
+| 2022-04-14 | $2545.06 | Alphabet Q4 2021 results | 1.95 | +0.66 | 0.56x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +25.1% | +5.4pp | +4.8% | ✓ |
+| 2022-04-22 | $2392.28 | Alphabet Q4 2021 results | 1.95 | +0.74 | 0.48x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +32.0% | +11.7pp | +12.4% | ✓ |
+| 2022-04-28 | $2388.23 | Alphabet Q1 2022 results | 1.95 | +0.58 | 0.62x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +45.5% | +23.6pp | +13.4% | ✓ |
+| 2022-05-06 | $2313.20 | Alphabet Q1 2022 results | 1.95 | +0.62 | 0.57x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +46.8% | +18.0pp | +18.3% | ✓ |
+| 2022-05-13 | $2330.31 | Alphabet Q1 2022 results | 1.95 | +0.61 | 0.58x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +46.7% | +13.7pp | +18.4% | ✓ |
+| 2022-05-20 | $2186.26 | Alphabet Q1 2022 results | 1.95 | +0.87 | 0.49x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +63.3% | +23.8pp | +27.2% | ✓ |
+| 2022-05-27 | $2255.98 | Alphabet Q1 2022 results | 1.95 | +0.64 | 0.53x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +56.3% | +25.7pp | +24.1% | ✓ |
+| 2022-06-03 | $2291.28 | Alphabet Q1 2022 results | 1.95 | +0.63 | 0.56x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +52.2% | +20.5pp | +23.0% | ✓ |
+| 2022-06-10 | $2228.55 | Alphabet Q1 2022 results | 1.95 | +0.85 | 0.52x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +58.7% | +17.9pp | +27.4% | ✓ |
+| 2022-06-17 | $2157.31 | Alphabet Q1 2022 results | 1.95 | +0.89 | 0.47x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +65.9% | +13.2pp | +32.6% | ✓ |
+| 2022-06-24 | $2370.76 | Alphabet Q1 2022 results | 1.95 | +0.59 | 0.61x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +52.7% | +10.1pp | +21.4% | ✓ |
+| 2022-07-01 | $2181.62 | Alphabet Q1 2022 results | 1.95 | +0.87 | 0.49x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +69.3% | +22.8pp | +33.1% | ✓ |
+| 2022-07-08 | $2403.37 | Alphabet Q1 2022 results | 1.95 | +0.58 | 0.63x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +58.7% | +12.4pp | +21.7% | ✓ |
+| 2022-07-15 | $2255.34 | Alphabet Q1 2022 results | 1.95 | +0.64 | 0.53x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +67.1% | +17.8pp | +30.9% | ✓ |
+| 2022-07-22 | $108.36 | Alphabet Q1 2022 results | 1.95 | +0.88 | 0.48x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +69.4% | +25.6pp | +37.3% | ✓ |
+| 2022-07-28 | $114.59 | Alphabet Q2 2022 results | 1.95 | +0.36 | 0.56x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +47.4% | +10.0pp | +30.6% | ✓ |
+| 2022-08-05 | $118.22 | Alphabet Q2 2022 results | 1.95 | +0.31 | 0.60x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +36.1% | +7.7pp | +27.3% | ✓ |
+| 2022-08-12 | $122.65 | Alphabet Q2 2022 results | 1.95 | +0.26 | 0.67x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +33.8% | +5.8pp | +23.2% | ✓ |
+| 2022-08-19 | $118.12 | Alphabet Q2 2022 results | 1.95 | +0.32 | 0.60x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +42.7% | +7.0pp | +28.6% | ✓ |
+| 2022-08-26 | $111.30 | Alphabet Q2 2022 results | 1.95 | +0.59 | 0.51x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +51.1% | +9.4pp | +37.1% | ✓ |
+| 2022-09-02 | $108.68 | Alphabet Q2 2022 results | 1.95 | +0.62 | 0.48x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +52.1% | +5.0pp | +40.9% | ✓ |
+| 2022-09-09 | $111.78 | Alphabet Q2 2022 results | 1.95 | +0.59 | 0.52x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +34.1% | -3.5pp | +37.3% | ✓ |
+| 2022-09-16 | $103.63 | Alphabet Q2 2022 results | 1.95 | +0.68 | 0.42x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +53.8% | +4.8pp | +48.4% | ✓ |
+| 2022-09-23 | $99.17 | Alphabet Q2 2022 results | 1.95 | +0.72 | 0.38x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +64.8% | +6.3pp | +55.6% | ✓ |
+| 2022-09-30 | $96.15 | Alphabet Q2 2022 results | 1.95 | +0.75 | 0.35x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +74.3% | +9.9pp | +61.2% | ✓ |
+| 2022-10-07 | $99.57 | Alphabet Q2 2022 results | 1.95 | +0.72 | 0.38x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +65.5% | +5.3pp | +56.3% | ✓ |
+| 2022-10-14 | $97.18 | Alphabet Q2 2022 results | 1.95 | +0.74 | 0.36x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +71.6% | +4.4pp | +60.6% | ✓ |
+| 2022-10-21 | $101.48 | Alphabet Q2 2022 results | 1.95 | +0.70 | 0.40x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +63.8% | +4.2pp | +54.3% | ✓ |
+| 2022-10-27 | $92.60 | Alphabet Q3 2022 results | 1.95 | +0.73 | 0.32x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +80.8% | +24.8pp | +69.9% | ✓ |
+| 2022-11-04 | $86.70 | Alphabet Q3 2022 results | 1.95 | +0.79 | 0.26x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +97.3% | +42.3pp | +82.5% | ✓ |
+| 2022-11-11 | $96.73 | Alphabet Q3 2022 results | 1.95 | +0.68 | 0.36x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +88.5% | +34.9pp | +64.5% | ✓ |
+| 2022-11-18 | $97.80 | Alphabet Q3 2022 results | 1.95 | +0.67 | 0.37x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +81.2% | +29.3pp | +63.6% | ✓ |
+| 2022-11-25 | $97.60 | Alphabet Q3 2022 results | 1.95 | +0.67 | 0.36x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +74.0% | +22.1pp | +64.5% | ✓ |
+| 2022-12-02 | $100.83 | Alphabet Q3 2022 results | 1.95 | +0.63 | 0.40x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +72.0% | +20.3pp | +59.9% | ✓ |
+| 2022-12-09 | $93.07 | Alphabet Q3 2022 results | 1.95 | +0.72 | 0.32x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +90.9% | +33.7pp | +74.1% | ✓ |
+| 2022-12-16 | $90.86 | Alphabet Q3 2022 results | 1.95 | +0.74 | 0.30x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +118.8% | +57.4pp | +79.7% | ✓ |
+| 2022-12-23 | $89.81 | Alphabet Q3 2022 results | 1.95 | +0.76 | 0.29x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +118.9% | +60.0pp | +83.0% | ✓ |
+| 2022-12-30 | $88.73 | Alphabet Q3 2022 results | 1.95 | +0.77 | 0.28x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +117.8% | +60.4pp | +86.2% | ✓ |
+| 2023-01-06 | $88.16 | Alphabet Q3 2022 results | 1.95 | +0.77 | 0.28x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +125.2% | +68.3pp | +88.3% | ✓ |
+| 2023-01-13 | $92.80 | Alphabet Q3 2022 results | 1.95 | +0.72 | 0.32x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +107.9% | +58.5pp | +79.9% | ✓ |
+| 2023-01-20 | $99.28 | Alphabet Q3 2022 results | 1.95 | +0.65 | 0.38x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +99.6% | +45.2pp | +69.0% | ✓ |
+| 2023-01-27 | $100.71 | Alphabet Q3 2022 results | 1.95 | +0.63 | 0.40x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +93.0% | +41.9pp | +67.5% | ✓ |
+| 2023-02-03 | $105.22 | Alphabet Q4 2022 results | 1.95 | -0.11 | 0.87x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +93.2% | +44.9pp | +61.4% | ✗ |
+| 2023-02-10 | $94.86 | Alphabet Q4 2022 results | 1.95 | +0.10 | 0.64x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +99.0% | +47.4pp | +80.0% | ✓ |
+| 2023-02-17 | $94.59 | Alphabet Q4 2022 results | 1.95 | +0.11 | 0.63x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +98.2% | +45.1pp | +81.3% | ✓ |
+| 2023-02-24 | $89.35 | Alphabet Q4 2022 results | 1.95 | +0.43 | 0.54x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +103.5% | +49.3pp | +92.7% | ✓ |
+| 2023-03-03 | $94.02 | Alphabet Q4 2022 results | 1.95 | +0.13 | 0.62x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +80.0% | +32.2pp | +83.9% | ✓ |
+| 2023-03-10 | $91.01 | Alphabet Q4 2022 results | 1.95 | +0.40 | 0.57x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | +85.3% | +36.5pp | +90.8% | ✓ |
+| 2023-03-17 | $102.46 | Alphabet Q4 2022 results | 1.95 | -0.04 | 0.80x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | +63.4% | +14.8pp | +70.0% | ✓ |
+| 2023-03-24 | $106.06 | Alphabet Q4 2022 results | 1.95 | -0.13 | 0.88x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +61.0% | +12.4pp | +64.5% | ✓ |
+| 2023-03-31 | $104.00 | Alphabet Q4 2022 results | 1.95 | -0.08 | 0.83x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | +50.8% | +11.7pp | +68.0% | ✓ |
+| 2023-04-06 | $108.90 | Alphabet Q4 2022 results | 1.95 | -0.19 | 0.96x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +36.4% | +9.5pp | +60.4% | ✓ |
+| 2023-04-14 | $109.46 | Alphabet Q4 2022 results | 1.95 | -0.20 | 0.97x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +48.2% | +14.2pp | +59.5% | ✓ |
+| 2023-04-21 | $105.91 | Alphabet Q4 2022 results | 1.95 | -0.12 | 0.88x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +42.3% | +14.2pp | +64.9% | ✓ |
+| 2023-04-27 | $108.37 | Alphabet Q1 2023 results | 1.95 | -0.15 | 0.94x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +51.9% | +15.0pp | +61.1% | ✓ |
+| 2023-05-05 | $106.21 | Alphabet Q1 2023 results | 1.95 | -0.10 | 0.88x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +57.1% | +17.2pp | +64.3% | ✗ |
+| 2023-05-12 | $117.92 | Alphabet Q1 2023 results | 1.95 | -0.40 | 1.24x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +36.0% | -9.0pp | +47.7% | ✓ |
+| 2023-05-19 | $123.25 | Alphabet Q1 2023 results | 1.95 | -0.53 | 1.45x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 4/8 RICH | +36.9% | -8.6pp | +41.2% | ✗ |
+| 2023-05-26 | $125.43 | Alphabet Q1 2023 results | 1.95 | -0.57 | 1.55x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 5/8 RICH | +35.8% | -5.3pp | +38.6% | ✗ |
+| 2023-06-02 | $125.23 | Alphabet Q1 2023 results | 1.95 | -0.57 | 1.54x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 5/8 RICH | +36.7% | -5.1pp | +38.8% | ✗ |
+| 2023-06-09 | $122.87 | Alphabet Q1 2023 results | 1.95 | -0.52 | 1.43x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 4/8 RICH | +45.4% | +2.7pp | +41.4% | ✗ |
+| 2023-06-16 | $124.06 | Alphabet Q1 2023 results | 1.95 | -0.54 | 1.48x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 4/8 RICH | +44.2% | +4.3pp | +40.1% | ✗ |
+| 2023-06-23 | $123.02 | Alphabet Q1 2023 results | 1.95 | -0.52 | 1.44x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 4/8 RICH | +35.8% | -6.0pp | +41.2% | ✗ |
+| 2023-06-30 | $120.97 | Alphabet Q1 2023 results | 1.95 | -0.47 | 1.35x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +47.5% | +4.9pp | +43.4% | ✓ |
+| 2023-07-07 | $120.14 | Alphabet Q1 2023 results | 1.95 | -0.45 | 1.32x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +48.6% | +3.9pp | +44.3% | ✓ |
+| 2023-07-14 | $125.70 | Alphabet Q1 2023 results | 1.95 | -0.58 | 1.56x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 5/8 RICH | +46.2% | +4.0pp | +37.7% | ✗ |
+| 2023-07-21 | $120.31 | Alphabet Q1 2023 results | 1.95 | -0.45 | 1.33x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +59.7% | +17.6pp | +43.9% | ✗ |
+| 2023-07-27 | $129.87 | Alphabet Q2 2023 results | 1.95 | -0.73 | 1.77x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +50.2% | +6.3pp | +33.5% | ✗ |
+| 2023-08-04 | $128.54 | Alphabet Q2 2023 results | 1.95 | -0.69 | 1.68x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +53.1% | +8.7pp | +35.3% | ✗ |
+| 2023-08-11 | $130.17 | Alphabet Q2 2023 results | 1.95 | -0.73 | 1.76x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +55.7% | +9.8pp | +34.2% | ✗ |
+| 2023-08-18 | $128.11 | Alphabet Q2 2023 results | 1.95 | -0.68 | 1.66x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +60.3% | +9.7pp | +37.0% | ✗ |
+| 2023-08-25 | $130.69 | Alphabet Q2 2023 results | 1.95 | -0.74 | 1.79x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +60.8% | +11.6pp | +34.8% | ✗ |
+| 2023-09-01 | $136.80 | Alphabet Q2 2023 results | 1.95 | -0.84 | 2.15x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +56.8% | +10.8pp | +29.4% | ✗ |
+| 2023-09-08 | $137.20 | Alphabet Q2 2023 results | 1.95 | -0.85 | 2.18x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +71.6% | +22.8pp | +30.0% | ✗ |
+| 2023-09-15 | $138.30 | Alphabet Q2 2023 results | 1.95 | -0.87 | 2.26x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +82.9% | +31.1pp | +30.2% | ✗ |
+| 2023-09-22 | $131.25 | Alphabet Q2 2023 results | 1.95 | -0.75 | 1.80x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +93.6% | +35.4pp | +38.6% | ✗ |
+| 2023-09-29 | $131.85 | Alphabet Q2 2023 results | 1.95 | -0.76 | 1.84x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +86.3% | +27.7pp | +39.3% | ✗ |
+| 2023-10-06 | $138.73 | Alphabet Q2 2023 results | 1.95 | -0.87 | 2.26x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +82.2% | +22.5pp | +33.5% | ✗ |
+| 2023-10-13 | $138.58 | Alphabet Q2 2023 results | 1.95 | -0.87 | 2.25x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +77.4% | +20.4pp | +34.8% | ✗ |
+| 2023-10-20 | $136.74 | Alphabet Q2 2023 results | 1.95 | -0.84 | 2.12x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +88.9% | +26.1pp | +37.9% | ✗ |
+| 2023-10-26 | $123.44 | Alphabet Q3 2023 results | 1.80 | -0.55 | 1.41x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 4/8 RICH | +112.0% | +44.4pp | +53.9% | ✗ |
+| 2023-11-03 | $130.37 | Alphabet Q3 2023 results | 1.80 | -0.83 | 1.73x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +118.9% | +58.4pp | +47.6% | ✗ |
+| 2023-11-10 | $134.06 | Alphabet Q3 2023 results | 1.80 | -0.90 | 1.92x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +117.7% | +59.8pp | +45.2% | ✗ |
+| 2023-11-17 | $136.94 | Alphabet Q3 2023 results | 1.80 | -0.95 | 2.10x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +109.4% | +58.6pp | +43.6% | ✗ |
+| 2023-11-24 | $138.22 | Alphabet Q3 2023 results | 1.80 | -0.97 | 2.19x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +131.3% | +81.3pp | +44.1% | ✗ |
+| 2023-12-01 | $133.32 | Alphabet Q3 2023 results | 1.80 | -0.88 | 1.87x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +137.3% | +86.0pp | +51.2% | ✗ |
+| 2023-12-08 | $136.64 | Alphabet Q3 2023 results | 1.80 | -0.94 | 2.08x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +131.2% | +79.5pp | +49.6% | ✗ |
+| 2023-12-15 | $133.84 | Alphabet Q3 2023 results | 1.80 | -0.89 | 1.88x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +132.2% | +84.5pp | +54.6% | ✗ |
+| 2023-12-22 | $142.72 | Alphabet Q3 2023 results | 1.80 | -1.05 | 2.51x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +119.1% | +71.5pp | +46.6% | ✗ |
+| 2023-12-29 | $140.93 | Alphabet Q3 2023 results | 1.80 | -1.02 | 2.36x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +124.1% | +76.4pp | +49.8% | ✗ |
+| 2024-01-05 | $137.39 | Alphabet Q3 2023 results | 1.80 | -0.95 | 2.10x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +132.0% | +82.0pp | +55.1% | ✗ |
+| 2024-01-12 | $144.24 | Alphabet Q3 2023 results | 1.80 | -1.08 | 2.65x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +131.7% | +82.8pp | +49.5% | ✗ |
+| 2024-01-19 | $147.97 | Alphabet Q3 2023 results | 1.80 | -1.14 | 2.98x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +124.2% | +77.9pp | +47.3% | ✗ |
+| 2024-01-26 | $153.79 | Alphabet Q3 2023 results | 1.80 | -1.21 | 3.74x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +117.8% | +72.8pp | +43.3% | ✗ |
+| 2024-02-01 | $142.71 | Alphabet Q4 2023 results | 2.00 | +0.04 | 0.95x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +138.2% | +93.8pp | +56.0% | ✗ |
+| 2024-02-09 | $150.22 | Alphabet Q4 2023 results | 2.00 | -0.16 | 1.11x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +116.9% | +75.6pp | +50.3% | ✗ |
+| 2024-02-16 | $141.76 | Alphabet Q4 2023 results | 2.00 | +0.06 | 0.94x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +116.9% | +77.5pp | +60.8% | ✗ |
+| 2024-02-23 | $145.29 | Alphabet Q4 2023 results | 2.00 | -0.03 | 1.01x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +115.5% | +78.3pp | +58.5% | ✗ |
+| 2024-03-01 | $138.08 | Alphabet Q4 2023 results | 2.00 | +0.14 | 0.88x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +126.6% | +90.0pp | +68.5% | ✗ |
+| 2024-03-08 | $136.29 | Alphabet Q4 2023 results | 2.00 | +0.18 | 0.84x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | +119.9% | +85.7pp | +72.6% | ✓ |
+| 2024-03-15 | $142.17 | Alphabet Q4 2023 results | 2.00 | +0.04 | 0.96x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +113.2% | +80.8pp | +67.4% | ✗ |
+| 2024-03-22 | $151.77 | Alphabet Q4 2023 results | 2.00 | -0.21 | 1.17x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +98.0% | +70.7pp | +58.6% | ✗ |
+| 2024-03-28 | $152.26 | Alphabet Q4 2023 results | 2.00 | -0.22 | 1.19x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +80.9% | +56.9pp | +59.7% | ✗ |
+| 2024-04-05 | $153.94 | Alphabet Q4 2023 results | 2.00 | -0.26 | 1.24x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +92.3% | +63.0pp | +59.6% | ✗ |
+| 2024-04-12 | $159.19 | Alphabet Q4 2023 results | 2.00 | -0.37 | 1.39x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +99.4% | +63.5pp | +56.3% | ✗ |
+| 2024-04-19 | $155.72 | Alphabet Q4 2023 results | 2.00 | -0.30 | 1.29x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +119.0% | +72.7pp | +61.8% | ✗ |
+| 2024-04-26 | $173.69 | Alphabet Q1 2024 results | 1.80 | -0.83 | 1.94x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +98.0% | +54.7pp | +47.1% | ✗ |
+| 2024-05-03 | $168.99 | Alphabet Q1 2024 results | 1.80 | -0.76 | 1.72x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +127.7% | +83.9pp | +53.5% | ✗ |
+| 2024-05-10 | $170.29 | Alphabet Q1 2024 results | 1.80 | -0.78 | 1.77x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +134.1% | +89.7pp | +55.1% | ✗ |
+| 2024-05-17 | $177.29 | Alphabet Q1 2024 results | 1.80 | -0.88 | 2.09x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +122.8% | +80.4pp | +51.5% | ✗ |
+| 2024-05-24 | $176.33 | Alphabet Q1 2024 results | 1.80 | -0.87 | 2.04x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +116.1% | +72.5pp | +54.8% | ✗ |
+| 2024-05-31 | $173.96 | Alphabet Q1 2024 results | 1.80 | -0.83 | 1.93x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +117.3% | +71.1pp | +58.8% | ✗ |
+| 2024-06-07 | $175.95 | Alphabet Q1 2024 results | 1.80 | -0.86 | 2.02x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +108.8% | +68.0pp | +59.2% | ✗ |
+| 2024-06-14 | $178.37 | Alphabet Q1 2024 results | 1.80 | -0.90 | 2.15x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +101.7% | +62.4pp | +59.1% | ✗ |
+| 2024-06-21 | $180.26 | Alphabet Q1 2024 results | 1.80 | -0.92 | 2.25x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +104.8% | +64.9pp | +59.2% | ✗ |
+| 2024-06-28 | $183.42 | Alphabet Q1 2024 results | 1.80 | -0.97 | 2.44x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +83.4% | +46.7pp | +58.3% | ✗ |
+| 2024-07-05 | $191.96 | Alphabet Q1 2024 results | 1.80 | -1.10 | 3.07x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +86.4% | +49.5pp | +52.7% | ✗ |
+| 2024-07-12 | $186.78 | Alphabet Q1 2024 results | 1.80 | -1.00 | 2.66x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | +91.0% | +53.5pp | +58.9% | ✗ |
+| 2024-07-19 | $179.39 | Alphabet Q1 2024 results | 1.80 | -0.89 | 2.20x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +93.9% | +55.8pp | +67.3% | ✗ |
+| 2024-07-25 | $169.16 | Alphabet Q2 2024 results | 1.80 | -0.80 | 1.72x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +89.6% | +49.6pp | +79.2% | ✗ |
+| 2024-08-02 | $168.40 | Alphabet Q2 2024 results | 1.80 | -0.79 | 1.69x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +112.8% | +69.8pp | +81.7% | ✗ |
+| 2024-08-09 | $165.39 | Alphabet Q2 2024 results | 1.80 | -0.76 | 1.58x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +114.7% | +66.9pp | +87.0% | ✗ |
+| 2024-08-16 | $164.74 | Alphabet Q2 2024 results | 1.80 | -0.75 | 1.56x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +109.5% | +66.8pp | +89.4% | ✗ |
+| 2024-08-23 | $167.43 | Alphabet Q2 2024 results | 1.80 | -0.78 | 1.66x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +105.1% | +66.3pp | +88.1% | ✗ |
+| 2024-08-30 | $165.11 | Alphabet Q2 2024 results | 1.80 | -0.75 | 1.57x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +108.7% | +69.6pp | +92.3% | ✗ |
+| 2024-09-06 | $152.13 | Alphabet Q2 2024 results | 1.80 | -0.40 | 1.18x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +121.6% | +76.4pp | +109.9% | ✗ |
+| 2024-09-13 | $158.37 | Alphabet Q2 2024 results | 1.80 | -0.53 | 1.35x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 4/8 RICH | +112.9% | +74.3pp | +102.7% | ✗ |
+| 2024-09-20 | $164.64 | Alphabet Q2 2024 results | 1.80 | -0.75 | 1.56x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +110.2% | +73.6pp | +96.1% | ✗ |
+| 2024-09-27 | $165.29 | Alphabet Q2 2024 results | 1.80 | -0.75 | 1.58x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +107.4% | +69.8pp | +96.5% | ✗ |
+| 2024-10-04 | $168.56 | Alphabet Q2 2024 results | 1.80 | -0.80 | 1.70x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +102.9% | +66.0pp | +93.8% | ✗ |
+| 2024-10-11 | $164.52 | Alphabet Q2 2024 results | 1.80 | -0.74 | 1.55x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +112.5% | +75.6pp | +99.8% | ✗ |
+| 2024-10-18 | $165.05 | Alphabet Q2 2024 results | 1.80 | -0.75 | 1.57x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +105.1% | +72.0pp | +100.3% | ✗ |
+| 2024-10-25 | $166.99 | Alphabet Q2 2024 results | 1.80 | -0.78 | 1.64x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | +91.0% | +57.2pp | +98.8% | ✗ |
+| 2024-10-31 | $172.69 | Alphabet Q3 2024 results | 1.80 | -0.80 | 1.87x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +62.1% | +26.6pp | +92.5% | ✗ |
+| 2024-11-08 | $179.86 | Alphabet Q3 2024 results | 1.80 | -0.90 | 2.19x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +58.8% | +33.4pp | +84.9% | ✗ |
+| 2024-11-15 | $173.89 | Alphabet Q3 2024 results | 1.80 | -0.81 | 1.90x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | +69.2% | +37.9pp | +91.3% | ✗ |
+| 2024-11-22 | $166.57 | Alphabet Q3 2024 results | 1.80 | -0.71 | 1.59x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | - | - | +99.8% | - |
+| 2024-11-29 | $170.49 | Alphabet Q3 2024 results | 1.80 | -0.77 | 1.73x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | - | - | +95.4% | - |
+| 2024-12-06 | $176.49 | Alphabet Q3 2024 results | 1.80 | -0.85 | 1.99x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | +88.9% | - |
+| 2024-12-13 | $191.38 | Alphabet Q3 2024 results | 1.80 | -1.06 | 2.92x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +74.4% | - |
+| 2024-12-20 | $192.96 | Alphabet Q3 2024 results | 1.80 | -1.06 | 2.99x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +73.3% | - |
+| 2024-12-27 | $194.04 | Alphabet Q3 2024 results | 1.80 | -1.08 | 3.09x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +72.5% | - |
+| 2025-01-03 | $193.13 | Alphabet Q3 2024 results | 1.80 | -1.06 | 3.01x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +73.5% | - |
+| 2025-01-10 | $193.17 | Alphabet Q3 2024 results | 1.80 | -1.06 | 2.96x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +73.6% | - |
+| 2025-01-17 | $197.55 | Alphabet Q3 2024 results | 1.80 | -1.13 | 3.35x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +69.8% | - |
+| 2025-01-24 | $201.90 | Alphabet Q3 2024 results | 1.80 | -1.16 | 3.83x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +66.2% | - |
+| 2025-01-31 | $205.60 | Alphabet Q3 2024 results | 1.80 | -1.19 | 4.33x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +63.2% | - |
+| 2025-02-06 | $193.31 | Alphabet Q4 2024 results | 1.95 | -0.06 | 0.94x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | +73.6% | - |
+| 2025-02-14 | $186.87 | Alphabet Q4 2024 results | 1.95 | +0.05 | 0.85x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | - | - | +79.9% | - |
+| 2025-02-21 | $181.58 | Alphabet Q4 2024 results | 1.95 | +0.13 | 0.78x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | +85.5% | - |
+| 2025-02-28 | $172.22 | Alphabet Q4 2024 results | 1.95 | +0.26 | 0.68x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | +96.0% | - |
+| 2025-03-07 | $175.75 | Alphabet Q4 2024 results | 1.95 | +0.22 | 0.72x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | +92.6% | - |
+| 2025-03-14 | $167.62 | Alphabet Q4 2024 results | 1.95 | +0.30 | 0.63x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +102.5% | - |
+| 2025-03-21 | $166.25 | Alphabet Q4 2024 results | 1.95 | +0.31 | 0.62x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +104.8% | - |
+| 2025-03-28 | $156.06 | Alphabet Q4 2024 results | 1.95 | +0.39 | 0.52x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +119.2% | - |
+| 2025-04-04 | $147.74 | Alphabet Q4 2024 results | 1.95 | +0.46 | 0.45x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +132.5% | - |
+| 2025-04-11 | $159.40 | Alphabet Q4 2024 results | 1.95 | +0.37 | 0.55x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +116.2% | - |
+| 2025-04-17 | $153.36 | Alphabet Q4 2024 results | 1.95 | +0.41 | 0.50x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +125.0% | - |
+| 2025-04-25 | $163.85 | Alphabet Q1 2025 results | 1.80 | +0.18 | 0.60x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +110.8% | - |
+| 2025-05-02 | $165.81 | Alphabet Q1 2025 results | 1.80 | +0.17 | 0.62x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +107.9% | - |
+| 2025-05-09 | $154.38 | Alphabet Q1 2025 results | 1.80 | +0.26 | 0.51x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +122.2% | - |
+| 2025-05-16 | $167.43 | Alphabet Q1 2025 results | 1.80 | +0.15 | 0.63x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +103.7% | - |
+| 2025-05-23 | $169.59 | Alphabet Q1 2025 results | 1.80 | +0.14 | 0.65x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +100.1% | - |
+| 2025-05-30 | $172.85 | Alphabet Q1 2025 results | 1.80 | +0.10 | 0.69x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | +95.5% | - |
+| 2025-06-06 | $174.92 | Alphabet Q1 2025 results | 1.80 | +0.07 | 0.71x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | +92.5% | - |
+| 2025-06-13 | $175.88 | Alphabet Q1 2025 results | 1.80 | +0.06 | 0.72x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | +90.9% | - |
+| 2025-06-20 | $167.73 | Alphabet Q1 2025 results | 1.80 | +0.15 | 0.63x | BUY | CYCLICAL, RISK PRICED IN (CHEAP) | 8/8 CHEAP | - | - | +99.5% | - |
+| 2025-06-27 | $178.27 | Alphabet Q1 2025 results | 1.80 | +0.02 | 0.75x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | +87.4% | - |
+| 2025-07-03 | $180.55 | Alphabet Q1 2025 results | 1.80 | -0.01 | 0.77x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | +84.6% | - |
+| 2025-07-11 | $181.31 | Alphabet Q1 2025 results | 1.80 | -0.02 | 0.78x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 7/8 CHEAP | - | - | +83.0% | - |
+| 2025-07-18 | $185.94 | Alphabet Q1 2025 results | 1.80 | -0.09 | 0.85x | ACCUMULATE | CYCLICAL, RISK PRICED IN (CHEAP) | 6/8 CHEAP | - | - | +77.8% | - |
+| 2025-07-25 | $194.08 | Alphabet Q2 2025 results | 1.80 | -0.19 | 0.96x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | +70.1% | - |
+| 2025-08-01 | $189.95 | Alphabet Q2 2025 results | 1.80 | -0.10 | 0.90x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | +73.6% | - |
+| 2025-08-08 | $202.09 | Alphabet Q2 2025 results | 1.80 | -0.32 | 1.08x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | +62.0% | - |
+| 2025-08-15 | $204.91 | Alphabet Q2 2025 results | 1.80 | -0.48 | 1.13x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | +59.1% | - |
+| 2025-08-22 | $206.72 | Alphabet Q2 2025 results | 1.80 | -0.50 | 1.16x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 3/8 RICH | - | - | +57.2% | - |
+| 2025-08-29 | $213.53 | Alphabet Q2 2025 results | 1.80 | -0.61 | 1.29x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 5/8 RICH | - | - | +51.5% | - |
+| 2025-09-05 | $235.17 | Alphabet Q2 2025 results | 1.80 | -0.85 | 1.82x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | +37.0% | - |
+| 2025-09-12 | $241.38 | Alphabet Q2 2025 results | 1.80 | -0.91 | 2.03x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | +33.2% | - |
+| 2025-09-19 | $255.24 | Alphabet Q2 2025 results | 1.80 | -1.05 | 2.56x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +25.0% | - |
+| 2025-09-26 | $247.18 | Alphabet Q2 2025 results | 1.80 | -0.96 | 2.21x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +27.8% | - |
+| 2025-10-03 | $246.45 | Alphabet Q2 2025 results | 1.80 | -0.95 | 2.15x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +26.7% | - |
+| 2025-10-10 | $237.49 | Alphabet Q2 2025 results | 1.80 | -0.86 | 1.82x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | +29.0% | - |
+| 2025-10-17 | $253.79 | Alphabet Q2 2025 results | 1.80 | -1.02 | 2.41x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +17.5% | - |
+| 2025-10-24 | $260.51 | Alphabet Q2 2025 results | 1.80 | -1.08 | 2.73x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | +11.1% | - |
+| 2025-10-31 | $281.82 | Alphabet Q3 2025 results | 1.95 | -1.02 | 4.31x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | +0.9% | - |
+| 2025-11-07 | $279.70 | Alphabet Q3 2025 results | 1.95 | -1.00 | 4.10x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | +2.2% | - |
+| 2025-11-14 | $276.98 | Alphabet Q3 2025 results | 1.95 | -0.97 | 3.85x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | +0.9% | - |
+| 2025-11-21 | $299.65 | Alphabet Q3 2025 results | 1.95 | -1.20 | 7.23x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-11-28 | $320.12 | Alphabet Q3 2025 results | 1.95 | -1.25 | 21.28x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-12-05 | $322.09 | Alphabet Q3 2025 results | 1.95 | -1.25 | 25.66x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-12-12 | $310.52 | Alphabet Q3 2025 results | 1.95 | -1.20 | 11.37x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-12-19 | $308.61 | Alphabet Q3 2025 results | 1.95 | -1.19 | 10.37x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-12-26 | $314.96 | Alphabet Q3 2025 results | 1.95 | -1.22 | 14.58x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-01-02 | $315.32 | Alphabet Q3 2025 results | 1.95 | -1.22 | 14.91x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-01-09 | $329.14 | Alphabet Q3 2025 results | 1.95 | -1.27 | 63.04x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-01-16 | $330.34 | Alphabet Q3 2025 results | 1.95 | -1.26 | 88.75x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-01-23 | $328.43 | Alphabet Q3 2025 results | 1.95 | -1.25 | 53.76x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-01-30 | $338.53 | Alphabet Q3 2025 results | 1.95 | -1.28 | infx | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-02-06 | $323.10 | Alphabet Q4 2025 results | 1.80 | -0.66 | 1.79x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-02-13 | $306.02 | Alphabet Q4 2025 results | 1.80 | -0.54 | 1.48x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 3/8 RICH | - | - | - | - |
+| 2026-02-20 | $314.90 | Alphabet Q4 2025 results | 1.80 | -0.61 | 1.63x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 5/8 RICH | - | - | - | - |
+| 2026-02-27 | $311.43 | Alphabet Q4 2025 results | 1.80 | -0.58 | 1.55x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 4/8 RICH | - | - | - | - |
+| 2026-03-06 | $298.30 | Alphabet Q4 2025 results | 1.80 | -0.47 | 1.33x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-03-13 | $301.46 | Alphabet Q4 2025 results | 1.80 | -0.50 | 1.37x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 3/8 RICH | - | - | - | - |
+| 2026-03-20 | $298.79 | Alphabet Q4 2025 results | 1.80 | -0.47 | 1.32x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-03-27 | $273.76 | Alphabet Q4 2025 results | 1.80 | -0.19 | 1.01x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2026-04-02 | $294.46 | Alphabet Q4 2025 results | 1.80 | -0.43 | 1.26x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2026-04-10 | $315.72 | Alphabet Q4 2025 results | 1.80 | -0.60 | 1.59x | WATCHLIST | TOO MUCH CYCLE RISK (RICH) | 5/8 RICH | - | - | - | - |
+| 2026-04-17 | $339.40 | Alphabet Q4 2025 results | 1.80 | -0.76 | 2.05x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-04-24 | $342.32 | Alphabet Q4 2025 results | 1.80 | -0.78 | 2.13x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-05-01 | $383.22 | Alphabet Q1 2026 results | 2.15 | -0.62 | 3.69x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-05-08 | $397.05 | Alphabet Q1 2026 results | 2.15 | -0.77 | 4.53x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-05-15 | $393.32 | Alphabet Q1 2026 results | 2.15 | -0.74 | 4.25x | AVOID | TOO MUCH CYCLE RISK (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-05-22 | $379.38 | Alphabet Q1 2026 results | 2.15 | -0.55 | 3.41x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-05-29 | $376.43 | Alphabet Q1 2026 results | 2.15 | -0.52 | 3.27x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-06-05 | $365.76 | Alphabet Q1 2026 results | 2.15 | -0.44 | 2.77x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-06-12 | $358.16 | Alphabet Q1 2026 results | 2.15 | -0.38 | 2.51x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-06-18 | $367.46 | Alphabet Q1 2026 results | 2.15 | -0.44 | 2.79x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-06-26 | $334.69 | Alphabet Q1 2026 results | 2.15 | -0.22 | 1.87x | AVOID | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | - | - | - | - |
+| 2026-07-02 | $356.18 | Alphabet Q1 2026 results | 2.15 | -0.36 | 2.41x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-07-10 | $355.03 | Alphabet Q1 2026 results | 2.15 | -0.35 | 2.38x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-07-17 | $346.12 | Alphabet Q1 2026 results | 2.15 | -0.29 | 2.13x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-07-24 | $319.09 | Alphabet Q2 2026 results | 2.15 | -0.07 | 1.55x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-07-31 | $356.65 | Alphabet Q2 2026 results | 2.15 | -0.33 | 2.37x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-08-07 | $353.47 | Alphabet Q2 2026 results | 2.15 | -0.31 | 2.28x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-08-14 | $343.54 | Alphabet Q2 2026 results | 2.15 | -0.24 | 2.03x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-08-21 | $341.75 | Alphabet Q2 2026 results | 2.15 | -0.23 | 1.99x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-08-28 | $342.88 | Alphabet Q2 2026 results | 2.15 | -0.24 | 2.01x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-09-04 | $335.31 | Alphabet Q2 2026 results | 2.15 | -0.18 | 1.83x | AVOID | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | - | - | - | - |
+| 2026-09-11 | $335.45 | Alphabet Q2 2026 results | 2.15 | -0.18 | 1.83x | AVOID | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | - | - | - | - |
+| 2026-09-18 | $344.41 | Alphabet Q2 2026 results | 2.15 | -0.24 | 2.00x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-09-25 | $341.08 | Alphabet Q2 2026 results | 2.15 | -0.22 | 1.92x | AVOID | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | - | - | - | - |
+| 2026-10-02 | $340.35 | Alphabet Q2 2026 results | 2.15 | -0.21 | 1.91x | AVOID | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | - | - | - | - |
+| 2026-10-09 | $347.86 | Alphabet Q2 2026 results | 2.15 | -0.26 | 2.08x | AVOID | TOO MUCH CYCLE RISK (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-10-16 | $336.91 | Alphabet Q2 2026 results | 2.15 | -0.19 | 1.84x | AVOID | TOO MUCH CYCLE RISK (RICH) | 6/8 RICH | - | - | - | - |
+| 2026-10-23 | $317.28 | Alphabet Q2 2026 results | 2.15 | -0.05 | 1.48x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-10-30 | $278.22 | Alphabet Q3 2026 results | 1.80 | -0.01 | 0.97x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2026-11-06 | $283.93 | Alphabet Q3 2026 results | 1.80 | -0.05 | 1.03x | ACCUMULATE | CYCLICAL, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | - | - | - | - |
+| 2026-11-13 | $292.52 | Alphabet Q3 2026 results | 1.80 | -0.14 | 1.14x | WATCHLIST | CYCLICAL, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |

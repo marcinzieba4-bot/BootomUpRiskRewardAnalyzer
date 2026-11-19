@@ -1,0 +1,30 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "GOOG",
+ "as_of": "2026-04-24",
+ "computed": "2026-11-19",
+ "data_source": "Yahoo Finance daily closes + dividends (GOOG, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2026-10-23",
+   "price": 317.28,
+   "dividends": 0.44,
+   "total_return_pct": -7.2,
+   "benchmark_total_return_pct": 7.0,
+   "excess_pct": -14.2,
+   "hurdle_pct": 7.2
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2026-05-13",
+   "price": 399.04
+  },
+  "low": {
+   "date": "2026-11-17",
+   "price": 277.6
+  },
+  "max_drawdown_pct": -30.4,
+  "return_to_avg_price_m12_m24_pct": null
+ }
+}

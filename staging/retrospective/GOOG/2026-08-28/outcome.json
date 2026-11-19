@@ -1,0 +1,20 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "GOOG",
+ "as_of": "2026-08-28",
+ "computed": "2026-11-19",
+ "data_source": "Yahoo Finance daily closes + dividends (GOOG, benchmark SPY)",
+ "horizons": {},
+ "within_2y": {
+  "high": {
+   "date": "2026-09-21",
+   "price": 350.87
+  },
+  "low": {
+   "date": "2026-11-17",
+   "price": 277.6
+  },
+  "max_drawdown_pct": -20.9,
+  "return_to_avg_price_m12_m24_pct": null
+ }
+}
