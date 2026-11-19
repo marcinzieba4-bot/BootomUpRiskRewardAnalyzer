@@ -1,7 +1,8 @@
 # JPM retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the JPM weekly dates (JPMorgan Chase & Co., NYSE: JPM): 731 in all, 105 from 2008-01-04 to 2009-12-31,
-209 from 2010-01-08 to 2013-12-31, 208 from 2014-01-10 to 2017-12-29 and 209 from 2018-01-05 to 2021-12-31 (the later sections below). They are
+Patterns seen in `outcome.json` for the JPM weekly dates (JPMorgan Chase & Co., NYSE: JPM): 985 in all, 105 from 2008-01-04 to 2009-12-31,
+209 from 2010-01-08 to 2013-12-31, 208 from 2014-01-10 to 2017-12-29, 209 from 2018-01-05 to 2021-12-31 and 254 from 2022-01-07 to
+2026-11-13 (the later sections below). They are
 **labels and hypotheses**: never feed them back into the method or the fact sheet. The outcomes were computed on 2026-11-19, after the
 point-in-time build and its one text correction were committed (735d7d4, ed681b3) and the firewall had passed at 16 cutoffs; the build
 was not yet pushed when they were computed. Every date has its 6-month, 1-, 2- and 3-year horizons. Total returns include dividends
@@ -222,3 +223,83 @@ year as the anchor) and 2014-2017 (the trough year as BEAR, -80%/yr, while the p
 was the trough too, but the price sat far enough under BULL for Ratio B to separate the dates. The hypothesis for the live model, still
 untested on any other bank: with a single collapse year as BEAR, Ratio B depends on the BULL upside alone and stops measuring the price
 once the price nears BULL; the class became informative again when that year left BEAR.
+
+## 2022-2026 (254 dates)
+
+Scored on 2026-11-19, after the point-in-time build was committed and pushed (83cc1b0), the firewall had passed at 27 cutoffs and its
+result was pushed (5950a26), and the decisions, checks and sensitivities of retro/README.md ("JPM 2022-2026") were written. This section
+was written by a new session, which opened this file only then. Not every date has every horizon: 150 dates have their 2-year outcome
+(2022-01-07 to 2024-11-15), 202 their 1-year (to 2025-11-14), 228 their 6-month and 98 their 3-year (to 2023-11-17); the newest have none,
+and the latest prices are the session's own day, 2026-11-19, as Yahoo printed them during trading. Dividends are $1.00 a quarter to
+October 2023, then $1.05, $1.15, $1.25, $1.40, $1.50 and $1.65 (from October 2026). The P/E percentile rows group the dates by
+`PE_NOW_PCTL`, as in 2014-2021.
+
+| Group | Dates | Mean 2-yr total return | Median | Mean vs SPY | Beat SPY | Cleared hurdle | Mean m12-24 avg price | Mean max drawdown | Call held |
+|---|---|---|---|---|---|---|---|---|---|
+| all, scored | 150 | +79.6% | +82.3% | +38.1pp | 150 | 142 | +51.6% | -22.7% | 90 |
+| 2022 | 52 | +69.9% | +76.2% | +32.6pp | 52 | 44 | +36.0% | -20.9% | 51 |
+| 2022, CHEAP | 51 | +71.1% | +76.6% | +33.1pp | 51 | 44 | +37.0% | -20.5% | 51 |
+| 2022, RICH (2022-01-07) | 1 | +7.9% | +7.9% | +4.7pp | 1 | 0 | -13.5% | -39.5% | 0 |
+| 2023 | 52 | +100.0% | +98.8% | +52.0pp | 52 | 52 | +67.2% | -22.6% | 38 |
+| 2023, CHEAP | 38 | +101.3% | +98.8% | +54.0pp | 38 | 38 | +69.5% | -23.7% | 38 |
+| 2023, FAIR | 14 | +96.8% | +98.8% | +46.6pp | 14 | 14 | +61.2% | -19.5% | 0 |
+| 2024 (to 2024-11-15) | 46 | +67.5% | +68.0% | +28.6pp | 46 | 46 | +51.5% | -24.9% | 1 |
+| 2024, CHEAP | 1 | +82.3% | +82.3% | +39.4pp | 1 | 1 | +55.6% | -24.9% | 1 |
+| 2024, FAIR | 25 | +74.5% | +72.9% | +33.9pp | 25 | 25 | +54.5% | -24.9% | 0 |
+| 2024, RICH | 20 | +58.0% | +56.1% | +21.3pp | 20 | 20 | +47.6% | -24.9% | 0 |
+| class CHEAP | 90 | +84.0% | +89.5% | +42.0pp | 90 | 83 | +50.9% | -21.9% | 90 |
+| class FAIR | 39 | +82.5% | +79.9% | +38.5pp | 39 | 39 | +56.9% | -23.0% | 0 |
+| class RICH | 21 | +55.6% | +55.9% | +20.5pp | 21 | 20 | +44.6% | -25.6% | 0 |
+| tier BUY | 82 | +82.6% | +88.8% | +41.3pp | 82 | 76 | +49.7% | -21.6% | 82 |
+| tier ACCUMULATE | 23 | +93.5% | +95.8% | +45.5pp | 23 | 22 | +60.6% | -21.6% | 8 |
+| tier WATCHLIST | 26 | +76.4% | +71.5% | +34.9pp | 26 | 26 | +55.4% | -24.9% | 0 |
+| tier AVOID | 19 | +54.1% | +55.1% | +19.7pp | 19 | 18 | +43.4% | -25.7% | 0 |
+| P/E percentile 0-39 | 56 | +72.8% | +80.4% | +34.1pp | 56 | 49 | +39.8% | -20.5% | 55 |
+| P/E percentile 40-59 | 12 | +92.6% | +90.8% | +46.4pp | 12 | 12 | +67.5% | -22.9% | 7 |
+| P/E percentile 60-79 | 46 | +89.1% | +95.1% | +44.5pp | 46 | 46 | +62.0% | -23.3% | 24 |
+| P/E percentile 80-100 | 36 | +73.7% | +70.3% | +33.4pp | 36 | 35 | +51.3% | -25.3% | 4 |
+
+The 1-year horizon reaches the 2025 entries, which the 2-year table cannot yet score:
+
+| Group | Dates | Mean 1-yr total return | Median | Mean vs SPY | Beat SPY | Cleared hurdle |
+|---|---|---|---|---|---|---|
+| all, scored | 202 | +30.8% | +30.9% | +13.0pp | 175 | 167 |
+| 2022, CHEAP | 51 | +18.2% | +19.2% | +10.5pp | 49 | 30 |
+| 2023, CHEAP | 38 | +46.8% | +47.0% | +18.4pp | 38 | 38 |
+| 2023, FAIR | 14 | +41.5% | +39.0% | +14.0pp | 13 | 14 |
+| 2024, FAIR | 25 | +44.4% | +43.3% | +26.2pp | 25 | 25 |
+| 2024, RICH | 26 | +33.1% | +34.7% | +20.2pp | 26 | 25 |
+| 2025, RICH (to 2025-11-14) | 45 | +20.0% | +19.8% | -0.4pp | 21 | 33 |
+| class CHEAP | 90 | +30.6% | +32.1% | +14.0pp | 88 | 69 |
+| class FAIR | 40 | +43.3% | +43.2% | +21.5pp | 39 | 40 |
+| class RICH | 72 | +24.2% | +23.5% | +7.1pp | 48 | 58 |
+| P/E percentile 0-39 | 56 | +20.9% | +21.6% | +11.5pp | 54 | 35 |
+| P/E percentile 80-100 | 87 | +29.6% | +27.6% | +10.2pp | 63 | 74 |
+
+What the labels say, as hypotheses only:
+
+- **Every scored date beat SPY, so the absolute calls failed and the ranking held at the ends.** All 150 dates with a 2-year outcome
+  beat the index (a mean +38.1 points) and 142 cleared the hurdle. CHEAP returned +84.0%, FAIR +82.5%, RICH +55.6% (still 20.5 points
+  ahead of SPY); BUY +82.6%, AVOID +54.1%. "Call held" reads 90 of 150: every CHEAP date, and no FAIR or RICH date, since by the scoring
+  rule those should have stayed near or behind the index. FAIR and CHEAP are level; only RICH is separated, by about 28 points.
+- **2022: CHEAP on FY21's $15.36 was right.** The 51 CHEAP dates (6.8-10.3x, under the 9x floor on 42 of them) returned +71.1% over two
+  years, 33.1 points ahead of SPY, after a further fall to the September 2022 low. The 2022-01-07 date, RICH on FY20's $8.88 a week
+  before the Q4 2021 print, returned +7.9%: the one date of the year anchored on the reserve-build year.
+- **2023-2024: the multiple re-rated through the window's median, and RICH arrived early.** The window's median stayed at 10.8-11.3x
+  while the price went from 10x to 15x FY23's $16.23. The 2024 RICH dates (20 scored) returned +58.0%, behind 2024's FAIR (+74.5%) but
+  21.3 points ahead of SPY; the 2025 RICH dates, the series' most expensive (65th-100th percentile, 11.5-18.1x FY24's $18.22), matched
+  SPY over one year (+20.0%, -0.4 points) and have no 2-year outcome yet. The test of the RICH call is the part still open.
+- **The percentile hypothesis of 2014-2017 did not hold here.** The 80th percentile and above returned +73.7% over two years, level with
+  the 0-39th (+72.8%) and behind the 40-79th (+89-93%); over one year the 0-39th (mostly 2022) was the weakest bucket. In 2018-2021 the
+  top bucket was the worst; in a period when the whole stock re-rated, the bucket order says little.
+- **Scenario landing:** XBULL on 86 dates, BULL on 34, BASE on 30, never BEAR. The outcomes ran past the method's most generous case
+  (XBULL, FY17 to FY19 at +24.9%/yr) on most dates: EPS rose from $15.36 (FY21) to $20.02 (FY25) and the multiple from about 9x to 17x.
+- **Drawdowns:** a mean -22.7% inside the two years (-40.1% in 2018-2021, -20.7% in 2014-2017).
+- **Three-year horizon:** a mean +135.5% for the 98 dates of 2022-2023, all ahead of SPY (+68.5 points); CHEAP +137.2%, FAIR +126.9%.
+
+Across the five batches (985 dates): the class ranked JPM's entries correctly in 2008, 2010-2013, 2018-2021 and 2022-2024 (CHEAP above
+RICH), failed in 2009 and 2014-2017 for reasons traced to the 2008 trough year, and in 2022-2024 every class beat the index, so the
+calls' absolute meanings (RICH should lag) failed while the order held. A hypothesis for the live model, to test on other banks before
+any use: a P/E window whose median comes from a decade of low bank multiples (about 11x here) labels a re-rating RICH before the
+returns weaken; whether 2025-2026's RICH dates lag over two years is not known yet. Not tested here: any other bank, any other cycle.
+

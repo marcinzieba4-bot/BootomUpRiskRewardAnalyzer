@@ -20810,6 +20810,8 @@ Controls and checks (before any outcome):
 - **`retro_tool run` passes on all 209 dates.** Its year warning fires for FY18's tax rate of 0.2034 (52 dates, 2019-01-16 to 2020-01-10)
   and Q3 2019's 3.2072 billion diluted shares (13 dates).
 - **Regression:** the 522 dates of 2008-2017 rebuild byte-identical. The firewall's JPM entry now plants CRYPTO words on the later vintage.
+- **Corrected later** (JPM 2022-2026, "A leak found and corrected"): on 2021-01-15 to 2021-02-19 the CRYPTO line named the FY2020 10-K
+  before its filing while quoting the FY2019 10-K's words; the six models now name the FY2019 10-K (text only).
 - **Firewall** (after the build was committed, before any outcome): passes at the 25 cutoffs above (every print, vintage, restatement
   and dividend date, CRYPTO's live date, 2018-01-02 and 2022-01-01), 0 files changed and no planted text, 522 to 731 dates each.
 
