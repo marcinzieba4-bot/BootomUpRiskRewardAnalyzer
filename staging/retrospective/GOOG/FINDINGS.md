@@ -1,12 +1,13 @@
 # GOOG retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the GOOG weekly dates: 522 in all, 105 from 2008-01-04 to 2009-12-31, 209 from 2010-01-08 to
-2013-12-31 and 208 from 2014-01-10 to 2017-12-29: Google Inc. to 2015-10-02 and Alphabet Inc. after, the Class A common stock (NASDAQ:
+Patterns seen in `outcome.json` for the GOOG weekly dates: 731 in all, 105 from 2008-01-04 to 2009-12-31, 209 from 2010-01-08 to
+2013-12-31, 208 from 2014-01-10 to 2017-12-29 and 209 from 2018-01-05 to 2021-12-31: Google Inc. to 2015-10-02 and Alphabet Inc. after, the Class A common stock (NASDAQ:
 GOOG) to 2014-03-26 and the Class C capital stock (Yahoo's GOOG series) from 2014-03-27. They are **labels and hypotheses**: never feed
 them back into the method or the fact sheet. Each batch was scored only after its point-in-time build was committed and pushed
 (2008-2009: f268b6d, firewall result 4d0926c; 2010-2013: 538c9a3, with the correction of two 2008-2009 vintage notes, firewall result
-b0b6461; 2014-2017: 3ff288d, firewall result 9fa6d66); the outcomes were computed on 2026-11-18. Every date has its 6-month, 1-, 2- and
-3-year horizons (the last ends 2020-12-29). Google paid no dividend in these horizons, so total returns are price returns. The horizons
+b0b6461; 2014-2017: 3ff288d, firewall result 9fa6d66; 2018-2021: 120794a, firewall result 6985667); the outcomes were computed on 2026-11-18
+and (2018-2021) 2026-11-19. Every date has its 6-month, 1-, 2- and 3-year horizons (the last ends 2024-12-30). Alphabet paid no dividend
+before June 2024, so total returns are price returns except the 3-year horizons that end after it (late-2021 entries). The horizons
 that end after the 2014-04-02 distribution of one Class C share per Class A share (92 two-year horizons of 2010-2013, from the 2012-04-13
 entry on, and the 11 entries of 2014-01-10 to 2014-03-21) are measured on Yahoo's GOOG series, which counts one Class A share as 2.002
 Class C shares and the 2015 Adjustment Payment as 1.0027455 more; a holder's one A plus one C share was worth 0.1 to 3.2 points more over
@@ -289,3 +290,98 @@ average price return.
   start-up years, the legacy tier became informative (its four levels ordered both return and excess), unlike 2008-2013 when it was BUY
   throughout; (3) the FAIR misses were all upside misses, as in late 2013, so for this ticker FAIR behaved like a weaker CHEAP; (4) the
   composite's sign changed from year to year again (wrong in 2015, flat in 2014, mixed in 2016-2017).
+
+## 2018 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+| class RICH, legacy tier AVOID | 52 | +29.0% | -4.5% to +77.6% | 16 | 51 | +16.1% | 1 |
+| latest print Q3 2017 (2018-01-05 to 2018-01-26) | 4 | +27.4% | +23.4% to +30.1% | 0 | 4 | +6.8% | 0 |
+| latest print Q4 2017 (2018-02-02 to 2018-04-20) | 12 | +18.3% | -4.5% to +42.5% | 2 | 12 | +16.1% | 0 |
+| latest print Q1 2018 (2018-04-25 to 2018-07-20) | 13 | +27.8% | +23.2% to +32.1% | 0 | 13 | +14.0% | 0 |
+| latest print Q2 2018 (2018-07-25 to 2018-10-19) | 13 | +28.4% | +19.6% to +41.4% | 4 | 12 | +15.6% | 1 |
+| latest print Q3 2018 (2018-10-26 to 2018-12-28) | 10 | +68.9% | +48.4% to +77.6% | 10 | 10 | +40.3% | 0 |
+
+- **RICH on every date, AVOID throughout, and the call held once:** the entries ($980-1,264) returned -4.5% to +77.6% over two years and beat
+  SPY on 51 (by up to 33.7 points; SPY itself returned -9.3% to +57.5%, the two-year ends falling either side of the 2020 fall). Only
+  2018-08-10 lagged (+20.9%, 1.6 points behind). The anchor was FY17's $18.00, the Tax Act year at GAAP; FY2018 came in at $43.70. The
+  entries of the Q3 2018 print (October to December, $980-1,094) returned +48.4% to +77.6%. The two-year price landed
+  nearest XBULL on 43 dates and BULL on 9; over three years the 2018 dates returned +55.6% to +194.5% (median +123.2%), all beating SPY and
+  clearing the three-year hurdle.
+- **Ranks:** the entry price -0.29 against the two-year return and -0.76 against the m12-24 average, the EPP gap -0.25 and -0.44, Ratio B
+  +0.11 and +0.44, the adjusted gap +0.50 and +0.58, the composite +0.45 and +0.41.
+
+## 2019 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+| class FAIR, legacy tier WATCHLIST | 12 | +88.9% | +74.5% to +134.7% | 12 | 12 | +39.1% | 0 |
+| class RICH, legacy tier WATCHLIST | 14 | +127.5% | +69.1% to +145.1% | 14 | 14 | +67.9% | 0 |
+| class RICH, legacy tier AVOID | 26 | +123.4% | +58.1% to +140.3% | 26 | 26 | +78.5% | 0 |
+| latest print Q3 2018 (2019-01-04 to 2019-02-01) | 5 | +67.1% | +58.1% to +74.1% | 5 | 5 | +37.8% | 0 |
+| latest print Q4 2018 (2019-02-06 to 2019-04-26) | 12 | +84.4% | +69.1% to +88.9% | 12 | 12 | +36.5% | 0 |
+| latest print Q1 2019 (2019-05-01 to 2019-07-19) | 12 | +127.5% | +99.7% to +134.7% | 12 | 12 | +67.9% | 0 |
+| latest print Q2 2019 (2019-07-26 to 2019-10-25) | 14 | +131.0% | +119.4% to +145.1% | 14 | 14 | +75.9% | 0 |
+| latest print Q3 2019 (2019-10-30 to 2019-12-27) | 9 | +123.8% | +111.0% to +135.1% | 9 | 9 | +83.3% | 0 |
+
+- **No call held: FAIR and RICH entries alike more than doubled with the market's run into 2021.** The entries returned +58.1% to +145.1%
+  and beat SPY by 10.8 to 86.4 points; every one cleared the hurdle. The twelve FAIR dates (2019-02-06 to 2019-06-28, $1,066-1,184 on FY18's
+  $43.70) returned +74.5% to +134.7%, the 40 RICH +58.1% to +145.1%: the class did not separate them. The two-year price landed nearest
+  XBULL on all 52 (1.35-3.03 times BASE; XBULL then +25.3%/yr). Over three years +30.1% to +169.8% (median +99.4%), all beating SPY.
+- **Ranks:** the entry price +0.20 and +0.52 (the wrong sign), the EPP gap -0.69 and -0.30, Ratio B -0.14 and +0.32, the adjusted gap +0.09
+  and -0.35, the composite -0.56 and -0.41.
+
+## 2020 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+| class FAIR, legacy tier ACCUMULATE | 3 | +155.2% | +154.8% to +156.3% | 3 | 3 | +145.1% | 0 |
+| class FAIR, legacy tier WATCHLIST | 4 | +113.9% | +87.0% to +121.2% | 4 | 4 | +117.5% | 0 |
+| class RICH, legacy tier WATCHLIST | 1 | +103.5% | +103.5% to +103.5% | 1 | 1 | +103.5% | 0 |
+| class RICH, legacy tier AVOID | 45 | +49.5% | -1.6% to +113.2% | 31 | 35 | +75.1% | 10 |
+| latest print Q3 2019 (2020-01-03 to 2020-01-31) | 5 | +88.9% | +77.8% to +113.2% | 5 | 5 | +77.1% | 0 |
+| latest print Q4 2019 (2020-02-05 to 2020-04-24) | 12 | +103.5% | +75.7% to +156.3% | 12 | 12 | +112.0% | 0 |
+| latest print Q1 2020 (2020-04-30 to 2020-07-24) | 13 | +57.7% | +43.3% to +74.3% | 13 | 13 | +89.4% | 0 |
+| latest print Q2 2020 (2020-07-31 to 2020-10-23) | 13 | +37.3% | +23.6% to +62.7% | 9 | 13 | +70.8% | 0 |
+| latest print Q3 2020 (2020-10-30 to 2020-12-31) | 10 | +8.9% | -1.6% to +19.2% | 0 | 0 | +35.5% | 10 |
+
+- **FAIR (the COVID fall) missed on the upside; RICH held only for the Q3 2020 print's entries.** The seven FAIR dates (2020-03-13 to
+  2020-04-24, $1,072-1,283) returned +87.0% to +156.3% and beat SPY by 32.4 to 71.7 points; the three ACCUMULATE dates among them (March 20
+  to April 3) were the series' best entries (+154.8% to +156.3%). The 46 RICH dates returned -1.6% to +113.2%; the ten that held are the
+  Q3 2020 print's ($1,621-1,901, 2020-10-30 to 2020-12-31): -1.6% to +19.2%, short of the hurdle and 2.1 to 12.4 points behind SPY. Over three
+  years +24.0% to +91.1% (median +64.2%); 48 beat SPY.
+- **The price ranked the outcomes almost exactly** (-0.87 and -0.98; the EPP gap -0.83 and -0.98, Ratio B -0.77 and -0.96, the adjusted gap
+  +0.56 and +0.83); the composite +0.23 and +0.31.
+
+## 2021 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+| class RICH, legacy tier WATCHLIST | 13 | -3.4% | -9.6% to -0.9% | 0 | 1 | -23.3% | 12 |
+| class RICH, legacy tier AVOID | 39 | -4.7% | -15.6% to +9.7% | 0 | 4 | -13.8% | 35 |
+| latest print Q3 2020 (2021-01-08 to 2021-01-29) | 4 | +6.9% | -2.4% to +9.7% | 0 | 0 | +26.5% | 4 |
+| latest print Q4 2020 (2021-02-04 to 2021-04-23) | 12 | -4.7% | -12.3% to +4.2% | 0 | 1 | +4.3% | 11 |
+| latest print Q1 2021 (2021-04-29 to 2021-07-23) | 13 | -3.1% | -12.7% to +5.1% | 0 | 3 | -16.7% | 10 |
+| latest print Q2 2021 (2021-07-29 to 2021-10-22) | 13 | -3.4% | -9.6% to -0.9% | 0 | 1 | -23.3% | 12 |
+| latest print Q3 2021 (2021-10-28 to 2021-12-31) | 10 | -6.5% | -15.6% to -2.6% | 0 | 0 | -19.3% | 10 |
+
+- **RICH held on 47 of 52: the 2021 entries ($1,736-2,999 as traded, before the 2022 twenty-for-one split) returned -15.6% to +9.7% over two
+  years** and lagged SPY on 47 (by up to 19.6 points); 42 lost money. The five misses beat SPY by 0.1 to 2.9 points (March to May and
+  2021-10-22). FY2021's print is outside the range; the anchor was FY20's $58.61 at 34.7-51.2x, the 89th-94th percentile. Over three years
+  (to the end of 2024, with the first dividends in the late entries) the 2021 dates returned +6.0% to +68.7% (median +35.8%); 29 beat SPY and
+  5 cleared the hurdle.
+- **The m12-24 average ranked by the entry price** (-0.90; the EPP gap -0.91), the two-year return weakly (-0.33, -0.32); the adjusted gap
+  +0.11 and -0.58, the composite -0.09 and -0.86.
+
+## Across 2018-2021
+
+- **RICH on 190 of 209 dates and right on 58:** the stock beat SPY over two years from 151 entries and cleared the hurdle from 107, and
+  the RICH calls held only where the market caught up or the stock fell back: 2018-08-10, the Q3 2020 print's entries and most of 2021.
+  The 19 FAIR dates all missed on the upside (median +113.9%, 53.7 points over SPY). Two-year returns ran from -15.6% to +156.3% (median
+  +36.6%); 44 were losses, 42 of them 2021 entries.
+- **The tier ordered the outcomes; the class barely did.** ACCUMULATE (3 dates) median +155.2%, WATCHLIST (44) +88.1%, AVOID (162) +30.1% over
+  two years, and +69.2, +41.8 and +12.0 points over SPY. FAIR returned a median +113.9% and RICH +30.1%, but RICH spans a +145.1% entry
+  (2019) and a -15.6% one (2021). Across the four years the EPP gap ranks best (-0.65 and -0.70), then the price (-0.59 and -0.37); Ratio B
+  -0.41 and -0.35, the adjusted gap +0.10 and +0.06, the composite -0.35 and -0.47.
+- Hypotheses only, to test on other tickers and periods and never to fold into GOOG's method or fact sheet: (1) a Tax Act year kept at GAAP
+  by a narrow margin sets a deep BEAR (-35%/yr here) for a decade and an inflated XBULL two years later; the class barely depended on it, but
+  the tier stayed AVOID through a doubling (2019-2020); (2) a RICH class that rests on the multiple against a window whose median sits near
+  the post-2008 lows held only once the multiple itself was extreme (2021: 89th-94th percentile, 35-51x) and was wrong at 50th-90th; (3) the
+  FAIR dates of a falling market (spring 2020) were the best entries, as the 2008-2009 batch's CHEAP floor dates were; (4) the composite's
+  sign stayed unstable.
