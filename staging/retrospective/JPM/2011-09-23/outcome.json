@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "JPM",
+ "as_of": "2011-09-23",
+ "computed": "2026-11-19",
+ "data_source": "Yahoo Finance daily closes + dividends (JPM, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2012-03-23",
+   "price": 45.16,
+   "dividends": 0.5,
+   "total_return_pct": 54.3,
+   "benchmark_total_return_pct": 24.2,
+   "excess_pct": 30.1,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2012-09-21",
+   "price": 40.88,
+   "dividends": 1.1,
+   "total_return_pct": 41.9,
+   "benchmark_total_return_pct": 31.0,
+   "excess_pct": 10.9,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2013-09-23",
+   "price": 51.46,
+   "dividends": 2.38,
+   "total_return_pct": 82.0,
+   "benchmark_total_return_pct": 55.2,
+   "excess_pct": 26.8,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2014-09-23",
+   "price": 60.94,
+   "dividends": 3.92,
+   "total_return_pct": 119.2,
+   "benchmark_total_return_pct": 83.1,
+   "excess_pct": 36.1,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2013-07-23",
+   "price": 56.67
+  },
+  "low": {
+   "date": "2011-11-23",
+   "price": 28.38
+  },
+  "max_drawdown_pct": -33.0,
+  "return_to_avg_price_m12_m24_pct": 63.7
+ },
+ "scenario_landing_2y": "BASE",
+ "call_check_2y": {
+  "expectation": "CHEAP: should clear the hurdle or beat the benchmark",
+  "hit": true
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "DURABLE",
+   "risk": 2
+  },
+  "today": {
+   "kind": "CYCLICAL",
+   "risk": 1,
+   "why": "Best-in-class universal bank; still a rate/credit cycle at a record multiple",
+   "reviewed": "2026-09-22"
+  }
+ }
+}
