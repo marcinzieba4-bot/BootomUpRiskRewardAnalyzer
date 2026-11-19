@@ -1,7 +1,7 @@
 # JPM retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the JPM weekly dates (JPMorgan Chase & Co., NYSE: JPM): 314 in all, 105 from 2008-01-04 to 2009-12-31
-and 209 from 2010-01-08 to 2013-12-31 (the second section below). They are
+Patterns seen in `outcome.json` for the JPM weekly dates (JPMorgan Chase & Co., NYSE: JPM): 522 in all, 105 from 2008-01-04 to 2009-12-31,
+209 from 2010-01-08 to 2013-12-31 and 208 from 2014-01-10 to 2017-12-29 (the second and third sections below). They are
 **labels and hypotheses**: never feed them back into the method or the fact sheet. The outcomes were computed on 2026-11-19, after the
 point-in-time build and its one text correction were committed (735d7d4, ed681b3) and the firewall had passed at 16 cutoffs; the build
 was not yet pushed when they were computed. Every date has its 6-month, 1-, 2- and 3-year horizons. Total returns include dividends
@@ -99,3 +99,65 @@ What the labels say, as hypotheses only:
 Across both batches (314 dates): the series' misses are concentrated where the anchor year is a trough (2009 RICH at the low) and in
 early 2010 (CHEAP on the first post-trough print). A hypothesis for the live model, to test on other banks before any use: a
 last-year-EPS anchor needs a rule for the year after a collapse. Not tested here: any other bank, any other cycle.
+
+## 2014-2017 (208 dates)
+
+Scored on 2026-11-19, after the point-in-time build was committed (753c09c) and the firewall had passed at 27 cutoffs, and after the
+decisions, checks and sensitivities of retro/README.md ("JPM 2014-2017") were written; the build was not yet pushed when the outcomes were
+computed. Every date has its 6-month, 1-, 2- and 3-year horizons. Dividends are $0.38 a quarter to mid-2014, then $0.40, $0.44, $0.48,
+$0.50 and $0.56 (from late 2017). The P/E percentile rows group the dates by `PE_NOW_PCTL`, the multiple's place in its own ten-year range
+on the as-of date (a point-in-time number the method already prints; the grouping is hindsight).
+
+| Group | Dates | Mean 2-yr total return | Median | Mean vs SPY | Beat SPY | Cleared hurdle | Mean m12-24 avg price | Mean max drawdown | Call held |
+|---|---|---|---|---|---|---|---|---|---|
+| all | 208 | +43.9% | +37.8% | +20.2pp | 187 | 125 | +27.8% | -20.7% | 22 |
+| 2014 | 51 | +18.4% | +18.1% | +5.8pp | 37 | 7 | +9.2% | -23.8% | 15 |
+| 2014, FAIR | 2 | +14.2% | +14.2% | +2.7pp | 1 | 0 | +14.1% | -20.1% | 2 |
+| 2014, RICH | 49 | +18.6% | +18.1% | +6.0pp | 36 | 7 | +9.0% | -24.0% | 13 |
+| 2015 | 53 | +50.6% | +51.6% | +27.3pp | 53 | 51 | +24.2% | -23.3% | 0 |
+| 2015, FAIR | 6 | +58.3% | +56.5% | +42.0pp | 6 | 6 | +18.8% | -24.3% | 0 |
+| 2015, RICH | 47 | +49.6% | +50.4% | +25.5pp | 47 | 45 | +24.9% | -23.2% | 0 |
+| 2016 | 52 | +76.6% | +80.4% | +40.9pp | 52 | 48 | +58.4% | -13.2% | 0 |
+| 2016, FAIR | 5 | +102.8% | +104.5% | +53.6pp | 5 | 5 | +64.2% | -12.5% | 0 |
+| 2016, RICH | 47 | +73.8% | +79.6% | +39.6pp | 47 | 43 | +57.8% | -13.2% | 0 |
+| 2017 | 52 | +29.6% | +30.9% | +6.4pp | 45 | 19 | +19.0% | -22.4% | 7 |
+| 2017, RICH | 52 | +29.6% | +30.9% | +6.4pp | 45 | 19 | +19.0% | -22.4% | 7 |
+| class FAIR | 13 | +68.6% | +64.2% | +40.4pp | 12 | 11 | +35.5% | -19.1% | 2 |
+| class RICH | 195 | +42.3% | +36.7% | +18.9pp | 175 | 114 | +27.3% | -20.8% | 20 |
+| tier WATCHLIST | 8 | +47.3% | +55.0% | +32.2pp | 7 | 6 | +17.7% | -23.2% | 2 |
+| tier AVOID | 200 | +43.8% | +37.4% | +19.8pp | 180 | 119 | +28.2% | -20.6% | 20 |
+| Q4-print intervals | 24 | +48.7% | +42.3% | +24.2pp | 19 | 12 | +30.6% | -20.2% | 5 |
+| other dates | 184 | +43.3% | +37.8% | +19.7pp | 168 | 113 | +27.4% | -20.7% | 17 |
+| RICH, Ratio B infinite | 48 | +27.8% | +27.1% | +5.4pp | 41 | 12 | +18.6% | -22.0% | 7 |
+| RICH, Ratio B finite | 147 | +47.0% | +43.7% | +23.3pp | 134 | 102 | +30.1% | -20.4% | 13 |
+| P/E percentile 0-39 | 23 | +89.5% | +92.8% | +52.0pp | 23 | 23 | +59.0% | -14.1% | 0 |
+| P/E percentile 40-59 | 29 | +66.1% | +75.4% | +37.1pp | 28 | 26 | +44.3% | -17.2% | 2 |
+| P/E percentile 60-79 | 101 | +35.2% | +36.0% | +15.7pp | 88 | 58 | +19.9% | -22.8% | 13 |
+| P/E percentile 80-100 | 55 | +29.4% | +28.9% | +6.4pp | 48 | 18 | +20.5% | -21.4% | 7 |
+
+What the labels say, as hypotheses only:
+
+- **The class was wrong on almost every date.** 195 of the 208 dates are RICH and returned a mean +42.3% over two years, 18.9 points
+  ahead of SPY; 175 of them beat SPY and 114 cleared the 15%/yr hurdle, so the RICH call held on 20. The 13 FAIR dates did better still
+  (+68.6%, +40.4 points) and held on 2. All 200 AVOID dates together returned +43.8%. "Call held" reads 22 of 208, the series' worst.
+- **The class here measures the 2008 trough, not the price.** BEAR is FY07 to FY08, -80.1%/yr, on every date, a BEAR price of $1.34 to
+  $1.98, so the downside in Ratio B is about 97% whatever the price. Ratio B then rests on the upside to BULL, and BULL's growth falls as
+  the low early years (FY04 $1.45, FY05 $2.45) leave the ten years: +13.0%/yr in 2014 to +3.8% in 2017. The class turned RICH and stayed
+  there while earnings rose from $4.35 to $6.19; the price rose with them. Most FAIR dates are the Q4-print intervals, when the history
+  briefly holds an eleventh, older year.
+- **The multiple's own percentile ordered the outcomes where the class did not.** Entries at the 0-39th percentile of the ten-year range
+  (23 dates: three in January 2015 and twenty from January to July 2016, at 9.5-10.7x) returned +89.5% over two years; the 40-59th +66.1%; the 60-79th +35.2%; the 80th
+  and above +29.4%, still 6.4 points ahead of SPY. The method already scores this percentile (the valuation factor), but with a weight
+  that the Ratio B rule overrides in the class. A hypothesis for the live model, to test on other banks and periods before any use: when
+  BEAR is a single trough year outside the current cycle, the percentile, not Ratio B, carries the information.
+- **Scenario landing:** BULL on 192 dates and BASE on 16; never near BEAR. Over 2014-2017 the scenario that came true is the one the
+  method gave the least room (BULL at +3.8% to +13.8%/yr against EPS that rose 42% from FY13 to FY16).
+- **By year:** 2014 +18.4% (+5.8 points against SPY), 2015 +50.6% (+27.3), 2016 +76.6% (+40.9), 2017 +29.6% (+6.4). The 2016 entries,
+  the cheapest by percentile, returned the most; one stock in one period is one observation.
+- **Three-year horizon:** a mean +65.6%, 26.3 points ahead of SPY (166 of 208 ahead); the 2017 entries, whose third year ends in 2020,
+  lag SPY by 11.7 points on average.
+
+Across the three batches (522 dates): the classes ordered the outcomes in 2008 and over 2010-2013 and failed in 2009, early 2010 and all
+of 2014-2017. Each failure traces to the history's trough year: as the anchor at the 2009 low, and as BEAR from the Q4 2008 print on. A hypothesis for
+the live model, as in 2010-2013 and still untested elsewhere: a last-year-EPS method needs a rule for a single collapse year, here for
+BEAR as well as for the anchor. Not tested here: any other bank, any other cycle.
