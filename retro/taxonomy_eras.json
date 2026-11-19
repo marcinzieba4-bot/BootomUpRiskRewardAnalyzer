@@ -1816,6 +1816,16 @@
     "term": "Tensor Processing Unit",
     "first_seen": "2026-04-27",
     "note": "Google's AI accelerator (2016) by its full name; first in a Google or Alphabet filing in the 2026 proxy statement (DEF 14A, accepted 2026-04-24 16:15 ET on a Friday, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "Fitbit",
+    "first_seen": "2020-02-04",
+    "note": "the wearables maker Google agreed to buy in 2019; first in a Google or Alphabet filing in the FY2019 10-K (accepted 2020-02-03 21:03 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "Google Workspace",
+    "first_seen": "2020-10-30",
+    "note": "Google's renamed productivity suite (G Suite until 2020); first in a Google or Alphabet filing in the Q3 2020 10-Q (accepted 2020-10-29 19:30 ET, after the close), EDGAR full-text search"
    }
   ]
  }

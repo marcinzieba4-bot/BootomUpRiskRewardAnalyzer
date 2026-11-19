@@ -19862,6 +19862,127 @@ Judgement calls that could carry hindsight:
 
 The hindsight results are in `staging/retrospective/GOOG/FINDINGS.md`: hypotheses, never inputs.
 
+### GOOG 2018-2021: the Tax Act year at GAAP by a $69M margin, EC fines at the company's figures, COVID, and RICH throughout
+
+209 weekly dates, 2018-01-05 to 2021-12-31, on the same method, builder, engine and rule-T thresholds; no builder or engine change was
+needed. The owner asked for 2018-2021. Built in the session that built and scored 2014-2017, so those outcomes and `FINDINGS.md` were known
+when this batch was read; no decision below uses them. Each applies a rule that existed before: the AAPL FY2002 test as PEP applies it
+to its 2017 (GAAP when the listed items do not exceed the year's income), the ACN rule for a company figure without a one-off (as GOOG's
+Q2 2017), the UNP and LOW continuing-operations rule, the rollover and decade rules, the UNP BASE rule, and the 2014-2017 encodings.
+
+```bash
+python3 retro/build_goog.py --weekly 2018-01-01 2021-12-31                  # 209 dates, 2018-01-05 .. 2021-12-31
+for c in 2018-02-02 2018-02-06 2018-04-24 2018-07-24 2018-10-26 2019-02-05 2019-04-30 2019-07-26 2019-10-29 2020-02-04 2020-04-29 \
+         2020-07-31 2020-10-30 2021-02-03 2021-04-28 2021-07-28 2021-10-27 2022-01-01; do python3 retro/tools/firewall.py $c GOOG; done
+```
+
+Read, by the session's model directly with no delegated transcription: the 16 earnings releases of Q4 2017 to Q3 2021 (ex.99.1), the
+FY2017-FY2020 10-Ks (Items 1, 1A, 5, 6, 7, the statements and the EPS note), the FY2018 10-K/A, the 10-Qs of Q1 2017 to Q3 2021 (the
+year-ago receivables, and each quarter's figures against its release: every one matches), and every other 8-K of 2018-2021 by its items
+and exhibits. The source ids are `GOOG97`-`GOOG128`; 644 strings were checked with `verbatim.py`, each against its own filing (644/644).
+Decided on 2026-11-19, before any 2018-2021 model was built or any 2018-2021 outcome computed:
+
+- **Release timing.** Every earnings 8-K was accepted after the close (16:01-18:40 ET) and is dated the next trading day; Thursday
+  releases meet the Friday's close (2018-02-02, 2018-10-26, 2019-07-26, 2020-07-31, 2020-10-30), the Monday and Tuesday ones are dated
+  the next day and their weeks' dates are the day after (2018-04-25, 2018-07-25, 2019-02-06, 2019-05-01, 2019-10-30, 2020-02-05,
+  2020-04-30, 2021-02-04, 2021-04-29, 2021-07-29, 2021-10-28). The 10-Ks are dated 2018-02-06, 2019-02-05, 2020-02-04 and 2021-02-03:
+  from FY2018 each comes the same evening as its Q4 release, so the Q4 print's full-year actuals never stand alone (FY2017 does for one
+  date, 2018-02-02).
+- **FY2017 at GAAP, $18.00, by a $69M margin** (the series' largest call). The Q4 2017 release lists the Tax Act ("additional tax expense
+  of $9.9 billion", $9,857M in its table) and the year's EC fine ($2,736M, not tax deductible): $12,593M against $12,662M of net income,
+  so the AAPL FY2002 test is not met (GAAP $18.00 is 50.1% of the EPS without them, about $35.90). No filing publishes the year's EPS
+  without them: the release gives Q4's EPS without the Tax Act ($9.70) and the year's operating income without the fine ($28,882M), the
+  10-K neither. So FY2017 stays at GAAP (the PEP 2017 rule) and is in every history from 2018-02-02: BEAR becomes FY2016-FY2017's
+  -35.4%/yr on every later date, and from the FY2019 10-K XBULL is FY2017-FY2019's +65.3%/yr. Both alternatives are measured below.
+- **FY2018-FY2020 at GAAP.** FY2018 ($43.70) carries the gains on equity securities under ASU 2016-01 (the release gives their "Diluted EPS
+  effect" of $5.70, an effect, not a figure without it) and the Android fine ($5,071M): neither the test nor its mirror is met. FY2019
+  ($49.16) carries the AdSense fine ($1,697M), FY2020 is $58.61. Every class earns the same per share in these years.
+- **Quarters at the company's figure without a one-off** (the ACN rule, as Q2 2017): Q4 2017's EPS without the Tax Act ($9.70; GAAP
+  $(4.35)); Q2 2018's operating income and EPS without the EC fines ($7,878M, $11.75; the year-ago Q2 2017 as $6,868M and $8.90); Q1 2019's
+  ($8,305M, $11.90). The Q2 2019 and Q1 2020 releases print their year-ago quarters without the fines too ("Non-GAAP results presented for
+  Q2 2018 exclude the EC fine."; $8,116M after the reclassification below, and $8,305M), so those year-ago figures are the company's. Q1
+  2018's equity-security effects have no figure without them: GAAP. The full-year operating margins (display) are GAAP.
+- **Prior-year figures as each release prints them:** from Q1 2019 performance fees are reclassified from general and administrative
+  expenses to OI&E for prior periods ("Performance fees were reclassified for the prior period from general and administrative expenses
+  to OI&E to conform with current period presentation."), and Nest joins the Google segment in Q1 2018. Each history year comes from the
+  latest filing that reports it (the FY2017 and FY2018 10-Ks report 2013-2014 from continuing operations; EPS is unaffected by the
+  reclassification).
+- **Diluted shares** are the releases' summary counts to Q3 2019 and the income statement's from Q4 2019; the Q4 2017 and Q4 2018
+  releases print no full-year count, so FY2017 joins the share history with the 10-K (the 2014-2017 encoding). The 10-Ks' counts are the
+  Class A plus Class C columns, as before.
+- **Revenue types and segments, display only:** Google properties, Network and other revenues and Other Bets to Q3 2019; Search & other,
+  YouTube ads, Network, Cloud, other, Other Bets and hedging gains from Q4 2019 ("Hedging gains (losses), which were previously included in
+  Google revenues, are presented separately."); the segments Google Services, Google Cloud and Other Bets from Q4 2020. The signals take
+  the consolidated lines.
+- **No guide in any filing,** no dividend; repurchases (authorizations of $8.6 billion in January 2018, $25.0 billion in July 2019, $28.0
+  billion in July 2020 and $50.0 billion in April 2021) are display text. BASE is the latest quarter's revenue growth plus the decade's
+  share change.
+- **CYCLICAL, risk 2, unchanged:** every FY2017-FY2020 10-K keeps "As our growth rate has slowed, the cyclicality and seasonality in our
+  business has become more pronounced and caused our operating results to fluctuate." CLOUD stays out of scope (Google Cloud is Google's
+  own business; the 10-Ks name "Providers of enterprise cloud services, including Alibaba, Amazon, and Microsoft." as competitors); EV
+  (from 2020-01-01; Waymo is Alphabet's own) and CRYPTO (from 2020-10-21) are out of scope, as are ECOMMERCE, STREAMING and
+  ENERGY_TRANSITION; GENAI is not live before 2022-11-30. COVID has no theme: the FY2020 10-K's words ("including developments and
+  volatility arising from COVID-19") are quoted in the "why", display only.
+- **Adds nothing:** the EC decisions (2018-07-18 and 2019-03-20, before the open; the fines reach the prints), the DOJ's civil
+  investigative demand (2019-09-06), the DOJ and state suits (2020-10-20, 2020-12-21, 2021-07-08), the notes of 2020-08-05, the officer,
+  director, meeting and bylaw 8-Ks, the derivative settlement (2020-09-25, 2020-10-23), the CFO's corrected misstatement (2021-03-04,
+  Item 7.01) and the FY2018 10-K/A (the auditor's consent only).
+- **Anachronism list:** Fitbit (2020-02-04, the FY2019 10-K) and Google Workspace (2020-10-30, the Q3 2020 10-Q) join
+  `taxonomy_eras.json`; neither is in any model.
+
+Controls and checks (before any outcome):
+- **Controls** (every date from 2017 rebuilt with one real fact altered at a time): 25 of 28 alterations change the models exactly from
+  the first weekly date on or after their publication until a later fact supersedes them, none earlier; 3 are inert by design (the Q4
+  2018-2020 prints' full-year revenue, superseded the same day by their 10-Ks).
+- **Leak scan:** 0 hits in 93,005 (model, later token) pairs over the 209 dates, after dropping 27,937 tokens an earlier fact or the engine
+  carries; as a positive control, 15 to 25 of each latest print's own tokens appear in its model. **Fact scan:** the only hits are the 16
+  prints' `next_print` labels.
+- **`retro_tool run` passes on all 209 dates;** its 5 warnings are prices as traded read as years ($2,035.55 to $2,062.37 in February and
+  March 2021).
+- **Regression:** the 522 dates of 2008-2017 rebuild byte for byte; no file another ticker's builder reads has changed but
+  `taxonomy_eras.json` (two names in no model).
+- **Firewall:** see below (run after the build was committed and pushed, before any outcome).
+
+Seen in the build (method behaviour, not tuned):
+- **RICH on 190 dates, FAIR on 19** (2019-02-06 to 2019-06-28, after the FY2018 print, and 2020-03-13 to 2020-04-24, in the COVID fall);
+  **legacy tier AVOID on 162,** WATCHLIST 44, ACCUMULATE 3 (2020-03-20 to 2020-04-03). Robustness always contains the class and is
+  unanimous on 103 dates.
+- **The anchors and the multiple.** FY16's $27.85 to 2018-01-26 (39.6-42.2x, the 97th-99th percentile); FY17's $18.00 to 2019-02-01
+  ($980-1,264, 54.4-70.2x, the 88th-100th: the Tax Act year as the anchor); FY18's $43.70 to 2020-01-31 ($1,066-1,480, 24.4-33.9x, the
+  50th-90th); FY19's $49.16 to 2021-01-29 ($1,072-1,901, 21.8-38.7x, the 31st-90th); FY20's $58.61 from 2021-02-04 ($2,036-2,999, 34.7-51.2x,
+  the 89th-94th). The window's median is 23.2-26.0x.
+- **The floor** is 19-22x, with the price 9-270% above the EPP: the conservative case (-50.9% to +44.1% over two years) and the gap decide the
+  class, and they read RICH except after the FY2018 print and in the spring of 2020.
+- **BEAR is FY2016-FY2017's -35.4%/yr from 2018-02-02;** XBULL is FY2008-FY2010's +40.6% to the FY2018 10-K, FY2016-FY2018's +25.3% to the
+  FY2019 10-K and FY2017-FY2019's +65.3% after; BULL is BASE's rate on most dates (the decade's EPS CAGR, with FY2017 in it, is below the
+  quarters' growth), so Ratio B is 0.91 to infinite (the price above the BULL case) and the tier AVOID.
+- **BASE follows the quarters:** +20.4-24.7% in 2018, +15.6-20.4% in 2019, +16.4%, +12.4%, -2.6% (Q2 2020, revenue -1.7%) and +13.1% in 2020,
+  +23.0%, +33.9%, +61.1% and +40.5% in 2021.
+- **The proxy composite** is 1.80-1.95 to the Q4 2020 print and 2.15-2.45 from the Q1 2021 print (the gross margin and the receivables
+  gap at BULL, and on Q2 2021 the operating margin and the opex gap too); revenue growth stays at BEAR under the start-up bands even at
+  +61.6%.
+
+How far each call moves the classes (the 209 dates rebuilt with one encoding changed and classified offline; no outcome consulted):
+- FY2017 excluded as a distorted year: 19 classes (11 FAIR to CHEAP, 8 FAIR to RICH, 2019-02-06 to 2020-04-24) and 67 tiers (AVOID and
+  WATCHLIST to BUY, ACCUMULATE or WATCHLIST); FY2017 at the EPS without the listed items ($35.90, a figure no filing publishes): 17
+  classes and 117 tiers. The class rests little on FY2017, the tier a great deal;
+- the EC-fine quarters at GAAP (Q2 2018, Q1 2019 and the year-ago quarters of Q2 2019 and Q1 2020): 1 class (RICH to FAIR, 2019-08-23),
+  no tier;
+- every signal at its BEAR value: 19 classes (FAIR to RICH); at its XBULL value: 31 (24 RICH to FAIR, 7 FAIR to CHEAP); no tier;
+- BULL and XBULL at BASE's rate: 7 classes and 3 tiers;
+- rule T without the 1999-2000 change: 1 class; on the FY2006 10-K's own years: 12 (RICH to FAIR); no tier.
+The RICH class rests on the multiple against the post-2008 window and on the floor; the AVOID tier rests on FY2017 at GAAP.
+
+Judgement calls that could carry hindsight:
+- FY2017 at GAAP by the AAPL test's literal reading, with $69M to spare (67 tiers move if it is excluded, 117 at the EPS without the
+  items); the owner may prefer to treat a year whose listed items are 99.5% of its income as distorted;
+- the EC fines at the company's figures in the quarters that publish them, the year-ago quarters included (1 class);
+- the equity-security gains of 2018 kept in GAAP EPS (their effect is published, a figure without them is not);
+- CLOUD, EV, CRYPTO and the other themes read as out of scope (label only); COVID without a theme;
+- the signals and rule T as in 2008-2009.
+
+The hindsight results are in `staging/retrospective/GOOG/FINDINGS.md`: hypotheses, never inputs.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
