@@ -23,10 +23,10 @@ touching either directory.
   outcomes or findings enters another's models. UNP (2008-2026 so far), LOW (2008-2026 so far), AAPL (2008-2026 so far),
   NKE (2008-2026 so far), AVGO (from its 2009-08-06 listing to 2026-10-30 so far), PEP (2008 to 2026-10-30 so far), MSFT
   (2008 to 2026-10-30 so far), XOM (2008 to 2026-10-30 so far), SHW (2008 to 2026-11-06 so far), WMT (2008 to 2026-11-06 so far), RCL (2008 to 2026-11-06 so far), MAR (2008 to 2026-11-03 so far), BKR (2008 to 2017-06-30, then 2019-02-01 to 2026-11-06 so far), PFE (2008 to 2026-11-04 so far), CMCSA (2008 to 2026-11-06 so far), CAT (2008 to 2026-11-06 so far), BMY (2008 to 2026-11-06 so far), NVDA (2008 to 2026-11-06 so far), F (2008-01-04 to 2026-11-06 so far; 2022-01-07 onward was built first at the owner's request, and dates before 2022 are an early era with its
-  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far) and V (2009-10-29 to 2026-11-13 so far) sit in `staging/retrospective/` until the owner adds
+  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far) and SPGI (2008-01-04 to 2009-12-31 so far) sit in `staging/retrospective/` until the owner adds
   them to the archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM", "SHW", "WMT", "RCL", "MAR", "BKR", "PFE", "CMCSA", "CAT",
-  "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG", "JPM", "V"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py`, `mu_signal_model.py` and `v_signal_model.py` (other branches) files
-  and today's profiles in `data/business_profiles.json` (NVDA's, SO's and V's included) are 2026 analyses: never inputs to a retrospective. AVGO did not trade
+  "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG", "JPM", "V", "SPGI"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py`, `mu_signal_model.py`, `v_signal_model.py` and `spgi_signal_model.py` (other branches) files
+  and today's profiles in `data/business_profiles.json` (NVDA's, SO's, V's and SPGI's included) are 2026 analyses: never inputs to a retrospective. AVGO did not trade
   before its IPO, so its series starts at the listing (the listing and bounds rules of method r2). BKR's 2008 to 2017-06-30 dates are Baker
   Hughes Incorporated, listed as BHI: BKR is only the series key (and Yahoo's symbol for the history); the models print BHI. Its dates from
   2019-02-01 are Baker Hughes, a GE company (BHGE, then BKR), a new listing with its own facts and engine: no date between is built, as
@@ -185,5 +185,16 @@ touching either directory.
   field), so BASE is the latest quarter's revenue growth on every date; litigation provisions stay in the margin; dividends $0.45 to $0.78
   from the Q4 releases; CRYPTO stays on the watch list on each 10-K's words, its factor pair only where a 10-K names Visa's own offering
   (FY2025, FY2026), and GENAI is out of scope; the last date is 2026-11-13 (retro/README.md, "V 2022-2026").
+  SPGI is The McGraw-Hill Companies, Inc., NYSE: MHP, in 2008-2009 (McGraw Hill Financial from 2013, S&P Global from 2016): SPGI is only
+  the series key and Yahoo's symbol, the models print MHP (the BKR encoding), and later McGraw-Hill and S&P names are on the anachronism
+  list. Yahoo's 1057:1000 factor of 2026-07-01 is the Mobility Global distribution, not a split: it follows every built date, so Yahoo's
+  close times it is the price as traded, and the builder refuses later dates until it is encoded (the `distributions` rule). EPS is diluted
+  EPS from continuing operations before the extraordinary item and the cumulative adjustment, from each 10-K's Eleven-Year Financial Review
+  (one basis for eleven years); no filing publishes a figure excluding only one-offs on that basis (the FY1998-FY1999 10-Ks' figures
+  predate the 2003 restatement), so none is adjusted and none excluded, and 2001's restructuring sets BEAR. The guides: FY2007 in words
+  (no field), FY2008 as growth of 3-5% on FY07's $2.94 without the two items the guide excludes ($2.99), then ranges, FY2009 ranges; revenue
+  only by segment for 2007-2008 (components: no total derived, so BASE is the latest quarter's reported growth) and consolidated for 2009;
+  signals Financial Services and Education revenue, revenue, diluted EPS and the segment margin, as reported; DURABLE (the risk factor
+  "Cyclical Nature of Customers' Businesses" is the customers' adoption cycle); no live theme (retro/README.md, "SPGI").
 - **Never use the owner's personal email** in request headers to external
   services (SEC asks for a contact in the User-Agent).

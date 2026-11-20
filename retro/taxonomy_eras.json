@@ -1876,6 +1876,51 @@
     "term": "Gemini 3",
     "first_seen": "2026-02-05",
     "note": "Google's model generation released in November 2025; first in a Google or Alphabet filing in the Q4 2025 earnings 8-K (ex.99.1, accepted 2026-02-04 16:01 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "McGraw-Hill Financial",
+    "first_seen": "2011-02-01",
+    "note": "the McGraw-Hill segment launched with the Q4 2010 results (8-K, ex.99, accepted 2011-02-01 before the open: 'launch of new segment, McGraw-Hill Financial'); earlier EDGAR full-text hits under CIK 64040 are punctuation artifacts, a 1989-1993 biography line ('McGraw-Hill Financial Services Company') and a subsidiary name"
+   },
+   {
+    "term": "McGraw Hill Financial",
+    "first_seen": "2011-02-01",
+    "note": "the company's name from 2013-05-01 (EDGAR's name record), dated with the hyphenated segment name it grew from"
+   },
+   {
+    "term": "S&P Capital IQ",
+    "first_seen": "2011-09-12",
+    "note": "McGraw-Hill's data and analytics brand; first in a filing under CIK 64040 in the 8-K of 2011-09-12 (ex.99.1, 'the newly launched S&P Capital IQ'), EDGAR full-text search"
+   },
+   {
+    "term": "S&P/Dow Jones Indices",
+    "first_seen": "2011-11-04",
+    "note": "the index joint venture announced in the 8-K of 2011-11-04 (ex.99.1), EDGAR full-text search"
+   },
+   {
+    "term": "S&P Dow Jones Indices",
+    "first_seen": "2011-11-04",
+    "note": "the same joint venture's later spelling, dated with its first announcement (8-K of 2011-11-04)"
+   },
+   {
+    "term": "S&P Global Market Intelligence",
+    "first_seen": "2016-02-26",
+    "note": "first in a filing under CIK 64040 in the 8-K of 2016-02-26 (ex.99), EDGAR full-text search"
+   },
+   {
+    "term": "S&P Global Inc",
+    "first_seen": "2016-03-04",
+    "note": "McGraw Hill Financial's new name (effective 2016-04-28), first in the PRE 14A of 2016-03-04, EDGAR full-text search"
+   },
+   {
+    "term": "S&P Global Ratings",
+    "first_seen": "2016-06-29",
+    "note": "first in a filing under CIK 64040 in the S-3 of 2016-06-29, EDGAR full-text search"
+   },
+   {
+    "term": "Mobility Global",
+    "first_seen": "2026-03-31",
+    "note": "S&P Global's mobility business, distributed on 2026-07-01; first in a filing under CIK 64040 in the DEF 14A of 2026-03-31, EDGAR full-text search"
    }
   ]
  }
