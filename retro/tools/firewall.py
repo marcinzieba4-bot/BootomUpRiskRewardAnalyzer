@@ -112,7 +112,8 @@ revenues, net-to-gross share, margins, opex and receivables gaps, quarter EPS, c
 (range and words) are absurd, with absurd full-year actuals for the year after the latest vintage before CUTOFF, a later Q4 print whose
 full-year actuals exclude its own year, and a later vintage excluding a year and readmitting the distorted first year, with planted
 texts, figures, listing, exchange and window start (the guide, dividend, listing, split and company name every fact sheet with those
-lists gets, too); GOOG: a print whose revenues, margins, opex and receivables gaps, quarter EPS, cash,
+lists gets, too), and from V 2014-2017 planted operating one-offs for the opex signal and a planted guide's currency effect, nominal
+range and aside; GOOG: a print whose revenues, margins, opex and receivables gaps, quarter EPS, cash,
 notes and raw figures are absurd, with absurd full-year actuals for the year after the latest vintage before CUTOFF, a later Q4 print
 whose full-year actuals exclude its own year, a later 10-Q restatement of the last print before CUTOFF with absurd figures, and a later
 vintage excluding a year with planted texts, figures, outlook words, exchange and window start, every per-share figure on a planted
@@ -317,7 +318,8 @@ PLANT = {"ACN": dict(quarter="Q9 FY99", revenue_lc=-60, margin_bp=-999, fy_eps_g
                    cash_return_text="PLANTED", note="PLANTED", extra_sources=[],
                    raw=dict(sales_m=1, sales_prior_m=99, sales_prev_q_m=99, gross_m=99, gross_prior_m=1, opex_m=99, opex_prior_m=1,
                             litigation_m=0, litigation_prior_m=0, op_income_m=-99, op_income_prior_m=99, receivables_m=99,
-                            receivables_prior_m=1, op_one_off_m=-99, op_one_off_prior_m=99)),
+                            receivables_prior_m=1, op_one_off_m=-99, op_one_off_prior_m=99, opex_one_off_m=-99,
+                            opex_one_off_prior_m=99)),
          "GOOG": dict(quarter="Q1 2099", fy=2099, q=1, release="PLANTED", release_time="PLANTED", period_end="PLANTED", sales_b=0.01,
                       sales_pct=-60.0, seq_pct=-60.0, gross_margin=1.0, gross_margin_bp=-999.0, op_margin=-50.0, op_margin_bp=-999.0,
                       opex_pct=99.0, opex_gap_pp=99.0, receivables_b=99.0, receivables_pct=99.0, receivables_gap_pp=99.0, eps_q=0.01,
@@ -761,8 +763,10 @@ try:
         last.pop("guide", None)
         # (V 2010-2013) a planted guide for the year after the planted actuals and for every year guided before CUTOFF, every field in
         # numbers (revenue range, EPS growth, margin) and in words; the planted actuals restate every earlier year's EPS, revenue and shares
+        # (V 2014-2017) with a planted currency effect, a nominal range that converts to it and an aside
         last["guides"] = [{"fy": y, "revenue_growth": [-50, -40], "revenue_words": "PLANTED", "eps_growth": -99.0, "eps_words": "PLANTED",
-                           "margin": 1.0, "margin_words": "PLANTED", "note": "PLANTED"}
+                           "margin": 1.0, "margin_words": "PLANTED", "note": "PLANTED", "revenue_nominal": [-52, -43],
+                           "revenue_fx": [-2.0, -3.0], "revenue_basis": "PLANTED", "revenue_aside": "PLANTED"}
                           for y in sorted({y0 + 1} | {g["fy"] for p_ in f["prints"] if p_["published"] < cutoff
                                                       for g in (p_.get("guides") or ([p_["guide"]] if p_.get("guide") else []))})]
         fa["restates"] = {"eps_normalized": {y: 0.01 for y in v0["eps_normalized"]}, "revenue_usd_b": {y: 0.01 for y in v0["revenue_usd_b"]},

@@ -23,7 +23,7 @@ touching either directory.
   outcomes or findings enters another's models. UNP (2008-2026 so far), LOW (2008-2026 so far), AAPL (2008-2026 so far),
   NKE (2008-2026 so far), AVGO (from its 2009-08-06 listing to 2026-10-30 so far), PEP (2008 to 2026-10-30 so far), MSFT
   (2008 to 2026-10-30 so far), XOM (2008 to 2026-10-30 so far), SHW (2008 to 2026-11-06 so far), WMT (2008 to 2026-11-06 so far), RCL (2008 to 2026-11-06 so far), MAR (2008 to 2026-11-03 so far), BKR (2008 to 2017-06-30, then 2019-02-01 to 2026-11-06 so far), PFE (2008 to 2026-11-04 so far), CMCSA (2008 to 2026-11-06 so far), CAT (2008 to 2026-11-06 so far), BMY (2008 to 2026-11-06 so far), NVDA (2008 to 2026-11-06 so far), F (2008-01-04 to 2026-11-06 so far; 2022-01-07 onward was built first at the owner's request, and dates before 2022 are an early era with its
-  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far) and V (2009-10-29 to 2013-12-31 so far) sit in `staging/retrospective/` until the owner adds
+  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far) and V (2009-10-29 to 2017-12-29 so far) sit in `staging/retrospective/` until the owner adds
   them to the archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM", "SHW", "WMT", "RCL", "MAR", "BKR", "PFE", "CMCSA", "CAT",
   "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG", "JPM", "V"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py`, `mu_signal_model.py` and `v_signal_model.py` (other branches) files
   and today's profiles in `data/business_profiles.json` (NVDA's, SO's and V's included) are 2026 analyses: never inputs to a retrospective. AVGO did not trade
@@ -158,6 +158,15 @@ touching either directory.
   a guided step; EPS "Around 20%" for FY2013 from Q2 FY13, $7.44 on FY12's $6.20, bounds and words otherwise no field); Q3 FY12's
   operating margin excludes the provision as the release does (`op_one_off_m`, year-ago quarters included); the fiscal 2011 net
   presentation and CyberSource are in the growth rates as published; FY2008's exclusion still moves 78 of the 209 classes
-  (retro/README.md, "V 2010-2013").
+  (retro/README.md, "V 2010-2013"). From 2014: the four-for-one split is effective on Yahoo's split date, 2015-03-19 (`splits`, the GOOG
+  and NVDA basis helper), each history figure on the basis of its own filing (the Q4 FY15 release restates FY14 to $2.27); EPS is the
+  company's figure excluding only one-offs every year (FY14 $9.07, FY15 $2.62, FY16 $2.84, FY17 $3.48: the covered-litigation provision,
+  the put-option revaluations, the Visa Europe acquisition items, severance and tax remeasurements, the deferred tax elimination and the
+  charitable contribution); revenue ranges in constant dollars feed BASE with their stated currency effect in the bridge only
+  (`revenue_fx`; FY2014 10-11% then 9-10%, FY2016 7-8%, the Q3 FY16 Europe increment in the note), nominal ranges convert by their stated
+  currency effect (`revenue_nominal`; FY2017 17.0-19.5%, 18.0-20.5%, 22%), the EPS ranges and levels are numbers (FY2014 17.5-18.5% at its
+  midpoint, FY2017 "approximately 20%" on the adjusted $2.84); the opex signal leaves out the operating one-offs the releases' adjusted
+  expenses exclude (`opex_one_off_m`); Visa Europe is in the prints as published from Q4 FY16; RICH on all 208 dates (retro/README.md,
+  "V 2014-2017").
 - **Never use the owner's personal email** in request headers to external
   services (SEC asks for a contact in the User-Agent).

@@ -21071,7 +21071,7 @@ Judgement calls that could carry hindsight:
 
 The hindsight results are in `staging/retrospective/JPM/FINDINGS.md`: hypotheses, never inputs.
 
-## V (Visa): the twenty-eighth ticker, in staging, 2008-2013 (from the Q4 FY09 print)
+## V (Visa): the twenty-eighth ticker, in staging, 2008-2017 (from the Q4 FY09 print)
 
 The V series is built apart from the other twenty-seven and shares nothing with them but the machinery: its own fact sheet
 (`retro/facts/V.json`), builder (`retro/build_v.py`, the GOOG builder with Visa's September fiscal year, figures in millions, a fiscal-year
@@ -21413,6 +21413,189 @@ Judgement calls that could carry hindsight:
 - the parts of the filings listed above as not read: a guide in an unread exhibit would be missed.
 
 The hindsight results are in `staging/retrospective/V/FINDINGS.md` ("2010-2013"): hypotheses, never inputs.
+
+### V 2014-2017: the four-for-one split, the company's figures through Visa Europe, constant and nominal revenue ranges, two EPS guides in numbers, RICH throughout
+
+**What the owner asked for and what was built.** On 2026-11-20 the owner asked for V 2014-2017 on the same rules ("find newest code"):
+the newest branch of the repository was `claude/intelligent-cray-ayfofl` (its last commit "V retrospective: hindsight outcomes and
+findings for 2010-2013", 2026-11-20 06:07 UTC), and this session's branch was its ancestor, so it was fast-forwarded to it. All 208
+weekly dates were built, 2014-01-10 to 2017-12-29, from the same fact sheet, builder and engine (thresholds unchanged: rule T over the
+decade of the FY2008 10-K). The range starts on the Monday after the last built week (2013-12-31 is the date of the ISO week of 2014-01-01;
+the README's "Adding dates" step 7): a first build from 2014-01-01 also made 2014-01-03, which was deleted before any outcome. The 219
+models of 2009-2013 rebuild byte-identical.
+
+```bash
+python3 retro/build_v.py --weekly 2014-01-06 2017-12-31                     # 208 dates, 2014-01-10 .. 2017-12-29
+for c in 2014-01-30 2014-04-25 2014-07-25 2014-10-23 2014-10-30 2014-11-21 2015-01-30 2015-03-19 2015-05-01 2015-07-24 2015-10-22 \
+         2015-11-02 2015-11-20 2016-01-29 2016-04-22 2016-07-22 2016-10-19 2016-10-25 2016-11-16 2017-02-03 2017-04-21 2017-07-21 \
+         2017-10-19 2017-10-25 2017-11-17 2018-01-01; do python3 retro/tools/firewall.py $c V; done
+```
+
+Read, by the session's model directly with no delegated transcription: the sixteen earnings releases of Q1 FY14 to Q4 FY17 (exhibit 99.1:
+the headline bullets and highlights, the statements of operations and balance sheets, the outlook, the reconciliations of the company's
+adjusted figures), the twelve 10-Qs of fiscal 2014-2017 and the three of fiscal 2013 (each one's statement and receivables rows, compared
+by script with its release), the FY2014-FY2017 10-Ks (selected data, the statements of operations, cash flows and balance sheets, the
+MD&A's adjusted results and tax tables, Items 1, 1A and 5 by the sentences quoted), the Q4 FY13 release (for Q1 FY14's previous-quarter
+revenue), the four dividend 8-Ks that first state a new rate, and every other 8-K of December 2013 to January 2018 by its items and
+opening text; the Visa Europe press release and presentation of 2015-11-02 were searched for outlook figures. **Not read:** the releases'
+presentations (exhibit 99.2), the operational performance supplements beyond the sentences quoted, the 10-Qs and 10-Ks beyond the rows
+and sentences named, the Visa Europe financial statements and pro forma information (8-Ks of 2015-12-02, 2016-09-02 and 2017-05-31:
+nothing pro forma is used), and the exhibits of the debt, agreement, charter, officer, director and trading-plan 8-Ks. The fact sheet is
+extended by a third script: each figure is read from its labelled row and column (the row is kept and asserted present in its own
+filing), every value is computed, and four cross-checks run: the revenue lines sum to each total; each 10-Q matches its release on
+revenue, operating expenses, operating income and receivables (all twelve do: no 10-Q restatement); each 10-K vintage matches its Q4
+print on the year it adds (EPS, revenue, diluted shares, operating and pre-tax margins, tax rate); and every nominal revenue range
+converts to its constant-dollar range. 530 strings were checked with `verbatim.py` against their own filings (530/530). Source ids: `V64`-
+`V67` (the 10-Ks), `V74`-`V77` (the dividend 8-Ks), `V80`-`V95` (the releases), `V100`-`V111` (the 10-Qs). Decided on 2026-11-20, before
+any 2014-2017 model was built or any outcome of these dates computed:
+
+- **Release timing.** Thirteen releases were accepted after the close (16:08-16:32 ET; the call at 5:00 p.m. ET) and are dated the next
+  trading day. Three were accepted before the open: Q1 FY14 (2014-01-30 07:07 ET; "live audio webcast beginning at 8:30 a.m. Eastern
+  Time"), Q4 FY15 (2015-11-02 06:16 ET, with the Visa Europe agreement; the call at 8:00 a.m. ET) and Q4 FY17 (2017-10-25 06:03 ET; the call
+  at 8:00 a.m. ET): each is dated its own day and, by the weekly rule, its date is the next trading day (2014-01-31, 2015-11-03,
+  2017-10-26). The 10-Ks were accepted after the close (2014-11-20 18:57, 2015-11-19 18:24, 2016-11-15 16:44 and 2017-11-16 20:07 ET) and are
+  dated 2014-11-21, 2015-11-20, 2016-11-16 and 2017-11-17. A Q4 print extends the history to its 10-K: 3, 2, 3 and 3 dates.
+- **The four-for-one split** (`splits`, the first V split encoding): "Also, on January 28, 2015, Visa’s board of directors declared a
+  four-for-one split of its class A common stock." and "Trading will begin on a split-adjusted basis on March 19, 2015." (the Q1 FY15
+  release, V84, dated 2015-01-30). It is effective on Yahoo's split date, 2015-03-19, the first split-adjusted trading day (the builder
+  asserts the match). From that date every per-share fact whose filing predates the split is divided by four and every share count
+  multiplied by four (`on_basis`, the NVDA and GOOG helper), each history figure on the basis of the filing it comes from: FY13 is $1.8975
+  ($7.59 / 4) until the FY2015 10-K's $1.90, FY12's $6.20 becomes $1.55, and the $0.48 dividend $0.12 a quarter. The Q4 FY15 release
+  reports FY2014 at $2.27 and 2,523M diluted shares on the new basis, so it restates FY14 from its own date (`restates`, the V 2010-2013
+  encoding; $2.2675 and 2,524M before). The P/E series is unchanged by the split (price and EPS move together), and before 2015-03-19 every
+  price is the close as traded. The 8-K of 2015-04-23 declares the same rate on the new basis ($0.12) and adds nothing.
+- **EPS: the company's figure excluding only one-offs, where published** (the ACN rule, as from fiscal 2010):
+  - FY2014 $9.07 (GAAP $8.62): without the $450M covered-litigation provision ("Adjusted full-year 2014 net income of $5.7 billion or $9.07
+    per diluted class A common share, excluding special item"), as FY2012's provision was read.
+  - FY2015 $2.62 (GAAP $2.58): without the $110M non-cash, non-operating revaluation of the Visa Europe put option (not taxed), as
+    FY2010's and FY2011's revaluations were read.
+  - FY2016 $2.84 (GAAP $2.48): without the Visa Europe Framework Agreement loss ($1,877M), the acquisition-related costs ($152M: transaction
+    expenses and U.K. stamp duty), severance ($110M), the remeasurement of a deferred tax liability for the U.K. rate change ($88M gain),
+    net gains on currency forward contracts ($74M), the foreign exchange gain on euro deposits ($145M) and the put option revaluation
+    ($255M gain). Each is non-recurring by the company's account and none removes a recurring item the way FY2008's step-up amortization
+    did; severance is the closest call (the 10-K: "Although we routinely record severance expenses", this charge was excluded for its
+    size; it includes planned reductions at Visa Europe).
+  - FY2017 $3.48 (GAAP $2.80): without the $1,515M elimination of deferred tax balances in the Visa Europe legal entity reorganization and
+    the $192M non-cash charitable contribution of Visa shares to the Visa Foundation.
+  - Tax benefits the company keeps in its figures stay in (FY14's $191M of prior-year domestic production deductions, FY15's $296M from
+    resolving uncertain tax positions). FY2013 is GAAP ($7.59, $1.90 on the split basis). No year is distorted at the company's figure.
+- **The 10-K vintages:** each year from the latest filing that reports it: revenue and GAAP years from the five-year selected data, the
+  company's figures from the MD&A's three-year adjusted table, diluted shares from the statements of operations (three years). FY10's and
+  FY11's figures stay those of the FY2011 and FY2012 10-Ks, FY12's that of the FY2014 10-K and FY09 that of the FY2013 10-K. Diluted class A
+  shares are as converted, with the series B and C preferred from fiscal 2016 as the releases and 10-Ks state; nothing is made pro forma.
+- **The outlook, field by field** (each field from the latest print that gives it in numbers; the ACN and LOW words rules, "about",
+  "around" and "approximately" levels as numbers, words and one-sided bounds no field, as in 2010-2013):
+  - **Revenue, constant dollars.** FY2014: "Low double-digits on a constant dollar basis" (Q4 FY13, Q1 FY14: words), then "Low double-digit
+    constant revenue growth in the 10-11% range" (Q2 FY14) and "Constant revenue growth in the 9-10% range" (Q3 FY14), each "with an
+    expectation of two percentage points of negative foreign currency impact". Method r2 takes the guide in local currency, so the
+    constant-dollar range feeds BASE and the growth factor; its stated currency effect enters only the fiscal-year revenues of the
+    segment bridge (`revenue_fx`; r2: "No FX guide: FY revenue is LC growth only"). FY2015: "low double digits" in every print, words, so
+    BASE takes each quarter's revenue growth (the UNP rule). FY2016: "High single-digit to low double-digit range" (Q4 FY15, Q1 FY16: words),
+    then "7% to 8% range on a constant dollar basis" with about three points of negative currency (Q2 FY16), and in the Q3 FY16 outlook
+    table "7% to 8% range on a constant dollar basis (excluding Europe)" with "Incremental 3 to 4 ppts from Europe in fiscal full-year":
+    the published range stands and the Europe increment goes in the note (the ACN rule for a revenue guide given with and without an
+    item). FY2018: "high single digits on a nominal dollar basis" (Q4 FY17: words).
+  - **Revenue, nominal dollars** (FY2017). "16% to 18% range on a nominal dollar basis, including 1.0 to 1.5 ppts of negative foreign
+    currency impact" (Q4 FY16), "including 2.0 to 2.5 ppts" (Q1 FY17), "High end of 16% to 18% range" (Q2 FY17: words keep the range) and
+    "Approximately 20% on a nominal dollar basis, including approximately 2.0 ppts" (Q3 FY17). Reported growth less the stated currency
+    effect is growth in constant dollars (the NKE rule, as for PEP's fiscal 2026 guide), end by end: 17.0-19.5%, 18.0-20.5% and 22%
+    (`revenue_nominal`, `revenue_fx`; the builder re-derives the conversion and refuses a mismatch). Visa Europe is in these ranges as
+    published.
+  - **EPS.** FY2014 "17.5-18.5% range" (Q3 FY14): its 18.0% midpoint (the WMT midpoint rule) on FY13's $7.59 gives FY14E $8.96. FY2017
+    "approximately 20% on an adjusted, non-GAAP nominal dollar basis" (Q3 FY17), "derived from adjusted full-year 2016 earnings per share
+    results of $2.84", the history's basis: FY17E $3.41 (the NKE rule). Every other EPS outlook is words ("Mid to high teens", "Mid teens",
+    "Low-end of the mid-teens range", "Low double-digits", "mid-teens", "high end of mid-teens"; the GAAP words "Low 30s", "High
+    single-digits", "Mid-40's"), so the last full year's EPS stands.
+  - **Operating margin:** words in every print ("Low 60s", "Low to mid 60s", "Mid 60s", "Low-to-mid 50s" GAAP, "High 60s"): no margin step,
+    and the margin signal is the latest quarter's change. The incentive, tax, free cash flow and operating-expense outlooks have no input.
+- **Operating one-offs** (the ACN rule, year-ago quarters included): the operating margin excludes Q4 FY14's $450M provision, Q3 FY16's
+  $2,029M (the Framework Agreement loss and the acquisition-related costs), Q4 FY16's $110M severance and Q2 FY17's $192M contribution
+  (`op_one_off_m`), as the releases' adjusted figures do. The opex signal, which already leaves out the litigation line, also leaves out
+  the three outside it (`opex_one_off_m`, `opex_one_off_prior_m`: new fields, absent on every earlier print), so it measures the releases'
+  adjusted operating expenses (Q3 FY16 $1,173M, Q2 FY17 $1,477M).
+- **Visa Europe** (acquired 2016-06-21: €12.2 billion of cash, preferred stock convertible into 78.7M class A shares and €1.0 billion due in
+  three years) is in the prints as published from Q4 FY16 (acquisitions in, the JPM rule); Q3 FY16's results exclude it ("The Company did
+  not include Visa Europe’s financial results from June 21, 2016 through June 30, 2016 ..."), but its balance sheet includes it, so Q3 FY16's
+  receivables (+19.5% against revenue +3.2%) carry a seam. The $16.0 billion of notes of December 2015 appear in the debt note (display).
+- **Dividends:** $0.48 from the 8-K of 2014-10-22 (after the close; 2014-10-23), $0.14 from 2015-10-21 (the split basis; 2015-10-22), $0.165
+  from 2016-10-18 (2016-10-19), $0.195 from 2017-10-18 (2017-10-19). The other dividend 8-Ks repeat the rate.
+- **Durability: DURABLE, no live theme.** No 10-K calls the business cyclical; the competition sentence becomes "We face intense
+  competition in our industry." from the FY2015 10-K. ECOMMERCE (live from 2015-01-01) is scoped to physical retail, malls, grocery and
+  distribution, not a payments network whose card-not-present volume it carries; STREAMING, ENERGY_TRANSITION and CLOUD are out of scope;
+  no other theme is live.
+- **Adds nothing:** the 8-Ks of payments-volume data for conferences (2014-03-05, 2015-06-10, 2016-05-21), the escrow deposit and class B
+  conversion-rate 8-Ks (2014-09-11, 2014-09-24; the deposit is in the diluted shares as published), the charter amendments enabling the
+  split (2015-01-29, 2015-02-27), the Visa Europe agreement, amendment, approval and closing (2015-11-02, 2016-04-21, 2016-05-10, 2016-06-03,
+  2016-06-21: the deal presentation states EPS accretion in words, "in the low single-digit percentage point range", a component of EPS
+  rather than a fiscal-year guide), the Visa Europe statements and pro forma information, the debt offerings and redemption (2015-12-09,
+  2015-12-14, 2017-09-11), the share repurchase programs, and the officer, director, annual-meeting, bylaw and trading-plan 8-Ks.
+
+Controls and checks (before any outcome of these dates):
+- **`retro_tool run` passes on all 208 dates.** Its only warnings, on 17 dates (2016-10-07 to 2017-01-27), are the P/E window's count of
+  trading days in a comment (2,020 to 2,096, read as years; the NVDA precedent). The first build failed two checks, fixed before any outcome:
+  the FY2015 vintage's normalization note said "from fiscal 2016 the series B and C preferred", a later fact in a 2015 text (the year
+  warning on 2015-11-20 caught it; the clause is now in the FY2016 and FY2017 vintages only), and a rule cited as "the PEP 2026 and NKE rule"
+  put a later year into the models (now "the NKE rule").
+- **Controls:** altering one value of each new print (its quarter EPS, its revenue, its fiscal-year guide, each Q4 print's full-year EPS),
+  each new vintage (its last year's EPS and its free cash flow), each new dividend and the split's ratio changes no model dated before its
+  publication: 65 controls, 0 early, and each first changes the first built date on or after it (the split from 2015-03-20).
+- **Leak scan:** 1 hit in 296,088 (model, later token) pairs over the 427 V models, after dropping 38,122 pairs an earlier fact or the
+  engine already carries: the 2010-03-05 close, $88.51 as traded, which is also Q2 FY17's average repurchase price (a coincidence; that
+  model is byte-identical to the one committed before these facts existed). As a positive control, 15 to 44 of each latest print's own
+  tokens appear in its model.
+- **Regression:** the 219 models of 2009-2013 rebuild byte-identical; rebuilding GOOG's and JPM's 2014-2017 dates changes nothing. The
+  shared code is untouched but the firewall tool's V entry (planted operating one-offs for the opex signal, and a planted guide's
+  currency effect, nominal range and aside; the generic split plant now reaches V, whose fact sheet has a `splits` list).
+- **Index:** `index.json` gains the 208 V rows; no other row changes.
+
+Seen in the build (method behaviour, not tuned):
+- **RICH on all 208 dates; legacy tier AVOID 148, WATCHLIST 45, ACCUMULATE 8, BUY 7.** Robustness agrees with the class on 184. By year:
+  2014 AVOID 27, WATCHLIST 10, ACCUMULATE 7, BUY 7 (51 dates); 2015 AVOID on all 53; 2016 AVOID 29, WATCHLIST 22, ACCUMULATE 1; 2017 AVOID 39,
+  WATCHLIST 13.
+- **The multiple sits at the top of its own window.** The stock is 22.9-30.6x the current year's EPS in 2014, 28.1-34.2x in 2015,
+  26.7-31.6x in 2016 and 28.6-34.1x in 2017: the 77th-100th percentile in 2014 and the 87th-100th after, against a window median of
+  19.2-22.4x. The window still starts on 2008-10-01, so its calendar-year lows (15.0x 2008, 13.7x 2009, 13.4x 2010, 13.6x 2011, 16.0x 2012)
+  set the EPP floor at 15-17x, and the price is 53-128% above it.
+- **The scenarios.** BEAR is flat throughout (no year of FY2009-FY2017 has an EPS decline at the company's figures). BULL is the
+  FY09-to-latest CAGR, +20.7-25.3%/yr, and XBULL FY09 to FY11's run, +26.9%/yr. BASE is +12.4-14.6% in 2014 (the 10-11% and 9-10% ranges
+  from Q2 FY14), +11.0-15.3% in 2015 (the latest quarter's growth), +9.0-21.6% in 2016 and +16.9-25.3% in 2017 (the FY2017 constant-dollar
+  ranges, then the latest quarter, +13.9%, for FY2018).
+- **The EPS guides move the tiers, not the class:** the Q3 FY14 range (FY14E $8.96) brings ACCUMULATE and BUY on 14 dates of July to October
+  2014; the Q3 FY17 "approximately 20%" (FY17E $3.41) brings WATCHLIST from 2017-07-21.
+
+How far each call moves the classes (the 208 dates rebuilt with one encoding changed and classified offline; no outcome consulted):
+- the signals at their XBULL values: 149 classes (84 RICH to CHEAP, 65 RICH to FAIR) and 99 tiers (to BUY); at their BEAR values: none.
+  The signals and their 2002-2008 thresholds remain the main swing;
+- the opex signal without the new one-off field (GAAP operating expenses less the litigation line): 4 classes (RICH to FAIR, on the Q3 FY17
+  dates, whose year-ago quarter carries the Framework Agreement loss), no tier;
+- FY2008 in the history (the company's $2.25, the window from the listing): 1 class (RICH to FAIR) and 41 tiers (toward WATCHLIST and
+  ACCUMULATE): by 2014 the 2008-2009 call has faded;
+- GAAP every year (FY14 $8.62, FY15 $2.58, FY16 $2.48, FY17 $2.80, FY2012 excluded as distorted, the FY2017 adjusted guide unused): no
+  class, 27 tiers (24 WATCHLIST to AVOID); FY2014 alone at GAAP (the covered-litigation provision read as recurring, as Visa recorded such
+  provisions in fiscal 2003, 2007, 2008, 2012 and 2014): no class, 7 tiers; FY2016 alone at GAAP (the severance read as recurring): no class,
+  23 tiers;
+- the "17.5-18.5%" and "approximately 20%" EPS guides and the "Approximately 20%" revenue level read as words: no class, 24 tiers (the 14
+  ACCUMULATE and BUY dates of 2014 among them);
+- the FY2017 nominal ranges used as published, without the currency conversion: no class, 11 tiers;
+- Q3 FY16's revenue guide with the Europe increment (10-12%): no class, no tier;
+- the operating one-offs left in the operating margin: no class, no tier.
+
+Judgement calls that could carry hindsight:
+- the signals, chosen in 2026 by a builder who knows what followed, with their 2002-2008 thresholds: the largest swing (149 classes at the
+  XBULL extreme), and the new opex one-off field (4 classes);
+- the company's adjusted figures read as excluding only one-offs: the covered-litigation provision (recorded in several years), the
+  severance charge (routine in kind, excluded for its size) and the Visa Europe items; 7 to 27 tiers, no class;
+- the EPS ranges and "approximately" levels read as numbers, the FY2014 range at its midpoint (24 tiers the other way);
+- the nominal ranges converted with their stated currency effect (11 tiers), and the constant-dollar ranges used for BASE with the
+  currency effect applied to the bridge's revenues only;
+- the Q3 FY16 revenue range kept without the Europe increment (nothing moves);
+- the split dated on Yahoo's split date and each history figure kept on the basis of its own filing (rounding only: FY13 $1.8975 against
+  the later $1.90);
+- FY2008 excluded (the 2008-2009 call, unchanged): 1 class and 41 tiers here;
+- DURABLE rather than CYCLICAL, and ECOMMERCE read as out of scope for a payments network (label only);
+- the parts of the filings listed above as not read: a guide in an unread exhibit would be missed.
+
+The hindsight results are in `staging/retrospective/V/FINDINGS.md` ("2014-2017"): hypotheses, never inputs.
 
 ## Categories change with the era
 

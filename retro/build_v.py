@@ -35,10 +35,17 @@ Visa's fiscal year ends on September 30 (FY2009 = 2008-10-01 to 2009-09-30). The
     restates it from its own date ('restates' on the full-year actuals: FY2009's diluted shares under the participating-securities
     rule); an operating one-off the release excludes is added back to the margin ('op_one_off_m', 'op_one_off_prior_m': Q3 FY12's
     covered-litigation provision, and Q3 FY13's year-ago quarter).
+  - (V 2014-2017) the four-for-one split of 2015-03-19 ('splits', effective on Yahoo's split date, the first split-adjusted trading
+    day): every per-share fact on the AS_OF share basis, each history figure on the basis of the filing it comes from (the GOOG and
+    NVDA helper, on_basis); a revenue range stated in constant dollars keeps its stated currency effect for the fiscal-year revenues
+    only ('revenue_fx'), and one stated in nominal dollars with its currency effect is converted, nominal less the stated effect
+    ('revenue_nominal'; the NKE rule, as for PEP); the operating one-offs a release's adjusted operating expenses exclude outside the
+    litigation line leave the opex signal too ('opex_one_off_m', 'opex_one_off_prior_m': Q3 FY16's Framework Agreement loss and
+    acquisition costs, Q4 FY16's severance, Q2 FY17's charitable contribution, and their year-ago quarters).
 The kind is DURABLE: the 10-Ks tie results to spending and the economy but do not call the business cyclical (the LOW, SHW and JPM
 reading). No disruption theme in taxonomy_eras.json is live for a payments network in 2008-2009 so the
-builder refuses events until a theme encoding is decided, and it refuses separate guides, listings, splits, company names and 10-Q
-restatements until their encodings are decided.
+builder refuses events until a theme encoding is decided, and it refuses separate guides, listings, company names and 10-Q
+restatements until their encodings are decided (splits: V 2014-2017, above).
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
 is the first trading day after it. Visa released after the close, so a print is dated the next trading day (public before its open)
@@ -49,10 +56,12 @@ Output goes to staging/retrospective/V until the series is added to the archive 
 Usage
   python3 retro/build_v.py --weekly 2009-10-26 2009-12-31
   python3 retro/build_v.py --weekly 2010-01-01 2013-12-31
+  python3 retro/build_v.py --weekly 2014-01-01 2017-12-31
   python3 retro/build_v.py 2009-11-06
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/V/<AS_OF>
 """
 import argparse
+import copy
 import datetime as dt
 import json
 import math
@@ -129,6 +138,9 @@ def derived(r):
     om = (r["op_income_m"] + r.get("op_one_off_m", 0)) / r["sales_m"] * 100
     om0 = (r["op_income_prior_m"] + r.get("op_one_off_prior_m", 0)) / r["sales_prior_m"] * 100
     ox, ox0 = r["opex_m"] - r["litigation_m"], r["opex_prior_m"] - r["litigation_prior_m"]
+    # (V 2014-2017) operating one-offs outside the litigation line that the release's adjusted operating expenses exclude
+    if "opex_one_off_m" in r or "opex_one_off_prior_m" in r:
+        ox, ox0 = ox - r.get("opex_one_off_m", 0), ox0 - r.get("opex_one_off_prior_m", 0)
     return dict(sales_pct=r1(pct(r["sales_prior_m"], r["sales_m"])), seq_pct=r1(pct(r["sales_prev_q_m"], r["sales_m"])),
                 net_to_gross=round(nt + 0.0, 2), net_to_gross_bp=r1((nt - nt0) * 100), op_margin=round(om + 0.0, 2),
                 op_margin_bp=r1((om - om0) * 100), opex_pct=r1(pct(ox0, ox)), opex_gap_pp=r1(pct(ox0, ox) - pct(r["sales_prior_m"], r["sales_m"])),
@@ -142,6 +154,55 @@ def check_print(p):
         assert p[k] == v, (p["quarter"], k, p[k], v)
 
 
+def on_basis(facts, as_of):
+    """(V 2014-2017) The fact sheet with every per-share fact on the AS_OF share basis: a split effective on or before AS_OF divides
+    per-share values whose share basis predates it and multiplies share counts by it (the NVDA and GOOG helper). A history figure's basis
+    is the date of the filing it comes from (each year from the latest filing that reports it: 'eps_sources', 'shares_sources'); a
+    print's is its own date. Visa's one split in scope is the four-for-one split of 2015-03-19: before it this is the identity."""
+    splits = [s for s in facts.get("splits", []) if s["effective"] <= as_of]
+    if not splits:
+        return facts, []
+    f = copy.deepcopy(facts)
+    k = lambda basis: math.prod(s["ratio"] for s in splits if basis < s["effective"])
+    pub = lambda v, kind, y: (f["sources"][v[kind][y]]["published"] if y in v.get(kind, {}) else v["published"])
+    note = lambda r: "; ".join(f"per share ÷{s['ratio']:g} and share counts ×{s['ratio']:g} for the split effective {s['effective']} "
+                               f"({s['source']})" for s in splits if r > 1)
+    for v in f["history_vintages"]:
+        eb = lambda y: pub(v, "eps_sources", y)
+        sb = lambda y: pub(v, "shares_sources", y)
+        v["eps_normalized"] = {y: e / k(eb(y)) for y, e in v["eps_normalized"].items()}
+        v["diluted_shares_m"] = {y: n * k(sb(y)) for y, n in v["diluted_shares_m"].items()}
+        notes = []
+        for s in splits:
+            restated = [y for y in sorted(v["eps_normalized"]) if eb(y) < s["effective"]]
+            if restated:
+                notes.append(f"per share ÷{s['ratio']:g} for the split effective {s['effective']} ({s['source']}) on "
+                             f"FY{restated[0][2:]}-FY{restated[-1][2:]}")
+        v["split_note"] = "; ".join(notes)
+    for p in f["prints"]:
+        r = k(p["published"])
+        for key in ("eps_q", "eps_q_prior"):
+            p[key] = p[key] / r
+        p["diluted_shares_m"] = p["diluted_shares_m"] * r
+        a = p.get("fy_actual")
+        if a:
+            if a["eps_normalized"] is not None:
+                a["eps_normalized"] /= r
+            if a["diluted_shares_m"] is not None:
+                a["diluted_shares_m"] *= r
+            for kind, op in (("eps_normalized", lambda x: x / r), ("diluted_shares_m", lambda x: x * r)):
+                if kind in a.get("restates", {}):
+                    a["restates"][kind] = {y: op(x) for y, x in a["restates"][kind].items()}
+        if r > 1:
+            p["split_note"] = f"the print's own figures, {note(r)}"
+    for d in f.get("dividends", []):
+        r = k(d["published"])
+        d["quarterly"] /= r
+        if r > 1:
+            d["note"] = f"{d['note']}; ${d['quarterly']:g} a quarter on the split basis ({note(r)})"
+    return f, [s["source"] for s in splits]
+
+
 def _usd_b(x):
     return f"${x:.3f}B" if x >= 0 else f"$({-x:.3f})B"
 
@@ -152,15 +213,23 @@ def build(as_of, facts, raw, spx, engine, out):
     chart = retro_tool.chart(SYMBOL)
     fx = retro_tool.split_factor(chart, as_of)       # Yahoo's series is on today's shares: undo the later split
     px = {d: tuple(v * fx for v in hlc) for d, hlc in raw.items()}
-    # no separate guide, listing change, split, change of company name, theme event or 10-Q restatement is encoded: the builder refuses
-    # any such fact until its encoding is decided
-    for kind in ("guides", "listings", "splits", "company_names", "events"):
+    yahoo_splits = {dt.datetime.fromtimestamp(v["date"] + chart["meta"]["gmtoffset"], dt.timezone.utc).date().isoformat()
+                    for v in chart.get("events", {}).get("splits", {}).values()}
+    assert all(s["effective"] in yahoo_splits for s in facts.get("splits", [])), "a split's effective date must match the price data"
+    # no separate guide, listing change, change of company name, theme event or 10-Q restatement is encoded: the builder refuses any
+    # such fact until its encoding is decided (splits: V 2014-2017, on_basis)
+    for kind in ("guides", "listings", "company_names", "events"):
         if [x for x in facts.get(kind, []) if x.get("published", x.get("effective", "")) <= as_of]:
             sys.exit(f"{as_of}: the V builder has no encoding for {kind}; decide one first")
     for p in [p for p in facts["prints"] if p["published"] <= as_of]:  # a print public on AS_OF must match its raw figures
         assert "restated" not in p, (p["quarter"], "a 10-Q restatement needs its encoding decided first")
         check_print(p)
     assert rule_t(facts["rule_t"]) == ENGINE_THRESHOLDS, "the engine's thresholds must follow rule T on the fact sheet's values"
+    for p in [p for p in facts["prints"] if p["published"] <= as_of]:   # (V 2014-2017) a nominal range converts by its stated currency effect
+        for g in p.get("guides") or []:
+            if g.get("revenue_nominal"):
+                assert g["revenue_growth"] == [round(g["revenue_nominal"][i] - g["revenue_fx"][i], 1) for i in (0, 1)], (p["quarter"], g["fy"])
+    facts, split_ids = on_basis(facts, as_of)
     vintages = [v for v in facts["history_vintages"] if v["published"] <= as_of]
     if not vintages:
         sys.exit(f"{as_of}: no history vintage in the fact sheet is public yet")
@@ -261,6 +330,21 @@ def build(as_of, facts, raw, spx, engine, out):
         rev_txt = (f"'{g_rev[1]['revenue_words']}' — {rng} stands, its words in the note (the ACN words rule)" if g_rev == g_words else
                    f"'{gw['revenue_words']}' keeps {rng} of the {g_rev[0]['quarter']} print ('{g_rev[1]['revenue_words']}'; the ACN words rule)")
         tail = "no next-quarter guide is given, so the fiscal-year range stands in (method r2's fallback)"
+        gr = g_rev[1]
+        if gr.get("revenue_nominal"):       # (V 2014-2017) a nominal range less its stated currency effect
+            n0, n1 = gr["revenue_nominal"]
+            f0, f1 = gr["revenue_fx"]
+            nom = f"{n0:g}%" if n0 == n1 else f"{n0:g}-{n1:g}%"
+            cur = f"{f0:+g} points" if f0 == f1 else f"{f0:+g} to {f1:+g} points"
+            rev_txt += (f"; {nom} nominal less the stated currency effect ({cur}) is {fwd[0]:g}%" if fwd[0] == fwd[1] else
+                        f"; {nom} nominal less the stated currency effect ({cur}) is {fwd[0]:g}-{fwd[1]:g}%") + \
+                " in constant dollars (the NKE rule: reported growth less the stated currency effect)"
+        elif gr.get("revenue_fx"):
+            f0, f1 = gr["revenue_fx"]
+            cur = f"{f0:+g} points" if f0 == f1 else f"{f0:+g} to {f1:+g} points"
+            rev_txt += f"; constant dollar, its stated currency effect ({cur}) enters the fiscal-year revenues only"
+        if gr.get("revenue_aside"):
+            rev_txt += f"; '{gr['revenue_aside']}' goes in the note (the ACN rule for a revenue guide given with and without an item)"
     else:
         fwd = [latest["sales_pct"]] * 2
         fwd_label = f"{latest['quarter']} revenue growth (no {fy_now} revenue range)"
@@ -358,7 +442,7 @@ def build(as_of, facts, raw, spx, engine, out):
 
     company = h["company"]
     ids = (list(h["sources"]) + [x for p in prints for x in [p["source"]] + p.get("extra_sources", [])]
-           + [public[i - 1]["source"]] + public[i - 1].get("extra_sources", []) + ([dividend_src] if dividend_src else []))
+           + [public[i - 1]["source"]] + public[i - 1].get("extra_sources", []) + ([dividend_src] if dividend_src else []) + split_ids)
     sources = [dict(id=x, **facts["sources"][x]) for x in dict.fromkeys(ids)]
     sources.append({"id": "Y0", "published": as_of, "title": "Yahoo Finance daily prices, V and S&P 500, truncated at AS_OF",
                     "url": "https://finance.yahoo.com/quote/V/history",
@@ -371,10 +455,18 @@ def build(as_of, facts, raw, spx, engine, out):
                    "op_margin_bp", "opex_pct", "opex_gap_pp", "receivables_b", "receivables_pct", "receivables_gap_pp", "eps_q",
                    "eps_q_prior")
     rev = {int(k): v for k, v in h["revenue_usd_b"].items()}
+    # FY revenues (the segment bridge, display): the guide's midpoint, plus its stated currency effect where the range is in constant
+    # dollars (method r2: "No FX guide: FY revenue is LC growth only"; V 2014-2017)
+    fx_mid = sum(g_rev[1]["revenue_fx"]) / 2 if g_rev and g_rev[1].get("revenue_fx") else None
+    if fx_mid is None:
+        fy_revenue_b = rev[max(rev)] * (1 + sum(fwd) / 2 / 100)
+    else:
+        fy_revenue_b = rev[max(rev)] * (1 + (sum(fwd) / 2 + fx_mid) / 100)
+        fy_rev_label = f"{fy_rev_label} ({sum(fwd) / 2:+.2f}% in constant dollars) and the stated currency effect ({fx_mid:+.2f} points)"
     shares = {int(k): v for k, v in h["diluted_shares_m"].items()}
     first_excl = "; ".join(f"FY{int(y) % 100:02d} {t}" for y, t in sorted(h.get("eps_first_excluded", {}).items()))
     rev_text = (f"Revenue: {latest['sales_note']}; {latest['receivables_note']}; {latest['eps_note']}; {latest['shares_note']}"
-                + (f"; {latest['note']}" if latest.get("note") else ""))
+                + (f"; {latest['note']}" if latest.get("note") else "") + (f"; {latest['split_note']}" if latest.get("split_note") else ""))
     cash_return = (f"dividend {dividend_note}" + (f"; {latest['cash_return_text']}" if latest.get("cash_return_text") else ""))
     R = repr
     head = f'''#!/usr/bin/env python3
@@ -425,7 +517,7 @@ REF_LOW         = {px[ref][2]:.2f}   # lowest close of the last 52 weeks, {ref}
 REF_LOW_LABEL   = {R(MONTHS[int(ref[5:7]) - 1])}
 
 # ── FACTS: company history ({", ".join(h["sources"])}, vintage {h["published"]}{h["extended"]}) ──
-EPS_NORM      = {R({y: round(v, 4) for y, v in eps_hist.items()})}   # {h["normalization"]}
+EPS_NORM      = {R({y: round(v, 4) for y, v in eps_hist.items()})}   # {h["normalization"]}{"; " + h["split_note"] if h.get("split_note") else ""}
 EPS_FIRST_EXCLUDED = {R(first_excl)}
 EPS_EXCLUDED  = {R({y: t for y, t in sorted(excluded.items())})}
 REVENUE_HIST  = {R({y: round(v, 6) for y, v in rev.items()})}   # total operating revenues, USD bn
@@ -448,7 +540,7 @@ FWD_GUIDE_LABEL, FWD_PERIOD, FWD_BASIS_SHORT = {R(fwd_label)}, {R(fwd_period)}, 
 GUIDE_TEXT      = {R(guide_text)}
 MARGIN_GUIDED   = {margin_guided}   # {margin_comment}
 FY_MARGIN_BASE  = {fy_margin_base}
-FY_REVENUE_B    = {rev[max(rev)] * (1 + sum(fwd) / 2 / 100):.4f}
+FY_REVENUE_B    = {fy_revenue_b:.4f}
 FY_REVENUE_LABEL = {R(fy_rev_label)}
 SHARES_DIL_B    = {latest["diluted_shares_m"] / 1000:.4f}
 GROUPS          = {R([tuple(g) for g in h["groups"]])}
