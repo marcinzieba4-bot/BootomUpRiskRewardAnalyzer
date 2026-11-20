@@ -1,6 +1,6 @@
 # SPGI retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the SPGI weekly dates: 522 from 2008-01-04 to 2017-12-29, The McGraw-Hill Companies, Inc. (NYSE:
+Patterns seen in `outcome.json` for the SPGI weekly dates: 731 from 2008-01-04 to 2021-12-31, The McGraw-Hill Companies, Inc. (NYSE:
 MHP; SPGI is the series key), McGraw Hill Financial, Inc. from 2013-05-06 and NYSE: MHFI from 2013-05-14, S&P Global Inc. from
 2016-05-02 and NYSE: SPGI from 2016-06-30. They are **labels and hypotheses**: never feed them back into the method or the fact sheet. The batch was
 scored only after its point-in-time build and its firewall result were committed (2008-2009: 7a7b5ac, firewall e1db42b); the push of those
@@ -9,7 +9,9 @@ on 2026-11-20; every date has its 6-month, 1-, 2- and 3-year horizons (the last 
 its build (51cf532) and its firewall result (23e3e2c) were committed and pushed; that batch was decided in the session that had written
 the 2008-2009 sections below (disclosed in retro/README.md, "SPGI 2010-2013"). 2014-2017 was built in a new session that did not open these
 findings, `SERIES.md` or any outcome first, and scored only after its build (5fffe7f) and its firewall result (0bcb78d) were committed
-and pushed; its 3-year horizons end on 2020-12-29. Total returns include the quarterly
+and pushed; its 3-year horizons end on 2020-12-29. 2018-2021 was decided in the session that had scored 2014-2017 (disclosed in
+retro/README.md, "SPGI 2018-2021") and scored only after its build (2fe0ec6) and its firewall result (1138bf6) were committed and pushed;
+its 3-year horizons end on 2024-12-30. Total returns include the quarterly
 dividends as Yahoo records them (ex-dates); no split falls in any horizon, so every price is as traded. Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over
 two years and +52.1% over three. "Call held" is `call_check_2y`: CHEAP should clear the hurdle or beat the benchmark (SPY); RICH should miss the hurdle and lag it; FAIR should land within +/-15pp of it.
 
@@ -316,4 +318,119 @@ two years and +52.1% over three. "Call held" is `call_check_2y`: CHEAP should cl
   starts excluding recurring amortization mid-series is better read on its new basis than on GAAP; never fit it to SPGI.
 - **The quarters as reported** (the Q4 2014 settlements, the 2016 gains and their 2017 lapping) moved no class but one: the signals do
   not carry these calls.
+- Today's profile still files SPGI DURABLE with risk 1 where every point-in-time reading was DURABLE with risk 2; label only.
+
+## 2018 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 50 | +66.5% | +5.4% to +101.7% | 46 | 50 | +34.1% | 0 |
+| class RICH, legacy tier WATCHLIST | 2 | +100.8% | +97.2% to +100.8% | 2 | 2 | +95.3% | 0 |
+| EPS $6.265 (2018-01-05 to 2018-02-02) | 5 | +65.1% | +60.0% to +68.1% | 5 | 5 | +31.9% | 0 |
+| EPS $8.225 (2018-02-07 to 2018-03-02) | 4 | +64.1% | +55.0% to +64.8% | 4 | 4 | +31.1% | 0 |
+| EPS $8.025 (2018-03-09 to 2018-05-18) | 11 | +43.1% | +5.4% to +59.7% | 7 | 11 | +31.2% | 0 |
+| EPS $7.825 (2018-05-25 to 2018-10-19) | 22 | +70.8% | +55.4% to +95.7% | 22 | 22 | +39.2% | 0 |
+| EPS $7.82 (2018-10-26 to 2018-12-28) | 10 | +95.7% | +81.8% to +101.7% | 10 | 10 | +77.9% | 0 |
+| latest print Q3 2017 (2018-01-05 to 2018-02-02) | 5 | +65.1% | +60.0% to +68.1% | 5 | 5 | +31.9% | 0 |
+| latest print Q4 2017 (2018-02-07 to 2018-04-20) | 11 | +43.1% | +5.4% to +64.8% | 7 | 11 | +31.2% | 0 |
+| latest print Q1 2018 (2018-04-27 to 2018-07-20) | 13 | +59.8% | +51.0% to +70.8% | 13 | 13 | +30.4% | 0 |
+| latest print Q2 2018 (2018-07-27 to 2018-10-19) | 13 | +79.4% | +67.3% to +95.7% | 13 | 13 | +40.6% | 0 |
+| latest print Q3 2018 (2018-10-26 to 2018-12-28) | 10 | +95.7% | +81.8% to +101.7% | 10 | 10 | +77.9% | 0 |
+
+- **RICH on all 52 dates (AVOID on 50), and every one beat SPY, so the call missed on all 52.** Two-year returns of +5.4% to +101.7%
+  against SPY's -9.3% to +57.5% (excess +14.7pp to +69.1pp); 48 cleared the hurdle, all but the four March 2018 dates. The stock traded at
+  20.7-29.3x the current-FY EPS, the 53rd-100th percentile of its decade; the worst two-year drawdown was -38.3% (from the 2020 crash).
+- **Within 2018 nothing ranked the dates well** (Spearman -0.29 for the price, -0.15 for Ratio B). The best were the Q3 2018 print's
+  dates (+81.8% to +101.7%, 20.7-24.8x after the October 2018 fall, two of them on the WATCHLIST tier). Landing: XBULL 37, BULL 13,
+  BASE 2.
+- The guides were met on GAAP: FY2018 came in at $7.73 against the $7.77-7.87 range of the Q3 2018 print (just under), FY2017 at $5.78
+  against the $6.19-6.34 the January dates carried (the Tax Act charge).
+
+## 2019 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 50 | +75.9% | +64.8% to +96.3% | 50 | 50 | +52.5% | 0 |
+| class RICH, legacy tier WATCHLIST | 2 | +77.2% | +73.7% to +77.2% | 2 | 2 | +64.4% | 0 |
+| EPS $7.82 (2019-01-04 to 2019-02-01) | 5 | +69.0% | +64.8% to +96.3% | 5 | 5 | +68.7% | 0 |
+| EPS $8.6 (2019-02-08 to 2019-04-26) | 12 | +74.3% | +67.6% to +77.2% | 12 | 12 | +59.4% | 0 |
+| EPS $8.26 (2019-05-03 to 2019-07-26) | 13 | +78.5% | +71.4% to +84.5% | 13 | 13 | +54.4% | 0 |
+| EPS $8.275 (2019-08-02 to 2019-10-25) | 13 | +73.1% | +70.9% to +83.0% | 13 | 13 | +46.2% | 0 |
+| EPS $8.61 (2019-10-30 to 2019-12-27) | 9 | +76.8% | +68.5% to +88.4% | 9 | 9 | +46.5% | 0 |
+| latest print Q3 2018 (2019-01-04 to 2019-02-01) | 5 | +69.0% | +64.8% to +96.3% | 5 | 5 | +68.7% | 0 |
+| latest print Q4 2018 (2019-02-08 to 2019-04-26) | 12 | +74.3% | +67.6% to +77.2% | 12 | 12 | +59.4% | 0 |
+| latest print Q1 2019 (2019-05-03 to 2019-07-26) | 13 | +78.5% | +71.4% to +84.5% | 13 | 13 | +54.4% | 0 |
+| latest print Q2 2019 (2019-08-02 to 2019-10-25) | 13 | +73.1% | +70.9% to +83.0% | 13 | 13 | +46.2% | 0 |
+| latest print Q3 2019 (2019-10-30 to 2019-12-27) | 9 | +76.8% | +68.5% to +88.4% | 9 | 9 | +46.5% | 0 |
+
+- **RICH and AVOID (50) or WATCHLIST (2) on all 52; every date beat SPY by +11.9pp to +45.7pp and cleared the hurdle, so no call held.**
+  The stock traded at 22.0-32.4x, the 68th-100th percentile, 22-80% above the floor; two-year returns +64.8% to +96.3%.
+- **Nothing ranked the dates** (Spearman +0.04 for the price, -0.04 for Ratio B): the rerating lifted every entry. Three-year returns
+  range from +20.0% (2019-10-11, into the 2022 fall) to +171.6%. Landing: XBULL 44, BULL 8.
+- FY2019's GAAP $8.60 sat inside the $8.56-8.66 range of the Q3 2019 print.
+
+## 2020 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier ACCUMULATE | 1 | +99.1% | +99.1% to +99.1% | 1 | 0 | +100.7% | 1 |
+| class FAIR, legacy tier WATCHLIST | 2 | +74.9% | +73.3% to +74.9% | 2 | 0 | +76.3% | 2 |
+| class RICH, legacy tier AVOID | 50 | +7.7% | -15.9% to +68.6% | 12 | 8 | +17.6% | 36 |
+| EPS $8.61 (2020-01-03 to 2020-01-31) | 5 | +47.6% | +40.4% to +68.6% | 5 | 4 | +40.0% | 0 |
+| EPS $10.1 (2020-02-07 to 2020-04-24) | 12 | +47.8% | +25.9% to +99.1% | 10 | 2 | +53.9% | 5 |
+| EPS $9.6 (2020-04-29 to 2020-07-24) | 13 | +6.9% | +0.2% to +29.9% | 0 | 0 | +29.1% | 13 |
+| EPS $10.35 (2020-07-29 to 2020-10-23) | 13 | +0.9% | -15.9% to +13.0% | 0 | 0 | +13.8% | 13 |
+| EPS $10.075 (2020-10-28 to 2020-12-31) | 10 | +6.7% | -9.0% to +8.7% | 0 | 2 | +11.2% | 8 |
+| latest print Q3 2019 (2020-01-03 to 2020-01-31) | 5 | +47.6% | +40.4% to +68.6% | 5 | 4 | +40.0% | 0 |
+| latest print Q4 2019 (2020-02-07 to 2020-04-24) | 12 | +47.8% | +25.9% to +99.1% | 10 | 2 | +53.9% | 5 |
+| latest print Q1 2020 (2020-04-29 to 2020-07-24) | 13 | +6.9% | +0.2% to +29.9% | 0 | 0 | +29.1% | 13 |
+| latest print Q2 2020 (2020-07-29 to 2020-10-23) | 13 | +0.9% | -15.9% to +13.0% | 0 | 0 | +13.8% | 13 |
+| latest print Q3 2020 (2020-10-28 to 2020-12-31) | 10 | +6.7% | -9.0% to +8.7% | 0 | 2 | +11.2% | 8 |
+
+- **The call held on 39 of 53 dates, and the year splits at the COVID-19 crash.** The 11 RICH dates of January to mid-March (24.6-34.5x)
+  returned +25.9% to +68.6% and held only on 2020-02-14 and 2020-02-21 (they lagged SPY and missed the hurdle). The CHEAP date (2020-03-20,
+  $208.79, 20.7x, the 41st percentile) returned +99.1% and cleared the hurdle (held), the two FAIR dates (2020-03-27, 2020-04-03) +73.3%
+  and +74.9%, within 15pp of SPY's rebound (held). The three RICH dates of 2020-04-09 to 2020-04-24 returned +35.8% to +47.8%,
+  cleared the hurdle and lagged SPY by 17-19pp (missed). From the Q1 2020 print (2020-04-29) the 36 RICH dates (30.7-36.9x, the 94th-100th
+  percentile) returned -15.9% to +29.9%, lagged SPY on all but two and held on 34.
+- **Within 2020 the price ranked the dates** (Spearman -0.86, the P/E -0.66). Landing: BULL 42, BASE 6, XBULL 5.
+- FY2020's GAAP $9.66 fell under the $10.00-10.15 range of the Q3 2020 print (lease impairments and merger costs in the fourth quarter).
+
+## 2021 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 52 | -5.3% | -24.5% to +21.8% | 0 | 7 | -15.1% | 45 |
+| EPS $10.075 (2021-01-08 to 2021-02-05) | 5 | +18.8% | +8.4% to +21.8% | 0 | 5 | +12.7% | 0 |
+| EPS $9.66 (2021-02-10 to 2021-10-22) | 37 | -5.1% | -20.8% to +11.2% | 0 | 2 | -11.7% | 35 |
+| EPS $12.575 (2021-10-27 to 2021-12-31) | 10 | -7.4% | -24.5% to -5.2% | 0 | 0 | -20.3% | 10 |
+| latest print Q3 2020 (2021-01-08 to 2021-02-05) | 5 | +18.8% | +8.4% to +21.8% | 0 | 5 | +12.7% | 0 |
+| latest print Q4 2020 (2021-02-10 to 2021-04-23) | 11 | -3.1% | -7.7% to +11.2% | 0 | 2 | +1.2% | 9 |
+| latest print Q1 2021 (2021-04-30 to 2021-07-23) | 13 | -1.7% | -7.7% to +2.9% | 0 | 0 | -11.6% | 13 |
+| latest print Q2 2021 (2021-07-30 to 2021-10-22) | 13 | -11.5% | -20.8% to -7.0% | 0 | 0 | -19.3% | 13 |
+| latest print Q3 2021 (2021-10-27 to 2021-12-31) | 10 | -7.4% | -24.5% to -5.2% | 0 | 0 | -20.3% | 10 |
+
+- **RICH and AVOID on all 52 at 30.4-46.9x (the 92nd-100th percentile); none cleared the hurdle, 45 lagged SPY, and the call held on 45.**
+  Two-year returns of -24.5% to +21.8% against SPY's -6.7% to +12.9%, through the 2022 fall (the worst drawdown within two years -40.2%).
+  The seven that did not hold are 2021-01-08 to 2021-02-19 (beating SPY by up to 12.6pp).
+- **Within 2021 the price ranked the dates** (Spearman -0.77). The anchor was FY20's $9.66 to 2021-10-22 (no GAAP guide), so the P/E read
+  34-47x; reading the adjusted ranges instead moves no class (retro/README.md, "SPGI 2018-2021"). Landing: BULL 43, BASE 9.
+- FY2021's result is outside the series' facts (the Q4 2021 release is not in the fact sheet).
+
+## 2018-2021 together (209 dates)
+
+- **The RICH calls missed for two years and then held.** All 104 dates of 2018-2019 beat SPY (by +11.9pp to +69.1pp) and 100 cleared the
+  hurdle, as in 2014-2017; of the 88 dates from the Q1 2020 print, 79 held (two-year returns -24.5% to +29.9%, excess -31.2pp to
+  +12.6pp). Overall RICH held on 81 of 206 dates, the CHEAP and FAIR calls of March-April 2020 on all three. Across the four years the
+  price ranks the two-year return (Spearman -0.82, the P/E -0.80, Ratio B -0.67).
+- **What separated the two phases was the multiple's level, not its percentile.** In 2018-2019 the stock sat at the 53rd-100th percentile
+  of its own decade at 20.7-32.4x and kept rerating; from April 2020 it sat at the 92nd-100th at 30-47x and the 2022 fall followed.
+  Hypothesis, not a rule: an own-history percentile window that is itself rerating (the median rose from 20.1x to 23.0x across these
+  dates) flags RICH too early; an absolute multiple or a distance from the window's median may separate the two phases better; test it on
+  other tickers that rerated, never fit it to SPGI.
+- **BEAR and the tiers rest on GAAP 2016's divestiture gains** (-27.2%/yr on every date from 2018-02-16, AVOID on 202 dates), while the
+  worst drawdown within two years of any date was -40.2%, in 2022. The amortization reading moves 87 tiers and 12 classes (toward FAIR or
+  CHEAP, 2018-04-27 to 2020-04-03); hypothesis for cross-ticker testing (with CMCSA 2019, PFE, AVGO, SHW), never fit to SPGI.
+- **The COVID-19 low was the one cheap entry the method caught** (2020-03-20, CHEAP at 20.7x, +99.1%); the FAIR dates after it returned
+  +73-75%. The rule for it existed already: the multiple fell into the lower half of the window.
 - Today's profile still files SPGI DURABLE with risk 1 where every point-in-time reading was DURABLE with risk 2; label only.
