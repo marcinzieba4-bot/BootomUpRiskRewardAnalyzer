@@ -1,0 +1,155 @@
+
+════════════════════════════════════════════════════════════════════════
+  V  ·  Visa Inc.  ·  $231.44  ·  RETROSPECTIVE as of 2023-01-27
+  Signal: ◐ WATCHLIST   Ratio B: 1.54x   Adj gap: -0.93  [OVERVALUED]
+  Point-in-time: 16 sources, latest published 2023-01-27; latest print Q1 FY23 (Jan 26)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2023E revenue, USD bn  →  FY2025E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2023E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Service revenues              $ 15.02  $15.02  $18.39    +0.00    +3.37
+    +16.4% revenue in FY22
+  Data processing revenues      $ 16.23  $16.23  $19.87    +0.00    +3.64
+    +12.9% revenue in FY22
+  International transaction re  $ 11.03  $11.03  $13.51    +0.00    +2.48
+    +50.3% revenue in FY22
+  Other revenues                $  2.24  $ 2.24  $ 2.74    +0.00    +0.50
+    +18.9% revenue in FY22
+  Client incentives             $-11.57  $-11.57  $-14.17    +0.00    -2.60
+    +23.0% revenue in FY22
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $ 32.95  $32.95  $40.34    +0.00    +7.39
+  FY2023E = FY22 $29.310B × (1 + 12.4%: the Q1 FY23 revenue growth (no FY23 revenue range), YoY, applied to the year); split pro rata to FY22 net revenues by line, incentives as reported (FY22 growth)
+  Q1 FY23 (Jan 26): total operating revenues $7.936B +12.4% YoY (+1.9% QoQ); receivables -2.5%; operating expenses ex litigation +17.3%;
+  net-to-gross 74.02% (-84.1bp); operating margin 64.14% (-352.0bp); EPS $1.99 vs $1.83
+  Revenue: net revenues $7,936M vs $7,059M a year earlier, $7,787M the quarter before (service $3,511M, data processing $3,827M, international transaction $2,797M, other $587M, less client incentives $2,786M); 'Payments volume for the three months ended September 30, 2022, on which fiscal first quarter service revenues are recognized, increased 10% over the prior year on a constant-dollar basis.' 'Total processed transactions, which represent transactions processed by Visa, for the three months ended December 31, 2022, were 52.5 billion, a 10% increase over the prior year.'; accounts receivable $2,113M (2022-12-31) vs $2,168M a year earlier (the year-ago 10-Q); GAAP diluted class A EPS $1.99 vs $1.83; diluted class A shares 2,102M (as converted); no outlook for FY2023 in the release; 'As previously disclosed, in March 2022, we suspended our operations in Russia and therefore our financial highlights from April 2022 through December 2022 do not include Russia-related results.'
+  FY23: no outlook in any print; no revenue range in numbers: the latest quarter's revenue growth stands in (the UNP rule)
+
+  FY2023E EPS check:  $32.950B × 61.9% pre-tax × (1−17.5%) ÷ 2.102B  =  $8.00  (FY2023E: no EPS guide in numbers, FY22's $7.00 stands)
+  FY2025E BEAR check: $32.950B × 61.9% ÷ 2.006B  =  $8.38  (scenario $5.66)
+  FY2025E BULL check: $40.340B × 62.3% ÷ 2.006B  =  $10.33  (scenario $9.35)
+  Every 1pp of pre-tax margin ≈ $0.129 EPS ≈ $3.56/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Revenue growth                         -3.0%    ≥10.0%    ≥22.0%    ≥74.0%    +12.4%  ◦ BASE  ██░░
+  Net-to-gross revenue change         -640.0bp  ≥-330.0bp  ≥-30.0bp  ≥430.0bp   -84.1bp  ◦ BASE  ██░░
+  Opex growth less revenue             +13.0pp    ≤2.0pp   ≤-9.0pp  ≤-25.0pp    +4.9pp  ⚠ BEAR  █░░░
+  Receivables growth less revenue       +6.0pp   ≤-1.0pp   ≤-9.0pp  ≤-35.0pp   -15.0pp  ▲ BULL  ███░
+  Operating margin change             -15780.0bp  ≥-7710.0bp  ≥350.0bp  ≥8930.0bp  -352.0bp  ◦ BASE  ██░░
+  Crypto: disintermediation of card payments    +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.00 / 4.00
+  Market composite:   2.87 / 4.00  (back-solved from $231.44 + 15% hurdle)
+  SCA adjustment:    +0.04  ·  EPP-distance adj -0.10  →  Adj composite 1.94  →  Gap -0.93  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY22 total operating revenues +21.6%, 74.0% of gross revenues kept after client incentives; Q1 74.02% (-84bp YoY)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 33.1x FY23E vs a 27.5x 10-yr median (80th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: Q1 FY23 revenue growth (no FY23 revenue range) +12.4% vs a 10.3% 9-yr median  (+0.21 × 20%  =  +0.042)
+    +  Cash and cash equivalents $13.334B, long-term debt $20,487M on the release's balance sheet (Q1 FY23), FY22 free cash flow $17.879B (net cash provided by operating activities $18,849M less purchases of property, equipment and technology $970M), dividend $1.80 a year  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Revenue growth                        +12.4%     -3.0%  -15.4%  Spending and cross-border travel slow…
+  Net-to-gross revenue change          -84.1bp  -640.0bp  -555.9bp  Client incentives take more of gross …
+  Opex growth less revenue              +4.9pp   +13.0pp  +8.1pp  Marketing and personnel do not slow w…
+  Receivables growth less revenue      -15.0pp    +6.0pp  +21.0pp  Clients pay more slowly: collections lag
+  Operating margin change             -352.0bp  -15780.0bp  -15428.0bp  Operating leverage works in reverse
+  Crypto: disintermediation of card payments    +2.0/4    +1.0/4  -1.0/4  Payments move to crypto rails that by…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$169.85  (model)  /  $131.31 (defined)
+  Bear probability (proxy model):  17.6%
+
+  KEY TRIGGER: revenue went from +18.7% (Q4 FY22) to +12.4% YoY (Q1 FY23), +1.9% on the quarter before;
+  the bear case needs incentives taking more of gross revenues (-84.1bp now)
+  and receivables (-15.0pp against revenue) giving way. A spending slowdown shows up in payments volume and service revenues first;
+  the bear needs it in processed transactions as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $7.00  (FY2023E: no EPS guide in numbers, FY22's $7.00 stands)
+  Min viable P/E at panic:          23x  [median of calendar-year P/E lows: 2013 20.1x, 2014 19.1x, 2015 23.5x, 2016 21.7x, 2017 22.8x, 2018 22.4x, 2019 23.6x, 2020 27.8x, 2021 27.2x, 2022 25.4x, 2023 29.6x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $161.00/share
+  Current $231.44 vs Updated EPP $161.00:  +44%  ⚠ far above floor — large drawdown room
+  Bear $131.31 vs Updated EPP $161.00:  -18%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Revenue growth                                10.0       -2.4   BASE floor (vs +12 now)
+  Net-to-gross revenue change                 -330.0     -245.9   BASE floor (vs -84 now)
+  Opex growth less revenue                       2.0       -2.9   BASE floor (vs +5 now)
+  Receivables growth less revenue               -1.0      +14.0   BASE floor (vs -15 now)
+  Operating margin change                    -7710.0    -7358.0   BASE floor (vs -352 now)
+  Crypto: disintermediation of card payments             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $7.00 × (1+12.7%)² = $8.89
+  At 27x P/E (conservative):  $240.11/share
+  + Cumul. dividends (2yr):  +$3.71/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $240.11  (▲8.67 from $231.44)
+  Conservative total return:  +5% over 2yr  = +3%/yr
+
+  12.7% EPS growth is what is left once the premium multiple (33.1x)
+  mean-reverts to 27x. Breakeven at 27x needs FY2025E EPS of $8.43,
+  i.e. 9.8%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $174.60  –  $235.85  (at 93th pct of range)
+  Annual dividend:      $1.80/share  (yield 0.8%)
+  Realized vol:         29% annualized (1-yr daily log returns)
+  Beta vs broad market: 0.95
+  1-sigma range (1yr):  $164.32  –  $298.56  ($231.44 ± 29%)
+  2-sigma range (1yr):  $97.20  –  $365.68
+  ────────────────────────────────────────────────────────────
+  Bear $131.31 requires:  ~1.5σ price move  (within normal vol range)
+  A payments network whose revenue follows consumer spending: the stock is +30% off its September
+  low (52 weeks) while revenue went from +18.7% (Q4 FY22) to +12.4% YoY (Q1 FY23), +1.9% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        5.66   23.2x  $ 131.31    17.6%      5.0%   +12.6pp  EPS -10.1%/yr (worst year FY13-FY22, capped at 0%); P/E to its 10th pct
+  BASE        9.21   27.5x  $ 253.28    61.5%     17.4%   +44.1pp  EPS +14.7%/yr (Q1 revenue YoY + margin + buyback); P/E at its 10-yr median
+  BULL        9.35   31.7x  $ 296.39    17.6%     60.6%   -43.0pp  EPS +15.6%/yr (FY13-FY22 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL      11.36   39.1x  $ 444.18     3.3%     17.1%   -13.7pp  EPS +27.4%/yr (best 2-yr run FY13-FY22, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $245.74  /  Market EV: $305.93  /  Current: $231.44
+  Conservative EV (2yr, ④): $240.11 + $3.71 divs = $243.82 total value
+  Downside (→ Bear $131.31): 43.3%   Upside (→ Bull $296.39): 28.1%   Ratio B 1.54x  →  ◐ WATCHLIST
+
+  To earn the 15%/yr hurdle from $231.44 the market needs $306.08 in two years —
+  above the BULL case. That is a market composite of 2.87 against a model
+  read of 1.94: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       1.54x     +44%    -0.93  OVERVALUED / WATCHLIST
+  Multiples one band richer (p25/p75/p90/max)     0.68x     +44%    -0.30  MODESTLY OVERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     4.12x     +44%    -1.45  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          1.30x     +44%    -0.80  OVERVALUED / WATCHLIST
+  Scenario EPS -1.5pp/yr                          1.85x     +44%    -1.04  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             1.54x     +44%    -0.63  OVERVALUED / WATCHLIST
+  EPP P/E +3 turns (softer floor)                 1.54x     +27%    -0.83  OVERVALUED / WATCHLIST
+  Hurdle 10%/yr instead of 15%                    1.54x     +44%    -0.55  OVERVALUED / WATCHLIST
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 FY23 print (the quarter ends in March) — revenue against the Q1 FY23 revenue growth (no FY23 revenue range): +12.4% YoY
+  (2) Client incentives — 74.0% of gross revenues kept in Q1 FY23 (-84.1bp YoY): pricing, what must hold if volume does not
+  (3) Payments volume and processed transactions — the drivers of service and data processing revenues, in each release (Q1 FY23: see the revenue line)
+  (4) Receivables — -2.5% against revenue +12.4% in Q1 FY23 (-15.0pp): clients paying more slowly would show here first
+  (5) Capital structure at 33x — dividend $0.45 a quarter, declared in October 2022 (a 20% increase; the Q4 FY22 release); 'During the three months ended December 31, 2022, Visa repurchased 15.6 million shares of class A common stock at an average price of $198.74 per share for $3.1 billion.' (no guided number: it adds nothing)
+  ◐ WATCHLIST  |  EPP floor $161.00  |  ADD below ~$215.29  |  TRIM above $296.39
+════════════════════════════════════════════════════════════════════════
+

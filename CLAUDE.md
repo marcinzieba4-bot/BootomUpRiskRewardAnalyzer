@@ -23,7 +23,7 @@ touching either directory.
   outcomes or findings enters another's models. UNP (2008-2026 so far), LOW (2008-2026 so far), AAPL (2008-2026 so far),
   NKE (2008-2026 so far), AVGO (from its 2009-08-06 listing to 2026-10-30 so far), PEP (2008 to 2026-10-30 so far), MSFT
   (2008 to 2026-10-30 so far), XOM (2008 to 2026-10-30 so far), SHW (2008 to 2026-11-06 so far), WMT (2008 to 2026-11-06 so far), RCL (2008 to 2026-11-06 so far), MAR (2008 to 2026-11-03 so far), BKR (2008 to 2017-06-30, then 2019-02-01 to 2026-11-06 so far), PFE (2008 to 2026-11-04 so far), CMCSA (2008 to 2026-11-06 so far), CAT (2008 to 2026-11-06 so far), BMY (2008 to 2026-11-06 so far), NVDA (2008 to 2026-11-06 so far), F (2008-01-04 to 2026-11-06 so far; 2022-01-07 onward was built first at the owner's request, and dates before 2022 are an early era with its
-  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far) and V (2009-10-29 to 2021-12-31 so far) sit in `staging/retrospective/` until the owner adds
+  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far) and V (2009-10-29 to 2026-11-13 so far) sit in `staging/retrospective/` until the owner adds
   them to the archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM", "SHW", "WMT", "RCL", "MAR", "BKR", "PFE", "CMCSA", "CAT",
   "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG", "JPM", "V"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py`, `mu_signal_model.py` and `v_signal_model.py` (other branches) files
   and today's profiles in `data/business_profiles.json` (NVDA's, SO's and V's included) are 2026 analyses: never inputs to a retrospective. AVGO did not trade
@@ -178,6 +178,12 @@ touching either directory.
   seam); operating one-offs to Q4 FY19 only; CRYPTO (live 2020-10-21, scoped to payments networks) joins the watch list from its live
   date on the 10-Ks' own words (`crypto_quote`, the JPM encoding), with a factor pair that nets to zero from the FY2021 10-K, which names
   Visa's own crypto offering (`crypto_own_quote`); RICH on 199 of 209 dates, FAIR on the 10 after the Q4 FY21 print (retro/README.md,
-  "V 2018-2021").
+  "V 2018-2021") From 2022: GAAP EPS every year (FY22 $7.00 to FY26 $12.32; the non-GAAP figures still remove recurring
+  investment results and amortization), FY2017-FY2019 kept at the company's figures (the seam, so BEAR stays FY2020's -10.1%/yr; GAAP
+  throughout moves 88 classes, the batch's largest EPS call); no outlook in numbers: the Q4 FY23 release's FY2024 table is words, and the
+  Q1-Q4 FY24 releases point to an earnings presentation on the website, not filed (`outlook_elsewhere`, quoted in the guide line, no
+  field), so BASE is the latest quarter's revenue growth on every date; litigation provisions stay in the margin; dividends $0.45 to $0.78
+  from the Q4 releases; CRYPTO stays on the watch list on each 10-K's words, its factor pair only where a 10-K names Visa's own offering
+  (FY2025, FY2026), and GENAI is out of scope; the last date is 2026-11-13 (retro/README.md, "V 2022-2026").
 - **Never use the owner's personal email** in request headers to external
   services (SEC asks for a contact in the User-Agent).

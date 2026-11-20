@@ -21071,7 +21071,7 @@ Judgement calls that could carry hindsight:
 
 The hindsight results are in `staging/retrospective/JPM/FINDINGS.md`: hypotheses, never inputs.
 
-## V (Visa): the twenty-eighth ticker, in staging, 2008-2021 (from the Q4 FY09 print)
+## V (Visa): the twenty-eighth ticker, in staging, 2008-2026 (from the Q4 FY09 print)
 
 The V series is built apart from the other twenty-seven and shares nothing with them but the machinery: its own fact sheet
 (`retro/facts/V.json`), builder (`retro/build_v.py`, the GOOG builder with Visa's September fiscal year, figures in millions, a fiscal-year
@@ -21781,6 +21781,169 @@ Judgement calls that could carry hindsight:
 
 The hindsight results are in `staging/retrospective/V/FINDINGS.md` ("2018-2021"): hypotheses, never inputs.
 
+### V 2022-2026: GAAP every year, no outlook in numbers (a FY2024 table in words, presentations not filed), the ten-year roll, CRYPTO on the watch list, the last date 2026-11-13
+
+**What the owner asked for and what was built.** On 2026-11-20 the owner asked for V 2022-2026 on the same rules ("find newest code"):
+the newest branch of the repository was `claude/elegant-euler-ie0dkl` (its last commit "V retrospective: hindsight outcomes and findings
+for 2018-2021", 2026-11-20 11:49 UTC), and this session's branch was its ancestor, so it was fast-forwarded to it. All 254 weekly dates
+were built, 2022-01-07 to 2026-11-13, from the same fact sheet, builder and engine (thresholds unchanged: rule T over the decade of the
+FY2008 10-K). The range starts on 2022-01-03, the Monday after the last built week (2021-12-31). The last date is 2026-11-13: the series
+was built on 2026-11-20 before that day's close, so the week of 2026-11-16 has no date (the ACN, JPM and LMT precedent; a rebuild after
+the close adds 2026-11-20, and the newest dates have no outcome yet). The 636 models of 2009-2021 rebuild byte-identical.
+
+```bash
+python3 retro/build_v.py --weekly 2022-01-03 2026-11-13                     # 254 dates, 2022-01-07 .. 2026-11-13
+for c in 2022-01-01 2022-01-28 2022-04-27 2022-07-27 2022-10-26 2022-11-17 2023-01-27 2023-04-26 2023-07-26 2023-10-25 2023-11-16 \
+         2024-01-26 2024-04-24 2024-07-24 2024-10-30 2024-11-14 2025-01-31 2025-04-30 2025-07-30 2025-10-29 2025-11-07 2026-01-30 \
+         2026-04-29 2026-07-29 2026-10-28 2026-11-06 2026-11-14; do python3 retro/tools/firewall.py $c V; done
+```
+
+Read, by the session's model directly with no delegated transcription: the twenty earnings releases of Q1 FY22 to Q4 FY26 (exhibit 99.1,
+the only exhibit of each: the headline bullets, the financial summaries, the statements of operations and balance sheets, the Q4 FY23
+outlook table and the Q1-Q4 FY24 outlook sentences, the dividend and repurchase sentences), the fifteen 10-Qs of Q1 FY22 to Q3 FY26 and
+the three of fiscal 2021 (each one's statement and receivables rows, compared by script with its release), the four fiscal 2021 releases
+(the year-ago lines, asserted word for word against their own files), the FY2022-FY2026 10-Ks (the statements of operations, cash flows
+and balance sheets, the revenue note, Items 1, 1A and 5 by the sentences quoted, and a search of each for "cyclical" and for its crypto,
+stablecoin and AI sentences), and the 58 other 8-Ks of December 2021 to November 2026 by their items and opening text, with a search of
+all of them, exhibits included, for forward-looking figures. **Not read:** the earnings presentations and other materials posted on the
+website (not filed), the call webcasts and the Investor Day of 2025-02-20 (a webcast, not filed), the 10-Qs and 10-Ks beyond the rows and
+sentences named, and the exhibits of the debt, settlement-agreement, exchange-offer, charter, officer and director 8-Ks beyond that
+search.
+
+The fact sheet is extended by a fifth script (kept in the session scratchpad, like the four before it): each figure is read from its
+labelled row and column under its own statement heading (the row is kept and checked word for word), every value is computed with the
+builder's own `derived`, and five cross-checks run: the revenue lines sum to each total, quarter and fiscal year; each 10-Q matches its
+release on net revenue, operating expenses, operating income and receivables (all fifteen do: no 10-Q restatement); each 10-K matches
+its Q4 print on the year it adds (EPS, revenue, diluted shares, operating and pre-tax margins, tax rate, the revenue lines); each 10-K's
+two earlier years equal the vintage before it (all do: no 10-K revises an earlier year); and each vintage holds exactly ten fiscal years.
+712 strings were checked with `verbatim.py` against their own filings (712/712). Source ids: `V180`-`V184` (the 10-Ks), `V190`-`V209` (the
+releases), `V210`-`V224` (the 10-Qs); the dividend rates come from the Q4 releases, so no dividend 8-K is added. Decided on 2026-11-20,
+before any 2022-2026 model was built or any outcome of these dates computed:
+
+- **Release timing.** All twenty releases were accepted after the close (16:05-16:08 ET; the call at 5:00 p.m. ET) and are dated the
+  next trading day. The 10-Ks: 2022-11-16 16:06 ET (dated 2022-11-17), 2023-11-15 16:07 (2023-11-16), 2024-11-13 17:14 (2024-11-14),
+  2025-11-06 16:09 (2025-11-07) and 2026-11-05 16:07 (2026-11-06). A Q4 print extends the history to its 10-K: 3, 3, 2, 1 and 1 dates.
+  Each Q1 release came on a Thursday, so its print is dated the Friday, the week's last trading day, and that Friday is the week's date,
+  public before its open (the Q1 FY21 encoding).
+- **EPS: GAAP every year, as from FY2020.** FY22 $7.00, FY23 $8.28, FY24 $9.73, FY25 $10.20, FY26 $12.32. The company's non-GAAP $7.50,
+  $8.77, $10.05, $11.47 and $13.27 exclude "a special item, equity investment gains and losses, amortization of acquired intangible
+  assets, non-recurring acquisition-related costs and the related tax impacts" (the Q1 FY22 release's wording): investment results and
+  amortization recur, so no figure excludes only one-offs (the NKE FY2007, AVGO and PFE rule, as for FY2020-FY2021). No year meets the
+  AAPL test or its mirror. The litigation provisions stay in, as published: the releases' special items are mostly U.S. covered litigation
+  (the interchange multidistrict litigation), on 13 of the 20 quarters ($129M to $1,000M; Q2 FY25 $1,000M, Q4 FY25 $903M).
+- **The 10-K vintages: the ten fiscal years to the latest one.** FY2012 leaves with the FY2022 10-K, then one year a vintage (FY2016
+  with the FY2026 10-K). The 10-Ks have no selected data, so each reports three income-statement years and earlier years keep the latest
+  10-K that reported them; FY2017-FY2019 keep the FY2018 and FY2019 10-Ks' figures excluding only one-offs, the seam of V 2018-2021, so
+  BEAR stays FY2020's -10.1%/yr on every date. Revenue is "Net revenues", "Net revenue" from FY2024 (the same line).
+- **The outlook: none in numbers.** The releases of Q1 FY22 to Q3 FY23 give none. The Q4 FY23 release has a "Financial Outlook for Fiscal
+  Full-Year 2024" table whose every cell is words ("High single-digit to low double-digit" net revenue growth on the GAAP nominal-dollar
+  basis, "Low double-digit" adjusted constant-dollar, EPS growth "High-teens" GAAP and "Low-teens" non-GAAP): a FY2024 guide with no field
+  (the ACN and LOW words rules; the Q4 FY19 table's encoding). The Q1-Q3 FY24 releases (for FY2024) and the Q4 FY24 release (for FY2025)
+  say only "The earnings presentation contains the financial outlook for ..." on the website: a website post is not a filing (the XOM,
+  NKE, MSFT and SO rule), so it adds no field; a new print field (`outlook_elsewhere`) lets the guide line quote the release's words. From
+  Q1 FY25 no release names an outlook. BASE is the latest quarter's revenue growth on every date (the UNP rule), and no margin is guided.
+- **No operating one-off** (the V 2018-2021 rule from fiscal 2020: the non-GAAP operating figures also remove recurring amortization): the
+  operating margin keeps the litigation provisions, and the opex signal leaves out the litigation line, as always.
+- **Dividends:** $0.45 from the Q4 FY22 release (2022-10-26; "declared an increase"), $0.52 (2023-10-25), $0.59 (2024-10-30), $0.67
+  (2025-10-29) and $0.78 (2026-10-28); the other releases repeat the rate.
+- **Durability: DURABLE.** No 10-K calls the business cyclical. **CRYPTO** stays on the watch list on each 10-K's technological-change
+  sentence (`crypto_quote`, which from the FY2026 10-K adds "AI and agentic commerce, machine payments, ... stablecoins, tokenized deposits").
+  The FY2022-FY2024 10-Ks name no crypto offering of Visa's own (crypto only among competitors and brand risks), so the factor pair that nets
+  to zero leaves from 2022-11-18; the FY2025 10-K names one again ("We have provided both the on-ramp and off-ramp platform for buying and
+  spending crypto assets and stablecoins through cards.") and the FY2026 10-K the Visa Stablecoin Platform (`crypto_own_quote`), so it
+  returns from 2025-11-07 (text only). The FY2026 10-K adds that stablecoins "could disrupt existing payment networks, particularly in
+  cross-border, B2B, and currency-unstable markets", which goes in the "why": the company's own reading, not dated market evidence, so the
+  stock is not re-filed. **GENAI** (live from 2022-11-30) is out of scope: its registered scope names no payments network, and from the
+  FY2023 10-K the competition words concern Visa's value-added services ("The integration of technology like generative AI can create new
+  and better offerings that compete with our value added services ..."), which go in the "why" (the JPM reading). No market evidence is
+  recorded for either theme: the registry's dated evidence names no Visa fact, and press picked by hand would select with hindsight (the
+  ACN rule).
+- **Adds nothing:** the monthly volume updates (Item 7.01: 2021-12-01, 2022-03-02, 2022-06-01, 2022-08-30, 2022-11-23, 2023-03-03,
+  2023-05-30, 2023-08-30; the 2022-03-02 one says fiscal 2021 net revenues from Russia were "approximately 4%" of the total and that "It is
+  difficult to reasonably estimate the full potential financial impact": no figure for a year ahead), the suspension of operations in
+  Russia (in the prints as published), the escrow deposits and class B conversion rates (in the diluted shares as published), the class B
+  exchange offers (2023-09-13, 2024-01-24, 2024-05-06, 2024-05-08, 2026-02-13, 2026-05-11, 2026-05-12) and the Visa Europe preferred stock
+  releases (2022-07-08, 2024-07-10, 2025-08-08), both as converted in the diluted shares as published, the interchange settlement agreements
+  (2024-03-26, 2025-11-10: legal; no event encoding), the acquisitions (in the prints as published, the JPM rule), the debt offerings
+  (2022-06-01, 2025-05-15, 2026-02-12), the repurchase program (2021-12-15), and the officer, director, annual-meeting and bylaw 8-Ks.
+
+Controls and checks (before any outcome of these dates):
+- **`retro_tool run` passes on all 254 dates.** Its only warnings, on 160 dates, are diluted share counts printed in `SHARES_HIST` and
+  read as years (FY23's 2,085M from the FY2023 10-K on all 160, FY24's 2,029M on 107) and, on the 9 dates of 2024-10-31 to 2024-12-27, the
+  year 2025 in the Q4 FY24 release's own words ("the financial outlook for fiscal first quarter and full-year 2025"), a forward year, not a
+  later fact.
+- **Controls:** altering one value of each new print (its quarter EPS, its revenue, each Q4 print's full-year EPS, the FY2024 guide's words,
+  each outlook pointer), each new vintage (its last year's EPS, its free cash flow, its crypto words, its "why" and, where it has them, its
+  own-offering words) and each new dividend changes no model dated before its publication: 77 controls, 0 early, and each first changes the
+  first built date on or after it (each quarter's figures for 13 weeks, each 10-K for about a year, the FY2024 words for the 53 dates of
+  FY2024).
+- **Leak scan:** 0 text hits in 1,623,079 (model, later token) pairs over the 890 V models (the source ids, URLs, titles, notes and quoted
+  fragments of every fact published after each model's date, after dropping 237,789 pairs an earlier fact or the engine already carries).
+  This scan also takes every numeric field of four significant digits or more, wider than the earlier batches' figures, and those match on
+  522 pairs, every one explained by the model's own public inputs (checked by script, none left over): 280 are share counts an earlier
+  filing reports on the pre-split basis (FY2013's 656M becomes 2,624M after the 2015 split, the figure later vintages carry), 187 are
+  figures that an earlier fact's own text already carries, and 55 are market statistics (closes, 52-week lows, the window's trading-day
+  count). As a positive control, 17 to 48 of each latest print's own tokens appear in its model. Each new fact's own text was scanned for
+  years after its publication: the only hits are the fiscal year a Q4 release guides or names ("no outlook for FY2023", "full-year 2025").
+- **Regression:** the 636 models of 2009-2021 rebuild byte-identical (before and after the fact sheet and builder changes). The shared code
+  is untouched but the builder's new `outlook_elsewhere` reading and the firewall tool's V entry (a planted outlook pointer for the cutoff's
+  fiscal year and the next).
+- **Index:** `index.json` gains the 254 V rows; no other row changes.
+- **Firewall:** FIREWALL_RESULT
+
+Seen in the build (method behaviour, not tuned):
+- **RICH on 185 dates, FAIR on 35, CHEAP on 34; legacy tier WATCHLIST 137, ACCUMULATE 54, AVOID 34, BUY 29.** Robustness agrees with the
+  class on 81 of the 254: many calls sit near a band edge. By year: 2022 FAIR 24, RICH 15, CHEAP 13 (ACCUMULATE 19, WATCHLIST 15, BUY 13,
+  AVOID 5); 2023 RICH 46, FAIR 4, CHEAP 2 (WATCHLIST 36, ACCUMULATE 11, AVOID 4, BUY 1); 2024 RICH 51, CHEAP 1 (WATCHLIST 43, ACCUMULATE 7,
+  AVOID 2); 2025 RICH on all 52 (WATCHLIST 27, AVOID 19, ACCUMULATE 6); 2026 (46 dates) RICH 21, CHEAP 18, FAIR 7 (WATCHLIST 16, BUY 15,
+  ACCUMULATE 11, AVOID 4).
+- **The multiple stays in the upper part of its own window.** The stock is 28.1-40.6x the current year's EPS in 2022 (the 57th-94th
+  percentile), 27.9-35.4x in 2023 (52nd-82nd), 29.8-35.1x in 2024 (66th-82nd), 31.6-38.0x in 2025 (69th-88th) and 29.0-40.0x in 2026
+  (47th-93rd), against a window median of 26.3-30.1x; the price is 26-84% above the EPP floor.
+- **The scenarios.** BEAR is FY2020's -10.1%/yr on every date (GAAP $4.89 against the company's $5.44 for FY2019, the seam of V
+  2018-2021). With no outlook in numbers, BASE is the latest quarter's revenue growth with the buyback: +21.0% to +31.0% in 2022 (the
+  pandemic rebound: Q4 FY21 +28.6%, Q1-Q3 FY22 +18.7% to +25.5%), +12.7% to +21.0% in 2023, +10.9% to +13.9% in 2024, +11.4% to +16.4% in
+  2025 and +13.8% to +19.4% in 2026. BULL, the decade CAGR at least BASE, is BASE to January 2023 and +15.3% to +16.4% after, and BASE
+  again wherever BASE is higher (after the Q3 FY25 and the Q1-Q3 FY26 prints); XBULL is FY2016-FY2018's +27.4%/yr until the FY2026 10-K
+  drops FY2016 (+25.0% on its two dates).
+- **What moves the class.** The 2022 CHEAP and FAIR dates rest on BASE at the rebound's growth while the current year's EPS stays FY21's
+  $5.63 (FY22E has no figure) and then, from the Q4 FY22 print, FY22's $7.00 (CHEAP and BUY on 2022-10-27 at 29.2x). From Q1 FY23 to Q4
+  FY25 revenue growth runs at +8.8% to +14.3% and the class is RICH on 149 of the 156 dates of 2023-2025. The 2026 CHEAP and FAIR dates
+  follow the Q1 FY26 print (revenue +14.6%, then +17.1% in Q2: BASE +16.9% and +19.4%) at 30.8-35.2x, and RICH holds on most dates from
+  July 2026, at 35-38x.
+
+How far each call moves the classes (the 254 dates rebuilt with one encoding changed and classified offline; no outcome consulted):
+- the signals at their XBULL values: 202 classes (121 RICH to FAIR, 48 RICH to CHEAP, 33 FAIR to CHEAP), no tier; at their BEAR values: 69
+  classes (35 FAIR and 34 CHEAP to RICH), no tier. The signals and their 2002-2008 thresholds remain the main swing;
+- GAAP every year (FY14 $2.16, FY15 $2.58, FY16 $2.48, FY17 $2.80, FY18 $4.42, FY19 $5.32; FY2012 excluded as distorted): 88 classes (47
+  RICH to FAIR, 24 RICH to CHEAP, 17 FAIR to CHEAP) and 160 tiers (toward ACCUMULATE and BUY): lower early years raise BULL and XBULL and
+  BEAR becomes -8.1%; the largest EPS call of the batch (8 classes in 2018-2021; from 2022 these years open the ten-year history, which
+  sets the CAGR);
+- the company's non-GAAP figures from FY2020 ($5.04, $5.91, $7.50, $8.77, $10.05, $11.47, $13.27, and the FY2020 10-K's recast FY18 $4.58
+  and FY19 $5.40): 49 classes (17 RICH to CHEAP, 14 RICH to FAIR, 18 FAIR to CHEAP) and 168 tiers (toward ACCUMULATE and BUY);
+- the FY2024 table read as numbers ("High single-digit to low double-digit" 7-12%, "High-teens" EPS growth +18%, FY24E $9.77): 30 classes (23
+  RICH to CHEAP, 7 RICH to FAIR) and 52 tiers (46 to BUY), all on FY2024 dates;
+- the litigation provisions out of the operating margin (current and year-ago quarters): 2 classes (FAIR to RICH), no tier;
+- the outlook pointers and the crypto, GenAI and stablecoin words: no class, no tier (text only, by design).
+
+Judgement calls that could carry hindsight:
+- the signals, chosen in 2026 by a builder who knows what followed, with their 2002-2008 thresholds: the largest swing (202 classes at the
+  XBULL extreme, 69 at BEAR);
+- FY2017-FY2019 kept at the company's figures excluding only one-offs and GAAP from FY2020 (the V 2018-2021 seam): GAAP every year moves
+  88 classes and 160 tiers, and reading the fiscal 2020 non-GAAP methodology as excluding only one-offs moves 49 classes and 168 tiers: the
+  largest EPS calls of the batch;
+- the FY2024 outlook table read as words (30 classes and 52 tiers the other way), and the outlooks behind the Q1-Q4 FY24 pointers, in
+  presentations posted on the website, never read: a guide given only there or on a call is missed by design;
+- the litigation provisions kept in the operating margin, as published, though the releases call them special items (2 classes);
+- CRYPTO kept as a watch item: the FY2026 10-K's own words that stablecoins "could disrupt existing payment networks" are read as the
+  company's acknowledgement, not dated market evidence, and no press is recorded, so news-driven moves in the stock (stablecoin legislation
+  and issuers among them) are not evidence here; picking such stories by hand would select with hindsight (label only);
+- GENAI read as out of scope for a payments network, its 10-K words on value-added services kept in the "why" (label only);
+- DURABLE rather than CYCLICAL (label only);
+- the last date set by the build time (2026-11-13), and the parts of the filings listed above as not read.
+
+The hindsight results are in `staging/retrospective/V/FINDINGS.md` ("2022-2026"): hypotheses, never inputs.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -22094,6 +22257,16 @@ What the gates enforce:
   words of the 10-K in force ("JPM 2018-2021"). It stays there through 2026-11-13: the FY2021-FY2024 10-Ks keep the sentence, and the
   FY2025 10-K's names tokenized securities and distributed ledger technology and lists stablecoins among non-depository products; GENAI's
   scope names no bank, so the FY2025 10-K's words on AI agents stay in the "why" ("JPM 2022-2026").
+
+  V in 2009 to 2020-10-16 carries none: no theme in the registry is live for a payments network before CRYPTO (2020-10-21), the one theme
+  whose scope names payments networks (CLOUD, ECOMMERCE, STREAMING and ENERGY_TRANSITION are scoped to other industries), so its watch list
+  is empty and the 10-Ks' competition and spending sentences stay in the "why" ("V", "V 2010-2013", "V 2014-2017"). From 2020-10-23 V
+  carries CRYPTO on the watch list, company-acknowledged, with no market read, in the words of the 10-K in force, and from the FY2021 10-K,
+  which names a crypto offering of Visa's own, with a factor pair that nets to zero ("V 2018-2021"). It stays there through 2026-11-13: the
+  FY2022-FY2024 10-Ks name no offering of Visa's own, so the pair leaves; the FY2025 and FY2026 10-Ks name one again (crypto and stablecoin
+  cards, the Visa Stablecoin Platform), and the FY2026 10-K says stablecoins "could disrupt existing payment networks", the company's own
+  reading, so the stock is not re-filed. GENAI's scope names no payments network, so the 10-Ks' words on generative AI and Visa's
+  value-added services stay in the "why" ("V 2022-2026").
 
 ## Workflow
 

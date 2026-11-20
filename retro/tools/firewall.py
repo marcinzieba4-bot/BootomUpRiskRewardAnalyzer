@@ -114,7 +114,7 @@ full-year actuals exclude its own year, and a later vintage excluding a year and
 texts, figures, listing, exchange and window start (the guide, dividend, listing, split and company name every fact sheet with those
 lists gets, too), and from V 2014-2017 planted operating one-offs for the opex signal and a planted guide's currency effect, nominal
 range and aside, and from V 2018-2021 a planted withdrawal of every guided year and a later vintage with planted CRYPTO words
-('crypto_quote', 'crypto_own_quote'); GOOG: a print whose revenues, margins, opex and receivables gaps, quarter EPS, cash,
+('crypto_quote', 'crypto_own_quote'), and from V 2022-2026 planted pointers to an outlook posted on the website ('outlook_elsewhere'); GOOG: a print whose revenues, margins, opex and receivables gaps, quarter EPS, cash,
 notes and raw figures are absurd, with absurd full-year actuals for the year after the latest vintage before CUTOFF, a later Q4 print
 whose full-year actuals exclude its own year, a later 10-Q restatement of the last print before CUTOFF with absurd figures, and a later
 vintage excluding a year with planted texts, figures, outlook words, exchange and window start, every per-share figure on a planted
@@ -788,6 +788,9 @@ try:
                  groups=[["PLANTED", 1, -99]], groups_basis="PLANTED", exchange="PLANTED", pe_window_start="2008-03-19",
                  listing="1990-01-02", kind="CYCLICAL", eps_first_excluded={}, margin_signal_name="PLANTED")
         v.update(crypto_quote="PLANTED", crypto_own_quote="PLANTED")      # (V 2018-2021) the CRYPTO watch-list words
+        # (V 2022-2026) a planted pointer to an outlook posted on the website, for the cutoff's fiscal year and the next
+        last["outlook_elsewhere"] = {"fy": int(cutoff[:4]) + (1 if cutoff[5:7] >= "10" else 0), "words": "PLANTED"}
+        q4["outlook_elsewhere"] = {"fy": last["outlook_elsewhere"]["fy"] + 1, "words": "PLANTED"}
     if TICKER == "MU":     # a later vintage excluding a year and readmitting none, with planted texts and figures
         v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}
         v.update(normalization="PLANTED", business_line="PLANTED", prev_fy_op_margin=-99.0, prev_fy_op_margin_note="PLANTED",

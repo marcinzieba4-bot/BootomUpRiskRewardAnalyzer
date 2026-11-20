@@ -49,6 +49,10 @@ Visa's fiscal year ends on September 30 (FY2009 = 2008-10-01 to 2009-09-30). The
     current 10-K's own words ('crypto_quote': cryptocurrencies among the technological changes in global payments), company-acknowledged
     with no market read, and from the FY2021 10-K, which names Visa's own crypto offering ('crypto_own_quote'), with a factor pair that
     nets to zero (the GOOG and MSFT rule): the theme signal stays at 2/4, so only text changes.
+  - (V 2022-2026) GAAP EPS every year, as from FY2020; no release gives an outlook in numbers: the Q4 FY23 release's FY2024 table is
+    words (a guide with no field), and the Q1-Q4 FY24 releases point to an earnings presentation posted on the website, which is not
+    filed ('outlook_elsewhere' on the print: no field, the guide line quotes the release's words); the crypto words come from each
+    10-K in force, and the factor pair only from a 10-K that names a crypto offering of Visa's own (FY2021, FY2025, FY2026).
 The kind is DURABLE: the 10-Ks tie results to spending and the economy but do not call the business cyclical (the LOW, SHW and JPM
 reading). No disruption theme in taxonomy_eras.json is live for a payments network in 2008-2009 so the
 builder refuses events until a theme encoding is decided, and it refuses separate guides, listings, company names and 10-Q
@@ -65,6 +69,7 @@ Usage
   python3 retro/build_v.py --weekly 2010-01-01 2013-12-31
   python3 retro/build_v.py --weekly 2014-01-06 2017-12-31
   python3 retro/build_v.py --weekly 2018-01-01 2021-12-31
+  python3 retro/build_v.py --weekly 2022-01-03 2026-11-13
   python3 retro/build_v.py 2009-11-06
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/V/<AS_OF>
 """
@@ -389,6 +394,15 @@ def build(as_of, facts, raw, spx, engine, out):
         guide_text = f"{fy_now} ({g_words[0]['quarter']} print): {rev_txt}; {eps_txt}; {mar_txt}; {tail}"
     else:
         guide_text = f"{fy_now}: no outlook in any print; {rev_txt}"
+    # (V 2022-2026) a release that points to an outlook in an earnings presentation posted on the website, not filed
+    # ('outlook_elsewhere'): a website post is not a filing (the XOM, NKE, MSFT and SO rule), so it adds no field, and the guide line
+    # quotes the release's own words when that release is later than the last print that guides the year in a filing
+    oe = [(p, p["outlook_elsewhere"]) for p in public if (p.get("outlook_elsewhere") or {}).get("fy") == cur_fy]
+    if oe and (not g_words or oe[-1][0]["published"] > g_words[0]["published"]):
+        p_, o = oe[-1]
+        ptr = (f"the {p_['quarter']} release: '{o['words']}' The presentation is posted on the website, not filed: a website post is not "
+               f"a filing (the XOM, NKE, MSFT and SO rule), so it adds no field")
+        guide_text = f"{guide_text}; {ptr}" if g_words else f"{fy_now}: no outlook in any filing; {rev_txt}; {ptr}"
     cat3 = (f"(3) Payments volume and processed transactions — the drivers of service and data processing revenues, in each release "
             f"({latest['quarter']}: see the revenue line)")
     # a margin guide in numbers steps from the last full year's operating margin (method r2's guided margin step); none: no step, and
