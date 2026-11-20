@@ -1,14 +1,17 @@
 # SPGI retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the SPGI weekly dates: 314 from 2008-01-04 to 2013-12-31, The McGraw-Hill Companies, Inc. (NYSE:
-MHP; SPGI is the series key), McGraw Hill Financial, Inc. from 2013-05-06 and NYSE: MHFI from 2013-05-14. They are **labels and hypotheses**: never feed them back into the method or the fact sheet. The batch was
+Patterns seen in `outcome.json` for the SPGI weekly dates: 522 from 2008-01-04 to 2017-12-29, The McGraw-Hill Companies, Inc. (NYSE:
+MHP; SPGI is the series key), McGraw Hill Financial, Inc. from 2013-05-06 and NYSE: MHFI from 2013-05-14, S&P Global Inc. from
+2016-05-02 and NYSE: SPGI from 2016-06-30. They are **labels and hypotheses**: never feed them back into the method or the fact sheet. The batch was
 scored only after its point-in-time build and its firewall result were committed (2008-2009: 7a7b5ac, firewall e1db42b); the push of those
 two commits followed a few minutes after the outcome computation began, and no committed file changed in between. Outcomes were computed
 on 2026-11-20; every date has its 6-month, 1-, 2- and 3-year horizons (the last ends 2016-12-30). 2010-2013 was scored only after
 its build (51cf532) and its firewall result (23e3e2c) were committed and pushed; that batch was decided in the session that had written
-the 2008-2009 sections below (disclosed in retro/README.md, "SPGI 2010-2013"). Total returns include the quarterly
+the 2008-2009 sections below (disclosed in retro/README.md, "SPGI 2010-2013"). 2014-2017 was built in a new session that did not open these
+findings, `SERIES.md` or any outcome first, and scored only after its build (5fffe7f) and its firewall result (0bcb78d) were committed
+and pushed; its 3-year horizons end on 2020-12-29. Total returns include the quarterly
 dividends as Yahoo records them (ex-dates); no split falls in any horizon, so every price is as traded. Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over
-two years and +52.1% over three. "Call held" is `call_check_2y`: CHEAP should clear the hurdle or beat the benchmark (SPY).
+two years and +52.1% over three. "Call held" is `call_check_2y`: CHEAP should clear the hurdle or beat the benchmark (SPY); RICH should miss the hurdle and lag it; FAIR should land within +/-15pp of it.
 
 ## 2008 (53 dates)
 
@@ -197,3 +200,120 @@ two years and +52.1% over three. "Call held" is `call_check_2y`: CHEAP should cl
   tickers whose mix changed, never fit it here.
 - **Today's profile files SPGI DURABLE with risk 1** ("Ratings duopoly + indices flywheel", `profile_drift`), where every point-in-time
   reading was DURABLE with risk 2; label only.
+
+## 2014 (51 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 51 | +36.1% | +8.0% to +60.8% | 32 | 51 | +22.1% | 0 |
+| EPS $3.275 (2014-01-10 to 2014-01-31) | 4 | +16.6% | +11.7% to +20.1% | 0 | 4 | +29.9% | 0 |
+| EPS $3.8 (2014-02-05 to 2014-07-25) | 25 | +33.5% | +8.0% to +48.0% | 15 | 25 | +22.2% | 0 |
+| EPS $3.85 (2014-07-30 to 2014-10-24) | 13 | +54.0% | +47.7% to +60.8% | 13 | 13 | +24.0% | 0 |
+| EPS $3.805 (2014-10-30 to 2014-12-26) | 9 | +31.3% | +24.3% to +42.5% | 4 | 9 | +17.7% | 0 |
+| latest print Q3 2013 (2014-01-10 to 2014-01-31) | 4 | +16.6% | +11.7% to +20.1% | 0 | 4 | +29.9% | 0 |
+| latest print Q4 2013 (2014-02-05 to 2014-04-25) | 12 | +28.5% | +8.0% to +40.9% | 5 | 12 | +26.3% | 0 |
+| latest print Q1 2014 (2014-04-30 to 2014-07-25) | 13 | +37.7% | +22.6% to +48.0% | 10 | 13 | +18.3% | 0 |
+| latest print Q2 2014 (2014-07-30 to 2014-10-24) | 13 | +54.0% | +47.7% to +60.8% | 13 | 13 | +24.0% | 0 |
+| latest print Q3 2014 (2014-10-30 to 2014-12-26) | 9 | +31.3% | +24.3% to +42.5% | 4 | 9 | +17.7% | 0 |
+
+- **RICH and AVOID on all 51 dates, and every one beat SPY, so the call missed on all 51.** Two-year returns of +8.0% to +60.8% against
+  SPY's +5.8% to +17.9% (excess +1.9pp to +42.9pp); 32 cleared the hurdle. The 19 that did not are 2014-01-10 to 2014-03-21, 2014-06-13
+  to 2014-07-03 and 2014-11-28 to 2014-12-26. The stock traded at 18.9-24.6x the current-FY EPS, the 41st-97th percentile of its own
+  decade and 26-64% above the floor; the worst two-year drawdown from any date was -25.6%, against a BEAR of -39.1%/yr from the
+  2007-2008 Education seam.
+- **Within 2014, Ratio B and the adjusted gap ranked the dates** (Spearman -0.77 and +0.73 against the two-year return), the price did
+  not (+0.07): the Q2 2014 print's 13 dates (20.4-22.4x the $3.85 guide) returned +47.7% to +60.8%, the Q4 2013 print's 12 +8.0% to
+  +40.9%. Landing: BULL 40, XBULL 9, BASE 2.
+- The guides were beaten on the company's figures: FY2013's $3.33 (the Q4 2013 release) against the $3.25-3.30 of the January dates, and
+  FY2014's $3.88 against the $3.78-3.83 the models carried from the Q3 2014 print.
+
+## 2015 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 53 | +45.5% | +22.0% to +88.6% | 36 | 53 | +22.8% | 0 |
+| EPS $3.805 (2015-01-02 to 2015-02-06) | 6 | +29.5% | +24.4% to +37.9% | 2 | 6 | +22.8% | 0 |
+| EPS $4.4 (2015-02-13 to 2015-10-30) | 38 | +45.4% | +22.0% to +80.7% | 25 | 38 | +20.6% | 0 |
+| EPS $4.475 (2015-11-04 to 2015-12-31) | 9 | +73.4% | +66.2% to +88.6% | 9 | 9 | +45.8% | 0 |
+| latest print Q3 2014 (2015-01-02 to 2015-02-06) | 6 | +29.5% | +24.4% to +37.9% | 2 | 6 | +22.8% | 0 |
+| latest print Q4 2014 (2015-02-13 to 2015-04-24) | 11 | +27.9% | +22.0% to +31.4% | 0 | 11 | +12.1% | 0 |
+| latest print Q1 2015 (2015-04-29 to 2015-07-24) | 13 | +44.0% | +29.7% to +49.4% | 11 | 13 | +19.0% | 0 |
+| latest print Q2 2015 (2015-07-28 to 2015-10-30) | 14 | +70.7% | +50.9% to +80.7% | 14 | 14 | +42.6% | 0 |
+| latest print Q3 2015 (2015-11-04 to 2015-12-31) | 9 | +73.4% | +66.2% to +88.6% | 9 | 9 | +45.8% | 0 |
+
+- **RICH and AVOID on all 53; every date beat SPY (by +5.3pp to +52.1pp), so the call missed on all 53.** 36 cleared the hurdle; the 17
+  that did not are 2015-01-02 to 2015-05-08.
+- **Within 2015 the multiple ranked the dates** (Spearman -0.83 for the P/E, -0.52 for the price, +0.83 for the adjusted gap): the Q4 2014
+  print's 11 dates (23.1-24.7x the $4.40 guide, the 82nd-97th percentile) returned +22.0% to +31.4% and none cleared the hurdle; the Q2
+  and Q3 2015 prints' 23 dates (20.3-23.1x) returned +50.9% to +88.6%. Landing: BULL 27, XBULL 26.
+- FY2015's $4.53 (the company's figure) beat the $4.45-4.50 the models carried from the Q3 2015 print.
+
+## 2016 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class FAIR, legacy tier AVOID | 1 | +120.1% | +120.1% to +120.1% | 1 | 1 | +72.0% | 0 |
+| class FAIR, legacy tier WATCHLIST | 6 | +116.6% | +97.6% to +118.7% | 6 | 6 | +75.7% | 0 |
+| class RICH, legacy tier AVOID | 45 | +76.3% | +43.0% to +108.3% | 45 | 45 | +57.3% | 0 |
+| EPS $4.475 (2016-01-08 to 2016-01-29) | 4 | +116.6% | +103.7% to +117.2% | 4 | 4 | +75.7% | 0 |
+| EPS $4.53 (2016-02-05 to 2016-12-30) | 48 | +82.8% | +43.0% to +120.1% | 48 | 48 | +58.4% | 0 |
+| latest print Q3 2015 (2016-01-08 to 2016-01-29) | 4 | +116.6% | +103.7% to +117.2% | 4 | 4 | +75.7% | 0 |
+| latest print Q4 2015 (2016-02-05 to 2016-04-22) | 12 | +100.2% | +89.8% to +120.1% | 12 | 12 | +64.3% | 0 |
+| latest print Q1 2016 (2016-04-27 to 2016-07-22) | 13 | +87.4% | +76.3% to +101.4% | 13 | 13 | +58.4% | 0 |
+| latest print Q2 2016 (2016-07-29 to 2016-10-28) | 14 | +69.3% | +43.0% to +76.4% | 14 | 14 | +50.8% | 0 |
+| latest print Q3 2016 (2016-11-04 to 2016-12-30) | 9 | +51.6% | +48.3% to +61.2% | 9 | 9 | +66.0% | 0 |
+
+- **No call held: RICH on 45 dates (AVOID), FAIR on 7 (6 WATCHLIST, 1 AVOID), and every date beat SPY by +13.6pp to +72.8pp and
+  cleared the hurdle.** The FAIR run of 2016-01-15 to 2016-02-26 (18.6-19.7x, the 26th-39th percentile) returned +97.6% to +120.1%,
+  52-73pp over SPY rather than within 15pp of it; the RICH dates +43.0% to +108.3%.
+- **Within 2016 the price ranked the dates** (Spearman -0.85, the P/E -0.85, Ratio B -0.76): the year's cheapest dates returned the most.
+  Landing XBULL on all 52.
+- **The anchor was FY15's $4.53 all year** (the amortization rule: the company's guides also removed deal-related amortization). FY2016
+  came in at the company's $5.35 on that basis, above its $5.15-5.25 guide, and at GAAP $7.94 with the divestiture gains. The ten dates
+  the other reading moves (2016-02-05 to 2016-04-08: RICH to FAIR and FAIR to CHEAP, retro/README.md "SPGI 2014-2017") returned +95.6%
+  to +120.1%.
+
+## 2017 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 52 | +61.8% | +51.1% to +78.9% | 52 | 52 | +36.8% | 0 |
+| EPS $4.53 (2017-01-06 to 2017-02-03) | 5 | +59.9% | +53.5% to +65.8% | 5 | 5 | +65.6% | 0 |
+| EPS $5.775 (2017-02-08 to 2017-04-21) | 11 | +59.2% | +52.0% to +70.5% | 11 | 11 | +48.9% | 0 |
+| EPS $5.82 (2017-04-26 to 2017-07-21) | 13 | +58.6% | +51.1% to +66.9% | 13 | 13 | +36.6% | 0 |
+| EPS $5.905 (2017-07-28 to 2017-10-20) | 13 | +65.1% | +56.9% to +78.9% | 13 | 13 | +34.6% | 0 |
+| EPS $6.265 (2017-10-27 to 2017-12-29) | 10 | +64.4% | +56.3% to +66.3% | 10 | 10 | +36.0% | 0 |
+| latest print Q3 2016 (2017-01-06 to 2017-02-03) | 5 | +59.9% | +53.5% to +65.8% | 5 | 5 | +65.6% | 0 |
+| latest print Q4 2016 (2017-02-08 to 2017-04-21) | 11 | +59.2% | +52.0% to +70.5% | 11 | 11 | +48.9% | 0 |
+| latest print Q1 2017 (2017-04-26 to 2017-07-21) | 13 | +58.6% | +51.1% to +66.9% | 13 | 13 | +36.6% | 0 |
+| latest print Q2 2017 (2017-07-28 to 2017-10-20) | 13 | +65.1% | +56.9% to +78.9% | 13 | 13 | +34.6% | 0 |
+| latest print Q3 2017 (2017-10-27 to 2017-12-29) | 10 | +64.4% | +56.3% to +66.3% | 10 | 10 | +36.0% | 0 |
+
+- **RICH and AVOID on all 52 at 21.7-27.4x the FY2017 GAAP guide (the 74th-100th percentile, 46-96% above the floor); every date
+  returned +51.1% to +78.9%, beat SPY by +31.2pp to +53.9pp and cleared the hurdle.** No call held.
+- **The price did not rank the dates within 2017** (Spearman +0.21, Ratio B +0.09): the dates at the 99th-100th percentile from
+  2017-07-28 returned +56.3% to +78.9%. Landing: XBULL 38, BULL 14.
+- BASE was the buyback alone on the reported revenue guide of 0% (divestitures; organic growth was guided in words), but no reading of the
+  revenue words moves a class (retro/README.md, "SPGI 2014-2017"). FY2017's result is outside the series' facts (the Q4 2017 release is
+  not in the fact sheet).
+
+## 2014-2017 together (208 dates)
+
+- **Every date beat SPY over two years (by +1.9pp to +72.8pp) and 172 of 208 cleared the 15%/yr hurdle; no call held.** RICH (201 dates)
+  returned a median +56.8% (excess +34.3pp), FAIR (7) +116.6% (+64.8pp); three-year returns ran +47.8% to +167.0%. Across the four years
+  the entry price barely ranks the return (Spearman +0.34 for the price, -0.07 for Ratio B), within 2014, 2015 and 2016 Ratio B does
+  (-0.77, -0.73, -0.76): the rerating lifted every date, as in 2010-2013.
+- **The RICH calls rested on a window that mixes companies.** The decade's P/E distribution carries 2004-2007 with McGraw-Hill Education
+  and 2008-2012's trough multiples of the remaining business; the retained ratings, data and index company traded at the 74th-100th
+  percentile of it from 2014 and kept rerating. Hypothesis, not a rule (it extends 2010-2013's): after a portfolio change, an own-history
+  P/E window misplaces the retained business's multiple; test it on other tickers whose mix changed, never fit it to SPGI.
+- **BEAR at the seam set every tier to AVOID.** -39.1%/yr is 2007's $2.94 with Education against 2008's $1.79 without it, a change of
+  scope rather than a downturn; the worst drawdown within two years of any date was -26.0%. Hypothesis: a BEAR measured across a
+  portfolio seam overstates the downside; a rule limiting BEAR to years on one basis would be a new method version, tested on other
+  tickers first (the history-from-2008 reading moves 34 classes and 89 tiers here, which says only that the call is large).
+- **The amortization rule held FY2016's anchor at FY15's $4.53** while the company's guides and its result on their basis were higher;
+  the dates it affects most returned the most. Hypothesis for cross-ticker testing (CMCSA 2019, PFE, AVGO, SHW): whether a company that
+  starts excluding recurring amortization mid-series is better read on its new basis than on GAAP; never fit it to SPGI.
+- **The quarters as reported** (the Q4 2014 settlements, the 2016 gains and their 2017 lapping) moved no class but one: the signals do
+  not carry these calls.
+- Today's profile still files SPGI DURABLE with risk 1 where every point-in-time reading was DURABLE with risk 2; label only.

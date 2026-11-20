@@ -318,3 +318,211 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2013-12-20 | $76.00 | McGraw Hill Financial Q3 2013 results | 2.75 | -0.81 | 5.70x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +26.8% | +12.2pp | +29.9% | ✗ |
 | 2013-12-27 | $77.47 | McGraw Hill Financial Q3 2013 results | 2.75 | -0.88 | 6.85x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +29.1% | +12.8pp | +27.6% | ✗ |
 | 2013-12-31 | $78.20 | McGraw Hill Financial Q3 2013 results | 2.75 | -0.92 | 7.59x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +30.9% | +15.1pp | +26.5% | ✗ |
+| 2014-01-10 | $78.04 | McGraw Hill Financial Q3 2013 results | 2.75 | -0.91 | 7.42x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +16.6% | +8.1pp | +27.0% | ✗ |
+| 2014-01-17 | $76.75 | McGraw Hill Financial Q3 2013 results | 2.75 | -0.84 | 6.24x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +11.7% | +5.1pp | +29.1% | ✗ |
+| 2014-01-24 | $73.27 | McGraw Hill Financial Q3 2013 results | 2.75 | -0.68 | 4.26x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +20.1% | +9.1pp | +35.0% | ✗ |
+| 2014-01-31 | $76.04 | McGraw Hill Financial Q3 2013 results | 2.75 | -0.81 | 5.73x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +15.1% | +1.9pp | +29.9% | ✗ |
+| 2014-02-05 | $76.90 | McGraw Hill Financial Q4 2013 results | 1.65 | -1.44 | 3.64x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +14.8% | +2.9pp | +28.2% | ✗ |
+| 2014-02-14 | $81.53 | McGraw Hill Financial Q4 2013 results | 1.65 | -1.73 | 5.69x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +8.0% | +2.2pp | +20.5% | ✗ |
+| 2014-02-21 | $80.22 | McGraw Hill Financial Q4 2013 results | 1.65 | -1.67 | 4.94x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +12.8% | +4.0pp | +22.2% | ✗ |
+| 2014-02-28 | $79.66 | McGraw Hill Financial Q4 2013 results | 1.65 | -1.55 | 4.67x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +15.3% | +6.3pp | +22.7% | ✗ |
+| 2014-03-07 | $81.70 | McGraw Hill Financial Q4 2013 results | 1.65 | -1.74 | 5.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +18.4% | +7.6pp | +19.3% | ✗ |
+| 2014-03-14 | $79.55 | McGraw Hill Financial Q4 2013 results | 1.65 | -1.54 | 4.62x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +21.2% | +7.2pp | +22.3% | ✗ |
+| 2014-03-21 | $76.87 | McGraw Hill Financial Q4 2013 results | 1.65 | -1.42 | 3.63x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.5% | +14.1pp | +26.3% | ✗ |
+| 2014-03-28 | $75.01 | McGraw Hill Financial Q4 2013 results | 1.65 | -1.31 | 3.12x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +33.3% | +19.2pp | +29.2% | ✗ |
+| 2014-04-04 | $75.17 | McGraw Hill Financial Q4 2013 results | 1.65 | -1.33 | 3.16x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +34.1% | +19.0pp | +28.8% | ✗ |
+| 2014-04-11 | $71.98 | McGraw Hill Financial Q4 2013 results | 1.65 | -1.14 | 2.50x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +37.8% | +20.8pp | +34.3% | ✗ |
+| 2014-04-17 | $76.67 | McGraw Hill Financial Q4 2013 results | 1.65 | -1.40 | 3.57x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +33.5% | +17.6pp | +26.0% | ✗ |
+| 2014-04-25 | $75.05 | McGraw Hill Financial Q4 2013 results | 1.65 | -1.31 | 3.13x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +40.9% | +24.5pp | +28.7% | ✗ |
+| 2014-04-30 | $73.93 | McGraw Hill Financial Q1 2014 results | 2.45 | -0.28 | 2.35x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +48.0% | +34.1pp | +30.7% | ✗ |
+| 2014-05-09 | $78.69 | McGraw Hill Financial Q1 2014 results | 2.45 | -0.58 | 3.27x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +36.1% | +22.2pp | +22.8% | ✗ |
+| 2014-05-16 | $77.98 | McGraw Hill Financial Q1 2014 results | 2.45 | -0.55 | 3.11x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +39.9% | +25.5pp | +23.9% | ✗ |
+| 2014-05-23 | $79.58 | McGraw Hill Financial Q1 2014 results | 2.45 | -0.63 | 3.51x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +39.6% | +27.5pp | +21.4% | ✗ |
+| 2014-05-30 | $81.77 | McGraw Hill Financial Q1 2014 results | 2.45 | -0.83 | 4.20x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +39.5% | +26.1pp | +18.3% | ✗ |
+| 2014-06-06 | $83.69 | McGraw Hill Financial Q1 2014 results | 2.45 | -0.91 | 5.01x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +34.9% | +22.5pp | +15.7% | ✗ |
+| 2014-06-13 | $83.36 | McGraw Hill Financial Q1 2014 results | 2.45 | -0.89 | 4.85x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +31.8% | +20.2pp | +16.3% | ✗ |
+| 2014-06-20 | $82.71 | McGraw Hill Financial Q1 2014 results | 2.45 | -0.87 | 4.57x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +32.9% | +22.6pp | +17.3% | ✗ |
+| 2014-06-27 | $83.20 | McGraw Hill Financial Q1 2014 results | 2.45 | -0.89 | 4.78x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +22.6% | +16.4pp | +16.7% | ✗ |
+| 2014-07-03 | $84.50 | McGraw Hill Financial Q1 2014 results | 2.45 | -0.94 | 5.43x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +30.8% | +20.6pp | +15.0% | ✗ |
+| 2014-07-11 | $82.01 | McGraw Hill Financial Q1 2014 results | 2.45 | -0.84 | 4.29x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +37.7% | +24.8pp | +18.6% | ✗ |
+| 2014-07-18 | $82.54 | McGraw Hill Financial Q1 2014 results | 2.45 | -0.85 | 4.50x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +44.8% | +31.1pp | +18.1% | ✗ |
+| 2014-07-25 | $81.87 | McGraw Hill Financial Q1 2014 results | 2.45 | -0.82 | 4.24x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +46.3% | +32.5pp | +19.3% | ✗ |
+| 2014-07-30 | $81.66 | McGraw Hill Financial Q2 2014 results | 2.45 | -0.60 | 2.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +52.9% | +38.4pp | +20.0% | ✗ |
+| 2014-08-08 | $78.55 | McGraw Hill Financial Q2 2014 results | 2.45 | -0.30 | 2.31x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +56.3% | +39.1pp | +25.3% | ✗ |
+| 2014-08-15 | $79.45 | McGraw Hill Financial Q2 2014 results | 2.45 | -0.36 | 2.44x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +54.7% | +38.5pp | +24.4% | ✗ |
+| 2014-08-22 | $78.71 | McGraw Hill Financial Q2 2014 results | 2.45 | -0.31 | 2.33x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +55.8% | +41.9pp | +26.0% | ✗ |
+| 2014-08-29 | $81.13 | McGraw Hill Financial Q2 2014 results | 2.45 | -0.56 | 2.70x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +54.4% | +41.5pp | +22.9% | ✗ |
+| 2014-09-05 | $84.55 | McGraw Hill Financial Q2 2014 results | 2.45 | -0.75 | 3.39x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +51.5% | +38.8pp | +18.5% | ✗ |
+| 2014-09-12 | $85.92 | McGraw Hill Financial Q2 2014 results | 2.45 | -0.81 | 3.74x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +47.7% | +34.9pp | +17.3% | ✗ |
+| 2014-09-19 | $86.13 | McGraw Hill Financial Q2 2014 results | 2.45 | -0.81 | 3.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +47.9% | +37.3pp | +17.7% | ✗ |
+| 2014-09-26 | $84.93 | McGraw Hill Financial Q2 2014 results | 2.45 | -0.77 | 3.48x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +50.3% | +37.7pp | +20.2% | ✗ |
+| 2014-10-03 | $82.90 | McGraw Hill Financial Q2 2014 results | 2.45 | -0.66 | 3.03x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +54.0% | +39.8pp | +24.0% | ✗ |
+| 2014-10-10 | $79.18 | McGraw Hill Financial Q2 2014 results | 2.45 | -0.33 | 2.40x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +60.8% | +42.9pp | +30.7% | ✗ |
+| 2014-10-17 | $79.55 | McGraw Hill Financial Q2 2014 results | 2.45 | -0.35 | 2.45x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +57.4% | +40.2pp | +30.9% | ✗ |
+| 2014-10-24 | $84.05 | McGraw Hill Financial Q2 2014 results | 2.45 | -0.73 | 3.27x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +51.5% | +37.8pp | +24.6% | ✗ |
+| 2014-10-30 | $89.36 | McGraw Hill Financial Q3 2014 results | 2.00 | -1.32 | 4.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +39.9% | +29.0pp | +17.8% | ✗ |
+| 2014-11-07 | $89.94 | McGraw Hill Financial Q3 2014 results | 2.00 | -1.38 | 4.23x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +42.5% | +33.5pp | +17.7% | ✗ |
+| 2014-11-14 | $91.13 | McGraw Hill Financial Q3 2014 results | 2.00 | -1.43 | 4.65x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +38.7% | +28.5pp | +16.8% | ✗ |
+| 2014-11-21 | $91.99 | McGraw Hill Financial Q3 2014 results | 2.00 | -1.46 | 5.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +34.9% | +24.3pp | +16.2% | ✗ |
+| 2014-11-28 | $93.46 | McGraw Hill Financial Q3 2014 results | 2.00 | -1.52 | 5.70x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +29.6% | +19.1pp | +14.8% | ✗ |
+| 2014-12-05 | $93.71 | McGraw Hill Financial Q3 2014 results | 2.00 | -1.53 | 5.83x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +24.9% | +14.5pp | +14.9% | ✗ |
+| 2014-12-12 | $88.52 | McGraw Hill Financial Q3 2014 results | 2.00 | -1.32 | 3.81x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +31.3% | +14.5pp | +22.1% | ✗ |
+| 2014-12-19 | $90.05 | McGraw Hill Financial Q3 2014 results | 2.00 | -1.38 | 4.27x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.1% | +14.7pp | +20.4% | ✗ |
+| 2014-12-26 | $89.92 | McGraw Hill Financial Q3 2014 results | 2.00 | -1.38 | 4.22x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +24.3% | +11.8pp | +20.9% | ✗ |
+| 2015-01-02 | $88.66 | McGraw Hill Financial Q3 2014 results | 2.00 | -1.32 | 3.84x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +24.4% | +11.3pp | +22.8% | ✗ |
+| 2015-01-09 | $87.00 | McGraw Hill Financial Q3 2014 results | 2.00 | -1.26 | 3.42x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +33.4% | +18.2pp | +25.5% | ✗ |
+| 2015-01-16 | $90.77 | McGraw Hill Financial Q3 2014 results | 2.00 | -1.39 | 4.52x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +26.9% | +9.9pp | +20.9% | ✗ |
+| 2015-01-23 | $91.82 | McGraw Hill Financial Q3 2014 results | 2.00 | -1.44 | 4.92x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +29.5% | +14.9pp | +20.1% | ✗ |
+| 2015-01-30 | $89.44 | McGraw Hill Financial Q3 2014 results | 2.00 | -1.34 | 4.07x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +37.9% | +19.5pp | +24.1% | ✗ |
+| 2015-02-06 | $97.55 | McGraw Hill Financial Q3 2014 results | 2.00 | -1.69 | 8.94x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.8% | +13.2pp | +14.5% | ✗ |
+| 2015-02-13 | $102.19 | McGraw Hill Financial Q4 2014 results | 1.85 | -1.30 | 4.28x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +26.5% | +11.4pp | +10.1% | ✗ |
+| 2015-02-20 | $104.63 | McGraw Hill Financial Q4 2014 results | 1.85 | -1.36 | 5.12x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +27.3% | +11.8pp | +8.2% | ✗ |
+| 2015-02-27 | $103.10 | McGraw Hill Financial Q4 2014 results | 1.85 | -1.32 | 4.31x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.8% | +12.1pp | +10.6% | ✗ |
+| 2015-03-06 | $101.43 | McGraw Hill Financial Q4 2014 results | 1.85 | -1.27 | 3.85x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +31.4% | +12.6pp | +13.1% | ✗ |
+| 2015-03-13 | $104.29 | McGraw Hill Financial Q4 2014 results | 1.85 | -1.35 | 4.69x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +29.9% | +10.1pp | +10.7% | ✗ |
+| 2015-03-20 | $108.59 | McGraw Hill Financial Q4 2014 results | 1.85 | -1.46 | 6.66x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +22.0% | +5.3pp | +7.0% | ✗ |
+| 2015-03-27 | $103.82 | McGraw Hill Financial Q4 2014 results | 1.85 | -1.33 | 4.53x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +26.5% | +8.6pp | +12.5% | ✗ |
+| 2015-04-02 | $104.46 | McGraw Hill Financial Q4 2014 results | 1.85 | -1.34 | 4.74x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +27.9% | +9.4pp | +12.3% | ✗ |
+| 2015-04-10 | $105.11 | McGraw Hill Financial Q4 2014 results | 1.85 | -1.36 | 4.98x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +26.0% | +9.7pp | +12.3% | ✗ |
+| 2015-04-17 | $102.86 | McGraw Hill Financial Q4 2014 results | 1.85 | -1.30 | 4.24x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +29.9% | +12.8pp | +15.3% | ✗ |
+| 2015-04-24 | $106.23 | McGraw Hill Financial Q4 2014 results | 1.85 | -1.39 | 5.43x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.7% | +12.5pp | +12.1% | ✗ |
+| 2015-04-29 | $105.66 | McGraw Hill Financial Q1 2015 results | 2.30 | -0.94 | 5.56x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +29.7% | +12.4pp | +13.2% | ✗ |
+| 2015-05-08 | $106.63 | McGraw Hill Financial Q1 2015 results | 2.30 | -0.97 | 6.03x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +31.0% | +13.6pp | +12.8% | ✗ |
+| 2015-05-15 | $105.70 | McGraw Hill Financial Q1 2015 results | 2.30 | -0.95 | 5.57x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +33.6% | +16.3pp | +14.4% | ✗ |
+| 2015-05-22 | $105.85 | McGraw Hill Financial Q1 2015 results | 2.30 | -0.94 | 5.27x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +33.5% | +16.9pp | +14.9% | ✗ |
+| 2015-05-29 | $103.75 | McGraw Hill Financial Q1 2015 results | 2.30 | -0.89 | 4.51x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +38.0% | +19.3pp | +17.7% | ✗ |
+| 2015-06-05 | $102.04 | McGraw Hill Financial Q1 2015 results | 2.30 | -0.84 | 4.01x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +44.4% | +23.8pp | +20.2% | ✗ |
+| 2015-06-12 | $103.70 | McGraw Hill Financial Q1 2015 results | 2.30 | -0.88 | 4.49x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +43.3% | +23.2pp | +19.0% | ✗ |
+| 2015-06-19 | $104.74 | McGraw Hill Financial Q1 2015 results | 2.30 | -0.91 | 4.84x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +45.4% | +25.1pp | +18.6% | ✗ |
+| 2015-06-26 | $103.60 | McGraw Hill Financial Q1 2015 results | 2.30 | -0.88 | 4.46x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +44.0% | +23.8pp | +20.6% | ✗ |
+| 2015-07-02 | $102.08 | McGraw Hill Financial Q1 2015 results | 2.30 | -0.84 | 4.02x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +45.9% | +24.9pp | +23.2% | ✗ |
+| 2015-07-10 | $103.16 | McGraw Hill Financial Q1 2015 results | 2.30 | -0.87 | 4.33x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +47.1% | +25.9pp | +22.6% | ✗ |
+| 2015-07-17 | $104.78 | McGraw Hill Financial Q1 2015 results | 2.30 | -0.91 | 4.86x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +45.5% | +25.7pp | +21.4% | ✗ |
+| 2015-07-24 | $105.58 | McGraw Hill Financial Q1 2015 results | 2.30 | -0.93 | 5.16x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +49.4% | +26.4pp | +21.1% | ✗ |
+| 2015-07-28 | $98.40 | McGraw Hill Financial Q2 2015 results | 2.10 | -1.07 | 4.64x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +58.9% | +36.7pp | +30.5% | ✗ |
+| 2015-08-07 | $100.72 | McGraw Hill Financial Q2 2015 results | 2.10 | -1.13 | 5.23x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +52.8% | +29.2pp | +28.3% | ✗ |
+| 2015-08-14 | $101.70 | McGraw Hill Financial Q2 2015 results | 2.10 | -1.17 | 5.69x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +50.9% | +28.9pp | +27.6% | ✗ |
+| 2015-08-21 | $96.48 | McGraw Hill Financial Q2 2015 results | 2.10 | -0.98 | 3.81x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +58.5% | +31.2pp | +35.1% | ✗ |
+| 2015-08-28 | $99.45 | McGraw Hill Financial Q2 2015 results | 2.10 | -1.09 | 4.72x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +55.8% | +28.6pp | +31.7% | ✗ |
+| 2015-09-04 | $93.18 | McGraw Hill Financial Q2 2015 results | 2.10 | -0.83 | 3.08x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +68.2% | +34.8pp | +41.1% | ✗ |
+| 2015-09-11 | $94.57 | McGraw Hill Financial Q2 2015 results | 2.10 | -0.91 | 3.36x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +64.7% | +33.5pp | +39.6% | ✗ |
+| 2015-09-18 | $92.22 | McGraw Hill Financial Q2 2015 results | 2.10 | -0.80 | 2.91x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +70.7% | +38.2pp | +43.8% | ✗ |
+| 2015-09-25 | $89.14 | McGraw Hill Financial Q2 2015 results | 2.10 | -0.64 | 2.44x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +77.8% | +44.0pp | +49.4% | ✗ |
+| 2015-10-02 | $89.32 | McGraw Hill Financial Q2 2015 results | 2.10 | -0.65 | 2.47x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +79.7% | +45.6pp | +49.8% | ✗ |
+| 2015-10-09 | $89.74 | McGraw Hill Financial Q2 2015 results | 2.10 | -0.68 | 2.52x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +80.7% | +50.0pp | +49.9% | ✗ |
+| 2015-10-16 | $92.65 | McGraw Hill Financial Q2 2015 results | 2.10 | -0.82 | 2.98x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +78.6% | +48.5pp | +45.9% | ✗ |
+| 2015-10-23 | $95.39 | McGraw Hill Financial Q2 2015 results | 2.10 | -0.94 | 3.54x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +73.1% | +45.2pp | +42.6% | ✗ |
+| 2015-10-30 | $92.64 | McGraw Hill Financial Q2 2015 results | 2.10 | -0.81 | 2.98x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +71.9% | +44.0pp | +47.6% | ✗ |
+| 2015-11-04 | $97.30 | McGraw Hill Financial Q3 2015 results | 2.10 | -0.87 | 3.14x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +66.2% | +38.9pp | +41.2% | ✗ |
+| 2015-11-13 | $94.70 | McGraw Hill Financial Q3 2015 results | 2.10 | -0.75 | 2.72x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +70.0% | +38.0pp | +45.8% | ✗ |
+| 2015-11-20 | $96.89 | McGraw Hill Financial Q3 2015 results | 2.10 | -0.86 | 3.07x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +70.5% | +42.7pp | +43.3% | ✗ |
+| 2015-11-27 | $96.85 | McGraw Hill Financial Q3 2015 results | 2.10 | -0.86 | 3.06x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +72.9% | +44.4pp | +44.0% | ✗ |
+| 2015-12-04 | $98.33 | McGraw Hill Financial Q3 2015 results | 2.10 | -0.92 | 3.34x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +73.4% | +43.0pp | +42.9% | ✗ |
+| 2015-12-11 | $92.67 | McGraw Hill Financial Q3 2015 results | 2.10 | -0.65 | 2.44x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +88.6% | +52.1pp | +52.8% | ✗ |
+| 2015-12-18 | $93.86 | McGraw Hill Financial Q3 2015 results | 2.10 | -0.71 | 2.60x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +85.4% | +46.6pp | +52.0% | ✗ |
+| 2015-12-24 | $97.49 | McGraw Hill Financial Q3 2015 results | 2.10 | -0.89 | 3.18x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +75.3% | +40.7pp | +47.4% | ✗ |
+| 2015-12-31 | $98.58 | McGraw Hill Financial Q3 2015 results | 2.10 | -0.93 | 3.39x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +75.0% | +39.5pp | +46.8% | ✗ |
+| 2016-01-08 | $88.51 | McGraw Hill Financial Q3 2015 results | 2.10 | -0.38 | 1.99x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +103.7% | +56.1pp | +64.7% | ✗ |
+| 2016-01-15 | $83.22 | McGraw Hill Financial Q3 2015 results | 2.10 | -0.10 | 1.56x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +117.2% | +64.2pp | +76.6% | ✗ |
+| 2016-01-22 | $85.50 | McGraw Hill Financial Q3 2015 results | 2.10 | -0.22 | 1.72x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +116.6% | +63.4pp | +73.2% | ✗ |
+| 2016-01-29 | $85.02 | McGraw Hill Financial Q3 2015 results | 2.10 | -0.20 | 1.69x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +116.6% | +64.8pp | +75.7% | ✗ |
+| 2016-02-05 | $85.76 | McGraw Hill Financial Q4 2015 results | 2.60 | +0.41 | 1.58x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +97.6% | +52.2pp | +75.4% | ✗ |
+| 2016-02-12 | $85.52 | McGraw Hill Financial Q4 2015 results | 2.60 | +0.40 | 1.56x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +114.5% | +67.3pp | +77.2% | ✗ |
+| 2016-02-19 | $87.95 | McGraw Hill Financial Q4 2015 results | 2.60 | +0.28 | 1.74x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +118.7% | +71.6pp | +73.4% | ✗ |
+| 2016-02-26 | $89.30 | McGraw Hill Financial Q4 2015 results | 2.60 | +0.20 | 1.85x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +120.1% | +72.8pp | +72.0% | ✗ |
+| 2016-03-04 | $95.06 | McGraw Hill Financial Q4 2015 results | 2.60 | -0.15 | 2.44x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +102.2% | +63.3pp | +62.7% | ✗ |
+| 2016-03-11 | $95.13 | McGraw Hill Financial Q4 2015 results | 2.60 | -0.16 | 2.44x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +108.3% | +66.2pp | +63.9% | ✗ |
+| 2016-03-18 | $97.79 | McGraw Hill Financial Q4 2015 results | 2.60 | -0.32 | 2.92x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +100.2% | +61.4pp | +60.7% | ✗ |
+| 2016-03-24 | $96.39 | McGraw Hill Financial Q4 2015 results | 2.60 | -0.25 | 2.71x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +96.8% | +65.1pp | +64.3% | ✗ |
+| 2016-04-01 | $99.30 | McGraw Hill Financial Q4 2015 results | 2.60 | -0.38 | 3.19x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +95.6% | +63.9pp | +60.6% | ✗ |
+| 2016-04-08 | $97.23 | McGraw Hill Financial Q4 2015 results | 2.60 | -0.29 | 2.84x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +96.0% | +64.4pp | +65.2% | ✗ |
+| 2016-04-15 | $99.77 | McGraw Hill Financial Q4 2015 results | 2.60 | -0.40 | 3.27x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +94.4% | +62.3pp | +62.1% | ✗ |
+| 2016-04-22 | $103.37 | McGraw Hill Financial Q4 2015 results | 2.60 | -0.55 | 4.10x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +89.8% | +57.7pp | +57.7% | ✗ |
+| 2016-04-27 | $107.92 | McGraw Hill Financial Q1 2016 results | 1.80 | -1.61 | 6.70x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +76.3% | +44.5pp | +51.9% | ✗ |
+| 2016-05-06 | $104.27 | McGraw Hill Financial Q1 2016 results | 1.80 | -1.42 | 4.91x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +87.4% | +53.5pp | +58.4% | ✗ |
+| 2016-05-13 | $104.92 | McGraw Hill Financial Q1 2016 results | 1.80 | -1.44 | 5.17x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +93.7% | +55.8pp | +58.5% | ✗ |
+| 2016-05-20 | $108.07 | McGraw Hill Financial Q1 2016 results | 1.80 | -1.61 | 6.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +86.1% | +49.5pp | +55.0% | ✗ |
+| 2016-05-27 | $111.47 | McGraw Hill Financial Q1 2016 results | 1.80 | -1.69 | 9.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +82.8% | +48.8pp | +51.4% | ✗ |
+| 2016-06-03 | $109.64 | McGraw Hill Financial Q1 2016 results | 1.80 | -1.65 | 7.98x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +85.8% | +51.2pp | +54.7% | ✗ |
+| 2016-06-10 | $107.51 | McGraw Hill Financial Q1 2016 results | 1.80 | -1.50 | 6.45x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +95.2% | +58.3pp | +58.9% | ✗ |
+| 2016-06-17 | $106.74 | McGraw Hill Financial Q1 2016 results | 1.80 | -1.48 | 6.01x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +98.7% | +59.8pp | +61.2% | ✗ |
+| 2016-06-24 | $104.14 | McGraw Hill Financial Q1 2016 results | 1.80 | -1.42 | 4.86x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +101.4% | +61.5pp | +66.3% | ✗ |
+| 2016-07-01 | $107.86 | McGraw Hill Financial Q1 2016 results | 1.80 | -1.61 | 6.66x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +92.1% | +58.4pp | +61.7% | ✗ |
+| 2016-07-08 | $108.87 | McGraw Hill Financial Q1 2016 results | 1.80 | -1.62 | 7.36x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +92.6% | +58.6pp | +61.0% | ✗ |
+| 2016-07-15 | $115.64 | McGraw Hill Financial Q1 2016 results | 1.80 | -1.77 | 16.54x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +85.1% | +51.1pp | +52.6% | ✗ |
+| 2016-07-22 | $117.31 | McGraw Hill Financial Q1 2016 results | 1.80 | -1.81 | 24.47x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +83.9% | +50.7pp | +51.5% | ✗ |
+| 2016-07-29 | $122.20 | S&P Global Q2 2016 results | 2.15 | -1.40 | 9.71x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +69.6% | +35.6pp | +46.4% | ✗ |
+| 2016-08-05 | $120.90 | S&P Global Q2 2016 results | 2.15 | -1.37 | 8.46x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +66.6% | +32.3pp | +48.7% | ✗ |
+| 2016-08-12 | $119.91 | S&P Global Q2 2016 results | 2.15 | -1.34 | 7.68x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +70.7% | +36.7pp | +50.8% | ✗ |
+| 2016-08-19 | $120.30 | S&P Global Q2 2016 results | 2.15 | -1.35 | 7.97x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +71.6% | +36.8pp | +51.1% | ✗ |
+| 2016-08-26 | $121.57 | S&P Global Q2 2016 results | 2.15 | -1.39 | 9.07x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +69.3% | +32.6pp | +50.4% | ✗ |
+| 2016-09-02 | $125.43 | S&P Global Q2 2016 results | 2.15 | -1.49 | 14.98x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +67.9% | +30.5pp | +46.6% | ✗ |
+| 2016-09-09 | $122.22 | S&P Global Q2 2016 results | 2.15 | -1.39 | 9.74x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +72.1% | +32.8pp | +51.2% | ✗ |
+| 2016-09-16 | $123.27 | S&P Global Q2 2016 results | 2.15 | -1.42 | 11.03x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +76.4% | +36.1pp | +50.8% | ✗ |
+| 2016-09-23 | $124.98 | S&P Global Q2 2016 results | 2.15 | -1.47 | 13.96x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +72.0% | +32.3pp | +49.7% | ✗ |
+| 2016-09-30 | $126.56 | S&P Global Q2 2016 results | 2.15 | -1.53 | 18.30x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +57.2% | +18.2pp | +48.6% | ✗ |
+| 2016-10-07 | $123.86 | S&P Global Q2 2016 results | 2.15 | -1.44 | 11.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +59.1% | +20.7pp | +52.4% | ✗ |
+| 2016-10-14 | $123.15 | S&P Global Q2 2016 results | 2.15 | -1.42 | 10.86x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +54.3% | +20.2pp | +53.7% | ✗ |
+| 2016-10-21 | $123.99 | S&P Global Q2 2016 results | 2.15 | -1.44 | 12.11x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +54.7% | +21.0pp | +53.1% | ✗ |
+| 2016-10-28 | $122.28 | S&P Global Q2 2016 results | 2.15 | -1.39 | 9.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +43.0% | +13.6pp | +55.5% | ✗ |
+| 2016-11-04 | $122.59 | S&P Global Q3 2016 results | 2.75 | -0.87 | 17.67x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +52.1% | +17.0pp | +55.5% | ✗ |
+| 2016-11-11 | $125.46 | S&P Global Q3 2016 results | 2.75 | -0.95 | 38.76x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +51.3% | +18.4pp | +52.3% | ✗ |
+| 2016-11-18 | $121.80 | S&P Global Q3 2016 results | 2.75 | -0.85 | 15.29x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +51.7% | +22.0pp | +57.3% | ✗ |
+| 2016-11-25 | $119.92 | S&P Global Q3 2016 results | 2.75 | -0.80 | 11.50x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +48.3% | +25.1pp | +59.9% | ✗ |
+| 2016-12-02 | $115.69 | S&P Global Q3 2016 results | 2.75 | -0.69 | 7.20x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +61.2% | +31.3pp | +66.0% | ✗ |
+| 2016-12-09 | $115.00 | S&P Global Q3 2016 results | 2.75 | -0.67 | 6.77x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +50.2% | +29.6pp | +67.2% | ✗ |
+| 2016-12-16 | $113.10 | S&P Global Q3 2016 results | 2.75 | -0.62 | 5.78x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +50.5% | +31.0pp | +70.0% | ✗ |
+| 2016-12-23 | $109.02 | S&P Global Q3 2016 results | 2.75 | -0.52 | 4.32x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +51.6% | +40.5pp | +76.2% | ✗ |
+| 2016-12-30 | $107.54 | S&P Global Q3 2016 results | 2.75 | -0.48 | 3.94x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +59.9% | +44.6pp | +78.6% | ✗ |
+| 2017-01-06 | $114.60 | S&P Global Q3 2016 results | 2.75 | -0.66 | 6.54x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +53.5% | +38.0pp | +67.6% | ✗ |
+| 2017-01-13 | $112.42 | S&P Global Q3 2016 results | 2.75 | -0.60 | 5.48x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +59.8% | +41.4pp | +70.8% | ✗ |
+| 2017-01-20 | $116.00 | S&P Global Q3 2016 results | 2.75 | -0.69 | 7.42x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +65.8% | +43.9pp | +65.6% | ✗ |
+| 2017-01-27 | $120.69 | S&P Global Q3 2016 results | 2.75 | -0.80 | 12.82x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +59.9% | +39.5pp | +59.2% | ✗ |
+| 2017-02-03 | $122.60 | S&P Global Q3 2016 results | 2.75 | -0.86 | 17.70x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +61.1% | +39.0pp | +56.9% | ✗ |
+| 2017-02-08 | $125.08 | S&P Global Q4 2016 results | 2.45 | -0.58 | 2.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +57.7% | +35.4pp | +54.0% | ✗ |
+| 2017-02-17 | $130.39 | S&P Global Q4 2016 results | 2.45 | -0.74 | 3.92x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +54.9% | +32.7pp | +48.0% | ✗ |
+| 2017-02-24 | $130.82 | S&P Global Q4 2016 results | 2.45 | -0.75 | 4.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +56.8% | +34.7pp | +47.6% | ✗ |
+| 2017-03-03 | $129.64 | S&P Global Q4 2016 results | 2.45 | -0.73 | 3.78x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +58.6% | +36.9pp | +49.1% | ✗ |
+| 2017-03-10 | $131.69 | S&P Global Q4 2016 results | 2.45 | -0.76 | 4.18x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +52.0% | +32.3pp | +46.9% | ✗ |
+| 2017-03-17 | $129.99 | S&P Global Q4 2016 results | 2.45 | -0.73 | 3.70x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +59.2% | +36.3pp | +48.9% | ✗ |
+| 2017-03-24 | $129.69 | S&P Global Q4 2016 results | 2.45 | -0.72 | 3.65x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +61.4% | +37.6pp | +49.5% | ✗ |
+| 2017-03-31 | $130.74 | S&P Global Q4 2016 results | 2.45 | -0.74 | 3.84x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +64.0% | +39.8pp | +48.5% | ✗ |
+| 2017-04-07 | $130.05 | S&P Global Q4 2016 results | 2.45 | -0.73 | 3.71x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +67.9% | +40.9pp | +49.7% | ✗ |
+| 2017-04-13 | $128.28 | S&P Global Q4 2016 results | 2.45 | -0.70 | 3.42x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +70.5% | +41.4pp | +52.1% | ✗ |
+| 2017-04-21 | $131.52 | S&P Global Q4 2016 results | 2.45 | -0.75 | 3.98x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +68.0% | +40.1pp | +48.7% | ✗ |
+| 2017-04-26 | $134.23 | S&P Global Q1 2017 results | 2.80 | -0.43 | 4.38x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +66.9% | +39.6pp | +46.1% | ✗ |
+| 2017-05-05 | $137.55 | S&P Global Q1 2017 results | 2.80 | -0.48 | 5.26x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +61.2% | +34.3pp | +43.0% | ✗ |
+| 2017-05-12 | $136.70 | S&P Global Q1 2017 results | 2.80 | -0.47 | 5.01x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +59.6% | +34.8pp | +44.2% | ✗ |
+| 2017-05-19 | $138.14 | S&P Global Q1 2017 results | 2.80 | -0.49 | 5.45x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +56.9% | +32.7pp | +42.9% | ✗ |
+| 2017-05-26 | $140.21 | S&P Global Q1 2017 results | 2.80 | -0.52 | 6.20x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +55.3% | +34.1pp | +41.0% | ✗ |
+| 2017-06-02 | $144.16 | S&P Global Q1 2017 results | 2.80 | -0.57 | 8.25x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +51.1% | +34.2pp | +37.3% | ✗ |
+| 2017-06-09 | $146.81 | S&P Global Q1 2017 results | 2.80 | -0.60 | 10.44x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +55.7% | +33.4pp | +35.0% | ✗ |
+| 2017-06-16 | $148.49 | S&P Global Q1 2017 results | 2.80 | -0.62 | 12.46x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +54.1% | +31.2pp | +33.7% | ✗ |
+| 2017-06-23 | $146.70 | S&P Global Q1 2017 results | 2.80 | -0.60 | 10.33x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +58.6% | +33.4pp | +35.6% | ✗ |
+| 2017-06-30 | $145.99 | S&P Global Q1 2017 results | 2.80 | -0.59 | 9.66x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +58.7% | +33.3pp | +36.6% | ✗ |
+| 2017-07-07 | $148.79 | S&P Global Q1 2017 results | 2.80 | -0.63 | 12.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +61.9% | +34.4pp | +34.4% | ✗ |
+| 2017-07-14 | $149.47 | S&P Global Q1 2017 results | 2.80 | -0.63 | 14.01x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +64.1% | +37.4pp | +34.1% | ✗ |
+| 2017-07-21 | $153.85 | S&P Global Q1 2017 results | 2.80 | -0.68 | 29.84x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +58.5% | +34.0pp | +30.7% | ✗ |
+| 2017-07-28 | $153.47 | S&P Global Q2 2017 results | 1.85 | -1.61 | 18.75x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +61.8% | +35.3pp | +31.4% | ✗ |
+| 2017-08-04 | $151.03 | S&P Global Q2 2017 results | 1.85 | -1.58 | 13.38x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +70.8% | +48.3pp | +34.2% | ✗ |
+| 2017-08-11 | $148.41 | S&P Global Q2 2017 results | 1.85 | -1.54 | 9.33x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +75.3% | +51.6pp | +37.2% | ✗ |
+| 2017-08-18 | $150.10 | S&P Global Q2 2017 results | 1.85 | -1.56 | 10.93x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +73.6% | +50.4pp | +36.4% | ✗ |
+| 2017-08-25 | $151.27 | S&P Global Q2 2017 results | 1.85 | -1.57 | 12.36x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +72.3% | +51.6pp | +36.1% | ✗ |
+| 2017-09-01 | $153.72 | S&P Global Q2 2017 results | 1.85 | -1.60 | 16.86x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +71.9% | +49.8pp | +34.6% | ✗ |
+| 2017-09-08 | $151.93 | S&P Global Q2 2017 results | 1.85 | -1.58 | 13.33x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +78.9% | +53.9pp | +36.8% | ✗ |
+| 2017-09-15 | $154.00 | S&P Global Q2 2017 results | 1.85 | -1.60 | 15.37x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +65.1% | +40.6pp | +35.5% | ✗ |
+| 2017-09-22 | $156.82 | S&P Global Q2 2017 results | 1.85 | -1.63 | 24.29x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +63.8% | +40.0pp | +33.6% | ✗ |
+| 2017-09-29 | $156.31 | S&P Global Q2 2017 results | 1.85 | -1.62 | 22.02x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +60.2% | +38.5pp | +34.6% | ✗ |
+| 2017-10-06 | $158.45 | S&P Global Q2 2017 results | 1.85 | -1.65 | 35.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +56.9% | +37.0pp | +33.4% | ✗ |
+| 2017-10-13 | $161.82 | S&P Global Q2 2017 results | 1.85 | -1.69 | 726.78x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +58.9% | +38.6pp | +31.4% | ✗ |
+| 2017-10-20 | $161.55 | S&P Global Q2 2017 results | 1.85 | -1.68 | 90.03x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +57.6% | +37.6pp | +32.4% | ✗ |
+| 2017-10-27 | $162.16 | S&P Global Q3 2017 results | 1.70 | -1.74 | 14.72x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +56.3% | +35.2pp | +32.7% | ✗ |
+| 2017-11-03 | $158.69 | S&P Global Q3 2017 results | 1.70 | -1.70 | 10.29x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +65.7% | +43.2pp | +36.6% | ✗ |
+| 2017-11-10 | $156.94 | S&P Global Q3 2017 results | 1.70 | -1.68 | 8.89x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +65.3% | +41.5pp | +39.0% | ✗ |
+| 2017-11-17 | $160.59 | S&P Global Q3 2017 results | 1.70 | -1.71 | 11.27x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +66.3% | +41.3pp | +36.8% | ✗ |
+| 2017-11-24 | $164.14 | S&P Global Q3 2017 results | 1.70 | -1.75 | 16.81x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +64.1% | +40.6pp | +34.8% | ✗ |
+| 2017-12-01 | $166.17 | S&P Global Q3 2017 results | 1.70 | -1.77 | 23.01x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +61.8% | +39.0pp | +34.1% | ✗ |
+| 2017-12-08 | $171.21 | S&P Global Q3 2017 results | 1.70 | -1.83 | 176.22x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +62.8% | +40.2pp | +31.1% | ✗ |
+| 2017-12-15 | $169.05 | S&P Global Q3 2017 results | 1.70 | -1.80 | 34.70x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +63.0% | +40.5pp | +34.0% | ✗ |
+| 2017-12-22 | $167.83 | S&P Global Q3 2017 results | 1.70 | -1.78 | 26.27x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +64.4% | +40.5pp | +36.2% | ✗ |
+| 2017-12-29 | $169.40 | S&P Global Q3 2017 results | 1.70 | -1.80 | 38.17x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +64.4% | +39.4pp | +36.0% | ✗ |
