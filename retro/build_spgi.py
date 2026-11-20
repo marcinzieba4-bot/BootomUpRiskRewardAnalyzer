@@ -43,6 +43,16 @@ is not reported from the Q4 2012 release (a discontinued operation): its signal 
 retro/templates/spgi2_engine.py.tmpl, the None-tolerant copy of the engine used whenever the latest release's segment table is
 not the 2007-2009 one (the BKR bkr3 encoding).
 
+From 2014 (retro/README.md, "SPGI 2014-2017"): McGraw Hill Construction is discontinued from the Q3 2014 release, and the 8-K of
+2014-11-05 that recasts FY2013 without it is a history vintage of its own (the MSFT recast rule); the company's figure excluding only
+one-offs stands for 2013-2015 (FY2014 $3.88 against GAAP $(1.08)); from 2016 the adjusted figures and guides also remove deal-related
+amortization, which recurs, so FY2016 is GAAP ($7.94) and the FY2016 guides feed nothing ('eps_guide_amort', the guide line only: FY15's
+$4.53 stands), while the FY2017 GAAP ranges are the guide; FY2017's reported revenue 'unchanged from the prior year' is 0% (the RCL and
+LOW rule), and its later words leave the range standing; the Financial Services line keeps the old scope from the release's rows
+(Ratings, S&P Capital IQ / Market Intelligence, S&P Dow Jones Indices, less the royalty elimination; Market Intelligence from its own
+row once it is inside Market and Commodities Intelligence); a year-ago loss measures EPS growth on its absolute value (the CAT rule);
+S&P Global Inc. from the 8-K of 2016-04-29 (dated 2016-05-02) and NYSE: SPGI from the S-3 of 2016-06-29 (dated 2016-06-30).
+
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
 is the first trading day after it. Every earnings 8-K of 2007-2009 was accepted before the open (06:59-07:58 ET; the call at 8:30 a.m.).
 
@@ -52,6 +62,7 @@ Usage
   python3 retro/build_spgi.py --weekly 2008-01-01 2008-12-31
   python3 retro/build_spgi.py --weekly 2009-01-05 2009-12-31
   python3 retro/build_spgi.py --weekly 2010-01-04 2013-12-31
+  python3 retro/build_spgi.py --weekly 2014-01-06 2017-12-31
   python3 retro/build_spgi.py 2008-01-25
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/SPGI/<AS_OF>
 """
@@ -80,7 +91,8 @@ ENGINE_THRESHOLDS = {"fs": (-7, 4, 14, 18), "mhe": (-16, -6, 5, 23), "sales": (1
 RULE_T_KEYS = {"fs": (1, False), "mhe": (1, False), "sales": (1, False), "eps": (1, False),
                "op_margin": (10, False)}           # (rounding unit, lower is better)
 GUIDE_KEYS = {"fy", "published", "source", "doc", "quotes", "words", "eps_guide", "eps_guide_note", "eps_growth", "eps_growth_base",
-              "eps_growth_base_note", "rev_guide_pct", "seg_words", "rev_words", "note"}
+              "eps_growth_base_note", "rev_guide_pct", "seg_words", "rev_words", "note",
+              "eps_guide_amort", "eps_guide_amort_note"}   # from 2016: an adjusted range that also removes recurring amortization (no field)
 PRINT_TOL = {None: 2, "k": 2, "m1": 150, "m0": 1500}   # segment sums, $ thousands: the release's own rounding (thousands, $0.1M, $1M)
 OLD_SEGMENTS = "Information & Media"                     # the third segment of the 2007-2009 tables (spgi_engine.py.tmpl)
 
@@ -148,8 +160,11 @@ def check_print(p):
             "mhe_pct": pct(r["mhe_k"], r["mhe_prior_k"]) if r["mhe_k"] is not None else None,
             "im_pct": pct(r["im_k"], r["im_prior_k"]),
             "op_margin": round(o, 2), "op_margin_bp": round((o - o0) * 100, 1),
-            "eps_pct": round((e1 / e0q - 1) * 100, 1), "diluted_shares_m": r["diluted_shares_k"] / 1000}
-    assert e0q > 0, (p["quarter"], "a year-ago loss needs its encoding first")
+            # growth on a year-ago loss is measured on its absolute value, so its direction stays right (the CAT rule; Q4 2015,
+            # whose year-ago Q4 2014 carries the legal settlements); every other base is positive, where the two forms agree
+            "eps_pct": round((e1 / e0q - 1) * 100, 1) if e0q > 0 else round((e1 - e0q) / abs(e0q) * 100, 1),
+            "diluted_shares_m": r["diluted_shares_k"] / 1000}
+    assert e0q != 0, (p["quarter"], "a zero year-ago EPS needs its encoding first")
     for k, v in want.items():
         assert p[k] == v or (v is not None and abs(p[k] - v) < 1e-9), (p["quarter"], k, p[k], v)
 
@@ -265,6 +280,13 @@ def build(as_of, facts, raw, spx, engines, out):
         eps_now = eps_hist[last_fy]
         eps_fig = None
         eps_label = f"{fy_e}: no numeric EPS guide yet, FY{last_fy % 100:02d}'s ${money(eps_now)} stands"
+    # from 2016 the adjusted ranges also remove deal-related amortization, which recurs: not a figure excluding only one-offs (the
+    # CMCSA, PFE and AVGO reading), so they feed nothing and are shown in the guide line only (retro/README.md, "SPGI 2014-2017")
+    ga = stated("eps_guide_amort")
+    amort_fig = f"${eps_rng(*ga['eps_guide_amort'])}" if ga else None
+    if ga and not ge:
+        eps_label = (f"{fy_e}: the EPS guide ({amort_fig}, {ga['doc']}) also removes recurring deal-related amortization (no "
+                     f"field), FY{last_fy % 100:02d}'s ${money(eps_now)} stands")
     if gr:                                             # consolidated revenue growth as stated (no next-quarter guide)
         fwd = [float(v) for v in gr["rev_guide_pct"]]
         rev_fig = pct_range(*gr["rev_guide_pct"])
@@ -283,8 +305,11 @@ def build(as_of, facts, raw, spx, engines, out):
         bits = ([f"revenue {rev_fig}"] if gr else []) + \
                ([f"'{gs['seg_words']}' (components: no total is derived)"] if gs and not gr else []) + \
                ([f"revenue growth in words, '{grw['rev_words']}' (no field)"] if grw and not gr else []) + \
+               ([f"revenue growth in words since, '{grw['rev_words']}' ({grw['doc']}: the range stands)"]
+                if grw and gr and grw["published"] > gr["published"] else []) + \
                ([f"EPS {eps_fig}" + (f" ({ge['eps_guide_note']})" if ge.get("eps_guide_note") else "")] if ge else
-                ["no EPS guide in numbers"]) + \
+                [] if ga else ["no EPS guide in numbers"]) + \
+               ([f"adjusted EPS {amort_fig} ({ga['eps_guide_amort_note']}: no field, amortization recurs)"] if ga else []) + \
                ([f"'{gw['words']}' (words or a one-sided bound: no field)"] if gw else []) + \
                [g["note"] for g in guides[-1:] if g.get("note")]
         guide_text = f"{fy_now} guide ({', '.join(dict.fromkeys(x['doc'] for x in guides))}): " + "; ".join(bits)
@@ -336,8 +361,10 @@ def build(as_of, facts, raw, spx, engines, out):
     theme_summary = "no disruption theme has dated evidence"
     why = h["why"]
     cat3 = (f"(3) {fy_now} EPS guide {eps_fig} ({ge['doc']}): the company's own read of the year" if ge else
-            f"(3) A {fy_now} EPS guide in numbers — none yet")
-    cat4 = (f"(4) {fy_now} revenue guide {rev_fig} ({gr['doc']}): issuance, adoptions and advertising in one number" if gr else
+            f"(3) A {fy_now} EPS guide on the history's basis — none (the adjusted guide also removes deal-related amortization)"
+            if ga else f"(3) A {fy_now} EPS guide in numbers — none yet")
+    cat4_tail = h.get("cat4_tail", "issuance, adoptions and advertising in one number")
+    cat4 = (f"(4) {fy_now} revenue guide {rev_fig} ({gr['doc']}): {cat4_tail}" if gr else
             f"(4) A {fy_now} consolidated revenue guide in numbers — none yet" +
             (" (revenue growth in words only)" if grw else " (segment ranges only)" if gs else ""))
 

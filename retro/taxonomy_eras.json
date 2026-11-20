@@ -1928,6 +1928,21 @@
     "note": "first in a filing under CIK 64040 in the S-3 of 2016-06-29, EDGAR full-text search"
    },
    {
+    "term": "S&P Capital IQ and SNL",
+    "first_seen": "2015-09-08",
+    "note": "McGraw Hill Financial's segment after the SNL Financial acquisition (2015-09-01); first in a filing under CIK 64040 in the 8-K of 2015-09-08 (ex.99.1, 'The combination of S&P Capital IQ and SNL Financial'), EDGAR full-text search"
+   },
+   {
+    "term": "S&P Global Platts",
+    "first_seen": "2016-06-29",
+    "note": "S&P Global's commodities business; first in a filing under CIK 64040 in the S-3 of 2016-06-29, EDGAR full-text search"
+   },
+   {
+    "term": "Market and Commodities Intelligence",
+    "first_seen": "2016-11-03",
+    "note": "S&P Global's segment of Market Intelligence and Platts from the fourth quarter of 2016; first in a filing under CIK 64040 in the Q3 2016 results (8-K, ex.99.1, accepted 2016-11-03 before the open: 'a new segment to be named Market and Commodities Intelligence'), EDGAR full-text search"
+   },
+   {
     "term": "Mobility Global",
     "first_seen": "2026-03-31",
     "note": "S&P Global's mobility business, distributed on 2026-07-01; first in a filing under CIK 64040 in the DEF 14A of 2026-03-31, EDGAR full-text search"
