@@ -21723,7 +21723,12 @@ Controls and checks (before any outcome of these dates):
 - **Regression:** the 427 models of 2009-2017 rebuild byte-identical. The shared code is untouched but the firewall tool's V entry (a
   planted withdrawal of every guided year and a later vintage with planted CRYPTO words).
 - **Index:** `index.json` gains the 209 V rows; no other row changes.
-- **Firewall:** run after the build was committed, before any outcome of these dates (the result is recorded in the next commit).
+- **Firewall** (run after the build was committed, before any outcome of these dates): passes at the 23 cutoffs above (every print,
+  vintage and dividend date of the range, CRYPTO's live date and 2022-01-01), 0 files changed and no planted text (431 to 636 dates each).
+  The planted facts add, to the 2014-2017 set, a planted withdrawal of every guided year ahead of its planted numbers and a later vintage
+  with planted CRYPTO words. As a positive control the plants reach the first date after them: rebuilding 2020-05-15 (cutoff 2020-05-01) and
+  2021-12-03 (cutoff 2021-11-19) with the plants stops at the builder's refusal of the planted guide list, and with the planted lists
+  taken out, at its check of the planted print; the controls above show the CRYPTO words reaching their dates.
 
 Seen in the build (method behaviour, not tuned):
 - **RICH on 199 dates and FAIR on 10 (2021-10-28 to 2021-12-31); legacy tier AVOID 182, WATCHLIST 21, ACCUMULATE 6.** Robustness agrees
