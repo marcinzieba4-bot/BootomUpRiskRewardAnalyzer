@@ -1,0 +1,287 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "SPGI",
+ "company": "S&P Global Inc.",
+ "as_of": "2023-09-15",
+ "price_date": "2023-09-15",
+ "price": 388.26,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); ratings, education and information signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "S&P Global 'is a provider of credit ratings, benchmarks, analytics and workflow solutions in the global capital, commodity, automotive and engineering markets' (Item 1); Item 1A: 'Changes in the volume of securities issued and traded in domestic and/or global capital markets, asset levels and flows into investment products, changes in interest rates and volatility in the financial markets, and volatility in the commodities markets impact our business, financial condition or results of operations.', and no risk factor calling a business cyclical; a fall in debt issuance or the markets it serves cuts revenue; no risk factor names a live disruption theme as a competitive risk",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "S&P Global 'is a provider of credit ratings, benchmarks, analytics and workflow solutions in the global capital, commodity, automotive and engineering markets' (Item 1); Item 1A: 'Changes in the volume of securities issued and traded in domestic and/or global capital markets, asset levels and flows into investment products, changes in interest rates and volatility in the financial markets, and volatility in the commodities markets impact our business, financial condition or results of operations.', and no risk factor calling a business cyclical; a fall in debt issuance or the markets it serves cuts revenue; no risk factor names a live disruption theme as a competitive risk. durable franchise (obsolescence risk 2/5); price rich; +134% to EPP floor; model-vs-market gap -1.98; conservative 2yr -42%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": Infinity,
+  "ratio_b_fmt": "infx",
+  "epp": 166.25,
+  "epp_gap_pct": 133.5,
+  "epp_adj": -0.2,
+  "proxy_composite": 1.55,
+  "sca": 0.078,
+  "adj_composite": 1.428,
+  "market_composite": 3.41,
+  "adj_gap": -1.98,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": -41.7,
+  "scenarios": {
+   "BEAR": {
+    "eps": 4.64,
+    "pe": 16.1,
+    "price": 75,
+    "desc": "EPS -27.2%/yr (worst year FY13-FY22, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 5.8,
+    "pe": 25.7,
+    "price": 149,
+    "desc": "EPS +-18.6%/yr (FY23 guide + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 11.31,
+    "pe": 33.0,
+    "price": 373,
+    "desc": "EPS +13.7%/yr (FY13-FY22 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 17.91,
+    "pe": 37.9,
+    "price": 679,
+    "desc": "EPS +43.1%/yr (best 2-yr run FY13-FY22); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 133.5,
+   "adj_gap": -1.98,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -41.7,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 7.05,
+   "epp_gap_pct": 133.5,
+   "adj_gap": -1.66,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -41.7,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 133.5,
+   "adj_gap": -2.29,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -41.7,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 133.5,
+   "adj_gap": -1.93,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -41.7,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 133.5,
+   "adj_gap": -2.03,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -41.7,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 133.5,
+   "adj_gap": -1.68,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -41.7,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 101.7,
+   "adj_gap": -1.98,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -41.7,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 133.5,
+   "adj_gap": -1.84,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -41.7,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "RICH"
+ ],
+ "summary": "SPGI (retrospective, 2023-09-15) ✕ AVOID — Ratio B infx (80.7% downside to Bear $75 / +-3.9% upside to Bull $373) | Adj composite 1.43 vs market 3.41: gap -1.98 [OVERVALUED] | +134% above the EPP floor $166 (19x FY23E $8.75) | Conservative 2-yr case: -41.7% total (-20.9%/yr) | At 44.4x FY23E the 15% hurdle price $513 sits above the BULL case; Financial Services revenue +5.4% in Q2 2023, forward revenues +10-12% (FY23 revenue guide); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "SP99",
+   "published": "2023-02-10",
+   "filed": "accepted 2023-02-09 20:31 ET, after the close, so dated the next trading day",
+   "title": "S&P Global FY2022 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404023000058/spgi-20221231.htm",
+   "supports": "annual history (statements of income 2020-2022: revenue, operating profit, pre-tax income, diluted EPS and shares; segment revenue and operating profit), cash, operating cash flow, repurchases, the dividend rate, Items 1 and 1A"
+  },
+  {
+   "id": "SP92",
+   "published": "2022-02-09",
+   "filed": "accepted 2022-02-08 17:17 ET, after the close, so dated the next trading day",
+   "title": "S&P Global FY2021 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404022000055/spgi-20211231.htm",
+   "supports": "annual history (statements of income 2019-2021: revenue, operating profit, pre-tax income, diluted EPS and shares; segment revenue and operating profit), cash, operating cash flow, repurchases, the dividend rate, Items 1 and 1A"
+  },
+  {
+   "id": "SP87",
+   "published": "2021-02-10",
+   "filed": "accepted 2021-02-09 17:08 ET, after the close, so dated the next trading day",
+   "title": "S&P Global FY2020 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404021000063/spgi-20201231.htm",
+   "supports": "annual history (selected financial data: revenue, pre-tax income, diluted EPS; segment revenue and operating profit), cash, operating cash flow, repurchases, the dividend rate, diluted shares, Items 1 and 1A"
+  },
+  {
+   "id": "SP82",
+   "published": "2020-02-11",
+   "filed": "accepted 2020-02-10 17:30 ET, after the close, so dated the next trading day",
+   "title": "S&P Global FY2019 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404020000055/spgi-20191231x10k.htm",
+   "supports": "annual history (selected financial data: revenue, pre-tax income, diluted EPS; segment revenue and operating profit), cash, operating cash flow, repurchases, the dividend rate, diluted shares, Items 1 and 1A"
+  },
+  {
+   "id": "SP77",
+   "published": "2019-02-13",
+   "filed": "accepted 2019-02-12 18:15 ET, after the close, so dated the next trading day",
+   "title": "S&P Global FY2018 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404019000059/spgi-20181231x10k.htm",
+   "supports": "annual history (selected financial data: revenue, pre-tax income, diluted EPS; segment revenue and operating profit), cash, operating cash flow, repurchases, the dividend rate, diluted shares, Items 1 and 1A"
+  },
+  {
+   "id": "SP70",
+   "published": "2018-02-12",
+   "filed": "accepted 2018-02-09 16:40 ET, after the close, so dated the next trading day",
+   "title": "S&P Global FY2017 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404018000061/spgi-20171231x10k.htm",
+   "supports": "annual history (selected financial data: revenue, pre-tax income, diluted EPS; segment revenue and operating profit), cash, operating cash flow, repurchases, the dividend rate, diluted shares, Items 1 and 1A"
+  },
+  {
+   "id": "SP57",
+   "published": "2016-02-04",
+   "filed": "8-K accepted 2016-02-04 07:26 ET, before the open",
+   "title": "McGraw Hill Financial Q4 2015 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404016000036/mhfi4q2015earningsreleaset.htm",
+   "supports": "Q4 2015: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2015 actuals; FY2016 outlook"
+  },
+  {
+   "id": "SP52",
+   "published": "2015-02-12",
+   "filed": "8-K accepted 2015-02-12 07:10 ET, before the open",
+   "title": "McGraw Hill Financial Q4 2014 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000114420415008134/v401217_ex99.htm",
+   "supports": "Q4 2014: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2014 actuals; FY2015 outlook"
+  },
+  {
+   "id": "SP46",
+   "published": "2014-02-07",
+   "filed": "accepted 2014-02-07 09:09 ET, before the open",
+   "title": "McGraw Hill Financial FY2013 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404014000007/mhfi-20131231x10k.htm",
+   "supports": "annual history (selected financial data: revenue, pre-tax income, diluted EPS from continuing operations; segment revenue and operating profit), cash, operating cash flow, repurchases, the dividend rate, diluted shares, Items 1 and 1A"
+  },
+  {
+   "id": "SP98",
+   "published": "2023-02-09",
+   "filed": "8-K accepted 2023-02-09 07:34 ET, before the open",
+   "title": "S&P Global Q4 2022 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404023000055/a4q2022earningsrelease.htm",
+   "supports": "Q4 2022: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2022 actuals; FY2023 outlook"
+  },
+  {
+   "id": "SP100",
+   "published": "2023-04-27",
+   "filed": "8-K accepted 2023-04-27 07:16 ET, before the open",
+   "title": "S&P Global Q1 2023 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404023000110/spgi1q2023-earningsrelease.htm",
+   "supports": "Q1 2023: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2023 outlook"
+  },
+  {
+   "id": "SP101",
+   "published": "2023-07-27",
+   "filed": "8-K accepted 2023-07-27 07:10 ET, before the open",
+   "title": "S&P Global Q2 2023 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404023000156/spgi2q2023-earningsrelease.htm",
+   "supports": "Q2 2023: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2023 outlook"
+  },
+  {
+   "id": "SP4",
+   "published": "2007-02-28",
+   "filed": "accepted 2007-02-28 14:02 ET, during the session",
+   "title": "The McGraw-Hill Companies FY2006 10-K and Exhibit 13",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000095012307002897/y30806exv13.htm",
+   "supports": "Eleven-Year Financial Review 1996-2006 (revenue and operating profit by segment, pre-tax income, diluted EPS from continuing operations), cash, operating cash flow, repurchases, the dividend rate, Items 1 and 1A",
+   "also": "https://www.sec.gov/Archives/edgar/data/64040/000095012307002897/y30806e10vk.htm"
+  },
+  {
+   "id": "SP40",
+   "published": "2013-04-30",
+   "filed": "8-K accepted 2013-04-30 07:10 ET, before the open",
+   "title": "The McGraw-Hill Companies Q1 2013 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000114420413024851/v343076_ex99.htm",
+   "supports": "Q1 2013: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2013 outlook; the NYSE symbol MHFI from May 14, 2013"
+  },
+  {
+   "id": "SP61",
+   "published": "2016-06-30",
+   "filed": "S-3 accepted 2016-06-29 16:18 ET, after the close, so dated the next trading day",
+   "title": "S&P Global S-3 (shelf registration)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000119312516636585/d209710ds3.htm",
+   "supports": "the NYSE symbol SPGI (the first filing by the company that states it)"
+  },
+  {
+   "id": "W0",
+   "published": "2023-09-15",
+   "title": "Yahoo Finance daily prices, SPGI and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/SPGI/history",
+   "supports": "close $388.26 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-20"
+}

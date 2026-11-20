@@ -1946,6 +1946,41 @@
     "term": "Mobility Global",
     "first_seen": "2026-03-31",
     "note": "S&P Global's mobility business, distributed on 2026-07-01; first in a filing under CIK 64040 in the DEF 14A of 2026-03-31, EDGAR full-text search"
+   },
+   {
+    "term": "Commodity Insights",
+    "first_seen": "2022-02-28",
+    "note": "S&P Global's commodities segment after the IHS Markit merger (Platts and IHS Markit's resources businesses); first in a filing under CIK 64040 in the 8-K of 2022-02-28 (ex.99, the pro forma combined segments), EDGAR full-text search"
+   },
+   {
+    "term": "S&P Global Commodity Insights",
+    "first_seen": "2022-05-04",
+    "note": "the segment's full name; first in a filing under CIK 64040 in the Q1 2022 10-Q, EDGAR full-text search"
+   },
+   {
+    "term": "Engineering Solutions",
+    "first_seen": "2022-02-28",
+    "note": "S&P Global's engineering segment from the IHS Markit merger (sold on 2023-05-02); first in a filing under CIK 64040 in the 8-K of 2022-02-28 (ex.99), EDGAR full-text search"
+   },
+   {
+    "term": "S&P Global Mobility",
+    "first_seen": "2022-05-04",
+    "note": "S&P Global's automotive segment from the IHS Markit merger (distributed as Mobility Global on 2026-07-01); first in a filing under CIK 64040 in the Q1 2022 10-Q, EDGAR full-text search"
+   },
+   {
+    "term": "IHS Markit",
+    "first_seen": "2017-02-09",
+    "note": "the company formed by the 2016 IHS-Markit merger, merged into S&P Global on 2022-02-28; first in a filing under CIK 64040 in the FY2016 10-K (its peer group, 'IHS Markit Ltd.'), EDGAR full-text search"
+   },
+   {
+    "term": "OSTTRA",
+    "first_seen": "2022-02-28",
+    "note": "the post-trade joint venture with CME Group (formed September 2021, sold in 2025); first in a filing under CIK 64040 in the 8-K of 2022-02-28 (ex.99), EDGAR full-text search"
+   },
+   {
+    "term": "S&P Global Energy",
+    "first_seen": "2025-11-13",
+    "note": "the Commodity Insights segment's new name; first in a filing under CIK 64040 in the Investor Day 8-K of 2025-11-13 (ex.99), EDGAR full-text search"
    }
   ]
  }

@@ -1,0 +1,154 @@
+
+════════════════════════════════════════════════════════════════════════
+  SPGI  ·  S&P Global Inc.  ·  $349.45  ·  RETROSPECTIVE as of 2022-07-15
+  Signal: ◐ WATCHLIST   Ratio B: 1.46x   Adj gap: +0.39  [MODESTLY UNDERVALUED]
+  Point-in-time: 17 sources, latest published 2022-07-15; latest print Q1 2022 (May 3)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2022E revenue, USD bn  →  FY2024E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                      FY2022E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Ratings                   $     4.8  $   4.8  $   5.5      +0.0      +0.7
+    +13.6% revenue in FY21
+  Market Intelligence       $     2.6  $   2.6  $   3.0      +0.0      +0.4
+    +6.7% revenue in FY21
+  Indices                   $     1.3  $   1.3  $   1.6      +0.0      +0.3
+    +16.2% revenue in FY21
+  Platts                    $     1.1  $   1.1  $   1.3      +0.0      +0.2
+    +8.2% revenue in FY21
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $     9.8  $   9.8  $  11.4      +0.0      +1.6
+  FY2022E = FY21 $8.30B × (1 + 18.5%: no FY22 revenue guide in numbers, Q1 2022 growth, applied to the year); split pro rata to FY21 revenue by segment (SP92)
+  Q1 2022 (May 3): revenue $2.39B +18.5%; Financial Services +5.7%; Education n/r; Commodity Insights +51.2%;
+  segment operating margin 100.50% (+4261.5bp); diluted EPS $4.47 vs $3.12 (+43.3%)
+  Financial Services revenue $1,878.0M against $1,776.0M a year earlier (+5.7%), McGraw-Hill Education not reported, Commodity Insights $363.0M (+51.2%), as the release's segment table shows them; 'Adjusted pro forma net income declined 1% to $1.01 billion and adjusted pro forma diluted earnings per share increased 0.3% to $2.89 primarily due to a 1% decrease in pro forma fully diluted shares outstanding.'; Financial Services line: Ratings $868.0M + Market Intelligence $727.0M + Indices $322.0M less the royalty elimination $39.0M; McGraw-Hill Education, sold in 2013, is not reported (n/r); outside the Financial Services line and Commodity Insights: Mobility $115.0M (none a year earlier); Engineering Solutions $33.0M (none a year earlier)
+  FY22 guide (Q1 2022 release, 8-K of 2022-06-01): no EPS guide in numbers; guidance suspended: no FY2022 field (the V 'withdrawn' encoding)
+
+  FY2022E EPS check:  $9.8B × 50.2% pre-tax × (1−21.6%) ÷ 0.276B  =  $13.96  (FY2022E: no numeric EPS guide yet, FY21's $12.51 stands)
+  FY2024E BEAR check: $9.8B × 50.2% ÷ 0.266B  =  $14.48  (scenario $6.63)
+  FY2024E BULL check: $11.4B × 50.6% ÷ 0.266B  =  $16.98  (scenario $18.24)
+  Every 1pp of pre-tax margin ≈ $0.28 EPS ≈ $7/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Financial Services revenue growth    -7.0%    ≥4.0%   ≥14.0%   ≥18.0%     +5.7%  ◦ BASE  ██░░
+  Education revenue growth           -16.0%   ≥-6.0%    ≥5.0%   ≥23.0%       n/r  ◦ BASE  ██░░
+  Revenue growth                      +1.0%    ≥4.0%    ≥7.0%   ≥15.0%    +18.5%  ★ XBULL  ████
+  Diluted EPS growth                 -98.0%  ≥-43.0%   ≥13.0%   ≥53.0%    +43.3%  ▲ BULL  ███░
+  Segment operating margin change   -970.0bp  ≥-440.0bp  ≥90.0bp  ≥460.0bp  +4261.5bp  ★ XBULL  ████
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.75 / 4.00
+  Market composite:   2.39 / 4.00  (back-solved from $349 + 15% hurdle)
+  SCA adjustment:    +0.13  ·  EPP-distance adj -0.10  →  Adj composite 2.78  →  Gap +0.39  [MODESTLY UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY21 revenue +11.5%, Financial Services +11.9%, Education n/r; Q1 segment operating margin 100.50% (+4261.5bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 27.9x FY22E vs a 23.6x 10-yr median (73rd percentile of its own range)  (-0.38 × 25%  =  -0.095)
+    +  Growth vs own history: no FY22 revenue guide in numbers, Q1 2022 growth +18.5% vs a 7.1% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  FY21 year-end cash and equivalents $6.497B, FY21 operating cash flow $3.598B, dividend $3.40 a year, no repurchase of treasury shares in 2021 (the statement of cash flows, SP92)  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Financial Services revenue growth     +5.7%     -7.0%  -12.7%  Debt issuance volume falls
+  Education revenue growth               n/r    -16.0%     n/r  State adoptions and school funding sh…
+  Revenue growth                      +18.5%     +1.0%  -17.5%  Issuance, adoptions and advertising f…
+  Diluted EPS growth                  +43.3%    -98.0%  -141.3%  Costs stay up while revenue falls
+  Segment operating margin change   +4261.5bp  -970.0bp  -5231.5bp  Segment profit falls faster than revenue
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$203  (model)  /  $103 (defined)
+  Bear probability (proxy model):  5.3%
+
+  KEY TRIGGER: Financial Services revenue growth went from +11.9% (Q4 2021) to +5.7% (Q1 2022);
+  the bear case needs a fall in debt issuance that Education (n/r now) and
+  Commodity Insights (+51.2% now) no longer offset. The 10-K ties results to the volume of securities issued and traded in the capital
+  markets, to flows into investment products, to interest rates and to volatility in the
+  financial and commodities markets.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $12.51  (FY2022E: no numeric EPS guide yet, FY21's $12.51 stands)
+  Min viable P/E at panic:          19x  [median of calendar-year P/E lows: 2012 19.6x, 2013 13.3x, 2014 18.6x, 2015 18.9x, 2016 10.2x, 2017 18.8x, 2018 20.6x, 2019 19.1x, 2020 19.9x, 2021 24.5x, 2022 25.3x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $238/share
+  Current $349 vs Updated EPP $238:  +47%  ⚠ far above floor — large drawdown room
+  Bear $103 vs Updated EPP $238:  -57%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Financial Services revenue growth             4.0       -1.7   BASE floor (vs +6 now)
+  Education revenue growth                    -6.0        n/r   BASE floor (not reported now)
+  Revenue growth                               4.0      -14.5   BASE floor (vs +18 now)
+  Diluted EPS growth                         -43.0      -86.3   BASE floor (vs +43 now)
+  Segment operating margin change           -440.0    -4701.5   BASE floor (vs +4262 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $12.51 × (1+18.3%)² = $17.52
+  At 23x P/E (conservative):  $403/share
+  + Cumul. dividends (2yr):  +$7.00/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $403  (▲53 from $349)
+  Conservative total return:  +17% over 2yr  = +9%/yr
+
+  18.3% EPS growth is what is left once the premium multiple (27.9x)
+  mean-reverts to 23x. Breakeven at 23x needs FY2024E EPS of $14.89,
+  i.e. 9.1%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $311.87  –  $484.21  (at 22th pct of range)
+  Annual dividend:      $3.40/share  (yield 1.0%)
+  Realized vol (1yr):   26% annualized
+  Beta vs broad market: 0.89
+  1-sigma range (1yr):  $259  –  $440  ($349 ± 26%)
+  2-sigma range (1yr):  $168  –  $530
+  ────────────────────────────────────────────────────────────
+  Bear $103 requires:  ~2.7σ price move  (unusual — requires fundamental break)
+  An information services company (ratings, education, business information) with a 0.9 beta: the stock is +11% off its June
+  low while Financial Services revenue growth went from +11.9% (Q4 2021) to +5.7% (Q1 2022).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        6.63  15.5x  $    103     5.3%     11.3%    -6.0pp  EPS -27.2%/yr (worst year FY12-FY21, capped at 0%); P/E to its 10th pct
+  BASE       18.11  23.6x  $    427    18.4%     39.4%   -21.0pp  EPS +20.3%/yr (Q1 revenue + margin + buyback); P/E at its 10-yr median
+  BULL       18.24  28.4x  $    518    64.2%     41.4%   +22.8pp  EPS +20.8%/yr (FY12-FY21 CAGR); P/E holds its 75th pct
+  XBULL      25.60  33.5x  $    858    12.1%      7.8%    +4.3pp  EPS +43.1%/yr (best 2-yr run FY12-FY21); P/E at its 90th pct
+
+  Proxy EV (2yr): $521  /  Market EV: $462  /  Current: $349
+  Conservative EV (2yr, ④): $403 + $7.00 divs = $410 total value
+  Downside (→ Bear $103): 70.5%   Upside (→ Bull $518): 48.2%   Ratio B 1.46x  →  ◐ WATCHLIST
+
+  To earn the 15%/yr hurdle from $349 the market needs $462 in two years —
+  between the BASE and BULL cases. That is a market composite of 2.39 against a model
+  read of 2.78: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       1.46x     +47%    +0.39  MODESTLY UNDERVALUED / WATCHLIST
+  Multiples one band richer (p25/p75/p90/max)     0.82x     +47%    +0.86  UNDERVALUED / ACCUMULATE
+  Multiples one band cheaper (p5/p25/med/p75)     3.21x     +47%    -0.14  FAIRLY VALUED / AVOID
+  Scenario EPS +1.5pp/yr                          1.32x     +47%    +0.46  MODESTLY UNDERVALUED / WATCHLIST
+  Scenario EPS -1.5pp/yr                          1.62x     +47%    +0.31  MODESTLY UNDERVALUED / WATCHLIST
+  Structural read +0.30 (bullish SCA)             1.46x     +47%    +0.69  UNDERVALUED / WATCHLIST
+  EPP P/E +3 turns (softer floor)                 1.46x     +27%    +0.49  MODESTLY UNDERVALUED / WATCHLIST
+  Hurdle 10%/yr instead of 15%                    1.46x     +47%    +0.62  UNDERVALUED / WATCHLIST
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 2022 print (late July) — the next read on Financial Services revenue (+5.7% now) and the guide
+  (2) Segment operating margin — +4261.5bp in Q1 2022: costs against the ratings mix, what must hold if revenue does not
+  (3) A FY22 EPS guide in numbers — none yet
+  (4) A FY22 consolidated revenue guide in numbers — none yet
+  (5) Capital return at 28x — 'Return of Capital: During the first quarter, the combined Company returned $7.3 billion to shareholders through a combination of $7 billion in the form of an accelerated share repurchase (ASR) agreement and $265 million in cash dividends paid by S&P Global and IHS Markit pre-merger.': management's own read of the multiple
+  ◐ WATCHLIST  |  EPP floor $238  |  ADD below ~$363  |  TRIM above $518
+════════════════════════════════════════════════════════════════════════
+

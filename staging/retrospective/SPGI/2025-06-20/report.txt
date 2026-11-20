@@ -1,0 +1,158 @@
+
+════════════════════════════════════════════════════════════════════════
+  SPGI  ·  S&P Global Inc.  ·  $504.20  ·  RETROSPECTIVE as of 2025-06-20
+  Signal: ✕ AVOID   Ratio B: 2.22x   Adj gap: -0.67  [OVERVALUED]
+  Point-in-time: 14 sources, latest published 2025-06-20; latest print Q1 2025 (Apr 29)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2025E revenue, USD bn  →  FY2027E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                      FY2025E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Market Intelligence       $     4.8  $   4.8  $   6.0      +0.0      +1.2
+    +6.1% revenue in FY24
+  Ratings                   $     4.5  $   4.5  $   5.6      +0.0      +1.1
+    +31.2% revenue in FY24
+  Commodity Insights        $     2.2  $   2.2  $   2.8      +0.0      +0.6
+    +10.1% revenue in FY24
+  Indices                   $     1.7  $   1.7  $   2.1      +0.0      +0.4
+    +16.0% revenue in FY24
+  Mobility                  $     1.7  $   1.7  $   2.1      +0.0      +0.4
+    +8.4% revenue in FY24
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    14.9  $  14.9  $  18.6      +0.0      +3.7
+  FY2025E = FY24 $14.21B × (1 + 5.0%: FY25 revenue guide midpoint, on FY24); split pro rata to FY24 revenue by segment (SP109)
+  Q1 2025 (Apr 29): revenue $3.78B +8.2%; Financial Services +7.8%; Education n/r; Commodity Insights +9.5%;
+  segment operating margin 43.24% (+210.1bp); diluted EPS $3.54 vs $3.16 (+12.0%)
+  Financial Services revenue $2,745.0M against $2,546.0M a year earlier (+7.8%), McGraw-Hill Education not reported, Commodity Insights $612.0M (+9.5%), as the release's segment table shows them; 'Adjusted net income for the first quarter increased 7% to $1.344 billion and adjusted diluted earnings per share increased 9% to $4.37.'; Financial Services line: Ratings $1,149.0M + Market Intelligence $1,199.0M + Indices $445.0M less the royalty elimination $48.0M; McGraw-Hill Education, sold in 2013, is not reported (n/r); outside the Financial Services line and Commodity Insights: Mobility $420.0M (a year earlier $386.0M)
+  FY25 guide (Q4 2024 release, Q1 2025 release): revenue +4-6%; EPS $14.60-15.10 (GAAP, with the expected OSTTRA gain); adjusted EPS $16.75-17.25 (adjusted, excluding deal-related amortization: no field, amortization recurs); GAAP operating margin 42.5-43.5% (Q1 2025 release; the step from 39.27%)
+
+  FY2025E EPS check:  $14.9B × 37.4% pre-tax × (1−21.5%) ÷ 0.308B  =  $14.20  (FY2025E EPS, guide midpoint (GAAP, with the expected OSTTRA gain))
+  FY2027E BEAR check: $14.9B × 37.4% ÷ 0.316B  =  $13.81  (scenario $7.87)
+  FY2027E BULL check: $18.6B × 37.8% ÷ 0.316B  =  $17.42  (scenario $18.72)
+  Every 1pp of pre-tax margin ≈ $0.38 EPS ≈ $12/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Financial Services revenue growth    -7.0%    ≥4.0%   ≥14.0%   ≥18.0%     +7.8%  ◦ BASE  ██░░
+  Education revenue growth           -16.0%   ≥-6.0%    ≥5.0%   ≥23.0%       n/r  ◦ BASE  ██░░
+  Revenue growth                      +1.0%    ≥4.0%    ≥7.0%   ≥15.0%     +8.2%  ▲ BULL  ███░
+  Diluted EPS growth                 -98.0%  ≥-43.0%   ≥13.0%   ≥53.0%    +12.0%  ◦ BASE  ██░░
+  Guided operating margin step (GAAP)  -970.0bp  ≥-440.0bp  ≥90.0bp  ≥460.0bp  +373.0bp  ▲ BULL  ███░
+  Generative AI: net effect on data, ratings and benchmarks   +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.30 / 4.00
+  Market composite:   2.84 / 4.00  (back-solved from $504 + 15% hurdle)
+  SCA adjustment:    -0.03  ·  EPP-distance adj -0.10  →  Adj composite 2.17  →  Gap -0.67  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY24 revenue +13.7%, Financial Services +17.0%, Education n/r; Q1 segment operating margin 43.24% (+210.1bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 34.0x FY25E vs a 30.3x 10-yr median (63rd percentile of its own range)  (-0.22 × 25%  =  -0.055)
+    -  Growth vs own history: FY25 revenue guide +4-6% vs a 11.1% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  FY24 year-end cash and equivalents $1.666B, FY24 operating cash flow $5.689B, dividend $3.84 a year, repurchase of treasury shares $3,301M in 2024 (SP109)  (+0.30 × 15%  =  +0.045)
+    +  Generative AI: S&P Global builds AI into its own products and processes  (+0.20 × 10%  =  +0.020)
+    -  AI competition (FY2024 10-K): new competitors' AI offerings could materially reduce demand  (-0.20 × 10%  =  -0.020)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Financial Services revenue growth     +7.8%     -7.0%  -14.8%  Debt issuance volume falls
+  Education revenue growth               n/r    -16.0%     n/r  State adoptions and school funding sh…
+  Revenue growth                       +8.2%     +1.0%   -7.2%  Issuance, adoptions and advertising f…
+  Diluted EPS growth                  +12.0%    -98.0%  -110.0%  Costs stay up while revenue falls
+  Guided operating margin step (GAAP)  +373.0bp  -970.0bp  -1343.0bp  Segment profit falls faster than revenue
+  Generative AI: net effect on data, ratings and benchmarks    +2.0/4    +1.0/4  -1.0/4  Customers take free or AI-built subst…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$259  (model)  /  $127 (defined)
+  Bear probability (proxy model):  12.9%
+
+  KEY TRIGGER: Financial Services revenue growth went from +15.7% (Q4 2024) to +7.8% (Q1 2025);
+  the bear case needs a fall in debt issuance that Education (n/r now) and
+  Commodity Insights (+9.5% now) no longer offset. The 10-K ties results to the volume of securities issued and traded in the capital
+  markets, to flows into investment products, to interest rates and to volatility in the
+  financial and commodities markets.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $14.85  (FY2025E EPS, guide midpoint (GAAP, with the expected OSTTRA gain))
+  Min viable P/E at panic:          20x  [median of calendar-year P/E lows: 2015 18.9x, 2016 10.2x, 2017 18.8x, 2018 20.6x, 2019 19.1x, 2020 19.9x, 2021 24.5x, 2022 28.1x, 2023 39.5x, 2024 33.1x, 2025 29.5x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $297/share
+  Current $504 vs Updated EPP $297:  +70%  ⚠ far above floor — large drawdown room
+  Bear $127 vs Updated EPP $297:  -57%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Financial Services revenue growth             4.0       -3.8   BASE floor (vs +8 now)
+  Education revenue growth                    -6.0        n/r   BASE floor (not reported now)
+  Revenue growth                               4.0       -4.2   BASE floor (vs +8 now)
+  Diluted EPS growth                         -43.0      -55.0   BASE floor (vs +12 now)
+  Guided operating margin step (GAAP)          -440.0     -813.0   BASE floor (vs +373 now)
+  Generative AI: net effect on data, ratings and benchmarks             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $14.85 × (1+10.3%)² = $18.06
+  At 30x P/E (conservative):  $542/share
+  + Cumul. dividends (2yr):  +$7.91/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $542  (▲37 from $504)
+  Conservative total return:  +9% over 2yr  = +5%/yr
+
+  10.3% EPS growth is what is left once the premium multiple (34.0x)
+  mean-reverts to 30x. Breakeven at 30x needs FY2027E EPS of $16.54,
+  i.e. 5.5%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $427.14  –  $545.39  (at 65th pct of range)
+  Annual dividend:      $3.84/share  (yield 0.8%)
+  Realized vol (1yr):   22% annualized
+  Beta vs broad market: 0.80
+  1-sigma range (1yr):  $394  –  $615  ($504 ± 22%)
+  2-sigma range (1yr):  $283  –  $725
+  ────────────────────────────────────────────────────────────
+  Bear $127 requires:  ~3.4σ price move  (unusual — requires fundamental break)
+  An information services company (ratings, education, business information) with a 0.8 beta: the stock is +15% off its April
+  low while Financial Services revenue growth went from +15.7% (Q4 2024) to +7.8% (Q1 2025).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        7.87  16.1x  $    127    12.9%      5.1%    +7.9pp  EPS -27.2%/yr (worst year FY15-FY24, capped at 0%); P/E to its 10th pct
+  BASE       18.72  30.3x  $    567    45.2%     17.6%   +27.6pp  EPS +12.3%/yr (FY25 guide + margin + buyback); P/E at its 10-yr median
+  BULL       18.72  36.0x  $    674    35.2%     61.6%   -26.4pp  EPS +12.3%/yr (FY15-FY24 CAGR); P/E holds its 75th pct
+  XBULL      22.10  41.9x  $    926     6.6%     15.7%    -9.1pp  EPS +22.0%/yr (best 2-yr run FY15-FY24); P/E at its 90th pct
+
+  Proxy EV (2yr): $572  /  Market EV: $667  /  Current: $504
+  Conservative EV (2yr, ④): $542 + $7.91 divs = $550 total value
+  Downside (→ Bear $127): 74.8%   Upside (→ Bull $674): 33.7%   Ratio B 2.22x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $504 the market needs $667 in two years —
+  between the BASE and BULL cases. That is a market composite of 2.84 against a model
+  read of 2.17: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       2.22x     +70%    -0.67  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     1.12x     +70%    -0.05  FAIRLY VALUED / WATCHLIST
+  Multiples one band cheaper (p5/p25/med/p75)     6.29x     +70%    -1.22  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          1.97x     +70%    -0.52  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                          2.54x     +70%    -0.80  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             2.22x     +70%    -0.37  MODESTLY OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 2.22x     +48%    -0.67  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    2.22x     +70%    -0.32  MODESTLY OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 2025 print (late July) — the next read on Financial Services revenue (+7.8% now) and the guide
+  (2) Segment operating margin — +210.1bp in Q1 2025: costs against the ratings mix, what must hold if revenue does not
+  (3) FY25 EPS guide $14.60-15.10 (Q1 2025 release): the company's own read of the year
+  (4) FY25 revenue guide +4-6% (Q1 2025 release): ratings, data and index revenue in one number
+  (5) Capital return at 34x — statement of cash flows, the first quarter of 2025: repurchase of treasury shares $650M, dividends paid to shareholders $295M (the release gives no amount returned in the quarter): management's own read of the multiple
+  ✕ AVOID  |  EPP floor $297  |  ADD below ~$482  |  TRIM above $674
+════════════════════════════════════════════════════════════════════════
+

@@ -637,6 +637,209 @@
    "title": "S&P Global Q3 2021 results (8-K, Exhibit 99)",
    "url": "https://www.sec.gov/Archives/edgar/data/64040/000162828021020456/spgi3q2021-earningsrelease.htm",
    "supports": "Q3 2021: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2021 outlook"
+  },
+  "SP91": {
+   "published": "2022-02-08",
+   "filed": "8-K accepted 2022-02-08 07:16 ET, before the open",
+   "title": "S&P Global Q4 2021 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404022000051/a4q2021earningsrelease.htm",
+   "supports": "Q4 2021: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2021 actuals; FY2022 outlook"
+  },
+  "SP93": {
+   "published": "2022-05-03",
+   "filed": "8-K accepted 2022-05-03 07:27 ET, before the open",
+   "title": "S&P Global Q1 2022 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404022000109/spgi1q2022-earningsrelease.htm",
+   "supports": "Q1 2022: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2022 outlook"
+  },
+  "SP96": {
+   "published": "2022-08-02",
+   "filed": "8-K accepted 2022-08-02 07:14 ET, before the open",
+   "title": "S&P Global Q2 2022 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404022000140/spgi2q2022-earningsrelease.htm",
+   "supports": "Q2 2022: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2022 outlook"
+  },
+  "SP97": {
+   "published": "2022-10-27",
+   "filed": "8-K accepted 2022-10-27 07:18 ET, before the open",
+   "title": "S&P Global Q3 2022 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404022000166/spgi3q2022-earningsrelease.htm",
+   "supports": "Q3 2022: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2022 outlook"
+  },
+  "SP98": {
+   "published": "2023-02-09",
+   "filed": "8-K accepted 2023-02-09 07:34 ET, before the open",
+   "title": "S&P Global Q4 2022 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404023000055/a4q2022earningsrelease.htm",
+   "supports": "Q4 2022: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2022 actuals; FY2023 outlook"
+  },
+  "SP100": {
+   "published": "2023-04-27",
+   "filed": "8-K accepted 2023-04-27 07:16 ET, before the open",
+   "title": "S&P Global Q1 2023 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404023000110/spgi1q2023-earningsrelease.htm",
+   "supports": "Q1 2023: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2023 outlook"
+  },
+  "SP101": {
+   "published": "2023-07-27",
+   "filed": "8-K accepted 2023-07-27 07:10 ET, before the open",
+   "title": "S&P Global Q2 2023 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404023000156/spgi2q2023-earningsrelease.htm",
+   "supports": "Q2 2023: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2023 outlook"
+  },
+  "SP102": {
+   "published": "2023-11-02",
+   "filed": "8-K accepted 2023-11-02 07:10 ET, before the open",
+   "title": "S&P Global Q3 2023 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404023000190/spgi3q2023-earningsrelease.htm",
+   "supports": "Q3 2023: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2023 outlook"
+  },
+  "SP103": {
+   "published": "2024-02-08",
+   "filed": "8-K accepted 2024-02-08 07:10 ET, before the open",
+   "title": "S&P Global Q4 2023 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404024000061/a4q2023earningsrelease.htm",
+   "supports": "Q4 2023: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2023 actuals; FY2024 outlook"
+  },
+  "SP105": {
+   "published": "2024-04-25",
+   "filed": "8-K accepted 2024-04-25 07:10 ET, before the open",
+   "title": "S&P Global Q1 2024 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404024000121/spgi1q2024-earningsrelease.htm",
+   "supports": "Q1 2024: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2024 outlook"
+  },
+  "SP106": {
+   "published": "2024-07-30",
+   "filed": "8-K accepted 2024-07-30 07:10 ET, before the open",
+   "title": "S&P Global Q2 2024 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404024000146/spgi2q2024-earningsrelease.htm",
+   "supports": "Q2 2024: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2024 outlook"
+  },
+  "SP107": {
+   "published": "2024-10-24",
+   "filed": "8-K accepted 2024-10-24 07:10 ET, before the open",
+   "title": "S&P Global Q3 2024 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404024000175/spgi3q2024-earningsrelease.htm",
+   "supports": "Q3 2024: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2024 outlook"
+  },
+  "SP108": {
+   "published": "2025-02-11",
+   "filed": "8-K accepted 2025-02-11 07:10 ET, before the open",
+   "title": "S&P Global Q4 2024 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404025000046/a4q2024earningsrelease.htm",
+   "supports": "Q4 2024: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2024 actuals; FY2025 outlook"
+  },
+  "SP110": {
+   "published": "2025-04-29",
+   "filed": "8-K accepted 2025-04-29 07:10 ET, before the open",
+   "title": "S&P Global Q1 2025 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404025000122/spgi1q2025-earningsrelease.htm",
+   "supports": "Q1 2025: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2025 outlook"
+  },
+  "SP111": {
+   "published": "2025-07-31",
+   "filed": "8-K accepted 2025-07-31 07:10 ET, before the open",
+   "title": "S&P Global Q2 2025 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404025000143/spgi2q2025-earningsrelease.htm",
+   "supports": "Q2 2025: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2025 outlook"
+  },
+  "SP112": {
+   "published": "2025-10-30",
+   "filed": "8-K accepted 2025-10-30 07:10 ET, before the open",
+   "title": "S&P Global Q3 2025 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404025000163/spgi3q2025-earningsrelease.htm",
+   "supports": "Q3 2025: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2025 outlook"
+  },
+  "SP113": {
+   "published": "2026-02-10",
+   "filed": "8-K accepted 2026-02-10 07:10 ET, before the open",
+   "title": "S&P Global Q4 2025 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404026000007/a4q2025earningsrelease.htm",
+   "supports": "Q4 2025: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2025 actuals; FY2026 outlook"
+  },
+  "SP115": {
+   "published": "2026-04-28",
+   "filed": "8-K accepted 2026-04-28 07:10 ET, before the open",
+   "title": "S&P Global Q1 2026 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404026000019/spgi1q2026-earningsrelease.htm",
+   "supports": "Q1 2026: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2026 outlook"
+  },
+  "SP118": {
+   "published": "2026-07-28",
+   "filed": "8-K accepted 2026-07-28 07:10 ET, before the open",
+   "title": "S&P Global Q2 2026 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404026000040/spgi2q2026-earningsrelease.htm",
+   "supports": "Q2 2026: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2026 outlook"
+  },
+  "SP119": {
+   "published": "2026-10-27",
+   "filed": "8-K accepted 2026-10-27 07:15 ET, before the open",
+   "title": "S&P Global Q3 2026 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404026000053/spgi3q2026-earningsrelease.htm",
+   "supports": "Q3 2026: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2026 outlook"
+  },
+  "SP92": {
+   "published": "2022-02-09",
+   "filed": "accepted 2022-02-08 17:17 ET, after the close, so dated the next trading day",
+   "title": "S&P Global FY2021 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404022000055/spgi-20211231.htm",
+   "supports": "annual history (statements of income 2019-2021: revenue, operating profit, pre-tax income, diluted EPS and shares; segment revenue and operating profit), cash, operating cash flow, repurchases, the dividend rate, Items 1 and 1A"
+  },
+  "SP99": {
+   "published": "2023-02-10",
+   "filed": "accepted 2023-02-09 20:31 ET, after the close, so dated the next trading day",
+   "title": "S&P Global FY2022 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404023000058/spgi-20221231.htm",
+   "supports": "annual history (statements of income 2020-2022: revenue, operating profit, pre-tax income, diluted EPS and shares; segment revenue and operating profit), cash, operating cash flow, repurchases, the dividend rate, Items 1 and 1A"
+  },
+  "SP104": {
+   "published": "2024-02-09",
+   "filed": "accepted 2024-02-08 21:12 ET, after the close, so dated the next trading day",
+   "title": "S&P Global FY2023 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404024000071/spgi-20231231.htm",
+   "supports": "annual history (statements of income 2021-2023: revenue, operating profit, pre-tax income, diluted EPS and shares; segment revenue and operating profit), cash, operating cash flow, repurchases, the dividend rate, Items 1 and 1A"
+  },
+  "SP109": {
+   "published": "2025-02-12",
+   "filed": "accepted 2025-02-11 17:29 ET, after the close, so dated the next trading day",
+   "title": "S&P Global FY2024 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404025000052/spgi-20241231.htm",
+   "supports": "annual history (statements of income 2022-2024: revenue, operating profit, pre-tax income, diluted EPS and shares; segment revenue and operating profit), cash, operating cash flow, repurchases, the dividend rate, Items 1 and 1A"
+  },
+  "SP114": {
+   "published": "2026-02-11",
+   "filed": "accepted 2026-02-10 17:37 ET, after the close, so dated the next trading day",
+   "title": "S&P Global FY2025 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404026000013/spgi-20251231.htm",
+   "supports": "annual history (statements of income 2023-2025: revenue, operating profit, pre-tax income, diluted EPS and shares; segment revenue and operating profit), cash, operating cash flow, repurchases, the dividend rate, Items 1 and 1A"
+  },
+  "SP94": {
+   "published": "2022-05-04",
+   "filed": "accepted 2022-05-03 19:32 ET, after the close, so dated the next trading day",
+   "title": "S&P Global Q1 2022 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404022000113/spgi-20220331.htm",
+   "supports": "the quarterly dividend approved on February 28, 2022 ($0.85 from the second quarter)"
+  },
+  "SP95": {
+   "published": "2022-06-01",
+   "filed": "8-K accepted 2022-06-01 06:51 ET, before the open",
+   "title": "S&P Global suspends 2022 financial guidance (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404022000133/spgijune1release.htm",
+   "supports": "the FY2022 guidance suspended"
+  },
+  "SP116": {
+   "published": "2026-07-02",
+   "filed": "8-K accepted 2026-07-01 21:25 ET, after the close, so dated the next trading day",
+   "title": "S&P Global completes the separation of Mobility Global (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000110465926080005/tm2619099d1_8k.htm",
+   "supports": "the distribution of one Mobility Global share for every S&P Global share, effective July 1, 2026"
+  },
+  "SP117": {
+   "published": "2026-07-06",
+   "filed": "8-K/A accepted 2026-07-06 07:25 ET, before the open",
+   "title": "S&P Global unaudited pro forma condensed consolidated statements of income (8-K/A, Exhibit 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000110465926080571/tm2619099d2_ex99-2.htm",
+   "supports": "FY2025 revenue and operating profit of the continuing operations (historical less Mobility discontinued operations, before transaction accounting adjustments)"
   }
  },
  "history_vintages": [
@@ -2846,6 +3049,697 @@
    ],
    "groups_basis": "FY20 revenue by segment (SP87)",
    "key_tail": "The 10-K ties results to the volume of securities issued and traded in the capital\n  markets, to flows into investment products, to interest rates and to volatility in the\n  financial and commodities markets.",
+   "cat4_tail": "ratings, data and index revenue in one number"
+  },
+  {
+   "published": "2022-02-09",
+   "sources": [
+    "SP92",
+    "SP87",
+    "SP82",
+    "SP77",
+    "SP70",
+    "SP65",
+    "SP57",
+    "SP52",
+    "SP38"
+   ],
+   "company": "S&P Global Inc.",
+   "exchange": "NYSE",
+   "pe_window_start": null,
+   "margin_signal_name": "Segment operating margin change",
+   "fy_label": "FY21",
+   "why": "S&P Global 'is a leading provider of transparent and independent ratings, benchmarks, analytics and data to the capital and commodity markets worldwide' (Item 1); Item 1A: 'Changes in the volume of securities issued and traded in domestic and/or global capital markets, asset levels and flows into investment products, changes in interest rates and volatility in the financial markets, and volatility in the commodities markets impact our business, financial condition or results of operations.', and no risk factor calling a business cyclical; a fall in debt issuance or the markets it serves cuts revenue; no risk factor names a live disruption theme as a competitive risk",
+   "fiscal_year_ends": {
+    "2012": "2012-12-31",
+    "2013": "2013-12-31",
+    "2014": "2014-12-31",
+    "2015": "2015-12-31",
+    "2016": "2016-12-31",
+    "2017": "2017-12-31",
+    "2018": "2018-12-31",
+    "2019": "2019-12-31",
+    "2020": "2020-12-31",
+    "2021": "2021-12-31"
+   },
+   "eps_normalized": {
+    "2012": 2.29,
+    "2013": 3.22,
+    "2014": 3.88,
+    "2015": 4.53,
+    "2016": 7.94,
+    "2017": 5.78,
+    "2018": 7.73,
+    "2019": 8.6,
+    "2020": 9.66,
+    "2021": 12.51
+   },
+   "eps_sources": {
+    "2012": "SP65",
+    "2013": "SP52",
+    "2014": "SP57",
+    "2015": "SP57",
+    "2016": "SP87",
+    "2017": "SP87",
+    "2018": "SP87",
+    "2019": "SP92",
+    "2020": "SP92",
+    "2021": "SP92"
+   },
+   "normalization": "diluted EPS, each year from the latest filing that reports it on that line: 2019-2021 from the FY2021 10-K's statements of income (Item 6 is reserved from the FY2021 10-K), 2016-2018 from SP87, 2014-2015 from SP57, 2013 from SP52, 2012 from SP65; 2013, 2014, 2015 at the company's $3.22, $3.88, $4.53 (figures excluding only one-offs, the same basis), GAAP otherwise (from 2016 the company's adjusted figures also remove recurring deal-related amortization: not figures excluding only one-offs); no year is excluded",
+   "revenue_usd_b": {
+    "2012": 4.27,
+    "2013": 4.702,
+    "2014": 5.051,
+    "2015": 5.313,
+    "2016": 5.661,
+    "2017": 6.063,
+    "2018": 6.258,
+    "2019": 6.699,
+    "2020": 7.442,
+    "2021": 8.297
+   },
+   "revenue_sources": {
+    "2012": "SP65",
+    "2013": "SP70",
+    "2014": "SP77",
+    "2015": "SP82",
+    "2016": "SP87",
+    "2017": "SP87",
+    "2018": "SP87",
+    "2019": "SP92",
+    "2020": "SP92",
+    "2021": "SP92"
+   },
+   "diluted_shares_m": {
+    "2012": 284.6,
+    "2021": 241.8
+   },
+   "shares_sources": {
+    "2012": "SP38",
+    "2021": "SP92"
+   },
+   "shares_published": {
+    "2012": "2013-02-28"
+   },
+   "prev_fy_op_margin": 56.01,
+   "prev_fy_op_margin_note": "segment operating profit $4,647M / revenue $8,297M (FY21, SP92)",
+   "prev_fy_pretax_margin": 50.19,
+   "prev_fy_pretax_margin_note": "income before taxes $4,164M / revenue $8,297M (FY21, SP92)",
+   "prev_fy_sales_growth": 11.5,
+   "prev_fy_fs_pct": 11.9,
+   "prev_fy_mhe_pct": null,
+   "tax_rate": 0.216,
+   "tax_note": "provision for taxes on income $901M / pre-tax income $4,164M (FY21, SP92)",
+   "cash_b": 6.497,
+   "cash_label": "FY21",
+   "cash_note": "cash and cash equivalents $6,497M at December 31, 2021 (SP92)",
+   "ocf_b": 3.598,
+   "ocf_note": "cash provided by operating activities $3,598M in 2021 (SP92)",
+   "dividend_annual": 3.08,
+   "dividend_note": "$0.77 quarterly, $3.08 a year ('On January 26, 2022, the Board of Directors approved a quarterly common stock dividend of $0.77 per share.', SP92)",
+   "cash_return_text": "no repurchase of treasury shares in 2021 (the statement of cash flows, SP92)",
+   "business_line": "ratings (S&P Global Ratings), data and analytics (S&P Global Market Intelligence), commodities (S&P Global Platts) and indices (S&P Dow Jones Indices)",
+   "groups": [
+    [
+     "Ratings",
+     4.097,
+     13.6
+    ],
+    [
+     "Market Intelligence",
+     2.247,
+     6.7
+    ],
+    [
+     "Indices",
+     1.149,
+     16.2
+    ],
+    [
+     "Platts",
+     0.95,
+     8.2
+    ]
+   ],
+   "groups_basis": "FY21 revenue by segment (SP92)",
+   "key_tail": "The 10-K ties results to the volume of securities issued and traded in the capital\n  markets, to flows into investment products, to interest rates and to volatility in the\n  financial and commodities markets.",
+   "cat4_tail": "ratings, data and index revenue in one number"
+  },
+  {
+   "published": "2023-02-10",
+   "sources": [
+    "SP99",
+    "SP92",
+    "SP87",
+    "SP82",
+    "SP77",
+    "SP70",
+    "SP57",
+    "SP52",
+    "SP46"
+   ],
+   "company": "S&P Global Inc.",
+   "exchange": "NYSE",
+   "pe_window_start": null,
+   "margin_signal_name": "Segment operating margin change",
+   "fy_label": "FY22",
+   "why": "S&P Global 'is a provider of credit ratings, benchmarks, analytics and workflow solutions in the global capital, commodity, automotive and engineering markets' (Item 1); Item 1A: 'Changes in the volume of securities issued and traded in domestic and/or global capital markets, asset levels and flows into investment products, changes in interest rates and volatility in the financial markets, and volatility in the commodities markets impact our business, financial condition or results of operations.', and no risk factor calling a business cyclical; a fall in debt issuance or the markets it serves cuts revenue; no risk factor names a live disruption theme as a competitive risk",
+   "fiscal_year_ends": {
+    "2013": "2013-12-31",
+    "2014": "2014-12-31",
+    "2015": "2015-12-31",
+    "2016": "2016-12-31",
+    "2017": "2017-12-31",
+    "2018": "2018-12-31",
+    "2019": "2019-12-31",
+    "2020": "2020-12-31",
+    "2021": "2021-12-31",
+    "2022": "2022-12-31"
+   },
+   "eps_normalized": {
+    "2013": 3.22,
+    "2014": 3.88,
+    "2015": 4.53,
+    "2016": 7.94,
+    "2017": 5.78,
+    "2018": 7.73,
+    "2019": 8.6,
+    "2020": 9.66,
+    "2021": 12.51,
+    "2022": 10.2
+   },
+   "eps_sources": {
+    "2013": "SP52",
+    "2014": "SP57",
+    "2015": "SP57",
+    "2016": "SP87",
+    "2017": "SP87",
+    "2018": "SP87",
+    "2019": "SP92",
+    "2020": "SP99",
+    "2021": "SP99",
+    "2022": "SP99"
+   },
+   "normalization": "diluted EPS, each year from the latest filing that reports it on that line: 2020-2022 from the FY2022 10-K's statements of income (Item 6 is reserved from the FY2021 10-K), 2019 from SP92, 2016-2018 from SP87, 2014-2015 from SP57, 2013 from SP52; 2013, 2014, 2015 at the company's $3.22, $3.88, $4.53 (figures excluding only one-offs, the same basis), GAAP otherwise (from 2016 the company's adjusted figures also remove recurring deal-related amortization: not figures excluding only one-offs); no year is excluded",
+   "revenue_usd_b": {
+    "2013": 4.702,
+    "2014": 5.051,
+    "2015": 5.313,
+    "2016": 5.661,
+    "2017": 6.063,
+    "2018": 6.258,
+    "2019": 6.699,
+    "2020": 7.442,
+    "2021": 8.297,
+    "2022": 11.181
+   },
+   "revenue_sources": {
+    "2013": "SP70",
+    "2014": "SP77",
+    "2015": "SP82",
+    "2016": "SP87",
+    "2017": "SP87",
+    "2018": "SP87",
+    "2019": "SP92",
+    "2020": "SP99",
+    "2021": "SP99",
+    "2022": "SP99"
+   },
+   "diluted_shares_m": {
+    "2013": 279.8,
+    "2022": 318.5
+   },
+   "shares_sources": {
+    "2013": "SP46",
+    "2022": "SP99"
+   },
+   "shares_published": {
+    "2013": "2014-02-07"
+   },
+   "prev_fy_op_margin": 52.82,
+   "prev_fy_op_margin_note": "segment operating profit $5,906M / revenue $11,181M (FY22, SP99)",
+   "prev_fy_pretax_margin": 42.05,
+   "prev_fy_pretax_margin_note": "income before taxes $4,702M / revenue $11,181M (FY22, SP99)",
+   "prev_fy_sales_growth": 34.8,
+   "prev_fy_fs_pct": 10.2,
+   "prev_fy_mhe_pct": null,
+   "tax_rate": 0.251,
+   "tax_note": "provision for taxes on income $1,180M / pre-tax income $4,702M (FY22, SP99)",
+   "cash_b": 1.286,
+   "cash_label": "FY22",
+   "cash_note": "cash and cash equivalents $1,286M at December 31, 2022 (SP99)",
+   "ocf_b": 2.603,
+   "ocf_note": "cash provided by operating activities $2,603M in 2022 (SP99)",
+   "dividend_annual": 3.6,
+   "dividend_note": "$0.90 quarterly, $3.60 a year ('On January 25, 2023, the Board of Directors approved a quarterly common stock dividend of $0.90 per share.', SP99)",
+   "cash_return_text": "repurchase of treasury shares $12,004M in 2022 (SP99)",
+   "business_line": "ratings (S&P Global Ratings), data and analytics (S&P Global Market Intelligence), commodities (S&P Global Commodity Insights), automotive (S&P Global Mobility), indices (S&P Dow Jones Indices) and engineering (S&P Global Engineering Solutions, held for sale under the agreement announced on January 17, 2023)",
+   "groups": [
+    [
+     "Market Intelligence",
+     3.811,
+     74.4
+    ],
+    [
+     "Ratings",
+     3.05,
+     -25.6
+    ],
+    [
+     "Commodity Insights",
+     1.685,
+     66.5
+    ],
+    [
+     "Indices",
+     1.339,
+     16.5
+    ]
+   ],
+   "groups_basis": "FY22 revenue by segment (SP99)",
+   "key_tail": "The 10-K ties results to the volume of securities issued and traded in the capital\n  markets, to flows into investment products, to interest rates and to volatility in the\n  financial and commodities markets.",
+   "cat4_tail": "ratings, data and index revenue in one number"
+  },
+  {
+   "published": "2024-02-09",
+   "sources": [
+    "SP104",
+    "SP99",
+    "SP92",
+    "SP87",
+    "SP82",
+    "SP77",
+    "SP57",
+    "SP53"
+   ],
+   "company": "S&P Global Inc.",
+   "exchange": "NYSE",
+   "pe_window_start": null,
+   "margin_signal_name": "Segment operating margin change",
+   "fy_label": "FY23",
+   "why": "S&P Global 'is a provider of credit ratings, benchmarks, analytics and workflow solutions in the global capital, commodity and automotive markets' (Item 1); Item 1A: 'Changes in the volume of securities issued and traded in domestic and/or global capital markets, asset levels and flows into investment products, high interest rates, changes in interest rates and volatility in the financial markets, and volatility in the commodities markets impact our business, financial condition or results of operations.', and no risk factor calling a business cyclical; a fall in debt issuance or the markets it serves cuts revenue; the 10-K names generative AI as a risk to demand for its products (GENAI, on the watch list below)",
+   "fiscal_year_ends": {
+    "2014": "2014-12-31",
+    "2015": "2015-12-31",
+    "2016": "2016-12-31",
+    "2017": "2017-12-31",
+    "2018": "2018-12-31",
+    "2019": "2019-12-31",
+    "2020": "2020-12-31",
+    "2021": "2021-12-31",
+    "2022": "2022-12-31",
+    "2023": "2023-12-31"
+   },
+   "eps_normalized": {
+    "2014": 3.88,
+    "2015": 4.53,
+    "2016": 7.94,
+    "2017": 5.78,
+    "2018": 7.73,
+    "2019": 8.6,
+    "2020": 9.66,
+    "2021": 12.51,
+    "2022": 10.2,
+    "2023": 8.23
+   },
+   "eps_sources": {
+    "2014": "SP57",
+    "2015": "SP57",
+    "2016": "SP87",
+    "2017": "SP87",
+    "2018": "SP87",
+    "2019": "SP92",
+    "2020": "SP99",
+    "2021": "SP104",
+    "2022": "SP104",
+    "2023": "SP104"
+   },
+   "normalization": "diluted EPS, each year from the latest filing that reports it on that line: 2021-2023 from the FY2023 10-K's statements of income (Item 6 is reserved from the FY2021 10-K), 2020 from SP99, 2019 from SP92, 2016-2018 from SP87, 2014-2015 from SP57; 2014, 2015 at the company's $3.88, $4.53 (figures excluding only one-offs, the same basis), GAAP otherwise (from 2016 the company's adjusted figures also remove recurring deal-related amortization: not figures excluding only one-offs); no year is excluded",
+   "revenue_usd_b": {
+    "2014": 5.051,
+    "2015": 5.313,
+    "2016": 5.661,
+    "2017": 6.063,
+    "2018": 6.258,
+    "2019": 6.699,
+    "2020": 7.442,
+    "2021": 8.297,
+    "2022": 11.181,
+    "2023": 12.497
+   },
+   "revenue_sources": {
+    "2014": "SP77",
+    "2015": "SP82",
+    "2016": "SP87",
+    "2017": "SP87",
+    "2018": "SP87",
+    "2019": "SP92",
+    "2020": "SP99",
+    "2021": "SP104",
+    "2022": "SP104",
+    "2023": "SP104"
+   },
+   "diluted_shares_m": {
+    "2014": 271.5,
+    "2023": 318.9
+   },
+   "shares_sources": {
+    "2014": "SP53",
+    "2023": "SP104"
+   },
+   "shares_published": {
+    "2014": "2015-02-13"
+   },
+   "prev_fy_op_margin": 35.9,
+   "prev_fy_op_margin_note": "segment operating profit $4,486M / revenue $12,497M (FY23, SP104)",
+   "prev_fy_pretax_margin": 29.38,
+   "prev_fy_pretax_margin_note": "income before taxes $3,671M / revenue $12,497M (FY23, SP104)",
+   "prev_fy_sales_growth": 11.8,
+   "prev_fy_fs_pct": 11.2,
+   "prev_fy_mhe_pct": null,
+   "tax_rate": 0.212,
+   "tax_note": "provision for taxes on income $778M / pre-tax income $3,671M (FY23, SP104)",
+   "cash_b": 1.29,
+   "cash_label": "FY23",
+   "cash_note": "cash and cash equivalents $1,290M at December 31, 2023 (SP104)",
+   "ocf_b": 3.71,
+   "ocf_note": "cash provided by operating activities $3,710M in 2023 (SP104)",
+   "dividend_annual": 3.64,
+   "dividend_note": "$0.91 quarterly, $3.64 a year ('On January 23, 2024, the Board of Directors approved a quarterly common stock dividend of $0.91 per share.', SP104)",
+   "cash_return_text": "repurchase of treasury shares $3,301M in 2023 (SP104)",
+   "business_line": "ratings (S&P Global Ratings), data and analytics (S&P Global Market Intelligence), commodities (S&P Global Commodity Insights), automotive (S&P Global Mobility) and indices (S&P Dow Jones Indices)",
+   "groups": [
+    [
+     "Market Intelligence",
+     4.376,
+     14.8
+    ],
+    [
+     "Ratings",
+     3.332,
+     9.2
+    ],
+    [
+     "Commodity Insights",
+     1.946,
+     15.5
+    ],
+    [
+     "Mobility",
+     1.484,
+     29.9
+    ],
+    [
+     "Indices",
+     1.403,
+     4.8
+    ],
+    [
+     "Engineering Solutions",
+     0.133,
+     -58.8
+    ]
+   ],
+   "groups_basis": "FY23 revenue by segment (SP104)",
+   "key_tail": "The 10-K ties results to the volume of securities issued and traded in the capital\n  markets, to flows into investment products, to interest rates and to volatility in the\n  financial and commodities markets.",
+   "cat4_tail": "ratings, data and index revenue in one number"
+  },
+  {
+   "published": "2025-02-12",
+   "sources": [
+    "SP109",
+    "SP104",
+    "SP99",
+    "SP92",
+    "SP87",
+    "SP82",
+    "SP58",
+    "SP57"
+   ],
+   "company": "S&P Global Inc.",
+   "exchange": "NYSE",
+   "pe_window_start": null,
+   "margin_signal_name": "Segment operating margin change",
+   "fy_label": "FY24",
+   "why": "S&P Global 'is a provider of credit ratings, benchmarks, analytics and workflow solutions in the global capital, commodity and automotive markets' (Item 1); Item 1A: 'Changes in the volume of securities issued and traded in domestic and/or global capital markets, asset levels and flows into investment products, high interest rates, changes in interest rates and volatility in the financial markets, and volatility in the commodities markets impact our business, financial condition or results of operations.', and no risk factor calling a business cyclical; a fall in debt issuance or the markets it serves cuts revenue; the 10-K names generative AI as a risk to demand for its products (GENAI, on the watch list below)",
+   "fiscal_year_ends": {
+    "2015": "2015-12-31",
+    "2016": "2016-12-31",
+    "2017": "2017-12-31",
+    "2018": "2018-12-31",
+    "2019": "2019-12-31",
+    "2020": "2020-12-31",
+    "2021": "2021-12-31",
+    "2022": "2022-12-31",
+    "2023": "2023-12-31",
+    "2024": "2024-12-31"
+   },
+   "eps_normalized": {
+    "2015": 4.53,
+    "2016": 7.94,
+    "2017": 5.78,
+    "2018": 7.73,
+    "2019": 8.6,
+    "2020": 9.66,
+    "2021": 12.51,
+    "2022": 10.2,
+    "2023": 8.23,
+    "2024": 12.35
+   },
+   "eps_sources": {
+    "2015": "SP57",
+    "2016": "SP87",
+    "2017": "SP87",
+    "2018": "SP87",
+    "2019": "SP92",
+    "2020": "SP99",
+    "2021": "SP104",
+    "2022": "SP109",
+    "2023": "SP109",
+    "2024": "SP109"
+   },
+   "normalization": "diluted EPS, each year from the latest filing that reports it on that line: 2022-2024 from the FY2024 10-K's statements of income (Item 6 is reserved from the FY2021 10-K), 2021 from SP104, 2020 from SP99, 2019 from SP92, 2016-2018 from SP87, 2015 from SP57; 2015 at the company's $4.53 (figures excluding only one-offs, the same basis), GAAP otherwise (from 2016 the company's adjusted figures also remove recurring deal-related amortization: not figures excluding only one-offs); no year is excluded",
+   "revenue_usd_b": {
+    "2015": 5.313,
+    "2016": 5.661,
+    "2017": 6.063,
+    "2018": 6.258,
+    "2019": 6.699,
+    "2020": 7.442,
+    "2021": 8.297,
+    "2022": 11.181,
+    "2023": 12.497,
+    "2024": 14.208
+   },
+   "revenue_sources": {
+    "2015": "SP82",
+    "2016": "SP87",
+    "2017": "SP87",
+    "2018": "SP87",
+    "2019": "SP92",
+    "2020": "SP99",
+    "2021": "SP104",
+    "2022": "SP109",
+    "2023": "SP109",
+    "2024": "SP109"
+   },
+   "diluted_shares_m": {
+    "2015": 274.6,
+    "2024": 311.9
+   },
+   "shares_sources": {
+    "2015": "SP58",
+    "2024": "SP109"
+   },
+   "shares_published": {
+    "2015": "2016-02-12"
+   },
+   "prev_fy_op_margin": 41.12,
+   "prev_fy_op_margin_note": "segment operating profit $5,842M / revenue $14,208M (FY24, SP109)",
+   "prev_fy_pretax_margin": 37.36,
+   "prev_fy_pretax_margin_note": "income before taxes $5,308M / revenue $14,208M (FY24, SP109)",
+   "prev_fy_sales_growth": 13.7,
+   "prev_fy_fs_pct": 17.0,
+   "prev_fy_mhe_pct": null,
+   "tax_rate": 0.215,
+   "tax_note": "provision for taxes on income $1,141M / pre-tax income $5,308M (FY24, SP109)",
+   "cash_b": 1.666,
+   "cash_label": "FY24",
+   "cash_note": "cash and cash equivalents $1,666M at December 31, 2024 (SP109)",
+   "ocf_b": 5.689,
+   "ocf_note": "cash provided by operating activities $5,689M in 2024 (SP109)",
+   "dividend_annual": 3.84,
+   "dividend_note": "$0.96 quarterly, $3.84 a year ('On January 28, 2025, the Board of Directors approved a quarterly common stock dividend of $0.96 per share.', SP109)",
+   "cash_return_text": "repurchase of treasury shares $3,301M in 2024 (SP109)",
+   "business_line": "ratings (S&P Global Ratings), data and analytics (S&P Global Market Intelligence), commodities (S&P Global Commodity Insights), automotive (S&P Global Mobility) and indices (S&P Dow Jones Indices)",
+   "groups": [
+    [
+     "Market Intelligence",
+     4.645,
+     6.1
+    ],
+    [
+     "Ratings",
+     4.37,
+     31.2
+    ],
+    [
+     "Commodity Insights",
+     2.142,
+     10.1
+    ],
+    [
+     "Indices",
+     1.628,
+     16.0
+    ],
+    [
+     "Mobility",
+     1.609,
+     8.4
+    ]
+   ],
+   "groups_basis": "FY24 revenue by segment (SP109)",
+   "key_tail": "The 10-K ties results to the volume of securities issued and traded in the capital\n  markets, to flows into investment products, to interest rates and to volatility in the\n  financial and commodities markets.",
+   "cat4_tail": "ratings, data and index revenue in one number"
+  },
+  {
+   "published": "2026-02-11",
+   "sources": [
+    "SP114",
+    "SP109",
+    "SP104",
+    "SP99",
+    "SP92",
+    "SP87",
+    "SP65"
+   ],
+   "company": "S&P Global Inc.",
+   "exchange": "NYSE",
+   "pe_window_start": null,
+   "margin_signal_name": "Segment operating margin change",
+   "fy_label": "FY25",
+   "why": "S&P Global 'is a global, diversified, and highly differentiated provider of benchmarks, data, analytics and workflow solutions in the global capital, energy and commodity, and automotive markets' (Item 1); Item 1A: 'Changes in the volume of securities issued and traded in domestic and/or global capital markets, asset levels and flows into investment products, high interest rates, changes in interest rates and volatility in the financial markets, and volatility in the energy and commodity markets impact our business, financial condition or results of operations.', and no risk factor calling a business cyclical; a fall in debt issuance or the markets it serves cuts revenue; the 10-K names generative AI as a risk to demand for its products (GENAI, on the watch list below)",
+   "fiscal_year_ends": {
+    "2016": "2016-12-31",
+    "2017": "2017-12-31",
+    "2018": "2018-12-31",
+    "2019": "2019-12-31",
+    "2020": "2020-12-31",
+    "2021": "2021-12-31",
+    "2022": "2022-12-31",
+    "2023": "2023-12-31",
+    "2024": "2024-12-31",
+    "2025": "2025-12-31"
+   },
+   "eps_normalized": {
+    "2016": 7.94,
+    "2017": 5.78,
+    "2018": 7.73,
+    "2019": 8.6,
+    "2020": 9.66,
+    "2021": 12.51,
+    "2022": 10.2,
+    "2023": 8.23,
+    "2024": 12.35,
+    "2025": 14.66
+   },
+   "eps_sources": {
+    "2016": "SP87",
+    "2017": "SP87",
+    "2018": "SP87",
+    "2019": "SP92",
+    "2020": "SP99",
+    "2021": "SP104",
+    "2022": "SP109",
+    "2023": "SP114",
+    "2024": "SP114",
+    "2025": "SP114"
+   },
+   "normalization": "diluted EPS, each year from the latest filing that reports it on that line: 2023-2025 from the FY2025 10-K's statements of income (Item 6 is reserved from the FY2021 10-K), 2022 from SP109, 2021 from SP104, 2020 from SP99, 2019 from SP92, 2016-2018 from SP87; GAAP every year (from 2016 the company's adjusted figures also remove recurring deal-related amortization: not figures excluding only one-offs); no year is excluded",
+   "revenue_usd_b": {
+    "2016": 5.661,
+    "2017": 6.063,
+    "2018": 6.258,
+    "2019": 6.699,
+    "2020": 7.442,
+    "2021": 8.297,
+    "2022": 11.181,
+    "2023": 12.497,
+    "2024": 14.208,
+    "2025": 15.336
+   },
+   "revenue_sources": {
+    "2016": "SP87",
+    "2017": "SP87",
+    "2018": "SP87",
+    "2019": "SP92",
+    "2020": "SP99",
+    "2021": "SP104",
+    "2022": "SP109",
+    "2023": "SP114",
+    "2024": "SP114",
+    "2025": "SP114"
+   },
+   "diluted_shares_m": {
+    "2016": 265.2,
+    "2025": 305.1
+   },
+   "shares_sources": {
+    "2016": "SP65",
+    "2025": "SP114"
+   },
+   "shares_published": {
+    "2016": "2017-02-09"
+   },
+   "prev_fy_op_margin": 43.01,
+   "prev_fy_op_margin_note": "segment operating profit $6,596M / revenue $15,336M (FY25, SP114)",
+   "prev_fy_pretax_margin": 40.6,
+   "prev_fy_pretax_margin_note": "income before taxes $6,227M / revenue $15,336M (FY25, SP114)",
+   "prev_fy_sales_growth": 7.9,
+   "prev_fy_fs_pct": 8.0,
+   "prev_fy_mhe_pct": null,
+   "tax_rate": 0.226,
+   "tax_note": "provision for taxes on income $1,407M / pre-tax income $6,227M (FY25, SP114)",
+   "cash_b": 1.745,
+   "cash_label": "FY25",
+   "cash_note": "cash and cash equivalents $1,745M at December 31, 2025 (SP114)",
+   "ocf_b": 5.651,
+   "ocf_note": "cash provided by operating activities $5,651M in 2025 (SP114)",
+   "dividend_annual": 3.88,
+   "dividend_note": "$0.97 quarterly, $3.88 a year ('On January 14, 2026, the Board of Directors approved a quarterly common stock dividend of $0.97 per share.', SP114)",
+   "cash_return_text": "repurchase of treasury shares $5,001M in 2025 (SP114)",
+   "business_line": "ratings (S&P Global Ratings), data and analytics (S&P Global Market Intelligence), energy and commodities (S&P Global Energy), automotive (S&P Global Mobility) and indices (S&P Dow Jones Indices)",
+   "groups": [
+    [
+     "Market Intelligence",
+     4.916,
+     5.8
+    ],
+    [
+     "Ratings",
+     4.724,
+     8.1
+    ],
+    [
+     "Energy",
+     2.299,
+     7.3
+    ],
+    [
+     "Indices",
+     1.85,
+     13.6
+    ],
+    [
+     "Mobility",
+     1.747,
+     8.6
+    ]
+   ],
+   "groups_basis": "FY25 revenue by segment (SP114)",
+   "key_tail": "The 10-K ties results to the volume of securities issued and traded in the capital\n  markets, to flows into investment products, to interest rates and to volatility in the\n  financial, energy and commodity markets.",
    "cat4_tail": "ratings, data and index revenue in one number"
   }
  ],
@@ -6097,6 +6991,1262 @@
    "cash_return_text": "'During the third quarter, the Company returned $186 million to shareholders in dividends.'",
    "next_print": "Q4 2021 print (early February)",
    "note": "'Adjusted net income increased 24% to $855 million and adjusted diluted earnings per share increased 24% to $3.54 primarily due to very strong revenue growth.'; Financial Services line: Ratings $1,017.0M + Market Intelligence $570.0M + Indices $298.0M less the royalty elimination $37.0M; McGraw-Hill Education, sold in 2013, is not reported (n/r)"
+  },
+  {
+   "quarter": "Q4 2021",
+   "fy": 2021,
+   "q": 4,
+   "published": "2022-02-08",
+   "source": "SP91",
+   "release": "Feb 8",
+   "im_label": "Platts",
+   "release_time": "before the open on Feb 8: 8-K accepted 2022-02-08 07:16 ET (conference call at 8:30 a.m. ET)",
+   "period_end": "2021-12-31",
+   "raw": {
+    "units": "m0",
+    "rev_k": 2088000.0,
+    "rev_prior_k": 1867000.0,
+    "fs_k": 1839000.0,
+    "fs_prior_k": 1644000.0,
+    "mhe_k": null,
+    "mhe_prior_k": null,
+    "im_k": 249000.0,
+    "im_prior_k": 223000.0,
+    "segop_k": 1068000.0,
+    "segop_prior_k": 848000.0,
+    "diluted_shares_k": 242100.0,
+    "fs_parts": {
+     "Ratings": [
+      989000.0,
+      881000.0
+     ],
+     "Market Intelligence": [
+      584000.0,
+      542000.0
+     ],
+     "Indices": [
+      303000.0,
+      257000.0
+     ],
+     "royalty elimination": [
+      -37000.0,
+      -36000.0
+     ]
+    }
+   },
+   "sales_b": 2.088,
+   "sales_pct": 11.8,
+   "fs_pct": 11.9,
+   "mhe_pct": null,
+   "im_pct": 11.7,
+   "op_margin": 51.15,
+   "op_margin_bp": 572.9,
+   "eps_q": 2.79,
+   "eps_q_prior": 1.88,
+   "eps_pct": 48.4,
+   "diluted_shares_m": 242.1,
+   "cash_return_text": "'Return of Capital: The Company returned $743 million in dividends to shareholders in 2021.'",
+   "next_print": "Q1 2022 print (late April)",
+   "note": "'Adjusted diluted earnings per share increased 16% to $3.15.'; Financial Services line: Ratings $989.0M + Market Intelligence $584.0M + Indices $303.0M less the royalty elimination $37.0M; McGraw-Hill Education, sold in 2013, is not reported (n/r)",
+   "fy_actual": {
+    "fy": 2021,
+    "fy_label": "FY21",
+    "eps_normalized": 12.51,
+    "revenue_usd_b": 8.297,
+    "diluted_shares_m": 241.8,
+    "normalization_note": "FY2021 $12.51, diluted EPS as reported (SP91): the company's adjusted figure also removes deal-related amortization, which recurs (the 2016 rule)",
+    "op_margin": 56.01,
+    "pretax_margin": 50.19,
+    "pretax_margin_note": "pre-tax income $4,164M / revenue $8,297M (FY21, SP91)",
+    "sales_growth": 11.5,
+    "fs_pct": 11.9,
+    "mhe_pct": null,
+    "tax_rate": 0.216,
+    "tax_note": "provision for taxes on income $901M / pre-tax income $4,164M"
+   }
+  },
+  {
+   "quarter": "Q1 2022",
+   "fy": 2022,
+   "q": 1,
+   "published": "2022-05-03",
+   "source": "SP93",
+   "release": "May 3",
+   "im_label": "Commodity Insights",
+   "release_time": "before the open on May 3: 8-K accepted 2022-05-03 07:27 ET (conference call at 8:30 a.m. ET)",
+   "period_end": "2022-03-31",
+   "raw": {
+    "units": "m0",
+    "rev_k": 2389000.0,
+    "rev_prior_k": 2016000.0,
+    "fs_k": 1878000.0,
+    "fs_prior_k": 1776000.0,
+    "mhe_k": null,
+    "mhe_prior_k": null,
+    "im_k": 363000.0,
+    "im_prior_k": 240000.0,
+    "other_k": 148000.0,
+    "other_prior_k": 0.0,
+    "segop_k": 2401000.0,
+    "segop_prior_k": 1167000.0,
+    "diluted_shares_k": 276300.0,
+    "fs_parts": {
+     "Ratings": [
+      868000.0,
+      1017000.0
+     ],
+     "Market Intelligence": [
+      727000.0,
+      524000.0
+     ],
+     "Indices": [
+      322000.0,
+      270000.0
+     ],
+     "royalty elimination": [
+      -39000.0,
+      -35000.0
+     ]
+    }
+   },
+   "sales_b": 2.389,
+   "sales_pct": 18.5,
+   "fs_pct": 5.7,
+   "mhe_pct": null,
+   "im_pct": 51.2,
+   "op_margin": 100.5,
+   "op_margin_bp": 4261.5,
+   "eps_q": 4.47,
+   "eps_q_prior": 3.12,
+   "eps_pct": 43.3,
+   "diluted_shares_m": 276.3,
+   "cash_return_text": "'Return of Capital: During the first quarter, the combined Company returned $7.3 billion to shareholders through a combination of $7 billion in the form of an accelerated share repurchase (ASR) agreement and $265 million in cash dividends paid by S&P Global and IHS Markit pre-merger.'",
+   "next_print": "Q2 2022 print (late July)",
+   "note": "'Adjusted pro forma net income declined 1% to $1.01 billion and adjusted pro forma diluted earnings per share increased 0.3% to $2.89 primarily due to a 1% decrease in pro forma fully diluted shares outstanding.'; Financial Services line: Ratings $868.0M + Market Intelligence $727.0M + Indices $322.0M less the royalty elimination $39.0M; McGraw-Hill Education, sold in 2013, is not reported (n/r); outside the Financial Services line and Commodity Insights: Mobility $115.0M (none a year earlier); Engineering Solutions $33.0M (none a year earlier)"
+  },
+  {
+   "quarter": "Q2 2022",
+   "fy": 2022,
+   "q": 2,
+   "published": "2022-08-02",
+   "source": "SP96",
+   "release": "Aug 2",
+   "im_label": "Commodity Insights",
+   "release_time": "before the open on Aug 2: 8-K accepted 2022-08-02 07:14 ET (conference call at 8:30 a.m. ET)",
+   "period_end": "2022-06-30",
+   "raw": {
+    "units": "m0",
+    "rev_k": 2993000.0,
+    "rev_prior_k": 2106000.0,
+    "fs_k": 2122000.0,
+    "fs_prior_k": 1854000.0,
+    "mhe_k": null,
+    "mhe_prior_k": null,
+    "im_k": 438000.0,
+    "im_prior_k": 252000.0,
+    "other_k": 433000.0,
+    "other_prior_k": 0.0,
+    "segop_k": 1636000.0,
+    "segop_prior_k": 1240000.0,
+    "diluted_shares_k": 339300.0,
+    "fs_parts": {
+     "Ratings": [
+      796000.0,
+      1073000.0
+     ],
+     "Market Intelligence": [
+      1030000.0,
+      539000.0
+     ],
+     "Indices": [
+      339000.0,
+      278000.0
+     ],
+     "royalty elimination": [
+      -43000.0,
+      -36000.0
+     ]
+    }
+   },
+   "sales_b": 2.993,
+   "sales_pct": 42.1,
+   "fs_pct": 14.5,
+   "mhe_pct": null,
+   "im_pct": 73.8,
+   "op_margin": 54.66,
+   "op_margin_bp": -421.9,
+   "eps_q": 2.86,
+   "eps_q_prior": 3.3,
+   "eps_pct": -13.3,
+   "diluted_shares_m": 339.3,
+   "cash_return_text": "'Return of Capital: During the second quarter, the combined Company returned $1.8 billion to shareholders through a combination of $1.5 billion in the form of an accelerated share repurchase (ASR) agreement and $286 million in cash dividends.'",
+   "next_print": "Q3 2022 print (late October)",
+   "note": "'Adjusted net income declined 11% to $955 million compared to non-GAAP pro forma adjusted net income and adjusted diluted earnings per share decreased 7.0% to $2.81 compared to non-GAAP pro forma adjusted diluted earnings per share primarily due to a 5% decrease in pro forma fully diluted shares outstanding.'; Financial Services line: Ratings $796.0M + Market Intelligence $1,030.0M + Indices $339.0M less the royalty elimination $43.0M; McGraw-Hill Education, sold in 2013, is not reported (n/r); outside the Financial Services line and Commodity Insights: Mobility $337.0M (none a year earlier); Engineering Solutions $96.0M (none a year earlier)"
+  },
+  {
+   "quarter": "Q3 2022",
+   "fy": 2022,
+   "q": 3,
+   "published": "2022-10-27",
+   "source": "SP97",
+   "release": "Oct 27",
+   "im_label": "Commodity Insights",
+   "release_time": "before the open on Oct 27: 8-K accepted 2022-10-27 07:18 ET (conference call at 8:30 a.m. ET)",
+   "period_end": "2022-09-30",
+   "raw": {
+    "units": "m0",
+    "rev_k": 2861000.0,
+    "rev_prior_k": 2087000.0,
+    "fs_k": 1988000.0,
+    "fs_prior_k": 1832000.0,
+    "mhe_k": null,
+    "mhe_prior_k": null,
+    "im_k": 432000.0,
+    "im_prior_k": 255000.0,
+    "other_k": 441000.0,
+    "other_prior_k": 0.0,
+    "segop_k": 1022000.0,
+    "segop_prior_k": 1172000.0,
+    "diluted_shares_k": 330900.0,
+    "fs_parts": {
+     "Ratings": [
+      681000.0,
+      1017000.0
+     ],
+     "Market Intelligence": [
+      1016000.0,
+      554000.0
+     ],
+     "Indices": [
+      334000.0,
+      298000.0
+     ],
+     "royalty elimination": [
+      -43000.0,
+      -37000.0
+     ]
+    }
+   },
+   "sales_b": 2.861,
+   "sales_pct": 37.1,
+   "fs_pct": 8.5,
+   "mhe_pct": null,
+   "im_pct": 69.4,
+   "op_margin": 35.72,
+   "op_margin_bp": -2043.5,
+   "eps_q": 1.84,
+   "eps_q_prior": 3.3,
+   "eps_pct": -44.2,
+   "diluted_shares_m": 330.9,
+   "cash_return_text": "'Return of Capital: In 2022, through the third quarter, the Company returned more than $11.7 billion to shareholders through a combination of $11 billion in the form of an accelerated share repurchase (ASR) agreement and $749 million in cash dividends.'",
+   "next_print": "Q4 2022 print (early February)",
+   "note": "'Adjusted net income declined 11% to $968 million compared to non-GAAP pro forma adjusted net income and adjusted diluted earnings per share decreased 4% to $2.93 compared to non-GAAP pro forma adjusted diluted earnings per share primarily due to a 7% decrease in pro forma fully diluted shares outstanding.'; Financial Services line: Ratings $681.0M + Market Intelligence $1,016.0M + Indices $334.0M less the royalty elimination $43.0M; McGraw-Hill Education, sold in 2013, is not reported (n/r); outside the Financial Services line and Commodity Insights: Mobility $346.0M (none a year earlier); Engineering Solutions $95.0M (none a year earlier)"
+  },
+  {
+   "quarter": "Q4 2022",
+   "fy": 2022,
+   "q": 4,
+   "published": "2023-02-09",
+   "source": "SP98",
+   "release": "Feb 9",
+   "im_label": "Commodity Insights",
+   "release_time": "before the open on Feb 9: 8-K accepted 2023-02-09 07:34 ET (conference call at 8:30 a.m. ET)",
+   "period_end": "2022-12-31",
+   "raw": {
+    "units": "m0",
+    "rev_k": 2937000.0,
+    "rev_prior_k": 2088000.0,
+    "fs_k": 2042000.0,
+    "fs_prior_k": 1823000.0,
+    "mhe_k": null,
+    "mhe_prior_k": null,
+    "im_k": 451000.0,
+    "im_prior_k": 265000.0,
+    "other_k": 444000.0,
+    "other_prior_k": 0.0,
+    "segop_k": 848000.0,
+    "segop_prior_k": 1068000.0,
+    "diluted_shares_k": 325200.0,
+    "fs_parts": {
+     "Ratings": [
+      705000.0,
+      989000.0
+     ],
+     "Market Intelligence": [
+      1037000.0,
+      568000.0
+     ],
+     "Indices": [
+      344000.0,
+      303000.0
+     ],
+     "royalty elimination": [
+      -44000.0,
+      -37000.0
+     ]
+    }
+   },
+   "sales_b": 2.937,
+   "sales_pct": 40.7,
+   "fs_pct": 12.0,
+   "mhe_pct": null,
+   "im_pct": 70.2,
+   "op_margin": 28.87,
+   "op_margin_bp": -2227.6,
+   "eps_q": 1.33,
+   "eps_q_prior": 2.79,
+   "eps_pct": -52.3,
+   "diluted_shares_m": 325.2,
+   "cash_return_text": "'Return of Capital: In 2022, the Company returned more than $13 billion to shareholders through a combination of $12 billion in the form of accelerated share repurchases (ASR) and $1 billion in cash dividends.'",
+   "next_print": "Q1 2023 print (late April)",
+   "note": "'Non-GAAP pro forma adjusted revenue decreased 4% compared to non-GAAP pro forma adjusted revenue from 2021, or 3% on a constant-currency basis. 2022 non-GAAP pro forma adjusted net income decreased 9% to $3.76 billion compared to non-GAAP pro forma adjusted net income and non-GAAP pro forma adjusted diluted earnings per share decreased 4% to $11.19 compared to non-GAAP pro forma adjusted earnings per share.'; Financial Services line: Ratings $705.0M + Market Intelligence $1,037.0M + Indices $344.0M less the royalty elimination $44.0M; McGraw-Hill Education, sold in 2013, is not reported (n/r); outside the Financial Services line and Commodity Insights: Mobility $345.0M (none a year earlier); Engineering Solutions $99.0M (none a year earlier)",
+   "fy_actual": {
+    "fy": 2022,
+    "fy_label": "FY22",
+    "eps_normalized": 10.2,
+    "revenue_usd_b": 11.181,
+    "diluted_shares_m": 318.5,
+    "normalization_note": "FY2022 $10.20, diluted EPS as reported (SP98): the company's adjusted figure also removes deal-related amortization, which recurs (the 2016 rule)",
+    "op_margin": 52.82,
+    "pretax_margin": 42.05,
+    "pretax_margin_note": "pre-tax income $4,702M / revenue $11,181M (FY22, SP98)",
+    "sales_growth": 34.8,
+    "fs_pct": 10.2,
+    "mhe_pct": null,
+    "tax_rate": 0.251,
+    "tax_note": "provision for taxes on income $1,180M / pre-tax income $4,702M"
+   }
+  },
+  {
+   "quarter": "Q1 2023",
+   "fy": 2023,
+   "q": 1,
+   "published": "2023-04-27",
+   "source": "SP100",
+   "release": "Apr 27",
+   "im_label": "Commodity Insights",
+   "release_time": "before the open on Apr 27: 8-K accepted 2023-04-27 07:16 ET (conference call at 8:30 a.m. ET)",
+   "period_end": "2023-03-31",
+   "raw": {
+    "units": "m0",
+    "rev_k": 3160000.0,
+    "rev_prior_k": 2389000.0,
+    "fs_k": 2194000.0,
+    "fs_prior_k": 1878000.0,
+    "mhe_k": null,
+    "mhe_prior_k": null,
+    "im_k": 508000.0,
+    "im_prior_k": 363000.0,
+    "other_k": 458000.0,
+    "other_prior_k": 148000.0,
+    "segop_k": 1209000.0,
+    "segop_prior_k": 2401000.0,
+    "diluted_shares_k": 322100.0,
+    "fs_parts": {
+     "Ratings": [
+      824000.0,
+      868000.0
+     ],
+     "Market Intelligence": [
+      1071000.0,
+      727000.0
+     ],
+     "Indices": [
+      341000.0,
+      322000.0
+     ],
+     "royalty elimination": [
+      -42000.0,
+      -39000.0
+     ]
+    }
+   },
+   "sales_b": 3.16,
+   "sales_pct": 32.3,
+   "fs_pct": 16.8,
+   "mhe_pct": null,
+   "im_pct": 39.9,
+   "op_margin": 38.26,
+   "op_margin_bp": -6224.3,
+   "eps_q": 2.47,
+   "eps_q_prior": 4.47,
+   "eps_pct": -44.7,
+   "diluted_shares_m": 322.1,
+   "cash_return_text": "'Return of Capital: In 2023, through the first quarter, the Company returned $790 million to shareholders through a combination of $500 million in the form of an accelerated share repurchase (ASR) agreement and $290 million in cash dividends.'",
+   "next_print": "Q2 2023 print (late July)",
+   "note": "'Adjusted diluted earnings per share increased 9% to $3.15 compared to non-GAAP pro forma adjusted diluted earnings per share primarily due to an 8% decrease in pro forma fully diluted shares outstanding.'; Financial Services line: Ratings $824.0M + Market Intelligence $1,071.0M + Indices $341.0M less the royalty elimination $42.0M; McGraw-Hill Education, sold in 2013, is not reported (n/r); outside the Financial Services line and Commodity Insights: Mobility $358.0M (a year earlier $115.0M); Engineering Solutions $100.0M (a year earlier $33.0M)"
+  },
+  {
+   "quarter": "Q2 2023",
+   "fy": 2023,
+   "q": 2,
+   "published": "2023-07-27",
+   "source": "SP101",
+   "release": "Jul 27",
+   "im_label": "Commodity Insights",
+   "release_time": "before the open on Jul 27: 8-K accepted 2023-07-27 07:10 ET (conference call at 8:30 a.m. ET)",
+   "period_end": "2023-06-30",
+   "raw": {
+    "units": "m0",
+    "rev_k": 3101000.0,
+    "rev_prior_k": 2993000.0,
+    "fs_k": 2237000.0,
+    "fs_prior_k": 2122000.0,
+    "mhe_k": null,
+    "mhe_prior_k": null,
+    "im_k": 462000.0,
+    "im_prior_k": 438000.0,
+    "other_k": 402000.0,
+    "other_prior_k": 433000.0,
+    "segop_k": 1116000.0,
+    "segop_prior_k": 1636000.0,
+    "diluted_shares_k": 319800.0,
+    "fs_parts": {
+     "Ratings": [
+      851000.0,
+      796000.0
+     ],
+     "Market Intelligence": [
+      1079000.0,
+      1030000.0
+     ],
+     "Indices": [
+      348000.0,
+      339000.0
+     ],
+     "royalty elimination": [
+      -41000.0,
+      -43000.0
+     ]
+    }
+   },
+   "sales_b": 3.101,
+   "sales_pct": 3.6,
+   "fs_pct": 5.4,
+   "mhe_pct": null,
+   "im_pct": 5.5,
+   "op_margin": 35.99,
+   "op_margin_bp": -1867.2,
+   "eps_q": 1.6,
+   "eps_q_prior": 2.86,
+   "eps_pct": -44.1,
+   "diluted_shares_m": 319.8,
+   "cash_return_text": "statement of cash flows, the first half of 2023: repurchase of treasury shares $1,501M, dividends paid to shareholders $578M (the release gives no amount returned in the quarter)",
+   "next_print": "Q3 2023 print (late October)",
+   "note": "'GAAP EPS decreased 44% due to gains on divestitures in Q2 2022, and adjusted diluted EPS increased 11% year over year.'; Financial Services line: Ratings $851.0M + Market Intelligence $1,079.0M + Indices $348.0M less the royalty elimination $41.0M; McGraw-Hill Education, sold in 2013, is not reported (n/r); outside the Financial Services line and Commodity Insights: Mobility $369.0M (a year earlier $337.0M); Engineering Solutions $33.0M (a year earlier $96.0M)"
+  },
+  {
+   "quarter": "Q3 2023",
+   "fy": 2023,
+   "q": 3,
+   "published": "2023-11-02",
+   "source": "SP102",
+   "release": "Nov 2",
+   "im_label": "Commodity Insights",
+   "release_time": "before the open on Nov 2: 8-K accepted 2023-11-02 07:10 ET (conference call at 8:30 a.m. ET)",
+   "period_end": "2023-09-30",
+   "raw": {
+    "units": "m0",
+    "rev_k": 3084000.0,
+    "rev_prior_k": 2861000.0,
+    "fs_k": 2226000.0,
+    "fs_prior_k": 1988000.0,
+    "mhe_k": null,
+    "mhe_prior_k": null,
+    "im_k": 479000.0,
+    "im_prior_k": 432000.0,
+    "other_k": 379000.0,
+    "other_prior_k": 441000.0,
+    "segop_k": 1153000.0,
+    "segop_prior_k": 1022000.0,
+    "diluted_shares_k": 318000.0,
+    "fs_parts": {
+     "Ratings": [
+      819000.0,
+      681000.0
+     ],
+     "Market Intelligence": [
+      1099000.0,
+      1016000.0
+     ],
+     "Indices": [
+      354000.0,
+      334000.0
+     ],
+     "royalty elimination": [
+      -46000.0,
+      -43000.0
+     ]
+    }
+   },
+   "sales_b": 3.084,
+   "sales_pct": 7.8,
+   "fs_pct": 12.0,
+   "mhe_pct": null,
+   "im_pct": 10.9,
+   "op_margin": 37.39,
+   "op_margin_bp": 166.5,
+   "eps_q": 2.33,
+   "eps_q_prior": 1.84,
+   "eps_pct": 26.6,
+   "diluted_shares_m": 318.0,
+   "cash_return_text": "statement of cash flows, the first nine months of 2023: repurchase of treasury shares $2,001M, dividends paid to shareholders $864M (the release gives no amount returned in the quarter)",
+   "next_print": "Q4 2023 print (early February)",
+   "note": "'GAAP diluted EPS increased 27%, and adjusted diluted EPS increased 10% year over year.'; Financial Services line: Ratings $819.0M + Market Intelligence $1,099.0M + Indices $354.0M less the royalty elimination $46.0M; McGraw-Hill Education, sold in 2013, is not reported (n/r); outside the Financial Services line and Commodity Insights: Mobility $379.0M (a year earlier $346.0M); Engineering Solutions $0.0M (a year earlier $95.0M)"
+  },
+  {
+   "quarter": "Q4 2023",
+   "fy": 2023,
+   "q": 4,
+   "published": "2024-02-08",
+   "source": "SP103",
+   "release": "Feb 8",
+   "im_label": "Commodity Insights",
+   "release_time": "before the open on Feb 8: 8-K accepted 2024-02-08 07:10 ET (conference call at 8:30 a.m. ET)",
+   "period_end": "2023-12-31",
+   "raw": {
+    "units": "m0",
+    "rev_k": 3152000.0,
+    "rev_prior_k": 2937000.0,
+    "fs_k": 2278000.0,
+    "fs_prior_k": 2042000.0,
+    "mhe_k": null,
+    "mhe_prior_k": null,
+    "im_k": 497000.0,
+    "im_prior_k": 451000.0,
+    "other_k": 377000.0,
+    "other_prior_k": 444000.0,
+    "segop_k": 1007000.0,
+    "segop_prior_k": 848000.0,
+    "diluted_shares_k": 315900.0,
+    "fs_parts": {
+     "Ratings": [
+      838000.0,
+      705000.0
+     ],
+     "Market Intelligence": [
+      1127000.0,
+      1037000.0
+     ],
+     "Indices": [
+      360000.0,
+      344000.0
+     ],
+     "royalty elimination": [
+      -47000.0,
+      -44000.0
+     ]
+    }
+   },
+   "sales_b": 3.152,
+   "sales_pct": 7.3,
+   "fs_pct": 11.6,
+   "mhe_pct": null,
+   "im_pct": 10.2,
+   "op_margin": 31.95,
+   "op_margin_bp": 307.5,
+   "eps_q": 1.83,
+   "eps_q_prior": 1.33,
+   "eps_pct": 37.6,
+   "diluted_shares_m": 315.9,
+   "cash_return_text": "'The Company returned $4.4 billion to shareholders in 2023, including $1.1 billion in dividends and $3.3 billion in share repurchases.'",
+   "next_print": "Q1 2024 print (late April)",
+   "note": "'Adjusted net income for the fourth quarter increased 19% to $988 million and adjusted diluted earnings per share increased 23% to $3.13.'; Financial Services line: Ratings $838.0M + Market Intelligence $1,127.0M + Indices $360.0M less the royalty elimination $47.0M; McGraw-Hill Education, sold in 2013, is not reported (n/r); outside the Financial Services line and Commodity Insights: Mobility $377.0M (a year earlier $345.0M); Engineering Solutions $0.0M (a year earlier $99.0M)",
+   "fy_actual": {
+    "fy": 2023,
+    "fy_label": "FY23",
+    "eps_normalized": 8.23,
+    "revenue_usd_b": 12.497,
+    "diluted_shares_m": 318.9,
+    "normalization_note": "FY2023 $8.23, diluted EPS as reported (SP103): the company's adjusted figure also removes deal-related amortization, which recurs (the 2016 rule)",
+    "op_margin": 35.9,
+    "pretax_margin": 29.38,
+    "pretax_margin_note": "pre-tax income $3,671M / revenue $12,497M (FY23, SP103)",
+    "sales_growth": 11.8,
+    "fs_pct": 11.2,
+    "mhe_pct": null,
+    "tax_rate": 0.212,
+    "tax_note": "provision for taxes on income $778M / pre-tax income $3,671M"
+   }
+  },
+  {
+   "quarter": "Q1 2024",
+   "fy": 2024,
+   "q": 1,
+   "published": "2024-04-25",
+   "source": "SP105",
+   "release": "Apr 25",
+   "im_label": "Commodity Insights",
+   "release_time": "before the open on Apr 25: 8-K accepted 2024-04-25 07:10 ET (conference call at 8:30 a.m. ET)",
+   "period_end": "2024-03-31",
+   "raw": {
+    "units": "m0",
+    "rev_k": 3491000.0,
+    "rev_prior_k": 3160000.0,
+    "fs_k": 2546000.0,
+    "fs_prior_k": 2194000.0,
+    "mhe_k": null,
+    "mhe_prior_k": null,
+    "im_k": 559000.0,
+    "im_prior_k": 508000.0,
+    "other_k": 386000.0,
+    "other_prior_k": 458000.0,
+    "segop_k": 1436000.0,
+    "segop_prior_k": 1209000.0,
+    "diluted_shares_k": 314000.0,
+    "fs_parts": {
+     "Ratings": [
+      1062000.0,
+      824000.0
+     ],
+     "Market Intelligence": [
+      1142000.0,
+      1071000.0
+     ],
+     "Indices": [
+      387000.0,
+      341000.0
+     ],
+     "royalty elimination": [
+      -45000.0,
+      -42000.0
+     ]
+    }
+   },
+   "sales_b": 3.491,
+   "sales_pct": 10.5,
+   "fs_pct": 16.0,
+   "mhe_pct": null,
+   "im_pct": 10.0,
+   "op_margin": 41.13,
+   "op_margin_bp": 287.5,
+   "eps_q": 3.16,
+   "eps_q_prior": 2.47,
+   "eps_pct": 27.9,
+   "diluted_shares_m": 314.0,
+   "cash_return_text": "statement of cash flows, the first quarter of 2024: repurchase of treasury shares $500M, dividends paid to shareholders $286M (the release gives no amount returned in the quarter)",
+   "next_print": "Q2 2024 print (late July)",
+   "note": "'Adjusted net income for the first quarter increased 24% to $1,258 million and adjusted diluted earnings per share increased 27% to $4.01.'; Financial Services line: Ratings $1,062.0M + Market Intelligence $1,142.0M + Indices $387.0M less the royalty elimination $45.0M; McGraw-Hill Education, sold in 2013, is not reported (n/r); outside the Financial Services line and Commodity Insights: Mobility $386.0M (a year earlier $358.0M); Engineering Solutions $0.0M (a year earlier $100.0M)"
+  },
+  {
+   "quarter": "Q2 2024",
+   "fy": 2024,
+   "q": 2,
+   "published": "2024-07-30",
+   "source": "SP106",
+   "release": "Jul 30",
+   "im_label": "Commodity Insights",
+   "release_time": "before the open on Jul 30: 8-K accepted 2024-07-30 07:10 ET (conference call at 8:30 a.m. ET)",
+   "period_end": "2024-06-30",
+   "raw": {
+    "units": "m0",
+    "rev_k": 3549000.0,
+    "rev_prior_k": 3101000.0,
+    "fs_k": 2633000.0,
+    "fs_prior_k": 2237000.0,
+    "mhe_k": null,
+    "mhe_prior_k": null,
+    "im_k": 516000.0,
+    "im_prior_k": 462000.0,
+    "other_k": 400000.0,
+    "other_prior_k": 402000.0,
+    "segop_k": 1504000.0,
+    "segop_prior_k": 1116000.0,
+    "diluted_shares_k": 313200.0,
+    "fs_parts": {
+     "Ratings": [
+      1135000.0,
+      851000.0
+     ],
+     "Market Intelligence": [
+      1155000.0,
+      1079000.0
+     ],
+     "Indices": [
+      389000.0,
+      348000.0
+     ],
+     "royalty elimination": [
+      -46000.0,
+      -41000.0
+     ]
+    }
+   },
+   "sales_b": 3.549,
+   "sales_pct": 14.4,
+   "fs_pct": 17.7,
+   "mhe_pct": null,
+   "im_pct": 11.7,
+   "op_margin": 42.38,
+   "op_margin_bp": 639.0,
+   "eps_q": 3.23,
+   "eps_q_prior": 1.6,
+   "eps_pct": 101.9,
+   "diluted_shares_m": 313.2,
+   "cash_return_text": "statement of cash flows, the first half of 2024: repurchase of treasury shares $500M, dividends paid to shareholders $572M (the release gives no amount returned in the quarter)",
+   "next_print": "Q3 2024 print (late October)",
+   "note": "'Adjusted net income for the second quarter increased 27% to $1.267 billion and adjusted diluted earnings per share increased 30% to $4.04.'; Financial Services line: Ratings $1,135.0M + Market Intelligence $1,155.0M + Indices $389.0M less the royalty elimination $46.0M; McGraw-Hill Education, sold in 2013, is not reported (n/r); outside the Financial Services line and Commodity Insights: Mobility $400.0M (a year earlier $369.0M); Engineering Solutions $0.0M (a year earlier $33.0M)"
+  },
+  {
+   "quarter": "Q3 2024",
+   "fy": 2024,
+   "q": 3,
+   "published": "2024-10-24",
+   "source": "SP107",
+   "release": "Oct 24",
+   "im_label": "Commodity Insights",
+   "release_time": "before the open on Oct 24: 8-K accepted 2024-10-24 07:10 ET (conference call at 8:30 a.m. ET)",
+   "period_end": "2024-09-30",
+   "raw": {
+    "units": "m0",
+    "rev_k": 3575000.0,
+    "rev_prior_k": 3084000.0,
+    "fs_k": 2641000.0,
+    "fs_prior_k": 2226000.0,
+    "mhe_k": null,
+    "mhe_prior_k": null,
+    "im_k": 522000.0,
+    "im_prior_k": 479000.0,
+    "other_k": 412000.0,
+    "other_prior_k": 379000.0,
+    "segop_k": 1496000.0,
+    "segop_prior_k": 1153000.0,
+    "diluted_shares_k": 311500.0,
+    "fs_parts": {
+     "Ratings": [
+      1110000.0,
+      819000.0
+     ],
+     "Market Intelligence": [
+      1162000.0,
+      1099000.0
+     ],
+     "Indices": [
+      416000.0,
+      354000.0
+     ],
+     "royalty elimination": [
+      -47000.0,
+      -46000.0
+     ]
+    }
+   },
+   "sales_b": 3.575,
+   "sales_pct": 15.9,
+   "fs_pct": 18.6,
+   "mhe_pct": null,
+   "im_pct": 9.0,
+   "op_margin": 41.85,
+   "op_margin_bp": 446.0,
+   "eps_q": 3.11,
+   "eps_q_prior": 2.33,
+   "eps_pct": 33.5,
+   "diluted_shares_m": 311.5,
+   "cash_return_text": "statement of cash flows, the first nine months of 2024: repurchase of treasury shares $2,001M, dividends paid to shareholders $854M (the release gives no amount returned in the quarter)",
+   "next_print": "Q4 2024 print (early February)",
+   "note": "'Adjusted net income for the third quarter increased 18% to $1.210 billion and adjusted diluted earnings per share increased 21% to $3.89.'; Financial Services line: Ratings $1,110.0M + Market Intelligence $1,162.0M + Indices $416.0M less the royalty elimination $47.0M; McGraw-Hill Education, sold in 2013, is not reported (n/r); outside the Financial Services line and Commodity Insights: Mobility $412.0M (a year earlier $379.0M); Engineering Solutions $0.0M (none a year earlier)"
+  },
+  {
+   "quarter": "Q4 2024",
+   "fy": 2024,
+   "q": 4,
+   "published": "2025-02-11",
+   "source": "SP108",
+   "release": "Feb 11",
+   "im_label": "Commodity Insights",
+   "release_time": "before the open on Feb 11: 8-K accepted 2025-02-11 07:10 ET (conference call at 8:30 a.m. ET)",
+   "period_end": "2024-12-31",
+   "raw": {
+    "units": "m0",
+    "rev_k": 3592000.0,
+    "rev_prior_k": 3152000.0,
+    "fs_k": 2636000.0,
+    "fs_prior_k": 2278000.0,
+    "mhe_k": null,
+    "mhe_prior_k": null,
+    "im_k": 545000.0,
+    "im_prior_k": 497000.0,
+    "other_k": 411000.0,
+    "other_prior_k": 377000.0,
+    "segop_k": 1407000.0,
+    "segop_prior_k": 1007000.0,
+    "diluted_shares_k": 308900.0,
+    "fs_parts": {
+     "Ratings": [
+      1062000.0,
+      838000.0
+     ],
+     "Market Intelligence": [
+      1186000.0,
+      1127000.0
+     ],
+     "Indices": [
+      436000.0,
+      360000.0
+     ],
+     "royalty elimination": [
+      -48000.0,
+      -47000.0
+     ]
+    }
+   },
+   "sales_b": 3.592,
+   "sales_pct": 14.0,
+   "fs_pct": 15.7,
+   "mhe_pct": null,
+   "im_pct": 9.7,
+   "op_margin": 39.17,
+   "op_margin_bp": 722.2,
+   "eps_q": 2.85,
+   "eps_q_prior": 1.83,
+   "eps_pct": 55.7,
+   "diluted_shares_m": 308.9,
+   "cash_return_text": "'The Company returned more than $4.4 billion to shareholders in 2024, including $1.1 billion in dividends and $3.3 billion in share repurchases.'",
+   "next_print": "Q1 2025 print (late April)",
+   "note": "'Adjusted net income for the fourth quarter increased 18% to $1.163 billion and adjusted diluted earnings per share increased 20% to $3.77.'; Financial Services line: Ratings $1,062.0M + Market Intelligence $1,186.0M + Indices $436.0M less the royalty elimination $48.0M; McGraw-Hill Education, sold in 2013, is not reported (n/r); outside the Financial Services line and Commodity Insights: Mobility $411.0M (a year earlier $377.0M); Engineering Solutions $0.0M (none a year earlier)",
+   "fy_actual": {
+    "fy": 2024,
+    "fy_label": "FY24",
+    "eps_normalized": 12.35,
+    "revenue_usd_b": 14.208,
+    "diluted_shares_m": 311.9,
+    "normalization_note": "FY2024 $12.35, diluted EPS as reported (SP108): the company's adjusted figure also removes deal-related amortization, which recurs (the 2016 rule)",
+    "op_margin": 41.12,
+    "pretax_margin": 37.36,
+    "pretax_margin_note": "pre-tax income $5,308M / revenue $14,208M (FY24, SP108)",
+    "sales_growth": 13.7,
+    "fs_pct": 17.0,
+    "mhe_pct": null,
+    "tax_rate": 0.215,
+    "tax_note": "provision for taxes on income $1,141M / pre-tax income $5,308M"
+   }
+  },
+  {
+   "quarter": "Q1 2025",
+   "fy": 2025,
+   "q": 1,
+   "published": "2025-04-29",
+   "source": "SP110",
+   "release": "Apr 29",
+   "im_label": "Commodity Insights",
+   "release_time": "before the open on Apr 29: 8-K accepted 2025-04-29 07:10 ET (conference call at 8:30 a.m. ET)",
+   "period_end": "2025-03-31",
+   "raw": {
+    "units": "m0",
+    "rev_k": 3777000.0,
+    "rev_prior_k": 3491000.0,
+    "fs_k": 2745000.0,
+    "fs_prior_k": 2546000.0,
+    "mhe_k": null,
+    "mhe_prior_k": null,
+    "im_k": 612000.0,
+    "im_prior_k": 559000.0,
+    "other_k": 420000.0,
+    "other_prior_k": 386000.0,
+    "segop_k": 1633000.0,
+    "segop_prior_k": 1436000.0,
+    "diluted_shares_k": 307700.0,
+    "fs_parts": {
+     "Ratings": [
+      1149000.0,
+      1062000.0
+     ],
+     "Market Intelligence": [
+      1199000.0,
+      1142000.0
+     ],
+     "Indices": [
+      445000.0,
+      387000.0
+     ],
+     "royalty elimination": [
+      -48000.0,
+      -45000.0
+     ]
+    }
+   },
+   "sales_b": 3.777,
+   "sales_pct": 8.2,
+   "fs_pct": 7.8,
+   "mhe_pct": null,
+   "im_pct": 9.5,
+   "op_margin": 43.24,
+   "op_margin_bp": 210.1,
+   "eps_q": 3.54,
+   "eps_q_prior": 3.16,
+   "eps_pct": 12.0,
+   "diluted_shares_m": 307.7,
+   "cash_return_text": "statement of cash flows, the first quarter of 2025: repurchase of treasury shares $650M, dividends paid to shareholders $295M (the release gives no amount returned in the quarter)",
+   "next_print": "Q2 2025 print (late July)",
+   "note": "'Adjusted net income for the first quarter increased 7% to $1.344 billion and adjusted diluted earnings per share increased 9% to $4.37.'; Financial Services line: Ratings $1,149.0M + Market Intelligence $1,199.0M + Indices $445.0M less the royalty elimination $48.0M; McGraw-Hill Education, sold in 2013, is not reported (n/r); outside the Financial Services line and Commodity Insights: Mobility $420.0M (a year earlier $386.0M)"
+  },
+  {
+   "quarter": "Q2 2025",
+   "fy": 2025,
+   "q": 2,
+   "published": "2025-07-31",
+   "source": "SP111",
+   "release": "Jul 31",
+   "im_label": "Commodity Insights",
+   "release_time": "before the open on Jul 31: 8-K accepted 2025-07-31 07:10 ET (conference call at 8:30 a.m. ET)",
+   "period_end": "2025-06-30",
+   "raw": {
+    "units": "m0",
+    "rev_k": 3755000.0,
+    "rev_prior_k": 3549000.0,
+    "fs_k": 2762000.0,
+    "fs_prior_k": 2633000.0,
+    "mhe_k": null,
+    "mhe_prior_k": null,
+    "im_k": 555000.0,
+    "im_prior_k": 516000.0,
+    "other_k": 438000.0,
+    "other_prior_k": 400000.0,
+    "segop_k": 1620000.0,
+    "segop_prior_k": 1504000.0,
+    "diluted_shares_k": 306100.0,
+    "fs_parts": {
+     "Ratings": [
+      1148000.0,
+      1135000.0
+     ],
+     "Market Intelligence": [
+      1217000.0,
+      1155000.0
+     ],
+     "Indices": [
+      446000.0,
+      389000.0
+     ],
+     "royalty elimination": [
+      -49000.0,
+      -46000.0
+     ]
+    }
+   },
+   "sales_b": 3.755,
+   "sales_pct": 5.8,
+   "fs_pct": 4.9,
+   "mhe_pct": null,
+   "im_pct": 7.6,
+   "op_margin": 43.14,
+   "op_margin_bp": 76.4,
+   "eps_q": 3.5,
+   "eps_q_prior": 3.23,
+   "eps_pct": 8.4,
+   "diluted_shares_m": 306.1,
+   "cash_return_text": "statement of cash flows, the first half of 2025: repurchase of treasury shares $1,301M, dividends paid to shareholders $589M (the release gives no amount returned in the quarter)",
+   "next_print": "Q3 2025 print (late October)",
+   "note": "'Adjusted net income for the second quarter increased 7% to $1.356 billion and adjusted diluted earnings per share increased 10% to $4.43.'; Financial Services line: Ratings $1,148.0M + Market Intelligence $1,217.0M + Indices $446.0M less the royalty elimination $49.0M; McGraw-Hill Education, sold in 2013, is not reported (n/r); outside the Financial Services line and Commodity Insights: Mobility $438.0M (a year earlier $400.0M)"
+  },
+  {
+   "quarter": "Q3 2025",
+   "fy": 2025,
+   "q": 3,
+   "published": "2025-10-30",
+   "source": "SP112",
+   "release": "Oct 30",
+   "im_label": "Commodity Insights",
+   "release_time": "before the open on Oct 30: 8-K accepted 2025-10-30 07:10 ET (conference call at 8:30 a.m. ET)",
+   "period_end": "2025-09-30",
+   "raw": {
+    "units": "m0",
+    "rev_k": 3888000.0,
+    "rev_prior_k": 3575000.0,
+    "fs_k": 2887000.0,
+    "fs_prior_k": 2641000.0,
+    "mhe_k": null,
+    "mhe_prior_k": null,
+    "im_k": 556000.0,
+    "im_prior_k": 522000.0,
+    "other_k": 445000.0,
+    "other_prior_k": 412000.0,
+    "segop_k": 1765000.0,
+    "segop_prior_k": 1496000.0,
+    "diluted_shares_k": 304500.0,
+    "fs_parts": {
+     "Ratings": [
+      1240000.0,
+      1110000.0
+     ],
+     "Market Intelligence": [
+      1236000.0,
+      1162000.0
+     ],
+     "Indices": [
+      462000.0,
+      416000.0
+     ],
+     "royalty elimination": [
+      -51000.0,
+      -47000.0
+     ]
+    }
+   },
+   "sales_b": 3.888,
+   "sales_pct": 8.8,
+   "fs_pct": 9.3,
+   "mhe_pct": null,
+   "im_pct": 6.5,
+   "op_margin": 45.4,
+   "op_margin_bp": 355.0,
+   "eps_q": 3.86,
+   "eps_q_prior": 3.11,
+   "eps_pct": 24.1,
+   "diluted_shares_m": 304.5,
+   "cash_return_text": "'Since July, the Company has returned $1.5 billion to shareholders through dividends and share repurchases.'",
+   "next_print": "Q4 2025 print (early February)",
+   "note": "'Adjusted net income for the third quarter increased 19% to $1.442 billion and adjusted diluted earnings per share increased 22% to $4.73.'; Financial Services line: Ratings $1,240.0M + Market Intelligence $1,236.0M + Indices $462.0M less the royalty elimination $51.0M; McGraw-Hill Education, sold in 2013, is not reported (n/r); outside the Financial Services line and Commodity Insights: Mobility $445.0M (a year earlier $412.0M)"
+  },
+  {
+   "quarter": "Q4 2025",
+   "fy": 2025,
+   "q": 4,
+   "published": "2026-02-10",
+   "source": "SP113",
+   "release": "Feb 10",
+   "im_label": "Energy",
+   "release_time": "before the open on Feb 10: 8-K accepted 2026-02-10 07:10 ET (conference call at 8:30 a.m. ET)",
+   "period_end": "2025-12-31",
+   "raw": {
+    "units": "m0",
+    "rev_k": 3916000.0,
+    "rev_prior_k": 3592000.0,
+    "fs_k": 2896000.0,
+    "fs_prior_k": 2636000.0,
+    "mhe_k": null,
+    "mhe_prior_k": null,
+    "im_k": 576000.0,
+    "im_prior_k": 545000.0,
+    "other_k": 444000.0,
+    "other_prior_k": 411000.0,
+    "segop_k": 1579000.0,
+    "segop_prior_k": 1407000.0,
+    "diluted_shares_k": 302100.0,
+    "fs_parts": {
+     "Ratings": [
+      1187000.0,
+      1062000.0
+     ],
+     "Market Intelligence": [
+      1264000.0,
+      1186000.0
+     ],
+     "Indices": [
+      498000.0,
+      436000.0
+     ],
+     "royalty elimination": [
+      -53000.0,
+      -48000.0
+     ]
+    }
+   },
+   "sales_b": 3.916,
+   "sales_pct": 9.0,
+   "fs_pct": 9.9,
+   "mhe_pct": null,
+   "im_pct": 5.7,
+   "op_margin": 40.32,
+   "op_margin_bp": 115.1,
+   "eps_q": 3.75,
+   "eps_q_prior": 2.85,
+   "eps_pct": 31.6,
+   "diluted_shares_m": 302.1,
+   "cash_return_text": "'The Company returned $6.2 billion to shareholders in 2025, including $1.2 billion in dividends and $5.0 billion in share repurchases.'",
+   "next_print": "Q1 2026 print (late April)",
+   "note": "'Adjusted net income for the fourth quarter increased 12% to $1.299 billion and adjusted diluted earnings per share increased 14% to $4.30.'; Financial Services line: Ratings $1,187.0M + Market Intelligence $1,264.0M + Indices $498.0M less the royalty elimination $53.0M; McGraw-Hill Education, sold in 2013, is not reported (n/r); outside the Financial Services line and Energy: Mobility $444.0M (a year earlier $411.0M)",
+   "fy_actual": {
+    "fy": 2025,
+    "fy_label": "FY25",
+    "eps_normalized": 14.66,
+    "revenue_usd_b": 15.336,
+    "diluted_shares_m": 305.1,
+    "normalization_note": "FY2025 $14.66, diluted EPS as reported (SP113): the company's adjusted figure also removes deal-related amortization, which recurs (the 2016 rule)",
+    "op_margin": 43.01,
+    "pretax_margin": 40.6,
+    "pretax_margin_note": "pre-tax income $6,227M / revenue $15,336M (FY25, SP113)",
+    "sales_growth": 7.9,
+    "fs_pct": 8.0,
+    "mhe_pct": null,
+    "tax_rate": 0.226,
+    "tax_note": "provision for taxes on income $1,407M / pre-tax income $6,227M"
+   }
+  },
+  {
+   "quarter": "Q1 2026",
+   "fy": 2026,
+   "q": 1,
+   "published": "2026-04-28",
+   "source": "SP115",
+   "release": "Apr 28",
+   "im_label": "Energy",
+   "release_time": "before the open on Apr 28: 8-K accepted 2026-04-28 07:10 ET (conference call at 8:30 a.m. ET)",
+   "period_end": "2026-03-31",
+   "raw": {
+    "units": "m0",
+    "rev_k": 4171000.0,
+    "rev_prior_k": 3777000.0,
+    "fs_k": 3065000.0,
+    "fs_prior_k": 2745000.0,
+    "mhe_k": null,
+    "mhe_prior_k": null,
+    "im_k": 652000.0,
+    "im_prior_k": 612000.0,
+    "other_k": 454000.0,
+    "other_prior_k": 420000.0,
+    "segop_k": 2073000.0,
+    "segop_prior_k": 1633000.0,
+    "diluted_shares_k": 297600.0,
+    "fs_parts": {
+     "Ratings": [
+      1302000.0,
+      1149000.0
+     ],
+     "Market Intelligence": [
+      1296000.0,
+      1199000.0
+     ],
+     "Indices": [
+      519000.0,
+      445000.0
+     ],
+     "royalty elimination": [
+      -52000.0,
+      -48000.0
+     ]
+    }
+   },
+   "sales_b": 4.171,
+   "sales_pct": 10.4,
+   "fs_pct": 11.7,
+   "mhe_pct": null,
+   "im_pct": 6.5,
+   "op_margin": 49.7,
+   "op_margin_bp": 646.5,
+   "eps_q": 4.69,
+   "eps_q_prior": 3.54,
+   "eps_pct": 32.5,
+   "diluted_shares_m": 297.6,
+   "cash_return_text": "'In the first quarter, the Company repurchased $1 billion in shares, and now expects to return 100% or more of adjusted Free Cash Flow through dividends and share repurchases in 2026.'",
+   "next_print": "Q2 2026 print (late July)",
+   "note": "'Adjusted net income for the first quarter increased 10% to $1.479 billion and adjusted diluted earnings per share increased 14% to $4.97.'; Financial Services line: Ratings $1,302.0M + Market Intelligence $1,296.0M + Indices $519.0M less the royalty elimination $52.0M; McGraw-Hill Education, sold in 2013, is not reported (n/r); outside the Financial Services line and Energy: Mobility $454.0M (a year earlier $420.0M)"
+  },
+  {
+   "quarter": "Q2 2026",
+   "fy": 2026,
+   "q": 2,
+   "published": "2026-07-28",
+   "source": "SP118",
+   "release": "Jul 28",
+   "im_label": "Energy",
+   "release_time": "before the open on Jul 28: 8-K accepted 2026-07-28 07:10 ET (conference call at 8:30 a.m. ET)",
+   "period_end": "2026-06-30",
+   "raw": {
+    "units": "m0",
+    "rev_k": 4146000.0,
+    "rev_prior_k": 3755000.0,
+    "fs_k": 3110000.0,
+    "fs_prior_k": 2762000.0,
+    "mhe_k": null,
+    "mhe_prior_k": null,
+    "im_k": 568000.0,
+    "im_prior_k": 555000.0,
+    "other_k": 468000.0,
+    "other_prior_k": 438000.0,
+    "segop_k": 1916000.0,
+    "segop_prior_k": 1620000.0,
+    "diluted_shares_k": 295500.0,
+    "fs_parts": {
+     "Ratings": [
+      1339000.0,
+      1148000.0
+     ],
+     "Market Intelligence": [
+      1290000.0,
+      1217000.0
+     ],
+     "Indices": [
+      534000.0,
+      446000.0
+     ],
+     "royalty elimination": [
+      -53000.0,
+      -49000.0
+     ]
+    }
+   },
+   "sales_b": 4.146,
+   "sales_pct": 10.4,
+   "fs_pct": 12.6,
+   "mhe_pct": null,
+   "im_pct": 2.3,
+   "op_margin": 46.21,
+   "op_margin_bp": 307.1,
+   "eps_q": 4.12,
+   "eps_q_prior": 3.5,
+   "eps_pct": 17.7,
+   "diluted_shares_m": 295.5,
+   "cash_return_text": "'In the second quarter, the Company repurchased $500 million in shares, and has repurchased $1.5 billion in shares year-to-date.'",
+   "next_print": "Q3 2026 print (late October)",
+   "note": "'In the second quarter, adjusted operating profit increased 15% to $1.998 billion, and adjusted diluted EPS increased 23% to $4.83.'; Financial Services line: Ratings $1,339.0M + Market Intelligence $1,290.0M + Indices $534.0M less the royalty elimination $53.0M; McGraw-Hill Education, sold in 2013, is not reported (n/r); outside the Financial Services line and Energy: Mobility $468.0M (a year earlier $438.0M); as reported, with Mobility for the full quarter (the spin-off followed on 2026-07-01): 'To exclude the impact of Mobility, the Company reported on a pro forma basis that revenue increased 11% to $3.678 billion, operating profit increased 21% to $1.757 billion, and net income increased 22% to $1.205 billion, with diluted earnings per share increasing 26% to $4.08.'"
+  },
+  {
+   "quarter": "Q3 2026",
+   "fy": 2026,
+   "q": 3,
+   "published": "2026-10-27",
+   "source": "SP119",
+   "release": "Oct 27",
+   "im_label": "Energy",
+   "release_time": "before the open on Oct 27: 8-K accepted 2026-10-27 07:15 ET (conference call at 8:30 a.m. ET)",
+   "period_end": "2026-09-30",
+   "raw": {
+    "units": "m0",
+    "rev_k": 3678000.0,
+    "rev_prior_k": 3443000.0,
+    "fs_k": 3033000.0,
+    "fs_prior_k": 2834000.0,
+    "mhe_k": null,
+    "mhe_prior_k": null,
+    "im_k": 645000.0,
+    "im_prior_k": 609000.0,
+    "segop_k": 1992000.0,
+    "segop_prior_k": 1632000.0,
+    "diluted_shares_k": 291600.0,
+    "fs_parts": {
+     "Ratings": [
+      1271000.0,
+      1240000.0
+     ],
+     "Market Intelligence": [
+      1263000.0,
+      1183000.0
+     ],
+     "Indices": [
+      554000.0,
+      462000.0
+     ],
+     "royalty elimination": [
+      -55000.0,
+      -51000.0
+     ]
+    }
+   },
+   "sales_b": 3.678,
+   "sales_pct": 6.8,
+   "fs_pct": 7.0,
+   "mhe_pct": null,
+   "im_pct": 5.9,
+   "op_margin": 54.16,
+   "op_margin_bp": 675.9,
+   "eps_q": 4.45,
+   "eps_q_prior": 3.54,
+   "eps_pct": 25.7,
+   "diluted_shares_m": 291.6,
+   "cash_return_text": "'In the third quarter, the Company executed $2.6 billion in share repurchases, and has repurchased more than $4 billion in shares year-to-date.'",
+   "next_print": "Q4 2026 print (early February)",
+   "note": "'Adjusted net income for the third quarter increased 4% to $1.337 billion and adjusted diluted earnings per share increased 9% to $4.58.'; Financial Services line: Ratings $1,271.0M + Market Intelligence $1,263.0M + Indices $554.0M less the royalty elimination $55.0M; McGraw-Hill Education, sold in 2013, is not reported (n/r); diluted EPS from continuing operations, Mobility discontinued: 'Financial information presented reflects the Company's results on a continuing operations basis, and prior periods have been recast accordingly to conform to this presentation.'"
   }
  ],
  "guides": [
@@ -7121,6 +9271,556 @@
     "GAAP EPS guidance is expected to be in a range of $12.50 to $12.65.",
     "Adjusted diluted EPS guidance has been increased by $0.50 to $0.55 to a new range of $13.50 to $13.65."
    ]
+  },
+  {
+   "fy": 2022,
+   "published": "2022-05-03",
+   "source": "SP93",
+   "doc": "Q1 2022 release",
+   "eps_guide": [
+    12.0,
+    12.25
+   ],
+   "eps_guide_note": "GAAP",
+   "eps_guide_amort": [
+    13.0,
+    13.25
+   ],
+   "eps_guide_amort_note": "adjusted pro forma, excluding merger expenses and deal-related amortization",
+   "rev_words": "increase more than 40%",
+   "note": "the previous guidance of $13.40-13.60 was given on March 1, 2022 in no filing (the conference call; not a guide)",
+   "quotes": [
+    "2022 reported revenue is expected to increase more than 40%, which is the same as previous guidance.",
+    "GAAP EPS guidance is expected to be in a range of $12.00 to $12.25, compared to previous guidance of $13.40 to $13.60.",
+    "Adjusted pro forma diluted EPS guidance has been updated to a new range of $13.00 to $13.25, from prior guidance of a range of $13.30 to $13.50."
+   ]
+  },
+  {
+   "fy": 2022,
+   "published": "2022-06-01",
+   "source": "SP95",
+   "doc": "8-K of 2022-06-01",
+   "withdrawn": true,
+   "quotes": [
+    "S&P Global (NYSE: SPGI) is suspending financial guidance for the full year 2022.",
+    "Given the volatility and uncertainty in the issuance environment, the Company cannot affirm its previously issued guidance and expects to reintroduce formal financial guidance in conjunction with its second quarter 2022 earnings results."
+   ],
+   "note": "guidance suspended: no FY2022 field (the V 'withdrawn' encoding)"
+  },
+  {
+   "fy": 2022,
+   "published": "2022-08-02",
+   "source": "SP96",
+   "doc": "Q2 2022 release",
+   "eps_guide": [
+    10.2,
+    10.4
+   ],
+   "eps_guide_note": "GAAP",
+   "eps_guide_amort": [
+    11.35,
+    11.55
+   ],
+   "eps_guide_amort_note": "non-GAAP pro forma adjusted, excluding merger expenses and deal-related amortization",
+   "rev_words": "increase more than 30%",
+   "quotes": [
+    "2022 reported revenue is expected to increase more than 30%.",
+    "GAAP diluted EPS is expected to be in a range of $10.20 to $10.40.",
+    "Non-GAAP pro forma adjusted diluted EPS is expected in the range of $11.35 to $11.55."
+   ]
+  },
+  {
+   "fy": 2022,
+   "published": "2022-10-27",
+   "source": "SP97",
+   "doc": "Q3 2022 release",
+   "eps_guide": [
+    9.75,
+    9.9
+   ],
+   "eps_guide_note": "GAAP",
+   "eps_guide_amort": [
+    11.0,
+    11.15
+   ],
+   "eps_guide_amort_note": "non-GAAP pro forma adjusted, excluding merger expenses and deal-related amortization",
+   "rev_words": "increase more than 30%",
+   "quotes": [
+    "2022 reported revenue is expected to increase more than 30%.",
+    "GAAP diluted EPS is expected to be in a range of $9.75 to $9.90.",
+    "Non-GAAP pro forma adjusted diluted EPS is expected in the range of $11.00 to $11.15."
+   ]
+  },
+  {
+   "fy": 2023,
+   "published": "2023-02-09",
+   "source": "SP98",
+   "doc": "Q4 2022 release",
+   "eps_guide_amort": [
+    12.35,
+    12.55
+   ],
+   "eps_guide_amort_note": "adjusted, excluding merger expenses and deal-related amortization",
+   "quotes": [
+    "Outlook: We are not providing 2023 GAAP guidance because, given the inherent uncertainty around the timing of the divestiture of Engineering Solutions, management cannot reliably predict all of the necessary components of GAAP measures.",
+    "The Company expects non-GAAP adjusted diluted EPS in the range of $12.35 to $12.55."
+   ]
+  },
+  {
+   "fy": 2023,
+   "published": "2023-04-27",
+   "source": "SP100",
+   "doc": "Q1 2023 release",
+   "eps_guide": [
+    8.65,
+    8.85
+   ],
+   "eps_guide_note": "GAAP",
+   "rev_guide_pct": [
+    10,
+    12
+   ],
+   "eps_guide_amort": [
+    12.35,
+    12.55
+   ],
+   "eps_guide_amort_note": "adjusted, excluding merger expenses and deal-related amortization",
+   "note": "adjusted revenue growth 4% to 6% on pro forma 2022 revenue (no field)",
+   "quotes": [
+    "2023 GAAP reported revenue is expected to increase 10% to 12%, based on 12 months of contribution from IHS Markit in 2023 versus 10 months of contribution in 2022.",
+    "GAAP diluted EPS is expected to be in a range of $8.65 to $8.85.",
+    "Non-GAAP adjusted diluted EPS is still expected in the range of $12.35 to $12.55."
+   ]
+  },
+  {
+   "fy": 2023,
+   "published": "2023-07-27",
+   "source": "SP101",
+   "doc": "Q2 2023 release",
+   "eps_guide": [
+    8.65,
+    8.85
+   ],
+   "eps_guide_note": "GAAP",
+   "rev_guide_pct": [
+    10,
+    12
+   ],
+   "op_margin_guide": [
+    34.0,
+    35.0
+   ],
+   "op_margin_base_source": "SP99",
+   "op_margin_base": 44.22,
+   "op_margin_base_note": "FY2022 GAAP operating margin, operating profit $4,944M / revenue $11,181M (SP99): the release states no base",
+   "eps_guide_amort": [
+    12.35,
+    12.55
+   ],
+   "eps_guide_amort_note": "adjusted, excluding merger expenses and deal-related amortization",
+   "note": "adjusted: revenue 4%-6% on pro forma 2022, operating margin 45.5%-46.5% (no field)",
+   "quotes": [
+    "Revenue growth | 10% - 12% | 4% - 6%",
+    "Operating profit margin | 34.0% - 35.0% | 45.5% - 46.5%",
+    "Diluted EPS | $8.65 - $8.85 | $12.35 - $12.55"
+   ]
+  },
+  {
+   "fy": 2023,
+   "published": "2023-11-02",
+   "source": "SP102",
+   "doc": "Q3 2023 release",
+   "eps_guide": [
+    8.75,
+    8.9
+   ],
+   "eps_guide_note": "GAAP",
+   "rev_guide_pct": [
+    10,
+    12
+   ],
+   "op_margin_guide": [
+    34.5,
+    35.5
+   ],
+   "op_margin_base_source": "SP99",
+   "op_margin_base": 44.22,
+   "op_margin_base_note": "FY2022 GAAP operating margin, operating profit $4,944M / revenue $11,181M (SP99): the release states no base",
+   "eps_guide_amort": [
+    12.5,
+    12.6
+   ],
+   "eps_guide_amort_note": "adjusted, excluding merger expenses and deal-related amortization",
+   "note": "adjusted: revenue 4.5%-5.5% on pro forma 2022, operating margin 45.5%-46.5% (no field)",
+   "quotes": [
+    "Revenue growth | 10% - 12% | 4.5% - 5.5%",
+    "Operating profit margin | 34.5% - 35.5% | 45.5% - 46.5%",
+    "Diluted EPS | $8.75 - $8.90 | $12.50 - $12.60"
+   ]
+  },
+  {
+   "fy": 2024,
+   "published": "2024-02-08",
+   "source": "SP103",
+   "doc": "Q4 2023 release",
+   "eps_guide": [
+    10.7,
+    10.95
+   ],
+   "eps_guide_note": "GAAP",
+   "rev_guide_pct": [
+    5.5,
+    7.5
+   ],
+   "op_margin_step_bp": [
+    500,
+    500
+   ],
+   "op_margin_base_source": "SP103",
+   "op_margin_base": 32.17,
+   "op_margin_base_note": "FY2023 GAAP operating margin, operating profit $4,020M / revenue $12,497M (SP103)",
+   "eps_guide_amort": [
+    13.75,
+    14.0
+   ],
+   "eps_guide_amort_note": "adjusted, excluding merger expenses and deal-related amortization",
+   "note": "GAAP operating margin expansion '~500 bps' read as 500bp (the 'about' rule); adjusted expansion ~100bp (no field); the page-1 summary's $10.65-10.90 is corrected to the table's $10.70-10.95 by the 8-K/A filed after the close",
+   "quotes": [
+    "Revenue growth | 5.5% to 7.5% | 5.5% to 7.5%",
+    "Operating profit margin expansion | ~500 bps | ~100 bps",
+    "Diluted EPS | $10.70 to $10.95 | $13.75 to $14.00"
+   ]
+  },
+  {
+   "fy": 2024,
+   "published": "2024-04-25",
+   "source": "SP105",
+   "doc": "Q1 2024 release",
+   "eps_guide": [
+    10.8,
+    11.05
+   ],
+   "eps_guide_note": "GAAP",
+   "rev_guide_pct": [
+    6.0,
+    8.0
+   ],
+   "op_margin_step_bp": [
+    500,
+    550
+   ],
+   "op_margin_base_source": "SP103",
+   "op_margin_base": 32.17,
+   "op_margin_base_note": "FY2023 GAAP operating margin, operating profit $4,020M / revenue $12,497M (SP103)",
+   "eps_guide_amort": [
+    13.85,
+    14.1
+   ],
+   "eps_guide_amort_note": "adjusted, excluding merger expenses and deal-related amortization",
+   "quotes": [
+    "Revenue growth | 6.0% - 8.0% | 6.0% - 8.0%",
+    "Operating profit margin expansion | 500 - 550 bps | 100 - 150 bps",
+    "Diluted EPS | $10.80 - $11.05 | $13.85 - $14.10"
+   ]
+  },
+  {
+   "fy": 2024,
+   "published": "2024-07-30",
+   "source": "SP106",
+   "doc": "Q2 2024 release",
+   "eps_guide": [
+    11.15,
+    11.4
+   ],
+   "eps_guide_note": "GAAP",
+   "rev_guide_pct": [
+    8.0,
+    10.0
+   ],
+   "op_margin_step_bp": [
+    500,
+    550
+   ],
+   "op_margin_base_source": "SP103",
+   "op_margin_base": 32.17,
+   "op_margin_base_note": "FY2023 GAAP operating margin, operating profit $4,020M / revenue $12,497M (SP103)",
+   "eps_guide_amort": [
+    14.35,
+    14.6
+   ],
+   "eps_guide_amort_note": "adjusted, excluding merger expenses and deal-related amortization",
+   "quotes": [
+    "Revenue growth | 8.0% - 10.0% | 8.0% - 10.0%",
+    "Operating profit margin expansion | 500 - 550 bps | 125 - 175 bps",
+    "Diluted EPS | $11.15 - $11.40 | $14.35 - $14.60"
+   ]
+  },
+  {
+   "fy": 2024,
+   "published": "2024-10-24",
+   "source": "SP107",
+   "doc": "Q3 2024 release",
+   "eps_guide": [
+    11.95,
+    12.15
+   ],
+   "eps_guide_note": "GAAP",
+   "rev_guide_pct": [
+    11.5,
+    12.5
+   ],
+   "op_margin_step_bp": [
+    600,
+    650
+   ],
+   "op_margin_base_source": "SP103",
+   "op_margin_base": 32.17,
+   "op_margin_base_note": "FY2023 GAAP operating margin, operating profit $4,020M / revenue $12,497M (SP103)",
+   "eps_guide_amort": [
+    15.1,
+    15.3
+   ],
+   "eps_guide_amort_note": "adjusted, excluding merger expenses and deal-related amortization",
+   "quotes": [
+    "Revenue growth | 11.5% - 12.5% | 11.5% - 12.5%",
+    "Operating profit margin expansion | 600 - 650 bps | 200 - 250 bps",
+    "Diluted EPS | $11.95 - $12.15 | $15.10 - $15.30"
+   ]
+  },
+  {
+   "fy": 2025,
+   "published": "2025-02-11",
+   "source": "SP108",
+   "doc": "Q4 2024 release",
+   "eps_guide": [
+    14.2,
+    14.45
+   ],
+   "eps_guide_note": "GAAP",
+   "rev_guide_pct": [
+    5.0,
+    7.0
+   ],
+   "op_margin_guide": [
+    41.5,
+    42.5
+   ],
+   "op_margin_base_source": "SP108",
+   "op_margin_base": 39.27,
+   "op_margin_base_note": "FY2024 GAAP operating margin, operating profit $5,580M / revenue $14,208M (SP108): the release states no base",
+   "eps_guide_amort": [
+    17.0,
+    17.25
+   ],
+   "eps_guide_amort_note": "adjusted, excluding merger expenses and deal-related amortization",
+   "quotes": [
+    "Revenue growth | 5.0% - 7.0% | 5.0% - 7.0%",
+    "Operating profit margin | 41.5% - 42.5% | 49.0% - 50.0%",
+    "Diluted EPS | $14.20 - $14.45 | $17.00 - $17.25"
+   ]
+  },
+  {
+   "fy": 2025,
+   "published": "2025-04-29",
+   "source": "SP110",
+   "doc": "Q1 2025 release",
+   "eps_guide": [
+    14.6,
+    15.1
+   ],
+   "eps_guide_note": "GAAP, with the expected OSTTRA gain",
+   "rev_guide_pct": [
+    4,
+    6
+   ],
+   "op_margin_guide": [
+    42.5,
+    43.5
+   ],
+   "op_margin_base_source": "SP108",
+   "op_margin_base": 39.27,
+   "op_margin_base_note": "FY2024 GAAP operating margin, operating profit $5,580M / revenue $14,208M (SP108): the release states no base",
+   "eps_guide_amort": [
+    16.75,
+    17.25
+   ],
+   "eps_guide_amort_note": "adjusted, excluding deal-related amortization",
+   "quotes": [
+    "Revenue growth | 4% - 6% | 4% - 6%",
+    "Operating profit margin | 42.5% - 43.5% | 48.5% - 49.5%",
+    "Diluted EPS | $14.60 - $15.10 | $16.75 - $17.25"
+   ]
+  },
+  {
+   "fy": 2025,
+   "published": "2025-07-31",
+   "source": "SP111",
+   "doc": "Q2 2025 release",
+   "eps_guide": [
+    14.35,
+    14.6
+   ],
+   "eps_guide_note": "GAAP",
+   "rev_guide_pct": [
+    5,
+    7
+   ],
+   "op_margin_guide": [
+    42.5,
+    43.5
+   ],
+   "op_margin_base_source": "SP108",
+   "op_margin_base": 39.27,
+   "op_margin_base_note": "FY2024 GAAP operating margin, operating profit $5,580M / revenue $14,208M (SP108): the release states no base",
+   "eps_guide_amort": [
+    17.0,
+    17.25
+   ],
+   "eps_guide_amort_note": "adjusted, excluding deal-related amortization",
+   "quotes": [
+    "Revenue growth | 5% - 7% | 5% - 7%",
+    "Operating profit margin | 42.5% - 43.5% | 48.5% - 49.5%",
+    "Diluted EPS | $14.35 - $14.60 | $17.00 - $17.25"
+   ]
+  },
+  {
+   "fy": 2025,
+   "published": "2025-10-30",
+   "source": "SP112",
+   "doc": "Q3 2025 release",
+   "eps_guide": [
+    14.8,
+    15.05
+   ],
+   "eps_guide_note": "GAAP",
+   "rev_guide_pct": [
+    7,
+    8
+   ],
+   "op_margin_guide": [
+    42.5,
+    43.0
+   ],
+   "op_margin_base_source": "SP108",
+   "op_margin_base": 39.27,
+   "op_margin_base_note": "FY2024 GAAP operating margin, operating profit $5,580M / revenue $14,208M (SP108): the release states no base",
+   "eps_guide_amort": [
+    17.6,
+    17.85
+   ],
+   "eps_guide_amort_note": "adjusted, excluding deal-related amortization",
+   "note": "excluding OSTTRA: GAAP operating margin 42%-42.5% (display only)",
+   "quotes": [
+    "Revenue growth | 7% - 8% | 7% - 8%",
+    "Operating profit margin | 42.5% - 43% | 50% - 50.5%",
+    "Diluted EPS | $14.80 - $15.05 | $17.60 - $17.85"
+   ]
+  },
+  {
+   "fy": 2026,
+   "published": "2026-02-10",
+   "source": "SP113",
+   "doc": "Q4 2025 release",
+   "rev_guide_pct": [
+    6.6,
+    8.6
+   ],
+   "eps_guide_amort": [
+    19.4,
+    19.65
+   ],
+   "eps_guide_amort_note": "adjusted, with Mobility for the full year, excluding merger expenses and deal-related amortization",
+   "note": "no 2026 GAAP EPS or margin guide (adjusted operating margin expansion 10-35bp, no field)",
+   "quotes": [
+    "Reported Revenue growth (GAAP) | 6.6% to 8.6%",
+    "Diluted EPS | $19.40 to $19.65",
+    "The Company is not providing 2026 GAAP guidance at this time, other than reported revenue growth and capital expenditures."
+   ]
+  },
+  {
+   "fy": 2026,
+   "published": "2026-04-28",
+   "source": "SP115",
+   "doc": "Q1 2026 release",
+   "rev_guide_pct": [
+    6.3,
+    8.3
+   ],
+   "eps_guide_amort": [
+    19.4,
+    19.65
+   ],
+   "eps_guide_amort_note": "adjusted, with Mobility for the full year, excluding deal-related amortization",
+   "note": "no 2026 GAAP EPS or margin guide (adjusted operating margin expansion 10-35bp, no field)",
+   "quotes": [
+    "Reported Revenue growth (GAAP) | 6.3% to 8.3%",
+    "Diluted EPS | $19.40 to $19.65"
+   ]
+  },
+  {
+   "fy": 2026,
+   "published": "2026-07-28",
+   "source": "SP118",
+   "doc": "Q2 2026 release",
+   "eps_guide": [
+    16.35,
+    16.6
+   ],
+   "eps_guide_note": "GAAP, continuing operations (without Mobility)",
+   "rev_guide_pct": [
+    5.9,
+    7.9
+   ],
+   "op_margin_step_bp": [
+    335,
+    360
+   ],
+   "op_margin_base_source": "SP117",
+   "op_margin_base": 44.93,
+   "op_margin_base_note": "FY2025 GAAP operating margin of the continuing operations, operating profit $6,105M / revenue $13,589M (historical less Mobility, before transaction adjustments; SP117)",
+   "eps_guide_amort": [
+    17.5,
+    17.75
+   ],
+   "eps_guide_amort_note": "adjusted, without Mobility, excluding deal-related amortization",
+   "quotes": [
+    "Revenue growth | 5.9% to 7.9% | 5.9% to 7.9%",
+    "Operating Profit Margin expansion | 335 to 360 bps | 35 to 60 bps",
+    "Diluted EPS | $16.35 to $16.60 | $17.50 to $17.75",
+    "GAAP financial guidance in the table above refers to expected results from continuing operations for the full year 2026."
+   ]
+  },
+  {
+   "fy": 2026,
+   "published": "2026-10-27",
+   "source": "SP119",
+   "doc": "Q3 2026 release",
+   "eps_guide": [
+    16.25,
+    16.5
+   ],
+   "eps_guide_note": "GAAP, continuing operations (without Mobility)",
+   "rev_guide_pct": [
+    7.4,
+    8.4
+   ],
+   "op_margin_step_bp": [
+    310,
+    335
+   ],
+   "op_margin_base_source": "SP117",
+   "op_margin_base": 44.93,
+   "op_margin_base_note": "FY2025 GAAP operating margin of the continuing operations, operating profit $6,105M / revenue $13,589M (historical less Mobility, before transaction adjustments; SP117)",
+   "eps_guide_amort": [
+    17.7,
+    17.95
+   ],
+   "eps_guide_amort_note": "adjusted, without Mobility, excluding deal-related amortization",
+   "quotes": [
+    "Revenue growth | 7.4% to 8.4% | 7.4% to 8.4%",
+    "Operating Profit Margin expansion | 310 to 335 bps | 75 to 100 bps",
+    "Diluted EPS | $16.25 to $16.50 | $17.70 to $17.95"
+   ]
   }
  ],
  "dividends": [
@@ -7213,9 +9913,79 @@
    "source": "SP86",
    "quarterly": 0.77,
    "note": "$0.77 quarterly ('The quarterly dividend will increase from $0.67 to $0.77 per share.')"
+  },
+  {
+   "published": "2022-05-04",
+   "source": "SP94",
+   "quarterly": 0.85,
+   "note": "$0.85 quarterly ('On February 28, 2022, the Board of Directors approved a quarterly common stock dividend of $0.85 per share. The quarterly dividend will increase from $0.77 to $0.85 per share in the second quarter.' Q1 2022 10-Q, the first filing that states the rate)"
+  },
+  {
+   "published": "2023-02-09",
+   "source": "SP98",
+   "quarterly": 0.9,
+   "note": "$0.90 quarterly ('On January 25, 2023, the Board of Directors of S&P Global approved a dividend of $0.90 per share payable on March 10, 2023 to shareholders of record on February 24, 2023.')"
+  },
+  {
+   "published": "2024-02-08",
+   "source": "SP103",
+   "quarterly": 0.91,
+   "note": "$0.91 quarterly ('The Board of Directors has authorized a quarterly cash dividend of $0.91, marking the 51st consecutive year of dividend increases for the Company.')"
+  },
+  {
+   "published": "2025-02-11",
+   "source": "SP108",
+   "quarterly": 0.96,
+   "note": "$0.96 quarterly ('The Board of Directors has authorized a quarterly cash dividend of $0.96, marking the 52nd consecutive year of dividend increases for the Company.')"
+  },
+  {
+   "published": "2026-02-10",
+   "source": "SP113",
+   "quarterly": 0.97,
+   "note": "$0.97 quarterly ('The Board of Directors has authorized a quarterly cash dividend of $0.97, marking the 53rd consecutive year of dividend increases for the Company.')"
   }
  ],
- "events": [],
+ "events": [
+  {
+   "published": "2024-02-09",
+   "id": "SP104",
+   "theme": "GENAI",
+   "kind": "genai_company_acknowledged",
+   "doc": "FY2023 10-K",
+   "heading": "Increased availability of free or relatively inexpensive information sources may reduce demand for our products and could have a material adverse effect on our business, financial condition or results of operations.",
+   "risk_quote": "Moreover, generative artificial intelligence (“AI”) may be used in a way that significantly increases access to publicly available free or relatively inexpensive information.",
+   "rival_quote": "Public sources of free or relatively inexpensive information can reduce demand for our products and services.",
+   "offering": "We have made significant investments in various AI initiatives.",
+   "offering_short": "S&P Global builds AI into its own products and processes",
+   "risk_short": "generative AI may widen access to free or inexpensive information"
+  },
+  {
+   "published": "2025-02-12",
+   "id": "SP109",
+   "theme": "GENAI",
+   "kind": "genai_company_acknowledged",
+   "doc": "FY2024 10-K",
+   "heading": "The markets in which we operate continuously change to adapt to customer needs. Our inability to innovate and compete with new or enhanced products and services of our competitors could impact our profitability.",
+   "risk_quote": "Moreover, AI is being used in a way that is significantly increasing access to publicly available free or relatively inexpensive information.",
+   "rival_quote": "For instance, new competitors are leveraging AI in their offerings in ways that could materially reduce demand for our products and services (for example, by deploying AI in ways that make processing of information relatively inexpensive or free or by leveraging AI to build indices or ETFs).",
+   "offering": "We have made significant investments in various AI initiatives.",
+   "offering_short": "S&P Global builds AI into its own products and processes",
+   "risk_short": "new competitors' AI offerings could materially reduce demand"
+  },
+  {
+   "published": "2026-02-11",
+   "id": "SP114",
+   "theme": "GENAI",
+   "kind": "genai_company_acknowledged",
+   "doc": "FY2025 10-K",
+   "heading": "AI presents new and evolving risks, and our approach to AI may not be successful.",
+   "risk_quote": "The emerging availability of “off-the-shelf” AI models may also increase the ability of new and existing competitors to develop technology and applications which may compete with our products and services.",
+   "rival_quote": "Our competitors are deploying AI in ways that could materially reduce demand for our products and services (for example, by deploying AI in ways that make collection and processing of information relatively inexpensive or free or by leveraging AI to build products and services that compete with our products and services).",
+   "offering": "In order to remain competitive, we have made significant investments in various AI initiatives.",
+   "offering_short": "S&P Global builds AI into its own products and processes",
+   "risk_short": "competitors deploying AI could materially reduce demand"
+  }
+ ],
  "company_names": [
   {
    "published": "2013-05-06",
@@ -7774,6 +10544,15 @@
    "published": "2016-06-30",
    "source": "SP61",
    "note": "'Our common stock is listed on New York Stock Exchange under the symbol “SPGI.”' (S-3 accepted 2016-06-29 after the close, the first filing by the company that states the symbol); MHFI before"
+  }
+ ],
+ "distributions": [
+  {
+   "effective": "2026-07-01",
+   "yahoo_factor": 1.057,
+   "source": "SP116",
+   "kind": "spin-off",
+   "note": "the separation of Mobility Global Inc. (NYSE: MBGL), effective July 1, 2026 at 12:01 a.m.: 'On the Distribution Date, each of the stockholders of S&P Global received one share of Mobility Global common stock for every share of S&P Global’s common stock held by such stockholder on the Record Date.' (8-K accepted 2026-07-01 after the close; the ratio and the date were stated in the 8-K of 2026-05-21); Yahoo books it as a 1057:1000 split on 2026-07-01, the first day the stock traded without Mobility; it is not a split, so from that date its factor is undone for the days before it and prices stay as traded"
   }
  ]
 }

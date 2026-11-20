@@ -60,6 +60,16 @@ the Investor Day 8-K of 2018-05-24 guides the FY2018 GAAP operating margin at 44
 Ratings, Market Intelligence and Indices less the royalty elimination; Corporate revenue (Kensho, 2018) is outside every segment
 ('other_k' in the print identity).
 
+From 2022 (retro/README.md, "SPGI 2022-2026"): GAAP every year still (FY21 $12.51 to FY25 $14.66); from the FY2021 10-K Item 6 is
+reserved, so each 10-K gives three years and earlier years keep the latest filing that reported them; IHS Markit (merged 2022-02-28)
+is in the figures as published; the GAAP reported revenue ranges feed BASE (2022's 'more than 40%' and 'more than 30%' are one-sided
+bounds: no field); the GAAP operating margin guides are method r2's guided step, as a level on the prior year's GAAP margin (2023,
+2025: 'op_margin_guide') or as the expansion itself ('op_margin_step_bp', 2024 and 2026); the 2022-06-01 suspension leaves no field
+until the next guide ('withdrawn', the V encoding); Mobility and Engineering Solutions are outside the Financial Services line and the
+third segment ('other_k'); the 2026-07-01 separation of Mobility Global is a distribution ('distributions', the CMCSA code), the
+history keeping Mobility until a GAAP filing restates it, and FY2026 from the continuing-operations GAAP guide of the Q2 2026 release;
+GENAI is on the watch list from the FY2023 10-K (genai_company_acknowledged, the GOOG rule; text only).
+
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
 is the first trading day after it. Every earnings 8-K of 2007-2009 was accepted before the open (06:59-07:58 ET; the call at 8:30 a.m.).
 
@@ -71,6 +81,7 @@ Usage
   python3 retro/build_spgi.py --weekly 2010-01-04 2013-12-31
   python3 retro/build_spgi.py --weekly 2014-01-06 2017-12-31
   python3 retro/build_spgi.py --weekly 2018-01-01 2021-12-31
+  python3 retro/build_spgi.py --weekly 2022-01-03 2026-11-20
   python3 retro/build_spgi.py 2008-01-25
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/SPGI/<AS_OF>
 """
@@ -101,7 +112,10 @@ RULE_T_KEYS = {"fs": (1, False), "mhe": (1, False), "sales": (1, False), "eps": 
 GUIDE_KEYS = {"fy", "published", "source", "doc", "quotes", "words", "eps_guide", "eps_guide_note", "eps_growth", "eps_growth_base",
               "eps_growth_base_note", "rev_guide_pct", "seg_words", "rev_words", "note",
               "eps_guide_amort", "eps_guide_amort_note",   # from 2016: an adjusted range that also removes recurring amortization (no field)
-              "op_margin_guide", "op_margin_base", "op_margin_base_note"}   # (2018) a consolidated operating margin guide and its base
+              "op_margin_guide", "op_margin_base", "op_margin_base_note",   # (2018) a consolidated operating margin guide and its base
+              "op_margin_step_bp",   # (2024, 2026) a GAAP operating margin guide stated as the expansion in bp, on op_margin_base
+              "op_margin_base_source",   # (2022-2026) the filing that states the base, listed among the model's sources
+              "withdrawn"}           # (2022) the guidance suspended: fields only from guides after the year's last withdrawal (V)
 PRINT_TOL = {None: 2, "k": 2, "m1": 150, "m0": 1500}   # segment sums, $ thousands: the release's own rounding (thousands, $0.1M, $1M)
 OLD_SEGMENTS = "Information & Media"                     # the third segment of the 2007-2009 tables (spgi_engine.py.tmpl)
 
@@ -183,14 +197,25 @@ def build(as_of, facts, raw, spx, engines, out):
     if as_of not in raw:
         sys.exit(f"{as_of} is not a trading day")
     # Yahoo books the 2026-07-01 Mobility Global distribution as a split: it is not one, so no date on or after it is built until
-    # it is encoded as a distribution (the MAR, PFE and CMCSA 'distributions' rule; retro/README.md, "SPGI")
+    # it is encoded as a distribution (the MAR, PFE and CMCSA 'distributions' rule; retro/README.md, "SPGI"); it is encoded from
+    # 2022-2026 ('distributions', retro/README.md, "SPGI 2022-2026")
+    encoded = {x["effective"] for x in facts.get("distributions", [])}
     for x in facts["distributions_later"]:
-        if as_of >= x["effective"]:
+        if as_of >= x["effective"] and x["effective"] not in encoded:
             sys.exit(f"{as_of}: encode the {x['effective']} distribution first (the 'distributions' rule)")
     # every price of the window as traded: Yahoo's split-adjusted series times its factors after AS_OF (2026's 1.057)
     chart = retro_tool.chart(SYMBOL)
     fx = retro_tool.split_factor(chart, as_of)
     px = {d: tuple(v * fx for v in hlc) for d, hlc in raw.items()}
+    # (SPGI 2022-2026) a distribution (the 2026-07-01 separation of Mobility Global, one share for every S&P Global share) is not a
+    # split: Yahoo books it as a 1057:1000 split on 2026-07-01, so from that date its factor is undone for the days before it and every
+    # price stays as traded (the MAR, PFE and CMCSA 'distributions' rule; the drop stays in the series); per-share facts are not restated
+    for x in facts.get("distributions", []):
+        ev = [v for v in chart.get("events", {}).get("splits", {}).values()
+              if dt.datetime.fromtimestamp(v["date"] + chart["meta"]["gmtoffset"], dt.timezone.utc).date().isoformat() == x["effective"]]
+        assert len(ev) == 1 and ev[0]["numerator"] / ev[0]["denominator"] == x["yahoo_factor"], (x["effective"], "Yahoo's factor")
+        if x["effective"] <= as_of:
+            px = {d: (tuple(v * x["yahoo_factor"] for v in hlc) if d < x["effective"] else hlc) for d, hlc in px.items()}
     # a split record must sit on a split date of the price data; on_basis applies it from its effective date
     yahoo = {dt.datetime.fromtimestamp(v["date"] + chart["meta"]["gmtoffset"], dt.timezone.utc).date().isoformat():
              v["numerator"] / v["denominator"] for v in chart.get("events", {}).get("splits", {}).values()}
@@ -220,9 +245,15 @@ def build(as_of, facts, raw, spx, engines, out):
     # no disruption theme in taxonomy_eras.json is live for a ratings, education and business information company in 2008-2013
     # (GENAI, whose scope names education content and professional information, from 2022-11-30; STREAMING, scoped to linear TV
     # networks, from 2015-08-04; OFFSHORE to IT services): the builder refuses events until a theme encoding is decided
+    # (SPGI 2022-2026) the one encoding decided: each 10-K whose risk factors name generative AI, or competitors' AI, as a threat to
+    # demand for the company's products puts GENAI (live from 2022-11-30; its scope names professional information) on the watch list
+    # with that 10-K's words (genai_company_acknowledged, the GOOG and MSFT rule; a 10-K's wording is replaced by the next 10-K's).
+    # Any other event kind needs its encoding decided first
     events = [e for e in facts["events"] if e["published"] <= as_of and (h["published"] <= e["published"] or "doc" not in e)]
-    if events:
+    if any(e["kind"] != "genai_company_acknowledged" for e in events):
         sys.exit(f"{as_of}: the SPGI builder has no encoding for event kinds {sorted({e['kind'] for e in events})}; decide one first")
+    themes = retro_tool.load_taxonomy()["themes"]
+    events = [e for e in events if themes[e["theme"]]["live_from"] <= as_of]      # a theme counts only from its live date
     if not prints:
         sys.exit(f"{as_of}: no quarterly print after FY{first_fy - 1} is public yet")
     # a Q4 print's full-year actuals extend the annual history from its release until the next 10-K vintage
@@ -267,7 +298,11 @@ def build(as_of, facts, raw, spx, engines, out):
 
     # ── guides for the current fiscal year, each field from the latest guide that states it (in either form, the WMT rule) ──
     guides = [g for g in facts["guides"] if g["published"] <= as_of and g["fy"] == cur_fy]
-    stated = lambda *ks: next((g for g in reversed(guides) if any(k in g for k in ks)), None)
+    # (SPGI 2022-2026) a suspended guidance ('withdrawn', the V encoding: the 8-K of 2022-06-01) leaves no field: a field comes only
+    # from the guides published after the year's last withdrawal; the withdrawal itself is named in the guide line
+    gone = [g for g in guides if g.get("withdrawn")]
+    live = [g for g in guides if not gone or g["published"] > gone[-1]["published"]]
+    stated = lambda *ks: next((g for g in reversed(live) if any(k in g for k in ks)), None)
     ge = stated("eps_guide", "eps_growth")
     gr = stated("rev_guide_pct")
     gw = stated("words")
@@ -316,14 +351,22 @@ def build(as_of, facts, raw, spx, engines, out):
     prev_margin, prev_margin_note, margin_name = h["prev_fy_op_margin"], f'segment operating margin, {h["prev_fy_op_margin_note"]}', h["margin_signal_name"]
     # (SPGI 2018-2021) a consolidated operating margin guide in numbers is method r2's guided margin step, measured from the base on the
     # guide's own basis (the latest guide that states it, the WMT rule); the margin signal is then the guided step (the engine's rule)
-    gm = stated("op_margin_guide")
-    if gm:
+    gm = stated("op_margin_guide", "op_margin_step_bp")
+    if gm and "op_margin_guide" in gm:
         margin_guided = True
         fy_margin_base = round(sum(gm["op_margin_guide"]) / 2, 2)
         prev_margin, prev_margin_note = gm["op_margin_base"], gm["op_margin_base_note"]
         margin_name = "Guided operating margin step (GAAP)"
         lo, hi = gm["op_margin_guide"]
         bits_margin = [f"GAAP operating margin {lo:g}-{hi:g}% ({gm['doc']}; the step from {gm['op_margin_base']:.2f}%)"]
+    elif gm:   # (SPGI 2022-2026) the guide states the step itself: the guided level is its base plus the step's midpoint
+        margin_guided = True
+        lo, hi = gm["op_margin_step_bp"]
+        fy_margin_base = round(gm["op_margin_base"] + (lo + hi) / 2 / 100, 2)
+        prev_margin, prev_margin_note = gm["op_margin_base"], gm["op_margin_base_note"]
+        margin_name = "Guided operating margin step (GAAP)"
+        bits_margin = [f"GAAP operating margin expansion {lo:g}" + (f"-{hi:g}" if hi != lo else "") +
+                       f"bp ({gm['doc']}; on {gm['op_margin_base']:.2f}%, so {fy_margin_base:.2f}%)"]
     else:
         bits_margin = []
     if guides:
@@ -382,6 +425,24 @@ def build(as_of, facts, raw, spx, engines, out):
     key_tail = h.get("key_tail", "The 10-K ties results to the volume of debt issued in the capital markets, to state\n"
                                  "  adoption opportunities and educational funding, and to advertising.")
     theme_summary = "no disruption theme has dated evidence"
+    for e in [e for e in events if e["kind"] == "genai_company_acknowledged"][-1:]:
+        # GENAI is live from 2022-11-30 and its scope names professional information; the latest 10-K's risk factors name generative
+        # AI, or competitors' AI, as a threat to demand, so it joins the watch list (the GOOG and MSFT rule: company-acknowledged, no
+        # market read). The factor pair nets to zero and the theme signal stays at 2/4, so only text changes; re-filing needs dated
+        # evidence of the market pricing generative-AI substitution of S&P Global's data, ratings or benchmarks specifically
+        pe_x = close / eps_now
+        val_word = "a premium" if pe_now_pctl >= 70 else "a discount to its own history" if pe_now_pctl <= 30 else "near its own median"
+        stage = "genai"
+        watch = [{"theme": "GENAI", "status": "live, company-acknowledged; no market read",
+                  "reason": (f"Live: S&P Global's own {e['doc']}, under '{e['heading']}', says '{e['risk_quote']}' and "
+                             f"'{e['rival_quote']}' It builds AI of its own: '{e['offering']}' The stock trades at {pe_x:.1f}x {fy_e_s} — "
+                             f"{val_word}. Re-file as DISRUPTION_EXPOSED (GENAI) only if dated evidence shows the market pricing "
+                             "generative-AI substitution of S&P Global's data, ratings or benchmarks specifically.")}]
+        factors = [(f"Generative AI: {e['offering_short']}", 0.2, 0.10),
+                   (f"AI competition ({e['doc']}): {e['risk_short']}", -0.2, 0.10)]
+        sig_name = "Generative AI: net effect on data, ratings and benchmarks"
+        trigger = "Customers take free or AI-built substitutes for S&P Global's data faster than its own AI keeps them"
+        theme_summary = "generative AI is live and company-acknowledged; no dated evidence ties the multiple to it"
     why = h["why"]
     cat3 = (f"(3) {fy_now} EPS guide {eps_fig} ({ge['doc']}): the company's own read of the year" if ge else
             f"(3) A {fy_now} EPS guide on the history's basis — none (the adjusted guide also removes deal-related amortization)"
@@ -408,7 +469,9 @@ def build(as_of, facts, raw, spx, engines, out):
     groups = [tuple(g) for g in h["groups"]]
     ids = (list(h["sources"]) + [p["source"] for p in prints] + [g["source"] for g in guides]
            + ([dividend_src] if dividend_src else []) + split_ids + [e["id"] for e in events]
-           + [n["source"] for n in renames] + [x["source"] for x in moved])
+           + [n["source"] for n in renames] + [x["source"] for x in moved]
+           + [x["source"] for x in facts.get("distributions", []) if x["effective"] <= as_of]
+           + ([gm["op_margin_base_source"]] if gm and gm.get("op_margin_base_source") else []))
     sources = [dict(id=i, **facts["sources"][i]) for i in dict.fromkeys(ids)]
     sources.append({"id": "W0", "published": as_of, "title": f"Yahoo Finance daily prices, {listed} and S&P 500, truncated at AS_OF",
                     "url": f"https://finance.yahoo.com/quote/{SYMBOL}/history",
@@ -430,6 +493,8 @@ def build(as_of, facts, raw, spx, engines, out):
     engine2 = latest["mhe_pct"] is None or OLD_SEGMENTS not in other
     engine = engines[1] if engine2 else engines[0]
     fmt = lambda v: "n/r" if v is None else f"{v:+.1f}%"
+    dist_txt = "".join(f"; the window's days before {x['effective']} as traded, with the distributed shares ({x['source']})"
+                       for x in facts.get("distributions", []) if x["effective"] <= as_of)
     R = repr
     head = f'''#!/usr/bin/env python3
 """
@@ -463,7 +528,7 @@ PIT_PROFILE = {{
 }}
 
 # ── FACTS: market (prices truncated at AS_OF, as traded on each day) ──────────
-CURRENT_PRICE   = {close:.2f}   # USD, {exchange} close {as_of}, as traded (Yahoo's adjusted close x{fx:g})
+CURRENT_PRICE   = {close:.2f}   # USD, {exchange} close {as_of}, as traded (Yahoo's adjusted close x{fx:g}){dist_txt}
 REQUIRED_RETURN = 0.15
 HORIZON_YEARS   = 2
 PE_PCTL         = {R(pctl)}   # current-FY P/E over the window below

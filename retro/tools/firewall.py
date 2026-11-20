@@ -123,7 +123,8 @@ cash, dividend and share counts (the guide, dividend, split and company name eve
 2010-2013 the planted print restating every year of the history with a planted third segment and Financial Services parts, revenue
 words on every planted guide, a planted risk line on the later vintage and a later listing under a planted symbol, and from SPGI
 2014-2017 an amortization-excluding range on every planted guide and planted revenue-catalyst words on the later vintage, and from
-SPGI 2018-2021 an operating margin guide on a planted base on every planted guide; GOOG: a print whose revenues, margins, opex and receivables gaps, quarter EPS, cash,
+SPGI 2018-2021 an operating margin guide on a planted base on every planted guide, and from SPGI 2022-2026 a margin expansion in bp on every
+planted guide, a later step-only margin guide on a planted base and a later withdrawal of every guided year; GOOG: a print whose revenues, margins, opex and receivables gaps, quarter EPS, cash,
 notes and raw figures are absurd, with absurd full-year actuals for the year after the latest vintage before CUTOFF, a later Q4 print
 whose full-year actuals exclude its own year, a later 10-Q restatement of the last print before CUTOFF with absurd figures, and a later
 vintage excluding a year with planted texts, figures, outlook words, exchange and window start, every per-share figure on a planted
@@ -843,6 +844,15 @@ try:
                 g.update(eps_guide_amort=[0.01, 0.02], eps_guide_amort_note="PLANTED")
                 # (SPGI 2018-2021) a consolidated operating margin guide on a planted base on every planted guide
                 g.update(op_margin_guide=[1, 2], op_margin_base=99.0, op_margin_base_note="PLANTED")
+                # (SPGI 2022-2026) and the margin guide stated as an expansion in bp
+                g.update(op_margin_step_bp=[-999, -999])
+        # (SPGI 2022-2026) a later margin guide in the step form only on a planted base, and a later withdrawal of every guided year
+        for y in sorted({g["fy"] for g in f["guides"] if g["published"] < cutoff} | {2099}):
+            f["guides"].append({"fy": y, "published": (dt.date.fromisoformat(later) + dt.timedelta(days=2)).isoformat(),
+                                "source": last["source"], "doc": "PLANTED", "op_margin_step_bp": [-999, -998], "op_margin_base": 99.0,
+                                "op_margin_base_note": "PLANTED", "note": "PLANTED"})
+            f["guides"].append({"fy": y, "published": (dt.date.fromisoformat(later) + dt.timedelta(days=3)).isoformat(),
+                                "source": last["source"], "doc": "PLANTED", "withdrawn": True, "note": "PLANTED"})
         v["cat4_tail"] = "PLANTED"                        # (SPGI 2014-2017) the later vintage's revenue-catalyst words
         for x in f.get("listings", []):
             if x.get("note") == "PLANTED":
