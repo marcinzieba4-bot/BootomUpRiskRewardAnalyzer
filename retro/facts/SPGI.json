@@ -483,6 +483,160 @@
    "title": "S&P Global Q3 2017 results (8-K, Exhibit 99)",
    "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404017000066/spgi3q2017earningsrelease.htm",
    "supports": "Q3 2017: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2017 outlook"
+  },
+  "SP69": {
+   "published": "2018-02-06",
+   "filed": "8-K accepted 2018-02-06 07:11 ET, before the open",
+   "title": "S&P Global Q4 2017 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404018000055/a4q2017earningsreleasetabl.htm",
+   "supports": "Q4 2017: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2017 actuals; FY2018 outlook"
+  },
+  "SP70": {
+   "published": "2018-02-12",
+   "filed": "accepted 2018-02-09 16:40 ET, after the close, so dated the next trading day",
+   "title": "S&P Global FY2017 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404018000061/spgi-20171231x10k.htm",
+   "supports": "annual history (selected financial data: revenue, pre-tax income, diluted EPS; segment revenue and operating profit), cash, operating cash flow, repurchases, the dividend rate, diluted shares, Items 1 and 1A"
+  },
+  "SP71": {
+   "published": "2018-03-07",
+   "filed": "8-K (Items 7.01, 8.01) accepted 2018-03-06 17:52 ET, after the close, so dated the next trading day",
+   "title": "S&P Global 8-K: the Kensho acquisition (Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404018000086/exhibit991-03062018spgifor.htm",
+   "supports": "FY2018 GAAP diluted EPS guidance reduced for the Kensho acquisition"
+  },
+  "SP72": {
+   "published": "2018-04-26",
+   "filed": "8-K accepted 2018-04-26 07:21 ET, before the open",
+   "title": "S&P Global Q1 2018 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404018000122/spgi1q2018earningsrelease.htm",
+   "supports": "Q1 2018: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2018 outlook"
+  },
+  "SP73": {
+   "published": "2018-05-24",
+   "filed": "8-K (Item 7.01) accepted 2018-05-24 08:17 ET, before the open",
+   "title": "S&P Global 8-K: Investor Day press release (Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000095010318006480/dp91327_ex99.htm",
+   "supports": "FY2018 GAAP operating profit margin and GAAP diluted EPS guidance, updated after the final financial crisis litigation settlement"
+  },
+  "SP74": {
+   "published": "2018-07-26",
+   "filed": "8-K accepted 2018-07-26 07:17 ET, before the open",
+   "title": "S&P Global Q2 2018 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404018000160/spgi2q2018earningsrelease.htm",
+   "supports": "Q2 2018: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2018 outlook"
+  },
+  "SP75": {
+   "published": "2018-10-25",
+   "filed": "8-K accepted 2018-10-25 07:17 ET, before the open",
+   "title": "S&P Global Q3 2018 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404018000179/spgi3q2018earningsrelease.htm",
+   "supports": "Q3 2018: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2018 outlook"
+  },
+  "SP76": {
+   "published": "2019-02-07",
+   "filed": "8-K accepted 2019-02-07 07:16 ET, before the open",
+   "title": "S&P Global Q4 2018 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404019000054/a4q2018earningsreleasetabl.htm",
+   "supports": "Q4 2018: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2018 actuals; FY2019 outlook"
+  },
+  "SP77": {
+   "published": "2019-02-13",
+   "filed": "accepted 2019-02-12 18:15 ET, after the close, so dated the next trading day",
+   "title": "S&P Global FY2018 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404019000059/spgi-20181231x10k.htm",
+   "supports": "annual history (selected financial data: revenue, pre-tax income, diluted EPS; segment revenue and operating profit), cash, operating cash flow, repurchases, the dividend rate, diluted shares, Items 1 and 1A"
+  },
+  "SP78": {
+   "published": "2019-05-02",
+   "filed": "8-K accepted 2019-05-02 07:22 ET, before the open",
+   "title": "S&P Global Q1 2019 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404019000127/spgi1q2019earningsrelease.htm",
+   "supports": "Q1 2019: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2019 outlook"
+  },
+  "SP79": {
+   "published": "2019-08-01",
+   "filed": "8-K accepted 2019-08-01 07:15 ET, before the open",
+   "title": "S&P Global Q2 2019 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404019000159/spgi2q2019earningsrelease.htm",
+   "supports": "Q2 2019: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2019 outlook"
+  },
+  "SP80": {
+   "published": "2019-10-29",
+   "filed": "8-K accepted 2019-10-29 07:15 ET, before the open",
+   "title": "S&P Global Q3 2019 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404019000185/spgi3q2019earningsrele.htm",
+   "supports": "Q3 2019: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2019 outlook"
+  },
+  "SP81": {
+   "published": "2020-02-06",
+   "filed": "8-K accepted 2020-02-06 07:15 ET, before the open",
+   "title": "S&P Global Q4 2019 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404020000052/a4q2019earningsrelease.htm",
+   "supports": "Q4 2019: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2019 actuals; FY2020 outlook"
+  },
+  "SP82": {
+   "published": "2020-02-11",
+   "filed": "accepted 2020-02-10 17:30 ET, after the close, so dated the next trading day",
+   "title": "S&P Global FY2019 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404020000055/spgi-20191231x10k.htm",
+   "supports": "annual history (selected financial data: revenue, pre-tax income, diluted EPS; segment revenue and operating profit), cash, operating cash flow, repurchases, the dividend rate, diluted shares, Items 1 and 1A"
+  },
+  "SP83": {
+   "published": "2020-04-28",
+   "filed": "8-K accepted 2020-04-28 07:28 ET, before the open",
+   "title": "S&P Global Q1 2020 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404020000115/spgi1q2020-earningsrel.htm",
+   "supports": "Q1 2020: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2020 outlook"
+  },
+  "SP84": {
+   "published": "2020-07-28",
+   "filed": "8-K accepted 2020-07-28 07:14 ET, before the open",
+   "title": "S&P Global Q2 2020 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404020000140/spgi2q2020-earningsrel.htm",
+   "supports": "Q2 2020: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2020 outlook"
+  },
+  "SP85": {
+   "published": "2020-10-27",
+   "filed": "8-K accepted 2020-10-27 07:51 ET, before the open",
+   "title": "S&P Global Q3 2020 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404020000180/spgi3q2020-earningsrel.htm",
+   "supports": "Q3 2020: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2020 outlook"
+  },
+  "SP86": {
+   "published": "2021-02-09",
+   "filed": "8-K accepted 2021-02-09 07:15 ET, before the open",
+   "title": "S&P Global Q4 2020 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404021000059/a4q2020earningsreleasetabl.htm",
+   "supports": "Q4 2020: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2020 actuals; FY2021 outlook"
+  },
+  "SP87": {
+   "published": "2021-02-10",
+   "filed": "accepted 2021-02-09 17:08 ET, after the close, so dated the next trading day",
+   "title": "S&P Global FY2020 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404021000063/spgi-20201231.htm",
+   "supports": "annual history (selected financial data: revenue, pre-tax income, diluted EPS; segment revenue and operating profit), cash, operating cash flow, repurchases, the dividend rate, diluted shares, Items 1 and 1A"
+  },
+  "SP88": {
+   "published": "2021-04-29",
+   "filed": "8-K accepted 2021-04-29 07:13 ET, before the open",
+   "title": "S&P Global Q1 2021 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404021000117/spgi1q2021-earningsrelease.htm",
+   "supports": "Q1 2021: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2021 outlook"
+  },
+  "SP89": {
+   "published": "2021-07-29",
+   "filed": "8-K accepted 2021-07-29 07:14 ET, before the open",
+   "title": "S&P Global Q2 2021 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404021000151/spgi2q2021-earningsrelease.htm",
+   "supports": "Q2 2021: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2021 outlook"
+  },
+  "SP90": {
+   "published": "2021-10-26",
+   "filed": "8-K accepted 2021-10-26 07:12 ET, before the open",
+   "title": "S&P Global Q3 2021 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000162828021020456/spgi3q2021-earningsrelease.htm",
+   "supports": "Q3 2021: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2021 outlook"
   }
  },
  "history_vintages": [
@@ -2152,6 +2306,545 @@
     ]
    ],
    "groups_basis": "FY16 revenue by segment (SP65)",
+   "key_tail": "The 10-K ties results to the volume of securities issued and traded in the capital\n  markets, to flows into investment products, to interest rates and to volatility in the\n  financial and commodities markets.",
+   "cat4_tail": "ratings, data and index revenue in one number"
+  },
+  {
+   "published": "2018-02-12",
+   "sources": [
+    "SP70",
+    "SP69",
+    "SP65",
+    "SP58",
+    "SP57",
+    "SP53",
+    "SP52",
+    "SP46",
+    "SP39",
+    "SP14"
+   ],
+   "company": "S&P Global Inc.",
+   "exchange": "NYSE",
+   "pe_window_start": null,
+   "margin_signal_name": "Segment operating margin change",
+   "fy_label": "FY17",
+   "why": "S&P Global 'is a leading provider of transparent and independent ratings, benchmarks, analytics and data to the capital and commodity markets worldwide' (Item 1); Item 1A: 'Changes in the volume of securities issued and traded in domestic and/or global capital markets, asset levels and flows into investment products, changes in interest rates and volatility in the financial markets, and volatility in the commodities markets could have a material adverse effect on our business, financial condition or results of operations.', and no risk factor calling a business cyclical; a fall in debt issuance or the markets it serves cuts revenue, and no disruption theme is live for the business on this date",
+   "fiscal_year_ends": {
+    "2008": "2008-12-31",
+    "2009": "2009-12-31",
+    "2010": "2010-12-31",
+    "2011": "2011-12-31",
+    "2012": "2012-12-31",
+    "2013": "2013-12-31",
+    "2014": "2014-12-31",
+    "2015": "2015-12-31",
+    "2016": "2016-12-31",
+    "2017": "2017-12-31"
+   },
+   "eps_normalized": {
+    "2008": 1.79,
+    "2009": 1.74,
+    "2010": 1.82,
+    "2011": 1.95,
+    "2012": 2.29,
+    "2013": 3.22,
+    "2014": 3.88,
+    "2015": 4.53,
+    "2016": 7.94,
+    "2017": 5.78
+   },
+   "eps_sources": {
+    "2008": "SP39",
+    "2009": "SP46",
+    "2010": "SP53",
+    "2011": "SP58",
+    "2012": "SP65",
+    "2013": "SP52",
+    "2014": "SP57",
+    "2015": "SP57",
+    "2016": "SP70",
+    "2017": "SP70"
+   },
+   "normalization": "diluted EPS, each year from the latest filing that reports it on that line: 2013-2017 from the FY2017 10-K's selected data, 2013-2015 at the company's $3.22, $3.88 and $4.53 (Q4 2014 and Q4 2015 releases, the same basis; GAAP $2.80, $(1.08) and $4.21), at GAAP otherwise (from 2016 the company's adjusted figures also remove recurring deal-related amortization: not figures excluding only one-offs), 2016 $7.94 and 2017 $5.78 (the Tax Act charge of $149 million in); 2012 from the FY2016 10-K, 2011 from the FY2015, 2010 from the FY2014, all without McGraw Hill Construction, 2009 from the FY2013 10-K and 2008 from the FY2012 10-K/A, with it: a seam at 2009-2010, as published; no year is excluded",
+   "revenue_usd_b": {
+    "2008": 3.609,
+    "2009": 3.483,
+    "2010": 3.419,
+    "2011": 3.762,
+    "2012": 4.27,
+    "2013": 4.702,
+    "2014": 5.051,
+    "2015": 5.313,
+    "2016": 5.661,
+    "2017": 6.063
+   },
+   "revenue_sources": {
+    "2008": "SP39",
+    "2009": "SP46",
+    "2010": "SP53",
+    "2011": "SP58",
+    "2012": "SP65",
+    "2013": "SP70",
+    "2014": "SP70",
+    "2015": "SP70",
+    "2016": "SP70",
+    "2017": "SP70"
+   },
+   "diluted_shares_m": {
+    "2008": 318.687,
+    "2017": 258.9
+   },
+   "shares_sources": {
+    "2008": "SP14",
+    "2017": "SP70"
+   },
+   "shares_published": {
+    "2008": "2009-02-27"
+   },
+   "prev_fy_op_margin": 45.98,
+   "prev_fy_op_margin_note": "segment operating profit $2,788M / revenue $6,063M (FY17, SP70)",
+   "prev_fy_pretax_margin": 40.59,
+   "prev_fy_pretax_margin_note": "income before taxes $2,461M / revenue $6,063M (FY17, SP70)",
+   "prev_fy_sales_growth": 7.1,
+   "prev_fy_fs_pct": 11.7,
+   "prev_fy_mhe_pct": null,
+   "tax_rate": 0.334,
+   "tax_note": "provision for taxes on income $823M / pre-tax income $2,461M (FY17, SP70)",
+   "cash_b": 2.779,
+   "cash_label": "FY17",
+   "cash_note": "cash and cash equivalents $2,779M at December 31, 2017 (SP70)",
+   "ocf_b": 2.016,
+   "ocf_note": "cash provided by operating activities $2,016M in 2017 (SP70)",
+   "dividend_annual": 2.0,
+   "dividend_note": "$0.50 quarterly, $2.00 a year ('On February 2, 2018, the Board of Directors approved an increase in the quarterly common stock dividend from $0.41 per share to $0.50 per share.', SP70)",
+   "cash_return_text": "repurchase of treasury shares $1,001M in 2017 (SP70)",
+   "business_line": "ratings (S&P Global Ratings), market and commodities intelligence (S&P Global Market Intelligence and S&P Global Platts) and indices (S&P Dow Jones Indices)",
+   "groups": [
+    [
+     "Ratings",
+     2.988,
+     17.9
+    ],
+    [
+     "Market and Commodities Intelligence",
+     2.452,
+     -5.1
+    ],
+    [
+     "Indices",
+     0.733,
+     14.7
+    ]
+   ],
+   "groups_basis": "FY17 revenue by segment (SP70)",
+   "key_tail": "The 10-K ties results to the volume of securities issued and traded in the capital\n  markets, to flows into investment products, to interest rates and to volatility in the\n  financial and commodities markets.",
+   "cat4_tail": "ratings, data and index revenue in one number"
+  },
+  {
+   "published": "2019-02-13",
+   "sources": [
+    "SP77",
+    "SP76",
+    "SP70",
+    "SP65",
+    "SP58",
+    "SP57",
+    "SP53",
+    "SP52",
+    "SP46",
+    "SP23"
+   ],
+   "company": "S&P Global Inc.",
+   "exchange": "NYSE",
+   "pe_window_start": null,
+   "margin_signal_name": "Segment operating margin change",
+   "fy_label": "FY18",
+   "why": "S&P Global 'is a leading provider of transparent and independent ratings, benchmarks, analytics and data to the capital and commodity markets worldwide' (Item 1); Item 1A: 'Changes in the volume of securities issued and traded in domestic and/or global capital markets, asset levels and flows into investment products, changes in interest rates and volatility in the financial markets, and volatility in the commodities markets could have a material adverse effect on our business, financial condition or results of operations.', and no risk factor calling a business cyclical; a fall in debt issuance or the markets it serves cuts revenue, and no disruption theme is live for the business on this date",
+   "fiscal_year_ends": {
+    "2009": "2009-12-31",
+    "2010": "2010-12-31",
+    "2011": "2011-12-31",
+    "2012": "2012-12-31",
+    "2013": "2013-12-31",
+    "2014": "2014-12-31",
+    "2015": "2015-12-31",
+    "2016": "2016-12-31",
+    "2017": "2017-12-31",
+    "2018": "2018-12-31"
+   },
+   "eps_normalized": {
+    "2009": 1.74,
+    "2010": 1.82,
+    "2011": 1.95,
+    "2012": 2.29,
+    "2013": 3.22,
+    "2014": 3.88,
+    "2015": 4.53,
+    "2016": 7.94,
+    "2017": 5.78,
+    "2018": 7.73
+   },
+   "eps_sources": {
+    "2009": "SP46",
+    "2010": "SP53",
+    "2011": "SP58",
+    "2012": "SP65",
+    "2013": "SP52",
+    "2014": "SP57",
+    "2015": "SP57",
+    "2016": "SP77",
+    "2017": "SP77",
+    "2018": "SP77"
+   },
+   "normalization": "diluted EPS, each year from the latest filing that reports it on that line: 2014-2018 from the FY2018 10-K's selected data, 2013-2015 at the company's $3.22, $3.88 and $4.53 (the same basis), at GAAP otherwise (from 2016 the company's adjusted figures also remove recurring deal-related amortization: not figures excluding only one-offs); 2013 from the FY2017 10-K, 2012 from the FY2016, 2011 from the FY2015, 2010 from the FY2014, without McGraw Hill Construction, 2009 from the FY2013 10-K, with it: a seam at 2009-2010, as published; no year is excluded",
+   "revenue_usd_b": {
+    "2009": 3.483,
+    "2010": 3.419,
+    "2011": 3.762,
+    "2012": 4.27,
+    "2013": 4.702,
+    "2014": 5.051,
+    "2015": 5.313,
+    "2016": 5.661,
+    "2017": 6.063,
+    "2018": 6.258
+   },
+   "revenue_sources": {
+    "2009": "SP46",
+    "2010": "SP53",
+    "2011": "SP58",
+    "2012": "SP65",
+    "2013": "SP70",
+    "2014": "SP77",
+    "2015": "SP77",
+    "2016": "SP77",
+    "2017": "SP77",
+    "2018": "SP77"
+   },
+   "diluted_shares_m": {
+    "2009": 313.296,
+    "2018": 253.2
+   },
+   "shares_sources": {
+    "2009": "SP23",
+    "2018": "SP77"
+   },
+   "shares_published": {
+    "2009": "2010-02-24"
+   },
+   "prev_fy_op_margin": 48.27,
+   "prev_fy_op_margin_note": "segment operating profit $3,021M / revenue $6,258M (FY18, SP77)",
+   "prev_fy_pretax_margin": 42.84,
+   "prev_fy_pretax_margin_note": "income before taxes $2,681M / revenue $6,258M (FY18, SP77)",
+   "prev_fy_sales_growth": 3.2,
+   "prev_fy_fs_pct": 2.6,
+   "prev_fy_mhe_pct": null,
+   "tax_rate": 0.209,
+   "tax_note": "provision for taxes on income $560M / pre-tax income $2,681M (FY18, SP77)",
+   "cash_b": 1.917,
+   "cash_label": "FY18",
+   "cash_note": "cash and cash equivalents $1,917M at December 31, 2018 (SP77)",
+   "ocf_b": 2.064,
+   "ocf_note": "cash provided by operating activities $2,064M in 2018 (SP77)",
+   "dividend_annual": 2.28,
+   "dividend_note": "$0.57 quarterly, $2.28 a year ('On January 30, 2019, the Board of Directors approved an increase in the quarterly common stock dividend from $0.50 per share to $0.57 per share.', SP77)",
+   "cash_return_text": "repurchase of treasury shares $1,660M in 2018 (SP77)",
+   "business_line": "ratings (S&P Global Ratings), data and analytics (S&P Global Market Intelligence), commodities (S&P Global Platts) and indices (S&P Dow Jones Indices)",
+   "groups": [
+    [
+     "Ratings",
+     2.883,
+     -3.5
+    ],
+    [
+     "Market Intelligence",
+     1.833,
+     8.9
+    ],
+    [
+     "Platts",
+     0.815,
+     5.3
+    ],
+    [
+     "Indices",
+     0.837,
+     15.0
+    ]
+   ],
+   "groups_basis": "FY18 revenue by segment (SP77)",
+   "key_tail": "The 10-K ties results to the volume of securities issued and traded in the capital\n  markets, to flows into investment products, to interest rates and to volatility in the\n  financial and commodities markets.",
+   "cat4_tail": "ratings, data and index revenue in one number"
+  },
+  {
+   "published": "2020-02-11",
+   "sources": [
+    "SP82",
+    "SP81",
+    "SP77",
+    "SP70",
+    "SP65",
+    "SP58",
+    "SP57",
+    "SP53",
+    "SP52",
+    "SP28"
+   ],
+   "company": "S&P Global Inc.",
+   "exchange": "NYSE",
+   "pe_window_start": null,
+   "margin_signal_name": "Segment operating margin change",
+   "fy_label": "FY19",
+   "why": "S&P Global 'is a leading provider of transparent and independent ratings, benchmarks, analytics and data to the capital and commodity markets worldwide' (Item 1); Item 1A: 'Changes in the volume of securities issued and traded in domestic and/or global capital markets, asset levels and flows into investment products, changes in interest rates and volatility in the financial markets, and volatility in the commodities markets impact our business, financial condition or results of operations.', and no risk factor calling a business cyclical; a fall in debt issuance or the markets it serves cuts revenue, and no disruption theme is live for the business on this date",
+   "fiscal_year_ends": {
+    "2010": "2010-12-31",
+    "2011": "2011-12-31",
+    "2012": "2012-12-31",
+    "2013": "2013-12-31",
+    "2014": "2014-12-31",
+    "2015": "2015-12-31",
+    "2016": "2016-12-31",
+    "2017": "2017-12-31",
+    "2018": "2018-12-31",
+    "2019": "2019-12-31"
+   },
+   "eps_normalized": {
+    "2010": 1.82,
+    "2011": 1.95,
+    "2012": 2.29,
+    "2013": 3.22,
+    "2014": 3.88,
+    "2015": 4.53,
+    "2016": 7.94,
+    "2017": 5.78,
+    "2018": 7.73,
+    "2019": 8.6
+   },
+   "eps_sources": {
+    "2010": "SP53",
+    "2011": "SP58",
+    "2012": "SP65",
+    "2013": "SP52",
+    "2014": "SP57",
+    "2015": "SP57",
+    "2016": "SP82",
+    "2017": "SP82",
+    "2018": "SP82",
+    "2019": "SP82"
+   },
+   "normalization": "diluted EPS, each year from the latest filing that reports it on that line: 2015-2019 from the FY2019 10-K's selected data, 2013-2015 at the company's $3.22, $3.88 and $4.53 (the same basis), at GAAP otherwise (from 2016 the company's adjusted figures also remove recurring deal-related amortization: not figures excluding only one-offs); 2014 from the FY2018 10-K, 2013 from the FY2017, 2012 from the FY2016, 2011 from the FY2015 and 2010 from the FY2014 10-K, all without McGraw Hill Construction; no year is excluded",
+   "revenue_usd_b": {
+    "2010": 3.419,
+    "2011": 3.762,
+    "2012": 4.27,
+    "2013": 4.702,
+    "2014": 5.051,
+    "2015": 5.313,
+    "2016": 5.661,
+    "2017": 6.063,
+    "2018": 6.258,
+    "2019": 6.699
+   },
+   "revenue_sources": {
+    "2010": "SP53",
+    "2011": "SP58",
+    "2012": "SP65",
+    "2013": "SP70",
+    "2014": "SP77",
+    "2015": "SP82",
+    "2016": "SP82",
+    "2017": "SP82",
+    "2018": "SP82",
+    "2019": "SP82"
+   },
+   "diluted_shares_m": {
+    "2010": 312.22,
+    "2019": 246.9
+   },
+   "shares_sources": {
+    "2010": "SP28",
+    "2019": "SP82"
+   },
+   "shares_published": {
+    "2010": "2011-02-23"
+   },
+   "prev_fy_op_margin": 51.32,
+   "prev_fy_op_margin_note": "segment operating profit $3,438M / revenue $6,699M (FY19, SP82)",
+   "prev_fy_pretax_margin": 43.74,
+   "prev_fy_pretax_margin_note": "income before taxes $2,930M / revenue $6,699M (FY19, SP82)",
+   "prev_fy_sales_growth": 7.0,
+   "prev_fy_fs_pct": 7.9,
+   "prev_fy_mhe_pct": null,
+   "tax_rate": 0.214,
+   "tax_note": "provision for taxes on income $627M / pre-tax income $2,930M (FY19, SP82)",
+   "cash_b": 2.866,
+   "cash_label": "FY19",
+   "cash_note": "cash and cash equivalents $2,866M at December 31, 2019 (SP82)",
+   "ocf_b": 2.776,
+   "ocf_note": "cash provided by operating activities $2,776M in 2019 (SP82)",
+   "dividend_annual": 2.68,
+   "dividend_note": "$0.67 quarterly, $2.68 a year ('On January 29, 2020, the Board of Directors approved an increase in the quarterly common stock dividend from $0.57 per share to $0.67 per share.', SP82)",
+   "cash_return_text": "repurchase of treasury shares $1,240M in 2019 (SP82)",
+   "business_line": "ratings (S&P Global Ratings), data and analytics (S&P Global Market Intelligence), commodities (S&P Global Platts) and indices (S&P Dow Jones Indices)",
+   "groups": [
+    [
+     "Ratings",
+     3.106,
+     7.7
+    ],
+    [
+     "Market Intelligence",
+     1.959,
+     6.9
+    ],
+    [
+     "Platts",
+     0.844,
+     3.6
+    ],
+    [
+     "Indices",
+     0.918,
+     9.7
+    ]
+   ],
+   "groups_basis": "FY19 revenue by segment (SP82)",
+   "key_tail": "The 10-K ties results to the volume of securities issued and traded in the capital\n  markets, to flows into investment products, to interest rates and to volatility in the\n  financial and commodities markets.",
+   "cat4_tail": "ratings, data and index revenue in one number"
+  },
+  {
+   "published": "2021-02-10",
+   "sources": [
+    "SP87",
+    "SP86",
+    "SP82",
+    "SP77",
+    "SP70",
+    "SP65",
+    "SP58",
+    "SP57",
+    "SP52",
+    "SP33"
+   ],
+   "company": "S&P Global Inc.",
+   "exchange": "NYSE",
+   "pe_window_start": null,
+   "margin_signal_name": "Segment operating margin change",
+   "fy_label": "FY20",
+   "why": "S&P Global 'is a leading provider of transparent and independent ratings, benchmarks, analytics and data to the capital and commodity markets worldwide' (Item 1); Item 1A: 'Changes in the volume of securities issued and traded in domestic and/or global capital markets, asset levels and flows into investment products, changes in interest rates and volatility in the financial markets, and volatility in the commodities markets impact our business, financial condition or results of operations.', and no risk factor calling a business cyclical; a fall in debt issuance or the markets it serves cuts revenue, and no disruption theme is live for the business on this date",
+   "fiscal_year_ends": {
+    "2011": "2011-12-31",
+    "2012": "2012-12-31",
+    "2013": "2013-12-31",
+    "2014": "2014-12-31",
+    "2015": "2015-12-31",
+    "2016": "2016-12-31",
+    "2017": "2017-12-31",
+    "2018": "2018-12-31",
+    "2019": "2019-12-31",
+    "2020": "2020-12-31"
+   },
+   "eps_normalized": {
+    "2011": 1.95,
+    "2012": 2.29,
+    "2013": 3.22,
+    "2014": 3.88,
+    "2015": 4.53,
+    "2016": 7.94,
+    "2017": 5.78,
+    "2018": 7.73,
+    "2019": 8.6,
+    "2020": 9.66
+   },
+   "eps_sources": {
+    "2011": "SP58",
+    "2012": "SP65",
+    "2013": "SP52",
+    "2014": "SP57",
+    "2015": "SP57",
+    "2016": "SP87",
+    "2017": "SP87",
+    "2018": "SP87",
+    "2019": "SP87",
+    "2020": "SP87"
+   },
+   "normalization": "diluted EPS, each year from the latest filing that reports it on that line: 2016-2020 from the FY2020 10-K's selected data, 2013-2015 at the company's $3.22, $3.88 and $4.53 (the same basis), at GAAP otherwise (from 2016 the company's adjusted figures also remove recurring deal-related amortization: not figures excluding only one-offs); 2015 from the FY2019 10-K, 2014 from the FY2018, 2013 from the FY2017, 2012 from the FY2016 and 2011 from the FY2015 10-K; no year is excluded",
+   "revenue_usd_b": {
+    "2011": 3.762,
+    "2012": 4.27,
+    "2013": 4.702,
+    "2014": 5.051,
+    "2015": 5.313,
+    "2016": 5.661,
+    "2017": 6.063,
+    "2018": 6.258,
+    "2019": 6.699,
+    "2020": 7.442
+   },
+   "revenue_sources": {
+    "2011": "SP58",
+    "2012": "SP65",
+    "2013": "SP70",
+    "2014": "SP77",
+    "2015": "SP82",
+    "2016": "SP87",
+    "2017": "SP87",
+    "2018": "SP87",
+    "2019": "SP87",
+    "2020": "SP87"
+   },
+   "diluted_shares_m": {
+    "2011": 304.0,
+    "2020": 242.1
+   },
+   "shares_sources": {
+    "2011": "SP33",
+    "2020": "SP87"
+   },
+   "shares_published": {
+    "2011": "2012-02-07"
+   },
+   "prev_fy_op_margin": 52.89,
+   "prev_fy_op_margin_note": "segment operating profit $3,936M / revenue $7,442M (FY20, SP87)",
+   "prev_fy_pretax_margin": 43.38,
+   "prev_fy_pretax_margin_note": "income before taxes $3,228M / revenue $7,442M (FY20, SP87)",
+   "prev_fy_sales_growth": 11.1,
+   "prev_fy_fs_pct": 12.1,
+   "prev_fy_mhe_pct": null,
+   "tax_rate": 0.215,
+   "tax_note": "provision for taxes on income $694M / pre-tax income $3,228M (FY20, SP87)",
+   "cash_b": 4.108,
+   "cash_label": "FY20",
+   "cash_note": "cash and cash equivalents $4,108M at December 31, 2020 (SP87)",
+   "ocf_b": 3.567,
+   "ocf_note": "cash provided by operating activities $3,567M in 2020 (SP87)",
+   "dividend_annual": 3.08,
+   "dividend_note": "$0.77 quarterly, $3.08 a year ('On January 27, 2021, the Board of Directors approved an increase in the quarterly common stock dividend from $0.67 per share to $0.77 per share.', SP87)",
+   "cash_return_text": "repurchase of treasury shares $1,164M in 2020 (SP87)",
+   "business_line": "ratings (S&P Global Ratings), data and analytics (S&P Global Market Intelligence), commodities (S&P Global Platts) and indices (S&P Dow Jones Indices)",
+   "groups": [
+    [
+     "Ratings",
+     3.606,
+     16.1
+    ],
+    [
+     "Market Intelligence",
+     2.106,
+     7.5
+    ],
+    [
+     "Platts",
+     0.878,
+     4.0
+    ],
+    [
+     "Indices",
+     0.989,
+     7.7
+    ]
+   ],
+   "groups_basis": "FY20 revenue by segment (SP87)",
    "key_tail": "The 10-K ties results to the volume of securities issued and traded in the capital\n  markets, to flows into investment products, to interest rates and to volatility in the\n  financial and commodities markets.",
    "cat4_tail": "ratings, data and index revenue in one number"
   }
@@ -4416,6 +5109,994 @@
    "cash_return_text": "'During the third quarter, the Company returned $604 million to shareholders through a combination of $104 million in dividends and $500 million in the form of an accelerated share repurchase (ASR) agreement.'",
    "next_print": "Q4 2017 print (early February)",
    "note": "'Adjusted net income increased 16% to $442 million and adjusted diluted earnings per share increased 19% to $1.71.'; Financial Services line: Ratings $739.0M + Market Intelligence $422.0M + S&P Dow Jones Indices $187.0M less the royalty elimination $28.0M; the third segment is Market and Commodities Intelligence $615.0M ($658.0M a year earlier) less Market Intelligence revenue $422.0M ($429.0M), the release's own rows: Platts, with J.D. Power in the year-ago quarter; McGraw-Hill Education, sold in 2013, is not reported (n/r)"
+  },
+  {
+   "quarter": "Q4 2017",
+   "fy": 2017,
+   "q": 4,
+   "published": "2018-02-06",
+   "source": "SP69",
+   "release": "Feb 6",
+   "im_label": "Platts (Market and Commodities Intelligence less Market Intelligence)",
+   "release_time": "before the open on Feb 6: 8-K accepted 2018-02-06 07:11 ET (conference call at 8:30 a.m. ET)",
+   "period_end": "2017-12-31",
+   "raw": {
+    "units": "m0",
+    "rev_k": 1589000,
+    "rev_prior_k": 1399000,
+    "fs_k": 1392000,
+    "fs_prior_k": 1211000,
+    "mhe_k": null,
+    "mhe_prior_k": null,
+    "im_k": 197000,
+    "im_prior_k": 188000,
+    "segop_k": 701000,
+    "segop_prior_k": 892000,
+    "diluted_shares_k": 257000,
+    "fs_parts": {
+     "Ratings": [
+      789000,
+      658000
+     ],
+     "Market Intelligence": [
+      440000,
+      407000
+     ],
+     "S&P Dow Jones Indices": [
+      191000,
+      171000
+     ],
+     "royalty elimination": [
+      -28000,
+      -25000
+     ]
+    }
+   },
+   "sales_b": 1.589,
+   "sales_pct": 13.6,
+   "fs_pct": 14.9,
+   "mhe_pct": null,
+   "im_pct": 4.8,
+   "op_margin": 44.12,
+   "op_margin_bp": -1964.4,
+   "eps_q": 1.02,
+   "eps_q_prior": 2.05,
+   "eps_pct": -50.2,
+   "diluted_shares_m": 257.0,
+   "cash_return_text": "'For the full year, the Company returned $1.4 billion to shareholders with $1.0 billion in share repurchases and $421 million in dividends.'",
+   "next_print": "Q1 2018 print (late April)",
+   "note": "'Adjusted diluted earnings per share increased 44% to $1.85 aided by a 2% reduction in diluted shares outstanding.'; 'In addition, the Company incurred $149 million of tax expense due to U.S. tax reform, primarily associated with the deemed repatriation of foreign earnings, which was partially offset by a $21 million tax benefit related to prior year divestitures.'; Financial Services line: Ratings $789.0M + Market Intelligence $440.0M + S&P Dow Jones Indices $191.0M less the royalty elimination $28.0M; the third segment is Market and Commodities Intelligence $637.0M ($595.0M a year earlier) less Market Intelligence revenue $440.0M ($407.0M), the release's own rows: Platts; McGraw-Hill Education, sold in 2013, is not reported (n/r)",
+   "fy_actual": {
+    "fy": 2017,
+    "fy_label": "FY17",
+    "eps_normalized": 5.78,
+    "revenue_usd_b": 6.063,
+    "diluted_shares_m": 258.9,
+    "normalization_note": "FY2017 $5.78, diluted EPS as reported (SP69): the company's adjusted figure also removes deal-related amortization, which recurs (the 2016 rule)",
+    "op_margin": 45.98,
+    "pretax_margin": 40.59,
+    "pretax_margin_note": "pre-tax income $2,461M / revenue $6,063M (FY17, SP69)",
+    "sales_growth": 7.1,
+    "fs_pct": 11.7,
+    "mhe_pct": null,
+    "tax_rate": 0.334,
+    "tax_note": "provision for taxes on income $823M / pre-tax income $2,461M"
+   }
+  },
+  {
+   "quarter": "Q1 2018",
+   "fy": 2018,
+   "q": 1,
+   "published": "2018-04-26",
+   "source": "SP72",
+   "release": "Apr 26",
+   "im_label": "Platts",
+   "release_time": "before the open on Apr 26: 8-K accepted 2018-04-26 07:21 ET (conference call at 8:30 a.m. ET)",
+   "period_end": "2018-03-31",
+   "raw": {
+    "units": "m0",
+    "rev_k": 1567000,
+    "rev_prior_k": 1453000,
+    "fs_k": 1371000,
+    "fs_prior_k": 1262000,
+    "mhe_k": null,
+    "mhe_prior_k": null,
+    "im_k": 196000,
+    "im_prior_k": 191000,
+    "segop_k": 757000,
+    "segop_prior_k": 675000,
+    "diluted_shares_k": 254400,
+    "fs_parts": {
+     "Ratings": [
+      748000,
+      714000
+     ],
+     "Market Intelligence": [
+      437000,
+      402000
+     ],
+     "Indices": [
+      214000,
+      171000
+     ],
+     "royalty elimination": [
+      -28000,
+      -25000
+     ]
+    }
+   },
+   "sales_b": 1.567,
+   "sales_pct": 7.8,
+   "fs_pct": 8.6,
+   "mhe_pct": null,
+   "im_pct": 2.6,
+   "op_margin": 48.31,
+   "op_margin_bp": 185.3,
+   "eps_q": 1.93,
+   "eps_q_prior": 1.53,
+   "eps_pct": 26.1,
+   "diluted_shares_m": 254.4,
+   "cash_return_text": "'During the first quarter, the Company returned $1.227 billion to shareholders through a combination of $127 million in dividends, $100 million in open market share purchases, and $1 billion'",
+   "next_print": "Q2 2018 print (late July)",
+   "note": "'Adjusted net income increased 21% to $509 million and adjusted diluted earnings per share increased 24% to $2.00.'; Financial Services line: Ratings $748.0M + Market Intelligence $437.0M + Indices $214.0M less the royalty elimination $28.0M; McGraw-Hill Education, sold in 2013, is not reported (n/r)"
+  },
+  {
+   "quarter": "Q2 2018",
+   "fy": 2018,
+   "q": 2,
+   "published": "2018-07-26",
+   "source": "SP74",
+   "release": "Jul 26",
+   "im_label": "Platts",
+   "release_time": "before the open on Jul 26: 8-K accepted 2018-07-26 07:17 ET (conference call at 8:30 a.m. ET)",
+   "period_end": "2018-06-30",
+   "raw": {
+    "units": "m0",
+    "rev_k": 1609000,
+    "rev_prior_k": 1509000,
+    "fs_k": 1399000,
+    "fs_prior_k": 1317000,
+    "mhe_k": null,
+    "mhe_prior_k": null,
+    "im_k": 205000,
+    "im_prior_k": 192000,
+    "segop_k": 731000,
+    "segop_prior_k": 704000,
+    "diluted_shares_k": 253300,
+    "fs_parts": {
+     "Ratings": [
+      775000,
+      747000
+     ],
+     "Market Intelligence": [
+      447000,
+      414000
+     ],
+     "Indices": [
+      209000,
+      184000
+     ],
+     "royalty elimination": [
+      -32000,
+      -28000
+     ]
+    },
+    "other_k": 5000,
+    "other_prior_k": 0
+   },
+   "sales_b": 1.609,
+   "sales_pct": 6.6,
+   "fs_pct": 6.2,
+   "mhe_pct": null,
+   "im_pct": 6.8,
+   "op_margin": 45.43,
+   "op_margin_bp": -122.1,
+   "eps_q": 1.82,
+   "eps_q_prior": 1.62,
+   "eps_pct": 12.3,
+   "diluted_shares_m": 253.3,
+   "cash_return_text": "'During the second quarter, the Company returned $126 million to shareholders in dividends.'",
+   "next_print": "Q3 2018 print (late October)",
+   "note": "'Adjusted net income increased 23% to $549 million and adjusted diluted earnings per share increased 26% to $2.17.'; Financial Services line: Ratings $775.0M + Market Intelligence $447.0M + Indices $209.0M less the royalty elimination $32.0M; Corporate revenue $5.0M ($0.0M a year earlier), the release's own row, is in neither the Financial Services line nor the third segment; McGraw-Hill Education, sold in 2013, is not reported (n/r)"
+  },
+  {
+   "quarter": "Q3 2018",
+   "fy": 2018,
+   "q": 3,
+   "published": "2018-10-25",
+   "source": "SP75",
+   "release": "Oct 25",
+   "im_label": "Platts",
+   "release_time": "before the open on Oct 25: 8-K accepted 2018-10-25 07:17 ET (conference call at 8:30 a.m. ET)",
+   "period_end": "2018-09-30",
+   "raw": {
+    "units": "m0",
+    "rev_k": 1546000,
+    "rev_prior_k": 1513000,
+    "fs_k": 1337000,
+    "fs_prior_k": 1320000,
+    "mhe_k": null,
+    "mhe_prior_k": null,
+    "im_k": 204000,
+    "im_prior_k": 193000,
+    "segop_k": 775000,
+    "segop_prior_k": 701000,
+    "diluted_shares_k": 253500,
+    "fs_parts": {
+     "Ratings": [
+      700000,
+      739000
+     ],
+     "Market Intelligence": [
+      464000,
+      422000
+     ],
+     "Indices": [
+      205000,
+      187000
+     ],
+     "royalty elimination": [
+      -32000,
+      -28000
+     ]
+    },
+    "other_k": 5000,
+    "other_prior_k": 0
+   },
+   "sales_b": 1.546,
+   "sales_pct": 2.2,
+   "fs_pct": 1.3,
+   "mhe_pct": null,
+   "im_pct": 5.7,
+   "op_margin": 50.13,
+   "op_margin_bp": 379.8,
+   "eps_q": 1.95,
+   "eps_q_prior": 1.61,
+   "eps_pct": 21.1,
+   "diluted_shares_m": 253.5,
+   "cash_return_text": "'During the third quarter, the Company returned $126 million to shareholders in dividends and completed the $1 billion accelerated share repurchase (ASR) agreement initiated during the first quarter.'",
+   "next_print": "Q4 2018 print (early February)",
+   "note": "'Adjusted net income increased 21% to $536 million and adjusted diluted earnings per share increased 23% to $2.11.'; Financial Services line: Ratings $700.0M + Market Intelligence $464.0M + Indices $205.0M less the royalty elimination $32.0M; Corporate revenue $5.0M ($0.0M a year earlier), the release's own row, is in neither the Financial Services line nor the third segment; McGraw-Hill Education, sold in 2013, is not reported (n/r)"
+  },
+  {
+   "quarter": "Q4 2018",
+   "fy": 2018,
+   "q": 4,
+   "published": "2019-02-07",
+   "source": "SP76",
+   "release": "Feb 7",
+   "im_label": "Platts",
+   "release_time": "before the open on Feb 7: 8-K accepted 2019-02-07 07:16 ET (conference call at 8:30 a.m. ET)",
+   "period_end": "2018-12-31",
+   "raw": {
+    "units": "m0",
+    "rev_k": 1536000,
+    "rev_prior_k": 1589000,
+    "fs_k": 1321000,
+    "fs_prior_k": 1392000,
+    "mhe_k": null,
+    "mhe_prior_k": null,
+    "im_k": 210000,
+    "im_prior_k": 197000,
+    "segop_k": 758000,
+    "segop_prior_k": 698000,
+    "diluted_shares_k": 251500,
+    "fs_parts": {
+     "Ratings": [
+      661000,
+      789000
+     ],
+     "Market Intelligence": [
+      478000,
+      441000
+     ],
+     "Indices": [
+      215000,
+      190000
+     ],
+     "royalty elimination": [
+      -33000,
+      -28000
+     ]
+    },
+    "other_k": 5000,
+    "other_prior_k": 0
+   },
+   "sales_b": 1.536,
+   "sales_pct": -3.3,
+   "fs_pct": -5.1,
+   "mhe_pct": null,
+   "im_pct": 6.6,
+   "op_margin": 49.35,
+   "op_margin_bp": 542.2,
+   "eps_q": 2.03,
+   "eps_q_prior": 1.02,
+   "eps_pct": 99.0,
+   "diluted_shares_m": 251.5,
+   "cash_return_text": "'Consistent with the Company's capital allocation framework, the Company returned $2.2 billion to shareholders in 2018 with $1.7 billion in share repurchases and $503 million in dividends.'",
+   "next_print": "Q1 2019 print (late April)",
+   "note": "'Adjusted diluted earnings per share increased 20% to $2.22 aided by a 2% reduction in diluted shares outstanding.'; Financial Services line: Ratings $661.0M + Market Intelligence $478.0M + Indices $215.0M less the royalty elimination $33.0M; Corporate revenue $5.0M ($0.0M a year earlier), the release's own row, is in neither the Financial Services line nor the third segment; McGraw-Hill Education, sold in 2013, is not reported (n/r)",
+   "fy_actual": {
+    "fy": 2018,
+    "fy_label": "FY18",
+    "eps_normalized": 7.73,
+    "revenue_usd_b": 6.258,
+    "diluted_shares_m": 253.2,
+    "normalization_note": "FY2018 $7.73, diluted EPS as reported (SP76): the company's adjusted figure also removes deal-related amortization, which recurs (the 2016 rule)",
+    "op_margin": 48.27,
+    "pretax_margin": 42.84,
+    "pretax_margin_note": "pre-tax income $2,681M / revenue $6,258M (FY18, SP76)",
+    "sales_growth": 3.2,
+    "fs_pct": 2.6,
+    "mhe_pct": null,
+    "tax_rate": 0.209,
+    "tax_note": "provision for taxes on income $560M / pre-tax income $2,681M"
+   }
+  },
+  {
+   "quarter": "Q1 2019",
+   "fy": 2019,
+   "q": 1,
+   "published": "2019-05-02",
+   "source": "SP78",
+   "release": "May 2",
+   "im_label": "Platts",
+   "release_time": "before the open on May 2: 8-K accepted 2019-05-02 07:22 ET (conference call at 8:30 a.m. ET)",
+   "period_end": "2019-03-31",
+   "raw": {
+    "units": "m0",
+    "rev_k": 1571000,
+    "rev_prior_k": 1567000,
+    "fs_k": 1364000,
+    "fs_prior_k": 1371000,
+    "mhe_k": null,
+    "mhe_prior_k": null,
+    "im_k": 207000,
+    "im_prior_k": 196000,
+    "segop_k": 751000,
+    "segop_prior_k": 757000,
+    "diluted_shares_k": 248300,
+    "fs_parts": {
+     "Ratings": [
+      696000,
+      748000
+     ],
+     "Market Intelligence": [
+      482000,
+      439000
+     ],
+     "Indices": [
+      217000,
+      212000
+     ],
+     "royalty elimination": [
+      -31000,
+      -28000
+     ]
+    }
+   },
+   "sales_b": 1.571,
+   "sales_pct": 0.3,
+   "fs_pct": -0.5,
+   "mhe_pct": null,
+   "im_pct": 5.6,
+   "op_margin": 47.8,
+   "op_margin_bp": -50.5,
+   "eps_q": 1.65,
+   "eps_q_prior": 1.93,
+   "eps_pct": -14.5,
+   "diluted_shares_m": 248.3,
+   "cash_return_text": "'During the first quarter, the Company returned $785 million to shareholders through a combination of $141 million in dividends, $144 million in open market share repurchases, and the execution of the $500 million ASR that was initiated in early February.'",
+   "next_print": "Q2 2019 print (late July)",
+   "note": "'Adjusted net income increased 3% to $524 million and adjusted diluted earnings per share increased 5% to $2.11.'; Financial Services line: Ratings $696.0M + Market Intelligence $482.0M + Indices $217.0M less the royalty elimination $31.0M; McGraw-Hill Education, sold in 2013, is not reported (n/r)"
+  },
+  {
+   "quarter": "Q2 2019",
+   "fy": 2019,
+   "q": 2,
+   "published": "2019-08-01",
+   "source": "SP79",
+   "release": "Aug 1",
+   "im_label": "Platts",
+   "release_time": "before the open on Aug 1: 8-K accepted 2019-08-01 07:15 ET (conference call at 8:30 a.m. ET)",
+   "period_end": "2019-06-30",
+   "raw": {
+    "units": "m0",
+    "rev_k": 1704000,
+    "rev_prior_k": 1609000,
+    "fs_k": 1491000,
+    "fs_prior_k": 1399000,
+    "mhe_k": null,
+    "mhe_prior_k": null,
+    "im_k": 213000,
+    "im_prior_k": 205000,
+    "segop_k": 871000,
+    "segop_prior_k": 731000,
+    "diluted_shares_k": 247400,
+    "fs_parts": {
+     "Ratings": [
+      801000,
+      775000
+     ],
+     "Market Intelligence": [
+      487000,
+      449000
+     ],
+     "Indices": [
+      235000,
+      207000
+     ],
+     "royalty elimination": [
+      -32000,
+      -32000
+     ]
+    },
+    "other_k": 0,
+    "other_prior_k": 5000
+   },
+   "sales_b": 1.704,
+   "sales_pct": 5.9,
+   "fs_pct": 6.6,
+   "mhe_pct": null,
+   "im_pct": 3.9,
+   "op_margin": 51.12,
+   "op_margin_bp": 568.3,
+   "eps_q": 2.24,
+   "eps_q_prior": 1.82,
+   "eps_pct": 23.1,
+   "diluted_shares_m": 247.4,
+   "cash_return_text": "'During the second quarter, the Company returned $140 million to shareholders through dividends.'",
+   "next_print": "Q3 2019 print (late October)",
+   "note": "'Adjusted net income increased 9% to $601 million and adjusted diluted earnings per share increased 12% to $2.43 due to revenue growth and continued progress toward productivity initiative targets.'; Financial Services line: Ratings $801.0M + Market Intelligence $487.0M + Indices $235.0M less the royalty elimination $32.0M; Corporate revenue $0.0M ($5.0M a year earlier), the release's own row, is in neither the Financial Services line nor the third segment; McGraw-Hill Education, sold in 2013, is not reported (n/r)"
+  },
+  {
+   "quarter": "Q3 2019",
+   "fy": 2019,
+   "q": 3,
+   "published": "2019-10-29",
+   "source": "SP80",
+   "release": "Oct 29",
+   "im_label": "Platts",
+   "release_time": "before the open on Oct 29: 8-K accepted 2019-10-29 07:15 ET (conference call at 8:30 a.m. ET)",
+   "period_end": "2019-09-30",
+   "raw": {
+    "units": "m0",
+    "rev_k": 1689000,
+    "rev_prior_k": 1546000,
+    "fs_k": 1477000,
+    "fs_prior_k": 1337000,
+    "mhe_k": null,
+    "mhe_prior_k": null,
+    "im_k": 212000,
+    "im_prior_k": 204000,
+    "segop_k": 936000,
+    "segop_prior_k": 775000,
+    "diluted_shares_k": 246500,
+    "fs_parts": {
+     "Ratings": [
+      789000,
+      700000
+     ],
+     "Market Intelligence": [
+      488000,
+      466000
+     ],
+     "Indices": [
+      232000,
+      203000
+     ],
+     "royalty elimination": [
+      -32000,
+      -32000
+     ]
+    },
+    "other_k": 0,
+    "other_prior_k": 5000
+   },
+   "sales_b": 1.689,
+   "sales_pct": 9.2,
+   "fs_pct": 10.5,
+   "mhe_pct": null,
+   "im_pct": 3.9,
+   "op_margin": 55.42,
+   "op_margin_bp": 528.8,
+   "eps_q": 2.5,
+   "eps_q_prior": 1.95,
+   "eps_pct": 28.2,
+   "diluted_shares_m": 246.5,
+   "cash_return_text": "'During the third quarter, the Company returned $640 million to shareholders: $500 million in share repurchases through an ASR that was initiated in August and $140 million in dividends.'",
+   "next_print": "Q4 2019 print (early February)",
+   "note": "'Adjusted net income increased 13% to $606 million and adjusted diluted earnings per share increased 16% to $2.46 due to revenue growth and continued progress toward productivity initiative targets.'; Financial Services line: Ratings $789.0M + Market Intelligence $488.0M + Indices $232.0M less the royalty elimination $32.0M; Corporate revenue $0.0M ($5.0M a year earlier), the release's own row, is in neither the Financial Services line nor the third segment; McGraw-Hill Education, sold in 2013, is not reported (n/r)"
+  },
+  {
+   "quarter": "Q4 2019",
+   "fy": 2019,
+   "q": 4,
+   "published": "2020-02-06",
+   "source": "SP81",
+   "release": "Feb 6",
+   "im_label": "Platts",
+   "release_time": "before the open on Feb 6: 8-K accepted 2020-02-06 07:15 ET (conference call at 8:30 a.m. ET)",
+   "period_end": "2019-12-31",
+   "raw": {
+    "units": "m0",
+    "rev_k": 1735000,
+    "rev_prior_k": 1536000,
+    "fs_k": 1522000,
+    "fs_prior_k": 1321000,
+    "mhe_k": null,
+    "mhe_prior_k": null,
+    "im_k": 213000,
+    "im_prior_k": 210000,
+    "segop_k": 880000,
+    "segop_prior_k": 758000,
+    "diluted_shares_k": 245600,
+    "fs_parts": {
+     "Ratings": [
+      820000,
+      661000
+     ],
+     "Market Intelligence": [
+      502000,
+      478000
+     ],
+     "Indices": [
+      233000,
+      215000
+     ],
+     "royalty elimination": [
+      -33000,
+      -33000
+     ]
+    },
+    "other_k": 0,
+    "other_prior_k": 5000
+   },
+   "sales_b": 1.735,
+   "sales_pct": 13.0,
+   "fs_pct": 15.2,
+   "mhe_pct": null,
+   "im_pct": 1.4,
+   "op_margin": 50.72,
+   "op_margin_bp": 137.2,
+   "eps_q": 2.2,
+   "eps_q_prior": 2.03,
+   "eps_pct": 8.4,
+   "diluted_shares_m": 245.6,
+   "cash_return_text": "'The Company returned $1.8 billion to shareholders in 2019 with $1.2 billion in share repurchases and $560 million in dividends.'",
+   "next_print": "Q1 2020 print (early May)",
+   "note": "'Adjusted diluted earnings per share increased 14% to $2.53.'; Financial Services line: Ratings $820.0M + Market Intelligence $502.0M + Indices $233.0M less the royalty elimination $33.0M; Corporate revenue $0.0M ($5.0M a year earlier), the release's own row, is in neither the Financial Services line nor the third segment; McGraw-Hill Education, sold in 2013, is not reported (n/r)",
+   "fy_actual": {
+    "fy": 2019,
+    "fy_label": "FY19",
+    "eps_normalized": 8.6,
+    "revenue_usd_b": 6.699,
+    "diluted_shares_m": 246.9,
+    "normalization_note": "FY2019 $8.60, diluted EPS as reported (SP81): the company's adjusted figure also removes deal-related amortization, which recurs (the 2016 rule)",
+    "op_margin": 51.32,
+    "pretax_margin": 43.74,
+    "pretax_margin_note": "pre-tax income $2,930M / revenue $6,699M (FY19, SP81)",
+    "sales_growth": 7.0,
+    "fs_pct": 7.9,
+    "mhe_pct": null,
+    "tax_rate": 0.214,
+    "tax_note": "provision for taxes on income $627M / pre-tax income $2,930M"
+   }
+  },
+  {
+   "quarter": "Q1 2020",
+   "fy": 2020,
+   "q": 1,
+   "published": "2020-04-28",
+   "source": "SP83",
+   "release": "Apr 28",
+   "im_label": "Platts",
+   "release_time": "before the open on Apr 28: 8-K accepted 2020-04-28 07:28 ET (conference call at 8:30 a.m. ET)",
+   "period_end": "2020-03-31",
+   "raw": {
+    "units": "m0",
+    "rev_k": 1786000,
+    "rev_prior_k": 1571000,
+    "fs_k": 1571000,
+    "fs_prior_k": 1364000,
+    "mhe_k": null,
+    "mhe_prior_k": null,
+    "im_k": 215000,
+    "im_prior_k": 207000,
+    "segop_k": 961000,
+    "segop_prior_k": 751000,
+    "diluted_shares_k": 243300,
+    "fs_parts": {
+     "Ratings": [
+      825000,
+      696000
+     ],
+     "Market Intelligence": [
+      519000,
+      482000
+     ],
+     "Indices": [
+      259000,
+      217000
+     ],
+     "royalty elimination": [
+      -32000,
+      -31000
+     ]
+    }
+   },
+   "sales_b": 1.786,
+   "sales_pct": 13.7,
+   "fs_pct": 15.2,
+   "mhe_pct": null,
+   "im_pct": 3.9,
+   "op_margin": 53.81,
+   "op_margin_bp": 600.3,
+   "eps_q": 2.62,
+   "eps_q_prior": 1.65,
+   "eps_pct": 58.8,
+   "diluted_shares_m": 243.3,
+   "cash_return_text": "'During the first quarter, the Company returned $1.3 billion to shareholders, $1 billion through an ASR program that was initiated in early February, $150 million in open market share repurchases in January and February, and $161 million in dividends.'",
+   "next_print": "Q2 2020 print (early August)",
+   "note": "'Adjusted net income increased 27% to $665 million and adjusted diluted earnings per share increased 29% to $2.73 due to revenue growth, continued progress toward productivity initiative targets, and reduced business travel.'; Financial Services line: Ratings $825.0M + Market Intelligence $519.0M + Indices $259.0M less the royalty elimination $32.0M; McGraw-Hill Education, sold in 2013, is not reported (n/r)"
+  },
+  {
+   "quarter": "Q2 2020",
+   "fy": 2020,
+   "q": 2,
+   "published": "2020-07-28",
+   "source": "SP84",
+   "release": "Jul 28",
+   "im_label": "Platts",
+   "release_time": "before the open on Jul 28: 8-K accepted 2020-07-28 07:14 ET (conference call at 8:30 a.m. ET)",
+   "period_end": "2020-06-30",
+   "raw": {
+    "units": "m0",
+    "rev_k": 1943000,
+    "rev_prior_k": 1704000,
+    "fs_k": 1726000,
+    "fs_prior_k": 1491000,
+    "mhe_k": null,
+    "mhe_prior_k": null,
+    "im_k": 217000,
+    "im_prior_k": 213000,
+    "segop_k": 1147000,
+    "segop_prior_k": 871000,
+    "diluted_shares_k": 241900,
+    "fs_parts": {
+     "Ratings": [
+      1006000,
+      801000
+     ],
+     "Market Intelligence": [
+      516000,
+      487000
+     ],
+     "Indices": [
+      240000,
+      235000
+     ],
+     "royalty elimination": [
+      -36000,
+      -32000
+     ]
+    }
+   },
+   "sales_b": 1.943,
+   "sales_pct": 14.0,
+   "fs_pct": 15.8,
+   "mhe_pct": null,
+   "im_pct": 1.9,
+   "op_margin": 59.03,
+   "op_margin_bp": 791.7,
+   "eps_q": 3.28,
+   "eps_q_prior": 2.24,
+   "eps_pct": 46.4,
+   "diluted_shares_m": 241.9,
+   "cash_return_text": "'No new share repurchases were made in the second quarter while our existing ASR program was in place.'",
+   "next_print": "Q3 2020 print (late October)",
+   "note": "'Adjusted net income increased 37% to $822 million and adjusted diluted earnings per share increased 40% to $3.40 primarily due to revenue growth in S&P Global Ratings and reduced expenses across the Company from COVID-19 related management actions.'; Financial Services line: Ratings $1,006.0M + Market Intelligence $516.0M + Indices $240.0M less the royalty elimination $36.0M; McGraw-Hill Education, sold in 2013, is not reported (n/r)"
+  },
+  {
+   "quarter": "Q3 2020",
+   "fy": 2020,
+   "q": 3,
+   "published": "2020-10-27",
+   "source": "SP85",
+   "release": "Oct 27",
+   "im_label": "Platts",
+   "release_time": "before the open on Oct 27: 8-K accepted 2020-10-27 07:51 ET (conference call at 8:30 a.m. ET)",
+   "period_end": "2020-09-30",
+   "raw": {
+    "units": "m0",
+    "rev_k": 1846000,
+    "rev_prior_k": 1689000,
+    "fs_k": 1624000,
+    "fs_prior_k": 1477000,
+    "mhe_k": null,
+    "mhe_prior_k": null,
+    "im_k": 222000,
+    "im_prior_k": 212000,
+    "segop_k": 980000,
+    "segop_prior_k": 936000,
+    "diluted_shares_k": 241600,
+    "fs_parts": {
+     "Ratings": [
+      894000,
+      789000
+     ],
+     "Market Intelligence": [
+      530000,
+      488000
+     ],
+     "Indices": [
+      234000,
+      232000
+     ],
+     "royalty elimination": [
+      -34000,
+      -32000
+     ]
+    }
+   },
+   "sales_b": 1.846,
+   "sales_pct": 9.3,
+   "fs_pct": 10.0,
+   "mhe_pct": null,
+   "im_pct": 4.7,
+   "op_margin": 53.09,
+   "op_margin_bp": -233.0,
+   "eps_q": 1.88,
+   "eps_q_prior": 2.5,
+   "eps_pct": -24.8,
+   "diluted_shares_m": 241.6,
+   "cash_return_text": "'During the quarter, the Company returned $172 million to shareholders.'",
+   "next_print": "Q4 2020 print (early February)",
+   "note": "'Adjusted net income increased 14% to $689 million and adjusted diluted earnings per share increased 16% to $2.85 primarily due to revenue growth, productivity programs, and reduced expenses across the Company from COVID-19 related management actions.'; Financial Services line: Ratings $894.0M + Market Intelligence $530.0M + Indices $234.0M less the royalty elimination $34.0M; McGraw-Hill Education, sold in 2013, is not reported (n/r)"
+  },
+  {
+   "quarter": "Q4 2020",
+   "fy": 2020,
+   "q": 4,
+   "published": "2021-02-09",
+   "source": "SP86",
+   "release": "Feb 9",
+   "im_label": "Platts",
+   "release_time": "before the open on Feb 9: 8-K accepted 2021-02-09 07:15 ET (conference call at 8:30 a.m. ET)",
+   "period_end": "2020-12-31",
+   "raw": {
+    "units": "m0",
+    "rev_k": 1867000,
+    "rev_prior_k": 1735000,
+    "fs_k": 1644000,
+    "fs_prior_k": 1522000,
+    "mhe_k": null,
+    "mhe_prior_k": null,
+    "im_k": 223000,
+    "im_prior_k": 213000,
+    "segop_k": 848000,
+    "segop_prior_k": 880000,
+    "diluted_shares_k": 241700,
+    "fs_parts": {
+     "Ratings": [
+      881000,
+      820000
+     ],
+     "Market Intelligence": [
+      542000,
+      502000
+     ],
+     "Indices": [
+      257000,
+      233000
+     ],
+     "royalty elimination": [
+      -36000,
+      -33000
+     ]
+    }
+   },
+   "sales_b": 1.867,
+   "sales_pct": 7.6,
+   "fs_pct": 8.0,
+   "mhe_pct": null,
+   "im_pct": 4.7,
+   "op_margin": 45.42,
+   "op_margin_bp": -530.0,
+   "eps_q": 1.88,
+   "eps_q_prior": 2.2,
+   "eps_pct": -14.5,
+   "diluted_shares_m": 241.7,
+   "cash_return_text": "'The Company returned $1.8 billion to shareholders in 2020 with $1.2 billion in share repurchases and $645 million in dividends.'",
+   "next_print": "Q1 2021 print (late April)",
+   "note": "'Adjusted diluted earnings per share increased 7% to $2.71 benefiting from a 2% decrease in the average diluted shares outstanding.'; Financial Services line: Ratings $881.0M + Market Intelligence $542.0M + Indices $257.0M less the royalty elimination $36.0M; McGraw-Hill Education, sold in 2013, is not reported (n/r)",
+   "fy_actual": {
+    "fy": 2020,
+    "fy_label": "FY20",
+    "eps_normalized": 9.66,
+    "revenue_usd_b": 7.442,
+    "diluted_shares_m": 242.1,
+    "normalization_note": "FY2020 $9.66, diluted EPS as reported (SP86): the company's adjusted figure also removes deal-related amortization, which recurs (the 2016 rule)",
+    "op_margin": 52.89,
+    "pretax_margin": 43.38,
+    "pretax_margin_note": "pre-tax income $3,228M / revenue $7,442M (FY20, SP86)",
+    "sales_growth": 11.1,
+    "fs_pct": 12.1,
+    "mhe_pct": null,
+    "tax_rate": 0.215,
+    "tax_note": "provision for taxes on income $694M / pre-tax income $3,228M"
+   }
+  },
+  {
+   "quarter": "Q1 2021",
+   "fy": 2021,
+   "q": 1,
+   "published": "2021-04-29",
+   "source": "SP88",
+   "release": "Apr 29",
+   "im_label": "Platts",
+   "release_time": "before the open on Apr 29: 8-K accepted 2021-04-29 07:13 ET (conference call at 8:30 a.m. ET)",
+   "period_end": "2021-03-31",
+   "raw": {
+    "units": "m0",
+    "rev_k": 2016000,
+    "rev_prior_k": 1786000,
+    "fs_k": 1791000,
+    "fs_prior_k": 1571000,
+    "mhe_k": null,
+    "mhe_prior_k": null,
+    "im_k": 225000,
+    "im_prior_k": 215000,
+    "segop_k": 1167000,
+    "segop_prior_k": 961000,
+    "diluted_shares_k": 241600,
+    "fs_parts": {
+     "Ratings": [
+      1017000,
+      825000
+     ],
+     "Market Intelligence": [
+      539000,
+      519000
+     ],
+     "Indices": [
+      270000,
+      259000
+     ],
+     "royalty elimination": [
+      -35000,
+      -32000
+     ]
+    }
+   },
+   "sales_b": 2.016,
+   "sales_pct": 12.9,
+   "fs_pct": 14.0,
+   "mhe_pct": null,
+   "im_pct": 4.7,
+   "op_margin": 57.89,
+   "op_margin_bp": 408.0,
+   "eps_q": 3.12,
+   "eps_q_prior": 2.62,
+   "eps_pct": 19.1,
+   "diluted_shares_m": 241.6,
+   "cash_return_text": "'During the first quarter, the Company returned $186 million to shareholders in dividends.'",
+   "next_print": "Q2 2021 print (late July)",
+   "note": "'Adjusted net income increased 23% to $820 million and adjusted diluted earnings per share increased 24% to $3.39.'; Financial Services line: Ratings $1,017.0M + Market Intelligence $539.0M + Indices $270.0M less the royalty elimination $35.0M; McGraw-Hill Education, sold in 2013, is not reported (n/r)"
+  },
+  {
+   "quarter": "Q2 2021",
+   "fy": 2021,
+   "q": 2,
+   "published": "2021-07-29",
+   "source": "SP89",
+   "release": "Jul 29",
+   "im_label": "Platts",
+   "release_time": "before the open on Jul 29: 8-K accepted 2021-07-29 07:14 ET (conference call at 8:30 a.m. ET)",
+   "period_end": "2021-06-30",
+   "raw": {
+    "units": "m0",
+    "rev_k": 2106000,
+    "rev_prior_k": 1943000,
+    "fs_k": 1870000,
+    "fs_prior_k": 1726000,
+    "mhe_k": null,
+    "mhe_prior_k": null,
+    "im_k": 236000,
+    "im_prior_k": 217000,
+    "segop_k": 1240000,
+    "segop_prior_k": 1147000,
+    "diluted_shares_k": 241800,
+    "fs_parts": {
+     "Ratings": [
+      1073000,
+      1006000
+     ],
+     "Market Intelligence": [
+      555000,
+      516000
+     ],
+     "Indices": [
+      278000,
+      240000
+     ],
+     "royalty elimination": [
+      -36000,
+      -36000
+     ]
+    }
+   },
+   "sales_b": 2.106,
+   "sales_pct": 8.4,
+   "fs_pct": 8.3,
+   "mhe_pct": null,
+   "im_pct": 8.8,
+   "op_margin": 58.88,
+   "op_margin_bp": -15.3,
+   "eps_q": 3.3,
+   "eps_q_prior": 3.28,
+   "eps_pct": 0.6,
+   "diluted_shares_m": 241.8,
+   "cash_return_text": "'There were no share repurchases during the quarter due to the pending merger with IHS Markit.'",
+   "next_print": "Q3 2021 print (late October)",
+   "note": "'Adjusted net income increased 6% to $875 million and adjusted diluted earnings per share increased 6% to $3.62.'; Financial Services line: Ratings $1,073.0M + Market Intelligence $555.0M + Indices $278.0M less the royalty elimination $36.0M; McGraw-Hill Education, sold in 2013, is not reported (n/r)"
+  },
+  {
+   "quarter": "Q3 2021",
+   "fy": 2021,
+   "q": 3,
+   "published": "2021-10-26",
+   "source": "SP90",
+   "release": "Oct 26",
+   "im_label": "Platts",
+   "release_time": "before the open on Oct 26: 8-K accepted 2021-10-26 07:12 ET (conference call at 8:30 a.m. ET)",
+   "period_end": "2021-09-30",
+   "raw": {
+    "units": "m0",
+    "rev_k": 2087000,
+    "rev_prior_k": 1846000,
+    "fs_k": 1848000,
+    "fs_prior_k": 1624000,
+    "mhe_k": null,
+    "mhe_prior_k": null,
+    "im_k": 239000,
+    "im_prior_k": 222000,
+    "segop_k": 1172000,
+    "segop_prior_k": 980000,
+    "diluted_shares_k": 241700,
+    "fs_parts": {
+     "Ratings": [
+      1017000,
+      894000
+     ],
+     "Market Intelligence": [
+      570000,
+      530000
+     ],
+     "Indices": [
+      298000,
+      234000
+     ],
+     "royalty elimination": [
+      -37000,
+      -34000
+     ]
+    }
+   },
+   "sales_b": 2.087,
+   "sales_pct": 13.1,
+   "fs_pct": 13.8,
+   "mhe_pct": null,
+   "im_pct": 7.7,
+   "op_margin": 56.16,
+   "op_margin_bp": 306.9,
+   "eps_q": 3.3,
+   "eps_q_prior": 1.88,
+   "eps_pct": 75.5,
+   "diluted_shares_m": 241.7,
+   "cash_return_text": "'During the third quarter, the Company returned $186 million to shareholders in dividends.'",
+   "next_print": "Q4 2021 print (early February)",
+   "note": "'Adjusted net income increased 24% to $855 million and adjusted diluted earnings per share increased 24% to $3.54 primarily due to very strong revenue growth.'; Financial Services line: Ratings $1,017.0M + Market Intelligence $570.0M + Indices $298.0M less the royalty elimination $37.0M; McGraw-Hill Education, sold in 2013, is not reported (n/r)"
   }
  ],
  "guides": [
@@ -5084,6 +6765,362 @@
     "On a GAAP basis, diluted EPS was expected to be a range of $5.83 to $5.98 and is increased to a range of $6.19 to $6.34.",
     "Adjusted diluted EPS was expected to be a range of $6.15 to $6.30 and has been increased to a range of $6.55 to $6.70."
    ]
+  },
+  {
+   "fy": 2018,
+   "published": "2018-02-06",
+   "source": "SP69",
+   "doc": "Q4 2017 release",
+   "eps_guide": [
+    8.15,
+    8.3
+   ],
+   "eps_guide_note": "GAAP",
+   "eps_guide_amort": [
+    8.45,
+    8.6
+   ],
+   "eps_guide_amort_note": "adjusted, excluding deal-related amortization as well as one-offs",
+   "rev_words": "increase mid single-digits",
+   "quotes": [
+    "Outlook: The Company is introducing 2018 guidance with reported revenue expected to increase mid single-digits.",
+    "On a U.S. GAAP basis, diluted EPS is expected to be $8.15 to $8.30 and adjusted diluted EPS is expected to be $8.45 to $8.60."
+   ]
+  },
+  {
+   "fy": 2018,
+   "published": "2018-03-07",
+   "source": "SP71",
+   "doc": "8-K of 2018-03-06",
+   "eps_guide": [
+    7.95,
+    8.1
+   ],
+   "eps_guide_note": "GAAP, with the Kensho acquisition",
+   "eps_guide_amort": [
+    8.45,
+    8.6
+   ],
+   "eps_guide_amort_note": "adjusted, excluding deal-related amortization as well as one-offs",
+   "quotes": [
+    "As a result of this acquisition, S&P Global is reducing its 2018 GAAP diluted EPS guidance by approximately twenty cents to a range of $7.95 - $8.10 and we are not changing our 2018 adjusted diluted EPS guidance of $8.45 to $8.60."
+   ]
+  },
+  {
+   "fy": 2018,
+   "published": "2018-04-26",
+   "source": "SP72",
+   "doc": "Q1 2018 release",
+   "eps_guide": [
+    7.95,
+    8.1
+   ],
+   "eps_guide_note": "GAAP",
+   "eps_guide_amort": [
+    8.45,
+    8.6
+   ],
+   "eps_guide_amort_note": "adjusted, excluding deal-related amortization as well as one-offs",
+   "quotes": [
+    "the Company reduced its GAAP diluted EPS guidance by approximately twenty cents to a range of $7.95 to $8.10 and left its adjusted diluted EPS unchanged with a range of $8.45 to $8.60. Today, the Company reaffirms this guidance."
+   ]
+  },
+  {
+   "fy": 2018,
+   "published": "2018-05-24",
+   "source": "SP73",
+   "doc": "8-K of 2018-05-24",
+   "eps_guide": [
+    7.75,
+    7.9
+   ],
+   "eps_guide_note": "GAAP, after the litigation settlement",
+   "eps_guide_amort": [
+    8.45,
+    8.6
+   ],
+   "eps_guide_amort_note": "adjusted, excluding deal-related amortization as well as one-offs",
+   "op_margin_guide": [
+    44,
+    45
+   ],
+   "op_margin_base": 43.05,
+   "op_margin_base_note": "FY17 GAAP operating margin: operating profit $2,610M / revenue $6,063M (the FY2017 10-K, SP70; the release states no base)",
+   "quotes": [
+    "The Company’s GAAP operating profit margin guidance is updated from 45% - 46% to a range of 44% - 45% and its GAAP diluted earnings per share guidance is updated from $7.95 - $8.10 to a range of $7.75 - $ 7.90.",
+    "Adjusted diluted earnings per share guidance with a range of $8.45 to $8.60 remains unchanged."
+   ]
+  },
+  {
+   "fy": 2018,
+   "published": "2018-07-26",
+   "source": "SP74",
+   "doc": "Q2 2018 release",
+   "eps_guide": [
+    7.75,
+    7.9
+   ],
+   "eps_guide_note": "GAAP",
+   "eps_guide_amort": [
+    8.45,
+    8.6
+   ],
+   "eps_guide_amort_note": "adjusted, excluding deal-related amortization as well as one-offs",
+   "quotes": [
+    "Outlook: The Company is maintaining its GAAP diluted EPS guidance in a range of $7.75 to $7.90 and its adjusted diluted EPS guidance in a range of $8.45 to $8.60."
+   ]
+  },
+  {
+   "fy": 2018,
+   "published": "2018-10-25",
+   "source": "SP75",
+   "doc": "Q3 2018 release",
+   "eps_guide": [
+    7.77,
+    7.87
+   ],
+   "eps_guide_note": "GAAP",
+   "eps_guide_amort": [
+    8.5,
+    8.6
+   ],
+   "eps_guide_amort_note": "adjusted, excluding deal-related amortization as well as one-offs",
+   "quotes": [
+    "Outlook: The Company is tightening its GAAP diluted EPS guidance from a range of $7.75 to $7.90 to a new range of $7.77 to $7.87 and its adjusted diluted EPS guidance from a range of $8.45 to $8.60 to a new range of $8.50 to $8.60."
+   ]
+  },
+  {
+   "fy": 2019,
+   "published": "2019-02-07",
+   "source": "SP76",
+   "doc": "Q4 2018 release",
+   "eps_guide": [
+    8.5,
+    8.7
+   ],
+   "eps_guide_note": "GAAP",
+   "eps_guide_amort": [
+    8.95,
+    9.15
+   ],
+   "eps_guide_amort_note": "adjusted, excluding deal-related amortization as well as one-offs",
+   "rev_words": "increase mid single-digits",
+   "quotes": [
+    "Outlook: The Company is introducing 2019 guidance with reported revenue expected to increase mid single-digits.",
+    "On a U.S. GAAP basis, diluted EPS is expected to be in the range of $8.50 to $8.70 and adjusted diluted EPS is expected to be in the range of $8.95 to $9.15."
+   ]
+  },
+  {
+   "fy": 2019,
+   "published": "2019-05-02",
+   "source": "SP78",
+   "doc": "Q1 2019 release",
+   "eps_guide": [
+    8.16,
+    8.36
+   ],
+   "eps_guide_note": "GAAP, with the U.S. pension plan charge",
+   "eps_guide_amort": [
+    8.95,
+    9.15
+   ],
+   "eps_guide_amort_note": "adjusted, excluding deal-related amortization as well as one-offs",
+   "quotes": [
+    "Outlook: The Company’s 2019 GAAP diluted EPS guidance is changed from a range of $8.50 to $8.70 to a new range of $8.16 to $8.36 to reflect the non-cash charge associated with the U.S. pension plan."
+   ]
+  },
+  {
+   "fy": 2019,
+   "published": "2019-08-01",
+   "source": "SP79",
+   "doc": "Q2 2019 release",
+   "eps_guide": [
+    8.2,
+    8.35
+   ],
+   "eps_guide_note": "GAAP",
+   "eps_guide_amort": [
+    9.1,
+    9.25
+   ],
+   "eps_guide_amort_note": "adjusted, excluding deal-related amortization as well as one-offs",
+   "quotes": [
+    "Outlook: The Company’s 2019 GAAP diluted EPS guidance is increased from a range of $8.16 to $8.36 to a new range of $8.20 to $8.35",
+    "Adjusted diluted EPS guidance is increased from a range of $8.95 to $9.15 to a new range of $9.10 to $9.25."
+   ]
+  },
+  {
+   "fy": 2019,
+   "published": "2019-10-29",
+   "source": "SP80",
+   "doc": "Q3 2019 release",
+   "eps_guide": [
+    8.56,
+    8.66
+   ],
+   "eps_guide_note": "GAAP, with divestiture gains",
+   "eps_guide_amort": [
+    9.3,
+    9.4
+   ],
+   "eps_guide_amort_note": "adjusted, excluding deal-related amortization as well as one-offs",
+   "quotes": [
+    "Outlook: The Company’s 2019 GAAP diluted EPS guidance is increased from a range of $8.20 to $8.35 to a new range of $8.56 to $8.66 due to gains on recent divestitures, increased revenue and operating profit margin, and lower corporate unallocated expense."
+   ]
+  },
+  {
+   "fy": 2020,
+   "published": "2020-02-06",
+   "source": "SP81",
+   "doc": "Q4 2019 release",
+   "eps_guide": [
+    10.0,
+    10.2
+   ],
+   "eps_guide_note": "GAAP",
+   "eps_guide_amort": [
+    10.4,
+    10.6
+   ],
+   "eps_guide_amort_note": "adjusted, excluding deal-related amortization as well as one-offs",
+   "rev_words": "increase mid to high single-digits",
+   "quotes": [
+    "Outlook: The Company is introducing 2020 guidance with reported revenue expected to increase mid to high single-digits.",
+    "On a U.S. GAAP basis, diluted EPS is expected to be in the range of $10.00 to $10.20 and adjusted diluted EPS is expected to be in the range of $10.40 to $10.60."
+   ]
+  },
+  {
+   "fy": 2020,
+   "published": "2020-04-28",
+   "source": "SP83",
+   "doc": "Q1 2020 release",
+   "eps_guide": [
+    9.5,
+    9.7
+   ],
+   "eps_guide_note": "GAAP, the baseline COVID-19 scenario",
+   "eps_guide_amort": [
+    9.95,
+    10.15
+   ],
+   "eps_guide_amort_note": "adjusted, excluding deal-related amortization as well as one-offs",
+   "note": "the scenarios behind the guide are on the earnings slides, not in a filing",
+   "quotes": [
+    "GAAP diluted EPS guidance is decreased from a range of $10.00 to $10.20 to a new range of $9.50 to $9.70.",
+    "Adjusted diluted EPS guidance is decreased from a range of $10.40 to $10.60 to a new range of $9.95 to $10.15."
+   ]
+  },
+  {
+   "fy": 2020,
+   "published": "2020-07-28",
+   "source": "SP84",
+   "doc": "Q2 2020 release",
+   "eps_guide": [
+    10.25,
+    10.45
+   ],
+   "eps_guide_note": "GAAP",
+   "eps_guide_amort": [
+    10.75,
+    10.95
+   ],
+   "eps_guide_amort_note": "adjusted, excluding deal-related amortization as well as one-offs",
+   "quotes": [
+    "GAAP diluted EPS guidance is increased from a range of $9.50 to $9.70 to a new range of $10.25 to $10.45.",
+    "Adjusted diluted EPS guidance is increased from a range of $9.95 to $10.15 to a new range of $10.75 to $10.95."
+   ]
+  },
+  {
+   "fy": 2020,
+   "published": "2020-10-27",
+   "source": "SP85",
+   "doc": "Q3 2020 release",
+   "eps_guide": [
+    10.0,
+    10.15
+   ],
+   "eps_guide_note": "GAAP, with the debt tender premium",
+   "eps_guide_amort": [
+    11.3,
+    11.45
+   ],
+   "eps_guide_amort_note": "adjusted, excluding deal-related amortization as well as one-offs",
+   "quotes": [
+    "Outlook: Due to the debt tender premium and fees incurred in the third quarter, GAAP diluted EPS guidance is decreased from a range of $10.25 to $10.45 to a new range of $10.00 to $10.15."
+   ]
+  },
+  {
+   "fy": 2021,
+   "published": "2021-02-09",
+   "source": "SP86",
+   "doc": "Q4 2020 release",
+   "eps_guide_amort": [
+    12.25,
+    12.45
+   ],
+   "eps_guide_amort_note": "adjusted, stand-alone, excluding merger expenses and deal-related amortization",
+   "rev_words": "increase mid single-digits",
+   "quotes": [
+    "Outlook: The Company is not providing 2021 GAAP guidance because given the inherent uncertainty around the merger, management cannot reliably predict all of the necessary components of GAAP measures.",
+    "2021 reported revenue is expected to increase mid single-digits.",
+    "Adjusted diluted EPS is expected to be in the range of $12.25 to $12.45."
+   ]
+  },
+  {
+   "fy": 2021,
+   "published": "2021-04-29",
+   "source": "SP88",
+   "doc": "Q1 2021 release",
+   "eps_guide_amort": [
+    12.55,
+    12.75
+   ],
+   "eps_guide_amort_note": "adjusted, stand-alone, excluding merger expenses and deal-related amortization",
+   "rev_words": "increase mid single-digits",
+   "quotes": [
+    "Outlook: The Company is not providing 2021 GAAP guidance because given the inherent uncertainty around the merger, management cannot reliably predict all of the necessary components of GAAP measures.",
+    "2021 reported revenue is expected to increase mid single-digits.",
+    "Adjusted diluted EPS guidance has been increased by $0.30 to a new range of $12.55 to $12.75."
+   ]
+  },
+  {
+   "fy": 2021,
+   "published": "2021-07-29",
+   "source": "SP89",
+   "doc": "Q2 2021 release",
+   "eps_guide_amort": [
+    12.95,
+    13.15
+   ],
+   "eps_guide_amort_note": "adjusted, stand-alone, excluding merger expenses and deal-related amortization",
+   "rev_words": "increase high single-digits",
+   "quotes": [
+    "Outlook: The Company is not providing 2021 GAAP guidance because given the inherent uncertainty around the merger, management cannot reliably predict all of the necessary components of GAAP measures.",
+    "2021 reported revenue is expected to increase high single-digits.",
+    "Adjusted diluted EPS guidance has been increased by $0.40 to a new range of $12.95 to $13.15."
+   ]
+  },
+  {
+   "fy": 2021,
+   "published": "2021-10-26",
+   "source": "SP90",
+   "doc": "Q3 2021 release",
+   "eps_guide": [
+    12.5,
+    12.65
+   ],
+   "eps_guide_note": "GAAP",
+   "eps_guide_amort": [
+    13.5,
+    13.65
+   ],
+   "eps_guide_amort_note": "adjusted, stand-alone, excluding merger expenses and deal-related amortization",
+   "rev_words": "increase low double-digits",
+   "quotes": [
+    "2021 reported revenue is expected to increase low double-digits.",
+    "GAAP EPS guidance is expected to be in a range of $12.50 to $12.65.",
+    "Adjusted diluted EPS guidance has been increased by $0.50 to $0.55 to a new range of $13.50 to $13.65."
+   ]
   }
  ],
  "dividends": [
@@ -5152,6 +7189,30 @@
    "source": "SP64",
    "quarterly": 0.41,
    "note": "$0.41 quarterly ('The quarterly dividend will increase 14% from $0.36 to $0.41 per share.')"
+  },
+  {
+   "published": "2018-02-06",
+   "source": "SP69",
+   "quarterly": 0.5,
+   "note": "$0.50 quarterly ('The quarterly dividend will increase 22% from $0.41 to $0.50 per share.')"
+  },
+  {
+   "published": "2019-02-07",
+   "source": "SP76",
+   "quarterly": 0.57,
+   "note": "$0.57 quarterly ('The quarterly dividend will increase from $0.50 to $0.57 per share.')"
+  },
+  {
+   "published": "2020-02-06",
+   "source": "SP81",
+   "quarterly": 0.67,
+   "note": "$0.67 quarterly ('The quarterly dividend will increase from $0.57 to $0.67 per share.')"
+  },
+  {
+   "published": "2021-02-09",
+   "source": "SP86",
+   "quarterly": 0.77,
+   "note": "$0.77 quarterly ('The quarterly dividend will increase from $0.67 to $0.77 per share.')"
   }
  ],
  "events": [],

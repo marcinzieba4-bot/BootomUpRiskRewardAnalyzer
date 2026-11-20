@@ -53,6 +53,13 @@ LOW rule), and its later words leave the range standing; the Financial Services 
 row once it is inside Market and Commodities Intelligence); a year-ago loss measures EPS growth on its absolute value (the CAT rule);
 S&P Global Inc. from the 8-K of 2016-04-29 (dated 2016-05-02) and NYSE: SPGI from the S-3 of 2016-06-29 (dated 2016-06-30).
 
+From 2018 (retro/README.md, "SPGI 2018-2021"): GAAP every year (the adjusted figures remove recurring amortization), FY2017 $5.78 with the
+Tax Act charge in; the FY2018-FY2020 GAAP ranges are the guides, and FY2021 has none until the Q3 2021 release (FY20's $9.66 stands);
+the Investor Day 8-K of 2018-05-24 guides the FY2018 GAAP operating margin at 44-45%, the guided margin step from FY2017's 43.05%
+('op_margin_guide'); Ratings, Market Intelligence, Platts and Indices from the Q1 2018 release, the Financial Services line their
+Ratings, Market Intelligence and Indices less the royalty elimination; Corporate revenue (Kensho, 2018) is outside every segment
+('other_k' in the print identity).
+
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
 is the first trading day after it. Every earnings 8-K of 2007-2009 was accepted before the open (06:59-07:58 ET; the call at 8:30 a.m.).
 
@@ -63,6 +70,7 @@ Usage
   python3 retro/build_spgi.py --weekly 2009-01-05 2009-12-31
   python3 retro/build_spgi.py --weekly 2010-01-04 2013-12-31
   python3 retro/build_spgi.py --weekly 2014-01-06 2017-12-31
+  python3 retro/build_spgi.py --weekly 2018-01-01 2021-12-31
   python3 retro/build_spgi.py 2008-01-25
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/SPGI/<AS_OF>
 """
@@ -92,7 +100,8 @@ RULE_T_KEYS = {"fs": (1, False), "mhe": (1, False), "sales": (1, False), "eps": 
                "op_margin": (10, False)}           # (rounding unit, lower is better)
 GUIDE_KEYS = {"fy", "published", "source", "doc", "quotes", "words", "eps_guide", "eps_guide_note", "eps_growth", "eps_growth_base",
               "eps_growth_base_note", "rev_guide_pct", "seg_words", "rev_words", "note",
-              "eps_guide_amort", "eps_guide_amort_note"}   # from 2016: an adjusted range that also removes recurring amortization (no field)
+              "eps_guide_amort", "eps_guide_amort_note",   # from 2016: an adjusted range that also removes recurring amortization (no field)
+              "op_margin_guide", "op_margin_base", "op_margin_base_note"}   # (2018) a consolidated operating margin guide and its base
 PRINT_TOL = {None: 2, "k": 2, "m1": 150, "m0": 1500}   # segment sums, $ thousands: the release's own rounding (thousands, $0.1M, $1M)
 OLD_SEGMENTS = "Information & Media"                     # the third segment of the 2007-2009 tables (spgi_engine.py.tmpl)
 
@@ -147,8 +156,9 @@ def check_print(p):
     r = p["raw"]
     tol = PRINT_TOL[r.get("units")]
     mhe, mhe0 = (r["mhe_k"], r["mhe_prior_k"]) if r["mhe_k"] is not None else (0, 0)   # None: not reported (discontinued)
-    assert abs(r["fs_k"] + mhe + r["im_k"] - r["rev_k"]) <= tol, (p["quarter"], "segments sum to revenue")
-    assert abs(r["fs_prior_k"] + mhe0 + r["im_prior_k"] - r["rev_prior_k"]) <= tol, (p["quarter"], "year-ago segments")
+    oth, oth0 = r.get("other_k", 0), r.get("other_prior_k", 0)   # (2018-2019) Corporate revenue, outside every segment
+    assert abs(r["fs_k"] + mhe + r["im_k"] + oth - r["rev_k"]) <= tol, (p["quarter"], "segments sum to revenue")
+    assert abs(r["fs_prior_k"] + mhe0 + r["im_prior_k"] + oth0 - r["rev_prior_k"]) <= tol, (p["quarter"], "year-ago segments")
     if "fs_parts" in r:                                # the Financial Services line from the release's own rows
         for k, f in ((0, "fs_k"), (1, "fs_prior_k")):
             assert abs(sum(v[k] for v in r["fs_parts"].values()) - r[f]) <= 2, (p["quarter"], f, "Financial Services parts")
@@ -301,6 +311,21 @@ def build(as_of, facts, raw, spx, engines, out):
         fy_rev_label = f"no {fy_now} revenue guide in numbers, {latest['quarter']} growth, applied to the year"
         fwd_label = f"no {fy_now} revenue guide in numbers, {latest['quarter']} growth"
         fwd_short, fwd_period = f"{latest['quarter'][:2]} revenue", latest["quarter"]
+    margin_guided = False                          # no consolidated margin guide in numbers: no guided step
+    fy_margin_base = h["prev_fy_op_margin"]
+    prev_margin, prev_margin_note, margin_name = h["prev_fy_op_margin"], f'segment operating margin, {h["prev_fy_op_margin_note"]}', h["margin_signal_name"]
+    # (SPGI 2018-2021) a consolidated operating margin guide in numbers is method r2's guided margin step, measured from the base on the
+    # guide's own basis (the latest guide that states it, the WMT rule); the margin signal is then the guided step (the engine's rule)
+    gm = stated("op_margin_guide")
+    if gm:
+        margin_guided = True
+        fy_margin_base = round(sum(gm["op_margin_guide"]) / 2, 2)
+        prev_margin, prev_margin_note = gm["op_margin_base"], gm["op_margin_base_note"]
+        margin_name = "Guided operating margin step (GAAP)"
+        lo, hi = gm["op_margin_guide"]
+        bits_margin = [f"GAAP operating margin {lo:g}-{hi:g}% ({gm['doc']}; the step from {gm['op_margin_base']:.2f}%)"]
+    else:
+        bits_margin = []
     if guides:
         bits = ([f"revenue {rev_fig}"] if gr else []) + \
                ([f"'{gs['seg_words']}' (components: no total is derived)"] if gs and not gr else []) + \
@@ -310,13 +335,11 @@ def build(as_of, facts, raw, spx, engines, out):
                ([f"EPS {eps_fig}" + (f" ({ge['eps_guide_note']})" if ge.get("eps_guide_note") else "")] if ge else
                 [] if ga else ["no EPS guide in numbers"]) + \
                ([f"adjusted EPS {amort_fig} ({ga['eps_guide_amort_note']}: no field, amortization recurs)"] if ga else []) + \
-               ([f"'{gw['words']}' (words or a one-sided bound: no field)"] if gw else []) + \
+               ([f"'{gw['words']}' (words or a one-sided bound: no field)"] if gw else []) + bits_margin + \
                [g["note"] for g in guides[-1:] if g.get("note")]
         guide_text = f"{fy_now} guide ({', '.join(dict.fromkeys(x['doc'] for x in guides))}): " + "; ".join(bits)
     else:
         guide_text = f"{fy_now}: no guide in numbers yet"
-    margin_guided = False                          # no consolidated margin guide in numbers: no guided step
-    fy_margin_base = h["prev_fy_op_margin"]
 
     # ── dividend: the latest declared rate (the latest declaration public on AS_OF, else the vintage's) ──
     divs = [(d["published"], d["quarterly"] * 4, d["note"], d["source"]) for d in facts["dividends"] if d["published"] <= as_of]
@@ -459,12 +482,12 @@ EPS_NORM      = {R({y: round(v, 4) for y, v in eps_hist.items()})}   # {h["norma
 REVENUE_HIST  = {R({y: round(v, 6) for y, v in rev.items()})}   # revenue, USD bn
 SHARES_HIST   = {R({y: round(v, 3) for y, v in shares.items()})}   # diluted, millions
 FY_E, FY_E_S, FY_H, FY_PREV = {R(fy_e)}, {R(fy_e_s)}, {R(fy_h)}, {R(h["fy_label"])}
-PREV_FY_MARGIN = {h["prev_fy_op_margin"]}   # segment operating margin, {h["prev_fy_op_margin_note"]}
+PREV_FY_MARGIN = {prev_margin}   # {prev_margin_note}
 CHECK_PRETAX_MARGIN = {h["prev_fy_pretax_margin"]}   # {h["prev_fy_pretax_margin_note"]}, for the EPS check
 TAX_RATE      = {h["tax_rate"]}   # {h["tax_note"]}
 CONS_DIVIDEND = {dividend:.2f}   # {dividend_note}
 VOL_DIVIDEND  = CONS_DIVIDEND
-MARGIN_SIGNAL_NAME = {R(h["margin_signal_name"])}
+MARGIN_SIGNAL_NAME = {R(margin_name)}
 
 # ── FACTS: latest print ({latest["source"]}, published {latest["published"]}) and {fy_now} guide ──
 LATEST          = {R({k: latest.get(k) for k in latest_keys})}
@@ -474,7 +497,7 @@ EPS_LABEL       = {R(eps_label)}
 FWD_GUIDE       = {R(tuple(fwd))}   # {fwd_kind}
 FWD_GUIDE_LABEL, FWD_PERIOD, FWD_BASIS_SHORT = {R(fwd_label)}, {R(fwd_period)}, {R(fwd_short)}
 GUIDE_TEXT      = {R(guide_text)}
-MARGIN_GUIDED   = {margin_guided}   # False: no consolidated margin guide in numbers, so no guided step; the signal uses the latest quarter's change
+MARGIN_GUIDED   = {margin_guided}   # {"True: the consolidated operating margin guide's step from its base; the signal is the guided step" if margin_guided else "False: no consolidated margin guide in numbers, so no guided step; the signal uses the latest quarter's change"}
 FY_MARGIN_BASE  = {fy_margin_base}
 FY_REVENUE_B    = {fy_rev_b:.2f}
 FY_REVENUE_LABEL = {R(fy_rev_label)}

@@ -23,7 +23,7 @@ touching either directory.
   outcomes or findings enters another's models. UNP (2008-2026 so far), LOW (2008-2026 so far), AAPL (2008-2026 so far),
   NKE (2008-2026 so far), AVGO (from its 2009-08-06 listing to 2026-10-30 so far), PEP (2008 to 2026-10-30 so far), MSFT
   (2008 to 2026-10-30 so far), XOM (2008 to 2026-10-30 so far), SHW (2008 to 2026-11-06 so far), WMT (2008 to 2026-11-06 so far), RCL (2008 to 2026-11-06 so far), MAR (2008 to 2026-11-03 so far), BKR (2008 to 2017-06-30, then 2019-02-01 to 2026-11-06 so far), PFE (2008 to 2026-11-04 so far), CMCSA (2008 to 2026-11-06 so far), CAT (2008 to 2026-11-06 so far), BMY (2008 to 2026-11-06 so far), NVDA (2008 to 2026-11-06 so far), F (2008-01-04 to 2026-11-06 so far; 2022-01-07 onward was built first at the owner's request, and dates before 2022 are an early era with its
-  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far) and SPGI (2008-01-04 to 2017-12-29 so far) sit in `staging/retrospective/` until the owner adds
+  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far) and SPGI (2008-01-04 to 2021-12-31 so far) sit in `staging/retrospective/` until the owner adds
   them to the archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM", "SHW", "WMT", "RCL", "MAR", "BKR", "PFE", "CMCSA", "CAT",
   "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG", "JPM", "V", "SPGI"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py`, `mu_signal_model.py`, `v_signal_model.py` and `spgi_signal_model.py` (other branches) files
   and today's profiles in `data/business_profiles.json` (NVDA's, SO's, V's and SPGI's included) are 2026 analyses: never inputs to a retrospective. AVGO did not trade
@@ -217,5 +217,11 @@ touching either directory.
   on its absolute value (the CAT rule); S&P Global Inc. from 2016-05-02 and NYSE: SPGI from the S-3 of 2016-06-29 (dated 2016-06-30);
   the 2007-2008 Education seam sets BEAR on every date (the batch's largest call); built in a new session without opening the 2008-2013
   outcomes or findings (retro/README.md, "SPGI 2014-2017").
+  From 2018: GAAP every year (FY17 $5.78 with the Tax Act charge, FY18 $7.73, FY19 $8.60, FY20 $9.66); the GAAP ranges are the guides
+  (the Kensho and Investor Day 8-Ks of 2018 included), and FY2021 has none until the Q3 2021 release, so FY20's $9.66 stands to 2021-10-22;
+  the Investor Day's FY2018 GAAP operating margin guide (44-45%) is method r2's guided margin step from the FY2017 10-K's 43.05%
+  (`op_margin_guide`); four segments from Q1 2018, the Financial Services line their Ratings, Market Intelligence and Indices, Corporate
+  revenue (Kensho) outside it (`other_k`); the Education seam leaves BEAR on 2018-02-12, after which BEAR is GAAP 2016-2017's -27.2%/yr;
+  RICH on 206 of 209 dates; decided in the session that scored 2014-2017, disclosed (retro/README.md, "SPGI 2018-2021").
 - **Never use the owner's personal email** in request headers to external
   services (SEC asks for a contact in the User-Agent).

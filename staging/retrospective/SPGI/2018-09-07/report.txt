@@ -1,0 +1,152 @@
+
+════════════════════════════════════════════════════════════════════════
+  SPGI  ·  S&P Global Inc.  ·  $206.88  ·  RETROSPECTIVE as of 2018-09-07
+  Signal: ✕ AVOID   Ratio B: 7.05x   Adj gap: -1.10  [OVERVALUED]
+  Point-in-time: 18 sources, latest published 2018-09-07; latest print Q2 2018 (Jul 26)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2018E revenue, USD bn  →  FY2020E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                      FY2018E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Ratings                   $     3.1  $   3.1  $   3.5      +0.0      +0.4
+    +17.9% revenue in FY17
+  Market and Commodities I  $     2.6  $   2.6  $   2.9      +0.0      +0.3
+    -5.1% revenue in FY17
+  Indices                   $     0.8  $   0.8  $   0.9      +0.0      +0.1
+    +14.7% revenue in FY17
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $     6.5  $   6.5  $   7.3      +0.0      +0.8
+  FY2018E = FY17 $6.06B × (1 + 6.5%: no FY18 revenue guide in numbers, Q2 2018 growth, applied to the year); split pro rata to FY17 revenue by segment (SP70)
+  Q2 2018 (Jul 26): revenue $1.61B +6.6%; Financial Services +6.2%; Education n/r; Platts +6.8%;
+  segment operating margin 45.43% (-122.1bp); diluted EPS $1.82 vs $1.62 (+12.3%)
+  Financial Services revenue $1,399.0M against $1,317.0M a year earlier (+6.2%), McGraw-Hill Education not reported, Platts $205.0M (+6.8%), as the release's segment table shows them; 'Adjusted net income increased 23% to $549 million and adjusted diluted earnings per share increased 26% to $2.17.'; Financial Services line: Ratings $775.0M + Market Intelligence $447.0M + Indices $209.0M less the royalty elimination $32.0M; Corporate revenue $5.0M ($0.0M a year earlier), the release's own row, is in neither the Financial Services line nor the third segment; McGraw-Hill Education, sold in 2013, is not reported (n/r)
+  FY18 guide (Q4 2017 release, 8-K of 2018-03-06, Q1 2018 release, 8-K of 2018-05-24, Q2 2018 release): revenue growth in words, 'increase mid single-digits' (no field); EPS $7.75-7.90 (GAAP); adjusted EPS $8.45-8.60 (adjusted, excluding deal-related amortization as well as one-offs: no field, amortization recurs); GAAP operating margin 44-45% (8-K of 2018-05-24; the step from 43.05%)
+
+  FY2018E EPS check:  $6.5B × 40.6% pre-tax × (1−33.4%) ÷ 0.253B  =  $6.94  (FY2018E EPS, guide midpoint (GAAP))
+  FY2020E BEAR check: $6.5B × 40.6% ÷ 0.242B  =  $7.27  (scenario $4.15)
+  FY2020E BULL check: $7.3B × 41.0% ÷ 0.242B  =  $8.25  (scenario $10.15)
+  Every 1pp of pre-tax margin ≈ $0.17 EPS ≈ $3/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Financial Services revenue growth    -7.0%    ≥4.0%   ≥14.0%   ≥18.0%     +6.2%  ◦ BASE  ██░░
+  Education revenue growth           -16.0%   ≥-6.0%    ≥5.0%   ≥23.0%       n/r  ◦ BASE  ██░░
+  Revenue growth                      +1.0%    ≥4.0%    ≥7.0%   ≥15.0%     +6.6%  ◦ BASE  ██░░
+  Diluted EPS growth                 -98.0%  ≥-43.0%   ≥13.0%   ≥53.0%    +12.3%  ◦ BASE  ██░░
+  Guided operating margin step (GAAP)  -970.0bp  ≥-440.0bp  ≥90.0bp  ≥460.0bp  +145.0bp  ▲ BULL  ███░
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.15 / 4.00
+  Market composite:   3.14 / 4.00  (back-solved from $207 + 15% hurdle)
+  SCA adjustment:    -0.01  ·  EPP-distance adj -0.10  →  Adj composite 2.04  →  Gap -1.10  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY17 revenue +7.1%, Financial Services +11.7%, Education n/r; Q2 segment operating margin 45.43% (-122.1bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 26.4x FY18E vs a 20.1x 10-yr median (95th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    -  Growth vs own history: no FY18 revenue guide in numbers, Q2 2018 growth +6.6% vs a 7.1% 9-yr median  (-0.05 × 20%  =  -0.010)
+    +  FY17 year-end cash and equivalents $2.779B, FY17 operating cash flow $2.016B, dividend $2.00 a year, repurchase of treasury shares $1,001M in 2017 (SP70)  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Financial Services revenue growth     +6.2%     -7.0%  -13.2%  Debt issuance volume falls
+  Education revenue growth               n/r    -16.0%     n/r  State adoptions and school funding sh…
+  Revenue growth                       +6.6%     +1.0%   -5.6%  Issuance, adoptions and advertising f…
+  Diluted EPS growth                  +12.3%    -98.0%  -110.3%  Costs stay up while revenue falls
+  Guided operating margin step (GAAP)  +145.0bp  -970.0bp  -1115.0bp  Segment profit falls faster than revenue
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$101  (model)  /  $58 (defined)
+  Bear probability (proxy model):  15.5%
+
+  KEY TRIGGER: Financial Services revenue growth went from +8.6% (Q1 2018) to +6.2% (Q2 2018);
+  the bear case needs a fall in debt issuance that Education (n/r now) and
+  Platts (+6.8% now) no longer offset. The 10-K ties results to the volume of securities issued and traded in the capital
+  markets, to flows into investment products, to interest rates and to volatility in the
+  financial and commodities markets.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $7.83  (FY2018E EPS, guide midpoint (GAAP))
+  Min viable P/E at panic:          18x  [median of calendar-year P/E lows: 2008 10.4x, 2009 10.0x, 2010 14.8x, 2011 18.1x, 2012 18.5x, 2013 13.3x, 2014 18.6x, 2015 18.9x, 2016 10.2x, 2017 18.8x, 2018 21.3x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $141/share
+  Current $207 vs Updated EPP $141:  +47%  ⚠ far above floor — large drawdown room
+  Bear $58 vs Updated EPP $141:  -59%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Financial Services revenue growth             4.0       -2.2   BASE floor (vs +6 now)
+  Education revenue growth                    -6.0        n/r   BASE floor (not reported now)
+  Revenue growth                               4.0       -2.6   BASE floor (vs +7 now)
+  Diluted EPS growth                         -43.0      -55.3   BASE floor (vs +12 now)
+  Guided operating margin step (GAAP)          -440.0     -585.0   BASE floor (vs +145 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $7.83 × (1+10.2%)² = $9.50
+  At 20x P/E (conservative):  $190/share
+  + Cumul. dividends (2yr):  +$4.12/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $190  (▼17 from $207)
+  Conservative total return:  -6% over 2yr  = -3%/yr
+
+  10.2% EPS growth is what is left once the premium multiple (26.4x)
+  mean-reverts to 20x. Breakeven at 20x needs FY2020E EPS of $10.14,
+  i.e. 13.8%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $150.34  –  $217.31  (at 84th pct of range)
+  Annual dividend:      $2.00/share  (yield 1.0%)
+  Realized vol (1yr):   19% annualized
+  Beta vs broad market: 1.14
+  1-sigma range (1yr):  $167  –  $247  ($207 ± 19%)
+  2-sigma range (1yr):  $127  –  $287
+  ────────────────────────────────────────────────────────────
+  Bear $58 requires:  ~3.7σ price move  (unusual — requires fundamental break)
+  An information services company (ratings, education, business information) with a 1.1 beta: the stock is +36% off its September
+  low while Financial Services revenue growth went from +8.6% (Q1 2018) to +6.2% (Q2 2018).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        4.15  14.0x  $     58    15.5%      4.0%   +11.5pp  EPS -27.2%/yr (worst year FY08-FY17, capped at 0%); P/E to its 10th pct
+  BASE        9.85  20.1x  $    198    54.1%     13.9%   +40.2pp  EPS +12.2%/yr (Q2 revenue + margin + buyback); P/E at its 10-yr median
+  BULL       10.15  22.5x  $    228    25.6%     48.5%   -22.9pp  EPS +13.9%/yr (FY08-FY17 CAGR); P/E holds its 75th pct
+  XBULL      16.01  24.7x  $    395     4.8%     33.6%   -28.8pp  EPS +43.1%/yr (best 2-yr run FY08-FY17); P/E at its 90th pct
+
+  Proxy EV (2yr): $193  /  Market EV: $273  /  Current: $207
+  Conservative EV (2yr, ④): $190 + $4.12 divs = $194 total value
+  Downside (→ Bear $58): 72.0%   Upside (→ Bull $228): 10.2%   Ratio B 7.05x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $207 the market needs $274 in two years —
+  above the BULL case. That is a market composite of 3.14 against a model
+  read of 2.04: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       7.05x     +47%    -1.10  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     3.08x     +47%    -0.81  OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx     +47%    -1.30  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          5.22x     +47%    -1.04  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                          9.98x     +47%    -1.16  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             7.05x     +47%    -0.80  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 7.05x     +26%    -1.00  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    7.05x     +47%    -0.91  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 2018 print (late October) — the next read on Financial Services revenue (+6.2% now) and the guide
+  (2) Segment operating margin — -122.1bp in Q2 2018: costs against the ratings mix, what must hold if revenue does not
+  (3) FY18 EPS guide $7.75-7.90 (Q2 2018 release): the company's own read of the year
+  (4) A FY18 consolidated revenue guide in numbers — none yet (revenue growth in words only)
+  (5) Capital return at 26x — 'During the second quarter, the Company returned $126 million to shareholders in dividends.': management's own read of the multiple
+  ✕ AVOID  |  EPP floor $141  |  ADD below ~$168  |  TRIM above $228
+════════════════════════════════════════════════════════════════════════
+

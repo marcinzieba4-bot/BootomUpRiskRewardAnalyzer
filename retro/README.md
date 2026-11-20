@@ -21949,7 +21949,7 @@ Judgement calls that could carry hindsight:
 
 The hindsight results are in `staging/retrospective/V/FINDINGS.md` ("2022-2026"): hypotheses, never inputs.
 
-## SPGI (The McGraw-Hill Companies): the twenty-ninth ticker, in staging, 2008-2017
+## SPGI (The McGraw-Hill Companies): the twenty-ninth ticker, in staging, 2008-2021
 
 The SPGI series is built apart from the other twenty-eight and shares nothing with them but the machinery: its own fact sheet
 (`retro/facts/SPGI.json`), builder (`retro/build_spgi.py`, the CAT builder with segment revenue signals, EPS guides as ranges or as growth on
@@ -22547,6 +22547,148 @@ Judgement calls that could carry hindsight:
 - DURABLE, and the live themes read as out of scope (label only);
 - the filings listed above as not read: a guide in an unread passage would be missed, though every release outlook and every 8-K's items
   were read.
+
+The hindsight results are in `staging/retrospective/SPGI/FINDINGS.md`: hypotheses, never inputs.
+
+### SPGI 2018-2021: GAAP every year, the GAAP ranges as the guides, a guided margin step in 2018, four segments, no FY2021 GAAP guide until October, the seam leaves BEAR
+
+209 weekly dates, 2018-01-05 to 2021-12-31, on the same method, builder, engines and rule-T thresholds. The owner asked for 2018-2021
+("same rules as before"); the code is the newest branch of the repository (its commit "SPGI retrospective: hindsight outcomes and findings
+for 2014-2017", 2026-11-20). **This batch was decided in the session that had scored 2014-2017 and written its findings** (and had read
+the 2008-2013 findings while writing them), so those outcomes were known when it was read. No decision below uses them: each applies a
+rule that existed before (the 2014-2017 SPGI amortization, words, "flat is 0", recast and Financial Services encodings, method r2's guided
+margin step, the ACN restated-base and words rules, the WMT latest-field rule) or applies the rollover rule; the readings that could still
+carry hindsight are listed at the end with how far the other reading moves.
+
+```bash
+python3 retro/build_spgi.py --weekly 2018-01-01 2021-12-31                  # 209 dates, 2018-01-05 .. 2021-12-31
+for c in 2018-02-07 2018-02-13 2018-03-08 2018-04-27 2018-05-25 2018-07-27 2018-10-26 2019-02-08 2019-02-14 2019-05-03 2019-08-02 \
+         2019-10-30 2020-02-07 2020-02-12 2020-04-29 2020-07-29 2020-10-28 2021-02-10 2021-02-11 2021-04-30 2021-07-30 2021-10-27 \
+         2022-01-01; do python3 retro/tools/firewall.py $c SPGI; done
+```
+
+Read, by the session's model directly with no delegated transcription: the 16 earnings releases of Q4 2017 to Q3 2021 (ex.99: the
+headlines and narrative, the outlook, return of capital and dividend paragraphs, the statements of income, the segment tables and the
+reconciliations); the FY2017-FY2020 10-Ks (Item 1's overview, Item 1A, Item 6, the statements, the segment notes and the dividend
+sentences, each searched for "cyclical", "crypto", "blockchain", "digital asset" and "energy transition": none is present); the Kensho
+8-K of 2018-03-06 and the Investor Day 8-K of 2018-05-24 (their exhibits); the segment-allocation recast 8-K of 2020-03-26; and every
+other 8-K of January 2018 to January 2022 by its items and exhibits. **Not read:** the 10-Qs, the proxy statements, the S-4 and the IHS
+Markit filings, the earnings slides (not filed) and the 10-Ks beyond the passages above. The source ids are `SP69`-`SP90`. 591 strings
+were checked with `verbatim.py`, each against its own filing (591/591). The fact sheet only gains facts (2,061 lines added, none
+removed). Decided on 2026-11-20, before any 2018-2021 model was built or any 2018-2021 outcome computed:
+
+- **Release timing.** Every earnings 8-K was accepted before the open (07:11-07:51 ET; the call at 8:30 a.m.), so each week is dated the
+  next trading day: 2018-02-07, 2018-04-27, 2018-07-27, 2018-10-26, 2019-02-08, 2019-05-03, 2019-08-02, 2019-10-30, 2020-02-07,
+  2020-04-29, 2020-07-29, 2020-10-28, 2021-02-10, 2021-04-30, 2021-07-30 and 2021-10-27. All four 10-Ks were accepted after the close
+  (2018-02-09 16:40, 2019-02-12 18:15, 2020-02-10 17:30 and 2021-02-09 17:08 ET) and count from the next trading day: 2018-02-12,
+  2019-02-13, 2020-02-11 and 2021-02-10. The Kensho 8-K (2018-03-06 17:52 ET) counts from 2018-03-07; the Investor Day 8-K (2018-05-24
+  08:17 ET) was before the open.
+- **History: each year from the latest filing that reports it.** The FY2017-FY2020 10-Ks' selected data agree on every shared year (no
+  restatement of revenue or EPS); earlier years keep the latest filing that reports them. 2007 leaves the decade with the FY2017 10-K, so
+  **the 2007-2008 Education seam leaves BEAR from 2018-02-12** (the Q4 2017 print's eleven-year history keeps it on 2018-02-07); the
+  2009-2010 Construction seam stays as published until 2009 leaves with the FY2019 10-K. Diluted shares of the first year from its own
+  10-K (2008's 318,687K, 2009's 313,296K, 2010's 312,220K, 2011's 304,000K), the last year's from its own 10-K.
+- **EPS: GAAP every year** (the 2016 rule, unchanged: the company's adjusted figures also remove deal-related amortization, which recurs):
+  FY2017 $5.78 (the $149 million Tax Act charge in; its listed one-offs are far under its income, so it is kept), FY2018 $7.73, FY2019
+  $8.60 and FY2020 $9.66; 2013-2015 keep the company's figures excluding only one-offs ($3.22, $3.88, $4.53). So BEAR is 2016-2017's
+  -27.2%/yr (GAAP 2016's $7.94 with the divestiture gains against 2017's $5.78) from 2018-02-12 on every date, and XBULL 2014-2016's
+  +43.1%/yr throughout.
+- **Current-FY EPS: the GAAP range's midpoint.** FY2018 $8.15-8.30 (Q4 2017), $7.95-8.10 (the Kensho 8-K: "reducing its 2018 GAAP diluted
+  EPS guidance by approximately twenty cents"; Q1 2018), $7.75-7.90 (the Investor Day 8-K, after "its final significant financial crisis
+  litigation"; Q2 2018) and $7.77-7.87 (Q3 2018); FY2019 $8.50-8.70, $8.16-8.36 (the pension charge), $8.20-8.35 and $8.56-8.66; FY2020
+  $10.00-10.20, $9.50-9.70 (the baseline COVID-19 scenario, whose alternatives are on unfiled slides), $10.25-10.45 and $10.00-10.15.
+  **FY2021: no GAAP guide until the Q3 2021 release** ("The Company is not providing 2021 GAAP guidance because given the inherent
+  uncertainty around the merger ..."), and the adjusted ranges also remove amortization and merger costs, so **FY20's $9.66 stands from
+  2021-02-10 to 2021-10-22** (the rollover rule, the 2016 encoding); $12.50-12.65 from 2021-10-27. The adjusted ranges are in the guide line.
+- **A guided margin step, once.** The Investor Day 8-K guides the FY2018 GAAP operating margin: "updated from 45% - 46% to a range of 44% -
+  45%" (the 45-46% is in no filing). A consolidated margin guide in numbers is method r2's guided margin step (the 2008-2017 SPGI margin
+  ranges were segments', components): it steps from FY2017's GAAP operating margin public on that date, 43.05% ($2,610M of $6,063M, the
+  FY2017 10-K; the release states no base, and the FY2018 10-K's restatement to $2,583M, a pension presentation change, comes later: the
+  ACN rule steps from a restated base only when the company states it), and from 2018-05-25 to 2019-02-01 the margin signal is that
+  +145bp step (the engine's rule; `op_margin_guide`, the latest guide that states it, the WMT rule).
+- **Forward revenue growth: words, so the latest quarter's growth as reported.** 2018 and 2019 "increase mid single-digits", 2020 "mid to
+  high single-digits", 2021 "mid single-digits", then "high single-digits" (Q2 2021) and "low double-digits" (Q3 2021): no field (the
+  2010-2017 rule). January 2018 still carries FY2017's 0% ("unchanged", the 2014-2017 encoding).
+- **Dividends,** each from the Q4 release that first states the rate: $0.50 (2018-02-06), $0.57, $0.67 and $0.77.
+- **Signals.** The five with their thresholds. From the Q1 2018 release the company reports four segments (Ratings, Market Intelligence,
+  Platts, Indices), so the Financial Services line is Ratings, Market Intelligence and Indices less the royalty elimination from their
+  rows (Q4 2017 still in the Market and Commodities Intelligence form, Market Intelligence from its row), and the third segment is Platts.
+  The releases' Corporate revenue (corporate center revenue, Kensho's in 2018: $5M a quarter in Q2-Q4 2018 and the year-ago quarters of
+  2019) is in neither (`other_k` in the print identity, named in the note). Quarter values as reported (the Q4 2017 Tax Act charge: EPS
+  -50.2%, and its lapping in Q4 2018: +99.0%). The 8-K of 2020-03-26 recasts the segments' technology-expense allocation only ("There was
+  no impact on the Company's historical consolidated ... statements of income"): a segment recast adds nothing (the ACN and MSFT rule).
+- **Durability: DURABLE, risk 2**, on each 10-K's own words (no 10-K calls anything cyclical). The themes live on these dates are scoped to
+  other businesses: CRYPTO (from 2020-10-21) to payments networks, banks, exchanges and remittance, which no 10-K of these years ties to
+  the company (none mentions crypto, blockchain or digital assets), EV to powertrains, parts and fuel retail, ENERGY_TRANSITION to
+  reserves and refining, the rest as in 2014-2017; the watch list stays empty.
+- **Adds nothing:** the IHS Markit merger agreement and announcement (2020-11-30: accretion "by the end of the second full year
+  post-closing" and multi-year combined-company goals, no figure for a coming fiscal year of the company), its divisional structure, HSR,
+  shareholder-vote, litigation, divestiture and exchange-offer 8-Ks (2020-12-16 to 2022-01-27), the Kensho ASR, the debt offerings,
+  tender offers and redemptions, and the officer, director, bylaw, vote and 10b5-1 8-Ks.
+- **Builder** (no 2008-2017 output changes): the `op_margin_guide` field and the guided step on its own base; Corporate revenue in the
+  print identity (`other_k`).
+
+Controls and checks (before any 2018-2021 outcome):
+- **`retro_tool run` passes on all 209 dates, with no warning.**
+- **Controls:** altering one value of each 2018-2021 print (its Financial Services growth, its third segment's name, each Q4 print's
+  full-year EPS), each vintage (its last year's EPS, its durability words), each guide (its first guided field, and the margin guide's
+  range), and each dividend changes no model dated before its publication across all 731 dates of 2008-2021, and changes the first weekly
+  date on or after it (67 controls); the one inert control is the Q4 2020 print's full-year EPS, which the FY2020 10-K (accepted after the
+  close on the release day, so dated 2021-02-10, the first weekly date after the print) replaces before any built date.
+- **Leak scan** (all 731 dates): 16 hits in 866,443 (model, later token) pairs, none a leak: closing prices of 2008-2012 models that equal a
+  later margin (the 13 of 2014-2017 and three more: 40.59, 42.84, 43.38, later pre-tax margins). No 2014-2021 model has a hit. As a positive
+  control, 6 to 30 of the latest print's own tokens appear in each model. No 2018-2021 fact's own text names a later year or date (two
+  release sentences that name the next year were quoted only up to their first sentence for that reason).
+- **Regression:** the 522 models of 2008-2017 rebuild byte for byte. The shared code is untouched (the builder and the firewall's SPGI
+  plants only), so no other ticker's model changes.
+- **Firewall:** run after this build is committed and pushed; its result follows in the next commit, before any outcome.
+
+Seen in the build (method behaviour, not tuned):
+- **RICH on 206 dates, CHEAP on 1 (2020-03-20) and FAIR on 2 (2020-03-27, 2020-04-03); legacy tier AVOID on 202, WATCHLIST on 6 and
+  ACCUMULATE on 1.** Robustness agrees on 180 dates (8 of 8), on 21 (7 of 8) and on 8 at 6 of 8 or fewer (December 2018 to March 2019,
+  2020-03-13 and the two FAIR dates).
+- **The multiple against its decade.** The window's median is 20.1-20.4x in 2018, 20.4-21.3x in 2019, 21.3-22.2x in 2020 and 22.2-23.0x
+  in 2021. The stock trades at 20.7-29.3x the current-FY EPS in 2018 (the 53rd-100th percentile), 22.0-32.4x in 2019 (68th-100th),
+  20.7-36.9x in 2020 (41st-100th; the 41st on 2020-03-20) and 30.4-46.9x in 2021 (92nd-100th; 34-47x FY20's $9.66 to 2021-10-22).
+- **The floor** is 17x on the five January 2018 dates and 18x from 2018-02-07: the price is 15% to 161% above it.
+- **BEAR** is -39.1%/yr to 2018-02-07 (the seam) and -27.2%/yr from 2018-02-16 (GAAP 2016-2017; the BEAR price $32-103); **BULL** the
+  decade CAGR, +11.7% (2007-2016, January 2018), +13.9% (2008-2017) to +19.5%/yr (2011-2020), or BASE's rate where higher (2018-02-07
+  to 2018-04-20); **XBULL** 2014-2016's
+  +43.1%/yr on every date.
+- **BASE follows the quarters:** +3.0%/yr in January 2018 (FY2017's 0% revenue guide and the buyback), then -1.0% (Q4 2018's -3.3%
+  revenue) to +16.6% (Q2 and Q3 2020), with the 3.26pp margin step from 2018-05-25 to 2019-02-01.
+- **The proxy composite** is 1.65-2.95. The CHEAP and FAIR dates are the COVID-19 fall of March and April 2020 (20.7-23.7x the FY2020
+  guide, 15-32% above the floor).
+
+How far each call moves the classes (the 209 dates rebuilt with one encoding changed and classified offline; no outcome consulted):
+- the amortization-excluding company figures from 2016 (the SHW reading: FY2014-FY2020 at $3.99, $4.69, $5.35, $6.89, $8.50, $9.53 and
+  $11.69, every adjusted range as the guide): 12 classes (7 RICH to CHEAP, 3 RICH to FAIR, 2 FAIR to CHEAP; 2018-04-27 to 2020-04-03) and
+  87 tiers, the batch's largest call, as BEAR then leaves GAAP 2016;
+- FY2016 at $5.12, GAAP less its listed one-offs (a figure the 2009 rule bars): 5 classes and 52 tiers;
+- the history from 2010 in the FY2017 and FY2018 vintages (no 2009-2010 Construction seam): 5 classes (RICH to FAIR, 2018-12-14 to
+  2019-03-08) and 12 tiers;
+- the revenue words read as numbers (mid single-digits 4-6%, mid to high 5-8%, high 7-9%, low double-digits 10-12%): 4 classes, no tier;
+- the FY2018 margin guide unused (no step): no class, no tier;
+- FY2021's adjusted ranges as the guide before the Q3 2021 GAAP range: no class, no tier;
+- Corporate revenue (Kensho) in the Financial Services line: no class, no tier;
+- every signal at its BEAR value: 3 classes (the March-April 2020 dates to RICH), no tier; at its XBULL value: 25 classes (21 RICH to
+  FAIR, 4 RICH to CHEAP; 2018-02-07 to 2020-03-13) and 11 tiers;
+- CYCLICAL instead of DURABLE: no class, no tier (label only).
+The RICH calls rest on the multiple at the top of its own decade (the 75th-100th percentile on 197 of the 209 dates), against a BASE of the
+reported quarters; the tiers rest on BEAR from GAAP 2016's divestiture gains.
+
+Judgement calls that could carry hindsight:
+- GAAP every year because the company's adjusted figures remove recurring amortization, so GAAP 2016's $7.94 (with the J.D. Power and
+  SPSE/CMA gains) sets BEAR at -27.2%/yr and XBULL at +43.1%/yr on every date, and FY20's $9.66 stands through most of 2021 (12 classes
+  and 87 tiers on the SHW reading, 5 classes and 52 tiers with FY2016 at $5.12);
+- the margin guide read as a step from the FY2017 10-K's 43.05%, the only base public on 2018-05-24 (no class if unused);
+- the revenue words read as words (4 classes as numbers);
+- the 2009-2010 Construction seam as published (5 classes without it);
+- the Financial Services line on the old scope, Corporate revenue outside it (no class), and the quarters as reported;
+- the signals and rule T as in 2008-2017, chosen by a builder who knows how 2008-2021 went (3 classes at BEAR, 25 at XBULL);
+- DURABLE, and the live themes (CRYPTO, EV, ENERGY_TRANSITION among them) read as out of scope (label only);
+- **this batch was decided in the session that had scored 2014-2017** (disclosed above); the 10-Qs, the proxy statements, the IHS Markit
+  filings and the unfiled slides were not read.
 
 The hindsight results are in `staging/retrospective/SPGI/FINDINGS.md`: hypotheses, never inputs.
 

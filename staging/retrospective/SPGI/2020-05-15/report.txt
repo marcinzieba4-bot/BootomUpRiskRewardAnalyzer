@@ -1,0 +1,154 @@
+
+════════════════════════════════════════════════════════════════════════
+  SPGI  ·  S&P Global Inc.  ·  $303.14  ·  RETROSPECTIVE as of 2020-05-15
+  Signal: ✕ AVOID   Ratio B: 9.44x   Adj gap: -0.29  [MODESTLY OVERVALUED]
+  Point-in-time: 15 sources, latest published 2020-05-15; latest print Q1 2020 (Apr 28)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2020E revenue, USD bn  →  FY2022E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                      FY2020E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Ratings                   $     3.5  $   3.5  $   4.0      +0.0      +0.5
+    +7.7% revenue in FY19
+  Market Intelligence       $     2.2  $   2.2  $   2.5      +0.0      +0.3
+    +6.9% revenue in FY19
+  Platts                    $     0.9  $   0.9  $   1.1      +0.0      +0.2
+    +3.6% revenue in FY19
+  Indices                   $     1.0  $   1.0  $   1.2      +0.0      +0.2
+    +9.7% revenue in FY19
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $     7.6  $   7.6  $   8.8      +0.0      +1.2
+  FY2020E = FY19 $6.70B × (1 + 13.7%: no FY20 revenue guide in numbers, Q1 2020 growth, applied to the year); split pro rata to FY19 revenue by segment (SP82)
+  Q1 2020 (Apr 28): revenue $1.79B +13.7%; Financial Services +15.2%; Education n/r; Platts +3.9%;
+  segment operating margin 53.81% (+600.3bp); diluted EPS $2.62 vs $1.65 (+58.8%)
+  Financial Services revenue $1,571.0M against $1,364.0M a year earlier (+15.2%), McGraw-Hill Education not reported, Platts $215.0M (+3.9%), as the release's segment table shows them; 'Adjusted net income increased 27% to $665 million and adjusted diluted earnings per share increased 29% to $2.73 due to revenue growth, continued progress toward productivity initiative targets, and reduced business travel.'; Financial Services line: Ratings $825.0M + Market Intelligence $519.0M + Indices $259.0M less the royalty elimination $32.0M; McGraw-Hill Education, sold in 2013, is not reported (n/r)
+  FY20 guide (Q4 2019 release, Q1 2020 release): revenue growth in words, 'increase mid to high single-digits' (no field); EPS $9.50-9.70 (GAAP, the baseline COVID-19 scenario); adjusted EPS $9.95-10.15 (adjusted, excluding deal-related amortization as well as one-offs: no field, amortization recurs); the scenarios behind the guide are on the earnings slides, not in a filing
+
+  FY2020E EPS check:  $7.6B × 43.7% pre-tax × (1−21.4%) ÷ 0.243B  =  $10.74  (FY2020E EPS, guide midpoint (GAAP, the baseline COVID-19 scenario))
+  FY2022E BEAR check: $7.6B × 43.7% ÷ 0.231B  =  $11.33  (scenario $5.09)
+  FY2022E BULL check: $8.8B × 44.1% ÷ 0.231B  =  $13.24  (scenario $13.56)
+  Every 1pp of pre-tax margin ≈ $0.25 EPS ≈ $5/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Financial Services revenue growth    -7.0%    ≥4.0%   ≥14.0%   ≥18.0%    +15.2%  ▲ BULL  ███░
+  Education revenue growth           -16.0%   ≥-6.0%    ≥5.0%   ≥23.0%       n/r  ◦ BASE  ██░░
+  Revenue growth                      +1.0%    ≥4.0%    ≥7.0%   ≥15.0%    +13.7%  ▲ BULL  ███░
+  Diluted EPS growth                 -98.0%  ≥-43.0%   ≥13.0%   ≥53.0%    +58.8%  ★ XBULL  ████
+  Segment operating margin change   -970.0bp  ≥-440.0bp  ≥90.0bp  ≥460.0bp  +600.3bp  ★ XBULL  ████
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.95 / 4.00
+  Market composite:   3.24 / 4.00  (back-solved from $303 + 15% hurdle)
+  SCA adjustment:    +0.10  ·  EPP-distance adj -0.10  →  Adj composite 2.95  →  Gap -0.29  [MODESTLY OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY19 revenue +7.0%, Financial Services +7.9%, Education n/r; Q1 segment operating margin 53.81% (+600.3bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 31.6x FY20E vs a 21.6x 10-yr median (99th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: no FY20 revenue guide in numbers, Q1 2020 growth +13.7% vs a 7.1% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  FY19 year-end cash and equivalents $2.866B, FY19 operating cash flow $2.776B, dividend $2.68 a year, repurchase of treasury shares $1,240M in 2019 (SP82)  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Financial Services revenue growth    +15.2%     -7.0%  -22.2%  Debt issuance volume falls
+  Education revenue growth               n/r    -16.0%     n/r  State adoptions and school funding sh…
+  Revenue growth                      +13.7%     +1.0%  -12.7%  Issuance, adoptions and advertising f…
+  Diluted EPS growth                  +58.8%    -98.0%  -156.8%  Costs stay up while revenue falls
+  Segment operating margin change   +600.3bp  -970.0bp  -1570.3bp  Segment profit falls faster than revenue
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$140  (model)  /  $78 (defined)
+  Bear probability (proxy model):  4.7%
+
+  KEY TRIGGER: Financial Services revenue growth went from +15.2% (Q4 2019) to +15.2% (Q1 2020);
+  the bear case needs a fall in debt issuance that Education (n/r now) and
+  Platts (+3.9% now) no longer offset. The 10-K ties results to the volume of securities issued and traded in the capital
+  markets, to flows into investment products, to interest rates and to volatility in the
+  financial and commodities markets.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $9.60  (FY2020E EPS, guide midpoint (GAAP, the baseline COVID-19 scenario))
+  Min viable P/E at panic:          18x  [median of calendar-year P/E lows: 2010 14.8x, 2011 18.1x, 2012 18.5x, 2013 13.3x, 2014 18.6x, 2015 18.9x, 2016 10.2x, 2017 18.8x, 2018 20.6x, 2019 19.1x, 2020 20.0x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $173/share
+  Current $303 vs Updated EPP $173:  +75%  ⚠ far above floor — large drawdown room
+  Bear $78 vs Updated EPP $173:  -55%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Financial Services revenue growth             4.0      -11.2   BASE floor (vs +15 now)
+  Education revenue growth                    -6.0        n/r   BASE floor (not reported now)
+  Revenue growth                               4.0       -9.7   BASE floor (vs +14 now)
+  Diluted EPS growth                         -43.0     -101.8   BASE floor (vs +59 now)
+  Segment operating margin change           -440.0    -1040.3   BASE floor (vs +600 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $9.60 × (1+14.3%)² = $12.55
+  At 21x P/E (conservative):  $264/share
+  + Cumul. dividends (2yr):  +$5.52/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $264  (▼40 from $303)
+  Conservative total return:  -11% over 2yr  = -6%/yr
+
+  14.3% EPS growth is what is left once the premium multiple (31.6x)
+  mean-reverts to 21x. Breakeven at 21x needs FY2022E EPS of $14.17,
+  i.e. 21.5%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $186.06  –  $312.94  (at 92th pct of range)
+  Annual dividend:      $2.68/share  (yield 0.9%)
+  Realized vol (1yr):   45% annualized
+  Beta vs broad market: 1.14
+  1-sigma range (1yr):  $167  –  $439  ($303 ± 45%)
+  2-sigma range (1yr):  $32  –  $575
+  ────────────────────────────────────────────────────────────
+  Bear $78 requires:  ~1.7σ price move  (unusual — requires fundamental break)
+  An information services company (ratings, education, business information) with a 1.1 beta: the stock is +58% off its March
+  low while Financial Services revenue growth went from +15.2% (Q4 2019) to +15.2% (Q1 2020).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        5.09  15.4x  $     78     4.7%      3.5%    +1.2pp  EPS -27.2%/yr (worst year FY10-FY19, capped at 0%); P/E to its 10th pct
+  BASE       12.99  21.6x  $    281    16.5%     12.3%    +4.2pp  EPS +16.3%/yr (Q1 revenue + margin + buyback); P/E at its 10-yr median
+  BULL       13.56  24.1x  $    327    57.6%     42.8%   +14.8pp  EPS +18.8%/yr (FY10-FY19 CAGR); P/E holds its 75th pct
+  XBULL      19.65  27.5x  $    540    21.2%     41.4%   -20.2pp  EPS +43.1%/yr (best 2-yr run FY10-FY19); P/E at its 90th pct
+
+  Proxy EV (2yr): $353  /  Market EV: $401  /  Current: $303
+  Conservative EV (2yr, ④): $264 + $5.52 divs = $269 total value
+  Downside (→ Bear $78): 74.3%   Upside (→ Bull $327): 7.9%   Ratio B 9.44x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $303 the market needs $401 in two years —
+  above the BULL case. That is a market composite of 3.24 against a model
+  read of 2.95: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       9.44x     +75%    -0.29  MODESTLY OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     2.92x     +75%    +0.03  FAIRLY VALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx     +75%    -0.57  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          6.56x     +75%    -0.23  MODESTLY OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                         16.39x     +75%    -0.35  MODESTLY OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             9.44x     +75%    +0.01  FAIRLY VALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 9.44x     +50%    -0.29  MODESTLY OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    9.44x     +75%    -0.10  FAIRLY VALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 2020 print (early August) — the next read on Financial Services revenue (+15.2% now) and the guide
+  (2) Segment operating margin — +600.3bp in Q1 2020: costs against the ratings mix, what must hold if revenue does not
+  (3) FY20 EPS guide $9.50-9.70 (Q1 2020 release): the company's own read of the year
+  (4) A FY20 consolidated revenue guide in numbers — none yet (revenue growth in words only)
+  (5) Capital return at 32x — 'During the first quarter, the Company returned $1.3 billion to shareholders, $1 billion through an ASR program that was initiated in early February, $150 million in open market share repurchases in January and February, and $161 million in dividends.': management's own read of the multiple
+  ✕ AVOID  |  EPP floor $173  |  ADD below ~$239  |  TRIM above $327
+════════════════════════════════════════════════════════════════════════
+
