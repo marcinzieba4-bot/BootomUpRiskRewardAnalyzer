@@ -1,7 +1,8 @@
 # V retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the V weekly dates (Visa Inc., class A common stock, NYSE: V): 427 in all, 10 from 2009-10-29 to
-2009-12-31, 209 from 2010-01-08 to 2013-12-31 and 208 from 2014-01-10 to 2017-12-29 (the later sections below), each priced as traded on
+Patterns seen in `outcome.json` for the V weekly dates (Visa Inc., class A common stock, NYSE: V): 636 in all, 10 from 2009-10-29 to
+2009-12-31, 209 from 2010-01-08 to 2013-12-31, 208 from 2014-01-10 to 2017-12-29 and 209 from 2018-01-05 to 2021-12-31 (the later sections
+below), each priced as traded on
 its date (before 2015-03-19 on the basis before the four-for-one split). The 2009 dates are the only ones of 2008-2009 that method r2 can build (retro/README.md, "V": FY2008, Visa's first year with EPS, is a distorted year with
 no figure excluding only one-offs, so no year is in the history until the Q4 FY09 print). They are **labels and hypotheses**: never feed
 them back into the method or the fact sheet. The 2009 outcomes were computed on 2026-11-19, after the point-in-time build was committed
@@ -152,3 +153,69 @@ What the labels say, as hypotheses only:
 Not tested here: whether any of this holds for other payments networks or other periods. With every date RICH there is no
 cross-sectional test of the class at all; the EPP-gap and 2014 tier orders are within one stock and one bull market.
 
+## 2018-2021 (209 dates)
+
+Scored on 2026-11-20, after the point-in-time build was committed and pushed (7c5ed2b) and the firewall had passed at 23 cutoffs
+(5b69851, also pushed). Every date has its 6-month, 1-, 2- and 3-year horizons (the last 3-year horizon ends in December 2024). Dividends
+are $0.195 a quarter to January 2018, then $0.21, $0.25, $0.30, $0.32 and $0.375, and higher after. The class is RICH on 199 dates and FAIR
+on 10 (the dates after the Q4 FY21 print), so the table splits by class, year and legacy tier; there is no BUY date.
+
+| Group | Dates | Mean 2-yr total return | Median | Mean vs SPY | Beat SPY | Cleared hurdle | Mean m12-24 avg price | Mean max drawdown | Call held |
+|---|---|---|---|---|---|---|---|---|---|
+| all | 209 | +24.9% | +22.9% | -2.0pp | 96 | 91 | +18.5% | -31.1% | 82 |
+| class RICH | 199 | +25.0% | +23.7% | -3.2pp | 86 | 90 | +18.9% | -31.4% | 82 |
+| class FAIR | 10 | +21.8% | +21.6% | +21.7pp | 10 | 1 | +10.4% | -24.5% | 0 |
+| 2018 | 52 | +48.0% | +45.7% | +26.7pp | 52 | 50 | +37.8% | -33.0% | 0 |
+| 2019 | 52 | +35.2% | +36.5% | -14.8pp | 9 | 37 | +26.0% | -36.4% | 15 |
+| 2020 | 53 | +9.0% | +7.9% | -23.8pp | 0 | 3 | +12.5% | -27.7% | 50 |
+| 2021 | 52 | +7.6% | +4.7% | +4.4pp | 35 | 1 | -2.2% | -27.2% | 17 |
+| tier ACCUMULATE | 6 | +43.4% | +41.6% | +2.0pp | 4 | 4 | +33.9% | -26.4% | 0 |
+| tier WATCHLIST | 21 | +38.2% | +41.8% | +5.2pp | 16 | 12 | +29.3% | -30.7% | 2 |
+| tier AVOID | 182 | +22.7% | +17.2% | -2.9pp | 76 | 75 | +16.7% | -31.2% | 80 |
+| 2018, tier ACCUMULATE | 1 | +70.0% | +70.0% | +12.5pp | 1 | 1 | +55.6% | -36.4% | 0 |
+| 2018, tier WATCHLIST | 5 | +55.2% | +56.8% | +12.1pp | 5 | 5 | +42.5% | -36.4% | 0 |
+| 2018, tier AVOID | 46 | +46.7% | +44.6% | +28.6pp | 46 | 44 | +36.9% | -32.5% | 0 |
+| 2019, tier WATCHLIST | 6 | +51.1% | +48.1% | +3.2pp | 4 | 6 | +40.7% | -36.4% | 0 |
+| 2019, tier AVOID | 46 | +33.1% | +35.9% | -17.1pp | 5 | 31 | +24.0% | -36.4% | 15 |
+| 2020, tier ACCUMULATE | 2 | +50.9% | +50.9% | -42.2pp | 0 | 2 | +49.7% | -24.2% | 0 |
+| 2020, tier WATCHLIST | 3 | +30.0% | +27.1% | -34.8pp | 0 | 1 | +34.5% | -24.2% | 2 |
+| 2020, tier AVOID | 48 | +5.9% | +5.9% | -22.3pp | 0 | 0 | +9.5% | -28.0% | 48 |
+| 2021, tier ACCUMULATE | 3 | +29.6% | +30.4% | +27.9pp | 3 | 1 | +16.1% | -24.5% | 0 |
+| 2021, tier WATCHLIST | 7 | +18.5% | +20.9% | +19.0pp | 7 | 0 | +8.0% | -24.5% | 0 |
+| 2021, tier AVOID | 42 | +4.2% | +3.5% | +0.2pp | 25 | 0 | -5.2% | -27.9% | 17 |
+
+What the labels say, as hypotheses only:
+
+- **The RICH call held on 82 of its 199 dates, none of them in 2018.** RICH (miss the hurdle and lag the benchmark) needs both: 109 RICH
+  dates missed the hurdle, 113 lagged SPY and 82 did both. From every 2018 date the stock returned +17.7% to +76.0% over two years and beat
+  SPY (+8.2 to +46.7 points), so the call held on none; from 2019 it held on 15 (2019-08-30 on), from 2020 on 50 of 53 (V +9.0% against
+  SPY's +32.8% on average; the three exceptions, 2020-03-20, 2020-03-27 and 2020-04-03, at the March-April lows, returned about +51% and
+  cleared the hurdle while still lagging SPY by 36-48 points), and from 2021 on 17. The class was the same at much the same place in its
+  own window (the 81st-100th percentile in 2018, the 73rd-100th in 2020) for entries that went on to return +48.0% and +9.0% on average.
+- **The FAIR call held on none of its 10 dates, in the other direction.** From 2021-10-28 to 2021-12-31 the stock returned +10.8% to
+  +32.4% over two years (one date cleared the hurdle) while SPY returned -7.7% to +12.9%, so it beat the benchmark by 17.5-28.4 points,
+  beyond FAIR's 15-point band.
+- **The tiers ordered total returns, not returns against SPY.** The mean 2-year total return is +43.4% for ACCUMULATE (6 dates), +38.2% for
+  WATCHLIST (21) and +22.7% for AVOID (182), and the order holds within every year with more than one tier (2018 +70.0%, +55.2%, +46.7%; 2019
+  WATCHLIST +51.1%, AVOID +33.1%; 2020 +50.9%, +30.0%, +5.9%; 2021 +29.6%, +18.5%, +4.2%). Against SPY the three tiers are +2.0, +5.2 and
+  -2.9 points: the two ACCUMULATE dates of March-April 2020 lagged SPY's rebound. The ACCUMULATE and WATCHLIST dates fall at the price lows of
+  late 2018 and early 2019, March-April 2020 and late 2021, so this order is largely the entry price itself.
+- **The EPP gap did not order the outcomes this time.** Its correlation with the 2-year excess return is +0.29 across the 209 dates
+  (2014-2017: -0.5) and changes sign by year (+0.08 in 2018, -0.36 in 2019, +0.77 in 2020, -0.88 in 2021). Against total return it is -0.30:
+  the 9 dates 25-50% above the floor (5 at the 2020 lows) returned +49.6%, the 67 at 50-75% +25.1% and the 49 at 105-135% (30 of them in
+  2021) +14.2%. The P/E's percentile in its own window carried nothing (correlation -0.03 with the excess return).
+- **Scenario landing:** the price two years on sat in the XBULL band on 91 dates (49 of 2018's, 42 of 2019's), the BULL band on 107 (every
+  2020 date and 41 of 2021's) and the BASE band on 11 (late 2021): unlike 2014-2017, the later entries reached only BULL or BASE.
+- **Drawdowns were deep:** a mean maximum of -31.1% inside the two years (-19.3% to -36.4%); the 2-year low fell on 2020-03-23 for 60 dates
+  and on 2022-09-30 for 66.
+- **Three-year horizon:** a mean +37.7% (-7.3 points against SPY), +3.4% to +88.5%; by tier ACCUMULATE +60.4%, WATCHLIST +53.2%, AVOID
+  +35.2%.
+- **The calls the sensitivities name, against the outcomes, and stay as they are.** With the signals at their XBULL values 205 dates read
+  CHEAP or FAIR (retro/README.md, "V 2018-2021"): that would have suited the 2018 entries and not the 2020 ones, which lagged SPY on all 53.
+  The EPS calls move only the late-2021 dates: GAAP throughout makes 6 of the FAIR dates CHEAP and the company's fiscal 2020 non-GAAP
+  figures 2, which their outcomes (17.5-28.4 points over SPY) would have suited; the FY2019-FY2020 seam is the batch's largest EPS call. A
+  hypothesis for the live model: for V in these years neither the class nor the distance to the floor separated good entries from poor
+  ones; the tiers' order is mostly the entry price. Never fold this back into the archive.
+
+Not tested here: whether any of this holds for other payments networks or other periods. The four years share the 2020 crash and the 2022
+decline inside their two-year windows, so they are far from independent, and the 10 FAIR dates are the only cross-sectional test of the class.

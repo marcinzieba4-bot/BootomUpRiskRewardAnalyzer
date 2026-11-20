@@ -21743,7 +21743,7 @@ Seen in the build (method behaviour, not tuned):
   Q4 FY20 prints and +31.2% on Q4 FY21's.
 - **The FAIR dates** follow the Q4 FY21 print: the current year becomes FY2022E on FY21's $5.63 (the P/E falls from 47.3x on 2021-10-22 to
   37.3x on 2021-10-28, as the price also fell 9%) and BASE becomes +31.2% (revenue +28.6% against the pandemic quarter; BULL is at least
-  BASE). The ACCUMULATE dates come at the price lows of December 2018 and March-April 2020 and in November 2021.
+  BASE). The ACCUMULATE dates come at the price lows of December 2018, March-April 2020 and November-December 2021.
 
 How far each call moves the classes (the 209 dates rebuilt with one encoding changed and classified offline; no outcome consulted):
 - the signals at their XBULL values: 205 classes (134 RICH to CHEAP, 61 RICH to FAIR, 10 FAIR to CHEAP) and 205 tiers (197 to BUY); at their
