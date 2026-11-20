@@ -21889,7 +21889,12 @@ Controls and checks (before any outcome of these dates):
   is untouched but the builder's new `outlook_elsewhere` reading and the firewall tool's V entry (a planted outlook pointer for the cutoff's
   fiscal year and the next).
 - **Index:** `index.json` gains the 254 V rows; no other row changes.
-- **Firewall:** FIREWALL_RESULT
+- **Firewall** (run after the build was committed and pushed, a47d071, before any outcome of these dates): passes at the 27 cutoffs above
+  (every print, vintage and dividend date of the range, 2022-01-01 and 2026-11-14), 0 files changed and no planted text (636 to 890
+  dates each). The planted facts add, to the 2018-2021 set, planted pointers to an outlook posted on the website for the cutoff's fiscal
+  year and the next. As a positive control the plants reach the first date after them: rebuilding 2024-02-09 (cutoff 2024-01-26) and
+  2026-11-13 (cutoff 2026-10-28) with the plants stops at the builder's refusal of the planted guide list, and with the planted lists
+  taken out, at its check of the planted print.
 
 Seen in the build (method behaviour, not tuned):
 - **RICH on 185 dates, FAIR on 35, CHEAP on 34; legacy tier WATCHLIST 137, ACCUMULATE 54, AVOID 34, BUY 29.** Robustness agrees with the
