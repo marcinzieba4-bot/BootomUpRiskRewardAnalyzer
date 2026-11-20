@@ -21369,6 +21369,13 @@ Controls and checks (before any outcome of these dates):
 - **Regression:** the ten 2009 models rebuild byte-identical; rebuilding GOOG's and JPM's 2010-2013 dates changes nothing. The shared code
   is untouched but the firewall tool's V entry (a planted guide for every guided year in numbers and words, an operating one-off and
   planted restatements).
+- **Firewall** (run after the build was committed, before any outcome of these dates): passes at the 25 cutoffs above (every print,
+  vintage and dividend date of the range, and 2014-01-01), 0 files changed and no planted text (14 to 219 dates each). The planted facts
+  add, to the 2009 set, a guide in numbers and words for every fiscal year guided before the cutoff and the year after the planted
+  actuals (a revenue range, an EPS growth rate and a margin), an operating one-off in the planted print's raw figures, and planted
+  actuals that restate every earlier year's EPS, revenue and shares. As a positive control the plants reach the first date after them:
+  rebuilding 2011-11-11 (cutoff 2011-10-27) and 2013-05-17 (cutoff 2013-05-02) with the plants stops at the builder's refusal of the
+  planted guide list, and with the lists taken out, at its check of the planted print.
 
 Seen in the build (method behaviour, not tuned):
 - **RICH on 124 dates, FAIR on 43, CHEAP on 42; legacy tier BUY 85, ACCUMULATE 54, WATCHLIST 47, AVOID 23.** By year: 2010 RICH 27, CHEAP
