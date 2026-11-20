@@ -1,10 +1,12 @@
 # SPGI retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the SPGI weekly dates: 105 from 2008-01-04 to 2009-12-31, all The McGraw-Hill Companies, Inc. (NYSE:
-MHP; SPGI is the series key). They are **labels and hypotheses**: never feed them back into the method or the fact sheet. The batch was
+Patterns seen in `outcome.json` for the SPGI weekly dates: 314 from 2008-01-04 to 2013-12-31, The McGraw-Hill Companies, Inc. (NYSE:
+MHP; SPGI is the series key), McGraw Hill Financial, Inc. from 2013-05-06 and NYSE: MHFI from 2013-05-14. They are **labels and hypotheses**: never feed them back into the method or the fact sheet. The batch was
 scored only after its point-in-time build and its firewall result were committed (2008-2009: 7a7b5ac, firewall e1db42b); the push of those
 two commits followed a few minutes after the outcome computation began, and no committed file changed in between. Outcomes were computed
-on 2026-11-20; every date has its 6-month, 1-, 2- and 3-year horizons (the last ends 2012-12-28). Total returns include the quarterly
+on 2026-11-20; every date has its 6-month, 1-, 2- and 3-year horizons (the last ends 2016-12-30). 2010-2013 was scored only after
+its build (51cf532) and its firewall result (23e3e2c) were committed and pushed; that batch was decided in the session that had written
+the 2008-2009 sections below (disclosed in retro/README.md, "SPGI 2010-2013"). Total returns include the quarterly
 dividends as Yahoo records them (ex-dates); no split falls in any horizon, so every price is as traded. Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over
 two years and +52.1% over three. "Call held" is `call_check_2y`: CHEAP should clear the hurdle or beat the benchmark (SPY).
 
@@ -69,3 +71,129 @@ two years and +52.1% over three. "Call held" is `call_check_2y`: CHEAP should cl
   already discounted at the March low.
 - **Today's profile files SPGI DURABLE with risk 1** ("Ratings duopoly + indices flywheel", `profile_drift` in every outcome), where the
   point-in-time reading was DURABLE with risk 2; the kind and risk change the label only, so no price state above depends on them.
+
+## 2010 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 52 | +58.4% | +35.6% to +83.0% | 52 | 52 | +34.8% | 52 |
+| EPS $2.225 (2010-01-08 to 2010-01-22) | 3 | +44.5% | +41.2% to +44.9% | 3 | 3 | +23.8% | 3 |
+| EPS $2.6 (2010-01-27 to 2010-10-22) | 39 | +59.4% | +35.6% to +83.0% | 39 | 39 | +44.8% | 39 |
+| EPS $2.625 (2010-10-27 to 2010-12-31) | 10 | +57.1% | +38.0% to +62.8% | 10 | 10 | +34.4% | 10 |
+| latest print Q3 2009 (2010-01-08 to 2010-01-22) | 3 | +44.5% | +41.2% to +44.9% | 3 | 3 | +23.8% | 3 |
+| latest print Q4 2009 (2010-01-27 to 2010-04-23) | 13 | +39.1% | +35.6% to +53.6% | 13 | 13 | +20.6% | 13 |
+| latest print Q1 2010 (2010-04-28 to 2010-07-16) | 12 | +64.2% | +49.2% to +69.6% | 12 | 12 | +51.6% | 12 |
+| latest print Q2 2010 (2010-07-23 to 2010-10-22) | 14 | +72.0% | +58.4% to +83.0% | 14 | 14 | +49.9% | 14 |
+| latest print Q3 2010 (2010-10-27 to 2010-12-31) | 10 | +57.1% | +38.0% to +62.8% | 10 | 10 | +34.4% | 10 |
+
+- **CHEAP held on all 52 dates.** $27.34-39.31, 10.5-15.3x the standing EPS, the 5th-23rd percentile of the window and 10-38% under the
+  floor: every date returned +35.6% to +83.0% over two years, cleared the hurdle and beat SPY (+15.7% to +38.6%) by 8.5-48.5pp; over three
+  years the median was +109.5% (47 cleared the three-year hurdle, 50 beat SPY). Every date landed nearest BASE at two years (BASE -4.5% to
+  +8.0%/yr at the window's 19.5-20.4x median): the median multiple carried the call, as in 2009. The low close of the two years was $27.02
+  (2010-06-01).
+- **The guides were met:** FY2010 came in at $2.69 excluding one-offs against the $2.60-2.625 the models carried (the Q4 2010 release).
+- **The price ranked the dates** (Spearman -0.57 against the two-year return, -0.80 against the m12-24 average price; the EPP gap -0.61
+  and -0.84); the adjusted gap (-0.01) and the proxy composite (-0.15) did not.
+
+## 2011 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 49 | +50.5% | +27.3% to +93.5% | 46 | 49 | +29.8% | 49 |
+| class FAIR, legacy tier BUY | 1 | +66.7% | +66.7% to +66.7% | 1 | 1 | +24.1% | 0 |
+| class RICH, legacy tier BUY | 2 | +82.8% | +79.1% to +82.8% | 2 | 2 | +31.4% | 0 |
+| EPS $2.625 (2011-01-07 to 2011-01-28) | 4 | +58.2% | +56.4% to +60.4% | 4 | 4 | +31.2% | 4 |
+| EPS $2.84 (2011-02-02 to 2011-10-14) | 37 | +44.8% | +27.3% to +78.2% | 34 | 37 | +28.0% | 37 |
+| EPS $2.835 (2011-10-21 to 2011-12-30) | 11 | +79.4% | +66.7% to +93.5% | 11 | 11 | +31.6% | 8 |
+| latest print Q3 2010 (2011-01-07 to 2011-01-28) | 4 | +58.2% | +56.4% to +60.4% | 4 | 4 | +31.2% | 4 |
+| latest print Q4 2010 (2011-02-02 to 2011-04-21) | 12 | +41.7% | +27.3% to +71.0% | 9 | 12 | +30.4% | 12 |
+| latest print Q1 2011 (2011-04-27 to 2011-07-22) | 13 | +44.7% | +37.5% to +50.5% | 13 | 13 | +22.7% | 13 |
+| latest print Q2 2011 (2011-07-29 to 2011-10-14) | 12 | +63.5% | +49.3% to +78.2% | 12 | 12 | +32.4% | 12 |
+| latest print Q3 2011 (2011-10-21 to 2011-12-30) | 11 | +79.4% | +66.7% to +93.5% | 11 | 11 | +31.6% | 8 |
+
+- **CHEAP held on all 49 CHEAP dates; the three FAIR and RICH calls missed.** The CHEAP dates ($36.75-45.29, 12.9-15.9x) returned +27.3%
+  to +93.5% and beat SPY on all 49; three of them (2011-02-11 to 2011-02-25, +27.3% to +31.6%) fell short of the hurdle but beat SPY by
+  10-15pp. FAIR on 2011-10-21 and RICH on 2011-12-23 and 2011-12-30 came from Q3 2011's BASE of +0.1% (revenue -2.5%, McGraw-Hill
+  Education -11.1%, the Financial Services line +6.4%); those dates returned +66.7%, +79.1% and +82.8%.
+- **The guides were beaten:** FY2011 came in at $2.91 excluding one-offs without Broadcasting against the $2.835-2.84 the models carried.
+- **Within 2011 the price ranked the dates the other way** (Spearman +0.35 against the two-year return): the dates before the August low ($35.35 on
+  2011-08-10) carried it in their two-year windows, and the later, higher-priced dates started nearer the rebound. Landing: BASE 41,
+  BULL 11.
+
+## 2012 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier ACCUMULATE | 1 | +86.9% | +86.9% to +86.9% | 1 | 1 | +54.3% | 1 |
+| class CHEAP, legacy tier BUY | 29 | +84.5% | +57.8% to +107.3% | 29 | 29 | +53.1% | 29 |
+| class FAIR, legacy tier ACCUMULATE | 5 | +73.3% | +68.3% to +85.0% | 5 | 5 | +50.8% | 0 |
+| class FAIR, legacy tier BUY | 3 | +68.4% | +64.3% to +69.3% | 3 | 3 | +52.2% | 0 |
+| class RICH, legacy tier ACCUMULATE | 7 | +67.8% | +64.3% to +75.9% | 7 | 7 | +42.2% | 0 |
+| class RICH, legacy tier BUY | 2 | +78.3% | +76.3% to +78.3% | 2 | 2 | +30.0% | 0 |
+| class RICH, legacy tier WATCHLIST | 5 | +57.0% | +50.3% to +74.3% | 5 | 5 | +40.5% | 0 |
+| EPS $2.835 (2012-01-06 to 2012-01-27) | 4 | +76.3% | +67.3% to +78.3% | 4 | 4 | +30.0% | 0 |
+| EPS $3.3 (2012-02-01 to 2012-10-26) | 39 | +73.5% | +50.3% to +107.3% | 39 | 39 | +42.2% | 27 |
+| EPS $3.375 (2012-11-02 to 2012-12-28) | 9 | +75.0% | +68.3% to +89.0% | 9 | 9 | +51.5% | 3 |
+| latest print Q3 2011 (2012-01-06 to 2012-01-27) | 4 | +76.3% | +67.3% to +78.3% | 4 | 4 | +30.0% | 0 |
+| latest print Q4 2011 (2012-02-01 to 2012-04-20) | 12 | +77.2% | +57.8% to +87.4% | 12 | 12 | +36.4% | 11 |
+| latest print Q1 2012 (2012-04-25 to 2012-07-20) | 13 | +89.3% | +61.7% to +107.3% | 13 | 13 | +58.4% | 13 |
+| latest print Q2 2012 (2012-07-27 to 2012-10-26) | 14 | +68.4% | +50.3% to +84.1% | 14 | 14 | +44.4% | 3 |
+| latest print Q3 2012 (2012-11-02 to 2012-12-28) | 9 | +75.0% | +68.3% to +89.0% | 9 | 9 | +51.5% | 3 |
+
+- **CHEAP held on all 30 CHEAP dates; all 22 FAIR and RICH calls missed.** The CHEAP dates returned +57.8% to +107.3%; the FAIR and RICH
+  dates, 15 of them on the low-BASE quarters (Q3 2011's +0.1%, Q2 2012's +2.2%: revenue -0.6% with Education -11.7% and the Financial
+  Services line +4.3%) and 7 on Q4 2011's +4.4% and Q3 2012's +5.2% at higher prices, returned +50.3% to +85.0% and
+  beat SPY on all 22 (the year's excess +13.4pp to +58.1pp).
+- **FY2012's guide is not comparable:** it was consolidated, and the Q4 2012 release reports the year from continuing operations without
+  McGraw-Hill Education ($2.75), so no comparison is made.
+- **The two-year price landed nearest BULL on 50 dates and XBULL on 2;** the adjusted gap ranked the dates (Spearman +0.78; the proxy
+  composite +0.41, and +0.84 against the m12-24 average price), the price did too (-0.70).
+
+## 2013 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier ACCUMULATE | 15 | +93.9% | +59.3% to +102.6% | 15 | 15 | +65.5% | 15 |
+| class CHEAP, legacy tier BUY | 12 | +118.3% | +103.0% to +135.8% | 12 | 12 | +77.6% | 12 |
+| class CHEAP, legacy tier WATCHLIST | 5 | +66.0% | +57.2% to +83.8% | 5 | 5 | +57.0% | 5 |
+| class FAIR, legacy tier ACCUMULATE | 3 | +65.8% | +65.1% to +71.3% | 3 | 3 | +51.5% | 0 |
+| class FAIR, legacy tier WATCHLIST | 5 | +39.0% | +35.9% to +44.2% | 5 | 5 | +47.3% | 1 |
+| class RICH, legacy tier AVOID | 11 | +33.4% | +26.8% to +41.6% | 7 | 11 | +32.5% | 0 |
+| class RICH, legacy tier WATCHLIST | 2 | +65.2% | +57.3% to +65.2% | 2 | 2 | +44.9% | 0 |
+| EPS $3.375 (2013-01-04 to 2013-02-08) | 6 | +65.8% | +57.3% to +134.1% | 6 | 6 | +51.5% | 1 |
+| EPS $3.15 (2013-02-13 to 2013-07-19) | 23 | +102.6% | +83.3% to +135.8% | 23 | 23 | +69.9% | 23 |
+| EPS $3.2 (2013-07-26 to 2013-10-18) | 13 | +59.3% | +35.9% to +78.5% | 13 | 13 | +52.0% | 9 |
+| EPS $3.275 (2013-10-23 to 2013-12-31) | 11 | +33.4% | +26.8% to +41.6% | 7 | 11 | +32.5% | 0 |
+| latest print Q3 2012 (2013-01-04 to 2013-02-08) | 6 | +65.8% | +57.3% to +134.1% | 6 | 6 | +51.5% | 1 |
+| latest print Q4 2012 (2013-02-13 to 2013-04-26) | 11 | +118.1% | +103.0% to +135.8% | 11 | 11 | +74.5% | 11 |
+| latest print Q1 2013 (2013-05-01 to 2013-07-19) | 12 | +94.6% | +83.3% to +102.6% | 12 | 12 | +67.6% | 12 |
+| latest print Q2 2013 (2013-07-26 to 2013-10-18) | 13 | +59.3% | +35.9% to +78.5% | 13 | 13 | +52.0% | 9 |
+| latest print Q3 2013 (2013-10-23 to 2013-12-31) | 11 | +33.4% | +26.8% to +41.6% | 7 | 11 | +32.5% | 0 |
+
+- **CHEAP held on all 32 CHEAP dates; the FAIR and RICH calls missed on 20 of 21.** The CHEAP dates (2013-02-08 to 2013-09-13, $42.67-62.76, 12.6-19.6x)
+  returned +57.2% to +135.8%, those from the Q4 2012 print +103.0% to +135.8% (the Education sale closed on 2013-03-22). FAIR from
+  2013-09-20 (5 WATCHLIST dates) returned +35.9% to +44.2%: the call held only on 2013-10-11 (+35.9%, which the check counts as held). The
+  11 RICH and AVOID dates from the Q3 2013 print ($70.77-78.20, 21.6-23.9x FY2013's $3.275, the 77th-94th percentile, 44-59% above the
+  floor) returned +26.8% to +41.6%, beat SPY on all 11 by 11-19pp and fell short of the hurdle on four (2013-12-13 to 2013-12-31).
+- **The price ranked the dates almost perfectly within 2013** (Spearman -0.96 against the two-year return, Ratio B -0.97, the adjusted
+  gap +0.80): the class and tier groups mostly ordered the medians (CHEAP BUY +118.3%, CHEAP ACCUMULATE +93.9%, CHEAP WATCHLIST +66.0%, FAIR
+  WATCHLIST +39.0%, RICH AVOID +33.4%), though every group beat SPY. Landing: BULL 32, XBULL 15, BASE 6.
+- FY2013's result is outside the series' facts (the Q4 2013 release is not in the fact sheet), so the 2013 guides are not checked here.
+
+## 2010-2013 together (209 dates)
+
+- **Every date beat SPY over two years, and 202 of 209 cleared the 15%/yr hurdle.** CHEAP (163 dates) returned a median +65.3% (excess
+  +34.1pp) and held on all 163; FAIR (17) +66.7% (+21.9pp) and RICH (29) +57.3% (+18.7pp), so 45 of the 46 FAIR and RICH calls missed.
+  The legacy tiers order the medians only loosely (BUY +64.3%, ACCUMULATE +74.6%, WATCHLIST +57.2%, AVOID +33.4%), and across the four
+  years the entry price barely ranks the return (Spearman +0.16): the rerating lifted every date.
+- **The FAIR and RICH calls of October 2011 to February 2013 rested on BASE from consolidated revenue in quarters that McGraw-Hill
+  Education dragged** (Q3 2011, Q2 2012), while the retained businesses grew; the separation into two companies had been announced on
+  2011-09-12 and Education was sold in March 2013. Hypothesis, not a rule: once a company announces the separation of a segment, BASE on
+  the consolidated quarter understates the growth of what remains; test it on other tickers' announced separations and spin-offs (a
+  rule that used it would need the retained segments' growth as published from the announcement), never fit it to SPGI.
+- **The RICH and AVOID dates of late 2013 sat at the 77th-94th percentile of a window that mixes two companies** (2004-2012 prices with
+  Education and the Broadcasting stations, EPS without Education from 2008): the stock went on to beat SPY from every one of them.
+  Hypothesis: after a portfolio change, the decade's own-history P/E window may misplace the retained business's multiple; test on other
+  tickers whose mix changed, never fit it here.
+- **Today's profile files SPGI DURABLE with risk 1** ("Ratings duopoly + indices flywheel", `profile_drift`), where every point-in-time
+  reading was DURABLE with risk 2; label only.
