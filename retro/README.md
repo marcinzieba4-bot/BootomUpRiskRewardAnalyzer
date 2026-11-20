@@ -22856,6 +22856,15 @@ Controls and checks (before any 2022-2026 outcome):
 - **Regression:** the 731 models of 2008-2021 rebuild byte for byte with the new builder, fact sheet and a fresh price cache. The shared
   code changes only in `taxonomy_eras.json` (the seven terms above) and the firewall tool (its SPGI plants), so no other ticker's model
   changes.
+- **Firewall** (run after the build was committed and pushed, before any outcome): passes at the 32 cutoffs above (the day after each
+  new fact, GENAI's live date, the distribution's effective date and the day after the range: 736 to 986 dates each), 0 files changed
+  and no planted text. Besides the 2008-2021 plants, every planted guide now also carries a margin expansion in bp, and a later
+  step-only margin guide on a planted base and a later withdrawal of every guided year are planted; the generic plants copy the latest
+  GENAI event with planted text. The rebuild at 2026-11-21 covers all 986 dates byte for byte. As positive controls (built offline): a
+  planted print published 2024-06-05 (a Wednesday, before the open) with its own source reaches 2024-06-07 and not 2024-05-31; the same
+  print citing the Q2 2024 release's source stops at the builder's check that every source is public on AS_OF; a planted FY2024
+  withdrawal, a planted step-only margin guide, a planted dividend and a planted GENAI event, each of 2024-06-05, reach 2024-06-07 and
+  not 2024-05-31.
 
 Seen in the build (method behaviour, not tuned):
 - **RICH on 163 dates, FAIR on 67, CHEAP on 25; legacy tier AVOID on 161, WATCHLIST on 52, ACCUMULATE on 26, BUY on 16.** By year:
