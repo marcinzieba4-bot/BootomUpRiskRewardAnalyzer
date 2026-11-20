@@ -119,7 +119,9 @@ range and aside, and from V 2018-2021 a planted withdrawal of every guided year 
 SPGI: a print whose segment revenues, margins, quarter EPS, notes and raw figures are absurd, with absurd full-year actuals for the year
 after the latest vintage before CUTOFF, a later guide for every guided year with every field (an EPS range, an EPS growth range on a
 planted base, a consolidated revenue range, segment words, words and a note), and a later vintage with planted texts, figures, groups,
-cash, dividend and share counts (the guide, dividend, split and company name every fact sheet with those lists gets, too); GOOG: a print whose revenues, margins, opex and receivables gaps, quarter EPS, cash,
+cash, dividend and share counts (the guide, dividend, split and company name every fact sheet with those lists gets, too), and from SPGI
+2010-2013 the planted print restating every year of the history with a planted third segment and Financial Services parts, revenue
+words on every planted guide, a planted risk line on the later vintage and a later listing under a planted symbol; GOOG: a print whose revenues, margins, opex and receivables gaps, quarter EPS, cash,
 notes and raw figures are absurd, with absurd full-year actuals for the year after the latest vintage before CUTOFF, a later Q4 print
 whose full-year actuals exclude its own year, a later 10-Q restatement of the last print before CUTOFF with absurd figures, and a later
 vintage excluding a year with planted texts, figures, outlook words, exchange and window start, every per-share figure on a planted
@@ -397,7 +399,8 @@ GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -99
                "LMT": dict(rev_guide_usd_b=[0.1, 0.2], segop_guide_usd_b=[0.1, 0.2], cfo_words="PLANTED", note="PLANTED",
                            eps_label="PLANTED", rev_base_usd_b=0.01, rev_base_label="PLANTED"),   # the stated base (LMT 2018-2021)
                "SPGI": dict(eps_growth=[-99, -98], eps_growth_base=0.01, eps_growth_base_note="PLANTED", eps_guide_note="PLANTED",
-                            rev_guide_pct=[-50, -40], seg_words="PLANTED", words="PLANTED", note="PLANTED", quotes=["PLANTED"]),
+                            rev_guide_pct=[-50, -40], seg_words="PLANTED", rev_words="PLANTED", words="PLANTED", note="PLANTED",
+                            quotes=["PLANTED"]),
                "CAT": dict(rev_guide_usd_b=[0.1, 0.2], rev_guide_pct=[-50, -40], rev_growth_base_b=0.01, rev_growth_base_note="PLANTED",
                            eps_growth=[-99, -98], eps_growth_base=0.01, eps_growth_base_note="PLANTED", eps_guide_note="PLANTED",
                            rev_words="PLANTED", note="PLANTED"),
@@ -823,7 +826,18 @@ try:
                  cash_b=99.0, cash_label="PLANTED", ocf_b=99.0, dividend_annual=9.99, dividend_note="PLANTED",
                  cash_return_text="PLANTED", groups=[["PLANTED", 1, -99]], groups_basis="PLANTED", margin_signal_name="PLANTED",
                  diluted_shares_m={y: 1.0 for y in v["diluted_shares_m"]}, revenue_usd_b={**v["revenue_usd_b"], "2099": 0.01},
-                 diluted_shares_m_note="PLANTED")
+                 diluted_shares_m_note="PLANTED", key_tail="PLANTED")
+        # (SPGI 2010-2013) the planted print restates every year of the latest vintage before CUTOFF, names a planted third segment and
+        # builds its Financial Services line from planted parts; every planted guide carries revenue words; the later listing a symbol
+        last["restates"] = {y: {"eps": 0.01, "note": "PLANTED"} for y in v0["eps_normalized"]}
+        last["im_label"] = "PLANTED"
+        last["raw"].update(units="m0", fs_parts={"PLANTED": [1, 100]})
+        for g in f["guides"]:
+            if g.get("doc") == "PLANTED":
+                g["rev_words"] = "PLANTED"
+        for x in f.get("listings", []):
+            if x.get("note") == "PLANTED":
+                x["symbol"] = "PLANTED"
     if TICKER == "MU":     # a later vintage excluding a year and readmitting none, with planted texts and figures
         v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}
         v.update(normalization="PLANTED", business_line="PLANTED", prev_fy_op_margin=-99.0, prev_fy_op_margin_note="PLANTED",

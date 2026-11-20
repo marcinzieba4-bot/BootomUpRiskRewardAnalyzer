@@ -13,7 +13,9 @@ with ratings, education and information signals (retro/templates/spgi_engine.py.
 
 The company of 2008-2009 is The McGraw-Hill Companies, Inc., listed on the NYSE as MHP. SPGI is the series key (TICKER, the folder,
 the index) and the symbol under which Yahoo serves the price history (S&P Global's ticker from 2016); every printed line names the
-listing of the date (LISTED_SYMBOL = "MHP"; the BKR encoding; retro/README.md, "SPGI").
+listing of the date (LISTED_SYMBOL = "MHP"; the BKR encoding; retro/README.md, "SPGI"). A change of name ('company_names', from
+its publication until a later vintage carries it) and of listing ('listings', from its effective date once published) apply from
+their dates: McGraw Hill Financial, Inc. from the 8-K of 2013-05-06, NYSE: MHFI from 2013-05-14 (retro/README.md, "SPGI 2010-2013").
 
 McGraw-Hill's fiscal year is the calendar year. EPS is diluted EPS from continuing operations before the extraordinary item and the
 cumulative adjustment, as each 10-K's Eleven-Year Financial Review reports it: no filing publishes a figure excluding only one-offs
@@ -31,13 +33,25 @@ map as follows (retro/README.md, "SPGI"):
 Quarter values in the signals are as reported (the CAT reading): the releases' 'as adjusted' segment profit, which excludes
 restructuring, is in the print's note only.
 
+From 2010 (retro/README.md, "SPGI 2010-2013"): each year's EPS is from the latest filing that reports it, at the company's figure
+excluding only one-offs where a release on the same basis publishes it (2009-2012); a release that republishes an earlier year on a
+new basis restates it until the next 10-K ('restates', the CAT and PFE encoding, EPS only); revenue guides are words (no field), so
+BASE is the latest quarter's revenue growth as reported; the Financial Services line of 2011 on is the release's Standard & Poor's
+(S&P Ratings) and McGraw-Hill Financial (S&P Capital IQ / S&P Indices, then S&P Capital IQ and S&P Dow Jones Indices) less the
+royalty elimination ('fs_parts'), the old segment's scope; the third segment is the release's ('im_label'); McGraw-Hill Education
+is not reported from the Q4 2012 release (a discontinued operation): its signal is None, scores BASE and prints n/r, through
+retro/templates/spgi2_engine.py.tmpl, the None-tolerant copy of the engine used whenever the latest release's segment table is
+not the 2007-2009 one (the BKR bkr3 encoding).
+
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
 is the first trading day after it. Every earnings 8-K of 2007-2009 was accepted before the open (06:59-07:58 ET; the call at 8:30 a.m.).
 
 Output goes to staging/retrospective/SPGI until the series is added to the archive (--out archive/retrospective/SPGI).
 
 Usage
-  python3 retro/build_spgi.py --weekly 2008-01-01 2009-12-31
+  python3 retro/build_spgi.py --weekly 2008-01-01 2008-12-31
+  python3 retro/build_spgi.py --weekly 2009-01-05 2009-12-31
+  python3 retro/build_spgi.py --weekly 2010-01-04 2013-12-31
   python3 retro/build_spgi.py 2008-01-25
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/SPGI/<AS_OF>
 """
@@ -58,6 +72,7 @@ from build_unp import money, on_basis, pct_range  # noqa: E402
 SYMBOL, LISTED = "SPGI", "MHP"
 FACTS = os.path.join(HERE, "facts", "SPGI.json")
 ENGINE = os.path.join(HERE, "templates", "spgi_engine.py.tmpl")
+ENGINE2 = os.path.join(HERE, "templates", "spgi2_engine.py.tmpl")   # the latest release's segment table is not the 2007-2009 one
 OUT = os.path.join(ROOT, "staging", "retrospective", "SPGI")
 # rule T, the engine's signal thresholds: (BEAR, BASE, BULL, XBULL); the builder checks the fact sheet against them
 ENGINE_THRESHOLDS = {"fs": (-7, 4, 14, 18), "mhe": (-16, -6, 5, 23), "sales": (1, 4, 7, 15), "eps": (-98, -43, 13, 53),
@@ -65,7 +80,9 @@ ENGINE_THRESHOLDS = {"fs": (-7, 4, 14, 18), "mhe": (-16, -6, 5, 23), "sales": (1
 RULE_T_KEYS = {"fs": (1, False), "mhe": (1, False), "sales": (1, False), "eps": (1, False),
                "op_margin": (10, False)}           # (rounding unit, lower is better)
 GUIDE_KEYS = {"fy", "published", "source", "doc", "quotes", "words", "eps_guide", "eps_guide_note", "eps_growth", "eps_growth_base",
-              "eps_growth_base_note", "rev_guide_pct", "seg_words", "note"}
+              "eps_growth_base_note", "rev_guide_pct", "seg_words", "rev_words", "note"}
+PRINT_TOL = {None: 2, "k": 2, "m1": 150, "m0": 1500}   # segment sums, $ thousands: the release's own rounding (thousands, $0.1M, $1M)
+OLD_SEGMENTS = "Information & Media"                     # the third segment of the 2007-2009 tables (spgi_engine.py.tmpl)
 
 
 def fiscal_year_end(n):
@@ -116,22 +133,28 @@ def rule_t(rt):
 def check_print(p):
     """Re-derive a print's growth and margins from its raw published figures (they must match)."""
     r = p["raw"]
-    assert abs(r["fs_k"] + r["mhe_k"] + r["im_k"] - r["rev_k"]) <= 2, (p["quarter"], "segments sum to revenue")
-    assert abs(r["fs_prior_k"] + r["mhe_prior_k"] + r["im_prior_k"] - r["rev_prior_k"]) <= 2, (p["quarter"], "year-ago segments")
+    tol = PRINT_TOL[r.get("units")]
+    mhe, mhe0 = (r["mhe_k"], r["mhe_prior_k"]) if r["mhe_k"] is not None else (0, 0)   # None: not reported (discontinued)
+    assert abs(r["fs_k"] + mhe + r["im_k"] - r["rev_k"]) <= tol, (p["quarter"], "segments sum to revenue")
+    assert abs(r["fs_prior_k"] + mhe0 + r["im_prior_k"] - r["rev_prior_k"]) <= tol, (p["quarter"], "year-ago segments")
+    if "fs_parts" in r:                                # the Financial Services line from the release's own rows
+        for k, f in ((0, "fs_k"), (1, "fs_prior_k")):
+            assert abs(sum(v[k] for v in r["fs_parts"].values()) - r[f]) <= 2, (p["quarter"], f, "Financial Services parts")
     o, o0 = r["segop_k"] / r["rev_k"] * 100, r["segop_prior_k"] / r["rev_prior_k"] * 100
     pct = lambda a, b: round((a / b - 1) * 100, 1)
     e1, e0q = p["eps_q"], p["eps_q_prior"]
     want = {"sales_b": round(r["rev_k"] / 1e6, 3), "sales_pct": pct(r["rev_k"], r["rev_prior_k"]),
-            "fs_pct": pct(r["fs_k"], r["fs_prior_k"]), "mhe_pct": pct(r["mhe_k"], r["mhe_prior_k"]),
+            "fs_pct": pct(r["fs_k"], r["fs_prior_k"]),
+            "mhe_pct": pct(r["mhe_k"], r["mhe_prior_k"]) if r["mhe_k"] is not None else None,
             "im_pct": pct(r["im_k"], r["im_prior_k"]),
             "op_margin": round(o, 2), "op_margin_bp": round((o - o0) * 100, 1),
             "eps_pct": round((e1 / e0q - 1) * 100, 1), "diluted_shares_m": r["diluted_shares_k"] / 1000}
     assert e0q > 0, (p["quarter"], "a year-ago loss needs its encoding first")
     for k, v in want.items():
-        assert p[k] == v or abs(p[k] - v) < 1e-9, (p["quarter"], k, p[k], v)
+        assert p[k] == v or (v is not None and abs(p[k] - v) < 1e-9), (p["quarter"], k, p[k], v)
 
 
-def build(as_of, facts, raw, spx, engine, out):
+def build(as_of, facts, raw, spx, engines, out):
     if as_of not in raw:
         sys.exit(f"{as_of} is not a trading day")
     # Yahoo books the 2026-07-01 Mobility Global distribution as a split: it is not one, so no date on or after it is built until
@@ -169,14 +192,12 @@ def build(as_of, facts, raw, spx, engine, out):
     first_fy = max(reported(h)) + 1
     guide_fy = lambda p: p["fy"] + (1 if p["quarter"].startswith("Q4") else 0)
     prints = [p for p in facts["prints"] if p["published"] <= as_of and guide_fy(p) >= first_fy]
-    # no disruption theme in taxonomy_eras.json is live for a ratings, education and business information company in 2008-2009
+    # no disruption theme in taxonomy_eras.json is live for a ratings, education and business information company in 2008-2013
     # (GENAI, whose scope names education content and professional information, from 2022-11-30; STREAMING, scoped to linear TV
     # networks, from 2015-08-04; OFFSHORE to IT services): the builder refuses events until a theme encoding is decided
     events = [e for e in facts["events"] if e["published"] <= as_of and (h["published"] <= e["published"] or "doc" not in e)]
     if events:
         sys.exit(f"{as_of}: the SPGI builder has no encoding for event kinds {sorted({e['kind'] for e in events})}; decide one first")
-    if [c for c in facts["company_names"] if c["published"] <= as_of]:
-        sys.exit(f"{as_of}: a change of company name needs its encoding first")
     if not prints:
         sys.exit(f"{as_of}: no quarterly print after FY{first_fy - 1} is public yet")
     # a Q4 print's full-year actuals extend the annual history from its release until the next 10-K vintage
@@ -195,6 +216,16 @@ def build(as_of, facts, raw, spx, engine, out):
                      prev_fy_sales_growth=a["sales_growth"], prev_fy_fs_pct=a["fs_pct"], prev_fy_mhe_pct=a["mhe_pct"],
                      tax_rate=a["tax_rate"], tax_note=f'{a["tax_note"]} ({p["source"]})',
                      extended=f'{h["extended"]}, FY{y[2:]} from {p["source"]} ({p["published"]})')
+    # a release may republish an earlier year's company figure on a new basis ('restates': the Q4 2010 release's 2009 excluding
+    # one-offs, the Q3 and Q4 2011 releases' 2010 without the Broadcasting Group, the Q4 2012 release's 2011 without McGraw-Hill
+    # Education); each year comes from the latest filing that reports it, so the figure replaces the year from the print until a
+    # 10-K vintage published after the print carries the year (the CAT and PFE encoding, EPS only; retro/README.md, "SPGI 2010-2013")
+    for p in prints:
+        if p.get("restates") and p["published"] > h["published"]:
+            for yy, rr in p["restates"].items():
+                assert yy in h["eps_normalized"], (p["quarter"], yy, "restates a year outside the history")
+                h.update(eps_normalized={**h["eps_normalized"], yy: rr["eps"]}, normalization=f'{h["normalization"]}; {rr["note"]}',
+                         extended=f'{h["extended"]}, FY{yy[2:]} restated by {p["source"]} ({p["published"]})')
     latest = prints[-1]
     # the previous quarter is the print published just before the latest one (in or out of the history's scope)
     public = [p for p in facts["prints"] if p["published"] <= as_of]
@@ -216,6 +247,7 @@ def build(as_of, facts, raw, spx, engine, out):
     gr = stated("rev_guide_pct")
     gw = stated("words")
     gs = stated("seg_words")
+    grw = stated("rev_words")                          # revenue growth in words ('high single-digit'): no field
     if gw and ((ge and gw["published"] < ge["published"]) or (gr and gw["published"] < gr["published"])):
         gw = None                                      # a later numeric guide replaces words about an earlier one
     if ge and "eps_guide" in ge:                       # a dollar range: its midpoint
@@ -250,6 +282,7 @@ def build(as_of, facts, raw, spx, engine, out):
     if guides:
         bits = ([f"revenue {rev_fig}"] if gr else []) + \
                ([f"'{gs['seg_words']}' (components: no total is derived)"] if gs and not gr else []) + \
+               ([f"revenue growth in words, '{grw['rev_words']}' (no field)"] if grw and not gr else []) + \
                ([f"EPS {eps_fig}" + (f" ({ge['eps_guide_note']})" if ge.get("eps_guide_note") else "")] if ge else
                 ["no EPS guide in numbers"]) + \
                ([f"'{gw['words']}' (words or a one-sided bound: no field)"] if gw else []) + \
@@ -298,14 +331,15 @@ def build(as_of, facts, raw, spx, engine, out):
     # ── era-dependent text, from facts only: no disruption theme is live for McGraw-Hill on any date of 2008-2009 ──
     stage, watch, factors = "none", [], []
     sig_name, trigger = "Disruption theme: none live", "No live disruption theme"
-    key_tail = ("The 10-K ties results to the volume of debt issued in the capital markets, to state\n"
-                "  adoption opportunities and educational funding, and to advertising.")
+    key_tail = h.get("key_tail", "The 10-K ties results to the volume of debt issued in the capital markets, to state\n"
+                                 "  adoption opportunities and educational funding, and to advertising.")
     theme_summary = "no disruption theme has dated evidence"
     why = h["why"]
     cat3 = (f"(3) {fy_now} EPS guide {eps_fig} ({ge['doc']}): the company's own read of the year" if ge else
             f"(3) A {fy_now} EPS guide in numbers — none yet")
     cat4 = (f"(4) {fy_now} revenue guide {rev_fig} ({gr['doc']}): issuance, adoptions and advertising in one number" if gr else
-            f"(4) A {fy_now} consolidated revenue guide in numbers — none yet (segment ranges only)")
+            f"(4) A {fy_now} consolidated revenue guide in numbers — none yet" +
+            (" (revenue growth in words only)" if grw else " (segment ranges only)" if gs else ""))
 
     after_print = [p for p in prints if p["published"] < as_of and not any(p["published"] < d < as_of for d in days)]
     tag = f"(day after the {after_print[-1]['quarter']} print)" if after_print else f"(pre-{latest['next_print'].split(' print')[0]} print)"
@@ -316,12 +350,17 @@ def build(as_of, facts, raw, spx, engine, out):
         assert "before the open" in rt or "during the session" in rt, (as_of, same_day[-1]["quarter"], "released on AS_OF, not before the close")
         tag = f"(day of the {same_day[-1]['quarter']} print, public before the close)"
 
-    company, exchange = h["company"], h["exchange"]
+    # a name changed since the vintage applies from its publication; a listing from its effective date, once published
+    renames = [n for n in facts["company_names"] if h["published"] < n["published"] <= as_of]
+    company = renames[-1]["name"] if renames else h["company"]
+    moved = [x for x in facts.get("listings", []) if x["published"] <= as_of and x["effective"] <= as_of]
+    exchange, listed = (moved[-1]["exchange"], moved[-1]["symbol"]) if moved else (h["exchange"], LISTED)
     groups = [tuple(g) for g in h["groups"]]
     ids = (list(h["sources"]) + [p["source"] for p in prints] + [g["source"] for g in guides]
-           + ([dividend_src] if dividend_src else []) + split_ids + [e["id"] for e in events])
+           + ([dividend_src] if dividend_src else []) + split_ids + [e["id"] for e in events]
+           + [n["source"] for n in renames] + [x["source"] for x in moved])
     sources = [dict(id=i, **facts["sources"][i]) for i in dict.fromkeys(ids)]
-    sources.append({"id": "W0", "published": as_of, "title": f"Yahoo Finance daily prices, {LISTED} and S&P 500, truncated at AS_OF",
+    sources.append({"id": "W0", "published": as_of, "title": f"Yahoo Finance daily prices, {listed} and S&P 500, truncated at AS_OF",
                     "url": f"https://finance.yahoo.com/quote/{SYMBOL}/history",
                     "supports": f"close ${close:.2f} as traded on AS_OF, 52-week range, realized vol, beta, the {window_label} P/E distribution"})
     for s in sources:
@@ -331,16 +370,22 @@ def build(as_of, facts, raw, spx, engine, out):
                    "eps_q_prior", "eps_pct")
     shares = {int(k): v for k, v in h["diluted_shares_m"].items()}
     r = latest["raw"]
+    other = latest.get("im_label", OLD_SEGMENTS)
+    mhe_text = (f"McGraw-Hill Education ${r['mhe_k'] / 1000:,.1f}M against ${r['mhe_prior_k'] / 1000:,.1f}M ({latest['mhe_pct']:+.1f}%)"
+                if r["mhe_k"] is not None else "McGraw-Hill Education not reported")
     volumes = (f"Financial Services revenue ${r['fs_k'] / 1000:,.1f}M against ${r['fs_prior_k'] / 1000:,.1f}M a year earlier "
-               f"({latest['fs_pct']:+.1f}%), McGraw-Hill Education ${r['mhe_k'] / 1000:,.1f}M against ${r['mhe_prior_k'] / 1000:,.1f}M "
-               f"({latest['mhe_pct']:+.1f}%), Information & Media ${r['im_k'] / 1000:,.1f}M ({latest['im_pct']:+.1f}%), as the release's "
+               f"({latest['fs_pct']:+.1f}%), {mhe_text}, {other} ${r['im_k'] / 1000:,.1f}M ({latest['im_pct']:+.1f}%), as the release's "
                "segment table shows them" + (f"; {latest['note']}" if latest.get("note") else ""))
+    # the engine: the 2007-2009 segment table, else its None-tolerant copy (a segment not reported, the third segment renamed)
+    engine2 = latest["mhe_pct"] is None or OLD_SEGMENTS not in other
+    engine = engines[1] if engine2 else engines[0]
+    fmt = lambda v: "n/r" if v is None else f"{v:+.1f}%"
     R = repr
     head = f'''#!/usr/bin/env python3
 """
-{LISTED} Signal Model  ·  RETROSPECTIVE as of {as_of}  {tag}  (methodology v2, retro method r2)
+{listed} Signal Model  ·  RETROSPECTIVE as of {as_of}  {tag}  (methodology v2, retro method r2)
 ──────────────────────────────────────────────────────────────────────
-{company} ({exchange}: {LISTED})  ·  {h["business_line"]}
+{company} ({exchange}: {listed})  ·  {h["business_line"]}
 Generated by retro/build_spgi.py from retro/facts/SPGI.json: the constants below are the facts public on
 AS_OF; the engine underneath derives every scenario input from them by frozen rules. Do not edit by hand.
 
@@ -350,7 +395,7 @@ Format: segment bridge → signal dashboard → bear anatomy → updated EPP →
 
 # ── RETROSPECTIVE FRAME ───────────────────────────────────────────────────────
 TICKER      = "{SYMBOL}"   # series key
-LISTED_SYMBOL = "{LISTED}"   # the listing on AS_OF
+LISTED_SYMBOL = "{listed}"   # the listing on AS_OF
 COMPANY     = {R(company)}
 AS_OF       = "{as_of}"
 PRICE_DATE  = "{as_of}"
@@ -396,7 +441,7 @@ MARGIN_SIGNAL_NAME = {R(h["margin_signal_name"])}
 
 # ── FACTS: latest print ({latest["source"]}, published {latest["published"]}) and {fy_now} guide ──
 LATEST          = {R({k: latest.get(k) for k in latest_keys})}
-PREV_FS         = {R(prev)}
+{f"OTHER_SEGMENT   = {R(other)}   # the release's third segment" + chr(10) if engine2 else ""}PREV_FS         = {R(prev)}
 EPP_TODAY_EPS   = {eps_now}   # {eps_label}
 EPS_LABEL       = {R(eps_label)}
 FWD_GUIDE       = {R(tuple(fwd))}   # {fwd_kind}
@@ -410,7 +455,7 @@ SHARES_DIL_B    = {latest["diluted_shares_m"] / 1000:.4f}
 GROUPS          = {R(groups)}
 GROUPS_BASIS    = {R(h["groups_basis"])}
 NEXT_PRINT      = {R(latest["next_print"])}
-SHARE_GAIN_TEXT = {R(f"Franchise: {h['fy_label']} revenue {h['prev_fy_sales_growth']:+.1f}%, Financial Services {h['prev_fy_fs_pct']:+.1f}%, Education {h['prev_fy_mhe_pct']:+.1f}%; {latest['quarter'].split()[0]} segment operating margin {latest['op_margin']:.2f}% ({latest['op_margin_bp']:+.1f}bp)")}
+SHARE_GAIN_TEXT = {R(f"Franchise: {h['fy_label']} revenue {h['prev_fy_sales_growth']:+.1f}%, Financial Services {h['prev_fy_fs_pct']:+.1f}%, Education {fmt(h['prev_fy_mhe_pct'])}; {latest['quarter'].split()[0]} segment operating margin {latest['op_margin']:.2f}% ({latest['op_margin_bp']:+.1f}bp)")}
 BALANCE_TEXT    = {R(f"{h['cash_label']} year-end cash and equivalents ${h['cash_b']:.3f}B, {h['cash_label']} operating cash flow ${h['ocf_b']:.3f}B, dividend ${dividend:.2f} a year, {h['cash_return_text']}")}
 VOLUMES_TEXT    = {R(volumes)}
 CAPITAL_RETURN  = {R(latest["cash_return_text"])}
@@ -436,14 +481,16 @@ def main():
     a = ap.parse_args()
     with open(FACTS, encoding="utf-8") as fh:
         facts = json.load(fh)
-    with open(ENGINE, encoding="utf-8") as fh:
-        engine = fh.read()
+    engines = []
+    for path in (ENGINE, ENGINE2):
+        with open(path, encoding="utf-8") as fh:
+            engines.append(fh.read())
     raw, spx = load_series(SYMBOL), load_series("^GSPC")
     dates = list(a.dates)
     if a.weekly:
         dates += weekly_dates(a.weekly[0], a.weekly[1], sorted(raw), facts["prints"])
     for d in sorted(set(dates)):
-        tag, q, stage = build(d, facts, raw, spx, engine, os.path.abspath(a.out))
+        tag, q, stage = build(d, facts, raw, spx, engines, os.path.abspath(a.out))
         print(f"{d}  {tag:<34}  latest print {q:<8}  theme evidence: {stage}")
 
 

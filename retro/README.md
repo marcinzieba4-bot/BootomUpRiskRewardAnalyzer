@@ -21949,7 +21949,7 @@ Judgement calls that could carry hindsight:
 
 The hindsight results are in `staging/retrospective/V/FINDINGS.md` ("2022-2026"): hypotheses, never inputs.
 
-## SPGI (The McGraw-Hill Companies): the twenty-ninth ticker, in staging, 2008-2009
+## SPGI (The McGraw-Hill Companies): the twenty-ninth ticker, in staging, 2008-2013
 
 The SPGI series is built apart from the other twenty-eight and shares nothing with them but the machinery: its own fact sheet
 (`retro/facts/SPGI.json`), builder (`retro/build_spgi.py`, the CAT builder with segment revenue signals, EPS guides as ranges or as growth on
@@ -22171,6 +22171,186 @@ Judgement calls that could carry hindsight:
 - quarter values as reported, the releases' "as adjusted" segment profit in the notes only (no class);
 - DURABLE rather than CYCLICAL, and no theme for the rating-agency regulation the 10-Ks name (label only);
 - the filings listed above as not read: a guide in an unread passage would be missed, though every release and 10-K outlook was read.
+
+The hindsight results are in `staging/retrospective/SPGI/FINDINGS.md`: hypotheses, never inputs.
+
+### SPGI 2010-2013: four vintages, the company's figures excluding one-offs, Broadcasting and McGraw-Hill Education discontinued, McGraw Hill Financial
+
+209 weekly dates, 2010-01-08 to 2013-12-31, on the same method, builder, engine and rule-T thresholds. The owner asked for 2010-2013
+("same rules"). Built on 2026-11-20 in the same session that had scored the 2008-2009 dates and written their `FINDINGS.md`, so those
+outcomes were known when this batch was read. No decision below uses them: each applies a rule that existed before (the r2 rollover and
+decade rules, the ACN and PEP rule for a company figure excluding only one-offs on the same basis, the CAT and PFE `restates` field, the
+LMT and SO seam rule, the ACN words rule, the BKR listed-symbol and rename encodings, the BKR `bkr3` None-tolerant engine, the AAPL 10-K/A
+rule) or a 2008-2009 encoding (the latest quarter's growth as reported for BASE, quarter values as reported, DURABLE). The readings that
+could still carry hindsight are listed at the end with how far the other reading moves.
+
+```bash
+python3 retro/build_spgi.py --weekly 2010-01-04 2013-12-31                  # 209 dates, 2010-01-08 .. 2013-12-31
+for c in 2010-01-27 2010-02-25 2010-04-28 2010-07-23 2010-10-27 2011-02-02 2011-02-24 2011-04-27 2011-07-29 2011-10-21 2012-02-01 \
+         2012-02-08 2012-04-25 2012-07-27 2012-11-02 2013-02-13 2013-03-01 2013-03-21 2013-05-01 2013-05-07 2013-05-15 2013-07-26 \
+         2013-09-11 2013-10-23 2014-01-01; do python3 retro/tools/firewall.py $c SPGI; done
+```
+
+Read, by the session's model directly with no delegated transcription: the 16 earnings releases of Q4 2009 to Q3 2013 (ex.99: the
+narrative and outlook, the statements of income, the segment tables, the tables of adjusted information); the FY2009 and FY2010 10-Ks
+with their Exhibit 13 (Items 1, 1A and 5; the Eleven-Year and Five-Year Financial Reviews, the statements, the earnings-per-share and
+segment notes, the dividend paragraphs); the FY2011 and FY2012 10-Ks (the same items, and Item 6) and the FY2012 10-K/A of 2013-03-20 (its
+explanatory note and Item 6); the FY2002-FY2005 10-Ks' earnings-per-share notes (the first year's diluted shares of each vintage); and
+every other 8-K of January 2010 to December 2013 by its items and exhibits. **Not read:** the 10-Qs and the proxy statements. The source
+ids are `SP18`-`SP44`. 540 strings were checked with `verbatim.py`, each against its own filing (540/540, the 2008-2009 batch's 237
+included). The fact sheet only gains facts: its 2008-2009 entries are unchanged (the generator asserts it). Decided on 2026-11-20,
+before any 2010-2013 model was built or any 2010-2013 outcome computed:
+
+- **Release timing.** Every earnings 8-K was accepted before the open (07:10-07:13 ET; the call at 8:30 a.m.), so each week is dated the
+  next trading day, and a Friday release its own day: 2010-01-27, 2010-04-28, 2010-07-23 (a Friday), 2010-10-27, 2011-02-02, 2011-04-27,
+  2011-07-29, 2011-10-21, 2012-02-01, 2012-04-25, 2012-07-27, 2012-11-02 (a Friday), 2013-02-13, 2013-05-01, 2013-07-26 and 2013-10-23.
+  The FY2009-FY2011 10-Ks (2010-02-24 15:46, 2011-02-23 15:16 and 2012-02-07 12:35 ET) and the 10-K/A (2013-03-20 15:59 ET) were accepted
+  during the session, the FY2012 10-K (2013-02-28 06:03 ET) before the open; each keeps its date. A Q4 print extends the history from its
+  release to the 10-K.
+- **History: each year from the latest filing that reports it.** The FY2009 10-K's Eleven-Year Financial Review gives 2000-2009 on one basis
+  (it agrees with the FY2006-FY2008 reviews on every shared year). The FY2010 10-K's review covers five years (2006-2010), so 2001-2005
+  come from the FY2009 review. The FY2011 10-K's selected data gives revenue for 2007-2011 without the Broadcasting Group (discontinued
+  from the Q3 2011 release, sold in December 2011), but its five-year EPS row is net income's (2011 carries the Broadcasting gain), so
+  its EPS from continuing operations comes from the statement of income (2009-2011): 2006-2008 keep the FY2010 10-K's, with
+  Broadcasting. The FY2012 10-K gives 2008-2012 without McGraw-Hill Education (held for sale, sold on 2013-03-22), and its 10-K/A
+  corrects 2008 and 2009 ("Revenue amounts were corrected as McGraw-Hill Education's gross profit was inadvertently subtracted from the
+  Company's total revenue instead of subtracting McGraw-Hill Education's total revenue from the Company's total revenue."; EPS $1.83 to
+  $1.79 and $1.73 to $1.74): a vintage of its own from 2013-03-20 (the AAPL 10-K/A rule); 2006-2007 keep the FY2010 10-K's EPS and 2007 the
+  FY2011 10-K's revenue, with Education. **Seams stay as published** (the LMT IS&GS and SO rules): 2008-2009 with Broadcasting beside
+  2009-2011 without it in the FY2011 vintage, and 2007 with Education ($2.94, revenue $6,669M) beside 2008 without it ($1.79, revenue
+  $3,609M) in the FY2012 vintages, which sets BEAR from 2013-03-01. Prices in the P/E window are as traded, with Education, against EPS
+  without it for 2008-2012 (the SO Mirant reading). Diluted shares of the first year come from the earliest 10-K that reports it on the
+  post-split basis (2000's 196,072K from the FY2002 10-K, 2001's 195,873K from FY2003 and 2002's 194,573K from FY2004, doubled for the
+  2005 split; 2003's 384,009K from FY2005), the last year's from its own 10-K.
+- **EPS: the company's figure excluding only one-offs where a release on the same basis publishes it** (the ACN and PEP rule), else
+  diluted EPS from continuing operations as reported. From the Q4 2010 release the releases print a full-year figure without their
+  listed one-offs: 2010 $2.69 and 2009 $2.37 (consolidated; GAAP $2.65, $2.33), 2011 $2.91 and 2010 $2.68 (without Broadcasting; GAAP
+  $2.75, $2.64) and 2012 $2.75 and 2011 $2.09 (without Education; GAAP $2.37, $2.00). The Q4 2009 release lists its one-offs' per-share
+  effects but prints no figure without them, so 2009 is GAAP $2.33 until the Q4 2010 release. No filing of 2010-2013 prints 2008 or an
+  earlier year without its one-offs, so 2001-2008 stay GAAP, as in 2008-2009. No year is excluded (no year's listed one-offs come near its income).
+- **Restatements:** a release that republishes an earlier year on a new basis restates its EPS until the next 10-K (`restates`, the CAT and
+  PFE encoding, EPS only): 2009 to $2.37 (Q4 2010 release, from 2011-02-02), 2010 to $2.68 (Q3 2011, from 2011-10-21, and Q4 2011) and
+  2011 to $2.09 (Q4 2012, from 2013-02-13). Between a restating release and its 10-K the history mixes bases as published: from
+  2011-10-21 2009's $2.37 is consolidated and 2010's $2.68 is without Broadcasting; on 2013-02-13 and 2013-02-22 2010's $2.68 carries
+  Education and 2011's $2.09 does not.
+- **Current-FY EPS: the fiscal-year guide midpoint.** FY2010 $2.55-2.65 (Q4 2009, kept in Q1 2010; Q2 2010's "we now expect to finish the
+  year at the low end of that range" is words, so the range stands, the ACN words rule), then $2.60-2.65 excluding $0.02 of divestiture
+  gains (Q3 2010); FY2011 $2.79-2.89 (Q4 2010 to Q2 2011, whose "top end" is words), then $2.81-2.86 from continuing operations without
+  Broadcasting (Q3 2011); FY2012 $3.25-3.35, the "baseline" outlook of the Q4 2011 release and "adjusted" from Q1 2012 ("near the high end"
+  in Q2, words), then $3.35-3.40 (Q3 2012); FY2013 $3.10-3.20 adjusted, continuing operations without Education (Q4 2012, kept in Q1
+  2013), $3.15-3.25 (Q2 2013) and $3.25-3.30 (Q3 2013). A guide that excludes an announced item is read as stated (the ACN rule), like the
+  history's company figures from 2009.
+- **Forward revenue growth: the latest quarter's, as reported.** No release of 2010-2013 guides consolidated revenue in numbers (none
+  guides a segment range either), and the 2013 outlook is words: "revenue guidance of high single-digit growth" (Q4 2012) and "high
+  single-digit revenue growth for the full year, maybe a tad better" (the CFO's remarks furnished on 2013-09-10): words give no field,
+  so BASE takes the latest quarter's revenue growth as reported (the 2008-2009 rule), from -2.5% (Q3 2011) to +22.1% (Q4 2012, with the
+  S&P Dow Jones Indices joint venture formed on 2012-06-29 in the quarter and not in the year-ago one).
+- **Dividends,** each from the first filing that states the rate, the 10-K each year (no release or 8-K states it first; the Q4 releases
+  follow the January board meetings but print no new rate): $0.235 (FY2009 10-K), $0.25 (FY2010), $0.255 (FY2011) and $0.28 (FY2012). The
+  special dividend of $2.50 a share paid on 2012-12-27 is not a rate (in the note).
+- **Signals.** The five of 2008-2009 with their thresholds. The Financial Services line is the old segment's scope as each release
+  reports it: Financial Services to Q4 2010; Standard & Poor's plus McGraw-Hill Financial less the intersegment royalty elimination from
+  Q1 2011 (the FY2010 10-K reconciles them: $1,695.4M + $1,188.5M - $56.2M = $2,827.7M, the old segment's 2010 revenue to $0.1M); S&P
+  Ratings plus S&P Capital IQ / S&P Indices less the elimination from Q4 2011; S&P Ratings, S&P Capital IQ and S&P Dow Jones Indices less
+  the elimination from Q4 2012 (`fs_parts`, each part from its own row). The third segment is the release's: Information & Media to Q3
+  2011, Commodities & Commercial from Q4 2011 (`im_label`, in the text only). McGraw-Hill Education is not reported from the Q4 2012
+  release (a discontinued operation): its signal is None, scores BASE and prints n/r. The models whose latest release's table is not the
+  2007-2009 one (Education not reported, or the third segment renamed, 2012-02-01 on) use `retro/templates/spgi2_engine.py.tmpl`, the
+  None-tolerant copy of the engine that also names the third segment from the release (the BKR `bkr3` encoding; rules, thresholds and
+  weights line for line). Quarter values stay as reported; the releases' adjusted EPS and their one-off sentences are in the notes.
+- **The name and the listing.** The company is "McGraw Hill Financial, Inc." from the 8-K of 2013-05-06 (the name changed at the annual
+  meeting of 2013-05-01), and its NYSE symbol MHFI from 2013-05-14 ("New Ticker Symbol, MHFI, Will Begin Trading on May 14th", Q1 2013
+  release): `company_names` and `listings`, the BKR encodings. Every printed line names MHP to 2013-05-13 and MHFI from 2013-05-14.
+- **Durability: DURABLE, risk 2**, on each 10-K's own words. The FY2009-FY2011 10-Ks head a risk factor "Our education businesses operate
+  in a cyclical environment", whose text is the adoption cycle ("Our School Education Group and the industry it serves are influenced
+  strongly by the magnitude and timing of state adoption opportunities."): a segment's market, not the company's earnings called
+  cyclical (the 2008-2009 reading of "Cyclical Nature of Customers' Businesses"); the FY2012 10-K calls nothing cyclical. No theme is
+  live (as in 2008-2009).
+- **Adds nothing:** the credit agreements (2010-08-02, 2013-06-20), the bylaw 8-Ks (2010-05-25, 2010-11-01, 2011-04-29, 2013-06-26), the
+  director and officer 8-Ks (2011-01-19, 2012-07-02, 2013-07-11), the Harold W. McGraw Jr. trust purchase (2011-06-24), the Broadcasting
+  sale process (2011-06-14), the separation plan (2011-09-12, 2011-09-26, 2011-12-07: "will provide further guidance"), the S&P Dow Jones
+  Indices agreements (2011-11-04, 2011-11-14, 2012-07-05), the McGraw-Hill Education sale (2012-11-26, 2013-03-05, 2013-03-26) and the DOJ
+  complaint (2013-02-04, 2013-02-05): none gives a figure for a coming period or a rate.
+- **Anachronism list:** Commodities & Commercial (2012-01-31, the Q4 2011 release) and MHFI (2013-04-30, the Q1 2013 release; the earlier
+  EDGAR hits are other filers' abbreviations) join `taxonomy_eras.json`; no other ticker's model contains either.
+- **A text fix to 2008-2009:** the catalyst line said "(segment ranges only)" on every date without a consolidated revenue guide; the
+  three January 2008 dates had no FY2007 segment range in the fact sheet, so their line now ends at "none yet". No input, class or tier
+  changes; the other 102 models of 2008-2009 rebuild byte for byte.
+
+Controls and checks (before any 2010-2013 outcome):
+- **`retro_tool run` passes on all 209 dates, and on the three corrected January 2008 dates, with no warning.**
+- **Controls:** altering one value of each 2010-2013 print (its Financial Services growth, its third segment's name, each Q4 print's
+  full-year EPS and each restated year), each vintage (its last year's EPS, its durability words), each guide (its first guided field),
+  each dividend, the company name and the listing changes no model dated before its publication (or, for the listing, its effective
+  date), across all 314 dates of 2008-2013, and changes the first weekly date on or after it (74 controls, none inert).
+- **Leak scan** (all 314 dates): 126 hits in 148,004 (model, later token) pairs, none a leak: four closing prices that equal a later
+  quarter's margin (33.61, 33.95, 34.17, 28.18), segment names that a print already public carries in its note before a later vintage
+  names them (S&P Capital IQ, S&P Capital IQ / S&P Indices, Commodities & Commercial, S&P Dow Jones Indices), and MHFI on 2013-05-01 and
+  2013-05-10, from the Q1 2013 release that announced it. As a positive control, 4 to 18 of the latest print's own tokens appear in each
+  model. No fact's own text names a later year, date or quarter, except the listing's note ("MHP to 2013-05-13", from the effective date
+  it states) and the share notes of five 2000-2004 sources naming the 2005 split, which every built date follows.
+- **Regression:** the 2008-2009 models rebuild byte for byte except the three text fixes above. The shared code changes only in
+  `taxonomy_eras.json` (the two terms above) and the firewall tool (its SPGI plants), so no other ticker's model changes.
+- **Firewall:** run after this build is committed, before any outcome (the result is recorded in the next commit).
+
+Seen in the build (method behaviour, not tuned):
+- **CHEAP on 163 dates, FAIR on 17, RICH on 29; legacy tier BUY on 150, ACCUMULATE on 31, WATCHLIST on 17, AVOID on 11.** Robustness
+  agrees on 121 dates (8 of 8), on 40 (7 of 8) and on 48 at 6 of 8 or fewer, nearly all of them the FAIR and RICH dates of October 2011
+  to February 2013 and their neighbours. CHEAP runs from 2010-01-08 to 2011-10-14 and from 2013-02-08 to 2013-09-13; FAIR and RICH
+  alternate with CHEAP from 2011-10-21 to 2013-02-01; FAIR from 2013-09-20 and RICH (tier AVOID) from 2013-10-23 to 2013-12-31.
+- **The anchors and the multiple.** FY2010's guide ($2.60, 2010-01-27 to 2010-10-22): $27.34-36.40 is 10.5-14.0x, the 5th-20th
+  percentile of a window whose median is 19.7-20.4x. FY2011's ($2.84, then $2.835 without Broadcasting): $36.75-46.90 is 12.9-16.5x,
+  the 16th-42nd (median 17.6-19.5x). FY2012's ($3.30, $3.375 from 2012-11-02): $42.50-58.34 is 12.6-17.3x, the 14th-57th (median
+  16.3-17.5x). FY2013's ($3.15, $3.20, $3.275): $44.33-78.20 is 14.1-23.9x, the 7th-94th (median 18.1-19.5x): from 2013-10-23 the price
+  is 21.6-23.9x, the 77th-94th percentile.
+- **The floor** (the median of the calendar-year P/E lows) is 14-17x: an EPP of $36.75-49.12. The price is under it on 81 dates (all 52 of
+  2010, 17 in 2011 and 12 in 2012), at most 38% under, and up to 59% above it at the end of 2013. The FY2012 vintages lift the 2008 and 2009 lows
+  from 7.4x and 7.8x to 10.4x and 10.0x, as their EPS without Education is lower against prices with it.
+- **BEAR** is 2001's -19.3%/yr to 2011-02-18, then 2008's -14.6% (2007 $2.94 to 2008 $2.51) once 2001 leaves the decade; -22.0% on
+  2013-02-13 and 2013-02-22 (2010's $2.68 with Education to 2011's restated $2.09 without it); and from the FY2012 10-K the seam,
+  2007's $2.94 with Education to 2008's $1.83 without it (-37.8%), then $1.79 from the 10-K/A (-39.1%, 2013-03-22 on): the BEAR price is
+  $18-23 on those dates.
+- **BULL** is the decade CAGR (+7.8% to +12.1%) to 2013-02-08 and BASE's rate after (FY2003-FY2012's +4.9% is lower); **XBULL** is the
+  2001-2003 rebound (+36.5%) until the FY2011 10-K, then 2002-2004's +15.5%, BASE's rate from 2013-02-13 and 2010-2012's +21.6%
+  from 2013-05-01.
+- **BASE follows the quarters:** -4.5%/yr on Q3 2009 (to 2010-01-22), +3.1% to +10.3% through Q2 2011, +0.1% on Q3 2011 (revenue -2.5%,
+  Education -11.1% in an adoption-heavy quarter), +2.2% to +8.4% through Q3 2012, +25.3-25.5% on Q4 2012 (revenue +22.1%, the joint
+  venture in the quarter), +17.5% and +20.0% on Q1 and Q2 2013 and +10.4% on Q3 2013. The RICH dates are those of the low-BASE quarters
+  (Q3 2011's +0.1%, Q2 2012's +2.2%), three dates of December 2012 to February 2013 on Q3 2012's +5.2%, and late 2013, when the price
+  is 44-59% above the floor and BASE +10.4%.
+- **The proxy composite** is 1.45-3.30: 1.65 on Q3 2011 (Financial Services +6.4%, Education and revenue at BEAR), 3.30 on Q4 2012
+  (Financial Services, revenue, EPS and the margin at XBULL, Education n/r at BASE). The engine is `spgi2` from 2012-02-01.
+
+How far each call moves the classes (the 209 dates rebuilt with one encoding changed and classified offline; no outcome consulted):
+- 2013's revenue words read as a number ("high single-digit" as 7-9%, from the Q4 2012 release; BASE on it instead of the latest
+  quarter): 19 classes (14 CHEAP to FAIR, 5 FAIR to RICH, 2013-05-10 to 2013-10-18) and 32 tiers (2013-03-01 to 2013-10-18), the
+  batch's largest call;
+- GAAP EPS throughout (no company figure excluding one-offs, 2009-2012): 1 class (2012-08-10), 5 tiers;
+- McGraw-Hill Education kept in 2008-2011 (the Q4 2012 restatement and the FY2012 recast unused, so the seam moves to 2011-2012): 4
+  classes (CHEAP to FAIR, 2013-05-10 to 2013-07-19), 3 tiers;
+- the FY2012 10-K/A unused: no class, 3 tiers;
+- the outlook words read as the range's end ($2.55, $2.65, $2.89, $3.35): 2 classes, 1 tier;
+- the Education signal at BASE on every date (as if never reported): 13 classes (toward CHEAP, 2011-10-21 to 2013-01-25), no tier;
+- every signal at its BEAR value: 72 classes (43 CHEAP and 17 FAIR to RICH, 12 CHEAP to FAIR), no tier; at its XBULL value: 30 classes
+  (the FAIR and RICH dates of 2011-10-21 to 2013-02-01 toward CHEAP), no tier;
+- CYCLICAL instead of DURABLE: no class, no tier (label only).
+The CHEAP calls of 2010-2011 rest on the multiple at the bottom of its decade (the 5th-42nd percentile) with the price under the floor;
+the FAIR and RICH calls on the quarters whose revenue fell (BASE near zero) and on the 2013 rerating against BASE.
+
+Judgement calls that could carry hindsight:
+- 2013's "high single-digit" revenue growth read as words, so BASE takes the latest quarter (19 classes and 32 tiers move if it is read
+  as 7-9%), and reported growth that carries the S&P Dow Jones Indices joint venture from Q3 2012 (not measured: no release states the
+  growth without it in numbers for every quarter);
+- the seam at 2007-2008 as published, which sets BEAR at -37.8% to -39.1% from 2013-03-01, with prices with Education against EPS without
+  it (4 classes if Education is kept through 2011);
+- the company's figures excluding one-offs, from the releases (1 class, 5 tiers if GAAP);
+- the Financial Services line rebuilt from the segments that succeeded it, the royalty elimination included (not measured), and the
+  Education signal kept until it is not reported (13 classes if it scored BASE throughout);
+- the signals and rule T as in 2008-2009, chosen by a builder who knows how 2008-2013 went (72 classes at BEAR, 30 at XBULL);
+- the outlook words read as words (2 classes), the 10-K/A as a vintage of its own (no class);
+- DURABLE on 10-Ks whose education risk factor is headed "a cyclical environment" (label only);
+- this batch was decided in the session that had scored 2008-2009 and written its findings (disclosed above); the 10-Qs and proxy
+  statements were not read.
 
 The hindsight results are in `staging/retrospective/SPGI/FINDINGS.md`: hypotheses, never inputs.
 

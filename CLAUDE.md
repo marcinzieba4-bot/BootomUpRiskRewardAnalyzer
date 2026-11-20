@@ -23,7 +23,7 @@ touching either directory.
   outcomes or findings enters another's models. UNP (2008-2026 so far), LOW (2008-2026 so far), AAPL (2008-2026 so far),
   NKE (2008-2026 so far), AVGO (from its 2009-08-06 listing to 2026-10-30 so far), PEP (2008 to 2026-10-30 so far), MSFT
   (2008 to 2026-10-30 so far), XOM (2008 to 2026-10-30 so far), SHW (2008 to 2026-11-06 so far), WMT (2008 to 2026-11-06 so far), RCL (2008 to 2026-11-06 so far), MAR (2008 to 2026-11-03 so far), BKR (2008 to 2017-06-30, then 2019-02-01 to 2026-11-06 so far), PFE (2008 to 2026-11-04 so far), CMCSA (2008 to 2026-11-06 so far), CAT (2008 to 2026-11-06 so far), BMY (2008 to 2026-11-06 so far), NVDA (2008 to 2026-11-06 so far), F (2008-01-04 to 2026-11-06 so far; 2022-01-07 onward was built first at the owner's request, and dates before 2022 are an early era with its
-  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far) and SPGI (2008-01-04 to 2009-12-31 so far) sit in `staging/retrospective/` until the owner adds
+  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far) and SPGI (2008-01-04 to 2013-12-31 so far) sit in `staging/retrospective/` until the owner adds
   them to the archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM", "SHW", "WMT", "RCL", "MAR", "BKR", "PFE", "CMCSA", "CAT",
   "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG", "JPM", "V", "SPGI"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py`, `mu_signal_model.py`, `v_signal_model.py` and `spgi_signal_model.py` (other branches) files
   and today's profiles in `data/business_profiles.json` (NVDA's, SO's, V's and SPGI's included) are 2026 analyses: never inputs to a retrospective. AVGO did not trade
@@ -195,6 +195,18 @@ touching either directory.
   (no field), FY2008 as growth of 3-5% on FY07's $2.94 without the two items the guide excludes ($2.99), then ranges, FY2009 ranges; revenue
   only by segment for 2007-2008 (components: no total derived, so BASE is the latest quarter's reported growth) and consolidated for 2009;
   signals Financial Services and Education revenue, revenue, diluted EPS and the segment margin, as reported; DURABLE (the risk factor
-  "Cyclical Nature of Customers' Businesses" is the customers' adoption cycle); no live theme (retro/README.md, "SPGI").
+  "Cyclical Nature of Customers' Businesses" is the customers' adoption cycle); no live theme (retro/README.md, "SPGI"). From 2010:
+  each year from the latest filing that reports it (the FY2009 eleven-year review, the FY2010 five-year review, the FY2011 and FY2012
+  10-Ks' continuing operations without Broadcasting, then without McGraw-Hill Education, and the FY2012 10-K/A of 2013-03-20 as a vintage
+  of its own), seams as published (2007 with Education beside 2008 without it sets BEAR from 2013-03-01); EPS is the company's figure
+  excluding only one-offs where a release on the same basis prints it (2009 $2.37, 2010 $2.69/$2.68, 2011 $2.91/$2.09, 2012 $2.75),
+  GAAP otherwise; releases that republish a year on a new basis restate it until the next 10-K (`restates`); the EPS guides are ranges
+  (words keep the range), revenue is never guided in numbers (2013's "high single-digit" is words), so BASE is the latest quarter's
+  growth as reported; dividends from each 10-K ($0.235 to $0.28; the 2012 special dividend is not a rate); the Financial Services line
+  is the releases' Standard & Poor's (S&P Ratings) and McGraw-Hill Financial (S&P Capital IQ, S&P Dow Jones Indices) less the royalty
+  elimination (`fs_parts`); Education is n/r from the Q4 2012 release through `spgi2_engine.py.tmpl`, the None-tolerant copy (the BKR
+  `bkr3` encoding); McGraw Hill Financial, Inc. from 2013-05-06 and NYSE: MHFI from 2013-05-14 (`company_names`, `listings`); DURABLE
+  (the FY2009-FY2011 10-Ks' "Our education businesses operate in a cyclical environment" is the adoption cycle); this batch was
+  decided in the session that wrote the 2008-2009 findings, disclosed (retro/README.md, "SPGI 2010-2013").
 - **Never use the owner's personal email** in request headers to external
   services (SEC asks for a contact in the User-Agent).

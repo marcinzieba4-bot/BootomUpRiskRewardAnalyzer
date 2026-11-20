@@ -131,7 +131,7 @@ THEME_SIGNAL_TRIGGER = 'No live disruption theme'
 THEME_SUMMARY        = 'no disruption theme has dated evidence'
 KEY_TRIGGER_TAIL     = 'The 10-K ties results to the volume of debt issued in the capital markets, to state\n  adoption opportunities and educational funding, and to advertising.'
 CATALYST_3      = '(3) A FY07 EPS guide in numbers — none yet'
-CATALYST_4      = '(4) A FY07 consolidated revenue guide in numbers — none yet (segment ranges only)'
+CATALYST_4      = '(4) A FY07 consolidated revenue guide in numbers — none yet'
 
 # ═════════════════════════════════════════════════════════════════════════════
 # ENGINE — identical in every retrospective; everything above is dated facts.
