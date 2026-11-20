@@ -71,6 +71,279 @@
    "title": "Visa Inc. 10-K for the fiscal year ended September 30, 2009",
    "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312509239249/d10k.htm",
    "supports": "fiscal 2009 statements of operations and cash flows, selected data, diluted class A EPS and shares, Item 1, 1A and 5 wording"
+  },
+  "V12": {
+   "published": "2009-02-09",
+   "filed": "accepted 2009-02-09 15:47 ET (during market hours)",
+   "title": "Visa Inc. 10-Q for the quarter ended December 31, 2008",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312509022518/d10q.htm",
+   "supports": "accounts receivable at December 31, 2008 (the year-ago balance for the Q1 FY10 print)"
+  },
+  "V13": {
+   "published": "2009-05-06",
+   "filed": "accepted 2009-05-06 09:29 ET (before the open)",
+   "title": "Visa Inc. 10-Q for the quarter ended March 31, 2009",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312509100928/d10q.htm",
+   "supports": "accounts receivable at March 31, 2009 (the year-ago balance for the Q2 FY10 print)"
+  },
+  "V14": {
+   "published": "2009-07-31",
+   "filed": "accepted 2009-07-30 17:05 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-Q for the quarter ended June 30, 2009",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312509159678/d10q.htm",
+   "supports": "accounts receivable at June 30, 2009 (the year-ago balance for the Q3 FY10 print)"
+  },
+  "V20": {
+   "published": "2010-02-04",
+   "filed": "accepted 2010-02-03 16:13 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q1 2010 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312510020769/dex991.htm",
+   "supports": "Q1 FY10 revenues, client incentives, expenses, operating income, diluted class A EPS and shares against the year-ago quarter; receivables, cash and debt; the financial outlook"
+  },
+  "V40": {
+   "published": "2010-02-04",
+   "filed": "accepted 2010-02-03 16:32 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-Q for the quarter ended December 31, 2009",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312510020834/d10q.htm",
+   "supports": "the quarter's statements and accounts receivable at 2009-12-31 (checked against the release; the year-ago balance for the Q1 FY11 print)"
+  },
+  "V21": {
+   "published": "2010-04-29",
+   "filed": "accepted 2010-04-28 16:13 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q2 2010 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312510096657/dex991.htm",
+   "supports": "Q2 FY10 revenues, client incentives, expenses, operating income, diluted class A EPS and shares against the year-ago quarter; receivables, cash and debt; the financial outlook"
+  },
+  "V41": {
+   "published": "2010-05-03",
+   "filed": "accepted 2010-04-30 21:17 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-Q for the quarter ended March 31, 2010",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312510102602/d10q.htm",
+   "supports": "the quarter's statements and accounts receivable at 2010-03-31 (checked against the release; the year-ago balance for the Q2 FY11 print)"
+  },
+  "V22": {
+   "published": "2010-07-29",
+   "filed": "accepted 2010-07-28 16:12 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q3 2010 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312510169054/dex991.htm",
+   "supports": "Q3 FY10 revenues, client incentives, expenses, operating income, diluted class A EPS and shares against the year-ago quarter; receivables, cash and debt; the financial outlook"
+  },
+  "V42": {
+   "published": "2010-08-02",
+   "filed": "accepted 2010-07-30 19:14 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-Q for the quarter ended June 30, 2010",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312510172477/d10q.htm",
+   "supports": "the quarter's statements and accounts receivable at 2010-06-30 (checked against the release; the year-ago balance for the Q3 FY11 print)"
+  },
+  "V23": {
+   "published": "2010-10-28",
+   "filed": "accepted 2010-10-27 16:10 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q4 2010 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312510237985/dex991.htm",
+   "supports": "Q4 FY10 revenues, client incentives, expenses, operating income, diluted class A EPS and shares against the year-ago quarter and the fiscal year; receivables, cash and debt; the financial outlook"
+  },
+  "V24": {
+   "published": "2011-02-03",
+   "filed": "accepted 2011-02-02 16:11 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q1 2011 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312511021839/dex991.htm",
+   "supports": "Q1 FY11 revenues, client incentives, expenses, operating income, diluted class A EPS and shares against the year-ago quarter; receivables, cash and debt; the financial outlook"
+  },
+  "V43": {
+   "published": "2011-02-03",
+   "filed": "accepted 2011-02-02 16:18 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-Q for the quarter ended December 31, 2010",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312511021871/d10q.htm",
+   "supports": "the quarter's statements and accounts receivable at 2010-12-31 (checked against the release; the year-ago balance for the Q1 FY12 print)"
+  },
+  "V25": {
+   "published": "2011-05-06",
+   "filed": "accepted 2011-05-05 16:11 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q2 2011 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312511128470/dex991.htm",
+   "supports": "Q2 FY11 revenues, client incentives, expenses, operating income, diluted class A EPS and shares against the year-ago quarter; receivables, cash and debt; the financial outlook"
+  },
+  "V44": {
+   "published": "2011-05-06",
+   "filed": "accepted 2011-05-05 16:31 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-Q for the quarter ended March 31, 2011",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312511128562/d10q.htm",
+   "supports": "the quarter's statements and accounts receivable at 2011-03-31 (checked against the release; the year-ago balance for the Q2 FY12 print)"
+  },
+  "V26": {
+   "published": "2011-07-28",
+   "filed": "accepted 2011-07-27 16:11 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q3 2011 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312511198906/dex991.htm",
+   "supports": "Q3 FY11 revenues, client incentives, expenses, operating income, diluted class A EPS and shares against the year-ago quarter; receivables, cash and debt; the financial outlook"
+  },
+  "V45": {
+   "published": "2011-07-29",
+   "filed": "accepted 2011-07-29 11:46 ET (during market hours)",
+   "title": "Visa Inc. 10-Q for the quarter ended June 30, 2011",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312511202235/d10q.htm",
+   "supports": "the quarter's statements and accounts receivable at 2011-06-30 (checked against the release; the year-ago balance for the Q3 FY12 print)"
+  },
+  "V27": {
+   "published": "2011-10-27",
+   "filed": "accepted 2011-10-26 16:10 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q4 2011 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312511282026/d247231dex991.htm",
+   "supports": "Q4 FY11 revenues, client incentives, expenses, operating income, diluted class A EPS and shares against the year-ago quarter and the fiscal year; receivables, cash and debt; the financial outlook"
+  },
+  "V28": {
+   "published": "2012-02-09",
+   "filed": "accepted 2012-02-08 16:11 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q1 2012 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312512046550/d296258dex991.htm",
+   "supports": "Q1 FY12 revenues, client incentives, expenses, operating income, diluted class A EPS and shares against the year-ago quarter; receivables, cash and debt; the financial outlook"
+  },
+  "V46": {
+   "published": "2012-02-09",
+   "filed": "accepted 2012-02-08 16:27 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-Q for the quarter ended December 31, 2011",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000144530512000234/v123111form10q.htm",
+   "supports": "the quarter's statements and accounts receivable at 2011-12-31 (checked against the release; the year-ago balance for the Q1 FY13 print)"
+  },
+  "V29": {
+   "published": "2012-05-03",
+   "filed": "accepted 2012-05-02 16:11 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q2 2012 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312512204525/d343939dex991.htm",
+   "supports": "Q2 FY12 revenues, client incentives, expenses, operating income, diluted class A EPS and shares against the year-ago quarter; receivables, cash and debt; the financial outlook"
+  },
+  "V47": {
+   "published": "2012-05-03",
+   "filed": "accepted 2012-05-02 16:44 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-Q for the quarter ended March 31, 2012",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000138410812000004/v33112form10q.htm",
+   "supports": "the quarter's statements and accounts receivable at 2012-03-31 (checked against the release; the year-ago balance for the Q2 FY13 print)"
+  },
+  "V30": {
+   "published": "2012-07-26",
+   "filed": "accepted 2012-07-25 16:11 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q3 2012 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312512314435/d384121dex991.htm",
+   "supports": "Q3 FY12 revenues, client incentives, expenses, operating income, diluted class A EPS and shares against the year-ago quarter; receivables, cash and debt; the financial outlook"
+  },
+  "V48": {
+   "published": "2012-07-30",
+   "filed": "accepted 2012-07-27 16:09 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-Q for the quarter ended June 30, 2012",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000138410812000008/v63012form10q.htm",
+   "supports": "the quarter's statements and accounts receivable at 2012-06-30 (checked against the release; the year-ago balance for the Q3 FY13 print)"
+  },
+  "V31": {
+   "published": "2012-11-01",
+   "filed": "accepted 2012-10-31 16:09 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q4 2012 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312512443798/d430830dex991.htm",
+   "supports": "Q4 FY12 revenues, client incentives, expenses, operating income, diluted class A EPS and shares against the year-ago quarter and the fiscal year; receivables, cash and debt; the financial outlook"
+  },
+  "V32": {
+   "published": "2013-02-07",
+   "filed": "accepted 2013-02-06 16:12 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q1 2013 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312513041100/d481686dex991.htm",
+   "supports": "Q1 FY13 revenues, client incentives, expenses, operating income, diluted class A EPS and shares against the year-ago quarter; receivables, cash and debt; the financial outlook"
+  },
+  "V49": {
+   "published": "2013-02-07",
+   "filed": "accepted 2013-02-06 16:17 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-Q for the quarter ended December 31, 2012",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000138410813000004/v123112form10q.htm",
+   "supports": "the quarter's statements and accounts receivable at 2012-12-31 (checked against the release; the year-ago balance for the Q1 FY14 print)"
+  },
+  "V33": {
+   "published": "2013-05-02",
+   "filed": "accepted 2013-05-01 16:12 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q2 2013 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312513192398/d529394dex991.htm",
+   "supports": "Q2 FY13 revenues, client incentives, expenses, operating income, diluted class A EPS and shares against the year-ago quarter; receivables, cash and debt; the financial outlook"
+  },
+  "V50": {
+   "published": "2013-05-02",
+   "filed": "accepted 2013-05-01 16:24 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-Q for the quarter ended March 31, 2013",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316113000004/v033113form10q.htm",
+   "supports": "the quarter's statements and accounts receivable at 2013-03-31 (checked against the release; the year-ago balance for the Q2 FY14 print)"
+  },
+  "V34": {
+   "published": "2013-07-25",
+   "filed": "accepted 2013-07-24 16:11 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q3 2013 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312513300529/d572461dex991.htm",
+   "supports": "Q3 FY13 revenues, client incentives, expenses, operating income, diluted class A EPS and shares against the year-ago quarter; receivables, cash and debt; the financial outlook"
+  },
+  "V51": {
+   "published": "2013-07-25",
+   "filed": "accepted 2013-07-24 16:25 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-Q for the quarter ended June 30, 2013",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316113000007/v063013form10q.htm",
+   "supports": "the quarter's statements and accounts receivable at 2013-06-30 (checked against the release; the year-ago balance for the Q3 FY14 print)"
+  },
+  "V35": {
+   "published": "2013-10-31",
+   "filed": "accepted 2013-10-30 16:14 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q4 2013 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312513418554/d620084dex991.htm",
+   "supports": "Q4 FY13 revenues, client incentives, expenses, operating income, diluted class A EPS and shares against the year-ago quarter and the fiscal year; receivables, cash and debt; the financial outlook"
+  },
+  "V60": {
+   "published": "2010-11-22",
+   "filed": "accepted 2010-11-19 16:10 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-K for the fiscal year ended September 30, 2010",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312510265236/d10k.htm",
+   "supports": "fiscal 2010 statements of operations and cash flows, selected data, diluted class A EPS and shares, the company's adjusted figures where the MD&A gives them, Item 1, 1A and 5 wording"
+  },
+  "V61": {
+   "published": "2011-11-18",
+   "filed": "accepted 2011-11-17 19:39 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-K for the fiscal year ended September 30, 2011",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312511315956/d218694d10k.htm",
+   "supports": "fiscal 2011 statements of operations and cash flows, selected data, diluted class A EPS and shares, the company's adjusted figures where the MD&A gives them, Item 1, 1A and 5 wording"
+  },
+  "V62": {
+   "published": "2012-11-16",
+   "filed": "accepted 2012-11-15 20:15 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-K for the fiscal year ended September 30, 2012",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000138410812000011/v09301210-k.htm",
+   "supports": "fiscal 2012 statements of operations and cash flows, selected data, diluted class A EPS and shares, the company's adjusted figures where the MD&A gives them, Item 1, 1A and 5 wording"
+  },
+  "V63": {
+   "published": "2013-11-22",
+   "filed": "accepted 2013-11-21 19:53 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-K for the fiscal year ended September 30, 2013",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316113000011/v09301310-k.htm",
+   "supports": "fiscal 2013 statements of operations and cash flows, selected data, diluted class A EPS and shares, the company's adjusted figures where the MD&A gives them, Item 1, 1A and 5 wording"
+  },
+  "V70": {
+   "published": "2010-10-21",
+   "filed": "accepted 2010-10-20 16:47 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 8-K: quarterly dividend declared, rate up 20% (ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312510232640/dex991.htm",
+   "supports": "the declared quarterly dividend, $0.15 a class A share"
+  },
+  "V71": {
+   "published": "2011-10-19",
+   "filed": "accepted 2011-10-19 08:17 ET (before the open)",
+   "title": "Visa Inc. 8-K: quarterly dividend declared, rate up 47% (ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312511274377/d244463dex991.htm",
+   "supports": "the declared quarterly dividend, $0.22 a class A share"
+  },
+  "V72": {
+   "published": "2012-10-25",
+   "filed": "accepted 2012-10-24 17:13 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 8-K: quarterly dividend declared, rate up 50% (ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312512433526/d429692dex991.htm",
+   "supports": "the declared quarterly dividend, $0.33 a class A share"
+  },
+  "V73": {
+   "published": "2013-10-24",
+   "filed": "accepted 2013-10-23 16:11 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 8-K: quarterly dividend declared, rate up 21% (ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312513408118/d616272dex991.htm",
+   "supports": "the declared quarterly dividend, $0.40 a class A share"
   }
  },
  "history_vintages": [
@@ -257,6 +530,470 @@
     "Net cash provided by operating activities | 558 | 531 | 505",
     "Purchases of property, equipment and technology | (306) | (415) | (160)",
     "Cash and cash equivalents | 4,617 | 4,979"
+   ]
+  },
+  {
+   "published": "2010-11-22",
+   "sources": [
+    "V60",
+    "V23",
+    "V6"
+   ],
+   "fy_label": "FY10",
+   "kind": "DURABLE",
+   "why": "'Visa Inc. (“Visa” or the “Company”) is a global payments technology company that connects consumers, businesses, banks and governments in more than 200 countries and territories, enabling them to use digital currency instead of cash and checks.' 'Our business is affected by overall economic conditions and consumer spending.' 'Within the general purpose payment card industry, we face substantial and intense competition worldwide in the provision of payments services to financial institution clients and their cardholder merchants.' 'Of note this fiscal year, the Wall Street Reform and Consumer Protection Act was signed into law in the United States on July 21, 2010, which will, amongst other things, regulate interchange fees and transaction routing rules related to our debit card products.'; no 10-K calls the business cyclical (the economy and spending are a 'why', not the company's own label: the LOW, SHW and JPM reading), so the kind is DURABLE; no disruption theme in taxonomy_eras.json is live for a payments network on these dates, so the watch list is empty",
+   "eps_normalized": {
+    "2010": 3.91,
+    "2009": 3.1
+   },
+   "eps_sources": {
+    "2010": "V23",
+    "2009": "V60"
+   },
+   "eps_excluded": {},
+   "eps_first_excluded": {
+    "2008": "a distorted year with no figure excluding only one-offs: GAAP $0.96 a diluted class A share (FY2010 10-K) carries the $1,457M covered-litigation reserve (the Q4 FY08 release's reconciliation; $1,470M litigation provision), about $874M after the year's 40% GAAP tax rate against $804M of net income, so reported EPS is under half the EPS without it (the AAPL FY2002 test); the company's adjusted $2.25 also removes asset step-up amortization ('Non-cash amortization and depreciation of the incremental basis in technology and building assets acquired in the reorganization.', $68M a year), which recurs, applies 'a normalized tax rate of 41%' and counts the IPO shares as issued at October 1, 2007, so it does not exclude only one-offs (the NKE FY2007, AVGO and PFE rule); FY2008 is Visa Inc.'s first year with EPS ('There is no comparable earnings per share measure for 2007 as we were a non-stock company.'), so the history and the P/E window start after it (the ACN FY02 and JPM FY2002 rule): FY2009, from 2008-10-01"
+   },
+   "revenue_usd_b": {
+    "2010": 8.065,
+    "2009": 6.911
+   },
+   "revenue_sources": {
+    "2010": "V60",
+    "2009": "V60"
+   },
+   "diluted_shares_m": {
+    "2009": 759.0,
+    "2010": 739.0
+   },
+   "shares_sources": {
+    "2009": "V60",
+    "2010": "V60"
+   },
+   "normalization": "GAAP diluted EPS of the class A common stock (the two-class method; class B and C as converted), each year from the latest filing that reports it, at the company's figure excluding only one-offs where one is published (the ACN rule): FY10 $3.91 and FY11 $4.99 without the Visa Europe put-option gains, FY12 $6.20 without the covered-litigation provision and two tax items; FY09 and FY13 GAAP; FY2008 is excluded (a distorted year)",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 56.9,
+   "prev_fy_op_margin_note": "FY10 operating income $4,589M / total operating revenues $8,065M",
+   "prev_fy_pretax_margin": 57.51,
+   "prev_fy_pretax_margin_note": "FY10 income before income taxes $4,638M / total operating revenues $8,065M",
+   "prev_fy_net_to_gross": 83.79,
+   "prev_fy_sales_growth": 16.7,
+   "tax_rate": 0.3609,
+   "tax_note": "FY10 income tax $1,674M on pre-tax $4,638M",
+   "fcf_b": 2.45,
+   "fcf_label": "FY10",
+   "fcf_note": "net cash provided by operating activities $2,691M less purchases of property, equipment and technology $241M",
+   "cash_b": 3.867,
+   "business_line": "payments network: service, data processing, international transaction and other revenues, net of client incentives",
+   "groups": [
+    [
+     "Service revenues",
+     3.497,
+     10.2
+    ],
+    [
+     "Data processing revenues",
+     3.125,
+     28.6
+    ],
+    [
+     "International transaction revenues",
+     2.29,
+     19.5
+    ],
+    [
+     "Other revenues",
+     0.713,
+     14.1
+    ],
+    [
+     "Volume and support incentives",
+     -1.56,
+     26.4
+    ]
+   ],
+   "groups_basis": "FY10 operating revenues by line, incentives as reported (FY10 growth)",
+   "company": "Visa Inc.",
+   "exchange": "NYSE",
+   "listing": "2008-03-19",
+   "listing_quote": "Our class A common stock has been listed on the New York Stock Exchange under the symbol “V” since March 19, 2008.",
+   "pe_window_start": "2008-10-01",
+   "fiscal_year": "For the fiscal year ended September 30, 2010",
+   "rows": [
+    "Service revenues | 3,497 | 3,174 | 3,061",
+    "Data processing revenues | 3,125 | 2,430 | 2,073",
+    "International transaction revenues | 2,290 | 1,916 | 1,721",
+    "Other revenues | 713 | 625 | 569",
+    "Volume and support incentives | (1,560) | (1,234) | (1,161)",
+    "Total operating revenues | 8,065 | 6,911 | 6,263",
+    "Operating income | 4,589 | 3,538 | 1,232",
+    "Income before income taxes | 4,638 | 4,000 | 1,336",
+    "Income tax expense | 1,674 | 1,648 | 532",
+    "Class A common stock | 4.01 | 3.10 | 0.96",
+    "Class A common stock | 739 | 759 | 770",
+    "Cash and cash equivalents | 3,867 | 4,617",
+    "Net cash provided by operating activities | 2,691 | 558 | 531",
+    "Purchases of property, equipment and technology | (241) | (306) | (415)",
+    "Operating revenues | 8,065 | 6,911 | 6,263 | 3,590 | 2,948",
+    "Diluted earnings per share—class A common stock(2)(3) | 4.01 | 3.10 | 0.96 | N/A | N/A",
+    "Statement of Operations Data: | 2010 | 2009 | 2008 | 2007(1) | 2006(1)"
+   ]
+  },
+  {
+   "published": "2011-11-18",
+   "sources": [
+    "V61",
+    "V6"
+   ],
+   "fy_label": "FY11",
+   "kind": "DURABLE",
+   "why": "'Visa is a global payments technology company that connects consumers, businesses, banks and governments around the world, enabling them to use digital currency instead of checks and cash.' 'Our business is affected by overall economic conditions and consumer spending.' 'Within the general purpose payment card industry, we face substantial and intense competition worldwide in the provision of payments services to financial institution clients and their cardholder merchants.' 'New rules were set out with respect to debit products under the Wall Street Reform and Consumer Protection Act, or the Reform Act.'; no 10-K calls the business cyclical (the economy and spending are a 'why', not the company's own label: the LOW, SHW and JPM reading), so the kind is DURABLE; no disruption theme in taxonomy_eras.json is live for a payments network on these dates, so the watch list is empty",
+   "eps_normalized": {
+    "2011": 4.99,
+    "2010": 3.91,
+    "2009": 3.1
+   },
+   "eps_sources": {
+    "2011": "V61",
+    "2010": "V61",
+    "2009": "V61"
+   },
+   "eps_excluded": {},
+   "eps_first_excluded": {
+    "2008": "a distorted year with no figure excluding only one-offs: GAAP $0.96 a diluted class A share (FY2011 10-K) carries the $1,457M covered-litigation reserve (the Q4 FY08 release's reconciliation; $1,470M litigation provision), about $874M after the year's 40% GAAP tax rate against $804M of net income, so reported EPS is under half the EPS without it (the AAPL FY2002 test); the company's adjusted $2.25 also removes asset step-up amortization ('Non-cash amortization and depreciation of the incremental basis in technology and building assets acquired in the reorganization.', $68M a year), which recurs, applies 'a normalized tax rate of 41%' and counts the IPO shares as issued at October 1, 2007, so it does not exclude only one-offs (the NKE FY2007, AVGO and PFE rule); FY2008 is Visa Inc.'s first year with EPS ('There is no comparable earnings per share measure for 2007 as we were a non-stock company.'), so the history and the P/E window start after it (the ACN FY02 and JPM FY2002 rule): FY2009, from 2008-10-01"
+   },
+   "revenue_usd_b": {
+    "2011": 9.188,
+    "2010": 8.065,
+    "2009": 6.911
+   },
+   "revenue_sources": {
+    "2011": "V61",
+    "2010": "V61",
+    "2009": "V61"
+   },
+   "diluted_shares_m": {
+    "2009": 759.0,
+    "2010": 739.0,
+    "2011": 707.0
+   },
+   "shares_sources": {
+    "2009": "V61",
+    "2010": "V61",
+    "2011": "V61"
+   },
+   "normalization": "GAAP diluted EPS of the class A common stock (the two-class method; class B and C as converted), each year from the latest filing that reports it, at the company's figure excluding only one-offs where one is published (the ACN rule): FY10 $3.91 and FY11 $4.99 without the Visa Europe put-option gains, FY12 $6.20 without the covered-litigation provision and two tax items; FY09 and FY13 GAAP; FY2008 is excluded (a distorted year)",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 59.38,
+   "prev_fy_op_margin_note": "FY11 operating income $5,456M / total operating revenues $9,188M",
+   "prev_fy_pretax_margin": 61.56,
+   "prev_fy_pretax_margin_note": "FY11 income before income taxes $5,656M / total operating revenues $9,188M",
+   "prev_fy_net_to_gross": 83.01,
+   "prev_fy_sales_growth": 13.9,
+   "tax_rate": 0.3554,
+   "tax_note": "FY11 income tax $2,010M on pre-tax $5,656M",
+   "fcf_b": 3.519,
+   "fcf_label": "FY11",
+   "fcf_note": "net cash provided by operating activities $3,872M less purchases of property, equipment and technology $353M",
+   "cash_b": 2.127,
+   "business_line": "payments network: service, data processing, international transaction and other revenues, net of client incentives",
+   "groups": [
+    [
+     "Service revenues",
+     4.261,
+     21.8
+    ],
+    [
+     "Data processing revenues",
+     3.478,
+     11.3
+    ],
+    [
+     "International transaction revenues",
+     2.674,
+     16.8
+    ],
+    [
+     "Other revenues",
+     0.655,
+     -8.1
+    ],
+    [
+     "Client incentives",
+     -1.88,
+     20.5
+    ]
+   ],
+   "groups_basis": "FY11 operating revenues by line, incentives as reported (FY11 growth)",
+   "company": "Visa Inc.",
+   "exchange": "NYSE",
+   "listing": "2008-03-19",
+   "listing_quote": "Our class A common stock has been listed on the New York Stock Exchange under the symbol “V” since March 19, 2008.",
+   "pe_window_start": "2008-10-01",
+   "fiscal_year": "For the fiscal year ended September 30, 2011",
+   "rows": [
+    "Service revenues | 4,261 | 3,497 | 3,174",
+    "Data processing revenues | 3,478 | 3,125 | 2,430",
+    "International transaction revenues | 2,674 | 2,290 | 1,916",
+    "Other revenues | 655 | 713 | 625",
+    "Client incentives | (1,880) | (1,560) | (1,234)",
+    "Total operating revenues | 9,188 | 8,065 | 6,911",
+    "Operating income | 5,456 | 4,589 | 3,538",
+    "Income before income taxes | 5,656 | 4,638 | 4,000",
+    "Income tax provision | 2,010 | 1,674 | 1,648",
+    "Class A common stock | 5.16 | 4.01 | 3.10",
+    "Class A common stock | 707 | 739 | 759",
+    "Cash and cash equivalents | 2,127 | 3,867",
+    "Net cash provided by operating activities | 3,872 | 2,691 | 558",
+    "Purchases of property, equipment and technology | (353) | (241) | (306)",
+    "Operating revenues | 9,188 | 8,065 | 6,911 | 6,263 | 3,590",
+    "Diluted earnings per share—class A common stock(2) | 5.16 | 4.01 | 3.10 | 0.96 | N/A",
+    "Statement of Operations Data: | 2011 | 2010 | 2009 | 2008 | 2007(1)"
+   ]
+  },
+  {
+   "published": "2012-11-16",
+   "sources": [
+    "V62",
+    "V61",
+    "V6"
+   ],
+   "fy_label": "FY12",
+   "kind": "DURABLE",
+   "why": "'Visa is a global payments technology company that connects consumers, businesses, financial institutions and governments around the world to fast, secure and reliable electronic payments.' 'Our business is affected by overall economic conditions and consumer spending.' 'Within the general purpose payment card industry, we face substantial and intense competition worldwide in the provision of payments services to financial institution clients and their cardholder merchants.'; no 10-K calls the business cyclical (the economy and spending are a 'why', not the company's own label: the LOW, SHW and JPM reading), so the kind is DURABLE; no disruption theme in taxonomy_eras.json is live for a payments network on these dates, so the watch list is empty",
+   "eps_normalized": {
+    "2012": 6.2,
+    "2011": 4.99,
+    "2010": 3.91,
+    "2009": 3.1
+   },
+   "eps_sources": {
+    "2012": "V62",
+    "2011": "V62",
+    "2010": "V61",
+    "2009": "V62"
+   },
+   "eps_excluded": {},
+   "eps_first_excluded": {
+    "2008": "a distorted year with no figure excluding only one-offs: GAAP $0.96 a diluted class A share (FY2012 10-K) carries the $1,457M covered-litigation reserve (the Q4 FY08 release's reconciliation; $1,470M litigation provision), about $874M after the year's 40% GAAP tax rate against $804M of net income, so reported EPS is under half the EPS without it (the AAPL FY2002 test); the company's adjusted $2.25 also removes asset step-up amortization ('Non-cash amortization and depreciation of the incremental basis in technology and building assets acquired in the reorganization.', $68M a year), which recurs, applies 'a normalized tax rate of 41%' and counts the IPO shares as issued at October 1, 2007, so it does not exclude only one-offs (the NKE FY2007, AVGO and PFE rule); FY2008 is Visa Inc.'s first year with EPS ('There is no comparable earnings per share measure for 2007 as we were a non-stock company.'), so the history and the P/E window start after it (the ACN FY02 and JPM FY2002 rule): FY2009, from 2008-10-01"
+   },
+   "revenue_usd_b": {
+    "2012": 10.421,
+    "2011": 9.188,
+    "2010": 8.065,
+    "2009": 6.911
+   },
+   "revenue_sources": {
+    "2012": "V62",
+    "2011": "V62",
+    "2010": "V62",
+    "2009": "V62"
+   },
+   "diluted_shares_m": {
+    "2009": 759.0,
+    "2010": 739.0,
+    "2011": 707.0,
+    "2012": 678.0
+   },
+   "shares_sources": {
+    "2009": "V61",
+    "2010": "V62",
+    "2011": "V62",
+    "2012": "V62"
+   },
+   "normalization": "GAAP diluted EPS of the class A common stock (the two-class method; class B and C as converted), each year from the latest filing that reports it, at the company's figure excluding only one-offs where one is published (the ACN rule): FY10 $3.91 and FY11 $4.99 without the Visa Europe put-option gains, FY12 $6.20 without the covered-litigation provision and two tax items; FY09 and FY13 GAAP; FY2008 is excluded (a distorted year)",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 59.85,
+   "prev_fy_op_margin_note": "FY12 operating income excluding the $4,098M litigation provision $6,237M (revenues less the adjusted operating expenses of $4,184M, MD&A) / total operating revenues $10,421M (GAAP margin 20.5%)",
+   "prev_fy_pretax_margin": 60.09,
+   "prev_fy_pretax_margin_note": "FY12 income before income taxes excluding the special items $6,262M (MD&A) / total operating revenues $10,421M",
+   "prev_fy_net_to_gross": 82.86,
+   "prev_fy_sales_growth": 13.4,
+   "tax_rate": 0.3291,
+   "tax_note": "FY12 adjusted income tax $2,061M on adjusted pre-tax $6,262M (GAAP $65M on $2,207M)",
+   "fcf_b": 4.633,
+   "fcf_label": "FY12",
+   "fcf_note": "net cash provided by operating activities $5,009M less purchases of property, equipment and technology $376M",
+   "cash_b": 2.074,
+   "business_line": "payments network: service, data processing, international transaction and other revenues, net of client incentives",
+   "groups": [
+    [
+     "Service revenues",
+     4.872,
+     14.3
+    ],
+    [
+     "Data processing revenues",
+     3.975,
+     14.3
+    ],
+    [
+     "International transaction revenues",
+     3.025,
+     13.1
+    ],
+    [
+     "Other revenues",
+     0.704,
+     7.5
+    ],
+    [
+     "Client incentives",
+     -2.155,
+     14.6
+    ]
+   ],
+   "groups_basis": "FY12 operating revenues by line, incentives as reported (FY12 growth)",
+   "company": "Visa Inc.",
+   "exchange": "NYSE",
+   "listing": "2008-03-19",
+   "listing_quote": "Our class A common stock has been listed on the New York Stock Exchange under the symbol “V” since March 19, 2008.",
+   "pe_window_start": "2008-10-01",
+   "fiscal_year": "For the fiscal year ended September 30, 2012",
+   "rows": [
+    "Service revenues | 4,872 | 4,261 | 3,497",
+    "Data processing revenues | 3,975 | 3,478 | 3,125",
+    "International transaction revenues | 3,025 | 2,674 | 2,290",
+    "Other revenues | 704 | 655 | 713",
+    "Client incentives | (2,155) | (1,880) | (1,560)",
+    "Total operating revenues | 10,421 | 9,188 | 8,065",
+    "Operating income | 2,139 | 5,456 | 4,589",
+    "Income before income taxes | 2,207 | 5,656 | 4,638",
+    "Income tax provision | 65 | 2,010 | 1,674",
+    "Class A common stock | 3.16 | 5.16 | 4.01",
+    "Class A common stock | 678 | 707 | 739",
+    "Cash and cash equivalents | 2,074 | 2,127",
+    "Net cash provided by operating activities | 5,009 | 3,872 | 2,691",
+    "Purchases of property, equipment, technology and intangible assets | (376) | (353) | (241)",
+    "Operating revenues | 10,421 | 9,188 | 8,065 | 6,911 | 6,263",
+    "Diluted earnings per share—class A common stock | 3.16 | 5.16 | 4.01 | 3.10 | 0.96",
+    "Statement of Operations Data: | 2012(1) | 2011 | 2010 | 2009 | 2008"
+   ]
+  },
+  {
+   "published": "2013-11-22",
+   "sources": [
+    "V63",
+    "V61",
+    "V62",
+    "V6"
+   ],
+   "fy_label": "FY13",
+   "kind": "DURABLE",
+   "why": "'Visa is a global payments technology company that connects consumers, businesses, financial institutions and governments in more than 200 countries and territories to fast, secure and reliable electronic payments.' 'Our business is affected by overall economic conditions and consumer spending.' 'Intense competition in our industry may cause our business, financial condition, results of operations and prospects for future growth to suffer.'; no 10-K calls the business cyclical (the economy and spending are a 'why', not the company's own label: the LOW, SHW and JPM reading), so the kind is DURABLE; no disruption theme in taxonomy_eras.json is live for a payments network on these dates, so the watch list is empty",
+   "eps_normalized": {
+    "2013": 7.59,
+    "2012": 6.2,
+    "2011": 4.99,
+    "2010": 3.91,
+    "2009": 3.1
+   },
+   "eps_sources": {
+    "2013": "V63",
+    "2012": "V63",
+    "2011": "V62",
+    "2010": "V61",
+    "2009": "V63"
+   },
+   "eps_excluded": {},
+   "eps_first_excluded": {
+    "2008": "a distorted year with no figure excluding only one-offs: GAAP $0.96 a diluted class A share (FY2012 10-K) carries the $1,457M covered-litigation reserve (the Q4 FY08 release's reconciliation; $1,470M litigation provision), about $874M after the year's 40% GAAP tax rate against $804M of net income, so reported EPS is under half the EPS without it (the AAPL FY2002 test); the company's adjusted $2.25 also removes asset step-up amortization ('Non-cash amortization and depreciation of the incremental basis in technology and building assets acquired in the reorganization.', $68M a year), which recurs, applies 'a normalized tax rate of 41%' and counts the IPO shares as issued at October 1, 2007, so it does not exclude only one-offs (the NKE FY2007, AVGO and PFE rule); FY2008 is Visa Inc.'s first year with EPS ('There is no comparable earnings per share measure for 2007 as we were a non-stock company.'), so the history and the P/E window start after it (the ACN FY02 and JPM FY2002 rule): FY2009, from 2008-10-01"
+   },
+   "revenue_usd_b": {
+    "2013": 11.778,
+    "2012": 10.421,
+    "2011": 9.188,
+    "2010": 8.065,
+    "2009": 6.911
+   },
+   "revenue_sources": {
+    "2013": "V63",
+    "2012": "V63",
+    "2011": "V63",
+    "2010": "V63",
+    "2009": "V63"
+   },
+   "diluted_shares_m": {
+    "2009": 759.0,
+    "2010": 739.0,
+    "2011": 707.0,
+    "2012": 678.0,
+    "2013": 656.0
+   },
+   "shares_sources": {
+    "2009": "V61",
+    "2010": "V62",
+    "2011": "V63",
+    "2012": "V63",
+    "2013": "V63"
+   },
+   "normalization": "GAAP diluted EPS of the class A common stock (the two-class method; class B and C as converted), each year from the latest filing that reports it, at the company's figure excluding only one-offs where one is published (the ACN rule): FY10 $3.91 and FY11 $4.99 without the Visa Europe put-option gains, FY12 $6.20 without the covered-litigation provision and two tax items; FY09 and FY13 GAAP; FY2008 is excluded (a distorted year)",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 61.46,
+   "prev_fy_op_margin_note": "FY13 operating income $7,239M / total operating revenues $11,778M",
+   "prev_fy_pretax_margin": 61.61,
+   "prev_fy_pretax_margin_note": "FY13 income before income taxes $7,257M / total operating revenues $11,778M",
+   "prev_fy_net_to_gross": 83.54,
+   "prev_fy_sales_growth": 13.0,
+   "tax_rate": 0.3138,
+   "tax_note": "FY13 income tax $2,277M on pre-tax $7,257M",
+   "fcf_b": 2.551,
+   "fcf_label": "FY13",
+   "fcf_note": "net cash provided by operating activities $3,022M less purchases of property, equipment and technology $471M",
+   "cash_b": 2.186,
+   "business_line": "payments network: service, data processing, international transaction and other revenues, net of client incentives",
+   "groups": [
+    [
+     "Service revenues",
+     5.352,
+     9.9
+    ],
+    [
+     "Data processing revenues",
+     4.642,
+     16.8
+    ],
+    [
+     "International transaction revenues",
+     3.389,
+     12.0
+    ],
+    [
+     "Other revenues",
+     0.716,
+     1.7
+    ],
+    [
+     "Client incentives",
+     -2.321,
+     7.7
+    ]
+   ],
+   "groups_basis": "FY13 operating revenues by line, incentives as reported (FY13 growth)",
+   "company": "Visa Inc.",
+   "exchange": "NYSE",
+   "listing": "2008-03-19",
+   "listing_quote": "Our class A common stock has been listed on the New York Stock Exchange under the symbol “V” since March 19, 2008.",
+   "pe_window_start": "2008-10-01",
+   "fiscal_year": "For the fiscal year ended September 30, 2013",
+   "rows": [
+    "Service revenues | 5,352 | 4,872 | 4,261",
+    "Data processing revenues | 4,642 | 3,975 | 3,478",
+    "International transaction revenues | 3,389 | 3,025 | 2,674",
+    "Other revenues | 716 | 704 | 655",
+    "Client incentives | (2,321) | (2,155) | (1,880)",
+    "Total operating revenues | 11,778 | 10,421 | 9,188",
+    "Operating income | 7,239 | 2,139 | 5,456",
+    "Income before income taxes | 7,257 | 2,207 | 5,656",
+    "Income tax provision | 2,277 | 65 | 2,010",
+    "Class A common stock | 7.59 | 3.16 | 5.16",
+    "Class A common stock | 656 | 678 | 707",
+    "Cash and cash equivalents | 2,186 | 2,074",
+    "Net cash provided by operating activities | 3,022 | 5,009 | 3,872",
+    "Purchases of property, equipment, technology and intangible assets | (471) | (376) | (353)",
+    "Operating revenues | 11,778 | 10,421 | 9,188 | 8,065 | 6,911",
+    "Diluted earnings per share—class A common stock | 7.59 | 3.16 | 5.16 | 4.01 | 3.10",
+    "Statement of Operations Data: | 2013 | 2012(1) | 2011 | 2010 | 2009"
    ]
   }
  ],
@@ -482,6 +1219,1663 @@
      "Class A common stock | 747 | 774 | 758 | 769"
     ]
    }
+  },
+  {
+   "quarter": "Q1 FY10",
+   "fy": 2010,
+   "q": 1,
+   "published": "2010-02-04",
+   "source": "V20",
+   "release": "Feb 3",
+   "release_time": "after the close on Feb 3: 8-K accepted 2010-02-03 16:13 ET (after the 16:00 ET close); the call at 5:00 p.m. ET; public before the open of the next trading day",
+   "period_end": "2009-12-31",
+   "raw": {
+    "sales_m": 1960.0,
+    "sales_prior_m": 1739.0,
+    "sales_prev_q_m": 1879.0,
+    "gross_m": 2334.0,
+    "gross_prior_m": 2008.0,
+    "opex_m": 743.0,
+    "opex_prior_m": 773.0,
+    "litigation_m": -43.0,
+    "litigation_prior_m": 0.0,
+    "op_income_m": 1217.0,
+    "op_income_prior_m": 966.0,
+    "receivables_m": 536.0,
+    "receivables_prior_m": 378.0
+   },
+   "rows": {
+    "svc": "Service revenues | 827 | 793",
+    "dp": "Data processing revenues | 765 | 554",
+    "intl": "International transaction revenues | 552 | 505",
+    "oth": "Other revenues | 190 | 156",
+    "vs": "Volume and support incentives | (374) | (269)",
+    "rev": "Total operating revenues | 1,960 | 1,739",
+    "lit": "Litigation provision | (43) | —",
+    "opex": "Total operating expenses | 743 | 773",
+    "op": "Operating income | 1,217 | 966",
+    "pre": "Income before income taxes | 1,208 | 953",
+    "tax": "Income tax expense | 445 | 379",
+    "ni": "Net income attributable to Visa Inc. | 763 | 574",
+    "eps": "Class A common stock | 1.02 | 0.74",
+    "sh": "Class A common stock | 745 | 773",
+    "ar": "Accounts receivable | 536 | 444",
+    "cash": "Cash and cash equivalents | 4,160 | 4,617",
+    "debt_c": "Current portion of long-term debt | 12 | 12",
+    "debt_l": "Long-term debt | 41 | 44",
+    "prev_q_revenue": "Total operating revenues | 1,879 | 1,709 | 6,911 | 6,263",
+    "ar_prior": "Accounts receivable | 378 | 342"
+   },
+   "extra_sources": [
+    "V10",
+    "V12"
+   ],
+   "sales_pct": 12.7,
+   "seq_pct": 4.3,
+   "net_to_gross": 83.98,
+   "net_to_gross_bp": -262.8,
+   "op_margin": 62.09,
+   "op_margin_bp": 654.3,
+   "opex_pct": 1.7,
+   "opex_gap_pp": -11.0,
+   "receivables_pct": 41.8,
+   "receivables_gap_pp": 29.1,
+   "sales_b": 1.96,
+   "eps_q": 1.02,
+   "eps_q_prior": 0.74,
+   "diluted_shares_m": 745.0,
+   "receivables_b": 0.536,
+   "cash_b": 4.16,
+   "debt_note": "debt $53M (current $12M, long-term $41M)",
+   "sales_note": "total operating revenues $1,960M vs $1,739M a year earlier, $1,879M the quarter before (service $827M, data processing $765M, international transaction $552M, other $190M, less volume and support incentives $374M); 'Payments volume growth, on a constant basis, was a positive 2.5% over the prior year at $720 billion; and' 'Total processed transactions, which represent transactions processed by VisaNet for the three months ended December 31, 2009, totaled 10.9 billion, a 12% increase over the prior year.'",
+   "receivables_note": "accounts receivable $536M (2009-12-31) vs $378M a year earlier (the year-ago 10-Q)",
+   "eps_note": "GAAP diluted class A EPS $1.02 vs $0.74",
+   "shares_note": "diluted class A shares 745M (as converted)",
+   "next_print": "Q2 FY10 print (the quarter ends in March)",
+   "cash_return_text": null,
+   "guides": [
+    {
+     "fy": 2010,
+     "revenue_growth": [
+      11,
+      15
+     ],
+     "revenue_words": "Annual net revenue growth in the range of 11% to 15%;",
+     "eps_growth": null,
+     "eps_words": "Annual diluted class A common stock earnings per share growth of greater than 20%; and",
+     "margin": null,
+     "margin_words": "Annual operating margin in the mid to high 50% range;",
+     "note": null
+    }
+   ],
+   "note": null
+  },
+  {
+   "quarter": "Q2 FY10",
+   "fy": 2010,
+   "q": 2,
+   "published": "2010-04-29",
+   "source": "V21",
+   "release": "Apr 28",
+   "release_time": "after the close on Apr 28: 8-K accepted 2010-04-28 16:13 ET (after the 16:00 ET close); the call at 5:00 p.m. ET; public before the open of the next trading day",
+   "period_end": "2010-03-31",
+   "raw": {
+    "sales_m": 1959.0,
+    "sales_prior_m": 1647.0,
+    "sales_prev_q_m": 1960.0,
+    "gross_m": 2331.0,
+    "gross_prior_m": 1942.0,
+    "opex_m": 837.0,
+    "opex_prior_m": 766.0,
+    "litigation_m": 2.0,
+    "litigation_prior_m": 0.0,
+    "op_income_m": 1122.0,
+    "op_income_prior_m": 881.0,
+    "receivables_m": 502.0,
+    "receivables_prior_m": 372.0
+   },
+   "rows": {
+    "svc": "Service revenues | 885 | 804 | 1,712 | 1,597",
+    "dp": "Data processing revenues | 728 | 544 | 1,493 | 1,098",
+    "intl": "International transaction revenues | 545 | 446 | 1,097 | 951",
+    "oth": "Other revenues | 173 | 148 | 363 | 304",
+    "vs": "Volume and support incentives | (372) | (295) | (746) | (564)",
+    "rev": "Total operating revenues | 1,959 | 1,647 | 3,919 | 3,386",
+    "lit": "Litigation provision | 2 | — | (41) | —",
+    "opex": "Total operating expenses | 837 | 766 | 1,580 | 1,539",
+    "op": "Operating income | 1,122 | 881 | 2,339 | 1,847",
+    "pre": "Income before income taxes | 1,113 | 887 | 2,321 | 1,840",
+    "tax": "Income tax expense | 401 | 352 | 846 | 731",
+    "ni": "Net income attributable to Visa Inc. | 713 | 536 | 1,476 | 1,110",
+    "eps": "Class A common stock | 0.96 | 0.71 | 1.99 | 1.45",
+    "sh": "Class A common stock | 742 | 756 | 743 | 765",
+    "ar": "Accounts receivable | 502 | 444",
+    "cash": "Cash and cash equivalents | 4,560 | 4,617",
+    "debt_c": "Current portion of long-term debt | 12 | 12",
+    "debt_l": "Long-term debt | 38 | 44",
+    "prev_q_revenue": "Total operating revenues | 1,960 | 1,739",
+    "ar_prior": "Accounts receivable | 372 | 342"
+   },
+   "extra_sources": [
+    "V20",
+    "V13"
+   ],
+   "sales_pct": 18.9,
+   "seq_pct": -0.1,
+   "net_to_gross": 84.04,
+   "net_to_gross_bp": -76.8,
+   "op_margin": 57.27,
+   "op_margin_bp": 378.3,
+   "opex_pct": 9.0,
+   "opex_gap_pp": -9.9,
+   "receivables_pct": 34.9,
+   "receivables_gap_pp": 16.0,
+   "sales_b": 1.959,
+   "eps_q": 0.96,
+   "eps_q_prior": 0.71,
+   "diluted_shares_m": 742.0,
+   "receivables_b": 0.502,
+   "cash_b": 4.56,
+   "debt_note": "debt $50M (current $12M, long-term $38M)",
+   "sales_note": "total operating revenues $1,959M vs $1,647M a year earlier, $1,960M the quarter before (service $885M, data processing $728M, international transaction $545M, other $173M, less volume and support incentives $372M); 'Payments volume growth, on a constant dollar basis for the three months ended December 31, 2009 on which fiscal second quarter service revenue is recognized, was a positive 8% over the prior year at $769 billion.' 'Total processed transactions, which represent transactions processed by VisaNet, for the three months ended March 31, 2010 totaled 10.6 billion, a 14% increase over the prior year.'",
+   "receivables_note": "accounts receivable $502M (2010-03-31) vs $372M a year earlier (the year-ago 10-Q)",
+   "eps_note": "GAAP diluted class A EPS $0.96 vs $0.71",
+   "shares_note": "diluted class A shares 742M (as converted)",
+   "next_print": "Q3 FY10 print (the quarter ends in June)",
+   "cash_return_text": null,
+   "guides": [
+    {
+     "fy": 2010,
+     "revenue_growth": [
+      11,
+      15
+     ],
+     "revenue_words": "Annual net revenue growth: high end of the 11% to 15% range; and",
+     "eps_growth": null,
+     "eps_words": "Annual diluted class A common stock earnings per share: growth greater than 20%;",
+     "margin": null,
+     "margin_words": "Annual operating margin: mid to high 50% range;",
+     "note": "'high end' is words: the 11-15% range stands (the ACN words rule)"
+    }
+   ],
+   "note": null
+  },
+  {
+   "quarter": "Q3 FY10",
+   "fy": 2010,
+   "q": 3,
+   "published": "2010-07-29",
+   "source": "V22",
+   "release": "Jul 28",
+   "release_time": "after the close on Jul 28: 8-K accepted 2010-07-28 16:12 ET (after the 16:00 ET close); the call at 5:00 p.m. ET; public before the open of the next trading day",
+   "period_end": "2010-06-30",
+   "raw": {
+    "sales_m": 2029.0,
+    "sales_prior_m": 1646.0,
+    "sales_prev_q_m": 1959.0,
+    "gross_m": 2422.0,
+    "gross_prior_m": 1990.0,
+    "opex_m": 892.0,
+    "opex_prior_m": 824.0,
+    "litigation_m": 0.0,
+    "litigation_prior_m": 1.0,
+    "op_income_m": 1137.0,
+    "op_income_prior_m": 822.0,
+    "receivables_m": 501.0,
+    "receivables_prior_m": 419.0
+   },
+   "rows": {
+    "svc": "Service revenues | 873 | 769 | 2,585 | 2,366",
+    "dp": "Data processing revenues | 792 | 605 | 2,285 | 1,703",
+    "intl": "International transaction revenues | 574 | 458 | 1,671 | 1,409",
+    "oth": "Other revenues | 183 | 158 | 546 | 462",
+    "vs": "Volume and support incentives | (393) | (344) | (1,139) | (908)",
+    "rev": "Total operating revenues | 2,029 | 1,646 | 5,948 | 5,032",
+    "lit": "Litigation provision | — | 1 | (41) | 1",
+    "opex": "Total operating expenses | 892 | 824 | 2,472 | 2,363",
+    "op": "Operating income | 1,137 | 822 | 3,476 | 2,669",
+    "pre": "Income before income taxes | 1,122 | 1,297 | 3,443 | 3,137",
+    "tax": "Income tax expense | 406 | 568 | 1,252 | 1,299",
+    "ni": "Net income attributable to Visa Inc. | 716 | 729 | 2,192 | 1,839",
+    "eps": "Class A common stock | 0.97 | 0.96 | 2.96 | 2.41",
+    "sh": "Class A common stock | 738 | 757 | 742 | 762",
+    "ar": "Accounts receivable | 501 | 444",
+    "cash": "Cash and cash equivalents | 5,205 | 4,617",
+    "debt_c": "Current portion of long-term debt | 12 | 12",
+    "debt_l": "Long-term debt | 35 | 44",
+    "prev_q_revenue": "Total operating revenues | 1,959 | 1,647 | 3,919 | 3,386",
+    "ar_prior": "Accounts receivable | 419 | 342"
+   },
+   "extra_sources": [
+    "V21",
+    "V14"
+   ],
+   "sales_pct": 23.3,
+   "seq_pct": 3.6,
+   "net_to_gross": 83.77,
+   "net_to_gross_bp": 106.0,
+   "op_margin": 56.04,
+   "op_margin_bp": 609.8,
+   "opex_pct": 8.4,
+   "opex_gap_pp": -14.9,
+   "receivables_pct": 19.6,
+   "receivables_gap_pp": -3.7,
+   "sales_b": 2.029,
+   "eps_q": 0.97,
+   "eps_q_prior": 0.96,
+   "diluted_shares_m": 738.0,
+   "receivables_b": 0.501,
+   "cash_b": 5.205,
+   "debt_note": "debt $47M (current $12M, long-term $35M)",
+   "sales_note": "total operating revenues $2,029M vs $1,646M a year earlier, $1,959M the quarter before (service $873M, data processing $792M, international transaction $574M, other $183M, less volume and support incentives $393M); 'Payments volume growth, on a constant dollar basis for the three months ended March 31, 2010 on which fiscal third quarter service revenue is recognized, was a positive 13% over the prior year at $745 billion.' 'Total processed transactions, which represent transactions processed by VisaNet, for the three months ended June 30, 2010 totaled 11.7 billion, were a positive 14% increase over the prior year.'",
+   "receivables_note": "accounts receivable $501M (2010-06-30) vs $419M a year earlier (the year-ago 10-Q)",
+   "eps_note": "GAAP diluted class A EPS $0.97 vs $0.96",
+   "shares_note": "diluted class A shares 738M (as converted)",
+   "next_print": "Q4 FY10 print (the quarter ends in September)",
+   "cash_return_text": null,
+   "guides": [
+    {
+     "fy": 2010,
+     "revenue_growth": [
+      11,
+      15
+     ],
+     "revenue_words": "Annual net revenue growth: high end of the 11% to 15% range;",
+     "eps_growth": null,
+     "eps_words": "Annual diluted class A common stock earnings per share: growth greater than 20%; and",
+     "margin": null,
+     "margin_words": "Annual operating margin: mid to high 50% range;",
+     "note": "'high end' is words: the 11-15% range stands (the ACN words rule)"
+    }
+   ],
+   "note": null
+  },
+  {
+   "quarter": "Q4 FY10",
+   "fy": 2010,
+   "q": 4,
+   "published": "2010-10-28",
+   "source": "V23",
+   "release": "Oct 27",
+   "release_time": "after the close on Oct 27: 8-K accepted 2010-10-27 16:10 ET (after the 16:00 ET close); the call at 5:00 p.m. ET; public before the open of the next trading day",
+   "period_end": "2010-09-30",
+   "raw": {
+    "sales_m": 2117.0,
+    "sales_prior_m": 1879.0,
+    "sales_prev_q_m": 2029.0,
+    "gross_m": 2538.0,
+    "gross_prior_m": 2205.0,
+    "opex_m": 1004.0,
+    "opex_prior_m": 1010.0,
+    "litigation_m": -4.0,
+    "litigation_prior_m": 1.0,
+    "op_income_m": 1113.0,
+    "op_income_prior_m": 869.0,
+    "receivables_m": 476.0,
+    "receivables_prior_m": 444.0
+   },
+   "rows": {
+    "svc": "Service revenues | 912 | 808 | 3,497 | 3,174",
+    "dp": "Data processing revenues | 840 | 727 | 3,125 | 2,430",
+    "intl": "International transaction revenues | 619 | 507 | 2,290 | 1,916",
+    "oth": "Other revenues | 167 | 163 | 713 | 625",
+    "vs": "Volume and support incentives | (421) | (326) | (1,560) | (1,234)",
+    "rev": "Total operating revenues | 2,117 | 1,879 | 8,065 | 6,911",
+    "lit": "Litigation provision | (4) | 1 | (45) | 2",
+    "opex": "Total operating expenses | 1,004 | 1,010 | 3,476 | 3,373",
+    "op": "Operating income | 1,113 | 869 | 4,589 | 3,538",
+    "pre": "Income before income taxes | 1,195 | 863 | 4,638 | 4,000",
+    "tax": "Income tax expense | 422 | 349 | 1,674 | 1,648",
+    "ni": "Net income attributable to Visa Inc. | 774 | 514 | 2,966 | 2,353",
+    "eps": "Class A common stock | 1.06 | 0.69 | 4.01 | 3.10",
+    "sh": "Class A common stock | 731 | 748 | 739 | 759",
+    "ar": "Accounts receivable | 476 | 444",
+    "cash": "Cash and cash equivalents | 3,867 | 4,617",
+    "debt_c": "Current portion of long-term debt | 12 | 12",
+    "debt_l": "Long-term debt | 32 | 44",
+    "prev_q_revenue": "Total operating revenues | 2,029 | 1,646 | 5,948 | 5,032",
+    "ar_prior": "Accounts receivable | 476 | 444"
+   },
+   "extra_sources": [
+    "V22"
+   ],
+   "sales_pct": 12.7,
+   "seq_pct": 4.3,
+   "net_to_gross": 83.41,
+   "net_to_gross_bp": -180.3,
+   "op_margin": 52.57,
+   "op_margin_bp": 632.6,
+   "opex_pct": -0.1,
+   "opex_gap_pp": -12.8,
+   "receivables_pct": 7.2,
+   "receivables_gap_pp": -5.5,
+   "sales_b": 2.117,
+   "eps_q": 1.06,
+   "eps_q_prior": 0.69,
+   "diluted_shares_m": 731.0,
+   "receivables_b": 0.476,
+   "cash_b": 3.867,
+   "debt_note": "debt $44M (current $12M, long-term $32M)",
+   "sales_note": "total operating revenues $2,117M vs $1,879M a year earlier, $2,029M the quarter before (service $912M, data processing $840M, international transaction $619M, other $167M, less volume and support incentives $421M); 'Payments volume growth, on a constant dollar basis for the three months ended June 30, 2010 on which fiscal fourth quarter service revenue is recognized, was a positive 14% over the prior year at $802 billion.' 'Total processed transactions, which represent transactions processed by VisaNet, for the three months ended September 30, 2010, totaled 12.1 billion and were a positive 16% increase over the prior year.'",
+   "receivables_note": "accounts receivable $476M (2010-09-30) vs $444M a year earlier (the release's September 30 column)",
+   "eps_note": "GAAP diluted class A EPS $1.06 vs $0.69; 'Adjusted quarterly net income of $695 million or $0.95 per diluted class A common share excluding the revaluation of the Visa Europe put option'; 'Adjusted full-year 2010 net income of $2.9 billion or $3.91 per diluted class A common share excluding the revaluation of the Visa Europe put option'",
+   "shares_note": "diluted class A shares 731M (as converted)",
+   "next_print": "Q1 FY11 print (the quarter ends in December)",
+   "cash_return_text": "'The Company authorized a new $1 billion share repurchase plan and increased its quarterly dividend payment by 20%' (a plan, no guided number: it adds nothing)",
+   "guides": [
+    {
+     "fy": 2011,
+     "revenue_growth": [
+      11,
+      15
+     ],
+     "revenue_words": "Annual net revenue growth: 11% to 15% range;",
+     "eps_growth": null,
+     "eps_words": "Annual diluted class A common stock earnings per share growth of greater than 20%.",
+     "margin": 60.0,
+     "margin_words": "Annual operating margin: About 60%;",
+     "note": "'About 60%' is a number (the CAT and LMT 'about' rule): a margin step from FY10's operating margin"
+    }
+   ],
+   "note": null,
+   "fy_actual": {
+    "fy": 2010,
+    "fy_label": "FY10",
+    "eps_normalized": 3.91,
+    "revenue_usd_b": 8.065,
+    "diluted_shares_m": 739.0,
+    "normalization_note": "FY10 $3.91, the company's figure excluding one-offs (Q4 FY10 release: 'Adjusted full-year 2010 net income of $2.9 billion or $3.91 per diluted class A common share excluding the revaluation of the Visa Europe put option'; GAAP $4.01)",
+    "op_margin": 56.9,
+    "op_margin_note": "FY10 operating income $4,589M / total operating revenues $8,065M (Q4 FY10 release)",
+    "pretax_margin": 57.51,
+    "pretax_margin_note": "FY10 income before income taxes $4,638M / total operating revenues $8,065M (Q4 FY10 release)",
+    "net_to_gross": 83.79,
+    "sales_growth": 16.7,
+    "tax_rate": 0.3609,
+    "tax_note": "FY10 income tax $1,674M on pre-tax $4,638M",
+    "groups": [
+     [
+      "Service revenues",
+      3.497,
+      10.2
+     ],
+     [
+      "Data processing revenues",
+      3.125,
+      28.6
+     ],
+     [
+      "International transaction revenues",
+      2.29,
+      19.5
+     ],
+     [
+      "Other revenues",
+      0.713,
+      14.1
+     ],
+     [
+      "Volume and support incentives",
+      -1.56,
+      26.4
+     ]
+    ],
+    "groups_basis": "FY10 operating revenues by line, incentives as reported (FY10 growth)",
+    "rows": [
+     "Service revenues | 912 | 808 | 3,497 | 3,174",
+     "Data processing revenues | 840 | 727 | 3,125 | 2,430",
+     "International transaction revenues | 619 | 507 | 2,290 | 1,916",
+     "Other revenues | 167 | 163 | 713 | 625",
+     "Volume and support incentives | (421) | (326) | (1,560) | (1,234)",
+     "Total operating revenues | 2,117 | 1,879 | 8,065 | 6,911",
+     "Operating income | 1,113 | 869 | 4,589 | 3,538",
+     "Income before income taxes | 1,195 | 863 | 4,638 | 4,000",
+     "Income tax expense | 422 | 349 | 1,674 | 1,648",
+     "Class A common stock | 1.06 | 0.69 | 4.01 | 3.10",
+     "Class A common stock | 731 | 748 | 739 | 759"
+    ],
+    "restates": {
+     "diluted_shares_m": {
+      "2009": 759.0
+     }
+    },
+    "restates_note": "FY09 diluted shares 759M from the Q4 FY10 release (the participating-securities rule, applied retrospectively from October 1, 2009)"
+   }
+  },
+  {
+   "quarter": "Q1 FY11",
+   "fy": 2011,
+   "q": 1,
+   "published": "2011-02-03",
+   "source": "V24",
+   "release": "Feb 2",
+   "release_time": "after the close on Feb 2: 8-K accepted 2011-02-02 16:11 ET (after the 16:00 ET close); the call at 5:00 p.m. ET; public before the open of the next trading day",
+   "period_end": "2010-12-31",
+   "raw": {
+    "sales_m": 2238.0,
+    "sales_prior_m": 1960.0,
+    "sales_prev_q_m": 2117.0,
+    "gross_m": 2643.0,
+    "gross_prior_m": 2334.0,
+    "opex_m": 872.0,
+    "opex_prior_m": 743.0,
+    "litigation_m": 0.0,
+    "litigation_prior_m": -43.0,
+    "op_income_m": 1366.0,
+    "op_income_prior_m": 1217.0,
+    "receivables_m": 527.0,
+    "receivables_prior_m": 536.0
+   },
+   "rows": {
+    "svc": "Service revenues | 1,008 | 827",
+    "dp": "Data processing revenues | 844 | 765",
+    "intl": "International transaction revenues | 630 | 552",
+    "oth": "Other revenues | 161 | 190",
+    "vs": "Client Incentives | (405) | (374)",
+    "rev": "Total operating revenues | 2,238 | 1,960",
+    "lit": "Litigation provision | — | (43)",
+    "opex": "Total operating expenses | 872 | 743",
+    "op": "Operating income | 1,366 | 1,217",
+    "pre": "Income before income taxes | 1,382 | 1,208",
+    "tax": "Income tax provision | 498 | 445",
+    "ni": "Net income attributable to Visa Inc. | 884 | 763",
+    "eps": "Class A common stock | 1.23 | 1.02",
+    "sh": "Class A common stock | 719 | 745",
+    "ar": "Accounts receivable | 527 | 476",
+    "cash": "Cash and cash equivalents | 3,684 | 3,867",
+    "debt_c": "Current portion of long-term debt | 12 | 12",
+    "debt_l": "Long-term debt | 29 | 32",
+    "prev_q_revenue": "Total operating revenues | 2,117 | 1,879 | 8,065 | 6,911",
+    "ar_prior": "Accounts receivable | 536 | 444"
+   },
+   "extra_sources": [
+    "V23",
+    "V40"
+   ],
+   "sales_pct": 14.2,
+   "seq_pct": 5.7,
+   "net_to_gross": 84.68,
+   "net_to_gross_bp": 70.0,
+   "op_margin": 61.04,
+   "op_margin_bp": -105.5,
+   "opex_pct": 10.9,
+   "opex_gap_pp": -3.2,
+   "receivables_pct": -1.7,
+   "receivables_gap_pp": -15.9,
+   "sales_b": 2.238,
+   "eps_q": 1.23,
+   "eps_q_prior": 1.02,
+   "diluted_shares_m": 719.0,
+   "receivables_b": 0.527,
+   "cash_b": 3.684,
+   "debt_note": "debt $41M (current $12M, long-term $29M)",
+   "sales_note": "total operating revenues $2,238M vs $1,960M a year earlier, $2,117M the quarter before (service $1,008M, data processing $844M, international transaction $630M, other $161M, less client incentives $405M); 'Payments volume growth, on a constant dollar basis, for the three months ended September 30, 2010, on which fiscal first quarter service revenue is recognized, was a positive 14% over the prior year at $829 billion.' 'Total processed transactions, which represent transactions processed by VisaNet, for the three months ended December 31, 2010, were 13 billion, a positive 15% increase over the prior year.'",
+   "receivables_note": "accounts receivable $527M (2010-12-31) vs $536M a year earlier (the year-ago 10-Q)",
+   "eps_note": "GAAP diluted class A EPS $1.23 vs $1.02",
+   "shares_note": "diluted class A shares 719M (as converted)",
+   "next_print": "Q2 FY11 print (the quarter ends in March)",
+   "cash_return_text": "'Company effectively repurchases approximately 15.3 million shares at a total cost of $1.1 billion' (a plan, no guided number: it adds nothing)",
+   "guides": [
+    {
+     "fy": 2011,
+     "revenue_growth": [
+      11,
+      15
+     ],
+     "revenue_words": "Annual net revenue growth: 11% to 15% range;",
+     "eps_growth": null,
+     "eps_words": "Annual diluted class A common stock earnings per share growth of greater than 20%;",
+     "margin": 60.0,
+     "margin_words": "Annual operating margin: About 60%;",
+     "note": null
+    }
+   ],
+   "note": null
+  },
+  {
+   "quarter": "Q2 FY11",
+   "fy": 2011,
+   "q": 2,
+   "published": "2011-05-06",
+   "source": "V25",
+   "release": "May 5",
+   "release_time": "after the close on May 5: 8-K accepted 2011-05-05 16:11 ET (after the 16:00 ET close); the call at 5:00 p.m. ET; public before the open of the next trading day",
+   "period_end": "2011-03-31",
+   "raw": {
+    "sales_m": 2245.0,
+    "sales_prior_m": 1959.0,
+    "sales_prev_q_m": 2238.0,
+    "gross_m": 2696.0,
+    "gross_prior_m": 2331.0,
+    "opex_m": 862.0,
+    "opex_prior_m": 837.0,
+    "litigation_m": 6.0,
+    "litigation_prior_m": 2.0,
+    "op_income_m": 1383.0,
+    "op_income_prior_m": 1122.0,
+    "receivables_m": 538.0,
+    "receivables_prior_m": 502.0
+   },
+   "rows": {
+    "svc": "Service revenues | 1,093 | 885 | 2,101 | 1,712",
+    "dp": "Data processing revenues | 823 | 728 | 1,667 | 1,493",
+    "intl": "International transaction revenues | 624 | 545 | 1,254 | 1,097",
+    "oth": "Other revenues | 156 | 173 | 317 | 363",
+    "vs": "Client incentives | (451) | (372) | (856) | (746)",
+    "rev": "Total operating revenues | 2,245 | 1,959 | 4,483 | 3,919",
+    "lit": "Litigation provision | 6 | 2 | 6 | (41)",
+    "opex": "Total operating expenses | 862 | 837 | 1,734 | 1,580",
+    "op": "Operating income | 1,383 | 1,122 | 2,749 | 2,339",
+    "pre": "Income before income taxes | 1,377 | 1,113 | 2,759 | 2,321",
+    "tax": "Income tax provision | 497 | 401 | 995 | 846",
+    "ni": "Net income attributable to Visa Inc. | 881 | 713 | 1,765 | 1,476",
+    "eps": "Class A common stock | 1.23 | 0.96 | 2.46 | 1.99",
+    "sh": "Class A common stock | 714 | 742 | 717 | 743",
+    "ar": "Accounts receivable | 538 | 476",
+    "cash": "Cash and cash equivalents | 3,512 | 3,867",
+    "debt_c": "Current portion of long-term debt | 12 | 12",
+    "debt_l": "Long-term debt | 25 | 32",
+    "prev_q_revenue": "Total operating revenues | 2,238 | 1,960",
+    "ar_prior": "Accounts receivable | 502 | 444"
+   },
+   "extra_sources": [
+    "V24",
+    "V41"
+   ],
+   "sales_pct": 14.6,
+   "seq_pct": 0.3,
+   "net_to_gross": 83.27,
+   "net_to_gross_bp": -77.0,
+   "op_margin": 61.6,
+   "op_margin_bp": 432.9,
+   "opex_pct": 2.5,
+   "opex_gap_pp": -12.1,
+   "receivables_pct": 7.2,
+   "receivables_gap_pp": -7.4,
+   "sales_b": 2.245,
+   "eps_q": 1.23,
+   "eps_q_prior": 0.96,
+   "diluted_shares_m": 714.0,
+   "receivables_b": 0.538,
+   "cash_b": 3.512,
+   "debt_note": "debt $37M (current $12M, long-term $25M)",
+   "sales_note": "total operating revenues $2,245M vs $1,959M a year earlier, $2,238M the quarter before (service $1,093M, data processing $823M, international transaction $624M, other $156M, less client incentives $451M); 'Payments volume growth, on a constant dollar basis, for the three months ended December 31, 2010, on which fiscal second quarter service revenue is recognized, was a positive 15% over the prior year at $897 billion.' 'Total processed transactions, which represent transactions processed by VisaNet, for the three months ended March 31, 2011, were 12 billion, a positive 13% increase over the prior year.'",
+   "receivables_note": "accounts receivable $538M (2011-03-31) vs $502M a year earlier (the year-ago 10-Q)",
+   "eps_note": "GAAP diluted class A EPS $1.23 vs $0.96",
+   "shares_note": "diluted class A shares 714M (as converted)",
+   "next_print": "Q3 FY11 print (the quarter ends in June)",
+   "cash_return_text": "'The Company authorized a new $1 billion share repurchase program' (a plan, no guided number: it adds nothing)",
+   "guides": [
+    {
+     "fy": 2011,
+     "revenue_growth": [
+      11,
+      15
+     ],
+     "revenue_words": "Annual net revenue growth: 11% to 15% range;",
+     "eps_growth": null,
+     "eps_words": "Annual diluted class A common stock earnings per share growth of greater than 20%;",
+     "margin": 60.0,
+     "margin_words": "Annual operating margin: About 60%;",
+     "note": null
+    }
+   ],
+   "note": null
+  },
+  {
+   "quarter": "Q3 FY11",
+   "fy": 2011,
+   "q": 3,
+   "published": "2011-07-28",
+   "source": "V26",
+   "release": "Jul 27",
+   "release_time": "after the close on Jul 27: 8-K accepted 2011-07-27 16:11 ET (after the 16:00 ET close); the call at 5:00 p.m. ET; public before the open of the next trading day",
+   "period_end": "2011-06-30",
+   "raw": {
+    "sales_m": 2322.0,
+    "sales_prior_m": 2029.0,
+    "sales_prev_q_m": 2245.0,
+    "gross_m": 2770.0,
+    "gross_prior_m": 2422.0,
+    "opex_m": 977.0,
+    "opex_prior_m": 892.0,
+    "litigation_m": 0.0,
+    "litigation_prior_m": 0.0,
+    "op_income_m": 1345.0,
+    "op_income_prior_m": 1137.0,
+    "receivables_m": 551.0,
+    "receivables_prior_m": 501.0
+   },
+   "rows": {
+    "svc": "Service revenues | 1,055 | 873 | 3,156 | 2,585",
+    "dp": "Data processing revenues | 886 | 792 | 2,553 | 2,285",
+    "intl": "International transaction revenues | 662 | 574 | 1,916 | 1,671",
+    "oth": "Other revenues | 167 | 183 | 484 | 546",
+    "vs": "Client incentives | (448) | (393) | (1,304) | (1,139)",
+    "rev": "Total operating revenues | 2,322 | 2,029 | 6,805 | 5,948",
+    "lit": "Litigation provision | — | — | 6 | (41)",
+    "opex": "Total operating expenses | 977 | 892 | 2,711 | 2,472",
+    "op": "Operating income | 1,345 | 1,137 | 4,094 | 3,476",
+    "pre": "Income before income taxes | 1,543 | 1,122 | 4,302 | 3,443",
+    "tax": "Income tax provision | 539 | 406 | 1,534 | 1,252",
+    "ni": "Net income attributable to Visa Inc. | 1,005 | 716 | 2,770 | 2,192",
+    "eps": "Class A common stock | 1.43 | 0.97 | 3.89 | 2.96",
+    "sh": "Class A common stock | 704 | 738 | 712 | 742",
+    "ar": "Accounts receivable | 551 | 476",
+    "cash": "Cash and cash equivalents | 3,600 | 3,867",
+    "debt_c": "Current portion of long-term debt | 13 | 12",
+    "debt_l": "Long-term debt | 22 | 32",
+    "prev_q_revenue": "Total operating revenues | 2,245 | 1,959 | 4,483 | 3,919",
+    "ar_prior": "Accounts receivable | 501 | 444"
+   },
+   "extra_sources": [
+    "V25",
+    "V42"
+   ],
+   "sales_pct": 14.4,
+   "seq_pct": 3.4,
+   "net_to_gross": 83.83,
+   "net_to_gross_bp": 5.3,
+   "op_margin": 57.92,
+   "op_margin_bp": 188.7,
+   "opex_pct": 9.5,
+   "opex_gap_pp": -4.9,
+   "receivables_pct": 10.0,
+   "receivables_gap_pp": -4.5,
+   "sales_b": 2.322,
+   "eps_q": 1.43,
+   "eps_q_prior": 0.97,
+   "diluted_shares_m": 704.0,
+   "receivables_b": 0.551,
+   "cash_b": 3.6,
+   "debt_note": "debt $35M (current $13M, long-term $22M)",
+   "sales_note": "total operating revenues $2,322M vs $2,029M a year earlier, $2,245M the quarter before (service $1,055M, data processing $886M, international transaction $662M, other $167M, less client incentives $448M); 'Payments volume growth, on a constant dollar basis, for the three months ended March 31, 2011, on which fiscal third quarter service revenue is recognized, was a positive 13% over the prior year at $862 billion.' 'Total processed transactions, which represent transactions processed by VisaNet, for the three months ended June 30, 2011, were 13 billion, a positive 11% increase over the prior year.'",
+   "receivables_note": "accounts receivable $551M (2011-06-30) vs $501M a year earlier (the year-ago 10-Q)",
+   "eps_note": "GAAP diluted class A EPS $1.43 vs $0.97; 'Adjusted quarterly net income of $883 million or $1.26 per diluted class A common share excluding the revaluation of the Visa Europe put option'",
+   "shares_note": "diluted class A shares 704M (as converted)",
+   "next_print": "Q4 FY11 print (the quarter ends in September)",
+   "cash_return_text": "'The Company authorized a new $1 billion share repurchase program' (a plan, no guided number: it adds nothing)",
+   "guides": [
+    {
+     "fy": 2011,
+     "revenue_growth": [
+      11,
+      15
+     ],
+     "revenue_words": "Annual net revenue growth: 11% to 15% range;",
+     "eps_growth": null,
+     "eps_words": "Annual diluted class A common stock earnings per share growth of greater than 20%; and",
+     "margin": 60.0,
+     "margin_words": "Annual operating margin: About 60%;",
+     "note": null
+    },
+    {
+     "fy": 2012,
+     "revenue_growth": null,
+     "revenue_words": "Annual net revenue growth: high single to low double digit range; and",
+     "eps_growth": null,
+     "eps_words": "Annual diluted class A common stock earnings per share growth: mid to high teens range.",
+     "margin": null,
+     "margin_words": null,
+     "note": null
+    }
+   ],
+   "note": null
+  },
+  {
+   "quarter": "Q4 FY11",
+   "fy": 2011,
+   "q": 4,
+   "published": "2011-10-27",
+   "source": "V27",
+   "release": "Oct 26",
+   "release_time": "after the close on Oct 26: 8-K accepted 2011-10-26 16:10 ET (after the 16:00 ET close); the call at 5:00 p.m. ET; public before the open of the next trading day",
+   "period_end": "2011-09-30",
+   "raw": {
+    "sales_m": 2383.0,
+    "sales_prior_m": 2117.0,
+    "sales_prev_q_m": 2322.0,
+    "gross_m": 2959.0,
+    "gross_prior_m": 2538.0,
+    "opex_m": 1021.0,
+    "opex_prior_m": 1004.0,
+    "litigation_m": 1.0,
+    "litigation_prior_m": -4.0,
+    "op_income_m": 1362.0,
+    "op_income_prior_m": 1113.0,
+    "receivables_m": 560.0,
+    "receivables_prior_m": 476.0
+   },
+   "rows": {
+    "svc": "Service revenues | 1,105 | 912 | 4,261 | 3,497",
+    "dp": "Data processing revenues | 925 | 840 | 3,478 | 3,125",
+    "intl": "International transaction revenues | 758 | 619 | 2,674 | 2,290",
+    "oth": "Other revenues | 171 | 167 | 655 | 713",
+    "vs": "Client incentives | (576) | (421) | (1,880) | (1,560)",
+    "rev": "Total operating revenues | 2,383 | 2,117 | 9,188 | 8,065",
+    "lit": "Litigation provision | 1 | (4) | 7 | (45)",
+    "opex": "Total operating expenses | 1,021 | 1,004 | 3,732 | 3,476",
+    "op": "Operating income | 1,362 | 1,113 | 5,456 | 4,589",
+    "pre": "Income before income taxes | 1,354 | 1,195 | 5,656 | 4,638",
+    "tax": "Income tax provision | 476 | 422 | 2,010 | 1,674",
+    "ni": "Net income attributable to Visa Inc. | 880 | 774 | 3,650 | 2,966",
+    "eps": "Class A common stock | 1.27 | 1.06 | 5.16 | 4.01",
+    "sh": "Class A common stock | 692 | 731 | 707 | 739",
+    "ar": "Accounts receivable | 560 | 476",
+    "cash": "Cash and cash equivalents | 2,127 | 3,867",
+    "debt_c": "Current portion of long-term debt | — | 12",
+    "debt_l": "Long-term debt | — | 32",
+    "prev_q_revenue": "Total operating revenues | 2,322 | 2,029 | 6,805 | 5,948",
+    "ar_prior": "Accounts receivable | 560 | 476"
+   },
+   "extra_sources": [
+    "V26"
+   ],
+   "sales_pct": 12.6,
+   "seq_pct": 2.6,
+   "net_to_gross": 80.53,
+   "net_to_gross_bp": -287.8,
+   "op_margin": 57.15,
+   "op_margin_bp": 458.0,
+   "opex_pct": 1.2,
+   "opex_gap_pp": -11.4,
+   "receivables_pct": 17.6,
+   "receivables_gap_pp": 5.1,
+   "sales_b": 2.383,
+   "eps_q": 1.27,
+   "eps_q_prior": 1.06,
+   "diluted_shares_m": 692.0,
+   "receivables_b": 0.56,
+   "cash_b": 2.127,
+   "debt_note": "no debt on the release's balance sheet",
+   "sales_note": "total operating revenues $2,383M vs $2,117M a year earlier, $2,322M the quarter before (service $1,105M, data processing $925M, international transaction $758M, other $171M, less client incentives $576M); 'Payments volume growth, on a constant dollar basis, for the three months ended June 30, 2011, on which fiscal fourth quarter service revenue is recognized, was a positive 14% over the prior year at $941 billion.' 'Total processed transactions, which represent transactions processed by VisaNet, for the three months ended September 30, 2011, were 13 billion, a positive 9% increase over the prior year.'",
+   "receivables_note": "accounts receivable $560M (2011-09-30) vs $476M a year earlier (the release's September 30 column)",
+   "eps_note": "GAAP diluted class A EPS $1.27 vs $1.06; 'Adjusted full-year 2011 net income of $3.5 billion or $4.99 per diluted class A common share excluding the revaluation of the Visa Europe put option'",
+   "shares_note": "diluted class A shares 692M (as converted)",
+   "next_print": "Q1 FY12 print (the quarter ends in December)",
+   "cash_return_text": "'The Company increases its share repurchase program by $1 billion and quarterly dividend payment by 47%' (a plan, no guided number: it adds nothing)",
+   "guides": [
+    {
+     "fy": 2012,
+     "revenue_growth": null,
+     "revenue_words": "Annual net revenue growth: high single to low double digit range; and",
+     "eps_growth": null,
+     "eps_words": "Adjusted annual diluted class A common stock earnings per share growth: mid to high teens range.",
+     "margin": 60.0,
+     "margin_words": "Annual operating margin: About 60%;",
+     "note": "revenue and EPS growth in words only: no field"
+    }
+   ],
+   "note": null,
+   "fy_actual": {
+    "fy": 2011,
+    "fy_label": "FY11",
+    "eps_normalized": 4.99,
+    "revenue_usd_b": 9.188,
+    "diluted_shares_m": 707.0,
+    "normalization_note": "FY11 $4.99, the company's figure excluding one-offs (Q4 FY11 release: 'Adjusted full-year 2011 net income of $3.5 billion or $4.99 per diluted class A common share excluding the revaluation of the Visa Europe put option'; GAAP $5.16)",
+    "op_margin": 59.38,
+    "op_margin_note": "FY11 operating income $5,456M / total operating revenues $9,188M (Q4 FY11 release)",
+    "pretax_margin": 61.56,
+    "pretax_margin_note": "FY11 income before income taxes $5,656M / total operating revenues $9,188M (Q4 FY11 release)",
+    "net_to_gross": 83.01,
+    "sales_growth": 13.9,
+    "tax_rate": 0.3554,
+    "tax_note": "FY11 income tax $2,010M on pre-tax $5,656M",
+    "groups": [
+     [
+      "Service revenues",
+      4.261,
+      21.8
+     ],
+     [
+      "Data processing revenues",
+      3.478,
+      11.3
+     ],
+     [
+      "International transaction revenues",
+      2.674,
+      16.8
+     ],
+     [
+      "Other revenues",
+      0.655,
+      -8.1
+     ],
+     [
+      "Client incentives",
+      -1.88,
+      20.5
+     ]
+    ],
+    "groups_basis": "FY11 operating revenues by line, incentives as reported (FY11 growth)",
+    "rows": [
+     "Service revenues | 1,105 | 912 | 4,261 | 3,497",
+     "Data processing revenues | 925 | 840 | 3,478 | 3,125",
+     "International transaction revenues | 758 | 619 | 2,674 | 2,290",
+     "Other revenues | 171 | 167 | 655 | 713",
+     "Client incentives | (576) | (421) | (1,880) | (1,560)",
+     "Total operating revenues | 2,383 | 2,117 | 9,188 | 8,065",
+     "Operating income | 1,362 | 1,113 | 5,456 | 4,589",
+     "Income before income taxes | 1,354 | 1,195 | 5,656 | 4,638",
+     "Income tax provision | 476 | 422 | 2,010 | 1,674",
+     "Class A common stock | 1.27 | 1.06 | 5.16 | 4.01",
+     "Class A common stock | 692 | 731 | 707 | 739"
+    ]
+   }
+  },
+  {
+   "quarter": "Q1 FY12",
+   "fy": 2012,
+   "q": 1,
+   "published": "2012-02-09",
+   "source": "V28",
+   "release": "Feb 8",
+   "release_time": "after the close on Feb 8: 8-K accepted 2012-02-08 16:11 ET (after the 16:00 ET close); the call at 5:00 p.m. ET; public before the open of the next trading day",
+   "period_end": "2011-12-31",
+   "raw": {
+    "sales_m": 2547.0,
+    "sales_prior_m": 2238.0,
+    "sales_prev_q_m": 2383.0,
+    "gross_m": 3028.0,
+    "gross_prior_m": 2643.0,
+    "opex_m": 929.0,
+    "opex_prior_m": 872.0,
+    "litigation_m": 0.0,
+    "litigation_prior_m": 0.0,
+    "op_income_m": 1618.0,
+    "op_income_prior_m": 1366.0,
+    "receivables_m": 629.0,
+    "receivables_prior_m": 527.0
+   },
+   "rows": {
+    "svc": "Service revenues | 1,151 | 1,008",
+    "dp": "Data processing revenues | 951 | 844",
+    "intl": "International transaction revenues | 748 | 630",
+    "oth": "Other revenues | 178 | 161",
+    "vs": "Client incentives | (481) | (405)",
+    "rev": "Total operating revenues | 2,547 | 2,238",
+    "opex": "Total operating expenses | 929 | 872",
+    "op": "Operating income | 1,618 | 1,366",
+    "pre": "Income before income taxes | 1,617 | 1,382",
+    "tax": "Income tax provision | 590 | 498",
+    "ni": "Net income attributable to Visa Inc. | 1,029 | 884",
+    "eps": "Class A common stock | 1.49 | 1.23",
+    "sh": "Class A common stock | 690 | 719",
+    "ar": "Accounts receivable | 629 | 560",
+    "cash": "Cash and cash equivalents | 1,942 | 2,127",
+    "prev_q_revenue": "Total operating revenues | 2,383 | 2,117 | 9,188 | 8,065",
+    "ar_prior": "Accounts receivable | 527 | 476"
+   },
+   "extra_sources": [
+    "V27",
+    "V43"
+   ],
+   "sales_pct": 13.8,
+   "seq_pct": 6.9,
+   "net_to_gross": 84.11,
+   "net_to_gross_bp": -56.2,
+   "op_margin": 63.53,
+   "op_margin_bp": 248.9,
+   "opex_pct": 6.5,
+   "opex_gap_pp": -7.3,
+   "receivables_pct": 19.4,
+   "receivables_gap_pp": 5.5,
+   "sales_b": 2.547,
+   "eps_q": 1.49,
+   "eps_q_prior": 1.23,
+   "diluted_shares_m": 690.0,
+   "receivables_b": 0.629,
+   "cash_b": 1.942,
+   "debt_note": "no debt on the release's balance sheet",
+   "sales_note": "total operating revenues $2,547M vs $2,238M a year earlier, $2,383M the quarter before (service $1,151M, data processing $951M, international transaction $748M, other $178M, less client incentives $481M); 'Payments volume growth, on a constant dollar basis, for the three months ended September 30, 2011, on which fiscal first quarter service revenue is recognized, was a positive 13% over the prior year at $971 billion.' 'Total processed transactions, which represent transactions processed by VisaNet, for the three months ended December 31, 2011, were 13.6 billion, a positive 8% increase over the prior year.'",
+   "receivables_note": "accounts receivable $629M (2011-12-31) vs $527M a year earlier (the year-ago 10-Q)",
+   "eps_note": "GAAP diluted class A EPS $1.49 vs $1.23",
+   "shares_note": "diluted class A shares 690M (as converted)",
+   "next_print": "Q2 FY12 print (the quarter ends in March)",
+   "cash_return_text": "'Authorized a new $500 million class A share repurchase program' (a plan, no guided number: it adds nothing)",
+   "guides": [
+    {
+     "fy": 2012,
+     "revenue_growth": null,
+     "revenue_words": "Annual net revenue growth in the low double digits; and",
+     "eps_growth": null,
+     "eps_words": "Adjusted annual diluted class A common stock earnings per share growth in the high teens.",
+     "margin": 60.0,
+     "margin_words": "Annual operating margin of about 60%;",
+     "note": null
+    }
+   ],
+   "note": null
+  },
+  {
+   "quarter": "Q2 FY12",
+   "fy": 2012,
+   "q": 2,
+   "published": "2012-05-03",
+   "source": "V29",
+   "release": "May 2",
+   "release_time": "after the close on May 2: 8-K accepted 2012-05-02 16:11 ET (after the 16:00 ET close); the call at 5:00 p.m. ET; public before the open of the next trading day",
+   "period_end": "2012-03-31",
+   "raw": {
+    "sales_m": 2578.0,
+    "sales_prior_m": 2245.0,
+    "sales_prev_q_m": 2547.0,
+    "gross_m": 3075.0,
+    "gross_prior_m": 2696.0,
+    "opex_m": 972.0,
+    "opex_prior_m": 862.0,
+    "litigation_m": 0.0,
+    "litigation_prior_m": 6.0,
+    "op_income_m": 1606.0,
+    "op_income_prior_m": 1383.0,
+    "receivables_m": 655.0,
+    "receivables_prior_m": 538.0
+   },
+   "rows": {
+    "svc": "Service revenues | 1,241 | 1,093 | 2,392 | 2,101",
+    "dp": "Data processing revenues | 922 | 823 | 1,873 | 1,667",
+    "intl": "International transaction revenues | 733 | 624 | 1,481 | 1,254",
+    "oth": "Other revenues | 179 | 156 | 357 | 317",
+    "vs": "Client incentives | (497) | (451) | (978) | (856)",
+    "rev": "Total operating revenues | 2,578 | 2,245 | 5,125 | 4,483",
+    "lit": "Litigation provision | — | 6 | — | 6",
+    "opex": "Total operating expenses | 972 | 862 | 1,901 | 1,734",
+    "op": "Operating income | 1,606 | 1,383 | 3,224 | 2,749",
+    "pre": "Income before income taxes | 1,609 | 1,377 | 3,226 | 2,759",
+    "tax": "Income tax provision | 317 | 497 | 907 | 995",
+    "ni": "Net income attributable to Visa Inc. | 1,292 | 881 | 2,321 | 1,765",
+    "eps": "Class A common stock | 1.91 | 1.23 | 3.40 | 2.46",
+    "sh": "Class A common stock | 676 | 714 | 683 | 717",
+    "ar": "Accounts receivable | 655 | 560",
+    "cash": "Cash and cash equivalents | 2,042 | 2,127",
+    "prev_q_revenue": "Total operating revenues | 2,547 | 2,238",
+    "ar_prior": "Accounts receivable | 538 | 476"
+   },
+   "extra_sources": [
+    "V28",
+    "V44"
+   ],
+   "sales_pct": 14.8,
+   "seq_pct": 1.2,
+   "net_to_gross": 83.84,
+   "net_to_gross_bp": 56.6,
+   "op_margin": 62.3,
+   "op_margin_bp": 69.3,
+   "opex_pct": 13.6,
+   "opex_gap_pp": -1.3,
+   "receivables_pct": 21.7,
+   "receivables_gap_pp": 6.9,
+   "sales_b": 2.578,
+   "eps_q": 1.91,
+   "eps_q_prior": 1.23,
+   "diluted_shares_m": 676.0,
+   "receivables_b": 0.655,
+   "cash_b": 2.042,
+   "debt_note": "no debt on the release's balance sheet",
+   "sales_note": "total operating revenues $2,578M vs $2,245M a year earlier, $2,547M the quarter before (service $1,241M, data processing $922M, international transaction $733M, other $179M, less client incentives $497M); 'Payments volume growth, on a constant dollar basis, for the three months ended December 31, 2011, on which fiscal second quarter service revenue is recognized, was a positive 11% over the prior year at $993 billion.' 'Total processed transactions, which represent transactions processed by VisaNet, for the three months ended March 31, 2012, were 13 billion, a positive 8% increase over the prior year.'",
+   "receivables_note": "accounts receivable $655M (2012-03-31) vs $538M a year earlier (the year-ago 10-Q)",
+   "eps_note": "GAAP diluted class A EPS $1.91 vs $1.23; 'Adjusted quarterly net income of $1.1 billion or $1.60 per diluted class A common share excluding non-cash tax benefit'",
+   "shares_note": "diluted class A shares 676M (as converted)",
+   "next_print": "Q3 FY12 print (the quarter ends in June)",
+   "cash_return_text": null,
+   "guides": [
+    {
+     "fy": 2012,
+     "revenue_growth": null,
+     "revenue_words": "Annual net revenue growth in the low double digits;",
+     "eps_growth": null,
+     "eps_words": "Adjusted annual diluted class A common stock earnings per share growth: High teens to low twenties.",
+     "margin": 60.0,
+     "margin_words": "Annual operating margin of about 60%;",
+     "note": null
+    }
+   ],
+   "note": null
+  },
+  {
+   "quarter": "Q3 FY12",
+   "fy": 2012,
+   "q": 3,
+   "published": "2012-07-26",
+   "source": "V30",
+   "release": "Jul 25",
+   "release_time": "after the close on Jul 25: 8-K accepted 2012-07-25 16:11 ET (after the 16:00 ET close); the call at 5:00 p.m. ET; public before the open of the next trading day",
+   "period_end": "2012-06-30",
+   "raw": {
+    "sales_m": 2565.0,
+    "sales_prior_m": 2322.0,
+    "sales_prev_q_m": 2578.0,
+    "gross_m": 3179.0,
+    "gross_prior_m": 2770.0,
+    "opex_m": 5172.0,
+    "opex_prior_m": 977.0,
+    "litigation_m": 4098.0,
+    "litigation_prior_m": 0.0,
+    "op_income_m": -2607.0,
+    "op_income_prior_m": 1345.0,
+    "receivables_m": 793.0,
+    "receivables_prior_m": 551.0,
+    "op_one_off_m": 4098.0
+   },
+   "rows": {
+    "svc": "Service revenues | 1,216 | 1,055 | 3,608 | 3,156",
+    "dp": "Data processing revenues | 1,040 | 886 | 2,913 | 2,553",
+    "intl": "International transaction revenues | 748 | 662 | 2,229 | 1,916",
+    "oth": "Other revenues | 175 | 167 | 532 | 484",
+    "vs": "Client incentives | (614) | (448) | (1,592) | (1,304)",
+    "rev": "Total operating revenues | 2,565 | 2,322 | 7,690 | 6,805",
+    "lit": "Litigation provision | 4,098 | — | 4,098 | 6",
+    "opex": "Total operating expenses | 5,172 | 977 | 7,073 | 2,711",
+    "op": "Operating (loss) income | (2,607) | 1,345 | 617 | 4,094",
+    "pre": "(Loss) Income before income taxes | (2,607) | 1,543 | 619 | 4,302",
+    "tax": "Income tax (benefit) provision | (768) | 539 | 139 | 1,534",
+    "ni": "Net (loss) income attributable to Visa Inc. | (1,839) | 1,005 | 482 | 2,770",
+    "eps": "Class A common stock | (2.74) | 1.43 | 0.71 | 3.89",
+    "sh": "Class A common stock | 672 | 704 | 681 | 712",
+    "ar": "Accounts receivable | 793 | 560",
+    "cash": "Cash and cash equivalents | 1,558 | 2,127",
+    "prev_q_revenue": "Total operating revenues | 2,578 | 2,245 | 5,125 | 4,483",
+    "ar_prior": "Accounts receivable | 551 | 476",
+    "one_off": "Litigation provision | (4,098) | — | NM | — | 2,894 | (3) | — | 4.30 | —",
+    "one_off_adjusted": "Adjusted | 1,074 | 977 | 58% | 58% | 1,055 | 883 | 1.56 | 1.26"
+   },
+   "extra_sources": [
+    "V29",
+    "V45"
+   ],
+   "sales_pct": 10.5,
+   "seq_pct": -0.5,
+   "net_to_gross": 80.69,
+   "net_to_gross_bp": -314.1,
+   "op_margin": 58.13,
+   "op_margin_bp": 20.4,
+   "opex_pct": 9.9,
+   "opex_gap_pp": -0.5,
+   "receivables_pct": 43.9,
+   "receivables_gap_pp": 33.5,
+   "sales_b": 2.565,
+   "eps_q": -2.74,
+   "eps_q_prior": 1.43,
+   "diluted_shares_m": 672.0,
+   "receivables_b": 0.793,
+   "cash_b": 1.558,
+   "debt_note": "no debt on the release's balance sheet",
+   "sales_note": "total operating revenues $2,565M vs $2,322M a year earlier, $2,578M the quarter before (service $1,216M, data processing $1,040M, international transaction $748M, other $175M, less client incentives $614M); 'Payments volume growth, on a constant dollar basis, for the three months ended March 31, 2012, on which fiscal third quarter service revenue is recognized, was a positive 11% over the prior year at $958 billion.' 'Total processed transactions, which represent transactions processed by VisaNet, for the three months ended June 30, 2012, were 13.1 billion, a positive 1% increase over the prior year.'",
+   "receivables_note": "accounts receivable $793M (2012-06-30) vs $551M a year earlier (the year-ago 10-Q)",
+   "eps_note": "GAAP diluted class A EPS $(2.74) vs $1.43; 'Adjusted quarterly net income of $1.1 billion or $1.56 per diluted class A common share excluding a litigation provision and related tax benefit'; operating income excludes the $4,098M covered-litigation provision, as the release's adjusted operating expenses do",
+   "shares_note": "diluted class A shares 672M (as converted)",
+   "next_print": "Q4 FY12 print (the quarter ends in September)",
+   "cash_return_text": "'The Company authorized a new $1 billion share repurchase program and deposited $150 million into the litigation escrow' (a plan, no guided number: it adds nothing)",
+   "guides": [
+    {
+     "fy": 2012,
+     "revenue_growth": null,
+     "revenue_words": "Annual net revenue growth in the low double digits;",
+     "eps_growth": null,
+     "eps_words": "Adjusted annual diluted class A common stock earnings per share growth in the low twenties*.",
+     "margin": 60.0,
+     "margin_words": "Adjusted annual operating margin of about 60%*;",
+     "note": "the margin excludes the Q3 FY12 litigation provision, as FY11's had none"
+    }
+   ],
+   "note": null
+  },
+  {
+   "quarter": "Q4 FY12",
+   "fy": 2012,
+   "q": 4,
+   "published": "2012-11-01",
+   "source": "V31",
+   "release": "Oct 31",
+   "release_time": "after the close on Oct 31: 8-K accepted 2012-10-31 16:09 ET (after the 16:00 ET close); the call at 5:00 p.m. ET; public before the open of the next trading day",
+   "period_end": "2012-09-30",
+   "raw": {
+    "sales_m": 2731.0,
+    "sales_prior_m": 2383.0,
+    "sales_prev_q_m": 2565.0,
+    "gross_m": 3294.0,
+    "gross_prior_m": 2959.0,
+    "opex_m": 1209.0,
+    "opex_prior_m": 1021.0,
+    "litigation_m": 2.0,
+    "litigation_prior_m": 1.0,
+    "op_income_m": 1522.0,
+    "op_income_prior_m": 1362.0,
+    "receivables_m": 723.0,
+    "receivables_prior_m": 560.0
+   },
+   "rows": {
+    "svc": "Service revenues | 1,264 | 1,105 | 4,872 | 4,261",
+    "dp": "Data processing revenues | 1,062 | 925 | 3,975 | 3,478",
+    "intl": "International transaction revenues | 796 | 758 | 3,025 | 2,674",
+    "oth": "Other revenues | 172 | 171 | 704 | 655",
+    "vs": "Client incentives | (563) | (576) | (2,155) | (1,880)",
+    "rev": "Total operating revenues | 2,731 | 2,383 | 10,421 | 9,188",
+    "lit": "Litigation provision | 2 | 1 | 4,100 | 7",
+    "opex": "Total operating expenses | 1,209 | 1,021 | 8,282 | 3,732",
+    "op": "Operating income | 1,522 | 1,362 | 2,139 | 5,456",
+    "pre": "Income before income taxes | 1,588 | 1,354 | 2,207 | 5,656",
+    "tax": "Income tax (benefit) provision | (74) | 476 | 65 | 2,010",
+    "ni": "Net income attributable to Visa Inc. | 1,662 | 880 | 2,144 | 3,650",
+    "eps": "Class A common stock | 2.47 | 1.27 | 3.16 | 5.16",
+    "sh": "Class A common stock | 672 | 692 | 678 | 707",
+    "ar": "Accounts receivable | 723 | 560",
+    "cash": "Cash and cash equivalents | 2,074 | 2,127",
+    "prev_q_revenue": "Total operating revenues | 2,565 | 2,322 | 7,690 | 6,805",
+    "ar_prior": "Accounts receivable | 723 | 560",
+    "fy_adjusted": "Adjusted | 4,184 | 3,732 | 60% | 59% | 4,203 | 3,528 | 6.20 | 4.99",
+    "fy_tax_adjusted": "Adjusted | 6,262 | 2,061 | 33%"
+   },
+   "extra_sources": [
+    "V30"
+   ],
+   "sales_pct": 14.6,
+   "seq_pct": 6.5,
+   "net_to_gross": 82.91,
+   "net_to_gross_bp": 237.4,
+   "op_margin": 55.73,
+   "op_margin_bp": -142.4,
+   "opex_pct": 18.3,
+   "opex_gap_pp": 3.7,
+   "receivables_pct": 29.1,
+   "receivables_gap_pp": 14.5,
+   "sales_b": 2.731,
+   "eps_q": 2.47,
+   "eps_q_prior": 1.27,
+   "diluted_shares_m": 672.0,
+   "receivables_b": 0.723,
+   "cash_b": 2.074,
+   "debt_note": "no debt on the release's balance sheet",
+   "sales_note": "total operating revenues $2,731M vs $2,383M a year earlier, $2,565M the quarter before (service $1,264M, data processing $1,062M, international transaction $796M, other $172M, less client incentives $563M); 'Payments volume growth, on a constant dollar basis, for the three months ended June 30, 2012, on which fiscal fourth quarter service revenue is recognized, was a positive 6% over the prior year at $978 billion.' 'Total processed transactions, which represent transactions processed by VisaNet, for the three months ended September 30, 2012, were 14 billion, a positive 2% increase over the prior year.'",
+   "receivables_note": "accounts receivable $723M (2012-09-30) vs $560M a year earlier (the release's September 30 column)",
+   "eps_note": "GAAP diluted class A EPS $2.47 vs $1.27; 'Adjusted quarterly net income of $1 billion or $1.54 per diluted class A common share, excluding special item'; 'Adjusted full-year 2012 net income of $4.2 billion or $6.20 per diluted class A common share, excluding special items'",
+   "shares_note": "diluted class A shares 672M (as converted)",
+   "next_print": "Q1 FY13 print (the quarter ends in December)",
+   "cash_return_text": "'The Company authorizes a new $1.5 billion repurchase program and increases quarterly dividend payment by 50%' (a plan, no guided number: it adds nothing)",
+   "guides": [
+    {
+     "fy": 2013,
+     "revenue_growth": null,
+     "revenue_words": "Annual net revenue growth in the low double digits;",
+     "eps_growth": null,
+     "eps_words": "Adjusted annual diluted class A common stock earnings per share growth: High teens;",
+     "margin": 60.0,
+     "margin_words": "Adjusted annual operating margin of about 60%;",
+     "note": "a margin step from FY12's operating margin excluding the litigation provision"
+    }
+   ],
+   "note": null,
+   "fy_actual": {
+    "fy": 2012,
+    "fy_label": "FY12",
+    "eps_normalized": 6.2,
+    "revenue_usd_b": 10.421,
+    "diluted_shares_m": 678.0,
+    "normalization_note": "FY12 $6.20, the company's figure excluding one-offs (Q4 FY12 release: 'Adjusted full-year 2012 net income of $4.2 billion or $6.20 per diluted class A common share, excluding special items'; GAAP $3.16)",
+    "op_margin": 59.85,
+    "op_margin_note": "FY12 operating income excluding the $4,098M litigation provision $6,237M (revenues less the release's adjusted operating expenses $4,184M) / total operating revenues $10,421M (GAAP margin 20.5%)",
+    "pretax_margin": 60.09,
+    "pretax_margin_note": "FY12 income before income taxes excluding the special items $6,262M (the release's adjusted figure) / total operating revenues $10,421M",
+    "net_to_gross": 82.86,
+    "sales_growth": 13.4,
+    "tax_rate": 0.3291,
+    "tax_note": "FY12 adjusted income tax $2,061M on adjusted pre-tax $6,262M (GAAP $65M on $2,207M)",
+    "groups": [
+     [
+      "Service revenues",
+      4.872,
+      14.3
+     ],
+     [
+      "Data processing revenues",
+      3.975,
+      14.3
+     ],
+     [
+      "International transaction revenues",
+      3.025,
+      13.1
+     ],
+     [
+      "Other revenues",
+      0.704,
+      7.5
+     ],
+     [
+      "Client incentives",
+      -2.155,
+      14.6
+     ]
+    ],
+    "groups_basis": "FY12 operating revenues by line, incentives as reported (FY12 growth)",
+    "rows": [
+     "Service revenues | 1,264 | 1,105 | 4,872 | 4,261",
+     "Data processing revenues | 1,062 | 925 | 3,975 | 3,478",
+     "International transaction revenues | 796 | 758 | 3,025 | 2,674",
+     "Other revenues | 172 | 171 | 704 | 655",
+     "Client incentives | (563) | (576) | (2,155) | (1,880)",
+     "Total operating revenues | 2,731 | 2,383 | 10,421 | 9,188",
+     "Operating income | 1,522 | 1,362 | 2,139 | 5,456",
+     "Income before income taxes | 1,588 | 1,354 | 2,207 | 5,656",
+     "Income tax (benefit) provision | (74) | 476 | 65 | 2,010",
+     "Class A common stock | 2.47 | 1.27 | 3.16 | 5.16",
+     "Class A common stock | 672 | 692 | 678 | 707"
+    ]
+   }
+  },
+  {
+   "quarter": "Q1 FY13",
+   "fy": 2013,
+   "q": 1,
+   "published": "2013-02-07",
+   "source": "V32",
+   "release": "Feb 6",
+   "release_time": "after the close on Feb 6: 8-K accepted 2013-02-06 16:12 ET (after the 16:00 ET close); the call at 5:00 p.m. ET; public before the open of the next trading day",
+   "period_end": "2012-12-31",
+   "raw": {
+    "sales_m": 2846.0,
+    "sales_prior_m": 2547.0,
+    "sales_prev_q_m": 2731.0,
+    "gross_m": 3399.0,
+    "gross_prior_m": 3028.0,
+    "opex_m": 1046.0,
+    "opex_prior_m": 929.0,
+    "litigation_m": 3.0,
+    "litigation_prior_m": 0.0,
+    "op_income_m": 1800.0,
+    "op_income_prior_m": 1618.0,
+    "receivables_m": 801.0,
+    "receivables_prior_m": 629.0
+   },
+   "rows": {
+    "svc": "Service revenues | 1,300 | 1,151",
+    "dp": "Data processing revenues | 1,115 | 951",
+    "intl": "International transaction revenues | 805 | 748",
+    "oth": "Other revenues | 179 | 178",
+    "vs": "Client incentives | (553) | (481)",
+    "rev": "Total operating revenues | 2,846 | 2,547",
+    "lit": "Litigation provision | 3 | —",
+    "opex": "Total operating expenses | 1,046 | 929",
+    "op": "Operating income | 1,800 | 1,618",
+    "pre": "Income before income taxes | 1,801 | 1,617",
+    "tax": "Income tax provision | 508 | 590",
+    "ni": "Net income attributable to Visa Inc. | 1,293 | 1,029",
+    "eps": "Class A common stock | 1.93 | 1.49",
+    "sh": "Class A common stock | 669 | 690",
+    "ar": "Accounts receivable | 801 | 723",
+    "cash": "Cash and cash equivalents | 1,334 | 2,074",
+    "prev_q_revenue": "Total operating revenues | 2,731 | 2,383 | 10,421 | 9,188",
+    "ar_prior": "Accounts receivable | 629 | 560"
+   },
+   "extra_sources": [
+    "V31",
+    "V46"
+   ],
+   "sales_pct": 11.7,
+   "seq_pct": 4.2,
+   "net_to_gross": 83.73,
+   "net_to_gross_bp": -38.4,
+   "op_margin": 63.25,
+   "op_margin_bp": -27.9,
+   "opex_pct": 12.3,
+   "opex_gap_pp": 0.5,
+   "receivables_pct": 27.3,
+   "receivables_gap_pp": 15.6,
+   "sales_b": 2.846,
+   "eps_q": 1.93,
+   "eps_q_prior": 1.49,
+   "diluted_shares_m": 669.0,
+   "receivables_b": 0.801,
+   "cash_b": 1.334,
+   "debt_note": "no debt on the release's balance sheet",
+   "sales_note": "total operating revenues $2,846M vs $2,547M a year earlier, $2,731M the quarter before (service $1,300M, data processing $1,115M, international transaction $805M, other $179M, less client incentives $553M); 'Payments volume growth, on a constant dollar basis, for the three months ended September 30, 2012, on which fiscal first quarter service revenue is recognized, was 6% over the prior year at $1.0 trillion.' 'Total processed transactions, which represent transactions processed by VisaNet, for the three months ended December 31, 2012, were 14.2 billion, a 4% increase over the prior year.'",
+   "receivables_note": "accounts receivable $801M (2012-12-31) vs $629M a year earlier (the year-ago 10-Q)",
+   "eps_note": "GAAP diluted class A EPS $1.93 vs $1.49",
+   "shares_note": "diluted class A shares 669M (as converted)",
+   "next_print": "Q2 FY13 print (the quarter ends in March)",
+   "cash_return_text": "'New share repurchase authorization on top of remainder at December 31, 2012 brings outstanding authorization to about $2.9 billion' (a plan, no guided number: it adds nothing)",
+   "guides": [
+    {
+     "fy": 2013,
+     "revenue_growth": null,
+     "revenue_words": "Annual net revenue growth: Low double digits;",
+     "eps_growth": null,
+     "eps_words": "Adjusted annual diluted class A common stock earnings per share growth: High teens; and",
+     "margin": 60.0,
+     "margin_words": "Annual operating margin: About 60%;",
+     "note": null
+    }
+   ],
+   "note": null
+  },
+  {
+   "quarter": "Q2 FY13",
+   "fy": 2013,
+   "q": 2,
+   "published": "2013-05-02",
+   "source": "V33",
+   "release": "May 1",
+   "release_time": "after the close on May 1: 8-K accepted 2013-05-01 16:12 ET (after the 16:00 ET close); the call at 5:00 p.m. ET; public before the open of the next trading day",
+   "period_end": "2013-03-31",
+   "raw": {
+    "sales_m": 2958.0,
+    "sales_prior_m": 2578.0,
+    "sales_prev_q_m": 2846.0,
+    "gross_m": 3525.0,
+    "gross_prior_m": 3075.0,
+    "opex_m": 1098.0,
+    "opex_prior_m": 972.0,
+    "litigation_m": 1.0,
+    "litigation_prior_m": 0.0,
+    "op_income_m": 1860.0,
+    "op_income_prior_m": 1606.0,
+    "receivables_m": 802.0,
+    "receivables_prior_m": 655.0
+   },
+   "rows": {
+    "svc": "Service revenues | 1,369 | 1,241 | 2,669 | 2,392",
+    "dp": "Data processing revenues | 1,150 | 922 | 2,265 | 1,873",
+    "intl": "International transaction revenues | 831 | 733 | 1,636 | 1,481",
+    "oth": "Other revenues | 175 | 179 | 354 | 357",
+    "vs": "Client incentives | (567) | (497) | (1,120) | (978)",
+    "rev": "Total operating revenues | 2,958 | 2,578 | 5,804 | 5,125",
+    "lit": "Litigation provision | 1 | — | 4 | —",
+    "opex": "Total operating expenses | 1,098 | 972 | 2,144 | 1,901",
+    "op": "Operating income | 1,860 | 1,606 | 3,660 | 3,224",
+    "pre": "Income before income taxes | 1,857 | 1,609 | 3,658 | 3,226",
+    "tax": "Income tax provision | 587 | 317 | 1,095 | 907",
+    "ni": "Net income attributable to Visa Inc. | 1,270 | 1,292 | 2,563 | 2,321",
+    "eps": "Class A common stock | 1.92 | 1.91 | 3.86 | 3.40",
+    "sh": "Class A common stock | 660 | 676 | 665 | 683",
+    "ar": "Accounts receivable | 802 | 723",
+    "cash": "Cash and cash equivalents | 1,377 | 2,074",
+    "prev_q_revenue": "Total operating revenues | 2,846 | 2,547",
+    "ar_prior": "Accounts receivable | 655 | 560"
+   },
+   "extra_sources": [
+    "V32",
+    "V47"
+   ],
+   "sales_pct": 14.7,
+   "seq_pct": 3.9,
+   "net_to_gross": 83.91,
+   "net_to_gross_bp": 7.7,
+   "op_margin": 62.88,
+   "op_margin_bp": 58.4,
+   "opex_pct": 12.9,
+   "opex_gap_pp": -1.9,
+   "receivables_pct": 22.4,
+   "receivables_gap_pp": 7.7,
+   "sales_b": 2.958,
+   "eps_q": 1.92,
+   "eps_q_prior": 1.91,
+   "diluted_shares_m": 660.0,
+   "receivables_b": 0.802,
+   "cash_b": 1.377,
+   "debt_note": "no debt on the release's balance sheet",
+   "sales_note": "total operating revenues $2,958M vs $2,578M a year earlier, $2,846M the quarter before (service $1,369M, data processing $1,150M, international transaction $831M, other $175M, less client incentives $567M); 'Payments volume growth, on a constant dollar basis, for the three months December 31, 2012, on which fiscal second quarter service revenue is recognized, was 9% over the prior year at $1.1 trillion.' 'Total processed transactions, which represent transactions processed by VisaNet, for the three months ended March 31, 2013, were 13.9 billion, a 6% increase over the prior year.'",
+   "receivables_note": "accounts receivable $802M (2013-03-31) vs $655M a year earlier (the year-ago 10-Q)",
+   "eps_note": "GAAP diluted class A EPS $1.92 vs $1.91",
+   "shares_note": "diluted class A shares 660M (as converted)",
+   "next_print": "Q3 FY13 print (the quarter ends in June)",
+   "cash_return_text": "'Company repurchased 12 million shares during the quarter, leaving $1.0 billion in remaining authorization' (a plan, no guided number: it adds nothing)",
+   "guides": [
+    {
+     "fy": 2013,
+     "revenue_growth": null,
+     "revenue_words": "Annual net revenue growth: Low double digits;",
+     "eps_growth": 20.0,
+     "eps_words": "Adjusted annual diluted class A common stock earnings per share growth: Around 20%.",
+     "margin": 60.0,
+     "margin_words": "Annual operating margin: About 60%;",
+     "note": "'Around 20%' is a number (the NKE 'about 20%' rule): FY13E EPS is FY12's company figure times 1.20"
+    }
+   ],
+   "note": null
+  },
+  {
+   "quarter": "Q3 FY13",
+   "fy": 2013,
+   "q": 3,
+   "published": "2013-07-25",
+   "source": "V34",
+   "release": "Jul 24",
+   "release_time": "after the close on Jul 24: 8-K accepted 2013-07-24 16:11 ET (after the 16:00 ET close); the call at 5:00 p.m. ET; public before the open of the next trading day",
+   "period_end": "2013-06-30",
+   "raw": {
+    "sales_m": 3001.0,
+    "sales_prior_m": 2565.0,
+    "sales_prev_q_m": 2958.0,
+    "gross_m": 3522.0,
+    "gross_prior_m": 3179.0,
+    "opex_m": 1173.0,
+    "opex_prior_m": 5172.0,
+    "litigation_m": -1.0,
+    "litigation_prior_m": 4098.0,
+    "op_income_m": 1828.0,
+    "op_income_prior_m": -2607.0,
+    "receivables_m": 779.0,
+    "receivables_prior_m": 793.0,
+    "op_one_off_prior_m": 4098.0
+   },
+   "rows": {
+    "svc": "Service revenues | 1,298 | 1,216 | 3,967 | 3,608",
+    "dp": "Data processing revenues | 1,191 | 1,040 | 3,456 | 2,913",
+    "intl": "International transaction revenues | 854 | 748 | 2,490 | 2,229",
+    "oth": "Other revenues | 179 | 175 | 533 | 532",
+    "vs": "Client incentives | (521) | (614) | (1,641) | (1,592)",
+    "rev": "Total operating revenues | 3,001 | 2,565 | 8,805 | 7,690",
+    "lit": "Litigation provision | (1) | 4,098 | 3 | 4,098",
+    "opex": "Total operating expenses | 1,173 | 5,172 | 3,317 | 7,073",
+    "op": "Operating income (loss) | 1,828 | (2,607) | 5,488 | 617",
+    "pre": "Income (loss) before income taxes | 1,833 | (2,607) | 5,491 | 619",
+    "tax": "Income tax provision (benefit) | 608 | (768) | 1,703 | 139",
+    "ni": "Net income (loss) attributable to Visa Inc. | 1,225 | (1,839) | 3,788 | 482",
+    "eps": "Class A common stock | 1.88 | (2.74) | 5.74 | 0.71",
+    "sh": "Class A common stock | 651 | 672 | 660 | 681",
+    "ar": "Accounts receivable | 779 | 723",
+    "cash": "Cash and cash equivalents | 1,453 | 2,074",
+    "prev_q_revenue": "Total operating revenues | 2,958 | 2,578 | 5,804 | 5,125",
+    "ar_prior": "Accounts receivable | 793 | 560",
+    "one_off": "Litigation provision | — | (4,098) | — | NM | — | 2,894 | (3) | — | 4.30",
+    "one_off_adjusted": "Adjusted | 1,173 | 1,074 | 61% | 58% | 1,225 | 1,055 | 1.88 | 1.56"
+   },
+   "extra_sources": [
+    "V33",
+    "V48"
+   ],
+   "sales_pct": 17.0,
+   "seq_pct": 1.5,
+   "net_to_gross": 85.21,
+   "net_to_gross_bp": 452.2,
+   "op_margin": 60.91,
+   "op_margin_bp": 278.4,
+   "opex_pct": 9.3,
+   "opex_gap_pp": -7.7,
+   "receivables_pct": -1.8,
+   "receivables_gap_pp": -18.8,
+   "sales_b": 3.001,
+   "eps_q": 1.88,
+   "eps_q_prior": -2.74,
+   "diluted_shares_m": 651.0,
+   "receivables_b": 0.779,
+   "cash_b": 1.453,
+   "debt_note": "no debt on the release's balance sheet",
+   "sales_note": "total operating revenues $3,001M vs $2,565M a year earlier, $2,958M the quarter before (service $1,298M, data processing $1,191M, international transaction $854M, other $179M, less client incentives $521M); 'Payments volume growth, on a constant dollar basis, for the three months ended March 31, 2013, on which fiscal third quarter service revenue is recognized, was 9% over the prior year at $1.0 trillion.' 'Total processed transactions, which represent transactions processed by VisaNet, for the three months ended June 30, 2013, were 15.0 billion, a 14% increase over the prior year.'",
+   "receivables_note": "accounts receivable $779M (2013-06-30) vs $793M a year earlier (the year-ago 10-Q)",
+   "eps_note": "GAAP diluted class A EPS $1.88 vs $(2.74); the year-ago operating income excludes Q3 FY12's $4,098M covered-litigation provision, as the release's adjusted figures do",
+   "shares_note": "diluted class A shares 651M (as converted)",
+   "next_print": "Q4 FY13 print (the quarter ends in September)",
+   "cash_return_text": "'Company repurchased 6 million shares during the quarter and authorized a new $1.5 billion share repurchase program' (a plan, no guided number: it adds nothing)",
+   "guides": [
+    {
+     "fy": 2013,
+     "revenue_growth": [
+      13,
+      13
+     ],
+     "revenue_words": "Annual net revenue growth: Around 13%; and",
+     "eps_growth": null,
+     "eps_words": "Adjusted annual diluted class A common stock earnings per share growth: Low twenties.",
+     "margin": 60.0,
+     "margin_words": "Annual operating margin: About 60%;",
+     "note": "'Around 13%' is a number; 'Low twenties' is words, so the 20% EPS growth guide of the Q2 FY13 print stands (the LOW words rule)"
+    },
+    {
+     "fy": 2014,
+     "revenue_growth": null,
+     "revenue_words": "Annual net revenue growth: Low double digits;",
+     "eps_growth": null,
+     "eps_words": "Adjusted annual diluted class A common stock earnings per share growth: Mid to high teens; and",
+     "margin": null,
+     "margin_words": null,
+     "note": null
+    }
+   ],
+   "note": null
+  },
+  {
+   "quarter": "Q4 FY13",
+   "fy": 2013,
+   "q": 4,
+   "published": "2013-10-31",
+   "source": "V35",
+   "release": "Oct 30",
+   "release_time": "after the close on Oct 30: 8-K accepted 2013-10-30 16:14 ET (after the 16:00 ET close); the call at 5:00 p.m. ET; public before the open of the next trading day",
+   "period_end": "2013-09-30",
+   "raw": {
+    "sales_m": 2973.0,
+    "sales_prior_m": 2731.0,
+    "sales_prev_q_m": 3001.0,
+    "gross_m": 3653.0,
+    "gross_prior_m": 3294.0,
+    "opex_m": 1222.0,
+    "opex_prior_m": 1209.0,
+    "litigation_m": 0.0,
+    "litigation_prior_m": 2.0,
+    "op_income_m": 1751.0,
+    "op_income_prior_m": 1522.0,
+    "receivables_m": 761.0,
+    "receivables_prior_m": 723.0
+   },
+   "rows": {
+    "svc": "Service revenues | 1,385 | 1,264 | 5,352 | 4,872",
+    "dp": "Data processing revenues | 1,186 | 1,062 | 4,642 | 3,975",
+    "intl": "International transaction revenues | 899 | 796 | 3,389 | 3,025",
+    "oth": "Other revenues | 183 | 172 | 716 | 704",
+    "vs": "Client incentives | (680) | (563) | (2,321) | (2,155)",
+    "rev": "Total operating revenues | 2,973 | 2,731 | 11,778 | 10,421",
+    "lit": "Litigation provision | — | 2 | 3 | 4,100",
+    "opex": "Total operating expenses | 1,222 | 1,209 | 4,539 | 8,282",
+    "op": "Operating income | 1,751 | 1,522 | 7,239 | 2,139",
+    "pre": "Income before income taxes | 1,766 | 1,588 | 7,257 | 2,207",
+    "tax": "Income tax provision (benefit) | 574 | (74) | 2,277 | 65",
+    "ni": "Net income attributable to Visa Inc. | 1,192 | 1,662 | 4,980 | 2,144",
+    "eps": "Class A common stock | 1.85 | 2.47 | 7.59 | 3.16",
+    "sh": "Class A common stock | 644 | 672 | 656 | 678",
+    "ar": "Accounts receivable | 761 | 723",
+    "cash": "Cash and cash equivalents | 2,186 | 2,074",
+    "prev_q_revenue": "Total operating revenues | 3,001 | 2,565 | 8,805 | 7,690",
+    "ar_prior": "Accounts receivable | 761 | 723"
+   },
+   "extra_sources": [
+    "V34"
+   ],
+   "sales_pct": 8.9,
+   "seq_pct": -0.9,
+   "net_to_gross": 81.39,
+   "net_to_gross_bp": -152.3,
+   "op_margin": 58.9,
+   "op_margin_bp": 316.6,
+   "opex_pct": 1.2,
+   "opex_gap_pp": -7.6,
+   "receivables_pct": 5.3,
+   "receivables_gap_pp": -3.6,
+   "sales_b": 2.973,
+   "eps_q": 1.85,
+   "eps_q_prior": 2.47,
+   "diluted_shares_m": 644.0,
+   "receivables_b": 0.761,
+   "cash_b": 2.186,
+   "debt_note": "no debt on the release's balance sheet",
+   "sales_note": "total operating revenues $2,973M vs $2,731M a year earlier, $3,001M the quarter before (service $1,385M, data processing $1,186M, international transaction $899M, other $183M, less client incentives $680M); 'Payments volume growth, on a constant dollar basis, for the three months ended June 30, 2013, on which fiscal fourth quarter service revenue is recognized, was 13% over the prior year at $1.1 trillion.' 'Total processed transactions, which represent transactions processed by VisaNet, for the three months ended September 30, 2013, were 15.5 billion, a 14% increase over the prior year.'",
+   "receivables_note": "accounts receivable $761M (2013-09-30) vs $723M a year earlier (the release's September 30 column)",
+   "eps_note": "GAAP diluted class A EPS $1.85 vs $2.47",
+   "shares_note": "diluted class A shares 644M (as converted)",
+   "next_print": "Q1 FY14 print (the quarter ends in December)",
+   "cash_return_text": "'The Company authorizes a new $5.0 billion repurchase program, in addition to the previously announced 21% quarterly dividend increase' (a plan, no guided number: it adds nothing)",
+   "guides": [
+    {
+     "fy": 2014,
+     "revenue_growth": null,
+     "revenue_words": "Annual net revenue growth: Low double-digits on a constant dollar basis, with an expectation of two percentage points of negative foreign currency impact.",
+     "eps_growth": null,
+     "eps_words": "Annual diluted class A common stock earnings per share growth: Mid to high teens; and",
+     "margin": null,
+     "margin_words": "Annual operating margin: Low 60s.",
+     "note": "revenue growth in words (the currency effect has no range to apply to), EPS growth and the margin in words: no field"
+    }
+   ],
+   "note": null,
+   "fy_actual": {
+    "fy": 2013,
+    "fy_label": "FY13",
+    "eps_normalized": 7.59,
+    "revenue_usd_b": 11.778,
+    "diluted_shares_m": 656.0,
+    "normalization_note": "FY13 $7.59, GAAP diluted class A EPS from the Q4 FY13 release (no one-off in the year)",
+    "op_margin": 61.46,
+    "op_margin_note": "FY13 operating income $7,239M / total operating revenues $11,778M (Q4 FY13 release)",
+    "pretax_margin": 61.61,
+    "pretax_margin_note": "FY13 income before income taxes $7,257M / total operating revenues $11,778M (Q4 FY13 release)",
+    "net_to_gross": 83.54,
+    "sales_growth": 13.0,
+    "tax_rate": 0.3138,
+    "tax_note": "FY13 income tax $2,277M on pre-tax $7,257M",
+    "groups": [
+     [
+      "Service revenues",
+      5.352,
+      9.9
+     ],
+     [
+      "Data processing revenues",
+      4.642,
+      16.8
+     ],
+     [
+      "International transaction revenues",
+      3.389,
+      12.0
+     ],
+     [
+      "Other revenues",
+      0.716,
+      1.7
+     ],
+     [
+      "Client incentives",
+      -2.321,
+      7.7
+     ]
+    ],
+    "groups_basis": "FY13 operating revenues by line, incentives as reported (FY13 growth)",
+    "rows": [
+     "Service revenues | 1,385 | 1,264 | 5,352 | 4,872",
+     "Data processing revenues | 1,186 | 1,062 | 4,642 | 3,975",
+     "International transaction revenues | 899 | 796 | 3,389 | 3,025",
+     "Other revenues | 183 | 172 | 716 | 704",
+     "Client incentives | (680) | (563) | (2,321) | (2,155)",
+     "Total operating revenues | 2,973 | 2,731 | 11,778 | 10,421",
+     "Operating income | 1,751 | 1,522 | 7,239 | 2,139",
+     "Income before income taxes | 1,766 | 1,588 | 7,257 | 2,207",
+     "Income tax provision (benefit) | 574 | (74) | 2,277 | 65",
+     "Class A common stock | 1.85 | 2.47 | 7.59 | 3.16",
+     "Class A common stock | 644 | 672 | 656 | 678"
+    ]
+   }
   }
  ],
  "guides": [],
@@ -503,6 +2897,34 @@
    "source": "V9",
    "note": "$0.125 a quarter, declared 2009-10-21 ('Increases Dividend Rate 19%')",
    "quote": "today announced that its Board of Directors had declared a quarterly dividend in the aggregate amount of $0.125 per share of class A common stock"
+  },
+  {
+   "published": "2010-10-21",
+   "quarterly": 0.15,
+   "source": "V70",
+   "note": "$0.15 a quarter, declared 2010-10-20 (a 20% increase)",
+   "quote": "SAN FRANCISCO, CA, October 20, 2010 – Visa Inc. (NYSE:V) today announced that its board of directors had declared a 20% increase in the quarterly dividend aggregate amount on its class A common stock (determined in the case of class B and class C common stock on an as-converted basis) from $0.125 per share to $0.15 per share, payable on December 7, 2010, to all holders of record of the Company’s class A, class B and class C common stock as of November 19, 2010. The quarterly dividend increase raises the annual dividend rate from $0.50 per share to $0.60 per share."
+  },
+  {
+   "published": "2011-10-19",
+   "quarterly": 0.22,
+   "source": "V71",
+   "note": "$0.22 a quarter, declared 2011-10-19 (a 47% increase)",
+   "quote": "SAN FRANCISCO, CA, October 19, 2011 – Visa Inc. (NYSE:V) today announced that its board of directors had declared a 47% increase in the quarterly dividend aggregate amount on its class A common stock (determined in the case of class B and class C common stock on an as-converted basis) from $0.15 per share to $0.22 per share, payable on December 6, 2011, to all holders of record of the Company’s class A, class B and class C common stock as of November 18, 2011. The quarterly dividend increase raises the annual dividend rate from $0.60 per share to $0.88 per share."
+  },
+  {
+   "published": "2012-10-25",
+   "quarterly": 0.33,
+   "source": "V72",
+   "note": "$0.33 a quarter, declared 2012-10-24 (a 50% increase)",
+   "quote": "Foster City, CA, October 24, 2012 – Visa Inc. (NYSE:V) today announced that its board of directors had declared a 50% increase in the quarterly dividend aggregate amount on its class A common stock (determined in the case of class B and class C common stock on an as-converted basis) from $0.22 per share to $0.33 per share, payable on December 4, 2012, to all holders of record of the Company’s class A, class B and class C common stock as of November 16, 2012. The quarterly dividend increase raises the annual dividend rate from $0.88 per share to $1.32 per share."
+  },
+  {
+   "published": "2013-10-24",
+   "quarterly": 0.4,
+   "source": "V73",
+   "note": "$0.40 a quarter, declared 2013-10-23 (a 21% increase)",
+   "quote": "In addition, the Company announced that on October 23, 2013, its board of directors had declared a quarterly dividend in the aggregate amount of $0.40 per share of class A common stock (determined in the case of class B and class C common stock on an as-converted basis) payable on December 3, 2013, to all holders of record of the Company’s class A, class B and class C common stock as of November 15, 2013. The quarterly dividend increase raises the annual dividend rate from $1.32 per share to $1.60 per share."
   }
  ],
  "rule_t": {

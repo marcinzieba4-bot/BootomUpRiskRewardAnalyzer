@@ -1,0 +1,238 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "V",
+ "company": "Visa Inc.",
+ "as_of": "2011-06-24",
+ "price_date": "2011-06-24",
+ "price": 73.37,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); revenue, net-to-gross, expense, receivables and operating-margin signals with Visa's rule-T thresholds",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'Visa Inc. (“Visa” or the “Company”) is a global payments technology company that connects consumers, businesses, banks and governments in more than 200 countries and territories, enabling them to use digital currency instead of cash and checks.' 'Our business is affected by overall economic conditions and consumer spending.' 'Within the general purpose payment card industry, we face substantial and intense competition worldwide in the provision of payments services to financial institution clients and their cardholder merchants.' 'Of note this fiscal year, the Wall Street Reform and Consumer Protection Act was signed into law in the United States on July 21, 2010, which will, amongst other things, regulate interchange fees and transaction routing rules related to our debit card products.'; no 10-K calls the business cyclical (the economy and spending are a 'why', not the company's own label: the LOW, SHW and JPM reading), so the kind is DURABLE; no disruption theme in taxonomy_eras.json is live for a payments network on these dates, so the watch list is empty",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "'Visa Inc. (“Visa” or the “Company”) is a global payments technology company that connects consumers, businesses, banks and governments in more than 200 countries and territories, enabling them to use digital currency instead of cash and checks.' 'Our business is affected by overall economic conditions and consumer spending.' 'Within the general purpose payment card industry, we face substantial and intense competition worldwide in the provision of payments services to financial institution clients and their cardholder merchants.' 'Of note this fiscal year, the Wall Street Reform and Consumer Protection Act was signed into law in the United States on July 21, 2010, which will, amongst other things, regulate interchange fees and transaction routing rules related to our debit card products.'; no 10-K calls the business cyclical (the economy and spending are a 'why', not the company's own label: the LOW, SHW and JPM reading), so the kind is DURABLE; no disruption theme in taxonomy_eras.json is live for a payments network on these dates, so the watch list is empty. durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.11x; +25% to EPP floor; model-vs-market gap +0.59; conservative 2yr +45%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.11,
+  "ratio_b_fmt": "0.11x",
+  "epp": 58.65,
+  "epp_gap_pct": 25.1,
+  "epp_adj": 0.0,
+  "proxy_composite": 2.15,
+  "sca": 0.106,
+  "adj_composite": 2.256,
+  "market_composite": 1.67,
+  "adj_gap": 0.59,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 44.8,
+  "scenarios": {
+   "BEAR": {
+    "eps": 3.91,
+    "pe": 17.2,
+    "price": 67.25,
+    "desc": "EPS +0.0%/yr (worst year FY09-FY10, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 5.71,
+    "pe": 19.4,
+    "price": 110.77,
+    "desc": "EPS +20.9%/yr (FY11 revenue guide + margin + buyback); P/E at its 2.7-yr median"
+   },
+   "BULL": {
+    "eps": 6.22,
+    "pe": 21.1,
+    "price": 131.24,
+    "desc": "EPS +26.1%/yr (FY09-FY10 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 6.22,
+    "pe": 22.5,
+    "price": 139.95,
+    "desc": "EPS +26.1%/yr (no 2-yr run in FY09-FY10: BULL's rate); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.11,
+   "epp_gap_pct": 25.1,
+   "adj_gap": 0.59,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 44.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.03,
+   "epp_gap_pct": 25.1,
+   "adj_gap": 0.76,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 44.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 0.19,
+   "epp_gap_pct": 25.1,
+   "adj_gap": 0.41,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 44.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.07,
+   "epp_gap_pct": 25.1,
+   "adj_gap": 0.66,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 44.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.15,
+   "epp_gap_pct": 25.1,
+   "adj_gap": 0.51,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 44.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.11,
+   "epp_gap_pct": 25.1,
+   "adj_gap": 0.89,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 44.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.11,
+   "epp_gap_pct": 4.2,
+   "adj_gap": 0.59,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 44.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.11,
+   "epp_gap_pct": 25.1,
+   "adj_gap": 0.8,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 44.8,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "V (retrospective, 2011-06-24) ◉ BUY — Ratio B 0.11x (8.3% downside to Bear $67.25 / +78.9% upside to Bull $131.24) | Adj composite 2.26 vs market 1.67: gap +0.59 [UNDERVALUED] | +25% above the EPP floor $58.65 (15x FY11E $3.91) | Conservative 2-yr case: +44.8% total (+22.4%/yr) | At 18.8x FY11E the 15% hurdle price $97.03 sits at or below the BASE case; revenue +14.6% YoY in Q2 FY11, forward revenues +11-15% (FY11 net revenue growth guide); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "V60",
+   "published": "2010-11-22",
+   "filed": "accepted 2010-11-19 16:10 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-K for the fiscal year ended September 30, 2010",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312510265236/d10k.htm",
+   "supports": "fiscal 2010 statements of operations and cash flows, selected data, diluted class A EPS and shares, the company's adjusted figures where the MD&A gives them, Item 1, 1A and 5 wording"
+  },
+  {
+   "id": "V23",
+   "published": "2010-10-28",
+   "filed": "accepted 2010-10-27 16:10 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q4 2010 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312510237985/dex991.htm",
+   "supports": "Q4 FY10 revenues, client incentives, expenses, operating income, diluted class A EPS and shares against the year-ago quarter and the fiscal year; receivables, cash and debt; the financial outlook"
+  },
+  {
+   "id": "V6",
+   "published": "2008-10-30",
+   "filed": "accepted 2008-10-29 16:46 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q4 and full-year 2008 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312508219089/dex991.htm",
+   "supports": "fiscal 2008 GAAP and adjusted net income and diluted class A EPS, the reconciliation of the adjustments, the effective tax rate, and 'no comparable earnings per share measure for 2007'"
+  },
+  {
+   "id": "V22",
+   "published": "2010-07-29",
+   "filed": "accepted 2010-07-28 16:12 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q3 2010 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312510169054/dex991.htm",
+   "supports": "Q3 FY10 revenues, client incentives, expenses, operating income, diluted class A EPS and shares against the year-ago quarter; receivables, cash and debt; the financial outlook"
+  },
+  {
+   "id": "V24",
+   "published": "2011-02-03",
+   "filed": "accepted 2011-02-02 16:11 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q1 2011 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312511021839/dex991.htm",
+   "supports": "Q1 FY11 revenues, client incentives, expenses, operating income, diluted class A EPS and shares against the year-ago quarter; receivables, cash and debt; the financial outlook"
+  },
+  {
+   "id": "V40",
+   "published": "2010-02-04",
+   "filed": "accepted 2010-02-03 16:32 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-Q for the quarter ended December 31, 2009",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312510020834/d10q.htm",
+   "supports": "the quarter's statements and accounts receivable at 2009-12-31 (checked against the release; the year-ago balance for the Q1 FY11 print)"
+  },
+  {
+   "id": "V25",
+   "published": "2011-05-06",
+   "filed": "accepted 2011-05-05 16:11 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q2 2011 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312511128470/dex991.htm",
+   "supports": "Q2 FY11 revenues, client incentives, expenses, operating income, diluted class A EPS and shares against the year-ago quarter; receivables, cash and debt; the financial outlook"
+  },
+  {
+   "id": "V41",
+   "published": "2010-05-03",
+   "filed": "accepted 2010-04-30 21:17 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-Q for the quarter ended March 31, 2010",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312510102602/d10q.htm",
+   "supports": "the quarter's statements and accounts receivable at 2010-03-31 (checked against the release; the year-ago balance for the Q2 FY11 print)"
+  },
+  {
+   "id": "V70",
+   "published": "2010-10-21",
+   "filed": "accepted 2010-10-20 16:47 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 8-K: quarterly dividend declared, rate up 20% (ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312510232640/dex991.htm",
+   "supports": "the declared quarterly dividend, $0.15 a class A share"
+  },
+  {
+   "id": "Y0",
+   "published": "2011-06-24",
+   "title": "Yahoo Finance daily prices, V and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/V/history",
+   "supports": "close $73.37 as traded on AS_OF, 52-week range, realized vol, beta, the 2.7-yr P/E distribution from 2008-10-01"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-20"
+}

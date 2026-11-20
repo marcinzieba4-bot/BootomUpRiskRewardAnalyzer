@@ -27,7 +27,14 @@ Visa's fiscal year ends on September 30 (FY2009 = 2008-10-01 to 2009-09-30). The
     (the UNP rule);
   - guided margin step: none (the operating margin is guided in words, "in the mid 50% range"); the margin signal uses the latest
     quarter's operating-margin change;
-  - dividend: the latest declared quarterly rate, each from the first filing that states it ('dividends').
+  - dividend: the latest declared quarterly rate, each from the first filing that states it ('dividends');
+  - (V 2010-2013) each fiscal-year outlook field from the latest public print that gives it in numbers ('guides' on a print, a list by
+    fiscal year; a field restated only in words keeps the last number): the net revenue range, an EPS growth rate on the last full
+    year (FY2013 "Around 20%": FY12's $6.20 x 1.20) and an operating margin (FY2011-FY2013 "About 60%": a guided margin step); "about"
+    and "around" levels are numbers, words and one-sided bounds give no field; a Q4 release that reports an earlier year differently
+    restates it from its own date ('restates' on the full-year actuals: FY2009's diluted shares under the participating-securities
+    rule); an operating one-off the release excludes is added back to the margin ('op_one_off_m', 'op_one_off_prior_m': Q3 FY12's
+    covered-litigation provision, and Q3 FY13's year-ago quarter).
 The kind is DURABLE: the 10-Ks tie results to spending and the economy but do not call the business cyclical (the LOW, SHW and JPM
 reading). No disruption theme in taxonomy_eras.json is live for a payments network in 2008-2009 so the
 builder refuses events until a theme encoding is decided, and it refuses separate guides, listings, splits, company names and 10-Q
@@ -41,6 +48,7 @@ Output goes to staging/retrospective/V until the series is added to the archive 
 
 Usage
   python3 retro/build_v.py --weekly 2009-10-26 2009-12-31
+  python3 retro/build_v.py --weekly 2010-01-01 2013-12-31
   python3 retro/build_v.py 2009-11-06
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/V/<AS_OF>
 """
@@ -116,7 +124,10 @@ def derived(r):
     pct = lambda a, b: (b / a - 1) * 100
     r1 = lambda x: round(x + 0.0, 1)
     nt, nt0 = r["sales_m"] / r["gross_m"] * 100, r["sales_prior_m"] / r["gross_prior_m"] * 100
-    om, om0 = r["op_income_m"] / r["sales_m"] * 100, r["op_income_prior_m"] / r["sales_prior_m"] * 100
+    # (V 2010-2013) an operating one-off the release excludes is added back ('op_one_off_m', 'op_one_off_prior_m': the ACN rule for a
+    # company figure without a one-off, year-ago quarters included: the $4,098M covered-litigation provision of Q3 FY12)
+    om = (r["op_income_m"] + r.get("op_one_off_m", 0)) / r["sales_m"] * 100
+    om0 = (r["op_income_prior_m"] + r.get("op_one_off_prior_m", 0)) / r["sales_prior_m"] * 100
     ox, ox0 = r["opex_m"] - r["litigation_m"], r["opex_prior_m"] - r["litigation_prior_m"]
     return dict(sales_pct=r1(pct(r["sales_prior_m"], r["sales_m"])), seq_pct=r1(pct(r["sales_prev_q_m"], r["sales_m"])),
                 net_to_gross=round(nt + 0.0, 2), net_to_gross_bp=r1((nt - nt0) * 100), op_margin=round(om + 0.0, 2),
@@ -183,6 +194,11 @@ def build(as_of, facts, raw, spx, engine, out):
                      tax_rate=a["tax_rate"], tax_note=f'{a["tax_note"]} ({p["source"]})',
                      groups=a["groups"], groups_basis=a["groups_basis"],
                      extended=f'{h["extended"]}, FY{y[2:]} from {p["source"]} ({p["published"]})')
+            if a.get("restates"):                     # (V 2010-2013) an earlier year the same release reports differently (FY2009's
+                                                      # diluted shares under the participating-securities rule), from its own date
+                for k, v in a["restates"].items():
+                    h[k] = {**h[k], **v}
+                h["extended"] = f'{h["extended"]}; {a["restates_note"]}'
     if not h["eps_normalized"]:
         # FY2008 is excluded and no later year is reported yet: no current-FY P/E can be computed (method r2 has no EPS anchor for a
         # period that is not a full year in the history; retro/README.md, "V")
@@ -200,36 +216,89 @@ def build(as_of, facts, raw, spx, engine, out):
     fy_e, fy_e_s, fy_h, fy_now = f"FY{cur_fy}E", f"FY{cur_fy % 100:02d}E", f"FY{cur_fy + 2}E", f"FY{cur_fy % 100:02d}"
     nq = latest["q"]
     next_q = f"Q{nq % 4 + 1} FY{(latest['fy'] + (1 if nq == 4 else 0)) % 100:02d}"
-    g = latest.get("guide") if latest.get("guide", {}).get("fy") == cur_fy else None
+    # ── the outlook in force for the current fiscal year: each field from the latest public print that gives it in numbers (a guide
+    # restated only in words keeps the last numeric one: the ACN and LOW words rules), the words from the latest print that guides the
+    # year; a level stated as "about" or "around" is a number (the CAT, LMT, UNP and NKE readings), words and one-sided bounds give no
+    # field (retro/README.md, "V 2010-2013") ──
+    gl = lambda p: p.get("guides") or ([p["guide"]] if p.get("guide") else [])
+    gs = [(p, g) for p in public for g in gl(p) if g["fy"] == cur_fy]
+    g_words = gs[-1] if gs else None
+    g_rev = next(((p, g) for p, g in reversed(gs) if g.get("revenue_growth")), None)
+    g_eps = next(((p, g) for p, g in reversed(gs) if g.get("eps_growth") is not None), None)
+    g_mar = next(((p, g) for p, g in reversed(gs) if g.get("margin") is not None), None)
+    bound = lambda w: bool(w) and "greater than" in w
 
-    # ── current-FY EPS: the EPS guide is a one-sided bound (no field), so the last full year's EPS stands ──
-    eps_now = eps_hist[last_fy]
-    eps_label = (f"{fy_e}: no EPS guide in numbers (growth 'of greater than 20%' is a one-sided bound), FY{last_fy % 100:02d}'s "
-                 f"${money(eps_now)} stands" if g else f"{fy_e}: no EPS guide in numbers, FY{last_fy % 100:02d}'s ${money(eps_now)} stands")
+    # ── current-FY EPS: an EPS growth guide in numbers applies to the last full year (the NKE and WMT rule); else the last full year's
+    # EPS stands (the rollover rule) ──
+    base_eps = eps_hist[last_fy]
+    if g_eps:
+        eps_now = round(base_eps * (1 + g_eps[1]["eps_growth"] / 100), 4)
+        eps_label = (f"{fy_e}: FY{last_fy % 100:02d}'s ${money(base_eps)} x (1 + {g_eps[1]['eps_growth']:g}%) = ${money(round(eps_now, 2))}, "
+                     f"the {g_eps[0]['quarter']} print's EPS growth guide")
+    else:
+        eps_now = base_eps
+        if g_words and bound(g_words[1]["eps_words"]):
+            eps_label = (f"{fy_e}: no EPS guide in numbers (growth 'of greater than 20%' is a one-sided bound), FY{last_fy % 100:02d}'s "
+                         f"${money(eps_now)} stands")
+        elif g_words and g_words[1]["eps_words"]:
+            eps_label = f"{fy_e}: no EPS guide in numbers (EPS growth in words only), FY{last_fy % 100:02d}'s ${money(eps_now)} stands"
+        else:
+            eps_label = f"{fy_e}: no EPS guide in numbers, FY{last_fy % 100:02d}'s ${money(eps_now)} stands"
     eps_label += "".join(f" (FY{y % 100:02d} is excluded: {excluded[y]})" for y in range(last_fy + 1, cur_fy))
     eps_label_short = eps_label if cur_fy == last_fy + 1 else (
         f"{fy_e}: no EPS guide in numbers, FY{last_fy % 100:02d}'s ${money(eps_now)} stands (FY" +
         ", FY".join(f"{y % 100:02d}" for y in range(last_fy + 1, cur_fy)) + " excluded)")
     # ── forward revenue growth: the fiscal year's net revenue growth range (no next-quarter guide), else the latest quarter ──
-    if g and g.get("revenue_growth"):
-        fwd = list(g["revenue_growth"])
+    gw = g_words[1] if g_words else {}
+    classic = (g_rev is not None and g_rev == g_words and not g_eps and not g_mar and bound(gw.get("eps_words"))
+               and g_rev[1]["revenue_growth"][0] != g_rev[1]["revenue_growth"][1])
+    if g_rev:
+        fwd = list(g_rev[1]["revenue_growth"])
         fwd_label = f"{fy_now} net revenue growth guide"
         fwd_short, fwd_period = f"{fy_now} revenue guide", f"FY{cur_fy}"
-        guide_text = (f"{fy_now} ({latest['quarter']} print): '{g['revenue_words']}' — the {fwd[0]}-{fwd[1]}% range stands, its words in "
-                      f"the note (the ACN words rule); '{g['eps_words']}' is a one-sided bound and gives no field; '{g['margin_words']}' "
-                      "is words and gives no margin step; no next-quarter guide is given, so the fiscal-year range stands in (method r2's "
-                      "fallback)")
         fy_rev_label = f"the {fy_now} net revenue growth guide's midpoint"
+        rng = f"the {fwd[0]}-{fwd[1]}% range" if fwd[0] != fwd[1] else f"{fwd[0]}%, a level,"
+        rev_txt = (f"'{g_rev[1]['revenue_words']}' — {rng} stands, its words in the note (the ACN words rule)" if g_rev == g_words else
+                   f"'{gw['revenue_words']}' keeps {rng} of the {g_rev[0]['quarter']} print ('{g_rev[1]['revenue_words']}'; the ACN words rule)")
+        tail = "no next-quarter guide is given, so the fiscal-year range stands in (method r2's fallback)"
     else:
         fwd = [latest["sales_pct"]] * 2
         fwd_label = f"{latest['quarter']} revenue growth (no {fy_now} revenue range)"
         fwd_short, fwd_period = f"{latest['quarter'].split()[0]} revenue YoY", latest["quarter"]
-        guide_text = f"{fy_now}: no revenue growth range in numbers; the latest quarter's revenue growth stands in (the UNP rule)"
         fy_rev_label = f"the {fwd_label}, YoY, applied to the year"
+        rev_txt = ((f"'{gw['revenue_words']}' is words and gives no field" if gw.get("revenue_words") else "no revenue range in numbers")
+                   + ": the latest quarter's revenue growth stands in (the UNP rule)")
+        tail = "no next-quarter guide is given"
+    if g_eps:
+        eps_txt = (f"'{g_eps[1]['eps_words']}' gives {fy_e_s} EPS of ${money(round(eps_now, 2))} (FY{last_fy % 100:02d}'s ${money(base_eps)} x "
+                   f"{1 + g_eps[1]['eps_growth'] / 100:g}; the NKE rule)" + (f", which '{gw['eps_words']}' keeps (the LOW words rule)" if g_eps != g_words else ""))
+    elif bound(gw.get("eps_words")):
+        eps_txt = f"'{gw['eps_words']}' is a one-sided bound and gives no field"
+    elif gw.get("eps_words"):
+        eps_txt = f"'{gw['eps_words']}' is words and gives no field"
+    else:
+        eps_txt = "no EPS guide"
+    if g_mar:
+        mar_txt = (f"'{g_mar[1]['margin_words']}' is a number: a margin step from {h['fy_label']}'s {h['prev_fy_op_margin']:.2f}% to "
+                   f"{g_mar[1]['margin']:g}%")
+    elif gw.get("margin_words"):
+        mar_txt = f"'{gw['margin_words']}' is words and gives no margin step"
+    else:
+        mar_txt = "no margin guide"
+    if classic:     # the FY2010 outlook of the Q4 FY09 print (2009 dates): the text of the first V batch, unchanged
+        guide_text = (f"{fy_now} ({g_words[0]['quarter']} print): {rev_txt}; {eps_txt}; {mar_txt}; {tail}")
+    elif g_words:
+        guide_text = f"{fy_now} ({g_words[0]['quarter']} print): {rev_txt}; {eps_txt}; {mar_txt}; {tail}"
+    else:
+        guide_text = f"{fy_now}: no outlook in any print; {rev_txt}"
     cat3 = (f"(3) Payments volume and processed transactions — the drivers of service and data processing revenues, in each release "
             f"({latest['quarter']}: see the revenue line)")
-    margin_guided = False                          # no margin guide in numbers: no guided step; the signal uses the latest quarter's change
-    fy_margin_base = h["prev_fy_op_margin"]
+    # a margin guide in numbers steps from the last full year's operating margin (method r2's guided margin step); none: no step, and
+    # the signal uses the latest quarter's change
+    margin_guided = g_mar is not None
+    fy_margin_base = g_mar[1]["margin"] if g_mar else h["prev_fy_op_margin"]
+    margin_comment = (f"True: the {fy_now} operating margin guide ({g_mar[0]['quarter']} print) steps from {h['fy_label']}'s margin"
+                      if margin_guided else "False: no margin guide in numbers, so no guided step; the signal uses the latest quarter's change")
 
     # ── dividend: the latest declared quarterly rate, each from the first filing that states it ──
     divs = [(d["published"], d["quarterly"] * 4, d["note"], d["source"]) for d in facts.get("dividends", []) if d["published"] <= as_of]
@@ -377,7 +446,7 @@ EPS_LABEL       = {R(eps_label_short)}
 FWD_GUIDE       = {R(tuple(fwd))}   # the fiscal year's net revenue growth range (no next-quarter guide), else the latest quarter
 FWD_GUIDE_LABEL, FWD_PERIOD, FWD_BASIS_SHORT = {R(fwd_label)}, {R(fwd_period)}, {R(fwd_short)}
 GUIDE_TEXT      = {R(guide_text)}
-MARGIN_GUIDED   = {margin_guided}   # False: no margin guide in numbers, so no guided step; the signal uses the latest quarter's change
+MARGIN_GUIDED   = {margin_guided}   # {margin_comment}
 FY_MARGIN_BASE  = {fy_margin_base}
 FY_REVENUE_B    = {rev[max(rev)] * (1 + sum(fwd) / 2 / 100):.4f}
 FY_REVENUE_LABEL = {R(fy_rev_label)}

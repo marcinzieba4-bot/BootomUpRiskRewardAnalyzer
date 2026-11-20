@@ -21071,7 +21071,7 @@ Judgement calls that could carry hindsight:
 
 The hindsight results are in `staging/retrospective/JPM/FINDINGS.md`: hypotheses, never inputs.
 
-## V (Visa): the twenty-eighth ticker, in staging, 2008-2009 (from the Q4 FY09 print)
+## V (Visa): the twenty-eighth ticker, in staging, 2008-2013 (from the Q4 FY09 print)
 
 The V series is built apart from the other twenty-seven and shares nothing with them but the machinery: its own fact sheet
 (`retro/facts/V.json`), builder (`retro/build_v.py`, the GOOG builder with Visa's September fiscal year, figures in millions, a fiscal-year
@@ -21271,6 +21271,141 @@ Judgement calls that could carry hindsight:
   FY2010 one, which is read.
 
 The hindsight results are in `staging/retrospective/V/FINDINGS.md`: hypotheses, never inputs.
+
+### V 2010-2013: the company's figures without one-offs, "About 60%" margin steps, FY2012's words, an EPS guide "Around 20%", the Q3 FY12 provision
+
+**What the owner asked for and what was built.** On 2026-11-20 the owner asked for V 2010-2013 on the same rules. All 209 weekly dates
+were built, 2010-01-08 to 2013-12-31, from the same fact sheet, builder and engine (thresholds unchanged: rule T over the decade of the
+FY2008 10-K). The ten 2009 dates rebuild byte-identical.
+
+```bash
+python3 retro/build_v.py --weekly 2010-01-01 2013-12-31                     # 209 dates, 2010-01-08 .. 2013-12-31
+for c in 2010-02-04 2010-04-29 2010-07-29 2010-10-21 2010-10-28 2010-11-22 2011-02-03 2011-05-06 2011-07-28 2011-10-19 2011-10-27 \
+         2011-11-18 2012-02-09 2012-05-03 2012-07-26 2012-10-25 2012-11-01 2012-11-16 2013-02-07 2013-05-02 2013-07-25 2013-10-24 \
+         2013-10-31 2013-11-22 2014-01-01; do python3 retro/tools/firewall.py $c V; done
+```
+
+Read, by the session's model directly with no delegated transcription: the sixteen earnings releases of Q1 FY10 to Q4 FY13 (exhibit 99.1:
+the statements of operations and balance sheets, the outlook, the reconciliations of the company's adjusted figures, the opening
+bullets), the twelve 10-Qs of fiscal 2010-2013 and the three of fiscal 2009 (each one's statement and receivables rows, compared by
+script with its release), the FY2010-FY2013 10-Ks (selected data, the statements of operations, cash flows and balance sheets, the MD&A's
+adjusted results, Items 1, 1A and 5 by the sentences quoted), the four dividend 8-Ks that first state a new rate, and every other 8-K
+of 2010-2013 by its items and a keyword search of its text; seven were read in full (2010-10-26, 2010-10-29, 2010-11-15, 2011-07-06,
+2012-03-13, 2012-07-14, 2013-06-06). **Not read:** the releases' presentations (exhibit 99.2), the operational performance supplements
+beyond the sentences quoted, the 10-Qs and 10-Ks beyond the rows and sentences named, and the exhibits of the agreement, officer and
+trading-plan 8-Ks. The fact sheet is extended by a second script: each figure is read from its labelled row and column (the row is kept
+and asserted present in its own filing), every value is computed, and four cross-checks run: the revenue lines sum to each total, each
+release's year-ago column against the year-ago release (all match but the fiscal 2009 quarters' diluted shares and Q3 FY09's EPS,
+$0.96 against $0.97, which the FY2010 releases print revised by the participating-securities rule; each release's year-ago column is
+used as it prints it), each 10-Q matches its release
+on revenue, expenses, operating income and receivables (all twelve do: no 10-Q restatement), and each 10-K vintage matches its Q4 print on
+the year it adds. 622 strings were checked with `verbatim.py` against their own filings (622/622; 495 new). Source ids: `V12`-`V14` (the
+fiscal 2009 10-Qs), `V20`-`V35` (the releases), `V40`-`V51` (the 10-Qs), `V60`-`V63` (the 10-Ks), `V70`-`V73` (the dividend 8-Ks).
+Decided on 2026-11-20, before any 2010-2013 model was built or any outcome of these dates computed:
+
+- **Release timing.** Every release was accepted after the close (16:09-16:14 ET; the call at 5:00 p.m. ET) and is dated the next trading
+  day; the 10-Ks were accepted after the close (FY2010 on a Friday, so dated 2010-11-22; FY2011-FY2013 in the evening, dated 2011-11-18,
+  2012-11-16, 2013-11-22). A Q4 print extends the history to its 10-K: 4, 3, 2 and 3 dates.
+- **EPS: the company's figure excluding only one-offs, where published** (the ACN rule). Unlike FY2008's, Visa's adjusted figures from
+  fiscal 2010 remove only one-offs: the asset step-up amortization ended with fiscal 2010 ("$68 million of annual amortization related to
+  the 2007 reorganization fully amortized in Q4 FY 2010", the presentation of 2010-10-26, read for that sentence).
+  - FY2010 $3.91 (GAAP $4.01), FY2011 $4.99 (GAAP $5.16): without the non-cash, non-operating gains from revaluing the Visa Europe put
+    option ($79M and $122M), from the Q4 FY10 and Q4 FY11 releases and the FY2011 and FY2012 10-Ks' MD&A ("Adjusted diluted earnings per
+    share | 4.99 | 3.91"); the FY2010 10-K gives no adjusted figure, so its vintage takes FY10's from the Q4 FY10 release (the JPM FY2017
+    reading).
+  - FY2012 $6.20 (GAAP $3.16): without the $4.1 billion covered-litigation provision (the interchange multidistrict litigation), the $208M
+    deferred tax remeasurement and the reversal of previously recorded tax reserves ($326M on the year's net income), from the Q4 FY12 release and the FY2012 and FY2013 10-Ks. GAAP
+    FY2012 would fail the AAPL test, so the company figure is what keeps the year in the history.
+  - FY2009 $3.10 and FY2013 $7.59 are GAAP (no one-off in either year).
+- **FY2009 restated by the participating-securities rule** (adopted 2009-10-01, applied retrospectively): EPS stays $3.10, diluted shares
+  759M against 758M, from the Q4 FY10 release (`restates` on its full-year actuals; the JPM encoding) and the FY2010 10-K. FY2008's 770M is
+  out of the history.
+- **The outlook, field by field** (each field from the latest print that gives it in numbers; a field restated in words keeps the last
+  number, the ACN and LOW words rules; "about" and "around" levels are numbers, the CAT, LMT, UNP and NKE readings; words and one-sided
+  bounds give no field):
+  - **Revenue:** FY2010 11-15% (four prints: "in the range of", then "high end of the 11% to 15% range"); FY2011 11-15% (Q4 FY10 to Q3
+    FY11; the 8-K of 2010-10-29, "Visa Clarifies Guidance", confirms it "is based off its fiscal 2010 GAAP reported revenues of $8.065
+    billion", the method's reading, and adds nothing). FY2012 "high single to low double digit range", then "in the low double digits":
+    words, so BASE takes each quarter's revenue growth (the UNP rule). FY2013 "low double digits" (words) to the Q3 FY13 print, then
+    "Around 13%" (a level, so 13%). FY2014 "Low double-digits on a constant dollar basis" (words; its two points of currency have no range
+    to apply to).
+  - **Operating margin:** FY2010 "mid to high 50% range" (words); FY2011 to FY2013 "About 60%" in every print (Q3 FY12 on: "Adjusted
+    annual operating margin of about 60%"): a guided margin step from the last full year's margin (FY10 56.90% GAAP, FY11 59.38%, FY12
+    59.85% excluding the litigation provision), +5.2%, +1.0% and +0.25% on BASE; the margin signal is the guided change (+310bp, +62bp,
+    +15bp). FY2014 "Low 60s" (words).
+  - **EPS:** "greater than 20%" (FY2010, FY2011) is a one-sided bound; FY2012's "mid to high teens", "high teens", "High teens to low
+    twenties" and "low twenties" are words; FY2013's "High teens" are words until the Q2 FY13 print's "Around 20%", a number: FY13E is FY12's
+    $6.20 x 1.20 = $7.44 (the NKE rule, on the adjusted basis the guide and the history share), which the Q3 FY13 print's "Low twenties"
+    keeps; FY2014 "Mid to high teens" (words). Otherwise the last full year's EPS stands.
+- **Presentation changes as published.** From fiscal 2011 Visa reports non-Visa transaction pass-through revenues net and no longer books
+  Visa Extras pass-throughs ($140M and $89M of fiscal 2010 revenue, the 8-K of 2010-11-15); no filing recasts fiscal 2010, so FY2011's
+  growth carries the change (a seam of about 2.8 points). CyberSource is in the prints from its 2010-07-21 acquisition, as published
+  (acquisitions in, the JPM rule).
+- **Q3 FY12's operating one-off** (`op_one_off_m`): the operating margin excludes the $4,098M covered-litigation provision, as the
+  release's adjusted operating expenses ($1,074M) do, and Q3 FY13 compares with that adjusted year-ago quarter (the ACN rule, year-ago
+  quarters included); the opex signal leaves out the litigation line in any case. Q1 FY10's $43M litigation credit stays in (no company
+  figure without it).
+- **Dividends:** $0.15 from the 8-K of 2010-10-20 (after the close; 2010-10-21), $0.22 from 2011-10-19 (before the open), $0.33 from the
+  8-K of 2012-10-24 (after the close; 2012-10-25), $0.40 from 2013-10-23 (after the close; 2013-10-24).
+- **Escrow deposits** under the retrospective responsibility plan reduce the class B conversion rate, which "had the effect of repurchasing"
+  class A equivalents (the FY2009 10-K's words): they are in the diluted share counts as published and so in the buyback term.
+- **Durability: DURABLE, no live theme.** No 10-K calls the business cyclical. The Wall Street Reform and Consumer Protection Act (the
+  Durbin amendment) is regulation, not a theme in `taxonomy_eras.json`; each 10-K's sentence on it stays in the "why". CLOUD (live from
+  2012-10-30) is scoped to on-premise hardware and data-center outsourcing, not a payments network: out of scope.
+- **Adds nothing:** the 8-Ks of payments-volume data for conferences (2010-03-11, 2010-06-08, 2010-09-13, 2010-12-01, 2011-02-16,
+  2012-03-13, 2012-05-30, 2012-09-11, 2013-03-13), the Durbin outlook of 2011-07-06 (FY2011 affirmed in numbers, FY2012 in words), the
+  Investor Day of 2013-06-06 (FY2013 affirmed, FY2014 in words), the CyberSource agreement and closing, the escrow deposits, the DOJ
+  settlement, the interchange settlement 8-Ks of 2012-07-14 and 2012-10-19 ("we do not anticipate will impact our current guidance"), the
+  share repurchase plans, credit facility, officer, director, annual-meeting and trading-plan 8-Ks.
+
+Controls and checks (before any outcome of these dates):
+- **`retro_tool run` passes on all 209 dates,** with no warning.
+- **Controls:** altering one value of each new print (its quarter EPS, its revenue, each Q4 print's full-year EPS, each fiscal-year
+  guide), each new vintage (its last year's EPS and its free cash flow) and each new dividend changes no model dated before its
+  publication: 66 controls, 0 early. Each Q4 print's full-year figures live from the print to its 10-K; a planted FY2012 guide on the Q3
+  FY11 print reaches only the FY2012 dates (2011-10-28 to 2012-10-26).
+- **Leak scan:** 0 hits in 178,887 (model, later token) pairs over the 209 dates, after dropping 399 tokens an earlier fact or the
+  engine already carries; as a positive control, 7 to 11 of each latest print's own tokens appear in its model.
+- **Regression:** the ten 2009 models rebuild byte-identical; rebuilding GOOG's and JPM's 2010-2013 dates changes nothing. The shared code
+  is untouched but the firewall tool's V entry (a planted guide for every guided year in numbers and words, an operating one-off and
+  planted restatements).
+
+Seen in the build (method behaviour, not tuned):
+- **RICH on 124 dates, FAIR on 43, CHEAP on 42; legacy tier BUY 85, ACCUMULATE 54, WATCHLIST 47, AVOID 23.** By year: 2010 RICH 27, CHEAP
+  13, FAIR 12 (AVOID on the 17 dates to 2010-04-30, then BUY, ACCUMULATE or WATCHLIST with the price, BUY from the Q4 FY10 print); 2011 CHEAP 29, FAIR 21, RICH 2, BUY on all 52; 2012 RICH 47, FAIR 5;
+  2013 RICH 48, FAIR 5. Robustness agrees with the class on 123 of the 209 dates: many calls sit near a band edge.
+- **2010 rests on FY09's $3.10 to the Q4 FY10 print:** $66.90-96.59 is 17-31x, the 12th-100th percentile of a window whose median is
+  20-23x; the bounds rule (FY2009 alone) caps BULL and XBULL at BASE's 13%.
+- **The Q4 FY10 print opens the history:** FY10's $3.91 brings a first EPS change (+26.1%), so BULL and XBULL become +26.1%/yr, and BASE
+  is +20.9% (11-15% plus the 5.2% margin step plus the buyback); the class turns CHEAP and the tier BUY, and stays BUY all of 2011 (BULL
+  +26.1% to +26.9%; XBULL is FY09 to FY11's run, +26.9%/yr, from the Q4 FY11 print).
+- **2012 rests on FY11's $4.99:** with FY2012's EPS and revenue outlooks in words, the last full year's EPS stands all year while the price
+  rose from $100.58 to $150.77 (20-28x, the 71st-100th percentile of a window whose median is 18-19x): RICH on 47 dates.
+- **2013:** FY12's $6.20 to the Q2 FY13 print, then $7.44; $156.77-222.68 is 23-29x, the 91st-100th percentile, 66-110% above the EPP floor.
+- **BEAR is flat throughout:** no year of FY2009-FY2013 has an EPS decline, so BEAR is the 0% cap at the window's 10th percentile.
+
+How far each call moves the classes (the 209 dates rebuilt with one encoding changed and classified offline; no outcome consulted):
+- **FY2008 in the history** (the company's $2.25, the window from the listing): 78 classes (37 RICH to FAIR, 13 RICH to CHEAP, 28 FAIR to
+  CHEAP) and 104 tiers: still the largest encoding call of the series;
+- GAAP every year (FY10 $4.01, FY11 $5.16, FY2012 excluded as distorted): 12 classes, 66 tiers (44 to AVOID);
+- "About 60%" read as words (no margin step): 4 classes, no tier;
+- "Around 20%" and "Around 13%" read as words: 5 classes (FAIR to RICH), 25 tiers (to AVOID);
+- the Q3 FY12 provision left in the operating margin: no class, no tier;
+- every signal at its BEAR value: 73 classes (toward RICH), no tier; at its XBULL value: 136 classes (toward CHEAP), no tier;
+- "greater than 20%" read as +20% for FY2010 and FY2011: 37 classes (36 to CHEAP), 17 tiers.
+
+Judgement calls that could carry hindsight:
+- FY2008 excluded (the 2008-2009 call, unchanged): 78 classes here;
+- the Visa Europe put-option revaluations read as one-offs, as the company reads them (non-cash, non-operating fair-value changes), and
+  FY2012's company figure as excluding only one-offs (12 classes, 66 tiers at GAAP);
+- "about" and "around" levels read as numbers and words as no field, which makes 2012 rest on FY11's $4.99 all year; the one-sided EPS
+  bound read as no field (37 classes the other way);
+- the signals and their 2002-2008 thresholds, now the main swing (73 to 136 classes at the extremes);
+- the fiscal 2011 presentation seam and CyberSource left in the growth rates, as published;
+- DURABLE rather than CYCLICAL, and the Durbin amendment read as regulation rather than a theme (label only);
+- the parts of the filings listed above as not read: a guide in an unread exhibit would be missed.
+
+The hindsight results are in `staging/retrospective/V/FINDINGS.md` ("2010-2013"): hypotheses, never inputs.
 
 ## Categories change with the era
 
