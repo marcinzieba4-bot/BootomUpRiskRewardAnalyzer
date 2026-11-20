@@ -21071,7 +21071,7 @@ Judgement calls that could carry hindsight:
 
 The hindsight results are in `staging/retrospective/JPM/FINDINGS.md`: hypotheses, never inputs.
 
-## V (Visa): the twenty-eighth ticker, in staging, 2008-2017 (from the Q4 FY09 print)
+## V (Visa): the twenty-eighth ticker, in staging, 2008-2021 (from the Q4 FY09 print)
 
 The V series is built apart from the other twenty-seven and shares nothing with them but the machinery: its own fact sheet
 (`retro/facts/V.json`), builder (`retro/build_v.py`, the GOOG builder with Visa's September fiscal year, figures in millions, a fiscal-year
@@ -21603,6 +21603,178 @@ Judgement calls that could carry hindsight:
 - the parts of the filings listed above as not read: a guide in an unread exhibit would be missed.
 
 The hindsight results are in `staging/retrospective/V/FINDINGS.md` ("2014-2017"): hypotheses, never inputs.
+
+### V 2018-2021: the company's figures to FY2019, GAAP from FY2020, every outlook in words or withdrawn, the ten-year roll, CRYPTO on the watch list
+
+**What the owner asked for and what was built.** On 2026-11-20 the owner asked for V 2018-2021 on the same rules. All 209 weekly
+dates were built, 2018-01-05 to 2021-12-31, from the same fact sheet, builder and engine (thresholds unchanged: rule T over the decade of
+the FY2008 10-K). The range starts on 2018-01-01, the Monday after the last built week (2017-12-29). The 427 models of 2009-2017
+rebuild byte-identical.
+
+```bash
+python3 retro/build_v.py --weekly 2018-01-01 2021-12-31                     # 209 dates, 2018-01-05 .. 2021-12-31
+for c in 2018-02-02 2018-04-26 2018-07-26 2018-10-18 2018-10-25 2018-11-19 2019-01-31 2019-04-25 2019-07-24 2019-10-25 \
+         2019-11-14 2020-01-31 2020-05-01 2020-07-29 2020-10-21 2020-10-29 2020-11-20 2021-01-29 2021-04-28 2021-07-28 \
+         2021-10-27 2021-11-19 2022-01-01; do python3 retro/tools/firewall.py $c V; done
+```
+
+Read, by the session's model directly with no delegated transcription: the sixteen earnings releases of Q1 FY18 to Q4 FY21 (exhibit 99.1:
+the headline bullets and highlights, the statements of operations and balance sheets, the financial summaries, the outlook, the
+reconciliations of the company's adjusted and non-GAAP figures), the twelve 10-Qs of fiscal 2018-2021 and the three of fiscal 2017 (each
+one's statement and receivables rows, compared by script with its release), the FY2018-FY2021 10-Ks (selected data where the 10-K has it,
+the statements of operations, cash flows and balance sheets, the revenue note, the MD&A's adjusted and non-GAAP tables, Items 1, 1A and
+5 by the sentences quoted), the Q4 FY17 release (Q1 FY18's previous-quarter revenue) and the Q2 FY17 release (Q2 FY18's year-ago
+charitable contribution), the dividend 8-K that first states the $0.25 rate, and every other 8-K of January 2018 to January 2022 (41) by
+its items and opening text, the two Item 7.01 8-Ks of March 2020 and the seven monthly operating updates of 2020-2021 and the 2021-03-19
+notice in full for outlook sentences. **Not read:** the operational performance data beyond the sentences quoted, the 10-Qs and 10-Ks beyond the rows and sentences
+named, the call transcripts (not filings), and the exhibits of the debt, agreement, charter, officer, director and trading-plan 8-Ks.
+
+The releases of Q1 FY18 to Q2 FY21 are page images with a hidden text layer, which the repository converter returns as one long line per
+page: a fourth script reads each row as its label (tolerant of the stray spaces the layer puts inside words and of dot leaders) followed
+by its run of numbers, and keeps the matched text, which is asserted present in its own converted file; Q3 and Q4 FY21 are tables. From
+fiscal 2019 the statements of operations show net revenues only, so the revenue lines come from each release's Financial Summary (the
+GAAP column of the quarter) and the year-ago lines from the year-ago quarter's own release, whose net revenues are asserted equal to the
+year-ago column. Four cross-checks run as before: the lines sum to each total; each 10-Q matches its release on revenue, operating
+expenses, operating income and receivables (all twelve do: no 10-Q restatement); each 10-K matches its Q4 print on the year it adds (EPS,
+revenue, diluted shares, operating and pre-tax margins, tax rate); and each vintage holds exactly ten fiscal years. 516 strings were
+checked with `verbatim.py` against their own filings (516/516). Source ids: `V120`-`V123` (the 10-Ks), `V130`-`V145` (the releases),
+`V150`-`V161` (the 10-Qs), `V170` (the dividend 8-K); V68-V69 were free but V70-V71 are the 2015 and 2016 dividend 8-Ks, so the 10-Ks
+take a fresh block. Decided on 2026-11-20, before any 2018-2021 model was built or any outcome of these dates computed:
+
+- **Release timing.** All sixteen releases were accepted after the close (16:01-16:40 ET; the call at 5:00 p.m. ET) and are dated the next
+  trading day. The 10-Ks: 2018-11-16 16:10 ET (dated 2018-11-19), 2019-11-14 15:35 ET (during the session: dated that day, the GOOG Q3 2012
+  reading), 2020-11-19 16:03 ET (2020-11-20) and 2021-11-18 16:06 ET (2021-11-19). A Q4 print extends the history to its 10-K: 3, 2, 3 and
+  3 dates.
+- **EPS: the company's figure excluding only one-offs where published, GAAP where the company's figure also removes recurring items.**
+  - FY2018 $4.61 (GAAP $4.42): without the Tax Act's remeasurement of deferred taxes and the transition tax, the $600M covered-litigation
+    provision (Q3 FY18) and the $195M donation of investment securities to the Visa Foundation (Q4 FY18), from the Q4 FY18 release and the
+    FY2018 and FY2019 10-Ks ("As adjusted", "Non-GAAP"). FY2017 stays $3.48.
+  - FY2019 $5.44 (GAAP $5.32): without the $370M litigation provision (Q4 FY19).
+  - FY2020 $4.89 and FY2021 $5.63, GAAP. The Q1 FY20 release: "Starting in fiscal 2020, Visa revised its non-GAAP methodology to exclude
+    the impacts of equity investment gains and losses, amortization of acquired intangible assets for acquisitions in fiscal year 2019 and
+    forward, and non-recurring acquisition-related costs." Investment results and amortization recur, so the non-GAAP $5.04 and $5.91 also
+    remove recurring items (the NKE FY2007, AVGO and PFE rule; the LMT 2022-2026 reading of mark-to-market items).
+  - The FY2020 10-K recasts FY2019 to $5.40 and FY2018 to $4.58 on that methodology, which also removes recurring items, so FY2018 and
+    FY2019 keep $4.61 and $5.44, the figures excluding only one-offs that the FY2019 10-K published (the JPM FY05-FY07 reading): a seam,
+    company figures to FY2019 and GAAP after, which sets BEAR at FY2020's -10.1% from 2020-10-29 (GAAP throughout would give -8.1%).
+- **The 10-K vintages: the ten fiscal years to the latest one** (the README's step 4 and the JPM reading). FY2008, the excluded first year,
+  leaves the vintages with the FY2018 10-K; FY2009 leaves with the FY2019 10-K, FY2010 with the FY2020 10-K and FY2011 with the FY2021 10-K
+  (between a Q4 print and its 10-K the history holds eleven years). The P/E window is still the last ten years, from 2008-10-01 until it
+  reaches ten years on 2018-10-01, and every fiscal year in it is in the history on every date. Each year comes from the latest filing
+  that reports it: revenue and GAAP years from the five-year selected data (FY2018-FY2020 10-Ks; the FY2021 10-K has none, so its three
+  income-statement years and, for earlier years, the FY2020 10-K's table), the company's figures from the MD&A's three-year tables, diluted
+  shares (as converted) from the statements of operations. Revenue is "Net operating revenues" to FY2018 and "Net revenues" from FY2019.
+- **The revenue standard** (ASC 606, adopted 2018-10-01 without restating the prior year; the Q1 FY19 release: "...which positively impacted
+  reported net revenues growth by approximately 1 percentage point."): FY2019's quarters are against FY2018's as published under the
+  earlier standard (in the print notes): a seam, as published, in the revenue growth, the net-to-gross share and the margin.
+- **The outlook: words in every release, then withdrawn or not given.** FY2018: "high single digits" on a nominal basis, then
+  "Low double-digits" (Q2 and Q3 FY18), EPS "Mid-50's", "Low-60's" and "High 50's" GAAP and "high end of mid-20's" to "low 30's" adjusted,
+  the margin "High 60s"; FY2019: "Low double-digits", EPS "High teens", "Low twenties" GAAP; FY2020: the outlook table's "Low double-digit"
+  and "Mid-teens" (Q4 FY19, Q1 FY20). Words give no field, so BASE takes the latest quarter's revenue growth on every date (the UNP rule),
+  and no margin is guided (the signal uses the latest quarter's change). The Q2 FY20 release withdraws FY2020 ("The worldwide spread of
+  COVID-19 has created significant uncertainty in the global economy ... therefore we are not providing a fiscal full- year 2020
+  outlook"); Q3 FY20 to Q3 FY21 give no FY2020 or FY2021 outlook ("at this time"), and the Q4 FY21 release none for FY2022 (an outlook
+  given only on the call is not a filing, the MU rule). A withdrawal is encoded (`withdrawn` on the guide; a field comes only from a guide
+  published after the year's last withdrawal, and the text quotes the withdrawal), though here it moves no number, as FY2020 had no field
+  to withdraw. BASE therefore runs from -14.2% (Q3 FY20's -17.2% revenue) to +31.2% (Q4 FY21's +28.6%).
+- **The March 2020 8-Ks** (Item 7.01): 2020-03-02, "Visa expects second fiscal quarter net revenue growth to be approximately 2.5-3.5
+  percentage points lower than the outlook we shared on our January 30, 2020 earnings call" (relative to a call outlook, which is not a
+  filing: no number) and "it is not possible to accurately forecast the growth trend for the rest of our second fiscal quarter or the
+  remainder of fiscal 2020"; 2020-03-30, Q2 FY20 net revenue growth "in the mid-single digits" (words). Neither gives a field, and the builder
+  has no separate guide encoding, so they are not encoded: the 2020-03-06 to 2020-04-24 models still quote the Q1 FY20 words for FY2020
+  (text only). The monthly operating updates (2020-06-01 to 2021-12-01) report volumes and give no outlook.
+- **Operating one-offs** (the ACN rule, year-ago quarters as their own release published them): the operating margin excludes Q3 FY18's
+  $600M covered-litigation provision, Q4 FY18's $195M donation and Q4 FY19's $370M litigation provision (`op_one_off_m`), and the opex
+  signal, which leaves out the litigation line, also leaves out the donation (`opex_one_off_m`); Q2 FY18's year-ago quarter is Q2 FY17's
+  $192M contribution. From fiscal 2020 the releases' non-GAAP figures also remove recurring items, so no later one-off is used (Q2 FY21's
+  $152M of indirect taxes for prior periods stays in), and Q4 FY20's year-ago quarter excludes Q4 FY19's provision as that release did.
+- **Dividends:** $0.21 from the Q1 FY18 release (2018-02-02), $0.25 from the 8-K of 2018-10-17 (after the close; 2018-10-18), $0.30, $0.32 and
+  $0.375 from the Q4 FY19, Q4 FY20 and Q4 FY21 releases. The other dividend 8-Ks repeat the rate.
+- **Durability: DURABLE.** No 10-K calls the business cyclical; the FY2020 and FY2021 10-Ks no longer carry the sentence "Our business is
+  affected by overall economic conditions and consumer spending." (the why says so). **CRYPTO** (live from 2020-10-21; its scope,
+  "crypto / DeFi disintermediates payments networks, banks, exchanges, remittance", names payments networks) joins the watch list from its
+  live date on the current 10-K's own words (`crypto_quote`: "The global payments industry is undergoing significant and rapid
+  technological change, including ... cryptocurrencies, distributed ledger and blockchain technologies ..."), company-acknowledged with no
+  market read (the JPM encoding), on 63 dates from 2020-10-23. The FY2021 10-K names an offering of Visa's own ("We enable
+  cryptocurrencies for everyday payments through our global presence, partnership approach and trusted brand.", `crypto_own_quote`), so
+  from 2021-11-19 a factor pair is added that nets to zero (the GOOG and MSFT rule): the theme signal stays at 2/4, so only text changes.
+  Before the live date the words are not quoted, as on the 2016-2017 dates, whose 10-Ks also named digital currencies (a text-only call
+  that keeps the 2009-2017 models unchanged). ECOMMERCE stays out of scope for a payments network; CLOUD, STREAMING, ENERGY_TRANSITION
+  and EV are out of scope; GENAI is not live until 2022-11-30.
+- **Adds nothing:** the escrow deposits and class B conversion rates (2018-06-26, 2018-07-05, 2019-09-26, 2019-09-30, 2021-12-30: the
+  provisions are in the prints as published), the amended interchange settlement agreement (2018-09-18), the release of series B and C
+  preferred stock and the series A exchanges (2020-09-01, 2020-11-18: in the diluted shares as published), the debt offerings
+  (2020-04-02, 2020-08-17), the Department of Justice's notice of a debit investigation (2021-03-19: a legal risk; no event encoding), the
+  repurchase program (2021-12-15), the dividend 8-Ks that repeat a rate (2018-04-18, 2018-07-17, 2019-04-17, 2020-04-22), and the
+  officer, director, chair, annual-meeting and bylaw 8-Ks.
+
+Controls and checks (before any outcome of these dates):
+- **`retro_tool run` passes on all 209 dates.** Its only warnings: on 13 dates (2020-10-30 to 2021-01-22) 2,208M diluted shares printed as
+  2.2080 (read as a year), and on 10 of them (to 2020-12-31) the year 2021 in the company's own words "not providing a fiscal full-year
+  2021 outlook at this time" (the Q4 FY20 release, a forward year, not a later fact).
+- **Controls:** altering one value of each new print (its quarter EPS, its revenue, its fiscal-year guide where it has one, each Q4
+  print's full-year EPS), each new vintage (its last year's EPS, its free cash flow, its CRYPTO words and the FY2021 10-K's own-offering
+  words) and each new dividend changes no model dated before its publication: 69 controls, 0 early, and each first changes the first built
+  date on or after it, the CRYPTO words the first date on or after the later of the 10-K and the live date (the FY2018 10-K's words, out of
+  force by 2020-10-21, change nothing; the FY2019 10-K's change 2020-10-23 to 2020-11-13).
+- **Leak scan:** 1 hit in 664,337 (model, later token) pairs over the 636 V models, after dropping 57,446 pairs an earlier fact or the
+  engine already carries: the same coincidence as before (the 2010-03-05 close, $88.51 as traded, is also Q2 FY17's average repurchase
+  price). As a positive control, 15 to 44 of each latest print's own tokens appear in its model.
+- **Regression:** the 427 models of 2009-2017 rebuild byte-identical. The shared code is untouched but the firewall tool's V entry (a
+  planted withdrawal of every guided year and a later vintage with planted CRYPTO words).
+- **Index:** `index.json` gains the 209 V rows; no other row changes.
+- **Firewall:** run after the build was committed, before any outcome of these dates (the result is recorded in the next commit).
+
+Seen in the build (method behaviour, not tuned):
+- **RICH on 199 dates and FAIR on 10 (2021-10-28 to 2021-12-31); legacy tier AVOID 182, WATCHLIST 21, ACCUMULATE 6.** Robustness agrees
+  with the class on 193. By year: 2018 AVOID 46, WATCHLIST 5, ACCUMULATE 1; 2019 AVOID 46, WATCHLIST 6; 2020 AVOID 48, WATCHLIST 3,
+  ACCUMULATE 2; 2021 AVOID 42, WATCHLIST 7, ACCUMULATE 3.
+- **The multiple sits at the top of its own window.** The stock is 27.0-43.1x the current year's EPS in 2018, 29.0-40.3x in 2019,
+  27.0-44.7x in 2020 and 34.9-50.9x in 2021: the 73rd-100th percentile, against a window median of 22.4-26.3x. As the window rolls, the
+  2008-2010 lows leave and the EPP floor rises from 19x (2018) to 22x (2021); the price is 29-132% above it.
+- **The scenarios.** BEAR is flat until FY2020's GAAP EPS ($4.89 against FY2019's $5.44) makes it -10.1%/yr from 2020-10-29. BULL is the
+  decade CAGR, +20.7-21.9%/yr to 2019 and +16.4-21.0% after FY2020; XBULL FY09 to FY11's run (+26.9-27.4%/yr) until FY2021 brings
+  +29.4-31.2%. BASE is the latest quarter's revenue growth with the margin and buyback: +11.3-17.8% in 2018-2019, then -14.2% on the Q3 and
+  Q4 FY20 prints and +31.2% on Q4 FY21's.
+- **The FAIR dates** follow the Q4 FY21 print: the current year becomes FY2022E on FY21's $5.63 (the P/E falls from 47.3x on 2021-10-22 to
+  37.3x on 2021-10-28, as the price also fell 9%) and BASE becomes +31.2% (revenue +28.6% against the pandemic quarter; BULL is at least
+  BASE). The ACCUMULATE dates come at the price lows of December 2018 and March-April 2020 and in November 2021.
+
+How far each call moves the classes (the 209 dates rebuilt with one encoding changed and classified offline; no outcome consulted):
+- the signals at their XBULL values: 205 classes (134 RICH to CHEAP, 61 RICH to FAIR, 10 FAIR to CHEAP) and 205 tiers (197 to BUY); at their
+  BEAR values: the 10 FAIR dates to RICH (10 tiers). The signals and their 2002-2008 thresholds remain the main swing;
+- GAAP every year (FY14 $2.16, FY15 $2.58, FY16 $2.48, FY17 $2.80, FY18 $4.42, FY19 $5.32; FY2012 excluded as distorted): 8 classes (2 RICH
+  to FAIR, 6 FAIR to CHEAP) and 27 tiers, all toward BUY; FY2018 alone at GAAP: no class, 9 tiers (toward AVOID); FY2019 alone at GAAP: no
+  class, 3 tiers;
+- the company's fiscal 2020 non-GAAP figures (FY20 $5.04, FY21 $5.91, and from the FY2020 10-K its recast FY18 $4.58 and FY19 $5.40): 2
+  classes (FAIR to CHEAP) and 7 tiers (toward ACCUMULATE and BUY);
+- FY2008 in the history while a vintage holds FY2009 (the company's $2.25, the window from the listing): 1 class (RICH to FAIR), 4 tiers;
+- no ten-year roll (every year from FY2009 kept): no class, no tier (BULL +18.2% instead of +16.4% on 2021-06-04, for example);
+- the revenue words read as numbers ("high single digits" 7-9%, "low double-digits" 10-12%, until the withdrawal): no class, no tier (BASE
+  +14.0% instead of +16.2% on 2019-03-01, for example);
+- the operating one-offs left in the operating margin and the opex signal: no class, no tier;
+- the CRYPTO words left out: no class, no tier (text only, by design).
+
+Judgement calls that could carry hindsight:
+- the signals, chosen in 2026 by a builder who knows what followed, with their 2002-2008 thresholds: the largest swing (205 classes at the
+  XBULL extreme);
+- the fiscal 2020 non-GAAP methodology read as removing recurring items, so FY2020-FY2021 are GAAP (2 classes and 7 tiers the other way),
+  and FY2018-FY2019 kept at the FY2019 10-K's figures excluding only one-offs rather than the FY2020 10-K's recast or GAAP: a seam between
+  FY2019 and FY2020 that sets BEAR at -10.1%/yr (GAAP throughout: 8 classes and 27 tiers); the largest EPS call of the batch;
+- the Tax Act items, the covered-litigation provisions ($600M, $370M) and the Visa Foundation donation read as one-offs (FY2018 at GAAP: 9
+  tiers; FY2019: 3);
+- every outlook read as words and the withdrawal read as ending the year's guides (nothing moves); the March 2020 8-Ks not encoded (text
+  only, on the eight dates from 2020-03-06 to 2020-04-24);
+- the ten fiscal years to the latest one (nothing moves);
+- CRYPTO on the watch list from its live date, its factor pair from the FY2021 10-K, and its words not quoted before the live date (text
+  only);
+- the ASC 606 seam (FY2019 against FY2018 under the earlier standard, as published) and the year-ago revenue lines taken from the
+  year-ago releases;
+- DURABLE rather than CYCLICAL (label only), now without the 10-K's economy sentence from FY2020;
+- the parts of the filings listed above as not read: a guide in an unread exhibit would be missed, and an outlook given only on a call is
+  not used.
+
+The hindsight results are in `staging/retrospective/V/FINDINGS.md` ("2018-2021"): hypotheses, never inputs.
 
 ## Categories change with the era
 

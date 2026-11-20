@@ -42,6 +42,13 @@ Visa's fiscal year ends on September 30 (FY2009 = 2008-10-01 to 2009-09-30). The
     ('revenue_nominal'; the NKE rule, as for PEP); the operating one-offs a release's adjusted operating expenses exclude outside the
     litigation line leave the opex signal too ('opex_one_off_m', 'opex_one_off_prior_m': Q3 FY16's Framework Agreement loss and
     acquisition costs, Q4 FY16's severance, Q2 FY17's charitable contribution, and their year-ago quarters).
+  - (V 2018-2021) an outlook withdrawn or not given ('withdrawn' on a guide: the FY2020 outlook from the Q2 FY20 release, and no FY2021
+    outlook in any release) ends the fiscal year's earlier guides: a field comes only from a guide published after the year's last
+    withdrawal, and the words are the withdrawal's own; the history holds the ten fiscal years to the latest one (FY2009 leaves with
+    the FY2019 10-K); CRYPTO (live from 2020-10-21, its scope names payments networks) joins the watch list from its live date on the
+    current 10-K's own words ('crypto_quote': cryptocurrencies among the technological changes in global payments), company-acknowledged
+    with no market read, and from the FY2021 10-K, which names Visa's own crypto offering ('crypto_own_quote'), with a factor pair that
+    nets to zero (the GOOG and MSFT rule): the theme signal stays at 2/4, so only text changes.
 The kind is DURABLE: the 10-Ks tie results to spending and the economy but do not call the business cyclical (the LOW, SHW and JPM
 reading). No disruption theme in taxonomy_eras.json is live for a payments network in 2008-2009 so the
 builder refuses events until a theme encoding is decided, and it refuses separate guides, listings, company names and 10-Q
@@ -57,6 +64,7 @@ Usage
   python3 retro/build_v.py --weekly 2009-10-26 2009-12-31
   python3 retro/build_v.py --weekly 2010-01-01 2013-12-31
   python3 retro/build_v.py --weekly 2014-01-06 2017-12-31
+  python3 retro/build_v.py --weekly 2018-01-01 2021-12-31
   python3 retro/build_v.py 2009-11-06
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/V/<AS_OF>
 """
@@ -243,7 +251,9 @@ def build(as_of, facts, raw, spx, engine, out):
     prints = [p for p in public if guide_fy(p) >= first_fy]
     if not prints:
         sys.exit(f"{as_of}: no quarterly print after FY{first_fy - 1} is public yet")
-    # a Q4 print's full-year actuals extend the annual history from its release until the next 10-K vintage
+    # a Q4 print's full-year actuals extend the annual history from its release until the next 10-K vintage; the 10-K in force keeps
+    # its own label for the words quoted from it (the JPM 2022-2026 fix)
+    tenk_label = h["fy_label"]
     h = {**h, "extended": ""}
     for p in prints:
         a = p.get("fy_actual")
@@ -292,9 +302,12 @@ def build(as_of, facts, raw, spx, engine, out):
     gl = lambda p: p.get("guides") or ([p["guide"]] if p.get("guide") else [])
     gs = [(p, g) for p in public for g in gl(p) if g["fy"] == cur_fy]
     g_words = gs[-1] if gs else None
-    g_rev = next(((p, g) for p, g in reversed(gs) if g.get("revenue_growth")), None)
-    g_eps = next(((p, g) for p, g in reversed(gs) if g.get("eps_growth") is not None), None)
-    g_mar = next(((p, g) for p, g in reversed(gs) if g.get("margin") is not None), None)
+    # (V 2018-2021) a withdrawn outlook ends the year's earlier guides: fields only from guides after the year's last withdrawal
+    wd = [k for k, (_, g) in enumerate(gs) if g.get("withdrawn")]
+    gs_num = gs[wd[-1]:] if wd else gs
+    g_rev = next(((p, g) for p, g in reversed(gs_num) if g.get("revenue_growth")), None)
+    g_eps = next(((p, g) for p, g in reversed(gs_num) if g.get("eps_growth") is not None), None)
+    g_mar = next(((p, g) for p, g in reversed(gs_num) if g.get("margin") is not None), None)
     bound = lambda w: bool(w) and "greater than" in w
 
     # ── current-FY EPS: an EPS growth guide in numbers applies to the last full year (the NKE and WMT rule); else the last full year's
@@ -350,7 +363,8 @@ def build(as_of, facts, raw, spx, engine, out):
         fwd_label = f"{latest['quarter']} revenue growth (no {fy_now} revenue range)"
         fwd_short, fwd_period = f"{latest['quarter'].split()[0]} revenue YoY", latest["quarter"]
         fy_rev_label = f"the {fwd_label}, YoY, applied to the year"
-        rev_txt = ((f"'{gw['revenue_words']}' is words and gives no field" if gw.get("revenue_words") else "no revenue range in numbers")
+        rev_txt = ((f"'{gw['revenue_words']}': the outlook is withdrawn or not given, so no field" if gw.get("withdrawn") else
+                    f"'{gw['revenue_words']}' is words and gives no field" if gw.get("revenue_words") else "no revenue range in numbers")
                    + ": the latest quarter's revenue growth stands in (the UNP rule)")
         tail = "no next-quarter guide is given"
     if g_eps:
@@ -430,6 +444,31 @@ def build(as_of, facts, raw, spx, engine, out):
     theme_summary = "no disruption theme has dated evidence"
     cat4 = (f"(4) Receivables — {latest['receivables_pct']:+.1f}% against revenue {latest['sales_pct']:+.1f}% in {latest['quarter']} "
             f"({latest['receivables_gap_pp']:+.1f}pp): clients paying more slowly would show here first")
+    why = h["why"]
+    # (V 2018-2021) the 10-Ks' competition risk factor counts cryptocurrencies among the technological changes in global payments
+    # ('crypto_quote' on the vintage). CRYPTO is live from 2020-10-21 and its scope names payments networks, so from that date the current
+    # 10-K's words put it on the watch list, company-acknowledged, with no market read (the JPM encoding); from the FY2021 10-K, which
+    # names a crypto offering of Visa's own ('crypto_own_quote'), a factor pair is added that nets to zero (the GOOG and MSFT rule). The
+    # theme signal stays at 2/4, so only text changes. Before the live date the words are not quoted, as on the 2016-2017 dates whose
+    # 10-Ks also named digital currencies (retro/README.md, "V 2018-2021")
+    cr = retro_tool.load_taxonomy()["themes"]["CRYPTO"]
+    if h.get("crypto_quote") and cr["live_from"] <= as_of:
+        val_word = "a premium" if pe_now_pctl >= 70 else "a discount to its own history" if pe_now_pctl <= 30 else "near its own median"
+        own = h.get("crypto_own_quote")
+        stage = "crypto"
+        watch = [{"theme": "CRYPTO", "status": "live, company-acknowledged; no market read",
+                  "reason": (f"Live: Visa's own FY20{tenk_label[2:]} 10-K says '{h['crypto_quote']}'"
+                             + (f" It names a crypto offering of its own: '{own}'" if own else "") +
+                             f" The stock trades at {close / eps_now:.1f}x {fy_e_s} — {val_word}. Re-file as DISRUPTION_EXPOSED (CRYPTO) "
+                             "only if dated evidence shows the market pricing crypto disintermediation of Visa's network specifically.")}]
+        if own:
+            factors = [(f"Crypto: Visa's own crypto-linked credentials (FY20{tenk_label[2:]} 10-K)", 0.2, 0.10),
+                       (f"Crypto competition (FY20{tenk_label[2:]} 10-K): cryptocurrencies among the changes in global payments", -0.2, 0.10)]
+        sig_name = "Crypto: disintermediation of card payments"
+        trigger = "Payments move to crypto rails that bypass card networks faster than Visa links them to its own"
+        theme_summary = "crypto is live and company-acknowledged; no dated evidence ties the multiple to it"
+        why += (f"; CRYPTO is live (from {cr['live_from']}) and its scope names payments networks: the 10-K's words put it on the watch "
+                "list, company-acknowledged, with no dated evidence that the market prices it for Visa")
 
     after_print = [p for p in prints if p["published"] < as_of and not any(p["published"] < d < as_of for d in days)]
     tag = f"(day after the {after_print[-1]['quarter']} print)" if after_print else f"(pre-{next_q} print)"
@@ -495,7 +534,7 @@ SOURCES = {json.dumps(sources, ensure_ascii=False, indent=4)}
 PIT_PROFILE = {{
     "kind": {R(h["kind"])},
     "risk": 2,
-    "why": {R(h["why"])},
+    "why": {R(why)},
     "theme_watch": {R(watch)},
     "evidence": [],
 }}

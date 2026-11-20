@@ -113,7 +113,8 @@ revenues, net-to-gross share, margins, opex and receivables gaps, quarter EPS, c
 full-year actuals exclude its own year, and a later vintage excluding a year and readmitting the distorted first year, with planted
 texts, figures, listing, exchange and window start (the guide, dividend, listing, split and company name every fact sheet with those
 lists gets, too), and from V 2014-2017 planted operating one-offs for the opex signal and a planted guide's currency effect, nominal
-range and aside; GOOG: a print whose revenues, margins, opex and receivables gaps, quarter EPS, cash,
+range and aside, and from V 2018-2021 a planted withdrawal of every guided year and a later vintage with planted CRYPTO words
+('crypto_quote', 'crypto_own_quote'); GOOG: a print whose revenues, margins, opex and receivables gaps, quarter EPS, cash,
 notes and raw figures are absurd, with absurd full-year actuals for the year after the latest vintage before CUTOFF, a later Q4 print
 whose full-year actuals exclude its own year, a later 10-Q restatement of the last print before CUTOFF with absurd figures, and a later
 vintage excluding a year with planted texts, figures, outlook words, exchange and window start, every per-share figure on a planted
@@ -769,6 +770,9 @@ try:
                            "revenue_fx": [-2.0, -3.0], "revenue_basis": "PLANTED", "revenue_aside": "PLANTED"}
                           for y in sorted({y0 + 1} | {g["fy"] for p_ in f["prints"] if p_["published"] < cutoff
                                                       for g in (p_.get("guides") or ([p_["guide"]] if p_.get("guide") else []))})]
+        # (V 2018-2021) a planted withdrawal of each of those years ahead of its planted numbers (a field comes from guides after it)
+        last["guides"] = [{**g, "revenue_growth": None, "eps_growth": None, "margin": None, "withdrawn": True,
+                           "revenue_nominal": None, "revenue_fx": None} for g in last["guides"]] + last["guides"]
         fa["restates"] = {"eps_normalized": {y: 0.01 for y in v0["eps_normalized"]}, "revenue_usd_b": {y: 0.01 for y in v0["revenue_usd_b"]},
                           "diluted_shares_m": {y: 1.0 for y in v0["diluted_shares_m"]}}
         fa["restates_note"] = "PLANTED"
@@ -783,6 +787,7 @@ try:
                  prev_fy_sales_growth=-99.0, tax_rate=0.99, tax_note="PLANTED", fcf_b=-99.0, fcf_note="PLANTED", cash_b=99.0,
                  groups=[["PLANTED", 1, -99]], groups_basis="PLANTED", exchange="PLANTED", pe_window_start="2008-03-19",
                  listing="1990-01-02", kind="CYCLICAL", eps_first_excluded={}, margin_signal_name="PLANTED")
+        v.update(crypto_quote="PLANTED", crypto_own_quote="PLANTED")      # (V 2018-2021) the CRYPTO watch-list words
     if TICKER == "MU":     # a later vintage excluding a year and readmitting none, with planted texts and figures
         v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}
         v.update(normalization="PLANTED", business_line="PLANTED", prev_fy_op_margin=-99.0, prev_fy_op_margin_note="PLANTED",

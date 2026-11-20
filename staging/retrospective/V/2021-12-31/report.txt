@@ -1,0 +1,157 @@
+
+════════════════════════════════════════════════════════════════════════
+  V  ·  Visa Inc.  ·  $216.71  ·  RETROSPECTIVE as of 2021-12-31
+  Signal: ◐ WATCHLIST   Ratio B: 1.33x   Adj gap: -0.11  [FAIRLY VALUED]
+  Point-in-time: 16 sources, latest published 2021-12-31; latest print Q4 FY21 (Oct 26)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2022E revenue, USD bn  →  FY2024E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2022E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Service revenues              $ 14.76  $14.76  $17.78    +0.00    +3.02
+    +17.0% revenue in FY21
+  Data processing revenues      $ 16.45  $16.45  $19.82    +0.00    +3.37
+    +16.6% revenue in FY21
+  International transaction re  $  8.40  $ 8.40  $10.12    +0.00    +1.72
+    +3.7% revenue in FY21
+  Other revenues                $  2.15  $ 2.15  $ 2.60    +0.00    +0.45
+    +17.0% revenue in FY21
+  Client incentives             $-10.76  $-10.76  $-12.96    +0.00    -2.20
+    +25.6% revenue in FY21
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $ 31.00  $31.00  $37.36    +0.00    +6.36
+  FY2022E = FY21 $24.105B × (1 + 28.6%: the Q4 FY21 revenue growth (no FY22 revenue range), YoY, applied to the year); split pro rata to FY21 net revenues by line, incentives as reported (FY21 growth)
+  Q4 FY21 (Oct 26): total operating revenues $6.559B +28.6% YoY (+7.0% QoQ); receivables +21.6%; operating expenses ex litigation +14.6%;
+  net-to-gross 73.32% (-170.8bp); operating margin 65.79% (+419.2bp); EPS $1.65 vs $0.97
+  Revenue: net revenues $6,559M vs $5,101M a year earlier, $6,130M the quarter before (service $3,125M, data processing $3,436M, international transaction $1,895M, other $490M, less client incentives $2,387M); 'Payments volume for the three months ended June 30, 2021, on which fiscal fourth quarter service revenue is recognized, increased 34% over the prior year on a constant-dollar basis.' 'Total processed transactions, which represent transactions processed by Visa, for the three months ended September 30, 2021, were 45.3 billion, a 21% increase over the prior year.'; accounts receivable $1,968M (2021-09-30) vs $1,618M a year earlier (the release's September 30 column); GAAP diluted class A EPS $1.65 vs $0.97; 'GAAP net income of $12.3B or $5.63 per share and non-GAAP net income of $12.9B or $5.91 per share'; diluted class A shares 2,175M (as converted, series B and C preferred included); no outlook for FY2022 in the release
+  FY22: no outlook in any print; no revenue range in numbers: the latest quarter's revenue growth stands in (the UNP rule)
+
+  FY2022E EPS check:  $31.000B × 66.6% pre-tax × (1−23.4%) ÷ 2.175B  =  $7.28  (FY2022E: no EPS guide in numbers, FY21's $5.63 stands)
+  FY2024E BEAR check: $31.000B × 66.6% ÷ 2.071B  =  $7.64  (scenario $4.55)
+  FY2024E BULL check: $37.360B × 67.0% ÷ 2.071B  =  $9.27  (scenario $9.66)
+  Every 1pp of pre-tax margin ≈ $0.109 EPS ≈ $2.87/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Revenue growth                         -3.0%    ≥10.0%    ≥22.0%    ≥74.0%    +28.6%  ▲ BULL  ███░
+  Net-to-gross revenue change         -640.0bp  ≥-330.0bp  ≥-30.0bp  ≥430.0bp  -170.8bp  ◦ BASE  ██░░
+  Opex growth less revenue             +13.0pp    ≤2.0pp   ≤-9.0pp  ≤-25.0pp   -14.0pp  ▲ BULL  ███░
+  Receivables growth less revenue       +6.0pp   ≤-1.0pp   ≤-9.0pp  ≤-35.0pp    -7.0pp  ◦ BASE  ██░░
+  Operating margin change             -15780.0bp  ≥-7710.0bp  ≥350.0bp  ≥8930.0bp  +419.2bp  ▲ BULL  ███░
+  Crypto: disintermediation of card payments    +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.50 / 4.00
+  Market composite:   2.61 / 4.00  (back-solved from $216.71 + 15% hurdle)
+  SCA adjustment:    +0.10  ·  EPP-distance adj -0.10  →  Adj composite 2.50  →  Gap -0.11  [FAIRLY VALUED]
+
+  Structural factors:
+    +  Franchise: FY21 total operating revenues +10.3%, 74.2% of gross revenues kept after client incentives; Q4 73.32% (-171bp YoY)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 38.5x FY22E vs a 26.3x 10-yr median (88th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: Q4 FY21 revenue growth (no FY22 revenue range) +28.6% vs a 10.3% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  Cash and cash equivalents $16.487B, current maturities of debt $999M; long-term debt $19,978M on the release's balance sheet (Q4 FY21), FY21 free cash flow $14.522B (net cash provided by operating activities $15,227M less purchases of property, equipment and technology $705M), dividend $1.50 a year  (+0.30 × 15%  =  +0.045)
+    +  Crypto: Visa's own crypto-linked credentials (FY2021 10-K)  (+0.20 × 10%  =  +0.020)
+    -  Crypto competition (FY2021 10-K): cryptocurrencies among the changes in global payments  (-0.20 × 10%  =  -0.020)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Revenue growth                        +28.6%     -3.0%  -31.6%  Spending and cross-border travel slow…
+  Net-to-gross revenue change         -170.8bp  -640.0bp  -469.2bp  Client incentives take more of gross …
+  Opex growth less revenue             -14.0pp   +13.0pp  +27.0pp  Marketing and personnel do not slow w…
+  Receivables growth less revenue       -7.0pp    +6.0pp  +13.0pp  Clients pay more slowly: collections lag
+  Operating margin change             +419.2bp  -15780.0bp  -16199.2bp  Operating leverage works in reverse
+  Crypto: disintermediation of card payments    +2.0/4    +1.0/4  -1.0/4  Payments move to crypto rails that by…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$143.22  (model)  /  $94.18 (defined)
+  Bear probability (proxy model):  9.3%
+
+  KEY TRIGGER: revenue went from +26.7% (Q3 FY21) to +28.6% YoY (Q4 FY21), +7.0% on the quarter before;
+  the bear case needs incentives taking more of gross revenues (-170.8bp now)
+  and receivables (-7.0pp against revenue) giving way. A spending slowdown shows up in payments volume and service revenues first;
+  the bear needs it in processed transactions as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $5.63  (FY2022E: no EPS guide in numbers, FY21's $5.63 stands)
+  Min viable P/E at panic:          22x  [median of calendar-year P/E lows: 2012 16.0x, 2013 20.1x, 2014 19.1x, 2015 23.5x, 2016 21.7x, 2017 22.8x, 2018 22.4x, 2019 23.6x, 2020 27.8x, 2021 33.8x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $123.86/share
+  Current $216.71 vs Updated EPP $123.86:  +75%  ⚠ far above floor — large drawdown room
+  Bear $94.18 vs Updated EPP $123.86:  -24%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Revenue growth                                10.0      -18.6   BASE floor (vs +29 now)
+  Net-to-gross revenue change                 -330.0     -159.2   BASE floor (vs -171 now)
+  Opex growth less revenue                       2.0      +16.0   BASE floor (vs -14 now)
+  Receivables growth less revenue               -1.0       +6.0   BASE floor (vs -7 now)
+  Operating margin change                    -7710.0    -8129.2   BASE floor (vs +419 now)
+  Crypto: disintermediation of card payments             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $5.63 × (1+29.0%)² = $9.37
+  At 26x P/E (conservative):  $243.64/share
+  + Cumul. dividends (2yr):  +$3.09/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $243.64  (▲26.93 from $216.71)
+  Conservative total return:  +14% over 2yr  = +7%/yr
+
+  29.0% EPS growth is what is left once the premium multiple (38.5x)
+  mean-reverts to 26x. Breakeven at 26x needs FY2024E EPS of $8.22,
+  i.e. 20.8%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $190.10  –  $252.67  (at 43th pct of range)
+  Annual dividend:      $1.50/share  (yield 0.7%)
+  Realized vol:         24% annualized (1-yr daily log returns)
+  Beta vs broad market: 1.08
+  1-sigma range (1yr):  $164.27  –  $269.15  ($216.71 ± 24%)
+  2-sigma range (1yr):  $111.82  –  $321.60
+  ────────────────────────────────────────────────────────────
+  Bear $94.18 requires:  ~2.3σ price move  (unusual — requires fundamental break)
+  A payments network whose revenue follows consumer spending: the stock is +14% off its December
+  low (52 weeks) while revenue went from +26.7% (Q3 FY21) to +28.6% YoY (Q4 FY21), +7.0% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        4.55   20.7x  $  94.18     9.3%      7.4%    +1.9pp  EPS -10.1%/yr (worst year FY12-FY21, capped at 0%); P/E to its 10th pct
+  BASE        9.66   26.3x  $ 254.06    32.4%     25.7%    +6.6pp  EPS +31.0%/yr (Q4 revenue YoY + margin + buyback); P/E at its 10-yr median
+  BULL        9.66   32.0x  $ 309.12    49.1%     56.3%    -7.2pp  EPS +31.0%/yr (FY12-FY21 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL       9.66   39.3x  $ 379.64     9.3%     10.6%    -1.4pp  EPS +31.0%/yr (best 2-yr run FY12-FY21, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $277.91  /  Market EV: $286.62  /  Current: $216.71
+  Conservative EV (2yr, ④): $243.64 + $3.09 divs = $246.73 total value
+  Downside (→ Bear $94.18): 56.5%   Upside (→ Bull $309.12): 42.6%   Ratio B 1.33x  →  ◐ WATCHLIST
+
+  To earn the 15%/yr hurdle from $216.71 the market needs $286.60 in two years —
+  between the BASE and BULL cases. That is a market composite of 2.61 against a model
+  read of 2.50: price and numbers roughly agree.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       1.33x     +75%    -0.11  FAIRLY VALUED / WATCHLIST
+  Multiples one band richer (p25/p75/p90/max)     0.67x     +75%    +0.53  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     3.46x     +75%    -1.07  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          1.18x     +75%    +0.00  FAIRLY VALUED / WATCHLIST
+  Scenario EPS -1.5pp/yr                          1.51x     +75%    -0.24  MODESTLY OVERVALUED / WATCHLIST
+  Structural read +0.30 (bullish SCA)             1.33x     +75%    +0.19  FAIRLY VALUED / WATCHLIST
+  EPP P/E +3 turns (softer floor)                 1.33x     +54%    -0.11  FAIRLY VALUED / WATCHLIST
+  Hurdle 10%/yr instead of 15%                    1.33x     +75%    +0.19  FAIRLY VALUED / WATCHLIST
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 FY22 print (the quarter ends in December) — revenue against the Q4 FY21 revenue growth (no FY22 revenue range): +28.6% YoY
+  (2) Client incentives — 73.3% of gross revenues kept in Q4 FY21 (-170.8bp YoY): pricing, what must hold if volume does not
+  (3) Payments volume and processed transactions — the drivers of service and data processing revenues, in each release (Q4 FY21: see the revenue line)
+  (4) Receivables — +21.6% against revenue +28.6% in Q4 FY21 (-7.0pp): clients paying more slowly would show here first
+  (5) Capital structure at 38x — dividend $0.375 a quarter, declared October 22, 2021 (a 17% increase; the Q4 FY21 release); 'During the three months ended September 30, 2021, Visa repurchased 13.2 million shares of class A common stock at an average price of $231.33 per share for $3.1 billion.' (no guided number: it adds nothing)
+  ◐ WATCHLIST  |  EPP floor $123.86  |  ADD below ~$215.95  |  TRIM above $309.12
+════════════════════════════════════════════════════════════════════════
+

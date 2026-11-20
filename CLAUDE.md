@@ -23,7 +23,7 @@ touching either directory.
   outcomes or findings enters another's models. UNP (2008-2026 so far), LOW (2008-2026 so far), AAPL (2008-2026 so far),
   NKE (2008-2026 so far), AVGO (from its 2009-08-06 listing to 2026-10-30 so far), PEP (2008 to 2026-10-30 so far), MSFT
   (2008 to 2026-10-30 so far), XOM (2008 to 2026-10-30 so far), SHW (2008 to 2026-11-06 so far), WMT (2008 to 2026-11-06 so far), RCL (2008 to 2026-11-06 so far), MAR (2008 to 2026-11-03 so far), BKR (2008 to 2017-06-30, then 2019-02-01 to 2026-11-06 so far), PFE (2008 to 2026-11-04 so far), CMCSA (2008 to 2026-11-06 so far), CAT (2008 to 2026-11-06 so far), BMY (2008 to 2026-11-06 so far), NVDA (2008 to 2026-11-06 so far), F (2008-01-04 to 2026-11-06 so far; 2022-01-07 onward was built first at the owner's request, and dates before 2022 are an early era with its
-  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far) and V (2009-10-29 to 2017-12-29 so far) sit in `staging/retrospective/` until the owner adds
+  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far) and V (2009-10-29 to 2021-12-31 so far) sit in `staging/retrospective/` until the owner adds
   them to the archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM", "SHW", "WMT", "RCL", "MAR", "BKR", "PFE", "CMCSA", "CAT",
   "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG", "JPM", "V"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py`, `mu_signal_model.py` and `v_signal_model.py` (other branches) files
   and today's profiles in `data/business_profiles.json` (NVDA's, SO's and V's included) are 2026 analyses: never inputs to a retrospective. AVGO did not trade
@@ -167,6 +167,17 @@ touching either directory.
   currency effect (`revenue_nominal`; FY2017 17.0-19.5%, 18.0-20.5%, 22%), the EPS ranges and levels are numbers (FY2014 17.5-18.5% at its
   midpoint, FY2017 "approximately 20%" on the adjusted $2.84); the opex signal leaves out the operating one-offs the releases' adjusted
   expenses exclude (`opex_one_off_m`); Visa Europe is in the prints as published from Q4 FY16; RICH on all 208 dates (retro/README.md,
-  "V 2014-2017").
+  "V 2014-2017"). From 2018: EPS is the company's figure excluding only one-offs to FY2019 (FY18 $4.61 without the Tax Act
+  items, the covered-litigation provision and the Visa Foundation donation; FY19 $5.44 without the $370M provision) and GAAP from FY2020
+  ($4.89, $5.63), as the fiscal 2020 non-GAAP methodology also removes equity investment results and acquired-intangible amortization,
+  which recur; the FY2020 10-K's recast FY18-FY19 figures are unused, so FY18-FY19 keep the FY2019 10-K's (a seam that sets BEAR at
+  FY2020's -10.1%/yr from 2020-10-29; the largest EPS call of the batch); every outlook is words (FY2018-FY2020) or withdrawn and not
+  given (from the Q2 FY20 release: `withdrawn` on a guide, a field only from guides after the year's last withdrawal), so BASE is the
+  latest quarter's revenue growth on every date; the March 2020 Item 7.01 8-Ks give no field and are not encoded (text only); each
+  vintage holds the ten fiscal years to the latest one (FY2009 leaves with the FY2019 10-K); ASC 606 from FY2019 without restatement (a
+  seam); operating one-offs to Q4 FY19 only; CRYPTO (live 2020-10-21, scoped to payments networks) joins the watch list from its live
+  date on the 10-Ks' own words (`crypto_quote`, the JPM encoding), with a factor pair that nets to zero from the FY2021 10-K, which names
+  Visa's own crypto offering (`crypto_own_quote`); RICH on 199 of 209 dates, FAIR on the 10 after the Q4 FY21 print (retro/README.md,
+  "V 2018-2021").
 - **Never use the owner's personal email** in request headers to external
   services (SEC asks for a contact in the User-Agent).
