@@ -22484,8 +22484,14 @@ Controls and checks (before any 2014-2017 outcome):
   date.
 - **Regression:** the 314 models of 2008-2013 rebuild byte for byte. The shared code changes only in `taxonomy_eras.json` (the three terms
   above) and the firewall tool (its SPGI plants), so no other ticker's model changes.
-- **Firewall:** run after this build is committed and pushed, at the 24 cutoffs above (the day after each new fact and the day after
-  the range); its result follows in the next commit, before any outcome.
+- **Firewall** (run after the build was committed and pushed, before any outcome): passes at the 24 cutoffs above (the day after each
+  new fact and the day after the range: 318 to 522 dates each), 0 files changed and no planted text. Besides the 2008-2013 plants, every
+  planted guide carries an amortization-excluding range and the later vintage planted revenue-catalyst words. The rebuild at 2018-01-01
+  covers all 522 dates byte for byte. As positive controls (built offline): a planted print published 2016-06-01 (a Wednesday, before
+  the open) with its own source reaches 2016-06-03 and not 2016-05-27; the same print citing the Q2 2016 release's source stops at the
+  builder's check that every source is public on AS_OF; a planted company name of 2016-06-01 reaches 2016-06-03; a planted listing
+  published 2016-05-31, effective 2016-06-06, reaches 2016-06-10 and not 2016-06-03; and a planted amortization-excluding guide of
+  2016-06-01 reaches the guide line of 2016-06-03 and not of 2016-05-27, while FY15's $4.53 stays the current-FY EPS.
 
 Seen in the build (method behaviour, not tuned):
 - **RICH on 201 dates and FAIR on 7 (2016-01-15 to 2016-02-26); legacy tier AVOID on 202 and WATCHLIST on 6.** Robustness agrees on 192
