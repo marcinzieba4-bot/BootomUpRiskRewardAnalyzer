@@ -56,7 +56,7 @@ Output goes to staging/retrospective/V until the series is added to the archive 
 Usage
   python3 retro/build_v.py --weekly 2009-10-26 2009-12-31
   python3 retro/build_v.py --weekly 2010-01-01 2013-12-31
-  python3 retro/build_v.py --weekly 2014-01-01 2017-12-31
+  python3 retro/build_v.py --weekly 2014-01-06 2017-12-31
   python3 retro/build_v.py 2009-11-06
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/V/<AS_OF>
 """

@@ -21547,6 +21547,13 @@ Controls and checks (before any outcome of these dates):
   shared code is untouched but the firewall tool's V entry (planted operating one-offs for the opex signal, and a planted guide's
   currency effect, nominal range and aside; the generic split plant now reaches V, whose fact sheet has a `splits` list).
 - **Index:** `index.json` gains the 208 V rows; no other row changes.
+- **Firewall** (run after the build was committed, before any outcome of these dates): passes at the 26 cutoffs above (every print,
+  vintage and dividend date of the range, the split's effective date and 2018-01-01), 0 files changed and no planted text (222 to 427
+  dates each). The planted facts add, to the 2010-2013 set, planted operating one-offs for the opex signal, a planted guide's currency
+  effect, nominal range and aside, and (from the fact sheet's new `splits` list) a later split; at cutoffs before 2015-03-19 that split
+  falls on the real split date with a ratio of 10. As a positive control the plants reach the first date after them: rebuilding 2015-02-13
+  (cutoff 2015-01-30) and 2016-11-11 (cutoff 2016-10-25) with the plants stops at the builder's refusal of the planted guide list, and with
+  the planted lists taken out, at its check of the planted print.
 
 Seen in the build (method behaviour, not tuned):
 - **RICH on all 208 dates; legacy tier AVOID 148, WATCHLIST 45, ACCUMULATE 8, BUY 7.** Robustness agrees with the class on 184. By year:
