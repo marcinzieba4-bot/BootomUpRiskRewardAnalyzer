@@ -1,7 +1,8 @@
 # V retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the V weekly dates (Visa Inc., class A common stock, NYSE: V): 219 in all, 10 from 2009-10-29 to
-2009-12-31 and 209 from 2010-01-08 to 2013-12-31 (the later section below), as traded before the 2015 split. The 2009 dates are the only ones of 2008-2009 that method r2 can build (retro/README.md, "V": FY2008, Visa's first year with EPS, is a distorted year with
+Patterns seen in `outcome.json` for the V weekly dates (Visa Inc., class A common stock, NYSE: V): 427 in all, 10 from 2009-10-29 to
+2009-12-31, 209 from 2010-01-08 to 2013-12-31 and 208 from 2014-01-10 to 2017-12-29 (the later sections below), each priced as traded on
+its date (before 2015-03-19 on the basis before the four-for-one split). The 2009 dates are the only ones of 2008-2009 that method r2 can build (retro/README.md, "V": FY2008, Visa's first year with EPS, is a distorted year with
 no figure excluding only one-offs, so no year is in the history until the Q4 FY09 print). They are **labels and hypotheses**: never feed
 them back into the method or the fact sheet. The 2009 outcomes were computed on 2026-11-19, after the point-in-time build was committed
 (6548d21) and the firewall had passed at 4 cutoffs (08b9b3b); the build was not yet pushed when they were computed. Every date has its
@@ -92,4 +93,62 @@ What the labels say, as hypotheses only:
 
 Not tested here: whether any of this holds for other payments networks or other periods. One stock through one bull market mostly tests
 "buy lower" (retro/README.md, "Scoring a single stock"), and the class order is its only cross-sectional evidence.
+
+## 2014-2017 (208 dates)
+
+Scored on 2026-11-20, after the point-in-time build was committed and pushed (7a6f58d) and the firewall had passed at 26 cutoffs
+(364ff91, also pushed). Every date has its 6-month, 1-, 2- and 3-year horizons (the last 3-year horizon ends in December 2020). Dividends
+are $0.40 a quarter to October 2014, then $0.48 ($0.12 on the split basis), $0.14, $0.165 and $0.195, and higher after. Every date is RICH,
+so the table splits by year and legacy tier.
+
+| Group | Dates | Mean 2-yr total return | Median | Mean vs SPY | Beat SPY | Cleared hurdle | Mean m12-24 avg price | Mean max drawdown | Call held |
+|---|---|---|---|---|---|---|---|---|---|
+| all (RICH) | 208 | +56.8% | +58.9% | +33.1pp | 208 | 186 | +39.3% | -15.3% | 0 |
+| 2014 | 51 | +43.2% | +47.5% | +30.6pp | 51 | 37 | +35.7% | -15.7% | 0 |
+| 2015 | 53 | +39.3% | +38.7% | +16.1pp | 53 | 45 | +21.4% | -15.7% | 0 |
+| 2016 | 52 | +72.2% | +72.9% | +36.6pp | 52 | 52 | +48.9% | -10.7% | 0 |
+| 2017 | 52 | +72.8% | +71.2% | +49.6pp | 52 | 52 | +51.5% | -19.3% | 0 |
+| tier BUY | 7 | +58.3% | +57.8% | +42.7pp | 7 | 7 | +46.6% | -15.8% | 0 |
+| tier ACCUMULATE | 8 | +57.6% | +54.4% | +42.1pp | 8 | 8 | +45.9% | -15.3% | 0 |
+| tier WATCHLIST | 45 | +67.4% | +70.3% | +40.6pp | 45 | 44 | +49.2% | -14.7% | 0 |
+| tier AVOID | 148 | +53.5% | +50.4% | +29.9pp | 148 | 127 | +35.6% | -15.5% | 0 |
+| 2014, tier BUY | 7 | +58.3% | +57.8% | +42.7pp | 7 | 7 | +46.6% | -15.8% | 0 |
+| 2014, tier ACCUMULATE | 7 | +53.1% | +54.2% | +39.6pp | 7 | 7 | +42.0% | -15.8% | 0 |
+| 2014, tier WATCHLIST | 10 | +49.0% | +51.0% | +36.0pp | 10 | 9 | +39.9% | -15.8% | 0 |
+| 2014, tier AVOID | 27 | +34.5% | +32.4% | +23.1pp | 27 | 14 | +29.7% | -15.5% | 0 |
+| 2016, tier WATCHLIST | 22 | +71.2% | +71.4% | +35.7pp | 22 | 22 | +51.6% | -11.5% | 0 |
+| 2016, tier AVOID | 29 | +72.4% | +76.2% | +36.4pp | 29 | 29 | +46.1% | -10.1% | 0 |
+| 2017, tier WATCHLIST | 13 | +74.9% | +75.6% | +52.6pp | 13 | 13 | +52.3% | -19.3% | 0 |
+| 2017, tier AVOID | 39 | +72.1% | +68.5% | +48.7pp | 39 | 39 | +51.2% | -19.3% | 0 |
+
+(2015 is AVOID on all 53 dates; 2016 has one ACCUMULATE date, +89.2%.)
+
+What the labels say, as hypotheses only:
+
+- **The RICH call was wrong on every date.** The stock beat SPY over two years from all 208 dates (+4.8 to +62.4 points) and cleared the
+  15%/yr hurdle from 186, so RICH (miss the hurdle and lag the benchmark) held on none. The 22 dates that missed the hurdle are entries
+  near the 2014 and early-2015 highs (2014-01-17 to 2014-03-14 and 2014-11-14 to 2015-02-27), and even they beat SPY. At one year 22 dates
+  lagged SPY (by up to 12.0 points: 2014-01-17 and dates from 2015-07-31 to 2016-04-15), the only horizon where the call ever looked
+  right.
+- **How far above the EPP floor the price stood ordered the outcomes, though every date was RICH.** Grouped by the EPP gap, the mean
+  2-year excess return falls from +41.7 points (gap 50-75%, 37 dates) to +37.7 (75-90%, 74), +28.3 (90-105%, 82) and +16.0 (105-130%, 15);
+  the correlation across the 208 dates is -0.5. 2015, the year furthest above the floor (87-128%) and highest in its own window
+  (95th-100th percentile), returned the least (+39.3%, +16.1 points over SPY).
+- **The tiers ordered 2014 and not the later years.** In 2014 BUY returned +58.3%, ACCUMULATE +53.1%, WATCHLIST +49.0% and AVOID +34.5%:
+  the 14 ACCUMULATE and BUY dates are the ones the Q3 FY14 EPS guide (FY14E $8.96) moved up. In 2016 and 2017 WATCHLIST and AVOID returned
+  much the same (+71.2% and +72.4%; +74.9% and +72.1%). Across all four years WATCHLIST did best, a mix of years rather than an order.
+- **Scenario landing:** the price two years on sat in the XBULL band on 183 dates and the BULL band on 25 (all 2014-2015 entries): with
+  BULL at the FY09-to-latest CAGR (+20.7-25.3%/yr) and XBULL at +26.9%/yr, the scenarios again fell short of the price reached.
+- **Drawdowns were mild:** a mean maximum of -15.3% inside the two years (-9.9% to -19.3%); the 2017 entries all share the -19.3% of
+  late 2018.
+- **Three-year horizon:** a mean +97.4% (+58.2 points over SPY), +42.6% to +153.3%; by tier BUY +103.5%, ACCUMULATE +102.0%, WATCHLIST
+  +107.4%, AVOID +93.9%.
+- **The calls the sensitivities name point the same way as the outcomes, and stay as they are.** With the signals at their XBULL values,
+  149 dates read CHEAP or FAIR (retro/README.md, "V 2014-2017"); with FY2008 in the history, 1 class and 41 tiers move toward buying. By
+  2014 the excluded year no longer decides the class: the window that starts in the 2008-2009 crisis does (EPP floor 15-17x, against a
+  stock at 23-34x). A hypothesis for the live model, as in 2010-2013: a window anchored in a crisis reads a steady compounder as
+  expensive, and only the distance to the floor, not the class, carried information here. Never fold this back into the archive.
+
+Not tested here: whether any of this holds for other payments networks or other periods. With every date RICH there is no
+cross-sectional test of the class at all; the EPP-gap and 2014 tier orders are within one stock and one bull market.
 
