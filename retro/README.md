@@ -22291,7 +22291,14 @@ Controls and checks (before any 2010-2013 outcome):
   it states) and the share notes of five 2000-2004 sources naming the 2005 split, which every built date follows.
 - **Regression:** the 2008-2009 models rebuild byte for byte except the three text fixes above. The shared code changes only in
   `taxonomy_eras.json` (the two terms above) and the firewall tool (its SPGI plants), so no other ticker's model changes.
-- **Firewall:** run after this build is committed, before any outcome (the result is recorded in the next commit).
+- **Firewall** (run after the build was committed and pushed, before any outcome): passes at the 25 cutoffs above (108 to 314 dates
+  each), 0 files changed and no planted text. Besides the 2008-2009 plants, the planted print restates every year of the latest
+  vintage, names a planted third segment and builds its Financial Services line from planted parts; every planted guide carries revenue
+  words; the later vintage a planted risk line; and a later listing a planted symbol. The rebuild at 2014-01-01 covers all 314 dates
+  byte for byte. As positive controls (built offline): a planted print published 2012-06-01 (a Friday, before the open) with its own
+  source reaches 2012-06-01 and not 2012-05-25; the same print citing the Q2 2012 release's source stops at the builder's check that
+  every source is public on AS_OF; a planted company name of 2012-06-01 reaches 2012-06-01; and a planted listing published 2012-05-30,
+  effective 2012-06-04, reaches 2012-06-08 and not 2012-06-01.
 
 Seen in the build (method behaviour, not tuned):
 - **CHEAP on 163 dates, FAIR on 17, RICH on 29; legacy tier BUY on 150, ACCUMULATE on 31, WATCHLIST on 17, AVOID on 11.** Robustness
