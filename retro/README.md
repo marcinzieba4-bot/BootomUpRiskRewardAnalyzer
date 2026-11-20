@@ -22110,6 +22110,15 @@ Controls and checks (before any outcome):
   publication.
 - **Regression:** the shared code is untouched (the firewall tool gains an SPGI entry, `taxonomy_eras.json` the terms above); rebuilding the
   2008-2009 dates of CAT, GOOG and JPM, V's 2009 dates and ACN's fourth quarter of 2008 changes nothing.
+- **Firewall** (run after the build was committed, before any outcome): passes at the 14 cutoffs above (from the first built date to
+  2010-01-01: 1 to 105 dates each), 0 files changed and no planted text. The planted facts include a print with absurd segment revenues,
+  margins, EPS, notes and raw figures, absurd full-year actuals for the year after the latest vintage, a later guide for every guided year
+  with every field (an EPS range, an EPS growth range on a planted base, a consolidated revenue range, segment words, words, a note) and a
+  still later one in the growth form only, a later vintage with planted texts, figures, groups, cash, dividend and share counts, a
+  dividend, a company name, a split on the price data's next split date (2026-07-01) and prices from the cutoff multiplied by 10. As
+  positive controls, a planted print dated 2008-07-01 with its own source reaches 2008-07-03 (its text and figures in the model) and not
+  2008-06-27; the same print citing the Q2 2008 release's source id stops at the builder's check that every source is public on AS_OF;
+  and a planted company name stops it at its refusal of an unencoded name change. A full rebuild is byte-identical.
 
 Seen in the build (method behaviour, not tuned):
 - **CHEAP on all 105 dates; legacy tier BUY on all 105.** Robustness agrees on 100 dates (8 of 8) and on 5 (7 of 8: 2009-08-28 and
