@@ -640,3 +640,257 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2021-12-17 | $211.88 | Visa Inc. fiscal Q4 2021 results | 2.50 | -0.04 | 1.23x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +23.4% | +18.5pp | +9.8% | ✗ |
 | 2021-12-23 | $216.62 | Visa Inc. fiscal Q4 2021 results | 2.50 | -0.12 | 1.34x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +20.9% | +17.5pp | +7.9% | ✗ |
 | 2021-12-31 | $216.71 | Visa Inc. fiscal Q4 2021 results | 2.50 | -0.11 | 1.33x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +21.7% | +18.9pp | +8.3% | ✗ |
+| 2022-01-07 | $216.96 | Visa Inc. fiscal Q4 2021 results | 2.50 | -0.11 | 1.32x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +21.3% | +18.1pp | +8.5% | ✗ |
+| 2022-01-14 | $214.67 | Visa Inc. fiscal Q4 2021 results | 2.50 | -0.06 | 1.25x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +24.7% | +19.3pp | +10.0% | ✗ |
+| 2022-01-21 | $205.93 | Visa Inc. fiscal Q4 2021 results | 2.50 | +0.08 | 1.06x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +33.2% | +20.1pp | +15.1% | ✗ |
+| 2022-01-28 | $228.00 | Visa Inc. fiscal Q1 2022 results | 2.05 | -1.13 | 2.12x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +19.0% | +5.8pp | +4.3% | ✗ |
+| 2022-02-04 | $228.39 | Visa Inc. fiscal Q1 2022 results | 2.05 | -1.12 | 2.11x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +22.9% | +9.8pp | +4.6% | ✗ |
+| 2022-02-11 | $224.69 | Visa Inc. fiscal Q1 2022 results | 2.05 | -1.05 | 1.93x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +24.6% | +7.9pp | +6.7% | ✗ |
+| 2022-02-18 | $222.69 | Visa Inc. fiscal Q1 2022 results | 2.05 | -0.99 | 1.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +26.7% | +8.7pp | +8.1% | ✗ |
+| 2022-02-25 | $219.27 | Visa Inc. fiscal Q1 2022 results | 2.05 | -0.89 | 1.64x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +31.0% | +12.0pp | +10.2% | ✗ |
+| 2022-03-04 | $200.29 | Visa Inc. fiscal Q1 2022 results | 2.05 | -0.44 | 1.10x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +41.9% | +20.3pp | +21.4% | ✗ |
+| 2022-03-11 | $196.71 | Visa Inc. fiscal Q1 2022 results | 2.05 | -0.38 | 1.02x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +44.5% | +19.7pp | +24.2% | ✗ |
+| 2022-03-18 | $219.11 | Visa Inc. fiscal Q1 2022 results | 2.05 | -0.87 | 1.59x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +31.7% | +13.4pp | +12.1% | ✗ |
+| 2022-03-25 | $218.43 | Visa Inc. fiscal Q1 2022 results | 2.05 | -0.83 | 1.55x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +30.4% | +12.7pp | +13.0% | ✗ |
+| 2022-04-01 | $226.36 | Visa Inc. fiscal Q1 2022 results | 2.05 | -1.03 | 1.81x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +24.5% | +6.3pp | +9.5% | ✗ |
+| 2022-04-08 | $216.98 | Visa Inc. fiscal Q1 2022 results | 2.05 | -0.75 | 1.47x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +29.7% | +10.8pp | +14.7% | ✗ |
+| 2022-04-14 | $212.79 | Visa Inc. fiscal Q1 2022 results | 2.05 | -0.63 | 1.33x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +31.4% | +11.7pp | +17.3% | ✗ |
+| 2022-04-22 | $208.17 | Visa Inc. fiscal Q1 2022 results | 2.05 | -0.53 | 1.19x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +32.5% | +12.2pp | +20.3% | ✗ |
+| 2022-04-28 | $220.66 | Visa Inc. fiscal Q2 2022 results | 2.70 | -0.01 | 1.35x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +26.0% | +4.1pp | +13.9% | ✓ |
+| 2022-05-06 | $202.82 | Visa Inc. fiscal Q2 2022 results | 2.70 | +0.30 | 0.95x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | +36.2% | +7.4pp | +24.3% | ✓ |
+| 2022-05-13 | $199.23 | Visa Inc. fiscal Q2 2022 results | 2.70 | +0.37 | 0.87x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | +41.8% | +8.9pp | +27.0% | ✓ |
+| 2022-05-20 | $199.03 | Visa Inc. fiscal Q2 2022 results | 2.70 | +0.39 | 0.85x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +41.8% | +2.4pp | +27.6% | ✓ |
+| 2022-05-27 | $212.88 | Visa Inc. fiscal Q2 2022 results | 2.70 | +0.18 | 1.08x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +30.7% | +0.0pp | +19.7% | ✓ |
+| 2022-06-03 | $212.65 | Visa Inc. fiscal Q2 2022 results | 2.70 | +0.18 | 1.06x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +28.9% | -2.9pp | +20.3% | ✓ |
+| 2022-06-10 | $199.51 | Visa Inc. fiscal Q2 2022 results | 2.70 | +0.40 | 0.82x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +39.7% | -1.1pp | +28.7% | ✓ |
+| 2022-06-17 | $190.01 | Visa Inc. fiscal Q2 2022 results | 2.70 | +0.56 | 0.69x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +44.7% | -8.0pp | +35.6% | ✓ |
+| 2022-06-24 | $205.51 | Visa Inc. fiscal Q2 2022 results | 2.70 | +0.31 | 0.90x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | +36.3% | -6.3pp | +25.7% | ✓ |
+| 2022-07-01 | $199.18 | Visa Inc. fiscal Q2 2022 results | 2.70 | +0.42 | 0.80x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +34.0% | -12.5pp | +30.1% | ✓ |
+| 2022-07-08 | $203.57 | Visa Inc. fiscal Q2 2022 results | 2.70 | +0.35 | 0.86x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | +32.7% | -13.6pp | +27.5% | ✓ |
+| 2022-07-15 | $210.04 | Visa Inc. fiscal Q2 2022 results | 2.70 | +0.25 | 0.96x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +29.6% | -19.7pp | +23.8% | ✗ |
+| 2022-07-22 | $213.70 | Visa Inc. fiscal Q2 2022 results | 2.70 | +0.21 | 1.01x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +27.0% | -16.7pp | +22.0% | ✗ |
+| 2022-07-28 | $211.35 | Visa Inc. fiscal Q3 2022 results | 2.15 | -0.64 | 1.36x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +24.5% | -12.8pp | +23.5% | ✓ |
+| 2022-08-05 | $215.87 | Visa Inc. fiscal Q3 2022 results | 2.15 | -0.78 | 1.50x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +20.5% | -7.8pp | +21.2% | ✓ |
+| 2022-08-12 | $211.33 | Visa Inc. fiscal Q3 2022 results | 2.15 | -0.61 | 1.33x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +24.8% | -3.2pp | +23.9% | ✓ |
+| 2022-08-19 | $212.82 | Visa Inc. fiscal Q3 2022 results | 2.15 | -0.65 | 1.35x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +27.0% | -8.7pp | +23.3% | ✓ |
+| 2022-08-26 | $202.89 | Visa Inc. fiscal Q3 2022 results | 2.15 | -0.42 | 1.09x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +34.1% | -7.6pp | +29.6% | ✓ |
+| 2022-09-02 | $197.76 | Visa Inc. fiscal Q3 2022 results | 2.15 | -0.33 | 0.97x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +41.7% | -5.4pp | +33.2% | ✓ |
+| 2022-09-09 | $205.20 | Visa Inc. fiscal Q3 2022 results | 2.15 | -0.46 | 1.14x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +41.1% | +3.4pp | +28.7% | ✓ |
+| 2022-09-16 | $193.30 | Visa Inc. fiscal Q3 2022 results | 2.15 | -0.26 | 0.89x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +52.3% | +3.2pp | +37.0% | ✓ |
+| 2022-09-23 | $183.96 | Visa Inc. fiscal Q3 2022 results | 2.15 | -0.10 | 0.73x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +59.0% | +0.5pp | +44.5% | ✓ |
+| 2022-09-30 | $177.65 | Visa Inc. fiscal Q3 2022 results | 2.15 | +0.00 | 0.63x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +57.0% | -7.5pp | +50.1% | ✓ |
+| 2022-10-07 | $183.83 | Visa Inc. fiscal Q3 2022 results | 2.15 | -0.10 | 0.72x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +51.0% | -9.2pp | +45.6% | ✓ |
+| 2022-10-14 | $182.62 | Visa Inc. fiscal Q3 2022 results | 2.15 | -0.08 | 0.70x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +55.8% | -11.3pp | +47.0% | ✓ |
+| 2022-10-21 | $190.37 | Visa Inc. fiscal Q3 2022 results | 2.15 | -0.20 | 0.82x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +52.7% | -6.8pp | +41.5% | ✓ |
+| 2022-10-27 | $204.29 | Visa Inc. fiscal Q4 2022 results | 2.35 | +0.45 | 0.63x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +39.8% | -16.1pp | +32.3% | ✓ |
+| 2022-11-04 | $196.98 | Visa Inc. fiscal Q4 2022 results | 2.35 | +0.61 | 0.53x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +50.1% | -4.9pp | +37.8% | ✓ |
+| 2022-11-11 | $205.00 | Visa Inc. fiscal Q4 2022 results | 2.35 | +0.44 | 0.63x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +53.3% | -0.3pp | +33.0% | ✓ |
+| 2022-11-18 | $210.80 | Visa Inc. fiscal Q4 2022 results | 2.35 | +0.29 | 0.72x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +50.0% | -1.9pp | +29.9% | ✓ |
+| 2022-11-25 | $213.79 | Visa Inc. fiscal Q4 2022 results | 2.35 | +0.23 | 0.77x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +48.4% | -3.5pp | +28.6% | ✓ |
+| 2022-12-02 | $217.66 | Visa Inc. fiscal Q4 2022 results | 2.35 | +0.06 | 0.83x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | +47.3% | -4.3pp | +26.8% | ✓ |
+| 2022-12-09 | $208.70 | Visa Inc. fiscal Q4 2022 results | 2.35 | +0.35 | 0.68x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +49.7% | -7.5pp | +32.8% | ✓ |
+| 2022-12-16 | $206.89 | Visa Inc. fiscal Q4 2022 results | 2.35 | +0.40 | 0.66x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +54.6% | -6.8pp | +34.5% | ✓ |
+| 2022-12-23 | $205.83 | Visa Inc. fiscal Q4 2022 results | 2.35 | +0.43 | 0.64x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +56.1% | -2.8pp | +35.7% | ✓ |
+| 2022-12-30 | $207.76 | Visa Inc. fiscal Q4 2022 results | 2.35 | +0.38 | 0.66x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +53.7% | -3.7pp | +34.9% | ✓ |
+| 2023-01-06 | $217.75 | Visa Inc. fiscal Q4 2022 results | 2.35 | +0.18 | 0.82x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +45.6% | -11.3pp | +29.1% | ✓ |
+| 2023-01-13 | $223.06 | Visa Inc. fiscal Q4 2022 results | 2.35 | +0.07 | 0.92x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +39.4% | -9.9pp | +26.4% | ✓ |
+| 2023-01-20 | $224.31 | Visa Inc. fiscal Q4 2022 results | 2.35 | +0.06 | 0.93x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +44.3% | -10.1pp | +26.0% | ✓ |
+| 2023-01-27 | $231.44 | Visa Inc. fiscal Q1 2023 results | 2.00 | -0.93 | 1.54x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +46.3% | -4.8pp | +22.6% | ✗ |
+| 2023-02-03 | $230.13 | Visa Inc. fiscal Q1 2023 results | 2.00 | -0.89 | 1.46x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +52.0% | +3.7pp | +23.9% | ✗ |
+| 2023-02-10 | $227.20 | Visa Inc. fiscal Q1 2023 results | 2.00 | -0.82 | 1.34x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +56.2% | +4.6pp | +26.1% | ✗ |
+| 2023-02-17 | $223.56 | Visa Inc. fiscal Q1 2023 results | 2.00 | -0.63 | 1.23x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +60.1% | +7.1pp | +28.7% | ✗ |
+| 2023-02-24 | $219.55 | Visa Inc. fiscal Q1 2023 results | 2.00 | -0.54 | 1.11x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +61.2% | +7.1pp | +31.7% | ✗ |
+| 2023-03-03 | $223.77 | Visa Inc. fiscal Q1 2023 results | 2.00 | -0.64 | 1.23x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +63.6% | +15.7pp | +29.9% | ✗ |
+| 2023-03-10 | $216.14 | Visa Inc. fiscal Q1 2023 results | 2.00 | -0.47 | 1.02x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +59.9% | +11.1pp | +35.1% | ✓ |
+| 2023-03-17 | $217.39 | Visa Inc. fiscal Q1 2023 results | 2.00 | -0.50 | 1.05x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +55.8% | +7.3pp | +34.8% | ✗ |
+| 2023-03-24 | $221.04 | Visa Inc. fiscal Q1 2023 results | 2.00 | -0.57 | 1.15x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +57.5% | +8.9pp | +33.0% | ✗ |
+| 2023-03-31 | $225.46 | Visa Inc. fiscal Q1 2023 results | 2.00 | -0.77 | 1.27x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +53.9% | +14.8pp | +30.9% | ✗ |
+| 2023-04-06 | $225.99 | Visa Inc. fiscal Q1 2023 results | 2.00 | -0.77 | 1.27x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +40.4% | +13.5pp | +31.1% | ✗ |
+| 2023-04-14 | $234.02 | Visa Inc. fiscal Q1 2023 results | 2.00 | -0.95 | 1.55x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +45.0% | +10.9pp | +27.1% | ✗ |
+| 2023-04-21 | $234.05 | Visa Inc. fiscal Q1 2023 results | 2.00 | -0.95 | 1.55x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +38.5% | +10.5pp | +27.5% | ✗ |
+| 2023-04-27 | $229.01 | Visa Inc. fiscal Q2 2023 results | 2.15 | -0.73 | 1.35x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +48.2% | +11.3pp | +30.8% | ✗ |
+| 2023-05-05 | $231.78 | Visa Inc. fiscal Q2 2023 results | 2.15 | -0.78 | 1.43x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +52.2% | +12.3pp | +29.9% | ✗ |
+| 2023-05-12 | $231.38 | Visa Inc. fiscal Q2 2023 results | 2.15 | -0.77 | 1.41x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +55.4% | +10.4pp | +30.8% | ✗ |
+| 2023-05-19 | $233.31 | Visa Inc. fiscal Q2 2023 results | 2.15 | -0.80 | 1.48x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +59.5% | +14.1pp | +30.4% | ✗ |
+| 2023-05-26 | $225.01 | Visa Inc. fiscal Q2 2023 results | 2.15 | -0.51 | 1.21x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +59.0% | +17.8pp | +35.9% | ✗ |
+| 2023-06-02 | $228.79 | Visa Inc. fiscal Q2 2023 results | 2.15 | -0.70 | 1.33x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +61.6% | +19.8pp | +34.4% | ✗ |
+| 2023-06-09 | $223.56 | Visa Inc. fiscal Q2 2023 results | 2.15 | -0.46 | 1.15x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +65.9% | +23.2pp | +38.3% | ✗ |
+| 2023-06-16 | $228.91 | Visa Inc. fiscal Q2 2023 results | 2.15 | -0.69 | 1.31x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +57.2% | +17.2pp | +35.9% | ✗ |
+| 2023-06-23 | $229.55 | Visa Inc. fiscal Q2 2023 results | 2.15 | -0.71 | 1.32x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +51.6% | +9.9pp | +36.0% | ✗ |
+| 2023-06-30 | $237.48 | Visa Inc. fiscal Q2 2023 results | 2.15 | -0.86 | 1.61x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +51.3% | +8.8pp | +32.2% | ✗ |
+| 2023-07-07 | $236.45 | Visa Inc. fiscal Q2 2023 results | 2.15 | -0.83 | 1.55x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +52.6% | +7.9pp | +33.3% | ✗ |
+| 2023-07-14 | $243.16 | Visa Inc. fiscal Q2 2023 results | 2.15 | -0.93 | 1.83x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +45.9% | +3.7pp | +30.4% | ✗ |
+| 2023-07-21 | $239.25 | Visa Inc. fiscal Q2 2023 results | 2.15 | -0.88 | 1.66x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +48.5% | +6.3pp | +33.2% | ✗ |
+| 2023-07-27 | $234.44 | Visa Inc. fiscal Q3 2023 results | 2.00 | -0.93 | 1.45x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +54.1% | +10.2pp | +36.7% | ✗ |
+| 2023-08-04 | $238.99 | Visa Inc. fiscal Q3 2023 results | 2.00 | -1.00 | 1.62x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +45.0% | +0.6pp | +34.8% | ✗ |
+| 2023-08-11 | $240.04 | Visa Inc. fiscal Q3 2023 results | 2.00 | -1.01 | 1.64x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +41.5% | -4.3pp | +34.9% | ✗ |
+| 2023-08-18 | $238.17 | Visa Inc. fiscal Q3 2023 results | 2.00 | -0.98 | 1.57x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +45.8% | -4.8pp | +36.6% | ✗ |
+| 2023-08-25 | $242.57 | Visa Inc. fiscal Q3 2023 results | 2.00 | -1.05 | 1.75x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +45.6% | -3.6pp | +34.8% | ✗ |
+| 2023-09-01 | $248.11 | Visa Inc. fiscal Q3 2023 results | 2.00 | -1.11 | 1.99x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +43.6% | -2.5pp | +32.3% | ✗ |
+| 2023-09-08 | $247.29 | Visa Inc. fiscal Q3 2023 results | 2.00 | -1.10 | 1.95x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +40.2% | -8.6pp | +33.3% | ✗ |
+| 2023-09-15 | $241.07 | Visa Inc. fiscal Q3 2023 results | 2.00 | -1.02 | 1.66x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +42.5% | -9.4pp | +37.2% | ✗ |
+| 2023-09-22 | $235.08 | Visa Inc. fiscal Q3 2023 results | 2.00 | -0.90 | 1.42x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +48.4% | -9.9pp | +41.1% | ✗ |
+| 2023-09-29 | $230.01 | Visa Inc. fiscal Q3 2023 results | 2.00 | -0.78 | 1.26x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +49.8% | -8.8pp | +44.8% | ✗ |
+| 2023-10-06 | $235.04 | Visa Inc. fiscal Q3 2023 results | 2.00 | -0.90 | 1.42x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +50.5% | -9.2pp | +42.3% | ✗ |
+| 2023-10-13 | $237.67 | Visa Inc. fiscal Q3 2023 results | 2.00 | -0.95 | 1.49x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +46.3% | -10.7pp | +41.3% | ✗ |
+| 2023-10-20 | $233.38 | Visa Inc. fiscal Q3 2023 results | 2.00 | -0.85 | 1.34x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +49.5% | -13.3pp | +44.4% | ✗ |
+| 2023-10-26 | $231.28 | Visa Inc. fiscal Q4 2023 results | 1.85 | -0.29 | 0.62x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +52.1% | -15.5pp | +46.2% | ✓ |
+| 2023-11-03 | $243.60 | Visa Inc. fiscal Q4 2023 results | 1.85 | -0.51 | 0.81x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +40.1% | -20.4pp | +39.3% | ✗ |
+| 2023-11-10 | $245.25 | Visa Inc. fiscal Q4 2023 results | 1.85 | -0.54 | 0.83x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +38.1% | -19.8pp | +38.6% | ✗ |
+| 2023-11-17 | $249.56 | Visa Inc. fiscal Q4 2023 results | 1.85 | -0.63 | 0.93x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +32.4% | -18.5pp | +36.4% | ✗ |
+| 2023-11-24 | $254.30 | Visa Inc. fiscal Q4 2023 results | 1.85 | -0.71 | 1.02x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +31.3% | -18.7pp | +34.0% | ✓ |
+| 2023-12-01 | $256.45 | Visa Inc. fiscal Q4 2023 results | 1.85 | -0.86 | 1.07x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +30.6% | -20.7pp | +33.0% | ✓ |
+| 2023-12-08 | $255.74 | Visa Inc. fiscal Q4 2023 results | 1.85 | -0.84 | 1.06x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +29.6% | -22.1pp | +33.5% | ✓ |
+| 2023-12-15 | $258.03 | Visa Inc. fiscal Q4 2023 results | 1.85 | -0.88 | 1.10x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +36.2% | -11.5pp | +32.5% | ✗ |
+| 2023-12-22 | $258.43 | Visa Inc. fiscal Q4 2023 results | 1.85 | -0.79 | 1.11x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +38.0% | -9.6pp | +32.6% | ✗ |
+| 2023-12-29 | $260.35 | Visa Inc. fiscal Q4 2023 results | 1.85 | -0.83 | 1.16x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +38.0% | -9.8pp | +31.8% | ✗ |
+| 2024-01-05 | $259.69 | Visa Inc. fiscal Q4 2023 results | 1.85 | -0.81 | 1.14x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +38.0% | -12.0pp | +32.4% | ✗ |
+| 2024-01-12 | $264.17 | Visa Inc. fiscal Q4 2023 results | 1.85 | -0.89 | 1.24x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +31.7% | -17.2pp | +30.4% | ✓ |
+| 2024-01-19 | $270.90 | Visa Inc. fiscal Q4 2023 results | 1.85 | -1.10 | 1.41x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +22.9% | -23.5pp | +27.3% | ✓ |
+| 2024-01-26 | $267.94 | Visa Inc. fiscal Q1 2024 results | 1.80 | -1.15 | 1.31x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +24.3% | -20.8pp | +28.7% | ✓ |
+| 2024-02-02 | $277.18 | Visa Inc. fiscal Q1 2024 results | 1.80 | -1.29 | 1.60x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +22.1% | -21.5pp | +24.3% | ✓ |
+| 2024-02-09 | $276.43 | Visa Inc. fiscal Q1 2024 results | 1.80 | -1.27 | 1.55x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +19.3% | -22.1pp | +24.5% | ✓ |
+| 2024-02-16 | $278.56 | Visa Inc. fiscal Q1 2024 results | 1.80 | -1.29 | 1.60x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +14.5% | -24.9pp | +23.4% | ✓ |
+| 2024-02-23 | $283.60 | Visa Inc. fiscal Q1 2024 results | 1.80 | -1.35 | 1.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +9.8% | -27.4pp | +20.9% | ✓ |
+| 2024-03-01 | $283.16 | Visa Inc. fiscal Q1 2024 results | 1.80 | -1.34 | 1.77x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +14.7% | -21.8pp | +20.9% | ✓ |
+| 2024-03-08 | $280.04 | Visa Inc. fiscal Q1 2024 results | 1.80 | -1.30 | 1.63x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +15.0% | -19.2pp | +22.0% | ✓ |
+| 2024-03-15 | $283.04 | Visa Inc. fiscal Q1 2024 results | 1.80 | -1.33 | 1.71x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +10.2% | -22.2pp | +20.6% | ✓ |
+| 2024-03-22 | $283.26 | Visa Inc. fiscal Q1 2024 results | 1.80 | -1.33 | 1.72x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +8.2% | -19.1pp | +20.2% | ✓ |
+| 2024-03-28 | $279.08 | Visa Inc. fiscal Q1 2024 results | 1.80 | -1.28 | 1.57x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +7.6% | -16.4pp | +21.7% | ✓ |
+| 2024-04-05 | $277.14 | Visa Inc. fiscal Q1 2024 results | 1.80 | -1.25 | 1.48x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +10.2% | -19.1pp | +22.4% | ✓ |
+| 2024-04-12 | $275.96 | Visa Inc. fiscal Q1 2024 results | 1.80 | -1.23 | 1.43x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +12.0% | -23.8pp | +22.8% | ✓ |
+| 2024-04-19 | $269.78 | Visa Inc. fiscal Q1 2024 results | 1.80 | -1.11 | 1.26x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +19.3% | -27.1pp | +25.4% | ✓ |
+| 2024-04-25 | $275.16 | Visa Inc. fiscal Q2 2024 results | 1.65 | -1.32 | 1.40x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +14.2% | -30.5pp | +22.8% | ✓ |
+| 2024-05-03 | $268.49 | Visa Inc. fiscal Q2 2024 results | 1.65 | -1.20 | 1.22x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +23.9% | -19.9pp | +25.7% | ✓ |
+| 2024-05-10 | $280.74 | Visa Inc. fiscal Q2 2024 results | 1.65 | -1.40 | 1.55x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +15.2% | -29.2pp | +20.0% | ✓ |
+| 2024-05-17 | $280.10 | Visa Inc. fiscal Q2 2024 results | 1.65 | -1.39 | 1.51x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +18.0% | -24.3pp | +20.0% | ✓ |
+| 2024-05-24 | $274.49 | Visa Inc. fiscal Q2 2024 results | 1.65 | -1.30 | 1.34x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +21.6% | -22.0pp | +22.3% | ✓ |
+| 2024-05-31 | $272.46 | Visa Inc. fiscal Q2 2024 results | 1.65 | -1.24 | 1.26x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +21.6% | -24.6pp | +23.0% | ✓ |
+| 2024-06-07 | $278.67 | Visa Inc. fiscal Q2 2024 results | 1.65 | -1.35 | 1.43x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +17.9% | -23.0pp | +19.9% | ✓ |
+| 2024-06-14 | $270.66 | Visa Inc. fiscal Q2 2024 results | 1.65 | -1.20 | 1.20x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +20.9% | -18.4pp | +23.1% | ✓ |
+| 2024-06-21 | $275.22 | Visa Inc. fiscal Q2 2024 results | 1.65 | -1.29 | 1.31x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +20.7% | -19.2pp | +21.0% | ✓ |
+| 2024-06-28 | $262.47 | Visa Inc. fiscal Q2 2024 results | 1.65 | -0.95 | 1.01x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +30.0% | -6.7pp | +26.7% | ✓ |
+| 2024-07-05 | $270.36 | Visa Inc. fiscal Q2 2024 results | 1.65 | -1.19 | 1.17x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +35.8% | -1.2pp | +23.0% | ✗ |
+| 2024-07-12 | $265.74 | Visa Inc. fiscal Q2 2024 results | 1.65 | -1.00 | 1.07x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +33.2% | -4.3pp | +25.1% | ✗ |
+| 2024-07-19 | $265.46 | Visa Inc. fiscal Q2 2024 results | 1.65 | -0.99 | 1.06x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +36.9% | -1.2pp | +25.3% | ✗ |
+| 2024-07-25 | $253.74 | Visa Inc. fiscal Q3 2024 results | 1.65 | -0.82 | 0.84x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +42.1% | +2.2pp | +31.1% | ✗ |
+| 2024-08-02 | $266.58 | Visa Inc. fiscal Q3 2024 results | 1.65 | -1.02 | 1.09x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +39.2% | -3.8pp | +24.9% | ✗ |
+| 2024-08-09 | $259.76 | Visa Inc. fiscal Q3 2024 results | 1.65 | -0.91 | 0.94x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +41.2% | -6.6pp | +28.4% | ✗ |
+| 2024-08-16 | $267.38 | Visa Inc. fiscal Q3 2024 results | 1.65 | -1.13 | 1.10x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +38.1% | -4.6pp | +24.9% | ✗ |
+| 2024-08-23 | $267.44 | Visa Inc. fiscal Q3 2024 results | 1.65 | -1.13 | 1.10x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +40.6% | +1.8pp | +25.0% | ✗ |
+| 2024-08-30 | $276.37 | Visa Inc. fiscal Q3 2024 results | 1.65 | -1.31 | 1.31x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +39.9% | +0.8pp | +21.2% | ✗ |
+| 2024-09-06 | $279.37 | Visa Inc. fiscal Q3 2024 results | 1.65 | -1.36 | 1.40x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +36.1% | -9.2pp | +20.1% | ✗ |
+| 2024-09-13 | $287.35 | Visa Inc. fiscal Q3 2024 results | 1.65 | -1.47 | 1.62x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +30.7% | -7.9pp | +17.0% | ✓ |
+| 2024-09-20 | $284.77 | Visa Inc. fiscal Q3 2024 results | 1.65 | -1.44 | 1.53x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +31.1% | -5.6pp | +18.2% | ✓ |
+| 2024-09-27 | $275.17 | Visa Inc. fiscal Q3 2024 results | 1.65 | -1.27 | 1.26x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +35.3% | -2.2pp | +22.6% | ✗ |
+| 2024-10-04 | $277.93 | Visa Inc. fiscal Q3 2024 results | 1.65 | -1.33 | 1.32x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +31.6% | -5.3pp | +21.5% | ✓ |
+| 2024-10-11 | $277.84 | Visa Inc. fiscal Q3 2024 results | 1.65 | -1.32 | 1.30x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +40.5% | +3.7pp | +21.7% | ✗ |
+| 2024-10-18 | $290.62 | Visa Inc. fiscal Q3 2024 results | 1.65 | -1.50 | 1.70x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +40.3% | +7.2pp | +16.7% | ✗ |
+| 2024-10-25 | $281.73 | Visa Inc. fiscal Q3 2024 results | 1.65 | -1.38 | 1.39x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +46.6% | +12.8pp | +20.8% | ✗ |
+| 2024-10-31 | $289.85 | Visa Inc. fiscal Q4 2024 results | 2.05 | -0.30 | 0.80x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +44.4% | +8.9pp | +17.9% | ✓ |
+| 2024-11-08 | $307.87 | Visa Inc. fiscal Q4 2024 results | 2.05 | -0.58 | 1.11x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +38.9% | +13.5pp | +11.5% | ✗ |
+| 2024-11-15 | $309.64 | Visa Inc. fiscal Q4 2024 results | 2.05 | -0.61 | 1.13x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +39.2% | +7.9pp | +11.5% | ✗ |
+| 2024-11-22 | $309.92 | Visa Inc. fiscal Q4 2024 results | 2.05 | -0.61 | 1.13x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | +11.9% | - |
+| 2024-11-29 | $315.08 | Visa Inc. fiscal Q4 2024 results | 2.05 | -0.79 | 1.21x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | +10.1% | - |
+| 2024-12-06 | $311.01 | Visa Inc. fiscal Q4 2024 results | 2.05 | -0.61 | 1.13x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | +11.7% | - |
+| 2024-12-13 | $314.74 | Visa Inc. fiscal Q4 2024 results | 2.05 | -0.77 | 1.21x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | +10.4% | - |
+| 2024-12-20 | $317.71 | Visa Inc. fiscal Q4 2024 results | 2.05 | -0.82 | 1.26x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +9.4% | - |
+| 2024-12-27 | $318.66 | Visa Inc. fiscal Q4 2024 results | 2.05 | -0.84 | 1.28x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +9.0% | - |
+| 2025-01-03 | $314.91 | Visa Inc. fiscal Q4 2024 results | 2.05 | -0.76 | 1.18x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | +10.3% | - |
+| 2025-01-10 | $307.71 | Visa Inc. fiscal Q4 2024 results | 2.05 | -0.54 | 1.04x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | +12.8% | - |
+| 2025-01-17 | $319.62 | Visa Inc. fiscal Q4 2024 results | 2.05 | -0.84 | 1.29x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +8.8% | - |
+| 2025-01-24 | $330.20 | Visa Inc. fiscal Q4 2024 results | 2.05 | -0.97 | 1.56x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | +5.4% | - |
+| 2025-01-31 | $341.80 | Visa Inc. fiscal Q1 2025 results | 1.85 | -1.33 | 1.92x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +2.0% | - |
+| 2025-02-07 | $348.02 | Visa Inc. fiscal Q1 2025 results | 1.85 | -1.38 | 2.18x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +0.3% | - |
+| 2025-02-14 | $353.81 | Visa Inc. fiscal Q1 2025 results | 1.85 | -1.42 | 2.42x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | -1.2% | - |
+| 2025-02-21 | $348.53 | Visa Inc. fiscal Q1 2025 results | 1.85 | -1.38 | 2.16x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +0.5% | - |
+| 2025-02-28 | $362.71 | Visa Inc. fiscal Q1 2025 results | 1.85 | -1.49 | 2.95x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | -3.2% | - |
+| 2025-03-07 | $345.32 | Visa Inc. fiscal Q1 2025 results | 1.85 | -1.35 | 1.99x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +2.0% | - |
+| 2025-03-14 | $331.80 | Visa Inc. fiscal Q1 2025 results | 1.85 | -1.22 | 1.53x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +6.5% | - |
+| 2025-03-21 | $335.66 | Visa Inc. fiscal Q1 2025 results | 1.85 | -1.26 | 1.65x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +5.7% | - |
+| 2025-03-28 | $342.85 | Visa Inc. fiscal Q1 2025 results | 1.85 | -1.32 | 1.86x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +4.0% | - |
+| 2025-04-04 | $313.13 | Visa Inc. fiscal Q1 2025 results | 1.85 | -0.83 | 1.08x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | +14.3% | - |
+| 2025-04-11 | $333.40 | Visa Inc. fiscal Q1 2025 results | 1.85 | -1.22 | 1.56x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +7.8% | - |
+| 2025-04-17 | $329.61 | Visa Inc. fiscal Q1 2025 results | 1.85 | -1.17 | 1.43x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +9.5% | - |
+| 2025-04-25 | $335.17 | Visa Inc. fiscal Q1 2025 results | 1.85 | -1.23 | 1.59x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +8.2% | - |
+| 2025-05-01 | $342.45 | Visa Inc. fiscal Q2 2025 results | 1.65 | -1.53 | 1.82x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +6.3% | - |
+| 2025-05-09 | $352.54 | Visa Inc. fiscal Q2 2025 results | 1.65 | -1.61 | 2.18x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +3.8% | - |
+| 2025-05-16 | $365.12 | Visa Inc. fiscal Q2 2025 results | 1.65 | -1.71 | 2.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +0.6% | - |
+| 2025-05-23 | $353.54 | Visa Inc. fiscal Q2 2025 results | 1.65 | -1.62 | 2.19x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +4.3% | - |
+| 2025-05-30 | $365.19 | Visa Inc. fiscal Q2 2025 results | 1.65 | -1.70 | 2.74x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +1.4% | - |
+| 2025-06-06 | $370.22 | Visa Inc. fiscal Q2 2025 results | 1.65 | -1.74 | 3.07x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +0.6% | - |
+| 2025-06-13 | $352.85 | Visa Inc. fiscal Q2 2025 results | 1.65 | -1.60 | 2.08x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +6.2% | - |
+| 2025-06-20 | $338.57 | Visa Inc. fiscal Q2 2025 results | 1.65 | -1.46 | 1.59x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +11.2% | - |
+| 2025-06-27 | $348.61 | Visa Inc. fiscal Q2 2025 results | 1.65 | -1.57 | 1.92x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +8.6% | - |
+| 2025-07-03 | $358.86 | Visa Inc. fiscal Q2 2025 results | 1.65 | -1.65 | 2.30x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +5.9% | - |
+| 2025-07-11 | $347.93 | Visa Inc. fiscal Q2 2025 results | 1.65 | -1.55 | 1.86x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +9.6% | - |
+| 2025-07-18 | $349.05 | Visa Inc. fiscal Q2 2025 results | 1.65 | -1.56 | 1.87x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +9.7% | - |
+| 2025-07-25 | $357.04 | Visa Inc. fiscal Q2 2025 results | 1.65 | -1.62 | 2.14x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +7.7% | - |
+| 2025-07-31 | $345.47 | Visa Inc. fiscal Q3 2025 results | 2.05 | -0.96 | 1.62x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | +11.5% | - |
+| 2025-08-08 | $336.78 | Visa Inc. fiscal Q3 2025 results | 2.05 | -0.82 | 1.36x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +14.9% | - |
+| 2025-08-15 | $344.47 | Visa Inc. fiscal Q3 2025 results | 2.05 | -0.93 | 1.55x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | +12.8% | - |
+| 2025-08-22 | $350.04 | Visa Inc. fiscal Q3 2025 results | 2.05 | -0.98 | 1.63x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | +11.6% | - |
+| 2025-08-29 | $351.78 | Visa Inc. fiscal Q3 2025 results | 2.05 | -0.99 | 1.66x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | +11.2% | - |
+| 2025-09-05 | $343.22 | Visa Inc. fiscal Q3 2025 results | 2.05 | -0.87 | 1.42x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +14.4% | - |
+| 2025-09-12 | $339.43 | Visa Inc. fiscal Q3 2025 results | 2.05 | -0.80 | 1.30x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +16.2% | - |
+| 2025-09-19 | $341.61 | Visa Inc. fiscal Q3 2025 results | 2.05 | -0.82 | 1.33x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +16.2% | - |
+| 2025-09-26 | $337.37 | Visa Inc. fiscal Q3 2025 results | 2.05 | -0.73 | 1.23x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | +18.9% | - |
+| 2025-10-03 | $349.84 | Visa Inc. fiscal Q3 2025 results | 2.05 | -0.92 | 1.48x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | +16.3% | - |
+| 2025-10-10 | $343.65 | Visa Inc. fiscal Q3 2025 results | 2.05 | -0.82 | 1.32x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +20.0% | - |
+| 2025-10-17 | $341.89 | Visa Inc. fiscal Q3 2025 results | 2.05 | -0.79 | 1.28x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | +21.6% | - |
+| 2025-10-24 | $347.38 | Visa Inc. fiscal Q3 2025 results | 2.05 | -0.87 | 1.38x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +20.2% | - |
+| 2025-10-30 | $345.03 | Visa Inc. fiscal Q4 2025 results | 1.85 | -1.08 | 1.34x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | +22.3% | - |
+| 2025-11-07 | $336.02 | Visa Inc. fiscal Q4 2025 results | 1.85 | -0.90 | 1.10x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | +24.9% | - |
+| 2025-11-14 | $330.02 | Visa Inc. fiscal Q4 2025 results | 1.85 | -0.81 | 1.00x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +25.8% | - |
+| 2025-11-21 | $327.98 | Visa Inc. fiscal Q4 2025 results | 1.85 | -0.67 | 0.97x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
+| 2025-11-28 | $334.44 | Visa Inc. fiscal Q4 2025 results | 1.85 | -0.86 | 1.07x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2025-12-05 | $331.24 | Visa Inc. fiscal Q4 2025 results | 1.85 | -0.82 | 1.02x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2025-12-12 | $347.83 | Visa Inc. fiscal Q4 2025 results | 1.85 | -1.09 | 1.34x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-12-19 | $349.25 | Visa Inc. fiscal Q4 2025 results | 1.85 | -1.10 | 1.35x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-12-26 | $355.00 | Visa Inc. fiscal Q4 2025 results | 1.85 | -1.17 | 1.49x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-01-02 | $346.48 | Visa Inc. fiscal Q4 2025 results | 1.85 | -1.05 | 1.28x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-01-09 | $349.77 | Visa Inc. fiscal Q4 2025 results | 1.85 | -1.09 | 1.35x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-01-16 | $328.30 | Visa Inc. fiscal Q4 2025 results | 1.85 | -0.66 | 0.95x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
+| 2026-01-23 | $326.18 | Visa Inc. fiscal Q4 2025 results | 1.85 | -0.62 | 0.92x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | - | - | - | - |
+| 2026-01-30 | $321.83 | Visa Inc. fiscal Q1 2026 results | 2.05 | -0.18 | 0.78x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2026-02-06 | $331.58 | Visa Inc. fiscal Q1 2026 results | 2.05 | -0.41 | 0.91x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-02-13 | $314.08 | Visa Inc. fiscal Q1 2026 results | 2.05 | -0.08 | 0.69x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-02-20 | $320.95 | Visa Inc. fiscal Q1 2026 results | 2.05 | -0.16 | 0.77x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2026-02-27 | $320.14 | Visa Inc. fiscal Q1 2026 results | 2.05 | -0.15 | 0.76x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2026-03-06 | $317.36 | Visa Inc. fiscal Q1 2026 results | 2.05 | -0.12 | 0.73x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-03-13 | $307.14 | Visa Inc. fiscal Q1 2026 results | 2.05 | +0.05 | 0.62x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-03-20 | $301.62 | Visa Inc. fiscal Q1 2026 results | 2.05 | +0.14 | 0.57x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-03-27 | $295.52 | Visa Inc. fiscal Q1 2026 results | 2.05 | +0.26 | 0.51x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-04-02 | $300.80 | Visa Inc. fiscal Q1 2026 results | 2.05 | +0.16 | 0.56x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-04-10 | $304.36 | Visa Inc. fiscal Q1 2026 results | 2.05 | +0.11 | 0.59x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-04-17 | $317.02 | Visa Inc. fiscal Q1 2026 results | 2.05 | -0.10 | 0.73x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-04-24 | $309.42 | Visa Inc. fiscal Q1 2026 results | 2.05 | +0.02 | 0.64x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-04-30 | $329.84 | Visa Inc. fiscal Q2 2026 results | 2.20 | -0.05 | 0.77x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
+| 2026-05-08 | $318.79 | Visa Inc. fiscal Q2 2026 results | 2.20 | +0.21 | 0.66x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-05-15 | $325.75 | Visa Inc. fiscal Q2 2026 results | 2.20 | +0.11 | 0.73x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-05-22 | $328.88 | Visa Inc. fiscal Q2 2026 results | 2.20 | -0.03 | 0.76x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
+| 2026-05-29 | $326.36 | Visa Inc. fiscal Q2 2026 results | 2.20 | +0.11 | 0.74x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-06-05 | $323.57 | Visa Inc. fiscal Q2 2026 results | 2.20 | +0.15 | 0.71x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-06-12 | $322.39 | Visa Inc. fiscal Q2 2026 results | 2.20 | +0.17 | 0.69x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-06-18 | $327.24 | Visa Inc. fiscal Q2 2026 results | 2.20 | +0.10 | 0.74x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2026-06-26 | $336.23 | Visa Inc. fiscal Q2 2026 results | 2.20 | -0.14 | 0.85x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-07-02 | $362.13 | Visa Inc. fiscal Q2 2026 results | 2.20 | -0.50 | 1.22x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | - | - | - | - |
+| 2026-07-10 | $348.97 | Visa Inc. fiscal Q2 2026 results | 2.20 | -0.30 | 1.00x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2026-07-17 | $358.56 | Visa Inc. fiscal Q2 2026 results | 2.20 | -0.44 | 1.15x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-07-24 | $355.74 | Visa Inc. fiscal Q2 2026 results | 2.20 | -0.39 | 1.09x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-07-30 | $366.27 | Visa Inc. fiscal Q3 2026 results | 1.70 | -1.27 | 1.53x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-08-07 | $362.50 | Visa Inc. fiscal Q3 2026 results | 1.70 | -1.22 | 1.44x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-08-14 | $364.15 | Visa Inc. fiscal Q3 2026 results | 1.70 | -1.24 | 1.46x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-08-21 | $371.04 | Visa Inc. fiscal Q3 2026 results | 1.70 | -1.32 | 1.63x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-08-28 | $381.60 | Visa Inc. fiscal Q3 2026 results | 1.70 | -1.42 | 1.91x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-09-04 | $375.07 | Visa Inc. fiscal Q3 2026 results | 1.70 | -1.36 | 1.72x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-09-11 | $370.45 | Visa Inc. fiscal Q3 2026 results | 1.70 | -1.31 | 1.59x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-09-18 | $368.29 | Visa Inc. fiscal Q3 2026 results | 1.70 | -1.27 | 1.52x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-09-25 | $367.38 | Visa Inc. fiscal Q3 2026 results | 1.70 | -1.26 | 1.50x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-10-02 | $360.66 | Visa Inc. fiscal Q3 2026 results | 1.70 | -1.16 | 1.34x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-10-09 | $385.45 | Visa Inc. fiscal Q3 2026 results | 1.70 | -1.44 | 1.96x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-10-16 | $402.61 | Visa Inc. fiscal Q3 2026 results | 1.70 | -1.59 | 2.65x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-10-23 | $407.92 | Visa Inc. fiscal Q3 2026 results | 1.70 | -1.63 | 2.87x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-10-29 | $410.54 | Visa Inc. fiscal Q4 2026 results | 1.70 | -1.03 | 1.16x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-11-06 | $422.65 | Visa Inc. fiscal Q4 2026 results | 1.70 | -1.24 | 1.36x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-11-13 | $425.76 | Visa Inc. fiscal Q4 2026 results | 1.70 | -1.27 | 1.40x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |

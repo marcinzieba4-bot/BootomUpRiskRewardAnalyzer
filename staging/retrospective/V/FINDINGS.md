@@ -1,8 +1,8 @@
 # V retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the V weekly dates (Visa Inc., class A common stock, NYSE: V): 636 in all, 10 from 2009-10-29 to
-2009-12-31, 209 from 2010-01-08 to 2013-12-31, 208 from 2014-01-10 to 2017-12-29 and 209 from 2018-01-05 to 2021-12-31 (the later sections
-below), each priced as traded on
+Patterns seen in `outcome.json` for the V weekly dates (Visa Inc., class A common stock, NYSE: V): 890 in all, 10 from 2009-10-29 to
+2009-12-31, 209 from 2010-01-08 to 2013-12-31, 208 from 2014-01-10 to 2017-12-29, 209 from 2018-01-05 to 2021-12-31 and 254 from
+2022-01-07 to 2026-11-13 (the later sections below), each priced as traded on
 its date (before 2015-03-19 on the basis before the four-for-one split). The 2009 dates are the only ones of 2008-2009 that method r2 can build (retro/README.md, "V": FY2008, Visa's first year with EPS, is a distorted year with
 no figure excluding only one-offs, so no year is in the history until the Q4 FY09 print). They are **labels and hypotheses**: never feed
 them back into the method or the fact sheet. The 2009 outcomes were computed on 2026-11-19, after the point-in-time build was committed
@@ -219,3 +219,131 @@ What the labels say, as hypotheses only:
 
 Not tested here: whether any of this holds for other payments networks or other periods. The four years share the 2020 crash and the 2022
 decline inside their two-year windows, so they are far from independent, and the 10 FAIR dates are the only cross-sectional test of the class.
+
+## 2022-2026 (254 dates)
+
+Scored on 2026-11-20, after the point-in-time build was committed and pushed (a47d071) and the firewall had passed at 27 cutoffs
+(d1da3b3, also pushed). The last close in the price data is 2026-11-19, so the horizons are partial: the 2-year horizon exists for the 150
+dates from 2022-01-07 to 2024-11-15, the 1-year for 202 (to 2025-11-14), the 6-month for 228 (to 2026-05-15) and the 3-year for 98 (to
+2023-11-17); the 26 newest dates have no horizon yet. Dividends are $0.375 a quarter to October 2022, then $0.45, $0.52, $0.59, $0.67 and
+$0.78. The class is RICH on 185 dates, FAIR on 35 and CHEAP on 34, so the tables split by class, year and legacy tier.
+
+Two years:
+
+| Group | Dates | Mean 2y total return | Median | Mean vs SPY | Beat SPY | Cleared hurdle | Mean m12-24 avg price | Mean max drawdown | Call held |
+|---|---|---|---|---|---|---|---|---|---|
+| all | 150 | +38.0% | +39.3% | -3.5pp | 59 | 98 | +27.3% | -17.1% | 71 |
+| class RICH | 106 | +35.8% | +37.5% | -4.4pp | 44 | 61 | +26.2% | -17.6% | 35 |
+| class FAIR | 28 | +41.3% | +41.4% | +1.0pp | 13 | 21 | +28.3% | -16.6% | 20 |
+| class CHEAP | 16 | +47.4% | +49.0% | -5.3pp | 2 | 16 | +32.2% | -14.7% | 16 |
+| 2022 | 52 | +37.8% | +35.2% | +0.5pp | 23 | 31 | +25.0% | -17.5% | 34 |
+| 2023 | 52 | +48.0% | +48.3% | +0.0pp | 27 | 49 | +33.6% | -14.4% | 8 |
+| 2024 | 46 | +27.1% | +27.1% | -11.9pp | 9 | 18 | +22.6% | -19.7% | 29 |
+| tier BUY | 14 | +51.9% | +52.7% | -6.8pp | 1 | 14 | +38.6% | -13.2% | 14 |
+| tier ACCUMULATE | 37 | +39.1% | +39.2% | -5.0pp | 10 | 29 | +28.6% | -16.9% | 24 |
+| tier WATCHLIST | 88 | +36.5% | +38.0% | -2.5pp | 42 | 51 | +26.0% | -17.5% | 31 |
+| tier AVOID | 11 | +28.9% | +24.6% | -2.0pp | 6 | 4 | +18.7% | -19.1% | 2 |
+| 2022, class RICH | 15 | +26.7% | +26.7% | +5.3pp | 11 | 1 | +14.2% | -20.7% | 4 |
+| 2022, class FAIR | 24 | +39.5% | +38.7% | +0.6pp | 11 | 17 | +27.8% | -17.2% | 17 |
+| 2022, class CHEAP | 13 | +47.4% | +49.7% | -5.1pp | 1 | 13 | +32.4% | -14.3% | 13 |
+| 2023, class RICH | 46 | +47.6% | +48.3% | +0.3pp | 25 | 43 | +33.6% | -14.5% | 3 |
+| 2023, class FAIR | 4 | +52.4% | +52.1% | +3.6pp | 2 | 4 | +31.4% | -13.2% | 3 |
+| 2023, class CHEAP | 2 | +48.9% | +48.9% | -13.4pp | 0 | 2 | +37.7% | -13.8% | 2 |
+| 2024, class RICH | 45 | +26.7% | +24.3% | -12.4pp | 8 | 17 | +22.7% | -19.6% | 28 |
+| 2024, class CHEAP | 1 | +44.4% | +44.4% | +8.9pp | 1 | 1 | +17.9% | -20.8% | 1 |
+
+One year:
+
+| Group | Dates | Mean 1y total return | Median | Mean vs SPY | Beat SPY | Cleared hurdle |
+|---|---|---|---|---|---|---|
+| all | 202 | +15.4% | +18.5% | -2.4pp | 93 | 115 |
+| class RICH | 158 | +14.4% | +17.0% | -4.5pp | 60 | 83 |
+| class FAIR | 28 | +18.0% | +17.9% | +7.3pp | 21 | 18 |
+| class CHEAP | 16 | +20.9% | +20.3% | +1.5pp | 12 | 14 |
+| 2022 | 52 | +14.8% | +13.8% | +7.5pp | 47 | 25 |
+| 2023 | 52 | +20.3% | +20.9% | -7.9pp | 2 | 42 |
+| 2024 | 52 | +23.4% | +23.9% | +7.8pp | 39 | 43 |
+| 2025 | 46 | +1.8% | -0.0% | -18.7pp | 5 | 5 |
+| tier BUY | 14 | +24.5% | +25.1% | +3.3pp | 12 | 13 |
+| tier ACCUMULATE | 40 | +20.8% | +20.1% | +3.1pp | 23 | 31 |
+| tier WATCHLIST | 118 | +16.5% | +18.6% | -1.0pp | 51 | 69 |
+| tier AVOID | 30 | -0.2% | -1.2% | -17.5pp | 7 | 2 |
+| 2022, class RICH | 15 | +6.0% | +2.2% | +8.7pp | 14 | 0 |
+| 2022, class FAIR | 24 | +16.9% | +16.8% | +8.9pp | 21 | 14 |
+| 2022, class CHEAP | 13 | +20.9% | +20.5% | +3.6pp | 12 | 11 |
+| 2023, class RICH | 46 | +19.9% | +20.8% | -8.3pp | 2 | 36 |
+| 2023, class FAIR | 4 | +24.2% | +23.6% | -2.0pp | 0 | 4 |
+| 2023, class CHEAP | 2 | +21.4% | +21.4% | -10.8pp | 0 | 2 |
+| 2024, class RICH | 51 | +23.4% | +24.0% | +7.9pp | 39 | 42 |
+| 2024, class CHEAP | 1 | +19.9% | +19.9% | -1.0pp | 0 | 1 |
+| 2025, class RICH | 46 | +1.8% | -0.0% | -18.7pp | 5 | 5 |
+
+Six months:
+
+| Group | Dates | Mean 6m total return | Median | Mean vs SPY | Beat SPY | Cleared hurdle |
+|---|---|---|---|---|---|---|
+| all | 228 | +7.4% | +7.3% | -0.4pp | 113 | 115 |
+| class RICH | 168 | +5.5% | +5.1% | -2.9pp | 63 | 73 |
+| class FAIR | 30 | +9.1% | +7.3% | +6.6pp | 26 | 16 |
+| class CHEAP | 30 | +16.6% | +14.8% | +6.5pp | 24 | 26 |
+| 2022 | 52 | +4.5% | +5.5% | +4.9pp | 43 | 21 |
+| 2023 | 52 | +10.6% | +10.4% | -1.9pp | 17 | 36 |
+| 2024 | 52 | +12.4% | +13.6% | +5.2pp | 31 | 35 |
+| 2025 | 52 | -2.4% | -3.2% | -13.4pp | 4 | 5 |
+| 2026 | 20 | +19.2% | +19.6% | +8.2pp | 18 | 18 |
+| tier BUY | 25 | +20.0% | +20.3% | +7.9pp | 20 | 25 |
+| tier ACCUMULATE | 50 | +10.7% | +9.4% | +2.5pp | 33 | 31 |
+| tier WATCHLIST | 123 | +5.9% | +6.1% | -0.7pp | 55 | 55 |
+| tier AVOID | 30 | -2.0% | -3.0% | -11.1pp | 5 | 4 |
+| 2022, class RICH | 15 | -5.4% | -6.2% | +3.0pp | 11 | 2 |
+| 2022, class FAIR | 24 | +7.8% | +5.5% | +7.7pp | 23 | 10 |
+| 2022, class CHEAP | 13 | +9.8% | +11.1% | +2.1pp | 9 | 9 |
+| 2023, class RICH | 46 | +10.4% | +10.4% | -1.8pp | 16 | 30 |
+| 2023, class FAIR | 4 | +11.6% | +12.2% | -1.6pp | 1 | 4 |
+| 2023, class CHEAP | 2 | +14.6% | +14.6% | -4.5pp | 0 | 2 |
+| 2024, class RICH | 51 | +12.3% | +13.3% | +4.9pp | 30 | 34 |
+| 2024, class CHEAP | 1 | +19.6% | +19.6% | +21.4pp | 1 | 1 |
+| 2025, class RICH | 52 | -2.4% | -3.2% | -13.4pp | 4 | 5 |
+| 2026, class RICH | 4 | +6.1% | +6.5% | -2.6pp | 2 | 2 |
+| 2026, class FAIR | 2 | +18.9% | +18.9% | +10.2pp | 2 | 2 |
+| 2026, class CHEAP | 14 | +23.0% | +21.8% | +11.0pp | 14 | 14 |
+
+What the labels say, as hypotheses only:
+
+- **The class ordered total returns, not returns against SPY.** Over two years CHEAP returned +47.4% (16 dates, every one clearing the
+  hurdle, so the call held on all 16), FAIR +41.3% (28; held on 20) and RICH +35.8% (106); against SPY the three are -5.3, +1.0 and -4.4
+  points, and only 2 of the 16 CHEAP dates beat SPY. The order holds within 2022 (CHEAP +47.4%, FAIR +39.5%, RICH +26.7%), the one year
+  with all three classes in numbers.
+- **The RICH call held on 35 of 106 two-year dates, 3 of them in 2023.** RICH needs both a missed hurdle and a lag behind SPY: 45 RICH
+  dates missed the hurdle, 62 lagged SPY and 35 did both. From the 46 RICH dates of 2023 the stock returned +47.6% on average and cleared
+  the hurdle on 43; from the 45 of 2024 it returned +26.7% (-12.4 points against SPY) and the call held on 28. The same class at much the
+  same place in its window (2023: 29.4-35.4x, the 65th-82nd percentile; 2024: 30.6-35.1x, the 66th-82nd) was followed by +47.6% and
+  +26.7%.
+- **2025 so far:** RICH on all 52 dates, and on the 46 with a 1-year horizon the stock returned +1.8% (median 0.0%), 18.7 points behind
+  SPY, beating it on 5. The 2026 CHEAP dates (14 with a 6-month horizon, from the Q1 FY26 print) returned +23.0% in six months, 11.0 points
+  ahead of SPY. Both horizons are short and overlap.
+- **The tiers ordered both measures at six months and one year, and only total return at two.** At one year BUY returned +24.5%,
+  ACCUMULATE +20.8%, WATCHLIST +16.5% and AVOID -0.2% (+3.3, +3.1, -1.0 and -17.5 points against SPY; AVOID is mostly 2025); at two years
+  +51.9%, +39.1%, +36.5% and +28.9%, but -6.8, -5.0, -2.5 and -2.0 points against SPY. Over three years (98 dates) BUY +78.0%, ACCUMULATE
+  +70.1%, WATCHLIST +52.5%, AVOID +55.1%. As in 2018-2021, the BUY dates (June and September-December 2022, 2023-10-26, February-June
+  2026) sit mostly near price lows, so the order is largely the entry price.
+- **The distance to the floor ordered total returns.** The EPP gap's correlation with the 2-year total return is -0.39 (1-year: -0.55):
+  the 37 dates 25-40% above the floor returned +46.3%, the 77 at 40-55% +37.1%, the 16 at 55-70% +38.3% and the 20 at 70-90% +26.4%. Against
+  SPY the sign flips (+0.25) and changes by year (+0.41 in 2022, +0.12 in 2023, -0.35 in 2024). The P/E's percentile in its own window
+  carried little (+0.20 with the 2-year excess return, -0.16 with the 1-year).
+- **Scenario landing:** the price two years on sat in the BULL band on 115 dates (every 2023 date) and the BASE band on 35 (19 of 2022's,
+  16 of 2024's): never in XBULL or BEAR.
+- **Drawdowns were shallower than in 2018-2021:** a mean maximum of -17.1% inside the two years (-12.6% to -24.5%); the 2-year low fell on
+  2022-09-30 for 38 dates and on 2024-07-25 for 34.
+- **Three-year horizon:** a mean +61.2% (-5.8 points against SPY), +35.3% to +95.7%.
+- **The calls the sensitivities name, against the outcomes, and stay as they are.** GAAP every year would have made 57 of the two-year
+  dates FAIR or CHEAP; they returned +42.4% (+0.5 points against SPY). The company's non-GAAP figures would have moved 33, which returned
+  +48.7% (+3.9 points). The signals at their XBULL values would have moved 130 (+37.4%, -3.7 points) and at their BEAR values 44 to RICH
+  (+43.5%). The FY2024 table read as numbers would have made 30 FY2024 dates CHEAP or FAIR, and those returned +30.1%, 13.9 points behind
+  SPY, below the hurdle: the words reading suited them better. A hypothesis for the live model: for V in these years the class and the
+  floor distance ordered absolute returns but not returns against the market; the RICH label at a 30-35x multiple was right in 2024-2025
+  and wrong in 2023. Never fold this back into the archive.
+
+Not tested here: whether any of this holds for other payments networks or other periods. The dates share overlapping windows (the 2022
+low and the 2024 rally sit inside most two-year horizons), the 2-year horizon covers only the first 150 dates, and the 16 CHEAP and 28 FAIR
+two-year dates are the only cross-sectional test of the class.

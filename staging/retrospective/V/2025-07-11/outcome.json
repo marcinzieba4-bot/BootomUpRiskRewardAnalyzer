@@ -1,0 +1,51 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "V",
+ "as_of": "2025-07-11",
+ "computed": "2026-11-20",
+ "data_source": "Yahoo Finance daily closes + dividends (V, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2026-01-09",
+   "price": 349.77,
+   "dividends": 1.26,
+   "total_return_pct": 0.9,
+   "benchmark_total_return_pct": 11.9,
+   "excess_pct": -11.0,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2026-07-10",
+   "price": 348.97,
+   "dividends": 2.6,
+   "total_return_pct": 1.0,
+   "benchmark_total_return_pct": 22.3,
+   "excess_pct": -21.2,
+   "hurdle_pct": 15.0
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2026-11-04",
+   "price": 436.57
+  },
+  "low": {
+   "date": "2026-03-27",
+   "price": 295.52
+  },
+  "max_drawdown_pct": -17.4,
+  "return_to_avg_price_m12_m24_pct": 9.6
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "DURABLE",
+   "risk": 2
+  },
+  "today": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Payments network duopoly; DOJ debit suit is the overhang",
+   "reviewed": "2026-09-22"
+  }
+ }
+}
