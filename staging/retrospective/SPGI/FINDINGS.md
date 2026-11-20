@@ -1,6 +1,6 @@
 # SPGI retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the SPGI weekly dates: 731 from 2008-01-04 to 2021-12-31, The McGraw-Hill Companies, Inc. (NYSE:
+Patterns seen in `outcome.json` for the SPGI weekly dates: 985 of the 986 from 2008-01-04 to 2026-11-20 (2026-11-20 has no outcome yet), The McGraw-Hill Companies, Inc. (NYSE:
 MHP; SPGI is the series key), McGraw Hill Financial, Inc. from 2013-05-06 and NYSE: MHFI from 2013-05-14, S&P Global Inc. from
 2016-05-02 and NYSE: SPGI from 2016-06-30. They are **labels and hypotheses**: never feed them back into the method or the fact sheet. The batch was
 scored only after its point-in-time build and its firewall result were committed (2008-2009: 7a7b5ac, firewall e1db42b); the push of those
@@ -11,8 +11,12 @@ the 2008-2009 sections below (disclosed in retro/README.md, "SPGI 2010-2013"). 2
 findings, `SERIES.md` or any outcome first, and scored only after its build (5fffe7f) and its firewall result (0bcb78d) were committed
 and pushed; its 3-year horizons end on 2020-12-29. 2018-2021 was decided in the session that had scored 2014-2017 (disclosed in
 retro/README.md, "SPGI 2018-2021") and scored only after its build (2fe0ec6) and its firewall result (1138bf6) were committed and pushed;
-its 3-year horizons end on 2024-12-30. Total returns include the quarterly
-dividends as Yahoo records them (ex-dates); no split falls in any horizon, so every price is as traded. Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over
+its 3-year horizons end on 2024-12-30. 2022-2026 was built in a new session that did not open these findings, `SERIES.md` or any outcome
+first, and scored only after its build (edf5c01) and its firewall result (1ddbda4) were committed and pushed; its horizons are partial (the
+data end on 2026-11-20): 2-year horizons for the 150 dates to 2024-11-15, 1-year for 202, 6-month for 228, 3-year for 98. Total returns
+include the quarterly dividends as Yahoo records them (ex-dates); no split falls in any horizon, so every price is as traded. The
+2026-07-01 Mobility Global distribution falls inside the horizons that end after it (20 dates at each horizon): the returns are on
+Yahoo's adjusted series, which books it as a 1057:1000 factor, so they count the distributed shares at their value on the day. Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over
 two years and +52.1% over three. "Call held" is `call_check_2y`: CHEAP should clear the hurdle or beat the benchmark (SPY); RICH should miss the hurdle and lag it; FAIR should land within +/-15pp of it.
 
 ## 2008 (53 dates)
@@ -433,4 +437,151 @@ two years and +52.1% over three. "Call held" is `call_check_2y`: CHEAP should cl
   CHEAP, 2018-04-27 to 2020-04-03); hypothesis for cross-ticker testing (with CMCSA 2019, PFE, AVGO, SHW), never fit to SPGI.
 - **The COVID-19 low was the one cheap entry the method caught** (2020-03-20, CHEAP at 20.7x, +99.1%); the FAIR dates after it returned
   +73-75%. The rule for it existed already: the multiple fell into the lower half of the window.
+- Today's profile still files SPGI DURABLE with risk 1 where every point-in-time reading was DURABLE with risk 2; label only.
+
+## 2022 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier ACCUMULATE | 2 | +54.5% | +49.7% to +54.5% | 2 | 2 | +25.0% | 2 |
+| class CHEAP, legacy tier BUY | 5 | +71.5% | +66.2% to +86.6% | 5 | 5 | +44.9% | 5 |
+| class CHEAP, legacy tier WATCHLIST | 2 | +37.7% | +31.4% to +37.7% | 1 | 0 | +28.4% | 1 |
+| class FAIR, legacy tier ACCUMULATE | 7 | +50.9% | +39.6% to +55.8% | 7 | 2 | +37.8% | 7 |
+| class FAIR, legacy tier AVOID | 1 | +23.2% | +23.2% to +23.2% | 0 | 0 | +13.1% | 1 |
+| class FAIR, legacy tier WATCHLIST | 15 | +34.0% | +29.2% to +50.1% | 10 | 1 | +20.2% | 15 |
+| class RICH, legacy tier AVOID | 19 | +9.6% | -2.7% to +31.8% | 0 | 0 | -3.6% | 19 |
+| class RICH, legacy tier WATCHLIST | 1 | +25.4% | +25.4% to +25.4% | 0 | 0 | +7.5% | 1 |
+| EPS $12.575 (2022-01-07 to 2022-02-04) | 5 | +7.7% | -2.7% to +11.5% | 0 | 0 | -8.7% | 5 |
+| EPS $12.51 (2022-02-09 to 2022-04-29) | 12 | +9.6% | +2.9% to +16.7% | 0 | 0 | +1.8% | 12 |
+| EPS $12.125 (2022-05-04 to 2022-05-27) | 4 | +29.2% | +18.6% to +29.9% | 0 | 0 | +18.7% | 4 |
+| EPS $12.51 (2022-06-03 to 2022-07-29) | 9 | +32.1% | +29.9% to +40.1% | 4 | 0 | +20.2% | 8 |
+| EPS $10.3 (2022-08-03 to 2022-10-21) | 12 | +54.5% | +25.4% to +86.6% | 11 | 9 | +25.0% | 12 |
+| EPS $9.825 (2022-10-28 to 2022-12-30) | 10 | +50.2% | +44.4% to +55.8% | 10 | 1 | +36.8% | 10 |
+| latest print Q3 2021 (2022-01-07 to 2022-02-04) | 5 | +7.7% | -2.7% to +11.5% | 0 | 0 | -8.7% | 5 |
+| latest print Q4 2021 (2022-02-09 to 2022-04-29) | 12 | +9.6% | +2.9% to +16.7% | 0 | 0 | +1.8% | 12 |
+| latest print Q1 2022 (2022-05-04 to 2022-07-29) | 13 | +31.4% | +18.6% to +40.1% | 4 | 0 | +18.7% | 12 |
+| latest print Q2 2022 (2022-08-03 to 2022-10-21) | 12 | +54.5% | +25.4% to +86.6% | 11 | 9 | +25.0% | 12 |
+| latest print Q3 2022 (2022-10-28 to 2022-12-30) | 10 | +50.2% | +44.4% to +55.8% | 10 | 1 | +36.8% | 10 |
+
+- **The call held on 51 of 52 dates.** The 20 RICH dates (2022-01-07 to 2022-05-04, 2022-07-29 and 2022-08-12; 30-38x, the 80th-98th
+  percentile) returned -2.7% to +31.8% over two years; none cleared the hurdle and all lagged SPY (+3.2% to +35.5%): held on all 20. The
+  23 FAIR dates returned +23.2% to +55.8%, within 15pp of the hurdle, all held. Of the 9 CHEAP dates, the two of June 2022 (in the
+  suspension, BASE +20% on Q1 2022's growth) returned +31.4% and +37.7% against SPY's +40.8% and +52.7% (2022-06-10 missed, just under
+  the hurdle; 2022-06-17 held); the seven of 2022-09-02 to 2022-10-21 (BASE +44% on Q2 2022's reported growth with IHS Markit; 28-34x,
+  the 69th-86th percentile) returned +49.7% to +86.6%, cleared the hurdle and beat SPY by +2.6pp to +19.7pp.
+- **The price ranked the dates** (Spearman -0.86, Ratio B -0.95, the proxy composite -0.56; the P/E +0.01). Landing: BASE 44, BULL 8.
+  The worst drawdown within two years was -36.0% (from January 2022 to the October 2022 low).
+- **What made the October 2022 dates CHEAP was the merger in the growth rate, and it marked the low.** BASE was the reported growth
+  of the merger quarters (+37-42%) while the releases' pro forma growth was -5% to -9%; on the pro forma reading the same dates are RICH
+  (40 classes move, retro/README.md, "SPGI 2022-2026"), and those calls would have missed. Hypothesis, not a rule, and one stock-year:
+  acquisitions in reported growth can hold a class at CHEAP through a fall the pro forma reading calls RICH; test it on the other
+  merger years in the archive (JPM 2009, CMCSA 2018-2019, PFE 2010), never fit it to SPGI.
+- The guides were beaten on GAAP: FY2022 came in at $10.20 against the $9.75-9.90 range of the Q3 2022 print.
+
+## 2023 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class FAIR, legacy tier ACCUMULATE | 9 | +50.0% | +29.7% to +57.1% | 8 | 9 | +40.8% | 9 |
+| class FAIR, legacy tier WATCHLIST | 6 | +43.6% | +33.7% to +51.6% | 6 | 0 | +30.2% | 4 |
+| class RICH, legacy tier AVOID | 36 | +36.5% | +16.4% to +47.4% | 24 | 5 | +31.4% | 12 |
+| class RICH, legacy tier WATCHLIST | 1 | +41.4% | +41.4% to +41.4% | 1 | 0 | +26.1% | 0 |
+| EPS $9.825 (2023-01-06 to 2023-02-03) | 5 | +41.0% | +33.7% to +44.2% | 5 | 0 | +27.6% | 2 |
+| EPS $10.2 (2023-02-10 to 2023-04-21) | 11 | +50.0% | +29.7% to +57.1% | 10 | 9 | +40.0% | 11 |
+| EPS $8.75 (2023-04-28 to 2023-10-27) | 27 | +38.5% | +25.1% to +47.4% | 24 | 5 | +32.2% | 3 |
+| EPS $8.825 (2023-11-03 to 2023-12-29) | 9 | +21.6% | +16.4% to +31.7% | 0 | 0 | +22.7% | 9 |
+| latest print Q3 2022 (2023-01-06 to 2023-02-03) | 5 | +41.0% | +33.7% to +44.2% | 5 | 0 | +27.6% | 2 |
+| latest print Q4 2022 (2023-02-10 to 2023-04-21) | 11 | +50.0% | +29.7% to +57.1% | 10 | 9 | +40.0% | 11 |
+| latest print Q1 2023 (2023-04-28 to 2023-07-21) | 13 | +36.0% | +25.1% to +46.3% | 10 | 4 | +29.9% | 3 |
+| latest print Q2 2023 (2023-07-28 to 2023-10-27) | 14 | +41.6% | +33.4% to +47.4% | 14 | 1 | +33.8% | 0 |
+| latest print Q3 2023 (2023-11-03 to 2023-12-29) | 9 | +21.6% | +16.4% to +31.7% | 0 | 0 | +22.7% | 9 |
+
+- **The call held on 25 of 52.** The 37 RICH dates (2023-01-27 and 2023-04-28 to 2023-12-29; 38-50x the GAAP guides, the 91st-100th
+  percentile) returned +16.4% to +47.4% over two years and cleared the hurdle on 25, but lagged SPY (+35.8% to +70.3%) on 32: held on 12,
+  nine of them the dates after the Q3 2023 print. The 15 FAIR dates of January to April 2023 returned +29.7% to +57.1% (13 held).
+- **The GAAP multiple overstated how rich the stock was.** The FY2023 GAAP guide carried about $1.1 billion of deal-related amortization,
+  so the P/E read 38-50x where the company's adjusted ranges ($12.35-12.60) put the year's prices at 26-36x; the stock cleared the hurdle
+  with the market rather than lagging it (BASE was -17% to -19% on the GAAP margin step from 2022's divestiture gains, and 36 of the 52
+  dates landed nearest BULL or XBULL). The SHW reading moves 52 RICH dates to FAIR across the batch; hypothesis for cross-ticker testing
+  with the other amortization-heavy acquirers (AVGO after VMware, CMCSA, PFE), never fit to SPGI.
+- **Within 2023 the price ranked the dates** (Spearman -0.71, the P/E -0.69, Ratio B -0.48). Over three years none of the 46 dates with
+  a 3-year horizon beat SPY. FY2023 came in at $8.23, under the $8.75-8.90 range of the Q3 2023 print.
+
+## 2024 (52 dates; 46 with a 2-year horizon)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 46 | -0.9% | -18.8% to +26.3% | 0 | 0 | +11.5% | 46 |
+| EPS $8.825 (2024-01-05 to 2024-02-02) | 5 | +25.3% | +17.9% to +26.3% | 0 | 0 | +15.9% | 5 |
+| EPS $10.825 (2024-02-09 to 2024-04-19) | 11 | +1.7% | -5.9% to +9.1% | 0 | 0 | +17.7% | 11 |
+| EPS $10.925 (2024-04-26 to 2024-07-26) | 14 | -0.9% | -7.1% to +6.9% | 0 | 0 | +11.5% | 14 |
+| EPS $11.275 (2024-07-31 to 2024-10-18) | 12 | -10.1% | -18.8% to -6.7% | 0 | 0 | -9.5% | 12 |
+| EPS $12.05 (2024-10-25 to 2024-12-27) | 4 | +1.0% | -1.4% to +3.6% | 0 | 0 | -7.4% | 4 |
+| latest print Q3 2023 (2024-01-05 to 2024-02-02) | 5 | +25.3% | +17.9% to +26.3% | 0 | 0 | +15.9% | 5 |
+| latest print Q4 2023 (2024-02-09 to 2024-04-19) | 11 | +1.7% | -5.9% to +9.1% | 0 | 0 | +17.7% | 11 |
+| latest print Q1 2024 (2024-04-26 to 2024-07-26) | 14 | -0.9% | -7.1% to +6.9% | 0 | 0 | +11.5% | 14 |
+| latest print Q2 2024 (2024-07-31 to 2024-10-18) | 12 | -10.1% | -18.8% to -6.7% | 0 | 0 | -9.5% | 12 |
+| latest print Q3 2024 (2024-10-25 to 2024-12-27) | 4 | +1.0% | -1.4% to +3.6% | 0 | 0 | -7.4% | 4 |
+
+- **RICH and AVOID on all 52, and the call held on all 46 dates with a 2-year horizon.** The stock traded at 38-52x the GAAP guides (the
+  85th-100th percentile); two-year returns of -18.8% to +26.3% against SPY's +24.0% to +50.0% (excess -21.0pp to -58.0pp), none cleared the
+  hurdle. The worst drawdown within two years was -30.7%, to the low of 2026-02-11.
+- **The price ranked the dates** (Spearman -0.66, the proxy composite -0.68). Landing: BASE 41, BULL 5. FY2024 came in at $12.35,
+  above the $11.95-12.15 range of the Q3 2024 print.
+
+## 2025 (52 dates; 46 with a 1-year horizon, none with a 2-year one)
+
+| Group | Dates | Median 1-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class FAIR, legacy tier WATCHLIST | 3 | +2.0% | -3.7% to +2.1% | 0 | 0 | n/a | n/a |
+| class RICH, legacy tier AVOID | 42 | -14.0% | -24.5% to +13.1% | 0 | 0 | n/a | n/a |
+| class RICH, legacy tier WATCHLIST | 1 | -3.2% | -3.2% to -3.2% | 0 | 0 | n/a | n/a |
+| EPS $12.05 (2025-01-03 to 2025-02-07) | 6 | +4.6% | -14.6% to +13.1% | 0 | 0 | n/a | n/a |
+| EPS $14.325 (2025-02-12 to 2025-04-25) | 11 | -12.4% | -24.5% to -3.6% | 0 | 0 | n/a | n/a |
+| EPS $14.85 (2025-04-30 to 2025-07-25) | 13 | -16.5% | -22.1% to -8.4% | 0 | 0 | n/a | n/a |
+| EPS $14.475 (2025-08-01 to 2025-10-24) | 13 | -14.1% | -21.8% to -2.0% | 0 | 0 | n/a | n/a |
+| EPS $14.925 (2025-10-31 to 2025-12-26) | 3 | +2.0% | +0.4% to +2.1% | 0 | 0 | n/a | n/a |
+| latest print Q3 2024 (2025-01-03 to 2025-02-07) | 6 | +4.6% | -14.6% to +13.1% | 0 | 0 | n/a | n/a |
+| latest print Q4 2024 (2025-02-12 to 2025-04-25) | 11 | -12.4% | -24.5% to -3.6% | 0 | 0 | n/a | n/a |
+| latest print Q1 2025 (2025-04-30 to 2025-07-25) | 13 | -16.5% | -22.1% to -8.4% | 0 | 0 | n/a | n/a |
+| latest print Q2 2025 (2025-08-01 to 2025-10-24) | 13 | -14.1% | -21.8% to -2.0% | 0 | 0 | n/a | n/a |
+| latest print Q3 2025 (2025-10-31 to 2025-12-26) | 3 | +2.0% | +0.4% to +2.1% | 0 | 0 | n/a | n/a |
+
+- **One-year horizons only: RICH on 48 dates (AVOID 47) and every date with a horizon lagged SPY.** One-year returns of -24.5% to +13.1%
+  against SPY's +10.7% to +36.3%; the 42 RICH-and-AVOID dates' median -14.0%. The four FAIR dates (2025-04-04 and 2025-10-31 to
+  2025-11-21) did no better (-3.7% to +2.1%). No call can be checked yet (the 2-year check needs 2027 data). FY2025 came in at $14.66,
+  under the $14.80-15.05 range of the Q3 2025 print.
+
+## 2026 (46 dates with an outcome; 20 with a 6-month horizon)
+
+| Group | Dates | Median 6-month total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier WATCHLIST | 1 | +24.7% | +24.7% to +24.7% | 1 | 1 | n/a | n/a |
+| class FAIR, legacy tier ACCUMULATE | 2 | +11.0% | -2.0% to +11.0% | 1 | 0 | n/a | n/a |
+| class FAIR, legacy tier WATCHLIST | 11 | +4.6% | -4.8% to +18.2% | 4 | 3 | n/a | n/a |
+| class RICH, legacy tier AVOID | 6 | -11.2% | -16.5% to +4.1% | 0 | 0 | n/a | n/a |
+| EPS $14.925 (2026-01-02 to 2026-02-06) | 6 | -11.2% | -16.5% to -2.0% | 0 | 0 | n/a | n/a |
+| EPS $14.66 (2026-02-11 to 2026-07-24) | 14 | +5.4% | -4.8% to +24.7% | 6 | 4 | n/a | n/a |
+| latest print Q3 2025 (2026-01-02 to 2026-02-06) | 6 | -11.2% | -16.5% to -2.0% | 0 | 0 | n/a | n/a |
+| latest print Q4 2025 (2026-02-11 to 2026-04-24) | 11 | +4.2% | -4.8% to +11.0% | 3 | 1 | n/a | n/a |
+| latest print Q1 2026 (2026-04-29 to 2026-07-24) | 3 | +18.2% | +12.9% to +24.7% | 3 | 3 | n/a | n/a |
+
+- **Six-month horizons only, and only to 2026-05-15.** The six RICH dates (January 2026 and 2026-03-06; 31-37x) returned -16.5% to +4.1%
+  over six months, behind SPY's +7.6% to +15.1%; the 13 FAIR dates of 2026-02-06 to 2026-05-08 (27-30x, the 31st-43rd percentile) -4.8%
+  to +18.2%; the one CHEAP date (2026-05-15, the 32nd percentile) +24.7% against SPY's +2.6%. These horizons cross the Mobility Global distribution (counted at its value). The CHEAP run of
+  2026-07-29 to 2026-11-20, on FY2026's continuing-operations guide against a price without Mobility, has no horizon yet.
+
+## 2022-2026 together (150 dates with a 2-year horizon, 254 with an outcome)
+
+- **The calls held on 122 of the 150 dates that can be checked:** CHEAP 8 of 9, FAIR 36 of 38, RICH 78 of 103. Of the 28 misses, 25
+  are the RICH dates of 2023, when the stock cleared the hurdle with the market at a GAAP multiple of 38-50x (the others: 2022-06-10 and
+  two FAIR dates of January 2023). Across the 150 dates the entry price ranks the
+  two-year return at Spearman -0.87 and the proxy composite at -0.77, the P/E only at -0.33 and Ratio B at -0.35.
+- **The two encoding calls the batch leans on pointed in opposite directions in hindsight.** IHS Markit in the reported growth (BASE
+  +39-44%) kept the October 2022 dates CHEAP at the low, which held; GAAP EPS with the merger's amortization kept 2023 RICH while the
+  stock cleared the hurdle. Both are hypotheses for testing across tickers, and neither may be folded back into SPGI's method.
+- **BEAR rests on GAAP 2016-2017 (-27.2%/yr) on every date**, while the worst drawdown within two years of any date was -36.0% (2022).
+- **GENAI was a label only.** From the FY2023 10-K the watch list carries the company's own AI words on 146 dates; it moved no class.
+  Whether the market priced AI substitution into the 2025 one-year returns (all behind SPY) is not something the series can say: no
+  dated market evidence after 2023 is in the registry, and none was added (the ACN rule).
 - Today's profile still files SPGI DURABLE with risk 1 where every point-in-time reading was DURABLE with risk 2; label only.

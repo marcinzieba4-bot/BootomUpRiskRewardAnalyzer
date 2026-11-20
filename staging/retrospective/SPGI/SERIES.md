@@ -735,3 +735,258 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2021-12-17 | $467.64 | S&P Global Q3 2021 results | 2.60 | -0.76 | 16.31x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -5.3% | -10.2pp | -20.3% | ✓ |
 | 2021-12-23 | $473.74 | S&P Global Q3 2021 results | 2.60 | -0.78 | 22.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -6.8% | -10.2pp | -20.9% | ✓ |
 | 2021-12-31 | $471.93 | S&P Global Q3 2021 results | 2.60 | -0.77 | 20.42x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -5.2% | -8.0pp | -20.2% | ✓ |
+| 2022-01-07 | $446.75 | S&P Global Q3 2021 results | 2.60 | -0.56 | 7.60x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -2.7% | -5.8pp | -15.4% | ✓ |
+| 2022-01-14 | $432.36 | S&P Global Q3 2021 results | 2.60 | -0.49 | 5.43x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +2.7% | -2.7pp | -12.3% | ✓ |
+| 2022-01-21 | $416.93 | S&P Global Q3 2021 results | 2.60 | -0.41 | 4.13x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +7.7% | -5.4pp | -8.7% | ✓ |
+| 2022-01-28 | $406.62 | S&P Global Q3 2021 results | 2.60 | -0.36 | 3.51x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +11.5% | -1.7pp | -6.0% | ✓ |
+| 2022-02-04 | $414.39 | S&P Global Q3 2021 results | 2.60 | -0.40 | 3.96x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +11.2% | -1.8pp | -7.4% | ✓ |
+| 2022-02-09 | $407.29 | S&P Global Q4 2021 results | 2.60 | -0.36 | 3.18x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +9.0% | -3.4pp | -5.4% | ✓ |
+| 2022-02-18 | $378.67 | S&P Global Q4 2021 results | 2.60 | -0.15 | 2.18x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +13.5% | -4.5pp | +2.1% | ✓ |
+| 2022-02-25 | $380.89 | S&P Global Q4 2021 results | 2.60 | -0.17 | 2.24x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +16.7% | -2.3pp | +1.8% | ✓ |
+| 2022-03-04 | $407.55 | S&P Global Q4 2021 results | 2.60 | -0.35 | 3.06x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +6.1% | -15.4pp | -4.4% | ✓ |
+| 2022-03-11 | $379.68 | S&P Global Q4 2021 results | 2.60 | -0.14 | 2.14x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +14.2% | -10.6pp | +3.1% | ✓ |
+| 2022-03-18 | $409.94 | S&P Global Q4 2021 results | 2.60 | -0.36 | 3.10x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +4.6% | -13.7pp | -4.1% | ✓ |
+| 2022-03-25 | $413.47 | S&P Global Q4 2021 results | 2.60 | -0.38 | 3.18x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +2.9% | -14.8pp | -4.5% | ✓ |
+| 2022-04-01 | $407.88 | S&P Global Q4 2021 results | 2.60 | -0.34 | 2.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +6.4% | -11.8pp | -2.8% | ✓ |
+| 2022-04-08 | $413.09 | S&P Global Q4 2021 results | 2.60 | -0.37 | 3.10x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +6.8% | -12.0pp | -3.6% | ✓ |
+| 2022-04-14 | $387.59 | S&P Global Q4 2021 results | 2.60 | -0.19 | 2.27x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +9.6% | -10.1pp | +3.1% | ✓ |
+| 2022-04-22 | $379.66 | S&P Global Q4 2021 results | 2.60 | -0.12 | 2.06x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +11.7% | -8.7pp | +5.6% | ✓ |
+| 2022-04-29 | $376.50 | S&P Global Q4 2021 results | 2.60 | -0.08 | 1.96x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +12.2% | -14.8pp | +6.8% | ✓ |
+| 2022-05-04 | $364.32 | S&P Global Q1 2022 results | 2.75 | +0.16 | 1.92x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +18.6% | -3.6pp | +10.7% | ✓ |
+| 2022-05-13 | $336.85 | S&P Global Q1 2022 results | 2.75 | +0.40 | 1.43x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +29.2% | -3.8pp | +20.2% | ✓ |
+| 2022-05-20 | $342.42 | S&P Global Q1 2022 results | 2.75 | +0.35 | 1.52x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +29.9% | -9.5pp | +18.7% | ✓ |
+| 2022-05-27 | $360.64 | S&P Global Q1 2022 results | 2.75 | +0.21 | 1.82x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +23.2% | -7.4pp | +13.1% | ✓ |
+| 2022-06-03 | $335.93 | S&P Global Q1 2022 results | 2.75 | +0.50 | 1.28x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +29.9% | -1.9pp | +21.7% | ✓ |
+| 2022-06-10 | $332.76 | S&P Global Q1 2022 results | 2.75 | +0.53 | 1.24x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +31.4% | -9.4pp | +23.2% | ✗ |
+| 2022-06-17 | $319.93 | S&P Global Q1 2022 results | 2.75 | +0.65 | 1.10x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +37.7% | -15.0pp | +28.4% | ✓ |
+| 2022-06-24 | $341.66 | S&P Global Q1 2022 results | 2.75 | +0.45 | 1.35x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +32.3% | -10.2pp | +20.4% | ✓ |
+| 2022-07-01 | $343.33 | S&P Global Q1 2022 results | 2.75 | +0.44 | 1.38x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +32.1% | -14.5pp | +20.2% | ✓ |
+| 2022-07-08 | $352.48 | S&P Global Q1 2022 results | 2.75 | +0.36 | 1.51x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +31.4% | -14.9pp | +17.3% | ✓ |
+| 2022-07-15 | $349.45 | S&P Global Q1 2022 results | 2.75 | +0.39 | 1.46x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +40.1% | -9.1pp | +18.7% | ✓ |
+| 2022-07-22 | $361.94 | S&P Global Q1 2022 results | 2.75 | +0.29 | 1.64x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +36.6% | -7.2pp | +14.9% | ✓ |
+| 2022-07-29 | $376.93 | S&P Global Q1 2022 results | 2.75 | +0.16 | 1.91x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +31.8% | -3.6pp | +10.8% | ✓ |
+| 2022-08-03 | $368.16 | S&P Global Q2 2022 results | 2.50 | +0.33 | 1.10x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +34.0% | +2.1pp | +13.8% | ✓ |
+| 2022-08-12 | $391.92 | S&P Global Q2 2022 results | 2.50 | +0.06 | 1.31x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +25.4% | -2.6pp | +7.5% | ✓ |
+| 2022-08-19 | $379.92 | S&P Global Q2 2022 results | 2.50 | +0.24 | 1.19x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +32.4% | -3.4pp | +11.4% | ✓ |
+| 2022-08-26 | $364.06 | S&P Global Q2 2022 results | 2.50 | +0.37 | 1.05x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +39.6% | -2.0pp | +16.9% | ✓ |
+| 2022-09-02 | $347.63 | S&P Global Q2 2022 results | 2.50 | +0.52 | 0.92x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +49.7% | +2.6pp | +23.0% | ✓ |
+| 2022-09-09 | $369.42 | S&P Global Q2 2022 results | 2.50 | +0.34 | 1.08x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +41.6% | +3.9pp | +16.4% | ✓ |
+| 2022-09-16 | $346.07 | S&P Global Q2 2022 results | 2.50 | +0.53 | 0.91x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +54.5% | +5.4pp | +25.0% | ✓ |
+| 2022-09-23 | $317.86 | S&P Global Q2 2022 results | 2.50 | +0.67 | 0.73x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +66.2% | +7.7pp | +36.9% | ✓ |
+| 2022-09-30 | $305.35 | S&P Global Q2 2022 results | 2.50 | +0.74 | 0.67x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +71.5% | +7.1pp | +43.5% | ✓ |
+| 2022-10-07 | $304.53 | S&P Global Q2 2022 results | 2.50 | +0.75 | 0.66x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +68.7% | +8.4pp | +44.9% | ✓ |
+| 2022-10-14 | $286.62 | S&P Global Q2 2022 results | 2.50 | +0.84 | 0.57x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +86.6% | +19.4pp | +55.0% | ✓ |
+| 2022-10-21 | $295.94 | S&P Global Q2 2022 results | 2.50 | +0.80 | 0.62x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +79.2% | +19.7pp | +51.2% | ✓ |
+| 2022-10-28 | $326.93 | S&P Global Q3 2022 results | 2.00 | -0.11 | 1.02x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +51.2% | -1.5pp | +37.8% | ✓ |
+| 2022-11-04 | $316.40 | S&P Global Q3 2022 results | 2.00 | -0.01 | 0.93x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +55.8% | +0.8pp | +43.2% | ✓ |
+| 2022-11-11 | $356.20 | S&P Global Q3 2022 results | 2.00 | -0.34 | 1.28x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +44.4% | -9.2pp | +27.8% | ✓ |
+| 2022-11-18 | $345.87 | S&P Global Q3 2022 results | 2.00 | -0.26 | 1.18x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +47.5% | -4.4pp | +32.2% | ✓ |
+| 2022-11-25 | $357.91 | S&P Global Q3 2022 results | 2.00 | -0.34 | 1.29x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +47.2% | -4.7pp | +28.3% | ✓ |
+| 2022-12-02 | $359.80 | S&P Global Q3 2022 results | 2.00 | -0.35 | 1.30x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +47.3% | -4.3pp | +28.1% | ✓ |
+| 2022-12-09 | $346.75 | S&P Global Q3 2022 results | 2.00 | -0.25 | 1.17x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +50.1% | -7.1pp | +33.5% | ✓ |
+| 2022-12-16 | $339.60 | S&P Global Q3 2022 results | 2.00 | -0.19 | 1.09x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +50.2% | -11.2pp | +36.8% | ✓ |
+| 2022-12-23 | $332.94 | S&P Global Q3 2022 results | 2.00 | -0.13 | 1.04x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +51.8% | -7.1pp | +39.8% | ✓ |
+| 2022-12-30 | $334.94 | S&P Global Q3 2022 results | 2.00 | -0.15 | 1.04x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +50.9% | -6.5pp | +39.3% | ✓ |
+| 2023-01-06 | $347.84 | S&P Global Q3 2022 results | 2.00 | -0.24 | 1.16x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +44.2% | -12.8pp | +34.4% | ✓ |
+| 2023-01-13 | $366.38 | S&P Global Q3 2022 results | 2.00 | -0.37 | 1.34x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +33.7% | -15.6pp | +27.9% | ✗ |
+| 2023-01-20 | $368.05 | S&P Global Q3 2022 results | 2.00 | -0.38 | 1.35x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +38.3% | -16.1pp | +27.6% | ✗ |
+| 2023-01-27 | $373.39 | S&P Global Q3 2022 results | 2.00 | -0.52 | 1.42x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +41.4% | -9.7pp | +26.1% | ✗ |
+| 2023-02-03 | $372.91 | S&P Global Q3 2022 results | 2.00 | -0.40 | 1.40x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +41.0% | -7.3pp | +26.6% | ✓ |
+| 2023-02-10 | $363.86 | S&P Global Q4 2022 results | 2.00 | -0.24 | 1.16x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +43.6% | -8.0pp | +30.2% | ✓ |
+| 2023-02-17 | $360.83 | S&P Global Q4 2022 results | 2.00 | -0.21 | 1.12x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +51.6% | -1.5pp | +31.8% | ✓ |
+| 2023-02-24 | $343.38 | S&P Global Q4 2022 results | 2.00 | -0.07 | 0.98x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +57.1% | +3.0pp | +39.1% | ✓ |
+| 2023-03-03 | $346.07 | S&P Global Q4 2022 results | 2.00 | -0.08 | 0.99x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +55.1% | +7.2pp | +38.6% | ✓ |
+| 2023-03-10 | $326.54 | S&P Global Q4 2022 results | 2.00 | +0.08 | 0.86x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +51.8% | +3.0pp | +47.4% | ✓ |
+| 2023-03-17 | $334.49 | S&P Global Q4 2022 results | 2.00 | +0.03 | 0.90x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +50.0% | +1.4pp | +44.2% | ✓ |
+| 2023-03-24 | $334.52 | S&P Global Q4 2022 results | 2.00 | +0.03 | 0.90x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +52.8% | +4.3pp | +44.7% | ✓ |
+| 2023-03-31 | $344.77 | S&P Global Q4 2022 results | 2.00 | -0.04 | 0.96x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +47.9% | +8.7pp | +40.8% | ✓ |
+| 2023-04-06 | $340.86 | S&P Global Q4 2022 results | 2.00 | -0.01 | 0.93x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +34.6% | +7.7pp | +42.8% | ✓ |
+| 2023-04-14 | $347.86 | S&P Global Q4 2022 results | 2.00 | -0.06 | 0.98x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +37.7% | +3.6pp | +40.0% | ✓ |
+| 2023-04-21 | $351.72 | S&P Global Q4 2022 results | 2.00 | -0.09 | 1.00x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +29.7% | +1.7pp | +38.8% | ✓ |
+| 2023-04-28 | $362.58 | S&P Global Q1 2023 results | 2.20 | -1.24 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +34.2% | -1.6pp | +35.0% | ✗ |
+| 2023-05-05 | $354.19 | S&P Global Q1 2023 results | 2.20 | -1.19 | 344.68x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +44.9% | +5.0pp | +38.7% | ✗ |
+| 2023-05-12 | $359.34 | S&P Global Q1 2023 results | 2.20 | -1.22 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +46.3% | +1.3pp | +37.1% | ✗ |
+| 2023-05-19 | $365.42 | S&P Global Q1 2023 results | 2.20 | -1.24 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +45.5% | +0.1pp | +35.3% | ✗ |
+| 2023-05-26 | $360.78 | S&P Global Q1 2023 results | 2.20 | -1.22 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +43.1% | +2.0pp | +37.4% | ✗ |
+| 2023-06-02 | $376.03 | S&P Global Q1 2023 results | 2.20 | -1.29 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +38.5% | -3.2pp | +32.2% | ✗ |
+| 2023-06-09 | $384.00 | S&P Global Q1 2023 results | 2.20 | -1.32 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +36.0% | -6.7pp | +29.9% | ✗ |
+| 2023-06-16 | $395.21 | S&P Global Q1 2023 results | 2.20 | -1.37 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +29.6% | -10.3pp | +26.6% | ✓ |
+| 2023-06-23 | $390.36 | S&P Global Q1 2023 results | 2.20 | -1.35 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +33.7% | -8.1pp | +28.5% | ✗ |
+| 2023-06-30 | $400.89 | S&P Global Q1 2023 results | 2.20 | -1.39 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +33.4% | -9.2pp | +25.5% | ✗ |
+| 2023-07-07 | $393.25 | S&P Global Q1 2023 results | 2.20 | -1.36 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +36.7% | -8.0pp | +28.2% | ✗ |
+| 2023-07-14 | $416.02 | S&P Global Q1 2023 results | 2.20 | -1.46 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +29.2% | -13.0pp | +21.5% | ✓ |
+| 2023-07-21 | $423.29 | S&P Global Q1 2023 results | 2.20 | -1.49 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +25.1% | -17.1pp | +19.6% | ✓ |
+| 2023-07-28 | $392.16 | S&P Global Q2 2023 results | 1.55 | -2.02 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +37.1% | -5.3pp | +29.3% | ✗ |
+| 2023-08-04 | $386.84 | S&P Global Q2 2023 results | 1.55 | -1.99 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +47.4% | +3.0pp | +31.4% | ✗ |
+| 2023-08-11 | $387.69 | S&P Global Q2 2023 results | 1.55 | -1.99 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +45.3% | -0.6pp | +31.5% | ✗ |
+| 2023-08-18 | $382.00 | S&P Global Q2 2023 results | 1.55 | -1.96 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +46.2% | -4.4pp | +33.8% | ✗ |
+| 2023-08-25 | $388.27 | S&P Global Q2 2023 results | 1.55 | -1.99 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +43.8% | -5.5pp | +31.9% | ✗ |
+| 2023-09-01 | $394.24 | S&P Global Q2 2023 results | 1.55 | -2.01 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +41.0% | -5.1pp | +30.1% | ✗ |
+| 2023-09-08 | $390.71 | S&P Global Q2 2023 results | 1.55 | -1.99 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +41.6% | -7.2pp | +31.4% | ✗ |
+| 2023-09-15 | $388.26 | S&P Global Q2 2023 results | 1.55 | -1.98 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +42.0% | -9.8pp | +32.4% | ✗ |
+| 2023-09-22 | $371.69 | S&P Global Q2 2023 results | 1.55 | -1.90 | 226.48x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +38.0% | -20.2pp | +38.3% | ✗ |
+| 2023-09-29 | $365.41 | S&P Global Q2 2023 results | 1.55 | -1.88 | 33.81x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +36.5% | -22.1pp | +40.5% | ✗ |
+| 2023-10-06 | $364.06 | S&P Global Q2 2023 results | 1.55 | -1.86 | 26.42x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +33.4% | -26.2pp | +40.9% | ✗ |
+| 2023-10-13 | $363.71 | S&P Global Q2 2023 results | 1.55 | -1.86 | 21.72x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +33.8% | -23.1pp | +40.8% | ✗ |
+| 2023-10-20 | $350.03 | S&P Global Q2 2023 results | 1.55 | -1.80 | 10.20x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +38.6% | -24.2pp | +46.0% | ✗ |
+| 2023-10-27 | $342.48 | S&P Global Q2 2023 results | 1.55 | -1.76 | 7.53x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +47.2% | -23.1pp | +49.2% | ✗ |
+| 2023-11-03 | $382.90 | S&P Global Q3 2023 results | 2.15 | -1.32 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +31.7% | -28.7pp | +33.4% | ✓ |
+| 2023-11-10 | $393.97 | S&P Global Q3 2023 results | 2.15 | -1.36 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +27.2% | -30.7pp | +29.7% | ✓ |
+| 2023-11-17 | $408.12 | S&P Global Q3 2023 results | 2.15 | -1.41 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +21.6% | -29.2pp | +25.1% | ✓ |
+| 2023-11-24 | $415.10 | S&P Global Q3 2023 results | 2.15 | -1.44 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +19.6% | -30.4pp | +23.0% | ✓ |
+| 2023-12-01 | $422.00 | S&P Global Q3 2023 results | 2.15 | -1.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +19.1% | -32.1pp | +20.8% | ✓ |
+| 2023-12-08 | $415.38 | S&P Global Q3 2023 results | 2.15 | -1.43 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +20.3% | -31.4pp | +22.7% | ✓ |
+| 2023-12-15 | $435.78 | S&P Global Q3 2023 results | 2.15 | -1.52 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +16.4% | -31.3pp | +16.8% | ✓ |
+| 2023-12-22 | $434.84 | S&P Global Q3 2023 results | 2.15 | -1.51 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +21.7% | -25.9pp | +17.2% | ✓ |
+| 2023-12-29 | $440.52 | S&P Global Q3 2023 results | 2.15 | -1.53 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +22.0% | -25.7pp | +15.8% | ✓ |
+| 2024-01-05 | $427.93 | S&P Global Q3 2023 results | 2.15 | -1.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +26.3% | -23.8pp | +19.3% | ✓ |
+| 2024-01-12 | $437.00 | S&P Global Q3 2023 results | 2.15 | -1.51 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +26.3% | -22.5pp | +17.0% | ✓ |
+| 2024-01-19 | $441.95 | S&P Global Q3 2023 results | 2.15 | -1.52 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +25.3% | -21.0pp | +15.9% | ✓ |
+| 2024-01-26 | $446.60 | S&P Global Q3 2023 results | 2.15 | -1.54 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +21.5% | -23.5pp | +14.8% | ✓ |
+| 2024-02-02 | $454.05 | S&P Global Q3 2023 results | 2.15 | -1.57 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +17.9% | -25.7pp | +12.9% | ✓ |
+| 2024-02-09 | $437.89 | S&P Global Q4 2023 results | 2.60 | -0.62 | 4.21x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +3.1% | -38.2pp | +16.8% | ✓ |
+| 2024-02-16 | $423.57 | S&P Global Q4 2023 results | 2.60 | -0.55 | 3.44x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -1.5% | -40.9pp | +20.2% | ✓ |
+| 2024-02-23 | $438.27 | S&P Global Q4 2023 results | 2.60 | -0.62 | 4.14x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -5.9% | -43.1pp | +15.6% | ✓ |
+| 2024-03-01 | $429.01 | S&P Global Q4 2023 results | 2.60 | -0.57 | 3.62x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +4.8% | -31.8pp | +17.7% | ✓ |
+| 2024-03-08 | $428.23 | S&P Global Q4 2023 results | 2.60 | -0.56 | 3.59x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +7.4% | -26.8pp | +17.6% | ✓ |
+| 2024-03-15 | $422.81 | S&P Global Q4 2023 results | 2.60 | -0.53 | 3.30x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +1.7% | -30.7pp | +18.9% | ✓ |
+| 2024-03-22 | $419.13 | S&P Global Q4 2023 results | 2.60 | -0.51 | 3.09x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +3.1% | -24.2pp | +19.6% | ✓ |
+| 2024-03-28 | $425.45 | S&P Global Q4 2023 results | 2.60 | -0.54 | 3.35x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -2.7% | -26.7pp | +17.4% | ✓ |
+| 2024-04-05 | $431.59 | S&P Global Q4 2023 results | 2.60 | -0.57 | 3.60x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +1.6% | -27.7pp | +15.5% | ✓ |
+| 2024-04-12 | $417.81 | S&P Global Q4 2023 results | 2.60 | -0.49 | 2.96x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +1.2% | -34.6pp | +19.1% | ✓ |
+| 2024-04-19 | $412.56 | S&P Global Q4 2023 results | 2.60 | -0.45 | 2.78x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +9.1% | -37.3pp | +20.5% | ✓ |
+| 2024-04-26 | $415.78 | S&P Global Q1 2024 results | 2.80 | -0.20 | 2.52x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +6.9% | -36.5pp | +19.4% | ✓ |
+| 2024-05-03 | $425.18 | S&P Global Q1 2024 results | 2.80 | -0.26 | 2.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +2.0% | -41.8pp | +16.5% | ✓ |
+| 2024-05-10 | $431.57 | S&P Global Q1 2024 results | 2.80 | -0.30 | 2.98x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -0.9% | -45.3pp | +14.4% | ✓ |
+| 2024-05-17 | $441.88 | S&P Global Q1 2024 results | 2.80 | -0.35 | 3.32x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -7.1% | -49.4pp | +11.2% | ✓ |
+| 2024-05-24 | $438.24 | S&P Global Q1 2024 results | 2.80 | -0.33 | 3.12x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -3.0% | -46.6pp | +11.7% | ✓ |
+| 2024-05-31 | $427.51 | S&P Global Q1 2024 results | 2.80 | -0.26 | 2.75x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +1.0% | -45.2pp | +14.1% | ✓ |
+| 2024-06-07 | $428.74 | S&P Global Q1 2024 results | 2.80 | -0.26 | 2.77x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +0.8% | -40.1pp | +13.4% | ✓ |
+| 2024-06-14 | $434.40 | S&P Global Q1 2024 results | 2.80 | -0.30 | 2.95x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -1.8% | -41.2pp | +11.5% | ✓ |
+| 2024-06-21 | $439.22 | S&P Global Q1 2024 results | 2.80 | -0.32 | 3.07x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -4.7% | -44.6pp | +9.9% | ✓ |
+| 2024-06-28 | $446.00 | S&P Global Q1 2024 results | 2.80 | -0.36 | 3.30x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -6.8% | -43.4pp | +7.8% | ✓ |
+| 2024-07-05 | $453.27 | S&P Global Q1 2024 results | 2.80 | -0.40 | 3.61x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +4.3% | -32.7pp | +5.7% | ✓ |
+| 2024-07-12 | $478.32 | S&P Global Q1 2024 results | 2.80 | -0.51 | 5.03x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -3.3% | -40.7pp | -0.1% | ✓ |
+| 2024-07-19 | $479.84 | S&P Global Q1 2024 results | 2.80 | -0.51 | 5.15x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +0.9% | -37.2pp | -0.7% | ✓ |
+| 2024-07-26 | $489.82 | S&P Global Q1 2024 results | 2.80 | -0.55 | 6.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -6.4% | -44.9pp | -3.0% | ✓ |
+| 2024-07-31 | $484.73 | S&P Global Q2 2024 results | 2.95 | -0.22 | 3.53x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -7.9% | -45.3pp | -2.2% | ✓ |
+| 2024-08-09 | $488.51 | S&P Global Q2 2024 results | 2.95 | -0.23 | 3.62x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -10.1% | -58.0pp | -3.6% | ✓ |
+| 2024-08-16 | $490.87 | S&P Global Q2 2024 results | 2.95 | -0.24 | 3.72x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -8.3% | -51.0pp | -4.6% | ✓ |
+| 2024-08-23 | $500.59 | S&P Global Q2 2024 results | 2.95 | -0.28 | 4.11x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -7.4% | -46.2pp | -6.9% | ✓ |
+| 2024-08-30 | $513.24 | S&P Global Q2 2024 results | 2.95 | -0.33 | 4.87x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -7.3% | -46.4pp | -9.5% | ✓ |
+| 2024-09-06 | $510.64 | S&P Global Q2 2024 results | 2.95 | -0.31 | 4.64x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -6.7% | -51.9pp | -9.3% | ✓ |
+| 2024-09-13 | $519.45 | S&P Global Q2 2024 results | 2.95 | -0.34 | 5.13x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -14.9% | -53.5pp | -11.2% | ✓ |
+| 2024-09-20 | $523.67 | S&P Global Q2 2024 results | 2.95 | -0.36 | 5.46x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -16.7% | -53.4pp | -12.3% | ✓ |
+| 2024-09-27 | $512.72 | S&P Global Q2 2024 results | 2.95 | -0.31 | 4.57x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -15.4% | -52.9pp | -10.7% | ✓ |
+| 2024-10-04 | $512.17 | S&P Global Q2 2024 results | 2.95 | -0.30 | 4.53x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -18.8% | -55.7pp | -10.8% | ✓ |
+| 2024-10-11 | $522.01 | S&P Global Q2 2024 results | 2.95 | -0.34 | 5.20x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -15.9% | -52.8pp | -12.7% | ✓ |
+| 2024-10-18 | $524.80 | S&P Global Q2 2024 results | 2.95 | -0.34 | 5.35x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -12.0% | -45.1pp | -13.4% | ✓ |
+| 2024-10-25 | $490.61 | S&P Global Q3 2024 results | 3.15 | +0.43 | 1.94x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -1.4% | -35.2pp | -7.4% | ✓ |
+| 2024-11-01 | $483.31 | S&P Global Q3 2024 results | 3.15 | +0.48 | 1.84x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +3.6% | -31.3pp | -6.0% | ✓ |
+| 2024-11-08 | $502.82 | S&P Global Q3 2024 results | 3.15 | +0.36 | 2.11x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -0.1% | -25.5pp | -9.6% | ✓ |
+| 2024-11-15 | $503.29 | S&P Global Q3 2024 results | 3.15 | +0.36 | 2.12x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +1.0% | -30.3pp | -9.7% | ✓ |
+| 2024-11-22 | $514.46 | S&P Global Q3 2024 results | 3.15 | +0.29 | 2.29x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | -11.7% | - |
+| 2024-11-29 | $522.51 | S&P Global Q3 2024 results | 3.15 | +0.23 | 2.45x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | -13.2% | - |
+| 2024-12-06 | $516.77 | S&P Global Q3 2024 results | 3.15 | +0.27 | 2.33x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | -12.4% | - |
+| 2024-12-13 | $505.75 | S&P Global Q3 2024 results | 3.15 | +0.37 | 2.12x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | -10.7% | - |
+| 2024-12-20 | $491.81 | S&P Global Q3 2024 results | 3.15 | +0.46 | 1.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -8.4% | - |
+| 2024-12-27 | $501.80 | S&P Global Q3 2024 results | 3.15 | +0.40 | 2.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | -10.5% | - |
+| 2025-01-03 | $499.57 | S&P Global Q3 2024 results | 3.15 | +0.42 | 2.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | -10.4% | - |
+| 2025-01-10 | $482.72 | S&P Global Q3 2024 results | 3.15 | +0.52 | 1.76x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -7.7% | - |
+| 2025-01-17 | $501.86 | S&P Global Q3 2024 results | 3.15 | +0.40 | 2.03x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | -11.6% | - |
+| 2025-01-24 | $513.75 | S&P Global Q3 2024 results | 3.15 | +0.33 | 2.21x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | -14.0% | - |
+| 2025-01-31 | $521.41 | S&P Global Q3 2024 results | 3.15 | +0.28 | 2.34x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | -15.7% | - |
+| 2025-02-07 | $519.15 | S&P Global Q3 2024 results | 3.15 | +0.30 | 2.30x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | -15.5% | - |
+| 2025-02-12 | $531.51 | S&P Global Q4 2024 results | 2.80 | -0.60 | 3.64x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -17.3% | - |
+| 2025-02-21 | $533.40 | S&P Global Q4 2024 results | 2.80 | -0.60 | 3.65x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -17.5% | - |
+| 2025-02-28 | $533.74 | S&P Global Q4 2024 results | 2.80 | -0.60 | 3.67x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -17.5% | - |
+| 2025-03-07 | $497.00 | S&P Global Q4 2024 results | 2.80 | -0.33 | 2.52x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -11.4% | - |
+| 2025-03-14 | $486.49 | S&P Global Q4 2024 results | 2.80 | -0.22 | 2.29x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -9.4% | - |
+| 2025-03-21 | $497.88 | S&P Global Q4 2024 results | 2.80 | -0.34 | 2.54x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -11.4% | - |
+| 2025-03-28 | $502.51 | S&P Global Q4 2024 results | 2.80 | -0.37 | 2.65x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -12.1% | - |
+| 2025-04-04 | $451.50 | S&P Global Q4 2024 results | 2.80 | +0.12 | 1.69x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | -2.1% | - |
+| 2025-04-11 | $465.14 | S&P Global Q4 2024 results | 2.80 | +0.01 | 1.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | -4.8% | - |
+| 2025-04-17 | $462.88 | S&P Global Q4 2024 results | 2.80 | +0.03 | 1.86x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | -4.3% | - |
+| 2025-04-25 | $480.00 | S&P Global Q4 2024 results | 2.80 | -0.14 | 2.16x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -7.7% | - |
+| 2025-04-30 | $500.05 | S&P Global Q1 2025 results | 2.30 | -0.64 | 2.14x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -11.4% | - |
+| 2025-05-09 | $507.73 | S&P Global Q1 2025 results | 2.30 | -0.72 | 2.29x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -12.5% | - |
+| 2025-05-16 | $522.46 | S&P Global Q1 2025 results | 2.30 | -0.85 | 2.61x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -14.8% | - |
+| 2025-05-23 | $510.02 | S&P Global Q1 2025 results | 2.30 | -0.74 | 2.34x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -12.5% | - |
+| 2025-05-30 | $512.86 | S&P Global Q1 2025 results | 2.30 | -0.77 | 2.39x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -12.7% | - |
+| 2025-06-06 | $519.36 | S&P Global Q1 2025 results | 2.30 | -0.83 | 2.54x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -13.6% | - |
+| 2025-06-13 | $501.49 | S&P Global Q1 2025 results | 2.30 | -0.64 | 2.17x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -10.3% | - |
+| 2025-06-20 | $504.20 | S&P Global Q1 2025 results | 2.30 | -0.67 | 2.22x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -10.6% | - |
+| 2025-06-27 | $517.71 | S&P Global Q1 2025 results | 2.30 | -0.81 | 2.50x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -12.4% | - |
+| 2025-07-03 | $529.61 | S&P Global Q1 2025 results | 2.30 | -0.92 | 2.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -14.2% | - |
+| 2025-07-11 | $527.07 | S&P Global Q1 2025 results | 2.30 | -0.89 | 2.72x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -13.9% | - |
+| 2025-07-18 | $524.38 | S&P Global Q1 2025 results | 2.30 | -0.87 | 2.66x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -13.6% | - |
+| 2025-07-25 | $534.95 | S&P Global Q1 2025 results | 2.30 | -0.95 | 2.93x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -15.4% | - |
+| 2025-08-01 | $545.66 | S&P Global Q2 2025 results | 2.15 | -1.23 | 3.35x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | -17.0% | - |
+| 2025-08-08 | $556.87 | S&P Global Q2 2025 results | 2.15 | -1.29 | 3.70x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | -18.4% | - |
+| 2025-08-15 | $556.47 | S&P Global Q2 2025 results | 2.15 | -1.29 | 3.69x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | -18.1% | - |
+| 2025-08-22 | $556.66 | S&P Global Q2 2025 results | 2.15 | -1.29 | 3.70x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | -18.0% | - |
+| 2025-08-29 | $548.44 | S&P Global Q2 2025 results | 2.15 | -1.24 | 3.39x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | -16.9% | - |
+| 2025-09-05 | $538.06 | S&P Global Q2 2025 results | 2.15 | -1.17 | 3.01x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -15.5% | - |
+| 2025-09-12 | $544.23 | S&P Global Q2 2025 results | 2.15 | -1.21 | 3.20x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | -16.2% | - |
+| 2025-09-19 | $507.16 | S&P Global Q2 2025 results | 2.15 | -0.87 | 2.28x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -9.6% | - |
+| 2025-09-26 | $487.18 | S&P Global Q2 2025 results | 2.15 | -0.64 | 1.93x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -5.1% | - |
+| 2025-10-03 | $479.81 | S&P Global Q2 2025 results | 2.15 | -0.57 | 1.82x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | -2.2% | - |
+| 2025-10-10 | $486.10 | S&P Global Q2 2025 results | 2.15 | -0.62 | 1.91x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -1.8% | - |
+| 2025-10-17 | $473.19 | S&P Global Q2 2025 results | 2.15 | -0.50 | 1.73x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | +2.4% | - |
+| 2025-10-24 | $489.45 | S&P Global Q2 2025 results | 2.15 | -0.65 | 1.96x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -0.1% | - |
+| 2025-10-31 | $487.21 | S&P Global Q3 2025 results | 2.45 | -0.13 | 1.65x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | +0.9% | - |
+| 2025-11-07 | $496.42 | S&P Global Q3 2025 results | 2.45 | -0.21 | 1.77x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | -1.8% | - |
+| 2025-11-14 | $493.90 | S&P Global Q3 2025 results | 2.45 | -0.18 | 1.74x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | -3.6% | - |
+| 2025-11-21 | $493.60 | S&P Global Q3 2025 results | 2.45 | -0.18 | 1.73x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2025-11-28 | $498.83 | S&P Global Q3 2025 results | 2.45 | -0.22 | 1.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2025-12-05 | $498.52 | S&P Global Q3 2025 results | 2.45 | -0.22 | 1.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2025-12-12 | $501.03 | S&P Global Q3 2025 results | 2.45 | -0.23 | 1.83x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
+| 2025-12-19 | $512.60 | S&P Global Q3 2025 results | 2.45 | -0.35 | 2.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2025-12-26 | $529.45 | S&P Global Q3 2025 results | 2.45 | -0.56 | 2.29x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-01-02 | $512.66 | S&P Global Q3 2025 results | 2.45 | -0.35 | 2.01x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-01-09 | $541.94 | S&P Global Q3 2025 results | 2.45 | -0.68 | 2.39x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-01-16 | $546.35 | S&P Global Q3 2025 results | 2.45 | -0.71 | 2.43x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-01-23 | $533.61 | S&P Global Q3 2025 results | 2.45 | -0.58 | 2.17x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-01-30 | $527.79 | S&P Global Q3 2025 results | 2.45 | -0.51 | 2.06x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2026-02-06 | $439.28 | S&P Global Q3 2025 results | 2.45 | +0.44 | 1.04x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2026-02-11 | $390.76 | S&P Global Q4 2025 results | 2.45 | +0.46 | 1.04x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 2/8 FAIR | - | - | - | - |
+| 2026-02-20 | $417.48 | S&P Global Q4 2025 results | 2.45 | +0.23 | 1.31x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-02-27 | $441.88 | S&P Global Q4 2025 results | 2.45 | +0.05 | 1.62x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-03-06 | $452.36 | S&P Global Q4 2025 results | 2.45 | -0.03 | 1.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | - | - | - | - |
+| 2026-03-13 | $422.49 | S&P Global Q4 2025 results | 2.45 | +0.20 | 1.34x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-03-20 | $424.43 | S&P Global Q4 2025 results | 2.45 | +0.19 | 1.36x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-03-27 | $406.24 | S&P Global Q4 2025 results | 2.45 | +0.34 | 1.15x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
+| 2026-04-02 | $431.16 | S&P Global Q4 2025 results | 2.45 | +0.15 | 1.44x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-04-10 | $415.42 | S&P Global Q4 2025 results | 2.45 | +0.26 | 1.25x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
+| 2026-04-17 | $442.57 | S&P Global Q4 2025 results | 2.45 | +0.05 | 1.60x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-04-24 | $436.79 | S&P Global Q4 2025 results | 2.45 | +0.10 | 1.51x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-04-29 | $433.19 | S&P Global Q1 2026 results | 2.60 | +0.27 | 1.46x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-05-08 | $420.12 | S&P Global Q1 2026 results | 2.60 | +0.38 | 1.29x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-05-15 | $403.15 | S&P Global Q1 2026 results | 2.60 | +0.51 | 1.10x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2026-05-22 | $417.60 | S&P Global Q1 2026 results | 2.60 | +0.40 | 1.25x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
+| 2026-05-29 | $424.00 | S&P Global Q1 2026 results | 2.60 | +0.34 | 1.32x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-06-05 | $424.44 | S&P Global Q1 2026 results | 2.60 | +0.34 | 1.33x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-06-12 | $418.91 | S&P Global Q1 2026 results | 2.60 | +0.39 | 1.26x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-06-18 | $410.92 | S&P Global Q1 2026 results | 2.60 | +0.45 | 1.17x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2026-06-26 | $408.16 | S&P Global Q1 2026 results | 2.60 | +0.47 | 1.14x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | - | - | - | - |
+| 2026-07-02 | $439.89 | S&P Global Q1 2026 results | 2.60 | +0.22 | 1.53x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-07-10 | $430.50 | S&P Global Q1 2026 results | 2.60 | +0.29 | 1.40x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-07-17 | $450.84 | S&P Global Q1 2026 results | 2.60 | +0.13 | 1.70x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-07-24 | $426.40 | S&P Global Q1 2026 results | 2.60 | +0.33 | 1.34x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-07-29 | $419.64 | S&P Global Q2 2026 results | 2.45 | +0.83 | 0.65x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-08-07 | $408.19 | S&P Global Q2 2026 results | 2.45 | +0.88 | 0.60x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-08-14 | $418.80 | S&P Global Q2 2026 results | 2.45 | +0.83 | 0.65x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-08-21 | $431.29 | S&P Global Q2 2026 results | 2.45 | +0.76 | 0.70x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-08-28 | $442.89 | S&P Global Q2 2026 results | 2.45 | +0.70 | 0.77x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-09-04 | $443.51 | S&P Global Q2 2026 results | 2.45 | +0.70 | 0.76x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-09-11 | $410.71 | S&P Global Q2 2026 results | 2.45 | +0.87 | 0.60x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-09-18 | $405.32 | S&P Global Q2 2026 results | 2.45 | +0.89 | 0.57x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-09-25 | $403.30 | S&P Global Q2 2026 results | 2.45 | +0.90 | 0.56x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-10-02 | $386.27 | S&P Global Q2 2026 results | 2.45 | +0.96 | 0.49x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-10-09 | $407.82 | S&P Global Q2 2026 results | 2.45 | +0.88 | 0.58x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-10-16 | $429.64 | S&P Global Q2 2026 results | 2.45 | +0.77 | 0.68x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-10-23 | $450.31 | S&P Global Q2 2026 results | 2.45 | +0.66 | 0.79x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-10-28 | $449.33 | S&P Global Q3 2026 results | 2.30 | +0.54 | 0.79x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2026-11-06 | $467.80 | S&P Global Q3 2026 results | 2.30 | +0.43 | 0.90x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
+| 2026-11-13 | $473.59 | S&P Global Q3 2026 results | 2.30 | +0.40 | 0.93x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
+| 2026-11-20 | $439.57 | S&P Global Q3 2026 results | 2.30 | +0.59 | 0.73x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
