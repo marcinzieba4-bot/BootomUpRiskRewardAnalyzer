@@ -22641,7 +22641,13 @@ Controls and checks (before any 2018-2021 outcome):
   release sentences that name the next year were quoted only up to their first sentence for that reason).
 - **Regression:** the 522 models of 2008-2017 rebuild byte for byte. The shared code is untouched (the builder and the firewall's SPGI
   plants only), so no other ticker's model changes.
-- **Firewall:** run after this build is committed and pushed; its result follows in the next commit, before any outcome.
+- **Firewall** (run after the build was committed and pushed, before any outcome): passes at the 23 cutoffs above (the day after each
+  new fact and the day after the range: 527 to 731 dates each), 0 files changed and no planted text; every planted guide now also carries
+  an operating margin guide on a planted base. The rebuild at 2022-01-01 covers all 731 dates byte for byte. As positive controls (built
+  offline): a planted print published 2019-06-05 (a Wednesday, before the open) with its own source reaches 2019-06-07 and not
+  2019-05-31; the same print citing the Q2 2019 release's source stops at the builder's check that every source is public on AS_OF; a
+  planted FY2019 margin guide of 2019-06-05 turns the guided step on from 2019-06-07 and not before; and a planted dividend of 2019-06-05
+  reaches 2019-06-07 and not 2019-05-31.
 
 Seen in the build (method behaviour, not tuned):
 - **RICH on 206 dates, CHEAP on 1 (2020-03-20) and FAIR on 2 (2020-03-27, 2020-04-03); legacy tier AVOID on 202, WATCHLIST on 6 and
