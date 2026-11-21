@@ -24100,7 +24100,7 @@ Controls and checks (before any outcome):
   model dated before its publication: 42 controls, of which 39 change the first weekly date on or after it and 3 are inert, superseded
   before any built date (the Q2 2007 print's growth, the Q2 2007 release's FY2007 guide, and the FY2009 guide of the 8-K of 2008-12-11,
   which the Q4 2008 release restates before FY2009 is current).
-- **Leak scan:** 0 hits in 15,974 (model, later token) pairs: the source ids, titles, notes, quotes, rows and figures (four significant digits
+- **Leak scan:** 0 hits in 15,970 (model, later token) pairs (on the final models): the source ids, titles, notes, quotes, rows and figures (four significant digits
   or more) of every fact published after each model's date, after dropping the tokens an earlier fact or the engine already carries. As
   a positive control, the latest print's own notes appear in each of the 105 models.
 - **Self-text scan** (new for this series, after a leak the term check below found): every capitalized word, dollar figure and year in
