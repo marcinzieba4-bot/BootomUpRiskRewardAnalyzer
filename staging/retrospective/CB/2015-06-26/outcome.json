@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "CB",
+ "as_of": "2015-06-26",
+ "computed": "2026-11-21",
+ "data_source": "Yahoo Finance daily closes + dividends (CB, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2015-12-24",
+   "price": 118.19,
+   "dividends": 0.67,
+   "total_return_pct": 14.9,
+   "benchmark_total_return_pct": -0.9,
+   "excess_pct": 15.8,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2016-06-24",
+   "price": 123.94,
+   "dividends": 2.01,
+   "total_return_pct": 21.7,
+   "benchmark_total_return_pct": -1.1,
+   "excess_pct": 22.8,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2017-06-26",
+   "price": 145.4,
+   "dividends": 4.77,
+   "total_return_pct": 45.1,
+   "benchmark_total_return_pct": 20.2,
+   "excess_pct": 24.9,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2018-06-26",
+   "price": 124.57,
+   "dividends": 8.34,
+   "total_return_pct": 28.5,
+   "benchmark_total_return_pct": 36.1,
+   "excess_pct": -7.6,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2017-06-16",
+   "price": 147.58
+  },
+  "low": {
+   "date": "2015-08-25",
+   "price": 99.72
+  },
+  "max_drawdown_pct": -10.3,
+  "return_to_avg_price_m12_m24_pct": 27.7
+ },
+ "scenario_landing_2y": "BULL",
+ "call_check_2y": {
+  "expectation": "RICH: should miss the hurdle and lag the benchmark",
+  "hit": false
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "CYCLICAL",
+   "risk": 2
+  },
+  "today": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Global P&C underwriter; cat season swings, franchise durable",
+   "reviewed": "2026-09-22"
+  }
+ }
+}

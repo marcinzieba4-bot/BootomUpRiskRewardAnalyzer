@@ -5,8 +5,9 @@ SPY), which no model reads. These are hypotheses for the live model, to be teste
 the CB archive or any other ticker's models (retro/README.md, "The one rule"). The point-in-time build, its decisions and its judgement
 calls are in retro/README.md, "CB"; they were committed and fire-walled before any outcome was computed.
 
-The series is ACE Limited (NYSE: ACE), the company behind today's CB, on 314 weekly dates: 105 from 2008-01-04 to 2009-12-31 (the table
-below) and 209 from 2010-01-08 to 2013-12-31 (their own section, scored after their build was committed, pushed and fire-walled). The
+The series is ACE Limited (NYSE: ACE), the company behind today's CB, on 522 weekly dates: 105 from 2008-01-04 to 2009-12-31 (the table
+below), 209 from 2010-01-08 to 2013-12-31 and 208 from 2014-01-10 to 2017-12-29 (Chubb Limited, NYSE: CB, from 2016-01-15), each batch
+in its own section, scored after its build was committed, pushed and fire-walled. The
 call check is the tool's: CHEAP should clear the 15%/yr hurdle or beat SPY over two years, FAIR should land within ±15pp of SPY, RICH should miss the
 hurdle and lag SPY. Judge the series by the return to the average price of months 12-24 and treat the call check as a rough tick
 (retro/README.md, "Scoring a single stock").
@@ -101,7 +102,58 @@ Scored on 2026-11-21, after the point-in-time build was committed and pushed (e1
 - **Scenario landing:** RICH dates landed in BULL on 92 of 93; CHEAP dates in BASE on all 48; FAIR in BASE on 53 and BULL on 15. Never near
   BEAR ($4.95-11.14) or XBULL.
 
-## 2008-2013: the EPS basis, tested on later dates
+## 2014-2017 (208 dates)
+
+Scored on 2026-11-21, after the point-in-time build was committed and pushed (10e94201) and the firewall had passed at 27 cutoffs
+(58f0f57b), in a session that had not opened this file or any CB outcome before. Every date has its 6-month, 1-, 2- and 3-year horizons;
+the 15%/yr hurdle is +32.2% over two years. The text-only correction to 2010-2012 in the same build changed no class, tier or outcome above.
+
+| | dates | 2-yr total return | vs SPY (mean / median) | to the m12-24 average | call check |
+|---|---|---|---|---|---|
+| 2014, all | 51 | +24.1% | +11.5 / +12.5pp | +10.9% | 30 of 51 |
+| 2014, FAIR | 39 | +25.6% | +12.5 / +13.1pp | +11.3% | 30 of 39 |
+| 2014, RICH (January, and October-December) | 12 | +19.2% | +8.4 / +7.6pp | +9.4% | 0 of 12 |
+| 2015, RICH (every date) | 53 | +35.1% | +11.9 / +11.7pp | +21.3% | 2 of 53 |
+| 2016, all | 52 | +14.8% | -20.9 / -20.9pp | +15.3% | 12 of 52 |
+| 2016, RICH (to the Q1 2016 print) | 17 | +27.5% | -14.3 / -14.5pp | +24.2% | 12 of 17 |
+| 2016, CHEAP (from the Q1 2016 print) | 35 | +8.7% | -24.2 / -24.9pp | +11.0% | 0 of 35 |
+| 2017, all | 52 | +7.1% | -16.0 / -17.1pp | -3.5% | 36 of 52 |
+| 2017, CHEAP (to the Q1 2017 print) | 16 | +3.8% | -18.7 / -19.0pp | -1.2% | 0 of 16 |
+| 2017, RICH (from the Q1 2017 print) | 36 | +8.6% | -14.8 / -15.8pp | -4.6% | 36 of 36 |
+| class CHEAP | 51 | +7.1% | -22.5 / -22.7pp | +7.2% | 0 of 51 |
+| class FAIR | 39 | +25.6% | +12.5 / +13.1pp | +11.3% | 30 of 39 |
+| class RICH | 118 | +24.3% | -0.4 / +4.6pp | +12.6% | 50 of 118 |
+| all | 208 | +20.3% | -3.4 / -5.4pp | +11.0% | 80 of 208 |
+
+- **The merger quarters' CHEAP calls were all wrong.** From the Q1 2016 print to the Q1 2017 print (51 dates) the model read CHEAP, BUY on
+  42, only because BASE took the quarter's reported revenue growth with The Chubb Corporation in against a year-ago ACE alone (+56-75%),
+  while the multiple sat at the 81st-94th percentile of its window. The stock then returned +7.1% over two years and lagged SPY by 22.5pp
+  on average (0 of 51 hits; over three years -21.3pp); its two-year price ($123.44-140.08) never came near the BASE case ($197-306). The
+  worst two-year excess of the batch is one of them (2016-06-24, $123.94: +6.3%, -33.6pp). The README's sensitivity test (BASE on the
+  quarter's revenue growth per diluted share) turns all 51 to RICH, which would have hit on all 51: 131 hits for the batch instead of 80.
+- **2014: FAIR on FY13's $10.92 (8.7-10.6x) beat SPY by 12.5pp.** The 39 FAIR dates hit 30 times; the misses beat SPY by more than 15
+  points. The 12 RICH dates (the three of January on FY12's $7.89, the nine of October-December as the price passed $109) also beat SPY
+  (+8.4pp) and missed on all 12.
+- **2015: RICH on every date, on FY14's $8.42 (11.9-14.0x against a window median of 9.0x), and the stock beat SPY by 11.9pp** (+35.1%
+  over two years, cleared the hurdle on 32 of 53; 2 hits). FY2014's GAAP EPS carries $467M of realized losses after tax, but the
+  company's operating $9.79 reads RICH as well: the window's median, which holds the low multiples of 2008-2011, was the anchor that
+  missed, as the stock re-rated from 8.7-10.6x in 2014 to 12-17x in 2015-2017.
+- **2017: RICH from the Q1 2017 print and right on all 36:** at 15.4-17.4x FY16's $8.87 (the 91st-99th percentile) the stock returned
+  +8.6% over two years against SPY's +23.4% (-44.6pp over three years on average). The highest price of the batch,
+  2017-10-20 at $154.00, lagged SPY by 17.0pp.
+- **The classes did not order the relative outcomes this time:** against SPY over two years CHEAP -22.5pp, FAIR +12.5pp, RICH -0.4pp (over
+  three years -21.3pp, +13.4pp and -20.0pp); the legacy tiers BUY (42 dates) -21.6pp, ACCUMULATE (27) -0.6pp, WATCHLIST (34) +10.3pp,
+  AVOID (105) -1.2pp. The disorder is the merger quarters: every CHEAP and BUY date is one of them, and without them the order holds
+  (FAIR +12.5pp over RICH -0.4pp; ACCUMULATE's 18 dates of 2014 +12.4pp).
+- **In absolute terms the stock rose from every date** but one (2016-12-23, -1.4%; up to +50.1% over two years; the largest drawdown within two years
+  averages -16.5%). The lowest price of the batch, 2014-01-24 at $92.19 (RICH, on FY12's $7.89), beat SPY by 14.0pp; the best two-year
+  excess is a 2015 RICH date (2015-07-17, $104.14: +45.0%, +25.2pp).
+- **Robustness again separated nothing:** the 195 dates whose class survives 7 or 8 of the 8 robustness variants hit 71 times (36%); the 13
+  fragile ones, all FAIR, hit 9 (69%).
+- **Scenario landing:** RICH dates landed in BULL on 105 of 118 (BASE on 13); FAIR in BASE on all 39; the CHEAP dates' two-year price sat
+  far under BASE, nearer BASE on 25 and nearer BEAR ($10-11) on 26.
+
+## 2008-2017: the EPS basis, tested on later dates
 
 The 2008-2009 findings proposed that the company's operating EPS (which removes realized gains and losses) would have served an insurer
 better than GAAP. The 2010-2013 dates were not scored when that was written, so they test it. Each of the 314 dates was rebuilt on the
@@ -116,11 +168,18 @@ by the same call check against the same outcomes (hindsight, this file only):
 | 2011 | 52 | 37 | 0 | 48 | +10.4pp |
 | 2012 | 52 | 4 | 0 | 4 | -1.0pp |
 | 2013 | 53 | 35 | 34 | 12 | -3.8pp |
-| all | 314 | 161 | 163 | 131 | |
+| 2014 | 51 | 30 | 0 | 39 | +12.5pp |
+| 2015 | 53 | 2 | 2 | 0 | |
+| 2016 | 52 | 12 | 12 | 0 | |
+| 2017 | 52 | 36 | 36 | 0 | |
+| all | 522 | 241 | 213 | 170 | |
 
 - **The operating basis wins 2009 by 47 calls and loses 2011 by 37: over six years the two tie (161 against 163).** In 2011 the operating
   guides ($5.40-6.75) sat well under GAAP FY10's $9.11 (a year with $451M of realized gains), so the operating basis read RICH on 48
   dates that then beat SPY by 10.4pp. In 2012, the year after the catastrophe year, both bases read RICH.
+- **2014-2017 (scored after their build, the same variant): the operating basis loses 30 calls in 2014 and moves nothing after it.** In
+  2014 the company's FY13 $9.35 (GAAP $10.92 with $541M of realized gains after tax) reads RICH on 39 dates that then beat SPY by 12.5pp;
+  from 2015 both bases read the same class. Over 522 dates GAAP now leads, 241 hits against 213.
 - **Both bases order the relative returns in 2010-2013** (GAAP: CHEAP +16.8pp, FAIR +8.0pp, RICH -1.0pp; operating: CHEAP +22.7pp on 29
   dates, FAIR +15.0pp on 21, RICH +1.8pp on 159). Over 2008-2013 GAAP gives +8.8, +7.4 and +2.0pp, operating +8.3, +13.3 and +1.8pp.
 
@@ -134,7 +193,9 @@ by the same call check against the same outcomes (hindsight, this file only):
    **2010-2013 weakens it** (above): the operating basis would have fixed 2009 and broken 2011, and the two tie over 314 dates. What
    the misses share is narrower: the multiple is set on the single year after a trough (FY08 in 2009 and January 2010, FY11 in 2012),
    whichever basis is used. A hypothesis to test elsewhere: an insurer's anchor needs more than one year (an average of several years'
-   EPS, or book value) rather than a different one-year figure.
+   EPS, or book value) rather than a different one-year figure. **2014-2017 weakens the operating basis again** (30 calls lost in 2014,
+   none gained), and its RICH misses of 2015 are a different failure: not a trough year but a window median set by low past multiples
+   while the stock re-rated (hypothesis 7).
 2. **On a financial, book value may be the better anchor in a crisis.** ACE's book value per share fell 11.4% in 2008 while its GAAP EPS fell 54%; a
    price-to-book cross-check was not part of method r2 and was not computed here.
 3. **A rebounding benchmark punishes the cheapest dates.** The late-2008 CHEAP dates lagged SPY by 13pp despite a positive absolute return;
@@ -142,5 +203,16 @@ by the same call check against the same outcomes (hindsight, this file only):
 4. **In a rising market the RICH call check is unwinnable.** 2012's 48 RICH dates matched SPY exactly (+44.8%) and still scored 0 of 48,
    because the stock cleared the 15%/yr hurdle. The relative ordering (CHEAP > FAIR > RICH against SPY, and BUY > ACCUMULATE >
    WATCHLIST > AVOID in 2010-2013) is the better test of the classes than the hit count.
-5. **Robustness agreement did not predict hits in either batch** (2008-2009: 35 of 95 robust, 10 of 10 fragile; 2010-2013: 77 of 159
-   robust, 39 of 50 fragile). On this series the fragile dates are mostly FAIR, and FAIR's ±15pp band is the easiest to hit.
+5. **Robustness agreement did not predict hits in any batch** (2008-2009: 35 of 95 robust, 10 of 10 fragile; 2010-2013: 77 of 159
+   robust, 39 of 50 fragile; 2014-2017: 71 of 195 robust, 9 of 13 fragile). On this series the fragile dates are mostly FAIR, and FAIR's
+   ±15pp band is the easiest to hit.
+6. **An acquisition "as published" inflates BASE for four quarters and buys the wrong class.** Method r2 takes the latest quarter's reported
+   revenue growth; when that quarter holds an acquired company against a year-ago quarter without it, BASE carries the deal (here +56-75%,
+   paid for with 137 million new shares and $14.3 billion of cash), and every one of CB's 51 such dates read CHEAP and lagged SPY by 22.5pp.
+   Revenue growth per diluted share would have read RICH on all 51 and hit on all 51. Other series in staging have acquisition quarters
+   in BASE as published (the README records the rule's earlier uses); a test there, on dates scored without this result, would say
+   whether a per-share or organic reading deserves a new method version (it would need one, and a full re-run, with the reason recorded).
+7. **A window median set by past low multiples reads a re-rated stock as RICH for years.** CB traded at 5-9x its anchor EPS on most dates
+   of 2008-2011 (the trough years' multiples aside) and at 12-17x from 2015; the ten-year median rose only from 9.0x (2015) to 11.8-12.4x
+   (2017), so 2015's 53 RICH dates beat SPY by 11.9pp while 2017's, at the 91st-99th percentile, lagged it by 14.8pp. Whether the percentile of a multiple says more once the window no longer holds the crisis years (the CB window
+   leaves 2008-2009 only from 2018-2019) is a test for later dates of this series and for others.

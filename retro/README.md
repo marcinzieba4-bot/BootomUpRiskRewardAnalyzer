@@ -23544,6 +23544,9 @@ Judgement calls that could carry hindsight:
 - CYCLICAL rather than DURABLE (label only);
 - the parts of the filings listed above as not read, the merger's proxy and prospectus among them.
 
+The 2014-2017 outcomes were computed only after the firewall passed. The hindsight results are in `staging/retrospective/CB/FINDINGS.md`
+("2014-2017"): hypotheses, never inputs.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
