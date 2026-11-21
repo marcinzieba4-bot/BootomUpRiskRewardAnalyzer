@@ -1,0 +1,2176 @@
+{
+ "_doc": "Point-in-time fact sheet for LLY retrospectives (retro/build_lly.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks of 2007-2009 were accepted before the open or during the session on their release days. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the guides for the current fiscal year (each field from the latest guide that states it) and the latest declared dividend (each vintage's). Eli Lilly's fiscal year is the calendar year. EPS is GAAP diluted EPS from continuing operations before extraordinary items and accounting changes: the company's adjusted and pro forma figures also remove in-process research and development, which recurs, so they are shown and never used. 2008 is excluded (a loss). Guides: reported EPS ranges (the current-FY EPS; a range whose midpoint is a loss has no P/E) and the company's adjusted ranges (shown only); revenue growth is guided in words only, so BASE takes the latest quarter's sales growth excluding foreign exchange as each release states it. A print's growth and margins are derived from the raw figures of its release ('raw', $ millions; the builder re-derives and checks them), each against the year-ago quarter as the same release shows it. Company-wide U.S. and outside-U.S. growth is as each filing states it: in the release for Q4 2008 and 2009, in the 10-Q for Q2 2007 to Q3 2008 ('geo_later', visible from the 10-Q's date), in no filing for Q4 2007. Rule T's raw figures are in 'rule_t'. No later fact enters through this file: every source's published date bounds its use.",
+ "ticker": "LLY",
+ "sources": {
+  "LL1": {
+   "published": "1999-03-26",
+   "filed": "1999-03-26 (EDGAR gives the filing date only)",
+   "title": "Eli Lilly FY1998 10-K (annual report, Exhibit 13)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095013199001772/0000950131-99-001772.txt",
+   "supports": "statement of income and geographic data (rule T)"
+  },
+  "LL2": {
+   "published": "2000-03-30",
+   "filed": "2000-03-30 (EDGAR gives the filing date only)",
+   "title": "Eli Lilly FY1999 10-K (annual report, Exhibit 13)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095013100002201/0000950131-00-002201.txt",
+   "supports": "statement of income and geographic data (rule T)"
+  },
+  "LL3": {
+   "published": "2001-03-28",
+   "filed": "2001-03-28 (EDGAR gives the filing date only)",
+   "title": "Eli Lilly FY2000 10-K (annual report, Exhibit 13)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095013101001634/0000950131-01-001634.txt",
+   "supports": "statement of income and geographic data (rule T)"
+  },
+  "LL4": {
+   "published": "2002-03-28",
+   "filed": "2002-03-28 (EDGAR gives the filing date only)",
+   "title": "Eli Lilly FY2001 10-K405 (annual report, Exhibit 13)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095013702001754/c67933ex13.htm",
+   "supports": "statement of income and geographic data (rule T)"
+  },
+  "LL5": {
+   "published": "2003-03-21",
+   "filed": "2003-03-20 17:07 ET, after the close",
+   "title": "Eli Lilly FY2002 10-K (annual report, Exhibit 13)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095013703001575/c75275exv13.htm",
+   "supports": "statement of income and geographic data (rule T)"
+  },
+  "LL6": {
+   "published": "2004-03-15",
+   "filed": "2004-03-15 13:43 ET, during the session",
+   "title": "Eli Lilly FY2003 10-K (annual report, Exhibit 13)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095013704001857/c83409exv13.htm",
+   "supports": "statement of income and geographic data (rule T)"
+  },
+  "LL7": {
+   "published": "2005-03-08",
+   "filed": "2005-03-08 08:01 ET, before the open",
+   "title": "Eli Lilly FY2004 10-K (annual report, Exhibit 13)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095013405004385/c92539exv13.htm",
+   "supports": "statement of income and geographic data (rule T)"
+  },
+  "LL8": {
+   "published": "2006-03-01",
+   "filed": "2006-03-01 09:01 ET, before the open",
+   "title": "Eli Lilly FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095013706002395/c02657e10vk.htm",
+   "supports": "statement of income and geographic data (rule T)"
+  },
+  "LL9": {
+   "published": "2007-03-01",
+   "filed": "2007-02-28 17:18 ET, after the close",
+   "title": "Eli Lilly FY2006 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095013707003013/c12621e10vk.htm",
+   "supports": "statement of income and geographic data (rule T); history vintage: five-year summary, statements of income and cash flows, balance sheet, segment and geographic data, Items 1 and 1A"
+  },
+  "LL10": {
+   "published": "2007-07-24",
+   "filed": "2007-07-24 08:00 ET, before the open",
+   "title": "Eli Lilly Q2 2007 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095012407003723/c16977exv99w1.htm",
+   "supports": "Q2 2007: reported operating results (net sales $4,631.0M vs $3,866.9M, cost of sales, pre-tax income $926.7M vs $1,040.5M, diluted EPS $0.61 vs $0.76); growth 20% with exchange rates +3 points; FY2007 guide: reported EPS $2.75-2.85, revenue in words"
+  },
+  "LL11": {
+   "published": "2007-08-07",
+   "filed": "2007-08-06 17:26 ET, after the close",
+   "title": "Eli Lilly Q2 2007 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095013707011405/c17272e10vq.htm",
+   "supports": "Q2 2007 U.S. and outside-U.S. net sales ('Sales in the U.S. increased by $406.1 million, or 19 percent'; table row 'Total net sales | 2,503.8 | 2,127.2 | 4,631.0 | 3,866.9 | 20')"
+  },
+  "LL12": {
+   "published": "2007-10-19",
+   "filed": "2007-10-19 11:56 ET, during the session",
+   "title": "Eli Lilly Q3 2007 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095013707015729/c19455exv99w1.htm",
+   "supports": "Q3 2007: reported operating results (net sales $4,586.8M vs $3,864.1M, cost of sales, pre-tax income $1,178.4M vs $1,105.8M, diluted EPS $0.85 vs $0.80); growth 19% with exchange rates +3 points; FY2007 guide: reported EPS $2.76-2.81, revenue in words"
+  },
+  "LL13": {
+   "published": "2007-11-05",
+   "filed": "2007-11-05 10:19 ET, during the session",
+   "title": "Eli Lilly Q3 2007 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095013707016548/c21135e10vq.htm",
+   "supports": "Q3 2007 U.S. and outside-U.S. net sales ('Sales in the U.S. increased by $370.4 million, or 18 percent'; table row 'Total net sales | 2,477.1 | 2,109.7 | 4,586.8 | 3,864.1 | 19')"
+  },
+  "LL14": {
+   "published": "2008-01-29",
+   "filed": "2008-01-29 14:25 ET, during the session",
+   "title": "Eli Lilly Q4 2007 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095013708001199/c23379exv99w1.htm",
+   "supports": "Q4 2007: reported operating results (net sales $5,189.6M vs $4,245.3M, cost of sales, pre-tax income $1,052.3M vs $215.0M, diluted EPS $0.78 vs $0.12); growth 22% with exchange rates +4 points; FY2008 guide: reported EPS $3.80-3.95, revenue in words"
+  },
+  "LL15": {
+   "published": "2008-02-29",
+   "filed": "2008-02-29 09:54 ET, during the session",
+   "title": "Eli Lilly FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095013708003028/c24001e10vk.htm",
+   "supports": "history vintage: five-year summary, statements of income and cash flows, balance sheet, segment and geographic data, Items 1 and 1A"
+  },
+  "LL16": {
+   "published": "2008-03-13",
+   "filed": "2008-03-13 11:27 ET, during the session",
+   "title": "Eli Lilly 8-K of 2008-03-13 (Items 2.05 and 2.06: the AIR Insulin termination)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000129993308001365/htm_26085.htm",
+   "supports": "FY2008 guide: reported EPS $3.73-3.90"
+  },
+  "LL17": {
+   "published": "2008-04-21",
+   "filed": "2008-04-21 06:30 ET, before the open",
+   "title": "Eli Lilly Q1 2008 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095013408006939/c25898exv99w1.htm",
+   "supports": "Q1 2008: reported operating results (net sales $4,807.6M vs $4,226.1M, cost of sales, pre-tax income $1,056.3M vs $719.4M, diluted EPS $0.97 vs $0.47); growth 14% with exchange rates +5 points; FY2008 guide: reported EPS $3.90-4.05"
+  },
+  "LL18": {
+   "published": "2008-05-06",
+   "filed": "2008-05-06 13:01 ET, during the session",
+   "title": "Eli Lilly Q1 2008 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095013708006801/c26296e10vq.htm",
+   "supports": "Q1 2008 U.S. and outside-U.S. net sales ('Sales in the U.S. increased by $235.6 million, or 10 percent'; table row 'Total net sales | 2,546.6 | 2,261.0 | 4,807.6 | 4,226.1 | 14')"
+  },
+  "LL19": {
+   "published": "2008-07-24",
+   "filed": "2008-07-24 07:01 ET, before the open",
+   "title": "Eli Lilly Q2 2008 earnings release (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095013408013211/c33248exv99.htm",
+   "supports": "Q2 2008: reported operating results (net sales $5,150.4M vs $4,631.0M, cost of sales, pre-tax income $1,206.3M vs $926.7M, diluted EPS $0.88 vs $0.61); growth 11% with exchange rates +6 points; FY2008 guide: reported EPS $3.79-3.94, revenue in words"
+  },
+  "LL20": {
+   "published": "2008-08-06",
+   "filed": "2008-08-06 15:53 ET, during the session",
+   "title": "Eli Lilly Q2 2008 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095013708010281/c33792e10vq.htm",
+   "supports": "Q2 2008 U.S. and outside-U.S. net sales ('Sales in the U.S. increased by $176.9 million, or 7 percent'; table row 'Total net sales3 | 2,680.7 | 2,469.7 | 5,150.4 | 4,631.0 | 1')"
+  },
+  "LL21": {
+   "published": "2008-10-21",
+   "filed": "2008-10-21 15:53 ET, during the session",
+   "title": "Eli Lilly FY2007 10-K/A (Amendment No. 1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095013708012864/c46966ae10vkza.htm",
+   "supports": "history vintage: five-year summary, statements of income and cash flows, balance sheet, segment and geographic data, Items 1 and 1A"
+  },
+  "LL22": {
+   "published": "2008-10-23",
+   "filed": "2008-10-23 07:59 ET, before the open",
+   "title": "Eli Lilly Q3 2008 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095015208008131/c47200exv99w1.htm",
+   "supports": "Q3 2008: reported operating results (net sales $5,209.5M vs $4,586.8M, cost of sales, pre-tax income $-232.8M vs $1,178.4M, diluted EPS $-0.43 vs $0.85); growth 14% with exchange rates +4 points; FY2008 guide: reported EPS $2.44-2.49, revenue in words"
+  },
+  "LL23": {
+   "published": "2008-11-04",
+   "filed": "2008-11-03 17:24 ET, after the close",
+   "title": "Eli Lilly Q3 2008 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095013708013382/c47344e10vq.htm",
+   "supports": "Q3 2008 U.S. and outside-U.S. net sales ('Sales in the U.S. increased by $291.9 million, or 12 percent'; table row 'Total net sales | 2,769.0 | 2,440.5 | 5,209.5 | 4,586.8 | 14')"
+  },
+  "LL24": {
+   "published": "2008-12-11",
+   "filed": "2008-12-11 12:24 ET, during the session",
+   "title": "Eli Lilly 8-K of 2008-12-11 (Item 7.01: investment community meeting release, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095013708014356/c48185exv99w1.htm",
+   "supports": "FY2008 guide: reported EPS $-2.06--1.56; FY2009 guide: reported EPS $4.00-4.25, revenue in words"
+  },
+  "LL25": {
+   "published": "2009-01-29",
+   "filed": "2009-01-29 07:30 ET, before the open",
+   "title": "Eli Lilly Q4 2008 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095015209000744/c49041exv99w1.htm",
+   "supports": "Q4 2008: reported operating results (net sales $5,210.5M vs $5,189.6M, cost of sales, pre-tax income $-3,337.4M vs $1,052.3M, diluted EPS $-3.31 vs $0.78); growth 0% with exchange rates -3 points; FY2009 guide: reported EPS $4.00-4.25, revenue in words"
+  },
+  "LL26": {
+   "published": "2009-02-27",
+   "filed": "2009-02-27 11:19 ET, during the session",
+   "title": "Eli Lilly FY2008 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095015209001897/c49534e10vk.htm",
+   "supports": "history vintage: five-year summary, statements of income and cash flows, balance sheet, segment and geographic data, Items 1 and 1A"
+  },
+  "LL27": {
+   "published": "2009-04-20",
+   "filed": "2009-04-20 08:31 ET, before the open",
+   "title": "Eli Lilly Q1 2009 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095015209003873/c50656exv99w1.htm",
+   "supports": "Q1 2009: reported operating results (net sales $5,047.0M vs $4,807.6M, cost of sales, pre-tax income $1,683.4M vs $1,056.3M, diluted EPS $1.20 vs $0.97); growth 5% with exchange rates -6 points; FY2009 guide: reported EPS $4.00-4.25"
+  },
+  "LL28": {
+   "published": "2009-05-01",
+   "filed": "2009-05-01 14:33 ET, during the session",
+   "title": "Eli Lilly Q1 2009 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095013709003504/c50875e10vq.htm",
+   "supports": "read; adds nothing"
+  },
+  "LL29": {
+   "published": "2009-07-22",
+   "filed": "2009-07-22 06:30 ET, before the open",
+   "title": "Eli Lilly Q2 2009 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095012309024121/c52486exv99w1.htm",
+   "supports": "Q2 2009: reported operating results (net sales $5,292.8M vs $5,150.4M, cost of sales, pre-tax income $1,467.7M vs $1,206.3M, diluted EPS $1.06 vs $0.88); growth 3% with exchange rates -7 points; FY2009 guide: reported EPS $4.14-4.24, revenue in words"
+  },
+  "LL30": {
+   "published": "2009-07-31",
+   "filed": "2009-07-31 10:22 ET, during the session",
+   "title": "Eli Lilly Q2 2009 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095012309028099/c52635e10vq.htm",
+   "supports": "read; adds nothing"
+  },
+  "LL31": {
+   "published": "2009-10-21",
+   "filed": "2009-10-21 06:30 ET, before the open",
+   "title": "Eli Lilly Q3 2009 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095012309051748/c54157exv99w1.htm",
+   "supports": "Q3 2009: reported operating results (net sales $5,562.0M vs $5,209.5M, cost of sales, pre-tax income $1,069.5M vs $-232.8M, diluted EPS $0.86 vs $-0.43); growth 7% with exchange rates -3 points; FY2009 guide: reported EPS $3.90-4.00, revenue in words"
+  },
+  "LL32": {
+   "published": "2009-10-30",
+   "filed": "2009-10-30 13:15 ET, during the session",
+   "title": "Eli Lilly Q3 2009 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095012309055409/c54269e10vq.htm",
+   "supports": "read; adds nothing"
+  }
+ },
+ "history_vintages": [
+  {
+   "published": "2007-03-01",
+   "sources": [
+    "LL4",
+    "LL5",
+    "LL6",
+    "LL7",
+    "LL8",
+    "LL9"
+   ],
+   "fy_label": "FY06",
+   "why": "'We discover, develop, manufacture, and sell products in one significant business segment — pharmaceutical products.' (FY2006 10-K, Item 1); 'Our long-term success depends on intellectual property protection.' (FY2006 10-K, Item 1A heading); 'We currently expect no major patent expirations in this decade, but several major products will lose intellectual property protection in the first half of the next decade.' (FY2006 10-K, Item 1A); 'Our product sales can be adversely affected by the introduction by competitors of branded products that are perceived as superior by the marketplace, by generic versions of our branded products, and by generic versions of other products in the same therapeutic class as our branded products.' (FY2006 10-K, Item 1A); 'Zyprexa sales of $4.417 billion represented 28 percent of our revenues in 2006.' (FY2006 10-K, Item 1A)",
+   "eps_gaap": {
+    "1997": 1.78,
+    "1998": 1.87,
+    "1999": 2.3,
+    "2000": 2.79,
+    "2001": 2.55,
+    "2002": 2.5,
+    "2003": 2.37,
+    "2004": 1.66,
+    "2005": 1.83,
+    "2006": 2.45
+   },
+   "eps_normalized": {
+    "1997": 1.78,
+    "1998": 1.87,
+    "1999": 2.3,
+    "2000": 2.79,
+    "2001": 2.55,
+    "2002": 2.5,
+    "2003": 2.37,
+    "2004": 1.66,
+    "2005": 1.83,
+    "2006": 2.45
+   },
+   "eps_sources": {
+    "1997": "LL4",
+    "1998": "LL5",
+    "1999": "LL6",
+    "2000": "LL7",
+    "2001": "LL8",
+    "2002": "LL9",
+    "2003": "LL9",
+    "2004": "LL9",
+    "2005": "LL9",
+    "2006": "LL9"
+   },
+   "revenue_usd_b": {
+    "1997": 7.9877,
+    "1998": 9.2368,
+    "1999": 10.0029,
+    "2000": 10.8622,
+    "2001": 11.5425,
+    "2002": 11.0775,
+    "2003": 12.5825,
+    "2004": 13.8579,
+    "2005": 14.6453,
+    "2006": 15.691
+   },
+   "revenue_sources": {
+    "1997": "LL4",
+    "1998": "LL5",
+    "1999": "LL6",
+    "2000": "LL7",
+    "2001": "LL8",
+    "2002": "LL9",
+    "2003": "LL9",
+    "2004": "LL9",
+    "2005": "LL9",
+    "2006": "LL9"
+   },
+   "diluted_shares_m": {
+    "1997": 1130.579,
+    "1998": 1121.486,
+    "1999": 1106.055,
+    "2000": 1097.725,
+    "2001": 1090.793,
+    "2002": 1085.088,
+    "2003": 1082.23,
+    "2004": 1088.936,
+    "2005": 1092.15,
+    "2006": 1087.49
+   },
+   "shares_sources": {
+    "1997": "LL4",
+    "1998": "LL5",
+    "1999": "LL6",
+    "2000": "LL7",
+    "2001": "LL8",
+    "2002": "LL9",
+    "2003": "LL9",
+    "2004": "LL9",
+    "2005": "LL9",
+    "2006": "LL9"
+   },
+   "fiscal_year_ends": {
+    "1997": "1997-12-31",
+    "1998": "1998-12-31",
+    "1999": "1999-12-31",
+    "2000": "2000-12-31",
+    "2001": "2001-12-31",
+    "2002": "2002-12-31",
+    "2003": "2003-12-31",
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31"
+   },
+   "normalization": "diluted EPS from continuing operations before extraordinary items and the cumulative effect of a change in accounting principle, each year from the latest filing that reports it (the five-year summaries; 2005 at $1.83 before the cumulative effect, each footnote); GAAP throughout: the company's adjusted figures exclude acquired in-process research and development, which recurs (on the statements of income in 2001 ($190.5M: the Isis, 3M and Bioprojet collaborations), 2002 ($84.0M: the Amylin collaboration) and 2004 ($392.2M)), so none excludes only one-offs (the NKE FY2007, PFE and BMY rule) and they are shown in the guide line only; no year is distorted: reported EPS is more than half the EPS without each year's listed items and no year's listed benefits exceed its income without them (1997 $1.78 against the company's $1.62 without its unusual items; 2004 $1.66 against $2.82 without $.35 of in-process research and development, the $.43 repatriation tax and $.38 of impairment, restructuring and Evista investigation charges; 2005 $1.83 against $2.87 without the $.90 product liability and $.14 asset impairment charges)",
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 21.78,
+   "prev_fy_pretax_margin_note": "FY06 income before income taxes $3,418.0M / net sales $15,691.0M (FY2006 10-K)",
+   "prev_fy_gross_margin": 77.4,
+   "prev_fy_sales_growth": 7.1,
+   "prev_fy_us_pct": 10.3,
+   "prev_fy_intl_pct": 3.6,
+   "tax_rate": 0.221,
+   "tax_note": "FY06 income taxes $755.3M / pre-tax $3,418.0M (FY2006 10-K)",
+   "fcf_b": 2.9,
+   "fcf_label": "FY06",
+   "fcf_note": "net cash provided by operating activities $3,975.9M less purchases of property and equipment $1,077.8M",
+   "cash_b": 3.89,
+   "cash_note": "cash and cash equivalents $3,109.3M and short-term investments $781.7M at December 31",
+   "dividend_annual": 1.7,
+   "dividend_note": "$0.425 quarterly ('In the fourth quarter of 2006, effective for the first-quarter dividend in 2007, the quarterly dividend was increased to $.425 per share', FY2006 10-K)",
+   "cash_return_text": "'As of December 31, 2006, we have purchased $2.58 billion of our announced $3.0 billion share repurchase program. We acquired approximately 2.1 million and 6.7 million shares in 2006 and 2005, respectively, under this program.' (FY2006 10-K)",
+   "business_line": "research-based pharmaceutical company: neurosciences, endocrinology, oncology and cardiovascular products, and animal health",
+   "groups": [
+    [
+     "Neurosciences",
+     6.729,
+     10.7
+    ],
+    [
+     "Endocrinology",
+     5.014,
+     8.1
+    ],
+    [
+     "Oncology",
+     2.02,
+     12.2
+    ],
+    [
+     "Animal health",
+     0.875,
+     1.4
+    ],
+    [
+     "Cardiovascular",
+     0.515,
+     -15.5
+    ],
+    [
+     "Anti-infectives",
+     0.275,
+     -38.1
+    ],
+    [
+     "Other pharmaceuticals",
+     0.263,
+     24.8
+    ]
+   ],
+   "groups_basis": "FY06 net sales by product class (FY2006 10-K, segment information)",
+   "company": "Eli Lilly and Company",
+   "exchange": "NYSE",
+   "pe_window_start": null
+  },
+  {
+   "published": "2008-02-29",
+   "sources": [
+    "LL5",
+    "LL6",
+    "LL7",
+    "LL8",
+    "LL9",
+    "LL15"
+   ],
+   "fy_label": "FY07",
+   "why": "'We discover, develop, manufacture, and sell products in one significant business segment – pharmaceutical products.' (FY2007 10-K, Item 1); 'Our long-term success depends on intellectual property protection.' (FY2007 10-K, Item 1A heading); 'We currently expect no major U.S. patent expirations in the next three years, but several major products will lose intellectual property protection beginning in 2011.' (FY2007 10-K, Item 1A); 'Our product sales can be adversely affected by the introduction by competitors of branded products that are perceived as superior by the marketplace, by generic versions of our branded products, and by generic versions of other products in the same therapeutic class as our branded products.' (FY2007 10-K, Item 1A); 'Zyprexa sales of $4.76 billion represented 26 percent of our revenues in 2007.' (FY2007 10-K, Item 1A)",
+   "eps_gaap": {
+    "1998": 1.87,
+    "1999": 2.3,
+    "2000": 2.79,
+    "2001": 2.55,
+    "2002": 2.5,
+    "2003": 2.37,
+    "2004": 1.66,
+    "2005": 1.83,
+    "2006": 2.45,
+    "2007": 2.71
+   },
+   "eps_normalized": {
+    "1998": 1.87,
+    "1999": 2.3,
+    "2000": 2.79,
+    "2001": 2.55,
+    "2002": 2.5,
+    "2003": 2.37,
+    "2004": 1.66,
+    "2005": 1.83,
+    "2006": 2.45,
+    "2007": 2.71
+   },
+   "eps_sources": {
+    "1998": "LL5",
+    "1999": "LL6",
+    "2000": "LL7",
+    "2001": "LL8",
+    "2002": "LL9",
+    "2003": "LL15",
+    "2004": "LL15",
+    "2005": "LL15",
+    "2006": "LL15",
+    "2007": "LL15"
+   },
+   "revenue_usd_b": {
+    "1998": 9.2368,
+    "1999": 10.0029,
+    "2000": 10.8622,
+    "2001": 11.5425,
+    "2002": 11.0775,
+    "2003": 12.5825,
+    "2004": 13.8579,
+    "2005": 14.6453,
+    "2006": 15.691,
+    "2007": 18.6335
+   },
+   "revenue_sources": {
+    "1998": "LL5",
+    "1999": "LL6",
+    "2000": "LL7",
+    "2001": "LL8",
+    "2002": "LL9",
+    "2003": "LL15",
+    "2004": "LL15",
+    "2005": "LL15",
+    "2006": "LL15",
+    "2007": "LL15"
+   },
+   "diluted_shares_m": {
+    "1998": 1121.486,
+    "1999": 1106.055,
+    "2000": 1097.725,
+    "2001": 1090.793,
+    "2002": 1085.088,
+    "2003": 1082.23,
+    "2004": 1088.936,
+    "2005": 1092.15,
+    "2006": 1087.49,
+    "2007": 1090.75
+   },
+   "shares_sources": {
+    "1998": "LL5",
+    "1999": "LL6",
+    "2000": "LL7",
+    "2001": "LL8",
+    "2002": "LL9",
+    "2003": "LL15",
+    "2004": "LL15",
+    "2005": "LL15",
+    "2006": "LL15",
+    "2007": "LL15"
+   },
+   "fiscal_year_ends": {
+    "1998": "1998-12-31",
+    "1999": "1999-12-31",
+    "2000": "2000-12-31",
+    "2001": "2001-12-31",
+    "2002": "2002-12-31",
+    "2003": "2003-12-31",
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31",
+    "2007": "2007-12-31"
+   },
+   "normalization": "diluted EPS from continuing operations before extraordinary items and the cumulative effect of a change in accounting principle, each year from the latest filing that reports it (the five-year summaries; 2005 at $1.83 before the cumulative effect, each footnote); GAAP throughout: the company's adjusted figures exclude acquired in-process research and development, which recurs (on the statements of income in 2001 ($190.5M: the Isis, 3M and Bioprojet collaborations), 2002 ($84.0M: the Amylin collaboration), 2004 ($392.2M) and 2007 ($745.6M, the OSI, MacroGenics and Glenmark in-licensing transactions among them)), and the pro forma figures add ICOS as if acquired at the start of the prior year, so none excludes only one-offs (the NKE FY2007, PFE and BMY rule) and they are shown in the guide line only; no year is distorted: reported EPS is more than half the EPS without each year's listed items and no year's listed benefits exceed its income without them (1997 $1.78 against the company's $1.62 without its unusual items; 2004 $1.66 against $2.82 without $.35 of in-process research and development, the $.43 repatriation tax and $.38 of impairment, restructuring and Evista investigation charges; 2005 $1.83 against $2.87 without the $.90 product liability and $.14 asset impairment charges)",
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 20.81,
+   "prev_fy_pretax_margin_note": "FY07 income before income taxes $3,876.8M / net sales $18,633.5M (FY2007 10-K)",
+   "prev_fy_gross_margin": 77.2,
+   "prev_fy_sales_growth": 18.8,
+   "prev_fy_us_pct": 18.0,
+   "prev_fy_intl_pct": 19.7,
+   "tax_rate": 0.2383,
+   "tax_note": "FY07 income taxes $923.8M / pre-tax $3,876.8M (FY2007 10-K)",
+   "fcf_b": 4.07,
+   "fcf_label": "FY07",
+   "fcf_note": "net cash provided by operating activities $5,154.5M less purchases of property and equipment $1,082.4M",
+   "cash_b": 4.83,
+   "cash_note": "cash and cash equivalents $3,220.5M and short-term investments $1,610.7M at December 31",
+   "dividend_annual": 1.88,
+   "dividend_note": "$0.47 quarterly ('In the fourth quarter of 2007, effective for the first-quarter dividend in 2008, the quarterly dividend was increased to $.47 per share', FY2007 10-K)",
+   "cash_return_text": "'As of December 31, 2007, we have purchased $2.58 billion of our announced $3.0 billion share repurchase program.' (FY2007 10-K)",
+   "business_line": "research-based pharmaceutical company: neurosciences, endocrinology, oncology and cardiovascular products, and animal health",
+   "groups": [
+    [
+     "Neurosciences",
+     7.851,
+     16.7
+    ],
+    [
+     "Endocrinology",
+     5.48,
+     9.3
+    ],
+    [
+     "Oncology",
+     2.446,
+     21.1
+    ],
+    [
+     "Cardiovascular",
+     1.624,
+     122.4
+    ],
+    [
+     "Animal health",
+     0.996,
+     13.7
+    ],
+    [
+     "Other pharmaceuticals",
+     0.237,
+     -26.5
+    ]
+   ],
+   "groups_basis": "FY07 net sales by product class (FY2007 10-K, segment information)",
+   "company": "Eli Lilly and Company",
+   "exchange": "NYSE",
+   "pe_window_start": null
+  },
+  {
+   "published": "2008-10-21",
+   "sources": [
+    "LL5",
+    "LL6",
+    "LL7",
+    "LL8",
+    "LL9",
+    "LL21"
+   ],
+   "fy_label": "FY07",
+   "why": "'We discover, develop, manufacture, and sell products in one significant business segment – pharmaceutical products.' (FY2007 10-K/A, Item 1); 'Our long-term success depends on intellectual property protection.' (FY2007 10-K/A, Item 1A heading); 'We currently expect no major U.S. patent expirations in the next three years, but several major products will lose intellectual property protection beginning in 2011.' (FY2007 10-K/A, Item 1A); 'Our product sales can be adversely affected by the introduction by competitors of branded products that are perceived as superior by the marketplace, by generic versions of our branded products, and by generic versions of other products in the same therapeutic class as our branded products.' (FY2007 10-K/A, Item 1A); 'Zyprexa sales of $4.76 billion represented 26 percent of our revenues in 2007.' (FY2007 10-K/A, Item 1A)",
+   "eps_gaap": {
+    "1998": 1.87,
+    "1999": 2.3,
+    "2000": 2.79,
+    "2001": 2.55,
+    "2002": 2.5,
+    "2003": 2.37,
+    "2004": 1.66,
+    "2005": 1.83,
+    "2006": 2.45,
+    "2007": 2.71
+   },
+   "eps_normalized": {
+    "1998": 1.87,
+    "1999": 2.3,
+    "2000": 2.79,
+    "2001": 2.55,
+    "2002": 2.5,
+    "2003": 2.37,
+    "2004": 1.66,
+    "2005": 1.83,
+    "2006": 2.45,
+    "2007": 2.71
+   },
+   "eps_sources": {
+    "1998": "LL5",
+    "1999": "LL6",
+    "2000": "LL7",
+    "2001": "LL8",
+    "2002": "LL9",
+    "2003": "LL21",
+    "2004": "LL21",
+    "2005": "LL21",
+    "2006": "LL21",
+    "2007": "LL21"
+   },
+   "revenue_usd_b": {
+    "1998": 9.2368,
+    "1999": 10.0029,
+    "2000": 10.8622,
+    "2001": 11.5425,
+    "2002": 11.0775,
+    "2003": 12.5825,
+    "2004": 13.8579,
+    "2005": 14.6453,
+    "2006": 15.691,
+    "2007": 18.6335
+   },
+   "revenue_sources": {
+    "1998": "LL5",
+    "1999": "LL6",
+    "2000": "LL7",
+    "2001": "LL8",
+    "2002": "LL9",
+    "2003": "LL21",
+    "2004": "LL21",
+    "2005": "LL21",
+    "2006": "LL21",
+    "2007": "LL21"
+   },
+   "diluted_shares_m": {
+    "1998": 1121.486,
+    "1999": 1106.055,
+    "2000": 1097.725,
+    "2001": 1090.793,
+    "2002": 1085.088,
+    "2003": 1082.23,
+    "2004": 1088.936,
+    "2005": 1092.15,
+    "2006": 1087.49,
+    "2007": 1090.75
+   },
+   "shares_sources": {
+    "1998": "LL5",
+    "1999": "LL6",
+    "2000": "LL7",
+    "2001": "LL8",
+    "2002": "LL9",
+    "2003": "LL21",
+    "2004": "LL21",
+    "2005": "LL21",
+    "2006": "LL21",
+    "2007": "LL21"
+   },
+   "fiscal_year_ends": {
+    "1998": "1998-12-31",
+    "1999": "1999-12-31",
+    "2000": "2000-12-31",
+    "2001": "2001-12-31",
+    "2002": "2002-12-31",
+    "2003": "2003-12-31",
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31",
+    "2007": "2007-12-31"
+   },
+   "normalization": "diluted EPS from continuing operations before extraordinary items and the cumulative effect of a change in accounting principle, each year from the latest filing that reports it (the five-year summaries; 2005 at $1.83 before the cumulative effect, each footnote); GAAP throughout: the company's adjusted figures exclude acquired in-process research and development, which recurs (on the statements of income in 2001 ($190.5M: the Isis, 3M and Bioprojet collaborations), 2002 ($84.0M: the Amylin collaboration), 2004 ($392.2M) and 2007 ($745.6M, the OSI, MacroGenics and Glenmark in-licensing transactions among them)), and the pro forma figures add ICOS as if acquired at the start of the prior year, so none excludes only one-offs (the NKE FY2007, PFE and BMY rule) and they are shown in the guide line only; no year is distorted: reported EPS is more than half the EPS without each year's listed items and no year's listed benefits exceed its income without them (1997 $1.78 against the company's $1.62 without its unusual items; 2004 $1.66 against $2.82 without $.35 of in-process research and development, the $.43 repatriation tax and $.38 of impairment, restructuring and Evista investigation charges; 2005 $1.83 against $2.87 without the $.90 product liability and $.14 asset impairment charges); the FY2007 10-K/A of 2008-10-21 restates the balance sheets for product return reserves ('The consolidated statements of income were not adjusted'): every figure here equals the 10-K's, and it is a vintage of its own (the MSFT, CAT and BMY recast rule)",
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 20.81,
+   "prev_fy_pretax_margin_note": "FY07 income before income taxes $3,876.8M / net sales $18,633.5M (FY2007 10-K/A)",
+   "prev_fy_gross_margin": 77.2,
+   "prev_fy_sales_growth": 18.8,
+   "prev_fy_us_pct": 18.0,
+   "prev_fy_intl_pct": 19.7,
+   "tax_rate": 0.2383,
+   "tax_note": "FY07 income taxes $923.8M / pre-tax $3,876.8M (FY2007 10-K/A)",
+   "fcf_b": 4.07,
+   "fcf_label": "FY07",
+   "fcf_note": "net cash provided by operating activities $5,154.5M less purchases of property and equipment $1,082.4M",
+   "cash_b": 4.83,
+   "cash_note": "cash and cash equivalents $3,220.5M and short-term investments $1,610.7M at December 31",
+   "dividend_annual": 1.88,
+   "dividend_note": "$0.47 quarterly ('In the fourth quarter of 2007, effective for the first-quarter dividend in 2008, the quarterly dividend was increased to $.47 per share', FY2007 10-K/A)",
+   "cash_return_text": "'As of December 31, 2007, we have purchased $2.58 billion of our announced $3.0 billion share repurchase program.' (FY2007 10-K/A)",
+   "business_line": "research-based pharmaceutical company: neurosciences, endocrinology, oncology and cardiovascular products, and animal health",
+   "groups": [
+    [
+     "Neurosciences",
+     7.851,
+     16.7
+    ],
+    [
+     "Endocrinology",
+     5.48,
+     9.3
+    ],
+    [
+     "Oncology",
+     2.446,
+     21.1
+    ],
+    [
+     "Cardiovascular",
+     1.624,
+     122.4
+    ],
+    [
+     "Animal health",
+     0.996,
+     13.7
+    ],
+    [
+     "Other pharmaceuticals",
+     0.237,
+     -26.5
+    ]
+   ],
+   "groups_basis": "FY07 net sales by product class (FY2007 10-K/A, segment information)",
+   "company": "Eli Lilly and Company",
+   "exchange": "NYSE",
+   "pe_window_start": null
+  },
+  {
+   "published": "2009-02-27",
+   "sources": [
+    "LL6",
+    "LL7",
+    "LL8",
+    "LL9",
+    "LL21",
+    "LL26"
+   ],
+   "fy_label": "FY08",
+   "why": "'Our long-term success depends on intellectual property protection.' (FY2008 10-K, Item 1A heading); 'Several major products will lose intellectual property protection in the U.S. in the next decade beginning in late 2011.' (FY2008 10-K, Item 1A); 'Several of these products will lose intellectual property protection in various countries outside the U.S. even before then.' (FY2008 10-K, Item 1A); 'Our product sales can be adversely affected by the introduction by competitors of branded products that are perceived as superior by the marketplace, by generic versions of our branded products, and by generic versions of other products in the same therapeutic class as our branded products.' (FY2008 10-K, Item 1A); 'Zyprexa sales of $4.70 billion represented 23 percent of our revenues in 2008, and Cymbalta sales of $2.70 billion constituted 13 percent of our 2008 revenues.' (FY2008 10-K, Item 1A)",
+   "eps_gaap": {
+    "1999": 2.3,
+    "2000": 2.79,
+    "2001": 2.55,
+    "2002": 2.5,
+    "2003": 2.37,
+    "2004": 1.66,
+    "2005": 1.83,
+    "2006": 2.45,
+    "2007": 2.71
+   },
+   "eps_normalized": {
+    "1999": 2.3,
+    "2000": 2.79,
+    "2001": 2.55,
+    "2002": 2.5,
+    "2003": 2.37,
+    "2004": 1.66,
+    "2005": 1.83,
+    "2006": 2.45,
+    "2007": 2.71
+   },
+   "eps_sources": {
+    "1999": "LL6",
+    "2000": "LL7",
+    "2001": "LL8",
+    "2002": "LL9",
+    "2003": "LL21",
+    "2004": "LL26",
+    "2005": "LL26",
+    "2006": "LL26",
+    "2007": "LL26"
+   },
+   "revenue_usd_b": {
+    "1999": 10.0029,
+    "2000": 10.8622,
+    "2001": 11.5425,
+    "2002": 11.0775,
+    "2003": 12.5825,
+    "2004": 13.8579,
+    "2005": 14.6453,
+    "2006": 15.691,
+    "2007": 18.6335,
+    "2008": 20.378
+   },
+   "revenue_sources": {
+    "1999": "LL6",
+    "2000": "LL7",
+    "2001": "LL8",
+    "2002": "LL9",
+    "2003": "LL21",
+    "2004": "LL26",
+    "2005": "LL26",
+    "2006": "LL26",
+    "2007": "LL26"
+   },
+   "diluted_shares_m": {
+    "1999": 1106.055,
+    "2000": 1097.725,
+    "2001": 1090.793,
+    "2002": 1085.088,
+    "2003": 1082.23,
+    "2004": 1088.936,
+    "2005": 1092.15,
+    "2006": 1087.49,
+    "2007": 1090.75,
+    "2008": 1094.499
+   },
+   "shares_sources": {
+    "1999": "LL6",
+    "2000": "LL7",
+    "2001": "LL8",
+    "2002": "LL9",
+    "2003": "LL21",
+    "2004": "LL26",
+    "2005": "LL26",
+    "2006": "LL26",
+    "2007": "LL26"
+   },
+   "fiscal_year_ends": {
+    "1999": "1999-12-31",
+    "2000": "2000-12-31",
+    "2001": "2001-12-31",
+    "2002": "2002-12-31",
+    "2003": "2003-12-31",
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31",
+    "2007": "2007-12-31",
+    "2008": "2008-12-31"
+   },
+   "normalization": "diluted EPS from continuing operations before extraordinary items and the cumulative effect of a change in accounting principle, each year from the latest filing that reports it (the five-year summaries; 2005 at $1.83 before the cumulative effect, each footnote); GAAP throughout: the company's adjusted figures exclude acquired in-process research and development, which recurs (on the statements of income in 2001 ($190.5M: the Isis, 3M and Bioprojet collaborations), 2002 ($84.0M: the Amylin collaboration), 2004 ($392.2M), 2007 ($745.6M, the OSI, MacroGenics and Glenmark in-licensing transactions among them) and 2008 ($4,835.4M, the BioMS and TransPharma in-licensing transactions among them)), and the pro forma figures add ICOS and ImClone as if acquired at the start of the prior year, so none excludes only one-offs (the NKE FY2007, PFE and BMY rule) and they are shown in the guide line only; no year is distorted: reported EPS is more than half the EPS without each year's listed items and no year's listed benefits exceed its income without them (1997 $1.78 against the company's $1.62 without its unusual items; 2004 $1.66 against $2.82 without $.35 of in-process research and development, the $.43 repatriation tax and $.38 of impairment, restructuring and Evista investigation charges; 2005 $1.83 against $2.87 without the $.90 product liability and $.14 asset impairment charges); 2008 is excluded: reported $(1.89) a diluted share is a loss: the significant items the Q4 2008 release lists total $5.91 per share ($4.46 for the ImClone acquisition's in-process research and development and other charges and $1.20 for the Zyprexa investigations among them) against its $4.02 pro forma non-GAAP figure, a loss has no P/E, and no figure excluding only one-offs is published (the pro forma non-GAAP EPS also removes $.10 of in-process research and development for the SGX acquisition and the BioMS and TransPharma in-licensing transactions, which recur) (only the year itself leaves, the NKE FY2018, XOM FY2020 and BMY FY2015 rule)",
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": -6.42,
+   "prev_fy_pretax_margin_note": "FY08 income before income taxes $-1,307.6M / net sales $20,378.0M (FY2008 10-K)",
+   "prev_fy_gross_margin": 78.49,
+   "prev_fy_sales_growth": 9.4,
+   "prev_fy_us_pct": 7.8,
+   "prev_fy_intl_pct": 11.3,
+   "tax_rate": -0.5845,
+   "tax_note": "FY08 income taxes $764.3M / pre-tax $-1,307.6M (FY2008 10-K)",
+   "fcf_b": 6.35,
+   "fcf_label": "FY08",
+   "fcf_note": "net cash provided by operating activities $7,295.6M less purchases of property and equipment $947.2M",
+   "cash_b": 5.93,
+   "cash_note": "cash and cash equivalents $5,496.7M and short-term investments $429.4M at December 31",
+   "dividend_annual": 1.96,
+   "dividend_note": "$0.49 quarterly ('In the fourth quarter of 2008, effective for the first-quarter dividend in 2009, the quarterly dividend was increased to $.49 per share', FY2008 10-K)",
+   "cash_return_text": "'As of December 31, 2008, we have purchased $2.58 billion of our announced $3.0 billion share repurchase program. We acquired approximately 2.1 million shares in 2006 under this program. No shares were repurchased in 2008 or 2007.' (FY2008 10-K)",
+   "business_line": "research-based pharmaceutical company: neurosciences, endocrinology, oncology and cardiovascular products, and animal health",
+   "groups": [
+    [
+     "Neurosciences",
+     8.371,
+     6.6
+    ],
+    [
+     "Endocrinology",
+     5.891,
+     7.5
+    ],
+    [
+     "Oncology",
+     2.874,
+     17.5
+    ],
+    [
+     "Cardiovascular",
+     1.883,
+     15.9
+    ],
+    [
+     "Animal health",
+     1.093,
+     9.8
+    ],
+    [
+     "Other pharmaceuticals",
+     0.265,
+     12.1
+    ]
+   ],
+   "groups_basis": "FY08 net sales by product class (FY2008 10-K, segment information)",
+   "company": "Eli Lilly and Company",
+   "exchange": "NYSE",
+   "pe_window_start": null,
+   "eps_excluded": {
+    "2008": "reported $(1.89) a diluted share is a loss: the significant items the Q4 2008 release lists total $5.91 per share ($4.46 for the ImClone acquisition's in-process research and development and other charges and $1.20 for the Zyprexa investigations among them) against its $4.02 pro forma non-GAAP figure, a loss has no P/E, and no figure excluding only one-offs is published (the pro forma non-GAAP EPS also removes $.10 of in-process research and development for the SGX acquisition and the BioMS and TransPharma in-licensing transactions, which recur)"
+   },
+   "excluded_note": "reported $(1.89) a diluted share is a loss: the significant items the Q4 2008 release lists total $5.91 per share ($4.46 for the ImClone acquisition's in-process research and development and other charges and $1.20 for the Zyprexa investigations among them) against its $4.02 pro forma non-GAAP figure, a loss has no P/E, and no figure excluding only one-offs is published (the pro forma non-GAAP EPS also removes $.10 of in-process research and development for the SGX acquisition and the BioMS and TransPharma in-licensing transactions, which recur)"
+  }
+ ],
+ "prints": [
+  {
+   "quarter": "Q2 2007",
+   "fy": 2007,
+   "q": 2,
+   "published": "2007-07-24",
+   "source": "LL10",
+   "release": "Jul 24",
+   "release_time": "8-K accepted 2007-07-24 08:00 ET (before the open); conference call 'today from 8:00 to 9:00 a.m.' ET",
+   "period_end": "2007-06-30",
+   "raw": {
+    "rev_m": 4631.0,
+    "rev_prior_m": 3866.9,
+    "cos_m": 998.9,
+    "cos_prior_m": 860.6,
+    "pretax_m": 926.7,
+    "pretax_prior_m": 1040.5,
+    "diluted_shares_m": 1089.946
+   },
+   "sales_b": 4.631,
+   "sales_pct": 19.8,
+   "us_pct": null,
+   "intl_pct": null,
+   "gross_margin": 78.43,
+   "gross_margin_bp": 68.6,
+   "pretax_margin": 20.01,
+   "pretax_margin_bp": -689.7,
+   "eps_q": 0.61,
+   "eps_q_prior": 0.76,
+   "diluted_shares_m": 1089.946,
+   "lc_pct": 17.0,
+   "lc_note": "20% less the +3 points of exchange rates the release states",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q3 2007 print (late October)",
+   "geo_later": {
+    "published": "2007-08-07",
+    "source": "LL11",
+    "us_pct": 19.0,
+    "intl_pct": 20.0,
+    "us_b": 2.504,
+    "intl_b": 2.127,
+    "note": "U.S. +19% (+$406.1M) to $2.504B, outside the U.S. +20% (+$358.0M) to $2.127B, as the Q2 2007 10-Q states them (2007-08-07): the release gives no company-wide split"
+   },
+   "note": "reported growth includes Cialis in the former Lilly ICOS joint-venture territories from the ICOS acquisition, as published; the release's pro forma figures, which assume ICOS from the start of 2006, are not used ('Worldwide pro forma sales volume increased 8 percent, while selling prices and exchange rates each contributed 3 percentage points of the sales growth.')",
+   "eps_note": "reported EPS $0.61 against $0.76; the company's pro forma adjusted figure .90 against .72 is shown only (it also removes in-process research and development, which recurs)"
+  },
+  {
+   "quarter": "Q3 2007",
+   "fy": 2007,
+   "q": 3,
+   "published": "2007-10-19",
+   "source": "LL12",
+   "release": "Oct 19",
+   "release_time": "8-K accepted 2007-10-19 11:56 ET (during the session); conference call 'today from 9:00 to 10:00 a.m.' ET",
+   "period_end": "2007-09-30",
+   "raw": {
+    "rev_m": 4586.8,
+    "rev_prior_m": 3864.1,
+    "cos_m": 1054.6,
+    "cos_prior_m": 860.4,
+    "pretax_m": 1178.4,
+    "pretax_prior_m": 1105.8,
+    "diluted_shares_m": 1090.228
+   },
+   "sales_b": 4.587,
+   "sales_pct": 18.7,
+   "us_pct": null,
+   "intl_pct": null,
+   "gross_margin": 77.01,
+   "gross_margin_bp": -72.6,
+   "pretax_margin": 25.69,
+   "pretax_margin_bp": -292.6,
+   "eps_q": 0.85,
+   "eps_q_prior": 0.8,
+   "diluted_shares_m": 1090.228,
+   "lc_pct": 16.0,
+   "lc_note": "19% less the +3 points of exchange rates the release states",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q4 2007 print (late January)",
+   "geo_later": {
+    "published": "2007-11-05",
+    "source": "LL13",
+    "us_pct": 18.0,
+    "intl_pct": 20.0,
+    "us_b": 2.477,
+    "intl_b": 2.11,
+    "note": "U.S. +18% (+$370.4M) to $2.477B, outside the U.S. +20% (+$352.2M) to $2.110B, as the Q3 2007 10-Q states them (2007-11-05): the release gives no company-wide split"
+   },
+   "note": "reported growth includes Cialis in the former Lilly ICOS joint-venture territories from the ICOS acquisition, as published; the release's pro forma figures, which assume ICOS from the start of 2006, are not used ('Worldwide pro forma sales volume increased 8 percent, while exchange rates and selling prices contributed 3 and 2 percentage points of the sales growth, respectively.')",
+   "eps_note": "reported EPS $0.85 against $0.80; the company's pro forma adjusted figure .91 against .77 is shown only (it also removes in-process research and development, which recurs)"
+  },
+  {
+   "quarter": "Q4 2007",
+   "fy": 2007,
+   "q": 4,
+   "published": "2008-01-29",
+   "source": "LL14",
+   "release": "Jan 29",
+   "release_time": "8-K accepted 2008-01-29 14:25 ET (during the session); conference call 'today from 9:00 a.m. to 10:00 a.m.' ET",
+   "period_end": "2007-12-31",
+   "raw": {
+    "rev_m": 5189.6,
+    "rev_prior_m": 4245.3,
+    "cos_m": 1272.8,
+    "cos_prior_m": 1019.0,
+    "pretax_m": 1052.3,
+    "pretax_prior_m": 215.0,
+    "diluted_shares_m": 1092.636
+   },
+   "sales_b": 5.19,
+   "sales_pct": 22.2,
+   "us_pct": null,
+   "intl_pct": null,
+   "gross_margin": 75.47,
+   "gross_margin_bp": -52.3,
+   "pretax_margin": 20.28,
+   "pretax_margin_bp": 1521.3,
+   "eps_q": 0.78,
+   "eps_q_prior": 0.12,
+   "diluted_shares_m": 1092.636,
+   "lc_pct": 18.0,
+   "lc_note": "22% less the +4 points of exchange rates the release states",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q1 2008 print (late April)",
+   "geo_note": "no filing states Q4 2007's company-wide U.S. and outside-U.S. sales: the slot has no value (n/r)",
+   "fy_actual": {
+    "fy": 2007,
+    "fy_label": "FY07",
+    "eps_normalized": 2.71,
+    "revenue_usd_b": 18.6335,
+    "diluted_shares_m": 1090.75,
+    "normalization_note": "FY2007 $2.71 diluted EPS (Q4 2007 release; GAAP, the company's pro forma figure is shown only: it also removes in-process research and development, which recurs)",
+    "gross_margin": 77.2,
+    "pretax_margin": 20.81,
+    "pretax_margin_note": "FY07 income before income taxes $3,876.8M / net sales $18,633.5M (Q4 2007 release)",
+    "sales_growth": 18.8,
+    "us_pct": null,
+    "intl_pct": null,
+    "tax_rate": 0.2383,
+    "tax_note": "FY07 income taxes $923.8M / pre-tax $3,876.8M"
+   },
+   "note": "reported growth includes Cialis in the former Lilly ICOS joint-venture territories from the ICOS acquisition, as published; the release's pro forma figures, which assume ICOS from the start of 2006, are not used ('Worldwide pro forma sales volume increased 8 percent, while exchange rates and selling prices each contributed 4 percentage points of the sales growth.')",
+   "eps_note": "reported EPS $0.78 against $0.12; the company's pro forma adjusted figure .90 against .82 is shown only (it also removes in-process research and development, which recurs)"
+  },
+  {
+   "quarter": "Q1 2008",
+   "fy": 2008,
+   "q": 1,
+   "published": "2008-04-21",
+   "source": "LL17",
+   "release": "Apr 21",
+   "release_time": "8-K accepted 2008-04-21 06:30 ET (before the open); conference call 'today from 8:00 a.m. to 9:00 a.m.' ET",
+   "period_end": "2008-03-31",
+   "raw": {
+    "rev_m": 4807.6,
+    "rev_prior_m": 4226.1,
+    "cos_m": 1111.3,
+    "cos_prior_m": 922.5,
+    "pretax_m": 1056.3,
+    "pretax_prior_m": 719.4,
+    "diluted_shares_m": 1094.056
+   },
+   "sales_b": 4.808,
+   "sales_pct": 13.8,
+   "us_pct": null,
+   "intl_pct": null,
+   "gross_margin": 76.88,
+   "gross_margin_bp": -128.7,
+   "pretax_margin": 21.97,
+   "pretax_margin_bp": 494.9,
+   "eps_q": 0.97,
+   "eps_q_prior": 0.47,
+   "diluted_shares_m": 1094.056,
+   "lc_pct": 9.0,
+   "lc_note": "14% less the +5 points of exchange rates the release states",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q2 2008 print (late July)",
+   "geo_later": {
+    "published": "2008-05-06",
+    "source": "LL18",
+    "us_pct": 10.0,
+    "intl_pct": 18.0,
+    "us_b": 2.547,
+    "intl_b": 2.261,
+    "note": "U.S. +10% (+$235.6M) to $2.547B, outside the U.S. +18% (+$345.9M) to $2.261B, as the Q1 2008 10-Q states them (2008-05-06): the release gives no company-wide split"
+   },
+   "eps_note": "reported EPS $0.97 against $0.47"
+  },
+  {
+   "quarter": "Q2 2008",
+   "fy": 2008,
+   "q": 2,
+   "published": "2008-07-24",
+   "source": "LL19",
+   "release": "Jul 24",
+   "release_time": "8-K accepted 2008-07-24 07:01 ET (before the open); conference call 'today from 9:00 a.m. to 10:00 a.m.' ET",
+   "period_end": "2008-06-30",
+   "raw": {
+    "rev_m": 5150.4,
+    "rev_prior_m": 4631.0,
+    "cos_m": 1200.9,
+    "cos_prior_m": 998.9,
+    "pretax_m": 1206.3,
+    "pretax_prior_m": 926.7,
+    "diluted_shares_m": 1093.832
+   },
+   "sales_b": 5.15,
+   "sales_pct": 11.2,
+   "us_pct": null,
+   "intl_pct": null,
+   "gross_margin": 76.68,
+   "gross_margin_bp": -174.7,
+   "pretax_margin": 23.42,
+   "pretax_margin_bp": 341.1,
+   "eps_q": 0.88,
+   "eps_q_prior": 0.61,
+   "diluted_shares_m": 1093.832,
+   "lc_pct": 5.0,
+   "lc_note": "11% less the +6 points of exchange rates the release states",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q3 2008 print (late October)",
+   "geo_later": {
+    "published": "2008-08-06",
+    "source": "LL20",
+    "us_pct": 7.0,
+    "intl_pct": 16.0,
+    "us_b": 2.681,
+    "intl_b": 2.47,
+    "note": "U.S. +7% (+$176.9M) to $2.681B, outside the U.S. +16% (+$342.6M) to $2.470B, as the Q2 2008 10-Q states them (2008-08-06): the release gives no company-wide split"
+   },
+   "eps_note": "reported EPS $0.88 against $0.61"
+  },
+  {
+   "quarter": "Q3 2008",
+   "fy": 2008,
+   "q": 3,
+   "published": "2008-10-23",
+   "source": "LL22",
+   "release": "Oct 23",
+   "release_time": "8-K accepted 2008-10-23 07:59 ET (before the open); conference call 'today from 9:00 a.m. to 10:00 a.m.' ET",
+   "period_end": "2008-09-30",
+   "raw": {
+    "rev_m": 5209.5,
+    "rev_prior_m": 4586.8,
+    "cos_m": 1155.2,
+    "cos_prior_m": 1054.6,
+    "pretax_m": -232.8,
+    "pretax_prior_m": 1178.4,
+    "diluted_shares_m": 1093.977
+   },
+   "sales_b": 5.21,
+   "sales_pct": 13.6,
+   "us_pct": null,
+   "intl_pct": null,
+   "gross_margin": 77.83,
+   "gross_margin_bp": 81.7,
+   "pretax_margin": -4.47,
+   "pretax_margin_bp": -3016.0,
+   "eps_q": -0.43,
+   "eps_q_prior": 0.85,
+   "diluted_shares_m": 1093.977,
+   "lc_pct": 10.0,
+   "lc_note": "14% less the +4 points of exchange rates the release states",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q4 2008 print (late January)",
+   "geo_later": {
+    "published": "2008-11-04",
+    "source": "LL23",
+    "us_pct": 12.0,
+    "intl_pct": 16.0,
+    "us_b": 2.769,
+    "intl_b": 2.441,
+    "note": "U.S. +12% (+$291.9M) to $2.769B, outside the U.S. +16% (+$330.9M) to $2.441B, as the Q3 2008 10-Q states them (2008-11-04): the release gives no company-wide split"
+   },
+   "eps_note": "reported EPS $-0.43 against $0.85; the company's pro forma non-GAAP figure 1.04 against .91 is shown only (it also removes in-process research and development, which recurs)"
+  },
+  {
+   "quarter": "Q4 2008",
+   "fy": 2008,
+   "q": 4,
+   "published": "2009-01-29",
+   "source": "LL25",
+   "release": "Jan 29",
+   "release_time": "8-K accepted 2009-01-29 07:30 ET (before the open); conference call 'today from 9:00 a.m. to 10:00 a.m.' ET",
+   "period_end": "2008-12-31",
+   "raw": {
+    "rev_m": 5210.5,
+    "rev_prior_m": 5189.6,
+    "cos_m": 915.4,
+    "cos_prior_m": 1272.8,
+    "pretax_m": -3337.4,
+    "pretax_prior_m": 1052.3,
+    "diluted_shares_m": 1096.491
+   },
+   "sales_b": 5.21,
+   "sales_pct": 0.4,
+   "us_pct": 3.0,
+   "intl_pct": -3.0,
+   "gross_margin": 82.43,
+   "gross_margin_bp": 695.8,
+   "pretax_margin": -64.05,
+   "pretax_margin_bp": -8432.9,
+   "eps_q": -3.31,
+   "eps_q_prior": 0.78,
+   "diluted_shares_m": 1096.491,
+   "lc_pct": 3.0,
+   "lc_note": "0% (essentially flat) less the -3 points of exchange rates the release states",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q1 2009 print (late April)",
+   "us_b": 2.938,
+   "intl_b": 2.272,
+   "geo_note": "U.S. +3% to $2.938B, outside the U.S. -3% to $2.272B, as the release states them",
+   "fy_actual": {
+    "fy": 2008,
+    "fy_label": "FY08",
+    "eps_normalized": null,
+    "revenue_usd_b": 20.378,
+    "diluted_shares_m": 1094.499,
+    "normalization_note": "FY2008 is excluded (Q4 2008 release): reported $(1.89) a diluted share is a loss: the significant items the Q4 2008 release lists total $5.91 per share ($4.46 for the ImClone acquisition's in-process research and development and other charges and $1.20 for the Zyprexa investigations among them) against its $4.02 pro forma non-GAAP figure, a loss has no P/E, and no figure excluding only one-offs is published (the pro forma non-GAAP EPS also removes $.10 of in-process research and development for the SGX acquisition and the BioMS and TransPharma in-licensing transactions, which recur)",
+    "gross_margin": 78.49,
+    "pretax_margin": -6.42,
+    "pretax_margin_note": "FY08 income (loss) before income taxes $-1,307.6M / net sales $20,378.0M (Q4 2008 release)",
+    "sales_growth": 9.4,
+    "us_pct": null,
+    "intl_pct": null,
+    "tax_rate": -0.5845,
+    "tax_note": "FY08 income taxes $764.3M / pre-tax $-1,307.6M",
+    "excluded_note": "reported $(1.89) a diluted share is a loss: the significant items the Q4 2008 release lists total $5.91 per share ($4.46 for the ImClone acquisition's in-process research and development and other charges and $1.20 for the Zyprexa investigations among them) against its $4.02 pro forma non-GAAP figure, a loss has no P/E, and no figure excluding only one-offs is published (the pro forma non-GAAP EPS also removes $.10 of in-process research and development for the SGX acquisition and the BioMS and TransPharma in-licensing transactions, which recur)"
+   },
+   "eps_note": "reported EPS $-3.31 against $0.78"
+  },
+  {
+   "quarter": "Q1 2009",
+   "fy": 2009,
+   "q": 1,
+   "published": "2009-04-20",
+   "source": "LL27",
+   "release": "Apr 20",
+   "release_time": "8-K accepted 2009-04-20 08:31 ET (before the open); conference call 'today from 9:00 a.m. to 10:00 a.m.' ET",
+   "period_end": "2009-03-31",
+   "raw": {
+    "rev_m": 5047.0,
+    "rev_prior_m": 4807.6,
+    "cos_m": 816.4,
+    "cos_prior_m": 1111.3,
+    "pretax_m": 1683.4,
+    "pretax_prior_m": 1056.3,
+    "diluted_shares_m": 1097.256
+   },
+   "sales_b": 5.047,
+   "sales_pct": 5.0,
+   "us_pct": 13.0,
+   "intl_pct": -4.0,
+   "gross_margin": 83.82,
+   "gross_margin_bp": 694.0,
+   "pretax_margin": 33.35,
+   "pretax_margin_bp": 1138.3,
+   "eps_q": 1.2,
+   "eps_q_prior": 0.97,
+   "diluted_shares_m": 1097.256,
+   "lc_pct": 11.0,
+   "lc_note": "5% less the -6 points of exchange rates the release states",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q2 2009 print (late July)",
+   "us_b": 2.872,
+   "intl_b": 2.175,
+   "geo_note": "U.S. +13% to $2.872B, outside the U.S. -4% to $2.175B, as the release states them",
+   "note": "total revenue includes Erbitux revenue from the ImClone acquisition, as published (collaboration and other revenue: 'primarily due to the inclusion of Erbitux revenue as a result of the ImClone acquisition.')",
+   "eps_note": "reported EPS $1.20 against $0.97; the company's pro forma non-GAAP figure 1.20 against .88 is shown only (it also removes in-process research and development, which recurs)"
+  },
+  {
+   "quarter": "Q2 2009",
+   "fy": 2009,
+   "q": 2,
+   "published": "2009-07-22",
+   "source": "LL29",
+   "release": "Jul 22",
+   "release_time": "8-K accepted 2009-07-22 06:30 ET (before the open); conference call 'today from 9:00 a.m. to 10:00 a.m.' ET",
+   "period_end": "2009-06-30",
+   "raw": {
+    "rev_m": 5292.8,
+    "rev_prior_m": 5150.4,
+    "cos_m": 947.4,
+    "cos_prior_m": 1200.9,
+    "pretax_m": 1467.7,
+    "pretax_prior_m": 1206.3,
+    "diluted_shares_m": 1097.213
+   },
+   "sales_b": 5.293,
+   "sales_pct": 2.8,
+   "us_pct": 12.0,
+   "intl_pct": -8.0,
+   "gross_margin": 82.1,
+   "gross_margin_bp": 541.7,
+   "pretax_margin": 27.73,
+   "pretax_margin_bp": 430.9,
+   "eps_q": 1.06,
+   "eps_q_prior": 0.88,
+   "diluted_shares_m": 1097.213,
+   "lc_pct": 10.0,
+   "lc_note": "3% less the -7 points of exchange rates the release states",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q3 2009 print (late October)",
+   "us_b": 3.015,
+   "intl_b": 2.278,
+   "geo_note": "U.S. +12% to $3.015B, outside the U.S. -8% to $2.278B, as the release states them",
+   "note": "total revenue includes Erbitux revenue from the ImClone acquisition, as published (collaboration and other revenue: 'primarily due to the inclusion of Erbitux revenue as a result of the ImClone acquisition.')",
+   "eps_note": "reported EPS $1.06 against $0.88; the company's pro forma non-GAAP figure 1.12 against .94 is shown only (it also removes in-process research and development, which recurs)"
+  },
+  {
+   "quarter": "Q3 2009",
+   "fy": 2009,
+   "q": 3,
+   "published": "2009-10-21",
+   "source": "LL31",
+   "release": "Oct 21",
+   "release_time": "8-K accepted 2009-10-21 06:30 ET (before the open); conference call 'today from 9:00 a.m. to 10:00 a.m.' ET",
+   "period_end": "2009-09-30",
+   "raw": {
+    "rev_m": 5562.0,
+    "rev_prior_m": 5209.5,
+    "cos_m": 1051.9,
+    "cos_prior_m": 1155.2,
+    "pretax_m": 1069.5,
+    "pretax_prior_m": -232.8,
+    "diluted_shares_m": 1097.7
+   },
+   "sales_b": 5.562,
+   "sales_pct": 6.8,
+   "us_pct": 14.0,
+   "intl_pct": -1.0,
+   "gross_margin": 81.09,
+   "gross_margin_bp": 326.3,
+   "pretax_margin": 19.23,
+   "pretax_margin_bp": 2369.7,
+   "eps_q": 0.86,
+   "eps_q_prior": -0.43,
+   "diluted_shares_m": 1097.7,
+   "lc_pct": 10.0,
+   "lc_note": "7% less the -3 points of exchange rates the release states",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q4 2009 print (late January)",
+   "us_b": 3.146,
+   "intl_b": 2.416,
+   "geo_note": "U.S. +14% to $3.146B, outside the U.S. -1% to $2.416B, as the release states them",
+   "note": "total revenue includes Erbitux revenue from the ImClone acquisition, as published (collaboration and other revenue: 'primarily due to the inclusion of Erbitux® revenue as a result of the ImClone acquisition.')",
+   "eps_note": "reported EPS $0.86 against $-0.43; the company's pro forma non-GAAP figure 1.20 against .98 is shown only (it also removes in-process research and development, which recurs)"
+  }
+ ],
+ "guides": [
+  {
+   "fy": 2007,
+   "published": "2007-07-24",
+   "source": "LL10",
+   "doc": "Q2 2007 release",
+   "eps_guide": [
+    2.75,
+    2.85
+   ],
+   "eps_adj": [
+    3.4,
+    3.5
+   ],
+   "rev_words": "The company now expects reported sales to grow in the mid-teens and pro forma sales to grow in the low-double digits"
+  },
+  {
+   "fy": 2007,
+   "published": "2007-10-19",
+   "source": "LL12",
+   "doc": "Q3 2007 release",
+   "eps_guide": [
+    2.76,
+    2.81
+   ],
+   "eps_adj": [
+    3.5,
+    3.55
+   ],
+   "rev_words": "The company continues to expect reported sales to grow in the mid-teens and pro forma sales to grow in the low double digits",
+   "note": "the release also guides Q4 2007 reported EPS of $0.83 to $0.88 (a quarter guide is not a method r2 input)"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-01-29",
+   "source": "LL14",
+   "doc": "Q4 2007 release",
+   "eps_guide": [
+    3.8,
+    3.95
+   ],
+   "eps_adj": [
+    3.85,
+    4.0
+   ],
+   "rev_words": "For 2008, the company expects pro forma sales to grow in the mid- to high-single digits",
+   "note": "'The company confirmed its full-year 2008 financial guidance.': the earlier announcement is in no filing"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-03-13",
+   "source": "LL16",
+   "doc": "8-K of 2008-03-13",
+   "eps_guide": [
+    3.73,
+    3.9
+   ],
+   "note": "the AIR Insulin charge 'is estimated to be in the range of $90 million to $120 million, or $0.05 to $0.07 per share'; no adjusted range"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-04-21",
+   "source": "LL17",
+   "doc": "Q1 2008 release",
+   "eps_guide": [
+    3.9,
+    4.05
+   ],
+   "eps_adj": [
+    3.85,
+    4.0
+   ],
+   "note": "the reported range includes the $.19 IRS audit benefit, $.09 of AIR Insulin impairment and exit costs and the $.05 BioMS in-licensing charge"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-07-24",
+   "source": "LL19",
+   "doc": "Q2 2008 release",
+   "eps_guide": [
+    3.79,
+    3.94
+   ],
+   "eps_adj": [
+    3.85,
+    4.0
+   ],
+   "rev_words": "Pro forma sales are now expected to grow in the high-single to low-double digits, an increase from the previous guidance of growth in the mid- to high-single digits"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-10-23",
+   "source": "LL22",
+   "doc": "Q3 2008 release",
+   "eps_guide": [
+    2.44,
+    2.49
+   ],
+   "eps_adj": [
+    3.97,
+    4.02
+   ],
+   "rev_words": "Pro forma sales are still expected to grow in the high-single to low-double digits",
+   "note": "the reported range includes the $1.33 charges for the Zyprexa investigations and excludes the proposed ImClone acquisition"
+  },
+  {
+   "fy": 2008,
+   "published": "2008-12-11",
+   "source": "LL24",
+   "doc": "8-K of 2008-12-11",
+   "eps_guide": [
+    -2.06,
+    -1.56
+   ],
+   "eps_adj": [
+    3.97,
+    4.02
+   ],
+   "note": "'The change from earlier guidance of earnings per share of $2.44 to $2.49 results from an estimated $4.05 to $4.50 per share charge related to the ImClone acquisition which closed in November, 2008.'"
+  },
+  {
+   "fy": 2009,
+   "published": "2008-12-11",
+   "source": "LL24",
+   "doc": "8-K of 2008-12-11",
+   "eps_guide": [
+    4.0,
+    4.25
+   ],
+   "eps_adj": [
+    4.0,
+    4.25
+   ],
+   "rev_words": "However, due to the negative impact of weaker foreign currencies and the impact of generic competition in certain markets for Gemzar®, reported sales are expected to grow in the low-single digits",
+   "note": "including $.30 to $.35 of ImClone dilution; $4.35 to $4.55 without it"
+  },
+  {
+   "fy": 2009,
+   "published": "2009-01-29",
+   "source": "LL25",
+   "doc": "Q4 2008 release",
+   "eps_guide": [
+    4.0,
+    4.25
+   ],
+   "eps_adj": [
+    4.0,
+    4.25
+   ],
+   "rev_words": "As a result, the company expects low-single digit sales growth on a pro-forma non-GAAP basis and mid-single digit sales growth on a reported basis"
+  },
+  {
+   "fy": 2009,
+   "published": "2009-04-20",
+   "source": "LL27",
+   "doc": "Q1 2009 release",
+   "eps_guide": [
+    4.0,
+    4.25
+   ],
+   "eps_adj": [
+    4.0,
+    4.25
+   ]
+  },
+  {
+   "fy": 2009,
+   "published": "2009-07-22",
+   "source": "LL29",
+   "doc": "Q2 2009 release",
+   "eps_guide": [
+    4.14,
+    4.24
+   ],
+   "eps_adj": [
+    4.2,
+    4.3
+   ],
+   "rev_words": "The company continues to expect low-single digit revenue growth on a pro-forma non-GAAP basis and mid-single digit revenue growth on a reported basis"
+  },
+  {
+   "fy": 2009,
+   "published": "2009-10-21",
+   "source": "LL31",
+   "doc": "Q3 2009 release",
+   "eps_guide": [
+    3.9,
+    4.0
+   ],
+   "eps_adj": [
+    4.3,
+    4.4
+   ],
+   "rev_words": "The company now expects low- to mid-single digit total revenue growth on a pro-forma basis and mid-single digit revenue growth on a reported basis"
+  }
+ ],
+ "dividends": [],
+ "events": [],
+ "company_names": [],
+ "splits": [],
+ "distributions": [],
+ "rule_t": {
+  "_doc": "Rule T over fiscal 1997-2006, the decade of the FY2006 10-K (the vintage public on 2008-01-04): each annual change from the latest 10-K published by then that reports both years. U.S. net sales from the geographic data ('Net sales - to unaffiliated customers', United States), international being the consolidated total less the United States; the gross margin from the statements of income (net sales less cost of sales); net sales growth and the pre-tax margin (income from continuing operations before income taxes, extraordinary items and accounting changes, on net sales) from the five-year summaries. $ millions, as published: seams stay in (PCS discontinued from the FY1998 10-K; the geographic basis is the location of the selling subsidiary to the FY2003 10-K and of the customer from the FY2004 10-K, which restates 2002-2003; 2001's pre-tax income includes the debt-repurchase loss from the FY2003 10-K, SFAS 145).",
+  "us": {
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "1997": 24.62,
+    "1998": 19.55,
+    "1999": 6.69,
+    "2000": 12.47,
+    "2001": 5.16,
+    "2002": -11.25,
+    "2003": 9.71,
+    "2004": 6.19,
+    "2005": 1.69,
+    "2006": 10.27
+   },
+   "raw": {
+    "1997": {
+     "source": "LL1",
+     "us_m": [
+      3917.3,
+      4881.8
+     ],
+     "total_m": [
+      6998.3,
+      7987.7
+     ]
+    },
+    "1998": {
+     "source": "LL2",
+     "us_m": [
+      4881.8,
+      5836.2
+     ],
+     "total_m": [
+      7987.7,
+      9236.8
+     ]
+    },
+    "1999": {
+     "source": "LL3",
+     "us_m": [
+      5836.2,
+      6226.4
+     ],
+     "total_m": [
+      9236.8,
+      10002.9
+     ]
+    },
+    "2000": {
+     "source": "LL4",
+     "us_m": [
+      6226.4,
+      7002.9
+     ],
+     "total_m": [
+      10002.9,
+      10862.2
+     ]
+    },
+    "2001": {
+     "source": "LL5",
+     "us_m": [
+      7002.9,
+      7364.3
+     ],
+     "total_m": [
+      10862.2,
+      11542.5
+     ]
+    },
+    "2002": {
+     "source": "LL6",
+     "us_m": [
+      7364.3,
+      6536.1
+     ],
+     "total_m": [
+      11542.5,
+      11077.5
+     ]
+    },
+    "2003": {
+     "source": "LL7",
+     "us_m": [
+      6582.3,
+      7221.6
+     ],
+     "total_m": [
+      11077.5,
+      12582.5
+     ]
+    },
+    "2004": {
+     "source": "LL8",
+     "us_m": [
+      7221.6,
+      7668.5
+     ],
+     "total_m": [
+      12582.5,
+      13857.9
+     ]
+    },
+    "2005": {
+     "source": "LL9",
+     "us_m": [
+      7668.5,
+      7798.1
+     ],
+     "total_m": [
+      13857.9,
+      14645.3
+     ]
+    },
+    "2006": {
+     "source": "LL9",
+     "us_m": [
+      7798.1,
+      8599.2
+     ],
+     "total_m": [
+      14645.3,
+      15691.0
+     ]
+    }
+   },
+   "thresholds": {
+    "BEAR": -31,
+    "BASE": -11,
+    "BULL": 8,
+    "XBULL": 25
+   }
+  },
+  "intl": {
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "1997": 0.81,
+    "1998": 9.49,
+    "1999": 11.05,
+    "2000": 2.19,
+    "2001": 8.26,
+    "2002": 8.69,
+    "2003": 19.26,
+    "2004": 15.45,
+    "2005": 10.63,
+    "2006": 3.57
+   },
+   "raw": {
+    "1997": {
+     "source": "LL1",
+     "us_m": [
+      3917.3,
+      4881.8
+     ],
+     "total_m": [
+      6998.3,
+      7987.7
+     ]
+    },
+    "1998": {
+     "source": "LL2",
+     "us_m": [
+      4881.8,
+      5836.2
+     ],
+     "total_m": [
+      7987.7,
+      9236.8
+     ]
+    },
+    "1999": {
+     "source": "LL3",
+     "us_m": [
+      5836.2,
+      6226.4
+     ],
+     "total_m": [
+      9236.8,
+      10002.9
+     ]
+    },
+    "2000": {
+     "source": "LL4",
+     "us_m": [
+      6226.4,
+      7002.9
+     ],
+     "total_m": [
+      10002.9,
+      10862.2
+     ]
+    },
+    "2001": {
+     "source": "LL5",
+     "us_m": [
+      7002.9,
+      7364.3
+     ],
+     "total_m": [
+      10862.2,
+      11542.5
+     ]
+    },
+    "2002": {
+     "source": "LL6",
+     "us_m": [
+      7364.3,
+      6536.1
+     ],
+     "total_m": [
+      11542.5,
+      11077.5
+     ]
+    },
+    "2003": {
+     "source": "LL7",
+     "us_m": [
+      6582.3,
+      7221.6
+     ],
+     "total_m": [
+      11077.5,
+      12582.5
+     ]
+    },
+    "2004": {
+     "source": "LL8",
+     "us_m": [
+      7221.6,
+      7668.5
+     ],
+     "total_m": [
+      12582.5,
+      13857.9
+     ]
+    },
+    "2005": {
+     "source": "LL9",
+     "us_m": [
+      7668.5,
+      7798.1
+     ],
+     "total_m": [
+      13857.9,
+      14645.3
+     ]
+    },
+    "2006": {
+     "source": "LL9",
+     "us_m": [
+      7798.1,
+      8599.2
+     ],
+     "total_m": [
+      14645.3,
+      15691.0
+     ]
+    }
+   },
+   "thresholds": {
+    "BEAR": -7,
+    "BASE": 1,
+    "BULL": 9,
+    "XBULL": 19
+   }
+  },
+  "sales": {
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "1997": 14.14,
+    "1998": 15.64,
+    "1999": 8.29,
+    "2000": 8.59,
+    "2001": 6.26,
+    "2002": -4.03,
+    "2003": 13.59,
+    "2004": 10.14,
+    "2005": 5.68,
+    "2006": 7.14
+   },
+   "raw": {
+    "1997": {
+     "source": "LL3",
+     "revenues_m": [
+      6998.3,
+      7987.7
+     ]
+    },
+    "1998": {
+     "source": "LL4",
+     "revenues_m": [
+      7987.7,
+      9236.8
+     ]
+    },
+    "1999": {
+     "source": "LL5",
+     "revenues_m": [
+      9236.8,
+      10002.9
+     ]
+    },
+    "2000": {
+     "source": "LL6",
+     "revenues_m": [
+      10002.9,
+      10862.2
+     ]
+    },
+    "2001": {
+     "source": "LL7",
+     "revenues_m": [
+      10862.2,
+      11542.5
+     ]
+    },
+    "2002": {
+     "source": "LL8",
+     "revenues_m": [
+      11542.5,
+      11077.5
+     ]
+    },
+    "2003": {
+     "source": "LL9",
+     "revenues_m": [
+      11077.5,
+      12582.5
+     ]
+    },
+    "2004": {
+     "source": "LL9",
+     "revenues_m": [
+      12582.5,
+      13857.9
+     ]
+    },
+    "2005": {
+     "source": "LL9",
+     "revenues_m": [
+      13857.9,
+      14645.3
+     ]
+    },
+    "2006": {
+     "source": "LL9",
+     "revenues_m": [
+      14645.3,
+      15691.0
+     ]
+    }
+   },
+   "thresholds": {
+    "BEAR": -16,
+    "BASE": -4,
+    "BULL": 8,
+    "XBULL": 16
+   }
+  },
+  "gross_margin": {
+   "unit": 10,
+   "lower_is_better": false,
+   "values": {
+    "1997": 238.8,
+    "1998": 254.6,
+    "1999": 84.2,
+    "2000": 204.9,
+    "2001": 21.0,
+    "2002": -93.3,
+    "2003": -161.3,
+    "2004": -200.4,
+    "2005": -45.8,
+    "2006": 112.0
+   },
+   "raw": {
+    "1997": {
+     "source": "LL1",
+     "revenues_m": [
+      6998.3,
+      7987.7
+     ],
+     "cost_of_sales_m": [
+      1872.1,
+      1946.0
+     ]
+    },
+    "1998": {
+     "source": "LL2",
+     "revenues_m": [
+      7987.7,
+      9236.8
+     ],
+     "cost_of_sales_m": [
+      1946.0,
+      2015.1
+     ]
+    },
+    "1999": {
+     "source": "LL3",
+     "revenues_m": [
+      9236.8,
+      10002.9
+     ],
+     "cost_of_sales_m": [
+      2015.1,
+      2098.0
+     ]
+    },
+    "2000": {
+     "source": "LL4",
+     "revenues_m": [
+      10002.9,
+      10862.2
+     ],
+     "cost_of_sales_m": [
+      2098.0,
+      2055.7
+     ]
+    },
+    "2001": {
+     "source": "LL5",
+     "revenues_m": [
+      10862.2,
+      11542.5
+     ],
+     "cost_of_sales_m": [
+      2055.7,
+      2160.2
+     ]
+    },
+    "2002": {
+     "source": "LL6",
+     "revenues_m": [
+      11542.5,
+      11077.5
+     ],
+     "cost_of_sales_m": [
+      2160.2,
+      2176.5
+     ]
+    },
+    "2003": {
+     "source": "LL7",
+     "revenues_m": [
+      11077.5,
+      12582.5
+     ],
+     "cost_of_sales_m": [
+      2176.5,
+      2675.1
+     ]
+    },
+    "2004": {
+     "source": "LL8",
+     "revenues_m": [
+      12582.5,
+      13857.9
+     ],
+     "cost_of_sales_m": [
+      2675.1,
+      3223.9
+     ]
+    },
+    "2005": {
+     "source": "LL9",
+     "revenues_m": [
+      13857.9,
+      14645.3
+     ],
+     "cost_of_sales_m": [
+      3223.9,
+      3474.2
+     ]
+    },
+    "2006": {
+     "source": "LL9",
+     "revenues_m": [
+      14645.3,
+      15691.0
+     ],
+     "cost_of_sales_m": [
+      3474.2,
+      3546.5
+     ]
+    }
+   },
+   "thresholds": {
+    "BEAR": -450,
+    "BASE": -200,
+    "BULL": 50,
+    "XBULL": 250
+   }
+  },
+  "pretax_margin": {
+   "unit": 10,
+   "lower_is_better": false,
+   "values": {
+    "1997": 586.5,
+    "1998": -746.8,
+    "1999": 359.3,
+    "2000": 308.0,
+    "2001": -514.2,
+    "2002": 83.1,
+    "2003": -529.1,
+    "2004": -469.3,
+    "2005": -267.4,
+    "2006": 322.8
+   },
+   "raw": {
+    "1997": {
+     "source": "LL3",
+     "revenues_m": [
+      6998.3,
+      7987.7
+     ],
+     "pretax_m": [
+      2131.3,
+      2901.1
+     ]
+    },
+    "1998": {
+     "source": "LL4",
+     "revenues_m": [
+      7987.7,
+      9236.8
+     ],
+     "pretax_m": [
+      2901.1,
+      2665.0
+     ]
+    },
+    "1999": {
+     "source": "LL5",
+     "revenues_m": [
+      9236.8,
+      10002.9
+     ],
+     "pretax_m": [
+      2665.0,
+      3245.4
+     ]
+    },
+    "2000": {
+     "source": "LL6",
+     "revenues_m": [
+      10002.9,
+      10862.2
+     ],
+     "pretax_m": [
+      3245.4,
+      3858.7
+     ]
+    },
+    "2001": {
+     "source": "LL7",
+     "revenues_m": [
+      10862.2,
+      11542.5
+     ],
+     "pretax_m": [
+      3858.7,
+      3506.9
+     ]
+    },
+    "2002": {
+     "source": "LL8",
+     "revenues_m": [
+      11542.5,
+      11077.5
+     ],
+     "pretax_m": [
+      3506.9,
+      3457.7
+     ]
+    },
+    "2003": {
+     "source": "LL9",
+     "revenues_m": [
+      11077.5,
+      12582.5
+     ],
+     "pretax_m": [
+      3457.7,
+      3261.7
+     ]
+    },
+    "2004": {
+     "source": "LL9",
+     "revenues_m": [
+      12582.5,
+      13857.9
+     ],
+     "pretax_m": [
+      3261.7,
+      2941.9
+     ]
+    },
+    "2005": {
+     "source": "LL9",
+     "revenues_m": [
+      13857.9,
+      14645.3
+     ],
+     "pretax_m": [
+      2941.9,
+      2717.5
+     ]
+    },
+    "2006": {
+     "source": "LL9",
+     "revenues_m": [
+      14645.3,
+      15691.0
+     ],
+     "pretax_m": [
+      2717.5,
+      3418.0
+     ]
+    }
+   },
+   "thresholds": {
+    "BEAR": -1400,
+    "BASE": -750,
+    "BULL": -90,
+    "XBULL": 590
+   }
+  }
+ },
+ "price_basis": "Yahoo's LLY series is adjusted for the 2-for-1 splits of 1995-12-21 and 1997-10-16; none follows 1997, and every P/E window here starts in 1998 or later, so Yahoo's close is the price as traded. Every per-share fact in this file comes from a filing after the 1997 split (the FY2001 10-K and later for the history), so 'splits' is empty. Yahoo books no distribution for Lilly."
+}
