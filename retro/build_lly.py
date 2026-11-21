@@ -52,7 +52,7 @@ ROOT = os.path.abspath(os.path.join(HERE, ".."))
 sys.path.insert(0, HERE)
 import retro_tool  # noqa: E402
 from build_acn import MONTHS, load_series, minus_years, weekly_dates  # noqa: E402
-from build_unp import money, on_basis  # noqa: E402
+from build_unp import money, on_basis, pct_range  # noqa: E402
 
 FACTS = os.path.join(HERE, "facts", "LLY.json")
 ENGINE = os.path.join(HERE, "templates", "lly_engine.py.tmpl")
@@ -77,6 +77,12 @@ def eps_rng(lo, hi):
     """an EPS range: '3.80-3.95'; a loss in parentheses: '(2.06)-(1.56)'"""
     m = lambda v: f"({money(-v)})" if v < 0 else money(v)
     return m(lo) if lo == hi else f"{m(lo)}-{m(hi)}"
+
+
+def usd_rng(lo, hi):
+    """a dollar revenue guide in billions: '$21.8-22.8B' (the BMY form)"""
+    b = lambda v: f"{v:.1f}" if round(v, 1) == v else f"{v:.2f}"
+    return f"about ${b(lo)}B" if lo == hi else f"${b(lo)}-{b(hi)}B"
 
 
 def rule_t_value(k, r):
@@ -210,7 +216,12 @@ def build(as_of, facts, raw, spx, engine, out):
                      prev_fy_gross_margin=a["gross_margin"], prev_fy_sales_growth=a["sales_growth"],
                      prev_fy_us_pct=a["us_pct"], prev_fy_intl_pct=a["intl_pct"],
                      tax_rate=a["tax_rate"], tax_note=f'{a["tax_note"]} ({p["source"]})',
-                     extended=f'{h["extended"]}, FY{y[2:]} from {p["source"]} ({p["published"]})')
+                     extended=f'{h["extended"]}, FY{y[2:]} from {p["source"]} ({p["published"]})',
+                     **({"revenue_label": a["revenue_label"]} if a.get("revenue_label") else {}))
+            if a.get("restates_revenue"):     # (LLY 2010-2013) the same release prints the year before on a revised basis (FY2008
+                                              # under EITF 07-1 in the Q4 2009 release): the history takes it until the 10-K (the JPM rule)
+                h.update(revenue_usd_b={**h["revenue_usd_b"], **a["restates_revenue"]},
+                         extended=f'{h["extended"]}; {a["restates_revenue_note"]}')
     latest = prints[-1]
     # the previous quarter is the print published just before the latest one (in or out of the history's scope)
     public = [p for p in facts["prints"] if p["published"] <= as_of]
@@ -229,7 +240,7 @@ def build(as_of, facts, raw, spx, engine, out):
     # ── guides for the current fiscal year, each field from the latest guide that states it ──
     guides = [g for g in facts["guides"] if g["published"] <= as_of and g["fy"] == cur_fy]
     stated = lambda k: next((g for g in reversed(guides) if k in g), None)
-    ge, ga, gw = stated("eps_guide"), stated("eps_adj"), stated("rev_words")
+    ge, ga, gw, gr = stated("eps_guide"), stated("eps_adj"), stated("rev_words"), stated("rev_guide_usd_b")
     loss_guide = bool(ge) and sum(ge["eps_guide"]) / 2 <= 0
     if ge and not loss_guide:
         eps_now = round(sum(ge["eps_guide"]) / 2, 3)
@@ -240,22 +251,36 @@ def build(as_of, facts, raw, spx, engine, out):
                else "no numeric reported EPS guide yet")
         eps_label = (f"{fy_e}: {why}, FY{last_fy % 100:02d}'s ${money(eps_now)} stands" +
                      "".join(f" (FY{y % 100:02d} is excluded: {excluded[y]})" for y in range(last_fy + 1, cur_fy)))
-    # no next-quarter guide and no revenue guide in numbers (each release states revenue growth in words only): the latest quarter's
-    # sales growth excluding foreign exchange, the release's growth less the exchange-rate points it states (the NKE, MSFT and BMY rule)
-    fwd = [latest["lc_pct"]] * 2
-    q2 = latest["quarter"][:2]
     noun = "total revenue" if latest["fy"] >= 2009 else "net sales"
-    fwd_label = f"no {fy_now} revenue guide in numbers, {latest['quarter']} {noun} growth ex-FX"
-    fwd_short, fwd_period = f"{q2} sales ex-FX", latest["quarter"]
-    fwd_kind = f"no revenue guide in numbers: {latest['quarter']} {noun} growth excluding foreign exchange ({latest['lc_note']})"
-    fy_rev_b = last_rev * (1 + latest["lc_pct"] / 100)
-    fy_rev_label = f"{latest['quarter']} {noun} growth ex-FX, applied to the year"
+    fy_prev_s = f"FY{max(rev) % 100:02d}"
+    if gr and not (gw and gw["published"] > gr["published"]):
+        # (LLY 2010-2013) from the FY2012 guide (the 8-K of 2012-01-05) revenue is guided in dollars: the range read as growth on the
+        # last full year's revenue in the history (the PFE, LOW and BMY dollar-level rule); no next-quarter guide
+        fwd = [round((v / last_rev - 1) * 100, 1) for v in gr["rev_guide_usd_b"]]
+        fwd_label, fwd_short, fwd_period = f"{fy_now} revenue guide", f"{fy_now} guide", fy_now
+        fwd_kind = (f"fiscal-year {gr['rev_label']} guide {usd_rng(*gr['rev_guide_usd_b'])} on {fy_prev_s}'s "
+                    f"${last_rev:.3f}B (no next-quarter guide)")
+        fy_rev_b, fy_rev_label = sum(gr["rev_guide_usd_b"]) / 2, f"{fy_now} revenue guide midpoint"
+    else:
+        # no next-quarter guide and no revenue guide in numbers (each release states revenue growth in words only): the latest
+        # quarter's sales growth excluding foreign exchange, the release's growth less the exchange-rate points it states (the NKE,
+        # MSFT and BMY rule)
+        gr = None
+        fwd = [latest["lc_pct"]] * 2
+        q2 = latest["quarter"][:2]
+        fwd_label = f"no {fy_now} revenue guide in numbers, {latest['quarter']} {noun} growth ex-FX"
+        fwd_short, fwd_period = f"{q2} sales ex-FX", latest["quarter"]
+        fwd_kind = f"no revenue guide in numbers: {latest['quarter']} {noun} growth excluding foreign exchange ({latest['lc_note']})"
+        fy_rev_b = last_rev * (1 + latest["lc_pct"] / 100)
+        fy_rev_label = f"{latest['quarter']} {noun} growth ex-FX, applied to the year"
     if guides:
         bits = ([f"reported EPS ${eps_rng(*ge['eps_guide'])}" + (" (a loss: no P/E, so not used)" if loss_guide else "")]
                 if ge else ["no reported EPS range in numbers"]) + \
-               ([f"the company's adjusted EPS ${eps_rng(*ga['eps_adj'])} (shown only: it also removes in-process research and "
-                 "development, which recurs)"] if ga else []) + \
-               ([f"revenue in words only: '{gw['rev_words']}'"] if gw else []) + \
+               ([f"the company's adjusted EPS ${eps_rng(*ga['eps_adj'])} "
+                 f"({ga.get('adj_why', 'shown only: it also removes in-process research and development, which recurs')})"] if ga else []) + \
+               ([f"{gr['rev_label']} {usd_rng(*gr['rev_guide_usd_b'])} ({pct_range(*fwd)} on {fy_prev_s}'s ${last_rev:.2f}B)"]
+                if gr else []) + \
+               ([f"revenue in words only: '{gw['rev_words']}'"] if gw and not gr else []) + \
                ([g["note"] for g in guides[-1:] if g.get("note")])
         guide_text = f"{fy_now} guide ({', '.join(dict.fromkeys(g['doc'] for g in guides))}): " + "; ".join(bits)
     else:
@@ -338,7 +363,11 @@ def build(as_of, facts, raw, spx, engine, out):
     volumes = (f"company-wide U.S. and outside-U.S. sales: {geo_note}; {noun} growth ex-FX {latest['lc_pct']:+.0f}% ({latest['lc_note']})"
                + (f"; {latest['eps_note']}" if latest.get("eps_note") else "")
                + (f"; {latest['note']}" if latest.get("note") else ""))
-    lead_name, lead_v = groups[0][0], groups[0][1]       # the largest product class: Neurosciences
+    lead_name, lead_v = groups[0][0], groups[0][1]       # the largest product class: Neurosciences (Neuroscience from FY2009)
+    # (LLY 2010-2013) total revenue from the FY2009 10-K and the Q4 2009 release ('revenue_label'); the product classes add to net
+    # product sales in the FY2009 10-K and to revenue from the FY2010 10-K
+    sw = "total revenue" if h.get("revenue_label") else "net sales"
+    gw_basis = "the product classes" if h.get("revenue_label") else "net sales"
     lead = lead_v / sum(v for _, v, _ in groups) * 100
     R = repr
     head = f'''#!/usr/bin/env python3
@@ -388,7 +417,7 @@ REF_LOW_LABEL   = {R(MONTHS[int(ref[5:7]) - 1])}
 
 # ── FACTS: company history ({", ".join(h["sources"])}, vintage {h["published"]}{h["extended"]}) ──
 EPS_NORM      = {R({y: round(v, 4) for y, v in eps_hist.items()})}   # {h["normalization"]}
-REVENUE_HIST  = {R({y: round(v, 6) for y, v in rev.items()})}   # net sales, USD bn
+REVENUE_HIST  = {R({y: round(v, 6) for y, v in rev.items()})}   # {h.get("revenue_label", "net sales")}, USD bn
 SHARES_HIST   = {R({y: round(v, 3) for y, v in shares.items()})}   # diluted, millions
 FY_E, FY_E_S, FY_H, FY_PREV = {R(fy_e)}, {R(fy_e_s)}, {R(fy_h)}, {R(h["fy_label"])}
 PREV_FY_MARGIN = {h["prev_fy_pretax_margin"]}   # pre-tax margin, {h["prev_fy_pretax_margin_note"]}
@@ -414,7 +443,7 @@ SHARES_DIL_B    = {latest["diluted_shares_m"] / 1000:.4f}
 GROUPS          = {R(groups)}
 GROUPS_BASIS    = {R(h["groups_basis"])}
 NEXT_PRINT      = {R(latest["next_print"])}
-SHARE_GAIN_TEXT = {R(f"Franchise: {h['fy_label']} net sales {h['prev_fy_sales_growth']:+.1f}% (U.S. {pv(h['prev_fy_us_pct'])}, outside the U.S. {pv(h['prev_fy_intl_pct'])}), {lead_name} {lead:.0f}% of net sales; {latest['quarter'].split()[0]} gross margin {latest['gross_margin']:.2f}% ({latest['gross_margin_bp']:+.1f}bp)")}
+SHARE_GAIN_TEXT = {R(f"Franchise: {h['fy_label']} {sw} {h['prev_fy_sales_growth']:+.1f}% (U.S. {pv(h['prev_fy_us_pct'])}, outside the U.S. {pv(h['prev_fy_intl_pct'])}), {lead_name} {lead:.0f}% of {gw_basis}; {latest['quarter'].split()[0]} gross margin {latest['gross_margin']:.2f}% ({latest['gross_margin_bp']:+.1f}bp)")}
 BALANCE_TEXT    = {R(f"{h['fcf_label']} year-end cash and short-term investments ${h['cash_b']:.2f}B, {h['fcf_label']} free cash flow ${h['fcf_b']:.2f}B, dividend ${dividend:.2f} a year, {h['cash_return_text']}")}
 VOLUMES_TEXT    = {R(volumes)}
 CAPITAL_RETURN  = {R(latest["cash_return_text"])}

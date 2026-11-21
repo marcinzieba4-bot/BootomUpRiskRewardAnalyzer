@@ -135,7 +135,8 @@ company name every fact sheet with those lists gets, too); LLY: a print whose sa
 margins, quarter EPS, notes and raw figures are absurd, with absurd full-year actuals for the year after the latest vintage (or Q4
 print) before CUTOFF, a later Q4 print whose full-year actuals exclude its own year, U.S. and outside-U.S. growth that a 10-Q after
 CUTOFF first states on the last print before it (`geo_later`, the PEP servings_later rule), a later guide for every guided year with a
-reported EPS range, an adjusted range, words and a note, and a still later loss range (the loss-guide rule), and a later vintage
+reported EPS range, an adjusted range and its reason, words, a dollar revenue range and a note, and a still later loss range (the
+loss-guide rule), a later restatement of every year's revenue on the planted full-year actuals (LLY 2010-2013), and a later vintage
 excluding a year (the dividend and company name every fact sheet gets, too); GOOG: a print whose revenues, margins, opex and receivables gaps, quarter EPS, cash,
 notes and raw figures are absurd, with absurd full-year actuals for the year after the latest vintage before CUTOFF, a later Q4 print
 whose full-year actuals exclude its own year, a later 10-Q restatement of the last print before CUTOFF with absurd figures, and a later
@@ -421,7 +422,8 @@ GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -99
                "BMY": dict(eps_adj=[0.1, 0.2], rev_words="PLANTED", note="PLANTED", rev_guide_usd_b=[0.1, 0.2], rev_guide_pct=[-50, -40],
                            rev_label="PLANTED", adj_why="PLANTED"),
                "CMCSA": dict(rev_guide_pct=[-50, -40], rev_words="PLANTED", rev_label="PLANTED", note="PLANTED"),
-               "LLY": dict(eps_adj=[0.1, 0.2], rev_words="PLANTED", note="PLANTED"),
+               "LLY": dict(eps_adj=[0.1, 0.2], rev_words="PLANTED", note="PLANTED", rev_guide_usd_b=[0.1, 0.2], rev_label="PLANTED",
+                           adj_why="PLANTED"),                               # the dollar range and adj_why (LLY 2010-2013)
                "CTVA": dict(rev_guide_m=[1, 2], rev_guide_note="PLANTED", display="PLANTED", release_time="PLANTED before the open"),
                "NVDA": dict(quarter="Q9 FY99", seq_pct=[-50, -40], base_quarter="PLANTED", base_sales_m=1, level_m=[0.5, 0.6],
                             prior_label="PLANTED", prior_sales_m=1, prior_source="NV1", yoy_pct=[-50, -40], quote="PLANTED",
@@ -677,7 +679,10 @@ try:
         y0 = max(rep_y) + 1
         last["fy_actual"] = {"fy": y0, "fy_label": "FY99", "eps_normalized": 0.01, "revenue_usd_b": 0.01, "diluted_shares_m": 1.0,
                              "normalization_note": "PLANTED", "gross_margin": 1.0, "pretax_margin": -50.0, "pretax_margin_note": "PLANTED",
-                             "sales_growth": -60.0, "us_pct": -60.0, "intl_pct": -60.0, "tax_rate": 0.99, "tax_note": "PLANTED"}
+                             "sales_growth": -60.0, "us_pct": -60.0, "intl_pct": -60.0, "tax_rate": 0.99, "tax_note": "PLANTED",
+                             # (LLY 2010-2013) a restatement of every year the latest vintage reports, and the revenue label
+                             "restates_revenue": {y: 0.01 for y in v0["revenue_usd_b"]}, "restates_revenue_note": "PLANTED",
+                             "revenue_label": "PLANTED"}
         q4 = copy.deepcopy(last)
         q4.update(quarter="Q4 2098", fy=2098, q=4, published=later)
         q4["fy_actual"] = {**last["fy_actual"], "fy": 2098, "fy_label": "FY98", "eps_normalized": None, "excluded_note": "PLANTED"}
@@ -689,7 +694,8 @@ try:
         v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}
         for y in sorted({g["fy"] for g in f["guides"]} | {2099}):
             f["guides"].append({"fy": y, "published": (dt.date.fromisoformat(later) + dt.timedelta(days=1)).isoformat(),
-                                "source": last["source"], "doc": "PLANTED", "eps_guide": [-0.2, -0.1], "eps_adj": [0.1, 0.2], "note": "PLANTED"})
+                                "source": last["source"], "doc": "PLANTED", "eps_guide": [-0.2, -0.1], "eps_adj": [0.1, 0.2], "note": "PLANTED",
+                                "rev_guide_usd_b": [0.1, 0.2], "rev_label": "PLANTED", "adj_why": "PLANTED"})
     if TICKER == "NVDA":   # a later guide for every quarter guided before CUTOFF (the latest guide for a quarter wins), in numbers
                            # and in words, and absurd full-year actuals on the planted print for the year after the latest vintage
         for g in [g for g in f["guides"] if g["published"] < cutoff]:
