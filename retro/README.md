@@ -23492,7 +23492,10 @@ Controls and checks (before any outcome of these dates):
 - **Regression:** `build_cb.py` gains the name and listing encoding and the theme-scope text, the firewall tool's CB entry a symbol on its
   planted later listing; with the new fact sheet the 314 dates of 2008-2013 rebuilt byte-identical before the correction above, which then
   changed only the 157 lines described. No other ticker's code or output is touched.
-- **Firewall:** run after the build was committed and pushed, before any outcome (result below).
+- **Firewall** (after the build was committed and pushed, before any outcome): passes at the 27 cutoffs above (every print, vintage,
+  dividend, name and listing date of the range, 2014-01-06 and 2018-01-01), 0 files changed and no planted text, 314 to 522 dates each.
+  The planted facts are 2008-2013's plus a later listing with its own symbol and a later company name. The 2018-01-01 run rebuilds all
+  522 dates byte-identical.
 
 Seen in the build (method behaviour, not tuned). The class follows the last full year's GAAP EPS against a window that holds the 2008 trough,
 and in 2016 the acquisition:
