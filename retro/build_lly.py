@@ -137,9 +137,9 @@ def geo(p, as_of):
     gl = p.get("geo_later")
     if gl and gl["published"] <= as_of:
         return gl["us_pct"], gl["intl_pct"], gl["note"], gl["source"]
-    if gl:
-        return None, None, f"the release gives no company-wide U.S. and outside-U.S. split; the {p['quarter']} 10-Q, not yet filed, will", None
-    return None, None, p["geo_note"], None
+    # the same words whether or not a later filing states the split: nothing about a filing after AS_OF may show (the firewall rule)
+    return (None, None, f"the {p['quarter']} release gives no company-wide U.S. and outside-U.S. split, and no filing public on AS_OF "
+                        "states it (n/r)", None)
 
 
 def build(as_of, facts, raw, spx, engine, out):
