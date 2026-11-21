@@ -23,7 +23,7 @@ touching either directory.
   outcomes or findings enters another's models. UNP (2008-2026 so far), LOW (2008-2026 so far), AAPL (2008-2026 so far),
   NKE (2008-2026 so far), AVGO (from its 2009-08-06 listing to 2026-10-30 so far), PEP (2008 to 2026-10-30 so far), MSFT
   (2008 to 2026-10-30 so far), XOM (2008 to 2026-10-30 so far), SHW (2008 to 2026-11-06 so far), WMT (2008 to 2026-11-06 so far), RCL (2008 to 2026-11-06 so far), MAR (2008 to 2026-11-03 so far), BKR (2008 to 2017-06-30, then 2019-02-01 to 2026-11-06 so far), PFE (2008 to 2026-11-04 so far), CMCSA (2008 to 2026-11-06 so far), CAT (2008 to 2026-11-06 so far), BMY (2008 to 2026-11-06 so far), NVDA (2008 to 2026-11-06 so far), F (2008-01-04 to 2026-11-06 so far; 2022-01-07 onward was built first at the owner's request, and dates before 2022 are an early era with its
-  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far), SPGI (2008-01-04 to 2026-11-20 so far), CB (2008-01-04 to 2026-11-20 so far) and LLY (2008-01-04 to 2009-12-31 so far) sit in `staging/retrospective/` until the owner adds
+  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far), SPGI (2008-01-04 to 2026-11-20 so far), CB (2008-01-04 to 2026-11-20 so far) and LLY (2008-01-04 to 2013-12-31 so far) sit in `staging/retrospective/` until the owner adds
   them to the archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM", "SHW", "WMT", "RCL", "MAR", "BKR", "PFE", "CMCSA", "CAT",
   "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG", "JPM", "V", "SPGI", "CB", "LLY"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py`, `mu_signal_model.py`, `v_signal_model.py`, `spgi_signal_model.py` and `lly_signal_model.py` (other branches) files
   and today's profiles in `data/business_profiles.json` (NVDA's, SO's, V's, SPGI's, CB's and LLY's included) are 2026 analyses: never inputs to a retrospective. AVGO did not trade
@@ -291,6 +291,16 @@ touching either directory.
   release from Q4 2008, from each 10-Q's date for Q2 2007-Q3 2008 (`geo_later`, the PEP servings rule) and n/r for Q4 2007; dividends
   from the 10-Ks; DURABLE, no live theme; CHEAP and BUY on all 105 dates, robustness 8 of 8, and no tested encoding moves a class; a
   self-text scan (each fact's words, figures and years in a filing by its own date) caught and corrected a first-draft leak in the
-  vintages' notes (retro/README.md, "LLY").
+  vintages' notes (retro/README.md, "LLY"). From 2010: the FY2009-FY2012 vintages are GAAP every year ($3.94, $4.58, $3.90, $3.66; 2012's
+  only listed benefit, the $.43 Amylin income, is under its EPS without it) and FY2008 stays excluded; revenue is the FY2009 10-K's total
+  revenue (EITF 07-1), FY2008's restated from the Q4 2009 release on four dates (`restates_revenue`, the JPM encoding), and 2005 stays at
+  $1.83 before its cumulative effect (the FY2009 10-K's $1.81 is after it); the reported EPS ranges are used as published (FY2010's
+  "excluding the potential impact of health care reform" until Q1 2010, the Amylin income in FY2012, the exenatide income and 2012's R&D
+  tax credit in FY2013; the 8-K of 2012-01-05's FY2011 range on four dates), the non-GAAP ranges shown with their own reason (`adj_why`);
+  revenue is guided in words to FY2011 (BASE the latest quarter ex-FX) and in dollars for FY2012-FY2013, read as growth on the last full
+  year (`rev_guide_usd_b`, the BMY code: -10.2% to -6.1%, then -0.0% to +3.5%); the mid-term floors through 2014 add nothing; every
+  release states the U.S. split; dividends $0.49 from the 10-Ks, repurchases text only; DURABLE, no live theme; CHEAP and BUY on all 209
+  dates, which rest on the ten-year window (a five-year one makes 106 dates from 2011-12-30 RICH); decided in the session that scored
+  2008-2009, disclosed (retro/README.md, "LLY 2010-2013").
 - **Never use the owner's personal email** in request headers to external
   services (SEC asks for a contact in the User-Agent).

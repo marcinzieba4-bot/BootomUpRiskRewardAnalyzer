@@ -24180,6 +24180,189 @@ Judgement calls that could carry hindsight:
 
 The hindsight results are in `staging/retrospective/LLY/FINDINGS.md`: hypotheses, never inputs.
 
+### LLY 2010-2013
+
+209 weekly dates, 2010-01-08 to 2013-12-31, on the same method, engine and rule-T thresholds. The fact sheet only gains facts: its
+2008-2009 content is unchanged (the generator asserts every earlier source, vintage, print and guide equal to the committed sheet) and
+the 105 earlier models rebuild byte for byte after the builder change below.
+
+```bash
+python3 retro/build_lly.py --weekly 2010-01-04 2013-12-31                   # 209 dates, 2010-01-08 .. 2013-12-31
+for c in 2010-01-01 2010-01-28 2010-02-22 2010-04-19 2010-07-22 2010-10-21 2011-01-27 2011-02-22 2011-04-18 2011-07-21 2011-10-20 \
+         2012-01-05 2012-01-31 2012-02-27 2012-04-25 2012-07-25 2012-08-09 2012-10-24 2013-01-04 2013-01-29 2013-02-21 2013-04-24 \
+         2013-07-24 2013-10-23 2014-01-01; do python3 retro/tools/firewall.py $c LLY; done
+```
+
+Read, by the session's model directly with no delegated transcription: the 16 earnings releases of Q4 2009 to Q3 2013 (the reported and
+non-GAAP operating results, the revenue, exchange-rate and U.S. sentences, the full-year paragraphs of the Q4 releases, the
+reconciliations, the repurchase sentences and the guidance sections); the FY2009-FY2012 10-Ks (Items 1 and 1A, the dividend and
+repurchase passages of Items 5 and 7, the five-year summaries, the statements of operations and cash flows, the balance sheets, and the
+segment and geographic notes); the guidance 8-Ks of 2009-12-10, 2012-01-05 (with its 8-K/A of the same day), 2012-08-09 and 2013-01-04;
+the 10-Qs of Q1 2010 to Q3 2013 (their statements of operations, each equal to its release's; the 10-Q/A of 2010-08-02 replaces only an
+XBRL exhibit); and every other 8-K of 2010-2013 by its item text, its exhibits searched for guidance and per-share sentences. **Not
+read:** the 10-Qs and 10-Ks beyond those passages, the proxy statements, the XBRL files and the investor presentations (not filed). The
+generator reads each figure from its own row (it asserts the five-year summaries against the statements, the product classes against
+their totals, each release's U.S. plus outside-U.S. revenue against total revenue, each Q4 release's year against the 10-K that
+follows, and the FY2009 10-K's years against the FY2008 10-K's); 371 strings were added and checked with `verbatim.py` against their
+own filings (706 with the 2008-2009 batch's 335, all found). The source ids are `LL33`-`LL56`.
+
+**Same-session disclosure** (the CB 2010-2013, JPM 2018-2021 and SPGI 2010-2013 precedent): this batch was decided on 2026-11-21 in the
+session that built and scored 2008-2009 and wrote its findings (`staging/retrospective/LLY/FINDINGS.md`, whose hypothesis is that an
+own-history P/E anchor misreads a dated patent cliff). No 2010-2013 outcome was computed before the build below was committed, and no
+decision below changes a rule, threshold, signal or window: every call follows a written rule or an earlier ticker's encoding, and each
+that could move a class is tested at the end.
+
+Decided before any 2010-2013 outcome was computed:
+
+- **Release timing.** Every earnings 8-K was accepted before the open (06:06-06:45 ET) except Q2 2010's (10:16 ET, in the session); none
+  on a week's last trading day, so each print's week is dated the next trading day (2010-01-29 .. 2013-10-24). The 10-Ks: FY2009
+  2010-02-22 12:45 ET, FY2010 2011-02-22 10:46 ET and FY2012 2013-02-21 10:28 ET (in the session); FY2011 2012-02-24 17:07 ET, after the
+  close, dated 2012-02-27. The guidance 8-Ks were accepted before the open (07:37-08:40 ET).
+- **History: four more vintages, the ten fiscal years to the 10-K's year,** each year from the latest filing that reports it: FY2009
+  $3.94, FY2010 $4.58, FY2011 $3.90 and FY2012 $3.66 (diluted EPS; the 10-Ks' statements say "basic and diluted" to FY2011). The FY2009
+  10-K reports revenue as "Revenue", net product sales plus collaboration and other revenue (EITF 07-1, adopted 2009-01-01 and "applied
+  retrospectively to all prior periods presented", the Q1 2009 10-Q): 2005-2007 equal the earlier net sales, 2008 is $20,371.9M against
+  the FY2008 10-K's $20,378.0M (asserted). Its five-year summary gives 2005 at $1.81, after the $.02 cumulative effect, with no footnote,
+  so 2005 stays the FY2008 10-K's $1.83 before it, the latest filing that reports the year on the history's basis (tested below). The
+  FY2012 vintage runs 2003-2012; every window is "10-yr ex-FY08".
+  - **A restated year** (`restates_revenue`, the JPM encoding, a builder change). The Q4 2009 release (2010-01-28) prints FY2008 total
+    revenue on the EITF 07-1 basis ($20,371.9M) before the FY2009 10-K; the history takes it from the release on the four dates
+    2010-01-29 to 2010-02-19. FY2008's EPS is the same and stays excluded. The later Q4 releases show the year before as its 10-K does.
+- **The distorted-year test keeps every new year,** against each Q4 release's figure without its listed items (shown only): 2009 $3.94
+  against the pro forma non-GAAP $4.42; 2010 $4.58 against $4.74; 2011 $3.90 against $4.41; 2012 $3.66 against $3.39, whose only listed
+  benefit, $.43 of income from the early payment of Amylin's revenue-sharing obligation, is under the $3.23 without it (the mirror
+  test). GAAP stands: the non-GAAP figures still exclude acquired in-process research and development, which recurs ($90.0M in 2009 for
+  the Incyte licensing agreement, $50.0M in 2010 for Acrux, $388.0M in 2011 for the Boehringer Ingelheim collaboration, from the
+  statements of operations). **FY2008 stays excluded** (a loss) in all four vintages, its days out of every window.
+- **Guides: reported EPS in numbers; revenue in words to FY2011 and in dollars from FY2012,** each field from the latest guide that
+  states it:
+  - current-FY EPS, the reported range's midpoint: FY2010 $4.75 ($4.65-4.85, the 8-K of 2009-12-10 "excluding the potential impact of
+    health care reform in the U.S.", reconfirmed by the Q4 2009 release), $4.425 ($4.35-4.50, Q1 2010, the reform's estimated $.35 in),
+    $4.515 ($4.44-4.59, Q2) and $4.60 ($4.55-4.65, Q3); FY2011 $3.995 ($3.92-4.07, Q4 2010), $3.935 ($3.86-4.01, Q1 2011), $3.90
+    ($3.85-3.95, Q2), $3.915 ($3.89-3.94, Q3) and $3.865 ($3.84-3.89, the 8-K of 2012-01-05, with an estimated $.05 Xigris charge, on the
+    four dates 2012-01-06 to 2012-01-27; its 8-K/A of the same morning corrects only a non-GAAP reconciliation figure); FY2012 $3.15
+    ($3.10-3.20 "on both a reported and non-GAAP basis", the 8-K of 2012-01-05 and the Q4 2011 release), $3.215 ($3.14-3.29, Q1 2012),
+    $3.34 ($3.29-3.39, Q2), $3.77 ($3.72-3.82, the 8-K of 2012-08-09, the $.43 Amylin income in) and $3.73 ($3.68-3.78, Q3); FY2013
+    $4.175 ($4.10-4.25, Q4 2012 with the $0.07 R&D tax credit for 2012, confirmed in Q1 2013), $4.33 ($4.28-4.38, Q2) and $4.355
+    ($4.33-4.38, Q3). The GAAP ranges are used as published, one-offs in (the BMY rule); the non-GAAP ranges are shown only, each with its
+    reason (`adj_why`: from 2012 they exclude the Amylin and exenatide income and the restructuring charges, not in-process research and
+    development). The 8-K of 2013-01-04's FY2013 range ($4.03-4.18) is superseded by the Q4 2012 release before FY2013 is current;
+  - BASE growth to FY2011: no revenue guide in numbers ("volume-driven revenue growth in the high-single digits", then "mid-single
+    digits"; "flat to slightly increasing", "low-single digits", "mid-single digits"), so the latest quarter's total revenue growth
+    excluding foreign exchange, the release's growth less the exchange-rate points it states, as before: +11% (Q4 2009: 14 less 3), +6%
+    (Q1 2010), +8% (Q2), +3% (Q3: 2 less -1), +5% (Q4 2010), +5% (Q1, Q2 and Q3 2011), -3% (Q4 2011: -2 less 1);
+  - from FY2012 the guides give revenue in dollars, read as growth on the last full year in the history (the PFE, LOW and BMY
+    dollar-level rule; a builder change): FY2012 "between $21.8 and $22.8 billion" (the 8-K of 2012-01-05 to the Q3 2012 release),
+    -10.2% to -6.1% on FY11's $24.287B; FY2013 "between $22.6 billion and $23.4 billion" (the 8-K of 2013-01-04 to the Q3 2013 release),
+    -0.0% to +3.5% on FY12's $22.603B. Revenue carries no non-GAAP adjustment, so the ranges are used as published;
+  - no margin step: the gross-margin guides (about 77, 78 and 79 percent; a decline of 2-3 points in 2011) are not a pre-tax margin
+    (the AAPL gross-margin rule) and the expense ranges are components;
+  - the mid-term goals (the 8-Ks of 2011-06-30 and 2013-10-03, reconfirmed on 2012-01-05: "at least $20 billion of revenue, $3 billion of
+    net income and $4 billion of operating cash flow annually" through 2014) are multi-year floors and add nothing (the LOW, XOM, CAT
+    and BMY rule), nor do the 2011-06-30 words "Earnings per share are expected to decline from 2011 to 2012, increase in 2013, and then
+    decline again in 2014.".
+- **Dividends,** from each 10-K: "the quarterly dividend was maintained at $.49 per share" (FY2009-FY2011; "$0.49" in FY2012), so $1.96
+  a year on every date.
+- **Repurchases** are text only (`CAPITAL_RETURN`; the buyback term remains the history's share count, which rises 2009-2012): the Q2
+  2012 release's resumption of the 2000 program, the Q4 2012 release's new $1.5 billion program, its completion (Q1 and Q2 2013) and the
+  $5 billion program of the 8-K of 2013-10-03 (Q3 2013 release); the 10-Ks' repurchase sentences ride on the vintages.
+- **Signals,** from each release's reported operating results against the year-ago quarter as the same release shows it, as before.
+  Every release from Q4 2009 states the company-wide U.S. and outside-U.S. revenue ("Total revenue in the U.S. increased 11 percent to
+  $3.261 billion"), so no slot is empty; the words "essentially flat", "remained flat", "remained relatively flat" and "relatively flat"
+  read as 0 (the SPGI "flat is 0" rule), and Q1 2012's "Foreign exchange rates had a negligible impact." as 0 points. The Q4 releases'
+  full-year paragraphs give the year's U.S. split for the franchise line. Zyprexa lost U.S. exclusivity in October 2011, inside Q4 2011
+  (U.S. -4%); the Q3 2012 pre-tax margin carries the income from the early payment of Amylin's revenue-sharing obligation ($.43 a share
+  in the quarter) and Q1 2013's the $495.4 million of exenatide income, as published.
+- **Durability: DURABLE, risk 2, unchanged.** The FY2009-FY2011 10-Ks keep "one significant business segment—pharmaceutical products"
+  and the FY2012 10-K reports "two business segments—human pharmaceutical products and animal health products"; their risk factors keep
+  "Our long-term success depends on intellectual property protection" and add "We depend on patent-protected products for most of our
+  revenues, cash flows, and earnings, and we will lose effective intellectual property protection for many of them in the next several
+  years." and "Loss of exclusivity ... typically results in a rapid and severe decline in sales." The "why" follows each 10-K, without
+  the expiry tables' years. The 2012 and 2013 releases' "counter-cyclical growth" names growth areas outside the patent cycle, not a
+  cyclical business. No theme is live for a pharmaceutical company through 2013 (CLOUD, from 2012-10-30, is scoped to hardware,
+  storage, databases and data-center outsourcing); the watch list stays empty.
+- **Segment bridge** (display only): the product classes of each 10-K (Neuroscience, Endocrinology, Oncology, Cardiovascular, Animal
+  health, Other pharmaceuticals), adding to net product sales in the FY2009 10-K and to revenue from the FY2010 10-K.
+- **Adds nothing:** the meeting and vote 8-Ks (2010-04-19, 2011-04-19, 2011-09-14, 2012-04-19, 2013-05-06), the bylaw amendments
+  (2010-10-21, 2012-02-27), the officer and director 8-Ks (2011-12-12, 2012-06-04, 2012-10-19, 2013-05-06, 2013-07-08, 2013-08-28,
+  2013-10-22 and its 8-K/A), and the 10-Q/A of 2010-08-02. None changes a guided number.
+- **Builder change** (`retro/build_lly.py`): the dollar revenue range takes BASE where a guide states it (`rev_guide_usd_b`, read as
+  growth on the last full year's revenue, the BMY 2010-2013 code); a guide's non-GAAP range carries its own reason where the default
+  (in-process research and development) does not apply (`adj_why`); a Q4 release's restated prior-year revenue enters the history until
+  the 10-K (`restates_revenue`); and the revenue label follows the vintage ("total revenue from FY05", `revenue_label`). The 2008-2009
+  models do not move. The firewall tool plants the new fields.
+
+Controls and checks (before any outcome):
+- **`retro_tool run` passes on all 209 dates**; the 7 dates from 2010-01-08 to 2010-02-19 draw one warning, the calendar year 2011 (the
+  FY2008 10-K's own patent-expiry words in the durability "why"); from the FY2009 10-K the "why" quotes no expiry year. The 12 dates
+  whose guide note gained the health care reform words (2010-01-29 to 2010-04-16) were rerun after it.
+- **Controls:** altering one value of each print (its growth ex-FX, its U.S. growth, each Q4 print's full-year revenue and EPS, and
+  the Q4 2009 print's restated FY2008 revenue), each 10-Q's U.S. growth (`geo_later`), each vintage (its last year's EPS, its
+  dividend) and each guide (its reported range and its dollar revenue range) of the whole fact sheet, rerun over all 314 dates,
+  changes no model dated before its publication: 124 controls, of which 116 change the first weekly date on or after it and 8 are
+  inert, each superseded before any built date or before its year is current (the Q2 2007 print and the Q2 2007 release's FY2007
+  guide, and the ranges of the 8-Ks of 2008-12-11, 2009-12-10, 2012-01-05 for FY2012 and 2013-01-04, which the next Q4 release
+  restates before the year is current; the 8-K of 2012-01-05's FY2011 range changes its four dates). The controls ran on the fact
+  sheet before the FY2010 guide note gained the words "the potential impact of health care reform in the U.S." (text only).
+- **Leak scan:** 8 hits in 157,362 (model, later token) pairs over all 314 models, none a leak: 7 are 2.465, FY2008's guide midpoint
+  ($2.44-2.49) in the 2008 models from 2008-10-24 to 2008-12-05, which is also Q1 2013's outside-U.S. revenue ($2.465B); 1 is 34.44, the
+  close of 2009-10-16 and Q3 2012's pre-tax margin. As a positive control, the latest print's own notes appear in each of the 314 models.
+- **Self-text scan:** every capitalized word, dollar figure and year in each of the 73 facts' own text appears in a Lilly filing filed
+  by the fact's date (the tokenizing artifacts "K's" and "Q's" of "10-K's" and "10-Q's" aside). It caught one first-draft leak in this
+  batch before the build: the Q4 2009 print's revenue label named "the FY2009 10-K", published after it; it now names the release.
+- **Regression:** the 105 models of 2008-2009 rebuild byte for byte; no other ticker's code changes.
+
+Seen in the build (method behaviour, not tuned):
+Lilly's ten-year window holds two regimes, 2003-2007 at calendar-year lows of 18-30x and 2009-2013 at 7-11x (2008 out), and the
+stock trades at the second regime's multiples throughout, so every rule that reads the window says cheap until its median crosses:
+- **CHEAP and BUY on all 209 dates; robustness 8 of 8 on 173 and 7 on 36** (2012-07-26 to 2012-10-19 and 2013-07-05 to 2013-12-31,
+  where "multiples one band cheaper" reads RICH on 34 and FAIR on 2).
+- **2010:** FY09E $3.95 on the first three dates, then FY10E $4.75 (from the Q4 2009 print), $4.425, $4.515 and $4.60: $32.37-37.76 is
+  7.1-9.1x, the 0th-11th percentile of a window whose median is 24.4-26.7x, 55-65% under an EPP floor of 20-21x ($79.00-99.75). BASE is
+  the quarter's growth ex-FX with the buyback term: +10.1%/yr, +11.0-11.1% (Q4 2009), +6.0% (Q1 2010), +8.0% (Q2), +3.0% (Q3); BULL equals
+  it except from the Q3 2010 print (the EPS CAGR, +3.9%). Ratio B 0.09-0.16.
+- **2011:** FY11E $3.995 to $3.865: $34.09-41.64 is 7.6-10.6x, the 5th-33rd percentile (median 22.3-24.3x), 44-60% under the floor
+  ($74.10-87.40). BASE +4.8-4.9%/yr (each quarter +5% ex-FX), BULL +5.1-6.7%. Ratio B 0.14-0.31.
+- **2012:** from the Q4 2011 print BASE is -8.4%/yr, the FY2012 dollar guide (-10.2% to -6.1%) with the margin and buyback terms; FY12E
+  $3.15, $3.215, $3.34, then $3.77 with the $.43 Amylin income (2012-08-10) and $3.73: $39.05-52.86 is 10.1-14.0x, the 33rd-43rd
+  percentile (median 20.6-22.3x), 24-44% under the floor ($56.70-71.63). BULL +4.3-5.1%. Ratio B 0.28-0.60.
+- **2013:** FY13E $4.175, $4.33 and $4.355, BASE +1.4-1.5%/yr (the FY2013 guide, -0.0% to +3.5%): $48.38-57.51 is 11.2-14.4x, the
+  37th-47th percentile; the window's median falls from 20.2x to 12.6x as 2003's days leave and the 2009-2013 regime becomes its
+  majority, and the floor, 4-20% above the price to 2013-12-27, falls to $43.55 (10x) on 2013-12-31, when the window starts on
+  2004-01-02 and 2003's low leaves the median of calendar-year lows: the price is 17% above it on that date. Ratio B 0.43-0.66.
+- **BEAR is 2004's fall** (-30.0%/yr, $2.37 to $1.66) and **XBULL the 2005-2007 run** (+21.7%/yr, $1.83 to $2.71) on every date (the
+  2007-2009 run across the excluded FY2008 is +20.6%); the BEAR price stays under the price. The proxy composite runs from 2.70 (Q4
+  2009, Q2 2010) to 1.65 (Q2 2012).
+
+How far each call moves the classes (the 209 dates rebuilt with one encoding changed and classified offline; no outcome consulted):
+- FY2008 kept at the company's $4.02 (instead of excluded): no class, no tier;
+- the company's non-GAAP guide midpoints as current-year EPS (history unchanged): no class; 5 tiers BUY to ACCUMULATE (2012-10-19 and
+  2013-01-04 to 2013-01-25);
+- the FY2012 ranges of the 8-K of 2012-08-09 and the Q3 2012 release without the $.43 Amylin income: 2 classes CHEAP to FAIR
+  (2013-01-18 and 2013-01-25) and 6 tiers BUY to ACCUMULATE (2012-10-19, 2012-10-25, 2013-01-04 to 2013-01-25); the largest EPS call of
+  the batch;
+- the dollar revenue guides ignored (BASE from the latest quarter's growth ex-FX throughout): no class, no tier;
+- BASE on reported growth instead of growth excluding exchange rates: no class, no tier;
+- FY2008's revenue kept at the FY2008 10-K's net sales (no `restates_revenue`): no class, no tier;
+- 2005 at the FY2009 10-K's $1.81: no class, no tier;
+- every data signal at its BEAR value: 46 classes (36 to RICH, 10 to FAIR) from 2012-06-29 to 2013-12-31, no tier; at its XBULL value:
+  none;
+- a five-year P/E window instead of ten (no rule says so; it shows what the call rests on): 106 classes CHEAP to RICH and 106 tiers BUY
+  to AVOID, every date from 2011-12-30.
+The 2010-2011 calls rest on 7-11x the reported guide against a window whose first half traded at 18-30x; from 2012 the margin thins (the
+signals at BEAR move classes from mid-2012, a five-year window from the end of 2011), and the 2013 median is the window's own seam.
+
+Judgement calls that could carry hindsight:
+- the same-session batch (above): the 2008-2009 findings were written before these encodings were chosen;
+- the GAAP guides used with their one-offs in (the Amylin income in FY2012, the exenatide income and the 2012 R&D tax credit in FY2013),
+  and the FY2010 guide "excluding the potential impact of health care reform" used as published until the Q1 2010 release priced it;
+- the dollar revenue ranges as BASE for FY2012-FY2013 (no class either way);
+- FY2008's revenue restated from the Q4 2009 release on four dates, and 2005 kept at $1.83 (no class either way);
+- GAAP EPS rather than the company's non-GAAP figures, and FY2008 still excluded (no class either way);
+- the signals and DURABLE, as in 2008-2009, by a builder who knows that Zyprexa, Cymbalta (December 2013), Evista and Humalog lost
+  exclusivity in these years;
+- the parts of the filings listed above as not read.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -24514,6 +24697,10 @@ What the gates enforce:
   scoped to snacks, beverages and devices; OFFSHORE to IT services), so its watch list is empty and the FY2006-FY2008 10-Ks' risk factor
   on intellectual property protection and generic competition stays in the "why"; patent expiry is the business's own cycle, not a
   substitution theme (the PFE and BMY reading) ("LLY").
+
+  LLY 2010-2013 carries none either: CLOUD, live from 2012-10-30, is scoped to on-premise IT, and the FY2009-FY2012 10-Ks' risk factors
+  ("We depend on patent-protected products for most of our revenues, cash flows, and earnings") stay in the "why"; the 2012-2013
+  releases' "counter-cyclical growth" names growth areas outside the patent cycle, not a cyclical business ("LLY 2010-2013").
 
 ## Workflow
 
