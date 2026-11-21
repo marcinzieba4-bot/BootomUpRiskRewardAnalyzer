@@ -23,7 +23,7 @@ touching either directory.
   outcomes or findings enters another's models. UNP (2008-2026 so far), LOW (2008-2026 so far), AAPL (2008-2026 so far),
   NKE (2008-2026 so far), AVGO (from its 2009-08-06 listing to 2026-10-30 so far), PEP (2008 to 2026-10-30 so far), MSFT
   (2008 to 2026-10-30 so far), XOM (2008 to 2026-10-30 so far), SHW (2008 to 2026-11-06 so far), WMT (2008 to 2026-11-06 so far), RCL (2008 to 2026-11-06 so far), MAR (2008 to 2026-11-03 so far), BKR (2008 to 2017-06-30, then 2019-02-01 to 2026-11-06 so far), PFE (2008 to 2026-11-04 so far), CMCSA (2008 to 2026-11-06 so far), CAT (2008 to 2026-11-06 so far), BMY (2008 to 2026-11-06 so far), NVDA (2008 to 2026-11-06 so far), F (2008-01-04 to 2026-11-06 so far; 2022-01-07 onward was built first at the owner's request, and dates before 2022 are an early era with its
-  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far), SPGI (2008-01-04 to 2026-11-20 so far) and CB (2008-01-04 to 2021-12-31 so far) sit in `staging/retrospective/` until the owner adds
+  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far), SPGI (2008-01-04 to 2026-11-20 so far) and CB (2008-01-04 to 2026-11-20 so far) sit in `staging/retrospective/` until the owner adds
   them to the archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM", "SHW", "WMT", "RCL", "MAR", "BKR", "PFE", "CMCSA", "CAT",
   "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG", "JPM", "V", "SPGI", "CB"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py`, `mu_signal_model.py`, `v_signal_model.py` and `spgi_signal_model.py` (other branches) files
   and today's profiles in `data/business_profiles.json` (NVDA's, SO's, V's, SPGI's and CB's included) are 2026 analyses: never inputs to a retrospective. AVGO did not trade
@@ -270,6 +270,13 @@ touching either directory.
   catastrophe loss, which moves 13 classes of 2021); the FY2020 10-K gives three years (Item 6 "Not required."); no guide in any filing; the
   ten-year roll moves BEAR from FY07-FY08 to FY10-FY11 (2018-02-23) and FY13-FY14 (2021-02-26); dividends $0.73 to $0.80 from the Q2
   10-Qs; RICH on 200 of 209 dates (FAIR 3, CHEAP 6 in March-May 2020); decided in the session that scored 2014-2017, disclosed
-  (retro/README.md, "CB 2018-2021").
+  (retro/README.md, "CB 2018-2021") From 2022: GAAP still where no filing publishes the year excluding only a one-off (FY21 $19.27, with
+  $3,023M of after-tax realized gains, anchors 48 CHEAP dates of 2022; FY22 $12.55; FY25 $25.68); FY23 $19.06 and FY24 $22.56 are the
+  company's "Net income excluding tax benefit" (the Bermuda deferred tax benefits; GAAP $21.80 and $22.70, the ACN, UNP 2005, LMT and JPM
+  rule; 44 classes); the LDTI restatement (FY21 $19.24, FY22 $12.39) from the Q1 2023 supplement, the first filing that prints it (the
+  print-level `restates` of LMT, PFE and CAT, now in `build_cb.py`); market risk benefits in total revenues as the statement adds them;
+  Cigna's Asian business (2022-07-01) and Huatai at 100% (2023-07-01) as published, EPS on Chubb net income; no guide in any filing; BEAR
+  moves to FY21-FY22 (-34.9%/yr, then -35.6% adjusted); dividends $0.83 to $1.02 from the Q2 10-Qs; CHEAP 82, FAIR 94, RICH 79 of 255
+  dates; built in a new session without opening the 2008-2021 outcomes or findings (retro/README.md, "CB 2022-2026").
 - **Never use the owner's personal email** in request headers to external
   services (SEC asks for a contact in the User-Agent).

@@ -128,7 +128,7 @@ SPGI 2018-2021 an operating margin guide on a planted base on every planted guid
 planted guide, a later step-only margin guide on a planted base and a later withdrawal of every guided year; CB: a print whose revenues,
 premiums, combined ratio, investment income, book value, margins, quarter EPS, notes and raw figures are absurd, with absurd full-year
 actuals for the year after the latest vintage (or Q4 print) before CUTOFF and a later restatement of every year it reports (CB
-2010-2013, `restates`), a later Q4 print whose full-year actuals exclude its own year, a later guide for every guided year with every
+2010-2013, `restates`; from CB 2022-2026 also on the print itself, the print-level `restates` of LMT), a later Q4 print whose full-year actuals exclude its own year, a later guide for every guided year with every
 field (a GAAP EPS range, an operating range, P&C and consolidated premium ranges, words and a note), and a later vintage excluding a year with planted texts, figures, groups, window start and kind (the dividend, listing and
 company name every fact sheet with those lists gets, too); GOOG: a print whose revenues, margins, opex and receivables gaps, quarter EPS, cash,
 notes and raw figures are absurd, with absurd full-year actuals for the year after the latest vintage before CUTOFF, a later Q4 print
@@ -885,6 +885,8 @@ try:
               # (CB 2010-2013) a later restatement of every year the latest vintage before CUTOFF reports
               "restates": {y: 0.01 for y in v0["eps_normalized"]}, "restates_note": "PLANTED"}
         last["fy_actual"] = fa
+        # (CB 2022-2026) and a later print-level restatement of every year it reports (the Q1 2023 supplement's LDTI encoding)
+        last["restates"] = {y: {"eps": 0.01, "note": "PLANTED"} for y in v0["eps_normalized"]}
         q4 = copy.deepcopy(last)
         q4.update(quarter="Q4 2098", fy=2098, q=4, published=later)
         q4["fy_actual"] = {**fa, "fy": 2098, "fy_label": "FY98", "eps_normalized": None, "excluded_note": "PLANTED"}

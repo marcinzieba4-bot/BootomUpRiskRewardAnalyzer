@@ -22933,7 +22933,7 @@ Judgement calls that could carry hindsight:
 
 The hindsight results are in `staging/retrospective/SPGI/FINDINGS.md`: hypotheses, never inputs.
 
-## CB (ACE Limited, then Chubb Limited): the thirtieth ticker, in staging, 2008-2021
+## CB (ACE Limited, then Chubb Limited): the thirtieth ticker, in staging, 2008-2026
 
 The CB series is built apart from the other twenty-nine and shares nothing with them but the machinery: its own fact sheet
 (`retro/facts/CB.json`), builder (`retro/build_cb.py`, the JPM builder with an insurer's fields, a fiscal-year EPS range as a guide and BKR's
@@ -23687,6 +23687,235 @@ Judgement calls that could carry hindsight:
 
 The 2018-2021 outcomes were computed only after the firewall passed. The hindsight results are in `staging/retrospective/CB/FINDINGS.md`
 ("2018-2021"): hypotheses, never inputs.
+
+### CB 2022-2026: GAAP through Cigna's Asian business and Huatai, the LDTI restatement from the Q1 2023 supplement, the Bermuda tax benefits at the company's figures, still no guide in any filing, the last date 2026-11-20
+
+255 weekly dates, 2022-01-07 to 2026-11-20 (52, 52, 52, 52, 47), added to the 731 of 2008-2021 at the owner's request ("same rules as
+before"). The method is still r2, the engine and its rule-T thresholds are unchanged, and the 2008-2021 entries of the fact sheet are
+unchanged (the generator asserts it). The code is the newest branch of the repository (its commit "CB retrospective: hindsight outcomes and
+findings for 2018-2021", 2026-11-21), every other recent retro branch being its ancestor. **Built in a new session that did not open the
+2008-2021 outcomes, `SERIES.md` or `FINDINGS.md` before this batch was built, checked and committed.** This README's point-in-time sections
+and CLAUDE.md were read, as every batch reads them. That includes the one-line summaries of earlier findings that the 2010-2013 and
+2018-2021 sections carry, and no decision below uses them. Each decision applies a rule that existed before or an earlier CB encoding:
+- the r2 rollover, decade and bound rules;
+- the ACN, UNP 2005, LMT and JPM rule for a company figure excluding only a one-off;
+- the CB 2010-2013 rule that a restatement applies from the release that first prints it;
+- the LMT, PFE and CAT print-level `restates` encoding;
+- the JPM, CMCSA and PFE reading of acquisitions in the growth rates;
+- the ACN rule for a 10-K without selected data.
+
+```bash
+python3 retro/build_cb.py --weekly 2022-01-03 2026-11-20                    # 255 dates, 2022-01-07 .. 2026-11-20
+for c in 2022-01-03 2022-02-02 2022-02-25 2022-04-27 2022-07-27 2022-07-29 2022-10-26 2023-02-01 2023-02-24 2023-04-26 2023-07-26 \
+         2023-07-28 2023-10-25 2024-01-31 2024-02-26 2024-04-24 2024-07-24 2024-07-26 2024-10-30 2025-01-29 2025-02-27 2025-04-23 \
+         2025-07-23 2025-07-29 2025-10-22 2026-02-04 2026-02-27 2026-04-22 2026-07-22 2026-07-29 2026-10-21 2026-11-21; do
+  python3 retro/tools/firewall.py $c CB; done
+```
+
+The range starts on Monday 2022-01-03 (2021-12-31, built with 2018-2021, is in ISO week 2021-W52) and ends with the week of 2026-11-16.
+The series was built on Saturday 2026-11-21, after Friday's close (Yahoo's last bar is stamped 2026-11-20 16:00:03 ET), so 2026-11-20 is a
+built date. The newest dates have no outcome yet.
+
+What was read, and how (the session's model directly, no delegated transcription):
+- **Releases.** The 20 earnings releases of Q4 2021 to Q3 2026. From exhibit 99.1: the summary consolidated financial data, the quarter
+  and full-year summaries (net income to core operating income) and the definitions of the non-GAAP measures; the text was searched for
+  "guidance", "outlook", "expect", "run rate", "range" and dividend sentences. From exhibit 99.2: the financial highlights' P&C combined
+  ratio, the book value per share reconciliation and the Q1 2023 supplement's accounting adoption page.
+- **10-Ks.** The FY2021-FY2025 10-Ks: the statements of operations, the earnings per share note's diluted shares, the MD&A's P&C combined
+  ratio, the segment note's net premiums earned, Item 1's opening, Item 1A's cycle and catastrophe risk factors, and Item 6.
+- **10-Qs.** The 15 10-Qs of Q1 2022 to Q3 2026, compared by script with their releases on six rows (net premiums earned, net investment
+  income, net realized gains (losses), total revenues, income tax and net income, the quarter and the year-ago quarter: all 15 match), and
+  the Q2 10-Qs' dividend sentences.
+- **Other 8-Ks.** All 25 other 8-Ks of January 2022 to November 2026, by their item text, their exhibits searched by keyword.
+
+**Not read:** the 10-K and 10-Q text beyond those rows and passages; the proxy statements, their additional materials and the exempt
+solicitations; the S-3ASR of 2024-10-03; the notes offerings' exhibits; and the investor decks that the Item 7.01 8-Ks of 2022-12-05,
+2023-12-04, 2024-12-09 and 2025-12-08 say were posted on the website (not filed).
+
+How the fact sheet was made. The scripts behind the 2008-2021 entries are not in the repository, so the new entries come from a new
+generator. It reads each figure from its own row by label and computes every rate. It asserts every identity a table carries:
+- total revenues equal their components in each release and each 10-K;
+- each release agrees with its 10-Q, and each Q4 release's year with the 10-K that follows;
+- the supplement's combined ratio agrees with the release's;
+- the segments sum to net premiums earned;
+- the 2008-2021 entries are unchanged.
+
+It also notes, on every print, each year-ago figure that differs from its own year-ago release. 382 strings were checked with
+`verbatim.py`, each against its own filing (382/382), and no new fact's own text names a year after its publication (the scan that found
+the 2010-2012 leak, which caught and corrected a first draft whose FY2021 and FY2022 vintages named the FY2023 10-K's EPS label). The fact
+sheet only gains facts: 2,576 lines added and none removed (git's histogram diff). The new source ids are `CB100`-`CB129`. Decided on
+2026-11-21, before any 2022-2026 model was built or scored:
+
+- **Release timing.**
+  - All twenty earnings 8-Ks were accepted after the close (16:10-19:03 ET) and are dated the next trading day, public before its open.
+    Each week's date is the trading day after that: 2022-02-03, 2022-04-28, 2022-07-28, 2022-10-27, 2023-02-02, 2023-04-27,
+    2023-07-27, 2023-10-26, 2024-02-01, 2024-04-25, 2024-07-25, 2024-10-31, 2025-01-30, 2025-04-24, 2025-07-24, 2025-10-23, 2026-02-05,
+    2026-04-23, 2026-07-23 and 2026-10-22.
+  - 10-Ks: FY2021 after the close (2022-02-24 17:10 ET, dated 2022-02-25); FY2022 during market hours (2023-02-24 15:47 ET); FY2023 after
+    the close (Friday 2024-02-23 17:08 ET, dated Monday 2024-02-26); FY2024 during market hours (2025-02-27 15:56 ET); FY2025 during
+    market hours (2026-02-27 15:08 ET).
+  - A Q4 print extends the history from its release to the 10-K: 3, 3, 4, 4 and 3 dates.
+- **EPS: GAAP diluted EPS, the same rule, unless a filing publishes the year excluding only a one-off.** Each year comes from the latest
+  filing that reports it. FY21 $19.27, FY22 $12.55, FY23 $19.06, FY24 $22.56, FY25 $25.68. The company's core operating income per share
+  ($12.56, $15.24, $22.54, $22.51 and $24.79 as first published) is display only, as before: it removes realized gains and losses, which
+  recur, and from 2023 market risk benefits gains and losses.
+  - **FY2023 is the company's $19.06,** not GAAP $21.80. Its income tax line carries "a one-time deferred tax benefit of $1.14 billion,
+    or $2.76 per share, related to the enactment of Bermuda's new income tax law". The Q4 2023 release's Full Year Summary publishes the
+    year without it: "Net income excluding tax benefit | $7,893 | ... | $19.06". That figure excludes only the one-off, so it replaces GAAP
+    (the ACN rule; UNP 2005 for a tax reduction; LMT and JPM for the 2017 Tax Act). CB's FY2017 benefit stayed at GAAP for the opposite
+    reason: its only figure without the benefit was on the core basis. The benefit is under the year's income without it, so the mirror
+    test is not met either way. The pre-tax margin and the display-only tax rate stay as published.
+  - **FY2024 is the company's $22.56,** not GAAP $22.70. It excludes the incremental $55M Bermuda deferred tax benefit of Q1 2024 (the
+    Q4 2024 release, the same row). It leaves in the $24M after-tax Charitable Foundation contribution of the same quarter, which no
+    figure excludes alone. From the FY2024 10-K both years cite the Q4 2024 release, the latest filing that prints them.
+  - **FY2025 is GAAP.** The "Amortization of deferred tax asset from Bermuda law" ($124M) recurs, as the Q1 2025 release's redefinition
+    says ("as well as the subsequent years' amortization of the related deferred tax asset"), and no figure excludes only it.
+  - **No year is distorted.** Each Q4 release lists, after tax, realized gains and losses (FY21 $3,023M of gains; FY22 $1,087M of losses
+    as first published), the fair value amortization, the Cigna integration expenses, the market risk benefits and the integration
+    expenses and severance, never near a year's net income ($8,539M, $5,313M, $9,028M, $9,272M and $10,310M).
+  - **From Q3 2023 EPS is Chubb net income per share.** Huatai Group is consolidated at 100% from 2023-07-01, and its noncontrolling
+    interests are out of EPS. The pre-tax margin is income before income tax over total revenues, both at 100%, as the statement prints
+    them.
+- **The LDTI restatement from the Q1 2023 supplement (2023-04-26).** The company adopted the long-duration targeted improvements on
+  2023-01-01 with a transition date of 2021-01-01. The Q1 2023 supplement's accounting adoption page prints FY2021 and FY2022 per share
+  "As Adjusted": $19.24 and $12.39, against $19.27 and $12.55 reported. This is the first filing that prints them, so they apply from
+  its date (the CB 2010-2013 rule; the DAC restatement waited for the Q4 2012 release only because the Q1 2012 supplement gave no
+  per-share figure). The encoding is the print-level `restates` of LMT, PFE and CAT, new in `build_cb.py`. It applies until a 10-K
+  vintage published after the print carries the years: the FY2023 10-K, whose statement gives 2021-2023 as adjusted.
+  - The supplement also republishes FY2022's revenue components, but no total and no FY2021. So revenue keeps the FY2022 10-K until the
+    FY2023 10-K, which can only lag, never leak; the restatement is EPS only, as in LMT.
+  - From Q1 2023 to Q4 2023 each release's year-ago quarter is as adjusted. Each print is read against its own year-ago column, as
+    before, and its note lists every year-ago figure that differs from the year-ago release.
+- **Revenue: total revenues as the statement of operations adds them,** each year from the latest filing that reports it.
+  - From Q1 2023 (and in the FY2023 10-K for 2021-2023) the statement adds a new line: "Market risk benefits gains (losses)". It is in,
+    as published; its 10-Q totals confirm it.
+  - Cigna's Asian accident and health and life business is in the figures from 2022-07-01 ("On July 1, 2022, the company completed the
+    acquisition of Cigna's accident and health (A&H) and life business for $5.36 billion.", the Q2 2022 release), and Huatai Group at
+    100% from 2023-07-01, both as published (the JPM, CMCSA and PFE rule). Nothing is made pro forma.
+- **The ten-year roll.** The FY2021 10-K holds FY2012-FY2021, and each later 10-K moves the window a year.
+  - Item 6 is "[Reserved]" from FY2021, so each 10-K gives the three years of its statement, and earlier years keep the latest 10-K
+    that reported them (the ACN rule; JPM and SPGI).
+  - BEAR is FY13 to FY14 (-22.9%/yr) to the Q4 2022 print, then FY21 to FY22: -34.9%/yr from 2023-02-02 ($19.27 to $12.55), and
+    -35.6%/yr from the Q1 2023 print ($19.24 to $12.39).
+  - XBULL is FY11 to FY13 (+55.4%/yr) to 2022-02-18, then FY19 to FY21 (+40.9%/yr; +40.8% on the adjusted FY21).
+- **No guide in any filing**, as in 2014-2021. No release, 10-Q, 10-K or 8-K guides revenue, EPS or a margin in numbers. The releases'
+  words feed nothing and are not encoded:
+  - "we expect investment income to increase from here." (Q1 2022);
+  - "we expect EPS to continue to grow at a healthy rate into the future." (Q3 2022);
+  - "Our investment income run rate will continue to grow as we reinvest cash flow at higher rates and compound income." (Q2 2023);
+  - the USI sale "expected to result in a realized gain of $460 million" (Q3 2026), which is not a guide of any r2 input.
+
+  So the current year's EPS is the last full year's on every date. BASE is the latest quarter's total revenue growth less the net share
+  issuance, which is a net buyback throughout: diluted shares fall from 443.2M (FY21) to 401.5M (FY25). By print: +3.6% to +3.8% (Q4
+  2021), -5.8% (Q1 2022, $887M of realized gains a year earlier), +0.1%, +9.0%, +6.7% (Q4 2022), +12.5% (Q1 2023), +17.2%, +12.0%
+  (Q3 2023, Huatai in), +11.3% (Q4 2023), +14.4%, +14.7%, +5.0%, +6.7% (Q4 2024), +1.2% (Q1 2025), +4.8%, +6.3%, +8.0% (Q4 2025),
+  +12.3% (Q1 2026), +8.3% and +2.0% (Q3 2026, revenue +0.3% with $455M of realized losses).
+- **Dividends,** each from the first filing that states it. $0.83, $0.86, $0.91, $0.97 and $1.02 a quarter, from the Q2 2022-2026 10-Qs:
+  2022-07-29, 2023-07-28 and 2024-07-26 (during market hours), 2025-07-29 and 2026-07-29 (after the close, dated the next trading day).
+  The sentence is "... expected to be paid in four quarterly installments of $0.83 per share after the general meeting". The meeting
+  8-Ks give the votes only and the releases the dividends paid, as before.
+- **Signals, thresholds, durability: unchanged.**
+  - Catastrophe losses (the California wildfires of Q1 2025 among them: a combined ratio of 95.7%, +970bp), realized gains and losses,
+    market risk benefits, Cigna and Huatai are in, as reported.
+  - CYCLICAL, in each 10-K's own words: the same three sentences in FY2021-FY2025.
+  - GENAI (from 2022-11-30) and GLP1 (from 2023-08-08) join the live themes the "why" quotes. Neither registered scope names insurance,
+    so the watch list stays empty.
+  - The six segments of 2016 throughout (display only).
+- **Adds nothing:** none of these states a guided number.
+  - The share-capital 8-Ks: cancellations and par value (2022-01-20, 2022-08-09, 2025-03-10, 2026-03-11).
+  - The meeting results (2022-05-20, 2023-05-17, 2024-05-16, 2025-05-16, 2026-05-22).
+  - The posted decks (2022-12-05, 2023-12-04, 2024-12-09, 2025-12-08).
+  - The officer and director 8-Ks (2022-12-07, 2024-03-15, 2024-07-09, 2024-08-12, 2025-11-04).
+  - The Credit Suisse statement (2023-03-21), the notes offerings (2024-03-07, 2024-07-31, 2025-08-06, 2026-05-20, 2026-06-10) and the
+    S-3 exhibits (2024-10-03).
+
+Controls and checks (before any outcome of these dates):
+- **`retro_tool run` passes on all 255 dates, with no warning.**
+- **Controls.** Each control alters one value and rebuilds every 2022-2026 date. The values: each print's net premiums earned, each Q4
+  print's full-year EPS, the Q1 2023 restatement's FY2022, each vintage's last-year EPS and each dividend. None changes a model dated
+  before its publication, and each changes the first weekly date on or after it: 36 controls, all effective. The FY2022 vintage's
+  control moves only 9 dates, because the restatement replaces its FY2022 from 2023-04-26.
+- **Term check:** each term first appears on or after its filing, and the later-only terms appear in no model.
+
+  | Term | First model |
+  |---|---|
+  | "$19.27" | 2022-02-03 |
+  | "ITEM 6. [Reserved]" | 2022-02-25 |
+  | "Cigna" | 2022-10-27 |
+  | "$12.55" | 2023-02-02 |
+  | "LDTI", "long-duration", "market risk benefits", "$12.39", "$19.24" | 2023-04-27 |
+  | "Huatai", "Chubb net income" | 2023-10-26 |
+  | "Bermuda", "$19.06", "$21.80" | 2024-02-01 |
+  | "$55 million" | 2024-04-25 |
+  | "$22.56", "$22.70" | 2025-01-30 |
+  | "$25.68" | 2026-02-05 |
+  | GENAI's scope | 2022-12-02 |
+  | GLP1's scope | 2023-08-11 |
+  | each dividend rate | its first weekly date |
+  | "Liberty", "wildfire", "USI", "KKR", "Aon" | none |
+- **Leak scan.** For each of the 255 new models: the source ids, titles, urls, notes and their clauses, quotes, rows and figures (four
+  significant digits or more) of every fact published after its date. Tokens that an earlier fact's text or the engine already carries
+  are dropped first. Result: 0 text hits in 178,979 (model, later token) pairs. The 12 figure hits are all coincidences: the bare 2022
+  and 2023 of the 10-Ks' year headers against FY labels in January 2022 and January 2023. All four of the latest print's notes appear in
+  each model. The 731 earlier models are byte-identical to before, so no new fact reaches them.
+- **Regression.** `build_cb.py` gains the print-level `restates`, and the firewall tool's CB entry a planted print-level restatement of
+  every year. With the new fact sheet the 731 dates of 2008-2021 rebuild byte-identical. No other ticker's code or output is touched.
+- **Firewall** FIREWALL_PLACEHOLDER
+
+Seen in the build (method behaviour, not tuned). As in every CB batch, the class follows the last full year's EPS against a ten-year
+window:
+- **Totals.** CHEAP on 82 dates, FAIR on 94, RICH on 79; legacy tier BUY 40, ACCUMULATE 36, WATCHLIST 102, AVOID 77. By year: 2022 CHEAP
+  48, RICH 4; 2023 RICH 48, FAIR 3, CHEAP 1; 2024 FAIR 22, RICH 21, CHEAP 9; 2025 FAIR 38, CHEAP 13, RICH 1; 2026 FAIR 31, CHEAP 11,
+  RICH 5.
+- **January 2022 rests on FY20's $7.79.** $192.01-201.19 is 24.6-25.8x, the 99th-100th percentile: RICH and AVOID on the four dates
+  before the Q4 2021 print, Ratio B infinite.
+- **From the Q4 2021 print to January 2023, on FY21's $19.27.** That is GAAP with $3,023M of realized gains after tax, against the
+  company's $12.56. $180.29-228.86 is 9.4-11.9x, the 16th-34th percentile of a window whose median is 13.2-13.3x. The EPP floor is 11x
+  ($211.97), and the price is under it on 46 dates (2022-02-03 to 2022-12-16). CHEAP on 49 dates and FAIR on 3; BUY 40, ACCUMULATE 12.
+- **From the Q4 2022 print, on FY22's $12.55, then $12.39 from the Q1 2023 print.** $186.55-241.24 is 14.9-19.5x, the 54th-98th
+  percentile (median 14.3-15.2x), 24-62% above a 12x floor ($148.68-150.60). RICH and AVOID on all 52 dates to 2024-01-26.
+- **From the Q4 2023 print, on FY23's $19.06.** $244.95-301.66 is 12.9-15.8x, the 34th-69th percentile (median 14.2-14.5x), 7-32% above
+  the $228.72 floor. FAIR on 25, RICH on 18 and CHEAP on 9 of the 52 dates.
+- **From the Q4 2024 print, on FY24's $22.56.** $264.52-313.47 is 11.7-13.9x, the 24th-47th percentile (median 14.2x), from 2% under to
+  16% above the $270.72 floor. FAIR on 40 dates, CHEAP on 13; WATCHLIST 36, ACCUMULATE 17.
+- **From the Q4 2025 print, on FY25's $25.68.** $311.73-375.74 is 12.1-14.6x, the 37th-54th percentile (median 13.8-14.2x), 1-22% above
+  the $308.16 floor. FAIR on 26 dates, CHEAP on 11, and RICH on the last 5, from the Q3 2026 print (BASE +2.0%).
+- **BEAR prices** run $42.13 (January 2022), $97.41-98.56 (on FY21), $45.23-52.43 (on FY22), $79.00, $93.60 and $106.50.
+- **Ratio B** is infinite on the 4 dates of January 2022 and never negative.
+- **The proxy composite** runs 1.90 (Q1 and Q2 2022) to 2.70 (Q1 2026): 2.05, 1.90, 1.90, 2.05, 2.00 in 2022 (Q4 2021 to Q4 2022);
+  2.20, 2.50, 2.50, 2.65 in 2023; 2.65, 2.45, 2.65, 2.15 in 2024; 2.00, 2.50, 2.35, 2.50 in 2025; 2.70, 2.20, 2.00 in 2026.
+
+How far each call moves the classes. The 255 dates were rebuilt with one encoding changed and classified in process with
+`retro_tool`'s classifier; no outcome was consulted.
+
+| Encoding changed | Classes | Tiers | Detail |
+|---|---|---|---|
+| EPS at the company's core figure for every year (FY12 $7.65 to FY20 $7.31 as in the earlier sections; FY21 $12.56, FY22 $15.24, FY23 $19.80 and FY24 $22.38 excluding the tax benefits, FY25 $24.79; the LDTI restatement at $12.60 and $15.18) | 133 | 132 | 49 CHEAP and 20 FAIR to RICH, 28 RICH to FAIR, 19 CHEAP to FAIR, 9 FAIR and 8 RICH to CHEAP. By year: 2022 48, 2023 36, 2024 13, 2025 14, 2026 22. The largest call: FY21's $12.56 in place of $19.27 makes 2022 RICH. |
+| FY2023 and FY2024 at GAAP ($21.80, $22.70) instead of the company's figures without the Bermuda benefits | 44 | 55 | 26 FAIR and 11 RICH to CHEAP, 7 RICH to FAIR (2024 39, 2025 5) |
+| Revenue as net premiums earned (the history and the quarter's growth) | 27 | 14 | 12 CHEAP to FAIR, 7 FAIR to CHEAP, 5 FAIR to RICH, 3 RICH to FAIR |
+| No net share issuance in BASE (a flat share history) | 25 | 13 | |
+| Revenue without market risk benefits gains (losses) | 12 | 1 | 9 FAIR to CHEAP, 3 CHEAP to FAIR |
+| The LDTI restatement not used before the FY2023 10-K | 0 | 0 | |
+| Every signal at its BEAR value | 152 | 0 | 94 FAIR and 50 CHEAP to RICH, 8 CHEAP to FAIR |
+| Every signal at its XBULL value | 50 | 0 | 37 FAIR to CHEAP, 13 RICH to FAIR |
+| DURABLE instead of CYCLICAL | 0 | 0 | label only (255 labels, no price state) |
+
+Judgement calls that could carry hindsight:
+- **The EPS basis.** GAAP, with realized gains and losses in, kept by the same rule (133 classes). FY21's $19.27, inflated by $3,023M of
+  realized gains, anchors every CHEAP date of 2022. A builder who knows how 2022 went might have reached for the core figure; the rule
+  existed before, and was kept.
+- **FY2023 and FY2024 at the company's figures excluding the Bermuda tax benefits** (44 classes). The rule is old and the figure is
+  printed, but the ACN, UNP, LMT and JPM precedents are other tickers' readings, and CB's own FY2017 stayed at GAAP.
+- **The LDTI restatement** taken from the Q1 2023 supplement (it moves no class), with revenue left to the FY2023 10-K.
+- **Market risk benefits in revenue, as the statement adds them** (12 classes). Cigna and Huatai are in as published; the
+  consolidation's quarters (Q3 2023 to Q2 2024) carry BASE at +12% to +15%.
+- **Revenue as total revenues** rather than net premiums earned (27 classes).
+- **The signals and their weights,** chosen in 2008-2009 (152 classes at BEAR, 50 at XBULL).
+- **CYCLICAL rather than DURABLE** (label only).
+- **The parts of the filings listed above as not read,** the four posted decks among them.
+
+The 2022-2026 outcomes were computed only after the firewall passed. The hindsight results are in
+`staging/retrospective/CB/FINDINGS.md` ("2022-2026"): hypotheses, never inputs.
 
 ## Categories change with the era
 

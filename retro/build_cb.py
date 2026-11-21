@@ -49,6 +49,8 @@ Usage
   python3 retro/build_cb.py --weekly 2009-01-05 2009-12-31
   python3 retro/build_cb.py --weekly 2010-01-04 2013-12-31
   python3 retro/build_cb.py --weekly 2014-01-06 2017-12-31
+  python3 retro/build_cb.py --weekly 2018-01-01 2021-12-31
+  python3 retro/build_cb.py --weekly 2022-01-03 2026-11-20
   python3 retro/build_cb.py 2008-04-30
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/CB/<AS_OF>
 """
@@ -195,6 +197,16 @@ def build(as_of, facts, raw, spx, engine, out):
                                                       # basis, from its date until the next 10-K (the JPM, PFE and LMT field)
                 h.update(eps_normalized={**h["eps_normalized"], **a["restates"]},
                          normalization=f'{h["normalization"]}; {a["restates_note"]}')
+    # (CB 2022-2026) a print may republish earlier years' EPS on a revised basis (the Q1 2023 supplement's FY2021-FY2022 as adjusted
+    # for the long-duration accounting adopted on 2023-01-01); each year comes from the latest filing that reports it, so the figure
+    # replaces the year from the print until a 10-K vintage published after the print carries the year (the LMT, PFE and CAT
+    # print-level 'restates' encoding, EPS only)
+    for p in prints:
+        if p.get("restates") and p["published"] > h["published"]:
+            for yy, rr in p["restates"].items():
+                assert yy in h["eps_normalized"], (p["quarter"], yy, "restates a year outside the history")
+                h.update(eps_normalized={**h["eps_normalized"], yy: rr["eps"]}, normalization=f'{h["normalization"]}; {rr["note"]}',
+                         extended=f'{h["extended"]}, FY{yy[2:]} restated by {p["source"]} ({p["published"]})')
     latest = prints[-1]
     # the previous quarter is the print published just before the latest one (in or out of the history's scope)
     i = public.index(latest)
