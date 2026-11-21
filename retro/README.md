@@ -22939,8 +22939,8 @@ The CB series is built apart from the other twenty-nine and shares nothing with 
 (`retro/facts/CB.json`), builder (`retro/build_cb.py`, the JPM builder with an insurer's fields, a fiscal-year EPS range as a guide and BKR's
 listed-symbol encoding) and engine (`retro/templates/cb_engine.py.tmpl`, the JPM engine with a property and casualty insurer's signals and
 ACE's own rule-T thresholds). It is the first insurer in the retrospectives. The method is still r2. No fact, parameter, outcome or finding
-of another ticker enters a CB model; there is no CB profile in `data/business_profiles.json` and no live CB analysis in the repository to keep
-out. Outputs go to `staging/retrospective/CB/`, beside the others, with the same `index.json` and their own `SERIES.md`. The owner asked for
+of another ticker enters a CB model. Today's CB profile in `data/business_profiles.json` (Chubb Limited) is a 2026 analysis; it was not
+opened for this series and is not an input (only `retro_tool outcome` reads it, for the hindsight `profile_drift` label). Outputs go to `staging/retrospective/CB/`, beside the others, with the same `index.json` and their own `SERIES.md`. The owner asked for
 2008-2009 ("same rules as before"); the code is the newest branch of the repository (its commit "SPGI retrospective: hindsight outcomes and
 findings for 2022-2026", 2026-11-20), every other recent retro branch being its ancestor.
 
