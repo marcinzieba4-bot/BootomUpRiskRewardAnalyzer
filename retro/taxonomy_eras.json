@@ -1981,6 +1981,11 @@
     "term": "S&P Global Energy",
     "first_seen": "2025-11-13",
     "note": "the Commodity Insights segment's new name; first in a filing under CIK 64040 in the Investor Day 8-K of 2025-11-13 (ex.99), EDGAR full-text search"
+   },
+   {
+    "term": "Chubb Limited",
+    "first_seen": "2015-07-07",
+    "note": "ACE Limited's name after it acquired The Chubb Corporation (the CB series key's later company); first in a filing under CIK 896159 in the 8-K of 2015-07-07 (Item 1.01, the merger agreement: 'to change its name from ACE Limited to Chubb Limited'), EDGAR full-text search. The Chubb Corporation, NYSE: CB in 2008-2009, is a different company, so 'Chubb' alone is not anachronistic"
    }
   ]
  }

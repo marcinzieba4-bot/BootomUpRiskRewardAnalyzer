@@ -23,9 +23,9 @@ touching either directory.
   outcomes or findings enters another's models. UNP (2008-2026 so far), LOW (2008-2026 so far), AAPL (2008-2026 so far),
   NKE (2008-2026 so far), AVGO (from its 2009-08-06 listing to 2026-10-30 so far), PEP (2008 to 2026-10-30 so far), MSFT
   (2008 to 2026-10-30 so far), XOM (2008 to 2026-10-30 so far), SHW (2008 to 2026-11-06 so far), WMT (2008 to 2026-11-06 so far), RCL (2008 to 2026-11-06 so far), MAR (2008 to 2026-11-03 so far), BKR (2008 to 2017-06-30, then 2019-02-01 to 2026-11-06 so far), PFE (2008 to 2026-11-04 so far), CMCSA (2008 to 2026-11-06 so far), CAT (2008 to 2026-11-06 so far), BMY (2008 to 2026-11-06 so far), NVDA (2008 to 2026-11-06 so far), F (2008-01-04 to 2026-11-06 so far; 2022-01-07 onward was built first at the owner's request, and dates before 2022 are an early era with its
-  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far) and SPGI (2008-01-04 to 2026-11-20 so far) sit in `staging/retrospective/` until the owner adds
+  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far), SPGI (2008-01-04 to 2026-11-20 so far) and CB (2008-01-04 to 2009-12-31 so far) sit in `staging/retrospective/` until the owner adds
   them to the archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM", "SHW", "WMT", "RCL", "MAR", "BKR", "PFE", "CMCSA", "CAT",
-  "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG", "JPM", "V", "SPGI"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py`, `mu_signal_model.py`, `v_signal_model.py` and `spgi_signal_model.py` (other branches) files
+  "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG", "JPM", "V", "SPGI", "CB"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py`, `mu_signal_model.py`, `v_signal_model.py` and `spgi_signal_model.py` (other branches) files
   and today's profiles in `data/business_profiles.json` (NVDA's, SO's, V's and SPGI's included) are 2026 analyses: never inputs to a retrospective. AVGO did not trade
   before its IPO, so its series starts at the listing (the listing and bounds rules of method r2). BKR's 2008 to 2017-06-30 dates are Baker
   Hughes Incorporated, listed as BHI: BKR is only the series key (and Yahoo's symbol for the history); the models print BHI. Its dates from
@@ -232,5 +232,19 @@ touching either directory.
   history keeping Mobility until a GAAP filing restates it (the pro forma statements add nothing) and FY2026 from the Q2 2026 release's
   continuing-operations guide; GENAI is on the watch list from the FY2023 10-K (text only, the GOOG rule); RICH 163, FAIR 67, CHEAP 25
   of 255 dates; built in a new session without opening the 2008-2021 outcomes or findings (retro/README.md, "SPGI 2022-2026").
+  CB is ACE Limited, NYSE: ACE, in 2008-2009 (Chubb Limited from 2016): CB is only the series key and Yahoo's symbol for ACE's history, the
+  models print ACE (the BKR and SPGI encoding), and "Chubb Limited" is on the anachronism list. The Chubb Corporation, which traded as CB in
+  2008-2009, is a different company and is not this series (its own ticker and a non-Yahoo price source would be the owner's call). The first
+  insurer: revenue is total revenues as the statement of operations adds them (realized gains and losses in); EPS is GAAP diluted before the
+  cumulative effect, as the company's "income excluding net realized gains (losses)" also removes recurring realized gains and losses (the
+  NKE FY2007, AVGO, PFE and V rule; FY08 $3.53 against the company's $7.72, the series' largest call, 52 classes); FY2002 is excluded by
+  the AAPL test (the $354M asbestos charge against $100M), so the history and the P/E window start with FY2003, and FY2005 is kept with its
+  listed catastrophe and A&E items summed against its realized gains ($976M against $1,029M; charges alone would exclude it, 46 classes);
+  the FY2007 "Earnings per Common Share" range is the FY2007E anchor as published, the FY2008 operating income range feeds nothing (the
+  SPGI eps_guide_amort rule) and net premiums earned guides are components (the MSFT segment rule), so BASE is the latest quarter's revenue
+  growth less net share issuance; fiscal 1996-1998 ended September 30 (the BKR transition rule, rule T only); signals are net premiums
+  earned, the combined ratio, investment income, book value per share and the pre-tax margin; CYCLICAL on the 10-Ks' own "historically
+  cyclical"; dividends in dollars as each filing states them after the Swiss Continuation; CHEAP 51, FAIR 6, RICH 48 of 105 dates (RICH on
+  every date from the Q4 2008 print) (retro/README.md, "CB").
 - **Never use the owner's personal email** in request headers to external
   services (SEC asks for a contact in the User-Agent).

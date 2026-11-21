@@ -22933,6 +22933,241 @@ Judgement calls that could carry hindsight:
 
 The hindsight results are in `staging/retrospective/SPGI/FINDINGS.md`: hypotheses, never inputs.
 
+## CB (ACE Limited): the thirtieth ticker, in staging, 2008-2009
+
+The CB series is built apart from the other twenty-nine and shares nothing with them but the machinery: its own fact sheet
+(`retro/facts/CB.json`), builder (`retro/build_cb.py`, the JPM builder with an insurer's fields, a fiscal-year EPS range as a guide and BKR's
+listed-symbol encoding) and engine (`retro/templates/cb_engine.py.tmpl`, the JPM engine with a property and casualty insurer's signals and
+ACE's own rule-T thresholds). It is the first insurer in the retrospectives. The method is still r2. No fact, parameter, outcome or finding
+of another ticker enters a CB model; there is no CB profile in `data/business_profiles.json` and no live CB analysis in the repository to keep
+out. Outputs go to `staging/retrospective/CB/`, beside the others, with the same `index.json` and their own `SERIES.md`. The owner asked for
+2008-2009 ("same rules as before"); the code is the newest branch of the repository (its commit "SPGI retrospective: hindsight outcomes and
+findings for 2022-2026", 2026-11-20), every other recent retro branch being its ancestor.
+
+```bash
+python3 retro/build_cb.py --weekly 2008-01-01 2008-12-31                    # 53 dates, 2008-01-04 .. 2008-12-31
+python3 retro/build_cb.py --weekly 2009-01-05 2009-12-31                    # 52 dates, 2009-01-09 .. 2009-12-31
+for d in staging/retrospective/CB/20*/; do
+  python3 retro/retro_tool.py --archive staging/retrospective run "$d"
+  python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
+done
+python3 retro/retro_tool.py --archive staging/retrospective series CB
+for c in 2008-01-10 2008-02-06 2008-02-29 2008-04-30 2008-07-14 2008-07-30 2008-10-29 2008-11-10 2009-02-04 2009-02-27 2009-04-29 \
+         2009-07-28 2009-07-29 2009-10-28 2010-01-01; do python3 retro/tools/firewall.py $c CB; done
+```
+
+Two ranges, as for JPM and SPGI: the series has 2008-12-31 and no 2009-01-02.
+
+**The company and the series key.** In 2008-2009 the company is ACE Limited, listed on the NYSE as ACE ("ACE Limited (NYSE: ACE)", every
+release; CIK 896159), a Cayman Islands company with its headquarters in Bermuda that continued into Switzerland on 2008-07-18. It acquired
+The Chubb Corporation and took the name Chubb Limited in 2016; CB is only the series key (TICKER, the folder, the index) and the symbol under
+which Yahoo serves ACE's history, and every printed line names ACE and the company of the date (`LISTED_SYMBOL`, the BKR and SPGI encoding).
+Yahoo's CB series is ACE's: its first trade is 1993-03-25 (ACE's listing), its one split is ACE's 3-for-1 of 1998-03-03, and its 2007-2008
+dividends are ACE's ($0.27 and $0.29 a quarter). **The CB of 2008-2009 is not this company:** The Chubb Corporation (CIK 20171) traded as CB
+on those dates. It is a different company, whose history Yahoo does not serve under CB; a retrospective of it would need its own fact sheet,
+builder and a price source other than Yahoo, the owner's call (the KMI precedent for KMP). Checked before any price or outcome of the period
+was read (Yahoo was asked for its series metadata and its 2006-2008 dividends only).
+
+Read, by the session's model directly with no delegated transcription: the FY2006, FY2007 and FY2008 10-Ks (Item 1's segment premium table
+and opening, Item 1A searched for the cycle and catastrophe risk factors, Item 5's dividends, Item 6, the statements of operations); the
+selected financial data of the FY2000-FY2005 10-Ks and the FY2004 10-K/A (2005-08-12, the restatement of 2000-2004), with the FY2002 and
+FY2003 10-Ks' asbestos passages and the FY2004 10-K/A's run-off charge; every earnings release of Q4 2006 to Q3 2009 (exhibit 99.1 searched
+for guidance, outlook and dividend sentences; exhibit 99.2, the financial supplement: its consolidating statement of operations, financial
+highlights, consecutive-quarter tables and EPS computation); the Q3 2006 release (its consolidating statement, to confirm the Q4 2006
+supplement's previous quarter); the Q4 2003 to Q4 2005 releases (their figures excluding realized gains, catastrophe losses and the A&E
+charge, for the 2005 one-off test and the operating-EPS test below); the 10-Qs of Q1 2007 to Q3 2009 (their statements of operations, compared
+by script with each release on six rows, and their dividend sentences); the two 10-K/As (2008-04-29: Part III; 2009-03-10: Item 7A captions,
+"No number entries to any of the tables were changed."); and every other 8-K of December 2006 to December 2009 by its item text, its exhibits
+searched by keyword. **Not read:** the 10-Qs and 10-Ks beyond those rows and passages, the proxy statements and the 2008 proxy
+statement/prospectus of the redomestication, and the slide presentations the Item 7.01 8-Ks of 2008-09-30, 2008-11-05, 2009-02-12,
+2009-05-05, 2009-06-09 and 2009-08-17 say were posted on the website (not filed). The fact sheet is generated by a script from the filings'
+converted rows: each figure is read from its own row by label (the script asserts the row exists and checks every identity a table carries:
+total revenues and pre-tax income against each 10-K's statement of operations, the segments against net premiums earned, each Q4 release's
+year against the 10-K that follows, each supplement's consecutive-quarter tables against its consolidating statement), every growth rate,
+ratio change, margin and rule-T value is computed, not typed, and every quoted sentence is asserted present in its own filing; the 401
+strings were checked with `verbatim.py` against their own filings (401/401). Each source's date comes from EDGAR's acceptance time (UTC,
+converted to ET; before 2003 EDGAR gives the filing date only); the source ids are `CB1`-`CB26`. Decided on 2026-11-21, before any CB
+model was built or any CB outcome computed:
+
+- **Prices as traded.** Yahoo's split of 1998-03-03 precedes the P/E window (2003-01-01 on), so the close is the price as traded: $60.74 on
+  2008-01-04, $52.92 on 2008-12-31 and $50.40 on 2009-12-31. NYSE: ACE throughout (the Continuation kept the listing and the symbol).
+- **Fiscal calendar.** The calendar year from 1999. "On July 2, 1999, the Company changed its fiscal year end from September 30 to December
+  31." (FY2000 10-K): fiscal 1996-1998 ended September 30, and the three-month transition period to December 31, 1998 is not a fiscal year
+  (the BKR rule), which only rule T's 1997-1999 changes reach. The five dates before the Q4 2007 print (2008-01-04 to 2008-02-01) have FY2007
+  as the current year.
+- **Release timing.** Every earnings 8-K of Q4 2006 to Q3 2009 was accepted after the close (16:09-21:47 ET; the call, where the release
+  states it, at 8:30 a.m. the next morning) and is dated the next trading day, public before its open; each week's date is the trading day after that: 2008-02-07, 2008-05-01,
+  2008-07-31, 2008-10-30, 2009-02-05, 2009-04-30, 2009-07-29 and 2009-10-29. The FY2006 and FY2007 10-Ks were accepted after the close
+  (2007-02-28 21:19, 2008-02-28 20:21 ET) and are dated 2007-03-01 and 2008-02-29; the FY2008 10-K during the session (2009-02-27 14:43 ET).
+  A Q4 print extends the history from its release to the 10-K: FY2007 from 2008-02-06 (3 dates), FY2008 from 2009-02-04 (3 dates).
+- **Revenue: total revenues as the statement of operations adds them**, net premiums earned, net investment income and net realized gains
+  (losses), as reported (the JPM rule: the income statement's own total), each year from the latest filing that reports it; the 10-Ks'
+  "Total revenues" rows agree with the sum on every year they print. Realized losses are in, so 2008's revenue falls 3.7% while net premiums
+  earned rise 7.4%; Combined Insurance (from 2008-04-01) is in as published. Nothing is made pro forma.
+- **EPS: GAAP diluted EPS before the cumulative effect of a change in accounting principle**, each year from the latest filing that reports it
+  (the FY2006 10-K for 2002-2006, then the FY2007 and FY2008 10-Ks; FY2006 is $6.90 before its $0.01 cumulative effect):
+  - **The company's operating figure is not used.** Its "income excluding net realized gains (losses)" is "a common performance measurement
+    for insurance companies", but it removes realized investment and derivative gains and losses, which recur ("We exclude net realized gains
+    (losses) ... because the amount of these gains (losses) is heavily influenced by, and fluctuates in part according to, the availability of
+    market opportunities.", every release): it is not a figure excluding only one-offs (the NKE FY2007, AVGO, PFE and V rule), and it is
+    shown in each print's EPS note, display only. FY2008 is GAAP $3.53 with $1,633M of pre-tax realized losses in it (the company's figure
+    $7.72): the largest call of the series (below).
+  - **FY2002 is excluded, a distorted year** (the AAPL FY2002 test): the asbestos reserve strengthening the FY2002 10-K lists ("a $354 million
+    net after-tax charge to fourth quarter 2002 earnings") exceeds the year's $100M net income as the FY2006 10-K restates it ($0.27 a share;
+    $0.19 in the FY2002 10-K, before the FY2004 10-K/A restated 2000-2004), and no filing on the restated basis publishes the year without it.
+    So the history and the P/E window start with FY2003 (`pe_window_start` 2003-01-01; the ACN FY02, LMT and JPM rule): a 5.0-year window on
+    2008-01-04, 7.0 years at the end of 2009. 2001, a loss of $(0.88), precedes it, as do the September fiscal years.
+  - **FY2003-FY2008 are kept.** No year meets the test on the items the filings list, summed as listed, charges against gains (the BKR and
+    AAPL FY2003 reading): FY2004's asbestos and run-off charge ($302M after tax, the FY2004 10-K/A) is under its $1,153M; the Q4 2005 release
+    lists FY2005's A&E charge and catastrophe losses ($2,005M excluding them and realized gains, against $956M excluding realized gains alone:
+    $1,049M after tax) beside its net realized gains (a $73M benefit: $1,029M of net income against $956M), $976M against $1,029M. Catastrophe
+    losses also recur: each supplement prints a "Catastrophe and other large losses" row, and the guides budget them ("Catastrophe Losses
+    included in our estimated earnings are $300 million pre-tax for the second half of the year."). Read as charges alone, $1,049M exceeds
+    $1,029M by $20M and FY2005 would be excluded: a close call, tested below. FY2008's realized losses are recurring items, not listed
+    one-offs, so it is kept at GAAP.
+- **Current-FY EPS: a fiscal-year EPS range stated as earnings per share.** ACE guides the year in its releases, never a quarter:
+  - FY2007, from the Q2 2007 release: "Earnings per Common Share are expected to range between $7.15 and $7.50." The release states no other
+    basis beside it, so it is read as published: FY2007E $7.325 on the five dates before the Q4 2007 print (the CAT and SPGI range rule). Reading it as
+    operating would interpret it through the Q1 2008 release's later wording; it is tested below.
+  - FY2008, from the Q1 2008 release: "Operating Income per Share is expected to range between $7.40 and $7.90. The previous range was between
+    $7.00 and $7.50." Operating income per share also removes realized gains and losses, so the range feeds nothing (the SPGI
+    `eps_guide_amort` rule, guide line only, as `eps_guide_operating`) and FY07's $7.66 stands from the Q4 2007 print (the rollover rule);
+    the previous range is in no filing (the Q4 2007 release gives no guide).
+  - FY2009: "Earnings guidance announced on December 18, 2008, for the ACE Group for the full year 2009 has not changed." (Q1 2009 release):
+    the guide itself is in no filing (no 8-K between 2008-12-17 and 2009-01-26), so the words are in the guide line, no field, and FY08's
+    $3.53 stands from the Q4 2008 print.
+- **Forward revenue growth.** No next-quarter guide, so method r2's fallback takes the fiscal year, and the fiscal-year guides are net premiums
+  earned ("Property & Casualty Net Earned Premium Growth is expected to average from 2% to 4%." for FY2007; P&C +1% to +3% and "Consolidated
+  Net Premiums Earned are expected to increase 8% to 10%." for FY2008): a component of revenue, so no total is derived (the MSFT segment rule;
+  JPM's net interest income outlooks), and BASE takes the latest quarter's total revenue growth (the UNP, JPM and SPGI rule) plus the buyback
+  term. There is no margin guide, so no margin step; the margin signal takes the latest quarter's change.
+- **Diluted shares,** each year from the latest filing that reports it. The buyback term is net issuance: -5.6%/yr over FY2003-FY2006
+  (275.7M to 327.2M shares, the 2005 offerings after the hurricanes among them), -4.4%/yr to FY2007, -3.7%/yr to FY2008.
+- **Dividends,** the latest declared quarterly rate in US dollars, each from the first filing that states it: $0.25 (FY2006 10-K), $0.27
+  ("On July 13, 2007, we paid dividends of 27 cents per share", Q2 2007 10-Q, dated 2007-08-08: $1.08 a year on every date to July 2008),
+  $0.29 (8-K of 2008-07-14), $0.26 ("CHF 0.30 ($0.26)", the first par value distribution, Q3 2008 10-Q, dated 2008-11-10) and $0.31 ("or $0.31
+  per quarter, at the time of the annual general meeting", 8-K of 2009-07-28, dated 2009-07-29). From the Continuation the rate is declared in
+  Swiss francs and paid in dollars at the exchange rate of the day; the dollar figure is the one the filing states. The 8-Ks that restate the
+  2008 approval's dollar equivalent (2008-09-30, 2008-12-17, 2009-03-31) and the board's 2009 proposal "subject to shareholder approval"
+  (2009-03-31) declare nothing new.
+- **Signals.** An insurer has no gross margin or inventories, so the set is its own, with ACN's weights: net premiums earned growth (0.20,
+  the premium revenue), the change in the P&C combined ratio (0.20, lower is better: the underwriting cost, in the place of the gross margin),
+  net investment income growth (0.15), book value per share growth (0.15: the balance sheet's marks, in the place of the inventory gap) and the
+  change in the pre-tax margin (0.15: income before income tax over total revenues), plus the theme slot at 2/4. Each value is the
+  supplement's own against the year-ago quarter in the same supplement (the consolidating statement's ACE Consolidated column, the highlights'
+  combined ratio and book value per share against the year-ago quarter end), as reported: catastrophe losses, realized losses and Combined
+  Insurance in. Net premiums written are displayed, not scored.
+- **Thresholds by rule T over fiscal 1997-2006**, the decade of the FY2006 10-K, the vintage public on 2008-01-04: each change from the latest
+  10-K published by 2008-01-04 that reports both years (the FY2000 10-K for fiscal 1996-1997, FY2001 for fiscal 1997-1998, FY2002 for fiscal
+  1998 against calendar 1999, FY2003 for 1999-2000, the FY2004 10-K/A for 2000-2001, FY2005 for 2001-2002, FY2006 for 2002-2006). Seams stay
+  in, as published: 1999 compares calendar 1999 with fiscal 1998 and holds the CIGNA property and casualty acquisition (net premiums earned
+  +178%); 2000-2001 are on the restated basis for 2001 and the earlier one for 2000; book value per share is diluted to the FY2004 10-K/A;
+  the dollar figures are in thousands to FY2004. The raw figures and values are in the fact sheet (`rule_t`); the builder re-derives every
+  value and threshold and refuses to build if they differ.
+
+  | Signal | Fiscal 1997-2006 | BEAR / BASE / BULL / XBULL |
+  |---|---|---|
+  | net premiums earned growth | 6.55, 11.04, 177.95, 82.43, 33.04, 14.34, 40.89, 14.22, 5.74, 0.66 % | -13 / 1 / 14 / 178 % |
+  | combined ratio change | -770, 880, 1130, -400, 1600, -1120, -1020, 530, 320, -1140 bp | 3240 / 1600 / -40 / -1140 bp |
+  | net investment income growth | 18.6, 27.94, 52.15, 56.25, 2.74, 1.25, 10.84, 12.56, 24.78, 26.66 % | -19 / 1 / 22 / 56 % |
+  | book value per share growth | 23.6, 24.29, 5.96, 14.64, 1.75, 3.2, 23.71, 10.57, 6.62, 20.74 % | -9 / 2 / 13 / 24 % |
+  | pre-tax margin change | 993.2, -325.4, -2819.0, -95.5, -1496.0, 347.6, 1662.8, -478.1, -174.0, 1124.1 bp | -5500 / -2820 / -130 / 1660 bp |
+
+- **Durability: CYCLICAL, risk 2.** Each 10-K's risk factors call the company's own business cyclical: "The insurance and reinsurance business
+  is historically cyclical, and we expect to experience periods with excess underwriting capacity and unfavorable premium rates." (FY2006),
+  "Insurance and reinsurance markets are historically cyclical, and we expect to experience periods with excess underwriting capacity and
+  unfavorable premium rates." (FY2007, FY2008): the company's own label (the XOM, CAT and GOOG reading, against SPGI's customers' cycle and
+  JPM's consumer loan losses). No theme in `taxonomy_eras.json` is live for a property and casualty insurer on these dates (OFFSHORE is
+  scoped to IT services), so the watch list is empty and the builder refuses events until a theme encoding is decided. The catastrophe risk
+  factor ("The incidence and severity of catastrophes are inherently unpredictable and our losses from catastrophes could be substantial.")
+  is the business's own risk, in the "why". The kind changes the class label only.
+- **Segment bridge and EPS check** (display only): the vintage's four segments by net premiums earned (Insurance – North American, Insurance –
+  Overseas General, Global Reinsurance, Life Insurance and Reinsurance), the total from the BASE revenue rate on the last year; the EPS check
+  runs on the last year's pre-tax margin and tax rate.
+- **Adds nothing:** the 8-K of 2008-10-07 (the third-quarter catastrophe estimate, "approximately $315 million" after tax, no guided number),
+  the 8-K of 2008-10-10 ("ACE estimates operating income(1) for the third quarter ended September 30, 2008, to be between $1.44 and $1.48 per
+  common share.", preliminary results the release reports, the UNP 2021 rule; noted on the Q3 2008 print), the 8-K of 2009-03-10 (variable
+  annuity sensitivities), the 8-Ks of 2008-09-30 (Lehman Brothers holdings) and 2009-12-01 (Dubai exposure), the Combined Insurance purchase
+  agreement (2007-12-20; the acquisition reaches the prints), the redomestication 8-Ks (2008-03-20, 2008-07-10, 2008-07-14, 2008-07-16,
+  2008-07-18; the Continuation changes the share's name and par value, not the listing), the credit facilities, senior notes and letter of
+  credit agreements, the NYSE's Form 25 of 2008-06-27 (the 7.80% Series C preferred depositary shares, not the common), the officer, director, rights-plan, articles and organizational-regulation 8-Ks, and the two 10-K/As. None changes a
+  guided number; the dividend 8-Ks are encoded above.
+- **Anachronism list:** "Chubb Limited" joins `taxonomy_eras.json`, from the first filing under CIK 896159 that uses it (the 8-K of
+  2015-07-07, Item 1.01: "to change its name from ACE Limited to Chubb Limited"; EDGAR full-text search). No existing model contains it, so no
+  output changes. "Chubb" alone is not anachronistic (The Chubb Corporation existed throughout). The models print no "Chubb Limited"; the
+  constant TICKER, the folder and the Yahoo URL still say CB, a residual that names a later symbol, though no fact about the later company (the
+  BKR residual).
+
+Controls and checks (before any outcome):
+- **`retro_tool run` passes on all 105 dates, with no warning.**
+- **Controls:** altering one value of each print (its net premiums earned growth; each Q4 print's full-year EPS), each vintage (its last
+  year's EPS), each guide (its first field) and each dividend changes no model dated before its publication: 26 controls, of which 21 change
+  the first weekly date on or after it and 5 are inert, superseded before any built date (the Q4 2006, Q1 2007 and Q2 2007 prints' growth,
+  FY2006's Q4 actuals and the $0.25 dividend).
+- **Term check:** "Switzerland", "Continuation" and "par value" first appear on 2008-10-30 (the Q3 2008 print's note), "CHF" on 2008-11-14
+  (the Q3 2008 10-Q's dividend), "Combined Insurance" on 2008-05-01 (the Q1 2008 guide), "$3.53" on 2009-02-05 and "1.36 Swiss" on 2009-07-29,
+  each after its filing; "Lehman", "Madoff", "Zurich" and "Chubb Limited" appear in no model.
+- **Leak scan:** 0 hits in 18,337 (model, later token) pairs: the source ids, titles, notes, quotes, rows and figures (four significant digits
+  or more) of every fact published after each model's date, after dropping the tokens an earlier fact or the engine already carries (a later
+  note that repeats an earlier one inside a longer text included). As a positive control, all four of the latest print's own notes appear in
+  each model. No fact's own text names a year after its publication.
+- **Regression:** the shared code is untouched (the firewall tool gains a CB entry, `taxonomy_eras.json` the term above); rebuilding the
+  2008-2009 dates of JPM and SPGI changes nothing.
+
+Seen in the build (method behaviour, not tuned). A price-to-earnings method on an insurer through 2008-2009 turns on which year's EPS
+anchors the multiple, and the classes follow it:
+- **CHEAP on 51 dates, FAIR on 6, RICH on 48; legacy tier BUY 41, ACCUMULATE 15, WATCHLIST 1, AVOID 48.** CHEAP or FAIR on every date of 2008
+  and January 2009 (FAIR on 3 of the 5 dates before the Q4 2007 print, on 2008-05-01, on 2008-06-06 and on 2008-09-19, the week of the
+  short-selling ban, when the price reached $66.00); RICH and AVOID on all 48 dates from the Q4 2008 print (2009-02-05).
+- **2008 rests on FY07's $7.66** (FY2007E $7.325 in January): $40.75-66.00 is 5.3-8.6x, the 2nd to 64th percentile of a 5.0-6.1-year
+  window whose median is 7.9-8.3x; the EPP floor is 6-7x (the calendar-year lows of 2003-2008 run from 4.5x in 2003, a record GAAP year on a
+  low price, to 11.7x in 2005), and the price is under it on 2008-10-10 (-11%), 2008-11-21 and 2009-01-23 to 2009-01-30.
+- **2009 rests on FY08's $3.53:** $32.50-54.85 is 9.2-15.5x, the 49th-90th percentile of a window whose median is 9.8-10.7x, and 15% to 94%
+  above an EPP floor of 8x ($28.24). On 2009-03-06, the low of the series ($32.50), the class is RICH and the tier AVOID.
+- **BEAR is the worst year of the history:** -26.1%/yr through 2008 (FY03's $5.25 to FY04's $3.88, the four Florida hurricanes and the run-off
+  charge), a BEAR price of $25.60-26.75; -53.9%/yr from the Q4 2008 print (FY07's $7.66 to FY08's $3.53), a BEAR price of $4.88-4.95.
+- **BASE is the quarter's total revenue growth less the net share issuance:** +1.9%/yr (Q3 2007's +7.5% less 5.6%) in January 2008, then
+  -3.7% (Q4 2007), -17.7% (Q1 2008, revenue -13.3% with $353M of realized losses), +6.2% (Q2 2008), -5.0% (Q3 2008), -14.9% (Q4 2008: revenue
+  -11.2%), +12.5% (Q1 2009: +16.2% against the first quarter of 2008), -11.2% (Q2 2009) and -2.0% (Q3 2009). BULL is the history's CAGR
+  (+9.5% to +9.9%/yr in 2008, -7.6% to -2.0% in 2009, or BASE's rate where higher) and XBULL the FY05 to FY07 run, +52.1%/yr (+33.4% before the
+  Q4 2007 print).
+- **Ratio B is infinite on 29 dates of 2009** (the price above the BULL case) and never negative (the BEAR price stays under the price).
+- **The proxy composite** is 2.30 on Q3 2007, 2.15 on Q4 2007, 2.00 on Q1 2008, 2.35 on Q2 2008, 2.05 on Q3 and Q4 2008, 2.00 on Q1 2009,
+  1.50 on Q2 2009 (premiums, investment income and book value per share at BEAR) and 2.15 on Q3 2009.
+
+How far each call moves the classes (the 105 dates rebuilt with one encoding changed and classified offline; no outcome consulted):
+- EPS at the company's operating figure for every year and guide (FY03 $4.21, FY04 $3.34, FY05 $3.06, FY06 $7.05, FY07 $8.07, FY08 $7.72
+  from the Q4 releases; the FY2008 operating range as the guide): 52 classes (44 RICH to CHEAP, 3 RICH to FAIR, 5 FAIR to CHEAP) and 64
+  tiers, the largest call of the series: FY08's $7.72 in place of $3.53 makes 2009 CHEAP;
+- FY2005 excluded (the catastrophe losses and the A&E charge read as charges alone): 46 classes (31 CHEAP to FAIR, 9 CHEAP and 6 FAIR to
+  RICH) and 50 tiers with only the year itself leaving (the MU FY2006 reading), 31 classes and 22 tiers with the history and the window
+  starting after it (r2's base wording);
+- FY2002 kept at $0.27, the history and window from 2002: 42 classes (18 RICH to FAIR, 18 RICH to CHEAP, 6 FAIR to CHEAP) and 64 tiers;
+- the FY2007 range read as operating (no field, FY06's $6.90 standing in January 2008): 2 classes (CHEAP to FAIR), 3 tiers;
+- revenue as net premiums earned (the history and the quarter's growth), with or without the consolidated premium guide as the forward rate
+  from the Q1 2008 print: 1 class (RICH to FAIR on 2009-03-06), 1 tier;
+- no net share issuance in BASE (a flat share history; no rule says so, it shows what BASE rests on): 1 class, 2 tiers;
+- every signal at its BEAR value: 44 classes (37 CHEAP and 6 FAIR to RICH, 1 CHEAP to FAIR), no tier; at its XBULL value: 5 classes (FAIR to
+  CHEAP), no tier;
+- CYCLICAL instead of DURABLE: label only.
+
+Judgement calls that could carry hindsight:
+- the EPS basis: GAAP, with realized gains and losses in, because the company's figure also removes them, which recur (52 classes; the
+  insurance industry's own convention is the operating figure, and a builder who knows that 2008's realized losses reversed in 2009 might have
+  chosen either way);
+- the signals, chosen by a builder who knows the 2008 marks and the 2008 hurricanes: book value per share and the pre-tax margin hold 0.30 of
+  the weight and the combined ratio 0.20 (rule T then sets the thresholds mechanically; 44 classes move at BEAR);
+- FY2002 excluded by the AAPL test on its asbestos charge (42 classes), and FY2005 kept by $53M on the items summed as listed (charges alone:
+  46 classes the other way);
+- the FY2007 "Earnings per Common Share" range read as published (2 classes);
+- net premiums earned guides read as components of revenue rather than the revenue guide (1 class);
+- the series itself: ACE Limited under the CB key, not The Chubb Corporation that traded as CB in 2008-2009;
+- CYCLICAL rather than DURABLE (label only);
+- the parts of the filings listed above as not read: a guide in an unread exhibit or a posted presentation would be missed, though every
+  release, 10-Q statement and 10-K outlook passage was read.
+
+The hindsight results are in `staging/retrospective/CB/FINDINGS.md`: hypotheses, never inputs.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -23256,6 +23491,10 @@ What the gates enforce:
   cards, the Visa Stablecoin Platform), and the FY2026 10-K says stablecoins "could disrupt existing payment networks", the company's own
   reading, so the stock is not re-filed. GENAI's scope names no payments network, so the 10-Ks' words on generative AI and Visa's
   value-added services stay in the "why" ("V 2022-2026").
+
+  CB (ACE Limited) in 2008-2009 carries none: no theme in the registry is live for a property and casualty insurer (OFFSHORE, from
+  2004-11-05, is scoped to IT services; CLOUD is not live before 2012-10-30, CRYPTO before 2020-10-21), so its watch list is empty and the
+  FY2006-FY2008 10-Ks' cycle and catastrophe risk factors stay in the "why" (the PEP obesity rule) ("CB").
 
 ## Workflow
 
