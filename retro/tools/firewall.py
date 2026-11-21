@@ -127,9 +127,9 @@ words on every planted guide, a planted risk line on the later vintage and a lat
 SPGI 2018-2021 an operating margin guide on a planted base on every planted guide, and from SPGI 2022-2026 a margin expansion in bp on every
 planted guide, a later step-only margin guide on a planted base and a later withdrawal of every guided year; CB: a print whose revenues,
 premiums, combined ratio, investment income, book value, margins, quarter EPS, notes and raw figures are absurd, with absurd full-year
-actuals for the year after the latest vintage (or Q4 print) before CUTOFF, a later Q4 print whose full-year actuals exclude its own year,
-a later guide for every guided year with every field (a GAAP EPS range, an operating range, P&C and consolidated premium ranges, words and
-a note), and a later vintage excluding a year with planted texts, figures, groups, window start and kind (the dividend, listing and
+actuals for the year after the latest vintage (or Q4 print) before CUTOFF and a later restatement of every year it reports (CB
+2010-2013, `restates`), a later Q4 print whose full-year actuals exclude its own year, a later guide for every guided year with every
+field (a GAAP EPS range, an operating range, P&C and consolidated premium ranges, words and a note), and a later vintage excluding a year with planted texts, figures, groups, window start and kind (the dividend, listing and
 company name every fact sheet with those lists gets, too); GOOG: a print whose revenues, margins, opex and receivables gaps, quarter EPS, cash,
 notes and raw figures are absurd, with absurd full-year actuals for the year after the latest vintage before CUTOFF, a later Q4 print
 whose full-year actuals exclude its own year, a later 10-Q restatement of the last print before CUTOFF with absurd figures, and a later
@@ -881,7 +881,9 @@ try:
         fa = {"fy": y0, "fy_label": "FY99", "eps_normalized": 0.01, "revenue_usd_b": 0.01, "diluted_shares_m": 1.0,
               "normalization_note": "PLANTED", "op_margin": -99.0, "op_margin_note": "PLANTED", "pretax_margin": -99.0,
               "pretax_margin_note": "PLANTED", "combined_ratio": 199.0, "sales_growth": -99.0, "npe_growth": -99.0, "tax_rate": 0.99,
-              "tax_note": "PLANTED", "book_value_ps": 0.01}
+              "tax_note": "PLANTED", "book_value_ps": 0.01,
+              # (CB 2010-2013) a later restatement of every year the latest vintage before CUTOFF reports
+              "restates": {y: 0.01 for y in v0["eps_normalized"]}, "restates_note": "PLANTED"}
         last["fy_actual"] = fa
         q4 = copy.deepcopy(last)
         q4.update(quarter="Q4 2098", fy=2098, q=4, published=later)

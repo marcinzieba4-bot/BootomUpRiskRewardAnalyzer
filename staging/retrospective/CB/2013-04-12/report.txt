@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  ACE  ·  ACE Limited  ·  $91.99  ·  RETROSPECTIVE as of 2013-04-12
+  Signal: ✕ AVOID   Ratio B: 3.34x   Adj gap: -1.09  [OVERVALUED]
+  Point-in-time: 13 sources, latest published 2013-04-12; latest print Q4 2012 (Jan 29)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2013E revenue, USD bn  →  FY2015E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2013E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Insurance – North American    $  8.40  $ 8.40  $ 9.38    +0.00    +0.98
+    +1.6% net premiums earned in FY12
+  Insurance – Overseas General  $  6.87  $ 6.87  $ 7.67    +0.00    +0.80
+    +2.2% net premiums earned in FY12
+  Global Reinsurance            $  1.20  $ 1.20  $ 1.34    +0.00    +0.14
+    -0.1% net premiums earned in FY12
+  Life                          $  2.29  $ 2.29  $ 2.56    +0.00    +0.27
+    +3.1% net premiums earned in FY12
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $ 18.76  $18.76  $20.95    +0.00    +2.19
+  FY2013E = FY12 $17.936B × (1 + 4.6%: the Q4 2012 revenue growth (no Q1 2013 guide), YoY, applied to the year (no FY13 revenue guide)); split pro rata to FY12 net premiums earned by segment (FY12 growth)
+  Q4 2012 (Jan 29): total revenues $4.687B +4.6% YoY (-8.8% QoQ); net premiums earned +0.4% (written +0.7%); net investment income +0.4%;
+  P&C combined ratio 105.5% (+1250.0bp); pre-tax margin 13.44% (-564.8bp); book value per share +12.0%; EPS $2.22 vs $2.15
+  Revenue: total revenues $4,687M vs $4,479M a year earlier, $5,138M the quarter before (net premiums earned, net investment income and net realized gains (losses)); net premiums earned $3,848M vs $3,831M; net premiums written $3,657M vs $3,630M; net investment income $567M vs $565M; net realized gains (losses) $272M vs $83M; diluted EPS (net income) $2.22 vs $2.15; the company's income excluding net realized gains (losses) $1.43 vs $1.90 a share, which also removes recurring realized gains and losses (not used); diluted shares 343.7M; book value per share $80.90 vs $72.22 a year earlier; P&C combined ratio 105.5% vs 93.0%; in Switzerland from 2008-07-18 (the Continuation): common shares and par value distributions in Swiss francs; the release recasts the year-ago quarter for the deferred acquisition cost accounting adopted retrospectively on 2012-01-01, as published; the quarter before is Q3 2012 as its own release printed it
+  FY13 guide: operating income per share $6.60-7.00 (Q4 2012 release; operating income per share, which also removes realized gains and losses (no field: the SPGI eps_guide_amort rule)). No revenue guide in numbers, so the latest quarter's revenue growth stands in (the UNP rule)
+
+  FY2013E EPS check:  $18.760B × 16.6% pre-tax × (1−9.1%) ÷ 0.344B  =  $8.23  (FY2013E: an operating-basis guide only, FY12's $7.89 stands)
+  FY2015E BEAR check: $18.760B × 16.6% ÷ 0.360B  =  $7.85  (scenario $1.62)
+  FY2015E BULL check: $20.950B × 17.0% ÷ 0.360B  =  $8.98  (scenario $8.64)
+  Every 1pp of pre-tax margin ≈ $0.496 EPS ≈ $4.57/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Net premiums earned growth            -13.0%     ≥1.0%    ≥14.0%   ≥178.0%     +0.4%  ⚠ BEAR  █░░░
+  Combined ratio (P&C)                +3240.0bp  ≤1600.0bp  ≤-40.0bp  ≤-1140.0bp  +1250.0bp  ◦ BASE  ██░░
+  Net investment income growth          -19.0%     ≥1.0%    ≥22.0%    ≥56.0%     +0.4%  ⚠ BEAR  █░░░
+  Book value per share growth            -9.0%     ≥2.0%    ≥13.0%    ≥24.0%    +12.0%  ◦ BASE  ██░░
+  Pre-tax margin change               -5500.0bp  ≥-2820.0bp  ≥-130.0bp  ≥1660.0bp  -564.8bp  ◦ BASE  ██░░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.65 / 4.00
+  Market composite:   2.65 / 4.00  (back-solved from $91.99 + 15% hurdle)
+  SCA adjustment:    +0.01  ·  EPP-distance adj -0.10  →  Adj composite 1.56  →  Gap -1.09  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY12 total revenues +6.5%, net premiums earned +1.9%, P&C combined ratio 93.9%; Q4 combined ratio 105.5% (+1250bp YoY)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 11.7x FY13E vs a 9.2x 10-yr median (70th percentile of its own range)  (-0.33 × 25%  =  -0.083)
+    -  Growth vs own history: Q4 2012 revenue growth (no Q1 2013 guide) +4.6% vs a 6.2% 9-yr median  (-0.16 × 20%  =  -0.032)
+    +  Book value $80.90 a share (+12.0% YoY) at the end of Q4 2012 (FY12 $80.90), dividend $1.96 a year  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Net premiums earned growth             +0.4%    -13.0%  -13.4%  Premiums shrink as prices soften or e…
+  Combined ratio (P&C)                +1250.0bp  +3240.0bp  +1990.0bp  Losses and expenses take more of prem…
+  Net investment income growth           +0.4%    -19.0%  -19.4%  Yields and invested assets fall
+  Book value per share growth           +12.0%     -9.0%  -21.0%  Investment marks and losses erode cap…
+  Pre-tax margin change               -564.8bp  -5500.0bp  -4935.2bp  Realized losses and claims outrun rev…
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$33.14  (model)  /  $9.72 (defined)
+  Bear probability (proxy model):  40.7%
+
+  KEY TRIGGER: revenue went from +19.7% (Q3 2012) to +4.6% YoY (Q4 2012), -8.8% on the quarter before;
+  the bear case needs the combined ratio (+1250.0bp YoY now) rising further
+  and book value (+12.0% YoY) shrinking under losses and marks. Catastrophes and reserve charges show up in the combined ratio first;
+  investment marks show up in book value before they reach earnings.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $7.89  (FY2013E: an operating-basis guide only, FY12's $7.89 stands)
+  Min viable P/E at panic:          8x  [median of calendar-year P/E lows: 2003 5.8x, 2004 8.5x, 2005 11.8x, 2006 7.0x, 2007 7.0x, 2008 11.0x, 2009 4.3x, 2010 5.3x, 2011 13.0x, 2012 8.7x, 2013 10.1x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $63.12/share
+  Current $91.99 vs Updated EPP $63.12:  +46%  ⚠ far above floor — large drawdown room
+  Bear $9.72 vs Updated EPP $63.12:  -85%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Net premiums earned growth                     1.0       +0.6   BASE floor (vs +0 now)
+  Combined ratio (P&C)                        1600.0     +350.0   BASE floor (vs +1250 now)
+  Net investment income growth                   1.0       +0.6   BASE floor (vs +0 now)
+  Book value per share growth                    2.0      -10.0   BASE floor (vs +12 now)
+  Pre-tax margin change                      -2820.0    -2255.2   BASE floor (vs -565 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $7.89 × (1+0.2%)² = $7.92
+  At 9x P/E (conservative):  $71.31/share
+  + Cumul. dividends (2yr):  +$4.04/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $71.31  (▼20.68 from $91.99)
+  Conservative total return:  -18% over 2yr  = -9%/yr
+
+  0.2% EPS growth is what is left once the premium multiple (11.7x)
+  mean-reverts to 9x. Breakeven at 9x needs FY2015E EPS of $9.77,
+  i.e. 11.3%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $68.98  –  $92.28  (at 99th pct of range)
+  Annual dividend:      $1.96/share  (yield 2.1%)
+  Realized vol:         16% annualized (1-yr daily log returns)
+  Beta vs broad market: 0.88
+  1-sigma range (1yr):  $77.09  –  $106.89  ($91.99 ± 16%)
+  2-sigma range (1yr):  $62.19  –  $121.79
+  ────────────────────────────────────────────────────────────
+  Bear $9.72 requires:  ~5.5σ price move  (unusual — requires fundamental break)
+  An insurer whose earnings follow the underwriting cycle, catastrophes and markets: the stock is +33% off its July
+  low (52 weeks) while revenue went from +19.7% (Q3 2012) to +4.6% YoY (Q4 2012), -8.8% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        1.62    6.0x  $   9.72    40.7%      6.7%   +34.0pp  EPS -54.7%/yr (worst year FY03-FY12, capped at 0%); P/E to its 10th pct
+  BASE        8.24    9.2x  $  75.81    44.2%     23.5%   +20.8pp  EPS +2.2%/yr (Q4 revenue YoY + margin + buyback); P/E at its 10-yr median
+  BULL        8.64   13.5x  $ 116.64    12.7%     58.7%   -46.0pp  EPS +4.6%/yr (FY03-FY12 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL      20.61   15.2x  $ 313.27     2.4%     11.1%    -8.7pp  EPS +61.6%/yr (best 2-yr run FY03-FY12, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $59.77  /  Market EV: $121.67  /  Current: $91.99
+  Conservative EV (2yr, ④): $71.31 + $4.04 divs = $75.34 total value
+  Downside (→ Bear $9.72): 89.4%   Upside (→ Bull $116.64): 26.8%   Ratio B 3.34x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $91.99 the market needs $121.66 in two years —
+  above the BULL case. That is a market composite of 2.65 against a model
+  read of 1.56: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       3.34x     +46%    -1.09  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     2.05x     +46%    -0.70  OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx     +46%    -1.45  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          2.91x     +46%    -1.03  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                          3.90x     +46%    -1.15  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             3.34x     +46%    -0.79  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 3.34x      +6%    -0.99  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    3.34x     +46%    -0.93  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 2013 print (the quarter ends in Mar) — revenue against the Q4 2012 revenue growth (no Q1 2013 guide): +4.6% YoY
+  (2) Underwriting — the P&C combined ratio was 105.5% in Q4 2012 (+1250.0bp YoY): what must hold for premiums to turn into earnings
+  (3) The FY13 guide — operating income of $6.60-7.00 a share (Q4 2012 release), which also removes realized gains and losses: no field, so the last full year's GAAP EPS stands
+  (4) Book value — $80.90 a share at the end of Q4 2012 (+12.0% YoY): investment marks and reserve charges reach capital here first
+  (5) Capital at 12x — dividend $0.49 a quarter: 'The dividend approval provides for an annual par value reduction of 1.80 Swiss francs (CHF), which was equal to US$1.96 per share, or $0.49 per quarter, at the time of the annual general meeting.'; book value $80.90 a share at the end of Q4 2012
+  ✕ AVOID  |  EPP floor $63.12  |  ADD below ~$64.44  |  TRIM above $116.64
+════════════════════════════════════════════════════════════════════════
+

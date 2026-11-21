@@ -23,7 +23,7 @@ touching either directory.
   outcomes or findings enters another's models. UNP (2008-2026 so far), LOW (2008-2026 so far), AAPL (2008-2026 so far),
   NKE (2008-2026 so far), AVGO (from its 2009-08-06 listing to 2026-10-30 so far), PEP (2008 to 2026-10-30 so far), MSFT
   (2008 to 2026-10-30 so far), XOM (2008 to 2026-10-30 so far), SHW (2008 to 2026-11-06 so far), WMT (2008 to 2026-11-06 so far), RCL (2008 to 2026-11-06 so far), MAR (2008 to 2026-11-03 so far), BKR (2008 to 2017-06-30, then 2019-02-01 to 2026-11-06 so far), PFE (2008 to 2026-11-04 so far), CMCSA (2008 to 2026-11-06 so far), CAT (2008 to 2026-11-06 so far), BMY (2008 to 2026-11-06 so far), NVDA (2008 to 2026-11-06 so far), F (2008-01-04 to 2026-11-06 so far; 2022-01-07 onward was built first at the owner's request, and dates before 2022 are an early era with its
-  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far), SPGI (2008-01-04 to 2026-11-20 so far) and CB (2008-01-04 to 2009-12-31 so far) sit in `staging/retrospective/` until the owner adds
+  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far), SPGI (2008-01-04 to 2026-11-20 so far) and CB (2008-01-04 to 2013-12-31 so far) sit in `staging/retrospective/` until the owner adds
   them to the archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM", "SHW", "WMT", "RCL", "MAR", "BKR", "PFE", "CMCSA", "CAT",
   "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG", "JPM", "V", "SPGI", "CB"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py`, `mu_signal_model.py`, `v_signal_model.py` and `spgi_signal_model.py` (other branches) files
   and today's profiles in `data/business_profiles.json` (NVDA's, SO's, V's, SPGI's and CB's included) are 2026 analyses: never inputs to a retrospective. AVGO did not trade
@@ -245,6 +245,16 @@ touching either directory.
   growth less net share issuance; fiscal 1996-1998 ended September 30 (the BKR transition rule, rule T only); signals are net premiums
   earned, the combined ratio, investment income, book value per share and the pre-tax margin; CYCLICAL on the 10-Ks' own "historically
   cyclical"; dividends in dollars as each filing states them after the Swiss Continuation; CHEAP 51, FAIR 6, RICH 48 of 105 dates (RICH on
-  every date from the Q4 2008 print) (retro/README.md, "CB").
+  every date from the Q4 2008 print) (retro/README.md, "CB"). From 2010: GAAP still (FY09 $7.55, FY10 $9.11, FY11 $4.65, FY12 $7.89;
+  the company's operating figures also remove realized gains and losses), each year from the latest filing that reports it, with two
+  restatements from the release that first prints each (`restates`, now in `build_cb.py`): the two-class method of ASC Topic 260 (FY08
+  $3.50 from the Q4 2009 release, FY05-FY08 from the FY2009 10-K) and the deferred acquisition cost accounting adopted 2012-01-01 (FY11
+  $4.52 from the Q4 2012 release, FY08-FY11 from the FY2012 10-K), earlier years as first published (seams); the Q1 2012 supplement's
+  restated 2011 net income is not made a per-share figure; every guide is operating income per share, so none feeds a field and the last
+  full year's GAAP EPS stands; no revenue guide, so BASE is the latest quarter's revenue growth less net issuance (+34.4% on Q4 2009
+  against 2008's realized losses); dividends $0.33 to $0.51 from the first filing that states each (the 2011 rate from the Q2 2011 10-Q,
+  the 2012 increase from the FY2011 10-K: the meeting 8-Ks give votes only); CYCLICAL, no live theme; FY11's $4.65 makes all 52 dates
+  from the Q4 2011 print RICH (the operating basis too; it moves 79 classes, mostly 2011's to RICH); CHEAP 48, FAIR 68, RICH 93 of
+  209 dates; decided in the session that scored 2008-2009, disclosed (retro/README.md, "CB 2010-2013").
 - **Never use the owner's personal email** in request headers to external
   services (SEC asks for a contact in the User-Agent).

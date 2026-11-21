@@ -45,6 +45,7 @@ Output goes to staging/retrospective/CB until the series is added to the archive
 Usage
   python3 retro/build_cb.py --weekly 2008-01-01 2008-12-31
   python3 retro/build_cb.py --weekly 2009-01-05 2009-12-31
+  python3 retro/build_cb.py --weekly 2010-01-04 2013-12-31
   python3 retro/build_cb.py 2008-04-30
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/CB/<AS_OF>
 """
@@ -178,6 +179,10 @@ def build(as_of, facts, raw, spx, engine, out):
                      prev_fy_npe_growth=a["npe_growth"], book_value_ps=a["book_value_ps"],
                      tax_rate=a["tax_rate"], tax_note=f'{a["tax_note"]} ({p["source"]})',
                      extended=f'{h["extended"]}, FY{y[2:]} from {p["source"]} ({p["published"]})')
+            if a.get("restates"):                     # (CB 2010-2013) earlier years' EPS the same release republishes on a revised
+                                                      # basis, from its date until the next 10-K (the JPM, PFE and LMT field)
+                h.update(eps_normalized={**h["eps_normalized"], **a["restates"]},
+                         normalization=f'{h["normalization"]}; {a["restates_note"]}')
     latest = prints[-1]
     # the previous quarter is the print published just before the latest one (in or out of the history's scope)
     i = public.index(latest)
