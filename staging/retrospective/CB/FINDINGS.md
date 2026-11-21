@@ -5,9 +5,9 @@ SPY), which no model reads. These are hypotheses for the live model, to be teste
 the CB archive or any other ticker's models (retro/README.md, "The one rule"). The point-in-time build, its decisions and its judgement
 calls are in retro/README.md, "CB"; they were committed and fire-walled before any outcome was computed.
 
-The series is ACE Limited (NYSE: ACE), the company behind today's CB, on 522 weekly dates: 105 from 2008-01-04 to 2009-12-31 (the table
-below), 209 from 2010-01-08 to 2013-12-31 and 208 from 2014-01-10 to 2017-12-29 (Chubb Limited, NYSE: CB, from 2016-01-15), each batch
-in its own section, scored after its build was committed, pushed and fire-walled. The
+The series is ACE Limited (NYSE: ACE), the company behind today's CB, on 731 weekly dates: 105 from 2008-01-04 to 2009-12-31 (the table
+below), 209 from 2010-01-08 to 2013-12-31, 208 from 2014-01-10 to 2017-12-29 (Chubb Limited, NYSE: CB, from 2016-01-15) and 209 from
+2018-01-05 to 2021-12-31, each batch in its own section, scored after its build was committed, pushed and fire-walled. The
 call check is the tool's: CHEAP should clear the 15%/yr hurdle or beat SPY over two years, FAIR should land within ±15pp of SPY, RICH should miss the
 hurdle and lag SPY. Judge the series by the return to the average price of months 12-24 and treat the call check as a rough tick
 (retro/README.md, "Scoring a single stock").
@@ -153,7 +153,49 @@ the 15%/yr hurdle is +32.2% over two years. The text-only correction to 2010-201
 - **Scenario landing:** RICH dates landed in BULL on 105 of 118 (BASE on 13); FAIR in BASE on all 39; the CHEAP dates' two-year price sat
   far under BASE, nearer BASE on 25 and nearer BEAR ($10-11) on 26.
 
-## 2008-2017: the EPS basis, tested on later dates
+## 2018-2021 (209 dates)
+
+Scored on 2026-11-21, after the point-in-time build was committed and pushed (8decfb02) and the firewall had passed at 26 cutoffs
+(a8fc6d3a). This batch was decided in the session that scored 2014-2017 (retro/README.md, "CB 2018-2021"); no rule was changed. Every
+date has its 6-month, 1-, 2- and 3-year horizons; the 15%/yr hurdle is +32.2% over two years.
+
+| | dates | 2-yr total return | vs SPY (mean / median) | to the m12-24 average | call check |
+|---|---|---|---|---|---|
+| 2018, RICH (every date) | 52 | +1.4% | -19.8 / -19.5pp | +4.3% | 52 of 52 |
+| 2019, RICH (every date) | 52 | +21.7% | -28.3 / -27.5pp | +1.3% | 49 of 52 |
+| 2020, all | 53 | +60.5% | +27.7 / +30.7pp | +46.8% | 12 of 53 |
+| 2020, CHEAP (March-May) | 6 | +112.1% | +44.1 / +44.7pp | +80.2% | 6 of 6 |
+| 2020, FAIR (March-April) | 3 | +78.4% | +17.8 / +17.0pp | +51.5% | 1 of 3 |
+| 2020, RICH | 44 | +52.3% | +26.2 / +32.5pp | +41.9% | 5 of 44 |
+| 2021, RICH (every date) | 52 | +23.8% | +20.5 / +19.0pp | +18.2% | 0 of 52 |
+| class CHEAP | 6 | +112.1% | +44.1 / +44.7pp | +80.2% | 6 of 6 |
+| class FAIR | 3 | +78.4% | +17.8 / +17.0pp | +51.5% | 1 of 3 |
+| class RICH | 200 | +23.7% | -1.4 / -10.7pp | +15.4% | 106 of 200 |
+| all | 209 | +27.0% | +0.2 / -7.5pp | +17.8% | 113 of 209 |
+
+- **2018-2019: RICH on every date, and right on 101 of 104.** At 15-19x FY17's $8.19 and FY18's $8.49 (the 79th-100th percentile) the stock
+  lagged SPY by 19.8pp (2018 dates) and 28.3pp (2019 dates) over two years; the 2018 dates' two years end in the 2020 drawdown (+1.4% on
+  average). The worst two-year excess of the batch is one of them (2019-08-09, $159.62: +14.0%, -41.5pp). Unlike 2015, the high
+  percentile was right here.
+- **March-May 2020: the crash dates were the right calls.** The six CHEAP dates (10.2-11.2x FY19's $9.71, under the EPP floor on five)
+  returned +112.1% over two years and beat SPY by 44.1pp (6 of 6); the lowest price of the batch, 2020-05-15 at $99.49 (CHEAP), is its best
+  two-year excess (+114.0%, +69.7pp). The three FAIR dates beat SPY by 17.8pp (1 of 3 within the band). 2020-04-23, RICH at $104.08 under
+  the floor because the Q1 2020 print's realized losses cut BASE, beat SPY by 47.4pp.
+- **From late May 2020 and through 2021: RICH and wrong on all 85 dates.** From 2020-05-22 (on FY19's $9.71) and from the Q4 2020 print (on
+  FY20's $7.79, a year carrying the $1,193M after-tax COVID-19 charge, at 20-25x, the 95th-100th percentile) the stock beat SPY by 36.1pp
+  and 18.5pp over two years (0 hits on 33 and 48 dates; the four January 2021 dates, on FY19, beat it by 44.4pp). The README's test of
+  FY2020 without its COVID-19 charge ($10.42, derived) moves 13 of the 2021 dates to FAIR, of which 4 would land within the ±15pp band:
+  117 hits for the batch instead of 113.
+- **The classes ordered the relative outcomes:** CHEAP +44.1pp, FAIR +17.8pp, RICH -1.4pp against SPY over two years (over three years
+  +39.6pp, +18.4pp and +5.1pp). The legacy tiers: ACCUMULATE (2 dates) +22.4pp, WATCHLIST (7) +39.0pp, AVOID (200) -1.4pp.
+- **The RICH class was right in one half and wrong in the other:** 101 hits on the 104 dates of 2018-2019, 5 on the 96 of 2020-2021 (the
+  10 RICH dates of January-March 2020 hit 5 times). Two-year returns range from -25.1% to +116.8%; the largest drawdown within two years
+  averages -31.1% (the 2020 crash sits in most windows).
+- **Robustness again separated little:** the 203 dates whose class survives 7 or 8 of the 8 robustness variants hit 110 times (54%); the 6
+  fragile ones (3 FAIR, 2 CHEAP, 1 RICH) hit 3.
+- **Scenario landing:** RICH dates landed in BULL on 183 of 200 (BASE on 17); the CHEAP and FAIR dates all in BULL.
+
+## 2008-2021: the EPS basis, tested on later dates
 
 The 2008-2009 findings proposed that the company's operating EPS (which removes realized gains and losses) would have served an insurer
 better than GAAP. The 2010-2013 dates were not scored when that was written, so they test it. Each of the 314 dates was rebuilt on the
@@ -172,7 +214,11 @@ by the same call check against the same outcomes (hindsight, this file only):
 | 2015 | 53 | 2 | 2 | 0 | |
 | 2016 | 52 | 12 | 12 | 0 | |
 | 2017 | 52 | 36 | 36 | 0 | |
-| all | 522 | 241 | 213 | 170 | |
+| 2018 | 52 | 52 | 52 | 0 | |
+| 2019 | 52 | 49 | 49 | 0 | |
+| 2020 | 53 | 12 | 9 | 3 | +65.4pp |
+| 2021 | 52 | 0 | 0 | 0 | |
+| all | 731 | 354 | 323 | 173 | |
 
 - **The operating basis wins 2009 by 47 calls and loses 2011 by 37: over six years the two tie (161 against 163).** In 2011 the operating
   guides ($5.40-6.75) sat well under GAAP FY10's $9.11 (a year with $451M of realized gains), so the operating basis read RICH on 48
@@ -180,6 +226,8 @@ by the same call check against the same outcomes (hindsight, this file only):
 - **2014-2017 (scored after their build, the same variant): the operating basis loses 30 calls in 2014 and moves nothing after it.** In
   2014 the company's FY13 $9.35 (GAAP $10.92 with $541M of realized gains after tax) reads RICH on 39 dates that then beat SPY by 12.5pp;
   from 2015 both bases read the same class. Over 522 dates GAAP now leads, 241 hits against 213.
+- **2018-2021: the bases agree on all but 3 dates** (the operating basis reads three CHEAP dates of the 2020 crash RICH, and they beat SPY
+  by 65.4pp); both read 2021 RICH on a COVID year (operating FY20 $7.31). Over 731 dates GAAP leads, 354 hits against 323.
 - **Both bases order the relative returns in 2010-2013** (GAAP: CHEAP +16.8pp, FAIR +8.0pp, RICH -1.0pp; operating: CHEAP +22.7pp on 29
   dates, FAIR +15.0pp on 21, RICH +1.8pp on 159). Over 2008-2013 GAAP gives +8.8, +7.4 and +2.0pp, operating +8.3, +13.3 and +1.8pp.
 
@@ -195,7 +243,9 @@ by the same call check against the same outcomes (hindsight, this file only):
    whichever basis is used. A hypothesis to test elsewhere: an insurer's anchor needs more than one year (an average of several years'
    EPS, or book value) rather than a different one-year figure. **2014-2017 weakens the operating basis again** (30 calls lost in 2014,
    none gained), and its RICH misses of 2015 are a different failure: not a trough year but a window median set by low past multiples
-   while the stock re-rated (hypothesis 7).
+   while the stock re-rated (hypothesis 7). **2018-2021 adds another trough-year anchor:** FY2020, cut by the COVID-19 charge, set
+   every 2021 multiple at 20-25x, and all 48 RICH calls on it missed (the stock beat SPY by 18.5pp). FY2008 (2009), FY2011 (2012) and
+   FY2020 (2021), each a year of market or catastrophe losses, anchor the series' largest blocks of RICH misses, on either basis.
 2. **On a financial, book value may be the better anchor in a crisis.** ACE's book value per share fell 11.4% in 2008 while its GAAP EPS fell 54%; a
    price-to-book cross-check was not part of method r2 and was not computed here.
 3. **A rebounding benchmark punishes the cheapest dates.** The late-2008 CHEAP dates lagged SPY by 13pp despite a positive absolute return;
@@ -214,5 +264,7 @@ by the same call check against the same outcomes (hindsight, this file only):
    whether a per-share or organic reading deserves a new method version (it would need one, and a full re-run, with the reason recorded).
 7. **A window median set by past low multiples reads a re-rated stock as RICH for years.** CB traded at 5-9x its anchor EPS on most dates
    of 2008-2011 (the trough years' multiples aside) and at 12-17x from 2015; the ten-year median rose only from 9.0x (2015) to 11.8-12.4x
-   (2017), so 2015's 53 RICH dates beat SPY by 11.9pp while 2017's, at the 91st-99th percentile, lagged it by 14.8pp. Whether the percentile of a multiple says more once the window no longer holds the crisis years (the CB window
-   leaves 2008-2009 only from 2018-2019) is a test for later dates of this series and for others.
+   (2017), so 2015's 53 RICH dates beat SPY by 11.9pp while 2017's, at the 91st-99th percentile, lagged it by 14.8pp. Whether the
+   percentile of a multiple says more once the window no longer holds the crisis years (the CB window leaves 2008-2009 only from
+   2018-2019) is a test for later dates of this series and for others. **2018-2019 answers it for this series in part:** with the median
+   at 12.4-13.4x, the 79th-100th percentile read RICH and was right on 101 of 104 dates.

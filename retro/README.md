@@ -23685,6 +23685,9 @@ Judgement calls that could carry hindsight:
 - the session: it had scored 2014-2017 and written findings that point at the anchor and the window median, and it kept the rules;
 - the parts of the filings listed above as not read.
 
+The 2018-2021 outcomes were computed only after the firewall passed. The hindsight results are in `staging/retrospective/CB/FINDINGS.md`
+("2018-2021"): hypotheses, never inputs.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
