@@ -24311,6 +24311,15 @@ Controls and checks (before any outcome):
   by the fact's date (the tokenizing artifacts "K's" and "Q's" of "10-K's" and "10-Q's" aside). It caught one first-draft leak in this
   batch before the build: the Q4 2009 print's revenue label named "the FY2009 10-K", published after it; it now names the release.
 - **Regression:** the 105 models of 2008-2009 rebuild byte for byte; no other ticker's code changes.
+- **Firewall** (run after the build, checks and README section were committed, before any 2010-2013 outcome): it passes at all 25
+  cutoffs above (2010-01-01, every print, 10-K and guide 8-K date of the range, and 2014-01-01: 105 to 314 dates each), 0 files changed
+  and no planted text. The planted facts now also include a later guide for every guided year with a dollar revenue range, its label
+  and a non-GAAP reason (`rev_guide_usd_b`, `adj_why`), and on the planted print's full-year actuals a restatement of every year's
+  revenue and a revenue label (`restates_revenue`, `revenue_label`), beside the 2008-2009 batch's plants (a print with absurd figures,
+  absurd full-year actuals, a later Q4 print excluding its own year, a later 10-Q split, a later guide and a still later loss range, a
+  later vintage excluding a year, a dividend, a company name and prices from the cutoff multiplied by 10). As positive controls, a planted print dated 2012-05-30 with its own source
+  reaches 2012-06-01 (its text in the model) and not 2012-05-25 (byte-identical); the same print citing a source published after
+  AS_OF (2012-07-27) stops at the builder's source check.
 
 Seen in the build (method behaviour, not tuned):
 Lilly's ten-year window holds two regimes, 2003-2007 at calendar-year lows of 18-30x and 2009-2013 at 7-11x (2008 out), and the
