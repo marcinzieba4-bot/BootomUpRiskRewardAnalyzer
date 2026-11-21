@@ -1,0 +1,157 @@
+
+════════════════════════════════════════════════════════════════════════
+  CB  ·  Chubb Limited  ·  $159.23  ·  RETROSPECTIVE as of 2021-03-19
+  Signal: ✕ AVOID   Ratio B: infx   Adj gap: -0.98  [OVERVALUED]
+  Point-in-time: 20 sources, latest published 2021-03-19; latest print Q4 2020 (Feb 2)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2021E revenue, USD bn  →  FY2023E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2021E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  North America Commercial P&C  $ 17.10  $17.10  $20.25    +0.00    +3.15
+    +8.1% net premiums earned in FY20
+  North America Personal P&C I  $  5.96  $ 5.96  $ 7.06    +0.00    +1.10
+    +3.7% net premiums earned in FY20
+  North America Agricultural I  $  2.23  $ 2.23  $ 2.64    +0.00    +0.41
+    +1.5% net premiums earned in FY20
+  Overseas General Insurance    $ 11.37  $11.37  $13.47    +0.00    +2.10
+    +4.5% net premiums earned in FY20
+  Global Reinsurance            $  0.85  $ 0.85  $ 1.01    +0.00    +0.16
+    +6.7% net premiums earned in FY20
+  Life Insurance                $  3.04  $ 3.04  $ 3.60    +0.00    +0.56
+    +5.9% net premiums earned in FY20
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $ 40.55  $40.55  $48.03    +0.00    +7.48
+  FY2021E = FY20 $35.994B × (1 + 12.7%: the Q4 2020 revenue growth (no Q1 2021 guide), YoY, applied to the year (no FY21 revenue guide)); split pro rata to FY20 net premiums earned by segment (the segment note) (FY20 growth)
+  Q4 2020 (Feb 2): total revenues $9.848B +12.7% YoY (+4.1% QoQ); net premiums earned +6.2% (written +5.2%); net investment income -1.3%;
+  P&C combined ratio 87.6% (-510.0bp); pre-tax margin 27.94% (+1258.7bp); book value per share +7.7%; EPS $5.34 vs $2.57
+  Revenue: total revenues $9,848M vs $8,738M a year earlier, $9,464M the quarter before (net premiums earned, net investment income and net realized gains (losses)); net premiums earned $8,430M vs $7,935M; net premiums written $8,410M vs $7,997M; net investment income $847M vs $858M; net realized gains (losses) $571M vs $-55M; diluted EPS (net income) $5.34 vs $2.57; the company's core operating income $3.18 vs $2.28 a share, which also removes realized gains and losses, which recur, and the amortization of the fair value adjustments of acquired debt and invested assets, which recurs (not used); diluted shares 453.3M; book value per share $131.88 vs $122.42 a year earlier; P&C combined ratio 87.6% vs 92.7%; in Switzerland from 2008-07-18 (the Continuation): common shares and dividends stated in Swiss francs, paid in dollars; the quarter before is Q3 2020 as its own release printed it
+  Q1 2021: no revenue, EPS or margin guide in numbers in any filing for FY21; the latest quarter's revenue growth stands in (the UNP rule)
+
+  FY2021E EPS check:  $40.550B × 11.6% pre-tax × (1−15.1%) ÷ 0.453B  =  $8.78  (FY2021E: no EPS guide in numbers, FY20's $7.79 stands)
+  FY2023E BEAR check: $40.550B × 11.6% ÷ 0.482B  =  $8.25  (scenario $4.63)
+  FY2023E BULL check: $48.030B × 12.0% ÷ 0.482B  =  $10.12  (scenario $9.35)
+  Every 1pp of pre-tax margin ≈ $0.759 EPS ≈ $10.71/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Net premiums earned growth            -13.0%     ≥1.0%    ≥14.0%   ≥178.0%     +6.2%  ◦ BASE  ██░░
+  Combined ratio (P&C)                +3240.0bp  ≤1600.0bp  ≤-40.0bp  ≤-1140.0bp  -510.0bp  ▲ BULL  ███░
+  Net investment income growth          -19.0%     ≥1.0%    ≥22.0%    ≥56.0%     -1.3%  ⚠ BEAR  █░░░
+  Book value per share growth            -9.0%     ≥2.0%    ≥13.0%    ≥24.0%     +7.7%  ◦ BASE  ██░░
+  Pre-tax margin change               -5500.0bp  ≥-2820.0bp  ≥-130.0bp  ≥1660.0bp  +1258.7bp  ▲ BULL  ███░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.20 / 4.00
+  Market composite:   3.18 / 4.00  (back-solved from $159.23 + 15% hurdle)
+  SCA adjustment:    +0.10  ·  EPP-distance adj -0.10  →  Adj composite 2.20  →  Gap -0.98  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY20 total revenues +5.3%, net premiums earned +5.8%, P&C combined ratio 96.1%; Q4 combined ratio 87.6% (-510bp YoY)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 20.4x FY21E vs a 14.1x 10-yr median (98th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: Q4 2020 revenue growth (no Q1 2021 guide) +12.7% vs a 4.5% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  Book value $131.88 a share (+7.7% YoY) at the end of Q4 2020 (FY20 $131.88), dividend $3.12 a year  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Net premiums earned growth             +6.2%    -13.0%  -19.2%  Premiums shrink as prices soften or e…
+  Combined ratio (P&C)                -510.0bp  +3240.0bp  +3750.0bp  Losses and expenses take more of prem…
+  Net investment income growth           -1.3%    -19.0%  -17.7%  Yields and invested assets fall
+  Book value per share growth            +7.7%     -9.0%  -16.7%  Investment marks and losses erode cap…
+  Pre-tax margin change               +1258.7bp  -5500.0bp  -6758.7bp  Realized losses and claims outrun rev…
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$69.94  (model)  /  $41.67 (defined)
+  Bear probability (proxy model):  14.7%
+
+  KEY TRIGGER: revenue went from +4.6% (Q3 2020) to +12.7% YoY (Q4 2020), +4.1% on the quarter before;
+  the bear case needs the combined ratio (-510.0bp YoY now) rising further
+  and book value (+7.7% YoY) shrinking under losses and marks. Catastrophes and reserve charges show up in the combined ratio first;
+  investment marks show up in book value before they reach earnings.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $7.79  (FY2021E: no EPS guide in numbers, FY20's $7.79 stands)
+  Min viable P/E at panic:          12x  [median of calendar-year P/E lows: 2011 13.0x, 2012 8.7x, 2013 7.3x, 2014 10.9x, 2015 11.6x, 2016 12.2x, 2017 15.7x, 2018 14.2x, 2019 12.8x, 2020 12.1x, 2021 18.6x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $93.48/share
+  Current $159.23 vs Updated EPP $93.48:  +70%  ⚠ far above floor — large drawdown room
+  Bear $41.67 vs Updated EPP $93.48:  -55%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Net premiums earned growth                     1.0       -5.2   BASE floor (vs +6 now)
+  Combined ratio (P&C)                        1600.0    +2110.0   BASE floor (vs -510 now)
+  Net investment income growth                   1.0       +2.3   BASE floor (vs -1 now)
+  Book value per share growth                    2.0       -5.7   BASE floor (vs +8 now)
+  Pre-tax margin change                      -2820.0    -4078.7   BASE floor (vs +1259 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $7.79 × (1+7.6%)² = $9.02
+  At 14x P/E (conservative):  $126.21/share
+  + Cumul. dividends (2yr):  +$6.43/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $126.21  (▼33.02 from $159.23)
+  Conservative total return:  -17% over 2yr  = -8%/yr
+
+  7.6% EPS growth is what is left once the premium multiple (20.4x)
+  mean-reverts to 14x. Breakeven at 14x needs FY2023E EPS of $10.91,
+  i.e. 18.4%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $92.04  –  $179.01  (at 77th pct of range)
+  Annual dividend:      $3.12/share  (yield 2.0%)
+  Realized vol:         40% annualized (1-yr daily log returns)
+  Beta vs broad market: 1.04
+  1-sigma range (1yr):  $94.74  –  $223.72  ($159.23 ± 40%)
+  2-sigma range (1yr):  $30.25  –  $288.21
+  ────────────────────────────────────────────────────────────
+  Bear $41.67 requires:  ~1.8σ price move  (unusual — requires fundamental break)
+  An insurer whose earnings follow the underwriting cycle, catastrophes and markets: the stock is +69% off its March
+  low (52 weeks) while revenue went from +4.6% (Q3 2020) to +12.7% YoY (Q4 2020), +4.1% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        4.63    9.0x  $  41.67    14.7%      3.8%   +10.9pp  EPS -22.9%/yr (worst year FY11-FY20, capped at 0%); P/E to its 10th pct
+  BASE        9.35   14.1x  $ 131.83    51.3%     13.3%   +38.0pp  EPS +9.6%/yr (Q4 revenue YoY + margin + buyback); P/E at its 10-yr median
+  BULL        9.35   15.9x  $ 148.66    28.6%     46.3%   -17.7pp  EPS +9.6%/yr (FY11-FY20 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL      18.82   17.7x  $ 333.11     5.4%     36.7%   -31.2pp  EPS +55.4%/yr (best 2-yr run FY11-FY20, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $134.28  /  Market EV: $209.97  /  Current: $159.23
+  Conservative EV (2yr, ④): $126.21 + $6.43 divs = $132.64 total value
+  Downside (→ Bear $41.67): 73.8%   Upside (→ Bull $148.66): -6.6%   Ratio B infx  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $159.23 the market needs $210.58 in two years —
+  above the BULL case. That is a market composite of 3.18 against a model
+  read of 2.20: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                        infx     +70%    -0.98  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)    16.56x     +70%    -0.74  OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx     +70%    -1.14  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                           infx     +70%    -0.94  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                           infx     +70%    -1.03  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)              infx     +70%    -0.68  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                  infx     +36%    -0.88  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                     infx     +70%    -0.86  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 2021 print (the quarter ends in Mar) — revenue against the Q4 2020 revenue growth (no Q1 2021 guide): +12.7% YoY
+  (2) Underwriting — the P&C combined ratio was 87.6% in Q4 2020 (-510.0bp YoY): what must hold for premiums to turn into earnings
+  (3) The FY21 guide — none in any filing: Chubb gives no consolidated revenue, EPS or margin outlook in numbers for the year
+  (4) Book value — $131.88 a share at the end of Q4 2020 (+7.7% YoY): investment marks and reserve charges reach capital here first
+  (5) Capital at 20x — dividend $0.78 a quarter: 'At our May 2020 annual general meeting, our shareholders approved an annual dividend for the following year of up to $3.12 per share, expected to be paid in four quarterly installments of $0.78 per share after the general meeting'; book value $131.88 a share at the end of Q4 2020
+  ✕ AVOID  |  EPP floor $93.48  |  ADD below ~$112.06  |  TRIM above $148.66
+════════════════════════════════════════════════════════════════════════
+

@@ -23,7 +23,7 @@ touching either directory.
   outcomes or findings enters another's models. UNP (2008-2026 so far), LOW (2008-2026 so far), AAPL (2008-2026 so far),
   NKE (2008-2026 so far), AVGO (from its 2009-08-06 listing to 2026-10-30 so far), PEP (2008 to 2026-10-30 so far), MSFT
   (2008 to 2026-10-30 so far), XOM (2008 to 2026-10-30 so far), SHW (2008 to 2026-11-06 so far), WMT (2008 to 2026-11-06 so far), RCL (2008 to 2026-11-06 so far), MAR (2008 to 2026-11-03 so far), BKR (2008 to 2017-06-30, then 2019-02-01 to 2026-11-06 so far), PFE (2008 to 2026-11-04 so far), CMCSA (2008 to 2026-11-06 so far), CAT (2008 to 2026-11-06 so far), BMY (2008 to 2026-11-06 so far), NVDA (2008 to 2026-11-06 so far), F (2008-01-04 to 2026-11-06 so far; 2022-01-07 onward was built first at the owner's request, and dates before 2022 are an early era with its
-  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far), SPGI (2008-01-04 to 2026-11-20 so far) and CB (2008-01-04 to 2017-12-29 so far) sit in `staging/retrospective/` until the owner adds
+  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far), SPGI (2008-01-04 to 2026-11-20 so far) and CB (2008-01-04 to 2021-12-31 so far) sit in `staging/retrospective/` until the owner adds
   them to the archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM", "SHW", "WMT", "RCL", "MAR", "BKR", "PFE", "CMCSA", "CAT",
   "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG", "JPM", "V", "SPGI", "CB"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py`, `mu_signal_model.py`, `v_signal_model.py` and `spgi_signal_model.py` (other branches) files
   and today's profiles in `data/business_profiles.json` (NVDA's, SO's, V's, SPGI's and CB's included) are 2026 analyses: never inputs to a retrospective. AVGO did not trade
@@ -265,6 +265,11 @@ touching either directory.
   encoding, now in `build_cb.py`); the P&C combined ratio from the supplement; dividends $0.63 to $0.71, each from the first filing that
   states it; CYCLICAL, no live theme's scope names insurance; a text-only leak in the FY2009-FY2011 vintages' notes (later years' realized
   gains) found and corrected (157 models, one comment line); built in a new session without opening the 2008-2013 outcomes or findings
-  (retro/README.md, "CB 2014-2017").
+  (retro/README.md, "CB 2014-2017"). From 2018: GAAP still (FY17 $8.19 with the 2017 Tax Reform's $450M one-time benefit, as no
+  filing publishes the year excluding only it; FY18 $8.49, FY19 $9.71, FY20 $7.79 with the $1,193M after-tax COVID-19 charge read as a
+  catastrophe loss, which moves 13 classes of 2021); the FY2020 10-K gives three years (Item 6 "Not required."); no guide in any filing; the
+  ten-year roll moves BEAR from FY07-FY08 to FY10-FY11 (2018-02-23) and FY13-FY14 (2021-02-26); dividends $0.73 to $0.80 from the Q2
+  10-Qs; RICH on 200 of 209 dates (FAIR 3, CHEAP 6 in March-May 2020); decided in the session that scored 2014-2017, disclosed
+  (retro/README.md, "CB 2018-2021").
 - **Never use the owner's personal email** in request headers to external
   services (SEC asks for a contact in the User-Agent).
