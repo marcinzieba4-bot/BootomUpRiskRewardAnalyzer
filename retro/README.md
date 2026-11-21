@@ -23288,6 +23288,9 @@ Controls and checks (before any outcome of these dates):
   model.
 - **Regression:** `build_cb.py` gains the `restates` field only, and the firewall tool's CB entry a planted later restatement of every
   year; the 105 dates of 2008-2009 rebuild byte-identical. No other ticker's code is touched.
+- **Firewall** (after the build was committed and pushed, before any outcome): passes at the 25 cutoffs above (every print, vintage,
+  restatement, guide and dividend date, 2010-01-10 and 2014-01-01), 0 files changed and no planted text, 106 to 314 dates each. The
+  planted facts are 2008-2009's plus a later restatement of every year the latest vintage reports. A full rebuild is byte-identical.
 
 Seen in the build (method behaviour, not tuned). As in 2009, the class follows the last full year's GAAP EPS:
 - **CHEAP on 48 dates, FAIR on 68, RICH on 93; legacy tier BUY 19, ACCUMULATE 56, WATCHLIST 41, AVOID 93.** By year: 2010 CHEAP 30, FAIR 18,
