@@ -23,7 +23,7 @@ touching either directory.
   outcomes or findings enters another's models. UNP (2008-2026 so far), LOW (2008-2026 so far), AAPL (2008-2026 so far),
   NKE (2008-2026 so far), AVGO (from its 2009-08-06 listing to 2026-10-30 so far), PEP (2008 to 2026-10-30 so far), MSFT
   (2008 to 2026-10-30 so far), XOM (2008 to 2026-10-30 so far), SHW (2008 to 2026-11-06 so far), WMT (2008 to 2026-11-06 so far), RCL (2008 to 2026-11-06 so far), MAR (2008 to 2026-11-03 so far), BKR (2008 to 2017-06-30, then 2019-02-01 to 2026-11-06 so far), PFE (2008 to 2026-11-04 so far), CMCSA (2008 to 2026-11-06 so far), CAT (2008 to 2026-11-06 so far), BMY (2008 to 2026-11-06 so far), NVDA (2008 to 2026-11-06 so far), F (2008-01-04 to 2026-11-06 so far; 2022-01-07 onward was built first at the owner's request, and dates before 2022 are an early era with its
-  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far), SPGI (2008-01-04 to 2026-11-20 so far) and CB (2008-01-04 to 2013-12-31 so far) sit in `staging/retrospective/` until the owner adds
+  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far), SPGI (2008-01-04 to 2026-11-20 so far) and CB (2008-01-04 to 2017-12-29 so far) sit in `staging/retrospective/` until the owner adds
   them to the archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM", "SHW", "WMT", "RCL", "MAR", "BKR", "PFE", "CMCSA", "CAT",
   "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG", "JPM", "V", "SPGI", "CB"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py`, `mu_signal_model.py`, `v_signal_model.py` and `spgi_signal_model.py` (other branches) files
   and today's profiles in `data/business_profiles.json` (NVDA's, SO's, V's, SPGI's and CB's included) are 2026 analyses: never inputs to a retrospective. AVGO did not trade
@@ -255,6 +255,16 @@ touching either directory.
   against 2008's realized losses); dividends $0.33 to $0.51 from the first filing that states each (the 2011 rate from the Q2 2011 10-Q,
   the 2012 increase from the FY2011 10-K: the meeting 8-Ks give votes only); CYCLICAL, no live theme; FY11's $4.65 makes all 52 dates
   from the Q4 2011 print RICH (the operating basis too; it moves 79 classes, mostly 2011's to RICH); CHEAP 48, FAIR 68, RICH 93 of
-  209 dates; decided in the session that scored 2008-2009, disclosed (retro/README.md, "CB 2010-2013").
+  209 dates; decided in the session that scored 2008-2009, disclosed (retro/README.md, "CB 2010-2013"). From 2014: GAAP still (FY13 $10.92,
+  FY14 $8.42, FY15 $8.62, FY16 $8.87; the operating figure also removes realized gains and losses and, from 2016, the recurring fair value
+  amortization), no restatement; no guide in any filing (the operating ranges end with Q3 2013; run rates and call guidance feed nothing),
+  so the last full year's GAAP EPS stands on every date and BASE is the latest quarter's revenue growth less net issuance; the ten years to
+  the latest one (FY2003 and the FY2002 note leave with the FY2013 10-K, FY2005 with the FY2015 10-K); The Chubb Corporation, acquired
+  2016-01-14, is in the figures as published (BASE +56-75% on Q1-Q4 2016: every one of the 51 CHEAP dates rests on it, the batch's largest
+  call; pro forma and "as if" figures unused); Chubb Limited, NYSE: CB, from the 8-K of 2016-01-15 (`company_names`, `listings`, the SPGI
+  encoding, now in `build_cb.py`); the P&C combined ratio from the supplement; dividends $0.63 to $0.71, each from the first filing that
+  states it; CYCLICAL, no live theme's scope names insurance; a text-only leak in the FY2009-FY2011 vintages' notes (later years' realized
+  gains) found and corrected (157 models, one comment line); built in a new session without opening the 2008-2013 outcomes or findings
+  (retro/README.md, "CB 2014-2017").
 - **Never use the owner's personal email** in request headers to external
   services (SEC asks for a contact in the User-Agent).

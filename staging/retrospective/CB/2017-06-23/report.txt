@@ -1,0 +1,157 @@
+
+════════════════════════════════════════════════════════════════════════
+  CB  ·  Chubb Limited  ·  $144.85  ·  RETROSPECTIVE as of 2017-06-23
+  Signal: ✕ AVOID   Ratio B: infx   Adj gap: -0.75  [OVERVALUED]
+  Point-in-time: 11 sources, latest published 2017-06-23; latest print Q1 2017 (Apr 25)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2017E revenue, USD bn  →  FY2019E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2017E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  North America Commercial P&C  $ 14.60  $14.60  $17.44    +0.00    +2.84
+    +116.8% net premiums earned in FY16
+  North America Personal P&C I  $  5.16  $ 5.16  $ 6.17    +0.00    +1.01
+    +355.6% net premiums earned in FY16
+  North America Agricultural I  $  1.57  $ 1.57  $ 1.88    +0.00    +0.31
+    -3.5% net premiums earned in FY16
+  Overseas General Insurance    $  9.72  $ 9.72  $11.61    +0.00    +1.89
+    +25.7% net premiums earned in FY16
+  Global Reinsurance            $  0.85  $ 0.85  $ 1.01    +0.00    +0.16
+    -16.4% net premiums earned in FY16
+  Life Insurance                $  2.46  $ 2.46  $ 2.93    +0.00    +0.47
+    +5.5% net premiums earned in FY16
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $ 34.36  $34.36  $41.04    +0.00    +6.68
+  FY2017E = FY16 $31.469B × (1 + 9.2%: the Q1 2017 revenue growth (no Q2 2017 guide), YoY, applied to the year (no FY17 revenue guide)); split pro rata to FY16 net premiums earned by segment (FY16 growth)
+  Q1 2017 (Apr 25): total revenues $7.510B +9.2% YoY (-8.1% QoQ); net premiums earned +2.7% (written +11.9%); net investment income +10.5%;
+  P&C combined ratio 87.5% (-250.0bp); pre-tax margin 16.26% (+807.2bp); book value per share +6.6%; EPS $2.31 vs $0.97
+  Revenue: total revenues $7,510M vs $6,877M a year earlier, $8,168M the quarter before (net premiums earned, net investment income and net realized gains (losses)); net premiums earned $6,772M vs $6,597M; net premiums written $6,710M vs $5,995M; net investment income $745M vs $674M; net realized gains (losses) $-7M vs $-394M; diluted EPS (net income) $2.31 vs $0.97; the company's operating income $2.48 vs $2.26 a share, which also removes recurring realized gains and losses, Chubb integration and related expenses and the amortization of the fair value adjustments of acquired debt and invested assets (not used); diluted shares 472.7M; book value per share $105.35 vs $98.85 a year earlier; P&C combined ratio 87.5% vs 90.0%; in Switzerland from 2008-07-18 (the Continuation): common shares and dividends stated in Swiss francs, paid in dollars; the year-ago quarter holds The Chubb Corporation from 2016-01-14, as published; the quarter before is Q4 2016 as its own release printed it
+  Q2 2017: no revenue, EPS or margin guide in numbers in any filing for FY17; the latest quarter's revenue growth stands in (the UNP rule)
+
+  FY2017E EPS check:  $34.360B × 15.7% pre-tax × (1−16.5%) ÷ 0.473B  =  $9.55  (FY2017E: no EPS guide in numbers, FY16's $8.87 stands)
+  FY2019E BEAR check: $34.360B × 15.7% ÷ 0.508B  =  $8.88  (scenario $1.82)
+  FY2019E BULL check: $41.040B × 16.1% ÷ 0.508B  =  $10.88  (scenario $9.87)
+  Every 1pp of pre-tax margin ≈ $0.607 EPS ≈ $7.29/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Net premiums earned growth            -13.0%     ≥1.0%    ≥14.0%   ≥178.0%     +2.7%  ◦ BASE  ██░░
+  Combined ratio (P&C)                +3240.0bp  ≤1600.0bp  ≤-40.0bp  ≤-1140.0bp  -250.0bp  ▲ BULL  ███░
+  Net investment income growth          -19.0%     ≥1.0%    ≥22.0%    ≥56.0%    +10.5%  ◦ BASE  ██░░
+  Book value per share growth            -9.0%     ≥2.0%    ≥13.0%    ≥24.0%     +6.6%  ◦ BASE  ██░░
+  Pre-tax margin change               -5500.0bp  ≥-2820.0bp  ≥-130.0bp  ≥1660.0bp  +807.2bp  ▲ BULL  ███░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.35 / 4.00
+  Market composite:   3.06 / 4.00  (back-solved from $144.85 + 15% hurdle)
+  SCA adjustment:    +0.06  ·  EPP-distance adj -0.10  →  Adj composite 2.31  →  Gap -0.75  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY16 total revenues +65.7%, net premiums earned +67.0%, P&C combined ratio 88.3%; Q1 combined ratio 87.5% (-250bp YoY)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 16.3x FY17E vs a 12.0x 10-yr median (95th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: Q1 2017 revenue growth (no Q2 2017 guide) +9.2% vs a 6.2% 9-yr median  (+0.30 × 20%  =  +0.060)
+    +  Book value $105.35 a share (+6.6% YoY) at the end of Q1 2017 (FY16 $103.60), dividend $2.76 a year  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Net premiums earned growth             +2.7%    -13.0%  -15.7%  Premiums shrink as prices soften or e…
+  Combined ratio (P&C)                -250.0bp  +3240.0bp  +3490.0bp  Losses and expenses take more of prem…
+  Net investment income growth          +10.5%    -19.0%  -29.5%  Yields and invested assets fall
+  Book value per share growth            +6.6%     -9.0%  -15.6%  Investment marks and losses erode cap…
+  Pre-tax margin change               +807.2bp  -5500.0bp  -6307.2bp  Realized losses and claims outrun rev…
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$44.66  (model)  /  $10.92 (defined)
+  Bear probability (proxy model):  12.0%
+
+  KEY TRIGGER: revenue went from +74.6% (Q4 2016) to +9.2% YoY (Q1 2017), -8.1% on the quarter before;
+  the bear case needs the combined ratio (-250.0bp YoY now) rising further
+  and book value (+6.6% YoY) shrinking under losses and marks. Catastrophes and reserve charges show up in the combined ratio first;
+  investment marks show up in book value before they reach earnings.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $8.87  (FY2017E: no EPS guide in numbers, FY16's $8.87 stands)
+  Min viable P/E at panic:          10x  [median of calendar-year P/E lows: 2007 7.1x, 2008 11.0x, 2009 4.3x, 2010 5.3x, 2011 13.0x, 2012 8.7x, 2013 7.3x, 2014 10.9x, 2015 11.6x, 2016 12.2x, 2017 14.5x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $88.70/share
+  Current $144.85 vs Updated EPP $88.70:  +63%  ⚠ far above floor — large drawdown room
+  Bear $10.92 vs Updated EPP $88.70:  -88%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Net premiums earned growth                     1.0       -1.7   BASE floor (vs +3 now)
+  Combined ratio (P&C)                        1600.0    +1850.0   BASE floor (vs -250 now)
+  Net investment income growth                   1.0       -9.5   BASE floor (vs +10 now)
+  Book value per share growth                    2.0       -4.6   BASE floor (vs +7 now)
+  Pre-tax margin change                      -2820.0    -3627.2   BASE floor (vs +807 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $8.87 × (1+3.5%)² = $9.50
+  At 12x P/E (conservative):  $114.03/share
+  + Cumul. dividends (2yr):  +$5.69/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $114.03  (▼30.82 from $144.85)
+  Conservative total return:  -17% over 2yr  = -9%/yr
+
+  3.5% EPS growth is what is left once the premium multiple (16.3x)
+  mean-reverts to 12x. Breakeven at 12x needs FY2019E EPS of $11.60,
+  i.e. 14.3%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $121.08  –  $148.32  (at 87th pct of range)
+  Annual dividend:      $2.76/share  (yield 1.9%)
+  Realized vol:         12% annualized (1-yr daily log returns)
+  Beta vs broad market: 0.76
+  1-sigma range (1yr):  $127.32  –  $162.38  ($144.85 ± 12%)
+  2-sigma range (1yr):  $109.80  –  $179.90
+  ────────────────────────────────────────────────────────────
+  Bear $10.92 requires:  ~7.6σ price move  (unusual — requires fundamental break)
+  An insurer whose earnings follow the underwriting cycle, catastrophes and markets: the stock is +19% off its June
+  low (52 weeks) while revenue went from +74.6% (Q4 2016) to +9.2% YoY (Q1 2017), -8.1% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        1.82    6.0x  $  10.92    12.0%      4.3%    +7.7pp  EPS -54.7%/yr (worst year FY07-FY16, capped at 0%); P/E to its 10th pct
+  BASE        9.87   12.0x  $ 118.44    42.0%     15.1%   +26.9pp  EPS +5.5%/yr (Q1 revenue YoY + margin + buyback); P/E at its 10-yr median
+  BULL        9.87   14.1x  $ 139.17    38.7%     52.6%   -14.0pp  EPS +5.5%/yr (FY07-FY16 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL      23.17   15.4x  $ 356.82     7.3%     27.9%   -20.6pp  EPS +61.6%/yr (best 2-yr run FY07-FY16, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $130.91  /  Market EV: $191.33  /  Current: $144.85
+  Conservative EV (2yr, ④): $114.03 + $5.69 divs = $119.71 total value
+  Downside (→ Bear $10.92): 92.5%   Upside (→ Bull $139.17): -3.9%   Ratio B infx  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $144.85 the market needs $191.56 in two years —
+  above the BULL case. That is a market composite of 3.06 against a model
+  read of 2.31: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                        infx     +63%    -0.75  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)    18.25x     +63%    -0.55  OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx     +63%    -0.91  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                           infx     +63%    -0.71  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                           infx     +63%    -0.79  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)              infx     +63%    -0.45  MODESTLY OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                  infx     +26%    -0.65  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                     infx     +63%    -0.64  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 2017 print (the quarter ends in Jun) — revenue against the Q1 2017 revenue growth (no Q2 2017 guide): +9.2% YoY
+  (2) Underwriting — the P&C combined ratio was 87.5% in Q1 2017 (-250.0bp YoY): what must hold for premiums to turn into earnings
+  (3) The FY17 guide — none in any filing: Chubb gives no consolidated revenue, EPS or margin outlook in numbers for the year
+  (4) Book value — $105.35 a share at the end of Q1 2017 (+6.6% YoY): investment marks and reserve charges reach capital here first
+  (5) Capital at 16x — dividend $0.69 a quarter: 'At our May 2016 annual general meeting, our shareholders approved an annual dividend for the following year of up to $2.76 per share, expected to be paid in four quarterly installments of $0.69 per share after the annual general meeting'; book value $105.35 a share at the end of Q1 2017
+  ✕ AVOID  |  EPP floor $88.70  |  ADD below ~$100.67  |  TRIM above $139.17
+════════════════════════════════════════════════════════════════════════
+

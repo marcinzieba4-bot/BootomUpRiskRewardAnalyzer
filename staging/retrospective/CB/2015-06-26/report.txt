@@ -1,0 +1,155 @@
+
+════════════════════════════════════════════════════════════════════════
+  ACE  ·  ACE Limited  ·  $103.47  ·  RETROSPECTIVE as of 2015-06-26
+  Signal: ✕ AVOID   Ratio B: 2.54x   Adj gap: -0.79  [OVERVALUED]
+  Point-in-time: 11 sources, latest published 2015-06-26; latest print Q1 2015 (Apr 21)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2015E revenue, USD bn  →  FY2017E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2015E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Insurance – North American P  $  6.67  $ 6.67  $ 7.26    +0.00    +0.59
+    +6.7% net premiums earned in FY14
+  Insurance – North American A  $  1.67  $ 1.67  $ 1.81    +0.00    +0.14
+    -9.1% net premiums earned in FY14
+  Insurance – Overseas General  $  7.43  $ 7.43  $ 8.09    +0.00    +0.66
+    +7.5% net premiums earned in FY14
+  Global Reinsurance            $  1.12  $ 1.12  $ 1.22    +0.00    +0.10
+    +5.1% net premiums earned in FY14
+  Life                          $  2.14  $ 2.14  $ 2.33    +0.00    +0.19
+    +3.0% net premiums earned in FY14
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $ 19.03  $19.03  $20.71    +0.00    +1.68
+  FY2015E = FY14 $19.171B × (1 − 0.7%: the Q1 2015 revenue growth (no Q2 2015 guide), YoY, applied to the year (no FY15 revenue guide)); split pro rata to FY14 net premiums earned by segment (FY14 growth)
+  Q1 2015 (Apr 21): total revenues $4.389B -0.7% YoY (-7.3% QoQ); net premiums earned -1.1% (written -2.6%); net investment income -0.4%;
+  P&C combined ratio 88.4% (-40.0bp); pre-tax margin 18.25% (-46.4bp); book value per share +4.5%; EPS $2.05 vs $2.14
+  Revenue: total revenues $4,389M vs $4,419M a year earlier, $4,737M the quarter before (net premiums earned, net investment income and net realized gains (losses)); net premiums earned $3,927M vs $3,970M; net premiums written $4,076M vs $4,185M; net investment income $551M vs $553M; net realized gains (losses) $-89M vs $-104M; diluted EPS (net income) $2.05 vs $2.14; the company's operating income (income excluding adjusted net realized gains (losses)) $2.25 vs $2.27 a share, which also removes recurring realized gains and losses (not used); diluted shares 331.7M; book value per share $90.81 vs $86.90 a year earlier; P&C combined ratio 88.4% vs 88.8%; in Switzerland from 2008-07-18 (the Continuation): common shares and dividends stated in Swiss francs, paid in dollars; the quarter before is Q4 2014 as its own release printed it
+  Q2 2015: no revenue, EPS or margin guide in numbers in any filing for FY15; the latest quarter's revenue growth stands in (the UNP rule)
+
+  FY2015E EPS check:  $19.030B × 18.2% pre-tax × (1−18.2%) ÷ 0.332B  =  $8.54  (FY2015E: no EPS guide in numbers, FY14's $8.42 stands)
+  FY2017E BEAR check: $19.030B × 18.2% ÷ 0.341B  =  $8.30  (scenario $1.73)
+  FY2017E BULL check: $20.710B × 18.6% ÷ 0.341B  =  $9.24  (scenario $10.38)
+  Every 1pp of pre-tax margin ≈ $0.469 EPS ≈ $4.22/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Net premiums earned growth            -13.0%     ≥1.0%    ≥14.0%   ≥178.0%     -1.1%  ⚠ BEAR  █░░░
+  Combined ratio (P&C)                +3240.0bp  ≤1600.0bp  ≤-40.0bp  ≤-1140.0bp   -40.0bp  ▲ BULL  ███░
+  Net investment income growth          -19.0%     ≥1.0%    ≥22.0%    ≥56.0%     -0.4%  ⚠ BEAR  █░░░
+  Book value per share growth            -9.0%     ≥2.0%    ≥13.0%    ≥24.0%     +4.5%  ◦ BASE  ██░░
+  Pre-tax margin change               -5500.0bp  ≥-2820.0bp  ≥-130.0bp  ≥1660.0bp   -46.4bp  ▲ BULL  ███░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.00 / 4.00
+  Market composite:   2.65 / 4.00  (back-solved from $103.47 + 15% hurdle)
+  SCA adjustment:    -0.04  ·  EPP-distance adj -0.10  →  Adj composite 1.86  →  Gap -0.79  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY14 total revenues -0.5%, net premiums earned +4.9%, P&C combined ratio 88.1%; Q1 combined ratio 88.4% (-40bp YoY)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 12.3x FY15E vs a 9.0x 10-yr median (65th percentile of its own range)  (-0.25 × 25%  =  -0.062)
+    -  Growth vs own history: Q1 2015 revenue growth (no Q2 2015 guide) -0.7% vs a 6.2% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  Book value $90.81 a share (+4.5% YoY) at the end of Q1 2015 (FY14 $90.02), dividend $2.60 a year  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Net premiums earned growth             -1.1%    -13.0%  -11.9%  Premiums shrink as prices soften or e…
+  Combined ratio (P&C)                 -40.0bp  +3240.0bp  +3280.0bp  Losses and expenses take more of prem…
+  Net investment income growth           -0.4%    -19.0%  -18.6%  Yields and invested assets fall
+  Book value per share growth            +4.5%     -9.0%  -13.5%  Investment marks and losses erode cap…
+  Pre-tax margin change                -46.4bp  -5500.0bp  -5453.6bp  Realized losses and claims outrun rev…
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$34.59  (model)  /  $10.38 (defined)
+  Bear probability (proxy model):  17.6%
+
+  KEY TRIGGER: revenue went from -6.6% (Q4 2014) to -0.7% YoY (Q1 2015), -7.3% on the quarter before;
+  the bear case needs the combined ratio (-40.0bp YoY now) rising further
+  and book value (+4.5% YoY) shrinking under losses and marks. Catastrophes and reserve charges show up in the combined ratio first;
+  investment marks show up in book value before they reach earnings.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $8.42  (FY2015E: no EPS guide in numbers, FY14's $8.42 stands)
+  Min viable P/E at panic:          8x  [median of calendar-year P/E lows: 2005 13.2x, 2006 7.0x, 2007 7.0x, 2008 11.0x, 2009 4.3x, 2010 5.3x, 2011 13.0x, 2012 8.7x, 2013 7.3x, 2014 10.9x, 2015 12.2x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $67.36/share
+  Current $103.47 vs Updated EPP $67.36:  +54%  ⚠ far above floor — large drawdown room
+  Bear $10.38 vs Updated EPP $67.36:  -85%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Net premiums earned growth                     1.0       +2.1   BASE floor (vs -1 now)
+  Combined ratio (P&C)                        1600.0    +1640.0   BASE floor (vs -40 now)
+  Net investment income growth                   1.0       +1.4   BASE floor (vs -0 now)
+  Book value per share growth                    2.0       -2.5   BASE floor (vs +4 now)
+  Pre-tax margin change                      -2820.0    -2773.6   BASE floor (vs -46 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $8.42 × (1+0.0%)² = $8.42
+  At 9x P/E (conservative):  $75.78/share
+  + Cumul. dividends (2yr):  +$5.36/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $75.78  (▼27.69 from $103.47)
+  Conservative total return:  -22% over 2yr  = -11%/yr
+
+  0.0% EPS growth is what is left once the premium multiple (12.3x)
+  mean-reverts to 9x. Breakeven at 9x needs FY2017E EPS of $10.90,
+  i.e. 13.8%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $99.45  –  $117.89  (at 22th pct of range)
+  Annual dividend:      $2.60/share  (yield 2.5%)
+  Realized vol:         14% annualized (1-yr daily log returns)
+  Beta vs broad market: 0.89
+  1-sigma range (1yr):  $89.19  –  $117.75  ($103.47 ± 14%)
+  2-sigma range (1yr):  $74.91  –  $132.03
+  ────────────────────────────────────────────────────────────
+  Bear $10.38 requires:  ~6.5σ price move  (unusual — requires fundamental break)
+  An insurer whose earnings follow the underwriting cycle, catastrophes and markets: the stock is +4% off its August
+  low (52 weeks) while revenue went from -6.6% (Q4 2014) to -0.7% YoY (Q1 2015), -7.3% on the quarter before.
+  Near the low: the multiple has not run ahead of the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        1.73    6.0x  $  10.38    17.6%      6.7%   +10.9pp  EPS -54.7%/yr (worst year FY05-FY14, capped at 0%); P/E to its 10th pct
+  BASE        8.07    9.0x  $  72.63    61.5%     23.5%   +38.0pp  EPS -2.1%/yr (Q1 revenue YoY + margin + buyback); P/E at its 10-yr median
+  BULL       10.38   13.5x  $ 140.13    17.6%     58.7%   -41.1pp  EPS +11.0%/yr (FY05-FY14 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL      22.00   15.2x  $ 334.40     3.3%     11.1%    -7.8pp  EPS +61.6%/yr (best 2-yr run FY05-FY14, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $82.26  /  Market EV: $137.10  /  Current: $103.47
+  Conservative EV (2yr, ④): $75.78 + $5.36 divs = $81.14 total value
+  Downside (→ Bear $10.38): 90.0%   Upside (→ Bull $140.13): 35.4%   Ratio B 2.54x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $103.47 the market needs $136.84 in two years —
+  between the BASE and BULL cases. That is a market composite of 2.65 against a model
+  read of 1.86: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       2.54x     +54%    -0.79  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     1.66x     +54%    -0.47  MODESTLY OVERVALUED / WATCHLIST
+  Multiples one band cheaper (p5/p25/med/p75)      infx     +54%    -1.16  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          2.27x     +54%    -0.74  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                          2.87x     +54%    -0.84  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             2.54x     +54%    -0.49  MODESTLY OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 2.54x     +12%    -0.69  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    2.54x     +54%    -0.65  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 2015 print (the quarter ends in Jun) — revenue against the Q1 2015 revenue growth (no Q2 2015 guide): -0.7% YoY
+  (2) Underwriting — the P&C combined ratio was 88.4% in Q1 2015 (-40.0bp YoY): what must hold for premiums to turn into earnings
+  (3) The FY15 guide — none in any filing: ACE gives no consolidated revenue, EPS or margin outlook in numbers for the year
+  (4) Book value — $90.81 a share at the end of Q1 2015 (+4.5% YoY): investment marks and reserve charges reach capital here first
+  (5) Capital at 12x — dividend $0.65 a quarter: 'The dividend approval provides for an annual par value reduction of 2.28 Swiss francs (CHF), which was equal to USD 2.60 per share, or USD 0.65 per quarter, at the time of the annual general meeting.'; book value $90.81 a share at the end of Q1 2015
+  ✕ AVOID  |  EPP floor $67.36  |  ADD below ~$61.74  |  TRIM above $140.13
+════════════════════════════════════════════════════════════════════════
+

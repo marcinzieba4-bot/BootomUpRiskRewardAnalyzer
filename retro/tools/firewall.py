@@ -895,6 +895,9 @@ try:
                  prev_fy_sales_growth=-99.0, prev_fy_npe_growth=-99.0, tax_rate=0.99, tax_note="PLANTED", book_value_ps=0.01,
                  groups=[["PLANTED", 1, -99]], groups_basis="PLANTED", exchange="PLANTED", pe_window_start="1990-01-02",
                  kind="DURABLE", eps_first_excluded={"1990": "PLANTED"})
+        for x in f.get("listings", []):    # (CB 2014-2017) the planted later listing names a symbol, as the encoded one does
+            if x.get("note") == "PLANTED":
+                x["symbol"] = "PLANTED"
     if TICKER == "MU":     # a later vintage excluding a year and readmitting none, with planted texts and figures
         v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}
         v.update(normalization="PLANTED", business_line="PLANTED", prev_fy_op_margin=-99.0, prev_fy_op_margin_note="PLANTED",

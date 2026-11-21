@@ -2,10 +2,12 @@
 """
 Build CB retrospective models from the dated fact sheet (retro/facts/CB.json).
 
-The company of 2008-2009 is ACE Limited, listed on the NYSE as ACE (CIK 896159). CB is the series key (TICKER, the folder, the
-index) and the symbol under which Yahoo serves ACE's history (ACE Limited took the Chubb name in 2016); every printed line names the
-listing of the date (LISTED_SYMBOL = "ACE"; the BKR and SPGI encoding; retro/README.md, "CB"). The Chubb Corporation, which traded as
-CB in 2008-2009, is a different company and is not this series.
+The company of 2008-2015 is ACE Limited, listed on the NYSE as ACE (CIK 896159). CB is the series key (TICKER, the folder, the
+index) and the symbol under which Yahoo serves ACE's history; every printed line names the listing of the date (LISTED_SYMBOL = "ACE";
+the BKR and SPGI encoding; retro/README.md, "CB"). The Chubb Corporation, which traded as CB to 2016-01-14, is a different company and
+is not this series. (CB 2014-2017) ACE acquired it on 2016-01-14 and the same registrant is Chubb Limited, NYSE: CB, from 2016-01-15
+('company_names' and 'listings', the SPGI encoding: the name from the filing that states it until a later vintage carries it, the
+listing from its effective date once published).
 
 The JPM sibling for a property and casualty insurer: the same frozen rules (retro method r2), the same weekly dates and the same
 market statistics, with an insurer's signal set and ACE's own rule-T thresholds (retro/templates/cb_engine.py.tmpl). For each as-of
@@ -32,9 +34,9 @@ reach). The method r2 inputs map as follows (retro/README.md, "CB"; decided befo
   - dividend: the latest declared quarterly rate in US dollars, each from the first filing that states it ('dividends'); from the
     Swiss redomestication the rate is declared in Swiss francs and the dollar figure is the one the filing states.
 The kind is CYCLICAL: each 10-K's risk factors call the insurance and reinsurance business (FY2006), then its markets, 'historically
-cyclical' (the XOM, CAT and GOOG reading). No disruption theme in taxonomy_eras.json is live for an insurer in 2008-2009, so the
-builder refuses events until a theme encoding is decided, and it refuses listings, splits and company names until their encodings
-are decided.
+cyclical' (the XOM, CAT and GOOG reading). No disruption theme in taxonomy_eras.json is live for an insurer in 2008-2017 (each live
+theme's registered scope names other businesses; from the FY2013 vintage the 'why' quotes them, 'theme_scopes_quoted'), so the
+builder refuses events until a theme encoding is decided, and it refuses splits until their encoding is decided.
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
 is the first trading day after it. ACE released after the close, so a print is dated the next trading day (public before its open)
@@ -46,6 +48,7 @@ Usage
   python3 retro/build_cb.py --weekly 2008-01-01 2008-12-31
   python3 retro/build_cb.py --weekly 2009-01-05 2009-12-31
   python3 retro/build_cb.py --weekly 2010-01-04 2013-12-31
+  python3 retro/build_cb.py --weekly 2014-01-06 2017-12-31
   python3 retro/build_cb.py 2008-04-30
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/CB/<AS_OF>
 """
@@ -65,9 +68,11 @@ from build_unp import money  # noqa: E402
 
 FACTS = os.path.join(HERE, "facts", "CB.json")
 ENGINE = os.path.join(HERE, "templates", "cb_engine.py.tmpl")
+with open(os.path.join(HERE, "taxonomy_eras.json"), encoding="utf-8") as _fh:
+    TAXO = json.load(_fh)
 OUT = os.path.join(ROOT, "staging", "retrospective", "CB")
 SYMBOL = "CB"          # the series key and Yahoo's symbol
-LISTED = "ACE"         # the listing of every date of 2008-2009
+LISTED = "ACE"         # the listing of every date to 2016-01-14; from 2016-01-15 NYSE: CB ('listings')
 # rule T, the engine's signal thresholds: (BEAR, BASE, BULL, XBULL); the builder checks the fact sheet against them
 ENGINE_THRESHOLDS = {"npe": (-13, 1, 14, 178), "cr": (3240, 1600, -40, -1140), "nii": (-19, 1, 22, 56), "bvps": (-9, 2, 13, 24),
                      "pretax_margin": (-5500, -2820, -130, 1660)}
@@ -137,9 +142,9 @@ def build(as_of, facts, raw, spx, engine, out):
     chart = retro_tool.chart(SYMBOL)
     assert retro_tool.split_factor(chart, as_of) == 1.0, "a split after AS_OF needs an encoding ('splits')"
     px = raw
-    # no filing of the period states an event of a live theme, a listing change, a split or a change of company name: the builder
-    # refuses any such fact until its encoding is decided
-    for kind in ("listings", "splits", "company_names", "events"):
+    # no filing states an event of a live theme or a split: the builder refuses any such fact until its encoding is decided. (CB
+    # 2014-2017) A change of company name and of listing have the SPGI encoding (below).
+    for kind in ("splits", "events"):
         if [x for x in facts.get(kind, []) if x.get("published", x.get("effective", "")) <= as_of]:
             sys.exit(f"{as_of}: the CB builder has no encoding for {kind}; decide one first")
     for g in [g for g in facts["guides"] if g["published"] <= as_of]:   # a guide public on AS_OF: only fields with an encoding
@@ -151,6 +156,13 @@ def build(as_of, facts, raw, spx, engine, out):
     if not vintages:
         sys.exit(f"{as_of}: no history vintage in the fact sheet is public yet")
     h = vintages[-1]                                   # latest annual history public on AS_OF
+    # (CB 2014-2017) a name changed since the vintage applies from its publication; a listing from its effective date, once published
+    # (the SPGI encoding): ACE Limited, NYSE: ACE, is Chubb Limited, NYSE: CB, from the 8-K of 2016-01-15
+    renames = [n for n in facts.get("company_names", []) if h["published"] < n["published"] <= as_of]
+    company = renames[-1]["name"] if renames else h["company"]
+    short = company.split()[0]                         # the name the text uses: ACE, then Chubb
+    moved = [x for x in facts.get("listings", []) if x["published"] <= as_of and x["effective"] <= as_of]
+    exchange, listed = (moved[-1]["exchange"], moved[-1]["symbol"]) if moved else (h["exchange"], LISTED)
     # prints published by AS_OF that report a fiscal year after the history (a Q4 print reports the year just ended, so it stays in
     # scope after the 10-K that follows it)
     reported = lambda h: {int(k) for k in h["eps_normalized"]} | {int(k) for k in h.get("eps_excluded", {})}
@@ -237,7 +249,7 @@ def build(as_of, facts, raw, spx, engine, out):
         f"{next_q}: no revenue, EPS or margin guide in numbers in any filing for {fy_now}; the latest quarter's revenue growth "
         "stands in (the UNP rule)")
     note_g = next((g["note"] for g in reversed(guides) if g.get("note")), None)
-    cat3 = (f"(3) The {fy_now} guide — " + (note_g if note_g else "none in any filing: ACE gives no consolidated revenue, EPS or margin "
+    cat3 = (f"(3) The {fy_now} guide — " + (note_g if note_g else f"none in any filing: {short} gives no consolidated revenue, EPS or margin "
             "outlook in numbers for the year"))
     margin_guided = False                          # no margin guide: no guided step; the signal uses the latest quarter's change
     fy_margin_base = h["prev_fy_op_margin"]
@@ -245,7 +257,6 @@ def build(as_of, facts, raw, spx, engine, out):
     # ── dividend: the latest declared quarterly rate, each from the first filing that states it ──
     divs = [(d["published"], d["quarterly"] * 4, d["note"], d["source"]) for d in facts.get("dividends", []) if d["published"] <= as_of]
     _, dividend, dividend_note, dividend_src = max(divs, key=lambda x: x[0])
-    exchange = h["exchange"]
 
     # ── market statistics, prices truncated at AS_OF ──
     days = sorted(d for d in px if d <= as_of)
@@ -286,8 +297,15 @@ def build(as_of, facts, raw, spx, engine, out):
     theme_summary = "no disruption theme has dated evidence"
     cat4 = (f"(4) Book value — ${latest['bvps_now']:.2f} a share at the end of {latest['quarter']} ({latest['bvps_pct']:+.1f}% YoY): "
             "investment marks and reserve charges reach capital here first")
-    why = (h["why"] + "; no disruption theme in taxonomy_eras.json is live for a property and casualty insurer on this date (OFFSHORE "
-           "is scoped to IT services), so the watch list is empty and these words stay here (the PEP obesity rule)")
+    if h.get("theme_scopes_quoted"):                # (CB 2014-2017) every theme live on AS_OF, with its registered scope
+        live = sorted(((t["live_from"], k, t["scope"]) for k, t in TAXO["themes"].items() if t["live_from"] <= as_of))
+        scopes = ", ".join(f"{k} {'is scoped to' if i == 0 else 'to'} '{sc}'" for i, (_, k, sc) in enumerate(live))
+        why = (h["why"] + "; no disruption theme in taxonomy_eras.json is live for a property and casualty insurer on this date (of the "
+               f"live themes, {scopes}: none names insurance), so the watch list is empty and these words stay here (the PEP obesity "
+               "rule)")
+    else:
+        why = (h["why"] + "; no disruption theme in taxonomy_eras.json is live for a property and casualty insurer on this date (OFFSHORE "
+               "is scoped to IT services), so the watch list is empty and these words stay here (the PEP obesity rule)")
 
     after_print = [p for p in prints if p["published"] < as_of and not any(p["published"] < d < as_of for d in days)]
     tag = f"(day after the {after_print[-1]['quarter']} print)" if after_print else f"(pre-{next_q} print)"
@@ -298,12 +316,12 @@ def build(as_of, facts, raw, spx, engine, out):
         assert "before its open" in same_day[-1].get("release_time", ""), (as_of, same_day[-1]["quarter"], "dated AS_OF, not public before the open")
         tag = f"(day of the {same_day[-1]['quarter']} print, public before the open)"
 
-    company = h["company"]
     ids = (list(h["sources"]) + [p["source"] for p in prints] + [g["source"] for g in guides]
-           + [public[i - 1]["source"]] + ([dividend_src] if dividend_src else []))
+           + [public[i - 1]["source"]] + ([dividend_src] if dividend_src else [])
+           + [n["source"] for n in renames] + [x["source"] for x in moved])
     sources = [dict(id=x, **facts["sources"][x]) for x in dict.fromkeys(ids)]
-    sources.append({"id": "Y0", "published": as_of, "title": f"Yahoo Finance daily prices, {LISTED} (served under {SYMBOL}) and S&P 500, "
-                                                             "truncated at AS_OF",
+    served = f"{listed} (served under {SYMBOL})" if listed != SYMBOL else listed
+    sources.append({"id": "Y0", "published": as_of, "title": f"Yahoo Finance daily prices, {served} and S&P 500, truncated at AS_OF",
                     "url": f"https://finance.yahoo.com/quote/{SYMBOL}/history",
                     "supports": f"close ${close:.2f} as traded on AS_OF, 52-week range, realized vol, beta, the {window_label} P/E "
                                 f"distribution from {window[0]}"})
@@ -321,9 +339,9 @@ def build(as_of, facts, raw, spx, engine, out):
     R = repr
     head = f'''#!/usr/bin/env python3
 """
-{LISTED} Signal Model  ·  RETROSPECTIVE as of {as_of}  {tag}  (methodology v2, retro method r2)
+{listed} Signal Model  ·  RETROSPECTIVE as of {as_of}  {tag}  (methodology v2, retro method r2)
 ──────────────────────────────────────────────────────────────────────
-{company} ({exchange}: {LISTED})  ·  {h["business_line"]}
+{company} ({exchange}: {listed})  ·  {h["business_line"]}
 Generated by retro/build_cb.py from retro/facts/CB.json: the constants below are the facts public on
 AS_OF; the engine underneath derives every scenario input from them by frozen rules. Do not edit by hand.
 
@@ -333,7 +351,7 @@ Format: segment bridge → signal dashboard → bear anatomy → updated EPP →
 
 # ── RETROSPECTIVE FRAME ───────────────────────────────────────────────────────
 TICKER      = "{SYMBOL}"   # series key
-LISTED_SYMBOL = "{LISTED}"   # the listing on AS_OF
+LISTED_SYMBOL = "{listed}"   # the listing on AS_OF
 COMPANY     = {R(company)}
 AS_OF       = "{as_of}"
 PRICE_DATE  = "{as_of}"
