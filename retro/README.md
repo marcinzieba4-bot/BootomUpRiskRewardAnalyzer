@@ -24317,9 +24317,9 @@ Controls and checks (before any outcome):
   and a non-GAAP reason (`rev_guide_usd_b`, `adj_why`), and on the planted print's full-year actuals a restatement of every year's
   revenue and a revenue label (`restates_revenue`, `revenue_label`), beside the 2008-2009 batch's plants (a print with absurd figures,
   absurd full-year actuals, a later Q4 print excluding its own year, a later 10-Q split, a later guide and a still later loss range, a
-  later vintage excluding a year, a dividend, a company name and prices from the cutoff multiplied by 10). As positive controls, a planted print dated 2012-05-30 with its own source
-  reaches 2012-06-01 (its text in the model) and not 2012-05-25 (byte-identical); the same print citing a source published after
-  AS_OF (2012-07-27) stops at the builder's source check.
+  later vintage excluding a year, a dividend, a company name and prices from the cutoff multiplied by 10). As positive controls, a
+  planted print dated 2012-05-30 with its own source reaches 2012-06-01 (its text in the model) and not 2012-05-25 (byte-identical);
+  the same print citing a source published after AS_OF (2012-07-27) stops at the builder's source check.
 
 Seen in the build (method behaviour, not tuned):
 Lilly's ten-year window holds two regimes, 2003-2007 at calendar-year lows of 18-30x and 2009-2013 at 7-11x (2008 out), and the
@@ -24371,6 +24371,9 @@ Judgement calls that could carry hindsight:
 - the signals and DURABLE, as in 2008-2009, by a builder who knows that Zyprexa, Cymbalta (December 2013), Evista and Humalog lost
   exclusivity in these years;
 - the parts of the filings listed above as not read.
+
+The hindsight results for 2010-2013 are in `staging/retrospective/LLY/FINDINGS.md` (computed after the firewall result was pushed):
+hypotheses, never inputs.
 
 ## Categories change with the era
 
