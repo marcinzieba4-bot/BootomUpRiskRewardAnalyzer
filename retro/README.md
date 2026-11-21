@@ -24113,6 +24113,21 @@ Controls and checks (before any outcome):
   later product name appear in no model.
 - **Regression:** the shared code is untouched (the firewall tool gains an LLY entry, `taxonomy_eras.json` the terms above); rebuilding
   the 2008-2009 dates of BMY, PFE and CB changes nothing (315 models).
+- **Firewall** (run after the build was committed, before any outcome): its first run failed at three cutoffs (2008-02-29, 2008-03-13 and
+  2008-04-21: 4, 6 and 12 models changed). For a print whose company-wide U.S. and outside-U.S. split no filing public on AS_OF states, the
+  builder had printed that the quarter's 10-Q, "not yet filed, will" state it, and the Q4 2007 print's own note that no filing states it:
+  words that depended on filings after AS_OF, which the planted later 10-Q exposed. The slot now reads the same either way ("the Q4 2007
+  release gives no company-wide U.S. and outside-U.S. split, and no filing public on AS_OF states it (n/r)"); 18 models changed in text
+  only (the 12 dates on the Q4 2007 print and the 6 between a 2008 release and its 10-Q), no class or tier, and the controls and leak scan
+  were rerun (39 of 42, 0 of 15,970). The rerun passes at all 18 cutoffs above (the first built date, every print, 10-Q, vintage and guide
+  date of the range, and 2010-01-01: 1 to 105 dates each), 0 files changed and no planted text. The planted facts include a print with
+  absurd sales, growth ex-FX, U.S. and outside-U.S. growth, margins, quarter EPS, notes and raw figures, absurd full-year actuals for the
+  year after the latest vintage (or Q4 print), a later Q4 print whose full-year actuals exclude its own year, a later 10-Q split on the
+  last print before the cutoff, a later guide for every guided year (a reported range, an adjusted range, words and a note) and a still
+  later loss range, a later vintage excluding a year with planted texts, a dividend, a company name and prices from the cutoff multiplied
+  by 10. As positive controls, a planted print dated 2008-07-01 with its own source reaches 2008-07-03 (its text in the model) and not
+  2008-06-27 (byte-identical); the same print citing a source published after AS_OF (the 10-Q of 2008-08-06) stops at the builder's check
+  that every source is public on AS_OF. A full rebuild is byte-identical.
 
 Seen in the build (method behaviour, not tuned). Lilly's own decade of P/Es (1998-2007, the years of 30x multiples) is far above what it
 traded at in 2008-2009, so every rule that reads the window says cheap:
