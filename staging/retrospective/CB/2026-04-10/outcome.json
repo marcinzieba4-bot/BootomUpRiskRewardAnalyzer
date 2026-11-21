@@ -1,0 +1,42 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "CB",
+ "as_of": "2026-04-10",
+ "computed": "2026-11-21",
+ "data_source": "Yahoo Finance daily closes + dividends (CB, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2026-10-09",
+   "price": 341.2,
+   "dividends": 2.04,
+   "total_return_pct": 4.7,
+   "benchmark_total_return_pct": 15.1,
+   "excess_pct": -10.5,
+   "hurdle_pct": 7.2
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2026-11-16",
+   "price": 381.28
+  },
+  "low": {
+   "date": "2026-06-01",
+   "price": 309.78
+  },
+  "max_drawdown_pct": -10.5,
+  "return_to_avg_price_m12_m24_pct": null
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "CYCLICAL",
+   "risk": 2
+  },
+  "today": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Global P&C underwriter; cat season swings, franchise durable",
+   "reviewed": "2026-09-22"
+  }
+ }
+}

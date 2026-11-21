@@ -5,9 +5,10 @@ SPY), which no model reads. These are hypotheses for the live model, to be teste
 the CB archive or any other ticker's models (retro/README.md, "The one rule"). The point-in-time build, its decisions and its judgement
 calls are in retro/README.md, "CB"; they were committed and fire-walled before any outcome was computed.
 
-The series is ACE Limited (NYSE: ACE), the company behind today's CB, on 731 weekly dates: 105 from 2008-01-04 to 2009-12-31 (the table
+The series is ACE Limited (NYSE: ACE), the company behind today's CB, on 986 weekly dates: 105 from 2008-01-04 to 2009-12-31 (the table
 below), 209 from 2010-01-08 to 2013-12-31, 208 from 2014-01-10 to 2017-12-29 (Chubb Limited, NYSE: CB, from 2016-01-15) and 209 from
-2018-01-05 to 2021-12-31, each batch in its own section, scored after its build was committed, pushed and fire-walled. The
+2018-01-05 to 2021-12-31, and 255 from 2022-01-07 to 2026-11-20 (986 in all), each batch in its own section, scored after its build was
+committed, pushed and fire-walled. The
 call check is the tool's: CHEAP should clear the 15%/yr hurdle or beat SPY over two years, FAIR should land within ±15pp of SPY, RICH should miss the
 hurdle and lag SPY. Judge the series by the return to the average price of months 12-24 and treat the call check as a rough tick
 (retro/README.md, "Scoring a single stock").
@@ -195,7 +196,52 @@ date has its 6-month, 1-, 2- and 3-year horizons; the 15%/yr hurdle is +32.2% ov
   fragile ones (3 FAIR, 2 CHEAP, 1 RICH) hit 3.
 - **Scenario landing:** RICH dates landed in BULL on 183 of 200 (BASE on 17); the CHEAP and FAIR dates all in BULL.
 
-## 2008-2021: the EPS basis, tested on later dates
+## 2022-2026 (255 dates)
+
+Scored on 2026-11-21, after the point-in-time build was committed and pushed (ee7523b7) and the firewall had passed at 32 cutoffs
+(949117da). The batch was built in a new session that had not opened this file or any outcome (retro/README.md, "CB 2022-2026"); no rule
+was changed. Not every date has every horizon yet: 150 have the 2-year horizon (to 2024-11-15), 202 the 1-year (to 2025-11-14), 228 the
+6-month (to 2026-05-15), and 2026-11-20 has none. The 15%/yr hurdle is +32.2% over two years. The table counts dates with a 2-year
+outcome ("15 of 21" means 15 of the year's 21 RICH dates).
+
+| | dates | 2-yr total return | vs SPY (mean / median) | to the m12-24 average | call check |
+|---|---|---|---|---|---|
+| 2022, CHEAP (from the Q4 2021 print) | 48 | +36.5% | -3.1 / -2.0pp | +16.6% | 40 of 48 |
+| 2022, RICH (January) | 4 | +22.2% | +13.5 / +13.7pp | +5.3% | 0 of 4 |
+| 2023, CHEAP | 1 | +25.4% | -29.0 / -29.0pp | +21.4% | 0 of 1 |
+| 2023, FAIR (January) | 3 | +21.0% | -31.5 / -31.0pp | +17.2% | 0 of 3 |
+| 2023, RICH (from the Q4 2022 print) | 48 | +42.3% | -5.3 / -6.7pp | +36.0% | 7 of 48 |
+| 2024, CHEAP | 9 | +34.7% | -5.9 / -7.2pp | +18.6% | 7 of 9 |
+| 2024, FAIR | 22 | +29.2% | -9.3 / -11.1pp | +14.5% | 15 of 22 |
+| 2024, RICH | 15 of 21 | +26.0% | -12.8 / -15.9pp | +14.7% | 11 of 15 |
+| class CHEAP | 58 of 82 | +36.1% | -4.0 / -2.2pp | +17.0% | 47 of 58 |
+| class FAIR | 25 of 94 | +28.2% | -12.0 / -11.9pp | +14.8% | 15 of 25 |
+| class RICH | 67 of 79 | +37.5% | -5.8 / -8.0pp | +29.4% | 18 of 67 |
+| all | 150 of 255 | +35.4% | -6.2 / -6.3pp | +22.2% | 80 of 150 |
+
+- **2022: CHEAP on FY21's $19.27, and right by the hurdle on 40 of 48.** FY21 carried $3,023M of after-tax realized gains (the company's
+  $12.56). At 9.4-11.9x it read CHEAP, under the EPP floor on 46 dates. The stock returned +36.5% over two years, clearing the hurdle on
+  most dates, but lagged SPY by 3.1pp. The year's best two-year excess is in this block (2022-08-05, $185.32: +49.0%, +20.7pp). The four
+  RICH dates of January, at 25x FY20's COVID-year $7.79, beat SPY by 13.5pp (0 of 4).
+- **2023: RICH on FY22's $12.55 (then $12.39 as adjusted), and wrong by the call check on 41 of 48.** FY22 carried $1,087M of after-tax
+  realized losses (the company's $15.24). At 15-19.5x, the 54th-98th percentile, the stock returned +42.3% over two years: it cleared
+  the hurdle, though it lagged SPY by 5.3pp. Hypothesis 4's case: a RICH call that lags SPY still misses when the stock clears 15%/yr.
+  The three FAIR dates of January 2023 (on FY21's $19.27, at $227-229) are the worst of the batch:
+  -31.5pp, with 2023-01-06 at -37.1pp.
+- **2024: on FY23's $19.06 from the Q4 2023 print (the four January dates, RICH, still on FY22's $12.39), the classes ordered the
+  relative returns.** CHEAP -5.9pp, FAIR -9.3pp and RICH -12.8pp against SPY over two
+  years, with 33 of 46 hits. The company's figure excluding the Bermuda benefit was the better anchor here: FY23 at GAAP $21.80 (the
+  README's variant) reads 29 more dates CHEAP and 4 RICH dates FAIR, and would have hit 22 of 46 instead of 33.
+- **2025 (1-year horizon only so far):** CHEAP +8.4pp (13 dates), FAIR -3.8pp (32), RICH -1.8pp (1) against SPY over one year.
+- **Over the batch the classes did not order the 2-year excess:** CHEAP -4.0pp, FAIR -12.0pp, RICH -5.8pp. SPY's two years from 2022-2024
+  were strong, and every class lagged it on average (all dates -6.2pp) while clearing the hurdle on average (+35.4%). The legacy tiers:
+  BUY -1.0pp (40 dates), ACCUMULATE -18.8pp (13), WATCHLIST -8.3pp (30), AVOID -5.8pp (67). Two-year returns range from +15.9% to +65.9%;
+  the largest drawdown within two years averages -16.5%.
+- **Robustness did not predict hits again:** the 101 dates whose class survives 7 or 8 of the 8 variants hit 48 times (48%), the 49
+  fragile ones 32 times (65%).
+- **Scenario landing:** CHEAP and FAIR dates landed in BASE on all 83; RICH dates in BULL on 59 of 67 (BASE on 8).
+
+## 2008-2024: the EPS basis, tested on later dates
 
 The 2008-2009 findings proposed that the company's operating EPS (which removes realized gains and losses) would have served an insurer
 better than GAAP. The 2010-2013 dates were not scored when that was written, so they test it. Each of the 314 dates was rebuilt on the
@@ -218,7 +264,10 @@ by the same call check against the same outcomes (hindsight, this file only):
 | 2019 | 52 | 49 | 49 | 0 | |
 | 2020 | 53 | 12 | 9 | 3 | +65.4pp |
 | 2021 | 52 | 0 | 0 | 0 | |
-| all | 731 | 354 | 323 | 173 | |
+| 2022 | 52 | 40 | 8 | 48 | -3.1pp |
+| 2023 | 52 | 7 | 30 | 36 | -4.6pp |
+| 2024 | 46 | 33 | 28 | 13 | -9.9pp |
+| all | 881 | 434 | 389 | 270 | |
 
 - **The operating basis wins 2009 by 47 calls and loses 2011 by 37: over six years the two tie (161 against 163).** In 2011 the operating
   guides ($5.40-6.75) sat well under GAAP FY10's $9.11 (a year with $451M of realized gains), so the operating basis read RICH on 48
@@ -228,6 +277,11 @@ by the same call check against the same outcomes (hindsight, this file only):
   from 2015 both bases read the same class. Over 522 dates GAAP now leads, 241 hits against 213.
 - **2018-2021: the bases agree on all but 3 dates** (the operating basis reads three CHEAP dates of the 2020 crash RICH, and they beat SPY
   by 65.4pp); both read 2021 RICH on a COVID year (operating FY20 $7.31). Over 731 dates GAAP leads, 354 hits against 323.
+- **2022-2024 (scored after their build; the variant is the README's core basis, FY23 and FY24 at the company's core figures excluding the
+  tax benefits): the bases split again, 80 hits against 66.** The core basis reads 2022's 48 CHEAP dates RICH (FY21 $12.56 against GAAP
+  $19.27) and loses 32 calls, because the stock cleared the hurdle. It reads 32 of 2023's RICH dates FAIR or CHEAP (FY22 $15.24 against
+  $12.55) and wins 23. Over 881 scored dates GAAP leads, 434 hits against 389. In 2022-2023 both bases ordered nothing: the two years'
+  absolute returns were alike (+36.5% and +42.3%) while the GAAP class flipped from CHEAP to RICH with the anchor.
 - **Both bases order the relative returns in 2010-2013** (GAAP: CHEAP +16.8pp, FAIR +8.0pp, RICH -1.0pp; operating: CHEAP +22.7pp on 29
   dates, FAIR +15.0pp on 21, RICH +1.8pp on 159). Over 2008-2013 GAAP gives +8.8, +7.4 and +2.0pp, operating +8.3, +13.3 and +1.8pp.
 
@@ -246,15 +300,20 @@ by the same call check against the same outcomes (hindsight, this file only):
    while the stock re-rated (hypothesis 7). **2018-2021 adds another trough-year anchor:** FY2020, cut by the COVID-19 charge, set
    every 2021 multiple at 20-25x, and all 48 RICH calls on it missed (the stock beat SPY by 18.5pp). FY2008 (2009), FY2011 (2012) and
    FY2020 (2021), each a year of market or catastrophe losses, anchor the series' largest blocks of RICH misses, on either basis.
+   **2022-2023 shows the mirror:** FY2021, lifted by $3,023M of after-tax realized gains, read 2022 CHEAP, and FY2022, cut by $1,087M of
+   realized losses, read 2023 RICH. The stock returned +36.5% and +42.3% over the two blocks' two years: the class followed a one-year
+   anchor swinging on realized items in both directions, and the outcome did not swing with it. The multi-year anchor hypothesis is the one
+   this supports; the operating basis alone would have traded 2022's calls for 2023's.
 2. **On a financial, book value may be the better anchor in a crisis.** ACE's book value per share fell 11.4% in 2008 while its GAAP EPS fell 54%; a
    price-to-book cross-check was not part of method r2 and was not computed here.
 3. **A rebounding benchmark punishes the cheapest dates.** The late-2008 CHEAP dates lagged SPY by 13pp despite a positive absolute return;
    the relative call check penalises defensive names bought at the market's trough.
 4. **In a rising market the RICH call check is unwinnable.** 2012's 48 RICH dates matched SPY exactly (+44.8%) and still scored 0 of 48,
    because the stock cleared the 15%/yr hurdle. The relative ordering (CHEAP > FAIR > RICH against SPY, and BUY > ACCUMULATE >
-   WATCHLIST > AVOID in 2010-2013) is the better test of the classes than the hit count.
+   WATCHLIST > AVOID in 2010-2013) is the better test of the classes than the hit count. 2023's 48 RICH dates lagged SPY by 5.3pp and
+   scored 7 of 48, because the stock cleared the hurdle.
 5. **Robustness agreement did not predict hits in any batch** (2008-2009: 35 of 95 robust, 10 of 10 fragile; 2010-2013: 77 of 159
-   robust, 39 of 50 fragile; 2014-2017: 71 of 195 robust, 9 of 13 fragile). On this series the fragile dates are mostly FAIR, and FAIR's
+   robust, 39 of 50 fragile; 2014-2017: 71 of 195 robust, 9 of 13 fragile; 2022-2024: 48 of 101 robust, 32 of 49 fragile). On this series the fragile dates are mostly FAIR, and FAIR's
    ±15pp band is the easiest to hit.
 6. **An acquisition "as published" inflates BASE for four quarters and buys the wrong class.** Method r2 takes the latest quarter's reported
    revenue growth; when that quarter holds an acquired company against a year-ago quarter without it, BASE carries the deal (here +56-75%,
@@ -268,3 +327,7 @@ by the same call check against the same outcomes (hindsight, this file only):
    percentile of a multiple says more once the window no longer holds the crisis years (the CB window leaves 2008-2009 only from
    2018-2019) is a test for later dates of this series and for others. **2018-2019 answers it for this series in part:** with the median
    at 12.4-13.4x, the 79th-100th percentile read RICH and was right on 101 of 104 dates.
+8. **A company figure excluding only a one-off tax benefit may be the better anchor** (one test, one ticker). The README's rule took FY2023
+   at the company's $19.06 rather than GAAP $21.80, which carried Bermuda's one-time $1.14 billion deferred tax benefit; on the 46 scored
+   dates of 2024 it hit 33 times against the GAAP reading's 22. The rule was decided before the outcomes and is unchanged; a test on other
+   tickers' tax-law years (the 2017 Tax Act's benefits in particular, read at GAAP where no figure excludes only them) would say more.
