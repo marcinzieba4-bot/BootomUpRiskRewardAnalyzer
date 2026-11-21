@@ -23647,7 +23647,9 @@ Controls and checks (before any outcome of these dates):
   2008-2017, and the FY2019 and FY2020 10-Ks' year headers "2019" and "2020" against FY labels and a P/E window's trading-day count). All
   four of the latest print's notes appear in each model.
 - **Regression:** no code changed; with the new fact sheet the 522 dates of 2008-2017 rebuild byte-identical.
-- **Firewall:** run after the build was committed and pushed, before any outcome (result below).
+- **Firewall** (after the build was committed and pushed, before any outcome): passes at the 26 cutoffs above (every print, vintage
+  and dividend date of the range, 2018-01-01 and 2022-01-01), 0 files changed and no planted text, 522 to 731 dates each; the
+  2022-01-01 run rebuilds all 731 dates byte-identical.
 
 Seen in the build (method behaviour, not tuned). The multiple stays high against a window whose median rises slowly:
 - **RICH on 200 dates, FAIR on 3, CHEAP on 6; legacy tier AVOID 200, WATCHLIST 7, ACCUMULATE 2.** RICH on every date of 2018, 2019 and 2021;
