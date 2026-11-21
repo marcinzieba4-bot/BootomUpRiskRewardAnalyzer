@@ -23113,6 +23113,16 @@ Controls and checks (before any outcome):
   each model. No fact's own text names a year after its publication.
 - **Regression:** the shared code is untouched (the firewall tool gains a CB entry, `taxonomy_eras.json` the term above); rebuilding the
   2008-2009 dates of JPM and SPGI changes nothing.
+- **Firewall** (run after the build was committed, before any outcome): passes at the 15 cutoffs above (the first built date, every print,
+  vintage, guide and dividend date of the range, and 2010-01-01: 1 to 105 dates each), 0 files changed and no planted text. The planted
+  facts include a print with absurd premiums, combined ratio, investment income, book value, margins, quarter EPS, notes and raw figures,
+  absurd full-year actuals for the year after the latest vintage (or Q4 print), a later Q4 print whose full-year actuals exclude its own
+  year, a later guide for every guided year with every field (a GAAP EPS range, an operating range, P&C and consolidated premium ranges,
+  words and a note), a later vintage excluding a year with planted texts, figures, groups, window start and kind, a dividend, a listing, a
+  company name and prices from the cutoff multiplied by 10. As positive controls, a planted print dated 2008-07-01 with its own source
+  reaches 2008-07-03 (its text in the model) and not 2008-06-27; the same print citing a source published after AS_OF (the 8-K of
+  2008-07-14) stops at the builder's check that every source is public on AS_OF; and a planted company name dated 2008-07-01 stops it at its
+  refusal of an unencoded name change on 2008-07-03, while 2008-06-27 builds unchanged. A full rebuild is byte-identical.
 
 Seen in the build (method behaviour, not tuned). A price-to-earnings method on an insurer through 2008-2009 turns on which year's EPS
 anchors the multiple, and the classes follow it:
