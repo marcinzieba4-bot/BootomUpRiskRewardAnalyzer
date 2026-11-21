@@ -23860,7 +23860,10 @@ Controls and checks (before any outcome of these dates):
   each model. The 731 earlier models are byte-identical to before, so no new fact reaches them.
 - **Regression.** `build_cb.py` gains the print-level `restates`, and the firewall tool's CB entry a planted print-level restatement of
   every year. With the new fact sheet the 731 dates of 2008-2021 rebuild byte-identical. No other ticker's code or output is touched.
-- **Firewall** FIREWALL_PLACEHOLDER
+- **Firewall** (after the build was committed and pushed, before any outcome). It passes at the 32 cutoffs above: 0 files changed and no
+  planted text, 731 to 986 dates each. The cutoffs are every print, vintage, restatement and dividend date of the range, 2022-01-03 and
+  2026-11-21. The planted facts are 2008-2021's plus a later print-level restatement of every year the latest vintage reports. The
+  2026-11-21 run rebuilds all 986 dates byte-identical.
 
 Seen in the build (method behaviour, not tuned). As in every CB batch, the class follows the last full year's EPS against a ten-year
 window:
