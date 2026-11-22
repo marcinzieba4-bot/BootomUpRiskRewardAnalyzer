@@ -24572,6 +24572,209 @@ Judgement calls that could carry hindsight:
 The hindsight results for 2014-2017 are in `staging/retrospective/LLY/FINDINGS.md` (computed after the firewall result was pushed):
 hypotheses, never inputs.
 
+### LLY 2018-2021
+
+209 weekly dates, 2018-01-05 to 2021-12-31, on the same method, engine, builder and rule-T thresholds. The fact sheet only gains facts
+(the generator asserts every earlier source, vintage, print and guide, the rule-T figures and the other lists equal to the committed
+sheet) and the 523 earlier models rebuild byte for byte. No builder or engine change.
+
+```bash
+python3 retro/build_lly.py --weekly 2018-01-01 2021-12-31                   # 209 dates, 2018-01-05 .. 2021-12-31
+for c in 2018-01-01 2018-01-31 2018-02-21 2018-04-24 2018-07-24 2018-11-06 2018-12-19 2019-02-06 2019-02-19 2019-04-30 2019-07-30 \
+         2019-10-23 2019-10-24 2019-12-17 2020-01-30 2020-02-19 2020-04-23 2020-07-30 2020-10-27 2020-12-15 2021-01-29 2021-02-17 \
+         2021-04-27 2021-08-03 2021-10-26 2021-12-15 2022-01-01; do python3 retro/tools/firewall.py $c LLY; done
+```
+
+Read, by the session's model directly with no delegated transcription: the 16 earnings releases of Q4 2017 to Q3 2021 (the reported
+operating results and the reported-results sections' revenue, exchange-rate and U.S. sentences, the full-year paragraphs of the Q4
+releases, the EPS reconciliations, the repurchase sentences and the guidance sections); the FY2017-FY2020 10-Ks (Items 1 and 1A, the
+dividend and repurchase passages, Item 6's selected financial data where it is given, the statements of operations and cash flows, the
+balance sheets, and the segment, product and geographic tables); the 8-K of 2019-10-24 recasting the FY2018 10-K (its Exhibit 99.1:
+Items 6, 7, 7A and 8 with Elanco as discontinued operations); the guidance 8-Ks of 2018-12-19, 2019-12-17, 2020-12-15 and 2021-12-15
+(their current-year updates; the next years' guides are current only after the range or superseded before it), and the FY2018 guide of the
+8-K of 2017-12-13 (LL81, already a source); and every other 8-K of 2018-2021 by its item text, its exhibits searched for guidance and
+per-share sentences. **Not read:** the 10-Qs, the 10-Ks beyond those passages, the proxy statements, the XBRL files, the Elanco exchange
+offer documents and the investor presentations (not filed). The Q1 2018 release (Exhibit 99.1 of the 8-K of 2018-04-24) is slide images
+with a hidden text layer; its rows were taken from that layer (tags dropped, figures split into cells), which states every figure the print
+needs. The generator reads each figure from its own row by label inside the operating results table (it asserts each release's growth
+sentence against its results, U.S. plus outside-U.S. revenue against revenue for the quarter and the Q4 year, each reconciliation's GAAP EPS
+against the results, each 10-K's geographic total against its revenue, Item 6's capital expenditures against the cash flow statement, the
+product classes against revenue, each Q4 release's year against the vintage that follows, and every earlier year of each 10-K against the
+earlier vintage, which only the Elanco recast restates); the 458 strings (table rows as runs of figures without their percent cells) were
+checked with `verbatim.py` against their own filings (458/458). The source ids are `LL82`-`LL106`.
+
+**Same-session disclosure** (the CB 2010-2013, JPM 2018-2021 and SPGI 2018-2021 precedent): this batch was decided on 2026-11-22 in the
+session that built and scored 2014-2017 and wrote its findings (`staging/retrospective/LLY/FINDINGS.md`: that a ten-year own-history window
+describes the last earnings regime, and that LLY changed regime twice). No 2018-2021 outcome was computed before the build, checks, README
+section and firewall result were committed and pushed, and no decision below changes a rule, threshold, signal or window: every call
+follows a written rule or an earlier batch's encoding, and each that could move a class is tested at the end.
+
+Decided before any 2018-2021 outcome was computed:
+
+- **Release timing.** The earnings 8-Ks were accepted before the open (06:29-08:32 ET) except Q4 2018's (09:48 ET), Q1 2019's (13:31 ET)
+  and Q2 2019's (11:27 ET), in the session; each print's week is dated the next trading day, except Q4 2020's, released on a Friday
+  (2021-01-29, 06:32 ET), whose week has no later trading day, so the week's date is the release day (the Q4 2014 encoding). The 10-Ks:
+  FY2017 2018-02-20 17:27 ET, after the close, dated 2018-02-21; FY2018 2019-02-19 10:41 ET, FY2019 2020-02-19 12:33 ET and FY2020
+  2021-02-17 10:59 ET, in the session. The recast 8-K: 2019-10-24 10:00 ET, the day after the Q3 2019 print's date. The guidance 8-Ks:
+  2018-12-19 13:04 ET (in the session), 2019-12-17 08:46, 2020-12-15 07:27 and 2021-12-15 07:05 ET (before the open).
+- **FY2017 is excluded, a distorted latest year** (the FY2008 encoding: the NKE FY2018, XOM FY2020 and BMY FY2015 rule): reported
+  $(0.19) a share is a loss (the estimated $1.914 billion U.S. tax reform charge in the year's income taxes), the items the Q4 2017 release
+  lists ($1.81 for tax reform, $1.23 for asset impairment, restructuring and other special charges) stand against its $4.28 non-GAAP figure,
+  a loss has no P/E, and no figure excluding only one-offs is published (the non-GAAP EPS also removes $.97 of acquired in-process research
+  and development and $.44 of amortization of intangible assets, which recur). From the Q4 2017 print (2018-01-31) the year is reported but
+  out of the EPS history (`excluded_note` on the print, `eps_excluded` in every vintage of the range), its own days leave the P/E window
+  ("ex-FY17"), and FY2018 is current. The recast and later 10-Ks give 2017 from continuing operations at $(0.08): still a loss, still out.
+  FY2008 leaves the ten-year history with the FY2018 10-K (2009-2018) and its days the window at the end of 2018 ("10-yr ex-FY17" from
+  2019).
+- **History: five vintages, the ten fiscal years to the latest one,** each year from the latest filing that reports it: the FY2017 10-K
+  (2008-2017, Item 6 for 2013-2017), the FY2018 10-K (2009-2018, FY2018 $3.13 with Elanco Animal Health consolidated), **the 8-K of
+  2019-10-24 as a vintage of its own** (the MSFT, CAT, BMY and SPGI recast rule: its recast Item 6 gives 2014-2018 from continuing operations
+  without Elanco, $2.01, $2.36, $2.57, $(0.08) and $3.05, and revenue $17.553B to $21.493B; 2009-2013 keep their animal health, a seam as
+  published), the FY2019 10-K (2010-2019, FY2019 $4.96 from continuing operations; 2015-2018 equal the recast) and the FY2020 10-K (2011-2020,
+  FY2020 $6.79; Item 6 reserved, so 2018-2020 come from its statements of operations and earlier years from the latest filing that reported
+  them, the ACN FY21 rule). EPS is from continuing operations wherever a filing reports it (the Elanco disposition's $3.68 billion gain is in
+  discontinued operations). The recast's seam makes 2013's $4.32 (with animal health) to 2014's $2.01 (without it) the decade's worst
+  one-year change, -53.5%, from 2019-10-24 (BEAR).
+- **The distorted-year test keeps every other new year,** against each Q4 release's figure without its listed items (shown only): 2018 $3.13
+  against the non-GAAP $5.55 (56%; $3.05 against $5.44 from continuing operations in the Q4 2019 release); 2019 $4.96 against $6.04; 2020
+  $6.79 against $7.93. The recast 2014-2016 ($2.01, $2.36, $2.57) stand against the non-GAAP figures with Elanco ($2.78, $3.43, $3.52; no
+  filing publishes them without it). GAAP stands: the non-GAAP figures still exclude acquired in-process research and development and the
+  amortization of intangible assets, which recur (and from 2021 gains and losses on equity investments).
+- **Guides: reported EPS and revenue in numbers every year,** each field from the latest guide that states it:
+  - current-FY EPS, the reported range's midpoint: FY2017 $1.61 ($1.56-1.66, the 8-K of 2017-12-13) on the four dates of January 2018;
+    FY2018 $4.44 ($4.39-4.49, Q4 2017, the tax reform benefit in; the 8-K of 2017-12-13's $4.24-4.34 is superseded before the year is
+    current), $4.57 ($4.52-4.62, Q1 2018), $3.24 ($3.19-3.29, Q2, the ARMO in-process research and development in), $3.065 ($3.04-3.09,
+    Q3) and $2.825 ($2.80-2.85, the 8-K of 2018-12-19, 2018-12-21 to 2019-02-01); FY2019 $4.62 ($4.57-4.67, Q4 2018, Elanco consolidated,
+    the Loxo charges in; the 8-K of 2018-12-19's $5.52-5.62 is superseded before the year is current), then from the Q1 2019 release the
+    **EPS from continuing operations** range, the history's measure (the SPGI and LMT continuing-operations reading): $4.69 ($4.64-4.74;
+    "Earnings per share (reported) | $8.57 to $8.67" with the Elanco gain in the note), $4.70 ($4.65-4.75, Q2), $4.71 ($4.66-4.76, Q3) and
+    $4.69 ($4.64-4.74, the 8-K of 2019-12-17); FY2020 $6.23 ($6.18-6.28, Q4 2019, the Dermira charges in; the 8-K of 2019-12-17's
+    $6.38-6.48 is superseded before the year is current), $6.30 ($6.20-6.40, Q1 2020), $6.58 ($6.48-6.68, Q2), $6.30 ($6.20-6.40, Q3) and
+    $6.38 ($6.28-6.48, the 8-K of 2020-12-15); FY2021 $7.425 ($7.10-7.75, Q4 2020; the 8-K of 2020-12-15's $7.25-7.90 is superseded the same
+    way), $7.13 ($7.03-7.23, Q1 2021), $6.83 ($6.73-6.93, Q2), $6.43 ($6.38-6.48, Q3) and $6.205 ($6.18-6.23, the 8-K of 2021-12-15,
+    2021-12-17 to 2021-12-31). The GAAP ranges are used as published, one-offs in (the BMY rule); the non-GAAP ranges are shown only, each
+    with its reason (`adj_why`);
+  - BASE growth and the growth factor: the dollar revenue ranges, read as growth on the last full year in the history (`rev_guide_usd_b`):
+    FY2018 $23.0-23.5B to $24.3-24.5B (+0.6% to +7.1% on FY17's $22.871B); FY2019 $25.1-25.6B (Q4 2018, with Elanco: +2.2% to +4.3% on
+    FY18's $24.556B), then $22.0-22.5B without Elanco from the Q1 2019 release, read against FY2018 **with** Elanco until the recast restates
+    the base (the LOW 2011 and PFE rule: no release states a 2018 revenue without Elanco before the 8-K of 2019-10-24), so -10.4% to -8.4%
+    on the 25 dates 2019-05-01 to 2019-10-18 and +2.4% to +4.7% on FY18's recast $21.493B from 2019-10-24 (tested below); FY2020
+    $23.7-24.2B to $24.2-24.7B (+6.2% to +10.7% on FY19's $22.320B); FY2021 $26.5-28.0B to $28.0-28.3B (+8.0% to +15.3% on FY20's $24.540B),
+    the COVID-19 antibodies in as published;
+  - no margin step: the gross-margin and operating-margin percentages are words or not a pre-tax margin (the AAPL rule), and the 2020
+    targets ("at least 6 percent compound annual revenue growth from 2015 to 2020", "operating margin as a percent of revenue to be at least
+    30 percent in 2020") are multi-year bounds and add nothing (the LOW, XOM, CAT and BMY rule).
+- **Dividends,** each from the 10-K that first states the rate (no release of the range states one): $0.5625 (FY2017 10-K, 2018-02-21; the
+  8-K of 2017-12-13's "8 percent increase" names no rate), $0.645 (FY2018 10-K), $0.74 (FY2019 10-K) and $0.85 (FY2020 10-K).
+- **Repurchases** are text only: Q2 2018's completion of the $5 billion program and the new $8 billion one, and each 10-K's repurchase
+  sentence.
+- **Signals,** from each release's reported operating results against the year-ago quarter as the same release shows it, as before: the
+  2018 quarters with Elanco, the quarters from Q1 2019 from continuing operations against year-ago quarters the release recasts the same way.
+  The U.S. and outside-U.S. growth is from each release's reported-results section ("was essentially flat at" reads as 0, the SPGI rule).
+  Growth ex-FX (display only: BASE takes the dollar guides throughout) is the release's growth less its stated exchange-rate points; Q3
+  2019's release states the growth excluding exchange rates itself (4%), and Q4 2019's and Q1 2020's state no exchange-rate effect (read as
+  0). The pre-tax margins carry the one-offs as published (Q2 2018's ARMO charge, a loss quarter; Q2 2021's COVID-19 antibody inventory
+  charge in cost of sales).
+- **Durability: DURABLE, risk 2, unchanged.** The FY2017 and FY2018 10-Ks keep "two business segments—human pharmaceutical products and
+  animal health products" and the FY2019 and FY2020 10-Ks "a single business segment—human pharmaceutical products"; the risk-factor
+  headings keep the dependence on "products with intellectual property protection" ("in the next several years", then "in the next few
+  years" in the FY2020 10-K), "Our long-term success depends on intellectual property protection" and the competition from "lower-cost
+  generic and biosimilar manufacturers". The recast vintage keeps the FY2018 10-K's "why" (the 8-K recasts Items 6-8 only). No theme is live
+  for a pharmaceutical company through 2021: EV and CRYPTO (from 2020) are scoped to other industries, GENAI is not live before 2022-11-30,
+  and GLP1 (from 2023-08-08) is scoped to snacks, beverages and devices; the COVID-19 antibodies are a product. The watch list stays empty.
+- **Segment bridge** (display only): the product classes of each filing (Endocrinology, Oncology, Cardiovascular, Neuroscience, Immunology,
+  other human pharmaceutical products and Animal health products in the FY2017 and FY2018 10-Ks; without animal health in the recast; then
+  Endocrinology or Diabetes, Oncology, Immunology, Neuroscience and Other), U.S. plus outside the U.S. where the table splits them.
+- **Adds nothing:** the Elanco IPO and exchange-offer 8-Ks (2018-09-26, 2019-02-11 and the 8-K of 2019-03-15 with its pro forma statements:
+  not guides, the UNP and AVGO rule), the Loxo Oncology agreement (2019-01-07: "Lilly will provide an update to its 2019 financial
+  guidance", words), the debt offerings (2019-02-21, 2019-11-06, 2020-04-28, 2020-08-21, 2021-09-10), the Branchburg subpoena (2021-05-27), the meeting,
+  officer, director and bylaw 8-Ks. None changes a guided number.
+
+Controls and checks (before any outcome):
+- **`retro_tool run` passes on all 209 dates,** with no warning.
+- **Controls** (on the corrected sheet): altering one value of each new print (its U.S. growth, its quarter EPS, each Q4 print's full-year
+  revenue and EPS or excluded-year note), each new vintage (its last year's EPS, its dividend) and each new guide (its reported range and its
+  dollar revenue range), rerun over the 209 dates in process, changes no model dated before its publication: 97 controls, of which 88 change
+  the first weekly date on or after it and 9 are inert: the next years' ranges of the guidance 8-Ks of 2017-12-13 (for FY2018), 2018-12-19,
+  2019-12-17 and 2020-12-15, each restated by the Q4 release before its year is current, and the Q4 2017 print's FY2017 note, which a model
+  prints only when no guide stands. Every one of them altered at once moves none of the 523 earlier models.
+- **Leak scan** (all 732 models on the first draft; the 209 of 2018-2021 again on the corrected sheet: 1 hit, the same 110): 9 hits in
+  674,553 (model, later token) pairs, none a leak: the two coincidences of the earlier
+  batches (2.465 in 7 models of 2008; 34.44 in one of 2009) and one new one, 110, the close of $110.48 on 2018-10-12 against Q1 2019's
+  +110.0bp gross-margin change. 422 more are a later fact's text that is part of an earlier fact's own text (the 10-Ks' repeated risk
+  sentences, "Neuroscience", "relatively flat", "essentially flat", a growth note, a document name and an adjusted-EPS reason). As a
+  positive control, the latest print's own notes appear in each of the 732 models.
+- **Term check** (on the corrected models): "tax reform" first appears on 2018-02-01 (the Q4 2017 print), "ARMO" on 2018-07-25, "Loxo" on
+  2019-02-07, "Elanco discontinued" and "with discontinued operations" on 2019-05-01, "8-K of 2019-10-24" on 2019-10-24, "Dermira" and
+  "Q4 2019 release" on 2020-01-31, "bamlanivimab" on 2020-12-18 and "COVID-19 antibodies" on 2021-04-28, each after its filing; no product named only in later filings (Mounjaro, Zepbound and the rest of the
+  anachronism list) appears in any model.
+- **Two first-draft leaks, found and corrected before any outcome** (commit c09f6e0, after the first build was pushed): the FY2018 10-K
+  vintage's FY2017 note called the year "from continuing operations ... (Elanco discontinued)", words no filing used before the March 2019
+  disposition, and the recast vintage of 2019-10-24 cited "Q4 2019 release" (published 2020-01-30) for FY2018's non-GAAP figure. The term
+  check caught the first ("discontinued" in a model of 2019-02-22) and the leak scan's list of later texts inside earlier facts the second.
+  Both notes now describe only what was public on their dates; 52 models (2019-02-22 to 2020-02-14) changed in text only, no class or tier.
+- **Self-text scan:** every capitalized word, dollar figure and year in each of the 70 new facts' own text (the FY2018 guide citing LL81
+  included) appears in a Lilly filing accepted by the fact's date or in an earlier fact public by then (0 misses). New for this batch, after
+  the leaks above: every filing a fact's text names ("Q4 2019 release", "FY2018 10-K", "8-K of 2019-10-24") must be published by the fact's
+  own date: 0 late references over all 265 facts of the sheet (the first draft's recast note is flagged when the check runs on it). The
+  scan does not read meaning: the "Elanco discontinued" words were each in earlier filings, so a check by date on terms like it stays the
+  term check's job.
+- **Regression:** the 523 models of 2008-2017 rebuild byte for byte; no code changes.
+
+Seen in the build (method behaviour, not tuned):
+The window turns over in this batch. To May 2019 its median is still the 2009-2013 regime's (12.0-13.3x); as 2009's days (about
+7x) leave and 2014-2018's (17-43x) take their place, the median rises to 23.2x by July 2019 and 23-27x after, and the class follows the
+reported guide against it:
+- **RICH on 168 dates, FAIR on 39, CHEAP on 2:** RICH on all 104 of 2018-2019, then 2020 FAIR on 32, CHEAP on 2 (2020-02-28 and
+  2020-03-20, $126.13 and $122.40 in the March 2020 sell-off) and RICH on 19, and 2021 RICH on 45 and FAIR on 7. Tiers: AVOID 151,
+  WATCHLIST 56, ACCUMULATE 2. Robustness 8 of 8 on 123 dates, 6-7 on 66, 4-5 on 10.
+- **2018:** FY17E $1.61 on the four January dates (53-54x, the 98th-100th percentile); from the Q4 2017 print FY18E $4.44 and $4.57:
+  $74.76-89.71 is 16.8-19.6x against a 12.0-12.4x median (the 61st-65th percentile, RICH and WATCHLIST); from the Q2 2018 print the ARMO
+  charge puts FY18E at $3.24, then $3.065 and $2.825: $96.43-120.89 is 29.8-42.8x (the 81st-100th percentile). The EPP floor is 16x
+  ($26) in January, 11x ($31-50) from the Q4 2017 print, and 16x again from 2019-01-04.
+- **2019:** FY19E $4.62 (with Elanco), then $4.69-4.71 from continuing operations: $106.79-139.58 is 22.8-29.8x, the 47th-73rd percentile
+  once the median has risen; BASE -8.7%/yr on the 25 dates whose Elanco-free revenue guide meets FY2018 with Elanco, +4.2% after the
+  recast. The floor is 16x ($74-75), then 23x ($108) at the end of the year.
+- **2020:** FY20E $6.23-6.58: $122.40-206.14 is 19.6-32.3x against a 23.3-24.6x median (the 36th-85th percentile), FAIR on most dates
+  from the Q4 2019 print to October, RICH from late in the year; BASE +8.9% to +11.4%/yr. The floor is 19-22x ($125-140).
+- **2021:** FY21E $7.425 to $6.205: $180.55-276.22 is 24.8-44.5x against a 23.8-27.1x median (the 51st-100th percentile); BASE +12.7%
+  to +16.9%/yr; the floor 21-24x ($137-157).
+- **BEAR** is 2014's fall on every date (-48.4%/yr, $4.32 to $2.23, then -53.5% from the recast's seam on 2019-10-24). **XBULL** is the
+  2007-2009 run across the excluded FY2008 (+20.6%/yr) to the FY2017 10-K, which drops 2007; then two-year runs of 7.6-13.1% (2014-2016,
+  2016-2018), and from the Q4 2020 print 2018-2020's +49.2%. Ratio B is infinite (the price above the BULL case) on 34 dates.
+
+How far each call moves the classes (the 209 dates rebuilt with one encoding changed and classified offline with `retro_tool`'s own
+classifier; no outcome consulted):
+- the company's non-GAAP guide midpoints as current-year EPS (history unchanged): 44 classes, 40 RICH to FAIR (2018-04-25 to
+  2021-06-04) and 4 FAIR to CHEAP (2020); 92 tiers;
+- the guidance 8-Ks' updates of the current year ignored (2018-12-19, 2019-12-17, 2020-12-15, 2021-12-15): no class, no tier;
+- the dollar revenue guides ignored (BASE from the latest quarter's growth ex-FX): 40 classes (16 RICH to FAIR, 16 FAIR to RICH, 8 FAIR to
+  CHEAP, 2020-04-24 to 2021-05-07); 51 tiers;
+- FY2017 kept at the company's $4.28 (instead of excluded): 10 classes (5 RICH to FAIR in 2018, 5 FAIR to RICH in 2020); 5 tiers;
+- the FY2019 guides with discontinued operations ($8.57-8.69, the Elanco gain in) instead of continuing operations: 39 classes, 33 RICH
+  to CHEAP (2019-05-01 to 2019-12-13) and 6 RICH to FAIR; 39 tiers to ACCUMULATE or BUY; **the largest EPS call of the batch**;
+- the Elanco recast in force from the Q1 2019 release instead of the 8-K of 2019-10-24 (BASE +2.4% to +4.7% instead of -10.4% to -8.4% on
+  the 25 dates): no class, no tier;
+- every data signal at its BEAR value: 41 classes, FAIR and CHEAP to RICH (2020-01-31 to 2021-04-28); at its XBULL value: 28 classes,
+  27 RICH to FAIR (2018 and 2020) and 1 FAIR to CHEAP;
+- a five-year P/E window instead of ten (no rule says so; it shows what the call rests on): 72 classes, 34 RICH to CHEAP, 29 FAIR to CHEAP
+  and 9 RICH to FAIR (2018-02-01 to 2020-12-04); 54 tiers.
+The 2018-2019 RICH calls rest on a window still anchored on the 2009-2013 multiples (a five-year window makes 34 of them CHEAP); the 2020
+FAIR calls sit near the risen median and move with the signals, the revenue reading or the non-GAAP guide; the FY2019 continuing-operations
+reading keeps May-December 2019 RICH.
+
+Judgement calls that could carry hindsight:
+- the same-session batch (above): the 2014-2017 findings were written before these encodings were chosen;
+- FY2017 excluded as a loss (tested above), and the GAAP guides used as published with their one-offs in;
+- the FY2019 guides read from continuing operations once Elanco is discontinued, and the Elanco-free revenue guide read against FY2018 with
+  Elanco until the recast (both tested above);
+- the recast 8-K as a vintage of its own, whose seam sets BEAR at -53.5% from 2019-10-24;
+- the signals and DURABLE, as in 2008-2017, by a builder who knows how Lilly's launches and its later obesity medicines turned out;
+- the parts of the filings listed above as not read.
+
+The hindsight results for 2018-2021 will be in `staging/retrospective/LLY/FINDINGS.md` (computed after the firewall result is pushed):
+hypotheses, never inputs.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
