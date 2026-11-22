@@ -237,7 +237,7 @@
    "id": "LL69",
    "published": "2016-01-05",
    "filed": "2016-01-05 06:46 ET, before the open",
-   "title": "Eli Lilly 8-K of 2016-01-05 (Item 2.02: 2016 financial guidance and 2015 update, Exhibit 99.1)",
+   "title": "Eli Lilly 8-K of 2016-01-05 (Item 2.02: FY2016 financial guidance and FY2015 update, Exhibit 99.1)",
    "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947816000232/a8-kjan2016exhibit991.htm",
    "supports": "FY2015 guide: reported EPS $2.28-2.33; FY2016 guide: reported EPS $2.92-3.02, revenue $20.2-20.7 billion"
   },
@@ -245,7 +245,7 @@
    "id": "LL75",
    "published": "2016-12-16",
    "filed": "2016-12-15 16:28 ET, after the close",
-   "title": "Eli Lilly 8-K of 2016-12-15 (Item 2.02: 2017 financial guidance and 2016 update, Exhibit 99.1)",
+   "title": "Eli Lilly 8-K of 2016-12-15 (Item 2.02: FY2017 financial guidance and FY2016 update, Exhibit 99.1)",
    "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947816000479/a2017financialguidancedece.htm",
    "supports": "FY2016 guide: reported EPS $2.57-2.67, revenue $20.8-21.2 billion; FY2017 guide: reported EPS $3.51-3.61, revenue $21.8-22.3 billion"
   },
@@ -257,8 +257,6 @@
    "supports": "close $73.31 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr ex-FY08 P/E distribution"
   }
  ],
- "warnings": [
-  "calendar year(s) 2017 after 2016 outside FY labels — make sure they are forecasts"
- ],
+ "warnings": [],
  "generated": "2026-11-22"
 }
