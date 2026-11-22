@@ -24516,6 +24516,11 @@ Controls and checks (before any outcome):
   accepted by the fact's date or in an earlier fact public by then (0 misses; the scan accepts a table's figure for the same figure with a
   dollar sign).
 - **Regression:** the 314 models of 2008-2013 rebuild byte for byte; no code changes.
+- **Firewall** (run after the build, checks and README section were committed, before any 2014-2017 outcome): it passes at all 27
+  cutoffs above (2014-01-01, every print, 10-K and guidance 8-K date of the range, and 2018-01-01: 314 to 523 dates each), 0 files
+  changed and no planted text, with the 2010-2013 batch's plants (no new field needs one). As positive controls, a planted print dated
+  2016-05-31 with its own source reaches 2016-06-03 (its text in the model) and not 2016-05-27 (byte-identical); the same print citing
+  a source published after AS_OF (the Q2 2016 release) stops at the builder's source check.
 
 Seen in the build (method behaviour, not tuned):
 The window's median stays at 12.7x on every date from the Q4 2013 print (12.5-12.6x before it): the 2009-2013 regime, at calendar-year
