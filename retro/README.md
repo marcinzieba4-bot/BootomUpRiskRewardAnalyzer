@@ -24777,7 +24777,7 @@ Judgement calls that could carry hindsight:
 - the signals and DURABLE, as in 2008-2017, by a builder who knows how Lilly's launches and its later obesity medicines turned out;
 - the parts of the filings listed above as not read.
 
-The hindsight results for 2018-2021 will be in `staging/retrospective/LLY/FINDINGS.md` (computed after the firewall result is pushed):
+The hindsight results for 2018-2021 are in `staging/retrospective/LLY/FINDINGS.md` (computed after the firewall result was pushed):
 hypotheses, never inputs.
 
 ## Categories change with the era

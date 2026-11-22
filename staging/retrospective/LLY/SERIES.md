@@ -527,3 +527,212 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2017-12-15 | $86.54 | - | 2.20 | -2.01 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +46.0% | +23.5pp | +33.8% | ✗ |
 | 2017-12-22 | $85.07 | - | 2.20 | -2.01 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +61.4% | +37.4pp | +36.5% | ✗ |
 | 2017-12-29 | $84.46 | - | 2.20 | -2.01 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +61.4% | +36.4pp | +37.9% | ✗ |
+| 2018-01-05 | $86.57 | - | 2.20 | -2.01 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +57.8% | +36.0pp | +34.9% | ✗ |
+| 2018-01-12 | $86.98 | - | 2.20 | -2.01 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +64.2% | +43.2pp | +34.6% | ✗ |
+| 2018-01-19 | $85.49 | - | 2.20 | -2.01 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +68.9% | +46.7pp | +37.5% | ✗ |
+| 2018-01-26 | $87.08 | - | 2.20 | -2.01 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +65.3% | +46.8pp | +35.5% | ✗ |
+| 2018-02-01 | $82.41 | - | 1.85 | -0.82 | 1.45x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +75.3% | +57.2pp | +43.7% | ✗ |
+| 2018-02-09 | $76.23 | - | 1.85 | -0.72 | 1.18x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +98.4% | +67.3pp | +56.0% | ✗ |
+| 2018-02-16 | $78.97 | - | 1.85 | -0.77 | 1.32x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +85.0% | +57.5pp | +51.2% | ✗ |
+| 2018-02-23 | $78.75 | - | 1.85 | -0.82 | 1.31x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +86.7% | +61.4pp | +52.0% | ✗ |
+| 2018-03-02 | $77.23 | - | 1.85 | -0.79 | 1.25x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +78.5% | +59.6pp | +55.2% | ✗ |
+| 2018-03-09 | $79.61 | - | 1.85 | -0.84 | 1.35x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +76.8% | +74.6pp | +50.8% | ✗ |
+| 2018-03-16 | $80.49 | - | 1.85 | -0.85 | 1.39x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +67.0% | +76.0pp | +49.5% | ✗ |
+| 2018-03-23 | $74.76 | - | 1.85 | -0.74 | 1.15x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +65.9% | +75.3pp | +61.0% | ✗ |
+| 2018-03-29 | $77.37 | - | 1.85 | -0.79 | 1.25x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +79.8% | +79.3pp | +55.5% | ✗ |
+| 2018-04-06 | $76.85 | - | 1.85 | -0.78 | 1.23x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +90.8% | +84.6pp | +57.0% | ✗ |
+| 2018-04-13 | $79.72 | - | 1.85 | -0.84 | 1.35x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +87.4% | +79.3pp | +51.7% | ✗ |
+| 2018-04-20 | $79.06 | - | 1.85 | -0.83 | 1.32x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +105.9% | +96.2pp | +53.8% | ✗ |
+| 2018-04-25 | $81.14 | - | 2.85 | +0.31 | 1.13x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +107.0% | +95.5pp | +50.7% | ✗ |
+| 2018-05-04 | $78.40 | - | 2.85 | +0.37 | 1.04x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +101.9% | +91.2pp | +57.1% | ✗ |
+| 2018-05-11 | $82.45 | - | 2.85 | +0.29 | 1.18x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +98.4% | +87.1pp | +50.3% | ✗ |
+| 2018-05-18 | $82.07 | - | 2.85 | +0.29 | 1.16x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +98.8% | +86.0pp | +52.1% | ✗ |
+| 2018-05-25 | $82.77 | - | 2.85 | +0.28 | 1.19x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +88.9% | +76.3pp | +51.5% | ✗ |
+| 2018-06-01 | $84.85 | - | 2.85 | +0.25 | 1.27x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +85.8% | +70.1pp | +48.6% | ✗ |
+| 2018-06-08 | $86.08 | - | 2.85 | +0.23 | 1.31x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +79.4% | +59.2pp | +47.2% | ✗ |
+| 2018-06-15 | $86.88 | - | 2.85 | +0.21 | 1.35x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +68.9% | +54.5pp | +46.6% | ✗ |
+| 2018-06-22 | $85.92 | - | 2.85 | +0.23 | 1.31x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +92.8% | +75.7pp | +49.3% | ✗ |
+| 2018-06-29 | $85.33 | - | 2.85 | +0.24 | 1.28x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +96.8% | +80.4pp | +51.5% | ✗ |
+| 2018-07-06 | $87.39 | - | 2.85 | +0.18 | 1.39x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +96.9% | +77.7pp | +48.8% | ✗ |
+| 2018-07-13 | $89.71 | - | 2.85 | +0.14 | 1.50x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +86.5% | +69.9pp | +46.2% | ✗ |
+| 2018-07-20 | $88.47 | - | 2.85 | +0.17 | 1.44x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +94.7% | +74.7pp | +49.5% | ✗ |
+| 2018-07-25 | $96.43 | - | 2.40 | -1.55 | 11.81x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +70.8% | +53.9pp | +38.1% | ✗ |
+| 2018-08-03 | $100.58 | - | 2.40 | -1.55 | 21.17x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +57.1% | +37.2pp | +33.5% | ✗ |
+| 2018-08-10 | $102.25 | - | 2.40 | -1.55 | 34.64x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +54.7% | +32.3pp | +32.1% | ✗ |
+| 2018-08-17 | $105.55 | - | 2.40 | -1.55 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +48.6% | +26.2pp | +28.7% | ✗ |
+| 2018-08-24 | $105.77 | - | 2.40 | -1.55 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +46.4% | +23.3pp | +29.2% | ✗ |
+| 2018-08-31 | $105.65 | - | 2.40 | -1.55 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +44.5% | +19.9pp | +30.0% | ✗ |
+| 2018-09-07 | $107.03 | - | 2.40 | -1.65 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +46.0% | +23.0pp | +28.9% | ✗ |
+| 2018-09-14 | $105.77 | - | 2.40 | -1.55 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +45.9% | +25.8pp | +31.1% | ✗ |
+| 2018-09-21 | $106.33 | - | 2.40 | -1.55 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +47.2% | +31.4pp | +31.2% | ✗ |
+| 2018-09-28 | $107.31 | - | 2.40 | -1.65 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +43.0% | +24.2pp | +30.6% | ✗ |
+| 2018-10-05 | $115.02 | - | 2.40 | -1.65 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +32.1% | +10.2pp | +22.5% | ✗ |
+| 2018-10-12 | $110.48 | - | 2.40 | -1.65 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +44.7% | +12.9pp | +28.4% | ✗ |
+| 2018-10-19 | $111.92 | - | 2.40 | -1.65 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +32.4% | +4.5pp | +27.4% | ✗ |
+| 2018-10-26 | $106.39 | - | 2.40 | -1.55 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +38.2% | +6.1pp | +34.6% | ✗ |
+| 2018-11-02 | $106.75 | - | 2.40 | -1.55 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.3% | +2.8pp | +34.5% | ✗ |
+| 2018-11-07 | $109.72 | - | 2.65 | -1.39 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +35.0% | +6.4pp | +31.3% | ✗ |
+| 2018-11-16 | $113.83 | - | 2.65 | -1.39 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.4% | -8.2pp | +27.2% | ✓ |
+| 2018-11-23 | $112.87 | - | 2.65 | -1.39 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +31.9% | -8.1pp | +28.8% | ✓ |
+| 2018-11-30 | $118.64 | - | 2.65 | -1.39 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +27.4% | -8.0pp | +22.9% | ✓ |
+| 2018-12-07 | $113.58 | - | 2.65 | -1.39 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +34.7% | -9.6pp | +28.8% | ✗ |
+| 2018-12-14 | $111.93 | - | 2.65 | -1.39 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +46.0% | +1.7pp | +31.4% | ✗ |
+| 2018-12-21 | $109.42 | - | 2.65 | -1.39 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +59.3% | +1.8pp | +35.2% | ✗ |
+| 2018-12-28 | $114.20 | - | 2.65 | -1.39 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +50.6% | -4.1pp | +30.0% | ✗ |
+| 2019-01-04 | $114.66 | - | 2.65 | -1.29 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +49.2% | -1.4pp | +30.0% | ✗ |
+| 2019-01-11 | $116.18 | - | 2.65 | -1.29 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +64.8% | +14.2pp | +28.9% | ✗ |
+| 2019-01-18 | $116.59 | - | 2.65 | -1.29 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +68.4% | +23.1pp | +29.1% | ✗ |
+| 2019-01-25 | $114.97 | - | 2.65 | -1.29 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +89.5% | +40.6pp | +31.9% | ✗ |
+| 2019-02-01 | $120.89 | - | 2.65 | -1.29 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +72.6% | +29.1pp | +26.6% | ✗ |
+| 2019-02-07 | $117.50 | - | 2.45 | -0.97 | 3.91x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +76.4% | +28.7pp | +31.0% | ✗ |
+| 2019-02-15 | $122.48 | - | 2.45 | -1.10 | 4.99x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +73.9% | +28.3pp | +26.7% | ✗ |
+| 2019-02-22 | $124.00 | - | 2.45 | -1.14 | 5.18x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +66.5% | +23.8pp | +26.1% | ✗ |
+| 2019-03-01 | $128.84 | - | 2.45 | -1.29 | 6.93x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +64.7% | +21.8pp | +22.4% | ✗ |
+| 2019-03-08 | $126.70 | - | 2.45 | -1.21 | 6.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +67.9% | +24.7pp | +25.6% | ✗ |
+| 2019-03-15 | $123.94 | - | 2.45 | -1.13 | 5.17x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +57.3% | +12.8pp | +29.4% | ✗ |
+| 2019-03-22 | $128.30 | - | 2.45 | -1.26 | 6.68x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +49.3% | +4.7pp | +25.8% | ✗ |
+| 2019-03-29 | $129.76 | - | 2.45 | -1.31 | 7.37x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +48.0% | +3.9pp | +25.3% | ✗ |
+| 2019-04-05 | $126.99 | - | 2.45 | -1.22 | 6.15x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +50.1% | +5.4pp | +28.7% | ✗ |
+| 2019-04-12 | $123.06 | - | 2.45 | -1.09 | 4.93x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +52.4% | +6.6pp | +33.4% | ✗ |
+| 2019-04-18 | $115.20 | - | 2.45 | -0.88 | 3.42x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +69.3% | +21.5pp | +43.0% | ✗ |
+| 2019-04-26 | $119.87 | - | 2.45 | -1.01 | 4.20x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +61.0% | +14.8pp | +38.0% | ✗ |
+| 2019-05-01 | $118.18 | - | 2.00 | -1.54 | 9.15x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +59.5% | +12.6pp | +40.3% | ✗ |
+| 2019-05-10 | $116.22 | - | 2.00 | -1.51 | 7.71x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +72.5% | +23.5pp | +43.4% | ✗ |
+| 2019-05-17 | $116.01 | - | 2.00 | -1.49 | 7.58x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +73.7% | +24.3pp | +44.3% | ✗ |
+| 2019-05-24 | $116.79 | - | 2.00 | -1.52 | 8.08x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +77.2% | +25.0pp | +44.1% | ✗ |
+| 2019-05-31 | $115.94 | - | 2.00 | -1.49 | 7.53x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +77.4% | +20.7pp | +45.8% | ✗ |
+| 2019-06-07 | $118.35 | - | 2.00 | -1.56 | 9.30x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +93.0% | +42.3pp | +43.8% | ✗ |
+| 2019-06-14 | $111.74 | - | 2.00 | -1.40 | 5.57x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +107.7% | +56.7pp | +53.7% | ✗ |
+| 2019-06-21 | $115.49 | - | 2.00 | -1.48 | 7.27x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +98.0% | +51.0pp | +49.8% | ✗ |
+| 2019-06-28 | $110.79 | - | 2.00 | -1.38 | 5.25x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +111.4% | +61.6pp | +57.3% | ✗ |
+| 2019-07-05 | $112.82 | - | 2.00 | -1.36 | 5.98x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +112.6% | +63.5pp | +55.4% | ✗ |
+| 2019-07-12 | $108.29 | - | 2.00 | -1.26 | 4.53x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +123.4% | +74.3pp | +63.2% | ✗ |
+| 2019-07-19 | $106.79 | - | 2.00 | -1.23 | 4.17x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +124.8% | +78.0pp | +66.8% | ✗ |
+| 2019-07-26 | $108.27 | - | 2.00 | -1.26 | 4.52x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +130.1% | +80.4pp | +65.9% | ✗ |
+| 2019-07-31 | $108.95 | - | 2.45 | -0.81 | 4.49x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +129.0% | +77.7pp | +66.1% | ✗ |
+| 2019-08-09 | $113.77 | - | 2.45 | -0.91 | 6.02x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +140.1% | +84.6pp | +61.3% | ✗ |
+| 2019-08-16 | $110.52 | - | 2.45 | -0.83 | 4.91x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +149.8% | +91.2pp | +68.1% | ✗ |
+| 2019-08-23 | $109.51 | - | 2.45 | -0.81 | 4.63x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +150.2% | +89.2pp | +71.8% | ✗ |
+| 2019-08-30 | $112.97 | - | 2.45 | -0.90 | 5.71x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +137.6% | +79.1pp | +68.5% | ✗ |
+| 2019-09-06 | $114.05 | - | 2.45 | -0.92 | 6.14x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +133.0% | +77.1pp | +68.6% | ✗ |
+| 2019-09-13 | $110.89 | - | 2.45 | -0.84 | 5.02x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +120.1% | +68.1pp | +75.0% | ✗ |
+| 2019-09-20 | $116.16 | - | 2.45 | -0.97 | 7.15x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +104.7% | +55.4pp | +68.4% | ✗ |
+| 2019-09-27 | $112.37 | - | 2.45 | -0.88 | 5.49x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +107.0% | +53.3pp | +75.5% | ✗ |
+| 2019-10-04 | $108.20 | - | 2.45 | -0.78 | 4.31x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +113.5% | +64.0pp | +83.8% | ✗ |
+| 2019-10-11 | $108.36 | - | 2.45 | -0.78 | 4.34x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +121.3% | +70.8pp | +85.0% | ✗ |
+| 2019-10-18 | $108.64 | - | 2.45 | -0.79 | 4.41x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +125.6% | +71.8pp | +86.1% | ✗ |
+| 2019-10-24 | $107.84 | - | 2.15 | -0.49 | 2.16x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +131.7% | +77.1pp | +89.2% | ✗ |
+| 2019-11-01 | $112.51 | - | 2.15 | -0.66 | 2.52x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +127.1% | +73.1pp | +83.6% | ✗ |
+| 2019-11-08 | $113.53 | - | 2.15 | -0.72 | 2.61x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +134.9% | +79.4pp | +84.1% | ✗ |
+| 2019-11-15 | $113.19 | - | 2.15 | -0.70 | 2.58x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +133.9% | +80.4pp | +86.7% | ✗ |
+| 2019-11-22 | $116.20 | - | 2.15 | -0.83 | 2.86x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +129.6% | +75.6pp | +83.9% | ✗ |
+| 2019-11-29 | $117.35 | - | 2.15 | -0.87 | 2.98x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +122.6% | +71.1pp | +83.6% | ✗ |
+| 2019-12-06 | $119.64 | - | 2.15 | -0.95 | 3.25x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +111.2% | +61.9pp | +81.8% | ✗ |
+| 2019-12-13 | $121.53 | - | 2.15 | -0.99 | 3.50x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +109.7% | +59.1pp | +80.4% | ✗ |
+| 2019-12-20 | $132.43 | - | 2.15 | -1.32 | 6.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +103.8% | +58.3pp | +67.1% | ✗ |
+| 2019-12-27 | $131.52 | - | 2.15 | -1.28 | 5.75x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +116.5% | +65.2pp | +69.5% | ✗ |
+| 2020-01-03 | $131.77 | - | 2.15 | -1.19 | 5.83x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +111.0% | +59.3pp | +70.6% | ✗ |
+| 2020-01-10 | $138.00 | - | 2.15 | -1.38 | 8.67x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +93.1% | +46.7pp | +64.3% | ✗ |
+| 2020-01-17 | $139.58 | - | 2.15 | -1.42 | 9.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +79.5% | +36.0pp | +63.3% | ✗ |
+| 2020-01-24 | $139.07 | - | 2.15 | -1.41 | 9.41x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +77.5% | +40.2pp | +64.4% | ✗ |
+| 2020-01-31 | $139.64 | - | 2.65 | +0.43 | 1.56x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +80.1% | +39.2pp | +64.1% | ✗ |
+| 2020-02-07 | $146.41 | - | 2.65 | +0.30 | 1.79x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +70.7% | +32.6pp | +57.2% | ✗ |
+| 2020-02-14 | $141.12 | - | 2.65 | +0.40 | 1.60x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +71.0% | +37.6pp | +63.6% | ✗ |
+| 2020-02-21 | $142.04 | - | 2.65 | +0.41 | 1.59x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +73.8% | +40.2pp | +63.0% | ✗ |
+| 2020-02-28 | $126.13 | - | 2.65 | +0.71 | 1.17x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +103.4% | +52.2pp | +84.2% | ✓ |
+| 2020-03-06 | $141.46 | - | 2.65 | +0.43 | 1.57x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +90.5% | +41.4pp | +64.9% | ✗ |
+| 2020-03-13 | $139.37 | - | 2.65 | +0.46 | 1.51x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +95.8% | +35.6pp | +68.2% | ✗ |
+| 2020-03-20 | $122.40 | - | 2.65 | +0.99 | 1.09x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +140.4% | +41.1pp | +93.0% | ✓ |
+| 2020-03-27 | $134.11 | - | 2.65 | +0.56 | 1.36x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +120.4% | +37.3pp | +77.6% | ✗ |
+| 2020-04-03 | $139.66 | - | 2.65 | +0.46 | 1.51x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +114.3% | +27.2pp | +71.9% | ✗ |
+| 2020-04-09 | $145.73 | - | 2.65 | +0.34 | 1.71x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +118.4% | +53.4pp | +66.3% | ✗ |
+| 2020-04-17 | $157.29 | - | 2.65 | +0.10 | 2.18x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +96.1% | +39.4pp | +55.5% | ✗ |
+| 2020-04-24 | $162.93 | - | 3.00 | +0.29 | 2.39x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +75.1% | +20.5pp | +51.3% | ✗ |
+| 2020-05-01 | $153.63 | - | 3.00 | +0.56 | 1.96x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +94.4% | +44.7pp | +61.9% | ✗ |
+| 2020-05-08 | $153.51 | - | 3.00 | +0.57 | 1.95x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +97.7% | +53.2pp | +63.3% | ✗ |
+| 2020-05-15 | $159.23 | - | 3.00 | +0.44 | 2.21x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +87.4% | +43.2pp | +58.6% | ✗ |
+| 2020-05-22 | $151.16 | - | 3.00 | +0.62 | 1.86x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +102.2% | +66.5pp | +68.4% | ✗ |
+| 2020-05-29 | $152.95 | - | 3.00 | +0.59 | 1.92x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +116.0% | +75.8pp | +67.8% | ✗ |
+| 2020-06-05 | $149.21 | - | 3.00 | +0.67 | 1.77x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +106.7% | +74.6pp | +73.2% | ✗ |
+| 2020-06-12 | $143.54 | - | 3.00 | +0.78 | 1.58x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +111.7% | +79.8pp | +81.1% | ✗ |
+| 2020-06-19 | $159.94 | - | 3.00 | +0.43 | 2.22x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +86.2% | +63.9pp | +63.4% | ✗ |
+| 2020-06-26 | $162.83 | - | 3.00 | +0.31 | 2.37x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +104.2% | +70.3pp | +61.4% | ✗ |
+| 2020-07-02 | $163.87 | - | 3.00 | +0.27 | 2.43x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +102.3% | +76.5pp | +61.5% | ✗ |
+| 2020-07-10 | $163.36 | - | 3.00 | +0.29 | 2.40x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +106.5% | +80.5pp | +63.0% | ✗ |
+| 2020-07-17 | $165.96 | - | 3.00 | +0.20 | 2.55x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +103.9% | +80.6pp | +61.5% | ✗ |
+| 2020-07-24 | $159.54 | - | 3.00 | +0.46 | 2.20x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +110.3% | +83.6pp | +69.1% | ✗ |
+| 2020-07-31 | $150.29 | - | 1.80 | -0.42 | 1.60x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +123.9% | +94.2pp | +80.7% | ✗ |
+| 2020-08-07 | $152.93 | - | 1.80 | -0.46 | 1.68x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +101.5% | +74.5pp | +78.3% | ✗ |
+| 2020-08-14 | $150.09 | - | 1.80 | -0.42 | 1.60x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +110.0% | +79.7pp | +82.1% | ✗ |
+| 2020-08-21 | $149.26 | - | 1.80 | -0.39 | 1.57x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +121.0% | +93.2pp | +83.8% | ✗ |
+| 2020-08-28 | $147.34 | - | 1.80 | -0.35 | 1.52x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +119.0% | +100.1pp | +86.9% | ✗ |
+| 2020-09-04 | $150.91 | - | 1.80 | -0.42 | 1.61x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +104.4% | +86.5pp | +83.1% | ✗ |
+| 2020-09-11 | $148.09 | - | 1.80 | -0.37 | 1.53x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +119.3% | +94.1pp | +87.3% | ✗ |
+| 2020-09-18 | $154.17 | - | 1.80 | -0.49 | 1.71x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +104.9% | +84.8pp | +80.9% | ✗ |
+| 2020-09-25 | $150.26 | - | 1.80 | -0.42 | 1.59x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +112.0% | +96.5pp | +86.6% | ✗ |
+| 2020-10-02 | $145.21 | - | 1.80 | -0.30 | 1.45x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +127.6% | +117.0pp | +94.4% | ✗ |
+| 2020-10-09 | $156.88 | - | 1.80 | -0.54 | 1.81x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +112.7% | +104.7pp | +81.1% | ✗ |
+| 2020-10-16 | $146.12 | - | 1.80 | -0.32 | 1.47x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +131.6% | +125.3pp | +95.7% | ✗ |
+| 2020-10-23 | $142.38 | - | 1.80 | -0.25 | 1.37x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +144.3% | +132.6pp | +102.2% | ✗ |
+| 2020-10-28 | $131.31 | - | 2.15 | +0.22 | 1.25x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +179.5% | +156.8pp | +120.7% | ✗ |
+| 2020-11-06 | $142.74 | - | 2.15 | -0.01 | 1.56x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +155.4% | +144.5pp | +104.5% | ✗ |
+| 2020-11-13 | $142.38 | - | 2.15 | -0.01 | 1.55x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +151.9% | +137.3pp | +106.4% | ✗ |
+| 2020-11-20 | $145.49 | - | 2.15 | -0.06 | 1.65x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +153.6% | +138.8pp | +103.3% | ✗ |
+| 2020-11-27 | $147.44 | - | 2.15 | -0.12 | 1.71x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +152.7% | +138.8pp | +101.7% | ✗ |
+| 2020-12-04 | $148.45 | - | 2.15 | -0.13 | 1.75x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +157.4% | +144.2pp | +101.9% | ✗ |
+| 2020-12-11 | $160.04 | - | 2.15 | -0.40 | 2.23x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +130.1% | +119.5pp | +88.9% | ✗ |
+| 2020-12-18 | $171.40 | - | 2.15 | -0.55 | 2.36x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +114.2% | +107.2pp | +77.5% | ✗ |
+| 2020-12-24 | $166.66 | - | 2.15 | -0.37 | 2.14x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +125.1% | +118.1pp | +83.6% | ✗ |
+| 2020-12-31 | $168.84 | - | 2.15 | -0.42 | 2.24x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +121.0% | +115.5pp | +82.0% | ✗ |
+| 2021-01-08 | $166.41 | - | 2.15 | -0.36 | 2.13x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +122.5% | +117.6pp | +85.8% | ✗ |
+| 2021-01-15 | $190.77 | - | 2.15 | -1.15 | 3.74x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +93.4% | +84.1pp | +63.2% | ✗ |
+| 2021-01-22 | $206.14 | - | 2.15 | -1.60 | 5.85x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +71.4% | +64.9pp | +51.8% | ✗ |
+| 2021-01-29 | $207.97 | - | 3.05 | +0.67 | 2.48x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +68.0% | +55.1pp | +51.5% | ✗ |
+| 2021-02-05 | $201.77 | - | 3.05 | +0.74 | 2.22x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +71.7% | +62.2pp | +57.1% | ✗ |
+| 2021-02-12 | $207.29 | - | 3.05 | +0.68 | 2.45x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +69.6% | +62.6pp | +53.9% | ✗ |
+| 2021-02-19 | $200.92 | - | 3.05 | +0.76 | 2.14x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +67.2% | +59.7pp | +59.7% | ✗ |
+| 2021-02-26 | $204.89 | - | 3.05 | +0.72 | 2.29x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +60.7% | +53.3pp | +57.3% | ✗ |
+| 2021-03-05 | $206.92 | - | 3.05 | +0.70 | 2.37x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +57.6% | +49.1pp | +56.3% | ✗ |
+| 2021-03-12 | $208.08 | - | 3.05 | +0.69 | 2.42x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +55.0% | +54.1pp | +55.9% | ✗ |
+| 2021-03-19 | $184.29 | - | 3.05 | +0.99 | 1.63x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +82.7% | +79.5pp | +76.6% | ✗ |
+| 2021-03-26 | $185.31 | - | 3.05 | +0.98 | 1.66x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +85.5% | +82.5pp | +76.1% | ✗ |
+| 2021-04-01 | $185.24 | - | 3.05 | +0.98 | 1.64x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +89.5% | +84.2pp | +76.7% | ✗ |
+| 2021-04-09 | $184.49 | - | 3.05 | +0.99 | 1.62x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +103.7% | +101.3pp | +78.0% | ✗ |
+| 2021-04-16 | $189.25 | - | 3.05 | +0.93 | 1.75x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +102.0% | +100.2pp | +74.2% | ✗ |
+| 2021-04-23 | $188.72 | - | 3.05 | +0.94 | 1.74x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +108.2% | +106.3pp | +75.5% | ✗ |
+| 2021-04-28 | $180.55 | - | 2.55 | +0.44 | 1.79x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +123.5% | +120.9pp | +84.5% | ✗ |
+| 2021-05-07 | $195.42 | - | 2.55 | +0.24 | 2.33x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +122.8% | +122.2pp | +71.8% | ✗ |
+| 2021-05-14 | $196.21 | - | 2.55 | +0.22 | 2.36x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +125.4% | +123.7pp | +72.6% | ✗ |
+| 2021-05-21 | $199.88 | - | 2.55 | +0.18 | 2.54x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +125.3% | +121.4pp | +70.8% | ✗ |
+| 2021-05-28 | $199.74 | - | 2.55 | +0.18 | 2.53x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +117.1% | +114.2pp | +72.1% | ✗ |
+| 2021-06-04 | $202.02 | - | 2.55 | +0.15 | 2.64x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +122.9% | +118.7pp | +71.2% | ✗ |
+| 2021-06-11 | $224.09 | - | 2.55 | -0.30 | 4.23x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +102.6% | +98.4pp | +55.5% | ✗ |
+| 2021-06-18 | $218.55 | - | 2.55 | -0.13 | 3.70x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +108.5% | +99.5pp | +60.9% | ✗ |
+| 2021-06-25 | $230.22 | - | 2.55 | -0.35 | 4.87x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +102.7% | +98.2pp | +53.8% | ✗ |
+| 2021-07-02 | $233.96 | - | 2.55 | -0.38 | 5.42x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +103.8% | +98.7pp | +52.5% | ✗ |
+| 2021-07-09 | $234.99 | - | 2.55 | -0.39 | 5.45x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +95.7% | +92.2pp | +52.7% | ✗ |
+| 2021-07-16 | $232.46 | - | 2.55 | -0.37 | 5.06x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +96.7% | +89.7pp | +55.4% | ✗ |
+| 2021-07-23 | $244.15 | - | 2.55 | -0.46 | 7.36x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +92.5% | +86.8pp | +49.0% | ✗ |
+| 2021-07-30 | $243.50 | - | 2.55 | -0.45 | 6.94x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +91.5% | +84.5pp | +50.5% | ✗ |
+| 2021-08-04 | $262.47 | - | 2.75 | -0.44 | 160.44x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +74.3% | +69.6pp | +40.5% | ✗ |
+| 2021-08-13 | $264.21 | - | 2.75 | -0.45 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +102.6% | +99.9pp | +41.3% | ✗ |
+| 2021-08-20 | $270.91 | - | 2.75 | -0.48 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +104.7% | +103.4pp | +39.5% | ✗ |
+| 2021-08-27 | $259.75 | - | 2.75 | -0.42 | 46.24x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +116.3% | +115.8pp | +47.2% | ✗ |
+| 2021-09-03 | $259.53 | - | 2.75 | -0.41 | 44.34x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +117.8% | +115.5pp | +49.3% | ✗ |
+| 2021-09-10 | $239.50 | - | 2.75 | -0.28 | 8.40x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +148.3% | +145.4pp | +63.5% | ✗ |
+| 2021-09-17 | $230.10 | - | 2.75 | -0.21 | 5.94x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +153.7% | +150.4pp | +72.6% | ✗ |
+| 2021-09-24 | $231.68 | - | 2.75 | -0.22 | 6.08x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +141.2% | +141.3pp | +73.7% | ✗ |
+| 2021-10-01 | $229.59 | - | 2.75 | -0.20 | 5.68x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +137.5% | +136.1pp | +77.2% | ✗ |
+| 2021-10-08 | $233.94 | - | 2.75 | -0.23 | 6.37x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +145.1% | +144.1pp | +75.7% | ✗ |
+| 2021-10-15 | $237.88 | - | 2.75 | -0.26 | 7.33x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +159.5% | +159.9pp | +75.1% | ✗ |
+| 2021-10-22 | $243.75 | - | 2.75 | -0.30 | 9.35x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +143.2% | +147.4pp | +73.0% | ✗ |
+| 2021-10-27 | $250.17 | - | 2.85 | -0.31 | 23.82x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +127.2% | +133.9pp | +70.3% | ✗ |
+| 2021-11-05 | $265.00 | - | 2.85 | -0.40 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +117.3% | +121.9pp | +62.4% | ✗ |
+| 2021-11-12 | $259.65 | - | 2.85 | -0.36 | 696.14x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +133.0% | +136.0pp | +67.6% | ✗ |
+| 2021-11-19 | $260.70 | - | 2.85 | -0.37 | 815.67x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +130.2% | +131.4pp | +68.8% | ✗ |
+| 2021-11-26 | $260.37 | - | 2.85 | -0.36 | 387.89x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +134.1% | +132.1pp | +70.4% | ✗ |
+| 2021-12-03 | $245.58 | - | 2.85 | -0.27 | 14.89x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +141.3% | +137.2pp | +82.5% | ✗ |
+| 2021-12-10 | $244.14 | - | 2.85 | -0.25 | 12.77x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +148.4% | +148.0pp | +85.4% | ✗ |
+| 2021-12-17 | $267.42 | - | 2.85 | -0.41 | 433.48x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +117.1% | +112.2pp | +70.9% | ✗ |
+| 2021-12-23 | $273.10 | - | 2.85 | -0.55 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +111.9% | +108.5pp | +68.9% | ✗ |
+| 2021-12-31 | $276.22 | - | 2.85 | -0.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +114.1% | +111.3pp | +68.2% | ✗ |
