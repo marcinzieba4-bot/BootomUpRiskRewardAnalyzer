@@ -23,7 +23,7 @@ touching either directory.
   outcomes or findings enters another's models. UNP (2008-2026 so far), LOW (2008-2026 so far), AAPL (2008-2026 so far),
   NKE (2008-2026 so far), AVGO (from its 2009-08-06 listing to 2026-10-30 so far), PEP (2008 to 2026-10-30 so far), MSFT
   (2008 to 2026-10-30 so far), XOM (2008 to 2026-10-30 so far), SHW (2008 to 2026-11-06 so far), WMT (2008 to 2026-11-06 so far), RCL (2008 to 2026-11-06 so far), MAR (2008 to 2026-11-03 so far), BKR (2008 to 2017-06-30, then 2019-02-01 to 2026-11-06 so far), PFE (2008 to 2026-11-04 so far), CMCSA (2008 to 2026-11-06 so far), CAT (2008 to 2026-11-06 so far), BMY (2008 to 2026-11-06 so far), NVDA (2008 to 2026-11-06 so far), F (2008-01-04 to 2026-11-06 so far; 2022-01-07 onward was built first at the owner's request, and dates before 2022 are an early era with its
-  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far), SPGI (2008-01-04 to 2026-11-20 so far), CB (2008-01-04 to 2026-11-20 so far) and LLY (2008-01-04 to 2013-12-31 so far) sit in `staging/retrospective/` until the owner adds
+  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far), SPGI (2008-01-04 to 2026-11-20 so far), CB (2008-01-04 to 2026-11-20 so far) and LLY (2008-01-04 to 2017-12-29 so far) sit in `staging/retrospective/` until the owner adds
   them to the archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM", "SHW", "WMT", "RCL", "MAR", "BKR", "PFE", "CMCSA", "CAT",
   "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG", "JPM", "V", "SPGI", "CB", "LLY"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py`, `mu_signal_model.py`, `v_signal_model.py`, `spgi_signal_model.py` and `lly_signal_model.py` (other branches) files
   and today's profiles in `data/business_profiles.json` (NVDA's, SO's, V's, SPGI's, CB's and LLY's included) are 2026 analyses: never inputs to a retrospective. AVGO did not trade
@@ -302,5 +302,16 @@ touching either directory.
   release states the U.S. split; dividends $0.49 from the 10-Ks, repurchases text only; DURABLE, no live theme; CHEAP and BUY on all 209
   dates, which rest on the ten-year window (a five-year one makes 106 dates from 2011-12-30 RICH); decided in the session that scored
   2008-2009, disclosed (retro/README.md, "LLY 2010-2013").
+  From 2014: the FY2013-FY2016 vintages are GAAP every year ($4.32, $2.23, $2.26, $2.58; each over half the non-GAAP figure, which also
+  removes recurring in-process research and development and, from 2015, amortization), FY2008 still excluded; the reported EPS ranges are
+  used as published, one-offs in, the guidance 8-Ks' updates of the current year included (FY2014 $2.15-2.23 from 2015-01-07, FY2015
+  $2.28-2.33, FY2016 $2.57-2.67, FY2017 $1.56-1.66), so FY17E falls to $1.78 and $1.61 against a non-GAAP $4.15-4.25 (the CoLucid and
+  streamlining charges); revenue is guided in dollars every year, read as growth on the last full year (FY2014 -16.9% to -14.3% after the
+  Cymbalta and Evista U.S. expiries); Novartis Animal Health (2015-01-01) in the figures as published; a Friday release (Q4 2014) dates its
+  own week; the dividend rates $0.50 and $0.51 from the Q4 2014 and Q4 2015 releases that first state them (LLY's first `dividends`
+  facts), $0.52 from the FY2016 10-K; no builder change; DURABLE, no live theme; CHEAP and BUY on the 4 dates of January 2014 (FY13E),
+  RICH and AVOID on the 205 from the Q4 2013 print, as the window median stays 12.7x (the 2009-2013 regime holds most of its days) while
+  the FY14E-FY17E guides trade at 19-54x; built in a new session without opening the 2008-2013 outcomes or findings (retro/README.md,
+  "LLY 2014-2017").
 - **Never use the owner's personal email** in request headers to external
   services (SEC asks for a contact in the User-Agent).

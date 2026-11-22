@@ -1,5 +1,5 @@
 {
- "_doc": "Point-in-time fact sheet for LLY retrospectives (retro/build_lly.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks of 2007-2009 were accepted before the open or during the session on their release days. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the guides for the current fiscal year (each field from the latest guide that states it) and the latest declared dividend (each vintage's). Eli Lilly's fiscal year is the calendar year. EPS is GAAP diluted EPS from continuing operations before extraordinary items and accounting changes: the company's adjusted and pro forma figures also remove in-process research and development, which recurs, so they are shown and never used. 2008 is excluded (a loss). Guides: reported EPS ranges (the current-FY EPS; a range whose midpoint is a loss has no P/E) and the company's adjusted ranges (shown only); revenue growth is guided in words only, so BASE takes the latest quarter's sales growth excluding foreign exchange as each release states it. A print's growth and margins are derived from the raw figures of its release ('raw', $ millions; the builder re-derives and checks them), each against the year-ago quarter as the same release shows it. Company-wide U.S. and outside-U.S. growth is as each filing states it: in the release for Q4 2008 and 2009, in the 10-Q for Q2 2007 to Q3 2008 ('geo_later', visible from the 10-Q's date), in no filing for Q4 2007. Rule T's raw figures are in 'rule_t'. No later fact enters through this file: every source's published date bounds its use.",
+ "_doc": "Point-in-time fact sheet for LLY retrospectives (retro/build_lly.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks of 2007-2009 were accepted before the open or during the session on their release days. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the guides for the current fiscal year (each field from the latest guide that states it) and the latest declared dividend (each vintage's, or a release's that first states a new rate: 'dividends'). Eli Lilly's fiscal year is the calendar year. EPS is GAAP diluted EPS from continuing operations before extraordinary items and accounting changes: the company's adjusted and pro forma figures also remove in-process research and development, which recurs, so they are shown and never used. 2008 is excluded (a loss). Guides: reported EPS ranges (the current-FY EPS; a range whose midpoint is a loss has no P/E) and the company's adjusted ranges (shown only); revenue growth is guided in words only, so BASE takes the latest quarter's sales growth excluding foreign exchange as each release states it. A print's growth and margins are derived from the raw figures of its release ('raw', $ millions; the builder re-derives and checks them), each against the year-ago quarter as the same release shows it. Company-wide U.S. and outside-U.S. growth is as each filing states it: in the release for Q4 2008 and 2009, in the 10-Q for Q2 2007 to Q3 2008 ('geo_later', visible from the 10-Q's date), in no filing for Q4 2007. Rule T's raw figures are in 'rule_t'. No later fact enters through this file: every source's published date bounds its use.",
  "ticker": "LLY",
  "sources": {
   "LL1": {
@@ -393,6 +393,181 @@
    "title": "Eli Lilly Q3 2013 earnings release (8-K, Exhibit 99.1)",
    "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947813000053/exhibit991-3rdquarter2013e.htm",
    "supports": "Q3 2013: reported operating results (total revenue $5,772.6M vs $5,443.3M, cost of sales, pre-tax income $1,513.4M vs $1,874.7M, diluted EPS $1.11 vs $1.18); growth 6% with exchange rates -2 points; U.S. and outside-U.S. revenue; FY2013 guide: reported EPS $4.33-4.38, revenue $22.6-23.4 billion"
+  },
+  "LL57": {
+   "published": "2014-01-07",
+   "filed": "2014-01-07 07:02 ET, before the open",
+   "title": "Eli Lilly 8-K of 2014-01-07 (Item 2.02: FY2014 financial guidance, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947814000004/a2014guidance-exhibit991.htm",
+   "supports": "FY2014 guide: reported EPS $2.77-2.85, revenue $19.2-19.8 billion"
+  },
+  "LL58": {
+   "published": "2014-01-30",
+   "filed": "2014-01-30 07:19 ET, before the open",
+   "title": "Eli Lilly Q4 2013 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947814000008/exhibit991q4earnings2013pr.htm",
+   "supports": "Q4 2013: reported operating results (total revenue $5,808.8M vs $5,957.3M, cost of sales, pre-tax income $909.9M vs $1,012.4M, diluted EPS $0.67 vs $0.74); growth -2% with exchange rates -2 points; U.S. and outside-U.S. revenue; FY2013 actuals (revenue $23,113.1M, diluted EPS $4.32, U.S. and outside-U.S. revenue); FY2014 guide: reported EPS $2.77-2.85, revenue $19.2-19.8 billion"
+  },
+  "LL59": {
+   "published": "2014-02-19",
+   "filed": "2014-02-19 13:34 ET, during the session",
+   "title": "Eli Lilly FY2013 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947814000078/lly-20131231x10k.htm",
+   "supports": "history vintage: selected financial data, statements of operations and cash flows, balance sheet, segment and geographic data, Items 1 and 1A, the dividend and repurchase passages"
+  },
+  "LL60": {
+   "published": "2014-04-24",
+   "filed": "2014-04-24 06:41 ET, before the open",
+   "title": "Eli Lilly Q1 2014 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947814000100/q12014exhibit991.htm",
+   "supports": "Q1 2014: reported operating results (total revenue $4,683.1M vs $5,602.0M, cost of sales, pre-tax income $890.8M vs $1,951.1M, diluted EPS $0.68 vs $1.42); growth -16% with exchange rates -2 points; U.S. and outside-U.S. revenue; FY2014 guide: reported EPS $2.70-2.78, revenue $19.4-20.0 billion"
+  },
+  "LL61": {
+   "published": "2014-07-24",
+   "filed": "2014-07-24 06:36 ET, before the open",
+   "title": "Eli Lilly Q2 2014 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947814000126/q22014earningsexhibit991.htm",
+   "supports": "Q2 2014: reported operating results (total revenue $4,935.6M vs $5,929.7M, cost of sales, pre-tax income $940.4M vs $1,514.9M, diluted EPS $0.68 vs $1.11); growth -17% with exchange rates +0 points; U.S. and outside-U.S. revenue; FY2014 guide: reported EPS $2.67-2.75, revenue $19.4-20.0 billion"
+  },
+  "LL62": {
+   "published": "2014-10-23",
+   "filed": "2014-10-23 06:41 ET, before the open",
+   "title": "Eli Lilly Q3 2014 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947814000164/q32014earningspressrelease.htm",
+   "supports": "Q3 2014: reported operating results (total revenue $4,875.6M vs $5,772.6M, cost of sales, pre-tax income $655.5M vs $1,513.4M, diluted EPS $0.47 vs $1.11); growth -16% with exchange rates +0 points; U.S. and outside-U.S. revenue; FY2014 guide: reported EPS $2.34-2.42, revenue $19.4-19.8 billion"
+  },
+  "LL63": {
+   "published": "2015-01-07",
+   "filed": "2015-01-07 12:27 ET, during the session",
+   "title": "Eli Lilly 8-K of 2015-01-07 (Item 2.02: FY2015 financial guidance and FY2014 update, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947815000005/a2015guidance-exhibit991.htm",
+   "supports": "FY2014 guide: reported EPS $2.15-2.23; FY2015 guide: reported EPS $2.40-2.50, revenue $20.3-20.8 billion"
+  },
+  "LL64": {
+   "published": "2015-01-30",
+   "filed": "2015-01-30 08:06 ET, before the open",
+   "title": "Eli Lilly Q4 2014 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947815000016/q414lillysalesandearningsp.htm",
+   "supports": "Q4 2014: reported operating results (total revenue $5,121.3M vs $5,808.8M, cost of sales, pre-tax income $513.6M vs $909.9M, diluted EPS $0.40 vs $0.67); growth -12% with exchange rates -4 points; U.S. and outside-U.S. revenue; FY2014 actuals (revenue $19,615.6M, diluted EPS $2.23, U.S. and outside-U.S. revenue); FY2015 guide: reported EPS $2.40-2.50, revenue $19.5-20.0 billion; the quarterly dividend $0.50"
+  },
+  "LL65": {
+   "published": "2015-02-20",
+   "filed": "2015-02-19 16:02 ET, after the close",
+   "title": "Eli Lilly FY2014 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947815000100/lly-20141231x10k.htm",
+   "supports": "history vintage: selected financial data, statements of operations and cash flows, balance sheet, segment and geographic data, Items 1 and 1A, the dividend and repurchase passages"
+  },
+  "LL66": {
+   "published": "2015-04-23",
+   "filed": "2015-04-23 06:42 ET, before the open",
+   "title": "Eli Lilly Q1 2015 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947815000124/q115lillysalesandearningsp.htm",
+   "supports": "Q1 2015: reported operating results (revenue $4,644.7M vs $4,683.1M, cost of sales, pre-tax income $617.9M vs $890.8M, diluted EPS $0.50 vs $0.68); growth -1% with exchange rates -6 points; U.S. and outside-U.S. revenue; FY2015 guide: reported EPS $2.21-2.31, revenue $19.5-20.0 billion"
+  },
+  "LL67": {
+   "published": "2015-07-23",
+   "filed": "2015-07-23 08:26 ET, before the open",
+   "title": "Eli Lilly Q2 2015 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947815000159/q215lillysalesandearningsp.htm",
+   "supports": "Q2 2015: reported operating results (revenue $4,978.7M vs $4,935.6M, cost of sales, pre-tax income $679.7M vs $940.4M, diluted EPS $0.56 vs $0.68); growth 1% with exchange rates -8 points; U.S. and outside-U.S. revenue; FY2015 guide: reported EPS $2.20-2.30, revenue $19.7-20.0 billion"
+  },
+  "LL68": {
+   "published": "2015-10-22",
+   "filed": "2015-10-22 06:25 ET, before the open",
+   "title": "Eli Lilly Q3 2015 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947815000173/q315lillysalesandearningsp.htm",
+   "supports": "Q3 2015: reported operating results (revenue $4,959.7M vs $4,875.6M, cost of sales, pre-tax income $1,047.8M vs $655.5M, diluted EPS $0.75 vs $0.47); growth 2% with exchange rates -8 points; U.S. and outside-U.S. revenue; FY2015 guide: reported EPS $2.40-2.45, revenue $19.7-20.0 billion"
+  },
+  "LL69": {
+   "published": "2016-01-05",
+   "filed": "2016-01-05 06:46 ET, before the open",
+   "title": "Eli Lilly 8-K of 2016-01-05 (Item 2.02: FY2016 financial guidance and FY2015 update, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947816000232/a8-kjan2016exhibit991.htm",
+   "supports": "FY2015 guide: reported EPS $2.28-2.33; FY2016 guide: reported EPS $2.92-3.02, revenue $20.2-20.7 billion"
+  },
+  "LL70": {
+   "published": "2016-01-28",
+   "filed": "2016-01-28 06:25 ET, before the open",
+   "title": "Eli Lilly Q4 2015 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947816000249/q415lillysalesandearningsp.htm",
+   "supports": "Q4 2015: reported operating results (revenue $5,375.6M vs $5,121.3M, cost of sales, pre-tax income $444.6M vs $513.6M, diluted EPS $0.45 vs $0.40); growth 5% with exchange rates -6 points; U.S. and outside-U.S. revenue; FY2015 actuals (revenue $19,958.7M, diluted EPS $2.26, U.S. and outside-U.S. revenue); FY2016 guide: reported EPS $2.83-2.93, revenue $20.2-20.7 billion; the quarterly dividend $0.51"
+  },
+  "LL71": {
+   "published": "2016-02-19",
+   "filed": "2016-02-19 15:42 ET, during the session",
+   "title": "Eli Lilly FY2015 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947816000321/lly-20151231x10k.htm",
+   "supports": "history vintage: selected financial data, statements of operations and cash flows, balance sheet, segment and geographic data, Items 1 and 1A, the dividend and repurchase passages"
+  },
+  "LL72": {
+   "published": "2016-04-26",
+   "filed": "2016-04-26 06:25 ET, before the open",
+   "title": "Eli Lilly Q1 2016 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947816000346/q116lillysalesandearningsp.htm",
+   "supports": "Q1 2016: reported operating results (revenue $4,865.1M vs $4,644.7M, cost of sales, pre-tax income $566.8M vs $617.9M, diluted EPS $0.41 vs $0.50); growth 5% with exchange rates -3 points; U.S. and outside-U.S. revenue; FY2016 guide: reported EPS $2.68-2.78, revenue $20.6-21.1 billion"
+  },
+  "LL73": {
+   "published": "2016-07-26",
+   "filed": "2016-07-26 06:25 ET, before the open",
+   "title": "Eli Lilly Q2 2016 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947816000393/q216lillysalesandearningsp.htm",
+   "supports": "Q2 2016: reported operating results (revenue $5,404.8M vs $4,978.7M, cost of sales, pre-tax income $944.5M vs $679.7M, diluted EPS $0.71 vs $0.56); growth 9% with exchange rates +0 points; U.S. and outside-U.S. revenue; FY2016 guide: reported EPS $2.68-2.78, revenue $20.6-21.1 billion"
+  },
+  "LL74": {
+   "published": "2016-10-25",
+   "filed": "2016-10-25 06:28 ET, before the open",
+   "title": "Eli Lilly Q3 2016 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947816000436/q316lillysalesandearningsp.htm",
+   "supports": "Q3 2016: reported operating results (revenue $5,191.7M vs $4,959.7M, cost of sales, pre-tax income $970.7M vs $1,047.8M, diluted EPS $0.73 vs $0.75); growth 5% with exchange rates +1 points; U.S. and outside-U.S. revenue; FY2016 guide: reported EPS $2.66-2.76, revenue $20.8-21.2 billion"
+  },
+  "LL75": {
+   "published": "2016-12-16",
+   "filed": "2016-12-15 16:28 ET, after the close",
+   "title": "Eli Lilly 8-K of 2016-12-15 (Item 2.02: FY2017 financial guidance and FY2016 update, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947816000479/a2017financialguidancedece.htm",
+   "supports": "FY2016 guide: reported EPS $2.57-2.67, revenue $20.8-21.2 billion; FY2017 guide: reported EPS $3.51-3.61, revenue $21.8-22.3 billion"
+  },
+  "LL76": {
+   "published": "2017-01-31",
+   "filed": "2017-01-31 08:54 ET, before the open",
+   "title": "Eli Lilly Q4 2016 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947817000023/q416lillysalesandearningsp.htm",
+   "supports": "Q4 2016: reported operating results (revenue $5,760.5M vs $5,375.6M, cost of sales, pre-tax income $892.0M vs $444.6M, diluted EPS $0.73 vs $0.45); growth 7% with exchange rates +1 points; U.S. and outside-U.S. revenue; FY2016 actuals (revenue $21,222.1M, diluted EPS $2.58, U.S. and outside-U.S. revenue); FY2017 guide: reported EPS $2.69-2.79, revenue $21.8-22.3 billion"
+  },
+  "LL77": {
+   "published": "2017-02-21",
+   "filed": "2017-02-21 15:32 ET, during the session",
+   "title": "Eli Lilly FY2016 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947817000098/lly-20161231x10xk.htm",
+   "supports": "history vintage: selected financial data, statements of operations and cash flows, balance sheet, segment and geographic data, Items 1 and 1A, the dividend and repurchase passages"
+  },
+  "LL78": {
+   "published": "2017-04-25",
+   "filed": "2017-04-25 06:28 ET, before the open",
+   "title": "Eli Lilly Q1 2017 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947817000127/q117lillysalesandearningsp.htm",
+   "supports": "Q1 2017: reported operating results (revenue $5,228.3M vs $4,865.1M, cost of sales, pre-tax income $61.2M vs $566.8M, diluted EPS $-0.10 vs $0.41); growth 7% with exchange rates -1 points; U.S. and outside-U.S. revenue; FY2017 guide: reported EPS $2.60-2.70, revenue $21.8-22.3 billion"
+  },
+  "LL79": {
+   "published": "2017-07-25",
+   "filed": "2017-07-25 06:36 ET, before the open",
+   "title": "Eli Lilly Q2 2017 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947817000180/q217lillysalesandearningsp.htm",
+   "supports": "Q2 2017: reported operating results (revenue $5,824.3M vs $5,404.8M, cost of sales, pre-tax income $1,260.5M vs $944.5M, diluted EPS $0.95 vs $0.71); growth 8% with exchange rates -1 points; U.S. and outside-U.S. revenue; FY2017 guide: reported EPS $2.51-2.61, revenue $22.0-22.5 billion"
+  },
+  "LL80": {
+   "published": "2017-10-24",
+   "filed": "2017-10-24 06:30 ET, before the open",
+   "title": "Eli Lilly Q3 2017 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947817000201/q317lillysalesandearningsp.htm",
+   "supports": "Q3 2017: reported operating results (revenue $5,658.0M vs $5,191.7M, cost of sales, pre-tax income $591.6M vs $970.7M, diluted EPS $0.53 vs $0.73); growth 9% with exchange rates +0 points; U.S. and outside-U.S. revenue; FY2017 guide: reported EPS $1.73-1.83, revenue $22.4-22.7 billion"
+  },
+  "LL81": {
+   "published": "2017-12-14",
+   "filed": "2017-12-13 17:07 ET, after the close",
+   "title": "Eli Lilly 8-K of 2017-12-13 (Item 2.02: FY2018 financial guidance and FY2017 update, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947817000255/a2018financeguidancereleas.htm",
+   "supports": "FY2017 guide: reported EPS $1.56-1.66, revenue $22.4-22.7 billion"
   }
  },
  "history_vintages": [
@@ -1719,6 +1894,671 @@
     "2008": "reported $(1.89) a diluted share is a loss: the significant items the Q4 2008 release lists total $5.91 per share ($4.46 for the ImClone acquisition's in-process research and development and other charges and $1.20 for the Zyprexa investigations among them) against its $4.02 pro forma non-GAAP figure, a loss has no P/E, and no figure excluding only one-offs is published (the pro forma non-GAAP EPS also removes $.10 of in-process research and development for the SGX acquisition and the BioMS and TransPharma in-licensing transactions, which recur)"
    },
    "excluded_note": "reported $(1.89) a diluted share is a loss: the significant items the Q4 2008 release lists total $5.91 per share ($4.46 for the ImClone acquisition's in-process research and development and other charges and $1.20 for the Zyprexa investigations among them) against its $4.02 pro forma non-GAAP figure, a loss has no P/E, and no figure excluding only one-offs is published (the pro forma non-GAAP EPS also removes $.10 of in-process research and development for the SGX acquisition and the BioMS and TransPharma in-licensing transactions, which recur)"
+  },
+  {
+   "published": "2014-02-19",
+   "sources": [
+    "LL26",
+    "LL35",
+    "LL40",
+    "LL46",
+    "LL53",
+    "LL59"
+   ],
+   "fy_label": "FY13",
+   "why": "'We discover, develop, manufacture, and market products in two business segments—human pharmaceutical products and animal health products.' (FY2013 10-K, Item 1); 'We depend on products with intellectual property protection for most of our revenues, cash flows, and earnings; we have lost or will lose effective intellectual property protection for many of those products in the next several years, which may result in rapid and severe declines in revenues.' (FY2013 10-K, Item 1A heading); 'Our long-term success depends on intellectual property protection; if our intellectual property rights are invalidated or circumvented, our business will be adversely affected.' (FY2013 10-K, Item 1A heading); 'We face intense competition from multinational pharmaceutical companies, biotechnology companies, and lower-cost generic manufacturers.' (FY2013 10-K, Item 1A heading); 'For non-biological products, loss of exclusivity (whether by expiration or as a consequence of litigation) typically results in the entry of one or more generic competitors, leading to a rapid and severe decline in revenues.' (FY2013 10-K, Item 1A); 'Our product revenues can be adversely affected by the introduction by competitors of branded products that are perceived as superior by the marketplace, by generic or biosimilar versions of our branded products, and by generic versions of other products in the same therapeutic class as our branded products.' (FY2013 10-K, Item 1A)",
+   "eps_gaap": {
+    "2004": 1.66,
+    "2005": 1.83,
+    "2006": 2.45,
+    "2007": 2.71,
+    "2009": 3.94,
+    "2010": 4.58,
+    "2011": 3.9,
+    "2012": 3.66,
+    "2013": 4.32
+   },
+   "eps_normalized": {
+    "2004": 1.66,
+    "2005": 1.83,
+    "2006": 2.45,
+    "2007": 2.71,
+    "2009": 3.94,
+    "2010": 4.58,
+    "2011": 3.9,
+    "2012": 3.66,
+    "2013": 4.32
+   },
+   "eps_sources": {
+    "2004": "LL26",
+    "2005": "LL26",
+    "2006": "LL40",
+    "2007": "LL46",
+    "2009": "LL59",
+    "2010": "LL59",
+    "2011": "LL59",
+    "2012": "LL59",
+    "2013": "LL59"
+   },
+   "revenue_usd_b": {
+    "2004": 13.8579,
+    "2005": 14.6453,
+    "2006": 15.691,
+    "2007": 18.6335,
+    "2008": 20.3719,
+    "2009": 21.836,
+    "2010": 23.076,
+    "2011": 24.2865,
+    "2012": 22.6034,
+    "2013": 23.1131
+   },
+   "revenue_sources": {
+    "2004": "LL26",
+    "2005": "LL35",
+    "2006": "LL40",
+    "2007": "LL46",
+    "2008": "LL53",
+    "2009": "LL59",
+    "2010": "LL59",
+    "2011": "LL59",
+    "2012": "LL59",
+    "2013": "LL59"
+   },
+   "diluted_shares_m": {
+    "2004": 1088.936,
+    "2005": 1092.15,
+    "2006": 1087.49,
+    "2007": 1090.75,
+    "2008": 1094.499,
+    "2009": 1098.367,
+    "2010": 1105.813,
+    "2011": 1113.967,
+    "2012": 1117.294,
+    "2013": 1084.766
+   },
+   "shares_sources": {
+    "2004": "LL26",
+    "2005": "LL35",
+    "2006": "LL40",
+    "2007": "LL46",
+    "2008": "LL53",
+    "2009": "LL59",
+    "2010": "LL59",
+    "2011": "LL59",
+    "2012": "LL59",
+    "2013": "LL59"
+   },
+   "fiscal_year_ends": {
+    "2004": "2004-12-31",
+    "2005": "2005-12-31",
+    "2006": "2006-12-31",
+    "2007": "2007-12-31",
+    "2008": "2008-12-31",
+    "2009": "2009-12-31",
+    "2010": "2010-12-31",
+    "2011": "2011-12-31",
+    "2012": "2012-12-31",
+    "2013": "2013-12-31"
+   },
+   "normalization": "diluted EPS from continuing operations before extraordinary items and the cumulative effect of a change in accounting principle, each year from the latest filing that reports it (the selected financial data; 2005 at $1.83 before the cumulative effect, the FY2008 10-K's footnote: the FY2009 10-K gives $1.81 after it and no footnote); revenue from the FY2009 10-K's 'Revenue' for 2005 on (net product sales and collaboration and other revenue, the Q1 2009 10-Q's EITF 07-1 applied retrospectively), net sales before; GAAP throughout: the company's adjusted, pro forma and non-GAAP figures exclude acquired in-process research and development, which recurs (on the statements of income or operations in 2004 ($392.2M), 2007 ($745.6M, the OSI, MacroGenics and Glenmark in-licensing transactions among them), 2008 ($4,835.4M, the BioMS and TransPharma in-licensing transactions among them), 2009 ($90.0M: the Incyte licensing agreement), 2010 ($50.0M: the Acrux licensing agreement), 2011 ($388.0M: the Boehringer Ingelheim collaboration), 2013 ($57.1M: the CGRP antibody from Arteaus Therapeutics)), so none excludes only one-offs (the NKE FY2007, PFE and BMY rule) and they are shown in the guide line only; no year is distorted: reported EPS is more than half the EPS without each year's listed items and no year's listed benefits exceed its income without them (2004 $1.66 against $2.82 without $.35 of in-process research and development, the $.43 repatriation tax and $.38 of impairment, restructuring and Evista investigation charges; 2005 $1.83 against $2.87 without the $.90 product liability and $.14 asset impairment charges; 2009 $3.94 against the pro forma non-GAAP $4.42 (Q4 2009 release); 2010 $4.58 against the non-GAAP $4.74 (Q4 2010 release); 2011 $3.90 against the non-GAAP $4.41 (Q4 2011 release); 2012 $3.66 against the non-GAAP $3.39 (Q4 2012 release); 2013 $4.32 against the non-GAAP $4.15 (Q4 2013 release); 2012's only listed benefit, the $.43 of income from the early payment of Amylin's revenue-sharing obligation, is under the $3.23 without it; 2013's listed benefit, the $.29 of income related to the termination of the exenatide collaboration with Amylin, is under the $4.03 without it); 2008 is excluded: reported $(1.89) a diluted share is a loss: the significant items the Q4 2008 release lists total $5.91 per share ($4.46 for the ImClone acquisition's in-process research and development and other charges and $1.20 for the Zyprexa investigations among them) against its $4.02 pro forma non-GAAP figure, a loss has no P/E, and no figure excluding only one-offs is published (the pro forma non-GAAP EPS also removes $.10 of in-process research and development for the SGX acquisition and the BioMS and TransPharma in-licensing transactions, which recur) (only the year itself leaves, the NKE FY2018, XOM FY2020 and BMY FY2015 rule)",
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 25.48,
+   "prev_fy_pretax_margin_note": "FY13 income before income taxes $5,889.3M / revenue $23,113.1M (FY2013 10-K)",
+   "prev_fy_gross_margin": 78.76,
+   "prev_fy_sales_growth": 2.3,
+   "prev_fy_us_pct": 4.7,
+   "prev_fy_intl_pct": -0.7,
+   "tax_rate": 0.205,
+   "tax_note": "FY13 income taxes $1,204.5M / pre-tax $5,889.3M (FY2013 10-K)",
+   "fcf_b": 4.72,
+   "fcf_label": "FY13",
+   "fcf_note": "net cash provided by operating activities $5,735.0M less purchases of property and equipment $1,012.1M",
+   "cash_b": 5.4,
+   "cash_note": "cash and cash equivalents $3,830.2M and short-term investments $1,567.1M at December 31",
+   "dividend_annual": 1.96,
+   "dividend_note": "$0.49 quarterly ('In the fourth quarter of 2013, effective for the dividend to be paid in the first quarter of 2014, the quarterly dividend was maintained at $0.49 per share', FY2013 10-K)",
+   "cash_return_text": "'During 2013, we repurchased the remaining $1.10 billion of shares associated with our $1.50 billion share repurchase program announced in 2012. In October 2013, we announced a new $5.00 billion share repurchase program which will be completed over time. We purchased $500.0 million of shares under the new repurchase program in 2013.' (FY2013 10-K)",
+   "business_line": "research-based pharmaceutical company: endocrinology, neuroscience, oncology and cardiovascular products, and animal health",
+   "groups": [
+    [
+     "Endocrinology",
+     7.304,
+     7.2
+    ],
+    [
+     "Neuroscience",
+     7.216,
+     -4.7
+    ],
+    [
+     "Oncology",
+     3.268,
+     -0.4
+    ],
+    [
+     "Cardiovascular",
+     2.923,
+     11.0
+    ],
+    [
+     "Animal health",
+     2.151,
+     5.6
+    ],
+    [
+     "Other pharmaceuticals",
+     0.249,
+     -6.6
+    ]
+   ],
+   "groups_basis": "FY13 revenue by product class (segment revenue: human pharmaceutical products and animal health) (FY2013 10-K, segment information)",
+   "revenue_label": "total revenue from FY05 (the FY2009 10-K), net sales before",
+   "company": "Eli Lilly and Company",
+   "exchange": "NYSE",
+   "pe_window_start": null,
+   "eps_excluded": {
+    "2008": "reported $(1.89) a diluted share is a loss: the significant items the Q4 2008 release lists total $5.91 per share ($4.46 for the ImClone acquisition's in-process research and development and other charges and $1.20 for the Zyprexa investigations among them) against its $4.02 pro forma non-GAAP figure, a loss has no P/E, and no figure excluding only one-offs is published (the pro forma non-GAAP EPS also removes $.10 of in-process research and development for the SGX acquisition and the BioMS and TransPharma in-licensing transactions, which recur)"
+   },
+   "excluded_note": "reported $(1.89) a diluted share is a loss: the significant items the Q4 2008 release lists total $5.91 per share ($4.46 for the ImClone acquisition's in-process research and development and other charges and $1.20 for the Zyprexa investigations among them) against its $4.02 pro forma non-GAAP figure, a loss has no P/E, and no figure excluding only one-offs is published (the pro forma non-GAAP EPS also removes $.10 of in-process research and development for the SGX acquisition and the BioMS and TransPharma in-licensing transactions, which recur)"
+  },
+  {
+   "published": "2015-02-20",
+   "sources": [
+    "LL26",
+    "LL35",
+    "LL40",
+    "LL46",
+    "LL53",
+    "LL59",
+    "LL65"
+   ],
+   "fy_label": "FY14",
+   "why": "'We discover, develop, manufacture, and market products in two business segments—human pharmaceutical products and animal health products.' (FY2014 10-K, Item 1); 'We depend on products with intellectual property protection for most of our revenues, cash flows, and earnings; we have lost or will lose effective intellectual property protection for many of those products in the next several years, which may result in rapid and severe declines in revenues.' (FY2014 10-K, Item 1A heading); 'Our long-term success depends on intellectual property protection; if our intellectual property rights are invalidated, circumvented, or weakened, our business will be adversely affected.' (FY2014 10-K, Item 1A heading); 'We face intense competition from multinational pharmaceutical companies, biotechnology companies, and lower-cost generic and biosimilar manufacturers.' (FY2014 10-K, Item 1A heading); 'For non-biological products, loss of exclusivity (whether by expiration or as a consequence of litigation) typically results in the entry of one or more generic competitors, leading to a rapid and severe decline in revenues.' (FY2014 10-K, Item 1A); 'Our product revenues can be adversely affected by the introduction by competitors of branded products that are perceived as superior by the marketplace, by generic or biosimilar versions of our branded products, and by generic or biosimilar versions of other products in the same therapeutic class as our branded products.' (FY2014 10-K, Item 1A)",
+   "eps_gaap": {
+    "2005": 1.83,
+    "2006": 2.45,
+    "2007": 2.71,
+    "2009": 3.94,
+    "2010": 4.58,
+    "2011": 3.9,
+    "2012": 3.66,
+    "2013": 4.32,
+    "2014": 2.23
+   },
+   "eps_normalized": {
+    "2005": 1.83,
+    "2006": 2.45,
+    "2007": 2.71,
+    "2009": 3.94,
+    "2010": 4.58,
+    "2011": 3.9,
+    "2012": 3.66,
+    "2013": 4.32,
+    "2014": 2.23
+   },
+   "eps_sources": {
+    "2005": "LL26",
+    "2006": "LL40",
+    "2007": "LL46",
+    "2009": "LL59",
+    "2010": "LL65",
+    "2011": "LL65",
+    "2012": "LL65",
+    "2013": "LL65",
+    "2014": "LL65"
+   },
+   "revenue_usd_b": {
+    "2005": 14.6453,
+    "2006": 15.691,
+    "2007": 18.6335,
+    "2008": 20.3719,
+    "2009": 21.836,
+    "2010": 23.076,
+    "2011": 24.2865,
+    "2012": 22.6034,
+    "2013": 23.1131,
+    "2014": 19.6156
+   },
+   "revenue_sources": {
+    "2005": "LL35",
+    "2006": "LL40",
+    "2007": "LL46",
+    "2008": "LL53",
+    "2009": "LL59",
+    "2010": "LL65",
+    "2011": "LL65",
+    "2012": "LL65",
+    "2013": "LL65",
+    "2014": "LL65"
+   },
+   "diluted_shares_m": {
+    "2005": 1092.15,
+    "2006": 1087.49,
+    "2007": 1090.75,
+    "2008": 1094.499,
+    "2009": 1098.367,
+    "2010": 1105.813,
+    "2011": 1113.967,
+    "2012": 1117.294,
+    "2013": 1084.766,
+    "2014": 1074.286
+   },
+   "shares_sources": {
+    "2005": "LL35",
+    "2006": "LL40",
+    "2007": "LL46",
+    "2008": "LL53",
+    "2009": "LL59",
+    "2010": "LL65",
+    "2011": "LL65",
+    "2012": "LL65",
+    "2013": "LL65",
+    "2014": "LL65"
+   },
+   "fiscal_year_ends": {
+    "2005": "2005-12-31",
+    "2006": "2006-12-31",
+    "2007": "2007-12-31",
+    "2008": "2008-12-31",
+    "2009": "2009-12-31",
+    "2010": "2010-12-31",
+    "2011": "2011-12-31",
+    "2012": "2012-12-31",
+    "2013": "2013-12-31",
+    "2014": "2014-12-31"
+   },
+   "normalization": "diluted EPS from continuing operations before extraordinary items and the cumulative effect of a change in accounting principle, each year from the latest filing that reports it (the selected financial data; 2005 at $1.83 before the cumulative effect, the FY2008 10-K's footnote: the FY2009 10-K gives $1.81 after it and no footnote); revenue on the FY2009 10-K's basis throughout ('Revenue': net product sales and collaboration and other revenue, EITF 07-1); GAAP throughout: the company's adjusted, pro forma and non-GAAP figures exclude acquired in-process research and development, which recurs (on the statements of income or operations in 2007 ($745.6M, the OSI, MacroGenics and Glenmark in-licensing transactions among them), 2008 ($4,835.4M, the BioMS and TransPharma in-licensing transactions among them), 2009 ($90.0M: the Incyte licensing agreement), 2010 ($50.0M: the Acrux licensing agreement), 2011 ($388.0M: the Boehringer Ingelheim collaboration), 2013 ($57.1M: the CGRP antibody from Arteaus Therapeutics), 2014 ($200.2M)), so none excludes only one-offs (the NKE FY2007, PFE and BMY rule) and they are shown in the guide line only; no year is distorted: reported EPS is more than half the EPS without each year's listed items and no year's listed benefits exceed its income without them (2005 $1.83 against $2.87 without the $.90 product liability and $.14 asset impairment charges; 2009 $3.94 against the pro forma non-GAAP $4.42 (Q4 2009 release); 2010 $4.58 against the non-GAAP $4.74 (Q4 2010 release); 2011 $3.90 against the non-GAAP $4.41 (Q4 2011 release); 2012 $3.66 against the non-GAAP $3.39 (Q4 2012 release); 2013 $4.32 against the non-GAAP $4.15 (Q4 2013 release); 2014 $2.23 against the non-GAAP $2.78 (Q4 2014 release); 2012's only listed benefit, the $.43 of income from the early payment of Amylin's revenue-sharing obligation, is under the $3.23 without it; 2013's listed benefit, the $.29 of income related to the termination of the exenatide collaboration with Amylin, is under the $4.03 without it; 2014's listed benefit, the $.06 of income associated with revisions to the agreement with Boehringer Ingelheim, is a small fraction of its income); 2008 is excluded: reported $(1.89) a diluted share is a loss: the significant items the Q4 2008 release lists total $5.91 per share ($4.46 for the ImClone acquisition's in-process research and development and other charges and $1.20 for the Zyprexa investigations among them) against its $4.02 pro forma non-GAAP figure, a loss has no P/E, and no figure excluding only one-offs is published (the pro forma non-GAAP EPS also removes $.10 of in-process research and development for the SGX acquisition and the BioMS and TransPharma in-licensing transactions, which recur) (only the year itself leaves, the NKE FY2018, XOM FY2020 and BMY FY2015 rule)",
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 15.3,
+   "prev_fy_pretax_margin_note": "FY14 income before income taxes $3,000.3M / revenue $19,615.6M (FY2014 10-K)",
+   "prev_fy_gross_margin": 74.85,
+   "prev_fy_sales_growth": -15.1,
+   "prev_fy_us_pct": -29.1,
+   "prev_fy_intl_pct": 2.5,
+   "tax_rate": 0.203,
+   "tax_note": "FY14 income taxes $609.8M / pre-tax $3,000.3M (FY2014 10-K)",
+   "fcf_b": 3.2,
+   "fcf_label": "FY14",
+   "fcf_note": "net cash provided by operating activities $4,367.1M less purchases of property and equipment $1,162.6M",
+   "cash_b": 4.83,
+   "cash_note": "cash and cash equivalents $3,871.6M and short-term investments $955.4M at December 31",
+   "dividend_annual": 2.0,
+   "dividend_note": "$0.50 quarterly ('In the fourth quarter of 2014, effective for the dividend to be paid in the first quarter of 2015, the quarterly dividend was increased to $0.50 per share', FY2014 10-K)",
+   "cash_return_text": "'In 2014, we repurchased $800.0 million of shares under the $5.00 billion share repurchase program previously announced in October 2013.' (FY2014 10-K)",
+   "business_line": "research-based pharmaceutical company: endocrinology, neuroscience, oncology and cardiovascular products, and animal health",
+   "groups": [
+    [
+     "Endocrinology",
+     6.939,
+     -5.0
+    ],
+    [
+     "Neuroscience",
+     3.596,
+     -50.2
+    ],
+    [
+     "Oncology",
+     3.393,
+     3.8
+    ],
+    [
+     "Cardiovascular",
+     3.054,
+     4.5
+    ],
+    [
+     "Animal health",
+     2.347,
+     9.1
+    ],
+    [
+     "Other pharmaceuticals",
+     0.287,
+     15.1
+    ]
+   ],
+   "groups_basis": "FY14 revenue by product class (segment revenue: human pharmaceutical products and animal health) (FY2014 10-K, segment information)",
+   "revenue_label": "total revenue, each year from the latest 10-K that reports it (FY05 from the FY2009 10-K)",
+   "company": "Eli Lilly and Company",
+   "exchange": "NYSE",
+   "pe_window_start": null,
+   "eps_excluded": {
+    "2008": "reported $(1.89) a diluted share is a loss: the significant items the Q4 2008 release lists total $5.91 per share ($4.46 for the ImClone acquisition's in-process research and development and other charges and $1.20 for the Zyprexa investigations among them) against its $4.02 pro forma non-GAAP figure, a loss has no P/E, and no figure excluding only one-offs is published (the pro forma non-GAAP EPS also removes $.10 of in-process research and development for the SGX acquisition and the BioMS and TransPharma in-licensing transactions, which recur)"
+   },
+   "excluded_note": "reported $(1.89) a diluted share is a loss: the significant items the Q4 2008 release lists total $5.91 per share ($4.46 for the ImClone acquisition's in-process research and development and other charges and $1.20 for the Zyprexa investigations among them) against its $4.02 pro forma non-GAAP figure, a loss has no P/E, and no figure excluding only one-offs is published (the pro forma non-GAAP EPS also removes $.10 of in-process research and development for the SGX acquisition and the BioMS and TransPharma in-licensing transactions, which recur)"
+  },
+  {
+   "published": "2016-02-19",
+   "sources": [
+    "LL40",
+    "LL46",
+    "LL53",
+    "LL59",
+    "LL65",
+    "LL71"
+   ],
+   "fy_label": "FY15",
+   "why": "'We discover, develop, manufacture, and market products in two business segments—human pharmaceutical products and animal health products.' (FY2015 10-K, Item 1); 'We depend on products with intellectual property protection for most of our revenues, cash flows, and earnings; we have lost or will lose effective intellectual property protection for many of those products in the next several years, which may result in rapid and severe declines in revenues.' (FY2015 10-K, Item 1A heading); 'Our long-term success depends on intellectual property protection; if our intellectual property rights are invalidated, circumvented, or weakened, our business will be adversely affected.' (FY2015 10-K, Item 1A heading); 'We face intense competition from multinational pharmaceutical companies, biotechnology companies, and lower-cost generic and biosimilar manufacturers, and such competition could have a material adverse effect on our business.' (FY2015 10-K, Item 1A heading); 'For non-biological products, loss of exclusivity (whether by expiration or as a consequence of litigation) typically results in the entry of one or more generic competitors, leading to a rapid and severe decline in revenues, especially in the U.S.' (FY2015 10-K, Item 1A); 'Our product revenues can be adversely affected by the introduction by competitors of branded products that are perceived as superior by the marketplace, by generic or biosimilar versions of our branded products, and by generic or biosimilar versions of other products in the same therapeutic class as our branded products.' (FY2015 10-K, Item 1A)",
+   "eps_gaap": {
+    "2006": 2.45,
+    "2007": 2.71,
+    "2009": 3.94,
+    "2010": 4.58,
+    "2011": 3.9,
+    "2012": 3.66,
+    "2013": 4.32,
+    "2014": 2.23,
+    "2015": 2.26
+   },
+   "eps_normalized": {
+    "2006": 2.45,
+    "2007": 2.71,
+    "2009": 3.94,
+    "2010": 4.58,
+    "2011": 3.9,
+    "2012": 3.66,
+    "2013": 4.32,
+    "2014": 2.23,
+    "2015": 2.26
+   },
+   "eps_sources": {
+    "2006": "LL40",
+    "2007": "LL46",
+    "2009": "LL59",
+    "2010": "LL65",
+    "2011": "LL71",
+    "2012": "LL71",
+    "2013": "LL71",
+    "2014": "LL71",
+    "2015": "LL71"
+   },
+   "revenue_usd_b": {
+    "2006": 15.691,
+    "2007": 18.6335,
+    "2008": 20.3719,
+    "2009": 21.836,
+    "2010": 23.076,
+    "2011": 24.2865,
+    "2012": 22.6034,
+    "2013": 23.1131,
+    "2014": 19.6156,
+    "2015": 19.9587
+   },
+   "revenue_sources": {
+    "2006": "LL40",
+    "2007": "LL46",
+    "2008": "LL53",
+    "2009": "LL59",
+    "2010": "LL65",
+    "2011": "LL71",
+    "2012": "LL71",
+    "2013": "LL71",
+    "2014": "LL71",
+    "2015": "LL71"
+   },
+   "diluted_shares_m": {
+    "2006": 1087.49,
+    "2007": 1090.75,
+    "2008": 1094.499,
+    "2009": 1098.367,
+    "2010": 1105.813,
+    "2011": 1113.967,
+    "2012": 1117.294,
+    "2013": 1084.766,
+    "2014": 1074.286,
+    "2015": 1065.72
+   },
+   "shares_sources": {
+    "2006": "LL40",
+    "2007": "LL46",
+    "2008": "LL53",
+    "2009": "LL59",
+    "2010": "LL65",
+    "2011": "LL71",
+    "2012": "LL71",
+    "2013": "LL71",
+    "2014": "LL71",
+    "2015": "LL71"
+   },
+   "fiscal_year_ends": {
+    "2006": "2006-12-31",
+    "2007": "2007-12-31",
+    "2008": "2008-12-31",
+    "2009": "2009-12-31",
+    "2010": "2010-12-31",
+    "2011": "2011-12-31",
+    "2012": "2012-12-31",
+    "2013": "2013-12-31",
+    "2014": "2014-12-31",
+    "2015": "2015-12-31"
+   },
+   "normalization": "diluted EPS from continuing operations before extraordinary items and the cumulative effect of a change in accounting principle, each year from the latest filing that reports it (the selected financial data); revenue on the FY2009 10-K's basis throughout ('Revenue': net product sales and collaboration and other revenue, EITF 07-1); GAAP throughout: the company's adjusted, pro forma and non-GAAP figures exclude acquired in-process research and development, which recurs (on the statements of income or operations in 2007 ($745.6M, the OSI, MacroGenics and Glenmark in-licensing transactions among them), 2008 ($4,835.4M, the BioMS and TransPharma in-licensing transactions among them), 2009 ($90.0M: the Incyte licensing agreement), 2010 ($50.0M: the Acrux licensing agreement), 2011 ($388.0M: the Boehringer Ingelheim collaboration), 2013 ($57.1M: the CGRP antibody from Arteaus Therapeutics), 2014 ($200.2M), 2015 ($535.0M)), and from 2015 they also remove the amortization of intangible assets, which recurs, so none excludes only one-offs (the NKE FY2007, PFE and BMY rule) and they are shown in the guide line only; no year is distorted: reported EPS is more than half the EPS without each year's listed items and no year's listed benefits exceed its income without them (2009 $3.94 against the pro forma non-GAAP $4.42 (Q4 2009 release); 2010 $4.58 against the non-GAAP $4.74 (Q4 2010 release); 2011 $3.90 against the non-GAAP $4.41 (Q4 2011 release); 2012 $3.66 against the non-GAAP $3.39 (Q4 2012 release); 2013 $4.32 against the non-GAAP $4.15 (Q4 2013 release); 2014 $2.23 against the non-GAAP $2.78 (Q4 2014 release); 2015 $2.26 against the non-GAAP $3.43 (Q4 2015 release, which also removes $.39 of amortization); 2012's only listed benefit, the $.43 of income from the early payment of Amylin's revenue-sharing obligation, is under the $3.23 without it; 2013's listed benefit, the $.29 of income related to the termination of the exenatide collaboration with Amylin, is under the $4.03 without it; 2014's listed benefit, the $.06 of income associated with revisions to the agreement with Boehringer Ingelheim, is a small fraction of its income); 2008 is excluded: reported $(1.89) a diluted share is a loss: the significant items the Q4 2008 release lists total $5.91 per share ($4.46 for the ImClone acquisition's in-process research and development and other charges and $1.20 for the Zyprexa investigations among them) against its $4.02 pro forma non-GAAP figure, a loss has no P/E, and no figure excluding only one-offs is published (the pro forma non-GAAP EPS also removes $.10 of in-process research and development for the SGX acquisition and the BioMS and TransPharma in-licensing transactions, which recur) (only the year itself leaves, the NKE FY2018, XOM FY2020 and BMY FY2015 rule)",
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 13.98,
+   "prev_fy_pretax_margin_note": "FY15 income before income taxes $2,790.0M / revenue $19,958.7M (FY2015 10-K)",
+   "prev_fy_gross_margin": 74.76,
+   "prev_fy_sales_growth": 1.7,
+   "prev_fy_us_pct": 10.5,
+   "prev_fy_intl_pct": -5.9,
+   "tax_rate": 0.137,
+   "tax_note": "FY15 income taxes $381.6M / pre-tax $2,790.0M (FY2015 10-K)",
+   "fcf_b": 1.71,
+   "fcf_label": "FY15",
+   "fcf_note": "net cash provided by operating activities $2,772.8M less purchases of property and equipment $1,066.2M",
+   "cash_b": 4.45,
+   "cash_note": "cash and cash equivalents $3,666.4M and short-term investments $785.4M at December 31",
+   "dividend_annual": 2.04,
+   "dividend_note": "$0.51 quarterly ('In the fourth quarter of 2015, effective for the dividend to be paid in the first quarter of 2016, the quarterly dividend was increased to $0.51 per share', FY2015 10-K)",
+   "cash_return_text": "'In 2015, we repurchased $749.5 million of shares under the $5.00 billion share repurchase program previously announced in October 2013.' (FY2015 10-K)",
+   "business_line": "research-based pharmaceutical company: endocrinology, neuroscience, oncology and cardiovascular products, and animal health",
+   "groups": [
+    [
+     "Endocrinology",
+     7.037,
+     1.4
+    ],
+    [
+     "Oncology",
+     3.51,
+     3.4
+    ],
+    [
+     "Animal health",
+     3.181,
+     35.6
+    ],
+    [
+     "Cardiovascular",
+     3.068,
+     0.5
+    ],
+    [
+     "Neuroscience",
+     2.935,
+     -18.4
+    ],
+    [
+     "Other pharmaceuticals",
+     0.228,
+     -20.7
+    ]
+   ],
+   "groups_basis": "FY15 revenue by product class (segment revenue: human pharmaceutical products and animal health) (FY2015 10-K, segment information)",
+   "revenue_label": "total revenue, each year from the latest 10-K that reports it (FY05 from the FY2009 10-K)",
+   "company": "Eli Lilly and Company",
+   "exchange": "NYSE",
+   "pe_window_start": null,
+   "eps_excluded": {
+    "2008": "reported $(1.89) a diluted share is a loss: the significant items the Q4 2008 release lists total $5.91 per share ($4.46 for the ImClone acquisition's in-process research and development and other charges and $1.20 for the Zyprexa investigations among them) against its $4.02 pro forma non-GAAP figure, a loss has no P/E, and no figure excluding only one-offs is published (the pro forma non-GAAP EPS also removes $.10 of in-process research and development for the SGX acquisition and the BioMS and TransPharma in-licensing transactions, which recur)"
+   },
+   "excluded_note": "reported $(1.89) a diluted share is a loss: the significant items the Q4 2008 release lists total $5.91 per share ($4.46 for the ImClone acquisition's in-process research and development and other charges and $1.20 for the Zyprexa investigations among them) against its $4.02 pro forma non-GAAP figure, a loss has no P/E, and no figure excluding only one-offs is published (the pro forma non-GAAP EPS also removes $.10 of in-process research and development for the SGX acquisition and the BioMS and TransPharma in-licensing transactions, which recur)"
+  },
+  {
+   "published": "2017-02-21",
+   "sources": [
+    "LL46",
+    "LL53",
+    "LL59",
+    "LL65",
+    "LL71",
+    "LL77"
+   ],
+   "fy_label": "FY16",
+   "why": "'We discover, develop, manufacture, and market products in two business segments—human pharmaceutical products and animal health products.' (FY2016 10-K, Item 1); 'We depend on products with intellectual property protection for most of our revenues, cash flows, and earnings; we have lost or will lose effective intellectual property protection for many of those products in the next several years, which has resulted and is likely to continue to result in rapid and severe declines in revenues.' (FY2016 10-K, Item 1A heading); 'Our long-term success depends on intellectual property protection; if our intellectual property rights are invalidated, circumvented, or weakened, our business will be adversely affected.' (FY2016 10-K, Item 1A heading); 'We face intense competition from multinational pharmaceutical companies, biotechnology companies, and lower-cost generic and biosimilar manufacturers, and such competition could have a material adverse effect on our business.' (FY2016 10-K, Item 1A heading); 'For non-biologic products, loss of exclusivity (whether by expiration or as a consequence of litigation) typically results in the entry of one or more generic competitors, leading to a rapid and severe decline in revenues, especially in the U.S.' (FY2016 10-K, Item 1A); 'Our product revenues can be adversely affected by the introduction by competitors of branded products that are perceived as superior by the marketplace, by generic or biosimilar versions of our branded products, and by generic or biosimilar versions of other products in the same therapeutic class as our branded products.' (FY2016 10-K, Item 1A)",
+   "eps_gaap": {
+    "2007": 2.71,
+    "2009": 3.94,
+    "2010": 4.58,
+    "2011": 3.9,
+    "2012": 3.66,
+    "2013": 4.32,
+    "2014": 2.23,
+    "2015": 2.26,
+    "2016": 2.58
+   },
+   "eps_normalized": {
+    "2007": 2.71,
+    "2009": 3.94,
+    "2010": 4.58,
+    "2011": 3.9,
+    "2012": 3.66,
+    "2013": 4.32,
+    "2014": 2.23,
+    "2015": 2.26,
+    "2016": 2.58
+   },
+   "eps_sources": {
+    "2007": "LL46",
+    "2009": "LL59",
+    "2010": "LL65",
+    "2011": "LL71",
+    "2012": "LL77",
+    "2013": "LL77",
+    "2014": "LL77",
+    "2015": "LL77",
+    "2016": "LL77"
+   },
+   "revenue_usd_b": {
+    "2007": 18.6335,
+    "2008": 20.3719,
+    "2009": 21.836,
+    "2010": 23.076,
+    "2011": 24.2865,
+    "2012": 22.6034,
+    "2013": 23.1131,
+    "2014": 19.6156,
+    "2015": 19.9587,
+    "2016": 21.2221
+   },
+   "revenue_sources": {
+    "2007": "LL46",
+    "2008": "LL53",
+    "2009": "LL59",
+    "2010": "LL65",
+    "2011": "LL71",
+    "2012": "LL77",
+    "2013": "LL77",
+    "2014": "LL77",
+    "2015": "LL77",
+    "2016": "LL77"
+   },
+   "diluted_shares_m": {
+    "2007": 1090.75,
+    "2008": 1094.499,
+    "2009": 1098.367,
+    "2010": 1105.813,
+    "2011": 1113.967,
+    "2012": 1117.294,
+    "2013": 1084.766,
+    "2014": 1074.286,
+    "2015": 1065.72,
+    "2016": 1061.825
+   },
+   "shares_sources": {
+    "2007": "LL46",
+    "2008": "LL53",
+    "2009": "LL59",
+    "2010": "LL65",
+    "2011": "LL71",
+    "2012": "LL77",
+    "2013": "LL77",
+    "2014": "LL77",
+    "2015": "LL77",
+    "2016": "LL77"
+   },
+   "fiscal_year_ends": {
+    "2007": "2007-12-31",
+    "2008": "2008-12-31",
+    "2009": "2009-12-31",
+    "2010": "2010-12-31",
+    "2011": "2011-12-31",
+    "2012": "2012-12-31",
+    "2013": "2013-12-31",
+    "2014": "2014-12-31",
+    "2015": "2015-12-31",
+    "2016": "2016-12-31"
+   },
+   "normalization": "diluted EPS from continuing operations before extraordinary items and the cumulative effect of a change in accounting principle, each year from the latest filing that reports it (the selected financial data); revenue on the FY2009 10-K's basis throughout ('Revenue': net product sales and collaboration and other revenue, EITF 07-1); GAAP throughout: the company's adjusted, pro forma and non-GAAP figures exclude acquired in-process research and development, which recurs (on the statements of income or operations in 2007 ($745.6M, the OSI, MacroGenics and Glenmark in-licensing transactions among them), 2008 ($4,835.4M, the BioMS and TransPharma in-licensing transactions among them), 2009 ($90.0M: the Incyte licensing agreement), 2010 ($50.0M: the Acrux licensing agreement), 2011 ($388.0M: the Boehringer Ingelheim collaboration), 2013 ($57.1M: the CGRP antibody from Arteaus Therapeutics), 2014 ($200.2M), 2015 ($535.0M), 2016 ($30.0M)), and from 2015 they also remove the amortization of intangible assets, which recurs, so none excludes only one-offs (the NKE FY2007, PFE and BMY rule) and they are shown in the guide line only; no year is distorted: reported EPS is more than half the EPS without each year's listed items and no year's listed benefits exceed its income without them (2009 $3.94 against the pro forma non-GAAP $4.42 (Q4 2009 release); 2010 $4.58 against the non-GAAP $4.74 (Q4 2010 release); 2011 $3.90 against the non-GAAP $4.41 (Q4 2011 release); 2012 $3.66 against the non-GAAP $3.39 (Q4 2012 release); 2013 $4.32 against the non-GAAP $4.15 (Q4 2013 release); 2014 $2.23 against the non-GAAP $2.78 (Q4 2014 release); 2015 $2.26 against the non-GAAP $3.43 (Q4 2015 release, which also removes $.39 of amortization); 2016 $2.58 against the non-GAAP $3.52 (Q4 2016 release, which also removes $.44 of amortization); 2012's only listed benefit, the $.43 of income from the early payment of Amylin's revenue-sharing obligation, is under the $3.23 without it; 2013's listed benefit, the $.29 of income related to the termination of the exenatide collaboration with Amylin, is under the $4.03 without it; 2014's listed benefit, the $.06 of income associated with revisions to the agreement with Boehringer Ingelheim, is a small fraction of its income); 2008 is excluded: reported $(1.89) a diluted share is a loss: the significant items the Q4 2008 release lists total $5.91 per share ($4.46 for the ImClone acquisition's in-process research and development and other charges and $1.20 for the Zyprexa investigations among them) against its $4.02 pro forma non-GAAP figure, a loss has no P/E, and no figure excluding only one-offs is published (the pro forma non-GAAP EPS also removes $.10 of in-process research and development for the SGX acquisition and the BioMS and TransPharma in-licensing transactions, which recur) (only the year itself leaves, the NKE FY2018, XOM FY2020 and BMY FY2015 rule)",
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 15.9,
+   "prev_fy_pretax_margin_note": "FY16 income before income taxes $3,374.0M / revenue $21,222.1M (FY2016 10-K)",
+   "prev_fy_gross_margin": 73.35,
+   "prev_fy_sales_growth": 6.3,
+   "prev_fy_us_pct": 14.0,
+   "prev_fy_intl_pct": -1.5,
+   "tax_rate": 0.189,
+   "tax_note": "FY16 income taxes $636.4M / pre-tax $3,374.0M (FY2016 10-K)",
+   "fcf_b": 3.81,
+   "fcf_label": "FY16",
+   "fcf_note": "net cash provided by operating activities $4,851.0M less purchases of property and equipment $1,037.0M",
+   "cash_b": 6.04,
+   "cash_note": "cash and cash equivalents $4,582.1M and short-term investments $1,456.5M at December 31",
+   "dividend_annual": 2.08,
+   "dividend_note": "$0.52 quarterly ('In the fourth quarter of 2016, effective for the dividend to be paid in the first quarter of 2017, the quarterly dividend was increased to $0.52 per share', FY2016 10-K)",
+   "cash_return_text": "'In 2016, we repurchased $540.1 million of shares under the $5.00 billion share repurchase program previously announced in October 2013.' (FY2016 10-K)",
+   "business_line": "research-based pharmaceutical company: endocrinology, neuroscience, oncology and cardiovascular products, and animal health",
+   "groups": [
+    [
+     "Endocrinology",
+     8.083,
+     14.9
+    ],
+    [
+     "Oncology",
+     3.722,
+     6.0
+    ],
+    [
+     "Cardiovascular",
+     3.225,
+     5.1
+    ],
+    [
+     "Animal health products",
+     3.158,
+     -0.7
+    ],
+    [
+     "Neuroscience",
+     2.72,
+     -7.3
+    ],
+    [
+     "Other human pharmaceutical products",
+     0.314,
+     37.7
+    ]
+   ],
+   "groups_basis": "FY16 revenue by product class (segment revenue: human pharmaceutical products and animal health) (FY2016 10-K, segment information)",
+   "revenue_label": "total revenue, each year from the latest 10-K that reports it (FY05 from the FY2009 10-K)",
+   "company": "Eli Lilly and Company",
+   "exchange": "NYSE",
+   "pe_window_start": null,
+   "eps_excluded": {
+    "2008": "reported $(1.89) a diluted share is a loss: the significant items the Q4 2008 release lists total $5.91 per share ($4.46 for the ImClone acquisition's in-process research and development and other charges and $1.20 for the Zyprexa investigations among them) against its $4.02 pro forma non-GAAP figure, a loss has no P/E, and no figure excluding only one-offs is published (the pro forma non-GAAP EPS also removes $.10 of in-process research and development for the SGX acquisition and the BioMS and TransPharma in-licensing transactions, which recur)"
+   },
+   "excluded_note": "reported $(1.89) a diluted share is a loss: the significant items the Q4 2008 release lists total $5.91 per share ($4.46 for the ImClone acquisition's in-process research and development and other charges and $1.20 for the Zyprexa investigations among them) against its $4.02 pro forma non-GAAP figure, a loss has no P/E, and no figure excluding only one-offs is published (the pro forma non-GAAP EPS also removes $.10 of in-process research and development for the SGX acquisition and the BioMS and TransPharma in-licensing transactions, which recur)"
   }
  ],
  "prints": [
@@ -2847,6 +3687,687 @@
    "cash_return_text": "'The company announced plans to supplement its annual dividend with share repurchases totaling $5 billion over time.' (Q3 2013 release)",
    "next_print": "Q4 2013 print (late January)",
    "eps_note": "reported EPS $1.11 against $1.18; the company's non-GAAP figure 1.11 against 0.79 is shown only (the history is GAAP: the NKE FY2007, PFE and BMY rule)"
+  },
+  {
+   "quarter": "Q4 2013",
+   "fy": 2013,
+   "q": 4,
+   "published": "2014-01-30",
+   "source": "LL58",
+   "release": "Jan 30",
+   "release_time": "8-K accepted 2014-01-30 07:19 ET (before the open); conference call 'today from 9:00 a.m. to 10:00 a.m.' ET",
+   "period_end": "2013-12-31",
+   "raw": {
+    "rev_m": 5808.8,
+    "rev_prior_m": 5957.3,
+    "cos_m": 1386.5,
+    "cos_prior_m": 1248.3,
+    "pretax_m": 909.9,
+    "pretax_prior_m": 1012.4,
+    "diluted_shares_m": 1078.976
+   },
+   "sales_b": 5.809,
+   "sales_pct": -2.5,
+   "us_pct": -6.0,
+   "intl_pct": 1.0,
+   "us_b": 3.044,
+   "intl_b": 2.765,
+   "geo_note": "U.S. -6% to $3.044B, outside the U.S. +1% to $2.765B, as the release states them",
+   "gross_margin": 76.13,
+   "gross_margin_bp": -291.5,
+   "pretax_margin": 15.66,
+   "pretax_margin_bp": -133.0,
+   "eps_q": 0.67,
+   "eps_q_prior": 0.74,
+   "diluted_shares_m": 1078.976,
+   "lc_pct": 0.0,
+   "lc_note": "-2% less the -2 points of exchange rates the release states",
+   "cash_return_text": "'As part of its previously-announced share repurchase program, the company repurchased approximately $500 million in company stock in the fourth quarter of 2013.' (Q4 2013 release)",
+   "next_print": "Q1 2014 print (late April)",
+   "eps_note": "reported EPS $0.67 against $0.74; the company's non-GAAP figure $0.74 against $0.85 is shown only (it also removes acquired in-process research and development, which recurs; the history is GAAP: the NKE FY2007, PFE and BMY rule)",
+   "note": "U.S. exclusivity for Cymbalta ended inside the quarter ('U.S. patent exclusivity for Cymbalta® expired on December 11, 2013, resulting in the entry of several generic competitors.')",
+   "fy_actual": {
+    "fy": 2013,
+    "fy_label": "FY13",
+    "eps_normalized": 4.32,
+    "revenue_usd_b": 23.1131,
+    "diluted_shares_m": 1084.766,
+    "normalization_note": "FY2013 $4.32 diluted EPS (Q4 2013 release; GAAP, the company's non-GAAP $4.15 is shown only)",
+    "gross_margin": 78.76,
+    "pretax_margin": 25.48,
+    "pretax_margin_note": "FY13 income before income taxes $5,889.3M / revenue $23,113.1M (Q4 2013 release)",
+    "sales_growth": 2.3,
+    "us_pct": 5.0,
+    "intl_pct": -1.0,
+    "tax_rate": 0.205,
+    "tax_note": "FY13 income taxes $1,204.5M / pre-tax $5,889.3M"
+   }
+  },
+  {
+   "quarter": "Q1 2014",
+   "fy": 2014,
+   "q": 1,
+   "published": "2014-04-24",
+   "source": "LL60",
+   "release": "Apr 24",
+   "release_time": "8-K accepted 2014-04-24 06:41 ET (before the open); conference call 'today from 9:00 a.m. to 10:00 a.m.' ET",
+   "period_end": "2014-03-31",
+   "raw": {
+    "rev_m": 4683.1,
+    "rev_prior_m": 5602.0,
+    "cos_m": 1222.7,
+    "cos_prior_m": 1158.3,
+    "pretax_m": 890.8,
+    "pretax_prior_m": 1951.1,
+    "diluted_shares_m": 1075.836
+   },
+   "sales_b": 4.683,
+   "sales_pct": -16.4,
+   "us_pct": -34.0,
+   "intl_pct": 5.0,
+   "us_b": 2.084,
+   "intl_b": 2.599,
+   "geo_note": "U.S. -34% to $2.084B, outside the U.S. +5% to $2.599B, as the release states them",
+   "gross_margin": 73.89,
+   "gross_margin_bp": -543.2,
+   "pretax_margin": 19.02,
+   "pretax_margin_bp": -1580.7,
+   "eps_q": 0.68,
+   "eps_q_prior": 1.42,
+   "diluted_shares_m": 1075.836,
+   "lc_pct": -14.0,
+   "lc_note": "-16% less the -2 points of exchange rates the release states",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q2 2014 print (late July)",
+   "eps_note": "reported EPS $0.68 against $1.42; the company's non-GAAP figure $0.70 against $1.14 is shown only (it also removes acquired in-process research and development, which recurs; the history is GAAP: the NKE FY2007, PFE and BMY rule)",
+   "note": "U.S. exclusivity for Evista ended inside the quarter ('U.S. patent exclusivity for Evista® ended in March, 2014, resulting in the entry of generic competition.')"
+  },
+  {
+   "quarter": "Q2 2014",
+   "fy": 2014,
+   "q": 2,
+   "published": "2014-07-24",
+   "source": "LL61",
+   "release": "Jul 24",
+   "release_time": "8-K accepted 2014-07-24 06:36 ET (before the open); conference call 'today from 9:00 a.m. to 10:00 a.m.' ET",
+   "period_end": "2014-06-30",
+   "raw": {
+    "rev_m": 4935.6,
+    "rev_prior_m": 5929.7,
+    "cos_m": 1189.7,
+    "cos_prior_m": 1165.2,
+    "pretax_m": 940.4,
+    "pretax_prior_m": 1514.9,
+    "diluted_shares_m": 1076.418
+   },
+   "sales_b": 4.936,
+   "sales_pct": -16.8,
+   "us_pct": -30.0,
+   "intl_pct": 1.0,
+   "us_b": 2.38,
+   "intl_b": 2.556,
+   "geo_note": "U.S. -30% to $2.380B, outside the U.S. +1% to $2.556B, as the release states them",
+   "gross_margin": 75.9,
+   "gross_margin_bp": -445.4,
+   "pretax_margin": 19.05,
+   "pretax_margin_bp": -649.4,
+   "eps_q": 0.68,
+   "eps_q_prior": 1.11,
+   "diluted_shares_m": 1076.418,
+   "lc_pct": -17.0,
+   "lc_note": "-17% with exchange rates' impact stated as 'negligible' (read as 0)",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q3 2014 print (late October)",
+   "eps_note": "reported EPS $0.68 against $1.11; the company's non-GAAP figure $0.68 against $1.16 is shown only (it also removes acquired in-process research and development, which recurs; the history is GAAP: the NKE FY2007, PFE and BMY rule)"
+  },
+  {
+   "quarter": "Q3 2014",
+   "fy": 2014,
+   "q": 3,
+   "published": "2014-10-23",
+   "source": "LL62",
+   "release": "Oct 23",
+   "release_time": "8-K accepted 2014-10-23 06:41 ET (before the open); conference call 'today from 9:00 a.m. to 10:00 a.m.' ET",
+   "period_end": "2014-09-30",
+   "raw": {
+    "rev_m": 4875.6,
+    "rev_prior_m": 5772.6,
+    "cos_m": 1267.0,
+    "cos_prior_m": 1198.1,
+    "pretax_m": 655.5,
+    "pretax_prior_m": 1513.4,
+    "diluted_shares_m": 1074.386
+   },
+   "sales_b": 4.876,
+   "sales_pct": -15.5,
+   "us_pct": -33.0,
+   "intl_pct": 8.0,
+   "us_b": 2.218,
+   "intl_b": 2.658,
+   "geo_note": "U.S. -33% to $2.218B, outside the U.S. +8% to $2.658B, as the release states them",
+   "gross_margin": 74.01,
+   "gross_margin_bp": -523.2,
+   "pretax_margin": 13.44,
+   "pretax_margin_bp": -1277.2,
+   "eps_q": 0.47,
+   "eps_q_prior": 1.11,
+   "diluted_shares_m": 1074.386,
+   "lc_pct": -16.0,
+   "lc_note": "-16% with exchange rates' impact stated as 'negligible' (read as 0)",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q4 2014 print (late January)",
+   "eps_note": "reported EPS $0.47 against $1.11; the company's non-GAAP figure $0.66 against $1.11 is shown only (it also removes acquired in-process research and development, which recurs; the history is GAAP: the NKE FY2007, PFE and BMY rule)",
+   "note": "the quarter's pre-tax income carries the U.S. Branded Prescription Drug Fee charge ('The company recorded a $119 million non-tax deductible charge in the third quarter of 2014 due to a change created by the IRS final regulations in regard to its administration of the U.S. Branded Prescription Drug Fee.')"
+  },
+  {
+   "quarter": "Q4 2014",
+   "fy": 2014,
+   "q": 4,
+   "published": "2015-01-30",
+   "source": "LL64",
+   "release": "Jan 30",
+   "release_time": "8-K accepted 2015-01-30 08:06 ET (before the open); conference call 'today from 9:00 a.m. to 10:30 a.m.' ET",
+   "period_end": "2014-12-31",
+   "raw": {
+    "rev_m": 5121.3,
+    "rev_prior_m": 5808.8,
+    "cos_m": 1253.1,
+    "cos_prior_m": 1386.5,
+    "pretax_m": 513.6,
+    "pretax_prior_m": 909.9,
+    "diluted_shares_m": 1069.787
+   },
+   "sales_b": 5.121,
+   "sales_pct": -11.8,
+   "us_pct": -19.0,
+   "intl_pct": -3.0,
+   "us_b": 2.453,
+   "intl_b": 2.669,
+   "geo_note": "U.S. -19% to $2.453B, outside the U.S. -3% to $2.669B, as the release states them",
+   "gross_margin": 75.53,
+   "gross_margin_bp": -59.9,
+   "pretax_margin": 10.03,
+   "pretax_margin_bp": -563.5,
+   "eps_q": 0.4,
+   "eps_q_prior": 0.67,
+   "diluted_shares_m": 1069.787,
+   "lc_pct": -8.0,
+   "lc_note": "-12% less the -4 points of exchange rates the release states",
+   "cash_return_text": "'As part of its previously-announced share repurchase program, the company repurchased approximately $300 million in company stock in the fourth quarter of 2014.' (Q4 2014 release)",
+   "next_print": "Q1 2015 print (late April)",
+   "eps_note": "reported EPS $0.40 against $0.67; the company's non-GAAP figure $0.75 against $0.74 is shown only (it also removes acquired in-process research and development, which recurs; the history is GAAP: the NKE FY2007, PFE and BMY rule)",
+   "fy_actual": {
+    "fy": 2014,
+    "fy_label": "FY14",
+    "eps_normalized": 2.23,
+    "revenue_usd_b": 19.6156,
+    "diluted_shares_m": 1074.286,
+    "normalization_note": "FY2014 $2.23 diluted EPS (Q4 2014 release; GAAP, the company's non-GAAP $2.78 is shown only)",
+    "gross_margin": 74.85,
+    "pretax_margin": 15.3,
+    "pretax_margin_note": "FY14 income before income taxes $3,000.3M / revenue $19,615.6M (Q4 2014 release)",
+    "sales_growth": -15.1,
+    "us_pct": -29.0,
+    "intl_pct": 3.0,
+    "tax_rate": 0.203,
+    "tax_note": "FY14 income taxes $609.8M / pre-tax $3,000.3M"
+   }
+  },
+  {
+   "quarter": "Q1 2015",
+   "fy": 2015,
+   "q": 1,
+   "published": "2015-04-23",
+   "source": "LL66",
+   "release": "Apr 23",
+   "release_time": "8-K accepted 2015-04-23 06:42 ET (before the open); conference call 'begin at 9:00 a.m.' ET",
+   "period_end": "2015-03-31",
+   "raw": {
+    "rev_m": 4644.7,
+    "rev_prior_m": 4683.1,
+    "cos_m": 1192.7,
+    "cos_prior_m": 1222.7,
+    "pretax_m": 617.9,
+    "pretax_prior_m": 890.8,
+    "diluted_shares_m": 1067.036
+   },
+   "sales_b": 4.645,
+   "sales_pct": -0.8,
+   "us_pct": 6.0,
+   "intl_pct": -6.0,
+   "us_b": 2.197,
+   "intl_b": 2.447,
+   "geo_note": "U.S. +6% to $2.197B, outside the U.S. -6% to $2.447B, as the release states them",
+   "gross_margin": 74.32,
+   "gross_margin_bp": 43.0,
+   "pretax_margin": 13.3,
+   "pretax_margin_bp": -571.8,
+   "eps_q": 0.5,
+   "eps_q_prior": 0.68,
+   "diluted_shares_m": 1067.036,
+   "lc_pct": 5.0,
+   "lc_note": "-1% less the -6 points of exchange rates the release states",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q2 2015 print (late July)",
+   "eps_note": "reported EPS $0.50 against $0.68; the company's non-GAAP figure $0.87 against $0.74 is shown only (it also removes the amortization of intangible assets and acquired in-process research and development, which recur; the history is GAAP: the NKE FY2007, PFE and BMY rule)",
+   "note": "revenue includes Novartis Animal Health from its acquisition, as published ('the inclusion of revenue from Novartis Animal Health')"
+  },
+  {
+   "quarter": "Q2 2015",
+   "fy": 2015,
+   "q": 2,
+   "published": "2015-07-23",
+   "source": "LL67",
+   "release": "Jul 23",
+   "release_time": "8-K accepted 2015-07-23 08:26 ET (before the open); conference call 'begin at 9:00 a.m.' ET",
+   "period_end": "2015-06-30",
+   "raw": {
+    "rev_m": 4978.7,
+    "rev_prior_m": 4935.6,
+    "cos_m": 1218.4,
+    "cos_prior_m": 1189.7,
+    "pretax_m": 679.7,
+    "pretax_prior_m": 940.4,
+    "diluted_shares_m": 1065.584
+   },
+   "sales_b": 4.979,
+   "sales_pct": 0.9,
+   "us_pct": 6.0,
+   "intl_pct": -4.0,
+   "us_b": 2.528,
+   "intl_b": 2.451,
+   "geo_note": "U.S. +6% to $2.528B, outside the U.S. -4% to $2.451B, as the release states them",
+   "gross_margin": 75.53,
+   "gross_margin_bp": -36.8,
+   "pretax_margin": 13.65,
+   "pretax_margin_bp": -540.1,
+   "eps_q": 0.56,
+   "eps_q_prior": 0.68,
+   "diluted_shares_m": 1065.584,
+   "lc_pct": 9.0,
+   "lc_note": "1% less the -8 points of exchange rates the release states",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q3 2015 print (late October)",
+   "eps_note": "reported EPS $0.56 against $0.68; the company's non-GAAP figure $0.90 against $0.74 is shown only (it also removes the amortization of intangible assets and acquired in-process research and development, which recur; the history is GAAP: the NKE FY2007, PFE and BMY rule)",
+   "note": "revenue includes Novartis Animal Health, as published; pre-tax income carries 'a net charge of $152.7 million related to the repurchase of $1.65 billion of debt'"
+  },
+  {
+   "quarter": "Q3 2015",
+   "fy": 2015,
+   "q": 3,
+   "published": "2015-10-22",
+   "source": "LL68",
+   "release": "Oct 22",
+   "release_time": "8-K accepted 2015-10-22 06:25 ET (before the open); conference call 'begin at 9:00 a.m.' ET",
+   "period_end": "2015-09-30",
+   "raw": {
+    "rev_m": 4959.7,
+    "rev_prior_m": 4875.6,
+    "cos_m": 1236.9,
+    "cos_prior_m": 1267.0,
+    "pretax_m": 1047.8,
+    "pretax_prior_m": 655.5,
+    "diluted_shares_m": 1065.159
+   },
+   "sales_b": 4.96,
+   "sales_pct": 1.7,
+   "us_pct": 14.0,
+   "intl_pct": -9.0,
+   "us_b": 2.538,
+   "intl_b": 2.422,
+   "geo_note": "U.S. +14% to $2.538B, outside the U.S. -9% to $2.422B, as the release states them",
+   "gross_margin": 75.06,
+   "gross_margin_bp": 104.8,
+   "pretax_margin": 21.13,
+   "pretax_margin_bp": 768.2,
+   "eps_q": 0.75,
+   "eps_q_prior": 0.47,
+   "diluted_shares_m": 1065.159,
+   "lc_pct": 10.0,
+   "lc_note": "2% less the -8 points of exchange rates the release states",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q4 2015 print (late January)",
+   "eps_note": "reported EPS $0.75 against $0.47; the company's non-GAAP figure $0.89 against $0.73 is shown only (it also removes the amortization of intangible assets and acquired in-process research and development, which recur; the history is GAAP: the NKE FY2007, PFE and BMY rule)",
+   "note": "revenue includes Novartis Animal Health, as published"
+  },
+  {
+   "quarter": "Q4 2015",
+   "fy": 2015,
+   "q": 4,
+   "published": "2016-01-28",
+   "source": "LL70",
+   "release": "Jan 28",
+   "release_time": "8-K accepted 2016-01-28 06:25 ET (before the open); conference call 'today from 9:00 a.m. to 10:30 a.m.' ET",
+   "period_end": "2015-12-31",
+   "raw": {
+    "rev_m": 5375.6,
+    "rev_prior_m": 5121.3,
+    "cos_m": 1389.2,
+    "cos_prior_m": 1253.1,
+    "pretax_m": 444.6,
+    "pretax_prior_m": 513.6,
+    "diluted_shares_m": 1064.893
+   },
+   "sales_b": 5.376,
+   "sales_pct": 5.0,
+   "us_pct": 15.0,
+   "intl_pct": -4.0,
+   "us_b": 2.821,
+   "intl_b": 2.555,
+   "geo_note": "U.S. +15% to $2.821B, outside the U.S. -4% to $2.555B, as the release states them",
+   "gross_margin": 74.16,
+   "gross_margin_bp": -137.4,
+   "pretax_margin": 8.27,
+   "pretax_margin_bp": -175.8,
+   "eps_q": 0.45,
+   "eps_q_prior": 0.4,
+   "diluted_shares_m": 1064.893,
+   "lc_pct": 11.0,
+   "lc_note": "5% less the -6 points of exchange rates the release states",
+   "cash_return_text": "'As part of its previously announced share repurchase program, the company repurchased approximately $250 million in company stock in the fourth quarter of 2015.' (Q4 2015 release)",
+   "next_print": "Q1 2016 print (late April)",
+   "eps_note": "reported EPS $0.45 against $0.40; the company's non-GAAP figure $0.78 against $0.82 is shown only (it also removes the amortization of intangible assets and acquired in-process research and development, which recur; the history is GAAP: the NKE FY2007, PFE and BMY rule)",
+   "note": "revenue includes Novartis Animal Health, as published",
+   "fy_actual": {
+    "fy": 2015,
+    "fy_label": "FY15",
+    "eps_normalized": 2.26,
+    "revenue_usd_b": 19.9587,
+    "diluted_shares_m": 1065.72,
+    "normalization_note": "FY2015 $2.26 diluted EPS (Q4 2015 release; GAAP, the company's non-GAAP $3.43 is shown only)",
+    "gross_margin": 74.76,
+    "pretax_margin": 13.98,
+    "pretax_margin_note": "FY15 income before income taxes $2,790.0M / revenue $19,958.7M (Q4 2015 release)",
+    "sales_growth": 1.7,
+    "us_pct": 11.0,
+    "intl_pct": -6.0,
+    "tax_rate": 0.137,
+    "tax_note": "FY15 income taxes $381.6M / pre-tax $2,790.0M"
+   }
+  },
+  {
+   "quarter": "Q1 2016",
+   "fy": 2016,
+   "q": 1,
+   "published": "2016-04-26",
+   "source": "LL72",
+   "release": "Apr 26",
+   "release_time": "8-K accepted 2016-04-26 06:25 ET (before the open); conference call 'begin at 9:00 a.m.' ET",
+   "period_end": "2016-03-31",
+   "raw": {
+    "rev_m": 4865.1,
+    "rev_prior_m": 4644.7,
+    "cos_m": 1323.0,
+    "cos_prior_m": 1192.7,
+    "pretax_m": 566.8,
+    "pretax_prior_m": 617.9,
+    "diluted_shares_m": 1063.075
+   },
+   "sales_b": 4.865,
+   "sales_pct": 4.7,
+   "us_pct": 16.0,
+   "intl_pct": -5.0,
+   "us_b": 2.556,
+   "intl_b": 2.31,
+   "geo_note": "U.S. +16% to $2.556B, outside the U.S. -5% to $2.310B, as the release states them",
+   "gross_margin": 72.81,
+   "gross_margin_bp": -151.5,
+   "pretax_margin": 11.65,
+   "pretax_margin_bp": -165.3,
+   "eps_q": 0.41,
+   "eps_q_prior": 0.5,
+   "diluted_shares_m": 1063.075,
+   "lc_pct": 8.0,
+   "lc_note": "5% less the -3 points of exchange rates the release states",
+   "cash_return_text": "'As part of its previously announced share repurchase program, the company repurchased approximately $300 million of stock in the first quarter of 2016.' (Q1 2016 release)",
+   "next_print": "Q2 2016 print (late July)",
+   "eps_note": "reported EPS $0.41 against $0.50; the company's non-GAAP figure $0.83 against $0.87 is shown only (it also removes the amortization of intangible assets and acquired in-process research and development, which recur; the history is GAAP: the NKE FY2007, PFE and BMY rule)"
+  },
+  {
+   "quarter": "Q2 2016",
+   "fy": 2016,
+   "q": 2,
+   "published": "2016-07-26",
+   "source": "LL73",
+   "release": "Jul 26",
+   "release_time": "8-K accepted 2016-07-26 06:25 ET (before the open); conference call 'begin at 9:00 a.m.' ET",
+   "period_end": "2016-06-30",
+   "raw": {
+    "rev_m": 5404.8,
+    "rev_prior_m": 4978.7,
+    "cos_m": 1465.0,
+    "cos_prior_m": 1218.4,
+    "pretax_m": 944.5,
+    "pretax_prior_m": 679.7,
+    "diluted_shares_m": 1060.083
+   },
+   "sales_b": 5.405,
+   "sales_pct": 8.6,
+   "us_pct": 14.0,
+   "intl_pct": 3.0,
+   "us_b": 2.89,
+   "intl_b": 2.515,
+   "geo_note": "U.S. +14% to $2.890B, outside the U.S. +3% to $2.515B, as the release states them",
+   "gross_margin": 72.89,
+   "gross_margin_bp": -263.3,
+   "pretax_margin": 17.48,
+   "pretax_margin_bp": 382.3,
+   "eps_q": 0.71,
+   "eps_q_prior": 0.56,
+   "diluted_shares_m": 1060.083,
+   "lc_pct": 9.0,
+   "lc_note": "9% with exchange rates' impact stated as 'relatively flat' (read as 0)",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q3 2016 print (late October)",
+   "eps_note": "reported EPS $0.71 against $0.56; the company's non-GAAP figure $0.86 against $0.90 is shown only (it also removes the amortization of intangible assets and acquired in-process research and development, which recur; the history is GAAP: the NKE FY2007, PFE and BMY rule)"
+  },
+  {
+   "quarter": "Q3 2016",
+   "fy": 2016,
+   "q": 3,
+   "published": "2016-10-25",
+   "source": "LL74",
+   "release": "Oct 25",
+   "release_time": "8-K accepted 2016-10-25 06:28 ET (before the open); conference call 'begin at 9:00 a.m.' ET",
+   "period_end": "2016-09-30",
+   "raw": {
+    "rev_m": 5191.7,
+    "rev_prior_m": 4959.7,
+    "cos_m": 1400.9,
+    "cos_prior_m": 1236.9,
+    "pretax_m": 970.7,
+    "pretax_prior_m": 1047.8,
+    "diluted_shares_m": 1060.786
+   },
+   "sales_b": 5.192,
+   "sales_pct": 4.7,
+   "us_pct": 12.0,
+   "intl_pct": -3.0,
+   "us_b": 2.838,
+   "intl_b": 2.354,
+   "geo_note": "U.S. +12% to $2.838B, outside the U.S. -3% to $2.354B, as the release states them",
+   "gross_margin": 73.02,
+   "gross_margin_bp": -204.4,
+   "pretax_margin": 18.7,
+   "pretax_margin_bp": -242.9,
+   "eps_q": 0.73,
+   "eps_q_prior": 0.75,
+   "diluted_shares_m": 1060.786,
+   "lc_pct": 4.0,
+   "lc_note": "5% less the +1 points of exchange rates the release states",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q4 2016 print (late January)",
+   "eps_note": "reported EPS $0.73 against $0.75; the company's non-GAAP figure $0.88 against $0.89 is shown only (it also removes the amortization of intangible assets and acquired in-process research and development, which recur; the history is GAAP: the NKE FY2007, PFE and BMY rule)"
+  },
+  {
+   "quarter": "Q4 2016",
+   "fy": 2016,
+   "q": 4,
+   "published": "2017-01-31",
+   "source": "LL76",
+   "release": "Jan 31",
+   "release_time": "8-K accepted 2017-01-31 08:54 ET (before the open); conference call 'today from 9:00 a.m. to 10:30 a.m.' ET",
+   "period_end": "2016-12-31",
+   "raw": {
+    "rev_m": 5760.5,
+    "rev_prior_m": 5375.6,
+    "cos_m": 1466.0,
+    "cos_prior_m": 1389.2,
+    "pretax_m": 892.0,
+    "pretax_prior_m": 444.6,
+    "diluted_shares_m": 1061.498
+   },
+   "sales_b": 5.761,
+   "sales_pct": 7.2,
+   "us_pct": 14.0,
+   "intl_pct": -1.0,
+   "us_b": 3.223,
+   "intl_b": 2.537,
+   "geo_note": "U.S. +14% to $3.223B, outside the U.S. -1% to $2.537B, as the release states them",
+   "gross_margin": 74.55,
+   "gross_margin_bp": 39.4,
+   "pretax_margin": 15.48,
+   "pretax_margin_bp": 721.4,
+   "eps_q": 0.73,
+   "eps_q_prior": 0.45,
+   "diluted_shares_m": 1061.498,
+   "lc_pct": 6.0,
+   "lc_note": "7% less the +1 points of exchange rates the release states",
+   "cash_return_text": "'As part of its previously announced share repurchase program, the company paid $300 million to repurchase company stock in the fourth quarter of 2016.' (Q4 2016 release)",
+   "next_print": "Q1 2017 print (late April)",
+   "eps_note": "reported EPS $0.73 against $0.45; the company's non-GAAP figure $0.95 against $0.78 is shown only (it also removes the amortization of intangible assets and acquired in-process research and development, which recur; the history is GAAP: the NKE FY2007, PFE and BMY rule)",
+   "fy_actual": {
+    "fy": 2016,
+    "fy_label": "FY16",
+    "eps_normalized": 2.58,
+    "revenue_usd_b": 21.2221,
+    "diluted_shares_m": 1061.825,
+    "normalization_note": "FY2016 $2.58 diluted EPS (Q4 2016 release; GAAP, the company's non-GAAP $3.52 is shown only)",
+    "gross_margin": 73.35,
+    "pretax_margin": 15.9,
+    "pretax_margin_note": "FY16 income before income taxes $3,374.0M / revenue $21,222.1M (Q4 2016 release)",
+    "sales_growth": 6.3,
+    "us_pct": 14.0,
+    "intl_pct": -1.0,
+    "tax_rate": 0.189,
+    "tax_note": "FY16 income taxes $636.4M / pre-tax $3,374.0M"
+   }
+  },
+  {
+   "quarter": "Q1 2017",
+   "fy": 2017,
+   "q": 1,
+   "published": "2017-04-25",
+   "source": "LL78",
+   "release": "Apr 25",
+   "release_time": "8-K accepted 2017-04-25 06:28 ET (before the open); conference call 'begin at 9 a.m.' ET",
+   "period_end": "2017-03-31",
+   "raw": {
+    "rev_m": 5228.3,
+    "rev_prior_m": 4865.1,
+    "cos_m": 1327.7,
+    "cos_prior_m": 1323.0,
+    "pretax_m": 61.2,
+    "pretax_prior_m": 566.8,
+    "diluted_shares_m": 1056.306
+   },
+   "sales_b": 5.228,
+   "sales_pct": 7.5,
+   "us_pct": 15.0,
+   "intl_pct": -1.0,
+   "us_b": 2.934,
+   "intl_b": 2.295,
+   "geo_note": "U.S. +15% to $2.934B, outside the U.S. -1% to $2.295B, as the release states them",
+   "gross_margin": 74.61,
+   "gross_margin_bp": 179.9,
+   "pretax_margin": 1.17,
+   "pretax_margin_bp": -1048.0,
+   "eps_q": -0.1,
+   "eps_q_prior": 0.41,
+   "diluted_shares_m": 1056.306,
+   "lc_pct": 8.0,
+   "lc_note": "7% less the -1 points of exchange rates the release states",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q2 2017 print (late July)",
+   "eps_note": "reported EPS a loss of $0.10 against $0.41; the company's non-GAAP figure $0.98 against $0.83 is shown only (it also removes the amortization of intangible assets and acquired in-process research and development, which recur; the history is GAAP: the NKE FY2007, PFE and BMY rule)",
+   "note": "the quarter's pre-tax income carries the acquired in-process research and development charge for CoLucid (reported EPS a loss of $0.10)"
+  },
+  {
+   "quarter": "Q2 2017",
+   "fy": 2017,
+   "q": 2,
+   "published": "2017-07-25",
+   "source": "LL79",
+   "release": "Jul 25",
+   "release_time": "8-K accepted 2017-07-25 06:36 ET (before the open); conference call 'today from 9 a.m.' ET",
+   "period_end": "2017-06-30",
+   "raw": {
+    "rev_m": 5824.3,
+    "rev_prior_m": 5404.8,
+    "cos_m": 1551.6,
+    "cos_prior_m": 1465.0,
+    "pretax_m": 1260.5,
+    "pretax_prior_m": 944.5,
+    "diluted_shares_m": 1057.11
+   },
+   "sales_b": 5.824,
+   "sales_pct": 7.8,
+   "us_pct": 15.0,
+   "intl_pct": -1.0,
+   "us_b": 3.324,
+   "intl_b": 2.5,
+   "geo_note": "U.S. +15% to $3.324B, outside the U.S. -1% to $2.500B, as the release states them",
+   "gross_margin": 73.36,
+   "gross_margin_bp": 46.5,
+   "pretax_margin": 21.64,
+   "pretax_margin_bp": 416.7,
+   "eps_q": 0.95,
+   "eps_q_prior": 0.71,
+   "diluted_shares_m": 1057.11,
+   "lc_pct": 9.0,
+   "lc_note": "8% less the -1 points of exchange rates the release states",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q3 2017 print (late October)",
+   "eps_note": "reported EPS $0.95 against $0.71; the company's non-GAAP figure $1.11 against $0.86 is shown only (it also removes the amortization of intangible assets and acquired in-process research and development, which recur; the history is GAAP: the NKE FY2007, PFE and BMY rule)"
+  },
+  {
+   "quarter": "Q3 2017",
+   "fy": 2017,
+   "q": 3,
+   "published": "2017-10-24",
+   "source": "LL80",
+   "release": "Oct 24",
+   "release_time": "8-K accepted 2017-10-24 06:30 ET (before the open); conference call 'today from 9 a.m.' ET",
+   "period_end": "2017-09-30",
+   "raw": {
+    "rev_m": 5658.0,
+    "rev_prior_m": 5191.7,
+    "cos_m": 1566.1,
+    "cos_prior_m": 1400.9,
+    "pretax_m": 591.6,
+    "pretax_prior_m": 970.7,
+    "diluted_shares_m": 1056.025
+   },
+   "sales_b": 5.658,
+   "sales_pct": 9.0,
+   "us_pct": 9.0,
+   "intl_pct": 8.0,
+   "us_b": 3.104,
+   "intl_b": 2.554,
+   "geo_note": "U.S. +9% to $3.104B, outside the U.S. +8% to $2.554B, as the release states them",
+   "gross_margin": 72.32,
+   "gross_margin_bp": -69.6,
+   "pretax_margin": 10.46,
+   "pretax_margin_bp": -824.1,
+   "eps_q": 0.53,
+   "eps_q_prior": 0.73,
+   "diluted_shares_m": 1056.025,
+   "lc_pct": 9.0,
+   "lc_note": "9%: the release states no exchange-rate effect, its volume (7 percent) and realized-price (2 percent) parts making up the growth, read as 0 points",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q4 2017 print (late January)",
+   "eps_note": "reported EPS $0.53 against $0.73; the company's non-GAAP figure $1.05 against $0.88 is shown only (it also removes the amortization of intangible assets and acquired in-process research and development, which recur; the history is GAAP: the NKE FY2007, PFE and BMY rule)",
+   "note": "the quarter's pre-tax income carries the charges of the streamlining initiatives ('charges associated with recently announced streamlining initiatives', the release's guide section)"
   }
  ],
  "guides": [
@@ -3421,9 +4942,499 @@
     23.4
    ],
    "rev_label": "revenue"
+  },
+  {
+   "fy": 2014,
+   "published": "2014-01-07",
+   "source": "LL57",
+   "doc": "8-K of 2014-01-07",
+   "eps_guide": [
+    2.77,
+    2.85
+   ],
+   "eps_adj": [
+    2.77,
+    2.85
+   ],
+   "adj_why": "shown only: the same range on both bases",
+   "rev_guide_usd_b": [
+    19.2,
+    19.8
+   ],
+   "rev_label": "revenue",
+   "note": "'Company’s 2013 financial expectations remain unchanged.' (no figure: the Q3 2013 range stands for FY2013)"
+  },
+  {
+   "fy": 2014,
+   "published": "2014-01-30",
+   "source": "LL58",
+   "doc": "Q4 2013 release",
+   "eps_guide": [
+    2.77,
+    2.85
+   ],
+   "eps_adj": [
+    2.77,
+    2.85
+   ],
+   "adj_why": "shown only: the same range on both bases",
+   "rev_guide_usd_b": [
+    19.2,
+    19.8
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2014,
+   "published": "2014-04-24",
+   "source": "LL60",
+   "doc": "Q1 2014 release",
+   "eps_guide": [
+    2.7,
+    2.78
+   ],
+   "eps_adj": [
+    2.72,
+    2.8
+   ],
+   "adj_why": "shown only: it excludes asset impairment, restructuring and other special charges",
+   "rev_guide_usd_b": [
+    19.4,
+    20.0
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2014,
+   "published": "2014-07-24",
+   "source": "LL61",
+   "doc": "Q2 2014 release",
+   "eps_guide": [
+    2.67,
+    2.75
+   ],
+   "eps_adj": [
+    2.72,
+    2.8
+   ],
+   "adj_why": "shown only: it excludes acquired in-process research and development, which recurs, and asset impairment, restructuring and other special charges",
+   "rev_guide_usd_b": [
+    19.4,
+    20.0
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2014,
+   "published": "2014-10-23",
+   "source": "LL62",
+   "doc": "Q3 2014 release",
+   "eps_guide": [
+    2.34,
+    2.42
+   ],
+   "eps_adj": [
+    2.72,
+    2.8
+   ],
+   "adj_why": "shown only: it excludes acquired in-process research and development, which recurs, the U.S. Branded Prescription Drug Fee charge and asset impairment, restructuring and other special charges",
+   "rev_guide_usd_b": [
+    19.4,
+    19.8
+   ],
+   "rev_label": "revenue",
+   "note": "the reported range includes the U.S. Branded Prescription Drug Fee charge ('U.S. Branded Prescription Drug Fee | .11 | 0')"
+  },
+  {
+   "fy": 2014,
+   "published": "2015-01-07",
+   "source": "LL63",
+   "doc": "8-K of 2015-01-07",
+   "eps_guide": [
+    2.15,
+    2.23
+   ],
+   "eps_adj": [
+    2.72,
+    2.8
+   ],
+   "adj_why": "shown only: it excludes acquired in-process research and development, which recurs, the U.S. Branded Prescription Drug Fee charge and asset impairment, restructuring and other special charges",
+   "note": "'This revision is due to fourth-quarter global restructuring charges in an effort to reduce the company’s cost structure and acquired in-process research and development charges associated with the Adocia collaboration.'; the 8-K also says 'Prior reported expectations were $2.36 to $2.44.', a range no filing states (the Q3 2014 release's $2.34-2.42 is the last one filed)"
+  },
+  {
+   "fy": 2015,
+   "published": "2015-01-07",
+   "source": "LL63",
+   "doc": "8-K of 2015-01-07",
+   "eps_guide": [
+    2.4,
+    2.5
+   ],
+   "eps_adj": [
+    3.1,
+    3.2
+   ],
+   "adj_why": "shown only: it excludes the amortization of intangible assets, which recurs, besides the Novartis Animal Health and Lohmann acquisition costs",
+   "rev_guide_usd_b": [
+    20.3,
+    20.8
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2015,
+   "published": "2015-01-30",
+   "source": "LL64",
+   "doc": "Q4 2014 release",
+   "eps_guide": [
+    2.4,
+    2.5
+   ],
+   "eps_adj": [
+    3.1,
+    3.2
+   ],
+   "adj_why": "shown only: it excludes the amortization of intangible assets, which recurs, besides the Novartis Animal Health and Lohmann acquisition costs",
+   "rev_guide_usd_b": [
+    19.5,
+    20.0
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2015,
+   "published": "2015-04-23",
+   "source": "LL66",
+   "doc": "Q1 2015 release",
+   "eps_guide": [
+    2.21,
+    2.31
+   ],
+   "eps_adj": [
+    3.1,
+    3.2
+   ],
+   "adj_why": "shown only: it excludes the amortization of intangible assets, which recurs, besides acquired in-process research and development, which recurs, and asset impairment, restructuring, integration and inventory step-up costs",
+   "rev_guide_usd_b": [
+    19.5,
+    20.0
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2015,
+   "published": "2015-07-23",
+   "source": "LL67",
+   "doc": "Q2 2015 release",
+   "eps_guide": [
+    2.2,
+    2.3
+   ],
+   "eps_adj": [
+    3.2,
+    3.3
+   ],
+   "adj_why": "shown only: it excludes the amortization of intangible assets, which recurs, besides acquired in-process research and development, which recurs, the net charge related to the repurchase of debt, and asset impairment, restructuring, integration and inventory step-up costs",
+   "rev_guide_usd_b": [
+    19.7,
+    20.0
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2015,
+   "published": "2015-10-22",
+   "source": "LL68",
+   "doc": "Q3 2015 release",
+   "eps_guide": [
+    2.4,
+    2.45
+   ],
+   "eps_adj": [
+    3.4,
+    3.45
+   ],
+   "adj_why": "shown only: it excludes the amortization of intangible assets, which recurs, besides acquired in-process research and development, which recurs, the net charge related to the repurchase of debt, and asset impairment, restructuring, integration and inventory step-up costs",
+   "rev_guide_usd_b": [
+    19.7,
+    20.0
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2015,
+   "published": "2016-01-05",
+   "source": "LL69",
+   "doc": "8-K of 2016-01-05",
+   "eps_guide": [
+    2.28,
+    2.33
+   ],
+   "eps_adj": [
+    3.4,
+    3.45
+   ],
+   "adj_why": "shown only: it excludes the amortization of intangible assets, which recurs, besides acquired in-process research and development, which recurs, the net charge related to the repurchase of debt, and asset impairment, restructuring, integration and inventory step-up costs",
+   "note": "'This revision is due to fourth-quarter after-tax charges of approximately $0.12 per share associated primarily with the previously announced acquisition of worldwide rights to an intranasal glucagon from Locemia Solutions.'"
+  },
+  {
+   "fy": 2016,
+   "published": "2016-01-05",
+   "source": "LL69",
+   "doc": "8-K of 2016-01-05",
+   "eps_guide": [
+    2.92,
+    3.02
+   ],
+   "eps_adj": [
+    3.45,
+    3.55
+   ],
+   "adj_why": "shown only: it excludes the amortization of intangible assets, which recurs, besides the Novartis Animal Health integration costs",
+   "rev_guide_usd_b": [
+    20.2,
+    20.7
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2016,
+   "published": "2016-01-28",
+   "source": "LL70",
+   "doc": "Q4 2015 release",
+   "eps_guide": [
+    2.83,
+    2.93
+   ],
+   "eps_adj": [
+    3.45,
+    3.55
+   ],
+   "adj_why": "shown only: it excludes the amortization of intangible assets, which recurs, besides asset impairment, restructuring and other special charges, including the Novartis Animal Health integration costs",
+   "rev_guide_usd_b": [
+    20.2,
+    20.7
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2016,
+   "published": "2016-04-26",
+   "source": "LL72",
+   "doc": "Q1 2016 release",
+   "eps_guide": [
+    2.68,
+    2.78
+   ],
+   "eps_adj": [
+    3.5,
+    3.6
+   ],
+   "adj_why": "shown only: it excludes the amortization of intangible assets, which recurs, besides asset impairment, restructuring and other special charges and the Venezuela charge",
+   "rev_guide_usd_b": [
+    20.6,
+    21.1
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2016,
+   "published": "2016-07-26",
+   "source": "LL73",
+   "doc": "Q2 2016 release",
+   "eps_guide": [
+    2.68,
+    2.78
+   ],
+   "eps_adj": [
+    3.5,
+    3.6
+   ],
+   "adj_why": "shown only: it excludes the amortization of intangible assets, which recurs, besides asset impairment, restructuring and other special charges and the Venezuela charge",
+   "rev_guide_usd_b": [
+    20.6,
+    21.1
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2016,
+   "published": "2016-10-25",
+   "source": "LL74",
+   "doc": "Q3 2016 release",
+   "eps_guide": [
+    2.66,
+    2.76
+   ],
+   "eps_adj": [
+    3.5,
+    3.6
+   ],
+   "adj_why": "shown only: it excludes the amortization of intangible assets, which recurs, besides asset impairment, restructuring and other special charges and the Venezuela charge",
+   "rev_guide_usd_b": [
+    20.8,
+    21.2
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2016,
+   "published": "2016-12-16",
+   "source": "LL75",
+   "doc": "8-K of 2016-12-15",
+   "eps_guide": [
+    2.57,
+    2.67
+   ],
+   "eps_adj": [
+    3.5,
+    3.6
+   ],
+   "adj_why": "shown only: it excludes the amortization of intangible assets, which recurs, besides acquired in-process research and development, which recurs, asset impairment, restructuring and other special charges and the Venezuela charge",
+   "rev_guide_usd_b": [
+    20.8,
+    21.2
+   ],
+   "rev_label": "revenue",
+   "note": "'This revision is primarily due to restructuring charges associated with the negative outcome of the recent solanezumab study, as well as the charge associated with the agreement with AstraZeneca to co-develop MEDI1814.'"
+  },
+  {
+   "fy": 2017,
+   "published": "2016-12-16",
+   "source": "LL75",
+   "doc": "8-K of 2016-12-15",
+   "eps_guide": [
+    3.51,
+    3.61
+   ],
+   "eps_adj": [
+    4.05,
+    4.15
+   ],
+   "adj_why": "shown only: it excludes the amortization of intangible assets, which recurs, besides inventory step-up costs for the planned acquisition of Boehringer Ingelheim Vetmedica’s U.S. feline, canine and rabies vaccines portfolio and the Novartis Animal Health integration costs",
+   "rev_guide_usd_b": [
+    21.8,
+    22.3
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2017,
+   "published": "2017-01-31",
+   "source": "LL76",
+   "doc": "Q4 2016 release",
+   "eps_guide": [
+    2.69,
+    2.79
+   ],
+   "eps_adj": [
+    4.05,
+    4.15
+   ],
+   "adj_why": "shown only: it excludes the amortization of intangible assets, which recurs, besides acquired in-process research and development, which recurs, inventory step-up costs and asset impairment, restructuring and other special charges",
+   "rev_guide_usd_b": [
+    21.8,
+    22.3
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2017,
+   "published": "2017-04-25",
+   "source": "LL78",
+   "doc": "Q1 2017 release",
+   "eps_guide": [
+    2.6,
+    2.7
+   ],
+   "eps_adj": [
+    4.05,
+    4.15
+   ],
+   "adj_why": "shown only: it excludes the amortization of intangible assets, which recurs, besides acquired in-process research and development, which recurs, inventory step-up costs and asset impairment, restructuring and other special charges",
+   "rev_guide_usd_b": [
+    21.8,
+    22.3
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2017,
+   "published": "2017-07-25",
+   "source": "LL79",
+   "doc": "Q2 2017 release",
+   "eps_guide": [
+    2.51,
+    2.61
+   ],
+   "eps_adj": [
+    4.1,
+    4.2
+   ],
+   "adj_why": "shown only: it excludes the amortization of intangible assets, which recurs, besides acquired in-process research and development, which recurs, inventory step-up costs and asset impairment, restructuring and other special charges",
+   "rev_guide_usd_b": [
+    22.0,
+    22.5
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2017,
+   "published": "2017-10-24",
+   "source": "LL80",
+   "doc": "Q3 2017 release",
+   "eps_guide": [
+    1.73,
+    1.83
+   ],
+   "eps_adj": [
+    4.15,
+    4.25
+   ],
+   "adj_why": "shown only: it excludes the amortization of intangible assets, which recurs, besides acquired in-process research and development, which recurs, inventory step-up costs and asset impairment, restructuring and other special charges",
+   "rev_guide_usd_b": [
+    22.4,
+    22.7
+   ],
+   "rev_label": "revenue",
+   "note": "the reported range includes the charges of the streamlining initiatives ('Asset impairment, restructuring and other special charges, including the estimated participation of the U.S. voluntary early retirement program, global severance, facility closures and Novartis Animal Health integration costs | .99')"
+  },
+  {
+   "fy": 2017,
+   "published": "2017-12-14",
+   "source": "LL81",
+   "doc": "8-K of 2017-12-13",
+   "eps_guide": [
+    1.56,
+    1.66
+   ],
+   "eps_adj": [
+    4.15,
+    4.25
+   ],
+   "adj_why": "shown only: it excludes the amortization of intangible assets, which recurs, besides acquired in-process research and development, which recurs, inventory step-up costs and asset impairment, restructuring and other special charges",
+   "rev_guide_usd_b": [
+    22.4,
+    22.7
+   ],
+   "rev_label": "revenue",
+   "note": "'This revision is primarily due to changes in estimates related to asset impairment, restructuring and other special charges.'"
   }
  ],
- "dividends": [],
+ "dividends": [
+  {
+   "published": "2015-01-30",
+   "source": "LL64",
+   "quarterly": 0.5,
+   "note": "$0.50 quarterly ('The company announced a dividend for the first quarter of 2015 of $0.50 per share on outstanding common stock representing a 2 percent increase.', Q4 2014 release)"
+  },
+  {
+   "published": "2016-01-28",
+   "source": "LL70",
+   "quarterly": 0.51,
+   "note": "$0.51 quarterly ('The company announced a dividend for the first quarter of 2016 of $0.51 per share ... The annual indicated rate is now $2.04 per share.', Q4 2015 release)"
+  }
+ ],
  "events": [],
  "company_names": [],
  "splits": [],
