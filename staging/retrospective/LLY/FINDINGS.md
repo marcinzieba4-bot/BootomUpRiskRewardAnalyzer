@@ -1,16 +1,20 @@
 # LLY retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the LLY weekly dates: 314, 105 from 2008-01-04 to 2009-12-31 and 209 from 2010-01-08 to
-2013-12-31, all Eli Lilly and Company (NYSE: LLY).
+Patterns seen in `outcome.json` for the LLY weekly dates: 523, 105 from 2008-01-04 to 2009-12-31, 209 from 2010-01-08 to 2013-12-31
+and 209 from 2014-01-03 to 2017-12-29, all Eli Lilly and Company (NYSE: LLY).
 They are **labels and hypotheses**: never feed them back into the method or the fact sheet. The batch was scored only after its
 point-in-time build was committed and pushed (8d1f450, the empty-slot correction the firewall found 96e4c9f, firewall result 73b08d1);
 the outcomes were computed on 2026-11-21. The 2010-2013 batch was scored only after its build, checks, README section and firewall
-result were committed and pushed (5a27368, f8db0dc, 5446ffc), on 2026-11-21. Every date has its 6-month, 1-, 2- and 3-year horizons
-(the last ends 2012-12-31 for 2008-2009 and 2016-12-30 for 2010-2013). Total returns
-include the quarterly dividends ($0.425 to the ex-date of 2008-02-13, $0.47 from it, $0.49 from 2009-02-11, $0.50 from 2015-02-11 and $0.51 from 2016-02-10). No
+result were committed and pushed (5a27368, f8db0dc, 5446ffc), on 2026-11-21. The 2014-2017 batch was built in a new session and scored
+only after its build, checks, README section and firewall result were committed and pushed (c64c37a, 3e0e6d0, b3185fb), on 2026-11-22;
+this file was first opened in that session after those pushes. Every date has its 6-month, 1-, 2- and 3-year horizons
+(the last ends 2012-12-31 for 2008-2009, 2016-12-30 for 2010-2013 and 2020-12-29 for 2014-2017). Total returns
+include the quarterly dividends ($0.425 to the ex-date of 2008-02-13, $0.47 from it, $0.49 from 2009-02-11, $0.50 from 2015-02-11, $0.51
+from 2016-02-10, $0.52 from 2017-02-13, $0.5625 from 2018-02-14, $0.645 from 2019-02-14 and $0.74 from 2020-02-13). No
 split falls in any horizon, so every price is as traded. Medians of an even count take the upper middle value
 (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years and +52.1% over three. "Call held" is `call_check_2y`: CHEAP should
-clear the hurdle or beat the benchmark (SPY). Every date was CHEAP and BUY, so the tables test that one call against the calendar.
+clear the hurdle or beat the benchmark (SPY), RICH should miss the hurdle and lag it. Every date of 2008-2013 was CHEAP and BUY, so their
+tables test that one call against the calendar; 2014-2017 has 4 CHEAP and BUY dates and 205 RICH and AVOID.
 
 ## 2008 (53 dates)
 
@@ -168,6 +172,104 @@ clear the hurdle or beat the benchmark (SPY). Every date was CHEAP and BUY, so t
   +59.1% to +89.1%; those after the Q4 2012 print (FY13E $4.175, up to 13.8x) +31.1% to +44.1%. Cymbalta lost U.S. exclusivity in
   December 2013, at the start of these horizons.
 
+## 2014 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 4 | +64.1% | +54.5% to +72.6% | 4 | 4 | +52.3% | 4 |
+| class RICH, legacy tier AVOID | 48 | +31.6% | -0.8% to +53.8% | 19 | 43 | +28.8% | 5 |
+| FY13E $4.355 (2014-01-03 to 2014-01-24) | 4 | +64.1% | +54.5% to +72.6% | 4 | 4 | +52.3% | 4 |
+| FY14E $2.81 (2014-01-31 to 2014-04-17) | 12 | +32.1% | +28.5% to +53.8% | 5 | 12 | +37.7% | 0 |
+| FY14E $2.74 (2014-04-25 to 2014-07-18) | 13 | +32.2% | +24.6% to +41.1% | 8 | 13 | +34.3% | 0 |
+| FY14E $2.71 (2014-07-25 to 2014-10-17) | 13 | +31.9% | +25.0% to +43.7% | 6 | 13 | +24.1% | 0 |
+| FY14E $2.38 (2014-10-24 to 2014-12-26) | 10 | +17.0% | -0.8% to +23.5% | 0 | 5 | +15.8% | 5 |
+| latest print Q3 2013 (2014-01-03 to 2014-01-24) | 4 | +64.1% | +54.5% to +72.6% | 4 | 4 | +52.3% | 4 |
+| latest print Q4 2013 (2014-01-31 to 2014-04-17) | 12 | +32.1% | +28.5% to +53.8% | 5 | 12 | +37.7% | 0 |
+| latest print Q1 2014 (2014-04-25 to 2014-07-18) | 13 | +32.2% | +24.6% to +41.1% | 8 | 13 | +34.3% | 0 |
+| latest print Q2 2014 (2014-07-25 to 2014-10-17) | 13 | +31.9% | +25.0% to +43.7% | 6 | 13 | +24.1% | 0 |
+| latest print Q3 2014 (2014-10-24 to 2014-12-26) | 10 | +17.0% | -0.8% to +23.5% | 0 | 5 | +15.8% | 5 |
+
+- **CHEAP held on all 4 dates of January 2014; RICH held on 5 of 48.** The January entries ($51.10-55.16, 11.7-12.7x the FY2013 guide)
+  returned +54.5% to +72.6% over two years, 47.8-56.8pp ahead of SPY. From the Q4 2013 print the models called RICH (18.9-32.9x the
+  falling FY2014 guide, against the window's 12.7x median), and the entries of 2014-01-31 to 2014-10-17 still returned +24.6% to +53.8%,
+  beating SPY's +5.8% to +17.9% on every one (by 12.2-40.6pp) and clearing the hurdle on 19. The call held only on the 5 dates from
+  2014-11-28 to 2014-12-26 ($68.12-72.40, 28.6-30.4x): -0.8% to +10.6%, under the hurdle and 1.9-13.9pp behind SPY. Over three years the 2014
+  entries returned +28.2% to +58.4% (median +43.8%) and 46 beat SPY.
+- **The two-year price landed nearest BULL on 49 of 52 dates** ($67.20-84.26), BASE on 3; the floor ($31-48) was never touched (the
+  worst drawdown within two years was -26.7%). FY2014's reported EPS came in at $2.23 against FY2013's $4.32, at the top of the last
+  guide ($2.15-2.23); the market paid more for the smaller earnings, not less.
+
+## 2015 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 53 | +6.8% | -3.6% to +28.5% | 0 | 11 | -1.3% | 41 |
+| FY14E $2.38 (2015-01-02 to 2015-01-02) | 1 | +10.7% | +10.7% to +10.7% | 0 | 0 | +9.0% | 1 |
+| FY14E $2.19 (2015-01-09 to 2015-01-23) | 3 | +14.8% | +11.4% to +15.2% | 0 | 0 | +7.7% | 3 |
+| FY15E $2.45 (2015-01-30 to 2015-04-17) | 12 | +20.0% | +9.4% to +28.5% | 0 | 10 | +7.8% | 2 |
+| FY15E $2.26 (2015-04-24 to 2015-07-17) | 13 | +4.6% | -2.2% to +22.2% | 0 | 1 | -0.6% | 11 |
+| FY15E $2.25 (2015-07-24 to 2015-10-16) | 13 | +4.7% | -3.6% to +10.5% | 0 | 0 | -5.5% | 13 |
+| FY15E $2.425 (2015-10-23 to 2015-12-31) | 11 | +6.4% | +3.4% to +16.6% | 0 | 0 | -2.4% | 11 |
+| latest print Q3 2014 (2015-01-02 to 2015-01-23) | 4 | +14.8% | +10.7% to +15.2% | 0 | 0 | +9.0% | 4 |
+| latest print Q4 2014 (2015-01-30 to 2015-04-17) | 12 | +20.0% | +9.4% to +28.5% | 0 | 10 | +7.8% | 2 |
+| latest print Q1 2015 (2015-04-24 to 2015-07-17) | 13 | +4.6% | -2.2% to +22.2% | 0 | 1 | -0.6% | 11 |
+| latest print Q2 2015 (2015-07-24 to 2015-10-16) | 13 | +4.7% | -3.6% to +10.5% | 0 | 0 | -5.5% | 13 |
+| latest print Q3 2015 (2015-10-23 to 2015-12-31) | 11 | +6.4% | +3.4% to +16.6% | 0 | 0 | -2.4% | 11 |
+
+- **RICH held on 41 of 53 dates of 2015.** From $68.41-88.49 (27.9-39.3x the reported guide) the entries returned -3.6% to +28.5% over
+  two years against SPY's +13.1% to +38.8%: none cleared the hurdle and only 11 beat SPY, all from 2015-02-06 to 2015-04-24 (by 0.7-9.7pp;
+  the call missed on those 11 and on 2015-05-01, level with SPY). From 2015-05-08 it held on all 35 dates ($72.90-88.49, 32.3-39.3x:
+  -3.6% to +16.6%, 1.5-34.6pp behind SPY). Over three years
+  +6.4% to +49.0% (median +25.5%), none clearing the +52.1% hurdle and 10 beating SPY.
+- The two-year price ($73.55-87.18) landed nearest XBULL on 43 dates and BULL on 10: the scenarios' prices sit far apart (BEAR $5-13,
+  XBULL $96-106), and a flat price two years on is closest to the top case. The worst drawdown within two years was -21.7% to -26.7%.
+
+## 2016 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 52 | +20.9% | +6.9% to +81.6% | 20 | 18 | +10.4% | 32 |
+| FY15E $2.305 (2016-01-08 to 2016-01-22) | 3 | +11.1% | +8.6% to +12.1% | 0 | 0 | +1.4% | 3 |
+| FY16E $2.88 (2016-01-29 to 2016-04-22) | 13 | +11.1% | +6.9% to +19.3% | 0 | 0 | +12.1% | 13 |
+| FY16E $2.73 (2016-04-27 to 2016-10-21) | 26 | +23.3% | +10.7% to +48.5% | 10 | 8 | +8.3% | 16 |
+| FY16E $2.71 (2016-10-26 to 2016-12-09) | 7 | +54.1% | +44.2% to +81.6% | 7 | 7 | +23.4% | 0 |
+| FY16E $2.62 (2016-12-16 to 2016-12-30) | 3 | +58.6% | +54.2% to +61.2% | 3 | 3 | +26.4% | 0 |
+| latest print Q3 2015 (2016-01-08 to 2016-01-22) | 3 | +11.1% | +8.6% to +12.1% | 0 | 0 | +1.4% | 3 |
+| latest print Q4 2015 (2016-01-29 to 2016-04-22) | 13 | +11.1% | +6.9% to +19.3% | 0 | 0 | +12.1% | 13 |
+| latest print Q1 2016 (2016-04-27 to 2016-07-22) | 13 | +15.4% | +10.7% to +23.3% | 0 | 0 | +9.3% | 13 |
+| latest print Q2 2016 (2016-07-27 to 2016-10-21) | 13 | +39.7% | +20.9% to +48.5% | 10 | 8 | +8.3% | 3 |
+| latest print Q3 2016 (2016-10-26 to 2016-12-30) | 10 | +58.6% | +44.2% to +81.6% | 10 | 10 | +26.4% | 0 |
+
+- **RICH held on 32 of 52 dates of 2016.** The 32 entries to 2016-08-12 ($70.95-83.40, 24.6-35.8x) returned +6.9% to +32.1% over two
+  years, under the hurdle and 1.9-44.7pp behind SPY, and the call held on every one; the 20 from 2016-08-19 ($67.71-82.09, 25.0-30.1x)
+  returned +36.3% to +81.6%, cleared the hurdle on all 20 and beat SPY on 18, and it held on none. Over three years +37.8% to +89.5% (median +62.5%): 46 beat SPY and 33 cleared the hurdle.
+- The two-year price ($74.76-118.64) landed nearest BULL on 28 dates and XBULL on 24; the floor ($29-40) was never touched.
+
+## 2017 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 52 | +46.9% | +29.7% to +61.4% | 48 | 52 | +35.1% | 0 |
+| FY16E $2.62 (2017-01-06 to 2017-01-27) | 4 | +57.4% | +55.7% to +58.3% | 4 | 4 | +24.2% | 0 |
+| FY17E $2.74 (2017-02-01 to 2017-04-21) | 12 | +57.7% | +46.1% to +61.4% | 12 | 12 | +22.6% | 0 |
+| FY17E $2.65 (2017-04-26 to 2017-07-21) | 13 | +47.1% | +31.6% to +55.5% | 12 | 13 | +36.3% | 0 |
+| FY17E $2.56 (2017-07-26 to 2017-10-20) | 13 | +42.1% | +29.7% to +49.5% | 10 | 13 | +39.0% | 0 |
+| FY17E $1.78 (2017-10-25 to 2017-12-08) | 7 | +42.4% | +35.4% to +44.0% | 7 | 7 | +37.5% | 0 |
+| FY17E $1.61 (2017-12-15 to 2017-12-29) | 3 | +61.4% | +46.0% to +61.4% | 3 | 3 | +36.5% | 0 |
+| latest print Q3 2016 (2017-01-06 to 2017-01-27) | 4 | +57.4% | +55.7% to +58.3% | 4 | 4 | +24.2% | 0 |
+| latest print Q4 2016 (2017-02-01 to 2017-04-21) | 12 | +57.7% | +46.1% to +61.4% | 12 | 12 | +22.6% | 0 |
+| latest print Q1 2017 (2017-04-26 to 2017-07-21) | 13 | +47.1% | +31.6% to +55.5% | 12 | 13 | +36.3% | 0 |
+| latest print Q2 2017 (2017-07-26 to 2017-10-20) | 13 | +42.1% | +29.7% to +49.5% | 10 | 13 | +39.0% | 0 |
+| latest print Q3 2017 (2017-10-25 to 2017-12-29) | 10 | +44.0% | +35.4% to +61.4% | 10 | 10 | +37.5% | 0 |
+
+- **RICH failed on all 52 dates of 2017.** From $75.38-87.23 (28.3-34.1x the reported guide to the Q3 2017 print, then 46.6-53.8x the
+  $1.78 and $1.61 guides after the streamlining charges) the entries returned +29.7% to +61.4% over two years, 7.0-41.8pp ahead of SPY,
+  and 48 cleared the hurdle. Over three years (to 2020-12-29) +54.5% to +111.6% (median +91.2%), every date ahead of SPY and over the
+  hurdle. The two-year price ($106.79-132.43) landed nearest XBULL on all 52 dates.
+- **The GAAP guide was not what failed.** The non-GAAP guides ($4.05-4.25 for FY2017) keep every 2017 date RICH (the build's
+  sensitivity: the tier moves from AVOID to WATCHLIST on 33 dates, no class moves); the call rests on the window's 12.7x median, which
+  the market never returned to, while the 2017 charges put the GAAP multiple at 47-54x without changing the class.
+
 ## Across 2008-2009
 
 - **The ranks run through the price.** Across the 105 dates the entry price ranks the two-year return at Spearman -0.91 and the return to
@@ -204,4 +306,29 @@ clear the hurdle or beat the benchmark (SPY). Every date was CHEAP and BUY, so t
   the window-based reads ranked the wrong way across the six years, because they read deepest cheapness in 2008-2009, when the
   1998-2007 window was least like the market that followed. Hypothesis: for one stock across a re-rating cycle the method's cheapness
   measures describe the window's composition more than the entry; the class, which never varied, could not separate the years.
+
+## Across 2014-2017
+
+- **The call held on 82 of 209 dates:** CHEAP on all 4, RICH on 78 of 205 (5 in 2014, 41 in 2015, 32 in 2016, 0 in 2017). The RICH
+  entries' median two-year return was +29.5%; 87 cleared the hurdle and 124 beat SPY. The class rested on one fact of the window: its
+  median stayed at 12.7x on every date, the multiple of the 2009-2013 patent-cliff years, which held most of its days, while the stock
+  traded at 19-54x a reported guide that had halved.
+- **The ranks ran the right way inside the four years.** Over the 209 dates the P/E percentile ranks the two-year return at Spearman
+  -0.54 and the return to the m12-24 average price at -0.60, Ratio B at -0.58 and -0.67, the P/E at -0.28 and -0.41, the EPP gap at -0.27
+  and -0.41 and the entry price at -0.13 and -0.34 (the dearer the entry by each read, the lower the return), and the adjusted gap at
+  +0.41 and +0.32 and the proxy composite at +0.26 and +0.03 (the higher the read, the better). The measures ordered the dates; the
+  level they were judged against, a window anchored on the cliff years, did not fit the market that followed.
+- **The 2008-2009 hypothesis, seen from the other side (hindsight, not a rule):** in 2008-2009 a window anchored on the 1998-2007
+  multiples (18-30x) called a stock entering a patent cliff cheap at 7-15x, and it kept falling; in 2014-2017 a window anchored on the
+  cliff years' 7-11x called the stock dear at 19-54x as the market priced the new launches (Trulicity, Taltz, Basaglar, Jardiance and the
+  rest, named in the releases from 2014), and it kept rising. Both are the same reading: a ten-year own-history window describes the last
+  regime, and LLY changed regime twice. Test it on other tickers whose earnings regime turned within the window (the PFE and BMY series in
+  staging have their own cliffs), never fit it to LLY.
+
+## Across 2008-2017
+
+- **288 of 523 dates held** (CHEAP on 210 of 318, RICH on 78 of 205). Over the 523 dates every cheapness measure ranks the two-year
+  return near zero (Spearman: the P/E percentile +0.06, Ratio B +0.03, the EPP gap -0.08, the P/E -0.20, the entry price -0.11, the
+  adjusted gap -0.05, the proxy composite -0.15; m12-24 within -0.33 to +0.19): across two re-ratings the window-based reads describe the
+  window's composition more than the entry, as the 2008-2013 section found, and inside each regime they rank correctly.
 - **Profile drift:** the point-in-time profile (DURABLE, risk 2) against today's (DURABLE, risk 1, reviewed 2026-09-22) is a label only.

@@ -24569,7 +24569,7 @@ Judgement calls that could carry hindsight:
   Basaglar among them) and the 2017 patent expiries turned out;
 - the parts of the filings listed above as not read.
 
-The hindsight results for 2014-2017 will be in `staging/retrospective/LLY/FINDINGS.md` (computed after the firewall result is pushed):
+The hindsight results for 2014-2017 are in `staging/retrospective/LLY/FINDINGS.md` (computed after the firewall result was pushed):
 hypotheses, never inputs.
 
 ## Categories change with the era
