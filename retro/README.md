@@ -24720,6 +24720,11 @@ Controls and checks (before any outcome):
   scan does not read meaning: the "Elanco discontinued" words were each in earlier filings, so a check by date on terms like it stays the
   term check's job.
 - **Regression:** the 523 models of 2008-2017 rebuild byte for byte; no code changes.
+- **Firewall** (run after the build, checks and README section were committed, before any 2018-2021 outcome): it passes at all 27
+  cutoffs above (2018-01-01, every print, 10-K, recast and guidance 8-K date of the range, and 2022-01-01: 523 to 732 dates each), 0
+  files changed and no planted text, with the earlier batches' plants (no new field needs one). As positive controls, a planted copy of
+  the Q1 2020 print dated 2020-06-02 with its own source reaches 2020-06-05 (its text in the model) and not 2020-05-29 (byte-identical);
+  the same print citing a source published after AS_OF (the Q2 2020 release) stops at the builder's source check.
 
 Seen in the build (method behaviour, not tuned):
 The window turns over in this batch. To May 2019 its median is still the 2009-2013 regime's (12.0-13.3x); as 2009's days (about
