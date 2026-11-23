@@ -24926,6 +24926,12 @@ Controls and checks (before any outcome):
   by the fact's date or in an earlier fact public by then (0 misses, after the scan stopped reading a closing parenthesis into a dollar
   figure and kept "10-Ks" as an artifact), and every filing a fact's text names is published by its own date (0 late references).
 - **Regression:** the 732 models of 2008-2021 rebuild byte for byte with the new sheet and builder; no other ticker's code changes.
+- **Firewall** (run after the build, checks and README section were committed and pushed, before any 2022-2026 outcome): it passes at all 29
+  cutoffs above (2022-01-01, every print, 10-K and guidance 8-K date of the range, and 2026-11-21: 732 to 987 dates each), 0 files changed
+  and no planted text, with the earlier batches' plants (no new field needs one: the non-GAAP-only reading uses the existing guide fields).
+  As positive controls, a planted copy of the Q1 2025 print dated 2025-06-03 with its own source reaches 2025-06-06 (its text in the model)
+  and not 2025-05-30 (byte-identical); the same print citing a source published after AS_OF (the Q2 2025 release) stops at the builder's
+  source check.
 
 Seen in the build (method behaviour, not tuned):
 The window's median rises from 27.4x to 37.7x over the batch: the calendar-year lows of 2012-2015 (10.5x, 11.0x, 25.2x, 29.0x) leave and
