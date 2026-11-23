@@ -1,0 +1,238 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "LLY",
+ "company": "Eli Lilly and Company",
+ "as_of": "2022-06-10",
+ "price_date": "2022-06-10",
+ "price": 297.01,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); pharmaceutical signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'We discover, develop, manufacture, and market products in a single business segment—human pharmaceutical products.' (FY2021 10-K, Item 1); 'We depend on products with intellectual property protection for most of our revenues, cash flows, and earnings; we have lost or soon will lose effective intellectual property protection for a number of our products, which has resulted and is likely to continue to result in rapid and severe declines in revenues.' (FY2021 10-K, Item 1A heading); 'Our long-term success depends on intellectual property protection; if our intellectual property rights are invalidated, circumvented, or weakened, our business will be adversely affected.' (FY2021 10-K, Item 1A heading); 'We and our products face intense competition from multinational pharmaceutical companies, biotechnology companies, and lower-cost generic and biosimilar manufacturers, and such competition could have a material adverse effect on our business.' (FY2021 10-K, Item 1A heading); 'For non-biologic products, loss of exclusivity (whether by expiration of legal rights or by termination thereof as a consequence of litigation) typically results in the entry of one or more generic competitors, leading to a rapid and severe decline in revenues' (FY2021 10-K, Item 1A); 'Our product revenues can be adversely affected by the introduction by competitors of branded products that are perceived as superior by the marketplace, by generic or biosimilar versions of our branded products, and by generic or biosimilar versions of other products in the same therapeutic class as our branded products.' (FY2021 10-K, Item 1A)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "'We discover, develop, manufacture, and market products in a single business segment—human pharmaceutical products.' (FY2021 10-K, Item 1); 'We depend on products with intellectual property protection for most of our revenues, cash flows, and earnings; we have lost or soon will lose effective intellectual property protection for a number of our products, which has resulted and is likely to continue to result in rapid and severe declines in revenues.' (FY2021 10-K, Item 1A heading); 'Our long-term success depends on intellectual property protection; if our intellectual property rights are invalidated, circumvented, or weakened, our business will be adversely affected.' (FY2021 10-K, Item 1A heading); 'We and our products face intense competition from multinational pharmaceutical companies, biotechnology companies, and lower-cost generic and biosimilar manufacturers, and such competition could have a material adverse effect on our business.' (FY2021 10-K, Item 1A heading); 'For non-biologic products, loss of exclusivity (whether by expiration of legal rights or by termination thereof as a consequence of litigation) typically results in the entry of one or more generic competitors, leading to a rapid and severe decline in revenues' (FY2021 10-K, Item 1A); 'Our product revenues can be adversely affected by the introduction by competitors of branded products that are perceived as superior by the marketplace, by generic or biosimilar versions of our branded products, and by generic or biosimilar versions of other products in the same therapeutic class as our branded products.' (FY2021 10-K, Item 1A). durable franchise (obsolescence risk 2/5); price rich; +68% to EPP floor; model-vs-market gap -0.77; conservative 2yr -24%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": Infinity,
+  "ratio_b_fmt": "infx",
+  "epp": 177.0,
+  "epp_gap_pct": 67.8,
+  "epp_adj": -0.1,
+  "proxy_composite": 2.65,
+  "sca": -0.096,
+  "adj_composite": 2.454,
+  "market_composite": 3.22,
+  "adj_gap": -0.77,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": -23.7,
+  "scenarios": {
+   "BEAR": {
+    "eps": 1.6,
+    "pe": 12.5,
+    "price": 20,
+    "desc": "EPS -53.5%/yr (worst year FY12-FY21 ex-FY17, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 8.11,
+    "pe": 28.7,
+    "price": 233,
+    "desc": "EPS +4.9%/yr (FY22 guide + margin + buyback); P/E at its 10-yr ex-FY17 median"
+   },
+   "BULL": {
+    "eps": 8.27,
+    "pe": 33.0,
+    "price": 273,
+    "desc": "EPS +5.9%/yr (FY12-FY21 ex-FY17 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 16.42,
+    "pe": 37.1,
+    "price": 609,
+    "desc": "EPS +49.2%/yr (best 2-yr run FY12-FY21 ex-FY17); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 67.8,
+   "adj_gap": -0.77,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -23.7,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 26.23,
+   "epp_gap_pct": 67.8,
+   "adj_gap": -0.54,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -23.7,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 67.8,
+   "adj_gap": -0.95,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -23.7,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 67.8,
+   "adj_gap": -0.73,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -23.7,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 67.8,
+   "adj_gap": -0.81,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -23.7,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 67.8,
+   "adj_gap": -0.47,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -23.7,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 49.2,
+   "adj_gap": -0.77,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -23.7,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 67.8,
+   "adj_gap": -0.65,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -23.7,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "RICH"
+ ],
+ "summary": "LLY (retrospective, 2022-06-10) ✕ AVOID — Ratio B infx (93.3% downside to Bear $20 / +-8.1% upside to Bull $273) | Adj composite 2.45 vs market 3.22: gap -0.77 [OVERVALUED] | +68% above the EPP floor $177 (24x FY22E $7.38) | Conservative 2-yr case: -23.7% total (-11.8%/yr) | At 40.3x FY22E the 15% hurdle price $393 sits above the BULL case; U.S. revenues +31.0% in Q1 2022, forward revenues +1.7-3.5% (FY22 revenue guide); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "LL77",
+   "published": "2017-02-21",
+   "filed": "2017-02-21 15:32 ET, during the session",
+   "title": "Eli Lilly FY2016 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947817000098/lly-20161231x10xk.htm",
+   "supports": "history vintage: selected financial data, statements of operations and cash flows, balance sheet, segment and geographic data, Items 1 and 1A, the dividend and repurchase passages"
+  },
+  {
+   "id": "LL83",
+   "published": "2018-02-21",
+   "filed": "2018-02-20 17:27 ET, after the close",
+   "title": "Eli Lilly FY2017 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947818000089/lly-20171231x10xk.htm",
+   "supports": "history vintage: Item 6 selected financial data, statements of cash flows, balance sheet, revenue by product and geography, Items 1 and 1A, the dividend and repurchase passages"
+  },
+  {
+   "id": "LL93",
+   "published": "2019-10-24",
+   "filed": "2019-10-24 10:00 ET, during the session",
+   "title": "Eli Lilly 8-K of 2019-10-24 (Item 8.01: the FY2018 10-K recast with Elanco as discontinued operations, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947819000274/ex-991xllyx20181231x10.htm",
+   "supports": "history vintage: the recast Item 6 selected financial data, statements of operations and cash flows, balance sheet, revenue by product and geography, the dividend and repurchase passages"
+  },
+  {
+   "id": "LL96",
+   "published": "2020-02-19",
+   "filed": "2020-02-19 12:33 ET, during the session",
+   "title": "Eli Lilly FY2019 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947820000057/lly-20191231x10xk.htm",
+   "supports": "history vintage: Item 6 selected financial data, statements of cash flows, balance sheet, revenue by product and geography, Items 1 and 1A, the dividend and repurchase passages"
+  },
+  {
+   "id": "LL102",
+   "published": "2021-02-17",
+   "filed": "2021-02-17 10:59 ET, during the session",
+   "title": "Eli Lilly FY2020 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947821000083/lly-20201231.htm",
+   "supports": "history vintage: statements of operations (Item 6 reserved), statements of cash flows, balance sheet, revenue by product and geography, Items 1 and 1A, the dividend and repurchase passages"
+  },
+  {
+   "id": "LL108",
+   "published": "2022-02-23",
+   "filed": "2022-02-23 11:00 ET, during the session",
+   "title": "Eli Lilly FY2021 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947822000068/lly-20211231.htm",
+   "supports": "history vintage: statements of operations (Item 6 reserved), statements of cash flows, balance sheet, revenue by product and geography, Items 1 and 1A, the dividend and repurchase passages"
+  },
+  {
+   "id": "LL107",
+   "published": "2022-02-03",
+   "filed": "2022-02-03 07:08 ET, before the open",
+   "title": "Eli Lilly Q4 2021 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947822000016/q421lillysalesandearningsp.htm",
+   "supports": "Q4 2021: reported operating results (revenue $7,999.9M vs $7,440.0M, cost of sales, pre-tax income $1,839.9M vs $2,469.1M, diluted EPS $1.90 vs $2.32); growth 8%; U.S. and outside-U.S. revenue; FY2021 actuals (revenue $28,318.4M, diluted EPS $6.12); FY2022 guide: reported EPS $8.00-8.15, revenue $27.8-28.3 billion"
+  },
+  {
+   "id": "LL109",
+   "published": "2022-04-28",
+   "filed": "2022-04-28 07:05 ET, before the open",
+   "title": "Eli Lilly Q1 2022 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947822000130/q122lillysalesandearningsp.htm",
+   "supports": "Q1 2022: reported operating results (revenue $7,810.0M vs $6,805.6M, cost of sales, pre-tax income $2,053.6M vs $1,476.4M, diluted EPS $2.10 vs $1.49); growth 15% with exchange rates -2 points; U.S. and outside-U.S. revenue; FY2022 guide: reported EPS $7.30-7.45, revenue $28.8-29.3 billion"
+  },
+  {
+   "id": "LL106",
+   "published": "2021-12-15",
+   "filed": "2021-12-15 07:05 ET, before the open",
+   "title": "Eli Lilly 8-K of 2021-12-15 (Item 2.02: FY2022 financial guidance and FY2021 update, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000119312521357380/d212746dex991.htm",
+   "supports": "FY2021 guide: reported EPS $6.18-6.23, revenue $28.0-28.3 billion"
+  },
+  {
+   "id": "W0",
+   "published": "2022-06-10",
+   "title": "Yahoo Finance daily prices, LLY and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/LLY/history",
+   "supports": "close $297.01 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr ex-FY17 P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-23"
+}
