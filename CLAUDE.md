@@ -23,7 +23,7 @@ touching either directory.
   outcomes or findings enters another's models. UNP (2008-2026 so far), LOW (2008-2026 so far), AAPL (2008-2026 so far),
   NKE (2008-2026 so far), AVGO (from its 2009-08-06 listing to 2026-10-30 so far), PEP (2008 to 2026-10-30 so far), MSFT
   (2008 to 2026-10-30 so far), XOM (2008 to 2026-10-30 so far), SHW (2008 to 2026-11-06 so far), WMT (2008 to 2026-11-06 so far), RCL (2008 to 2026-11-06 so far), MAR (2008 to 2026-11-03 so far), BKR (2008 to 2017-06-30, then 2019-02-01 to 2026-11-06 so far), PFE (2008 to 2026-11-04 so far), CMCSA (2008 to 2026-11-06 so far), CAT (2008 to 2026-11-06 so far), BMY (2008 to 2026-11-06 so far), NVDA (2008 to 2026-11-06 so far), F (2008-01-04 to 2026-11-06 so far; 2022-01-07 onward was built first at the owner's request, and dates before 2022 are an early era with its
-  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far), SPGI (2008-01-04 to 2026-11-20 so far), CB (2008-01-04 to 2026-11-20 so far) and LLY (2008-01-04 to 2021-12-31 so far) sit in `staging/retrospective/` until the owner adds
+  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far), SPGI (2008-01-04 to 2026-11-20 so far), CB (2008-01-04 to 2026-11-20 so far) and LLY (2008-01-04 to 2026-11-20 so far) sit in `staging/retrospective/` until the owner adds
   them to the archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM", "SHW", "WMT", "RCL", "MAR", "BKR", "PFE", "CMCSA", "CAT",
   "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG", "JPM", "V", "SPGI", "CB", "LLY"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py`, `mu_signal_model.py`, `v_signal_model.py`, `spgi_signal_model.py` and `lly_signal_model.py` (other branches) files
   and today's profiles in `data/business_profiles.json` (NVDA's, SO's, V's, SPGI's, CB's and LLY's included) are 2026 analyses: never inputs to a retrospective. AVGO did not trade
@@ -323,5 +323,15 @@ touching either directory.
   release's figures come from its exhibit's text layer (slide images); DURABLE, no live theme; RICH 168, FAIR 39, CHEAP 2 of 209 dates (the
   window's median rising from 12-13x to 23-27x in 2019 as the 2009-2013 regime leaves); decided in the session that scored 2014-2017,
   disclosed (retro/README.md, "LLY 2018-2021").
+  From 2022: the FY2021-FY2025 10-Ks are GAAP every year ($6.12, $6.90, $5.80, $11.71, $22.95; Item 6 reserved, three years from each
+  statement; the FY2025 10-K's rounded millions replace the earlier exact figures), FY2017 still excluded; the company's non-GAAP measures
+  keep acquired IPR&D from Q1 2022 (the 8-K of 2022-04-14) but still remove amortization, so GAAP stands; the reported EPS ranges are used
+  as published, acquired IPR&D charges in (FY23E $6.05 after Q3 2023), and FY2026 is guided on a non-GAAP basis only, so FY25's $22.95
+  stands (the rollover rule, the BMY FY2024 encoding; a text-only builder change, "non-GAAP only"); revenue guided in dollars every year
+  (+18% to +42%), the 8-K of 2025-01-14's "approximately $45.0 billion" a point for FY2024; from Q1 2022 the releases state U.S. revenue to
+  $0.01B (then $0.1B), so no million-level identity; dividends $0.98-$1.73 from the 10-Ks; DURABLE, no live theme (GLP1 is Lilly's own
+  market); Foundayo and Onswik join the anachronism list; RICH and AVOID on all 156 dates to 2025-01-31, CHEAP and BUY on the 52 of the
+  FY2025 guide, CHEAP 35, RICH 5, FAIR 2 in 2026; the CHEAP calls move with the signals at BEAR (59 dates); built in a new session without
+  opening the 2008-2021 outcomes or findings (retro/README.md, "LLY 2022-2026").
 - **Never use the owner's personal email** in request headers to external
   services (SEC asks for a contact in the User-Agent).
