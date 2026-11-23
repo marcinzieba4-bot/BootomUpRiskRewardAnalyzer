@@ -1,5 +1,5 @@
 {
- "_doc": "Point-in-time fact sheet for LLY retrospectives (retro/build_lly.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks of 2007-2009 were accepted before the open or during the session on their release days. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the guides for the current fiscal year (each field from the latest guide that states it) and the latest declared dividend (each vintage's, or a release's that first states a new rate: 'dividends'). Eli Lilly's fiscal year is the calendar year. EPS is GAAP diluted EPS from continuing operations before extraordinary items and accounting changes: the company's adjusted and pro forma figures also remove in-process research and development, which recurs, so they are shown and never used. 2008 is excluded (a loss). Guides: reported EPS ranges (the current-FY EPS; a range whose midpoint is a loss has no P/E) and the company's adjusted ranges (shown only); revenue growth is guided in words only, so BASE takes the latest quarter's sales growth excluding foreign exchange as each release states it. A print's growth and margins are derived from the raw figures of its release ('raw', $ millions; the builder re-derives and checks them), each against the year-ago quarter as the same release shows it. Company-wide U.S. and outside-U.S. growth is as each filing states it: in the release for Q4 2008 and 2009, in the 10-Q for Q2 2007 to Q3 2008 ('geo_later', visible from the 10-Q's date), in no filing for Q4 2007. Rule T's raw figures are in 'rule_t'. No later fact enters through this file: every source's published date bounds its use.",
+ "_doc": "Point-in-time fact sheet for LLY retrospectives (retro/build_lly.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2003); the earnings 8-Ks of 2007-2009 were accepted before the open or during the session on their release days. The builder uses the latest history vintage published by AS_OF, the prints published by AS_OF that report a fiscal year after that history (a Q4 print reports the year just ended and extends the history until the 10-K), the guides for the current fiscal year (each field from the latest guide that states it) and the latest declared dividend (each vintage's, or a release's that first states a new rate: 'dividends'). Eli Lilly's fiscal year is the calendar year. EPS is GAAP diluted EPS from continuing operations before extraordinary items and accounting changes: the company's adjusted and pro forma figures also remove in-process research and development, which recurs, so they are shown and never used. 2008 is excluded (a loss). Guides: reported EPS ranges (the current-FY EPS; a range whose midpoint is a loss has no P/E) and the company's adjusted ranges (shown only); revenue growth is guided in words only, so BASE takes the latest quarter's sales growth excluding foreign exchange as each release states it. A print's growth and margins are derived from the raw figures of its release ('raw', $ millions; the builder re-derives and checks them), each against the year-ago quarter as the same release shows it. Company-wide U.S. and outside-U.S. growth is as each filing states it: in the release for Q4 2008 and 2009, in the 10-Q for Q2 2007 to Q3 2008 ('geo_later', visible from the 10-Q's date), in no filing for Q4 2007. Rule T's raw figures are in 'rule_t'. From FY2026 the company guides EPS on a non-GAAP basis only: no reported EPS range is stated, so the last full year's EPS stands (the rollover rule, the BMY FY2024 encoding), and the non-GAAP range is shown only. No later fact enters through this file: every source's published date bounds its use.",
  "ticker": "LLY",
  "sources": {
   "LL1": {
@@ -743,6 +743,195 @@
    "title": "Eli Lilly 8-K of 2021-12-15 (Item 2.02: FY2022 financial guidance and FY2021 update, Exhibit 99.1)",
    "url": "https://www.sec.gov/Archives/edgar/data/59478/000119312521357380/d212746dex991.htm",
    "supports": "FY2021 guide: reported EPS $6.18-6.23, revenue $28.0-28.3 billion"
+  },
+  "LL107": {
+   "published": "2022-02-03",
+   "filed": "2022-02-03 07:08 ET, before the open",
+   "title": "Eli Lilly Q4 2021 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947822000016/q421lillysalesandearningsp.htm",
+   "supports": "Q4 2021: reported operating results (revenue $7,999.9M vs $7,440.0M, cost of sales, pre-tax income $1,839.9M vs $2,469.1M, diluted EPS $1.90 vs $2.32); growth 8%; U.S. and outside-U.S. revenue; FY2021 actuals (revenue $28,318.4M, diluted EPS $6.12); FY2022 guide: reported EPS $8.00-8.15, revenue $27.8-28.3 billion"
+  },
+  "LL108": {
+   "published": "2022-02-23",
+   "filed": "2022-02-23 11:00 ET, during the session",
+   "title": "Eli Lilly FY2021 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947822000068/lly-20211231.htm",
+   "supports": "history vintage: statements of operations (Item 6 reserved), statements of cash flows, balance sheet, revenue by product and geography, Items 1 and 1A, the dividend and repurchase passages"
+  },
+  "LL109": {
+   "published": "2022-04-28",
+   "filed": "2022-04-28 07:05 ET, before the open",
+   "title": "Eli Lilly Q1 2022 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947822000130/q122lillysalesandearningsp.htm",
+   "supports": "Q1 2022: reported operating results (revenue $7,810.0M vs $6,805.6M, cost of sales, pre-tax income $2,053.6M vs $1,476.4M, diluted EPS $2.10 vs $1.49); growth 15% with exchange rates -2 points; U.S. and outside-U.S. revenue; FY2022 guide: reported EPS $7.30-7.45, revenue $28.8-29.3 billion"
+  },
+  "LL110": {
+   "published": "2022-08-04",
+   "filed": "2022-08-04 07:05 ET, before the open",
+   "title": "Eli Lilly Q2 2022 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947822000194/q222lillysalesandearningsp.htm",
+   "supports": "Q2 2022: reported operating results (revenue $6,488.0M vs $6,740.1M, cost of sales, pre-tax income $1,090.9M vs $1,593.9M, diluted EPS $1.05 vs $1.53); growth -4% with exchange rates -3 points; U.S. and outside-U.S. revenue; FY2022 guide: reported EPS $6.96-7.11, revenue $28.8-29.3 billion"
+  },
+  "LL111": {
+   "published": "2022-11-01",
+   "filed": "2022-11-01 07:03 ET, before the open",
+   "title": "Eli Lilly Q3 2022 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947822000248/q322lillysalesandearningsp.htm",
+   "supports": "Q3 2022: reported operating results (revenue $6,941.6M vs $6,772.8M, cost of sales, pre-tax income $1,565.5M vs $1,245.3M, diluted EPS $1.61 vs $1.22); growth 2% with exchange rates -4 points; U.S. and outside-U.S. revenue; FY2022 guide: reported EPS $6.50-6.65, revenue $28.5-29 billion"
+  },
+  "LL112": {
+   "published": "2022-12-13",
+   "filed": "2022-12-13 07:03 ET, before the open",
+   "title": "Eli Lilly 8-K of 2022-12-13 (Item 2.02: FY2023 financial guidance and FY2022 update, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947822000277/lly-2023financialguidancep.htm",
+   "supports": "FY2022 guide: reported EPS $6.50-6.65, revenue $28.5-29.0 billion; FY2023 guide: reported EPS $7.65-7.85, revenue $30.3-30.8 billion"
+  },
+  "LL113": {
+   "published": "2023-02-02",
+   "filed": "2023-02-02 07:13 ET, before the open",
+   "title": "Eli Lilly Q4 2022 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947823000025/q422lillysalesandearningsp.htm",
+   "supports": "Q4 2022: reported operating results (revenue $7,301.8M vs $7,999.9M, cost of sales, pre-tax income $2,096.4M vs $1,839.9M, diluted EPS $2.14 vs $1.90); growth -9% with exchange rates -4 points; U.S. and outside-U.S. revenue; FY2022 actuals (revenue $28,541.4M, diluted EPS $6.90); FY2023 guide: reported EPS $7.90-8.10, revenue $30.3-30.8 billion"
+  },
+  "LL114": {
+   "published": "2023-02-22",
+   "filed": "2023-02-22 10:26 ET, during the session",
+   "title": "Eli Lilly FY2022 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947823000082/lly-20221231.htm",
+   "supports": "history vintage: statements of operations (Item 6 reserved), statements of cash flows, balance sheet, revenue by product and geography, Items 1 and 1A, the dividend and repurchase passages"
+  },
+  "LL115": {
+   "published": "2023-04-27",
+   "filed": "2023-04-27 07:02 ET, before the open",
+   "title": "Eli Lilly Q1 2023 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947823000160/q123lillysalesandearningsp.htm",
+   "supports": "Q1 2023: reported operating results (revenue $6,960.0M vs $7,810.0M, cost of sales, pre-tax income $1,529.7M vs $2,053.6M, diluted EPS $1.49 vs $2.10); growth -11% with exchange rates -2 points; U.S. and outside-U.S. revenue; FY2023 guide: reported EPS $8.18-8.38, revenue $31.2-31.7 billion"
+  },
+  "LL116": {
+   "published": "2023-08-08",
+   "filed": "2023-08-08 07:01 ET, before the open",
+   "title": "Eli Lilly Q2 2023 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947823000219/q223lillysalesandearningsp.htm",
+   "supports": "Q2 2023: reported operating results (revenue $8,312.1M vs $6,488.0M, cost of sales, pre-tax income $2,088.9M vs $1,090.9M, diluted EPS $1.95 vs $1.05); growth 28% with exchange rates -1 points; U.S. and outside-U.S. revenue; FY2023 guide: reported EPS $9.20-9.40, revenue $33.4-33.9 billion"
+  },
+  "LL117": {
+   "published": "2023-11-02",
+   "filed": "2023-11-02 07:02 ET, before the open",
+   "title": "Eli Lilly Q3 2023 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947823000282/q323lillysalesandearningsp.htm",
+   "supports": "Q3 2023: reported operating results (revenue $9,498.6M vs $6,941.6M, cost of sales, pre-tax income $427.2M vs $1,565.5M, diluted EPS $(0.06) vs $1.61); growth 37% with exchange rates +1 points; U.S. and outside-U.S. revenue; FY2023 guide: reported EPS $5.95-6.15, revenue $33.4-33.9 billion"
+  },
+  "LL118": {
+   "published": "2024-02-06",
+   "filed": "2024-02-06 07:04 ET, before the open",
+   "title": "Eli Lilly Q4 2023 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947824000032/q423lillysalesandearningsp.htm",
+   "supports": "Q4 2023: reported operating results (revenue $9,353.4M vs $7,301.8M, cost of sales, pre-tax income $2,508.8M vs $2,096.4M, diluted EPS $2.42 vs $2.14); growth 28% with exchange rates +1 points; U.S. and outside-U.S. revenue; FY2023 actuals (revenue $34,124.1M, diluted EPS $5.80); FY2024 guide: reported EPS $11.80-12.30, revenue $40.4-41.6 billion"
+  },
+  "LL119": {
+   "published": "2024-02-21",
+   "filed": "2024-02-21 11:44 ET, during the session",
+   "title": "Eli Lilly FY2023 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947824000065/lly-20231231.htm",
+   "supports": "history vintage: statements of operations (Item 6 reserved), statements of cash flows, balance sheet, revenue by product and geography, Items 1 and 1A, the dividend and repurchase passages"
+  },
+  "LL120": {
+   "published": "2024-04-30",
+   "filed": "2024-04-30 07:04 ET, before the open",
+   "title": "Eli Lilly Q1 2024 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947824000116/q124lillysalesandearningsp.htm",
+   "supports": "Q1 2024: reported operating results (revenue $8,768.0M vs $6,960.0M, cost of sales, pre-tax income $2,536.1M vs $1,529.7M, diluted EPS $2.48 vs $1.49); growth 26%; U.S. and outside-U.S. revenue; FY2024 guide: reported EPS $13.05-13.55, revenue $42.4-43.6 billion"
+  },
+  "LL121": {
+   "published": "2024-08-08",
+   "filed": "2024-08-08 07:04 ET, before the open",
+   "title": "Eli Lilly Q2 2024 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947824000185/q224lillysalesandearningsp.htm",
+   "supports": "Q2 2024: reported operating results (revenue $11,302.8M vs $8,312.1M, cost of sales, pre-tax income $3,517.2M vs $2,088.9M, diluted EPS $3.28 vs $1.95); growth 36% with exchange rates -1 points; U.S. and outside-U.S. revenue; FY2024 guide: reported EPS $15.10-15.60, revenue $45.4-46.6 billion"
+  },
+  "LL122": {
+   "published": "2024-10-30",
+   "filed": "2024-10-30 07:05 ET, before the open",
+   "title": "Eli Lilly Q3 2024 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947824000242/q324lillysalesandearningsp.htm",
+   "supports": "Q3 2024: reported operating results (revenue $11,439.1M vs $9,498.6M, cost of sales, pre-tax income $1,588.4M vs $427.2M, diluted EPS $1.07 vs $(0.06)); growth 20% with exchange rates -1 points; U.S. and outside-U.S. revenue; FY2024 guide: reported EPS $12.05-12.55, revenue $45.4-46 billion"
+  },
+  "LL123": {
+   "published": "2025-01-14",
+   "filed": "2025-01-14 09:05 ET, before the open",
+   "title": "Eli Lilly 8-K of 2025-01-14 (Item 2.02: FY2024 revenue update and FY2025 revenue guidance, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947825000005/jpm_2025guidancexpressrele.htm",
+   "supports": "FY2024 guide: revenue about $45.0 billion; FY2025 guide: revenue $58.0-61.0 billion"
+  },
+  "LL124": {
+   "published": "2025-02-06",
+   "filed": "2025-02-06 07:05 ET, before the open",
+   "title": "Eli Lilly Q4 2024 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947825000037/q424lillysalesandearningsp.htm",
+   "supports": "Q4 2024: reported operating results (revenue $13,532.8M vs $9,353.4M, cost of sales, pre-tax income $5,038.7M vs $2,508.8M, diluted EPS $4.88 vs $2.42); growth 45%; U.S. and outside-U.S. revenue; FY2024 actuals (revenue $45,042.7M, diluted EPS $11.71); FY2025 guide: reported EPS $22.05-23.55, revenue $58-61 billion"
+  },
+  "LL125": {
+   "published": "2025-02-19",
+   "filed": "2025-02-19 10:10 ET, during the session",
+   "title": "Eli Lilly FY2024 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947825000067/lly-20241231.htm",
+   "supports": "history vintage: statements of operations (Item 6 reserved), statements of cash flows, balance sheet, revenue by product and geography, Items 1 and 1A, the dividend and repurchase passages"
+  },
+  "LL126": {
+   "published": "2025-05-01",
+   "filed": "2025-05-01 07:03 ET, before the open",
+   "title": "Eli Lilly Q1 2025 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947825000129/q125lillysalesandearningsp.htm",
+   "supports": "Q1 2025: reported operating results (revenue $12,728.5M vs $8,768.0M, cost of sales, pre-tax income $3,456.1M vs $2,536.1M, diluted EPS $3.06 vs $2.48); growth 45% with exchange rates -2 points; U.S. and outside-U.S. revenue; FY2025 guide: reported EPS $20.17-21.67, revenue $58-61 billion"
+  },
+  "LL127": {
+   "published": "2025-08-07",
+   "filed": "2025-08-07 07:05 ET, before the open",
+   "title": "Eli Lilly Q2 2025 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947825000202/q225lillysalesandearningsp.htm",
+   "supports": "Q2 2025: reported operating results (revenue $15,557.7M vs $11,302.8M, cost of sales, pre-tax income $6,776.4M vs $3,517.2M, diluted EPS $6.29 vs $3.28); growth 38%; U.S. and outside-U.S. revenue; FY2025 guide: reported EPS $20.85-22.10, revenue $60-62 billion"
+  },
+  "LL128": {
+   "published": "2025-10-30",
+   "filed": "2025-10-30 07:03 ET, before the open",
+   "title": "Eli Lilly Q3 2025 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947825000251/q325lillysalesandearningsp.htm",
+   "supports": "Q3 2025: reported operating results (revenue $17,600.8M vs $11,439.1M, cost of sales, pre-tax income $7,232.3M vs $1,588.4M, diluted EPS $6.21 vs $1.07); growth 54%; U.S. and outside-U.S. revenue; FY2025 guide: reported EPS $21.80-22.50, revenue $63-63.5 billion"
+  },
+  "LL129": {
+   "published": "2026-02-04",
+   "filed": "2026-02-04 07:05 ET, before the open",
+   "title": "Eli Lilly Q4 2025 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000008/q425lillysalesandearningsp.htm",
+   "supports": "Q4 2025: reported operating results (revenue $19,292M vs $13,533M, cost of sales, pre-tax income $8,265M vs $5,039M, diluted EPS $7.39 vs $4.88); growth 43%; U.S. and outside-U.S. revenue; FY2025 actuals (revenue $65,179M, diluted EPS $22.95); FY2026 guide: non-GAAP EPS $33.50-35.00 only, revenue $80-83 billion"
+  },
+  "LL130": {
+   "published": "2026-02-12",
+   "filed": "2026-02-12 13:58 ET, during the session",
+   "title": "Eli Lilly FY2025 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000013/lly-20251231.htm",
+   "supports": "history vintage: statements of operations (Item 6 reserved), statements of cash flows, balance sheet, revenue by product and geography, Items 1 and 1A, the dividend and repurchase passages"
+  },
+  "LL131": {
+   "published": "2026-04-30",
+   "filed": "2026-04-30 07:03 ET, before the open",
+   "title": "Eli Lilly Q1 2026 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000043/q126lillysalesandearningsp.htm",
+   "supports": "Q1 2026: reported operating results (revenue $19,799M vs $12,729M, cost of sales, pre-tax income $8,850M vs $3,456M, diluted EPS $8.26 vs $3.06); growth 56%; U.S. and outside-U.S. revenue; FY2026 guide: non-GAAP EPS $35.50-37.00 only, revenue $82-85 billion"
+  },
+  "LL132": {
+   "published": "2026-08-05",
+   "filed": "2026-08-05 07:05 ET, before the open",
+   "title": "Eli Lilly Q2 2026 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000077/q226lillysalesandearningsp.htm",
+   "supports": "Q2 2026: reported operating results (revenue $22,974M vs $15,558M, cost of sales, pre-tax income $9,247M vs $6,777M, diluted EPS $7.94 vs $6.29); growth 48%; U.S. and outside-U.S. revenue; FY2026 guide: non-GAAP EPS $35.50-36.50 only, revenue $85-87 billion"
+  },
+  "LL133": {
+   "published": "2026-10-29",
+   "filed": "2026-10-29 07:03 ET, before the open",
+   "title": "Eli Lilly Q3 2026 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000104/q326lillysalesandearningsp.htm",
+   "supports": "Q3 2026: reported operating results (revenue $24,397M vs $17,601M, cost of sales, pre-tax income $8,406M vs $7,233M, diluted EPS $7.22 vs $6.21); growth 39%; U.S. and outside-U.S. revenue; FY2026 guide: non-GAAP EPS $35.00-36.00 only, revenue $91-92 billion"
   }
  },
  "history_vintages": [
@@ -3563,6 +3752,812 @@
     "2017": "from continuing operations $(0.08) a diluted share (Elanco discontinued, FY2019 figures), still a loss: reported $(0.19) a diluted share is a loss: the items the Q4 2017 release lists include $1.81 a share for U.S. tax reform legislation and $1.23 for asset impairment, restructuring and other special charges, against its $4.28 non-GAAP figure; a loss has no P/E, and no figure excluding only one-offs is published (the non-GAAP EPS also removes $.97 of acquired in-process research and development and $.44 of amortization of intangible assets, which recur)"
    },
    "excluded_note": "from continuing operations $(0.08) a diluted share (Elanco discontinued, FY2019 figures), still a loss: reported $(0.19) a diluted share is a loss: the items the Q4 2017 release lists include $1.81 a share for U.S. tax reform legislation and $1.23 for asset impairment, restructuring and other special charges, against its $4.28 non-GAAP figure; a loss has no P/E, and no figure excluding only one-offs is published (the non-GAAP EPS also removes $.97 of acquired in-process research and development and $.44 of amortization of intangible assets, which recur)"
+  },
+  {
+   "published": "2022-02-23",
+   "sources": [
+    "LL77",
+    "LL83",
+    "LL93",
+    "LL96",
+    "LL102",
+    "LL108"
+   ],
+   "fy_label": "FY21",
+   "why": "'We discover, develop, manufacture, and market products in a single business segment—human pharmaceutical products.' (FY2021 10-K, Item 1); 'We depend on products with intellectual property protection for most of our revenues, cash flows, and earnings; we have lost or soon will lose effective intellectual property protection for a number of our products, which has resulted and is likely to continue to result in rapid and severe declines in revenues.' (FY2021 10-K, Item 1A heading); 'Our long-term success depends on intellectual property protection; if our intellectual property rights are invalidated, circumvented, or weakened, our business will be adversely affected.' (FY2021 10-K, Item 1A heading); 'We and our products face intense competition from multinational pharmaceutical companies, biotechnology companies, and lower-cost generic and biosimilar manufacturers, and such competition could have a material adverse effect on our business.' (FY2021 10-K, Item 1A heading); 'For non-biologic products, loss of exclusivity (whether by expiration of legal rights or by termination thereof as a consequence of litigation) typically results in the entry of one or more generic competitors, leading to a rapid and severe decline in revenues' (FY2021 10-K, Item 1A); 'Our product revenues can be adversely affected by the introduction by competitors of branded products that are perceived as superior by the marketplace, by generic or biosimilar versions of our branded products, and by generic or biosimilar versions of other products in the same therapeutic class as our branded products.' (FY2021 10-K, Item 1A)",
+   "eps_gaap": {
+    "2012": 3.66,
+    "2013": 4.32,
+    "2014": 2.01,
+    "2015": 2.36,
+    "2016": 2.57,
+    "2018": 3.05,
+    "2019": 4.96,
+    "2020": 6.79,
+    "2021": 6.12
+   },
+   "eps_normalized": {
+    "2012": 3.66,
+    "2013": 4.32,
+    "2014": 2.01,
+    "2015": 2.36,
+    "2016": 2.57,
+    "2018": 3.05,
+    "2019": 4.96,
+    "2020": 6.79,
+    "2021": 6.12
+   },
+   "eps_sources": {
+    "2012": "LL77",
+    "2013": "LL83",
+    "2014": "LL93",
+    "2015": "LL96",
+    "2016": "LL96",
+    "2018": "LL102",
+    "2019": "LL108",
+    "2020": "LL108",
+    "2021": "LL108"
+   },
+   "revenue_usd_b": {
+    "2012": 22.6034,
+    "2013": 23.1131,
+    "2014": 17.5532,
+    "2015": 17.0505,
+    "2016": 18.3128,
+    "2017": 19.9738,
+    "2018": 21.4933,
+    "2019": 22.3195,
+    "2020": 24.5398,
+    "2021": 28.3184
+   },
+   "revenue_sources": {
+    "2012": "LL77",
+    "2013": "LL83",
+    "2014": "LL93",
+    "2015": "LL96",
+    "2016": "LL96",
+    "2017": "LL96",
+    "2018": "LL102",
+    "2019": "LL108",
+    "2020": "LL108",
+    "2021": "LL108"
+   },
+   "diluted_shares_m": {
+    "2012": 1117.294,
+    "2013": 1084.766,
+    "2014": 1074.286,
+    "2015": 1065.72,
+    "2016": 1061.825,
+    "2017": 1052.023,
+    "2018": 1033.667,
+    "2019": 935.684,
+    "2020": 912.505,
+    "2021": 911.681
+   },
+   "shares_sources": {
+    "2012": "LL77",
+    "2013": "LL83",
+    "2014": "LL93",
+    "2015": "LL96",
+    "2016": "LL96",
+    "2017": "LL96",
+    "2018": "LL102",
+    "2019": "LL108",
+    "2020": "LL108",
+    "2021": "LL108"
+   },
+   "fiscal_year_ends": {
+    "2012": "2012-12-31",
+    "2013": "2013-12-31",
+    "2014": "2014-12-31",
+    "2015": "2015-12-31",
+    "2016": "2016-12-31",
+    "2017": "2017-12-31",
+    "2018": "2018-12-31",
+    "2019": "2019-12-31",
+    "2020": "2020-12-31",
+    "2021": "2021-12-31"
+   },
+   "normalization": "diluted EPS from continuing operations (Elanco Animal Health discontinued from the 2019 disposition: 2014 on as the latest filing reports them, 2013 and before with animal health, a seam as published), each year from the latest filing that reports it (the statements of operations for 2019-2021 (Item 6 reserved), earlier years from the latest filing that reported them); revenue as each filing reports it; GAAP throughout: the company's non-GAAP figures exclude the amortization of intangible assets, which recurs (to 2021 also acquired in-process research and development, which recurs), so none excludes only one-offs (the NKE FY2007, PFE and BMY rule) and they are shown in the guide line only; no kept year is distorted: reported EPS is more than half the EPS without each year's listed items (2012 $3.66 against the non-GAAP $3.39 (Q4 2012 release); 2013 $4.32 against the non-GAAP $4.15 (Q4 2013 release); 2014 $2.01 from continuing operations as recast, against the non-GAAP $2.78 with Elanco (no filing publishes a non-GAAP figure without it for 2014); 2015 $2.36 from continuing operations as recast, against the non-GAAP $3.43 with Elanco (no filing publishes a non-GAAP figure without it for 2015); 2016 $2.57 from continuing operations as recast, against the non-GAAP $3.52 with Elanco (no filing publishes a non-GAAP figure without it for 2016); 2018 $3.05 from continuing operations against the non-GAAP $5.44 (Q4 2019 release, 56%); 2019 $4.96 from continuing operations against the non-GAAP $6.04 (Q4 2019 release); 2020 $6.79 against the non-GAAP $7.93 (Q4 2020 release); 2021 $6.12 against the non-GAAP $8.16 (Q4 2021 release, 75%)); 2017 is excluded: from continuing operations $(0.08) a diluted share (Elanco discontinued, FY2019 figures), still a loss: reported $(0.19) a diluted share is a loss: the items the Q4 2017 release lists include $1.81 a share for U.S. tax reform legislation and $1.23 for asset impairment, restructuring and other special charges, against its $4.28 non-GAAP figure; a loss has no P/E, and no figure excluding only one-offs is published (the non-GAAP EPS also removes $.97 of acquired in-process research and development and $.44 of amortization of intangible assets, which recur) (only the year itself leaves, the NKE FY2018, XOM FY2020 and BMY FY2015 rule)",
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 21.74,
+   "prev_fy_pretax_margin_note": "FY21 income before income taxes $6,155.5M / revenue $28,318.4M (FY2021 10-K)",
+   "prev_fy_gross_margin": 74.18,
+   "prev_fy_sales_growth": 15.4,
+   "prev_fy_us_pct": 18.1,
+   "prev_fy_intl_pct": 11.6,
+   "tax_rate": 0.093,
+   "tax_note": "FY21 income taxes $573.8M / pre-tax $6,155.5M (FY2021 10-K)",
+   "fcf_b": 5.95,
+   "fcf_label": "FY21",
+   "fcf_note": "net cash provided by operating activities $7,260.7M less purchases of property and equipment $1,309.8M (FY2021 10-K)",
+   "cash_b": 3.91,
+   "cash_note": "cash and cash equivalents $3,818.5M and short-term investments $90.1M at December 31",
+   "dividend_annual": 3.92,
+   "dividend_note": "$0.98 quarterly ('In the fourth quarter of 2021, effective for the dividend to be paid in the first quarter of 2022, the quarterly dividend was increased to $0.98 per share, resulting in an indicated annual rate for 2022 of $3.92 per share.', FY2021 10-K)",
+   "cash_return_text": "'In 2021, we repurchased $1.00 billion of shares, which completed our $8.00 billion share repurchase program authorized in June 2018. Additionally, our board authorized a $5.00 billion share repurchase program in May 2021.' (FY2021 10-K)",
+   "business_line": "research-based pharmaceutical company in one segment, human pharmaceutical products: diabetes, oncology, immunology and neuroscience",
+   "groups": [
+    [
+     "Diabetes",
+     13.188,
+     11.4
+    ],
+    [
+     "Oncology",
+     5.741,
+     7.9
+    ],
+    [
+     "Other",
+     4.13,
+     33.5
+    ],
+    [
+     "Immunology",
+     3.361,
+     36.5
+    ],
+    [
+     "Neuroscience",
+     1.899,
+     3.7
+    ]
+   ],
+   "groups_basis": "FY21 revenue by product class (FY2021 10-K, U.S. plus outside the U.S.)",
+   "revenue_label": "total revenue, each year from the latest filing that reports it (2014 on without Elanco, the recast; 2013 and before with animal health, a seam as published)",
+   "company": "Eli Lilly and Company",
+   "exchange": "NYSE",
+   "pe_window_start": null,
+   "eps_excluded": {
+    "2017": "from continuing operations $(0.08) a diluted share (Elanco discontinued, FY2019 figures), still a loss: reported $(0.19) a diluted share is a loss: the items the Q4 2017 release lists include $1.81 a share for U.S. tax reform legislation and $1.23 for asset impairment, restructuring and other special charges, against its $4.28 non-GAAP figure; a loss has no P/E, and no figure excluding only one-offs is published (the non-GAAP EPS also removes $.97 of acquired in-process research and development and $.44 of amortization of intangible assets, which recur)"
+   },
+   "excluded_note": "from continuing operations $(0.08) a diluted share (Elanco discontinued, FY2019 figures), still a loss: reported $(0.19) a diluted share is a loss: the items the Q4 2017 release lists include $1.81 a share for U.S. tax reform legislation and $1.23 for asset impairment, restructuring and other special charges, against its $4.28 non-GAAP figure; a loss has no P/E, and no figure excluding only one-offs is published (the non-GAAP EPS also removes $.97 of acquired in-process research and development and $.44 of amortization of intangible assets, which recur)"
+  },
+  {
+   "published": "2023-02-22",
+   "sources": [
+    "LL83",
+    "LL93",
+    "LL96",
+    "LL102",
+    "LL108",
+    "LL114"
+   ],
+   "fy_label": "FY22",
+   "why": "'We discover, develop, manufacture, and market products in a single business segment—human pharmaceutical products.' (FY2022 10-K, Item 1); 'We depend on products with intellectual property protection for most of our revenues, cash flows, and earnings; the loss of effective intellectual property protection for certain of our products has resulted, and in the future is likely to continue to result, in rapid and severe declines in revenues for those products.' (FY2022 10-K, Item 1A heading); 'Our long-term success depends on intellectual property protection; if our intellectual property rights are invalidated, circumvented, or weakened, our business will be adversely affected.' (FY2022 10-K, Item 1A heading); 'We and our products face intense competition from multinational pharmaceutical companies, biotechnology companies, and lower-cost generic and biosimilar manufacturers, and such competition could have a material adverse effect on our business.' (FY2022 10-K, Item 1A heading); 'For non-biologic products, loss of exclusivity (whether by expiration of legal rights or by termination thereof as a consequence of litigation) typically results in the entry of one or more generic competitors, leading to a rapid and severe decline in revenues' (FY2022 10-K, Item 1A); 'Our product revenues can be adversely affected by the introduction by competitors of branded products that are perceived as superior by the marketplace, by generic or biosimilar versions of our branded products, and by generic or biosimilar versions of other products in the same therapeutic class as our branded products.' (FY2022 10-K, Item 1A)",
+   "eps_gaap": {
+    "2013": 4.32,
+    "2014": 2.01,
+    "2015": 2.36,
+    "2016": 2.57,
+    "2018": 3.05,
+    "2019": 4.96,
+    "2020": 6.79,
+    "2021": 6.12,
+    "2022": 6.9
+   },
+   "eps_normalized": {
+    "2013": 4.32,
+    "2014": 2.01,
+    "2015": 2.36,
+    "2016": 2.57,
+    "2018": 3.05,
+    "2019": 4.96,
+    "2020": 6.79,
+    "2021": 6.12,
+    "2022": 6.9
+   },
+   "eps_sources": {
+    "2013": "LL83",
+    "2014": "LL93",
+    "2015": "LL96",
+    "2016": "LL96",
+    "2018": "LL102",
+    "2019": "LL108",
+    "2020": "LL114",
+    "2021": "LL114",
+    "2022": "LL114"
+   },
+   "revenue_usd_b": {
+    "2013": 23.1131,
+    "2014": 17.5532,
+    "2015": 17.0505,
+    "2016": 18.3128,
+    "2017": 19.9738,
+    "2018": 21.4933,
+    "2019": 22.3195,
+    "2020": 24.5398,
+    "2021": 28.3184,
+    "2022": 28.5414
+   },
+   "revenue_sources": {
+    "2013": "LL83",
+    "2014": "LL93",
+    "2015": "LL96",
+    "2016": "LL96",
+    "2017": "LL96",
+    "2018": "LL102",
+    "2019": "LL108",
+    "2020": "LL114",
+    "2021": "LL114",
+    "2022": "LL114"
+   },
+   "diluted_shares_m": {
+    "2013": 1084.766,
+    "2014": 1074.286,
+    "2015": 1065.72,
+    "2016": 1061.825,
+    "2017": 1052.023,
+    "2018": 1033.667,
+    "2019": 935.684,
+    "2020": 912.505,
+    "2021": 911.681,
+    "2022": 904.619
+   },
+   "shares_sources": {
+    "2013": "LL83",
+    "2014": "LL93",
+    "2015": "LL96",
+    "2016": "LL96",
+    "2017": "LL96",
+    "2018": "LL102",
+    "2019": "LL108",
+    "2020": "LL114",
+    "2021": "LL114",
+    "2022": "LL114"
+   },
+   "fiscal_year_ends": {
+    "2013": "2013-12-31",
+    "2014": "2014-12-31",
+    "2015": "2015-12-31",
+    "2016": "2016-12-31",
+    "2017": "2017-12-31",
+    "2018": "2018-12-31",
+    "2019": "2019-12-31",
+    "2020": "2020-12-31",
+    "2021": "2021-12-31",
+    "2022": "2022-12-31"
+   },
+   "normalization": "diluted EPS from continuing operations (Elanco Animal Health discontinued from the 2019 disposition: 2014 on as the latest filing reports them, 2013 and before with animal health, a seam as published), each year from the latest filing that reports it (the statements of operations for 2020-2022 (Item 6 reserved), earlier years from the latest filing that reported them); revenue as each filing reports it; GAAP throughout: the company's non-GAAP figures exclude the amortization of intangible assets, which recurs (to 2021 also acquired in-process research and development, which recurs), so none excludes only one-offs (the NKE FY2007, PFE and BMY rule) and they are shown in the guide line only; no kept year is distorted: reported EPS is more than half the EPS without each year's listed items (2013 $4.32 against the non-GAAP $4.15 (Q4 2013 release); 2014 $2.01 from continuing operations as recast, against the non-GAAP $2.78 with Elanco (no filing publishes a non-GAAP figure without it for 2014); 2015 $2.36 from continuing operations as recast, against the non-GAAP $3.43 with Elanco (no filing publishes a non-GAAP figure without it for 2015); 2016 $2.57 from continuing operations as recast, against the non-GAAP $3.52 with Elanco (no filing publishes a non-GAAP figure without it for 2016); 2018 $3.05 from continuing operations against the non-GAAP $5.44 (Q4 2019 release, 56%); 2019 $4.96 from continuing operations against the non-GAAP $6.04 (Q4 2019 release); 2020 $6.79 against the non-GAAP $7.93 (Q4 2020 release); 2021 $6.12 against the non-GAAP $8.16 (Q4 2021 release, 75%); 2022 $6.90 against the non-GAAP $7.94 (Q4 2022 release)); 2017 is excluded: from continuing operations $(0.08) a diluted share (Elanco discontinued, FY2019 figures), still a loss: reported $(0.19) a diluted share is a loss: the items the Q4 2017 release lists include $1.81 a share for U.S. tax reform legislation and $1.23 for asset impairment, restructuring and other special charges, against its $4.28 non-GAAP figure; a loss has no P/E, and no figure excluding only one-offs is published (the non-GAAP EPS also removes $.97 of acquired in-process research and development and $.44 of amortization of intangible assets, which recur) (only the year itself leaves, the NKE FY2018, XOM FY2020 and BMY FY2015 rule)",
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 23.85,
+   "prev_fy_pretax_margin_note": "FY22 income before income taxes $6,806.4M / revenue $28,541.4M (FY2022 10-K)",
+   "prev_fy_gross_margin": 76.77,
+   "prev_fy_sales_growth": 0.8,
+   "prev_fy_us_pct": 8.2,
+   "prev_fy_intl_pct": -10.0,
+   "tax_rate": 0.083,
+   "tax_note": "FY22 income taxes $561.6M / pre-tax $6,806.4M (FY2022 10-K)",
+   "fcf_b": 5.23,
+   "fcf_label": "FY22",
+   "fcf_note": "net cash provided by operating activities $7,084.4M less purchases of property and equipment $1,854.3M (FY2022 10-K)",
+   "cash_b": 2.21,
+   "cash_note": "cash and cash equivalents $2,067.0M and short-term investments $144.8M at December 31",
+   "dividend_annual": 4.52,
+   "dividend_note": "$1.13 quarterly ('The quarterly dividend was increased to $1.13 per share effective for the dividend to be paid in the first quarter of 2023, resulting in an indicated annual rate for 2023 of $4.52 per share.', FY2022 10-K)",
+   "cash_return_text": "'In 2022, we repurchased $1.50 billion of shares under our $5.00 billion share repurchase program authorized in May 2021.' (FY2022 10-K)",
+   "business_line": "research-based pharmaceutical company in one segment, human pharmaceutical products: diabetes, oncology, immunology and neuroscience",
+   "groups": [
+    [
+     "Diabetes",
+     14.465,
+     9.7
+    ],
+    [
+     "Oncology",
+     5.666,
+     -1.3
+    ],
+    [
+     "Other",
+     3.52,
+     -14.8
+    ],
+    [
+     "Immunology",
+     3.345,
+     -0.5
+    ],
+    [
+     "Neuroscience",
+     1.546,
+     -18.6
+    ]
+   ],
+   "groups_basis": "FY22 revenue by product class (FY2022 10-K, U.S. plus outside the U.S.)",
+   "revenue_label": "total revenue, each year from the latest filing that reports it (2014 on without Elanco, the recast; 2013 and before with animal health, a seam as published)",
+   "company": "Eli Lilly and Company",
+   "exchange": "NYSE",
+   "pe_window_start": null,
+   "eps_excluded": {
+    "2017": "from continuing operations $(0.08) a diluted share (Elanco discontinued, FY2019 figures), still a loss: reported $(0.19) a diluted share is a loss: the items the Q4 2017 release lists include $1.81 a share for U.S. tax reform legislation and $1.23 for asset impairment, restructuring and other special charges, against its $4.28 non-GAAP figure; a loss has no P/E, and no figure excluding only one-offs is published (the non-GAAP EPS also removes $.97 of acquired in-process research and development and $.44 of amortization of intangible assets, which recur)"
+   },
+   "excluded_note": "from continuing operations $(0.08) a diluted share (Elanco discontinued, FY2019 figures), still a loss: reported $(0.19) a diluted share is a loss: the items the Q4 2017 release lists include $1.81 a share for U.S. tax reform legislation and $1.23 for asset impairment, restructuring and other special charges, against its $4.28 non-GAAP figure; a loss has no P/E, and no figure excluding only one-offs is published (the non-GAAP EPS also removes $.97 of acquired in-process research and development and $.44 of amortization of intangible assets, which recur)"
+  },
+  {
+   "published": "2024-02-21",
+   "sources": [
+    "LL93",
+    "LL96",
+    "LL102",
+    "LL108",
+    "LL114",
+    "LL119"
+   ],
+   "fy_label": "FY23",
+   "why": "'We discover, develop, manufacture, and market products in a single business segment—human pharmaceutical products.' (FY2023 10-K, Item 1); 'We depend on products with intellectual property protection for most of our revenues, cash flows, and earnings; the loss of effective intellectual property protection for certain of our products has resulted, and in the future is likely to continue to result, in rapid and severe declines in revenues for those products.' (FY2023 10-K, Item 1A heading); 'Our long-term success depends on intellectual property protection; if our intellectual property rights are invalidated, circumvented, or weakened, our business will be adversely affected.' (FY2023 10-K, Item 1A heading); 'We and our products face intense competition from multinational pharmaceutical companies, biotechnology companies, and lower-cost generic and biosimilar manufacturers, and such competition could have a material adverse effect on our business.' (FY2023 10-K, Item 1A heading); 'For non-biologic products, loss of exclusivity (whether by expiration of legal rights or by termination thereof as a consequence of litigation) typically results in the entry of one or more generic competitors, leading to a rapid and severe decline in revenues' (FY2023 10-K, Item 1A); 'Our product revenues and prospects are adversely affected by the introduction by competitors of branded products that are first to market, have better marketplace access, have greater brand recognition or are perceived as superior by the marketplace, by generic or biosimilar versions of our branded products, and by generic or biosimilar versions of other products in the same therapeutic class as our branded products.' (FY2023 10-K, Item 1A); 'We also face challenges from the distribution of counterfeit and illegally compounded versions of our genuine drugs, including as related to our products with GLP-1 receptor agonist activity.' (FY2023 10-K, Item 1A)",
+   "eps_gaap": {
+    "2014": 2.01,
+    "2015": 2.36,
+    "2016": 2.57,
+    "2018": 3.05,
+    "2019": 4.96,
+    "2020": 6.79,
+    "2021": 6.12,
+    "2022": 6.9,
+    "2023": 5.8
+   },
+   "eps_normalized": {
+    "2014": 2.01,
+    "2015": 2.36,
+    "2016": 2.57,
+    "2018": 3.05,
+    "2019": 4.96,
+    "2020": 6.79,
+    "2021": 6.12,
+    "2022": 6.9,
+    "2023": 5.8
+   },
+   "eps_sources": {
+    "2014": "LL93",
+    "2015": "LL96",
+    "2016": "LL96",
+    "2018": "LL102",
+    "2019": "LL108",
+    "2020": "LL114",
+    "2021": "LL119",
+    "2022": "LL119",
+    "2023": "LL119"
+   },
+   "revenue_usd_b": {
+    "2014": 17.5532,
+    "2015": 17.0505,
+    "2016": 18.3128,
+    "2017": 19.9738,
+    "2018": 21.4933,
+    "2019": 22.3195,
+    "2020": 24.5398,
+    "2021": 28.3184,
+    "2022": 28.5414,
+    "2023": 34.1241
+   },
+   "revenue_sources": {
+    "2014": "LL93",
+    "2015": "LL96",
+    "2016": "LL96",
+    "2017": "LL96",
+    "2018": "LL102",
+    "2019": "LL108",
+    "2020": "LL114",
+    "2021": "LL119",
+    "2022": "LL119",
+    "2023": "LL119"
+   },
+   "diluted_shares_m": {
+    "2014": 1074.286,
+    "2015": 1065.72,
+    "2016": 1061.825,
+    "2017": 1052.023,
+    "2018": 1033.667,
+    "2019": 935.684,
+    "2020": 912.505,
+    "2021": 911.681,
+    "2022": 904.619,
+    "2023": 903.284
+   },
+   "shares_sources": {
+    "2014": "LL93",
+    "2015": "LL96",
+    "2016": "LL96",
+    "2017": "LL96",
+    "2018": "LL102",
+    "2019": "LL108",
+    "2020": "LL114",
+    "2021": "LL119",
+    "2022": "LL119",
+    "2023": "LL119"
+   },
+   "fiscal_year_ends": {
+    "2014": "2014-12-31",
+    "2015": "2015-12-31",
+    "2016": "2016-12-31",
+    "2017": "2017-12-31",
+    "2018": "2018-12-31",
+    "2019": "2019-12-31",
+    "2020": "2020-12-31",
+    "2021": "2021-12-31",
+    "2022": "2022-12-31",
+    "2023": "2023-12-31"
+   },
+   "normalization": "diluted EPS (Elanco Animal Health discontinued from the 2019 disposition: 2014-2018 from continuing operations as the latest filing reports them), each year from the latest filing that reports it (the statements of operations for 2021-2023 (Item 6 reserved), earlier years from the latest filing that reported them); revenue as each filing reports it; GAAP throughout: the company's non-GAAP figures exclude the amortization of intangible assets, which recurs (to 2021 also acquired in-process research and development, which recurs), so none excludes only one-offs (the NKE FY2007, PFE and BMY rule) and they are shown in the guide line only; no kept year is distorted: reported EPS is more than half the EPS without each year's listed items (2014 $2.01 from continuing operations as recast, against the non-GAAP $2.78 with Elanco (no filing publishes a non-GAAP figure without it for 2014); 2015 $2.36 from continuing operations as recast, against the non-GAAP $3.43 with Elanco (no filing publishes a non-GAAP figure without it for 2015); 2016 $2.57 from continuing operations as recast, against the non-GAAP $3.52 with Elanco (no filing publishes a non-GAAP figure without it for 2016); 2018 $3.05 from continuing operations against the non-GAAP $5.44 (Q4 2019 release, 56%); 2019 $4.96 from continuing operations against the non-GAAP $6.04 (Q4 2019 release); 2020 $6.79 against the non-GAAP $7.93 (Q4 2020 release); 2021 $6.12 against the non-GAAP $8.16 (Q4 2021 release, 75%); 2022 $6.90 against the non-GAAP $7.94 (Q4 2022 release); 2023 $5.80 against the non-GAAP $6.32 (Q4 2023 release)); 2017 is excluded: from continuing operations $(0.08) a diluted share (Elanco discontinued, FY2019 figures), still a loss: reported $(0.19) a diluted share is a loss: the items the Q4 2017 release lists include $1.81 a share for U.S. tax reform legislation and $1.23 for asset impairment, restructuring and other special charges, against its $4.28 non-GAAP figure; a loss has no P/E, and no figure excluding only one-offs is published (the non-GAAP EPS also removes $.97 of acquired in-process research and development and $.44 of amortization of intangible assets, which recur) (only the year itself leaves, the NKE FY2018, XOM FY2020 and BMY FY2015 rule)",
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 19.21,
+   "prev_fy_pretax_margin_note": "FY23 income before income taxes $6,554.6M / revenue $34,124.1M (FY2023 10-K)",
+   "prev_fy_gross_margin": 79.25,
+   "prev_fy_sales_growth": 19.6,
+   "prev_fy_us_pct": 19.8,
+   "prev_fy_intl_pct": 19.1,
+   "tax_rate": 0.201,
+   "tax_note": "FY23 income taxes $1,314.2M / pre-tax $6,554.6M (FY2023 10-K)",
+   "fcf_b": 0.79,
+   "fcf_label": "FY23",
+   "fcf_note": "net cash provided by operating activities $4,240.1M less purchases of property and equipment $3,447.6M (FY2023 10-K)",
+   "cash_b": 2.93,
+   "cash_note": "cash and cash equivalents $2,818.6M and short-term investments $109.1M at December 31",
+   "dividend_annual": 5.2,
+   "dividend_note": "$1.30 quarterly ('The quarterly dividend was increased to $1.30 per share effective for the dividend to be paid in the first quarter of 2024, resulting in an indicated annual rate for 2024 of $5.20 per share.', FY2023 10-K)",
+   "cash_return_text": "'In 2023, we repurchased $750.0 million of shares under our $5.00 billion share repurchase program that our board authorized in May 2021.' (FY2023 10-K)",
+   "business_line": "research-based pharmaceutical company in one segment, human pharmaceutical products: diabetes and obesity, oncology, immunology and neuroscience",
+   "groups": [
+    [
+     "Diabetes and obesity",
+     19.668,
+     36.0
+    ],
+    [
+     "Oncology",
+     6.658,
+     17.5
+    ],
+    [
+     "Immunology",
+     3.797,
+     13.5
+    ],
+    [
+     "Neuroscience",
+     2.878,
+     86.2
+    ],
+    [
+     "Other",
+     1.122,
+     -68.1
+    ]
+   ],
+   "groups_basis": "FY23 revenue by product class (FY2023 10-K, U.S. plus outside the U.S.)",
+   "revenue_label": "total revenue, each year from the latest filing that reports it (2014-2018 without Elanco, as the recast and later 10-Ks report them)",
+   "company": "Eli Lilly and Company",
+   "exchange": "NYSE",
+   "pe_window_start": null,
+   "eps_excluded": {
+    "2017": "from continuing operations $(0.08) a diluted share (Elanco discontinued, FY2019 figures), still a loss: reported $(0.19) a diluted share is a loss: the items the Q4 2017 release lists include $1.81 a share for U.S. tax reform legislation and $1.23 for asset impairment, restructuring and other special charges, against its $4.28 non-GAAP figure; a loss has no P/E, and no figure excluding only one-offs is published (the non-GAAP EPS also removes $.97 of acquired in-process research and development and $.44 of amortization of intangible assets, which recur)"
+   },
+   "excluded_note": "from continuing operations $(0.08) a diluted share (Elanco discontinued, FY2019 figures), still a loss: reported $(0.19) a diluted share is a loss: the items the Q4 2017 release lists include $1.81 a share for U.S. tax reform legislation and $1.23 for asset impairment, restructuring and other special charges, against its $4.28 non-GAAP figure; a loss has no P/E, and no figure excluding only one-offs is published (the non-GAAP EPS also removes $.97 of acquired in-process research and development and $.44 of amortization of intangible assets, which recur)"
+  },
+  {
+   "published": "2025-02-19",
+   "sources": [
+    "LL96",
+    "LL102",
+    "LL108",
+    "LL114",
+    "LL119",
+    "LL125"
+   ],
+   "fy_label": "FY24",
+   "why": "'We discover, develop, manufacture, and market products in a single business segment—human pharmaceutical products.' (FY2024 10-K, Item 1); 'We depend on products with intellectual property protection for most of our revenues, cash flows, and earnings; the loss of effective intellectual property protection for certain of our products has resulted, and in the future is likely to continue to result, in rapid and severe declines in revenues for those products.' (FY2024 10-K, Item 1A heading); 'Our long-term success depends on intellectual property protection; if our intellectual property rights are invalidated, circumvented, or weakened, our business will be adversely affected.' (FY2024 10-K, Item 1A heading); 'We and our products face intense competition, including from multinational pharmaceutical companies, biotechnology companies, and lower-cost generic and biosimilar manufacturers, and such competition could have a material adverse effect on our business.' (FY2024 10-K, Item 1A heading); 'For non-biologic products, loss of exclusivity typically results in the entry of one or more generic competitors, leading to a rapid and severe decline in revenues' (FY2024 10-K, Item 1A); 'Our product revenues and prospects are adversely affected by patient access issues, the introduction by competitors of branded products that are first to market, have better marketplace access, have greater brand recognition or are perceived as superior by the marketplace, by generic or biosimilar versions of our branded products, and by generic or biosimilar versions of other products in the same therapeutic class as our branded products.' (FY2024 10-K, Item 1A); 'For example, we have seen an increase in the production, marketing, and sale of counterfeit, misbranded, adulterated, and compounded incretins that could materially impact us.' (FY2024 10-K, Item 1A)",
+   "eps_gaap": {
+    "2015": 2.36,
+    "2016": 2.57,
+    "2018": 3.05,
+    "2019": 4.96,
+    "2020": 6.79,
+    "2021": 6.12,
+    "2022": 6.9,
+    "2023": 5.8,
+    "2024": 11.71
+   },
+   "eps_normalized": {
+    "2015": 2.36,
+    "2016": 2.57,
+    "2018": 3.05,
+    "2019": 4.96,
+    "2020": 6.79,
+    "2021": 6.12,
+    "2022": 6.9,
+    "2023": 5.8,
+    "2024": 11.71
+   },
+   "eps_sources": {
+    "2015": "LL96",
+    "2016": "LL96",
+    "2018": "LL102",
+    "2019": "LL108",
+    "2020": "LL114",
+    "2021": "LL119",
+    "2022": "LL125",
+    "2023": "LL125",
+    "2024": "LL125"
+   },
+   "revenue_usd_b": {
+    "2015": 17.0505,
+    "2016": 18.3128,
+    "2017": 19.9738,
+    "2018": 21.4933,
+    "2019": 22.3195,
+    "2020": 24.5398,
+    "2021": 28.3184,
+    "2022": 28.5414,
+    "2023": 34.1241,
+    "2024": 45.0427
+   },
+   "revenue_sources": {
+    "2015": "LL96",
+    "2016": "LL96",
+    "2017": "LL96",
+    "2018": "LL102",
+    "2019": "LL108",
+    "2020": "LL114",
+    "2021": "LL119",
+    "2022": "LL125",
+    "2023": "LL125",
+    "2024": "LL125"
+   },
+   "diluted_shares_m": {
+    "2015": 1065.72,
+    "2016": 1061.825,
+    "2017": 1052.023,
+    "2018": 1033.667,
+    "2019": 935.684,
+    "2020": 912.505,
+    "2021": 911.681,
+    "2022": 904.619,
+    "2023": 903.284,
+    "2024": 904.059
+   },
+   "shares_sources": {
+    "2015": "LL96",
+    "2016": "LL96",
+    "2017": "LL96",
+    "2018": "LL102",
+    "2019": "LL108",
+    "2020": "LL114",
+    "2021": "LL119",
+    "2022": "LL125",
+    "2023": "LL125",
+    "2024": "LL125"
+   },
+   "fiscal_year_ends": {
+    "2015": "2015-12-31",
+    "2016": "2016-12-31",
+    "2017": "2017-12-31",
+    "2018": "2018-12-31",
+    "2019": "2019-12-31",
+    "2020": "2020-12-31",
+    "2021": "2021-12-31",
+    "2022": "2022-12-31",
+    "2023": "2023-12-31",
+    "2024": "2024-12-31"
+   },
+   "normalization": "diluted EPS (Elanco Animal Health discontinued from the 2019 disposition: 2014-2018 from continuing operations as the latest filing reports them), each year from the latest filing that reports it (the statements of operations for 2022-2024 (Item 6 reserved), earlier years from the latest filing that reported them); revenue as each filing reports it; GAAP throughout: the company's non-GAAP figures exclude the amortization of intangible assets, which recurs (to 2021 also acquired in-process research and development, which recurs), so none excludes only one-offs (the NKE FY2007, PFE and BMY rule) and they are shown in the guide line only; no kept year is distorted: reported EPS is more than half the EPS without each year's listed items (2015 $2.36 from continuing operations as recast, against the non-GAAP $3.43 with Elanco (no filing publishes a non-GAAP figure without it for 2015); 2016 $2.57 from continuing operations as recast, against the non-GAAP $3.52 with Elanco (no filing publishes a non-GAAP figure without it for 2016); 2018 $3.05 from continuing operations against the non-GAAP $5.44 (Q4 2019 release, 56%); 2019 $4.96 from continuing operations against the non-GAAP $6.04 (Q4 2019 release); 2020 $6.79 against the non-GAAP $7.93 (Q4 2020 release); 2021 $6.12 against the non-GAAP $8.16 (Q4 2021 release, 75%); 2022 $6.90 against the non-GAAP $7.94 (Q4 2022 release); 2023 $5.80 against the non-GAAP $6.32 (Q4 2023 release); 2024 $11.71 against the non-GAAP $12.99 (Q4 2024 release)); 2017 is excluded: from continuing operations $(0.08) a diluted share (Elanco discontinued, FY2019 figures), still a loss: reported $(0.19) a diluted share is a loss: the items the Q4 2017 release lists include $1.81 a share for U.S. tax reform legislation and $1.23 for asset impairment, restructuring and other special charges, against its $4.28 non-GAAP figure; a loss has no P/E, and no figure excluding only one-offs is published (the non-GAAP EPS also removes $.97 of acquired in-process research and development and $.44 of amortization of intangible assets, which recur) (only the year itself leaves, the NKE FY2018, XOM FY2020 and BMY FY2015 rule)",
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 28.15,
+   "prev_fy_pretax_margin_note": "FY24 income before income taxes $12,680.4M / revenue $45,042.7M (FY2024 10-K)",
+   "prev_fy_gross_margin": 81.31,
+   "prev_fy_sales_growth": 32.0,
+   "prev_fy_us_pct": 39.4,
+   "prev_fy_intl_pct": 18.9,
+   "tax_rate": 0.165,
+   "tax_note": "FY24 income taxes $2,090.4M / pre-tax $12,680.4M (FY2024 10-K)",
+   "fcf_b": 3.76,
+   "fcf_label": "FY24",
+   "fcf_note": "net cash provided by operating activities $8,817.9M less purchases of property and equipment $5,057.8M (FY2024 10-K)",
+   "cash_b": 3.42,
+   "cash_note": "cash and cash equivalents $3,268.4M and short-term investments $154.8M at December 31",
+   "dividend_annual": 6.0,
+   "dividend_note": "$1.50 quarterly ('The quarterly dividend was increased to $1.50 per share effective for the dividend to be paid in the first quarter of 2025, resulting in an indicated annual rate for 2025 of $6.00 per share.', FY2024 10-K)",
+   "cash_return_text": "'In 2024, we repurchased $2.50 billion of shares, which completed our $5.00 billion share repurchase program that our board authorized in May 2021. Our board authorized a $15.00 billion share repurchase program in December 2024.' (FY2024 10-K)",
+   "business_line": "research-based pharmaceutical company in one segment, human pharmaceutical products: cardiometabolic health, oncology, immunology and neuroscience",
+   "groups": [
+    [
+     "Cardiometabolic Health",
+     29.521,
+     50.1
+    ],
+    [
+     "Oncology",
+     8.752,
+     31.5
+    ],
+    [
+     "Immunology",
+     4.393,
+     15.7
+    ],
+    [
+     "Neuroscience",
+     1.473,
+     -48.8
+    ],
+    [
+     "Other",
+     0.903,
+     -19.5
+    ]
+   ],
+   "groups_basis": "FY24 revenue by product class (FY2024 10-K, U.S. plus outside the U.S.)",
+   "revenue_label": "total revenue, each year from the latest filing that reports it (2014-2018 without Elanco, as the recast and later 10-Ks report them)",
+   "company": "Eli Lilly and Company",
+   "exchange": "NYSE",
+   "pe_window_start": null,
+   "eps_excluded": {
+    "2017": "from continuing operations $(0.08) a diluted share (Elanco discontinued, FY2019 figures), still a loss: reported $(0.19) a diluted share is a loss: the items the Q4 2017 release lists include $1.81 a share for U.S. tax reform legislation and $1.23 for asset impairment, restructuring and other special charges, against its $4.28 non-GAAP figure; a loss has no P/E, and no figure excluding only one-offs is published (the non-GAAP EPS also removes $.97 of acquired in-process research and development and $.44 of amortization of intangible assets, which recur)"
+   },
+   "excluded_note": "from continuing operations $(0.08) a diluted share (Elanco discontinued, FY2019 figures), still a loss: reported $(0.19) a diluted share is a loss: the items the Q4 2017 release lists include $1.81 a share for U.S. tax reform legislation and $1.23 for asset impairment, restructuring and other special charges, against its $4.28 non-GAAP figure; a loss has no P/E, and no figure excluding only one-offs is published (the non-GAAP EPS also removes $.97 of acquired in-process research and development and $.44 of amortization of intangible assets, which recur)"
+  },
+  {
+   "published": "2026-02-12",
+   "sources": [
+    "LL96",
+    "LL102",
+    "LL108",
+    "LL114",
+    "LL119",
+    "LL125",
+    "LL130"
+   ],
+   "fy_label": "FY25",
+   "why": "'We discover, develop, manufacture, and market products in a single business segment—human pharmaceutical products.' (FY2025 10-K, Item 1); 'We depend on products with intellectual property protection for most of our revenues, cash flows, and earnings; the loss of effective intellectual property protection for certain of our products has resulted, and in the future is likely to continue to result, in rapid and severe declines in revenues for those products.' (FY2025 10-K, Item 1A heading); 'Our long-term success depends on intellectual property protection; if our intellectual property rights are invalidated, circumvented, or weakened, our business will be adversely affected.' (FY2025 10-K, Item 1A heading); 'We and our products face intense competition, and such competition could have a material adverse effect on our business.' (FY2025 10-K, Item 1A heading); 'For non-biologic products, loss of exclusivity typically results in the entry of one or more generic competitors, leading to a rapid and severe decline in revenues' (FY2025 10-K, Item 1A); 'Our product revenues and prospects are adversely affected by patient access issues, the introduction by competitors of branded products that are first to market, have better marketplace access, have greater brand recognition, or are perceived as superior by the marketplace, by price competition, by generic or biosimilar versions of our branded products, and by generic or biosimilar versions of other products in the same therapeutic class as our branded products.' (FY2025 10-K, Item 1A); 'For example, we continue to see the production, marketing, and sale of counterfeit, misbranded, adulterated, and mass-compounded incretins in the U.S. and other markets that could materially impact us.' (FY2025 10-K, Item 1A)",
+   "eps_gaap": {
+    "2016": 2.57,
+    "2018": 3.05,
+    "2019": 4.96,
+    "2020": 6.79,
+    "2021": 6.12,
+    "2022": 6.9,
+    "2023": 5.8,
+    "2024": 11.71,
+    "2025": 22.95
+   },
+   "eps_normalized": {
+    "2016": 2.57,
+    "2018": 3.05,
+    "2019": 4.96,
+    "2020": 6.79,
+    "2021": 6.12,
+    "2022": 6.9,
+    "2023": 5.8,
+    "2024": 11.71,
+    "2025": 22.95
+   },
+   "eps_sources": {
+    "2016": "LL96",
+    "2018": "LL102",
+    "2019": "LL108",
+    "2020": "LL114",
+    "2021": "LL119",
+    "2022": "LL125",
+    "2023": "LL130",
+    "2024": "LL130",
+    "2025": "LL130"
+   },
+   "revenue_usd_b": {
+    "2016": 18.3128,
+    "2017": 19.9738,
+    "2018": 21.4933,
+    "2019": 22.3195,
+    "2020": 24.5398,
+    "2021": 28.3184,
+    "2022": 28.5414,
+    "2023": 34.124,
+    "2024": 45.043,
+    "2025": 65.179
+   },
+   "revenue_sources": {
+    "2016": "LL96",
+    "2017": "LL96",
+    "2018": "LL102",
+    "2019": "LL108",
+    "2020": "LL114",
+    "2021": "LL119",
+    "2022": "LL125",
+    "2023": "LL130",
+    "2024": "LL130",
+    "2025": "LL130"
+   },
+   "diluted_shares_m": {
+    "2016": 1061.825,
+    "2017": 1052.023,
+    "2018": 1033.667,
+    "2019": 935.684,
+    "2020": 912.505,
+    "2021": 911.681,
+    "2022": 904.619,
+    "2023": 903.3,
+    "2024": 904.1,
+    "2025": 899.3
+   },
+   "shares_sources": {
+    "2016": "LL96",
+    "2017": "LL96",
+    "2018": "LL102",
+    "2019": "LL108",
+    "2020": "LL114",
+    "2021": "LL119",
+    "2022": "LL125",
+    "2023": "LL130",
+    "2024": "LL130",
+    "2025": "LL130"
+   },
+   "fiscal_year_ends": {
+    "2016": "2016-12-31",
+    "2017": "2017-12-31",
+    "2018": "2018-12-31",
+    "2019": "2019-12-31",
+    "2020": "2020-12-31",
+    "2021": "2021-12-31",
+    "2022": "2022-12-31",
+    "2023": "2023-12-31",
+    "2024": "2024-12-31",
+    "2025": "2025-12-31"
+   },
+   "normalization": "diluted EPS (Elanco Animal Health discontinued from the 2019 disposition: 2014-2018 from continuing operations as the latest filing reports them), each year from the latest filing that reports it (the statements of operations for 2023-2025 (Item 6 reserved), earlier years from the latest filing that reported them); revenue as each filing reports it; GAAP throughout: the company's non-GAAP figures exclude the amortization of intangible assets, which recurs (to 2021 also acquired in-process research and development, which recurs), so none excludes only one-offs (the NKE FY2007, PFE and BMY rule) and they are shown in the guide line only; no kept year is distorted: reported EPS is more than half the EPS without each year's listed items (2016 $2.57 from continuing operations as recast, against the non-GAAP $3.52 with Elanco (no filing publishes a non-GAAP figure without it for 2016); 2018 $3.05 from continuing operations against the non-GAAP $5.44 (Q4 2019 release, 56%); 2019 $4.96 from continuing operations against the non-GAAP $6.04 (Q4 2019 release); 2020 $6.79 against the non-GAAP $7.93 (Q4 2020 release); 2021 $6.12 against the non-GAAP $8.16 (Q4 2021 release, 75%); 2022 $6.90 against the non-GAAP $7.94 (Q4 2022 release); 2023 $5.80 against the non-GAAP $6.32 (Q4 2023 release); 2024 $11.71 against the non-GAAP $12.99 (Q4 2024 release); 2025 $22.95 against the non-GAAP $24.21 (Q4 2025 release)); 2017 is excluded: from continuing operations $(0.08) a diluted share (Elanco discontinued, FY2019 figures), still a loss: reported $(0.19) a diluted share is a loss: the items the Q4 2017 release lists include $1.81 a share for U.S. tax reform legislation and $1.23 for asset impairment, restructuring and other special charges, against its $4.28 non-GAAP figure; a loss has no P/E, and no figure excluding only one-offs is published (the non-GAAP EPS also removes $.97 of acquired in-process research and development and $.44 of amortization of intangible assets, which recur) (only the year itself leaves, the NKE FY2018, XOM FY2020 and BMY FY2015 rule)",
+   "margin_signal_name": "Pre-tax margin change",
+   "prev_fy_pretax_margin": 39.48,
+   "prev_fy_pretax_margin_note": "FY25 income before income taxes $25,731M / revenue $65,179M (FY2025 10-K)",
+   "prev_fy_gross_margin": 83.04,
+   "prev_fy_sales_growth": 44.7,
+   "prev_fy_us_pct": 43.1,
+   "prev_fy_intl_pct": 47.9,
+   "tax_rate": 0.198,
+   "tax_note": "FY25 income taxes $5,091M / pre-tax $25,731M (FY2025 10-K)",
+   "fcf_b": 8.97,
+   "fcf_label": "FY25",
+   "fcf_note": "net cash provided by operating activities $16,813M less purchases of property and equipment $7,841M (FY2025 10-K)",
+   "cash_b": 7.37,
+   "cash_note": "cash and cash equivalents $7,268M and short-term investments $105M at December 31 (short-term investments from the fair-value note; the balance sheet no longer shows the line)",
+   "dividend_annual": 6.92,
+   "dividend_note": "$1.73 quarterly ('The quarterly dividend was increased to $1.73 per share effective for the dividend to be paid in the first quarter of 2026, resulting in an indicated annual rate for 2026 of $6.92 per share.', FY2025 10-K)",
+   "cash_return_text": "'In 2025, we repurchased $4.1 billion of shares under our $15.0 billion share repurchase program that our board authorized in December 2024.' (FY2025 10-K)",
+   "business_line": "research-based pharmaceutical company in one segment, human pharmaceutical products: cardiometabolic health, oncology, immunology and neuroscience",
+   "groups": [
+    [
+     "Cardiometabolic Health",
+     48.221,
+     63.3
+    ],
+    [
+     "Oncology",
+     9.376,
+     7.1
+    ],
+    [
+     "Immunology",
+     5.247,
+     19.4
+    ],
+    [
+     "Neuroscience",
+     1.391,
+     -5.6
+    ],
+    [
+     "Other",
+     0.943,
+     4.4
+    ]
+   ],
+   "groups_basis": "FY25 revenue by product class (FY2025 10-K, U.S. plus outside the U.S.)",
+   "revenue_label": "total revenue, each year from the latest filing that reports it (2014-2018 without Elanco, as the recast and later 10-Ks report them)",
+   "company": "Eli Lilly and Company",
+   "exchange": "NYSE",
+   "pe_window_start": null,
+   "eps_excluded": {
+    "2017": "from continuing operations $(0.08) a diluted share (Elanco discontinued, FY2019 figures), still a loss: reported $(0.19) a diluted share is a loss: the items the Q4 2017 release lists include $1.81 a share for U.S. tax reform legislation and $1.23 for asset impairment, restructuring and other special charges, against its $4.28 non-GAAP figure; a loss has no P/E, and no figure excluding only one-offs is published (the non-GAAP EPS also removes $.97 of acquired in-process research and development and $.44 of amortization of intangible assets, which recur)"
+   },
+   "excluded_note": "from continuing operations $(0.08) a diluted share (Elanco discontinued, FY2019 figures), still a loss: reported $(0.19) a diluted share is a loss: the items the Q4 2017 release lists include $1.81 a share for U.S. tax reform legislation and $1.23 for asset impairment, restructuring and other special charges, against its $4.28 non-GAAP figure; a loss has no P/E, and no figure excluding only one-offs is published (the non-GAAP EPS also removes $.97 of acquired in-process research and development and $.44 of amortization of intangible assets, which recur)"
   }
  ],
  "prints": [
@@ -6057,6 +7052,825 @@
    "cash_return_text": "the release reports no share repurchases",
    "next_print": "Q4 2021 print (late January)",
    "eps_note": "reported EPS $1.22 against $1.33; the company's non-GAAP figure $1.94 against $1.41 is shown only (it also removes the amortization of intangible assets and acquired in-process research and development, which recur; the history is GAAP: the NKE FY2007, PFE and BMY rule)"
+  },
+  {
+   "quarter": "Q4 2021",
+   "fy": 2021,
+   "q": 4,
+   "published": "2022-02-03",
+   "source": "LL107",
+   "release": "Feb 3",
+   "release_time": "8-K accepted 2022-02-03 07:08 ET (before the open); conference call 'begin at 9 a.m.' ET",
+   "period_end": "2021-12-31",
+   "raw": {
+    "rev_m": 7999.9,
+    "rev_prior_m": 7440.0,
+    "cos_m": 2050.2,
+    "cos_prior_m": 1719.8,
+    "pretax_m": 1839.9,
+    "pretax_prior_m": 2469.1,
+    "diluted_shares_m": 909.555
+   },
+   "sales_b": 8.0,
+   "sales_pct": 7.5,
+   "us_pct": 13.0,
+   "intl_pct": -1.0,
+   "us_b": 5.176,
+   "intl_b": 2.824,
+   "geo_note": "U.S. +13% to $5.176B, outside the U.S. -1% to $2.824B, as the release states them",
+   "gross_margin": 74.37,
+   "gross_margin_bp": -251.2,
+   "pretax_margin": 23.0,
+   "pretax_margin_bp": -1018.8,
+   "eps_q": 1.9,
+   "eps_q_prior": 2.32,
+   "diluted_shares_m": 909.555,
+   "lc_pct": 8.0,
+   "lc_note": "8%: the release states no exchange-rate effect (its volume and price parts only), read as 0 points",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q1 2022 print (late April)",
+   "eps_note": "reported EPS $1.90 against $2.32; the company's non-GAAP figure $2.49 against $2.31 is shown only (it also removes the amortization of intangible assets and acquired in-process research and development, which recur; the history is GAAP: the NKE FY2007, PFE and BMY rule)",
+   "note": "revenue includes the COVID-19 antibodies, as published ('The company recognized worldwide revenue of $1.063 billion from COVID-19 antibodies during the quarter compared with $871.2 million in the fourth quarter of 2020.')",
+   "fy_actual": {
+    "fy": 2021,
+    "fy_label": "FY21",
+    "eps_normalized": 6.12,
+    "revenue_usd_b": 28.3184,
+    "diluted_shares_m": 911.681,
+    "normalization_note": "FY2021 $6.12 diluted EPS (Q4 2021 release; GAAP, the company's non-GAAP $8.16 is shown only)",
+    "gross_margin": 74.18,
+    "pretax_margin": 21.74,
+    "pretax_margin_note": "FY21 income before income taxes $6,155.5M / revenue $28,318.4M (Q4 2021 release)",
+    "sales_growth": 15.4,
+    "us_pct": 18.0,
+    "intl_pct": 12.0,
+    "tax_rate": 0.093,
+    "tax_note": "FY21 income taxes $573.8M / pre-tax $6,155.5M"
+   }
+  },
+  {
+   "quarter": "Q1 2022",
+   "fy": 2022,
+   "q": 1,
+   "published": "2022-04-28",
+   "source": "LL109",
+   "release": "Apr 28",
+   "release_time": "8-K accepted 2022-04-28 07:05 ET (before the open); conference call 'begin at 9 a.m.' ET",
+   "period_end": "2022-03-31",
+   "raw": {
+    "rev_m": 7810.0,
+    "rev_prior_m": 6805.6,
+    "cos_m": 2072.1,
+    "cos_prior_m": 1878.6,
+    "pretax_m": 2053.6,
+    "pretax_prior_m": 1476.4,
+    "diluted_shares_m": 906.35
+   },
+   "sales_b": 7.81,
+   "sales_pct": 14.8,
+   "us_pct": 31.0,
+   "intl_pct": -8.0,
+   "geo_note": "U.S. +31% to $5.17B, outside the U.S. -8% to $2.64B, as the release states them (the dollars to $0.01B)",
+   "gross_margin": 73.47,
+   "gross_margin_bp": 107.2,
+   "pretax_margin": 26.29,
+   "pretax_margin_bp": 460.1,
+   "eps_q": 2.1,
+   "eps_q_prior": 1.49,
+   "diluted_shares_m": 906.35,
+   "lc_pct": 17.0,
+   "lc_note": "15% less the -2 points of exchange rates the release states",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q2 2022 print (early August)",
+   "eps_note": "reported EPS $2.10 against $1.49; the company's non-GAAP figure $2.62 against $1.61 is shown only (it also removes the amortization of intangible assets, which recurs, and other listed items; from Q1 2022 it keeps acquired in-process research and development (the 8-K of 2022-04-14); the history is GAAP: the NKE FY2007, PFE and BMY rule)",
+   "note": "revenue includes the COVID-19 antibodies, as published ('The company recognized U.S. revenue from COVID-19 antibodies of $1.46 billion in Q1 2022 compared to $650.6 million in Q1 2021.')"
+  },
+  {
+   "quarter": "Q2 2022",
+   "fy": 2022,
+   "q": 2,
+   "published": "2022-08-04",
+   "source": "LL110",
+   "release": "Aug 4",
+   "release_time": "8-K accepted 2022-08-04 07:05 ET (before the open); conference call 'begin at 9 a.m.' ET",
+   "period_end": "2022-06-30",
+   "raw": {
+    "rev_m": 6488.0,
+    "rev_prior_m": 6740.1,
+    "cos_m": 1430.5,
+    "cos_prior_m": 1953.2,
+    "pretax_m": 1090.9,
+    "pretax_prior_m": 1593.9,
+    "diluted_shares_m": 902.94
+   },
+   "sales_b": 6.488,
+   "sales_pct": -3.7,
+   "us_pct": 6.0,
+   "intl_pct": -16.0,
+   "geo_note": "U.S. +6% to $3.93B, outside the U.S. -16% to $2.55B, as the release states them (the dollars to $0.01B)",
+   "gross_margin": 77.95,
+   "gross_margin_bp": 693.0,
+   "pretax_margin": 16.81,
+   "pretax_margin_bp": -683.4,
+   "eps_q": 1.05,
+   "eps_q_prior": 1.53,
+   "diluted_shares_m": 902.94,
+   "lc_pct": -1.0,
+   "lc_note": "-4% less the -3 points of exchange rates the release states",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q3 2022 print (late October)",
+   "eps_note": "reported EPS $1.05 against $1.53; the company's non-GAAP figure $1.25 against $1.85 is shown only (it also removes the amortization of intangible assets, which recurs, and other listed items; from Q1 2022 it keeps acquired in-process research and development (the 8-K of 2022-04-14); the history is GAAP: the NKE FY2007, PFE and BMY rule)",
+   "note": "the quarter's pre-tax income carries the acquired IPR&D charges, as published ('Q2 2022 reported and non-GAAP EPS are both inclusive of $0.46 of acquired IPR&D and development milestone charges.')"
+  },
+  {
+   "quarter": "Q3 2022",
+   "fy": 2022,
+   "q": 3,
+   "published": "2022-11-01",
+   "source": "LL111",
+   "release": "Nov 1",
+   "release_time": "8-K accepted 2022-11-01 07:03 ET (before the open); conference call 'begin at 9 a.m.' ET",
+   "period_end": "2022-09-30",
+   "raw": {
+    "rev_m": 6941.6,
+    "rev_prior_m": 6772.8,
+    "cos_m": 1579.1,
+    "cos_prior_m": 1430.8,
+    "pretax_m": 1565.5,
+    "pretax_prior_m": 1245.3,
+    "diluted_shares_m": 903.782
+   },
+   "sales_b": 6.942,
+   "sales_pct": 2.5,
+   "us_pct": 11.0,
+   "intl_pct": -9.0,
+   "geo_note": "U.S. +11% to $4.42B, outside the U.S. -9% to $2.52B, as the release states them (the dollars to $0.01B)",
+   "gross_margin": 77.25,
+   "gross_margin_bp": -162.3,
+   "pretax_margin": 22.55,
+   "pretax_margin_bp": 416.6,
+   "eps_q": 1.61,
+   "eps_q_prior": 1.22,
+   "diluted_shares_m": 903.782,
+   "lc_pct": 6.0,
+   "lc_note": "2% less the -4 points of exchange rates the release states",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q4 2022 print (early February)",
+   "eps_note": "reported EPS $1.61 against $1.22; the company's non-GAAP figure $1.98 against $1.77 is shown only (it also removes the amortization of intangible assets, which recurs, and other listed items; from Q1 2022 it keeps acquired in-process research and development (the 8-K of 2022-04-14); the history is GAAP: the NKE FY2007, PFE and BMY rule)",
+   "note": "the quarter's pre-tax income carries the impairment, as published ('In Q3 2022, the company recognized asset impairment, restructuring and other special charges of $206.5 million, primarily related to an intangible asset impairment for GBA1 Gene Therapy (PR001) due to changes in estimated launch timing.')"
+  },
+  {
+   "quarter": "Q4 2022",
+   "fy": 2022,
+   "q": 4,
+   "published": "2023-02-02",
+   "source": "LL113",
+   "release": "Feb 2",
+   "release_time": "8-K accepted 2023-02-02 07:13 ET (before the open); conference call 'begin at 10 a.m.' ET",
+   "period_end": "2022-12-31",
+   "raw": {
+    "rev_m": 7301.8,
+    "rev_prior_m": 7999.9,
+    "cos_m": 1548.1,
+    "cos_prior_m": 2050.2,
+    "pretax_m": 2096.4,
+    "pretax_prior_m": 1839.9,
+    "diluted_shares_m": 904.732
+   },
+   "sales_b": 7.302,
+   "sales_pct": -8.7,
+   "us_pct": -10.0,
+   "intl_pct": -6.0,
+   "geo_note": "U.S. -10% to $4.66B, outside the U.S. -6% to $2.64B, as the release states them (the dollars to $0.01B)",
+   "gross_margin": 78.8,
+   "gross_margin_bp": 442.6,
+   "pretax_margin": 28.71,
+   "pretax_margin_bp": 571.2,
+   "eps_q": 2.14,
+   "eps_q_prior": 1.9,
+   "diluted_shares_m": 904.732,
+   "lc_pct": -5.0,
+   "lc_note": "-9% less the -4 points of exchange rates the release states",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q1 2023 print (late April)",
+   "eps_note": "reported EPS $2.14 against $1.90; the company's non-GAAP figure $2.09 against $2.17 is shown only (it also removes the amortization of intangible assets, which recurs, and other listed items; from Q1 2022 it keeps acquired in-process research and development (the 8-K of 2022-04-14); the history is GAAP: the NKE FY2007, PFE and BMY rule)",
+   "fy_actual": {
+    "fy": 2022,
+    "fy_label": "FY22",
+    "eps_normalized": 6.9,
+    "revenue_usd_b": 28.5414,
+    "diluted_shares_m": 904.619,
+    "normalization_note": "FY2022 $6.90 diluted EPS (Q4 2022 release; GAAP, the company's non-GAAP $7.94 is shown only); the release states no full-year U.S. and outside-U.S. split (n/r until the 10-K)",
+    "gross_margin": 76.77,
+    "pretax_margin": 23.85,
+    "pretax_margin_note": "FY22 income before income taxes $6,806.4M / revenue $28,541.4M (Q4 2022 release)",
+    "sales_growth": 0.8,
+    "us_pct": null,
+    "intl_pct": null,
+    "tax_rate": 0.083,
+    "tax_note": "FY22 income taxes $561.6M / pre-tax $6,806.4M"
+   }
+  },
+  {
+   "quarter": "Q1 2023",
+   "fy": 2023,
+   "q": 1,
+   "published": "2023-04-27",
+   "source": "LL115",
+   "release": "Apr 27",
+   "release_time": "8-K accepted 2023-04-27 07:02 ET (before the open); conference call 'begin at 10 a.m.' ET",
+   "period_end": "2023-03-31",
+   "raw": {
+    "rev_m": 6960.0,
+    "rev_prior_m": 7810.0,
+    "cos_m": 1626.7,
+    "cos_prior_m": 2072.1,
+    "pretax_m": 1529.7,
+    "pretax_prior_m": 2053.6,
+    "diluted_shares_m": 903.283
+   },
+   "sales_b": 6.96,
+   "sales_pct": -10.9,
+   "us_pct": -14.0,
+   "intl_pct": -4.0,
+   "geo_note": "U.S. -14% to $4.44B, outside the U.S. -4% to $2.52B, as the release states them (the dollars to $0.01B)",
+   "gross_margin": 76.63,
+   "gross_margin_bp": 315.9,
+   "pretax_margin": 21.98,
+   "pretax_margin_bp": -431.6,
+   "eps_q": 1.49,
+   "eps_q_prior": 2.1,
+   "diluted_shares_m": 903.283,
+   "lc_pct": -9.0,
+   "lc_note": "-11% less the -2 points of exchange rates the release states",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q2 2023 print (early August)",
+   "eps_note": "reported EPS $1.49 against $2.10; the company's non-GAAP figure $1.62 against $2.62 is shown only (it also removes the amortization of intangible assets, which recurs, and other listed items; from Q1 2022 it keeps acquired in-process research and development (the 8-K of 2022-04-14); the history is GAAP: the NKE FY2007, PFE and BMY rule)"
+  },
+  {
+   "quarter": "Q2 2023",
+   "fy": 2023,
+   "q": 2,
+   "published": "2023-08-08",
+   "source": "LL116",
+   "release": "Aug 8",
+   "release_time": "8-K accepted 2023-08-08 07:01 ET (before the open); conference call 'begin at 9 a.m.' ET",
+   "period_end": "2023-06-30",
+   "raw": {
+    "rev_m": 8312.1,
+    "rev_prior_m": 6488.0,
+    "cos_m": 1807.4,
+    "cos_prior_m": 1430.5,
+    "pretax_m": 2088.9,
+    "pretax_prior_m": 1090.9,
+    "diluted_shares_m": 902.699
+   },
+   "sales_b": 8.312,
+   "sales_pct": 28.1,
+   "us_pct": 41.0,
+   "intl_pct": 9.0,
+   "geo_note": "U.S. +41% to $5.53B, outside the U.S. +9% to $2.78B, as the release states them (the dollars to $0.01B)",
+   "gross_margin": 78.26,
+   "gross_margin_bp": 30.4,
+   "pretax_margin": 25.13,
+   "pretax_margin_bp": 831.7,
+   "eps_q": 1.95,
+   "eps_q_prior": 1.05,
+   "diluted_shares_m": 902.699,
+   "lc_pct": 29.0,
+   "lc_note": "28% less the -1 points of exchange rates the release states",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q3 2023 print (early November)",
+   "eps_note": "reported EPS $1.95 against $1.05; the company's non-GAAP figure $2.11 against $1.25 is shown only (it also removes the amortization of intangible assets, which recurs, and other listed items; from Q1 2022 it keeps acquired in-process research and development (the 8-K of 2022-04-14); the history is GAAP: the NKE FY2007, PFE and BMY rule)",
+   "note": "revenue includes the sale of rights for Baqsimi, as published ('EPS in Q2 2023 is inclusive of $0.43 of EPS associated with the sale of rights for Baqsimi and $0.09 of acquired IPR&D charges compared with $0.')"
+  },
+  {
+   "quarter": "Q3 2023",
+   "fy": 2023,
+   "q": 3,
+   "published": "2023-11-02",
+   "source": "LL117",
+   "release": "Nov 2",
+   "release_time": "8-K accepted 2023-11-02 07:02 ET (before the open); conference call 'begin at 9 a.m.' ET",
+   "period_end": "2023-09-30",
+   "raw": {
+    "rev_m": 9498.6,
+    "rev_prior_m": 6941.6,
+    "cos_m": 1860.1,
+    "cos_prior_m": 1579.1,
+    "pretax_m": 427.2,
+    "pretax_prior_m": 1565.5,
+    "diluted_shares_m": 899.838
+   },
+   "sales_b": 9.499,
+   "sales_pct": 36.8,
+   "us_pct": 21.0,
+   "intl_pct": 64.0,
+   "geo_note": "U.S. +21% to $5.37B, outside the U.S. +64% to $4.13B, as the release states them (the dollars to $0.01B)",
+   "gross_margin": 80.42,
+   "gross_margin_bp": 316.5,
+   "pretax_margin": 4.5,
+   "pretax_margin_bp": -1805.5,
+   "eps_q": -0.06,
+   "eps_q_prior": 1.61,
+   "diluted_shares_m": 899.838,
+   "lc_pct": 36.0,
+   "lc_note": "37% less the +1 points of exchange rates the release states",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q4 2023 print (early February)",
+   "eps_note": "reported EPS $(0.06) against $1.61; the company's non-GAAP figure $0.10 against $1.98 is shown only (it also removes the amortization of intangible assets, which recurs, and other listed items; from Q1 2022 it keeps acquired in-process research and development (the 8-K of 2022-04-14); the history is GAAP: the NKE FY2007, PFE and BMY rule)",
+   "note": "a loss quarter on the acquired IPR&D charges, with revenue from the sale of rights for the olanzapine portfolio, as published ('EPS in Q3 2023 was inclusive of an increase of $1.22 of EPS associated with the sale of rights for the olanzapine portfolio, as well as a decrease of $3.29 from acquired IPR&D charges, compared with a decrease of $0.06 from acquired IPR&D charges in Q3 2022.')"
+  },
+  {
+   "quarter": "Q4 2023",
+   "fy": 2023,
+   "q": 4,
+   "published": "2024-02-06",
+   "source": "LL118",
+   "release": "Feb 6",
+   "release_time": "8-K accepted 2024-02-06 07:04 ET (before the open); conference call 'begin at 10 a.m.' ET",
+   "period_end": "2023-12-31",
+   "raw": {
+    "rev_m": 9353.4,
+    "rev_prior_m": 7301.8,
+    "cos_m": 1788.0,
+    "cos_prior_m": 1548.1,
+    "pretax_m": 2508.8,
+    "pretax_prior_m": 2096.4,
+    "diluted_shares_m": 903.98
+   },
+   "sales_b": 9.353,
+   "sales_pct": 28.1,
+   "us_pct": 39.0,
+   "intl_pct": 10.0,
+   "geo_note": "U.S. +39% to $6.46B, outside the U.S. +10% to $2.90B, as the release states them (the dollars to $0.01B)",
+   "gross_margin": 80.88,
+   "gross_margin_bp": 208.6,
+   "pretax_margin": 26.82,
+   "pretax_margin_bp": -188.8,
+   "eps_q": 2.42,
+   "eps_q_prior": 2.14,
+   "diluted_shares_m": 903.98,
+   "lc_pct": 27.0,
+   "lc_note": "28% less the +1 points of exchange rates the release states",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q1 2024 print (late April)",
+   "eps_note": "reported EPS $2.42 against $2.14; the company's non-GAAP figure $2.49 against $2.09 is shown only (it also removes the amortization of intangible assets, which recurs, and other listed items; from Q1 2022 it keeps acquired in-process research and development (the 8-K of 2022-04-14); the history is GAAP: the NKE FY2007, PFE and BMY rule)",
+   "note": "the quarter's pre-tax income carries the acquired IPR&D charges, as published ('EPS in Q4 2023 included $0.62 of acquired IPR&D charges compared with $0.23 in Q4 2022.')",
+   "fy_actual": {
+    "fy": 2023,
+    "fy_label": "FY23",
+    "eps_normalized": 5.8,
+    "revenue_usd_b": 34.1241,
+    "diluted_shares_m": 903.284,
+    "normalization_note": "FY2023 $5.80 diluted EPS (Q4 2023 release; GAAP, the company's non-GAAP $6.32 is shown only); the release states no full-year U.S. and outside-U.S. split (n/r until the 10-K)",
+    "gross_margin": 79.25,
+    "pretax_margin": 19.21,
+    "pretax_margin_note": "FY23 income before income taxes $6,554.6M / revenue $34,124.1M (Q4 2023 release)",
+    "sales_growth": 19.6,
+    "us_pct": null,
+    "intl_pct": null,
+    "tax_rate": 0.201,
+    "tax_note": "FY23 income taxes $1,314.2M / pre-tax $6,554.6M"
+   }
+  },
+  {
+   "quarter": "Q1 2024",
+   "fy": 2024,
+   "q": 1,
+   "published": "2024-04-30",
+   "source": "LL120",
+   "release": "Apr 30",
+   "release_time": "8-K accepted 2024-04-30 07:04 ET (before the open); conference call 'begin at 10 a.m.' ET",
+   "period_end": "2024-03-31",
+   "raw": {
+    "rev_m": 8768.0,
+    "rev_prior_m": 6960.0,
+    "cos_m": 1673.5,
+    "cos_prior_m": 1626.7,
+    "pretax_m": 2536.1,
+    "pretax_prior_m": 1529.7,
+    "diluted_shares_m": 903.802
+   },
+   "sales_b": 8.768,
+   "sales_pct": 26.0,
+   "us_pct": 28.0,
+   "intl_pct": 22.0,
+   "geo_note": "U.S. +28% to $5.69B, outside the U.S. +22% to $3.07B, as the release states them (the dollars to $0.01B)",
+   "gross_margin": 80.91,
+   "gross_margin_bp": 428.6,
+   "pretax_margin": 28.92,
+   "pretax_margin_bp": 694.6,
+   "eps_q": 2.48,
+   "eps_q_prior": 1.49,
+   "diluted_shares_m": 903.802,
+   "lc_pct": 26.0,
+   "lc_note": "26%: the release states no exchange-rate effect (its volume and price parts only), read as 0 points",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q2 2024 print (early August)",
+   "eps_note": "reported EPS $2.48 against $1.49; the company's non-GAAP figure $2.58 against $1.62 is shown only (it also removes the amortization of intangible assets, which recurs, and other listed items; from Q1 2022 it keeps acquired in-process research and development (the 8-K of 2022-04-14); the history is GAAP: the NKE FY2007, PFE and BMY rule)"
+  },
+  {
+   "quarter": "Q2 2024",
+   "fy": 2024,
+   "q": 2,
+   "published": "2024-08-08",
+   "source": "LL121",
+   "release": "Aug 8",
+   "release_time": "8-K accepted 2024-08-08 07:04 ET (before the open); conference call 'begin at 10 a.m.' ET",
+   "period_end": "2024-06-30",
+   "raw": {
+    "rev_m": 11302.8,
+    "rev_prior_m": 8312.1,
+    "cos_m": 2170.2,
+    "cos_prior_m": 1807.4,
+    "pretax_m": 3517.2,
+    "pretax_prior_m": 2088.9,
+    "diluted_shares_m": 904.248
+   },
+   "sales_b": 11.303,
+   "sales_pct": 36.0,
+   "us_pct": 42.0,
+   "intl_pct": 25.0,
+   "geo_note": "U.S. +42% to $7.84B, outside the U.S. +25% to $3.47B, as the release states them (the dollars to $0.01B)",
+   "gross_margin": 80.8,
+   "gross_margin_bp": 254.4,
+   "pretax_margin": 31.12,
+   "pretax_margin_bp": 598.7,
+   "eps_q": 3.28,
+   "eps_q_prior": 1.95,
+   "diluted_shares_m": 904.248,
+   "lc_pct": 37.0,
+   "lc_note": "36% less the -1 points of exchange rates the release states",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q3 2024 print (early November)",
+   "eps_note": "reported EPS $3.28 against $1.95; the company's non-GAAP figure $3.92 against $2.11 is shown only (it also removes the amortization of intangible assets, which recurs, and other listed items; from Q1 2022 it keeps acquired in-process research and development (the 8-K of 2022-04-14); the history is GAAP: the NKE FY2007, PFE and BMY rule)",
+   "note": "the quarter's pre-tax income carries the charge, as published ('Asset impairment, restructuring and other special charges were $435.0 million in Q2 2024, which was related to anticipated litigation payments.')"
+  },
+  {
+   "quarter": "Q3 2024",
+   "fy": 2024,
+   "q": 3,
+   "published": "2024-10-30",
+   "source": "LL122",
+   "release": "Oct 30",
+   "release_time": "8-K accepted 2024-10-30 07:05 ET (before the open); conference call 'begin at 10 a.m.' ET",
+   "period_end": "2024-09-30",
+   "raw": {
+    "rev_m": 11439.1,
+    "rev_prior_m": 9498.6,
+    "cos_m": 2170.8,
+    "cos_prior_m": 1860.1,
+    "pretax_m": 1588.4,
+    "pretax_prior_m": 427.2,
+    "diluted_shares_m": 905.027
+   },
+   "sales_b": 11.439,
+   "sales_pct": 20.4,
+   "us_pct": 46.0,
+   "intl_pct": -12.0,
+   "geo_note": "U.S. +46% to $7.81B, outside the U.S. -12% to $3.63B, as the release states them (the dollars to $0.01B)",
+   "gross_margin": 81.02,
+   "gross_margin_bp": 60.6,
+   "pretax_margin": 13.89,
+   "pretax_margin_bp": 938.8,
+   "eps_q": 1.07,
+   "eps_q_prior": -0.06,
+   "diluted_shares_m": 905.027,
+   "lc_pct": 21.0,
+   "lc_note": "20% less the -1 points of exchange rates the release states",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q4 2024 print (early February)",
+   "eps_note": "reported EPS $1.07 against $(0.06); the company's non-GAAP figure $1.18 against $0.10 is shown only (it also removes the amortization of intangible assets, which recurs, and other listed items; from Q1 2022 it keeps acquired in-process research and development (the 8-K of 2022-04-14); the history is GAAP: the NKE FY2007, PFE and BMY rule)",
+   "note": "the quarter's pre-tax income carries the acquired IPR&D charges, as published ('EPS in Q3 2024 included $3.08 of acquired IPR&D charges.')"
+  },
+  {
+   "quarter": "Q4 2024",
+   "fy": 2024,
+   "q": 4,
+   "published": "2025-02-06",
+   "source": "LL124",
+   "release": "Feb 6",
+   "release_time": "8-K accepted 2025-02-06 07:05 ET (before the open); conference call 'begin at 10 a.m.' ET",
+   "period_end": "2024-12-31",
+   "raw": {
+    "rev_m": 13532.8,
+    "rev_prior_m": 9353.4,
+    "cos_m": 2403.8,
+    "cos_prior_m": 1788.0,
+    "pretax_m": 5038.7,
+    "pretax_prior_m": 2508.8,
+    "diluted_shares_m": 903.158
+   },
+   "sales_b": 13.533,
+   "sales_pct": 44.7,
+   "us_pct": 40.0,
+   "intl_pct": 55.0,
+   "geo_note": "U.S. +40% to $9.03B, outside the U.S. +55% to $4.50B, as the release states them (the dollars to $0.01B)",
+   "gross_margin": 82.24,
+   "gross_margin_bp": 135.3,
+   "pretax_margin": 37.23,
+   "pretax_margin_bp": 1041.1,
+   "eps_q": 4.88,
+   "eps_q_prior": 2.42,
+   "diluted_shares_m": 903.158,
+   "lc_pct": 45.0,
+   "lc_note": "45%: the release states no exchange-rate effect (its volume and price parts only), read as 0 points",
+   "cash_return_text": "'Announced a $15 billion share repurchase program' (Q4 2024 release)",
+   "next_print": "Q1 2025 print (late April)",
+   "eps_note": "reported EPS $4.88 against $2.42; the company's non-GAAP figure $5.32 against $2.49 is shown only (it also removes the amortization of intangible assets, which recurs, and other listed items; from Q1 2022 it keeps acquired in-process research and development (the 8-K of 2022-04-14); the history is GAAP: the NKE FY2007, PFE and BMY rule)",
+   "note": "the quarter's pre-tax income carries the acquired IPR&D charges, as published ('EPS in Q4 2024 and Q4 2023 included acquired IPR&D charges of $0.19 and $0.62, respectively.')",
+   "fy_actual": {
+    "fy": 2024,
+    "fy_label": "FY24",
+    "eps_normalized": 11.71,
+    "revenue_usd_b": 45.0427,
+    "diluted_shares_m": 904.059,
+    "normalization_note": "FY2024 $11.71 diluted EPS (Q4 2024 release; GAAP, the company's non-GAAP $12.99 is shown only); the release states no full-year U.S. and outside-U.S. split (n/r until the 10-K)",
+    "gross_margin": 81.31,
+    "pretax_margin": 28.15,
+    "pretax_margin_note": "FY24 income before income taxes $12,680.4M / revenue $45,042.7M (Q4 2024 release)",
+    "sales_growth": 32.0,
+    "us_pct": null,
+    "intl_pct": null,
+    "tax_rate": 0.165,
+    "tax_note": "FY24 income taxes $2,090.4M / pre-tax $12,680.4M"
+   }
+  },
+  {
+   "quarter": "Q1 2025",
+   "fy": 2025,
+   "q": 1,
+   "published": "2025-05-01",
+   "source": "LL126",
+   "release": "May 1",
+   "release_time": "8-K accepted 2025-05-01 07:03 ET (before the open); conference call 'begin at 10 a.m.' ET",
+   "period_end": "2025-03-31",
+   "raw": {
+    "rev_m": 12728.5,
+    "rev_prior_m": 8768.0,
+    "cos_m": 2224.2,
+    "cos_prior_m": 1673.5,
+    "pretax_m": 3456.1,
+    "pretax_prior_m": 2536.1,
+    "diluted_shares_m": 900.604
+   },
+   "sales_b": 12.729,
+   "sales_pct": 45.2,
+   "us_pct": 49.0,
+   "intl_pct": 38.0,
+   "geo_note": "U.S. +49% to $8.49B, outside the U.S. +38% to $4.24B, as the release states them (the dollars to $0.01B)",
+   "gross_margin": 82.53,
+   "gross_margin_bp": 161.2,
+   "pretax_margin": 27.15,
+   "pretax_margin_bp": -177.2,
+   "eps_q": 3.06,
+   "eps_q_prior": 2.48,
+   "diluted_shares_m": 900.604,
+   "lc_pct": 47.0,
+   "lc_note": "45% less the -2 points of exchange rates the release states",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q2 2025 print (early August)",
+   "eps_note": "reported EPS $3.06 against $2.48; the company's non-GAAP figure $3.34 against $2.58 is shown only (it also removes the amortization of intangible assets, which recurs, and other listed items; from Q1 2022 it keeps acquired in-process research and development (the 8-K of 2022-04-14); the history is GAAP: the NKE FY2007, PFE and BMY rule)",
+   "note": "the quarter's pre-tax income carries the acquired IPR&D charges, as published ('EPS in Q1 2025 and Q1 2024 included acquired IPR&D charges of $1.72 and $0.10, respectively.')"
+  },
+  {
+   "quarter": "Q2 2025",
+   "fy": 2025,
+   "q": 2,
+   "published": "2025-08-07",
+   "source": "LL127",
+   "release": "Aug 7",
+   "release_time": "8-K accepted 2025-08-07 07:05 ET (before the open); conference call 'begin at 8:30 a.m.' ET",
+   "period_end": "2025-06-30",
+   "raw": {
+    "rev_m": 15557.7,
+    "rev_prior_m": 11302.8,
+    "cos_m": 2447.8,
+    "cos_prior_m": 2170.2,
+    "pretax_m": 6776.4,
+    "pretax_prior_m": 3517.2,
+    "diluted_shares_m": 899.793
+   },
+   "sales_b": 15.558,
+   "sales_pct": 37.6,
+   "us_pct": 38.0,
+   "intl_pct": 37.0,
+   "geo_note": "U.S. +38% to $10.81B, outside the U.S. +37% to $4.74B, as the release states them (the dollars to $0.01B)",
+   "gross_margin": 84.27,
+   "gross_margin_bp": 346.7,
+   "pretax_margin": 43.56,
+   "pretax_margin_bp": 1243.9,
+   "eps_q": 6.29,
+   "eps_q_prior": 3.28,
+   "diluted_shares_m": 899.793,
+   "lc_pct": 38.0,
+   "lc_note": "38%: the release states no exchange-rate effect (its volume and price parts only), read as 0 points",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q3 2025 print (late October)",
+   "eps_note": "reported EPS $6.29 against $3.28; the company's non-GAAP figure $6.31 against $3.92 is shown only (it also removes the amortization of intangible assets, which recurs, and other listed items; from Q1 2022 it keeps acquired in-process research and development (the 8-K of 2022-04-14); the history is GAAP: the NKE FY2007, PFE and BMY rule)",
+   "note": "the quarter's pre-tax income carries the acquired IPR&D charges, as published ('EPS in Q2 2025 and Q2 2024 both included acquired IPR&D charges of $0.14.')"
+  },
+  {
+   "quarter": "Q3 2025",
+   "fy": 2025,
+   "q": 3,
+   "published": "2025-10-30",
+   "source": "LL128",
+   "release": "Oct 30",
+   "release_time": "8-K accepted 2025-10-30 07:03 ET (before the open); conference call 'begin at 10 a.m.' ET",
+   "period_end": "2025-09-30",
+   "raw": {
+    "rev_m": 17600.8,
+    "rev_prior_m": 11439.1,
+    "cos_m": 3008.3,
+    "cos_prior_m": 2170.8,
+    "pretax_m": 7232.3,
+    "pretax_prior_m": 1588.4,
+    "diluted_shares_m": 898.804
+   },
+   "sales_b": 17.601,
+   "sales_pct": 53.9,
+   "us_pct": 45.0,
+   "intl_pct": 74.0,
+   "geo_note": "U.S. +45% to $11.30B, outside the U.S. +74% to $6.30B, as the release states them (the dollars to $0.01B)",
+   "gross_margin": 82.91,
+   "gross_margin_bp": 188.5,
+   "pretax_margin": 41.09,
+   "pretax_margin_bp": 2720.5,
+   "eps_q": 6.21,
+   "eps_q_prior": 1.07,
+   "diluted_shares_m": 898.804,
+   "lc_pct": 54.0,
+   "lc_note": "54%: the release states no exchange-rate effect (its volume and price parts only), read as 0 points",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q4 2025 print (early February)",
+   "eps_note": "reported EPS $6.21 against $1.07; the company's non-GAAP figure $7.02 against $1.18 is shown only (it also removes the amortization of intangible assets, which recurs, and other listed items; from Q1 2022 it keeps acquired in-process research and development (the 8-K of 2022-04-14); the history is GAAP: the NKE FY2007, PFE and BMY rule)",
+   "note": "the quarter's pre-tax income carries the acquired IPR&D charges, as published ('EPS in Q3 2025 and Q3 2024 included acquired IPR&D charges of $0.71 and $3.08, respectively.')"
+  },
+  {
+   "quarter": "Q4 2025",
+   "fy": 2025,
+   "q": 4,
+   "published": "2026-02-04",
+   "source": "LL129",
+   "release": "Feb 4",
+   "release_time": "8-K accepted 2026-02-04 07:05 ET (before the open); conference call 'begin at 10 a.m.' ET",
+   "period_end": "2025-12-31",
+   "raw": {
+    "rev_m": 19292.0,
+    "rev_prior_m": 13533.0,
+    "cos_m": 3372.0,
+    "cos_prior_m": 2404.0,
+    "pretax_m": 8265.0,
+    "pretax_prior_m": 5039.0,
+    "diluted_shares_m": 898.002
+   },
+   "sales_b": 19.292,
+   "sales_pct": 42.6,
+   "us_pct": 43.0,
+   "intl_pct": 43.0,
+   "geo_note": "U.S. +43% to $12.9B, outside the U.S. +43% to $6.4B, as the release states them (the dollars to $0.1B)",
+   "gross_margin": 82.52,
+   "gross_margin_bp": 28.5,
+   "pretax_margin": 42.84,
+   "pretax_margin_bp": 560.7,
+   "eps_q": 7.39,
+   "eps_q_prior": 4.88,
+   "diluted_shares_m": 898.002,
+   "lc_pct": 43.0,
+   "lc_note": "43%: the release states no exchange-rate effect (its volume and price parts only), read as 0 points",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q1 2026 print (early May)",
+   "eps_note": "reported EPS $7.39 against $4.88; the company's non-GAAP figure $7.54 against $5.32 is shown only (it also removes the amortization of intangible assets, which recurs, and other listed items; from Q1 2022 it keeps acquired in-process research and development (the 8-K of 2022-04-14); the history is GAAP: the NKE FY2007, PFE and BMY rule)",
+   "note": "the quarter's pre-tax income carries the acquired IPR&D charges, as published ('EPS in Q4 2025 and Q4 2024 included acquired IPR&D charges of $0.52 and $0.19, respectively.')",
+   "fy_actual": {
+    "fy": 2025,
+    "fy_label": "FY25",
+    "eps_normalized": 22.95,
+    "revenue_usd_b": 65.179,
+    "diluted_shares_m": 899.301,
+    "normalization_note": "FY2025 $22.95 diluted EPS (Q4 2025 release; GAAP, the company's non-GAAP $24.21 is shown only); the release states no full-year U.S. and outside-U.S. split (n/r until the 10-K)",
+    "gross_margin": 83.04,
+    "pretax_margin": 39.48,
+    "pretax_margin_note": "FY25 income before income taxes $25,731M / revenue $65,179M (Q4 2025 release)",
+    "sales_growth": 44.7,
+    "us_pct": null,
+    "intl_pct": null,
+    "tax_rate": 0.198,
+    "tax_note": "FY25 income taxes $5,091M / pre-tax $25,731M"
+   }
+  },
+  {
+   "quarter": "Q1 2026",
+   "fy": 2026,
+   "q": 1,
+   "published": "2026-04-30",
+   "source": "LL131",
+   "release": "Apr 30",
+   "release_time": "8-K accepted 2026-04-30 07:03 ET (before the open); conference call 'begin at 10 a.m.' ET",
+   "period_end": "2026-03-31",
+   "raw": {
+    "rev_m": 19799.0,
+    "rev_prior_m": 12729.0,
+    "cos_m": 3577.0,
+    "cos_prior_m": 2225.0,
+    "pretax_m": 8850.0,
+    "pretax_prior_m": 3456.0,
+    "diluted_shares_m": 895.918
+   },
+   "sales_b": 19.799,
+   "sales_pct": 55.5,
+   "us_pct": 43.0,
+   "intl_pct": 81.0,
+   "geo_note": "U.S. +43% to $12.1B, outside the U.S. +81% to $7.7B, as the release states them (the dollars to $0.1B)",
+   "gross_margin": 81.93,
+   "gross_margin_bp": -58.7,
+   "pretax_margin": 44.7,
+   "pretax_margin_bp": 1754.9,
+   "eps_q": 8.26,
+   "eps_q_prior": 3.06,
+   "diluted_shares_m": 895.918,
+   "lc_pct": 56.0,
+   "lc_note": "56%: the release states no exchange-rate effect (its volume and price parts only), read as 0 points",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q2 2026 print (early August)",
+   "eps_note": "reported EPS $8.26 against $3.06; the company's non-GAAP figure $8.55 against $3.34 is shown only (it also removes the amortization of intangible assets, which recurs, and other listed items; from Q1 2022 it keeps acquired in-process research and development (the 8-K of 2022-04-14); the history is GAAP: the NKE FY2007, PFE and BMY rule)",
+   "note": "the quarter's pre-tax income carries the acquired IPR&D charges, as published ('EPS in Q1 2026 and Q1 2025 included acquired IPR&D charges of $0.52 and $1.72, respectively.')"
+  },
+  {
+   "quarter": "Q2 2026",
+   "fy": 2026,
+   "q": 2,
+   "published": "2026-08-05",
+   "source": "LL132",
+   "release": "Aug 5",
+   "release_time": "8-K accepted 2026-08-05 07:05 ET (before the open); conference call 'begin at 10 a.m.' ET",
+   "period_end": "2026-06-30",
+   "raw": {
+    "rev_m": 22974.0,
+    "rev_prior_m": 15558.0,
+    "cos_m": 3268.0,
+    "cos_prior_m": 2448.0,
+    "pretax_m": 9247.0,
+    "pretax_prior_m": 6777.0,
+    "diluted_shares_m": 893.671
+   },
+   "sales_b": 22.974,
+   "sales_pct": 47.7,
+   "us_pct": 33.0,
+   "intl_pct": 80.0,
+   "geo_note": "U.S. +33% to $14.4B, outside the U.S. +80% to $8.6B, as the release states them (the dollars to $0.1B)",
+   "gross_margin": 85.78,
+   "gross_margin_bp": 151.0,
+   "pretax_margin": 40.25,
+   "pretax_margin_bp": -331.0,
+   "eps_q": 7.94,
+   "eps_q_prior": 6.29,
+   "diluted_shares_m": 893.671,
+   "lc_pct": 48.0,
+   "lc_note": "48%: the release states no exchange-rate effect (its volume and price parts only), read as 0 points",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q3 2026 print (late October)",
+   "eps_note": "reported EPS $7.94 against $6.29; the company's non-GAAP figure $8.38 against $6.31 is shown only (it also removes the amortization of intangible assets, which recurs, and other listed items; from Q1 2022 it keeps acquired in-process research and development (the 8-K of 2022-04-14); the history is GAAP: the NKE FY2007, PFE and BMY rule)",
+   "note": "the quarter's pre-tax income carries the acquired IPR&D charges, as published ('EPS in Q2 2026 and Q2 2025 included acquired IPR&D charges of $3.03 and $0.14, respectively.')"
+  },
+  {
+   "quarter": "Q3 2026",
+   "fy": 2026,
+   "q": 3,
+   "published": "2026-10-29",
+   "source": "LL133",
+   "release": "Oct 29",
+   "release_time": "8-K accepted 2026-10-29 07:03 ET (before the open); conference call 'begin at 10 a.m.' ET",
+   "period_end": "2026-09-30",
+   "raw": {
+    "rev_m": 24397.0,
+    "rev_prior_m": 17601.0,
+    "cos_m": 3933.0,
+    "cos_prior_m": 3008.0,
+    "pretax_m": 8406.0,
+    "pretax_prior_m": 7233.0,
+    "diluted_shares_m": 893.439
+   },
+   "sales_b": 24.397,
+   "sales_pct": 38.6,
+   "us_pct": 34.0,
+   "intl_pct": 47.0,
+   "geo_note": "U.S. +34% to $15.1B, outside the U.S. +47% to $9.3B, as the release states them (the dollars to $0.1B)",
+   "gross_margin": 83.88,
+   "gross_margin_bp": 96.9,
+   "pretax_margin": 34.46,
+   "pretax_margin_bp": -663.9,
+   "eps_q": 7.22,
+   "eps_q_prior": 6.21,
+   "diluted_shares_m": 893.439,
+   "lc_pct": 39.0,
+   "lc_note": "39%: the release states no exchange-rate effect (its volume and price parts only), read as 0 points",
+   "cash_return_text": "the release reports no share repurchases",
+   "next_print": "Q4 2026 print (early February)",
+   "eps_note": "reported EPS $7.22 against $6.21; the company's non-GAAP figure $7.48 against $7.02 is shown only (it also removes the amortization of intangible assets, which recurs, and other listed items; from Q1 2022 it keeps acquired in-process research and development (the 8-K of 2022-04-14); the history is GAAP: the NKE FY2007, PFE and BMY rule)",
+   "note": "the quarter's pre-tax income carries the acquired IPR&D charges, as published ('EPS in Q3 2026 and Q3 2025 included acquired IPR&D charges of $4.57 and $0.71, respectively.')"
   }
  ],
  "guides": [
@@ -7594,6 +9408,479 @@
     28.3
    ],
    "rev_label": "revenue"
+  },
+  {
+   "fy": 2022,
+   "published": "2021-12-15",
+   "source": "LL106",
+   "doc": "8-K of 2021-12-15",
+   "eps_guide": [
+    8.0,
+    8.15
+   ],
+   "eps_adj": [
+    8.5,
+    8.65
+   ],
+   "adj_why": "shown only: it excludes the amortization of intangible assets, which recurs",
+   "rev_guide_usd_b": [
+    27.8,
+    28.3
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2022,
+   "published": "2022-02-03",
+   "source": "LL107",
+   "doc": "Q4 2021 release",
+   "eps_guide": [
+    8.0,
+    8.15
+   ],
+   "eps_adj": [
+    8.5,
+    8.65
+   ],
+   "adj_why": "shown only: it excludes the amortization of intangible assets, which recurs",
+   "rev_guide_usd_b": [
+    27.8,
+    28.3
+   ],
+   "rev_label": "revenue",
+   "note": "'The company has reaffirmed all elements of its 2022 financial guidance.'"
+  },
+  {
+   "fy": 2022,
+   "published": "2022-04-28",
+   "source": "LL109",
+   "doc": "Q1 2022 release",
+   "eps_guide": [
+    7.3,
+    7.45
+   ],
+   "eps_adj": [
+    8.15,
+    8.3
+   ],
+   "adj_why": "shown only: it excludes amortization of intangible assets, net losses on investments in equity securities (the amortization recurs; from Q1 2022 acquired in-process research and development stays in both ranges)",
+   "rev_guide_usd_b": [
+    28.8,
+    29.3
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2022,
+   "published": "2022-08-04",
+   "source": "LL110",
+   "doc": "Q2 2022 release",
+   "eps_guide": [
+    6.96,
+    7.11
+   ],
+   "eps_adj": [
+    7.9,
+    8.05
+   ],
+   "adj_why": "shown only: it excludes amortization of intangible assets, net losses on investments in equity securities (the amortization recurs; from Q1 2022 acquired in-process research and development stays in both ranges)",
+   "rev_guide_usd_b": [
+    28.8,
+    29.3
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2022,
+   "published": "2022-11-01",
+   "source": "LL111",
+   "doc": "Q3 2022 release",
+   "eps_guide": [
+    6.5,
+    6.65
+   ],
+   "eps_adj": [
+    7.7,
+    7.85
+   ],
+   "adj_why": "shown only: it excludes net losses on investments in equity securities, amortization of intangible assets, asset impairment, restructuring, and other special charges (the amortization recurs; from Q1 2022 acquired in-process research and development stays in both ranges)",
+   "rev_guide_usd_b": [
+    28.5,
+    29.0
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2022,
+   "published": "2022-12-13",
+   "source": "LL112",
+   "doc": "8-K of 2022-12-13",
+   "eps_guide": [
+    6.5,
+    6.65
+   ],
+   "eps_adj": [
+    7.7,
+    7.85
+   ],
+   "adj_why": "shown only: it excludes net losses on investments in equity securities, amortization of intangible assets, asset impairment, restructuring, and other special charges (the amortization recurs; from Q1 2022 acquired in-process research and development stays in both ranges)",
+   "rev_guide_usd_b": [
+    28.5,
+    29.0
+   ],
+   "rev_label": "revenue",
+   "note": "'The company reaffirmed its 2022 financial guidance on both a reported and non-GAAP basis.'"
+  },
+  {
+   "fy": 2023,
+   "published": "2022-12-13",
+   "source": "LL112",
+   "doc": "8-K of 2022-12-13",
+   "eps_guide": [
+    7.65,
+    7.85
+   ],
+   "eps_adj": [
+    8.1,
+    8.3
+   ],
+   "adj_why": "shown only: it excludes amortization of intangible assets (the amortization recurs; from Q1 2022 acquired in-process research and development stays in both ranges)",
+   "rev_guide_usd_b": [
+    30.3,
+    30.8
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2023,
+   "published": "2023-02-02",
+   "source": "LL113",
+   "doc": "Q4 2022 release",
+   "eps_guide": [
+    7.9,
+    8.1
+   ],
+   "eps_adj": [
+    8.35,
+    8.55
+   ],
+   "adj_why": "shown only: it excludes amortization of intangible assets (the amortization recurs; from Q1 2022 acquired in-process research and development stays in both ranges)",
+   "rev_guide_usd_b": [
+    30.3,
+    30.8
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2023,
+   "published": "2023-04-27",
+   "source": "LL115",
+   "doc": "Q1 2023 release",
+   "eps_guide": [
+    8.18,
+    8.38
+   ],
+   "eps_adj": [
+    8.65,
+    8.85
+   ],
+   "adj_why": "shown only: it excludes amortization of intangible assets, net losses on investments in equity securities (the amortization recurs; from Q1 2022 acquired in-process research and development stays in both ranges)",
+   "rev_guide_usd_b": [
+    31.2,
+    31.7
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2023,
+   "published": "2023-08-08",
+   "source": "LL116",
+   "doc": "Q2 2023 release",
+   "eps_guide": [
+    9.2,
+    9.4
+   ],
+   "eps_adj": [
+    9.7,
+    9.9
+   ],
+   "adj_why": "shown only: it excludes amortization of intangible assets, net losses on investments in equity securities (the amortization recurs; from Q1 2022 acquired in-process research and development stays in both ranges)",
+   "rev_guide_usd_b": [
+    33.4,
+    33.9
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2023,
+   "published": "2023-11-02",
+   "source": "LL117",
+   "doc": "Q3 2023 release",
+   "eps_guide": [
+    5.95,
+    6.15
+   ],
+   "eps_adj": [
+    6.5,
+    6.7
+   ],
+   "adj_why": "shown only: it excludes amortization of intangible assets, net losses on investments in equity securities (the amortization recurs; from Q1 2022 acquired in-process research and development stays in both ranges)",
+   "rev_guide_usd_b": [
+    33.4,
+    33.9
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2024,
+   "published": "2024-02-06",
+   "source": "LL118",
+   "doc": "Q4 2023 release",
+   "eps_guide": [
+    11.8,
+    12.3
+   ],
+   "eps_adj": [
+    12.2,
+    12.7
+   ],
+   "adj_why": "shown only: it excludes amortization of intangible assets (the amortization recurs; from Q1 2022 acquired in-process research and development stays in both ranges)",
+   "rev_guide_usd_b": [
+    40.4,
+    41.6
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2024,
+   "published": "2024-04-30",
+   "source": "LL120",
+   "doc": "Q1 2024 release",
+   "eps_guide": [
+    13.05,
+    13.55
+   ],
+   "eps_adj": [
+    13.5,
+    14.0
+   ],
+   "adj_why": "shown only: it excludes amortization of intangible assets, net gains on investments in equity securities (the amortization recurs; from Q1 2022 acquired in-process research and development stays in both ranges)",
+   "rev_guide_usd_b": [
+    42.4,
+    43.6
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2024,
+   "published": "2024-08-08",
+   "source": "LL121",
+   "doc": "Q2 2024 release",
+   "eps_guide": [
+    15.1,
+    15.6
+   ],
+   "eps_adj": [
+    16.1,
+    16.6
+   ],
+   "adj_why": "shown only: it excludes amortization of intangible assets, asset impairment, restructuring, and other special charges, net losses on investments in equity securities (the amortization recurs; from Q1 2022 acquired in-process research and development stays in both ranges)",
+   "rev_guide_usd_b": [
+    45.4,
+    46.6
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2024,
+   "published": "2024-10-30",
+   "source": "LL122",
+   "doc": "Q3 2024 release",
+   "eps_guide": [
+    12.05,
+    12.55
+   ],
+   "eps_adj": [
+    13.02,
+    13.52
+   ],
+   "adj_why": "shown only: it excludes amortization of intangible assets, asset impairment, restructuring, and other special charges, net losses on investments in equity securities (the amortization recurs; from Q1 2022 acquired in-process research and development stays in both ranges)",
+   "rev_guide_usd_b": [
+    45.4,
+    46.0
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2024,
+   "published": "2025-01-14",
+   "source": "LL123",
+   "doc": "8-K of 2025-01-14",
+   "rev_guide_usd_b": [
+    45.0,
+    45.0
+   ],
+   "rev_label": "revenue",
+   "note": "'2024 revenue is expected to be approximately $45.0 billion for the full year' (no EPS figure; the Q3 2024 range stands)"
+  },
+  {
+   "fy": 2025,
+   "published": "2025-01-14",
+   "source": "LL123",
+   "doc": "8-K of 2025-01-14",
+   "rev_guide_usd_b": [
+    58.0,
+    61.0
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2025,
+   "published": "2025-02-06",
+   "source": "LL124",
+   "doc": "Q4 2024 release",
+   "eps_guide": [
+    22.05,
+    23.55
+   ],
+   "eps_adj": [
+    22.5,
+    24.0
+   ],
+   "adj_why": "shown only: it excludes amortization of intangible assets (the amortization recurs; from Q1 2022 acquired in-process research and development stays in both ranges)",
+   "rev_guide_usd_b": [
+    58.0,
+    61.0
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2025,
+   "published": "2025-05-01",
+   "source": "LL126",
+   "doc": "Q1 2025 release",
+   "eps_guide": [
+    20.17,
+    21.67
+   ],
+   "eps_adj": [
+    20.78,
+    22.28
+   ],
+   "adj_why": "shown only: it excludes amortization of intangible assets, asset impairment, restructuring, and other special charges, net losses on investments in equity securities (the amortization recurs; from Q1 2022 acquired in-process research and development stays in both ranges)",
+   "rev_guide_usd_b": [
+    58.0,
+    61.0
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2025,
+   "published": "2025-08-07",
+   "source": "LL127",
+   "doc": "Q2 2025 release",
+   "eps_guide": [
+    20.85,
+    22.1
+   ],
+   "eps_adj": [
+    21.75,
+    23.0
+   ],
+   "adj_why": "shown only: it excludes U.S. tax legislation, amortization of intangible assets, asset impairment, restructuring, and other special charges, net losses on investments in equity securities (the amortization recurs; from Q1 2022 acquired in-process research and development stays in both ranges)",
+   "rev_guide_usd_b": [
+    60.0,
+    62.0
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2025,
+   "published": "2025-10-30",
+   "source": "LL128",
+   "doc": "Q3 2025 release",
+   "eps_guide": [
+    21.8,
+    22.5
+   ],
+   "eps_adj": [
+    23.0,
+    23.7
+   ],
+   "adj_why": "shown only: it excludes U.S. tax legislation, amortization of intangible assets, asset impairment, restructuring, and other special charges, net losses on investments in equity securities (the amortization recurs; from Q1 2022 acquired in-process research and development stays in both ranges)",
+   "rev_guide_usd_b": [
+    63.0,
+    63.5
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2026,
+   "published": "2026-02-04",
+   "source": "LL129",
+   "doc": "Q4 2025 release",
+   "eps_adj": [
+    33.5,
+    35.0
+   ],
+   "adj_why": "shown only: from FY2026 the company guides EPS on a non-GAAP basis only, excluding the amortization of intangible assets, which recurs, with no reconciliation to a reported figure",
+   "rev_guide_usd_b": [
+    80.0,
+    83.0
+   ],
+   "rev_label": "revenue",
+   "note": "no reported EPS range ('In addition to providing guidance for GAAP revenue, Lilly provides guidance for certain non-GAAP measures.')"
+  },
+  {
+   "fy": 2026,
+   "published": "2026-04-30",
+   "source": "LL131",
+   "doc": "Q1 2026 release",
+   "eps_adj": [
+    35.5,
+    37.0
+   ],
+   "adj_why": "shown only: from FY2026 the company guides EPS on a non-GAAP basis only, excluding the amortization of intangible assets, which recurs, with no reconciliation to a reported figure",
+   "rev_guide_usd_b": [
+    82.0,
+    85.0
+   ],
+   "rev_label": "revenue",
+   "note": "no reported EPS range ('In addition to providing guidance for GAAP revenue, Lilly provides guidance for certain non-GAAP measures.')"
+  },
+  {
+   "fy": 2026,
+   "published": "2026-08-05",
+   "source": "LL132",
+   "doc": "Q2 2026 release",
+   "eps_adj": [
+    35.5,
+    36.5
+   ],
+   "adj_why": "shown only: from FY2026 the company guides EPS on a non-GAAP basis only, excluding the amortization of intangible assets, which recurs, with no reconciliation to a reported figure",
+   "rev_guide_usd_b": [
+    85.0,
+    87.0
+   ],
+   "rev_label": "revenue",
+   "note": "no reported EPS range ('In addition to providing guidance for GAAP revenue, Lilly provides guidance for certain non-GAAP measures.')"
+  },
+  {
+   "fy": 2026,
+   "published": "2026-10-29",
+   "source": "LL133",
+   "doc": "Q3 2026 release",
+   "eps_adj": [
+    35.0,
+    36.0
+   ],
+   "adj_why": "shown only: from FY2026 the company guides EPS on a non-GAAP basis only, excluding the amortization of intangible assets, which recurs, with no reconciliation to a reported figure",
+   "rev_guide_usd_b": [
+    91.0,
+    92.0
+   ],
+   "rev_label": "revenue",
+   "note": "no reported EPS range ('In addition to providing guidance for GAAP revenue, Lilly provides guidance for certain non-GAAP measures.')"
   }
  ],
  "dividends": [

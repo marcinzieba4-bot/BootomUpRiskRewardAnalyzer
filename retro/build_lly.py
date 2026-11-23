@@ -16,7 +16,7 @@ as if completed earlier, so they are shown and never used (the NKE FY2007, PFE a
 and adjusted EPS as ranges in numbers, revenue growth in words. The method r2 inputs map as follows (retro/README.md, "LLY"):
   - current-FY EPS: the fiscal-year reported EPS guide midpoint; a range whose midpoint is a loss has no P/E (the r2 loss rule), so it is
     read as no numeric guide (the 8-K of 2008-12-11, FY2008 after the ImClone charge); with no usable guide the last full year's EPS
-    stands (the rollover rule),
+    stands (the rollover rule), and so it does from FY2026, which the company guides on a non-GAAP basis only (the BMY FY2024 encoding),
   - forward revenue growth: no next-quarter guide and no fiscal-year revenue guide in numbers (words are not figures), so the latest
     quarter's sales growth excluding foreign exchange, the release's growth less the exchange-rate points it states (the NKE, MSFT and
     BMY rule),
@@ -247,8 +247,10 @@ def build(as_of, facts, raw, spx, engine, out):
         eps_label = f"{fy_e} reported EPS, guide midpoint"
     else:   # no numeric reported EPS guide, or a guided loss (no P/E, the r2 loss rule): the last full year's EPS stands (rollover rule)
         eps_now = eps_hist[last_fy]
+        # (LLY 2022-2026) from FY2026 the company guides EPS on a non-GAAP basis only: guides exist, none states a reported range
+        # (the BMY FY2024 encoding)
         why = (f"the reported EPS guide (${eps_rng(*ge['eps_guide'])}, {ge['doc']}) is a loss, which has no P/E" if loss_guide
-               else "no numeric reported EPS guide yet")
+               else "no numeric reported EPS guide (non-GAAP only)" if guides else "no numeric reported EPS guide yet")
         eps_label = (f"{fy_e}: {why}, FY{last_fy % 100:02d}'s ${money(eps_now)} stands" +
                      "".join(f" (FY{y % 100:02d} is excluded: {excluded[y]})" for y in range(last_fy + 1, cur_fy)))
     noun = "total revenue" if latest["fy"] >= 2009 else "net sales"
@@ -331,7 +333,8 @@ def build(as_of, facts, raw, spx, engine, out):
                 "  new products and cost cuts to stop covering them.")
     theme_summary = "no disruption theme has dated evidence"
     cat3 = (f"(3) {fy_now} reported EPS guide ${eps_rng(*ge['eps_guide'])} ({ge['doc']})" + (": a loss, no P/E" if loss_guide else "")
-            if ge else f"(3) A numeric {fy_now} reported EPS guide — none yet")
+            if ge else f"(3) A numeric {fy_now} reported EPS guide — none (the company guides non-GAAP EPS only)" if guides
+            else f"(3) A numeric {fy_now} reported EPS guide — none yet")
     cat4 = (f"(4) Pre-tax margin — {latest['pretax_margin']:.2f}% in {latest['quarter']} ({latest['pretax_margin_bp']:+.1f}bp): "
             "where in-process R&D, restructuring and litigation charges land")
 
