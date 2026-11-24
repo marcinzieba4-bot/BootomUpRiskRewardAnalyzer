@@ -23,7 +23,7 @@ touching either directory.
   outcomes or findings enters another's models. UNP (2008-2026 so far), LOW (2008-2026 so far), AAPL (2008-2026 so far),
   NKE (2008-2026 so far), AVGO (from its 2009-08-06 listing to 2026-10-30 so far), PEP (2008 to 2026-10-30 so far), MSFT
   (2008 to 2026-10-30 so far), XOM (2008 to 2026-10-30 so far), SHW (2008 to 2026-11-06 so far), WMT (2008 to 2026-11-06 so far), RCL (2008 to 2026-11-06 so far), MAR (2008 to 2026-11-03 so far), BKR (2008 to 2017-06-30, then 2019-02-01 to 2026-11-06 so far), PFE (2008 to 2026-11-04 so far), CMCSA (2008 to 2026-11-06 so far), CAT (2008 to 2026-11-06 so far), BMY (2008 to 2026-11-06 so far), NVDA (2008 to 2026-11-06 so far), F (2008-01-04 to 2026-11-06 so far; 2022-01-07 onward was built first at the owner's request, and dates before 2022 are an early era with its
-  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far), SPGI (2008-01-04 to 2026-11-20 so far), CB (2008-01-04 to 2026-11-20 so far), LLY (2008-01-04 to 2026-11-20 so far) and UNH (2008-01-04 to 2009-12-31 so far) sit in `staging/retrospective/` until the owner adds
+  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far), SPGI (2008-01-04 to 2026-11-20 so far), CB (2008-01-04 to 2026-11-20 so far), LLY (2008-01-04 to 2026-11-20 so far) and UNH (2008-01-04 to 2013-12-31 so far) sit in `staging/retrospective/` until the owner adds
   them to the archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM", "SHW", "WMT", "RCL", "MAR", "BKR", "PFE", "CMCSA", "CAT",
   "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG", "JPM", "V", "SPGI", "CB", "LLY", "UNH"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py`, `mu_signal_model.py`, `v_signal_model.py`, `spgi_signal_model.py` and `lly_signal_model.py` (other branches) files
   and today's profiles in `data/business_profiles.json` (NVDA's, SO's, V's, SPGI's, CB's, LLY's and UNH's included) are 2026 analyses: never inputs to a retrospective. AVGO did not trade
@@ -346,5 +346,15 @@ touching either directory.
   the operating margin, with UnitedHealth's own rule-T thresholds over 1997-2006; DURABLE (no 10-K calls the business cyclical), no live
   theme; dividends $0.03 a year from the 10-Ks; CHEAP and BUY on all 105 dates, robustness 8 of 8, and no tested encoding moves a class;
   OptumRx, OptumInsight, UnitedHealthcare Community & State, Optum360 and OptumCare join the anachronism list (retro/README.md, "UNH").
+  From 2010: GAAP every new year (FY09 $3.24 to FY12 $5.28; no filing prints an EPS excluding one-offs, so 2010's $200M Ingenix
+  charges stay in), 2007 and 2008 kept at the company's figures; the reported EPS ranges as published (the Q1-Q3 2011 ranges with the
+  estimated Penn Treaty assessment in, no range without it is published); revenue guided in dollars every year ("approaching" a level,
+  "to exceed" a bound, no field); the guided margin step from the Q1 2010 schedule (6.6%-7.1%) and derived from the Q1 2011 schedule's
+  earnings from operations range and revenue (7.28%, BASE -5.8% for the rest of 2011), none for FY2012-FY2013; the 8-K of 2011-05-23
+  (a segment recast) and the preliminary 8-K of 2012-10-09 add nothing; dividend rates $0.50 to $1.12 from the Q2 releases that first
+  state them (`dividends`, annual rates passed around the split helper); Amil (2012-10-26) in the figures as published; DURABLE; CLOUD
+  (live 2012-10-30) out of scope, every live theme's scope quoted from 2012-11-02 (the CB wording); CHEAP 185, FAIR 24 (from
+  2013-07-12, as the window's median falls to 11.4x and the EPP floor to 9x), and no tested encoding moves a class (a five-year window
+  moves 154, the signals at BEAR 51); decided in the session that scored 2008-2009, disclosed (retro/README.md, "UNH 2010-2013").
 - **Never use the owner's personal email** in request headers to external
   services (SEC asks for a contact in the User-Agent).

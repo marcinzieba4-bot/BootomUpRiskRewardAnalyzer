@@ -25237,6 +25237,198 @@ Judgement calls that could carry hindsight:
 
 The hindsight results are in `staging/retrospective/UNH/FINDINGS.md`: hypotheses, never inputs.
 
+### UNH 2010-2013
+
+209 weekly dates, 2010-01-08 to 2013-12-31, on the same method, engine and rule-T thresholds. The fact sheet only gains facts: its
+2008-2009 content is unchanged (the generator asserts every earlier source, vintage, print and guide, the splits and rule T equal to the
+committed sheet) and the 105 earlier models rebuild byte for byte after the builder change below.
+
+```bash
+python3 retro/build_unh.py --weekly 2010-01-04 2013-12-31                   # 209 dates, 2010-01-08 .. 2013-12-31
+for c in 2010-01-01 2010-01-21 2010-02-11 2010-04-20 2010-07-20 2010-10-19 2010-11-29 2011-01-20 2011-02-11 2011-04-21 2011-07-19 \
+         2011-10-18 2011-11-04 2011-11-28 2012-01-19 2012-02-09 2012-04-19 2012-07-19 2012-10-16 2012-11-26 2013-01-17 2013-02-07 \
+         2013-04-18 2013-07-18 2013-10-17 2013-12-02 2014-01-01; do python3 retro/tools/firewall.py $c UNH; done
+```
+
+Read, by the session's model directly with no delegated transcription: the 16 earnings releases of Q4 2009 to Q3 2013 (the statements of
+operations and their notes, the headline and outlook paragraphs, the dividend and repurchase sentences, and the outlook schedules of the
+Q1 2010 and Q1 2011 releases, the only two that carry one); the FY2009-FY2012 10-Ks (Items 1 and 1A searched for the "why" and for any
+cyclical, cloud or offshore wording, the dividend and listing passages of Item 5, the five-year Financial Highlights, the statements of
+operations and the segment notes); the guidance 8-Ks of 2010-11-29, 2011-11-03, 2011-11-28, 2012-11-26 and 2013-12-02; the 8-K of
+2011-05-23 (the segment recast) and the 8-K of 2012-10-09 (the preliminary Q3 2012 result and the Amil agreement); the 10-Qs of Q3 2009 to
+Q3 2013 (their statements of operations, each equal to its release's on every line the signals use, the diluted EPS of the 2013 10-Qs from
+their MD&A tables); and every other 8-K of 2010-2013 by its item text, its exhibits searched for outlook, per-share and billion sentences.
+**Not read:** the 10-Qs and 10-Ks beyond those passages, the proxy statements, the XBRL files and the investor conference slide books
+(posted on the website, not filed). The generator reads each figure from its own row (it asserts each statement's identities, each
+10-K's five-year summary against its statements and against the earlier 10-Ks on every year they share, each release's year-ago column
+against the earlier release's own quarter, and each Q4 release's year against the 10-K that follows); 402 strings were added and checked
+with `verbatim.py` against their own filings (800 with the 2008-2009 batch's 398, all found). The source ids are `UH29`-`UH53`.
+
+**Same-session disclosure** (the CB 2010-2013, JPM 2018-2021, SPGI 2010-2013 and LLY 2010-2013 precedent): this batch was decided on
+2026-11-24 in the session that built and scored 2008-2009 and wrote its findings (`staging/retrospective/UNH/FINDINGS.md`, whose
+hypothesis is that a CHEAP call on a guide being cut in successive releases is weaker than one on a guide that has stopped falling).
+Those outcomes' horizons run to 2012-12-28, so the session had seen UNH's price path and dividends through 2012 before choosing these
+encodings. No 2010-2013 outcome was computed before the build below was committed, and no decision below changes a rule, threshold,
+signal or window: every call follows a written rule or an earlier ticker's encoding, and each that could move a class is tested at the
+end.
+
+Decided before any 2010-2013 outcome was computed:
+
+- **Release timing.** Every earnings 8-K of Q4 2009 to Q3 2013 was accepted before the open (06:02-06:12 ET), so each print's week is
+  dated the next trading day (2010-01-22 .. 2013-10-18), except Q1 2011's: released on Thursday 2011-04-21, the week's last trading day
+  (the market closed for Good Friday), so that week is dated the release day, the print public before the open (the builder asserts the
+  release time). The guidance 8-Ks of 2010-11-29, 2011-11-28,
+  2012-11-26 and 2013-12-02 were accepted before the open (06:01-07:10 ET); the 8-K of 2011-11-03 at 17:03 ET, after the close, dated
+  2011-11-04. The 10-Ks were all accepted after the close: FY2009 2010-02-10 16:37 ET, FY2010 2011-02-10 16:04 ET, FY2011 2012-02-08
+  19:46 ET and FY2012 2013-02-06 18:00 ET, dated 2010-02-11, 2011-02-11, 2012-02-09 and 2013-02-07. A Q4 print extends the history from
+  its release to the 10-K (eleven years in between), as before.
+- **History: four more vintages, the ten fiscal years to the 10-K's year,** each year from the latest filing that reports it (EPS and
+  revenue from the five-year Financial Highlights, diluted shares from the three-year statements): FY2009 $3.24, FY2010 $4.10, FY2011
+  $4.73 and FY2012 $5.28, diluted EPS (from the FY2012 10-K "attributable to UnitedHealth Group common shareholders"). No 10-K restates an
+  earlier year (asserted for 2004-2011). **GAAP every new year:** no release or 10-K prints an EPS excluding one-offs; 2010's $200 million
+  of goodwill impairment and business line disposition charges at Ingenix (the Q4 2010 statement's note (a)) have company figures for
+  Ingenix's earnings from operations and margin only, so they stay in (the ACN rule). 2007 ($3.50) and 2008 ($2.95) stay at the company's
+  figures from the Q4 releases in every vintage (the JPM rule). No year is distorted. The FY2012 vintage runs 2003-2012.
+  - **A segment recast adds nothing:** the 8-K of 2011-05-23 recasts Items 7 and 8 of the FY2010 10-K for the 2011 realignment and
+    renamed segments without changing a consolidated figure (the ACN 2024-09-30 rule, as for PEP and MSFT in 2011); the bridge takes the
+    recast segments from the FY2011 10-K.
+- **Guides, each field from the latest guide that states it** (current-FY EPS the reported range's midpoint; revenue in dollars read as
+  growth on the last full year; a point is lo = hi):
+  - FY2010: $2.90-3.10 and $88.5-89.5B (the 8-K of 2009-11-30, in the 2008-2009 sheet), confirmed by the Q4 2009 release; $3.15-3.35 and
+    "approximately $92 billion" (Q1 2010; the schedule's "Approximately $92,000"); $3.40-3.60 and "approximately $93 billion" (Q2);
+    $3.85-3.95 and "approaching $94 billion" (Q3), read as the level $94B (the NVDA 2023-11-28 "approaching" rule); affirmed by the 8-K of
+    2010-11-29;
+  - FY2011: $3.50-3.70 and $99-100B (the 8-K of 2010-11-29); "will approximate $100 billion" (Q4 2010, EPS affirmed); $3.95-4.05 and
+    "approaching $101 billion" (Q1 2011, the schedule's "Approaching $101,000"), read as $101B; $4.15-4.25 and "$101 billion" (Q2);
+    $4.40-4.45 (Q3), whose "to exceed $101 billion" is a one-sided bound, no field (the CAT rule), so $101B stands; $4.52-4.57 (the 8-K of
+    2011-11-03, as no assessment will be accrued in 2011), affirmed by the 8-K of 2011-11-28. The Q1-Q3 2011 ranges "include an estimated
+    $0.12 to $0.15 per share" for the assessment of a potentially insolvent long-term care insurer (Penn Treaty); no filing publishes a
+    range without it, so they stand as published (the LMT 2022 rule; tested below);
+  - FY2012: $4.55-4.75 and $107-108B (the 8-K of 2011-11-28, "does not reflect the pending acquisition of XLHealth Corp. or include any
+    estimate of costs pertaining to the Penn Treaty matter": as published), continued by the Q4 2011 release; $4.80-4.95 and $109-110B (Q1
+    2012); $4.90-5.00 and "$110 billion" (Q2); $5.20-5.25 (Q3; no revenue figure, so $110B stands), affirmed by the 8-K of 2012-11-26. The
+    8-K of 2012-10-09 (16:03 ET) gives a preliminary Q3 ("at least $1.45 per share") and the Amil agreement ("slightly accretive", words):
+    a preliminary quarter adds nothing (the UNP rule);
+  - FY2013: $5.25-5.50 and $123-124B (the 8-K of 2012-11-26), continued by the Q4 2012 release; "will approximate $122 billion" with the
+    range continued (Q1 2013, "recognizing sequestration pressures the top end of that range": words); $5.35-5.50 and "approximately $122
+    billion" (Q2); $5.40-5.50 and revenues "expected to reach $122 billion" (Q3), read as the level (the same figure either way); affirmed
+    by the 8-K of 2013-12-02, whose FY2014 guide ($5.40-5.60, $128-129B) is not current on any 2013 date;
+  - **the guided margin step** (method r2), from the two outlook schedules: the Q1 2010 schedule states a consolidated operating margin
+    range, 6.6%-7.1% (on earnings from operations of $6,100-6,500M), a step from FY09's 7.30%; the Q1 2011 schedule states consolidated
+    earnings from operations of $7,200-7,500M on revenues "Approaching $101,000" and no margin, so the margin is derived (the KMI rule, as
+    for the 8-K of 2008-07-02, here from the range's midpoint: 7.28%), a step from FY10's 8.35%. Each stands for the rest of its year (no
+    later 2010 or 2011 guide states a margin). No FY2012 or FY2013 guide states a margin or earnings from operations in numbers, so those
+    years have no step (as FY2009). The schedules' medical care ratio, operating cost ratio and net margin targets are components, unused.
+- **Dividends** (`dividends`, a new list of annual rates, each from the first filing that states it): the Q2 2010 release ("increased
+  the Company's dividend to an annual rate of $0.50 per share and moved the Company to a quarterly dividend payment cycle"), the Q2 2011
+  release ($0.65), the Q2 2012 release ($0.85) and the Q2 2013 release ($1.12); the vintages give FY09 $0.03 (approved 2010-02-09), FY10
+  $0.50 ("a quarterly dividend payment cycle of $0.125 per share"), FY11 $0.65 and FY12 $0.85. The builder takes the latest of the two.
+- **Signals,** from each release's statement of operations against the year-ago quarter in the same release, as before (charges in).
+  Every 10-Q's statement equals its release's, so no print is restated; each release's year-ago column equals the earlier release's
+  quarter (asserted). From Q1 2013 the statement adds the noncontrolling interest of Amil (acquired 2012-10-26, in the figures as
+  published); the signals use the consolidated lines. The notes: Q4 2009's year-ago quarter carries the $350M out-of-network settlement
+  less $10M; Q4 2010's operating costs the $200M Ingenix charges, and Q4 2011's year-ago quarter the same.
+- **Durability: DURABLE, risk 2, unchanged.** No FY2009-FY2012 10-K calls the business cyclical (asserted: no "cyclical" in any); the
+  "why" quotes each 10-K's description, its medical cost risk factor ("If we fail to effectively estimate, price for and manage our
+  medical costs, ...") and its recession sentence (FY2009) or "Premium revenues from risk-based products comprise approximately 90% of
+  our total consolidated revenues." (FY2010-FY2012). **Themes:** OFFSHORE (IT services) and, from 2012-10-30, CLOUD (on-premise hardware,
+  storage, databases and data-center outsourcing) are live; no FY2009-FY2012 10-K contains "cloud" or "offshore" (asserted), so neither is
+  in scope and the watch list stays empty. From the first date on which a theme other than OFFSHORE is live (2012-11-02), the "why" quotes
+  every live theme's registered scope (the CB 2014-2017 wording, applied here from the start), so the text of 2008 to 2012-10-26 is
+  unchanged.
+- **Segment bridge** (display only): segment revenues before eliminations, FY2009-FY2010 Health Benefits, OptumHealth, Ingenix and
+  Prescription Solutions; FY2011-FY2012 UnitedHealthcare, OptumHealth, OptumInsight and OptumRx ("Total Optum" skipped).
+- **Adds nothing:** the conference and webcast 7.01 8-Ks, the meeting and vote 8-Ks, the officer and director 8-Ks, the benefit plan
+  blackout notice (2010-08-02), the 8.01 press releases and debt filings (2010-01-06 to 2010-02-08, 2010-10-25, 2011-02-17, 2011-11-10,
+  2012-03-08, 2012-10-22, 2012-11-19, 2012-12-06, 2013-02-28), the segment recast of 2011-05-23 and the preliminary 8-K of 2012-10-09. None
+  changes a guided number.
+- **Builder change** (`retro/build_unh.py`): a guided earnings from operations may be a range, whose midpoint derives the margin; the
+  `dividends` facts are annual rates passed around the shared split helper (which restates quarterly ones; the builder asserts each
+  follows the last split); and the theme sentence quotes every live theme's scope once a theme other than OFFSHORE is live. The 2008-2009
+  models do not move. The firewall tool plants the new fields (a guide whose margin is derived from a range, and a later annual rate).
+
+Controls and checks (before any outcome):
+- **`retro_tool run` passes on all 209 dates**, no warnings (0 failures).
+- **Controls:** altering one value of each print (its premiums, and each Q4 print's full-year revenue and EPS), the Q2 2007 10-Q
+  restatement, each vintage (its last year's EPS, its dividend), each guide (its EPS range, its dollar revenue range, its margin range or
+  guided earnings from operations) and each dividend rate of the whole fact sheet, rerun over all 314 dates, changes no model dated
+  before its publication: 132 controls, of which 113 change the first weekly date on or after it (a guide: the first on which its year
+  is current) and 19 are inert, each superseded before any built date or before its year is current (the 2008-2009 batch's 10, the EPS
+  range of the 8-K of 2009-11-30, which the Q4 2009 release confirms before FY2010 is current while its revenue range changes the 13
+  dates 2010-01-22 to 2010-04-16, and the investor-conference guides of 2010-11-29, 2011-11-28, 2012-11-26 and 2013-12-02, which the
+  next Q4 release restates or which are not current in 2013). The baseline rebuild is byte-identical on all 314 dates.
+- **Leak scan:** 3 hits in 160,588 (model, later token) pairs over all 314 models, none a leak: each is the AS_OF close in the price
+  source line ("close $25.43" on 2009-06-19, "close $30.34" on 2010-06-04 and 2010-07-16), equal to a later quarter's revenue in billions
+  (Q1 2011's $25.43B, Q1 2013's $30.34B). The token rule was tightened for this batch so that a rounded figure keeps four significant
+  digits (the first run's 182 other hits were two- and three-digit roundings such as a 0.3477 tax rate as "0.35", which matched the
+  volatility, beta and price lines); the 2008-2009 batch's own result is unchanged under it. As a positive control, the latest print's
+  own notes appear in each of the 314 models.
+- **Self-text scan:** every capitalized word, dollar figure and year in each of the 83 facts' own text appears in a UnitedHealth Group
+  filing filed by the fact's date (1,051 tokens, 0 misses).
+- **Regression:** the 105 models of 2008-2009 rebuild byte for byte; no other ticker's code changes (the firewall tool gains a UNH plant).
+
+Seen in the build (method behaviour, not tuned):
+UnitedHealth Group's ten-year window loses the early 2000s' growth multiples and gains 2008-2012's, so its median falls from 17.8x to
+11.4x and the EPP floor from 14x to 9x while the stock rises from $28-38 (2010) to $68-75 (late 2013):
+- **CHEAP and BUY on 185 of the 209 dates; FAIR on 24** (2013-07-12 to 2013-12-31 except 2013-10-25 and 2013-11-01), 5 of them BUY
+  and 19 ACCUMULATE. Robustness 8 of 8 on all 168 CHEAP dates to 2013-03-22; 7 on the other 17 CHEAP dates (2013-03-28 to 2013-07-05,
+  2013-10-25 and 2013-11-01: "multiples one band cheaper" reads FAIR on 11 and RICH on 6); on the 24 FAIR dates 7 on 2, 6 on 5, 5 on 15
+  and 4 on 2 ("one band cheaper" reads RICH on all, "one band richer" CHEAP on 22, a softer floor CHEAP on 17).
+- **2010** (52 dates, all CHEAP): FY09E $3.15 on the first two dates, then FY10E $3.00 (from the Q4 2009 print), $3.25, $3.50 and $3.90;
+  $28.30-37.82 is 8.7-11.5x, the 10th-23rd percentile of a window whose median is 16.9-17.8x, 18-38% under an EPP floor of 14x
+  ($42.00-54.60). BASE +6.8% (the FY2009 guide on two dates), +4.0% and +3.6% (the FY2010 dollar guide, +1.6-2.7% on FY09's $87.14B),
+  then +0.5% from the Q1 2010 print (revenue +5.6% and the 6.6%-7.1% margin guide against FY09's 7.30%), +1.6% (Q2) and +2.8% (Q3). BULL
+  +22.4-25.0%. Ratio B 0.11-0.26.
+- **2011** (52, all CHEAP): FY10E $3.90 on two dates, then FY11E $3.60, $4.00, $4.20, $4.425 and $4.545; $38.45-53.13 is 9.6-13.3x, the
+  25th-35th percentile (median 15.6-16.9x), 5-31% under the 14x floor ($50.40-63.63). BASE +8.0% and +7.8% (revenue "will approximate
+  $100 billion", +6.2%), then **-5.8% from the Q1 2011 print to the Q4 2011 print**: revenue +7.3% less the derived margin step (7.28%
+  against FY10's 8.35%, -14.7%) plus the buyback term. BULL +21.7-22.8%. Ratio B 0.20-0.48.
+- **2012** (52, all CHEAP): FY11E $4.545 on two dates, then FY12E $4.65, $4.875, $4.95 and $5.225; $51.02-59.51 is 9.9-12.7x, the
+  31st-43rd percentile (median 14.1-15.6x); the floor falls to 13x ($59.09-67.92), the price 2-24% under it. BASE +7.4% and +7.3%
+  ($107-108B), +9.3% ($109-110B), +9.8% ($110B). BULL +19.5-21.7%. Ratio B 0.28-0.49.
+- **2013** (53: CHEAP 29, FAIR 24): FY12E $5.225 on two dates, then FY13E $5.375, $5.425 and $5.45; $52.09-75.30 is 10.0-13.8x, rising
+  from the 31st to the 59th percentile as the window's median falls from 14.0x to 11.4x. The floor is 10x on 2013-01-04 ($52.25) and 9x
+  from 2013-01-11 ($47.02-49.05), so the price goes from 0.3% under it to 54% above. BASE +9.8%, then +13.6% and +13.5% (the FY2013
+  guide's $123-124B, +11.2-12.1%) and +12.2% from the Q1 2013 print ($122B, +10.3%). BULL +16.5-19.5%. Ratio B 0.29-0.93.
+- **BEAR is FY2008's fall** (-15.7%/yr, the company's $3.50 to $2.95) on every date; **XBULL the 2002-2004 run** (+38.8%/yr, $0.95 to
+  $1.83) to the FY2012 10-K, then the 2003-2005 run (+31.3%/yr, $1.34 to $2.31) as 2002 leaves the history. The proxy composite runs
+  1.85-2.35.
+
+How far each call moves the classes (all 314 dates rebuilt with one encoding changed and classified offline; no outcome consulted):
+- the Q1 2011 schedule read as no margin guide (BASE from the revenue guide and buyback alone for the rest of 2011): no class, no tier;
+- "approaching $94 billion" and "approaching $101 billion" read as bounds (the earlier level stands; the Q1 2011 margin kept as
+  derived): no class, no tier;
+- the Q1-Q3 2011 EPS ranges with the estimated Penn Treaty assessment's midpoint ($0.135) added back (a constructed figure; no filing
+  publishes it): no class, no tier;
+- no guided margin step at all (no rule says so): no class, no tier;
+- BASE on the latest quarter's revenue growth instead of the dollar revenue guides: no class, no tier;
+- the dividend rates from the 10-Ks only (not from the Q2 releases): no class, no tier;
+- FY2007, FY2008 and the 2007-2008 guides at GAAP (the 2008-2009 batch's largest EPS call, here inside the history and BEAR): no class,
+  8 tiers;
+- the 2008-2009 batch's other encodings (FY1998 excluded, 1999-2000 at GAAP, the 8-K of 2008-07-02 as no margin guide, the Q1 2008
+  revenue guide from the text): no class, no tier on any of the 314 dates;
+- every data signal at its BEAR value: 51 classes from 2011-05-06 to 2013-12-31 (CHEAP to FAIR 7, CHEAP to RICH 20, the 24 FAIR dates to
+  RICH), no tier; at its XBULL value: the 24 FAIR dates to CHEAP, no tier;
+- a five-year P/E window instead of ten (no rule says so; it shows what the call rests on): 154 classes (CHEAP to FAIR 48, CHEAP to RICH
+  82, the 24 FAIR dates to RICH) and 114 tiers, all but one of the 155 dates from 2011-01-21.
+No encoding moves a class on any date; the 2010-2013 calls rest on the ten-year window (a five-year one, holding only the last five
+years' multiples, makes most dates from 2011 FAIR or RICH) and, from mid-2011, on the signals (at BEAR they move 51 classes).
+
+Judgement calls that could carry hindsight:
+- the same-session batch (above): the 2008-2009 findings, whose outcome horizons run to 2012-12-28, were written before these
+  encodings were chosen;
+- the Q1 2011 schedule's earnings from operations read as a margin guide (derived, 7.28%), which makes BASE negative for the rest of
+  2011; and the Q1 2010 schedule's stated range used as published;
+- "approaching $94 billion" and "approaching $101 billion" read as levels, "to exceed $101 billion" as a bound;
+- the Q1-Q3 2011 EPS ranges used with the estimated Penn Treaty assessment in, as no filing publishes a range without it;
+- GAAP EPS for 2009-2012 (the 2010 Ingenix charges in), and 2007-2008 kept at the company's figures, as before;
+- the signals and DURABLE, as in 2008-2009, by a builder who knows how the health reform law, the Medicare Advantage rate cuts and the
+  Optum build-out turned out after these dates;
+- the parts of the filings listed above as not read.
+
+The hindsight results for 2010-2013 are in `staging/retrospective/UNH/FINDINGS.md` (computed after the firewall result was pushed):
+hypotheses, never inputs.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -25586,6 +25778,11 @@ What the gates enforce:
   medical-cost risk ("We must effectively manage our health care costs.", then "If we fail to effectively estimate ... and manage our health
   care costs") and the FY2008 10-K's proposed health care reforms stay in the "why": the underwriting risk is the business's own, and reform
   is policy, not a substitution theme in the registry ("UNH").
+
+  UNH 2010-2013 carries none either: CLOUD, live from 2012-10-30, is scoped to on-premise hardware, storage, databases and data-center
+  outsourcing, and no FY2009-FY2012 10-K contains "cloud" or "offshore"; from 2012-11-02 the "why" quotes every live theme's registered
+  scope (the CB 2014-2017 wording, used here from the first date it applies). The health reform legislation the 10-Ks discuss is
+  regulation, not a substitution theme, and the medical-cost risk factor stays in the "why" ("UNH 2010-2013").
 
 ## Workflow
 
