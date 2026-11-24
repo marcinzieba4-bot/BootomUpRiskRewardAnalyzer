@@ -765935,7 +765935,20 @@
    "cons_return_2yr": 31.2,
    "path": "staging/retrospective/UNH/2008-01-04",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -58.9,
+    "tr_1y": -50.7,
+    "tr_2y": -43.6,
+    "tr_3y": -32.3,
+    "excess_6m": -49.3,
+    "excess_1y": -18.4,
+    "excess_2y": -27.3,
+    "excess_3y": -27.2,
+    "avg_m12_m24": -53.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNH",
@@ -765954,7 +765967,20 @@
    "cons_return_2yr": 31.4,
    "path": "staging/retrospective/UNH/2008-01-11",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -60.3,
+    "tr_1y": -52.6,
+    "tr_2y": -41.0,
+    "tr_3y": -29.3,
+    "excess_6m": -49.6,
+    "excess_1y": -18.1,
+    "excess_2y": -26.4,
+    "excess_3y": -25.3,
+    "avg_m12_m24": -52.9,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNH",
@@ -765973,7 +765999,20 @@
    "cons_return_2yr": 35.1,
    "path": "staging/retrospective/UNH/2008-01-18",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -56.0,
+    "tr_1y": -53.1,
+    "tr_2y": -37.8,
+    "tr_3y": -24.0,
+    "excess_6m": -52.4,
+    "excess_1y": -19.5,
+    "excess_2y": -27.6,
+    "excess_3y": -27.5,
+    "avg_m12_m24": -51.3,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNH",
@@ -765992,7 +766031,20 @@
    "cons_return_2yr": 78.8,
    "path": "staging/retrospective/UNH/2008-01-23",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -44.8,
+    "tr_1y": -44.3,
+    "tr_2y": -34.0,
+    "tr_3y": -18.8,
+    "excess_6m": -41.5,
+    "excess_1y": -8.4,
+    "excess_2y": -19.3,
+    "excess_3y": -20.1,
+    "avg_m12_m24": -47.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNH",
@@ -766011,7 +766063,20 @@
    "cons_return_2yr": 79.7,
    "path": "staging/retrospective/UNH/2008-02-01",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -43.8,
+    "tr_1y": -43.4,
+    "tr_2y": -33.8,
+    "tr_3y": -15.1,
+    "excess_6m": -35.1,
+    "excess_1y": -4.7,
+    "excess_2y": -15.4,
+    "excess_3y": -13.9,
+    "avg_m12_m24": -46.7,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNH",
@@ -766030,7 +766095,20 @@
    "cons_return_2yr": 86.8,
    "path": "staging/retrospective/UNH/2008-02-08",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -35.6,
+    "tr_1y": -39.9,
+    "tr_2y": -32.6,
+    "tr_3y": -12.0,
+    "excess_6m": -33.8,
+    "excess_1y": -7.3,
+    "excess_2y": -15.9,
+    "excess_3y": -17.0,
+    "avg_m12_m24": -44.4,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNH",
@@ -766049,7 +766127,20 @@
    "cons_return_2yr": 88.6,
    "path": "staging/retrospective/UNH/2008-02-15",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -30.8,
+    "tr_1y": -39.3,
+    "tr_2y": -32.5,
+    "tr_3y": -11.0,
+    "excess_6m": -28.1,
+    "excess_1y": -2.5,
+    "excess_2y": -16.0,
+    "excess_3y": -14.7,
+    "avg_m12_m24": -43.8,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNH",
@@ -766068,7 +766159,20 @@
    "cons_return_2yr": 90.5,
    "path": "staging/retrospective/UNH/2008-02-22",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -35.3,
+    "tr_1y": -40.9,
+    "tr_2y": -30.0,
+    "tr_3y": -8.3,
+    "excess_6m": -31.9,
+    "excess_1y": 0.1,
+    "excess_2y": -15.6,
+    "excess_3y": -10.8,
+    "avg_m12_m24": -43.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNH",
@@ -766087,7 +766191,20 @@
    "cons_return_2yr": 94.1,
    "path": "staging/retrospective/UNH/2008-02-29",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -34.4,
+    "tr_1y": -57.7,
+    "tr_2y": -27.0,
+    "tr_3y": -7.4,
+    "excess_6m": -31.6,
+    "excess_1y": -14.9,
+    "excess_2y": -13.4,
+    "excess_3y": -12.2,
+    "avg_m12_m24": -41.6,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNH",
@@ -766106,7 +766223,20 @@
    "cons_return_2yr": 99.6,
    "path": "staging/retrospective/UNH/2008-03-07",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -38.6,
+    "tr_1y": -60.3,
+    "tr_2y": -25.2,
+    "tr_3y": -2.3,
+    "excess_6m": -35.6,
+    "excess_1y": -15.6,
+    "excess_2y": -17.1,
+    "excess_3y": -9.2,
+    "avg_m12_m24": -39.3,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNH",
@@ -766125,7 +766255,20 @@
    "cons_return_2yr": 129.9,
    "path": "staging/retrospective/UNH/2008-03-14",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -20.3,
+    "tr_1y": -42.5,
+    "tr_2y": -11.3,
+    "tr_3y": 17.6,
+    "excess_6m": -18.6,
+    "excess_1y": -3.3,
+    "excess_2y": -4.2,
+    "excess_3y": 11.8,
+    "avg_m12_m24": -25.5,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNH",
@@ -766144,7 +766287,20 @@
    "cons_return_2yr": 142.1,
    "path": "staging/retrospective/UNH/2008-03-20",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -24.1,
+    "tr_1y": -41.5,
+    "tr_2y": -2.5,
+    "tr_3y": 22.3,
+    "excess_6m": -19.1,
+    "excess_1y": -1.6,
+    "excess_2y": 6.1,
+    "excess_3y": 20.2,
+    "avg_m12_m24": -20.8,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766163,7 +766319,20 @@
    "cons_return_2yr": 148.5,
    "path": "staging/retrospective/UNH/2008-03-28",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -24.9,
+    "tr_1y": -38.6,
+    "tr_2y": -5.0,
+    "tr_3y": 29.2,
+    "excess_6m": -17.8,
+    "excess_1y": -2.7,
+    "excess_2y": 2.8,
+    "excess_3y": 24.3,
+    "avg_m12_m24": -18.0,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766182,7 +766351,20 @@
    "cons_return_2yr": 134.2,
    "path": "staging/retrospective/UNH/2008-04-04",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -33.9,
+    "tr_1y": -43.6,
+    "tr_2y": -9.5,
+    "tr_3y": 26.5,
+    "excess_6m": -15.5,
+    "excess_1y": -7.1,
+    "excess_2y": 1.0,
+    "excess_3y": 23.9,
+    "avg_m12_m24": -22.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766201,7 +766383,20 @@
    "cons_return_2yr": 138.3,
    "path": "staging/retrospective/UNH/2008-04-11",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -51.6,
+    "tr_1y": -33.4,
+    "tr_2y": -9.9,
+    "tr_3y": 25.1,
+    "excess_6m": -19.0,
+    "excess_1y": 0.3,
+    "excess_2y": -3.1,
+    "excess_3y": 20.5,
+    "avg_m12_m24": -20.3,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNH",
@@ -766220,7 +766415,20 @@
    "cons_return_2yr": 129.5,
    "path": "staging/retrospective/UNH/2008-04-18",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -34.5,
+    "tr_1y": -35.1,
+    "tr_2y": -17.3,
+    "tr_3y": 18.4,
+    "excess_6m": -2.8,
+    "excess_1y": 0.1,
+    "excess_2y": -7.0,
+    "excess_3y": 19.0,
+    "avg_m12_m24": -22.9,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNH",
@@ -766239,7 +766447,20 @@
    "cons_return_2yr": 85.5,
    "path": "staging/retrospective/UNH/2008-04-23",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -31.1,
+    "tr_1y": -33.2,
+    "tr_2y": -10.7,
+    "tr_3y": 39.3,
+    "excess_6m": 1.3,
+    "excess_1y": 2.9,
+    "excess_2y": -2.6,
+    "excess_3y": 37.0,
+    "avg_m12_m24": -16.9,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNH",
@@ -766258,7 +766479,20 @@
    "cons_return_2yr": 92.4,
    "path": "staging/retrospective/UNH/2008-05-02",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -29.1,
+    "tr_1y": -31.3,
+    "tr_2y": -9.3,
+    "tr_3y": 50.7,
+    "excess_6m": 1.5,
+    "excess_1y": 4.7,
+    "excess_2y": 3.4,
+    "excess_3y": 49.4,
+    "avg_m12_m24": -13.3,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766277,7 +766511,20 @@
    "cons_return_2yr": 95.5,
    "path": "staging/retrospective/UNH/2008-05-09",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -31.9,
+    "tr_1y": -12.3,
+    "tr_2y": -11.7,
+    "tr_3y": 54.9,
+    "excess_6m": -0.5,
+    "excess_1y": 18.9,
+    "excess_2y": 4.8,
+    "excess_3y": 52.8,
+    "avg_m12_m24": -11.7,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766296,7 +766543,20 @@
    "cons_return_2yr": 99.3,
    "path": "staging/retrospective/UNH/2008-05-16",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -38.1,
+    "tr_1y": -14.8,
+    "tr_2y": -5.8,
+    "tr_3y": 57.0,
+    "excess_6m": 0.3,
+    "excess_1y": 21.2,
+    "excess_2y": 11.1,
+    "excess_3y": 58.6,
+    "avg_m12_m24": -9.9,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766315,7 +766575,20 @@
    "cons_return_2yr": 85.4,
    "path": "staging/retrospective/UNH/2008-05-23",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -50.6,
+    "tr_1y": -24.2,
+    "tr_2y": -17.2,
+    "tr_3y": 43.1,
+    "excess_6m": -9.4,
+    "excess_1y": 9.2,
+    "excess_2y": 0.0,
+    "excess_3y": 42.0,
+    "avg_m12_m24": -16.0,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "UNH",
@@ -766334,7 +766607,20 @@
    "cons_return_2yr": 88.3,
    "path": "staging/retrospective/UNH/2008-05-30",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -38.6,
+    "tr_1y": -22.2,
+    "tr_2y": -14.8,
+    "tr_3y": 42.8,
+    "excess_6m": -3.7,
+    "excess_1y": 10.0,
+    "excess_2y": 3.8,
+    "excess_3y": 42.7,
+    "avg_m12_m24": -14.6,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766353,7 +766639,20 @@
    "cons_return_2yr": 95.0,
    "path": "staging/retrospective/UNH/2008-06-06",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -35.2,
+    "tr_1y": -17.9,
+    "tr_2y": -7.6,
+    "tr_3y": 48.0,
+    "excess_6m": -0.7,
+    "excess_1y": 10.8,
+    "excess_2y": 10.6,
+    "excess_3y": 48.1,
+    "avg_m12_m24": -11.4,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766372,7 +766671,20 @@
    "cons_return_2yr": 109.5,
    "path": "staging/retrospective/UNH/2008-06-13",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -23.4,
+    "tr_1y": -21.1,
+    "tr_2y": 0.4,
+    "tr_3y": 62.1,
+    "excess_6m": 10.2,
+    "excess_1y": 7.1,
+    "excess_2y": 16.3,
+    "excess_3y": 63.1,
+    "avg_m12_m24": -4.5,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766391,7 +766703,20 @@
    "cons_return_2yr": 137.5,
    "path": "staging/retrospective/UNH/2008-06-20",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -2.3,
+    "tr_1y": -6.1,
+    "tr_2y": 16.2,
+    "tr_3y": 91.7,
+    "excess_6m": 29.6,
+    "excess_1y": 22.0,
+    "excess_2y": 27.8,
+    "excess_3y": 89.3,
+    "avg_m12_m24": 8.8,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766410,7 +766735,20 @@
    "cons_return_2yr": 147.6,
    "path": "staging/retrospective/UNH/2008-06-27",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 1.1,
+    "tr_1y": -4.7,
+    "tr_2y": 15.6,
+    "tr_3y": 99.0,
+    "excess_6m": 31.7,
+    "excess_1y": 21.4,
+    "excess_2y": 27.4,
+    "excess_3y": 93.1,
+    "avg_m12_m24": 13.8,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766429,7 +766767,20 @@
    "cons_return_2yr": 135.5,
    "path": "staging/retrospective/UNH/2008-07-03",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 20.2,
+    "tr_1y": 4.3,
+    "tr_2y": 24.1,
+    "tr_3y": 134.6,
+    "excess_6m": 45.5,
+    "excess_1y": 31.2,
+    "excess_2y": 39.5,
+    "excess_3y": 123.0,
+    "avg_m12_m24": 29.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766448,7 +766799,20 @@
    "cons_return_2yr": 144.0,
    "path": "staging/retrospective/UNH/2008-07-11",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 19.4,
+    "tr_1y": 11.5,
+    "tr_2y": 36.1,
+    "tr_3y": 133.1,
+    "excess_6m": 46.3,
+    "excess_1y": 38.4,
+    "excess_2y": 45.2,
+    "excess_3y": 120.9,
+    "avg_m12_m24": 34.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766467,7 +766831,20 @@
    "cons_return_2yr": 126.2,
    "path": "staging/retrospective/UNH/2008-07-18",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 6.7,
+    "tr_1y": 5.1,
+    "tr_2y": 27.7,
+    "tr_3y": 120.4,
+    "excess_6m": 38.1,
+    "excess_1y": 28.4,
+    "excess_2y": 39.4,
+    "excess_3y": 111.1,
+    "avg_m12_m24": 24.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766486,7 +766863,20 @@
    "cons_return_2yr": 94.7,
    "path": "staging/retrospective/UNH/2008-07-23",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 1.0,
+    "tr_1y": -2.4,
+    "tr_2y": 12.0,
+    "tr_3y": 92.6,
+    "excess_6m": 35.1,
+    "excess_1y": 19.4,
+    "excess_2y": 22.3,
+    "excess_3y": 82.1,
+    "avg_m12_m24": 7.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766505,7 +766895,20 @@
    "cons_return_2yr": 92.2,
    "path": "staging/retrospective/UNH/2008-08-01",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 0.7,
+    "tr_1y": -0.1,
+    "tr_2y": 8.9,
+    "tr_3y": 73.3,
+    "excess_6m": 33.9,
+    "excess_1y": 19.6,
+    "excess_2y": 17.9,
+    "excess_3y": 65.6,
+    "avg_m12_m24": 6.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766524,7 +766927,20 @@
    "cons_return_2yr": 74.4,
    "path": "staging/retrospective/UNH/2008-08-08",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -6.6,
+    "tr_1y": -14.4,
+    "tr_2y": 8.5,
+    "tr_3y": 37.6,
+    "excess_6m": 25.0,
+    "excess_1y": 5.5,
+    "excess_2y": 18.1,
+    "excess_3y": 45.4,
+    "avg_m12_m24": -2.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766543,7 +766959,20 @@
    "cons_return_2yr": 63.8,
    "path": "staging/retrospective/UNH/2008-08-15",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -12.3,
+    "tr_1y": -14.9,
+    "tr_2y": -2.4,
+    "tr_3y": 41.4,
+    "excess_6m": 23.1,
+    "excess_1y": 5.8,
+    "excess_2y": 10.9,
+    "excess_3y": 43.3,
+    "avg_m12_m24": -8.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766562,7 +766991,20 @@
    "cons_return_2yr": 76.6,
    "path": "staging/retrospective/UNH/2008-08-22",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -8.6,
+    "tr_1y": -5.4,
+    "tr_2y": 3.9,
+    "tr_3y": 44.8,
+    "excess_6m": 30.6,
+    "excess_1y": 13.2,
+    "excess_2y": 17.4,
+    "excess_3y": 52.5,
+    "avg_m12_m24": -1.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766581,7 +767023,20 @@
    "cons_return_2yr": 77.5,
    "path": "staging/retrospective/UNH/2008-08-29",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -35.5,
+    "tr_1y": -7.4,
+    "tr_2y": 6.9,
+    "tr_3y": 55.9,
+    "excess_6m": 6.0,
+    "excess_1y": 10.4,
+    "excess_2y": 20.4,
+    "excess_3y": 56.2,
+    "avg_m12_m24": -0.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766600,7 +767055,20 @@
    "cons_return_2yr": 95.1,
    "path": "staging/retrospective/UNH/2008-09-05",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -41.0,
+    "tr_1y": 4.3,
+    "tr_2y": 23.0,
+    "tr_3y": 68.2,
+    "excess_6m": 2.6,
+    "excess_1y": 20.3,
+    "excess_2y": 30.2,
+    "excess_3y": 67.9,
+    "avg_m12_m24": 9.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766619,7 +767087,20 @@
    "cons_return_2yr": 82.6,
    "path": "staging/retrospective/UNH/2008-09-12",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -31.1,
+    "tr_1y": -1.7,
+    "tr_2y": 17.5,
+    "tr_3y": 59.2,
+    "excess_6m": 7.9,
+    "excess_1y": 13.2,
+    "excess_2y": 25.5,
+    "excess_3y": 61.1,
+    "avg_m12_m24": 3.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766638,7 +767119,20 @@
    "cons_return_2yr": 101.8,
    "path": "staging/retrospective/UNH/2008-09-19",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -20.5,
+    "tr_1y": 6.8,
+    "tr_2y": 28.6,
+    "tr_3y": 89.8,
+    "excess_6m": 15.3,
+    "excess_1y": 19.0,
+    "excess_2y": 34.3,
+    "excess_3y": 87.2,
+    "avg_m12_m24": 14.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766657,7 +767151,20 @@
    "cons_return_2yr": 109.5,
    "path": "staging/retrospective/UNH/2008-09-26",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -16.2,
+    "tr_1y": -1.7,
+    "tr_2y": 39.6,
+    "tr_3y": 92.5,
+    "excess_6m": 13.9,
+    "excess_1y": 10.0,
+    "excess_2y": 40.9,
+    "excess_3y": 90.6,
+    "avg_m12_m24": 19.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766676,7 +767183,20 @@
    "cons_return_2yr": 124.2,
    "path": "staging/retrospective/UNH/2008-10-03",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -14.7,
+    "tr_1y": 0.8,
+    "tr_2y": 48.2,
+    "tr_3y": 81.7,
+    "excess_6m": 7.8,
+    "excess_1y": 5.9,
+    "excess_2y": 40.3,
+    "excess_3y": 75.7,
+    "avg_m12_m24": 28.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766695,7 +767215,20 @@
    "cons_return_2yr": 211.6,
    "path": "staging/retrospective/UNH/2008-10-10",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 37.7,
+    "tr_1y": 42.4,
+    "tr_2y": 99.8,
+    "tr_3y": 173.2,
+    "excess_6m": 39.3,
+    "excess_1y": 18.6,
+    "excess_2y": 63.0,
+    "excess_3y": 130.2,
+    "avg_m12_m24": 79.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766714,7 +767247,20 @@
    "cons_return_2yr": 121.7,
    "path": "staging/retrospective/UNH/2008-10-17",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -0.9,
+    "tr_1y": 0.4,
+    "tr_2y": 48.8,
+    "tr_3y": 94.7,
+    "excess_6m": 4.3,
+    "excess_1y": -18.9,
+    "excess_2y": 17.7,
+    "excess_3y": 58.2,
+    "avg_m12_m24": 28.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766733,7 +767279,20 @@
    "cons_return_2yr": 136.0,
    "path": "staging/retrospective/UNH/2008-10-24",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 0.8,
+    "tr_1y": 13.0,
+    "tr_2y": 64.0,
+    "tr_3y": 117.9,
+    "excess_6m": -0.2,
+    "excess_1y": -13.9,
+    "excess_2y": 22.8,
+    "excess_3y": 65.7,
+    "avg_m12_m24": 38.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766752,7 +767311,20 @@
    "cons_return_2yr": 127.8,
    "path": "staging/retrospective/UNH/2008-10-31",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -0.8,
+    "tr_1y": 9.5,
+    "tr_2y": 53.2,
+    "tr_3y": 109.6,
+    "excess_6m": 7.6,
+    "excess_1y": 0.1,
+    "excess_2y": 26.2,
+    "excess_3y": 69.6,
+    "avg_m12_m24": 34.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766771,7 +767343,20 @@
    "cons_return_2yr": 141.0,
    "path": "staging/retrospective/UNH/2008-11-07",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 26.7,
+    "tr_1y": 28.0,
+    "tr_2y": 65.7,
+    "tr_3y": 105.3,
+    "excess_6m": 28.5,
+    "excess_1y": 11.4,
+    "excess_2y": 30.2,
+    "excess_3y": 63.4,
+    "avg_m12_m24": 42.8,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766790,7 +767375,20 @@
    "cons_return_2yr": 170.0,
    "path": "staging/retrospective/UNH/2008-11-14",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 39.0,
+    "tr_1y": 45.4,
+    "tr_2y": 84.7,
+    "tr_3y": 138.9,
+    "excess_6m": 34.3,
+    "excess_1y": 16.2,
+    "excess_2y": 40.7,
+    "excess_3y": 86.0,
+    "avg_m12_m24": 60.7,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766809,7 +767407,20 @@
    "cons_return_2yr": 215.2,
    "path": "staging/retrospective/UNH/2008-11-21",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 57.1,
+    "tr_1y": 66.7,
+    "tr_2y": 111.7,
+    "tr_3y": 164.3,
+    "excess_6m": 43.3,
+    "excess_1y": 26.2,
+    "excess_2y": 54.8,
+    "excess_3y": 105.1,
+    "avg_m12_m24": 88.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766828,7 +767439,20 @@
    "cons_return_2yr": 157.3,
    "path": "staging/retrospective/UNH/2008-11-28",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 29.6,
+    "tr_1y": 40.3,
+    "tr_2y": 72.3,
+    "tr_3y": 118.5,
+    "excess_6m": 27.2,
+    "excess_1y": 16.1,
+    "excess_2y": 35.4,
+    "excess_3y": 77.9,
+    "avg_m12_m24": 54.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766847,7 +767471,20 @@
    "cons_return_2yr": 149.6,
    "path": "staging/retrospective/UNH/2008-12-05",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 26.7,
+    "tr_1y": 28.4,
+    "tr_2y": 78.7,
+    "tr_3y": 130.4,
+    "excess_6m": 17.7,
+    "excess_1y": -0.5,
+    "excess_2y": 33.8,
+    "excess_3y": 78.9,
+    "avg_m12_m24": 52.3,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766866,7 +767503,20 @@
    "cons_return_2yr": 127.0,
    "path": "staging/retrospective/UNH/2008-12-12",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 3.0,
+    "tr_1y": 29.6,
+    "tr_2y": 57.6,
+    "tr_3y": 109.2,
+    "excess_6m": -5.3,
+    "excess_1y": 2.2,
+    "excess_2y": 12.7,
+    "excess_3y": 61.8,
+    "avg_m12_m24": 39.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766885,7 +767535,20 @@
    "cons_return_2yr": 101.7,
    "path": "staging/retrospective/UNH/2008-12-19",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -3.9,
+    "tr_1y": 19.2,
+    "tr_2y": 34.0,
+    "tr_3y": 88.8,
+    "excess_6m": -9.5,
+    "excess_1y": -8.3,
+    "excess_2y": -12.0,
+    "excess_3y": 44.5,
+    "avg_m12_m24": 24.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766904,7 +767567,20 @@
    "cons_return_2yr": 103.2,
    "path": "staging/retrospective/UNH/2008-12-26",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -5.7,
+    "tr_1y": 20.6,
+    "tr_2y": 37.7,
+    "tr_3y": 99.2,
+    "excess_6m": -12.3,
+    "excess_1y": -11.0,
+    "excess_2y": -11.5,
+    "excess_3y": 46.2,
+    "avg_m12_m24": 25.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766923,7 +767599,20 @@
    "cons_return_2yr": 100.9,
    "path": "staging/retrospective/UNH/2008-12-31",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -6.0,
+    "tr_1y": 16.7,
+    "tr_2y": 36.7,
+    "tr_3y": 94.5,
+    "excess_6m": -9.1,
+    "excess_1y": -10.4,
+    "excess_2y": -7.5,
+    "excess_3y": 47.6,
+    "avg_m12_m24": 23.9,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766942,7 +767631,20 @@
    "cons_return_2yr": 102.0,
    "path": "staging/retrospective/UNH/2009-01-09",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -5.6,
+    "tr_1y": 23.7,
+    "tr_2y": 47.0,
+    "tr_3y": 103.3,
+    "excess_6m": -5.8,
+    "excess_1y": -7.3,
+    "excess_2y": -0.7,
+    "excess_3y": 51.7,
+    "avg_m12_m24": 25.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766961,7 +767663,20 @@
    "cons_return_2yr": 109.5,
    "path": "staging/retrospective/UNH/2009-01-16",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -0.9,
+    "tr_1y": 32.5,
+    "tr_2y": 61.6,
+    "tr_3y": 110.8,
+    "excess_6m": -11.6,
+    "excess_1y": -3.7,
+    "excess_2y": 4.4,
+    "excess_3y": 51.1,
+    "avg_m12_m24": 30.3,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766980,7 +767695,20 @@
    "cons_return_2yr": 115.9,
    "path": "staging/retrospective/UNH/2009-01-23",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -3.4,
+    "tr_1y": 18.4,
+    "tr_2y": 45.7,
+    "tr_3y": 90.7,
+    "excess_6m": -22.2,
+    "excess_1y": -15.7,
+    "excess_2y": -14.1,
+    "excess_3y": 23.9,
+    "avg_m12_m24": 18.9,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -766999,7 +767727,20 @@
    "cons_return_2yr": 113.7,
    "path": "staging/retrospective/UNH/2009-01-30",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -0.7,
+    "tr_1y": 16.6,
+    "tr_2y": 46.0,
+    "tr_3y": 84.0,
+    "excess_6m": -21.1,
+    "excess_1y": -15.7,
+    "excess_2y": -13.5,
+    "excess_3y": 16.9,
+    "avg_m12_m24": 18.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767018,7 +767759,20 @@
    "cons_return_2yr": 109.2,
    "path": "staging/retrospective/UNH/2009-02-06",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -10.1,
+    "tr_1y": 12.5,
+    "tr_2y": 48.3,
+    "tr_3y": 80.9,
+    "excess_6m": -26.2,
+    "excess_1y": -12.6,
+    "excess_2y": -7.6,
+    "excess_3y": 18.2,
+    "avg_m12_m24": 16.3,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767037,7 +767791,20 @@
    "cons_return_2yr": 106.7,
    "path": "staging/retrospective/UNH/2009-02-13",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -1.9,
+    "tr_1y": 11.2,
+    "tr_2y": 47.8,
+    "tr_3y": 89.6,
+    "excess_6m": -26.0,
+    "excess_1y": -22.0,
+    "excess_2y": -18.4,
+    "excess_3y": 17.5,
+    "avg_m12_m24": 16.9,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767056,7 +767823,20 @@
    "cons_return_2yr": 114.0,
    "path": "staging/retrospective/UNH/2009-02-20",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 1.6,
+    "tr_1y": 14.3,
+    "tr_2y": 54.7,
+    "tr_3y": 99.2,
+    "excess_6m": -30.3,
+    "excess_1y": -32.1,
+    "excess_2y": -24.8,
+    "excess_3y": 13.9,
+    "avg_m12_m24": 21.7,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767075,7 +767855,20 @@
    "cons_return_2yr": 204.7,
    "path": "staging/retrospective/UNH/2009-02-27",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 47.4,
+    "tr_1y": 72.5,
+    "tr_2y": 118.6,
+    "tr_3y": 189.0,
+    "excess_6m": 6.1,
+    "excess_1y": 19.7,
+    "excess_2y": 33.6,
+    "excess_3y": 93.9,
+    "avg_m12_m24": 74.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767094,7 +767887,20 @@
    "cons_return_2yr": 234.5,
    "path": "staging/retrospective/UNH/2009-03-06",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 61.5,
+    "tr_1y": 88.7,
+    "tr_2y": 151.5,
+    "tr_3y": 211.0,
+    "excess_6m": 11.9,
+    "excess_1y": 19.7,
+    "excess_2y": 52.8,
+    "excess_3y": 105.3,
+    "avg_m12_m24": 92.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767113,7 +767919,20 @@
    "cons_return_2yr": 180.3,
    "path": "staging/retrospective/UNH/2009-03-13",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 36.2,
+    "tr_1y": 54.2,
+    "tr_2y": 106.7,
+    "tr_3y": 164.7,
+    "excess_6m": -2.9,
+    "excess_1y": -0.4,
+    "excess_2y": 28.9,
+    "excess_3y": 71.4,
+    "avg_m12_m24": 62.0,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767132,7 +767951,20 @@
    "cons_return_2yr": 190.2,
    "path": "staging/retrospective/UNH/2009-03-20",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 38.7,
+    "tr_1y": 66.8,
+    "tr_2y": 109.2,
+    "tr_3y": 171.4,
+    "excess_6m": -1.8,
+    "excess_1y": 12.9,
+    "excess_2y": 36.9,
+    "excess_3y": 79.1,
+    "avg_m12_m24": 68.7,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767151,7 +767983,20 @@
    "cons_return_2yr": 184.0,
    "path": "staging/retrospective/UNH/2009-03-27",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 20.4,
+    "tr_1y": 54.9,
+    "tr_2y": 110.2,
+    "tr_3y": 168.7,
+    "excess_6m": -8.9,
+    "excess_1y": 9.5,
+    "excess_2y": 43.9,
+    "excess_3y": 87.1,
+    "avg_m12_m24": 66.0,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767170,7 +768015,20 @@
    "cons_return_2yr": 191.5,
    "path": "staging/retrospective/UNH/2009-04-03",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 18.2,
+    "tr_1y": 60.8,
+    "tr_2y": 124.6,
+    "tr_3y": 194.9,
+    "excess_6m": -4.6,
+    "excess_1y": 18.5,
+    "excess_2y": 61.3,
+    "excess_3y": 118.9,
+    "avg_m12_m24": 71.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767189,7 +768047,20 @@
    "cons_return_2yr": 150.9,
    "path": "staging/retrospective/UNH/2009-04-09",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 3.4,
+    "tr_1y": 35.3,
+    "tr_2y": 88.2,
+    "tr_3y": 148.6,
+    "excess_6m": -22.8,
+    "excess_1y": -6.4,
+    "excess_2y": 28.2,
+    "excess_3y": 79.3,
+    "avg_m12_m24": 48.6,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767208,7 +768079,20 @@
    "cons_return_2yr": 148.0,
    "path": "staging/retrospective/UNH/2009-04-17",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 1.3,
+    "tr_1y": 27.4,
+    "tr_2y": 88.5,
+    "tr_3y": 145.6,
+    "excess_6m": -24.9,
+    "excess_1y": -12.1,
+    "excess_2y": 31.8,
+    "excess_3y": 77.7,
+    "avg_m12_m24": 48.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767227,7 +768111,20 @@
    "cons_return_2yr": 162.5,
    "path": "staging/retrospective/UNH/2009-04-22",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 12.7,
+    "tr_1y": 33.7,
+    "tr_2y": 111.9,
+    "tr_3y": 166.1,
+    "excess_6m": -17.8,
+    "excess_1y": -12.0,
+    "excess_2y": 48.4,
+    "excess_3y": 94.5,
+    "avg_m12_m24": 57.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767246,7 +768143,20 @@
    "cons_return_2yr": 160.7,
    "path": "staging/retrospective/UNH/2009-05-01",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 13.0,
+    "tr_1y": 32.1,
+    "tr_2y": 116.6,
+    "tr_3y": 153.9,
+    "excess_6m": -6.0,
+    "excess_1y": -5.5,
+    "excess_2y": 56.4,
+    "excess_3y": 85.7,
+    "avg_m12_m24": 58.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767265,7 +768175,20 @@
    "cons_return_2yr": 107.4,
    "path": "staging/retrospective/UNH/2009-05-08",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -0.7,
+    "tr_1y": 0.6,
+    "tr_2y": 75.4,
+    "tr_3y": 97.4,
+    "excess_6m": -17.0,
+    "excess_1y": -21.3,
+    "excess_2y": 26.3,
+    "excess_3y": 43.0,
+    "avg_m12_m24": 27.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767284,7 +768207,20 @@
    "cons_return_2yr": 117.6,
    "path": "staging/retrospective/UNH/2009-05-15",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 5.7,
+    "tr_1y": 10.6,
+    "tr_2y": 83.5,
+    "tr_3y": 104.0,
+    "excess_6m": -19.0,
+    "excess_1y": -20.2,
+    "excess_2y": 27.4,
+    "excess_3y": 45.7,
+    "avg_m12_m24": 35.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767303,7 +768239,20 @@
    "cons_return_2yr": 127.7,
    "path": "staging/retrospective/UNH/2009-05-22",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 8.6,
+    "tr_1y": 9.2,
+    "tr_2y": 91.1,
+    "tr_3y": 116.4,
+    "excess_6m": -15.5,
+    "excess_1y": -15.7,
+    "excess_2y": 36.1,
+    "excess_3y": 59.9,
+    "avg_m12_m24": 42.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767322,7 +768271,20 @@
    "cons_return_2yr": 125.1,
    "path": "staging/retrospective/UNH/2009-05-29",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 10.7,
+    "tr_1y": 9.4,
+    "tr_2y": 83.6,
+    "tr_3y": 115.5,
+    "excess_6m": -8.8,
+    "excess_1y": -11.1,
+    "excess_2y": 34.5,
+    "excess_3y": 63.4,
+    "avg_m12_m24": 42.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767341,7 +768303,20 @@
    "cons_return_2yr": 120.9,
    "path": "staging/retrospective/UNH/2009-06-05",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 1.3,
+    "tr_1y": 12.5,
+    "tr_2y": 82.8,
+    "tr_3y": 111.2,
+    "excess_6m": -17.2,
+    "excess_1y": -2.7,
+    "excess_2y": 40.2,
+    "excess_3y": 67.2,
+    "avg_m12_m24": 41.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767360,7 +768335,20 @@
    "cons_return_2yr": 147.3,
    "path": "staging/retrospective/UNH/2009-06-12",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 25.9,
+    "tr_1y": 27.3,
+    "tr_2y": 107.0,
+    "tr_3y": 143.8,
+    "excess_6m": 8.0,
+    "excess_1y": 9.8,
+    "excess_2y": 68.1,
+    "excess_3y": 96.6,
+    "avg_m12_m24": 59.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767379,7 +768367,20 @@
    "cons_return_2yr": 135.4,
    "path": "staging/retrospective/UNH/2009-06-19",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 24.0,
+    "tr_1y": 23.8,
+    "tr_2y": 99.2,
+    "tr_3y": 142.4,
+    "excess_6m": 3.1,
+    "excess_1y": 0.1,
+    "excess_2y": 56.2,
+    "excess_3y": 87.1,
+    "avg_m12_m24": 53.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767398,7 +768399,20 @@
    "cons_return_2yr": 141.7,
    "path": "staging/retrospective/UNH/2009-06-26",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 27.9,
+    "tr_1y": 21.3,
+    "tr_2y": 106.5,
+    "tr_3y": 143.0,
+    "excess_6m": 4.2,
+    "excess_1y": 1.5,
+    "excess_2y": 63.5,
+    "excess_3y": 91.4,
+    "avg_m12_m24": 58.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767417,7 +768431,20 @@
    "cons_return_2yr": 150.4,
    "path": "staging/retrospective/UNH/2009-07-02",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 27.5,
+    "tr_1y": 19.0,
+    "tr_2y": 125.1,
+    "tr_3y": 141.1,
+    "excess_6m": 2.2,
+    "excess_1y": 2.9,
+    "excess_2y": 70.9,
+    "excess_3y": 81.1,
+    "avg_m12_m24": 66.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767436,7 +768463,20 @@
    "cons_return_2yr": 142.7,
    "path": "staging/retrospective/UNH/2009-07-10",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 32.5,
+    "tr_1y": 22.1,
+    "tr_2y": 113.9,
+    "tr_3y": 131.4,
+    "excess_6m": 1.0,
+    "excess_1y": -3.0,
+    "excess_2y": 56.0,
+    "excess_3y": 70.7,
+    "avg_m12_m24": 62.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767455,7 +768495,20 @@
    "cons_return_2yr": 138.6,
    "path": "staging/retrospective/UNH/2009-07-17",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 34.5,
+    "tr_1y": 21.5,
+    "tr_2y": 109.9,
+    "tr_3y": 128.4,
+    "excess_6m": 12.6,
+    "excess_1y": 6.0,
+    "excess_2y": 65.2,
+    "excess_3y": 75.8,
+    "avg_m12_m24": 61.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767474,7 +768527,20 @@
    "cons_return_2yr": 134.1,
    "path": "staging/retrospective/UNH/2009-07-22",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 27.5,
+    "tr_1y": 19.8,
+    "tr_2y": 105.5,
+    "tr_3y": 118.5,
+    "excess_6m": 12.1,
+    "excess_1y": 3.1,
+    "excess_2y": 59.9,
+    "excess_3y": 68.1,
+    "avg_m12_m24": 57.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767493,7 +768559,20 @@
    "cons_return_2yr": 116.9,
    "path": "staging/retrospective/UNH/2009-07-31",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 17.6,
+    "tr_1y": 9.1,
+    "tr_2y": 79.3,
+    "tr_3y": 94.8,
+    "excess_6m": 7.8,
+    "excess_1y": -4.7,
+    "excess_2y": 43.9,
+    "excess_3y": 47.1,
+    "avg_m12_m24": 47.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767512,7 +768591,20 @@
    "cons_return_2yr": 129.6,
    "path": "staging/retrospective/UNH/2009-08-07",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 22.7,
+    "tr_1y": 26.8,
+    "tr_2y": 74.5,
+    "tr_3y": 103.5,
+    "excess_6m": 16.3,
+    "excess_1y": 13.6,
+    "excess_2y": 51.3,
+    "excess_3y": 57.6,
+    "avg_m12_m24": 57.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767531,7 +768623,20 @@
    "cons_return_2yr": 116.9,
    "path": "staging/retrospective/UNH/2009-08-14",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 14.7,
+    "tr_1y": 14.7,
+    "tr_2y": 62.2,
+    "tr_3y": 90.2,
+    "excess_6m": 6.4,
+    "excess_1y": 5.1,
+    "excess_2y": 40.5,
+    "excess_3y": 43.3,
+    "avg_m12_m24": 49.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767550,7 +768655,20 @@
    "cons_return_2yr": 110.5,
    "path": "staging/retrospective/UNH/2009-08-21",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 10.4,
+    "tr_1y": 9.8,
+    "tr_2y": 52.2,
+    "tr_3y": 89.5,
+    "excess_6m": 1.4,
+    "excess_1y": 3.4,
+    "excess_2y": 38.4,
+    "excess_3y": 44.8,
+    "avg_m12_m24": 45.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767569,7 +768687,20 @@
    "cons_return_2yr": 104.0,
    "path": "staging/retrospective/UNH/2009-08-28",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 20.2,
+    "tr_1y": 15.4,
+    "tr_2y": 64.7,
+    "tr_3y": 97.7,
+    "excess_6m": 12.0,
+    "excess_1y": 10.0,
+    "excess_2y": 46.2,
+    "excess_3y": 54.0,
+    "avg_m12_m24": 50.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767588,7 +768719,20 @@
    "cons_return_2yr": 99.0,
    "path": "staging/retrospective/UNH/2009-09-04",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 14.1,
+    "tr_1y": 18.0,
+    "tr_2y": 61.3,
+    "tr_3y": 93.8,
+    "excess_6m": 2.7,
+    "excess_1y": 7.2,
+    "excess_2y": 41.4,
+    "excess_3y": 48.5,
+    "avg_m12_m24": 47.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767607,7 +768751,20 @@
    "cons_return_2yr": 97.7,
    "path": "staging/retrospective/UNH/2009-09-11",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 15.2,
+    "tr_1y": 19.6,
+    "tr_2y": 59.5,
+    "tr_3y": 86.4,
+    "excess_6m": 4.0,
+    "excess_1y": 11.2,
+    "excess_2y": 44.6,
+    "excess_3y": 42.2,
+    "avg_m12_m24": 47.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767626,7 +768783,20 @@
    "cons_return_2yr": 101.1,
    "path": "staging/retrospective/UNH/2009-09-18",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 17.5,
+    "tr_1y": 20.4,
+    "tr_2y": 80.6,
+    "tr_3y": 98.5,
+    "excess_6m": 7.3,
+    "excess_1y": 12.9,
+    "excess_2y": 62.4,
+    "excess_3y": 54.8,
+    "avg_m12_m24": 51.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767645,7 +768815,20 @@
    "cons_return_2yr": 126.9,
    "path": "staging/retrospective/UNH/2009-09-25",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 30.7,
+    "tr_1y": 42.1,
+    "tr_2y": 91.2,
+    "tr_3y": 128.1,
+    "excess_6m": 18.0,
+    "excess_1y": 30.1,
+    "excess_2y": 78.1,
+    "excess_3y": 83.0,
+    "avg_m12_m24": 71.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767664,7 +768847,20 @@
    "cons_return_2yr": 136.8,
    "path": "staging/retrospective/UNH/2009-10-02",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 36.0,
+    "tr_1y": 47.1,
+    "tr_2y": 93.5,
+    "tr_3y": 140.6,
+    "excess_6m": 20.0,
+    "excess_1y": 33.1,
+    "excess_2y": 78.5,
+    "excess_3y": 92.2,
+    "avg_m12_m24": 80.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767683,7 +768879,20 @@
    "cons_return_2yr": 133.0,
    "path": "staging/retrospective/UNH/2009-10-09",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 30.9,
+    "tr_1y": 40.4,
+    "tr_2y": 85.4,
+    "tr_3y": 139.5,
+    "excess_6m": 18.4,
+    "excess_1y": 29.7,
+    "excess_2y": 73.2,
+    "excess_3y": 98.0,
+    "avg_m12_m24": 77.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767702,7 +768911,20 @@
    "cons_return_2yr": 135.1,
    "path": "staging/retrospective/UNH/2009-10-16",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 25.8,
+    "tr_1y": 48.3,
+    "tr_2y": 96.6,
+    "tr_3y": 139.2,
+    "excess_6m": 15.2,
+    "excess_1y": 38.2,
+    "excess_2y": 79.8,
+    "excess_3y": 98.7,
+    "avg_m12_m24": 80.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767721,7 +768943,20 @@
    "cons_return_2yr": 134.4,
    "path": "staging/retrospective/UNH/2009-10-21",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 20.6,
+    "tr_1y": 46.4,
+    "tr_2y": 94.2,
+    "tr_3y": 128.0,
+    "excess_6m": 8.1,
+    "excess_1y": 35.2,
+    "excess_2y": 75.3,
+    "excess_3y": 88.5,
+    "avg_m12_m24": 76.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767740,7 +768975,20 @@
    "cons_return_2yr": 126.9,
    "path": "staging/retrospective/UNH/2009-10-30",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 16.9,
+    "tr_1y": 40.0,
+    "tr_2y": 91.5,
+    "tr_3y": 121.1,
+    "excess_6m": 1.2,
+    "excess_1y": 23.5,
+    "excess_2y": 62.9,
+    "excess_3y": 77.4,
+    "avg_m12_m24": 71.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767759,7 +769007,20 @@
    "cons_return_2yr": 105.4,
    "path": "staging/retrospective/UNH/2009-11-06",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 2.1,
+    "tr_1y": 29.5,
+    "tr_2y": 62.0,
+    "tr_3y": 102.3,
+    "excess_6m": -4.3,
+    "excess_1y": 12.9,
+    "excess_2y": 40.5,
+    "excess_3y": 61.8,
+    "avg_m12_m24": 56.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767778,7 +769039,20 @@
    "cons_return_2yr": 102.5,
    "path": "staging/retrospective/UNH/2009-11-13",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 3.9,
+    "tr_1y": 27.1,
+    "tr_2y": 65.0,
+    "tr_3y": 85.0,
+    "excess_6m": -2.9,
+    "excess_1y": 15.4,
+    "excess_2y": 45.2,
+    "excess_3y": 52.4,
+    "avg_m12_m24": 54.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767797,7 +769071,20 @@
    "cons_return_2yr": 106.2,
    "path": "staging/retrospective/UNH/2009-11-20",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 1.5,
+    "tr_1y": 27.0,
+    "tr_2y": 59.0,
+    "tr_3y": 91.7,
+    "excess_6m": 2.3,
+    "excess_1y": 15.1,
+    "excess_2y": 43.3,
+    "excess_3y": 57.6,
+    "avg_m12_m24": 58.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767816,7 +769103,20 @@
    "cons_return_2yr": 100.0,
    "path": "staging/retrospective/UNH/2009-11-27",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -0.3,
+    "tr_1y": 22.8,
+    "tr_2y": 51.2,
+    "tr_3y": 84.1,
+    "excess_6m": -2.4,
+    "excess_1y": 12.4,
+    "excess_2y": 40.8,
+    "excess_3y": 49.2,
+    "avg_m12_m24": 53.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767835,7 +769135,20 @@
    "cons_return_2yr": 114.4,
    "path": "staging/retrospective/UNH/2009-12-04",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 11.1,
+    "tr_1y": 39.2,
+    "tr_2y": 78.8,
+    "tr_3y": 100.8,
+    "excess_6m": 13.9,
+    "excess_1y": 26.5,
+    "excess_2y": 62.1,
+    "excess_3y": 66.8,
+    "avg_m12_m24": 65.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767854,7 +769167,20 @@
    "cons_return_2yr": 93.2,
    "path": "staging/retrospective/UNH/2009-12-11",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 1.1,
+    "tr_1y": 21.6,
+    "tr_2y": 63.8,
+    "tr_3y": 85.6,
+    "excess_6m": 1.5,
+    "excess_1y": 7.6,
+    "excess_2y": 46.2,
+    "excess_3y": 49.8,
+    "avg_m12_m24": 49.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767873,7 +769199,20 @@
    "cons_return_2yr": 86.7,
    "path": "staging/retrospective/UNH/2009-12-18",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -0.2,
+    "tr_1y": 12.4,
+    "tr_2y": 58.6,
+    "tr_3y": 80.0,
+    "excess_6m": -2.5,
+    "excess_1y": -2.4,
+    "excess_2y": 43.9,
+    "excess_3y": 41.8,
+    "avg_m12_m24": 45.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767892,7 +769231,20 @@
    "cons_return_2yr": 85.9,
    "path": "staging/retrospective/UNH/2009-12-24",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -5.6,
+    "tr_1y": 14.2,
+    "tr_2y": 65.3,
+    "tr_3y": 78.9,
+    "excess_6m": -2.0,
+    "excess_1y": 0.5,
+    "excess_2y": 48.6,
+    "excess_3y": 45.3,
+    "avg_m12_m24": 45.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
@@ -767911,7 +769263,20 @@
    "cons_return_2yr": 93.2,
    "path": "staging/retrospective/UNH/2009-12-31",
    "generated": "2026-11-24",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -6.3,
+    "tr_1y": 19.2,
+    "tr_2y": 69.6,
+    "tr_3y": 82.7,
+    "excess_6m": 0.2,
+    "excess_1y": 4.4,
+    "excess_2y": 52.7,
+    "excess_3y": 49.9,
+    "avg_m12_m24": 52.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNP",
