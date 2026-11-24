@@ -25608,7 +25608,15 @@ Controls and checks (before any outcome):
   their live dates (2015-01-02, 2015-08-07, 2015-12-18); the FY2018 range, Banmédica, Surgical Care Affiliates, OptumCare and Optum360
   appear in no model.
 - **Regression:** the 314 models of 2008-2013 rebuild byte for byte; no other ticker's code changes (the firewall tool gains a UNH plant).
-- **Firewall** (run after the build, checks and README section were committed, before any 2014-2017 outcome): pending.
+- **Firewall** (run after the build, checks and README section were committed, before any 2014-2017 outcome): it passes at all 27
+  cutoffs above (2014-01-01, every print, 10-K and guidance 8-K date of the range, and 2018-01-01: 314 to 522 dates each), 0 files changed
+  and no planted text. The planted facts are the 2010-2013 batch's (a print with absurd figures and full-year actuals, a later Q4 print
+  excluding its own year, a later restatement of the last print before the cutoff, later guides with every field, a derived margin from a
+  point and from a range, and a loss range, a later annual dividend rate, a later vintage with every quoted text and figure planted, a
+  company name and prices from the cutoff multiplied by 10), with planted cloud words on the later vintage. As positive controls, a
+  planted print dated 2016-05-31 with its own source reaches 2016-06-03 (its text in the model) and not 2016-05-27 (byte-identical); the
+  same print citing a source published after AS_OF (the Q2 2016 release of 2016-07-19) stops at the builder's check that every source is
+  public on AS_OF. A full rebuild after the runs is byte-identical.
 
 Seen in the build (method behaviour, not tuned):
 The ten-year window keeps 2008-2013's low multiples through 2017 (its median is 11.3-11.4x and the EPP floor 9x on every date) while
