@@ -109,3 +109,212 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2009-12-18 | $31.54 | - | 2.00 | +0.95 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +58.6% | +43.9pp | +45.7% | ✓ |
 | 2009-12-24 | $31.68 | - | 2.00 | +0.94 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +65.3% | +48.6pp | +45.8% | ✓ |
 | 2009-12-31 | $30.48 | - | 2.00 | +0.98 | 0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +69.6% | +52.7pp | +52.3% | ✓ |
+| 2010-01-08 | $32.70 | - | 2.00 | +0.91 | 0.18x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +64.5% | +48.8pp | +42.9% | ✓ |
+| 2010-01-15 | $33.75 | - | 2.00 | +0.88 | 0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +59.2% | +41.5pp | +39.3% | ✓ |
+| 2010-01-22 | $33.16 | - | 2.30 | +1.12 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +60.7% | +35.4pp | +42.3% | ✓ |
+| 2010-01-29 | $33.00 | - | 2.30 | +1.12 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +57.7% | +30.4pp | +43.7% | ✓ |
+| 2010-02-05 | $32.54 | - | 2.30 | +1.14 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +60.8% | +30.1pp | +46.3% | ✓ |
+| 2010-02-12 | $32.18 | - | 2.30 | +1.14 | 0.21x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +68.9% | +40.0pp | +48.6% | ✓ |
+| 2010-02-19 | $31.94 | - | 2.30 | +1.15 | 0.21x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +74.4% | +47.3pp | +50.4% | ✓ |
+| 2010-02-26 | $33.86 | - | 2.30 | +1.09 | 0.25x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +67.4% | +39.3pp | +42.5% | ✓ |
+| 2010-03-05 | $33.74 | - | 2.30 | +1.09 | 0.24x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +66.6% | +42.7pp | +43.8% | ✓ |
+| 2010-03-12 | $32.91 | - | 2.30 | +1.12 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +70.8% | +47.4pp | +48.1% | ✓ |
+| 2010-03-19 | $34.39 | - | 2.30 | +1.07 | 0.26x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +66.7% | +40.9pp | +42.5% | ✓ |
+| 2010-03-26 | $32.63 | - | 2.30 | +1.13 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +72.5% | +46.7pp | +50.8% | ✓ |
+| 2010-04-01 | $32.99 | - | 2.30 | +1.11 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +82.2% | +58.4pp | +49.8% | ✓ |
+| 2010-04-09 | $32.26 | - | 2.30 | +1.14 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +83.8% | +64.0pp | +54.1% | ✓ |
+| 2010-04-16 | $30.73 | - | 2.30 | +1.19 | 0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +90.4% | +71.4pp | +62.6% | ✓ |
+| 2010-04-21 | $30.26 | - | 2.00 | +0.95 | 0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +100.5% | +82.0pp | +65.9% | ✓ |
+| 2010-04-30 | $30.31 | - | 2.00 | +0.95 | 0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +89.1% | +67.1pp | +66.3% | ✓ |
+| 2010-05-07 | $29.02 | - | 2.00 | +0.99 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +94.4% | +66.7pp | +74.2% | ✓ |
+| 2010-05-14 | $30.39 | - | 2.00 | +0.95 | 0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +85.3% | +63.2pp | +66.6% | ✓ |
+| 2010-05-21 | $28.70 | - | 2.00 | +1.00 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +97.6% | +72.1pp | +76.8% | ✓ |
+| 2010-05-28 | $29.07 | - | 2.00 | +0.99 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +97.0% | +71.7pp | +75.0% | ✓ |
+| 2010-06-04 | $30.34 | - | 2.00 | +0.95 | 0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +84.4% | +59.8pp | +68.1% | ✓ |
+| 2010-06-11 | $30.67 | - | 2.00 | +0.94 | 0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +90.7% | +66.3pp | +66.8% | ✓ |
+| 2010-06-18 | $31.33 | - | 2.00 | +0.92 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +93.6% | +68.7pp | +63.9% | ✓ |
+| 2010-06-25 | $29.88 | - | 2.00 | +0.96 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +97.2% | +70.7pp | +72.3% | ✓ |
+| 2010-07-02 | $28.30 | - | 2.00 | +1.01 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +103.2% | +64.6pp | +82.4% | ✓ |
+| 2010-07-09 | $29.97 | - | 2.00 | +0.96 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +91.3% | +61.2pp | +72.4% | ✓ |
+| 2010-07-16 | $30.34 | - | 2.00 | +0.94 | 0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +85.9% | +54.1pp | +70.6% | ✓ |
+| 2010-07-21 | $30.70 | - | 2.35 | +1.36 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +84.5% | +52.3pp | +68.8% | ✓ |
+| 2010-07-30 | $30.45 | - | 2.35 | +1.37 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +79.0% | +48.6pp | +70.3% | ✓ |
+| 2010-08-06 | $33.45 | - | 2.35 | +1.28 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +56.2% | +27.4pp | +55.3% | ✓ |
+| 2010-08-13 | $32.03 | - | 2.35 | +1.32 | 0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +65.9% | +31.2pp | +62.8% | ✓ |
+| 2010-08-20 | $31.61 | - | 2.35 | +1.33 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +72.2% | +35.2pp | +65.4% | ✓ |
+| 2010-08-27 | $32.37 | - | 2.35 | +1.31 | 0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +72.5% | +35.3pp | +62.1% | ✓ |
+| 2010-09-03 | $33.91 | - | 2.35 | +1.26 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +63.8% | +31.9pp | +55.2% | ✓ |
+| 2010-09-10 | $34.49 | - | 2.35 | +1.24 | 0.18x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +59.0% | +25.7pp | +52.9% | ✓ |
+| 2010-09-17 | $34.13 | - | 2.35 | +1.26 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +63.5% | +29.0pp | +54.8% | ✓ |
+| 2010-09-24 | $35.73 | - | 2.35 | +1.21 | 0.20x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +60.4% | +28.9pp | +48.3% | ✓ |
+| 2010-10-01 | $35.43 | - | 2.35 | +1.21 | 0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +63.1% | +32.5pp | +50.0% | ✓ |
+| 2010-10-08 | $34.35 | - | 2.35 | +1.25 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +71.6% | +42.0pp | +55.5% | ✓ |
+| 2010-10-15 | $35.98 | - | 2.35 | +1.19 | 0.20x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +63.5% | +36.5pp | +49.0% | ✓ |
+| 2010-10-20 | $36.73 | - | 2.35 | +1.30 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +55.2% | +29.0pp | +46.4% | ✓ |
+| 2010-10-29 | $36.05 | - | 2.35 | +1.32 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +58.4% | +34.6pp | +49.6% | ✓ |
+| 2010-11-05 | $36.86 | - | 2.35 | +1.29 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +53.6% | +33.7pp | +46.9% | ✓ |
+| 2010-11-12 | $36.67 | - | 2.35 | +1.30 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +46.0% | +26.5pp | +48.0% | ✓ |
+| 2010-11-19 | $36.00 | - | 2.35 | +1.31 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +50.7% | +30.6pp | +51.2% | ✓ |
+| 2010-11-26 | $35.88 | - | 2.35 | +1.32 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +52.9% | +29.7pp | +52.1% | ✓ |
+| 2010-12-03 | $37.82 | - | 2.35 | +1.27 | 0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +45.7% | +26.2pp | +44.6% | ✓ |
+| 2010-12-10 | $36.67 | - | 2.35 | +1.29 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +51.6% | +32.9pp | +49.4% | ✓ |
+| 2010-12-17 | $35.05 | - | 2.35 | +1.34 | 0.15x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +59.1% | +39.7pp | +56.7% | ✓ |
+| 2010-12-23 | $35.77 | - | 2.35 | +1.31 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +57.8% | +39.6pp | +53.8% | ✓ |
+| 2010-12-31 | $36.11 | - | 2.35 | +1.31 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +53.1% | +37.2pp | +52.5% | ✓ |
+| 2011-01-07 | $38.45 | - | 2.35 | +1.23 | 0.20x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +39.2% | +19.9pp | +43.2% | ✓ |
+| 2011-01-14 | $40.77 | - | 2.35 | +1.17 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +34.4% | +16.3pp | +35.1% | ✓ |
+| 2011-01-21 | $40.41 | - | 2.20 | +0.96 | 0.28x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +38.5% | +18.5pp | +36.3% | ✓ |
+| 2011-01-28 | $40.93 | - | 2.20 | +0.95 | 0.30x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +39.8% | +17.9pp | +34.8% | ✓ |
+| 2011-02-04 | $42.49 | - | 2.20 | +0.90 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +34.5% | +16.2pp | +30.1% | ✓ |
+| 2011-02-11 | $42.38 | - | 2.20 | +0.91 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +38.1% | +19.8pp | +30.6% | ✓ |
+| 2011-02-18 | $42.84 | - | 2.20 | +0.89 | 0.35x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +37.1% | +19.8pp | +29.3% | ✓ |
+| 2011-02-25 | $42.52 | - | 2.20 | +0.90 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +28.7% | +11.8pp | +30.3% | ✓ |
+| 2011-03-04 | $44.45 | - | 2.20 | +0.84 | 0.38x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +22.9% | +3.1pp | +24.5% | ✓ |
+| 2011-03-11 | $43.59 | - | 2.20 | +0.86 | 0.36x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +27.3% | +3.7pp | +26.9% | ✓ |
+| 2011-03-18 | $42.60 | - | 2.20 | +0.89 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +32.6% | +6.8pp | +29.8% | ✓ |
+| 2011-03-25 | $43.75 | - | 2.20 | +0.86 | 0.37x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +28.8% | +6.4pp | +26.4% | ✓ |
+| 2011-04-01 | $45.61 | - | 2.20 | +0.79 | 0.41x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +32.6% | +11.0pp | +21.3% | ✓ |
+| 2011-04-08 | $44.38 | - | 2.20 | +0.84 | 0.38x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +42.8% | +20.9pp | +24.8% | ✓ |
+| 2011-04-15 | $44.98 | - | 2.20 | +0.81 | 0.39x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +40.3% | +18.4pp | +23.3% | ✓ |
+| 2011-04-21 | $47.81 | - | 2.15 | +0.63 | 0.36x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +28.7% | +8.2pp | +16.1% | ✓ |
+| 2011-04-29 | $49.23 | - | 2.15 | +0.57 | 0.38x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +25.0% | +3.9pp | +12.8% | ✓ |
+| 2011-05-06 | $50.12 | - | 2.15 | +0.53 | 0.40x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +23.1% | -1.8pp | +11.0% | ✗ |
+| 2011-05-13 | $49.95 | - | 2.15 | +0.53 | 0.40x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +27.9% | +1.6pp | +11.6% | ✓ |
+| 2011-05-20 | $49.74 | - | 2.15 | +0.54 | 0.40x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +28.8% | -0.5pp | +12.4% | ✗ |
+| 2011-05-27 | $48.30 | - | 2.15 | +0.60 | 0.37x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +31.6% | +3.4pp | +16.0% | ✓ |
+| 2011-06-03 | $48.85 | - | 2.15 | +0.58 | 0.38x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +31.3% | +0.8pp | +15.0% | ✓ |
+| 2011-06-10 | $49.41 | - | 2.15 | +0.54 | 0.39x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +31.6% | -2.1pp | +13.9% | ✗ |
+| 2011-06-17 | $49.96 | - | 2.15 | +0.51 | 0.41x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +32.1% | -1.4pp | +12.9% | ✗ |
+| 2011-06-24 | $50.46 | - | 2.15 | +0.48 | 0.42x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +31.3% | +2.7pp | +11.9% | ✓ |
+| 2011-07-01 | $53.13 | - | 2.15 | +0.41 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +26.6% | +1.6pp | +6.6% | ✓ |
+| 2011-07-08 | $52.08 | - | 2.15 | +0.43 | 0.46x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +32.8% | +6.4pp | +9.0% | ✓ |
+| 2011-07-15 | $51.97 | - | 2.15 | +0.43 | 0.45x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +33.2% | +1.0pp | +9.7% | ✓ |
+| 2011-07-20 | $51.51 | - | 2.15 | +0.54 | 0.39x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +41.9% | +9.8pp | +11.1% | ✓ |
+| 2011-07-29 | $49.63 | - | 2.15 | +0.62 | 0.36x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +49.9% | +14.9pp | +16.2% | ✓ |
+| 2011-08-05 | $45.56 | - | 2.15 | +0.76 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +64.5% | +17.4pp | +27.6% | ✓ |
+| 2011-08-12 | $44.81 | - | 2.15 | +0.79 | 0.27x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +65.2% | +16.9pp | +30.6% | ✓ |
+| 2011-08-19 | $43.32 | - | 2.15 | +0.84 | 0.25x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +69.3% | +17.6pp | +36.0% | ✓ |
+| 2011-08-26 | $45.72 | - | 2.15 | +0.75 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +61.9% | +16.0pp | +29.7% | ✓ |
+| 2011-09-02 | $45.73 | - | 2.15 | +0.75 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +60.1% | +16.1pp | +30.3% | ✓ |
+| 2011-09-09 | $45.52 | - | 2.15 | +0.75 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +66.3% | +16.5pp | +31.7% | ✓ |
+| 2011-09-16 | $50.76 | - | 2.15 | +0.55 | 0.38x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +51.4% | +6.8pp | +18.9% | ✓ |
+| 2011-09-23 | $47.60 | - | 2.15 | +0.68 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +54.5% | -0.6pp | +27.6% | ✓ |
+| 2011-09-30 | $46.12 | - | 2.15 | +0.73 | 0.30x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +59.0% | +5.0pp | +32.3% | ✓ |
+| 2011-10-07 | $44.89 | - | 2.15 | +0.77 | 0.28x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +64.6% | +14.5pp | +36.7% | ✓ |
+| 2011-10-14 | $47.22 | - | 2.15 | +0.69 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +61.9% | +17.4pp | +30.6% | ✓ |
+| 2011-10-19 | $46.45 | - | 2.00 | +0.64 | 0.27x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +51.8% | +2.6pp | +33.3% | ✓ |
+| 2011-10-28 | $48.85 | - | 2.00 | +0.55 | 0.30x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +40.6% | -1.3pp | +27.3% | ✓ |
+| 2011-11-04 | $45.58 | - | 2.00 | +0.71 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +55.1% | +9.2pp | +36.9% | ✓ |
+| 2011-11-11 | $47.13 | - | 2.00 | +0.65 | 0.26x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +53.3% | +8.3pp | +33.0% | ✓ |
+| 2011-11-18 | $44.55 | - | 2.00 | +0.73 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +64.8% | +12.6pp | +41.6% | ✓ |
+| 2011-11-25 | $43.67 | - | 2.00 | +0.76 | 0.21x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +73.6% | +13.0pp | +45.2% | ✓ |
+| 2011-12-02 | $48.23 | - | 2.00 | +0.60 | 0.28x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +57.4% | +7.8pp | +32.3% | ✓ |
+| 2011-12-09 | $48.91 | - | 2.00 | +0.58 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +54.5% | +5.7pp | +31.2% | ✓ |
+| 2011-12-16 | $49.00 | - | 2.00 | +0.56 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +48.8% | -3.1pp | +31.7% | ✓ |
+| 2011-12-23 | $51.35 | - | 2.00 | +0.48 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +48.4% | -1.1pp | +26.4% | ✓ |
+| 2011-12-30 | $50.68 | - | 2.00 | +0.50 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +51.2% | -0.4pp | +28.7% | ✓ |
+| 2012-01-06 | $52.78 | - | 2.00 | +0.41 | 0.36x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +44.2% | -3.7pp | +24.2% | ✓ |
+| 2012-01-13 | $52.70 | - | 2.00 | +0.41 | 0.36x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +43.8% | -2.2pp | +25.3% | ✓ |
+| 2012-01-20 | $52.27 | - | 2.00 | +0.66 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +42.3% | -1.8pp | +27.0% | ✓ |
+| 2012-01-27 | $51.02 | - | 2.00 | +0.69 | 0.31x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +44.1% | +4.1pp | +30.6% | ✓ |
+| 2012-02-03 | $51.31 | - | 2.00 | +0.68 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +41.5% | +7.2pp | +30.5% | ✓ |
+| 2012-02-10 | $53.32 | - | 2.00 | +0.63 | 0.37x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +34.3% | -4.5pp | +26.1% | ✓ |
+| 2012-02-17 | $54.68 | - | 2.00 | +0.60 | 0.40x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +37.8% | -1.8pp | +23.5% | ✓ |
+| 2012-02-24 | $55.65 | - | 2.00 | +0.57 | 0.42x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +39.9% | +0.2pp | +21.9% | ✓ |
+| 2012-03-02 | $55.84 | - | 2.00 | +0.57 | 0.42x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +41.4% | +1.0pp | +22.2% | ✓ |
+| 2012-03-09 | $55.78 | - | 2.00 | +0.56 | 0.42x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +41.8% | +0.3pp | +23.2% | ✓ |
+| 2012-03-16 | $55.59 | - | 2.00 | +0.57 | 0.41x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +39.7% | +3.9pp | +24.4% | ✓ |
+| 2012-03-23 | $53.66 | - | 2.00 | +0.62 | 0.38x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +55.3% | +17.2pp | +29.8% | ✓ |
+| 2012-03-30 | $58.94 | - | 2.00 | +0.47 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +41.8% | +5.4pp | +19.0% | ✓ |
+| 2012-04-05 | $59.01 | - | 2.00 | +0.46 | 0.49x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +41.5% | +3.4pp | +19.5% | ✓ |
+| 2012-04-13 | $58.05 | - | 2.00 | +0.49 | 0.47x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +39.4% | +2.2pp | +22.1% | ✓ |
+| 2012-04-20 | $59.51 | - | 1.85 | +0.44 | 0.44x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +30.7% | -9.3pp | +19.6% | ✗ |
+| 2012-04-27 | $57.91 | - | 1.85 | +0.48 | 0.41x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +34.1% | -3.4pp | +23.5% | ✓ |
+| 2012-05-04 | $54.72 | - | 1.85 | +0.56 | 0.36x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +40.7% | -1.4pp | +31.3% | ✓ |
+| 2012-05-11 | $55.20 | - | 1.85 | +0.55 | 0.37x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +43.0% | -0.5pp | +30.7% | ✓ |
+| 2012-05-18 | $53.99 | - | 1.85 | +0.58 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +45.6% | -4.5pp | +34.1% | ✓ |
+| 2012-05-25 | $56.12 | - | 1.85 | +0.51 | 0.39x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +43.9% | -5.3pp | +29.6% | ✓ |
+| 2012-06-01 | $55.04 | - | 1.85 | +0.54 | 0.37x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +48.3% | -7.3pp | +32.6% | ✓ |
+| 2012-06-08 | $58.00 | - | 1.85 | +0.47 | 0.42x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +41.2% | -10.6pp | +26.4% | ✓ |
+| 2012-06-15 | $58.90 | - | 1.85 | +0.44 | 0.44x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +38.1% | -11.1pp | +25.0% | ✓ |
+| 2012-06-22 | $59.07 | - | 1.85 | +0.43 | 0.45x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +41.4% | -10.6pp | +25.2% | ✓ |
+| 2012-06-29 | $58.50 | - | 1.85 | +0.44 | 0.44x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +43.8% | -5.1pp | +27.0% | ✓ |
+| 2012-07-06 | $55.82 | - | 1.85 | +0.52 | 0.38x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +53.1% | +1.8pp | +33.5% | ✓ |
+| 2012-07-13 | $55.20 | - | 1.85 | +0.53 | 0.38x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +54.0% | +4.1pp | +35.6% | ✓ |
+| 2012-07-20 | $55.41 | - | 2.00 | +0.71 | 0.36x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +58.2% | +8.2pp | +35.6% | ✓ |
+| 2012-07-27 | $53.34 | - | 2.00 | +0.77 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +62.8% | +15.2pp | +41.4% | ✓ |
+| 2012-08-03 | $51.61 | - | 2.00 | +0.81 | 0.30x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +62.0% | +18.9pp | +46.5% | ✓ |
+| 2012-08-10 | $51.90 | - | 2.00 | +0.81 | 0.31x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +58.5% | +16.4pp | +46.0% | ✓ |
+| 2012-08-17 | $53.13 | - | 2.00 | +0.77 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +57.4% | +14.8pp | +42.9% | ✓ |
+| 2012-08-24 | $54.16 | - | 2.00 | +0.74 | 0.35x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +58.6% | +13.0pp | +40.6% | ✓ |
+| 2012-08-31 | $54.30 | - | 2.00 | +0.73 | 0.35x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +63.6% | +16.5pp | +40.8% | ✓ |
+| 2012-09-07 | $54.88 | - | 2.00 | +0.71 | 0.36x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +63.8% | +19.7pp | +39.7% | ✓ |
+| 2012-09-14 | $54.25 | - | 2.00 | +0.72 | 0.36x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +63.1% | +23.2pp | +41.8% | ✓ |
+| 2012-09-21 | $56.18 | - | 2.00 | +0.66 | 0.39x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +60.4% | +17.9pp | +37.4% | ✓ |
+| 2012-09-28 | $55.41 | - | 2.00 | +0.68 | 0.38x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +60.4% | +18.1pp | +39.9% | ✓ |
+| 2012-10-05 | $57.13 | - | 2.00 | +0.63 | 0.41x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +54.6% | +15.3pp | +36.1% | ✓ |
+| 2012-10-12 | $57.07 | - | 2.00 | +0.62 | 0.42x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +53.6% | +15.3pp | +36.7% | ✓ |
+| 2012-10-17 | $55.99 | - | 2.35 | +1.07 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +61.6% | +27.8pp | +39.7% | ✓ |
+| 2012-10-26 | $55.78 | - | 2.35 | +1.09 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +68.4% | +24.4pp | +41.1% | ✓ |
+| 2012-11-02 | $56.05 | - | 2.35 | +1.07 | 0.35x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +73.6% | +26.2pp | +41.3% | ✓ |
+| 2012-11-09 | $52.90 | - | 2.35 | +1.17 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +81.3% | +29.0pp | +50.7% | ✓ |
+| 2012-11-16 | $51.90 | - | 2.35 | +1.18 | 0.28x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +87.7% | +32.7pp | +54.5% | ✓ |
+| 2012-11-23 | $53.92 | - | 2.35 | +1.12 | 0.31x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +83.6% | +32.4pp | +49.6% | ✓ |
+| 2012-11-30 | $54.39 | - | 2.35 | +1.10 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +85.6% | +34.8pp | +49.0% | ✓ |
+| 2012-12-07 | $53.87 | - | 2.35 | +1.11 | 0.31x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +90.8% | +39.8pp | +51.4% | ✓ |
+| 2012-12-14 | $54.05 | - | 2.35 | +1.11 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +87.3% | +40.9pp | +52.0% | ✓ |
+| 2012-12-21 | $55.03 | - | 2.35 | +1.07 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +90.7% | +41.0pp | +50.2% | ✓ |
+| 2012-12-28 | $53.86 | - | 2.35 | +1.11 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +95.0% | +41.0pp | +54.3% | ✓ |
+| 2013-01-04 | $52.09 | - | 2.35 | +1.16 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +98.2% | +52.9pp | +60.4% | ✓ |
+| 2013-01-11 | $52.82 | - | 2.35 | +0.93 | 0.30x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +101.0% | +57.3pp | +59.2% | ✓ |
+| 2013-01-18 | $54.56 | - | 2.15 | +0.84 | 0.31x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +98.4% | +57.6pp | +55.2% | ✓ |
+| 2013-01-25 | $56.04 | - | 2.15 | +0.78 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +104.2% | +63.0pp | +52.2% | ✓ |
+| 2013-02-01 | $55.77 | - | 2.15 | +0.80 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +94.9% | +58.3pp | +54.2% | ✓ |
+| 2013-02-08 | $57.74 | - | 2.15 | +0.71 | 0.39x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +90.6% | +50.5pp | +50.2% | ✓ |
+| 2013-02-15 | $57.32 | - | 2.15 | +0.72 | 0.38x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +95.2% | +52.6pp | +52.7% | ✓ |
+| 2013-02-22 | $54.47 | - | 2.15 | +0.81 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +111.3% | +67.5pp | +61.7% | ✓ |
+| 2013-03-01 | $53.52 | - | 2.15 | +0.83 | 0.31x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +116.9% | +73.7pp | +66.0% | ✓ |
+| 2013-03-08 | $53.81 | - | 2.15 | +0.80 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +114.3% | +76.2pp | +66.5% | ✓ |
+| 2013-03-15 | $54.73 | - | 2.15 | +0.75 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +115.4% | +79.1pp | +65.0% | ✓ |
+| 2013-03-22 | $54.46 | - | 2.15 | +0.74 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +123.6% | +83.6pp | +67.3% | ✓ |
+| 2013-03-28 | $57.21 | - | 2.15 | +0.63 | 0.38x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +110.9% | +74.8pp | +60.5% | ✓ |
+| 2013-04-05 | $62.10 | - | 2.15 | +0.45 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +93.2% | +55.4pp | +48.9% | ✓ |
+| 2013-04-12 | $63.03 | - | 2.15 | +0.40 | 0.50x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +93.0% | +56.0pp | +47.9% | ✓ |
+| 2013-04-19 | $60.04 | - | 2.15 | +0.42 | 0.44x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +102.1% | +63.6pp | +56.5% | ✓ |
+| 2013-04-26 | $59.48 | - | 2.15 | +0.44 | 0.43x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +104.0% | +65.5pp | +59.4% | ✓ |
+| 2013-05-03 | $58.92 | - | 2.15 | +0.46 | 0.41x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +96.6% | +61.4pp | +62.3% | ✓ |
+| 2013-05-10 | $62.91 | - | 2.15 | +0.29 | 0.50x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +88.0% | +54.0pp | +53.2% | ✓ |
+| 2013-05-17 | $62.84 | - | 2.15 | +0.28 | 0.50x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +94.1% | +62.4pp | +54.6% | ✓ |
+| 2013-05-24 | $62.06 | - | 2.15 | +0.31 | 0.49x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +96.9% | +63.6pp | +57.9% | ✓ |
+| 2013-05-31 | $62.63 | - | 2.15 | +0.29 | 0.50x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +96.1% | +62.4pp | +57.5% | ✓ |
+| 2013-06-07 | $62.57 | - | 2.15 | +0.28 | 0.50x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +90.4% | +58.6pp | +58.8% | ✓ |
+| 2013-06-14 | $63.80 | - | 2.15 | +0.24 | 0.53x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +88.9% | +55.6pp | +57.0% | ✓ |
+| 2013-06-21 | $63.90 | - | 2.15 | +0.24 | 0.54x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +92.8% | +55.4pp | +58.0% | ✓ |
+| 2013-06-28 | $65.48 | - | 2.15 | +0.20 | 0.58x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +92.6% | +57.0pp | +55.4% | ✓ |
+| 2013-07-05 | $66.17 | - | 2.15 | +0.16 | 0.60x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +88.4% | +56.5pp | +54.7% | ✓ |
+| 2013-07-12 | $68.00 | - | 2.15 | +0.01 | 0.65x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +83.8% | +55.4pp | +51.7% | ✗ |
+| 2013-07-19 | $71.45 | - | 2.00 | -0.21 | 0.74x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +77.3% | +47.2pp | +45.5% | ✗ |
+| 2013-07-26 | $72.21 | - | 2.00 | -0.23 | 0.77x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +67.3% | +39.8pp | +44.9% | ✗ |
+| 2013-08-02 | $72.26 | - | 2.00 | -0.23 | 0.77x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +71.9% | +44.3pp | +45.8% | ✗ |
+| 2013-08-09 | $72.93 | - | 2.00 | -0.25 | 0.80x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +70.9% | +43.6pp | +45.6% | ✗ |
+| 2013-08-16 | $71.43 | - | 2.00 | -0.21 | 0.75x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +73.4% | +42.5pp | +49.8% | ✗ |
+| 2013-08-23 | $72.54 | - | 2.00 | -0.24 | 0.79x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +64.2% | +40.9pp | +48.6% | ✗ |
+| 2013-08-30 | $71.74 | - | 2.00 | -0.23 | 0.77x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +67.4% | +41.0pp | +51.0% | ✗ |
+| 2013-09-06 | $74.06 | - | 2.00 | -0.28 | 0.85x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +55.5% | +35.0pp | +46.9% | ✗ |
+| 2013-09-13 | $74.48 | - | 2.00 | -0.30 | 0.87x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +63.5% | +42.8pp | +46.8% | ✗ |
+| 2013-09-20 | $70.57 | - | 2.00 | -0.20 | 0.74x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +77.9% | +58.8pp | +55.9% | ✗ |
+| 2013-09-27 | $71.99 | - | 2.00 | -0.24 | 0.79x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +65.9% | +47.1pp | +53.8% | ✗ |
+| 2013-10-04 | $72.99 | - | 2.00 | -0.26 | 0.83x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +67.0% | +46.9pp | +52.5% | ✗ |
+| 2013-10-11 | $74.27 | - | 2.00 | -0.30 | 0.88x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +64.7% | +41.9pp | +50.7% | ✗ |
+| 2013-10-18 | $68.76 | - | 2.15 | +0.00 | 0.68x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +78.9% | +57.9pp | +63.9% | ✗ |
+| 2013-10-25 | $67.62 | - | 2.15 | +0.12 | 0.65x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +76.0% | +53.6pp | +67.4% | ✓ |
+| 2013-11-01 | $68.63 | - | 2.15 | +0.09 | 0.69x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +76.1% | +53.6pp | +65.7% | ✓ |
+| 2013-11-08 | $70.50 | - | 2.15 | -0.05 | 0.74x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +67.2% | +44.3pp | +61.9% | ✗ |
+| 2013-11-15 | $71.87 | - | 2.15 | -0.09 | 0.79x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +59.3% | +42.4pp | +59.3% | ✗ |
+| 2013-11-22 | $73.74 | - | 2.15 | -0.14 | 0.86x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +57.4% | +37.3pp | +55.7% | ✗ |
+| 2013-11-29 | $74.48 | - | 2.15 | -0.17 | 0.90x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +57.6% | +37.5pp | +54.5% | ✗ |
+| 2013-12-06 | $73.50 | - | 2.15 | -0.14 | 0.86x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +64.7% | +44.5pp | +57.0% | ✗ |
+| 2013-12-13 | $70.48 | - | 2.15 | -0.06 | 0.75x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +69.2% | +51.5pp | +64.2% | ✗ |
+| 2013-12-20 | $73.35 | - | 2.15 | -0.14 | 0.85x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +62.4% | +47.8pp | +58.3% | ✗ |
+| 2013-12-27 | $74.69 | - | 2.15 | -0.18 | 0.91x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +62.8% | +46.6pp | +55.7% | ✗ |
+| 2013-12-31 | $75.30 | - | 2.15 | -0.20 | 0.93x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +62.3% | +46.4pp | +54.7% | ✗ |
