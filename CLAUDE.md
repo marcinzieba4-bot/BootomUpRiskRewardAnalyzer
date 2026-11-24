@@ -23,10 +23,10 @@ touching either directory.
   outcomes or findings enters another's models. UNP (2008-2026 so far), LOW (2008-2026 so far), AAPL (2008-2026 so far),
   NKE (2008-2026 so far), AVGO (from its 2009-08-06 listing to 2026-10-30 so far), PEP (2008 to 2026-10-30 so far), MSFT
   (2008 to 2026-10-30 so far), XOM (2008 to 2026-10-30 so far), SHW (2008 to 2026-11-06 so far), WMT (2008 to 2026-11-06 so far), RCL (2008 to 2026-11-06 so far), MAR (2008 to 2026-11-03 so far), BKR (2008 to 2017-06-30, then 2019-02-01 to 2026-11-06 so far), PFE (2008 to 2026-11-04 so far), CMCSA (2008 to 2026-11-06 so far), CAT (2008 to 2026-11-06 so far), BMY (2008 to 2026-11-06 so far), NVDA (2008 to 2026-11-06 so far), F (2008-01-04 to 2026-11-06 so far; 2022-01-07 onward was built first at the owner's request, and dates before 2022 are an early era with its
-  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far), SPGI (2008-01-04 to 2026-11-20 so far), CB (2008-01-04 to 2026-11-20 so far) and LLY (2008-01-04 to 2026-11-20 so far) sit in `staging/retrospective/` until the owner adds
+  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far), SPGI (2008-01-04 to 2026-11-20 so far), CB (2008-01-04 to 2026-11-20 so far), LLY (2008-01-04 to 2026-11-20 so far) and UNH (2008-01-04 to 2009-12-31 so far) sit in `staging/retrospective/` until the owner adds
   them to the archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM", "SHW", "WMT", "RCL", "MAR", "BKR", "PFE", "CMCSA", "CAT",
-  "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG", "JPM", "V", "SPGI", "CB", "LLY"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py`, `mu_signal_model.py`, `v_signal_model.py`, `spgi_signal_model.py` and `lly_signal_model.py` (other branches) files
-  and today's profiles in `data/business_profiles.json` (NVDA's, SO's, V's, SPGI's, CB's and LLY's included) are 2026 analyses: never inputs to a retrospective. AVGO did not trade
+  "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG", "JPM", "V", "SPGI", "CB", "LLY", "UNH"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py`, `mu_signal_model.py`, `v_signal_model.py`, `spgi_signal_model.py` and `lly_signal_model.py` (other branches) files
+  and today's profiles in `data/business_profiles.json` (NVDA's, SO's, V's, SPGI's, CB's, LLY's and UNH's included) are 2026 analyses: never inputs to a retrospective. AVGO did not trade
   before its IPO, so its series starts at the listing (the listing and bounds rules of method r2). BKR's 2008 to 2017-06-30 dates are Baker
   Hughes Incorporated, listed as BHI: BKR is only the series key (and Yahoo's symbol for the history); the models print BHI. Its dates from
   2019-02-01 are Baker Hughes, a GE company (BHGE, then BKR), a new listing with its own facts and engine: no date between is built, as
@@ -333,5 +333,18 @@ touching either directory.
   market); Foundayo and Onswik join the anachronism list; RICH and AVOID on all 156 dates to 2025-01-31, CHEAP and BUY on the 52 of the
   FY2025 guide, CHEAP 35, RICH 5, FAIR 2 in 2026; the CHEAP calls move with the signals at BEAR (59 dates); built in a new session without
   opening the 2008-2021 outcomes or findings (retro/README.md, "LLY 2022-2026").
+  UNH (UnitedHealth Group Incorporated, NYSE: UNH), the first health benefits company: EPS is diluted EPS, each year from the latest filing
+  that reports it (2002-2006 as the FY2006 10-K restates them for the stock option review under FAS 123R; 2001 and earlier as first
+  published, a seam), at the company's figure excluding only one-offs where a filing on the same basis prints it (1998 $1.31 without the
+  realignment and other charges, GAAP a loss; 1999 $0.79; 2000 $1.05; FY07 $3.50 without the IRS Section 409A charges; FY08 $2.95 without
+  the settlements, severance and the Nevada gain, each from its Q4 release in every vintage), per-share facts restated for the 2000, 2003
+  and 2005 splits after their own filing (`splits`, the shared on_basis helper); current-FY EPS is the guide midpoint, at the company's figure
+  where a guide is given with and without announced items; revenue is guided in dollars, read as growth on the last full year (no
+  next-quarter revenue guide); the Q1 and Q2 2008 outlook schedules' operating margins are method r2's guided step, and the 8-K of
+  2008-07-02's is derived from its guided earnings from operations and revenues (decided here); the Q2 2007 print is restated by its 10-Q
+  from 2007-08-06 (`restated`); the signals are premiums, the medical care ratio, fees (services and products), the operating cost ratio and
+  the operating margin, with UnitedHealth's own rule-T thresholds over 1997-2006; DURABLE (no 10-K calls the business cyclical), no live
+  theme; dividends $0.03 a year from the 10-Ks; CHEAP and BUY on all 105 dates, robustness 8 of 8, and no tested encoding moves a class;
+  OptumRx, OptumInsight, UnitedHealthcare Community & State, Optum360 and OptumCare join the anachronism list (retro/README.md, "UNH").
 - **Never use the owner's personal email** in request headers to external
   services (SEC asks for a contact in the User-Agent).

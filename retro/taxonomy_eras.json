@@ -2146,6 +2146,31 @@
     "term": "Onswik",
     "first_seen": "2026-10-29",
     "note": "an Eli Lilly product name; first in a filing under CIK 59478 in the 8-K of 2026-10-29 (ex.99), EDGAR full-text search"
+   },
+   {
+    "term": "UnitedHealthcare Community & State",
+    "first_seen": "2010-10-19",
+    "note": "UnitedHealth Group's renamed Medicaid business (AmeriChoice before); first in the Q3 2010 release (8-K accepted 2010-10-19 06:09 ET, before the open; EDGAR full-text search, CIK 731766)"
+   },
+   {
+    "term": "OptumRx",
+    "first_seen": "2011-04-21",
+    "note": "UnitedHealth Group's renamed pharmacy benefit business (Prescription Solutions before); first in the Q1 2011 release (8-K accepted 2011-04-21 06:12 ET, before the open; EDGAR full-text search, CIK 731766)"
+   },
+   {
+    "term": "OptumInsight",
+    "first_seen": "2011-04-21",
+    "note": "UnitedHealth Group's renamed health information business (Ingenix before); first in the Q1 2011 release (8-K accepted 2011-04-21 06:12 ET, before the open; EDGAR full-text search, CIK 731766)"
+   },
+   {
+    "term": "Optum360",
+    "first_seen": "2013-10-17",
+    "note": "first in UnitedHealth Group's Q3 2013 release (8-K accepted 2013-10-17 06:06 ET, before the open; EDGAR full-text search, CIK 731766)"
+   },
+   {
+    "term": "OptumCare",
+    "first_seen": "2015-04-16",
+    "note": "first in UnitedHealth Group's Q1 2015 release (8-K accepted 2015-04-16 06:01 ET, before the open; EDGAR full-text search, CIK 731766)"
    }
   ]
  }
