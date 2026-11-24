@@ -1,5 +1,5 @@
 {
- "_doc": "Point-in-time fact sheet for UNH retrospectives (retro/build_unh.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2002); every earnings 8-K of 2007-2009 was accepted before the open on its release day. UnitedHealth Group's fiscal year is the calendar year. The builder uses the latest history vintage published by AS_OF (each year from the latest filing that reports it, ten years to the latest one, each per-share figure on the basis of its own filing and restated by 'splits'), the prints published by AS_OF that report a fiscal year after that history (a Q4 print extends the history until the 10-K), the guides for the current fiscal year (each field from the latest guide that states it) and the vintage's annual dividend. EPS is diluted EPS at the company's figure excluding only one-offs where a filing on the same basis prints it (1998, 1999, 2000, 2007 and 2008), GAAP otherwise; the guides are the company's figures where a guide is given with and without announced items (the IRS Section 409A charges in 2007; the 2008 legal settlements, severance and the Nevada sale), GAAP otherwise. Revenue is guided in dollars, read as growth on the last full year; the operating margin is guided in numbers in the Q1 and Q2 2008 outlook schedules (and derived from guided earnings from operations and revenue in the 8-K of 2008-07-02). A print's growth rates and ratios are derived from the raw figures of its release's statement of operations ('raw', $ millions; the builder re-derives and checks them), each against the year-ago quarter in the same release, as reported (charges in); the Q2 2007 print is restated by its 10-Q from 2007-08-06 ('restated'). Rule T's raw figures are in 'rule_t'. No later fact enters through this file.",
+ "_doc": "Point-in-time fact sheet for UNH retrospectives (retro/build_unh.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2002); every earnings 8-K of 2007-2013 was accepted before the open on its release day. UnitedHealth Group's fiscal year is the calendar year. The builder uses the latest history vintage published by AS_OF (each year from the latest filing that reports it, ten years to the latest one, each per-share figure on the basis of its own filing and restated by 'splits'), the prints published by AS_OF that report a fiscal year after that history (a Q4 print extends the history until the 10-K), the guides for the current fiscal year (each field from the latest guide that states it) and the latest annual dividend rate (the vintage's, or a later rate in 'dividends' from the first filing that states it). EPS is diluted EPS at the company's figure excluding only one-offs where a filing on the same basis prints it (1998, 1999, 2000, 2007 and 2008), GAAP otherwise (2009-2012 among them); the guides are the company's figures where a guide is given with and without announced items (the IRS Section 409A charges in 2007; the 2008 legal settlements, severance and the Nevada sale), GAAP otherwise. Revenue is guided in dollars, read as growth on the last full year; the operating margin is guided in numbers in the Q1 and Q2 2008 and Q1 2010 outlook schedules (and derived from guided earnings from operations and revenue in the 8-K of 2008-07-02 and the Q1 2011 schedule). A print's growth rates and ratios are derived from the raw figures of its release's statement of operations ('raw', $ millions; the builder re-derives and checks them), each against the year-ago quarter in the same release, as reported (charges in); the Q2 2007 print is restated by its 10-Q from 2007-08-06 ('restated'). Rule T's raw figures are in 'rule_t'. No later fact enters through this file.",
  "ticker": "UNH",
  "sources": {
   "UH1": {
@@ -197,6 +197,181 @@
    "title": "UnitedHealth Group 8-K of 2009-11-30 (investor conference release, Exhibit 99.1)",
    "url": "https://www.sec.gov/Archives/edgar/data/731766/000129993309004705/exhibit1.htm",
    "supports": "FY2009 and FY2010 guides"
+  },
+  "UH29": {
+   "published": "2010-01-21",
+   "filed": "2010-01-21 06:10 ET, before the open",
+   "title": "UnitedHealth Group Q4 2009 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000119312510009250/dex991.htm",
+   "supports": "Q4 2009 print and FY2009 actuals (GAAP); FY2010 guide"
+  },
+  "UH30": {
+   "published": "2010-02-11",
+   "filed": "2010-02-10 16:37 ET, after the close",
+   "title": "UnitedHealth Group FY2009 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000119312510027229/d10k.htm",
+   "supports": "history vintage FY2009"
+  },
+  "UH31": {
+   "published": "2010-04-20",
+   "filed": "2010-04-20 06:10 ET, before the open",
+   "title": "UnitedHealth Group Q1 2010 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000119312510087167/dex991.htm",
+   "supports": "Q1 2010 print; FY2010 revised outlook (schedule)"
+  },
+  "UH32": {
+   "published": "2010-07-20",
+   "filed": "2010-07-20 06:09 ET, before the open",
+   "title": "UnitedHealth Group Q2 2010 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000119312510161326/dex991.htm",
+   "supports": "Q2 2010 print; FY2010 guide; the $0.50 annual dividend rate"
+  },
+  "UH33": {
+   "published": "2010-10-19",
+   "filed": "2010-10-19 06:09 ET, before the open",
+   "title": "UnitedHealth Group Q3 2010 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000119312510231332/dex991.htm",
+   "supports": "Q3 2010 print; FY2010 guide"
+  },
+  "UH34": {
+   "published": "2010-11-29",
+   "filed": "2010-11-29 07:04 ET, before the open",
+   "title": "UnitedHealth Group 8-K of 2010-11-29 (investor conference release, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000129993310004225/exhibit1.htm",
+   "supports": "FY2010 and FY2011 guides"
+  },
+  "UH35": {
+   "published": "2011-01-20",
+   "filed": "2011-01-20 06:10 ET, before the open",
+   "title": "UnitedHealth Group Q4 2010 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000119312511010550/dex991.htm",
+   "supports": "Q4 2010 print and FY2010 actuals (GAAP); FY2011 guide"
+  },
+  "UH36": {
+   "published": "2011-02-11",
+   "filed": "2011-02-10 16:04 ET, after the close",
+   "title": "UnitedHealth Group FY2010 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000119312511030615/d10k.htm",
+   "supports": "history vintage FY2010"
+  },
+  "UH37": {
+   "published": "2011-04-21",
+   "filed": "2011-04-21 06:12 ET, before the open",
+   "title": "UnitedHealth Group Q1 2011 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000119312511104386/dex991.htm",
+   "supports": "Q1 2011 print; FY2011 revised outlook (schedule)"
+  },
+  "UH38": {
+   "published": "2011-07-19",
+   "filed": "2011-07-19 06:10 ET, before the open",
+   "title": "UnitedHealth Group Q2 2011 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000119312511190654/dex991.htm",
+   "supports": "Q2 2011 print; FY2011 guide; the $0.65 annual dividend rate"
+  },
+  "UH39": {
+   "published": "2011-10-18",
+   "filed": "2011-10-18 06:07 ET, before the open",
+   "title": "UnitedHealth Group Q3 2011 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176611000007/exhibit991.htm",
+   "supports": "Q3 2011 print; FY2011 guide"
+  },
+  "UH40": {
+   "published": "2011-11-04",
+   "filed": "2011-11-03 17:03 ET, after the close",
+   "title": "UnitedHealth Group 8-K of 2011-11-03 (Item 7.01)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000129993311003221/htm_43395.htm",
+   "supports": "FY2011 guide"
+  },
+  "UH41": {
+   "published": "2011-11-28",
+   "filed": "2011-11-28 07:10 ET, before the open",
+   "title": "UnitedHealth Group 8-K of 2011-11-28 (investor conference release, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000129993311003431/exhibit1.htm",
+   "supports": "FY2011 and FY2012 guides"
+  },
+  "UH42": {
+   "published": "2012-01-19",
+   "filed": "2012-01-19 06:06 ET, before the open",
+   "title": "UnitedHealth Group Q4 2011 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176612000004/a2011q4exhibit991.htm",
+   "supports": "Q4 2011 print and FY2011 actuals (GAAP); FY2012 guide"
+  },
+  "UH43": {
+   "published": "2012-02-09",
+   "filed": "2012-02-08 19:46 ET, after the close",
+   "title": "UnitedHealth Group FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176612000009/unh2011123110k.htm",
+   "supports": "history vintage FY2011"
+  },
+  "UH44": {
+   "published": "2012-04-19",
+   "filed": "2012-04-19 06:10 ET, before the open",
+   "title": "UnitedHealth Group Q1 2012 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176612000012/a2012q1exhibit991.htm",
+   "supports": "Q1 2012 print; FY2012 guide"
+  },
+  "UH45": {
+   "published": "2012-07-19",
+   "filed": "2012-07-19 06:10 ET, before the open",
+   "title": "UnitedHealth Group Q2 2012 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176612000023/a2012q2exhibit991.htm",
+   "supports": "Q2 2012 print; FY2012 guide; the $0.85 annual dividend rate"
+  },
+  "UH46": {
+   "published": "2012-10-16",
+   "filed": "2012-10-16 06:02 ET, before the open",
+   "title": "UnitedHealth Group Q3 2012 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176612000034/a2012q3exhibit991.htm",
+   "supports": "Q3 2012 print; FY2012 guide"
+  },
+  "UH47": {
+   "published": "2012-11-26",
+   "filed": "2012-11-26 06:01 ET, before the open",
+   "title": "UnitedHealth Group 8-K of 2012-11-26 (investor conference release, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000129993312002623/exhibit1.htm",
+   "supports": "FY2012 and FY2013 guides"
+  },
+  "UH48": {
+   "published": "2013-01-17",
+   "filed": "2013-01-17 06:03 ET, before the open",
+   "title": "UnitedHealth Group Q4 2012 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176613000002/a2012q4exhibit991.htm",
+   "supports": "Q4 2012 print and FY2012 actuals (GAAP); FY2013 guide"
+  },
+  "UH49": {
+   "published": "2013-02-07",
+   "filed": "2013-02-06 18:00 ET, after the close",
+   "title": "UnitedHealth Group FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176613000005/unh2012123110-k.htm",
+   "supports": "history vintage FY2012"
+  },
+  "UH50": {
+   "published": "2013-04-18",
+   "filed": "2013-04-18 06:02 ET, before the open",
+   "title": "UnitedHealth Group Q1 2013 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176613000011/a2013q1exhibit991.htm",
+   "supports": "Q1 2013 print; FY2013 guide"
+  },
+  "UH51": {
+   "published": "2013-07-18",
+   "filed": "2013-07-18 06:10 ET, before the open",
+   "title": "UnitedHealth Group Q2 2013 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176613000023/a2013q2exhibit991.htm",
+   "supports": "Q2 2013 print; FY2013 guide; the $1.12 annual dividend rate"
+  },
+  "UH52": {
+   "published": "2013-10-17",
+   "filed": "2013-10-17 06:06 ET, before the open",
+   "title": "UnitedHealth Group Q3 2013 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176613000030/a2013q3exhibit991.htm",
+   "supports": "Q3 2013 print; FY2013 guide"
+  },
+  "UH53": {
+   "published": "2013-12-02",
+   "filed": "2013-12-02 07:02 ET, before the open",
+   "title": "UnitedHealth Group 8-K of 2013-12-02 (investor conference release, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176613000038/a2013investorconferenceexh.htm",
+   "supports": "FY2013 and FY2014 guides"
   }
  },
  "history_vintages": [
@@ -673,6 +848,638 @@
    "cash_inv_b": 21.575,
    "cfo_b": 4.238,
    "debt_to_cap": 38.1
+  },
+  {
+   "published": "2010-02-11",
+   "sources": [
+    "UH5",
+    "UH6",
+    "UH7",
+    "UH8",
+    "UH9",
+    "UH16",
+    "UH17",
+    "UH23",
+    "UH24",
+    "UH30"
+   ],
+   "fy_label": "FY09",
+   "kind": "DURABLE",
+   "why": "'UnitedHealth Group is a diversified health and well-being company, serving more than 70 million Americans.' 'If we fail to effectively estimate, price for and manage our medical costs, the profitability of our risk-based products could decline and could materially adversely affect our future financial results.' 'In total, we believe that economic recessions will slow our revenue growth rate and could impact our operating profitability.'",
+   "eps_normalized": {
+    "2000": 1.05,
+    "2001": 0.7,
+    "2002": 0.95,
+    "2003": 1.34,
+    "2004": 1.83,
+    "2005": 2.31,
+    "2006": 2.97,
+    "2007": 3.5,
+    "2008": 2.95,
+    "2009": 3.24
+   },
+   "eps_sources": {
+    "2000": "UH6",
+    "2001": "UH8",
+    "2002": "UH9",
+    "2003": "UH17",
+    "2004": "UH24",
+    "2005": "UH30",
+    "2006": "UH30",
+    "2007": "UH16",
+    "2008": "UH23",
+    "2009": "UH30"
+   },
+   "eps_published": {
+    "2000": "2004-03-16",
+    "2001": "2006-02-27",
+    "2002": "2007-03-06",
+    "2003": "2008-02-22",
+    "2004": "2009-02-12",
+    "2005": "2010-02-11",
+    "2006": "2010-02-11",
+    "2007": "2008-01-22",
+    "2008": "2009-01-22",
+    "2009": "2010-02-11"
+   },
+   "revenue_usd_b": {
+    "2000": 21.122,
+    "2001": 23.454,
+    "2002": 25.861,
+    "2003": 29.696,
+    "2004": 38.217,
+    "2005": 46.425,
+    "2006": 71.542,
+    "2007": 75.431,
+    "2008": 81.186,
+    "2009": 87.138
+   },
+   "revenue_sources": {
+    "2000": "UH7",
+    "2001": "UH8",
+    "2002": "UH9",
+    "2003": "UH17",
+    "2004": "UH24",
+    "2005": "UH30",
+    "2006": "UH30",
+    "2007": "UH30",
+    "2008": "UH30",
+    "2009": "UH30"
+   },
+   "diluted_shares_m": {
+    "2000": 336.5,
+    "2001": 654.0,
+    "2002": 1272.0,
+    "2003": 1237.0,
+    "2004": 1316.0,
+    "2005": 1333.0,
+    "2006": 1402.0,
+    "2007": 1361.0,
+    "2008": 1241.0,
+    "2009": 1179.0
+   },
+   "shares_sources": {
+    "2000": "UH5",
+    "2001": "UH6",
+    "2002": "UH9",
+    "2003": "UH9",
+    "2004": "UH9",
+    "2005": "UH17",
+    "2006": "UH24",
+    "2007": "UH30",
+    "2008": "UH30",
+    "2009": "UH30"
+   },
+   "shares_published": {
+    "2000": "2003-03-20",
+    "2001": "2004-03-16",
+    "2002": "2007-03-06",
+    "2003": "2007-03-06",
+    "2004": "2007-03-06",
+    "2005": "2008-02-22",
+    "2006": "2009-02-12",
+    "2007": "2010-02-11",
+    "2008": "2010-02-11",
+    "2009": "2010-02-11"
+   },
+   "normalization": "diluted EPS, each year from the latest filing that reports it, at the company's figure excluding only one-offs where a filing on the same basis prints it (the ACN rule), GAAP otherwise; 2002 on as restated for the stock option review under FAS 123R (FY2006 10-K), earlier years as first published (a seam): 2000 $1.05 excluding the UnitedHealth Capital tax benefit and disposition gain (FY2003 10-K; GAAP $1.09, as the FY2004 10-K reports it); 2001 $0.70 (FY2005 10-K, after the 2005 split); 2007 $3.50 excluding the IRS Section 409A charges ($0.08: the Q4 2007 release's reconciliation; GAAP $3.42 in the FY2007 10-K); 2008 $2.95 excluding special items ($0.55: the stock option class action settlements and legal costs, the out-of-network class action settlement, severance, and the Nevada Medicare Advantage sale; the Q4 2008 release's reconciliation; GAAP $2.40 in the FY2008 10-K)",
+   "margin_signal_name": "Operating margin change",
+   "dividend_annual": 0.03,
+   "dividend_note": "$0.03 a year, declared annually: 'On February 9, 2010, our Board of Directors approved an annual dividend of $0.03 per share, which will be paid on April 20, 2010 to shareholders of record on April 6, 2010.'",
+   "business_line": "diversified health and well-being: Health Benefits, OptumHealth, Ingenix, Prescription Solutions",
+   "groups": [
+    [
+     "Health Benefits",
+     81.341,
+     7.2
+    ],
+    [
+     "OptumHealth",
+     5.528,
+     5.8
+    ],
+    [
+     "Ingenix",
+     1.823,
+     17.5
+    ],
+    [
+     "Prescription Solutions",
+     14.452,
+     14.9
+    ]
+   ],
+   "groups_basis": "FY09 segment revenues before eliminations (FY09 growth)",
+   "company": "UnitedHealth Group Incorporated",
+   "exchange": "NYSE",
+   "pe_window_start": null,
+   "fiscal_year": "the calendar year",
+   "prev_fy_op_margin": 7.3,
+   "prev_fy_op_margin_note": "earnings from operations $6,359M / revenues $87,138M (FY2009 10-K)",
+   "prev_fy_pretax_margin": 6.67,
+   "prev_fy_pretax_margin_note": "earnings before income taxes $5,808M / revenues $87,138M (FY2009 10-K)",
+   "prev_fy_mcr": 82.32,
+   "prev_fy_ocr": 14.61,
+   "prev_fy_sales_growth": 7.3,
+   "prev_fy_premium_growth": 7.8,
+   "tax_rate": 0.3419,
+   "tax_note": "provision $1,986M on pre-tax $5,808M (FY2009 10-K)",
+   "cash_inv_b": 24.35,
+   "cfo_b": 5.625,
+   "debt_to_cap": 32.1
+  },
+  {
+   "published": "2011-02-11",
+   "sources": [
+    "UH6",
+    "UH8",
+    "UH9",
+    "UH16",
+    "UH17",
+    "UH23",
+    "UH24",
+    "UH30",
+    "UH36"
+   ],
+   "fy_label": "FY10",
+   "kind": "DURABLE",
+   "why": "'UnitedHealth Group is a diversified health and well-being company, whose focus is on improving the overall health and well-being of the people we serve and their communities and enhancing the performance of the health system.' 'If we fail to effectively estimate, price for and manage our medical costs, the profitability of our risk-based products could decline and could materially adversely affect our future financial results.' 'Premium revenues from risk-based products comprise approximately 90% of our total consolidated revenues.'",
+   "eps_normalized": {
+    "2001": 0.7,
+    "2002": 0.95,
+    "2003": 1.34,
+    "2004": 1.83,
+    "2005": 2.31,
+    "2006": 2.97,
+    "2007": 3.5,
+    "2008": 2.95,
+    "2009": 3.24,
+    "2010": 4.1
+   },
+   "eps_sources": {
+    "2001": "UH8",
+    "2002": "UH9",
+    "2003": "UH17",
+    "2004": "UH24",
+    "2005": "UH30",
+    "2006": "UH36",
+    "2007": "UH16",
+    "2008": "UH23",
+    "2009": "UH36",
+    "2010": "UH36"
+   },
+   "eps_published": {
+    "2001": "2006-02-27",
+    "2002": "2007-03-06",
+    "2003": "2008-02-22",
+    "2004": "2009-02-12",
+    "2005": "2010-02-11",
+    "2006": "2011-02-11",
+    "2007": "2008-01-22",
+    "2008": "2009-01-22",
+    "2009": "2011-02-11",
+    "2010": "2011-02-11"
+   },
+   "revenue_usd_b": {
+    "2001": 23.454,
+    "2002": 25.861,
+    "2003": 29.696,
+    "2004": 38.217,
+    "2005": 46.425,
+    "2006": 71.542,
+    "2007": 75.431,
+    "2008": 81.186,
+    "2009": 87.138,
+    "2010": 94.155
+   },
+   "revenue_sources": {
+    "2001": "UH8",
+    "2002": "UH9",
+    "2003": "UH17",
+    "2004": "UH24",
+    "2005": "UH30",
+    "2006": "UH36",
+    "2007": "UH36",
+    "2008": "UH36",
+    "2009": "UH36",
+    "2010": "UH36"
+   },
+   "diluted_shares_m": {
+    "2001": 654.0,
+    "2002": 1272.0,
+    "2003": 1237.0,
+    "2004": 1316.0,
+    "2005": 1333.0,
+    "2006": 1402.0,
+    "2007": 1361.0,
+    "2008": 1241.0,
+    "2009": 1179.0,
+    "2010": 1131.0
+   },
+   "shares_sources": {
+    "2001": "UH6",
+    "2002": "UH9",
+    "2003": "UH9",
+    "2004": "UH9",
+    "2005": "UH17",
+    "2006": "UH24",
+    "2007": "UH30",
+    "2008": "UH36",
+    "2009": "UH36",
+    "2010": "UH36"
+   },
+   "shares_published": {
+    "2001": "2004-03-16",
+    "2002": "2007-03-06",
+    "2003": "2007-03-06",
+    "2004": "2007-03-06",
+    "2005": "2008-02-22",
+    "2006": "2009-02-12",
+    "2007": "2010-02-11",
+    "2008": "2011-02-11",
+    "2009": "2011-02-11",
+    "2010": "2011-02-11"
+   },
+   "normalization": "diluted EPS, each year from the latest filing that reports it, at the company's figure excluding only one-offs where a filing on the same basis prints it (the ACN rule), GAAP otherwise; 2002 on as restated for the stock option review under FAS 123R (FY2006 10-K), earlier years as first published (a seam): 2001 $0.70 (FY2005 10-K, after the 2005 split); 2007 $3.50 excluding the IRS Section 409A charges ($0.08: the Q4 2007 release's reconciliation; GAAP $3.42 in the FY2007 10-K); 2008 $2.95 excluding special items ($0.55: the stock option class action settlements and legal costs, the out-of-network class action settlement, severance, and the Nevada Medicare Advantage sale; the Q4 2008 release's reconciliation; GAAP $2.40 in the FY2008 10-K)",
+   "margin_signal_name": "Operating margin change",
+   "dividend_annual": 0.5,
+   "dividend_note": "$0.50 a year ($0.125 a quarter): 'In May 2010, our Board of Directors increased our cash dividend to shareholders and moved us to a quarterly dividend payment cycle of $0.125 per share.'",
+   "business_line": "diversified health and well-being: Health Benefits, OptumHealth, Ingenix, Prescription Solutions",
+   "groups": [
+    [
+     "Health Benefits",
+     87.442,
+     7.5
+    ],
+    [
+     "OptumHealth",
+     5.849,
+     5.8
+    ],
+    [
+     "Ingenix",
+     2.341,
+     28.4
+    ],
+    [
+     "Prescription Solutions",
+     16.776,
+     16.1
+    ]
+   ],
+   "groups_basis": "FY10 segment revenues before eliminations (FY10 growth)",
+   "company": "UnitedHealth Group Incorporated",
+   "exchange": "NYSE",
+   "pe_window_start": null,
+   "fiscal_year": "the calendar year",
+   "prev_fy_op_margin": 8.35,
+   "prev_fy_op_margin_note": "earnings from operations $7,864M / revenues $94,155M (FY2010 10-K)",
+   "prev_fy_pretax_margin": 7.84,
+   "prev_fy_pretax_margin_note": "earnings before income taxes $7,383M / revenues $94,155M (FY2010 10-K)",
+   "prev_fy_mcr": 80.61,
+   "prev_fy_ocr": 15.16,
+   "prev_fy_sales_growth": 8.1,
+   "prev_fy_premium_growth": 7.7,
+   "tax_rate": 0.3723,
+   "tax_note": "provision $2,749M on pre-tax $7,383M (FY2010 10-K)",
+   "cash_inv_b": 25.902,
+   "cfo_b": 6.273,
+   "debt_to_cap": 30.1
+  },
+  {
+   "published": "2012-02-09",
+   "sources": [
+    "UH9",
+    "UH16",
+    "UH17",
+    "UH23",
+    "UH24",
+    "UH30",
+    "UH36",
+    "UH43"
+   ],
+   "fy_label": "FY11",
+   "kind": "DURABLE",
+   "why": "'UnitedHealth Group is a diversified health and well-being company, whose mission is to help people live healthier lives and help make health care work better.' 'If we fail to effectively estimate, price for and manage our medical costs, the profitability of our risk-based products and services could decline and could materially and adversely affect our results of operations, financial position and cash flows.' 'Premium revenues from risk-based benefits products comprise approximately 90% of our total consolidated revenues.'",
+   "eps_normalized": {
+    "2002": 0.95,
+    "2003": 1.34,
+    "2004": 1.83,
+    "2005": 2.31,
+    "2006": 2.97,
+    "2007": 3.5,
+    "2008": 2.95,
+    "2009": 3.24,
+    "2010": 4.1,
+    "2011": 4.73
+   },
+   "eps_sources": {
+    "2002": "UH9",
+    "2003": "UH17",
+    "2004": "UH24",
+    "2005": "UH30",
+    "2006": "UH36",
+    "2007": "UH16",
+    "2008": "UH23",
+    "2009": "UH43",
+    "2010": "UH43",
+    "2011": "UH43"
+   },
+   "eps_published": {
+    "2002": "2007-03-06",
+    "2003": "2008-02-22",
+    "2004": "2009-02-12",
+    "2005": "2010-02-11",
+    "2006": "2011-02-11",
+    "2007": "2008-01-22",
+    "2008": "2009-01-22",
+    "2009": "2012-02-09",
+    "2010": "2012-02-09",
+    "2011": "2012-02-09"
+   },
+   "revenue_usd_b": {
+    "2002": 25.861,
+    "2003": 29.696,
+    "2004": 38.217,
+    "2005": 46.425,
+    "2006": 71.542,
+    "2007": 75.431,
+    "2008": 81.186,
+    "2009": 87.138,
+    "2010": 94.155,
+    "2011": 101.862
+   },
+   "revenue_sources": {
+    "2002": "UH9",
+    "2003": "UH17",
+    "2004": "UH24",
+    "2005": "UH30",
+    "2006": "UH36",
+    "2007": "UH43",
+    "2008": "UH43",
+    "2009": "UH43",
+    "2010": "UH43",
+    "2011": "UH43"
+   },
+   "diluted_shares_m": {
+    "2002": 1272.0,
+    "2003": 1237.0,
+    "2004": 1316.0,
+    "2005": 1333.0,
+    "2006": 1402.0,
+    "2007": 1361.0,
+    "2008": 1241.0,
+    "2009": 1179.0,
+    "2010": 1131.0,
+    "2011": 1087.0
+   },
+   "shares_sources": {
+    "2002": "UH9",
+    "2003": "UH9",
+    "2004": "UH9",
+    "2005": "UH17",
+    "2006": "UH24",
+    "2007": "UH30",
+    "2008": "UH36",
+    "2009": "UH43",
+    "2010": "UH43",
+    "2011": "UH43"
+   },
+   "shares_published": {
+    "2002": "2007-03-06",
+    "2003": "2007-03-06",
+    "2004": "2007-03-06",
+    "2005": "2008-02-22",
+    "2006": "2009-02-12",
+    "2007": "2010-02-11",
+    "2008": "2011-02-11",
+    "2009": "2012-02-09",
+    "2010": "2012-02-09",
+    "2011": "2012-02-09"
+   },
+   "normalization": "diluted EPS, each year from the latest filing that reports it, at the company's figure excluding only one-offs where a filing on the same basis prints it (the ACN rule), GAAP otherwise; 2002 on as restated for the stock option review under FAS 123R (FY2006 10-K), earlier years as first published (a seam): 2007 $3.50 excluding the IRS Section 409A charges ($0.08: the Q4 2007 release's reconciliation; GAAP $3.42 in the FY2007 10-K); 2008 $2.95 excluding special items ($0.55: the stock option class action settlements and legal costs, the out-of-network class action settlement, severance, and the Nevada Medicare Advantage sale; the Q4 2008 release's reconciliation; GAAP $2.40 in the FY2008 10-K)",
+   "margin_signal_name": "Operating margin change",
+   "dividend_annual": 0.65,
+   "dividend_note": "$0.65 a year, paid quarterly: 'In May 2011, our Board of Directors increased our cash dividend to shareholders to an annual dividend rate of $0.65 per share, paid quarterly.'",
+   "business_line": "diversified health and well-being: UnitedHealthcare, OptumHealth, OptumInsight, OptumRx",
+   "groups": [
+    [
+     "UnitedHealthcare",
+     95.336,
+     7.4
+    ],
+    [
+     "OptumHealth",
+     6.704,
+     46.9
+    ],
+    [
+     "OptumInsight",
+     2.671,
+     14.0
+    ],
+    [
+     "OptumRx",
+     19.278,
+     15.3
+    ]
+   ],
+   "groups_basis": "FY11 segment revenues before eliminations (FY11 growth)",
+   "company": "UnitedHealth Group Incorporated",
+   "exchange": "NYSE",
+   "pe_window_start": null,
+   "fiscal_year": "the calendar year",
+   "prev_fy_op_margin": 8.31,
+   "prev_fy_op_margin_note": "earnings from operations $8,464M / revenues $101,862M (FY2011 10-K)",
+   "prev_fy_pretax_margin": 7.81,
+   "prev_fy_pretax_margin_note": "earnings before income taxes $7,959M / revenues $101,862M (FY2011 10-K)",
+   "prev_fy_mcr": 80.81,
+   "prev_fy_ocr": 15.27,
+   "prev_fy_sales_growth": 8.2,
+   "prev_fy_premium_growth": 7.7,
+   "tax_rate": 0.3539,
+   "tax_note": "provision $2,817M on pre-tax $7,959M (FY2011 10-K)",
+   "cash_inv_b": 28.172,
+   "cfo_b": 6.968,
+   "debt_to_cap": 29.1
+  },
+  {
+   "published": "2013-02-07",
+   "sources": [
+    "UH9",
+    "UH16",
+    "UH17",
+    "UH23",
+    "UH24",
+    "UH30",
+    "UH36",
+    "UH43",
+    "UH49"
+   ],
+   "fy_label": "FY12",
+   "kind": "DURABLE",
+   "why": "'UnitedHealth Group is a diversified health and well-being company dedicated to helping people live healthier lives and making health care work better.' 'If we fail to effectively estimate, price for and manage our medical costs, the profitability of our risk-based products and services could decline and could materially and adversely affect our results of operations, financial position and cash flows.' 'Premium revenues from risk-based benefits products comprise approximately 90% of our total consolidated revenues.'",
+   "eps_normalized": {
+    "2003": 1.34,
+    "2004": 1.83,
+    "2005": 2.31,
+    "2006": 2.97,
+    "2007": 3.5,
+    "2008": 2.95,
+    "2009": 3.24,
+    "2010": 4.1,
+    "2011": 4.73,
+    "2012": 5.28
+   },
+   "eps_sources": {
+    "2003": "UH17",
+    "2004": "UH24",
+    "2005": "UH30",
+    "2006": "UH36",
+    "2007": "UH16",
+    "2008": "UH23",
+    "2009": "UH49",
+    "2010": "UH49",
+    "2011": "UH49",
+    "2012": "UH49"
+   },
+   "eps_published": {
+    "2003": "2008-02-22",
+    "2004": "2009-02-12",
+    "2005": "2010-02-11",
+    "2006": "2011-02-11",
+    "2007": "2008-01-22",
+    "2008": "2009-01-22",
+    "2009": "2013-02-07",
+    "2010": "2013-02-07",
+    "2011": "2013-02-07",
+    "2012": "2013-02-07"
+   },
+   "revenue_usd_b": {
+    "2003": 29.696,
+    "2004": 38.217,
+    "2005": 46.425,
+    "2006": 71.542,
+    "2007": 75.431,
+    "2008": 81.186,
+    "2009": 87.138,
+    "2010": 94.155,
+    "2011": 101.862,
+    "2012": 110.618
+   },
+   "revenue_sources": {
+    "2003": "UH17",
+    "2004": "UH24",
+    "2005": "UH30",
+    "2006": "UH36",
+    "2007": "UH43",
+    "2008": "UH49",
+    "2009": "UH49",
+    "2010": "UH49",
+    "2011": "UH49",
+    "2012": "UH49"
+   },
+   "diluted_shares_m": {
+    "2003": 1237.0,
+    "2004": 1316.0,
+    "2005": 1333.0,
+    "2006": 1402.0,
+    "2007": 1361.0,
+    "2008": 1241.0,
+    "2009": 1179.0,
+    "2010": 1131.0,
+    "2011": 1087.0,
+    "2012": 1046.0
+   },
+   "shares_sources": {
+    "2003": "UH9",
+    "2004": "UH9",
+    "2005": "UH17",
+    "2006": "UH24",
+    "2007": "UH30",
+    "2008": "UH36",
+    "2009": "UH43",
+    "2010": "UH49",
+    "2011": "UH49",
+    "2012": "UH49"
+   },
+   "shares_published": {
+    "2003": "2007-03-06",
+    "2004": "2007-03-06",
+    "2005": "2008-02-22",
+    "2006": "2009-02-12",
+    "2007": "2010-02-11",
+    "2008": "2011-02-11",
+    "2009": "2012-02-09",
+    "2010": "2013-02-07",
+    "2011": "2013-02-07",
+    "2012": "2013-02-07"
+   },
+   "normalization": "diluted EPS, each year from the latest filing that reports it, at the company's figure excluding only one-offs where a filing on the same basis prints it (the ACN rule), GAAP otherwise; 2002 on as restated for the stock option review under FAS 123R (FY2006 10-K), earlier years as first published (a seam): 2007 $3.50 excluding the IRS Section 409A charges ($0.08: the Q4 2007 release's reconciliation; GAAP $3.42 in the FY2007 10-K); 2008 $2.95 excluding special items ($0.55: the stock option class action settlements and legal costs, the out-of-network class action settlement, severance, and the Nevada Medicare Advantage sale; the Q4 2008 release's reconciliation; GAAP $2.40 in the FY2008 10-K)",
+   "margin_signal_name": "Operating margin change",
+   "dividend_annual": 0.85,
+   "dividend_note": "$0.85 a year, paid quarterly: 'In June 2012, our Board of Directors increased our cash dividend on common stock to an annual dividend rate of $0.85 per share, paid quarterly.'",
+   "business_line": "diversified health and well-being: UnitedHealthcare, OptumHealth, OptumInsight, OptumRx",
+   "groups": [
+    [
+     "UnitedHealthcare",
+     103.419,
+     8.5
+    ],
+    [
+     "OptumHealth",
+     8.147,
+     21.5
+    ],
+    [
+     "OptumInsight",
+     2.882,
+     7.9
+    ],
+    [
+     "OptumRx",
+     18.359,
+     -4.8
+    ]
+   ],
+   "groups_basis": "FY12 segment revenues before eliminations (FY12 growth)",
+   "company": "UnitedHealth Group Incorporated",
+   "exchange": "NYSE",
+   "pe_window_start": null,
+   "fiscal_year": "the calendar year",
+   "prev_fy_op_margin": 8.37,
+   "prev_fy_op_margin_note": "earnings from operations $9,254M / revenues $110,618M (FY2012 10-K)",
+   "prev_fy_pretax_margin": 7.79,
+   "prev_fy_pretax_margin_note": "earnings before income taxes $8,622M / revenues $110,618M (FY2012 10-K)",
+   "prev_fy_mcr": 80.44,
+   "prev_fy_ocr": 15.64,
+   "prev_fy_sales_growth": 8.6,
+   "prev_fy_premium_growth": 8.4,
+   "tax_rate": 0.3591,
+   "tax_note": "provision $3,096M on pre-tax $8,622M (FY2012 10-K)",
+   "cash_inv_b": 29.148,
+   "cfo_b": 7.155,
+   "debt_to_cap": 35.0
   }
  ],
  "prints": [
@@ -1297,6 +2104,865 @@
    "shares_note": "diluted shares 1,164M vs 1,227M a year earlier",
    "next_print": "Q4 2009 print (the quarter ends in Dec)",
    "note": "the year-ago Q3 2008 includes the $40M reduction in the estimated settlement cost (note (a)), as published"
+  },
+  {
+   "quarter": "Q4 2009",
+   "fy": 2009,
+   "q": 4,
+   "published": "2010-01-21",
+   "source": "UH29",
+   "release": "Jan 21",
+   "release_time": "8-K accepted 2010-01-21 06:10 ET, before the open; 'conference call with investors at 8:45 a.m. Eastern time today'",
+   "period_end": "2009-12-31",
+   "raw": {
+    "prem_m": 19729.0,
+    "prem_prior_m": 18581.0,
+    "fee_m": 1914.0,
+    "fee_prior_m": 1764.0,
+    "rev_m": 21784.0,
+    "rev_prior_m": 20454.0,
+    "rev_prev_q_m": 21695.0,
+    "mc_m": 16041.0,
+    "mc_prior_m": 15015.0,
+    "oc_m": 3413.0,
+    "oc_prior_m": 3486.0,
+    "efo_m": 1575.0,
+    "efo_prior_m": 1279.0,
+    "pretax_m": 1431.0,
+    "pretax_prior_m": 1124.0,
+    "inv_m": 141.0,
+    "inv_prior_m": 109.0
+   },
+   "sales_b": 21.784,
+   "sales_pct": 6.5,
+   "seq_pct": 0.4,
+   "prem_pct": 6.2,
+   "fee_pct": 8.5,
+   "mcr": 81.31,
+   "mcr_bp": 49.8,
+   "ocr": 15.67,
+   "ocr_bp": -137.6,
+   "op_margin": 7.23,
+   "op_margin_bp": 97.7,
+   "inv_pct": 29.4,
+   "eps_q": 0.81,
+   "eps_q_prior": 0.6,
+   "diluted_shares_m": 1161.0,
+   "sales_note": "revenues $21,784M vs $20,454M a year earlier, $21,695M the quarter before (premiums, services, products and investment and other income)",
+   "mix_note": "premiums $19,729M (+6.2%), services $1,367M and products $547M (+8.5% together), investment and other income $141M (+29.4%)",
+   "eps_note": "diluted EPS $0.81 vs $0.60 a year earlier (GAAP)",
+   "shares_note": "diluted shares 1,161M vs 1,213M a year earlier",
+   "next_print": "Q1 2010 print (the quarter ends in Mar)",
+   "note": "the year-ago Q4 2008 includes $350M for the out-of-network class action settlement, less a net $10M of insurance recoveries and legal fees (the statement's note (a)), as published",
+   "fy_actual": {
+    "fy": 2009,
+    "fy_label": "FY09",
+    "eps_normalized": 3.24,
+    "revenue_usd_b": 87.138,
+    "diluted_shares_m": 1179.0,
+    "normalization_note": "FY09 $3.24 diluted EPS (GAAP: no filing prints a figure excluding one-offs), the Q4 2009 release",
+    "op_margin": 7.3,
+    "op_margin_note": "earnings from operations $6,359M / revenues $87,138M (Q4 2009 release)",
+    "pretax_margin": 6.67,
+    "pretax_margin_note": "earnings before income taxes $5,808M / revenues $87,138M (Q4 2009 release)",
+    "mcr": 82.32,
+    "ocr": 14.61,
+    "sales_growth": 7.3,
+    "premium_growth": 7.8,
+    "tax_rate": 0.3419,
+    "tax_note": "provision $1,986M on pre-tax $5,808M (Q4 2009 release)"
+   }
+  },
+  {
+   "quarter": "Q1 2010",
+   "fy": 2010,
+   "q": 1,
+   "published": "2010-04-20",
+   "source": "UH31",
+   "release": "Apr 20",
+   "release_time": "8-K accepted 2010-04-20 06:10 ET, before the open; 'conference call with investors at 8:45 a.m. Eastern time today'",
+   "period_end": "2010-03-31",
+   "raw": {
+    "prem_m": 21128.0,
+    "prem_prior_m": 20111.0,
+    "fee_m": 1892.0,
+    "fee_prior_m": 1735.0,
+    "rev_m": 23193.0,
+    "rev_prior_m": 22004.0,
+    "rev_prev_q_m": 21784.0,
+    "mc_m": 17170.0,
+    "mc_prior_m": 16570.0,
+    "oc_m": 3276.0,
+    "oc_prior_m": 3128.0,
+    "efo_m": 2016.0,
+    "efo_prior_m": 1668.0,
+    "pretax_m": 1891.0,
+    "pretax_prior_m": 1537.0,
+    "inv_m": 173.0,
+    "inv_prior_m": 158.0
+   },
+   "sales_b": 23.193,
+   "sales_pct": 5.4,
+   "seq_pct": 6.5,
+   "prem_pct": 5.1,
+   "fee_pct": 9.0,
+   "mcr": 81.27,
+   "mcr_bp": -112.6,
+   "ocr": 14.12,
+   "ocr_bp": -9.1,
+   "op_margin": 8.69,
+   "op_margin_bp": 111.2,
+   "inv_pct": 9.5,
+   "eps_q": 1.03,
+   "eps_q_prior": 0.81,
+   "diluted_shares_m": 1156.0,
+   "sales_note": "revenues $23,193M vs $22,004M a year earlier, $21,784M the quarter before (premiums, services, products and investment and other income)",
+   "mix_note": "premiums $21,128M (+5.1%), services $1,364M and products $528M (+9.0% together), investment and other income $173M (+9.5%)",
+   "eps_note": "diluted EPS $1.03 vs $0.81 a year earlier (GAAP)",
+   "shares_note": "diluted shares 1,156M vs 1,210M a year earlier",
+   "next_print": "Q2 2010 print (the quarter ends in Jun)"
+  },
+  {
+   "quarter": "Q2 2010",
+   "fy": 2010,
+   "q": 2,
+   "published": "2010-07-20",
+   "source": "UH32",
+   "release": "Jul 20",
+   "release_time": "8-K accepted 2010-07-20 06:09 ET, before the open; 'conference call with investors at 8:45 a.m. Eastern time today'",
+   "period_end": "2010-06-30",
+   "raw": {
+    "prem_m": 21125.0,
+    "prem_prior_m": 19746.0,
+    "fee_m": 1990.0,
+    "fee_prior_m": 1756.0,
+    "rev_m": 23264.0,
+    "rev_prior_m": 21655.0,
+    "rev_prev_q_m": 23193.0,
+    "mc_m": 17221.0,
+    "mc_prior_m": 16507.0,
+    "oc_m": 3359.0,
+    "oc_prior_m": 3037.0,
+    "efo_m": 1901.0,
+    "efo_prior_m": 1440.0,
+    "pretax_m": 1782.0,
+    "pretax_prior_m": 1301.0,
+    "inv_m": 149.0,
+    "inv_prior_m": 153.0
+   },
+   "sales_b": 23.264,
+   "sales_pct": 7.4,
+   "seq_pct": 0.3,
+   "prem_pct": 7.0,
+   "fee_pct": 13.3,
+   "mcr": 81.52,
+   "mcr_bp": -207.7,
+   "ocr": 14.44,
+   "ocr_bp": 41.4,
+   "op_margin": 8.17,
+   "op_margin_bp": 152.2,
+   "inv_pct": -2.6,
+   "eps_q": 0.99,
+   "eps_q_prior": 0.73,
+   "diluted_shares_m": 1135.0,
+   "sales_note": "revenues $23,264M vs $21,655M a year earlier, $23,193M the quarter before (premiums, services, products and investment and other income)",
+   "mix_note": "premiums $21,125M (+7.0%), services $1,413M and products $577M (+13.3% together), investment and other income $149M (-2.6%)",
+   "eps_note": "diluted EPS $0.99 vs $0.73 a year earlier (GAAP)",
+   "shares_note": "diluted shares 1,135M vs 1,180M a year earlier",
+   "next_print": "Q3 2010 print (the quarter ends in Sep)"
+  },
+  {
+   "quarter": "Q3 2010",
+   "fy": 2010,
+   "q": 3,
+   "published": "2010-10-19",
+   "source": "UH33",
+   "release": "Oct 19",
+   "release_time": "8-K accepted 2010-10-19 06:09 ET, before the open; 'conference call with investors at 8:45 a.m. Eastern time today'",
+   "period_end": "2010-09-30",
+   "raw": {
+    "prem_m": 21467.0,
+    "prem_prior_m": 19729.0,
+    "fee_m": 2065.0,
+    "fee_prior_m": 1826.0,
+    "rev_m": 23668.0,
+    "rev_prior_m": 21695.0,
+    "rev_prev_q_m": 23264.0,
+    "mc_m": 17192.0,
+    "mc_prior_m": 16171.0,
+    "oc_m": 3548.0,
+    "oc_prior_m": 3156.0,
+    "efo_m": 2145.0,
+    "efo_prior_m": 1676.0,
+    "pretax_m": 2026.0,
+    "pretax_prior_m": 1539.0,
+    "inv_m": 136.0,
+    "inv_prior_m": 140.0
+   },
+   "sales_b": 23.668,
+   "sales_pct": 9.1,
+   "seq_pct": 1.7,
+   "prem_pct": 8.8,
+   "fee_pct": 13.1,
+   "mcr": 80.09,
+   "mcr_bp": -188.0,
+   "ocr": 14.99,
+   "ocr_bp": 44.4,
+   "op_margin": 9.06,
+   "op_margin_bp": 133.8,
+   "inv_pct": -2.9,
+   "eps_q": 1.14,
+   "eps_q_prior": 0.89,
+   "diluted_shares_m": 1124.0,
+   "sales_note": "revenues $23,668M vs $21,695M a year earlier, $23,264M the quarter before (premiums, services, products and investment and other income)",
+   "mix_note": "premiums $21,467M (+8.8%), services $1,469M and products $596M (+13.1% together), investment and other income $136M (-2.9%)",
+   "eps_note": "diluted EPS $1.14 vs $0.89 a year earlier (GAAP)",
+   "shares_note": "diluted shares 1,124M vs 1,164M a year earlier",
+   "next_print": "Q4 2010 print (the quarter ends in Dec)"
+  },
+  {
+   "quarter": "Q4 2010",
+   "fy": 2010,
+   "q": 4,
+   "published": "2011-01-20",
+   "source": "UH35",
+   "release": "Jan 20",
+   "release_time": "8-K accepted 2011-01-20 06:10 ET, before the open; 'conference call with investors at 8:45 a.m. Eastern time today'",
+   "period_end": "2010-12-31",
+   "raw": {
+    "prem_m": 21685.0,
+    "prem_prior_m": 19729.0,
+    "fee_m": 2194.0,
+    "fee_prior_m": 1914.0,
+    "rev_m": 24030.0,
+    "rev_prior_m": 21784.0,
+    "rev_prev_q_m": 23668.0,
+    "mc_m": 17258.0,
+    "mc_prior_m": 16041.0,
+    "oc_m": 4087.0,
+    "oc_prior_m": 3413.0,
+    "efo_m": 1802.0,
+    "efo_prior_m": 1575.0,
+    "pretax_m": 1684.0,
+    "pretax_prior_m": 1431.0,
+    "inv_m": 151.0,
+    "inv_prior_m": 141.0
+   },
+   "sales_b": 24.03,
+   "sales_pct": 10.3,
+   "seq_pct": 1.5,
+   "prem_pct": 9.9,
+   "fee_pct": 14.6,
+   "mcr": 79.58,
+   "mcr_bp": -172.2,
+   "ocr": 17.01,
+   "ocr_bp": 134.0,
+   "op_margin": 7.5,
+   "op_margin_bp": 26.9,
+   "inv_pct": 7.1,
+   "eps_q": 0.94,
+   "eps_q_prior": 0.81,
+   "diluted_shares_m": 1106.0,
+   "sales_note": "revenues $24,030M vs $21,784M a year earlier, $23,668M the quarter before (premiums, services, products and investment and other income)",
+   "mix_note": "premiums $21,685M (+9.9%), services $1,573M and products $621M (+14.6% together), investment and other income $151M (+7.1%)",
+   "eps_note": "diluted EPS $0.94 vs $0.81 a year earlier (GAAP)",
+   "shares_note": "diluted shares 1,106M vs 1,161M a year earlier",
+   "next_print": "Q1 2011 print (the quarter ends in Mar)",
+   "note": "Q4 2010 operating costs include $200M of goodwill impairment and business line disposition charges at Ingenix (the statement's note (a)), in the signals as published",
+   "fy_actual": {
+    "fy": 2010,
+    "fy_label": "FY10",
+    "eps_normalized": 4.1,
+    "revenue_usd_b": 94.155,
+    "diluted_shares_m": 1131.0,
+    "normalization_note": "FY10 $4.10 diluted EPS (GAAP: no filing prints a figure excluding one-offs), the Q4 2010 release",
+    "op_margin": 8.35,
+    "op_margin_note": "earnings from operations $7,864M / revenues $94,155M (Q4 2010 release)",
+    "pretax_margin": 7.84,
+    "pretax_margin_note": "earnings before income taxes $7,383M / revenues $94,155M (Q4 2010 release)",
+    "mcr": 80.61,
+    "ocr": 15.16,
+    "sales_growth": 8.1,
+    "premium_growth": 7.7,
+    "tax_rate": 0.3723,
+    "tax_note": "provision $2,749M on pre-tax $7,383M (Q4 2010 release)"
+   }
+  },
+  {
+   "quarter": "Q1 2011",
+   "fy": 2011,
+   "q": 1,
+   "published": "2011-04-21",
+   "source": "UH37",
+   "release": "Apr 21",
+   "release_time": "8-K accepted 2011-04-21 06:12 ET, before the open; 'conference call with investors at 8:45 a.m. Eastern time today'",
+   "period_end": "2011-03-31",
+   "raw": {
+    "prem_m": 23003.0,
+    "prem_prior_m": 21128.0,
+    "fee_m": 2247.0,
+    "fee_prior_m": 1892.0,
+    "rev_m": 25432.0,
+    "rev_prior_m": 23193.0,
+    "rev_prev_q_m": 24030.0,
+    "mc_m": 18725.0,
+    "mc_prior_m": 17170.0,
+    "oc_m": 3617.0,
+    "oc_prior_m": 3276.0,
+    "efo_m": 2221.0,
+    "efo_prior_m": 2016.0,
+    "pretax_m": 2103.0,
+    "pretax_prior_m": 1891.0,
+    "inv_m": 182.0,
+    "inv_prior_m": 173.0
+   },
+   "sales_b": 25.432,
+   "sales_pct": 9.7,
+   "seq_pct": 5.8,
+   "prem_pct": 8.9,
+   "fee_pct": 18.8,
+   "mcr": 81.4,
+   "mcr_bp": 13.6,
+   "ocr": 14.22,
+   "ocr_bp": 9.7,
+   "op_margin": 8.73,
+   "op_margin_bp": 4.1,
+   "inv_pct": 5.2,
+   "eps_q": 1.22,
+   "eps_q_prior": 1.03,
+   "diluted_shares_m": 1099.0,
+   "sales_note": "revenues $25,432M vs $23,193M a year earlier, $24,030M the quarter before (premiums, services, products and investment and other income)",
+   "mix_note": "premiums $23,003M (+8.9%), services $1,598M and products $649M (+18.8% together), investment and other income $182M (+5.2%)",
+   "eps_note": "diluted EPS $1.22 vs $1.03 a year earlier (GAAP)",
+   "shares_note": "diluted shares 1,099M vs 1,156M a year earlier",
+   "next_print": "Q2 2011 print (the quarter ends in Jun)"
+  },
+  {
+   "quarter": "Q2 2011",
+   "fy": 2011,
+   "q": 2,
+   "published": "2011-07-19",
+   "source": "UH38",
+   "release": "Jul 19",
+   "release_time": "8-K accepted 2011-07-19 06:10 ET, before the open; 'conference call with investors at 8:45 a.m. Eastern time today'",
+   "period_end": "2011-06-30",
+   "raw": {
+    "prem_m": 22813.0,
+    "prem_prior_m": 21125.0,
+    "fee_m": 2261.0,
+    "fee_prior_m": 1990.0,
+    "rev_m": 25234.0,
+    "rev_prior_m": 23264.0,
+    "rev_prev_q_m": 25432.0,
+    "mc_m": 18578.0,
+    "mc_prior_m": 17221.0,
+    "oc_m": 3733.0,
+    "oc_prior_m": 3359.0,
+    "efo_m": 2099.0,
+    "efo_prior_m": 1901.0,
+    "pretax_m": 1980.0,
+    "pretax_prior_m": 1782.0,
+    "inv_m": 160.0,
+    "inv_prior_m": 149.0
+   },
+   "sales_b": 25.234,
+   "sales_pct": 8.5,
+   "seq_pct": -0.8,
+   "prem_pct": 8.0,
+   "fee_pct": 13.6,
+   "mcr": 81.44,
+   "mcr_bp": -8.4,
+   "ocr": 14.79,
+   "ocr_bp": 35.5,
+   "op_margin": 8.32,
+   "op_margin_bp": 14.7,
+   "inv_pct": 7.4,
+   "eps_q": 1.16,
+   "eps_q_prior": 0.99,
+   "diluted_shares_m": 1094.0,
+   "sales_note": "revenues $25,234M vs $23,264M a year earlier, $25,432M the quarter before (premiums, services, products and investment and other income)",
+   "mix_note": "premiums $22,813M (+8.0%), services $1,656M and products $605M (+13.6% together), investment and other income $160M (+7.4%)",
+   "eps_note": "diluted EPS $1.16 vs $0.99 a year earlier (GAAP)",
+   "shares_note": "diluted shares 1,094M vs 1,135M a year earlier",
+   "next_print": "Q3 2011 print (the quarter ends in Sep)"
+  },
+  {
+   "quarter": "Q3 2011",
+   "fy": 2011,
+   "q": 3,
+   "published": "2011-10-18",
+   "source": "UH39",
+   "release": "Oct 18",
+   "release_time": "8-K accepted 2011-10-18 06:07 ET, before the open; 'conference call with investors at 8:45 a.m. Eastern time today'",
+   "period_end": "2011-09-30",
+   "raw": {
+    "prem_m": 22806.0,
+    "prem_prior_m": 21467.0,
+    "fee_m": 2304.0,
+    "fee_prior_m": 2065.0,
+    "rev_m": 25280.0,
+    "rev_prior_m": 23668.0,
+    "rev_prev_q_m": 25234.0,
+    "mc_m": 18408.0,
+    "mc_prior_m": 17192.0,
+    "oc_m": 3899.0,
+    "oc_prior_m": 3548.0,
+    "efo_m": 2070.0,
+    "efo_prior_m": 2145.0,
+    "pretax_m": 1941.0,
+    "pretax_prior_m": 2026.0,
+    "inv_m": 170.0,
+    "inv_prior_m": 136.0
+   },
+   "sales_b": 25.28,
+   "sales_pct": 6.8,
+   "seq_pct": 0.2,
+   "prem_pct": 6.2,
+   "fee_pct": 11.6,
+   "mcr": 80.72,
+   "mcr_bp": 63.0,
+   "ocr": 15.42,
+   "ocr_bp": 43.3,
+   "op_margin": 8.19,
+   "op_margin_bp": -87.5,
+   "inv_pct": 25.0,
+   "eps_q": 1.17,
+   "eps_q_prior": 1.14,
+   "diluted_shares_m": 1083.0,
+   "sales_note": "revenues $25,280M vs $23,668M a year earlier, $25,234M the quarter before (premiums, services, products and investment and other income)",
+   "mix_note": "premiums $22,806M (+6.2%), services $1,637M and products $667M (+11.6% together), investment and other income $170M (+25.0%)",
+   "eps_note": "diluted EPS $1.17 vs $1.14 a year earlier (GAAP)",
+   "shares_note": "diluted shares 1,083M vs 1,124M a year earlier",
+   "next_print": "Q4 2011 print (the quarter ends in Dec)"
+  },
+  {
+   "quarter": "Q4 2011",
+   "fy": 2011,
+   "q": 4,
+   "published": "2012-01-19",
+   "source": "UH42",
+   "release": "Jan 19",
+   "release_time": "8-K accepted 2012-01-19 06:06 ET, before the open; 'conference call with investors at 8:45 a.m. Eastern time today'",
+   "period_end": "2011-12-31",
+   "raw": {
+    "prem_m": 23361.0,
+    "prem_prior_m": 21685.0,
+    "fee_m": 2413.0,
+    "fee_prior_m": 2194.0,
+    "rev_m": 25916.0,
+    "rev_prior_m": 24030.0,
+    "rev_prev_q_m": 25280.0,
+    "mc_m": 18621.0,
+    "mc_prior_m": 17258.0,
+    "oc_m": 4308.0,
+    "oc_prior_m": 4087.0,
+    "efo_m": 2074.0,
+    "efo_prior_m": 1802.0,
+    "pretax_m": 1935.0,
+    "pretax_prior_m": 1684.0,
+    "inv_m": 142.0,
+    "inv_prior_m": 151.0
+   },
+   "sales_b": 25.916,
+   "sales_pct": 7.8,
+   "seq_pct": 2.5,
+   "prem_pct": 7.7,
+   "fee_pct": 10.0,
+   "mcr": 79.71,
+   "mcr_bp": 12.5,
+   "ocr": 16.62,
+   "ocr_bp": -38.5,
+   "op_margin": 8.0,
+   "op_margin_bp": 50.4,
+   "inv_pct": -6.0,
+   "eps_q": 1.17,
+   "eps_q_prior": 0.94,
+   "diluted_shares_m": 1075.0,
+   "sales_note": "revenues $25,916M vs $24,030M a year earlier, $25,280M the quarter before (premiums, services, products and investment and other income)",
+   "mix_note": "premiums $23,361M (+7.7%), services $1,722M and products $691M (+10.0% together), investment and other income $142M (-6.0%)",
+   "eps_note": "diluted EPS $1.17 vs $0.94 a year earlier (GAAP)",
+   "shares_note": "diluted shares 1,075M vs 1,106M a year earlier",
+   "next_print": "Q1 2012 print (the quarter ends in Mar)",
+   "note": "the year-ago Q4 2010 includes $200M of goodwill impairment and business line disposition charges at Ingenix (the Q4 2010 release's note (a)), as published",
+   "fy_actual": {
+    "fy": 2011,
+    "fy_label": "FY11",
+    "eps_normalized": 4.73,
+    "revenue_usd_b": 101.862,
+    "diluted_shares_m": 1087.0,
+    "normalization_note": "FY11 $4.73 diluted EPS (GAAP: no filing prints a figure excluding one-offs), the Q4 2011 release",
+    "op_margin": 8.31,
+    "op_margin_note": "earnings from operations $8,464M / revenues $101,862M (Q4 2011 release)",
+    "pretax_margin": 7.81,
+    "pretax_margin_note": "earnings before income taxes $7,959M / revenues $101,862M (Q4 2011 release)",
+    "mcr": 80.81,
+    "ocr": 15.27,
+    "sales_growth": 8.2,
+    "premium_growth": 7.7,
+    "tax_rate": 0.3539,
+    "tax_note": "provision $2,817M on pre-tax $7,959M (Q4 2011 release)"
+   }
+  },
+  {
+   "quarter": "Q1 2012",
+   "fy": 2012,
+   "q": 1,
+   "published": "2012-04-19",
+   "source": "UH44",
+   "release": "Apr 19",
+   "release_time": "8-K accepted 2012-04-19 06:10 ET, before the open; 'conference call with investors at 8:45 a.m. Eastern time today'",
+   "period_end": "2012-03-31",
+   "raw": {
+    "prem_m": 24631.0,
+    "prem_prior_m": 23003.0,
+    "fee_m": 2479.0,
+    "fee_prior_m": 2247.0,
+    "rev_m": 27282.0,
+    "rev_prior_m": 25432.0,
+    "rev_prev_q_m": 25916.0,
+    "mc_m": 19939.0,
+    "mc_prior_m": 18725.0,
+    "oc_m": 4096.0,
+    "oc_prior_m": 3617.0,
+    "efo_m": 2317.0,
+    "efo_prior_m": 2221.0,
+    "pretax_m": 2169.0,
+    "pretax_prior_m": 2103.0,
+    "inv_m": 172.0,
+    "inv_prior_m": 182.0
+   },
+   "sales_b": 27.282,
+   "sales_pct": 7.3,
+   "seq_pct": 5.3,
+   "prem_pct": 7.1,
+   "fee_pct": 10.3,
+   "mcr": 80.95,
+   "mcr_bp": -45.2,
+   "ocr": 15.01,
+   "ocr_bp": 79.1,
+   "op_margin": 8.49,
+   "op_margin_bp": -24.0,
+   "inv_pct": -5.5,
+   "eps_q": 1.31,
+   "eps_q_prior": 1.22,
+   "diluted_shares_m": 1060.0,
+   "sales_note": "revenues $27,282M vs $25,432M a year earlier, $25,916M the quarter before (premiums, services, products and investment and other income)",
+   "mix_note": "premiums $24,631M (+7.1%), services $1,791M and products $688M (+10.3% together), investment and other income $172M (-5.5%)",
+   "eps_note": "diluted EPS $1.31 vs $1.22 a year earlier (GAAP)",
+   "shares_note": "diluted shares 1,060M vs 1,099M a year earlier",
+   "next_print": "Q2 2012 print (the quarter ends in Jun)"
+  },
+  {
+   "quarter": "Q2 2012",
+   "fy": 2012,
+   "q": 2,
+   "published": "2012-07-19",
+   "source": "UH45",
+   "release": "Jul 19",
+   "release_time": "8-K accepted 2012-07-19 06:10 ET, before the open; 'conference call with investors at 8:45 a.m. Eastern time today'",
+   "period_end": "2012-06-30",
+   "raw": {
+    "prem_m": 24609.0,
+    "prem_prior_m": 22813.0,
+    "fee_m": 2478.0,
+    "fee_prior_m": 2261.0,
+    "rev_m": 27265.0,
+    "rev_prior_m": 25234.0,
+    "rev_prev_q_m": 27282.0,
+    "mc_m": 20013.0,
+    "mc_prior_m": 18578.0,
+    "oc_m": 4080.0,
+    "oc_prior_m": 3733.0,
+    "efo_m": 2226.0,
+    "efo_prior_m": 2099.0,
+    "pretax_m": 2073.0,
+    "pretax_prior_m": 1980.0,
+    "inv_m": 178.0,
+    "inv_prior_m": 160.0
+   },
+   "sales_b": 27.265,
+   "sales_pct": 8.0,
+   "seq_pct": -0.1,
+   "prem_pct": 7.9,
+   "fee_pct": 9.6,
+   "mcr": 81.32,
+   "mcr_bp": -11.2,
+   "ocr": 14.96,
+   "ocr_bp": 17.1,
+   "op_margin": 8.16,
+   "op_margin_bp": -15.4,
+   "inv_pct": 11.3,
+   "eps_q": 1.27,
+   "eps_q_prior": 1.16,
+   "diluted_shares_m": 1049.0,
+   "sales_note": "revenues $27,265M vs $25,234M a year earlier, $27,282M the quarter before (premiums, services, products and investment and other income)",
+   "mix_note": "premiums $24,609M (+7.9%), services $1,800M and products $678M (+9.6% together), investment and other income $178M (+11.3%)",
+   "eps_note": "diluted EPS $1.27 vs $1.16 a year earlier (GAAP)",
+   "shares_note": "diluted shares 1,049M vs 1,094M a year earlier",
+   "next_print": "Q3 2012 print (the quarter ends in Sep)"
+  },
+  {
+   "quarter": "Q3 2012",
+   "fy": 2012,
+   "q": 3,
+   "published": "2012-10-16",
+   "source": "UH46",
+   "release": "Oct 16",
+   "release_time": "8-K accepted 2012-10-16 06:02 ET, before the open; 'conference call with investors at 8:45 a.m. Eastern time today'",
+   "period_end": "2012-09-30",
+   "raw": {
+    "prem_m": 24640.0,
+    "prem_prior_m": 22806.0,
+    "fee_m": 2517.0,
+    "fee_prior_m": 2304.0,
+    "rev_m": 27302.0,
+    "rev_prior_m": 25280.0,
+    "rev_prev_q_m": 27265.0,
+    "mc_m": 19471.0,
+    "mc_prior_m": 18408.0,
+    "oc_m": 4277.0,
+    "oc_prior_m": 3899.0,
+    "efo_m": 2610.0,
+    "efo_prior_m": 2070.0,
+    "pretax_m": 2452.0,
+    "pretax_prior_m": 1941.0,
+    "inv_m": 145.0,
+    "inv_prior_m": 170.0
+   },
+   "sales_b": 27.302,
+   "sales_pct": 8.0,
+   "seq_pct": 0.1,
+   "prem_pct": 8.0,
+   "fee_pct": 9.2,
+   "mcr": 79.02,
+   "mcr_bp": -169.4,
+   "ocr": 15.67,
+   "ocr_bp": 24.2,
+   "op_margin": 9.56,
+   "op_margin_bp": 137.1,
+   "inv_pct": -14.7,
+   "eps_q": 1.5,
+   "eps_q_prior": 1.17,
+   "diluted_shares_m": 1039.0,
+   "sales_note": "revenues $27,302M vs $25,280M a year earlier, $27,265M the quarter before (premiums, services, products and investment and other income)",
+   "mix_note": "premiums $24,640M (+8.0%), services $1,824M and products $693M (+9.2% together), investment and other income $145M (-14.7%)",
+   "eps_note": "diluted EPS $1.50 vs $1.17 a year earlier (GAAP)",
+   "shares_note": "diluted shares 1,039M vs 1,083M a year earlier",
+   "next_print": "Q4 2012 print (the quarter ends in Dec)"
+  },
+  {
+   "quarter": "Q4 2012",
+   "fy": 2012,
+   "q": 4,
+   "published": "2013-01-17",
+   "source": "UH48",
+   "release": "Jan 17",
+   "release_time": "8-K accepted 2013-01-17 06:03 ET, before the open; 'conference call with investors at 8:45 a.m. Eastern time today'",
+   "period_end": "2012-12-31",
+   "raw": {
+    "prem_m": 25848.0,
+    "prem_prior_m": 23361.0,
+    "fee_m": 2737.0,
+    "fee_prior_m": 2413.0,
+    "rev_m": 28769.0,
+    "rev_prior_m": 25916.0,
+    "rev_prev_q_m": 27302.0,
+    "mc_m": 20803.0,
+    "mc_prior_m": 18621.0,
+    "oc_m": 4853.0,
+    "oc_prior_m": 4308.0,
+    "efo_m": 2101.0,
+    "efo_prior_m": 2074.0,
+    "pretax_m": 1928.0,
+    "pretax_prior_m": 1935.0,
+    "inv_m": 184.0,
+    "inv_prior_m": 142.0
+   },
+   "sales_b": 28.769,
+   "sales_pct": 11.0,
+   "seq_pct": 5.4,
+   "prem_pct": 10.6,
+   "fee_pct": 13.4,
+   "mcr": 80.48,
+   "mcr_bp": 77.2,
+   "ocr": 16.87,
+   "ocr_bp": 24.6,
+   "op_margin": 7.3,
+   "op_margin_bp": -70.0,
+   "inv_pct": 29.6,
+   "eps_q": 1.2,
+   "eps_q_prior": 1.17,
+   "diluted_shares_m": 1037.0,
+   "sales_note": "revenues $28,769M vs $25,916M a year earlier, $27,302M the quarter before (premiums, services, products and investment and other income)",
+   "mix_note": "premiums $25,848M (+10.6%), services $2,022M and products $715M (+13.4% together), investment and other income $184M (+29.6%)",
+   "eps_note": "diluted EPS attributable to UnitedHealth Group common shareholders $1.20 vs $1.17 a year earlier (GAAP)",
+   "shares_note": "diluted shares 1,037M vs 1,075M a year earlier",
+   "next_print": "Q1 2013 print (the quarter ends in Mar)",
+   "fy_actual": {
+    "fy": 2012,
+    "fy_label": "FY12",
+    "eps_normalized": 5.28,
+    "revenue_usd_b": 110.618,
+    "diluted_shares_m": 1046.0,
+    "normalization_note": "FY12 $5.28 diluted EPS attributable to UnitedHealth Group common shareholders (GAAP: no filing prints a figure excluding one-offs), the Q4 2012 release",
+    "op_margin": 8.37,
+    "op_margin_note": "earnings from operations $9,254M / revenues $110,618M (Q4 2012 release)",
+    "pretax_margin": 7.79,
+    "pretax_margin_note": "earnings before income taxes $8,622M / revenues $110,618M (Q4 2012 release)",
+    "mcr": 80.44,
+    "ocr": 15.64,
+    "sales_growth": 8.6,
+    "premium_growth": 8.4,
+    "tax_rate": 0.3591,
+    "tax_note": "provision $3,096M on pre-tax $8,622M (Q4 2012 release)"
+   }
+  },
+  {
+   "quarter": "Q1 2013",
+   "fy": 2013,
+   "q": 1,
+   "published": "2013-04-18",
+   "source": "UH50",
+   "release": "Apr 18",
+   "release_time": "8-K accepted 2013-04-18 06:02 ET, before the open; 'conference call with investors at 8:45 a.m. Eastern time today'",
+   "period_end": "2013-03-31",
+   "raw": {
+    "prem_m": 27274.0,
+    "prem_prior_m": 24631.0,
+    "fee_m": 2863.0,
+    "fee_prior_m": 2479.0,
+    "rev_m": 30340.0,
+    "rev_prior_m": 27282.0,
+    "rev_prev_q_m": 28769.0,
+    "mc_m": 22569.0,
+    "mc_prior_m": 19939.0,
+    "oc_m": 4614.0,
+    "oc_prior_m": 4096.0,
+    "efo_m": 2139.0,
+    "efo_prior_m": 2317.0,
+    "pretax_m": 1961.0,
+    "pretax_prior_m": 2169.0,
+    "inv_m": 203.0,
+    "inv_prior_m": 172.0
+   },
+   "sales_b": 30.34,
+   "sales_pct": 11.2,
+   "seq_pct": 5.5,
+   "prem_pct": 10.7,
+   "fee_pct": 15.5,
+   "mcr": 82.75,
+   "mcr_bp": 179.8,
+   "ocr": 15.21,
+   "ocr_bp": 19.4,
+   "op_margin": 7.05,
+   "op_margin_bp": -144.3,
+   "inv_pct": 18.0,
+   "eps_q": 1.16,
+   "eps_q_prior": 1.31,
+   "diluted_shares_m": 1029.0,
+   "sales_note": "revenues $30,340M vs $27,282M a year earlier, $28,769M the quarter before (premiums, services, products and investment and other income)",
+   "mix_note": "premiums $27,274M (+10.7%), services $2,112M and products $751M (+15.5% together), investment and other income $203M (+18.0%)",
+   "eps_note": "diluted EPS attributable to UnitedHealth Group common shareholders $1.16 vs $1.31 a year earlier (GAAP)",
+   "shares_note": "diluted shares 1,029M vs 1,060M a year earlier",
+   "next_print": "Q2 2013 print (the quarter ends in Jun)"
+  },
+  {
+   "quarter": "Q2 2013",
+   "fy": 2013,
+   "q": 2,
+   "published": "2013-07-18",
+   "source": "UH51",
+   "release": "Jul 18",
+   "release_time": "8-K accepted 2013-07-18 06:10 ET, before the open; 'conference call with investors at 8:45 a.m. Eastern time today'",
+   "period_end": "2013-06-30",
+   "raw": {
+    "prem_m": 27220.0,
+    "prem_prior_m": 24609.0,
+    "fee_m": 2993.0,
+    "fee_prior_m": 2478.0,
+    "rev_m": 30408.0,
+    "rev_prior_m": 27265.0,
+    "rev_prev_q_m": 30340.0,
+    "mc_m": 22173.0,
+    "mc_prior_m": 20013.0,
+    "oc_m": 4825.0,
+    "oc_prior_m": 4080.0,
+    "efo_m": 2401.0,
+    "efo_prior_m": 2226.0,
+    "pretax_m": 2225.0,
+    "pretax_prior_m": 2073.0,
+    "inv_m": 195.0,
+    "inv_prior_m": 178.0
+   },
+   "sales_b": 30.408,
+   "sales_pct": 11.5,
+   "seq_pct": 0.2,
+   "prem_pct": 10.6,
+   "fee_pct": 20.8,
+   "mcr": 81.46,
+   "mcr_bp": 13.5,
+   "ocr": 15.87,
+   "ocr_bp": 90.3,
+   "op_margin": 7.9,
+   "op_margin_bp": -26.8,
+   "inv_pct": 9.6,
+   "eps_q": 1.4,
+   "eps_q_prior": 1.27,
+   "diluted_shares_m": 1026.0,
+   "sales_note": "revenues $30,408M vs $27,265M a year earlier, $30,340M the quarter before (premiums, services, products and investment and other income)",
+   "mix_note": "premiums $27,220M (+10.6%), services $2,244M and products $749M (+20.8% together), investment and other income $195M (+9.6%)",
+   "eps_note": "diluted EPS attributable to UnitedHealth Group common shareholders $1.40 vs $1.27 a year earlier (GAAP)",
+   "shares_note": "diluted shares 1,026M vs 1,049M a year earlier",
+   "next_print": "Q3 2013 print (the quarter ends in Sep)"
+  },
+  {
+   "quarter": "Q3 2013",
+   "fy": 2013,
+   "q": 3,
+   "published": "2013-10-17",
+   "source": "UH52",
+   "release": "Oct 17",
+   "release_time": "8-K accepted 2013-10-17 06:06 ET, before the open; 'conference call with investors at 8:45 a.m. Eastern time today'",
+   "period_end": "2013-09-30",
+   "raw": {
+    "prem_m": 27356.0,
+    "prem_prior_m": 24640.0,
+    "fee_m": 3105.0,
+    "fee_prior_m": 2517.0,
+    "rev_m": 30624.0,
+    "rev_prior_m": 27302.0,
+    "rev_prev_q_m": 30408.0,
+    "mc_m": 22044.0,
+    "mc_prior_m": 19471.0,
+    "oc_m": 4869.0,
+    "oc_prior_m": 4277.0,
+    "efo_m": 2631.0,
+    "efo_prior_m": 2610.0,
+    "pretax_m": 2453.0,
+    "pretax_prior_m": 2452.0,
+    "inv_m": 163.0,
+    "inv_prior_m": 145.0
+   },
+   "sales_b": 30.624,
+   "sales_pct": 12.2,
+   "seq_pct": 0.7,
+   "prem_pct": 11.0,
+   "fee_pct": 23.4,
+   "mcr": 80.58,
+   "mcr_bp": 156.0,
+   "ocr": 15.9,
+   "ocr_bp": 23.4,
+   "op_margin": 8.59,
+   "op_margin_bp": -96.8,
+   "inv_pct": 12.4,
+   "eps_q": 1.53,
+   "eps_q_prior": 1.5,
+   "diluted_shares_m": 1024.0,
+   "sales_note": "revenues $30,624M vs $27,302M a year earlier, $30,408M the quarter before (premiums, services, products and investment and other income)",
+   "mix_note": "premiums $27,356M (+11.0%), services $2,280M and products $825M (+23.4% together), investment and other income $163M (+12.4%)",
+   "eps_note": "diluted EPS attributable to UnitedHealth Group common shareholders $1.53 vs $1.50 a year earlier (GAAP)",
+   "shares_note": "diluted shares 1,024M vs 1,039M a year earlier",
+   "next_print": "Q4 2013 print (the quarter ends in Dec)"
   }
  ],
  "guides": [
@@ -1649,9 +3315,493 @@
     89.5
    ],
    "rev_label": "revenue"
+  },
+  {
+   "fy": 2010,
+   "published": "2010-01-21",
+   "source": "UH29",
+   "doc": "Q4 2009 release",
+   "quotes": [
+    "The Company confirmed its outlook for 2010 earnings in the range of $2.90 to $3.10 per share and cash flows from operations in the range of $4.0 billion to $4.4 billion."
+   ],
+   "eps_guide": [
+    2.9,
+    3.1
+   ],
+   "eps_guide_note": "as published (GAAP), confirmed"
+  },
+  {
+   "fy": 2010,
+   "published": "2010-04-20",
+   "source": "UH31",
+   "doc": "Q1 2010 release",
+   "quotes": [
+    "The Company anticipates full year 2010 revenues of approximately $92 billion, net earnings in the range of $3.15 to $3.35 per share and cash flows from operations in the range of $4.4 billion to $4.8 billion.",
+    "Approximately $92,000 | $6,100 – $6,500 | 6.6% – 7.1%"
+   ],
+   "eps_guide": [
+    3.15,
+    3.35
+   ],
+   "eps_guide_note": "as published (GAAP)",
+   "rev_guide_usd_b": [
+    92.0,
+    92.0
+   ],
+   "rev_label": "revenue",
+   "op_margin_guide": [
+    6.6,
+    7.1
+   ],
+   "op_margin_note": "the outlook schedule's consolidated operating margin range (6.6%-7.1%, on revenues of approximately $92,000M and earnings from operations of $6,100-6,500M)"
+  },
+  {
+   "fy": 2010,
+   "published": "2010-07-20",
+   "source": "UH32",
+   "doc": "Q2 2010 release",
+   "quotes": [
+    "The Company updated its financial outlook, and now anticipates full year 2010 revenues of approximately $93 billion, net earnings in the range of $3.40 to $3.60 per share and cash flows from operations approaching $5 billion."
+   ],
+   "eps_guide": [
+    3.4,
+    3.6
+   ],
+   "eps_guide_note": "as published (GAAP)",
+   "rev_guide_usd_b": [
+    93.0,
+    93.0
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2010,
+   "published": "2010-10-19",
+   "source": "UH33",
+   "doc": "Q3 2010 release",
+   "quotes": [
+    "The Company’s full year financial outlook anticipates 2010 revenues approaching $94 billion, net earnings in the range of $3.85 to $3.95 per share and cash flows from operations of more than $5 billion."
+   ],
+   "eps_guide": [
+    3.85,
+    3.95
+   ],
+   "eps_guide_note": "as published (GAAP)",
+   "rev_guide_usd_b": [
+    94.0,
+    94.0
+   ],
+   "rev_label": "revenue",
+   "note": "'approaching $94 billion' read as the level $94B (the NVDA 'approaching' rule)"
+  },
+  {
+   "fy": 2010,
+   "published": "2010-11-29",
+   "source": "UH34",
+   "doc": "8-K of 2010-11-29",
+   "quotes": [
+    "In conjunction with the meeting, the Company will affirm its previous outlook for 2010 net earnings of $3.85 to $3.95 per share."
+   ],
+   "eps_guide": [
+    3.85,
+    3.95
+   ],
+   "eps_guide_note": "as published (GAAP), affirmed"
+  },
+  {
+   "fy": 2011,
+   "published": "2010-11-29",
+   "source": "UH34",
+   "doc": "8-K of 2010-11-29",
+   "quotes": [
+    "Management will discuss its 2011 financial outlook, which includes revenues of $99 billion to $100 billion and net earnings of $3.50 to $3.70 per shares."
+   ],
+   "eps_guide": [
+    3.5,
+    3.7
+   ],
+   "eps_guide_note": "as published (GAAP)",
+   "rev_guide_usd_b": [
+    99.0,
+    100.0
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2011,
+   "published": "2011-01-20",
+   "source": "UH35",
+   "doc": "Q4 2010 release",
+   "quotes": [
+    "Management anticipates UnitedHealth Group’s 2011 revenues will approximate $100 billion, based on strong customer retention and new growth across its businesses, as well as contributions from recent acquisitions.",
+    "The Company affirmed its outlook for 2011 net earnings in the range of $3.50 to $3.70 per share."
+   ],
+   "eps_guide": [
+    3.5,
+    3.7
+   ],
+   "eps_guide_note": "as published (GAAP), affirmed",
+   "rev_guide_usd_b": [
+    100.0,
+    100.0
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2011,
+   "published": "2011-04-21",
+   "source": "UH37",
+   "doc": "Q1 2011 release",
+   "quotes": [
+    "The Company updated its full year financial outlook based on first quarter results and business trends, and now forecasts 2011 revenues approaching $101 billion, net earnings in the range of $3.95 to $4.05 per share and cash flows from operations in a range of $5.8 billion to $6.2 billion.",
+    "Approaching | $101,000 | $7,200 – $7,500",
+    "(b) | The outlook includes an estimated $0.12 to $0.15 per share for an assessment of our pro rata portion of policyholder claims of an unaffiliated and potentially insolvent long-term care insurance company."
+   ],
+   "eps_guide": [
+    3.95,
+    4.05
+   ],
+   "eps_guide_note": "as published (GAAP), including an estimated $0.12-0.15 a share for a long-term care insurer assessment (no figure without it is published)",
+   "rev_guide_usd_b": [
+    101.0,
+    101.0
+   ],
+   "rev_label": "revenue",
+   "efo_guide_b": [
+    7.2,
+    7.5
+   ],
+   "op_margin_note": "no margin is stated: earnings from operations of $7,200-7,500M on revenues approaching $101,000M (derived, the KMI rule)",
+   "note": "'approaching $101 billion' read as the level $101B (the NVDA 'approaching' rule)"
+  },
+  {
+   "fy": 2011,
+   "published": "2011-07-19",
+   "source": "UH38",
+   "doc": "Q2 2011 release",
+   "quotes": [
+    "The Company updated its full year financial outlook based on second quarter results and business trends, and now forecasts 2011 revenues of $101 billion, net earnings in the range of $4.15 to $4.25 per share and cash flows from operations of more than $6 billion."
+   ],
+   "eps_guide": [
+    4.15,
+    4.25
+   ],
+   "eps_guide_note": "as published (GAAP)",
+   "rev_guide_usd_b": [
+    101.0,
+    101.0
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2011,
+   "published": "2011-10-18",
+   "source": "UH39",
+   "doc": "Q3 2011 release",
+   "quotes": [
+    "The Company now forecasts 2011 revenues to exceed $101 billion, net earnings in the range of $4.40 to $4.45 per share and cash flows from operations of approximately $6.2 billion."
+   ],
+   "eps_guide": [
+    4.4,
+    4.45
+   ],
+   "eps_guide_note": "as published (GAAP), including an estimate of the long-term care insurer assessment",
+   "note": "revenues 'to exceed $101 billion' is a one-sided bound, no field (the CAT rule): the $101B level stands"
+  },
+  {
+   "fy": 2011,
+   "published": "2011-11-04",
+   "source": "UH40",
+   "doc": "8-K of 2011-11-03",
+   "quotes": [
+    "Accordingly, the Company has adjusted its 2011 guidance to $4.52 to $4.57 per share to reflect this new development."
+   ],
+   "eps_guide": [
+    4.52,
+    4.57
+   ],
+   "eps_guide_note": "as published (GAAP): no assessment will be accrued in 2011"
+  },
+  {
+   "fy": 2011,
+   "published": "2011-11-28",
+   "source": "UH41",
+   "doc": "8-K of 2011-11-28",
+   "quotes": [
+    "In conjunction with the meeting, the Company will affirm its previous outlook for 2011 net earnings of $4.52 to $4.57 per share."
+   ],
+   "eps_guide": [
+    4.52,
+    4.57
+   ],
+   "eps_guide_note": "as published (GAAP), affirmed"
+  },
+  {
+   "fy": 2012,
+   "published": "2011-11-28",
+   "source": "UH41",
+   "doc": "8-K of 2011-11-28",
+   "quotes": [
+    "Management will discuss its 2012 financial outlook, which includes revenues of $107 billion to $108 billion and net earnings of $4.55 to $4.75 per share.",
+    "The 2012 outlook does not reflect the pending acquisition of XLHealth Corp. or include any estimate of costs pertaining to the Penn Treaty matter."
+   ],
+   "eps_guide": [
+    4.55,
+    4.75
+   ],
+   "eps_guide_note": "as published (GAAP; without the pending XLHealth acquisition or any Penn Treaty cost)",
+   "rev_guide_usd_b": [
+    107.0,
+    108.0
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2012,
+   "published": "2012-01-19",
+   "source": "UH42",
+   "doc": "Q4 2011 release",
+   "quotes": [
+    "The Company continues to estimate 2012 revenues in the range of $107 billion to $108 billion and net earnings in the range of $4.55 to $4.75 per share."
+   ],
+   "eps_guide": [
+    4.55,
+    4.75
+   ],
+   "eps_guide_note": "as published (GAAP), continued",
+   "rev_guide_usd_b": [
+    107.0,
+    108.0
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2012,
+   "published": "2012-04-19",
+   "source": "UH44",
+   "doc": "Q1 2012 release",
+   "quotes": [
+    "The Company increased its outlook for 2012 net earnings to a range of $4.80 to $4.95 per share and cash flows from operations to a range of $6.2 billion to $6.5 billion on revenues of $109 billion to $110 billion."
+   ],
+   "eps_guide": [
+    4.8,
+    4.95
+   ],
+   "eps_guide_note": "as published (GAAP)",
+   "rev_guide_usd_b": [
+    109.0,
+    110.0
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2012,
+   "published": "2012-07-19",
+   "source": "UH45",
+   "doc": "Q2 2012 release",
+   "quotes": [
+    "The Company increased its outlook for 2012 revenues to $110 billion and net earnings to a range of $4.90 to $5.00 per share."
+   ],
+   "eps_guide": [
+    4.9,
+    5.0
+   ],
+   "eps_guide_note": "as published (GAAP)",
+   "rev_guide_usd_b": [
+    110.0,
+    110.0
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2012,
+   "published": "2012-10-16",
+   "source": "UH46",
+   "doc": "Q3 2012 release",
+   "quotes": [
+    "The Company increased its outlook for 2012 net earnings to a range of $5.20 to $5.25 per share and cash flows from operations to approximately $7 billion, based on the nine-month results and expectations for fourth quarter performance."
+   ],
+   "eps_guide": [
+    5.2,
+    5.25
+   ],
+   "eps_guide_note": "as published (GAAP)"
+  },
+  {
+   "fy": 2012,
+   "published": "2012-11-26",
+   "source": "UH47",
+   "doc": "8-K of 2012-11-26",
+   "quotes": [
+    "In conjunction with the meeting, the Company will affirm its previous outlook for 2012 net earnings of $5.20 to $5.25 per share."
+   ],
+   "eps_guide": [
+    5.2,
+    5.25
+   ],
+   "eps_guide_note": "as published (GAAP), affirmed"
+  },
+  {
+   "fy": 2013,
+   "published": "2012-11-26",
+   "source": "UH47",
+   "doc": "8-K of 2012-11-26",
+   "quotes": [
+    "Management will discuss its 2013 financial outlook, which includes revenues of $123 billion to $124 billion and net earnings of $5.25 to $5.50 per share."
+   ],
+   "eps_guide": [
+    5.25,
+    5.5
+   ],
+   "eps_guide_note": "as published (GAAP)",
+   "rev_guide_usd_b": [
+    123.0,
+    124.0
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2013,
+   "published": "2013-01-17",
+   "source": "UH48",
+   "doc": "Q4 2012 release",
+   "quotes": [
+    "The Company continues to estimate 2013 revenues of $123 billion to $124 billion and net earnings in the range of $5.25 to $5.50 per share."
+   ],
+   "eps_guide": [
+    5.25,
+    5.5
+   ],
+   "eps_guide_note": "as published (GAAP), continued",
+   "rev_guide_usd_b": [
+    123.0,
+    124.0
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2013,
+   "published": "2013-04-18",
+   "source": "UH50",
+   "doc": "Q1 2013 release",
+   "quotes": [
+    "The conversion was partially offset by higher-than-expected overall business growth, and UnitedHealth Group now forecasts 2013 revenues will approximate $122 billion, an increase of 10 percent over 2012 results.",
+    "Although the April 1 sequestration cuts were not included in previous projections, the Company continues to forecast 2013 net earnings in the range of $5.25 to $5.50 per common share, recognizing sequestration pressures the top end of that range."
+   ],
+   "eps_guide": [
+    5.25,
+    5.5
+   ],
+   "eps_guide_note": "as published (GAAP), continued (the words on the top end leave the range as published)",
+   "rev_guide_usd_b": [
+    122.0,
+    122.0
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2013,
+   "published": "2013-07-18",
+   "source": "UH51",
+   "doc": "Q2 2013 release",
+   "quotes": [
+    "The Company affirmed its projections for 2013 revenues of approximately $122 billion and cash flows from operations in a range of $7.2 billion to $7.6 billion, and tightened its outlook for full year 2013 net earnings to a range of $5.35 to $5.50 per share."
+   ],
+   "eps_guide": [
+    5.35,
+    5.5
+   ],
+   "eps_guide_note": "as published (GAAP)",
+   "rev_guide_usd_b": [
+    122.0,
+    122.0
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2013,
+   "published": "2013-10-17",
+   "source": "UH52",
+   "doc": "Q3 2013 release",
+   "quotes": [
+    "The Company tightened its outlook for full year 2013 net earnings to $5.40 to $5.50 per share on annual revenues expected to reach $122 billion, representing double-digit percentage year-over-year growth."
+   ],
+   "eps_guide": [
+    5.4,
+    5.5
+   ],
+   "eps_guide_note": "as published (GAAP)",
+   "rev_guide_usd_b": [
+    122.0,
+    122.0
+   ],
+   "rev_label": "revenue",
+   "note": "revenues 'expected to reach $122 billion' read as the level $122B (the same figure as the earlier guides)"
+  },
+  {
+   "fy": 2013,
+   "published": "2013-12-02",
+   "source": "UH53",
+   "doc": "8-K of 2013-12-02",
+   "quotes": [
+    "In conjunction with the meeting, the Company will affirm its previous outlook for 2013 net earnings of $5.40 to $5.50 per share."
+   ],
+   "eps_guide": [
+    5.4,
+    5.5
+   ],
+   "eps_guide_note": "as published (GAAP), affirmed"
+  },
+  {
+   "fy": 2014,
+   "published": "2013-12-02",
+   "source": "UH53",
+   "doc": "8-K of 2013-12-02",
+   "quotes": [
+    "Management will discuss the Company’s 2014 financial outlook, which includes revenues of $128 billion to $129 billion and net earnings of $5.40 to $5.60 per share."
+   ],
+   "eps_guide": [
+    5.4,
+    5.6
+   ],
+   "eps_guide_note": "as published (GAAP)",
+   "rev_guide_usd_b": [
+    128.0,
+    129.0
+   ],
+   "rev_label": "revenue"
   }
  ],
- "dividends": [],
+ "dividends": [
+  {
+   "published": "2010-07-20",
+   "source": "UH32",
+   "annual": 0.5,
+   "quote": "During the second quarter, the Board of Directors increased the Company’s dividend to an annual rate of $0.50 per share and moved the Company to a quarterly dividend payment cycle.",
+   "note": "$0.50 a year, paid quarterly (UnitedHealth Group Q2 2010 earnings release): 'During the second quarter, the Board of Directors increased the Company’s dividend to an annual rate of $0.50 per share and moved the Company to a quarterly dividend payment cycle.'"
+  },
+  {
+   "published": "2011-07-19",
+   "source": "UH38",
+   "annual": 0.65,
+   "quote": "During the second quarter the Board of Directors increased the Company’s quarterly dividend to a rate of $0.65 per share annually and renewed the share repurchase program with an authorization to repurchase up to 110 million shares over time.",
+   "note": "$0.65 a year, paid quarterly (UnitedHealth Group Q2 2011 earnings release): 'During the second quarter the Board of Directors increased the Company’s quarterly dividend to a rate of $0.65 per share annually and renewed the share repurchase program with an authorization to repurchase up to 110 million shares over time.'"
+  },
+  {
+   "published": "2012-07-19",
+   "source": "UH45",
+   "annual": 0.85,
+   "quote": "During the second quarter the Board of Directors increased the Company's quarterly dividend 31 percent to a rate of $0.85 per share annually and renewed and expanded the share repurchase program with an authorization to repurchase up to 110 million shares over time, which is just over 10 percent of the outstanding shares.",
+   "note": "$0.85 a year, paid quarterly (UnitedHealth Group Q2 2012 earnings release): 'During the second quarter the Board of Directors increased the Company's quarterly dividend 31 percent to a rate of $0.85 per share annually and renewed and expanded the share repurchase program with an authorization to repurchase up to 110 million shares over time, which is just over 10 percent of the outstanding shares.'"
+  },
+  {
+   "published": "2013-07-18",
+   "source": "UH51",
+   "annual": 1.12,
+   "quote": "During the second quarter the Board of Directors increased the Company's quarterly dividend 32 percent to a rate of $1.12 per share annually, and renewed and expanded the share repurchase program with an authorization to repurchase up to 110 million shares over time.",
+   "note": "$1.12 a year, paid quarterly (UnitedHealth Group Q2 2013 earnings release): 'During the second quarter the Board of Directors increased the Company's quarterly dividend 32 percent to a rate of $1.12 per share annually, and renewed and expanded the share repurchase program with an authorization to repurchase up to 110 million shares over time.'"
+  }
+ ],
  "events": [],
  "company_names": [],
  "splits": [
@@ -3205,5 +5355,5 @@
    }
   }
  },
- "price_basis": "Yahoo's UNH series is adjusted for the 2-for-1 splits of 1992-09-16, 1994-03-11, 2000-12-26, 2003-06-19 and 2005-05-31; none follows 2005, so every 2008-2009 close is the price as traded, and the window's earlier days are on the post-2005 share basis. Per-share facts published before a split (the 1997-2001 history from the FY2001-FY2004 10-Ks) are divided by the splits after their own filing ('splits', the GOOG and V basis helper); share counts are multiplied. Yahoo books no distribution for UnitedHealth Group."
+ "price_basis": "Yahoo's UNH series is adjusted for the 2-for-1 splits of 1992-09-16, 1994-03-11, 2000-12-26, 2003-06-19 and 2005-05-31; none follows 2005, so every 2008-2013 close is the price as traded, and the window's earlier days are on the post-2005 share basis. Per-share facts published before a split (the 1997-2001 history from the FY2001-FY2004 10-Ks) are divided by the splits after their own filing ('splits', the GOOG and V basis helper); share counts are multiplied. Yahoo books no distribution for UnitedHealth Group."
 }

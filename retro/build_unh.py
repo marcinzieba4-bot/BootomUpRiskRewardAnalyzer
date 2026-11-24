@@ -8,7 +8,7 @@ health benefits company's signal set and UnitedHealth Group's own rule-T thresho
 as-of date the builder
   1. selects only the history vintage, prints, guides and dividends whose 'published' date is <= AS_OF,
   2. computes every market statistic from daily prices truncated at AS_OF (Yahoo's UNH series; its last split is 2005-05-31, so every
-     2008-2009 close is the price as traded, and the window's earlier days are on the post-2005 share basis),
+     2008-2013 close is the price as traded, and the window's earlier days are on the post-2005 share basis),
   3. writes <OUT>/<AS_OF>/model.py = those facts + the frozen engine, which derives every scenario input by rule.
 
 UnitedHealth Group's fiscal year is the calendar year. The method r2 inputs map as follows (retro/README.md, "UNH"; decided before any
@@ -22,21 +22,26 @@ UNH model was built or scored):
     fiscal-year revenue guide, in dollars, read as growth on the last full year's revenue in the history (the PFE, LOW, BMY and LLY
     dollar-level rule); with none, the latest quarter's revenue growth (the UNP rule);
   - guided margin step: the fiscal-year operating margin guide where a filing states one in numbers, or derives it from a guided
-    consolidated earnings from operations and revenue (the KMI derived-guide rule), against the last full year's operating margin on the
-    EPS basis; otherwise none, and the margin signal takes the latest quarter's operating margin change;
-  - dividend: the annual rate, declared once a year, from the vintage.
+    consolidated earnings from operations (a point or a range's midpoint) and revenue (the KMI derived-guide rule), against the last
+    full year's operating margin on the EPS basis; otherwise none, and the margin signal takes the latest quarter's operating margin
+    change;
+  - dividend: the latest annual rate public on AS_OF: the vintage's (declared once a year to 2010, quarterly from June 2010), or a later
+    rate from the first filing that states it ('dividends': the Q2 2010-2013 releases).
 The kind is DURABLE: no 10-K calls the business cyclical. No disruption theme in taxonomy_eras.json is live for a health benefits
-company in 2008-2009 (OFFSHORE is scoped to IT services), so the builder refuses events until a theme encoding is decided; it also
-refuses a change of company name or listing and a distribution, none of which occurs.
+company in 2008-2013: OFFSHORE is scoped to IT services and CLOUD (live from 2012-10-30) to on-premise hardware, storage, databases and
+data-center outsourcing, and no FY2006-FY2012 10-K names cloud or offshore delivery; from the first date on which a theme other than
+OFFSHORE is live, the 'why' quotes every live theme's registered scope (the CB 2014-2017 wording). The builder refuses events until a
+theme encoding is decided; it also refuses a change of company name or listing and a distribution, none of which occurs.
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
-is the first trading day after it. Every earnings 8-K of 2007-2009 was accepted before the open on its release day.
+is the first trading day after it. Every earnings 8-K of 2007-2013 was accepted before the open on its release day.
 
 Output goes to staging/retrospective/UNH until the series is added to the archive (--out archive/retrospective/UNH).
 
 Usage
   python3 retro/build_unh.py --weekly 2008-01-01 2008-12-31
   python3 retro/build_unh.py --weekly 2009-01-05 2009-12-31
+  python3 retro/build_unh.py --weekly 2010-01-04 2013-12-31
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/UNH/<AS_OF>
 """
 import argparse
@@ -54,6 +59,8 @@ from build_acn import MONTHS, load_series, minus_years, weekly_dates  # noqa: E4
 from build_unp import money, on_basis, pct_range  # noqa: E402
 
 FACTS = os.path.join(HERE, "facts", "UNH.json")
+with open(os.path.join(HERE, "taxonomy_eras.json"), encoding="utf-8") as _fh:
+    TAXO = json.load(_fh)
 ENGINE = os.path.join(HERE, "templates", "unh_engine.py.tmpl")
 OUT = os.path.join(ROOT, "staging", "retrospective", "UNH")
 SYMBOL = "UNH"
@@ -175,7 +182,13 @@ def build(as_of, facts, raw, spx, engine, out):
     held = {p["quarter"] for p in facts["prints"] if "fy_actual" in p and p["fy_actual"]["eps_normalized"] is None}
     facts = {**facts, "prints": [{**p, "fy_actual": {**p["fy_actual"], "eps_normalized": math.nan}} if p["quarter"] in held else p
                                  for p in facts["prints"]]}
-    facts, split_ids = on_basis(facts, as_of)          # every per-share fact on the AS_OF share basis
+    # the 'dividends' facts are annual rates (the shared helper restates quarterly ones): each follows the last split, so none
+    # needs restating, and they pass around it unchanged
+    annual_divs = facts.get("dividends", [])
+    assert all("annual" in d and all(d["published"] >= s["effective"] for s in facts.get("splits", [])) for d in annual_divs), \
+        "a dividend rate published before a split needs the basis helper"
+    facts, split_ids = on_basis({**facts, "dividends": []}, as_of)          # every per-share fact on the AS_OF share basis
+    facts["dividends"] = annual_divs
     for p in facts["prints"]:
         if p["quarter"] in held:
             p["fy_actual"]["eps_normalized"] = None
@@ -250,10 +263,12 @@ def build(as_of, facts, raw, spx, engine, out):
             m_lo, m_hi = gm["op_margin_guide"]
             m_txt = f"operating margin {m_lo:g}%" + ("" if m_lo == m_hi else f"-{m_hi:g}%") + f" ({gm['doc']})"
         else:
-            rr = gm.get("rev_guide_usd_b")
+            rr, efo = gm.get("rev_guide_usd_b"), gm["efo_guide_b"]
             assert rr is not None, (gm["doc"], "a derived margin needs the same guide's revenue")
-            m_lo = m_hi = round(gm["efo_guide_b"] / (sum(rr) / 2) * 100, 2)
-            m_txt = (f"operating margin {m_lo:.2f}%, derived: earnings from operations of about ${gm['efo_guide_b']:g}B on revenues of "
+            efo_mid = sum(efo) / 2 if isinstance(efo, list) else efo          # a range: its midpoint (the Q1 2011 schedule)
+            m_lo = m_hi = round(efo_mid / (sum(rr) / 2) * 100, 2)
+            efo_txt = f"${efo[0]:g}-{efo[1]:g}B (midpoint ${efo_mid:g}B)" if isinstance(efo, list) else f"about ${efo:g}B"
+            m_txt = (f"operating margin {m_lo:.2f}%, derived: earnings from operations of {efo_txt} on revenues of "
                      f"{usd_rng(*rr)} ({gm['doc']})")
         margin_guided, fy_margin_base = True, round((m_lo + m_hi) / 2, 3)
     else:
@@ -271,7 +286,8 @@ def build(as_of, facts, raw, spx, engine, out):
     cat3 = (f"(3) The {fy_now} EPS guide — ${eps_rng(*ge['eps_guide'])} ({ge['doc']})" + (f"; GAAP ${eps_rng(*gg['eps_gaap'])}" if gg else "")
             if ge else f"(3) A numeric {fy_now} EPS guide — none yet")
 
-    # ── dividend: the annual rate from the vintage (declared once a year, stated in each 10-K) ──
+    # ── dividend: the latest annual rate public on AS_OF: the vintage's (each 10-K), or a later rate from the first filing that
+    # states it ('dividends': the Q2 2010-2013 releases) ──
     divs = [(d["published"], d["annual"] if "annual" in d else d["quarterly"] * 4, d["note"], d["source"])
             for d in facts.get("dividends", []) if d["published"] <= as_of]
     divs.append((h["published"], h["dividend_annual"], h["dividend_note"], None))
@@ -311,8 +327,15 @@ def build(as_of, facts, raw, spx, engine, out):
     key_tail = ("Medical cost trends that outrun premium rates show up in the medical care ratio first;\n"
                 "  charges land in operating costs.")
     theme_summary = "no disruption theme has dated evidence"
-    why = (h["why"] + "; no disruption theme in taxonomy_eras.json is live for a health benefits company on this date (OFFSHORE is "
-           "scoped to IT services), so the watch list is empty and these words stay here (the PEP obesity rule)")
+    live = sorted(((t["live_from"], k, t["scope"]) for k, t in TAXO["themes"].items() if t["live_from"] <= as_of))
+    if [k for _, k, _ in live] != ["OFFSHORE"]:      # from CLOUD's 2012-10-30: every live theme with its registered scope (CB 2014-2017)
+        scopes = ", ".join(f"{k} {'is scoped to' if i == 0 else 'to'} '{sc}'" for i, (_, k, sc) in enumerate(live))
+        why = (h["why"] + "; no disruption theme in taxonomy_eras.json is live for a health benefits company on this date (of the live "
+               f"themes, {scopes}: none names health benefits, and no 10-K names cloud or offshore delivery), so the watch list is empty "
+               "and these words stay here (the PEP obesity rule)")
+    else:
+        why = (h["why"] + "; no disruption theme in taxonomy_eras.json is live for a health benefits company on this date (OFFSHORE is "
+               "scoped to IT services), so the watch list is empty and these words stay here (the PEP obesity rule)")
     cat4 = (f"(4) Operating costs — operating cost ratio {latest['ocr']:.2f}% in {latest['quarter']} ({latest['ocr_bp']:+.1f}bp YoY): "
             "where legal, restructuring and other charges land")
 

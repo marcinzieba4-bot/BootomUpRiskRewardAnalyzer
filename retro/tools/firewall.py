@@ -143,8 +143,9 @@ ratio, operating cost ratio, operating margin, quarter EPS, notes and raw figure
 after the latest vintage (or Q4 print) before CUTOFF, a later Q4 print whose full-year actuals exclude its own year, a later 10-Q
 restatement of the last print before CUTOFF (`restated`), a later guide for every guided year with every field (an EPS range and note, a
 GAAP range, a dollar revenue range, a stated margin range, then a margin derived from guided earnings from operations and a still later
-loss range), and a later vintage excluding a year with planted texts, figures, groups, window start and kind (the dividend and company name
-every fact sheet gets, too); GOOG: a print whose revenues, margins, opex and receivables gaps, quarter EPS, cash,
+loss range, then, UNH 2010-2013, a margin derived from a guided range of earnings from operations), a later annual dividend rate, and a
+later vintage excluding a year with planted texts, figures, groups, window start and kind (the dividend and company name every fact sheet
+gets, too); GOOG: a print whose revenues, margins, opex and receivables gaps, quarter EPS, cash,
 notes and raw figures are absurd, with absurd full-year actuals for the year after the latest vintage before CUTOFF, a later Q4 print
 whose full-year actuals exclude its own year, a later 10-Q restatement of the last print before CUTOFF with absurd figures, and a later
 vintage excluding a year with planted texts, figures, outlook words, exchange and window start, every per-share figure on a planted
@@ -962,8 +963,9 @@ try:
                 x["symbol"] = "PLANTED"
     if TICKER == "UNH":    # absurd full-year actuals on the planted print for the year after the latest vintage (or Q4 print) before
                            # CUTOFF, a later Q4 print whose full-year actuals exclude its own year, a later restatement of the last print
-                           # before CUTOFF (the 'restated' 10-Q field), later guides with a derived margin and a loss range for every
-                           # guided year, and a later vintage with every text and figure the models quote planted
+                           # before CUTOFF (the 'restated' 10-Q field), later guides with a derived margin (from a point and, UNH
+                           # 2010-2013, from a range) and a loss range for every guided year, a later annual dividend rate, and a later
+                           # vintage with every text and figure the models quote planted
         v0 = max((x for x in f["history_vintages"] if x["published"] < cutoff), key=lambda x: x["published"])
         y0 = max(int(y) for y in [*v0["eps_normalized"], *v0.get("eps_excluded", {})]) + 1
         fa = {"fy": y0, "fy_label": "FY99", "eps_normalized": 0.01, "revenue_usd_b": 0.01, "diluted_shares_m": 1.0,
@@ -989,6 +991,9 @@ try:
             f["guides"].append({"fy": y, "published": (dt.date.fromisoformat(later) + dt.timedelta(days=2)).isoformat(),
                                 "source": last["source"], "doc": "PLANTED", "eps_guide": [-2.0, -1.0], "eps_guide_note": "PLANTED",
                                 "quotes": ["PLANTED"]})
+            f["guides"].append({"fy": y, "published": (dt.date.fromisoformat(later) + dt.timedelta(days=3)).isoformat(),   # (UNH 2010-2013)
+                                "source": last["source"], "doc": "PLANTED", "rev_guide_usd_b": [0.5, 0.6], "rev_label": "PLANTED",
+                                "efo_guide_b": [0.01, 0.02], "op_margin_note": "PLANTED", "quotes": ["PLANTED"]})
         v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}
         v.update(normalization="PLANTED", business_line="PLANTED", prev_fy_op_margin=-99.0, prev_fy_op_margin_note="PLANTED",
                  prev_fy_pretax_margin=-99.0, prev_fy_pretax_margin_note="PLANTED", prev_fy_mcr=199.0, prev_fy_ocr=99.0,
