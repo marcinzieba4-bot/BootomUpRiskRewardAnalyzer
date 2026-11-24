@@ -25171,7 +25171,19 @@ Controls and checks (before any outcome):
   "Unison", "PacifiCare" and every later name appear in no model.
 - **Regression:** the shared code is untouched (the firewall tool gains a UNH entry, `taxonomy_eras.json` the terms above); rebuilding the
   2008-2009 dates of CB, LLY and BMY changes nothing (315 models).
-- **Firewall:** FIREWALL
+- **Firewall** (run after the build was committed, before any outcome): its first run stopped the builder at every cutoff, not on a leak:
+  the planted later Q4 print, whose full-year actuals exclude their own year, reached the shared `on_basis` split helper with EPS None. A
+  NaN now stands in there and None comes back after (the LLY and BMY encoding; no UNH year is excluded, and the 105 models rebuild
+  byte-identical). The rerun passes at all 15 cutoffs above (the first built date, every print, vintage and guide date of the range, and
+  2010-01-01: 1 to 105 dates each), 0 files changed and no planted text. The planted facts include a print with absurd revenues, premiums,
+  fees, medical care ratio, operating cost ratio, operating margin, quarter EPS, notes and raw figures, absurd full-year actuals for the
+  year after the latest vintage (or Q4 print), a later Q4 print whose full-year actuals exclude its own year, a later 10-Q restatement of
+  the last print before the cutoff (`restated`), a later guide for every guided year with every field (an EPS range and note, a GAAP range,
+  a dollar revenue range, a stated margin range), then one with a margin derived from guided earnings from operations and a still later
+  loss range, a later vintage excluding a year with planted texts, figures, groups, window start and kind, a dividend, a company name and
+  prices from the cutoff multiplied by 10. As positive controls, a planted print dated 2008-07-01 with its own source reaches 2008-07-03 (its
+  text in the model) and not 2008-06-27 (byte-identical); the same print citing a source published after AS_OF (the Q2 2008 release of
+  2008-07-22) stops at the builder's check that every source is public on AS_OF. A full rebuild is byte-identical.
 
 Seen in the build (method behaviour, not tuned). UnitedHealth Group's own decade (1998-2007) traded at 11-19x its current-year EPS in the
 calendar-year lows and around 19x at the median, against 5.7-16.0x on its own guides in 2008-2009, so every rule that reads the window
