@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  UNH  ·  UnitedHealth Group Incorporated  ·  $42.60  ·  RETROSPECTIVE as of 2011-03-18
+  Signal: ◉ BUY   Ratio B: 0.34x   Adj gap: +0.89  [UNDERVALUED]
+  Point-in-time: 14 sources, latest published 2011-03-18; latest print Q4 2010 (Jan 20)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2011E revenue, USD bn  →  FY2013E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2011E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Health Benefits               $ 77.79  $77.79  $105.94    +0.00   +28.15
+    +7.5% revenues in FY10
+  OptumHealth                   $  5.20  $ 5.20  $ 7.09    +0.00    +1.89
+    +5.8% revenues in FY10
+  Ingenix                       $  2.08  $ 2.08  $ 2.84    +0.00    +0.76
+    +28.4% revenues in FY10
+  Prescription Solutions        $ 14.92  $14.92  $20.32    +0.00    +5.40
+    +16.1% revenues in FY10
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $ 99.99  $99.99  $136.19    +0.00   +36.20
+  FY2011E = FY10 $94.155B × (1 + 6.2%: FY11 revenue guide midpoint (Q4 2010 release)); split pro rata to FY10 segment revenues before eliminations (FY10 growth)
+  Q4 2010 (Jan 20): revenues $24.030B +10.3% YoY (+1.5% QoQ); premiums +9.9%; services and products +14.6%;
+  medical care ratio 79.58% (-172.2bp); operating cost ratio 17.01% (+134.0bp); operating margin 7.50% (+26.9bp); EPS $0.94 vs $0.81
+  Revenue: revenues $24,030M vs $21,784M a year earlier, $23,668M the quarter before (premiums, services, products and investment and other income); premiums $21,685M (+9.9%), services $1,573M and products $621M (+14.6% together), investment and other income $151M (+7.1%); diluted EPS $0.94 vs $0.81 a year earlier (GAAP); diluted shares 1,106M vs 1,161M a year earlier; Q4 2010 operating costs include $200M of goodwill impairment and business line disposition charges at Ingenix (the statement's note (a)), in the signals as published
+  FY11 guide (8-K of 2010-11-29, Q4 2010 release): EPS $3.50-3.70 (Q4 2010 release: as published (GAAP), affirmed); revenue about $100.0B (+6.2% on FY10's $94.16B; Q4 2010 release); no operating margin guide in numbers
+
+  FY2011E EPS check:  $99.990B × 7.8% pre-tax × (1−37.2%) ÷ 1.106B  =  $4.45  (FY2011E EPS, guide midpoint ($3.50-3.70, Q4 2010 release))
+  FY2013E BEAR check: $99.990B × 7.8% ÷ 1.070B  =  $4.60  (scenario $2.56)
+  FY2013E BULL check: $136.190B × 8.2% ÷ 1.070B  =  $6.58  (scenario $5.33)
+  Every 1pp of pre-tax margin ≈ $0.567 EPS ≈ $9.48/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Premium revenue growth                 -6.0%     ≥6.0%    ≥18.0%    ≥56.0%     +9.9%  ◦ BASE  ██░░
+  Medical care ratio                  +630.0bp  ≤290.0bp  ≤-60.0bp  ≤-230.0bp  -172.2bp  ▲ BULL  ███░
+  Fee revenue (services+products)        -8.0%     ≥2.0%    ≥12.0%    ≥31.0%    +14.6%  ▲ BULL  ███░
+  Operating cost ratio                +160.0bp   ≤60.0bp  ≤-50.0bp  ≤-300.0bp  +134.0bp  ⚠ BEAR  █░░░
+  Operating margin change             -1400.0bp  ≥-650.0bp   ≥90.0bp  ≥510.0bp   +26.9bp  ◦ BASE  ██░░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.20 / 4.00
+  Market composite:   1.64 / 4.00  (back-solved from $42.60 + 15% hurdle)
+  SCA adjustment:    +0.13  ·  EPP-distance adj +0.20  →  Adj composite 2.53  →  Gap +0.89  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY10 revenues +8.1%, premiums +7.7%, medical care ratio 80.61%; Q4 medical care ratio 79.58% (-172bp YoY)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 11.8x FY11E vs a 16.7x 10-yr median (29th percentile of its own range)  (+0.35 × 25%  =  +0.087)
+    -  Growth vs own history: FY11 revenue guide +6.2% vs a 10.3% 9-yr median  (-0.41 × 20%  =  -0.082)
+    +  FY10 cash and investments $25.90B, cash flows from operations $6.27B, debt-to-total-capital 30.1%, dividend $0.50 a year  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Premium revenue growth                 +9.9%     -6.0%  -15.9%  Risk-based membership and premium yie…
+  Medical care ratio                  -172.2bp  +630.0bp  +802.2bp  Medical costs outrun premium rates
+  Fee revenue (services+products)       +14.6%     -8.0%  -22.6%  Fee-based clients and services shrink
+  Operating cost ratio                +134.0bp  +160.0bp  +26.0bp  Administrative costs outgrow revenues
+  Operating margin change              +26.9bp  -1400.0bp  -1426.9bp  Medical and operating costs outrun re…
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$37.29  (model)  /  $20.22 (defined)
+  Bear probability (proxy model):  14.7%
+
+  KEY TRIGGER: revenue went from +9.1% (Q3 2010) to +10.3% YoY (Q4 2010), +1.5% on the quarter before;
+  the bear case needs the medical care ratio (-172.2bp YoY now) rising further
+  and premium growth (+9.9% YoY) fading as risk membership shrinks. Medical cost trends that outrun premium rates show up in the medical care ratio first;
+  charges land in operating costs.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $3.60  (FY2011E EPS, guide midpoint ($3.50-3.70, Q4 2010 release))
+  Min viable P/E at panic:          14x  [median of calendar-year P/E lows: 2001 18.8x, 2002 17.9x, 2003 14.9x, 2004 15.4x, 2005 18.6x, 2006 14.2x, 2007 13.2x, 2008 5.5x, 2009 5.0x, 2010 6.8x, 2011 10.3x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $50.40/share
+  Current $42.60 vs Updated EPP $50.40:  -15%  ✓ BELOW panic floor — deep-value zone
+  Bear $20.22 vs Updated EPP $50.40:  -60%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Premium revenue growth                         6.0       -3.9   BASE floor (vs +10 now)
+  Medical care ratio                           290.0     +462.2   BASE floor (vs -172 now)
+  Fee revenue (services+products)                2.0      -12.6   BASE floor (vs +15 now)
+  Operating cost ratio                          60.0      -74.0   BASE floor (vs +134 now)
+  Operating margin change                     -650.0     -676.9   BASE floor (vs +27 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $3.60 × (1+5.8%)² = $4.03
+  At 16x P/E (conservative):  $64.51/share
+  + Cumul. dividends (2yr):  +$1.03/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $64.51  (▲21.91 from $42.60)
+  Conservative total return:  +54% over 2yr  = +27%/yr
+
+  At 11.8x the multiple is already near its 16x median, so the conservative
+  case is a growth question: breakeven at 16x needs FY2013E EPS of $2.60,
+  i.e. -15.0%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $27.13  –  $44.89  (at 87th pct of range)
+  Annual dividend:      $0.50/share  (yield 1.2%)
+  Realized vol:         24% annualized (1-yr daily log returns)
+  Beta vs broad market: 0.74
+  1-sigma range (1yr):  $32.38  –  $52.82  ($42.60 ± 24%)
+  2-sigma range (1yr):  $22.15  –  $63.05
+  ────────────────────────────────────────────────────────────
+  Bear $20.22 requires:  ~2.2σ price move  (unusual — requires fundamental break)
+  A health benefits company whose earnings follow medical cost trends against premium rates: the stock is +53% off its July
+  low (52 weeks) while revenue went from +9.1% (Q3 2010) to +10.3% YoY (Q4 2010), +1.5% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        2.56    7.9x  $  20.22    14.7%     41.5%   -26.8pp  EPS -15.7%/yr (worst year FY01-FY10, capped at 0%); P/E to its 10th pct
+  BASE        4.19   16.7x  $  69.97    51.3%     43.6%    +7.7pp  EPS +7.8%/yr (FY11 guide + margin + buyback); P/E at its 10-yr median
+  BULL        5.33   20.2x  $ 107.67    28.6%     12.5%   +16.1pp  EPS +21.7%/yr (FY01-FY10 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL       6.93   23.4x  $ 162.16     5.4%      2.4%    +3.0pp  EPS +38.8%/yr (best 2-yr run FY01-FY10, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $78.43  /  Market EV: $56.21  /  Current: $42.60
+  Conservative EV (2yr, ④): $64.51 + $1.03 divs = $65.54 total value
+  Downside (→ Bear $20.22): 52.5%   Upside (→ Bull $107.67): 152.7%   Ratio B 0.34x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $42.60 the market needs $56.34 in two years —
+  at or below the BASE case. That is a market composite of 1.64 against a model
+  read of 2.53: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.34x     -15%    +0.89  UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.20x     -15%    +1.09  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.51x     -15%    +0.36  MODESTLY UNDERVALUED / BUY
+  Scenario EPS +1.5pp/yr                          0.32x     -15%    +0.92  UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.37x     -15%    +0.85  UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.34x     -15%    +1.19  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.34x     -30%    +0.89  UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.34x     -15%    +0.98  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 2011 print (the quarter ends in Mar) — revenue against the FY11 revenue guide: +6.2% YoY
+  (2) Medical costs — the medical care ratio was 79.58% in Q4 2010 (-172.2bp YoY): what must hold for premiums to turn into earnings
+  (3) The FY11 EPS guide — $3.50-3.70 (Q4 2010 release)
+  (4) Operating costs — operating cost ratio 17.01% in Q4 2010 (+134.0bp YoY): where legal, restructuring and other charges land
+  (5) Capital at 12x — dividend $0.50 a year ($0.125 a quarter): 'In May 2010, our Board of Directors increased our cash dividend to shareholders and moved us to a quarterly dividend payment cycle of $0.125 per share.'; diluted shares 1,106M vs 1,161M a year earlier
+  ◉ BUY  |  EPP floor $50.40  |  ADD below ~$59.47  |  TRIM above $107.67
+════════════════════════════════════════════════════════════════════════
+
