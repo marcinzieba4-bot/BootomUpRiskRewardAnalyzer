@@ -25366,6 +25366,15 @@ Controls and checks (before any outcome):
 - **Self-text scan:** every capitalized word, dollar figure and year in each of the 83 facts' own text appears in a UnitedHealth Group
   filing filed by the fact's date (1,051 tokens, 0 misses).
 - **Regression:** the 105 models of 2008-2009 rebuild byte for byte; no other ticker's code changes (the firewall tool gains a UNH plant).
+- **Firewall** (run after the build, checks and README section were committed, before any 2010-2013 outcome): it passes at all 27
+  cutoffs above (2010-01-01, every print, 10-K and guide 8-K date of the range, and 2014-01-01: 105 to 314 dates each), 0 files changed
+  and no planted text. The planted facts now also include, for every guided year, a later guide whose margin is derived from a range of
+  guided earnings from operations, and a later annual dividend rate, beside the 2008-2009 batch's plants (a print with absurd figures and
+  full-year actuals, a later Q4 print excluding its own year, a later 10-Q restatement of the last print, later guides with every field
+  and a still later loss range, a later vintage excluding a year with every quoted text and figure planted, a company name and prices
+  from the cutoff multiplied by 10). As positive controls, a planted print dated 2012-05-30 with its own source reaches 2012-06-01 (its
+  text in the model) and not 2012-05-25 (byte-identical); the same print citing a source published after AS_OF (the Q2 2012 release of
+  2012-07-19) stops at the builder's check that every source is public on AS_OF.
 
 Seen in the build (method behaviour, not tuned):
 UnitedHealth Group's ten-year window loses the early 2000s' growth multiples and gains 2008-2012's, so its median falls from 17.8x to
