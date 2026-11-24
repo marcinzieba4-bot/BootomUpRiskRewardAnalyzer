@@ -1,19 +1,23 @@
 # UNH retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the UNH weekly dates: 314, 105 from 2008-01-04 to 2009-12-31 and 209 from 2010-01-08 to 2013-12-31,
-all UnitedHealth Group Incorporated (NYSE: UNH). They are **labels and hypotheses**: never feed them back into the method or the fact sheet. The batch was scored only after its
+Patterns seen in `outcome.json` for the UNH weekly dates: 522, 105 from 2008-01-04 to 2009-12-31, 209 from 2010-01-08 to 2013-12-31 and
+208 from 2014-01-10 to 2017-12-29, all UnitedHealth Group Incorporated (NYSE: UNH). They are **labels and hypotheses**: never feed them back into the method or the fact sheet. The batch was scored only after its
 point-in-time build, validation, README section and firewall result were committed and pushed (95bb426, the builder fix the firewall's first
 run needed 36eb1c4, firewall result 4a203a3); the outcomes were computed on 2026-11-24. Every date has its 6-month, 1-, 2- and 3-year
 horizons (the last ends 2012-12-28 for 2008-2009 and 2016-12-30 for 2010-2013). The 2010-2013 batch was decided in the session that
 scored 2008-2009 (disclosed in retro/README.md, "UNH 2010-2013") and scored only after its build, validation outputs, README section and
-firewall result were committed and pushed (5ed6613, 237ded5, 5fcd318, ac1542c), on 2026-11-24. Total returns include the dividends (the
+firewall result were committed and pushed (5ed6613, 237ded5, 5fcd318, ac1542c), on 2026-11-24. The 208 dates of 2014-2017 (2014-01-10 to
+2017-12-29) were built in a new session that did not open these findings or any outcome before scoring (disclosed in retro/README.md,
+"UNH 2014-2017"), and scored only after its build, validation outputs, README section and firewall result were committed and pushed
+(3f76218, 4a671e7, c7ba971, 96a0fd5), on 2026-11-24; their last horizon ends 2020-12-29. Total returns include the dividends (the
 annual $0.03 to the ex-date of 2010-04-01, then quarterly: $0.125 from 2010-06-03, $0.163 from 2011-06-03, $0.213 from 2012-06-13, $0.28
-from 2013-06-13, $0.375 from 2014-06-12, $0.50 from 2015-06-11, $0.625 from 2016-06-15). No split falls in any horizon, so every price
-is as traded.
+from 2013-06-13, $0.375 from 2014-06-12, $0.50 from 2015-06-11, $0.625 from 2016-06-15, $0.75 from 2017-06-15, $0.90 from 2018-06-15,
+$1.08 from 2019-06-14, $1.25 from 2020-06-19). No split falls in any horizon, so every price is as traded.
 Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years and +52.1%
 over three. "Call held" is `call_check_2y`: CHEAP should clear the hurdle or beat the benchmark (SPY), FAIR should land within 15pp of
 it either way. Every 2008-2012 date was CHEAP and BUY, so those tables test that one call against the calendar; 2013 has 29 CHEAP and
-BUY dates and 24 FAIR (5 BUY, 19 ACCUMULATE).
+BUY dates and 24 FAIR (5 BUY, 19 ACCUMULATE); 2014-2017 has 192 RICH dates (14 WATCHLIST, 178 AVOID) and 16 FAIR (7 ACCUMULATE,
+9 WATCHLIST), and RICH expects the stock to miss the hurdle and lag SPY.
 
 ## 2008 (53 dates)
 
@@ -207,4 +211,129 @@ Across the 209 dates of 2010-2013:
   moved 51 classes from 2011-05-06 (7 CHEAP to FAIR, 20 CHEAP to RICH, the 24 FAIR to RICH): 47 of those dates beat SPY over two years; the
   other 4 are the May-June 2011 misses (0.5-2.1pp behind SPY), where FAIR would have held.
 - **Profile drift:** the kind (DURABLE, risk 2) matches today's profile on all 209 dates (a 2026 analysis, read here only through
+  `profile_drift`).
+
+## 2014 (51 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class FAIR, legacy tier ACCUMULATE | 7 | +61.2% | +51.9% to +64.3% | 7 | 7 | +61.3% | 0 |
+| class FAIR, legacy tier WATCHLIST | 7 | +62.2% | +60.1% to +70.0% | 7 | 7 | +50.2% | 0 |
+| class RICH, legacy tier AVOID | 23 | +62.7% | +51.9% to +74.1% | 23 | 23 | +43.7% | 0 |
+| class RICH, legacy tier WATCHLIST | 14 | +77.2% | +70.0% to +82.1% | 14 | 14 | +53.1% | 0 |
+| FY13E $5.45 (2014-01-10 to 2014-01-10) | 1 | +51.9% | +51.9% to +51.9% | 1 | 1 | +56.4% | 0 |
+| FY14E $5.5 (2014-01-17 to 2014-07-11) | 26 | +70.0% | +55.2% to +81.4% | 26 | 26 | +53.1% | 0 |
+| FY14E $5.55 (2014-07-18 to 2014-10-10) | 13 | +66.4% | +60.0% to +82.1% | 13 | 13 | +46.5% | 0 |
+| FY14E $5.625 (2014-10-17 to 2014-12-26) | 11 | +61.3% | +51.9% to +65.8% | 11 | 11 | +35.3% | 0 |
+| latest print Q3 2013 (2014-01-10 to 2014-01-10) | 1 | +51.9% | +51.9% to +51.9% | 1 | 1 | +56.4% | 0 |
+| latest print Q4 2013 (2014-01-17 to 2014-04-11) | 13 | +62.2% | +55.2% to +70.0% | 13 | 13 | +55.7% | 0 |
+| latest print Q1 2014 (2014-04-17 to 2014-07-11) | 13 | +74.8% | +70.0% to +81.4% | 13 | 13 | +52.6% | 0 |
+| latest print Q2 2014 (2014-07-18 to 2014-10-10) | 13 | +66.4% | +60.0% to +82.1% | 13 | 13 | +46.5% | 0 |
+| latest print Q3 2014 (2014-10-17 to 2014-12-26) | 11 | +61.3% | +51.9% to +65.8% | 11 | 11 | +35.3% | 0 |
+
+- **Both calls "failed" on all 51 dates: UnitedHealth Group beat SPY over two years on every one.** The 14 FAIR entries (2014-01-10 to
+  2014-04-11; $71.36-81.62, 13.0-14.8x the guide) returned +51.9% to +70.0% (SPY by 43.3-56.0pp, where FAIR expects a result within
+  15pp); the 37 RICH ones ($75.03-102.55, 13.6-18.2x) +51.9% to +82.1% (SPY by 39.4-66.7pp, where RICH expects a miss of the hurdle and of
+  the benchmark). Over three years every 2014 date returned +109.7% to +151.2%. Two years on the price was $109.27-163.03 and landed
+  nearest BULL on 44 dates and XBULL on 7.
+- **The guide rose all year** ($5.40-5.60 to $5.60-5.65, and FY2014 came in at $5.70), as in 2010-2013, and so did the revenue guide
+  ($128-129B to about $130B, actual $130.474B). Nothing in the guide said RICH; the class came from the window (median 11.3-11.4x, the
+  floor 9x) against 13-18x.
+
+## 2015 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 53 | +58.2% | +42.8% to +96.8% | 53 | 53 | +31.9% | 0 |
+| FY14E $5.625 (2015-01-02 to 2015-01-16) | 3 | +60.2% | +57.0% to +63.0% | 3 | 3 | +31.5% | 0 |
+| FY15E $6.125 (2015-01-22 to 2015-04-10) | 12 | +49.3% | +42.8% to +56.6% | 12 | 12 | +25.4% | 0 |
+| FY15E $6.225 (2015-04-17 to 2015-07-10) | 13 | +54.7% | +44.6% to +58.2% | 13 | 13 | +29.0% | 0 |
+| FY15E $6.3 (2015-07-17 to 2015-11-13) | 18 | +69.2% | +54.3% to +95.4% | 18 | 18 | +43.5% | 0 |
+| FY15E $6 (2015-11-20 to 2015-12-31) | 7 | +91.9% | +90.1% to +96.8% | 7 | 7 | +57.8% | 0 |
+| latest print Q3 2014 (2015-01-02 to 2015-01-16) | 3 | +60.2% | +57.0% to +63.0% | 3 | 3 | +31.5% | 0 |
+| latest print Q4 2014 (2015-01-22 to 2015-04-10) | 12 | +49.3% | +42.8% to +56.6% | 12 | 12 | +25.4% | 0 |
+| latest print Q1 2015 (2015-04-17 to 2015-07-10) | 13 | +54.7% | +44.6% to +58.2% | 13 | 13 | +29.0% | 0 |
+| latest print Q2 2015 (2015-07-17 to 2015-10-09) | 13 | +68.8% | +54.3% to +82.0% | 13 | 13 | +40.6% | 0 |
+| latest print Q3 2015 (2015-10-16 to 2015-12-31) | 12 | +90.5% | +65.2% to +96.8% | 12 | 12 | +57.7% | 0 |
+
+- **RICH "failed" on all 53 dates.** $100.78-123.85 at 17.3-19.8x the guide (the 86th-95th percentile) returned +42.8% to +96.8% over two
+  years, SPY by 25.1-63.3pp, and +91.1% to +149.1% over three; the two-year price ($157.62-222.77) landed nearest XBULL on every date.
+  Even the five dates priced above the BULL case (Ratio B infinite, 2015-03-20 to 2015-06-26) returned +42.8% to +54.1%.
+- **The one guide cut of the series came before the best entries of the year.** The 8-K of 2015-11-19 cut FY2015 from $6.25-6.35 to
+  "approximately $6.00" (the individual exchange losses); the seven dates on the cut guide ($112.97-118.34, 18.8-19.7x) returned +90.1% to
+  +96.8%, the 18 before it on $6.25-6.35 +54.3% to +95.4%. In 2008 the CHEAP calls on successive cuts were the weak ones; here a single
+  cut, against a raised guide for the next year ($7.10-7.30), was followed by the strongest returns. The class did not change at the cut
+  (RICH either way), so this says nothing about the call; it is a caution against reading "guide cut" as one pattern.
+
+## 2016 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class FAIR, legacy tier WATCHLIST | 2 | +106.5% | +101.6% to +106.5% | 2 | 2 | +73.7% | 0 |
+| class RICH, legacy tier AVOID | 50 | +87.1% | +50.1% to +119.4% | 50 | 50 | +60.0% | 0 |
+| FY15E $6 (2016-01-08 to 2016-01-15) | 2 | +114.0% | +108.8% to +114.0% | 2 | 2 | +72.4% | 0 |
+| FY16E $7.2 (2016-01-20 to 2016-07-15) | 26 | +86.9% | +69.0% to +119.4% | 26 | 26 | +58.2% | 0 |
+| FY16E $7.325 (2016-07-20 to 2016-10-14) | 13 | +94.4% | +80.7% to +105.3% | 13 | 13 | +67.3% | 0 |
+| FY16E $7.45 (2016-10-19 to 2016-12-30) | 11 | +79.0% | +50.1% to +93.9% | 11 | 11 | +60.0% | 0 |
+| latest print Q3 2015 (2016-01-08 to 2016-01-15) | 2 | +114.0% | +108.8% to +114.0% | 2 | 2 | +72.4% | 0 |
+| latest print Q4 2015 (2016-01-20 to 2016-04-15) | 13 | +89.2% | +69.0% to +119.4% | 13 | 13 | +62.0% | 0 |
+| latest print Q1 2016 (2016-04-20 to 2016-07-15) | 13 | +86.6% | +78.3% to +91.0% | 13 | 13 | +56.7% | 0 |
+| latest print Q2 2016 (2016-07-20 to 2016-10-14) | 13 | +94.4% | +80.7% to +105.3% | 13 | 13 | +67.3% | 0 |
+| latest print Q3 2016 (2016-10-19 to 2016-12-30) | 11 | +79.0% | +50.1% to +93.9% | 11 | 11 | +60.0% | 0 |
+
+- **RICH "failed" on all 50 RICH dates and FAIR on both FAIR dates.** The year's two-year returns were the series' highest: +50.1% to
+  +119.4% (median +88.0%), SPY by 37.2-67.6pp, the price two years on $212.55-281.36, nearest XBULL on every date. The two FAIR dates
+  (2016-02-05 and 2016-02-12, $111.72-111.82, 15.5x) returned +101.6% and +106.5%. BASE was +18.2-21.4%, carried by Catamaran's
+  revenue.
+
+## 2017 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 52 | +37.7% | +13.6% to +76.0% | 35 | 44 | +37.5% | 8 |
+| FY16E $7.45 (2017-01-06 to 2017-01-13) | 2 | +57.0% | +51.4% to +57.0% | 2 | 2 | +53.9% | 0 |
+| FY17E $8.9 (2017-01-18 to 2017-04-13) | 13 | +54.8% | +39.3% to +76.0% | 13 | 13 | +54.6% | 0 |
+| FY17E $9.2 (2017-04-19 to 2017-07-14) | 13 | +39.3% | +34.9% to +46.0% | 13 | 13 | +42.4% | 0 |
+| FY17E $9.275 (2017-07-19 to 2017-10-13) | 13 | +22.2% | +13.6% to +39.3% | 4 | 7 | +30.1% | 6 |
+| FY17E $9.45 (2017-10-18 to 2017-12-29) | 11 | +28.5% | +18.6% to +37.7% | 3 | 9 | +16.2% | 2 |
+| latest print Q3 2016 (2017-01-06 to 2017-01-13) | 2 | +57.0% | +51.4% to +57.0% | 2 | 2 | +53.9% | 0 |
+| latest print Q4 2016 (2017-01-18 to 2017-04-13) | 13 | +54.8% | +39.3% to +76.0% | 13 | 13 | +54.6% | 0 |
+| latest print Q1 2017 (2017-04-19 to 2017-07-14) | 13 | +39.3% | +34.9% to +46.0% | 13 | 13 | +42.4% | 0 |
+| latest print Q2 2017 (2017-07-19 to 2017-10-13) | 13 | +22.2% | +13.6% to +39.3% | 4 | 7 | +30.1% | 6 |
+| latest print Q3 2017 (2017-10-18 to 2017-12-29) | 11 | +28.5% | +18.6% to +37.7% | 3 | 9 | +16.2% | 2 |
+
+- **RICH held on 8 of the 52 dates, all from 2017-09-01 to 2017-11-03** ($192.52-212.87, 20.8-22.5x the guide): they returned +13.6% to
+  +21.9% over two years, 0.6-8.1pp behind SPY. On the other 44 the stock beat SPY; the first half's entries ($157.62-187.96, 17.7-21.8x)
+  returned +34.9% to +76.0% and cleared the hurdle on all 28, the second half's ($189.19-226.78, 20.4-24.0x) +13.6% to +39.3% and cleared
+  it on 7 of 24. Over three years every 2017 date beat SPY (+39.8% to +96.2%). The ten dates above the BULL case (Ratio B infinite, from
+  2017-10-27) returned +18.6% to +37.7%, 8 of them ahead of SPY.
+- **The late-2017 entries were the first to look expensive in hindsight**, and they were also the first at 20x and more the guide: the
+  two-year return falls with the entry multiple across the 208 dates (median +70.0% at 12-15x, +69.0% at 15-19x, +56.1% at 19-21x, +31.9%
+  at 21-24x; correlation -0.40), but it stayed positive on every date, and the eight dates that lagged SPY were all at 20.8-22.5x.
+
+Across the 208 dates of 2014-2017:
+- **RICH held on 8 of 192 dates; FAIR on none of 16.** The RICH dates returned a median +65.6% over two years and +100.9% over three,
+  the FAIR dates +63.1% and +129.3%; UnitedHealth Group beat SPY over two years on 200 of the 208 dates and over three years on all 208,
+  and cleared the two-year hurdle on 191. By tier: ACCUMULATE 7 (median +61.2%), WATCHLIST 23 (+74.8%), AVOID 178 (+63.0%). Judged by
+  `return_to_avg_price_m12_m24_pct` the medians are +49.2% (2014), +31.9% (2015), +60.4% (2016) and +37.5% (2017).
+- **The 2013 hypothesis, extended.** The ten-year window held the 2008-2013 regime on every date (median 11.3-11.4x, the EPP floor 9x,
+  set by 2008-2013's calendar-year lows of 5.0-9.5x), while the price tripled and the multiple on the guide rose from 13x to 24x; the
+  method read RICH from April 2014 and kept reading it through a +107% median three-year return. The window's median reflected the derating of
+  2008-2012 rather than anything in the 2014-2017 filings. Hypothesis, not a rule: a window dominated by a derated regime misreads the rerating that
+  follows it, first as FAIR (2013) and then as RICH (2014-2017). Test it on other tickers with a regime change inside the window (and
+  against a window that excludes the crisis years); never fit it to UNH.
+- **The pre-outcome sensitivity runs do not rescue the calls.** Every date that a tested encoding moved before any outcome (the adjusted
+  EPS guides 5, the revenue-guide reading 14, 2007-2008 at GAAP 2, the signals at BEAR 16 and at XBULL 26, a five-year window 24) beat SPY
+  over two years; only the 7 moves to CHEAP (the revenue-guide reading's 2, the XBULL signals' 5) would have made a call hold. A five-year
+  window, which still holds 2009-2013, moved 24 classes in both directions.
+- **The guides were raised in every year (FY2015's then cut once, in November), and each year came in at or above its last guide
+  but FY2016 as the 10-K restated it** (FY2014 $5.70 against a last guide of $5.60-5.65; FY2015 $6.01 against the cut "approximately
+  $6.00"; FY2016 $7.48 in the Q4 release against "approximately $7.45", $7.25 in the 10-K after the
+  Penn Treaty assessments; FY2017 $10.72 in the Q4 2017 release of 2018-01-16, outside the series, against "to approach $9.45", with a
+  $1.22 Tax Act benefit). The EPS growth that followed was +3.6% (FY2014), +5.4% (FY2015), +20.6% (FY2016, on the 10-K's $7.25) and
+  +47.9% (FY2017; +31.0% without the tax benefit): the price ran ahead of the earnings in 2014-2015 and the earnings caught up in
+  2016-2017, so the multiple rerated before the faster earnings growth arrived, and the earnings then carried the price.
+- **The Q4 2016 restatement and the adjusted EPS made no difference:** the series' calls are the same with the release's Q4 2016 figures,
+  and the adjusted ranges move 5 dates from RICH to FAIR, which beat SPY by more than 15pp either way.
+- **Profile drift:** the kind (DURABLE, risk 2) matches today's profile on all 208 dates (a 2026 analysis, read here only through
   `profile_drift`).
