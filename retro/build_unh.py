@@ -26,12 +26,14 @@ UNH model was built or scored):
     full year's operating margin on the EPS basis; otherwise none, and the margin signal takes the latest quarter's operating margin
     change;
   - dividend: the latest annual rate public on AS_OF: the vintage's (declared once a year to 2010, quarterly from June 2010), or a later
-    rate from the first filing that states it ('dividends': the Q2 2010-2013 releases).
+    rate from the first filing that states it ('dividends': the Q2 2010-2017 releases).
 The kind is DURABLE: no 10-K calls the business cyclical. No disruption theme in taxonomy_eras.json is live for a health benefits
-company in 2008-2013: OFFSHORE is scoped to IT services and CLOUD (live from 2012-10-30) to on-premise hardware, storage, databases and
-data-center outsourcing, and no FY2006-FY2012 10-K names cloud or offshore delivery; from the first date on which a theme other than
-OFFSHORE is live, the 'why' quotes every live theme's registered scope (the CB 2014-2017 wording). The builder refuses events until a
-theme encoding is decided; it also refuses a change of company name or listing and a distribution, none of which occurs.
+company in 2008-2017: OFFSHORE is scoped to IT services, CLOUD (live from 2012-10-30) to on-premise hardware, storage, databases and
+data-center outsourcing, ECOMMERCE (2015-01-01) to physical retail, STREAMING (2015-08-04) to pay-TV and ENERGY_TRANSITION (2015-12-12)
+to fossil reserves and refining; no FY2006-FY2014 10-K names cloud or offshore delivery, and the FY2015 and FY2016 10-Ks name cloud only
+among OptumInsight's solutions for care providers ('cloud_words' on the vintage, quoted from that date); from the first date on which a
+theme other than OFFSHORE is live, the 'why' quotes every live theme's registered scope (the CB 2014-2017 wording). The builder refuses
+events until a theme encoding is decided; it also refuses a change of company name or listing and a distribution, none of which occurs.
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
 is the first trading day after it. Every earnings 8-K of 2007-2013 was accepted before the open on its release day.
@@ -42,6 +44,7 @@ Usage
   python3 retro/build_unh.py --weekly 2008-01-01 2008-12-31
   python3 retro/build_unh.py --weekly 2009-01-05 2009-12-31
   python3 retro/build_unh.py --weekly 2010-01-04 2013-12-31
+  python3 retro/build_unh.py --weekly 2014-01-06 2017-12-31
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/UNH/<AS_OF>
 """
 import argparse
@@ -330,8 +333,12 @@ def build(as_of, facts, raw, spx, engine, out):
     live = sorted(((t["live_from"], k, t["scope"]) for k, t in TAXO["themes"].items() if t["live_from"] <= as_of))
     if [k for _, k, _ in live] != ["OFFSHORE"]:      # from CLOUD's 2012-10-30: every live theme with its registered scope (CB 2014-2017)
         scopes = ", ".join(f"{k} {'is scoped to' if i == 0 else 'to'} '{sc}'" for i, (_, k, sc) in enumerate(live))
+        # from the FY2015 10-K, the first to name cloud, in one of OptumInsight's offerings ('cloud_words'; README "UNH 2014-2017")
+        tenk = ("no 10-K names cloud or offshore delivery" if not h.get("cloud_words") else
+                f"no 10-K names offshore delivery; the {h['fy_label']} 10-K names cloud only among OptumInsight's own solutions for "
+                f"care providers ('{h['cloud_words']}'), not as a substitute for UnitedHealth Group's business")
         why = (h["why"] + "; no disruption theme in taxonomy_eras.json is live for a health benefits company on this date (of the live "
-               f"themes, {scopes}: none names health benefits, and no 10-K names cloud or offshore delivery), so the watch list is empty "
+               f"themes, {scopes}: none names health benefits, and {tenk}), so the watch list is empty "
                "and these words stay here (the PEP obesity rule)")
     else:
         why = (h["why"] + "; no disruption theme in taxonomy_eras.json is live for a health benefits company on this date (OFFSHORE is "

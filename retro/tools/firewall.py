@@ -144,8 +144,8 @@ after the latest vintage (or Q4 print) before CUTOFF, a later Q4 print whose ful
 restatement of the last print before CUTOFF (`restated`), a later guide for every guided year with every field (an EPS range and note, a
 GAAP range, a dollar revenue range, a stated margin range, then a margin derived from guided earnings from operations and a still later
 loss range, then, UNH 2010-2013, a margin derived from a guided range of earnings from operations), a later annual dividend rate, and a
-later vintage excluding a year with planted texts, figures, groups, window start and kind (the dividend and company name every fact sheet
-gets, too); GOOG: a print whose revenues, margins, opex and receivables gaps, quarter EPS, cash,
+later vintage excluding a year with planted texts, figures, groups, window start and kind, and from UNH 2014-2017 planted cloud words
+(the dividend and company name every fact sheet gets, too); GOOG: a print whose revenues, margins, opex and receivables gaps, quarter EPS, cash,
 notes and raw figures are absurd, with absurd full-year actuals for the year after the latest vintage before CUTOFF, a later Q4 print
 whose full-year actuals exclude its own year, a later 10-Q restatement of the last print before CUTOFF with absurd figures, and a later
 vintage excluding a year with planted texts, figures, outlook words, exchange and window start, every per-share figure on a planted
@@ -1000,7 +1000,7 @@ try:
                  prev_fy_sales_growth=-99.0, prev_fy_premium_growth=-99.0, tax_rate=0.99, tax_note="PLANTED", cash_inv_b=0.01,
                  cfo_b=-99.0, debt_to_cap=99.0, dividend_annual=9.99, dividend_note="PLANTED", groups=[["PLANTED", 1, -99]],
                  groups_basis="PLANTED", exchange="PLANTED", pe_window_start="1990-01-02", kind="CYCLICAL",
-                 margin_signal_name="PLANTED", fy_label="PLANTED")
+                 margin_signal_name="PLANTED", fy_label="PLANTED", cloud_words="PLANTED")      # cloud words: UNH 2014-2017
         f["dividends"][-1]["annual"] = 9.99
     if TICKER == "MU":     # a later vintage excluding a year and readmitting none, with planted texts and figures
         v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}
