@@ -1,5 +1,5 @@
 {
- "_doc": "Point-in-time fact sheet for UNH retrospectives (retro/build_unh.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2002); every earnings 8-K of 2007-2017 was accepted before the open on its release day. UnitedHealth Group's fiscal year is the calendar year. The builder uses the latest history vintage published by AS_OF (each year from the latest filing that reports it, ten years to the latest one, each per-share figure on the basis of its own filing and restated by 'splits'), the prints published by AS_OF that report a fiscal year after that history (a Q4 print extends the history until the 10-K), the guides for the current fiscal year (each field from the latest guide that states it) and the latest annual dividend rate (the vintage's, or a later rate in 'dividends' from the first filing that states it). EPS is diluted EPS at the company's figure excluding only one-offs where a filing on the same basis prints it (1998, 1999, 2000, 2007 and 2008), GAAP otherwise (2009-2016 among them; from 2015 the releases' adjusted EPS also excludes the amortization of acquisition-related intangible assets, which recurs); the guides are the company's figures where a guide is given with and without announced items (the IRS Section 409A charges in 2007; the 2008 legal settlements, severance and the Nevada sale), GAAP otherwise. Revenue is guided in dollars, read as growth on the last full year; the operating margin is guided in numbers in the Q1 and Q2 2008 and Q1 2010 outlook schedules (and derived from guided earnings from operations and revenue in the 8-K of 2008-07-02 and the Q1 2011 schedule). A print's growth rates and ratios are derived from the raw figures of its release's statement of operations ('raw', $ millions; the builder re-derives and checks them), each against the year-ago quarter in the same release, as reported (charges in); the Q2 2007 print is restated by its 10-Q from 2007-08-06 and the Q4 2016 print by the FY2016 10-K from 2017-02-09 ('restated'). Rule T's raw figures are in 'rule_t'. No later fact enters through this file.",
+ "_doc": "Point-in-time fact sheet for UNH retrospectives (retro/build_unh.py). Every value is tied to a source and becomes visible only on or after that source's 'published' date. A filing accepted after the 16:00 ET close is dated the next trading day ('filed' keeps the acceptance time, US Eastern; EDGAR gives only the filing date before 2002); every earnings 8-K of 2007-2021 was accepted before the open on its release day. UnitedHealth Group's fiscal year is the calendar year. The builder uses the latest history vintage published by AS_OF (each year from the latest filing that reports it, ten years to the latest one, each per-share figure on the basis of its own filing and restated by 'splits'), the prints published by AS_OF that report a fiscal year after that history (a Q4 print extends the history until the 10-K), the guides for the current fiscal year (each field from the latest guide that states it) and the latest annual dividend rate (the vintage's, or a later rate in 'dividends' from the first filing that states it). EPS is diluted EPS at the company's figure excluding only one-offs where a filing on the same basis prints it (1998, 1999, 2000, 2007 and 2008), GAAP otherwise (2009-2020 among them, 2017 with its Tax Reform benefit; from 2015 the releases' adjusted EPS also excludes the amortization of acquisition-related intangible assets, which recurs); the guides are the company's figures where a guide is given with and without announced items (the IRS Section 409A charges in 2007; the 2008 legal settlements, severance and the Nevada sale), GAAP otherwise. Revenue is guided in dollars, read as growth on the last full year; the operating margin is guided in numbers in the Q1 and Q2 2008 and Q1 2010 outlook schedules (and derived from guided earnings from operations and revenue in the 8-K of 2008-07-02 and the Q1 2011 schedule). A print's growth rates and ratios are derived from the raw figures of its release's statement of operations ('raw', $ millions; the builder re-derives and checks them), each against the year-ago quarter in the same release, as reported (charges in); the Q2 2007 print is restated by its 10-Q from 2007-08-06 and the Q4 2016 print by the FY2016 10-K from 2017-02-09 ('restated'). Rule T's raw figures are in 'rule_t'. No later fact enters through this file.",
  "ticker": "UNH",
  "sources": {
   "UH1": {
@@ -547,6 +547,188 @@
    "title": "UnitedHealth Group 8-K of 2017-11-27 (investor conference release, Exhibit 99.1)",
    "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176617000049/investorconferenceexhibit9.htm",
    "supports": "FY2017 and FY2018 guides"
+  },
+  "UH79": {
+   "published": "2018-01-16",
+   "filed": "2018-01-16 06:08 ET, before the open",
+   "title": "UnitedHealth Group Q4 2017 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176618000002/q42017exhibit991.htm",
+   "supports": "Q4 2017 print and FY2017 actuals (GAAP); FY2018 guide"
+  },
+  "UH80": {
+   "published": "2018-02-14",
+   "filed": "2018-02-13 16:10 ET, after the close",
+   "title": "UnitedHealth Group FY2017 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176618000005/unh2017123110-k.htm",
+   "supports": "history vintage FY2017"
+  },
+  "UH81": {
+   "published": "2018-04-17",
+   "filed": "2018-04-17 06:04 ET, before the open",
+   "title": "UnitedHealth Group Q1 2018 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176618000015/a2018q1exhibit991.htm",
+   "supports": "Q1 2018 print; FY2018 guide"
+  },
+  "UH82": {
+   "published": "2018-07-17",
+   "filed": "2018-07-17 06:04 ET, before the open",
+   "title": "UnitedHealth Group Q2 2018 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176618000027/a2018q2exhibit991.htm",
+   "supports": "Q2 2018 print; FY2018 guide; the $3.60 annual dividend rate"
+  },
+  "UH83": {
+   "published": "2018-10-16",
+   "filed": "2018-10-16 06:03 ET, before the open",
+   "title": "UnitedHealth Group Q3 2018 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176618000037/a2018q3exhibit991.htm",
+   "supports": "Q3 2018 print; FY2018 guide"
+  },
+  "UH84": {
+   "published": "2018-11-27",
+   "filed": "2018-11-26 16:50 ET, after the close",
+   "title": "UnitedHealth Group 8-K of 2018-11-26 (investor conference outlook release, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176618000048/exhibit991.htm",
+   "supports": "FY2018 and FY2019 guides"
+  },
+  "UH85": {
+   "published": "2019-01-15",
+   "filed": "2019-01-15 06:02 ET, before the open",
+   "title": "UnitedHealth Group Q4 2018 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176619000002/a2018q4exhibit991.htm",
+   "supports": "Q4 2018 print and FY2018 actuals (GAAP); FY2019 guide"
+  },
+  "UH86": {
+   "published": "2019-02-13",
+   "filed": "2019-02-12 17:16 ET, after the close",
+   "title": "UnitedHealth Group FY2018 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176619000005/unh2018123110-k.htm",
+   "supports": "history vintage FY2018"
+  },
+  "UH87": {
+   "published": "2019-04-16",
+   "filed": "2019-04-16 06:08 ET, before the open",
+   "title": "UnitedHealth Group Q1 2019 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176619000011/a2019q1exhibit991.htm",
+   "supports": "Q1 2019 print; FY2019 guide"
+  },
+  "UH88": {
+   "published": "2019-07-18",
+   "filed": "2019-07-18 06:02 ET, before the open",
+   "title": "UnitedHealth Group Q2 2019 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176619000023/a2019q2exhibit991.htm",
+   "supports": "Q2 2019 print; FY2019 guide; the $4.32 annual dividend rate"
+  },
+  "UH89": {
+   "published": "2019-10-15",
+   "filed": "2019-10-15 06:34 ET, before the open",
+   "title": "UnitedHealth Group Q3 2019 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176619000031/a2019q3exhibit991.htm",
+   "supports": "Q3 2019 print; FY2019 guide"
+  },
+  "UH90": {
+   "published": "2019-12-03",
+   "filed": "2019-12-02 16:18 ET, after the close",
+   "title": "UnitedHealth Group 8-K of 2019-12-02 (investor conference outlook release, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176619000042/a201912-2exhibit991.htm",
+   "supports": "FY2019 and FY2020 guides"
+  },
+  "UH91": {
+   "published": "2020-01-15",
+   "filed": "2020-01-15 06:04 ET, before the open",
+   "title": "UnitedHealth Group Q4 2019 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176620000002/a2019q4exhibit991.htm",
+   "supports": "Q4 2019 print and FY2019 actuals (GAAP); FY2020 guide"
+  },
+  "UH92": {
+   "published": "2020-02-18",
+   "filed": "2020-02-14 17:18 ET, after the close",
+   "title": "UnitedHealth Group FY2019 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176620000006/unh2019123110-k.htm",
+   "supports": "history vintage FY2019"
+  },
+  "UH93": {
+   "published": "2020-04-15",
+   "filed": "2020-04-15 06:06 ET, before the open",
+   "title": "UnitedHealth Group Q1 2020 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176620000020/a2020q1exhibit991.htm",
+   "supports": "Q1 2020 print; FY2020 guide"
+  },
+  "UH94": {
+   "published": "2020-07-15",
+   "filed": "2020-07-15 06:04 ET, before the open",
+   "title": "UnitedHealth Group Q2 2020 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176620000038/a2020q2exhibit991.htm",
+   "supports": "Q2 2020 print; FY2020 guide"
+  },
+  "UH95": {
+   "published": "2020-08-03",
+   "filed": "2020-07-31 20:03 ET, after the close",
+   "title": "UnitedHealth Group Q2 2020 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176620000042/unh-20200630.htm",
+   "supports": "the $5.00 annual dividend rate"
+  },
+  "UH96": {
+   "published": "2020-10-14",
+   "filed": "2020-10-14 06:03 ET, before the open",
+   "title": "UnitedHealth Group Q3 2020 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176620000045/a2020q3exhibit991.htm",
+   "supports": "Q3 2020 print; FY2020 guide"
+  },
+  "UH97": {
+   "published": "2020-12-01",
+   "filed": "2020-12-01 06:35 ET, before the open",
+   "title": "UnitedHealth Group 8-K of 2020-12-01 (investor conference outlook release, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176620000058/a2020investorexhibit.htm",
+   "supports": "FY2020 and FY2021 guides"
+  },
+  "UH98": {
+   "published": "2021-01-20",
+   "filed": "2021-01-20 06:01 ET, before the open",
+   "title": "UnitedHealth Group Q4 2020 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176621000002/a2020q4exhibit991.htm",
+   "supports": "Q4 2020 print and FY2020 actuals (GAAP); FY2021 guide"
+  },
+  "UH99": {
+   "published": "2021-03-02",
+   "filed": "2021-03-01 16:02 ET, after the close",
+   "title": "UnitedHealth Group FY2020 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176621000013/unh-20201231.htm",
+   "supports": "history vintage FY2020"
+  },
+  "UH100": {
+   "published": "2021-04-15",
+   "filed": "2021-04-15 06:03 ET, before the open",
+   "title": "UnitedHealth Group Q1 2021 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176621000018/a2021q1exhibit991.htm",
+   "supports": "Q1 2021 print; FY2021 guide"
+  },
+  "UH101": {
+   "published": "2021-07-15",
+   "filed": "2021-07-15 06:03 ET, before the open",
+   "title": "UnitedHealth Group Q2 2021 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176621000033/a2021q2exhibit991.htm",
+   "supports": "Q2 2021 print; FY2021 guide"
+  },
+  "UH102": {
+   "published": "2021-08-04",
+   "filed": "2021-08-03 17:02 ET, after the close",
+   "title": "UnitedHealth Group Q2 2021 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176621000037/unh-20210630.htm",
+   "supports": "the $5.80 annual dividend rate"
+  },
+  "UH103": {
+   "published": "2021-10-14",
+   "filed": "2021-10-14 06:05 ET, before the open",
+   "title": "UnitedHealth Group Q3 2021 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176621000040/a2021q3exhibit991.htm",
+   "supports": "Q3 2021 print; FY2021 guide"
+  },
+  "UH104": {
+   "published": "2021-11-30",
+   "filed": "2021-11-29 17:16 ET, after the close",
+   "title": "UnitedHealth Group 8-K of 2021-11-29 (investor conference outlook release, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176621000057/a2021investorconferencegui.htm",
+   "supports": "FY2021 and FY2022 guides"
   }
  },
  "history_vintages": [
@@ -2293,6 +2475,639 @@
    "cfo_b": 9.795,
    "debt_to_cap": 46.3,
    "cloud_words": "compliance, cloud-enabled collaboration and consumer engagement"
+  },
+  {
+   "published": "2018-02-14",
+   "sources": [
+    "UH23",
+    "UH36",
+    "UH43",
+    "UH49",
+    "UH55",
+    "UH61",
+    "UH68",
+    "UH74",
+    "UH80"
+   ],
+   "fy_label": "FY17",
+   "kind": "DURABLE",
+   "why": "'UnitedHealth Group is a diversified health care company dedicated to helping people live healthier lives and helping make the health system work better for everyone.' 'If we fail to estimate, price for and manage our medical costs in an effective manner, the profitability of our risk-based products and services could decline and could materially and adversely affect our results of operations, financial position and cash flows.' 'Premium revenues from risk-based benefits products comprise nearly 80% of our total consolidated revenues.'",
+   "eps_normalized": {
+    "2008": 2.95,
+    "2009": 3.24,
+    "2010": 4.1,
+    "2011": 4.73,
+    "2012": 5.28,
+    "2013": 5.5,
+    "2014": 5.7,
+    "2015": 6.01,
+    "2016": 7.25,
+    "2017": 10.72
+   },
+   "eps_sources": {
+    "2008": "UH23",
+    "2009": "UH55",
+    "2010": "UH61",
+    "2011": "UH68",
+    "2012": "UH74",
+    "2013": "UH80",
+    "2014": "UH80",
+    "2015": "UH80",
+    "2016": "UH80",
+    "2017": "UH80"
+   },
+   "eps_published": {
+    "2008": "2009-01-22",
+    "2009": "2014-02-13",
+    "2010": "2015-02-11",
+    "2011": "2016-02-10",
+    "2012": "2017-02-09",
+    "2013": "2018-02-14",
+    "2014": "2018-02-14",
+    "2015": "2018-02-14",
+    "2016": "2018-02-14",
+    "2017": "2018-02-14"
+   },
+   "revenue_usd_b": {
+    "2008": 81.186,
+    "2009": 87.138,
+    "2010": 94.155,
+    "2011": 101.862,
+    "2012": 110.618,
+    "2013": 122.489,
+    "2014": 130.474,
+    "2015": 157.107,
+    "2016": 184.84,
+    "2017": 201.159
+   },
+   "revenue_sources": {
+    "2008": "UH49",
+    "2009": "UH55",
+    "2010": "UH61",
+    "2011": "UH68",
+    "2012": "UH74",
+    "2013": "UH80",
+    "2014": "UH80",
+    "2015": "UH80",
+    "2016": "UH80",
+    "2017": "UH80"
+   },
+   "diluted_shares_m": {
+    "2008": 1241.0,
+    "2009": 1179.0,
+    "2010": 1131.0,
+    "2011": 1087.0,
+    "2012": 1046.0,
+    "2013": 1023.0,
+    "2014": 986.0,
+    "2015": 967.0,
+    "2016": 968.0,
+    "2017": 985.0
+   },
+   "shares_sources": {
+    "2008": "UH36",
+    "2009": "UH43",
+    "2010": "UH49",
+    "2011": "UH55",
+    "2012": "UH61",
+    "2013": "UH68",
+    "2014": "UH74",
+    "2015": "UH80",
+    "2016": "UH80",
+    "2017": "UH80"
+   },
+   "shares_published": {
+    "2008": "2011-02-11",
+    "2009": "2012-02-09",
+    "2010": "2013-02-07",
+    "2011": "2014-02-13",
+    "2012": "2015-02-11",
+    "2013": "2016-02-10",
+    "2014": "2017-02-09",
+    "2015": "2018-02-14",
+    "2016": "2018-02-14",
+    "2017": "2018-02-14"
+   },
+   "normalization": "diluted EPS, each year from the latest filing that reports it, at the company's figure excluding only one-offs where a filing on the same basis prints it (the ACN rule), GAAP otherwise; 2008 $2.95 excluding special items ($0.55: the stock option class action settlements and legal costs, the out-of-network class action settlement, severance, and the Nevada Medicare Advantage sale; the Q4 2008 release's reconciliation; GAAP $2.40 in the FY2008 10-K); from 2015 the releases' adjusted EPS excludes the amortization of acquisition-related intangible assets, which recurs, so GAAP stands; 2017 $10.72 at GAAP with the $1.22 per-share Tax Reform benefit (no filing prints a per-share figure excluding only it)",
+   "margin_signal_name": "Operating margin change",
+   "dividend_annual": 3.0,
+   "dividend_note": "$3.00 a year, paid quarterly: 'In June 2017, our Board of Directors increased the Company’s quarterly cash dividend to shareholders to an annual dividend rate of $3.00 per share compared to the annual dividend rate of $2.50 per share, which the Company had paid since June 2016.'",
+   "business_line": "diversified health and well-being: UnitedHealthcare, OptumHealth, OptumInsight, OptumRx",
+   "groups": [
+    [
+     "UnitedHealthcare",
+     163.257,
+     9.9
+    ],
+    [
+     "OptumHealth",
+     20.57,
+     21.7
+    ],
+    [
+     "OptumInsight",
+     8.087,
+     10.3
+    ],
+    [
+     "OptumRx",
+     63.755,
+     5.5
+    ]
+   ],
+   "groups_basis": "FY17 segment revenues before eliminations (FY17 growth)",
+   "company": "UnitedHealth Group Incorporated",
+   "exchange": "NYSE",
+   "pe_window_start": null,
+   "fiscal_year": "the calendar year",
+   "prev_fy_op_margin": 7.56,
+   "prev_fy_op_margin_note": "earnings from operations $15,209M / revenues $201,159M (FY2017 10-K)",
+   "prev_fy_pretax_margin": 6.97,
+   "prev_fy_pretax_margin_note": "earnings before income taxes $14,023M / revenues $201,159M (FY2017 10-K)",
+   "prev_fy_mcr": 82.07,
+   "prev_fy_ocr": 14.69,
+   "prev_fy_sales_growth": 8.8,
+   "prev_fy_premium_growth": 9.9,
+   "tax_rate": 0.2282,
+   "tax_note": "provision $3,200M on pre-tax $14,023M (FY2017 10-K)",
+   "cash_inv_b": 43.831,
+   "cfo_b": 13.596,
+   "debt_to_cap": 38.9,
+   "cloud_words": "compliance, cloud-enabled collaboration and consumer engagement"
+  },
+  {
+   "published": "2019-02-13",
+   "sources": [
+    "UH43",
+    "UH49",
+    "UH55",
+    "UH61",
+    "UH68",
+    "UH74",
+    "UH80",
+    "UH86"
+   ],
+   "fy_label": "FY18",
+   "kind": "DURABLE",
+   "why": "'UnitedHealth Group is a diversified health care company dedicated to helping people live healthier lives and helping make the health system work better for everyone.' 'If we fail to estimate, price for and manage our medical costs in an effective manner, the profitability of our risk-based products and services could decline and could materially and adversely affect our results of operations, financial position and cash flows.' 'Premium revenues from risk-based benefits products comprise nearly 80% of our total consolidated revenues.'",
+   "eps_normalized": {
+    "2009": 3.24,
+    "2010": 4.1,
+    "2011": 4.73,
+    "2012": 5.28,
+    "2013": 5.5,
+    "2014": 5.7,
+    "2015": 6.01,
+    "2016": 7.25,
+    "2017": 10.72,
+    "2018": 12.19
+   },
+   "eps_sources": {
+    "2009": "UH55",
+    "2010": "UH61",
+    "2011": "UH68",
+    "2012": "UH74",
+    "2013": "UH80",
+    "2014": "UH86",
+    "2015": "UH86",
+    "2016": "UH86",
+    "2017": "UH86",
+    "2018": "UH86"
+   },
+   "eps_published": {
+    "2009": "2014-02-13",
+    "2010": "2015-02-11",
+    "2011": "2016-02-10",
+    "2012": "2017-02-09",
+    "2013": "2018-02-14",
+    "2014": "2019-02-13",
+    "2015": "2019-02-13",
+    "2016": "2019-02-13",
+    "2017": "2019-02-13",
+    "2018": "2019-02-13"
+   },
+   "revenue_usd_b": {
+    "2009": 87.138,
+    "2010": 94.155,
+    "2011": 101.862,
+    "2012": 110.618,
+    "2013": 122.489,
+    "2014": 130.474,
+    "2015": 157.107,
+    "2016": 184.84,
+    "2017": 201.159,
+    "2018": 226.247
+   },
+   "revenue_sources": {
+    "2009": "UH55",
+    "2010": "UH61",
+    "2011": "UH68",
+    "2012": "UH74",
+    "2013": "UH80",
+    "2014": "UH86",
+    "2015": "UH86",
+    "2016": "UH86",
+    "2017": "UH86",
+    "2018": "UH86"
+   },
+   "diluted_shares_m": {
+    "2009": 1179.0,
+    "2010": 1131.0,
+    "2011": 1087.0,
+    "2012": 1046.0,
+    "2013": 1023.0,
+    "2014": 986.0,
+    "2015": 967.0,
+    "2016": 968.0,
+    "2017": 985.0,
+    "2018": 983.0
+   },
+   "shares_sources": {
+    "2009": "UH43",
+    "2010": "UH49",
+    "2011": "UH55",
+    "2012": "UH61",
+    "2013": "UH68",
+    "2014": "UH74",
+    "2015": "UH80",
+    "2016": "UH86",
+    "2017": "UH86",
+    "2018": "UH86"
+   },
+   "shares_published": {
+    "2009": "2012-02-09",
+    "2010": "2013-02-07",
+    "2011": "2014-02-13",
+    "2012": "2015-02-11",
+    "2013": "2016-02-10",
+    "2014": "2017-02-09",
+    "2015": "2018-02-14",
+    "2016": "2019-02-13",
+    "2017": "2019-02-13",
+    "2018": "2019-02-13"
+   },
+   "normalization": "diluted EPS, each year from the latest filing that reports it, at the company's figure excluding only one-offs where a filing on the same basis prints it (the ACN rule), GAAP otherwise; from 2015 the releases' adjusted EPS excludes the amortization of acquisition-related intangible assets, which recurs, so GAAP stands; 2017 $10.72 at GAAP with the $1.22 per-share Tax Reform benefit (no filing prints a per-share figure excluding only it)",
+   "margin_signal_name": "Operating margin change",
+   "dividend_annual": 3.6,
+   "dividend_note": "$3.60 a year, paid quarterly: 'In June 2018, our Board of Directors increased the Company’s annual cash dividend rate to shareholders to $3.60 per share compared to $3.00 per share, which the Company had paid since June 2017.'",
+   "business_line": "diversified health and well-being: UnitedHealthcare, OptumHealth, OptumInsight, OptumRx",
+   "groups": [
+    [
+     "UnitedHealthcare",
+     183.476,
+     12.4
+    ],
+    [
+     "OptumHealth",
+     24.145,
+     17.4
+    ],
+    [
+     "OptumInsight",
+     9.008,
+     11.4
+    ],
+    [
+     "OptumRx",
+     69.536,
+     9.1
+    ]
+   ],
+   "groups_basis": "FY18 segment revenues before eliminations (FY18 growth)",
+   "company": "UnitedHealth Group Incorporated",
+   "exchange": "NYSE",
+   "pe_window_start": null,
+   "fiscal_year": "the calendar year",
+   "prev_fy_op_margin": 7.67,
+   "prev_fy_op_margin_note": "earnings from operations $17,344M / revenues $226,247M (FY2018 10-K)",
+   "prev_fy_pretax_margin": 7.05,
+   "prev_fy_pretax_margin_note": "earnings before income taxes $15,944M / revenues $226,247M (FY2018 10-K)",
+   "prev_fy_mcr": 81.65,
+   "prev_fy_ocr": 15.06,
+   "prev_fy_sales_growth": 12.5,
+   "prev_fy_premium_growth": 12.4,
+   "tax_rate": 0.2234,
+   "tax_note": "provision $3,562M on pre-tax $15,944M (FY2018 10-K)",
+   "cash_inv_b": 46.834,
+   "cfo_b": 15.713,
+   "debt_to_cap": 40.2,
+   "cloud_words": "compliance, cloud-enabled collaboration and consumer engagement"
+  },
+  {
+   "published": "2020-02-18",
+   "sources": [
+    "UH49",
+    "UH55",
+    "UH61",
+    "UH68",
+    "UH74",
+    "UH80",
+    "UH86",
+    "UH92"
+   ],
+   "fy_label": "FY19",
+   "kind": "DURABLE",
+   "why": "'UnitedHealth Group is a diversified health care company dedicated to helping people live healthier lives and helping make the health system work better for everyone.' 'If we fail to estimate, price for and manage our medical costs in an effective manner, the profitability of our risk-based products and services could decline and could materially and adversely affect our results of operations, financial position and cash flows.' 'Premium revenues from risk-based products comprise nearly 80% of our total consolidated revenues.'",
+   "eps_normalized": {
+    "2010": 4.1,
+    "2011": 4.73,
+    "2012": 5.28,
+    "2013": 5.5,
+    "2014": 5.7,
+    "2015": 6.01,
+    "2016": 7.25,
+    "2017": 10.72,
+    "2018": 12.19,
+    "2019": 14.33
+   },
+   "eps_sources": {
+    "2010": "UH61",
+    "2011": "UH68",
+    "2012": "UH74",
+    "2013": "UH80",
+    "2014": "UH86",
+    "2015": "UH92",
+    "2016": "UH92",
+    "2017": "UH92",
+    "2018": "UH92",
+    "2019": "UH92"
+   },
+   "eps_published": {
+    "2010": "2015-02-11",
+    "2011": "2016-02-10",
+    "2012": "2017-02-09",
+    "2013": "2018-02-14",
+    "2014": "2019-02-13",
+    "2015": "2020-02-18",
+    "2016": "2020-02-18",
+    "2017": "2020-02-18",
+    "2018": "2020-02-18",
+    "2019": "2020-02-18"
+   },
+   "revenue_usd_b": {
+    "2010": 94.155,
+    "2011": 101.862,
+    "2012": 110.618,
+    "2013": 122.489,
+    "2014": 130.474,
+    "2015": 157.107,
+    "2016": 184.84,
+    "2017": 201.159,
+    "2018": 226.247,
+    "2019": 242.155
+   },
+   "revenue_sources": {
+    "2010": "UH61",
+    "2011": "UH68",
+    "2012": "UH74",
+    "2013": "UH80",
+    "2014": "UH86",
+    "2015": "UH92",
+    "2016": "UH92",
+    "2017": "UH92",
+    "2018": "UH92",
+    "2019": "UH92"
+   },
+   "diluted_shares_m": {
+    "2010": 1131.0,
+    "2011": 1087.0,
+    "2012": 1046.0,
+    "2013": 1023.0,
+    "2014": 986.0,
+    "2015": 967.0,
+    "2016": 968.0,
+    "2017": 985.0,
+    "2018": 983.0,
+    "2019": 966.0
+   },
+   "shares_sources": {
+    "2010": "UH49",
+    "2011": "UH55",
+    "2012": "UH61",
+    "2013": "UH68",
+    "2014": "UH74",
+    "2015": "UH80",
+    "2016": "UH86",
+    "2017": "UH92",
+    "2018": "UH92",
+    "2019": "UH92"
+   },
+   "shares_published": {
+    "2010": "2013-02-07",
+    "2011": "2014-02-13",
+    "2012": "2015-02-11",
+    "2013": "2016-02-10",
+    "2014": "2017-02-09",
+    "2015": "2018-02-14",
+    "2016": "2019-02-13",
+    "2017": "2020-02-18",
+    "2018": "2020-02-18",
+    "2019": "2020-02-18"
+   },
+   "normalization": "diluted EPS, each year from the latest filing that reports it, at the company's figure excluding only one-offs where a filing on the same basis prints it (the ACN rule), GAAP otherwise; from 2015 the releases' adjusted EPS excludes the amortization of acquisition-related intangible assets, which recurs, so GAAP stands; 2017 $10.72 at GAAP with the $1.22 per-share Tax Reform benefit (no filing prints a per-share figure excluding only it)",
+   "margin_signal_name": "Operating margin change",
+   "dividend_annual": 4.32,
+   "dividend_note": "$4.32 a year, paid quarterly: 'In June 2019, the Company’s Board of Directors increased the Company’s quarterly cash divided to shareholders to an annual rate of $4.32 compared to $3.60 per share, which the Company had paid since June 2018.'",
+   "business_line": "diversified health and well-being: UnitedHealthcare, OptumHealth, OptumInsight, OptumRx",
+   "groups": [
+    [
+     "UnitedHealthcare",
+     193.842,
+     5.6
+    ],
+    [
+     "OptumHealth",
+     30.317,
+     25.6
+    ],
+    [
+     "OptumInsight",
+     10.006,
+     11.1
+    ],
+    [
+     "OptumRx",
+     74.288,
+     6.8
+    ]
+   ],
+   "groups_basis": "FY19 segment revenues before eliminations (FY19 growth)",
+   "company": "UnitedHealth Group Incorporated",
+   "exchange": "NYSE",
+   "pe_window_start": null,
+   "fiscal_year": "the calendar year",
+   "prev_fy_op_margin": 8.13,
+   "prev_fy_op_margin_note": "earnings from operations $19,685M / revenues $242,155M (FY2019 10-K)",
+   "prev_fy_pretax_margin": 7.43,
+   "prev_fy_pretax_margin_note": "earnings before income taxes $17,981M / revenues $242,155M (FY2019 10-K)",
+   "prev_fy_mcr": 82.47,
+   "prev_fy_ocr": 14.53,
+   "prev_fy_sales_growth": 7.0,
+   "prev_fy_premium_growth": 6.5,
+   "tax_rate": 0.2081,
+   "tax_note": "provision $3,742M on pre-tax $17,981M (FY2019 10-K)",
+   "cash_inv_b": 51.454,
+   "cfo_b": 18.463,
+   "debt_to_cap": 40.2,
+   "cloud_words": "compliance, cloud-enabled collaboration and consumer engagement"
+  },
+  {
+   "published": "2021-03-02",
+   "sources": [
+    "UH55",
+    "UH61",
+    "UH68",
+    "UH74",
+    "UH80",
+    "UH86",
+    "UH92",
+    "UH99"
+   ],
+   "fy_label": "FY20",
+   "kind": "DURABLE",
+   "why": "'UnitedHealth Group is a diversified health care company with a mission to help people live healthier lives and help make the health system work better for everyone.' 'If we fail to estimate, price for and manage our medical costs in an effective manner, the profitability of our risk-based products and services could decline and could materially and adversely affect our results of operations, financial position and cash flows.' 'Premium revenues from risk-based products comprise nearly 80% of our total consolidated revenues.'",
+   "eps_normalized": {
+    "2011": 4.73,
+    "2012": 5.28,
+    "2013": 5.5,
+    "2014": 5.7,
+    "2015": 6.01,
+    "2016": 7.25,
+    "2017": 10.72,
+    "2018": 12.19,
+    "2019": 14.33,
+    "2020": 16.03
+   },
+   "eps_sources": {
+    "2011": "UH68",
+    "2012": "UH74",
+    "2013": "UH80",
+    "2014": "UH86",
+    "2015": "UH92",
+    "2016": "UH92",
+    "2017": "UH92",
+    "2018": "UH99",
+    "2019": "UH99",
+    "2020": "UH99"
+   },
+   "eps_published": {
+    "2011": "2016-02-10",
+    "2012": "2017-02-09",
+    "2013": "2018-02-14",
+    "2014": "2019-02-13",
+    "2015": "2020-02-18",
+    "2016": "2020-02-18",
+    "2017": "2020-02-18",
+    "2018": "2021-03-02",
+    "2019": "2021-03-02",
+    "2020": "2021-03-02"
+   },
+   "revenue_usd_b": {
+    "2011": 101.862,
+    "2012": 110.618,
+    "2013": 122.489,
+    "2014": 130.474,
+    "2015": 157.107,
+    "2016": 184.84,
+    "2017": 201.159,
+    "2018": 226.247,
+    "2019": 242.155,
+    "2020": 257.141
+   },
+   "revenue_sources": {
+    "2011": "UH68",
+    "2012": "UH74",
+    "2013": "UH80",
+    "2014": "UH86",
+    "2015": "UH92",
+    "2016": "UH92",
+    "2017": "UH92",
+    "2018": "UH99",
+    "2019": "UH99",
+    "2020": "UH99"
+   },
+   "diluted_shares_m": {
+    "2011": 1087.0,
+    "2012": 1046.0,
+    "2013": 1023.0,
+    "2014": 986.0,
+    "2015": 967.0,
+    "2016": 968.0,
+    "2017": 985.0,
+    "2018": 983.0,
+    "2019": 966.0,
+    "2020": 961.0
+   },
+   "shares_sources": {
+    "2011": "UH55",
+    "2012": "UH61",
+    "2013": "UH68",
+    "2014": "UH74",
+    "2015": "UH80",
+    "2016": "UH86",
+    "2017": "UH92",
+    "2018": "UH99",
+    "2019": "UH99",
+    "2020": "UH99"
+   },
+   "shares_published": {
+    "2011": "2014-02-13",
+    "2012": "2015-02-11",
+    "2013": "2016-02-10",
+    "2014": "2017-02-09",
+    "2015": "2018-02-14",
+    "2016": "2019-02-13",
+    "2017": "2020-02-18",
+    "2018": "2021-03-02",
+    "2019": "2021-03-02",
+    "2020": "2021-03-02"
+   },
+   "normalization": "diluted EPS, each year from the latest filing that reports it, at the company's figure excluding only one-offs where a filing on the same basis prints it (the ACN rule), GAAP otherwise; from 2015 the releases' adjusted EPS excludes the amortization of acquisition-related intangible assets, which recurs, so GAAP stands; 2017 $10.72 at GAAP with the $1.22 per-share Tax Reform benefit (no filing prints a per-share figure excluding only it); from the FY2020 10-K, which has no selected financial data, 2018-2020 from its statements of operations",
+   "margin_signal_name": "Operating margin change",
+   "dividend_annual": 5.0,
+   "dividend_note": "$5.00 a year, paid quarterly: 'In June 2020, the Company’s Board of Directors increased the Company’s quarterly cash dividend to shareholders to an annual rate of $5.00 compared to $4.32 per share, which the Company had paid since June 2019.'",
+   "business_line": "diversified health and well-being: UnitedHealthcare, OptumHealth, OptumInsight, OptumRx",
+   "groups": [
+    [
+     "UnitedHealthcare",
+     200.875,
+     3.6
+    ],
+    [
+     "OptumHealth",
+     39.808,
+     31.3
+    ],
+    [
+     "OptumInsight",
+     10.802,
+     8.0
+    ],
+    [
+     "OptumRx",
+     87.498,
+     17.8
+    ]
+   ],
+   "groups_basis": "FY20 segment revenues before eliminations (FY20 growth)",
+   "company": "UnitedHealth Group Incorporated",
+   "exchange": "NYSE",
+   "pe_window_start": null,
+   "fiscal_year": "the calendar year",
+   "prev_fy_op_margin": 8.71,
+   "prev_fy_op_margin_note": "earnings from operations $22,405M / revenues $257,141M (FY2020 10-K)",
+   "prev_fy_pretax_margin": 8.07,
+   "prev_fy_pretax_margin_note": "earnings before income taxes $20,742M / revenues $257,141M (FY2020 10-K)",
+   "prev_fy_mcr": 79.11,
+   "prev_fy_ocr": 16.22,
+   "prev_fy_sales_growth": 6.2,
+   "prev_fy_premium_growth": 6.2,
+   "tax_rate": 0.2398,
+   "tax_note": "provision $4,973M on pre-tax $20,742M (FY2020 10-K)",
+   "cash_inv_b": 61.023,
+   "cfo_b": 22.174,
+   "debt_to_cap": 38.9,
+   "cloud_dropped": "the FY2015 to FY2019 10-K filings named it only among the solutions OptumInsight offers care providers"
   }
  ],
  "prints": [
@@ -4678,6 +5493,863 @@
    "eps_note": "diluted EPS attributable to UnitedHealth Group common shareholders $2.51 vs $2.03 a year earlier (GAAP); adjusted EPS $2.66 vs $2.17 (it excludes the amortization of acquisition-related intangible assets, which recurs: not used)",
    "shares_note": "diluted shares 989M vs 969M a year earlier",
    "next_print": "Q4 2017 print (the quarter ends in Dec)"
+  },
+  {
+   "quarter": "Q4 2017",
+   "fy": 2017,
+   "q": 4,
+   "published": "2018-01-16",
+   "source": "UH79",
+   "release": "Jan 16",
+   "release_time": "8-K accepted 2018-01-16 06:08 ET, before the open; 'conference call with investors at 8:45 a.m. Eastern Time today'",
+   "period_end": "2017-12-31",
+   "raw": {
+    "prem_m": 40378.0,
+    "prem_prior_m": 36752.0,
+    "fee_m": 11385.0,
+    "fee_prior_m": 10522.0,
+    "rev_m": 52061.0,
+    "rev_prior_m": 47535.0,
+    "rev_prev_q_m": 50322.0,
+    "mc_m": 33207.0,
+    "mc_prior_m": 29696.0,
+    "oc_m": 7820.0,
+    "oc_prior_m": 7817.0,
+    "efo_m": 3977.0,
+    "efo_prior_m": 3187.0,
+    "pretax_m": 3669.0,
+    "pretax_prior_m": 2919.0,
+    "inv_m": 298.0,
+    "inv_prior_m": 261.0
+   },
+   "sales_b": 52.061,
+   "sales_pct": 9.5,
+   "seq_pct": 3.5,
+   "prem_pct": 9.9,
+   "fee_pct": 8.2,
+   "mcr": 82.24,
+   "mcr_bp": 143.9,
+   "ocr": 15.02,
+   "ocr_bp": -142.4,
+   "op_margin": 7.64,
+   "op_margin_bp": 93.5,
+   "inv_pct": 14.2,
+   "eps_q": 3.65,
+   "eps_q_prior": 1.74,
+   "diluted_shares_m": 991.0,
+   "sales_note": "revenues $52,061M vs $47,535M a year earlier, $50,322M the quarter before (premiums, services, products and investment and other income)",
+   "mix_note": "premiums $40,378M (+9.9%), services $4,228M and products $7,157M (+8.2% together), investment and other income $298M (+14.2%)",
+   "eps_note": "diluted EPS attributable to UnitedHealth Group common shareholders $3.65 vs $1.74 a year earlier (GAAP); adjusted EPS $2.59 vs $2.11 (it excludes the Tax Reform benefit and the amortization of acquisition-related intangible assets: not used)",
+   "shares_note": "diluted shares 991M vs 970M a year earlier",
+   "next_print": "Q1 2018 print (the quarter ends in Mar)",
+   "note": "the year-ago Q4 2016 is as the FY2016 10-K restated it (the Penn Treaty assessments), as this release shows it; Q4 2017's tax line is a benefit, the Tax Reform revaluation of the net deferred tax liability ($1.21 a share), below earnings before income taxes",
+   "fy_actual": {
+    "fy": 2017,
+    "fy_label": "FY17",
+    "eps_normalized": 10.72,
+    "revenue_usd_b": 201.159,
+    "diluted_shares_m": 985.0,
+    "normalization_note": "FY17 $10.72 diluted EPS attributable to UnitedHealth Group common shareholders (GAAP: 'As a result of The Tax Cuts and Jobs Act of 2017, UnitedHealth Group’s 2017 net earnings of $10.72 per share included a $1.22 per share non-cash benefit from the revaluation of the Company’s net deferred tax liability.' The release prints the benefit's per-share effect and net earnings adjusted for tax reform in dollars ($9,361M), but no per-share figure excluding only it, and the mirror test keeps the year (the benefit is a small fraction of its income); the adjusted $10.07 also excludes the amortization of acquisition-related intangible assets, which recurs), the Q4 2017 release",
+    "op_margin": 7.56,
+    "op_margin_note": "earnings from operations $15,209M / revenues $201,159M (Q4 2017 release)",
+    "pretax_margin": 6.97,
+    "pretax_margin_note": "earnings before income taxes $14,023M / revenues $201,159M (Q4 2017 release)",
+    "mcr": 82.07,
+    "ocr": 14.69,
+    "sales_growth": 8.8,
+    "premium_growth": 9.9,
+    "tax_rate": 0.2282,
+    "tax_note": "provision $3,200M on pre-tax $14,023M (Q4 2017 release)"
+   }
+  },
+  {
+   "quarter": "Q1 2018",
+   "fy": 2018,
+   "q": 1,
+   "published": "2018-04-17",
+   "source": "UH81",
+   "release": "Apr 17",
+   "release_time": "8-K accepted 2018-04-17 06:04 ET, before the open; 'conference call with investors at 8:45 a.m. Eastern Time today'",
+   "period_end": "2018-03-31",
+   "raw": {
+    "prem_m": 44084.0,
+    "prem_prior_m": 38938.0,
+    "fee_m": 10806.0,
+    "fee_prior_m": 9563.0,
+    "rev_m": 55188.0,
+    "rev_prior_m": 48723.0,
+    "rev_prev_q_m": 52061.0,
+    "mc_m": 35863.0,
+    "mc_prior_m": 32079.0,
+    "oc_m": 8506.0,
+    "oc_prior_m": 7022.0,
+    "efo_m": 4053.0,
+    "efo_prior_m": 3413.0,
+    "pretax_m": 3724.0,
+    "pretax_prior_m": 3130.0,
+    "inv_m": 298.0,
+    "inv_prior_m": 222.0
+   },
+   "sales_b": 55.188,
+   "sales_pct": 13.3,
+   "seq_pct": 6.0,
+   "prem_pct": 13.2,
+   "fee_pct": 13.0,
+   "mcr": 81.35,
+   "mcr_bp": -103.3,
+   "ocr": 15.41,
+   "ocr_bp": 100.1,
+   "op_margin": 7.34,
+   "op_margin_bp": 33.9,
+   "inv_pct": 34.2,
+   "eps_q": 2.87,
+   "eps_q_prior": 2.23,
+   "diluted_shares_m": 987.0,
+   "sales_note": "revenues $55,188M vs $48,723M a year earlier, $52,061M the quarter before (premiums, services, products and investment and other income)",
+   "mix_note": "premiums $44,084M (+13.2%), services $4,104M and products $6,702M (+13.0% together), investment and other income $298M (+34.2%)",
+   "eps_note": "diluted EPS attributable to UnitedHealth Group common shareholders $2.87 vs $2.23 a year earlier (GAAP); adjusted EPS $3.04 vs $2.37 (it excludes the amortization of acquisition-related intangible assets, which recurs: not used)",
+   "shares_note": "diluted shares 987M vs 975M a year earlier",
+   "next_print": "Q2 2018 print (the quarter ends in Jun)"
+  },
+  {
+   "quarter": "Q2 2018",
+   "fy": 2018,
+   "q": 2,
+   "published": "2018-07-17",
+   "source": "UH82",
+   "release": "Jul 17",
+   "release_time": "8-K accepted 2018-07-17 06:04 ET, before the open; 'conference call with investors at 8:45 a.m. Eastern Time today'",
+   "period_end": "2018-06-30",
+   "raw": {
+    "prem_m": 44458.0,
+    "prem_prior_m": 39585.0,
+    "fee_m": 11273.0,
+    "fee_prior_m": 10212.0,
+    "rev_m": 56086.0,
+    "rev_prior_m": 50053.0,
+    "rev_prev_q_m": 55188.0,
+    "mc_m": 36427.0,
+    "mc_prior_m": 32549.0,
+    "oc_m": 8386.0,
+    "oc_prior_m": 7328.0,
+    "efo_m": 4204.0,
+    "efo_prior_m": 3731.0,
+    "pretax_m": 3860.0,
+    "pretax_prior_m": 3430.0,
+    "inv_m": 355.0,
+    "inv_prior_m": 256.0
+   },
+   "sales_b": 56.086,
+   "sales_pct": 12.1,
+   "seq_pct": 1.6,
+   "prem_pct": 12.3,
+   "fee_pct": 10.4,
+   "mcr": 81.94,
+   "mcr_bp": -29.0,
+   "ocr": 14.95,
+   "ocr_bp": 31.2,
+   "op_margin": 7.5,
+   "op_margin_bp": 4.2,
+   "inv_pct": 38.7,
+   "eps_q": 2.98,
+   "eps_q_prior": 2.32,
+   "diluted_shares_m": 982.0,
+   "sales_note": "revenues $56,086M vs $50,053M a year earlier, $55,188M the quarter before (premiums, services, products and investment and other income)",
+   "mix_note": "premiums $44,458M (+12.3%), services $4,269M and products $7,004M (+10.4% together), investment and other income $355M (+38.7%)",
+   "eps_note": "diluted EPS attributable to UnitedHealth Group common shareholders $2.98 vs $2.32 a year earlier (GAAP); adjusted EPS $3.14 vs $2.46 (it excludes the amortization of acquisition-related intangible assets, which recurs: not used)",
+   "shares_note": "diluted shares 982M vs 985M a year earlier",
+   "next_print": "Q3 2018 print (the quarter ends in Sep)"
+  },
+  {
+   "quarter": "Q3 2018",
+   "fy": 2018,
+   "q": 3,
+   "published": "2018-10-16",
+   "source": "UH83",
+   "release": "Oct 16",
+   "release_time": "8-K accepted 2018-10-16 06:03 ET, before the open; 'conference call with investors at 8:45 a.m. Eastern Time today'",
+   "period_end": "2018-09-30",
+   "raw": {
+    "prem_m": 44613.0,
+    "prem_prior_m": 39552.0,
+    "fee_m": 11561.0,
+    "fee_prior_m": 10523.0,
+    "rev_m": 56556.0,
+    "rev_prior_m": 50322.0,
+    "rev_prev_q_m": 56086.0,
+    "mc_m": 36158.0,
+    "mc_prior_m": 32201.0,
+    "oc_m": 8479.0,
+    "oc_prior_m": 7387.0,
+    "efo_m": 4590.0,
+    "efo_prior_m": 4088.0,
+    "pretax_m": 4237.0,
+    "pretax_prior_m": 3794.0,
+    "inv_m": 382.0,
+    "inv_prior_m": 247.0
+   },
+   "sales_b": 56.556,
+   "sales_pct": 12.4,
+   "seq_pct": 0.8,
+   "prem_pct": 12.8,
+   "fee_pct": 9.9,
+   "mcr": 81.05,
+   "mcr_bp": -36.6,
+   "ocr": 14.99,
+   "ocr_bp": 31.3,
+   "op_margin": 8.12,
+   "op_margin_bp": -0.8,
+   "inv_pct": 54.7,
+   "eps_q": 3.24,
+   "eps_q_prior": 2.51,
+   "diluted_shares_m": 983.0,
+   "sales_note": "revenues $56,556M vs $50,322M a year earlier, $56,086M the quarter before (premiums, services, products and investment and other income)",
+   "mix_note": "premiums $44,613M (+12.8%), services $4,217M and products $7,344M (+9.9% together), investment and other income $382M (+54.7%)",
+   "eps_note": "diluted EPS attributable to UnitedHealth Group common shareholders $3.24 vs $2.51 a year earlier (GAAP); adjusted EPS $3.41 vs $2.66 (it excludes the amortization of acquisition-related intangible assets, which recurs: not used)",
+   "shares_note": "diluted shares 983M vs 989M a year earlier",
+   "next_print": "Q4 2018 print (the quarter ends in Dec)"
+  },
+  {
+   "quarter": "Q4 2018",
+   "fy": 2018,
+   "q": 4,
+   "published": "2019-01-15",
+   "source": "UH85",
+   "release": "Jan 15",
+   "release_time": "8-K accepted 2019-01-15 06:02 ET, before the open; 'conference call with investors at 8:45 a.m. Eastern Time today'",
+   "period_end": "2018-12-31",
+   "raw": {
+    "prem_m": 44932.0,
+    "prem_prior_m": 40378.0,
+    "fee_m": 13144.0,
+    "fee_prior_m": 11385.0,
+    "rev_m": 58417.0,
+    "rev_prior_m": 52061.0,
+    "rev_prev_q_m": 56556.0,
+    "mc_m": 36955.0,
+    "mc_prior_m": 33207.0,
+    "oc_m": 8703.0,
+    "oc_prior_m": 7820.0,
+    "efo_m": 4497.0,
+    "efo_prior_m": 3977.0,
+    "pretax_m": 4123.0,
+    "pretax_prior_m": 3669.0,
+    "inv_m": 341.0,
+    "inv_prior_m": 298.0
+   },
+   "sales_b": 58.417,
+   "sales_pct": 12.2,
+   "seq_pct": 3.3,
+   "prem_pct": 11.3,
+   "fee_pct": 15.5,
+   "mcr": 82.25,
+   "mcr_bp": 0.6,
+   "ocr": 14.9,
+   "ocr_bp": -12.3,
+   "op_margin": 7.7,
+   "op_margin_bp": 5.9,
+   "inv_pct": 14.4,
+   "eps_q": 3.1,
+   "eps_q_prior": 3.65,
+   "diluted_shares_m": 982.0,
+   "sales_note": "revenues $58,417M vs $52,061M a year earlier, $56,556M the quarter before (premiums, services, products and investment and other income)",
+   "mix_note": "premiums $44,932M (+11.3%), services $4,593M and products $8,551M (+15.5% together), investment and other income $341M (+14.4%)",
+   "eps_note": "diluted EPS attributable to UnitedHealth Group common shareholders $3.10 vs $3.65 a year earlier (GAAP); adjusted EPS $3.28 vs $2.59 (it excludes the amortization of acquisition-related intangible assets, which recurs: not used)",
+   "shares_note": "diluted shares 982M vs 991M a year earlier",
+   "next_print": "Q1 2019 print (the quarter ends in Mar)",
+   "fy_actual": {
+    "fy": 2018,
+    "fy_label": "FY18",
+    "eps_normalized": 12.19,
+    "revenue_usd_b": 226.247,
+    "diluted_shares_m": 983.0,
+    "normalization_note": "FY18 $12.19 diluted EPS attributable to UnitedHealth Group common shareholders (GAAP: no filing prints a figure excluding one-offs; the release's adjusted $12.88 also excludes the amortization of acquisition-related intangible assets, which recurs), the Q4 2018 release",
+    "op_margin": 7.67,
+    "op_margin_note": "earnings from operations $17,344M / revenues $226,247M (Q4 2018 release)",
+    "pretax_margin": 7.05,
+    "pretax_margin_note": "earnings before income taxes $15,944M / revenues $226,247M (Q4 2018 release)",
+    "mcr": 81.65,
+    "ocr": 15.06,
+    "sales_growth": 12.5,
+    "premium_growth": 12.4,
+    "tax_rate": 0.2234,
+    "tax_note": "provision $3,562M on pre-tax $15,944M (Q4 2018 release)"
+   }
+  },
+  {
+   "quarter": "Q1 2019",
+   "fy": 2019,
+   "q": 1,
+   "published": "2019-04-16",
+   "source": "UH87",
+   "release": "Apr 16",
+   "release_time": "8-K accepted 2019-04-16 06:08 ET, before the open; 'conference call with investors at 8:45 a.m. Eastern Time today'",
+   "period_end": "2019-03-31",
+   "raw": {
+    "prem_m": 47513.0,
+    "prem_prior_m": 44084.0,
+    "fee_m": 12390.0,
+    "fee_prior_m": 10806.0,
+    "rev_m": 60308.0,
+    "rev_prior_m": 55188.0,
+    "rev_prev_q_m": 58417.0,
+    "mc_m": 38939.0,
+    "mc_prior_m": 35863.0,
+    "oc_m": 8517.0,
+    "oc_prior_m": 8506.0,
+    "efo_m": 4832.0,
+    "efo_prior_m": 4053.0,
+    "pretax_m": 4432.0,
+    "pretax_prior_m": 3724.0,
+    "inv_m": 405.0,
+    "inv_prior_m": 298.0
+   },
+   "sales_b": 60.308,
+   "sales_pct": 9.3,
+   "seq_pct": 3.2,
+   "prem_pct": 7.8,
+   "fee_pct": 14.7,
+   "mcr": 81.95,
+   "mcr_bp": 60.3,
+   "ocr": 14.12,
+   "ocr_bp": -129.0,
+   "op_margin": 8.01,
+   "op_margin_bp": 66.8,
+   "inv_pct": 35.9,
+   "eps_q": 3.56,
+   "eps_q_prior": 2.87,
+   "diluted_shares_m": 975.0,
+   "sales_note": "revenues $60,308M vs $55,188M a year earlier, $58,417M the quarter before (premiums, services, products and investment and other income)",
+   "mix_note": "premiums $47,513M (+7.8%), services $4,318M and products $8,072M (+14.7% together), investment and other income $405M (+35.9%)",
+   "eps_note": "diluted EPS attributable to UnitedHealth Group common shareholders $3.56 vs $2.87 a year earlier (GAAP); adjusted EPS $3.73 vs $3.04 (it excludes the amortization of acquisition-related intangible assets, which recurs: not used)",
+   "shares_note": "diluted shares 975M vs 987M a year earlier",
+   "next_print": "Q2 2019 print (the quarter ends in Jun)"
+  },
+  {
+   "quarter": "Q2 2019",
+   "fy": 2019,
+   "q": 2,
+   "published": "2019-07-18",
+   "source": "UH88",
+   "release": "Jul 18",
+   "release_time": "8-K accepted 2019-07-18 06:02 ET, before the open; 'conference call with investors at 8:45 a.m. Eastern Time today'",
+   "period_end": "2019-06-30",
+   "raw": {
+    "prem_m": 47164.0,
+    "prem_prior_m": 44458.0,
+    "fee_m": 12849.0,
+    "fee_prior_m": 11273.0,
+    "rev_m": 60595.0,
+    "rev_prior_m": 56086.0,
+    "rev_prev_q_m": 60308.0,
+    "mc_m": 39184.0,
+    "mc_prior_m": 36427.0,
+    "oc_m": 8415.0,
+    "oc_prior_m": 8386.0,
+    "efo_m": 4744.0,
+    "efo_prior_m": 4204.0,
+    "pretax_m": 4326.0,
+    "pretax_prior_m": 3860.0,
+    "inv_m": 582.0,
+    "inv_prior_m": 355.0
+   },
+   "sales_b": 60.595,
+   "sales_pct": 8.0,
+   "seq_pct": 0.5,
+   "prem_pct": 6.1,
+   "fee_pct": 14.0,
+   "mcr": 83.08,
+   "mcr_bp": 114.5,
+   "ocr": 13.89,
+   "ocr_bp": -106.5,
+   "op_margin": 7.83,
+   "op_margin_bp": 33.3,
+   "inv_pct": 63.9,
+   "eps_q": 3.42,
+   "eps_q_prior": 2.98,
+   "diluted_shares_m": 964.0,
+   "sales_note": "revenues $60,595M vs $56,086M a year earlier, $60,308M the quarter before (premiums, services, products and investment and other income)",
+   "mix_note": "premiums $47,164M (+6.1%), services $4,496M and products $8,353M (+14.0% together), investment and other income $582M (+63.9%)",
+   "eps_note": "diluted EPS attributable to UnitedHealth Group common shareholders $3.42 vs $2.98 a year earlier (GAAP); adjusted EPS $3.60 vs $3.14 (it excludes the amortization of acquisition-related intangible assets, which recurs: not used)",
+   "shares_note": "diluted shares 964M vs 982M a year earlier",
+   "next_print": "Q3 2019 print (the quarter ends in Sep)"
+  },
+  {
+   "quarter": "Q3 2019",
+   "fy": 2019,
+   "q": 3,
+   "published": "2019-10-15",
+   "source": "UH89",
+   "release": "Oct 15",
+   "release_time": "8-K accepted 2019-10-15 06:34 ET, before the open; 'conference call with investors at 8:45 a.m. Eastern Time today'",
+   "period_end": "2019-09-30",
+   "raw": {
+    "prem_m": 47397.0,
+    "prem_prior_m": 44613.0,
+    "fee_m": 12488.0,
+    "fee_prior_m": 11561.0,
+    "rev_m": 60351.0,
+    "rev_prior_m": 56556.0,
+    "rev_prev_q_m": 60595.0,
+    "mc_m": 39041.0,
+    "mc_prior_m": 36158.0,
+    "oc_m": 8960.0,
+    "oc_prior_m": 8479.0,
+    "efo_m": 5014.0,
+    "efo_prior_m": 4590.0,
+    "pretax_m": 4565.0,
+    "pretax_prior_m": 4237.0,
+    "inv_m": 466.0,
+    "inv_prior_m": 382.0
+   },
+   "sales_b": 60.351,
+   "sales_pct": 6.7,
+   "seq_pct": -0.4,
+   "prem_pct": 6.2,
+   "fee_pct": 8.0,
+   "mcr": 82.37,
+   "mcr_bp": 132.2,
+   "ocr": 14.85,
+   "ocr_bp": -14.6,
+   "op_margin": 8.31,
+   "op_margin_bp": 19.2,
+   "inv_pct": 22.0,
+   "eps_q": 3.67,
+   "eps_q_prior": 3.24,
+   "diluted_shares_m": 963.0,
+   "sales_note": "revenues $60,351M vs $56,556M a year earlier, $60,595M the quarter before (premiums, services, products and investment and other income)",
+   "mix_note": "premiums $47,397M (+6.2%), services $4,942M and products $7,546M (+8.0% together), investment and other income $466M (+22.0%)",
+   "eps_note": "diluted EPS attributable to UnitedHealth Group common shareholders $3.67 vs $3.24 a year earlier (GAAP); adjusted EPS $3.88 vs $3.41 (it excludes the amortization of acquisition-related intangible assets, which recurs: not used)",
+   "shares_note": "diluted shares 963M vs 983M a year earlier",
+   "next_print": "Q4 2019 print (the quarter ends in Dec)"
+  },
+  {
+   "quarter": "Q4 2019",
+   "fy": 2019,
+   "q": 4,
+   "published": "2020-01-15",
+   "source": "UH91",
+   "release": "Jan 15",
+   "release_time": "8-K accepted 2020-01-15 06:04 ET, before the open; 'conference call with investors at 8:45 a.m. Eastern Time today'",
+   "period_end": "2019-12-31",
+   "raw": {
+    "prem_m": 47625.0,
+    "prem_prior_m": 44932.0,
+    "fee_m": 12843.0,
+    "fee_prior_m": 13144.0,
+    "rev_m": 60901.0,
+    "rev_prior_m": 58417.0,
+    "rev_prev_q_m": 60351.0,
+    "mc_m": 39276.0,
+    "mc_prior_m": 36955.0,
+    "oc_m": 9301.0,
+    "oc_prior_m": 8703.0,
+    "efo_m": 5095.0,
+    "efo_prior_m": 4497.0,
+    "pretax_m": 4658.0,
+    "pretax_prior_m": 4123.0,
+    "inv_m": 433.0,
+    "inv_prior_m": 341.0
+   },
+   "sales_b": 60.901,
+   "sales_pct": 4.3,
+   "seq_pct": 0.9,
+   "prem_pct": 6.0,
+   "fee_pct": -2.3,
+   "mcr": 82.47,
+   "mcr_bp": 22.3,
+   "ocr": 15.27,
+   "ocr_bp": 37.4,
+   "op_margin": 8.37,
+   "op_margin_bp": 66.8,
+   "inv_pct": 27.0,
+   "eps_q": 3.68,
+   "eps_q_prior": 3.1,
+   "diluted_shares_m": 962.0,
+   "sales_note": "revenues $60,901M vs $58,417M a year earlier, $60,351M the quarter before (premiums, services, products and investment and other income)",
+   "mix_note": "premiums $47,625M (+6.0%), services $5,217M and products $7,626M (-2.3% together), investment and other income $433M (+27.0%)",
+   "eps_note": "diluted EPS attributable to UnitedHealth Group common shareholders $3.68 vs $3.10 a year earlier (GAAP); adjusted EPS $3.90 vs $3.28 (it excludes the amortization of acquisition-related intangible assets, which recurs: not used)",
+   "shares_note": "diluted shares 962M vs 982M a year earlier",
+   "next_print": "Q1 2020 print (the quarter ends in Mar)",
+   "fy_actual": {
+    "fy": 2019,
+    "fy_label": "FY19",
+    "eps_normalized": 14.33,
+    "revenue_usd_b": 242.155,
+    "diluted_shares_m": 966.0,
+    "normalization_note": "FY19 $14.33 diluted EPS attributable to UnitedHealth Group common shareholders (GAAP: no filing prints a figure excluding one-offs; the release's adjusted $15.11 also excludes the amortization of acquisition-related intangible assets, which recurs), the Q4 2019 release",
+    "op_margin": 8.13,
+    "op_margin_note": "earnings from operations $19,685M / revenues $242,155M (Q4 2019 release)",
+    "pretax_margin": 7.43,
+    "pretax_margin_note": "earnings before income taxes $17,981M / revenues $242,155M (Q4 2019 release)",
+    "mcr": 82.47,
+    "ocr": 14.53,
+    "sales_growth": 7.0,
+    "premium_growth": 6.5,
+    "tax_rate": 0.2081,
+    "tax_note": "provision $3,742M on pre-tax $17,981M (Q4 2019 release)"
+   }
+  },
+  {
+   "quarter": "Q1 2020",
+   "fy": 2020,
+   "q": 1,
+   "published": "2020-04-15",
+   "source": "UH93",
+   "release": "Apr 15",
+   "release_time": "8-K accepted 2020-04-15 06:06 ET, before the open; 'conference call with investors at 8:45 a.m. Eastern Time today'",
+   "period_end": "2020-03-31",
+   "raw": {
+    "prem_m": 50640.0,
+    "prem_prior_m": 47513.0,
+    "fee_m": 13416.0,
+    "fee_prior_m": 12390.0,
+    "rev_m": 64421.0,
+    "rev_prior_m": 60308.0,
+    "rev_prev_q_m": 60901.0,
+    "mc_m": 41000.0,
+    "mc_prior_m": 38939.0,
+    "oc_m": 10015.0,
+    "oc_prior_m": 8517.0,
+    "efo_m": 4996.0,
+    "efo_prior_m": 4832.0,
+    "pretax_m": 4559.0,
+    "pretax_prior_m": 4432.0,
+    "inv_m": 365.0,
+    "inv_prior_m": 405.0
+   },
+   "sales_b": 64.421,
+   "sales_pct": 6.8,
+   "seq_pct": 5.8,
+   "prem_pct": 6.6,
+   "fee_pct": 8.3,
+   "mcr": 80.96,
+   "mcr_bp": -99.1,
+   "ocr": 15.55,
+   "ocr_bp": 142.4,
+   "op_margin": 7.76,
+   "op_margin_bp": -25.7,
+   "inv_pct": -9.9,
+   "eps_q": 3.52,
+   "eps_q_prior": 3.56,
+   "diluted_shares_m": 962.0,
+   "sales_note": "revenues $64,421M vs $60,308M a year earlier, $60,901M the quarter before (premiums, services, products and investment and other income)",
+   "mix_note": "premiums $50,640M (+6.6%), services $4,985M and products $8,431M (+8.3% together), investment and other income $365M (-9.9%)",
+   "eps_note": "diluted EPS attributable to UnitedHealth Group common shareholders $3.52 vs $3.56 a year earlier (GAAP); adjusted EPS $3.72 vs $3.73 (it excludes the amortization of acquisition-related intangible assets, which recurs: not used)",
+   "shares_note": "diluted shares 962M vs 975M a year earlier",
+   "next_print": "Q2 2020 print (the quarter ends in Jun)"
+  },
+  {
+   "quarter": "Q2 2020",
+   "fy": 2020,
+   "q": 2,
+   "published": "2020-07-15",
+   "source": "UH94",
+   "release": "Jul 15",
+   "release_time": "8-K accepted 2020-07-15 06:04 ET, before the open; 'conference call with investors at 8:45 a.m. Eastern Time today'",
+   "period_end": "2020-06-30",
+   "raw": {
+    "prem_m": 49394.0,
+    "prem_prior_m": 47164.0,
+    "fee_m": 12403.0,
+    "fee_prior_m": 12849.0,
+    "rev_m": 62138.0,
+    "rev_prior_m": 60595.0,
+    "rev_prev_q_m": 64421.0,
+    "mc_m": 34678.0,
+    "mc_prior_m": 39184.0,
+    "oc_m": 10001.0,
+    "oc_prior_m": 8415.0,
+    "efo_m": 9241.0,
+    "efo_prior_m": 4744.0,
+    "pretax_m": 8811.0,
+    "pretax_prior_m": 4326.0,
+    "inv_m": 341.0,
+    "inv_prior_m": 582.0
+   },
+   "sales_b": 62.138,
+   "sales_pct": 2.5,
+   "seq_pct": -3.5,
+   "prem_pct": 4.7,
+   "fee_pct": -3.5,
+   "mcr": 70.21,
+   "mcr_bp": -1287.3,
+   "ocr": 16.09,
+   "ocr_bp": 220.8,
+   "op_margin": 14.87,
+   "op_margin_bp": 704.3,
+   "inv_pct": -41.4,
+   "eps_q": 6.91,
+   "eps_q_prior": 3.42,
+   "diluted_shares_m": 960.0,
+   "sales_note": "revenues $62,138M vs $60,595M a year earlier, $64,421M the quarter before (premiums, services, products and investment and other income)",
+   "mix_note": "premiums $49,394M (+4.7%), services $4,156M and products $8,247M (-3.5% together), investment and other income $341M (-41.4%)",
+   "eps_note": "diluted EPS attributable to UnitedHealth Group common shareholders $6.91 vs $3.42 a year earlier (GAAP); adjusted EPS $7.12 vs $3.60 (it excludes the amortization of acquisition-related intangible assets, which recurs: not used)",
+   "shares_note": "diluted shares 960M vs 964M a year earlier",
+   "next_print": "Q3 2020 print (the quarter ends in Sep)"
+  },
+  {
+   "quarter": "Q3 2020",
+   "fy": 2020,
+   "q": 3,
+   "published": "2020-10-14",
+   "source": "UH96",
+   "release": "Oct 14",
+   "release_time": "8-K accepted 2020-10-14 06:03 ET, before the open; 'conference call with investors at 8:45 a.m. Eastern Time today'",
+   "period_end": "2020-09-30",
+   "raw": {
+    "prem_m": 50863.0,
+    "prem_prior_m": 47397.0,
+    "fee_m": 13901.0,
+    "fee_prior_m": 12488.0,
+    "rev_m": 65115.0,
+    "rev_prior_m": 60351.0,
+    "rev_prev_q_m": 62138.0,
+    "mc_m": 41636.0,
+    "mc_prior_m": 39041.0,
+    "oc_m": 10174.0,
+    "oc_prior_m": 8960.0,
+    "efo_m": 4651.0,
+    "efo_prior_m": 5014.0,
+    "pretax_m": 4256.0,
+    "pretax_prior_m": 4565.0,
+    "inv_m": 351.0,
+    "inv_prior_m": 466.0
+   },
+   "sales_b": 65.115,
+   "sales_pct": 7.9,
+   "seq_pct": 4.8,
+   "prem_pct": 7.3,
+   "fee_pct": 11.3,
+   "mcr": 81.86,
+   "mcr_bp": -51.1,
+   "ocr": 15.62,
+   "ocr_bp": 77.8,
+   "op_margin": 7.14,
+   "op_margin_bp": -116.5,
+   "inv_pct": -24.7,
+   "eps_q": 3.3,
+   "eps_q_prior": 3.67,
+   "diluted_shares_m": 962.0,
+   "sales_note": "revenues $65,115M vs $60,351M a year earlier, $62,138M the quarter before (premiums, services, products and investment and other income)",
+   "mix_note": "premiums $50,863M (+7.3%), services $5,124M and products $8,777M (+11.3% together), investment and other income $351M (-24.7%)",
+   "eps_note": "diluted EPS attributable to UnitedHealth Group common shareholders $3.30 vs $3.67 a year earlier (GAAP); adjusted EPS $3.51 vs $3.88 (it excludes the amortization of acquisition-related intangible assets, which recurs: not used)",
+   "shares_note": "diluted shares 962M vs 963M a year earlier",
+   "next_print": "Q4 2020 print (the quarter ends in Dec)"
+  },
+  {
+   "quarter": "Q4 2020",
+   "fy": 2020,
+   "q": 4,
+   "published": "2021-01-20",
+   "source": "UH98",
+   "release": "Jan 20",
+   "release_time": "8-K accepted 2021-01-20 06:01 ET, before the open; 'conference call with investors at 8:45 a.m. Eastern Time today'",
+   "period_end": "2020-12-31",
+   "raw": {
+    "prem_m": 50581.0,
+    "prem_prior_m": 47625.0,
+    "fee_m": 14441.0,
+    "fee_prior_m": 12843.0,
+    "rev_m": 65467.0,
+    "rev_prior_m": 60901.0,
+    "rev_prev_q_m": 65115.0,
+    "mc_m": 42082.0,
+    "mc_prior_m": 39276.0,
+    "oc_m": 11514.0,
+    "oc_prior_m": 9301.0,
+    "efo_m": 3517.0,
+    "efo_prior_m": 5095.0,
+    "pretax_m": 3116.0,
+    "pretax_prior_m": 4658.0,
+    "inv_m": 445.0,
+    "inv_prior_m": 433.0
+   },
+   "sales_b": 65.467,
+   "sales_pct": 7.5,
+   "seq_pct": 0.5,
+   "prem_pct": 6.2,
+   "fee_pct": 12.4,
+   "mcr": 83.2,
+   "mcr_bp": 72.8,
+   "ocr": 17.59,
+   "ocr_bp": 231.5,
+   "op_margin": 5.37,
+   "op_margin_bp": -299.4,
+   "inv_pct": 2.8,
+   "eps_q": 2.3,
+   "eps_q_prior": 3.68,
+   "diluted_shares_m": 961.0,
+   "sales_note": "revenues $65,467M vs $60,901M a year earlier, $65,115M the quarter before (premiums, services, products and investment and other income)",
+   "mix_note": "premiums $50,581M (+6.2%), services $5,751M and products $8,690M (+12.4% together), investment and other income $445M (+2.8%)",
+   "eps_note": "diluted EPS attributable to UnitedHealth Group common shareholders $2.30 vs $3.68 a year earlier (GAAP); adjusted EPS $2.52 vs $3.90 (it excludes the amortization of acquisition-related intangible assets, which recurs: not used)",
+   "shares_note": "diluted shares 961M vs 962M a year earlier",
+   "next_print": "Q1 2021 print (the quarter ends in Mar)",
+   "fy_actual": {
+    "fy": 2020,
+    "fy_label": "FY20",
+    "eps_normalized": 16.03,
+    "revenue_usd_b": 257.141,
+    "diluted_shares_m": 961.0,
+    "normalization_note": "FY20 $16.03 diluted EPS attributable to UnitedHealth Group common shareholders (GAAP: no filing prints a figure excluding one-offs; the release's adjusted $16.88 also excludes the amortization of acquisition-related intangible assets, which recurs), the Q4 2020 release",
+    "op_margin": 8.71,
+    "op_margin_note": "earnings from operations $22,405M / revenues $257,141M (Q4 2020 release)",
+    "pretax_margin": 8.07,
+    "pretax_margin_note": "earnings before income taxes $20,742M / revenues $257,141M (Q4 2020 release)",
+    "mcr": 79.11,
+    "ocr": 16.22,
+    "sales_growth": 6.2,
+    "premium_growth": 6.2,
+    "tax_rate": 0.2398,
+    "tax_note": "provision $4,973M on pre-tax $20,742M (Q4 2020 release)"
+   }
+  },
+  {
+   "quarter": "Q1 2021",
+   "fy": 2021,
+   "q": 1,
+   "published": "2021-04-15",
+   "source": "UH100",
+   "release": "Apr 15",
+   "release_time": "8-K accepted 2021-04-15 06:03 ET, before the open; 'conference call with investors at 8:45 a.m. Eastern Time today'",
+   "period_end": "2021-03-31",
+   "raw": {
+    "prem_m": 55486.0,
+    "prem_prior_m": 50640.0,
+    "fee_m": 14258.0,
+    "fee_prior_m": 13416.0,
+    "rev_m": 70196.0,
+    "rev_prior_m": 64421.0,
+    "rev_prev_q_m": 65467.0,
+    "mc_m": 44904.0,
+    "mc_prior_m": 41000.0,
+    "oc_m": 10223.0,
+    "oc_prior_m": 10015.0,
+    "efo_m": 6739.0,
+    "efo_prior_m": 4996.0,
+    "pretax_m": 6342.0,
+    "pretax_prior_m": 4559.0,
+    "inv_m": 452.0,
+    "inv_prior_m": 365.0
+   },
+   "sales_b": 70.196,
+   "sales_pct": 9.0,
+   "seq_pct": 7.2,
+   "prem_pct": 9.6,
+   "fee_pct": 6.3,
+   "mcr": 80.93,
+   "mcr_bp": -3.5,
+   "ocr": 14.56,
+   "ocr_bp": -98.3,
+   "op_margin": 9.6,
+   "op_margin_bp": 184.5,
+   "inv_pct": 23.8,
+   "eps_q": 5.08,
+   "eps_q_prior": 3.52,
+   "diluted_shares_m": 957.0,
+   "sales_note": "revenues $70,196M vs $64,421M a year earlier, $65,467M the quarter before (premiums, services, products and investment and other income)",
+   "mix_note": "premiums $55,486M (+9.6%), services $5,918M and products $8,340M (+6.3% together), investment and other income $452M (+23.8%)",
+   "eps_note": "diluted EPS attributable to UnitedHealth Group common shareholders $5.08 vs $3.52 a year earlier (GAAP); adjusted EPS $5.31 vs $3.72 (it excludes the amortization of acquisition-related intangible assets, which recurs: not used)",
+   "shares_note": "diluted shares 957M vs 962M a year earlier",
+   "next_print": "Q2 2021 print (the quarter ends in Jun)"
+  },
+  {
+   "quarter": "Q2 2021",
+   "fy": 2021,
+   "q": 2,
+   "published": "2021-07-15",
+   "source": "UH101",
+   "release": "Jul 15",
+   "release_time": "8-K accepted 2021-07-15 06:03 ET, before the open; 'conference call with investors at 8:45 a.m. Eastern Time today'",
+   "period_end": "2021-06-30",
+   "raw": {
+    "prem_m": 56233.0,
+    "prem_prior_m": 49394.0,
+    "fee_m": 14532.0,
+    "fee_prior_m": 12403.0,
+    "rev_m": 71321.0,
+    "rev_prior_m": 62138.0,
+    "rev_prev_q_m": 70196.0,
+    "mc_m": 46546.0,
+    "mc_prior_m": 34678.0,
+    "oc_m": 10359.0,
+    "oc_prior_m": 10001.0,
+    "efo_m": 5978.0,
+    "efo_prior_m": 9241.0,
+    "pretax_m": 5568.0,
+    "pretax_prior_m": 8811.0,
+    "inv_m": 556.0,
+    "inv_prior_m": 341.0
+   },
+   "sales_b": 71.321,
+   "sales_pct": 14.8,
+   "seq_pct": 1.6,
+   "prem_pct": 13.8,
+   "fee_pct": 17.2,
+   "mcr": 82.77,
+   "mcr_bp": 1256.7,
+   "ocr": 14.52,
+   "ocr_bp": -157.0,
+   "op_margin": 8.38,
+   "op_margin_bp": -649.0,
+   "inv_pct": 63.0,
+   "eps_q": 4.46,
+   "eps_q_prior": 6.91,
+   "diluted_shares_m": 956.0,
+   "sales_note": "revenues $71,321M vs $62,138M a year earlier, $70,196M the quarter before (premiums, services, products and investment and other income)",
+   "mix_note": "premiums $56,233M (+13.8%), services $6,099M and products $8,433M (+17.2% together), investment and other income $556M (+63.0%)",
+   "eps_note": "diluted EPS attributable to UnitedHealth Group common shareholders $4.46 vs $6.91 a year earlier (GAAP); adjusted EPS $4.70 vs $7.12 (it excludes the amortization of acquisition-related intangible assets, which recurs: not used)",
+   "shares_note": "diluted shares 956M vs 960M a year earlier",
+   "next_print": "Q3 2021 print (the quarter ends in Sep)"
+  },
+  {
+   "quarter": "Q3 2021",
+   "fy": 2021,
+   "q": 3,
+   "published": "2021-10-14",
+   "source": "UH103",
+   "release": "Oct 14",
+   "release_time": "8-K accepted 2021-10-14 06:05 ET, before the open; 'conference call with investors at 8:45 a.m. Eastern Time today'",
+   "period_end": "2021-09-30",
+   "raw": {
+    "prem_m": 56967.0,
+    "prem_prior_m": 50863.0,
+    "fee_m": 14867.0,
+    "fee_prior_m": 13901.0,
+    "rev_m": 72337.0,
+    "rev_prior_m": 65115.0,
+    "rev_prev_q_m": 71321.0,
+    "mc_m": 47302.0,
+    "mc_prior_m": 41636.0,
+    "oc_m": 10725.0,
+    "oc_prior_m": 10174.0,
+    "efo_m": 5712.0,
+    "efo_prior_m": 4651.0,
+    "pretax_m": 5290.0,
+    "pretax_prior_m": 4256.0,
+    "inv_m": 503.0,
+    "inv_prior_m": 351.0
+   },
+   "sales_b": 72.337,
+   "sales_pct": 11.1,
+   "seq_pct": 1.4,
+   "prem_pct": 12.0,
+   "fee_pct": 6.9,
+   "mcr": 83.03,
+   "mcr_bp": 117.5,
+   "ocr": 14.83,
+   "ocr_bp": -79.8,
+   "op_margin": 7.9,
+   "op_margin_bp": 75.4,
+   "inv_pct": 43.3,
+   "eps_q": 4.28,
+   "eps_q_prior": 3.3,
+   "diluted_shares_m": 955.0,
+   "sales_note": "revenues $72,337M vs $65,115M a year earlier, $71,321M the quarter before (premiums, services, products and investment and other income)",
+   "mix_note": "premiums $56,967M (+12.0%), services $6,164M and products $8,703M (+6.9% together), investment and other income $503M (+43.3%)",
+   "eps_note": "diluted EPS attributable to UnitedHealth Group common shareholders $4.28 vs $3.30 a year earlier (GAAP); adjusted EPS $4.52 vs $3.51 (it excludes the amortization of acquisition-related intangible assets, which recurs: not used)",
+   "shares_note": "diluted shares 955M vs 962M a year earlier",
+   "next_print": "Q4 2021 print (the quarter ends in Dec)"
   }
  ],
  "guides": [
@@ -5926,6 +7598,399 @@
     225.0
    ],
    "rev_label": "revenue"
+  },
+  {
+   "fy": 2018,
+   "published": "2018-01-16",
+   "source": "UH79",
+   "doc": "Q4 2017 release",
+   "quotes": [
+    "UnitedHealth Group now expects 2018 net earnings of $11.65 to $11.95 per share and adjusted net earnings of $12.30 to $12.60 per share."
+   ],
+   "eps_guide": [
+    11.65,
+    11.95
+   ],
+   "eps_guide_note": "as published (GAAP), revised for the Tax Reform effects; the adjusted $12.30-12.60 also excludes the amortization of acquisition-related intangible assets, which recurs: not used",
+   "note": "no revenue figure: the $223-225B range of the 8-K of 2017-11-27 stands"
+  },
+  {
+   "fy": 2018,
+   "published": "2018-04-17",
+   "source": "UH81",
+   "doc": "Q1 2018 release",
+   "quotes": [
+    "Based on first quarter results and the business outlook for the balance of the year, UnitedHealth Group has increased its outlook for 2018 net earnings to a range of $11.70 to $11.95 per share and adjusted net earnings of $12.40 to $12.65 per share."
+   ],
+   "eps_guide": [
+    11.7,
+    11.95
+   ],
+   "eps_guide_note": "as published (GAAP); the adjusted $12.40-12.65 also excludes the amortization of acquisition-related intangible assets, which recurs: not used",
+   "note": "no revenue figure: the $223-225B range stands"
+  },
+  {
+   "fy": 2018,
+   "published": "2018-07-17",
+   "source": "UH82",
+   "doc": "Q2 2018 release",
+   "quotes": [
+    "Based on first half 2018 results and the business outlook for the balance of the year, the Company has raised its outlook for 2018 net earnings to a range of $11.80 to $12.05 per share and adjusted net earnings to a range of $12.50 to $12.75 per share, and now expects cash flows from operations to approach $15.5 billion."
+   ],
+   "eps_guide": [
+    11.8,
+    12.05
+   ],
+   "eps_guide_note": "as published (GAAP); the adjusted $12.50-12.75 also excludes the amortization of acquisition-related intangible assets, which recurs: not used",
+   "note": "no revenue figure: the $223-225B range stands"
+  },
+  {
+   "fy": 2018,
+   "published": "2018-10-16",
+   "source": "UH83",
+   "doc": "Q3 2018 release",
+   "quotes": [
+    "The Company raised its outlook for 2018 net earnings per share to now approach $12.10, from the prior range of $11.80 to $12.05, and adjusted net earnings per share to now approach $12.80, from the prior range of $12.50 to $12.75."
+   ],
+   "eps_guide": [
+    12.1,
+    12.1
+   ],
+   "eps_guide_note": "as published (GAAP): 'to now approach $12.10' read as the level (the NVDA 'approaching' rule); the adjusted $12.80 also excludes the amortization of acquisition-related intangible assets, which recurs: not used",
+   "note": "no revenue figure: the $223-225B range stands"
+  },
+  {
+   "fy": 2018,
+   "published": "2018-11-27",
+   "source": "UH84",
+   "doc": "8-K of 2018-11-26",
+   "quotes": [
+    "In conjunction with the meeting, the Company will discuss its financial outlook. Revenues for 2018 are expected to approximate $226 billion, with net earnings to approach $12.10 per share and adjusted net earnings to approach $12.80 per share, consistent with the Company’s most recent outlook provided with its third quarter 2018 earnings release."
+   ],
+   "eps_guide": [
+    12.1,
+    12.1
+   ],
+   "eps_guide_note": "as published (GAAP), affirmed",
+   "rev_guide_usd_b": [
+    226.0,
+    226.0
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2019,
+   "published": "2018-11-27",
+   "source": "UH84",
+   "doc": "8-K of 2018-11-26",
+   "quotes": [
+    "UnitedHealth Group will also introduce its 2019 outlook, including revenues of $243 billion to $245 billion, net earnings of $13.70 to $14.00 per share, and adjusted net earnings of $14.40 to $14.70 per share."
+   ],
+   "eps_guide": [
+    13.7,
+    14.0
+   ],
+   "eps_guide_note": "as published (GAAP); the adjusted $14.40-14.70 also excludes the amortization of acquisition-related intangible assets, which recurs: not used",
+   "rev_guide_usd_b": [
+    243.0,
+    245.0
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2019,
+   "published": "2019-01-15",
+   "source": "UH85",
+   "doc": "Q4 2018 release",
+   "quotes": [
+    "The Company affirmed its outlook for 2019, including net earnings of $13.70 to $14.00 per share, adjusted net earnings of $14.40 to $14.70 per share, and cash flows from operations of $17.3 billion to $17.8 billion."
+   ],
+   "eps_guide": [
+    13.7,
+    14.0
+   ],
+   "eps_guide_note": "as published (GAAP), affirmed; the adjusted $14.40-14.70 also excludes the amortization of acquisition-related intangible assets, which recurs: not used",
+   "note": "no revenue figure: the $243-245B range stands"
+  },
+  {
+   "fy": 2019,
+   "published": "2019-04-16",
+   "source": "UH87",
+   "doc": "Q1 2019 release",
+   "quotes": [
+    "With visibility on improved 2019 performance trends and based on the strong first quarter results, the Company increased its earnings outlook to net earnings of $13.80 to $14.05 per share, and adjusted net earnings of $14.50 to $14.75 per share."
+   ],
+   "eps_guide": [
+    13.8,
+    14.05
+   ],
+   "eps_guide_note": "as published (GAAP); the adjusted $14.50-14.75 also excludes the amortization of acquisition-related intangible assets, which recurs: not used",
+   "note": "no revenue figure: the $243-245B range stands"
+  },
+  {
+   "fy": 2019,
+   "published": "2019-07-18",
+   "source": "UH88",
+   "doc": "Q2 2019 release",
+   "quotes": [
+    "Based on strong first half 2019 results and confidence in the remainder of the year, the Company increased its full year net earnings outlook to $13.95 to $14.15 per share, and adjusted net earnings to $14.70 to $14.90 per share."
+   ],
+   "eps_guide": [
+    13.95,
+    14.15
+   ],
+   "eps_guide_note": "as published (GAAP); the adjusted $14.70-14.90 also excludes the amortization of acquisition-related intangible assets, which recurs: not used",
+   "note": "no revenue figure: the $243-245B range stands"
+  },
+  {
+   "fy": 2019,
+   "published": "2019-10-15",
+   "source": "UH89",
+   "doc": "Q3 2019 release",
+   "quotes": [
+    "Based on strong third quarter 2019 results and its positive view for the rest of the year, the Company increased its full year net earnings outlook to $14.15 to $14.25 per share and adjusted net earnings to a range of $14.90 to $15.00 per share, both increasing $0.15 per share at the mid-point."
+   ],
+   "eps_guide": [
+    14.15,
+    14.25
+   ],
+   "eps_guide_note": "as published (GAAP); the adjusted $14.90-15.00 also excludes the amortization of acquisition-related intangible assets, which recurs: not used",
+   "note": "no revenue figure: the $243-245B range stands"
+  },
+  {
+   "fy": 2019,
+   "published": "2019-12-03",
+   "source": "UH90",
+   "doc": "8-K of 2019-12-02",
+   "quotes": [
+    "In conjunction with the meeting, the Company will discuss its financial outlook. Revenues for 2019 are expected to approximate $242 billion, with net earnings to approach $14.25 per share and adjusted net earnings to approach $15.00 per share, at the higher end of the Company’s most recent earnings per share outlook provided with its third quarter 2019 earnings release."
+   ],
+   "eps_guide": [
+    14.25,
+    14.25
+   ],
+   "eps_guide_note": "as published (GAAP): 'to approach $14.25' read as the level (the NVDA 'approaching' rule)",
+   "rev_guide_usd_b": [
+    242.0,
+    242.0
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2020,
+   "published": "2019-12-03",
+   "source": "UH90",
+   "doc": "8-K of 2019-12-02",
+   "quotes": [
+    "UnitedHealth Group will also introduce its 2020 outlook, including revenues of $260 billion to $262 billion, net earnings of $15.45 to $15.75 per share, and adjusted net earnings of $16.25 to $16.55 per share."
+   ],
+   "eps_guide": [
+    15.45,
+    15.75
+   ],
+   "eps_guide_note": "as published (GAAP); the adjusted $16.25-16.55 also excludes the amortization of acquisition-related intangible assets, which recurs: not used",
+   "rev_guide_usd_b": [
+    260.0,
+    262.0
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2020,
+   "published": "2020-01-15",
+   "source": "UH91",
+   "doc": "Q4 2019 release",
+   "quotes": [
+    "The Company affirmed its recently issued full year earnings outlook for 2020, including net earnings of $15.45 to $15.75 per share and adjusted net earnings of $16.25 to $16.55 per share."
+   ],
+   "eps_guide": [
+    15.45,
+    15.75
+   ],
+   "eps_guide_note": "as published (GAAP), affirmed; the adjusted $16.25-16.55 also excludes the amortization of acquisition-related intangible assets, which recurs: not used",
+   "note": "no revenue figure: the $260-262B range stands"
+  },
+  {
+   "fy": 2020,
+   "published": "2020-04-15",
+   "source": "UH93",
+   "doc": "Q1 2020 release",
+   "quotes": [
+    "The company maintained its full year earnings per share outlook for 2020, including net earnings of $15.45 to $15.75 per share and adjusted net earnings of $16.25 to $16.55 per share."
+   ],
+   "eps_guide": [
+    15.45,
+    15.75
+   ],
+   "eps_guide_note": "as published (GAAP), maintained through COVID-19; the adjusted $16.25-16.55 also excludes the amortization of acquisition-related intangible assets, which recurs: not used",
+   "note": "no revenue figure: the $260-262B range stands"
+  },
+  {
+   "fy": 2020,
+   "published": "2020-07-15",
+   "source": "UH94",
+   "doc": "Q2 2020 release",
+   "quotes": [
+    "The Company is maintaining its full year earnings per share outlook for 2020 of net earnings of $15.45 to $15.75 per share and adjusted net earnings of $16.25 to $16.55 per share."
+   ],
+   "eps_guide": [
+    15.45,
+    15.75
+   ],
+   "eps_guide_note": "as published (GAAP), maintained; the adjusted $16.25-16.55 also excludes the amortization of acquisition-related intangible assets, which recurs: not used",
+   "note": "no revenue figure: the $260-262B range stands"
+  },
+  {
+   "fy": 2020,
+   "published": "2020-10-14",
+   "source": "UH96",
+   "doc": "Q3 2020 release",
+   "quotes": [
+    "The Company is updating its full year earnings per share outlook for 2020 to net earnings of $15.65 to $15.90 per share and adjusted net earnings of $16.50 to $16.75 per share."
+   ],
+   "eps_guide": [
+    15.65,
+    15.9
+   ],
+   "eps_guide_note": "as published (GAAP); the adjusted $16.50-16.75 also excludes the amortization of acquisition-related intangible assets, which recurs: not used",
+   "note": "no revenue figure: the $260-262B range stands"
+  },
+  {
+   "fy": 2020,
+   "published": "2020-12-01",
+   "source": "UH97",
+   "doc": "8-K of 2020-12-01",
+   "quotes": [
+    "Under the updated outlook, UnitedHealth Group revenues for 2020 are expected to approximate $257 billion, with net earnings to approach $15.90 per share and adjusted net earnings to approach $16.75 per share."
+   ],
+   "eps_guide": [
+    15.9,
+    15.9
+   ],
+   "eps_guide_note": "as published (GAAP): 'to approach $15.90' read as the level (the NVDA 'approaching' rule)",
+   "rev_guide_usd_b": [
+    257.0,
+    257.0
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2021,
+   "published": "2020-12-01",
+   "source": "UH97",
+   "doc": "8-K of 2020-12-01",
+   "quotes": [
+    "UnitedHealth Group will also introduce its initial 2021 outlook, which includes revenues of $277 billion to $280 billion, net earnings of $16.90 to $17.40 per share, and adjusted net earnings of $17.75 to $18.25 per share.",
+    "These figures include approximately $1.80 per share in potential net unfavorable impact to accommodate continuing COVID-19 effects, such as: treatment and testing costs; the residual impact of people deferring care in 2020; and unemployment and other economic-driven factors."
+   ],
+   "eps_guide": [
+    16.9,
+    17.4
+   ],
+   "eps_guide_note": "as published (GAAP), the potential COVID-19 effects in; the adjusted $17.75-18.25 also excludes the amortization of acquisition-related intangible assets, which recurs: not used",
+   "rev_guide_usd_b": [
+    277.0,
+    280.0
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2021,
+   "published": "2021-01-20",
+   "source": "UH98",
+   "doc": "Q4 2020 release",
+   "quotes": [
+    "The Company affirmed its recently issued full year earnings outlook for 2021, including net earnings of $16.90 to $17.40 per share and adjusted net earnings of $17.75 to $18.25 per share."
+   ],
+   "eps_guide": [
+    16.9,
+    17.4
+   ],
+   "eps_guide_note": "as published (GAAP), affirmed; the adjusted $17.75-18.25 also excludes the amortization of acquisition-related intangible assets, which recurs: not used",
+   "note": "no revenue figure: the $277-280B range stands"
+  },
+  {
+   "fy": 2021,
+   "published": "2021-04-15",
+   "source": "UH100",
+   "doc": "Q1 2021 release",
+   "quotes": [
+    "Based upon initial 2021 business performance trends, the Company increased its full year net earnings outlook to $17.15 to $17.65 per share and adjusted earnings to $18.10 to $18.60 per share."
+   ],
+   "eps_guide": [
+    17.15,
+    17.65
+   ],
+   "eps_guide_note": "as published (GAAP); the adjusted $18.10-18.60 also excludes the amortization of acquisition-related intangible assets, which recurs: not used",
+   "note": "no revenue figure: the $277-280B range stands"
+  },
+  {
+   "fy": 2021,
+   "published": "2021-07-15",
+   "source": "UH101",
+   "doc": "Q2 2021 release",
+   "quotes": [
+    "Based upon first half 2021 performance, the Company increased its full year net earnings outlook to $17.35 to $17.85 per share and adjusted earnings to $18.30 to $18.80 per share."
+   ],
+   "eps_guide": [
+    17.35,
+    17.85
+   ],
+   "eps_guide_note": "as published (GAAP); the adjusted $18.30-18.80 also excludes the amortization of acquisition-related intangible assets, which recurs: not used",
+   "note": "no revenue figure: the $277-280B range stands"
+  },
+  {
+   "fy": 2021,
+   "published": "2021-10-14",
+   "source": "UH103",
+   "doc": "Q3 2021 release",
+   "quotes": [
+    "The Company increased its full year net earnings outlook to $17.70 to $17.95 per share and adjusted earnings to $18.65 to $18.90 per share."
+   ],
+   "eps_guide": [
+    17.7,
+    17.95
+   ],
+   "eps_guide_note": "as published (GAAP); the adjusted $18.65-18.90 also excludes the amortization of acquisition-related intangible assets, which recurs: not used",
+   "note": "no revenue figure: the $277-280B range stands"
+  },
+  {
+   "fy": 2021,
+   "published": "2021-11-30",
+   "source": "UH104",
+   "doc": "8-K of 2021-11-29",
+   "quotes": [
+    "UnitedHealth Group revenues for 2021 are expected to be approximately $287 billion, with net earnings of $17.80 to $17.95 per share and adjusted net earnings of $18.75 to $18.90 per share."
+   ],
+   "eps_guide": [
+    17.8,
+    17.95
+   ],
+   "eps_guide_note": "as published (GAAP); the adjusted $18.75-18.90 also excludes the amortization of acquisition-related intangible assets, which recurs: not used",
+   "rev_guide_usd_b": [
+    287.0,
+    287.0
+   ],
+   "rev_label": "revenue"
+  },
+  {
+   "fy": 2022,
+   "published": "2021-11-30",
+   "source": "UH104",
+   "doc": "8-K of 2021-11-29",
+   "quotes": [
+    "UnitedHealth Group will also introduce its 2022 outlook, which includes revenues of $317 billion to $320 billion, net earnings of $20.20 to $20.70 per share, and adjusted net earnings of $21.10 to $21.60 per share."
+   ],
+   "eps_guide": [
+    20.2,
+    20.7
+   ],
+   "eps_guide_note": "as published (GAAP); the adjusted $21.10-21.60 also excludes the amortization of acquisition-related intangible assets, which recurs: not used",
+   "rev_guide_usd_b": [
+    317.0,
+    320.0
+   ],
+   "rev_label": "revenue"
   }
  ],
  "dividends": [
@@ -5984,6 +8049,34 @@
    "annual": 3.0,
    "quote": "Dividends paid to shareholders grew 22 percent year-over-year to $724 million in the second quarter, reflecting the 20 percent increase in the annual dividend payment rate to $3.00 per share in June 2017.",
    "note": "$3.00 a year, paid quarterly (UnitedHealth Group Q2 2017 earnings release): 'Dividends paid to shareholders grew 22 percent year-over-year to $724 million in the second quarter, reflecting the 20 percent increase in the annual dividend payment rate to $3.00 per share in June 2017.'"
+  },
+  {
+   "published": "2018-07-17",
+   "source": "UH82",
+   "annual": 3.6,
+   "quote": "Dividends paid to shareholders were $866 million in the second quarter and reflected raising the annual dividend payment rate by 20 percent to $3.60 per share in June 2018.",
+   "note": "$3.60 a year, paid quarterly (UnitedHealth Group Q2 2018 earnings release): 'Dividends paid to shareholders were $866 million in the second quarter and reflected raising the annual dividend payment rate by 20 percent to $3.60 per share in June 2018.'"
+  },
+  {
+   "published": "2019-07-18",
+   "source": "UH88",
+   "annual": 4.32,
+   "quote": "Second quarter dividend payments grew to $1.0 billion as the annual dividend rate was increased 20 percent to $4.32 per share in June 2019.",
+   "note": "$4.32 a year, paid quarterly (UnitedHealth Group Q2 2019 earnings release): 'Second quarter dividend payments grew to $1.0 billion as the annual dividend rate was increased 20 percent to $4.32 per share in June 2019.'"
+  },
+  {
+   "published": "2020-08-03",
+   "source": "UH95",
+   "annual": 5.0,
+   "quote": "In June 2020, the Company’s Board of Directors increased the Company’s quarterly cash dividend to shareholders to an annual rate of $5.00 compared to $4.32 per share, which the Company had paid since June 2019.",
+   "note": "$5.00 a year, paid quarterly (UnitedHealth Group Q2 2020 quarterly report (10-Q)): 'In June 2020, the Company’s Board of Directors increased the Company’s quarterly cash dividend to shareholders to an annual rate of $5.00 compared to $4.32 per share, which the Company had paid since June 2019.'"
+  },
+  {
+   "published": "2021-08-04",
+   "source": "UH102",
+   "annual": 5.8,
+   "quote": "In June 2021, the Company’s Board of Directors increased the Company’s quarterly cash dividend to shareholders to an annual rate of $5.80 compared to $5.00 per share, which the Company had paid since June 2020.",
+   "note": "$5.80 a year, paid quarterly (UnitedHealth Group Q2 2021 quarterly report (10-Q)): 'In June 2021, the Company’s Board of Directors increased the Company’s quarterly cash dividend to shareholders to an annual rate of $5.80 compared to $5.00 per share, which the Company had paid since June 2020.'"
   }
  ],
  "events": [],
