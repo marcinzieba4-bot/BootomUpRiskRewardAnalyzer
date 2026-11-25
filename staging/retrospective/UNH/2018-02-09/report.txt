@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  UNH  ·  UnitedHealth Group Incorporated  ·  $220.96  ·  RETROSPECTIVE as of 2018-02-09
+  Signal: ✕ AVOID   Ratio B: 3.37x   Adj gap: -0.96  [OVERVALUED]
+  Point-in-time: 20 sources, latest published 2018-02-09; latest print Q4 2017 (Jan 16)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2018E revenue, USD bn  →  FY2020E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2018E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  UnitedHealthcare              $142.68  $142.68  $173.61    +0.00   +30.93
+    +13.1% revenues in FY16
+  OptumHealth                   $ 16.24  $16.24  $19.76    +0.00    +3.52
+    +21.4% revenues in FY16
+  OptumInsight                  $  7.04  $ 7.04  $ 8.57    +0.00    +1.53
+    +18.4% revenues in FY16
+  OptumRx                       $ 58.04  $58.04  $70.62    +0.00   +12.58
+    +25.2% revenues in FY16
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $224.00  $224.00  $272.56    +0.00   +48.56
+  FY2018E = FY17 $201.159B × (1 + 11.4%: FY18 revenue guide midpoint (8-K of 2017-11-27)); split pro rata to FY16 segment revenues before eliminations (FY16 growth)
+  Q4 2017 (Jan 16): revenues $52.061B +9.5% YoY (+3.5% QoQ); premiums +9.9%; services and products +8.2%;
+  medical care ratio 82.24% (+143.9bp); operating cost ratio 15.02% (-142.4bp); operating margin 7.64% (+93.5bp); EPS $3.65 vs $1.74
+  Revenue: revenues $52,061M vs $47,535M a year earlier, $50,322M the quarter before (premiums, services, products and investment and other income); premiums $40,378M (+9.9%), services $4,228M and products $7,157M (+8.2% together), investment and other income $298M (+14.2%); diluted EPS attributable to UnitedHealth Group common shareholders $3.65 vs $1.74 a year earlier (GAAP); adjusted EPS $2.59 vs $2.11 (it excludes the Tax Reform benefit and the amortization of acquisition-related intangible assets: not used); diluted shares 991M vs 970M a year earlier; the year-ago Q4 2016 is as the FY2016 10-K restated it (the Penn Treaty assessments), as this release shows it; Q4 2017's tax line is a benefit, the Tax Reform revaluation of the net deferred tax liability ($1.21 a share), below earnings before income taxes
+  FY18 guide (8-K of 2017-11-27, Q4 2017 release): EPS $11.65-11.95 (Q4 2017 release: as published (GAAP), revised for the Tax Reform effects; the adjusted $12.30-12.60 also excludes the amortization of acquisition-related intangible assets, which recurs: not used); revenue $223.0-225.0B (+10.9-11.9% on FY17's $201.16B; 8-K of 2017-11-27); no operating margin guide in numbers; no revenue figure: the $223-225B range of the 8-K of 2017-11-27 stands
+
+  FY2018E EPS check:  $224.000B × 7.0% pre-tax × (1−22.8%) ÷ 0.991B  =  $12.16  (FY2018E EPS, guide midpoint ($11.65-11.95, Q4 2017 release))
+  FY2020E BEAR check: $224.000B × 7.0% ÷ 0.927B  =  $13.00  (scenario $8.38)
+  FY2020E BULL check: $272.560B × 7.4% ÷ 0.927B  =  $16.73  (scenario $15.52)
+  Every 1pp of pre-tax margin ≈ $1.745 EPS ≈ $19.71/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Premium revenue growth                 -6.0%     ≥6.0%    ≥18.0%    ≥56.0%     +9.9%  ◦ BASE  ██░░
+  Medical care ratio                  +630.0bp  ≤290.0bp  ≤-60.0bp  ≤-230.0bp  +143.9bp  ◦ BASE  ██░░
+  Fee revenue (services+products)        -8.0%     ≥2.0%    ≥12.0%    ≥31.0%     +8.2%  ◦ BASE  ██░░
+  Operating cost ratio                +160.0bp   ≤60.0bp  ≤-50.0bp  ≤-300.0bp  -142.4bp  ▲ BULL  ███░
+  Operating margin change             -1400.0bp  ≥-650.0bp   ≥90.0bp  ≥510.0bp   +93.5bp  ▲ BULL  ███░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.30 / 4.00
+  Market composite:   3.12 / 4.00  (back-solved from $220.96 + 15% hurdle)
+  SCA adjustment:    +0.06  ·  EPP-distance adj -0.20  →  Adj composite 2.16  →  Gap -0.96  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY17 revenues +8.8%, premiums +9.9%, medical care ratio 82.07%; Q4 medical care ratio 82.24% (+144bp YoY)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 18.7x FY18E vs a 11.3x 10-yr median (83rd percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: FY18 revenue guide +10.9-11.9% vs a 8.4% 10-yr median  (+0.30 × 20%  =  +0.060)
+    +  FY17 cash and investments $37.14B, cash flows from operations $9.79B, debt-to-total-capital 46.3%, dividend $3.00 a year  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Premium revenue growth                 +9.9%     -6.0%  -15.9%  Risk-based membership and premium yie…
+  Medical care ratio                  +143.9bp  +630.0bp  +486.1bp  Medical costs outrun premium rates
+  Fee revenue (services+products)        +8.2%     -8.0%  -16.2%  Fee-based clients and services shrink
+  Operating cost ratio                -142.4bp  +160.0bp  +302.4bp  Administrative costs outgrow revenues
+  Operating margin change              +93.5bp  -1400.0bp  -1493.5bp  Medical and operating costs outrun re…
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$104.56  (model)  /  $66.20 (defined)
+  Bear probability (proxy model):  12.9%
+
+  KEY TRIGGER: revenue went from +8.7% (Q3 2017) to +9.5% YoY (Q4 2017), +3.5% on the quarter before;
+  the bear case needs the medical care ratio (+143.9bp YoY now) rising further
+  and premium growth (+9.9% YoY) fading as risk membership shrinks. Medical cost trends that outrun premium rates show up in the medical care ratio first;
+  charges land in operating costs.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $11.80  (FY2018E EPS, guide midpoint ($11.65-11.95, Q4 2017 release))
+  Min viable P/E at panic:          9x  [median of calendar-year P/E lows: 2008 5.5x, 2009 5.0x, 2010 6.8x, 2011 7.8x, 2012 9.5x, 2013 9.3x, 2014 12.2x, 2015 16.5x, 2016 15.1x, 2017 14.7x, 2018 18.3x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $106.20/share
+  Current $220.96 vs Updated EPP $106.20:  +108%  ⚠ far above floor — large drawdown room
+  Bear $66.20 vs Updated EPP $106.20:  -38%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Premium revenue growth                         6.0       -3.9   BASE floor (vs +10 now)
+  Medical care ratio                           290.0     +146.1   BASE floor (vs +144 now)
+  Fee revenue (services+products)                2.0       -6.2   BASE floor (vs +8 now)
+  Operating cost ratio                          60.0     +202.4   BASE floor (vs -142 now)
+  Operating margin change                     -650.0     -743.5   BASE floor (vs +94 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $11.80 × (1+12.7%)² = $14.98
+  At 11x P/E (conservative):  $164.82/share
+  + Cumul. dividends (2yr):  +$6.18/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $164.82  (▼56.14 from $220.96)
+  Conservative total return:  -23% over 2yr  = -11%/yr
+
+  12.7% EPS growth is what is left once the premium multiple (18.7x)
+  mean-reverts to 11x. Breakeven at 11x needs FY2020E EPS of $19.53,
+  i.e. 28.6%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $156.49  –  $250.79  (at 68th pct of range)
+  Annual dividend:      $3.00/share  (yield 1.4%)
+  Realized vol:         17% annualized (1-yr daily log returns)
+  Beta vs broad market: 1.06
+  1-sigma range (1yr):  $182.95  –  $258.97  ($220.96 ± 17%)
+  2-sigma range (1yr):  $144.95  –  $296.97
+  ────────────────────────────────────────────────────────────
+  Bear $66.20 requires:  ~4.1σ price move  (unusual — requires fundamental break)
+  A health benefits company whose earnings follow medical cost trends against premium rates: the stock is +40% off its February
+  low (52 weeks) while revenue went from +8.7% (Q3 2017) to +9.5% YoY (Q4 2017), +3.5% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        8.38    7.9x  $  66.20    12.9%      4.1%    +8.9pp  EPS -15.7%/yr (worst year FY07-FY17, capped at 0%); P/E to its 10th pct
+  BASE       15.52   11.3x  $ 175.38    45.2%     14.2%   +31.0pp  EPS +14.7%/yr (FY18 guide + margin + buyback); P/E at its 10-yr median
+  BULL       15.52   17.2x  $ 266.94    35.2%     49.6%   -14.4pp  EPS +14.7%/yr (FY07-FY17 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL      21.05   19.5x  $ 410.48     6.6%     32.1%   -25.5pp  EPS +33.6%/yr (best 2-yr run FY07-FY17, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $209.10  /  Market EV: $291.91  /  Current: $220.96
+  Conservative EV (2yr, ④): $164.82 + $6.18 divs = $171.00 total value
+  Downside (→ Bear $66.20): 70.0%   Upside (→ Bull $266.94): 20.8%   Ratio B 3.37x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $220.96 the market needs $292.22 in two years —
+  above the BULL case. That is a market composite of 3.12 against a model
+  read of 2.16: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       3.37x    +108%    -0.96  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     1.76x    +108%    -0.41  MODESTLY OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx    +108%    -1.37  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          2.83x    +108%    -0.89  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                          4.12x    +108%    -1.03  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             3.37x    +108%    -0.66  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 3.37x     +56%    -0.86  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    3.37x    +108%    -0.73  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 2018 print (the quarter ends in Mar) — revenue against the FY18 revenue guide: +10.9-11.9% YoY
+  (2) Medical costs — the medical care ratio was 82.24% in Q4 2017 (+143.9bp YoY): what must hold for premiums to turn into earnings
+  (3) The FY18 EPS guide — $11.65-11.95 (Q4 2017 release)
+  (4) Operating costs — operating cost ratio 15.02% in Q4 2017 (-142.4bp YoY): where legal, restructuring and other charges land
+  (5) Capital at 19x — dividend $3.00 a year, paid quarterly (UnitedHealth Group Q2 2017 earnings release): 'Dividends paid to shareholders grew 22 percent year-over-year to $724 million in the second quarter, reflecting the 20 percent increase in the annual dividend payment rate to $3.00 per share in June 2017.'; diluted shares 991M vs 970M a year earlier
+  ✕ AVOID  |  EPP floor $106.20  |  ADD below ~$149.07  |  TRIM above $266.94
+════════════════════════════════════════════════════════════════════════
+

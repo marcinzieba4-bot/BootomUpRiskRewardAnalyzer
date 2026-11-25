@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  UNH  ·  UnitedHealth Group Incorporated  ·  $365.58  ·  RETROSPECTIVE as of 2021-03-19
+  Signal: ✕ AVOID   Ratio B: 2.76x   Adj gap: -1.28  [OVERVALUED]
+  Point-in-time: 15 sources, latest published 2021-03-19; latest print Q4 2020 (Jan 20)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2021E revenue, USD bn  →  FY2023E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2021E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  UnitedHealthcare              $165.03  $165.03  $202.74    +0.00   +37.71
+    +3.6% revenues in FY20
+  OptumHealth                   $ 32.71  $32.71  $40.18    +0.00    +7.47
+    +31.3% revenues in FY20
+  OptumInsight                  $  8.87  $ 8.87  $10.90    +0.00    +2.03
+    +8.0% revenues in FY20
+  OptumRx                       $ 71.89  $71.89  $88.31    +0.00   +16.42
+    +17.8% revenues in FY20
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $278.50  $278.50  $342.13    +0.00   +63.63
+  FY2021E = FY20 $257.141B × (1 + 8.3%: FY21 revenue guide midpoint (8-K of 2020-12-01)); split pro rata to FY20 segment revenues before eliminations (FY20 growth)
+  Q4 2020 (Jan 20): revenues $65.467B +7.5% YoY (+0.5% QoQ); premiums +6.2%; services and products +12.4%;
+  medical care ratio 83.20% (+72.8bp); operating cost ratio 17.59% (+231.5bp); operating margin 5.37% (-299.4bp); EPS $2.30 vs $3.68
+  Revenue: revenues $65,467M vs $60,901M a year earlier, $65,115M the quarter before (premiums, services, products and investment and other income); premiums $50,581M (+6.2%), services $5,751M and products $8,690M (+12.4% together), investment and other income $445M (+2.8%); diluted EPS attributable to UnitedHealth Group common shareholders $2.30 vs $3.68 a year earlier (GAAP); adjusted EPS $2.52 vs $3.90 (it excludes the amortization of acquisition-related intangible assets, which recurs: not used); diluted shares 961M vs 962M a year earlier
+  FY21 guide (8-K of 2020-12-01, Q4 2020 release): EPS $16.90-17.40 (Q4 2020 release: as published (GAAP), affirmed; the adjusted $17.75-18.25 also excludes the amortization of acquisition-related intangible assets, which recurs: not used); revenue $277.0-280.0B (+7.7-8.9% on FY20's $257.14B; 8-K of 2020-12-01); no operating margin guide in numbers; no revenue figure: the $277-280B range stands
+
+  FY2021E EPS check:  $278.500B × 8.1% pre-tax × (1−24.0%) ÷ 0.961B  =  $17.78  (FY2021E EPS, guide midpoint ($16.90-17.40, Q4 2020 release))
+  FY2023E BEAR check: $278.500B × 8.1% ÷ 0.935B  =  $18.28  (scenario $17.15)
+  FY2023E BULL check: $342.130B × 8.5% ÷ 0.935B  =  $23.57  (scenario $22.49)
+  Every 1pp of pre-tax margin ≈ $2.203 EPS ≈ $37.89/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Premium revenue growth                 -6.0%     ≥6.0%    ≥18.0%    ≥56.0%     +6.2%  ◦ BASE  ██░░
+  Medical care ratio                  +630.0bp  ≤290.0bp  ≤-60.0bp  ≤-230.0bp   +72.8bp  ◦ BASE  ██░░
+  Fee revenue (services+products)        -8.0%     ≥2.0%    ≥12.0%    ≥31.0%    +12.4%  ▲ BULL  ███░
+  Operating cost ratio                +160.0bp   ≤60.0bp  ≤-50.0bp  ≤-300.0bp  +231.5bp  ⚠ BEAR  █░░░
+  Operating margin change             -1400.0bp  ≥-650.0bp   ≥90.0bp  ≥510.0bp  -299.4bp  ◦ BASE  ██░░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.00 / 4.00
+  Market composite:   3.17 / 4.00  (back-solved from $365.58 + 15% hurdle)
+  SCA adjustment:    -0.01  ·  EPP-distance adj -0.10  →  Adj composite 1.89  →  Gap -1.28  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY20 revenues +6.2%, premiums +6.2%, medical care ratio 79.11%; Q4 medical care ratio 83.20% (+73bp YoY)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 21.3x FY21E vs a 17.2x 10-yr median (95th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    -  Growth vs own history: FY21 revenue guide +7.7-8.9% vs a 8.8% 9-yr median  (-0.05 × 20%  =  -0.010)
+    +  FY20 cash and investments $61.02B, cash flows from operations $22.17B, debt-to-total-capital 38.9%, dividend $5.00 a year  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Premium revenue growth                 +6.2%     -6.0%  -12.2%  Risk-based membership and premium yie…
+  Medical care ratio                   +72.8bp  +630.0bp  +557.2bp  Medical costs outrun premium rates
+  Fee revenue (services+products)       +12.4%     -8.0%  -20.4%  Fee-based clients and services shrink
+  Operating cost ratio                +231.5bp  +160.0bp  -71.5bp  Administrative costs outgrow revenues
+  Operating margin change             -299.4bp  -1400.0bp  -1100.6bp  Medical and operating costs outrun re…
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$233.85  (model)  /  $176.65 (defined)
+  Bear probability (proxy model):  17.6%
+
+  KEY TRIGGER: revenue went from +7.9% (Q3 2020) to +7.5% YoY (Q4 2020), +0.5% on the quarter before;
+  the bear case needs the medical care ratio (+72.8bp YoY now) rising further
+  and premium growth (+6.2% YoY) fading as risk membership shrinks. Medical cost trends that outrun premium rates show up in the medical care ratio first;
+  charges land in operating costs.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $17.15  (FY2021E EPS, guide midpoint ($16.90-17.40, Q4 2020 release))
+  Min viable P/E at panic:          14x  [median of calendar-year P/E lows: 2011 8.8x, 2012 9.5x, 2013 9.3x, 2014 12.2x, 2015 16.5x, 2016 15.1x, 2017 14.7x, 2018 17.4x, 2019 15.0x, 2020 12.2x, 2021 18.9x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $240.10/share
+  Current $365.58 vs Updated EPP $240.10:  +52%  ⚠ far above floor — large drawdown room
+  Bear $176.65 vs Updated EPP $240.10:  -26%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Premium revenue growth                         6.0       -0.2   BASE floor (vs +6 now)
+  Medical care ratio                           290.0     +217.2   BASE floor (vs +73 now)
+  Fee revenue (services+products)                2.0      -10.4   BASE floor (vs +12 now)
+  Operating cost ratio                          60.0     -171.5   BASE floor (vs +232 now)
+  Operating margin change                     -650.0     -350.6   BASE floor (vs -299 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $17.15 × (1+7.7%)² = $19.88
+  At 17x P/E (conservative):  $338.04/share
+  + Cumul. dividends (2yr):  +$10.30/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $338.04  (▼27.54 from $365.58)
+  Conservative total return:  -5% over 2yr  = -2%/yr
+
+  7.7% EPS growth is what is left once the premium multiple (21.3x)
+  mean-reverts to 17x. Breakeven at 17x needs FY2023E EPS of $20.90,
+  i.e. 10.4%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $187.72  –  $370.46  (at 97th pct of range)
+  Annual dividend:      $5.00/share  (yield 1.4%)
+  Realized vol:         35% annualized (1-yr daily log returns)
+  Beta vs broad market: 1.00
+  1-sigma range (1yr):  $237.99  –  $493.17  ($365.58 ± 35%)
+  2-sigma range (1yr):  $110.41  –  $620.75
+  ────────────────────────────────────────────────────────────
+  Bear $176.65 requires:  ~1.5σ price move  (within normal vol range)
+  A health benefits company whose earnings follow medical cost trends against premium rates: the stock is +88% off its March
+  low (52 weeks) while revenue went from +7.9% (Q3 2020) to +7.5% YoY (Q4 2020), +0.5% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR       17.15   10.3x  $ 176.65    17.6%      3.8%   +13.8pp  EPS +0.0%/yr (worst year FY11-FY20, capped at 0%); P/E to its 10th pct
+  BASE       20.63   17.2x  $ 354.84    61.5%     13.4%   +48.0pp  EPS +9.7%/yr (FY21 guide + margin + buyback); P/E at its 10-yr median
+  BULL       22.49   19.3x  $ 434.06    17.6%     46.8%   -29.2pp  EPS +14.5%/yr (FY11-FY20 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL      30.59   20.5x  $ 627.10     3.3%     35.9%   -32.6pp  EPS +33.6%/yr (best 2-yr run FY11-FY20, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $346.47  /  Market EV: $482.80  /  Current: $365.58
+  Conservative EV (2yr, ④): $338.04 + $10.30 divs = $348.34 total value
+  Downside (→ Bear $176.65): 51.7%   Upside (→ Bull $434.06): 18.7%   Ratio B 2.76x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $365.58 the market needs $483.48 in two years —
+  above the BULL case. That is a market composite of 3.17 against a model
+  read of 1.89: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       2.76x     +52%    -1.28  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     1.51x     +52%    -0.99  OVERVALUED / WATCHLIST
+  Multiples one band cheaper (p5/p25/med/p75)     9.21x     +52%    -1.52  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          2.25x     +52%    -1.20  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                          3.50x     +52%    -1.37  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             2.76x     +52%    -0.98  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 2.76x     +25%    -1.18  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    2.76x     +52%    -1.00  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 2021 print (the quarter ends in Mar) — revenue against the FY21 revenue guide: +7.7-8.9% YoY
+  (2) Medical costs — the medical care ratio was 83.20% in Q4 2020 (+72.8bp YoY): what must hold for premiums to turn into earnings
+  (3) The FY21 EPS guide — $16.90-17.40 (Q4 2020 release)
+  (4) Operating costs — operating cost ratio 17.59% in Q4 2020 (+231.5bp YoY): where legal, restructuring and other charges land
+  (5) Capital at 21x — dividend $5.00 a year, paid quarterly: 'In June 2020, the Company’s Board of Directors increased the Company’s quarterly cash dividend to shareholders to an annual rate of $5.00 compared to $4.32 per share, which the Company had paid since June 2019.'; diluted shares 961M vs 962M a year earlier
+  ✕ AVOID  |  EPP floor $240.10  |  ADD below ~$301.61  |  TRIM above $434.06
+════════════════════════════════════════════════════════════════════════
+
