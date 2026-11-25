@@ -1,7 +1,7 @@
 # UNH retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the UNH weekly dates: 522, 105 from 2008-01-04 to 2009-12-31, 209 from 2010-01-08 to 2013-12-31 and
-208 from 2014-01-10 to 2017-12-29, all UnitedHealth Group Incorporated (NYSE: UNH). They are **labels and hypotheses**: never feed them back into the method or the fact sheet. The batch was scored only after its
+Patterns seen in `outcome.json` for the UNH weekly dates: 731, 105 from 2008-01-04 to 2009-12-31, 209 from 2010-01-08 to 2013-12-31,
+208 from 2014-01-10 to 2017-12-29 and 209 from 2018-01-05 to 2021-12-31, all UnitedHealth Group Incorporated (NYSE: UNH). They are **labels and hypotheses**: never feed them back into the method or the fact sheet. The batch was scored only after its
 point-in-time build, validation, README section and firewall result were committed and pushed (95bb426, the builder fix the firewall's first
 run needed 36eb1c4, firewall result 4a203a3); the outcomes were computed on 2026-11-24. Every date has its 6-month, 1-, 2- and 3-year
 horizons (the last ends 2012-12-28 for 2008-2009 and 2016-12-30 for 2010-2013). The 2010-2013 batch was decided in the session that
@@ -9,15 +9,20 @@ scored 2008-2009 (disclosed in retro/README.md, "UNH 2010-2013") and scored only
 firewall result were committed and pushed (5ed6613, 237ded5, 5fcd318, ac1542c), on 2026-11-24. The 208 dates of 2014-2017 (2014-01-10 to
 2017-12-29) were built in a new session that did not open these findings or any outcome before scoring (disclosed in retro/README.md,
 "UNH 2014-2017"), and scored only after its build, validation outputs, README section and firewall result were committed and pushed
-(3f76218, 4a671e7, c7ba971, 96a0fd5), on 2026-11-24; their last horizon ends 2020-12-29. Total returns include the dividends (the
+(3f76218, 4a671e7, c7ba971, 96a0fd5), on 2026-11-24; their last horizon ends 2020-12-29. The 209 dates of 2018-2021 were decided in
+the session that scored 2014-2017 (disclosed in retro/README.md, "UNH 2018-2021") and scored only after their build, validation
+outputs, README section and firewall result were committed and pushed (7e2ea9a, b991f64, 1041443, f48751d), on 2026-11-25; their last
+horizon ends 2024-12-30. Total returns include the dividends (the
 annual $0.03 to the ex-date of 2010-04-01, then quarterly: $0.125 from 2010-06-03, $0.163 from 2011-06-03, $0.213 from 2012-06-13, $0.28
 from 2013-06-13, $0.375 from 2014-06-12, $0.50 from 2015-06-11, $0.625 from 2016-06-15, $0.75 from 2017-06-15, $0.90 from 2018-06-15,
-$1.08 from 2019-06-14, $1.25 from 2020-06-19). No split falls in any horizon, so every price is as traded.
+$1.08 from 2019-06-14, $1.25 from 2020-06-19, $1.45 from 2021-06-18, $1.65 from 2022-06-16, $1.88 from 2023-06-15, $2.10 from
+2024-06-17). No split falls in any horizon, so every price is as traded.
 Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years and +52.1%
 over three. "Call held" is `call_check_2y`: CHEAP should clear the hurdle or beat the benchmark (SPY), FAIR should land within 15pp of
 it either way. Every 2008-2012 date was CHEAP and BUY, so those tables test that one call against the calendar; 2013 has 29 CHEAP and
 BUY dates and 24 FAIR (5 BUY, 19 ACCUMULATE); 2014-2017 has 192 RICH dates (14 WATCHLIST, 178 AVOID) and 16 FAIR (7 ACCUMULATE,
-9 WATCHLIST), and RICH expects the stock to miss the hurdle and lag SPY.
+9 WATCHLIST), and RICH expects the stock to miss the hurdle and lag SPY; 2018-2021 has 180 RICH, 22 FAIR and 7 CHEAP dates (tiers
+AVOID 139, WATCHLIST 50, ACCUMULATE 15, BUY 5).
 
 ## 2008 (53 dates)
 
@@ -336,4 +341,130 @@ Across the 208 dates of 2014-2017:
 - **The Q4 2016 restatement and the adjusted EPS made no difference:** the series' calls are the same with the release's Q4 2016 figures,
   and the adjusted ranges move 5 dates from RICH to FAIR, which beat SPY by more than 15pp either way.
 - **Profile drift:** the kind (DURABLE, risk 2) matches today's profile on all 208 dates (a 2026 analysis, read here only through
+  `profile_drift`).
+
+## 2018 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 52 | +24.3% | -4.6% to +44.8% | 8 | 33 | +8.2% | 15 |
+| FY17E $9.45 (2018-01-05 to 2018-01-12) | 2 | +32.4% | +29.9% to +32.4% | 1 | 2 | +9.8% | 0 |
+| FY18E $11.8 (2018-01-17 to 2018-04-13) | 13 | +21.0% | -4.6% to +34.3% | 3 | 13 | +12.9% | 0 |
+| FY18E $11.825 (2018-04-18 to 2018-07-13) | 13 | +24.1% | +14.6% to +29.0% | 0 | 13 | +6.5% | 0 |
+| FY18E $11.925 (2018-07-18 to 2018-10-12) | 13 | +20.2% | +15.4% to +30.4% | 0 | 5 | +5.1% | 8 |
+| FY18E $12.1 (2018-10-17 to 2018-12-28) | 11 | +30.2% | +22.3% to +44.8% | 4 | 0 | +11.3% | 7 |
+| latest print Q3 2017 (2018-01-05 to 2018-01-12) | 2 | +32.4% | +29.9% to +32.4% | 1 | 2 | +9.8% | 0 |
+| latest print Q4 2017 (2018-01-17 to 2018-04-13) | 13 | +21.0% | -4.6% to +34.3% | 3 | 13 | +12.9% | 0 |
+| latest print Q1 2018 (2018-04-18 to 2018-07-13) | 13 | +24.1% | +14.6% to +29.0% | 0 | 13 | +6.5% | 0 |
+| latest print Q2 2018 (2018-07-18 to 2018-10-12) | 13 | +20.2% | +15.4% to +30.4% | 0 | 5 | +5.1% | 8 |
+| latest print Q3 2018 (2018-10-17 to 2018-12-28) | 11 | +30.2% | +22.3% to +44.8% | 4 | 0 | +11.3% | 7 |
+
+- **RICH held on 15 of 52 dates, all from 2018-08-24** ($238.34-281.36). The 33 entries to 2018-08-17 ($212.55-262.33, 18.0-24.2x)
+  returned -4.6% to +34.3% over two years and beat SPY on every one, by 0.1-22.2pp, while clearing the hurdle on 4; the 28 from
+  2018-08-24 to 2018-12-28 (19.7-23.3x) returned +15.4% to +44.8% and lagged SPY on every one, by 0.4-14.1pp (RICH held on 15 of
+  them, where the hurdle was missed too; the lag runs on to 2019-03-01, 0.4-21.3pp over the 28 dates from 2018-08-24). The year's 1-year median was +0.8%; every 2018 entry sat through the -36.2% drawdown of
+  February-March 2020, and two years on the price was $194.86-356.82, nearest BULL on 49 dates. The only negative two-year return of
+  the series is 2018-03-23 (-4.6%, still 4.7pp ahead of SPY).
+
+## 2019 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier ACCUMULATE | 2 | +86.9% | +84.6% to +86.9% | 2 | 2 | +69.4% | 2 |
+| class CHEAP, legacy tier BUY | 2 | +92.9% | +80.7% to +92.9% | 2 | 2 | +73.2% | 2 |
+| class FAIR, legacy tier ACCUMULATE | 9 | +81.7% | +71.0% to +88.9% | 9 | 9 | +57.2% | 0 |
+| class FAIR, legacy tier WATCHLIST | 12 | +69.7% | +66.0% to +78.8% | 12 | 12 | +40.1% | 1 |
+| class RICH, legacy tier ACCUMULATE | 1 | +87.6% | +87.6% to +87.6% | 1 | 1 | +55.2% | 0 |
+| class RICH, legacy tier AVOID | 15 | +49.6% | +24.4% to +72.3% | 11 | 7 | +25.8% | 4 |
+| class RICH, legacy tier WATCHLIST | 11 | +57.1% | +39.6% to +84.0% | 11 | 9 | +30.8% | 0 |
+| FY18E $12.1 (2019-01-04 to 2019-01-11) | 2 | +49.6% | +49.3% to +49.6% | 2 | 0 | +25.8% | 0 |
+| FY19E $13.85 (2019-01-16 to 2019-04-12) | 13 | +39.6% | +24.4% to +72.7% | 9 | 5 | +24.1% | 4 |
+| FY19E $13.925 (2019-04-17 to 2019-07-12) | 13 | +69.7% | +60.1% to +84.6% | 13 | 13 | +38.2% | 1 |
+| FY19E $14.05 (2019-07-19 to 2019-10-11) | 13 | +81.5% | +63.2% to +92.9% | 13 | 13 | +57.2% | 4 |
+| FY19E $14.2 (2019-10-16 to 2019-11-29) | 7 | +83.9% | +61.7% to +87.6% | 7 | 7 | +49.9% | 0 |
+| FY19E $14.25 (2019-12-06 to 2019-12-27) | 4 | +71.1% | +67.9% to +72.3% | 4 | 4 | +38.6% | 0 |
+| latest print Q3 2018 (2019-01-04 to 2019-01-11) | 2 | +49.6% | +49.3% to +49.6% | 2 | 0 | +25.8% | 0 |
+| latest print Q4 2018 (2019-01-16 to 2019-04-12) | 13 | +39.6% | +24.4% to +72.7% | 9 | 5 | +24.1% | 4 |
+| latest print Q1 2019 (2019-04-17 to 2019-07-12) | 13 | +69.7% | +60.1% to +84.6% | 13 | 13 | +38.2% | 1 |
+| latest print Q2 2019 (2019-07-19 to 2019-10-11) | 13 | +81.5% | +63.2% to +92.9% | 13 | 13 | +57.2% | 4 |
+| latest print Q3 2019 (2019-10-16 to 2019-12-27) | 11 | +71.1% | +61.7% to +87.6% | 11 | 11 | +40.7% | 0 |
+
+- **CHEAP held on all 4 CHEAP dates, RICH on 4 of 27, FAIR on 1 of 21.** The FAIR and CHEAP entries (2019-04-12 to 2019-10-16,
+  $215.26-252.94, 15.3-18.0x) returned +66.0% to +92.9% over two years, SPY by 13.7-39.3pp (FAIR held only on 2019-08-09, 13.7pp
+  ahead), and +93.9% to +153.6% over three; the CHEAP ones +80.7% to +92.9%. The RICH entries ($237.29-295.97, 17.1-20.8x) returned
+  +24.4% to +87.6% and beat SPY on 17 of 27. Every 2019 entry beat SPY over three years.
+
+## 2020 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 3 | +128.1% | +116.1% to +150.2% | 3 | 3 | +90.6% | 3 |
+| class FAIR, legacy tier ACCUMULATE | 1 | +90.7% | +90.7% to +90.7% | 1 | 1 | +66.3% | 0 |
+| class RICH, legacy tier ACCUMULATE | 2 | +110.8% | +74.9% to +110.8% | 2 | 2 | +66.8% | 0 |
+| class RICH, legacy tier AVOID | 25 | +62.5% | +50.0% to +78.1% | 25 | 25 | +49.6% | 0 |
+| class RICH, legacy tier WATCHLIST | 22 | +77.2% | +59.1% to +84.5% | 22 | 22 | +56.2% | 0 |
+| FY19E $14.25 (2020-01-03 to 2020-01-10) | 2 | +77.1% | +61.1% to +77.1% | 2 | 2 | +39.6% | 0 |
+| FY20E $15.6 (2020-01-16 to 2020-10-09) | 39 | +74.9% | +57.5% to +150.2% | 39 | 39 | +55.2% | 3 |
+| FY20E $15.775 (2020-10-15 to 2020-11-27) | 7 | +61.8% | +50.0% to +84.5% | 7 | 7 | +50.4% | 0 |
+| FY20E $15.9 (2020-12-04 to 2020-12-31) | 5 | +58.3% | +54.6% to +63.5% | 5 | 5 | +49.6% | 0 |
+| latest print Q3 2019 (2020-01-03 to 2020-01-10) | 2 | +77.1% | +61.1% to +77.1% | 2 | 2 | +39.6% | 0 |
+| latest print Q4 2019 (2020-01-16 to 2020-04-09) | 13 | +79.3% | +58.7% to +150.2% | 13 | 13 | +51.5% | 3 |
+| latest print Q1 2020 (2020-04-16 to 2020-07-10) | 13 | +76.7% | +59.1% to +82.8% | 13 | 13 | +56.2% | 0 |
+| latest print Q2 2020 (2020-07-16 to 2020-10-09) | 13 | +72.9% | +57.5% to +82.8% | 13 | 13 | +54.8% | 0 |
+| latest print Q3 2020 (2020-10-15 to 2020-12-31) | 12 | +61.7% | +50.0% to +84.5% | 12 | 12 | +50.4% | 0 |
+
+- **CHEAP held on all 3 CHEAP dates; RICH on none of 49.** The COVID-low entries (2020-03-20 to 2020-04-03, $206.59-242.45,
+  13.2-15.5x) returned +116.1% to +150.2% over two years, the series' best; the RICH ones ($264.13-355.67, 16.9-22.5x) +50.0% to
+  +110.8%, SPY by 14.7-61.7pp, every one clearing the hurdle. The guide was "maintained" through the pandemic and FY2020 came in at
+  $16.03 against "to approach $15.90".
+
+## 2021 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 47 | +24.2% | +7.6% to +42.8% | 7 | 47 | +22.8% | 0 |
+| class RICH, legacy tier WATCHLIST | 5 | +49.4% | +49.2% to +57.5% | 5 | 5 | +56.0% | 0 |
+| FY20E $15.9 (2021-01-08 to 2021-01-15) | 2 | +42.8% | +38.1% to +42.8% | 2 | 2 | +45.5% | 0 |
+| FY21E $17.15 (2021-01-21 to 2021-04-09) | 12 | +41.3% | +29.7% to +57.5% | 9 | 12 | +47.7% | 0 |
+| FY21E $17.4 (2021-04-16 to 2021-07-09) | 13 | +21.3% | +15.1% to +34.1% | 1 | 13 | +25.1% | 0 |
+| FY21E $17.6 (2021-07-16 to 2021-10-08) | 13 | +24.2% | +15.7% to +31.9% | 0 | 13 | +21.3% | 0 |
+| FY21E $17.825 (2021-10-15 to 2021-11-26) | 7 | +20.8% | +16.8% to +29.1% | 0 | 7 | +11.1% | 0 |
+| FY21E $17.875 (2021-12-03 to 2021-12-31) | 5 | +11.8% | +7.6% to +24.8% | 0 | 5 | +2.6% | 0 |
+| latest print Q3 2020 (2021-01-08 to 2021-01-15) | 2 | +42.8% | +38.1% to +42.8% | 2 | 2 | +45.5% | 0 |
+| latest print Q4 2020 (2021-01-21 to 2021-04-09) | 12 | +41.3% | +29.7% to +57.5% | 9 | 12 | +47.7% | 0 |
+| latest print Q1 2021 (2021-04-16 to 2021-07-09) | 13 | +21.3% | +15.1% to +34.1% | 1 | 13 | +25.1% | 0 |
+| latest print Q2 2021 (2021-07-16 to 2021-10-08) | 13 | +24.2% | +15.7% to +31.9% | 0 | 13 | +21.3% | 0 |
+| latest print Q3 2021 (2021-10-15 to 2021-12-31) | 12 | +20.3% | +7.6% to +29.1% | 0 | 12 | +9.4% | 0 |
+
+- **RICH held on none of 52 dates, but on its own terms it was close.** UnitedHealth Group beat SPY over two years on all 52 (SPY's 2022
+  fall), by 4.4-50.0pp, yet cleared the hurdle only on 12, all to 2021-04-16; the 38 entries from 2021-04-16 ($389.37-502.14, 22.3-28.1x,
+  the series' highest multiples) returned +7.6% to +34.1% over two years and +4.2% to +54.0% over three, and lagged SPY over three years
+  on 16 dates from 2021-04-09. The last date, 2021-12-31 at $502.14 (28.1x), returned +7.6% over two years and +5.5% over three. Two
+  years on every 2021 price landed nearest BULL.
+
+Across the 209 dates of 2018-2021:
+- **CHEAP held on all 7 dates, FAIR on 1 of 22, RICH on 19 of 180.** Median two-year returns: CHEAP +92.9%, FAIR +73.8%, RICH +32.8%
+  (three years: +139.3%, +121.9%, +65.3%). UnitedHealth Group beat SPY over two years on 180 of the 209 dates and over three on 181, and
+  cleared the two-year hurdle on 121.
+- **The tiers ranked the returns in order, though the classes missed their own expectations:** BUY 5 (median +116.1%), ACCUMULATE 15
+  (+84.6%), WATCHLIST 50 (+70.5%), AVOID 139 (+27.2%). The entry multiple explains more than in 2014-2017: the correlation of the
+  current-year P/E with the two-year return is -0.75 (it was -0.40), from a median +92.9% at 13-16x to +17.8% at 25-28x. RICH was
+  right about the direction against the stock's own better entries and wrong against the market: the AVOID dates still beat SPY on 112
+  of 139.
+- **The 2013 and 2014-2017 hypothesis, as the window cleared.** The window's median rose from 11.3x to 18.0x as 2008-2012 left it, and
+  RICH began to hold where the multiple was highest (late 2018, the 2021 entries' three-year returns), but most RICH calls still failed
+  against a market the stock beat. The pre-outcome runs point the same way: the five-year window, which leaves out more of the derated
+  years, moved 75 classes (mostly to CHEAP), and 68 of the moved dates would then have held, against 5 before; the signals at XBULL moved
+  68 (29 then held, 3 before), the adjusted guides 18 (15 then held, none before), FY2017 at $9.50 6 (all 6 then held). The signals at
+  BEAR, which moved the 29 FAIR and CHEAP dates to RICH, would have turned 8 holds into none. Hypothesis, not a rule, and the same one as
+  before: a ten-year window that still holds a derated regime reads a rerated franchise as dear; test it on other tickers, never fit it to
+  UNH.
+- **The guides were raised in every year and met:** FY2018 $12.19 against "to approach $12.10", FY2019 $14.33 against "to approach
+  $14.25", FY2020 $16.03 against "to approach $15.90", and FY2021 $18.08 (the Q4 2021 release of 2022-01-19, outside the series)
+  against $17.80-17.95. The COVID-19 allowance in the FY2021 ranges was not needed in the end; adding it back (before any outcome) moved 5
+  dates from RICH to FAIR, none of which then held.
+- **FY2017 with its Tax Reform benefit** set XBULL at +33.6%/yr on every date from the Q4 2017 print; the realized two-year EPS growth
+  from FY2017 to FY2019 was +15.6%/yr on GAAP ($10.72 to $14.33), +22.8% on the $9.50 reading. BULL (+14.5-16.0%) was closer than XBULL,
+  and two-year prices landed nearest BULL or XBULL on every date but one (BASE, in 2018).
+- **Profile drift:** the kind (DURABLE, risk 2) matches today's profile on all 209 dates (a 2026 analysis, read here only through
   `profile_drift`).

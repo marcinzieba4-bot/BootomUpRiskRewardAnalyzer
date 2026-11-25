@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "UNH",
+ "as_of": "2018-12-28",
+ "computed": "2026-11-25",
+ "data_source": "Yahoo Finance daily closes + dividends (UNH, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2019-06-28",
+   "price": 244.01,
+   "dividends": 1.98,
+   "total_return_pct": -0.1,
+   "benchmark_total_return_pct": 19.3,
+   "excess_pct": -19.4,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2019-12-27",
+   "price": 295.97,
+   "dividends": 4.14,
+   "total_return_pct": 21.9,
+   "benchmark_total_return_pct": 32.6,
+   "excess_pct": -10.7,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2020-12-28",
+   "price": 345.95,
+   "dividends": 8.97,
+   "total_return_pct": 44.1,
+   "benchmark_total_return_pct": 54.8,
+   "excess_pct": -10.6,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2021-12-28",
+   "price": 502.94,
+   "dividends": 14.57,
+   "total_return_pct": 110.2,
+   "benchmark_total_return_pct": 99.4,
+   "excess_pct": 10.8,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2020-11-16",
+   "price": 356.82
+  },
+  "low": {
+   "date": "2020-03-23",
+   "price": 194.86
+  },
+  "max_drawdown_pct": -36.2,
+  "return_to_avg_price_m12_m24_pct": 22.1
+ },
+ "scenario_landing_2y": "BULL",
+ "call_check_2y": {
+  "expectation": "RICH: should miss the hurdle and lag the benchmark",
+  "hit": false
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "DURABLE",
+   "risk": 2
+  },
+  "today": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "UnitedHealth: managed-care scale; DOJ criminal/civil probe and MA exits",
+   "reviewed": "2026-09-22"
+  }
+ }
+}
