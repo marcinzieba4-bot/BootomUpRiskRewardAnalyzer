@@ -25812,7 +25812,12 @@ Controls and checks (before any outcome):
   name cloud" on 2021-03-05, each after its filing; the FY2022 range, Change Healthcare, Diplomat, Banmédica, DaVita, Witty, OptumCare and
   Optum360 appear in no model.
 - **Regression:** the 522 models of 2008-2017 rebuild byte for byte; no other ticker's code changes (the firewall tool gains a UNH plant).
-- **Firewall** (run after the build, checks and README section were committed, before any 2018-2021 outcome): pending.
+- **Firewall** (run after the build, checks and README section were committed, before any 2018-2021 outcome): it passes at all 28
+  cutoffs above (2018-01-01, every print, 10-K, conference-release and dividend 10-Q date of the range, and 2022-01-01: 522 to 731 dates
+  each), 0 files changed and no planted text, with the earlier batches' plants and a planted `cloud_dropped` note on the later vintage.
+  As positive controls, a planted print dated 2020-05-29 with its own source reaches 2020-06-05 (its text in the model) and not 2020-05-22
+  (byte-identical); the same print citing a source published after AS_OF (the Q2 2020 release of 2020-07-15) stops at the builder's check
+  that every source is public on AS_OF. A full rebuild after the runs is byte-identical.
 
 Seen in the build (method behaviour, not tuned):
 The ten-year window finally sheds the 2008-2012 regime: its median rises from 11.3x (January 2018) to 18.0x (December 2021) and the EPP
