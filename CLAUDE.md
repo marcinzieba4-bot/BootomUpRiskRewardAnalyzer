@@ -23,7 +23,7 @@ touching either directory.
   outcomes or findings enters another's models. UNP (2008-2026 so far), LOW (2008-2026 so far), AAPL (2008-2026 so far),
   NKE (2008-2026 so far), AVGO (from its 2009-08-06 listing to 2026-10-30 so far), PEP (2008 to 2026-10-30 so far), MSFT
   (2008 to 2026-10-30 so far), XOM (2008 to 2026-10-30 so far), SHW (2008 to 2026-11-06 so far), WMT (2008 to 2026-11-06 so far), RCL (2008 to 2026-11-06 so far), MAR (2008 to 2026-11-03 so far), BKR (2008 to 2017-06-30, then 2019-02-01 to 2026-11-06 so far), PFE (2008 to 2026-11-04 so far), CMCSA (2008 to 2026-11-06 so far), CAT (2008 to 2026-11-06 so far), BMY (2008 to 2026-11-06 so far), NVDA (2008 to 2026-11-06 so far), F (2008-01-04 to 2026-11-06 so far; 2022-01-07 onward was built first at the owner's request, and dates before 2022 are an early era with its
-  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far), SPGI (2008-01-04 to 2026-11-20 so far), CB (2008-01-04 to 2026-11-20 so far), LLY (2008-01-04 to 2026-11-20 so far) and UNH (2008-01-04 to 2017-12-29 so far) sit in `staging/retrospective/` until the owner adds
+  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far), SPGI (2008-01-04 to 2026-11-20 so far), CB (2008-01-04 to 2026-11-20 so far), LLY (2008-01-04 to 2026-11-20 so far) and UNH (2008-01-04 to 2021-12-31 so far) sit in `staging/retrospective/` until the owner adds
   them to the archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM", "SHW", "WMT", "RCL", "MAR", "BKR", "PFE", "CMCSA", "CAT",
   "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG", "JPM", "V", "SPGI", "CB", "LLY", "UNH"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py`, `mu_signal_model.py`, `v_signal_model.py`, `spgi_signal_model.py` and `lly_signal_model.py` (other branches) files
   and today's profiles in `data/business_profiles.json` (NVDA's, SO's, V's, SPGI's, CB's, LLY's and UNH's included) are 2026 analyses: never inputs to a retrospective. AVGO did not trade
@@ -365,5 +365,13 @@ touching either directory.
   releases; DURABLE; the FY2015 and FY2016 10-Ks' "cloud-enabled collaboration" (an OptumInsight offering) leaves CLOUD out of scope
   (`cloud_words`, text only); RICH 192, FAIR 16 (2014-01-10 to 2014-04-11, 2016-02-05, 2016-02-12) against a ten-year median of 11.3x;
   built in a new session without opening the 2008-2013 outcomes or findings (retro/README.md, "UNH 2014-2017").
+  From 2018: GAAP every year (FY17 $10.72 with the $1.22 Tax Reform benefit, as no filing prints a per-share figure excluding only it,
+  the batch's EPS call; FY18 $12.19 to FY20 $16.03); the GAAP guide ranges as published ("to approach" a level, the FY2021 ranges with
+  the potential COVID-19 effects in, the FY2020 range "maintained" through COVID-19); revenue guided in dollars only in the conference
+  outlook releases; no guided margin step; the FY2020 10-K has no selected data, so 2018-2020 come from its statements; 2008 leaves the
+  history with the FY2018 10-K, so BEAR is the 0% cap from 2018-02-14 and XBULL the 2015-2017 run (+33.6%/yr); dividend rates $3.60 and
+  $4.32 from the Q2 releases, $5.00 and $5.80 from the Q2 10-Qs; DURABLE; the FY2020 10-K no longer names cloud (`cloud_dropped`, text
+  only); 53 dates carry a false calendar-year warning (the 0.2081 tax rate); RICH 180, FAIR 22, CHEAP 7 (the window's median rising
+  from 11.3x to 18.0x); decided in the session that scored 2014-2017, disclosed (retro/README.md, "UNH 2018-2021").
 - **Never use the owner's personal email** in request headers to external
   services (SEC asks for a contact in the User-Agent).
