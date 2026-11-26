@@ -1,0 +1,222 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "CRM",
+ "company": "salesforce.com, inc.",
+ "as_of": "2009-10-09",
+ "price_date": "2009-10-09",
+ "price": 60.97,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); subscription software signals with salesforce.com's rule-T thresholds; the listing rule (CRM listed 2004-06-23)",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'We are the leading provider, based on revenues and market share, of software on demand, according to a July 2008 report by International Data Corporation, or IDC.' 'Cloud computing refers to the use of Internet (“cloud”) based computing, storage and connectivity technology for a variety of different services.' 'The market in which we participate is intensely competitive, and if we do not compete effectively, our operating results could be harmed.' 'cloud computing development platform companies, including some with whom we are partners, others such as Microsoft Corporation, which has initiated plans to enter this market, and a variety of smaller start up companies that have invested in cloud computing technology.' (FY2009 10-K); DURABLE: no 10-K calls the business cyclical ('cycle' appears only as the sales cycle and payment cycles); no disruption theme in taxonomy_eras.json is live for a subscription software company on this date (OFFSHORE, the one theme live, is scoped to IT services, and the 10-K's cloud computing words, where it has them, describe salesforce.com's own model, not a substitute for it), so the watch list is empty and these words stay here (the PEP obesity rule)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "'We are the leading provider, based on revenues and market share, of software on demand, according to a July 2008 report by International Data Corporation, or IDC.' 'Cloud computing refers to the use of Internet (“cloud”) based computing, storage and connectivity technology for a variety of different services.' 'The market in which we participate is intensely competitive, and if we do not compete effectively, our operating results could be harmed.' 'cloud computing development platform companies, including some with whom we are partners, others such as Microsoft Corporation, which has initiated plans to enter this market, and a variety of smaller start up companies that have invested in cloud computing technology.' (FY2009 10-K); DURABLE: no 10-K calls the business cyclical ('cycle' appears only as the sales cycle and payment cycles); no disruption theme in taxonomy_eras.json is live for a subscription software company on this date (OFFSHORE, the one theme live, is scoped to IT services, and the 10-K's cloud computing words, where it has them, describe salesforce.com's own model, not a substitute for it), so the watch list is empty and these words stay here (the PEP obesity rule). durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.07x; -3% to EPP floor; model-vs-market gap +1.06; conservative 2yr +112%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.07,
+  "ratio_b_fmt": "0.07x",
+  "epp": 62.92,
+  "epp_gap_pct": -3.1,
+  "epp_adj": 0.2,
+  "proxy_composite": 1.75,
+  "sca": 0.108,
+  "adj_composite": 2.058,
+  "market_composite": 1.0,
+  "adj_gap": 1.06,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 111.6,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.6,
+    "pe": 67.8,
+    "price": 40.68,
+    "desc": "EPS +0.0%/yr (worst year FY05-FY09 ex-FY07, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 0.79,
+    "pe": 170.6,
+    "price": 134.77,
+    "desc": "EPS +14.0%/yr (Q3 FY10 guide YoY + margin + buyback); P/E at its 5.3-yr ex-FY07 median"
+   },
+   "BULL": {
+    "eps": 1.35,
+    "pe": 262.7,
+    "price": 354.64,
+    "desc": "EPS +49.5%/yr (FY05-FY09 ex-FY07 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 1.35,
+    "pe": 313.7,
+    "price": 423.5,
+    "desc": "EPS +49.5%/yr (best 2-yr run FY05-FY09 ex-FY07, at least BULL); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.07,
+   "epp_gap_pct": -3.1,
+   "adj_gap": 1.06,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 111.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.02,
+   "epp_gap_pct": -3.1,
+   "adj_gap": 1.06,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 111.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 0.14,
+   "epp_gap_pct": -3.1,
+   "adj_gap": 0.46,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 111.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.06,
+   "epp_gap_pct": -3.1,
+   "adj_gap": 1.06,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 111.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.08,
+   "epp_gap_pct": -3.1,
+   "adj_gap": 0.88,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 111.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.07,
+   "epp_gap_pct": -3.1,
+   "adj_gap": 1.36,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 111.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.07,
+   "epp_gap_pct": -5.8,
+   "adj_gap": 1.06,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 111.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.07,
+   "epp_gap_pct": -3.1,
+   "adj_gap": 1.06,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 111.6,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "CRM (retrospective, 2009-10-09) ◉ BUY — Ratio B 0.07x (33.3% downside to Bear $40.68 / +481.7% upside to Bull $354.64) | Adj composite 2.06 vs market 1.00: gap +1.06 [UNDERVALUED] | -3% above the EPP floor $62.92 (104x FY10E $0.60) | Conservative 2-yr case: +111.6% total (+55.8%/yr) | At 100.8x FY10E the 15% hurdle price $80.63 sits at or below the BASE case; revenue +20.1% YoY in Q2 FY10, forward revenues +16.8-17.2% (Q3 FY10 revenue guide (Q2 FY10 release)); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "CR20",
+   "published": "2009-03-10",
+   "filed": "accepted 2009-03-09 17:24 ET (after the close)",
+   "title": "salesforce.com FY2009 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312509048665/d10k.htm",
+   "supports": "five-year selected data fiscal 2005-2009, statements, balance sheets, geography; the FY2009 history vintage"
+  },
+  {
+   "id": "CR3",
+   "published": "2006-02-23",
+   "filed": "accepted 2006-02-22 16:24 ET (after the close)",
+   "title": "salesforce.com Q4 FY06 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312506036718/dex991.htm",
+   "supports": "FY2006 diluted EPS excluding the reversal of the deferred tax valuation allowance and the lease recovery ($0.181; GAAP $0.240)"
+  },
+  {
+   "id": "CR2",
+   "published": "2005-03-28",
+   "filed": "accepted 2005-03-25 17:26 ET (after the close)",
+   "title": "salesforce.com FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312505061027/d10k.htm",
+   "supports": "the listing ('since June 23, 2004'); five-year selected data, fiscal 2001-2005 (rule T, the fiscal 2002 change)"
+  },
+  {
+   "id": "CR19",
+   "published": "2009-02-26",
+   "filed": "accepted 2009-02-25 16:30 ET (after the close)",
+   "title": "salesforce.com Q4 FY09 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312509037445/dex991.htm",
+   "supports": "Q4 FY09 statements of operations, balance sheet and additional metrics; the outlook"
+  },
+  {
+   "id": "CR18",
+   "published": "2008-11-21",
+   "filed": "accepted 2008-11-20 16:36 ET (after the close)",
+   "title": "salesforce.com Q3 FY09 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312508240188/dex991.htm",
+   "supports": "Q3 FY09 statements of operations, balance sheet and additional metrics; the outlook"
+  },
+  {
+   "id": "CR21",
+   "published": "2009-05-22",
+   "filed": "accepted 2009-05-21 16:29 ET (after the close)",
+   "title": "salesforce.com Q1 FY10 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312509116696/dex991.htm",
+   "supports": "Q1 FY10 statements of operations, balance sheet and additional metrics; the outlook"
+  },
+  {
+   "id": "CR22",
+   "published": "2009-08-21",
+   "filed": "accepted 2009-08-20 16:33 ET (after the close)",
+   "title": "salesforce.com Q2 FY10 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312509179017/dex991.htm",
+   "supports": "Q2 FY10 statements of operations, balance sheet and additional metrics; the outlook"
+  },
+  {
+   "id": "Y0",
+   "published": "2009-10-09",
+   "title": "Yahoo Finance daily prices, CRM and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/CRM/history",
+   "supports": "close $60.97 as traded on AS_OF (Yahoo's split-adjusted close x4), 52-week range, realized vol, beta, the 5.3-yr ex-FY07 P/E distribution from the listing on 2004-06-23"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-26"
+}
