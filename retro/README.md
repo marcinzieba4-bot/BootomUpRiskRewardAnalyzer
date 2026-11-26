@@ -26318,6 +26318,17 @@ Controls and checks (before any outcome):
   each after its filing; "Service Cloud", "Chatter" and every later name appear in no model.
 - **Regression:** the shared code is untouched (the firewall tool gains a CRM entry, `taxonomy_eras.json` the terms above); rebuilding the
   2008-2009 dates of NVDA, UNH and LLY changes nothing (315 models).
+- **Firewall** (run after the build, validation outputs and README section were committed and pushed, before any outcome): it passes at
+  all 12 cutoffs above (the first built date, every print, vintage and guide date of the range, and 2010-01-01: 1 to 105 dates each), 0
+  files changed and no planted text, on its first run. The planted facts include a print with absurd revenues, subscription and support,
+  deferred revenue, margins, opex gap, quarter EPS, notes and raw figures, absurd full-year actuals for the year after the latest vintage
+  before the cutoff, a later Q4 print whose full-year actuals exclude its own year, a later guide for every quarter and fiscal year guided
+  before the cutoff (a next-quarter dollar range, an EPS range with and without an acquisition, a revenue range, notes), a still later
+  loss range for every guided year, a later vintage excluding a year with planted texts, figures, groups, window start and kind, a dividend,
+  a split on the price data's next split date, a company name and prices from the cutoff multiplied by 10. As positive controls, a planted
+  print dated 2008-07-01 with its own source reaches 2008-07-03 (its text in the model) and not 2008-06-27 (byte-identical); the same print
+  citing a source published after AS_OF (the Q2 FY09 release of 2008-08-21) stops at the builder's check that every source is public on
+  AS_OF. A full rebuild is byte-identical.
 
 Seen in the build (method behaviour, not tuned). salesforce.com's GAAP earnings were small against its price throughout, so its own P/E
 history runs from 72x to 470x, and the rules read each date against that history:
