@@ -26234,7 +26234,7 @@ for three closes inside the range to check the share basis):
   and the amortization of its intangibles, which recur, so it is not a one-off and the GAAP range stands (the NKE FY2007 and AVGO rule; the
   range without it is quoted in the guide line). Next-quarter EPS ranges are display only. The FY2011 revenue guide of the Q3 FY10 release
   ("growth in the range of approximately 15% to 16% when compared to projected fiscal year 2010") is current only from the Q4 FY10 print,
-  after the range, and is not in the fact sheet.
+  after the range (it joined the fact sheet with 2010-2012, below, and changes no 2009 model).
 - **Forward revenue growth: the next-quarter revenue guide,** a dollar range in every release, read against the year-ago quarter's revenues
   from that quarter's own release (the AAPL, AVGO and NVDA level rule): Q4 FY08 $206-208M on Q4 FY07's $144.2M (+42.8% to +44.2%), Q1 FY09
   $233-235M (+43.5% to +44.7%), Q2 FY09 $258-259M (+46.1% to +46.7%), Q3 FY09 $273-274M (+41.6% to +42.1%), Q4 FY09 $284-285M (+30.9% to
@@ -26388,6 +26388,270 @@ Judgement calls that could carry hindsight:
   guidance and 7.01 8-K was read.
 
 The hindsight results are in `staging/retrospective/CRM/FINDINGS.md`: hypotheses, never inputs.
+
+### CRM 2010-2012: the FY2010-FY2012 vintages, FY2012 a loss and excluded, guided losses with no P/E, the convertible notes, CLOUD out of scope
+
+157 weekly dates, 2010-01-08 to 2012-12-31, on the same method, engine and rule-T thresholds. The owner asked for 2010-2012 ("Do
+2010-2012"). The fact sheet only gains facts: its 2008-2009 content is unchanged (the generator asserts that every earlier source, print,
+guide, vintage and the rule-T block equal the committed sheet), and the 105 earlier models rebuild byte for byte after the builder change
+below. One added fact is dated inside 2009: the Q3 FY10 release's FY2011 revenue growth guide (2009-11-18). FY2011 is not current on any
+2009 date, so no 2009 model changes.
+
+```bash
+python3 retro/build_crm.py --weekly 2010-01-04 2012-12-31                   # 157 dates, 2010-01-08 .. 2012-12-31
+for d in staging/retrospective/CRM/201[012]-*/; do python3 retro/retro_tool.py --archive staging/retrospective run "$d"; done
+for c in 2010-01-01 2010-02-25 2010-03-11 2010-05-21 2010-08-20 2010-11-19 2011-02-25 2011-03-24 2011-05-20 2011-08-19 2011-11-18 \
+         2012-02-24 2012-03-12 2012-05-18 2012-08-24 2012-11-02 2012-11-21 2013-01-01; do python3 retro/tools/firewall.py $c CRM; done
+```
+
+Read, by the session's model directly with no delegated transcription:
+- the 12 earnings releases of Q4 FY10 to Q3 FY13 (8-K exhibits 99.1: the statements of operations, balance sheets, Additional Metrics
+  tables, outlook paragraphs and GAAP/non-GAAP reconciliations);
+- the FY2010-FY2012 10-Ks: the selected financial data, statements of operations, balance sheets, cash flows and revenues by geography, and
+  Items 1, 1A and 5, searched for the "why", any cyclical, cloud or offshore wording, the listing and the dividend sentence;
+- the FY2011 10-K/A of 2011-06-24, which files only revised Exhibits 10.18-10.20 ("No revisions are being made to the Company's financial
+  statements");
+- the Jigsaw 8-K of 2010-04-21 (its exhibit in full);
+- every other 8-K of 2010-2012, by its item text.
+
+**Not read:** the 10-Qs, the proxy statements, the press releases of 2011-03-30 (Radian6) and 2012-06-04 (Buddy Media), the investor
+presentations and the call transcripts (none of these is filed), and the Buddy Media financial statements and pro forma information of
+the 8-K/A of 2012-10-23. The generator reads each figure from its own row and asserts every identity of the statements, as before. A
+statement's row is the first with its label after the statement heading, because the Q4 FY12 release also prints a non-GAAP diluted
+share count, 142.3M against the statement's 135.3M. Three cross-checks were run on the finished fact sheet for this section (a script,
+not the generator), and all three hold:
+- each print's year-ago figures equal the earlier release's own quarter (160 comparisons, 0 differences);
+- each Q4 release's year equals the 10-K that follows (EPS, revenue and diluted shares);
+- no vintage changes a year an earlier vintage reports.
+
+The batch adds 302 strings, each checked with `verbatim.py` against its own filing (618 with the 2008-2009 batch's 316, all found). The
+source ids are `CR24`-`CR38`.
+
+**Same-session disclosure** (the CB 2010-2013, JPM 2018-2021, SPGI 2010-2013, LLY 2010-2013 and UNH 2010-2013 precedent): this batch
+was decided on 2026-11-26 in the session that built and scored 2008-2009 and wrote its findings
+(`staging/retrospective/CRM/FINDINGS.md`). Those findings hold two hypotheses:
+- for small GAAP EPS, a P/E-percentile call is mostly a call on the next year's EPS level;
+- rule T over IPO-era years scores a maturing company as BEAR on every print.
+
+The outcomes' three-year horizons run to 2012-12-28, so the session had seen salesforce.com's price path through 2012 (the high close of
+$159.32 on 2011-07-19 is in a two-year horizon) and FY2010's $0.63 before choosing these encodings. No 2010-2012 outcome was computed
+before the build below was committed. No decision below changes a rule, threshold, signal or window: every call follows a written rule
+or an earlier ticker's encoding, and each one that could move a class is tested at the end.
+
+Decided before any 2010-2012 outcome was computed:
+
+- **Release timing.** Every earnings 8-K of Q4 FY10 to Q3 FY13 was accepted after the close (16:08-16:35 ET), so each print is dated the
+  next trading day. Ten of those days are Fridays, the week's last trading day, and meet their own close (the AVGO rule): 2010-05-21,
+  2010-08-20, 2010-11-19, 2011-02-25, 2011-05-20, 2011-08-19, 2011-11-18, 2012-02-24, 2012-05-18 and 2012-08-24. The other two put the
+  week's date on the next trading day: Q4 FY10 (2010-02-25, dated 2010-02-26) and Q3 FY13 (2012-11-21, a Wednesday before Thanksgiving,
+  dated 2012-11-23).
+  - The 10-Ks: the FY2010 10-K was accepted during the session (2010-03-11 15:32 ET) and is dated that day (the GOOG 2010-2013 rule for a
+    filing in the session). The FY2011 10-K (2011-03-23 17:01 ET) and the FY2012 10-K (2012-03-09 17:17 ET) were accepted after the close
+    and are dated 2011-03-24 and 2012-03-12.
+  - A Q4 print extends the history from its release to the 10-K: FY2010 on 2010-02-26 and 2010-03-05, FY2011 on 2011-02-25 to
+    2011-03-18, FY2012 on 2012-02-24 to 2012-03-09.
+- **History: three more vintages,** each year from the latest filing that reports it (diluted EPS and total revenues from the selected
+  data, diluted shares from the statements):
+  - FY2010 $0.63 and FY2011 $0.47 are GAAP diluted EPS. No 10-K restates an earlier year (the cross-check above).
+  - FY2005 stays at $0.07 from the FY2009 10-K, as the later five-year tables no longer reach it. FY2006 stays at the company's $0.181 in
+    every vintage (the JPM FY2017 rule).
+  - FY2004 stays excluded with the years before it, and FY2007 stays excluded with a gap after.
+  - The releases' non-GAAP figures also remove stock-based compensation, the amortization of purchased intangibles and, from Q4 FY10, the
+    non-cash interest on the convertible notes, all of which recur, so they are shown only (the NKE FY2007 and AVGO rule).
+  - **FY2012 is excluded: a GAAP net loss of $(0.09) a share** ("For the full fiscal year 2012, GAAP net loss per share was ($0.09)", the
+    Q4 FY12 release), and no figure excludes only one-offs, so the year has no P/E (the r2 loss rule). It is the latest year of the FY2012
+    10-K and of its own Q4 print, so only it leaves (the r2 note for a distorted latest year, as FY2007): its own days (2011-02-01 to
+    2012-01-31) leave the P/E window ("ex-FY07 ex-FY12") from 2012-02-24, and its revenue ($2,266.5M) and diluted shares (135.3M) stay
+    in the history.
+  - The FY2012 vintage runs FY2005-FY2012 (FY2007 and FY2012 excluded).
+- **Current-FY EPS: the midpoint of the fiscal-year GAAP diluted EPS range,** as before:
+  - FY2010 $0.625 on the first 7 dates. FY2011 $0.59 from the Q4 FY10 print ($0.58-0.60), then $0.39 ($0.38-0.40, Q1 FY11), $0.44 and
+    $0.465 ($0.46-0.47, Q3 FY11). FY2012 $0.095 ($0.08-0.11, Q4 FY11).
+  - **Jigsaw is in from the Q1 FY11 range.** The 8-K of 2010-04-21 (accepted 12:35 ET) says that the acquisition "is also expected to
+    reduce salesforce.com's GAAP EPS by approximately $0.20 to $0.22 ... in FY11". That is an effect, not a range: no filing restates the
+    FY2011 range until the Q1 FY11 release ("The acquisition is expected to reduce both GAAP and non-GAAP EPS performance for fiscal year
+    2011 by approximately $0.20 and $0.11, respectively."). The $0.58-0.60 stands until then, because a range less the effect would be a
+    constructed figure that no filing publishes (the UNH 2010-2013 Penn Treaty reading; tested below). The effect recurs (Jigsaw's
+    results and the amortization of its intangibles), so the range that includes it stands (the InStranet reading).
+  - **A guided loss has no P/E, so the last full year's EPS stands** (the LLY 2008 rule for a range whose midpoint is a loss, with the
+    rollover rule). Every FY2012 range from the Q1 FY12 release is a GAAP net loss: $(0.03)-(0.01), which includes "a one-time tax
+    benefit of $0.04, associated with the acquisition of Radian6", then $(0.11)-(0.09) and $(0.12)-(0.11). Every FY2013 range is a loss
+    too: $(0.55)-(0.51), $(0.48)-(0.45), $(0.75)-(0.72), and $(2.02)-(2.00) with the third quarter's non-cash tax expense. So FY11's $0.47
+    stands from 2011-05-20 to the end of the range, 85 dates. This reading puts a higher EPS under the multiple than the positive $0.095
+    it replaces (tested below).
+  - **Unfiled guidance is not a fact** (the MU 2014-2017 rule for guidance given only on the call). Two later releases cite updates made
+    in press releases that were not filed: the Q1 FY12 release ("guidance provided on March 30, 2011") and the Q2 FY13 release ("guidance
+    previously provided on June 4, 2012"). The 8-Ks of those days carry only the Radian6 and Buddy Media agreements (Item 1.01).
+    So the latest filed range stands, a loss either way.
+- **Forward revenue growth: the next-quarter revenue guide,** read against the year-ago quarter's revenues from that quarter's own release
+  (the level rule, as before):
+
+  | Quarter | Guide | Year-ago revenue | Growth |
+  |---|---|---|---|
+  | Q1 FY11 | $365-367M | $304.9M | +19.7% to +20.4% |
+  | Q2 FY11 | $381-383M | $316.1M | +20.5% to +21.2% |
+  | Q3 FY11 | $408-410M | $330.5M | +23.4% to +24.0% |
+  | Q4 FY11 | $447-449M | $354.0M | +26.3% to +26.8% |
+  | Q1 FY12 | $480-482M | $376.8M | +27.4% to +27.9% |
+  | Q2 FY12 | $526-528M | $394.4M | +33.4% to +33.9% |
+  | Q3 FY12 | $568-570M | $429.1M | +32.4% to +32.8% |
+  | Q4 FY12 | $620-624M | $456.9M | +35.7% to +36.6% |
+  | Q1 FY13 | $673-678M | $504.4M | +33.4% to +34.4% |
+  | Q2 FY13 | $724-728M | $546.0M | +32.6% to +33.3% |
+  | Q3 FY13 | $773-777M | $584.3M | +32.3% to +33.0% |
+  | Q4 FY13 | $825-830M | $631.9M | +30.6% to +31.3% |
+
+  The fiscal-year revenue guides set the segment bridge's total only (display). Two of them are stated as growth, not dollars, which the
+  builder now takes as `rev_guide_pct`:
+  - FY2011's first guide, "projected revenue growth in the range of approximately 15% to 16% when compared to projected fiscal year
+    2010" (the Q3 FY10 release), restated before FY2011 is current;
+  - FY2011's guide of the Q4 FY10 release, "revenue growth now expected to be approximately 16% to 17%", read on FY10's $1.306B.
+
+  The guides from Q1 FY11 on are dollar ranges. The Q3 releases' first guides for the next year (FY2012 $1.97-2.00B, FY2013 $2.88-2.92B,
+  FY2014 $3.80-3.85B) are restated before their years are current.
+- **No margin guide** in any filing, so no guided step. **No dividend** ("We have never paid any cash dividends on our common stock.",
+  each 10-K) and no repurchase program.
+- **The convertible notes** (the 0.75% convertible senior notes due 2015, issued in January 2010: the 8-Ks of 2010-01-11, 2010-01-13
+  and 2010-01-19). From the Q4 FY10 print, the balance text gives each balance sheet's carrying amount ("convertible senior notes
+  $450.2M, net" at 2010-01-31, rising to $514.9M at 2012-10-31, `debt_note`) in place of "no debt" (display only).
+- **Signals,** from each release's statement of operations against the year-ago quarter in the same release, as before (GAAP as
+  reported). Jigsaw, Heroku, Radian6 and Buddy Media are in the figures from their completion, as published, as InStranet was. Each
+  release's year-ago column equals the earlier release's own quarter (the cross-check above).
+- **Durability: DURABLE, risk 2, unchanged.** No FY2010-FY2012 10-K calls the business cyclical ("cycle" appears only as the sales cycle
+  and payment cycles). The "why" quotes each 10-K's description: "We are a leading provider of enterprise cloud computing applications."
+  (FY2010, FY2011), then "We are a leading provider of enterprise cloud computing and social enterprise solutions, and are dedicated to
+  helping customers transform themselves into social enterprises." (FY2012). It also quotes each 10-K's competition sentences.
+- **Themes.** CLOUD is live from 2012-10-30. From the first date on which a theme other than OFFSHORE is live (2012-11-02), the "why"
+  quotes every live theme's registered scope (the CB 2014-2017 and UNH wording), so the text of 2008 to 2012-10-26 is unchanged. CLOUD's
+  scope is "public cloud displaces on-premise hardware, storage, legacy databases and data-center outsourcing". The 10-K names cloud
+  computing as salesforce.com's own model, the side that displaces on-premise software, not a substitute for it (the GOOG, AVGO and NVDA
+  reading of CLOUD for a company on the displacing side). It names no offshore delivery. So no theme is in scope, the watch list stays
+  empty, and the words stay in the "why" (the PEP obesity rule).
+- **Adds nothing:**
+  - the convertible notes 8-Ks (2010-01-11, -13 and -19) and the Jigsaw 8-K as a guide;
+  - the agreements of 2010-11-01 (real estate in San Francisco), 2010-12-08 (Heroku), 2011-01-14 (an equity plan, with the bylaws),
+    2011-03-30 and 2011-05-02 (Radian6),
+    2011-09-23 (the amended employee stock purchase plan), 2012-01-06 (an office lease), 2012-06-04 and 2012-08-13 (Buddy Media);
+  - the 8-K of 2010-10-27 (the purchase of the shares of salesforce Japan held by SunBridge);
+  - the 8-K of 2012-08-27, which recasts the FY2010-FY2012 statements for the comprehensive income presentation of ASU 2011-05 without
+    changing a figure the models use (the ACN 2024-09-30 rule);
+  - the Buddy Media 8-K/A of 2012-10-23 (pro forma figures unused, the CB and LLY rule);
+  - the FY2011 10-K/A;
+  - the officer, director, bylaw and meeting 8-Ks, and the 7.01 8-Ks on the chief executive's Rule 10b5-1 plans (2010-11-24,
+    2012-11-30).
+
+  None of them changes a guided number.
+- **Builder change** (`retro/build_crm.py`):
+  - a fiscal-year revenue guide stated as growth (`rev_guide_pct`, applied to the last full year for the segment bridge's total);
+  - the convertible notes in the balance text (`debt_note` on a print, "no debt" without one);
+  - the theme sentence quotes every live theme's scope once CLOUD is live;
+  - an excluded year's label no longer repeats its year (the FY2012 text).
+
+  The 2008-2009 models do not move. The firewall tool plants the new fields: a later guide's revenue growth range on every growth-stated
+  guide, and a convertible notes line on the planted print.
+
+Controls and checks (before any outcome):
+- **`retro_tool run` passes on all 157 dates** (0 failures). The 13 dates from the Q1 FY11 print to the Q2 FY11 print (2010-05-21 to
+  2010-08-13) carry a false calendar-year warning: "fiscal year 2011" in the Q1 FY11 release's Jigsaw sentence, quoted in the guide line,
+  is a fiscal-year label (the NVDA and UNH precedent). `retro_tool lint` is clean on all 262 dates otherwise.
+- **Controls:** each altered value changes no model dated before its publication, rerun over all 262 dates:
+  - one value of each of the 12 new prints (its deferred revenue, re-derived) and each new Q4 print's full-year revenue;
+  - each of the 16 new guides (its EPS range, next-quarter dollar range and revenue range);
+  - each new vintage (its last EPS year).
+
+  That is 34 controls. 30 change the first weekly date on or after their publication; for a guide, that is the first date on which its
+  quarter or year is current. The other 4 are inert, each restated before its year is current: the growth-stated FY2011 guide of the Q3
+  FY10 release, and the Q3 releases' first FY2012, FY2013 and FY2014 revenue guides (the last of them is not current in 2012). Each Q4
+  print's full-year figures are live exactly from its print to its 10-K, and each vintage from its 10-K to the next. The baseline rebuild
+  is byte-identical on all 262 dates.
+- **Leak scan:** 156 hits in 137,502 (model, later token) pairs over all 262 models, none a leak. Each is a market statistic or a close
+  that equals a later figure:
+  - 2004's calendar-year low P/E (137.0x, in every model to 2010-11-12) equals Q3 FY11's 137.0M diluted shares;
+  - the P/E percentiles of 2008-01-11 (229.6x), 2008-11-28 (132.3x) and 2009-02-13 (124.5x) equal FY2009's $229.6M of operating cash flow
+    and the diluted shares of Q1 FY11 (132.3M) and Q4 FY09 (124.5M);
+  - 2008's low P/E to date in the model of 2008-02-01 (402.9x on 2008-01-30) equals Q3 FY11's $402.9M of subscription and support
+    revenue;
+  - the closes of 2010-11-19 ($136.74) and 2011-01-07 ($142.22) begin with Q4 FY12's 136.7M and Q3 FY13's 142.2M diluted shares.
+
+  The 2008-2009 batch's two explained hits are among them. As a positive control, the latest print's four notes appear in each of the 262
+  models.
+- **Self-text scan:** every capitalized word, dollar figure and year in each of the 61 facts' own text (quoted filing text excepted,
+  which `verbatim.py` checks) appears in a salesforce.com filing filed by the fact's own date: 0 misses of 408 tokens. The fiscal-year
+  ranges of the normalization notes ("FY08-FY10") are method vocabulary, exempted with the other labels.
+- **Term check:** "convertible senior notes" first appears on 2010-02-26, "Jigsaw" on 2010-05-21, "Radian6" on 2011-05-20 (its
+  anachronism date is 2011-03-31) and "social enterprise" on 2012-03-16 (the FY2012 10-K), each after its filing. Heroku, Chatter, Sales
+  Cloud, Service Cloud, Database.com, Data.com, Desk.com, Marketing Cloud, Work.com and Buddy Media appear in no model.
+- **Regression:** the 105 models of 2008-2009 rebuild byte for byte. No other ticker's code changes (the firewall tool's change is in
+  its CRM plants).
+
+Seen in the build (method behaviour, not tuned). The window grows from 5.5 to 8.5 years (from the listing, ex-FY07, then ex-FY12), and
+its median rises from 149-178x in 2010 to 179-196x in 2011-2012 as 2010-2011's 200-330x multiples enter. The EPP floor, the median of the
+calendar-year lows, goes from 99-118x in 2010 to 118x in 2011 and 137x in 2012 (2004's low), as the 2010 low (100.9x on 2010-01-29) and
+the high lows of 2011-2012 enter.
+
+- **CHEAP on 19 dates, FAIR on 4, RICH on 134.** The legacy tier is BUY on 61, ACCUMULATE on 35, WATCHLIST on 43 and AVOID on 18. The
+  tier and the class part from 2010-05-21: RICH with BUY or ACCUMULATE on 73 dates, as the scenario EPS growth (BASE +18-33%/yr, BULL
+  +37-55%/yr) keeps Ratio B under 1 on much of 2010-2011.
+- **2010-01-08 to 2010-05-14** (19 dates, all CHEAP and BUY):
+  - on FY10E $0.625, $62.08-74.15 is 99-119x, the 29th-39th percentile of a window whose median is 157-160x, at the floor to 11% over it;
+  - on FY11E $0.59 from the Q4 FY10 print, $67.95-88.16 is 115-149x, the 39th-50th percentile (median 149-157x), 15-49% over the 100x
+    floor ($59.00).
+  - Robustness 8 of 8 on 15 dates, 7 on 4.
+- **2010-05-21 to 2011-02-18** (40 dates: RICH 37, FAIR 3), from the Q1 FY11 range with Jigsaw:
+  - FY11E $0.39: $83.24-102.33 is 213-262x, the 68th-79th percentile; FAIR on 2010-05-21, 2010-05-28 and 2010-07-02 (robustness 7,
+    6 and 6: "multiples one band cheaper" reads RICH, and on the last two the scenario EPS -1.5pp/yr too);
+  - FY11E $0.44: $105.87-119.63 is 241-272x, the 75th-81st percentile;
+  - FY11E $0.465: $131.61-148.61 is 283-320x, the 81st-93rd percentile.
+
+  The tier is BUY to 2010-11-12, then ACCUMULATE on 8 and BUY on 6 dates.
+- **2011-02-25 to 2011-05-13** (12, all RICH and AVOID): FY12E $0.095 ($0.08-0.11) puts $120.01-139.87 at 1,263-1,472x, the 97th-100th
+  percentile, 971-1,148% over the floor ($11.21). The BULL price is under the close, so Ratio B is infinite.
+- **2011-05-20 to 2012-02-17** (40: RICH 39, FAIR 1): the FY2012 guides are losses, so FY11's $0.47 stands. $98.02-156.67 is 209-333x,
+  the 55th-94th percentile (median 184-196x), 57-182% over the floor ($55.46). FAIR on 2011-12-23 ($98.02, the lowest close of the
+  2011-2012 dates; robustness 6). The tier is WATCHLIST on 11 and ACCUMULATE on 2 of the first 13, then ACCUMULATE on 16, BUY on 10 and WATCHLIST on 1 of 27.
+- **2012-02-24 to 2012-12-31** (46, all RICH): FY13E is a loss, FY11's $0.47 stands and FY2012 leaves the window. $128.27-168.95 is
+  273-359x, the 74th-97th percentile (median 181-194x), 99-162% over the 137x floor ($64.39). The tier is WATCHLIST on 31, AVOID on 6
+  (2012-03-23 to 2012-04-27) and ACCUMULATE on 9.
+- **The scenario rates:**
+  - BASE follows the next-quarter guides up: +14.8%/yr on the first dates, then +17.2%, +18.0%, +20.9%, +23.7%, +24.2%, +30.2%, +29.2%,
+    +32.7%, +31.1%, +30.1%, +29.8% and +28.1%;
+  - BULL is the FY2005-FY2009 CAGR (+49.5%/yr) on the first 7 dates, FY2005-FY2010 (+55.2%) from the Q4 FY10 print and FY2005-FY2011
+    (+37.4%) from the Q4 FY11 print;
+  - XBULL is FY2008-FY2010 (+104.9%/yr, $0.15 to $0.63) from the Q4 FY10 print;
+  - BEAR is the 0% cap to the Q4 FY11 print, then FY2011's fall (-25.4%/yr, $0.63 to $0.47).
+- **The proxy composite** runs 1.30-1.75. Subscription and support growth (+23.0% on Q4 FY10, rising to +38.7% on Q4 FY12) and deferred
+  revenue growth (+18.6% to +47.6%) stay under their BASE lines (61% and 68%) on every print. The operating margin change falls to
+  -729bp to -1,041bp on Q4 FY11-Q3 FY12, under its BASE line of -720bp, while the opex gap runs +11.1 to +15.2pp against its BASE line
+  of 12pp: the composite is 1.45 on Q4 FY11 and 1.30 on Q1-Q3 FY12.
+
+How far each call moves the classes (the 157 dates rebuilt with one encoding changed and classified offline; no outcome consulted):
+
+| Encoding changed | Classes moved | Tiers moved |
+|---|---|---|
+| the Jigsaw 8-K's effect applied to the FY2011 range from 2010-04-23 to the Q1 FY11 print ($0.36-0.40, a constructed range) | 4 (2010-04-23 to 2010-05-14, CHEAP to FAIR or RICH) | 0 |
+| guided losses dropped, so the last positive range stands (FY12E $0.095 from 2011-05-20 to the Q4 FY12 print) | 1 (2011-12-23, FAIR to RICH) | 40 (to AVOID) |
+| FY2006 at GAAP $0.24 | 3 (FAIR to RICH, 2010-05-28 to 2011-12-23) | 6 |
+| FY2004 kept at GAAP $0.04 | 0 | 33 |
+| BASE on the latest quarter's revenue growth instead of the next-quarter guides | 0 | 0 |
+| every data signal at its BEAR value | 8 (2010-04-16 to 2011-12-23, CHEAP to FAIR and FAIR to RICH) | 0 |
+| every data signal at its XBULL value | 64 (2010-06-04 to 2012-08-03, RICH or FAIR to CHEAP and RICH to FAIR) | 0 |
+
+The RICH calls rest on salesforce.com's GAAP multiple against its own 2004-2012 history: FY11E and FY12E guides of a few cents, then
+FY11's $0.47 while the guided years are losses. No tested encoding moves more than 4 of them except the signals at XBULL. The loss-guide
+reading moves tiers, not classes.
+
+Judgement calls that could carry hindsight:
+- the same-session batch (above): the 2008-2009 findings, whose outcome horizons run to 2012-12-28, were written before these encodings
+  were chosen;
+- a guided loss read as no P/E, with the last full year's $0.47 standing (the LLY 2008 rule) rather than the last positive range: 40
+  tiers;
+- the Jigsaw 8-K's EPS effect read as no range (4 classes), and Jigsaw's and Radian6's effects read as recurring;
+- the unfiled guidance updates of 2011-03-30 and 2012-06-04 left out, as not filed;
+- FY2012's $(0.09) excluded as a loss, its days out of the window (no alternative under the rules; the non-GAAP $1.36 removes recurring
+  items);
+- the signals, rule T and DURABLE as in 2008-2009, by a builder who knows how salesforce.com's growth, margins and acquisitions turned out
+  after these dates; CLOUD read as out of scope for the company whose model it names;
+- the parts of the filings listed above as not read.
 
 ## Categories change with the era
 
@@ -26754,7 +27018,9 @@ What the gates enforce:
   computing words ("Cloud computing refers to the use of Internet (“cloud”) based computing, storage and connectivity technology", FY2009)
   describe salesforce.com's own model, the side that displaces on-premise software, and stay in the "why" with the 10-Ks' competition from
   Oracle, SAP and Microsoft (the PEP obesity rule); whether these earlier filings should move CLOUD's live date is left to the owner (the
-  MSFT and XOM precedent) ("CRM").
+  MSFT and XOM precedent) ("CRM"). CRM 2010-2012 carries none either: from CLOUD's live date the "why" quotes both live themes' scopes
+  (from 2012-11-02), and the FY2010-FY2012 10-Ks name cloud computing as salesforce.com's own model ("enterprise cloud computing", then
+  "enterprise cloud computing and social enterprise solutions") and no offshore delivery ("CRM 2010-2012").
 
 ## Workflow
 
