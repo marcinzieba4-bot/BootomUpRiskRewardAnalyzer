@@ -26059,8 +26059,13 @@ Controls and checks (before any outcome):
   "At Least $19.50" on 2026-10-14, each after its filing; Amedisys, the DOJ, Optum Financial, the 2026 acquisitions and every officer's
   name appear in no model.
 - **Regression:** the 731 models of 2008-2021 rebuild byte for byte; no other ticker's code changes (the firewall tool gains UNH plants).
-- **Firewall** (run after the build, checks and README section were committed and pushed, before any 2022-2026 outcome):
-  see the result below.
+- **Firewall** (run after the build, checks and README section were committed and pushed, before any 2022-2026 outcome): it passes at
+  all 35 cutoffs above (2022-01-01, every print, 10-K, conference-release, suspension and dividend 10-Q date of the range, and
+  2026-11-21: 731 to 986 dates each), 0 files changed and no planted text, with the earlier batches' plants and the new ones (a later
+  withdrawal of every guided year, a later one-sided bound with a stated margin, and AI words on the later vintage). As positive
+  controls, a planted copy of the Q1 2026 print dated 2026-06-02 with its own source reaches 2026-06-05 (its text in the model) and not
+  2026-05-29 (byte-identical); the same print citing a source published after AS_OF (the Q2 2026 release of 2026-07-16) stops at the
+  builder's check that every source is public on AS_OF. The repository is unchanged after the runs.
 
 Seen in the build (method behaviour, not tuned):
 The ten-year window's median rises from 18.0x (January 2022) to 21.1x (November 2026) and the EPP floor from 15x to 16x (2024-01-05),
