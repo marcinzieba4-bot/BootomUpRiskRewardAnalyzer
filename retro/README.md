@@ -26583,6 +26583,16 @@ Controls and checks (before any outcome):
   Cloud, Service Cloud, Database.com, Data.com, Desk.com, Marketing Cloud, Work.com and Buddy Media appear in no model.
 - **Regression:** the 105 models of 2008-2009 rebuild byte for byte. No other ticker's code changes (the firewall tool's change is in
   its CRM plants).
+- **Firewall** (run after the build, validation outputs and README section were committed and pushed, before any 2010-2012 outcome): it
+  passes at all 18 cutoffs above (2010-01-01, every print, 10-K and guide date of the range, CLOUD's first built date 2012-11-02, and
+  2013-01-01: 105 to 262 dates each), 0 files changed and no planted text, on its first run. The planted facts are the 2008-2009 batch's,
+  now also with a convertible notes line on the planted print and a later revenue growth range on every growth-stated guide. Three
+  positive controls:
+  - a planted print dated 2011-06-01, with its own source and a planted convertible notes line, reaches 2011-06-03 (its text in the
+    model) and not 2011-05-27 (byte-identical);
+  - the same print citing a source published after AS_OF (the Q2 FY12 release of 2011-08-19) stops at the builder's check that every
+    source is public on AS_OF;
+  - a planted FY2011 revenue growth guide dated 2010-03-01 (98-99%) reaches 2010-03-05 and not 2010-02-26.
 
 Seen in the build (method behaviour, not tuned). The window grows from 5.5 to 8.5 years (from the listing, ex-FY07, then ex-FY12), and
 its median rises from 149-178x in 2010 to 179-196x in 2011-2012 as 2010-2011's 200-330x multiples enter. The EPP floor, the median of the
