@@ -26477,7 +26477,7 @@ Decided before any 2010-2012 outcome was computed:
     rollover rule). Every FY2012 range from the Q1 FY12 release is a GAAP net loss: $(0.03)-(0.01), which includes "a one-time tax
     benefit of $0.04, associated with the acquisition of Radian6", then $(0.11)-(0.09) and $(0.12)-(0.11). Every FY2013 range is a loss
     too: $(0.55)-(0.51), $(0.48)-(0.45), $(0.75)-(0.72), and $(2.02)-(2.00) with the third quarter's non-cash tax expense. So FY11's $0.47
-    stands from 2011-05-20 to the end of the range, 85 dates. This reading puts a higher EPS under the multiple than the positive $0.095
+    stands from 2011-05-20 to the end of the range, 86 dates. This reading puts a higher EPS under the multiple than the positive $0.095
     it replaces (tested below).
   - **Unfiled guidance is not a fact** (the MU 2014-2017 rule for guidance given only on the call). Two later releases cite updates made
     in press releases that were not filed: the Q1 FY12 release ("guidance provided on March 30, 2011") and the Q2 FY13 release ("guidance
@@ -26662,6 +26662,9 @@ Judgement calls that could carry hindsight:
 - the signals, rule T and DURABLE as in 2008-2009, by a builder who knows how salesforce.com's growth, margins and acquisitions turned out
   after these dates; CLOUD read as out of scope for the company whose model it names;
 - the parts of the filings listed above as not read.
+
+The hindsight results for 2010-2012 are in `staging/retrospective/CRM/FINDINGS.md` (computed after the firewall result was pushed):
+hypotheses, never inputs.
 
 ## Categories change with the era
 
