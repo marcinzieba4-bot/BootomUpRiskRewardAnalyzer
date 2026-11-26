@@ -162,6 +162,111 @@
    "title": "salesforce.com Q3 FY10 results (8-K ex. 99.1)",
    "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312509236714/dex991.htm",
    "supports": "Q3 FY10 statements of operations, balance sheet and additional metrics; the outlook"
+  },
+  "CR24": {
+   "published": "2010-02-25",
+   "filed": "accepted 2010-02-24 16:32 ET (after the close)",
+   "title": "salesforce.com Q4 FY10 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312510038925/dex991.htm",
+   "supports": "Q4 FY10 statements of operations, balance sheet and additional metrics; the outlook"
+  },
+  "CR25": {
+   "published": "2010-03-11",
+   "filed": "accepted 2010-03-11 15:32 ET (during the session)",
+   "title": "salesforce.com FY2010 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312510053838/d10k.htm",
+   "supports": "five-year selected data fiscal 2006-2010, statements, balance sheets, geography; the FY2010 history vintage"
+  },
+  "CR26": {
+   "published": "2010-05-21",
+   "filed": "accepted 2010-05-20 16:34 ET (after the close)",
+   "title": "salesforce.com Q1 FY11 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312510125232/dex991.htm",
+   "supports": "Q1 FY11 statements of operations, balance sheet and additional metrics; the outlook"
+  },
+  "CR27": {
+   "published": "2010-08-20",
+   "filed": "accepted 2010-08-19 16:30 ET (after the close)",
+   "title": "salesforce.com Q2 FY11 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312510193140/dex991.htm",
+   "supports": "Q2 FY11 statements of operations, balance sheet and additional metrics; the outlook"
+  },
+  "CR28": {
+   "published": "2010-11-19",
+   "filed": "accepted 2010-11-18 16:33 ET (after the close)",
+   "title": "salesforce.com Q3 FY11 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312510264163/dex991.htm",
+   "supports": "Q3 FY11 statements of operations, balance sheet and additional metrics; the outlook"
+  },
+  "CR29": {
+   "published": "2011-02-25",
+   "filed": "accepted 2011-02-24 16:35 ET (after the close)",
+   "title": "salesforce.com Q4 FY11 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312511045414/dex991.htm",
+   "supports": "Q4 FY11 statements of operations, balance sheet and additional metrics; the outlook"
+  },
+  "CR30": {
+   "published": "2011-03-24",
+   "filed": "accepted 2011-03-23 17:01 ET (after the close)",
+   "title": "salesforce.com FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312511075314/d10k.htm",
+   "supports": "five-year selected data fiscal 2007-2011, statements, balance sheets, geography; the FY2011 history vintage"
+  },
+  "CR31": {
+   "published": "2011-05-20",
+   "filed": "accepted 2011-05-19 16:08 ET (after the close)",
+   "title": "salesforce.com Q1 FY12 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312511145353/dex991.htm",
+   "supports": "Q1 FY12 statements of operations, balance sheet and additional metrics; the outlook"
+  },
+  "CR32": {
+   "published": "2011-08-19",
+   "filed": "accepted 2011-08-18 16:31 ET (after the close)",
+   "title": "salesforce.com Q2 FY12 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312511226574/dex991.htm",
+   "supports": "Q2 FY12 statements of operations, balance sheet and additional metrics; the outlook"
+  },
+  "CR33": {
+   "published": "2011-11-18",
+   "filed": "accepted 2011-11-17 16:30 ET (after the close)",
+   "title": "salesforce.com Q3 FY12 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312511315726/d256741dex991.htm",
+   "supports": "Q3 FY12 statements of operations, balance sheet and additional metrics; the outlook"
+  },
+  "CR34": {
+   "published": "2012-02-24",
+   "filed": "accepted 2012-02-23 16:28 ET (after the close)",
+   "title": "salesforce.com Q4 FY12 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312512075383/d305106dex991.htm",
+   "supports": "Q4 FY12 statements of operations, balance sheet and additional metrics; the outlook"
+  },
+  "CR35": {
+   "published": "2012-03-12",
+   "filed": "accepted 2012-03-09 17:17 ET (after the close)",
+   "title": "salesforce.com FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312512107281/d279348d10k.htm",
+   "supports": "five-year selected data fiscal 2008-2012, statements, balance sheets, geography; the FY2012 history vintage"
+  },
+  "CR36": {
+   "published": "2012-05-18",
+   "filed": "accepted 2012-05-17 16:27 ET (after the close)",
+   "title": "salesforce.com Q1 FY13 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312512238336/d354766dex991.htm",
+   "supports": "Q1 FY13 statements of operations, balance sheet and additional metrics; the outlook"
+  },
+  "CR37": {
+   "published": "2012-08-24",
+   "filed": "accepted 2012-08-23 16:35 ET (after the close)",
+   "title": "salesforce.com Q2 FY13 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312512366787/d399908dex991.htm",
+   "supports": "Q2 FY13 statements of operations, balance sheet and additional metrics; the outlook"
+  },
+  "CR38": {
+   "published": "2012-11-21",
+   "filed": "accepted 2012-11-20 16:31 ET (after the close)",
+   "title": "salesforce.com Q3 FY13 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312512477457/d440353dex991.htm",
+   "supports": "Q3 FY13 statements of operations, balance sheet and additional metrics; the outlook"
   }
  },
  "listing": {
@@ -175,7 +280,7 @@
   "quote": "Our fiscal year ends on January 31.",
   "source": "CR10"
  },
- "price_basis": "Yahoo's CRM series is adjusted for the four-for-one split of 2013-04-18; the builder multiplies it by the splits after AS_OF (x4 in 2008-2009), so every price is the price as traded",
+ "price_basis": "Yahoo's CRM series is adjusted for the four-for-one split of 2013-04-18; the builder multiplies it by the splits after AS_OF (x4 in 2008-2012), so every price is the price as traded",
  "history_vintages": [
   {
    "published": "2007-03-12",
@@ -452,6 +557,341 @@
    ],
    "groups_basis": "FY09 revenues by geography (FY2009 10-K), growth on the year before",
    "published_note": "FY2009 10-K"
+  },
+  {
+   "published": "2010-03-11",
+   "sources": [
+    "CR25",
+    "CR20",
+    "CR3"
+   ],
+   "fy_label": "FY10",
+   "company": "salesforce.com, inc.",
+   "exchange": "NYSE",
+   "fiscal_year": "ends January 31",
+   "kind": "DURABLE",
+   "why": "'We are a leading provider of enterprise cloud computing applications.' 'The market for enterprise CRM business applications and development platforms is highly competitive, rapidly evolving and fragmented, and subject to changing technology, shifting customer needs and frequent introductions of new products and services.' 'cloud computing development platform companies, including some with whom we are partners, others such as Microsoft Corporation, which has initiated plans to enter this market, and a variety of smaller start up companies that have invested in cloud computing technology.' (FY2010 10-K); DURABLE: no 10-K calls the business cyclical ('cycle' appears only as the sales cycle and payment cycles)",
+   "eps_normalized": {
+    "2005": 0.07,
+    "2006": 0.181,
+    "2008": 0.15,
+    "2009": 0.35,
+    "2010": 0.63
+   },
+   "eps_sources": {
+    "2005": "CR20",
+    "2006": "CR3",
+    "2008": "CR25",
+    "2009": "CR25",
+    "2010": "CR25"
+   },
+   "eps_excluded": {
+    "2007": "FY2007 is excluded: GAAP diluted EPS $0.00 ('For the full year, GAAP earnings per share were breakeven', the Q4 FY07 release; net income $481K), so the year has no P/E (the F rule for Ford's $0.00 year), and no item in it is listed as a one-off"
+   },
+   "eps_first_excluded": {
+    "2004": "excluded, a year distorted by a one-off benefit (the AVGO FY2018 mirror test): its $3,445K lease recovery ('Lease recovery' in the selected data) is larger than the year's $794K of pre-tax income without it (pre-tax $4,239K), so the reported $0.04 is more than double the year's EPS without it, and no filing publishes a figure excluding it; an excluded year that is not the latest takes the years before it (the PFE 2003 and MU FY2003 rule; the inception period to January 2000 and fiscal 2001-2003 are losses as well: $(0.55), $(2.38), $(1.36), $(0.37)), so the history and the P/E window start after January 31, 2004, and the window from the listing on 2004-06-23"
+   },
+   "revenue_usd_b": {
+    "2005": 0.176375,
+    "2006": 0.309857,
+    "2007": 0.497098,
+    "2008": 0.7487,
+    "2009": 1.076769,
+    "2010": 1.305583
+   },
+   "revenue_sources": {
+    "2005": "CR20",
+    "2006": "CR25",
+    "2007": "CR25",
+    "2008": "CR25",
+    "2009": "CR25",
+    "2010": "CR25"
+   },
+   "diluted_shares_m": {
+    "2005": 110.874,
+    "2006": 118.737,
+    "2007": 120.154,
+    "2008": 122.422,
+    "2009": 125.228,
+    "2010": 128.114
+   },
+   "shares_sources": {
+    "2005": "CR20",
+    "2006": "CR25",
+    "2007": "CR25",
+    "2008": "CR25",
+    "2009": "CR25",
+    "2010": "CR25"
+   },
+   "pe_window_start": "2004-02-01",
+   "normalization": "GAAP diluted EPS, each year from the latest filing that reports it (FY06 Q4 FY06 results; FY05 FY2009 10-K; FY08-FY10 FY2010 10-K), except FY06 at the company's $0.181 excluding only the reversal of the deferred tax valuation allowance and the lease recovery (Q4 FY06 release; GAAP $0.24: the ACN rule, the JPM FY2017 rule for a figure only the release prints); the non-GAAP figures of the releases from Q1 FY11 also remove stock-based compensation, the amortization of purchased intangibles and the non-cash interest on the convertible notes, which recur (the NKE FY2007 and AVGO rule); FY2007 is excluded: GAAP diluted EPS $0.00 ('For the full year, GAAP earnings per share were breakeven', the Q4 FY07 release; net income $481K), so the year has no P/E (the F rule for Ford's $0.00 year), and no item in it is listed as a one-off; it stays a gap (the NKE FY2018 and XOM FY2020 rule)",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 8.83,
+   "prev_fy_op_margin_note": "FY10 income from operations $115.3M / revenues $1,305.6M (FY2010 10-K)",
+   "prev_fy_pretax_margin": 10.91,
+   "prev_fy_pretax_margin_note": "FY10 income before income taxes and noncontrolling interest $142.4M / revenues $1,305.6M (FY2010 10-K)",
+   "prev_fy_gross_margin": 80.24,
+   "prev_fy_sales_growth": 21.3,
+   "prev_fy_sub_growth": 22.8,
+   "tax_rate": 0.405,
+   "tax_note": "FY10 provision for income taxes $57.7M / pre-tax $142.4M (FY2010 10-K)",
+   "fcf_b": 0.217,
+   "fcf_label": "FY10",
+   "fcf_note": "net cash provided by operating activities $270.9M less capital expenditures $53.9M",
+   "cash_b": 1.727,
+   "dividend_annual": 0.0,
+   "dividend_note": "none: 'We have never paid any cash dividends on our common stock.' (FY2010 10-K)",
+   "cash_return_text": "no share repurchase program (the 10-K's only repurchases are of unvested shares from employees)",
+   "business_line": "enterprise cloud computing applications: the CRM service, the Force.com platform and the AppExchange",
+   "groups": [
+    [
+     "Americas",
+     0.9238,
+     19.0
+    ],
+    [
+     "Europe",
+     0.2324,
+     21.9
+    ],
+    [
+     "Asia Pacific",
+     0.1494,
+     36.3
+    ]
+   ],
+   "groups_basis": "FY10 revenues by geography (FY2010 10-K), growth on the year before",
+   "published_note": "FY2010 10-K"
+  },
+  {
+   "published": "2011-03-24",
+   "sources": [
+    "CR30",
+    "CR25",
+    "CR20",
+    "CR3"
+   ],
+   "fy_label": "FY11",
+   "company": "salesforce.com, inc.",
+   "exchange": "NYSE",
+   "fiscal_year": "ends January 31",
+   "kind": "DURABLE",
+   "why": "'We are a leading provider of enterprise cloud computing applications.' 'The market for enterprise CRM business applications and development platforms is highly competitive, rapidly evolving and fragmented, and subject to changing technology, shifting customer needs and frequent introductions of new products and services.' 'The market in which we participate is intensely competitive, and if we do not compete effectively, our operating results could be harmed.' (FY2011 10-K); DURABLE: no 10-K calls the business cyclical ('cycle' appears only as the sales cycle and payment cycles)",
+   "eps_normalized": {
+    "2005": 0.07,
+    "2006": 0.181,
+    "2008": 0.15,
+    "2009": 0.35,
+    "2010": 0.63,
+    "2011": 0.47
+   },
+   "eps_sources": {
+    "2005": "CR20",
+    "2006": "CR3",
+    "2008": "CR30",
+    "2009": "CR30",
+    "2010": "CR30",
+    "2011": "CR30"
+   },
+   "eps_excluded": {
+    "2007": "FY2007 is excluded: GAAP diluted EPS $0.00 ('For the full year, GAAP earnings per share were breakeven', the Q4 FY07 release; net income $481K), so the year has no P/E (the F rule for Ford's $0.00 year), and no item in it is listed as a one-off"
+   },
+   "eps_first_excluded": {
+    "2004": "excluded, a year distorted by a one-off benefit (the AVGO FY2018 mirror test): its $3,445K lease recovery ('Lease recovery' in the selected data) is larger than the year's $794K of pre-tax income without it (pre-tax $4,239K), so the reported $0.04 is more than double the year's EPS without it, and no filing publishes a figure excluding it; an excluded year that is not the latest takes the years before it (the PFE 2003 and MU FY2003 rule; the inception period to January 2000 and fiscal 2001-2003 are losses as well: $(0.55), $(2.38), $(1.36), $(0.37)), so the history and the P/E window start after January 31, 2004, and the window from the listing on 2004-06-23"
+   },
+   "revenue_usd_b": {
+    "2005": 0.176375,
+    "2006": 0.309857,
+    "2007": 0.497098,
+    "2008": 0.7487,
+    "2009": 1.076769,
+    "2010": 1.305583,
+    "2011": 1.657139
+   },
+   "revenue_sources": {
+    "2005": "CR20",
+    "2006": "CR25",
+    "2007": "CR30",
+    "2008": "CR30",
+    "2009": "CR30",
+    "2010": "CR30",
+    "2011": "CR30"
+   },
+   "diluted_shares_m": {
+    "2005": 110.874,
+    "2006": 118.737,
+    "2007": 120.154,
+    "2008": 122.422,
+    "2009": 125.228,
+    "2010": 128.114,
+    "2011": 136.598
+   },
+   "shares_sources": {
+    "2005": "CR20",
+    "2006": "CR25",
+    "2007": "CR30",
+    "2008": "CR30",
+    "2009": "CR30",
+    "2010": "CR30",
+    "2011": "CR30"
+   },
+   "pe_window_start": "2004-02-01",
+   "normalization": "GAAP diluted EPS, each year from the latest filing that reports it (FY06 Q4 FY06 results; FY05 FY2009 10-K; FY08-FY11 FY2011 10-K), except FY06 at the company's $0.181 excluding only the reversal of the deferred tax valuation allowance and the lease recovery (Q4 FY06 release; GAAP $0.24: the ACN rule, the JPM FY2017 rule for a figure only the release prints); the non-GAAP figures of the releases from Q1 FY11 also remove stock-based compensation, the amortization of purchased intangibles and the non-cash interest on the convertible notes, which recur (the NKE FY2007 and AVGO rule); FY2007 is excluded: GAAP diluted EPS $0.00 ('For the full year, GAAP earnings per share were breakeven', the Q4 FY07 release; net income $481K), so the year has no P/E (the F rule for Ford's $0.00 year), and no item in it is listed as a one-off; it stays a gap (the NKE FY2018 and XOM FY2020 rule)",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 5.88,
+   "prev_fy_op_margin_note": "FY11 income from operations $97.5M / revenues $1,657.1M (FY2011 10-K)",
+   "prev_fy_pretax_margin": 6.29,
+   "prev_fy_pretax_margin_note": "FY11 income before income taxes and noncontrolling interest $104.3M / revenues $1,657.1M (FY2011 10-K)",
+   "prev_fy_gross_margin": 80.46,
+   "prev_fy_sales_growth": 26.9,
+   "prev_fy_sub_growth": 28.2,
+   "tax_rate": 0.332,
+   "tax_note": "FY11 provision for income taxes $34.6M / pre-tax $104.3M (FY2011 10-K)",
+   "fcf_b": 0.368,
+   "fcf_label": "FY11",
+   "fcf_note": "net cash provided by operating activities $459.1M less capital expenditures $90.9M",
+   "cash_b": 1.408,
+   "dividend_annual": 0.0,
+   "dividend_note": "none: 'We have never paid any cash dividends on our common stock.' (FY2011 10-K)",
+   "cash_return_text": "no share repurchase program (the 10-K's only repurchases are of unvested shares from employees)",
+   "business_line": "enterprise cloud computing applications: the CRM service, the Force.com platform and the AppExchange",
+   "groups": [
+    [
+     "Americas",
+     1.135,
+     22.9
+    ],
+    [
+     "Europe",
+     0.2918,
+     25.6
+    ],
+    [
+     "Asia Pacific",
+     0.2303,
+     54.2
+    ]
+   ],
+   "groups_basis": "FY11 revenues by geography (FY2011 10-K), growth on the year before",
+   "published_note": "FY2011 10-K"
+  },
+  {
+   "published": "2012-03-12",
+   "sources": [
+    "CR35",
+    "CR30",
+    "CR25",
+    "CR20",
+    "CR3"
+   ],
+   "fy_label": "FY12",
+   "company": "salesforce.com, inc.",
+   "exchange": "NYSE",
+   "fiscal_year": "ends January 31",
+   "kind": "DURABLE",
+   "why": "'We are a leading provider of enterprise cloud computing and social enterprise solutions, and are dedicated to helping customers transform themselves into social enterprises.' 'The market for our offerings is highly competitive, rapidly evolving and fragmented, and subject to changing technology, frequent introductions of new products and services, and as we have seen recently, consolidation.' 'The market in which we participate is intensely competitive, and if we do not compete effectively, our operating results could be harmed.' (FY2012 10-K); DURABLE: no 10-K calls the business cyclical ('cycle' appears only as the sales cycle and payment cycles)",
+   "eps_normalized": {
+    "2005": 0.07,
+    "2006": 0.181,
+    "2008": 0.15,
+    "2009": 0.35,
+    "2010": 0.63,
+    "2011": 0.47
+   },
+   "eps_sources": {
+    "2005": "CR20",
+    "2006": "CR3",
+    "2008": "CR35",
+    "2009": "CR35",
+    "2010": "CR35",
+    "2011": "CR35"
+   },
+   "eps_excluded": {
+    "2007": "FY2007 is excluded: GAAP diluted EPS $0.00 ('For the full year, GAAP earnings per share were breakeven', the Q4 FY07 release; net income $481K), so the year has no P/E (the F rule for Ford's $0.00 year), and no item in it is listed as a one-off",
+    "2012": "FY2012 is excluded: a GAAP net loss of $(0.09) a share ('For the full fiscal year 2012, GAAP net loss per share was ($0.09)', the Q4 FY12 release), with no figure excluding only one-offs (the release's non-GAAP $1.36 also removes stock-based compensation, the amortization of purchased intangibles and the non-cash interest on the convertible notes, which recur: the NKE FY2007 and AVGO rule), so the year has no P/E (the r2 loss rule)"
+   },
+   "eps_first_excluded": {
+    "2004": "excluded, a year distorted by a one-off benefit (the AVGO FY2018 mirror test): its $3,445K lease recovery ('Lease recovery' in the selected data) is larger than the year's $794K of pre-tax income without it (pre-tax $4,239K), so the reported $0.04 is more than double the year's EPS without it, and no filing publishes a figure excluding it; an excluded year that is not the latest takes the years before it (the PFE 2003 and MU FY2003 rule; the inception period to January 2000 and fiscal 2001-2003 are losses as well: $(0.55), $(2.38), $(1.36), $(0.37)), so the history and the P/E window start after January 31, 2004, and the window from the listing on 2004-06-23"
+   },
+   "revenue_usd_b": {
+    "2005": 0.176375,
+    "2006": 0.309857,
+    "2007": 0.497098,
+    "2008": 0.7487,
+    "2009": 1.076769,
+    "2010": 1.305583,
+    "2011": 1.657139,
+    "2012": 2.266539
+   },
+   "revenue_sources": {
+    "2005": "CR20",
+    "2006": "CR25",
+    "2007": "CR30",
+    "2008": "CR35",
+    "2009": "CR35",
+    "2010": "CR35",
+    "2011": "CR35",
+    "2012": "CR35"
+   },
+   "diluted_shares_m": {
+    "2005": 110.874,
+    "2006": 118.737,
+    "2007": 120.154,
+    "2008": 122.422,
+    "2009": 125.228,
+    "2010": 128.114,
+    "2011": 136.598,
+    "2012": 135.302
+   },
+   "shares_sources": {
+    "2005": "CR20",
+    "2006": "CR25",
+    "2007": "CR30",
+    "2008": "CR35",
+    "2009": "CR35",
+    "2010": "CR35",
+    "2011": "CR35",
+    "2012": "CR35"
+   },
+   "pe_window_start": "2004-02-01",
+   "normalization": "GAAP diluted EPS, each year from the latest filing that reports it (FY06 Q4 FY06 results; FY05 FY2009 10-K; FY08-FY11 FY2012 10-K), except FY06 at the company's $0.181 excluding only the reversal of the deferred tax valuation allowance and the lease recovery (Q4 FY06 release; GAAP $0.24: the ACN rule, the JPM FY2017 rule for a figure only the release prints); the non-GAAP figures of the releases from Q1 FY11 also remove stock-based compensation, the amortization of purchased intangibles and the non-cash interest on the convertible notes, which recur (the NKE FY2007 and AVGO rule); FY2007 is excluded: GAAP diluted EPS $0.00 ('For the full year, GAAP earnings per share were breakeven', the Q4 FY07 release; net income $481K), so the year has no P/E (the F rule for Ford's $0.00 year), and no item in it is listed as a one-off; it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2012 is excluded: a GAAP net loss of $(0.09) a share ('For the full fiscal year 2012, GAAP net loss per share was ($0.09)', the Q4 FY12 release), with no figure excluding only one-offs (the release's non-GAAP $1.36 also removes stock-based compensation, the amortization of purchased intangibles and the non-cash interest on the convertible notes, which recur: the NKE FY2007 and AVGO rule), so the year has no P/E (the r2 loss rule); it is the latest year in the FY2012 10-K, so only its own days leave the P/E window (the r2 note for a distorted latest year)",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": -1.55,
+   "prev_fy_op_margin_note": "FY12 income from operations $(35.1)M / revenues $2,266.5M (FY2012 10-K)",
+   "prev_fy_pretax_margin": -1.47,
+   "prev_fy_pretax_margin_note": "FY12 income before income taxes and noncontrolling interest $(33.3)M / revenues $2,266.5M (FY2012 10-K)",
+   "prev_fy_gross_margin": 78.43,
+   "prev_fy_sales_growth": 36.8,
+   "prev_fy_sub_growth": 37.1,
+   "tax_rate": 0.653,
+   "tax_note": "FY12 benefit from income taxes $21.7M on a pre-tax $(33.3)M (FY2012 10-K)",
+   "fcf_b": 0.44,
+   "fcf_label": "FY12",
+   "fcf_note": "net cash provided by operating activities $591.5M less capital expenditures $151.6M",
+   "cash_b": 1.447,
+   "dividend_annual": 0.0,
+   "dividend_note": "none: 'We have never paid any cash dividends on our common stock.' (FY2012 10-K)",
+   "cash_return_text": "no share repurchase program (the 10-K's only repurchases are of unvested shares from employees)",
+   "business_line": "enterprise cloud computing and social enterprise solutions: the CRM applications, the Force.com platform and the AppExchange",
+   "groups": [
+    [
+     "Americas",
+     1.5403,
+     35.7
+    ],
+    [
+     "Europe",
+     0.4085,
+     40.0
+    ],
+    [
+     "Asia Pacific",
+     0.3178,
+     38.0
+    ]
+   ],
+   "groups_basis": "FY12 revenues by geography (FY2012 10-K), growth on the year before",
+   "published_note": "FY2012 10-K"
   }
  ],
  "prints": [
@@ -1360,6 +1800,963 @@
    "eps_note": "GAAP diluted EPS $0.16 vs $0.08; the release prints GAAP only",
    "shares_note": "diluted shares 128.6M",
    "next_print": "Q4 FY10 print (February)"
+  },
+  {
+   "quarter": "Q4 FY10",
+   "fy": 2010,
+   "q": 4,
+   "published": "2010-02-25",
+   "source": "CR24",
+   "release": "Feb 24",
+   "release_time": "after the close on Feb 24: 8-K accepted 2010-02-24 16:32 ET; public before the open of the next trading day 2010-02-25",
+   "period_end": "2010-01-31",
+   "raw": {
+    "sub_k": 327394.0,
+    "sub_prior_k": 266110.0,
+    "sales_k": 354049.0,
+    "sales_prior_k": 289583.0,
+    "gross_profit_k": 285990.0,
+    "gross_profit_prior_k": 230849.0,
+    "rd_k": 36447.0,
+    "rd_prior_k": 29460.0,
+    "ms_k": 168552.0,
+    "ms_prior_k": 144483.0,
+    "ga_k": 55472.0,
+    "ga_prior_k": 40816.0,
+    "op_income_k": 25519.0,
+    "op_income_prior_k": 16090.0,
+    "deferred_k": 704348.0,
+    "deferred_prior_k": 594026.0,
+    "sales_prev_q_k": 330549.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 327,394 | 266,110 | 1,209,472 | 984,574",
+    "sales": "Total revenues | 354,049 | 289,583 | 1,305,583 | 1,076,769",
+    "gp": "Gross profit | 285,990 | 230,849 | 1,047,658 | 856,298",
+    "rd": "Research and development | 36,447 | 29,460 | 131,897 | 99,530",
+    "ms": "Marketing and sales | 168,552 | 144,483 | 605,199 | 534,413",
+    "ga": "General and administrative | 55,472 | 40,816 | 195,290 | 158,613",
+    "op": "Income from operations | 25,519 | 16,090 | 115,272 | 63,742",
+    "eps": "Diluted net income per share attributable to salesforce.com common shareholders | 0.16 | 0.11 | 0.63 | 0.35",
+    "shares": "Shares used in computing diluted net income per share | 130,687 | 124,533 | 128,114 | 125,228",
+    "deferred": "Deferred revenue, current and noncurrent | 704,348 | 545,435 | 549,010 | 549,373 | 594,026 | 469,534",
+    "deferred_hdr": "Jan 31,2010 | Oct 31,2009 | Jul 31,2009 | Apr 30,2009 | Jan 31,2009 | Oct 31,2008",
+    "cash": "Cash, cash equivalents and marketable securities | 1,727,048 | 1,070,092 | 1,030,406 | 983,824 | 882,565 | 804,606",
+    "notes": [
+     "0.75% Convertible senior notes due 2015, net | 450,198 | —"
+    ]
+   },
+   "sales_prev_q_row": {
+    "source": "CR23",
+    "row": "Total revenues | 330,549 | 276,487 | 951,534 | 787,186"
+   },
+   "extra_sources": [
+    "CR23"
+   ],
+   "sales_b": 0.354,
+   "sales_pct": 22.3,
+   "seq_pct": 7.1,
+   "sub_pct": 23.0,
+   "deferred_b": 0.7043,
+   "deferred_pct": 18.6,
+   "gross_margin": 80.78,
+   "gross_margin_bp": 105.9,
+   "op_margin": 7.21,
+   "op_margin_bp": 165.1,
+   "opex_pct": 21.3,
+   "opex_gap_pp": -1.0,
+   "eps_q": 0.16,
+   "eps_q_prior": 0.11,
+   "diluted_shares_m": 130.687,
+   "cash_b": 1.727,
+   "sales_note": "revenues $354.0M vs $289.6M a year earlier, $330.5M the quarter before; subscription and support $327.4M vs $266.1M",
+   "deferred_note": "deferred revenue $704.3M (2010-01-31) vs $594.0M a year earlier, current and noncurrent (the release's Additional Metrics)",
+   "eps_note": "GAAP diluted EPS $0.16 vs $0.11; the release prints GAAP only",
+   "debt_note": "convertible senior notes $450.2M, net (the balance sheet)",
+   "shares_note": "diluted shares 130.7M",
+   "next_print": "Q1 FY11 print (May)",
+   "fy_actual": {
+    "fy": 2010,
+    "fy_label": "FY10",
+    "eps_normalized": 0.63,
+    "revenue_usd_b": 1.305583,
+    "diluted_shares_m": 128.114,
+    "normalization_note": "FY10 from the Q4 FY10 release (GAAP)",
+    "op_margin": 8.83,
+    "op_margin_note": "FY10 income from operations $115.3M / revenues $1,305.6M (Q4 FY10 release)",
+    "pretax_margin": 10.91,
+    "pretax_margin_note": "FY10 income before income taxes and noncontrolling interest $142.4M / revenues $1,305.6M (Q4 FY10 release)",
+    "gross_margin": 80.24,
+    "sales_growth": 21.3,
+    "sub_growth": 22.8,
+    "tax_rate": 0.405,
+    "tax_note": "FY10 provision for income taxes $57.7M / pre-tax $142.4M"
+   }
+  },
+  {
+   "quarter": "Q1 FY11",
+   "fy": 2011,
+   "q": 1,
+   "published": "2010-05-21",
+   "source": "CR26",
+   "release": "May 20",
+   "release_time": "after the close on May 20: 8-K accepted 2010-05-20 16:34 ET; public before the open of the next trading day 2010-05-21",
+   "period_end": "2010-04-30",
+   "raw": {
+    "sub_k": 350712.0,
+    "sub_prior_k": 281768.0,
+    "sales_k": 376813.0,
+    "sales_prior_k": 304924.0,
+    "gross_profit_k": 305232.0,
+    "gross_profit_prior_k": 243124.0,
+    "rd_k": 40122.0,
+    "rd_prior_k": 31584.0,
+    "ms_k": 175867.0,
+    "ms_prior_k": 138267.0,
+    "ga_k": 56193.0,
+    "ga_prior_k": 43150.0,
+    "op_income_k": 33050.0,
+    "op_income_prior_k": 30123.0,
+    "deferred_k": 664529.0,
+    "deferred_prior_k": 549373.0,
+    "sales_prev_q_k": 354049.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 350,712 | 281,768",
+    "sales": "Total revenues | 376,813 | 304,924",
+    "gp": "Gross profit | 305,232 | 243,124",
+    "rd": "Research and development | 40,122 | 31,584",
+    "ms": "Marketing and sales | 175,867 | 138,267",
+    "ga": "General and administrative | 56,193 | 43,150",
+    "op": "Income from operations | 33,050 | 30,123",
+    "eps": "Diluted net income per share attributable to salesforce.com common shareholders | 0.13 | 0.15",
+    "shares": "Shares used in computing diluted net income per share | 132,251 | 125,349",
+    "deferred": "Deferred revenue, current and noncurrent | 664,529 | 704,348 | 545,435 | 549,010 | 549,373 | 594,026",
+    "deferred_hdr": "Apr 30,2010 | Jan 31,2010 | Oct 31,2009 | Jul 31,2009 | Apr 30,2009 | Jan 31,2009",
+    "cash": "Cash, cash equivalents and marketable securities | 1,901,548 | 1,727,048 | 1,070,092 | 1,030,406 | 983,824 | 882,565",
+    "notes": [
+     "0.75% Convertible senior notes due 2015, net | 455,649 | 450,198"
+    ]
+   },
+   "sales_prev_q_row": {
+    "source": "CR24",
+    "row": "Total revenues | 354,049 | 289,583 | 1,305,583 | 1,076,769"
+   },
+   "extra_sources": [
+    "CR24"
+   ],
+   "sales_b": 0.3768,
+   "sales_pct": 23.6,
+   "seq_pct": 6.4,
+   "sub_pct": 24.5,
+   "deferred_b": 0.6645,
+   "deferred_pct": 21.0,
+   "gross_margin": 81.0,
+   "gross_margin_bp": 127.1,
+   "op_margin": 8.77,
+   "op_margin_bp": -110.8,
+   "opex_pct": 27.8,
+   "opex_gap_pp": 4.2,
+   "eps_q": 0.13,
+   "eps_q_prior": 0.15,
+   "diluted_shares_m": 132.251,
+   "cash_b": 1.9015,
+   "sales_note": "revenues $376.8M vs $304.9M a year earlier, $354.0M the quarter before; subscription and support $350.7M vs $281.8M",
+   "deferred_note": "deferred revenue $664.5M (2010-04-30) vs $549.4M a year earlier, current and noncurrent (the release's Additional Metrics)",
+   "eps_note": "GAAP diluted EPS $0.13 vs $0.15; the release's non-GAAP EPS also excludes stock-based compensation, the amortization of purchased intangibles and the non-cash interest on the convertible senior notes, which recur, so it is not used",
+   "debt_note": "convertible senior notes $455.6M, net (the balance sheet)",
+   "shares_note": "diluted shares 132.3M",
+   "next_print": "Q2 FY11 print (August)"
+  },
+  {
+   "quarter": "Q2 FY11",
+   "fy": 2011,
+   "q": 2,
+   "published": "2010-08-20",
+   "source": "CR27",
+   "release": "Aug 19",
+   "release_time": "after the close on Aug 19: 8-K accepted 2010-08-19 16:30 ET; public before the open of the next trading day 2010-08-20",
+   "period_end": "2010-07-31",
+   "raw": {
+    "sub_k": 368951.0,
+    "sub_prior_k": 293440.0,
+    "sales_k": 394372.0,
+    "sales_prior_k": 316061.0,
+    "gross_profit_k": 316582.0,
+    "gross_profit_prior_k": 253565.0,
+    "rd_k": 42930.0,
+    "rd_prior_k": 31103.0,
+    "ms_k": 182401.0,
+    "ms_prior_k": 146214.0,
+    "ga_k": 61569.0,
+    "ga_prior_k": 46759.0,
+    "op_income_k": 29682.0,
+    "op_income_prior_k": 29489.0,
+    "deferred_k": 683019.0,
+    "deferred_prior_k": 549010.0,
+    "sales_prev_q_k": 376813.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 368,951 | 293,440 | 719,663 | 575,208",
+    "sales": "Total revenues | 394,372 | 316,061 | 771,185 | 620,985",
+    "gp": "Gross profit | 316,582 | 253,565 | 621,814 | 496,689",
+    "rd": "Research and development | 42,930 | 31,103 | 83,052 | 62,687",
+    "ms": "Marketing and sales | 182,401 | 146,214 | 358,268 | 284,481",
+    "ga": "General and administrative | 61,569 | 46,759 | 117,762 | 89,909",
+    "op": "Income from operations | 29,682 | 29,489 | 62,732 | 59,612",
+    "eps": "Diluted net income per share attributable to salesforce.com common shareholders | 0.11 | 0.17 | 0.24 | 0.31",
+    "shares": "Shares used in computing diluted net income per share | 134,176 | 126,566 | 133,437 | 125,894",
+    "deferred": "Deferred revenue, current and noncurrent | 683,019 | 664,529 | 704,348 | 545,435 | 549,010 | 549,373",
+    "deferred_hdr": "Jul 31,2010 | Apr 30,2010 | Jan 31,2010 | Oct 31,2009 | Jul 31,2009 | Apr 30,2009",
+    "cash": "Cash, cash equivalents and marketable securities | 1,858,928 | 1,901,548 | 1,727,048 | 1,070,092 | 1,030,406 | 983,824",
+    "notes": [
+     "0.75% Convertible senior notes due 2015, net | 461,182 | 450,198"
+    ]
+   },
+   "sales_prev_q_row": {
+    "source": "CR26",
+    "row": "Total revenues | 376,813 | 304,924"
+   },
+   "extra_sources": [
+    "CR26"
+   ],
+   "sales_b": 0.3944,
+   "sales_pct": 24.8,
+   "seq_pct": 4.7,
+   "sub_pct": 25.7,
+   "deferred_b": 0.683,
+   "deferred_pct": 24.4,
+   "gross_margin": 80.27,
+   "gross_margin_bp": 4.8,
+   "op_margin": 7.53,
+   "op_margin_bp": -180.4,
+   "opex_pct": 28.0,
+   "opex_gap_pp": 3.3,
+   "eps_q": 0.11,
+   "eps_q_prior": 0.17,
+   "diluted_shares_m": 134.176,
+   "cash_b": 1.8589,
+   "sales_note": "revenues $394.4M vs $316.1M a year earlier, $376.8M the quarter before; subscription and support $369.0M vs $293.4M",
+   "deferred_note": "deferred revenue $683.0M (2010-07-31) vs $549.0M a year earlier, current and noncurrent (the release's Additional Metrics)",
+   "eps_note": "GAAP diluted EPS $0.11 vs $0.17; the release's non-GAAP EPS also excludes stock-based compensation, the amortization of purchased intangibles and the non-cash interest on the convertible senior notes, which recur, so it is not used",
+   "debt_note": "convertible senior notes $461.2M, net (the balance sheet)",
+   "shares_note": "diluted shares 134.2M",
+   "next_print": "Q3 FY11 print (November)"
+  },
+  {
+   "quarter": "Q3 FY11",
+   "fy": 2011,
+   "q": 3,
+   "published": "2010-11-19",
+   "source": "CR28",
+   "release": "Nov 18",
+   "release_time": "after the close on Nov 18: 8-K accepted 2010-11-18 16:33 ET; public before the open of the next trading day 2010-11-19",
+   "period_end": "2010-10-31",
+   "raw": {
+    "sub_k": 402948.0,
+    "sub_prior_k": 306870.0,
+    "sales_k": 429087.0,
+    "sales_prior_k": 330549.0,
+    "gross_profit_k": 346956.0,
+    "gross_profit_prior_k": 264979.0,
+    "rd_k": 47305.0,
+    "rd_prior_k": 32763.0,
+    "ms_k": 200544.0,
+    "ms_prior_k": 152166.0,
+    "ga_k": 63951.0,
+    "ga_prior_k": 49909.0,
+    "op_income_k": 35156.0,
+    "op_income_prior_k": 30141.0,
+    "deferred_k": 694557.0,
+    "deferred_prior_k": 545435.0,
+    "sales_prev_q_k": 394372.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 402,948 | 306,870 | 1,122,611 | 882,078",
+    "sales": "Total revenues | 429,087 | 330,549 | 1,200,272 | 951,534",
+    "gp": "Gross profit | 346,956 | 264,979 | 968,770 | 761,668",
+    "rd": "Research and development | 47,305 | 32,763 | 130,357 | 95,450",
+    "ms": "Marketing and sales | 200,544 | 152,166 | 558,812 | 436,647",
+    "ga": "General and administrative | 63,951 | 49,909 | 181,713 | 139,818",
+    "op": "Income from operations | 35,156 | 30,141 | 97,888 | 89,753",
+    "eps": "Diluted net income per share attributable to salesforce.com common shareholders | 0.15 | 0.16 | 0.40 | 0.48",
+    "shares": "Shares used in computing diluted net income per share | 137,044 | 128,596 | 135,007 | 126,993",
+    "deferred": "Deferred revenue, current and noncurrent | 694,557 | 683,019 | 664,529 | 704,348 | 545,435 | 549,010",
+    "deferred_hdr": "Oct 31,2010 | Jul 31,2010 | Apr 30,2010 | Jan 31,2010 | Oct 31,2009 | Jul 31,2009",
+    "cash": "Cash, cash equivalents and marketable securities | 1,802,440 | 1,858,928 | 1,901,548 | 1,727,048 | 1,070,092 | 1,030,406",
+    "notes": [
+     "0.75% Convertible senior notes due 2015, net | 466,847 | 450,198"
+    ]
+   },
+   "sales_prev_q_row": {
+    "source": "CR27",
+    "row": "Total revenues | 394,372 | 316,061 | 771,185 | 620,985"
+   },
+   "extra_sources": [
+    "CR27"
+   ],
+   "sales_b": 0.4291,
+   "sales_pct": 29.8,
+   "seq_pct": 8.8,
+   "sub_pct": 31.3,
+   "deferred_b": 0.6946,
+   "deferred_pct": 27.3,
+   "gross_margin": 80.86,
+   "gross_margin_bp": 69.6,
+   "op_margin": 8.19,
+   "op_margin_bp": -92.5,
+   "opex_pct": 32.8,
+   "opex_gap_pp": 3.0,
+   "eps_q": 0.15,
+   "eps_q_prior": 0.16,
+   "diluted_shares_m": 137.044,
+   "cash_b": 1.8024,
+   "sales_note": "revenues $429.1M vs $330.5M a year earlier, $394.4M the quarter before; subscription and support $402.9M vs $306.9M",
+   "deferred_note": "deferred revenue $694.6M (2010-10-31) vs $545.4M a year earlier, current and noncurrent (the release's Additional Metrics)",
+   "eps_note": "GAAP diluted EPS $0.15 vs $0.16; the release's non-GAAP EPS also excludes stock-based compensation, the amortization of purchased intangibles and the non-cash interest on the convertible senior notes, which recur, so it is not used",
+   "debt_note": "convertible senior notes $466.8M, net (the balance sheet)",
+   "shares_note": "diluted shares 137.0M",
+   "next_print": "Q4 FY11 print (February)"
+  },
+  {
+   "quarter": "Q4 FY11",
+   "fy": 2011,
+   "q": 4,
+   "published": "2011-02-25",
+   "source": "CR29",
+   "release": "Feb 24",
+   "release_time": "after the close on Feb 24: 8-K accepted 2011-02-24 16:35 ET; public before the open of the next trading day 2011-02-25",
+   "period_end": "2011-01-31",
+   "raw": {
+    "sub_k": 428534.0,
+    "sub_prior_k": 327394.0,
+    "sales_k": 456867.0,
+    "sales_prior_k": 354049.0,
+    "gross_profit_k": 364556.0,
+    "gross_profit_prior_k": 285990.0,
+    "rd_k": 57530.0,
+    "rd_prior_k": 36447.0,
+    "ms_k": 233217.0,
+    "ms_prior_k": 168552.0,
+    "ga_k": 74200.0,
+    "ga_prior_k": 55472.0,
+    "op_income_k": -391.0,
+    "op_income_prior_k": 25519.0,
+    "deferred_k": 934941.0,
+    "deferred_prior_k": 704348.0,
+    "sales_prev_q_k": 429087.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 428,534 | 327,394 | 1,551,145 | 1,209,472",
+    "sales": "Total revenues | 456,867 | 354,049 | 1,657,139 | 1,305,583",
+    "gp": "Gross profit | 364,556 | 285,990 | 1,333,326 | 1,047,658",
+    "rd": "Research and development | 57,530 | 36,447 | 187,887 | 131,897",
+    "ms": "Marketing and sales | 233,217 | 168,552 | 792,029 | 605,199",
+    "ga": "General and administrative | 74,200 | 55,472 | 255,913 | 195,290",
+    "op": "Income (loss) from operations | (391) | 25,519 | 97,497 | 115,272",
+    "eps": "Diluted net income per share attributable to salesforce.com common shareholders | 0.08 | 0.16 | 0.47 | 0.63",
+    "shares": "Shares used in computing diluted net income per share | 140,199 | 130,687 | 136,598 | 128,114",
+    "deferred": "Deferred revenue, current and noncurrent | 934,941 | 694,557 | 683,019 | 664,529 | 704,348 | 545,435",
+    "deferred_hdr": "Jan 31,2011 | Oct 31,2010 | Jul 31,2010 | Apr 30,2010 | Jan 31,2010 | Oct 31,2009",
+    "cash": "Cash, cash equivalents and marketable securities | 1,407,557 | 1,802,440 | 1,858,928 | 1,901,548 | 1,727,048 | 1,070,092",
+    "notes": [
+     "0.75% Convertible senior notes due 2015, net | 472,538 | 450,198"
+    ]
+   },
+   "sales_prev_q_row": {
+    "source": "CR28",
+    "row": "Total revenues | 429,087 | 330,549 | 1,200,272 | 951,534"
+   },
+   "extra_sources": [
+    "CR28"
+   ],
+   "sales_b": 0.4569,
+   "sales_pct": 29.0,
+   "seq_pct": 6.5,
+   "sub_pct": 30.9,
+   "deferred_b": 0.9349,
+   "deferred_pct": 32.7,
+   "gross_margin": 79.79,
+   "gross_margin_bp": -98.2,
+   "op_margin": -0.09,
+   "op_margin_bp": -729.3,
+   "opex_pct": 40.1,
+   "opex_gap_pp": 11.1,
+   "eps_q": 0.08,
+   "eps_q_prior": 0.16,
+   "diluted_shares_m": 140.199,
+   "cash_b": 1.4076,
+   "sales_note": "revenues $456.9M vs $354.0M a year earlier, $429.1M the quarter before; subscription and support $428.5M vs $327.4M",
+   "deferred_note": "deferred revenue $934.9M (2011-01-31) vs $704.3M a year earlier, current and noncurrent (the release's Additional Metrics)",
+   "eps_note": "GAAP diluted EPS $0.08 vs $0.16; the release's non-GAAP EPS also excludes stock-based compensation, the amortization of purchased intangibles and the non-cash interest on the convertible senior notes, which recur, so it is not used",
+   "debt_note": "convertible senior notes $472.5M, net (the balance sheet)",
+   "shares_note": "diluted shares 140.2M",
+   "next_print": "Q1 FY12 print (May)",
+   "fy_actual": {
+    "fy": 2011,
+    "fy_label": "FY11",
+    "eps_normalized": 0.47,
+    "revenue_usd_b": 1.657139,
+    "diluted_shares_m": 136.598,
+    "normalization_note": "FY11 from the Q4 FY11 release (GAAP)",
+    "op_margin": 5.88,
+    "op_margin_note": "FY11 income from operations $97.5M / revenues $1,657.1M (Q4 FY11 release)",
+    "pretax_margin": 6.29,
+    "pretax_margin_note": "FY11 income before income taxes and noncontrolling interest $104.3M / revenues $1,657.1M (Q4 FY11 release)",
+    "gross_margin": 80.46,
+    "sales_growth": 26.9,
+    "sub_growth": 28.2,
+    "tax_rate": 0.332,
+    "tax_note": "FY11 provision for income taxes $34.6M / pre-tax $104.3M"
+   }
+  },
+  {
+   "quarter": "Q1 FY12",
+   "fy": 2012,
+   "q": 1,
+   "published": "2011-05-20",
+   "source": "CR31",
+   "release": "May 19",
+   "release_time": "after the close on May 19: 8-K accepted 2011-05-19 16:08 ET; public before the open of the next trading day 2011-05-20",
+   "period_end": "2011-04-30",
+   "raw": {
+    "sub_k": 473504.0,
+    "sub_prior_k": 350712.0,
+    "sales_k": 504364.0,
+    "sales_prior_k": 376813.0,
+    "gross_profit_k": 401298.0,
+    "gross_profit_prior_k": 305232.0,
+    "rd_k": 65292.0,
+    "rd_prior_k": 40122.0,
+    "ms_k": 254471.0,
+    "ms_prior_k": 175867.0,
+    "ga_k": 84338.0,
+    "ga_prior_k": 56193.0,
+    "op_income_k": -2803.0,
+    "op_income_prior_k": 33050.0,
+    "deferred_k": 915133.0,
+    "deferred_prior_k": 664529.0,
+    "sales_prev_q_k": 456867.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 473,504 | 350,712",
+    "sales": "Total revenues | 504,364 | 376,813",
+    "gp": "Gross profit | 401,298 | 305,232",
+    "rd": "Research and development | 65,292 | 40,122",
+    "ms": "Marketing and sales | 254,471 | 175,867",
+    "ga": "General and administrative | 84,338 | 56,193",
+    "op": "Income (loss) from operations | (2,803) | 33,050",
+    "eps": "Diluted net income per share attributable to salesforce.com common shareholders | 0.00 | 0.13",
+    "shares": "Shares used in computing diluted net income per share | 141,062 | 132,251",
+    "deferred": "Deferred revenue, current and noncurrent | 915,133 | 934,941 | 694,557 | 683,019 | 664,529 | 704,348",
+    "deferred_hdr": "Apr 30, | Jan 31, | Oct 31, | Jul 31, | Apr 30, | Jan 31,",
+    "cash": "Cash, cash equivalents and marketable securities | 1,522,285 | 1,407,557 | 1,802,440 | 1,858,928 | 1,901,548 | 1,727,048",
+    "notes": [
+     "Convertible senior notes, net | 478,369 | 0",
+     "Convertible senior notes, net | 0 | 472,538"
+    ]
+   },
+   "sales_prev_q_row": {
+    "source": "CR29",
+    "row": "Total revenues | 456,867 | 354,049 | 1,657,139 | 1,305,583"
+   },
+   "extra_sources": [
+    "CR29"
+   ],
+   "sales_b": 0.5044,
+   "sales_pct": 33.8,
+   "seq_pct": 10.4,
+   "sub_pct": 35.0,
+   "deferred_b": 0.9151,
+   "deferred_pct": 37.7,
+   "gross_margin": 79.57,
+   "gross_margin_bp": -143.8,
+   "op_margin": -0.56,
+   "op_margin_bp": -932.7,
+   "opex_pct": 48.5,
+   "opex_gap_pp": 14.6,
+   "eps_q": 0.0,
+   "eps_q_prior": 0.13,
+   "diluted_shares_m": 141.062,
+   "cash_b": 1.5223,
+   "sales_note": "revenues $504.4M vs $376.8M a year earlier, $456.9M the quarter before; subscription and support $473.5M vs $350.7M",
+   "deferred_note": "deferred revenue $915.1M (2011-04-30) vs $664.5M a year earlier, current and noncurrent (the release's Additional Metrics)",
+   "eps_note": "GAAP diluted EPS $0.00 vs $0.13; the release's non-GAAP EPS also excludes stock-based compensation, the amortization of purchased intangibles and the non-cash interest on the convertible senior notes, which recur, so it is not used",
+   "debt_note": "convertible senior notes $478.4M, net (the balance sheet)",
+   "shares_note": "diluted shares 141.1M",
+   "next_print": "Q2 FY12 print (August)"
+  },
+  {
+   "quarter": "Q2 FY12",
+   "fy": 2012,
+   "q": 2,
+   "published": "2011-08-19",
+   "source": "CR32",
+   "release": "Aug 18",
+   "release_time": "after the close on Aug 18: 8-K accepted 2011-08-18 16:31 ET; public before the open of the next trading day 2011-08-19",
+   "period_end": "2011-07-31",
+   "raw": {
+    "sub_k": 509279.0,
+    "sub_prior_k": 368951.0,
+    "sales_k": 546002.0,
+    "sales_prior_k": 394372.0,
+    "gross_profit_k": 425092.0,
+    "gross_profit_prior_k": 316582.0,
+    "rd_k": 73393.0,
+    "rd_prior_k": 42930.0,
+    "ms_k": 283001.0,
+    "ms_prior_k": 182401.0,
+    "ga_k": 84446.0,
+    "ga_prior_k": 61569.0,
+    "op_income_k": -15748.0,
+    "op_income_prior_k": 29682.0,
+    "deferred_k": 935266.0,
+    "deferred_prior_k": 683019.0,
+    "sales_prev_q_k": 504364.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 509,279 | 368,951 | 982,783 | 719,663",
+    "sales": "Total revenues | 546,002 | 394,372 | 1,050,366 | 771,185",
+    "gp": "Gross profit | 425,092 | 316,582 | 826,390 | 621,814",
+    "rd": "Research and development | 73,393 | 42,930 | 138,685 | 83,052",
+    "ms": "Marketing and sales | 283,001 | 182,401 | 537,472 | 358,268",
+    "ga": "General and administrative | 84,446 | 61,569 | 168,784 | 117,762",
+    "op": "Income (loss) from operations | (15,748) | 29,682 | (18,551) | 62,732",
+    "eps": "Diluted net income (loss) per share attributable to salesforce.com common shareholders | (0.03) | 0.11 | (0.03) | 0.24",
+    "shares": "Shares used in computing diluted net income per share | 135,093 | 134,176 | 134,273 | 133,437",
+    "deferred": "Deferred revenue, current and noncurrent | 935,266 | 915,133 | 934,941 | 694,557 | 683,019 | 664,529",
+    "deferred_hdr": "Jul 31, | Apr 30, | Jan 31, | Oct 31, | Jul 31, | Apr 30,",
+    "cash": "Cash, cash equivalents and marketable securities | 1,286,658 | 1,522,285 | 1,407,557 | 1,802,440 | 1,858,928 | 1,901,548",
+    "notes": [
+     "Convertible senior notes, net | 484,128 | 0",
+     "Convertible senior notes, net | 0 | 472,538"
+    ]
+   },
+   "sales_prev_q_row": {
+    "source": "CR31",
+    "row": "Total revenues | 504,364 | 376,813"
+   },
+   "extra_sources": [
+    "CR31"
+   ],
+   "sales_b": 0.546,
+   "sales_pct": 38.4,
+   "seq_pct": 8.3,
+   "sub_pct": 38.0,
+   "deferred_b": 0.9353,
+   "deferred_pct": 36.9,
+   "gross_margin": 77.86,
+   "gross_margin_bp": -242.0,
+   "op_margin": -2.88,
+   "op_margin_bp": -1041.1,
+   "opex_pct": 53.7,
+   "opex_gap_pp": 15.2,
+   "eps_q": -0.03,
+   "eps_q_prior": 0.11,
+   "diluted_shares_m": 135.093,
+   "cash_b": 1.2867,
+   "sales_note": "revenues $546.0M vs $394.4M a year earlier, $504.4M the quarter before; subscription and support $509.3M vs $369.0M",
+   "deferred_note": "deferred revenue $935.3M (2011-07-31) vs $683.0M a year earlier, current and noncurrent (the release's Additional Metrics)",
+   "eps_note": "GAAP diluted EPS $(0.03) vs $0.11; the release's non-GAAP EPS also excludes stock-based compensation, the amortization of purchased intangibles and the non-cash interest on the convertible senior notes, which recur, so it is not used",
+   "debt_note": "convertible senior notes $484.1M, net (the balance sheet)",
+   "shares_note": "diluted shares 135.1M",
+   "next_print": "Q3 FY12 print (November)"
+  },
+  {
+   "quarter": "Q3 FY12",
+   "fy": 2012,
+   "q": 3,
+   "published": "2011-11-18",
+   "source": "CR33",
+   "release": "Nov 17",
+   "release_time": "after the close on Nov 17: 8-K accepted 2011-11-17 16:30 ET; public before the open of the next trading day 2011-11-18",
+   "period_end": "2011-10-31",
+   "raw": {
+    "sub_k": 549182.0,
+    "sub_prior_k": 402948.0,
+    "sales_k": 584260.0,
+    "sales_prior_k": 429087.0,
+    "gross_profit_k": 455695.0,
+    "gross_profit_prior_k": 346956.0,
+    "rd_k": 76049.0,
+    "rd_prior_k": 47305.0,
+    "ms_k": 304571.0,
+    "ms_prior_k": 200544.0,
+    "ga_k": 85232.0,
+    "ga_prior_k": 63951.0,
+    "op_income_k": -10157.0,
+    "op_income_prior_k": 35156.0,
+    "deferred_k": 917821.0,
+    "deferred_prior_k": 694557.0,
+    "sales_prev_q_k": 546002.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 549,182 | 402,948 | 1,531,965 | 1,122,611",
+    "sales": "Total revenues | 584,260 | 429,087 | 1,634,626 | 1,200,272",
+    "gp": "Gross profit | 455,695 | 346,956 | 1,282,085 | 968,770",
+    "rd": "Research and development | 76,049 | 47,305 | 214,734 | 130,357",
+    "ms": "Marketing and sales | 304,571 | 200,544 | 842,043 | 558,812",
+    "ga": "General and administrative | 85,232 | 63,951 | 254,016 | 181,713",
+    "op": "Income (loss) from operations | (10,157) | 35,156 | (28,708) | 97,888",
+    "eps": "Diluted net income (loss) per share attributable to salesforce.com common shareholders | (0.03) | 0.15 | (0.06) | 0.40",
+    "shares": "Shares used in computing diluted net income per share | 135,847 | 137,044 | 134,824 | 135,007",
+    "deferred": "Deferred revenue, current and noncurrent | 917,821 | 935,266 | 915,133 | 934,941 | 694,557 | 683,019",
+    "deferred_hdr": "Oct 31,2011 | Jul 31,2011 | Apr 30,2011 | Jan 31,2011 | Oct 31,2010 | Jul 31,2010",
+    "cash": "Cash, cash equivalents and marketable securities | 1,296,693 | 1,286,658 | 1,522,285 | 1,407,557 | 1,802,440 | 1,858,928",
+    "notes": [
+     "Convertible senior notes, net | 490,119 | 0",
+     "Convertible senior notes, net | 0 | 472,538"
+    ]
+   },
+   "sales_prev_q_row": {
+    "source": "CR32",
+    "row": "Total revenues | 546,002 | 394,372 | 1,050,366 | 771,185"
+   },
+   "extra_sources": [
+    "CR32"
+   ],
+   "sales_b": 0.5843,
+   "sales_pct": 36.2,
+   "seq_pct": 7.0,
+   "sub_pct": 36.3,
+   "deferred_b": 0.9178,
+   "deferred_pct": 32.1,
+   "gross_margin": 78.0,
+   "gross_margin_bp": -286.4,
+   "op_margin": -1.74,
+   "op_margin_bp": -993.2,
+   "opex_pct": 49.4,
+   "opex_gap_pp": 13.2,
+   "eps_q": -0.03,
+   "eps_q_prior": 0.15,
+   "diluted_shares_m": 135.847,
+   "cash_b": 1.2967,
+   "sales_note": "revenues $584.3M vs $429.1M a year earlier, $546.0M the quarter before; subscription and support $549.2M vs $402.9M",
+   "deferred_note": "deferred revenue $917.8M (2011-10-31) vs $694.6M a year earlier, current and noncurrent (the release's Additional Metrics)",
+   "eps_note": "GAAP diluted EPS $(0.03) vs $0.15; the release's non-GAAP EPS also excludes stock-based compensation, the amortization of purchased intangibles and the non-cash interest on the convertible senior notes, which recur, so it is not used",
+   "debt_note": "convertible senior notes $490.1M, net (the balance sheet)",
+   "shares_note": "diluted shares 135.8M",
+   "next_print": "Q4 FY12 print (February)"
+  },
+  {
+   "quarter": "Q4 FY12",
+   "fy": 2012,
+   "q": 4,
+   "published": "2012-02-24",
+   "source": "CR34",
+   "release": "Feb 23",
+   "release_time": "after the close on Feb 23: 8-K accepted 2012-02-23 16:28 ET; public before the open of the next trading day 2012-02-24",
+   "period_end": "2012-01-31",
+   "raw": {
+    "sub_k": 594269.0,
+    "sub_prior_k": 428534.0,
+    "sales_k": 631913.0,
+    "sales_prior_k": 456867.0,
+    "gross_profit_k": 495568.0,
+    "gross_profit_prior_k": 364556.0,
+    "rd_k": 80613.0,
+    "rd_prior_k": 57530.0,
+    "ms_k": 327567.0,
+    "ms_prior_k": 233217.0,
+    "ga_k": 93765.0,
+    "ga_prior_k": 74200.0,
+    "op_income_k": -6377.0,
+    "op_income_prior_k": -391.0,
+    "deferred_k": 1380295.0,
+    "deferred_prior_k": 934941.0,
+    "sales_prev_q_k": 584260.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 594,269 | 428,534 | 2,126,234 | 1,551,145",
+    "sales": "Total revenues | 631,913 | 456,867 | 2,266,539 | 1,657,139",
+    "gp": "Gross profit | 495,568 | 364,556 | 1,777,653 | 1,333,326",
+    "rd": "Research and development | 80,613 | 57,530 | 295,347 | 187,887",
+    "ms": "Marketing and sales | 327,567 | 233,217 | 1,169,610 | 792,029",
+    "ga": "General and administrative | 93,765 | 74,200 | 347,781 | 255,913",
+    "op": "Income (loss) from operations | (6,377) | (391) | (35,085) | 97,497",
+    "eps": "Diluted net income (loss) per share attributable to salesforce.com common shareholders | (0.03) | 0.08 | (0.09) | 0.47",
+    "shares": "Shares used in computing diluted net income (loss) per share | 136,720 | 140,199 | 135,302 | 136,598",
+    "deferred": "Deferred revenue, current and noncurrent | 1,380,295 | 917,821 | 935,266 | 915,133 | 934,941 | 694,557",
+    "deferred_hdr": "Jan 31,2012 | Oct 31,2011 | Jul 31,2011 | Apr 30,2011 | Jan 31,2011 | Oct 31,2010",
+    "cash": "Cash, cash equivalents and marketable securities | 1,447,174 | 1,296,693 | 1,286,658 | 1,522,285 | 1,407,557 | 1,802,440",
+    "notes": [
+     "Convertible senior notes, net | 496,149 | 0",
+     "Convertible senior notes, net | 0 | 472,538"
+    ]
+   },
+   "sales_prev_q_row": {
+    "source": "CR33",
+    "row": "Total revenues | 584,260 | 429,087 | 1,634,626 | 1,200,272"
+   },
+   "extra_sources": [
+    "CR33"
+   ],
+   "sales_b": 0.6319,
+   "sales_pct": 38.3,
+   "seq_pct": 8.2,
+   "sub_pct": 38.7,
+   "deferred_b": 1.3803,
+   "deferred_pct": 47.6,
+   "gross_margin": 78.42,
+   "gross_margin_bp": -137.1,
+   "op_margin": -1.01,
+   "op_margin_bp": -92.4,
+   "opex_pct": 37.5,
+   "opex_gap_pp": -0.8,
+   "eps_q": -0.03,
+   "eps_q_prior": 0.08,
+   "diluted_shares_m": 136.72,
+   "cash_b": 1.4472,
+   "sales_note": "revenues $631.9M vs $456.9M a year earlier, $584.3M the quarter before; subscription and support $594.3M vs $428.5M",
+   "deferred_note": "deferred revenue $1,380.3M (2012-01-31) vs $934.9M a year earlier, current and noncurrent (the release's Additional Metrics)",
+   "eps_note": "GAAP diluted EPS $(0.03) vs $0.08; the release's non-GAAP EPS also excludes stock-based compensation, the amortization of purchased intangibles and the non-cash interest on the convertible senior notes, which recur, so it is not used",
+   "debt_note": "convertible senior notes $496.1M, net (the balance sheet)",
+   "shares_note": "diluted shares 136.7M",
+   "next_print": "Q1 FY13 print (May)",
+   "fy_actual": {
+    "fy": 2012,
+    "fy_label": "FY12",
+    "eps_normalized": null,
+    "revenue_usd_b": 2.266539,
+    "diluted_shares_m": 135.302,
+    "normalization_note": "FY12 from the Q4 FY12 release (GAAP)",
+    "op_margin": -1.55,
+    "op_margin_note": "FY12 income from operations $-35.1M / revenues $2,266.5M (Q4 FY12 release)",
+    "pretax_margin": -1.47,
+    "pretax_margin_note": "FY12 income before income taxes and noncontrolling interest $(33.3)M / revenues $2,266.5M (Q4 FY12 release)",
+    "gross_margin": 78.43,
+    "sales_growth": 36.8,
+    "sub_growth": 37.1,
+    "tax_rate": 0.653,
+    "tax_note": "FY12 benefit from income taxes $21.7M on a pre-tax $(33.3)M",
+    "excluded_note": "FY2012 is excluded: a GAAP net loss of $(0.09) a share ('For the full fiscal year 2012, GAAP net loss per share was ($0.09)', the Q4 FY12 release), with no figure excluding only one-offs (the release's non-GAAP $1.36 also removes stock-based compensation, the amortization of purchased intangibles and the non-cash interest on the convertible notes, which recur: the NKE FY2007 and AVGO rule), so the year has no P/E (the r2 loss rule)"
+   }
+  },
+  {
+   "quarter": "Q1 FY13",
+   "fy": 2013,
+   "q": 1,
+   "published": "2012-05-18",
+   "source": "CR36",
+   "release": "May 17",
+   "release_time": "after the close on May 17: 8-K accepted 2012-05-17 16:27 ET; public before the open of the next trading day 2012-05-18",
+   "period_end": "2012-04-30",
+   "raw": {
+    "sub_k": 655220.0,
+    "sub_prior_k": 473504.0,
+    "sales_k": 695467.0,
+    "sales_prior_k": 504364.0,
+    "gross_profit_k": 543916.0,
+    "gross_profit_prior_k": 401298.0,
+    "rd_k": 94776.0,
+    "rd_prior_k": 65292.0,
+    "ms_k": 369789.0,
+    "ms_prior_k": 254471.0,
+    "ga_k": 101600.0,
+    "ga_prior_k": 84338.0,
+    "op_income_k": -22249.0,
+    "op_income_prior_k": -2803.0,
+    "deferred_k": 1334716.0,
+    "deferred_prior_k": 915133.0,
+    "sales_prev_q_k": 631913.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 655,220 | 473,504",
+    "sales": "Total revenues | 695,467 | 504,364",
+    "gp": "Gross profit | 543,916 | 401,298",
+    "rd": "Research and development | 94,776 | 65,292",
+    "ms": "Marketing and sales | 369,789 | 254,471",
+    "ga": "General and administrative | 101,600 | 84,338",
+    "op": "Loss from operations | (22,249) | (2,803)",
+    "eps": "Diluted net income (loss) per share | (0.14) | 0.00",
+    "shares": "Shares used in computing diluted net income (loss) per share | 138,150 | 141,062",
+    "deferred": "Deferred revenue, current and noncurrent | 1,334,716 | 1,380,295 | 917,821 | 935,266 | 915,133 | 934,941",
+    "deferred_hdr": "Apr 30, | Jan 31, | Oct 31, | Jul 31, | Apr 30, | Jan 31,",
+    "cash": "Cash, cash equivalents and marketable securities | 1,657,089 | 1,447,174 | 1,296,693 | 1,286,658 | 1,522,285 | 1,407,557",
+    "notes": [
+     "Convertible senior notes, net | 0 | 496,149",
+     "Convertible senior notes, net | 502,326 | 0"
+    ]
+   },
+   "sales_prev_q_row": {
+    "source": "CR34",
+    "row": "Total revenues | 631,913 | 456,867 | 2,266,539 | 1,657,139"
+   },
+   "extra_sources": [
+    "CR34"
+   ],
+   "sales_b": 0.6955,
+   "sales_pct": 37.9,
+   "seq_pct": 10.1,
+   "sub_pct": 38.4,
+   "deferred_b": 1.3347,
+   "deferred_pct": 45.8,
+   "gross_margin": 78.21,
+   "gross_margin_bp": -135.6,
+   "op_margin": -3.2,
+   "op_margin_bp": -264.3,
+   "opex_pct": 40.1,
+   "opex_gap_pp": 2.2,
+   "eps_q": -0.14,
+   "eps_q_prior": 0.0,
+   "diluted_shares_m": 138.15,
+   "cash_b": 1.6571,
+   "sales_note": "revenues $695.5M vs $504.4M a year earlier, $631.9M the quarter before; subscription and support $655.2M vs $473.5M",
+   "deferred_note": "deferred revenue $1,334.7M (2012-04-30) vs $915.1M a year earlier, current and noncurrent (the release's Additional Metrics)",
+   "eps_note": "GAAP diluted EPS $(0.14) vs $0.00; the release's non-GAAP EPS also excludes stock-based compensation, the amortization of purchased intangibles and the non-cash interest on the convertible senior notes, which recur, so it is not used",
+   "debt_note": "convertible senior notes $502.3M, net (the balance sheet)",
+   "shares_note": "diluted shares 138.2M",
+   "next_print": "Q2 FY13 print (August)"
+  },
+  {
+   "quarter": "Q2 FY13",
+   "fy": 2013,
+   "q": 2,
+   "published": "2012-08-24",
+   "source": "CR37",
+   "release": "Aug 23",
+   "release_time": "after the close on Aug 23: 8-K accepted 2012-08-23 16:35 ET; public before the open of the next trading day 2012-08-24",
+   "period_end": "2012-07-31",
+   "raw": {
+    "sub_k": 687493.0,
+    "sub_prior_k": 509279.0,
+    "sales_k": 731649.0,
+    "sales_prior_k": 546002.0,
+    "gross_profit_k": 569231.0,
+    "gross_profit_prior_k": 425092.0,
+    "rd_k": 99442.0,
+    "rd_prior_k": 73393.0,
+    "ms_k": 380160.0,
+    "ms_prior_k": 283001.0,
+    "ga_k": 103095.0,
+    "ga_prior_k": 84446.0,
+    "op_income_k": -13466.0,
+    "op_income_prior_k": -15748.0,
+    "deferred_k": 1337184.0,
+    "deferred_prior_k": 935266.0,
+    "sales_prev_q_k": 695467.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 687,493 | 509,279 | 1,342,713 | 982,783",
+    "sales": "Total revenues | 731,649 | 546,002 | 1,427,116 | 1,050,366",
+    "gp": "Gross profit | 569,231 | 425,092 | 1,113,147 | 826,390",
+    "rd": "Research and development | 99,442 | 73,393 | 194,218 | 138,685",
+    "ms": "Marketing and sales | 380,160 | 283,001 | 749,949 | 537,472",
+    "ga": "General and administrative | 103,095 | 84,446 | 204,695 | 168,784",
+    "op": "Loss from operations | (13,466) | (15,748) | (35,715) | (18,551)",
+    "eps": "Diluted net loss per share | (0.07) | (0.03) | (0.21) | (0.03)",
+    "shares": "Shares used in computing diluted net loss per share | 139,425 | 135,093 | 138,789 | 134,273",
+    "deferred": "Deferred revenue, current and noncurrent | 1,337,184 | 1,334,716 | 1,380,295 | 917,821 | 935,266 | 915,133",
+    "deferred_hdr": "Jul 31,2012 | Apr 30,2012 | Jan 31,2012 | Oct 31,2011 | Jul 31,2011 | Apr 30,2011",
+    "cash": "Cash, cash equivalents and marketable securities | 1,804,265 | 1,657,089 | 1,447,174 | 1,296,693 | 1,286,658 | 1,522,285",
+    "notes": [
+     "Convertible senior notes, net | 508,533 | 496,149"
+    ]
+   },
+   "sales_prev_q_row": {
+    "source": "CR36",
+    "row": "Total revenues | 695,467 | 504,364"
+   },
+   "extra_sources": [
+    "CR36"
+   ],
+   "sales_b": 0.7316,
+   "sales_pct": 34.0,
+   "seq_pct": 5.2,
+   "sub_pct": 35.0,
+   "deferred_b": 1.3372,
+   "deferred_pct": 43.0,
+   "gross_margin": 77.8,
+   "gross_margin_bp": -5.4,
+   "op_margin": -1.84,
+   "op_margin_bp": 104.4,
+   "opex_pct": 32.2,
+   "opex_gap_pp": -1.8,
+   "eps_q": -0.07,
+   "eps_q_prior": -0.03,
+   "diluted_shares_m": 139.425,
+   "cash_b": 1.8043,
+   "sales_note": "revenues $731.6M vs $546.0M a year earlier, $695.5M the quarter before; subscription and support $687.5M vs $509.3M",
+   "deferred_note": "deferred revenue $1,337.2M (2012-07-31) vs $935.3M a year earlier, current and noncurrent (the release's Additional Metrics)",
+   "eps_note": "GAAP diluted EPS $(0.07) vs $(0.03); the release's non-GAAP EPS also excludes stock-based compensation, the amortization of purchased intangibles and the non-cash interest on the convertible senior notes, which recur, so it is not used",
+   "debt_note": "convertible senior notes $508.5M, net (the balance sheet)",
+   "shares_note": "diluted shares 139.4M",
+   "next_print": "Q3 FY13 print (November)"
+  },
+  {
+   "quarter": "Q3 FY13",
+   "fy": 2013,
+   "q": 3,
+   "published": "2012-11-21",
+   "source": "CR38",
+   "release": "Nov 20",
+   "release_time": "after the close on Nov 20: 8-K accepted 2012-11-20 16:31 ET; public before the open of the next trading day 2012-11-21",
+   "period_end": "2012-10-31",
+   "raw": {
+    "sub_k": 740600.0,
+    "sub_prior_k": 549182.0,
+    "sales_k": 788398.0,
+    "sales_prior_k": 584260.0,
+    "gross_profit_k": 602150.0,
+    "gross_profit_prior_k": 455695.0,
+    "rd_k": 114074.0,
+    "rd_prior_k": 76049.0,
+    "ms_k": 428507.0,
+    "ms_prior_k": 304571.0,
+    "ga_k": 113757.0,
+    "ga_prior_k": 85232.0,
+    "op_income_k": -54188.0,
+    "op_income_prior_k": -10157.0,
+    "deferred_k": 1291703.0,
+    "deferred_prior_k": 917821.0,
+    "sales_prev_q_k": 731649.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 740,600 | 549,182 | 2,083,313 | 1,531,965",
+    "sales": "Total revenues | 788,398 | 584,260 | 2,215,514 | 1,634,626",
+    "gp": "Gross profit | 602,150 | 455,695 | 1,715,297 | 1,282,085",
+    "rd": "Research and development | 114,074 | 76,049 | 308,292 | 214,734",
+    "ms": "Marketing and sales | 428,507 | 304,571 | 1,178,456 | 842,043",
+    "ga": "General and administrative | 113,757 | 85,232 | 318,452 | 254,016",
+    "op": "Loss from operations | (54,188) | (10,157) | (89,903) | (28,708)",
+    "eps": "Diluted net loss per share | (1.55) | (0.03) | (1.78) | (0.06)",
+    "shares": "Shares used in computing diluted net loss per share | 142,203 | 135,847 | 139,959 | 134,824",
+    "deferred": "Deferred revenue, current and noncurrent | 1,291,703 | 1,337,184 | 1,334,716 | 1,380,295 | 917,821 | 935,266",
+    "deferred_hdr": "Oct 31,2012 | Jul 31,2012 | Apr 30,2012 | Jan 31,2012 | Oct 31,2011 | Jul 31,2011",
+    "cash": "Cash, cash equivalents and marketable securities | 1,416,050 | 1,804,265 | 1,657,089 | 1,447,174 | 1,296,693 | 1,286,658",
+    "notes": [
+     "Convertible senior notes, net | 514,891 | 496,149"
+    ]
+   },
+   "sales_prev_q_row": {
+    "source": "CR37",
+    "row": "Total revenues | 731,649 | 546,002 | 1,427,116 | 1,050,366"
+   },
+   "extra_sources": [
+    "CR37"
+   ],
+   "sales_b": 0.7884,
+   "sales_pct": 34.9,
+   "seq_pct": 7.8,
+   "sub_pct": 34.9,
+   "deferred_b": 1.2917,
+   "deferred_pct": 40.7,
+   "gross_margin": 76.38,
+   "gross_margin_bp": -161.9,
+   "op_margin": -6.87,
+   "op_margin_bp": -513.5,
+   "opex_pct": 40.9,
+   "opex_gap_pp": 6.0,
+   "eps_q": -1.55,
+   "eps_q_prior": -0.03,
+   "diluted_shares_m": 142.203,
+   "cash_b": 1.4161,
+   "sales_note": "revenues $788.4M vs $584.3M a year earlier, $731.6M the quarter before; subscription and support $740.6M vs $549.2M",
+   "deferred_note": "deferred revenue $1,291.7M (2012-10-31) vs $917.8M a year earlier, current and noncurrent (the release's Additional Metrics)",
+   "eps_note": "GAAP diluted EPS $(1.55) vs $(0.03); the release's non-GAAP EPS also excludes stock-based compensation, the amortization of purchased intangibles and the non-cash interest on the convertible senior notes, which recur, so it is not used",
+   "debt_note": "convertible senior notes $514.9M, net (the balance sheet)",
+   "shares_note": "diluted shares 142.2M",
+   "next_print": "Q4 FY13 print (February)"
   }
  ],
  "guides": [
@@ -1791,6 +3188,453 @@
    "eps_quote": "expecting GAAP diluted EPS to be in the range of approximately $0.62 to approximately $0.63",
    "eps_guide_note": "GAAP diluted EPS",
    "display": "'GAAP diluted EPS is expected to be in the range of approximately $0.14 to approximately $0.15.' (Q4 FY10)"
+  },
+  {
+   "fy": 2011,
+   "published": "2009-11-18",
+   "source": "CR23",
+   "doc": "Q3 FY10 release",
+   "rev_guide_pct": [
+    15.0,
+    16.0
+   ],
+   "rev_quote": "The company is initiating guidance for its full fiscal year 2011 with projected revenue growth in the range of approximately 15% to 16% when compared to projected fiscal year 2010.",
+   "note": "growth on projected fiscal year 2010, as published"
+  },
+  {
+   "fy": 2011,
+   "published": "2010-02-25",
+   "source": "CR24",
+   "doc": "Q4 FY10 release",
+   "quarter": "Q1 FY11",
+   "level_stated": true,
+   "level_m": [
+    365.0,
+    367.0
+   ],
+   "prior_label": "Q1 FY10",
+   "prior_sales_m": 304.924,
+   "prior_source": "CR21",
+   "prior_row": "Total revenues | 304,924 | 247,622",
+   "yoy_pct": [
+    19.7,
+    20.4
+   ],
+   "quote": "Revenue for the company’s first fiscal quarter is projected to be in the range of approximately $365 million to approximately $367 million.",
+   "rev_guide_pct": [
+    16.0,
+    17.0
+   ],
+   "rev_quote": "with revenue growth now expected to be approximately 16% to 17%",
+   "eps_guide": [
+    0.58,
+    0.6
+   ],
+   "eps_quote": "GAAP diluted EPS is expected to be in the range of approximately $0.58 to approximately $0.60.",
+   "eps_guide_note": "GAAP diluted EPS",
+   "display": "'GAAP diluted EPS is expected to be in the range of approximately $0.12 to approximately $0.13.' (Q1 FY11)"
+  },
+  {
+   "fy": 2011,
+   "published": "2010-05-21",
+   "source": "CR26",
+   "doc": "Q1 FY11 release",
+   "quarter": "Q2 FY11",
+   "level_stated": true,
+   "level_m": [
+    381.0,
+    383.0
+   ],
+   "prior_label": "Q2 FY10",
+   "prior_sales_m": 316.061,
+   "prior_source": "CR22",
+   "prior_row": "Total revenues | 316,061 | 263,077 | 620,985 | 510,699",
+   "yoy_pct": [
+    20.5,
+    21.2
+   ],
+   "quote": "Revenue for the company’s second quarter is projected to be in the range of approximately $381 million to approximately $383 million.",
+   "rev_guide_usd_b": [
+    1.545,
+    1.555
+   ],
+   "rev_quote": "Revenue for the company’s full fiscal year 2011 is projected to be in the range of approximately $1.545 billion to approximately $1.555 billion.",
+   "eps_guide": [
+    0.38,
+    0.4
+   ],
+   "eps_quote": "fully diluted GAAP EPS is expected to be in the range of approximately $0.38 to approximately $0.40",
+   "eps_guide_note": "GAAP diluted EPS, including the Jigsaw acquisition (its effect recurs, the InStranet reading)",
+   "note": "'The acquisition is expected to reduce both GAAP and non-GAAP EPS performance for fiscal year 2011 by approximately $0.20 and $0.11, respectively.' (Q1 FY11 release)",
+   "display": "'GAAP fully diluted EPS is expected to be in the range of approximately $0.07 to approximately $0.08' (Q2 FY11)"
+  },
+  {
+   "fy": 2011,
+   "published": "2010-08-20",
+   "source": "CR27",
+   "doc": "Q2 FY11 release",
+   "quarter": "Q3 FY11",
+   "level_stated": true,
+   "level_m": [
+    408.0,
+    410.0
+   ],
+   "prior_label": "Q3 FY10",
+   "prior_sales_m": 330.549,
+   "prior_source": "CR23",
+   "prior_row": "Total revenues | 330,549 | 276,487 | 951,534 | 787,186",
+   "yoy_pct": [
+    23.4,
+    24.0
+   ],
+   "quote": "Revenue for the company’s third quarter is projected to be in the range of approximately $408 million to approximately $410 million.",
+   "rev_guide_usd_b": [
+    1.595,
+    1.6
+   ],
+   "rev_quote": "Revenue for the company’s full fiscal year 2011 is projected to be in the range of approximately $1.595 billion to approximately $1.6 billion.",
+   "eps_guide": [
+    0.43,
+    0.45
+   ],
+   "eps_quote": "diluted GAAP EPS is expected to be in the range of approximately $0.43 to approximately $0.45",
+   "eps_guide_note": "GAAP diluted EPS",
+   "display": "'GAAP diluted EPS is expected to be in the range of approximately $0.14 to approximately $0.15' (Q3 FY11)"
+  },
+  {
+   "fy": 2011,
+   "published": "2010-11-19",
+   "source": "CR28",
+   "doc": "Q3 FY11 release",
+   "quarter": "Q4 FY11",
+   "level_stated": true,
+   "level_m": [
+    447.0,
+    449.0
+   ],
+   "prior_label": "Q4 FY10",
+   "prior_sales_m": 354.049,
+   "prior_source": "CR24",
+   "prior_row": "Total revenues | 354,049 | 289,583 | 1,305,583 | 1,076,769",
+   "yoy_pct": [
+    26.3,
+    26.8
+   ],
+   "quote": "Revenue for the company’s fourth quarter is projected to be in the range of approximately $447 million to approximately $449 million.",
+   "rev_guide_usd_b": [
+    1.647,
+    1.649
+   ],
+   "rev_quote": "Revenue for the company’s full fiscal year 2011 is projected to be in the range of approximately $1.647 billion to approximately $1.649 billion.",
+   "eps_guide": [
+    0.46,
+    0.47
+   ],
+   "eps_quote": "diluted GAAP EPS is expected to be in the range of approximately $0.46 to approximately $0.47",
+   "eps_guide_note": "GAAP diluted EPS",
+   "display": "'GAAP diluted EPS is expected to be in the range of approximately $0.06 to approximately $0.07' (Q4 FY11)"
+  },
+  {
+   "fy": 2012,
+   "published": "2010-11-19",
+   "source": "CR28",
+   "doc": "Q3 FY11 release",
+   "rev_guide_usd_b": [
+    1.97,
+    2.0
+   ],
+   "rev_quote": "projected revenue in the range of approximately $1.97 billion to approximately $2.0 billion",
+   "note": "'The company expects to update this guidance, as well as provide its expectations for FY12 GAAP EPS, when it announces its fourth quarter, fiscal year 2011 results in February, 2011.' (Q3 FY11 release)"
+  },
+  {
+   "fy": 2012,
+   "published": "2011-02-25",
+   "source": "CR29",
+   "doc": "Q4 FY11 release",
+   "quarter": "Q1 FY12",
+   "level_stated": true,
+   "level_m": [
+    480.0,
+    482.0
+   ],
+   "prior_label": "Q1 FY11",
+   "prior_sales_m": 376.813,
+   "prior_source": "CR26",
+   "prior_row": "Total revenues | 376,813 | 304,924",
+   "yoy_pct": [
+    27.4,
+    27.9
+   ],
+   "quote": "Revenue for the company’s first fiscal quarter is projected to be in the range of approximately $480 million to approximately $482 million.",
+   "rev_guide_usd_b": [
+    2.03,
+    2.05
+   ],
+   "rev_quote": "Revenue for the company’s full fiscal year 2012 is projected to be in the range of approximately $2.03 billion to approximately $2.05 billion.",
+   "eps_guide": [
+    0.08,
+    0.11
+   ],
+   "eps_quote": "diluted GAAP EPS is expected to be in the range of approximately $0.08 to approximately $0.11",
+   "eps_guide_note": "GAAP diluted EPS",
+   "display": "'GAAP EPS is expected to be in the range of approximately negative ($0.01) to approximately negative ($0.02)' (Q1 FY12)"
+  },
+  {
+   "fy": 2012,
+   "published": "2011-05-20",
+   "source": "CR31",
+   "doc": "Q1 FY12 release",
+   "quarter": "Q2 FY12",
+   "level_stated": true,
+   "level_m": [
+    526.0,
+    528.0
+   ],
+   "prior_label": "Q2 FY11",
+   "prior_sales_m": 394.372,
+   "prior_source": "CR27",
+   "prior_row": "Total revenues | 394,372 | 316,061 | 771,185 | 620,985",
+   "yoy_pct": [
+    33.4,
+    33.9
+   ],
+   "quote": "Revenue for the company’s second fiscal quarter is projected to be in the range of approximately $526 million to approximately $528 million.",
+   "rev_guide_usd_b": [
+    2.15,
+    2.17
+   ],
+   "rev_quote": "Revenue for the company’s full fiscal year 2012 is projected to be in the range of approximately $2.15 billion to approximately $2.17 billion.",
+   "eps_guide": [
+    -0.03,
+    -0.01
+   ],
+   "eps_quote": "For the full fiscal year 2012, the company expects to report a GAAP net loss per share of approximately ($0.03) to ($0.01)",
+   "eps_guide_note": "GAAP EPS, a net loss, including a one-time tax benefit from the Radian6 acquisition, as published",
+   "note": "'All EPS estimates include a one-time tax benefit of $0.04, associated with the acquisition of Radian6.' (Q1 FY12 release)",
+   "display": "'the company expects to report a GAAP net loss per share of approximately ($0.01) to breakeven' (Q2 FY12)"
+  },
+  {
+   "fy": 2012,
+   "published": "2011-08-19",
+   "source": "CR32",
+   "doc": "Q2 FY12 release",
+   "quarter": "Q3 FY12",
+   "level_stated": true,
+   "level_m": [
+    568.0,
+    570.0
+   ],
+   "prior_label": "Q3 FY11",
+   "prior_sales_m": 429.087,
+   "prior_source": "CR28",
+   "prior_row": "Total revenues | 429,087 | 330,549 | 1,200,272 | 951,534",
+   "yoy_pct": [
+    32.4,
+    32.8
+   ],
+   "quote": "Revenue for the company’s third fiscal quarter is projected to be in the range of approximately $568 million to approximately $570 million.",
+   "rev_guide_usd_b": [
+    2.22,
+    2.23
+   ],
+   "rev_quote": "Revenue for the company’s full fiscal year 2012 is projected to be in the range of approximately $2.22 billion to approximately $2.23 billion.",
+   "eps_guide": [
+    -0.11,
+    -0.09
+   ],
+   "eps_quote": "For the full fiscal year 2012, the company expects to report a GAAP net loss per share of approximately ($0.11) to ($0.09)",
+   "eps_guide_note": "GAAP EPS, a net loss",
+   "display": "'the company expects to report a GAAP net loss per share of approximately ($0.06) to ($0.05)' (Q3 FY12)"
+  },
+  {
+   "fy": 2012,
+   "published": "2011-11-18",
+   "source": "CR33",
+   "doc": "Q3 FY12 release",
+   "quarter": "Q4 FY12",
+   "level_stated": true,
+   "level_m": [
+    620.0,
+    624.0
+   ],
+   "prior_label": "Q4 FY11",
+   "prior_sales_m": 456.867,
+   "prior_source": "CR29",
+   "prior_row": "Total revenues | 456,867 | 354,049 | 1,657,139 | 1,305,583",
+   "yoy_pct": [
+    35.7,
+    36.6
+   ],
+   "quote": "Revenue for the company’s fourth fiscal quarter is projected to be in the range of approximately $620 million to approximately $624 million.",
+   "rev_guide_usd_b": [
+    2.255,
+    2.259
+   ],
+   "rev_quote": "The company is raising its full fiscal year 2012 revenue guidance to be in the range of approximately $2.255 billion to approximately $2.259 billion.",
+   "eps_guide": [
+    -0.12,
+    -0.11
+   ],
+   "eps_quote": "For the full fiscal year 2012, the company expects to report a GAAP net loss per share of approximately ($0.12) to ($0.11)",
+   "eps_guide_note": "GAAP EPS, a net loss",
+   "display": "'For the fourth fiscal quarter, the company expects to report a GAAP net loss per share of approximately ($0.06) to ($0.05)' (Q4 FY12)"
+  },
+  {
+   "fy": 2013,
+   "published": "2011-11-18",
+   "source": "CR33",
+   "doc": "Q3 FY12 release",
+   "rev_guide_usd_b": [
+    2.88,
+    2.92
+   ],
+   "rev_quote": "projected revenue in the range of approximately $2.880 billion to approximately $2.920 billion",
+   "note": "'The company will provide its expectations for FY13 GAAP and non-GAAP EPS, when it announces its fourth quarter, fiscal year 2012 results in February, 2012.' (Q3 FY12 release)"
+  },
+  {
+   "fy": 2013,
+   "published": "2012-02-24",
+   "source": "CR34",
+   "doc": "Q4 FY12 release",
+   "quarter": "Q1 FY13",
+   "level_stated": true,
+   "level_m": [
+    673.0,
+    678.0
+   ],
+   "prior_label": "Q1 FY12",
+   "prior_sales_m": 504.364,
+   "prior_source": "CR31",
+   "prior_row": "Total revenues | 504,364 | 376,813",
+   "yoy_pct": [
+    33.4,
+    34.4
+   ],
+   "quote": "Revenue for the company’s first fiscal quarter is projected to be in the range of $673 million to $678 million, an increase of 33% to 34%, year-over-year.",
+   "rev_guide_usd_b": [
+    2.92,
+    2.95
+   ],
+   "rev_quote": "Revenue for the company’s full fiscal year 2013 is projected to be in the range of $2.92 billion to $2.95 billion, an increase of 29% to 30%, year-over-year.",
+   "eps_guide": [
+    -0.55,
+    -0.51
+   ],
+   "eps_quote": "For the company’s full fiscal year 2013, GAAP net loss per share is expected to be in the range of ($0.55) to ($0.51)",
+   "eps_guide_note": "GAAP EPS, a net loss",
+   "display": "'GAAP net loss per share is expected to be in the range of ($0.19) to ($0.18)' (Q1 FY13)"
+  },
+  {
+   "fy": 2013,
+   "published": "2012-05-18",
+   "source": "CR36",
+   "doc": "Q1 FY13 release",
+   "quarter": "Q2 FY13",
+   "level_stated": true,
+   "level_m": [
+    724.0,
+    728.0
+   ],
+   "prior_label": "Q2 FY12",
+   "prior_sales_m": 546.002,
+   "prior_source": "CR32",
+   "prior_row": "Total revenues | 546,002 | 394,372 | 1,050,366 | 771,185",
+   "yoy_pct": [
+    32.6,
+    33.3
+   ],
+   "quote": "Revenue for the company’s second fiscal quarter is projected to be in the range of $724 million to $728 million, an increase of 33% year-over-year.",
+   "rev_guide_usd_b": [
+    2.97,
+    3.0
+   ],
+   "rev_quote": "Revenue for the company’s full fiscal year 2013 is projected to be in the range of $2.97 billion to $3.00 billion, an increase of 31% to 32% year-over-year.",
+   "eps_guide": [
+    -0.48,
+    -0.45
+   ],
+   "eps_quote": "For the company’s full fiscal year 2013, GAAP net loss per share is expected to be in the range of ($0.48) to ($0.45)",
+   "eps_guide_note": "GAAP EPS, a net loss",
+   "display": "'GAAP net loss per share is expected to be in the range of ($0.10) to ($0.09)' (Q2 FY13)"
+  },
+  {
+   "fy": 2013,
+   "published": "2012-08-24",
+   "source": "CR37",
+   "doc": "Q2 FY13 release",
+   "quarter": "Q3 FY13",
+   "level_stated": true,
+   "level_m": [
+    773.0,
+    777.0
+   ],
+   "prior_label": "Q3 FY12",
+   "prior_sales_m": 584.26,
+   "prior_source": "CR33",
+   "prior_row": "Total revenues | 584,260 | 429,087 | 1,634,626 | 1,200,272",
+   "yoy_pct": [
+    32.3,
+    33.0
+   ],
+   "quote": "Revenue for the company’s third fiscal quarter is projected to be in the range of $773 million to $777 million, an increase of 32% to 33% year-over-year.",
+   "rev_guide_usd_b": [
+    3.025,
+    3.035
+   ],
+   "rev_quote": "Revenue for the company’s full fiscal year 2013 is projected to be in the range of $3.025 billion to $3.035 billion, an increase of 33% to 34% year-over-year.",
+   "eps_guide": [
+    -0.75,
+    -0.72
+   ],
+   "eps_quote": "For the company’s full fiscal year 2013, GAAP net loss per share is expected to be in the range of ($0.75) to ($0.72)",
+   "eps_guide_note": "GAAP EPS, a net loss",
+   "display": "'GAAP net loss per share is expected to be in the range of ($0.27) to ($0.26)' (Q3 FY13)"
+  },
+  {
+   "fy": 2013,
+   "published": "2012-11-21",
+   "source": "CR38",
+   "doc": "Q3 FY13 release",
+   "quarter": "Q4 FY13",
+   "level_stated": true,
+   "level_m": [
+    825.0,
+    830.0
+   ],
+   "prior_label": "Q4 FY12",
+   "prior_sales_m": 631.913,
+   "prior_source": "CR34",
+   "prior_row": "Total revenues | 631,913 | 456,867 | 2,266,539 | 1,657,139",
+   "yoy_pct": [
+    30.6,
+    31.3
+   ],
+   "quote": "Revenue for the company’s fourth fiscal quarter is projected to be in the range of $825 million to $830 million, an increase of 31% year-over-year.",
+   "rev_guide_usd_b": [
+    3.041,
+    3.046
+   ],
+   "rev_quote": "Revenue for the company’s full fiscal year 2013 is projected to be in the range of $3.041 billion to $3.046 billion, an increase of 34% year-over-year.",
+   "eps_guide": [
+    -2.02,
+    -2.0
+   ],
+   "eps_quote": "For the company’s full fiscal year 2013, GAAP net loss per share is expected to be in the range of ($2.02) to ($2.00)",
+   "eps_guide_note": "GAAP EPS, a net loss, including the third quarter's non-cash tax expense, as published",
+   "note": "'The lowering of the GAAP net loss per share range is primarily as a result of the non-cash tax expense in Q3 as discussed above.' (Q3 FY13 release)",
+   "display": "'GAAP net loss per share is expected to be in the range of ($0.25) to ($0.23)' (Q4 FY13)"
+  },
+  {
+   "fy": 2014,
+   "published": "2012-11-21",
+   "source": "CR38",
+   "doc": "Q3 FY13 release",
+   "rev_guide_usd_b": [
+    3.8,
+    3.85
+   ],
+   "rev_quote": "Revenue for the company’s full fiscal year 2014 is projected to be in the range of approximately $3.80 billion to approximately $3.85 billion.",
+   "note": "'The company will provide its expectations for FY14 GAAP and non-GAAP EPS when it announces its fourth quarter fiscal year 2013 results in February 2013.' (Q3 FY13 release)"
   }
  ],
  "dividends": [],

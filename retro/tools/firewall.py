@@ -149,9 +149,10 @@ every guided year and a one-sided EPS bound with a stated margin), a later annua
 later vintage excluding a year with planted texts, figures, groups, window start and kind, and from UNH 2014-2017 planted cloud words
 (from UNH 2018-2021 also a planted note on their absence, from UNH 2022-2026 planted generative AI words) (the dividend and company
 name every fact sheet gets, too); CRM: a print whose revenues, subscription and support and deferred revenue, margins, opex gap, quarter
-EPS, notes and raw figures are absurd, with absurd full-year actuals for the year after the latest vintage before CUTOFF, a later Q4
-print whose full-year actuals exclude its own year, a later guide for every quarter and fiscal year guided before CUTOFF (a next-quarter
-dollar range, an EPS range with and without an acquisition, a revenue range, notes), a still later loss range for every guided year,
+EPS, notes and raw figures are absurd (from CRM 2010-2012 also its convertible notes), with absurd full-year actuals for the year after
+the latest vintage before CUTOFF, a later Q4 print whose full-year actuals exclude its own year, a later guide for every quarter and
+fiscal year guided before CUTOFF (a next-quarter dollar range, an EPS range with and without an acquisition, a revenue range, from CRM
+2010-2012 a revenue growth range, notes), a still later loss range for every guided year,
 and a later vintage excluding a year with planted texts, figures, groups, window start and kind (the dividend, split and company name
 every fact sheet gets, too); GOOG: a print whose revenues, margins, opex and receivables gaps, quarter EPS, cash,
 notes and raw figures are absurd, with absurd full-year actuals for the year after the latest vintage before CUTOFF, a later Q4 print
@@ -421,6 +422,7 @@ PLANT = {"ACN": dict(quarter="Q9 FY99", revenue_lc=-60, margin_bp=-999, fy_eps_g
                      gross_margin_bp=-999.0, op_margin=-50.0, op_margin_bp=-999.0, opex_pct=99.0, opex_gap_pp=99.0, eps_q=0.01,
                      eps_q_prior=9.99, diluted_shares_m=1.0, cash_b=99.0, sales_note="PLANTED", deferred_note="PLANTED",
                      eps_note="PLANTED", shares_note="PLANTED", next_print="PLANTED", note="PLANTED",
+                     debt_note="PLANTED",                                             # the convertible notes (CRM 2010-2012)
                      raw=dict(sub_k=1, sub_prior_k=99, sales_k=1, sales_prior_k=99, sales_prev_q_k=99, gross_profit_k=1,
                               gross_profit_prior_k=1, rd_k=99, rd_prior_k=1, ms_k=99, ms_prior_k=1, ga_k=99, ga_prior_k=1,
                               op_income_k=-99, op_income_prior_k=99, deferred_k=1, deferred_prior_k=99))}[TICKER]
@@ -1042,6 +1044,8 @@ try:
                 x.update(eps_guide=[0.01, 0.02], eps_quote="PLANTED", eps_guide_note="PLANTED", eps_ex_item={"eps": [0.01, 0.02], "quote": "PLANTED"})
             if g.get("rev_guide_usd_b") is not None:
                 x.update(rev_guide_usd_b=[0.1, 0.2], rev_quote="PLANTED")
+            if g.get("rev_guide_pct") is not None:       # a fiscal-year revenue guide stated as growth (CRM 2010-2012)
+                x.update(rev_guide_pct=[-99, -98], rev_quote="PLANTED")
             f["guides"].append(x)
         for y in sorted({g["fy"] for g in f["guides"]} | {2099}):
             f["guides"].append({"fy": y, "published": (dt.date.fromisoformat(later) + dt.timedelta(days=1)).isoformat(),

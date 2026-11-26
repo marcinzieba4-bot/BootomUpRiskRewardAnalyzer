@@ -35,6 +35,14 @@ software company in 2008-2009 (OFFSHORE is scoped to IT services; CLOUD is not l
 name cloud computing as salesforce.com's own model), so the builder refuses events until a theme encoding is decided; it also refuses
 a dividend, a change of company name and a distribution, none of which occurs.
 
+From 2010 on (decided on 2026-11-26 in the session that built and scored 2008-2009, before any 2010-2012 date was built or scored;
+retro/README.md, "CRM 2010-2012"): the method and the encodings above carry the FY2010-FY2012 vintages and the Q4 FY10 to Q3 FY13
+prints; FY2012 ($(0.09), a loss) is excluded as the latest year like FY2007, and the FY2012-FY2013 guides that are losses have no P/E, so
+FY11's $0.47 stands (the loss-guide rule); the builder gains a fiscal-year revenue guide stated as growth ('rev_guide_pct', the segment
+bridge only), the convertible senior notes of January 2010 in the balance text ('debt_note' on a print; 'no debt' without one), and, from
+CLOUD's live date (2012-10-30), every live theme's scope in the "why" (the CB and UNH wording), CLOUD out of scope as salesforce.com's own
+model.
+
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
 is the first trading day after it. salesforce.com released after the close, so a print is dated the next trading day; on a Friday
 that is the week's last trading day, and the print meets its close (public before the open; the AVGO rule).
@@ -44,6 +52,7 @@ Output goes to staging/retrospective/CRM until the series is added to the archiv
 Usage
   python3 retro/build_crm.py --weekly 2008-01-01 2008-12-31
   python3 retro/build_crm.py --weekly 2009-01-05 2009-12-31
+  python3 retro/build_crm.py --weekly 2010-01-04 2012-12-31
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/CRM/<AS_OF>
 """
 import argparse
@@ -70,7 +79,7 @@ SYMBOL = "CRM"
 # the guide fields this builder has an encoding for; any other field needs its encoding decided first
 GUIDE_KEYS = {"fy", "published", "source", "doc", "quarter", "level_stated", "level_m", "prior_label", "prior_sales_m", "prior_source",
               "prior_row", "yoy_pct", "quote", "rev_guide_usd_b", "rev_quote", "eps_guide", "eps_quote", "eps_guide_note", "eps_ex_item",
-              "note", "display"}
+              "note", "display", "rev_guide_pct"}       # (CRM 2010-2012) a fiscal-year revenue guide stated as growth
 # rule T, the engine's signal thresholds: (BEAR, BASE, BULL, XBULL); the builder checks the fact sheet against them
 ENGINE_THRESHOLDS = {"sub": (40, 61, 82, 328), "deferred": (43, 68, 93, 169), "gross_margin": (-740, -330, 70, 3600),
                      "opex_gap": (49, 12, -24, -305), "op_margin": (-2800, -720, 1360, 48650)}
@@ -272,7 +281,9 @@ def build(as_of, facts, raw, spx, engine, out):
     # ── guides for the current fiscal year: each field from the latest guide public on AS_OF that states it ──
     fy_guides = [g for g in facts["guides"] if g["published"] <= as_of and g["fy"] == cur_fy]
     stated = lambda k: next((g for g in reversed(fy_guides) if g.get(k) is not None), None)
-    ge, gr = stated("eps_guide"), stated("rev_guide_usd_b")
+    ge = stated("eps_guide")
+    # the latest fiscal-year revenue guide, in dollars or (CRM 2010-2012) as growth on the last full year
+    gr = next((g for g in reversed(fy_guides) if g.get("rev_guide_usd_b") is not None or g.get("rev_guide_pct") is not None), None)
     loss_guide = bool(ge) and sum(ge["eps_guide"]) / 2 <= 0
     if ge and not loss_guide:
         eps_now = round(sum(ge["eps_guide"]) / 2, 6)
@@ -282,7 +293,8 @@ def build(as_of, facts, raw, spx, engine, out):
         why = (f"the EPS guide (${_eps_rng(ge['eps_guide'])}, {ge['doc']}) is not positive, which has no P/E" if loss_guide
                else "no numeric EPS guide yet")
         eps_label = f"{fy_e}: {why}, FY{last_fy % 100:02d}'s ${money(eps_now)} stands" + "".join(
-            f" (FY{y % 100:02d} is excluded: {excluded[y]})" for y in range(last_fy + 1, cur_fy))
+            f" ({excluded[y]})" if excluded[y].startswith(f"FY{y} is excluded") else f" (FY{y % 100:02d} is excluded: {excluded[y]})"
+            for y in range(last_fy + 1, cur_fy))
     eps_label_short = (f"{fy_e} EPS, guide midpoint (${_eps_rng(ge['eps_guide'])}, {ge['doc']})" if ge and not loss_guide
                        else eps_label)
     # ── forward revenue growth: the latest numeric guide for the quarter after the latest print, as growth on the year-ago quarter;
@@ -305,9 +317,14 @@ def build(as_of, facts, raw, spx, engine, out):
         guide_ids = []
     rev = {int(k): v for k, v in h["revenue_usd_b"].items()}
     last_rev = rev[max(rev)]
-    if gr:          # the fiscal-year revenue guide sets the segment bridge's total only (display)
+    fy_prev = f"FY{max(rev) % 100:02d}"
+    pct_rng = lambda v: f"{v[0]:g}%" if v[0] == v[1] else f"{v[0]:g}-{v[1]:g}%"
+    if gr and gr.get("rev_guide_usd_b") is not None:      # the fiscal-year revenue guide sets the segment bridge's total only (display)
         fy_rev_b = sum(gr["rev_guide_usd_b"]) / 2
         fy_rev_label = f"{fy_now} revenue guide midpoint ({_usd_rng(gr['rev_guide_usd_b'])}, {gr['doc']})"
+    elif gr:        # (CRM 2010-2012) stated as growth: read on the last full year's revenues (the CAT and CMCSA reading), display only
+        fy_rev_b = last_rev * (1 + sum(gr["rev_guide_pct"]) / 2 / 100)
+        fy_rev_label = f"{fy_now} revenue guide midpoint ({pct_rng(gr['rev_guide_pct'])} growth on {fy_prev}'s ${last_rev:.3f}B, {gr['doc']})"
     else:
         fy_rev_b = last_rev * (1 + sum(fwd) / 2 / 100)
         fy_rev_label = f"the {fwd_label}, YoY, applied to the year (no {fy_now} revenue guide)"
@@ -315,7 +332,8 @@ def build(as_of, facts, raw, spx, engine, out):
              + (" (not positive: no P/E, so not used)" if loss_guide else "")
              + (f"; without the acquisition ${_eps_rng(ge['eps_ex_item']['eps'])}, not used ('{ge['eps_ex_item']['quote']}')"
                 if ge.get("eps_ex_item") else "")] if ge else [f"no {fy_now} EPS range in numbers yet"])
-    bits += ([f"revenue {_usd_rng(gr['rev_guide_usd_b'])} ({gr['doc']}; the segment bridge only)"] if gr else
+    bits += ([f"revenue {_usd_rng(gr['rev_guide_usd_b'])} ({gr['doc']}; the segment bridge only)"] if gr and gr.get("rev_guide_usd_b") is not None
+             else [f"revenue growth {pct_rng(gr['rev_guide_pct'])} ({gr['doc']}; the segment bridge only)"] if gr else
              [f"no {fy_now} revenue range in numbers"])
     bits += [g["note"] for g in fy_guides[-1:] if g.get("note")]
     guide_text = (f"{next_q} outlook: {q_text}; {fy_now} guide" + (f" ({', '.join(dict.fromkeys(g['doc'] for g in fy_guides))})" if fy_guides else "")
@@ -369,14 +387,21 @@ def build(as_of, facts, raw, spx, engine, out):
     key_tail = ("A subscription slowdown shows up in deferred revenue first, then in\n"
                 "  subscription and support revenue a few quarters later.")
     theme_summary = "no disruption theme has dated evidence"
-    # CLOUD is not live before 2012-10-30 (a date no 2008-2009 model may print); the FY2008-FY2009 10-Ks' cloud computing words
-    # name salesforce.com's own model, not a substitute for it
-    live = sorted(k for k, t in TAXO["themes"].items() if t["live_from"] <= as_of)
-    assert live == ["OFFSHORE"], (as_of, live, "a theme other than OFFSHORE is live: decide its encoding first")
-    why = (h["why"] + "; no disruption theme in taxonomy_eras.json is live for a subscription software company on this date "
-           "(OFFSHORE, the one theme live, is scoped to IT services, and the 10-K's cloud computing words, where it has them, describe "
-           "salesforce.com's own model, not a substitute for it), so the watch list is empty and these words stay here (the PEP "
-           "obesity rule)")
+    # CLOUD is not live before 2012-10-30 (a date no earlier model may print); the 10-Ks' cloud computing words name salesforce.com's
+    # own model, the side that displaces on-premise software, not a substitute for it (the GOOG, AVGO and NVDA reading)
+    live = sorted(((t["live_from"], k, t["scope"]) for k, t in TAXO["themes"].items() if t["live_from"] <= as_of))
+    assert {k for _, k, _ in live} <= {"OFFSHORE", "CLOUD"}, (as_of, live, "a theme other than OFFSHORE and CLOUD is live: decide its encoding first")
+    if [k for _, k, _ in live] == ["OFFSHORE"]:
+        why = (h["why"] + "; no disruption theme in taxonomy_eras.json is live for a subscription software company on this date "
+               "(OFFSHORE, the one theme live, is scoped to IT services, and the 10-K's cloud computing words, where it has them, describe "
+               "salesforce.com's own model, not a substitute for it), so the watch list is empty and these words stay here (the PEP "
+               "obesity rule)")
+    else:            # (CRM 2010-2012) from CLOUD's live date: every live theme with its registered scope (the CB and UNH wording)
+        scopes = ", ".join(f"{k} {'is scoped to' if i == 0 else 'to'} '{sc}'" for i, (_, k, sc) in enumerate(live))
+        why = (h["why"] + "; no disruption theme in taxonomy_eras.json is live for a subscription software company on this date (of the "
+               f"live themes, {scopes}: the 10-K names cloud computing as salesforce.com's own model, the side that displaces on-premise "
+               "software, not a substitute for it, and names no offshore delivery), so the watch list is empty and these words stay here "
+               "(the PEP obesity rule)")
     cat4 = (f"(4) Operating expenses — R&D, marketing and sales and G&A {latest['opex_pct']:+.1f}% against revenue "
             f"{latest['sales_pct']:+.1f}% in {latest['quarter']} ({latest['opex_gap_pp']:+.1f}pp): the cost of growth")
 
@@ -485,7 +510,7 @@ GROUPS          = {R([tuple(g) for g in h["groups"]])}
 GROUPS_BASIS    = {R(h["groups_basis"])}
 NEXT_PRINT      = {R(latest["next_print"])}
 SHARE_GAIN_TEXT = {R(f"Franchise: {h['fy_label']} revenues {h['prev_fy_sales_growth']:+.1f}%, subscription and support {h['prev_fy_sub_growth']:+.1f}%, gross margin {h['prev_fy_gross_margin']:.1f}%; {latest['quarter'].split()[0]} deferred revenue {latest['deferred_pct']:+.1f}% YoY")}
-BALANCE_TEXT    = {R(f"Cash, cash equivalents and marketable securities ${latest['cash_b']:.3f}B ({latest['quarter']}), no debt, {h['fcf_label']} free cash flow ${h['fcf_b']:.3f}B ({h['fcf_note']}), " + (f"dividend ${dividend:.2f} a year" if dividend else "no dividend"))}
+BALANCE_TEXT    = {R(f"Cash, cash equivalents and marketable securities ${latest['cash_b']:.3f}B ({latest['quarter']}), {latest.get('debt_note', 'no debt')}, {h['fcf_label']} free cash flow ${h['fcf_b']:.3f}B ({h['fcf_note']}), " + (f"dividend ${dividend:.2f} a year" if dividend else "no dividend"))}
 REVENUE_TEXT    = {R(rev_text)}
 CAPITAL_RETURN  = {R(cash_return)}
 THEME_FACTORS   = {R(factors)}
