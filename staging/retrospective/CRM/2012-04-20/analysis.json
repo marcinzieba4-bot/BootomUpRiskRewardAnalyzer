@@ -1,0 +1,238 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "CRM",
+ "company": "salesforce.com, inc.",
+ "as_of": "2012-04-20",
+ "price_date": "2012-04-20",
+ "price": 156.9,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); subscription software signals with salesforce.com's rule-T thresholds; the listing rule (CRM listed 2004-06-23)",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'We are a leading provider of enterprise cloud computing and social enterprise solutions, and are dedicated to helping customers transform themselves into social enterprises.' 'The market for our offerings is highly competitive, rapidly evolving and fragmented, and subject to changing technology, frequent introductions of new products and services, and as we have seen recently, consolidation.' 'The market in which we participate is intensely competitive, and if we do not compete effectively, our operating results could be harmed.' (FY2012 10-K); DURABLE: no 10-K calls the business cyclical ('cycle' appears only as the sales cycle and payment cycles); no disruption theme in taxonomy_eras.json is live for a subscription software company on this date (OFFSHORE, the one theme live, is scoped to IT services, and the 10-K's cloud computing words, where it has them, describe salesforce.com's own model, not a substitute for it), so the watch list is empty and these words stay here (the PEP obesity rule)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "'We are a leading provider of enterprise cloud computing and social enterprise solutions, and are dedicated to helping customers transform themselves into social enterprises.' 'The market for our offerings is highly competitive, rapidly evolving and fragmented, and subject to changing technology, frequent introductions of new products and services, and as we have seen recently, consolidation.' 'The market in which we participate is intensely competitive, and if we do not compete effectively, our operating results could be harmed.' (FY2012 10-K); DURABLE: no 10-K calls the business cyclical ('cycle' appears only as the sales cycle and payment cycles); no disruption theme in taxonomy_eras.json is live for a subscription software company on this date (OFFSHORE, the one theme live, is scoped to IT services, and the 10-K's cloud computing words, where it has them, describe salesforce.com's own model, not a substitute for it), so the watch list is empty and these words stay here (the PEP obesity rule). durable franchise (obsolescence risk 2/5); price rich; Ratio B 1.77x; +144% to EPP floor; model-vs-market gap -1.10; conservative 2yr -9%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": 1.77,
+  "ratio_b_fmt": "1.77x",
+  "epp": 64.39,
+  "epp_gap_pct": 143.7,
+  "epp_adj": -0.2,
+  "proxy_composite": 1.6,
+  "sca": -0.1,
+  "adj_composite": 1.3,
+  "market_composite": 2.4,
+  "adj_gap": -1.1,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": -9.1,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.26,
+    "pe": 73.9,
+    "price": 19.21,
+    "desc": "EPS -25.4%/yr (worst year FY05-FY11 ex-FY07, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 0.81,
+    "pe": 182.6,
+    "price": 147.91,
+    "desc": "EPS +31.1%/yr (Q1 FY13 guide YoY + margin + buyback); P/E at its 7.8-yr ex-FY07 ex-FY12 median"
+   },
+   "BULL": {
+    "eps": 0.89,
+    "pe": 263.6,
+    "price": 234.6,
+    "desc": "EPS +37.4%/yr (FY05-FY11 ex-FY07 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 1.97,
+    "pe": 311.6,
+    "price": 613.85,
+    "desc": "EPS +104.9%/yr (best 2-yr run FY05-FY11 ex-FY07, at least BULL); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 1.77,
+   "epp_gap_pct": 143.7,
+   "adj_gap": -1.1,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -9.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 1.08,
+   "epp_gap_pct": 143.7,
+   "adj_gap": -0.65,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": -9.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 25.1,
+   "epp_gap_pct": 143.7,
+   "adj_gap": -1.6,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -9.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 1.62,
+   "epp_gap_pct": 143.7,
+   "adj_gap": -1.06,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": -9.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 1.96,
+   "epp_gap_pct": 143.7,
+   "adj_gap": -1.15,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -9.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 1.77,
+   "epp_gap_pct": 143.7,
+   "adj_gap": -0.8,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -9.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 1.77,
+   "epp_gap_pct": 138.4,
+   "adj_gap": -1.1,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -9.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 1.77,
+   "epp_gap_pct": 143.7,
+   "adj_gap": -0.98,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -9.1,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "RICH"
+ ],
+ "summary": "CRM (retrospective, 2012-04-20) ✕ AVOID — Ratio B 1.77x (87.8% downside to Bear $19.21 / +49.5% upside to Bull $234.60) | Adj composite 1.30 vs market 2.40: gap -1.10 [OVERVALUED] | +144% above the EPP floor $64.39 (137x FY13E $0.47) | Conservative 2-yr case: -9.1% total (-4.6%/yr) | At 333.8x FY13E the 15% hurdle price $207.50 sits between the BASE and BULL cases; revenue +38.3% YoY in Q4 FY12, forward revenues +33.4-34.4% (Q1 FY13 revenue guide (Q4 FY12 release)); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "CR35",
+   "published": "2012-03-12",
+   "filed": "accepted 2012-03-09 17:17 ET (after the close)",
+   "title": "salesforce.com FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312512107281/d279348d10k.htm",
+   "supports": "five-year selected data fiscal 2008-2012, statements, balance sheets, geography; the FY2012 history vintage"
+  },
+  {
+   "id": "CR30",
+   "published": "2011-03-24",
+   "filed": "accepted 2011-03-23 17:01 ET (after the close)",
+   "title": "salesforce.com FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312511075314/d10k.htm",
+   "supports": "five-year selected data fiscal 2007-2011, statements, balance sheets, geography; the FY2011 history vintage"
+  },
+  {
+   "id": "CR25",
+   "published": "2010-03-11",
+   "filed": "accepted 2010-03-11 15:32 ET (during the session)",
+   "title": "salesforce.com FY2010 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312510053838/d10k.htm",
+   "supports": "five-year selected data fiscal 2006-2010, statements, balance sheets, geography; the FY2010 history vintage"
+  },
+  {
+   "id": "CR20",
+   "published": "2009-03-10",
+   "filed": "accepted 2009-03-09 17:24 ET (after the close)",
+   "title": "salesforce.com FY2009 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312509048665/d10k.htm",
+   "supports": "five-year selected data fiscal 2005-2009, statements, balance sheets, geography; the FY2009 history vintage"
+  },
+  {
+   "id": "CR3",
+   "published": "2006-02-23",
+   "filed": "accepted 2006-02-22 16:24 ET (after the close)",
+   "title": "salesforce.com Q4 FY06 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312506036718/dex991.htm",
+   "supports": "FY2006 diluted EPS excluding the reversal of the deferred tax valuation allowance and the lease recovery ($0.181; GAAP $0.240)"
+  },
+  {
+   "id": "CR2",
+   "published": "2005-03-28",
+   "filed": "accepted 2005-03-25 17:26 ET (after the close)",
+   "title": "salesforce.com FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312505061027/d10k.htm",
+   "supports": "the listing ('since June 23, 2004'); five-year selected data, fiscal 2001-2005 (rule T, the fiscal 2002 change)"
+  },
+  {
+   "id": "CR34",
+   "published": "2012-02-24",
+   "filed": "accepted 2012-02-23 16:28 ET (after the close)",
+   "title": "salesforce.com Q4 FY12 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312512075383/d305106dex991.htm",
+   "supports": "Q4 FY12 statements of operations, balance sheet and additional metrics; the outlook"
+  },
+  {
+   "id": "CR33",
+   "published": "2011-11-18",
+   "filed": "accepted 2011-11-17 16:30 ET (after the close)",
+   "title": "salesforce.com Q3 FY12 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312511315726/d256741dex991.htm",
+   "supports": "Q3 FY12 statements of operations, balance sheet and additional metrics; the outlook"
+  },
+  {
+   "id": "CR31",
+   "published": "2011-05-20",
+   "filed": "accepted 2011-05-19 16:08 ET (after the close)",
+   "title": "salesforce.com Q1 FY12 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312511145353/dex991.htm",
+   "supports": "Q1 FY12 statements of operations, balance sheet and additional metrics; the outlook"
+  },
+  {
+   "id": "Y0",
+   "published": "2012-04-20",
+   "title": "Yahoo Finance daily prices, CRM and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/CRM/history",
+   "supports": "close $156.90 as traded on AS_OF (Yahoo's split-adjusted close x4), 52-week range, realized vol, beta, the 7.8-yr ex-FY07 ex-FY12 P/E distribution from the listing on 2004-06-23"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-26"
+}
