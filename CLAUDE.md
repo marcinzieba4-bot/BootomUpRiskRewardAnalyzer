@@ -23,10 +23,10 @@ touching either directory.
   outcomes or findings enters another's models. UNP (2008-2026 so far), LOW (2008-2026 so far), AAPL (2008-2026 so far),
   NKE (2008-2026 so far), AVGO (from its 2009-08-06 listing to 2026-10-30 so far), PEP (2008 to 2026-10-30 so far), MSFT
   (2008 to 2026-10-30 so far), XOM (2008 to 2026-10-30 so far), SHW (2008 to 2026-11-06 so far), WMT (2008 to 2026-11-06 so far), RCL (2008 to 2026-11-06 so far), MAR (2008 to 2026-11-03 so far), BKR (2008 to 2017-06-30, then 2019-02-01 to 2026-11-06 so far), PFE (2008 to 2026-11-04 so far), CMCSA (2008 to 2026-11-06 so far), CAT (2008 to 2026-11-06 so far), BMY (2008 to 2026-11-06 so far), NVDA (2008 to 2026-11-06 so far), F (2008-01-04 to 2026-11-06 so far; 2022-01-07 onward was built first at the owner's request, and dates before 2022 are an early era with its
-  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far), SPGI (2008-01-04 to 2026-11-20 so far), CB (2008-01-04 to 2026-11-20 so far), LLY (2008-01-04 to 2026-11-20 so far) and UNH (2008-01-04 to 2026-11-20 so far) sit in `staging/retrospective/` until the owner adds
+  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far), SPGI (2008-01-04 to 2026-11-20 so far), CB (2008-01-04 to 2026-11-20 so far), LLY (2008-01-04 to 2026-11-20 so far), UNH (2008-01-04 to 2026-11-20 so far) and CRM (2008-01-04 to 2009-12-31 so far) sit in `staging/retrospective/` until the owner adds
   them to the archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM", "SHW", "WMT", "RCL", "MAR", "BKR", "PFE", "CMCSA", "CAT",
-  "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG", "JPM", "V", "SPGI", "CB", "LLY", "UNH"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py`, `mu_signal_model.py`, `v_signal_model.py`, `spgi_signal_model.py` and `lly_signal_model.py` (other branches) files
-  and today's profiles in `data/business_profiles.json` (NVDA's, SO's, V's, SPGI's, CB's, LLY's and UNH's included) are 2026 analyses: never inputs to a retrospective. AVGO did not trade
+  "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG", "JPM", "V", "SPGI", "CB", "LLY", "UNH", "CRM"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py`, `mu_signal_model.py`, `v_signal_model.py`, `spgi_signal_model.py` and `lly_signal_model.py` (other branches) files
+  and today's profiles in `data/business_profiles.json` (NVDA's, SO's, V's, SPGI's, CB's, LLY's, UNH's and CRM's included) are 2026 analyses: never inputs to a retrospective. AVGO did not trade
   before its IPO, so its series starts at the listing (the listing and bounds rules of method r2). BKR's 2008 to 2017-06-30 dates are Baker
   Hughes Incorporated, listed as BHI: BKR is only the series key (and Yahoo's symbol for the history); the models print BHI. Its dates from
   2019-02-01 are Baker Hughes, a GE company (BHGE, then BKR), a new listing with its own facts and engine: no date between is built, as
@@ -384,5 +384,15 @@ touching either directory.
   `ai_words`, text only); 51 dates carry a false calendar-year warning (the 0.2052 tax rate); RICH 158, CHEAP 52, FAIR 45; the adjusted-EPS
   reading moves 65 classes, the suspension 36, the margin steps 36; built in a new session without opening the 2008-2021 outcomes or
   findings (retro/README.md, "UNH 2022-2026").
+  CRM (salesforce.com, NYSE: CRM) runs from its 2004-06-23 listing (the window rule; prices as traded, the 2013 four-for-one split undone);
+  the fiscal year ends on January 31. EPS is GAAP diluted EPS (the releases print GAAP only from Q4 FY07), except FY2006 at the company's
+  $0.181 without the tax valuation allowance reversal and the lease recovery (Q4 FY06 release; GAAP $0.24); fiscal 2000-2003 are losses
+  and FY2004 is excluded by the mirror test (its $3,445K lease recovery against $794K of pre-tax income without it), taking the years
+  before it, so the history starts with FY2005; FY2007's $0.00 has no P/E (the F rule) and is excluded as the latest year, then a gap;
+  current-FY EPS is the fiscal-year GAAP range's midpoint (FY2009's with the InStranet acquisition, whose effect recurs); BASE is the
+  next-quarter revenue guide, a dollar range, against the year-ago quarter; no margin guide, no dividend; the signals are subscription and
+  support revenue, deferred revenue (current and noncurrent), the gross margin, the opex gap and the operating margin, under rule T over
+  fiscal 2002-2007 (start-up years in); DURABLE, no live theme (the 10-Ks' cloud computing words are its own model); FAIR on the 8 dates
+  before the Q4 FY08 print, CHEAP on the 97 after, BUY on all 105 (retro/README.md, "CRM").
 - **Never use the owner's personal email** in request headers to external
   services (SEC asks for a contact in the User-Agent).
