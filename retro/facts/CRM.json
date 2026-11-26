@@ -1,0 +1,2347 @@
+{
+ "_doc": "Point-in-time fact sheet for CRM retrospectives (retro/build_crm.py), generated from salesforce.com's own filings: every raw figure is the row string it appears in (kept in 'rows'), checked against its filing, and every growth rate, margin and rule-T value is computed from those figures. Every value is tied to a source and becomes visible only on or after that source's 'published' date (EDGAR's acceptance time in ET; after the 16:00 close, the next trading day).",
+ "ticker": "CRM",
+ "sources": {
+  "CR1": {
+   "published": "2004-06-23",
+   "filed": "accepted 2004-06-23 12:57 ET (during the session)",
+   "title": "salesforce.com IPO prospectus (424B1), 2004-06-23",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312504107098/d424b1.htm",
+   "supports": "selected consolidated financial data for the inception period to January 31, 2000 and fiscal 2001-2004 (no revenue before fiscal 2001); the fiscal 2004 lease recovery"
+  },
+  "CR2": {
+   "published": "2005-03-28",
+   "filed": "accepted 2005-03-25 17:26 ET (after the close)",
+   "title": "salesforce.com FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312505061027/d10k.htm",
+   "supports": "the listing ('since June 23, 2004'); five-year selected data, fiscal 2001-2005 (rule T, the fiscal 2002 change)"
+  },
+  "CR3": {
+   "published": "2006-02-23",
+   "filed": "accepted 2006-02-22 16:24 ET (after the close)",
+   "title": "salesforce.com Q4 FY06 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312506036718/dex991.htm",
+   "supports": "FY2006 diluted EPS excluding the reversal of the deferred tax valuation allowance and the lease recovery ($0.181; GAAP $0.240)"
+  },
+  "CR4": {
+   "published": "2006-03-16",
+   "filed": "accepted 2006-03-15 17:09 ET (after the close)",
+   "title": "salesforce.com FY2006 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312506055150/d10k.htm",
+   "supports": "five-year selected data, fiscal 2002-2006, with year-end deferred revenue (rule T, the fiscal 2003 change and the deferred revenue changes of fiscal 2003-2006)"
+  },
+  "CR5": {
+   "published": "2006-05-18",
+   "filed": "accepted 2006-05-17 16:21 ET (after the close)",
+   "title": "salesforce.com Q1 FY07 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312506114764/dex991.htm",
+   "supports": "Q1 FY07 statements of operations, balance sheet and additional metrics; the outlook"
+  },
+  "CR6": {
+   "published": "2006-08-17",
+   "filed": "accepted 2006-08-16 16:47 ET (after the close)",
+   "title": "salesforce.com Q2 FY07 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312506174639/dex991.htm",
+   "supports": "Q2 FY07 statements of operations, balance sheet and additional metrics; the outlook"
+  },
+  "CR7": {
+   "published": "2006-11-16",
+   "filed": "accepted 2006-11-15 16:51 ET (after the close)",
+   "title": "salesforce.com Q3 FY07 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312506236238/dex991.htm",
+   "supports": "Q3 FY07 statements of operations, balance sheet and additional metrics; the outlook"
+  },
+  "CR8": {
+   "published": "2006-12-13",
+   "filed": "accepted 2006-12-12 17:07 ET (after the close)",
+   "title": "salesforce.com 8-K of 2006-12-12 (ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312506251684/dex991.htm",
+   "supports": "the FY2008 revenue outlook raised to $710-720 million"
+  },
+  "CR9": {
+   "published": "2007-02-22",
+   "filed": "accepted 2007-02-21 16:44 ET (after the close)",
+   "title": "salesforce.com Q4 FY07 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312507036100/dex991.htm",
+   "supports": "Q4 FY07 statements of operations, balance sheet and additional metrics; the outlook"
+  },
+  "CR10": {
+   "published": "2007-03-12",
+   "filed": "accepted 2007-03-09 17:16 ET (after the close)",
+   "title": "salesforce.com FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312507051045/d10k.htm",
+   "supports": "five-year selected data fiscal 2003-2007, statements, balance sheets, geography; the FY2007 history vintage; rule T fiscal 2004-2007"
+  },
+  "CR11": {
+   "published": "2007-05-17",
+   "filed": "accepted 2007-05-16 16:34 ET (after the close)",
+   "title": "salesforce.com Q1 FY08 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312507116902/dex991.htm",
+   "supports": "Q1 FY08 statements of operations, balance sheet and additional metrics; the outlook"
+  },
+  "CR12": {
+   "published": "2007-08-16",
+   "filed": "accepted 2007-08-15 16:42 ET (after the close)",
+   "title": "salesforce.com Q2 FY08 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312507183943/dex991.htm",
+   "supports": "Q2 FY08 statements of operations, balance sheet and additional metrics; the outlook"
+  },
+  "CR13": {
+   "published": "2007-11-16",
+   "filed": "accepted 2007-11-15 16:32 ET (after the close)",
+   "title": "salesforce.com Q3 FY08 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312507248577/dex991.htm",
+   "supports": "Q3 FY08 statements of operations, balance sheet and additional metrics; the outlook"
+  },
+  "CR14": {
+   "published": "2008-02-28",
+   "filed": "accepted 2008-02-27 16:39 ET (after the close)",
+   "title": "salesforce.com Q4 FY08 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312508040139/dex991.htm",
+   "supports": "Q4 FY08 statements of operations, balance sheet and additional metrics; the outlook"
+  },
+  "CR15": {
+   "published": "2008-03-03",
+   "filed": "accepted 2008-02-29 16:53 ET (after the close)",
+   "title": "salesforce.com FY2008 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312508043828/d10k.htm",
+   "supports": "five-year selected data fiscal 2004-2008, statements, balance sheets, geography; the FY2008 history vintage"
+  },
+  "CR16": {
+   "published": "2008-05-22",
+   "filed": "accepted 2008-05-21 16:34 ET (after the close)",
+   "title": "salesforce.com Q1 FY09 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312508120092/dex991.htm",
+   "supports": "Q1 FY09 statements of operations, balance sheet and additional metrics; the outlook"
+  },
+  "CR17": {
+   "published": "2008-08-21",
+   "filed": "accepted 2008-08-20 16:34 ET (after the close)",
+   "title": "salesforce.com Q2 FY09 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312508181542/dex991.htm",
+   "supports": "Q2 FY09 statements of operations, balance sheet and additional metrics; the outlook"
+  },
+  "CR18": {
+   "published": "2008-11-21",
+   "filed": "accepted 2008-11-20 16:36 ET (after the close)",
+   "title": "salesforce.com Q3 FY09 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312508240188/dex991.htm",
+   "supports": "Q3 FY09 statements of operations, balance sheet and additional metrics; the outlook"
+  },
+  "CR19": {
+   "published": "2009-02-26",
+   "filed": "accepted 2009-02-25 16:30 ET (after the close)",
+   "title": "salesforce.com Q4 FY09 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312509037445/dex991.htm",
+   "supports": "Q4 FY09 statements of operations, balance sheet and additional metrics; the outlook"
+  },
+  "CR20": {
+   "published": "2009-03-10",
+   "filed": "accepted 2009-03-09 17:24 ET (after the close)",
+   "title": "salesforce.com FY2009 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312509048665/d10k.htm",
+   "supports": "five-year selected data fiscal 2005-2009, statements, balance sheets, geography; the FY2009 history vintage"
+  },
+  "CR21": {
+   "published": "2009-05-22",
+   "filed": "accepted 2009-05-21 16:29 ET (after the close)",
+   "title": "salesforce.com Q1 FY10 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312509116696/dex991.htm",
+   "supports": "Q1 FY10 statements of operations, balance sheet and additional metrics; the outlook"
+  },
+  "CR22": {
+   "published": "2009-08-21",
+   "filed": "accepted 2009-08-20 16:33 ET (after the close)",
+   "title": "salesforce.com Q2 FY10 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312509179017/dex991.htm",
+   "supports": "Q2 FY10 statements of operations, balance sheet and additional metrics; the outlook"
+  },
+  "CR23": {
+   "published": "2009-11-18",
+   "filed": "accepted 2009-11-17 16:32 ET (after the close)",
+   "title": "salesforce.com Q3 FY10 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312509236714/dex991.htm",
+   "supports": "Q3 FY10 statements of operations, balance sheet and additional metrics; the outlook"
+  }
+ },
+ "listing": {
+  "first_trading_day": "2004-06-23",
+  "source": "CR2",
+  "exchange": "New York Stock Exchange",
+  "quote": "Our common stock has been quoted on the New York Stock Exchange under the symbol “CRM” since June 23, 2004."
+ },
+ "fiscal_calendar": {
+  "rule": "January 31",
+  "quote": "Our fiscal year ends on January 31.",
+  "source": "CR10"
+ },
+ "price_basis": "Yahoo's CRM series is adjusted for the four-for-one split of 2013-04-18; the builder multiplies it by the splits after AS_OF (x4 in 2008-2009), so every price is the price as traded",
+ "history_vintages": [
+  {
+   "published": "2007-03-12",
+   "sources": [
+    "CR10",
+    "CR3"
+   ],
+   "fy_label": "FY07",
+   "company": "salesforce.com, inc.",
+   "exchange": "NYSE",
+   "fiscal_year": "ends January 31",
+   "kind": "DURABLE",
+   "why": "'We are the leading provider, based on market share, of application services that allow organizations to easily share customer information on demand, according to a December 2006 report by International Data Corporation, or IDC.' 'The market for CRM applications is intensely competitive and rapidly changing, barriers to entry are relatively low, several of our competitors are larger and have more resources than we do, and with the introduction of new technologies and market entrants, we expect competition to intensify in the future.' 'enterprise software application vendors including Amdocs Limited, Infor Global Solutions, Epicor, IBM Corporation, Microsoft Corporation, SAP AG, and Oracle Corporation;' (FY2007 10-K); DURABLE: no 10-K calls the business cyclical ('cycle' appears only as the sales cycle and payment cycles)",
+   "eps_normalized": {
+    "2005": 0.07,
+    "2006": 0.181
+   },
+   "eps_sources": {
+    "2005": "CR10",
+    "2006": "CR3"
+   },
+   "eps_excluded": {
+    "2007": "FY2007 is excluded: GAAP diluted EPS $0.00 ('For the full year, GAAP earnings per share were breakeven', the Q4 FY07 release; net income $481K), so the year has no P/E (the F rule for Ford's $0.00 year), and no item in it is listed as a one-off"
+   },
+   "eps_first_excluded": {
+    "2004": "excluded, a year distorted by a one-off benefit (the AVGO FY2018 mirror test): its $3,445K lease recovery ('Lease recovery' in the selected data) is larger than the year's $794K of pre-tax income without it (pre-tax $4,239K), so the reported $0.04 is more than double the year's EPS without it, and no filing publishes a figure excluding it; an excluded year that is not the latest takes the years before it (the PFE 2003 and MU FY2003 rule; the inception period to January 2000 and fiscal 2001-2003 are losses as well: $(0.55), $(2.38), $(1.36), $(0.37)), so the history and the P/E window start after January 31, 2004, and the window from the listing on 2004-06-23"
+   },
+   "revenue_usd_b": {
+    "2005": 0.176375,
+    "2006": 0.309857,
+    "2007": 0.497098
+   },
+   "revenue_sources": {
+    "2005": "CR10",
+    "2006": "CR10",
+    "2007": "CR10"
+   },
+   "diluted_shares_m": {
+    "2005": 110.874,
+    "2006": 118.737,
+    "2007": 120.154
+   },
+   "shares_sources": {
+    "2005": "CR10",
+    "2006": "CR10",
+    "2007": "CR10"
+   },
+   "pe_window_start": "2004-02-01",
+   "normalization": "GAAP diluted EPS, each year from the latest filing that reports it (FY2007 10-K for fiscal 2005-2007), except FY06 at the company's $0.181 excluding only the reversal of the deferred tax valuation allowance and the lease recovery (Q4 FY06 release; GAAP $0.24: the ACN rule, the JPM FY2017 rule for a figure only the release prints); the releases of Q4 FY07 on print GAAP only; FY2007 is excluded: GAAP diluted EPS $0.00 ('For the full year, GAAP earnings per share were breakeven', the Q4 FY07 release; net income $481K), so the year has no P/E (the F rule for Ford's $0.00 year), and no item in it is listed as a one-off; it is the latest year in the FY2007 10-K, so only its own days leave the P/E window, and it stays a gap after (the NKE FY2018 and XOM FY2020 rule)",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": -0.72,
+   "prev_fy_op_margin_note": "FY07 income from operations $-3.6M / revenues $497.1M (FY2007 10-K)",
+   "prev_fy_pretax_margin": 2.51,
+   "prev_fy_pretax_margin_note": "FY07 income before income taxes and minority interest $12.5M / revenues $497.1M (FY2007 10-K)",
+   "prev_fy_gross_margin": 76.08,
+   "prev_fy_sales_growth": 60.4,
+   "prev_fy_sub_growth": 60.9,
+   "tax_rate": 0.784,
+   "tax_note": "FY07 provision for income taxes $9.8M / pre-tax $12.5M (FY2007 10-K)",
+   "fcf_b": 0.089,
+   "fcf_label": "FY07",
+   "fcf_note": "net cash provided by operating activities $111.2M less capital expenditures $22.1M",
+   "cash_b": 0.413,
+   "dividend_annual": 0.0,
+   "dividend_note": "none: 'We have never paid any cash dividends on our common stock.' (FY2007 10-K)",
+   "cash_return_text": "no share repurchase program (the 10-K's only repurchases are of unvested shares from employees)",
+   "business_line": "on-demand customer relationship management (CRM) application services and the AppExchange",
+   "groups": [
+    [
+     "Americas",
+     0.3876,
+     56.9
+    ],
+    [
+     "Europe",
+     0.075,
+     72.2
+    ],
+    [
+     "Asia Pacific",
+     0.0345,
+     79.0
+    ]
+   ],
+   "groups_basis": "FY07 revenues by geography (FY2007 10-K), growth on the year before",
+   "published_note": "FY2007 10-K"
+  },
+  {
+   "published": "2008-03-03",
+   "sources": [
+    "CR15",
+    "CR3"
+   ],
+   "fy_label": "FY08",
+   "company": "salesforce.com, inc.",
+   "exchange": "NYSE",
+   "fiscal_year": "ends January 31",
+   "kind": "DURABLE",
+   "why": "'We are the leading provider, based on revenues and market share, of software on demand, according to a July 2007 report by International Data Corporation, or IDC.' 'The market for CRM, enterprise business applications, and development platforms is highly competitive, rapidly evolving and fragmented, and subject to changing technology, shifting customer needs and frequent introductions of new products and services.' 'enterprise software application vendors including Amdocs Limited, Epicor Software Corporation, IBM Corporation, Infor Global Solutions, Microsoft Corporation, Oracle Corporation, and SAP AG;' (FY2008 10-K); DURABLE: no 10-K calls the business cyclical ('cycle' appears only as the sales cycle and payment cycles)",
+   "eps_normalized": {
+    "2005": 0.07,
+    "2006": 0.181,
+    "2008": 0.15
+   },
+   "eps_sources": {
+    "2005": "CR15",
+    "2006": "CR3",
+    "2008": "CR15"
+   },
+   "eps_excluded": {
+    "2007": "FY2007 is excluded: GAAP diluted EPS $0.00 ('For the full year, GAAP earnings per share were breakeven', the Q4 FY07 release; net income $481K), so the year has no P/E (the F rule for Ford's $0.00 year), and no item in it is listed as a one-off"
+   },
+   "eps_first_excluded": {
+    "2004": "excluded, a year distorted by a one-off benefit (the AVGO FY2018 mirror test): its $3,445K lease recovery ('Lease recovery' in the selected data) is larger than the year's $794K of pre-tax income without it (pre-tax $4,239K), so the reported $0.04 is more than double the year's EPS without it, and no filing publishes a figure excluding it; an excluded year that is not the latest takes the years before it (the PFE 2003 and MU FY2003 rule; the inception period to January 2000 and fiscal 2001-2003 are losses as well: $(0.55), $(2.38), $(1.36), $(0.37)), so the history and the P/E window start after January 31, 2004, and the window from the listing on 2004-06-23"
+   },
+   "revenue_usd_b": {
+    "2005": 0.176375,
+    "2006": 0.309857,
+    "2007": 0.497098,
+    "2008": 0.7487
+   },
+   "revenue_sources": {
+    "2005": "CR15",
+    "2006": "CR15",
+    "2007": "CR15",
+    "2008": "CR15"
+   },
+   "diluted_shares_m": {
+    "2005": 110.874,
+    "2006": 118.737,
+    "2007": 120.154,
+    "2008": 122.422
+   },
+   "shares_sources": {
+    "2005": "CR15",
+    "2006": "CR15",
+    "2007": "CR15",
+    "2008": "CR15"
+   },
+   "pe_window_start": "2004-02-01",
+   "normalization": "GAAP diluted EPS, each year from the latest filing that reports it (FY2008 10-K for fiscal 2005-2008), except FY06 at the company's $0.181 excluding only the reversal of the deferred tax valuation allowance and the lease recovery (Q4 FY06 release; GAAP $0.24: the ACN rule, the JPM FY2017 rule for a figure only the release prints); the releases of Q4 FY07 on print GAAP only; FY2007 is excluded: GAAP diluted EPS $0.00 ('For the full year, GAAP earnings per share were breakeven', the Q4 FY07 release; net income $481K), so the year has no P/E (the F rule for Ford's $0.00 year), and no item in it is listed as a one-off; it is the latest year in the FY2007 10-K, so only its own days leave the P/E window, and it stays a gap after (the NKE FY2018 and XOM FY2020 rule)",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 2.71,
+   "prev_fy_op_margin_note": "FY08 income from operations $20.3M / revenues $748.7M (FY2008 10-K)",
+   "prev_fy_pretax_margin": 6.17,
+   "prev_fy_pretax_margin_note": "FY08 income before income taxes and minority interest $46.2M / revenues $748.7M (FY2008 10-K)",
+   "prev_fy_gross_margin": 77.08,
+   "prev_fy_sales_growth": 50.6,
+   "prev_fy_sub_growth": 50.7,
+   "tax_rate": 0.506,
+   "tax_note": "FY08 provision for income taxes $23.4M / pre-tax $46.2M (FY2008 10-K)",
+   "fcf_b": 0.161,
+   "fcf_label": "FY08",
+   "fcf_note": "net cash provided by operating activities $204.3M less capital expenditures $43.6M",
+   "cash_b": 0.67,
+   "dividend_annual": 0.0,
+   "dividend_note": "none: 'We have never paid any cash dividends on our common stock.' (FY2008 10-K)",
+   "cash_return_text": "no share repurchase program (the 10-K's only repurchases are of unvested shares from employees)",
+   "business_line": "on-demand customer relationship management (CRM) service, the Force.com platform and the AppExchange",
+   "groups": [
+    [
+     "Americas",
+     0.558,
+     44.0
+    ],
+    [
+     "Europe",
+     0.127,
+     69.3
+    ],
+    [
+     "Asia Pacific",
+     0.0637,
+     84.7
+    ]
+   ],
+   "groups_basis": "FY08 revenues by geography (FY2008 10-K), growth on the year before",
+   "published_note": "FY2008 10-K"
+  },
+  {
+   "published": "2009-03-10",
+   "sources": [
+    "CR20",
+    "CR3"
+   ],
+   "fy_label": "FY09",
+   "company": "salesforce.com, inc.",
+   "exchange": "NYSE",
+   "fiscal_year": "ends January 31",
+   "kind": "DURABLE",
+   "why": "'We are the leading provider, based on revenues and market share, of software on demand, according to a July 2008 report by International Data Corporation, or IDC.' 'Cloud computing refers to the use of Internet (“cloud”) based computing, storage and connectivity technology for a variety of different services.' 'The market in which we participate is intensely competitive, and if we do not compete effectively, our operating results could be harmed.' 'cloud computing development platform companies, including some with whom we are partners, others such as Microsoft Corporation, which has initiated plans to enter this market, and a variety of smaller start up companies that have invested in cloud computing technology.' (FY2009 10-K); DURABLE: no 10-K calls the business cyclical ('cycle' appears only as the sales cycle and payment cycles)",
+   "eps_normalized": {
+    "2005": 0.07,
+    "2006": 0.181,
+    "2008": 0.15,
+    "2009": 0.35
+   },
+   "eps_sources": {
+    "2005": "CR20",
+    "2006": "CR3",
+    "2008": "CR20",
+    "2009": "CR20"
+   },
+   "eps_excluded": {
+    "2007": "FY2007 is excluded: GAAP diluted EPS $0.00 ('For the full year, GAAP earnings per share were breakeven', the Q4 FY07 release; net income $481K), so the year has no P/E (the F rule for Ford's $0.00 year), and no item in it is listed as a one-off"
+   },
+   "eps_first_excluded": {
+    "2004": "excluded, a year distorted by a one-off benefit (the AVGO FY2018 mirror test): its $3,445K lease recovery ('Lease recovery' in the selected data) is larger than the year's $794K of pre-tax income without it (pre-tax $4,239K), so the reported $0.04 is more than double the year's EPS without it, and no filing publishes a figure excluding it; an excluded year that is not the latest takes the years before it (the PFE 2003 and MU FY2003 rule; the inception period to January 2000 and fiscal 2001-2003 are losses as well: $(0.55), $(2.38), $(1.36), $(0.37)), so the history and the P/E window start after January 31, 2004, and the window from the listing on 2004-06-23"
+   },
+   "revenue_usd_b": {
+    "2005": 0.176375,
+    "2006": 0.309857,
+    "2007": 0.497098,
+    "2008": 0.7487,
+    "2009": 1.076769
+   },
+   "revenue_sources": {
+    "2005": "CR20",
+    "2006": "CR20",
+    "2007": "CR20",
+    "2008": "CR20",
+    "2009": "CR20"
+   },
+   "diluted_shares_m": {
+    "2005": 110.874,
+    "2006": 118.737,
+    "2007": 120.154,
+    "2008": 122.422,
+    "2009": 125.228
+   },
+   "shares_sources": {
+    "2005": "CR20",
+    "2006": "CR20",
+    "2007": "CR20",
+    "2008": "CR20",
+    "2009": "CR20"
+   },
+   "pe_window_start": "2004-02-01",
+   "normalization": "GAAP diluted EPS, each year from the latest filing that reports it (FY2009 10-K for fiscal 2005-2009), except FY06 at the company's $0.181 excluding only the reversal of the deferred tax valuation allowance and the lease recovery (Q4 FY06 release; GAAP $0.24: the ACN rule, the JPM FY2017 rule for a figure only the release prints); the releases of Q4 FY07 on print GAAP only; FY2007 is excluded: GAAP diluted EPS $0.00 ('For the full year, GAAP earnings per share were breakeven', the Q4 FY07 release; net income $481K), so the year has no P/E (the F rule for Ford's $0.00 year), and no item in it is listed as a one-off; it is the latest year in the FY2007 10-K, so only its own days leave the P/E window, and it stays a gap after (the NKE FY2018 and XOM FY2020 rule)",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 5.92,
+   "prev_fy_op_margin_note": "FY09 income from operations $63.7M / revenues $1,076.8M (FY2009 10-K)",
+   "prev_fy_pretax_margin": 7.95,
+   "prev_fy_pretax_margin_note": "FY09 income before income taxes and minority interest $85.6M / revenues $1,076.8M (FY2009 10-K)",
+   "prev_fy_gross_margin": 79.52,
+   "prev_fy_sales_growth": 43.8,
+   "prev_fy_sub_growth": 44.7,
+   "tax_rate": 0.439,
+   "tax_note": "FY09 provision for income taxes $37.6M / pre-tax $85.6M (FY2009 10-K)",
+   "fcf_b": 0.168,
+   "fcf_label": "FY09",
+   "fcf_note": "net cash provided by operating activities $229.6M less capital expenditures $61.1M",
+   "cash_b": 0.883,
+   "dividend_annual": 0.0,
+   "dividend_note": "none: 'We have never paid any cash dividends on our common stock.' (FY2009 10-K)",
+   "cash_return_text": "no share repurchase program (the 10-K's only repurchases are of unvested shares from employees)",
+   "business_line": "enterprise cloud computing: the on-demand CRM service, the Force.com platform and the AppExchange",
+   "groups": [
+    [
+     "Americas",
+     0.7765,
+     39.2
+    ],
+    [
+     "Europe",
+     0.1907,
+     50.1
+    ],
+    [
+     "Asia Pacific",
+     0.1096,
+     72.0
+    ]
+   ],
+   "groups_basis": "FY09 revenues by geography (FY2009 10-K), growth on the year before",
+   "published_note": "FY2009 10-K"
+  }
+ ],
+ "prints": [
+  {
+   "quarter": "Q4 FY07",
+   "fy": 2007,
+   "q": 4,
+   "published": "2007-02-22",
+   "source": "CR9",
+   "release": "Feb 21",
+   "release_time": "after the close on Feb 21: 8-K accepted 2007-02-21 16:44 ET; public before the open of the next trading day 2007-02-22",
+   "period_end": "2007-01-31",
+   "raw": {
+    "sub_k": 132071.0,
+    "sub_prior_k": 82425.0,
+    "sales_k": 144222.0,
+    "sales_prior_k": 91064.0,
+    "gross_profit_k": 110383.0,
+    "gross_profit_prior_k": 69724.0,
+    "rd_k": 13331.0,
+    "rd_prior_k": 6956.0,
+    "ms_k": 74582.0,
+    "ms_prior_k": 42503.0,
+    "ga_k": 24546.0,
+    "ga_prior_k": 15013.0,
+    "op_income_k": -2076.0,
+    "op_income_prior_k": 5252.0,
+    "deferred_k": 284063.0,
+    "deferred_prior_k": 169175.0,
+    "sales_prev_q_k": 130053.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 132,071 | 82,425 | 451,660 | 280,639",
+    "sales": "Total revenues | 144,222 | 91,064 | 497,098 | 309,857",
+    "gp": "Gross profit | 110,383 | 69,724 | 378,208 | 240,731",
+    "rd": "Research and development | 13,331 | 6,956 | 44,614 | 23,330",
+    "ms": "Marketing and sales | 74,582 | 42,503 | 252,935 | 149,598",
+    "ga": "General and administrative | 24,546 | 15,013 | 84,257 | 47,986",
+    "op": "Income (loss) from operations | (2,076) | 5,252 | (3,598) | 20,102",
+    "eps": "Diluted net income per share | 0.00 | 0.05 | 0.00 | 0.24",
+    "shares": "Shares used in computing diluted net income per share | 121,259 | 120,983 | 120,154 | 118,737",
+    "deferred": "Deferred revenue | 284,063 | 219,431 | 202,836 | 182,036 | 169,175 | 127,110",
+    "deferred_hdr": "Jan 31, 2007 | Oct 31, 2006 | July 31, 2006 | April 30, 2006 | January 31, 2006 | October 31, 2005",
+    "cash": "Cash, cash equivalents and marketable securities | 412,512 | 371,278 | 334,107 | 298,313 | 296,792 | 256,853"
+   },
+   "sales_prev_q_row": {
+    "source": "CR7",
+    "row": "Total revenues | 130,053 | 82,673 | 352,876 | 218,793"
+   },
+   "extra_sources": [
+    "CR7"
+   ],
+   "sales_b": 0.1442,
+   "sales_pct": 58.4,
+   "seq_pct": 10.9,
+   "sub_pct": 60.2,
+   "deferred_b": 0.2841,
+   "deferred_pct": 67.9,
+   "gross_margin": 76.54,
+   "gross_margin_bp": -2.9,
+   "op_margin": -1.44,
+   "op_margin_bp": -720.7,
+   "opex_pct": 74.4,
+   "opex_gap_pp": 16.1,
+   "eps_q": 0.0,
+   "eps_q_prior": 0.05,
+   "diluted_shares_m": 121.259,
+   "cash_b": 0.4125,
+   "sales_note": "revenues $144.2M vs $91.1M a year earlier, $130.1M the quarter before; subscription and support $132.1M vs $82.4M",
+   "deferred_note": "deferred revenue $284.1M (2007-01-31) vs $169.2M a year earlier, current and noncurrent (the release's Additional Metrics)",
+   "eps_note": "GAAP diluted EPS $0.00 vs $0.05; the release prints GAAP only",
+   "shares_note": "diluted shares 121.3M",
+   "next_print": "Q1 FY08 print (May)",
+   "fy_actual": {
+    "fy": 2007,
+    "fy_label": "FY07",
+    "eps_normalized": null,
+    "revenue_usd_b": 0.497098,
+    "diluted_shares_m": 120.154,
+    "normalization_note": "FY07 from the Q4 FY07 release (GAAP)",
+    "op_margin": -0.72,
+    "op_margin_note": "FY07 income from operations $-3.6M / revenues $497.1M (Q4 FY07 release)",
+    "pretax_margin": 2.51,
+    "pretax_margin_note": "FY07 income before income taxes and minority interest $12.5M / revenues $497.1M (Q4 FY07 release)",
+    "gross_margin": 76.08,
+    "sales_growth": 60.4,
+    "sub_growth": 60.9,
+    "tax_rate": 0.784,
+    "tax_note": "FY07 provision for income taxes $9.8M / pre-tax $12.5M",
+    "excluded_note": "FY2007 is excluded: GAAP diluted EPS $0.00 ('For the full year, GAAP earnings per share were breakeven', the Q4 FY07 release; net income $481K), so the year has no P/E (the F rule for Ford's $0.00 year), and no item in it is listed as a one-off"
+   }
+  },
+  {
+   "quarter": "Q1 FY08",
+   "fy": 2008,
+   "q": 1,
+   "published": "2007-05-17",
+   "source": "CR11",
+   "release": "May 16",
+   "release_time": "after the close on May 16: 8-K accepted 2007-05-16 16:34 ET; public before the open of the next trading day 2007-05-17",
+   "period_end": "2007-04-30",
+   "raw": {
+    "sub_k": 147690.0,
+    "sub_prior_k": 94493.0,
+    "sales_k": 162412.0,
+    "sales_prior_k": 104686.0,
+    "gross_profit_k": 123245.0,
+    "gross_profit_prior_k": 80126.0,
+    "rd_k": 14121.0,
+    "rd_prior_k": 8825.0,
+    "ms_k": 83925.0,
+    "ms_prior_k": 52016.0,
+    "ga_k": 25085.0,
+    "ga_prior_k": 19405.0,
+    "op_income_k": 114.0,
+    "op_income_prior_k": -120.0,
+    "deferred_k": 295672.0,
+    "deferred_prior_k": 182036.0,
+    "sales_prev_q_k": 144222.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 147,690 | 94,493",
+    "sales": "Total revenues | 162,412 | 104,686",
+    "gp": "Gross profit | 123,245 | 80,126",
+    "rd": "Research and development | 14,121 | 8,825",
+    "ms": "Marketing and sales | 83,925 | 52,016",
+    "ga": "General and administrative | 25,085 | 19,405",
+    "op": "Income (loss) from operations | 114 | (120)",
+    "eps": "Diluted net income (loss) per share | 0.01 | 0.00",
+    "shares": "Shares used in computing diluted net income (loss) per share | 120,635 | 110,957",
+    "deferred": "Deferred revenue | 295,672 | 284,063 | 219,431 | 202,836 | 182,036 | 169,175",
+    "deferred_hdr": "April 30,2007 | Jan 31,2007 | Oct 31,2006 | July 31,2006 | April 30,2006 | Jan 31,2006",
+    "cash": "Cash, cash equivalents and marketable securities | 448,071 | 412,512 | 371,278 | 334,107 | 298,313 | 296,792"
+   },
+   "sales_prev_q_row": {
+    "source": "CR9",
+    "row": "Total revenues | 144,222 | 91,064 | 497,098 | 309,857"
+   },
+   "extra_sources": [
+    "CR9"
+   ],
+   "sales_b": 0.1624,
+   "sales_pct": 55.1,
+   "seq_pct": 12.6,
+   "sub_pct": 56.3,
+   "deferred_b": 0.2957,
+   "deferred_pct": 62.4,
+   "gross_margin": 75.88,
+   "gross_margin_bp": -65.5,
+   "op_margin": 0.07,
+   "op_margin_bp": 18.5,
+   "opex_pct": 53.4,
+   "opex_gap_pp": -1.7,
+   "eps_q": 0.01,
+   "eps_q_prior": 0.0,
+   "diluted_shares_m": 120.635,
+   "cash_b": 0.4481,
+   "sales_note": "revenues $162.4M vs $104.7M a year earlier, $144.2M the quarter before; subscription and support $147.7M vs $94.5M",
+   "deferred_note": "deferred revenue $295.7M (2007-04-30) vs $182.0M a year earlier, current and noncurrent (the release's Additional Metrics)",
+   "eps_note": "GAAP diluted EPS $0.01 vs $0.00; the release prints GAAP only",
+   "shares_note": "diluted shares 120.6M",
+   "next_print": "Q2 FY08 print (August)"
+  },
+  {
+   "quarter": "Q2 FY08",
+   "fy": 2008,
+   "q": 2,
+   "published": "2007-08-16",
+   "source": "CR12",
+   "release": "Aug 15",
+   "release_time": "after the close on Aug 15: 8-K accepted 2007-08-15 16:42 ET; public before the open of the next trading day 2007-08-16",
+   "period_end": "2007-07-31",
+   "raw": {
+    "sub_k": 159998.0,
+    "sub_prior_k": 106663.0,
+    "sales_k": 176579.0,
+    "sales_prior_k": 118137.0,
+    "gross_profit_k": 135167.0,
+    "gross_profit_prior_k": 89006.0,
+    "rd_k": 15096.0,
+    "rd_prior_k": 11008.0,
+    "ms_k": 90216.0,
+    "ms_prior_k": 59811.0,
+    "ga_k": 26508.0,
+    "ga_prior_k": 19466.0,
+    "op_income_k": 3347.0,
+    "op_income_prior_k": -1279.0,
+    "deferred_k": 321852.0,
+    "deferred_prior_k": 202836.0,
+    "sales_prev_q_k": 162412.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 159,998 | 106,663 | 307,688 | 201,156",
+    "sales": "Total revenues | 176,579 | 118,137 | 338,991 | 222,823",
+    "gp": "Gross profit | 135,167 | 89,006 | 258,412 | 169,132",
+    "rd": "Research and development | 15,096 | 11,008 | 29,217 | 19,833",
+    "ms": "Marketing and sales | 90,216 | 59,811 | 174,141 | 111,827",
+    "ga": "General and administrative | 26,508 | 19,466 | 51,593 | 38,871",
+    "op": "Income (loss) from operations | 3,347 | (1,279) | 3,461 | (1,399)",
+    "eps": "Diluted net income (loss) per share | 0.03 | 0.00 | 0.04 | 0.00",
+    "shares": "Shares used in computing diluted net income (loss) per share | 121,333 | 111,838 | 120,993 | 111,397",
+    "deferred": "Deferred revenue | 321,852 | 295,672 | 284,063 | 219,431 | 202,836 | 182,036",
+    "deferred_hdr": "July 31,2007 | April 30,2007 | Jan 31,2007 | Oct 31,2006 | July 31,2006 | April 30,2006",
+    "cash": "Cash, cash equivalents and marketable securities | 497,191 | 448,071 | 412,512 | 371,278 | 334,107 | 298,313"
+   },
+   "sales_prev_q_row": {
+    "source": "CR11",
+    "row": "Total revenues | 162,412 | 104,686"
+   },
+   "extra_sources": [
+    "CR11"
+   ],
+   "sales_b": 0.1766,
+   "sales_pct": 49.5,
+   "seq_pct": 8.7,
+   "sub_pct": 50.0,
+   "deferred_b": 0.3219,
+   "deferred_pct": 58.7,
+   "gross_margin": 76.55,
+   "gross_margin_bp": 120.6,
+   "op_margin": 1.9,
+   "op_margin_bp": 297.8,
+   "opex_pct": 46.0,
+   "opex_gap_pp": -3.5,
+   "eps_q": 0.03,
+   "eps_q_prior": 0.0,
+   "diluted_shares_m": 121.333,
+   "cash_b": 0.4972,
+   "sales_note": "revenues $176.6M vs $118.1M a year earlier, $162.4M the quarter before; subscription and support $160.0M vs $106.7M",
+   "deferred_note": "deferred revenue $321.9M (2007-07-31) vs $202.8M a year earlier, current and noncurrent (the release's Additional Metrics)",
+   "eps_note": "GAAP diluted EPS $0.03 vs $0.00; the release prints GAAP only",
+   "shares_note": "diluted shares 121.3M",
+   "next_print": "Q3 FY08 print (November)"
+  },
+  {
+   "quarter": "Q3 FY08",
+   "fy": 2008,
+   "q": 3,
+   "published": "2007-11-16",
+   "source": "CR13",
+   "release": "Nov 15",
+   "release_time": "after the close on Nov 15: 8-K accepted 2007-11-15 16:32 ET; public before the open of the next trading day 2007-11-16",
+   "period_end": "2007-10-31",
+   "raw": {
+    "sub_k": 176376.0,
+    "sub_prior_k": 118433.0,
+    "sales_k": 192803.0,
+    "sales_prior_k": 130053.0,
+    "gross_profit_k": 148522.0,
+    "gross_profit_prior_k": 98693.0,
+    "rd_k": 16892.0,
+    "rd_prior_k": 11450.0,
+    "ms_k": 96216.0,
+    "ms_prior_k": 66526.0,
+    "ga_k": 29296.0,
+    "ga_prior_k": 20840.0,
+    "op_income_k": 6118.0,
+    "op_income_prior_k": -123.0,
+    "deferred_k": 340808.0,
+    "deferred_prior_k": 219431.0,
+    "sales_prev_q_k": 176579.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 176,376 | 118,433 | 484,064 | 319,589",
+    "sales": "Total revenues | 192,803 | 130,053 | 531,794 | 352,876",
+    "gp": "Gross profit | 148,522 | 98,693 | 406,934 | 267,825",
+    "rd": "Research and development | 16,892 | 11,450 | 46,109 | 31,283",
+    "ms": "Marketing and sales | 96,216 | 66,526 | 270,357 | 178,353",
+    "ga": "General and administrative | 29,296 | 20,840 | 80,889 | 59,711",
+    "op": "Income (loss) from operations | 6,118 | (123) | 9,579 | (1,522)",
+    "eps": "Diluted net income (loss) per share | 0.05 | 0.00 | 0.09 | 0.00",
+    "shares": "Shares used in computing diluted net income (loss) per share | 122,169 | 120,279 | 121,429 | 111,889",
+    "deferred": "Deferred revenue | 340,808 | 321,852 | 295,672 | 284,063 | 219,431 | 202,836",
+    "deferred_hdr": "Oct 31,2007 | July 31,2007 | April 30,2007 | Jan 31,2007 | Oct 31,2006 | July 31,2006",
+    "cash": "Cash, cash equivalents and marketable securities | 571,003 | 497,191 | 448,071 | 412,512 | 371,278 | 334,107"
+   },
+   "sales_prev_q_row": {
+    "source": "CR12",
+    "row": "Total revenues | 176,579 | 118,137 | 338,991 | 222,823"
+   },
+   "extra_sources": [
+    "CR12"
+   ],
+   "sales_b": 0.1928,
+   "sales_pct": 48.2,
+   "seq_pct": 9.2,
+   "sub_pct": 48.9,
+   "deferred_b": 0.3408,
+   "deferred_pct": 55.3,
+   "gross_margin": 77.03,
+   "gross_margin_bp": 114.6,
+   "op_margin": 3.17,
+   "op_margin_bp": 326.8,
+   "opex_pct": 44.1,
+   "opex_gap_pp": -4.1,
+   "eps_q": 0.05,
+   "eps_q_prior": 0.0,
+   "diluted_shares_m": 122.169,
+   "cash_b": 0.571,
+   "sales_note": "revenues $192.8M vs $130.1M a year earlier, $176.6M the quarter before; subscription and support $176.4M vs $118.4M",
+   "deferred_note": "deferred revenue $340.8M (2007-10-31) vs $219.4M a year earlier, current and noncurrent (the release's Additional Metrics)",
+   "eps_note": "GAAP diluted EPS $0.05 vs $0.00; the release prints GAAP only",
+   "shares_note": "diluted shares 122.2M",
+   "next_print": "Q4 FY08 print (February)",
+   "note": "the $1.3M gain on the sale of a minority investment is outside operating income, as published: 'The Q3 GAAP EPS result was benefited by a gain of approximately $0.01 per share associated with the sale of a minority investment.'"
+  },
+  {
+   "quarter": "Q4 FY08",
+   "fy": 2008,
+   "q": 4,
+   "published": "2008-02-28",
+   "source": "CR14",
+   "release": "Feb 27",
+   "release_time": "after the close on Feb 27: 8-K accepted 2008-02-27 16:39 ET; public before the open of the next trading day 2008-02-28",
+   "period_end": "2008-01-31",
+   "raw": {
+    "sub_k": 196517.0,
+    "sub_prior_k": 132071.0,
+    "sales_k": 216906.0,
+    "sales_prior_k": 144222.0,
+    "gross_profit_k": 170175.0,
+    "gross_profit_prior_k": 110383.0,
+    "rd_k": 17703.0,
+    "rd_prior_k": 13331.0,
+    "ms_k": 106123.0,
+    "ms_prior_k": 74582.0,
+    "ga_k": 35619.0,
+    "ga_prior_k": 24546.0,
+    "op_income_k": 10730.0,
+    "op_income_prior_k": -2076.0,
+    "deferred_k": 480894.0,
+    "deferred_prior_k": 284063.0,
+    "sales_prev_q_k": 192803.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 196,517 | 132,071 | 680,581 | 451,660",
+    "sales": "Total revenues | 216,906 | 144,222 | 748,700 | 497,098",
+    "gp": "Gross profit | 170,175 | 110,383 | 577,109 | 378,208",
+    "rd": "Research and development | 17,703 | 13,331 | 63,812 | 44,614",
+    "ms": "Marketing and sales | 106,123 | 74,582 | 376,480 | 252,935",
+    "ga": "General and administrative | 35,619 | 24,546 | 116,508 | 84,257",
+    "op": "Income (loss) from operations | 10,730 | (2,076) | 20,309 | (3,598)",
+    "eps": "Diluted net income per share | 0.06 | 0.00 | 0.15 | 0.00",
+    "shares": "Shares used in computing diluted net income per share | 123,680 | 121,259 | 122,422 | 120,154",
+    "deferred": "Deferred revenue, current and noncurrent | 480,894 | 340,808 | 321,852 | 295,672 | 284,063 | 219,431",
+    "deferred_hdr": "Jan 31,2008 | Oct 31,2007 | Jul 31,2007 | Apr 30,2007 | Jan 31,2007 | Oct 31,2006",
+    "cash": "Cash, cash equivalents and marketable securities | 669,800 | 571,003 | 497,191 | 448,071 | 412,512 | 371,278"
+   },
+   "sales_prev_q_row": {
+    "source": "CR13",
+    "row": "Total revenues | 192,803 | 130,053 | 531,794 | 352,876"
+   },
+   "extra_sources": [
+    "CR13"
+   ],
+   "sales_b": 0.2169,
+   "sales_pct": 50.4,
+   "seq_pct": 12.5,
+   "sub_pct": 48.8,
+   "deferred_b": 0.4809,
+   "deferred_pct": 69.3,
+   "gross_margin": 78.46,
+   "gross_margin_bp": 191.9,
+   "op_margin": 4.95,
+   "op_margin_bp": 638.6,
+   "opex_pct": 41.8,
+   "opex_gap_pp": -8.6,
+   "eps_q": 0.06,
+   "eps_q_prior": 0.0,
+   "diluted_shares_m": 123.68,
+   "cash_b": 0.6698,
+   "sales_note": "revenues $216.9M vs $144.2M a year earlier, $192.8M the quarter before; subscription and support $196.5M vs $132.1M",
+   "deferred_note": "deferred revenue $480.9M (2008-01-31) vs $284.1M a year earlier, current and noncurrent (the release's Additional Metrics)",
+   "eps_note": "GAAP diluted EPS $0.06 vs $0.00; the release prints GAAP only",
+   "shares_note": "diluted shares 123.7M",
+   "next_print": "Q1 FY09 print (May)",
+   "fy_actual": {
+    "fy": 2008,
+    "fy_label": "FY08",
+    "eps_normalized": 0.15,
+    "revenue_usd_b": 0.7487,
+    "diluted_shares_m": 122.422,
+    "normalization_note": "FY08 from the Q4 FY08 release (GAAP), including the $1.3M gain on the sale of a minority investment (about $0.01; a fraction of the year's $18.4M net income, no figure without it)",
+    "op_margin": 2.71,
+    "op_margin_note": "FY08 income from operations $20.3M / revenues $748.7M (Q4 FY08 release)",
+    "pretax_margin": 6.17,
+    "pretax_margin_note": "FY08 income before income taxes and minority interest $46.2M / revenues $748.7M (Q4 FY08 release)",
+    "gross_margin": 77.08,
+    "sales_growth": 50.6,
+    "sub_growth": 50.7,
+    "tax_rate": 0.506,
+    "tax_note": "FY08 provision for income taxes $23.4M / pre-tax $46.2M"
+   }
+  },
+  {
+   "quarter": "Q1 FY09",
+   "fy": 2009,
+   "q": 1,
+   "published": "2008-05-22",
+   "source": "CR16",
+   "release": "May 21",
+   "release_time": "after the close on May 21: 8-K accepted 2008-05-21 16:34 ET; public before the open of the next trading day 2008-05-22",
+   "period_end": "2008-04-30",
+   "raw": {
+    "sub_k": 225341.0,
+    "sub_prior_k": 147690.0,
+    "sales_k": 247622.0,
+    "sales_prior_k": 162412.0,
+    "gross_profit_k": 196324.0,
+    "gross_profit_prior_k": 123245.0,
+    "rd_k": 19767.0,
+    "rd_prior_k": 14121.0,
+    "ms_k": 122704.0,
+    "ms_prior_k": 83925.0,
+    "ga_k": 38432.0,
+    "ga_prior_k": 25085.0,
+    "op_income_k": 15421.0,
+    "op_income_prior_k": 114.0,
+    "deferred_k": 470297.0,
+    "deferred_prior_k": 295672.0,
+    "sales_prev_q_k": 216906.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 225,341 | 147,690",
+    "sales": "Total revenues | 247,622 | 162,412",
+    "gp": "Gross profit | 196,324 | 123,245",
+    "rd": "Research and development | 19,767 | 14,121",
+    "ms": "Marketing and sales | 122,704 | 83,925",
+    "ga": "General and administrative | 38,432 | 25,085",
+    "op": "Income from operations | 15,421 | 114",
+    "eps": "Diluted net income per share | 0.08 | 0.01",
+    "shares": "Shares used in computing diluted net income per share | 124,414 | 120,635",
+    "deferred": "Deferred revenue, current and non-current | 470,297 | 480,894 | 340,808 | 321,852 | 295,672 | 284,063 | 219,431",
+    "deferred_hdr": "April 30,2008 | Jan 31,2008 | Oct 31,2007 | Jul 31,2007 | Apr 30,2007 | Jan 31,2007 | Oct 31,2006",
+    "cash": "Cash, cash equivalents and marketable securities | 750,633 | 669,800 | 571,003 | 497,191 | 448,071 | 412,512 | 371,278"
+   },
+   "sales_prev_q_row": {
+    "source": "CR14",
+    "row": "Total revenues | 216,906 | 144,222 | 748,700 | 497,098"
+   },
+   "extra_sources": [
+    "CR14"
+   ],
+   "sales_b": 0.2476,
+   "sales_pct": 52.5,
+   "seq_pct": 14.2,
+   "sub_pct": 52.6,
+   "deferred_b": 0.4703,
+   "deferred_pct": 59.1,
+   "gross_margin": 79.28,
+   "gross_margin_bp": 340.0,
+   "op_margin": 6.23,
+   "op_margin_bp": 615.7,
+   "opex_pct": 46.9,
+   "opex_gap_pp": -5.5,
+   "eps_q": 0.08,
+   "eps_q_prior": 0.01,
+   "diluted_shares_m": 124.414,
+   "cash_b": 0.7506,
+   "sales_note": "revenues $247.6M vs $162.4M a year earlier, $216.9M the quarter before; subscription and support $225.3M vs $147.7M",
+   "deferred_note": "deferred revenue $470.3M (2008-04-30) vs $295.7M a year earlier, current and noncurrent (the release's Additional Metrics)",
+   "eps_note": "GAAP diluted EPS $0.08 vs $0.01; the release prints GAAP only",
+   "shares_note": "diluted shares 124.4M",
+   "next_print": "Q2 FY09 print (August)"
+  },
+  {
+   "quarter": "Q2 FY09",
+   "fy": 2009,
+   "q": 2,
+   "published": "2008-08-21",
+   "source": "CR17",
+   "release": "Aug 20",
+   "release_time": "after the close on Aug 20: 8-K accepted 2008-08-20 16:34 ET; public before the open of the next trading day 2008-08-21",
+   "period_end": "2008-07-31",
+   "raw": {
+    "sub_k": 239720.0,
+    "sub_prior_k": 159998.0,
+    "sales_k": 263077.0,
+    "sales_prior_k": 176579.0,
+    "gross_profit_k": 208986.0,
+    "gross_profit_prior_k": 135167.0,
+    "rd_k": 24033.0,
+    "rd_prior_k": 15096.0,
+    "ms_k": 130774.0,
+    "ms_prior_k": 90216.0,
+    "ga_k": 38081.0,
+    "ga_prior_k": 26508.0,
+    "op_income_k": 16098.0,
+    "op_income_prior_k": 3347.0,
+    "deferred_k": 479546.0,
+    "deferred_prior_k": 321852.0,
+    "sales_prev_q_k": 247622.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 239,720 | 159,998 | 465,061 | 307,688",
+    "sales": "Total revenues | 263,077 | 176,579 | 510,699 | 338,991",
+    "gp": "Gross profit | 208,986 | 135,167 | 405,310 | 258,412",
+    "rd": "Research and development | 24,033 | 15,096 | 43,800 | 29,217",
+    "ms": "Marketing and sales | 130,774 | 90,216 | 253,478 | 174,141",
+    "ga": "General and administrative | 38,081 | 26,508 | 76,513 | 51,593",
+    "op": "Income from operations | 16,098 | 3,347 | 31,519 | 3,461",
+    "eps": "Diluted net income per share | 0.08 | 0.03 | 0.16 | 0.04",
+    "shares": "Shares used in computing diluted net income per share | 125,626 | 121,333 | 125,091 | 120,993",
+    "deferred": "Deferred revenue, current and non-current | 479,546 | 470,297 | 480,894 | 340,808 | 321,852 | 295,672",
+    "deferred_hdr": "July 31,2008 | April 30,2008 | Jan 31,2008 | Oct 31,2007 | Jul 31,2007 | Apr 30,2007",
+    "cash": "Cash, cash equivalents and marketable securities | 823,417 | 750,633 | 669,800 | 571,003 | 497,191 | 448,071"
+   },
+   "sales_prev_q_row": {
+    "source": "CR16",
+    "row": "Total revenues | 247,622 | 162,412"
+   },
+   "extra_sources": [
+    "CR16"
+   ],
+   "sales_b": 0.2631,
+   "sales_pct": 49.0,
+   "seq_pct": 6.2,
+   "sub_pct": 49.8,
+   "deferred_b": 0.4795,
+   "deferred_pct": 49.0,
+   "gross_margin": 79.44,
+   "gross_margin_bp": 289.1,
+   "op_margin": 6.12,
+   "op_margin_bp": 422.4,
+   "opex_pct": 46.3,
+   "opex_gap_pp": -2.7,
+   "eps_q": 0.08,
+   "eps_q_prior": 0.03,
+   "diluted_shares_m": 125.626,
+   "cash_b": 0.8234,
+   "sales_note": "revenues $263.1M vs $176.6M a year earlier, $247.6M the quarter before; subscription and support $239.7M vs $160.0M",
+   "deferred_note": "deferred revenue $479.5M (2008-07-31) vs $321.9M a year earlier, current and noncurrent (the release's Additional Metrics)",
+   "eps_note": "GAAP diluted EPS $0.08 vs $0.03; the release prints GAAP only",
+   "shares_note": "diluted shares 125.6M",
+   "next_print": "Q3 FY09 print (November)",
+   "note": "the InStranet acquisition (exhibit 99.2: 'Salesforce.com Acquires InStranet, Bringing Industry-Leading Knowledge') is in the quarter as published"
+  },
+  {
+   "quarter": "Q3 FY09",
+   "fy": 2009,
+   "q": 3,
+   "published": "2008-11-21",
+   "source": "CR18",
+   "release": "Nov 20",
+   "release_time": "after the close on Nov 20: 8-K accepted 2008-11-20 16:36 ET; public before the open of the next trading day 2008-11-21",
+   "period_end": "2008-10-31",
+   "raw": {
+    "sub_k": 253403.0,
+    "sub_prior_k": 176376.0,
+    "sales_k": 276487.0,
+    "sales_prior_k": 192803.0,
+    "gross_profit_k": 220139.0,
+    "gross_profit_prior_k": 148522.0,
+    "rd_k": 26270.0,
+    "rd_prior_k": 16892.0,
+    "ms_k": 136452.0,
+    "ms_prior_k": 96216.0,
+    "ga_k": 41284.0,
+    "ga_prior_k": 29296.0,
+    "op_income_k": 16133.0,
+    "op_income_prior_k": 6118.0,
+    "deferred_k": 469534.0,
+    "deferred_prior_k": 340808.0,
+    "sales_prev_q_k": 263077.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 253,403 | 176,376 | 718,464 | 484,064",
+    "sales": "Total revenues | 276,487 | 192,803 | 787,186 | 531,794",
+    "gp": "Gross profit | 220,139 | 148,522 | 625,449 | 406,934",
+    "rd": "Research and development | 26,270 | 16,892 | 70,070 | 46,109",
+    "ms": "Marketing and sales | 136,452 | 96,216 | 389,930 | 270,357",
+    "ga": "General and administrative | 41,284 | 29,296 | 117,797 | 80,889",
+    "op": "Income from operations | 16,133 | 6,118 | 47,652 | 9,579",
+    "eps": "Diluted net income per share | 0.08 | 0.05 | 0.24 | 0.09",
+    "shares": "Shares used in computing diluted net income per share | 125,133 | 122,169 | 125,173 | 121,429",
+    "deferred": "Deferred revenue, current and non-current | 469,534 | 479,546 | 470,297 | 480,894 | 340,808 | 321,852",
+    "deferred_hdr": "Oct 31,2008 | July 31,2008 | April 30,2008 | Jan 31,2008 | Oct 31,2007 | Jul 31,2007",
+    "cash": "Cash, cash equivalents and marketable securities | 804,606 | 823,417 | 750,633 | 669,800 | 571,003 | 497,191"
+   },
+   "sales_prev_q_row": {
+    "source": "CR17",
+    "row": "Total revenues | 263,077 | 176,579 | 510,699 | 338,991"
+   },
+   "extra_sources": [
+    "CR17"
+   ],
+   "sales_b": 0.2765,
+   "sales_pct": 43.4,
+   "seq_pct": 5.1,
+   "sub_pct": 43.7,
+   "deferred_b": 0.4695,
+   "deferred_pct": 37.8,
+   "gross_margin": 79.62,
+   "gross_margin_bp": 258.7,
+   "op_margin": 5.83,
+   "op_margin_bp": 266.2,
+   "opex_pct": 43.3,
+   "opex_gap_pp": -0.1,
+   "eps_q": 0.08,
+   "eps_q_prior": 0.05,
+   "diluted_shares_m": 125.133,
+   "cash_b": 0.8046,
+   "sales_note": "revenues $276.5M vs $192.8M a year earlier, $263.1M the quarter before; subscription and support $253.4M vs $176.4M",
+   "deferred_note": "deferred revenue $469.5M (2008-10-31) vs $340.8M a year earlier, current and noncurrent (the release's Additional Metrics)",
+   "eps_note": "GAAP diluted EPS $0.08 vs $0.05; the release prints GAAP only",
+   "shares_note": "diluted shares 125.1M",
+   "next_print": "Q4 FY09 print (February)"
+  },
+  {
+   "quarter": "Q4 FY09",
+   "fy": 2009,
+   "q": 4,
+   "published": "2009-02-26",
+   "source": "CR19",
+   "release": "Feb 25",
+   "release_time": "after the close on Feb 25: 8-K accepted 2009-02-25 16:30 ET; public before the open of the next trading day 2009-02-26",
+   "period_end": "2009-01-31",
+   "raw": {
+    "sub_k": 266110.0,
+    "sub_prior_k": 196517.0,
+    "sales_k": 289583.0,
+    "sales_prior_k": 216906.0,
+    "gross_profit_k": 230849.0,
+    "gross_profit_prior_k": 170175.0,
+    "rd_k": 29460.0,
+    "rd_prior_k": 17703.0,
+    "ms_k": 144483.0,
+    "ms_prior_k": 106123.0,
+    "ga_k": 40816.0,
+    "ga_prior_k": 35619.0,
+    "op_income_k": 16090.0,
+    "op_income_prior_k": 10730.0,
+    "deferred_k": 594026.0,
+    "deferred_prior_k": 480894.0,
+    "sales_prev_q_k": 276487.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 266,110 | 196,517 | 984,574 | 680,581",
+    "sales": "Total revenues | 289,583 | 216,906 | 1,076,769 | 748,700",
+    "gp": "Gross profit | 230,849 | 170,175 | 856,298 | 577,109",
+    "rd": "Research and development | 29,460 | 17,703 | 99,530 | 63,812",
+    "ms": "Marketing and sales | 144,483 | 106,123 | 534,413 | 376,480",
+    "ga": "General and administrative | 40,816 | 35,619 | 158,613 | 116,508",
+    "op": "Income from operations | 16,090 | 10,730 | 63,742 | 20,309",
+    "eps": "Diluted net income per share | 0.11 | 0.06 | 0.35 | 0.15",
+    "shares": "Shares used in computing diluted net income per share | 124,533 | 123,680 | 125,228 | 122,422",
+    "deferred": "Deferred revenue, current and non-current | 594,026 | 469,534 | 479,546 | 470,297 | 480,894 | 340,808",
+    "deferred_hdr": "Jan 31,2009 | Oct 31,2008 | Jul 31,2008 | Apr 30,2008 | Jan 31,2008 | Oct 31,2007",
+    "cash": "Cash, cash equivalents and marketable securities | 882,565 | 804,606 | 823,417 | 750,633 | 669,800 | 571,003"
+   },
+   "sales_prev_q_row": {
+    "source": "CR18",
+    "row": "Total revenues | 276,487 | 192,803 | 787,186 | 531,794"
+   },
+   "extra_sources": [
+    "CR18"
+   ],
+   "sales_b": 0.2896,
+   "sales_pct": 33.5,
+   "seq_pct": 4.7,
+   "sub_pct": 35.4,
+   "deferred_b": 0.594,
+   "deferred_pct": 23.5,
+   "gross_margin": 79.72,
+   "gross_margin_bp": 126.2,
+   "op_margin": 5.56,
+   "op_margin_bp": 60.9,
+   "opex_pct": 34.7,
+   "opex_gap_pp": 1.2,
+   "eps_q": 0.11,
+   "eps_q_prior": 0.06,
+   "diluted_shares_m": 124.533,
+   "cash_b": 0.8826,
+   "sales_note": "revenues $289.6M vs $216.9M a year earlier, $276.5M the quarter before; subscription and support $266.1M vs $196.5M",
+   "deferred_note": "deferred revenue $594.0M (2009-01-31) vs $480.9M a year earlier, current and noncurrent (the release's Additional Metrics)",
+   "eps_note": "GAAP diluted EPS $0.11 vs $0.06; the release prints GAAP only",
+   "shares_note": "diluted shares 124.5M",
+   "next_print": "Q1 FY10 print (May)",
+   "fy_actual": {
+    "fy": 2009,
+    "fy_label": "FY09",
+    "eps_normalized": 0.35,
+    "revenue_usd_b": 1.076769,
+    "diluted_shares_m": 125.228,
+    "normalization_note": "FY09 from the Q4 FY09 release (GAAP)",
+    "op_margin": 5.92,
+    "op_margin_note": "FY09 income from operations $63.7M / revenues $1,076.8M (Q4 FY09 release)",
+    "pretax_margin": 7.95,
+    "pretax_margin_note": "FY09 income before income taxes and minority interest $85.6M / revenues $1,076.8M (Q4 FY09 release)",
+    "gross_margin": 79.52,
+    "sales_growth": 43.8,
+    "sub_growth": 44.7,
+    "tax_rate": 0.439,
+    "tax_note": "FY09 provision for income taxes $37.6M / pre-tax $85.6M"
+   }
+  },
+  {
+   "quarter": "Q1 FY10",
+   "fy": 2010,
+   "q": 1,
+   "published": "2009-05-22",
+   "source": "CR21",
+   "release": "May 21",
+   "release_time": "after the close on May 21: 8-K accepted 2009-05-21 16:29 ET; public before the open of the next trading day 2009-05-22",
+   "period_end": "2009-04-30",
+   "raw": {
+    "sub_k": 281768.0,
+    "sub_prior_k": 225341.0,
+    "sales_k": 304924.0,
+    "sales_prior_k": 247622.0,
+    "gross_profit_k": 243124.0,
+    "gross_profit_prior_k": 196324.0,
+    "rd_k": 31584.0,
+    "rd_prior_k": 19767.0,
+    "ms_k": 138267.0,
+    "ms_prior_k": 122704.0,
+    "ga_k": 43150.0,
+    "ga_prior_k": 38432.0,
+    "op_income_k": 30123.0,
+    "op_income_prior_k": 15421.0,
+    "deferred_k": 549373.0,
+    "deferred_prior_k": 470297.0,
+    "sales_prev_q_k": 289583.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 281,768 | 225,341",
+    "sales": "Total revenues | 304,924 | 247,622",
+    "gp": "Gross profit | 243,124 | 196,324",
+    "rd": "Research and development | 31,584 | 19,767",
+    "ms": "Marketing and sales | 138,267 | 122,704",
+    "ga": "General and administrative | 43,150 | 38,432",
+    "op": "Income from operations | 30,123 | 15,421",
+    "eps": "Diluted net income per share attributable to salesforce.com common shareholders | 0.15 | 0.08",
+    "shares": "Shares used in computing diluted net income per share | 125,349 | 124,414",
+    "deferred": "Deferred revenue, current and noncurrent | 549,373 | 594,026 | 469,534 | 479,546 | 470,297 | 480,894",
+    "deferred_hdr": "Apr 30,2009 | Jan 31,2009 | Oct 31,2008 | Jul 31,2008 | Apr 30,2008 | Jan 31,2008",
+    "cash": "Cash, cash equivalents and marketable securities | 983,824 | 882,565 | 804,606 | 823,417 | 750,633 | 669,800"
+   },
+   "sales_prev_q_row": {
+    "source": "CR19",
+    "row": "Total revenues | 289,583 | 216,906 | 1,076,769 | 748,700"
+   },
+   "extra_sources": [
+    "CR19"
+   ],
+   "sales_b": 0.3049,
+   "sales_pct": 23.1,
+   "seq_pct": 5.3,
+   "sub_pct": 25.0,
+   "deferred_b": 0.5494,
+   "deferred_pct": 16.8,
+   "gross_margin": 79.73,
+   "gross_margin_bp": 44.9,
+   "op_margin": 9.88,
+   "op_margin_bp": 365.1,
+   "opex_pct": 17.7,
+   "opex_gap_pp": -5.4,
+   "eps_q": 0.15,
+   "eps_q_prior": 0.08,
+   "diluted_shares_m": 125.349,
+   "cash_b": 0.9838,
+   "sales_note": "revenues $304.9M vs $247.6M a year earlier, $289.6M the quarter before; subscription and support $281.8M vs $225.3M",
+   "deferred_note": "deferred revenue $549.4M (2009-04-30) vs $470.3M a year earlier, current and noncurrent (the release's Additional Metrics)",
+   "eps_note": "GAAP diluted EPS $0.15 vs $0.08; the release prints GAAP only",
+   "shares_note": "diluted shares 125.3M",
+   "next_print": "Q2 FY10 print (August)"
+  },
+  {
+   "quarter": "Q2 FY10",
+   "fy": 2010,
+   "q": 2,
+   "published": "2009-08-21",
+   "source": "CR22",
+   "release": "Aug 20",
+   "release_time": "after the close on Aug 20: 8-K accepted 2009-08-20 16:33 ET; public before the open of the next trading day 2009-08-21",
+   "period_end": "2009-07-31",
+   "raw": {
+    "sub_k": 293440.0,
+    "sub_prior_k": 239720.0,
+    "sales_k": 316061.0,
+    "sales_prior_k": 263077.0,
+    "gross_profit_k": 253565.0,
+    "gross_profit_prior_k": 208986.0,
+    "rd_k": 31103.0,
+    "rd_prior_k": 24033.0,
+    "ms_k": 146214.0,
+    "ms_prior_k": 130774.0,
+    "ga_k": 46759.0,
+    "ga_prior_k": 38081.0,
+    "op_income_k": 29489.0,
+    "op_income_prior_k": 16098.0,
+    "deferred_k": 549010.0,
+    "deferred_prior_k": 479546.0,
+    "sales_prev_q_k": 304924.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 293,440 | 239,720 | 575,208 | 465,061",
+    "sales": "Total revenues | 316,061 | 263,077 | 620,985 | 510,699",
+    "gp": "Gross profit | 253,565 | 208,986 | 496,689 | 405,310",
+    "rd": "Research and development | 31,103 | 24,033 | 62,687 | 43,800",
+    "ms": "Marketing and sales | 146,214 | 130,774 | 284,481 | 253,478",
+    "ga": "General and administrative | 46,759 | 38,081 | 89,909 | 76,513",
+    "op": "Income from operations | 29,489 | 16,098 | 59,612 | 31,519",
+    "eps": "Diluted net income per share attributable to salesforce.com common shareholders | 0.17 | 0.08 | 0.31 | 0.16",
+    "shares": "Shares used in computing diluted net income per share | 126,566 | 125,626 | 125,894 | 125,091",
+    "deferred": "Deferred revenue, current and noncurrent | 549,010 | 549,373 | 594,026 | 469,534 | 479,546 | 470,297",
+    "deferred_hdr": "July 31,2009 | April 30,2009 | Jan 31,2009 | Oct 31,2008 | Jul 31,2008 | Apr 30,2008",
+    "cash": "Cash, cash equivalents and marketable securities | 1,030,406 | 983,824 | 882,565 | 804,606 | 823,417 | 750,633"
+   },
+   "sales_prev_q_row": {
+    "source": "CR21",
+    "row": "Total revenues | 304,924 | 247,622"
+   },
+   "extra_sources": [
+    "CR21"
+   ],
+   "sales_b": 0.3161,
+   "sales_pct": 20.1,
+   "seq_pct": 3.7,
+   "sub_pct": 22.4,
+   "deferred_b": 0.549,
+   "deferred_pct": 14.5,
+   "gross_margin": 80.23,
+   "gross_margin_bp": 78.8,
+   "op_margin": 9.33,
+   "op_margin_bp": 321.1,
+   "opex_pct": 16.2,
+   "opex_gap_pp": -4.0,
+   "eps_q": 0.17,
+   "eps_q_prior": 0.08,
+   "diluted_shares_m": 126.566,
+   "cash_b": 1.0304,
+   "sales_note": "revenues $316.1M vs $263.1M a year earlier, $304.9M the quarter before; subscription and support $293.4M vs $239.7M",
+   "deferred_note": "deferred revenue $549.0M (2009-07-31) vs $479.5M a year earlier, current and noncurrent (the release's Additional Metrics)",
+   "eps_note": "GAAP diluted EPS $0.17 vs $0.08; the release prints GAAP only",
+   "shares_note": "diluted shares 126.6M",
+   "next_print": "Q3 FY10 print (November)"
+  },
+  {
+   "quarter": "Q3 FY10",
+   "fy": 2010,
+   "q": 3,
+   "published": "2009-11-18",
+   "source": "CR23",
+   "release": "Nov 17",
+   "release_time": "after the close on Nov 17: 8-K accepted 2009-11-17 16:32 ET; public before the open of the next trading day 2009-11-18",
+   "period_end": "2009-10-31",
+   "raw": {
+    "sub_k": 306870.0,
+    "sub_prior_k": 253403.0,
+    "sales_k": 330549.0,
+    "sales_prior_k": 276487.0,
+    "gross_profit_k": 264979.0,
+    "gross_profit_prior_k": 220139.0,
+    "rd_k": 32763.0,
+    "rd_prior_k": 26270.0,
+    "ms_k": 152166.0,
+    "ms_prior_k": 136452.0,
+    "ga_k": 49909.0,
+    "ga_prior_k": 41284.0,
+    "op_income_k": 30141.0,
+    "op_income_prior_k": 16133.0,
+    "deferred_k": 545435.0,
+    "deferred_prior_k": 469534.0,
+    "sales_prev_q_k": 316061.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 306,870 | 253,403 | 882,078 | 718,464",
+    "sales": "Total revenues | 330,549 | 276,487 | 951,534 | 787,186",
+    "gp": "Gross profit | 264,979 | 220,139 | 761,668 | 625,449",
+    "rd": "Research and development | 32,763 | 26,270 | 95,450 | 70,070",
+    "ms": "Marketing and sales | 152,166 | 136,452 | 436,647 | 389,930",
+    "ga": "General and administrative | 49,909 | 41,284 | 139,818 | 117,797",
+    "op": "Income from operations | 30,141 | 16,133 | 89,753 | 47,652",
+    "eps": "Diluted net income per share attributable to salesforce.com common shareholders | 0.16 | 0.08 | 0.48 | 0.24",
+    "shares": "Shares used in computing diluted net income per share | 128,596 | 125,133 | 126,993 | 125,173",
+    "deferred": "Deferred revenue, current and noncurrent | 545,435 | 549,010 | 549,373 | 594,026 | 469,534 | 479,546",
+    "deferred_hdr": "Oct 31, | Jul 31, | April 30, | Jan 31, | Oct 31, | Jul 31,",
+    "cash": "Cash, cash equivalents and marketable securities | 1,070,092 | 1,030,406 | 983,824 | 882,565 | 804,606 | 823,417"
+   },
+   "sales_prev_q_row": {
+    "source": "CR22",
+    "row": "Total revenues | 316,061 | 263,077 | 620,985 | 510,699"
+   },
+   "extra_sources": [
+    "CR22"
+   ],
+   "sales_b": 0.3305,
+   "sales_pct": 19.6,
+   "seq_pct": 4.6,
+   "sub_pct": 21.1,
+   "deferred_b": 0.5454,
+   "deferred_pct": 16.2,
+   "gross_margin": 80.16,
+   "gross_margin_bp": 54.3,
+   "op_margin": 9.12,
+   "op_margin_bp": 328.3,
+   "opex_pct": 15.1,
+   "opex_gap_pp": -4.4,
+   "eps_q": 0.16,
+   "eps_q_prior": 0.08,
+   "diluted_shares_m": 128.596,
+   "cash_b": 1.0701,
+   "sales_note": "revenues $330.5M vs $276.5M a year earlier, $316.1M the quarter before; subscription and support $306.9M vs $253.4M",
+   "deferred_note": "deferred revenue $545.4M (2009-10-31) vs $469.5M a year earlier, current and noncurrent (the release's Additional Metrics)",
+   "eps_note": "GAAP diluted EPS $0.16 vs $0.08; the release prints GAAP only",
+   "shares_note": "diluted shares 128.6M",
+   "next_print": "Q4 FY10 print (February)"
+  }
+ ],
+ "guides": [
+  {
+   "fy": 2008,
+   "published": "2006-12-13",
+   "source": "CR8",
+   "doc": "8-K of 2006-12-12",
+   "rev_guide_usd_b": [
+    0.71,
+    0.72
+   ],
+   "rev_quote": "The company now expects revenue to be in the range of $710 million to $720 million for its fiscal year ending January 31, 2008."
+  },
+  {
+   "fy": 2008,
+   "published": "2007-02-22",
+   "source": "CR9",
+   "doc": "Q4 FY07 release",
+   "quarter": "Q1 FY08",
+   "level_stated": true,
+   "level_m": [
+    155.0,
+    157.0
+   ],
+   "prior_label": "Q1 FY07",
+   "prior_sales_m": 104.686,
+   "prior_source": "CR5",
+   "prior_row": "Total revenues | 104,686 | 64,177",
+   "yoy_pct": [
+    48.1,
+    50.0
+   ],
+   "quote": "Revenue for the company’s first fiscal quarter is projected to be in the range of approximately $155 million to approximately $157 million.",
+   "rev_guide_usd_b": [
+    0.71,
+    0.72
+   ],
+   "rev_quote": "with revenue expected to be approximately $710 million to approximately $720 million",
+   "eps_guide": [
+    0.07,
+    0.09
+   ],
+   "eps_quote": "expecting GAAP diluted EPS to be in the range of approximately $0.07 to $0.09",
+   "eps_guide_note": "GAAP diluted EPS",
+   "display": "'GAAP diluted EPS is expected to be in the range of approximately <$0.01> to $0.01.' (Q1 FY08)"
+  },
+  {
+   "fy": 2008,
+   "published": "2007-05-17",
+   "source": "CR11",
+   "doc": "Q1 FY08 release",
+   "quarter": "Q2 FY08",
+   "level_stated": true,
+   "level_m": [
+    171.0,
+    173.0
+   ],
+   "prior_label": "Q2 FY07",
+   "prior_sales_m": 118.137,
+   "prior_source": "CR6",
+   "prior_row": "Total revenues | 118,137 | 71,943 | 222,823 | 136,120",
+   "yoy_pct": [
+    44.7,
+    46.4
+   ],
+   "quote": "Revenue for the company’s second fiscal quarter is projected to be in the range of approximately $171 million to $173 million.",
+   "rev_guide_usd_b": [
+    0.722,
+    0.728
+   ],
+   "rev_quote": "with revenue now expected to be approximately $722 million to approximately $728 million",
+   "eps_guide": [
+    0.07,
+    0.09
+   ],
+   "eps_quote": "The company is also reiterating earnings outlook for the full year, expecting GAAP diluted EPS to be in the range of approximately $0.07 to $0.09.",
+   "eps_guide_note": "GAAP diluted EPS",
+   "display": "'GAAP diluted EPS is expected to be in the range of approximately breakeven to $0.01.' (Q2 FY08)"
+  },
+  {
+   "fy": 2008,
+   "published": "2007-08-16",
+   "source": "CR12",
+   "doc": "Q2 FY08 release",
+   "quarter": "Q3 FY08",
+   "level_stated": true,
+   "level_m": [
+    187.0,
+    189.0
+   ],
+   "prior_label": "Q3 FY07",
+   "prior_sales_m": 130.053,
+   "prior_source": "CR7",
+   "prior_row": "Total revenues | 130,053 | 82,673 | 352,876 | 218,793",
+   "yoy_pct": [
+    43.8,
+    45.3
+   ],
+   "quote": "Revenue for the company’s third fiscal quarter is projected to be in the range of approximately $187 million to $189 million.",
+   "rev_guide_usd_b": [
+    0.727,
+    0.732
+   ],
+   "rev_quote": "Revenue is now expected to be approximately $727 million to approximately $732 million.",
+   "eps_guide": [
+    0.08,
+    0.1
+   ],
+   "eps_quote": "The company now expects GAAP diluted EPS to be in the range of approximately $0.08 to $0.10.",
+   "eps_guide_note": "GAAP diluted EPS",
+   "display": "'GAAP diluted EPS is expected to be in the range of approximately $0.01 to $0.02.' (Q3 FY08)"
+  },
+  {
+   "fy": 2008,
+   "published": "2007-11-16",
+   "source": "CR13",
+   "doc": "Q3 FY08 release",
+   "quarter": "Q4 FY08",
+   "level_stated": true,
+   "level_m": [
+    206.0,
+    208.0
+   ],
+   "prior_label": "Q4 FY07",
+   "prior_sales_m": 144.222,
+   "prior_source": "CR9",
+   "prior_row": "Total revenues | 144,222 | 91,064 | 497,098 | 309,857",
+   "yoy_pct": [
+    42.8,
+    44.2
+   ],
+   "quote": "Revenue for the company’s fourth fiscal quarter is projected to be in the range of approximately $206 million to $208 million.",
+   "rev_guide_usd_b": [
+    0.737,
+    0.739
+   ],
+   "rev_quote": "Revenue is now expected to be approximately $737 million to approximately $739 million.",
+   "eps_guide": [
+    0.12,
+    0.13
+   ],
+   "eps_quote": "The company now expects GAAP diluted EPS to be in the range of approximately $0.12 to $0.13.",
+   "eps_guide_note": "GAAP diluted EPS, including the third quarter's gain on the sale of a minority investment, as published",
+   "note": "'This GAAP EPS estimate includes the effects of stock based compensation, amortization of purchased intangibles, and the third quarter gain on the sale of a minority investment.' (Q3 FY08 release)",
+   "display": "'GAAP diluted EPS is expected to be in the range of approximately $0.03 to $0.04.' (Q4 FY08)"
+  },
+  {
+   "fy": 2009,
+   "published": "2007-11-16",
+   "source": "CR13",
+   "doc": "Q3 FY08 release",
+   "rev_guide_usd_b": [
+    1.0,
+    1.02
+   ],
+   "rev_quote": "now expects full year revenue of approximately $1.0 billion to approximately $1.02 billion",
+   "note": "'The company plans to provide its expectations for FY09 GAAP EPS at the time it announces its fourth quarter FY08 results planned for February, 2008.' (Q3 FY08 release)"
+  },
+  {
+   "fy": 2009,
+   "published": "2008-02-28",
+   "source": "CR14",
+   "doc": "Q4 FY08 release",
+   "quarter": "Q1 FY09",
+   "level_stated": true,
+   "level_m": [
+    233.0,
+    235.0
+   ],
+   "prior_label": "Q1 FY08",
+   "prior_sales_m": 162.412,
+   "prior_source": "CR11",
+   "prior_row": "Total revenues | 162,412 | 104,686",
+   "yoy_pct": [
+    43.5,
+    44.7
+   ],
+   "quote": "Revenue for the company’s first fiscal quarter is projected to be in the range of approximately $233 million to approximately $235 million.",
+   "rev_guide_usd_b": [
+    1.03,
+    1.035
+   ],
+   "rev_quote": "with revenue now expected to be approximately $1.030 billion to approximately $1.035 billion",
+   "eps_guide": [
+    0.32,
+    0.33
+   ],
+   "eps_quote": "expecting GAAP diluted EPS to be in the range of approximately $0.32 to $0.33",
+   "eps_guide_note": "GAAP diluted EPS",
+   "display": "'GAAP diluted EPS is expected to be in the range of approximately $0.06 to $0.07.' (Q1 FY09)"
+  },
+  {
+   "fy": 2009,
+   "published": "2008-05-22",
+   "source": "CR16",
+   "doc": "Q1 FY09 release",
+   "quarter": "Q2 FY09",
+   "level_stated": true,
+   "level_m": [
+    258.0,
+    259.0
+   ],
+   "prior_label": "Q2 FY08",
+   "prior_sales_m": 176.579,
+   "prior_source": "CR12",
+   "prior_row": "Total revenues | 176,579 | 118,137 | 338,991 | 222,823",
+   "yoy_pct": [
+    46.1,
+    46.7
+   ],
+   "quote": "Revenue for the company’s second fiscal quarter is projected to be in the range of approximately $258 million to approximately $259 million.",
+   "rev_guide_usd_b": [
+    1.06,
+    1.065
+   ],
+   "rev_quote": "with revenue now expected to be approximately $1.060 billion to approximately $1.065 billion",
+   "eps_guide": [
+    0.33,
+    0.34
+   ],
+   "eps_quote": "expecting GAAP diluted EPS to be in the range of approximately $0.33 to $0.34",
+   "eps_guide_note": "GAAP diluted EPS",
+   "display": "'GAAP diluted EPS is expected to be in the range of approximately $0.07 to $0.08.' (Q2 FY09)"
+  },
+  {
+   "fy": 2009,
+   "published": "2008-08-21",
+   "source": "CR17",
+   "doc": "Q2 FY09 release",
+   "quarter": "Q3 FY09",
+   "level_stated": true,
+   "level_m": [
+    273.0,
+    274.0
+   ],
+   "prior_label": "Q3 FY08",
+   "prior_sales_m": 192.803,
+   "prior_source": "CR13",
+   "prior_row": "Total revenues | 192,803 | 130,053 | 531,794 | 352,876",
+   "yoy_pct": [
+    41.6,
+    42.1
+   ],
+   "quote": "Revenue for the company’s third fiscal quarter is projected to be in the range of approximately $273 million to approximately $274 million.",
+   "rev_guide_usd_b": [
+    1.07,
+    1.075
+   ],
+   "rev_quote": "with revenue now expected to be in the range of approximately $1.070 billion to approximately $1.075 billion",
+   "eps_guide": [
+    0.29,
+    0.3
+   ],
+   "eps_quote": "Including the effect of the InStranet acquisition, estimated at $0.05 for the full year, the company is updating its fiscal FY09 GAAP fully diluted EPS guidance to be in the range of $0.29 to $0.30.",
+   "eps_guide_note": "GAAP diluted EPS, including the InStranet acquisition (its results and the amortization of its intangibles recur, so the range without it is not used)",
+   "eps_ex_item": {
+    "eps": [
+     0.34,
+     0.35
+    ],
+    "quote": "Excluding the effect of the InStranet acquisition the company’s EPS outlook has improved to $0.34 to $0.35, from its prior guidance of $0.33 to $0.34."
+   },
+   "display": "'Including the effect of the InStranet acquisition, estimated at $0.02 for the third quarter, the company is issuing guidance that its GAAP fully diluted EPS will be in the range of $0.06 to $0.07.' (Q3 FY09)"
+  },
+  {
+   "fy": 2009,
+   "published": "2008-11-21",
+   "source": "CR18",
+   "doc": "Q3 FY09 release",
+   "quarter": "Q4 FY09",
+   "level_stated": true,
+   "level_m": [
+    284.0,
+    285.0
+   ],
+   "prior_label": "Q4 FY08",
+   "prior_sales_m": 216.906,
+   "prior_source": "CR14",
+   "prior_row": "Total revenues | 216,906 | 144,222 | 748,700 | 497,098",
+   "yoy_pct": [
+    30.9,
+    31.4
+   ],
+   "quote": "Revenue for the company’s fourth fiscal quarter is projected to be in the range of approximately $284 million to approximately $285 million.",
+   "note": "no FY09 revenue or EPS range restated: the August ranges stand",
+   "display": "'The company expects fully diluted GAAP EPS to be in the range of $0.06 to $0.07.' (Q4 FY09)"
+  },
+  {
+   "fy": 2010,
+   "published": "2008-11-21",
+   "source": "CR18",
+   "doc": "Q3 FY09 release",
+   "rev_guide_usd_b": [
+    1.35,
+    1.36
+   ],
+   "rev_quote": "The company is initiating revenue guidance for its full fiscal year 2010 with projected revenue in the range of $1.350 billion to $1.360 billion.",
+   "note": "'The company expects to update this guidance, as well as provide its expectations for FY10 GAAP EPS when it announces its fourth quarter, fiscal year 2009 results planned for February, 2009.' (Q3 FY09 release)"
+  },
+  {
+   "fy": 2010,
+   "published": "2009-02-26",
+   "source": "CR19",
+   "doc": "Q4 FY09 release",
+   "quarter": "Q1 FY10",
+   "level_stated": true,
+   "level_m": [
+    304.0,
+    305.0
+   ],
+   "prior_label": "Q1 FY09",
+   "prior_sales_m": 247.622,
+   "prior_source": "CR16",
+   "prior_row": "Total revenues | 247,622 | 162,412",
+   "yoy_pct": [
+    22.8,
+    23.2
+   ],
+   "quote": "Revenue for the company’s first fiscal quarter is projected to be in the range of approximately $304 million to approximately $305 million.",
+   "rev_guide_usd_b": [
+    1.3,
+    1.33
+   ],
+   "rev_quote": "with revenue now expected to be approximately $1.30 billion to approximately $1.33 billion",
+   "eps_guide": [
+    0.54,
+    0.55
+   ],
+   "eps_quote": "expecting GAAP diluted EPS to be in the range of approximately $0.54 to approximately $0.55",
+   "eps_guide_note": "GAAP diluted EPS",
+   "display": "'GAAP diluted EPS is expected to be in the range of approximately $0.10 to approximately $0.11.' (Q1 FY10)"
+  },
+  {
+   "fy": 2010,
+   "published": "2009-05-22",
+   "source": "CR21",
+   "doc": "Q1 FY10 release",
+   "quarter": "Q2 FY10",
+   "level_stated": true,
+   "level_m": [
+    312.0,
+    313.0
+   ],
+   "prior_label": "Q2 FY09",
+   "prior_sales_m": 263.077,
+   "prior_source": "CR17",
+   "prior_row": "Total revenues | 263,077 | 176,579 | 510,699 | 338,991",
+   "yoy_pct": [
+    18.6,
+    19.0
+   ],
+   "quote": "Revenue for the company’s second fiscal quarter is projected to be in the range of approximately $312 million to approximately $313 million.",
+   "rev_guide_usd_b": [
+    1.25,
+    1.27
+   ],
+   "rev_quote": "with revenue now expected to be approximately $1.25 billion to approximately $1.27 billion",
+   "eps_guide": [
+    0.59,
+    0.6
+   ],
+   "eps_quote": "expecting GAAP diluted EPS to be in the range of approximately $0.59 to approximately $0.60",
+   "eps_guide_note": "GAAP diluted EPS",
+   "display": "'GAAP diluted EPS is expected to be in the range of approximately $0.14 to approximately $0.15.' (Q2 FY10)"
+  },
+  {
+   "fy": 2010,
+   "published": "2009-08-21",
+   "source": "CR22",
+   "doc": "Q2 FY10 release",
+   "quarter": "Q3 FY10",
+   "level_stated": true,
+   "level_m": [
+    323.0,
+    324.0
+   ],
+   "prior_label": "Q3 FY09",
+   "prior_sales_m": 276.487,
+   "prior_source": "CR18",
+   "prior_row": "Total revenues | 276,487 | 192,803 | 787,186 | 531,794",
+   "yoy_pct": [
+    16.8,
+    17.2
+   ],
+   "quote": "Revenue for the company’s third fiscal quarter is projected to be in the range of approximately $323 million to approximately $324 million.",
+   "rev_guide_usd_b": [
+    1.27,
+    1.28
+   ],
+   "rev_quote": "with revenue now expected to be approximately $1.27 billion to approximately $1.28 billion",
+   "eps_guide": [
+    0.6,
+    0.61
+   ],
+   "eps_quote": "expecting GAAP diluted EPS to be in the range of approximately $0.60 to approximately $0.61",
+   "eps_guide_note": "GAAP diluted EPS",
+   "display": "'GAAP diluted EPS is expected to be in the range of approximately $0.15 to approximately $0.16.' (Q3 FY10)"
+  },
+  {
+   "fy": 2010,
+   "published": "2009-11-18",
+   "source": "CR23",
+   "doc": "Q3 FY10 release",
+   "quarter": "Q4 FY10",
+   "level_stated": true,
+   "level_m": [
+    340.0,
+    342.0
+   ],
+   "prior_label": "Q4 FY09",
+   "prior_sales_m": 289.583,
+   "prior_source": "CR19",
+   "prior_row": "Total revenues | 289,583 | 216,906 | 1,076,769 | 748,700",
+   "yoy_pct": [
+    17.4,
+    18.1
+   ],
+   "quote": "Revenue for the company’s fourth fiscal quarter is projected to be in the range of approximately $340 million to approximately $342 million.",
+   "rev_guide_usd_b": [
+    1.292,
+    1.294
+   ],
+   "rev_quote": "with revenue now expected to be approximately $1.292 billion to approximately $1.294 billion",
+   "eps_guide": [
+    0.62,
+    0.63
+   ],
+   "eps_quote": "expecting GAAP diluted EPS to be in the range of approximately $0.62 to approximately $0.63",
+   "eps_guide_note": "GAAP diluted EPS",
+   "display": "'GAAP diluted EPS is expected to be in the range of approximately $0.14 to approximately $0.15.' (Q4 FY10)"
+  }
+ ],
+ "dividends": [],
+ "events": [],
+ "company_names": [],
+ "splits": [],
+ "rule_t": {
+  "sub": {
+   "measure": "subscription and support revenue growth, % (five-year selected data)",
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "2002": 328.38,
+    "2003": 121.52,
+    "2004": 80.03,
+    "2005": 84.13,
+    "2006": 77.65,
+    "2007": 60.94
+   },
+   "raw": {
+    "2002": {
+     "source": "CR2",
+     "sub_k": [
+      5022.0,
+      21513.0
+     ],
+     "rows": [
+      "Subscription and support | 157,977 | 85,796 | 47,656 | 21,513 | 5,022"
+     ]
+    },
+    "2003": {
+     "source": "CR4",
+     "sub_k": [
+      21513.0,
+      47656.0
+     ],
+     "rows": [
+      "Subscription and support | 280,639 | 157,977 | 85,796 | 47,656 | 21,513"
+     ]
+    },
+    "2004": {
+     "source": "CR10",
+     "sub_k": [
+      47656.0,
+      85796.0
+     ],
+     "rows": [
+      "Subscription and support | 451,660 | 280,639 | 157,977 | 85,796 | 47,656"
+     ]
+    },
+    "2005": {
+     "source": "CR10",
+     "sub_k": [
+      85796.0,
+      157977.0
+     ],
+     "rows": [
+      "Subscription and support | 451,660 | 280,639 | 157,977 | 85,796 | 47,656"
+     ]
+    },
+    "2006": {
+     "source": "CR10",
+     "sub_k": [
+      157977.0,
+      280639.0
+     ],
+     "rows": [
+      "Subscription and support | 451,660 | 280,639 | 157,977 | 85,796 | 47,656"
+     ]
+    },
+    "2007": {
+     "source": "CR10",
+     "sub_k": [
+      280639.0,
+      451660.0
+     ],
+     "rows": [
+      "Subscription and support | 451,660 | 280,639 | 157,977 | 85,796 | 47,656"
+     ]
+    }
+   },
+   "thresholds": {
+    "BEAR": 40,
+    "BASE": 61,
+    "BULL": 82,
+    "XBULL": 328
+   }
+  },
+  "deferred": {
+   "measure": "deferred revenue growth, % (year-end balances: the FY2006 10-K's selected data for fiscal 2002-2006, the FY2007 10-K's balance sheet)",
+   "unit": 1,
+   "lower_is_better": false,
+   "values": {
+    "2003": 168.95,
+    "2004": 159.13,
+    "2005": 93.05,
+    "2006": 76.41,
+    "2007": 67.91
+   },
+   "raw": {
+    "2003": {
+     "source": "CR4",
+     "deferred_k": [
+      7128.0,
+      19171.0
+     ],
+     "rows": [
+      "Deferred revenue | 169,175 | 95,900 | 49,677 | 19,171 | 7,128"
+     ]
+    },
+    "2004": {
+     "source": "CR4",
+     "deferred_k": [
+      19171.0,
+      49677.0
+     ],
+     "rows": [
+      "Deferred revenue | 169,175 | 95,900 | 49,677 | 19,171 | 7,128"
+     ]
+    },
+    "2005": {
+     "source": "CR4",
+     "deferred_k": [
+      49677.0,
+      95900.0
+     ],
+     "rows": [
+      "Deferred revenue | 169,175 | 95,900 | 49,677 | 19,171 | 7,128"
+     ]
+    },
+    "2006": {
+     "source": "CR4",
+     "deferred_k": [
+      95900.0,
+      169175.0
+     ],
+     "rows": [
+      "Deferred revenue | 169,175 | 95,900 | 49,677 | 19,171 | 7,128"
+     ]
+    },
+    "2007": {
+     "source": "CR10",
+     "deferred_k": [
+      169175.0,
+      284063.0
+     ],
+     "rows": [
+      "Deferred revenue | 284,063 | 169,175"
+     ]
+    }
+   },
+   "thresholds": {
+    "BEAR": 43,
+    "BASE": 68,
+    "BULL": 93,
+    "XBULL": 169
+   }
+  },
+  "gross_margin": {
+   "measure": "gross margin change, bp (gross profit over total revenues)",
+   "unit": 10,
+   "lower_is_better": false,
+   "values": {
+    "2002": 3597.8,
+    "2003": 666.1,
+    "2004": 233.5,
+    "2005": -97.9,
+    "2006": -334.1,
+    "2007": -160.8
+   },
+   "raw": {
+    "2002": {
+     "source": "CR2",
+     "gross_profit_k": [
+      2013.0,
+      16362.0
+     ],
+     "revenue_k": [
+      5435.0,
+      22409.0
+     ],
+     "rows": [
+      "Gross profit | 142,921 | 78,750 | 40,628 | 16,362 | 2,013",
+      "Total revenues | 176,375 | 96,023 | 50,991 | 22,409 | 5,435"
+     ]
+    },
+    "2003": {
+     "source": "CR4",
+     "gross_profit_k": [
+      16362.0,
+      40628.0
+     ],
+     "revenue_k": [
+      22409.0,
+      50991.0
+     ],
+     "rows": [
+      "Gross profit | 240,731 | 142,921 | 78,750 | 40,628 | 16,362",
+      "Total revenues | 309,857 | 176,375 | 96,023 | 50,991 | 22,409"
+     ]
+    },
+    "2004": {
+     "source": "CR10",
+     "gross_profit_k": [
+      40628.0,
+      78750.0
+     ],
+     "revenue_k": [
+      50991.0,
+      96023.0
+     ],
+     "rows": [
+      "Gross profit | 378,208 | 240,731 | 142,921 | 78,750 | 40,628",
+      "Total revenues | 497,098 | 309,857 | 176,375 | 96,023 | 50,991"
+     ]
+    },
+    "2005": {
+     "source": "CR10",
+     "gross_profit_k": [
+      78750.0,
+      142921.0
+     ],
+     "revenue_k": [
+      96023.0,
+      176375.0
+     ],
+     "rows": [
+      "Gross profit | 378,208 | 240,731 | 142,921 | 78,750 | 40,628",
+      "Total revenues | 497,098 | 309,857 | 176,375 | 96,023 | 50,991"
+     ]
+    },
+    "2006": {
+     "source": "CR10",
+     "gross_profit_k": [
+      142921.0,
+      240731.0
+     ],
+     "revenue_k": [
+      176375.0,
+      309857.0
+     ],
+     "rows": [
+      "Gross profit | 378,208 | 240,731 | 142,921 | 78,750 | 40,628",
+      "Total revenues | 497,098 | 309,857 | 176,375 | 96,023 | 50,991"
+     ]
+    },
+    "2007": {
+     "source": "CR10",
+     "gross_profit_k": [
+      240731.0,
+      378208.0
+     ],
+     "revenue_k": [
+      309857.0,
+      497098.0
+     ],
+     "rows": [
+      "Gross profit | 378,208 | 240,731 | 142,921 | 78,750 | 40,628",
+      "Total revenues | 497,098 | 309,857 | 176,375 | 96,023 | 50,991"
+     ]
+    }
+   },
+   "thresholds": {
+    "BEAR": -740,
+    "BASE": -330,
+    "BULL": 70,
+    "XBULL": 3600
+   }
+  },
+  "opex_gap": {
+   "measure": "growth of research and development, marketing and sales and general and administrative less total revenue growth, pp (the lease lines stay out)",
+   "unit": 1,
+   "lower_is_better": true,
+   "values": {
+    "2002": -304.96,
+    "2003": -93.81,
+    "2004": -34.82,
+    "2005": -9.87,
+    "2006": -13.72,
+    "2007": 12.4
+   },
+   "raw": {
+    "2002": {
+     "source": "CR2",
+     "rd_k": [
+      3366.0,
+      5308.0
+     ],
+     "ms_k": [
+      25392.0,
+      24605.0
+     ],
+     "ga_k": [
+      6855.0,
+      8317.0
+     ],
+     "revenue_k": [
+      5435.0,
+      22409.0
+     ],
+     "rows": [
+      "Research and development | 9,822 | 6,962 | 4,648 | 5,308 | 3,366",
+      "Marketing and sales | 96,311 | 54,600 | 33,522 | 24,605 | 25,392",
+      "General and administrative | 30,268 | 16,915 | 12,958 | 8,317 | 6,855",
+      "Total revenues | 176,375 | 96,023 | 50,991 | 22,409 | 5,435"
+     ]
+    },
+    "2003": {
+     "source": "CR4",
+     "rd_k": [
+      5308.0,
+      4648.0
+     ],
+     "ms_k": [
+      24605.0,
+      33522.0
+     ],
+     "ga_k": [
+      8317.0,
+      12958.0
+     ],
+     "revenue_k": [
+      22409.0,
+      50991.0
+     ],
+     "rows": [
+      "Research and development | 23,330 | 9,822 | 6,962 | 4,648 | 5,308",
+      "Marketing and sales | 149,598 | 96,311 | 54,600 | 33,522 | 24,605",
+      "General and administrative | 47,986 | 30,268 | 16,915 | 12,958 | 8,317",
+      "Total revenues | 309,857 | 176,375 | 96,023 | 50,991 | 22,409"
+     ]
+    },
+    "2004": {
+     "source": "CR10",
+     "rd_k": [
+      4648.0,
+      6962.0
+     ],
+     "ms_k": [
+      33522.0,
+      54600.0
+     ],
+     "ga_k": [
+      12958.0,
+      16915.0
+     ],
+     "revenue_k": [
+      50991.0,
+      96023.0
+     ],
+     "rows": [
+      "Research and development | 44,614 | 23,330 | 9,822 | 6,962 | 4,648",
+      "Marketing and sales | 252,935 | 149,598 | 96,311 | 54,600 | 33,522",
+      "General and administrative | 84,257 | 47,986 | 30,268 | 16,915 | 12,958",
+      "Total revenues | 497,098 | 309,857 | 176,375 | 96,023 | 50,991"
+     ]
+    },
+    "2005": {
+     "source": "CR10",
+     "rd_k": [
+      6962.0,
+      9822.0
+     ],
+     "ms_k": [
+      54600.0,
+      96311.0
+     ],
+     "ga_k": [
+      16915.0,
+      30268.0
+     ],
+     "revenue_k": [
+      96023.0,
+      176375.0
+     ],
+     "rows": [
+      "Research and development | 44,614 | 23,330 | 9,822 | 6,962 | 4,648",
+      "Marketing and sales | 252,935 | 149,598 | 96,311 | 54,600 | 33,522",
+      "General and administrative | 84,257 | 47,986 | 30,268 | 16,915 | 12,958",
+      "Total revenues | 497,098 | 309,857 | 176,375 | 96,023 | 50,991"
+     ]
+    },
+    "2006": {
+     "source": "CR10",
+     "rd_k": [
+      9822.0,
+      23330.0
+     ],
+     "ms_k": [
+      96311.0,
+      149598.0
+     ],
+     "ga_k": [
+      30268.0,
+      47986.0
+     ],
+     "revenue_k": [
+      176375.0,
+      309857.0
+     ],
+     "rows": [
+      "Research and development | 44,614 | 23,330 | 9,822 | 6,962 | 4,648",
+      "Marketing and sales | 252,935 | 149,598 | 96,311 | 54,600 | 33,522",
+      "General and administrative | 84,257 | 47,986 | 30,268 | 16,915 | 12,958",
+      "Total revenues | 497,098 | 309,857 | 176,375 | 96,023 | 50,991"
+     ]
+    },
+    "2007": {
+     "source": "CR10",
+     "rd_k": [
+      23330.0,
+      44614.0
+     ],
+     "ms_k": [
+      149598.0,
+      252935.0
+     ],
+     "ga_k": [
+      47986.0,
+      84257.0
+     ],
+     "revenue_k": [
+      309857.0,
+      497098.0
+     ],
+     "rows": [
+      "Research and development | 44,614 | 23,330 | 9,822 | 6,962 | 4,648",
+      "Marketing and sales | 252,935 | 149,598 | 96,311 | 54,600 | 33,522",
+      "General and administrative | 84,257 | 47,986 | 30,268 | 16,915 | 12,958",
+      "Total revenues | 497,098 | 309,857 | 176,375 | 96,023 | 50,991"
+     ]
+    }
+   },
+   "thresholds": {
+    "BEAR": 49,
+    "BASE": 12,
+    "BULL": -24,
+    "XBULL": -305
+   }
+  },
+  "op_margin": {
+   "measure": "operating margin change, bp (income (loss) from operations over total revenues)",
+   "unit": 10,
+   "lower_is_better": false,
+   "values": {
+    "2002": 48646.0,
+    "2003": 11116.3,
+    "2004": 2446.4,
+    "2005": -17.5,
+    "2006": 279.1,
+    "2007": -721.1
+   },
+   "raw": {
+    "2002": {
+     "source": "CR2",
+     "op_income_k": [
+      -33600.0,
+      -29525.0
+     ],
+     "revenue_k": [
+      5435.0,
+      22409.0
+     ],
+     "rows": [
+      "Income (loss) from operations | 6,520 | 3,718 | (10,500) | (29,525) | (33,600)",
+      "Total revenues | 176,375 | 96,023 | 50,991 | 22,409 | 5,435"
+     ]
+    },
+    "2003": {
+     "source": "CR4",
+     "op_income_k": [
+      -29525.0,
+      -10500.0
+     ],
+     "revenue_k": [
+      22409.0,
+      50991.0
+     ],
+     "rows": [
+      "Income (loss) from operations | 20,102 | 6,520 | 3,718 | (10,500) | (29,525)",
+      "Total revenues | 309,857 | 176,375 | 96,023 | 50,991 | 22,409"
+     ]
+    },
+    "2004": {
+     "source": "CR10",
+     "op_income_k": [
+      -10500.0,
+      3718.0
+     ],
+     "revenue_k": [
+      50991.0,
+      96023.0
+     ],
+     "rows": [
+      "Income (loss) from operations | (3,598) | 20,102 | 6,520 | 3,718 | (10,500)",
+      "Total revenues | 497,098 | 309,857 | 176,375 | 96,023 | 50,991"
+     ]
+    },
+    "2005": {
+     "source": "CR10",
+     "op_income_k": [
+      3718.0,
+      6520.0
+     ],
+     "revenue_k": [
+      96023.0,
+      176375.0
+     ],
+     "rows": [
+      "Income (loss) from operations | (3,598) | 20,102 | 6,520 | 3,718 | (10,500)",
+      "Total revenues | 497,098 | 309,857 | 176,375 | 96,023 | 50,991"
+     ]
+    },
+    "2006": {
+     "source": "CR10",
+     "op_income_k": [
+      6520.0,
+      20102.0
+     ],
+     "revenue_k": [
+      176375.0,
+      309857.0
+     ],
+     "rows": [
+      "Income (loss) from operations | (3,598) | 20,102 | 6,520 | 3,718 | (10,500)",
+      "Total revenues | 497,098 | 309,857 | 176,375 | 96,023 | 50,991"
+     ]
+    },
+    "2007": {
+     "source": "CR10",
+     "op_income_k": [
+      20102.0,
+      -3598.0
+     ],
+     "revenue_k": [
+      309857.0,
+      497098.0
+     ],
+     "rows": [
+      "Income (loss) from operations | (3,598) | 20,102 | 6,520 | 3,718 | (10,500)",
+      "Total revenues | 497,098 | 309,857 | 176,375 | 96,023 | 50,991"
+     ]
+    }
+   },
+   "thresholds": {
+    "BEAR": -2800,
+    "BASE": -720,
+    "BULL": 1360,
+    "XBULL": 48650
+   }
+  },
+  "_doc": "Rule T over fiscal 1998-2007, the decade of the FY2007 10-K (the vintage public on 2008-01-04): salesforce.com's first period runs from its inception (February 3, 1999) to January 31, 2000 and has no revenue ('Total revenues | — | 5,435 | ...', the prospectus), so the changes are fiscal 2002-2007, each from the latest filing published by 2008-01-04 that reports both years (the FY2005 10-K for fiscal 2001-2002, the FY2006 10-K for 2002-2003, the FY2007 10-K for 2003-2007); deferred revenue has five (no filing reports the January 31, 2001 balance)"
+ }
+}
