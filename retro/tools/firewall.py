@@ -143,9 +143,11 @@ ratio, operating cost ratio, operating margin, quarter EPS, notes and raw figure
 after the latest vintage (or Q4 print) before CUTOFF, a later Q4 print whose full-year actuals exclude its own year, a later 10-Q
 restatement of the last print before CUTOFF (`restated`), a later guide for every guided year with every field (an EPS range and note, a
 GAAP range, a dollar revenue range, a stated margin range, then a margin derived from guided earnings from operations and a still later
-loss range, then, UNH 2010-2013, a margin derived from a guided range of earnings from operations), a later annual dividend rate, and a
+loss range, then, UNH 2010-2013, a margin derived from a guided range of earnings from operations, then, UNH 2022-2026, a withdrawal of
+every guided year and a one-sided EPS bound with a stated margin), a later annual dividend rate, and a
 later vintage excluding a year with planted texts, figures, groups, window start and kind, and from UNH 2014-2017 planted cloud words
-(from UNH 2018-2021 also a planted note on their absence) (the dividend and company name every fact sheet gets, too); GOOG: a print whose revenues, margins, opex and receivables gaps, quarter EPS, cash,
+(from UNH 2018-2021 also a planted note on their absence, from UNH 2022-2026 planted generative AI words) (the dividend and company
+name every fact sheet gets, too); GOOG: a print whose revenues, margins, opex and receivables gaps, quarter EPS, cash,
 notes and raw figures are absurd, with absurd full-year actuals for the year after the latest vintage before CUTOFF, a later Q4 print
 whose full-year actuals exclude its own year, a later 10-Q restatement of the last print before CUTOFF with absurd figures, and a later
 vintage excluding a year with planted texts, figures, outlook words, exchange and window start, every per-share figure on a planted
@@ -994,6 +996,12 @@ try:
             f["guides"].append({"fy": y, "published": (dt.date.fromisoformat(later) + dt.timedelta(days=3)).isoformat(),   # (UNH 2010-2013)
                                 "source": last["source"], "doc": "PLANTED", "rev_guide_usd_b": [0.5, 0.6], "rev_label": "PLANTED",
                                 "efo_guide_b": [0.01, 0.02], "op_margin_note": "PLANTED", "quotes": ["PLANTED"]})
+            f["guides"].append({"fy": y, "published": (dt.date.fromisoformat(later) + dt.timedelta(days=4)).isoformat(),   # (UNH 2022-2026)
+                                "source": last["source"], "doc": "PLANTED", "withdrawn": True, "withdrawn_quote": "PLANTED",
+                                "note": "PLANTED", "quotes": ["PLANTED"]})          # a later withdrawal of every guided year,
+            f["guides"].append({"fy": y, "published": (dt.date.fromisoformat(later) + dt.timedelta(days=5)).isoformat(),
+                                "source": last["source"], "doc": "PLANTED", "eps_bound": "PLANTED", "op_margin_guide": [-50.0, -49.0],
+                                "op_margin_note": "PLANTED", "note": "PLANTED", "quotes": ["PLANTED"]})   # then a one-sided EPS bound
         v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}
         v.update(normalization="PLANTED", business_line="PLANTED", prev_fy_op_margin=-99.0, prev_fy_op_margin_note="PLANTED",
                  prev_fy_pretax_margin=-99.0, prev_fy_pretax_margin_note="PLANTED", prev_fy_mcr=199.0, prev_fy_ocr=99.0,
@@ -1001,7 +1009,8 @@ try:
                  cfo_b=-99.0, debt_to_cap=99.0, dividend_annual=9.99, dividend_note="PLANTED", groups=[["PLANTED", 1, -99]],
                  groups_basis="PLANTED", exchange="PLANTED", pe_window_start="1990-01-02", kind="CYCLICAL",
                  margin_signal_name="PLANTED", fy_label="PLANTED", cloud_words="PLANTED",       # cloud words: UNH 2014-2017
-                 cloud_dropped="PLANTED")                                            # and their absence: UNH 2018-2021
+                 cloud_dropped="PLANTED",                                            # and their absence: UNH 2018-2021
+                 ai_words="PLANTED")                                                 # the generative AI words: UNH 2022-2026
         f["dividends"][-1]["annual"] = 9.99
     if TICKER == "MU":     # a later vintage excluding a year and readmitting none, with planted texts and figures
         v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}

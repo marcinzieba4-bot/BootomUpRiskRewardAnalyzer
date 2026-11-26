@@ -26,19 +26,25 @@ UNH model was built or scored):
     full year's operating margin on the EPS basis; otherwise none, and the margin signal takes the latest quarter's operating margin
     change;
   - dividend: the latest annual rate public on AS_OF: the vintage's (declared once a year to 2010, quarterly from June 2010), or a later
-    rate from the first filing that states it ('dividends': the Q2 2010-2019 releases, the Q2 2020 and 2021 10-Qs).
+    rate from the first filing that states it ('dividends': the Q2 2010-2019 releases, the Q2 2020-2024 and 2026 10-Qs, the Q2 2025
+    release's quarterly rate);
+  - (2022-2026) a guide marked 'withdrawn' (the 8-K of 2025-05-14 suspending the 2025 outlook) voids every earlier guide for its year,
+    the SPGI and V encoding; a one-sided EPS bound ('at least $14.65', 'greater than $17.10') is no field (the CAT rule), kept as
+    'eps_bound' for the text only.
 The kind is DURABLE: no 10-K calls the business cyclical. No disruption theme in taxonomy_eras.json is live for a health benefits
-company in 2008-2021: OFFSHORE is scoped to IT services, CLOUD (live from 2012-10-30) to on-premise hardware, storage, databases and
+company in 2008-2026: OFFSHORE is scoped to IT services, CLOUD (live from 2012-10-30) to on-premise hardware, storage, databases and
 data-center outsourcing, ECOMMERCE (2015-01-01) to physical retail, STREAMING (2015-08-04) to pay-TV, ENERGY_TRANSITION (2015-12-12)
 to fossil reserves and refining, EV (2020-01-01) to combustion powertrains and fuel retail and CRYPTO (2020-10-21) to payments and banks;
 no FY2006-FY2014 10-K names cloud or offshore delivery, the FY2015-FY2019 10-Ks name cloud only among OptumInsight's solutions for care
-providers ('cloud_words' on the vintage, quoted from that date) and the FY2020 10-K no longer names it ('cloud_dropped'); from the
+providers ('cloud_words' on the vintage, quoted from that date) and the FY2020 10-K no longer names it ('cloud_dropped'); GENAI (live
+from 2022-11-30) is scoped to software seats, IT services, information, search, education and mobility and GLP1 (2023-08-08) to snacks,
+beverages and devices, and the FY2023-FY2025 10-Ks name generative AI only for the company's own systems ('ai_words'); from the
 first date on which a
 theme other than OFFSHORE is live, the 'why' quotes every live theme's registered scope (the CB 2014-2017 wording). The builder refuses
 events until a theme encoding is decided; it also refuses a change of company name or listing and a distribution, none of which occurs.
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
-is the first trading day after it. Every earnings 8-K of 2007-2013 was accepted before the open on its release day.
+is the first trading day after it. Every earnings 8-K of 2007-2026 was accepted before the open on its release day.
 
 Output goes to staging/retrospective/UNH until the series is added to the archive (--out archive/retrospective/UNH).
 
@@ -48,6 +54,7 @@ Usage
   python3 retro/build_unh.py --weekly 2010-01-04 2013-12-31
   python3 retro/build_unh.py --weekly 2014-01-06 2017-12-31
   python3 retro/build_unh.py --weekly 2018-01-01 2021-12-31
+  python3 retro/build_unh.py --weekly 2022-01-03 2026-11-22      # last date 2026-11-20 (built 2026-11-26)
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/UNH/<AS_OF>
 """
 import argparse
@@ -75,7 +82,8 @@ ENGINE_THRESHOLDS = {"prem": (-6, 6, 18, 56), "mcr": (630, 290, -60, -230), "fee
                      "opm": (-1400, -650, 90, 510)}
 RULE_T_KEYS = {"prem": (1, False), "mcr": (10, True), "fee": (1, False), "ocr": (10, True), "opm": (10, False)}   # (rounding unit, lower is better)
 GUIDE_KEYS = {"fy", "published", "source", "doc", "quotes", "note", "eps_guide", "eps_guide_note", "eps_gaap", "rev_guide_usd_b",
-              "rev_label", "op_margin_guide", "op_margin_note", "efo_guide_b"}
+              "rev_label", "op_margin_guide", "op_margin_note", "efo_guide_b",
+              "withdrawn", "withdrawn_quote", "eps_bound"}      # (UNH 2022-2026) the 2025 suspension; a one-sided EPS bound, no field
 
 
 def fiscal_year(day):
@@ -240,8 +248,13 @@ def build(as_of, facts, raw, spx, engine, out):
 
     # ── guides for the current fiscal year: each field from the latest guide public on AS_OF that states it ──
     guides = [g for g in facts["guides"] if g["published"] <= as_of and g["fy"] == cur_fy]
-    stated = lambda *ks: next((g for g in reversed(guides) if any(g.get(k) is not None for k in ks)), None)
+    # (UNH 2022-2026) a suspended outlook ('withdrawn', the SPGI and V encoding: the 8-K of 2025-05-14) leaves no field: a field comes
+    # only from the guides published after the year's last withdrawal; no earlier UNH guide is a withdrawal
+    gone = [g for g in guides if g.get("withdrawn")]
+    live = [g for g in guides if not gone or g["published"] > gone[-1]["published"]]
+    stated = lambda *ks: next((g for g in reversed(live) if any(g.get(k) is not None for k in ks)), None)
     ge, gr, gm = stated("eps_guide"), stated("rev_guide_usd_b"), stated("op_margin_guide", "efo_guide_b")
+    gb = stated("eps_bound") if not ge else None       # (UNH 2022-2026) a one-sided EPS bound, shown when no range stands
     gg = next((g for g in reversed(guides) if g.get("eps_gaap") is not None and g is ge), None)
     loss_guide = bool(ge) and sum(ge["eps_guide"]) / 2 <= 0
     if ge and not loss_guide:
@@ -252,6 +265,11 @@ def build(as_of, facts, raw, spx, engine, out):
         eps_now = eps_hist[last_fy]
         why = (f"the EPS guide (${eps_rng(*ge['eps_guide'])}, {ge['doc']}) is a loss, which has no P/E" if loss_guide
                else "no numeric EPS guide yet")
+        if not ge and gone:      # (UNH 2022-2026) suspended, and no EPS range since
+            why = (f"no numeric EPS guide since the {gone[-1]['doc']} suspended the outlook ('{gone[-1]['withdrawn_quote']}')"
+                   + (f"; the {gb['doc']}'s '{gb['eps_bound']}' is a one-sided bound, no field (the CAT rule)" if gb else ""))
+        elif not ge and gb:      # (UNH 2022-2026) the year's EPS guide is a one-sided bound only
+            why = f"no numeric EPS guide: the {gb['doc']}'s '{gb['eps_bound']}' is a one-sided bound, no field (the CAT rule)"
         eps_label = eps_label_short = f"{fy_e}: {why}, FY{last_fy % 100:02d}'s ${money(eps_now)} stands"
     if gr:                     # fiscal-year revenue guide in dollars, read as growth on the last full year
         fwd = [round((v / last_rev - 1) * 100, 1) for v in gr["rev_guide_usd_b"]]
@@ -280,8 +298,11 @@ def build(as_of, facts, raw, spx, engine, out):
     else:
         margin_guided, fy_margin_base, m_txt = False, h["prev_fy_op_margin"], None
     if guides:
+        no_eps = ("no EPS range in numbers" if not (gone or gb) else                      # (UNH 2022-2026) the suspension, a bound
+                  "no EPS range in numbers" + (f" since the {gone[-1]['doc']} suspended the outlook" if gone else "")
+                  + (f" ({gb['doc']}: '{gb['eps_bound']}', a one-sided bound)" if gb else ""))
         bits = ([f"EPS ${eps_rng(*ge['eps_guide'])} ({ge['doc']}: {ge['eps_guide_note']})" + (" (a loss: no P/E, so not used)" if loss_guide else "")]
-                if ge else ["no EPS range in numbers"]) + \
+                if ge else [no_eps]) + \
                ([f"{gr['rev_label']} {usd_rng(*gr['rev_guide_usd_b'])} ({pct_range(*fwd)} on {fy_prev_s}'s ${last_rev:.2f}B; {gr['doc']})"]
                 if gr else ["no revenue guide in numbers"]) + \
                ([f"{m_txt}: a guided step from {fy_prev_s}'s {h['prev_fy_op_margin']:.2f}%"] if m_txt else ["no operating margin guide in numbers"]) + \
@@ -343,6 +364,9 @@ def build(as_of, facts, raw, spx, engine, out):
         if h.get("cloud_dropped"):       # from the FY2020 10-K, which no longer names cloud ('cloud_dropped'; README "UNH 2018-2021")
             tenk = (f"no 10-K names offshore delivery; the {h['fy_label']} 10-K does not name cloud ({h['cloud_dropped']}, not as a "
                     "substitute for UnitedHealth Group's business)")
+        if h.get("ai_words"):            # from the FY2023 10-K, which names generative AI in the company's own systems ('ai_words';
+            tenk += (f"; it names generative AI only for UnitedHealth Group's own systems ('{h['ai_words']}'), not as a substitute "   # README
+                     "for its business")                                                                                            # "UNH 2022-2026"
         why = (h["why"] + "; no disruption theme in taxonomy_eras.json is live for a health benefits company on this date (of the live "
                f"themes, {scopes}: none names health benefits, and {tenk}), so the watch list is empty "
                "and these words stay here (the PEP obesity rule)")
