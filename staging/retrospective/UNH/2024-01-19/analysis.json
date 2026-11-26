@@ -1,0 +1,310 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "UNH",
+ "company": "UnitedHealth Group Incorporated",
+ "as_of": "2024-01-19",
+ "price_date": "2024-01-19",
+ "price": 503.56,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); premium revenue, medical care ratio, fee revenue, operating cost ratio and operating margin signals with UnitedHealth Group's rule-T thresholds",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'UnitedHealth Group is a diversified health care company with a mission to help people live healthier lives and help make the health system work better for everyone.' 'If we fail to estimate, price for and manage our medical costs or set benefit designs in an effective manner, the profitability of our risk-based products and services could decline and could materially and adversely affect our results of operations, financial position and cash flows.' 'Premium revenues from risk-based products comprise nearly 80% of our total consolidated revenues.'; no disruption theme in taxonomy_eras.json is live for a health benefits company on this date (of the live themes, OFFSHORE is scoped to 'lower-cost offshore delivery (Indian IT services) takes share and price from Western consulting, systems integration and outsourcing', CLOUD to 'public cloud displaces on-premise hardware, storage, legacy databases and data-center outsourcing', ECOMMERCE to 'e-commerce (Amazon effect) displaces physical retail, malls, grocery, distribution', STREAMING to 'cord-cutting / streaming displaces linear TV networks and pay-TV bundles', ENERGY_TRANSITION to 'decarbonisation strands oil, gas and coal reserves and refining', EV to 'battery-electric vehicles displace ICE powertrains, auto parts suppliers and fuel retail', CRYPTO to 'crypto / DeFi disintermediates payments networks, banks, exchanges, remittance', GENAI to 'generative / autonomous AI substitutes the core product: software seats, IT services and BPO hours, professional information, search, education content, mobility', GLP1 to 'GLP-1 obesity drugs reduce demand for snacks, beverages, sleep-apnea/diabetes/cardio devices': none names health benefits, and no 10-K names offshore delivery; the FY23 10-K does not name cloud (the FY2015 to FY2019 10-K filings named it only among the solutions OptumInsight offers care providers, not as a substitute for UnitedHealth Group's business)), so the watch list is empty and these words stay here (the PEP obesity rule)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "'UnitedHealth Group is a diversified health care company with a mission to help people live healthier lives and help make the health system work better for everyone.' 'If we fail to estimate, price for and manage our medical costs or set benefit designs in an effective manner, the profitability of our risk-based products and services could decline and could materially and adversely affect our results of operations, financial position and cash flows.' 'Premium revenues from risk-based products comprise nearly 80% of our total consolidated revenues.'; no disruption theme in taxonomy_eras.json is live for a health benefits company on this date (of the live themes, OFFSHORE is scoped to 'lower-cost offshore delivery (Indian IT services) takes share and price from Western consulting, systems integration and outsourcing', CLOUD to 'public cloud displaces on-premise hardware, storage, legacy databases and data-center outsourcing', ECOMMERCE to 'e-commerce (Amazon effect) displaces physical retail, malls, grocery, distribution', STREAMING to 'cord-cutting / streaming displaces linear TV networks and pay-TV bundles', ENERGY_TRANSITION to 'decarbonisation strands oil, gas and coal reserves and refining', EV to 'battery-electric vehicles displace ICE powertrains, auto parts suppliers and fuel retail', CRYPTO to 'crypto / DeFi disintermediates payments networks, banks, exchanges, remittance', GENAI to 'generative / autonomous AI substitutes the core product: software seats, IT services and BPO hours, professional information, search, education content, mobility', GLP1 to 'GLP-1 obesity drugs reduce demand for snacks, beverages, sleep-apnea/diabetes/cardio devices': none names health benefits, and no 10-K names offshore delivery; the FY23 10-K does not name cloud (the FY2015 to FY2019 10-K filings named it only among the solutions OptumInsight offers care providers, not as a substitute for UnitedHealth Group's business)), so the watch list is empty and these words stay here (the PEP obesity rule). durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.38x; +19% to EPP floor; model-vs-market gap +0.09; conservative 2yr +17%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.38,
+  "ratio_b_fmt": "0.38x",
+  "epp": 423.2,
+  "epp_gap_pct": 19.0,
+  "epp_adj": 0.0,
+  "proxy_composite": 2.3,
+  "sca": 0.066,
+  "adj_composite": 2.366,
+  "market_composite": 2.28,
+  "adj_gap": 0.09,
+  "valuation": "FAIRLY VALUED",
+  "cons_return_2yr": 17.1,
+  "scenarios": {
+   "BEAR": {
+    "eps": 26.45,
+    "pe": 15.4,
+    "price": 407.33,
+    "desc": "EPS +0.0%/yr (worst year FY13-FY23, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 31.35,
+    "pe": 19.5,
+    "price": 611.33,
+    "desc": "EPS +8.9%/yr (FY24 guide + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 35.47,
+    "pe": 21.4,
+    "price": 759.06,
+    "desc": "EPS +15.8%/yr (FY13-FY23 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 47.18,
+    "pe": 23.2,
+    "price": 1094.58,
+    "desc": "EPS +33.6%/yr (best 2-yr run FY13-FY23, at least BULL); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.38,
+   "epp_gap_pct": 19.0,
+   "adj_gap": 0.09,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 17.1,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.13,
+   "epp_gap_pct": 19.0,
+   "adj_gap": 0.48,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 17.1,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 0.65,
+   "epp_gap_pct": 19.0,
+   "adj_gap": -0.24,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 17.1,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.3,
+   "epp_gap_pct": 19.0,
+   "adj_gap": 0.19,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 17.1,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.47,
+   "epp_gap_pct": 19.0,
+   "adj_gap": -0.02,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 17.1,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.38,
+   "epp_gap_pct": 19.0,
+   "adj_gap": 0.39,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 17.1,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.38,
+   "epp_gap_pct": 0.2,
+   "adj_gap": 0.09,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 17.1,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.38,
+   "epp_gap_pct": 19.0,
+   "adj_gap": 0.43,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 17.1,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "UNH (retrospective, 2024-01-19) ◉ BUY — Ratio B 0.38x (19.1% downside to Bear $407.33 / +50.7% upside to Bull $759.06) | Adj composite 2.37 vs market 2.28: gap +0.09 [FAIRLY VALUED] | +19% above the EPP floor $423.20 (16x FY24E $26.45) | Conservative 2-yr case: +17.1% total (+8.5%/yr) | At 19.0x FY24E the 15% hurdle price $665.96 sits between the BASE and BULL cases; revenue +14.1% YoY in Q4 2023, forward revenues +7.6-8.4% (FY24 revenue guide); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "UH68",
+   "published": "2016-02-10",
+   "filed": "2016-02-09 16:12 ET, after the close",
+   "title": "UnitedHealth Group FY2015 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176616000058/unh2015123110-k.htm",
+   "supports": "history vintage FY2015"
+  },
+  {
+   "id": "UH74",
+   "published": "2017-02-09",
+   "filed": "2017-02-08 16:22 ET, after the close",
+   "title": "UnitedHealth Group FY2016 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176617000009/unh2016123110-k.htm",
+   "supports": "history vintage FY2016; Q4 2016 as reported after the Penn Treaty assessments"
+  },
+  {
+   "id": "UH80",
+   "published": "2018-02-14",
+   "filed": "2018-02-13 16:10 ET, after the close",
+   "title": "UnitedHealth Group FY2017 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176618000005/unh2017123110-k.htm",
+   "supports": "history vintage FY2017"
+  },
+  {
+   "id": "UH86",
+   "published": "2019-02-13",
+   "filed": "2019-02-12 17:16 ET, after the close",
+   "title": "UnitedHealth Group FY2018 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176619000005/unh2018123110-k.htm",
+   "supports": "history vintage FY2018"
+  },
+  {
+   "id": "UH92",
+   "published": "2020-02-18",
+   "filed": "2020-02-14 17:18 ET, after the close",
+   "title": "UnitedHealth Group FY2019 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176620000006/unh2019123110-k.htm",
+   "supports": "history vintage FY2019"
+  },
+  {
+   "id": "UH99",
+   "published": "2021-03-02",
+   "filed": "2021-03-01 16:02 ET, after the close",
+   "title": "UnitedHealth Group FY2020 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176621000013/unh-20201231.htm",
+   "supports": "history vintage FY2020"
+  },
+  {
+   "id": "UH106",
+   "published": "2022-02-16",
+   "filed": "2022-02-15 16:50 ET, after the close",
+   "title": "UnitedHealth Group FY2021 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176622000008/unh-20211231.htm",
+   "supports": "history vintage FY2021"
+  },
+  {
+   "id": "UH113",
+   "published": "2023-02-27",
+   "filed": "2023-02-24 17:28 ET, after the close",
+   "title": "UnitedHealth Group FY2022 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176623000008/unh-20221231.htm",
+   "supports": "history vintage FY2022"
+  },
+  {
+   "id": "UH112",
+   "published": "2023-01-13",
+   "filed": "2023-01-13 06:01 ET, before the open",
+   "title": "UnitedHealth Group Q4 2022 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176623000003/a2022q4exhibit991.htm",
+   "supports": "Q4 2022 print and FY2022 actuals (GAAP); FY2023 guide"
+  },
+  {
+   "id": "UH114",
+   "published": "2023-04-14",
+   "filed": "2023-04-14 06:02 ET, before the open",
+   "title": "UnitedHealth Group Q1 2023 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176623000026/a2023q1exhibit991.htm",
+   "supports": "Q1 2023 print; FY2023 guide"
+  },
+  {
+   "id": "UH115",
+   "published": "2023-07-14",
+   "filed": "2023-07-14 06:04 ET, before the open",
+   "title": "UnitedHealth Group Q2 2023 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176623000049/a2023q2exhibit991.htm",
+   "supports": "Q2 2023 print; FY2023 guide"
+  },
+  {
+   "id": "UH117",
+   "published": "2023-10-13",
+   "filed": "2023-10-13 06:03 ET, before the open",
+   "title": "UnitedHealth Group Q3 2023 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176623000058/a2023q3exhibit991.htm",
+   "supports": "Q3 2023 print; FY2023 guide"
+  },
+  {
+   "id": "UH119",
+   "published": "2024-01-12",
+   "filed": "2024-01-12 06:01 ET, before the open",
+   "title": "UnitedHealth Group Q4 2023 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176624000023/a2023q4exhibit991.htm",
+   "supports": "Q4 2023 print and FY2023 actuals (GAAP); FY2024 guide"
+  },
+  {
+   "id": "UH118",
+   "published": "2023-11-29",
+   "filed": "2023-11-28 16:25 ET, after the close",
+   "title": "UnitedHealth Group 8-K of 2023-11-28 (investor conference outlook release, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176623000080/a2023investorconferencegui.htm",
+   "supports": "FY2023 and FY2024 guides"
+  },
+  {
+   "id": "UH116",
+   "published": "2023-08-03",
+   "filed": "2023-08-02 16:21 ET, after the close",
+   "title": "UnitedHealth Group Q2 2023 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176623000053/unh-20230630.htm",
+   "supports": "the annual dividend rate"
+  },
+  {
+   "id": "UH3",
+   "published": "2001-04-02",
+   "filed": "2001-04-02 (EDGAR gives the filing date only)",
+   "title": "UnitedHealth Group FY2000 10-K/A (annual report, Exhibit 13)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000091205701506576/a2044205zex-13.txt",
+   "supports": "rule T: 1999 against 1998; 1998 diluted shares; the 2000 two-for-one split"
+  },
+  {
+   "id": "UH6",
+   "published": "2004-03-16",
+   "filed": "2004-03-15 17:10 ET, after the close",
+   "title": "UnitedHealth Group FY2003 10-K (annual report, Exhibit 13)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000095013404003522/c82635exv13.htm",
+   "supports": "1999 and 2000 EPS excluding the UnitedHealth Capital items; 1999 revenues; rule T: 2002 against 2001; 2001 diluted shares; the 2003 split"
+  },
+  {
+   "id": "UH8",
+   "published": "2006-02-27",
+   "filed": "2006-02-24 17:00 ET, after the close",
+   "title": "UnitedHealth Group FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000119312506038949/d10k.htm",
+   "supports": "2001 EPS and revenues (five-year summary, after the 2005 split); the 2005 split"
+  },
+  {
+   "id": "Y0",
+   "published": "2024-01-19",
+   "title": "Yahoo Finance daily prices, UNH and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/UNH/history",
+   "supports": "close $503.56 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution from 2014-01-21"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-26"
+}
