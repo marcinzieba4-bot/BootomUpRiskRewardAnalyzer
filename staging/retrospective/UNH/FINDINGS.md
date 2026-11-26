@@ -1,7 +1,8 @@
 # UNH retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the UNH weekly dates: 731, 105 from 2008-01-04 to 2009-12-31, 209 from 2010-01-08 to 2013-12-31,
-208 from 2014-01-10 to 2017-12-29 and 209 from 2018-01-05 to 2021-12-31, all UnitedHealth Group Incorporated (NYSE: UNH). They are **labels and hypotheses**: never feed them back into the method or the fact sheet. The batch was scored only after its
+Patterns seen in `outcome.json` for the UNH weekly dates: 986, 105 from 2008-01-04 to 2009-12-31, 209 from 2010-01-08 to 2013-12-31,
+208 from 2014-01-10 to 2017-12-29, 209 from 2018-01-05 to 2021-12-31 and 255 from 2022-01-07 to 2026-11-20, all UnitedHealth Group
+Incorporated (NYSE: UNH). They are **labels and hypotheses**: never feed them back into the method or the fact sheet. The batch was scored only after its
 point-in-time build, validation, README section and firewall result were committed and pushed (95bb426, the builder fix the firewall's first
 run needed 36eb1c4, firewall result 4a203a3); the outcomes were computed on 2026-11-24. Every date has its 6-month, 1-, 2- and 3-year
 horizons (the last ends 2012-12-28 for 2008-2009 and 2016-12-30 for 2010-2013). The 2010-2013 batch was decided in the session that
@@ -12,17 +13,22 @@ firewall result were committed and pushed (5ed6613, 237ded5, 5fcd318, ac1542c), 
 (3f76218, 4a671e7, c7ba971, 96a0fd5), on 2026-11-24; their last horizon ends 2020-12-29. The 209 dates of 2018-2021 were decided in
 the session that scored 2014-2017 (disclosed in retro/README.md, "UNH 2018-2021") and scored only after their build, validation
 outputs, README section and firewall result were committed and pushed (7e2ea9a, b991f64, 1041443, f48751d), on 2026-11-25; their last
-horizon ends 2024-12-30. Total returns include the dividends (the
+horizon ends 2024-12-30. The 255 dates of 2022-2026 were built in a new session that did not open these findings or any outcome
+before scoring (disclosed in retro/README.md, "UNH 2022-2026"), and scored only after their build, validation outputs, README section
+and firewall result were committed and pushed (5491ced, 2855f2f, ddbab8e, 9417497), on 2026-11-26; only the 151 dates to 2024-11-22
+have a two-year horizon, the 203 to 2025-11-21 a one-year one, and the 26 dates from 2026-05-29 none at all. Total returns include the dividends (the
 annual $0.03 to the ex-date of 2010-04-01, then quarterly: $0.125 from 2010-06-03, $0.163 from 2011-06-03, $0.213 from 2012-06-13, $0.28
 from 2013-06-13, $0.375 from 2014-06-12, $0.50 from 2015-06-11, $0.625 from 2016-06-15, $0.75 from 2017-06-15, $0.90 from 2018-06-15,
 $1.08 from 2019-06-14, $1.25 from 2020-06-19, $1.45 from 2021-06-18, $1.65 from 2022-06-16, $1.88 from 2023-06-15, $2.10 from
-2024-06-17). No split falls in any horizon, so every price is as traded.
+2024-06-17, $2.21 from 2025-06-16, $2.32 from 2026-06-15). No split falls in any horizon, so every price is as traded.
 Medians of an even count take the upper middle value (`statistics.median_high`). The 15%/yr hurdle is +32.2% over two years and +52.1%
 over three. "Call held" is `call_check_2y`: CHEAP should clear the hurdle or beat the benchmark (SPY), FAIR should land within 15pp of
 it either way. Every 2008-2012 date was CHEAP and BUY, so those tables test that one call against the calendar; 2013 has 29 CHEAP and
 BUY dates and 24 FAIR (5 BUY, 19 ACCUMULATE); 2014-2017 has 192 RICH dates (14 WATCHLIST, 178 AVOID) and 16 FAIR (7 ACCUMULATE,
 9 WATCHLIST), and RICH expects the stock to miss the hurdle and lag SPY; 2018-2021 has 180 RICH, 22 FAIR and 7 CHEAP dates (tiers
-AVOID 139, WATCHLIST 50, ACCUMULATE 15, BUY 5).
+AVOID 139, WATCHLIST 50, ACCUMULATE 15, BUY 5); 2022-2026 has 158 RICH, 52 CHEAP and 45 FAIR dates (AVOID 123, ACCUMULATE 58,
+WATCHLIST 38, BUY 36). Where a year has no two-year horizon its table uses the longest horizon every listed date has, and the 15%
+hurdle is then +15.0% over one year and +7.2% over six months; `call_check_2y` exists only for two-year horizons.
 
 ## 2008 (53 dates)
 
@@ -468,3 +474,152 @@ Across the 209 dates of 2018-2021:
   and two-year prices landed nearest BULL or XBULL on every date but one (BASE, in 2018).
 - **Profile drift:** the kind (DURABLE, risk 2) matches today's profile on all 209 dates (a 2026 analysis, read here only through
   `profile_drift`).
+
+## 2022 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID | 52 | +8.3% | -15.2% to +22.6% | 0 | 3 | +0.4% | 49 |
+| FY21E $17.875 (2022-01-07 to 2022-01-14) | 2 | +20.2% | +14.2% to +20.2% | 0 | 2 | +9.0% | 0 |
+| FY22E $20.45 (2022-01-20 to 2022-04-08) | 12 | +8.4% | -13.9% to +14.4% | 0 | 1 | +4.5% | 11 |
+| FY22E $20.55 (2022-04-14 to 2022-07-08) | 13 | +1.8% | -15.2% to +11.4% | 0 | 0 | +0.7% | 13 |
+| FY22E $20.7 (2022-07-15 to 2022-10-07) | 13 | +13.7% | +0.0% to +18.7% | 0 | 0 | -2.5% | 13 |
+| FY22E $20.95 (2022-10-14 to 2022-12-30) | 12 | +9.9% | -1.9% to +22.6% | 0 | 0 | +0.4% | 12 |
+| latest print Q3 2021 (2022-01-07 to 2022-01-14) | 2 | +20.2% | +14.2% to +20.2% | 0 | 2 | +9.0% | 0 |
+| latest print Q4 2021 (2022-01-20 to 2022-04-08) | 12 | +8.4% | -13.9% to +14.4% | 0 | 1 | +4.5% | 11 |
+| latest print Q1 2022 (2022-04-14 to 2022-07-08) | 13 | +1.8% | -15.2% to +11.4% | 0 | 0 | +0.7% | 13 |
+| latest print Q2 2022 (2022-07-15 to 2022-10-07) | 13 | +13.7% | +0.0% to +18.7% | 0 | 0 | -2.5% | 13 |
+| latest print Q3 2022 (2022-10-14 to 2022-12-30) | 12 | +9.9% | -1.9% to +22.6% | 0 | 0 | +0.4% | 12 |
+
+- **RICH held on 49 of 52 dates.** At 22.0-26.7x the FY22 guide, the entries ($452.06-551.24) returned -15.2% to +22.6% over two years
+  and cleared the hurdle on none; they lagged SPY on all but the first three dates (2022-01-07 to 2022-01-20), and over three years
+  returned -48.8% to +21.1%. The FY2022 guide was raised in every release and met ($21.18 against $20.85-21.05); the multiple, not the
+  earnings, carried the two-year return. Two years on the prices landed nearest BULL on 33 dates and BASE on 19.
+
+## 2023 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier ACCUMULATE | 8 | -31.7% | -35.3% to +12.6% | 0 | 0 | +9.2% | 0 |
+| class CHEAP, legacy tier BUY | 6 | -29.4% | -31.5% to +7.8% | 0 | 0 | +9.4% | 0 |
+| class FAIR, legacy tier ACCUMULATE | 6 | +0.8% | -19.7% to +19.4% | 0 | 0 | +11.5% | 0 |
+| class FAIR, legacy tier WATCHLIST | 3 | +13.7% | +7.9% to +15.0% | 0 | 0 | +9.5% | 0 |
+| class RICH, legacy tier ACCUMULATE | 14 | -34.3% | -48.8% to -11.4% | 0 | 0 | -3.8% | 14 |
+| class RICH, legacy tier AVOID | 1 | +8.0% | +8.0% to +8.0% | 0 | 0 | +8.8% | 1 |
+| class RICH, legacy tier WATCHLIST | 14 | -30.4% | -38.7% to +17.8% | 0 | 0 | -19.9% | 14 |
+| FY22E $20.95 (2023-01-06 to 2023-01-06) | 1 | +8.0% | +8.0% to +8.0% | 0 | 0 | +8.8% | 1 |
+| FY23E $23.4 (2023-01-13 to 2023-04-06) | 13 | +9.7% | -1.5% to +19.4% | 0 | 0 | +10.3% | 3 |
+| FY23E $23.5 (2023-04-14 to 2023-07-07) | 13 | -30.7% | -35.8% to +17.8% | 0 | 0 | +8.6% | 5 |
+| FY23E $23.6 (2023-07-14 to 2023-10-06) | 13 | -34.0% | -48.8% to -25.1% | 0 | 0 | -5.2% | 8 |
+| FY23E $23.675 (2023-10-13 to 2023-12-29) | 12 | -34.3% | -38.7% to -27.1% | 0 | 0 | -23.8% | 12 |
+| latest print Q3 2022 (2023-01-06 to 2023-01-06) | 1 | +8.0% | +8.0% to +8.0% | 0 | 0 | +8.8% | 1 |
+| latest print Q4 2022 (2023-01-13 to 2023-04-06) | 13 | +9.7% | -1.5% to +19.4% | 0 | 0 | +10.3% | 3 |
+| latest print Q1 2023 (2023-04-14 to 2023-07-07) | 13 | -30.7% | -35.8% to +17.8% | 0 | 0 | +8.6% | 5 |
+| latest print Q2 2023 (2023-07-14 to 2023-10-06) | 13 | -34.0% | -48.8% to -25.1% | 0 | 0 | -5.2% | 8 |
+| latest print Q3 2023 (2023-10-13 to 2023-12-29) | 12 | -34.3% | -38.7% to -27.1% | 0 | 0 | -23.8% | 12 |
+
+- **RICH held on all 29 dates, CHEAP and FAIR on none of 23.** The 14 CHEAP dates ($458.49-489.12, 19.5-20.6x, the 56th-70th
+  percentile) returned -35.3% to +12.6% over two years and lagged SPY by 26.6-83.6pp: the first ones (March 2023, about +8-13%) still
+  missed the hurdle, the later ones fell with 2025. FY2023 came in at $23.86 against $23.60-23.75; what followed was the FY2024 GAAP
+  collapse to $15.51 and the FY2025 cut. The year's worst two-year return is -48.8% (2023-08-04, RICH).
+
+## 2024 (52 dates)
+
+2-yr horizon on the 47 dates that have one (2024-01-05 to 2024-11-22).
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 14 | -36.7% | -44.2% to -26.8% | 0 | 0 | -28.3% | 0 |
+| class RICH, legacy tier AVOID | 32 | -24.9% | -39.5% to -9.3% | 0 | 0 | -38.6% | 32 |
+| class RICH, legacy tier WATCHLIST | 1 | -33.2% | -33.2% to -33.2% | 0 | 0 | -29.2% | 1 |
+| FY23E $23.675 (2024-01-05 to 2024-01-05) | 1 | -33.2% | -33.2% to -33.2% | 0 | 0 | -29.2% | 1 |
+| FY24E $26.45 (2024-01-12 to 2024-04-12) | 14 | -36.7% | -44.2% to -26.8% | 0 | 0 | -28.3% | 0 |
+| FY24E $17.9 (2024-04-17 to 2024-07-12) | 13 | -19.7% | -28.6% to -9.3% | 0 | 0 | -35.6% | 13 |
+| FY24E $16.175 (2024-07-17 to 2024-10-11) | 13 | -30.5% | -34.1% to -22.6% | 0 | 0 | -40.9% | 13 |
+| FY24E $15.625 (2024-10-16 to 2024-11-22) | 6 | -26.6% | -39.5% to -22.8% | 0 | 0 | -38.0% | 6 |
+| latest print Q3 2023 (2024-01-05 to 2024-01-05) | 1 | -33.2% | -33.2% to -33.2% | 0 | 0 | -29.2% | 1 |
+| latest print Q4 2023 (2024-01-12 to 2024-04-12) | 14 | -36.7% | -44.2% to -26.8% | 0 | 0 | -28.3% | 0 |
+| latest print Q1 2024 (2024-04-17 to 2024-07-12) | 13 | -19.7% | -28.6% to -9.3% | 0 | 0 | -35.6% | 13 |
+| latest print Q2 2024 (2024-07-17 to 2024-10-11) | 13 | -30.5% | -34.1% to -22.6% | 0 | 0 | -40.9% | 13 |
+| latest print Q3 2024 (2024-10-16 to 2024-11-22) | 6 | -26.6% | -39.5% to -22.8% | 0 | 0 | -38.0% | 6 |
+
+- **RICH held on all 33 dates with a horizon, CHEAP on none of 14.** The CHEAP and BUY dates of 2024-01-12 to 2024-04-12 rested on
+  the $26.20-26.70 range affirmed "excluding the potential impacts from the pending sale of its Brazil operations" (16.6-19.9x): they
+  returned -44.2% to -26.8% over two years, though the last of them (2024-04-12, $439.20, the year's low) was +38.4% after one. The
+  RICH dates from the Q1 2024 print stood on the GAAP ranges with the Brazil and cyberattack items (26.8-39.4x) and returned -39.5% to
+  -9.3%. Reading those GAAP ranges as published was right in hindsight: the adjusted reading (tested before any outcome) would have
+  moved 48 of the dates with a horizon, and none of them would then have held, against 40 as built.
+
+## 2025 (52 dates)
+
+1-yr horizon on the 47 dates that have one (2025-01-03 to 2025-11-21).
+
+| Group | Dates | Median 1-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY |
+|---|---|---|---|---|---|
+| class CHEAP, legacy tier ACCUMULATE | 3 | -36.4% | -40.5% to -13.1% | 0 | 0 |
+| class CHEAP, legacy tier BUY | 4 | +2.1% | -36.0% to +65.8% | 1 | 1 |
+| class FAIR, legacy tier ACCUMULATE | 11 | -40.2% | -48.1% to +61.8% | 3 | 3 |
+| class FAIR, legacy tier WATCHLIST | 11 | +34.7% | -45.5% to +42.6% | 9 | 8 |
+| class RICH, legacy tier AVOID | 13 | +12.1% | -47.8% to +29.4% | 5 | 4 |
+| class RICH, legacy tier WATCHLIST | 5 | +29.7% | +9.0% to +35.1% | 4 | 5 |
+| FY24E $15.625 (2025-01-03 to 2025-01-10) | 2 | -32.3% | -32.7% to -32.3% | 0 | 0 |
+| FY25E $28.4 (2025-01-17 to 2025-04-11) | 13 | -42.3% | -48.1% to -31.5% | 0 | 0 |
+| FY25E $24.9 (2025-04-17 to 2025-05-09) | 4 | -5.6% | -26.6% to +2.1% | 0 | 0 |
+| FY25E $15.51, FY24's figure (2025-05-16 to 2025-11-21) | 28 | +29.8% | +5.8% to +65.8% | 22 | 21 |
+| latest print Q3 2024 (2025-01-03 to 2025-01-10) | 2 | -32.3% | -32.7% to -32.3% | 0 | 0 |
+| latest print Q4 2024 (2025-01-17 to 2025-04-11) | 13 | -42.3% | -48.1% to -31.5% | 0 | 0 |
+| latest print Q1 2025 (2025-04-17 to 2025-07-25) | 15 | +34.7% | -26.6% to +53.9% | 11 | 10 |
+| latest print Q2 2025 (2025-07-30 to 2025-10-24) | 13 | +17.8% | +5.8% to +65.8% | 8 | 7 |
+| latest print Q3 2025 (2025-10-29 to 2025-11-21) | 4 | +24.4% | +9.0% to +29.4% | 3 | 4 |
+
+- **On one-year returns:** the FY25E $28.40 and $24.90 dates (2025-01-17 to 2025-05-09; FAIR 10, CHEAP 6, RICH 1) returned -48.1% to
+  +2.1% over one year and lagged SPY on all 17: the guide was cut in April and suspended on 2025-05-13. From the suspension, FY24's
+  $15.51 stood as FY25E: the 28 dates with a one-year horizon returned +5.8% to +65.8% (median +29.8%), cleared 15% on 22 and beat SPY
+  on 21, whatever their class. The series' low, 2025-08-08 ($250.89, CHEAP and BUY), returned +65.8% over one year. The guided margin
+  step of the Q2 2025 schedule put BASE at -52.6%/yr from 2025-07-30; FY2025 came in at $13.23 (-14.7% on GAAP), and after the RICH
+  calls of 2025-08-15 to 2025-11-21 the stock rose (one-year returns +5.8% to +35.1%, ahead of SPY on 9 of 15).
+
+## 2026 (47 dates)
+
+6-month horizon on the 21 dates that have one (2026-01-02 to 2026-05-22).
+
+| Group | Dates | Median 6-month total return | Range | Cleared 15%/yr hurdle | Beat SPY |
+|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 11 | +37.7% | +26.2% to +47.7% | 11 | 11 |
+| class FAIR, legacy tier ACCUMULATE | 1 | +25.1% | +25.1% to +25.1% | 1 | 1 |
+| class RICH, legacy tier AVOID | 8 | +20.2% | -11.3% to +29.3% | 5 | 7 |
+| class RICH, legacy tier WATCHLIST | 1 | +21.5% | +21.5% to +21.5% | 1 | 1 |
+| FY25E $15.51, FY24's figure (2026-01-02 to 2026-01-23) | 4 | +27.8% | +20.2% to +29.3% | 4 | 4 |
+| FY26E $13.23, FY25's figure (2026-01-28 to 2026-05-22) | 17 | +35.2% | -11.3% to +47.7% | 14 | 16 |
+| latest print Q3 2025 (2026-01-02 to 2026-01-23) | 4 | +27.8% | +20.2% to +29.3% | 4 | 4 |
+| latest print Q4 2025 (2026-01-28 to 2026-04-17) | 12 | +37.7% | +25.1% to +47.7% | 12 | 12 |
+| latest print Q1 2026 (2026-04-22 to 2026-05-22) | 5 | +5.0% | -11.3% to +21.5% | 2 | 4 |
+
+- **On six-month returns only:** the 11 CHEAP and BUY dates of 2026-01-28 to 2026-04-17 (FY25's $13.23 standing, BASE +35.8% from
+  the guided step to ~5.5%) returned +26.2% to +47.7% over six months and beat SPY on all; the RICH dates of April-May 2026 -11.3% to
+  +21.5%. Twenty-six dates have no horizon yet; the FY2026 guide moved from "> $17.10" to $18.45-18.95 and "At Least $19.50".
+
+Across the 255 dates of 2022-2026 (hindsight; two-year horizons only on the 151 dates to 2024-11-22):
+- **RICH held on 111 of 114 with a two-year horizon, CHEAP on none of 28, FAIR on none of 9.** Median two-year returns: CHEAP -31.7%,
+  FAIR +7.9%, RICH -11.4%. UnitedHealth Group beat SPY over two years on 3 of the 151 dates and cleared the hurdle on none; prices two
+  years on landed nearest BASE on 65, BEAR on 53 and BULL on 33. The tiers did not rank the returns this time (BUY -31.5%, ACCUMULATE
+  -30.7%, WATCHLIST -28.5%, AVOID -1.1%), and the entry multiple explains almost nothing (the correlation of the current-year P/E with
+  the two-year return is -0.06; it was -0.75 in 2018-2021).
+- **The 2008-2009 hypothesis again, from the other side.** Every CHEAP call that failed stood on a guide that was about to be cut: FY2024's
+  range affirmed in words without the Brazil sale (January-April 2024), and FY2025's $28.15-28.65 and $24.65-25.15 (January-May 2025).
+  The calls that would have held were the ones whose guide had already been cut or withdrawn: from the suspension, on FY24's $15.51,
+  one-year returns were positive on every date with a horizon. Hypothesis, not a rule: a CHEAP call on a guide still being defended is
+  weaker than one on a guide that has been reset; test it on other tickers, never fit it to UNH.
+- **The pre-outcome tests, scored.** Signals at BEAR would have moved 36 of the dates with a two-year horizon to RICH, and all 36 would
+  then have held (none did as built); at XBULL 38 moved, 29 holds to none; the five-year window 34 moved, 25 holds to none; the adjusted
+  guides 48 moved, 40 holds to none; voiding the FY2024 range at the Brazil closing 2 moved, both then held. On one-year returns of 2025
+  (a looser test: the two-year rule's shape with the one-year hurdle), reading the suspension as adding nothing would have doubled the holds among the 27 moved dates (11 to 22), the
+  adjusted FY2024 and FY2025 history 12 to 22 of 38, and no margin step 0 to 5 of 5. The medical care ratio rose year on year in every
+  quarter of 2023 and 2024, by 24-285bp, while the guide held; rule T's thresholds over 1997-2006 (BASE up to +290bp) scored every one of
+  those quarters BASE or better, so the signal set did not stop the CHEAP calls, which is the one thing it exists to do.
+- **The one-offs were not one-off for the price.** FY2024's $15.51 (GAAP, with $11.50 a share of listed items before tax) was the
+  year's earnings as the market priced them: the 2024 RICH calls on the GAAP guide held, and the company's $27.66 adjusted figure
+  would have read the same dates as CHEAP. BEAR, FY2024's -35.0% from the Q4 2024 print, was closer to the realized FY2025 (-14.7%)
+  than BASE (+13.5%) on the January-May 2025 dates.
+- **Profile drift:** the kind (DURABLE, risk 2) matches today's profile on all 255 dates (a 2026 analysis, read here only through
+  `profile_drift`, whose note names the DOJ probe and the Medicare Advantage exits; no 10-K of the range calls the business cyclical).
