@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "LYB",
+ "as_of": "2012-06-01",
+ "computed": "2026-11-27",
+ "data_source": "Yahoo Finance daily closes + dividends (LYB, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2012-11-30",
+   "price": 49.73,
+   "dividends": 3.55,
+   "total_return_pct": 43.0,
+   "benchmark_total_return_pct": 12.1,
+   "excess_pct": 30.9,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2013-05-31",
+   "price": 66.65,
+   "dividends": 4.45,
+   "total_return_pct": 90.8,
+   "benchmark_total_return_pct": 30.0,
+   "excess_pct": 60.8,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2014-05-30",
+   "price": 99.57,
+   "dividends": 6.85,
+   "total_return_pct": 185.6,
+   "benchmark_total_return_pct": 55.5,
+   "excess_pct": 130.1,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2015-06-01",
+   "price": 101.43,
+   "dividends": 8.95,
+   "total_return_pct": 196.2,
+   "benchmark_total_return_pct": 73.4,
+   "excess_pct": 122.9,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2014-05-29",
+   "price": 100.35
+  },
+  "low": {
+   "date": "2012-06-04",
+   "price": 36.76
+  },
+  "max_drawdown_pct": -18.5,
+  "return_to_avg_price_m12_m24_pct": 111.1
+ },
+ "scenario_landing_2y": "XBULL",
+ "call_check_2y": {
+  "expectation": "RICH: should miss the hurdle and lag the benchmark",
+  "hit": false
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "CYCLICAL",
+   "risk": 2
+  },
+  "today": {
+   "kind": "CYCLICAL",
+   "risk": 3,
+   "why": "LyondellBasell: polyolefins at a trough with leverage and a dividend cut",
+   "reviewed": "2026-09-22"
+  }
+ }
+}
