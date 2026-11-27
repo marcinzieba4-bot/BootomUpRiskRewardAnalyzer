@@ -69,7 +69,7 @@ V = {}
 # 1. the combined 2010 not a year of revenues (out of the revenue history; rule T keeps its own values)
 f = copy.deepcopy(facts0)
 for v in f["history_vintages"]:
-    v["revenue_usd_b"].pop("2010")
+    v["revenue_usd_b"].pop("2010", None)
 V["the combined 2010 not a year of revenues"] = (f, engine0, B)
 # 2. the revenue history from 2008 only (the Predecessor's 2006-2007, Basell before Lyondell Chemical, left out)
 f = copy.deepcopy(facts0)
@@ -127,10 +127,12 @@ modet = variant_module('    if et["live_from"] <= as_of:\n', "    if False:\n")
 V["ENERGY_TRANSITION out of scope"] = (facts0, engine0, modet)
 # 11. the ten-year roll unused (every revenue year kept)
 f = copy.deepcopy(facts0)
-for v in f["history_vintages"]:
-    if "2006" not in v["revenue_usd_b"]:
-        v["revenue_usd_b"]["2006"] = f["history_vintages"][0]["revenue_usd_b"]["2006"]
-V["the ten-year roll unused (2006 kept)"] = (f, engine0, B)
+allrev = {}
+for v in f["history_vintages"]:                    # every year each vintage dropped, at the latest value before it dropped
+    allrev.update(v["revenue_usd_b"])
+    for y, x in allrev.items():
+        v["revenue_usd_b"].setdefault(y, x)
+V["the ten-year roll unused (every revenue year kept)"] = (f, engine0, B)
 # 12. FY2017 without its listed one-offs: the Q4 2017 release says they 'positively impacted full year 2017 earnings by $2.05 per
 # share' (the tax reform benefit, the Geosel gain and the bond refinancing), so $12.28 - $2.05 = $10.23 (derived: no filing prints it)
 def set_eps(f, y, e):
@@ -159,8 +161,8 @@ for v in f["history_vintages"]:
 V["the 2010 share count kept in the FY2020 vintage"] = (f, engine0, B)
 # 15. the 10-Q's operating income unused: the four prints without it in the release (Q1-Q2 2018, Q2-Q3 2021) score the operating
 # margin signal at its BASE threshold (70 bp), as an unreported signal would (the engine prints the margin, so the value stands in)
-modoi = variant_module("    latest = prints[-1]\n",
-                       "    latest = prints[-1]\n    if latest.get('oi_source'):\n        latest = {**latest, 'opm_bp': 70.0}\n")
+modoi = variant_module("    i = public.index(latest)\n",
+                       "    i = public.index(latest)\n    if latest.get('oi_source'):\n        latest = {**latest, 'opm_bp': 70.0}\n")
 V["the 10-Q's operating income unused (those prints' margin signal at BASE)"] = (facts0, engine0, modoi)
 # 6./7. every data signal at its BEAR or XBULL value
 for lab, vals in (("BEAR", ("-299.0", "-41.0", "-108.0", "-480.0", "-3290.0")), ("XBULL", ("707.0", "168.0", "196.0", "1270.0", "3550.0"))):
