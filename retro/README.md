@@ -27305,7 +27305,13 @@ Controls and checks (before any outcome):
   the 314 models.
 - **Self-text scan:** 880 tokens over every fact of 2008-2013, no miss but the method's rule names.
 - **Regression:** rebuilding the 105 dates of 2008-2009 on the extended fact sheet and builder changes nothing.
-- **Firewall:** FIREWALL_RESULT
+- **Firewall** (run after the build, validation outputs and README section were committed and pushed, before any outcome): it passes at
+  all 25 cutoffs above (every print, vintage, restatement and listing date of the range, 2010-01-04 and 2014-01-01: 105 to 314 dates
+  each), 0 files changed and no planted text, on its first run. Besides the 2008-2009 plants, each run plants a later restatement of the
+  last print before the cutoff with absurd figures and outlook words on the planted prints. As positive controls, a planted print dated
+  2011-06-01 with its own source, and a planted restatement of the Q1 2011 print of that date, each reach 2011-06-03 (their text in the
+  model) and not 2011-05-27 (byte-identical); the print citing a source published after AS_OF (the Q3 2012 release) stops at the
+  builder's check that every source is public on AS_OF.
 
 Seen in the build (method behaviour, not tuned). The history now holds the two falling years, so BEAR is -35.8%/yr from the Q4 2009 print
 (FY08 to FY09) and -44.1%/yr from the Q4 2010 print (FY09 to FY10), XBULL still FY04-FY06's +62.9%/yr, and the class follows the last
