@@ -619389,7 +619389,20 @@
    "cons_return_2yr": -39.6,
    "path": "staging/retrospective/NEM/2018-01-05",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 0.8,
+    "tr_1y": -9.0,
+    "tr_2y": 16.7,
+    "tr_3y": 73.1,
+    "excess_6m": 0.1,
+    "excess_1y": -3.2,
+    "excess_2y": -5.1,
+    "excess_3y": 31.3,
+    "avg_m12_m24": -4.9,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEM",
@@ -619408,7 +619421,20 @@
    "cons_return_2yr": -41.7,
    "path": "staging/retrospective/NEM/2018-01-12",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -6.0,
+    "tr_1y": -10.9,
+    "tr_2y": 11.3,
+    "tr_3y": 64.7,
+    "excess_6m": -7.3,
+    "excess_1y": -6.0,
+    "excess_2y": -9.8,
+    "excess_3y": 22.5,
+    "avg_m12_m24": -7.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEM",
@@ -619427,7 +619453,20 @@
    "cons_return_2yr": -44.6,
    "path": "staging/retrospective/NEM/2018-01-19",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -5.5,
+    "tr_1y": -18.1,
+    "tr_2y": 15.2,
+    "tr_3y": 64.4,
+    "excess_6m": -6.2,
+    "excess_1y": -14.9,
+    "excess_2y": -7.0,
+    "excess_3y": 23.5,
+    "avg_m12_m24": -6.5,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEM",
@@ -619446,7 +619485,20 @@
    "cons_return_2yr": -43.5,
    "path": "staging/retrospective/NEM/2018-01-26",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -7.2,
+    "tr_1y": -17.9,
+    "tr_2y": 12.8,
+    "tr_3y": 57.2,
+    "excess_6m": -6.9,
+    "excess_1y": -12.4,
+    "excess_2y": -5.7,
+    "excess_3y": 17.5,
+    "avg_m12_m24": -9.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEM",
@@ -619465,7 +619517,20 @@
    "cons_return_2yr": -40.4,
    "path": "staging/retrospective/NEM/2018-02-02",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -6.3,
+    "tr_1y": -11.7,
+    "tr_2y": 20.8,
+    "tr_3y": 60.8,
+    "excess_6m": -9.7,
+    "excess_1y": -11.6,
+    "excess_2y": 0.1,
+    "excess_3y": 16.3,
+    "avg_m12_m24": -4.2,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEM",
@@ -619484,7 +619549,20 @@
    "cons_return_2yr": -36.9,
    "path": "staging/retrospective/NEM/2018-02-09",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -2.1,
+    "tr_1y": -6.4,
+    "tr_2y": 25.2,
+    "tr_3y": 71.5,
+    "excess_6m": -12.0,
+    "excess_1y": -11.8,
+    "excess_2y": -5.9,
+    "excess_3y": 16.0,
+    "avg_m12_m24": 2.1,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEM",
