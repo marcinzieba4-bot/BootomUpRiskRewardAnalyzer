@@ -56,6 +56,18 @@ NEM 2014-2017 (retro/README.md, "NEM 2014-2017"; decided before any 2014-2017 mo
   - ECOMMERCE, STREAMING and ENERGY_TRANSITION go live in 2015; none names a miner, and ENERGY_TRANSITION is read as out of scope with
     the 10-K's own climate-change risk factor quoted (the vintage's 'climate_words', text only).
 
+NEM 2018-2021 (retro/README.md, "NEM 2018-2021"; decided before any 2018-2021 model was built or scored):
+  - five more vintages (the FY2017-FY2020 10-Ks and the 8-K of 2018-04-26 re-filing the FY2017 10-K's Items 1, 2, 6, 7 and 8, a
+    vintage of its own), each holding the ten fiscal years to the latest one; the FY2020 10-K has no Item 6, so its three years come
+    from the statements; FY2017 is a loss, FY2018 fails the AAPL FY2002 test and FY2019 its mirror (the Nevada Gold Mines gain), each
+    excluded as the latest year and then a gap, so FY14's $1.30 (then $1.28 restated) stands to the FY2020 10-K and FY20's $3.31 after it;
+  - a print whose year-ago EPS is $0.00 (Q4 2019, Q2 2020) has no EPS growth (None, n/m, the F rule) and uses nem3_engine.py.tmpl;
+  - the names Newmont Goldcorp Corporation (2019-04-22) and Newmont Corporation (2020-01-07) from the 8-Ks that state them, until a
+    vintage carries them ('company_names', the SPGI and CB encoding);
+  - the kind is CYCLICAL from the FY2018 10-K, whose business section says 'The metals markets are cyclical' (the CB rule);
+  - EV (2020-01-01) and CRYPTO (2020-10-21) go live; neither names a miner, and from the FY2020 10-K the 'why' quotes its words on
+    crypto currencies as a factor that moves the gold price ('crypto_words', text only).
+
 Output goes to staging/retrospective/NEM until the series is added to the archive (--out archive/retrospective/NEM).
 
 Usage
@@ -81,6 +93,7 @@ from build_unp import money  # noqa: E402
 FACTS = os.path.join(HERE, "facts", "NEM.json")
 ENGINE = os.path.join(HERE, "templates", "nem_engine.py.tmpl")
 ENGINE2 = os.path.join(HERE, "templates", "nem2_engine.py.tmpl")      # prints whose ounces line is consolidated ounces produced
+ENGINE3 = os.path.join(HERE, "templates", "nem3_engine.py.tmpl")      # prints whose year-ago EPS is $0.00 (NEM 2018-2021)
 OUT = os.path.join(ROOT, "staging", "retrospective", "NEM")
 SYMBOL = "NEM"
 # rule T, the engine's signal thresholds: (BEAR, BASE, BULL, XBULL); the builder checks the fact sheet against them
@@ -141,7 +154,8 @@ def check_print(p):
     m, m0 = r["pretax_m"] / r["rev_m"] * 100, r["pretax_prior_m"] / r["rev_prior_m"] * 100
     want = {"sales_b": round(r["rev_m"] / 1000, 3), "sales_pct": pct(r["rev_prior_m"], r["rev_m"]), "oz_pct": pct(r["oz_prior_k"], r["oz_k"]),
             "cas_pct": pct(r["cas_prior"], r["cas"]), "pretax_margin": round(m + 0.0, 2), "pretax_margin_prior": round(m0 + 0.0, 2),
-            "margin_bp": round((m - m0) * 100 + 0.0, 1), "eps_pct": g(p["eps_q_prior"], p["eps_q"])}
+            "margin_bp": round((m - m0) * 100 + 0.0, 1),
+            "eps_pct": g(p["eps_q_prior"], p["eps_q"]) if p["eps_q_prior"] != 0 else None}   # $0.00 a year ago: n/m (the F rule)
     for k, v in want.items():
         assert p[k] == v, (p["quarter"], k, p[k], v)
     assert "fy_actual" not in p, (p["quarter"], "a Q4 print's own full-year actuals need their encoding (each came with its 10-K)")
@@ -167,12 +181,13 @@ def build(as_of, facts, raw, spx, engine, out, engine2=None):
     for p in [p for p in facts["prints"] if p["published"] <= as_of]:  # a print public on AS_OF must match its raw figures
         check_print(p)
     assert rule_t(facts["rule_t"]) == ENGINE_THRESHOLDS, "the engine's thresholds must follow rule T on the fact sheet's values"
-    assert not [x for x in facts.get("company_names", []) if x["published"] <= as_of], "a change of name needs its encoding first"
     facts = copy.deepcopy(facts)
     vintages = [v for v in facts["history_vintages"] if v["published"] <= as_of]
     if not vintages:
         sys.exit(f"{as_of}: no history vintage in the fact sheet is public yet")
     h = vintages[-1]                                   # latest annual history public on AS_OF
+    # (NEM 2018-2021) a name changed since the vintage applies from its publication (the SPGI and CB encoding)
+    renames = [n for n in facts.get("company_names", []) if h["published"] < n["published"] <= as_of]
     reported = lambda h: {int(k) for k in h["eps_normalized"]} | {int(k) for k in h.get("eps_excluded", {})}
     first_fy = max(reported(h)) + 1
     guide_fy = lambda p: p["fy"] + (1 if p["q"] == 4 else 0)
@@ -203,7 +218,10 @@ def build(as_of, facts, raw, spx, engine, out, engine2=None):
     eps_now = eps_hist[last_fy]
     between = list(range(last_fy + 1, cur_fy))
     why_gap = {2007: "a loss", 2011: "the Hope Bay write-down, the AAPL FY2002 test", 2013: "a loss",
-               2015: "the AAPL FY2002 test" + (", then $0.00 restated" if "2016" in h["eps_excluded"] else ""), 2016: "a loss"}
+               2015: "the AAPL FY2002 test" + (", then $(0.02) restated" if "$(0.02)" in h["eps_excluded"].get("2015", "") or
+                                               "2018" in h["eps_excluded"] else ", then $0.00 restated" if "2016" in h["eps_excluded"] else ""),
+               2016: "a loss", 2017: "a loss", 2018: "the AAPL FY2002 test",
+               2019: "the mirror of the AAPL FY2002 test, the Nevada Gold Mines gain"}
     if between == [2007] or not between:
         gap_text = " (FY07 excluded: a loss)" if between else ""
     else:
@@ -278,7 +296,7 @@ def build(as_of, facts, raw, spx, engine, out, engine2=None):
                 "  the bear needs the gold price to stop covering them.")
     theme_summary = "no disruption theme has dated evidence"
     live = sorted(((t["live_from"], k, t["scope"]) for k, t in retro_tool.load_taxonomy()["themes"].items() if t["live_from"] <= as_of))
-    assert {k for _, k, _ in live} <= {"OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING", "ENERGY_TRANSITION"}, (
+    assert {k for _, k, _ in live} <= {"OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING", "ENERGY_TRANSITION", "EV", "CRYPTO"}, (
         as_of, "a live theme needs its scope reading for a gold miner first", live)
     why = h["why"]
     if [k for _, k, _ in live] != ["OFFSHORE"]:   # from CLOUD's 2012-10-30: every live theme with its registered scope (NEE 2010-2013)
@@ -289,6 +307,9 @@ def build(as_of, facts, raw, spx, engine, out, engine2=None):
         assert h.get("climate_words"), (as_of, "ENERGY_TRANSITION's reading quotes the vintage's climate-change risk factor")
         why += ("; Newmont holds no oil, gas or coal reserves and no refining, so ENERGY_TRANSITION is read as out of scope, and the "
                 f"10-K's own climate words are a cost, not a stranded reserve: {h['climate_words']} (text only)")
+    if "CRYPTO" in {k for _, k, _ in live} and h.get("crypto_words"):   # NEM 2018-2021: out of scope; the 10-K's words, text only
+        why += ("; Newmont is no payments network, bank, exchange or remitter, so CRYPTO is read as out of scope, and the 10-K's own "
+                f"crypto words name an alternative to gold as an investment, a factor in the gold price: {h['crypto_words']} (text only)")
     oz_basis = latest.get("oz_basis", "sold")
     cat4 = (f"(4) Ounces — consolidated gold ounces {oz_basis} {latest['oz_pct']:+.1f}% in {latest['quarter']} against revenue "
             f"{latest['sales_pct']:+.1f}%: the metal price, not volume, has carried revenue")
@@ -302,10 +323,10 @@ def build(as_of, facts, raw, spx, engine, out, engine2=None):
                                                                                          "released on AS_OF, not before the open")
         tag = f"(day of the {same_day[-1]['quarter']} print, public before the open)"
 
-    company = h["company"]
+    company = renames[-1]["name"] if renames else h["company"]
     ids = (list(h["sources"]) + [x for p in prints for x in [p["source"]] + ([p["source_10k"]] if p.get("source_10k") else [])]
            + [public[i - 1]["source"]] + guide_ids
-           + ([dividend_src] if dividend_src else []) + listing_ids)
+           + ([dividend_src] if dividend_src else []) + listing_ids + [n["source"] for n in renames])
     sources = [dict(id=x, **facts["sources"][x]) for x in dict.fromkeys(ids)]
     sources.append({"id": "Y0", "published": as_of, "title": "Yahoo Finance daily prices, NEM and S&P 500, truncated at AS_OF",
                     "url": "https://finance.yahoo.com/quote/NEM/history",
@@ -415,7 +436,11 @@ CATALYST_4      = {R(cat4)}
 '''
     os.makedirs(os.path.join(out, as_of), exist_ok=True)
     with open(os.path.join(out, as_of, "model.py"), "w", encoding="utf-8") as fh:
-        if latest.get("oz_basis", "sold") == "produced":      # nem2: the ounces signal is consolidated gold ounces produced
+        if latest["eps_pct"] is None:                        # nem3: no EPS growth rate on a year-ago $0.00 (NEM 2018-2021)
+            assert latest.get("oz_basis", "sold") == "sold", (as_of, "nem3 is the ounces-sold engine")
+            with open(ENGINE3, encoding="utf-8") as fe:
+                fh.write(head + fe.read())
+        elif latest.get("oz_basis", "sold") == "produced":      # nem2: the ounces signal is consolidated gold ounces produced
             if engine2 is None:                                  # callers with the common build() signature (controls, firewall)
                 with open(ENGINE2, encoding="utf-8") as fe:
                     engine2 = fe.read()
