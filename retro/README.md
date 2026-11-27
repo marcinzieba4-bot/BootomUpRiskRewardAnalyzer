@@ -29283,6 +29283,157 @@ Judgement calls that could carry hindsight:
 
 The hindsight results are in `staging/retrospective/NEM/FINDINGS.md`, labelled as hindsight: hypotheses, never inputs.
 
+### NEM 2014-2017: the FY2013-FY2016 vintages and the 2014 recast, FY2013, FY2015 and FY2016 excluded, ounces sold again, Batu Hijau discontinued, three themes out of scope
+
+The owner asked for 2014-2017 ("find newest code. do retrospective analysis for NEM, 2014-2017. same rules as before"); the code is the
+branch `claude/sharp-albattani-rdvlgi` (its commit "Merge LYB 2014-2017 ... with NEM 2010-2013"), as the coordinating session named it;
+nothing else was merged in. Built in a new session without opening the 2008-2013 outcomes or findings (`FINDINGS.md` and every earlier
+`outcome.json` were left unread). The method is still r2; no fact, parameter, outcome or finding of another ticker enters an NEM model.
+
+```bash
+python3 retro/tools/edgar.py fetch 1164727 <dir> --from 2013-12-01 --to 2017-12-31 --forms 8-K 8-K/A 10-K 10-K/A 10-Q
+python3 -I retro/generators/nem/gen_nem_1417.py --filings <dir> --facts-in <scratch>/NEM_0813.json   # the 2008-2013 sheet -> retro/facts/NEM.json
+python3 -I retro/tools/verbatim.py <dir>/checklist_nem_1417.json                                       # 67/67
+python3 retro/build_nem.py --weekly 2014-01-01 2017-12-31                   # 209 dates, 2014-01-03 .. 2017-12-29
+for d in staging/retrospective/NEM/201[4-7]-*/; do
+  python3 retro/retro_tool.py --archive staging/retrospective run "$d"
+  python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
+done
+python3 retro/retro_tool.py --archive staging/retrospective series NEM
+for c in 2014-02-21 2014-06-13 2014-07-30 2015-02-20 2015-12-14 2016-02-18 2017-02-22 2017-10-26 2018-01-01; do
+  python3 retro/tools/firewall.py $c NEM; done
+python3 retro/generators/nem/controls_nem_1417.py --from 2013-06-01; python3 retro/generators/nem/sens_nem_1417.py <scratch>
+```
+
+**A full-data batch.** `www.sec.gov` served every document to `edgar.py`'s plain client name (no contact address). Read, by the session's
+model directly with no delegated transcription: the sixteen earnings releases of Q4 2013 to Q3 2017 (8-K exhibit 99.1: the statements of
+operations, the balance sheets, the production statistics, the costs applicable to sales reconciliations, the adjusted net income
+reconciliations and the outlook text); Items 1A, 6, 7 and 8 of the FY2013-FY2016 10-Ks with each one's quarterly data note; the 8-K of
+2014-06-13 re-filing the FY2013 10-K's Items 6-8; each 10-Q's income per share note (diluted weighted shares); the preliminary-results
+8-K of 2014-01-30 and its 8-K/A of 2014-01-31 (outlook footnotes only), the 8-K/A of 2014-07-30 (a corrected copper outlook) and the 8-K/A
+of 2017-02-22 (the Q4 2016 release with its attributable ounces sold corrected; no field reads that line), and the outlook 8-Ks of
+2015-12-02 and 2017-12-06. Every other 8-K of December 2013 to December 2017 was read by its items and exhibit headings: Indonesia's export
+ban, the Batu Hijau suspension, arbitration and memorandum, the export permits, the Barrick letter, officers and directors, votes, the
+term loan and its repayment, the Waihi sale, Cripple Creek & Victor and the June 2015 common stock offering, the Batu Hijau sale agreement
+and completion (with pro forma statements, unused), the Yanacocha impairment notice of 2016-12-13 (no figure), the Continental Gold
+investment, website postings of outlooks and conference slides (not filed), and the tax reform notice of 2017-12-22; none states a guided
+number. **Not read:** the website outlooks, presentations and Investor Day slides the 8-Ks point to (not filed), the 10-Qs beyond the
+income per share note, the proxy statements. The FY2017 10-K and every 2018 filing were not downloaded. Each source's date is EDGAR's
+acceptance time; the new ids are `NM50`-`NM73`. The generator reads each raw figure from its own row by label (the row text is kept in the
+fact), computes every rate, asserts every quote verbatim, asserts that each Q4 print's full year equals the 10-K that comes with it, that the
+10-K's fourth quarter equals the release's, and that every 2008-2013 fact is unchanged. Decided on 2026-11-27, before any 2014-2017 model was
+built or any outcome computed:
+
+- **Release timing.** Most earnings 8-Ks were accepted after the close (16:10-21:55 ET) and count from the next trading day, which is a
+  Friday for Q4 2013, Q3 2014 and Q1 2015 (that Friday is the week's date, public before its open: the AVGO, CRM and SCHW rule); Q1 2014,
+  Q4 2014 (Friday 2015-02-20), Q2 2017 and Q3 2017 came before the open. Each Q4 print comes the same day as its 10-K (by the same rule), so
+  no print carries full-year actuals.
+- **Five more vintages,** each year from the latest filing that reports it, each holding the ten fiscal years to the latest one: the
+  FY2013 10-K (2014-02-21); the 8-K of 2014-06-13 (accepted 15:56 ET, during the session) re-filing its Items 6-8 for the 2014 segments and
+  the deferred tax asset and stockpile revisions, a vintage of its own (the MU and MSFT recast rule, as the 8-K of 2009-09-15; FY12 $3.78 to
+  $3.76, FY13 $(5.06) to $(5.21); its 'why' stays the FY2013 10-K's, as Item 1A is not re-filed); the FY2014 10-K (2015-02-20); the FY2015
+  10-K (2016-02-18); the FY2016 10-K (2017-02-22), which restates 2012-2015 with Batu Hijau (sold 2016-11-02) in discontinued operations
+  (FY12 $3.72, FY14 $1.30, FY15 $0.00) while 2007-2011 keep it: a seam, as published. FY2003 leaves with the FY2013 10-K, one year a vintage
+  after it.
+- **EPS: GAAP diluted EPS from continuing operations** (the releases' adjusted net income still removes items that recur in every year it
+  tabulates: impairments, asset sales, tax adjustments; the PEP 2008 core rule). FY2007 and FY2011 stay gaps.
+  - **FY2013 is a loss** ($(5.06), the Q2 and Q4 2013 impairments; $(5.21) recast, $(4.71) without Batu Hijau): excluded as the latest
+    year, its days out of the window, then a gap ("ex-FY13").
+  - **FY2014 is kept at $1.10** (then $1.30 restated): the Q4 2014 release's listed after-tax items in continuing operations net to $(3)M
+    against $548M, so the AAPL FY2002 test and its mirror both pass.
+  - **FY2015 is excluded by the AAPL FY2002 test**, the FY2011 encoding: the Q4 2015 release lists $314M of after-tax items in continuing
+    operations (impairments of investments $74M and long-lived assets $22M, restructuring $17M, acquisition costs $12M, asset and
+    investment sales $(69)M, the TMAC deconsolidation gain $(49)M, reclamation charges $94M, the Ghana Investment Agreement $18M, tax
+    adjustments $195M) against $193M of income from continuing operations attributable to Newmont, so reported EPS ($0.38) is under half
+    the year's EPS without them, and the adjusted $0.98 also removes the recurring items; excluded as the latest year, then a gap. The
+    FY2016 10-K's $0.00 has no P/E either (the F rule).
+  - **FY2016 is a loss** ($(0.41), the $974M Yanacocha and other impairments of long-lived assets): excluded as the latest year, then a gap.
+  - So the anchor (the rollover rule; no filing guides EPS): FY12's $3.78 to 2014-06-06 (23 dates), $3.76 from 2014-06-13 (36), FY14's
+    $1.10 from 2015-02-20 (52) and, FY15 excluded, from 2016-02-19 (53), FY14's $1.30 from 2017-02-23 (45; "ex-FY15 ex-FY16"). The P/E
+    window loses the excluded years' days: 9.0 to 10 years of calendar span holding 2008-2010, 2012, 2014 and the current year in 2017.
+- **The ounces signal reads consolidated gold ounces sold again from Q2 2014.** From Q2 2014 every release's costs applicable to sales
+  reconciliation tabulates 'Gold sold (thousand ounces)', the per-ounce denominator, consolidated and against the year-ago quarter; it is
+  rule T's line (consolidated ounces sold from the FY2005 10-K/A) and the 2008-2009 prints', while the production table the 2010-2013
+  batch read is missing from the Q3 2014 release and from Q4 2016 on. So `oz_basis` is "sold" from Q2 2014 and those dates use the original
+  engine (`nem_engine.py.tmpl`, "Gold ounces sold"); Q4 2013 and Q1 2014, with no such row, keep consolidated ounces produced and `nem2`.
+  Costs applicable to sales per ounce come from the same reconciliation from Q2 2014 (the CAS table's consolidated average before).
+  Thresholds unchanged. A builder who knows later production chose between two published lines here; the signals at BEAR and XBULL
+  below bound the call.
+- **Diluted shares** (display, the EPS check) from the 10-Q filed with each Q1-Q3 release, and from the 10-K's quarterly data for Q4.
+- **No guide in numbers for revenue, EPS or a margin.** The outlooks are attributable (or, in the preliminary 8-K, consolidated) gold
+  production, costs applicable to sales and all-in sustaining costs per ounce, capital and cost components: display only (the XOM
+  production and MSFT segment rules), one quote a release cut to its own year, from each release, the preliminary 8-K/A of 2014-01-31 and
+  the outlook 8-Ks of 2015-12-02 (FY2016) and 2017-12-06 (FY2018; no built date reads it). BASE is the latest quarter's revenue growth less
+  the dilution (the UNP rule): Q4 2013 -12.4%, then -19.4%, -12.5%, -13.6%, -7.8%, +11.8%, +8.1%, +16.4%, -10.0%, +3.0%, +6.8%, +14.8%,
+  +23.2%, +13.5%, +12.3%, +4.9% (Q3 2017), as published (Batu Hijau out of the year-ago quarters from the Q3 2016 release).
+- **Dividends** (`dividends`, each rate from the first release that states it as declared): the Q3 2013 release's $0.20 stands to
+  2014-04-18, as the cut announced on 2014-02-19 was not filed (the Q4 2013 release says only "As announced yesterday ... has adjusted the
+  annual payout levels"); $0.025 a quarter from the Q1 2014 release (2014-04-25), $0.05 from the Q3 2016 release (2016-10-27), $0.075 from
+  the Q2 2017 release (2017-07-25).
+- **Durability: DURABLE, risk 2** (the MU rule: no FY2013-FY2016 10-K calls the business cyclical; the generator asserts it), the "why"
+  quoting each 10-K's lead sentence, its price-dependence sentence and its gold-price risk factor. The FY2016 vintage's business line
+  notes the Batu Hijau sale.
+- **Themes.** ECOMMERCE (2015-01-01), STREAMING (2015-08-04) and ENERGY_TRANSITION (2015-12-12) go live; the "why" quotes every live theme's
+  registered scope, none of which names a miner. ENERGY_TRANSITION is scoped to "decarbonisation strands oil, gas and coal reserves and
+  refining": Newmont holds none, so it is read as out of scope, and from its live date the "why" also quotes the vintage's own risk factor
+  "Regulations and pending legislation governing issues involving climate change could result in increased operating costs which could
+  have a material adverse effect on our business." (`climate_words`, text only, the UNH `cloud_words` encoding). The builder still refuses
+  any other live theme and any event.
+- **Anachronism list:** no new term; Ahafo North, Newmont Goldcorp and Nevada Gold Mines appear in no model.
+
+Controls and checks (before any outcome):
+- **`retro_tool run` passes on all 209 dates.** 43 carry the calendar-year warning, every one checked by script: a trading-day count in the
+  P/E-window comment (2,015 days on the seven dates of January-February 2014) or the FY2013 tax rate 0.2094 (36 dates).
+- **Controls** (`controls_nem_1417.py`, in memory, every weekly date from June 2013 to 2017-12-31): altering each print's ounces (rate
+  re-derived), each vintage's last-year revenue, each outlook's quoted text and each dividend rate changes no model dated before its
+  publication: 54 controls, 51 change the first weekly date on or after it and 3 are inert (the 8-K/A of 2014-01-31,
+  superseded by the Q4 2013 release before FY2014 is current, and the FY2016 and FY2018 outlook 8-Ks of 2015-12-02 and 2017-12-06).
+- **Leak scan:** 3 hits in 73,944 (model, later token) pairs, none a leak: a close of $24.11 (2014-04-04) and two trading-day counts (1,764
+  and 1,301 days). Positive control: the latest print's tokens in 209 of 209 models. **Forward references:** 3 in 78 facts, all the two
+  outlook 8-Ks' own guided year (the FY2016 quote of 2015-12-02 and the FY2018 title and quote of 2017-12-06), not later dates.
+  **Self-text scan:** 23 tokens of 1,034, all benign: eleven debt totals that are the sum of the two stated lines, the 2007 and 2011
+  exclusion notes and the 2009 recast's title carried in the vintages ($1,122M, $1,544M, $1,609M, "FSP APB", "Kori Kollo": their filings
+  precede this batch's folder), and the title words "Newmont FY".
+- **Regression:** rebuilding 2008-2013 with the new sheet and builder changes no file; no shared code changed but the firewall's NEM plant,
+  which gains the vintage's `climate_words`.
+
+Seen in the build (method behaviour, not tuned): **CHEAP 105, FAIR 6, RICH 98 of 209 dates** (BUY 99, ACCUMULATE 8, WATCHLIST 4, AVOID 98;
+robustness 8 of 8 on 177 dates, 7 on 28, 6 on 3, 2 on 1). The class follows the anchor:
+- FY12's $3.78 and $3.76 (2014-01-03 to 2015-02-13, 59 dates): $18.40-27.09 is 4.9-7.2x against a median of 15.8-24.0x (0th-12th
+  percentile): CHEAP on every date.
+- FY14's $1.10 (2015-02-20 to 2016-02-12, 52 dates): $15.70-27.69 is 14.3-25.2x against 17.5-20.6x (25th-74th): CHEAP 46, FAIR 6.
+- FY14's $1.10 with FY15 excluded (2016-02-19 to 2017-02-17, 53 dates): $24.84-45.17 is 22.6-41.1x against 17.3-17.5x (69th-99th):
+  RICH on every date.
+- FY14's $1.30 (2017-02-23 on, 45 dates): $32.03-39.31 is 24.6-30.2x against 15.9-16.9x (80th-100th): RICH on every date.
+- BEAR is 2005's -36.2%/yr while 2005 is in the history, then the 0% cap from the FY2014 10-K: with 2007, 2011, 2013 and 2015 out, no
+  remaining pair of consecutive years falls, so the 2012-2014 drop never enters the bear case. BULL is the window's CAGR (+16.7% to
+  +21.4%/yr, -1.0% in 2016), XBULL the 2009-2010 run (+59-60%/yr).
+
+How far each call moves the classes (the 209 dates rebuilt with one encoding changed, classified offline; `sens_nem_1417.py`; no outcome):
+- the company's adjusted net income per diluted share for 2013-2016 (FY13 $1.40, then $1.25; FY14 $1.09; FY15 $0.98, then $0.63 without
+  Batu Hijau; FY16 $1.16): 22 classes and 56 tiers (17 CHEAP to FAIR, 3 CHEAP to RICH, 2 FAIR to RICH, 2015-01-23 to 2016-02-12), the
+  batch's largest EPS call;
+- a five-year P/E window instead of ten: 22 classes (14 CHEAP to RICH, 5 FAIR to RICH, 3 CHEAP to FAIR, all 2015);
+- every data signal at its BEAR value: 29 classes (23 CHEAP to RICH, 6 FAIR to RICH, all 2015), no tier; at XBULL: 1 class;
+- BASE on the latest quarter's ounces growth: 6 classes (2015); the vintage's dividend instead of the declared rates: 1 class;
+- FY2015 kept at GAAP $0.38; FY14 $1.10 and FY12 $3.76 kept in the FY2016 vintage; the 8-K of 2014-06-13 not a vintage: no class.
+The 2015 CHEAP calls are the fragile ones: they rest on FY14's $1.10 against a window median near 20x, and the signals, the window and the
+adjusted-EPS reading each move most of them. The 2014 CHEAP and 2016-2017 RICH calls move under none of the eight.
+
+Judgement calls that could carry hindsight:
+- FY2015 excluded by the AAPL FY2002 test with every listed item summed, recurring ones included (the FY2011 encoding; kept at $0.38 moves
+  no class), and GAAP rather than the adjusted net income (22 classes), by the frozen tests;
+- the ounces signal back on consolidated ounces sold from Q2 2014, chosen between two published lines by a builder who knows later
+  production (the signals at BEAR move 29 classes, at XBULL 1);
+- the 8-K of 2014-06-13 as a vintage and the FY2016 10-K's Batu Hijau restatement used as published (no class either way);
+- the dividend cut of 2014-02-19, not filed, left out until the Q1 2014 release (1 class);
+- the ten-year P/E window with the excluded years' days removed, which leaves 2008-2010, 2012 and 2014 in it by 2017 (a five-year one moves
+  22 classes);
+- ECOMMERCE, STREAMING and ENERGY_TRANSITION read as out of scope (text only), and DURABLE rather than CYCLICAL (label only);
+- the parts of the filings listed as not read.
+
+The hindsight results are in `staging/retrospective/NEM/FINDINGS.md`, labelled as hindsight: hypotheses, never inputs.
+
 ## LYB (LyondellBasell Industries): the thirty-seventh ticker, in staging, from its 2010 share issue
 
 The LYB series is built apart from every other ticker and shares nothing with them but the machinery: its own fact sheet
