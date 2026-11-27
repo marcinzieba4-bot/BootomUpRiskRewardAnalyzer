@@ -136,8 +136,8 @@ the range). None of it is an input.
 | class CHEAP | 21 | +35.2% | +12.9% | -13.9pp | -7.1% | 2 of 21 |
 | all | 209 | +8.0% | +11.2% | -12.5pp | +12.0% | 143 of 209 |
 
-- **The RICH calls held on 140 of 183 dates,** after failing on 98 of 100 in 2012-2013. They held in 2014 on 46 of 51 RICH dates (
-  the price peaked that summer and two years later sat lower, -12.9% median for the AVOID dates), in 2015 on 43 of 53 and in 2017 on all
+- **The RICH calls held on 140 of 183 dates,** after failing on 98 of 100 in 2012-2013. They held in 2014 on 46 of 51 RICH dates (the
+  price peaked that summer and two years later sat lower, -12.9% median for the AVOID dates), in 2015 on 43 of 53 and in 2017 on all
   33; they failed in 2016 (18 of 46 held), whose two years caught the 2016-2018 recovery (median +39.4%).
 - **The CHEAP calls failed on 19 of 21.** The two of February 2016 (P/E 7.9x, the 10th percentile, at the trough) cleared the hurdle
   (+52.5%, +57.7%); the 19 of March-August 2017 (P/E near the window median, BASE +14.6% to +30.0%/yr on the year-on-year revenue
