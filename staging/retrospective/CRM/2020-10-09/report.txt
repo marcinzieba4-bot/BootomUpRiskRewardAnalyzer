@@ -1,0 +1,147 @@
+
+════════════════════════════════════════════════════════════════════════
+  CRM  ·  salesforce.com, inc.  ·  $265.98  ·  RETROSPECTIVE as of 2020-10-09
+  Signal: ✕ AVOID   Ratio B: infx   Adj gap: -1.99  [OVERVALUED]
+  Point-in-time: 16 sources, latest published 2020-10-09; latest print Q2 FY21 (Aug 28)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2021E revenue, USD bn  →  FY2023E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2021E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Total revenues                $ 22.04  $22.04  $37.02    +0.00   +14.98
+    +28.7% revenue in FY20
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $ 22.04  $22.04  $37.02    +0.00   +14.98
+  FY2021E = FY20 $17.098B × (1 + 28.9%: the Q2 FY21 revenue growth (the Q3 FY21 guide is not in this fact sheet (reduced-data batch)), YoY, applied to the year (the FY21 revenue guide is not in this fact sheet (reduced-data batch))); split pro rata to FY20 total revenues (the FY2020 10-K's XBRL; the geographic split is not in this fact sheet), growth on the year before
+  Q2 FY21 (Aug 28): revenue $5.151B +28.9% YoY (+5.9% QoQ); subscription and support +28.9%; deferred revenue $8.711B +22.0%; R&D + M&S + G&A +30.5%;
+  gross margin 74.55% (-125.8bp); operating margin 3.46% (+200.5bp); EPS $2.85 vs $0.11
+  Revenue: revenues $5,151.0M vs $3,997.0M a year earlier, $4,865.0M the quarter before; subscription and support is not in the company facts (professional services is tagged only in segment detail), so total revenues stand in for its signal; unearned revenue $8,711.0M (2020-07-31) vs $7,142.0M a year earlier, current only (the balance sheets' XBRL); GAAP diluted EPS $2.85 vs $0.11 (the 10-Q's XBRL); diluted shares 922.0M; reduced-data print: the 10-Q's XBRL figures; salesforce.com's earnings release for the quarter is not in this fact sheet; the year-ago quarter's operating expenses include a separately stated $166.0M line, also left out of the opex signal
+  Q3 FY21 outlook: Q3 FY21: the revenue guide is not in this fact sheet (reduced-data batch); the latest quarter's revenue growth stands in (the UNP rule); FY21 guide: the FY21 EPS range is not in this fact sheet (reduced-data batch); the FY21 revenue range is not in this fact sheet (reduced-data batch); no margin guide in this fact sheet
+
+  FY2021E EPS check:  $22.040B × 4.1% pre-tax × (1−82.2%) ÷ 0.922B  =  $0.18  (FY2021E: the EPS guide is not in this fact sheet (reduced-data batch), FY20's $0.15 stands)
+  FY2023E BEAR check: $22.040B × 4.1% ÷ 1.012B  =  $0.16  (scenario $0.00)
+  FY2023E BULL check: $37.020B × 4.5% ÷ 1.012B  =  $0.29  (scenario $0.23)
+  Every 1pp of pre-tax margin ≈ $0.043 EPS ≈ $7.88/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Subscription and support growth       +40.0%    ≥61.0%    ≥82.0%   ≥328.0%    +28.9%  ⚠ BEAR  █░░░
+  Deferred revenue growth               +43.0%    ≥68.0%    ≥93.0%   ≥169.0%    +22.0%  ⚠ BEAR  █░░░
+  Gross margin change                 -740.0bp  ≥-330.0bp   ≥70.0bp  ≥3600.0bp  -125.8bp  ◦ BASE  ██░░
+  Opex growth less revenue             +49.0pp   ≤12.0pp  ≤-24.0pp  ≤-305.0pp    +1.6pp  ◦ BASE  ██░░
+  Operating margin change             -2800.0bp  ≥-720.0bp  ≥1360.0bp  ≥48650.0bp  +200.5bp  ◦ BASE  ██░░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.60 / 4.00
+  Market composite:   3.29 / 4.00  (back-solved from $265.98 + 15% hurdle)
+  SCA adjustment:    +0.00  ·  EPP-distance adj -0.30  →  Adj composite 1.30  →  Gap -1.99  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY20 revenues +28.7%, subscription and support not in the company facts, gross margin 75.2%; Q2 unearned revenue +22.0% YoY  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 1773.2x FY21E vs a 185.3x 10-yr ex-FY12 ex-FY13 ex-FY14 ex-FY15 ex-FY16 median (100th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: Q2 FY21 revenue growth (the Q3 FY21 guide is not in this fact sheet (reduced-data batch)) +28.9% vs a 28.7% 9-yr median  (+0.02 × 20%  =  +0.004)
+    +  Cash, cash equivalents and marketable securities $9.283B (Q2 FY21), debt $2,692.0M, current and noncurrent (us-gaap:LongTermDebt, the balance sheet's XBRL), FY20 free cash flow $3.688B (net cash provided by operating activities $4,331.0M less capital expenditures $643.0M (XBRL)), no dividend  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Subscription and support growth       +28.9%    +40.0%  +11.1%  New subscriptions and renewals slow: …
+  Deferred revenue growth               +22.0%    +43.0%  +21.0%  Billings slow ahead of revenue: the n…
+  Gross margin change                 -125.8bp  -740.0bp  -614.2bp  Data-center and service costs outgrow…
+  Opex growth less revenue              +1.6pp   +49.0pp  +47.4pp  Marketing and sales, R&D and G&A do n…
+  Operating margin change             +200.5bp  -2800.0bp  -3000.5bp  Operating leverage works in reverse
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$29.09  (model)  /  $0.00 (defined)
+  Bear probability (proxy model):  44.8%
+
+  KEY TRIGGER: revenue went from +30.2% (Q1 FY21) to +28.9% YoY (Q2 FY21), +5.9% on the quarter before;
+  the bear case needs deferred revenue (+22.0% YoY now) and the operating
+  margin (+200.5bp now) giving way. A subscription slowdown shows up in deferred revenue first, then in
+  subscription and support revenue a few quarters later.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $0.15  (FY2021E: the EPS guide is not in this fact sheet (reduced-data batch), FY20's $0.15 stands)
+  Min viable P/E at panic:          153x  [median of calendar-year P/E lows: 2010 212.6x, 2011 263.8x, 2016 117.5x, 2017 153.3x, 2018 72.7x, 2019 91.2x, 2020 828.7x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $22.95/share
+  Current $265.98 vs Updated EPP $22.95:  +1059%  ⚠ far above floor — large drawdown room
+  Bear $0.00 vs Updated EPP $22.95:  -100%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.30 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Subscription and support growth               61.0      +32.1   BASE floor (vs +29 now)
+  Deferred revenue growth                       68.0      +46.0   BASE floor (vs +22 now)
+  Gross margin change                         -330.0     -204.2   BASE floor (vs -126 now)
+  Opex growth less revenue                      12.0      +10.4   BASE floor (vs +2 now)
+  Operating margin change                     -720.0     -920.5   BASE floor (vs +200 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $0.15 × (1+22.1%)² = $0.22
+  At 185x P/E (conservative):  $41.38/share
+  + Cumul. dividends (2yr):  +$0.00/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $41.38  (▼224.60 from $265.98)
+  Conservative total return:  -84% over 2yr  = -42%/yr
+
+  22.1% EPS growth is what is left once the premium multiple (1773.2x)
+  mean-reverts to 185x. Breakeven at 185x needs FY2023E EPS of $1.44,
+  i.e. 209.6%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $115.29  –  $284.50  (at 89th pct of range)
+  Annual dividend:      $0.00/share  (yield 0.0%)
+  Realized vol:         50% annualized (1-yr daily log returns)
+  Beta vs broad market: 1.06
+  1-sigma range (1yr):  $133.52  –  $398.44  ($265.98 ± 50%)
+  2-sigma range (1yr):  $1.06  –  $530.90
+  ────────────────────────────────────────────────────────────
+  Bear $0.00 requires:  ~2.0σ price move  (unusual — requires fundamental break)
+  A subscription software company priced on its growth: the stock is +114% off its March
+  low (52 weeks) while revenue went from +30.2% (Q1 FY21) to +28.9% YoY (Q2 FY21), +5.9% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        0.00   95.5x  $   0.00    44.8%      3.3%   +41.5pp  EPS -89.5%/yr (worst year FY11-FY20 ex-FY12 ex-FY13 ex-FY14 ex-FY15 ex-FY16, capped at 0%); P/E to its 10th pct
+  BASE        0.23  185.3x  $  42.62    41.2%     11.4%   +29.8pp  EPS +24.1%/yr (Q2 revenue YoY + margin + buyback); P/E at its 10-yr ex-FY12 ex-FY13 ex-FY14 ex-FY15 ex-FY16 median
+  BULL        0.23  1031.5x  $ 237.25    11.8%     39.8%   -28.0pp  EPS +24.1%/yr (FY11-FY20 ex-FY12 ex-FY13 ex-FY14 ex-FY15 ex-FY16 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL       0.47  1176.8x  $ 553.10     2.2%     45.5%   -43.3pp  EPS +76.3%/yr (best 2-yr run FY11-FY20 ex-FY12 ex-FY13 ex-FY14 ex-FY15 ex-FY16, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $57.89  /  Market EV: $351.00  /  Current: $265.98
+  Conservative EV (2yr, ④): $41.38 + $0.00 divs = $41.38 total value
+  Downside (→ Bear $0.00): 100.0%   Upside (→ Bull $237.25): -10.8%   Ratio B infx  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $265.98 the market needs $351.76 in two years —
+  above the BULL case. That is a market composite of 3.29 against a model
+  read of 1.30: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                        infx   +1059%    -1.99  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)    56.83x   +1059%    -1.56  OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx   +1059%    -2.30  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                           infx   +1059%    -1.96  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                           infx   +1059%    -2.03  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)              infx   +1059%    -1.69  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                  infx   +1037%    -1.99  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                     infx   +1059%    -1.89  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 FY21 10-Q (November) — revenue against the Q2 FY21 revenue growth (the Q3 FY21 guide is not in this fact sheet (reduced-data batch)): +28.9% YoY
+  (2) Deferred revenue — +22.0% YoY in Q2 FY21: billings run ahead of revenue, so they slow first
+  (3) The FY21 EPS guide — not in this fact sheet (reduced-data batch)
+  (4) Operating expenses — R&D, marketing and sales and G&A +30.5% against revenue +28.9% in Q2 FY21 (+1.6pp): the cost of growth
+  (5) Capital structure at 1773x — no share repurchase program (no repurchase of common stock in the cash flow statements' XBRL)
+  ✕ AVOID  |  EPP floor $22.95  |  ADD below ~$36.23  |  TRIM above $237.25
+════════════════════════════════════════════════════════════════════════
+

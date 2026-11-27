@@ -1,0 +1,147 @@
+
+════════════════════════════════════════════════════════════════════════
+  CRM  ·  salesforce.com, inc.  ·  $120.22  ·  RETROSPECTIVE as of 2018-04-27
+  Signal: ✕ AVOID   Ratio B: infx   Adj gap: -2.37  [OVERVALUED]
+  Point-in-time: 11 sources, latest published 2018-04-27; latest print Q4 FY18 (Mar 9)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2019E revenue, USD bn  →  FY2021E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2019E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Total revenues                $ 13.03  $13.03  $21.60    +0.00    +8.57
+    +24.9% revenue in FY18
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $ 13.03  $13.03  $21.60    +0.00    +8.57
+  FY2019E = FY18 $10.480B × (1 + 24.3%: the Q4 FY18 revenue growth (the Q1 FY19 guide is not in this fact sheet (reduced-data batch)), YoY, applied to the year (the FY19 revenue guide is not in this fact sheet (reduced-data batch))); split pro rata to FY18 total revenues (the FY2018 10-K's XBRL; the geographic split is not in this fact sheet), growth on the year before
+  Q4 FY18 (Mar 9): revenue $2.851B +24.3% YoY (+6.4% QoQ); subscription and support +25.8%; deferred revenue $7.095B +28.0%; R&D + M&S + G&A +20.3%;
+  gross margin 74.12% (+140.9bp); operating margin 2.73% (+374.9bp); EPS $0.09 vs $(0.07)
+  Revenue: revenues $2,851.0M vs $2,294.0M a year earlier, $2,679.8M the quarter before; subscription and support $2,655.0M vs $2,110.7M (total revenues less professional services and other, as tagged) (Q4 = the fiscal year less the Q3 10-Q's nine months, both years; the 10-K's quarterly data tag Q4 revenues, gross profit and operating result, which agree); deferred revenue $7,094.7M (2018-01-31) vs $5,542.8M a year earlier, current only (the balance sheets' XBRL); GAAP diluted EPS $0.09 vs $(0.07) (the 10-K's XBRL); diluted shares 734.6M (the fiscal year's weighted average; the 10-K tags no Q4 count); reduced-data print: the 10-K's XBRL figures; salesforce.com's earnings release for the quarter is not in this fact sheet
+  Q1 FY19 outlook: Q1 FY19: the revenue guide is not in this fact sheet (reduced-data batch); the latest quarter's revenue growth stands in (the UNP rule); FY19 guide: the FY19 EPS range is not in this fact sheet (reduced-data batch); the FY19 revenue range is not in this fact sheet (reduced-data batch); no margin guide in this fact sheet
+
+  FY2019E EPS check:  $13.030B × 1.9% pre-tax × (1−36.9%) ÷ 0.735B  =  $0.22  (FY2019E: the EPS guide is not in this fact sheet (reduced-data batch), FY18's $0.17 stands)
+  FY2021E BEAR check: $13.030B × 1.9% ÷ 0.797B  =  $0.20  (scenario $0.07)
+  FY2021E BULL check: $21.600B × 2.3% ÷ 0.797B  =  $0.40  (scenario $0.25)
+  Every 1pp of pre-tax margin ≈ $0.112 EPS ≈ $27.33/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Subscription and support growth       +40.0%    ≥61.0%    ≥82.0%   ≥328.0%    +25.8%  ⚠ BEAR  █░░░
+  Deferred revenue growth               +43.0%    ≥68.0%    ≥93.0%   ≥169.0%    +28.0%  ⚠ BEAR  █░░░
+  Gross margin change                 -740.0bp  ≥-330.0bp   ≥70.0bp  ≥3600.0bp  +140.9bp  ▲ BULL  ███░
+  Opex growth less revenue             +49.0pp   ≤12.0pp  ≤-24.0pp  ≤-305.0pp    -3.9pp  ◦ BASE  ██░░
+  Operating margin change             -2800.0bp  ≥-720.0bp  ≥1360.0bp  ≥48650.0bp  +374.9bp  ◦ BASE  ██░░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.75 / 4.00
+  Market composite:   3.77 / 4.00  (back-solved from $120.22 + 15% hurdle)
+  SCA adjustment:    -0.05  ·  EPP-distance adj -0.30  →  Adj composite 1.40  →  Gap -2.37  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY18 revenues +24.9%, subscription and support +25.2%, gross margin 73.5%; Q4 deferred revenue +28.0% YoY  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 707.2x FY19E vs a 244.2x 10-yr ex-FY12 ex-FY13 ex-FY14 ex-FY15 ex-FY16 median (98th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    -  Growth vs own history: Q4 FY18 revenue growth (the Q1 FY19 guide is not in this fact sheet (reduced-data batch)) +24.3% vs a 26.9% 9-yr median  (-0.26 × 20%  =  -0.052)
+    +  Cash, cash equivalents and marketable securities $4.522B (Q4 FY18), debt $1,726.8M, current and noncurrent (us-gaap:LongTermDebt, the balance sheet's XBRL), FY18 free cash flow $2.204B (net cash provided by operating activities $2,738.0M less capital expenditures $534.0M (XBRL)), no dividend  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Subscription and support growth       +25.8%    +40.0%  +14.2%  New subscriptions and renewals slow: …
+  Deferred revenue growth               +28.0%    +43.0%  +15.0%  Billings slow ahead of revenue: the n…
+  Gross margin change                 +140.9bp  -740.0bp  -880.9bp  Data-center and service costs outgrow…
+  Opex growth less revenue              -3.9pp   +49.0pp  +52.9pp  Marketing and sales, R&D and G&A do n…
+  Operating margin change             +374.9bp  -2800.0bp  -3174.9bp  Operating leverage works in reverse
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$22.54  (model)  /  $4.87 (defined)
+  Bear probability (proxy model):  33.0%
+
+  KEY TRIGGER: revenue went from +24.9% (Q3 FY18) to +24.3% YoY (Q4 FY18), +6.4% on the quarter before;
+  the bear case needs deferred revenue (+28.0% YoY now) and the operating
+  margin (+374.9bp now) giving way. A subscription slowdown shows up in deferred revenue first, then in
+  subscription and support revenue a few quarters later.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $0.17  (FY2019E: the EPS guide is not in this fact sheet (reduced-data batch), FY18's $0.17 stands)
+  Min viable P/E at panic:          207x  [median of calendar-year P/E lows: 2008 62.7x, 2009 40.9x, 2010 100.9x, 2011 263.8x, 2016 207.9x, 2017 271.3x, 2018 611.9x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $35.19/share
+  Current $120.22 vs Updated EPP $35.19:  +242%  ⚠ far above floor — large drawdown room
+  Bear $4.87 vs Updated EPP $35.19:  -86%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.30 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Subscription and support growth               61.0      +35.2   BASE floor (vs +26 now)
+  Deferred revenue growth                       68.0      +40.0   BASE floor (vs +28 now)
+  Gross margin change                         -330.0     -470.9   BASE floor (vs +141 now)
+  Opex growth less revenue                      12.0      +15.9   BASE floor (vs -4 now)
+  Operating margin change                     -720.0    -1094.9   BASE floor (vs +375 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $0.17 × (1+18.1%)² = $0.24
+  At 244x P/E (conservative):  $57.89/share
+  + Cumul. dividends (2yr):  +$0.00/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $57.89  (▼62.33 from $120.22)
+  Conservative total return:  -52% over 2yr  = -26%/yr
+
+  18.1% EPS growth is what is left once the premium multiple (707.2x)
+  mean-reverts to 244x. Breakeven at 244x needs FY2021E EPS of $0.49,
+  i.e. 70.2%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $83.55  –  $128.87  (at 81th pct of range)
+  Annual dividend:      $0.00/share  (yield 0.0%)
+  Realized vol:         21% annualized (1-yr daily log returns)
+  Beta vs broad market: 1.14
+  1-sigma range (1yr):  $95.09  –  $145.35  ($120.22 ± 21%)
+  2-sigma range (1yr):  $69.97  –  $170.47
+  ────────────────────────────────────────────────────────────
+  Bear $4.87 requires:  ~4.6σ price move  (unusual — requires fundamental break)
+  A subscription software company priced on its growth: the stock is +40% off its June
+  low (52 weeks) while revenue went from +24.9% (Q3 FY18) to +24.3% YoY (Q4 FY18), +6.4% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        0.07   69.6x  $   4.87    33.0%      1.2%   +31.7pp  EPS -34.6%/yr (worst year FY09-FY18 ex-FY12 ex-FY13 ex-FY14 ex-FY15 ex-FY16, capped at 0%); P/E to its 10th pct
+  BASE        0.25  244.2x  $  61.05    50.0%      4.3%   +45.7pp  EPS +20.1%/yr (Q4 revenue YoY + margin + buyback); P/E at its 10-yr ex-FY12 ex-FY13 ex-FY14 ex-FY15 ex-FY16 median
+  BULL        0.25  320.6x  $  80.15    14.3%     15.0%    -0.7pp  EPS +20.1%/yr (FY09-FY18 ex-FY12 ex-FY13 ex-FY14 ex-FY15 ex-FY16 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL       0.25  581.8x  $ 145.45     2.7%     79.5%   -76.8pp  EPS +20.1%/yr (best 2-yr run FY09-FY18 ex-FY12 ex-FY13 ex-FY14 ex-FY15 ex-FY16, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $47.55  /  Market EV: $130.29  /  Current: $120.22
+  Conservative EV (2yr, ④): $57.89 + $0.00 divs = $57.89 total value
+  Downside (→ Bear $4.87): 95.9%   Upside (→ Bull $80.15): -33.3%   Ratio B infx  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $120.22 the market needs $158.99 in two years —
+  above the BULL case. That is a market composite of 3.77 against a model
+  read of 1.40: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                        infx    +242%    -2.37  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     4.46x    +242%    -2.00  OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx    +242%    -2.35  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                           infx    +242%    -2.40  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                           infx    +242%    -2.37  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)              infx    +242%    -2.07  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                  infx    +237%    -2.37  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                     infx    +242%    -2.37  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 FY19 10-Q (May) — revenue against the Q4 FY18 revenue growth (the Q1 FY19 guide is not in this fact sheet (reduced-data batch)): +24.3% YoY
+  (2) Deferred revenue — +28.0% YoY in Q4 FY18: billings run ahead of revenue, so they slow first
+  (3) The FY19 EPS guide — not in this fact sheet (reduced-data batch)
+  (4) Operating expenses — R&D, marketing and sales and G&A +20.3% against revenue +24.3% in Q4 FY18 (-3.9pp): the cost of growth
+  (5) Capital structure at 707x — no share repurchase program (no repurchase of common stock in the cash flow statements' XBRL)
+  ✕ AVOID  |  EPP floor $35.19  |  ADD below ~$51.89  |  TRIM above $80.15
+════════════════════════════════════════════════════════════════════════
+
