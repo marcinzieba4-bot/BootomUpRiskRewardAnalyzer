@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  SCHW  ·  The Charles Schwab Corporation  ·  $19.00  ·  RETROSPECTIVE as of 2010-01-15
+  Signal: ◉ BUY   Ratio B: 0.13x   Adj gap: +0.57  [UNDERVALUED]
+  Point-in-time: 8 sources, latest published 2010-01-15; latest print Q3 2009 (Oct 15)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2009E revenue, USD bn  →  FY2011E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2009E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Asset management and adminis  $  1.90  $ 1.90  $ 2.28    +0.00    +0.38
+    -0.1% revenue in FY08
+  Net interest revenue          $  1.35  $ 1.35  $ 1.61    +0.00    +0.26
+    +1.1% revenue in FY08
+  Trading revenue               $  0.87  $ 0.87  $ 1.05    +0.00    +0.18
+    +25.6% revenue in FY08
+  Other                         $  0.04  $ 0.04  $ 0.05    +0.00    +0.01
+    -61.2% revenue in FY08
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $  4.16  $ 4.16  $ 4.99    +0.00    +0.83
+  FY2009E = FY08 $5.150B × (1 − 19.2%: the Q3 2009 revenue growth (no Q4 2009 guide), YoY, applied to the year (no FY09 revenue guide)); split pro rata to FY08 net revenues by component (asset management and administration fees, net interest revenue, trading revenue, other; FY08 growth)
+  Q3 2009 (Oct 15): net revenues $1.011B -19.2% YoY (-6.8% QoQ); client assets $1,363.6B +4.5%; trades 273.7K a day -3.3%;
+  expenses excluding interest -8.1%; pre-tax margin 31.65% (-823.6bp); net new client assets $19.9B; EPS $0.17 vs $0.26
+  Revenue: net revenues $1,011M vs $1,251M a year earlier, $1,085M the quarter before; client assets $1,363.6B vs $1,304.5B a year earlier; net new client assets $19.9B in the quarter; daily average revenue trades 273.7K vs 282.9K; diluted EPS from continuing operations $0.17 vs $0.26, GAAP; diluted shares 1,163M; expenses excluding interest $691M vs $752M; $11M of credit-related impairment charges and $78M of money market fund fee waivers in the quarter, as published ('credit-related charges recognized during the quarter totaled $11 million.' 'money market fund fee waivers increased to $78 million as anticipated, resulting in a 24% decline.')
+  Q4 2009: no revenue, EPS or margin guide in numbers in any filing; the latest quarter's revenue growth stands in (the UNP rule); the expense goal (2009 cuts of 7 to 8% of 2008's total spending) is a cost component, which method r2 has no input for
+
+  FY2009E EPS check:  $4.160B × 39.4% pre-tax × (1−39.4%) ÷ 1.163B  =  $0.85  (FY2009E: no EPS guide in numbers, FY08's $1.06 stands)
+  FY2011E BEAR check: $4.160B × 39.4% ÷ 1.086B  =  $0.91  (scenario $0.85)
+  FY2011E BULL check: $4.990B × 39.8% ÷ 1.086B  =  $1.11  (scenario $1.78)
+  Every 1pp of pre-tax margin ≈ $0.022 EPS ≈ $0.51/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Net revenue growth                    -56.0%   ≥-22.0%    ≥12.0%    ≥41.0%    -19.2%  ◦ BASE  ██░░
+  Client assets growth                  -34.0%   ≥-10.0%    ≥15.0%    ≥42.0%     +4.5%  ◦ BASE  ██░░
+  Expense growth less revenue          +35.0pp   ≤16.0pp   ≤-3.0pp  ≤-16.0pp   +11.1pp  ◦ BASE  ██░░
+  Daily average revenue trades          -91.0%   ≥-34.0%    ≥22.0%    ≥68.0%     -3.3%  ◦ BASE  ██░░
+  Pre-tax margin change               -3510.0bp  ≥-1640.0bp  ≥230.0bp  ≥1330.0bp  -823.6bp  ◦ BASE  ██░░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.00 / 4.00
+  Market composite:   1.78 / 4.00  (back-solved from $19.00 + 15% hurdle)
+  SCA adjustment:    +0.15  ·  EPP-distance adj +0.20  →  Adj composite 2.35  →  Gap +0.57  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY08 net revenues +3.1%, client assets $1,137.0B (-21.3%); Q3 net new client assets $19.9B  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 17.9x FY09E vs a 23.7x 7.0-yr median (17th percentile of its own range)  (+0.50 × 25%  =  +0.125)
+    -  Growth vs own history: Q3 2009 revenue growth (no Q4 2009 guide) -19.2% vs a 5.9% 5-yr median  (-0.50 × 20%  =  -0.100)
+    +  Client assets $1,363.6B (+4.5% YoY) at the end of Q3 2009, pre-tax margin 31.6%, dividend $0.24 a year  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Net revenue growth                    -19.2%    -56.0%  -36.8%  Asset-based and trading revenue fall …
+  Client assets growth                   +4.5%    -34.0%  -38.5%  Client assets shrink with markets and…
+  Expense growth less revenue          +11.1pp   +35.0pp  +23.9pp  Expenses excluding interest do not fa…
+  Daily average revenue trades           -3.3%    -91.0%  -87.7%  Clients trade less
+  Pre-tax margin change               -823.6bp  -3510.0bp  -2686.4bp  Expenses outrun revenue
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$18.61  (model)  /  $14.28 (defined)
+  Bear probability (proxy model):  17.6%
+
+  KEY TRIGGER: revenue went from -17.0% (Q2 2009) to -19.2% YoY (Q3 2009), -6.8% on the quarter before;
+  the bear case needs client assets (+4.5% YoY now) shrinking further
+  and trades (-3.3% YoY) falling with them. Lower markets and rates show up in client assets and asset-based fees first;
+  the bear needs them in net revenue as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $1.06  (FY2009E: no EPS guide in numbers, FY08's $1.06 stands)
+  Min viable P/E at panic:          19x  [median of calendar-year P/E lows: 2003 22.6x, 2004 31.9x, 2005 20.6x, 2006 20.7x, 2007 19.3x, 2008 13.8x, 2009 10.7x, 2010 17.9x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $20.14/share
+  Current $19.00 vs Updated EPP $20.14:  -6%  ✓ BELOW panic floor — deep-value zone
+  Bear $14.28 vs Updated EPP $20.14:  -29%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Net revenue growth                           -22.0       -2.8   BASE floor (vs -19 now)
+  Client assets growth                         -10.0      -14.5   BASE floor (vs +4 now)
+  Expense growth less revenue                   16.0       +4.9   BASE floor (vs +11 now)
+  Daily average revenue trades                 -34.0      -30.7   BASE floor (vs -3 now)
+  Pre-tax margin change                      -1640.0     -816.4   BASE floor (vs -824 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $1.06 × (1+0.0%)² = $1.06
+  At 23x P/E (conservative):  $24.38/share
+  + Cumul. dividends (2yr):  +$0.49/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $24.38  (▲5.38 from $19.00)
+  Conservative total return:  +31% over 2yr  = +15%/yr
+
+  At 17.9x the multiple is already near its 23x median, so the conservative
+  case is a growth question: breakeven at 23x needs FY2011E EPS of $0.80,
+  i.e. -12.9%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $11.00  –  $19.87  (at 90th pct of range)
+  Annual dividend:      $0.24/share  (yield 1.3%)
+  Realized vol:         55% annualized (1-yr daily log returns)
+  Beta vs broad market: 1.56
+  1-sigma range (1yr):  $8.64  –  $29.36  ($19.00 ± 55%)
+  2-sigma range (1yr):  $-1.71  –  $39.71
+  ────────────────────────────────────────────────────────────
+  Bear $14.28 requires:  ~0.5σ price move  (within normal vol range)
+  A broker whose earnings follow markets and rates: the stock is +68% off its March
+  low (52 weeks) while revenue went from -17.0% (Q2 2009) to -19.2% YoY (Q3 2009), -6.8% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        0.85   16.8x  $  14.28    17.6%     30.8%   -13.2pp  EPS -10.3%/yr (worst year FY03-FY08, capped at 0%); P/E to its 10th pct
+  BASE        0.75   23.7x  $  17.77    61.5%     51.6%    +9.8pp  EPS -15.9%/yr (Q3 revenue YoY + margin + buyback); P/E at its 7.0-yr median
+  BULL        1.78   31.8x  $  56.60    17.6%     14.8%    +2.8pp  EPS +29.6%/yr (FY03-FY08 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL       2.81   40.0x  $ 112.40     3.3%      2.8%    +0.5pp  EPS +62.9%/yr (best 2-yr run FY03-FY08, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $27.14  /  Market EV: $25.08  /  Current: $19.00
+  Conservative EV (2yr, ④): $24.38 + $0.49 divs = $24.87 total value
+  Downside (→ Bear $14.28): 24.8%   Upside (→ Bull $56.60): 197.9%   Ratio B 0.13x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $19.00 the market needs $25.13 in two years —
+  between the BASE and BULL cases. That is a market composite of 1.78 against a model
+  read of 2.35: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.13x      -6%    +0.57  UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.03x      -6%    +0.99  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.25x      -6%    +0.21  MODESTLY UNDERVALUED / BUY
+  Scenario EPS +1.5pp/yr                          0.11x      -6%    +0.63  UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.14x      -6%    +0.49  MODESTLY UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.13x      -6%    +0.87  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.13x     -19%    +0.57  UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.13x      -6%    +0.74  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 2009 print (the quarter ends in December) — revenue against the Q3 2009 revenue growth (no Q4 2009 guide): -19.2% YoY
+  (2) Client assets — $1,363.6B at the end of Q3 2009 (+4.5% YoY): asset-based revenue follows them
+  (3) A Q4 2009 revenue guide — none: Schwab gives no revenue, EPS or margin outlook in numbers in any filing; the monthly activity reports in each release track client assets, net new assets and trades
+  (4) Trading activity — 273.7K daily average revenue trades in Q3 2009 (-3.3% YoY): the driver of trading revenue
+  (5) Capital at 18x — dividend $0.06 a quarter: 'on July 22, 2008, the Board of Directors increased the quarterly cash dividend from $.05 per share to $.06 per share' (Q2 2008 10-Q)
+  ◉ BUY  |  EPP floor $20.14  |  ADD below ~$15.10  |  TRIM above $56.60
+════════════════════════════════════════════════════════════════════════
+
