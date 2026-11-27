@@ -1,0 +1,272 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "NEE",
+ "company": "FPL Group, Inc.",
+ "as_of": "2008-12-19",
+ "price_date": "2008-12-19",
+ "price": 50.39,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); electric utility signals on FPL Group's own lines",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "FPL Group, Inc.: 'FPL is a rate-regulated utility engaged primarily in the generation, transmission, distribution and sale of electric energy.' and 'FPL Energy is FPL Group's competitive energy subsidiary which produces the majority of its electricity from clean and renewable fuels.'; among its risk factors, 'FPL Group and FPL are subject to complex laws and regulations and to changes in laws and regulations as well as changing governmental policies and regulatory actions', 'Weather affects FPL Group's and FPL's results of operations.' and environmental rules 'relating to air quality, water quality, climate change, waste management, marine and wildlife mortality, natural resources and health and safety' (its own FY2007 10-K); no disruption theme in the registry is live for an electric utility on this date, so the watch list is empty and the 10-K's words on climate change stay here (the PEP obesity rule)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, NEUTRALLY VALUED",
+  "quality_label": "◎ QUALITY, NEUTRALLY VALUED",
+  "quality_color": "#f0b429",
+  "quality_tone": "amber",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "FAIR",
+  "quality_note": "FPL Group, Inc.: 'FPL is a rate-regulated utility engaged primarily in the generation, transmission, distribution and sale of electric energy.' and 'FPL Energy is FPL Group's competitive energy subsidiary which produces the majority of its electricity from clean and renewable fuels.'; among its risk factors, 'FPL Group and FPL are subject to complex laws and regulations and to changes in laws and regulations as well as changing governmental policies and regulatory actions', 'Weather affects FPL Group's and FPL's results of operations.' and environmental rules 'relating to air quality, water quality, climate change, waste management, marine and wildlife mortality, natural resources and health and safety' (its own FY2007 10-K); no disruption theme in the registry is live for an electric utility on this date, so the watch list is empty and the 10-K's words on climate change stay here (the PEP obesity rule). durable franchise (obsolescence risk 2/5); price fair; Ratio B 0.87x; +40% to EPP floor; model-vs-market gap +0.13; conservative 2yr +17%.",
+  "theme": null
+ },
+ "legacy_signal_short": "ACCUMULATE",
+ "legacy_signal": "◎ ACCUMULATE",
+ "metrics": {
+  "ratio_b": 0.87,
+  "ratio_b_fmt": "0.87x",
+  "epp": 35.97,
+  "epp_gap_pct": 40.1,
+  "epp_adj": -0.1,
+  "proxy_composite": 2.55,
+  "sca": 0.145,
+  "adj_composite": 2.595,
+  "market_composite": 2.46,
+  "adj_gap": 0.13,
+  "valuation": "FAIRLY VALUED",
+  "cons_return_2yr": 17.1,
+  "scenarios": {
+   "BEAR": {
+    "eps": 2.5,
+    "pe": 11.6,
+    "price": 29,
+    "desc": "EPS -12.6%/yr (worst year FY98-FY07, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 4.41,
+    "pe": 13.8,
+    "price": 61,
+    "desc": "EPS +16.1%/yr (Q3 revenue + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 4.41,
+    "pe": 17.0,
+    "price": 75,
+    "desc": "EPS +16.1%/yr (FY98-FY07 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 4.57,
+    "pe": 19.0,
+    "price": 87,
+    "desc": "EPS +18.2%/yr (best 2-yr run FY98-FY07); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.87,
+   "epp_gap_pct": 40.1,
+   "adj_gap": 0.13,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 17.1,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.55,
+   "epp_gap_pct": 40.1,
+   "adj_gap": 0.72,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 17.1,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 2.11,
+   "epp_gap_pct": 40.1,
+   "adj_gap": -0.67,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 17.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.77,
+   "epp_gap_pct": 40.1,
+   "adj_gap": 0.22,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 17.1,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.99,
+   "epp_gap_pct": 40.1,
+   "adj_gap": 0.02,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 17.1,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.87,
+   "epp_gap_pct": 40.1,
+   "adj_gap": 0.43,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 17.1,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.87,
+   "epp_gap_pct": 10.1,
+   "adj_gap": 0.23,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 17.1,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.87,
+   "epp_gap_pct": 40.1,
+   "adj_gap": 0.43,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 17.1,
+   "price_state": "FAIR"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP",
+  "FAIR",
+  "RICH"
+ ],
+ "summary": "NEE (retrospective, 2008-12-19) ◎ ACCUMULATE — Ratio B 0.87x (42.4% downside to Bear $29 / +48.8% upside to Bull $75) | Adj composite 2.59 vs market 2.46: gap +0.13 [FAIRLY VALUED] | +40% above the EPP floor $36 (11x FY08E $3.27) | Conservative 2-yr case: +17.1% total (+8.5%/yr) | At 15.4x FY08E the 15% hurdle price $67 sits between the BASE and BULL cases; FPL energy sales -5.1% in Q3 2008, forward revenues +17.7% (no Q4 2008 revenue guide, Q3 2008 revenue as reported); no disruption theme is live for an electric utility on this date.",
+ "sources": [
+  {
+   "id": "NE10",
+   "published": "2008-02-28",
+   "filed": "2008-02-28 15:34 ET (during the session)",
+   "title": "FPL Group FY2007 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330808000003/form10k2007.htm",
+   "supports": "FY2007 annual report (combined filing with Florida Power & Light Company)"
+  },
+  {
+   "id": "NE5",
+   "published": "2003-03-27",
+   "filed": "2003-03-26 21:39 ET (after the close)",
+   "title": "FPL Group FY2002 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330803000017/file10k2002.htm",
+   "supports": "FY2002 annual report (combined filing with Florida Power & Light Company)"
+  },
+  {
+   "id": "NE8",
+   "published": "2006-02-24",
+   "filed": "2006-02-23 16:04 ET (after the close)",
+   "title": "FPL Group FY2005 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330806000032/file10k2005.htm",
+   "supports": "FY2005 annual report (combined filing with Florida Power & Light Company)"
+  },
+  {
+   "id": "NE9",
+   "published": "2007-02-27",
+   "filed": "2007-02-27 13:47 ET (during the session)",
+   "title": "FPL Group FY2006 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330807000016/form10k2006.htm",
+   "supports": "FY2006 annual report (combined filing with Florida Power & Light Company)"
+  },
+  {
+   "id": "NE6",
+   "published": "2004-03-01",
+   "filed": "2004-02-27 17:25 ET (after the close)",
+   "title": "FPL Group FY2003 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330804000017/file10k2003.htm",
+   "supports": "FY2003 annual report (combined filing with Florida Power & Light Company)"
+  },
+  {
+   "id": "NE7",
+   "published": "2005-02-28",
+   "filed": "2005-02-25 18:08 ET (after the close)",
+   "title": "FPL Group FY2004 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330805000017/file10k2004.htm",
+   "supports": "FY2004 annual report (combined filing with Florida Power & Light Company)"
+  },
+  {
+   "id": "NE3",
+   "published": "2001-04-09",
+   "filed": "2001-04-09 (time not recorded by EDGAR)",
+   "title": "FPL Group FY2000 Form 10-K/A (the FY2000 10-K re-filed in full)",
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330801500020/file10ka.txt",
+   "supports": "FY2000 annual report (combined filing with Florida Power & Light Company)"
+  },
+  {
+   "id": "NE14",
+   "published": "2008-01-28",
+   "filed": "2008-01-28 08:16 ET (before the open)",
+   "title": "FPL Group Q4 2007 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330808000001/exhibit99.htm",
+   "supports": "Q4 2007 earnings release: segment statements of income, earnings per share, FPL statistics, outlook"
+  },
+  {
+   "id": "NE15",
+   "published": "2008-04-30",
+   "filed": "2008-04-30 08:08 ET (before the open)",
+   "title": "FPL Group Q1 2008 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330808000009/exhibit99.htm",
+   "supports": "Q1 2008 earnings release: segment statements of income, earnings per share, FPL statistics, outlook"
+  },
+  {
+   "id": "NE16",
+   "published": "2008-07-31",
+   "filed": "2008-07-31 08:12 ET (before the open)",
+   "title": "FPL Group Q2 2008 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330808000017/exhibit99.htm",
+   "supports": "Q2 2008 earnings release: segment statements of income, earnings per share, FPL statistics, outlook"
+  },
+  {
+   "id": "NE17",
+   "published": "2008-10-27",
+   "filed": "2008-10-27 08:13 ET (before the open)",
+   "title": "FPL Group Q3 2008 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330808000028/exhibit99.htm",
+   "supports": "Q3 2008 earnings release: segment statements of income, earnings per share, FPL statistics, outlook"
+  },
+  {
+   "id": "NE12",
+   "published": "2007-07-30",
+   "filed": "2007-07-30 08:15 ET (before the open)",
+   "title": "FPL Group Q2 2007 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330807000053/exhibit99.htm",
+   "supports": "Q2 2007 earnings release: segment statements of income, earnings per share, FPL statistics, outlook"
+  },
+  {
+   "id": "NE25",
+   "published": "2008-11-10",
+   "filed": "2008-11-10 10:16 ET (during the session)",
+   "title": "FPL Group 8-K of 2008-11-10 (Item 7.01)",
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330808000033/form8k111008.htm",
+   "supports": "adjusted earnings per share expectations (Regulation FD disclosure)"
+  },
+  {
+   "id": "W0",
+   "published": "2008-12-19",
+   "title": "Yahoo Finance daily prices, FPL and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/NEE/history",
+   "supports": "close $50.39 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-27"
+}
