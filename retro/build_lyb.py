@@ -19,7 +19,7 @@ the filing reports it, each year from the latest filing that reports it; a relea
 release: the Berre refinery in discontinued operations) restates it until the next 10-K ('restates' on the print). The combined
 Successor and Predecessor 2010, which each 10-K's MD&A prints and calls the year, is a year of revenues (never of EPS).
 
-LyondellBasell guides no revenue, EPS or margin in numbers in any filing of the period, so:
+LyondellBasell guides no revenue, EPS or margin in numbers in any filing of 2010-2017, so:
   - current-FY EPS: the last full year's GAAP EPS stands (the PFE rule for a year with no reported-EPS guide),
   - BASE growth and the growth factor: the latest quarter's revenue growth as reported (the SO, UNP and KMI no-guide rule),
   - guided margin step: none; the margin signal uses the latest quarter's change.
@@ -36,7 +36,8 @@ before the open or during the session (the UNP Good Friday rule, "released durin
 Output goes to staging/retrospective/LYB until the series is added to the archive (--out archive/retrospective/LYB).
 
 Usage
-  python3 retro/build_lyb.py --weekly 2012-02-06 2013-12-31      # 99 dates, 2012-02-10 .. 2013-12-31
+  python3 retro/build_lyb.py --weekly 2012-02-06 2013-12-31      # 100 dates, 2012-02-10 .. 2013-12-31
+  python3 retro/build_lyb.py --weekly 2014-01-01 2017-12-31      # 209 dates, 2014-01-03 .. 2017-12-29 (retro/README.md, "LYB 2014-2017")
   python3 retro/build_lyb.py 2012-02-10
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/LYB/<AS_OF>
 """
@@ -141,7 +142,7 @@ def build(as_of, facts, raw, spx, engine, out):
     for v in vintages:                                 # the fiscal calendar the filings state must match the rule
         for y, end in v.get("fiscal_year_ends", {}).items():
             assert fiscal_year_end(int(y)).isoformat() == end, (y, end)
-    assert not [g for g in facts["guides"] if g["published"] <= as_of], "a guide needs its encoding first (no LYB filing of 2010-2013 gives one)"
+    assert not [g for g in facts["guides"] if g["published"] <= as_of], "a guide needs its encoding first (no LYB filing of 2010-2017 gives one)"
     assert rule_t(facts["rule_t"]) == ENGINE_THRESHOLDS, "the engine's thresholds must follow rule T on the fact sheet's values"
     public = [p for p in facts["prints"] if p["published"] <= as_of]
     for p in public:                                   # a print public on AS_OF must match its raw figures
@@ -258,20 +259,50 @@ def build(as_of, facts, raw, spx, engine, out):
     stage, watch, factors = "none", [], []
     sig_name, trigger = "Disruption theme: none in scope", "No live disruption theme covers chemicals and refining"
     theme_summary = "no theme in the registry is live for a chemicals and refining company on this date; none has dated evidence"
-    key_tail = ("By the company's own account its businesses are highly cyclical;\n"
+    key_tail = ("By the company's own account its businesses are " + ("highly cyclical" if "highly cyclical" in h["why"] else
+                                                                     "cyclical and volatile") + ";\n"
                 "  the bear needs margins to fall across the segments, not one quarter's.")
     why = h["why"]
     # from CLOUD's live date (2012-10-30) every live theme is quoted with its registered scope (the CB 2014-2017, UNH and SCHW wording)
     live = sorted(((t["live_from"], k, t["scope"]) for k, t in retro_tool.load_taxonomy()["themes"].items() if t["live_from"] <= as_of))
     live_k = [k for _, k, _ in live]
+    out_k = [k for k in live_k if k != "ENERGY_TRANSITION"]
+    assert out_k == ["OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING"][:len(out_k)], (as_of, "a live theme the LYB 10-Ks were not searched for", live_k)
     if live_k != ["OFFSHORE"]:
-        assert live_k == ["OFFSHORE", "CLOUD"], (as_of, "a live theme the LYB 10-Ks were not searched for", live_k)
-        scopes = ", ".join(f"{k} {'is scoped to' if i == 0 else 'to'} '{sc}'" for i, (_, k, sc) in enumerate(live))
+        out_live = [x for x in live if x[1] != "ENERGY_TRANSITION"]
+        scopes = ", ".join(f"{k} {'is scoped to' if i == 0 else 'to'} '{sc}'" for i, (_, k, sc) in enumerate(out_live))
+        named = [w for k, w in (("CLOUD", "cloud"), ("OFFSHORE", "offshore delivery"), ("ECOMMERCE", "e-commerce"),
+                                ("STREAMING", "streaming")) if k in live_k]
+        named = ", ".join(named[:-1]) + (", or " if len(named) > 2 else " or ") + named[-1]
         head = why.split("; no theme in taxonomy_eras.json is live")[0]
         assert head != why, (as_of, "the vintage's why lost its theme clause")
-        why = (head + "; no disruption theme in taxonomy_eras.json is live for a chemicals and refining company on this date (of the live "
-               f"themes, {scopes}: none names chemicals or refining, and no 10-K names cloud or offshore delivery), so the watch list is "
-               "empty and these words stay here (the PEP obesity rule)")
+        if "ENERGY_TRANSITION" not in live_k:
+            why = (head + "; no disruption theme in taxonomy_eras.json is live for a chemicals and refining company on this date (of the "
+                   f"live themes, {scopes}: none names chemicals or refining, and no 10-K names {named}), so the watch "
+                   "list is empty and these words stay here (the PEP obesity rule)")
+        else:
+            why = head + f"; of the other live themes, {scopes}: none names chemicals or refining, and no 10-K names {named}"
+    # ENERGY_TRANSITION is live from 2015-12-12 and scoped to oil, gas and coal reserves and refining; LyondellBasell's Refining segment
+    # (the Houston refinery) is refining, and each 10-K's greenhouse gas risk factor says GHG reduction policies "could significantly
+    # increase our costs or reduce demand for products we produce", so the theme goes on the watch list (the XOM, SO and KMI rule:
+    # company-acknowledged, no market read). No factor pair is added, so only text changes; re-filing needs dated evidence of market
+    # pricing for LyondellBasell (retro/README.md, "LYB 2014-2017"). Dates before the live date keep the text above
+    et = retro_tool.load_taxonomy()["themes"]["ENERGY_TRANSITION"]
+    if et["live_from"] <= as_of:
+        assert h.get("transition_quote") and h.get("refining_quote") and h.get("tenk_label"), (as_of, "the vintage needs its own 10-K words for the watch list")
+        val_word = ("a premium" if pe_now_pctl >= 70 else "a discount to its own history" if pe_now_pctl <= 30 else "near its own median")
+        stage = "transition"
+        watch = [{"theme": "ENERGY_TRANSITION", "status": "live, company-acknowledged; no market read",
+                  "reason": (f"Live: LyondellBasell's own {h['tenk_label']} says '{h['refining_quote']}' and, of "
+                             f"greenhouse gas laws and regulations, '{h['transition_quote']}' The stock trades at {close / eps_now:.1f}x "
+                             f"{fy_e_s} — {val_word}. Re-file as DISRUPTION_EXPOSED (ENERGY_TRANSITION) only if dated evidence shows "
+                             "the market pricing decarbonisation of LyondellBasell's refining and the demand for its products specifically.")}]
+        sig_name = "Energy transition: refining and product demand"
+        trigger = "Greenhouse gas rules raise costs and cut demand for refined fuels and the products LyondellBasell makes"
+        theme_summary = "the energy transition is live and company-acknowledged; no dated evidence ties the multiple to it"
+        why += ("; ENERGY_TRANSITION is live (from " + et["live_from"] + "): the Refining segment refines crude oil and the greenhouse gas "
+                "risk factor puts the theme on the watch list, company-acknowledged, with no dated evidence that the market prices it for "
+                "LyondellBasell")
     kind, pit_risk = h["kind"], 2
     cat3 = f"(3) The {fy_now} outlook — no revenue, EPS or margin guide in numbers (the releases' outlook is in words)"
     cat4 = f"(4) Free cash flow — {h['fcf_label']} {h['fcf_note']}"

@@ -1304,7 +1304,8 @@ try:
                  groups=[["PLANTED", 1, -99]], groups_basis="PLANTED", prev_fy_op_margin=-50.0, dividend_annual=9.99, fcf_b=99.0,
                  kind_text="PLANTED", kind="PLANTED", revenue_note="PLANTED", fcf_label="PLANTED",
                  revenue_usd_b={**v["revenue_usd_b"], "2099": 0.01}, diluted_shares_m={**v["diluted_shares_m"], "2099": 1.0},
-                 eps_excluded={**v.get("eps_excluded", {}), "2098": "PLANTED"})
+                 eps_excluded={**v.get("eps_excluded", {}), "2098": "PLANTED"},
+                 refining_quote="PLANTED", transition_quote="PLANTED", tenk_label="PLANTED")   # the watch-list words (LYB 2014-2017)
         f["buyback_programs"].append({"published": later, "source": last["source"], "quote": "PLANTED", "note": "PLANTED", "text": "PLANTED"})
     if TICKER == "SO":     # absurd full-year actuals on the planted print, for the year after the latest vintage before CUTOFF, and a later
                            # vintage whose every text and figure the models quote is planted (SO 2008-2009)
