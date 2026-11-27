@@ -26985,7 +26985,7 @@ for d in staging/retrospective/NEE/20*/; do
   python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
 done
 python3 retro/retro_tool.py --archive staging/retrospective series NEE
-for c in 2008-01-04 2008-01-28 2008-02-28 2008-04-30 2008-07-31 2008-10-27 2009-01-27 2009-02-17 2009-02-27 2009-04-28 2009-07-28 \
+for c in 2008-01-11 2008-01-28 2008-02-28 2008-04-30 2008-07-31 2008-10-27 2009-01-27 2009-02-17 2009-02-27 2009-04-28 2009-07-28 \
          2009-10-27 2010-01-01; do python3 retro/tools/firewall.py $c NEE; done
 ```
 
@@ -27112,6 +27112,17 @@ Controls and checks (before any outcome):
   expenditure totals in the free-cash-flow notes are sums of four cash-flow lines and say so.
 - **Regression:** the shared code is untouched (the firewall tool gains an NEE entry, `taxonomy_eras.json` the two terms above); rebuilding
   the 2008-2009 dates of SO, CRM and SPGI changes nothing.
+- **Firewall** (run after the build, validation outputs and README section were committed and pushed, before any outcome): it passes at
+  all 13 cutoffs above (the first week after the first built date, every print, vintage and dividend date of the range, and 2010-01-01: 1 to
+  105 dates each), 0 files changed and no planted text. Its first run stopped at the builder's own split check: the plant's later split (on the
+  price data's next split date, 2020-10-27, with an absurd ratio) failed the check of every split record's ratio, so the builder now checks
+  each record's date and the ratio of the splits effective by AS_OF (the UNP rule; no model changes, the 105 dates rebuild byte-identical).
+  The planted facts include a print with absurd energy sales, FPL net income, revenue, margins, EPS on both bases, notes and raw figures,
+  absurd full-year actuals for the year after the latest vintage before the cutoff, a later display-only guide for every guided year, a later
+  vintage whose texts, figures, groups, share counts and publication dates are planted, a dividend, a split, a listing with a planted symbol,
+  a company name and prices from the cutoff multiplied by 10. As positive controls, a planted print dated 2008-07-01 with its own source
+  reaches 2008-07-03 (its text in the model) and not 2008-06-27 (byte-identical); the same print citing a source published after AS_OF
+  stops at the builder's check that every source is public on AS_OF.
 
 Seen in the build (method behaviour, not tuned). FPL Group's GAAP EPS rose from $3.23 (2006) to $4.07 (2008) while every guide in the filings
 spoke of adjusted earnings, so the multiple is read on the last full GAAP year throughout:
