@@ -26968,6 +26968,9 @@ Judgement calls that could carry hindsight, or limit the batch:
 - **Stand-ins and derivations:** total revenues for subscription and support from Q2 FY19, the pre-606 seam in Q1-Q3 FY19's unearned
   revenue, Q4 FY21 unchecked, and the two re-accepted filings dated from their filing dates.
 
+The hindsight results for 2018-2021 are in `staging/retrospective/CRM/FINDINGS.md`, computed after the firewall result was pushed:
+hypotheses, never inputs, and labels of the reduced information set.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
