@@ -27727,6 +27727,194 @@ Judgement calls that could carry hindsight:
 The hindsight results for 2014-2017 are in `staging/retrospective/SCHW/FINDINGS.md`, computed after the firewall result was pushed:
 hypotheses, never inputs.
 
+### SCHW 2018-2021: four more vintages, TD Ameritrade as published, adjusted EPS with recurring amortization, revenue trades not reported from 2020, four dividend increases
+
+209 weekly dates, 2018-01-05 to 2021-12-31, on the same method and rule-T thresholds. The owner asked for 2018-2021 ("same rules as
+before"); the code is the coordinating session's merge branch (`claude/sharp-albattani-rdvlgi`, commit "Merge NEE 2010-2013 ... with
+SCHW 2014-2017"), and this batch is on `claude/schw-retro-2018-2021`, built on it without merging anything else. `www.sec.gov` again
+served every document to a plain client name (no contact address), so this is a full-data batch. Sources are `SCHW67`-`SCHW87`. A fourth
+generator (`retro/generators/schw/gen_schw_1821.py`) loads the 2008-2017 sheet and asserts every earlier source, vintage, print, dividend,
+listing and rule-T value unchanged; the 522 earlier models rebuild byte for byte.
+
+```bash
+python3 retro/build_schw.py --weekly 2018-01-01 2021-12-31                  # 209 dates, 2018-01-05 .. 2021-12-31
+for d in staging/retrospective/SCHW/20{18,19,20,21}-*/; do
+  python3 retro/retro_tool.py --archive staging/retrospective run "$d"
+  python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
+done
+python3 retro/retro_tool.py --archive staging/retrospective series SCHW
+for c in 2018-01-02 2018-01-18 2018-02-23 2018-04-17 2018-07-18 2018-08-09 2018-10-16 2019-01-17 2019-02-25 2019-04-16 2019-07-17 \
+         2019-10-16 2020-01-01 2020-01-17 2020-02-27 2020-04-16 2020-07-17 2020-10-16 2020-10-21 2021-01-20 2021-02-25 2021-04-16 \
+         2021-07-19 2021-10-18 2022-01-01; do python3 retro/tools/firewall.py $c SCHW; done
+```
+
+**Built in a new session.** This session did not open the 2008-2017 outcomes, `FINDINGS.md` or `SERIES.md` before the firewall result
+was pushed. It read CLAUDE.md and this README, whose SCHW sections state the 2008-2017 classes (no outcome). Like every session, its
+model knows what happened to Schwab after 2017 (the TD Ameritrade combination, the 2020 rate cuts, the 2021 trading boom and what
+followed); the dated fact sheet, the frozen rules and the validator are the protection. No decision below changes a rule, threshold,
+signal or window. Each follows the 2008-2017 encodings or an earlier ticker's, and each that could move a class is tested at the end.
+
+What was read (by the session's model directly, no delegated transcription; no filing accepted after 2021-12-31 opened): the FY2017-FY2020
+10-Ks (selected financial and operating data, the MD&A overview's client metrics, the statements of income, Items 1, 1A and 5, each
+searched for "cyclical", "offshore", "cloud", "e-commerce", "streaming", "electric vehicle", "decarbon", "climate", "crypto",
+"cryptocurrenc", "digital asset", "bitcoin", "blockchain", "distributed ledger" and "artificial intelligence"); every earnings release of
+Q4 2017 to Q3 2021 (the narrative and every sentence with a forward word, the statements of income, the financial and operating
+highlights, the non-GAAP reconciliations from Q2 2020, client assets and the activity report); all 42 other 8-Ks and the 8-K/A of
+2018-2021 by their item text and exhibit headlines (the TD Ameritrade announcement, merger agreement, HSR, proxy supplement, approval,
+closing and financial-statement 8-Ks read for guided numbers); the 10-Qs of Q1 2018 to Q3 2021, compared by script with their releases
+on revenue, expenses, pre-tax income and client assets (every one matches) and searched for dividend sentences and crypto words.
+**Not read:** the proxy statements and the joint proxy statement/prospectus beyond the 8-K supplement, the exhibits of the debt,
+preferred, officer and governance 8-Ks beyond their item text, TD Ameritrade's own filings, the CFO commentary on the company's website,
+and every business update and presentation the company did not file. The releases point to five of them: a Business Update on
+2018-02-06 and 2019-02-05, a Spring Business Update (2020), a Fall Business Update on 2020-10-29 and a Winter Business Update on
+2021-02-02, and they refer back to outlooks given there ("the expense scenario we shared at our Winter Business Update", Q1 2018; "the
+expectation we laid out in February of at least 15% growth for 2018" for the balance sheet, Q2 2018; 2019 revenue "just shy of the range
+we outlined at the beginning of the year" and expenses "significantly below our initial 6%-7% outlook", Q4 2019; "the expectations we
+laid out during our Spring Business Update", Q2 2020). None was filed, so their outlooks are unused (the CRM rule for unfiled guidance)
+and a guide stated only there, including a 2019 revenue range, is missed. The 239 strings of this batch were checked with `verbatim.py`
+against their own filings (239/239). Decided on 2026-11-27, before any 2018-2021 model was built or outcome computed:
+
+- **Release timing.** Every earnings 8-K of Q4 2017 to Q3 2021 was accepted after the close (16:16-17:22 ET) and is dated the next trading
+  day. Four land on a Friday, the week's last trading day, and meet that Friday's close as public before its open (the AVGO and CRM rule,
+  already in the builder): Q4 2019 (accepted Thursday 2020-01-16, dated 2020-01-17; Martin Luther King Jr. Day follows), Q2 2020
+  (2020-07-17), Q3 2020 (2020-10-16) and Q1 2021 (2021-04-16). The Q2 and Q3 2021 8-Ks were accepted on a Friday after the close and are
+  dated the Monday (2021-07-19, 2021-10-18). The releases' own datelines ("announced today") suggest an earlier release; no filing states
+  the time, so the 8-K's acceptance governs, as in every earlier batch. The FY2017-FY2020 10-Ks were accepted after the close (dated
+  2018-02-23, 2019-02-25, 2020-02-27, 2021-02-25).
+- **History: four vintages,** each year from the latest filing that reports it, the ten fiscal years to the latest one (FY2008-FY2017 to
+  FY2011-FY2020). GAAP diluted EPS per common share: FY17 $1.61, FY18 $2.45, FY19 $2.67, FY20 $2.12. Every year a later 10-K reports
+  equals the earlier vintage's figure (asserted: the 2019 and 2020 reclassifications of collective trust funds and order flow revenue
+  move components, not net revenues), and each Q4 print's year equals its 10-K's. FY2020's 10-K still has Item 6 (selected data, five
+  years). Between a Q4 print and its 10-K the history holds eleven years (the JPM reading). From the FY2020 10-K, "Total net revenues"
+  is the row; the generator reads either label.
+- **EPS: GAAP, the listed items in.** No filing prints an EPS excluding only one-offs:
+  - FY2017: the Q4 2017 release says "a one-time tax expense of approximately $46 million decreased earnings per share by $0.03" (the tax
+    reform legislation's deferred tax remeasurement), a per-share effect, not an EPS without it (the SCHW 2014-2017 and LMT reading), and
+    far from the AAPL FY2002 test ($46M against $2,354M of net income). This is the JPM, V and UNH FY2017 question; with no published
+    figure, GAAP $1.61 stands (the CB and UNH FY2017 reading).
+  - FY2019: the severance charges ("reduced earnings per share by $.04", Q3 2019) and the acquisition-related expenses for USAA's
+    Investment Management Company and TD Ameritrade ("reduced fourth quarter and full-year earnings per share by $.01") stay in.
+  - **From Q2 2020 the releases print an adjusted diluted EPS** ($2.45 for FY2020 against GAAP $2.12) that excludes the acquisition and
+    integration-related costs and the amortization of acquired intangible assets, of which the release says "Amortization of acquired
+    intangible assets will continue in future periods over their remaining useful lives." A recurring item, so the adjusted figure is not
+    one excluding only one-offs, and GAAP stands (the NKE FY2007, AVGO, PFE, V and CB rule). The quarter notes quote it. FY2020's $442M
+    of acquisition and integration-related costs before tax against $3,299M of net income is the nearest year to the AAPL test; none meets it.
+  - The Q1 2020 COVID-19 expenses ("$.02 per share") and the Q2 2021 regulatory matter charge ($200 million, "$.10" a share) stay in their
+    quarters as published.
+- **No guide in a range or a level in any filing, so the rules are unchanged:** the last full year's EPS stands, BASE is the latest
+  quarter's revenue growth plus the net share change, and there is no margin step. The forward sentences in the releases give no figure
+  for a coming year, and the outlooks they refer to were given at unfiled business updates (above). The TD Ameritrade announcement (8-K of
+  2019-11-25: "expected to be 10-15% accretive to GAAP EPS and 15-20% accretive to Operating Cash EPS in year three, post-close", run-rate
+  expense synergies of $1.8 to $2 billion) is no guide for Schwab's current year (the AVGO and UNP merger rule), and the projections in the
+  proxy supplement (8-K of 2020-05-27, prepared for the boards' financial advisors) are not a company guide (the UNP proxy-supplement
+  reading).
+- **TD Ameritrade, USAA and Wasmer Schroeder in the figures as published.** TD Ameritrade (acquired 2020-10-06, its 8-K of that day) is in
+  the Q4 2020 to Q3 2021 prints: net revenues +60.2% to +86.7% against the year-ago quarter, client assets +65.7% to +102.2%, net new
+  assets of $1,690.7B in Q4 2020 (the acquired accounts). Diluted shares rise from 1,294M (Q3 2020) to 1,855M (Q4 2020), voting and
+  nonvoting common stock together ("the participation rights ... are identical"). The pro forma statements of the 8-K/A of 2020-12-04 and
+  the 8-K of 2021-03-12 are unused (nothing is made pro forma: the CB Chubb and SPGI IHS Markit rule). So BASE runs +58% to +85%/yr on the
+  four acquisition quarters' reported growth (the CB 2016 reading): the batch's largest call (below). The FY2020 vintage carries an
+  `acquisition_note`, printed in the history comment.
+- **Revenue trades are not reported from Q1 2020** (`dart_k` None, the trades signal n/r and BASE). Schwab eliminated online trade
+  commissions on 2019-10-07 ("Effective October 7, 2019, CS&Co eliminated online trading commissions for U.S. and Canadian-listed stocks
+  and ETFs, as well as the base charge on options.", Q4 2019 release), so Q4 2019's revenue trades fall 67.6% as published (scored); from
+  the Q1 2020 release the activity table prints only clients' daily average trades (DATs), all trades, commission-free ones included.
+  DATs are a different measure from the one rule T was set on, so they are shown in the print notes and the catalyst line, display only,
+  and the signal scores BASE (the engine's "no published value: BASE" rule). The builder writes these dates with
+  `retro/templates/schw2_engine.py.tmpl`, the None-tolerant copy of the engine (rules, thresholds and weights line for line; the BKR bkr3
+  and SPGI spgi2 encoding), chosen when the latest print has no revenue trades; earlier dates keep `schw_engine.py.tmpl` (no earlier
+  output changes). DATs as the signal is tested below.
+- **Dividends,** each rate from the first filing that states it: $0.10 a quarter from the FY2017 10-K (2018-02-23: "On January 25, 2018,
+  the Board of Directors of the Company declared a two cent, or 25% increase in the quarterly cash dividend to $0.10 per common share."),
+  $0.13 from the Q2 2018 10-Q (2018-08-09, declared July 25, 2018, after the Q2 2018 release), $0.17 from the FY2018 10-K (2019-02-25,
+  declared January 30, 2019 with the $4.0 billion repurchase authorization), $0.18 from the FY2019 10-K (2020-02-27, declared January 30,
+  2020). No filing of 2021 states a new rate (asserted); the Q3 2018 release repeats the July increase after its 10-Q.
+- **Capital as published:** the senior notes and preferred stock issued and redeemed in 2018-2021 (by their 8-Ks' item text); EPS is per common share,
+  after preferred dividends. The net share term follows the history: buybacks in 2019 (diluted shares 1,361M to 1,320M), then the
+  TD Ameritrade issuance (1,435M for FY2020).
+- **Signals otherwise as before** (net revenue, client assets, the expense gap, the pre-tax margin, the releases' own rows against the
+  year-ago quarter in the same release). From Q3 2020 the releases move the amortization of acquired intangible assets to its own expense
+  line; the total is unchanged. The Q4 2017 print's year-ago revenue and client assets equal the Q4 2016 print's (asserted).
+- **Durability: DURABLE, risk 2,** the same reading: the FY2017-FY2020 10-Ks repeat "Developments in the business, economic, and
+  geopolitical environment could negatively impact our business." and "Our industry is (highly competitive and) characterized by aggressive
+  price competition."; "cyclical" appears only as "countercyclical capital buffer" (asserted). The segments are still Investor Services
+  and Advisor Services.
+- **Themes: none on the watch list.** From EV's live date (2020-01-01) the "why" adds electric vehicles to the subjects the 10-Ks were
+  searched for. **CRYPTO** (live 2020-10-21) is the first live theme whose registered scope names banks and exchanges. JPM and V put it on
+  the watch list on their own 10-Ks' crypto sentences (`crypto_quote`); no Schwab 10-K of 2018-2021 contains "crypto",
+  "blockchain", "digital asset" or "distributed ledger" (asserted; the 10-Qs searched too), so nothing dated ties the theme to Schwab and the watch list stays
+  empty, with the clause "CRYPTO alone names banks and exchanges, and no 10-K names cryptocurrency, blockchain, digital assets or a
+  distributed ledger" (the SPGI 2018-2021 reading). Text only either way: the JPM encoding adds no factor pair. The FY2018-FY2020 10-Ks
+  name cloud computing once each, in an accounting standard (ASU 2018-15, quoted as `cloud_words`); the FY2017 10-K not at all. The FY2020
+  10-K's one "climate" is "amidst an unprecedented climate" (asserted).
+- **Adds nothing:** the TD Ameritrade 8-Ks (announcement, merger agreement and its amendment, HSR second request, the Section 203 litigation
+  and proxy supplements, the approvals, the closing 7.01 release with its 18-36-month integration, the TD Ameritrade financial statements
+  and pro forma 8-K/A and 8-K); the debt, preferred stock, depositary share and exchange-offer 8-Ks; the officer, director, compensation,
+  bylaw and vote 8-Ks; the headquarters move to Westlake.
+
+Controls and checks (before any outcome):
+- **A wording slip found and corrected before validation outputs were kept.** The first draft of the Q4 2017 print's note and the FY2017-
+  FY2018 vintages' normalization called the charge "the Tax Act's"; the self-text scan found "Tax Act" in no Schwab filing by 2018-01-18
+  (the release says "tax reform legislation"). Text only, corrected and rebuilt before any validation output was kept.
+- **`retro_tool run` passes on all 209 dates,** with no warning. The index was rebuilt once (the runs went in parallel): 209 SCHW rows added,
+  no other row changed (asserted against the previous commit).
+- **Controls:** altering one value of each new print (its quarter EPS; each Q4 print's full-year revenue), each vintage (its last EPS
+  year) and each dividend changes no model dated before its publication: 28 controls, every one changing the first weekly date on or
+  after it, none inert. The four Friday prints change their own Fridays.
+- **Term check:** TD Ameritrade first appears on 2021-01-21 (the Q4 2020 print), USAA on 2021-02-26 (the FY2020 10-K's acquisition note),
+  COVID-19 on 2020-04-17, DATs from 2020-04-17, the commission elimination from 2020-01-17, the regulatory matter charge from 2021-07-20,
+  each dividend rate after its filing, ASU 2018-15 from 2019-03-01, electric vehicles from 2020-01-03 and the CRYPTO clause from
+  2020-10-23; "Tax Act", Wasmer Schroeder and Westlake appear in no model.
+- **Leak scan** (`--from 2018-01-01`, 209 models): 0 hits in 71,268 (model, later token) pairs. As a positive control, the latest print's
+  tokens appear in each of the 209 models.
+- **Forward-reference scan:** 0 in 45 dated facts.
+- **Self-text scan** (`--from 2018-01-01`, the 2018-2021 filings): 579 tokens, no miss (after the correction above).
+- **Regression:** rebuilding the 522 dates of 2008-2017 on the extended fact sheet, builder and engines changes nothing.
+- **Firewall:** FIREWALL_RESULT
+
+Seen in the build (method behaviour, not tuned). The ten-year window loses its 2008-2010 days and BEAR its FY2009-FY2010 fall as the
+history rolls: BEAR is -44.1%/yr (FY09 to FY10) to 2020-02-21, then -1.4%/yr (FY11 to FY12) to the Q4 2020 print, then FY19 to FY20's
+-20.6%/yr; XBULL is FY10-FY12's +34.8%/yr in 2018, FY16-FY18's +36.8% from the Q4 2018 print, and the BASE rate once BASE exceeds it in 2021.
+The window's median falls from 26.5x to 22.3x:
+- **CHEAP 135, RICH 42, FAIR 32; legacy tier BUY 151, AVOID 44, WATCHLIST 9, ACCUMULATE 5.** By year: 2018 RICH 42, FAIR 6, CHEAP 4; 2019
+  CHEAP 50, FAIR 2; 2020 CHEAP 53; 2021 CHEAP 28, FAIR 24. The robustness block shows another class on 63 dates.
+- **January 2018 rests on FY16's $1.31, then the year on FY17's $1.61:** $39.14-59.46 is 24.3-36.9x, the 31st-91st percentile (median
+  25.9-26.8x); RICH to October, FAIR and CHEAP from 2018-10-26 as the price falls to 26-29x. BASE +12.0% to +17.4%/yr.
+- **From the Q4 2018 print (2019-01-18) FY18's $2.45 carries the call:** $35.67-49.95 is 14.6-20.4x, the 0th-27th percentile, CHEAP on 50 dates; BASE falls from +17.4% to
+  +3.3%/yr as revenue growth slows from +19.0% (Q4 2018) to +5.1% (Q3 2019).
+- **2020 rests on FY19's $2.67:** $30.75-58.98 is 11.5-22.1x, the 0th-49th percentile, CHEAP on all 53 dates; BASE is negative from the
+  Q4 2019 print (-2.4% revenue growth) to the Q3 2020 one (-9.7%), and Ratio B is negative on 33 dates, 2020-02-28 to 2020-10-16.
+- **2021 rests on FY20's $2.12:** $51.54-85.13 is 24.3-40.2x, the 58th-100th percentile of a median of 22.6-23.8x, but BASE is +58% to
+  +85%/yr on the TD Ameritrade quarters' reported revenue growth, so Ratio B stays 0.31-0.58 and the class alternates between CHEAP (26)
+  and FAIR (24) at the top of the window; tier BUY throughout. The proxy composite rises to 2.65-3.25 (revenue and client assets at XBULL).
+
+How far each call moves the classes (the 209 dates rebuilt with one encoding changed and classified offline,
+`retro/generators/schw/sens_schw_1821.py`; no outcome consulted):
+- BASE at 0% on the four TD Ameritrade quarters instead of their reported growth (illustrative; no filing publishes an organic figure):
+  50 classes (24 CHEAP to RICH, 24 FAIR to RICH, 2 CHEAP to FAIR), 50 tiers, every date from 2021-01-21: the batch's largest call;
+- FY2020 at the company's adjusted $2.45 (it also removes the recurring amortization): 23 classes (FAIR to CHEAP), no tier;
+- FY2017 at $1.64 without the tax reform charge (a derived figure): 2 classes, 1 tier;
+- no net share change in BASE: 3 classes, 3 tiers;
+- the four Friday prints from the next trading day: no class, 1 tier;
+- DATs as the trades signal from Q1 2020 instead of n/r: no class, no tier;
+- every data signal at its BEAR value: 84 classes (33 CHEAP to RICH, 30 FAIR to RICH, 21 CHEAP to FAIR), no tier; at its XBULL value:
+  1 class (RICH to FAIR), no tier.
+The 2019-2020 CHEAP calls rest on Schwab's multiple of its last full year's GAAP EPS falling under its own ten-year median; the 2021 calls
+rest on BASE carrying the acquisition's reported revenue growth, which the frozen UNP rule (no guide: the latest quarter's growth) and the
+as-published rule for acquisitions combine to give.
+
+Judgement calls that could carry hindsight:
+- TD Ameritrade's reported growth in BASE and in the revenue and client assets signals, by the as-published rule (50 classes);
+- GAAP throughout, the adjusted EPS of 2020 left out for its recurring amortization (23 classes), FY2017 with its tax charge (2 classes);
+- revenue trades read as not reported from Q1 2020 rather than DATs as their successor (no class either way);
+- the Friday after-close prints counted for their own Friday (no class either way);
+- the unfiled business-update outlooks unused, and the merger accretion and proxy projections read as no guide;
+- CRYPTO left off the watch list for want of any Schwab crypto words (text only), DURABLE rather than CYCLICAL (label only);
+- the parts of the filings listed above as not read, and above all the unfiled business updates and CFO commentary.
+
+The hindsight results for 2018-2021 are in `staging/retrospective/SCHW/FINDINGS.md`, computed after the firewall result was pushed:
+hypotheses, never inputs.
+
 ## NEE (FPL Group): the thirty-fifth ticker, in staging, 2008-2009
 
 The NEE series is built apart from the other thirty-four and shares nothing with them but the machinery: its own fact sheet
@@ -28440,7 +28628,11 @@ What the gates enforce:
   SCHW (The Charles Schwab Corporation) in 2008-2009 carries none: no theme in the registry is live for a securities broker and bank
   (OFFSHORE, from 2004-11-05, is scoped to IT services; CLOUD is not live before 2012-10-30; CRYPTO, the one theme whose scope names banks
   and exchanges, not before 2020-10-21), so its watch list is empty and the FY2006-FY2008 10-Ks' market-environment and price-competition
-  risk factors stay in the "why": a cycle and a competitive field, not a substitution theme in the registry ("SCHW").
+  risk factors stay in the "why": a cycle and a competitive field, not a substitution theme in the registry ("SCHW"). It stays empty
+  through 2021: CRYPTO (from 2020-10-21) is the first live theme whose scope names banks and exchanges, but no FY2017-FY2020 10-K names
+  cryptocurrency, blockchain, digital assets or a distributed ledger, so nothing dated ties it to Schwab (the "why" says so; the SPGI
+  2018-2021 reading, where JPM and V rest on their own 10-Ks' crypto words), and EV and the rest are scoped to other industries
+  ("SCHW 2018-2021").
 
   NEE (FPL Group) in 2008-2009 carries none: no theme in the registry is live for an electric utility before ENERGY_TRANSITION (2015-12-12;
   OFFSHORE is scoped to IT services), so its watch list is empty and the FY2006-FY2008 10-Ks' environmental risk factor on "climate change"
