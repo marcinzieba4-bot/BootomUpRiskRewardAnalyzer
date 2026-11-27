@@ -30146,7 +30146,7 @@ Controls and checks (before any 2022-2026 outcome):
 - **Regression:** the 153 models of 2019-2021 rebuild byte for byte, and the 579 refusals of `GATE.md` are unchanged.
 - **Controls:** the gate's (`controls_chtr.py 2008-01-01 2026-11-22`) 80 of 80, the new ones inert by construction (another year anchors
   either way); the models' (`controls_chtr_models.py 2019-01-28 2026-11-22`, now taking a range and the AI words): 91 of 91 change no model before their publication; 76 change the first weekly date on or after it, and the 15 that change none are facts superseded before the first built date (2019-02-01).
-- **Firewall** (the CHTR branch, unchanged): run on the committed fact sheet, builder and README; the result is in the next commit.
+- **Firewall** (the CHTR branch, unchanged; run on the committed fact sheet, builder and README): at the 13 cutoffs above no refusal before the cutoff changes, every gate control date after it does (none exist after 2026-11-21, the last cutoff, which tests the models only), and 0 of 153 to 408 models change or contain planted text: 13 of 13 pass, 0 files changed.
 
 Seen in the build (method behaviour, not tuned):
 - **CHEAP and BUY on all 255 dates.** The stock's own P/E window holds only 2018 on, and its first years are a high-multiple regime on
