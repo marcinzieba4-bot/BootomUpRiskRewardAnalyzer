@@ -27304,6 +27304,8 @@ Judgement calls that could carry hindsight:
 - the batch was decided in the session that had scored 2008-2009 (disclosed above);
 - the parts of the filings listed above as not read.
 
+The hindsight results for 2010-2013 are in `staging/retrospective/NEE/FINDINGS.md` ("2010-2013"): hypotheses, never inputs.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are

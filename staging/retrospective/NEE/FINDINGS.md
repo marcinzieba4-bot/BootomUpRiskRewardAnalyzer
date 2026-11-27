@@ -84,3 +84,130 @@ the hurdle and lag the benchmark. A year's table runs to the last date of the ca
   and other periods (the sensitivities in retro/README.md, "NEE", move 21 and 13 classes), never fit them to NEE.
 - **The EPP floor was not reached except at the lows:** 11x on every date ($35.53-44.77); the price came within 3% of it on 2008-10-10 and
   fell under it on 2009-03-06 only. The BEAR price ($29-36, -12.6%/yr from 2002's fall) was never reached within two years.
+
+# 2010-2013 (hindsight)
+
+Patterns seen in `outcome.json` for the 209 weekly dates from 2010-01-08 to 2013-12-31: FPL Group, Inc. to 2010-05-21, NextEra Energy, Inc.
+from 2010-05-28 (NYSE: FPL to 2010-06-18, NYSE: NEE from 2010-06-25). The same terms as above: **labels and hypotheses**, never inputs. The
+batch was scored only after its point-in-time build, validation outputs, README section and firewall result were committed and pushed
+(0079ee851, d36a78442, 323194876, ab84a39ba), on 2026-11-27; this session had scored 2008-2009 before deciding it (disclosed in
+retro/README.md, "NEE 2010-2013"). The `profile_drift` line (the 2026 profile) was already seen in the 2008-2009 scoring and enters nothing.
+Every date has its 6-month, 1-, 2- and 3-year horizons (the last ends 2016-12-30). Total returns include the quarterly dividends as traded
+($0.50 from the ex-date of 2010-02-24, $0.55 from 2011-03-02, $0.60 from 2012-02-29, $0.66 from 2013-02-27, $0.725 from 2014-02-26, $0.77 from
+2015-02-25, $0.87 from 2016-02-24): $3.70-5.98 a share over two years, 6.6-9.2% of the entry price. No split falls in any horizon (the next is
+2020-10-27). The hurdle, the medians and "call held" are as above.
+
+## 2010 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 23 | +37.4% | +28.9% to +49.6% | 21 | 23 | +18.3% | 23 |
+| class CHEAP, legacy tier ACCUMULATE | 10 | +41.7% | +38.3% to +45.4% | 10 | 10 | +24.0% | 10 |
+| class FAIR, legacy tier ACCUMULATE | 11 | +35.4% | +31.4% to +40.8% | 10 | 8 | +14.2% | 10 |
+| class FAIR, legacy tier WATCHLIST | 5 | +34.5% | +31.3% to +37.3% | 4 | 4 | +14.5% | 5 |
+| class RICH, legacy tier BUY | 3 | +25.3% | +19.9% to +31.9% | 0 | 3 | +10.3% | 0 |
+| EPS anchor $3.97 (2010-01-27 to 2010-12-31) | 49 | +37.4% | +28.9% to +49.6% | 45 | 45 | +16.3% | 48 |
+| EPS anchor $4.07 (2010-01-08 to 2010-01-22) | 3 | +25.3% | +19.9% to +31.9% | 0 | 3 | +10.3% | 0 |
+| latest print Q3 2009 (2010-01-08 to 2010-01-22) | 3 | +25.3% | +19.9% to +31.9% | 0 | 3 | +10.3% | 0 |
+| latest print Q4 2009 (2010-01-27 to 2010-04-23) | 13 | +35.9% | +28.9% to +41.7% | 11 | 13 | +18.3% | 13 |
+| latest print Q1 2010 (2010-04-28 to 2010-07-16) | 12 | +40.5% | +32.8% to +49.6% | 12 | 12 | +15.2% | 12 |
+| latest print Q2 2010 (2010-07-23 to 2010-10-22) | 14 | +37.2% | +31.3% to +45.0% | 12 | 10 | +14.5% | 14 |
+| latest print Q3 2010 (2010-10-29 to 2010-12-31) | 10 | +41.7% | +32.9% to +45.4% | 10 | 10 | +25.8% | 9 |
+
+- **CHEAP held on all 33 dates, FAIR on 15 of 16.** On FY09's $3.97 (11.5-14.0x) the CHEAP dates returned +28.9% to +49.6% over two years and
+  beat SPY on every one; the FAIR dates returned +31.3% to +40.8%, inside the ±15pp band except 2010-11-05 (+15.5pp over SPY).
+- **RICH missed on its 3 dates** (2010-01-08 to 2010-01-22, on FY08's $4.07 and BASE from Q3 2009's revenue, -17.0%): +19.9% to +31.9%,
+  under the hurdle, but 4.2-7.6pp ahead of SPY.
+
+## 2011 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 21 | +58.8% | +51.9% to +74.0% | 21 | 20 | +39.2% | 21 |
+| class CHEAP, legacy tier ACCUMULATE | 1 | +43.9% | +43.9% to +43.9% | 1 | 1 | +26.4% | 1 |
+| class FAIR, legacy tier BUY | 2 | +48.9% | +48.0% to +48.9% | 2 | 0 | +32.1% | 2 |
+| class FAIR, legacy tier ACCUMULATE | 2 | +40.9% | +39.9% to +40.9% | 2 | 2 | +22.3% | 0 |
+| class RICH, legacy tier BUY | 26 | +47.0% | +39.4% to +58.9% | 26 | 26 | +24.7% | 0 |
+| EPS anchor $3.97 (2011-01-07 to 2011-01-21) | 3 | +40.9% | +39.9% to +43.9% | 3 | 3 | +22.3% | 1 |
+| EPS anchor $4.74 (2011-01-26 to 2011-12-30) | 49 | +51.9% | +39.4% to +74.0% | 49 | 46 | +29.6% | 23 |
+| latest print Q3 2010 (2011-01-07 to 2011-01-21) | 3 | +40.9% | +39.9% to +43.9% | 3 | 3 | +22.3% | 1 |
+| latest print Q4 2010 (2011-01-26 to 2011-04-21) | 13 | +43.0% | +39.4% to +52.7% | 13 | 13 | +23.6% | 0 |
+| latest print Q1 2011 (2011-04-29 to 2011-07-22) | 13 | +48.1% | +43.0% to +58.9% | 13 | 13 | +26.3% | 0 |
+| latest print Q2 2011 (2011-07-28 to 2011-10-28) | 14 | +57.9% | +52.1% to +74.0% | 14 | 14 | +39.5% | 14 |
+| latest print Q3 2011 (2011-11-04 to 2011-12-30) | 9 | +59.6% | +48.0% to +72.1% | 9 | 6 | +37.5% | 9 |
+
+- **RICH missed on all 26 dates of the Q4 2010 and Q1 2011 prints** (2011-01-26 to 2011-07-22, on FY10's $4.74 at 11.1-12.8x, with BASE at
+  -8.5% and -15.7%/yr from the quarters' revenue and the proxy at 1.50-1.55): +39.4% to +58.9% over two years, every one over the hurdle and
+  14.8-32.2pp ahead of SPY. These are the batch's worst calls, and the multiple did not make them: it sat at 11.1-12.4x, under its ten-year
+  median. On
+  every one the price fell under the EPP floor ($52.14, 11x) at the 2011-08-08 low ($50.17), the only time in the batch it did.
+- **CHEAP held on all 22 dates,** 2011-01-07 (+43.9%) and the 21 from the Q2 2011 print (2011-07-28 to 2011-12-30: +51.9% to +74.0%, the
+  best returns of the series; 2011-08-12 at $52.69: +71.6%, 23.3pp over SPY). FAIR held on 2 of 4; 2011-01-14 and 2011-01-21 ran 20.0-22.8pp ahead of SPY.
+
+## 2012 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY | 16 | +60.3% | +51.8% to +65.3% | 16 | 16 | +35.9% | 16 |
+| class CHEAP, legacy tier ACCUMULATE | 3 | +59.6% | +58.9% to +62.3% | 3 | 3 | +34.7% | 3 |
+| class FAIR, legacy tier ACCUMULATE | 5 | +56.6% | +53.5% to +58.0% | 5 | 5 | +32.3% | 5 |
+| class FAIR, legacy tier WATCHLIST | 5 | +50.6% | +47.6% to +55.3% | 5 | 4 | +28.7% | 5 |
+| class RICH, legacy tier ACCUMULATE | 4 | +62.4% | +54.3% to +63.5% | 4 | 4 | +39.6% | 0 |
+| class RICH, legacy tier WATCHLIST | 19 | +46.8% | +39.0% to +68.2% | 19 | 16 | +33.6% | 0 |
+| EPS anchor $4.59 (2012-01-27 to 2012-12-28) | 49 | +56.4% | +39.0% to +68.2% | 49 | 45 | +34.2% | 26 |
+| EPS anchor $4.74 (2012-01-06 to 2012-01-20) | 3 | +55.1% | +51.8% to +56.3% | 3 | 3 | +35.9% | 3 |
+| latest print Q3 2011 (2012-01-06 to 2012-01-20) | 3 | +55.1% | +51.8% to +56.3% | 3 | 3 | +35.9% | 3 |
+| latest print Q4 2011 (2012-01-27 to 2012-04-20) | 13 | +61.5% | +53.4% to +65.3% | 13 | 13 | +36.2% | 13 |
+| latest print Q1 2012 (2012-04-26 to 2012-07-20) | 13 | +55.6% | +47.6% to +62.3% | 13 | 12 | +32.0% | 13 |
+| latest print Q2 2012 (2012-07-27 to 2012-10-19) | 13 | +45.9% | +39.0% to +54.3% | 13 | 10 | +31.0% | 0 |
+| latest print Q3 2012 (2012-10-25 to 2012-12-28) | 10 | +59.3% | +48.8% to +68.2% | 10 | 10 | +37.8% | 0 |
+
+- **CHEAP held on all 19 dates and FAIR on all 10 to 2012-07-20** (FY10's $4.74 to 2012-01-20, then FY11's $4.59): +47.6% to +65.3%.
+- **RICH missed on all 23 dates from the Q2 2012 print** (2012-07-27 to 2012-12-28; BASE -9.5% and -14.4%/yr): +39.0% to +68.2%, every one
+  over the hurdle; 20 beat SPY, by up to 14.3pp.
+
+## 2013 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier WATCHLIST | 3 | +58.3% | +56.3% to +59.0% | 3 | 3 | +36.1% | 0 |
+| class RICH, legacy tier AVOID | 50 | +32.2% | +20.0% to +59.4% | 25 | 39 | +25.9% | 6 |
+| EPS anchor $4.56 (2013-01-30 to 2013-12-31) | 49 | +31.7% | +20.0% to +59.4% | 24 | 38 | +25.6% | 6 |
+| EPS anchor $4.59 (2013-01-04 to 2013-01-25) | 4 | +58.6% | +56.3% to +59.0% | 4 | 4 | +36.1% | 0 |
+| latest print Q3 2012 (2013-01-04 to 2013-01-25) | 4 | +58.6% | +56.3% to +59.0% | 4 | 4 | +36.1% | 0 |
+| latest print Q4 2012 (2013-01-30 to 2013-04-26) | 13 | +42.7% | +35.9% to +59.4% | 13 | 11 | +33.7% | 0 |
+| latest print Q1 2013 (2013-05-01 to 2013-07-26) | 13 | +32.6% | +27.8% to +43.0% | 8 | 6 | +25.9% | 4 |
+| latest print Q2 2013 (2013-07-31 to 2013-10-25) | 13 | +30.7% | +25.6% to +39.7% | 3 | 12 | +25.6% | 1 |
+| latest print Q3 2013 (2013-11-01 to 2013-12-31) | 10 | +24.5% | +20.0% to +29.8% | 0 | 9 | +21.0% | 1 |
+
+- **RICH held on 6 of 53.** At 15.8-19.4x FY12's $4.56 (the 75th-97th percentile of a 13.4-14.1x median), the two-year return fell as the
+  price rose through the year, from +42.7% (median, the Q4 2012 print's dates) to +24.5% (the Q3 2013 print's), and the dates from 2013-06-28 on
+  mostly missed the hurdle (24 of 28 did). The six that held (five of 2013-06-14 to 2013-07-31, and 2013-11-08) returned +20.2% to +31.7%,
+  0.6-7.3pp behind SPY. The other 19 that missed the hurdle beat SPY by up to 13.7pp. 33 of the 53 landed at the XBULL scenario price (EPS
+  at the best two-year run, the P/E at its 90th percentile), 20 at BULL. Three-year returns ran
+  +40.3% to +75.0% (median +60.9%, 26.5pp over SPY).
+
+## Across 2010-2013
+
+- **Calls held on 107 of 209:** CHEAP 74 of 74, FAIR 27 of 30, RICH 6 of 105. 177 dates cleared the hurdle and 187 beat SPY; the largest
+  drawdown within two years was -9.4% to -15.3% on every date. The BEAR price ($35-46) was never reached; the EPP floor was reached only at the
+  2011-08-08 low (28 dates, 2011-01-26 to 2011-08-05).
+- **Against SPY the legacy tiers ranked in order; in absolute terms they did not:** median two-year excess BUY +17.4pp (91 dates),
+  ACCUMULATE +11.2pp (36), WATCHLIST +5.3pp (32), AVOID +5.0pp (50); median two-year total return +49.6%, +41.7%, +48.8% and +32.2%;
+  three-year +84.6%, +72.4%, +58.5% and +61.9%. AVOID (2013-01-25 to 2013-12-31) still beat SPY at the median.
+- **The 2008-2009 hypotheses, scored here as labels:** (1) the adjusted outlook as the anchor (the "GAAP anchor makes a utility look rich"
+  hypothesis) moves 29 classes in 2010-2013 (retro/README.md, "NEE 2010-2013"); scored on these outcomes, those 29 hold on 18 instead of 26,
+  so the batch would hold on 99 instead of 107: no support here. (2) BASE on the year-to-date revenue moves 6 classes, which hold on 2
+  instead of 6: no support either. Neither is a rule, and neither changes anything.
+- **What missed was the signal set and the multiple's regime.** Every signal at its XBULL value would hold on 162 dates, at its BEAR value on
+  12: the RICH calls of 2011-2012 came from falling quarterly revenue and weak energy sales (BASE -8.5% to -15.7%/yr; the proxy at 1.50-1.55
+  in 2011), while EPS rose from $3.97 (FY09) to $4.56 (FY12) and the price from $45-55 to $72-89. And the 2013 calls came from a ten-year
+  median (13.4-14.1x) set in years of higher rates, which the stock left for good. Hypotheses, not rules: (3) for a regulated utility,
+  revenue that falls with fuel prices passed through to customers is no earnings signal, so BASE and the revenue signal misread it; (4) a
+  ten-year P/E median can lag a lasting change in what the market pays for a sector. Test both on SO and on other periods; never fit them to NEE.
+
+## Across 2008-2013
+
+- **Calls held on 145 of 314:** CHEAP 76 of 106, FAIR 31 of 50, RICH 38 of 158. RICH held mostly in 2008 (25 of 30 before the crash) and
+  rarely after it (6 of 105 in 2010-2013); CHEAP held rarely in 2008-2009 (2 of 32) and always in 2010-2012 (74 of 74). The same rules and
+  thresholds read both periods; the outcomes turned with the market, not with any change in the method.

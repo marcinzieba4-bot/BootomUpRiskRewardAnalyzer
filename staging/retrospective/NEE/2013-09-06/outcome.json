@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "NEE",
+ "as_of": "2013-09-06",
+ "computed": "2026-11-27",
+ "data_source": "Yahoo Finance daily closes + dividends (NEE, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2014-03-06",
+   "price": 90.74,
+   "dividends": 1.39,
+   "total_return_pct": 15.1,
+   "benchmark_total_return_pct": 14.4,
+   "excess_pct": 0.7,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2014-09-05",
+   "price": 97.92,
+   "dividends": 2.83,
+   "total_return_pct": 25.9,
+   "benchmark_total_return_pct": 23.3,
+   "excess_pct": 2.7,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2015-09-04",
+   "price": 94.62,
+   "dividends": 5.87,
+   "total_return_pct": 25.6,
+   "benchmark_total_return_pct": 20.6,
+   "excess_pct": 5.0,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2016-09-06",
+   "price": 125.29,
+   "dividends": 9.25,
+   "total_return_pct": 68.2,
+   "benchmark_total_return_pct": 39.1,
+   "excess_pct": 29.0,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2015-01-29",
+   "price": 111.66
+  },
+  "low": {
+   "date": "2013-09-17",
+   "price": 79.0
+  },
+  "max_drawdown_pct": -15.3,
+  "return_to_avg_price_m12_m24_pct": 27.8
+ },
+ "scenario_landing_2y": "BULL",
+ "call_check_2y": {
+  "expectation": "RICH: should miss the hurdle and lag the benchmark",
+  "hit": false
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "DURABLE",
+   "risk": 2
+  },
+  "today": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Largest US renewables developer + FPL; Dominion merger execution risk",
+   "reviewed": "2026-09-22"
+  }
+ }
+}
