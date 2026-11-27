@@ -29150,6 +29150,139 @@ Judgement calls that could carry hindsight:
 
 The hindsight results are in `staging/retrospective/NEM/FINDINGS.md`: hypotheses, never inputs.
 
+### NEM 2010-2013: the FY2009-FY2012 vintages, FY2011 excluded (the Hope Bay write-down), ounces produced, the gold price-linked dividend, CLOUD out of scope
+
+The owner asked for 2010-2013 ("find newest code. do retrospective analysis for NEM, 2010-2013. same rules as before"); the code is the
+branch `claude/sharp-albattani-rdvlgi` (its commit "Merge CHTR setup ... with NEM 2008-2009 and LYB 2012-2013"), as the coordinating
+session named it; nothing else was merged in. Built in a new session without opening the 2008-2009 outcomes or findings. The method is
+still r2; no fact, parameter, outcome or finding of another ticker enters an NEM model.
+
+```bash
+python3 -I retro/generators/nem/gen_nem.py --filings <dir> --old <old> --out <scratch>/NEM_0809.json     # the 2008-2009 sheet
+python3 -I retro/generators/nem/gen_nem_1013.py --filings <dir> --facts-in <scratch>/NEM_0809.json       # -> retro/facts/NEM.json
+python3 -I retro/tools/verbatim.py <dir>/checklist_nem_1013.json                                         # 56/56
+python3 retro/build_nem.py --weekly 2010-01-01 2013-12-31                   # 209 dates, 2010-01-08 .. 2013-12-31
+for d in staging/retrospective/NEM/201[0-3]-*/; do
+  python3 retro/retro_tool.py --archive staging/retrospective run "$d"
+  python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
+done
+python3 retro/retro_tool.py --archive staging/retrospective series NEM
+for c in 2010-02-26 2010-04-28 2011-02-25 2011-10-28 2012-02-24 2012-11-02 2013-02-22 2013-07-26 2014-01-01; do
+  python3 retro/tools/firewall.py $c NEM; done
+python3 retro/generators/nem/controls_nem_1013.py --from 2009-06-01; python3 retro/generators/nem/sens_nem_1013.py <scratch>
+```
+
+**A full-data batch.** `www.sec.gov` served every document to `edgar.py`'s plain client name (no contact address). Read, by the session's
+model directly with no delegated transcription: the sixteen earnings releases of Q4 2009 to Q3 2013 (8-K exhibit 99.1: the statements of
+income, the balance sheets, the production and sales statistics, the costs applicable to sales tables, the adjusted net income
+reconciliations and the outlook text); Items 1A, 6, 7 and 8 of the FY2009-FY2012 10-Ks with each one's quarterly data note; each 10-Q's
+income per share note (diluted weighted shares) and its ounces tables; the two January outlook 8-Ks (2012-01-17, 2013-01-22), the
+preliminary-results 8-Ks (2011-01-20, 2012-10-16, 2013-04-17, 2013-07-10, 2013-10-10) and the 8-K of 2011-04-07 (the Investor Day growth
+plan and the gold price-linked dividend policy). Every other 8-K of December 2009 to December 2013 was read by its items and exhibit
+headings: the Batu Hijau divestiture and arbitration, the Indonesian court ruling, Fronteer Gold (2011), the 2012 senior notes, officers
+and directors, votes, the Holt royalty, Dodd-Frank imminent-danger orders, conference and Investor Day notices; none states a guided
+number. **Not read:** the Investor Day and Denver Gold Forum slides beyond their headings (the 2010 deck is an exhibit, the 2012 and 2013
+decks were not filed), the 10-Qs beyond the two tables above, the proxy statements and the website presentations the releases point to.
+The FY2013 10-K and every 2014 filing were deleted from the scratchpad unread once their dates were listed. Each source's date is EDGAR's
+acceptance time; the new ids are `NM28`-`NM49`. The generator reads each raw figure from its own row by label (the row text is kept in
+the fact), computes every rate, asserts every quote verbatim, asserts that each Q4 print's full year equals the 10-K that comes with it
+and that every 2008-2009 fact is unchanged. Decided on 2026-11-27, before any 2010-2013 model was built or any outcome computed:
+
+- **Release timing.** To Q3 2011 each earnings 8-K was accepted before the open (06:01-06:27 ET), the 10-K or 10-Q the same day; from Q3
+  2011 most were accepted after the close (17:10-21:48 ET) and count from the next trading day, which is a Friday for Q3 2011, Q1 2012,
+  Q2 2012, Q3 2012, Q4 2012 and Q3 2013, so that Friday is the week's date and the print is public before its open (the AVGO, CRM and
+  SCHW rule; `build_nem.py` accepts "after the close: counts from AS_OF"). Q1 2011 (06:01 ET on Thursday 2011-04-21, the day before Good
+  Friday) and Q2 2013 (06:00 ET on Friday 2013-07-26) meet their own day's close. Each Q4 print comes the same day as its 10-K (the FY2010
+  10-K accepted 2011-02-23 20:54 ET counts from 2011-02-24, with the release at 06:10 ET), so no print carries full-year actuals.
+- **Four more vintages,** the FY2009-FY2012 10-Ks, each year from the latest filing that reports it (five years of Item 6; earlier years
+  from the latest earlier vintage), each holding the ten fiscal years to the latest one: FY2002 and the FY2001 note leave with the FY2012
+  10-K (2013-02-22), whose window is the plain ten years. Seams as published (each 10-K's reclassifications; Kori Kollo, Holloway and the
+  Holt royalty in discontinued operations).
+- **EPS: GAAP diluted EPS from continuing operations** (FY09 $2.68, FY10 $4.61, FY12 $3.78). The releases' adjusted net income also
+  removes items that recur in every year it tabulates (impairments and write-downs of assets, gains on asset sales, tax planning items),
+  so GAAP stands (the PEP 2008 core rule, as in 2008-2009). FY2007 stays excluded and a gap ($(2.18), the FY2009-FY2011 10-Ks).
+  - **FY2011 is excluded** by the AAPL FY2002 test: the Q4 2011 release's listed after-tax items in continuing operations (the Hope Bay
+    impairment $1,609M, other impairments and asset sales $105M, Fronteer acquisition costs $18M, Boddington contingent consideration
+    $1M, income tax planning $(65)M; $1,668M net) exceed the year's $502M of income from continuing operations attributable to Newmont,
+    so reported EPS ($1.00) is under half the year's EPS without them, and no figure excludes only the one-offs (the adjusted $4.39 also
+    removes the recurring items above). Excluded as the latest year (the NKE FY2018 and XOM FY2020 rule), its days leave the window
+    ("ex-FY07 ex-FY11"), then a gap. FY2009, FY2010 and FY2012 pass the test and its mirror (their listed items are small fractions of
+    income: FY2010's tax planning and asset-sale benefits $430M against $1,875M).
+  - So the anchor (the rollover rule; no filing guides EPS): FY08's $1.80 to 2010-02-19 (7 dates), FY09's $2.68 from 2010-02-26 (52), FY10's
+    $4.61 from 2011-02-25 (52) and, FY11 excluded, still from 2012-02-24 (52), FY12's $3.78 from 2013-02-22 (46).
+- **The Q4 2011 and Q4 2012 releases print the year only** (no fourth-quarter columns). Their sales, diluted EPS from continuing operations
+  and diluted shares are the 10-K's quarterly data (public the same day; `source_10k`), the pre-tax income the release's year less the
+  Q3 release's nine months, both years (the F and UNH rule; `derived_note`); the release's year is asserted equal to the 10-K's four quarters.
+- **The ounces signal reads consolidated gold ounces produced from Q1 2010.** From Q1 2010 the releases tabulate consolidated (and equity or
+  attributable) ounces produced with a year-ago figure, but ounces sold only for Boddington or, from Q1 2011, attributable to Newmont in
+  a reconciliation; the 10-Qs give consolidated ounces sold only from Q3 2010. Rule T's ounces are the company-wide line each filing gives
+  (equity production in 1997-1998), so the signal takes the releases' consolidated ounces produced (`oz_basis`), Q4 2009 keeping ounces
+  sold. The model names the line through `retro/templates/nem2_engine.py.tmpl`, a copy of the NEM engine whose ounces signal is named by
+  `OZ_NAME` (nothing else differs); dates whose latest print is Q4 2009 or earlier keep the original engine. Thresholds unchanged.
+- **Diluted shares** (display, the EPS check) from the 10-Q filed with each Q1-Q3 release (its income per share note), and from the 10-K's
+  quarterly data for Q4 2010-Q4 2012; Q4 2009's release prints them.
+- **No guide in numbers for revenue, EPS or a margin.** The outlooks are equity (2010) or attributable (2011-2013) gold production and costs
+  applicable to sales per ounce, capital and cost components: display only (the XOM production and MSFT segment rules), one quote a fiscal
+  year in the guide line, from each release and the two January outlook 8-Ks. BASE is the latest quarter's revenue growth plus the buyback
+  (the UNP rule): Q4 2009 +90.0%, then +46.0%, +34.4%, +26.7%, +1.2%, +9.9%, +10.7%, +5.7%, +8.5%, +8.8%, -6.5%, -9.6%, -10.5%, -18.9%,
+  -10.6%, -20.0% (Q3 2013). The preliminary-results 8-Ks add nothing (operating figures the print reports within weeks, the UNP rule); the
+  Investor Day growth plan of 2011-04-07 (to 2017) is no fiscal-year guide.
+- **Dividends** (`dividends`, each rate from the first release that states it as declared or approved; "subject to Board approval" is not):
+  $0.15 a quarter from 2010-07-28, then under the gold price-linked policy $0.20 (2011-04-21), $0.30 (2011-07-29), $0.35 (2011-10-28 to
+  2012-11-02), $0.425 (2013-02-22), $0.35 (2013-04-30), $0.25 (2013-07-26), $0.20 (2013-11-01). A declared rate wins over the vintage's
+  dividends declared for the year (`build_nem.py`; no 2008-2009 model changes); the vintage's $0.40 stands to 2010-07-23. The policy 8-K
+  of 2011-04-07 states a policy, not a rate (text only).
+- **Durability: DURABLE, risk 2** (the MU rule: no FY2009-FY2012 10-K calls the business cyclical; the generator asserts it), the "why"
+  quoting each 10-K's own lead sentence, its price-dependence sentence and the risk factor "A substantial or extended decline in gold or
+  copper prices would have a material adverse effect on Newmont." From CLOUD's live date (2012-10-30; first date 2012-11-02) the "why"
+  quotes every live theme's registered scope (OFFSHORE, CLOUD), none of which names a miner (the NEE 2010-2013 wording); the builder
+  still refuses any other live theme and any event.
+- **Anachronism list:** no new term; the names already listed (Ahafo North, Newmont Goldcorp, Nevada Gold Mines) appear in no model.
+
+Controls and checks (before any outcome):
+- **`retro_tool run` passes on all 209 dates.** 117 carry the calendar-year warning, every one a trading-day count in the P/E-window comment
+  (1,983 to 2,021 days), checked by script: no later year appears anywhere else.
+- **Controls** (`controls_nem_1013.py`, in memory, every weekly date from June 2009 to 2013-12-31): altering each print's ounces (rate
+  re-derived), each vintage's last-year revenue, each outlook's quoted text and each dividend rate changes no model dated before its
+  publication: 50 controls, 48 change the first weekly date on or after it and 2 are inert (the January outlook 8-Ks of 2012 and 2013,
+  each superseded by the Q4 release before its fiscal year is current).
+- **Leak scan:** 1 hit in 70,924 (model, later token) pairs, a trading-day count (the 1,983 days of the 2010-11-12 window): not a leak.
+  Positive control: the latest print's tokens in 209 of 209 models. **Forward references:** 0 in 72 facts. **Self-text scan:** 24 tokens
+  of 840, all benign: ten debt totals that are the sum of the two stated lines (the note names both), the $1,544M and "FSP APB" of the
+  2008-2009 notes carried in the vintages (their filings precede this batch's folder), and title or method words ("Newmont FY", "Ks", "Items").
+- **Regression:** rebuilding 2008-2009 with the new sheet, builder and engines changes no file; no shared code changed (the firewall tool
+  gains the new print fields in its NEM plant).
+- **Firewall** (run after the build, validation outputs and README section were committed and pushed, before any outcome): it passes at
+  all 9 cutoffs above (the first date after each Q4 print and vintage, Q1 2010, Q3 2011, CLOUD's first date, Q2 2013, and 2014-01-01:
+  112 to 314 dates each, 2008 on), 0 files changed and no planted text; the NEM plant now also carries the 2010-2013 print fields
+  (`oz_basis` produced, `shares_source`, `derived_note`).
+
+Seen in the build (method behaviour, not tuned): **CHEAP and BUY on all 209 dates; robustness 8 of 8 on every date.** The stock's own window
+still holds the 2002-2006 GAAP multiples (26-100x), while each anchor reads below its median:
+- FY08's $1.80 (2010-01-08 to 2010-02-19): 23.8-27.6x against a 42.5-42.8x median (13th-25th percentile), 8-21% under the EPP floor.
+- FY09's $2.68 (2010-02-26 to 2011-02-18): 18.4-23.8x against 39.8-42.4x (17th-27th), 13-39% under the floor.
+- FY10's $4.61 (2011-02-25 to 2013-02-15, FY11 excluded from 2012-02-24): 9.4-15.3x against 27.7-39.7x (0th-26th), 23-62% under the floor.
+- FY12's $3.78 (2013-02-22 on): 6.0-11.1x against 17.8-27.6x (0th-4th), 15-54% under the floor, as the price fell from $41.89 to $22.64.
+- BEAR is 2005's -36.2%/yr throughout, BULL the decade CAGR from FY2002's $0.29 (+41%/yr), then from FY2003 (2013); Ratio B 0.03-0.21.
+
+How far each call moves the classes (the 209 dates rebuilt with one encoding changed, classified offline; `sens_nem_1013.py`; no outcome):
+FY2011 at the company's adjusted $4.39 (then $4.31 diluted); FY2011 derived without its listed items ($4.31, no filing publishes it);
+the adjusted net income per share every year 2007-2012; BASE on the latest quarter's ounces growth; the vintage's dividend instead of the
+declared rates; a five-year P/E window instead of ten; every data signal at its BEAR value; at its XBULL value: **no class and no tier
+moves in any of the eight.**
+
+Judgement calls that could carry hindsight:
+- FY2011 excluded (the Hope Bay write-down) and GAAP rather than the adjusted net income, by the frozen tests; no class moves either way;
+- the ounces signal on consolidated ounces produced from Q1 2010 (the releases' company-wide line), chosen by a builder who knows how
+  production ran later; no class moves even with every signal at BEAR or XBULL;
+- the Q4 2011 and Q4 2012 quarters from the 10-K's quarterly data and the year less the nine months (display and signals only);
+- the dividend rates from the first release that states each as approved (CONS_DIVIDEND only; no class moves);
+- the P/E window that keeps the 2002-2006 regime, the call every class rests on, by the ten-year rule (a five-year one moves nothing here);
+- DURABLE rather than CYCLICAL (label only), as no 10-K calls the business cyclical though its revenue follows the gold price;
+- the parts of the filings listed as not read.
+
+The hindsight results are in `staging/retrospective/NEM/FINDINGS.md`, labelled as hindsight: hypotheses, never inputs.
+
 ## LYB (LyondellBasell Industries): the thirty-seventh ticker, in staging, from its 2010 share issue
 
 The LYB series is built apart from every other ticker and shares nothing with them but the machinery: its own fact sheet

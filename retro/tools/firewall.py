@@ -470,6 +470,7 @@ PLANT = {"ACN": dict(quarter="Q9 FY99", revenue_lc=-60, margin_bp=-999, fy_eps_g
                      oz_pct=-60.0, cas_pct=99.0, pretax_margin=-50.0, pretax_margin_prior=50.0, margin_bp=-10000.0, eps_q=0.01,
                      eps_q_prior=9.99, eps_pct=-99.9, diluted_shares_m=1.0, cash_b=99.0, debt_note="PLANTED", rev_note="PLANTED",
                      oz_note="PLANTED", cas_note="PLANTED", eps_note="PLANTED", adj_note="PLANTED", next_print="PLANTED",
+                     oz_basis="produced", shares_source="PLANTED", derived_note="PLANTED",   # the 2010-2013 fields (NEM 2010-2013)
                      raw=dict(rev_m=4, rev_prior_m=10, pretax_m=-2, pretax_prior_m=5, oz_k=4, oz_prior_k=10, cas=9999, cas_prior=1))}.get(TICKER, {})   # CHTR: none (the gate test below)
 # LOW and AAPL guides carry more fields than UNP's: plant every one the builder reads (NKE's are words only)
 GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -999], margin_def="PLANTED", stores_guide=1,

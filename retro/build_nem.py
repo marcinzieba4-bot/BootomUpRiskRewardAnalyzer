@@ -32,6 +32,19 @@ Weekly dates (--weekly START END): one per ISO week, the week's last trading day
 is the first trading day after it. Every release of the range came before the open or during the session on a Wednesday or a
 Thursday, so the week's date is the next trading day.
 
+NEM 2010-2013 (retro/README.md, "NEM 2010-2013"; decided before any 2010-2013 model was built or scored):
+  - four more vintages (the FY2009-FY2012 10-Ks), each holding the ten fiscal years to the latest one (FY2002 and the FY2001 note
+    leave with the FY2012 10-K); FY2011 is excluded by the AAPL FY2002 test (the Hope Bay write-down; no figure excludes only the
+    one-offs), as the latest year and then a gap, so FY10's $4.61 stands from the FY2011 10-K to the FY2012 one;
+  - from Q1 2010 the releases tabulate consolidated gold ounces produced, not sold, with a year-ago figure, so the ounces signal reads
+    that line (rule T's ounces are the company-wide line each filing gives) through nem2_engine.py.tmpl, which names it;
+  - the Q4 2011 and Q4 2012 releases print the year only: sales, diluted EPS and diluted shares come from the 10-K's quarterly data
+    (public the same day), pre-tax income is the year less the Q3 release's nine months (the F and UNH rule); 'source_10k' cites it;
+  - a declared dividend rate in 'dividends' (each from the first release that states it) wins over the vintage's;
+  - releases accepted after the close count from the next trading day; on a Friday that day is the week's date (the AVGO, CRM and
+    SCHW rule), public before that day's open;
+  - from CLOUD's live date (2012-10-30) the 'why' quotes every live theme's registered scope (the NEE 2010-2013 wording).
+
 Output goes to staging/retrospective/NEM until the series is added to the archive (--out archive/retrospective/NEM).
 
 Usage
@@ -56,6 +69,7 @@ from build_unp import money  # noqa: E402
 
 FACTS = os.path.join(HERE, "facts", "NEM.json")
 ENGINE = os.path.join(HERE, "templates", "nem_engine.py.tmpl")
+ENGINE2 = os.path.join(HERE, "templates", "nem2_engine.py.tmpl")      # prints whose ounces line is consolidated ounces produced
 OUT = os.path.join(ROOT, "staging", "retrospective", "NEM")
 SYMBOL = "NEM"
 # rule T, the engine's signal thresholds: (BEAR, BASE, BULL, XBULL); the builder checks the fact sheet against them
@@ -122,7 +136,7 @@ def check_print(p):
     assert "fy_actual" not in p, (p["quarter"], "a Q4 print's own full-year actuals need their encoding (each came with its 10-K)")
 
 
-def build(as_of, facts, raw, spx, engine, out):
+def build(as_of, facts, raw, spx, engine, out, engine2=None):
     if as_of not in raw:
         sys.exit(f"{as_of} is not a trading day")
     chart = retro_tool.chart(SYMBOL)
@@ -164,6 +178,8 @@ def build(as_of, facts, raw, spx, engine, out):
     i = public.index(latest)
     assert i > 0, (as_of, "the fact sheet needs the print before the latest one")
     prev = (public[i - 1]["oz_pct"], public[i - 1]["quarter"])
+    if public[i - 1].get("oz_basis", "sold") != latest.get("oz_basis", "sold"):   # Q4 2009 (sold) before Q1 2010 (produced)
+        prev = (prev[0], f"{prev[1]}, ounces {public[i - 1].get('oz_basis', 'sold')}")
     eps_hist = {int(k): v for k, v in h["eps_normalized"].items()}   # reported history only: the rules use this
     excluded = {int(k): v for k, v in h.get("eps_excluded", {}).items()}
     cur_fy = max(reported(h)) + 1
@@ -174,8 +190,13 @@ def build(as_of, facts, raw, spx, engine, out):
 
     # ── current-FY EPS: no EPS guide in any filing of the period, so the last full year's EPS stands ──
     eps_now = eps_hist[last_fy]
-    eps_label = f"{fy_e}: no EPS guide in numbers, FY{last_fy % 100:02d}'s ${money(eps_now)} (GAAP) stands" + (
-        " (FY" + ", FY".join(f"{y % 100:02d}" for y in range(last_fy + 1, cur_fy)) + " excluded: a loss)" if cur_fy > last_fy + 1 else "")
+    between = list(range(last_fy + 1, cur_fy))
+    why_gap = {2007: "a loss", 2011: "the Hope Bay write-down, the AAPL FY2002 test"}
+    if between == [2007] or not between:
+        gap_text = " (FY07 excluded: a loss)" if between else ""
+    else:
+        gap_text = " (" + "; ".join(f"FY{y % 100:02d} excluded: {why_gap[y]}" for y in between) + ")"
+    eps_label = f"{fy_e}: no EPS guide in numbers, FY{last_fy % 100:02d}'s ${money(eps_now)} (GAAP) stands" + gap_text
     # ── forward revenue growth: no revenue guide in any filing, so the latest quarter's revenue growth (the UNP rule) ──
     fwd = [latest["sales_pct"]] * 2
     fwd_label = f"{latest['quarter']} revenue growth (no revenue guide)"
@@ -197,7 +218,8 @@ def build(as_of, facts, raw, spx, engine, out):
 
     # ── dividend: the latest declared rate (each 10-K; $0.10 a quarter throughout) ──
     divs = [(d["published"], d["quarterly"] * 4, d["note"], d["source"]) for d in facts.get("dividends", []) if d["published"] <= as_of]
-    divs.append((h["published"], h["dividend_annual"], h["dividend_note"], None))
+    if not divs:                                   # no declared rate in a release yet: the vintage's (FY2008-FY2009: $0.10 a quarter)
+        divs.append((h["published"], h["dividend_annual"], h["dividend_note"], None))
     _, dividend, dividend_note, dividend_src = max(divs, key=lambda x: x[0])
 
     # ── listing (display): NYSE: NEM ──
@@ -243,20 +265,29 @@ def build(as_of, facts, raw, spx, engine, out):
     key_tail = ("A gold miner's downturn shows up in unit costs and ounces first;\n"
                 "  the bear needs the gold price to stop covering them.")
     theme_summary = "no disruption theme has dated evidence"
-    live = [k for k, t in retro_tool.load_taxonomy()["themes"].items() if t["live_from"] <= as_of]
-    assert set(live) <= {"OFFSHORE"}, (as_of, "a live theme needs its scope reading for a gold miner first", live)
-    cat4 = (f"(4) Ounces — consolidated gold ounces sold {latest['oz_pct']:+.1f}% in {latest['quarter']} against revenue "
+    live = sorted(((t["live_from"], k, t["scope"]) for k, t in retro_tool.load_taxonomy()["themes"].items() if t["live_from"] <= as_of))
+    assert {k for _, k, _ in live} <= {"OFFSHORE", "CLOUD"}, (as_of, "a live theme needs its scope reading for a gold miner first", live)
+    why = h["why"]
+    if [k for _, k, _ in live] != ["OFFSHORE"]:   # from CLOUD's 2012-10-30: every live theme with its registered scope (NEE 2010-2013)
+        scopes = ", ".join(f"{k} {'is scoped to' if i == 0 else 'to'} '{sc}'" for i, (_, k, sc) in enumerate(live))
+        why += ("; no disruption theme in the registry is live for a gold miner on this date (of the live themes, "
+                f"{scopes}: none names a miner), so the watch list is empty")
+    oz_basis = latest.get("oz_basis", "sold")
+    cat4 = (f"(4) Ounces — consolidated gold ounces {oz_basis} {latest['oz_pct']:+.1f}% in {latest['quarter']} against revenue "
             f"{latest['sales_pct']:+.1f}%: the metal price, not volume, has carried revenue")
 
     after_print = [p for p in prints if p["published"] < as_of and not any(p["published"] < d < as_of for d in days)]
     tag = f"(day after the {after_print[-1]['quarter']} print)" if after_print else f"(pre-{next_q} print)"
     same_day = [p for p in prints if p["published"] == as_of]
     if same_day:
-        assert "before the open" in same_day[-1].get("release_time", ""), (as_of, same_day[-1]["quarter"], "released on AS_OF, not before the open")
+        rt = same_day[-1].get("release_time", "")
+        assert "before the open" in rt or f"after the close: counts from {as_of}" in rt, (as_of, same_day[-1]["quarter"],
+                                                                                         "released on AS_OF, not before the open")
         tag = f"(day of the {same_day[-1]['quarter']} print, public before the open)"
 
     company = h["company"]
-    ids = (list(h["sources"]) + [x for p in prints for x in [p["source"]]] + [public[i - 1]["source"]] + guide_ids
+    ids = (list(h["sources"]) + [x for p in prints for x in [p["source"]] + ([p["source_10k"]] if p.get("source_10k") else [])]
+           + [public[i - 1]["source"]] + guide_ids
            + ([dividend_src] if dividend_src else []) + listing_ids)
     sources = [dict(id=x, **facts["sources"][x]) for x in dict.fromkeys(ids)]
     sources.append({"id": "Y0", "published": as_of, "title": "Yahoo Finance daily prices, NEM and S&P 500, truncated at AS_OF",
@@ -302,7 +333,7 @@ SOURCES = {json.dumps(sources, ensure_ascii=False, indent=4)}
 PIT_PROFILE = {{
     "kind": {R(h["kind"])},
     "risk": 2,
-    "why": {R(h["why"])},
+    "why": {R(why)},
     "theme_watch": {R(watch)},
     "evidence": [],
 }}
@@ -339,7 +370,7 @@ MARGIN_SIGNAL_NAME = {R(h["margin_signal_name"])}
 
 # ── FACTS: latest print ({latest["source"]}, published {latest["published"]}) and the {fy_now} outlook ──
 LATEST          = {R(L)}
-PREV_SALES      = {R(prev)}   # the previous print's gold ounces sold growth
+PREV_SALES      = {R(prev)}   # the previous print's gold ounces {"sold growth" if oz_basis == "sold" else "growth (sold or produced, as that print gives it)"}
 EPP_TODAY_EPS   = {round(eps_now, 6)}   # {eps_label}
 EPS_LABEL       = {R(eps_label)}
 FWD_GUIDE       = {R(tuple(fwd))}   # no revenue guide in any filing: the latest quarter's revenue growth (the UNP rule)
@@ -367,7 +398,13 @@ CATALYST_4      = {R(cat4)}
 '''
     os.makedirs(os.path.join(out, as_of), exist_ok=True)
     with open(os.path.join(out, as_of, "model.py"), "w", encoding="utf-8") as fh:
-        fh.write(head + engine)
+        if latest.get("oz_basis", "sold") == "produced":      # nem2: the ounces signal is consolidated gold ounces produced
+            if engine2 is None:                                  # callers with the common build() signature (controls, firewall)
+                with open(ENGINE2, encoding="utf-8") as fe:
+                    engine2 = fe.read()
+            fh.write(head + 'OZ_NAME         = "Gold ounces produced"   # the releases\' company-wide ounces line from Q1 2010\n' + engine2)
+        else:
+            fh.write(head + engine)
     return tag, latest["quarter"], stage
 
 
@@ -381,12 +418,14 @@ def main():
         facts = json.load(fh)
     with open(ENGINE, encoding="utf-8") as fh:
         engine = fh.read()
+    with open(ENGINE2, encoding="utf-8") as fh:
+        engine2 = fh.read()
     raw, spx = load_series(SYMBOL), load_series("^GSPC")
     dates = list(a.dates)
     if a.weekly:
         dates += weekly_dates(a.weekly[0], a.weekly[1], sorted(raw), facts["prints"])
     for d in sorted(set(dates)):
-        tag, q, stage = build(d, facts, raw, spx, engine, os.path.abspath(a.out))
+        tag, q, stage = build(d, facts, raw, spx, engine, os.path.abspath(a.out), engine2)
         print(f"{d}  {tag:<45}  latest print {q:<8}  theme evidence: {stage}")
 
 
