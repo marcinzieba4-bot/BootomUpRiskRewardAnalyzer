@@ -29252,7 +29252,10 @@ Controls and checks (before any outcome):
   2008-2009 notes carried in the vintages (their filings precede this batch's folder), and title or method words ("Newmont FY", "Ks", "Items").
 - **Regression:** rebuilding 2008-2009 with the new sheet, builder and engines changes no file; no shared code changed (the firewall tool
   gains the new print fields in its NEM plant).
-- **Firewall:** see below.
+- **Firewall** (run after the build, validation outputs and README section were committed and pushed, before any outcome): it passes at
+  all 9 cutoffs above (the first date after each Q4 print and vintage, Q1 2010, Q3 2011, CLOUD's first date, Q2 2013, and 2014-01-01:
+  112 to 314 dates each, 2008 on), 0 files changed and no planted text; the NEM plant now also carries the 2010-2013 print fields
+  (`oz_basis` produced, `shares_source`, `derived_note`).
 
 Seen in the build (method behaviour, not tuned): **CHEAP and BUY on all 209 dates; robustness 8 of 8 on every date.** The stock's own window
 still holds the 2002-2006 GAAP multiples (26-100x), while each anchor reads below its median:
