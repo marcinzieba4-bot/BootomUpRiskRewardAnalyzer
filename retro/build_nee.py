@@ -45,6 +45,14 @@ XOM and SO rule; 'reserves_quote', 'transition_quote'); no factor pair, so only 
 the franchise line's FPL figures come from when its 10-K no longer tabulates them (FY2016). Three releases came on a Friday (2014-10-31,
 2017-01-27, 2017-04-21) and date their own weeks.
 
+NEE 2018-2021 (retro/README.md): from the Q4 2017 release the releases no longer tabulate FPL's energy sales or customer accounts,
+and no 10-K of the period does, so those figures are None: the energy sales signal scores BASE and prints n/r through the None-tolerant
+copy of the engine (nee2_engine.py.tmpl, the BKR bkr3, SPGI spgi2 and SCHW schw2 encoding), which is the engine with the n/r edits of
+nr_engine() below; Gulf Power (acquired 2019-01-01) is in the figures as published, its net income display only. The four-for-one
+split effective 2020-10-27 is the second 'splits' record: prices as traded, the per-share facts published before it divided by 4 (on_basis),
+and a note or dividend sentence published before it says its figures are on the earlier basis. Five releases came on a Friday
+(2018-01-26, 2019-01-25, 2020-01-24, 2020-07-24, 2021-07-23) and date their own weeks.
+
 Output goes to staging/retrospective/NEE until the series is added to the archive (--out archive/retrospective/NEE).
 
 Usage
@@ -68,6 +76,7 @@ from build_unp import money, on_basis  # noqa: E402
 
 FACTS = os.path.join(HERE, "facts", "NEE.json")
 ENGINE = os.path.join(HERE, "templates", "nee_engine.py.tmpl")
+ENGINE2 = os.path.join(HERE, "templates", "nee2_engine.py.tmpl")   # (NEE 2018-2021) the None-tolerant copy: nr_engine(ENGINE)
 OUT = os.path.join(ROOT, "staging", "retrospective", "NEE")
 SYMBOL = "NEE"                     # the series key and Yahoo's symbol; the listing of each date comes from 'listings'
 # rule T, the engine's signal thresholds over 1997-2006 (the FY2006 10-K, the vintage public on 2008-01-04): (BEAR, BASE, BULL, XBULL);
@@ -115,6 +124,36 @@ def rule_t(rt):
     return out
 
 
+# (NEE 2018-2021) the n/r edits that make the engine None-tolerant for FPL's energy sales, exact and each asserted once (the
+# engine already scores a None value BASE and prints it n/r in its tables)
+NR_EDITS = [
+    ("# (its business segments) and the report wording differ.\n",
+     "# (its business segments) and the report wording differ.\n"
+     "# This copy is the one used when the latest release does not report FPL's energy sales (from the Q4 2017\n"
+     "# release NextEra Energy's releases carry no FPL statistics table): a figure the release does not report\n"
+     "# stays None, scores BASE and prints \"n/r\" (not reported). Rules, thresholds and weights are those of\n"
+     "# nee_engine.py.tmpl, line for line (the BKR bkr3, SPGI spgi2 and SCHW schw2 encoding; retro/README.md,\n"
+     "# \"NEE 2018-2021\").\n"),
+    ("def _now(v, u):\n    return \"n/r\" if v is None else f\"{v:+.1f}{u}\"   # n/r: not reported (no figure in the filings public on AS_OF)\n",
+     "def _now(v, u):\n    return \"n/r\" if v is None else f\"{v:+.1f}{u}\"   # n/r: not reported (no figure in the filings public on AS_OF)\n\n"
+     "def _f(v):\n    return None if v is None else float(v)              # a figure the release does not report stays None\n"),
+    ('float(LATEST["kwh_pct"])', '_f(LATEST["kwh_pct"])'),
+    ("to {L['kwh_pct']:+.1f}% ({L['quarter']})\"", "to {_now(L['kwh_pct'], '%')} ({L['quarter']})\""),
+    ("f\"FPL energy sales {L['kwh_pct']:+.1f}%; FPL net income", "f\"FPL energy sales {_now(L['kwh_pct'], '%')}; FPL net income"),
+    ("— the next read on FPL's energy sales ({L['kwh_pct']:+.1f}% now); no sales guide in numbers to read it against",
+     "— FPL's energy sales {_now(L['kwh_pct'], '%')} now (the releases no longer tabulate them), FPL net income {L['seg_pct']:+.1f}%; no sales guide in numbers"),
+    ("+ f\"FPL energy sales {L['kwh_pct']:+.1f}% in {L['quarter']}\"", "+ f\"FPL energy sales {_now(L['kwh_pct'], '%')} in {L['quarter']}\""),
+]
+
+
+def nr_engine(engine):
+    """The None-tolerant engine: `engine` with the n/r edits (the sensitivity variants of an engine carry over)."""
+    for old, new in NR_EDITS:
+        assert engine.count(old) == 1, ("an n/r edit must match the engine once", old)
+        engine = engine.replace(old, new)
+    return engine
+
+
 def check_print(p):
     """Re-derive a print's growth rates, margins and EPS growth from its raw published figures (they must match the fact sheet)."""
     r = p["raw"]
@@ -123,11 +162,11 @@ def check_print(p):
     gpct = lambda a, b: pct(a, b) if a > 0 else round((b - a) / abs(a) * 100, 1)
     m, m0 = r["opinc_m"] / r["rev_m"] * 100, r["opinc_prior_m"] / r["rev_prior_m"] * 100
     want = {"sales_b": round(r["rev_m"] / 1000, 3), "sales_pct": pct(r["rev_prior_m"], r["rev_m"]),
-            "kwh_pct": pct(r["kwh_prior_m"], r["kwh_m"]), "seg_pct": gpct(r["seg_prior_m"], r["seg_m"]),
+            "kwh_pct": None if r["kwh_m"] is None else pct(r["kwh_prior_m"], r["kwh_m"]), "seg_pct": gpct(r["seg_prior_m"], r["seg_m"]),
             "margin": round(m, 2), "margin_prior": round(m0, 2), "margin_bp": round((m - m0) * 100, 1),
             "eps_pct": gpct(p["eps_q_prior"], p["eps_q"])}
     for k, v in want.items():
-        assert p[k] == v or abs(p[k] - v) < 1e-9, (p["quarter"], k, p[k], v)
+        assert p[k] == v or (p[k] is not None and v is not None and abs(p[k] - v) < 1e-9), (p["quarter"], k, p[k], v)
     # the EPS signal's basis: GAAP diluted EPS (the adjusted figure removes the recurring mark-to-market item: the PEP 2008 core rule)
     assert p["eps_basis"] == "GAAP" and (p["eps_q"], p["eps_q_prior"]) == (p["eps_gaap"], p["eps_gaap_prior"]), (p["quarter"], "EPS basis")
     assert p["eps_q_prior"] != 0, (p["quarter"], "a zero year-ago EPS needs its encoding first")
@@ -162,6 +201,9 @@ def build(as_of, facts, raw, spx, engine, out):
     public = [p for p in facts["prints"] if p["published"] <= as_of]
     for p in public:                               # a print public on AS_OF must match its raw figures
         check_print(p)
+    later_splits = [s for s in facts["splits"] if s["effective"] <= as_of]
+    basis_note = lambda pub: "".join(f" (per-share figures in this text before the {s['ratio']:g}-for-1 split effective {s['effective']})"
+                                     for s in later_splits if pub < s["effective"])
     facts, split_ids = on_basis(facts, as_of)
     public = [p for p in facts["prints"] if p["published"] <= as_of]
     vintages = [v for v in facts["history_vintages"] if v["published"] <= as_of]
@@ -224,7 +266,8 @@ def build(as_of, facts, raw, spx, engine, out):
     # ── dividend: the latest declared regular rate ──
     divs = [(d["published"], d["quarterly"] * 4, d["note"], d["source"]) for d in facts["dividends"] if d["published"] <= as_of]
     divs.append((h["published"], h["dividend_annual"], h["dividend_note"], None))
-    _, dividend, dividend_note, dividend_src = max(divs, key=lambda x: x[0])
+    div_pub, dividend, dividend_note, dividend_src = max(divs, key=lambda x: x[0])
+    dividend_note += basis_note(div_pub)
 
     # ── the listing of the date: from its effective date, once published (NYSE: NEE from 2010-06-23) ──
     lst = [x for x in facts["listings"] if x["published"] <= as_of and x["effective"] <= as_of]
@@ -330,13 +373,23 @@ def build(as_of, facts, raw, spx, engine, out):
     shares = {int(k): v for k, v in h["diluted_shares_m"].items()}
     rw = latest["raw"]
     resources = latest["resources_name"]          # the competitive segment as the release names it (NextEra Energy Resources from Q4 2008)
-    volumes = (f"FPL energy sales {latest['kwh_pct']:+.1f}% ({rw['kwh_prior_m']:,.0f} to {rw['kwh_m']:,.0f} million kWh, the "
-               "statistics table's total: retail, sales to electric utilities, interchange and the change in unbilled sales); "
-               f"FPL average customer accounts {rw['cust_prior_k']:,.0f} to {rw['cust_k']:,.0f} thousand; "
-               f"FPL net income {latest['seg_pct']:+.1f}% (${rw['seg_prior_m']:,.0f}M to ${rw['seg_m']:,.0f}M); "
+    if latest["kwh_pct"] is None:      # (NEE 2018-2021) the release has no FPL statistics table
+        kwh_text = ("FPL energy sales n/r and FPL average customer accounts n/r (the release has no FPL statistics table, and no filing "
+                    "of the period tabulates them); ")
+    else:
+        kwh_text = (f"FPL energy sales {latest['kwh_pct']:+.1f}% ({rw['kwh_prior_m']:,.0f} to {rw['kwh_m']:,.0f} million kWh, the "
+                    "statistics table's total: retail, sales to electric utilities, interchange and the change in unbilled sales); "
+                    f"FPL average customer accounts {rw['cust_prior_k']:,.0f} to {rw['cust_k']:,.0f} thousand; ")
+    gulf_text = ("" if "gulf_m" not in rw else
+                 f"Gulf Power net income ${rw['gulf_m']:,.0f}M (acquired 2019-01-01, no year-ago quarter; display only); "
+                 if rw["gulf_prior_m"] is None else
+                 f"Gulf Power net income ${rw['gulf_prior_m']:,.0f}M to ${rw['gulf_m']:,.0f}M (display only); ")
+    volumes = (kwh_text +
+               f"FPL net income {latest['seg_pct']:+.1f}% (${rw['seg_prior_m']:,.0f}M to ${rw['seg_m']:,.0f}M); " + gulf_text +
                f"{resources} net income ${rw['fple_prior_m']:,.0f}M to ${rw['fple_m']:,.0f}M (display only); "
                f"revenue {latest['sales_pct']:+.1f}% as reported (${rw['rev_prior_m']:,.0f}M to ${rw['rev_m']:,.0f}M); "
-               f"operating income ${rw['opinc_prior_m']:,.0f}M to ${rw['opinc_m']:,.0f}M; EPS: {latest['eps_note']}")
+               f"operating income ${rw['opinc_prior_m']:,.0f}M to ${rw['opinc_m']:,.0f}M; EPS: {latest['eps_note']}"
+               + basis_note(latest["published"]))
     fy_rev = rev[max(rev)] * (1 + sum(fwd) / 2 / 100)
     fy_rev_label = f"{fwd_label}, applied to the year (no {fy_now} revenue guide)"
     dil_note = f"the release's weighted-average diluted shares ({latest['quarter']}; display only)"
@@ -415,7 +468,7 @@ SHARES_DIL_B    = {latest["diluted_shares_m"] / 1000:.4f}   # {dil_note}
 GROUPS          = {R([tuple(g_) for g_ in h["groups"]])}
 GROUPS_BASIS    = {R(h["groups_basis"])}
 NEXT_PRINT      = {R(latest["next_print"])}
-SHARE_GAIN_TEXT = {R(f"Franchise: {h['fy_label']} revenue {h['prev_fy_sales_growth']:+.1f}%, FPL energy sales {h['prev_fy_kwh_pct']:+.1f}%, FPL net income {h['prev_fy_seg_pct']:+.1f}%, FPL customer accounts {h['prev_fy_customers_pct']:+.1f}%{(' (' + h['franchise_note'] + ')') if h.get('franchise_note') else ''}; {latest['quarter']} operating margin {latest['margin']:.1f}% ({latest['margin_bp']:+.1f}bp)")}
+SHARE_GAIN_TEXT = {R(f"Franchise: {h['fy_label']} revenue {h['prev_fy_sales_growth']:+.1f}%, FPL energy sales {'n/r' if h['prev_fy_kwh_pct'] is None else format(h['prev_fy_kwh_pct'], '+.1f') + '%'}, FPL net income {h['prev_fy_seg_pct']:+.1f}%, FPL customer accounts {'n/r' if h['prev_fy_customers_pct'] is None else format(h['prev_fy_customers_pct'], '+.1f') + '%'}{(' (' + h['franchise_note'] + ')') if h.get('franchise_note') else ''}; {latest['quarter']} operating margin {latest['margin']:.1f}% ({latest['margin_bp']:+.1f}bp)")}
 BALANCE_TEXT    = {R(f"{h['fy_label']} year-end cash ${h['cash_b']:.3f}B, {h['fcf_label']} free cash flow ${h['fcf_b']:.2f}B ({h['fcf_note']}), dividend ${dividend:.2f} a year, {h['cash_return_text']}")}
 VOLUMES_TEXT    = {R(volumes)}
 CAPITAL_RETURN  = {R(h["cash_return_text"])}
@@ -428,7 +481,7 @@ CATALYST_4      = {R(cat4)}
 '''
     os.makedirs(os.path.join(out, as_of), exist_ok=True)
     with open(os.path.join(out, as_of, "model.py"), "w", encoding="utf-8") as fh:
-        fh.write(head + engine)
+        fh.write(head + (nr_engine(engine) if latest["kwh_pct"] is None else engine))
     return tag, latest["quarter"], stage
 
 
@@ -442,6 +495,8 @@ def main():
         facts = json.load(fh)
     with open(ENGINE, encoding="utf-8") as fh:
         engine = fh.read()
+    with open(ENGINE2, encoding="utf-8") as fh:        # the committed None-tolerant copy must be nr_engine(ENGINE), line for line
+        assert fh.read() == nr_engine(engine), "nee2_engine.py.tmpl must equal nr_engine(nee_engine.py.tmpl)"
     raw, spx = load_series(SYMBOL), load_series("^GSPC")
     dates = list(a.dates)
     if a.weekly:
