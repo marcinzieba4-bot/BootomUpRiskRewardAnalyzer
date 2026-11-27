@@ -29753,6 +29753,9 @@ Controls and checks (before any outcome):
   components, so no figure appears before a filing prints it).
 - **Years after the as-of date and anachronisms:** none in the 209 models, reports and analyses other than the FY horizon labels.
 - **`retro_tool run`:** passes on all 209 dates, with no warnings.
+- **Firewall** (run after the build was committed, before any outcome): passes at 52 cutoffs (each fact date of 2018-2021 and the day
+  after it, and 2022-01-01; listed above), with 0 files changed and no planted text (313 to 518 earlier dates each). The LYB plant now
+  also plants the 10-Ks' cloud words.
 
 Seen in the build (method behaviour, not tuned):
 - **Totals: RICH 108, CHEAP 82, FAIR 19.** RICH on the 4 dates of January 2018 (FY16's $9.15 anchor, 12.5-13.3x against a window
