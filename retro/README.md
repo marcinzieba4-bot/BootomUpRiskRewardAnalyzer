@@ -29548,8 +29548,10 @@ Controls and checks (before any outcome):
   the title words "Newmont FY" and the source-id prefix "NM".
 - **Regression:** rebuilding 2008-2017 with the new sheet and builder changes no file; no shared code changed but the firewall's NEM plant,
   which gains the vintage's `crypto_words` and a flipped kind.
-- **Firewall** (run after the build, validation outputs and README section were committed and pushed, before any outcome): see the result
-  below.
+- **Firewall** (run after the build, validation outputs and README section were committed and pushed, before any outcome): it passes at
+  all 9 cutoffs (the Q4 2017 print and FY2017 10-K, the 8-K of 2018-04-26, the FY2018 10-K, the Newmont Goldcorp name, the Newmont
+  Corporation name, the FY2019 10-K and the first nem3 date, Q2 2020, the FY2020 10-K, and 2022-01-01: 530 to 732 dates each, 2008 on),
+  0 files changed and no planted text; the NEM plant now also carries the vintage's `crypto_words` and a flipped kind.
 
 Seen in the build (method behaviour, not tuned): **RICH 183, FAIR 11, CHEAP 15 of 209 dates** (AVOID 171, BUY 15, ACCUMULATE 15,
 WATCHLIST 8). The class follows the anchor:
