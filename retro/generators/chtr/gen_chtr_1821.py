@@ -206,28 +206,32 @@ test16 = old["history_vintages"][-1]["one_off_tests"]["2016"]
 
 
 def listed_items(p, fy, anchor):
-    """The statement of operations' items outside income from operations' recurring lines, each pre-tax and taken whole (the CB FY2005
-    netting): other operating expenses, net, loss on extinguishment of debt, gain (loss) on financial instruments, other pension benefits
-    (costs) and other expense, net; returned as (net charges, gross charges, rows) for the year `fy` (the first column)."""
+    """The MD&A statement of operations' items outside the recurring operating lines, each pre-tax and taken whole (the CB FY2005
+    netting): other operating expenses, net, and every row between income from operations and income before income taxes except net
+    interest expense (loss on extinguishment of debt, gain or loss on financial instruments, other pension benefits or costs, other
+    expense), the first column (the year `fy`); each row goes on the checklist."""
+    ls = lines(p)
+    a = next(i for i, x in enumerate(ls) if anchor in x)
+    io = next(i for i in range(a, len(ls)) if ls[i].startswith("Income from operations |"))
+    pt = next(i for i in range(io, len(ls)) if ls[i].startswith("Income before income taxes |"))
     items = {}
-    for lab in ("Other operating expenses, net", "Loss on extinguishment of debt", "Gain (loss) on financial instruments, net",
-                "Other pension benefits", "Other pension benefits (costs), net", "Other expense, net", "Other income (expense), net",
-                "Other expenses, net"):
-        try:
-            v, _ = row(p, lab, anchor)
-        except AssertionError:
+    oo = next(x for x in ls[a:io] if x.startswith("Other operating expenses, net |"))
+    CHECK.setdefault(p, []).append(oo)
+    items["Other operating expenses, net"] = -cells(oo)[0]     # an operating expense row is printed positive
+    for x in ls[io + 1:pt]:
+        lab = x.split("|")[0].strip()
+        if not lab or re.fullmatch(r"[()0-9,.—-]+", lab) or lab.startswith("Interest expense") or lab.startswith("Other Income") or lab.startswith("Other Expenses") \
+                or lab.startswith("OTHER") or not cells(x):
             continue
-        sign = -1 if lab.startswith("Other operating") else 1      # an operating expense row is printed positive
-        items[lab] = sign * v[0]
+        CHECK.setdefault(p, []).append(x)
+        items[lab] = cells(x)[0]
     return items
 
 
 tests = {}
 for fy in (2018, 2019, 2020):
     p = P10K[fy]
-    anchor = "Consolidated Statements of Operations" if fy == 2018 else "Results of Operations"
-    anc = next(x for x in lines(p) if "The following table sets forth the consolidated statements of operations for the periods presented" in x)
-    items = listed_items(p, fy, anc)
+    items = listed_items(p, fy, "The following table sets forth the consolidated statements of operations for the periods presented")
     ni = V[fy]["periods"][str(fy)]["net_income_m"]
     net = -sum(items.values())                     # net charges (positive) or net benefits (negative), pre-tax
     gross_ch = -sum(v for v in items.values() if v < 0)

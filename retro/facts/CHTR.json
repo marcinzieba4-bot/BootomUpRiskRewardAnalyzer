@@ -1556,8 +1556,7 @@
      "items_pre_tax_m": {
       "Other operating expenses, net": -103.0,
       "Loss on extinguishment of debt": -25.0,
-      "Gain (loss) on financial instruments, net": -54.0,
-      "Other pension benefits": 0.0,
+      "Loss on financial instruments, net": -54.0,
       "Other pension benefits (costs), net": -69.0,
       "Other expense, net": -135.0
      },
@@ -1566,7 +1565,7 @@
      "gross_benefits_m": 0,
      "distorted": false,
      "figure_without_published": null,
-     "note": "the listed items outside operations, each pre-tax and whole: Other operating expenses, net -103, Loss on extinguishment of debt -25, Gain (loss) on financial instruments, net -54, Other pension benefits +0, Other pension benefits (costs), net -69, Other expense, net -135 ($M); charges $386M against net income attributable of $1,668M (the AAPL FY2002 test), benefits $0M against $1,668M without them (its mirror): neither is met, so the year is kept at GAAP"
+     "note": "the listed items outside operations, each pre-tax and whole: Other operating expenses, net -103, Loss on extinguishment of debt -25, Loss on financial instruments, net -54, Other pension benefits (costs), net -69, Other expense, net -135 ($M); charges $386M against net income attributable of $1,668M (the AAPL FY2002 test), benefits $0M against $1,668M without them (its mirror): neither is met, so the year is kept at GAAP"
     }
    },
    "model": {
@@ -1761,8 +1760,7 @@
      "items_pre_tax_m": {
       "Other operating expenses, net": -103.0,
       "Loss on extinguishment of debt": -25.0,
-      "Gain (loss) on financial instruments, net": -54.0,
-      "Other pension benefits": 0.0,
+      "Loss on financial instruments, net": -54.0,
       "Other pension benefits (costs), net": -69.0,
       "Other expense, net": -135.0
      },
@@ -1771,7 +1769,7 @@
      "gross_benefits_m": 0,
      "distorted": false,
      "figure_without_published": null,
-     "note": "the listed items outside operations, each pre-tax and whole: Other operating expenses, net -103, Loss on extinguishment of debt -25, Gain (loss) on financial instruments, net -54, Other pension benefits +0, Other pension benefits (costs), net -69, Other expense, net -135 ($M); charges $386M against net income attributable of $1,668M (the AAPL FY2002 test), benefits $0M against $1,668M without them (its mirror): neither is met, so the year is kept at GAAP"
+     "note": "the listed items outside operations, each pre-tax and whole: Other operating expenses, net -103, Loss on extinguishment of debt -25, Loss on financial instruments, net -54, Other pension benefits (costs), net -69, Other expense, net -135 ($M); charges $386M against net income attributable of $1,668M (the AAPL FY2002 test), benefits $0M against $1,668M without them (its mirror): neither is met, so the year is kept at GAAP"
     },
     "2020": {
      "fy": 2020,
@@ -1780,15 +1778,16 @@
      "items_pre_tax_m": {
       "Other operating expenses, net": -58.0,
       "Loss on extinguishment of debt": -143.0,
-      "Other pension benefits (costs), net": -66.0,
+      "Loss on financial instruments, net": -15.0,
+      "Other pension costs, net": -66.0,
       "Other expense, net": -31.0
      },
-     "net_charges_m": 298.0,
-     "gross_charges_m": 298.0,
+     "net_charges_m": 313.0,
+     "gross_charges_m": 313.0,
      "gross_benefits_m": 0,
      "distorted": false,
      "figure_without_published": null,
-     "note": "the listed items outside operations, each pre-tax and whole: Other operating expenses, net -58, Loss on extinguishment of debt -143, Other pension benefits (costs), net -66, Other expense, net -31 ($M); charges $298M against net income attributable of $3,222M (the AAPL FY2002 test), benefits $0M against $3,222M without them (its mirror): neither is met, so the year is kept at GAAP"
+     "note": "the listed items outside operations, each pre-tax and whole: Other operating expenses, net -58, Loss on extinguishment of debt -143, Loss on financial instruments, net -15, Other pension costs, net -66, Other expense, net -31 ($M); charges $313M against net income attributable of $3,222M (the AAPL FY2002 test), benefits $0M against $3,222M without them (its mirror): neither is met, so the year is kept at GAAP"
     }
    },
    "model": {
