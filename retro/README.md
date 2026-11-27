@@ -29163,6 +29163,11 @@ Controls and checks (before any outcome):
   `selftext.py --allow "MD&A" Ks`: 0 misses in 480 tokens (the two allowed are method words: the MD&A, and the "Ks" of "10-Ks").
 - **Years after the as-of date:** none in the 100 models and reports other than the FY horizon labels.
 - **`retro_tool run`:** passes on all 100 dates, with no warnings.
+- **Firewall** (run after the build was committed, before any outcome): passes at the 20 cutoffs above, with 0 files changed and no
+  planted text (1 to 100 dates each). The plants: a print whose segment operating income, revenue, margins, EPS, notes and raw figures
+  are absurd, with absurd full-year actuals for the year after the latest vintage and a restatement of every year of the history, a
+  later vintage with planted texts, figures, kind and an excluded year, a later guide, dividend, repurchase program and company name,
+  and every price from the cutoff on multiplied by 10.
 
 Seen in the build (method behaviour, not tuned):
 - **Totals: RICH 100.** The legacy tier is AVOID on all 100 dates, and robustness is 8 of 8 on every date.
