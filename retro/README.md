@@ -27870,7 +27870,10 @@ Controls and checks (before any outcome):
 - **Forward-reference scan:** 0 in 45 dated facts.
 - **Self-text scan** (`--from 2018-01-01`, the 2018-2021 filings): 579 tokens, no miss (after the correction above).
 - **Regression:** rebuilding the 522 dates of 2008-2017 on the extended fact sheet, builder and engines changes nothing.
-- **Firewall:** FIREWALL_RESULT
+- **Firewall** (run after the build, validation outputs and README section were committed and pushed, before any outcome): it passes at
+  all 25 cutoffs above (2018-01-02, every print, vintage and dividend date of the range, EV's and CRYPTO's live dates, and 2022-01-01:
+  522 to 731 dates each), 0 files changed and no planted text, on its first run. Besides the 2008-2017 plants, the planted print now
+  carries planted daily average trades (DATs) and each later vintage a planted acquisition note.
 
 Seen in the build (method behaviour, not tuned). The ten-year window loses its 2008-2010 days and BEAR its FY2009-FY2010 fall as the
 history rolls: BEAR is -44.1%/yr (FY09 to FY10) to 2020-02-21, then -1.4%/yr (FY11 to FY12) to the Q4 2020 print, then FY19 to FY20's
