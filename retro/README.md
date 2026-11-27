@@ -29396,6 +29396,10 @@ Controls and checks (before any outcome):
   precede this batch's folder), and the title words "Newmont FY".
 - **Regression:** rebuilding 2008-2013 with the new sheet and builder changes no file; no shared code changed but the firewall's NEM plant,
   which gains the vintage's `climate_words`.
+- **Firewall** (run after the build, validation outputs and README section were committed and pushed, before any outcome): it passes at
+  all 9 cutoffs above (the Q4 2013 print and FY2013 10-K, the 8-K of 2014-06-13, Q2 2014 (the first ounces-sold print), the FY2014 10-K,
+  ENERGY_TRANSITION's first date, the FY2015 and FY2016 10-Ks, Q3 2017, and 2018-01-01: 321 to 523 dates each, 2008 on), 0 files changed
+  and no planted text; the NEM plant now also carries the vintage's `climate_words`.
 
 Seen in the build (method behaviour, not tuned): **CHEAP 105, FAIR 6, RICH 98 of 209 dates** (BUY 99, ACCUMULATE 8, WATCHLIST 4, AVOID 98;
 robustness 8 of 8 on 177 dates, 7 on 28, 6 on 3, 2 on 1). The class follows the anchor:
