@@ -1,0 +1,238 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "NEM",
+ "company": "Newmont Mining Corporation",
+ "as_of": "2009-07-31",
+ "price_date": "2009-07-31",
+ "price": 41.35,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); gold-miner signals with Newmont's rule-T thresholds",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'Newmont is one of the world’s largest gold producers and is the only gold company included in the S&P 500 Index and Fortune 500, and was the first gold company included in the Dow Jones Sustainability Index-World.' 'One of the most significant risks is fluctuation in the prices of gold and copper, which are affected by numerous factors beyond our control.' 'A Substantial or Extended Decline in Gold or Copper Prices Would Have a Material Adverse Effect on Newmont' (the FY2008 10-K's own words; it does not call the business cyclical, so DURABLE, the MU rule)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "'Newmont is one of the world’s largest gold producers and is the only gold company included in the S&P 500 Index and Fortune 500, and was the first gold company included in the Dow Jones Sustainability Index-World.' 'One of the most significant risks is fluctuation in the prices of gold and copper, which are affected by numerous factors beyond our control.' 'A Substantial or Extended Decline in Gold or Copper Prices Would Have a Material Adverse Effect on Newmont' (the FY2008 10-K's own words; it does not call the business cyclical, so DURABLE, the MU rule). durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.13x; -29% to EPP floor; model-vs-market gap +1.43; conservative 2yr +92%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.13,
+  "ratio_b_fmt": "0.13x",
+  "epp": 58.24,
+  "epp_gap_pct": -29.0,
+  "epp_adj": 0.2,
+  "proxy_composite": 2.4,
+  "sca": 0.15,
+  "adj_composite": 2.75,
+  "market_composite": 1.32,
+  "adj_gap": 1.43,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 91.8,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.81,
+    "pe": 23.0,
+    "price": 18.63,
+    "desc": "EPS -33.3%/yr (worst year FY02-FY08 ex-FY07, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 1.94,
+    "pe": 42.9,
+    "price": 83.23,
+    "desc": "EPS +3.3%/yr (Q2 revenue YoY + margin + buyback); P/E at its 7.6-yr ex-FY07 median"
+   },
+   "BULL": {
+    "eps": 3.36,
+    "pe": 64.9,
+    "price": 218.06,
+    "desc": "EPS +35.8%/yr (FY02-FY08 ex-FY07 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 5.84,
+    "pe": 86.1,
+    "price": 502.82,
+    "desc": "EPS +79.1%/yr (best 2-yr run FY02-FY08 ex-FY07, at least BULL); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.13,
+   "epp_gap_pct": -29.0,
+   "adj_gap": 1.43,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 91.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.07,
+   "epp_gap_pct": -29.0,
+   "adj_gap": 1.53,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 91.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 0.24,
+   "epp_gap_pct": -29.0,
+   "adj_gap": 1.18,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 91.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.12,
+   "epp_gap_pct": -29.0,
+   "adj_gap": 1.45,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 91.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.14,
+   "epp_gap_pct": -29.0,
+   "adj_gap": 1.41,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 91.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.13,
+   "epp_gap_pct": -29.0,
+   "adj_gap": 1.73,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 91.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.13,
+   "epp_gap_pct": -35.1,
+   "adj_gap": 1.43,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 91.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.13,
+   "epp_gap_pct": -29.0,
+   "adj_gap": 1.49,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 91.8,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "NEM (retrospective, 2009-07-31) ◉ BUY — Ratio B 0.13x (54.9% downside to Bear $18.63 / +427.4% upside to Bull $218.06) | Adj composite 2.75 vs market 1.32: gap +1.43 [UNDERVALUED] | -29% above the EPP floor $58.24 (32x FY09E $1.82) | Conservative 2-yr case: +91.8% total (+45.9%/yr) | At 22.7x FY09E the 15% hurdle price $54.69 sits at or below the BASE case; revenue +6.6% YoY in Q2 2009, forward revenues +6.6% (Q2 2009 revenue growth (no revenue guide)); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "NM14",
+   "published": "2009-02-19",
+   "filed": "filed 2009-02-19 (EDGAR gives the date only; counted as before the open)",
+   "title": "Newmont FY2008 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1164727/000095013409003236/0000950134-09-003236.txt",
+   "supports": "history vintage FY2008; the 'why'"
+  },
+  {
+   "id": "NM13",
+   "published": "2008-02-21",
+   "filed": "accepted 2008-02-21 14:14 ET, during the session",
+   "title": "Newmont FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1164727/000119312508035169/0001193125-08-035169.txt",
+   "supports": "history vintage FY2007; the 'why'"
+  },
+  {
+   "id": "NM11",
+   "published": "2007-02-26",
+   "filed": "accepted 2007-02-23 18:17 ET, after the close: counts from 2007-02-26",
+   "title": "Newmont FY2006 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1164727/000119312507038537/0001193125-07-038537.txt",
+   "supports": "history: 2002-2003 diluted EPS from continuing operations and revenues; rule T: 2003 and 2004 revenue changes, 2005 and 2006 ounce and cost changes; the 'why'"
+  },
+  {
+   "id": "NM12",
+   "published": "2007-10-16",
+   "filed": "accepted 2007-10-15 17:22 ET, after the close: counts from 2007-10-16",
+   "title": "Newmont 8-K: updated FY2006 consolidated financial statements (Merchant Banking discontinued)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1164727/000119312507218594/0001193125-07-218594.txt",
+   "supports": "history vintage FY2006 (2004-2006 from continuing operations without Merchant Banking); rule T: 2005 and 2006 revenue and pre-tax margin changes"
+  },
+  {
+   "id": "NM10",
+   "published": "2006-10-27",
+   "filed": "accepted 2006-10-26 17:17 ET, after the close: counts from 2006-10-27",
+   "title": "Newmont FY2005 10-K/A (Amendment No. 1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1164727/000119312506216043/0001193125-06-216043.txt",
+   "supports": "rule T: 2002 against 2001 (revenues, Item 6); 2004 against 2003 (consolidated ounces sold, costs applicable to sales per ounce, sales and pre-tax income); FY2001 a loss; FY2003 diluted shares"
+  },
+  {
+   "id": "NM9",
+   "published": "2005-03-15",
+   "filed": "accepted 2005-03-15 14:59 ET, during the session",
+   "title": "Newmont FY2004 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1164727/000119312505050868/0001193125-05-050868.txt",
+   "supports": "rule T: 2001 against 2000 (revenues, Item 6); 2003 against 2002 (equity ounces sold, costs applicable to sales per ounce, sales and pre-tax income); FY2002 diluted shares"
+  },
+  {
+   "id": "NM22",
+   "published": "2009-02-19",
+   "filed": "accepted 2009-02-19 06:36 ET, before the open",
+   "title": "Newmont Q4 2008 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1164727/000114420409009779/0001144204-09-009779.txt",
+   "supports": "Q4 2008: revenues, consolidated gold ounces sold, costs applicable to sales per ounce, pre-tax income, diluted EPS from continuing operations, cash and debt"
+  },
+  {
+   "id": "NM23",
+   "published": "2009-04-30",
+   "filed": "accepted 2009-04-30 06:09 ET, before the open",
+   "title": "Newmont Q1 2009 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1164727/000114420409023022/0001144204-09-023022.txt",
+   "supports": "Q1 2009: revenues, consolidated gold ounces sold, costs applicable to sales per ounce, pre-tax income, diluted EPS from continuing operations, cash and debt"
+  },
+  {
+   "id": "NM24",
+   "published": "2009-07-23",
+   "filed": "accepted 2009-07-23 06:07 ET, before the open",
+   "title": "Newmont Q2 2009 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1164727/000114420409038371/0001144204-09-038371.txt",
+   "supports": "Q2 2009: revenues, consolidated gold ounces sold, costs applicable to sales per ounce, pre-tax income, diluted EPS from continuing operations, cash and debt"
+  },
+  {
+   "id": "Y0",
+   "published": "2009-07-31",
+   "title": "Yahoo Finance daily prices, NEM and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/NEM/history",
+   "supports": "close $41.35 as traded on AS_OF, 52-week range, realized vol, beta, the 7.6-yr ex-FY07 P/E distribution from 2002-01-02"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-27"
+}

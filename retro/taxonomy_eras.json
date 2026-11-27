@@ -2281,6 +2281,21 @@
     "term": "XPLR Infrastructure",
     "first_seen": "2025-01-24",
     "note": "NextEra Energy Partners, LP's later name; first in a NextEra Energy filing among the 8-Ks and 10-Ks of 2022-2026 read for NEE in the Q4 2024 release (8-K accepted 2025-01-24 07:34 ET, before the open); the partnership's own filings were not searched"
+   },
+   {
+    "term": "Ahafo North",
+    "first_seen": "2008-02-21",
+    "note": "Newmont's project name in Ghana; first in Newmont's FY2007 10-K (accepted 2008-02-21 14:14 ET, during the session); EDGAR full-text search, CIK 1164727"
+   },
+   {
+    "term": "Newmont Goldcorp",
+    "first_seen": "2019-01-15",
+    "note": "Newmont's name after the Goldcorp acquisition; first in Newmont's 8-K accepted 2019-01-14 17:21 ET, after the close, so it counts from the next trading day; EDGAR full-text search, CIK 1164727"
+   },
+   {
+    "term": "Nevada Gold Mines",
+    "first_seen": "2019-07-01",
+    "note": "the Barrick-Newmont Nevada joint venture; first in Newmont's 8-K accepted 2019-07-01 09:11 ET, before the open; EDGAR full-text search, CIK 1164727"
    }
   ]
  }

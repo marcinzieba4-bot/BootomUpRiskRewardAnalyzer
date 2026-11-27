@@ -39,6 +39,7 @@ and require byte-identical models. Restores the fact sheet and the price cache a
     python3 retro/tools/firewall.py 2009-01-01 CRM          # the CRM series (salesforce.com) in staging/retrospective
     python3 retro/tools/firewall.py 2009-01-01 SCHW         # the SCHW series (The Charles Schwab Corporation) in staging/retrospective
     python3 retro/tools/firewall.py 2009-01-01 NEE          # the NEE series (FPL Group, FPL) in staging/retrospective
+    python3 retro/tools/firewall.py 2009-01-01 NEM          # the NEM series (Newmont Mining Corporation) in staging/retrospective
 
 Plants a print, a history vintage, an event per live theme and a company name (UNP: also a guide and a
 dividend; LOW and AAPL: also a guide with every guided field; NKE: a guide in words, and futures orders on the last print before
@@ -208,7 +209,7 @@ OUTDIR = {"ACN": "archive/retrospective/ACN", "UNP": "staging/retrospective/UNP"
           "SPGI": "staging/retrospective/SPGI", "CB": "staging/retrospective/CB",
           "LLY": "staging/retrospective/LLY", "UNH": "staging/retrospective/UNH", "CRM": "staging/retrospective/CRM",
           "SCHW": "staging/retrospective/SCHW",
-          "NEE": "staging/retrospective/NEE"}[TICKER]
+          "NEE": "staging/retrospective/NEE", "NEM": "staging/retrospective/NEM"}[TICKER]
 ARCHIVE = os.path.join(ROOT, OUTDIR)
 BUILDER = os.path.join(ROOT, "retro", f"build_{TICKER.lower()}.py")
 # absurd values for every field the builder reads from a print
@@ -451,7 +452,12 @@ PLANT = {"ACN": dict(quarter="Q9 FY99", revenue_lc=-60, margin_bp=-999, fy_eps_g
                      eps_pct=-99.9, eps_basis="GAAP", eps_gaap=0.01, eps_gaap_prior=9.99, eps_adj=0.01, eps_adj_prior=9.99,
                      eps_note="PLANTED", diluted_shares_m=1.0, next_print="PLANTED", resources_name="PLANTED",
                      raw=dict(rev_m=4, rev_prior_m=10, opinc_m=-2, opinc_prior_m=5, seg_m=4, seg_prior_m=10, kwh_m=4, kwh_prior_m=10,
-                              ni_m=1, ni_prior_m=99, fple_m=1, fple_prior_m=99, cust_k=1, cust_prior_k=99))}[TICKER]
+                              ni_m=1, ni_prior_m=99, fple_m=1, fple_prior_m=99, cust_k=1, cust_prior_k=99)),
+         "NEM": dict(quarter="Q1 2099", fy=2099, q=1, release="PLANTED", release_time="PLANTED", sales_b=0.01, sales_pct=-60.0,
+                     oz_pct=-60.0, cas_pct=99.0, pretax_margin=-50.0, pretax_margin_prior=50.0, margin_bp=-10000.0, eps_q=0.01,
+                     eps_q_prior=9.99, eps_pct=-99.9, diluted_shares_m=1.0, cash_b=99.0, debt_note="PLANTED", rev_note="PLANTED",
+                     oz_note="PLANTED", cas_note="PLANTED", eps_note="PLANTED", adj_note="PLANTED", next_print="PLANTED",
+                     raw=dict(rev_m=4, rev_prior_m=10, pretax_m=-2, pretax_prior_m=5, oz_k=4, oz_prior_k=10, cas=9999, cas_prior=1))}[TICKER]
 # LOW and AAPL guides carry more fields than UNP's: plant every one the builder reads (NKE's are words only)
 GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -999], margin_def="PLANTED", stores_guide=1,
                            store_opening_m=9999, fy_words="PLANTED",
@@ -466,6 +472,7 @@ GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -99
                             display="PLANTED"),
                "PEP": dict(display="PLANTED", unused="PLANTED"),
                "NEE": dict(display="PLANTED", unused="PLANTED"),
+               "NEM": dict(display="PLANTED", unused="PLANTED"),
                "KMI": dict(display="PLANTED", rev_none=True),
                "XOM": dict(production_quote="PLANTED", note="PLANTED"),
                "F": dict(quote="PLANTED", note="PLANTED"),
@@ -1264,6 +1271,23 @@ try:
                  diluted_shares_m={y: 1.0 for y in v["diluted_shares_m"]}, shares_published={y: later for y in v["diluted_shares_m"]},
                  reserves_quote="PLANTED", transition_quote="PLANTED",      # the energy-transition watch-list words (NEE 2014-2017)
                  franchise_note="PLANTED")                                  # and the franchise line's note (NEE 2014-2017)
+        for g in f["guides"]:
+            if g.get("doc") == "PLANTED":
+                for k in ("eps_guide", "rev_guide", "rev_guide_label", "volume_guide"):
+                    g.pop(k, None)
+        for x in f.get("listings", []):    # the planted later listing names a symbol, as the encoded one does
+            if x.get("note") == "PLANTED":
+                x["symbol"] = "PLANTED"
+    if TICKER == "NEM":    # a later vintage whose every text and figure the models quote is planted, excluding a year, and a later
+                           # display-only outlook for every year (NEM 2008-2009); the generic plant's guide carries fields the builder
+                           # refuses, so it is made display-only
+        v.update(business_line="PLANTED", normalization="PLANTED", prev_fy_margin=-50.0, prev_fy_margin_note="PLANTED", tax_rate=0.99,
+                 tax_note="PLANTED", prev_fy_sales_growth=-60.0, prev_fy_oz_k=1.0, prev_fy_oz_pct=-60.0, prev_fy_cas=9999.0,
+                 prev_fy_cas_pct=99.0, franchise_source="PLANTED", dividend_annual=9.99, dividend_note="PLANTED", cash_b=99.0,
+                 fcf_b=99.0, fcf_note="PLANTED", cash_return_text="PLANTED", groups=[["PLANTED", 1, -99]], groups_basis="PLANTED",
+                 margin_signal_name="PLANTED", pe_window_start="2099-01-01", revenue_usd_b={**v["revenue_usd_b"], "2099": 0.01},
+                 diluted_shares_m={**v["diluted_shares_m"], "2099": 1.0},
+                 eps_excluded={**v.get("eps_excluded", {}), "2098": "PLANTED"}, eps_first_excluded={"2097": "PLANTED"})
         for g in f["guides"]:
             if g.get("doc") == "PLANTED":
                 for k in ("eps_guide", "rev_guide", "rev_guide_label", "volume_guide"):
