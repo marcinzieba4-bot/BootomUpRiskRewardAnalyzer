@@ -265,3 +265,102 @@ The two-year price landed in the BULL band on 116 dates, BASE on 61, XBULL on 31
   (the cross-ticker scripts in `staging/retrospective/`), never a change inside SCHW's archive.
 - The batch's largest encoding call (FY2015-FY2016 without the listed items) moves 4 classes, FAIR to RICH, among the 8 best entries.
 - `profile_drift` (hindsight): DURABLE, risk 2 on every date, as today's 2026 profile.
+
+# 2018-2021 (hindsight)
+
+209 weekly dates, 2018-01-05 to 2021-12-31. Scored only after the 2018-2021 build, validation outputs, README section and firewall result
+were committed and pushed (3d0e89f, 6fcd24c, 0ced23c, af3ceb0), in a new session that had not opened the 2008-2017 outcomes or these
+findings before then; the outcomes were computed on 2026-11-27, and every date has its four horizons (the last ends 2024-12-31). The
+calls are CHEAP 135, RICH 42 and FAIR 32. Over the batch the call held on 153 of 209 dates: RICH on 42 of 42, CHEAP on 109 of 135 and
+FAIR on 2 of 32. The two-year price landed in the BASE band on 136 dates, BEAR on 46, BULL on 27 and XBULL on none.
+
+## 2018 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID (2018-01-05 to 2018-10-17) | 42 | -29.3% | -45.4% to -3.5% | 0 | 0 | -21.4% | 42 |
+| class FAIR, legacy tier WATCHLIST (2018-10-26 to 2018-11-30) | 4 | +12.0% | -8.5% to +12.6% | 0 | 0 | -11.1% | 0 |
+| class FAIR, legacy tier AVOID (2018-11-09 to 2018-11-16) | 2 | +2.8% | -3.1% to +2.8% | 0 | 0 | -16.6% | 0 |
+| class CHEAP, legacy tier WATCHLIST (2018-12-07 to 2018-12-28) | 3 | +25.8% | +24.4% to +32.3% | 1 | 0 | -4.7% | 1 |
+| class CHEAP, legacy tier ACCUMULATE (2018-12-21 to 2018-12-21) | 1 | +35.8% | +35.8% to +35.8% | 1 | 0 | +0.4% | 1 |
+| FY17E $1.31 (FY16's) (2018-01-05 to 2018-01-12) | 2 | -7.4% | -11.6% to -7.4% | 0 | 0 | -16.7% | 2 |
+| FY18E $1.61 (FY17's) (2018-01-19 to 2018-12-28) | 50 | -25.9% | -45.4% to +35.8% | 2 | 0 | -20.3% | 42 |
+| latest print Q3 2017 (2018-01-05 to 2018-01-12) | 2 | -7.4% | -11.6% to -7.4% | 0 | 0 | -16.7% | 2 |
+| latest print Q4 2017 (2018-01-19 to 2018-04-13) | 13 | -17.9% | -45.4% to -3.5% | 0 | 0 | -17.5% | 13 |
+| latest print Q1 2018 (2018-04-18 to 2018-07-13) | 13 | -32.3% | -40.4% to -25.3% | 0 | 0 | -25.8% | 13 |
+| latest print Q2 2018 (2018-07-19 to 2018-10-12) | 13 | -27.9% | -34.3% to -18.8% | 0 | 0 | -21.9% | 13 |
+| latest print Q3 2018 (2018-10-17 to 2018-12-28) | 11 | +12.0% | -15.4% to +35.8% | 2 | 0 | -11.1% | 3 |
+
+- **RICH held on all 42.** The dates to 2018-10-17 (26.8-36.9x FY18E $1.61, tier AVOID) returned -45.4% to -3.5% over two years, none
+  clearing the hurdle or beating SPY. The 10 FAIR and CHEAP dates of the fourth quarter (26-29x as the price fell) returned -8.5% to
+  +35.8%; 2 of the 4 CHEAP dates cleared the hurdle, none beat SPY, and the FAIR call failed on all 6 (all lagged SPY by more than 15pp).
+  Every 2018 date saw a drawdown of 41-52% within two years.
+
+## 2019 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class FAIR, legacy tier WATCHLIST (2019-01-04 to 2019-01-11) | 2 | +40.7% | +27.6% to +40.7% | 1 | 0 | -7.1% | 1 |
+| class CHEAP, legacy tier BUY (2019-01-18 to 2019-12-20) | 46 | +71.2% | +16.5% to +109.3% | 41 | 38 | +27.0% | 41 |
+| class CHEAP, legacy tier ACCUMULATE (2019-11-29 to 2019-12-27) | 4 | +67.1% | +61.8% to +80.5% | 4 | 4 | +40.6% | 4 |
+| FY18E $1.61 (FY17's) (2019-01-04 to 2019-01-11) | 2 | +40.7% | +27.6% to +40.7% | 1 | 0 | -7.1% | 1 |
+| FY19E $2.45 (FY18's) (2019-01-18 to 2019-12-27) | 50 | +70.7% | +16.5% to +109.3% | 45 | 42 | +30.3% | 45 |
+| latest print Q3 2018 (2019-01-04 to 2019-01-11) | 2 | +40.7% | +27.6% to +40.7% | 1 | 0 | -7.1% | 1 |
+| latest print Q4 2018 (2019-01-18 to 2019-04-12) | 13 | +39.9% | +16.5% to +58.3% | 8 | 6 | -9.9% | 8 |
+| latest print Q1 2019 (2019-04-17 to 2019-07-12) | 13 | +77.1% | +43.5% to +85.9% | 13 | 12 | +16.8% | 13 |
+| latest print Q2 2019 (2019-07-18 to 2019-10-11) | 13 | +90.3% | +57.7% to +109.3% | 13 | 13 | +49.0% | 13 |
+| latest print Q3 2019 (2019-10-17 to 2019-12-27) | 11 | +80.5% | +61.8% to +108.7% | 11 | 11 | +45.9% | 11 |
+
+- **CHEAP held on 45 of 50.** From the Q4 2018 print (14.6-20.4x FY19E $2.45, the 0th-27th percentile) the dates returned +16.5% to
+  +109.3% over two years (median +70.7%); 45 cleared the hurdle and 42 beat SPY. The 5 misses are on the Q4 2018 print (January-April
+  2019). The 2 FAIR dates of early January 2019 (FY18E $1.61)
+  returned +27.6% and +40.7%.
+
+## 2020 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY (2020-01-03 to 2020-12-31) | 53 | +97.3% | +53.4% to +197.4% | 53 | 53 | +112.1% | 53 |
+| FY19E $2.45 (FY18's) (2020-01-03 to 2020-01-10) | 2 | +94.7% | +85.5% to +94.7% | 2 | 2 | +51.3% | 2 |
+| FY20E $2.67 (FY19's) (2020-01-17 to 2020-12-31) | 51 | +98.4% | +53.4% to +197.4% | 51 | 51 | +112.9% | 51 |
+| latest print Q3 2019 (2020-01-03 to 2020-01-10) | 2 | +94.7% | +85.5% to +94.7% | 2 | 2 | +51.3% | 2 |
+| latest print Q4 2019 (2020-01-17 to 2020-04-09) | 13 | +110.8% | +88.5% to +197.4% | 13 | 13 | +86.2% | 13 |
+| latest print Q1 2020 (2020-04-17 to 2020-07-10) | 13 | +95.9% | +67.1% to +135.3% | 13 | 13 | +118.9% | 13 |
+| latest print Q2 2020 (2020-07-17 to 2020-10-09) | 13 | +103.7% | +84.5% to +118.8% | 13 | 13 | +119.0% | 13 |
+| latest print Q3 2020 (2020-10-16 to 2020-12-31) | 12 | +73.7% | +53.4% to +98.8% | 12 | 12 | +63.2% | 12 |
+
+- **CHEAP held on all 53.** The 2020 dates (11.5-22.1x FY20E $2.67, BASE negative on the falling revenue of Q4 2019 to Q3 2020) returned
+  +53.4% to +197.4% over two years, every one clearing the hurdle and beating SPY (by 33.8 to 98.2pp); the March 2020 entries were the
+  best. Over three years 35 cleared the hurdle and 43 beat SPY, the windows reaching into 2023.
+
+## 2021 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY (2021-01-08 to 2021-09-17) | 28 | -12.1% | -29.1% to +47.9% | 8 | 9 | +8.8% | 9 |
+| class FAIR, legacy tier BUY (2021-05-14 to 2021-12-31) | 24 | -25.0% | -36.7% to -11.0% | 0 | 0 | -15.3% | 1 |
+| FY20E $2.67 (FY19's) (2021-01-08 to 2021-01-15) | 2 | +46.0% | +43.9% to +46.0% | 2 | 2 | +28.7% | 2 |
+| FY21E $2.12 (FY20's) (2021-01-21 to 2021-12-31) | 50 | -17.4% | -36.7% to +47.9% | 6 | 7 | -5.4% | 8 |
+| latest print Q3 2020 (2021-01-08 to 2021-01-15) | 2 | +46.0% | +43.9% to +46.0% | 2 | 2 | +28.7% | 2 |
+| latest print Q4 2020 (2021-01-21 to 2021-04-09) | 12 | +32.4% | -24.6% to +47.9% | 6 | 7 | +20.4% | 7 |
+| latest print Q1 2021 (2021-04-16 to 2021-07-16) | 14 | -23.3% | -30.9% to -12.6% | 0 | 0 | -3.5% | 0 |
+| latest print Q2 2021 (2021-07-20 to 2021-10-15) | 13 | -14.8% | -34.4% to +2.5% | 0 | 0 | -6.9% | 1 |
+| latest print Q3 2021 (2021-10-19 to 2021-12-31) | 11 | -26.4% | -36.7% to -12.2% | 0 | 0 | -21.7% | 0 |
+
+- **The TD Ameritrade quarters: CHEAP held on 9 of 28 (7 of 26 from the Q4 2020 print), FAIR on 1 of 24.** On FY21E $2.12 (24.3-40.2x, the 58th-100th percentile) the class
+  rested on BASE at +58% to +85%/yr, the acquisition's reported revenue growth. The dates on the Q4 2020 print (January-April 2021)
+  returned -24.6% to +47.9% (7 held); every date from the Q1 2021 print returned -36.7% to +2.5% over two years, none clearing the hurdle
+  or beating SPY, and none of the 52 cleared it over three years. FAIR's "within 15pp of SPY" failed on 23 of 24, by underperforming.
+  The two dates of January 2021 before the Q4 2020 print (FY20E $2.67) returned +43.9% and +46.0%.
+
+## Across 2018-2021
+
+- Hypothesis, not a rule: where the class rested on the multiple of the last full year's GAAP EPS against its own ten-year window (2018
+  RICH, 2019-2020 CHEAP), it held on 140 of 145 dates. Where it rested on BASE carrying an acquisition's reported revenue growth (2021,
+  +58% to +85%/yr on the TD Ameritrade quarters, the latest quarter standing in for a guide by the UNP rule), it held on 8 of 50. The
+  README's sensitivity found that BASE at 0% on those quarters moves all 50 to RICH or FAIR. Whether a latest-quarter growth that is
+  mostly acquired should feed BASE is a method question for a new version and a full re-run, tested across tickers with large
+  all-stock acquisitions (CB's Chubb in 2016, SPGI's IHS Markit in 2022, JPM's Bank One), never a change inside SCHW's archive.
+- The adjusted FY2020 EPS ($2.45, amortization out) would have moved 23 of the 2021 FAIR dates to CHEAP; on these outcomes that reading
+  would not have helped (the FAIR dates returned -36.7% to -11.0%).
+- `profile_drift` (hindsight): DURABLE, risk 2 on every date, as today's 2026 profile.
