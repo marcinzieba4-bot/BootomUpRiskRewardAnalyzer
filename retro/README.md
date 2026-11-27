@@ -28551,8 +28551,13 @@ Controls and checks (before any outcome):
   segment rows, and a share count printed without its comma), fixed before the build was committed.
 - **Regression:** no shared code changed beyond the firewall's NEE plant; the 522 dates of 2008-2017 rebuild byte-identical (a single
   `--weekly 2008-01-01 2017-12-31` run also writes 2014-01-03, the ISO week of 2013-12-31, which the per-range runs never built; deleted).
-- **Firewall:** (run after the build, validation outputs and README section were committed and pushed, before any 2018-2021 outcome):
-  pending, recorded in the next commit.
+- **Firewall** (run after the build, validation outputs and README section were committed and pushed, before any 2018-2021 outcome):
+  it passes at all 15 cutoffs above (the first week after the first built date, each print and 10-K date that changes the anchor or the
+  vintage, the Friday prints of 2020-07-24 and 2021-07-23, the split 8-K's date, the Q3 2020 post-split guide, the split's effective date
+  and 2022-01-01: 523 to 731 dates each, the 2008-2017 dates included), 0 files changed and no planted text, with the 2008-2017 plant (a
+  later print with its full-year actuals, display-only guides, a vintage whose texts, figures and transition quotes are planted, a
+  dividend, a listing symbol, a company name and prices from the cutoff multiplied by 10). No later split is planted: the price data's
+  only split after 2005 is the encoded one of 2020-10-27.
 
 Seen in the build (method behaviour, not tuned):
 - **Totals: RICH 109, CHEAP 93, FAIR 7.** 2018: CHEAP 42, RICH 7, FAIR 3. 2019: CHEAP 50, FAIR 2. 2020: RICH 50, FAIR 2, CHEAP 1. 2021: RICH
