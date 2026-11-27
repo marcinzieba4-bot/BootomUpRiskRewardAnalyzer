@@ -29789,6 +29789,176 @@ Judgement calls that could carry hindsight:
 
 The hindsight results for 2014-2017 are in `staging/retrospective/LYB/FINDINGS.md` ("LYB 2014-2017"): hypotheses, never inputs.
 
+### LYB 2018-2021: the A. Schulman segment, the leaner release tables, GAAP through the tax reform benefit and the refinery impairment, EV and CRYPTO out of scope
+
+209 weekly dates, 2018-01-05 to 2021-12-31, on the same fact sheet, generator, builder, engine and method (r2), with the rule-T thresholds
+of 2012-02-10 frozen. Built on 2026-11-27 at the owner's request ("do retrospective analysis for LYB, 2018-2021, same rules as before"), in
+a new session that did not open the 2012-2017 outcomes, `SERIES.md` or `FINDINGS.md`; every decision below applies a rule that existed
+before (the house rules and the 2012-2017 encodings) or is disclosed as new.
+
+```bash
+python3 retro/tools/edgar.py fetch 1489393 <dir> --from 2010-04-01 --to 2021-12-31 --forms 10-K 10-Q 8-K 8-K/A 10-12B 10-12B/A
+python3 -I retro/generators/lyb/gen_lyb.py --filings <dir>                  # 41 prints, 11 vintages, 12 dividends, 11 repurchase authorities
+python3 -I retro/tools/verbatim.py <dir>/checklist_lyb.json                 # 644/644
+python3 retro/build_lyb.py --weekly 2012-02-06 2013-12-31                   # regression: the 100 earlier models byte for byte
+python3 retro/build_lyb.py --weekly 2014-01-01 2017-12-31                   # regression: the 209 earlier models byte for byte
+python3 retro/build_lyb.py --weekly 2018-01-01 2021-12-31                   # 209 dates, 2018-01-05 .. 2021-12-31
+python3 retro/generators/lyb/controls_lyb.py 2018-01-01 2021-12-31          # 101 controls
+python3 retro/generators/lyb/sens_lyb.py <scratch> 2018-01-01 2021-12-31    # the sensitivity below
+for c in 2018-02-02 2018-02-03 2018-02-23 2018-02-24 2018-04-27 2018-04-28 2018-06-05 2018-06-06 2018-08-03 2018-08-04 \
+         2018-10-30 2018-10-31 2019-02-01 2019-02-02 2019-02-21 2019-02-22 2019-04-26 2019-04-27 2019-06-03 2019-06-04 \
+         2019-06-05 2019-08-02 2019-08-03 2019-09-13 2019-09-14 2019-11-01 2019-11-02 2020-01-31 2020-02-01 2020-02-21 \
+         2020-02-22 2020-05-01 2020-05-02 2020-06-01 2020-06-02 2020-07-31 2020-08-01 2020-10-30 2020-10-31 2021-01-29 \
+         2021-01-30 2021-02-26 2021-02-27 2021-04-30 2021-05-01 2021-06-01 2021-06-02 2021-07-30 2021-07-31 2021-10-29 \
+         2021-10-30 2022-01-01; do                                          # 52 cutoffs
+  python3 retro/tools/firewall.py $c LYB; done
+```
+
+**A full-data batch.** `www.sec.gov` again served every filing document to the plain client name of `edgar.py` (no contact address;
+the owner's email was not used). Read by the session's model directly: the sixteen earnings releases from Q4 2017 to Q3 2021 (Table 1,
+the segment tables, the segment reconciliation, the EBITDA reconciliation, the footnotes and text that list one-off items, the outlook
+and the capital-return text; Exhibit 99.2 from Q2 2021), the FY2017-FY2020 10-Ks (Item 6 and its footnotes, the EPS note, the statements
+of income and cash flows, the segment note, Item 1's segment descriptions, the risk factors, the MD&A overview's dividend line and the
+dividend table), the 10-Qs of Q1 2018, Q2 2018, Q2 2021 and Q3 2021 (the statement of income) and the 10-Qs of 2018-2021 searched for each
+dividend rate, and every other 8-K of January 2018 to December 2021 by its item text and exhibits. The generator keeps its 2012-2017 code;
+Q4 2017, the last release in the 2014-2017 layout, joins that parser (two labels accepted, and the one-off test's mirror encoded), and a
+new parser reads the 2018 layouts by table title. The regenerated sheet's 2012-2017 facts are an exact prefix of the new one. Sources
+`LB56` (the Q4 2017 release), `LB60`-`LB74` (the releases of Q1 2018 to Q3 2021), `LB80`-`LB83` (the four 10-Qs), `LB84`-`LB89` (the
+repurchase authorities), `LB100`-`LB103` (the FY2017-FY2020 10-Ks).
+
+- **No guide in numbers, again.** Every release's "OUTLOOK" is the chief executive's words; no 10-Q, 10-K or other 8-K guides revenue,
+  EPS or a margin. So the last full year's GAAP EPS stands (FY16's $9.15 to the Q4 2017 print, then $12.28, $12.01 and $12.03, $9.58 and
+  $9.60, $4.24 and $4.25), BASE is the latest quarter's revenue growth as reported plus the buyback, and there is no margin step. Read and
+  set aside: the 8-K of 2020-04-15 (Item 2.02, "LyondellBasell Provides Estimated First Quarter 2020 Financial Results and Operational
+  Update": "First quarter 2020 net income is expected to be in the range of $110 million to $180 million.", with an EBITDA range and a
+  capital expenditure outlook cut to $1.9 billion; no revenue, EPS or segment figure, so it is not a print and guides no field, the UNH
+  2012-10-09 precedent), the A. Schulman merger 8-K of 2018-02-15 (its "$150 million in run-rate cost synergies" and "accretive to
+  earnings within the first full year" are no figure of revenue, EPS or a margin), and the Braskem, Sasol, Bora, tender-offer and
+  debt 8-Ks.
+- **The release tables from Q1 2018 (new encoding, disclosed).** The releases drop the income statement and the charges tables. Table 1
+  gives revenues, net income, diluted EPS (on net income: no continuing-operations figure) and diluted shares; the EBITDA reconciliation
+  gives income from continuing operations and the provision for income taxes, whose sum is the pre-tax income (computed, each component
+  as printed, and the notes name both); segment operating income is in the segment overview tables (Q1-Q2 2018; from Q2 2021 in Exhibit
+  99.2) or the segment reconciliation (Q3 2018 to Q1 2021), whose "Continuing Operations" row is the consolidated operating income. Four
+  releases print no consolidated operating income (Q1 and Q2 2018, Q2 and Q3 2021): it comes from the quarter's 10-Q statement of income
+  (`oi_source`), with the year-ago quarter as that 10-Q shows it and the revenues checked against the release. Each of those 10-Qs was
+  accepted the same Friday as its release, during the session (12:34, 13:24, 14:32 and 12:55 ET), so it is public before that day's close
+  and the weekly date meets it (the UNP Good Friday and SCHW rule, applied to the 10-Q); the generator asserts the dates are equal. Without
+  it the operating margin signal would be unreported on those prints (sensitivity below).
+- **EPS: GAAP diluted from continuing operations where the filing reports it, each year from the latest filing that reports it.** The
+  10-Ks give FY17 $12.28, FY18 $12.03, FY19 $9.60, FY20 $4.25 from continuing operations; between a Q4 release and its 10-K the year is the
+  release's figure on net income (FY18 $12.01, FY19 $9.58, FY20 $4.24; three or four weekly dates each). The company's EPS "Excluding LCM"
+  (from Q1 2020 also "and Impairment") removes the lower of cost or market adjustments, which recur (in 2020 every quarter), so it is not
+  a figure excluding only one-offs (the 2014-2017 rule); GAAP stands.
+- **The one-off test, every year kept; the mirror test arises for the first time.** FY2017: the Q4 2017 release's charges table,
+  "After-tax effect of net charges (benefits)" of $(816)M for the year (the $819M U.S. tax reform benefit, the $103M Geosel gain and the
+  $106M bond refinancing charge), a net benefit against net income attributable to the Company of $4,879M: the mirror of the AAPL FY2002
+  test (the benefit exceeding the income without it, $4,063M) is not met, so the year is kept at GAAP $12.28 (the release prints only the
+  items' per-share effect, "positively impacted full year 2017 earnings by $2.05 per share", never an EPS without them: the SCHW 2014
+  reading; the batch's EPS call, below). From FY2018 no charges table exists, so the test sums the after-tax items each Q4 release lists
+  in its footnotes and text, charges net of benefits: FY2018 the A. Schulman costs ($42M and $15M) against the $346M tax benefit, $(289)M
+  against $4,690M (mirror not met; the $36M carbon black gain is printed pre-tax only and left out); FY2019 the A. Schulman costs of
+  2019 ($12M, $15M, $33M, $29M) against the $85M tax benefit, $4M of charges against $3,397M; FY2020 "LCM and Impairment charges reduced
+  full year 2020 net income by $457 million" and "costs for integration and restructuring impacted net income by $33 million", $490M
+  against $1,427M. The builder's check of the test now takes the kind (charges or benefits) into account; every earlier year is a
+  charge, so its models are unchanged.
+- **Release timing.** Fifteen of the sixteen releases were accepted before the open (06:35-06:48 ET) and date their own day: the Friday
+  ones meet that Friday's close, and Q3 2018 (Tuesday 2018-10-30) is met by its week's model on the next trading day; Q2 2020 (Friday 2020-07-31, 10:32 ET) was accepted during the session and
+  dates that Friday (the Q4 2011 rule). The 10-Ks are dated 2018-02-23 (accepted 2018-02-22 16:47 ET), 2019-02-21 (13:45 ET), 2020-02-21
+  (accepted 2020-02-20 16:30 ET) and 2021-02-26 (accepted 2021-02-25 16:11 ET).
+- **History.** Each vintage takes Item 6's five years from its own 10-K and earlier years from the latest earlier vintage, the ten fiscal
+  years to the latest one: 2007 leaves with the FY2017 10-K, 2008 with the FY2018 10-K, 2009 with the FY2019 10-K and the combined 2010
+  with the FY2020 10-K (2010 stays excluded from EPS, its days already out of a window that from 2021-02-26 starts in 2011). The diluted
+  share counts follow the same ten years from the FY2020 vintage, so the Successor's 2010 count leaves with it (new: no share count had
+  reached the tenth year before; sensitivity below). Item 6 still exists in the FY2020 10-K.
+- **Segments.** A. Schulman (acquired 2018-08-21) and LyondellBasell's compounding, Polybutene-1 and Catalloy businesses form Advanced
+  Polymer Solutions from the Q3 2018 release, which recasts O&P–Americas and O&P–EAI without the compounding business, the year-ago
+  quarter included (a seam in the O&P–Americas series, noted in the print); I&D is unchanged. The signal set and rule T's thresholds stay
+  those of 2012-02-10. The segment bridge has six segments from the FY2018 vintage, and the business line names Advanced Polymer
+  Solutions from it.
+- **Dividends:** each interim rate from the first filing that states it: $1.00 (the Q1 2018 release, 2018-04-27: "Dividend increased by
+  11% to $1.00 per share"; the FY2017 10-K states only $0.90), $1.05 (the Q2 2019 release, 2019-08-02), $1.13 (the Q2 2021 release,
+  2021-07-30). The 10-Ks' MD&A lines and, for FY2020 (no increase), the dividend table's December row are the vintages' rates. The A.
+  Schulman special stock's dividends ($15.00 and $60.00 a share) are a subsidiary's preferred dividends, not the ordinary rate.
+- **Repurchase authorities** (display only, the share counts carry them): the annual meetings of 2018-2021 and the extraordinary general
+  meeting of 2019-09-12 (each up to 10% of the shares), and the 8-K of 2019-06-04's "we intend to expedite our share repurchase program,
+  which currently allows for the repurchase of up to 37 million of our outstanding shares" (its Braskem announcement). The 2019 annual
+  meeting's authority (dated 2019-06-03) is superseded before a weekly date.
+- **Durability: CYCLICAL, risk 2,** on the same risk factor in each of the FY2017-FY2020 10-Ks ("cyclical and volatile nature").
+- **Themes.** ENERGY_TRANSITION stays on the watch list (text only): the FY2017-FY2019 10-Ks keep the 2014-2016 greenhouse gas sentence;
+  the FY2020 10-K rewrites the risk factor, and its words are quoted from 2021-02-26: "additional regulations and legislation are likely to
+  be forthcoming at the U.S. federal or state level that could result in increased operating costs for compliance, or required
+  acquisition or trading of emission allowances. Additionally, demand for the products we produce may be reduced." **EV** (live
+  2020-01-01, scoped to "battery-electric vehicles displace ICE powertrains, auto parts suppliers and fuel retail") and **CRYPTO** (live
+  2020-10-21, payments networks, banks, exchanges and remittance) are read as out of scope: no LYB 10-K of the range names electric
+  vehicles, e-commerce, streaming or crypto (the generator asserts it), its products go into "automotive components" among many uses
+  (Item 1) without making it an auto parts supplier, and its refined products are ENERGY_TRANSITION's refining, not fuel retail; the "why"
+  quotes every live theme's scope and says so. The FY2018-FY2020 10-Ks name cloud once each, in an accounting standard's title ("Customer’s
+  Accounting for Implementation Costs Incurred in a Cloud Computing Arrangement That is a Service Contract"), quoted in the "why" from the
+  FY2018 vintage (`cloud_quote`, text only, the SCHW `cloud_words`); CLOUD stays out of scope.
+
+Controls and checks (before any outcome):
+- **Regression:** the 309 dates of 2012-2017 rebuild byte for byte from the extended sheet and builder.
+- **Controls** (`controls_lyb.py 2018-01-01 2021-12-31`, now also each 10-Q operating income and each vintage's cloud words): 101 of 101
+  change no model dated before their publication; 49 change the first weekly date on or after it and 52 are inert (facts superseded
+  before 2018, and the 2019 annual meeting's authority, superseded the next day).
+- **Leak scan:** 50,516 (model, later token) pairs, 0 hits; the positive control finds the print in force in 209 of 209 models.
+  `forward_refs.py`: 0 forward references in 59 dated facts. `selftext.py --allow "MD&A" Ks`: 0 misses in 801 tokens (a first draft's two
+  misses were derived pre-tax totals, $5,311M and $4,052M, which the releases print only as their two components; the notes now give the
+  components, so no figure appears before a filing prints it).
+- **Years after the as-of date and anachronisms:** none in the 209 models, reports and analyses other than the FY horizon labels.
+- **`retro_tool run`:** passes on all 209 dates, with no warnings.
+- **Firewall** (run after the build was committed, before any outcome): passes at 52 cutoffs (each fact date of 2018-2021 and the day
+  after it, and 2022-01-01; listed above), with 0 files changed and no planted text (313 to 518 earlier dates each). The LYB plant now
+  also plants the 10-Ks' cloud words.
+
+Seen in the build (method behaviour, not tuned):
+- **Totals: RICH 108, CHEAP 82, FAIR 19.** RICH on the 4 dates of January 2018 (FY16's $9.15 anchor, 12.5-13.3x against a window
+  median of 9.5x); CHEAP on all 61 from the Q4 2017 print to 2019-03-29 (FY17's $12.28, 6.4-9.6x against 9.0-9.1x, with BASE at +21.0%
+  to +26.6%/yr on revenues +15.9% to +21.5% through 2018, +2.0%/yr after the Q4 2018 print); CHEAP 11, RICH 9, FAIR 3 from April to
+  early September 2019 (5.7-7.7x, BASE +2.0% to -6.5%/yr); RICH on the 26 dates from 2019-09-13 to 2020-03-06 although the P/E is 7.1-8.6x,
+  below the median (BASE -2.6% to -9.3%/yr on falling revenues); CHEAP on the 10 from 2020-03-13 to 2020-05-15 (4.4-6.1x, the close at
+  $42.00 on 2020-03-20); RICH on 35 of the 36 to 2021-01-22 (BASE -9.3% to -33.4%/yr on Q1-Q3 2020 revenues -14.6% to -38.7%); RICH on
+  all 26 from the Q4 2020 print to 2021-07-23, as the anchor becomes FY20's $4.25 and the P/E 20.2-27.3x, the window's 96th-100th
+  percentile; FAIR on the 13 of BASE +114.7%/yr (Q2 2021 revenues +108.5%); RICH 8, FAIR 2 after the Q3 2021 print. The legacy tier is BUY
+  on 142, AVOID 37, ACCUMULATE 24, WATCHLIST 6. Robustness 8 of 8 on 125 dates.
+- **The window** grows from 7.0 years ex-FY10 to 10 years (from 2021-02-26, 2010 no longer in it); its median stays 8.9-9.5x; the close
+  runs from $42.00 to $121.49 ($114.37 on the first date, $92.23 on the last).
+- **BEAR** is FY15 to FY16's -4.7%/yr to the Q4 2019 print, FY18 to FY19's -20.2%/yr to the Q4 2020 print, then -55.7%/yr. **The EPP
+  floor** is $30-86.
+- So the classes follow the last full year's GAAP EPS: FY17's tax-reform year makes 2018 CHEAP, FY20's impairment and pandemic year makes
+  2021 RICH as the price recovers before the earnings reach a full year.
+
+Sensitivity (each call changed alone, the 209 dates rebuilt and reclassified offline with `retro_tool`'s own classifier; no outcome
+consulted; `sens_lyb.py`):
+- **every data signal at its XBULL value**: 71 classes (RICH to CHEAP 61, RICH to FAIR 6, FAIR to CHEAP 4); **at its BEAR value**: 42;
+- **FY2017 without its listed one-offs** ($12.28 less the release's "$2.05 per share", $10.23, derived: no filing prints it): 45
+  classes and 18 tiers, from 2018-02-02 to 2020-07-10 (CHEAP to FAIR 23, CHEAP to RICH 7; RICH to CHEAP 6 and to FAIR 6 in 2019-2020, as
+  FY17 to FY18 becomes growth and BEAR moves): the batch's largest EPS call;
+- **share counts from 2011 only**: 9 classes; **the company's 2014-2016 EPS excluding LCM** and **the 2011-2012 adjusted EPS**: 7 classes
+  each; **FY2020 at the company's EPS excluding LCM and impairment** ($5.61, which also removes the recurring LCM adjustments): 8 classes,
+  17 tiers, all after the Q3 2021 print (RICH to FAIR); **2010's days in the P/E window on FY2011's EPS**: 6 classes; **the combined 2010
+  not a year of revenues**: 3 classes;
+- **the 2010 share count kept in the FY2020 vintage**: no class, 2 tiers; **the 10-Q's operating income unused** (those four prints'
+  margin signal at BASE), **the revenue history from 2008**, **the Q2 2012 restatement unused**, **the ten-year roll unused** and
+  **ENERGY_TRANSITION out of scope**: no class, no tier.
+
+Judgement calls that could carry hindsight:
+- FY2017 kept at GAAP $12.28 with the U.S. tax reform benefit (the mirror test not met; the release gives the items' per-share effect,
+  not an EPS without them), which anchors the 61 CHEAP dates of 2018-2019 (45 classes move at a derived $10.23);
+- FY2020 kept at GAAP $4.25 with the Houston refinery impairment, LCM and integration costs ($490M of listed charges against $1,427M),
+  rather than the company's figure excluding LCM and impairment, which anchors the RICH calls of 2021 (8 classes move at $5.61);
+- the signal set and rule T's thresholds, frozen from 2012-02-10 (chosen by a builder who knew 2012-2013, measured on the 2009-2011 trough
+  and recovery), now on segments recast for Advanced Polymer Solutions: the signals at XBULL move 71 of the 209 classes, the largest
+  call of the batch;
+- the 10-Q's operating income for the four releases that print none (public the same day, before the close);
+- the 2010 share count leaving the buyback with the FY2020 vintage (the ten-year roll applied to shares);
+- EV and CRYPTO out of scope, ENERGY_TRANSITION on the watch list (text only), CYCLICAL on the 10-Ks' own words;
+- the non-earnings 8-Ks read by their item text and exhibits for guided numbers only.
+
+The hindsight results for 2018-2021 are in `staging/retrospective/LYB/FINDINGS.md` ("LYB 2018-2021"), computed after the firewall
+result was pushed: hypotheses, never inputs.
+
 ## CHTR (Charter Communications): the thirty-eighth ticker, in staging, built from 2019-02-01
 
 The CHTR series is set up apart from every other ticker and shares nothing with them but the machinery: its own fact sheet

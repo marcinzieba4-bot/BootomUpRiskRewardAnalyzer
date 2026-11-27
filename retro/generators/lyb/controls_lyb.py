@@ -4,6 +4,7 @@ changes, and whether the first weekly date on or after it does. In memory; nothi
 
     python3 retro/generators/lyb/controls_lyb.py                          # the 2012-2013 dates
     python3 retro/generators/lyb/controls_lyb.py 2014-01-01 2017-12-31    # the 2014-2017 dates (retro/README.md, "LYB 2014-2017")
+    python3 retro/generators/lyb/controls_lyb.py 2018-01-01 2021-12-31    # the 2018-2021 dates (retro/README.md, "LYB 2018-2021")
 
 build_lyb.py's check_print re-derives every rate from a print's raw figures, so a print's control alters its O&P-Americas operating
 income and re-derives the rate; a Q4 print's full-year revenue, a vintage's last-year revenue, the restatement's EPS, each dividend and
@@ -41,12 +42,24 @@ def opa(f, i):
     p["opa_pct"] = round((b / a - 1) * 100, 1) if a > 0 else round((b - a) / abs(a) * 100, 1)
 
 
+def oi_ctrl(f, i):
+    p = f["prints"][i]
+    p["raw"]["oi_m"] += 100.0
+    r = p["raw"]
+    mg = lambda x, rev: round(x / rev * 100 + 0.0, 2)
+    p["opm"] = mg(r["oi_m"], r["rev_m"])
+    p["opm_bp"] = round((mg(r["oi_m"], r["rev_m"]) - mg(r["oi_prior_m"], r["rev_prior_m"])) * 100, 1)
+
+
 C = []
 for i, p in enumerate(facts0["prints"]):
     C.append((f"{p['quarter']} print, its O&P-Americas operating income", p["published"], lambda f, i=i: opa(f, i)))
     if p.get("fy_actual"):
         C.append((f"{p['quarter']} full-year revenue", p["published"],
                   lambda f, i=i: f["prints"][i]["fy_actual"].update(revenue_usd_b=f["prints"][i]["fy_actual"]["revenue_usd_b"] + 0.5)))
+    if p.get("oi_source"):                   # the 10-Q's operating income (Q1-Q2 2018, Q2-Q3 2021): its own date is the release's
+        C.append((f"{p['quarter']} print, its operating income from the 10-Q", p["published"],
+                  lambda f, i=i: oi_ctrl(f, i)))
     for y in p.get("restates", {}):
         C.append((f"{p['quarter']} restatement of FY{y}, its EPS", p["published"],
                   lambda f, i=i, y=y: f["prints"][i]["restates"][y].update(eps_normalized=f["prints"][i]["restates"][y]["eps_normalized"] + 0.01)))
@@ -54,6 +67,9 @@ for i, v in enumerate(facts0["history_vintages"]):
     y = max(v["revenue_usd_b"])
     C.append((f"{v['fy_label']} vintage, its {y} revenue", v["published"],
               lambda f, i=i, y=y: f["history_vintages"][i]["revenue_usd_b"].update({y: f["history_vintages"][i]["revenue_usd_b"][y] + 0.5})))
+    if v.get("cloud_quote"):                 # the FY2018-FY2020 10-Ks' one cloud words (text only)
+        C.append((f"{v['fy_label']} vintage, its cloud words", v["published"],
+                  lambda f, i=i: f["history_vintages"][i].update(cloud_quote=f["history_vintages"][i]["cloud_quote"] + " CTRL")))
     if v.get("refining_quote"):              # the watch list's 10-K words (from ENERGY_TRANSITION's live date, 2015-12-12)
         C.append((f"{v['fy_label']} vintage, its refining sentence", v["published"],
                   lambda f, i=i: f["history_vintages"][i].update(refining_quote=f["history_vintages"][i]["refining_quote"] + " CTRL")))
