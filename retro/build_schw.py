@@ -27,6 +27,10 @@ model was built or scored):
 encoding); Q1 2010 is restated twice, by the 8-K of 2010-04-20 and the Q1 2010 10-Q ('restated', the JPM encoding: each from its own
 date); the Q1 2010 and Q3 2013 outlooks are bounds and words that feed no field ('outlook_words', text only); from CLOUD's live date the
 'why' quotes every live theme's registered scope (the CB 2014-2017 and UNH wording).
+(SCHW 2014-2017) No new encoding of a number: the rate increases to $0.07 and $0.08 a quarter are 'dividends' facts; the Q1 2015
+expense outlook is words ('outlook_words'); the releases' per-share effects of non-recurring items (from Q3 2015) are not an EPS
+without them, so GAAP stands. From ECOMMERCE's live date (2015-01-01) the 'why' names each live theme's subject the 10-Ks were
+searched for, and the FY2015 and FY2016 10-Ks' one cloud sentence (an accounting standard) is quoted ('cloud_words', text only).
 The kind is DURABLE: the 10-Ks tie results to markets, rates and investor engagement but do not call the business cyclical (the
 JPM, LOW and SHW reading). No disruption theme in taxonomy_eras.json is live for a securities broker and bank in 2008-2009, so the
 builder refuses events until a theme encoding is decided, and it refuses guides, listings, splits and company names until their
@@ -35,7 +39,9 @@ encodings are decided.
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
 is the first trading day after it. Schwab's earnings 8-Ks of 2007-2009 were accepted during market hours (two after the close, dated
 the next trading day); a print on the week's last trading day (Friday 2009-01-16) dates its own week and meets that close, public
-before it by its 8-K's acceptance time (the UNP Good Friday 2014 rule, tagged "released during the session").
+before it by its 8-K's acceptance time (the UNP Good Friday 2014 rule, tagged "released during the session"). From Q3 2014 the 8-Ks
+are accepted after the close and dated the next trading day; on a Friday (Q2 2015, 2015-07-17) that day is the week's date and the
+print, public before its open, meets its close (the AVGO and CRM rule).
 
 Output goes to staging/retrospective/SCHW until the series is added to the archive (--out archive/retrospective/SCHW).
 
@@ -289,8 +295,23 @@ def build(as_of, facts, raw, spx, engine, out):
         scopes = ", ".join(f"{k} {'is scoped to' if i == 0 else 'to'} '{sc}'" for i, (_, k, sc) in enumerate(live))
         head = why.split("; no theme in taxonomy_eras.json is live")[0]
         assert head != why, (as_of, "the vintage's why lost its theme clause")
+        # (SCHW 2014-2017) from ECOMMERCE's live date the clause names each live theme's subject the 10-Ks were searched for, and
+        # from the FY2015 10-K, which names cloud computing only in an accounting standard ('cloud_words'), it quotes those words
+        # (the UNH 'cloud_words' and LMT FY2016 readings); with OFFSHORE and CLOUD alone the clause is as before
+        words = {"OFFSHORE": "offshore delivery", "CLOUD": "cloud", "ECOMMERCE": "e-commerce", "STREAMING": "streaming",
+                 "ENERGY_TRANSITION": "decarbonisation"}
+        live_k = [k for _, k, _ in live]
+        if live_k == ["OFFSHORE", "CLOUD"]:
+            none10k = "no 10-K names cloud or offshore delivery"
+        else:
+            assert set(live_k) <= set(words), (as_of, "a live theme the SCHW 10-Ks were not searched for", live_k)
+            named = [words[k] for k in live_k if not (k == "CLOUD" and h.get("cloud_words"))]
+            none10k = "no 10-K names " + ", ".join(named[:-1]) + " or " + named[-1]
+            if h.get("cloud_words"):
+                none10k += (f", and the {h['fy_label'].replace('FY', 'FY20')} 10-K names cloud computing only in an accounting standard "
+                            f"('{h['cloud_words']}'), not as a way its own business is delivered or displaced")
         why = (head + "; no disruption theme in taxonomy_eras.json is live for a securities broker and bank on this date (of the live "
-               f"themes, {scopes}: none names brokerage or banking, and no 10-K names cloud or offshore delivery), so the watch list is "
+               f"themes, {scopes}: none names brokerage or banking, and {none10k}), so the watch list is "
                "empty and these words stay here (the PEP obesity rule)")
     after_print = [p for p in prints if p["published"] < as_of and not any(p["published"] < d < as_of for d in days)]
     tag = f"(day after the {after_print[-1]['quarter']} print)" if after_print else f"(pre-{next_q} print)"
@@ -299,8 +320,11 @@ def build(as_of, facts, raw, spx, engine, out):
     same_day = [p for p in prints if p["published"] == as_of]
     if same_day:
         rt = same_day[-1].get("release_time", "")
-        assert "before the open" in rt or "during market hours" in rt, (as_of, same_day[-1]["quarter"], "not public before the close")
-        tag = (f"(day of the {same_day[-1]['quarter']} print, public before the open)" if "before the open" in rt else
+        # (SCHW 2014-2017) an 8-K accepted after the previous trading day's close is dated AS_OF and public before its open: on a
+        # Friday (Q2 2015, 2015-07-17) that day is the week's date and the print meets its close (the AVGO and CRM rule)
+        early = "before the open" in rt or "(after the close), so dated the next trading day" in rt
+        assert early or "during market hours" in rt, (as_of, same_day[-1]["quarter"], "not public before the close")
+        tag = (f"(day of the {same_day[-1]['quarter']} print, public before the open)" if early else
                f"(day of the {same_day[-1]['quarter']} print, released during the session)")
 
     company = h["company"]

@@ -917,6 +917,7 @@ try:
                  prev_fy_client_assets_b=0.01, prev_fy_client_assets_growth=-99.0, prev_fy_nna_b=-999.0, tax_rate=0.99,
                  tax_note="PLANTED", groups=[["PLANTED", 1, -99]], groups_basis="PLANTED", exchange="PLANTED",
                  pe_window_start="1990-01-02", kind="CYCLICAL", margin_signal_name="PLANTED", eps_first_excluded={"1990": "PLANTED"})
+        v["cloud_words"] = "PLANTED"       # (SCHW 2014-2017) a later 10-K's cloud words, the theme clause's text
         # (SCHW 2010-2013) a later restatement of the last print before CUTOFF with absurd figures (a real one public before CUTOFF
         # stays; 'restated' is a list in publication order), and outlook words for every year on the planted prints
         p0 = max((p for p in f["prints"] if p["published"] < cutoff), key=lambda p: p["published"])
