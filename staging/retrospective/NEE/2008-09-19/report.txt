@@ -1,0 +1,150 @@
+
+════════════════════════════════════════════════════════════════════════
+  NEE  ·  FPL Group, Inc.  ·  $55.97  ·  RETROSPECTIVE as of 2008-09-19
+  Signal: ✕ AVOID   Ratio B: 3.84x   Adj gap: -1.88  [OVERVALUED]
+  Point-in-time: 13 sources, latest published 2008-09-19; latest print Q2 2008 (2008-07-31)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2008E revenues, USD bn  →  FY2010E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Revenue line                 FY2008E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  FPL                       $    10.6  $  10.6  $  12.7      +0.0      +2.1
+    -3.1% revenues in FY07
+  FPL Energy                $     3.2  $   3.2  $   3.8      +0.0      +0.6
+    -2.4% revenues in FY07
+  Corporate and Other       $     0.2  $   0.2  $   0.2      +0.0      +0.0
+    +1.8% revenues in FY07
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    14.0  $  14.0  $  16.7      +0.0      +2.7
+  FY2008E = FY07 $15.26B × (1 − 8.8%: no Q3 2008 revenue guide, Q2 2008 revenue as reported, applied to the year (no FY08 revenue guide)); split pro rata to FY07 operating revenues by segment (NE10, segment information)
+  Q2 2008 (2008-07-31): total revenues $3.58B -8.8%; FPL energy sales +2.4%; FPL net income +2.8%;
+  operating margin 8.73% (-816.9bp); EPS $0.52 vs $1.01 (GAAP)
+  FPL energy sales +2.4% (27,117 to 27,766 million kWh, the statistics table's total: retail, sales to electric utilities, interchange and the change in unbilled sales); FPL average customer accounts 4,495 to 4,516 thousand; FPL net income +2.8% ($211M to $217M); FPL Energy net income $203M to $3M (display only); revenue -8.8% as reported ($3,929M to $3,585M); operating income $664M to $313M; EPS: diluted EPS as reported $0.52 vs $1.01; the release's adjusted EPS ($0.93 vs $0.86) also removes the mark-to-market effect of non-qualifying hedges and other than temporary impairment losses, recurring items, so GAAP stands
+  FY08: adjusted EPS outlook (8-K of 2008-09-03, 2008-09-03, display only): 'reaffirmation of FPL Group's previously announced adjusted earnings per share expectations for 2008 of $3.83 to $3.93' — an outlook on the adjusted basis, which also removes the mark-to-market effect of non-qualifying hedges and other than temporary impairment losses, recurring items (the PEP 2008 core rule): no field, so the last full year's EPS stands; no revenue or margin guide in numbers (BASE takes Q2 2008 revenue growth)
+
+  FY2008E EPS check:  $14.0B × 11.0% pre-tax × (1−21.9%) ÷ 0.403B  =  $2.99  (FY2008E: no EPS guide in numbers on a usable basis (the adjusted ranges also remove recurring mark-to-market items), FY07's $3.27 (GAAP) stands)
+  FY2010E BEAR check: $14.0B × 11.0% ÷ 0.416B  =  $2.89  (scenario $2.50)
+  FY2010E BULL check: $16.7B × 11.4% ÷ 0.416B  =  $3.58  (scenario $3.68)
+  Every 1pp of pre-tax margin ≈ $0.27 EPS ≈ $4/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  FPL energy sales (kWh)              -5.0%   ≥-1.0%    ≥2.0%    ≥8.0%     +2.4%  ▲ BULL  ███░
+  FPL net income                     -16.0%   ≥-6.0%    ≥3.0%   ≥12.0%     +2.8%  ◦ BASE  ██░░
+  Revenue growth                     -15.0%   ≥-3.0%    ≥8.0%   ≥33.0%     -8.8%  ⚠ BEAR  █░░░
+  EPS growth                         -31.0%  ≥-13.0%    ≥5.0%   ≥38.0%    -48.5%  ⚠ BEAR  █░░░
+  Operating margin change           -840.0bp  ≥-450.0bp  ≥-60.0bp  ≥320.0bp  -816.9bp  ⚠ BEAR  █░░░
+  Disruption theme: none live for a utility   +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.75 / 4.00
+  Market composite:   3.45 / 4.00  (back-solved from $56 + 15% hurdle)
+  SCA adjustment:    -0.08  ·  EPP-distance adj -0.10  →  Adj composite 1.57  →  Gap -1.88  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY07 revenue -2.9%, FPL energy sales +1.0%, FPL net income +4.2%, FPL customer accounts +2.0%; Q2 2008 operating margin 8.7% (-816.9bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 17.1x FY08E vs a 13.8x 10-yr median (75th percentile of its own range)  (-0.42 × 25%  =  -0.105)
+    -  Growth vs own history: no Q3 2008 revenue guide, Q2 2008 revenue as reported -8.8% vs a 9.3% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  FY07 year-end cash $0.290B, FY07 free cash flow $-1.43B (net cash provided by operating activities $3,593M less capital expenditures of FPL, independent power investments, nuclear fuel purchases and other capital expenditures ($5,019M) (NE10)), dividend $1.78 a year, issuances of common stock $46M and dividends on common stock $654M in 2007, no repurchases (NE10 cash flows): the dividend is the return  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  FPL energy sales (kWh)               +2.4%     -5.0%   -7.4%  Fewer customers and lower usage cut F…
+  FPL net income                       +2.8%    -16.0%  -18.8%  Rate relief lags costs and lost sales
+  Revenue growth                       -8.8%    -15.0%   -6.2%  Sales, fuel recovery and hedge marks …
+  EPS growth                          -48.5%    -31.0%  +17.5%  Costs, marks and dilution outrun growth
+  Operating margin change           -816.9bp  -840.0bp  -23.1bp  Fuel, O&M and hedge marks outrun revenue
+  Disruption theme: none live for a utility    +2.0/4    +1.0/4  -1.0/4  No disruption theme is live for an el…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$33  (model)  /  $29 (defined)
+  Bear probability (proxy model):  33.0%
+
+  KEY TRIGGER: FPL's energy sales went from -0.6% (Q1 2008) to +2.4% (Q2 2008);
+  the bear case needs a demand and cost squeeze that the operating margin (-816.9bp now)
+  and FPL's earnings (+2.8% now) no longer absorb.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $3.27  (FY2008E: no EPS guide in numbers on a usable basis (the adjusted ranges also remove recurring mark-to-market items), FY07's $3.27 (GAAP) stands)
+  Min viable P/E at panic:          11x  [median of calendar-year P/E lows: 1998 15.8x, 1999 10.5x, 2000 8.4x, 2001 11.2x, 2002 11.5x, 2003 10.7x, 2004 12.3x, 2005 15.4x, 2006 11.8x, 2007 16.5x, 2008 15.3x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $36/share
+  Current $56 vs Updated EPP $36:  +56%  ⚠ far above floor — large drawdown room
+  Bear $29 vs Updated EPP $36:  -19%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  FPL energy sales (kWh)                      -1.0       -3.4   BASE floor (vs +2 now)
+  FPL net income                              -6.0       -8.8   BASE floor (vs +3 now)
+  Revenue growth                              -3.0       +5.8   BASE floor (vs -9 now)
+  EPS growth                                 -13.0      +35.5   BASE floor (vs -48 now)
+  Operating margin change                   -450.0     +366.9   BASE floor (vs -817 now)
+  Disruption theme: none live for a utility             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $3.27 × (1+0.0%)² = $3.27
+  At 13x P/E (conservative):  $43/share
+  + Cumul. dividends (2yr):  +$3.67/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $43  (▼13 from $56)
+  Conservative total return:  -17% over 2yr  = -9%/yr
+
+  0.0% EPS growth is what is left once the premium multiple (17.1x)
+  mean-reverts to 13x. Breakeven at 13x needs FY2010E EPS of $4.02,
+  i.e. 10.9%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $49.95  –  $73.75  (at 25th pct of range)
+  Annual dividend:      $1.78/share  (yield 3.2%)
+  Realized vol (1yr):   28% annualized
+  Beta vs broad market: 0.64
+  1-sigma range (1yr):  $41  –  $71  ($56 ± 28%)
+  2-sigma range (1yr):  $25  –  $87
+  ────────────────────────────────────────────────────────────
+  Bear $29 requires:  ~1.8σ price move  (unusual — requires fundamental break)
+  A utility holding company with a 0.6 beta: the stock is +12% off its September
+  low while FPL's energy sales went from -0.6% (Q1 2008) to +2.4% (Q2 2008).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        2.50  11.7x  $     29    33.0%      2.5%   +30.5pp  EPS -12.6%/yr (worst year FY98-FY07, capped at 0%); P/E to its 10th pct
+  BASE        2.62  13.8x  $     36    50.0%      8.6%   +41.4pp  EPS +-10.4%/yr (Q2 revenue + margin + buyback); P/E at its 10-yr median
+  BULL        3.68  17.1x  $     63    14.3%     30.2%   -15.8pp  EPS +6.1%/yr (FY98-FY07 CAGR); P/E holds its 75th pct
+  XBULL       4.57  19.0x  $     87     2.7%     58.7%   -56.0pp  EPS +18.2%/yr (best 2-yr run FY98-FY07); P/E at its 90th pct
+
+  Proxy EV (2yr): $39  /  Market EV: $74  /  Current: $56
+  Conservative EV (2yr, ④): $43 + $3.67 divs = $46 total value
+  Downside (→ Bear $29): 48.2%   Upside (→ Bull $63): 12.6%   Ratio B 3.84x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $56 the market needs $74 in two years —
+  above the BULL case. That is a market composite of 3.45 against a model
+  read of 1.57: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       3.84x     +56%    -1.88  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     1.71x     +56%    -1.52  OVERVALUED / WATCHLIST
+  Multiples one band cheaper (p5/p25/med/p75)      infx     +56%    -2.18  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          2.88x     +56%    -1.81  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                          5.56x     +56%    -1.99  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             3.84x     +56%    -1.58  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 3.84x     +22%    -1.78  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    3.84x     +56%    -1.64  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 2008 print (late October) — the next read on FPL's energy sales (+2.4% now); no sales guide in numbers to read it against
+  (2) Operating margin — -816.9bp in Q2 2008: fuel and purchased power, O&M, depreciation and hedge marks against revenue
+  (3) The FY08 adjusted EPS outlook (8-K of 2008-09-03) — display only: the adjusted basis also removes recurring mark-to-market items, so FY07's GAAP $3.27 anchors the multiple
+  (4) FPL's net income — +2.8% in Q2 2008 ($217M vs $211M): customers, usage and base rates against O&M and depreciation
+  (5) Capital return at 17x — issuances of common stock $46M and dividends on common stock $654M in 2007, no repurchases (NE10 cash flows): the dividend is the return: management's own read of the multiple
+  ✕ AVOID  |  EPP floor $36  |  ADD below ~$31  |  TRIM above $63
+════════════════════════════════════════════════════════════════════════
+

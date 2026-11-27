@@ -38,6 +38,7 @@ and require byte-identical models. Restores the fact sheet and the price cache a
     python3 retro/tools/firewall.py 2009-01-01 UNH          # the UNH series (UnitedHealth Group) in staging/retrospective
     python3 retro/tools/firewall.py 2009-01-01 CRM          # the CRM series (salesforce.com) in staging/retrospective
     python3 retro/tools/firewall.py 2009-01-01 SCHW         # the SCHW series (The Charles Schwab Corporation) in staging/retrospective
+    python3 retro/tools/firewall.py 2009-01-01 NEE          # the NEE series (FPL Group, FPL) in staging/retrospective
 
 Plants a print, a history vintage, an event per live theme and a company name (UNP: also a guide and a
 dividend; LOW and AAPL: also a guide with every guided field; NKE: a guide in words, and futures orders on the last print before
@@ -204,7 +205,8 @@ OUTDIR = {"ACN": "archive/retrospective/ACN", "UNP": "staging/retrospective/UNP"
           "GOOG": "staging/retrospective/GOOG", "JPM": "staging/retrospective/JPM", "V": "staging/retrospective/V",
           "SPGI": "staging/retrospective/SPGI", "CB": "staging/retrospective/CB",
           "LLY": "staging/retrospective/LLY", "UNH": "staging/retrospective/UNH", "CRM": "staging/retrospective/CRM",
-          "SCHW": "staging/retrospective/SCHW"}[TICKER]
+          "SCHW": "staging/retrospective/SCHW",
+          "NEE": "staging/retrospective/NEE"}[TICKER]
 ARCHIVE = os.path.join(ROOT, OUTDIR)
 BUILDER = os.path.join(ROOT, "retro", f"build_{TICKER.lower()}.py")
 # absurd values for every field the builder reads from a print
@@ -441,7 +443,13 @@ PLANT = {"ACN": dict(quarter="Q9 FY99", revenue_lc=-60, margin_bp=-999, fy_eps_g
                       shares_note="PLANTED", next_print="PLANTED", note="PLANTED",
                       raw=dict(revenue_m=1, revenue_prior_m=99, revenue_prev_q_m=99, expense_m=99, expense_prior_m=1, pretax_m=-99,
                                pretax_prior_m=99, client_assets_b=0.01, client_assets_prior_b=99, dart_k=0.01, dart_prior_k=99,
-                               nna_b=-999))}[TICKER]
+                               nna_b=-999)),
+         "NEE": dict(quarter="Q1 2099", fy=2099, q=1, release="PLANTED", release_time="PLANTED", sales_b=0.01, sales_pct=-60.0,
+                     kwh_pct=-60.0, seg_pct=-60.0, margin=-50.0, margin_prior=50.0, margin_bp=-10000.0, eps_q=0.01, eps_q_prior=9.99,
+                     eps_pct=-99.9, eps_basis="GAAP", eps_gaap=0.01, eps_gaap_prior=9.99, eps_adj=0.01, eps_adj_prior=9.99,
+                     eps_note="PLANTED", diluted_shares_m=1.0, next_print="PLANTED", resources_name="PLANTED",
+                     raw=dict(rev_m=4, rev_prior_m=10, opinc_m=-2, opinc_prior_m=5, seg_m=4, seg_prior_m=10, kwh_m=4, kwh_prior_m=10,
+                              ni_m=1, ni_prior_m=99, fple_m=1, fple_prior_m=99, cust_k=1, cust_prior_k=99))}[TICKER]
 # LOW and AAPL guides carry more fields than UNP's: plant every one the builder reads (NKE's are words only)
 GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -999], margin_def="PLANTED", stores_guide=1,
                            store_opening_m=9999, fy_words="PLANTED",
@@ -455,6 +463,7 @@ GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -99
                             prior_label="PLANTED", prior_sales_m=1, prior_source="V1", yoy_pct=[-50, -40], quote="PLANTED",
                             display="PLANTED"),
                "PEP": dict(display="PLANTED", unused="PLANTED"),
+               "NEE": dict(display="PLANTED", unused="PLANTED"),
                "KMI": dict(display="PLANTED", rev_none=True),
                "XOM": dict(production_quote="PLANTED", note="PLANTED"),
                "F": dict(quote="PLANTED", note="PLANTED"),
@@ -1231,6 +1240,26 @@ try:
         for y in sorted({g["fy"] for g in f.get("eps_guides", []) if g["published"] < cutoff} | {int(cutoff[:4]), int(cutoff[:4]) + 1}):
             f.setdefault("eps_guides", []).append({"fy": y, "published": later, "source": last["source"], "doc": "PLANTED",
                                                    "eps": [0.01, 0.02], "quote": "PLANTED", "note": "PLANTED"})
+    if TICKER == "NEE":    # absurd full-year actuals on the planted print, for the year after the latest vintage before CUTOFF, a later
+                           # vintage whose every text and figure the models quote is planted, and a later display-only guide for every
+                           # year (NEE 2008-2009); the generic plant's guide carries fields the builder refuses, so it is made display-only
+        last["fy_actual"] = {"fy": int(max(k for k in v["eps_normalized"] if k != "2099")) + 1, "fy_label": "FY99", "eps_normalized": 0.01,
+                             "revenue_usd_b": 0.01, "diluted_shares_m": 1.0, "normalization_note": "PLANTED", "margin": -50.0,
+                             "margin_note": "PLANTED", "check_pretax_margin": -50.0, "check_pretax_note": "PLANTED", "tax_rate": 0.99,
+                             "tax_note": "PLANTED", "sales_growth": -60.0, "kwh_pct": -60.0, "seg_pct": -60.0, "customers_k": 1.0,
+                             "customers_pct": -60.0}
+        v.update(business_line="PLANTED", normalization="PLANTED", shares_note="PLANTED", prev_fy_margin_note="PLANTED",
+                 check_pretax_note="PLANTED", tax_note="PLANTED", dividend_note="PLANTED", fcf_note="PLANTED", cash_return_text="PLANTED",
+                 groups=[["PLANTED", 1, -99]], groups_basis="PLANTED", prev_fy_margin=-50.0, dividend_annual=9.99,
+                 prev_fy_customers_pct=-60.0, eps_published={y: later for y in v["eps_normalized"]},
+                 diluted_shares_m={y: 1.0 for y in v["diluted_shares_m"]}, shares_published={y: later for y in v["diluted_shares_m"]})
+        for g in f["guides"]:
+            if g.get("doc") == "PLANTED":
+                for k in ("eps_guide", "rev_guide", "rev_guide_label", "volume_guide"):
+                    g.pop(k, None)
+        for x in f.get("listings", []):    # the planted later listing names a symbol, as the encoded one does
+            if x.get("note") == "PLANTED":
+                x["symbol"] = "PLANTED"
     if TICKER == "LMT":    # absurd full-year actuals on the planted print, for the year after the latest vintage before CUTOFF, and a later
                            # vintage whose every text and figure the models quote is planted (LMT 2008-2009)
         v0 = max((x for x in f["history_vintages"] if x["published"] < cutoff), key=lambda x: x["published"])
