@@ -29561,7 +29561,8 @@ retrospective/index.json` gains no row):
 - **Firewall** (the gate's version in `firewall.py`'s CHTR branch, extended: a later Q4 release with a positive year, and a planted
   one-off test that would exclude every year of every later vintage, beside the planted later vintage and listing): at 2014-03-01,
   2015-02-05, 2015-02-24, 2016-02-04, 2016-02-10, 2016-05-18, 2017-02-16, 2017-06-30 and 2018-01-01 no refusal of a date before the cutoff
-  changes and every control date after it does; all 9 pass, and so do 2008-02-27, 2010-03-01 and 2014-01-01 with the extended plants.
+  changes and every control date after it does; all 9 pass, and so do 2008-02-27, 2010-03-01 and 2014-01-01 with the extended plants
+  (run again on the committed fact sheet, gate and README: 12 of 12 pass, 0 files changed).
 
 Judgement calls that could carry hindsight (the builder knows what Charter's earnings and stock did after 2016):
 - FY2016 excluded by the mirror of the AAPL FY2002 test: the rule existed before, and the margin is wide on every reading, but it is the
