@@ -7,8 +7,8 @@ They are hypotheses to test on other tickers or periods. Tables: `python3 retro/
 
 ## Totals (153 dates, 2019-02-01 to 2021-12-31; every date has its 2-year horizon)
 
-- **Class RICH 77, CHEAP 66, FAIR 10.** By the 2-year call check, the RICH calls held on 30 of 77 (the 26 RICH dates of August
-  2020 to January 2021 and the four of January 2020) and failed on the 47 of 2019, when the stock rose a median +76% in two years
+- **Class RICH 77, CHEAP 66, FAIR 10.** By the 2-year call check, the RICH calls held on 30 of 77 (the 25 RICH dates of 2020-07-31
+  to 2021-01-22, the four of January 2020 and 2019-12-13) and failed on the other 47 of 2019, when the stock rose a median +76% in two years
   (46 of 48 cleared the 15%/yr hurdle). The CHEAP calls held on 1 of 66: the 17 of 2020 returned a median +10.7% in two years, the 49
   from the Q4 2020 print a median -44.5% (none cleared the hurdle or beat SPY; 3-year returns -37% to -62%). FAIR (10) returned -7.5%.
 - **Scenario landing at two years:** XBULL 52 (2019 and January 2020), BASE 28, BEAR 73 (from the Q2 2020 print on).
