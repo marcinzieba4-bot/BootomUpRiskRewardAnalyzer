@@ -28224,6 +28224,8 @@ Judgement calls that could carry hindsight:
 - the parts of the filings listed above as not read: a number guided only on a call or in a presentation would be missed, though every
   release and every Item 7.01 8-K was read.
 
+The hindsight results for 2014-2017 are in `staging/retrospective/NEE/FINDINGS.md` ("2014-2017"): hypotheses, never inputs.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
