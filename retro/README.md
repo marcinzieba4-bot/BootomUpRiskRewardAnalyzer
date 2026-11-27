@@ -26931,6 +26931,9 @@ Controls and checks (before any outcome):
   misses). The $166.0M residual is checked against its own filing.
 - **Year and term check:** no 2018-2021 model prints a year after its date, a later accession, or a later product or acquisition name.
 - **Regression:** the 523 models of 2008-2017 rebuild byte for byte.
+- **Firewall.** It was run after the build, validation outputs and README section were committed and pushed, before any 2018-2021
+  outcome. It passes at all 18 cutoffs above, on its first run: 0 files changed and no planted text, 523 to 732 dates each. The cutoffs
+  are 2018-01-01, every 10-Q and 10-K date of the range, and 2022-01-01.
 
 Seen in the build (method behaviour, not tuned). The class follows the last full year's GAAP EPS, which swings from $0.15 to $4.38:
 
@@ -26964,6 +26967,9 @@ Judgement calls that could carry hindsight, or limit the batch:
 - **The same-session batch:** the 2013-2017 outcomes, through 2020, were seen before these encodings were chosen.
 - **Stand-ins and derivations:** total revenues for subscription and support from Q2 FY19, the pre-606 seam in Q1-Q3 FY19's unearned
   revenue, Q4 FY21 unchecked, and the two re-accepted filings dated from their filing dates.
+
+The hindsight results for 2018-2021 are in `staging/retrospective/CRM/FINDINGS.md`, computed after the firewall result was pushed:
+hypotheses, never inputs, and labels of the reduced information set.
 
 ## SCHW (The Charles Schwab Corporation): the thirty-fourth ticker, in staging, 2008-2009
 

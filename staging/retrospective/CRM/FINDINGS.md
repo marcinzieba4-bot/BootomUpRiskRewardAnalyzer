@@ -1,9 +1,11 @@
 # CRM retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the CRM weekly dates: 523, 105 from 2008-01-04 to 2009-12-31, 157 from 2010-01-08 to 2012-12-31 and
-261 from 2013-01-04 to 2017-12-29, all salesforce.com, inc. (NYSE: CRM). The 2013-2017 dates are a reduced-data batch (SEC XBRL company
-facts only, no earnings releases or guidance: retro/README.md, "CRM 2013-2017"). They label a different information set from 2008-2012
-and are kept apart below. They were scored only after their build, validation outputs, README section and firewall result were
+Patterns seen in `outcome.json` for the CRM weekly dates: 732, 105 from 2008-01-04 to 2009-12-31, 157 from 2010-01-08 to 2012-12-31,
+261 from 2013-01-04 to 2017-12-29 and 209 from 2018-01-05 to 2021-12-31, all salesforce.com, inc. (NYSE: CRM). The 2013-2021 dates are
+reduced-data batches (SEC XBRL company facts only, no earnings releases or guidance: retro/README.md, "CRM 2013-2017" and "CRM
+2018-2021"). They label a different information set from 2008-2012 and are kept apart below. The 2018-2021 batch was decided in the
+session that scored 2013-2017 and was scored only after its build, validation outputs, README section and firewall result were
+committed and pushed (0f5faa1, 07a406b, 079ad0f, a0f385c), on 2026-11-27. They were scored only after their build, validation outputs, README section and firewall result were
 committed and pushed (a63ef98, 52a4ebe, 3659fb8, 48598de), on 2026-11-27, in a session that had not opened this file or any CRM
 outcome before then. They are **labels and hypotheses**: never feed them back into the method or the fact sheet. The
 2010-2012 batch was decided in the session that scored 2008-2009 (disclosed in retro/README.md, "CRM 2010-2012") and scored only after
@@ -306,3 +308,103 @@ Across the 261 dates of 2013-2017 (the reduced-data batch):
   `profile_drift` (hindsight): DURABLE, risk 2 on every date, against today's 2026 AI_EXPOSED (GENAI), risk 3, as before.
 - **Reduced data, read with care.** These labels score a model that could not see salesforce.com's guidance or 10-K text. Patterns here
   are hypotheses about that information set, and should be retested when the batch is rebuilt from the filings.
+
+## 2018 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID (2018-01-05 to 2018-12-28) | 52 | +53.7% | +16.6% to +111.1% | 42 | 52 | +29.2% | 0 |
+| FY2018E: guide not in the sheet, FY17's $0.26 stands (2018-01-05 to 2018-03-09) | 10 | +63.5% | +18.7% to +73.6% | 9 | 10 | +41.0% | 0 |
+| FY2019E: guide not in the sheet, FY18's $0.17 stands (2018-03-13 to 2018-12-28) | 42 | +39.8% | +16.6% to +111.1% | 33 | 42 | +24.5% | 0 |
+| latest print Q3 FY18 (2018-01-05 to 2018-03-09) | 10 | +63.5% | +18.7% to +73.6% | 9 | 10 | +41.0% | 0 |
+| latest print Q4 FY18 (2018-03-13 to 2018-05-25) | 11 | +29.1% | +16.6% to +39.8% | 4 | 11 | +29.2% | 0 |
+| latest print Q1 FY19 (2018-06-01 to 2018-08-31) | 14 | +35.5% | +27.6% to +77.6% | 12 | 14 | +15.6% | 0 |
+| latest print Q2 FY19 (2018-09-05 to 2018-11-23) | 12 | +78.6% | +55.1% to +111.1% | 12 | 12 | +31.6% | 0 |
+| latest print Q3 FY19 (2018-11-30 to 2018-12-28) | 5 | +67.5% | +61.5% to +84.3% | 5 | 5 | +44.7% | 0 |
+
+
+
+- **RICH held on 0 of 52.** Every entry ($106.98-159.03, 411-968x FY17's $0.26 and then FY18's $0.17, the 86th-100th percentile)
+  beat SPY over two years (+16.6% to +111.1%, by 11.0-71.1pp) and over three years 51 of 52 did (+61.5% to +138.8%).
+
+## 2019 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY (2019-03-08 to 2019-12-27) | 43 | +61.2% | +31.8% to +102.4% | 42 | 31 | +49.7% | 42 |
+| class RICH, legacy tier AVOID (2019-01-04 to 2019-03-01) | 9 | +49.4% | +32.2% to +59.7% | 9 | 6 | +31.0% | 0 |
+| FY2019E: guide not in the sheet, FY18's $0.17 stands (2019-01-04 to 2019-03-01) | 9 | +49.4% | +32.2% to +59.7% | 9 | 6 | +31.0% | 0 |
+| FY2020E: guide not in the sheet, FY19's $1.43 stands (2019-03-08 to 2019-12-27) | 43 | +61.2% | +31.8% to +102.4% | 42 | 31 | +49.7% | 42 |
+| latest print Q3 FY19 (2019-01-04 to 2019-03-01) | 9 | +49.4% | +32.2% to +59.7% | 9 | 6 | +31.0% | 0 |
+| latest print Q4 FY19 (2019-03-08 to 2019-05-31) | 13 | +38.9% | +31.8% to +57.3% | 12 | 2 | +34.7% | 12 |
+| latest print Q1 FY20 (2019-06-07 to 2019-08-23) | 12 | +61.2% | +47.7% to +73.9% | 12 | 11 | +50.5% | 12 |
+| latest print Q2 FY20 (2019-08-27 to 2019-11-29) | 14 | +83.3% | +66.1% to +102.4% | 14 | 14 | +54.7% | 14 |
+| latest print Q3 FY20 (2019-12-06 to 2019-12-27) | 4 | +63.8% | +50.2% to +64.9% | 4 | 4 | +52.6% | 4 |
+
+
+
+- **CHEAP held on 42 of 43** from the FY2019 10-K (2019-03-08), on FY19's $1.43 (100-133x, the 16th-41st percentile). They returned
+  +31.8% to +102.4% over two years. The one miss, 2019-03-15, returned +31.8% against the 32.2% hurdle and lagged SPY by 12.7pp.
+- **The CHEAP calls held on the two-year horizon only.** Over three years none of the 43 beat SPY or cleared the 52.1% hurdle (-21.9%
+  to +39.7%): the horizon ends in 2022, after the 2021 peak.
+- **The 9 RICH dates before the 10-K** (FY18's $0.17) returned +32.2% to +59.7%; none held.
+
+## 2020 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY (2020-01-03 to 2020-02-28) | 9 | +22.5% | +3.9% to +53.7% | 1 | 1 | +36.1% | 1 |
+| class RICH, legacy tier AVOID (2020-03-06 to 2020-12-31) | 44 | -11.4% | -46.3% to +58.0% | 4 | 0 | +16.0% | 40 |
+| FY2020E: guide not in the sheet, FY19's $1.43 stands (2020-01-03 to 2020-02-28) | 9 | +22.5% | +3.9% to +53.7% | 1 | 1 | +36.1% | 1 |
+| FY2021E: guide not in the sheet, FY20's $0.15 stands (2020-03-06 to 2020-12-31) | 44 | -11.4% | -46.3% to +58.0% | 4 | 0 | +16.0% | 40 |
+| latest print Q3 FY20 (2020-01-03 to 2020-02-28) | 9 | +22.5% | +3.9% to +53.7% | 1 | 1 | +36.1% | 1 |
+| latest print Q4 FY20 (2020-03-06 to 2020-05-29) | 13 | +16.5% | -10.2% to +58.0% | 4 | 0 | +55.0% | 9 |
+| latest print Q1 FY21 (2020-06-03 to 2020-08-21) | 12 | -5.4% | -12.7% to +5.7% | 0 | 0 | +20.9% | 12 |
+| latest print Q2 FY21 (2020-08-28 to 2020-11-27) | 14 | -39.1% | -46.3% to -29.8% | 0 | 0 | -18.4% | 14 |
+| latest print Q3 FY21 (2020-12-04 to 2020-12-31) | 5 | -41.1% | -43.6% to -36.0% | 0 | 0 | -20.4% | 5 |
+
+
+
+- **The 9 CHEAP dates of January-February 2020** (FY19's $1.43, $166.17-189.95, the 39th-41st percentile) held on 1. They returned
+  +3.9% to +53.7% over two years and lagged SPY on 8, by up to 29.8pp. Over three years all 9 lost (-18.9% to -4.0%).
+- **RICH held on 40 of 44 from the FY2020 10-K** (FY20's $0.15, 895-1,807x). The two-year return was -46.3% to +58.0%, median
+  -11.4%, and none beat SPY. The entries from the Q2 FY21 10-Q (2020-08-28, $222.42-271.10, the 94th-100th percentile) returned -46.3%
+  to -29.8% over two years and lagged SPY by 45.9-58.3pp.
+
+## 2021 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY (2021-03-19 to 2021-12-31) | 42 | -13.9% | -34.4% to +5.2% | 0 | 2 | -29.4% | 2 |
+| class RICH, legacy tier AVOID (2021-01-08 to 2021-03-12) | 10 | -28.4% | -36.7% to -11.5% | 0 | 0 | -22.7% | 10 |
+| FY2021E: guide not in the sheet, FY20's $0.15 stands (2021-01-08 to 2021-03-12) | 10 | -28.4% | -36.7% to -11.5% | 0 | 0 | -22.7% | 10 |
+| FY2022E: guide not in the sheet, FY21's $4.38 stands (2021-03-19 to 2021-12-31) | 42 | -13.9% | -34.4% to +5.2% | 0 | 2 | -29.4% | 2 |
+| latest print Q3 FY21 (2021-01-08 to 2021-03-12) | 10 | -28.4% | -36.7% to -11.5% | 0 | 0 | -22.7% | 10 |
+| latest print Q4 FY21 (2021-03-19 to 2021-05-28) | 11 | -9.5% | -16.7% to -5.5% | 0 | 0 | -24.7% | 0 |
+| latest print Q1 FY22 (2021-06-03 to 2021-08-20) | 12 | -12.8% | -20.0% to -3.8% | 0 | 0 | -29.6% | 0 |
+| latest print Q2 FY22 (2021-08-27 to 2021-11-26) | 14 | -26.3% | -34.4% to -12.6% | 0 | 0 | -33.3% | 0 |
+| latest print Q3 FY22 (2021-12-03 to 2021-12-31) | 5 | +3.4% | -5.7% to +5.2% | 0 | 2 | -21.3% | 2 |
+
+- **RICH held on all 10 dates to the FY2021 10-K** (FY20's $0.15), which returned -36.7% to -11.5% over two years.
+- **CHEAP held on 2 of 42 from it** (FY21's $4.38, 48-70x, the 11th-31st percentile, the price 13-41% under the EPP floor). They returned
+  -34.4% to +5.2% over two years, and none cleared the hurdle. The two that held, 2021-12-23 and 2021-12-31, beat SPY by 1.8pp and 0.7pp.
+  Over three years 8 of 42 beat SPY.
+
+Across the 209 dates of 2018-2021 (the second reduced-data batch):
+- **CHEAP held on 45 of 94, RICH on 50 of 115.** Every class run is one stand-in year's GAAP EPS, and the run's result follows it:
+  - FY17-FY18's $0.26 and $0.17 (RICH): 0 of 61 held;
+  - FY19's $1.43 (CHEAP): 43 of 52;
+  - FY20's $0.15 (RICH): 50 of 54;
+  - FY21's $4.38 (CHEAP): 2 of 42.
+- **The P/E-percentile ordering of 2010-2017 did not carry over.** The rank correlation between the AS_OF percentile and the two-year
+  return is +0.02, and +0.37 over three years, against -0.60 and -0.46 in 2013-2017. With the stand-in EPS moving from $0.15 to $4.38,
+  the percentile ranks the stand-in, not the price. One price path, overlapping horizons.
+- **The batch's largest call met its outcome.** The 42 CHEAP dates of 2021 rest on FY2021 at GAAP, $4.38 with $2,170M of investment
+  gains and a $1,511M tax benefit. They held on 2. The point-in-time sensitivity (the README) shows the mirror-test reading, FY2021
+  excluded, makes all 42 RICH, which would have held on most. Hypothesis, not a rule: a GAAP year lifted by investment gains and a
+  tax benefit, used as a stand-in, reads CHEAP when the price does not follow it. Test it across tickers on years whose listed
+  one-offs are known, never by excluding FY2021 here after seeing this; changing the encoding needs the releases or a new method version.
+- **Where the two-year price landed:** CHEAP dates in the BEAR band on 48 and BASE on 46; RICH dates in BULL on 63, XBULL on 51 and
+  BASE on 1.
+  `profile_drift` (hindsight): DURABLE, risk 2 on every date, against today's 2026 AI_EXPOSED (GENAI), risk 3, as before.
+- **Reduced data, read with care,** as for 2013-2017: these labels score a model without salesforce.com's guidance or 10-K text.
