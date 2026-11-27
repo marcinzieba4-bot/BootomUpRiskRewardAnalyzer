@@ -23,7 +23,7 @@ touching either directory.
   outcomes or findings enters another's models. UNP (2008-2026 so far), LOW (2008-2026 so far), AAPL (2008-2026 so far),
   NKE (2008-2026 so far), AVGO (from its 2009-08-06 listing to 2026-10-30 so far), PEP (2008 to 2026-10-30 so far), MSFT
   (2008 to 2026-10-30 so far), XOM (2008 to 2026-10-30 so far), SHW (2008 to 2026-11-06 so far), WMT (2008 to 2026-11-06 so far), RCL (2008 to 2026-11-06 so far), MAR (2008 to 2026-11-03 so far), BKR (2008 to 2017-06-30, then 2019-02-01 to 2026-11-06 so far), PFE (2008 to 2026-11-04 so far), CMCSA (2008 to 2026-11-06 so far), CAT (2008 to 2026-11-06 so far), BMY (2008 to 2026-11-06 so far), NVDA (2008 to 2026-11-06 so far), F (2008-01-04 to 2026-11-06 so far; 2022-01-07 onward was built first at the owner's request, and dates before 2022 are an early era with its
-  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far), SPGI (2008-01-04 to 2026-11-20 so far), CB (2008-01-04 to 2026-11-20 so far), LLY (2008-01-04 to 2026-11-20 so far), UNH (2008-01-04 to 2026-11-20 so far) and CRM (2008-01-04 to 2021-12-31 so far) sit in `staging/retrospective/` until the owner adds
+  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far), SPGI (2008-01-04 to 2026-11-20 so far), CB (2008-01-04 to 2026-11-20 so far), LLY (2008-01-04 to 2026-11-20 so far), UNH (2008-01-04 to 2026-11-20 so far) and CRM (2008-01-04 to 2026-11-20 so far) sit in `staging/retrospective/` until the owner adds
   them to the archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM", "SHW", "WMT", "RCL", "MAR", "BKR", "PFE", "CMCSA", "CAT",
   "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG", "JPM", "V", "SPGI", "CB", "LLY", "UNH", "CRM"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py`, `mu_signal_model.py`, `v_signal_model.py`, `spgi_signal_model.py` and `lly_signal_model.py` (other branches) files
   and today's profiles in `data/business_profiles.json` (NVDA's, SO's, V's, SPGI's, CB's, LLY's, UNH's and CRM's included) are 2026 analyses: never inputs to a retrospective. AVGO did not trade
@@ -416,5 +416,15 @@ touching either directory.
   and CRYPTO out of scope; the class follows the last full year's EPS: RICH 115, CHEAP 94 (2019-03-08 to 2020-02-28 on FY19's $1.43,
   2021-03-19 on on FY21's $4.38); FY2021 excluded by the mirror test moves all 42 CHEAP dates of 2021 to RICH, the batch's largest
   call; decided in the session that scored 2013-2017, disclosed (retro/README.md, "CRM 2018-2021").
+  From 2022 CRM is **full data again** (`reduced_data.full_from` 2022-01-01: SEC served the documents to a generic client name; facts
+  marked `full_data`, CR77-CR108, are read only from that day, so 2008-2021 is unchanged): the releases are the prints (subscription and
+  support, unearned revenue from the release's roll-forward); the decade's years face the AAPL FY2002 test and its mirror on the items
+  the filings list, so FY2017 and FY2019 (valuation allowance releases), FY2020 (the $166M one-time charge), FY2021 (the IPO gains and the
+  $2.0B tax benefit), FY2022 (the strategic investments' $0.93) and FY2023 (restructuring) are excluded and stay gaps, FY2018 and
+  FY2024-FY2026 kept; the GAAP EPS guide midpoint; the fiscal-year GAAP operating margin guide is a guided step (new for CRM, the ACN
+  rule); dividends from 2024-02-29 ($0.40, $0.416, $0.44 a quarter); Salesforce, Inc. from 2022-04-04; GENAI on the watch list from the
+  FY2025 10-K (its competitor list names AI vendors; the MSFT and GOOG rule, text only), GLP1 out of scope; RICH 34, FAIR 13 (2022),
+  CHEAP 208 (2022-12-02 on); the one-off readings move up to 47 classes, all before 2023-03-03, the margin step 38; built in a new session
+  without opening the 2008-2021 outcomes or findings (retro/README.md, "CRM 2022-2026").
 - **Never use the owner's personal email** in request headers to external
   services (SEC asks for a contact in the User-Agent).
