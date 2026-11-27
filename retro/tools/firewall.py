@@ -1255,7 +1255,9 @@ try:
                  check_pretax_note="PLANTED", tax_note="PLANTED", dividend_note="PLANTED", fcf_note="PLANTED", cash_return_text="PLANTED",
                  groups=[["PLANTED", 1, -99]], groups_basis="PLANTED", prev_fy_margin=-50.0, dividend_annual=9.99,
                  prev_fy_customers_pct=-60.0, eps_published={y: later for y in v["eps_normalized"]},
-                 diluted_shares_m={y: 1.0 for y in v["diluted_shares_m"]}, shares_published={y: later for y in v["diluted_shares_m"]})
+                 diluted_shares_m={y: 1.0 for y in v["diluted_shares_m"]}, shares_published={y: later for y in v["diluted_shares_m"]},
+                 reserves_quote="PLANTED", transition_quote="PLANTED",      # the energy-transition watch-list words (NEE 2014-2017)
+                 franchise_note="PLANTED")                                  # and the franchise line's note (NEE 2014-2017)
         for g in f["guides"]:
             if g.get("doc") == "PLANTED":
                 for k in ("eps_guide", "rev_guide", "rev_guide_label", "volume_guide"):

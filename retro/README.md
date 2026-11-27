@@ -28259,6 +28259,164 @@ Judgement calls that could carry hindsight:
 
 The hindsight results for 2010-2013 are in `staging/retrospective/NEE/FINDINGS.md` ("2010-2013"): hypotheses, never inputs.
 
+### NEE 2014-2017: the FY2013-FY2016 vintages, FY2013's discontinued gain kept, three Friday prints, ENERGY_TRANSITION on the watch list
+
+208 weekly dates, 2014-01-10 to 2017-12-29 (51, 53, 52, 52; the week of 2014-01-03 is 2013-12-31's ISO week, already built), added to the
+314 of 2008-2013 at the owner's request ("do retrospective analysis for NEE, 2014-2017. same rules as before"), on the same fact sheet,
+builder, engine, method (r2) and 1997-2006 rule-T thresholds. **Built in a new session without opening the 2008-2013 outcomes or findings**
+(no `outcome.json`, `FINDINGS.md` or `SERIES.md` of NEE was read before the 2014-2017 outcomes below were computed). The coordinating
+session's branch (CRM 2008-2026, SCHW 2008-2017, NEE 2008-2013) is the base; nothing else was merged in. A parallel SCHW session changes
+only its own entries in the shared files.
+
+```bash
+python3 retro/tools/edgar.py fetch 753308 <dir> --from 2014-01-01 --to 2017-12-31 --forms 8-K 8-K/A 10-K 10-K/A
+python3 -I retro/generators/nee/gen_nee_1417.py --filings <dir>            # appends NE66-NE92; asserts every earlier fact unchanged
+python3 -I retro/tools/verbatim.py <dir>/checklist_nee_1417.json            # 830/830
+python3 retro/build_nee.py --weekly 2014-01-06 2017-12-31                   # 208 dates, 2014-01-10 .. 2017-12-29
+for d in staging/retrospective/NEE/201[4-7]-*/; do python3 retro/retro_tool.py --archive staging/retrospective run "$d"; done
+python3 retro/generators/nee/controls_nee_1417.py                           # 48 controls
+python3 retro/generators/nee/sens_nee_1417.py <scratch>                     # the sensitivity below
+for c in 2014-01-28 2014-02-24 2015-01-27 2015-02-23 2015-12-12 2016-01-28 2016-02-22 2017-01-27 2017-02-23 2017-04-21 \
+         2018-01-01; do python3 retro/tools/firewall.py $c NEE; done
+```
+
+**A full-data batch.** `www.sec.gov` served every document to a plain client name (no contact address). Read, by the session's model
+directly with no delegated transcription: the sixteen earnings releases of Q4 2013 to Q3 2017 (8-K exhibits 99: the segment statements of
+income for the quarter, the year-ago quarter and, in Q4, the twelve months; the reconciliations to adjusted earnings; the FPL statistics
+and the outlook paragraphs); the selected data, the NEE and FPL statements of income, the cash flow statement, the segment note, Items 1,
+1A and 5 of the FY2013-FY2016 10-Ks; the diluted share counts of the FY2006-FY2009 10-Ks' statements of income (each new vintage's first
+year, the earlier vintages' encoding: 2004 from the FY2006 10-K, `NE9`, to 2007 from the FY2009 10-K, `NE32`); and every 8-K of January
+2014 to December 2017 by its items and text. **Not read:** the 10-Qs, the proxy statements, the investor presentations and call transcripts
+(not filed), and the merger exhibits beyond their outlook sentences. The 2008-2013 generator was never committed, so the 2014-2017 facts are
+appended by a new committed generator, `retro/generators/nee/gen_nee_1417.py`, which reads each figure from its own row by label under
+an anchored heading, asserts the FPL, NEER and Corporate and Other columns sum to NextEra Energy's total (the segment note's three years
+too), asserts each Q4 release's full year equals the next 10-K's, computes every rate, and asserts every quotation in its own filing; the
+830 strings were checked with `verbatim.py` (830/830). Source ids `NE66`-`NE69` (the FY2013-FY2016 10-Ks), `NE70`-`NE85` (the releases)
+and `NE86`-`NE92` (the guidance 8-Ks). Decided on 2026-11-27, before any 2014-2017 model was built or outcome computed:
+
+- **Release timing.** Every earnings 8-K of Q4 2013 to Q3 2017 was accepted before the open (07:31-07:56 ET). Three came on a Friday
+  (2014-10-31, 2017-01-27, 2017-04-21) and date their own weeks ("day of the print, public before the open", the 2010-2013 rule); the
+  Q2 2015 release came on Monday 2015-08-03. The 10-Ks: FY2013 accepted 2014-02-24 11:06 ET (dated that day), FY2014 2015-02-20 16:20 ET
+  (2015-02-23), FY2015 2016-02-19 17:37 ET (2016-02-22), FY2016 2017-02-23 15:57 ET (that day). A Q4 print extends the history to its
+  10-K: FY2013 on 2014-01-29 to 2014-02-21, FY2014 on 2015-01-28 to 2015-02-20, FY2015 on 2016-01-29 to 2016-02-19, FY2016 on 2017-01-27
+  to 2017-02-17 (4 dates each).
+- **EPS: GAAP diluted EPS before the cumulative effect of accounting changes, each year from the latest 10-K that reports it** (the
+  2008-2009 rule): FY13 $4.47, FY14 $5.60, FY15 $6.06, FY16 $6.25, on net income attributable to NEE (NextEra Energy Partners' public
+  units are noncontrolling interests from the Q3 2014 release). The company's adjusted figures still remove the mark-to-market effect of
+  non-qualifying hedges (and OTTI, the Spain solar results, merger-related expenses, the Maine and Texas asset gains, the FiberNet gain),
+  so GAAP stands (the PEP 2008 core rule). No year is excluded: no year's listed items come near half its income.
+- **FY2013's discontinued operations: the net income figure, $4.47** (the batch's EPS call). The Q4 2013 release prints only EPS on net
+  income ($4.47, with the Maine hydro gain's $0.44 a share); the FY2013 10-K prints both "Continuing operations" ($4.03) and "Net income"
+  ($4.47), and the FY2014 10-K restates continuing operations to $3.93 when the Maine fossil loss moves back from discontinued operations
+  (net income stays $4.47). NEE's own rule is EPS before the cumulative effect of accounting changes, a line that discontinued operations
+  sit above, and the 2010-2013 batch kept the Q1 2013 print's total for the same gain; so $4.47 stands in every vintage and the Q4 print,
+  and the continuing figures are in the vintage's normalization note (display only). Other tickers read EPS from continuing operations
+  (SCHW, LLY, LMT, JPM, GOOG); that reading is measured below (5 classes).
+- **No guide gives a field.** Every expectation of 2014-2017 is adjusted earnings per share (the PEP 2008 core rule, as before): FY2014
+  $5.05-5.45, then $5.15-5.35 from Q2 2014; FY2015 $5.40-5.70 ("the upper half" from Q3 2015); FY2016 $5.85-6.35; FY2017 $6.35-6.85,
+  including the Item 7.01 8-Ks that restate them (2014-06-19, 2014-09-02, 2015-03-11, 2015-03-31, 2015-06-16, 2015-09-28, 2016-03-02).
+  Each year's records run from the print that makes it current (the previous Q4 release; FY2015 also from the Q3 2014 release) to its own
+  Q3 release; the later-year ranges and the 5-7%, then 6-8% growth targets through 2016, 2018 and 2020 concern later years and are not
+  quoted (one quote per fiscal year, each a clause naming only its year). So the last full year's GAAP EPS stands: FY12's $4.56 to
+  2014-01-24, FY13's $4.47 from 2014-01-29, FY14's $5.60 from 2015-01-28, FY15's $6.06 from 2016-01-29, FY16's $6.25 from 2017-01-27.
+  BASE is still the latest quarter's revenue growth as reported; no filing guides revenue or a margin in numbers.
+- **Dividends** from each 10-K's sentence ("In February 2014, NEE announced that it would increase its quarterly dividend on its common
+  stock from $0.66 per share to $0.725 per share.", then $0.77, $0.87 and $0.9825); the Q2 2015 release's declaration repeats $0.77 and
+  the HEI merger 8-K's "most recently declared" $0.725, neither a new rate, so no `dividends` fact is added.
+- **Prints as each release shows them.** The Q1 2014 release recasts Q1 2013 (the Maine fossil loss back in continuing operations; EPS
+  $0.64 with the hydro gain); each print's year-ago quarter is the release's own. NEER's line is its net income attributable to NEE.
+- **FY2016's franchise line.** The FY2016 10-K's selected data no longer tabulate FPL's energy sales or customer accounts, so the FY2016
+  vintage takes them from the Q4 2016 release (display only, `franchise_note`) and FPL's net income from FPL's statement of income.
+- **ENERGY_TRANSITION on the watch list from its live date** (2015-12-12, the first weekly date 2015-12-18). Its scope is "decarbonisation
+  strands oil, gas and coal reserves and refining", and the FY2014-FY2016 10-Ks say "NEER's oil and gas production assets, representing
+  approximately 6% of NEER's depreciable electric plant ... are accounted for under the successful efforts method." (7% and 8% in the
+  FY2015 and FY2016 10-Ks; FPL's Woodford Shale gas wells are also described), and of greenhouse gas limits: "While NEE's and FPL's
+  electric generat[ing/ion] units emit greenhouse gases at a lower rate of emissions than most of the U.S. electric generation sector, the
+  results of operations of NEE and FPL could be materially adversely affected to the extent that new federal or state laws or regulations
+  impose any new greenhouse gas emission limits." A holder of reserves, company-acknowledged, no market read: the XOM and SO case, not BKR's
+  or CAT's, so DURABLE, risk 2, stands and the watch list quotes the vintage's 10-K (`reserves_quote`, `transition_quote`). No factor pair
+  is added (the composite sums the factors), so only text changes; the theme's market pricing is dated 2020-08-31, after the range. The
+  "why" names the other live themes' scopes (OFFSHORE, CLOUD, ECOMMERCE from 2015-01-01, STREAMING from 2015-08-04), none of which names an
+  electric utility. No FY2013-FY2016 10-K uses the word cyclical (asserted).
+- **Adds nothing:** the Hawaiian Electric merger 8-Ks (2014-12-03, its termination 2016-07-18) and the Oncor and EFH 8-Ks (2016-07-29,
+  2016-10-31: "at or near the top end" of the 6-8% growth target, a later-year bound); the NextEra Energy Partners distribution outlook
+  (2014-10-16); the TRC tender offer statement (2014-01-31); FPL's rate case notice (2016-01-15); and the financing, equity unit, forward
+  sale, officer, compensation, bylaw and vote 8-Ks. None changes a guided number for the current year.
+
+Builder changes (each acts only on facts or dates the earlier models do not have; the 314 dates of 2008-2013 rebuild byte-identical): the
+refusal of dates from ENERGY_TRANSITION's live date becomes the watch-list encoding above; the franchise line shows a vintage's
+`franchise_note`. The firewall's NEE plant also plants the two transition quotes and the franchise note.
+
+Controls and checks (before any outcome):
+- **`retro_tool run` passes on all 208 dates, with no warning.**
+- **Controls** (`controls_nee_1417.py`: the generic `controls.py` alters a print's EPS alone, which the builder's re-derivation check
+  refuses, so each print's energy sales are altered and the rate re-derived, as in 2008-2013): each print, each Q4 print's full-year revenue,
+  each vintage's last-year revenue and each guide's quoted text: 48 controls, none changes a model dated before its publication; 47 change
+  the first weekly date on or after it and 1 is inert (the FY2015 guide of the Q3 2014 release, superseded by the Q4 2014 release before
+  FY2015 is current).
+- **Leak scan** (`leak_scan.py NEE --from 2014-01-01`): 0 hits in 58,614 (model, later token) pairs after dropping 17,767 carried tokens;
+  the latest print's token appears in each of the 208 models. Over all 522 dates it reports 4 hits, all in the byte-identical 2008-01-04
+  to 2008-01-25 models: their computed `FY_REVENUE_B = 15.32` (FY06's $15.71B times BASE) matches the rounded FY2010 revenue ($15.317B,
+  first published 2011-01-25), a coincidence of figures, read and not a leak.
+- **Forward references:** 0 over the 71 facts of 2014-2017 (over all 235, the 9 the tool lists are 2008-2013 method words, "the PEP 2008
+  core rule", and the listing notes, unchanged). **Self-text scan:** 0 misses of 859 tokens over 71 facts, against the 90 dated filings.
+- **Regression:** no shared code changed beyond the firewall's NEE plant; the 314 dates of 2008-2013 rebuild byte-identical.
+- **Firewall** (run after the build, validation outputs and README section were committed and pushed, before any 2014-2017 outcome):
+  it passes at all 11 cutoffs above (each print and 10-K date that changes the anchor or the vintage, the FY2017 Friday print,
+  ENERGY_TRANSITION's live date and 2018-01-01: 317 to 522 dates each, the 2008-2013 dates included), 0 files changed and no planted text,
+  with the 2008-2013 plant (a later print with its full-year actuals, display-only guides, a vintage whose texts, figures and transition
+  quotes are planted, a dividend, a split, a listing symbol, a company name and prices from the cutoff multiplied by 10).
+
+Seen in the build (method behaviour, not tuned):
+- **Totals: RICH 189, CHEAP 13, FAIR 6.** 2014: RICH 51. 2015: RICH 34, CHEAP 13, FAIR 6. 2016: RICH 52. 2017: RICH 52. Legacy tiers: AVOID
+  188, ACCUMULATE 10, WATCHLIST 8, BUY 2. Robustness: all eight variants agree on the class on 161 dates, seven on 29, six on 16, five on 2.
+- **January 2014 on FY12's $4.56** (3 dates): 19.1-19.2x, the 95th-96th percentile of a 14.1x median: RICH.
+- **FY13's $4.47** (2014-01-29 to 2015-01-23, 52 dates): RICH and AVOID on all 52; $88.77-109.48 is 19.9-24.5x, the 94th-100th percentile
+  of a 14.2-15.1x median, against a 12x floor ($53.64); Ratio B infinite (the price above the BULL case) on all 52.
+- **FY14's $5.60** (2015-01-28 to 2016-01-22, 52 dates): CHEAP 13 (2015-01-28 to 2015-04-24, tiers ACCUMULATE 10, BUY 2, WATCHLIST 1),
+  then RICH 33 and FAIR 6 to the year's end. The CHEAP calls rest on the Q4 2014 print: revenue +28.5% (NEER's Q4 2014 net income $614M
+  against $85M, the mark-to-market gains in revenue) puts BASE at +26.6%/yr, then +27.0%; $98.70-109.92 is 17.6-19.6x, the 80th-97th
+  percentile. FAIR on 2015-06-05, 2015-06-26, 2015-09-04 to 2015-09-18 and 2015-12-11 (16.9-17.6x, the 66th-73rd percentile).
+- **FY15's $6.06** (2016-01-29 to 2017-01-20, 52 dates) and **FY16's $6.25** (2017-01-27 to 2017-12-29, 49 dates): RICH and AVOID on all
+  101; 18.4-21.4x and 19.4-25.4x, the 85th-100th percentile of a 15.2-16.1x median; BASE negative on most dates (revenue -12.8% in Q4 2015
+  to -3.0% in Q3 2016, -9.1% in Q4 2016). Ratio B infinite on 18 and 42 of them.
+- **BASE follows quarterly revenue as reported:** +12.5%/yr (Q3 2013), +5.8% (Q4 2013), +10.2%, +3.3%, +4.1% (2014), +26.6% (Q4 2014),
+  +10.2%, +6.7%, +4.9% (2015), -14.4% (Q4 2015), -8.1%, -13.9%, -4.5% (2016), -10.7% (Q4 2016), +1.9%, +13.7%, -1.6% (2017), each with the
+  decade's dilution; the stored rates are right, the scenario text still reads "EPS +-14.4%/yr" (the inherited display quirk).
+- **BEAR is -5.6%/yr to 2015-02-20 and -3.2%/yr from 2015-02-27**, when the FY2014 10-K's history starts in 2005 and 2011's -3.16% is the
+  worst change left. The EPP floor is 12x to 2016-07-15, 13x-15x from 2016-07-22 (13x again on 2016-12-30), 15x from 2017-01-06.
+- **The proxy composite** is 2.95 on Q3 2013, 2.05, 3.55, 2.25 and 2.40 on Q4 2013-Q3 2014, 3.15, 3.15, 2.80, 2.85 on Q4 2014-Q3 2015, 2.35,
+  2.15, 2.20, 2.25 on Q4 2015-Q3 2016, 2.25, 2.80, 2.85 and 2.30 on Q4 2016-Q3 2017; the market composite is 3.75-3.80 on most dates and
+  2.3-2.6 on the CHEAP dates of early 2015.
+
+How far each call moves the classes of 2014-2017 (the 208 dates rebuilt with one encoding changed and classified offline with `retro_tool`'s
+own classifier, `sens_nee_1417.py`; no outcome consulted):
+- every signal at its BEAR value: **19 classes** (CHEAP to RICH 13, FAIR to RICH 6; 2015-01-28 to 2015-12-11); at its XBULL value: 7 (RICH to
+  FAIR; 2015-06-12 to 2015-12-04); no tier either way: the largest;
+- FY2013 from continuing operations ($4.03 in the FY2013 vintage, $3.93 from the FY2014 10-K; the Q4 print at $4.47 or at $4.03 alike): 5
+  classes (FAIR to RICH; 2015-06-05 to 2015-12-11, through BEAR) and 8 tiers;
+- the adjusted EPS outlook's midpoint as the current-FY EPS (history GAAP): 5 classes (FAIR to RICH 4, CHEAP to FAIR 1; 2015-01-28 to
+  2015-12-11) and 4 tiers;
+- the releases' adjusted quarterly EPS for the EPS signal: 4 classes (FAIR to RICH 3, CHEAP to FAIR 1), no tier;
+- ENERGY_TRANSITION read as out of scope (the BKR text): text only, by construction.
+The 2014, 2016 and 2017 RICH calls rest on the multiple (19-25x against its own 14-16x median) and move under no tested encoding; the 2015
+CHEAP calls rest on BASE's reading of the Q4 2014 quarter's reported revenue, hedge marks in.
+
+Judgement calls that could carry hindsight:
+- FY2013 at $4.47 on net income, the Maine hydro gain in, by NEE's own "before the cumulative effect" rule rather than the other tickers'
+  continuing operations (5 classes, 8 tiers);
+- GAAP rather than the company's adjusted earnings for the anchor (5 classes, 4 tiers), by a builder who knows how NextEra's earnings and
+  multiple ran after 2017;
+- BASE on reported quarterly revenue, which NEER's hedge marks and FPL's fuel revenues move (every CHEAP date of 2015 rests on Q4 2014);
+- the frozen 1997-2006 thresholds and the signals (19 classes at BEAR, 7 at XBULL);
+- ENERGY_TRANSITION on the watch list for a company whose 10-Ks name its oil and gas production assets (text only), by a builder who knows
+  how renewables and the theme fared;
+- DURABLE, risk 2, as in 2008-2013;
+- the parts of the filings listed above as not read: a number guided only on a call or in a presentation would be missed, though every
+  release and every Item 7.01 8-K was read.
+
+The hindsight results for 2014-2017 are in `staging/retrospective/NEE/FINDINGS.md` ("2014-2017"): hypotheses, never inputs.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are

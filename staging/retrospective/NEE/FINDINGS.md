@@ -211,3 +211,101 @@ Every date has its 6-month, 1-, 2- and 3-year horizons (the last ends 2016-12-30
 - **Calls held on 145 of 314:** CHEAP 76 of 106, FAIR 31 of 50, RICH 38 of 158. RICH held mostly in 2008 (25 of 30 before the crash) and
   rarely after it (6 of 105 in 2010-2013); CHEAP held rarely in 2008-2009 (2 of 32) and always in 2010-2012 (74 of 74). The same rules and
   thresholds read both periods; the outcomes turned with the market, not with any change in the method.
+
+# 2014-2017 (hindsight)
+
+Patterns seen in `outcome.json` for the 208 weekly dates from 2014-01-10 to 2017-12-29 (NextEra Energy, Inc., NYSE: NEE). The same terms as
+above: **labels and hypotheses**, never inputs. The batch was built in a new session that opened no NEE outcome, finding or series file of
+2008-2013 before its own outcomes were computed; it was scored only after its point-in-time build, validation outputs, README section and
+firewall result were committed and pushed (a1b1ad067, 6f03df63f, 4a10e087b, 6f317e4c1), on 2026-11-27. The earlier sections of this file
+were read only afterwards, to write this one. Every date has its 6-month, 1-, 2- and 3-year horizons (the last ends 2020-12-29; the
+4-for-1 split of 2020-10-27 falls inside the 3-year horizons of late 2017, handled by `retro_tool outcome`). Total returns include the
+quarterly dividends as traded. The hurdle, the medians and "call held" are as above.
+
+## 2014 (51 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID (2014-01-10 to 2014-12-26) | 51 | +30.8% | +15.1% to +42.0% | 18 | 51 | +12.5% | 0 |
+| FY13E $4.56 (FY12's) (2014-01-10 to 2014-01-24) | 3 | +27.4% | +26.9% to +29.3% | 0 | 3 | +17.4% | 0 |
+| FY14E $4.47 (FY13's) (2014-01-29 to 2014-12-26) | 48 | +31.4% | +15.1% to +42.0% | 18 | 48 | +12.4% | 0 |
+| latest print Q3 2013 (2014-01-10 to 2014-01-24) | 3 | +27.4% | +26.9% to +29.3% | 0 | 3 | +17.4% | 0 |
+| latest print Q4 2013 (2014-01-29 to 2014-04-25) | 13 | +30.4% | +23.5% to +32.6% | 1 | 13 | +9.8% | 0 |
+| latest print Q1 2014 (2014-05-01 to 2014-07-25) | 13 | +32.0% | +23.7% to +38.5% | 5 | 13 | +9.8% | 0 |
+| latest print Q2 2014 (2014-07-30 to 2014-10-24) | 13 | +37.8% | +30.8% to +42.0% | 12 | 13 | +18.2% | 0 |
+| latest print Q3 2014 (2014-10-31 to 2014-12-26) | 9 | +18.7% | +15.1% to +31.9% | 0 | 9 | +13.6% | 0 |
+
+Three years: 31 of 51 cleared the hurdle, 51 beat SPY, total return +42.8% to +72.8%.
+One year: total return -2.7% to +29.1%. Two years against SPY: +2.6 to +29.4 points.
+Worst drawdown within two years: -15.3% to -15.3%.
+
+## 2015 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID (2015-01-02 to 2015-12-31) | 33 | +47.2% | +14.5% to +65.5% | 29 | 31 | +25.2% | 2 |
+| class CHEAP, legacy tier WATCHLIST (2015-01-28 to 2015-01-28) | 1 | +16.4% | +16.4% to +16.4% | 0 | 0 | +9.6% | 0 |
+| class CHEAP, legacy tier ACCUMULATE (2015-02-06 to 2015-04-24) | 10 | +29.8% | +23.3% to +33.5% | 3 | 10 | +17.4% | 10 |
+| class CHEAP, legacy tier BUY (2015-03-06 to 2015-03-13) | 2 | +39.2% | +36.4% to +39.2% | 2 | 2 | +23.4% | 2 |
+| class FAIR, legacy tier WATCHLIST (2015-06-05 to 2015-12-11) | 6 | +65.5% | +50.7% to +71.1% | 6 | 6 | +36.5% | 0 |
+| class RICH, legacy tier WATCHLIST (2015-12-04 to 2015-12-04) | 1 | +66.5% | +66.5% to +66.5% | 1 | 1 | +40.7% | 0 |
+| FY14E $4.47 (FY13's) (2015-01-02 to 2015-01-23) | 4 | +17.1% | +14.5% to +18.1% | 0 | 2 | +12.1% | 2 |
+| FY15E $5.60 (FY14's) (2015-01-28 to 2015-12-31) | 49 | +46.8% | +16.4% to +71.1% | 41 | 48 | +25.1% | 12 |
+| latest print Q3 2014 (2015-01-02 to 2015-01-23) | 4 | +17.1% | +14.5% to +18.1% | 0 | 2 | +12.1% | 2 |
+| latest print Q4 2014 (2015-01-28 to 2015-04-24) | 13 | +29.8% | +16.4% to +39.2% | 5 | 12 | +17.4% | 12 |
+| latest print Q1 2015 (2015-04-30 to 2015-07-31) | 14 | +45.6% | +39.0% to +53.2% | 14 | 14 | +24.9% | 0 |
+| latest print Q2 2015 (2015-08-04 to 2015-10-23) | 12 | +55.3% | +42.2% to +66.3% | 12 | 12 | +31.4% | 0 |
+| latest print Q3 2015 (2015-10-29 to 2015-12-31) | 10 | +61.5% | +55.8% to +71.1% | 10 | 10 | +36.6% | 0 |
+
+Three years: 50 of 53 cleared the hurdle, 53 beat SPY, total return +48.8% to +100.0%.
+One year: total return +0.1% to +33.7%. Two years against SPY: -2.4 to +36.9 points.
+Worst drawdown within two years: -15.3% to -13.7%.
+
+## 2016 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID (2016-01-08 to 2016-12-30) | 52 | +43.7% | +33.0% to +66.1% | 52 | 41 | +27.8% | 0 |
+| FY15E $5.60 (FY14's) (2016-01-08 to 2016-01-22) | 3 | +49.8% | +47.7% to +52.5% | 3 | 1 | +34.5% | 0 |
+| FY16E $6.06 (FY15's) (2016-01-29 to 2016-12-30) | 49 | +43.0% | +33.0% to +66.1% | 49 | 40 | +27.4% | 0 |
+| latest print Q3 2015 (2016-01-08 to 2016-01-22) | 3 | +49.8% | +47.7% to +52.5% | 3 | 1 | +34.5% | 0 |
+| latest print Q4 2015 (2016-01-29 to 2016-04-22) | 13 | +42.5% | +40.3% to +47.2% | 13 | 7 | +27.0% | 0 |
+| latest print Q1 2016 (2016-04-29 to 2016-07-22) | 13 | +39.1% | +33.0% to +46.0% | 13 | 10 | +24.2% | 0 |
+| latest print Q2 2016 (2016-07-28 to 2016-10-28) | 14 | +44.8% | +37.2% to +49.1% | 14 | 14 | +29.2% | 0 |
+| latest print Q3 2016 (2016-11-01 to 2016-12-30) | 9 | +60.9% | +41.9% to +66.1% | 9 | 9 | +40.9% | 0 |
+
+Three years: 52 of 52 cleared the hurdle, 52 beat SPY, total return +65.3% to +114.9%.
+One year: total return +10.9% to +41.1%. Two years against SPY: -6.2 to +43.5 points.
+Worst drawdown within two years: -13.7% to -8.8%.
+
+## 2017 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID (2017-01-06 to 2017-12-29) | 52 | +52.5% | +45.1% to +64.6% | 52 | 52 | +29.4% | 0 |
+| FY16E $6.06 (FY15's) (2017-01-06 to 2017-01-20) | 3 | +54.6% | +52.5% to +54.7% | 3 | 3 | +39.6% | 0 |
+| FY17E $6.25 (FY16's) (2017-01-27 to 2017-12-29) | 49 | +52.5% | +45.1% to +64.6% | 49 | 49 | +29.3% | 0 |
+| latest print Q3 2016 (2017-01-06 to 2017-01-20) | 3 | +54.6% | +52.5% to +54.7% | 3 | 3 | +39.6% | 0 |
+| latest print Q4 2016 (2017-01-27 to 2017-04-13) | 12 | +52.5% | +49.3% to +57.3% | 12 | 12 | +32.8% | 0 |
+| latest print Q1 2017 (2017-04-21 to 2017-07-21) | 14 | +51.2% | +45.1% to +54.5% | 14 | 14 | +28.9% | 0 |
+| latest print Q2 2017 (2017-07-27 to 2017-10-20) | 13 | +53.1% | +50.1% to +64.6% | 13 | 13 | +27.4% | 0 |
+| latest print Q3 2017 (2017-10-27 to 2017-12-29) | 10 | +55.5% | +49.0% to +63.2% | 10 | 10 | +29.4% | 0 |
+
+Three years: 52 of 52 cleared the hurdle, 52 beat SPY, total return +65.9% to +130.8%.
+One year: total return +11.8% to +33.2%. Two years against SPY: +20.9 to +44.8 points.
+Worst drawdown within two years: -8.8% to -8.3%.
+
+## Across 2014-2017
+
+- **Calls held on 14 of 208:** CHEAP 12 of 13, FAIR 0 of 6, RICH 2 of 189. Every RICH call of 2014, 2016 and 2017 missed: the stock
+  returned +15% to +66% over two years from those dates and beat SPY on 176 of the 189, while the model read 19-25x against a ten-year
+  median of 14-16x. The 13 CHEAP calls of early 2015 held, but they rested on BASE reading the Q4 2014 quarter's reported revenue (+28.5%,
+  NEER's hedge marks in), not on the multiple: right for a reason the README already names as fragile.
+- **Scenario landing:** XBULL on 191 dates, BASE 13, BULL 4: the two-year price beat even the best two-year EPS run of the decade on
+  almost every date, so the outcome came from the multiple rising, not from earnings beating the scenarios.
+- **The miss looks like the 2010-2013 one, continued:** the stock re-rated for good above the decade median that the method uses as its
+  centre (hypothesis 4 above: a ten-year P/E median can lag a lasting change in what the market pays). Seen again, not proven: it is one
+  stock, one rate cycle and one rerating; test it on SO and the other utilities and periods, and never fit a rule to NEE. The GAAP anchor
+  and the adjusted outlook were close in these years (FY16E adjusted $5.85-6.35 against GAAP FY15 $6.06), so the anchor choice moved only 5
+  classes and does not explain the miss.
+- **`profile_drift`** (the 2026 profile, read only by `retro_tool outcome`): DURABLE then and now, risk 2 then and 1 today. It enters nothing.
