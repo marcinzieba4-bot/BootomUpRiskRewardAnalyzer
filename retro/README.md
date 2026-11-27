@@ -28750,8 +28750,12 @@ Controls and checks (before any outcome):
   committed.
 - **Regression:** no shared code changed but the anachronism list; the 731 dates of 2008-2021 rebuild byte-identical in their four
   per-range runs.
-- **Firewall:** run after the build, validation outputs and this section were committed and pushed, before any 2022-2026 outcome;
-  its result is added here in the firewall commit.
+- **Firewall** (run after the build, validation outputs and README section were committed and pushed, before any 2022-2026 outcome):
+  it passes at all 19 cutoffs above (the first week after the first built date, each print and 10-K date that changes the anchor or the
+  vintage, the four Friday prints, the four Item 7.01 8-Ks' dates and 2026-11-21: 732 to 986 dates each, the 2008-2021 dates included),
+  0 files changed and no planted text, with the plant of 2008-2021 (a later print with its full-year actuals, display-only guides, a
+  vintage whose texts, figures and transition quotes are planted, a dividend, a listing symbol, a company name and prices from the cutoff
+  multiplied by 10). No later split is planted: the price data's only split after 2005 is the encoded one of 2020-10-27.
 
 Seen in the build (method behaviour, not tuned):
 - **Totals: CHEAP 99, RICH 95, FAIR 61.** 2022: RICH 48, FAIR 4. 2023: RICH 21, FAIR 19, CHEAP 12. 2024: CHEAP 34, RICH 13, FAIR 5. 2025:
