@@ -17,6 +17,7 @@ import sys
 
 REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 rows = []
+pending = []
 for d in sorted(x for x in glob.glob(os.path.join(REPO, "staging", "retrospective", "NEE", "20*")) if os.path.basename(x)[:4] in sys.argv[1].split(",")):
     a = json.load(open(os.path.join(d, "analysis.json")))
     o = json.load(open(os.path.join(d, "outcome.json")))
@@ -26,6 +27,9 @@ for d in sorted(x for x in glob.glob(os.path.join(REPO, "staging", "retrospectiv
     q = re.search(r"latest print (Q\d \d{4})", a["summary"]) or re.search(r'"quarter": "(Q\d \d{4})"', m)
     lq = re.search(r"LATEST\s+= \{'quarter': '(Q\d \d{4})'", m).group(1)
     h2, h3 = o["horizons"].get("2y"), o["horizons"].get("3y")
+    if not h2 or o.get("within_2y") is None or o.get("call_check_2y") is None:   # (NEE 2022-2026) no 2-year horizon yet: left out
+        pending.append(a["as_of"])
+        continue
     rows.append(dict(date=a["as_of"], price=a["price"], cls=a["classification"]["price_state"], tier=a["legacy_signal_short"],
                      fy=f"{fy.group(1)[:2]}{fy.group(1)[4:]} ${fy.group(3)} ({fy.group(2)}'s)", lq=lq,
                      r2=h2["total_return_pct"], x2=h2["excess_pct"], hu2=h2["hurdle_pct"], r3=h3["total_return_pct"] if h3 else None,
@@ -54,8 +58,11 @@ for yr in sys.argv[1].split(","):
             groups.setdefault(k, []).append(r)
         for k, g in groups.items():
             print(line(k, g))
-    print(f"3y: {sum(r['r3'] >= r['hu3'] for r in rs if r['r3'] is not None)} of {len(rs)} cleared, "
-          f"{sum(r['x3'] > 0 for r in rs if r['x3'] is not None)} beat SPY; range {min(r['r3'] for r in rs):+.1f}% to {max(r['r3'] for r in rs):+.1f}%")
+    if not rs:
+        continue
+    r3s = [r for r in rs if r["r3"] is not None]
+    print(f"3y ({len(r3s)} dates with one): {sum(r['r3'] >= r['hu3'] for r in rs if r['r3'] is not None)} of {len(rs)} cleared, "
+          f"{sum(r['x3'] > 0 for r in rs if r['x3'] is not None)} beat SPY; range {min(r['r3'] for r in r3s):+.1f}% to {max(r['r3'] for r in r3s):+.1f}%" if r3s else "3y: none yet")
     print("1y range", min(r["r1"] for r in rs), max(r["r1"] for r in rs), "excess 2y", min(r["x2"] for r in rs), max(r["x2"] for r in rs))
     print("drawdown", min(r["dd"] for r in rs), max(r["dd"] for r in rs))
 lands = {}
@@ -65,3 +72,4 @@ print("landing", lands)
 print("drift", {json.dumps(r["drift"], sort_keys=True)[:160] for r in rows})
 for r in rows:
     print(r["date"], r["price"], r["fy"], r["lq"], r["r2"], r["x2"], r["hu2"], r["r3"], r["avg"], r["dd"], r["hit"], r["land"])
+print("no 2-year horizon yet:", len(pending), pending[:1], pending[-1:])

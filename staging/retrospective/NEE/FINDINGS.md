@@ -412,3 +412,104 @@ Worst drawdown within two years: -47.2% to -26.6%.
 - **FPL's energy sales n/r** (BASE from the Q4 2017 print) moved 22 classes at BEAR and 10 at XBULL in the sensitivity; the outcomes do not
   say whether the 10-Qs would have helped, and they were not read.
 - **`profile_drift`** (the 2026 profile, read only by `retro_tool outcome`): DURABLE then and now, risk 2 then and 1 today. It enters nothing.
+
+
+# 2022-2026 (hindsight)
+
+Patterns seen in `outcome.json` for the 255 weekly dates from 2022-01-07 to 2026-11-20 (NextEra Energy, Inc., NYSE: NEE). The same terms as
+above: **labels and hypotheses**, never inputs. The batch was built in a new session that opened no NEE outcome, finding or series file of
+2008-2021 before its own outcomes were computed; it was scored only after its point-in-time build, validation outputs, README section and
+firewall result were committed and pushed (c39a82046, 190fef046, 2c4bd49a5, 3d40dbeed), on 2026-11-27. The earlier sections of this file
+were read only afterwards, to write this one. Only the 151 dates to 2024-11-22 have a two-year horizon; the 52 dates from 2024-11-29 to
+2025-11-21 have one year, and the 52 after it less (their outcomes will fill in as prices arrive; a rebuild changes no model). The price
+data end with 2026-11-27's bar, taken during that day's session. Total returns include the quarterly dividends as traded; no split falls in
+any horizon. The hurdle, the medians and "call held" are as above. A year's table runs to the last date of the calendar year that has a
+two-year horizon ("3y" counts only the dates that have one).
+
+## 2022 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID (2022-01-07 to 2022-09-23) | 38 | -7.4% | -26.9% to +12.1% | 0 | 0 | -18.6% | 38 |
+| class RICH, legacy tier WATCHLIST (2022-09-30 to 2022-10-21) | 4 | +20.9% | +9.6% to +22.6% | 0 | 0 | -6.0% | 4 |
+| class FAIR, legacy tier ACCUMULATE (2022-10-28 to 2022-12-30) | 4 | +4.3% | -9.5% to +9.7% | 0 | 0 | -13.1% | 0 |
+| class RICH, legacy tier ACCUMULATE (2022-11-11 to 2022-12-23) | 6 | -5.6% | -9.2% to -4.3% | 0 | 0 | -16.2% | 6 |
+| FY21E $1.48 (FY20's) (2022-01-07 to 2022-01-21) | 3 | -24.0% | -26.4% to -22.3% | 0 | 0 | -17.2% | 3 |
+| FY22E $1.81 (FY21's) (2022-01-26 to 2022-12-30) | 49 | -5.4% | -26.9% to +22.6% | 0 | 0 | -16.8% | 45 |
+| latest print Q3 2021 (2022-01-07 to 2022-01-21) | 3 | -24.0% | -26.4% to -22.3% | 0 | 0 | -17.2% | 3 |
+| latest print Q4 2021 (2022-01-26 to 2022-04-14) | 12 | -20.4% | -26.9% to -14.6% | 0 | 0 | -16.8% | 12 |
+| latest print Q1 2022 (2022-04-22 to 2022-07-15) | 13 | +3.1% | -8.6% to +12.1% | 0 | 0 | -15.5% | 13 |
+| latest print Q2 2022 (2022-07-22 to 2022-10-21) | 14 | -0.9% | -10.1% to +22.6% | 0 | 0 | -22.8% | 14 |
+| latest print Q3 2022 (2022-10-28 to 2022-12-30) | 10 | -4.9% | -9.5% to +9.7% | 0 | 0 | -15.5% | 6 |
+Three years (52 dates with one): 0 of 52 cleared the hurdle, 0 beat SPY, total return -18.8% to +26.4%.
+One year: total return -32.1% to +14.2%. Two years against SPY: -70.2 to -20.9 points.
+Worst drawdown within two years: -45.8% to -42.5%.
+
+## 2023 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class FAIR, legacy tier ACCUMULATE (2023-01-06 to 2023-07-26) | 4 | -8.7% | -16.3% to +2.2% | 0 | 0 | -12.1% | 0 |
+| class RICH, legacy tier WATCHLIST (2023-01-26 to 2023-12-29) | 18 | +9.8% | -5.4% to +56.8% | 8 | 2 | +1.1% | 10 |
+| class RICH, legacy tier AVOID (2023-04-06 to 2023-04-21) | 3 | -10.2% | -13.0% to -8.1% | 0 | 0 | -5.5% | 3 |
+| class FAIR, legacy tier BUY (2023-04-26 to 2023-07-21) | 13 | +0.9% | -7.1% to +9.5% | 0 | 0 | -0.0% | 0 |
+| class CHEAP, legacy tier BUY (2023-08-04 to 2023-10-20) | 12 | +16.9% | +7.9% to +71.9% | 4 | 3 | +10.0% | 4 |
+| class FAIR, legacy tier WATCHLIST (2023-10-25 to 2023-11-10) | 2 | +61.4% | +57.0% to +61.4% | 2 | 1 | +32.3% | 2 |
+| FY22E $1.81 (FY21's) (2023-01-06 to 2023-01-20) | 3 | -10.1% | -16.3% to -8.7% | 0 | 0 | -14.4% | 0 |
+| FY23E $2.10 (FY22's) (2023-01-26 to 2023-12-29) | 49 | +7.9% | -13.0% to +71.9% | 14 | 6 | +1.1% | 19 |
+| latest print Q3 2022 (2023-01-06 to 2023-01-20) | 3 | -10.1% | -16.3% to -8.7% | 0 | 0 | -14.4% | 0 |
+| latest print Q4 2022 (2023-01-26 to 2023-04-21) | 13 | -1.5% | -13.0% to +9.8% | 0 | 0 | -2.9% | 13 |
+| latest print Q1 2023 (2023-04-26 to 2023-07-21) | 13 | +0.9% | -7.1% to +9.5% | 0 | 0 | -0.0% | 0 |
+| latest print Q2 2023 (2023-07-26 to 2023-10-20) | 13 | +14.1% | +2.2% to +71.9% | 4 | 3 | +8.9% | 4 |
+| latest print Q3 2023 (2023-10-25 to 2023-12-29) | 10 | +50.4% | +39.3% to +61.4% | 10 | 3 | +24.1% | 2 |
+Three years (47 dates with one): 8 of 47 cleared the hurdle, 0 beat SPY, total return +3.7% to +68.5%.
+One year: total return -27.7% to +70.9%. Two years against SPY: -67.1 to +12.2 points.
+Worst drawdown within two years: -42.5% to -25.0%.
+
+## 2024 (47 of 52 dates with a two-year horizon, to 2024-11-22)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID (2024-01-05 to 2024-01-05) | 1 | +38.0% | +38.0% to +38.0% | 1 | 0 | +19.4% | 0 |
+| class FAIR, legacy tier WATCHLIST (2024-01-12 to 2024-01-19) | 2 | +53.6% | +40.0% to +53.6% | 2 | 1 | +30.2% | 2 |
+| class CHEAP, legacy tier BUY (2024-01-26 to 2024-11-22) | 28 | +49.8% | +14.2% to +77.9% | 16 | 15 | +20.6% | 16 |
+| class FAIR, legacy tier BUY (2024-05-24 to 2024-07-25) | 3 | +21.4% | +14.3% to +28.4% | 0 | 0 | +7.3% | 1 |
+| class RICH, legacy tier BUY (2024-08-02 to 2024-09-06) | 5 | +15.1% | +10.1% to +15.5% | 0 | 0 | +7.7% | 5 |
+| class RICH, legacy tier ACCUMULATE (2024-08-30 to 2024-10-18) | 7 | +0.2% | -4.5% to +7.4% | 0 | 0 | +3.3% | 7 |
+| class CHEAP, legacy tier ACCUMULATE (2024-10-24 to 2024-10-24) | 1 | +4.8% | +4.8% to +4.8% | 0 | 0 | +4.2% | 0 |
+| FY23E $2.10 (FY22's) (2024-01-05 to 2024-01-19) | 3 | +40.0% | +38.0% to +53.6% | 3 | 1 | +21.8% | 2 |
+| FY24E $3.60 (FY23's) (2024-01-26 to 2024-11-22) | 44 | +25.4% | -4.5% to +77.9% | 16 | 15 | +13.7% | 29 |
+| latest print Q3 2023 (2024-01-05 to 2024-01-19) | 3 | +40.0% | +38.0% to +53.6% | 3 | 1 | +21.8% | 2 |
+| latest print Q4 2023 (2024-01-26 to 2024-04-19) | 13 | +56.2% | +49.9% to +77.9% | 13 | 13 | +29.0% | 13 |
+| latest print Q1 2024 (2024-04-24 to 2024-07-19) | 13 | +28.5% | +14.3% to +49.8% | 3 | 2 | +13.7% | 3 |
+| latest print Q2 2024 (2024-07-25 to 2024-10-18) | 13 | +7.4% | -4.5% to +28.4% | 0 | 0 | +6.8% | 13 |
+| latest print Q3 2024 (2024-10-24 to 2024-11-22) | 5 | +15.2% | +4.8% to +19.0% | 0 | 0 | +12.2% | 0 |
+Three years: none yet.
+One year: total return -12.8% to +30.9%. Two years against SPY: -42.1 to +41.3 points.
+Worst drawdown within two years: -25.0% to -22.9%.
+
+## Across 2022-2024 (the 151 dates with a two-year horizon)
+
+- **Calls held on 98 of 151:** RICH 73 of 82, FAIR 5 of 28, CHEAP 20 of 41. The RICH calls of 2022 all held (48 of 48: two-year total
+  returns -27% to +23%, none cleared the hurdle, none beat SPY) as the multiple of 39-58x GAAP EPS came down, continuing the 2021 run;
+  those of 2023-2024 held on 25 of 34. The CHEAP calls split: the 12 of August to October 2023 held on 4 (the stock fell to $50 in
+  October 2023 and then rose, so only the last dates cleared the hurdle), and the 29 of 2024 on 16, all 13 after the Q4 2023 print
+  holding (+50% to +78%) and few after the Q1 2024 print, as the entry price rose from $58 to $80. FAIR held on
+  5 of 28: the stock rarely landed within 15 points of SPY over two years.
+- **Scenario landing:** BASE on 97 dates, BULL 41, BEAR 13 (Q1 2023's prints, the dates after the +132% hedge-marked revenue): for
+  the first time since 2008-2009 the outcomes fell inside the scenarios rather than above XBULL, as the multiple came down to the window's
+  median instead of rising above it.
+- **The anchor call matters more than in any earlier batch, and the outcomes cannot settle it:** GAAP against the company's adjusted
+  EPS moves 121 classes (the README's sensitivity), mostly the CHEAP and FAIR dates of 2023-2026 to FAIR and RICH or back. GAAP and
+  adjusted ran close in 2023-2025 ($3.60 against $3.17, $3.37 against $3.43, $3.30 against $3.71), apart in 2021-2022 ($1.81 against
+  $2.55, $2.10 against $2.90), so the 2022 RICH calls that held rest partly on GAAP's lower EPS; on the adjusted $2.55 the 2022 prices
+  read 27-35x. Taking either as a lesson would fit the encoding to the outcome; the reading was decided before
+  any model was built, and it stays.
+- **Hypothesis 4, the reversal continued:** the window's median climbed from 17.6x to 24.2x as the 2009-2015 years left it and the
+  2020-2022 multiples entered, so from 2024 the stock sits near the median the window itself absorbed. One stock and one rate cycle; it
+  says nothing about timing and must not be fitted. Test it on SO and other utilities.
+- **BASE on reported revenue** (NEER's hedge marks in) swung from -22% to +132% a quarter; the BEAR landings of 2023 sit on the dates
+  after the +132% print. The README already names this as fragile; the outcomes neither confirm nor refute it on so few dates.
+- **One-year results of 2024-11-29 to 2025-11-21** (52 dates, no two-year horizon yet): CHEAP 33 dates, median +20.2%, 15 beat SPY; RICH
+  13 (2025-01-24 to 2025-04-17), median +33.0%, all 13 beat SPY, so those RICH calls are missing so far; FAIR 6, median +3.4%. Unscored.
+- **`profile_drift`** (the 2026 profile, read only by `retro_tool outcome`): DURABLE then and now, risk 2 then and 1 today. It enters nothing.

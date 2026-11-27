@@ -53,6 +53,13 @@ split effective 2020-10-27 is the second 'splits' record: prices as traded, the 
 and a note or dividend sentence published before it says its figures are on the earlier basis. Five releases came on a Friday
 (2018-01-26, 2019-01-25, 2020-01-24, 2020-07-24, 2021-07-23) and date their own weeks.
 
+NEE 2022-2026 (retro/README.md): the Q4 2021 release's year-ago quarter has diluted EPS of $0.00 (Q4 2020, the Mountain Valley
+Pipeline impairment), so that print's EPS growth is None (n/m, the F rule): the EPS signal scores BASE and prints n/r through a third
+copy of the engine (nee3_engine.py.tmpl: the None-tolerant copy with the EPS edit of eps_engine() below), used only on the dates whose
+latest print has no EPS growth. The FY2021-FY2025 10-Ks reserve Item 6, so their vintages take three years from the statements of
+income; every expectation of the range is adjusted EPS, display only as before. Four releases came on a Friday (2022-07-22,
+2022-10-28, 2025-01-24, 2026-07-24) and date their own weeks.
+
 Output goes to staging/retrospective/NEE until the series is added to the archive (--out archive/retrospective/NEE).
 
 Usage
@@ -77,6 +84,7 @@ from build_unp import money, on_basis  # noqa: E402
 FACTS = os.path.join(HERE, "facts", "NEE.json")
 ENGINE = os.path.join(HERE, "templates", "nee_engine.py.tmpl")
 ENGINE2 = os.path.join(HERE, "templates", "nee2_engine.py.tmpl")   # (NEE 2018-2021) the None-tolerant copy: nr_engine(ENGINE)
+ENGINE3 = os.path.join(HERE, "templates", "nee3_engine.py.tmpl")   # (NEE 2022-2026) eps_engine(nr_engine(ENGINE)): EPS growth n/m
 OUT = os.path.join(ROOT, "staging", "retrospective", "NEE")
 SYMBOL = "NEE"                     # the series key and Yahoo's symbol; the listing of each date comes from 'listings'
 # rule T, the engine's signal thresholds over 1997-2006 (the FY2006 10-K, the vintage public on 2008-01-04): (BEAR, BASE, BULL, XBULL);
@@ -154,6 +162,26 @@ def nr_engine(engine):
     return engine
 
 
+# (NEE 2022-2026) the EPS edit for a print whose year-ago EPS is $0.00: its growth is None, scores BASE and prints n/r (the engine's
+# tables already print a None value n/r); applied on top of the n/r edits, each asserted once
+EPS_NR_EDITS = [
+    ("# \"NEE 2018-2021\").\n",
+     "# \"NEE 2018-2021\").\n"
+     "# This copy is also the one used when the latest print's year-ago EPS is $0.00 (the Q4 2021 release against\n"
+     "# Q4 2020): its EPS growth is None (n/m), scores BASE and prints \"n/r\" (the F rule; retro/README.md,\n"
+     "# \"NEE 2022-2026\").\n"),
+    ('float(LATEST["eps_pct"])', '_f(LATEST["eps_pct"])'),
+]
+
+
+def eps_engine(engine):
+    """The None-tolerant engine with the EPS edit (`engine` is the n/r copy; the sensitivity variants of an engine carry over)."""
+    for old, new in EPS_NR_EDITS:
+        assert engine.count(old) == 1, ("an EPS edit must match the engine once", old)
+        engine = engine.replace(old, new)
+    return engine
+
+
 def check_print(p):
     """Re-derive a print's growth rates, margins and EPS growth from its raw published figures (they must match the fact sheet)."""
     r = p["raw"]
@@ -164,12 +192,12 @@ def check_print(p):
     want = {"sales_b": round(r["rev_m"] / 1000, 3), "sales_pct": pct(r["rev_prior_m"], r["rev_m"]),
             "kwh_pct": None if r["kwh_m"] is None else pct(r["kwh_prior_m"], r["kwh_m"]), "seg_pct": gpct(r["seg_prior_m"], r["seg_m"]),
             "margin": round(m, 2), "margin_prior": round(m0, 2), "margin_bp": round((m - m0) * 100, 1),
-            "eps_pct": gpct(p["eps_q_prior"], p["eps_q"])}
+            "eps_pct": None if p["eps_q_prior"] == 0 else gpct(p["eps_q_prior"], p["eps_q"])}   # (NEE 2022-2026) $0.00: n/m
     for k, v in want.items():
         assert p[k] == v or (p[k] is not None and v is not None and abs(p[k] - v) < 1e-9), (p["quarter"], k, p[k], v)
     # the EPS signal's basis: GAAP diluted EPS (the adjusted figure removes the recurring mark-to-market item: the PEP 2008 core rule)
     assert p["eps_basis"] == "GAAP" and (p["eps_q"], p["eps_q_prior"]) == (p["eps_gaap"], p["eps_gaap_prior"]), (p["quarter"], "EPS basis")
-    assert p["eps_q_prior"] != 0, (p["quarter"], "a zero year-ago EPS needs its encoding first")
+    assert p["eps_q_prior"] != 0 or p["published"] >= "2022-01-01", (p["quarter"], "a zero year-ago EPS before 2022 needs its encoding")
 
 
 def build(as_of, facts, raw, spx, engine, out):
@@ -481,7 +509,8 @@ CATALYST_4      = {R(cat4)}
 '''
     os.makedirs(os.path.join(out, as_of), exist_ok=True)
     with open(os.path.join(out, as_of, "model.py"), "w", encoding="utf-8") as fh:
-        fh.write(head + (nr_engine(engine) if latest["kwh_pct"] is None else engine))
+        fh.write(head + (engine if latest["kwh_pct"] is not None else nr_engine(engine) if latest["eps_pct"] is not None else
+                         eps_engine(nr_engine(engine))))
     return tag, latest["quarter"], stage
 
 
@@ -497,6 +526,8 @@ def main():
         engine = fh.read()
     with open(ENGINE2, encoding="utf-8") as fh:        # the committed None-tolerant copy must be nr_engine(ENGINE), line for line
         assert fh.read() == nr_engine(engine), "nee2_engine.py.tmpl must equal nr_engine(nee_engine.py.tmpl)"
+    with open(ENGINE3, encoding="utf-8") as fh:        # (NEE 2022-2026) and the EPS copy eps_engine(nr_engine(ENGINE))
+        assert fh.read() == eps_engine(nr_engine(engine)), "nee3_engine.py.tmpl must equal eps_engine(nr_engine(nee_engine.py.tmpl))"
     raw, spx = load_series(SYMBOL), load_series("^GSPC")
     dates = list(a.dates)
     if a.weekly:

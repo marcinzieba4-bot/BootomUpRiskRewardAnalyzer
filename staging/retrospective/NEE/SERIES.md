@@ -735,3 +735,258 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2021-12-17 | $90.94 | NextEra Energy Q3 2021 results | 1.75 | -2.19 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -28.4% | -33.3pp | -22.5% | ✓ |
 | 2021-12-23 | $90.70 | NextEra Energy Q3 2021 results | 1.75 | -2.19 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -30.2% | -33.6pp | -22.8% | ✓ |
 | 2021-12-31 | $93.36 | NextEra Energy Q3 2021 results | 1.75 | -2.22 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -31.1% | -33.9pp | -25.4% | ✓ |
+| 2022-01-07 | $86.41 | NextEra Energy Q3 2021 results | 1.75 | -2.13 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -24.0% | -27.2pp | -19.8% | ✓ |
+| 2022-01-14 | $83.20 | NextEra Energy Q3 2021 results | 1.75 | -2.09 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -22.3% | -27.7pp | -17.2% | ✓ |
+| 2022-01-21 | $82.60 | NextEra Energy Q3 2021 results | 1.75 | -2.08 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -26.4% | -39.5pp | -17.1% | ✓ |
+| 2022-01-26 | $72.64 | NextEra Energy Q4 2021 results | 2.65 | -0.57 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -14.6% | -30.0pp | -6.3% | ✓ |
+| 2022-02-04 | $76.01 | NextEra Energy Q4 2021 results | 2.65 | -0.61 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -18.8% | -31.9pp | -10.9% | ✓ |
+| 2022-02-11 | $74.96 | NextEra Energy Q4 2021 results | 2.65 | -0.59 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -19.8% | -36.5pp | -10.2% | ✓ |
+| 2022-02-18 | $74.15 | NextEra Energy Q4 2021 results | 2.65 | -0.58 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -18.3% | -36.3pp | -9.7% | ✓ |
+| 2022-02-25 | $77.16 | NextEra Energy Q4 2021 results | 2.65 | -0.63 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -21.8% | -40.8pp | -13.6% | ✓ |
+| 2022-03-04 | $80.21 | NextEra Energy Q4 2021 results | 2.65 | -0.66 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -26.9% | -48.4pp | -17.3% | ✓ |
+| 2022-03-11 | $79.30 | NextEra Energy Q4 2021 results | 2.65 | -0.65 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -22.4% | -47.2pp | -16.8% | ✓ |
+| 2022-03-18 | $82.37 | NextEra Energy Q4 2021 results | 2.65 | -0.78 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -22.5% | -40.8pp | -20.3% | ✓ |
+| 2022-03-25 | $83.94 | NextEra Energy Q4 2021 results | 2.65 | -0.80 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -21.0% | -38.8pp | -22.1% | ✓ |
+| 2022-04-01 | $85.71 | NextEra Energy Q4 2021 results | 2.65 | -0.82 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -21.8% | -40.0pp | -24.0% | ✓ |
+| 2022-04-08 | $86.09 | NextEra Energy Q4 2021 results | 2.65 | -0.82 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -20.4% | -39.2pp | -24.6% | ✓ |
+| 2022-04-14 | $82.81 | NextEra Energy Q4 2021 results | 2.65 | -0.78 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -19.4% | -39.1pp | -22.0% | ✓ |
+| 2022-04-22 | $73.95 | NextEra Energy Q1 2022 results | 1.95 | -1.53 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -6.7% | -27.1pp | -13.0% | ✓ |
+| 2022-04-29 | $71.02 | NextEra Energy Q1 2022 results | 1.95 | -1.48 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +0.1% | -26.9pp | -9.7% | ✓ |
+| 2022-05-06 | $72.47 | NextEra Energy Q1 2022 results | 1.95 | -1.51 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +3.4% | -25.4pp | -11.7% | ✓ |
+| 2022-05-13 | $69.80 | NextEra Energy Q1 2022 results | 1.95 | -1.46 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +12.1% | -20.9pp | -8.4% | ✓ |
+| 2022-05-20 | $71.22 | NextEra Energy Q1 2022 results | 1.95 | -1.48 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +11.7% | -27.8pp | -10.2% | ✓ |
+| 2022-05-27 | $77.43 | NextEra Energy Q1 2022 results | 1.95 | -1.57 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +3.1% | -27.5pp | -17.4% | ✓ |
+| 2022-06-03 | $78.69 | NextEra Energy Q1 2022 results | 1.95 | -1.58 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +3.5% | -28.3pp | -18.6% | ✓ |
+| 2022-06-10 | $75.91 | NextEra Energy Q1 2022 results | 1.95 | -1.55 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +6.3% | -34.5pp | -15.5% | ✓ |
+| 2022-06-17 | $70.81 | NextEra Energy Q1 2022 results | 1.95 | -1.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +7.4% | -45.3pp | -9.5% | ✓ |
+| 2022-06-24 | $78.02 | NextEra Energy Q1 2022 results | 1.95 | -1.57 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -0.5% | -43.1pp | -17.9% | ✓ |
+| 2022-07-01 | $80.56 | NextEra Energy Q1 2022 results | 1.95 | -1.60 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -8.6% | -55.1pp | -20.6% | ✓ |
+| 2022-07-08 | $80.25 | NextEra Energy Q1 2022 results | 1.95 | -1.56 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -5.5% | -51.8pp | -20.3% | ✓ |
+| 2022-07-15 | $78.71 | NextEra Energy Q1 2022 results | 1.95 | -1.52 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -5.1% | -54.3pp | -18.7% | ✓ |
+| 2022-07-22 | $80.25 | NextEra Energy Q2 2022 results | 3.15 | +0.33 | 2.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -4.5% | -48.3pp | -20.3% | ✓ |
+| 2022-07-29 | $84.49 | NextEra Energy Q2 2022 results | 3.15 | +0.11 | 2.31x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -7.6% | -43.0pp | -24.3% | ✓ |
+| 2022-08-05 | $87.98 | NextEra Energy Q2 2022 results | 3.15 | +0.02 | 2.61x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -8.6% | -36.9pp | -27.2% | ✓ |
+| 2022-08-12 | $90.47 | NextEra Energy Q2 2022 results | 3.15 | -0.05 | 2.93x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -10.1% | -38.1pp | -29.0% | ✓ |
+| 2022-08-19 | $89.71 | NextEra Energy Q2 2022 results | 3.15 | -0.01 | 2.73x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -7.4% | -43.1pp | -28.2% | ✓ |
+| 2022-08-26 | $88.06 | NextEra Energy Q2 2022 results | 3.15 | +0.04 | 2.54x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -4.2% | -45.8pp | -26.5% | ✓ |
+| 2022-09-02 | $85.11 | NextEra Energy Q2 2022 results | 3.15 | +0.14 | 2.24x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -0.9% | -48.0pp | -23.8% | ✓ |
+| 2022-09-09 | $89.90 | NextEra Energy Q2 2022 results | 3.15 | +0.00 | 2.67x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -5.4% | -43.1pp | -27.5% | ✓ |
+| 2022-09-16 | $84.79 | NextEra Energy Q2 2022 results | 3.15 | +0.17 | 2.15x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +4.4% | -44.7pp | -22.8% | ✓ |
+| 2022-09-23 | $82.52 | NextEra Energy Q2 2022 results | 3.15 | +0.25 | 1.91x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +7.4% | -51.1pp | -20.3% | ✓ |
+| 2022-09-30 | $78.41 | NextEra Energy Q2 2022 results | 3.15 | +0.44 | 1.64x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +12.7% | -51.7pp | -15.5% | ✓ |
+| 2022-10-07 | $76.73 | NextEra Energy Q2 2022 results | 3.15 | +0.48 | 1.51x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +9.6% | -50.6pp | -12.8% | ✓ |
+| 2022-10-14 | $71.77 | NextEra Energy Q2 2022 results | 3.15 | +0.59 | 1.26x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +20.9% | -46.3pp | -6.0% | ✓ |
+| 2022-10-21 | $71.65 | NextEra Energy Q2 2022 results | 3.15 | +0.59 | 1.26x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +22.6% | -36.9pp | -5.0% | ✓ |
+| 2022-10-28 | $79.03 | NextEra Energy Q3 2022 results | 3.30 | +0.94 | 0.81x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +9.7% | -43.1pp | -13.1% | ✗ |
+| 2022-11-04 | $78.80 | NextEra Energy Q3 2022 results | 3.30 | +0.94 | 0.80x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +4.3% | -50.7pp | -12.4% | ✗ |
+| 2022-11-11 | $83.31 | NextEra Energy Q3 2022 results | 3.30 | +0.77 | 0.90x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | -4.3% | -57.9pp | -16.7% | ✓ |
+| 2022-11-18 | $83.20 | NextEra Energy Q3 2022 results | 3.30 | +0.78 | 0.89x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -3.6% | -55.5pp | -16.1% | ✗ |
+| 2022-11-25 | $85.34 | NextEra Energy Q3 2022 results | 3.30 | +0.75 | 0.94x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | -5.6% | -57.5pp | -17.8% | ✓ |
+| 2022-12-02 | $85.20 | NextEra Energy Q3 2022 results | 3.30 | +0.75 | 0.93x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | -4.9% | -56.6pp | -17.3% | ✓ |
+| 2022-12-09 | $84.51 | NextEra Energy Q3 2022 results | 3.30 | +0.77 | 0.92x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | -7.0% | -64.1pp | -16.2% | ✓ |
+| 2022-12-16 | $84.14 | NextEra Energy Q3 2022 results | 3.30 | +0.77 | 0.90x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | -8.8% | -70.2pp | -15.5% | ✓ |
+| 2022-12-23 | $84.17 | NextEra Energy Q3 2022 results | 3.30 | +0.77 | 0.90x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | -9.2% | -68.1pp | -15.3% | ✓ |
+| 2022-12-30 | $83.60 | NextEra Energy Q3 2022 results | 3.30 | +0.78 | 0.89x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -9.5% | -66.9pp | -14.5% | ✗ |
+| 2023-01-06 | $83.65 | NextEra Energy Q3 2022 results | 3.30 | +0.89 | 0.88x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | -10.1% | -67.1pp | -14.4% | ✗ |
+| 2023-01-13 | $84.68 | NextEra Energy Q3 2022 results | 3.30 | +0.87 | 0.90x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | -16.3% | -65.6pp | -15.2% | ✗ |
+| 2023-01-20 | $81.82 | NextEra Energy Q3 2022 results | 3.30 | +0.92 | 0.84x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | -8.7% | -63.1pp | -12.1% | ✗ |
+| 2023-01-26 | $76.40 | NextEra Energy Q4 2022 results | 3.00 | +0.36 | 1.68x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +0.5% | -53.1pp | -5.5% | ✓ |
+| 2023-02-03 | $74.67 | NextEra Energy Q4 2022 results | 3.00 | +0.40 | 1.58x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +0.4% | -47.9pp | -2.9% | ✓ |
+| 2023-02-10 | $74.74 | NextEra Energy Q4 2022 results | 3.00 | +0.40 | 1.58x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -1.5% | -53.1pp | -2.7% | ✓ |
+| 2023-02-17 | $76.07 | NextEra Energy Q4 2022 results | 3.00 | +0.37 | 1.66x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -5.4% | -58.4pp | -4.0% | ✓ |
+| 2023-02-24 | $72.92 | NextEra Energy Q4 2022 results | 3.00 | +0.44 | 1.47x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +2.5% | -51.6pp | +0.4% | ✓ |
+| 2023-03-03 | $73.83 | NextEra Energy Q4 2022 results | 3.00 | +0.42 | 1.52x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +2.5% | -45.4pp | -0.4% | ✓ |
+| 2023-03-10 | $73.01 | NextEra Energy Q4 2022 results | 3.00 | +0.44 | 1.48x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +9.8% | -39.0pp | +1.1% | ✓ |
+| 2023-03-17 | $75.67 | NextEra Energy Q4 2022 results | 3.00 | +0.37 | 1.64x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +0.6% | -47.9pp | -2.1% | ✓ |
+| 2023-03-24 | $75.69 | NextEra Energy Q4 2022 results | 3.00 | +0.37 | 1.64x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -2.1% | -50.7pp | -1.8% | ✓ |
+| 2023-03-31 | $77.08 | NextEra Energy Q4 2022 results | 3.00 | +0.35 | 1.73x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -3.4% | -42.5pp | -3.5% | ✓ |
+| 2023-04-06 | $78.97 | NextEra Energy Q4 2022 results | 3.00 | +0.30 | 1.87x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -10.2% | -37.0pp | -5.6% | ✓ |
+| 2023-04-14 | $78.02 | NextEra Energy Q4 2022 results | 3.00 | +0.33 | 1.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -8.1% | -42.1pp | -4.5% | ✓ |
+| 2023-04-21 | $78.99 | NextEra Energy Q4 2022 results | 3.00 | +0.30 | 1.87x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -13.0% | -41.1pp | -5.5% | ✓ |
+| 2023-04-26 | $74.07 | NextEra Energy Q1 2023 results | 3.30 | +1.90 | 0.19x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | -5.3% | -44.9pp | +0.8% | ✗ |
+| 2023-05-05 | $75.51 | NextEra Energy Q1 2023 results | 3.30 | +1.89 | 0.19x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | -7.1% | -47.1pp | -1.2% | ✗ |
+| 2023-05-12 | $77.96 | NextEra Energy Q1 2023 results | 3.30 | +1.86 | 0.20x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | -5.4% | -50.5pp | -4.4% | ✗ |
+| 2023-05-19 | $74.48 | NextEra Energy Q1 2023 results | 3.30 | +1.90 | 0.19x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +4.6% | -40.8pp | -0.0% | ✗ |
+| 2023-05-26 | $73.92 | NextEra Energy Q1 2023 results | 3.30 | +1.91 | 0.19x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | -3.5% | -44.7pp | +0.6% | ✗ |
+| 2023-06-02 | $73.85 | NextEra Energy Q1 2023 results | 3.30 | +1.91 | 0.19x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +0.6% | -41.2pp | +0.5% | ✗ |
+| 2023-06-09 | $74.07 | NextEra Energy Q1 2023 results | 3.30 | +1.91 | 0.19x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +2.6% | -40.1pp | +0.0% | ✗ |
+| 2023-06-16 | $75.59 | NextEra Energy Q1 2023 results | 3.30 | +1.89 | 0.19x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +3.1% | -36.9pp | -2.0% | ✗ |
+| 2023-06-23 | $74.17 | NextEra Energy Q1 2023 results | 3.30 | +1.91 | 0.19x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +0.9% | -40.8pp | -0.1% | ✗ |
+| 2023-06-30 | $74.20 | NextEra Energy Q1 2023 results | 3.30 | +1.91 | 0.19x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | -0.9% | -43.4pp | -0.2% | ✗ |
+| 2023-07-07 | $72.05 | NextEra Energy Q1 2023 results | 3.30 | +1.94 | 0.18x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +9.5% | -35.2pp | +2.8% | ✗ |
+| 2023-07-14 | $73.20 | NextEra Energy Q1 2023 results | 3.30 | +1.92 | 0.18x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +8.2% | -34.0pp | +1.2% | ✗ |
+| 2023-07-21 | $75.90 | NextEra Energy Q1 2023 results | 3.30 | +1.89 | 0.19x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +5.8% | -36.4pp | -2.3% | ✗ |
+| 2023-07-26 | $74.37 | NextEra Energy Q2 2023 results | 3.30 | +1.07 | 0.78x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +2.2% | -40.8pp | -0.3% | ✗ |
+| 2023-08-04 | $69.17 | NextEra Energy Q2 2023 results | 3.30 | +1.28 | 0.68x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +7.9% | -36.5pp | +7.0% | ✗ |
+| 2023-08-11 | $68.92 | NextEra Energy Q2 2023 results | 3.30 | +1.29 | 0.68x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +11.1% | -34.7pp | +7.3% | ✗ |
+| 2023-08-18 | $67.83 | NextEra Energy Q2 2023 results | 3.30 | +1.31 | 0.66x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +17.7% | -32.9pp | +8.9% | ✗ |
+| 2023-08-25 | $67.96 | NextEra Energy Q2 2023 results | 3.30 | +1.32 | 0.66x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +16.9% | -32.3pp | +8.6% | ✗ |
+| 2023-09-01 | $66.87 | NextEra Energy Q2 2023 results | 3.30 | +1.34 | 0.64x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +14.1% | -32.0pp | +10.1% | ✗ |
+| 2023-09-08 | $66.83 | NextEra Energy Q2 2023 results | 3.30 | +1.34 | 0.64x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +10.7% | -38.1pp | +10.0% | ✗ |
+| 2023-09-15 | $68.64 | NextEra Energy Q2 2023 results | 3.30 | +1.30 | 0.67x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +10.3% | -41.5pp | +6.7% | ✗ |
+| 2023-09-22 | $67.70 | NextEra Energy Q2 2023 results | 3.30 | +1.32 | 0.65x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +13.1% | -45.1pp | +7.8% | ✗ |
+| 2023-09-29 | $57.29 | NextEra Energy Q2 2023 results | 3.30 | +1.59 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +40.4% | -18.2pp | +27.1% | ✓ |
+| 2023-10-06 | $50.24 | NextEra Energy Q2 2023 results | 3.30 | +1.74 | 0.39x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +71.9% | +12.2pp | +44.7% | ✓ |
+| 2023-10-13 | $54.49 | NextEra Energy Q2 2023 results | 3.30 | +1.65 | 0.44x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +62.5% | +5.5pp | +33.5% | ✓ |
+| 2023-10-20 | $51.96 | NextEra Energy Q2 2023 results | 3.30 | +1.80 | 0.41x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +71.3% | +8.5pp | +40.0% | ✓ |
+| 2023-10-25 | $56.46 | NextEra Energy Q3 2023 results | 2.05 | -0.28 | 1.33x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +57.0% | -8.6pp | +28.8% | ✓ |
+| 2023-11-03 | $59.38 | NextEra Energy Q3 2023 results | 2.05 | -0.34 | 1.53x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +44.8% | -15.6pp | +22.6% | ✗ |
+| 2023-11-10 | $55.14 | NextEra Energy Q3 2023 results | 2.05 | -0.24 | 1.25x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +61.4% | +3.5pp | +32.3% | ✓ |
+| 2023-11-17 | $57.37 | NextEra Energy Q3 2023 results | 2.05 | -0.30 | 1.39x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +56.8% | +6.0pp | +27.5% | ✗ |
+| 2023-11-24 | $57.55 | NextEra Energy Q3 2023 results | 2.05 | -0.30 | 1.40x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +53.9% | +3.9pp | +27.4% | ✗ |
+| 2023-12-01 | $59.17 | NextEra Energy Q3 2023 results | 2.05 | -0.33 | 1.51x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +50.4% | -0.9pp | +24.1% | ✗ |
+| 2023-12-08 | $59.70 | NextEra Energy Q3 2023 results | 2.05 | -0.34 | 1.55x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +42.2% | -9.5pp | +23.2% | ✗ |
+| 2023-12-15 | $61.50 | NextEra Energy Q3 2023 results | 2.05 | -0.39 | 1.70x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +39.8% | -7.9pp | +19.8% | ✗ |
+| 2023-12-22 | $59.75 | NextEra Energy Q3 2023 results | 2.05 | -0.34 | 1.56x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +41.2% | -6.4pp | +23.7% | ✗ |
+| 2023-12-29 | $60.74 | NextEra Energy Q3 2023 results | 2.05 | -0.37 | 1.63x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +39.3% | -8.5pp | +21.8% | ✗ |
+| 2024-01-05 | $62.08 | NextEra Energy Q3 2023 results | 2.05 | -0.39 | 1.75x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +38.0% | -12.1pp | +19.4% | ✗ |
+| 2024-01-12 | $61.04 | NextEra Energy Q3 2023 results | 2.05 | -0.26 | 1.66x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +40.0% | -8.9pp | +21.8% | ✓ |
+| 2024-01-19 | $57.26 | NextEra Energy Q3 2023 results | 2.05 | -0.15 | 1.38x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +53.6% | +7.3pp | +30.2% | ✓ |
+| 2024-01-26 | $58.48 | NextEra Energy Q4 2023 results | 2.70 | +1.33 | 0.39x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +53.6% | +8.5pp | +28.0% | ✓ |
+| 2024-02-02 | $58.15 | NextEra Energy Q4 2023 results | 2.70 | +1.35 | 0.38x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +55.9% | +12.3pp | +29.2% | ✓ |
+| 2024-02-09 | $56.58 | NextEra Energy Q4 2023 results | 2.70 | +1.58 | 0.37x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +65.8% | +24.5pp | +33.5% | ✓ |
+| 2024-02-16 | $57.03 | NextEra Energy Q4 2023 results | 2.70 | +1.56 | 0.37x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +72.1% | +32.7pp | +33.1% | ✓ |
+| 2024-02-23 | $56.78 | NextEra Energy Q4 2023 results | 2.70 | +1.58 | 0.38x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +73.3% | +36.1pp | +34.5% | ✓ |
+| 2024-03-01 | $55.21 | NextEra Energy Q4 2023 results | 2.70 | +1.60 | 0.36x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +77.9% | +41.3pp | +39.0% | ✓ |
+| 2024-03-08 | $57.81 | NextEra Energy Q4 2023 results | 2.70 | +1.35 | 0.39x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +65.1% | +30.9pp | +33.5% | ✓ |
+| 2024-03-15 | $60.08 | NextEra Energy Q4 2023 results | 2.70 | +1.29 | 0.42x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +61.8% | +29.4pp | +29.0% | ✓ |
+| 2024-03-22 | $61.78 | NextEra Energy Q4 2023 results | 2.70 | +1.23 | 0.45x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +52.0% | +24.8pp | +26.2% | ✓ |
+| 2024-03-28 | $63.91 | NextEra Energy Q4 2023 results | 2.70 | +1.17 | 0.47x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +50.0% | +25.9pp | +22.6% | ✓ |
+| 2024-04-05 | $64.18 | NextEra Energy Q4 2023 results | 2.70 | +1.17 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +52.1% | +22.7pp | +22.7% | ✓ |
+| 2024-04-12 | $63.08 | NextEra Energy Q4 2023 results | 2.70 | +1.20 | 0.46x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +56.2% | +20.3pp | +25.8% | ✓ |
+| 2024-04-19 | $64.30 | NextEra Energy Q4 2023 results | 2.70 | +1.15 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +49.9% | +3.6pp | +24.1% | ✓ |
+| 2024-04-24 | $66.56 | NextEra Energy Q1 2024 results | 2.05 | -0.04 | 0.51x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +49.8% | +5.7pp | +20.6% | ✓ |
+| 2024-05-03 | $70.14 | NextEra Energy Q1 2024 results | 2.05 | -0.11 | 0.57x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +44.5% | +0.8pp | +15.3% | ✓ |
+| 2024-05-10 | $73.79 | NextEra Energy Q1 2024 results | 2.05 | -0.17 | 0.63x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +32.2% | -12.2pp | +10.4% | ✓ |
+| 2024-05-17 | $76.09 | NextEra Energy Q1 2024 results | 2.05 | -0.21 | 0.67x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +28.5% | -13.8pp | +7.6% | ✗ |
+| 2024-05-24 | $76.61 | NextEra Energy Q1 2024 results | 2.05 | -0.21 | 0.68x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +21.4% | -22.2pp | +7.3% | ✗ |
+| 2024-05-31 | $80.02 | NextEra Energy Q1 2024 results | 2.05 | -0.26 | 0.74x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +14.3% | -31.9pp | +3.1% | ✗ |
+| 2024-06-07 | $75.39 | NextEra Energy Q1 2024 results | 2.05 | -0.20 | 0.66x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +19.9% | -21.0pp | +9.9% | ✗ |
+| 2024-06-14 | $73.06 | NextEra Energy Q1 2024 results | 2.05 | -0.15 | 0.62x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +23.9% | -15.4pp | +13.7% | ✗ |
+| 2024-06-21 | $72.81 | NextEra Energy Q1 2024 results | 2.05 | -0.14 | 0.61x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +25.4% | -14.5pp | +14.4% | ✗ |
+| 2024-06-28 | $70.81 | NextEra Energy Q1 2024 results | 2.05 | -0.10 | 0.58x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +31.5% | -5.2pp | +18.1% | ✗ |
+| 2024-07-05 | $72.09 | NextEra Energy Q1 2024 results | 2.05 | -0.13 | 0.60x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +28.8% | -8.1pp | +16.3% | ✗ |
+| 2024-07-12 | $76.00 | NextEra Energy Q1 2024 results | 2.05 | -0.20 | 0.67x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +21.7% | -15.7pp | +10.7% | ✗ |
+| 2024-07-19 | $72.00 | NextEra Energy Q1 2024 results | 2.05 | -0.13 | 0.60x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +29.6% | -8.4pp | +17.2% | ✗ |
+| 2024-07-25 | $73.44 | NextEra Energy Q2 2024 results | 1.75 | -0.47 | 0.62x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | +28.4% | -11.5pp | +15.3% | ✓ |
+| 2024-08-02 | $79.20 | NextEra Energy Q2 2024 results | 1.75 | -0.55 | 0.73x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +15.5% | -27.5pp | +7.4% | ✓ |
+| 2024-08-09 | $77.46 | NextEra Energy Q2 2024 results | 1.75 | -0.53 | 0.69x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +15.1% | -32.7pp | +10.2% | ✓ |
+| 2024-08-16 | $78.57 | NextEra Energy Q2 2024 results | 1.75 | -0.54 | 0.71x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +15.5% | -27.2pp | +8.9% | ✓ |
+| 2024-08-23 | $79.66 | NextEra Energy Q2 2024 results | 1.75 | -0.55 | 0.73x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +10.7% | -28.1pp | +7.7% | ✓ |
+| 2024-08-30 | $80.51 | NextEra Energy Q2 2024 results | 1.75 | -0.57 | 0.75x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +7.4% | -31.7pp | +6.8% | ✓ |
+| 2024-09-06 | $79.98 | NextEra Energy Q2 2024 results | 1.75 | -0.56 | 0.74x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +10.1% | -35.1pp | +7.7% | ✓ |
+| 2024-09-13 | $84.65 | NextEra Energy Q2 2024 results | 1.75 | -0.71 | 0.84x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +2.7% | -35.9pp | +2.1% | ✓ |
+| 2024-09-20 | $82.76 | NextEra Energy Q2 2024 results | 1.75 | -0.69 | 0.80x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +2.9% | -33.8pp | +4.6% | ✓ |
+| 2024-09-27 | $84.54 | NextEra Energy Q2 2024 results | 1.75 | -0.71 | 0.84x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -4.5% | -42.1pp | +2.5% | ✓ |
+| 2024-10-04 | $83.85 | NextEra Energy Q2 2024 results | 1.75 | -0.70 | 0.82x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -2.8% | -39.7pp | +3.3% | ✓ |
+| 2024-10-11 | $81.86 | NextEra Energy Q2 2024 results | 1.75 | -0.67 | 0.78x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +0.2% | -36.7pp | +5.7% | ✓ |
+| 2024-10-18 | $84.38 | NextEra Energy Q2 2024 results | 1.75 | -0.71 | 0.83x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +0.1% | -33.0pp | +2.4% | ✓ |
+| 2024-10-24 | $82.81 | NextEra Energy Q3 2024 results | 2.80 | +0.65 | 0.80x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +4.8% | -29.0pp | +4.2% | ✗ |
+| 2024-11-01 | $77.35 | NextEra Energy Q3 2024 results | 2.80 | +0.84 | 0.69x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +14.2% | -20.7pp | +11.6% | ✗ |
+| 2024-11-08 | $76.97 | NextEra Energy Q3 2024 results | 2.80 | +0.85 | 0.68x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +19.0% | -6.4pp | +12.2% | ✗ |
+| 2024-11-15 | $76.35 | NextEra Energy Q3 2024 results | 2.80 | +0.86 | 0.67x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +17.6% | -13.7pp | +13.2% | ✗ |
+| 2024-11-22 | $76.00 | NextEra Energy Q3 2024 results | 2.80 | +0.86 | 0.67x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +15.2% | -3.1pp | +13.7% | ✗ |
+| 2024-11-29 | $78.67 | NextEra Energy Q3 2024 results | 2.80 | +0.82 | 0.72x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +9.8% | - |
+| 2024-12-06 | $75.24 | NextEra Energy Q3 2024 results | 2.80 | +0.89 | 0.65x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +14.9% | - |
+| 2024-12-13 | $73.62 | NextEra Energy Q3 2024 results | 2.80 | +0.93 | 0.63x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +17.6% | - |
+| 2024-12-20 | $71.67 | NextEra Energy Q3 2024 results | 2.80 | +0.98 | 0.59x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +21.0% | - |
+| 2024-12-27 | $72.11 | NextEra Energy Q3 2024 results | 2.80 | +0.97 | 0.60x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +20.4% | - |
+| 2025-01-03 | $71.99 | NextEra Energy Q3 2024 results | 2.80 | +0.97 | 0.60x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +20.7% | - |
+| 2025-01-10 | $67.38 | NextEra Energy Q3 2024 results | 2.80 | +1.11 | 0.53x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +29.2% | - |
+| 2025-01-17 | $70.76 | NextEra Energy Q3 2024 results | 2.80 | +1.01 | 0.58x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +23.2% | - |
+| 2025-01-24 | $72.83 | NextEra Energy Q4 2024 results | 1.50 | -0.79 | 0.75x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | +19.8% | - |
+| 2025-01-31 | $71.56 | NextEra Energy Q4 2024 results | 1.50 | -0.77 | 0.72x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +21.9% | - |
+| 2025-02-07 | $68.27 | NextEra Energy Q4 2024 results | 1.50 | -0.71 | 0.65x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +27.7% | - |
+| 2025-02-14 | $68.06 | NextEra Energy Q4 2024 results | 1.50 | -0.70 | 0.64x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +28.0% | - |
+| 2025-02-21 | $71.58 | NextEra Energy Q4 2024 results | 1.50 | -0.76 | 0.71x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +21.5% | - |
+| 2025-02-28 | $70.17 | NextEra Energy Q4 2024 results | 1.50 | -0.73 | 0.68x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +23.7% | - |
+| 2025-03-07 | $72.83 | NextEra Energy Q4 2024 results | 1.50 | -0.78 | 0.74x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | +19.0% | - |
+| 2025-03-14 | $73.55 | NextEra Energy Q4 2024 results | 1.50 | -0.79 | 0.75x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | +17.6% | - |
+| 2025-03-21 | $70.88 | NextEra Energy Q4 2024 results | 1.50 | -0.75 | 0.70x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +21.9% | - |
+| 2025-03-28 | $70.45 | NextEra Energy Q4 2024 results | 1.50 | -0.74 | 0.69x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +22.4% | - |
+| 2025-04-04 | $66.91 | NextEra Energy Q4 2024 results | 1.50 | -0.67 | 0.62x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +28.6% | - |
+| 2025-04-11 | $65.81 | NextEra Energy Q4 2024 results | 1.50 | -0.65 | 0.60x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +30.4% | - |
+| 2025-04-17 | $66.31 | NextEra Energy Q4 2024 results | 1.50 | -0.66 | 0.61x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +29.2% | - |
+| 2025-04-24 | $66.35 | NextEra Energy Q1 2025 results | 2.55 | +0.88 | 0.61x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +28.7% | - |
+| 2025-05-02 | $67.09 | NextEra Energy Q1 2025 results | 2.55 | +0.86 | 0.62x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +26.8% | - |
+| 2025-05-09 | $70.31 | NextEra Energy Q1 2025 results | 2.55 | +0.75 | 0.68x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +20.5% | - |
+| 2025-05-16 | $75.00 | NextEra Energy Q1 2025 results | 2.55 | +0.63 | 0.78x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +12.4% | - |
+| 2025-05-23 | $67.76 | NextEra Energy Q1 2025 results | 2.55 | +0.83 | 0.63x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +24.2% | - |
+| 2025-05-30 | $70.64 | NextEra Energy Q1 2025 results | 2.55 | +0.74 | 0.69x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +19.0% | - |
+| 2025-06-06 | $72.16 | NextEra Energy Q1 2025 results | 2.55 | +0.70 | 0.72x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +16.4% | - |
+| 2025-06-13 | $74.78 | NextEra Energy Q1 2025 results | 2.55 | +0.65 | 0.78x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +12.3% | - |
+| 2025-06-20 | $71.53 | NextEra Energy Q1 2025 results | 2.55 | +0.72 | 0.71x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +17.2% | - |
+| 2025-06-27 | $70.89 | NextEra Energy Q1 2025 results | 2.55 | +0.73 | 0.70x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +18.1% | - |
+| 2025-07-03 | $73.88 | NextEra Energy Q1 2025 results | 2.55 | +0.66 | 0.76x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +13.1% | - |
+| 2025-07-11 | $74.40 | NextEra Energy Q1 2025 results | 2.55 | +0.65 | 0.77x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +12.0% | - |
+| 2025-07-18 | $75.95 | NextEra Energy Q1 2025 results | 2.55 | +0.52 | 0.81x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | +9.3% | - |
+| 2025-07-24 | $71.97 | NextEra Energy Q2 2025 results | 2.65 | +0.83 | 0.72x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +14.9% | - |
+| 2025-08-01 | $70.40 | NextEra Energy Q2 2025 results | 2.65 | +0.88 | 0.69x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +17.0% | - |
+| 2025-08-08 | $72.41 | NextEra Energy Q2 2025 results | 2.65 | +0.82 | 0.73x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +13.4% | - |
+| 2025-08-15 | $75.41 | NextEra Energy Q2 2025 results | 2.65 | +0.75 | 0.79x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +8.6% | - |
+| 2025-08-22 | $76.32 | NextEra Energy Q2 2025 results | 2.65 | +0.63 | 0.82x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +7.0% | - |
+| 2025-08-29 | $72.05 | NextEra Energy Q2 2025 results | 2.65 | +0.83 | 0.72x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +13.1% | - |
+| 2025-09-05 | $70.90 | NextEra Energy Q2 2025 results | 2.65 | +0.86 | 0.70x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +14.7% | - |
+| 2025-09-12 | $71.64 | NextEra Energy Q2 2025 results | 2.65 | +0.85 | 0.71x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +13.4% | - |
+| 2025-09-19 | $71.08 | NextEra Energy Q2 2025 results | 2.65 | +0.86 | 0.70x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +14.3% | - |
+| 2025-09-26 | $75.85 | NextEra Energy Q2 2025 results | 2.65 | +0.65 | 0.80x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +7.7% | - |
+| 2025-10-03 | $80.06 | NextEra Energy Q2 2025 results | 2.65 | +0.56 | 0.91x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +2.9% | - |
+| 2025-10-10 | $83.35 | NextEra Energy Q2 2025 results | 2.65 | +0.50 | 1.00x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | -0.2% | - |
+| 2025-10-17 | $84.53 | NextEra Energy Q2 2025 results | 2.65 | +0.48 | 1.03x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 2/8 FAIR | - | - | -0.7% | - |
+| 2025-10-24 | $84.41 | NextEra Energy Q2 2025 results | 2.65 | +0.48 | 1.03x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 2/8 FAIR | - | - | +0.4% | - |
+| 2025-10-29 | $81.76 | NextEra Energy Q3 2025 results | 2.40 | +0.24 | 0.95x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +4.4% | - |
+| 2025-11-07 | $83.93 | NextEra Energy Q3 2025 results | 2.40 | +0.20 | 1.01x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | +1.3% | - |
+| 2025-11-14 | $83.88 | NextEra Energy Q3 2025 results | 2.40 | +0.20 | 1.01x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | +0.8% | - |
+| 2025-11-21 | $83.48 | NextEra Energy Q3 2025 results | 2.40 | +0.21 | 1.00x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | +1.5% | - |
+| 2025-11-28 | $86.29 | NextEra Energy Q3 2025 results | 2.40 | +0.17 | 1.08x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2025-12-05 | $83.13 | NextEra Energy Q3 2025 results | 2.40 | +0.22 | 0.99x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2025-12-12 | $81.65 | NextEra Energy Q3 2025 results | 2.40 | +0.25 | 0.95x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2025-12-19 | $79.54 | NextEra Energy Q3 2025 results | 2.40 | +0.28 | 0.89x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
+| 2025-12-26 | $80.41 | NextEra Energy Q3 2025 results | 2.40 | +0.27 | 0.92x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-01-02 | $80.93 | NextEra Energy Q3 2025 results | 2.40 | +0.36 | 0.93x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-01-09 | $79.89 | NextEra Energy Q3 2025 results | 2.40 | +0.38 | 0.90x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-01-16 | $83.63 | NextEra Energy Q3 2025 results | 2.40 | +0.32 | 1.00x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2026-01-23 | $84.81 | NextEra Energy Q3 2025 results | 2.40 | +0.29 | 1.04x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2026-01-28 | $87.57 | NextEra Energy Q4 2025 results | 3.00 | +1.06 | 0.82x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-02-06 | $89.47 | NextEra Energy Q4 2025 results | 3.00 | +0.93 | 0.85x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-02-13 | $93.80 | NextEra Energy Q4 2025 results | 3.00 | +0.85 | 0.95x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-02-20 | $92.18 | NextEra Energy Q4 2025 results | 3.00 | +0.90 | 0.90x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-02-27 | $93.77 | NextEra Energy Q4 2025 results | 3.00 | +0.88 | 0.94x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-03-06 | $91.02 | NextEra Energy Q4 2025 results | 3.00 | +0.92 | 0.88x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-03-13 | $92.78 | NextEra Energy Q4 2025 results | 3.00 | +0.89 | 0.91x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-03-20 | $89.50 | NextEra Energy Q4 2025 results | 3.00 | +0.95 | 0.85x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-03-27 | $91.40 | NextEra Energy Q4 2025 results | 3.00 | +0.91 | 0.88x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-04-02 | $93.15 | NextEra Energy Q4 2025 results | 3.00 | +0.89 | 0.92x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-04-10 | $94.08 | NextEra Energy Q4 2025 results | 3.00 | +0.88 | 0.94x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-04-17 | $91.98 | NextEra Energy Q4 2025 results | 3.00 | +0.91 | 0.90x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-04-24 | $95.28 | NextEra Energy Q1 2026 results | 2.50 | +0.04 | 1.53x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2026-05-01 | $96.95 | NextEra Energy Q1 2026 results | 2.50 | +0.01 | 1.61x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-05-08 | $93.10 | NextEra Energy Q1 2026 results | 2.50 | +0.08 | 1.43x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2026-05-15 | $93.36 | NextEra Energy Q1 2026 results | 2.50 | +0.08 | 1.44x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2026-05-22 | $88.55 | NextEra Energy Q1 2026 results | 2.50 | +0.16 | 1.25x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2026-05-29 | $87.01 | NextEra Energy Q1 2026 results | 2.50 | +0.29 | 1.19x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-06-05 | $85.84 | NextEra Energy Q1 2026 results | 2.50 | +0.31 | 1.15x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-06-12 | $85.99 | NextEra Energy Q1 2026 results | 2.50 | +0.31 | 1.16x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-06-18 | $86.75 | NextEra Energy Q1 2026 results | 2.50 | +0.30 | 1.18x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-06-26 | $88.56 | NextEra Energy Q1 2026 results | 2.50 | +0.16 | 1.25x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-07-02 | $88.34 | NextEra Energy Q1 2026 results | 2.50 | +0.17 | 1.24x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-07-10 | $87.96 | NextEra Energy Q1 2026 results | 2.50 | +0.18 | 1.23x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-07-17 | $88.80 | NextEra Energy Q1 2026 results | 2.50 | +0.16 | 1.26x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-07-24 | $89.78 | NextEra Energy Q2 2026 results | 2.80 | +0.60 | 1.18x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2026-07-31 | $86.92 | NextEra Energy Q2 2026 results | 2.80 | +0.75 | 1.09x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-08-07 | $84.65 | NextEra Energy Q2 2026 results | 2.80 | +0.80 | 1.02x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-08-14 | $86.19 | NextEra Energy Q2 2026 results | 2.80 | +0.78 | 1.06x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-08-21 | $83.65 | NextEra Energy Q2 2026 results | 2.80 | +0.82 | 0.99x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-08-28 | $81.84 | NextEra Energy Q2 2026 results | 2.80 | +0.88 | 0.94x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-09-04 | $83.43 | NextEra Energy Q2 2026 results | 2.80 | +0.84 | 0.98x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-09-11 | $82.31 | NextEra Energy Q2 2026 results | 2.80 | +0.88 | 0.95x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-09-18 | $80.47 | NextEra Energy Q2 2026 results | 2.80 | +0.92 | 0.91x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-09-25 | $76.08 | NextEra Energy Q2 2026 results | 2.80 | +1.02 | 0.80x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-10-02 | $76.83 | NextEra Energy Q2 2026 results | 2.80 | +1.00 | 0.82x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-10-09 | $77.38 | NextEra Energy Q2 2026 results | 2.80 | +0.99 | 0.83x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-10-16 | $79.80 | NextEra Energy Q2 2026 results | 2.80 | +0.94 | 0.89x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-10-22 | $81.90 | NextEra Energy Q3 2026 results | 2.65 | +0.40 | 1.03x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
+| 2026-10-30 | $83.71 | NextEra Energy Q3 2026 results | 2.65 | +0.37 | 1.08x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-11-06 | $86.95 | NextEra Energy Q3 2026 results | 2.65 | +0.31 | 1.19x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-11-13 | $85.12 | NextEra Energy Q3 2026 results | 2.65 | +0.35 | 1.13x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-11-20 | $83.45 | NextEra Energy Q3 2026 results | 2.65 | +0.37 | 1.07x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |

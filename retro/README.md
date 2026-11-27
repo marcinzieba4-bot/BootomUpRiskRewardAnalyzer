@@ -28792,6 +28792,198 @@ Judgement calls that could carry hindsight:
 
 The hindsight results for 2018-2021 are in `staging/retrospective/NEE/FINDINGS.md` ("2018-2021"): hypotheses, never inputs.
 
+### NEE 2022-2026: the FY2021-FY2025 vintages at GAAP, the one-off tests, a $0.00 year-ago quarter, the Dominion merger agreement, the last date 2026-11-20
+
+255 weekly dates, 2022-01-07 to 2026-11-20 (52, 52, 52, 52, 47), added to the 731 of 2008-2021 at the owner's request ("find newest code.
+do retrospective analysis for NEE, 2022-2026. same rules as before"), on the same fact sheet, builder, engine, method (r2) and 1997-2006
+rule-T thresholds. **Built in a new session without opening the 2008-2021 outcomes or findings** (no `outcome.json`, `FINDINGS.md` or
+`SERIES.md` of NEE was read before the 2022-2026 outcomes below were computed). The newest code is the coordinating session's branch
+(`claude/sharp-albattani-rdvlgi`: CRM 2008-2026, SCHW 2008-2021, NEE 2008-2021), checked out as the base; nothing else was merged in.
+A parallel SCHW session changes only its own entries in the shared files. The series was built on Friday 2026-11-27 during the session
+(Yahoo's bar for that day is not a close; the market closes at 13:00 ET that day), so the range ends on 2026-11-22 and the last date is
+2026-11-20 (the CRM 2022-2026 and KMI rule). A rebuild after a later close adds dates; it does not move these. The newest dates have no
+outcome yet.
+
+```bash
+python3 retro/tools/edgar.py fetch 753308 <dir> --from 2022-01-01 --to 2026-11-27 --forms 8-K 8-K/A 10-K 10-K/A
+python3 retro/tools/edgar.py fetch 753308 <dir> --from 2015-01-01 --to 2019-12-31 \
+    --acc 0000753308-15-000079 0000753308-16-000337 0000753308-17-000060 0000753308-18-000013 0000753308-19-000039   # first-year shares
+python3 -I retro/generators/nee/gen_nee_2226.py --filings <dir>            # appends NE114-NE142; asserts every earlier fact unchanged
+python3 -I retro/tools/verbatim.py <dir>/checklist_nee_2226.json            # 989/989
+python3 retro/build_nee.py --weekly 2022-01-03 2026-11-22                   # 255 dates, 2022-01-07 .. 2026-11-20
+for d in staging/retrospective/NEE/202[2-6]-*/; do python3 retro/retro_tool.py --archive staging/retrospective run "$d"; done
+python3 retro/generators/nee/controls_nee_2226.py                           # 54 controls
+python3 retro/generators/nee/sens_nee_2226.py <scratch>                     # the sensitivity below
+for c in 2022-01-10 2022-01-25 2022-02-18 2022-06-14 2022-07-22 2022-10-28 2023-01-25 2023-02-21 2024-01-25 2024-02-20 \
+         2024-06-11 2025-01-24 2025-02-14 2025-12-08 2026-01-05 2026-01-27 2026-02-17 2026-07-24 2026-11-21; do python3 retro/tools/firewall.py $c NEE; done
+```
+
+**A full-data batch.** `www.sec.gov` served every document to the plain client name of `edgar.py` (no contact address; the owner's email
+was not used). Read, by the session's model directly with no delegated transcription: the twenty earnings releases of Q4 2021 to Q3 2026
+(8-K exhibits 99: the segment statements of income for the quarter, the year-ago quarter and, in Q4, the twelve months; the
+reconciliations to adjusted earnings and the after-tax footnote tables; the outlook paragraphs); the FY2021-FY2025 10-Ks' statements of
+income, EPS note, cash flow statement, FPL statement of income, segment note, Items 1, 1A and 5; the diluted share counts of the
+FY2014-FY2018 10-Ks' statements of income (each new vintage's first year, the earlier vintages' encoding); and every 8-K of January 2022
+to November 2026 by its items and text. **Not read:** the 10-Qs, the proxy statements and the S-4 and joint proxy statement/prospectus of
+the Dominion merger (filed under other forms), the investor presentations and call transcripts (not filed, except the merger 8-K's
+investor presentation exhibit, read for an outlook), and NextEra Energy Partners' (XPLR Infrastructure's) own filings. The facts are
+appended by a new committed generator, `retro/generators/nee/gen_nee_2226.py` (the 2018-2021 generator's discipline: each figure from its
+own row by label under an anchored heading, the segment columns read by name and asserted to sum to NextEra Energy's total, each Q4
+release's full year asserted equal to the next 10-K's, every rate computed, every quotation asserted in its own filing); the 989 strings
+were checked with `verbatim.py` (989/989). Source ids `NE114`-`NE118` (the FY2021-FY2025 10-Ks), `NE119`-`NE138` (the releases) and
+`NE139`-`NE142` (the Item 7.01 8-Ks of 2022-06-14, 2024-06-11, 2025-12-08 and 2026-01-02). Decided on 2026-11-27, before any 2022-2026
+model was built or outcome computed:
+
+- **Release timing.** Every earnings 8-K of Q4 2021 to Q3 2026 was accepted before the open (07:31-07:49 ET). Four came on a Friday
+  (2022-07-22, 2022-10-28, 2025-01-24, 2026-07-24) and date their own weeks ("day of the print, public before the open"); the others
+  date the next trading day. The 10-Ks: FY2021 accepted 2022-02-18 06:28 ET (that day, before the open), FY2022 2023-02-17 16:25 ET
+  (2023-02-21, after Presidents' Day), FY2023 2024-02-16 17:17 ET (2024-02-20), FY2024 2025-02-14 14:23 ET (during the session, a
+  Friday: that day's close), FY2025 2026-02-13 16:19 ET (2026-02-17). A Q4 print extends the history to its 10-K: FY2021 on 2022-01-26
+  to 2022-02-11 (3 dates), FY2022 on 2023-01-26 to 2023-02-17 (4), FY2023 on 2024-01-26 to 2024-02-16 (4), FY2024 on 2025-01-24 to
+  2025-02-07 (3), FY2025 on 2026-01-28 to 2026-02-13 (3).
+- **Vintages: the ten years to the latest one, each from the latest 10-K that reports it.** The FY2021-FY2025 10-Ks reserve Item 6
+  ("Item 6. Reserved", asserted), so each vintage takes its three years from its statements of income and keeps the earlier years as the
+  previous vintage holds them (the FY2020 and ACN FY21 rule). The FY2024 and FY2025 10-Ks give the segment revenues in the new
+  segment-expense tables (the standard adopted 2024-01-01: FPL, NEER and their total, then Corporate and Other and the consolidated total
+  on rows of their own), read by label and asserted to add up. Gulf Power, merged into FPL on 2021-01-01, is a segment column of the FY2021
+  10-K and the Q4 2021 release only; from the FY2022 vintage the business line names FPL alone. 2013 (in the FY2021 and FY2022 vintages)
+  stays at $4.47, the Maine hydro gain in, noted as before; 2016-2020 are on the post-split basis from the vintages published after
+  2020-10-27 (`on_basis`).
+- **EPS: GAAP every year, FY2021-FY2025 facing the AAPL FY2002 test and its mirror** (FY21 $1.81, FY22 $2.10, FY23 $3.60, FY24 $3.37,
+  FY25 $3.30). Each Q4 release's after-tax footnote table lists the items its adjusted earnings remove; leaving out the recurring
+  mark-to-market effect of non-qualifying hedges and the decommissioning funds' unrealized gains and losses and OTTI (the PEP 2008 core
+  rule), the one-off items are: 2021 differential membership interests $98M and NEP investment gains -$27M against $3,573M of net income;
+  2022 $87M, -$186M and the Mountain Valley Pipeline impairment $674M against $4,147M; 2023 $49M, NEP investment losses $963M, the gain
+  on disposal of businesses/assets -$306M (the year of the Florida City Gas sale) and $38M against $7,310M; 2024 $5M and XPLR investment losses $852M against $6,946M; 2025 XPLR investment
+  losses $656M against $6,835M. No year's charges exceed its income and no year's benefits exceed its income without them (the
+  generator computes and asserts both; the vintages' notes state each year's items with the filing's own figures). FY2017 and FY2018 stay
+  at GAAP as decided in 2018-2021 and are in every window of the range (2016-2025 at the last vintage).
+- **No guide gives a field** (the PEP 2008 core rule, as before). Every expectation of 2022-2026 is adjusted earnings per share: FY2022
+  $2.75-2.85 (Q4 2021), raised to $2.80-2.90 at the investor conference (the 8-K of 2022-06-14); FY2023 $2.98-3.13; FY2024 $3.23-3.43
+  (reaffirmed by the 8-K of 2024-06-11); FY2025 $3.45-3.70, tightened to $3.62-3.70 by the 8-K of 2025-12-08 and restated by the 8-K of
+  2026-01-02 (accepted 16:31 ET, dated 2026-01-05); FY2026 $3.92-4.02 ("targeting the high end" from Q1 2026). Each record runs from the
+  filing that states it for the year it makes current; a sentence that also lists later years' ranges is quoted in fragments that name
+  none of them, with a note saying which range is the current year's (asserted: no quote names a later year). The longer-term ranges and
+  growth rates (through 2027, "8%+" through 2032 and 2035, the merger's "9%+") concern later years and are not quoted. So the last full
+  year's GAAP EPS stands: FY20's $1.48 to 2022-01-21, FY21's $1.81 from 2022-01-26, FY22's $2.10 from 2023-01-26, FY23's $3.60 from
+  2024-01-26, FY24's $3.37 from 2025-01-24, FY25's $3.30 from 2026-01-28. BASE is still the latest quarter's revenue growth as reported;
+  no filing guides revenue or a margin in numbers.
+- **The Q4 2021 print's year-ago EPS is $0.00** (Q4 2020, the Mountain Valley Pipeline impairment), so its EPS growth has no value (n/m):
+  it is None, scores BASE and prints n/r (the F rule, whose builder gives a non-positive year-ago EPS no growth rate). The engine read that
+  value with `float()`, so the builder derives a third copy, `nee3_engine.py.tmpl` (the None-tolerant copy with one edit and its comment,
+  `eps_engine`, asserted once each; the committed copy is checked equal to it), and uses it only on the 12 dates whose latest print is
+  Q4 2021 (2022-01-26 to 2022-04-14). The copy's table says "not reported now" for a figure that is reported but has no rate; the print's
+  EPS note says why. Measured below.
+- **Dividends** from each 10-K's sentence ("In February 2022, NEE announced that it would increase its quarterly dividend on its common
+  stock from $0.385 per share to $0.425 per share.", then $0.4675, $0.515, $0.5665 and $0.6232); the releases' and investor
+  conferences' dividend growth words are not a rate.
+- **The Dominion Energy merger agreement adds nothing.** "On May 15, 2026, NextEra Energy, Inc. ... and Dominion Energy, Inc. ... entered
+  into an Agreement and Plan of Merger" (the 8-K of 2026-05-18, Items 1.01 and 7.01: 0.8138 NextEra shares and a pro rata share of
+  $360 million in cash for each Dominion share); NEE's shareholders approved the share issuance on 2026-09-03 (Item 5.07), and it has
+  not closed by 2026-11-20 (termination date 2027-11-15, extendable). Nothing of Dominion is in any figure; the merger's adjusted EPS
+  growth expectations and "immediately accretive" are later years' words. A completed merger enters the figures as published (the
+  Gulf Power, CB and SCHW rule).
+- **ENERGY_TRANSITION stays on the watch list** on each vintage's own 10-K words: "NEER's oil and gas production assets represented
+  approximately 14% and 14% ..." (FY2021), 15% and 14%, 16% and 15%, then "NEER's natural gas and oil production assets represented
+  approximately 15% and 16%" (FY2024) and 13% and 15% (FY2025), and the greenhouse gas sentence, whose opening clause ("While NEE's and
+  FPL's electric generation portfolio emits greenhouse gases at a lower rate ...") the FY2024 and FY2025 10-Ks drop, leaving "The results
+  of operations of NEE and FPL could be materially adversely affected to the extent that new federal or state laws or regulations
+  impose any new greenhouse gas emission limits." GENAI (live 2022-11-30) and GLP1 (2023-08-08) join the live themes the "why" quotes
+  by scope; neither names an electric utility (AI's demand for power is not a substitution theme in the registry). No FY2021-FY2025 10-K
+  uses the word cyclical (asserted). DURABLE, risk 2. The FY2025 10-K's NEER line reads "NEER's strategic focus is centered on the
+  development, construction and operation of long-term contracted generation facilities, ..." in place of "produces the majority of its
+  energy from clean and renewable sources", quoted as the 10-K words it.
+- **"XPLR Infrastructure"** (NextEra Energy Partners' later name) joins the anachronism list from 2025-01-24, its first appearance in the
+  filings read (the Q4 2024 release); the partnership's own filings were not searched.
+- **Adds nothing:** the CEO succession (2022-01-25) and the FPL CEO succession (2026-05-18), the Mountain Valley Pipeline 8-K
+  (2022-02-18), the campaign-finance statement and risk factor (2023-01-25), the CEO's trading plan (2023-03-17), FPL's rate case
+  notification, petition and settlement (2024-12-30, 2025-02-28, 2025-11-20; effective from January 2026, its revenues reaching the prints
+  as published), the merger's supplemental disclosures, bylaw amendments and Virginia benefits package (2026-07-08, 2026-08-25,
+  2026-09-14), and the financing, equity unit, officer, board and vote 8-Ks. None changes a guided number for the current year.
+
+Builder changes (each acts only on facts or dates the earlier models do not have; the 731 dates of 2008-2021 rebuild byte-identical):
+`check_print` gives a $0.00 year-ago EPS no growth rate (refused before 2022, as before); a latest print with None EPS growth is built with
+`eps_engine(nr_engine(engine))`, the committed `nee3_engine.py.tmpl`. The generator, controls and sensitivity scripts are new files.
+
+Controls and checks (before any outcome):
+- **`retro_tool run` passes on all 255 dates.** 148 dates (2024-01-26 to 2026-11-20) carry a false calendar-year warning:
+  "2030", "2031", "2059", "2070" and "2071" are the FY2023-FY2025 diluted share counts in millions in `SHARES_HIST` (2,030.8, 2,059.2,
+  2,070.6), not years (the 2018-2021 batch's "2057" case).
+- **Controls** (`controls_nee_2226.py`): each print's FPL net income (20), each Q4 print's full-year revenue (5), each vintage's last-year
+  revenue (5) and each guide's quoted text (24): 54 controls, none changes a model dated before its publication, and all 54 change the
+  first weekly date on or after it (none inert). The Q4 prints' full-year figures live exactly from their prints to their 10-Ks (3, 4, 4,
+  3 and 3 dates); the Q4 2021 print's control changes its 12 dates, which run on `nee3_engine.py.tmpl`.
+- **Leak scan** (`leak_scan.py NEE --from 2022-01-01`): 0 hits in 91,901 (model, later token) pairs after dropping 27,958 carried tokens;
+  the latest print's token appears in each of the 255 models.
+- **Forward references:** 0 over the 78 facts of 2022-2026. **Self-text scan:** 0 misses of 1,444 tokens over 78 facts, against the 113
+  dated filings; its first run found 11, all the one-off test sentence's own computed "income without them" ($3,546M, $3,961M), which no
+  filing prints: the sentence now states only the filings' figures ("the benefits to less than half of it"), fixed before the build was
+  committed.
+- **Regression:** no shared code changed but the anachronism list; the 731 dates of 2008-2021 rebuild byte-identical in their four
+  per-range runs.
+- **Firewall** (run after the build, validation outputs and README section were committed and pushed, before any 2022-2026 outcome):
+  it passes at all 19 cutoffs above (the first week after the first built date, each print and 10-K date that changes the anchor or the
+  vintage, the four Friday prints, the four Item 7.01 8-Ks' dates and 2026-11-21: 732 to 986 dates each, the 2008-2021 dates included),
+  0 files changed and no planted text, with the plant of 2008-2021 (a later print with its full-year actuals, display-only guides, a
+  vintage whose texts, figures and transition quotes are planted, a dividend, a listing symbol, a company name and prices from the cutoff
+  multiplied by 10). No later split is planted: the price data's only split after 2005 is the encoded one of 2020-10-27.
+
+Seen in the build (method behaviour, not tuned):
+- **Totals: CHEAP 99, RICH 95, FAIR 61.** 2022: RICH 48, FAIR 4. 2023: RICH 21, FAIR 19, CHEAP 12. 2024: CHEAP 34, RICH 13, FAIR 5. 2025:
+  CHEAP 28, RICH 13, FAIR 11. 2026: CHEAP 25, FAIR 22. Legacy tiers: BUY 95, ACCUMULATE 76, AVOID 42, WATCHLIST 42.
+- **January 2022 on FY20's $1.48** (3 dates): $82.60-86.41 is 55.8-58.4x, the 96th-98th percentile of a 17.6x median: RICH and AVOID.
+- **FY21's $1.81** (2022-01-26 to 2023-01-20, 52 dates): $69.80-90.47 is 38.6-50.0x, the 74th-98th percentile of a 17.7-18.8x median:
+  RICH 45, FAIR 7 (from the Q3 2022 print, as BASE turns to +53.8%).
+- **FY22's $2.10** (2023-01-26 to 2024-01-19, 52): $50.24-78.99 is 23.9-37.6x, the 54th-74th percentile of an 18.8-22.5x median: RICH 22,
+  FAIR 18, CHEAP 12 (August to October 2023, as the price falls and BASE stays high on Q1 and Q2 2023's +132.4% and +41.8%).
+- **FY23's $3.60** (2024-01-26 to 2025-01-17, 52): $55.21-84.65 is 15.3-23.5x, the 21st-61st percentile of a 19.4-20.5x median: CHEAP 37,
+  RICH 12 (August to October 2024, after the Q1 and Q2 2024 prints' -14.7% and -17.4% revenue), FAIR 3.
+- **FY24's $3.37** (2025-01-24 to 2026-01-23, 53): $65.81-86.29 is 19.5-25.6x, the 41st-64th percentile of a 20.9-21.9x median: CHEAP 25,
+  FAIR 15, RICH 13 (from the Q4 2024 print's -21.7% to the Q1 2025 print).
+- **FY25's $3.30** (2026-01-28 to 2026-11-20, 43): $76.08-96.95 is 23.1-29.4x, the 48th-67th percentile of a 22.1-24.2x median: CHEAP 25,
+  FAIR 18.
+- **BASE follows quarterly revenue as reported**, which carries NEER's non-qualifying hedge marks in operating revenues: +14.8% (Q4
+  2021), -22.4%, +32.0%, +53.8% (2022), +22.2% (Q4 2022), +132.4% (Q1 2023, against Q1 2022's hedge losses), +41.8%, +6.7%, +11.6% (Q4
+  2023), -14.7%, -17.4%, +5.5%, -21.7% (Q4 2024), +9.0%, +10.4%, +5.3%, +20.7% (Q4 2025), +7.3%, +12.4%, +1.6%, each with the decade's
+  dilution. The window's median rises from 17.6x to 24.2x as the 2009-2015 regime (12-15x) leaves and the 2020-2022 multiples (40-60x on
+  GAAP $1.48-2.10) fill it.
+
+How far each call moves the classes of 2022-2026 (the 255 dates rebuilt with one encoding changed and classified offline with `retro_tool`'s
+own classifier, `sens_nee_2226.py`; no outcome consulted):
+- **FY2021-FY2025 at the company's adjusted EPS** ($2.55, $2.90, $3.17, $3.43, $3.71; each Q4 release's adjusted full year, which also
+  removes the recurring mark-to-market items): **121 classes** (CHEAP to FAIR 45, RICH to FAIR 28, FAIR to RICH 19, FAIR to CHEAP 14,
+  CHEAP to RICH 13, RICH to CHEAP 2; 2022-10-14 to 2026-10-16) and 157 tiers. **The batch's largest call**;
+- FY2017-FY2025 all at the company's adjusted EPS ($6.70, $7.70, $8.37, then $2.31 to $3.71 after the split): 107 classes and 141 tiers;
+- the adjusted EPS outlook's midpoint as the current-FY EPS (the latest numeric range for the year; history GAAP): 96 classes (FAIR to
+  CHEAP 48, RICH to CHEAP 34, CHEAP to FAIR 9; 2022-07-22 to 2026-11-20) and 123 tiers;
+- FY2017 and FY2018 at the company's adjusted EPS (the 2018-2021 batch's call, still in every window): 59 classes (FAIR to CHEAP 38, RICH to
+  FAIR 21; 2022-11-11 to 2026-11-20) and 93 tiers;
+- every reported data signal at its BEAR value (FPL's energy sales left n/r): 124 classes (CHEAP to RICH 60, FAIR to RICH 48, CHEAP to FAIR
+  16); at its XBULL value: 55 (RICH to CHEAP 18, FAIR to CHEAP 21, RICH to FAIR 16); no tier either way;
+- FPL's energy sales, n/r since the Q4 2017 print, at its BEAR value instead of BASE: 4 classes; at its XBULL value: 46 (2024-07-25 to
+  2026-11-20); no tier either way;
+- the releases' adjusted quarterly EPS for the EPS signal: 14 classes, no tier;
+- the Q4 2021 print's n/m EPS growth at its BEAR or XBULL value instead of BASE: no class and no tier (its 12 dates are RICH or FAIR either way).
+The 2022 RICH calls rest on the multiple (39-58x on GAAP $1.48 and $1.81 against a 17-19x median) and survive every anchor variant but
+the adjusted history from late 2022; the 2023-2026 classes sit near the window's median (15-29x against 19-24x), so they move with BASE's
+reported revenue swings and with each anchor or signal reading.
+
+Judgement calls that could carry hindsight:
+- **GAAP rather than the company's adjusted earnings for FY2021-FY2025** (121 classes), the one-off tests read on the after-tax table with
+  the hedge and decommissioning-fund items treated as recurring, by a builder who knows how NextEra's earnings and multiple ran after 2022;
+- FY2017 and FY2018 kept at GAAP from 2018-2021, still in every window (59 classes);
+- the adjusted outlooks display only (96 classes on their midpoint);
+- the Q4 2021 print's EPS growth as n/m (BASE) against $0.00 (no class either way);
+- the current-year ranges of four Item 7.01 8-Ks recorded as display-only guides (text only), and the quotes cut to the current year's range;
+- the Dominion merger agreement read as adding nothing until it closes;
+- FPL's energy sales read as n/r (BASE), as in 2018-2021 (46 classes at XBULL);
+- the frozen 1997-2006 thresholds and the signals (124 classes at BEAR, 55 at XBULL), with hedge marks in reported revenue;
+- ENERGY_TRANSITION on the watch list on the 10-Ks' natural gas and oil words (text only), DURABLE, risk 2, as before;
+- the parts of the filings listed above as not read: a number guided only on a call, in a presentation or in the merger's proxy
+  statement, or a kWh figure only in a 10-Q, would be missed, though every release and every Item 7.01 8-K was read.
+
+The hindsight results for 2022-2026 are in `staging/retrospective/NEE/FINDINGS.md` ("2022-2026"): hypotheses, never inputs.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
