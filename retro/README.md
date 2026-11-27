@@ -27571,6 +27571,158 @@ Judgement calls that could carry hindsight:
 The hindsight results for 2010-2013 are in `staging/retrospective/SCHW/FINDINGS.md`, computed after the firewall result was pushed:
 hypotheses, never inputs.
 
+### SCHW 2014-2017: four more vintages, after-close prints, two dividend increases, GAAP with the releases' per-share item tables, a cloud accounting sentence
+
+208 weekly dates, 2014-01-10 to 2017-12-29, on the same method, engine and rule-T thresholds. The owner asked for 2014-2017 ("same
+rules as before"); the code is the coordinating session's merge branch (`claude/sharp-albattani-rdvlgi`, commit "Merge NEE 2008-2009
+... with CRM 2008-2026 and SCHW 2008-2013"), and this batch is on `claude/schw-retro-2014-2017`, built on it without merging anything
+else. `www.sec.gov` again served every document to a plain client name (no contact address), so this is a full-data batch. Sources are
+`SCHW46`-`SCHW66`. A third generator (`retro/generators/schw/gen_schw_1417.py`) loads the 2008-2013 sheet and asserts every earlier
+source, vintage, print, dividend, listing and rule-T value unchanged; the 314 earlier models rebuild byte for byte.
+
+```bash
+python3 retro/build_schw.py --weekly 2014-01-06 2017-12-31                  # 208 dates, 2014-01-10 .. 2017-12-29
+for d in staging/retrospective/SCHW/201[4-7]-*/; do
+  python3 retro/retro_tool.py --archive staging/retrospective run "$d"
+  python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
+done
+python3 retro/retro_tool.py --archive staging/retrospective series SCHW
+for c in 2014-01-06 2014-01-16 2014-02-24 2014-04-15 2014-07-16 2014-10-16 2015-01-20 2015-02-24 2015-04-15 2015-07-17 2015-10-16 \
+         2016-01-20 2016-02-25 2016-04-18 2016-05-09 2016-07-19 2016-10-18 2017-01-19 2017-02-24 2017-04-19 2017-07-19 2017-10-17 \
+         2018-01-01; do python3 retro/tools/firewall.py $c SCHW; done
+```
+
+**Built in a new session.** This session did not open the 2008-2013 outcomes, `FINDINGS.md` or `SERIES.md` before the firewall result
+was pushed. It read CLAUDE.md and this README, whose SCHW sections state the 2008-2013 classes (no outcome). Like every session, its
+model knows what happened to Schwab after 2017; the dated fact sheet, the frozen rules and the validator are the protection. No decision
+below changes a rule, threshold, signal or window. Each follows the 2008-2013 encodings or an earlier ticker's, and each that could move a
+class is tested at the end.
+
+What was read (by the session's model directly, no delegated transcription; no filing accepted after 2017-12-31 opened): the FY2013-FY2016
+10-Ks (selected financial and operating data, the MD&A overview's client and financial metrics, the statements of income, Items 1, 1A and
+5, each searched for "cyclical", "offshore", "cloud", "e-commerce", "streaming", "electric vehicle", "decarbon", "climate",
+"cryptocurrenc" and "artificial intelligence"); every earnings release of Q4 2013 to Q3 2017 (the narrative and every sentence with a
+year and a forward word, the statements of income, the financial and operating highlights, the "EPS Impact of Certain Non-Recurring
+Items" tables, client assets and the activity report); all 42 8-Ks and 8-K/As of 2014-2017 by their item text; the 10-Qs of Q1 2014 to
+Q3 2017, compared by script with their releases on the five signal rows (every one matches) and searched for dividend sentences. **Not
+read:** the proxy statements, the exhibits of the debt, preferred and officer 8-Ks beyond their item text, the CFO commentary on the
+company's website and every presentation and press release the company did not file. Three outlooks were given only there: the Q1 2015
+release says "These results lag the outlook expressed in the company’s press release dated March 13, 2015", the Q4 2015 release that "we
+kept to the expense goals we laid out in February", and the Q4 2016 release announces a Business Update on February 2, 2017. None was
+filed, so their outlooks are unused (the CRM rule for unfiled guidance) and a guide stated only there is missed. The 223 strings of this
+batch were checked with `verbatim.py` against their own filings (223/223). Decided on 2026-11-27, before any 2014-2017 model was built or
+outcome computed:
+
+- **Release timing.** The Q4 2013 to Q2 2014 earnings 8-Ks and the Q1 2015 one were accepted during the session (13:48-15:55 ET) and keep
+  their days; from Q3 2014 every other one was accepted after the close (16:14-17:15 ET) and is dated the next trading day. Two of those
+  land on a Friday, the week's last trading day: Q2 2015 (accepted Thursday 2015-07-16 16:24 ET, dated 2015-07-17) and Q3 2015 (2015-10-15
+  16:20 ET, dated 2015-10-16). Public before that Friday's open, each meets that Friday's close (the AVGO and CRM rule). The SCHW builder
+  accepted a same-day print only "before the open" or "during market hours", so it now also accepts one "(after the close), so dated the
+  next trading day", tagged "public before the open" (no earlier model changes). The Q4 2014 release, accepted Friday 2015-01-16 16:46 ET,
+  is dated Tuesday 2015-01-20 (Martin Luther King Jr. Day between). The FY2013 10-K was accepted during the session (2014-02-24); the
+  FY2014-FY2016 10-Ks after the close (dated 2015-02-24, 2016-02-25, 2017-02-24). No filing states the release time.
+- **History: four vintages,** each year from the latest filing that reports it, the ten fiscal years to the latest one (FY2004-FY2013 to
+  FY2007-FY2016). GAAP diluted EPS per common share: FY13 $0.78, FY14 $0.95, FY15 $1.03, FY16 $1.31. Every year a later 10-K reports
+  equals the earlier vintage's figure (asserted), and each Q4 print's year equals its 10-K's. FY2003 leaves with the FY2013 10-K, and with it
+  FY2002's exclusion note (`eps_first_excluded` is empty from 2014-02-28; the CB 2014-2017 reading). The window is ten years from AS_OF on
+  every date, so its start (2003-01-01) no longer binds. From the FY2015 10-K the selected data print EPS and shares as "Diluted" rows under
+  a heading; the generator reads them there.
+- **EPS: GAAP, the listed items in.** The releases name non-recurring items (Q3 2014's $45 million insurance recovery and $68 million
+  geographic footprint charge, "Taken together, these two items reduced pre-tax income by approximately $23 million, or $0.01 per share";
+  the RMBS litigation proceeds and losses of Q4 2014 to 2016; the 2015 tax benefits). From Q3 2015 to Q4 2016 the releases tabulate "EPS
+  Impact of Certain Non-Recurring Items", each item's per-share effect, but no release, 10-Q or 10-K prints an EPS without them. So GAAP
+  stands (the ACN rule needs a company figure; the LMT reading of per-share effects without a total). No year meets the AAPL FY2002 test:
+  the items are cents a share against $0.95-$1.31. This is the batch's largest EPS call (below).
+- **No guide in a range or a level, so the rules are unchanged:** the last full year's EPS stands, BASE is the latest quarter's revenue
+  growth plus the net share change, and there is no margin step. One filed outlook is words, text only (`outlook_words`, while 2015 is
+  current): the Q1 2015 release's "our expected overall expense growth remains at a modest pace of approximately 4% for 2015", a cost
+  component (the Q1 2010 reading of "limit expense growth to about 4%"). The other forward sentences give no figure for the year ("right in
+  line with management expectations", "investing in our growth initiatives as planned during 2017"); the Q4 2013, Q4 2014 and Q4 2015
+  releases' targets ("our mid-$0.70s goal", "our earlier mid-to-high single-digit target", "we targeted mid-to-upper single digit revenue
+  growth") are stated after their year. The balance sheet sentences (bulk transfers of up to $8 billion, the $250 billion threshold "in
+  2018") are not revenue, EPS or margin.
+- **Dividends,** each rate from the first filing that states it: $0.06 a quarter to 2016-05-06; $0.07 from the Q1 2016 10-Q (2016-05-09:
+  "On April 21, 2016, the Board of Directors of the Company declared a one cent, or 17%, increase in the quarterly cash dividend to $0.07
+  per common share."); $0.08 from the FY2016 10-K (2017-02-24: the same sentence of January 26, 2017, "to $0.08 per common share"). The Q2
+  2016 release repeats the 2016 increase later; the Q4 2016 release precedes the 2017 declaration. No earlier 10-Q of the batch states an
+  increase (asserted).
+- **Capital as published:** the Series C, D and E preferred stock (2015-2016) and the senior notes of 2015 and 2017 are in the figures as
+  published; EPS is per common share, after preferred dividends. The net share term is issuance: diluted shares rise from 1,293M (FY2013)
+  to 1,334M (FY2016).
+- **Signals as before.** The 10-Qs' layout changes from Q2 2015 (growth columns between the figures); the check compares each quarter's
+  and the year-ago figure as consecutive cells. The Q3 2014 print's year-ago client assets are Q3 2013's reduced total, so the
+  recordkeeping seam of Q3 2013 closes (asserted). From Q3 2017 the releases also print asset-based trades; the signal keeps revenue
+  trades.
+- **Durability: DURABLE, risk 2,** the same reading: the FY2013-FY2016 10-Ks repeat the market-environment and price-competition
+  sentences, and none contains "cyclical" (asserted). The segments are Investor Services and Advisor Services (quoted from each 10-K).
+- **Themes: none live for a broker.** From ECOMMERCE's live date (2015-01-01; STREAMING from 2015-08-04, ENERGY_TRANSITION from 2015-12-12)
+  the "why" quotes every live theme's scope and names the subjects the 10-Ks were searched for ("no 10-K names offshore delivery, e-commerce,
+  streaming or decarbonisation"); with OFFSHORE and CLOUD alone the clause is word for word the 2010-2013 one. The FY2015 and FY2016 10-Ks
+  name cloud computing once each, in an accounting standard ("ASU 2015-05 ... which provides new guidance that clarifies customer’s
+  accounting for fees paid in a cloud computing arrangement"), so from 2016-02-26 the clause quotes it as not a way Schwab's business is
+  delivered or displaced (`cloud_words`, text only; the UNH and LMT FY2016 readings). Schwab Intelligent Portfolios (2015), an automated
+  advisory service of its own, is in the releases but in no theme's scope; the watch list stays empty.
+- **Adds nothing:** the 8-Ks on the 401(k) blackout, the senior notes, the Series C, D and E preferred stock, the Series B elimination,
+  the supplemental indentures, the officer, director and vote 8-Ks.
+
+Controls and checks (before any outcome):
+- **A leak in this batch's own text, found and corrected before validation outputs were kept.** The first draft of the vintages'
+  normalization note said, in every vintage, that "from Q3 2015" the releases tabulate the items' per-share effects: in the FY2013 and
+  FY2014 vintages (public 2014-02-24 and 2015-02-24) that named later filings. `forward_refs.py` found it (3 references); the note now names
+  only filings public by each vintage's date (FY2014 quotes Q3 2014's "$0.01 per share", FY2015 the Q3 and Q4 2015 tables). Text only; the
+  models were rebuilt before validation. A second draft error, the Q4 2015 note listing the RMBS losses (a 2014 item) among FY2015's, was
+  corrected at the same time.
+- **`retro_tool run` passes on all 208 dates**, with no warning.
+- **Controls:** altering one value of each new print (its quarter EPS; each Q4 print's full-year revenue), each vintage (its last EPS
+  year) and each dividend changes no model dated before its publication: 26 controls, every one changing the first weekly date on or after
+  it, none inert. The Q2 and Q3 2015 prints change their own Fridays (2015-07-17, 2015-10-16).
+- **Leak scan** (`--from 2014-01-01`, 208 models): 15 hits in 62,110 (model, later token) pairs, all one coincidence: the 52-week high of
+  $43.65 (2017-03-17 to 2017-06-23) and Q3 2017's 43.65% pre-tax margin. As a positive control, the latest print's tokens appear in each of
+  the 208 models.
+- **Forward-reference scan:** 0 in 128 dated facts (after the correction above).
+- **Self-text scan** (`--from 2014-01-01`, the 2014-2017 filings): 509 tokens, no miss but "March" in the Q4 2013 print's next-print label
+  (a month name; the 2014-2017 filings folder holds no filing before that release).
+- **Regression:** rebuilding the 314 dates of 2008-2013 on the extended fact sheet and builder changes nothing.
+
+Seen in the build (method behaviour, not tuned). FY2009 and FY2010 stay in the ten years, so BEAR is -44.1%/yr (FY09 to FY10) on every
+date; XBULL is FY04-FY06's +62.9%/yr to 2015-02-20, FY05-FY07's +38.4% to 2016-02-19 and FY10-FY12's +34.8% from 2016-02-26, as the early years leave. The ten-year window's median is
+24.4-26.5x, its 2004-2009 days included:
+- **RICH 200, FAIR 8; legacy tier AVOID 201, WATCHLIST 7.** By year: 2014 RICH 51; 2015 RICH 53; 2016 RICH 44, FAIR 8 (2016-01-21,
+  2016-02-05, 2016-02-12, 2016-05-06, 2016-06-24 to 2016-07-15); 2017 RICH 52. The robustness block shows another class on 96 dates.
+- **2014 rests on FY13's $0.78:** $24.60-30.53 is 31.5-39.1x, the 78th-92nd percentile (median 24.4x), 66-106% above an EPP floor of
+  $14.82. BASE runs +11.1% to +18.7%/yr. Ratio B is 2.72 to infinite (the price above the BULL case).
+- **2015 rests on FY14's $0.95:** $25.98-35.03 is 27.3-36.9x, the 70th-91st percentile, 44-94% above the floor ($18.05); BASE falls to
+  +2.9-8.5%/yr as revenue growth slows to +3.0-6.0% (Q1-Q3 2015).
+- **2016 rests on FY15's $1.03:** $22.82-41.41 is 22.2-40.2x, the 34th-94th percentile; the eight FAIR dates (January-February and May-July)
+  are 22.2-26.5x, 17-40% above the floor ($19.57). BASE climbs to +15.3-19.5%/yr from Q1 2016 as revenue grows 15.6-19.8%.
+- **2017 rests on FY16's $1.31:** $37.53-52.08 is 28.6-39.8x, the 71st-93rd percentile, 51-109% above the floor ($24.89), BASE
+  +12.1-17.0%/yr.
+- **The proxy composite** is 2.0-2.7 throughout (revenue growth at BULL on the Q1 2016 to Q3 2017 prints, +13.1% to +19.8%; the expense
+  gap negative on 14 of the 16 prints).
+
+How far each call moves the classes (the 208 dates rebuilt with one encoding changed and classified offline,
+`retro/generators/schw/sens_schw_1417.py`; no outcome consulted):
+- FY2015 at $0.97 and FY2016 at $1.30, GAAP less the per-share effects the releases tabulate (a derived figure; no filing publishes it;
+  FY2014's listed items net to zero): 4 classes (FAIR to RICH), 3 tiers, the batch's largest call;
+- the Q2 and Q3 2015 prints counted from the next Monday, not their own Friday: no class, no tier;
+- no net share change in BASE (a flat share history): no class, 1 tier;
+- every data signal at its BEAR value: 8 classes (FAIR to RICH), no tier; at its XBULL value: 4 classes (RICH to FAIR), no tier.
+The RICH calls rest on Schwab's 2014-2017 multiples of its last full year's GAAP EPS against a ten-year window that still holds its
+2004-2009 days and its FY2009-FY2010 fall (BEAR -44.1%/yr); none of the encodings tested moves more than 8 dates. The window and BEAR are
+frozen rules, not choices of this batch.
+
+Judgement calls that could carry hindsight:
+- FY2015 and FY2016 at GAAP with the listed items in, by the rule that only a published per-share figure replaces GAAP (4 classes);
+- the after-close Friday prints counted for their own Friday (no class either way);
+- the Q1 2015 expense outlook read as words, and the three unfiled outlooks unused;
+- the cloud accounting sentence read as no CLOUD evidence, and Schwab Intelligent Portfolios as outside every theme (label and text only);
+- the signals as chosen for 2008-2009 (unchanged; revenue trades kept when the releases add asset-based trades in Q3 2017);
+- DURABLE rather than CYCLICAL (label only);
+- the parts of the filings listed above as not read, and above all the unfiled business updates and CFO commentary.
+
+The hindsight results for 2014-2017 are in `staging/retrospective/SCHW/FINDINGS.md`, computed after the firewall result was pushed:
+hypotheses, never inputs.
+
 ## NEE (FPL Group): the thirty-fifth ticker, in staging, 2008-2009
 
 The NEE series is built apart from the other thirty-four and shares nothing with them but the machinery: its own fact sheet
