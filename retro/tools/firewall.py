@@ -161,7 +161,8 @@ planted AI words on the later vintage and a later GENAI event (the dividend, spl
 client assets, trades, net new assets, margins, expense gap, quarter EPS, notes and raw figures are absurd, with absurd full-year
 actuals for the year after the latest vintage (or Q4 print) before CUTOFF, a later Q4 print whose full-year actuals exclude its own
 year, and a later vintage excluding a year with planted texts, figures, client assets, exchange, kind and window start, and from SCHW
-2010-2013 a later restatement of the last print before CUTOFF and planted outlook words (the guide, dividend, listing and company name
+2010-2013 a later restatement of the last print before CUTOFF and planted outlook words, and from SCHW 2018-2021 planted daily average
+trades (DATs) on the print and an acquisition note on the vintage (the guide, dividend, listing and company name
 every fact sheet with those lists gets, too); GOOG: a print whose revenues, margins, opex and receivables gaps, quarter EPS, cash,
 notes and raw figures are absurd, with absurd full-year actuals for the year after the latest vintage before CUTOFF, a later Q4 print
 whose full-year actuals exclude its own year, a later 10-Q restatement of the last print before CUTOFF with absurd figures, and a later
@@ -440,7 +441,7 @@ PLANT = {"ACN": dict(quarter="Q9 FY99", revenue_lc=-60, margin_bp=-999, fy_eps_g
                       sales_pct=-60.0, seq_pct=-60.0, pretax_margin=-50.0, pretax_margin_bp=-9999.0, expense_pct=99.0,
                       expense_gap_pp=99.0, ca_b=0.01, ca_pct=-99.0, dart_k=0.01, dart_pct=-99.0, nna_b=-999.0, eps_q=0.01,
                       eps_q_prior=9.99, diluted_shares_m=1.0, sales_note="PLANTED", client_note="PLANTED", eps_note="PLANTED",
-                      shares_note="PLANTED", next_print="PLANTED", note="PLANTED",
+                      shares_note="PLANTED", next_print="PLANTED", note="PLANTED", dats_k=0.01, dats_prior_k=99,
                       raw=dict(revenue_m=1, revenue_prior_m=99, revenue_prev_q_m=99, expense_m=99, expense_prior_m=1, pretax_m=-99,
                                pretax_prior_m=99, client_assets_b=0.01, client_assets_prior_b=99, dart_k=0.01, dart_prior_k=99,
                                nna_b=-999)),
@@ -918,6 +919,7 @@ try:
                  tax_note="PLANTED", groups=[["PLANTED", 1, -99]], groups_basis="PLANTED", exchange="PLANTED",
                  pe_window_start="1990-01-02", kind="CYCLICAL", margin_signal_name="PLANTED", eps_first_excluded={"1990": "PLANTED"})
         v["cloud_words"] = "PLANTED"       # (SCHW 2014-2017) a later 10-K's cloud words, the theme clause's text
+        v["acquisition_note"] = "PLANTED"  # (SCHW 2018-2021) a later 10-K's acquisition note (TD Ameritrade), the history comment
         # (SCHW 2010-2013) a later restatement of the last print before CUTOFF with absurd figures (a real one public before CUTOFF
         # stays; 'restated' is a list in publication order), and outlook words for every year on the planted prints
         p0 = max((p for p in f["prints"] if p["published"] < cutoff), key=lambda p: p["published"])

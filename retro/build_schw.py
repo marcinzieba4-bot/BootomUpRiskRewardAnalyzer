@@ -31,6 +31,14 @@ date); the Q1 2010 and Q3 2013 outlooks are bounds and words that feed no field 
 expense outlook is words ('outlook_words'); the releases' per-share effects of non-recurring items (from Q3 2015) are not an EPS
 without them, so GAAP stands. From ECOMMERCE's live date (2015-01-01) the 'why' names each live theme's subject the 10-Ks were
 searched for, and the FY2015 and FY2016 10-Ks' one cloud sentence (an accounting standard) is quoted ('cloud_words', text only).
+(SCHW 2018-2021) No new encoding of a number: GAAP every year (the tax reform legislation's $0.03 in FY2017, the severance and acquisition items in
+FY2019; from Q2 2020 the releases' adjusted EPS also removes the recurring amortization of acquired intangibles); TD Ameritrade (from
+2020-10-06) in the figures as published; the rate increases to $0.10, $0.13, $0.17 and $0.18 a quarter are 'dividends' facts. From the
+Q1 2020 release the activity table prints clients' daily average trades (DATs) only, not revenue trades: the trades signal is not
+reported (None), scores BASE and prints n/r through schw2_engine.py.tmpl, the None-tolerant copy (the BKR bkr3 and SPGI spgi2
+encoding), with DATs in the text only. From EV's live date the 'why' names electric vehicles among the subjects the 10-Ks were searched
+for; from CRYPTO's (2020-10-21), whose scope names banks and exchanges, it says no 10-K names cryptocurrency, blockchain, digital assets or
+a distributed ledger, so the watch list stays empty (the SPGI 2018-2021 reading).
 The kind is DURABLE: the 10-Ks tie results to markets, rates and investor engagement but do not call the business cyclical (the
 JPM, LOW and SHW reading). No disruption theme in taxonomy_eras.json is live for a securities broker and bank in 2008-2009, so the
 builder refuses events until a theme encoding is decided, and it refuses guides, listings, splits and company names until their
@@ -67,6 +75,8 @@ from build_unp import money  # noqa: E402
 
 FACTS = os.path.join(HERE, "facts", "SCHW.json")
 ENGINE = os.path.join(HERE, "templates", "schw_engine.py.tmpl")
+# (SCHW 2018-2021) the None-tolerant copy, used when the latest release does not report daily average revenue trades (from Q1 2020)
+ENGINE2 = os.path.join(HERE, "templates", "schw2_engine.py.tmpl")
 OUT = os.path.join(ROOT, "staging", "retrospective", "SCHW")
 SYMBOL = "SCHW"
 # rule T, the engine's signal thresholds: (BEAR, BASE, BULL, XBULL); the builder checks the fact sheet against them
@@ -124,7 +134,9 @@ def derived(r):
                 pretax_margin=round(pm + 0.0, 2), pretax_margin_bp=r1((pm - pm0) * 100),
                 expense_pct=r1(pct(r["expense_prior_m"], r["expense_m"])),
                 expense_gap_pp=r1(pct(r["expense_prior_m"], r["expense_m"]) - pct(r["revenue_prior_m"], r["revenue_m"])),
-                ca_pct=r1(pct(r["client_assets_prior_b"], r["client_assets_b"])), dart_pct=r1(pct(r["dart_prior_k"], r["dart_k"])))
+                ca_pct=r1(pct(r["client_assets_prior_b"], r["client_assets_b"])),
+                # (SCHW 2018-2021) from the Q1 2020 release revenue trades are not reported: None, scored BASE (n/r)
+                dart_pct=None if r["dart_k"] is None else r1(pct(r["dart_prior_k"], r["dart_k"])))
 
 
 def check_print(p, as_of):
@@ -148,6 +160,8 @@ def as_restated(p, as_of):
 
 
 def build(as_of, facts, raw, spx, engine, out):
+    with open(ENGINE2, encoding="utf-8") as fh:        # (SCHW 2018-2021) the None-tolerant copy, read beside the common signature
+        engine2 = fh.read()
     if as_of not in raw:
         sys.exit(f"{as_of} is not a trading day")
     chart = retro_tool.chart(SYMBOL)
@@ -287,7 +301,10 @@ def build(as_of, facts, raw, spx, engine, out):
                 "  the bear needs them in net revenue as well.")
     theme_summary = "no disruption theme has dated evidence"
     cat4 = (f"(4) Trading activity — {latest['dart_k']:.1f}K daily average revenue trades in {latest['quarter']} "
-            f"({latest['dart_pct']:+.1f}% YoY): the driver of trading revenue")
+            f"({latest['dart_pct']:+.1f}% YoY): the driver of trading revenue") if latest["dart_k"] is not None else (
+            f"(4) Trading activity — revenue trades not reported in {latest['quarter']}: from the Q1 2020 release the activity table "
+            f"prints clients' daily average trades (DATs) only ({latest['dats_k']:,.1f}K vs {latest['dats_prior_k']:,.1f}K a year "
+            "earlier, display only), so the signal scores BASE (n/r)")
     why = h["why"]
     # from CLOUD's live date (2012-10-30) every live theme is quoted with its registered scope (the CB 2014-2017 and UNH wording)
     live = sorted(((t["live_from"], k, t["scope"]) for k, t in retro_tool.load_taxonomy()["themes"].items() if t["live_from"] <= as_of))
@@ -299,20 +316,31 @@ def build(as_of, facts, raw, spx, engine, out):
         # from the FY2015 10-K, which names cloud computing only in an accounting standard ('cloud_words'), it quotes those words
         # (the UNH 'cloud_words' and LMT FY2016 readings); with OFFSHORE and CLOUD alone the clause is as before
         words = {"OFFSHORE": "offshore delivery", "CLOUD": "cloud", "ECOMMERCE": "e-commerce", "STREAMING": "streaming",
-                 "ENERGY_TRANSITION": "decarbonisation"}
+                 "ENERGY_TRANSITION": "decarbonisation", "EV": "electric vehicles"}
         live_k = [k for _, k, _ in live]
         if live_k == ["OFFSHORE", "CLOUD"]:
             none10k = "no 10-K names cloud or offshore delivery"
         else:
-            assert set(live_k) <= set(words), (as_of, "a live theme the SCHW 10-Ks were not searched for", live_k)
-            named = [words[k] for k in live_k if not (k == "CLOUD" and h.get("cloud_words"))]
+            assert set(live_k) <= set(words) | {"CRYPTO"}, (as_of, "a live theme the SCHW 10-Ks were not searched for", live_k)
+            named = [words[k] for k in live_k if k != "CRYPTO" and not (k == "CLOUD" and h.get("cloud_words"))]
             none10k = "no 10-K names " + ", ".join(named[:-1]) + " or " + named[-1]
             if h.get("cloud_words"):
                 none10k += (f", and the {h['fy_label'].replace('FY', 'FY20')} 10-K names cloud computing only in an accounting standard "
                             f"('{h['cloud_words']}'), not as a way its own business is delivered or displaced")
-        why = (head + "; no disruption theme in taxonomy_eras.json is live for a securities broker and bank on this date (of the live "
-               f"themes, {scopes}: none names brokerage or banking, and {none10k}), so the watch list is "
-               "empty and these words stay here (the PEP obesity rule)")
+        if "CRYPTO" in live_k:
+            # (SCHW 2018-2021) CRYPTO's registered scope names banks and exchanges, but no 10-K of these years names cryptocurrency,
+            # blockchain, digital assets or a distributed ledger, so nothing dated ties the theme to Schwab: no watch item (the SPGI
+            # 2018-2021 reading; JPM's and V's watch items rest on their own 10-Ks' crypto words). Text only either way: the JPM
+            # encoding adds no factor pair, so the theme signal stays at 2/4
+            assert not h.get("crypto_quote"), (as_of, "a crypto quote needs the JPM encoding")
+            why = (head + "; no disruption theme in taxonomy_eras.json has dated evidence for a securities broker and bank on this date "
+                   f"(of the live themes, {scopes}: CRYPTO alone names banks and exchanges, and no 10-K names cryptocurrency, "
+                   f"blockchain, digital assets or a distributed ledger, so nothing dated ties it to Schwab; of the rest none names "
+                   f"brokerage or banking, and {none10k}), so the watch list is empty and these words stay here (the PEP obesity rule)")
+        else:
+            why = (head + "; no disruption theme in taxonomy_eras.json is live for a securities broker and bank on this date (of the live "
+                   f"themes, {scopes}: none names brokerage or banking, and {none10k}), so the watch list is "
+                   "empty and these words stay here (the PEP obesity rule)")
     after_print = [p for p in prints if p["published"] < as_of and not any(p["published"] < d < as_of for d in days)]
     tag = f"(day after the {after_print[-1]['quarter']} print)" if after_print else f"(pre-{next_q} print)"
     # a print dated AS_OF occurs only in a week with no trading day after it; it meets AS_OF's close only if it was public before that
@@ -396,7 +424,7 @@ REF_LOW         = {px[ref][2]:.2f}   # lowest close of the last 52 weeks, {ref}
 REF_LOW_LABEL   = {R(MONTHS[int(ref[5:7]) - 1])}
 
 # ── FACTS: company history ({", ".join(h["sources"])}, vintage {h["published"]}{h["extended"]}) ──
-EPS_NORM      = {R({y: round(v, 4) for y, v in eps_hist.items()})}   # {h["normalization"]}
+EPS_NORM      = {R({y: round(v, 4) for y, v in eps_hist.items()})}   # {h["normalization"]}{"; " + h["acquisition_note"] if h.get("acquisition_note") else ""}
 EPS_FIRST_EXCLUDED = {R(first_excl)}
 EPS_EXCLUDED  = {R({y: t for y, t in sorted(excluded.items())})}
 REVENUE_HIST  = {R({y: round(v, 6) for y, v in rev.items()})}   # net revenues, continuing operations, USD bn
@@ -439,7 +467,7 @@ CATALYST_4      = {R(cat4)}
 '''
     os.makedirs(os.path.join(out, as_of), exist_ok=True)
     with open(os.path.join(out, as_of, "model.py"), "w", encoding="utf-8") as fh:
-        fh.write(head + engine)
+        fh.write(head + (engine2 if latest["dart_k"] is None else engine))
     return tag, latest["quarter"], stage
 
 
