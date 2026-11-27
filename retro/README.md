@@ -27918,6 +27918,177 @@ Judgement calls that could carry hindsight:
 The hindsight results for 2018-2021 are in `staging/retrospective/SCHW/FINDINGS.md`, computed after the firewall result was pushed:
 hypotheses, never inputs.
 
+### SCHW 2022-2026: five more vintages from three-year statements, GAAP through the restructuring and the FDIC assessment, five dividend increases, CRYPTO on the FY2025 10-K's words, the last date 2026-11-20
+
+255 weekly dates, 2022-01-07 to 2026-11-20 (52, 52, 52, 52, 47), on the same method, engine and rule-T thresholds. The owner asked for
+2022-2026 ("same rules as before"); the code is the coordinating session's merge branch (`claude/sharp-albattani-rdvlgi`, commit "Merge NEE
+2014-2017 ... with SCHW 2018-2021"), and this batch is on `claude/schw-retro-2022-2026`, built on it without merging anything else. The range
+starts on 2022-01-03, the Monday after the last built week (2021-12-31). The last date is 2026-11-20: the series was built on Friday
+2026-11-27 before the close, so the week of 2026-11-23 has no date (the CRM 2022-2026 and UNH rule; a rebuild after a later close adds
+dates, it does not move these). The newest dates have no outcome yet. `www.sec.gov` again served every document to a plain client name (no
+contact address), so this is a full-data batch. Sources are `SCHW88`-`SCHW113`. A fifth generator (`retro/generators/schw/gen_schw_2226.py`)
+loads the 2008-2021 sheet and asserts every earlier source, vintage, print, dividend, listing and rule-T value unchanged; the 731 earlier
+models rebuild byte for byte.
+
+```bash
+python3 retro/build_schw.py --weekly 2022-01-03 2026-11-22                  # 255 dates, 2022-01-07 .. 2026-11-20
+for d in staging/retrospective/SCHW/202[2-6]-*/; do
+  python3 retro/retro_tool.py --archive staging/retrospective run "$d"
+  python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
+done
+python3 retro/retro_tool.py --archive staging/retrospective series SCHW
+for c in 2022-01-01 2022-01-19 2022-02-25 2022-04-19 2022-07-19 2022-08-09 2022-10-18 2022-11-30 2023-01-19 2023-02-27 2023-04-18 \
+         2023-07-19 2023-08-08 2023-10-17 2024-01-18 2024-02-26 2024-04-16 2024-07-17 2024-10-16 2025-01-22 2025-02-27 2025-04-21 \
+         2025-07-21 2025-10-17 2026-01-22 2026-02-26 2026-04-17 2026-07-22 2026-10-16 2026-11-21; do python3 retro/tools/firewall.py $c SCHW; done
+```
+
+**Built in a new session.** This session did not open the 2008-2021 outcomes, `FINDINGS.md` or `SERIES.md` before the firewall result
+was pushed. It read CLAUDE.md and this README, whose SCHW sections state the 2008-2021 classes (no outcome). Like every session, its model
+knows what happened to Schwab after 2021 (the 2022-2023 client cash sorting, the March 2023 bank failures and what the market did to
+Schwab, the rate cuts, TD Bank's exit, the 2025-2026 earnings); the dated fact sheet, the frozen rules and the validator are the
+protection. No decision below changes a rule, threshold, signal or window. Each follows the 2008-2021 encodings or an earlier ticker's,
+and each that could move a class is tested at the end.
+
+What was read (by the session's model directly, no delegated transcription; no filing accepted after 2026-11-20 opened for a fact): the
+FY2021-FY2025 10-Ks (the MD&A overview's client metrics and financial information, the statements of income, Items 1, 1A and 5, each
+searched for "cyclical", "offshore", "cloud", "e-commerce", "streaming", "electric vehicle", "decarbon", "climate", "crypto", "digital
+asset", "bitcoin", "blockchain", "distributed ledger", "artificial intelligence", "generative", "GLP-1" and "obesity"); every earnings
+release of Q4 2021 to Q3 2026 (the narrative and every sentence with a forward word, the statements of income, the financial and operating
+highlights, the non-GAAP reconciliations, client assets and the activity report); all 56 other 8-Ks of 2022-2026 by their item text and
+exhibit headlines (the ten Item 7.01 8-Ks read in full: two point to CFO commentary on the website, 2022-10-18 and, with the 2023 insured
+deposit account agreement, 2023-05-05; one to the founders' commentary of 2023-04-06; three announce officers; the secondary offering
+and repurchase of 2025-02-10; the Forge Global agreement of 2025-11-06 with its investor presentation, and its closing of 2026-03-02); the
+8-K of 2023-08-21 (the streamlining actions: "at least $500 million of incremental annual run-rate cost savings" and exit costs of
+"approximately $400 to $500 million", a cost component, unencoded, as the 2009 expense goal); the 10-Qs of Q1 2022 to Q3 2026, compared by
+script with their releases on revenue, expenses, pre-tax income and client assets (every one matches) and searched for dividend sentences
+and crypto words. **Not read:** the proxy statements, the exhibits of the debt, preferred, officer, bylaw and vote 8-Ks beyond their item
+text, TD Bank's filings, the CFO and founders' commentary on the company's website, and every business update the releases schedule or host
+(a Winter, Spring, Summer and Fall Business Update each year, none filed): their outlooks are unused (the CRM rule for unfiled guidance), and
+a guide stated only there is missed. The 349 strings of this batch were checked with `verbatim.py` against their own filings (349/349).
+Decided on 2026-11-27, before any 2022-2026 model was built or outcome computed:
+
+- **Release timing.** Every earnings 8-K of Q4 2021 to Q3 2026 was accepted after the close (16:16-16:47 ET) and is dated the next trading
+  day. From the Q1 2023 release the text says the company "will host its Spring Business Update for institutional investors this morning
+  from 8:00 a.m. - 9:00 a.m. CT, 9:00 a.m. - 10:00 a.m. ET" (8:30 a.m. ET from Q2 2023), so the release went out before the open of its
+  dateline day, hours before its 8-K. The 8-K is the dated filing and its acceptance governs, as for AVGO's Q3 FY11 release (issued after
+  the close, its 8-K the next morning) and in every earlier SCHW batch (`release_time` says so on each print; the release-morning dating is
+  tested below). Three prints land on a Friday, the week's last trading day, and meet that Friday's close as public before its open (the
+  AVGO and CRM rule): Q3 2025 (2025-10-17), Q1 2026 (2026-04-17) and Q3 2026 (2026-10-16). Q1 2025 was accepted on Thursday 2025-04-17
+  before Good Friday and Q2 2025 on Friday 2025-07-18, both dated the Monday. The FY2021-FY2025 10-Ks were accepted after the close (dated
+  2022-02-25, 2023-02-27, 2024-02-26, 2025-02-27, 2026-02-26).
+- **History: five vintages from three-year statements.** Item 6 is "Reserved" in every 10-K of the range, so each vintage takes its three
+  years (EPS and net revenues from the MD&A overview, asserted equal to the statements of income; diluted shares from the statements) and
+  keeps earlier years from the latest earlier vintage (the JPM 2022-2026 reading), the ten fiscal years to the latest one (FY2012-FY2021 to
+  FY2016-FY2025). GAAP diluted EPS per common share: FY21 $2.83, FY22 $3.50, FY23 $2.54, FY24 $2.99, FY25 $4.65. Every year a later 10-K
+  reports equals the earlier vintage's figure (asserted: no restatement), and each Q4 print's year equals its 10-K's. Between a Q4 print and
+  its 10-K the history holds eleven years. The components ("Other" now bank deposit account fees and other revenue) are each 10-K's.
+- **EPS: GAAP every year.** The releases' adjusted diluted EPS excludes the acquisition and integration-related costs, from Q3 2023 the
+  restructuring costs ("Beginning in the third quarter of 2023, these adjustments also include restructuring costs ..."), and every quarter
+  the amortization of acquired intangible assets, which "will continue in future periods over their remaining useful lives": a recurring
+  item, so the adjusted figure is not one excluding only one-offs (the NKE FY2007, AVGO, PFE, V and CB rule, as in 2020-2021), and no filing
+  publishes an EPS without only the one-offs. In FY2025 the adjustment is the amortization alone ($4.87 against GAAP $4.65). No year meets
+  the AAPL FY2002 test (each vintage's normalization states it from the Q4 release's reconciliation): FY2023, the nearest, has $401M of
+  acquisition and integration-related costs and $495M of restructuring costs before tax against $5,067M of net income. Stay in as
+  published: the Q1 2023 "$97 million one-time breakage fee" in bank deposit account revenue and the Q4 2023 "$172 million FDIC special
+  assessment" (in the company's adjusted expenses too). FY2023's $2.54 (-27.4%) is the batch's largest EPS call (below).
+- **No guide in a range or a level in any filing, so the rules are unchanged:** the last full year's EPS stands, BASE is the latest
+  quarter's revenue growth plus the net share change, and there is no margin step. The 2023 run-rate savings and exit-cost ranges are a cost
+  component (unencoded); the Forge Global announcement's investor presentation is no guide for Schwab's year (the AVGO and UNP merger rule).
+- **Acquisitions and capital as published:** Forge Global (closed 2026-03-02, its 8-K) is in the figures from the Q1 2026 release, noted on
+  that print; TD Bank's 2025 secondary offering and Schwab's $1.5 billion repurchase from it, the 2022 repurchase from TD and the buybacks
+  are in the diluted share counts (1,902M in Q4 2021 to 1,733M in Q3 2026), so the net share term adds to BASE from 2023; the senior notes
+  and preferred stock as their 8-Ks state them (EPS per common share, after preferred dividends).
+- **Revenue trades still not reported** (DATs only, display only), so every date uses `schw2_engine.py.tmpl` and the trades signal scores BASE.
+- **Dividends,** each rate from the first filing that states it: $0.20 a quarter from the FY2021 10-K (2022-02-25, declared January 26,
+  2022), $0.22 from the Q2 2022 10-Q (2022-08-09, declared July 27, 2022, after the Q2 2022 release), $0.25 from the FY2022 10-K (2023-02-27),
+  $0.27 from the FY2024 10-K (2025-02-27) and $0.32 from the FY2025 10-K (2026-02-26). No filing of 2024 states a new rate (asserted: the
+  FY2023 10-K and the 2024 10-Qs), and no release states one before its filing.
+- **Durability: DURABLE, risk 2,** the same reading: every 10-K repeats "Developments in the business, economic, and geopolitical environment
+  could negatively impact our business." and "Our industry is highly competitive and characterized by aggressive price competition.";
+  "cyclical" appears only as "countercyclical capital buffer" (asserted). The segments are still Investor Services and Advisor Services.
+- **Themes (text only unless stated):**
+  - **CLOUD:** from the FY2021 10-K the cloud words are Schwab's own reliance ("Cloud technologies are critical to the operation of our systems
+    and platforms and our reliance on cloud technologies is growing."), quoted as `cloud_words` with a `cloud_reading` ("names cloud
+    technologies only as a service its own systems rely on"): CLOUD's scope (on-premise hardware, storage, databases, data-center
+    outsourcing) names no brokerage, and the words say nothing of Schwab's business being displaced (the UNH reading).
+  - **GENAI** (live 2022-11-30) and **GLP1** (live 2023-08-08) join the live themes the "why" names. GENAI's scope (software seats, IT
+    services, professional information, search, education content, mobility) names no broker or bank, so it is out of scope (the JPM 2022-2026
+    reading). The FY2023-FY2025 10-Ks name artificial intelligence as a tool of external fraud and cyber attack and, in FY2025, among
+    "Industry and competitive trends including artificial intelligence, digital assets, private company securities and other alternative
+    investments;" (`ai_words`, the UNH encoding); no 10-K names generative AI, GLP-1 drugs or obesity (asserted).
+  - **CRYPTO on the watch list from 2026-02-27.** No 10-K of FY2021-FY2024 names crypto, digital assets, bitcoin, blockchain or a distributed
+    ledger (asserted), so the 2018-2021 clause stands to 2026-02-20. The FY2025 10-K names digital assets among the industry and competitive
+    trends above (`crypto_quote`) and Schwab's own planned offering ("In 2026, the Company anticipates it will begin offering expanded client
+    access to trading in digital assets including spot trading in select cryptocurrencies.", `crypto_own_quote`). CRYPTO's scope names banks
+    and exchanges, so from that vintage it is on the watch list, company-acknowledged, with no market read (the JPM encoding), and the
+    offering of its own adds a factor pair that nets to zero (the V encoding); the theme signal stays at 2/4. The 2026 10-Qs and the Q2 and
+    Q3 2026 releases (the launch of spot crypto trading) say more, but the watch rule reads the 10-K in force, as for JPM and V.
+- **Adds nothing:** the debt, preferred stock and certificate-of-elimination 8-Ks; the officer, director, bylaw and vote 8-Ks; the 2023
+  insured deposit account agreement with TD (its terms, not a guide); the CFO and founders' commentary 8-Ks (the commentary itself unfiled).
+
+Controls and checks (before any outcome):
+- **`retro_tool run` passes on all 255 dates.** 53 dates (2024-01-19 to 2025-01-17) carry a false calendar-year warning: the FY2023 tax rate
+  0.2056 reads as a year (the UNH 0.2081 precedent). The index gains 255 SCHW rows, no other row changes.
+- **Controls:** altering one value of each new print (its quarter EPS; each Q4 print's full-year revenue), each vintage (its last EPS year)
+  and each dividend changes no model dated before its publication: 35 controls, every one changing the first weekly date on or after it,
+  none inert. The three Friday prints change their own Fridays.
+- **Term check:** GENAI and GLP1 first appear on 2022-12-02 and 2023-08-11 (their live dates' weeks), artificial intelligence quoted from
+  2024-03-01 (the FY2023 10-K), the cloud reading from 2022-02-25, the CRYPTO watch item and factor pair from 2026-02-27, Forge Global from
+  2026-04-17, each dividend rate after its filing.
+- **Leak scan** (`--from 2022-01-01`, 255 models): 1 hit in 122,185 (model, later token) pairs, read and benign: 2023-05-05's close of $49.24
+  equals the Q3 2025 print's pre-tax margin (49.24%). As a positive control, the latest print's tokens appear in each of the 255 models.
+- **Forward-reference scan:** 0 in 56 dated facts.
+- **Self-text scan** (`--from 2022-01-01`, the 2022-2026 filings): 747 tokens, one miss, "March" in the Q4 2021 print's `next_print` ("the
+  quarter ends in March"), method wording that only the Q4 2021 release lacks among the filings of its date; passed with `--allow March`.
+- **Regression:** rebuilding the 731 dates of 2008-2021 on the extended fact sheet, builder and engines changes nothing.
+- **Firewall** (run after the build, validation outputs and README section were committed and pushed, before any outcome): it passes at
+  all 30 cutoffs above (2022-01-01, every print, vintage and dividend date, GENAI's and GLP1's live dates, and 2026-11-21: 731 to 986 dates
+  each), 0 files changed and no planted text, on its first run.
+  Besides the earlier plants, each later vintage now carries a planted cloud reading, AI words and crypto words.
+
+Seen in the build (method behaviour, not tuned). BEAR is FY19 to FY20's -20.6%/yr to the Q4 2023 print, then FY22 to FY23's -27.4%/yr;
+XBULL is FY16-FY18's +36.8%/yr on every date from the Q4 2021 print (the BASE rate, +85.0%, before it). The window's median falls from 24.6x to 21.4x:
+- **RICH 122, CHEAP 96, FAIR 37; legacy tier AVOID 119, BUY 56, ACCUMULATE 48, WATCHLIST 32.** By year: 2022 FAIR 23, RICH 20, CHEAP 9;
+  2023 CHEAP 50, RICH 2; 2024 RICH 50, CHEAP 2; 2025 RICH 47, FAIR 5; 2026 CHEAP 35, FAIR 9, RICH 3. The robustness block shows another
+  class on 127 dates.
+- **The two dates before the Q4 2021 print keep FY20's $2.12** (43.3-45.1x, the 100th percentile, FAIR with BASE at +86.7%).
+- **From the Q4 2021 print (2022-01-20) FY21's $2.83 carries the call:** $59.99-91.90 is 21.2-32.5x, the 33rd-98th percentile of a median
+  of 23.3-24.6x; BASE falls to -0.9% (Q1 2022) and rises to +20.4% (Q3 2022) as revenue follows rates: RICH 22, FAIR 21, CHEAP 9.
+- **From the Q4 2022 print (2023-01-20) FY22's $3.50:** $48.94-80.60 is 14.0-23.0x, the 1st-46th percentile, CHEAP on all 52 dates; BASE
+  falls from +16.8% to -16.3%/yr as Q2 and Q3 2023 revenue declines.
+- **From the Q4 2023 print (2024-01-19) FY23's $2.54:** $62.12-82.76 is 24.5-32.6x, the 58th-98th percentile, RICH on all 53 dates, BASE
+  -18.9% to +5.2%/yr.
+- **From the Q4 2024 print (2025-01-23) FY24's $2.99:** $69.06-103.82 is 23.1-34.7x, the 54th-100th percentile, RICH on 47 and FAIR on 5
+  though BASE rises to +18.1% to +26.6%/yr.
+- **From the Q4 2025 print (2026-01-23) FY25's $4.65:** $87.35-112.30 is 18.8-24.2x, the 24th-72nd percentile of a median of 21.4-21.7x,
+  CHEAP on 35 and FAIR on 9 dates with BASE at +15.8% to +20.9%/yr.
+
+How far each call moves the classes (the 255 dates rebuilt with one encoding changed and classified offline,
+`retro/generators/schw/sens_schw_2226.py`; no outcome consulted):
+- the company's adjusted EPS for FY2021-FY2025 (FY21 $3.25, FY22 $3.90, FY23 $3.13, FY24 $3.25, FY25 $4.87; it also removes the recurring
+  amortization): 69 classes (43 RICH to FAIR, 16 FAIR to CHEAP, 7 RICH to CHEAP, 3 CHEAP to FAIR), 118 tiers: the batch's largest call;
+- FY2023 at $2.91 without only the restructuring and integration costs (derived: $2.54 plus $.22 and $.27 less their share of the stated
+  $(.19) tax effects; no filing prints it): 22 classes (18 RICH to FAIR), 47 tiers;
+- no net share change in BASE: 22 classes, 17 tiers;
+- each print from Q1 2023 dated its release morning instead of the 8-K's next day: 1 class, no tier;
+- the three Friday prints from the next trading day: no class, no tier;
+- CRYPTO off the watch list: no class, no tier; DATs as the trades signal instead of n/r: no class, no tier;
+- every data signal at its BEAR value: 109 classes (67 CHEAP to RICH, 37 FAIR to RICH, 5 CHEAP to FAIR), no tier; at its XBULL value:
+  31 classes (19 RICH to FAIR, 11 FAIR to CHEAP, 1 RICH to CHEAP), no tier.
+The 2023 and 2026 CHEAP calls rest on Schwab's multiple of its last full year's GAAP EPS falling under its own ten-year median; the 2024-2025
+RICH calls rest on FY2023's GAAP $2.54, which carries the restructuring and integration costs and the FDIC assessment (the GAAP rule) and
+falls 27% as client cash moved to higher-yielding products.
+
+Judgement calls that could carry hindsight:
+- GAAP throughout, the adjusted EPS left out for its recurring amortization (69 classes), FY2023 with its restructuring costs (22 classes);
+- the 8-K's acceptance, not the release's "this morning" business update, dating each print from Q1 2023 (1 class);
+- the unfiled business-update outlooks and CFO commentary unused, the cost-savings targets and the Forge Global presentation read as no guide;
+- CRYPTO on the watch list from the FY2025 10-K and GENAI and CLOUD out of scope (text only), DURABLE rather than CYCLICAL (label only);
+- the last date set by the build time (2026-11-20), and the parts of the filings listed above as not read.
+
+The hindsight results for 2022-2026 are in `staging/retrospective/SCHW/FINDINGS.md`, computed after the firewall result was pushed:
+hypotheses, never inputs.
+
 ## NEE (FPL Group): the thirty-fifth ticker, in staging, 2008-2009
 
 The NEE series is built apart from the other thirty-four and shares nothing with them but the machinery: its own fact sheet

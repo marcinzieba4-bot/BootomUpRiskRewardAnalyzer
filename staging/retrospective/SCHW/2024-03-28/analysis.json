@@ -1,0 +1,240 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "SCHW",
+ "company": "The Charles Schwab Corporation",
+ "as_of": "2024-03-28",
+ "price_date": "2024-03-28",
+ "price": 72.34,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); net revenue, client assets, expense, trading activity and pre-tax margin signals with Schwab's rule-T thresholds",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'The Charles Schwab Corporation (CSC) ... engages, through its subsidiaries (collectively referred to as Schwab or the Company), in wealth management, securities brokerage, banking, asset management, custody, and financial advisory services.' 'Developments in the business, economic, and geopolitical environment could negatively impact our business.' 'Our industry is highly competitive and characterized by aggressive price competition.' (FY2023 10-K); DURABLE, risk 2: the 10-K ties results to markets, rates and investor engagement and names price competition, a cycle and a competitive field, and does not call its own business cyclical (the JPM, LOW and SHW reading); no disruption theme in taxonomy_eras.json has dated evidence for a securities broker and bank on this date (of the live themes, OFFSHORE is scoped to 'lower-cost offshore delivery (Indian IT services) takes share and price from Western consulting, systems integration and outsourcing', CLOUD to 'public cloud displaces on-premise hardware, storage, legacy databases and data-center outsourcing', ECOMMERCE to 'e-commerce (Amazon effect) displaces physical retail, malls, grocery, distribution', STREAMING to 'cord-cutting / streaming displaces linear TV networks and pay-TV bundles', ENERGY_TRANSITION to 'decarbonisation strands oil, gas and coal reserves and refining', EV to 'battery-electric vehicles displace ICE powertrains, auto parts suppliers and fuel retail', CRYPTO to 'crypto / DeFi disintermediates payments networks, banks, exchanges, remittance', GENAI to 'generative / autonomous AI substitutes the core product: software seats, IT services and BPO hours, professional information, search, education content, mobility', GLP1 to 'GLP-1 obesity drugs reduce demand for snacks, beverages, sleep-apnea/diabetes/cardio devices': CRYPTO alone names banks and exchanges, and no 10-K names cryptocurrency, blockchain, digital assets or a distributed ledger, so nothing dated ties it to Schwab; of the rest none names brokerage or banking, and no 10-K names offshore delivery, e-commerce, streaming, decarbonisation, electric vehicles or GLP-1 drugs, and the FY2023 10-K names cloud technologies only as a service its own systems rely on ('Cloud technologies are critical to the operation of our systems and platforms and our reliance on cloud technologies is growing.'), not as a way its own business is delivered or displaced, and the FY2023 10-K names artificial intelligence only as a tool of external fraud and cyber attack ('Information security risks for financial institutions are increasing, in part because of the use of the internet and mobile and cloud technologies to conduct financial transactions, and the increased sophistication and activities, including the use of artificial intelligence technologies, of organized crime, activists, hackers and other external parties, including foreign state actors.'), not as a substitute for its own services), so the watch list is empty and these words stay here (the PEP obesity rule)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "'The Charles Schwab Corporation (CSC) ... engages, through its subsidiaries (collectively referred to as Schwab or the Company), in wealth management, securities brokerage, banking, asset management, custody, and financial advisory services.' 'Developments in the business, economic, and geopolitical environment could negatively impact our business.' 'Our industry is highly competitive and characterized by aggressive price competition.' (FY2023 10-K); DURABLE, risk 2: the 10-K ties results to markets, rates and investor engagement and names price competition, a cycle and a competitive field, and does not call its own business cyclical (the JPM, LOW and SHW reading); no disruption theme in taxonomy_eras.json has dated evidence for a securities broker and bank on this date (of the live themes, OFFSHORE is scoped to 'lower-cost offshore delivery (Indian IT services) takes share and price from Western consulting, systems integration and outsourcing', CLOUD to 'public cloud displaces on-premise hardware, storage, legacy databases and data-center outsourcing', ECOMMERCE to 'e-commerce (Amazon effect) displaces physical retail, malls, grocery, distribution', STREAMING to 'cord-cutting / streaming displaces linear TV networks and pay-TV bundles', ENERGY_TRANSITION to 'decarbonisation strands oil, gas and coal reserves and refining', EV to 'battery-electric vehicles displace ICE powertrains, auto parts suppliers and fuel retail', CRYPTO to 'crypto / DeFi disintermediates payments networks, banks, exchanges, remittance', GENAI to 'generative / autonomous AI substitutes the core product: software seats, IT services and BPO hours, professional information, search, education content, mobility', GLP1 to 'GLP-1 obesity drugs reduce demand for snacks, beverages, sleep-apnea/diabetes/cardio devices': CRYPTO alone names banks and exchanges, and no 10-K names cryptocurrency, blockchain, digital assets or a distributed ledger, so nothing dated ties it to Schwab; of the rest none names brokerage or banking, and no 10-K names offshore delivery, e-commerce, streaming, decarbonisation, electric vehicles or GLP-1 drugs, and the FY2023 10-K names cloud technologies only as a service its own systems rely on ('Cloud technologies are critical to the operation of our systems and platforms and our reliance on cloud technologies is growing.'), not as a way its own business is delivered or displaced, and the FY2023 10-K names artificial intelligence only as a tool of external fraud and cyber attack ('Information security risks for financial institutions are increasing, in part because of the use of the internet and mobile and cloud technologies to conduct financial transactions, and the increased sophistication and activities, including the use of artificial intelligence technologies, of organized crime, activists, hackers and other external parties, including foreign state actors.'), not as a substitute for its own services), so the watch list is empty and these words stay here (the PEP obesity rule). durable franchise (obsolescence risk 2/5); price rich; Ratio B 3.86x; +58% to EPP floor; model-vs-market gap -1.45; conservative 2yr -16%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": 3.86,
+  "ratio_b_fmt": "3.86x",
+  "epp": 45.72,
+  "epp_gap_pct": 58.2,
+  "epp_adj": -0.1,
+  "proxy_composite": 1.9,
+  "sca": -0.1,
+  "adj_composite": 1.7,
+  "market_composite": 3.15,
+  "adj_gap": -1.45,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": -16.4,
+  "scenarios": {
+   "BEAR": {
+    "eps": 1.34,
+    "pe": 16.6,
+    "price": 22.24,
+    "desc": "EPS -27.4%/yr (worst year FY14-FY23, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 1.53,
+    "pe": 23.3,
+    "price": 35.65,
+    "desc": "EPS -22.5%/yr (Q4 revenue YoY + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 3.16,
+    "pe": 27.0,
+    "price": 85.32,
+    "desc": "EPS +11.5%/yr (FY14-FY23 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 4.75,
+    "pe": 30.1,
+    "price": 142.97,
+    "desc": "EPS +36.8%/yr (best 2-yr run FY14-FY23, at least BULL); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 3.86,
+   "epp_gap_pct": 58.2,
+   "adj_gap": -1.45,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -16.4,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 2.0,
+   "epp_gap_pct": 58.2,
+   "adj_gap": -1.21,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -16.4,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 39.56,
+   "epp_gap_pct": 58.2,
+   "adj_gap": -1.66,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -16.4,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 3.18,
+   "epp_gap_pct": 58.2,
+   "adj_gap": -1.39,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -16.4,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 4.86,
+   "epp_gap_pct": 58.2,
+   "adj_gap": -1.5,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -16.4,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 3.86,
+   "epp_gap_pct": 58.2,
+   "adj_gap": -1.15,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -16.4,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 3.86,
+   "epp_gap_pct": 35.6,
+   "adj_gap": -1.35,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -16.4,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 3.86,
+   "epp_gap_pct": 58.2,
+   "adj_gap": -1.28,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -16.4,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "RICH"
+ ],
+ "summary": "SCHW (retrospective, 2024-03-28) ✕ AVOID — Ratio B 3.86x (69.3% downside to Bear $22.24 / +17.9% upside to Bull $85.32) | Adj composite 1.70 vs market 3.15: gap -1.45 [OVERVALUED] | +58% above the EPP floor $45.72 (18x FY24E $2.54) | Conservative 2-yr case: -16.4% total (-8.2%/yr) | At 28.5x FY24E the 15% hurdle price $95.67 sits above the BULL case; revenue -18.9% YoY in Q4 2023, forward revenues -18.9% (Q4 2023 revenue growth (no Q1 2024 guide)); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "SCHW100",
+   "published": "2024-02-26",
+   "filed": "accepted 2024-02-23 16:21 ET (after the close), so dated the next trading day",
+   "title": "The Charles Schwab Corporation FY2023 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/316709/000031670924000018/schw-20231231.htm",
+   "supports": "the MD&A overview's 2021-2023 client metrics and financial information and the 2021-2023 statements of income (Item 6 reserved): the FY23 history vintage; Items 1, 1A and 5"
+  },
+  {
+   "id": "SCHW74",
+   "published": "2019-02-25",
+   "filed": "accepted 2019-02-22 16:27 ET (after the close), so dated the next trading day",
+   "title": "The Charles Schwab Corporation FY2018 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/316709/000031670919000008/schw-12312018x10k.htm",
+   "supports": "selected financial and operating data 2014-2018, the 2016-2018 client metrics and statements of income: the FY18 history vintage; Items 1, 1A and 5; the quarterly dividend rate declared on January 30, 2019"
+  },
+  {
+   "id": "SCHW79",
+   "published": "2020-02-27",
+   "filed": "accepted 2020-02-26 17:31 ET (after the close), so dated the next trading day",
+   "title": "The Charles Schwab Corporation FY2019 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/316709/000031670920000012/schw-12312019x10k.htm",
+   "supports": "selected financial and operating data 2015-2019, the 2017-2019 client metrics and statements of income: the FY19 history vintage; Items 1, 1A and 5; the quarterly dividend rate declared on January 30, 2020"
+  },
+  {
+   "id": "SCHW84",
+   "published": "2021-02-25",
+   "filed": "accepted 2021-02-24 16:20 ET (after the close), so dated the next trading day",
+   "title": "The Charles Schwab Corporation FY2020 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/316709/000031670921000012/schw-20201231.htm",
+   "supports": "selected financial and operating data 2016-2020, the 2018-2020 client metrics and statements of income: the FY20 history vintage; Items 1, 1A and 5"
+  },
+  {
+   "id": "SCHW89",
+   "published": "2022-02-25",
+   "filed": "accepted 2022-02-24 16:32 ET (after the close), so dated the next trading day",
+   "title": "The Charles Schwab Corporation FY2021 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/316709/000031670922000009/schw-20211231.htm",
+   "supports": "the MD&A overview's 2019-2021 client metrics and financial information and the 2019-2021 statements of income (Item 6 reserved): the FY21 history vintage; Items 1, 1A and 5; the quarterly dividend rate declared on January 26, 2022"
+  },
+  {
+   "id": "SCHW95",
+   "published": "2023-02-27",
+   "filed": "accepted 2023-02-24 16:18 ET (after the close), so dated the next trading day",
+   "title": "The Charles Schwab Corporation FY2022 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/316709/000031670923000009/schw-20221231.htm",
+   "supports": "the MD&A overview's 2020-2022 client metrics and financial information and the 2020-2022 statements of income (Item 6 reserved): the FY22 history vintage; Items 1, 1A and 5; the quarterly dividend rate declared on January 26, 2023"
+  },
+  {
+   "id": "SCHW99",
+   "published": "2024-01-18",
+   "filed": "accepted 2024-01-17 16:17 ET (after the close), so dated the next trading day",
+   "title": "Schwab Q4 2023 earnings release (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/316709/000031670924000011/a4q23exhibit991.htm",
+   "supports": "Q4 2023 and FY2023 statement of income, financial and operating highlights, client assets and trades"
+  },
+  {
+   "id": "SCHW98",
+   "published": "2023-10-17",
+   "filed": "accepted 2023-10-16 16:17 ET (after the close), so dated the next trading day",
+   "title": "Schwab Q3 2023 earnings release (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/316709/000031670923000047/a3q23exhibit991_093023.htm",
+   "supports": "Q3 2023 statement of income, financial and operating highlights, client assets and trades"
+  },
+  {
+   "id": "SCHW25",
+   "published": "2010-02-25",
+   "filed": "accepted 2010-02-25 14:43 ET (during market hours)",
+   "title": "The Charles Schwab Corporation FY2009 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/316709/000119312510040444/d10k.htm",
+   "supports": "selected financial and operating data 2005-2009, the 2007-2009 client activity metrics and statements of income: the FY09 history vintage; Items 1, 1A and 5; the transfer of the listing to the NYSE"
+  },
+  {
+   "id": "Y0",
+   "published": "2024-03-28",
+   "title": "Yahoo Finance daily prices, SCHW and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/SCHW/history",
+   "supports": "close $72.34 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution from 2014-03-31"
+  }
+ ],
+ "warnings": [
+  "calendar year(s) 2056 after 2024 outside FY labels — make sure they are forecasts"
+ ],
+ "generated": "2026-11-27"
+}
