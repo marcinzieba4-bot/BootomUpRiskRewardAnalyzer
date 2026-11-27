@@ -1,0 +1,151 @@
+
+════════════════════════════════════════════════════════════════════════
+  CRM  ·  Salesforce, Inc.  ·  $260.00  ·  RETROSPECTIVE as of 2023-12-01
+  Signal: ◉ BUY   Ratio B: 0.03x   Adj gap: +0.89  [UNDERVALUED]
+  Point-in-time: 18 sources, latest published 2023-12-01; latest print Q3 FY24 (Nov 29)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2024E revenue, USD bn  →  FY2026E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2024E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Americas                      $ 23.57  $23.57  $37.10    +0.00   +13.53
+    +18.2% revenue in FY23
+  Europe                        $  7.95  $ 7.95  $12.51    +0.00    +4.56
+    +19.1% revenue in FY23
+  Asia Pacific                  $  3.26  $ 3.26  $ 5.13    +0.00    +1.87
+    +17.9% revenue in FY23
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $ 34.78  $34.78  $54.74    +0.00   +19.96
+  FY2024E = FY23 $31.352B × (1 + 10.9%: FY24 revenue guide midpoint ($34.75-34.80B, Q3 FY24 release)); split pro rata to FY23 revenues by geography (the FY2023 10-K), growth on the year before
+  Q3 FY24 (Nov 29): revenue $8.720B +11.3% YoY (+1.4% QoQ); subscription and support +12.6%; deferred revenue $12.564B +12.2%; R&D + M&S + G&A -5.3%;
+  gross margin 75.29% (+193.0bp); operating margin 17.21% (+1134.4bp); EPS $1.25 vs $0.21
+  Revenue: revenues $8,720M vs $7,837M a year earlier, $8,603M the quarter before; subscription and support $8,141M vs $7,233M; unearned revenue $12,564M at the quarter end vs $11,193M a year earlier (the release's unearned revenue roll-forward; the balance sheet's current liability); GAAP diluted EPS $1.25 vs $0.21; the release's non-GAAP EPS also excludes stock-based compensation and the amortization of purchased intangibles, which recur, so it is not used; diluted shares 981M; restructuring $55M vs $0M a year earlier, a separately stated operating line outside the opex signal; 'Losses on the Company’s strategic investments negatively impacted GAAP diluted EPS by $(0.06)' (display)
+  Q4 FY24 outlook: Q4 FY24 revenue $9,180-9,230M ('Revenue | $9.18 - $9.23 Billion | $34.75 - $34.8 Billion') against Q4 FY23's $8,384.0M: +9.5% to +10.1% YoY; display only: '$1.26 - $1.27' (Q4 FY24 GAAP EPS); FY24 guide (Q4 FY23 release, Q1 FY24 release, Q2 FY24 release, Q3 FY24 release): EPS $3.99-4.00 (Q3 FY24 release: GAAP diluted EPS); revenue $34.75-34.80B (Q3 FY24 release; the segment bridge only); GAAP operating margin 14.5% ('GAAP Operating Margin | N/A | 14.5%', Q3 FY24 release), a guided step from FY23's 3.29%
+
+  FY2024E EPS check:  $34.780B × 2.1% pre-tax × (1−68.5%) ÷ 0.981B  =  $0.24  (FY2024E EPS, guide midpoint ($3.99-4.00, Q3 FY24 release))
+  FY2026E BEAR check: $34.780B × 2.1% ÷ 1.092B  =  $0.21  (scenario $4.00)
+  FY2026E BULL check: $54.740B × 2.5% ÷ 1.092B  =  $0.40  (scenario $13.17)
+  Every 1pp of pre-tax margin ≈ $0.112 EPS ≈ $18.66/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Subscription and support growth       +40.0%    ≥61.0%    ≥82.0%   ≥328.0%    +12.6%  ⚠ BEAR  █░░░
+  Deferred revenue growth               +43.0%    ≥68.0%    ≥93.0%   ≥169.0%    +12.2%  ⚠ BEAR  █░░░
+  Gross margin change                 -740.0bp  ≥-330.0bp   ≥70.0bp  ≥3600.0bp  +193.0bp  ▲ BULL  ███░
+  Opex growth less revenue             +49.0pp   ≤12.0pp  ≤-24.0pp  ≤-305.0pp   -16.6pp  ◦ BASE  ██░░
+  Operating margin change             -2800.0bp  ≥-720.0bp  ≥1360.0bp  ≥48650.0bp  +1121.0bp  ◦ BASE  ██░░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.75 / 4.00
+  Market composite:   1.10 / 4.00  (back-solved from $260.00 + 15% hurdle)
+  SCA adjustment:    +0.04  ·  EPP-distance adj +0.20  →  Adj composite 1.99  →  Gap +0.89  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY23 revenues +18.3%, subscription and support +17.7%, gross margin 73.3%; Q3 unearned revenue +12.2% YoY  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 65.1x FY24E vs a 167.1x 6.8-yr ex-FY14 ex-FY15 ex-FY16 ex-FY17 ex-FY19 ex-FY20 ex-FY21 ex-FY22 ex-FY23 median (46th percentile of its own range)  (+0.07 × 25%  =  +0.018)
+    -  Growth vs own history: Q4 FY24 revenue guide (Q3 FY24 release) +9.5-10.1% vs a 24.9% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  Cash, cash equivalents and marketable securities $11.863B (Q3 FY24), debt $9.425B (derived: debt, current $999M plus noncurrent debt $8,426M, the balance sheet), FY23 free cash flow $6.313B (net cash provided by operating activities $7,111M less capital expenditures $798M (FY2023 10-K)), no dividend  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Subscription and support growth       +12.6%    +40.0%  +27.4%  New subscriptions and renewals slow: …
+  Deferred revenue growth               +12.2%    +43.0%  +30.8%  Billings slow ahead of revenue: the n…
+  Gross margin change                 +193.0bp  -740.0bp  -933.0bp  Data-center and service costs outgrow…
+  Opex growth less revenue             -16.6pp   +49.0pp  +65.6pp  Marketing and sales, R&D and G&A do n…
+  Operating margin change             +1121.0bp  -2800.0bp  -3921.0bp  Operating leverage works in reverse
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$771.49  (model)  /  $192.80 (defined)
+  Bear probability (proxy model):  33.0%
+
+  KEY TRIGGER: revenue went from +11.4% (Q2 FY24) to +11.3% YoY (Q3 FY24), +1.4% on the quarter before;
+  the bear case needs deferred revenue (+12.2% YoY now) and the operating
+  margin (+1134.4bp now) giving way. A subscription slowdown shows up in deferred revenue first, then in
+  subscription and support revenue a few quarters later.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $4.00  (FY2024E EPS, guide midpoint ($3.99-4.00, Q3 FY24 release))
+  Min viable P/E at panic:          160x  [median of calendar-year P/E lows: 2017 160.4x, 2018 213.1x, 2023 40.5x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $639.20/share
+  Current $260.00 vs Updated EPP $639.20:  -59%  ✓ BELOW panic floor — deep-value zone
+  Bear $192.80 vs Updated EPP $639.20:  -70%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Subscription and support growth               61.0      +48.4   BASE floor (vs +13 now)
+  Deferred revenue growth                       68.0      +55.8   BASE floor (vs +12 now)
+  Gross margin change                         -330.0     -523.0   BASE floor (vs +193 now)
+  Opex growth less revenue                      12.0      +28.6   BASE floor (vs -17 now)
+  Operating margin change                     -720.0    -1841.0   BASE floor (vs +1121 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $4.00 × (1+79.6%)² = $12.88
+  At 167x P/E (conservative):  $2,151.59/share
+  + Cumul. dividends (2yr):  +$0.00/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $2,151.59  (▲1,891.59 from $260.00)
+  Conservative total return:  +728% over 2yr  = +364%/yr
+
+  At 65.1x the multiple is already near its 167x median, so the conservative
+  case is a growth question: breakeven at 167x needs FY2026E EPS of $1.56,
+  i.e. -37.6%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $126.34  –  $263.43  (at 97th pct of range)
+  Annual dividend:      $0.00/share  (yield 0.0%)
+  Realized vol:         30% annualized (1-yr daily log returns)
+  Beta vs broad market: 1.24
+  1-sigma range (1yr):  $180.96  –  $339.04  ($260.00 ± 30%)
+  2-sigma range (1yr):  $101.92  –  $418.08
+  ────────────────────────────────────────────────────────────
+  Bear $192.80 requires:  ~0.9σ price move  (within normal vol range)
+  A subscription software company priced on its growth: the stock is +103% off its December
+  low (52 weeks) while revenue went from +11.4% (Q2 FY24) to +11.3% YoY (Q3 FY24), +1.4% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        4.00   48.2x  $ 192.80    33.0%     72.2%   -39.3pp  Flat EPS (no EPS change in FY18-FY18 to measure: the 0% cap); P/E to its 10th pct
+  BASE       13.17  167.1x  $2,200.71    50.0%     20.7%   +29.3pp  EPS +81.6%/yr (Q4 FY24 guide YoY + margin + buyback); P/E at its 6.8-yr ex-FY14 ex-FY15 ex-FY16 ex-FY17 ex-FY19 ex-FY20 ex-FY21 ex-FY22 ex-FY23 median
+  BULL       13.17  186.3x  $2,453.57    14.3%      5.9%    +8.4pp  EPS +81.6%/yr (no FY18-FY18 CAGR to measure: BASE's rate); P/E holds its 75th pct
+  XBULL      13.17  211.1x  $2,780.19     2.7%      1.1%    +1.6pp  EPS +81.6%/yr (no 2-yr run in FY18-FY18: BULL's rate); P/E at its 90th pct
+
+  Proxy EV (2yr): $1,590.72  /  Market EV: $771.49  /  Current: $260.00
+  Conservative EV (2yr, ④): $2,151.59 + $0.00 divs = $2,151.59 total value
+  Downside (→ Bear $192.80): 25.8%   Upside (→ Bull $2453.57): 843.7%   Ratio B 0.03x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $260.00 the market needs $343.85 in two years —
+  at or below the BASE case. That is a market composite of 1.10 against a model
+  read of 1.99: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.03x     -59%    +0.89  UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.02x     -59%    +0.99  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.04x     -59%    +0.77  UNDERVALUED / BUY
+  Scenario EPS +1.5pp/yr                          0.03x     -59%    +0.89  UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.03x     -59%    +0.99  UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.03x     -59%    +1.19  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.03x     -60%    +0.89  UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.03x     -59%    +0.89  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 FY24 print (March) — revenue against the Q4 FY24 revenue guide (Q3 FY24 release): +9.5-10.1% YoY
+  (2) Deferred revenue — +12.2% YoY in Q3 FY24: billings run ahead of revenue, so they slow first
+  (3) The FY24 EPS guide — $3.99-4.00 GAAP (Q3 FY24 release)
+  (4) Operating expenses — R&D, marketing and sales and G&A -5.3% against revenue +11.3% in Q3 FY24 (-16.6pp): the cost of growth
+  (5) Capital structure at 65x — share repurchases: 'In February 2023, the Board of Directors authorized an additional $10.0 billion in repurchases under the Share Repurchase Program, for an aggregate total authorized of $20.0 billion.' (FY2023 10-K; the program was first authorized in August 2022, up to $10.0 billion)
+  ◉ BUY  |  EPP floor $639.20  |  ADD below ~$1,870.60  |  TRIM above $2,453.57
+════════════════════════════════════════════════════════════════════════
+
