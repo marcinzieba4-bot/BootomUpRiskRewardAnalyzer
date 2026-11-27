@@ -29719,7 +29719,8 @@ Controls and checks (before any outcome):
 - **Firewall** (the CHTR branch extended to the models: on disk, a later print, a later vintage with planted model fields and every year
   distorted, later streaming words, guide, dividend, listing, no-dividend statement and Q4 year, and every price from the cutoff times 10;
   the gate test's planted vintage holds losses where the dates already pass): at the 20 cutoffs above no refusal before the cutoff
-  changes, every gate control after it does, and 0 of 1 to 153 models change or contain planted text.
+  changes, every gate control after it does, and 0 of 1 to 153 models change or contain planted text (run again on the committed fact sheet, builder
+  and README: 20 of 20 pass with exit code 0, 0 files changed).
 
 Seen in the build (method behaviour, not tuned):
 - **Totals: RICH 77, CHEAP 66, FAIR 10;** by year RICH 48 in 2019; RICH 26, CHEAP 17, FAIR 10 in 2020; CHEAP 49, RICH 3 in 2021. Tiers:
