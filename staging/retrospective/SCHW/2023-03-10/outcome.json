@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "SCHW",
+ "as_of": "2023-03-10",
+ "computed": "2026-11-27",
+ "data_source": "Yahoo Finance daily closes + dividends (SCHW, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2023-09-08",
+   "price": 59.33,
+   "dividends": 0.5,
+   "total_return_pct": 1.9,
+   "benchmark_total_return_pct": 16.3,
+   "excess_pct": -14.3,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2024-03-08",
+   "price": 67.17,
+   "dividends": 1.0,
+   "total_return_pct": 16.1,
+   "benchmark_total_return_pct": 34.3,
+   "excess_pct": -18.2,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2025-03-10",
+   "price": 71.24,
+   "dividends": 2.02,
+   "total_return_pct": 24.8,
+   "benchmark_total_return_pct": 48.8,
+   "excess_pct": -24.0,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2026-03-10",
+   "price": 93.17,
+   "dividends": 3.15,
+   "total_return_pct": 64.1,
+   "benchmark_total_return_pct": 80.9,
+   "excess_pct": -16.8,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2025-02-06",
+   "price": 83.64
+  },
+  "low": {
+   "date": "2023-05-04",
+   "price": 47.37
+  },
+  "max_drawdown_pct": -27.4,
+  "return_to_avg_price_m12_m24_pct": 23.8
+ },
+ "scenario_landing_2y": "BASE",
+ "call_check_2y": {
+  "expectation": "CHEAP: should clear the hurdle or beat the benchmark",
+  "hit": false
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "DURABLE",
+   "risk": 2
+  },
+  "today": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Schwab: scale brokerage/bank; cash-sorting relief is the tailwind, rates the risk",
+   "reviewed": "2026-09-22"
+  }
+ }
+}

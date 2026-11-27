@@ -4,6 +4,9 @@ class and legacy tier, by current-FY EPS and by latest print, per year, plus 3-y
 
     python3 retro/generators/schw/findings_tables.py 2010,2011,2012,2013
 
+(SCHW 2022-2026) Dates whose two-year horizon has not ended are left out of the 2-year tables and counted on their own line with
+the horizons they have (1-year return and excess where it exists); earlier batches, which have every horizon, print as before.
+
 Run it only after the batch's build, validation outputs, README section and firewall result are committed and pushed, and
 `retro_tool.py outcome` has written the outcomes (retro/README.md, "Adding dates"). Nothing it prints may feed a fact sheet,
 a builder or a rule.
@@ -17,6 +20,7 @@ import sys
 
 REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 rows = []
+partial = []
 for d in sorted(x for x in glob.glob(os.path.join(REPO, "staging", "retrospective", "SCHW", "20*")) if os.path.basename(x)[:4] in sys.argv[1].split(",")):
     a = json.load(open(os.path.join(d, "analysis.json")))
     o = json.load(open(os.path.join(d, "outcome.json")))
@@ -26,6 +30,11 @@ for d in sorted(x for x in glob.glob(os.path.join(REPO, "staging", "retrospectiv
     q = re.search(r"latest print (Q\d \d{4})", a["summary"]) or re.search(r'"quarter": "(Q\d \d{4})"', m)
     lq = re.search(r"LATEST\s+= \{'quarter': '(Q\d \d{4})'", m).group(1)
     h2, h3 = o["horizons"].get("2y"), o["horizons"].get("3y")
+    h1 = o["horizons"].get("1y")
+    if not h2:                      # (SCHW 2022-2026) the two-year horizon has not ended: partial rows, 2-year tables skip them
+        partial.append(dict(date=a["as_of"], cls=a["classification"]["price_state"], tier=a["legacy_signal_short"],
+                            r1=h1["total_return_pct"] if h1 else None, x1=h1["excess_pct"] if h1 else None))
+        continue
     rows.append(dict(date=a["as_of"], price=a["price"], cls=a["classification"]["price_state"], tier=a["legacy_signal_short"],
                      fy=f"{fy.group(1)[:2]}{fy.group(1)[4:]} ${fy.group(3)} ({fy.group(2)}'s)", lq=lq,
                      r2=h2["total_return_pct"], x2=h2["excess_pct"], hu2=h2["hurdle_pct"], r3=h3["total_return_pct"] if h3 else None,
@@ -44,6 +53,21 @@ def line(name, rs):
 
 for yr in sys.argv[1].split(","):
     rs = [r for r in rows if r["date"].startswith(yr)]
+    ps = [r for r in partial if r["date"].startswith(yr)]
+    if ps:
+        cnt = {}
+        for r in ps:
+            cnt[r["cls"]] = cnt.get(r["cls"], 0) + 1
+        with1 = [r for r in ps if r["r1"] is not None]
+        print(f"\n{yr}: {len(ps)} dates without a 2-year horizon {cnt}; with a 1-year horizon {len(with1)}" +
+              (f", 1y {min(r['r1'] for r in with1):+.1f}% to {max(r['r1'] for r in with1):+.1f}%, beat SPY "
+               f"{sum(r['x1'] > 0 for r in with1)}" if with1 else ""))
+        for c in sorted(cnt):
+            w = [r for r in with1 if r["cls"] == c]
+            if w:
+                print(f"   {c}: {len(w)} with 1y, median {statistics.median_high([r['r1'] for r in w]):+.1f}%, beat SPY {sum(r['x1'] > 0 for r in w)}")
+    if not rs:
+        continue
     print(f"\n## {yr} ({len(rs)} dates)\n")
     print("| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |")
     print("|---|---|---|---|---|---|---|---|")
@@ -54,8 +78,11 @@ for yr in sys.argv[1].split(","):
             groups.setdefault(k, []).append(r)
         for k, g in groups.items():
             print(line(k, g))
-    print(f"3y: {sum(r['r3'] >= r['hu3'] for r in rs if r['r3'] is not None)} of {len(rs)} cleared, "
-          f"{sum(r['x3'] > 0 for r in rs if r['x3'] is not None)} beat SPY; range {min(r['r3'] for r in rs):+.1f}% to {max(r['r3'] for r in rs):+.1f}%")
+    r3s = [r for r in rs if r["r3"] is not None]       # (SCHW 2022-2026) the 3-year horizon may not have ended
+    if r3s:
+        print(f"3y: {sum(r['r3'] >= r['hu3'] for r in r3s)} of {len(r3s)} cleared, "
+              f"{sum(r['x3'] > 0 for r in r3s)} beat SPY; range {min(r['r3'] for r in r3s):+.1f}% to {max(r['r3'] for r in r3s):+.1f}%"
+              + ("" if len(r3s) == len(rs) else f" ({len(rs) - len(r3s)} dates without a 3-year horizon)"))
     print("1y range", min(r["r1"] for r in rs), max(r["r1"] for r in rs), "excess 2y", min(r["x2"] for r in rs), max(r["x2"] for r in rs))
     print("drawdown", min(r["dd"] for r in rs), max(r["dd"] for r in rs))
 lands = {}

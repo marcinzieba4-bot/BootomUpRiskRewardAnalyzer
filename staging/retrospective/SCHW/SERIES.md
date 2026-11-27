@@ -735,3 +735,258 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2021-12-17 | $82.95 | - | 3.25 | +1.56 | 0.48x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | -12.2% | -17.1pp | -26.0% | ✗ |
 | 2021-12-23 | $85.13 | - | 3.25 | +1.54 | 0.50x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | -17.3% | -20.7pp | -28.2% | ✗ |
 | 2021-12-31 | $84.10 | - | 3.25 | +1.55 | 0.49x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | -16.0% | -18.8pp | -27.5% | ✗ |
+| 2022-01-07 | $91.74 | - | 3.25 | +1.47 | 0.59x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | -24.7% | -27.9pp | -33.9% | ✗ |
+| 2022-01-14 | $95.53 | - | 3.25 | +1.43 | 0.64x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 8/8 FAIR | -29.8% | -35.2pp | -36.9% | ✗ |
+| 2022-01-20 | $91.43 | - | 2.70 | -0.61 | 5.08x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -28.2% | -39.1pp | -34.3% | ✓ |
+| 2022-01-28 | $88.91 | - | 2.70 | -0.54 | 4.04x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -25.9% | -39.1pp | -32.8% | ✓ |
+| 2022-02-04 | $91.90 | - | 2.70 | -0.61 | 5.17x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -29.5% | -42.6pp | -35.3% | ✓ |
+| 2022-02-11 | $89.11 | - | 2.70 | -0.54 | 4.01x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -26.8% | -43.5pp | -33.6% | ✓ |
+| 2022-02-18 | $85.61 | - | 2.70 | -0.44 | 3.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -22.6% | -40.6pp | -31.3% | ✓ |
+| 2022-02-25 | $85.75 | - | 2.70 | -0.41 | 2.57x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -22.6% | -41.6pp | -31.7% | ✓ |
+| 2022-03-04 | $79.23 | - | 2.70 | -0.11 | 1.73x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -12.2% | -33.8pp | -26.3% | ✗ |
+| 2022-03-11 | $80.24 | - | 2.70 | -0.18 | 1.83x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -14.2% | -39.0pp | -27.3% | ✓ |
+| 2022-03-18 | $90.00 | - | 2.70 | -0.53 | 3.36x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -23.0% | -41.4pp | -35.0% | ✓ |
+| 2022-03-25 | $91.36 | - | 2.70 | -0.56 | 3.64x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -19.9% | -37.6pp | -35.6% | ✓ |
+| 2022-04-01 | $83.54 | - | 2.70 | -0.32 | 2.18x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -11.1% | -29.3pp | -29.2% | ✓ |
+| 2022-04-08 | $81.69 | - | 2.70 | -0.24 | 1.96x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -9.1% | -27.9pp | -27.1% | ✓ |
+| 2022-04-14 | $82.75 | - | 2.70 | -0.28 | 2.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -13.1% | -32.8pp | -27.6% | ✓ |
+| 2022-04-20 | $76.45 | - | 2.00 | -0.89 | 1.45x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -1.5% | -15.8pp | -21.2% | ✓ |
+| 2022-04-29 | $66.33 | - | 2.00 | -0.41 | 0.87x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +15.3% | -11.7pp | -8.4% | ✓ |
+| 2022-05-06 | $67.42 | - | 2.00 | -0.45 | 0.92x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +16.8% | -12.0pp | -9.1% | ✓ |
+| 2022-05-13 | $65.61 | - | 2.00 | -0.38 | 0.84x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +16.8% | -16.1pp | -5.8% | ✗ |
+| 2022-05-20 | $63.28 | - | 2.00 | -0.31 | 0.74x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +27.4% | -12.1pp | -1.4% | ✗ |
+| 2022-05-27 | $70.59 | - | 2.00 | -0.55 | 1.08x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +5.1% | -25.5pp | -11.1% | ✓ |
+| 2022-06-03 | $70.07 | - | 2.00 | -0.54 | 1.05x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +6.1% | -25.7pp | -10.0% | ✓ |
+| 2022-06-10 | $62.22 | - | 2.00 | -0.27 | 0.70x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +22.2% | -18.6pp | +2.0% | ✗ |
+| 2022-06-17 | $59.99 | - | 2.00 | -0.18 | 0.62x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +24.6% | -28.1pp | +6.4% | ✗ |
+| 2022-06-24 | $64.43 | - | 2.00 | -0.35 | 0.79x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +18.7% | -23.9pp | -0.4% | ✗ |
+| 2022-07-01 | $63.92 | - | 2.00 | -0.32 | 0.77x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +17.9% | -28.7pp | +0.9% | ✗ |
+| 2022-07-08 | $64.36 | - | 2.00 | -0.34 | 0.78x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +16.8% | -29.5pp | +0.6% | ✗ |
+| 2022-07-15 | $62.18 | - | 2.00 | -0.26 | 0.70x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +23.9% | -25.4pp | +4.7% | ✗ |
+| 2022-07-20 | $62.83 | - | 2.50 | +0.54 | 0.72x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +1.9% | -40.6pp | +3.6% | ✗ |
+| 2022-07-29 | $69.05 | - | 2.50 | +0.26 | 0.99x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -2.6% | -38.1pp | -5.8% | ✗ |
+| 2022-08-05 | $69.31 | - | 2.50 | +0.26 | 1.01x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -7.3% | -35.7pp | -6.2% | ✗ |
+| 2022-08-12 | $75.00 | - | 2.50 | -0.08 | 1.35x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | -15.0% | -43.0pp | -13.4% | ✗ |
+| 2022-08-19 | $73.86 | - | 2.50 | -0.02 | 1.27x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | -8.5% | -44.3pp | -11.9% | ✗ |
+| 2022-08-26 | $71.89 | - | 2.50 | +0.05 | 1.15x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -7.6% | -49.2pp | -9.3% | ✗ |
+| 2022-09-02 | $70.34 | - | 2.50 | +0.23 | 1.06x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -4.6% | -51.8pp | -7.2% | ✗ |
+| 2022-09-09 | $74.54 | - | 2.50 | -0.05 | 1.32x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | -12.8% | -50.5pp | -12.3% | ✗ |
+| 2022-09-16 | $71.87 | - | 2.50 | +0.06 | 1.15x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -8.6% | -57.7pp | -8.9% | ✗ |
+| 2022-09-23 | $70.89 | - | 2.50 | +0.20 | 1.09x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -5.6% | -64.1pp | -7.5% | ✗ |
+| 2022-09-30 | $71.87 | - | 2.50 | +0.06 | 1.15x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -7.1% | -71.5pp | -8.5% | ✗ |
+| 2022-10-07 | $74.31 | - | 2.50 | -0.04 | 1.30x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | -10.8% | -71.1pp | -11.1% | ✗ |
+| 2022-10-14 | $68.98 | - | 2.50 | +0.29 | 0.99x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +1.2% | -66.0pp | -3.8% | ✗ |
+| 2022-10-19 | $68.71 | - | 2.30 | +0.35 | 0.98x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +6.7% | -55.6pp | -3.0% | ✗ |
+| 2022-10-28 | $80.19 | - | 2.30 | -0.36 | 1.77x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -7.7% | -60.5pp | -16.3% | ✓ |
+| 2022-11-04 | $79.05 | - | 2.30 | -0.30 | 1.67x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -7.7% | -62.7pp | -14.6% | ✗ |
+| 2022-11-11 | $78.36 | - | 2.30 | -0.25 | 1.61x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +1.9% | -51.7pp | -13.4% | ✗ |
+| 2022-11-18 | $79.81 | - | 2.30 | -0.33 | 1.74x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +4.5% | -47.4pp | -14.3% | ✗ |
+| 2022-11-25 | $81.61 | - | 2.30 | -0.45 | 1.92x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +2.6% | -49.2pp | -15.7% | ✓ |
+| 2022-12-02 | $82.46 | - | 2.30 | -0.49 | 1.98x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +1.1% | -50.5pp | -16.0% | ✓ |
+| 2022-12-09 | $79.82 | - | 2.30 | -0.32 | 1.72x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +4.6% | -52.6pp | -12.8% | ✗ |
+| 2022-12-16 | $78.19 | - | 2.30 | -0.23 | 1.57x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +2.2% | -59.1pp | -10.6% | ✗ |
+| 2022-12-23 | $81.77 | - | 2.30 | -0.44 | 1.91x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -6.2% | -65.1pp | -14.4% | ✓ |
+| 2022-12-30 | $83.26 | - | 2.30 | -0.52 | 2.08x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -8.8% | -66.2pp | -15.8% | ✓ |
+| 2023-01-06 | $84.54 | - | 2.30 | -0.59 | 2.24x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -9.5% | -66.5pp | -17.0% | ✓ |
+| 2023-01-13 | $82.98 | - | 2.30 | -0.50 | 2.01x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -10.0% | -59.4pp | -15.3% | ✓ |
+| 2023-01-20 | $77.03 | - | 2.30 | +0.56 | 0.71x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +1.8% | -52.6pp | -8.5% | ✗ |
+| 2023-01-27 | $74.69 | - | 2.30 | +0.66 | 0.65x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +13.2% | -37.9pp | -5.2% | ✗ |
+| 2023-02-03 | $79.02 | - | 2.30 | +0.47 | 0.78x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +7.3% | -41.0pp | -9.9% | ✗ |
+| 2023-02-10 | $80.46 | - | 2.30 | +0.39 | 0.82x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +3.1% | -48.5pp | -11.0% | ✗ |
+| 2023-02-17 | $80.32 | - | 2.30 | +0.40 | 0.82x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +2.5% | -50.5pp | -10.4% | ✗ |
+| 2023-02-24 | $80.60 | - | 2.30 | +0.39 | 0.83x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +1.9% | -52.2pp | -10.4% | ✗ |
+| 2023-03-03 | $77.41 | - | 2.30 | +0.54 | 0.71x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +3.5% | -44.3pp | -6.3% | ✗ |
+| 2023-03-10 | $58.70 | - | 2.30 | +1.28 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +24.8% | -24.0pp | +23.8% | ✗ |
+| 2023-03-17 | $56.41 | - | 2.30 | +1.32 | 0.25x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +41.4% | -7.1pp | +29.1% | ✓ |
+| 2023-03-24 | $53.26 | - | 2.30 | +1.39 | 0.20x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +53.9% | +5.4pp | +37.0% | ✓ |
+| 2023-03-31 | $52.38 | - | 2.30 | +1.40 | 0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +52.4% | +13.3pp | +39.6% | ✓ |
+| 2023-04-06 | $49.35 | - | 2.30 | +1.47 | 0.15x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +44.0% | +17.2pp | +48.3% | ✓ |
+| 2023-04-14 | $50.77 | - | 2.30 | +1.44 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +55.5% | +21.4pp | +44.3% | ✓ |
+| 2023-04-19 | $55.55 | - | 2.15 | +0.97 | 0.24x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +40.7% | +10.3pp | +31.9% | ✓ |
+| 2023-04-28 | $52.24 | - | 2.15 | +1.04 | 0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +57.4% | +21.6pp | +40.5% | ✓ |
+| 2023-05-05 | $49.24 | - | 2.15 | +1.11 | 0.15x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +73.4% | +33.5pp | +49.3% | ✓ |
+| 2023-05-12 | $48.94 | - | 2.15 | +1.12 | 0.15x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +78.6% | +33.6pp | +50.6% | ✓ |
+| 2023-05-19 | $51.67 | - | 2.15 | +1.05 | 0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +76.6% | +31.2pp | +43.0% | ✓ |
+| 2023-05-26 | $53.67 | - | 2.15 | +1.01 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +66.6% | +25.5pp | +38.0% | ✓ |
+| 2023-06-02 | $54.37 | - | 2.15 | +0.99 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +65.8% | +24.1pp | +36.9% | ✓ |
+| 2023-06-09 | $55.00 | - | 2.15 | +0.98 | 0.24x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +64.1% | +21.4pp | +35.8% | ✓ |
+| 2023-06-16 | $54.40 | - | 2.15 | +0.99 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +67.3% | +27.4pp | +37.9% | ✓ |
+| 2023-06-23 | $53.17 | - | 2.15 | +1.01 | 0.21x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +70.1% | +28.3pp | +41.5% | ✓ |
+| 2023-06-30 | $56.68 | - | 2.15 | +0.93 | 0.27x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +64.6% | +22.0pp | +33.3% | ✓ |
+| 2023-07-07 | $56.79 | - | 2.15 | +0.93 | 0.27x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +66.6% | +21.9pp | +33.6% | ✓ |
+| 2023-07-14 | $58.52 | - | 2.15 | +0.88 | 0.30x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +61.9% | +19.7pp | +30.2% | ✓ |
+| 2023-07-20 | $67.94 | - | 2.20 | +0.08 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +44.0% | +2.1pp | +12.9% | ✓ |
+| 2023-07-28 | $65.96 | - | 2.20 | +0.12 | 0.44x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +51.5% | +9.1pp | +17.3% | ✓ |
+| 2023-08-04 | $64.92 | - | 2.20 | +0.15 | 0.42x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +52.7% | +8.3pp | +20.2% | ✓ |
+| 2023-08-11 | $64.08 | - | 2.20 | +0.16 | 0.40x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +55.6% | +9.7pp | +22.9% | ✓ |
+| 2023-08-18 | $59.52 | - | 2.20 | +0.27 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +65.0% | +14.5pp | +33.4% | ✓ |
+| 2023-08-25 | $58.15 | - | 2.20 | +0.50 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +69.0% | +19.7pp | +37.6% | ✓ |
+| 2023-09-01 | $60.50 | - | 2.20 | +0.24 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +61.8% | +15.7pp | +33.2% | ✓ |
+| 2023-09-08 | $59.33 | - | 2.20 | +0.47 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +61.0% | +12.2pp | +36.8% | ✓ |
+| 2023-09-15 | $58.22 | - | 2.20 | +0.49 | 0.30x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +61.7% | +9.9pp | +40.4% | ✓ |
+| 2023-09-22 | $55.15 | - | 2.20 | +0.60 | 0.25x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +75.0% | +16.7pp | +49.3% | ✓ |
+| 2023-09-29 | $54.90 | - | 2.20 | +0.61 | 0.24x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +80.2% | +21.6pp | +51.1% | ✓ |
+| 2023-10-06 | $51.52 | - | 2.20 | +0.76 | 0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +86.5% | +26.8pp | +62.1% | ✓ |
+| 2023-10-13 | $51.33 | - | 2.20 | +0.77 | 0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +86.1% | +29.2pp | +63.8% | ✓ |
+| 2023-10-18 | $51.84 | - | 1.90 | +0.23 | 0.20x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +85.6% | +27.8pp | +63.0% | ✓ |
+| 2023-10-27 | $50.12 | - | 1.90 | +0.31 | 0.18x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +93.3% | +23.0pp | +69.6% | ✓ |
+| 2023-11-03 | $55.83 | - | 1.90 | +0.14 | 0.26x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +70.5% | +10.1pp | +53.1% | ✓ |
+| 2023-11-10 | $54.41 | - | 1.90 | +0.17 | 0.24x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +79.0% | +21.1pp | +57.8% | ✓ |
+| 2023-11-17 | $56.78 | - | 1.90 | +0.12 | 0.28x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +65.5% | +14.7pp | +51.8% | ✓ |
+| 2023-11-24 | $56.43 | - | 1.90 | +0.12 | 0.28x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +64.1% | +14.1pp | +53.1% | ✓ |
+| 2023-12-01 | $63.16 | - | 1.90 | -0.22 | 0.40x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +50.0% | -1.2pp | +37.1% | ✓ |
+| 2023-12-08 | $64.07 | - | 1.90 | -0.24 | 0.43x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +50.4% | -1.3pp | +35.5% | ✓ |
+| 2023-12-15 | $70.98 | - | 1.90 | -0.40 | 0.59x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +37.2% | -10.5pp | +22.7% | ✓ |
+| 2023-12-22 | $68.58 | - | 1.90 | -0.34 | 0.53x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +50.9% | +3.3pp | +27.7% | ✓ |
+| 2023-12-29 | $68.80 | - | 1.90 | -0.35 | 0.54x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +50.3% | +2.5pp | +27.9% | ✓ |
+| 2024-01-05 | $67.23 | - | 1.90 | -0.32 | 0.50x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +57.4% | +7.4pp | +31.5% | ✓ |
+| 2024-01-12 | $65.23 | - | 1.90 | -0.28 | 0.45x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +59.4% | +10.6pp | +36.3% | ✓ |
+| 2024-01-19 | $63.78 | - | 1.90 | -0.98 | 1.75x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +66.0% | +19.7pp | +40.2% | ✗ |
+| 2024-01-26 | $64.04 | - | 1.90 | -1.09 | 1.78x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +64.0% | +18.9pp | +40.3% | ✗ |
+| 2024-02-02 | $62.94 | - | 1.90 | -0.94 | 1.65x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +70.4% | +26.8pp | +43.4% | ✗ |
+| 2024-02-09 | $63.37 | - | 1.90 | -0.96 | 1.70x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +72.1% | +30.7pp | +43.1% | ✗ |
+| 2024-02-16 | $64.40 | - | 1.90 | -1.12 | 1.84x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +48.9% | +9.5pp | +41.2% | ✗ |
+| 2024-02-23 | $64.44 | - | 1.90 | -1.12 | 1.85x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +47.3% | +10.1pp | +41.5% | ✗ |
+| 2024-03-01 | $66.47 | - | 1.90 | -1.24 | 2.31x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +46.5% | +9.9pp | +37.6% | ✗ |
+| 2024-03-08 | $67.17 | - | 1.90 | -1.27 | 2.48x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +45.0% | +10.8pp | +36.7% | ✗ |
+| 2024-03-15 | $67.04 | - | 1.90 | -1.26 | 2.45x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +42.0% | +9.6pp | +37.6% | ✗ |
+| 2024-03-22 | $71.60 | - | 1.90 | -1.43 | 3.60x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +35.2% | +8.0pp | +29.3% | ✗ |
+| 2024-03-28 | $72.34 | - | 1.90 | -1.45 | 3.86x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +30.6% | +6.6pp | +28.3% | ✗ |
+| 2024-04-05 | $71.89 | - | 1.90 | -1.44 | 3.70x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +33.4% | +4.1pp | +29.6% | ✗ |
+| 2024-04-12 | $70.03 | - | 1.90 | -1.38 | 3.13x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +38.4% | +2.6pp | +33.7% | ✗ |
+| 2024-04-17 | $72.50 | - | 2.20 | -1.12 | 3.92x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +30.2% | -14.5pp | +29.6% | ✓ |
+| 2024-04-26 | $74.99 | - | 2.20 | -1.18 | 5.11x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +20.9% | -22.4pp | +25.6% | ✓ |
+| 2024-05-03 | $76.04 | - | 2.20 | -1.21 | 5.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +23.2% | -20.6pp | +24.2% | ✓ |
+| 2024-05-10 | $76.11 | - | 2.20 | -1.21 | 5.85x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +19.3% | -25.1pp | +24.2% | ✓ |
+| 2024-05-17 | $78.78 | - | 2.20 | -1.27 | 8.65x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +18.2% | -24.2pp | +20.1% | ✓ |
+| 2024-05-24 | $72.27 | - | 2.20 | -1.11 | 3.74x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +27.8% | -15.8pp | +31.0% | ✓ |
+| 2024-05-31 | $73.28 | - | 2.20 | -1.14 | 4.13x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +22.2% | -24.0pp | +29.2% | ✓ |
+| 2024-06-07 | $73.93 | - | 2.20 | -1.15 | 4.41x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +23.2% | -17.7pp | +28.0% | ✓ |
+| 2024-06-14 | $73.25 | - | 2.20 | -1.13 | 4.02x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +27.4% | -11.9pp | +29.2% | ✓ |
+| 2024-06-21 | $73.34 | - | 2.20 | -1.14 | 4.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.1% | -11.8pp | +29.2% | ✓ |
+| 2024-06-28 | $73.69 | - | 2.20 | -1.15 | 4.20x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +26.1% | -10.6pp | +28.6% | ✓ |
+| 2024-07-05 | $73.20 | - | 2.20 | -1.13 | 4.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +35.5% | -1.4pp | +29.5% | ✗ |
+| 2024-07-12 | $75.38 | - | 2.20 | -1.19 | 5.03x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +39.7% | +2.3pp | +26.0% | ✗ |
+| 2024-07-18 | $62.27 | - | 2.20 | -0.51 | 1.71x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +66.7% | +29.5pp | +52.9% | ✗ |
+| 2024-07-26 | $66.60 | - | 2.20 | -0.86 | 2.33x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +56.4% | +18.0pp | +43.1% | ✗ |
+| 2024-08-02 | $63.39 | - | 2.20 | -0.58 | 1.88x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +69.5% | +26.6pp | +50.6% | ✗ |
+| 2024-08-09 | $62.41 | - | 2.20 | -0.53 | 1.75x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +75.6% | +27.7pp | +53.2% | ✗ |
+| 2024-08-16 | $65.55 | - | 2.20 | -0.82 | 2.23x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +73.0% | +30.3pp | +46.3% | ✗ |
+| 2024-08-23 | $64.39 | - | 2.20 | -0.75 | 2.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +78.0% | +39.1pp | +49.4% | ✗ |
+| 2024-08-30 | $65.10 | - | 2.20 | -0.80 | 2.19x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +72.7% | +33.6pp | +48.2% | ✗ |
+| 2024-09-06 | $62.90 | - | 2.20 | -0.57 | 1.87x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +77.4% | +32.1pp | +53.8% | ✗ |
+| 2024-09-13 | $62.12 | - | 2.20 | -0.53 | 1.77x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +76.3% | +37.7pp | +56.1% | ✗ |
+| 2024-09-20 | $65.39 | - | 2.20 | -0.82 | 2.24x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +64.5% | +27.8pp | +48.7% | ✗ |
+| 2024-09-27 | $64.42 | - | 2.20 | -0.78 | 2.11x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +57.3% | +19.7pp | +51.2% | ✗ |
+| 2024-10-04 | $64.75 | - | 2.20 | -0.79 | 2.17x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +52.9% | +16.0pp | +50.5% | ✗ |
+| 2024-10-11 | $67.68 | - | 2.20 | -0.94 | 2.72x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +46.3% | +9.4pp | +44.1% | ✗ |
+| 2024-10-17 | $71.91 | - | 2.50 | -0.78 | 3.99x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +31.1% | -2.5pp | +35.6% | ✓ |
+| 2024-10-25 | $71.82 | - | 2.50 | -0.77 | 3.95x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +29.3% | -4.5pp | +35.7% | ✓ |
+| 2024-11-01 | $70.94 | - | 2.50 | -0.75 | 3.63x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +27.3% | -7.6pp | +37.2% | ✓ |
+| 2024-11-08 | $73.90 | - | 2.50 | -0.83 | 4.93x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +26.6% | +1.2pp | +31.7% | ✗ |
+| 2024-11-15 | $80.64 | - | 2.50 | -1.00 | 15.66x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +18.2% | -13.1pp | +20.6% | ✓ |
+| 2024-11-22 | $81.26 | - | 2.50 | -1.02 | 18.98x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +13.9% | -4.5pp | +19.7% | ✓ |
+| 2024-11-29 | $82.76 | - | 2.50 | -1.05 | 37.59x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +17.5% | - |
+| 2024-12-06 | $81.47 | - | 2.50 | -1.02 | 20.42x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +19.5% | - |
+| 2024-12-13 | $79.54 | - | 2.50 | -0.97 | 11.86x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +22.4% | - |
+| 2024-12-20 | $74.31 | - | 2.50 | -0.84 | 5.18x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +31.1% | - |
+| 2024-12-27 | $74.74 | - | 2.50 | -0.86 | 5.45x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +30.2% | - |
+| 2025-01-03 | $74.45 | - | 2.50 | -0.85 | 5.26x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +30.6% | - |
+| 2025-01-10 | $72.77 | - | 2.50 | -0.80 | 4.36x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +33.5% | - |
+| 2025-01-17 | $76.41 | - | 2.50 | -0.90 | 6.81x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +27.0% | - |
+| 2025-01-23 | $82.08 | - | 3.00 | +0.13 | 2.53x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | +18.1% | - |
+| 2025-01-31 | $82.72 | - | 3.00 | +0.10 | 2.63x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | +17.0% | - |
+| 2025-02-07 | $83.18 | - | 3.00 | +0.09 | 2.71x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | +16.1% | - |
+| 2025-02-14 | $80.34 | - | 3.00 | +0.21 | 2.27x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +20.2% | - |
+| 2025-02-21 | $80.44 | - | 3.00 | +0.20 | 2.29x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +20.1% | - |
+| 2025-02-28 | $79.53 | - | 3.00 | +0.23 | 2.21x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +21.5% | - |
+| 2025-03-07 | $74.63 | - | 3.00 | +0.62 | 1.67x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | +29.6% | - |
+| 2025-03-14 | $77.11 | - | 3.00 | +0.38 | 1.92x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +25.5% | - |
+| 2025-03-21 | $78.39 | - | 3.00 | +0.30 | 2.07x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +23.6% | - |
+| 2025-03-28 | $77.81 | - | 3.00 | +0.34 | 2.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +24.6% | - |
+| 2025-04-04 | $69.06 | - | 3.00 | +0.93 | 1.26x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | +40.5% | - |
+| 2025-04-11 | $76.96 | - | 3.00 | +0.38 | 1.93x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +26.2% | - |
+| 2025-04-17 | $76.15 | - | 3.00 | +0.43 | 1.84x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +27.6% | - |
+| 2025-04-22 | $76.58 | - | 2.50 | -0.19 | 2.09x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | +27.0% | - |
+| 2025-05-02 | $83.11 | - | 2.50 | -0.49 | 3.24x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | +17.4% | - |
+| 2025-05-09 | $84.47 | - | 2.50 | -0.54 | 3.59x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +15.8% | - |
+| 2025-05-16 | $88.69 | - | 2.50 | -0.65 | 5.20x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +10.6% | - |
+| 2025-05-23 | $87.40 | - | 2.50 | -0.62 | 4.60x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +12.6% | - |
+| 2025-05-30 | $88.34 | - | 2.50 | -0.65 | 5.02x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +11.8% | - |
+| 2025-06-06 | $88.25 | - | 2.50 | -0.64 | 4.98x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +12.4% | - |
+| 2025-06-13 | $87.36 | - | 2.50 | -0.62 | 4.58x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +14.0% | - |
+| 2025-06-20 | $89.21 | - | 2.50 | -0.67 | 5.48x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +11.9% | - |
+| 2025-06-27 | $89.98 | - | 2.50 | -0.69 | 5.94x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +11.4% | - |
+| 2025-07-03 | $91.48 | - | 2.50 | -0.72 | 7.06x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +9.9% | - |
+| 2025-07-11 | $91.97 | - | 2.50 | -0.74 | 7.52x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +9.2% | - |
+| 2025-07-18 | $95.80 | - | 2.50 | -0.83 | 14.12x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +4.7% | - |
+| 2025-07-22 | $95.39 | - | 2.65 | -0.54 | 3.92x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +5.2% | - |
+| 2025-08-01 | $95.53 | - | 2.65 | -0.54 | 3.96x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +4.7% | - |
+| 2025-08-08 | $97.08 | - | 2.65 | -0.59 | 4.44x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +2.6% | - |
+| 2025-08-15 | $96.11 | - | 2.65 | -0.56 | 4.13x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +2.9% | - |
+| 2025-08-22 | $95.83 | - | 2.65 | -0.55 | 4.04x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +2.3% | - |
+| 2025-08-29 | $95.84 | - | 2.65 | -0.55 | 4.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +1.2% | - |
+| 2025-09-05 | $92.05 | - | 2.65 | -0.43 | 3.14x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | +4.2% | - |
+| 2025-09-12 | $93.54 | - | 2.65 | -0.48 | 3.45x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | +1.7% | - |
+| 2025-09-19 | $94.33 | - | 2.65 | -0.50 | 3.64x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | -0.3% | - |
+| 2025-09-26 | $95.46 | - | 2.65 | -0.53 | 3.94x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | -2.4% | - |
+| 2025-10-03 | $94.08 | - | 2.65 | -0.48 | 3.58x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | -1.6% | - |
+| 2025-10-10 | $91.96 | - | 2.65 | -0.41 | 3.12x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | +0.0% | - |
+| 2025-10-17 | $94.14 | - | 2.85 | -0.23 | 3.06x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -2.9% | - |
+| 2025-10-24 | $94.42 | - | 2.85 | -0.24 | 3.11x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -3.0% | - |
+| 2025-10-31 | $94.52 | - | 2.85 | -0.24 | 3.13x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -2.4% | - |
+| 2025-11-07 | $95.24 | - | 2.85 | -0.26 | 3.27x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -2.8% | - |
+| 2025-11-14 | $94.39 | - | 2.85 | -0.24 | 3.10x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | -1.9% | - |
+| 2025-11-21 | $90.51 | - | 2.85 | -0.09 | 2.49x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | +3.2% | - |
+| 2025-11-28 | $92.73 | - | 2.85 | -0.18 | 2.81x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2025-12-05 | $93.82 | - | 2.85 | -0.22 | 3.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2025-12-12 | $96.65 | - | 2.85 | -0.31 | 3.57x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
+| 2025-12-19 | $98.82 | - | 2.85 | -0.37 | 4.13x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2025-12-26 | $101.89 | - | 2.85 | -0.46 | 5.22x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-01-02 | $101.57 | - | 2.85 | -0.45 | 5.08x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-01-09 | $100.17 | - | 2.85 | -0.41 | 4.56x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-01-16 | $103.82 | - | 2.85 | -0.51 | 6.17x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
+| 2026-01-23 | $102.18 | - | 2.70 | +0.64 | 1.19x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2026-01-30 | $103.92 | - | 2.70 | +0.56 | 1.27x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-02-06 | $105.08 | - | 2.70 | +0.53 | 1.32x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-02-13 | $93.72 | - | 2.70 | +1.03 | 0.88x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-02-20 | $94.03 | - | 2.70 | +1.02 | 0.89x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-02-27 | $95.20 | - | 2.70 | +0.94 | 0.96x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-03-06 | $95.23 | - | 2.70 | +0.94 | 0.96x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-03-13 | $93.06 | - | 2.70 | +1.04 | 0.89x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-03-20 | $94.66 | - | 2.70 | +0.97 | 0.94x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-03-27 | $92.36 | - | 2.70 | +1.06 | 0.87x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-04-02 | $93.77 | - | 2.70 | +1.01 | 0.91x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-04-10 | $94.80 | - | 2.70 | +0.96 | 0.95x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-04-17 | $92.28 | - | 2.70 | +0.92 | 0.88x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-04-24 | $88.50 | - | 2.70 | +1.06 | 0.77x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-05-01 | $91.54 | - | 2.70 | +0.94 | 0.86x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-05-08 | $88.61 | - | 2.70 | +1.05 | 0.77x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-05-15 | $90.88 | - | 2.70 | +0.97 | 0.84x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-05-22 | $90.15 | - | 2.70 | +1.00 | 0.82x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-05-29 | $87.35 | - | 2.70 | +1.09 | 0.74x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-06-05 | $88.84 | - | 2.70 | +1.04 | 0.78x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-06-12 | $91.10 | - | 2.70 | +0.96 | 0.85x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-06-18 | $91.70 | - | 2.70 | +0.93 | 0.87x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-06-26 | $90.67 | - | 2.70 | +0.98 | 0.83x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-07-02 | $97.00 | - | 2.70 | +0.70 | 1.05x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-07-10 | $103.12 | - | 2.70 | +0.46 | 1.31x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-07-17 | $101.56 | - | 2.70 | +0.52 | 1.24x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2026-07-23 | $101.61 | - | 2.70 | +0.72 | 1.09x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-07-31 | $105.24 | - | 2.70 | +0.58 | 1.24x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2026-08-07 | $107.60 | - | 2.70 | +0.49 | 1.35x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-08-14 | $111.09 | - | 2.70 | +0.36 | 1.52x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-08-21 | $112.30 | - | 2.70 | +0.31 | 1.59x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-08-28 | $110.16 | - | 2.70 | +0.40 | 1.47x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-09-04 | $109.29 | - | 2.70 | +0.43 | 1.43x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-09-11 | $107.25 | - | 2.70 | +0.50 | 1.33x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-09-18 | $105.25 | - | 2.70 | +0.57 | 1.24x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2026-09-25 | $99.03 | - | 2.70 | +0.85 | 1.00x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-10-02 | $96.70 | - | 2.70 | +0.96 | 0.93x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-10-09 | $96.70 | - | 2.70 | +0.96 | 0.93x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-10-16 | $91.96 | - | 2.70 | +0.97 | 0.87x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-10-23 | $90.58 | - | 2.70 | +1.03 | 0.83x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-10-30 | $88.05 | - | 2.70 | +1.11 | 0.76x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
+| 2026-11-06 | $91.49 | - | 2.70 | +0.99 | 0.86x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-11-13 | $92.98 | - | 2.70 | +0.91 | 0.91x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-11-20 | $90.16 | - | 2.70 | +1.04 | 0.83x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
