@@ -1,0 +1,214 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "LYB",
+ "company": "LyondellBasell Industries N.V.",
+ "as_of": "2012-10-19",
+ "price_date": "2012-10-19",
+ "price": 54.33,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); chemical and refining signals",
+ "pit_profile": {
+  "kind": "CYCLICAL",
+  "risk": 2,
+  "why": "Risk factor (FY2011 10-K): Our businesses are highly cyclical, in addition to experiencing some less significant seasonal effects.; no theme in taxonomy_eras.json is live for a chemicals and refining company on this date",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "TOO MUCH CYCLE RISK",
+  "quality_label": "✕ TOO MUCH CYCLE RISK",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "CYCLICAL",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "Risk factor (FY2011 10-K): Our businesses are highly cyclical, in addition to experiencing some less significant seasonal effects.; no theme in taxonomy_eras.json is live for a chemicals and refining company on this date. cyclical (obsolescence risk 2/5); price rich; +110% to EPP floor; model-vs-market gap -2.25; conservative 2yr -22%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": Infinity,
+  "ratio_b_fmt": "infx",
+  "epp": 25.92,
+  "epp_gap_pct": 109.6,
+  "epp_adj": -0.2,
+  "proxy_composite": 1.8,
+  "sca": -0.1,
+  "adj_composite": 1.5,
+  "market_composite": 3.75,
+  "adj_gap": -2.25,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": -22.4,
+  "scenarios": {
+   "BEAR": {
+    "eps": 4.32,
+    "pe": 7.4,
+    "price": 32,
+    "desc": "Flat EPS (no EPS change in FY11-FY11 to measure: the 0% cap); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 2.98,
+    "pe": 9.1,
+    "price": 27,
+    "desc": "EPS -16.9%/yr (Q2 revenues + margin + buyback); P/E at its 1.8-yr ex-FY10 median"
+   },
+   "BULL": {
+    "eps": 2.98,
+    "pe": 9.9,
+    "price": 30,
+    "desc": "EPS -16.9%/yr (no FY11-FY11 CAGR to measure: BASE's rate); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 2.98,
+    "pe": 10.9,
+    "price": 32,
+    "desc": "EPS -16.9%/yr (no 2-yr run in FY11-FY11: BULL's rate); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 109.6,
+   "adj_gap": -2.25,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -22.4,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 109.6,
+   "adj_gap": -2.27,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -22.4,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 109.6,
+   "adj_gap": -2.27,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -22.4,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 109.6,
+   "adj_gap": -2.3,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -22.4,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 109.6,
+   "adj_gap": -2.27,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -22.4,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 109.6,
+   "adj_gap": -1.95,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -22.4,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 39.7,
+   "adj_gap": -2.05,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -22.4,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 109.6,
+   "adj_gap": -2.25,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -22.4,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "RICH"
+ ],
+ "summary": "LYB (retrospective, 2012-10-19) ✕ AVOID — Ratio B infx (41.1% downside to Bear $32 / +-44.8% upside to Bull $30) | Adj composite 1.50 vs market 3.75: gap -2.25 [OVERVALUED] | +110% above the EPP floor $26 (6x FY12E $4.32) | Conservative 2-yr case: -22.4% total (-11.2%/yr) | At 12.6x FY12E the 15% hurdle price $72 sits above the BULL case; O&P–Americas +37.8% and Intermediates & Derivatives +19.3% operating income in Q2 2012, forward revenues -15.5% (no FY12 revenue guide in numbers, Q2 2012 revenues as reported); no theme in the registry is live for a chemicals and refining company on this date; none has dated evidence.",
+ "sources": [
+  {
+   "id": "LB2",
+   "published": "2012-02-29",
+   "filed": "accepted 2012-02-29 13:11 ET (during market hours)",
+   "title": "LyondellBasell Industries N.V. FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1489393/000119312512088192/d300123d10k.htm",
+   "supports": "FY2011 annual history: the selected financial data (revenues 2007-2011, diluted EPS 2011), the MD&A's combined 2010 revenues, the EPS note's diluted shares (2011, May-December 2010), the cash flow statement, the segment note (2011 revenues from customers), the dividends paid and the risk factors"
+  },
+  {
+   "id": "LB1",
+   "published": "2011-03-18",
+   "filed": "accepted 2011-03-18 06:02 ET (before the open)",
+   "title": "LyondellBasell Industries N.V. FY2010 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1489393/000095012311026580/h80612e10vk.htm",
+   "supports": "the selected financial data (revenues 2006-2009 and the two 2010 periods), the MD&A's combined 2010 revenues and operating income, the statements of income (2008-2010), the segment note, the EPS note (May-December 2010), Item 5 (the listing, no dividends yet) and the risk factors"
+  },
+  {
+   "id": "LB11",
+   "published": "2012-02-10",
+   "filed": "accepted 2012-02-10 10:09 ET (during market hours)",
+   "title": "LyondellBasell Industries N.V. Q4 2011 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1489393/000119312512051218/d297985dex991.htm",
+   "supports": "the quarter's Table 1 (revenues, diluted EPS, diluted shares), Table 8 (segment operating income) and Table 11 (statement of income), each with the year-ago quarter as this release shows it"
+  },
+  {
+   "id": "LB12",
+   "published": "2012-04-30",
+   "filed": "accepted 2012-04-30 11:44 ET (during market hours)",
+   "title": "LyondellBasell Industries N.V. Q1 2012 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1489393/000119312512194555/d344220dex991.htm",
+   "supports": "the quarter's Table 1 (revenues, diluted EPS, diluted shares), Table 8 (segment operating income) and Table 11 (statement of income), each with the year-ago quarter as this release shows it"
+  },
+  {
+   "id": "LB13",
+   "published": "2012-07-27",
+   "filed": "accepted 2012-07-27 09:48 ET (during market hours)",
+   "title": "LyondellBasell Industries N.V. Q2 2012 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1489393/000119312512318363/d385423dex991.htm",
+   "supports": "the quarter's Table 1 (revenues, diluted EPS, diluted shares), Table 8 (segment operating income) and Table 11 (statement of income), each with the year-ago quarter as this release shows it"
+  },
+  {
+   "id": "LB21",
+   "published": "2012-07-27",
+   "filed": "accepted 2012-07-27 12:16 ET (during market hours)",
+   "title": "LyondellBasell Industries N.V. Q2 2012 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1489393/000119312512318803/d386172d10q.htm",
+   "supports": "the dividend note: the $0.40 interim dividend of May 2012"
+  },
+  {
+   "id": "A0",
+   "published": "2012-10-19",
+   "title": "Yahoo Finance daily prices, LyondellBasell Industries N.V. ordinary shares (NYSE: LYB) and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/LYB/history",
+   "supports": "close $54.33 as traded on AS_OF, 52-week range, realized vol, beta, the 1.8-yr ex-FY10 P/E distribution since the shares were issued on 2010-04-30"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-27"
+}
