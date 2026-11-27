@@ -1,0 +1,268 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "NEE",
+ "company": "NextEra Energy, Inc.",
+ "as_of": "2022-02-18",
+ "price_date": "2022-02-18",
+ "price": 74.15,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); electric utility signals on FPL Group's own lines",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "NextEra Energy, Inc.: 'FPL is a rate-regulated electric utility engaged primarily in the generation, transmission, distribution and sale of electric energy in Florida.' and 'NEER produces the majority of its electricity from clean and renewable sources'; among its risk factors, 'NEE's and FPL's business, financial condition, results of operations and prospects may be materially adversely affected by the extensive regulation of their business.', 'NEE's and FPL's business, financial condition, results of operations and prospects can be materially adversely affected by weather conditions, including, but not limited to, the impact of severe weather.' and 'NEE's and FPL's business could be negatively affected by federal or state laws or regulations mandating new or additional limits on the production of greenhouse gas emissions.' (its own FY2021 10-K); ENERGY_TRANSITION is live (from 2015-12-12, scoped to 'decarbonisation strands oil, gas and coal reserves and refining'): NEER holds oil and gas production assets and the greenhouse gas risk factor puts the theme on the watch list, company-acknowledged, with no dated evidence that the market prices it for NextEra Energy (the XOM and SO rule); of the other live themes, OFFSHORE is scoped to 'lower-cost offshore delivery (Indian IT services) takes share and price from Western consulting, systems integration and outsourcing', CLOUD to 'public cloud displaces on-premise hardware, storage, legacy databases and data-center outsourcing', ECOMMERCE to 'e-commerce (Amazon effect) displaces physical retail, malls, grocery, distribution', STREAMING to 'cord-cutting / streaming displaces linear TV networks and pay-TV bundles', EV to 'battery-electric vehicles displace ICE powertrains, auto parts suppliers and fuel retail', CRYPTO to 'crypto / DeFi disintermediates payments networks, banks, exchanges, remittance': none names an electric utility",
+  "theme_watch": [
+   {
+    "theme": "ENERGY_TRANSITION",
+    "status": "live, company-acknowledged; no market read",
+    "reason": "Live: NextEra Energy's own FY2021 10-K says 'NEER's oil and gas production assets represented approximately 14% and 14% of NEER's depreciable electric plant in service and other property at December 31, 2021 and 2020, respectively.' and, of greenhouse gas limits on its fossil-fuelled units, 'While NEE's and FPL's electric generation portfolio emits greenhouse gases at a lower rate of emissions than most of the U.S. electric generation sector, the results of operations of NEE and FPL could be materially adversely affected to the extent that new federal or state laws or regulations impose any new greenhouse gas emission limits.' The stock trades at 41.0x FY22E — a premium. Re-file as DISRUPTION_EXPOSED (ENERGY_TRANSITION) only if dated evidence shows the market pricing decarbonisation of NextEra Energy's gas reserves and fossil units specifically."
+   }
+  ],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "NextEra Energy, Inc.: 'FPL is a rate-regulated electric utility engaged primarily in the generation, transmission, distribution and sale of electric energy in Florida.' and 'NEER produces the majority of its electricity from clean and renewable sources'; among its risk factors, 'NEE's and FPL's business, financial condition, results of operations and prospects may be materially adversely affected by the extensive regulation of their business.', 'NEE's and FPL's business, financial condition, results of operations and prospects can be materially adversely affected by weather conditions, including, but not limited to, the impact of severe weather.' and 'NEE's and FPL's business could be negatively affected by federal or state laws or regulations mandating new or additional limits on the production of greenhouse gas emissions.' (its own FY2021 10-K); ENERGY_TRANSITION is live (from 2015-12-12, scoped to 'decarbonisation strands oil, gas and coal reserves and refining'): NEER holds oil and gas production assets and the greenhouse gas risk factor puts the theme on the watch list, company-acknowledged, with no dated evidence that the market prices it for NextEra Energy (the XOM and SO rule); of the other live themes, OFFSHORE is scoped to 'lower-cost offshore delivery (Indian IT services) takes share and price from Western consulting, systems integration and outsourcing', CLOUD to 'public cloud displaces on-premise hardware, storage, legacy databases and data-center outsourcing', ECOMMERCE to 'e-commerce (Amazon effect) displaces physical retail, malls, grocery, distribution', STREAMING to 'cord-cutting / streaming displaces linear TV networks and pay-TV bundles', EV to 'battery-electric vehicles displace ICE powertrains, auto parts suppliers and fuel retail', CRYPTO to 'crypto / DeFi disintermediates payments networks, banks, exchanges, remittance': none names an electric utility. durable franchise (obsolescence risk 2/5); price rich; +173% to EPP floor; model-vs-market gap -0.58; conservative 2yr -44%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": Infinity,
+  "ratio_b_fmt": "infx",
+  "epp": 27.15,
+  "epp_gap_pct": 173.1,
+  "epp_adj": -0.2,
+  "proxy_composite": 2.65,
+  "sca": 0.1,
+  "adj_composite": 2.55,
+  "market_composite": 3.13,
+  "adj_gap": -0.58,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": -44.1,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.57,
+    "pe": 12.2,
+    "price": 7,
+    "desc": "EPS -44.1%/yr (worst year FY12-FY21, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 2.31,
+    "pe": 17.8,
+    "price": 41,
+    "desc": "EPS +13.0%/yr (Q4 revenue + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 2.31,
+    "pe": 28.2,
+    "price": 65,
+    "desc": "EPS +13.0%/yr (FY12-FY21 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 4.03,
+    "pe": 45.1,
+    "price": 182,
+    "desc": "EPS +49.1%/yr (best 2-yr run FY12-FY21); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 173.1,
+   "adj_gap": -0.58,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -44.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 2.18,
+   "epp_gap_pct": 173.1,
+   "adj_gap": -0.05,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -44.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 173.1,
+   "adj_gap": -1.19,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -44.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 173.1,
+   "adj_gap": -0.55,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -44.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 173.1,
+   "adj_gap": -0.62,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -44.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 173.1,
+   "adj_gap": -0.28,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -44.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 127.6,
+   "adj_gap": -0.58,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -44.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 173.1,
+   "adj_gap": -0.49,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -44.1,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "RICH"
+ ],
+ "summary": "NEE (retrospective, 2022-02-18) ✕ AVOID — Ratio B infx (90.6% downside to Bear $7 / +-12.3% upside to Bull $65) | Adj composite 2.55 vs market 3.13: gap -0.58 [OVERVALUED] | +173% above the EPP floor $27 (15x FY22E $1.81) | Conservative 2-yr case: -44.1% total (-22.1%/yr) | At 41.0x FY22E the 15% hurdle price $98 sits above the BULL case; FPL energy sales n/r in Q4 2021, forward revenues +14.8% (no Q1 2022 revenue guide, Q4 2021 revenue as reported); the energy transition is live and company-acknowledged; no dated evidence ties the multiple to it.",
+ "sources": [
+  {
+   "id": "NE114",
+   "published": "2022-02-18",
+   "filed": "2022-02-18 06:28 ET (before the open)",
+   "title": "NextEra Energy FY2021 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330822000014/nee-20211231.htm",
+   "supports": "FY2021 annual report (combined filing with Florida Power & Light Company)"
+  },
+  {
+   "id": "NE69",
+   "published": "2017-02-23",
+   "filed": "2017-02-23 15:57 ET (during the session)",
+   "title": "NextEra Energy FY2016 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330817000060/nee-12312016x10k.htm",
+   "supports": "FY2016 annual report (combined filing with Florida Power & Light Company)"
+  },
+  {
+   "id": "NE93",
+   "published": "2018-02-16",
+   "filed": "2018-02-16 15:44 ET (during the session)",
+   "title": "NextEra Energy FY2017 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330818000013/nee-12312017x10k.htm",
+   "supports": "FY2017 annual report (combined filing with Florida Power & Light Company)"
+  },
+  {
+   "id": "NE94",
+   "published": "2019-02-19",
+   "filed": "2019-02-15 17:22 ET (after the close)",
+   "title": "NextEra Energy FY2018 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330819000039/nee-12312018x10k.htm",
+   "supports": "FY2018 annual report (combined filing with Florida Power & Light Company)"
+  },
+  {
+   "id": "NE95",
+   "published": "2020-02-14",
+   "filed": "2020-02-14 15:24 ET (during the session)",
+   "title": "NextEra Energy FY2019 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330820000021/nee-12312019x10k.htm",
+   "supports": "FY2019 annual report (combined filing with Florida Power & Light Company)"
+  },
+  {
+   "id": "NE96",
+   "published": "2021-02-16",
+   "filed": "2021-02-12 16:07 ET (after the close)",
+   "title": "NextEra Energy FY2020 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330821000014/nee-20201231.htm",
+   "supports": "FY2020 annual report (combined filing with Florida Power & Light Company)"
+  },
+  {
+   "id": "NE67",
+   "published": "2015-02-23",
+   "filed": "2015-02-20 16:20 ET (after the close)",
+   "title": "NextEra Energy FY2014 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330815000079/nee-12312014x10k.htm",
+   "supports": "FY2014 annual report (combined filing with Florida Power & Light Company)"
+  },
+  {
+   "id": "NE119",
+   "published": "2022-01-25",
+   "filed": "2022-01-25 07:38 ET (before the open)",
+   "title": "NextEra Energy Q4 2021 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330822000007/neeq42021exhibit99",
+   "supports": "Q4 2021 earnings release: segment statements of income, earnings per share, outlook"
+  },
+  {
+   "id": "NE112",
+   "published": "2021-10-20",
+   "filed": "2021-10-20 07:36 ET (before the open)",
+   "title": "NextEra Energy Q3 2021 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330821000164/neeq32021exhibit99",
+   "supports": "Q3 2021 earnings release: segment statements of income, earnings per share, outlook"
+  },
+  {
+   "id": "NE52",
+   "published": "2010-05-24",
+   "filed": "2010-05-24 10:48 ET (during the session)",
+   "title": "NextEra Energy 8-K of 2010-05-24 (Items 5.03, 5.07 and 8.01)",
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330810000065/form8k052110.htm",
+   "supports": "the change of name to NextEra Energy, Inc. and of the NYSE symbol from FPL to NEE"
+  },
+  {
+   "id": "NE8",
+   "published": "2006-02-24",
+   "filed": "2006-02-23 16:04 ET (after the close)",
+   "title": "FPL Group FY2005 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330806000032/file10k2005.htm",
+   "supports": "FY2005 annual report (combined filing with Florida Power & Light Company)"
+  },
+  {
+   "id": "NE113",
+   "published": "2020-09-15",
+   "filed": "2020-09-14 16:18 ET (after the close)",
+   "title": "NextEra Energy 8-K of 2020-09-14 (Items 7.01 and 8.01)",
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330820000165/nee8-kdated09x14x2020.htm",
+   "supports": "the four-for-one stock split (Item 8.01); the next year's adjusted earnings per share expectations (Item 7.01)"
+  },
+  {
+   "id": "W0",
+   "published": "2022-02-18",
+   "title": "Yahoo Finance daily prices, NEE and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/NEE/history",
+   "supports": "close $74.15 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-27"
+}
