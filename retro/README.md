@@ -27683,6 +27683,10 @@ Controls and checks (before any outcome):
 - **Self-text scan** (`--from 2014-01-01`, the 2014-2017 filings): 509 tokens, no miss but "March" in the Q4 2013 print's next-print label
   (a month name; the 2014-2017 filings folder holds no filing before that release).
 - **Regression:** rebuilding the 314 dates of 2008-2013 on the extended fact sheet and builder changes nothing.
+- **Firewall** (run after the build, validation outputs and README section were committed and pushed, before any outcome): it passes at
+  all 23 cutoffs above (2014-01-06, every print, vintage and dividend date of the range, and 2018-01-01: 314 to 522 dates each), 0 files
+  changed and no planted text, on its first run. Besides the 2008-2013 plants, each later vintage now carries planted cloud words
+  (`cloud_words`).
 
 Seen in the build (method behaviour, not tuned). FY2009 and FY2010 stay in the ten years, so BEAR is -44.1%/yr (FY09 to FY10) on every
 date; XBULL is FY04-FY06's +62.9%/yr to 2015-02-20, FY05-FY07's +38.4% to 2016-02-19 and FY10-FY12's +34.8% from 2016-02-26, as the early years leave. The ten-year window's median is
