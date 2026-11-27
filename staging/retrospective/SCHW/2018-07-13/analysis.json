@@ -1,0 +1,239 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "SCHW",
+ "company": "The Charles Schwab Corporation",
+ "as_of": "2018-07-13",
+ "price_date": "2018-07-13",
+ "price": 50.62,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); net revenue, client assets, expense, trading activity and pre-tax margin signals with Schwab's rule-T thresholds",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'The Charles Schwab Corporation (CSC) ... engages, through its subsidiaries (collectively referred to as Schwab or the Company), in wealth management, securities brokerage, banking, asset management, custody, and financial advisory services.' 'Developments in the business, economic, and geopolitical environment could negatively impact our business.' 'Our industry is characterized by aggressive price competition.' (FY2017 10-K); DURABLE, risk 2: the 10-K ties results to markets, rates and investor engagement and names price competition, a cycle and a competitive field, and does not call its own business cyclical (the JPM, LOW and SHW reading); no disruption theme in taxonomy_eras.json is live for a securities broker and bank on this date (of the live themes, OFFSHORE is scoped to 'lower-cost offshore delivery (Indian IT services) takes share and price from Western consulting, systems integration and outsourcing', CLOUD to 'public cloud displaces on-premise hardware, storage, legacy databases and data-center outsourcing', ECOMMERCE to 'e-commerce (Amazon effect) displaces physical retail, malls, grocery, distribution', STREAMING to 'cord-cutting / streaming displaces linear TV networks and pay-TV bundles', ENERGY_TRANSITION to 'decarbonisation strands oil, gas and coal reserves and refining': none names brokerage or banking, and no 10-K names offshore delivery, cloud, e-commerce, streaming or decarbonisation), so the watch list is empty and these words stay here (the PEP obesity rule)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "'The Charles Schwab Corporation (CSC) ... engages, through its subsidiaries (collectively referred to as Schwab or the Company), in wealth management, securities brokerage, banking, asset management, custody, and financial advisory services.' 'Developments in the business, economic, and geopolitical environment could negatively impact our business.' 'Our industry is characterized by aggressive price competition.' (FY2017 10-K); DURABLE, risk 2: the 10-K ties results to markets, rates and investor engagement and names price competition, a cycle and a competitive field, and does not call its own business cyclical (the JPM, LOW and SHW reading); no disruption theme in taxonomy_eras.json is live for a securities broker and bank on this date (of the live themes, OFFSHORE is scoped to 'lower-cost offshore delivery (Indian IT services) takes share and price from Western consulting, systems integration and outsourcing', CLOUD to 'public cloud displaces on-premise hardware, storage, legacy databases and data-center outsourcing', ECOMMERCE to 'e-commerce (Amazon effect) displaces physical retail, malls, grocery, distribution', STREAMING to 'cord-cutting / streaming displaces linear TV networks and pay-TV bundles', ENERGY_TRANSITION to 'decarbonisation strands oil, gas and coal reserves and refining': none names brokerage or banking, and no 10-K names offshore delivery, cloud, e-commerce, streaming or decarbonisation), so the watch list is empty and these words stay here (the PEP obesity rule). durable franchise (obsolescence risk 2/5); price rich; Ratio B 3.54x; +66% to EPP floor; model-vs-market gap -0.57; conservative 2yr +4%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": 3.54,
+  "ratio_b_fmt": "3.54x",
+  "epp": 30.59,
+  "epp_gap_pct": 65.5,
+  "epp_adj": -0.1,
+  "proxy_composite": 2.35,
+  "sca": 0.101,
+  "adj_composite": 2.351,
+  "market_composite": 2.92,
+  "adj_gap": -0.57,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": 4.4,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.5,
+    "pe": 18.5,
+    "price": 9.25,
+    "desc": "EPS -44.1%/yr (worst year FY08-FY17, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 2.07,
+    "pe": 26.4,
+    "price": 54.65,
+    "desc": "EPS +13.5%/yr (Q1 revenue YoY + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 2.07,
+    "pe": 30.1,
+    "price": 62.31,
+    "desc": "EPS +13.5%/yr (FY08-FY17 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 2.92,
+    "pe": 36.0,
+    "price": 105.12,
+    "desc": "EPS +34.8%/yr (best 2-yr run FY08-FY17, at least BULL); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 3.54,
+   "epp_gap_pct": 65.5,
+   "adj_gap": -0.57,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 4.4,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 1.67,
+   "epp_gap_pct": 65.5,
+   "adj_gap": 0.02,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 4.4,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 10.4,
+   "epp_gap_pct": 65.5,
+   "adj_gap": -0.93,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 4.4,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 3.03,
+   "epp_gap_pct": 65.5,
+   "adj_gap": -0.49,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 4.4,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 4.24,
+   "epp_gap_pct": 65.5,
+   "adj_gap": -0.65,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 4.4,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 3.54,
+   "epp_gap_pct": 65.5,
+   "adj_gap": -0.27,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 4.4,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 3.54,
+   "epp_gap_pct": 42.9,
+   "adj_gap": -0.57,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 4.4,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 3.54,
+   "epp_gap_pct": 65.5,
+   "adj_gap": -0.27,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 4.4,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "FAIR",
+  "RICH"
+ ],
+ "summary": "SCHW (retrospective, 2018-07-13) ✕ AVOID — Ratio B 3.54x (81.7% downside to Bear $9.25 / +23.1% upside to Bull $62.31) | Adj composite 2.35 vs market 2.92: gap -0.57 [OVERVALUED] | +65% above the EPP floor $30.59 (19x FY18E $1.61) | Conservative 2-yr case: +4.4% total (+2.2%/yr) | At 31.4x FY18E the 15% hurdle price $66.94 sits above the BULL case; revenue +15.2% YoY in Q1 2018, forward revenues +15.2% (Q1 2018 revenue growth (no Q2 2018 guide)); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "SCHW68",
+   "published": "2018-02-23",
+   "filed": "accepted 2018-02-22 17:15 ET (after the close), so dated the next trading day",
+   "title": "The Charles Schwab Corporation FY2017 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/316709/000031670918000009/schw-12312017x10k.htm",
+   "supports": "selected financial and operating data 2013-2017, the 2015-2017 client metrics and statements of income: the FY17 history vintage; Items 1, 1A and 5; the quarterly dividend rate declared on January 25, 2018"
+  },
+  {
+   "id": "SCHW42",
+   "published": "2013-02-25",
+   "filed": "accepted 2013-02-22 16:58 ET (after the close), so dated the next trading day",
+   "title": "The Charles Schwab Corporation FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/316709/000119312513071646/d455860d10k.htm",
+   "supports": "selected financial and operating data 2008-2012, the 2010-2012 client activity metrics and statements of income: the FY12 history vintage; Items 1, 1A and 5"
+  },
+  {
+   "id": "SCHW47",
+   "published": "2014-02-24",
+   "filed": "accepted 2014-02-24 15:26 ET (during market hours)",
+   "title": "The Charles Schwab Corporation FY2013 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/316709/000031670914000005/schw-20131231x10k.htm",
+   "supports": "selected financial and operating data 2009-2013, the 2011-2013 client metrics and statements of income: the FY13 history vintage; Items 1, 1A and 5"
+  },
+  {
+   "id": "SCHW52",
+   "published": "2015-02-24",
+   "filed": "accepted 2015-02-23 16:35 ET (after the close), so dated the next trading day",
+   "title": "The Charles Schwab Corporation FY2014 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/316709/000031670915000014/schw-20141231x10k.htm",
+   "supports": "selected financial and operating data 2010-2014, the 2012-2014 client metrics and statements of income: the FY14 history vintage; Items 1, 1A and 5"
+  },
+  {
+   "id": "SCHW57",
+   "published": "2016-02-25",
+   "filed": "accepted 2016-02-24 17:17 ET (after the close), so dated the next trading day",
+   "title": "The Charles Schwab Corporation FY2015 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/316709/000031670916000067/schw-20151231x10k.htm",
+   "supports": "selected financial and operating data 2011-2015, the 2013-2015 client metrics and statements of income: the FY15 history vintage; Items 1, 1A and 5"
+  },
+  {
+   "id": "SCHW63",
+   "published": "2017-02-24",
+   "filed": "accepted 2017-02-23 17:22 ET (after the close), so dated the next trading day",
+   "title": "The Charles Schwab Corporation FY2016 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/316709/000031670917000010/schw-20161231x10k.htm",
+   "supports": "selected financial and operating data 2012-2016, the 2014-2016 client metrics and statements of income: the FY16 history vintage; Items 1, 1A and 5; the quarterly dividend rate declared on January 26, 2017"
+  },
+  {
+   "id": "SCHW67",
+   "published": "2018-01-18",
+   "filed": "accepted 2018-01-17 16:45 ET (after the close), so dated the next trading day",
+   "title": "Schwab Q4 2017 earnings release (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/316709/000031670918000004/exhibit991123117.htm",
+   "supports": "Q4 2017 and FY2017 statement of income, financial and operating highlights, client assets and trades"
+  },
+  {
+   "id": "SCHW69",
+   "published": "2018-04-17",
+   "filed": "accepted 2018-04-16 16:51 ET (after the close), so dated the next trading day",
+   "title": "Schwab Q1 2018 earnings release (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/316709/000031670918000019/exhibit991033118.htm",
+   "supports": "Q1 2018 statement of income, financial and operating highlights, client assets and trades"
+  },
+  {
+   "id": "SCHW25",
+   "published": "2010-02-25",
+   "filed": "accepted 2010-02-25 14:43 ET (during market hours)",
+   "title": "The Charles Schwab Corporation FY2009 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/316709/000119312510040444/d10k.htm",
+   "supports": "selected financial and operating data 2005-2009, the 2007-2009 client activity metrics and statements of income: the FY09 history vintage; Items 1, 1A and 5; the transfer of the listing to the NYSE"
+  },
+  {
+   "id": "Y0",
+   "published": "2018-07-13",
+   "title": "Yahoo Finance daily prices, SCHW and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/SCHW/history",
+   "supports": "close $50.62 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution from 2008-07-14"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-27"
+}
