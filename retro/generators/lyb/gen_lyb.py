@@ -347,6 +347,21 @@ SEGN = ["Olefins & Polyolefins–Americas", "Olefins & Polyolefins–Europe, Asi
 LISTQ = quote(F10, "Our shares have traded on the New York Stock Exchange, under the symbol “LYB,” since October 14, 2010.")
 ISSUEQ = quote(F10, "Our capital was issued effective April 30, 2010 in connection with our emergence from bankruptcy proceedings.")
 quote(F10, "We have not yet paid any dividends on our shares.")
+# the FY2010 revisions (the 8-K of 2011-06-22's guarantor note; the 8-K/A of 2011-08-15's Revisions I and II; the 8-K of 2011-10-21's
+# MD&A) change the Predecessor's January-April 2010 reorganization items, taxes and balance sheet only: every figure the FY2010 vintage
+# gives a model is identical in the revised statements, so they add nothing (asserted here; rule T takes 2010 from the Q4 2011 release)
+F10R = doc("0000950123-11-077060", "EX-99.1__")
+quote(doc("0000950123-11-077060", "8-K_A__"), "This Form 8-K/A updates the Current Report on Form 8-K of LyondellBasell Industries N.V. (the “Company”) filed on June 22, 2011")
+_r = line_no(F10R, "Dilutive potential shares")
+assert row(F10R, "Dilutive potential shares", _r, _r + 1)[1] == sh10
+_r = line_no(F10R, "Net cash provided by (used in) operating activities")
+assert row(F10R, "Net cash provided by (used in) operating activities", _r, _r + 1)[1][0] == ocf10[0]
+_r = line_no(F10R, "Expenditures for property, plant and equipment")
+assert row(F10R, "Expenditures for property, plant and equipment", _r, _r + 1)[1][0] == capex10[0]
+_r = line_no(F10R, "Customers | 5,993")
+assert row(F10R, "Customers", _r, _r + 1)[1] == cust10
+_r = line_no(F10R, "Operating income (loss) | 2,254")
+assert row(F10R, "Operating income (loss)", _r, _r + 1)[1] == [2254, 690, 317, -5928]
 source("LB1", K10, "LyondellBasell Industries N.V. FY2010 10-K", F10,
        "the selected financial data (revenues 2006-2009 and the two 2010 periods), the MD&A's combined 2010 revenues and operating "
        "income, the statements of income (2008-2010), the segment note, the EPS note (May-December 2010), Item 5 (the listing, no "

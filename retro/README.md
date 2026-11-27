@@ -28984,6 +28984,219 @@ Judgement calls that could carry hindsight:
 
 The hindsight results for 2022-2026 are in `staging/retrospective/NEE/FINDINGS.md` ("2022-2026"): hypotheses, never inputs.
 
+## LYB (LyondellBasell Industries): the thirty-sixth ticker, in staging, from its 2010 share issue
+
+The LYB series is built apart from every other ticker and shares nothing with them but the machinery: its own fact sheet
+(`retro/facts/LYB.json`, generated from the filings by `retro/generators/lyb/gen_lyb.py`), builder (`retro/build_lyb.py`, the KMI
+new-listing builder with LYB's encodings) and engine (`retro/templates/lyb_engine.py.tmpl`, the KMI engine with chemical and refining
+signals). The method is still r2. No fact, parameter, outcome or finding of another ticker enters an LYB model; there is no LYB profile in
+`data/business_profiles.json`. Outputs go to `staging/retrospective/LYB/`.
+
+```bash
+python3 retro/tools/edgar.py index 1489393 <dir>                            # the downloads (outside the repository)
+python3 retro/tools/edgar.py fetch 1489393 <dir> --from 2010-04-01 --to 2014-03-31 --forms 10-K 10-Q 8-K 8-K/A 10-12B 10-12B/A
+python3 -I retro/generators/lyb/gen_lyb.py --filings <dir>                  # retro/facts/LYB.json and <dir>/checklist_lyb.json
+python3 -I retro/tools/verbatim.py <dir>/checklist_lyb.json                 # 155/155
+python3 retro/build_lyb.py --weekly 2012-02-06 2013-12-31                   # 100 dates, 2012-02-10 .. 2013-12-31
+for d in staging/retrospective/LYB/20*/; do
+  python3 retro/retro_tool.py --archive staging/retrospective run "$d"
+  python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
+done
+python3 retro/retro_tool.py --archive staging/retrospective series LYB
+python3 retro/generators/lyb/controls_lyb.py                                # 20 controls
+python3 retro/generators/lyb/sens_lyb.py <scratch>                          # the sensitivity below
+for c in 2012-02-11 2012-02-29 2012-03-01 2012-04-30 2012-05-02 2012-07-27 2012-07-28 2012-10-26 2012-10-27 2013-02-01 2013-02-02 \
+         2013-02-12 2013-02-13 2013-04-26 2013-04-27 2013-05-28 2013-07-26 2013-10-29 2013-10-31 2014-01-01; do
+  python3 retro/tools/firewall.py $c LYB; done
+```
+
+### LYB 2008-2009: requested, no date can be built
+
+**What the owner asked for and what could be built.** On 2026-11-27 the owner asked for LYB 2008-2009 on the same rules. Under method
+r2 **no date of 2008-2009 can be built**, and none was. Nothing was invented to fill the gap (the BKR 2018, CTVA and KMI 2008-2009
+precedents). Checked against the filings, before any price or outcome was read (Yahoo was asked for its series metadata only):
+
+- **No company and no share.** "LyondellBasell Industries N.V. was incorporated under Dutch law by deed of incorporation dated October 15,
+  2009." Its first SEC filing is the Form 10 of 2010-04-28 (EDGAR submissions, CIK 1489393), and "Our capital was issued effective April
+  30, 2010 in connection with our emergence from bankruptcy proceedings." The 10-K's performance graph runs "since April 30, 2010, the
+  first date on which we had issued capital as a publicly traded company" (FY2010 10-K, accepted 2011-03-18 06:02 ET). Yahoo's LYB
+  series starts on 2010-04-28 (`firstTradeDate` and the first point; none in 2008-2009).
+- **The predecessor was private.** The 2008-2009 parent, LyondellBasell Industries AF S.C.A., was owned through a Luxembourg company
+  "affiliated with Access Industries (“Access Industries”), which is a privately held industrial group based in the United States
+  (“U.S.”)." (FY2010 10-K, note 1), and "From January 2009 through April 2010, LyondellBasell AF and 93 of its subsidiaries were debtors
+  in jointly administered bankruptcy cases". No equity of it was listed.
+- **No predecessor price under LYB (why the BKR/BHI route does not apply).** BKR's 2008-2017 dates are Baker Hughes Incorporated because
+  BHI was listed on those dates and Yahoo serves its history under BKR. The listed Lyondell company of the years before, Lyondell Chemical
+  Company (NYSE: LYO, CIK 842635), left the NYSE when Basell acquired it: on December 20, 2007 "each share of common stock of the Company
+  outstanding immediately prior to the effective time of the Merger was converted into the right to receive $48.00, without interest, and
+  requested that the NYSE file with the Securities and Exchange Commission an application on Form 25 to remove the shares from listing on
+  the NYSE" (8-K accepted 2007-12-26 16:46 ET; the Form 25 of 2007-12-21 and the Form 15-12B followed). Its FY2007 10-K (accepted
+  2008-03-31 07:43 ET): "There is no established public trading market for the common stock of Lyondell" and "As a privately held
+  company, all of the members of Lyondell’s Board of Directors are selected by its sole shareholder, an indirect wholly owned subsidiary
+  of LyondellBasell Industries". Lyondell kept filing through 2008-2009 as an issuer of public debt only. Yahoo serves nothing under LYO
+  ("No data found, symbol may be delisted"). A 2008-2009 model of LyondellBasell would have no price, no P/E of its own and no per-share
+  EPS of a traded share; a model of Lyondell Chemical before 2008 would be an LYO retrospective, not LYB's.
+
+So, as the request provides, the ticker is set up anyway and its first buildable dates are built in this session, to 2013-12-31 (next
+part). Sources (each quoted string checked with `verbatim.py` against its own filing, 9/9): EDGAR submissions for CIK 1489393 and CIK
+842635; FY2010 10-K 0000950123-11-026580; Lyondell Chemical 8-K 0000842635-07-000164 and FY2007 10-K 0000842635-08-000019; Yahoo chart API,
+LYB, LYO, LALLF and LYBAF, read 2026-11-27 (metadata only).
+
+### LYB from the share issue: 2012-02-10 to 2013-12-31
+
+**What could be built.** Under method r2 **the first date that can be built is 2012-02-10**; this part builds the 100 weekly dates to
+2013-12-31. No date from 2010-04-30 to 2012-02-03 (93 weeks) is built: a model needs the stock's own P/E, and LyondellBasell's first
+full year of EPS is 2011, published in the Q4 2011 release. Building that gap takes a new rule (an EPS anchor for a period that is not a
+year, or the Successor's eight months annualized), which is the owner's call and a method note; nothing was invented to fill it (the KMI
+2011 precedent).
+
+**A full-data batch.** `www.sec.gov` served every filing document to the plain client name of `edgar.py` (no contact address; the owner's
+email was not used). Read, by the session's model directly with no delegated transcription: the FY2010-FY2012 10-Ks (selected financial
+data, the MD&A's combined 2010, the statements of income and cash flows, the segment notes, the EPS notes, Items 1A and 5), the nine
+earnings releases from Q3 2011 to Q3 2013 (Tables 1, 2, 8, 9 and 11), the 10-Qs of Q3 2011 and Q2 2012 (dividends), and every other
+8-K of October 2011 to December 2013 by its item text and exhibits. The fact sheet is generated by a script from the filings' converted
+rows: each figure is read from its labelled row, the row is asserted present in its own filing, and every growth rate, margin, tax rate
+and rule-T value is computed, not typed; 155 strings were checked with `verbatim.py`, each against its own filing, and all 155 were
+found. Each source's date comes from EDGAR's acceptance time (ET); the source ids are `LB1`-`LB3` (the 10-Ks), `LB10`-`LB18` (the
+releases), `LB20`-`LB21` (the 10-Qs) and `LB30` (the 8-K of the 2013 annual meeting). Decided on 2026-11-27, before any LYB model was
+built or any LYB outcome computed:
+
+- **The listing.** LyondellBasell Industries N.V.'s ordinary shares: quoted on the Pink Sheets from 2010-04-30 ("From April 30, 2010
+  until October 13, 2010, our shares they were quoted in the Pink OTC Markets, Inc."), on the NYSE as LYB "since October 14, 2010"
+  (FY2010 10-K, Item 5). The window runs from 2010-04-30, the day the capital was issued (`listing.first_trading_day`, the listing rule);
+  Yahoo's two points of 2010-04-28 and 2010-04-29 precede the issue and are left out. Yahoo records no split or distribution, so its
+  close is the price as traded. The special dividends ($4.50 in December 2011, $2.75 in December 2012) are cash dividends, not
+  distributions of shares: Yahoo leaves its close unadjusted for them, and so does the model.
+- **2010 is not a year of EPS.** The FY2010 10-K reports 2010 as two periods: the Predecessor (LyondellBasell AF, January 1 to April 30)
+  and the Successor (May 1 to December 31, after fresh-start accounting), with diluted EPS of $2.67 from continuing operations for the
+  Successor's eight months only. It is excluded like KMI's 2011, and its days leave the P/E window ("ex-FY10"), which therefore starts on
+  2011-01-03 (1.1 years on the first date, 3.0 on the last).
+- **The combined 2010 is a year of revenues, never of EPS.** Each 10-K's MD&A prints the combined periods as the year ("References in
+  the following discussion to results for the year ended December 31, 2010 are to the combined Successor and Predecessor periods", "a
+  non-GAAP presentation", FY2010 10-K; "We had revenues of ... $41,151 million in 2010", then "$38,939 million in 2010" without the
+  Berre refinery, FY2012 10-K), and the Q4 2011 release tabulates it ("Combined ... YTD"). So 2010 is in the revenue history and rule T
+  as the company prints it, from the latest filing that prints it; KMI's 2007 was two periods that no filing combined.
+- **Release timing.** The Q4 2011 release's 8-K was accepted 2012-02-10 10:09 ET, during the session, on a Friday: the week has no
+  trading day after it, so that day's date meets it (the UNP Good Friday and SCHW rule, "released during the session"); the first date is
+  2012-02-10. Q2 2012 (Friday 2012-07-27, 09:48 ET) is the same case. Q3 2012, Q4 2012, Q1 2013 and Q2 2013 (Fridays, 08:10-09:15 ET)
+  were accepted before the open and date their own Fridays; Q1 2012 (Monday 2012-04-30, 11:44 ET) and Q3 2013 (Tuesday 2013-10-29, 09:46
+  ET) date the next trading day. The 10-Ks are dated 2011-03-18 (06:02 ET), 2012-02-29 (13:11 ET) and 2013-02-12 (15:29 ET).
+- **EPS: GAAP diluted EPS from continuing operations where the filing reports it, each year from the latest filing that reports it.**
+  FY2011 is $3.74 from the Q4 2011 release and the FY2011 10-K (no discontinued operations yet); the Q2 2012 release moves the Berre
+  refinery to discontinued operations ("Berre refinery moved to discontinued operations; business segments have been realigned by moving
+  Oxyfuels to Intermediates and Derivatives") and republishes 2011 at $4.32 from continuing operations and $48,183M of revenues, which
+  restate FY2011 from that release until the FY2012 10-K (`restates` on the print, the LMT, PFE and CB print-level rule). FY2012 is
+  $4.96 from the Q4 2012 release and the FY2012 10-K.
+- **GAAP, not the company's adjusted EPS.** The releases print an adjusted EPS ($4.71 for 2011, $5.22 for 2012) that removes every item
+  of their Table 2, including items that recur in every quarter (the warrants' mark to market, impairments, the lower of cost or market
+  inventory adjustments), so it is not a figure excluding only one-offs (the NKE FY2007, AVGO, PFE and V rule).
+- **The one-off test, both years kept.** FY2011: Table 2's "After-tax effect of net charges (credits)" of $567M against $2,147M of net
+  income attributable to the Company; FY2012: $163M against $2,848M. Both are net charges, so the mirror test does not arise.
+- **No guide in numbers.** No release, 10-Q, 10-K or other 8-K of 2011-2013 guides revenue, EPS or a margin: each release's "OUTLOOK"
+  is the chief executive's words. So current-FY EPS is the last full year's (the PFE rule), BASE is the latest quarter's revenue growth as
+  reported plus the buyback (the SO, UNP and KMI no-guide rule), and there is no margin step.
+- **History.** Revenues from 2006: 2006 from the FY2010 10-K's selected data (the Predecessor, Basell without Lyondell Chemical), 2007
+  from the FY2011 10-K (Lyondell Chemical from December 21, 2007), 2008-2012 from the latest 10-K (from continuing operations from the
+  FY2012 10-K; 2006-2007 keep Berre, a seam). Diluted shares from 2010 (564M for the Successor's eight months, then 572M, 577M); the net
+  buyback is measured from the first count to the last, so it reads as dilution (-1.1%/yr on the first three dates, -1.4%/yr from the
+  FY2011 10-K, -1.1%/yr from the Q4 2012 print). The repurchase program of
+  "up to 10% of the Company’s outstanding shares" (8-K of 2013-05-28) is shown in the capital-return text; its effect reaches the share
+  counts as they are reported.
+- **The rollover rule and the bounds rule.** To the Q4 2012 print the history has one year of EPS, so BEAR is the 0% cap, BULL takes
+  BASE's rate and XBULL BULL's; from it, FY2011 ($4.32 restated) to FY2012 ($4.96) is the only change (+14.8%), so BEAR stays at the cap
+  and BULL and XBULL take that rate.
+- **Dividends:** each declared interim rate from the first filing that states it: $0.20 a quarter (the Q3 2011 10-Q), $0.25 (the FY2011
+  10-K, paid December 16, 2011), $0.40 (the Q2 2012 10-Q), $0.50 (the 8-K of 2013-05-28: "The dividend of $0.50 per share represents a
+  25% increase over the Company’s first quarter interim dividend"). The special dividends are not a rate (the SPGI 2012 rule). The FY2010
+  10-K: "We have not yet paid any dividends on our shares."
+- **Signals.** Five, with the house weights, each against the year-ago quarter as the release shows it: O&P–Americas operating income
+  growth (0.20) and Intermediates & Derivatives operating income growth (0.20), the two segments with the largest operating income in the
+  FY2010 10-K, the last 10-K before the first date (O&P–Americas $1,363M and I&D $669M of the combined 2010, ahead of O&P–EAI's $526M),
+  from each release's Table 8; revenue growth (0.15), the operating margin change (0.15) and the pre-tax margin change (0.15; income from
+  continuing operations before income taxes on revenues, reorganization items in, as reported), from Tables 1 and 11; the theme slot at
+  2/4. From the Q2 2012 release Oxyfuels is in Intermediates & Derivatives, each release recasting its own year-ago quarter (a seam in
+  the I&D series against rule T's values, which are on the old segment).
+- **Thresholds by rule T over the years the filings public on 2012-02-10 report** (the FY2010 10-K and the Q4 2011 release; the bounds
+  rule), each change from the latest filing that reports both years, as reported. 2008's goodwill impairments ($4,982M) made both
+  segments' operating income losses, so 2009's segment changes are no growth rates and leave rule T (the KMI rule):
+
+  | Signal | Annual values | BEAR / BASE / BULL / XBULL |
+  |---|---|---|
+  | O&P–Americas operating income | 2010-2011: 706.5, 36.2 % | -299 / 36 / 371 / 707 % |
+  | Intermediates & Derivatives operating income | 2010-2011: 167.6, 28.8 % | -41 / 29 / 98 / 168 % |
+  | revenue | 2007-2011: 29.9, 196.2, -39.2, 33.5, 24.0 % | -108 / -39 / 30 / 196 % |
+  | operating margin change | 2009-2011: 1272.0, 612.0, 68.0 bp | -480 / 70 / 610 / 1270 bp |
+  | pre-tax margin change | 2009-2011: 226.0, 3546.0, -1532.0 bp | -3290 / -1530 / 230 / 3550 bp |
+
+  The 2010 values are the trough recovery and, for the pre-tax margin, the combined Predecessor's $7,365M of reorganization items (the
+  discharge of liabilities and fresh-start accounting); rule T takes them as reported, so the segment and operating margin signals score
+  BEAR on most quarters and the pre-tax margin signal BASE.
+- **Durability: CYCLICAL, risk 2.** Each 10-K calls its own business cyclical: "Our businesses are highly cyclical, in addition to
+  experiencing some less significant seasonal effects." (FY2010 and FY2011 10-Ks), "Our businesses’ results are impacted by seasonal
+  effects and are highly cyclical." (FY2012 10-K), quoted in the "why" (the CB, GOOG and CAT reading). No theme in the registry is live
+  for a chemicals and refining company on these dates: OFFSHORE (live throughout) is scoped to Indian IT services, CLOUD (live
+  2012-10-30) to on-premise hardware and data centers, and no LYB 10-K names cloud or offshore delivery; from 2012-10-30 the "why" quotes
+  every live theme's scope (the SCHW wording). ENERGY_TRANSITION, whose scope names refining, is live only from 2015-12-12. The watch
+  list is empty and the builder refuses events.
+- **Segment bridge and EPS check** (display only): the latest 10-K's segment revenues from customers (the Successor's May-December 2010
+  on the three dates before the FY2011 10-K, with no prior year); the EPS check runs on the last year's pre-tax margin and tax rate.
+- **The FY2010 revisions add nothing.** Three filings revise the FY2010 statements before the first date: the 8-K of 2011-06-22 (a
+  guarantor note), the 8-K/A of 2011-08-15 (Revisions I and II: "the Company has revised its consolidated financial statements for the
+  four months ending April 30, 2010 to correct for an overstatement of goodwill and deferred income taxes with corresponding adjustments
+  to Reorganization items and Benefit from income taxes") and the 8-K of 2011-10-21 (the MD&A). They change only the Predecessor's
+  January-April 2010 reorganization items, taxes and balance sheet: every figure the FY2010 vintage gives a model (revenues, diluted
+  shares, cash flows, segment revenues and operating income) is identical in the revised statements (the generator asserts it), and
+  rule T takes the combined 2010 from the Q4 2011 release, which reflects them. So they are not a vintage of their own.
+- **Adds nothing:** the Berre 8-Ks of 2011-10-03 and 2012-01-31 (Item 2.05: the costs reach the prints), the debt, credit facility,
+  receivables securitization and secondary-offering 8-Ks (the selling shareholders' underwriting agreements of 2012-2013), the officer,
+  director and vote-result 8-Ks, the 8-K of 2013-06-07 on the tax residence's move to the United Kingdom and the 8-K of 2013-06-17 on
+  LYB International Finance B.V.: none guides revenue, EPS or a margin.
+
+Controls and checks (before any outcome):
+- **Controls** (`controls_lyb.py`): raising each print's O&P–Americas operating income (its growth re-derived), each Q4 print's
+  full-year revenue, the Q2 2012 restatement's EPS, each vintage's last revenue, each dividend and the repurchase program's text changes
+  no model dated before its publication and changes the first weekly date on or after it: 20 of 20. The Q3 2011 print and the Q3 2011
+  10-Q's dividend, both published before the first date, reach it as they should (the previous print's segment growth; the rate in force).
+- **Leak scan:** the distinctive texts and figures of every print, vintage, dividend and source appear in no model before their
+  publication (`leak_scan.py`: 11,605 pairs, 1 hit, read and cleared: the 2012-06-15 close of $38.94 matches the FY2012 10-K's 2010
+  revenues of $38.939B to two decimals, a coincidence of a price). `forward_refs.py`: 0 forward references in 33 dated facts.
+  `selftext.py --allow "MD&A" Ks`: 0 misses in 480 tokens (the two allowed are method words: the MD&A, and the "Ks" of "10-Ks").
+- **Years after the as-of date:** none in the 100 models and reports other than the FY horizon labels.
+- **`retro_tool run`:** passes on all 100 dates, with no warnings.
+
+Seen in the build (method behaviour, not tuned):
+- **Totals: RICH 100.** The legacy tier is AVOID on all 100 dates, and robustness is 8 of 8 on every date.
+- **The window.** The P/E window holds only 2011-2013 days on one or two anchors (FY11's $3.74, then $4.32 restated, then FY12's $4.96),
+  so it is short and its median low: 8.8-10.3x, against a current P/E of 9.9-16.2x on the last full year's EPS, the close ranging from
+  $37.04 to $80.28 ($44.75 on the first date, $80.28 on the last). The current P/E is at or above the window's 75th percentile on 91
+  dates (the 90th on 83; the 42nd at its lowest), so Ratio B is infinite (the price above BULL) on 40 dates and 2.9x or more on the rest.
+- **BASE follows revenue as reported, less the dilution:** +6.9%/yr on the first dates (Q4 2011 revenues +7.9%), then +6.5%, -4.4%, -16.9%
+  (Q2 2012 revenues -15.5%), -11.3%, -0.0%, -10.2%, -2.4% and -2.2%/yr. BULL and XBULL take BASE's rate to the
+  Q4 2012 print, then +14.8%.
+- **The EPP floor** is $26-30: a 7x floor on $3.74, 6x on $4.32 (7x on the four dates of January 2013, when 2013's first low joins
+  the calendar-year lows), 6x on $4.96.
+
+Sensitivity (each call changed alone, the 100 dates rebuilt and reclassified offline with `retro_tool`'s own classifier; no outcome
+consulted; `sens_lyb.py`):
+- **the combined 2010 not a year of revenues**, **the revenue history from 2008** (no Basell-only 2006-2007), **the company's adjusted
+  EPS** ($4.71, $5.01, $5.22), **share counts from 2011 only**, **2010's days in the P/E window on FY2011's EPS**, **every signal at its
+  BEAR value** and **at its XBULL value**: no class, no tier;
+- **the Q2 2012 restatement unused** (FY2011 at $3.74 until the FY2012 10-K): no class, 2 tiers.
+No tested encoding moves a class: the RICH calls rest on the short window (2011-2013 days only) against a price that rose faster than the
+last full year's EPS.
+
+Judgement calls that could carry hindsight:
+- the combined 2010 as a year of revenues and in rule T (the company's own MD&A presentation; no class moves without it in the revenue
+  history, but rule T cannot be measured for four of the five signals without it);
+- 2010 excluded as two periods (the window then holds 2011 on; 2010's days at FY2011's EPS move no class);
+- the signals, chosen by a builder who knows 2012-2013: the two segments ranked by the FY2010 10-K's operating income, revenue and two
+  GAAP margins (rule T then sets the thresholds mechanically, from two to five years that include the 2009-2010 trough and recovery);
+- GAAP rather than the adjusted EPS (no class moves);
+- CYCLICAL on the 10-Ks' own words;
+- the non-earnings 8-Ks read by their item text and exhibits for guided numbers only.
+
+The hindsight results are in `staging/retrospective/LYB/FINDINGS.md`: hypotheses, never inputs.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
