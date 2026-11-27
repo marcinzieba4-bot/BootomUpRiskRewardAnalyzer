@@ -1,0 +1,155 @@
+
+════════════════════════════════════════════════════════════════════════
+  LYB  ·  LyondellBasell Industries N.V.  ·  $64.01  ·  RETROSPECTIVE as of 2013-03-15
+  Signal: ✕ AVOID   Ratio B: infx   Adj gap: -1.95  [OVERVALUED]
+  Point-in-time: 6 sources, latest published 2013-03-15; latest print Q4 2012 (Feb 1)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2013E revenues, USD bn  →  FY2015E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2013E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Olefins & Polyolefins–Am  $     9.1  $   9.1  $  13.7      +0.0      +4.6
+    -13.2% revenues in FY12
+  Olefins & Polyolefins–Eu  $    14.4  $  14.4  $  21.7      +0.0      +7.3
+    -6.7% revenues in FY12
+  Intermediates & Derivati  $     9.4  $   9.4  $  14.2      +0.0      +4.8
+    -0.1% revenues in FY12
+  Refining                  $    12.6  $  12.6  $  19.1      +0.0      +6.5
+    -3.1% revenues in FY12
+  Technology                $     0.4  $   0.4  $   0.6      +0.0      +0.2
+    +0.3% revenues in FY12
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    45.9  $  45.9  $  69.3      +0.0     +23.4
+  FY2013E = FY12 $45.35B × (1 + 1.1%: no FY13 revenue guide in numbers, Q4 2012 revenues as reported, applied to the year (no FY13 revenue guide)); split pro rata to FY12 segment revenues from customers (FY2012 10-K)
+  Q4 2012 (Feb 1): revenues $11.10B +1.1%; operating income: O&P–Americas +111.3%, Intermediates & Derivatives +33.0%;
+  operating margin 8.64% (+464.0bp); pre-tax margin 8.38% (+903.0bp); EPS $1.13 vs $0.05
+  Activity: sales and other operating revenues $11,097M vs $10,981M; segments: O&P–Americas operating income $693M vs $328M, Intermediates & Derivatives $246M vs $185M; operating income $959M vs $439M; income before income taxes $930M vs $(71)M; EBITDA $1,289M (non-GAAP, display only); EPS GAAP, diluted from continuing operations, $1.13 against $0.05 a year earlier
+  FY13: no revenue, EPS or margin guide in numbers (BASE takes Q4 2012 revenue growth as reported); the releases' outlook is in words
+
+  FY2013E EPS check:  $45.9B × 9.2% pre-tax × (1−31.7%) ÷ 0.578B  =  $5.01  (FY2013E: no reported (GAAP) EPS guide, FY12's $4.96 stands)
+  FY2015E BEAR check: $45.9B × 9.2% ÷ 0.591B  =  $4.89  (scenario $4.96)
+  FY2015E BULL check: $69.3B × 9.6% ÷ 0.591B  =  $7.71  (scenario $6.54)
+  Every 1pp of pre-tax margin ≈ $0.54 EPS ≈ $5/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  O&P–Americas operating income growth  -299.0%   ≥36.0%  ≥371.0%  ≥707.0%   +111.3%  ◦ BASE  ██░░
+  Intermediates & Derivatives operating income growth   -41.0%   ≥29.0%   ≥98.0%  ≥168.0%    +33.0%  ◦ BASE  ██░░
+  Revenue growth                    -108.0%  ≥-39.0%   ≥30.0%  ≥196.0%     +1.1%  ◦ BASE  ██░░
+  Operating margin change           -480.0bp  ≥70.0bp  ≥610.0bp  ≥1270.0bp  +464.0bp  ◦ BASE  ██░░
+  Pre-tax margin change             -3290.0bp  ≥-1530.0bp  ≥230.0bp  ≥3550.0bp  +903.0bp  ▲ BULL  ███░
+  Disruption theme: none in scope    +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.15 / 4.00
+  Market composite:   3.80 / 4.00  (back-solved from $64 + 15% hurdle)
+  SCA adjustment:    -0.10  ·  EPP-distance adj -0.20  →  Adj composite 1.85  →  Gap -1.95  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY12 revenues -5.9%; Q4 operating margin 8.64% (+464bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 12.9x FY13E vs a 8.8x 2.2-yr ex-FY10 median (100th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    -  Growth vs own history: no FY13 revenue guide in numbers, Q4 2012 revenues as reported +1.1% vs a 26.8% 6-yr median  (-0.50 × 20%  =  -0.100)
+    +  FY12 free cash flow $3.73B, dividend $1.60 a year, $2,415M of dividends paid in FY12 (with the $2.75 special dividend), no share repurchases  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  O&P–Americas operating income growth   +111.3%   -299.0%  -410.3%  Ethylene and polyolefin margins in th…
+  Intermediates & Derivatives operating income growth    +33.0%    -41.0%  -74.0%  Propylene oxide and derivative margin…
+  Revenue growth                       +1.1%   -108.0%  -109.1%  Prices and volumes fall with crude an…
+  Operating margin change           +464.0bp  -480.0bp  -944.0bp  Feedstock costs outrun product prices
+  Pre-tax margin change             +903.0bp  -3290.0bp  -4193.0bp  Interest and charges as earnings fall
+  Disruption theme: none in scope     +2.0/4    +1.0/4  -1.0/4  No live disruption theme covers chemi…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$40  (model)  /  $37 (defined)
+  Bear probability (proxy model):  15.5%
+
+  KEY TRIGGER: O&P–Americas operating income growth went from +23.4% (Q3 2012) to +111.3% (Q4 2012);
+  the bear case needs Intermediates & Derivatives (+33.0% now) and revenues
+  (+1.1% now) to give way as well. By the company's own account its businesses are highly cyclical;
+  the bear needs margins to fall across the segments, not one quarter's.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $4.96  (FY2013E: no reported (GAAP) EPS guide, FY12's $4.96 stands)
+  Min viable P/E at panic:          6x  [median of calendar-year P/E lows: 2011 5.6x, 2012 6.7x, 2013 11.5x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $30/share
+  Current $64 vs Updated EPP $30:  +115%  ⚠ far above floor — large drawdown room
+  Bear $37 vs Updated EPP $30:  +24%  ✓ bear stays above the floor
+  EPP-distance adjustment (v2):    -0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  O&P–Americas operating income growth            36.0      -75.3   BASE floor (vs +111 now)
+  Intermediates & Derivatives operating income growth            29.0       -4.0   BASE floor (vs +33 now)
+  Revenue growth                             -39.0      -40.1   BASE floor (vs +1 now)
+  Operating margin change                     70.0     -394.0   BASE floor (vs +464 now)
+  Pre-tax margin change                    -1530.0    -2433.0   BASE floor (vs +903 now)
+  Disruption theme: none in scope              2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $4.96 × (1+0.0%)² = $4.96
+  At 8x P/E (conservative):  $40/share
+  + Cumul. dividends (2yr):  +$3.30/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $40  (▼24 from $64)
+  Conservative total return:  -33% over 2yr  = -16%/yr
+
+  0.0% EPS growth is what is left once the premium multiple (12.9x)
+  mean-reverts to 8x. Breakeven at 8x needs FY2015E EPS of $7.59,
+  i.e. 23.7%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $35.97  –  $65.69  (at 94th pct of range)
+  Annual dividend:      $1.60/share  (yield 2.5%)
+  Realized vol (1yr):   34% annualized
+  Beta vs broad market: 1.71
+  1-sigma range (1yr):  $42  –  $86  ($64 ± 34%)
+  2-sigma range (1yr):  $20  –  $108
+  ────────────────────────────────────────────────────────────
+  Bear $37 requires:  ~1.2σ price move  (within normal vol range)
+  A cyclical commodity chemicals and refining company with a 1.7 beta: the stock is +74% off its June
+  low while O&P–Americas operating income growth went from +23.4% (Q3 2012) to +111.3% (Q4 2012).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        4.96   7.4x  $     37    15.5%      1.2%   +14.3pp  EPS +0.0%/yr (worst year FY11-FY12, capped at 0%); P/E to its 10th pct
+  BASE        4.96   8.8x  $     44    54.1%      4.3%   +49.8pp  EPS -0.0%/yr (Q4 revenues + margin + buyback); P/E at its 2.2-yr ex-FY10 median
+  BULL        6.54   9.8x  $     64    25.6%     15.0%   +10.6pp  EPS +14.8%/yr (FY11-FY12 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL       6.54  11.2x  $     73     4.8%     79.5%   -74.6pp  EPS +14.8%/yr (no 2-yr run in FY11-FY12: BULL's rate); P/E at its 90th pct
+
+  Proxy EV (2yr): $49  /  Market EV: $70  /  Current: $64
+  Conservative EV (2yr, ④): $40 + $3.30 divs = $43 total value
+  Downside (→ Bear $37): 42.2%   Upside (→ Bull $64): -0.0%   Ratio B infx  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $64 the market needs $85 in two years —
+  above the BULL case. That is a market composite of 3.80 against a model
+  read of 1.85: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                        infx    +115%    -1.95  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     2.67x    +115%    -2.08  OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx    +115%    -1.95  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                         13.07x    +115%    -1.92  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                           infx    +115%    -1.95  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)              infx    +115%    -1.65  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                  infx     +43%    -1.85  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                     infx    +115%    -1.95  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) the Q1 2013 release — the next read on O&P–Americas (+111.3% now) and Intermediates & Derivatives (+33.0% now)
+  (2) Margins — operating +464.0bp and pre-tax +903.0bp in Q4 2012: feedstock costs, product prices and charges
+  (3) The FY13 outlook — no revenue, EPS or margin guide in numbers (the releases' outlook is in words)
+  (4) Free cash flow — FY12 net cash provided by operating activities $4,787M less capital expenditures $1,060M (FY2012 10-K)
+  (5) Capital return at 13x — $2,415M of dividends paid in FY12 (with the $2.75 special dividend), no share repurchases: management's own read of the multiple
+  ✕ AVOID  |  EPP floor $30  |  ADD below ~$37  |  TRIM above $64
+════════════════════════════════════════════════════════════════════════
+

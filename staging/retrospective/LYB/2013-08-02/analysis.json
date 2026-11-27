@@ -1,0 +1,222 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "LYB",
+ "company": "LyondellBasell Industries N.V.",
+ "as_of": "2013-08-02",
+ "price_date": "2013-08-02",
+ "price": 68.95,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); chemical and refining signals",
+ "pit_profile": {
+  "kind": "CYCLICAL",
+  "risk": 2,
+  "why": "Risk factor (FY2012 10-K): Our businesses’ results are impacted by seasonal effects and are highly cyclical.; no disruption theme in taxonomy_eras.json is live for a chemicals and refining company on this date (of the live themes, OFFSHORE is scoped to 'lower-cost offshore delivery (Indian IT services) takes share and price from Western consulting, systems integration and outsourcing', CLOUD to 'public cloud displaces on-premise hardware, storage, legacy databases and data-center outsourcing': none names chemicals or refining, and no 10-K names cloud or offshore delivery), so the watch list is empty and these words stay here (the PEP obesity rule)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "TOO MUCH CYCLE RISK",
+  "quality_label": "✕ TOO MUCH CYCLE RISK",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "CYCLICAL",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "Risk factor (FY2012 10-K): Our businesses’ results are impacted by seasonal effects and are highly cyclical.; no disruption theme in taxonomy_eras.json is live for a chemicals and refining company on this date (of the live themes, OFFSHORE is scoped to 'lower-cost offshore delivery (Indian IT services) takes share and price from Western consulting, systems integration and outsourcing', CLOUD to 'public cloud displaces on-premise hardware, storage, legacy databases and data-center outsourcing': none names chemicals or refining, and no 10-K names cloud or offshore delivery), so the watch list is empty and these words stay here (the PEP obesity rule). cyclical (obsolescence risk 2/5); price rich; Ratio B 10.48x; +132% to EPP floor; model-vs-market gap -2.47; conservative 2yr -29%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": 10.48,
+  "ratio_b_fmt": "10.48x",
+  "epp": 29.76,
+  "epp_gap_pct": 131.7,
+  "epp_adj": -0.2,
+  "proxy_composite": 1.6,
+  "sca": -0.1,
+  "adj_composite": 1.3,
+  "market_composite": 3.77,
+  "adj_gap": -2.47,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": -29.3,
+  "scenarios": {
+   "BEAR": {
+    "eps": 4.96,
+    "pe": 7.5,
+    "price": 37,
+    "desc": "EPS +0.0%/yr (worst year FY11-FY12, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 4.72,
+    "pe": 9.0,
+    "price": 42,
+    "desc": "EPS -2.4%/yr (Q2 revenues + margin + buyback); P/E at its 2.6-yr ex-FY10 median"
+   },
+   "BULL": {
+    "eps": 6.54,
+    "pe": 11.0,
+    "price": 72,
+    "desc": "EPS +14.8%/yr (FY11-FY12 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 6.54,
+    "pe": 12.8,
+    "price": 84,
+    "desc": "EPS +14.8%/yr (no 2-yr run in FY11-FY12: BULL's rate); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 10.48,
+   "epp_gap_pct": 131.7,
+   "adj_gap": -2.47,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -29.3,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 1.92,
+   "epp_gap_pct": 131.7,
+   "adj_gap": -2.5,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -29.3,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 131.7,
+   "adj_gap": -2.45,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -29.3,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 6.13,
+   "epp_gap_pct": 131.7,
+   "adj_gap": -2.47,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -29.3,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 31.38,
+   "epp_gap_pct": 131.7,
+   "adj_gap": -2.63,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -29.3,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 10.48,
+   "epp_gap_pct": 131.7,
+   "adj_gap": -2.17,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -29.3,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 10.48,
+   "epp_gap_pct": 54.5,
+   "adj_gap": -2.37,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -29.3,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 10.48,
+   "epp_gap_pct": 131.7,
+   "adj_gap": -2.47,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -29.3,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "RICH"
+ ],
+ "summary": "LYB (retrospective, 2013-08-02) ✕ AVOID — Ratio B 10.48x (46.3% downside to Bear $37 / +4.4% upside to Bull $72) | Adj composite 1.30 vs market 3.77: gap -2.47 [OVERVALUED] | +132% above the EPP floor $30 (6x FY13E $4.96) | Conservative 2-yr case: -29.3% total (-14.6%/yr) | At 13.9x FY13E the 15% hurdle price $91 sits above the BULL case; O&P–Americas +24.6% and Intermediates & Derivatives -26.9% operating income in Q2 2013, forward revenues -1.3% (no FY13 revenue guide in numbers, Q2 2013 revenues as reported); no theme in the registry is live for a chemicals and refining company on this date; none has dated evidence.",
+ "sources": [
+  {
+   "id": "LB3",
+   "published": "2013-02-12",
+   "filed": "accepted 2013-02-12 15:29 ET (during market hours)",
+   "title": "LyondellBasell Industries N.V. FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1489393/000119312513051488/d464702d10k.htm",
+   "supports": "FY2012 annual history: the selected financial data (revenues 2008-2012 from continuing operations, diluted EPS from continuing operations 2011-2012), the MD&A's combined 2010 revenues, the EPS note's diluted shares, the cash flow statement, the segment note (2011-2012 revenues from customers) and the risk factors"
+  },
+  {
+   "id": "LB2",
+   "published": "2012-02-29",
+   "filed": "accepted 2012-02-29 13:11 ET (during market hours)",
+   "title": "LyondellBasell Industries N.V. FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1489393/000119312512088192/d300123d10k.htm",
+   "supports": "FY2011 annual history: the selected financial data (revenues 2007-2011, diluted EPS 2011), the MD&A's combined 2010 revenues, the EPS note's diluted shares (2011, May-December 2010), the cash flow statement, the segment note (2011 revenues from customers), the dividends paid and the risk factors"
+  },
+  {
+   "id": "LB1",
+   "published": "2011-03-18",
+   "filed": "accepted 2011-03-18 06:02 ET (before the open)",
+   "title": "LyondellBasell Industries N.V. FY2010 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1489393/000095012311026580/h80612e10vk.htm",
+   "supports": "the selected financial data (revenues 2006-2009 and the two 2010 periods), the MD&A's combined 2010 revenues and operating income, the statements of income (2008-2010), the segment note, the EPS note (May-December 2010), Item 5 (the listing, no dividends yet) and the risk factors"
+  },
+  {
+   "id": "LB15",
+   "published": "2013-02-01",
+   "filed": "accepted 2013-02-01 08:47 ET (before the open)",
+   "title": "LyondellBasell Industries N.V. Q4 2012 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1489393/000119312513033597/d477435dex991.htm",
+   "supports": "the quarter's Table 1 (revenues, diluted EPS, diluted shares), Table 8 (segment operating income) and Table 11 (statement of income), each with the year-ago quarter as this release shows it"
+  },
+  {
+   "id": "LB16",
+   "published": "2013-04-26",
+   "filed": "accepted 2013-04-26 09:15 ET (before the open)",
+   "title": "LyondellBasell Industries N.V. Q1 2013 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1489393/000119312513175901/d526332dex991.htm",
+   "supports": "the quarter's Table 1 (revenues, diluted EPS, diluted shares), Table 8 (segment operating income) and Table 11 (statement of income), each with the year-ago quarter as this release shows it"
+  },
+  {
+   "id": "LB17",
+   "published": "2013-07-26",
+   "filed": "accepted 2013-07-26 08:53 ET (before the open)",
+   "title": "LyondellBasell Industries N.V. Q2 2013 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1489393/000119312513303773/d576056dex991.htm",
+   "supports": "the quarter's Table 1 (revenues, diluted EPS, diluted shares), Table 8 (segment operating income) and Table 11 (statement of income), each with the year-ago quarter as this release shows it"
+  },
+  {
+   "id": "LB30",
+   "published": "2013-05-28",
+   "filed": "accepted 2013-05-24 21:20 ET (after the close), so dated the next trading day",
+   "title": "LyondellBasell Industries N.V. 8-K (Items 5.07 and 8.01: the 2013 annual meeting)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1489393/000119312513236119/d544772d8k.htm",
+   "supports": "the $0.50 interim dividend authorized for June 2013 and the share repurchase program of up to 10% of the shares"
+  },
+  {
+   "id": "A0",
+   "published": "2013-08-02",
+   "title": "Yahoo Finance daily prices, LyondellBasell Industries N.V. ordinary shares (NYSE: LYB) and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/LYB/history",
+   "supports": "close $68.95 as traded on AS_OF, 52-week range, realized vol, beta, the 2.6-yr ex-FY10 P/E distribution since the shares were issued on 2010-04-30"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-27"
+}
