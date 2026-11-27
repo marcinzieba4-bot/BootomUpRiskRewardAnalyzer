@@ -2,7 +2,8 @@
 """How far each LYB judgement call moves the classes: rebuild the 100 dates (2012-02-10 to 2013-12-31) with one encoding changed (in
 memory, into a scratch folder) and classify offline with retro_tool's own classifier. No outcome is read.
 
-    python3 retro/generators/lyb/sens_lyb.py <scratch-out>
+    python3 retro/generators/lyb/sens_lyb.py <scratch-out>                          # the 100 dates of 2012-2013
+    python3 retro/generators/lyb/sens_lyb.py <scratch-out> 2014-01-01 2017-12-31    # the 209 of 2014-2017 (README, "LYB 2014-2017")
 """
 import contextlib, copy, io, json, os, runpy, shutil, sys, types
 REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
@@ -14,8 +15,9 @@ from build_acn import load_series, weekly_dates  # noqa: E402
 facts0 = json.load(open(B.FACTS, encoding="utf-8"))
 engine0 = open(B.ENGINE, encoding="utf-8").read()
 raw, spx = load_series("LYB"), load_series("^GSPC")
-dates = weekly_dates("2012-02-06", "2013-12-31", sorted(raw), facts0["prints"])
-assert len(dates) == 100
+RANGE = (sys.argv[2], sys.argv[3]) if len(sys.argv) > 3 else ("2012-02-06", "2013-12-31")
+dates = weekly_dates(RANGE[0], RANGE[1], sorted(raw), facts0["prints"])
+assert len(dates) == {"2012-02-06": 100, "2014-01-01": 209}.get(RANGE[0], len(dates))
 tax = T.load_taxonomy()
 
 
@@ -72,7 +74,7 @@ V["the combined 2010 not a year of revenues"] = (f, engine0, B)
 f = copy.deepcopy(facts0)
 for v in f["history_vintages"]:
     for y in ("2006", "2007"):
-        v["revenue_usd_b"].pop(y)
+        v["revenue_usd_b"].pop(y, None)
 V["the revenue history from 2008 (no 2006-2007)"] = (f, engine0, B)
 # 3. the company's adjusted EPS (also removes the warrants' mark to market, impairments and other items that recur): FY11 $4.71
 # (Q4 2011 release, Table 9), $5.01 from continuing operations from the Q2 2012 release ($4.32 + $0.69), FY12 $5.22 ($4.96 + $0.26)
@@ -106,6 +108,28 @@ V["share counts from 2011 only"] = (f, engine0, B)
 modw = variant_module("    window = [d for d in window if fy(d) not in excluded]\n",
                       "    eps.update({y: eps_hist[min(eps_hist)] for y in excluded})\n    gone = []\n")
 V["2010's days in the P/E window on FY2011's EPS"] = (facts0, engine0, modw)
+# 9. the company's EPS excluding the lower of cost or market adjustments (Table 1's 'Excluding LCM Impact' block, which also removes an
+# item that recurs): FY14 $8.92, FY15 $10.35, FY16 $9.20 (Q4 2014, Q4 2015 and Q4 2016 releases), FY13 and earlier as reported
+LCM = {"2014": 8.92, "2015": 10.35, "2016": 9.20}
+f = copy.deepcopy(facts0)
+for p in f["prints"]:
+    a = p.get("fy_actual")
+    if a and str(a["fy"]) in LCM:
+        a["eps_normalized"] = LCM[str(a["fy"])]
+for v in f["history_vintages"]:
+    for y, e in LCM.items():
+        if y in v["eps_normalized"]:
+            v["eps_normalized"][y] = e
+V["the company's EPS excluding LCM ($8.92, $10.35, $9.20)"] = (f, engine0, B)
+# 10. ENERGY_TRANSITION read as out of scope (no watch list; the 'why' as before its live date)
+modet = variant_module('    if et["live_from"] <= as_of:\n', "    if False:\n")
+V["ENERGY_TRANSITION out of scope"] = (facts0, engine0, modet)
+# 11. the ten-year roll unused (every revenue year kept)
+f = copy.deepcopy(facts0)
+for v in f["history_vintages"]:
+    if "2006" not in v["revenue_usd_b"]:
+        v["revenue_usd_b"]["2006"] = f["history_vintages"][0]["revenue_usd_b"]["2006"]
+V["the ten-year roll unused (2006 kept)"] = (f, engine0, B)
 # 6./7. every data signal at its BEAR or XBULL value
 for lab, vals in (("BEAR", ("-299.0", "-41.0", "-108.0", "-480.0", "-3290.0")), ("XBULL", ("707.0", "168.0", "196.0", "1270.0", "3550.0"))):
     e = engine0
