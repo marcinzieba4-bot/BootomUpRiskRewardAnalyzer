@@ -3,11 +3,11 @@
 before its publication changes, and that the first weekly date on or after it does. In memory and a temporary folder; nothing in the
 repository changes. (The gate's own controls, 2008-2021, are controls_chtr.py.)
 
-    python3 retro/generators/chtr/controls_chtr_models.py
+    python3 retro/generators/chtr/controls_chtr_models.py [START END]     # default 2019-01-28 2021-12-31; 2022-2026: 2019-01-28 2026-11-22
 
 build_chtr.py's check_print re-derives every rate from a print's raw figures, so a print's control raises its total customer
 relationships by 100K and re-derives the growth; a vintage's control raises its last year's revenues and its Item 1 relationships growth;
-the streaming words, the no-dividend statement and the listing are altered as they stand. A fact published before the first built date
+the streaming words, the no-dividend statement, the listing and (from the FY2023 10-K) the AI words are altered as they stand. A fact published before the first built date
 (the Q3 2018 print, the FY2018 10-K's companions of the same morning excepted) reaches the first date or no date.
 """
 import contextlib
@@ -24,7 +24,7 @@ sys.path.insert(0, os.path.join(REPO, "retro"))
 import build_chtr as B  # noqa: E402
 from build_acn import load_series, weekly_dates  # noqa: E402
 
-START, END = "2019-01-28", "2021-12-31"
+START, END = sys.argv[1:3] if len(sys.argv) > 2 else ("2019-01-28", "2021-12-31")
 facts0 = json.load(open(B.FACTS, encoding="utf-8"))
 engine = open(B.ENGINE, encoding="utf-8").read()
 raw, spx = load_series("CHTR"), load_series("^GSPC")
@@ -62,6 +62,9 @@ for i, v in enumerate(facts0["history_vintages"]):
               lambda f, i=i, y=y: f["history_vintages"][i]["periods"][y].update(revenue_m=f["history_vintages"][i]["periods"][y]["revenue_m"] + 500)))
     C.append((f"{v['fy_label']} vintage, its relationships growth", v["published"],
               lambda f, i=i: f["history_vintages"][i]["model"].update(rel_pct=f["history_vintages"][i]["model"]["rel_pct"] + 1.0)))
+    if "ai_quote" in v["model"]:
+        C.append((f"{v['fy_label']} vintage, its AI words", v["published"],
+                  lambda f, i=i: f["history_vintages"][i]["model"].update(ai_quote=f["history_vintages"][i]["model"]["ai_quote"] + " CTRL")))
 for i, e in enumerate(facts0["events"]):
     C.append((f"{e['doc']} streaming words", e["published"],
               lambda f, i=i: f["events"][i].update(risk_quote=f["events"][i]["risk_quote"] + " CTRL")))

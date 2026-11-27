@@ -6,6 +6,7 @@ CHTR (Charter Communications, Inc.) retrospective builder: the buildability gate
     python3 retro/build_chtr.py --weekly 2010-01-01 2013-12-31        # the fallback range: every date refused, with its reason
     python3 retro/build_chtr.py --weekly 2014-01-01 2017-12-31        # the 2014-2017 batch: every date refused, with its reason
     python3 retro/build_chtr.py --weekly 2018-01-01 2021-12-31        # the 2018-2021 batch: 56 dates refused, 153 built (2019-02-01 on)
+    python3 retro/build_chtr.py --weekly 2022-01-03 2026-11-22        # the 2022-2026 batch: 255 built (2022-01-07 .. 2026-11-20)
     python3 retro/build_chtr.py --check --json START END              # buildable dates as JSON (firewall.py's CHTR gate test)
     python3 retro/build_chtr.py --gate-md                             # rewrite staging/retrospective/CHTR/GATE.md (every batch's dates)
 
@@ -45,6 +46,10 @@ model the facts public on AS_OF plus retro/templates/chtr_engine.py.tmpl. The en
     year-ago quarter in the same release, with rule T over the FY2018 10-K's decade (the Successor's 2011-2018 changes);
   - durability DURABLE (the 10-Ks' "seasonal and cyclical variations" are advertising and seasonal-area patterns), STREAMING on the watch
     list from each 10-K's online-video words (company-acknowledged, the CMCSA encoding: a factor pair that nets to zero).
+From 2022 (retro/README.md, "CHTR 2022-2026") the 10-Ks reserve Item 6, so each vintage holds three years from its statements of
+operations and the earlier years carried from the latest earlier vintage ('statement_years', 'carried_from'); the releases' capital
+expenditure outlooks are in dollars (a cost component, display only); the FY2023-FY2025 10-Ks' AI words are quoted (GENAI's scope names
+no cable operator; text only); and the Q3 2026 print, the first with the Cox Transactions, is read on its actual columns ('basis_note').
 """
 import argparse
 import datetime as dt
@@ -70,8 +75,8 @@ ENGINE_THRESHOLDS = {"relationships": (2, 3, 5, 293), "revenue": (-4, 2, 8, 197)
 RULE_T_KEYS = {"relationships": (1, False), "revenue": (1, False), "ocf_margin": (10, False), "capex": (10, True), "op_margin": (10, False)}
 PRINT_KEYS = {"quarter", "fy", "q", "published", "source", "release", "release_time", "raw", "sales_b", "sales_pct", "rel_pct",
               "ocf_margin", "ocf_margin_bp", "op_margin", "op_margin_bp", "capex_pct", "capex_bp", "eps_q", "eps_q_prior",
-              "diluted_shares_m", "cash_note", "next_print", "capex_outlook"}
-LIVE_SCOPES_READ = ["OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING", "ENERGY_TRANSITION", "EV", "CRYPTO"]   # the themes the 10-Ks were read for
+              "diluted_shares_m", "cash_note", "next_print", "capex_outlook", "basis_note"}
+LIVE_SCOPES_READ = ["OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING", "ENERGY_TRANSITION", "EV", "CRYPTO", "GENAI", "GLP1"]   # the themes the 10-Ks were read for
 
 
 def trading_days(symbol):
@@ -166,6 +171,8 @@ def kind_text(q):
     """The 10-K's own description of the company, shortened for the volatility line."""
     if q.startswith("We are the second largest cable operator in the United States"):
         return "The second largest U.S. cable operator"
+    if q.startswith("We are a leading broadband connectivity company with services"):
+        return "A broadband connectivity company"
     assert q.startswith("We are a leading broadband connectivity company and cable operator"), q
     return "A broadband connectivity company and cable operator"
 
@@ -207,15 +214,21 @@ def build(as_of, facts, raw, spx, engine, out):
     excl = tests["2017"]
     eps_now = kept[last_fy]
     eps_label = f"{fy_e}: no EPS guide in numbers, FY{last_fy % 100:02d}'s ${eps_now:.2f} (GAAP) stands"
-    normalization = (f"GAAP diluted EPS from the {h['fy_label']} 10-K's selected financial data, every year kept by the one-off test; the history "
+    src_text = (f"the {h['fy_label']} 10-K's statements of operations ({min(h['statement_years'])}-{max(h['statement_years'])}; Item 6 is "
+                "reserved) and, for the years before, the latest earlier vintage's") if "statement_years" in h else \
+        f"the {h['fy_label']} 10-K's selected financial data"
+    normalization = (f"GAAP diluted EPS from {src_text}, every year kept by the one-off test; the history "
                      f"starts with FY2018: FY2017's ${h['periods']['2017']['eps_diluted']:.2f} is excluded ({excl['note']}), and FY2016 and the "
                      "loss years before it with it")
     fwd = [latest["sales_pct"]] * 2
     fwd_label, fwd_short, fwd_period = (f"no {fy_now} revenue guide in numbers, {latest['quarter']} revenues as reported",
                                         f"{latest['quarter'][:2]} revenues", latest["quarter"])
     cx = latest.get("capex_outlook")
+    # from the 2022 prints every outlook is in dollars and is labelled a cost component; the 2018-2021 prints keep their "in words" text
+    cx_dollars = bool(cx) and "$" in cx and latest["published"] > "2021-12-31"
     guide_text = (f"{fy_now}: no revenue, EPS or margin guide in numbers (BASE takes {latest['quarter']} revenue growth as reported)"
-                  + (f"; capital expenditure outlook in words: '{cx}'" if cx else ""))
+                  + ((f"; capital expenditure outlook (a cost component, display only): '{cx}'" if cx_dollars else
+                      f"; capital expenditure outlook in words: '{cx}'") if cx else ""))
 
     # ── market statistics, prices as traded, truncated at AS_OF; the window from the history's start (2018-01-01) ──
     px = {d: v for d, v in raw.items() if d <= as_of}
@@ -261,7 +274,8 @@ def build(as_of, facts, raw, spx, engine, out):
            f"{m['cyclical_quote2']}'), not the cycle of the business's earnings, so DURABLE (the SPGI reading). STREAMING ('"
            f"{themes['STREAMING']['scope']}') is live from {themes['STREAMING']['live_from']} and the {e['doc']}'s words put it on the watch "
            f"list: company-acknowledged, with no dated evidence that the market prices it for Charter. Of the other live themes, {others}: "
-           "none names a cable operator")
+           "none names a cable operator" + (f"; the 10-K's own AI sentence ('{m['ai_quote']}') names a technology to adapt to, not a "
+                                             "substitute for its connectivity services" if m.get("ai_quote") else ""))
     mp = [x for x in themes["STREAMING"]["pit_evidence"] if x["date"] <= as_of]
     mp_txt = (f" The theme registry dates the market's pricing of streaming to {mp[-1]['date']} ({mp[-1]['event']}), evidence that names "
               "Disney's networks, not Charter." if mp else "")
@@ -277,7 +291,8 @@ def build(as_of, facts, raw, spx, engine, out):
     key_tail = ("Online video, fiber and wireless rivals are the competition the 10-K names;\n"
                 "  Internet, mobile and business growth must cover the video losses.")
     theme_summary = "streaming is live and company-acknowledged; no dated evidence ties the multiple to it"
-    cat3 = f"(3) A {fy_now} revenue, EPS or margin guide in numbers — none in the filings (the capital expenditure outlook is in words)"
+    cat3 = f"(3) A {fy_now} revenue, EPS or margin guide in numbers — none in the filings " + (
+        "(the capital expenditure outlook is a cost component)" if cx_dollars else "(the capital expenditure outlook is in words)")
     cat4 = (f"(4) Capital intensity — purchases of property, plant and equipment {latest['capex_pct']:.1f}% of revenues in "
             f"{latest['quarter']} ({latest['capex_bp']:+.1f}bp): network, mobile and equipment spend against free cash flow")
 
@@ -308,12 +323,13 @@ def build(as_of, facts, raw, spx, engine, out):
     r = latest["raw"]
     volumes = (f"total customer relationships {r['rel_k']:,.0f}K against {r['rel_prior_k']:,.0f}K a year earlier ({latest['rel_pct']:+.2f}%), "
                f"as the release shows them; purchases of property, plant and equipment ${r['capex_m']:,.0f}M against "
-               f"${r['capex_prior_m']:,.0f}M; {latest['cash_note']}")
+               f"${r['capex_prior_m']:,.0f}M; {latest['cash_note']}" + (f"; {latest['basis_note']}" if latest.get("basis_note") else ""))
     fy_rev = rev[last_fy] * (1 + sum(fwd) / 2 / 100)
     fy_rev_label = f"{fwd_label}, applied to the year (no {fy_now} revenue guide)"
     groups = [tuple(g) for g in m["groups"]]
     fcf = f"${m['fcf_b']:.2f}B" if m["fcf_b"] >= 0 else f"$({-m['fcf_b']:.2f})B"
     R = repr
+    hist_src = "statements of operations (earlier years carried from the latest earlier vintage)" if "statement_years" in h else "Item 6"
     head = f'''#!/usr/bin/env python3
 """
 CHTR Signal Model  ·  RETROSPECTIVE as of {as_of}  {tag}  (methodology v2, retro method r2)
@@ -361,8 +377,8 @@ REF_LOW_LABEL   = {R(MONTHS[int(ref[5:7]) - 1])}
 
 # ── FACTS: company history ({h["source"]}, vintage {h["published"]}) ──
 EPS_NORM      = {R({y: round(v, 4) for y, v in kept.items()})}   # {normalization}
-REVENUE_HIST  = {R(rev)}   # revenues, USD bn, Item 6
-SHARES_HIST   = {R({y: round(v, 3) for y, v in shares.items()})}   # diluted weighted average shares, millions, Item 6
+REVENUE_HIST  = {R(rev)}   # revenues, USD bn, {hist_src}
+SHARES_HIST   = {R({y: round(v, 3) for y, v in shares.items()})}   # diluted weighted average shares, millions, {hist_src}
 FY_E, FY_E_S, FY_H, FY_PREV = {R(fy_e)}, {R(fy_e_s)}, {R(fy_h)}, {R(h["fy_label"])}
 PREV_FY_MARGIN = {m["op_margin"]}   # operating margin (income from operations on revenues), {h["fy_label"]}
 CHECK_PRETAX_MARGIN = {m["pretax_margin"]}   # income before income taxes on revenues, {h["fy_label"]} (before the noncontrolling interest), for the EPS check
@@ -406,7 +422,8 @@ CATALYST_4      = {R(cat4)}
     return tag, latest["quarter"]
 
 
-GATE_RANGES = [("2008-01-01", "2009-12-31"), ("2010-01-01", "2013-12-31"), ("2014-01-01", "2017-12-31"), ("2018-01-01", "2021-12-31")]
+GATE_RANGES = [("2008-01-01", "2009-12-31"), ("2010-01-01", "2013-12-31"), ("2014-01-01", "2017-12-31"), ("2018-01-01", "2021-12-31"),
+               ("2022-01-01", "2026-11-22")]
 
 
 def write_gate_md(sections, path):
@@ -414,7 +431,7 @@ def write_gate_md(sections, path):
     --weekly runs print them; a date that passes the gate is built (its own folder)."""
     with open(path, "w", encoding="utf-8") as fh:
         fh.write("# CHTR: the buildability gate\n\nGenerated by `retro/build_chtr.py --gate-md` (retro/README.md, \"CHTR 2008-2009\", "
-                 "\"CHTR 2014-2017\", \"CHTR 2018-2021\"). Each weekly date of each batch and the gate's result: the reason method r2 "
+                 "\"CHTR 2014-2017\", \"CHTR 2018-2021\", \"CHTR 2022-2026\"). Each weekly date of each batch and the gate's result: the reason method r2 "
                  "cannot build it, or that it passes (and is built, in its own folder, on the builder's weekly date of that week).\n\n```\n")
         for k, (res) in enumerate(sections):
             if k:
