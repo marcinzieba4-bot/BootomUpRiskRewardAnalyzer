@@ -535,7 +535,9 @@ if TICKER == "CHTR":   # no CHTR date is built (retro/README.md, "CHTR 2008-2009
     f1["listings"].append({"published": later, "source": "PLANTED", "issuer": "Successor", "exchange": "PLANTED", "symbol": "PLANTED"})
     chtr, spx = build_chtr.trading_days("CHTR"), build_chtr.trading_days("^GSPC")
     before = build_chtr.weekly_dates("2008-01-01", (dt.date.fromisoformat(cutoff) - dt.timedelta(days=1)).isoformat(), spx)
-    after = build_chtr.weekly_dates(later, (dt.date.fromisoformat(later) + dt.timedelta(days=60)).isoformat(), spx)
+    nxt = min([v["published"] for v in f0["history_vintages"] if v["published"] > later] + ["9999-12-31"])   # a real later vintage
+    after = [d for d in build_chtr.weekly_dates(later, (dt.date.fromisoformat(later) + dt.timedelta(days=60)).isoformat(), spx)
+             if d < nxt]                                                                                     # replaces the plant
     g = lambda d, f: build_chtr.gate(d, f, {k: c for k, c in chtr.items() if k <= d})
     changed = [d for d in before if g(d, f0) != g(d, f1)]
     moved = [d for d in after if g(d, f0) != g(d, f1)]
