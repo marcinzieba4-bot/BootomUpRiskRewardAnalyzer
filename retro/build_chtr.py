@@ -119,7 +119,8 @@ def gate(as_of, facts, chtr):
         excl = "; ".join(f"{k} {years[k]['eps_diluted']:+.2f} excluded: the listed one-off benefit (${t['items_after_tax_m']:,.0f}M, "
                          f"{t['item']}) exceeds the year's income without it (${t['income_without_m']:,.0f}M of "
                          f"${t['income_attributable_m']:,.0f}M), and no filing publishes a figure excluding only it (the mirror of the "
-                         "AAPL FY2002 test)" for k, t in sorted(distorted.items()))
+                         "AAPL FY2002 test)" if "items_after_tax_m" in t else
+                         f"{k} {years[k]['eps_diluted']:+.2f} excluded: {t['note']}" for k, t in sorted(distorted.items()))
         src = f"the {v['fy_label']} 10-K ({v['source']}, {v['published']})" + "".join(
             f" and the Q4 {a['fy']} release ({a['source']}, {a['published']})" for a in q4)
         why.append(f"no full year of positive EPS of {issuer} shares in {src}: " + (f"years {losses}" if losses else "no full year")

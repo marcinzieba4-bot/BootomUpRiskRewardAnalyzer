@@ -547,8 +547,13 @@ if TICKER == "CHTR":   # no CHTR date is built (retro/README.md, "CHTR 2008-2009
     with open(FACTS, encoding="utf-8") as fh:
         f0 = json.load(fh)
     f1 = copy.deepcopy(f0)
-    yr = lambda who: {"issuer": who, "start": "PLANTED", "end": "PLANTED", "months": 12, "revenue_m": 0.01, "eps_diluted": 99.99,
-                      "eps_continuing": 99.99, "diluted_shares_m": 1.0}
+    chtr0, spx0 = build_chtr.trading_days("CHTR"), build_chtr.trading_days("^GSPC")
+    # (2018-2021) where the real facts already let the dates after the plant pass the gate, the planted vintage holds only losses, so
+    # that the control still sees it; before that, a positive year
+    probe = [d for d in sorted(spx0) if d >= later][:1]
+    sign = -1 if probe and not build_chtr.gate(probe[0], f0, {k: c for k, c in chtr0.items() if k <= probe[0]}) else 1
+    yr = lambda who: {"issuer": who, "start": "PLANTED", "end": "PLANTED", "months": 12, "revenue_m": 0.01, "eps_diluted": 99.99 * sign,
+                      "eps_continuing": 99.99 * sign, "diluted_shares_m": 1.0}
     f1["history_vintages"].append({"published": later, "source": "PLANTED", "fy_label": "FY99",
                                    "periods": {"2098": yr("Predecessor"), "2099": yr("Successor")}})
     f1["listings"].append({"published": later, "source": "PLANTED", "issuer": "Successor", "exchange": "PLANTED", "symbol": "PLANTED"})
