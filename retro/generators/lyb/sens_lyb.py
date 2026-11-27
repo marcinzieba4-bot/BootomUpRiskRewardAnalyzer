@@ -4,6 +4,7 @@ memory, into a scratch folder) and classify offline with retro_tool's own classi
 
     python3 retro/generators/lyb/sens_lyb.py <scratch-out>                          # the 100 dates of 2012-2013
     python3 retro/generators/lyb/sens_lyb.py <scratch-out> 2014-01-01 2017-12-31    # the 209 of 2014-2017 (README, "LYB 2014-2017")
+    python3 retro/generators/lyb/sens_lyb.py <scratch-out> 2018-01-01 2021-12-31    # the 209 of 2018-2021 (README, "LYB 2018-2021")
 """
 import contextlib, copy, io, json, os, runpy, shutil, sys, types
 REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
@@ -17,7 +18,7 @@ engine0 = open(B.ENGINE, encoding="utf-8").read()
 raw, spx = load_series("LYB"), load_series("^GSPC")
 RANGE = (sys.argv[2], sys.argv[3]) if len(sys.argv) > 3 else ("2012-02-06", "2013-12-31")
 dates = weekly_dates(RANGE[0], RANGE[1], sorted(raw), facts0["prints"])
-assert len(dates) == {"2012-02-06": 100, "2014-01-01": 209}.get(RANGE[0], len(dates))
+assert len(dates) == {"2012-02-06": 100, "2014-01-01": 209, "2018-01-01": 209}.get(RANGE[0], len(dates))
 tax = T.load_taxonomy()
 
 
@@ -130,6 +131,37 @@ for v in f["history_vintages"]:
     if "2006" not in v["revenue_usd_b"]:
         v["revenue_usd_b"]["2006"] = f["history_vintages"][0]["revenue_usd_b"]["2006"]
 V["the ten-year roll unused (2006 kept)"] = (f, engine0, B)
+# 12. FY2017 without its listed one-offs: the Q4 2017 release says they 'positively impacted full year 2017 earnings by $2.05 per
+# share' (the tax reform benefit, the Geosel gain and the bond refinancing), so $12.28 - $2.05 = $10.23 (derived: no filing prints it)
+def set_eps(f, y, e):
+    for p in f["prints"]:
+        a = p.get("fy_actual")
+        if a and a["fy"] == y:
+            a["eps_normalized"] = e
+    for v in f["history_vintages"]:
+        if str(y) in v["eps_normalized"]:
+            v["eps_normalized"][str(y)] = e
+
+
+f = copy.deepcopy(facts0)
+set_eps(f, 2017, 10.23)
+V["FY2017 without its listed one-offs ($10.23, derived)"] = (f, engine0, B)
+# 13. FY2020 at the company's EPS excluding LCM and impairment ($5.61, the Q4 2020 release's Table 1; it also removes the LCM
+# adjustments, which recur); FY2019 and earlier as reported
+f = copy.deepcopy(facts0)
+set_eps(f, 2020, 5.61)
+V["FY2020 excluding LCM and impairment ($5.61)"] = (f, engine0, B)
+# 14. the 2010 share count kept after the ten-year roll (the FY2020 vintage)
+f = copy.deepcopy(facts0)
+for v in f["history_vintages"]:
+    if v["fy_label"] == "FY20":
+        v["diluted_shares_m"]["2010"] = 564.0
+V["the 2010 share count kept in the FY2020 vintage"] = (f, engine0, B)
+# 15. the 10-Q's operating income unused: the four prints without it in the release (Q1-Q2 2018, Q2-Q3 2021) score the operating
+# margin signal at its BASE threshold (70 bp), as an unreported signal would (the engine prints the margin, so the value stands in)
+modoi = variant_module("    latest = prints[-1]\n",
+                       "    latest = prints[-1]\n    if latest.get('oi_source'):\n        latest = {**latest, 'opm_bp': 70.0}\n")
+V["the 10-Q's operating income unused (those prints' margin signal at BASE)"] = (facts0, engine0, modoi)
 # 6./7. every data signal at its BEAR or XBULL value
 for lab, vals in (("BEAR", ("-299.0", "-41.0", "-108.0", "-480.0", "-3290.0")), ("XBULL", ("707.0", "168.0", "196.0", "1270.0", "3550.0"))):
     e = engine0
