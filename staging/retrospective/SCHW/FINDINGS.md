@@ -176,3 +176,92 @@ miss the hurdle and lag SPY) and FAIR (it should land within 15pp of SPY). Over 
   other rate-sensitive financials as a cross-ticker study (the cross-ticker scripts in `staging/retrospective/`), never inside SCHW's
   archive.
 - `profile_drift` (hindsight): DURABLE, risk 2 on every date, as today's 2026 profile.
+
+# 2014-2017 (hindsight)
+
+208 weekly dates, 2014-01-10 to 2017-12-29. Scored only after the 2014-2017 build, validation outputs, README section and firewall result
+were committed and pushed (756b6c1, 50fe513, 59a5401, bbd4b02), in a new session that had not opened the 2008-2013 outcomes or these
+findings before then; the outcomes were computed on 2026-11-27, and every date has its four horizons (the last ends 2020-12-29). The
+calls are RICH 200 and FAIR 8. Over the batch RICH held on 98 of 200 dates (it should miss the hurdle and lag SPY) and FAIR on none of 8.
+The two-year price landed in the BULL band on 116 dates, BASE on 61, XBULL on 31 and BEAR on none.
+
+## 2014 (51 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID (2014-01-10 to 2014-12-26) | 51 | +9.3% | -9.6% to +37.5% | 4 | 16 | +9.4% | 35 |
+| FY13E $0.69 (FY12's) (2014-01-10 to 2014-01-10) | 1 | +14.9% | +14.9% to +14.9% | 0 | 1 | +21.4% | 0 |
+| FY14E $0.78 (FY13's) (2014-01-17 to 2014-12-26) | 50 | +9.3% | -9.6% to +37.5% | 4 | 15 | +9.4% | 35 |
+| latest print Q3 2013 (2014-01-10 to 2014-01-10) | 1 | +14.9% | +14.9% to +14.9% | 0 | 1 | +21.4% | 0 |
+| latest print Q4 2013 (2014-01-17 to 2014-04-11) | 13 | +3.7% | -8.4% to +10.7% | 0 | 0 | +17.4% | 13 |
+| latest print Q1 2014 (2014-04-16 to 2014-07-11) | 13 | +9.6% | -9.6% to +23.4% | 0 | 3 | +13.5% | 10 |
+| latest print Q2 2014 (2014-07-17 to 2014-10-10) | 13 | +7.4% | +1.5% to +25.6% | 0 | 1 | +1.1% | 12 |
+| latest print Q3 2014 (2014-10-17 to 2014-12-26) | 11 | +31.3% | +13.0% to +37.5% | 4 | 11 | +2.2% | 0 |
+
+- **RICH held on 35 of 51.** Every 2014 date was RICH (31.5-39.1x FY14E $0.78, the 78th-92nd percentile, tier AVOID). Two years on
+  they returned -9.6% to +37.5% (median +9.3%); 4 cleared the 15%/yr hurdle (all after the Q3 2014 print) and 16 beat SPY (11 of them
+  after it). The call held on 35: all 13 on the Q4 2013 print, 10 on Q1 2014's, 12 on Q2 2014's, none on Q3 2014's. Over three years 41 of the 51 cleared the hurdle and all 51 beat SPY (+37.7% to
+  +82.2%), so the RICH call held at two years and failed at three.
+
+## 2015 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID (2015-01-02 to 2015-12-31) | 53 | +37.4% | +19.3% to +64.0% | 33 | 49 | +12.1% | 4 |
+| FY14E $0.78 (FY13's) (2015-01-02 to 2015-01-16) | 3 | +46.3% | +32.3% to +55.8% | 3 | 3 | +6.1% | 0 |
+| FY15E $0.95 (FY14's) (2015-01-21 to 2015-12-31) | 50 | +37.4% | +19.3% to +64.0% | 30 | 46 | +12.3% | 4 |
+| latest print Q3 2014 (2015-01-02 to 2015-01-16) | 3 | +46.3% | +32.3% to +55.8% | 3 | 3 | +6.1% | 0 |
+| latest print Q4 2014 (2015-01-21 to 2015-04-10) | 12 | +41.9% | +29.7% to +63.0% | 11 | 12 | +10.5% | 0 |
+| latest print Q1 2015 (2015-04-16 to 2015-07-10) | 13 | +30.7% | +19.3% to +34.6% | 2 | 12 | +11.7% | 1 |
+| latest print Q2 2015 (2015-07-17 to 2015-10-09) | 13 | +30.7% | +21.4% to +62.9% | 5 | 10 | +26.1% | 3 |
+| latest print Q3 2015 (2015-10-16 to 2015-12-31) | 12 | +51.1% | +34.8% to +64.0% | 12 | 12 | +28.9% | 0 |
+
+- **RICH failed on 49 of 53.** The 2015 dates (27.3-36.9x FY15E $0.95) returned +19.3% to +64.0% over two years; 33 cleared the
+  hurdle and 49 beat SPY. The call held on 4 (on the Q1 and Q2 2015 prints). From every date the price fell 32.5-37.3% at some point
+  within two years.
+
+## 2016 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID (2016-01-08 to 2016-12-30) | 44 | +81.1% | -1.0% to +118.4% | 37 | 37 | +63.1% | 7 |
+| class FAIR, legacy tier WATCHLIST (2016-01-21 to 2016-07-15) | 7 | +112.5% | +89.7% to +130.0% | 7 | 7 | +88.0% | 0 |
+| class FAIR, legacy tier AVOID (2016-05-06 to 2016-05-06) | 1 | +107.7% | +107.7% to +107.7% | 1 | 1 | +71.5% | 0 |
+| FY15E $0.95 (FY14's) (2016-01-08 to 2016-01-15) | 2 | +107.2% | +82.2% to +107.2% | 2 | 2 | +58.7% | 0 |
+| FY16E $1.03 (FY15's) (2016-01-21 to 2016-12-30) | 50 | +87.2% | -1.0% to +130.0% | 43 | 43 | +65.1% | 7 |
+| latest print Q3 2015 (2016-01-08 to 2016-01-15) | 2 | +107.2% | +82.2% to +107.2% | 2 | 2 | +58.7% | 0 |
+| latest print Q4 2015 (2016-01-21 to 2016-04-15) | 13 | +106.8% | +81.1% to +130.0% | 13 | 13 | +70.0% | 0 |
+| latest print Q1 2016 (2016-04-19 to 2016-07-15) | 13 | +100.0% | +88.8% to +118.4% | 13 | 13 | +71.4% | 0 |
+| latest print Q2 2016 (2016-07-20 to 2016-10-14) | 13 | +69.5% | +55.6% to +89.1% | 13 | 13 | +67.0% | 0 |
+| latest print Q3 2016 (2016-10-19 to 2016-12-30) | 11 | +17.6% | -1.0% to +53.1% | 4 | 4 | +34.4% | 7 |
+
+- **The FAIR dates were the best entries, and RICH failed.** The 8 FAIR dates (22.2-26.5x FY16E $1.03, January-February and May-July
+  2016) returned +89.7% to +130.0% over two years, all clearing the hurdle; FAIR's "within 15pp of SPY" check failed on all 8, by
+  outperforming. The 44 RICH dates returned -1.0% to +118.4% (median +81.1%); the call held on 7, all after the Q3 2016 print.
+
+## 2017 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID (2017-01-06 to 2017-12-29) | 52 | +4.8% | -19.0% to +23.2% | 0 | 0 | +12.0% | 52 |
+| FY16E $1.03 (FY15's) (2017-01-06 to 2017-01-13) | 2 | +7.7% | +4.8% to +7.7% | 0 | 0 | +24.2% | 2 |
+| FY17E $1.31 (FY16's) (2017-01-20 to 2017-12-29) | 50 | +4.3% | -19.0% to +23.2% | 0 | 0 | +11.8% | 50 |
+| latest print Q3 2016 (2017-01-06 to 2017-01-13) | 2 | +7.7% | +4.8% to +7.7% | 0 | 0 | +24.2% | 2 |
+| latest print Q4 2016 (2017-01-20 to 2017-04-13) | 13 | +13.8% | +4.3% to +23.2% | 0 | 0 | +22.2% | 13 |
+| latest print Q1 2017 (2017-04-20 to 2017-07-14) | 13 | +9.3% | -4.5% to +20.0% | 0 | 0 | +20.5% | 13 |
+| latest print Q2 2017 (2017-07-20 to 2017-10-13) | 13 | -2.9% | -19.0% to +11.1% | 0 | 0 | +8.4% | 13 |
+| latest print Q3 2017 (2017-10-18 to 2017-12-29) | 11 | -2.5% | -6.4% to +7.8% | 0 | 0 | -7.0% | 11 |
+
+- **RICH held on all 52.** The 2017 dates (28.6-39.8x FY17E $1.31, tier AVOID) returned -19.0% to +23.2% over two years, none
+  clearing the hurdle or beating SPY (3.1 to 38.9pp behind it), and none cleared it or beat SPY over three years (-19.3% to +20.6%). The
+  two-year windows reach into 2019, after the batch's last filing.
+
+## Across 2014-2017
+
+- Hypothesis, not a rule: the RICH calls rest on a ten-year own-history P/E whose median (24-26x) still holds the 2004-2009 rate regime
+  and on BEAR at FY2009-FY2010's -44.1%/yr, while EPS rose from $0.78 to $1.31 (FY2013-FY2016, the batch's own filings) as rates lifted
+  in 2016. The call held where the multiple met a flat two years (2014 entries, 2017 entries) and failed where earnings growth carried the
+  price (2015-2016). Whether a window that drops a past rate regime would read rate-sensitive financials better is a cross-ticker study
+  (the cross-ticker scripts in `staging/retrospective/`), never a change inside SCHW's archive.
+- The batch's largest encoding call (FY2015-FY2016 without the listed items) moves 4 classes, FAIR to RICH, among the 8 best entries.
+- `profile_drift` (hindsight): DURABLE, risk 2 on every date, as today's 2026 profile.
