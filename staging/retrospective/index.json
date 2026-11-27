@@ -573697,7 +573697,20 @@
    "cons_return_2yr": -67.2,
    "path": "staging/retrospective/NEE/2022-01-07",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -6.0,
+    "tr_1y": -1.2,
+    "tr_2y": -24.0,
+    "tr_3y": -12.0,
+    "excess_6m": 9.9,
+    "excess_1y": 14.2,
+    "excess_2y": -27.2,
+    "excess_3y": -42.6,
+    "avg_m12_m24": -19.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -573716,7 +573729,20 @@
    "cons_return_2yr": -65.9,
    "path": "staging/retrospective/NEE/2022-01-14",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -2.7,
+    "tr_1y": 3.8,
+    "tr_2y": -22.3,
+    "tr_3y": -11.5,
+    "excess_6m": 15.4,
+    "excess_1y": 16.7,
+    "excess_2y": -27.7,
+    "excess_3y": -41.1,
+    "avg_m12_m24": -17.2,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -573735,7 +573761,20 @@
    "cons_return_2yr": -65.7,
    "path": "staging/retrospective/NEE/2022-01-21",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -3.5,
+    "tr_1y": 1.1,
+    "tr_2y": -26.4,
+    "tr_3y": -7.4,
+    "excess_6m": 4.8,
+    "excess_1y": 9.3,
+    "excess_2y": -39.5,
+    "excess_3y": -49.7,
+    "avg_m12_m24": -17.1,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -573754,7 +573793,20 @@
    "cons_return_2yr": -43.3,
    "path": "staging/retrospective/NEE/2022-01-26",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 11.2,
+    "tr_1y": 7.5,
+    "tr_2y": -14.6,
+    "tr_3y": 8.0,
+    "excess_6m": 20.3,
+    "excess_1y": 12.7,
+    "excess_2y": -30.0,
+    "excess_3y": -36.9,
+    "avg_m12_m24": -6.3,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -573773,7 +573825,20 @@
    "cons_return_2yr": -45.8,
    "path": "staging/retrospective/NEE/2022-02-04",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 16.9,
+    "tr_1y": 0.5,
+    "tr_2y": -18.8,
+    "tr_3y": -0.6,
+    "excess_6m": 23.9,
+    "excess_1y": 7.2,
+    "excess_2y": -31.9,
+    "excess_3y": -39.2,
+    "avg_m12_m24": -10.9,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -573792,7 +573857,20 @@
    "cons_return_2yr": -45.0,
    "path": "staging/retrospective/NEE/2022-02-11",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 20.4,
+    "tr_1y": 2.0,
+    "tr_2y": -19.8,
+    "tr_3y": 1.3,
+    "excess_6m": 24.4,
+    "excess_1y": 7.9,
+    "excess_2y": -36.5,
+    "excess_3y": -40.6,
+    "avg_m12_m24": -10.2,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -573811,7 +573889,20 @@
    "cons_return_2yr": -44.1,
    "path": "staging/retrospective/NEE/2022-02-18",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 22.8,
+    "tr_1y": 4.9,
+    "tr_2y": -18.3,
+    "tr_3y": -0.0,
+    "excess_6m": 23.6,
+    "excess_1y": 9.6,
+    "excess_2y": -36.3,
+    "excess_3y": -45.5,
+    "avg_m12_m24": -9.7,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -573830,7 +573921,20 @@
    "cons_return_2yr": -46.3,
    "path": "staging/retrospective/NEE/2022-02-25",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 17.0,
+    "tr_1y": -3.3,
+    "tr_2y": -21.8,
+    "tr_3y": -0.3,
+    "excess_6m": 20.4,
+    "excess_1y": 4.7,
+    "excess_2y": -40.8,
+    "excess_3y": -40.6,
+    "avg_m12_m24": -13.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -573849,7 +573953,20 @@
    "cons_return_2yr": -48.4,
    "path": "staging/retrospective/NEE/2022-03-04",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 7.2,
+    "tr_1y": -5.8,
+    "tr_2y": -26.9,
+    "tr_3y": -4.5,
+    "excess_6m": 15.7,
+    "excess_1y": -0.8,
+    "excess_2y": -48.4,
+    "excess_3y": -42.6,
+    "avg_m12_m24": -17.3,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -573868,7 +573985,20 @@
    "cons_return_2yr": -47.8,
    "path": "staging/retrospective/NEE/2022-03-11",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 14.4,
+    "tr_1y": -5.7,
+    "tr_2y": -22.4,
+    "tr_3y": 0.6,
+    "excess_6m": 16.9,
+    "excess_1y": 0.9,
+    "excess_2y": -47.2,
+    "excess_3y": -36.5,
+    "avg_m12_m24": -16.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -573887,7 +574017,20 @@
    "cons_return_2yr": -49.7,
    "path": "staging/retrospective/NEE/2022-03-18",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 4.0,
+    "tr_1y": -6.0,
+    "tr_2y": -22.5,
+    "tr_3y": -7.2,
+    "excess_6m": 16.5,
+    "excess_1y": 4.8,
+    "excess_2y": -40.8,
+    "excess_3y": -37.6,
+    "avg_m12_m24": -20.3,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -573906,7 +574049,20 @@
    "cons_return_2yr": -50.7,
    "path": "staging/retrospective/NEE/2022-03-25",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -0.7,
+    "tr_1y": -7.8,
+    "tr_2y": -21.0,
+    "tr_3y": -11.4,
+    "excess_6m": 17.3,
+    "excess_1y": 3.4,
+    "excess_2y": -38.8,
+    "excess_3y": -43.0,
+    "avg_m12_m24": -22.1,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -573925,7 +574081,20 @@
    "cons_return_2yr": -51.7,
    "path": "staging/retrospective/NEE/2022-04-01",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -7.5,
+    "tr_1y": -8.0,
+    "tr_2y": -21.8,
+    "tr_3y": -10.5,
+    "excess_6m": 12.9,
+    "excess_1y": 0.1,
+    "excess_2y": -40.0,
+    "excess_3y": -38.9,
+    "avg_m12_m24": -24.0,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -573944,7 +574113,20 @@
    "cons_return_2yr": -51.9,
    "path": "staging/retrospective/NEE/2022-04-08",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -9.9,
+    "tr_1y": -6.2,
+    "tr_2y": -20.4,
+    "tr_3y": -18.8,
+    "excess_6m": 8.3,
+    "excess_1y": 0.9,
+    "excess_2y": -39.2,
+    "excess_3y": -34.3,
+    "avg_m12_m24": -24.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -573963,7 +574145,20 @@
    "cons_return_2yr": -50.0,
    "path": "staging/retrospective/NEE/2022-04-14",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -12.3,
+    "tr_1y": -3.7,
+    "tr_2y": -19.4,
+    "tr_3y": -11.3,
+    "excess_6m": 5.3,
+    "excess_1y": 0.6,
+    "excess_2y": -39.1,
+    "excess_3y": -39.1,
+    "avg_m12_m24": -22.0,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -573982,7 +574177,20 @@
    "cons_return_2yr": -53.7,
    "path": "staging/retrospective/NEE/2022-04-22",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -2.0,
+    "tr_1y": 9.2,
+    "tr_2y": -6.7,
+    "tr_3y": -2.1,
+    "excess_6m": 9.4,
+    "excess_1y": 10.9,
+    "excess_2y": -27.1,
+    "excess_3y": -30.6,
+    "avg_m12_m24": -13.0,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574001,7 +574209,20 @@
    "cons_return_2yr": -51.7,
    "path": "staging/retrospective/NEE/2022-04-29",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 12.5,
+    "tr_1y": 10.4,
+    "tr_2y": 0.1,
+    "tr_3y": 2.8,
+    "excess_6m": 17.3,
+    "excess_1y": 7.8,
+    "excess_2y": -26.9,
+    "excess_3y": -36.7,
+    "avg_m12_m24": -9.7,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574020,7 +574241,20 @@
    "cons_return_2yr": -50.2,
    "path": "staging/retrospective/NEE/2022-05-06",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 9.9,
+    "tr_1y": 6.6,
+    "tr_2y": 3.4,
+    "tr_3y": -0.2,
+    "excess_6m": 17.6,
+    "excess_1y": 4.7,
+    "excess_2y": -25.4,
+    "excess_3y": -41.0,
+    "avg_m12_m24": -11.7,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574039,7 +574273,20 @@
    "cons_return_2yr": -48.3,
    "path": "staging/retrospective/NEE/2022-05-13",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 20.6,
+    "tr_1y": 14.2,
+    "tr_2y": 12.1,
+    "tr_3y": 11.6,
+    "excess_6m": 20.6,
+    "excess_1y": 10.1,
+    "excess_2y": -20.9,
+    "excess_3y": -39.6,
+    "avg_m12_m24": -8.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574058,7 +574305,20 @@
    "cons_return_2yr": -49.3,
    "path": "staging/retrospective/NEE/2022-05-20",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 18.0,
+    "tr_1y": 7.0,
+    "tr_2y": 11.7,
+    "tr_3y": 12.6,
+    "excess_6m": 15.6,
+    "excess_1y": -2.1,
+    "excess_2y": -27.8,
+    "excess_3y": -44.8,
+    "avg_m12_m24": -10.2,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574077,7 +574337,20 @@
    "cons_return_2yr": -53.4,
    "path": "staging/retrospective/NEE/2022-05-27",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 11.3,
+    "tr_1y": -2.2,
+    "tr_2y": 3.1,
+    "tr_3y": -5.2,
+    "excess_6m": 13.7,
+    "excess_1y": -4.9,
+    "excess_2y": -27.5,
+    "excess_3y": -52.5,
+    "avg_m12_m24": -17.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574096,7 +574369,20 @@
    "cons_return_2yr": -54.1,
    "path": "staging/retrospective/NEE/2022-06-03",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 9.4,
+    "tr_1y": -3.9,
+    "tr_2y": 3.5,
+    "tr_3y": -2.3,
+    "excess_6m": 9.5,
+    "excess_1y": -9.7,
+    "excess_2y": -28.3,
+    "excess_3y": -52.5,
+    "avg_m12_m24": -18.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574115,7 +574401,20 @@
    "cons_return_2yr": -52.5,
    "path": "staging/retrospective/NEE/2022-06-10",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 12.4,
+    "tr_1y": -0.1,
+    "tr_2y": 6.3,
+    "tr_3y": 3.7,
+    "excess_6m": 10.7,
+    "excess_1y": -12.0,
+    "excess_2y": -34.5,
+    "excess_3y": -56.2,
+    "avg_m12_m24": -15.5,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574134,7 +574433,20 @@
    "cons_return_2yr": -49.0,
    "path": "staging/retrospective/NEE/2022-06-17",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 20.0,
+    "tr_1y": 9.3,
+    "tr_2y": 7.4,
+    "tr_3y": 9.8,
+    "excess_6m": 14.3,
+    "excess_1y": -12.6,
+    "excess_2y": -45.3,
+    "excess_3y": -58.6,
+    "avg_m12_m24": -9.5,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574153,7 +574465,20 @@
    "cons_return_2yr": -53.8,
    "path": "staging/retrospective/NEE/2022-06-24",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 9.0,
+    "tr_1y": -2.6,
+    "tr_2y": -0.5,
+    "tr_3y": -0.9,
+    "excess_6m": 9.9,
+    "excess_1y": -15.4,
+    "excess_2y": -43.1,
+    "excess_3y": -61.7,
+    "avg_m12_m24": -17.9,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574172,7 +574497,20 @@
    "cons_return_2yr": -55.2,
    "path": "staging/retrospective/NEE/2022-07-01",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 4.8,
+    "tr_1y": -5.7,
+    "tr_2y": -8.6,
+    "tr_3y": -2.0,
+    "excess_6m": 3.6,
+    "excess_1y": -23.7,
+    "excess_2y": -55.1,
+    "excess_3y": -69.4,
+    "avg_m12_m24": -20.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574191,7 +574529,20 @@
    "cons_return_2yr": -55.0,
    "path": "staging/retrospective/NEE/2022-07-08",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 5.3,
+    "tr_1y": -8.0,
+    "tr_2y": -5.5,
+    "tr_3y": -2.3,
+    "excess_6m": 4.6,
+    "excess_1y": -22.5,
+    "excess_2y": -51.8,
+    "excess_3y": -67.2,
+    "avg_m12_m24": -20.3,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574210,7 +574561,20 @@
    "cons_return_2yr": -54.2,
    "path": "staging/retrospective/NEE/2022-07-15",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 8.7,
+    "tr_1y": -4.7,
+    "tr_2y": -5.1,
+    "tr_3y": 2.4,
+    "excess_6m": 4.3,
+    "excess_1y": -23.1,
+    "excess_2y": -54.3,
+    "excess_3y": -64.5,
+    "avg_m12_m24": -18.7,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574229,7 +574593,20 @@
    "cons_return_2yr": -28.9,
    "path": "staging/retrospective/NEE/2022-07-22",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 3.0,
+    "tr_1y": -3.2,
+    "tr_2y": -4.5,
+    "tr_3y": 4.0,
+    "excess_6m": 2.0,
+    "excess_1y": -19.3,
+    "excess_2y": -48.3,
+    "excess_3y": -60.4,
+    "avg_m12_m24": -20.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574248,7 +574625,20 @@
    "cons_return_2yr": -32.5,
    "path": "staging/retrospective/NEE/2022-07-29",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -9.5,
+    "tr_1y": -11.7,
+    "tr_2y": -7.6,
+    "tr_3y": -7.8,
+    "excess_6m": -8.8,
+    "excess_1y": -24.2,
+    "excess_2y": -43.0,
+    "excess_3y": -67.0,
+    "avg_m12_m24": -24.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574267,7 +574657,20 @@
    "cons_return_2yr": -35.1,
    "path": "staging/retrospective/NEE/2022-08-05",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -14.2,
+    "tr_1y": -19.3,
+    "tr_2y": -8.6,
+    "tr_3y": -12.4,
+    "excess_6m": -14.7,
+    "excess_1y": -29.0,
+    "excess_2y": -36.9,
+    "excess_3y": -69.2,
+    "avg_m12_m24": -27.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574286,7 +574689,20 @@
    "cons_return_2yr": -36.9,
    "path": "staging/retrospective/NEE/2022-08-12",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -16.4,
+    "tr_1y": -21.8,
+    "tr_2y": -10.1,
+    "tr_3y": -14.0,
+    "excess_6m": -12.8,
+    "excess_1y": -27.7,
+    "excess_2y": -38.1,
+    "excess_3y": -69.3,
+    "avg_m12_m24": -29.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574305,7 +574721,20 @@
    "cons_return_2yr": -36.4,
    "path": "staging/retrospective/NEE/2022-08-19",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -14.3,
+    "tr_1y": -22.4,
+    "tr_2y": -7.4,
+    "tr_3y": -8.1,
+    "excess_6m": -11.5,
+    "excess_1y": -27.3,
+    "excess_2y": -43.1,
+    "excess_3y": -64.5,
+    "avg_m12_m24": -28.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574324,7 +574753,20 @@
    "cons_return_2yr": -35.2,
    "path": "staging/retrospective/NEE/2022-08-26",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -16.2,
+    "tr_1y": -20.8,
+    "tr_2y": -4.2,
+    "tr_3y": -8.3,
+    "excess_6m": -14.9,
+    "excess_1y": -31.0,
+    "excess_2y": -45.8,
+    "excess_3y": -72.5,
+    "avg_m12_m24": -26.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574343,7 +574785,20 @@
    "cons_return_2yr": -33.0,
    "path": "staging/retrospective/NEE/2022-09-02",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -14.1,
+    "tr_1y": -19.3,
+    "tr_2y": -0.9,
+    "tr_3y": -7.5,
+    "excess_6m": -16.4,
+    "excess_1y": -36.0,
+    "excess_2y": -48.0,
+    "excess_3y": -76.0,
+    "avg_m12_m24": -23.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574362,7 +574817,20 @@
    "cons_return_2yr": -36.5,
    "path": "staging/retrospective/NEE/2022-09-09",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -17.0,
+    "tr_1y": -23.6,
+    "tr_2y": -5.4,
+    "tr_3y": -15.3,
+    "excess_6m": -14.1,
+    "excess_1y": -34.8,
+    "excess_2y": -43.1,
+    "excess_3y": -80.3,
+    "avg_m12_m24": -27.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574381,7 +574849,20 @@
    "cons_return_2yr": -32.7,
    "path": "staging/retrospective/NEE/2022-09-16",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -9.0,
+    "tr_1y": -16.9,
+    "tr_2y": 4.4,
+    "tr_3y": -10.5,
+    "excess_6m": -12.2,
+    "excess_1y": -33.6,
+    "excess_2y": -44.7,
+    "excess_3y": -86.6,
+    "avg_m12_m24": -22.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574400,7 +574881,20 @@
    "cons_return_2yr": -30.9,
    "path": "staging/retrospective/NEE/2022-09-23",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -9.5,
+    "tr_1y": -15.7,
+    "tr_2y": 7.4,
+    "tr_3y": -5.0,
+    "excess_6m": -17.2,
+    "excess_1y": -34.5,
+    "excess_2y": -51.1,
+    "excess_3y": -90.9,
+    "avg_m12_m24": -20.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574419,7 +574913,20 @@
    "cons_return_2yr": -27.2,
    "path": "staging/retrospective/NEE/2022-09-30",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -1.2,
+    "tr_1y": -24.6,
+    "tr_2y": 12.7,
+    "tr_3y": 4.0,
+    "excess_6m": -15.1,
+    "excess_1y": -46.1,
+    "excess_2y": -51.7,
+    "excess_3y": -88.3,
+    "avg_m12_m24": -15.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574438,7 +574945,20 @@
    "cons_return_2yr": -25.6,
    "path": "staging/retrospective/NEE/2022-10-07",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 4.1,
+    "tr_1y": -32.1,
+    "tr_2y": 9.6,
+    "tr_3y": 16.3,
+    "excess_6m": -9.6,
+    "excess_1y": -52.3,
+    "excess_2y": -50.6,
+    "excess_3y": -73.8,
+    "avg_m12_m24": -12.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574457,7 +574977,20 @@
    "cons_return_2yr": -20.5,
    "path": "staging/retrospective/NEE/2022-10-14",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 10.0,
+    "tr_1y": -21.5,
+    "tr_2y": 20.9,
+    "tr_3y": 26.4,
+    "excess_6m": -6.3,
+    "excess_1y": -44.0,
+    "excess_2y": -46.3,
+    "excess_3y": -64.6,
+    "avg_m12_m24": -6.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574476,7 +575009,20 @@
    "cons_return_2yr": -20.4,
    "path": "staging/retrospective/NEE/2022-10-21",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 11.5,
+    "tr_1y": -24.9,
+    "tr_2y": 22.6,
+    "tr_3y": 25.7,
+    "excess_6m": 0.5,
+    "excess_1y": -39.2,
+    "excess_2y": -36.9,
+    "excess_3y": -59.2,
+    "avg_m12_m24": -5.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574495,7 +575041,20 @@
    "cons_return_2yr": -2.8,
    "path": "staging/retrospective/NEE/2022-10-28",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -1.9,
+    "tr_1y": -26.5,
+    "tr_2y": 9.7,
+    "tr_3y": 13.4,
+    "excess_6m": -9.7,
+    "excess_1y": -33.8,
+    "excess_2y": -43.1,
+    "excess_3y": -68.5,
+    "avg_m12_m24": -13.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -574514,7 +575073,20 @@
    "cons_return_2yr": -2.5,
    "path": "staging/retrospective/NEE/2022-11-04",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -3.0,
+    "tr_1y": -22.3,
+    "tr_2y": 4.3,
+    "tr_3y": 11.4,
+    "excess_6m": -11.6,
+    "excess_1y": -39.6,
+    "excess_2y": -50.7,
+    "excess_3y": -73.6,
+    "avg_m12_m24": -12.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -574533,7 +575105,20 @@
    "cons_return_2yr": -7.8,
    "path": "staging/retrospective/NEE/2022-11-11",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -7.6,
+    "tr_1y": -31.6,
+    "tr_2y": -4.3,
+    "tr_3y": 10.2,
+    "excess_6m": -11.8,
+    "excess_1y": -43.8,
+    "excess_2y": -57.9,
+    "excess_3y": -66.4,
+    "avg_m12_m24": -16.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574552,7 +575137,20 @@
    "cons_return_2yr": -7.7,
    "path": "staging/retrospective/NEE/2022-11-18",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -8.7,
+    "tr_1y": -28.8,
+    "tr_2y": -3.6,
+    "tr_3y": 9.0,
+    "excess_6m": -15.4,
+    "excess_1y": -44.3,
+    "excess_2y": -55.5,
+    "excess_3y": -62.9,
+    "avg_m12_m24": -16.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -574571,7 +575169,20 @@
    "cons_return_2yr": -10.0,
    "path": "staging/retrospective/NEE/2022-11-25",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -13.5,
+    "tr_1y": -30.4,
+    "tr_2y": -5.6,
+    "tr_3y": 6.7,
+    "excess_6m": -17.3,
+    "excess_1y": -45.2,
+    "excess_2y": -57.5,
+    "excess_3y": -66.3,
+    "avg_m12_m24": -17.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574590,7 +575201,20 @@
    "cons_return_2yr": -9.8,
    "path": "staging/retrospective/NEE/2022-12-02",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -12.2,
+    "tr_1y": -28.4,
+    "tr_2y": -4.9,
+    "tr_3y": 6.5,
+    "excess_6m": -18.2,
+    "excess_1y": -42.8,
+    "excess_2y": -56.6,
+    "excess_3y": -66.0,
+    "avg_m12_m24": -17.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574609,7 +575233,20 @@
    "cons_return_2yr": -9.1,
    "path": "staging/retrospective/NEE/2022-12-09",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -11.2,
+    "tr_1y": -27.1,
+    "tr_2y": -7.0,
+    "tr_3y": 1.6,
+    "excess_6m": -21.4,
+    "excess_1y": -45.8,
+    "excess_2y": -64.1,
+    "excess_3y": -77.4,
+    "avg_m12_m24": -16.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574628,7 +575265,20 @@
    "cons_return_2yr": -8.7,
    "path": "staging/retrospective/NEE/2022-12-16",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -9.0,
+    "tr_1y": -24.7,
+    "tr_2y": -8.8,
+    "tr_3y": 4.0,
+    "excess_6m": -24.5,
+    "excess_1y": -48.9,
+    "excess_2y": -70.2,
+    "excess_3y": -78.1,
+    "avg_m12_m24": -15.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574647,7 +575297,20 @@
    "cons_return_2yr": -8.7,
    "path": "staging/retrospective/NEE/2022-12-23",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -10.8,
+    "tr_1y": -26.8,
+    "tr_2y": -9.2,
+    "tr_3y": 2.2,
+    "excess_6m": -24.7,
+    "excess_1y": -52.2,
+    "excess_2y": -68.1,
+    "excess_3y": -83.0,
+    "avg_m12_m24": -15.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574666,7 +575329,20 @@
    "cons_return_2yr": -8.1,
    "path": "staging/retrospective/NEE/2022-12-30",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -10.1,
+    "tr_1y": -25.1,
+    "tr_2y": -9.5,
+    "tr_3y": 3.7,
+    "excess_6m": -26.9,
+    "excess_1y": -51.1,
+    "excess_2y": -66.9,
+    "excess_3y": -81.4,
+    "avg_m12_m24": -14.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -574685,7 +575361,20 @@
    "cons_return_2yr": -8.2,
    "path": "staging/retrospective/NEE/2023-01-06",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -11.6,
+    "tr_1y": -23.5,
+    "tr_2y": -10.1,
+    "tr_3y": 4.3,
+    "excess_6m": -25.7,
+    "excess_1y": -45.8,
+    "excess_2y": -67.1,
+    "excess_3y": -79.4,
+    "avg_m12_m24": -14.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -574704,7 +575393,20 @@
    "cons_return_2yr": -9.3,
    "path": "staging/retrospective/NEE/2023-01-13",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -11.8,
+    "tr_1y": -25.7,
+    "tr_2y": -16.3,
+    "tr_3y": 3.7,
+    "excess_6m": -25.5,
+    "excess_1y": -47.0,
+    "excess_2y": -65.6,
+    "excess_3y": -75.6,
+    "avg_m12_m24": -15.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -574723,7 +575425,20 @@
    "cons_return_2yr": -6.1,
    "path": "staging/retrospective/NEE/2023-01-20",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -8.3,
+    "tr_1y": -27.7,
+    "tr_2y": -8.7,
+    "tr_3y": 9.6,
+    "excess_6m": -23.3,
+    "excess_1y": -51.3,
+    "excess_2y": -63.1,
+    "excess_3y": -66.8,
+    "avg_m12_m24": -12.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -574742,7 +575457,20 @@
    "cons_return_2yr": -25.9,
    "path": "staging/retrospective/NEE/2023-01-26",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -1.4,
+    "tr_1y": -21.0,
+    "tr_2y": 0.5,
+    "tr_3y": 20.0,
+    "excess_6m": -14.7,
+    "excess_1y": -43.1,
+    "excess_2y": -53.1,
+    "excess_3y": -56.3,
+    "avg_m12_m24": -5.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574761,7 +575489,20 @@
    "cons_return_2yr": -24.2,
    "path": "staging/retrospective/NEE/2023-02-03",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -4.9,
+    "tr_1y": -19.6,
+    "tr_2y": 0.4,
+    "tr_3y": 27.3,
+    "excess_6m": -14.5,
+    "excess_1y": -41.1,
+    "excess_2y": -47.9,
+    "excess_3y": -45.1,
+    "avg_m12_m24": -2.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574780,7 +575521,20 @@
    "cons_return_2yr": -24.2,
    "path": "staging/retrospective/NEE/2023-02-10",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -7.4,
+    "tr_1y": -21.8,
+    "tr_2y": -1.5,
+    "tr_3y": 29.8,
+    "excess_6m": -17.4,
+    "excess_1y": -46.2,
+    "excess_2y": -53.1,
+    "excess_3y": -44.9,
+    "avg_m12_m24": -2.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574799,7 +575553,20 @@
    "cons_return_2yr": -25.6,
    "path": "staging/retrospective/NEE/2023-02-17",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -10.0,
+    "tr_1y": -22.6,
+    "tr_2y": -5.4,
+    "tr_3y": 30.0,
+    "excess_6m": -17.9,
+    "excess_1y": -46.8,
+    "excess_2y": -58.4,
+    "excess_3y": -42.8,
+    "avg_m12_m24": -4.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574818,7 +575585,20 @@
    "cons_return_2yr": -21.8,
    "path": "staging/retrospective/NEE/2023-02-24",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -6.5,
+    "tr_1y": -19.6,
+    "tr_2y": 2.5,
+    "tr_3y": 39.7,
+    "excess_6m": -17.5,
+    "excess_1y": -49.4,
+    "excess_2y": -51.6,
+    "excess_3y": -39.0,
+    "avg_m12_m24": 0.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574837,7 +575617,20 @@
    "cons_return_2yr": -22.8,
    "path": "staging/retrospective/NEE/2023-03-03",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -8.2,
+    "tr_1y": -22.6,
+    "tr_2y": 2.5,
+    "tr_3y": 34.0,
+    "excess_6m": -20.6,
+    "excess_1y": -51.1,
+    "excess_2y": -45.4,
+    "excess_3y": -39.5,
+    "avg_m12_m24": -0.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574856,7 +575649,20 @@
    "cons_return_2yr": -17.9,
    "path": "staging/retrospective/NEE/2023-03-10",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -7.2,
+    "tr_1y": -18.2,
+    "tr_2y": 9.8,
+    "tr_3y": 34.1,
+    "excess_6m": -23.4,
+    "excess_1y": -52.5,
+    "excess_2y": -39.0,
+    "excess_3y": -46.8,
+    "avg_m12_m24": 1.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574875,7 +575681,20 @@
    "cons_return_2yr": -20.8,
    "path": "staging/retrospective/NEE/2023-03-17",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -8.1,
+    "tr_1y": -18.1,
+    "tr_2y": 0.6,
+    "tr_3y": 30.7,
+    "excess_6m": -22.6,
+    "excess_1y": -50.5,
+    "excess_2y": -47.9,
+    "excess_3y": -46.3,
+    "avg_m12_m24": -2.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574894,7 +575713,20 @@
    "cons_return_2yr": -20.8,
    "path": "staging/retrospective/NEE/2023-03-24",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -9.3,
+    "tr_1y": -15.8,
+    "tr_2y": -2.1,
+    "tr_3y": 29.4,
+    "excess_6m": -18.9,
+    "excess_1y": -49.2,
+    "excess_2y": -50.7,
+    "excess_3y": -41.0,
+    "avg_m12_m24": -1.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574913,7 +575745,20 @@
    "cons_return_2yr": -22.2,
    "path": "staging/retrospective/NEE/2023-03-31",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -24.5,
+    "tr_1y": -14.6,
+    "tr_2y": -3.4,
+    "tr_3y": 27.7,
+    "excess_6m": -29.7,
+    "excess_1y": -44.0,
+    "excess_2y": -42.5,
+    "excess_3y": -31.9,
+    "avg_m12_m24": -3.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574932,7 +575777,20 @@
    "cons_return_2yr": -24.1,
    "path": "staging/retrospective/NEE/2023-04-06",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -35.2,
+    "tr_1y": -16.3,
+    "tr_2y": -10.2,
+    "tr_3y": 25.5,
+    "excess_6m": -41.0,
+    "excess_1y": -44.6,
+    "excess_2y": -37.0,
+    "excess_3y": -40.8,
+    "avg_m12_m24": -5.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574951,7 +575809,20 @@
    "cons_return_2yr": -23.2,
    "path": "staging/retrospective/NEE/2023-04-14",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -29.0,
+    "tr_1y": -16.7,
+    "tr_2y": -8.1,
+    "tr_3y": 25.2,
+    "excess_6m": -34.4,
+    "excess_1y": -42.2,
+    "excess_2y": -42.1,
+    "excess_3y": -48.3,
+    "avg_m12_m24": -4.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574970,7 +575841,20 @@
    "cons_return_2yr": -24.1,
    "path": "staging/retrospective/NEE/2023-04-21",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -33.0,
+    "tr_1y": -16.2,
+    "tr_2y": -13.0,
+    "tr_3y": 22.7,
+    "excess_6m": -36.0,
+    "excess_1y": -37.9,
+    "excess_2y": -41.1,
+    "excess_3y": -53.2,
+    "avg_m12_m24": -5.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -574989,7 +575873,20 @@
    "cons_return_2yr": 187.1,
    "path": "staging/retrospective/NEE/2023-04-26",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -21.0,
+    "tr_1y": -8.3,
+    "tr_2y": -5.3,
+    "tr_3y": 37.2,
+    "excess_6m": -23.8,
+    "excess_1y": -35.7,
+    "excess_2y": -44.9,
+    "excess_3y": -44.6,
+    "avg_m12_m24": 0.8,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -575008,7 +575905,20 @@
    "cons_return_2yr": 181.7,
    "path": "staging/retrospective/NEE/2023-05-05",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -20.1,
+    "tr_1y": -4.6,
+    "tr_2y": -7.1,
+    "tr_3y": 35.9,
+    "excess_6m": -26.2,
+    "excess_1y": -30.1,
+    "excess_2y": -47.1,
+    "excess_3y": -44.6,
+    "avg_m12_m24": -1.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -575027,7 +575937,20 @@
    "cons_return_2yr": 172.8,
    "path": "staging/retrospective/NEE/2023-05-12",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -28.1,
+    "tr_1y": -2.9,
+    "tr_2y": -5.4,
+    "tr_3y": 29.5,
+    "excess_6m": -35.9,
+    "excess_1y": -31.1,
+    "excess_2y": -50.5,
+    "excess_3y": -55.0,
+    "avg_m12_m24": -4.4,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -575046,7 +575969,20 @@
    "cons_return_2yr": 185.6,
    "path": "staging/retrospective/NEE/2023-05-19",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -21.7,
+    "tr_1y": 4.7,
+    "tr_2y": 4.6,
+    "tr_3y": 29.5,
+    "excess_6m": -30.2,
+    "excess_1y": -23.3,
+    "excess_2y": -40.8,
+    "excess_3y": -50.9,
+    "avg_m12_m24": -0.0,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -575065,7 +576001,20 @@
    "cons_return_2yr": 187.7,
    "path": "staging/retrospective/NEE/2023-05-26",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -20.9,
+    "tr_1y": 5.6,
+    "tr_2y": -3.5,
+    "tr_3y": 26.5,
+    "excess_6m": -30.0,
+    "excess_1y": -22.0,
+    "excess_2y": -44.7,
+    "excess_3y": -57.2,
+    "avg_m12_m24": 0.6,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -575084,7 +576033,20 @@
    "cons_return_2yr": 188.0,
    "path": "staging/retrospective/NEE/2023-06-02",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -18.6,
+    "tr_1y": 10.3,
+    "tr_2y": 0.6,
+    "tr_3y": 24.0,
+    "excess_6m": -26.6,
+    "excess_1y": -14.5,
+    "excess_2y": -41.2,
+    "excess_3y": -58.5,
+    "avg_m12_m24": 0.5,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -575103,7 +576065,20 @@
    "cons_return_2yr": 187.1,
    "path": "staging/retrospective/NEE/2023-06-09",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -18.1,
+    "tr_1y": 4.4,
+    "tr_2y": 2.6,
+    "tr_3y": 23.3,
+    "excess_6m": -25.9,
+    "excess_1y": -21.3,
+    "excess_2y": -40.1,
+    "excess_3y": -53.1,
+    "avg_m12_m24": 0.0,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -575122,7 +576097,20 @@
    "cons_return_2yr": 181.4,
    "path": "staging/retrospective/NEE/2023-06-16",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -17.4,
+    "tr_1y": -0.7,
+    "tr_2y": 3.1,
+    "tr_3y": 22.7,
+    "excess_6m": -25.0,
+    "excess_1y": -25.4,
+    "excess_2y": -36.9,
+    "excess_3y": -52.5,
+    "avg_m12_m24": -2.0,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -575141,7 +576129,20 @@
    "cons_return_2yr": 186.8,
    "path": "staging/retrospective/NEE/2023-06-23",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -18.2,
+    "tr_1y": 0.8,
+    "tr_2y": 0.9,
+    "tr_3y": 25.3,
+    "excess_6m": -28.3,
+    "excess_1y": -26.5,
+    "excess_2y": -40.8,
+    "excess_3y": -49.0,
+    "avg_m12_m24": -0.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -575160,7 +576161,20 @@
    "cons_return_2yr": 186.6,
    "path": "staging/retrospective/NEE/2023-06-30",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -16.9,
+    "tr_1y": -1.9,
+    "tr_2y": -0.9,
+    "tr_3y": 27.1,
+    "excess_6m": -24.9,
+    "excess_1y": -26.2,
+    "excess_2y": -43.4,
+    "excess_3y": -46.3,
+    "avg_m12_m24": -0.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -575179,7 +576193,20 @@
    "cons_return_2yr": 195.2,
    "path": "staging/retrospective/NEE/2023-07-07",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -12.5,
+    "tr_1y": 2.8,
+    "tr_2y": 9.5,
+    "tr_3y": 31.8,
+    "excess_6m": -20.0,
+    "excess_1y": -25.2,
+    "excess_2y": -35.2,
+    "excess_3y": -43.6,
+    "avg_m12_m24": 2.8,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -575198,7 +576225,20 @@
    "cons_return_2yr": 190.6,
    "path": "staging/retrospective/NEE/2023-07-14",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -15.3,
+    "tr_1y": 6.5,
+    "tr_2y": 8.2,
+    "tr_3y": 31.2,
+    "excess_6m": -22.2,
+    "excess_1y": -19.7,
+    "excess_2y": -34.0,
+    "excess_3y": -40.9,
+    "avg_m12_m24": 1.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -575217,7 +576257,20 @@
    "cons_return_2yr": 180.2,
    "path": "staging/retrospective/NEE/2023-07-21",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -23.3,
+    "tr_1y": -2.5,
+    "tr_2y": 5.8,
+    "tr_3y": 24.4,
+    "excess_6m": -30.8,
+    "excess_1y": -25.5,
+    "excess_2y": -36.4,
+    "excess_3y": -45.8,
+    "avg_m12_m24": -2.3,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -575236,7 +576289,20 @@
    "cons_return_2yr": 7.6,
    "path": "staging/retrospective/NEE/2023-07-26",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -20.1,
+    "tr_1y": 2.5,
+    "tr_2y": 2.2,
+    "tr_3y": 29.5,
+    "excess_6m": -27.9,
+    "excess_1y": -18.5,
+    "excess_2y": -40.8,
+    "excess_3y": -37.5,
+    "avg_m12_m24": -0.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -575255,7 +576321,20 @@
    "cons_return_2yr": 15.7,
    "path": "staging/retrospective/NEE/2023-08-04",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -14.6,
+    "tr_1y": 17.3,
+    "tr_2y": 7.9,
+    "tr_3y": 35.5,
+    "excess_6m": -26.0,
+    "excess_1y": -3.5,
+    "excess_2y": -36.5,
+    "excess_3y": -42.0,
+    "avg_m12_m24": 7.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -575274,7 +576353,20 @@
    "cons_return_2yr": 16.1,
    "path": "staging/retrospective/NEE/2023-08-11",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -16.5,
+    "tr_1y": 15.2,
+    "tr_2y": 11.1,
+    "tr_3y": 33.9,
+    "excess_6m": -29.8,
+    "excess_1y": -5.9,
+    "excess_2y": -34.7,
+    "excess_3y": -43.9,
+    "avg_m12_m24": 7.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -575293,7 +576385,20 @@
    "cons_return_2yr": 18.0,
    "path": "staging/retrospective/NEE/2023-08-18",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -14.5,
+    "tr_1y": 18.7,
+    "tr_2y": 17.7,
+    "tr_3y": 36.7,
+    "excess_6m": -29.8,
+    "excess_1y": -9.8,
+    "excess_2y": -32.9,
+    "excess_3y": -44.0,
+    "avg_m12_m24": 8.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -575312,7 +576417,20 @@
    "cons_return_2yr": 17.8,
    "path": "staging/retrospective/NEE/2023-08-25",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -15.1,
+    "tr_1y": 20.1,
+    "tr_2y": 16.9,
+    "tr_3y": 33.5,
+    "excess_6m": -31.3,
+    "excess_1y": -9.2,
+    "excess_2y": -32.3,
+    "excess_3y": -45.5,
+    "avg_m12_m24": 8.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -575331,7 +576449,20 @@
    "cons_return_2yr": 19.7,
    "path": "staging/retrospective/NEE/2023-09-01",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -16.0,
+    "tr_1y": 23.4,
+    "tr_2y": 14.1,
+    "tr_3y": 34.0,
+    "excess_6m": -30.4,
+    "excess_1y": -3.0,
+    "excess_2y": -32.0,
+    "excess_3y": -39.6,
+    "avg_m12_m24": 10.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -575350,7 +576481,20 @@
    "cons_return_2yr": 19.8,
    "path": "staging/retrospective/NEE/2023-09-08",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -12.0,
+    "tr_1y": 22.7,
+    "tr_2y": 10.7,
+    "tr_3y": 35.4,
+    "excess_6m": -27.7,
+    "excess_1y": -0.1,
+    "excess_2y": -38.1,
+    "excess_3y": -41.3,
+    "avg_m12_m24": 10.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -575369,7 +576513,20 @@
    "cons_return_2yr": 16.6,
    "path": "staging/retrospective/NEE/2023-09-15",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -11.0,
+    "tr_1y": 26.3,
+    "tr_2y": 10.3,
+    "tr_3y": 27.8,
+    "excess_6m": -26.8,
+    "excess_1y": -1.7,
+    "excess_2y": -41.5,
+    "excess_3y": -47.5,
+    "avg_m12_m24": 6.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -575388,7 +576545,20 @@
    "cons_return_2yr": 18.2,
    "path": "staging/retrospective/NEE/2023-09-22",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -7.3,
+    "tr_1y": 25.2,
+    "tr_2y": 13.1,
+    "tr_3y": 26.9,
+    "excess_6m": -29.2,
+    "excess_1y": -8.4,
+    "excess_2y": -45.1,
+    "excess_3y": -57.8,
+    "avg_m12_m24": 7.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -575407,7 +576577,20 @@
    "cons_return_2yr": 46.7,
    "path": "staging/retrospective/NEE/2023-09-29",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 13.3,
+    "tr_1y": 51.1,
+    "tr_2y": 40.4,
+    "tr_3y": 44.1,
+    "excess_6m": -9.9,
+    "excess_1y": 15.8,
+    "excess_2y": -18.2,
+    "excess_3y": -39.8,
+    "avg_m12_m24": 27.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -575426,7 +576609,20 @@
    "cons_return_2yr": 67.3,
    "path": "staging/retrospective/NEE/2023-10-06",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 29.7,
+    "tr_1y": 70.9,
+    "tr_2y": 71.9,
+    "tr_3y": 68.3,
+    "excess_6m": 8.2,
+    "excess_1y": 35.9,
+    "excess_2y": 12.2,
+    "excess_3y": -18.2,
+    "avg_m12_m24": 44.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -575445,7 +576641,20 @@
    "cons_return_2yr": 54.2,
    "path": "staging/retrospective/NEE/2023-10-13",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 17.6,
+    "tr_1y": 53.9,
+    "tr_2y": 62.5,
+    "tr_3y": 55.8,
+    "excess_6m": -1.6,
+    "excess_1y": 18.0,
+    "excess_2y": 5.5,
+    "excess_3y": -29.6,
+    "avg_m12_m24": 33.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -575464,7 +576673,20 @@
    "cons_return_2yr": 61.7,
    "path": "staging/retrospective/NEE/2023-10-20",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 25.6,
+    "tr_1y": 66.3,
+    "tr_2y": 71.3,
+    "tr_3y": 64.6,
+    "excess_6m": 7.2,
+    "excess_1y": 25.8,
+    "excess_2y": 8.5,
+    "excess_3y": -23.2,
+    "avg_m12_m24": 40.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -575483,7 +576705,20 @@
    "cons_return_2yr": -14.1,
    "path": "staging/retrospective/NEE/2023-10-25",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 20.2,
+    "tr_1y": 47.8,
+    "tr_2y": 57.0,
+    "tr_3y": 57.2,
+    "excess_6m": -1.2,
+    "excess_1y": 7.4,
+    "excess_2y": -8.6,
+    "excess_3y": -30.0,
+    "avg_m12_m24": 28.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -575502,7 +576737,20 @@
    "cons_return_2yr": -18.4,
    "path": "staging/retrospective/NEE/2023-11-03",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 19.8,
+    "tr_1y": 33.7,
+    "tr_2y": 44.8,
+    "tr_3y": 53.2,
+    "excess_6m": 1.3,
+    "excess_1y": 0.7,
+    "excess_2y": -15.6,
+    "excess_3y": -25.3,
+    "avg_m12_m24": 22.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -575521,7 +576769,20 @@
    "cons_return_2yr": -12.1,
    "path": "staging/retrospective/NEE/2023-11-10",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 35.6,
+    "tr_1y": 43.2,
+    "tr_2y": 61.4,
+    "tr_3y": 68.5,
+    "excess_6m": 16.6,
+    "excess_1y": 5.9,
+    "excess_2y": 3.5,
+    "excess_3y": -6.6,
+    "avg_m12_m24": 32.3,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -575540,7 +576801,20 @@
    "cons_return_2yr": -15.5,
    "path": "staging/retrospective/NEE/2023-11-17",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 34.3,
+    "tr_1y": 36.6,
+    "tr_2y": 56.8,
+    "tr_3y": 58.8,
+    "excess_6m": 16.1,
+    "excess_1y": 5.1,
+    "excess_2y": 6.0,
+    "excess_3y": -8.6,
+    "avg_m12_m24": 27.5,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -575559,7 +576833,20 @@
    "cons_return_2yr": -15.8,
    "path": "staging/retrospective/NEE/2023-11-24",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 34.0,
+    "tr_1y": 35.6,
+    "tr_2y": 53.9,
+    "tr_3y": 57.7,
+    "excess_6m": 17.0,
+    "excess_1y": 3.3,
+    "excess_2y": 3.9,
+    "excess_3y": -4.9,
+    "avg_m12_m24": 27.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -575578,7 +576865,18 @@
    "cons_return_2yr": -18.1,
    "path": "staging/retrospective/NEE/2023-12-01",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 36.1,
+    "tr_1y": 36.4,
+    "tr_2y": 50.4,
+    "excess_6m": 20.5,
+    "excess_1y": 3.7,
+    "excess_2y": -0.9,
+    "avg_m12_m24": 24.1,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -575597,7 +576895,18 @@
    "cons_return_2yr": -18.8,
    "path": "staging/retrospective/NEE/2023-12-08",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 28.0,
+    "tr_1y": 29.5,
+    "tr_2y": 42.2,
+    "excess_6m": 11.2,
+    "excess_1y": -4.1,
+    "excess_2y": -9.5,
+    "avg_m12_m24": 23.2,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -575616,7 +576925,18 @@
    "cons_return_2yr": -21.2,
    "path": "staging/retrospective/NEE/2023-12-15",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 20.5,
+    "tr_1y": 23.1,
+    "tr_2y": 39.8,
+    "excess_6m": 4.5,
+    "excess_1y": -6.8,
+    "excess_2y": -7.9,
+    "avg_m12_m24": 19.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -575635,7 +576955,18 @@
    "cons_return_2yr": -18.9,
    "path": "staging/retrospective/NEE/2023-12-22",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 23.6,
+    "tr_1y": 23.4,
+    "tr_2y": 41.2,
+    "excess_6m": 7.9,
+    "excess_1y": -2.9,
+    "excess_2y": -6.4,
+    "avg_m12_m24": 23.7,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -575654,7 +576985,18 @@
    "cons_return_2yr": -16.5,
    "path": "staging/retrospective/NEE/2023-12-29",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 18.3,
+    "tr_1y": 22.1,
+    "tr_2y": 39.3,
+    "excess_6m": 3.1,
+    "excess_1y": -4.6,
+    "excess_2y": -8.5,
+    "avg_m12_m24": 21.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -575673,7 +577015,18 @@
    "cons_return_2yr": -14.7,
    "path": "staging/retrospective/NEE/2024-01-05",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 17.8,
+    "tr_1y": 19.3,
+    "tr_2y": 38.0,
+    "excess_6m": -1.5,
+    "excess_1y": -8.7,
+    "excess_2y": -12.1,
+    "avg_m12_m24": 19.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -575692,7 +577045,18 @@
    "cons_return_2yr": -13.3,
    "path": "staging/retrospective/NEE/2024-01-12",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 26.2,
+    "tr_1y": 13.8,
+    "tr_2y": 40.0,
+    "excess_6m": 8.0,
+    "excess_1y": -9.5,
+    "excess_2y": -8.9,
+    "avg_m12_m24": 21.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -575711,7 +577075,18 @@
    "cons_return_2yr": -7.5,
    "path": "staging/retrospective/NEE/2024-01-19",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 27.5,
+    "tr_1y": 27.2,
+    "tr_2y": 53.6,
+    "excess_6m": 13.0,
+    "excess_1y": 1.8,
+    "excess_2y": 7.3,
+    "avg_m12_m24": 30.2,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -575730,7 +577105,18 @@
    "cons_return_2yr": 42.7,
    "path": "staging/retrospective/NEE/2024-01-26",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 28.7,
+    "tr_1y": 28.1,
+    "tr_2y": 53.6,
+    "excess_6m": 16.4,
+    "excess_1y": 1.9,
+    "excess_2y": 8.5,
+    "avg_m12_m24": 28.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -575749,7 +577135,18 @@
    "cons_return_2yr": 43.5,
    "path": "staging/retrospective/NEE/2024-02-02",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 38.0,
+    "tr_1y": 26.6,
+    "tr_2y": 55.9,
+    "excess_6m": 29.5,
+    "excess_1y": 3.4,
+    "excess_2y": 12.3,
+    "avg_m12_m24": 29.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -575768,7 +577165,18 @@
    "cons_return_2yr": 47.5,
    "path": "staging/retrospective/NEE/2024-02-09",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 38.7,
+    "tr_1y": 24.3,
+    "tr_2y": 65.8,
+    "excess_6m": 31.7,
+    "excess_1y": 3.0,
+    "excess_2y": 24.5,
+    "avg_m12_m24": 33.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -575787,7 +577195,18 @@
    "cons_return_2yr": 46.3,
    "path": "staging/retrospective/NEE/2024-02-16",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 39.6,
+    "tr_1y": 23.0,
+    "tr_2y": 72.1,
+    "excess_6m": 27.9,
+    "excess_1y": -0.5,
+    "excess_2y": 32.7,
+    "avg_m12_m24": 33.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -575806,7 +577225,18 @@
    "cons_return_2yr": 48.0,
    "path": "staging/retrospective/NEE/2024-02-23",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 42.1,
+    "tr_1y": 29.7,
+    "tr_2y": 73.3,
+    "excess_6m": 30.8,
+    "excess_1y": 10.2,
+    "excess_2y": 36.1,
+    "avg_m12_m24": 34.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -575825,7 +577255,18 @@
    "cons_return_2yr": 52.3,
    "path": "staging/retrospective/NEE/2024-03-01",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 47.7,
+    "tr_1y": 30.9,
+    "tr_2y": 77.9,
+    "excess_6m": 37.1,
+    "excess_1y": 13.7,
+    "excess_2y": 41.3,
+    "avg_m12_m24": 39.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -575844,7 +577285,18 @@
    "cons_return_2yr": 45.4,
    "path": "staging/retrospective/NEE/2024-03-08",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 40.1,
+    "tr_1y": 29.6,
+    "tr_2y": 65.1,
+    "excess_6m": 33.9,
+    "excess_1y": 15.7,
+    "excess_2y": 30.9,
+    "avg_m12_m24": 33.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -575863,7 +577315,18 @@
    "cons_return_2yr": 39.9,
    "path": "staging/retrospective/NEE/2024-03-15",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 42.6,
+    "tr_1y": 25.9,
+    "tr_2y": 61.8,
+    "excess_6m": 32.0,
+    "excess_1y": 14.5,
+    "excess_2y": 29.4,
+    "avg_m12_m24": 29.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -575882,7 +577345,18 @@
    "cons_return_2yr": 36.1,
    "path": "staging/retrospective/NEE/2024-03-22",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 35.6,
+    "tr_1y": 18.1,
+    "tr_2y": 52.0,
+    "excess_6m": 25.9,
+    "excess_1y": 8.6,
+    "excess_2y": 24.8,
+    "avg_m12_m24": 26.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -575901,7 +577375,18 @@
    "cons_return_2yr": 31.5,
    "path": "staging/retrospective/NEE/2024-03-28",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 33.9,
+    "tr_1y": 13.5,
+    "tr_2y": 50.0,
+    "excess_6m": 24.0,
+    "excess_1y": 5.9,
+    "excess_2y": 25.9,
+    "avg_m12_m24": 22.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -575920,7 +577405,18 @@
    "cons_return_2yr": 31.0,
    "path": "staging/retrospective/NEE/2024-04-05",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 32.3,
+    "tr_1y": 7.5,
+    "tr_2y": 52.1,
+    "excess_6m": 21.1,
+    "excess_1y": 8.7,
+    "excess_2y": 22.7,
+    "avg_m12_m24": 22.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -575939,7 +577435,18 @@
    "cons_return_2yr": 33.3,
    "path": "staging/retrospective/NEE/2024-04-12",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 31.4,
+    "tr_1y": 7.7,
+    "tr_2y": 56.2,
+    "excess_6m": 17.3,
+    "excess_1y": 1.8,
+    "excess_2y": 20.3,
+    "avg_m12_m24": 25.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -575958,7 +577465,18 @@
    "cons_return_2yr": 30.7,
    "path": "staging/retrospective/NEE/2024-04-19",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 32.8,
+    "tr_1y": 6.4,
+    "tr_2y": 49.9,
+    "excess_6m": 14.1,
+    "excess_1y": -1.3,
+    "excess_2y": 3.6,
+    "avg_m12_m24": 24.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -575977,7 +577495,18 @@
    "cons_return_2yr": 9.1,
    "path": "staging/retrospective/NEE/2024-04-24",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 26.0,
+    "tr_1y": 2.9,
+    "tr_2y": 49.8,
+    "excess_6m": 10.7,
+    "excess_1y": -6.7,
+    "excess_2y": 5.7,
+    "avg_m12_m24": 20.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -575996,7 +577525,18 @@
    "cons_return_2yr": 3.6,
    "path": "staging/retrospective/NEE/2024-05-03",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 11.7,
+    "tr_1y": -1.3,
+    "tr_2y": 44.5,
+    "excess_6m": -0.6,
+    "excess_1y": -13.6,
+    "excess_2y": 0.8,
+    "avg_m12_m24": 15.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -576015,7 +577555,18 @@
    "cons_return_2yr": -1.6,
    "path": "staging/retrospective/NEE/2024-05-10",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 5.7,
+    "tr_1y": -1.9,
+    "tr_2y": 32.2,
+    "excess_6m": -9.8,
+    "excess_1y": -11.6,
+    "excess_2y": -12.2,
+    "avg_m12_m24": 10.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -576034,7 +577585,18 @@
    "cons_return_2yr": -4.5,
    "path": "staging/retrospective/NEE/2024-05-17",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 1.7,
+    "tr_1y": 1.3,
+    "tr_2y": 28.5,
+    "excess_6m": -9.6,
+    "excess_1y": -12.2,
+    "excess_2y": -13.8,
+    "avg_m12_m24": 7.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -576053,7 +577615,18 @@
    "cons_return_2yr": -5.2,
    "path": "staging/retrospective/NEE/2024-05-24",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 1.2,
+    "tr_1y": -8.8,
+    "tr_2y": 21.4,
+    "excess_6m": -11.9,
+    "excess_1y": -19.5,
+    "excess_2y": -22.2,
+    "avg_m12_m24": 7.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -576072,7 +577645,18 @@
    "cons_return_2yr": -9.2,
    "path": "staging/retrospective/NEE/2024-05-31",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 0.2,
+    "tr_1y": -9.1,
+    "tr_2y": 14.3,
+    "excess_6m": -14.7,
+    "excess_1y": -22.2,
+    "excess_2y": -31.9,
+    "avg_m12_m24": 3.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -576091,7 +577675,18 @@
    "cons_return_2yr": -3.6,
    "path": "staging/retrospective/NEE/2024-06-07",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 1.2,
+    "tr_1y": -1.4,
+    "tr_2y": 19.9,
+    "excess_6m": -13.3,
+    "excess_1y": -15.0,
+    "excess_2y": -21.0,
+    "avg_m12_m24": 9.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -576110,7 +577705,18 @@
    "cons_return_2yr": -0.6,
    "path": "staging/retrospective/NEE/2024-06-14",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 2.2,
+    "tr_1y": 5.3,
+    "tr_2y": 23.9,
+    "excess_6m": -9.8,
+    "excess_1y": -6.0,
+    "excess_2y": -15.4,
+    "avg_m12_m24": 13.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -576129,7 +577735,18 @@
    "cons_return_2yr": -0.2,
    "path": "staging/retrospective/NEE/2024-06-21",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -0.2,
+    "tr_1y": 1.2,
+    "tr_2y": 25.4,
+    "excess_6m": -9.4,
+    "excess_1y": -9.2,
+    "excess_2y": -14.5,
+    "avg_m12_m24": 14.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -576148,7 +577765,18 @@
    "cons_return_2yr": 2.6,
    "path": "staging/retrospective/NEE/2024-06-28",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 3.3,
+    "tr_1y": 3.2,
+    "tr_2y": 31.5,
+    "excess_6m": -6.7,
+    "excess_1y": -11.1,
+    "excess_2y": -5.2,
+    "avg_m12_m24": 18.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -576167,7 +577795,18 @@
    "cons_return_2yr": 0.8,
    "path": "staging/retrospective/NEE/2024-07-05",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 1.3,
+    "tr_1y": 5.5,
+    "tr_2y": 28.8,
+    "excess_6m": -6.1,
+    "excess_1y": -8.6,
+    "excess_2y": -8.1,
+    "avg_m12_m24": 16.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -576186,7 +577825,18 @@
    "cons_return_2yr": -4.4,
    "path": "staging/retrospective/NEE/2024-07-12",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -10.0,
+    "tr_1y": 0.7,
+    "tr_2y": 21.7,
+    "excess_6m": -14.3,
+    "excess_1y": -11.9,
+    "excess_2y": -15.7,
+    "avg_m12_m24": 10.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -576205,7 +577855,18 @@
    "cons_return_2yr": 5.9,
    "path": "staging/retrospective/NEE/2024-07-19",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -0.3,
+    "tr_1y": 8.5,
+    "tr_2y": 29.6,
+    "excess_6m": -9.8,
+    "excess_1y": -7.1,
+    "excess_2y": -8.4,
+    "avg_m12_m24": 17.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -576224,7 +577885,18 @@
    "cons_return_2yr": 3.8,
    "path": "staging/retrospective/NEE/2024-07-25",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 0.6,
+    "tr_1y": 0.8,
+    "tr_2y": 28.4,
+    "excess_6m": -13.0,
+    "excess_1y": -18.9,
+    "excess_2y": -11.5,
+    "avg_m12_m24": 15.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -576243,7 +577915,18 @@
    "cons_return_2yr": -3.7,
    "path": "staging/retrospective/NEE/2024-08-02",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -8.3,
+    "tr_1y": -8.4,
+    "tr_2y": 15.5,
+    "excess_6m": -22.0,
+    "excess_1y": -26.4,
+    "excess_2y": -27.5,
+    "avg_m12_m24": 7.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -576262,7 +577945,18 @@
    "cons_return_2yr": -1.6,
    "path": "staging/retrospective/NEE/2024-08-09",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -10.5,
+    "tr_1y": -3.7,
+    "tr_2y": 15.1,
+    "excess_6m": -23.9,
+    "excess_1y": -24.6,
+    "excess_2y": -32.7,
+    "avg_m12_m24": 10.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -576281,7 +577975,18 @@
    "cons_return_2yr": -3.0,
    "path": "staging/retrospective/NEE/2024-08-16",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -12.1,
+    "tr_1y": -1.3,
+    "tr_2y": 15.5,
+    "excess_6m": -22.7,
+    "excess_1y": -18.6,
+    "excess_2y": -27.2,
+    "avg_m12_m24": 8.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -576300,7 +578005,18 @@
    "cons_return_2yr": -4.3,
    "path": "staging/retrospective/NEE/2024-08-23",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -8.9,
+    "tr_1y": -1.5,
+    "tr_2y": 10.7,
+    "excess_6m": -16.2,
+    "excess_1y": -17.5,
+    "excess_2y": -28.1,
+    "avg_m12_m24": 7.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -576319,7 +578035,18 @@
    "cons_return_2yr": -5.3,
    "path": "staging/retrospective/NEE/2024-08-30",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -11.5,
+    "tr_1y": -7.8,
+    "tr_2y": 7.4,
+    "excess_6m": -17.6,
+    "excess_1y": -23.5,
+    "excess_2y": -31.7,
+    "avg_m12_m24": 6.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -576338,7 +578065,18 @@
    "cons_return_2yr": -4.7,
    "path": "staging/retrospective/NEE/2024-09-06",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -11.1,
+    "tr_1y": -8.6,
+    "tr_2y": 10.1,
+    "excess_6m": -17.8,
+    "excess_1y": -29.7,
+    "excess_2y": -35.1,
+    "avg_m12_m24": 7.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -576357,7 +578095,18 @@
    "cons_return_2yr": -9.9,
    "path": "staging/retrospective/NEE/2024-09-13",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -12.8,
+    "tr_1y": -12.8,
+    "tr_2y": 2.7,
+    "excess_6m": -11.6,
+    "excess_1y": -31.0,
+    "excess_2y": -35.9,
+    "avg_m12_m24": 2.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -576376,7 +578125,18 @@
    "cons_return_2yr": -7.9,
    "path": "staging/retrospective/NEE/2024-09-20",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -12.7,
+    "tr_1y": -11.4,
+    "tr_2y": 2.9,
+    "excess_6m": -12.6,
+    "excess_1y": -29.5,
+    "excess_2y": -33.8,
+    "avg_m12_m24": 4.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -576395,7 +578155,18 @@
    "cons_return_2yr": -9.8,
    "path": "staging/retrospective/NEE/2024-09-27",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -15.9,
+    "tr_1y": -7.7,
+    "tr_2y": -4.5,
+    "excess_6m": -15.8,
+    "excess_1y": -24.7,
+    "excess_2y": -42.1,
+    "avg_m12_m24": 2.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -576414,7 +578185,18 @@
    "cons_return_2yr": -9.1,
    "path": "staging/retrospective/NEE/2024-10-04",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -18.9,
+    "tr_1y": -1.9,
+    "tr_2y": -2.8,
+    "excess_6m": -7.7,
+    "excess_1y": -19.9,
+    "excess_2y": -39.7,
+    "avg_m12_m24": 3.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -576433,7 +578215,18 @@
    "cons_return_2yr": -6.9,
    "path": "staging/retrospective/NEE/2024-10-11",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -18.3,
+    "tr_1y": 4.5,
+    "tr_2y": 0.2,
+    "excess_6m": -11.0,
+    "excess_1y": -9.4,
+    "excess_2y": -36.7,
+    "avg_m12_m24": 5.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -576452,7 +578245,18 @@
    "cons_return_2yr": -9.6,
    "path": "staging/retrospective/NEE/2024-10-18",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -20.1,
+    "tr_1y": 2.8,
+    "tr_2y": 0.1,
+    "excess_6m": -10.8,
+    "excess_1y": -12.1,
+    "excess_2y": -33.0,
+    "avg_m12_m24": 2.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "NEE",
@@ -576471,7 +578275,18 @@
    "cons_return_2yr": -4.6,
    "path": "staging/retrospective/NEE/2024-10-24",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -18.6,
+    "tr_1y": 4.6,
+    "tr_2y": 4.8,
+    "excess_6m": -13.6,
+    "excess_1y": -13.6,
+    "excess_2y": -29.0,
+    "avg_m12_m24": 4.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -576490,7 +578305,18 @@
    "cons_return_2yr": 2.2,
    "path": "staging/retrospective/NEE/2024-11-01",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -13.2,
+    "tr_1y": 8.1,
+    "tr_2y": 14.2,
+    "excess_6m": -11.7,
+    "excess_1y": -12.6,
+    "excess_2y": -20.7,
+    "avg_m12_m24": 11.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -576509,7 +578335,18 @@
    "cons_return_2yr": 2.7,
    "path": "staging/retrospective/NEE/2024-11-08",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -9.8,
+    "tr_1y": 11.9,
+    "tr_2y": 19.0,
+    "excess_6m": -4.9,
+    "excess_1y": -1.5,
+    "excess_2y": -6.4,
+    "avg_m12_m24": 12.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -576528,7 +578365,18 @@
    "cons_return_2yr": 3.5,
    "path": "staging/retrospective/NEE/2024-11-15",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -0.9,
+    "tr_1y": 12.8,
+    "tr_2y": 17.6,
+    "excess_6m": -2.4,
+    "excess_1y": -3.2,
+    "excess_2y": -13.7,
+    "avg_m12_m24": 13.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -576547,7 +578395,18 @@
    "cons_return_2yr": 4.0,
    "path": "staging/retrospective/NEE/2024-11-22",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -11.2,
+    "tr_1y": 12.8,
+    "tr_2y": 15.2,
+    "excess_6m": -9.7,
+    "excess_1y": 0.9,
+    "excess_2y": -3.1,
+    "avg_m12_m24": 13.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "NEE",
@@ -576566,7 +578425,16 @@
    "cons_return_2yr": 0.5,
    "path": "staging/retrospective/NEE/2024-11-29",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -11.6,
+    "tr_1y": 12.6,
+    "excess_6m": -10.1,
+    "excess_1y": -2.1,
+    "avg_m12_m24": 9.8,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -576585,7 +578453,16 @@
    "cons_return_2yr": 5.1,
    "path": "staging/retrospective/NEE/2024-12-06",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -2.6,
+    "tr_1y": 13.5,
+    "excess_6m": -1.8,
+    "excess_1y": -0.5,
+    "avg_m12_m24": 14.9,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -576604,7 +578481,16 @@
    "cons_return_2yr": 7.4,
    "path": "staging/retrospective/NEE/2024-12-13",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 3.1,
+    "tr_1y": 14.0,
+    "excess_6m": 3.7,
+    "excess_1y": -0.0,
+    "avg_m12_m24": 17.6,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -576623,7 +578509,16 @@
    "cons_return_2yr": 10.3,
    "path": "staging/retrospective/NEE/2024-12-20",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 1.4,
+    "tr_1y": 14.1,
+    "excess_6m": 0.3,
+    "excess_1y": -2.2,
+    "avg_m12_m24": 21.0,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -576642,7 +578537,16 @@
    "cons_return_2yr": 9.6,
    "path": "staging/retrospective/NEE/2024-12-27",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -0.1,
+    "tr_1y": 14.7,
+    "excess_6m": -4.0,
+    "excess_1y": -2.6,
+    "avg_m12_m24": 20.4,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -576661,7 +578565,16 @@
    "cons_return_2yr": 9.8,
    "path": "staging/retrospective/NEE/2025-01-03",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 4.2,
+    "tr_1y": 15.6,
+    "excess_6m": -2.0,
+    "excess_1y": -1.1,
+    "avg_m12_m24": 20.7,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -576680,7 +578593,16 @@
    "cons_return_2yr": 17.3,
    "path": "staging/retrospective/NEE/2025-01-10",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 12.5,
+    "tr_1y": 21.9,
+    "excess_6m": 4.1,
+    "excess_1y": 1.1,
+    "avg_m12_m24": 29.2,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -576699,7 +578621,16 @@
    "cons_return_2yr": 11.7,
    "path": "staging/retrospective/NEE/2025-01-17",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 7.8,
+    "tr_1y": 21.4,
+    "excess_6m": 2.2,
+    "excess_1y": 4.4,
+    "avg_m12_m24": 23.2,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -576718,7 +578649,16 @@
    "cons_return_2yr": -1.6,
    "path": "staging/retrospective/NEE/2025-01-24",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 0.4,
+    "tr_1y": 19.6,
+    "excess_6m": -4.5,
+    "excess_1y": 5.0,
+    "avg_m12_m24": 19.8,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -576737,7 +578677,16 @@
    "cons_return_2yr": 0.1,
    "path": "staging/retrospective/NEE/2025-01-31",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 0.8,
+    "tr_1y": 26.0,
+    "excess_6m": -5.2,
+    "excess_1y": 9.8,
+    "avg_m12_m24": 21.9,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -576756,7 +578705,16 @@
    "cons_return_2yr": 4.9,
    "path": "staging/retrospective/NEE/2025-02-07",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 8.0,
+    "tr_1y": 34.4,
+    "excess_6m": 2.2,
+    "excess_1y": 18.2,
+    "avg_m12_m24": 27.7,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -576775,7 +578733,16 @@
    "cons_return_2yr": 5.9,
    "path": "staging/retrospective/NEE/2025-02-14",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 7.8,
+    "tr_1y": 41.2,
+    "excess_6m": 1.5,
+    "excess_1y": 28.1,
+    "avg_m12_m24": 28.0,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -576794,7 +578761,16 @@
    "cons_return_2yr": 0.7,
    "path": "staging/retrospective/NEE/2025-02-21",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 7.9,
+    "tr_1y": 31.9,
+    "excess_6m": 1.4,
+    "excess_1y": 15.8,
+    "avg_m12_m24": 21.5,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -576813,7 +578789,16 @@
    "cons_return_2yr": 2.7,
    "path": "staging/retrospective/NEE/2025-02-28",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 4.4,
+    "tr_1y": 36.9,
+    "excess_6m": -5.4,
+    "excess_1y": 20.3,
+    "avg_m12_m24": 23.7,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -576832,7 +578817,16 @@
    "cons_return_2yr": 3.6,
    "path": "staging/retrospective/NEE/2025-03-07",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -1.1,
+    "tr_1y": 28.2,
+    "excess_6m": -14.1,
+    "excess_1y": 10.2,
+    "avg_m12_m24": 19.0,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -576851,7 +578845,16 @@
    "cons_return_2yr": 2.6,
    "path": "staging/retrospective/NEE/2025-03-14",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -1.1,
+    "tr_1y": 29.3,
+    "excess_6m": -18.5,
+    "excess_1y": 10.3,
+    "avg_m12_m24": 17.6,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -576870,7 +578873,16 @@
    "cons_return_2yr": 6.4,
    "path": "staging/retrospective/NEE/2025-03-21",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 1.9,
+    "tr_1y": 29.5,
+    "excess_6m": -16.4,
+    "excess_1y": 13.2,
+    "avg_m12_m24": 21.9,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -576889,7 +578901,16 @@
    "cons_return_2yr": 7.1,
    "path": "staging/retrospective/NEE/2025-03-28",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 9.3,
+    "tr_1y": 33.0,
+    "excess_6m": -10.5,
+    "excess_1y": 17.6,
+    "avg_m12_m24": 22.4,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -576908,7 +578929,16 @@
    "cons_return_2yr": 12.8,
    "path": "staging/retrospective/NEE/2025-04-04",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 21.3,
+    "tr_1y": 42.7,
+    "excess_6m": -11.8,
+    "excess_1y": 11.4,
+    "avg_m12_m24": 28.6,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -576927,7 +578957,16 @@
    "cons_return_2yr": 14.6,
    "path": "staging/retrospective/NEE/2025-04-11",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 28.4,
+    "tr_1y": 46.5,
+    "excess_6m": 5.4,
+    "excess_1y": 17.9,
+    "avg_m12_m24": 30.4,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -576946,7 +578985,16 @@
    "cons_return_2yr": 13.8,
    "path": "staging/retrospective/NEE/2025-04-17",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 29.2,
+    "tr_1y": 42.2,
+    "excess_6m": 2.3,
+    "excess_1y": 5.9,
+    "avg_m12_m24": 29.2,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -576965,7 +579013,16 @@
    "cons_return_2yr": 26.0,
    "path": "staging/retrospective/NEE/2025-04-24",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 28.9,
+    "tr_1y": 47.1,
+    "excess_6m": 4.4,
+    "excess_1y": 15.2,
+    "avg_m12_m24": 28.7,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -576984,7 +579041,16 @@
    "cons_return_2yr": 24.6,
    "path": "staging/retrospective/NEE/2025-05-02",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 23.0,
+    "tr_1y": 48.0,
+    "excess_6m": 2.0,
+    "excess_1y": 19.5,
+    "avg_m12_m24": 26.8,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577003,7 +579069,16 @@
    "cons_return_2yr": 18.9,
    "path": "staging/retrospective/NEE/2025-05-09",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 21.0,
+    "tr_1y": 35.7,
+    "excess_6m": 1.5,
+    "excess_1y": 3.7,
+    "avg_m12_m24": 20.5,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577022,7 +579097,16 @@
    "cons_return_2yr": 11.5,
    "path": "staging/retrospective/NEE/2025-05-16",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 13.4,
+    "tr_1y": 27.6,
+    "excess_6m": -0.3,
+    "excess_1y": 1.9,
+    "avg_m12_m24": 12.4,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577041,7 +579125,16 @@
    "cons_return_2yr": 23.4,
    "path": "staging/retrospective/NEE/2025-05-23",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 25.7,
+    "tr_1y": 34.1,
+    "excess_6m": 11.3,
+    "excess_1y": 4.1,
+    "avg_m12_m24": 24.2,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577060,7 +579153,16 @@
    "cons_return_2yr": 18.4,
    "path": "staging/retrospective/NEE/2025-05-30",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 24.6,
+    "tr_1y": 26.5,
+    "excess_6m": 8.0,
+    "excess_1y": -3.1,
+    "avg_m12_m24": 19.0,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577079,7 +579181,16 @@
    "cons_return_2yr": 15.9,
    "path": "staging/retrospective/NEE/2025-06-06",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 16.8,
+    "tr_1y": 22.3,
+    "excess_6m": 1.7,
+    "excess_1y": -2.1,
+    "avg_m12_m24": 16.4,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577098,7 +579209,16 @@
    "cons_return_2yr": 11.8,
    "path": "staging/retrospective/NEE/2025-06-13",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 10.7,
+    "tr_1y": 18.2,
+    "excess_6m": -4.1,
+    "excess_1y": -7.3,
+    "avg_m12_m24": 12.3,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577117,7 +579237,16 @@
    "cons_return_2yr": 16.9,
    "path": "staging/retrospective/NEE/2025-06-20",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 12.8,
+    "tr_1y": 24.6,
+    "excess_6m": -2.4,
+    "excess_1y": -2.3,
+    "avg_m12_m24": 17.2,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577136,7 +579265,16 @@
    "cons_return_2yr": 17.9,
    "path": "staging/retrospective/NEE/2025-06-27",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 15.0,
+    "tr_1y": 28.3,
+    "excess_6m": 2.1,
+    "excess_1y": 8.5,
+    "avg_m12_m24": 18.1,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577155,7 +579293,16 @@
    "cons_return_2yr": 13.2,
    "path": "staging/retrospective/NEE/2025-07-03",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 11.1,
+    "tr_1y": 22.8,
+    "excess_6m": 1.2,
+    "excess_1y": 2.5,
+    "avg_m12_m24": 13.1,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577174,7 +579321,16 @@
    "cons_return_2yr": 12.4,
    "path": "staging/retrospective/NEE/2025-07-11",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 8.9,
+    "tr_1y": 21.4,
+    "excess_6m": -3.0,
+    "excess_1y": -0.8,
+    "avg_m12_m24": 12.0,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577193,7 +579349,16 @@
    "cons_return_2yr": 10.1,
    "path": "staging/retrospective/NEE/2025-07-18",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 11.6,
+    "tr_1y": 20.1,
+    "excess_6m": 0.8,
+    "excess_1y": 0.4,
+    "avg_m12_m24": 9.3,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577212,7 +579377,16 @@
    "cons_return_2yr": 19.1,
    "path": "staging/retrospective/NEE/2025-07-24",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 19.4,
+    "tr_1y": 28.1,
+    "excess_6m": 10.2,
+    "excess_1y": 10.4,
+    "avg_m12_m24": 14.9,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577231,7 +579405,16 @@
    "cons_return_2yr": 21.8,
    "path": "staging/retrospective/NEE/2025-08-01",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 26.5,
+    "tr_1y": 26.8,
+    "excess_6m": 14.6,
+    "excess_1y": 5.5,
+    "avg_m12_m24": 17.0,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577250,7 +579433,16 @@
    "cons_return_2yr": 18.4,
    "path": "staging/retrospective/NEE/2025-08-08",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 25.1,
+    "tr_1y": 20.2,
+    "excess_6m": 16.1,
+    "excess_1y": -2.3,
+    "avg_m12_m24": 13.4,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577269,7 +579461,16 @@
    "cons_return_2yr": 13.7,
    "path": "staging/retrospective/NEE/2025-08-15",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 25.9,
+    "tr_1y": 17.5,
+    "excess_6m": 19.3,
+    "excess_1y": -4.4,
+    "avg_m12_m24": 8.6,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577288,7 +579489,16 @@
    "cons_return_2yr": 12.3,
    "path": "staging/retrospective/NEE/2025-08-22",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 22.3,
+    "tr_1y": 12.7,
+    "excess_6m": 14.8,
+    "excess_1y": -7.1,
+    "avg_m12_m24": 7.0,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577307,7 +579517,16 @@
    "cons_return_2yr": 19.0,
    "path": "staging/retrospective/NEE/2025-08-29",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 31.8,
+    "tr_1y": 17.0,
+    "excess_6m": 24.9,
+    "excess_1y": -3.5,
+    "avg_m12_m24": 13.1,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577326,7 +579545,16 @@
    "cons_return_2yr": 20.9,
    "path": "staging/retrospective/NEE/2025-09-05",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 30.2,
+    "tr_1y": 21.1,
+    "excess_6m": 24.4,
+    "excess_1y": 0.9,
+    "avg_m12_m24": 14.7,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577345,7 +579573,16 @@
    "cons_return_2yr": 19.7,
    "path": "staging/retrospective/NEE/2025-09-12",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 29.7,
+    "tr_1y": 18.3,
+    "excess_6m": 27.8,
+    "excess_1y": 0.9,
+    "avg_m12_m24": 13.4,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577364,7 +579601,16 @@
    "cons_return_2yr": 20.6,
    "path": "staging/retrospective/NEE/2025-09-19",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 31.7,
+    "tr_1y": 16.6,
+    "excess_6m": 32.0,
+    "excess_1y": 0.7,
+    "avg_m12_m24": 14.3,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577383,7 +579629,16 @@
    "cons_return_2yr": 13.0,
    "path": "staging/retrospective/NEE/2025-09-26",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 21.8,
+    "tr_1y": 3.5,
+    "excess_6m": 23.7,
+    "excess_1y": -14.2,
+    "avg_m12_m24": 7.7,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577402,7 +579657,16 @@
    "cons_return_2yr": 7.1,
    "path": "staging/retrospective/NEE/2025-10-03",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 17.8,
+    "tr_1y": -1.0,
+    "excess_6m": 19.3,
+    "excess_1y": -17.1,
+    "avg_m12_m24": 2.9,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577421,7 +579685,16 @@
    "cons_return_2yr": 2.8,
    "path": "staging/retrospective/NEE/2025-10-10",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 14.3,
+    "tr_1y": -4.2,
+    "excess_6m": 9.7,
+    "excess_1y": -24.6,
+    "avg_m12_m24": -0.2,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577440,7 +579713,16 @@
    "cons_return_2yr": 1.4,
    "path": "staging/retrospective/NEE/2025-10-17",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 10.2,
+    "tr_1y": -2.7,
+    "excess_6m": 2.8,
+    "excess_1y": -18.7,
+    "avg_m12_m24": -0.7,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577459,7 +579741,16 @@
    "cons_return_2yr": 1.6,
    "path": "staging/retrospective/NEE/2025-10-24",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 14.3,
+    "tr_1y": 0.1,
+    "excess_6m": 8.3,
+    "excess_1y": -13.2,
+    "avg_m12_m24": 0.4,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577478,7 +579769,16 @@
    "cons_return_2yr": -4.4,
    "path": "staging/retrospective/NEE/2025-10-29",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 16.6,
+    "tr_1y": 3.4,
+    "excess_6m": 12.6,
+    "excess_1y": -9.6,
+    "avg_m12_m24": 4.4,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577497,7 +579797,16 @@
    "cons_return_2yr": -6.9,
    "path": "staging/retrospective/NEE/2025-11-07",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 12.6,
+    "tr_1y": 6.5,
+    "excess_6m": 3.0,
+    "excess_1y": -4.2,
+    "avg_m12_m24": 1.3,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577516,7 +579825,16 @@
    "cons_return_2yr": -6.8,
    "path": "staging/retrospective/NEE/2025-11-14",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 15.5,
+    "tr_1y": 4.4,
+    "excess_6m": 3.6,
+    "excess_1y": -9.0,
+    "avg_m12_m24": 0.8,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577535,7 +579853,16 @@
    "cons_return_2yr": -6.3,
    "path": "staging/retrospective/NEE/2025-11-21",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 8.2,
+    "tr_1y": 2.2,
+    "excess_6m": -5.1,
+    "excess_1y": -3.6,
+    "avg_m12_m24": 1.5,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577554,7 +579881,14 @@
    "cons_return_2yr": -9.4,
    "path": "staging/retrospective/NEE/2025-11-28",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 1.8,
+    "excess_6m": -9.1,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577573,7 +579907,14 @@
    "cons_return_2yr": -6.0,
    "path": "staging/retrospective/NEE/2025-12-05",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 4.8,
+    "excess_6m": -3.4,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577592,7 +579933,14 @@
    "cons_return_2yr": -4.2,
    "path": "staging/retrospective/NEE/2025-12-12",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 6.8,
+    "excess_6m": -2.5,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577611,7 +579959,14 @@
    "cons_return_2yr": -1.7,
    "path": "staging/retrospective/NEE/2025-12-19",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 10.6,
+    "excess_6m": 0.4,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577630,7 +579985,14 @@
    "cons_return_2yr": -2.8,
    "path": "staging/retrospective/NEE/2025-12-26",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 11.7,
+    "excess_6m": 5.5,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577649,7 +580011,14 @@
    "cons_return_2yr": -3.4,
    "path": "staging/retrospective/NEE/2026-01-02",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 10.7,
+    "excess_6m": 1.1,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577668,7 +580037,14 @@
    "cons_return_2yr": -2.1,
    "path": "staging/retrospective/NEE/2026-01-09",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 10.6,
+    "excess_6m": 1.7,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577687,7 +580063,14 @@
    "cons_return_2yr": -6.5,
    "path": "staging/retrospective/NEE/2026-01-16",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 8.3,
+    "excess_6m": -0.7,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577706,7 +580089,14 @@
    "cons_return_2yr": -7.8,
    "path": "staging/retrospective/NEE/2026-01-23",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 7.3,
+    "excess_6m": -0.3,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577725,7 +580115,14 @@
    "cons_return_2yr": 19.6,
    "path": "staging/retrospective/NEE/2026-01-28",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 3.4,
+    "excess_6m": -3.7,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577744,7 +580141,14 @@
    "cons_return_2yr": 17.1,
    "path": "staging/retrospective/NEE/2026-02-06",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -4.1,
+    "excess_6m": -15.9,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577763,7 +580167,14 @@
    "cons_return_2yr": 11.7,
    "path": "staging/retrospective/NEE/2026-02-13",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -7.0,
+    "excess_6m": -21.6,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577782,7 +580193,14 @@
    "cons_return_2yr": 14.4,
    "path": "staging/retrospective/NEE/2026-02-20",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -6.4,
+    "excess_6m": -17.6,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577801,7 +580219,14 @@
    "cons_return_2yr": 12.4,
    "path": "staging/retrospective/NEE/2026-02-27",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -10.3,
+    "excess_6m": -23.3,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577820,7 +580245,14 @@
    "cons_return_2yr": 15.8,
    "path": "staging/retrospective/NEE/2026-03-06",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -7.0,
+    "excess_6m": -22.1,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577839,7 +580271,14 @@
    "cons_return_2yr": 13.6,
    "path": "staging/retrospective/NEE/2026-03-13",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -9.9,
+    "excess_6m": -25.9,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577858,7 +580297,14 @@
    "cons_return_2yr": 17.8,
    "path": "staging/retrospective/NEE/2026-03-20",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -8.7,
+    "excess_6m": -26.7,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577877,7 +580323,14 @@
    "cons_return_2yr": 15.3,
    "path": "staging/retrospective/NEE/2026-03-27",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -15.4,
+    "excess_6m": -37.6,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577896,7 +580349,14 @@
    "cons_return_2yr": 13.2,
    "path": "staging/retrospective/NEE/2026-04-02",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -16.2,
+    "excess_6m": -34.1,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577915,7 +580375,14 @@
    "cons_return_2yr": 12.1,
    "path": "staging/retrospective/NEE/2026-04-10",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -16.4,
+    "excess_6m": -31.6,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577934,7 +580401,14 @@
    "cons_return_2yr": 14.6,
    "path": "staging/retrospective/NEE/2026-04-17",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -11.9,
+    "excess_6m": -19.9,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577953,7 +580427,14 @@
    "cons_return_2yr": -12.0,
    "path": "staging/retrospective/NEE/2026-04-24",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -12.5,
+    "excess_6m": -19.5,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577972,7 +580453,14 @@
    "cons_return_2yr": -13.5,
    "path": "staging/retrospective/NEE/2026-05-01",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -12.4,
+    "excess_6m": -17.8,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -577991,7 +580479,14 @@
    "cons_return_2yr": -9.9,
    "path": "staging/retrospective/NEE/2026-05-08",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -5.3,
+    "excess_6m": -5.5,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -578010,7 +580505,14 @@
    "cons_return_2yr": -10.2,
    "path": "staging/retrospective/NEE/2026-05-15",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -7.5,
+    "excess_6m": -10.1,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -578029,7 +580531,14 @@
    "cons_return_2yr": -5.3,
    "path": "staging/retrospective/NEE/2026-05-22",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -4.4,
+    "excess_6m": 2.6,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -578048,7 +580557,12 @@
    "cons_return_2yr": -3.6,
    "path": "staging/retrospective/NEE/2026-05-29",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -578067,7 +580581,12 @@
    "cons_return_2yr": -2.3,
    "path": "staging/retrospective/NEE/2026-06-05",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -578086,7 +580605,12 @@
    "cons_return_2yr": 1.7,
    "path": "staging/retrospective/NEE/2026-06-12",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -578105,7 +580629,12 @@
    "cons_return_2yr": 0.8,
    "path": "staging/retrospective/NEE/2026-06-18",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -578124,7 +580653,12 @@
    "cons_return_2yr": -1.3,
    "path": "staging/retrospective/NEE/2026-06-26",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -578143,7 +580677,12 @@
    "cons_return_2yr": -1.0,
    "path": "staging/retrospective/NEE/2026-07-02",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -578162,7 +580701,12 @@
    "cons_return_2yr": -0.6,
    "path": "staging/retrospective/NEE/2026-07-10",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -578181,7 +580725,12 @@
    "cons_return_2yr": -1.5,
    "path": "staging/retrospective/NEE/2026-07-17",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -578200,7 +580749,12 @@
    "cons_return_2yr": 6.6,
    "path": "staging/retrospective/NEE/2026-07-24",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -578219,7 +580773,12 @@
    "cons_return_2yr": 10.1,
    "path": "staging/retrospective/NEE/2026-07-31",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -578238,7 +580797,12 @@
    "cons_return_2yr": 13.0,
    "path": "staging/retrospective/NEE/2026-08-07",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -578257,7 +580821,12 @@
    "cons_return_2yr": 11.0,
    "path": "staging/retrospective/NEE/2026-08-14",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -578276,7 +580845,12 @@
    "cons_return_2yr": 14.4,
    "path": "staging/retrospective/NEE/2026-08-21",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -578295,7 +580869,12 @@
    "cons_return_2yr": 16.9,
    "path": "staging/retrospective/NEE/2026-08-28",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -578314,7 +580893,12 @@
    "cons_return_2yr": 14.7,
    "path": "staging/retrospective/NEE/2026-09-04",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -578333,7 +580917,12 @@
    "cons_return_2yr": 16.3,
    "path": "staging/retrospective/NEE/2026-09-11",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -578352,7 +580941,12 @@
    "cons_return_2yr": 18.9,
    "path": "staging/retrospective/NEE/2026-09-18",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -578371,7 +580965,12 @@
    "cons_return_2yr": 25.8,
    "path": "staging/retrospective/NEE/2026-09-25",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -578390,7 +580989,12 @@
    "cons_return_2yr": 24.6,
    "path": "staging/retrospective/NEE/2026-10-02",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -578409,7 +581013,12 @@
    "cons_return_2yr": 23.7,
    "path": "staging/retrospective/NEE/2026-10-09",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -578428,7 +581037,12 @@
    "cons_return_2yr": 19.9,
    "path": "staging/retrospective/NEE/2026-10-16",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -578447,7 +581061,12 @@
    "cons_return_2yr": -1.1,
    "path": "staging/retrospective/NEE/2026-10-22",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -578466,7 +581085,12 @@
    "cons_return_2yr": 0.7,
    "path": "staging/retrospective/NEE/2026-10-30",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -578485,7 +581109,12 @@
    "cons_return_2yr": -3.0,
    "path": "staging/retrospective/NEE/2026-11-06",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -578504,7 +581133,12 @@
    "cons_return_2yr": -0.9,
    "path": "staging/retrospective/NEE/2026-11-13",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NEE",
@@ -578523,7 +581157,12 @@
    "cons_return_2yr": 1.1,
    "path": "staging/retrospective/NEE/2026-11-20",
    "generated": "2026-11-27",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "avg_m12_m24": null,
+    "scenario_landing_2y": null,
+    "call_hit_2y": null
+   }
   },
   {
    "ticker": "NKE",
