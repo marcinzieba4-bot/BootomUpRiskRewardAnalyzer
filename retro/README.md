@@ -29105,6 +29105,13 @@ Controls and checks (before any outcome):
   four "Ks" of "10-Ks".
 - **Regression:** the shared code is untouched (the firewall tool gains an NEM entry, `taxonomy_eras.json` the three terms); rebuilding
   the 2008-2009 dates of MU and NEE changes nothing.
+- **Firewall** (run after the build, validation outputs and README section were committed and pushed, before any outcome): it passes at
+  all 11 cutoffs above (2008-01-11, every print and vintage date of the range, and 2010-01-01: 1 to 105 dates each), 0 files changed and
+  no planted text. The plants: a print with absurd ounces, unit costs, revenue, margins, EPS, notes and raw figures; a later vintage whose
+  texts, figures, window start and exclusions are planted; a later display-only outlook for every guided year; a dividend, a listing, a
+  company name and prices from the cutoff multiplied by 10. As positive controls, a planted print dated 2008-07-01 with its own source
+  reaches 2008-07-03 (its text in the model) and not 2008-06-27; the same print citing a source published after AS_OF stops at the
+  builder's check that every source is public on AS_OF.
 
 Seen in the build (method behaviour, not tuned). Newmont's GAAP EPS was low against its price in 2002-2006 (P/Es of 26-100x), so the
 stock's own window has a median of 42-47x, and every anchor reads below it:
