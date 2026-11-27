@@ -27,7 +27,7 @@ except 1999 and 2000 at the company's figures excluding only one-offs (the FY200
 ACN and JPM FY2017 rules); from 2001 the company's figures also exclude the recurring mark-to-market item, so GAAP stands. A Q4
 release comes weeks before its 10-K, so a Q4 print carries the year's actuals (fy_actual) until the 10-K. No disruption theme in
 taxonomy_eras.json is live for an electric utility in 2008-2009 (ENERGY_TRANSITION from 2015-12-12), so the watch list is empty
-and the builder refuses events, and any date from that live date, until a theme encoding is decided.
+and the builder refuses events until an encoding is decided.
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
 is the first trading day after it. Every release came before the open; those of 2007-2009 on a weekday with a next trading day in its
@@ -38,6 +38,12 @@ NEE 2010-2013 (retro/README.md): the change of name to NextEra Energy, Inc. appl
 vintage carries it ('company_names'), and NYSE: NEE from its announced effective date, 2010-06-23 ('listings', the SPGI encoding);
 from CLOUD's live date (2012-10-30) the 'why' quotes every live theme's registered scope (the UNH and CB wording), none of which names
 an electric utility; the Q1 2013 release's EPS includes a gain from discontinued operations, kept as published (its note says so).
+
+NEE 2014-2017 (retro/README.md): from ENERGY_TRANSITION's live date (2015-12-12) the FY2014-FY2016 10-Ks' own words on NEER's oil
+and gas production assets and the greenhouse gas limits put the theme on the watch list, company-acknowledged, with no market read (the
+XOM and SO rule; 'reserves_quote', 'transition_quote'); no factor pair, so only text changes. A vintage's 'franchise_note' says where
+the franchise line's FPL figures come from when its 10-K no longer tabulates them (FY2016). Three releases came on a Friday (2014-10-31,
+2017-01-27, 2017-04-21) and date their own weeks.
 
 Output goes to staging/retrospective/NEE until the series is added to the archive (--out archive/retrospective/NEE).
 
@@ -131,8 +137,6 @@ def build(as_of, facts, raw, spx, engine, out):
     if as_of not in raw:
         sys.exit(f"{as_of} is not a trading day")
     et = retro_tool.load_taxonomy()["themes"]["ENERGY_TRANSITION"]
-    if as_of >= et["live_from"]:
-        sys.exit(f"{as_of}: ENERGY_TRANSITION is live from {et['live_from']}; decide its encoding for FPL Group first")
     chart = retro_tool.chart(SYMBOL)
     off = chart["meta"]["gmtoffset"]
     ydate = lambda v: dt.datetime.fromtimestamp(v["date"] + off, dt.timezone.utc).date().isoformat()
@@ -260,7 +264,29 @@ def build(as_of, facts, raw, spx, engine, out):
     sig_name, trigger = "Disruption theme: none live for a utility", "No disruption theme is live for an electric utility"
     theme_summary = "no disruption theme is live for an electric utility on this date"
     live = sorted(((t["live_from"], k, t["scope"]) for k, t in retro_tool.load_taxonomy()["themes"].items() if t["live_from"] <= as_of))
-    if [k for _, k, _ in live] == ["OFFSHORE"]:
+    if et["live_from"] <= as_of:
+        # ENERGY_TRANSITION is live from 2015-12-12 and scoped to oil, gas and coal reserves and refining; NextEra Energy's FY2014-FY2016
+        # 10-Ks say NEER holds oil and gas production assets, and their greenhouse gas risk factor puts the theme on the watch list (the
+        # XOM and SO rule: company-acknowledged, no market read). No factor pair is added, so only text changes; re-filing needs dated
+        # evidence of market pricing for NextEra Energy (retro/README.md, "NEE 2014-2017"). Dates before the live date keep the text below
+        assert h.get("transition_quote") and h.get("reserves_quote"), (as_of, "the vintage needs its own 10-K words for the watch list")
+        val_word = ("a premium" if pe_now_pctl >= 70 else "a discount to its own history" if pe_now_pctl <= 30 else "near its own median")
+        stage = "transition"
+        watch = [{"theme": "ENERGY_TRANSITION", "status": "live, company-acknowledged; no market read",
+                  "reason": (f"Live: NextEra Energy's own FY20{h['fy_label'][2:]} 10-K says '{h['reserves_quote']}' and, of greenhouse "
+                             f"gas limits on its fossil-fuelled units, '{h['transition_quote']}' The stock trades at {close / eps_now:.1f}x "
+                             f"{fy_e_s} — {val_word}. Re-file as DISRUPTION_EXPOSED (ENERGY_TRANSITION) only if dated evidence shows the "
+                             "market pricing decarbonisation of NextEra Energy's gas reserves and fossil units specifically.")}]
+        sig_name = "Energy transition: GHG limits on gas reserves and fossil units"
+        trigger = "Greenhouse gas limits strand NEER's oil and gas production assets and fossil units faster than rates and contracts recover them"
+        theme_summary = "the energy transition is live and company-acknowledged; no dated evidence ties the multiple to it"
+        others = [(lf, k, sc) for lf, k, sc in live if k != "ENERGY_TRANSITION"]
+        scopes = ", ".join(f"{k} {'is scoped to' if i == 0 else 'to'} '{sc}'" for i, (_, k, sc) in enumerate(others))
+        why = h["why"] + (f"; ENERGY_TRANSITION is live (from {et['live_from']}, scoped to '{et['scope']}'): NEER holds oil and gas "
+                          "production assets and the greenhouse gas risk factor puts the theme on the watch list, company-acknowledged, "
+                          "with no dated evidence that the market prices it for NextEra Energy (the XOM and SO rule); of the other live "
+                          f"themes, {scopes}: none names an electric utility")
+    elif [k for _, k, _ in live] == ["OFFSHORE"]:
         why = h["why"] + ("; no disruption theme in the registry is live for an electric utility on this date, so the watch list is empty and "
                           "the 10-K's words on climate change stay here (the PEP obesity rule)")
     else:   # from CLOUD's 2012-10-30: every live theme with its registered scope (the UNH and CB 2014-2017 wording; NEE 2010-2013)
@@ -389,7 +415,7 @@ SHARES_DIL_B    = {latest["diluted_shares_m"] / 1000:.4f}   # {dil_note}
 GROUPS          = {R([tuple(g_) for g_ in h["groups"]])}
 GROUPS_BASIS    = {R(h["groups_basis"])}
 NEXT_PRINT      = {R(latest["next_print"])}
-SHARE_GAIN_TEXT = {R(f"Franchise: {h['fy_label']} revenue {h['prev_fy_sales_growth']:+.1f}%, FPL energy sales {h['prev_fy_kwh_pct']:+.1f}%, FPL net income {h['prev_fy_seg_pct']:+.1f}%, FPL customer accounts {h['prev_fy_customers_pct']:+.1f}%; {latest['quarter']} operating margin {latest['margin']:.1f}% ({latest['margin_bp']:+.1f}bp)")}
+SHARE_GAIN_TEXT = {R(f"Franchise: {h['fy_label']} revenue {h['prev_fy_sales_growth']:+.1f}%, FPL energy sales {h['prev_fy_kwh_pct']:+.1f}%, FPL net income {h['prev_fy_seg_pct']:+.1f}%, FPL customer accounts {h['prev_fy_customers_pct']:+.1f}%{(' (' + h['franchise_note'] + ')') if h.get('franchise_note') else ''}; {latest['quarter']} operating margin {latest['margin']:.1f}% ({latest['margin_bp']:+.1f}bp)")}
 BALANCE_TEXT    = {R(f"{h['fy_label']} year-end cash ${h['cash_b']:.3f}B, {h['fcf_label']} free cash flow ${h['fcf_b']:.2f}B ({h['fcf_note']}), dividend ${dividend:.2f} a year, {h['cash_return_text']}")}
 VOLUMES_TEXT    = {R(volumes)}
 CAPITAL_RETURN  = {R(h["cash_return_text"])}
