@@ -30155,8 +30155,8 @@ Seen in the build (method behaviour, not tuned):
   then FY25's $36.21): the 0th-28th percentile of the window on every date.
 - **BASE** is the latest quarter's revenue growth plus the buyback: +3.1% to +9.2% in 2022, +0.2% to +3.5% in 2023-2025, -2.3% to -1.0% in
   2026 to the Q3 2026 print, then +9.1% with Cox in the actual figures.
-- **The EPP floor's panic multiple** (the median of the calendar-year P/E lows) falls from 38-24x to 10x as the low years of 2022-2026 join
-  the window.
+- **The EPP floor's panic multiple** (the median of the calendar-year P/E lows) falls to 10x by 2026-11-20 (the median of 2018's 50.0x
+  to 2026's 2.8x) as the low years of 2022-2026 join the window.
 
 Sensitivity (each call changed alone, the 255 dates rebuilt and classified offline with `retro_tool`'s classifier; no outcome consulted;
 `sens_chtr_2226.py`): **no tested encoding moves a class.** Every signal at its BEAR value 0, at XBULL 0; no net buyback 0; FY2017 kept at
