@@ -29368,6 +29368,133 @@ Judgement calls that could carry hindsight:
 
 The hindsight results are in `staging/retrospective/LYB/FINDINGS.md`: hypotheses, never inputs.
 
+### LYB 2014-2017: four more vintages, GAAP through the LCM charges, five dividend increases, the repurchase authorities, ENERGY_TRANSITION on the watch list
+
+209 weekly dates, 2014-01-03 to 2017-12-29, on the same fact sheet, generator, builder, engine and method (r2), with the rule-T thresholds
+of 2012-02-10 frozen. Built on 2026-11-27 at the owner's request ("do retrospective analysis for LYB, 2014-2017, same rules as before"), in
+a new session that did not open the 2012-2013 outcomes, `SERIES.md` or `FINDINGS.md`; every decision below applies a rule that existed
+before (the house rules and the 2012-2013 encodings) or is disclosed as new.
+
+```bash
+python3 retro/tools/edgar.py fetch 1489393 <dir> --from 2010-04-01 --to 2017-12-31 --forms 10-K 10-Q 8-K 8-K/A 10-12B 10-12B/A
+python3 -I retro/generators/lyb/gen_lyb.py --filings <dir>                  # 25 prints, 7 vintages, 9 dividends, 5 repurchase authorities
+python3 -I retro/tools/verbatim.py <dir>/checklist_lyb.json                 # 383/383
+python3 retro/build_lyb.py --weekly 2012-02-06 2013-12-31                   # regression: the 100 earlier models byte for byte
+python3 retro/build_lyb.py --weekly 2014-01-01 2017-12-31                   # 209 dates, 2014-01-03 .. 2017-12-29
+python3 retro/generators/lyb/controls_lyb.py 2014-01-01 2017-12-31          # 57 controls
+python3 retro/generators/lyb/sens_lyb.py <scratch> 2014-01-01 2017-12-31    # the sensitivity below
+for c in <each fact date of 2014-2017 and the day after it, 2015-12-12, 2018-01-01>; do   # 50 cutoffs
+  python3 retro/tools/firewall.py $c LYB; done
+```
+
+**A full-data batch.** `www.sec.gov` again served every filing document to the plain client name of `edgar.py` (no contact address;
+the owner's email was not used). Read by the session's model directly: the sixteen earnings releases from Q4 2013 to Q3 2017 (Table 1,
+the segment reconciliation, the income statement table, the charges table, the outlook and the capital-return text), the FY2013-FY2016
+10-Ks (Item 6, the EPS note, the statements of income and cash flows, the segment note, Item 1's segment descriptions, the risk factors,
+the MD&A overview's dividend line), the 10-Qs of 2014-2017 (searched for each dividend rate), and every other 8-K of November 2013 to
+December 2017 by its item text and exhibits. The generator keeps its 2012-2013 code unchanged and adds a parser for the releases' new
+layout (from Q1 2014 the segment reconciliation is Table 7, the income statement Table 10 and the charges Table 11, found by title; the
+segment names are matched with their dashes normalized); the regenerated sheet's 2012-2013 facts are identical. Sources `LB4`-`LB7` (the
+10-Ks), `LB40`-`LB55` (the releases), `LB31`-`LB34` (the annual meetings' 8-Ks).
+
+- **No guide in numbers, again.** Every release's "OUTLOOK" is the chief executive's words (industry conditions, maintenance, seasonal
+  effects); no 10-Q, 10-K or other 8-K guides revenue, EPS or a margin. So the last full year's GAAP EPS stands (FY12's $4.96 to the Q4
+  2013 print, then $6.76, $8.00, $9.60, $9.15), BASE is the latest quarter's revenue growth as reported plus the buyback, and there is no
+  margin step.
+- **EPS: GAAP diluted from continuing operations, each year from the latest filing that reports it** (FY13 $6.76, FY14 $8.00, FY15 $9.60,
+  FY16 $9.15; the 10-Ks' Item 6 restates nothing). From Q4 2014 Table 1 adds an "Excluding LCM Impact" block (FY14 $8.92, FY15 $10.35,
+  FY16 $9.20): it removes the lower of cost or market inventory adjustments, which recur (in nine of the twelve quarters from Q3 2014 to
+  Q2 2017, both ways), so it is not a figure excluding only one-offs (the NKE FY2007, AVGO, PFE and V rule, as for 2011-2013's adjusted
+  EPS). No release republishes a year on a new basis, so no `restates`.
+- **The one-off test, every year kept.** Each Q4 release's charges table, "After-tax effect of net charges" for the year, against net
+  income attributable to the Company: FY2013 $5M against $3,857M (the Q4 2013 release's Table 2), FY2014 $431M against $4,174M, FY2015 $373M
+  against $4,476M, FY2016 $51M against $3,836M. All are net charges, so the mirror test does not arise. FY2013's $353M release of French
+  valuation allowances (a tax benefit, the 10-K's Item 6 note) is not in the release's table; against $3,857M it meets neither test.
+- **Release timing.** The Q4 2013 8-K was accepted on Friday 2014-01-31 at 10:13 ET, during the session: the week has no trading day
+  after it, so that Friday meets it (the Q4 2011 rule, "released during the session"). The Friday releases of 2014-2017 (Q2 and Q3 2014,
+  Q1 and Q3 2015, Q1 and Q2 2016, Q4 2016, Q1-Q3 2017) were accepted before the open and date their own Fridays; the Tuesday releases
+  (Q1 2014, Q4 2014, Q2 2015, Q4 2015, Q3 2016) date the next trading day. The 10-Ks are dated 2014-02-20 (14:15 ET), 2015-02-18 (accepted
+  2015-02-17 17:12 ET), 2016-02-17 (accepted 2016-02-16 16:21 ET) and 2017-02-17 (13:01 ET).
+- **History.** Each vintage takes Item 6's five years from its own 10-K (from continuing operations) and earlier years from the latest
+  earlier vintage, the ten fiscal years to the latest one (2006 leaves with the FY2016 10-K). 2010 stays the FY2012 10-K's combined
+  $38,939M: the FY2013 and FY2014 10-Ks show its two periods, whose sum the generator asserts equal to it, and no later 10-K prints the
+  combined year. Diluted shares from each EPS note (570M, 521M, 466M, 420M); the net buyback, measured from the Successor's 2010 count,
+  reads as dilution to the FY2013 10-K (-1.1%/yr, then -0.4%/yr) and as a buyback from it (+2.0%/yr, +3.9%/yr, +5.0%/yr in BASE).
+- **Dividends:** each interim rate from the first filing that states it, all releases: $0.60 (Q4 2013, 2014-01-31: "Increased interim
+  dividend by 20 percent to $0.60 per share"), $0.70 (Q1 2014), $0.78 (Q2 2015: "78 cents per share"), $0.85 (Q2 2016), $0.90 (Q2 2017).
+  The Q3 2013 10-Q states only the $0.50 rate, so no 2013 date changes. The 10-Ks' MD&A lines ("We increased our interim dividend in 2015
+  from $0.70 to $0.78;") are the vintages' rates.
+- **Repurchase authorities** (display only, the share counts carry them): each annual meeting's Item 5.07 approval "to repurchase up to
+  10% of the Company’s shares" (8-Ks dated 2014-04-22, 2015-05-12, 2016-05-17, 2017-06-01), after the 2013 program.
+- **Signals:** unchanged, from each release's segment reconciliation and income statement, each against the year-ago quarter as that
+  release shows it. Segment operating income is tabulated in every release of the range; from the FY2016 10-K the segment note's measure
+  is EBITDA (ASC 280), which leaves the release-based signal as it was. The thresholds stay rule T's of 2012-02-10, measured on the
+  2007-2011 values that include the 2009-2010 trough and recovery, so the segment and operating margin signals score at or near BEAR on
+  most quarters (the batch's largest call, below).
+- **Durability: CYCLICAL, risk 2.** From the FY2013 10-K the risk factor reads "Our business operations are subject to the cyclical and
+  volatile nature of the supply-demand balance in the chemical and refining industries." (each of the FY2013-FY2016 10-Ks), quoted in
+  the "why"; "highly cyclical" no longer appears, so the key trigger line says "cyclical and volatile" from the FY2013 vintage.
+- **Themes.** ECOMMERCE (live 2015-01-01) and STREAMING (2015-08-04) name no chemicals or refining business, and no LYB 10-K names
+  e-commerce or streaming (nor cloud; the FY2013 10-K's one "Offshore" is the name of an Iranian company in the Section 13(r) note); the
+  "why" quotes every live theme's scope. **ENERGY_TRANSITION on the watch list from 2015-12-18,** the first weekly date on or after its
+  live date (2015-12-12). Its scope is "decarbonisation strands oil, gas and coal reserves and refining"; Item 1 of each 10-K says
+  "Refining. Our Refining segment refines heavy, high-sulfur crude oil and other crude oils of varied types and sources available on the
+  U.S. Gulf Coast." (each vintage's own wording), and its greenhouse gas risk factor: "Compliance with these or other changes in laws,
+  regulations and obligations that create a GHG emissions trading scheme or GHG reduction policies generally could significantly
+  increase our costs or reduce demand for products we produce." That is the XOM, SO and KMI case (in scope, company-acknowledged, no
+  market read): CYCLICAL stands, the watch list quotes the vintage's 10-K (`refining_quote`, `transition_quote`, `tenk_label`), and the
+  theme signal, its name and the summary follow it. Text only: no factor pair, the theme slot at 2/4 (new for LYB; the KMI encoding).
+- **Adds nothing:** the senior notes, guaranteed notes, credit facility, securitization and indenture 8-Ks, the officer, director and
+  compensation 8-Ks (the CEO succession of 2014-2015 included), the November 2013 secondary offering, the vote results beyond the
+  repurchase authority: none guides revenue, EPS or a margin. No acquisition or disposal changes the prints beyond what they report
+  (the 2016 sale of the Argentine subsidiary and the 2017 Geosel gain are in the charges tables as published).
+
+Controls and checks (before any outcome):
+- **Regression:** the 100 dates of 2012-2013 rebuild byte for byte from the extended sheet and builder.
+- **Controls** (`controls_lyb.py 2014-01-01 2017-12-31`): each print's O&P–Americas operating income, each Q4 print's full-year revenue,
+  each vintage's last revenue and refining sentence, each dividend and each repurchase authority: 57 of 57 change no model dated before
+  their publication; 40 change the first weekly date on or after it, 16 are inert (facts superseded before 2014), and the FY2014
+  vintage's refining sentence changes models only from 2015-12-18, the theme's first live date, as it should.
+- **Leak scan:** 48,181 (model, later token) pairs, 0 hits; the positive control finds the print in force in 209 of 209 models.
+  `forward_refs.py`: 0 forward references in 53 dated facts. `selftext.py --allow "MD&A" Ks`: 0 misses in 757 tokens.
+- **Years after the as-of date and anachronisms:** none in the 209 models, reports and analyses other than the FY horizon labels.
+- **`retro_tool run`:** passes on all 209 dates, with no warnings.
+- **Firewall** (run after the build was committed, before any outcome): passes at 50 cutoffs (each fact date of 2014-2017 and the day
+  after it, 2015-12-12 and 2018-01-01), with 0 files changed and no planted text. The LYB plant now also plants the watch list's 10-K words.
+
+Seen in the build (method behaviour, not tuned):
+- **Totals: RICH 183, CHEAP 21, FAIR 5.** RICH on all 52 dates of 2014 but one (FAIR 2014-12-12) and all 53 of 2015; CHEAP on 2016-02-03
+  and 2016-02-12 and on 19 dates from 2017-03-24 to 2017-08-18; FAIR on 2016-02-19 and 2016-06-24 to 2016-07-08. The legacy tier is AVOID
+  on 36 dates, all in 2014 (the last 2014-10-10), BUY on 124, ACCUMULATE 26, WATCHLIST 23. Robustness 8 of 8 on 129 dates.
+- **The window** grows from 3.0 to 7.0 years ex-FY10 and its median stays 9.1-10.1x; the current P/E on the last full year's EPS runs
+  from 17.0x (early 2014, on FY12's $4.96) to 7.8x (mid-2016), at the 8th to 100th percentile of the window; the close from $70.61 to
+  $114.59 ($78.71 on the first date, $110.32 on the last).
+- **BASE follows revenue as reported, plus the buyback:** -2.2%/yr on the first dates, +0.0 to +8.7%/yr in 2014, -5.6% after Q4 2014,
+  -22.5% to -28.9%/yr through 2015 as crude fell (Q1-Q4 2015 revenues -24.5% to -31.3%), -7.7% to -16.0% in 2016, then +14.6% to +30.0%/yr
+  in 2017. BEAR is the 0% cap to the Q4 2016 print, then FY15 to FY16's -4.7%; BULL and XBULL the history's CAGR and best two-year run.
+- **The EPP floor** is $40-67.
+- So the RICH calls of 2015 rest on BASE's negative revenue growth (a falling-revenue quarter carried forward as EPS growth), the
+  signals' low scores and a current P/E at the 52nd-96th percentile of the window; the CHEAP calls of 2017 come with BASE at +14.6% to
+  +30.0%/yr and the P/E near the window median.
+
+Sensitivity (each call changed alone, the 209 dates rebuilt and reclassified offline with `retro_tool`'s own classifier; no outcome
+consulted; `sens_lyb.py`):
+- **every data signal at its XBULL value**: 129 classes (RICH to CHEAP 84, RICH to FAIR 40, FAIR to CHEAP 5); **at its BEAR value**: 13;
+- **the company's EPS excluding LCM** (FY14 $8.92, FY15 $10.35, FY16 $9.20): 23 classes, 49 tiers;
+- **2010's days in the P/E window on FY2011's EPS**: 11 classes, 82 tiers; **the 2011-2012 adjusted EPS**: 10 classes, 78 tiers;
+- **share counts from 2011 only**: 5 classes, 4 tiers;
+- **the combined 2010 not a year of revenues**, **the revenue history from 2008**, **the Q2 2012 restatement unused**, **the ten-year roll
+  unused** and **ENERGY_TRANSITION out of scope**: no class, no tier.
+
+Judgement calls that could carry hindsight:
+- the signal set and rule T's thresholds, both frozen from 2012-02-10 (chosen by a builder who knew 2012-2013 and measured on the
+  2009-2011 trough and recovery): the signals at XBULL move 129 of the 209 classes, the largest call of the batch;
+- GAAP rather than the company's EPS excluding the LCM adjustments (23 classes), on the reading that those adjustments recur;
+- 2010 excluded as two periods, its days out of the window (11 classes), and the 2010 Successor share count kept in the buyback (5);
+- ENERGY_TRANSITION in scope through the Refining segment and the 10-Ks' own GHG sentence (text only, no class moves);
+- CYCLICAL on the 10-Ks' own words;
+- the non-earnings 8-Ks read by their item text and exhibits for guided numbers only.
+
 ## CHTR (Charter Communications): the thirty-eighth ticker, set up in staging, no date built
 
 The CHTR series is set up apart from every other ticker and shares nothing with them but the machinery: its own fact sheet
