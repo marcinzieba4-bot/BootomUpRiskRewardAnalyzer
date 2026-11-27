@@ -26839,6 +26839,132 @@ Judgement calls that could carry hindsight, or limit the batch:
 The hindsight results for 2013-2017 are in `staging/retrospective/CRM/FINDINGS.md`, computed after the firewall result was pushed:
 hypotheses, never inputs, and labels of the reduced information set.
 
+### CRM 2018-2021: reduced data again, ASC 606, total revenues for the subscription signal, FY2021's gains
+
+209 weekly dates, 2018-01-05 to 2021-12-31, on the same method, engine and rule-T thresholds, and the same reduced data as 2013-2017.
+The owner asked for 2018-2021 ("do 2018-2021"). This branch was still the newest code. `www.sec.gov` was not retried, as no deliverable
+contact was available. Sources are `CR61`-`CR76` (the FY2018-FY2021 10-Ks and the Q1 FY19-Q3 FY22 10-Qs). The fact sheet only gains
+facts, asserted, and the 523 earlier models rebuild byte for byte.
+
+```bash
+python3 retro/build_crm.py --weekly 2018-01-01 2021-12-31                   # 209 dates, 2018-01-05 .. 2021-12-31
+for d in staging/retrospective/CRM/20{18,19,20,21}-*/; do python3 retro/retro_tool.py --archive staging/retrospective run "$d"; done
+for c in 2018-01-01 2018-03-12 2018-06-01 2018-09-04 2018-11-29 2019-03-08 2019-06-06 2019-08-26 2019-12-05 2020-03-06 2020-06-02 \
+         2020-08-28 2020-12-04 2021-03-18 2021-06-02 2021-08-27 2021-12-03 2022-01-01; do python3 retro/tools/firewall.py $c CRM; done
+```
+
+**Same-session disclosure** (the CRM 2010-2012 precedent). This batch was decided in the session that built and scored 2013-2017 and
+wrote its findings. Those outcomes' three-year horizons run to 2020-12-29, so the session had seen salesforce.com's price path through
+2020 before choosing these encodings, and the FY2018 10-K's XBRL in an exploration output. No 2018-2021 outcome was computed before the
+firewall result was pushed. No decision below changes a rule, threshold, signal or window. Each follows the 2013-2017 encodings or an
+earlier ticker's, and each that could move a class is tested at the end. Decided before any 2018-2021 outcome was computed:
+
+- **Timing.** Of the 16 filings, 9 were accepted after the close (public the next trading day). 5 were accepted before the open, public
+  that day: the FY2019 10-K at 08:04 ET and four 10-Qs at 07:59-08:43 ET. Four of those five are Fridays, the week's last trading day,
+  so they meet their own close: 2019-03-08, 2020-08-28, 2020-12-04 and 2021-08-27.
+- **Two re-accepted filings.** The EDGAR index lists the Q1 FY21 10-Q (filing date 2020-06-01) and the FY2021 10-K (filing date
+  2021-03-17) only by a later re-acceptance, whose time is not theirs.
+  - Each is dated from the next trading day after its filing date, 2020-06-02 and 2021-03-18. That is later than or equal to any
+    actual dissemination, never earlier.
+  - The FY2021 10-K's figures are read from its original accession, which the company facts hold with the same 251 facts.
+  - The Q1 FY21 10-Q's are read from the re-accepted accession, the only one the company facts hold. The generator asserts that every
+    income-statement figure equals the Q2 FY21 10-Q's six months less its quarter (public 2020-08-28). The Q1 FY22 10-Q's year-ago
+    column agrees too.
+  - No text names the re-acceptance or its accession. `retro_tool run` caught a first draft that did: its date was after AS_OF on 83
+    models, which failed. The text was corrected before any model was kept.
+- **ASC 606.** The FY2019 10-K restates FY2017 and FY2018, full retrospective as tagged: FY17 $0.26 to $0.46 (revenues $8.392B to
+  $8.437B) and FY18 $0.17 to $0.49 ($10.480B to $10.540B). Each year comes from the latest filing that reports it (the ACN FY19 rule), so
+  FY2016 and earlier stay on the earlier basis, a seam (`restated_note`). From Q1 FY19 each 10-Q restates its own year-ago quarter, so
+  every print compares like with like within its filing.
+- **Unearned revenue replaces deferred revenue** from Q1 FY19: the contract liability, current, the only balance tagged. Q1-Q3 FY19
+  compare it with the year-ago quarter's pre-606 deferred revenue as published (a seam, said so in the note). From Q4 FY19 both sides
+  are under ASC 606.
+- **Subscription and support** is derived only where professional services is tagged in both columns (Q4 FY18, Q1 FY19). From Q2 FY19
+  professional services is tagged only in segment detail, which the company facts leave out, so total revenues stand in for the
+  signal, and each note says so. The dashboard row keeps the engine's label "Subscription and support growth", as changing it is an
+  engine revision (the display quirk above). The franchise line says "not in the company facts".
+- **Q4** is the fiscal year less the Q3 10-Q's nine months, as before.
+  - The FY2019 and FY2020 10-Ks' tagged quarters agree.
+  - The FY2021 10-K tags no quarterly data, so Q4 FY21 is unchecked. Its EPS is derived as the year's net income less the nine months',
+    over the year's diluted shares: $0.29, and $(0.29) for the year-ago quarter, against the FY2020 10-K's tagged $(0.28). Display only,
+    labelled.
+- **One separately stated operating line:** Q2 FY20's $166.0M, the residual of operating expenses less the three lines, has no tag in
+  the company facts and is not named. It stays out of the opex signal.
+- **History: four more vintages.**
+  - FY2018 is $0.17 from the FY2018 10-K, until the FY2019 10-K restates it. FY2019 ($1.43), FY2020 ($0.15) and FY2021 ($4.38) are GAAP.
+  - No item is listed as a one-off in the sheet, so every year stays at GAAP (the FY2017 encoding of 2013-2017).
+  - FY2021 carries $2,170M of gains on strategic investments and a $1,511M tax benefit, against $455M of operating income. FY2019
+    carries $542M of gains but would pass the mirror test even if they were listed. Both are tested below.
+  - The decade rolls: FY2008 leaves with the FY2018 vintage, FY2009 with FY2019, FY2010 with FY2020 and FY2011 with FY2021. From
+    2021-02-05 FY2011's last days pass the ten years, so the P/E window holds FY2017 on (5.0-5.9 years, ex-FY12 to ex-FY16).
+- **Current-FY EPS: the rollover rule,** the last full year with no guide in the sheet:
+  - FY17's $0.26 on the 10 dates to 2018-03-09;
+  - FY18's $0.17 to 2019-03-01;
+  - FY19's $1.43 to 2020-02-28;
+  - FY20's $0.15 to 2021-03-12;
+  - FY21's $4.38 from 2021-03-19.
+  Forward growth is the latest quarter's revenue growth, +19.9% to +34.6%.
+- **Display:** debt is the tagged `LongTermDebt`, current and noncurrent. Cash, free cash flow, the tax rate and the single revenue group
+  are as in 2013-2017. No dividend and no repurchase in any cash flow statement.
+- **Themes.** EV (live 2020-01-01) and CRYPTO (2020-10-21) are scoped to automotive and to payments, banks and exchanges, so they name no
+  software business. The watch list stays empty, and DURABLE is carried from the FY2012 10-K as before.
+- **Builder change** (`retro/build_crm.py`):
+  - EV and CRYPTO join the out-of-scope themes;
+  - the franchise line handles a missing subscription growth and says "unearned" after ASC 606;
+  - the docstring.
+  The 523 earlier models rebuild byte for byte.
+
+Controls and checks (before any outcome):
+- **`retro_tool run` passes on all 209 dates, with no warning** (after the correction above).
+- **Controls:** 26 altered inputs, each rebuilt over all 732 dates. Each changes exactly the weekly dates from its publication on, and
+  none before:
+  - each of the 16 prints' deferred or unearned revenue (x1.5, re-derived), from its print to the next;
+  - each of the 4 vintages' last EPS year (x1.2) and last revenue year (x1.1), from its 10-K to the next;
+  - the FY2019 vintage's FY2017 EPS at the pre-606 $0.26;
+  - the re-accepted Q1 FY21 10-Q's unearned revenue, from 2020-06-03, its first weekly date.
+  The baseline rebuild is byte-identical on all 732 dates.
+- **Leak scan:** 1,014 hits in 1,339,770 (model, later token) pairs over all 732 models, none a leak.
+  - 736 are the split share counts of 2013-04-19 to 2014-02-28, now carried by eight later vintages.
+  - 278 are market statistics and counts that equal later figures.
+  - No 2018-2021 model has a hit in a fact constant, and no later text appears anywhere.
+- **Self-text scan:** 190 dollar figures in the new facts' texts, each a value of its own filing's XBRL or of the fact it cites (0
+  misses). The $166.0M residual is checked against its own filing.
+- **Year and term check:** no 2018-2021 model prints a year after its date, a later accession, or a later product or acquisition name.
+- **Regression:** the 523 models of 2008-2017 rebuild byte for byte.
+
+Seen in the build (method behaviour, not tuned). The class follows the last full year's GAAP EPS, which swings from $0.15 to $4.38:
+
+| Dates | EPS that stands | P/E | Percentile (median) | Class / tier |
+|---|---|---|---|---|
+| 2018-01-05 to 2019-03-01 (61) | FY17 $0.26, then FY18 $0.17 | 411-968x | 86th-100th (211-296x) | RICH / AVOID on all 61 |
+| 2019-03-08 to 2020-02-28 (52) | FY19 $1.43 | 100-133x | 16th-41st (161x) | CHEAP / BUY on all 52 |
+| 2020-03-06 to 2021-03-12 (54) | FY20 $0.15 | 895-1,807x | 77th-100th (180-188x) | RICH / AVOID on all 54 |
+| 2021-03-19 to 2021-12-31 (42) | FY21 $4.38 | 48-70x | 11th-31st (137-162x) | CHEAP / BUY on all 42 |
+
+RICH 115, CHEAP 94. Robustness is 8 of 8 on every date. The EPP floor is $143.00-167.31 on the 2019 CHEAP dates (-0.5% to +16.1% from
+the price) and $354.78 on the 2021 CHEAP dates, 13-41% above the price. The proxy composite is 1.30-1.75: the growth signals stay under
+their BEAR lines on every print.
+
+How far each call moves the classes (the 209 dates rebuilt with one encoding changed and classified offline with `cmd_run`; no outcome
+consulted):
+
+| Encoding changed | Models changed | Classes moved | Tiers moved |
+|---|---|---|---|
+| FY2021 excluded by the mirror test (its $2,170M of investment gains and $1,511M tax benefit read as one-offs) | 42 | 42 (every 2021 CHEAP date to RICH) | 42 (BUY to AVOID) |
+| FY2017-FY2018 at their pre-606 figures (no restatement) | 148 | 0 | 0 |
+| the re-accepted Q1 FY21 10-Q left out | 41 | 0 | 0 |
+| every data signal at its BEAR value | 209 | 0 | 0 |
+| every data signal at its XBULL value | 209 | 0 | 0 |
+
+Judgement calls that could carry hindsight, or limit the batch:
+- **FY2021 at GAAP:** the batch's largest call, 42 classes and tiers. In a full-data reading the releases would show whether salesforce.com
+  listed those gains and that tax benefit as one-offs, and the mirror test would then likely exclude the year.
+- **The reduced data, as in 2013-2017:** no guide is in the sheet, so each year rests on the last full year's EPS. That is why the class
+  swings with GAAP EPS of $0.15 to $4.38.
+- **The same-session batch:** the 2013-2017 outcomes, through 2020, were seen before these encodings were chosen.
+- **Stand-ins and derivations:** total revenues for subscription and support from Q2 FY19, the pre-606 seam in Q1-Q3 FY19's unearned
+  revenue, Q4 FY21 unchecked, and the two re-accepted filings dated from their filing dates.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
