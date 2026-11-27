@@ -1,0 +1,210 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "CHTR",
+ "company": "Charter Communications, Inc.",
+ "as_of": "2021-08-27",
+ "price_date": "2021-08-27",
+ "price": 807.18,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); cable signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "We are a leading broadband connectivity company and cable operator serving more than 31 million customers in 41 states through our Spectrum brand. The 10-K's 'Our business is subject to seasonal and cyclical variations.' names seasonal service areas and advertising patterns ('Our revenue is subject to cyclical advertising patterns and changes in viewership levels.'), not the cycle of the business's earnings, so DURABLE (the SPGI reading). STREAMING ('cord-cutting / streaming displaces linear TV networks and pay-TV bundles') is live from 2015-08-04 and the FY2020 10-K's words put it on the watch list: company-acknowledged, with no dated evidence that the market prices it for Charter. Of the other live themes, OFFSHORE to 'lower-cost offshore delivery (Indian IT services) takes share and price from Western consulting, systems integration and outsourcing', CLOUD to 'public cloud displaces on-premise hardware, storage, legacy databases and data-center outsourcing', ECOMMERCE to 'e-commerce (Amazon effect) displaces physical retail, malls, grocery, distribution', ENERGY_TRANSITION to 'decarbonisation strands oil, gas and coal reserves and refining', EV to 'battery-electric vehicles displace ICE powertrains, auto parts suppliers and fuel retail', CRYPTO to 'crypto / DeFi disintermediates payments networks, banks, exchanges, remittance': none names a cable operator",
+  "theme_watch": [
+   {
+    "theme": "STREAMING",
+    "status": "live, company-acknowledged; no market read",
+    "reason": "Live: Charter's own FY2020 10-K says 'As the proliferation of online video services grows, however, services from V-MVPDs and new direct to consumer offerings, as well as piracy and password sharing, negatively impact the number of customers purchasing our video product.' At the same time the same 10-K says it has developed a cloud-based guide that is capable of incorporating video from online video services currently offered in the marketplace, having viewed SVOD online video services as complementary to its own video offering. The stock trades at 52.4x FY21E — near its own median. The theme registry dates the market's pricing of streaming to 2015-08-04 (Disney lowers cable-network outlook on ESPN subscriber losses; media stocks sell off), evidence that names Disney's networks, not Charter. Re-file as DISRUPTION_EXPOSED (STREAMING) only if dated evidence shows the market pricing streaming substitution of Charter's video customers specifically."
+   }
+  ],
+  "evidence": [
+   "CH27-STREAM"
+  ]
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "We are a leading broadband connectivity company and cable operator serving more than 31 million customers in 41 states through our Spectrum brand. The 10-K's 'Our business is subject to seasonal and cyclical variations.' names seasonal service areas and advertising patterns ('Our revenue is subject to cyclical advertising patterns and changes in viewership levels.'), not the cycle of the business's earnings, so DURABLE (the SPGI reading). STREAMING ('cord-cutting / streaming displaces linear TV networks and pay-TV bundles') is live from 2015-08-04 and the FY2020 10-K's words put it on the watch list: company-acknowledged, with no dated evidence that the market prices it for Charter. Of the other live themes, OFFSHORE to 'lower-cost offshore delivery (Indian IT services) takes share and price from Western consulting, systems integration and outsourcing', CLOUD to 'public cloud displaces on-premise hardware, storage, legacy databases and data-center outsourcing', ECOMMERCE to 'e-commerce (Amazon effect) displaces physical retail, malls, grocery, distribution', ENERGY_TRANSITION to 'decarbonisation strands oil, gas and coal reserves and refining', EV to 'battery-electric vehicles displace ICE powertrains, auto parts suppliers and fuel retail', CRYPTO to 'crypto / DeFi disintermediates payments networks, banks, exchanges, remittance': none names a cable operator. durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.16x; +38% to EPP floor; model-vs-market gap +1.29; conservative 2yr +16%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.16,
+  "ratio_b_fmt": "0.16x",
+  "epp": 585.2,
+  "epp_gap_pct": 37.9,
+  "epp_adj": 0.0,
+  "proxy_composite": 2.8,
+  "sca": 0.17,
+  "adj_composite": 2.97,
+  "market_composite": 1.68,
+  "adj_gap": 1.29,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 15.6,
+  "scenarios": {
+   "BEAR": {
+    "eps": 15.4,
+    "pe": 33.9,
+    "price": 522,
+    "desc": "EPS +0.0%/yr (worst year FY18-FY20, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 20.56,
+    "pe": 47.9,
+    "price": 985,
+    "desc": "EPS +15.5%/yr (Q2 revenues + margin + buyback); P/E at its 3.6-yr median"
+   },
+   "BULL": {
+    "eps": 45.43,
+    "pe": 57.5,
+    "price": 2612,
+    "desc": "EPS +71.8%/yr (FY18-FY20 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 45.43,
+    "pe": 62.9,
+    "price": 2858,
+    "desc": "EPS +71.8%/yr (best 2-yr run FY18-FY20, at least BULL); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.16,
+   "epp_gap_pct": 37.9,
+   "adj_gap": 1.29,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 15.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.09,
+   "epp_gap_pct": 37.9,
+   "adj_gap": 1.5,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 15.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 0.23,
+   "epp_gap_pct": 37.9,
+   "adj_gap": 0.96,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 15.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.14,
+   "epp_gap_pct": 37.9,
+   "adj_gap": 1.34,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 15.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.17,
+   "epp_gap_pct": 37.9,
+   "adj_gap": 1.24,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 15.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.16,
+   "epp_gap_pct": 37.9,
+   "adj_gap": 1.59,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 15.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.16,
+   "epp_gap_pct": 27.8,
+   "adj_gap": 1.29,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 15.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.16,
+   "epp_gap_pct": 37.9,
+   "adj_gap": 1.42,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 15.6,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "CHTR (retrospective, 2021-08-27) ◉ BUY — Ratio B 0.16x (35.3% downside to Bear $522 / +223.6% upside to Bull $2612) | Adj composite 2.97 vs market 1.68: gap +1.29 [UNDERVALUED] | +38% above the EPP floor $585 (38x FY21E $15.40) | Conservative 2-yr case: +15.6% total (+7.8%/yr) | At 52.4x FY21E the 15% hurdle price $1,067 sits between the BASE and BULL cases; customer relationships +4.2% in Q2 2021, forward revenues +9.46% (no FY21 revenue guide in numbers, Q2 2021 revenues as reported); streaming is live and company-acknowledged; no dated evidence ties the multiple to it.",
+ "sources": [
+  {
+   "id": "CH27",
+   "published": "2021-01-29",
+   "filed": "2021-01-29 07:06 ET (before the open)",
+   "accession": "0001091667-21-000022",
+   "title": "Charter FY2020 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1091667/000109166721000022/chtr-20201231",
+   "supports": "Item 6, Selected Financial Data: revenues, income from operations, net income attributable to Charter shareholders, diluted EPS ('Earnings per common share, diluted') and diluted weighted average shares for 2020, 2019, 2018, 2017, 2016; the statements, the MD&A's revenues by service offering, Items 1 and 1A"
+  },
+  {
+   "id": "CH39",
+   "published": "2021-01-29",
+   "filed": "2021-01-29 07:01 ET (before the open)",
+   "accession": "0001091667-21-000020",
+   "title": "Charter Q4 2020 earnings release (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1091667/000109166721000020/chtrex991earningsrelease12",
+   "supports": "Q4 2020 against Q4 2019: total revenue, Adjusted EBITDA, income from operations, income before income taxes, diluted EPS and shares (statement of operations), purchases of property, plant and equipment (statement of cash flows), total customer relationships (key operating results)"
+  },
+  {
+   "id": "CH40",
+   "published": "2021-04-30",
+   "filed": "2021-04-30 07:01 ET (before the open)",
+   "accession": "0001091667-21-000082",
+   "title": "Charter Q1 2021 earnings release (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1091667/000109166721000082/chtrex991earningsrelease03",
+   "supports": "Q1 2021 against Q1 2020: total revenue, Adjusted EBITDA, income from operations, income before income taxes, diluted EPS and shares (statement of operations), purchases of property, plant and equipment (statement of cash flows), total customer relationships (key operating results)"
+  },
+  {
+   "id": "CH41",
+   "published": "2021-07-30",
+   "filed": "2021-07-30 07:01 ET (before the open)",
+   "accession": "0001091667-21-000132",
+   "title": "Charter Q2 2021 earnings release (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1091667/000109166721000132/chtrex991earningsrelease06",
+   "supports": "Q2 2021 against Q2 2020: total revenue, Adjusted EBITDA, income from operations, income before income taxes, diluted EPS and shares (statement of operations), purchases of property, plant and equipment (statement of cash flows), total customer relationships (key operating results)"
+  },
+  {
+   "id": "Y0",
+   "published": "2021-08-27",
+   "title": "Yahoo Finance daily prices, Charter Communications, Inc. Class A common stock (NASDAQ: CHTR) and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/CHTR/history",
+   "supports": "close $807.18 as traded on AS_OF, 52-week range, realized vol, beta, the 3.6-yr P/E distribution from 2018-01-02"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-27"
+}
