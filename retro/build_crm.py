@@ -51,6 +51,9 @@ guidance is not in the sheet, so the method's own fallbacks apply (the latest qu
 full year's EPS for the current year: the rollover rule) and every text says the guide is not in this fact sheet rather than that none
 was given. The four-for-one split of 2013-04-18 (the price series' event) puts every earlier per-share figure on the new basis. The
 themes live from 2015 (ECOMMERCE, STREAMING, ENERGY_TRANSITION) name no software business, so the watch list stays empty.
+From 2018 (retro/README.md, "CRM 2018-2021", decided in the session that scored 2013-2017): the same reduced data, now with ASC 606
+(the FY2019 10-K restates FY2017-FY2018; unearned revenue for deferred revenue from Q1 FY19), total revenues standing in for subscription
+and support where professional services is not tagged, and EV and CRYPTO (live 2020) also naming no software business.
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
 is the first trading day after it. salesforce.com released after the close, so a print is dated the next trading day; on a Friday
@@ -63,6 +66,7 @@ Usage
   python3 retro/build_crm.py --weekly 2009-01-05 2009-12-31
   python3 retro/build_crm.py --weekly 2010-01-04 2012-12-31
   python3 retro/build_crm.py --weekly 2013-01-01 2017-12-31
+  python3 retro/build_crm.py --weekly 2018-01-01 2021-12-31
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/CRM/<AS_OF>
 """
 import argparse
@@ -404,8 +408,9 @@ def build(as_of, facts, raw, spx, engine, out):
     # CLOUD is not live before 2012-10-30 (a date no earlier model may print); the 10-Ks' cloud computing words name salesforce.com's
     # own model, the side that displaces on-premise software, not a substitute for it (the GOOG, AVGO and NVDA reading)
     live = sorted(((t["live_from"], k, t["scope"]) for k, t in TAXO["themes"].items() if t["live_from"] <= as_of))
-    # (CRM 2013-2017) the themes live from 2015 are scoped to retail, pay-TV and fossil fuels: none names a software business
-    later = ("ECOMMERCE", "STREAMING", "ENERGY_TRANSITION")
+    # (CRM 2013-2017) the themes live from 2015 are scoped to retail, pay-TV and fossil fuels, (CRM 2018-2021) EV and CRYPTO to
+    # automotive and to payments, banks and exchanges: none names a software business
+    later = ("ECOMMERCE", "STREAMING", "ENERGY_TRANSITION", "EV", "CRYPTO")
     assert {k for _, k, _ in live} <= {"OFFSHORE", "CLOUD", *later}, (as_of, live, "a theme with no encoding is live: decide its encoding first")
     if [k for _, k, _ in live] == ["OFFSHORE"]:
         why = (h["why"] + "; no disruption theme in taxonomy_eras.json is live for a subscription software company on this date "
@@ -532,7 +537,7 @@ SHARES_DIL_B    = {latest["diluted_shares_m"] / 1000:.4f}
 GROUPS          = {R([tuple(g) for g in h["groups"]])}
 GROUPS_BASIS    = {R(h["groups_basis"])}
 NEXT_PRINT      = {R(latest["next_print"])}
-SHARE_GAIN_TEXT = {R(f"Franchise: {h['fy_label']} revenues {h['prev_fy_sales_growth']:+.1f}%, subscription and support {h['prev_fy_sub_growth']:+.1f}%, gross margin {h['prev_fy_gross_margin']:.1f}%; {latest['quarter'].split()[0]} deferred revenue {latest['deferred_pct']:+.1f}% YoY")}
+SHARE_GAIN_TEXT = {R(f"Franchise: {h['fy_label']} revenues {h['prev_fy_sales_growth']:+.1f}%, " + (f"subscription and support {h['prev_fy_sub_growth']:+.1f}%" if h['prev_fy_sub_growth'] is not None else "subscription and support not in the company facts") + f", gross margin {h['prev_fy_gross_margin']:.1f}%; {latest['quarter'].split()[0]} " + ("unearned" if latest['deferred_note'].startswith("unearned") else "deferred") + f" revenue {latest['deferred_pct']:+.1f}% YoY")}
 BALANCE_TEXT    = {R(f"Cash, cash equivalents and marketable securities ${latest['cash_b']:.3f}B ({latest['quarter']}), {latest.get('debt_note', 'no debt')}, {h['fcf_label']} free cash flow ${h['fcf_b']:.3f}B ({h['fcf_note']}), " + (f"dividend ${dividend:.2f} a year" if dividend else "no dividend"))}
 REVENUE_TEXT    = {R(rev_text)}
 CAPITAL_RETURN  = {R(cash_return)}
