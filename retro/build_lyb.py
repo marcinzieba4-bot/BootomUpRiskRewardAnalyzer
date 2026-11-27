@@ -19,7 +19,7 @@ the filing reports it, each year from the latest filing that reports it; a relea
 release: the Berre refinery in discontinued operations) restates it until the next 10-K ('restates' on the print). The combined
 Successor and Predecessor 2010, which each 10-K's MD&A prints and calls the year, is a year of revenues (never of EPS).
 
-LyondellBasell guides no revenue, EPS or margin in numbers in any filing of 2010-2017, so:
+LyondellBasell guides no revenue, EPS or margin in numbers in any filing of 2010-2021, so:
   - current-FY EPS: the last full year's GAAP EPS stands (the PFE rule for a year with no reported-EPS guide),
   - BASE growth and the growth factor: the latest quarter's revenue growth as reported (the SO, UNP and KMI no-guide rule),
   - guided margin step: none; the margin signal uses the latest quarter's change.
@@ -38,6 +38,7 @@ Output goes to staging/retrospective/LYB until the series is added to the archiv
 Usage
   python3 retro/build_lyb.py --weekly 2012-02-06 2013-12-31      # 100 dates, 2012-02-10 .. 2013-12-31
   python3 retro/build_lyb.py --weekly 2014-01-01 2017-12-31      # 209 dates, 2014-01-03 .. 2017-12-29 (retro/README.md, "LYB 2014-2017")
+  python3 retro/build_lyb.py --weekly 2018-01-01 2021-12-31      # 209 dates, 2018-01-05 .. 2021-12-31 (retro/README.md, "LYB 2018-2021")
   python3 retro/build_lyb.py 2012-02-10
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/LYB/<AS_OF>
 """
@@ -65,7 +66,8 @@ ENGINE_THRESHOLDS = {"opa": (-299, 36, 371, 707), "ind": (-41, 29, 98, 168), "re
 RULE_T_KEYS = {"opa": (1, False), "ind": (1, False), "revenue": (1, False), "op_margin": (10, False), "pretax_margin": (10, False)}
 PRINT_KEYS = {"quarter", "fy", "q", "published", "source", "release", "release_time", "period_end", "raw", "sales_b", "sales_pct",
               "opm", "opm_bp", "ptm", "ptm_bp", "eps_q", "eps_q_prior", "diluted_shares_m", "opa_pct", "ind_pct", "seg_note",
-              "sales_note", "margin_note", "eps_note", "cash_note", "next_print", "fy_actual", "restates"}
+              "sales_note", "margin_note", "eps_note", "cash_note", "next_print", "fy_actual", "restates",
+              "oi_source"}   # oi_source: the 10-Q that gives the quarter's operating income where the release prints none (2018, 2021)
 FY_KEYS = {"fy", "fy_label", "eps_normalized", "excluded_note", "revenue_usd_b", "diluted_shares_m", "normalization_note", "op_margin",
            "op_margin_note", "sales_growth", "check_pretax_margin", "check_pretax_note", "tax_rate", "tax_note", "one_off_test"}
 RESTATE_KEYS = {"eps_normalized", "revenue_usd_b", "note"}
@@ -118,8 +120,11 @@ def check_print(p):
         assert set(a) <= FY_KEYS, (p["quarter"], sorted(set(a) - FY_KEYS), "a full-year field with no encoding yet; decide one first")
         t = a["one_off_test"]
         kept = a["eps_normalized"] is not None
-        # a year is kept at GAAP unless it is a loss or its listed one-off charges (after tax) exceed its income attributable to the Company
-        assert t["distorted"] == (t["items_after_tax_m"] > t["income_attributable_m"]), (p["quarter"], "the one-off test")
+        # a year is kept at GAAP unless it is a loss or its listed one-off charges (after tax) exceed its income attributable to the Company,
+        # or, where the listed items are a net benefit, the benefit exceeds the income without it (the mirror test; FY2017, FY2018)
+        it, inc = t["items_after_tax_m"], t["income_attributable_m"]
+        assert t["kind"] == ("benefits" if it < 0 else "charges"), (p["quarter"], "the one-off test's kind")
+        assert t["distorted"] == ((-it > inc + it) if it < 0 else (it > inc)), (p["quarter"], "the one-off test")
         assert kept == (not t["distorted"] and a["eps_normalized"] > 0), (p["quarter"], "the year's EPS and the one-off test disagree")
 
 
@@ -142,7 +147,7 @@ def build(as_of, facts, raw, spx, engine, out):
     for v in vintages:                                 # the fiscal calendar the filings state must match the rule
         for y, end in v.get("fiscal_year_ends", {}).items():
             assert fiscal_year_end(int(y)).isoformat() == end, (y, end)
-    assert not [g for g in facts["guides"] if g["published"] <= as_of], "a guide needs its encoding first (no LYB filing of 2010-2017 gives one)"
+    assert not [g for g in facts["guides"] if g["published"] <= as_of], "a guide needs its encoding first (no LYB filing of 2010-2021 gives one)"
     assert rule_t(facts["rule_t"]) == ENGINE_THRESHOLDS, "the engine's thresholds must follow rule T on the fact sheet's values"
     public = [p for p in facts["prints"] if p["published"] <= as_of]
     for p in public:                                   # a print public on AS_OF must match its raw figures
@@ -267,12 +272,13 @@ def build(as_of, facts, raw, spx, engine, out):
     live = sorted(((t["live_from"], k, t["scope"]) for k, t in retro_tool.load_taxonomy()["themes"].items() if t["live_from"] <= as_of))
     live_k = [k for _, k, _ in live]
     out_k = [k for k in live_k if k != "ENERGY_TRANSITION"]
-    assert out_k == ["OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING"][:len(out_k)], (as_of, "a live theme the LYB 10-Ks were not searched for", live_k)
+    assert out_k == ["OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING", "EV", "CRYPTO"][:len(out_k)], (as_of, "a live theme the LYB 10-Ks were not searched for", live_k)
     if live_k != ["OFFSHORE"]:
         out_live = [x for x in live if x[1] != "ENERGY_TRANSITION"]
         scopes = ", ".join(f"{k} {'is scoped to' if i == 0 else 'to'} '{sc}'" for i, (_, k, sc) in enumerate(out_live))
         named = [w for k, w in (("CLOUD", "cloud"), ("OFFSHORE", "offshore delivery"), ("ECOMMERCE", "e-commerce"),
-                                ("STREAMING", "streaming")) if k in live_k]
+                                ("STREAMING", "streaming"), ("EV", "electric vehicles"), ("CRYPTO", "crypto")) if k in live_k
+                 and not (k == "CLOUD" and h.get("cloud_quote"))]     # from the FY2018 10-K: cloud is named once (below)
         named = ", ".join(named[:-1]) + (", or " if len(named) > 2 else " or ") + named[-1]
         head = why.split("; no theme in taxonomy_eras.json is live")[0]
         assert head != why, (as_of, "the vintage's why lost its theme clause")
@@ -282,6 +288,13 @@ def build(as_of, facts, raw, spx, engine, out):
                    "list is empty and these words stay here (the PEP obesity rule)")
         else:
             why = head + f"; of the other live themes, {scopes}: none names chemicals or refining, and no 10-K names {named}"
+        if h.get("cloud_quote"):      # the FY2018-FY2020 10-Ks name cloud once, in an accounting standard's title (the SCHW cloud_words)
+            why += (f"; the {h['tenk_label']} names cloud only in an accounting standard's title ('{h['cloud_quote']}'), not as a "
+                    "business LyondellBasell sells or buys in place of its own")
+        if "EV" in live_k:            # EV's scope names auto parts suppliers and fuel retail; LyondellBasell is neither (retro/README.md)
+            why += ("; EV's 'auto parts suppliers' and 'fuel retail' name no LyondellBasell business: its 10-Ks say its products go "
+                    "into 'automotive components' among many uses, and its Houston refinery's refined products are ENERGY_TRANSITION's "
+                    "refining")
     # ENERGY_TRANSITION is live from 2015-12-12 and scoped to oil, gas and coal reserves and refining; LyondellBasell's Refining segment
     # (the Houston refinery) is refining, and each 10-K's greenhouse gas risk factor says GHG reduction policies "could significantly
     # increase our costs or reduce demand for products we produce", so the theme goes on the watch list (the XOM, SO and KMI rule:
@@ -320,7 +333,8 @@ def build(as_of, facts, raw, spx, engine, out):
                f"(day of the {same_day[-1]['quarter']} print, released during the session)")
 
     company, exchange, listed = h["company"], h["exchange"], h["symbol"]
-    ids = (list(h["sources"]) + [x for p in prints for x in [p["source"]]] + [public[i - 1]["source"]] + [listing["source"]]
+    ids = (list(h["sources"]) + [x for p in prints for x in [p["source"]] + ([p["oi_source"]] if p.get("oi_source") else [])]
+           + [public[i - 1]["source"]] + [listing["source"]]
            + ([dividend_src] if dividend_src else []) + restated + ([bb["source"]] if bb else []))
     sources = [dict(id=i, **{k: v for k, v in facts["sources"][i].items()}) for i in dict.fromkeys(ids)]
     sources.append({"id": "A0", "published": as_of,
