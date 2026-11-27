@@ -129,7 +129,7 @@ SOURCES = [
         "filed": "2020-09-14 16:18 ET (after the close)",
         "title": "NextEra Energy 8-K of 2020-09-14 (Items 7.01 and 8.01)",
         "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330820000165/nee8-kdated09x14x2020.htm",
-        "supports": "the four-for-one stock split (Item 8.01); the 2021 adjusted earnings per share expectations (Item 7.01)"
+        "supports": "the four-for-one stock split (Item 8.01); the next year's adjusted earnings per share expectations (Item 7.01)"
     },
     {
         "id": "W0",

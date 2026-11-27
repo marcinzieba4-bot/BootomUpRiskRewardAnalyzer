@@ -1,0 +1,150 @@
+
+════════════════════════════════════════════════════════════════════════
+  NEE  ·  NextEra Energy, Inc.  ·  $269.54  ·  RETROSPECTIVE as of 2020-02-07
+  Signal: ✕ AVOID   Ratio B: infx   Adj gap: -1.76  [OVERVALUED]
+  Point-in-time: 15 sources, latest published 2020-02-07; latest print Q4 2019 (2020-01-24)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2020E revenues, USD bn  →  FY2022E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Revenue line                 FY2020E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  FPL                       $    14.2  $  14.2  $  14.8      +0.0      +0.6
+    -0.9% revenues in FY18
+  NextEra Energy Resources  $     5.9  $   5.9  $   6.1      +0.0      +0.2
+    -5.5% revenues in FY18
+  Corporate and Other       $    -0.0  $  -0.0  $  -0.0      +0.0      +0.0
+    -135.1% revenues in FY18
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    20.1  $  20.1  $  20.9      +0.0      +0.8
+  FY2020E = FY19 $19.20B × (1 + 4.5%: no Q1 2020 revenue guide, Q4 2019 revenue as reported, applied to the year (no FY20 revenue guide)); split pro rata to FY18 operating revenues by segment (NE94, segment information)
+  Q4 2019 (2020-01-24): total revenues $4.59B +4.5%; FPL energy sales n/r; FPL net income -1.7%;
+  operating margin 19.14% (-608.0bp); EPS $1.99 vs $0.88 (GAAP)
+  FPL energy sales n/r and FPL average customer accounts n/r (the release has no FPL statistics table, and no filing of the period tabulates them); FPL net income -1.7% ($407M to $400M); Gulf Power net income $23M (acquired 2019-01-01, no year-ago quarter; display only); NEER net income $264M to $433M (display only); revenue +4.5% as reported ($4,390M to $4,588M); operating income $1,107M to $878M; EPS: diluted EPS as reported $1.99 vs $0.88; the release's adjusted EPS ($1.44 vs $1.49) removes, per share, Net losses (gains) associated with non-qualifying hedges -$0.79; Change in unrealized losses (gains) on equity securities held in NEER's nuclear decommissioning funds and OTTI - net -$0.17; Impact of income tax rate change on differential membership interests $0.06; NEP investment gains - net $0.10; Operating loss (income) of Spain solar projects $0.01; Acquisition-related $0.01; Less related income tax expense (benefit) $0.23; Net losses (gains) associated with non-qualifying hedges $0.40 a year earlier; Change in unrealized losses (gains) on equity securities held in NEER's nuclear decommissioning funds and OTTI - net $0.44 a year earlier; Operating loss (income) of Spain solar projects $0.01 a year earlier; Acquisition-related $0.04 a year earlier; Less related income tax expense (benefit) -$0.28 a year earlier; as it also removes the mark-to-market effect of non-qualifying hedges, a recurring item, GAAP stands (the PEP 2008 core rule)
+  FY20: adjusted EPS outlook (Q4 2019 release, 2020-01-24, display only): 'For 2020, NextEra Energy continues to expect its adjusted earnings per share to be in the range of $8.70 to $9.20' — an outlook on the adjusted basis, which also removes the mark-to-market effect of non-qualifying hedges and the unrealized gains and losses on equity securities and OTTI in NEER's nuclear decommissioning funds, recurring items (the PEP 2008 core rule): no field, so the last full year's EPS stands; no revenue or margin guide in numbers (BASE takes Q4 2019 revenue growth)
+
+  FY2020E EPS check:  $20.1B × 20.0% pre-tax × (1−11.7%) ÷ 0.491B  =  $7.22  (FY2020E: no EPS guide in numbers on a usable basis (the adjusted ranges also remove recurring mark-to-market items), FY19's $7.76 (GAAP) stands)
+  FY2022E BEAR check: $20.1B × 20.0% ÷ 0.508B  =  $6.98  (scenario $2.43)
+  FY2022E BULL check: $20.9B × 20.4% ÷ 0.508B  =  $7.40  (scenario $8.87)
+  Every 1pp of pre-tax margin ≈ $0.36 EPS ≈ $6/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  FPL energy sales (kWh)              -5.0%   ≥-1.0%    ≥2.0%    ≥8.0%       n/r  ◦ BASE  ██░░
+  FPL net income                     -16.0%   ≥-6.0%    ≥3.0%   ≥12.0%     -1.7%  ◦ BASE  ██░░
+  Revenue growth                     -15.0%   ≥-3.0%    ≥8.0%   ≥33.0%     +4.5%  ◦ BASE  ██░░
+  EPS growth                         -31.0%  ≥-13.0%    ≥5.0%   ≥38.0%   +126.1%  ★ XBULL  ████
+  Operating margin change           -840.0bp  ≥-450.0bp  ≥-60.0bp  ≥320.0bp  -608.0bp  ⚠ BEAR  █░░░
+  Energy transition: GHG limits on gas reserves and fossil units   +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.15 / 4.00
+  Market composite:   3.77 / 4.00  (back-solved from $270 + 15% hurdle)
+  SCA adjustment:    +0.06  ·  EPP-distance adj -0.20  →  Adj composite 2.01  →  Gap -1.76  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY19 revenue +14.8%, FPL energy sales n/r, FPL net income +7.5%, FPL customer accounts n/r (FPL's energy sales and customer accounts n/r: neither the FY2018 10-K nor the Q4 2018 release (NE101) tabulates them); Q4 2019 operating margin 19.1% (-608.0bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 34.7x FY20E vs a 15.9x 10-yr median (100th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: no Q1 2020 revenue guide, Q4 2019 revenue as reported +4.5% vs a 1.4% 10-yr median  (+0.31 × 20%  =  +0.062)
+    +  FY19 year-end cash $5.253B, FY18 free cash flow $-6.41B (net cash provided by operating activities $6,593M less the cash flow statement's capital expenditures of FPL, independent power and other investments of NEER, nuclear fuel purchases, other capital expenditures and other investments ($13,004M, their sum) (NE94)), dividend $5.00 a year, issuances of common stock - net $718M, no repurchases of common stock and dividends on common stock $2,101M in 2018 (NE94 cash flows): the dividend is most of the return  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  FPL energy sales (kWh)                 n/r     -5.0%     n/r  Fewer customers and lower usage cut F…
+  FPL net income                       -1.7%    -16.0%  -14.3%  Rate relief lags costs and lost sales
+  Revenue growth                       +4.5%    -15.0%  -19.5%  Sales, fuel recovery and hedge marks …
+  EPS growth                         +126.1%    -31.0%  -157.1%  Costs, marks and dilution outrun growth
+  Operating margin change           -608.0bp  -840.0bp  -232.0bp  Fuel, O&M and hedge marks outrun revenue
+  Energy transition: GHG limits on gas reserves and fossil units    +2.0/4    +1.0/4  -1.0/4  Greenhouse gas limits strand NEER's o…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$60  (model)  /  $27 (defined)
+  Bear probability (proxy model):  15.5%
+
+  KEY TRIGGER: FPL's energy sales went from n/r (Q3 2019) to n/r (Q4 2019);
+  the bear case needs a demand and cost squeeze that the operating margin (-608.0bp now)
+  and FPL's earnings (-1.7% now) no longer absorb.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $7.76  (FY2020E: no EPS guide in numbers on a usable basis (the adjusted ranges also remove recurring mark-to-market items), FY19's $7.76 (GAAP) stands)
+  Min viable P/E at panic:          15x  [median of calendar-year P/E lows: 2010 9.6x, 2011 10.9x, 2012 12.9x, 2013 15.8x, 2014 15.0x, 2015 15.6x, 2016 16.6x, 2017 10.4x, 2018 10.5x, 2019 21.8x, 2020 30.7x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $116/share
+  Current $270 vs Updated EPP $116:  +132%  ⚠ far above floor — large drawdown room
+  Bear $27 vs Updated EPP $116:  -77%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  FPL energy sales (kWh)                      -1.0        n/r   BASE floor (not reported now)
+  FPL net income                              -6.0       -4.3   BASE floor (vs -2 now)
+  Revenue growth                              -3.0       -7.5   BASE floor (vs +4 now)
+  EPS growth                                 -13.0     -139.1   BASE floor (vs +126 now)
+  Operating margin change                   -450.0     +158.0   BASE floor (vs -608 now)
+  Energy transition: GHG limits on gas reserves and fossil units             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $7.76 × (1+0.8%)² = $7.88
+  At 15x P/E (conservative):  $118/share
+  + Cumul. dividends (2yr):  +$10.30/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $118  (▼151 from $270)
+  Conservative total return:  -52% over 2yr  = -26%/yr
+
+  0.8% EPS growth is what is left once the premium multiple (34.7x)
+  mean-reverts to 15x. Breakeven at 15x needs FY2022E EPS of $17.28,
+  i.e. 49.2%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $181.02  –  $271.65  (at 98th pct of range)
+  Annual dividend:      $5.00/share  (yield 1.9%)
+  Realized vol (1yr):   13% annualized
+  Beta vs broad market: 0.07
+  1-sigma range (1yr):  $234  –  $305  ($270 ± 13%)
+  2-sigma range (1yr):  $198  –  $341
+  ────────────────────────────────────────────────────────────
+  Bear $27 requires:  ~6.8σ price move  (unusual — requires fundamental break)
+  A utility holding company with a 0.1 beta: the stock is +48% off its February
+  low while FPL's energy sales went from n/r (Q3 2019) to n/r (Q4 2019).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        2.43  11.3x  $     27    15.5%      1.2%   +14.3pp  EPS -44.1%/yr (worst year FY09-FY19, capped at 0%); P/E to its 10th pct
+  BASE        8.20  15.9x  $    130    54.1%      4.3%   +49.8pp  EPS +2.8%/yr (Q4 revenue + margin + buyback); P/E at its 10-yr median
+  BULL        8.87  18.2x  $    161    25.6%     15.0%   +10.6pp  EPS +6.9%/yr (FY09-FY19 CAGR); P/E holds its 75th pct
+  XBULL      17.26  23.4x  $    404     4.8%     79.5%   -74.6pp  EPS +49.1%/yr (best 2-yr run FY09-FY19); P/E at its 90th pct
+
+  Proxy EV (2yr): $135  /  Market EV: $351  /  Current: $270
+  Conservative EV (2yr, ④): $118 + $10.30 divs = $128 total value
+  Downside (→ Bear $27): 90.0%   Upside (→ Bull $161): -40.3%   Ratio B infx  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $270 the market needs $356 in two years —
+  above the BULL case. That is a market composite of 3.77 against a model
+  read of 2.01: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                        infx    +132%    -1.76  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)      infx    +132%    -1.23  OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx    +132%    -1.74  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                           infx    +132%    -1.71  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                           infx    +132%    -1.76  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)              infx    +132%    -1.46  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                  infx     +93%    -1.66  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                     infx    +132%    -1.59  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 2020 print (late April) — FPL's energy sales n/r now (the releases no longer tabulate them), FPL net income -1.7%; no sales guide in numbers
+  (2) Operating margin — -608.0bp in Q4 2019: fuel and purchased power, O&M, depreciation and hedge marks against revenue
+  (3) The FY20 adjusted EPS outlook (Q4 2019 release) — display only: the adjusted basis also removes recurring mark-to-market items, so FY19's GAAP $7.76 anchors the multiple
+  (4) FPL's net income — -1.7% in Q4 2019 ($400M vs $407M): customers, usage and base rates against O&M and depreciation
+  (5) Capital return at 35x — issuances of common stock - net $718M, no repurchases of common stock and dividends on common stock $2,101M in 2018 (NE94 cash flows): the dividend is most of the return: management's own read of the multiple
+  ✕ AVOID  |  EPP floor $116  |  ADD below ~$110  |  TRIM above $161
+════════════════════════════════════════════════════════════════════════
+

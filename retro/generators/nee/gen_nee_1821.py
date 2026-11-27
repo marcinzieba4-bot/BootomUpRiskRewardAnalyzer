@@ -171,7 +171,7 @@ for q, acc in REL.items():
                       f"{q} earnings release: segment statements of income, earnings per share, outlook")
 SPLIT_ACC = "0000753308-20-000165"
 SPLIT_SRC = source(SPLIT_ACC, "NextEra Energy 8-K of 2020-09-14 (Items 7.01 and 8.01)", FILINGS[SPLIT_ACC][4],
-                   "the four-for-one stock split (Item 8.01); the 2021 adjusted earnings per share expectations (Item 7.01)")
+                   "the four-for-one stock split (Item 8.01); the next year's adjusted earnings per share expectations (Item 7.01)")
 # the source ids run in publication order within each kind (10-Ks, releases, the split 8-K)
 
 # ── prints ───────────────────────────────────────────────────────────────────────────────────────────────────────────────
