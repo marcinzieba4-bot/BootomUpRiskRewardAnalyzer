@@ -2306,7 +2306,7 @@
     "term": "Charter Spectrum",
     "first_seen": "2014-02-21",
     "approx": true,
-    "note": "Charter's later brand (CHTR); first hit of EDGAR full-text search for filings under CIK 1091667 (from 2001): the Q4 2013 release, 8-K 0001091667-14-000079 filed 2014-02-21; no CHTR model is built (retro/README.md, \"CHTR 2008-2009\")"
+    "note": "Charter's later brand (CHTR); first hit of EDGAR full-text search for filings under CIK 1091667 (from 2001): the Q4 2013 release, 8-K 0001091667-14-000079 filed 2014-02-21; no CHTR model is built (retro/README.md, \"CHTR 2008-2009\"); the CHTR models from 2019-02-01 all follow it (\"CHTR 2018-2021\")"
    },
    {
     "term": "Spectrum Mobile",
