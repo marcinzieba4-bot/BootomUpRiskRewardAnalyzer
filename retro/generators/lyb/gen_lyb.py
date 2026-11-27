@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Generate retro/facts/LYB.json (2012-02-10 to 2013-12-31) from LyondellBasell Industries N.V.'s own filings (edgar.py's rows).
+"""Generate retro/facts/LYB.json (2012-02-10 to 2017-12-29) from LyondellBasell Industries N.V.'s own filings (edgar.py's rows).
 
 Every raw figure is read from its own labelled row (the row is kept for the verbatim checklist), every rate, margin, tax rate
 and rule-T value is computed, every quoted sentence is asserted present in its own filing. Only filings accepted on or before
-2013-12-31 are read. The downloads (keep them outside the repository):
+2017-12-31 are read. The downloads (keep them outside the repository):
 
     python3 retro/tools/edgar.py index 1489393 <dir>
-    python3 retro/tools/edgar.py fetch 1489393 <dir> --from 2010-04-01 --to 2014-03-31 --forms 10-K 10-Q 8-K 8-K/A 10-12B 10-12B/A
+    python3 retro/tools/edgar.py fetch 1489393 <dir> --from 2010-04-01 --to 2017-12-31 --forms 10-K 10-Q 8-K 8-K/A 10-12B 10-12B/A
 
 Run:
     python3 -I retro/generators/lyb/gen_lyb.py --filings <dir> [--out retro/facts/LYB.json] [--checklist <dir>/checklist_lyb.json]
@@ -33,7 +33,7 @@ sys.path.insert(0, os.path.join(REPO, "retro"))
 import retro_tool  # noqa: E402  (the repo's own tool: trading days from the Yahoo cache)
 
 ET = ZoneInfo("America/New_York")
-CUT = "2013-12-31"
+CUT = "2017-12-31"
 CIK = 1489393
 FILINGS = {r[3]: r for r in json.load(open(os.path.join(SP, "allrows.json")))}
 chart = retro_tool.chart("LYB")
@@ -586,16 +586,312 @@ listing = dict(first_trading_day="2010-04-30", exchange="NYSE", symbol="LYB", pu
                      f"'{ISSUEQ}' '{LISTQ}'); the P/E exists only from the first day (the listing rule of method r2). Yahoo's LYB series "
                      "starts on 2010-04-28, two days before the capital was issued: those two points are left out"))
 
+# ══ 2014-2017: the Q4 2013 to Q3 2017 releases, the FY2013-FY2016 10-Ks, the dividends and repurchase authorities to 2017-12-31 ══
+# (added for retro/README.md, "LYB 2014-2017"; everything above is unchanged, so the 2012-2013 facts regenerate byte for byte).
+# The releases' tables are renumbered from Q1 2014 (Table 7 the segment reconciliation, Table 10 the income statement, Table 11 the
+# charges), so these are found by their titles, not their numbers; the segment names are matched with their dashes normalized.
+REL2 = {"Q4 2013": "0001193125-14-029894", "Q1 2014": "0001193125-14-165167", "Q2 2014": "0001193125-14-279747",
+        "Q3 2014": "0001193125-14-380926", "Q4 2014": "0001193125-15-030610", "Q1 2015": "0001193125-15-145163",
+        "Q2 2015": "0001193125-15-264845", "Q3 2015": "0001193125-15-351254", "Q4 2015": "0001193125-16-446746",
+        "Q1 2016": "0001193125-16-551100", "Q2 2016": "0001193125-16-663276", "Q3 2016": "0001193125-16-754456",
+        "Q4 2016": "0001193125-17-029768", "Q1 2017": "0001193125-17-145129", "Q2 2017": "0001193125-17-239266",
+        "Q3 2017": "0001193125-17-321949"}
+SID2 = {q: f"LB{40 + i}" for i, q in enumerate(REL2)}
+FREL2 = {q: doc(a, "EX-99.1__") for q, a in REL2.items()}
+TOTALS = ("Total", "YTD", "AnnualImpact", "Impact")
+dnorm = lambda s: re.sub(r"\s*[-–—]\s*", "-", s)
+nofoot = lambda s: re.sub(r"(\s*\([a-z](, [a-z])*\))+$|\d$", "", s.strip()).strip()   # '..operations(b)', '(a, b)', '(a) (b)', 'LCM1'
+
+
+def title_line(path, title):
+    hits = [i for i, x in enumerate(lines(path)) if re.match(r"Table \d+\s*[-–—]\s*" + re.escape(title), x)]
+    assert len(hits) == 1, (path, title, hits)
+    return hits[0]
+
+
+def row2(path, label, start, stop):
+    """The unique row in lines[start:stop] whose first cell, footnote marks dropped and dashes normalized, is `label`."""
+    L = lines(path)[start:stop]
+    hits = [x for x in L if "|" in x and dnorm(nofoot(x.split(" |")[0])) == dnorm(label)]
+    assert len(hits) == 1, (path, label, len(hits), hits[:3], start, stop)
+    CHECK.setdefault(path, []).append(hits[0])
+    return hits[0], [num(t) for t in cells(hits[0]) if t]
+
+
+def qtable(path, title):
+    """(start, stop, columns) of a quarterly table (a year row, then a header of Q1 .. Q4, Total/YTD/AnnualImpact, Q1 ..)."""
+    i0 = title_line(path, title)
+    L = lines(path)
+    stop = next((i for i in range(i0 + 1, len(L)) if re.match(r"Table \d+\s*[-–—]", L[i])), len(L))
+    yi = next(i for i in range(i0, i0 + 6) if re.fullmatch(r"20\d\d \| 20\d\d", L[i]))
+    years = [int(y) for y in L[yi].split(" | ")]
+    hi = next(i for i in range(yi, yi + 4) if L[i].startswith(("(Millions of U.S. dollars)", "Millions of U.S. dollars")))
+    labels = [c.strip() for c in L[hi].split("|")[1:]]
+    k = next(j for j, lb in enumerate(labels) if lb in TOTALS) + 1
+    cols = [(years[0], lb) for lb in labels[:k]] + [(years[1], lb) for lb in labels[k:]]
+    return hi, stop, cols
+
+
+def qval(path, title, label, year, col, section=None):
+    hi, stop, cols = qtable(path, title)
+    if col == "TOTAL":
+        col = next(c for y, c in cols if y == year and c in TOTALS)
+    start = hi
+    if section:
+        start = line_no(path, section[0], 0, hi)
+        stop = line_no(path, section[1], 0, start)
+    _, v = row2(path, label, start, stop)
+    assert len(v) == len(cols), (path, title, label, v, cols)
+    return v[cols.index((year, col))]
+
+
+def t1b(path):
+    """Table 1 (Earnings Summary): its first block only (the 'Excluding LCM Impact' block below it is the company's adjusted view);
+    cells are the quarter, the previous quarter, the year-ago quarter, then the year to date (this year, last year)."""
+    i0 = title_line(path, "Earnings Summary")
+    L = lines(path)
+    i1 = next(i for i in range(i0, i0 + 30) if L[i].startswith(("Excluding LCM", "(a) |")))
+    _, rev = row2(path, "Sales and other operating revenues", i0, i1)
+    _, sh = row2(path, "Diluted share count (millions)", i0, i1)
+    hdr = [i for i in range(i0, i1) if L[i].startswith("Diluted earnings per share (U.S. dollars):")]
+    assert len(hdr) == 1, (path, hdr)
+    _, eps = row2(path, "Income from continuing operations", hdr[0], hdr[0] + 4)
+    _, ebitda = row2(path, "EBITDA", i0, i1)
+    return rev, eps, sh, ebitda
+
+
+INC, SEGT = "Unaudited Income Statement Information", "Reconciliation of Segment Information to Consolidated Financial Information"
+PRETAX2 = ("Income from continuing operations before income taxes", "Income before taxes")
+OPA2 = "Olefins & Polyolefins-Americas"
+
+
+def pretax2(path, year, col):
+    for lab in PRETAX2:
+        try:
+            return qval(path, INC, lab, year, col)
+        except AssertionError:
+            pass
+    raise AssertionError((path, "pre-tax", year, col))
+
+
+ORDER2 = list(REL2)
+for qi, (qq, acc) in enumerate(REL2.items()):
+    q, fy = int(qq[1]), int(qq[3:])
+    f = FREL2[qq]
+    rev, eps, sh, ebitda = t1b(f)
+    qc = f"Q{q}"
+    oi, oi_p = qval(f, INC, "Operating income", fy, qc), qval(f, INC, "Operating income", fy - 1, qc)
+    pti, pti_p = pretax2(f, fy, qc), pretax2(f, fy - 1, qc)
+    assert rev[0] == qval(f, INC, "Sales and other operating revenues", fy, qc), qq
+    assert rev[2] == qval(f, INC, "Sales and other operating revenues", fy - 1, qc), qq
+    opa, opa_p = (qval(f, SEGT, OPA2, fy, qc, section=SEG_SECTION), qval(f, SEGT, OPA2, fy - 1, qc, section=SEG_SECTION))
+    ind, ind_p = (qval(f, SEGT, IND, fy, qc, section=SEG_SECTION), qval(f, SEGT, IND, fy - 1, qc, section=SEG_SECTION))
+    pub, filed = published(acc)
+    title = f"LyondellBasell Industries N.V. {qq} results (8-K, Exhibit 99.1)"
+    sid = source(SID2[qq], acc, title, f, "the quarter's Table 1 (revenues, diluted EPS from continuing operations, diluted shares), "
+                 "the segment reconciliation (segment operating income) and the income statement table, each with the year-ago quarter "
+                 "as this release shows it")
+    raw = dict(rev_m=rev[0], rev_prior_m=rev[2], oi_m=oi, oi_prior_m=oi_p, pti_m=pti, pti_prior_m=pti_p, eps_q=eps[0], eps_q_prior=eps[2],
+               dil_sh_m=sh[0], opa_m=opa, opa_prior_m=opa_p, ind_m=ind, ind_prior_m=ind_p, ebitda_m=ebitda[0])
+    rel_day = dt.date.fromisoformat(FILINGS[acc][1][:10])
+    nq = ORDER2[qi + 1] if qi + 1 < len(ORDER2) else "Q4 2017"
+    basis = "diluted from continuing operations"
+    p = dict(quarter=qq, fy=fy, q=q, published=pub, source=sid, release=f"{rel_day.strftime('%b')} {rel_day.day}",
+             release_time=f"8-K {filed}", period_end=f"{fy}-{QDATE[q]}", raw=raw,
+             sales_b=round(rev[0] / 1000, 3), sales_pct=pct(rev[2], rev[0]),
+             opm=mg(oi, rev[0]), opm_bp=round((mg(oi, rev[0]) - mg(oi_p, rev[2])) * 100, 1),
+             ptm=mg(pti, rev[0]), ptm_bp=round((mg(pti, rev[0]) - mg(pti_p, rev[2])) * 100, 1),
+             eps_q=eps[0], eps_q_prior=eps[2], diluted_shares_m=sh[0],
+             opa_pct=pct(opa_p, opa), ind_pct=pct(ind_p, ind),
+             seg_note=f"O&P–Americas operating income {usd_m(opa)} vs {usd_m(opa_p)}, Intermediates & Derivatives {usd_m(ind)} vs {usd_m(ind_p)}",
+             sales_note=f"sales and other operating revenues {usd_m(rev[0])} vs {usd_m(rev[2])}",
+             margin_note=f"operating income {usd_m(oi)} vs {usd_m(oi_p)}; income before income taxes {usd_m(pti)} vs {usd_m(pti_p)}",
+             eps_note=f"GAAP, {basis}, {'$%.2f' % eps[0] if eps[0] >= 0 else '$(%.2f)' % -eps[0]} against "
+             f"{'$%.2f' % eps[2] if eps[2] >= 0 else '$(%.2f)' % -eps[2]} a year earlier",
+             cash_note=f"EBITDA {usd_m(ebitda[0])} (non-GAAP, display only)",
+             next_print=f"the {nq} release")
+    if q == 4:
+        pti_y = pretax2(f, fy, "TOTAL")
+        tax_y = qval(f, INC, "Provision for income taxes", fy, "TOTAL")
+        ni_att = qval(f, INC, "Net income attributable to the Company shareholders", fy, "TOTAL")
+        assert rev[3] == qval(f, INC, "Sales and other operating revenues", fy, "TOTAL"), qq
+        if fy == 2013:      # the Q4 2013 release's charges table has the layout of Table 1 (the year in its fourth cell)
+            i2 = title_line(f, "Charges (Benefits) Included in Net Income")
+            lab2, items = "After-tax effect of net charges (credits)", row2(f, "After-tax effect of net charges (credits)", i2, i2 + 20)[1][3]
+            ttl = "Charges (Benefits) Included in Net Income"
+        else:
+            ttl = "Charges (Benefits) Included in Income from Continuing Operations"
+            lab2 = "After-tax effect of net charges (benefits)"
+            items = qval(f, ttl, lab2, fy, "TOTAL")
+        prev_rev = rev[4]
+        kind = "charges" if items >= 0 else "benefits"
+        test_note = (f"the release's '{ttl}' table: '{lab2}' of {usd_m(items)} for the year (every item that table lists, charges net "
+                     "of benefits, recurring ones such as the lower of cost or market inventory adjustments included where listed) against "
+                     "net income attributable "
+                     f"to the Company of {usd_m(ni_att)}: kept at GAAP; the net is a charge, so the mirror test does not arise")
+        assert kind == "charges", (qq, "a net one-off benefit needs the mirror test's encoding first")
+        a = dict(fy=fy, fy_label=f"FY{fy % 100}", eps_normalized=eps[3], excluded_note=None, revenue_usd_b=round(rev[3] / 1000, 3),
+                 diluted_shares_m=sh[3],
+                 normalization_note=f"FY{fy % 100} ${eps[3]:.2f} {basis} from the {qq} release ({pub}) until the 10-K",
+                 op_margin=mg(pti_y, rev[3]),
+                 op_margin_note=f"FY{fy % 100} income before income taxes {usd_m(pti_y)} / revenues {usd_m(rev[3])} ({qq} release)",
+                 sales_growth=pct(prev_rev, rev[3]),
+                 check_pretax_margin=mg(pti_y, rev[3]),
+                 check_pretax_note=f"FY{fy % 100} income before income taxes / revenues ({qq} release)",
+                 tax_rate=round(tax_y / pti_y, 3), tax_note=f"FY{fy % 100} effective rate: provision for income taxes {usd_m(tax_y)} on {usd_m(pti_y)}",
+                 one_off_test=dict(items_after_tax_m=items, income_attributable_m=ni_att, distorted=items > ni_att, kind=kind, note=test_note))
+        p["fy_actual"] = a
+    prints.append(p)
+
+# the releases' company figures excluding the lower of cost or market adjustments (Table 1's 'Excluding LCM Impact' block, from Q4 2014)
+# remove an item that recurs in nine of the twelve quarters from Q3 2014 to Q2 2017, so they are not figures excluding only one-offs
+# (the NKE FY2007, AVGO, PFE and V rule, as for the 2011-2013 adjusted EPS); GAAP stands. Asserted here, shown in the README only.
+for qq in ("Q4 2014", "Q4 2015", "Q4 2016"):
+    quote(FREL2[qq], "Excluding LCM Impact:")
+
+# ── the FY2013-FY2016 10-Ks ──
+K13, K14, K15, K16 = "0001193125-14-060399", "0000950123-15-003039", "0001193125-16-465311", "0001193125-17-047661"
+F13, F14, F15, F16 = doc(K13, "10-K__"), doc(K14, "10-K__"), doc(K15, "10-K__"), doc(K16, "10-K__")
+CYCQ = "Our business operations are subject to the cyclical and volatile nature of the supply-demand balance in the chemical and refining industries."
+GHGQ = ("Compliance with these or other changes in laws, regulations and obligations that create a GHG emissions trading scheme or GHG "
+        "reduction policies generally could significantly increase our costs or reduce demand for products we produce.")
+
+
+def tenk(path, acc, sid, fy, title):
+    """One 10-K vintage's figures: Item 6 (five years of revenues and diluted EPS from continuing operations, the two 2010 periods where
+    shown), the EPS note's diluted shares (three years), the statement of income's pre-tax income and tax, the cash flow statement's
+    dividends and repurchases, the segment note's revenues from customers (this year and last), and its own words."""
+    i0, i1 = sel(path)
+    _, rv = row(path, "Sales and other operating revenues", i0, i1)
+    _e = line_no(path, "Earnings per share from continuing operations:", 0, i0)
+    _, ep = row(path, "Diluted", _e, _e + 3)
+    _, ocf = row(path, "Operating activities", i0, i1 + 20)
+    _, capex = row(path, "Expenditures for property, plant and equipment", i0, i1 + 20)
+    hdr = next(x for x in lines(path)[i0:i0 + 8] if x.startswith("In millions of dollars, except per share data"))
+    yrs = [int(c) for c in cells(hdr)]
+    e = line_no(path, "Potential dilutive shares")
+    _, shr = row(path, "Potential dilutive shares", e, e + 1)
+    st = line_no(path, "CONSOLIDATED STATEMENTS OF INCOME")
+    _, pt = row(path, "Income from continuing operations before income taxes", st, st + 40)
+    _, tx = row(path, "Provision for income taxes", st, st + 40)
+    cf = line_no(path, "Cash flows from financing activities:")
+    _, rep = row(path, "Repurchases of Company ordinary shares", cf, cf + 4)
+    _, dvp = row(path, "Dividends paid", cf, cf + 4)
+    s24 = line_no(path, f"Year Ended December 31, {fy}", 0, line_no(path, "Potential dilutive shares"))
+    _, cust = row(path, "Customers", s24, s24 + 4)
+    s24p = line_no(path, f"Year Ended December 31, {fy - 1}", 0, s24)
+    _, custp = row(path, "Customers", s24p, s24p + 4)
+    assert cust[6] == rv[0] and custp[6] == rv[1], (fy, cust, custp, rv)
+    m = re.search(r"Refining\. Our Refining segment refines[^•]*?\.(?= •|$)", norm(" ".join(lines(path))))
+    refq = quote(path, m.group(0))
+    source(sid, acc, title, path,
+           f"FY{fy} annual history: the selected financial data (revenues and diluted EPS from continuing operations, five years), the "
+           "EPS note's diluted shares, the statements of income and cash flows, the segment note (revenues from customers), the "
+           "dividend increase and the risk factors (cyclicality, greenhouse gas regulation) and Item 1's segment description")
+    return dict(rv=dict(zip(yrs, rv)), ep=dict(zip(yrs, ep)), ocf=ocf[0], capex=capex[0], sh={fy: shr[0], fy - 1: shr[2], fy - 2: shr[4]},
+                pt=pt[0], tx=tx[0], rep=rep[0], dvp=dvp[0], cust=cust, custp=custp, why=quote(path, CYCQ), ghg=quote(path, GHGQ),
+                refq=refq, pub=SRC[sid]["published"])
+
+
+T13 = tenk(F13, K13, "LB4", 2013, "LyondellBasell Industries N.V. FY2013 10-K")
+T14 = tenk(F14, K14, "LB5", 2014, "LyondellBasell Industries N.V. FY2014 10-K")
+T15 = tenk(F15, K15, "LB6", 2015, "LyondellBasell Industries N.V. FY2015 10-K")
+T16 = tenk(F16, K16, "LB7", 2016, "LyondellBasell Industries N.V. FY2016 10-K")
+# Item 6 of the FY2013 and FY2014 10-Ks shows 2010 as its two periods (columns of the same year): their sum is the combined year the
+# FY2012 10-K's MD&A printed, which stays the 2010 revenue (the latest filing that prints the combined year)
+for path in (F13, F14):
+    i0, i1 = sel(path)
+    _, rv = row(path, "Sales and other operating revenues", i0, i1)
+    hdr = next(x for x in lines(path)[i0:i0 + 8] if x.startswith("In millions of dollars, except per share data"))
+    yrs = [int(c) for c in cells(hdr)]
+    assert sum(v for y, v in zip(yrs, rv) if y == 2010) == 38939, path
+assert T13["rv"][2009] == rev12[4] and T13["ep"][2011] == 4.32 and T13["ep"][2012] == 4.96
+assert [T13["ep"][2013], T14["ep"][2014], T15["ep"][2015], T16["ep"][2016]] == [6.76, 8.00, 9.60, 9.15]
+DIVQ = {2013: quote(F13, "We increased our interim dividends in 2013 from $0.40 to $0.60;"),
+        2014: quote(F14, "We increased our interim dividends in 2014 from $0.60 to $0.70;"),
+        2015: quote(F15, "We increased our interim dividend in 2015 from $0.70 to $0.78;"),
+        2016: quote(F16, "We increased our interim dividend from $0.78 to $0.85 in May 2016;")}
+DIVR = {2013: 0.60, 2014: 0.70, 2015: 0.78, 2016: 0.85}
+
+
+def vintage(prev, t, fy, sid):
+    """The next vintage: each year from the latest filing that reports it, the ten fiscal years to the latest one."""
+    rv = {k: v for k, v in prev["revenue_usd_b"].items()}
+    rs = dict(prev["revenue_sources"])
+    for y, v in t["rv"].items():
+        if y == 2010:
+            continue                                  # the two periods; the combined year stays (asserted above)
+        rv[str(y)], rs[str(y)] = v / 1000, sid
+    keep = [str(y) for y in range(fy - 9, fy + 1)]
+    rv = {y: rv[y] for y in keep if y in rv}
+    rs = {y: rs[y] for y in rv}
+    eps = dict(prev["eps_normalized"])
+    eps.update({str(y): v for y, v in t["ep"].items() if y >= 2011})
+    sh = dict(prev["diluted_shares_m"])
+    sh.update({str(y): v for y, v in t["sh"].items()})
+    srcs = [sid] + [s for s in dict.fromkeys(rs.values()) if s != sid]
+    return dict(base, published=t["pub"], sources=srcs, fy_label=f"FY{fy % 100}", fiscal_year_ends={str(fy): f"{fy}-12-31"},
+                eps_normalized=eps, eps_excluded={"2010": EXCL10},
+                revenue_usd_b=rv, revenue_sources=rs,
+                revenue_note=(f"{min(int(y) for y, s in rs.items() if s == sid)}-{fy} from the FY{fy} 10-K (continuing operations), "
+                              "2010 the FY2012 10-K's combined periods ($38,939M; the later 10-Ks show its two periods, which sum to it), "
+                              "earlier years from the latest earlier 10-K that reports them (2006-2007 with Berre, a seam); the ten "
+                              "fiscal years to the latest one"),
+                diluted_shares_m=sh,
+                shares_note="diluted weighted-average shares of the EPS note (2010: the Successor's May 1 to December 31)",
+                **FYM(fy, t["pt"], t["tx"], t["rv"][fy], t["rv"][fy - 1], f"FY{fy} 10-K"),
+                dividend_annual=round(DIVR[fy] * 4, 2),
+                dividend_note=f"${DIVR[fy]:.2f} a quarter, the interim dividend of {fy} (FY{fy} 10-K: '{DIVQ[fy]}')",
+                fcf_b=round((t["ocf"] + t["capex"]) / 1000, 3), fcf_label=f"FY{fy % 100}",
+                fcf_note=f"net cash provided by operating activities {usd_m(t['ocf'])} less capital expenditures {usd_m(-t['capex'])} (FY{fy} 10-K)",
+                cash_return_text=(f"{usd_m(-t['dvp'])} of dividends paid and {usd_m(-t['rep'])} of share repurchases in FY{fy % 100}"
+                                  if t["rep"] else f"{usd_m(-t['dvp'])} of dividends paid in FY{fy % 100}, no share repurchases"),
+                groups=seg_groups(t["cust"], t["custp"], SEGN12), groups_basis=f"FY{fy % 100} segment revenues from customers (FY{fy} 10-K)",
+                why=f"Risk factor (FY{fy} 10-K): {t['why']}" + THEMES,
+                refining_quote=t["refq"], transition_quote=t["ghg"], tenk_label=f"FY{fy} 10-K")
+
+
+V4 = vintage(V3, T13, 2013, "LB4")
+V5 = vintage(V4, T14, 2014, "LB5")
+V6 = vintage(V5, T15, 2015, "LB6")
+V7 = vintage(V6, T16, 2016, "LB7")
+assert "2006" in V6["revenue_usd_b"] and "2006" not in V7["revenue_usd_b"]
+
+# ── dividends: each declared interim rate from the first filing that states it (the Q4 2013 to Q2 2017 releases) ──
+DIV2 = [("Q4 2013", 0.60, "Increased interim dividend by 20 percent to $0.60 per share"),
+        ("Q1 2014", 0.70, "the Supervisory Board approved a 10 cent per share increase of the quarterly interim dividend to $0.70 per share"),
+        ("Q2 2015", 0.78, "Increased the interim quarterly dividend by 11 percent to 78 cents per share"),
+        ("Q2 2016", 0.85, "Increased second quarter 2016 interim dividend by 9% to $0.85 per share"),
+        ("Q2 2017", 0.90, "Increased second quarter 2017 dividend by 6% to $0.90 per share")]
+for qq, rate, s in DIV2:
+    dividends.append(dict(published=SRC[SID2[qq]]["published"], source=SID2[qq], quarterly=rate,
+                          note=f"${rate:.2f} a quarter, the interim dividend increase announced in the {qq} release",
+                          quote=quote(FREL2[qq], s)))
+
+# ── repurchase authorities: each annual meeting's approval (Item 5.07), display only (the share counts carry their effect) ──
+BB2 = [("LB31", "0001193125-14-151137", "2014"), ("LB32", "0001193125-15-183388", "2015"), ("LB33", "0001193125-16-591840", "2016"),
+       ("LB34", "0001193125-17-189202", "2017")]
+buybacks2 = []
+for sid, acc, yr in BB2:
+    fb = doc(acc, "8-K__")
+    source(sid, acc, f"LyondellBasell Industries N.V. 8-K (Item 5.07: the {yr} annual meeting)", fb,
+           "the shareholders' approval of the authority to repurchase up to 10% of the shares")
+    buybacks2.append(dict(published=SRC[sid]["published"], source=sid,
+                          quote=quote(fb, "The approval of the authority of the Management Board, acting with the approval of the "
+                                          "Supervisory Board, to repurchase up to 10% of the Company’s shares was approved"),
+                          note="display only: the diluted share counts carry its effect",
+                          text=f"the {yr} annual meeting's authority to repurchase up to 10% of the shares"))
+
 facts = dict(
     _doc=("LyondellBasell Industries N.V. (NYSE: LYB), point-in-time facts for retro/build_lyb.py. Every value carries its source and "
           "the source's publication date (EDGAR acceptance time; at or after the 16:00 ET close it counts from the next trading day). "
           "Generated by retro/generators/lyb/gen_lyb.py from the filings' converted rows: each figure is read from its labelled row, "
           "the row is asserted present in its own filing, and every rate, margin, tax rate and rule-T value is computed."),
     ticker="LYB", sources=dict(sorted(SRC.items(), key=lambda kv: (kv[1]["published"], kv[0]))), listing=listing, distributions=[],
-    history_vintages=[V1, V2, V3], prints=prints, guides=[], dividends=dividends, events=[], company_names=[],
+    history_vintages=[V1, V2, V3, V4, V5, V6, V7], prints=prints, guides=[], dividends=dividends, events=[], company_names=[],
     buyback_programs=[dict(published=SRC["LB30"]["published"], source="LB30", quote=BUYBACK_Q,
                            note="display only: the diluted share counts carry its effect",
-                           text="a share repurchase program for up to 10% of the shares from May 2013")],
+                           text="a share repurchase program for up to 10% of the shares from May 2013")] + buybacks2,
     rule_t=rule_t)
 
 out = A.out or os.path.join(REPO, "retro", "facts", "LYB.json")
@@ -605,7 +901,7 @@ with open(out, "w", encoding="utf-8") as fh:
 ck = A.checklist or os.path.join(SP, "checklist_lyb.json")
 with open(ck, "w", encoding="utf-8") as fh:
     json.dump({k: sorted(set(v)) for k, v in CHECK.items()}, fh, indent=1, ensure_ascii=False)
-print(f"wrote {out}: {len(prints)} prints, 3 vintages, {len(dividends)} dividends; checklist {ck} "
+print(f"wrote {out}: {len(prints)} prints, {len(facts["history_vintages"])} vintages, {len(dividends)} dividends; checklist {ck} "
       f"({sum(len(set(v)) for v in CHECK.values())} strings)")
 for k, e in rule_t.items():
     print(f"  rule T {k}: {e['values']} -> {e['thresholds']}")
