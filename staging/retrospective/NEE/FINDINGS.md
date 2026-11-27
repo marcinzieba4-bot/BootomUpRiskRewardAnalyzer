@@ -309,3 +309,106 @@ Worst drawdown within two years: -8.8% to -8.3%.
   and the adjusted outlook were close in these years (FY16E adjusted $5.85-6.35 against GAAP FY15 $6.06), so the anchor choice moved only 5
   classes and does not explain the miss.
 - **`profile_drift`** (the 2026 profile, read only by `retro_tool outcome`): DURABLE then and now, risk 2 then and 1 today. It enters nothing.
+
+# 2018-2021 (hindsight)
+
+Patterns seen in `outcome.json` for the 209 weekly dates from 2018-01-05 to 2021-12-31 (NextEra Energy, Inc., NYSE: NEE). The same terms as
+above: **labels and hypotheses**, never inputs. The batch was built in a new session that opened no NEE outcome, finding or series file of
+2008-2017 before its own outcomes were computed; it was scored only after its point-in-time build, validation outputs, README section and
+firewall result were committed and pushed (de74da5f7, d003d2fb9, 8177305b5, 789509959), on 2026-11-27. The earlier sections of this file
+were read only afterwards, to write this one. Every date has its 6-month, 1-, 2- and 3-year horizons (the last ends 2024-12-31; the
+4-for-1 split of 2020-10-27 falls inside the horizons of 2018-2020, handled by `retro_tool outcome`). Total returns include the quarterly
+dividends as traded. The hurdle, the medians and "call held" are as above.
+
+## 2018 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID (2018-01-05 to 2018-01-19) | 3 | +68.3% | +64.6% to +75.0% | 3 | 3 | +39.6% | 0 |
+| class CHEAP, legacy tier BUY (2018-01-26 to 2018-12-28) | 41 | +68.0% | +20.0% to +88.4% | 39 | 41 | +42.0% | 41 |
+| class CHEAP, legacy tier ACCUMULATE (2018-08-17 to 2018-08-17) | 1 | +67.3% | +67.3% to +67.3% | 1 | 1 | +38.8% | 1 |
+| class FAIR, legacy tier ACCUMULATE (2018-10-24 to 2018-11-23) | 3 | +76.9% | +74.0% to +78.5% | 3 | 3 | +45.9% | 0 |
+| class RICH, legacy tier ACCUMULATE (2018-11-16 to 2018-12-14) | 4 | +68.2% | +66.1% to +78.1% | 4 | 4 | +44.0% | 0 |
+| FY17E $6.25 (FY16's) (2018-01-05 to 2018-01-19) | 3 | +68.3% | +64.6% to +75.0% | 3 | 3 | +39.6% | 0 |
+| FY18E $11.38 (FY17's) (2018-01-26 to 2018-12-28) | 49 | +68.2% | +20.0% to +88.4% | 47 | 49 | +42.6% | 42 |
+| latest print Q3 2017 (2018-01-05 to 2018-01-19) | 3 | +68.3% | +64.6% to +75.0% | 3 | 3 | +39.6% | 0 |
+| latest print Q4 2017 (2018-01-26 to 2018-04-20) | 13 | +73.2% | +20.0% to +88.4% | 11 | 13 | +40.3% | 13 |
+| latest print Q1 2018 (2018-04-25 to 2018-07-20) | 13 | +56.5% | +46.2% to +72.5% | 13 | 13 | +42.0% | 13 |
+| latest print Q2 2018 (2018-07-26 to 2018-10-19) | 13 | +70.4% | +67.1% to +86.6% | 13 | 13 | +43.2% | 13 |
+| latest print Q3 2018 (2018-10-24 to 2018-12-28) | 10 | +77.0% | +66.1% to +84.9% | 10 | 10 | +45.9% | 3 |
+Three years: 52 of 52 cleared the hurdle, 52 beat SPY, total return +85.8% to +136.6%.
+One year: total return +13.3% to +43.3%. Two years against SPY: +19.5 to +72.9 points.
+Worst drawdown within two years: -35.6% to -8.1%.
+
+## 2019 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY (2019-01-04 to 2019-12-13) | 46 | +57.2% | +40.6% to +105.6% | 46 | 34 | +43.6% | 46 |
+| class FAIR, legacy tier ACCUMULATE (2019-01-11 to 2019-01-18) | 2 | +92.4% | +87.4% to +92.4% | 2 | 2 | +53.2% | 0 |
+| class CHEAP, legacy tier ACCUMULATE (2019-10-04 to 2019-12-27) | 4 | +53.1% | +40.8% to +55.5% | 4 | 2 | +32.2% | 4 |
+| FY18E $11.38 (FY17's) (2019-01-04 to 2019-01-18) | 3 | +87.4% | +78.2% to +92.4% | 3 | 3 | +53.2% | 1 |
+| FY19E $13.88 (FY18's) (2019-01-25 to 2019-12-27) | 49 | +55.9% | +40.6% to +105.6% | 49 | 35 | +42.5% | 49 |
+| latest print Q3 2018 (2019-01-04 to 2019-01-18) | 3 | +87.4% | +78.2% to +92.4% | 3 | 3 | +53.2% | 1 |
+| latest print Q4 2018 (2019-01-25 to 2019-04-18) | 13 | +67.7% | +53.5% to +105.6% | 13 | 13 | +48.6% | 13 |
+| latest print Q1 2019 (2019-04-24 to 2019-07-19) | 13 | +51.0% | +47.1% to +70.4% | 13 | 8 | +43.6% | 13 |
+| latest print Q2 2019 (2019-07-25 to 2019-10-18) | 13 | +54.1% | +40.6% to +60.9% | 13 | 6 | +38.6% | 13 |
+| latest print Q3 2019 (2019-10-23 to 2019-12-27) | 10 | +55.9% | +47.9% to +59.8% | 10 | 8 | +34.4% | 10 |
+Three years: 38 of 52 cleared the hurdle, 51 beat SPY, total return +29.1% to +120.0%.
+One year: total return +1.5% to +54.3%. Two years against SPY: -12.5 to +56.7 points.
+Worst drawdown within two years: -35.6% to -35.6%.
+
+## 2020 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY (2020-01-03 to 2020-01-03) | 1 | +57.5% | +57.5% to +57.5% | 1 | 1 | +33.4% | 1 |
+| class FAIR, legacy tier ACCUMULATE (2020-01-10 to 2020-01-17) | 2 | +43.3% | +36.0% to +43.3% | 2 | 0 | +31.9% | 2 |
+| class RICH, legacy tier AVOID (2020-01-24 to 2020-12-31) | 50 | +26.6% | -1.9% to +78.1% | 10 | 17 | +17.8% | 27 |
+| FY19E $13.88 (FY18's) (2020-01-03 to 2020-01-17) | 3 | +43.3% | +36.0% to +57.5% | 3 | 1 | +31.9% | 3 |
+| FY20E $7.76 (FY19's) (2020-01-24 to 2020-10-22) | 40 | +27.8% | -1.9% to +78.1% | 10 | 11 | +21.9% | 23 |
+| FY20E $1.94 (FY19's) (2020-10-30 to 2020-12-31) | 10 | +16.6% | +8.2% to +22.0% | 0 | 6 | +7.9% | 4 |
+| latest print Q3 2019 (2020-01-03 to 2020-01-17) | 3 | +43.3% | +36.0% to +57.5% | 3 | 1 | +31.9% | 3 |
+| latest print Q4 2019 (2020-01-24 to 2020-04-17) | 13 | +28.7% | +11.1% to +78.1% | 6 | 0 | +26.3% | 7 |
+| latest print Q1 2020 (2020-04-23 to 2020-07-17) | 13 | +28.0% | +18.8% to +37.3% | 2 | 3 | +33.4% | 10 |
+| latest print Q2 2020 (2020-07-24 to 2020-10-16) | 13 | +26.6% | -1.9% to +33.8% | 2 | 8 | +16.2% | 5 |
+| latest print Q3 2020 (2020-10-22 to 2020-12-31) | 11 | +14.3% | -1.0% to +22.0% | 0 | 6 | +7.9% | 5 |
+Three years: 1 of 53 cleared the hurdle, 4 beat SPY, total return -28.3% to +68.4%.
+One year: total return +6.2% to +50.8%. Two years against SPY: -33.2 to +11.0 points.
+Worst drawdown within two years: -35.6% to -22.5%.
+
+## 2021 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID (2021-01-08 to 2021-12-31) | 52 | -1.7% | -33.8% to +11.5% | 0 | 15 | -1.9% | 37 |
+| FY20E $1.94 (FY19's) (2021-01-08 to 2021-01-22) | 3 | +7.1% | +1.0% to +7.2% | 0 | 1 | -2.0% | 2 |
+| FY21E $1.48 (FY20's) (2021-01-27 to 2021-12-31) | 49 | -2.1% | -33.8% to +11.5% | 0 | 14 | -1.9% | 35 |
+| latest print Q3 2020 (2021-01-08 to 2021-01-22) | 3 | +7.1% | +1.0% to +7.2% | 0 | 1 | -2.0% | 2 |
+| latest print Q4 2020 (2021-01-27 to 2021-04-16) | 12 | +3.1% | -6.8% to +11.5% | 0 | 5 | +5.2% | 7 |
+| latest print Q1 2021 (2021-04-22 to 2021-07-16) | 13 | +5.1% | -1.7% to +11.2% | 0 | 9 | +7.2% | 4 |
+| latest print Q2 2021 (2021-07-23 to 2021-10-15) | 13 | -14.9% | -33.0% to +2.7% | 0 | 0 | -6.4% | 13 |
+| latest print Q3 2021 (2021-10-21 to 2021-12-31) | 11 | -30.0% | -33.8% to -26.5% | 0 | 0 | -18.0% | 11 |
+Three years: 0 of 52 cleared the hurdle, 0 beat SPY, total return -26.9% to +14.6%.
+One year: total return -12.5% to +18.5%. Two years against SPY: -34.0 to +9.4 points.
+Worst drawdown within two years: -47.2% to -26.6%.
+
+## Across 2018-2021
+
+- **Calls held on 159 of 209:** CHEAP 93 of 93, FAIR 2 of 7, RICH 64 of 109. The CHEAP calls of 2018-2019 all held (two-year total
+  returns +20% to +106%, SPY beaten on 79 of 93), but every one rests on the GAAP anchors that carry FY2017's tax reform and FiberNet gains
+  and FY2018's NEP deconsolidation gain: read at the company's adjusted $6.70 and $7.70, all 100 CHEAP and FAIR dates turn RICH (the
+  README's sensitivity). Right because the one-off gains lowered the measured multiple, not because the method saw the stock as cheap on
+  recurring earnings: the same fragility as 2015's CHEAP calls on hedge-marked revenue. Taking it as a lesson would mean fitting the
+  encoding to the outcome; the mirror-test reading was decided before any model was built, and it stays.
+- **The RICH calls split by year:** the 7 of 2018 all missed (+66% to +78% over two years), the 50 of 2020 held on 27 (two-year median
+  +26.6%, 10 cleared the hurdle, 17 beat SPY) and the 52 of 2021 held on 37 (median -1.7%, none cleared the hurdle, 15 beat SPY; as low
+  as -34% from the dates after the Q2 and Q3 2021 prints). After seven years in which the stock re-rated above its ten-year median and RICH kept missing, the
+  2021 calls at 48-63x GAAP EPS were the first run where the multiple came back.
+- **Scenario landing:** BULL on 168 dates, XBULL 31, BASE 10: less of the "beat even XBULL" pattern of 2010-2017, partly because the GAAP
+  FY2016-FY2018 jump widened BULL and XBULL (+49%/yr) to where the outcomes could land.
+- **Hypothesis 4 again, now with the reversal:** a ten-year P/E median lagged a lasting rerating through 2020, and the 2021 RICH calls held
+  as the multiple fell. One stock, one rate cycle; it says nothing about timing and must not be fitted. Test it on SO and other utilities.
+- **FPL's energy sales n/r** (BASE from the Q4 2017 print) moved 22 classes at BEAR and 10 at XBULL in the sensitivity; the outcomes do not
+  say whether the 10-Qs would have helped, and they were not read.
+- **`profile_drift`** (the 2026 profile, read only by `retro_tool outcome`): DURABLE then and now, risk 2 then and 1 today. It enters nothing.
