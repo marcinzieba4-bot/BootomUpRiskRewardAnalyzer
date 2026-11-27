@@ -27194,6 +27194,166 @@ Judgement calls that could carry hindsight:
 
 The hindsight results are in `staging/retrospective/SCHW/FINDINGS.md`: hypotheses, never inputs.
 
+### SCHW 2010-2013: four more vintages, the NYSE listing, Q1 2010 restated twice, the YieldPlus charges at GAAP, outlooks in bounds and words
+
+209 weekly dates, 2010-01-08 to 2013-12-31, on the same method, engine and rule-T thresholds. The owner asked for 2010-2013 ("do
+2010-2013"). This branch was still the newest code once the two commits that the CRM branch gained after it (CRM 2018-2021's firewall
+result and findings) were merged in. `www.sec.gov` again accepted a plain client name, so this is a full-data batch. Sources are
+`SCHW24`-`SCHW45`. The fact sheet only gains facts (a second generator loads it and asserts every earlier source, vintage, print, rule-T
+value and dividend unchanged), and the 105 earlier models rebuild byte for byte.
+
+```bash
+python3 retro/build_schw.py --weekly 2010-01-04 2013-12-31                  # 209 dates, 2010-01-08 .. 2013-12-31
+for d in staging/retrospective/SCHW/201[0-3]-*/; do
+  python3 retro/retro_tool.py --archive staging/retrospective run "$d"
+  python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
+done
+python3 retro/retro_tool.py --archive staging/retrospective series SCHW
+for c in 2010-01-04 2010-01-20 2010-02-25 2010-03-05 2010-04-15 2010-04-20 2010-05-07 2010-07-16 2010-10-15 2011-01-18 2011-02-25 \
+         2011-04-18 2011-07-18 2011-10-18 2012-01-18 2012-02-24 2012-04-16 2012-07-17 2012-10-15 2013-01-16 2013-02-25 2013-04-15 \
+         2013-07-16 2013-10-16 2014-01-01; do python3 retro/tools/firewall.py $c SCHW; done
+```
+
+**Same-session disclosure** (the CRM 2010-2012 precedent). This batch was decided in the session that built and scored 2008-2009 and wrote
+its findings. Those outcomes' three-year horizons run to 2012-12-31, so the session had seen Schwab's price path through 2012, and the
+findings quote FY2009's $0.68 and FY2010's $0.38 from the Q4 2009 and Q4 2010 releases, before choosing these encodings. No 2010-2013
+outcome was computed before the firewall result was pushed. No decision below changes a rule, threshold, signal or window. Each follows the
+2008-2009 encodings or an earlier ticker's, and each that could move a class is tested at the end.
+
+What was read (by the session's model directly, no delegated transcription; no filing accepted after 2013-12-31 opened): the FY2009-FY2012
+10-Ks (selected financial and operating data, the MD&A overview's client activity metrics, the statements of income, Items 1, 1A and 5,
+searched for "cyclical", "cloud" and "offshore", none found); every earnings release of Q4 2009 to Q3 2013 in full (narrative, statements
+of income, highlights, the reconciliations of figures excluding certain items, client assets and the monthly activity report); all 51 8-Ks
+and 8-K/As of 2010-2013 by their item text; the 10-Qs of Q1 2010 to Q3 2013, compared by script with their releases on the five signal
+rows (every one matches but Q1 2010, below), and the 10-Q/A of 2010-08-13 (exhibit 101 only). **Not read:** the proxy statements, the
+exhibits of the debt, preferred and merger 8-Ks beyond their item text, and every presentation and press release the company did not
+file: the Q4 2009 release says its results are "consistent with the outlook expressed in the company’s press release dated December 14,
+2009", and the Q1 2013 release the same of a press release of March 14, 2013. Neither was filed, so their outlooks are unused (the CRM
+rule for unfiled guidance) and a guide stated only there is missed. The 234 strings of this batch were checked with `verbatim.py`
+against their own filings (234/234). Decided on 2026-11-27, before any 2010-2013 model was built or outcome computed:
+
+- **The listing moves to the NYSE.** "On February 22, 2010, CSC announced that it is transferring the listing of its common stock to the
+  New York Stock Exchange (NYSE). CSC expects its common stock to begin trading on the NYSE on March 5, 2010, using its current symbol."
+  (FY2009 10-K, accepted 2010-02-25 14:43 ET; the announcement itself was not filed). `listings` takes the PEP encoding: the new exchange
+  from its stated effective date once the filing is public. Nasdaq: SCHW to 2010-02-26, NYSE: SCHW from 2010-03-05; the FY2010-FY2012
+  10-Ks' Item 5 says "listed on The New York Stock Exchange". Label only.
+- **Release timing.** The Q4 2009, Q1 2011, Q3 2011 and Q3 2013 earnings 8-Ks were accepted after the close (16:35, 17:10, 16:02 and 16:20
+  ET) and are dated the next trading day (2010-01-20, 2011-04-18, 2011-10-18, 2013-10-16); the others during the session (12:39-15:55
+  ET). Two Friday prints date their own weeks and meet their own closes, "released during the session": Q2 2010 (2010-07-16, 15:55 ET)
+  and Q3 2010 (2010-10-15, 15:32 ET). The FY2009, FY2010 and FY2011 10-Ks were accepted during the session and keep their days
+  (2010-02-25, 2011-02-25, 2012-02-24); the FY2012 10-K after the close (2013-02-22 16:58 ET), so it is dated 2013-02-25.
+- **History: four vintages,** each year from the latest filing that reports it, the ten fiscal years to the latest one (FY2003-FY2012 at
+  the end; FY2002 stays excluded and the window still starts 2003-01-01, reaching ten years in November 2012). GAAP diluted EPS: FY09
+  $0.68, FY10 $0.38, FY11 $0.70, FY12 $0.69 (per common share, after the preferred dividends that start in 2012). Every year a later 10-K
+  reports equals the earlier vintage's figure (asserted). FY2009's 10-K moves the provision for loan losses into net revenues and
+  restates net interest revenue; total net revenues are unchanged, and the segment bridge's "other" becomes the residual (the provision
+  and the net impairment losses on securities in), display only.
+- **EPS: GAAP, the YieldPlus and other charges in.** From Q3 2010 the releases reconcile "Net Income Excluding Certain Charges" (FY2010
+  $775M against $454M reported: $482M of class action and regulatory reserves, money market mutual fund charges and credit card program
+  costs, $321M after tax), and from Q4 2011 "Net Income Excluding Certain Items" (optionsXpress, the vendor-dispute gain), always in
+  dollars and never per share. So no filing publishes an EPS without them, and FY10 stays $0.38 (the ACN rule needs a company figure; the
+  CB 2010-2013 reading of a net-income-only figure). FY2010 does not meet the AAPL test either: its listed charges after tax ($321M) are
+  under its $454M net income ($0.38 is 59% of the year without them). This is the batch's largest call (below).
+- **Q1 2010 is restated twice** (the JPM Q1 2012 encoding, `restated`, each from its own filing): the release (2010-04-15) prints
+  expenses of $780M and pre-tax income of $198M; the 8-K of 2010-04-20 (accepted 15:04 ET) says the company "has increased the contingency
+  reserve ... by $172 million pre-tax", so from that day the quarter carries $952M and $26M (EPS about $0.01, the release's $0.10 less the
+  8-K's "approximately ... $0.09"); the Q1 2010 10-Q (2010-05-07, 12:46 ET) reports $965M and $13M with "a reserve of $196 million"
+  (EPS $0.00). The builder now takes `restated` (the JPM `as_restated`), re-deriving every restated value from its raw figures.
+- **No guide in a range or a level, so the rules are unchanged:** the last full year's EPS stands, BASE is the latest quarter's revenue
+  growth plus the net share change, and there is no margin step. Two releases give an outlook for the current year in bounds and words,
+  text only (`outlook_words` on the print, shown in the guide line and the third catalyst while its year is current):
+  - Q1 2010: "the company should achieve revenue growth at least in the low single digits, limit expense growth to about 4%, and deliver
+    a pre-tax profit margin of at least 25%": one-sided bounds and a cost component (the UNH `eps_bound` and SPGI rules), no field;
+  - Q3 2013: "we expect our 2013 revenue growth will outpace expenses by approximately 100 to 200 basis points, helping us to achieve a
+    pre-tax profit margin of at least 30% and earnings per share in the mid-$.70s for the year", and a 2014 aim of "a gap of
+    approximately 300 to 500 basis points between revenue and expense growth": "mid-$.70s" is words, not a range or a level (the SPGI
+    "high single-digit" rule; the EPS label says so), "at least 30%" a bound, the gaps components. The other releases' outlook sentences
+    are words ("our expectations for the company’s 2010 financial performance have not changed", "about where we’d expect to be").
+- **The 2009 expense goal** stays in the guide line only while 2009 is the current year (a text condition that changes no 2008-2009 model).
+- **Acquisitions and capital as published:** the January 2010 offering of 26.3M shares, Windward (2010), optionsXpress (merged
+  2011-09-01 for 1.02 Schwab shares each, in revenue, trades and shares from Q3 2011), ThomasPartners (2013), the Series A and B preferred
+  stock (2012). The net share term turns to issuance: +1.9%/yr to FY2010, +1.3% to FY2011, +0.75% to FY2012.
+- **Client assets as published:** from Q3 2013 the total is cut by $24.7B for "the consolidation of its retirement plan recordkeeping
+  platforms" while the year-ago total is not (a seam in that signal, noted on the print).
+- **Dividends:** $0.06 a quarter on every date (each release's "Dividends declared per common share"; no new rate in 2010-2013).
+- **Durability: DURABLE, risk 2,** the same reading of the FY2009-FY2012 10-Ks, which repeat the market-environment and price-competition
+  headings and never use "cyclical". From 2012-11-02, the first weekly date on or after CLOUD's live date (2012-10-30), the "why" quotes
+  every live theme's registered scope (the CB 2014-2017 and UNH wording): OFFSHORE's and CLOUD's name no brokerage or bank, and no 10-K
+  names cloud or offshore delivery, so the watch list stays empty.
+- **Adds nothing:** the 8-Ks on the YieldPlus class action and regulatory settlements (2010-10-15, 2010-11-08, 2010-11-30, 2011-01-14;
+  their charges reach the prints), the replacement capital covenant termination, the optionsXpress merger agreement and completion, the
+  common, preferred and debt offerings, the debt exchange, the trust preferred redemption, the segment recast of the FY2012 10-K (8-K of
+  2013-06-24; net revenues unchanged, asserted), the officer, director and bylaw 8-Ks.
+
+Controls and checks (before any outcome):
+- **Two leaks in this batch's own text, found and corrected before validation outputs were kept.** The Q1 2010 10-Q restatement's note
+  first cited "the Q4 2010 release's reconciliation footnote" (a 2011 filing) for the $196M; it now quotes the 10-Q's own sentence. The
+  listing note first said the Q1 2010 release prints "NYSE: SCHW" in a fact dated 2010-02-25; it now quotes the 10-K only. The first was
+  found by reading the restatement notes, the second by a forward-reference scan written for it (every year, quarter label and date in each
+  fact's own text against the fact's date, quoted filing text and the next-print label excepted: 0 remain).
+- **`retro_tool run` passes on all 209 dates.** Its warning for calendar years after the as-of date fires on 55 dates, each
+  for a number that only looks like a year: Q1 and Q2 2013's $2,084.9B and $2,050.9B of client assets (26 dates), the window comment's
+  trading-day count (18) and 1.2070 billion diluted shares (13).
+- **Controls:** altering one value of each new print (its quarter EPS; each Q4 print's full-year revenue), each Q1 2010 restatement (its
+  quarter EPS), each vintage (its last EPS year) and the listing (its exchange) changes no model dated before its publication: 27
+  controls, every one changing the first weekly date on or after it except the listing, which changes the dates from its effective
+  2010-03-05 (and not 2010-02-26, the first date after its filing).
+- **Leak scan** (all 314 models): 0 leaks in 138,668 (model, later token) pairs, with each restatement and the listing counted as facts
+  of their own dates and years left out. Three hits are coincidences of a comment's trading-day count with later figures: 1,275 days
+  (2008-01-25) and FY2012's 1,275M diluted shares, 1,290 days (2008-02-15) and Q1 2013's $1,290M net revenues, 2,145 days (2011-07-08)
+  and Q3 2013's $2,145.0B of client assets. As a positive control, the latest print's four notes (restated where public) appear in each of
+  the 314 models.
+- **Self-text scan:** 880 tokens over every fact of 2008-2013, no miss but the method's rule names.
+- **Regression:** rebuilding the 105 dates of 2008-2009 on the extended fact sheet and builder changes nothing.
+- **Firewall:** FIREWALL_RESULT
+
+Seen in the build (method behaviour, not tuned). The history now holds the two falling years, so BEAR is -35.8%/yr from the Q4 2009 print
+(FY08 to FY09) and -44.1%/yr from the Q4 2010 print (FY09 to FY10), XBULL still FY04-FY06's +62.9%/yr, and the class follows the last
+full year's EPS against a 7-10-year window whose median stays near 24-27x:
+- **CHEAP 90, FAIR 48, RICH 71; legacy tier BUY 67, ACCUMULATE 24, WATCHLIST 59, AVOID 59.** By year: 2010 CHEAP 25, FAIR 16, RICH 11;
+  2011 CHEAP 4, FAIR 20, RICH 28; 2012 CHEAP 50, FAIR 2; 2013 CHEAP 11, FAIR 10, RICH 32. The robustness block shows another class on 142 dates (most
+  often one step either side: CHEAP to FAIR on 50, FAIR to RICH on 46, FAIR to CHEAP on 41, RICH to FAIR on 35), and the same tier in all
+  eight variants on 20: these classes sit near their lines far more often than in 2008-2009.
+- **2010 rests on FY09's $0.68:** $13.22-19.88 is 19.4-29.2x, the 7th-71st percentile (median 25.1-25.8x), against floors of 19x and 20x
+  ($12.92, $13.60). BASE runs -20.5%/yr (Q4 2009's -23.2% revenue growth), -9.3% (Q1 2010), +2.2% (Q2 2010) and +7.8% (Q3 2010); the
+  Q1 2010 restatements move the expense gap from +15.1pp to +37.9pp and +39.6pp and the pre-tax margin change from -1,171bp to -2,930bp
+  and -3,062bp (both at BEAR); with the 8-K's figures 2010-04-23 and 2010-04-30 are RICH (FAIR as released, below), and from the 10-Q
+  (2010-05-07, the price down to $17.22) FAIR.
+- **2011 rests on FY10's $0.38, the charges in:** $10.77-19.45 is 28.3-51.2x, the 53rd-99th percentile, 42-156% above a floor of 20-21x
+  ($7.60, $7.98), so RICH 28 and FAIR 20 with the tier AVOID on 27 dates; Ratio B is infinite (the price above the BULL case) on
+  2011-02-11 and 2011-02-18. BASE equals BULL from Q4 2010 (+16.2%, +25.3%, +12.1%, +13.0%/yr), the revenue rebound with optionsXpress in.
+- **2012 rests on FY11's $0.70:** $11.67-15.46 is 16.7-22.1x, the 3rd-34th percentile, and CHEAP on all 52 dates from the Q4 2011 print
+  (2012-01-19 to 2013-01-11; BUY on 50); the price is under the EPP floor ($13.30, then $14.00) on 28 dates of 2012.
+- **2013 rests on FY12's $0.69:** $15.25-26.00 is 22.1-37.7x, the 34th-87th percentile of a 10-year window (median 24.6-25.0x), so CHEAP
+  to 2013-03-01 and on 2013-04-05 and 2013-04-12, FAIR from 2013-03-08, and RICH from 2013-05-31 (32 dates, all AVOID), the price at the
+  series high ($26.00) on its last date.
+- **The proxy composite** is 1.85-2.80 throughout (2.80 on Q1 2011: revenue +23.4% at BULL, the expense gap and the margin change at
+  XBULL against the restated Q1 2010).
+
+How far each call moves the classes (the 209 dates rebuilt with one encoding changed and classified offline; no outcome consulted):
+- FY2010 at $0.65, the releases' $775M of net income excluding charges over 1,194M diluted shares (a derived figure; no filing publishes
+  it): 67 classes (20 FAIR and 15 RICH to CHEAP, 14 CHEAP to FAIR, 9 FAIR to RICH, 9 RICH to FAIR) and 80 tiers, the batch's largest call;
+- FY2002 kept at $0.09 (no AAPL-test exclusion; the ten years and the window from 2002): 51 classes (34 FAIR and 7 RICH to CHEAP, 10 RICH
+  to FAIR) and 76 tiers;
+- the Q1 2010 "at least 25%" read as a FY2010 pre-tax margin of 25% (a guided step from FY09's 30.4%): 2 classes (FAIR to RICH), no tier;
+- Q1 2010 as released, without its two restatements: 2 classes (RICH to FAIR), no tier;
+- FY13E at $0.75 ("mid-$.70s" read as a level) from 2013-10-17: no class, no tier;
+- no net share change in BASE (a flat share history): 6 classes, 7 tiers;
+- every data signal at its BEAR value: 104 classes (51 CHEAP and 48 FAIR to RICH, 5 CHEAP to FAIR), no tier; at its XBULL value: 36
+  classes (23 FAIR and 1 RICH to CHEAP, 12 RICH to FAIR), no tier.
+
+Judgement calls that could carry hindsight:
+- FY2010 at GAAP with the YieldPlus and other charges in, by the rule that only a per-share company figure replaces GAAP (67 classes),
+  decided by a session that had seen FY2010's $0.38 and the stock's 2010-2012 path;
+- FY2002 still excluded (51 classes in this range, none in 2008-2009);
+- the Q1 2010 and Q3 2013 outlooks read as bounds and words (2 classes and none), and the two unfiled outlook press releases unused;
+- Q1 2010 restated from the 8-K's stated $172M before the 10-Q (2 classes either way);
+- the signals as chosen for 2008-2009 (unchanged), with the Q3 2013 client-asset seam left in;
+- DURABLE rather than CYCLICAL (label only).
+
+The hindsight results for 2010-2013 are in `staging/retrospective/SCHW/FINDINGS.md`, computed after the firewall result was pushed:
+hypotheses, never inputs.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
