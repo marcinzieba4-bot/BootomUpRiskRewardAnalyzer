@@ -41,7 +41,7 @@ and require byte-identical models. Restores the fact sheet and the price cache a
     python3 retro/tools/firewall.py 2009-01-01 NEE          # the NEE series (FPL Group, FPL) in staging/retrospective
     python3 retro/tools/firewall.py 2009-01-01 NEM          # the NEM series (Newmont Mining Corporation) in staging/retrospective
     python3 retro/tools/firewall.py 2013-01-01 LYB          # the LYB series in staging/retrospective (from the 2010 share issue)
-    python3 retro/tools/firewall.py 2010-01-01 CHTR         # the CHTR gate (no date built; retro/README.md, "CHTR 2008-2009", "CHTR 2014-2017")
+    python3 retro/tools/firewall.py 2010-01-01 CHTR         # the CHTR gate, and from 2019-02-01 its models (retro/README.md, "CHTR 2008-2009" to "CHTR 2018-2021")
 
 Plants a print, a history vintage, an event per live theme and a company name (UNP: also a guide and a
 dividend; LOW and AAPL: also a guide with every guided field; NKE: a guide in words, and futures orders on the last print before
@@ -548,8 +548,13 @@ if TICKER == "CHTR":   # no CHTR date is built (retro/README.md, "CHTR 2008-2009
     with open(FACTS, encoding="utf-8") as fh:
         f0 = json.load(fh)
     f1 = copy.deepcopy(f0)
-    yr = lambda who: {"issuer": who, "start": "PLANTED", "end": "PLANTED", "months": 12, "revenue_m": 0.01, "eps_diluted": 99.99,
-                      "eps_continuing": 99.99, "diluted_shares_m": 1.0}
+    chtr0, spx0 = build_chtr.trading_days("CHTR"), build_chtr.trading_days("^GSPC")
+    # (2018-2021) where the real facts already let the dates after the plant pass the gate, the planted vintage holds only losses, so
+    # that the control still sees it; before that, a positive year
+    probe = [d for d in sorted(spx0) if d >= later][:1]
+    sign = -1 if probe and not build_chtr.gate(probe[0], f0, {k: c for k, c in chtr0.items() if k <= probe[0]}) else 1
+    yr = lambda who: {"issuer": who, "start": "PLANTED", "end": "PLANTED", "months": 12, "revenue_m": 0.01, "eps_diluted": 99.99 * sign,
+                      "eps_continuing": 99.99 * sign, "diluted_shares_m": 1.0}
     f1["history_vintages"].append({"published": later, "source": "PLANTED", "fy_label": "FY99",
                                    "periods": {"2098": yr("Predecessor"), "2099": yr("Successor")}})
     f1["listings"].append({"published": later, "source": "PLANTED", "issuer": "Successor", "exchange": "PLANTED", "symbol": "PLANTED"})
@@ -575,7 +580,76 @@ if TICKER == "CHTR":   # no CHTR date is built (retro/README.md, "CHTR 2008-2009
     moved = [d for d in after if g(d, f0) != g(d, f1)]
     print(f"{len(before)} weekly dates before {cutoff}: {len(changed)} refusals changed by the planted later facts; "
           f"control: {len(moved)} of {len(after)} dates after {later} changed")
-    sys.exit(1 if changed or len(moved) != len(after) else 0)
+    gate_bad = bool(changed) or len(moved) != len(after)
+    # (2018-2021, retro/README.md, "CHTR 2018-2021") the built models: on disk, every kind of fact the builder reads planted after the
+    # cutoff with absurd values (a print, a vintage with its model fields and a year that would be distorted, the streaming words, a
+    # guide, a dividend, a listing, a no-dividend statement), and every price of CHTR and the S&P 500 from the cutoff on times 10; every
+    # model dated before the cutoff must rebuild byte for byte with no planted text
+    built = sorted(os.path.basename(d) for d in glob.glob(os.path.join(ARCHIVE, "20*")) if os.path.basename(d) < cutoff)
+    if not built:
+        print(f"0 models before {cutoff}: the model test does not apply")
+        sys.exit(1 if gate_bad else 0)
+    backup = tempfile.mkdtemp()
+    saved = {p: os.path.join(backup, f"{i}.json") for i, p in enumerate([FACTS] + CACHE)}
+    for p, b in saved.items():
+        shutil.copy(p, b)
+    mchanged = mplanted = ["not run"]
+    try:
+        f = copy.deepcopy(f0)
+        last = copy.deepcopy(max((p for p in f["prints"] if p["published"] < cutoff), key=lambda p: p["published"]))
+        last.update(published=later, release=later, release_time="PLANTED (before the open)", quarter="Q9 2099", sales_b=0.01,
+                    sales_pct=-60.0, rel_pct=-60.0, ocf_margin=1.0, ocf_margin_bp=-999.0, op_margin=-50.0, op_margin_bp=-999.0,
+                    capex_pct=99.0, capex_bp=999.0, eps_q=0.01, eps_q_prior=9.99, diluted_shares_m=1.0, cash_note="PLANTED",
+                    next_print="PLANTED", capex_outlook="PLANTED",
+                    raw={k: 1.0 for k in last["raw"]})
+        f["prints"].append(last)
+        v = copy.deepcopy(max((x for x in f["history_vintages"] if x["published"] < cutoff), key=lambda x: x["published"]))
+        v.update(published=later, source=last["source"], fy_label="FY99")
+        for k in v["periods"]:
+            v["periods"][k].update(eps_diluted=0.01, revenue_m=0.01, diluted_shares_m=1.0)
+        v["periods"]["2099"] = {**v["periods"][max(v["periods"])], "start": "2099-01-01", "end": "2099-12-31"}
+        v["one_off_tests"] = {**v.get("one_off_tests", {}), **{k: {"fy": k, "kind": "PLANTED", "income_attributable_m": 1,
+                                                                   "items_after_tax_m": 99, "income_without_m": -98, "distorted": True,
+                                                                   "figure_without_published": None, "item": "PLANTED"}
+                                                               for k in ("2018", "2019", "2020")}}
+        if "model" in v:
+            v["model"] = {**{k: "PLANTED" for k, x in v["model"].items() if isinstance(x, str)},
+                          **{k: -99.0 for k, x in v["model"].items() if isinstance(x, (int, float)) and not isinstance(x, bool)},
+                          "groups": [["PLANTED", 1, -99]], "business_quote": "We are a leading broadband connectivity company and cable operator PLANTED."}
+        f["history_vintages"].append(v)
+        for e in [e for e in f["events"] if e["published"] < cutoff][-1:]:
+            f["events"].append({**copy.deepcopy(e), "id": "PLANTED", "published": later, "doc": "PLANTED", "risk_quote": "PLANTED",
+                                "risk_short": "PLANTED", "offering": "PLANTED", "offering_short": "PLANTED"})
+        f["guides"].append({"fy": 2099, "published": later, "source": last["source"], "doc": "PLANTED", "eps_guide": [0.1, 0.2]})
+        f["dividends"].append({"published": later, "source": last["source"], "quarterly": 9.99, "note": "PLANTED"})
+        f["listings"].append({"published": later, "source": last["source"], "issuer": "PLANTED", "exchange": "PLANTED", "symbol": "PLANTED"})
+        f["no_dividend"].append({"published": later, "source": last["source"], "quote": "PLANTED"})
+        f["q4_actuals"].append({"published": later, "source": last["source"], "fy": 2099,
+                                "period": {**yr("Charter Communications, Inc."), "start": "2099-01-01"}})
+        with open(FACTS, "w", encoding="utf-8") as fh:
+            json.dump(f, fh, indent=1)
+        ts_cut = dt.datetime.fromisoformat(cutoff).timestamp()
+        for c in CACHE:
+            with open(c) as fh:
+                d = json.load(fh)
+            r = d["chart"]["result"][0]
+            for blk in r["indicators"].get("quote", []) + r["indicators"].get("adjclose", []):
+                for arr in blk.values():
+                    if isinstance(arr, list):
+                        for i, t in enumerate(r["timestamp"]):
+                            if t >= ts_cut and arr[i] is not None:
+                                arr[i] *= 10
+            with open(c, "w") as fh:
+                json.dump(d, fh)
+        subprocess.run([sys.executable, BUILDER, *built], check=True, capture_output=True)
+        mchanged = [l for l in git("status", "--porcelain", OUTDIR).splitlines() if l.strip()]
+        mplanted = [d for d in built if "PLANTED" in open(os.path.join(ARCHIVE, d, "model.py"), encoding="utf-8").read()]
+        print(f"{len(built)} models before {cutoff}: {len(mchanged)} files changed, {len(mplanted)} models contain planted text")
+    finally:
+        for p, b in saved.items():
+            shutil.copy(b, p)
+        git("checkout", "--", OUTDIR)
+    sys.exit(1 if gate_bad or mchanged or mplanted else 0)
 dates = sorted(os.path.basename(d) for d in glob.glob(os.path.join(ARCHIVE, "20*")) if os.path.basename(d) < cutoff)
 backup = tempfile.mkdtemp()
 changed = planted = ["not run"]

@@ -2,11 +2,11 @@
 # ENGINE — identical in every retrospective; everything above is dated facts.
 # FROZEN RULES (retro method r2): scenario inputs are derived from the facts
 # above, never chosen by hand, so no later knowledge can enter through them.
-# CHTR (Charter Communications) cable sibling: a copy of cmcsa_engine.py.tmpl (rules R1-R5,
-# scoring, robustness and export the same) with every signal threshold UNSET. No CHTR date is
-# built yet (retro/README.md, "CHTR 2008-2009"): the thresholds must come from rule T on CHTR's
-# own filings (retro/facts/CHTR.json) before any date is built, and the signals themselves are a
-# decision for that batch. Nothing of CMCSA's facts or thresholds is carried here.
+# CHTR (Charter Communications) cable sibling of cmcsa_engine.py.tmpl: rules R1-R5, scoring,
+# robustness and export the same, with the AVGO engine's short-history lines (the bounds rule)
+# and CHTR's own signals, whose thresholds come from rule T on Charter's own filings
+# (retro/facts/CHTR.json, rule_t; retro/README.md, "CHTR 2018-2021"). Nothing of CMCSA's facts
+# or thresholds is carried here.
 # ═════════════════════════════════════════════════════════════════════════════
 import math
 
@@ -26,48 +26,61 @@ def _ordinal(n):
 def _now(v, u):
     return "n/r" if v is None else f"{v:+.1f}{u}"   # n/r: not reported (no figure in the filings public on AS_OF)
 
+# Short history (the bounds rule, retro/README.md "AVGO", "CHTR 2018-2021"): Charter's history starts with FY2018, the first full year
+# after the loss years and the excluded FY2016 and FY2017, so some rules cannot be measured on the first dates; where a rule cannot be
+# measured, its own bound stands: BEAR's 0% cap, BULL's BASE floor, XBULL's BULL floor, no net buyback from one share count, a neutral
+# growth factor, a flat bridge. With enough years each line is r2's.
 _FY = sorted(EPS_NORM)     # a year excluded from the history (a distorted year, method r2) leaves a gap: growth is measured
                             # only between years in it (one-year changes between consecutive years, two-year runs between two)
 EPS_YOY           = [EPS_NORM[y] / EPS_NORM[y - 1] - 1 for y in _FY[1:] if y - 1 in EPS_NORM]
-REV_YOY           = [REVENUE_HIST[y] / REVENUE_HIST[y - 1] - 1 for y in sorted(REVENUE_HIST)[1:]]
-REV_MEDIAN_GROWTH = _median(REV_YOY)                                                # median revenue growth over the history
-REV_CAGR_10Y      = _cagr(REVENUE_HIST[min(REVENUE_HIST)], REVENUE_HIST[max(REVENUE_HIST)], max(REVENUE_HIST) - min(REVENUE_HIST))
+_RY               = sorted(REVENUE_HIST)
+REV_YOY           = [REVENUE_HIST[y] / REVENUE_HIST[y - 1] - 1 for y in _RY[1:] if y - 1 in REVENUE_HIST]
+REV_MEDIAN_GROWTH = _median(REV_YOY) if REV_YOY else None                          # median revenue growth over the history
+REV_CAGR_10Y      = _cagr(REVENUE_HIST[_RY[0]], REVENUE_HIST[_RY[-1]], _RY[-1] - _RY[0]) if len(_RY) > 1 else 0.0
 MARGIN_CONTRIB    = (FY_MARGIN_BASE - PREV_FY_MARGIN) / FY_MARGIN_BASE if MARGIN_GUIDED else 0.0   # guided margin step, as EPS growth
-BUYBACK           = _cagr(SHARES_HIST[max(SHARES_HIST)], SHARES_HIST[min(SHARES_HIST)], max(SHARES_HIST) - min(SHARES_HIST))
+_SY               = sorted(SHARES_HIST)
+BUYBACK           = _cagr(SHARES_HIST[_SY[-1]], SHARES_HIST[_SY[0]], _SY[-1] - _SY[0]) if len(_SY) > 1 else 0.0
 FWD_MID           = sum(FWD_GUIDE) / 2 / 100                                         # forward revenue growth (guide, else latest quarter)
 _SPAN             = f"FY{_FY[0] % 100:02d}-FY{_FY[-1] % 100:02d}" + "".join(f" ex-FY{y % 100:02d}" for y in range(_FY[0], _FY[-1]) if y not in EPS_NORM)
+_CAGR_ALL         = _cagr(EPS_NORM[_FY[0]], EPS_NORM[_FY[-1]], _FY[-1] - _FY[0]) if len(_FY) > 1 else None
+_RUNS             = [_cagr(EPS_NORM[y - 2], EPS_NORM[y], 2) for y in _FY[1:] if y - 2 in EPS_NORM]   # runs whose ends are both in it
 
 # R1  scenario EPS growth, current FY -> FY+2 (per year)
 SCENARIO_CAGR = {
-    "BEAR":  min(0.0, min(EPS_YOY)),                                    # worst year of the history, capped at 0
+    "BEAR":  min([0.0] + EPS_YOY),                                      # worst year of the history, capped at 0
     "BASE":  FWD_MID + MARGIN_CONTRIB + BUYBACK,                        # latest forward guide carried forward
-    "BULL":  _cagr(EPS_NORM[_FY[0]], EPS_NORM[_FY[-1]], _FY[-1] - _FY[0]),   # EPS CAGR over the history
-    "XBULL": max(_cagr(EPS_NORM[y - 2], EPS_NORM[y], 2) for y in _FY[2:] if y - 2 in EPS_NORM),   # best 2-yr run of the history
+    "BULL":  _CAGR_ALL if _CAGR_ALL is not None else -math.inf,          # EPS CAGR over the history (none: BASE's, below)
+    "XBULL": max(_RUNS) if _RUNS else -math.inf,                         # best 2-yr run of the history (none: BULL's, below)
 }
 SCENARIO_CAGR["BULL"]  = max(SCENARIO_CAGR["BULL"], SCENARIO_CAGR["BASE"])
 SCENARIO_CAGR["XBULL"] = max(SCENARIO_CAGR["XBULL"], SCENARIO_CAGR["BULL"])
 SCENARIO_EPS = {k: round(EPP_TODAY_EPS * (1 + g) ** 2, 2) for k, g in SCENARIO_CAGR.items()}
-# R2  scenario P/E = percentile band of the stock's own P/E over the window (up to 10 yr)
+# R2  scenario P/E = percentile band of the stock's own P/E over the window (up to 10 yr; from the listing, the listing rule)
 SCENARIO_PE  = {"BEAR": PE_PCTL["p10"], "BASE": PE_PCTL["median"], "BULL": PE_PCTL["p75"], "XBULL": PE_PCTL["p90"]}
 SCENARIO_TXT = {
-    "BEAR":  (f"EPS {SCENARIO_CAGR['BEAR']*100:+.1f}%/yr (worst year {_SPAN}, capped at 0%); P/E to its 10th pct" if SCENARIO_CAGR["BEAR"] < 0
-              else f"Flat EPS (worst year {_SPAN}, capped at 0%); P/E to its 10th pct"),
-    "BASE":  f"EPS +{SCENARIO_CAGR['BASE']*100:.1f}%/yr ({FWD_BASIS_SHORT} + margin + buyback); P/E at its {WINDOW_LABEL} median",
-    "BULL":  f"EPS +{SCENARIO_CAGR['BULL']*100:.1f}%/yr ({_SPAN} CAGR); P/E holds its 75th pct",
-    "XBULL": f"EPS +{SCENARIO_CAGR['XBULL']*100:.1f}%/yr (best 2-yr run {_SPAN}); P/E at its 90th pct",
+    "BEAR":  (f"EPS {SCENARIO_CAGR['BEAR']*100:+.1f}%/yr (worst year {_SPAN}, capped at 0%); P/E to its 10th pct" if EPS_YOY else
+              f"Flat EPS (no EPS change in {_SPAN} to measure: the 0% cap); P/E to its 10th pct"),
+    "BASE":  f"EPS {SCENARIO_CAGR['BASE']*100:+.1f}%/yr ({FWD_BASIS_SHORT} + margin + buyback); P/E at its {WINDOW_LABEL} median",
+    "BULL":  (f"EPS {SCENARIO_CAGR['BULL']*100:+.1f}%/yr ({_SPAN} CAGR, at least BASE); P/E holds its 75th pct" if _CAGR_ALL is not None else
+              f"EPS {SCENARIO_CAGR['BULL']*100:+.1f}%/yr (no {_SPAN} CAGR to measure: BASE's rate); P/E holds its 75th pct"),
+    "XBULL": (f"EPS {SCENARIO_CAGR['XBULL']*100:+.1f}%/yr (best 2-yr run {_SPAN}, at least BULL); P/E at its 90th pct" if _RUNS else
+              f"EPS {SCENARIO_CAGR['XBULL']*100:+.1f}%/yr (no 2-yr run in {_SPAN}: BULL's rate); P/E at its 90th pct"),
 }
 # R3  EPP floor P/E = median of the calendar-year P/E lows, rounded down
 EPP_MIN_PE = float(math.floor(_median([pe for _, pe, _ in YEARLY_MIN_PE])))
 # R4  structural factors: valuation and growth are mechanical, the rest are constant across dates
 PE_NOW          = CURRENT_PRICE / EPP_TODAY_EPS
 VALUATION_SCORE = round(max(-0.5, min(0.5, -(PE_NOW_PCTL - 50) / 60)), 2)    # >=80th pct -0.5, median 0, <=20th +0.5
-GROWTH_SCORE    = round(max(-0.5, min(0.5, (FWD_MID - REV_MEDIAN_GROWTH) * 10)), 2)   # 0.1 per pp vs own history
+GROWTH_SCORE    = (round(max(-0.5, min(0.5, (FWD_MID - REV_MEDIAN_GROWTH) * 10)), 2)   # 0.1 per pp vs own history
+                   if REV_MEDIAN_GROWTH is not None else 0.0)                  # no revenue change in the history yet: neutral
 STRUCTURAL_FACTORS = [
     (SHARE_GAIN_TEXT, 0.4, 0.20),
     (f"Multiple: {PE_NOW:.1f}x {FY_E_S} vs a {PE_PCTL['median']}x {WINDOW_LABEL} median ({_ordinal(PE_NOW_PCTL)} percentile of its own range)",
      VALUATION_SCORE, 0.25),
-    (f"Growth vs own history: {FWD_GUIDE_LABEL} {_pct_range(*FWD_GUIDE)} "
-     f"vs a {REV_MEDIAN_GROWTH*100:.1f}% {len(REV_YOY)}-yr median", GROWTH_SCORE, 0.20),
+    ((f"Growth vs own history: {FWD_GUIDE_LABEL} {_pct_range(*FWD_GUIDE)} "
+      f"vs a {REV_MEDIAN_GROWTH*100:.1f}% {len(REV_YOY)}-yr median") if REV_MEDIAN_GROWTH is not None else
+     (f"Growth vs own history: {FWD_GUIDE_LABEL} {_pct_range(*FWD_GUIDE)}; no revenue change in the history "
+      f"(FY{_RY[0] % 100:02d} only) to compare it with"), GROWTH_SCORE, 0.20),
     (BALANCE_TEXT, 0.3, 0.15),
 ] + [tuple(f) for f in THEME_FACTORS]
 # R5  conservative case: base growth minus 2pp, exit at the median P/E (rounded down), signals at their BASE floor
@@ -75,25 +88,27 @@ CONS_EPS_CAGR = max(0.0, SCENARIO_CAGR["BASE"] - 0.02)
 CONS_EXIT_PE  = float(math.floor(PE_PCTL["median"]))
 
 # ── SIGNALS (thresholds frozen; values are the latest reported quarter) ───────
-# thresholds by rule T on CHTR's own 1997-2006 filings: UNSET (None) until the first buildable batch derives them;
-# retro/build_chtr.py refuses every date before that, and this assertion stops a model that would use them
-RULE_T_UNSET = None
+# thresholds by rule T (retro/README.md, "CHTR 2018-2021"; retro/facts/CHTR.json, rule_t): BULL = the median of the Successor's
+# 2011-2018 year-on-year changes (the decade of the FY2018 10-K, the vintage public on the first date, 2019-02-01), XBULL = the best
+# year, BASE = the worst year, BEAR = one median-to-worst step beyond the worst (mirrored for capital intensity, where lower is
+# better); retro/build_chtr.py re-derives these numbers from the fact sheet. Revenues, Adjusted EBITDA and income from operations from
+# the release's statement of operations, purchases of property, plant and equipment from its statement of cash flows, total customer
+# relationships from its key operating results, each against the year-ago quarter in the same release
 SIGNALS = [
-    ("Video customer growth", "% YoY", RULE_T_UNSET, RULE_T_UNSET, RULE_T_UNSET, RULE_T_UNSET, float(LATEST["video_pct"]), True,
-     "Satellite and phone-company video take customers"),
-    ("Revenue growth", "% YoY", RULE_T_UNSET, RULE_T_UNSET, RULE_T_UNSET, RULE_T_UNSET, float(LATEST["sales_pct"]), True,
-     "Housing, advertising and price pressure"),
-    ("Operating cash flow margin change", "bp YoY", RULE_T_UNSET, RULE_T_UNSET, RULE_T_UNSET, RULE_T_UNSET, float(LATEST["ocf_margin_bp"]), True,
-     "Programming costs outrun price increases"),
-    ("Capital intensity change", "bp YoY", RULE_T_UNSET, RULE_T_UNSET, RULE_T_UNSET, RULE_T_UNSET, float(LATEST["capex_bp"]), False,
-     "Boxes and network spend rise with churn"),
-    (MARGIN_SIGNAL_NAME, "bp YoY", RULE_T_UNSET, RULE_T_UNSET, RULE_T_UNSET, RULE_T_UNSET,
+    ("Customer relationship growth", "% YoY", 2.0, 3.0, 5.0, 293.0, float(LATEST["rel_pct"]), True,
+     "Fiber, wireless and satellite rivals take customers"),
+    ("Revenue growth", "% YoY", -4.0, 2.0, 8.0, 197.0, float(LATEST["sales_pct"]), True,
+     "Video losses and price pressure outrun Internet growth"),
+    ("Adjusted EBITDA margin change", "bp YoY", -240.0, -120.0, 0.0, 160.0, float(LATEST["ocf_margin_bp"]), True,
+     "Programming and mobile costs outrun price increases"),
+    ("Capital intensity change", "bp YoY", 960.0, 510.0, 60.0, -550.0, float(LATEST["capex_bp"]), False,
+     "Network and equipment spend rise"),
+    (MARGIN_SIGNAL_NAME, "bp YoY", -560.0, -290.0, -30.0, 210.0,
      round((FY_MARGIN_BASE - PREV_FY_MARGIN) * 100, 1) if MARGIN_GUIDED else float(LATEST["op_margin_bp"]), True,
-     "Depreciation and interest on slower sales"),
+     "Depreciation and costs on slower sales"),
     (THEME_SIGNAL_NAME, "/4", 1.0, 2.0, 3.0, 4.0, 2.0, True,
      THEME_SIGNAL_TRIGGER),
 ]
-assert all(x is not None for s in SIGNALS for x in s[2:6]), "CHTR's rule-T thresholds are unset: derive them first"
 WEIGHTS = [0.20, 0.20, 0.15, 0.15, 0.15, 0.15]
 CONS_SIGNALS = [(i, s[3], f"BASE floor (vs {s[6]:+.0f} now)" if s[6] is not None else "BASE floor (not reported now)")
                 for i, s in enumerate(SIGNALS)]
@@ -236,8 +251,8 @@ _verdict = ev["verdict"]
 ratio_b  = ev["rb"]
 signal_short, signal_full = legacy_tier(ratio_b)
 L = LATEST
-# video subscriber growth in the text (every release of the period states video subscribers against the year-ago quarter)
-_pr_move = f"video subscriber growth went from {_now(PREV_VIDEO[0], '%')} ({PREV_VIDEO[1]}) to {_now(L['video_pct'], '%')} ({L['quarter']})"
+# customer relationship growth in the text (every release of the period states total customer relationships against the year-ago quarter)
+_pr_move = f"customer relationship growth went from {_now(PREV_REL[0], '%')} ({PREV_REL[1]}) to {_now(L['rel_pct'], '%')} ({L['quarter']})"
 
 # ── OUTPUT ────────────────────────────────────────────────────────────────────
 print()
@@ -263,8 +278,8 @@ print(f"  {'TOTAL':<24}  {CUR}{tot_now:>8.1f}  {CUR}{tot_bear:>6.1f}  {CUR}{tot_
 _fyg = FY_REVENUE_B / REVENUE_HIST[max(REVENUE_HIST)] - 1
 print(f"  {FY_E} = {FY_PREV} ${REVENUE_HIST[max(REVENUE_HIST)]:.2f}B × (1 {'+' if _fyg >= 0 else '−'} {abs(_fyg)*100:.1f}%: {FY_REVENUE_LABEL}); "
       f"split pro rata to {GROUPS_BASIS}")
-print(f"  {L['quarter']} ({L['release']}): revenues ${L['sales_b']:.2f}B {L['sales_pct']:+.1f}%; video subscribers {_now(L['video_pct'], '%')};")
-print(f"  operating cash flow margin {L['ocf_margin']:.2f}% ({L['ocf_margin_bp']:+.1f}bp); operating margin {L['op_margin']:.2f}% ({L['op_margin_bp']:+.1f}bp);")
+print(f"  {L['quarter']} ({L['release']}): revenues ${L['sales_b']:.2f}B {L['sales_pct']:+.1f}%; customer relationships {_now(L['rel_pct'], '%')};")
+print(f"  Adjusted EBITDA margin {L['ocf_margin']:.2f}% ({L['ocf_margin_bp']:+.1f}bp); operating margin {L['op_margin']:.2f}% ({L['op_margin_bp']:+.1f}bp);")
 print(f"  capital expenditures {L['capex_pct']:.2f}% of revenues ({L['capex_bp']:+.1f}bp); EPS ${L['eps_q']:.2f} vs ${L['eps_q_prior']:.2f}")
 print(f"  {VOLUMES_TEXT}")
 print(f"  {GUIDE_TEXT}")
@@ -312,8 +327,8 @@ print(f"\n  Bear composite:  {bear_composite:.2f}  →  Bear scenario price: ~{C
 print(f"  Bear probability (proxy model):  {proxy_probs['BEAR']*100:.1f}%")
 print(f"""
   KEY TRIGGER: {_pr_move};
-  the bear case needs video losses that revenue growth ({L['sales_pct']:+.1f}% now) and the
-  operating cash flow margin no longer absorb. {KEY_TRIGGER_TAIL}""")
+  the bear case needs customer losses that revenue growth ({L['sales_pct']:+.1f}% now) and the
+  Adjusted EBITDA margin no longer absorb. {KEY_TRIGGER_TAIL}""")
 
 print(f"\n  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)")
 print("  " + "─" * (W-2))
@@ -363,7 +378,7 @@ print(f"  1-sigma range (1yr):  {CUR}{CURRENT_PRICE - sigma_1yr:,.0f}  –  {CUR
 print(f"  2-sigma range (1yr):  {CUR}{CURRENT_PRICE - 2*sigma_1yr:,.0f}  –  {CUR}{CURRENT_PRICE + 2*sigma_1yr:,.0f}")
 print(f"  {'─'*60}")
 print(f"  Bear {CUR}{SCENARIOS['BEAR'][2]:,} requires:  ~{sigma_needed_bear:.1f}σ price move  {'(unusual — requires fundamental break)' if sigma_needed_bear > 1.5 else '(within normal vol range)'}")
-print(f"""  The largest U.S. cable operator with a {VOL_BETA:.1f} beta: the stock is {(CURRENT_PRICE/REF_LOW-1)*100:+.0f}% off its {REF_LOW_LABEL}
+print(f"""  {KIND_TEXT} with a {VOL_BETA:.1f} beta: the stock is {(CURRENT_PRICE/REF_LOW-1)*100:+.0f}% off its {REF_LOW_LABEL}
   low while {_pr_move}.
   {'The rally is in the multiple, not the numbers.' if CURRENT_PRICE / REF_LOW > 1.10 else 'Near the low: the multiple has de-rated alongside the numbers.'}""")
 
@@ -415,8 +430,8 @@ for name_, kw in VARIANTS:
 print()
 print("═" * W)
 print("  Key catalysts to watch (from the as-of date):")
-print(f"  (1) {NEXT_PRINT} — the next read on video subscribers ({_now(L['video_pct'], '%')} now) and the guide")
-print(f"  (2) Operating cash flow margin — {L['ocf_margin_bp']:+.1f}bp in {L['quarter']}: programming costs against pricing, what must hold if subscribers do not")
+print(f"  (1) {NEXT_PRINT} — the next read on customer relationships ({_now(L['rel_pct'], '%')} now)")
+print(f"  (2) Adjusted EBITDA margin — {L['ocf_margin_bp']:+.1f}bp in {L['quarter']}: programming and mobile costs against pricing, what must hold if customers do not")
 print(f"  {CATALYST_3}")
 print(f"  {CATALYST_4}")
 print(f"  (5) Capital return at {PE_NOW:.0f}x — {CAPITAL_RETURN}: management's own read of the multiple")
@@ -432,7 +447,7 @@ summary = (
     f"{epp_gap_pct:+.0f}% above the EPP floor ${epp_updated:,.0f} ({EPP_MIN_PE:.0f}x {FY_E_S} ${EPP_TODAY_EPS:.2f}) | "
     f"Conservative 2-yr case: {cons_total_ret:+.1f}% total ({cons_annual_ret:+.1f}%/yr) | "
     f"At {PE_NOW:.1f}x {FY_E_S} the 15% hurdle price ${market_target_ev:,.0f} sits {_band}; "
-    + f"video subscribers {_now(L['video_pct'], '%')} in {L['quarter']}"
+    + f"customer relationships {_now(L['rel_pct'], '%')} in {L['quarter']}"
     + f", forward revenues {_pct_range(*FWD_GUIDE)} ({FWD_GUIDE_LABEL}); {THEME_SUMMARY}."
 )
 RESULT = {

@@ -1,0 +1,160 @@
+
+════════════════════════════════════════════════════════════════════════
+  CHTR  ·  Charter Communications, Inc.  ·  $494.47  ·  RETROSPECTIVE as of 2020-01-03
+  Signal: ✕ AVOID   Ratio B: infx   Adj gap: -1.73  [OVERVALUED]
+  Point-in-time: 6 sources, latest published 2020-01-03; latest print Q3 2019 (2019-10-25)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2019E revenues, USD bn  →  FY2021E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2019E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Residential               $    36.4  $  36.4  $  36.4      +0.0      +0.0
+    +4.1% revenues in FY18
+  Small and medium busines  $     3.9  $   3.9  $   3.9      +0.0      +0.0
+    +3.3% revenues in FY18
+  Enterprise                $     2.7  $   2.7  $   2.7      +0.0      +0.0
+    +6.5% revenues in FY18
+  Advertising sales         $     1.9  $   1.9  $   1.9      +0.0      +0.0
+    +18.2% revenues in FY18
+  Mobile                    $     0.1  $   0.1  $   0.1      +0.0      +0.0
+    new in FY18 (no prior year)
+  Other                     $     1.0  $   1.0  $   1.0      +0.0      +0.0
+    +2.3% revenues in FY18
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    46.0  $  46.0  $  46.0      +0.0      +0.0
+  FY2019E = FY18 $43.63B × (1 + 5.1%: no FY19 revenue guide in numbers, Q3 2019 revenues as reported, applied to the year (no FY19 revenue guide)); split pro rata to FY18 revenues by service offering (10-K)
+  Q3 2019 (2019-10-25): revenues $11.45B +5.1%; customer relationships +4.0%;
+  Adjusted EBITDA margin 35.69% (-58.0bp); operating margin 13.85% (+118.0bp);
+  capital expenditures 14.42% of revenues (-503.0bp); EPS $1.74 vs $2.11
+  total customer relationships 28,967K against 27,855K a year earlier (+3.99%), as the release shows them; purchases of property, plant and equipment $1,651M against $2,118M; During the third quarter, Charter purchased approximately 7.8 million shares of Charter Class A common stock and Charter Communications Holdings, LLC ("Charter Holdings") common units for approximately $3.1 billion
+  FY19: no revenue, EPS or margin guide in numbers (BASE takes Q3 2019 revenue growth as reported); capital expenditure outlook in words: 'Charter currently expects capital expenditures, excluding capital expenditures related to mobile, to be slightly below $7 billion in 2019, versus $8.9 billion in 2018.'
+
+  FY2019E EPS check:  $46.0B × 3.9% pre-tax × (1−10.7%) ÷ 0.222B  =  $7.13  (FY2019E: no EPS guide in numbers, FY18's $5.22 (GAAP) stands)
+  FY2021E BEAR check: $46.0B × 3.9% ÷ 0.222B  =  $7.13  (scenario $5.22)
+  FY2021E BULL check: $46.0B × 4.3% ÷ 0.222B  =  $7.87  (scenario $5.77)
+  Every 1pp of pre-tax margin ≈ $1.85 EPS ≈ $123/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Customer relationship growth        +2.0%    ≥3.0%    ≥5.0%  ≥293.0%     +4.0%  ◦ BASE  ██░░
+  Revenue growth                      -4.0%    ≥2.0%    ≥8.0%  ≥197.0%     +5.1%  ◦ BASE  ██░░
+  Adjusted EBITDA margin change     -240.0bp  ≥-120.0bp   ≥0.0bp  ≥160.0bp   -58.0bp  ◦ BASE  ██░░
+  Capital intensity change          +960.0bp  ≤510.0bp  ≤60.0bp  ≤-550.0bp  -503.0bp  ▲ BULL  ███░
+  Operating margin change           -560.0bp  ≥-290.0bp  ≥-30.0bp  ≥210.0bp  +118.0bp  ▲ BULL  ███░
+  Streaming: net effect on video demand   +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.30 / 4.00
+  Market composite:   3.93 / 4.00  (back-solved from $494 + 15% hurdle)
+  SCA adjustment:    +0.00  ·  EPP-distance adj -0.10  →  Adj composite 2.20  →  Gap -1.73  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY18 revenues +4.9%, total customer relationships +3.47% (10-K); Q3 Adjusted EBITDA margin 35.69% (-58.0bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 94.7x FY19E vs a 66.4x 2.0-yr median (100th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    ·  Growth vs own history: no FY19 revenue guide in numbers, Q3 2019 revenues as reported +5.12%; no revenue change in the history (FY18 only) to compare it with  (+0.00 × 20%  =  +0.000)
+    +  FY18 year-end cash $0.55B, FY18 free cash flow $2.64B (operating cash flow less purchases of property, plant and equipment), no dividend, During the third quarter, Charter purchased approximately 7.8 million shares of Charter Class A common stock and Charter Communications Holdings, LLC ("Charter Holdings") common units for approximately $3.1 billion  (+0.30 × 15%  =  +0.045)
+    +  Own streaming: a cloud-based guide incorporating online video services  (+0.20 × 10%  =  +0.020)
+    -  Online video competition (FY2018 10-K): services from V-MVPDs and new direct to consumer offerings, as well as piracy and password sharing, could negatively impact the growth of our video business  (-0.20 × 10%  =  -0.020)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Customer relationship growth         +4.0%     +2.0%   -2.0%  Fiber, wireless and satellite rivals …
+  Revenue growth                       +5.1%     -4.0%   -9.1%  Video losses and price pressure outru…
+  Adjusted EBITDA margin change      -58.0bp  -240.0bp  -182.0bp  Programming and mobile costs outrun p…
+  Capital intensity change          -503.0bp  +960.0bp  +1463.0bp  Network and equipment spend rise
+  Operating margin change           +118.0bp  -560.0bp  -678.0bp  Depreciation and costs on slower sales
+  Streaming: net effect on video demand    +2.0/4    +1.0/4  -1.0/4  Online video takes video customers fa…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$320  (model)  /  $290 (defined)
+  Bear probability (proxy model):  12.9%
+
+  KEY TRIGGER: customer relationship growth went from +3.8% (Q2 2019) to +4.0% (Q3 2019);
+  the bear case needs customer losses that revenue growth (+5.1% now) and the
+  Adjusted EBITDA margin no longer absorb. Online video, fiber and wireless rivals are the competition the 10-K names;
+  Internet, mobile and business growth must cover the video losses.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $5.22  (FY2019E: no EPS guide in numbers, FY18's $5.22 (GAAP) stands)
+  Min viable P/E at panic:          54x  [median of calendar-year P/E lows: 2018 50.0x, 2019 54.5x, 2020 94.0x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $282/share
+  Current $494 vs Updated EPP $282:  +75%  ⚠ far above floor — large drawdown room
+  Bear $290 vs Updated EPP $282:  +3%  ✓ bear stays above the floor
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Customer relationship growth                 3.0       -1.0   BASE floor (vs +4 now)
+  Revenue growth                               2.0       -3.1   BASE floor (vs +5 now)
+  Adjusted EBITDA margin change             -120.0      -62.0   BASE floor (vs -58 now)
+  Capital intensity change                   510.0    +1013.0   BASE floor (vs -503 now)
+  Operating margin change                   -290.0     -408.0   BASE floor (vs +118 now)
+  Streaming: net effect on video demand             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $5.22 × (1+3.1%)² = $5.55
+  At 66x P/E (conservative):  $366/share
+  + Cumul. dividends (2yr):  +$0.00/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $366  (▼128 from $494)
+  Conservative total return:  -26% over 2yr  = -13%/yr
+
+  3.1% EPS growth is what is left once the premium multiple (94.7x)
+  mean-reverts to 66x. Breakeven at 66x needs FY2021E EPS of $7.49,
+  i.e. 19.8%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $279.33  –  $496.59  (at 99th pct of range)
+  Annual dividend:      $0.00/share  (yield 0.0%)
+  Realized vol (1yr):   21% annualized
+  Beta vs broad market: 0.67
+  1-sigma range (1yr):  $391  –  $598  ($494 ± 21%)
+  2-sigma range (1yr):  $288  –  $701
+  ────────────────────────────────────────────────────────────
+  Bear $290 requires:  ~2.0σ price move  (unusual — requires fundamental break)
+  The second largest U.S. cable operator with a 0.7 beta: the stock is +74% off its January
+  low while customer relationship growth went from +3.8% (Q2 2019) to +4.0% (Q3 2019).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        5.22  55.5x  $    290    12.9%      1.2%   +11.7pp  Flat EPS (no EPS change in FY18-FY18 to measure: the 0% cap); P/E to its 10th pct
+  BASE        5.77  66.4x  $    383    45.2%      4.3%   +40.9pp  EPS +5.1%/yr (Q3 revenues + margin + buyback); P/E at its 2.0-yr median
+  BULL        5.77  74.9x  $    432    35.2%     15.0%   +20.2pp  EPS +5.1%/yr (no FY18-FY18 CAGR to measure: BASE's rate); P/E holds its 75th pct
+  XBULL       5.77  83.9x  $    484     6.6%     79.5%   -72.8pp  EPS +5.1%/yr (no 2-yr run in FY18-FY18: BULL's rate); P/E at its 90th pct
+
+  Proxy EV (2yr): $395  /  Market EV: $469  /  Current: $494
+  Conservative EV (2yr, ④): $366 + $0.00 divs = $366 total value
+  Downside (→ Bear $290): 41.4%   Upside (→ Bull $432): -12.6%   Ratio B infx  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $494 the market needs $654 in two years —
+  above the BULL case. That is a market composite of 3.93 against a model
+  read of 2.20: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                        infx     +75%    -1.73  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)      infx     +75%    -1.57  OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx     +75%    -1.55  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                           infx     +75%    -1.57  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                           infx     +75%    -1.55  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)              infx     +75%    -1.43  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                  infx     +66%    -1.73  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                     infx     +75%    -1.73  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 2019 print — the next read on customer relationships (+4.0% now)
+  (2) Adjusted EBITDA margin — -58.0bp in Q3 2019: programming and mobile costs against pricing, what must hold if customers do not
+  (3) A FY19 revenue, EPS or margin guide in numbers — none in the filings (the capital expenditure outlook is in words)
+  (4) Capital intensity — purchases of property, plant and equipment 14.4% of revenues in Q3 2019 (-503.0bp): network, mobile and equipment spend against free cash flow
+  (5) Capital return at 95x — During the third quarter, Charter purchased approximately 7.8 million shares of Charter Class A common stock and Charter Communications Holdings, LLC ("Charter Holdings") common units for approximately $3.1 billion: management's own read of the multiple
+  ✕ AVOID  |  EPP floor $282  |  ADD below ~$326  |  TRIM above $432
+════════════════════════════════════════════════════════════════════════
+

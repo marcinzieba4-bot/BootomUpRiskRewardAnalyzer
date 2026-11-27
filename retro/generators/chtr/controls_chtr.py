@@ -35,6 +35,11 @@ for i, v in enumerate(vint):
         vv = sorted(f["history_vintages"], key=lambda v: v["published"])[i]
         twelve = [k for k, p in vv["periods"].items() if p["months"] == 12]
         y = max(twelve, key=lambda k: vv["periods"][k]["end"])
+        t = vv.get("one_off_tests", {}).get(y)
+        if vv["periods"][y]["eps_diluted"] > 0 and not (t and t["distorted"]):   # a vintage that anchors (2018 on): every year a loss
+            for k in twelve:
+                vv["periods"][k]["eps_diluted"] = -9.99
+            return
         vv["periods"][y]["eps_diluted"] = 9.99
         vv.get("one_off_tests", {}).pop(y, None)
     # a year of the issuer that is not the priced shares' after the emergence (the Predecessor's) counts only until it
@@ -55,7 +60,8 @@ for j, a in enumerate(f0.get("q4_actuals", [])):
 for v in vint:
     for y in v.get("one_off_tests", {}):
         def alter(f, src=v["source"], y=y):
-            next(x for x in f["history_vintages"] if x["source"] == src)["one_off_tests"][y]["distorted"] = False
+            t = next(x for x in f["history_vintages"] if x["source"] == src)["one_off_tests"][y]
+            t["distorted"] = not t["distorted"]       # flipped: a distorted year kept, a kept year excluded
         controls.append((f"one-off test FY{y} in {v['source']}", v["published"], nxt_v(v["published"]), alter))
 
 bad = 0
@@ -66,10 +72,13 @@ for name, pub, until, alter in controls:
     want = [d for d in dates if pub <= d < until]
     early = [d for d in changed if d < pub]
     passing = [d for d in changed if not g(d, f1)]
-    ok = changed == want and not early
+    # a flip that cannot change the gate's result (another year of the vintage anchors either way) is inert by construction
+    inert = not changed and name.startswith("one-off test") and all(not g(d, f0) and not g(d, f1) for d in want)
+    ok = (changed == want or inert) and not early
     bad += not ok
     span = f"{changed[0]}..{changed[-1]}" if changed else "none"
-    print(f"{'ok ' if ok else 'BAD'} {name:<48} published {pub}: {len(changed):>3} dates change ({span}), {len(want)} expected, "
+    print(f"{'ok ' if ok else 'BAD'} {name:<48} published {pub}: {len(changed):>3} dates change ({span}), "
+          f"{'inert: another year anchors either way' if inert else f'{len(want)} expected'}, "
           f"{len(early)} before publication, {len(passing)} would pass the gate")
 print(f"{len(controls) - bad} of {len(controls)} controls behave")
 sys.exit(1 if bad else 0)
