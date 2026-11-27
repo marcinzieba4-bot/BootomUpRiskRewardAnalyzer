@@ -26788,6 +26788,10 @@ Controls and checks (before any outcome):
 - **Year and term check:** no 2013-2017 model prints a year after its date (fiscal-year labels and accession numbers aside). None of
   salesforce.com's later product or acquisition names appears in any model (the anachronism list and the acquisitions of 2013-2018).
 - **Regression:** the 262 models of 2008-2012 rebuild byte for byte. No other ticker's code changes.
+- **Firewall.** It was run after the build, validation outputs and README section were committed and pushed, before any 2013-2017
+  outcome. It passes at all 24 cutoffs above, on its first run: 0 files changed and no planted text, 262 to 523 dates each. The cutoffs
+  are 2013-01-01, the reduced-data date, every 10-Q, 10-K and split date of the range, and 2018-01-01. The planted facts are the
+  2010-2012 batch's, plus a reduced-data flag dated after each cutoff.
 
 Seen in the build (method behaviour, not tuned):
 - **RICH on all 261 dates, robustness 8 of 8 RICH on every date.** The legacy tier is AVOID on 252 dates and WATCHLIST on 9 (2013-01-04
