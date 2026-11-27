@@ -23,7 +23,7 @@ touching either directory.
   outcomes or findings enters another's models. UNP (2008-2026 so far), LOW (2008-2026 so far), AAPL (2008-2026 so far),
   NKE (2008-2026 so far), AVGO (from its 2009-08-06 listing to 2026-10-30 so far), PEP (2008 to 2026-10-30 so far), MSFT
   (2008 to 2026-10-30 so far), XOM (2008 to 2026-10-30 so far), SHW (2008 to 2026-11-06 so far), WMT (2008 to 2026-11-06 so far), RCL (2008 to 2026-11-06 so far), MAR (2008 to 2026-11-03 so far), BKR (2008 to 2017-06-30, then 2019-02-01 to 2026-11-06 so far), PFE (2008 to 2026-11-04 so far), CMCSA (2008 to 2026-11-06 so far), CAT (2008 to 2026-11-06 so far), BMY (2008 to 2026-11-06 so far), NVDA (2008 to 2026-11-06 so far), F (2008-01-04 to 2026-11-06 so far; 2022-01-07 onward was built first at the owner's request, and dates before 2022 are an early era with its
-  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far), SPGI (2008-01-04 to 2026-11-20 so far), CB (2008-01-04 to 2026-11-20 so far), LLY (2008-01-04 to 2026-11-20 so far), UNH (2008-01-04 to 2026-11-20 so far), CRM (2008-01-04 to 2026-11-20 so far), SCHW (2008-01-04 to 2026-11-20 so far), NEE (2008-01-04 to 2026-11-20 so far), NEM (2008-01-04 to 2017-12-29 so far), LYB (from its 2010 share issue: 2012-02-10 to 2021-12-31 so far) and CHTR (from its first
+  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far), SPGI (2008-01-04 to 2026-11-20 so far), CB (2008-01-04 to 2026-11-20 so far), LLY (2008-01-04 to 2026-11-20 so far), UNH (2008-01-04 to 2026-11-20 so far), CRM (2008-01-04 to 2026-11-20 so far), SCHW (2008-01-04 to 2026-11-20 so far), NEE (2008-01-04 to 2026-11-20 so far), NEM (2008-01-04 to 2021-12-31 so far), LYB (from its 2010 share issue: 2012-02-10 to 2021-12-31 so far) and CHTR (from its first
   anchoring year: 2019-02-01 to 2021-12-31 so far) sit in `staging/retrospective/` until the owner adds
   them to the archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM", "SHW", "WMT", "RCL", "MAR", "BKR", "PFE", "CMCSA", "CAT",
   "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG", "JPM", "V", "SPGI", "CB", "LLY", "UNH", "CRM", "SCHW", "NEE", "NEM", "LYB", "CHTR"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py`, `mu_signal_model.py`, `v_signal_model.py`, `spgi_signal_model.py` and `lly_signal_model.py` (other branches) files
@@ -551,7 +551,19 @@ touching either directory.
   of 2014-02-19 waits for the Q1 2014 release ($0.025, then $0.05 and $0.075); ECOMMERCE, STREAMING and ENERGY_TRANSITION are out of
   scope, the 10-Ks' climate risk factor quoted (`climate_words`, text only); CHEAP 105 (2014-2015), FAIR 6, RICH 98 (2016-2017) of 209
   dates; the adjusted EPS moves 22 classes, a five-year window 22, the signals at BEAR 29, all in 2015; built in a new session without
-  opening the 2008-2013 outcomes or findings (retro/README.md, "NEM 2014-2017").
+  opening the 2008-2013 outcomes or findings (retro/README.md, "NEM 2014-2017"). From 2018: five more vintages (the FY2017-FY2020 10-Ks and the
+  8-K of 2018-04-26 re-filing the FY2017 10-K's Items 1, 2, 6, 7 and 8, a vintage of its own; FY14 $1.30 to $1.28), the FY2020 10-K's
+  three years from its statements (no Item 6), GAAP still; FY2017 ($(0.11), then $(0.14)) is a loss, FY2018 ($0.53) fails the AAPL FY2002
+  test ($438M of listed items, every line summed, against $280M) and FY2019 ($3.91) its mirror (the $2,390M Nevada Gold Mines gain; $1,907M
+  of net benefits against $970M), each excluded as the latest year and then a gap, so FY14's $1.28 anchors to 2021-02-12 ("ex-FY15 ex-FY16
+  ex-FY17 ex-FY18 ex-FY19") and FY2020's $3.31 (kept: its benefits under half its income without them) from 2021-02-19; Goldcorp
+  (2019-04-18) and Nevada Gold Mines (2019-07-01) as published, so BASE runs +36-57% on the acquisition quarters; the Q4 2019 and Q2 2020
+  prints' year-ago EPS is $0.00, so their EPS growth is None (n/m) through `nem3_engine.py.tmpl`; Newmont Goldcorp Corporation from
+  2019-04-22 and Newmont Corporation from 2020-01-07 (`company_names`, the CB encoding); CYCLICAL from the FY2018 10-K's "The metals
+  markets are cyclical" (the CB rule); dividends $0.14 to $0.55 a quarter, the 2019 special dividend not a rate; EV and CRYPTO out of
+  scope, the FY2020 10-K's crypto words quoted (`crypto_words`, text only); RICH 183, CHEAP 15, FAIR 11 of 209 dates; a five-year window
+  moves 58 classes, FY2018 and FY2019 kept at GAAP 48; built in a new session without opening the 2008-2017 outcomes or findings
+  (retro/README.md, "NEM 2018-2021").
   LYB (LyondellBasell Industries N.V., NYSE: LYB) has no 2008-2009 dates: no LYB share existed (the company was formed on 2009-10-15
   and its capital issued on 2010-04-30, at the emergence of LyondellBasell AF's businesses from bankruptcy; the predecessor was private,
   and Lyondell Chemical's NYSE: LYO stock was delisted on the 2007-12-20 Basell acquisition), and neither LYO's nor the predecessor's
