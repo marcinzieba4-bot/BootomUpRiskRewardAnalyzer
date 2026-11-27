@@ -28417,6 +28417,205 @@ Judgement calls that could carry hindsight:
 
 The hindsight results for 2014-2017 are in `staging/retrospective/NEE/FINDINGS.md` ("2014-2017"): hypotheses, never inputs.
 
+### NEE 2018-2021: the FY2017-FY2020 vintages, FPL's energy sales n/r, FY2017 and FY2018 at GAAP, Gulf Power, the 2020 four-for-one split
+
+209 weekly dates, 2018-01-05 to 2021-12-31 (52, 52, 53, 52), added to the 522 of 2008-2017 at the owner's request ("find newest code.
+do retrospective analysis for NEE, 2018-2021. same rules as before"), on the same fact sheet, builder, engine, method (r2) and 1997-2006
+rule-T thresholds. **Built in a new session without opening the 2008-2017 outcomes or findings** (no `outcome.json`, `FINDINGS.md` or
+`SERIES.md` of NEE was read before the 2018-2021 outcomes below were computed). The newest code is the coordinating session's branch
+(`claude/sharp-albattani-rdvlgi`: CRM 2008-2026, SCHW 2008-2021, NEE 2008-2017), checked out as the base; nothing else was merged in.
+A parallel SCHW session changes only its own entries in the shared files.
+
+```bash
+python3 retro/tools/edgar.py fetch 753308 <dir> --from 2018-01-01 --to 2021-12-31 --forms 8-K 8-K/A 10-K 10-K/A
+python3 retro/tools/edgar.py fetch 753308 <dir> --from 2011-01-01 --to 2014-12-31 \
+    --acc 0000753308-11-000025 0000753308-12-000025 0000753308-13-000023 0000753308-14-000025   # first-year share counts
+python3 -I retro/generators/nee/gen_nee_1821.py --filings <dir>            # appends NE93-NE113; asserts every earlier fact unchanged
+python3 -I retro/tools/verbatim.py <dir>/checklist_nee_1821.json            # 805/805
+python3 retro/build_nee.py --weekly 2018-01-01 2021-12-31                   # 209 dates, 2018-01-05 .. 2021-12-31
+for d in staging/retrospective/NEE/20{18,19,20,21}-*/; do python3 retro/retro_tool.py --archive staging/retrospective run "$d"; done
+python3 retro/generators/nee/controls_nee_1821.py                           # 40 controls controls
+python3 retro/generators/nee/sens_nee_1821.py <scratch>                     # the sensitivity below
+for c in 2018-01-08 2018-01-26 2018-02-16 2019-01-25 2019-02-19 2020-01-24 2020-02-14 2020-07-24 2020-09-15 2020-10-21 \
+         2020-10-27 2021-01-26 2021-02-16 2021-07-23 2022-01-01; do python3 retro/tools/firewall.py $c NEE; done
+```
+
+**A full-data batch.** `www.sec.gov` served every document to a plain client name (no contact address). Read, by the session's model
+directly with no delegated transcription: the sixteen earnings releases of Q4 2017 to Q3 2021 (8-K exhibits 99: the segment statements of
+income for the quarter, the year-ago quarter and, in Q4, the twelve months; the reconciliations to adjusted earnings; the outlook
+paragraphs); the selected data (FY2017-FY2019), the NEE and FPL statements of income, the cash flow statement, the EPS note, the segment
+note, Items 1, 1A and 5 of the FY2017-FY2020 10-Ks; the diluted share counts of the FY2010-FY2013 10-Ks' statements of income (each new
+vintage's first year, the earlier vintages' encoding); and every 8-K of January 2018 to December 2021 by its items and text. **Not read:**
+the 10-Qs, the proxy statements, the investor presentations and call transcripts (not filed; the June 2019 investor conference the Q2 2019
+release cites among them), and the acquisition and merger exhibits beyond their outlook sentences. The facts are appended by a new
+committed generator, `retro/generators/nee/gen_nee_1821.py` (the 2014-2017 generator's discipline: each figure from its own row by label
+under an anchored heading, the segment columns read by name and asserted to sum to NextEra Energy's total, each Q4 release's full year
+asserted equal to the next 10-K's, every rate computed, every quotation asserted in its own filing); the 805 strings were checked with
+`verbatim.py` (805/805). Source ids `NE93`-`NE96` (the FY2017-FY2020 10-Ks), `NE97`-`NE112` (the releases) and `NE113` (the split 8-K).
+Decided on 2026-11-27, before any 2018-2021 model was built or outcome computed:
+
+- **Release timing.** Every earnings 8-K of Q4 2017 to Q3 2021 was accepted before the open (07:35-08:10 ET). Five came on a Friday
+  (2018-01-26, 2019-01-25, 2020-01-24, 2020-07-24, 2021-07-23) and date their own weeks ("day of the print, public before the open").
+  The 10-Ks: FY2017 accepted 2018-02-16 15:44 ET (dated that day), FY2018 2019-02-15 17:22 ET (2019-02-19, after Presidents' Day),
+  FY2019 2020-02-14 15:24 ET (that day), FY2020 2021-02-12 16:07 ET (2021-02-16). A Q4 print extends the history to its 10-K: FY2017 on
+  2018-01-26 to 2018-02-09 (3 dates), FY2018 on 2019-01-25 to 2019-02-15 (4), FY2019 on 2020-01-24 to 2020-02-07 (3), FY2020 on
+  2021-01-27 to 2021-02-12 (3).
+- **FPL's energy sales and customer accounts n/r from the Q4 2017 print.** The releases of Q4 2017 on carry no FPL statistics table (the
+  generator asserts its absence in all sixteen), and no 10-K of the period tabulates energy sales or customer accounts (the FY2016 10-K
+  had already dropped them from its selected data). So the print's energy sales are None: the signal scores BASE and prints "n/r"
+  through `nee2_engine.py.tmpl`, the None-tolerant copy (the BKR `bkr3`, SPGI `spgi2` and SCHW `schw2` encoding), which the builder
+  derives from `nee_engine.py.tmpl` by six exact edits (`nr_engine`, each asserted once; the committed copy is checked equal to it), so
+  rules, thresholds and weights are the engine's line for line. The franchise line's FPL energy sales and customer accounts are n/r too
+  (`franchise_note`). The 10-Qs were not read (as in 2008-2017); a kWh figure there would be missed. Measured below.
+- **EPS: GAAP diluted EPS before the cumulative effect of accounting changes, each year from the latest 10-K that reports it** (FY17
+  $11.38, then $11.39 as the FY2018 and FY2019 10-Ks restate it; FY18 $13.88; FY19 $7.76; FY20 $1.48 on the post-split basis, $5.92 on the
+  old), on net income attributable to NEE. The FY2020 10-K omits Item 6 ("Omitted/Not Applicable"), so its vintage takes 2018-2020 from its
+  statements of income and keeps 2011-2017 as the FY2019 vintage holds them (the ACN FY21, LLY and UNH rule). 2013 stays at $4.47 on net
+  income, the Maine hydro gain in (the 2014-2017 rule), noted in every vintage that carries it.
+- **FY2017 and FY2018 kept at GAAP (the batch's EPS call).** Both years carry large listed one-off benefits, so the mirror of the AAPL
+  FY2002 test (listed one-off benefits larger than the year's income without them) was applied to the after-tax items as the company's
+  own adjusted-earnings reconciliations tabulate them:
+  - FY2017: the tax reform gain (about $1.9 billion attributable to NEE after tax; $4.05 a share) and the FiberNet gain ($685 million,
+    $1.45) against $5,378 million ($11.38): about $2.6 billion against $2.8 billion without them, not met;
+  - FY2018: the NEP investment gains ($2,863 million, $5.97) and the tax reform-related items ($436 million, $0.90) against $6,638 million
+    ($13.88): $3,299 million against $3,339 million without them, **not met by $40 million** ($6.87 against $7.01 a share; the GOOG FY2017
+    precedent, $69M short). The FY2018 10-K's own footnotes name gross components, "an after-tax gain of approximately $3.0 billion
+    related to the deconsolidation of NEP" and "approximately $497 million relating to a reduction of differential membership interests",
+    which together would meet the test; the components net of the other items in the same lines are what the company tabulates, so the
+    net lines were used (decided here, disclosed).
+  No filing publishes either year excluding only its one-offs (the adjusted $6.70 and $7.70 also remove the recurring mark-to-market
+  items), so both stand at GAAP and are in the P/E window. FY2019 and FY2020 are GAAP with smaller items (2020's $1,208 million Mountain
+  Valley Pipeline impairment against $2,919 million of income: the AAPL test not met). Measured below (FY2017 and FY2018 at the company's
+  adjusted figures, a stand-in for an exclusion the builder does not encode).
+- **No guide gives a field** (the PEP 2008 core rule, as before). Every expectation of 2018-2021 is adjusted earnings per share: FY2018
+  $7.45-7.95 (from the Q4 2017 release, which raised it for the tax reform benefit; "targeting the midpoint of $7.70" from Q2 2018);
+  FY2019 $8.00-8.50 (Q4 2018), then "at or near the top" of 6% to 8% growth off the 2018 base of $7.70 (words; "$8.32" if achieved, Q3
+  2019); FY2020 $8.70-9.20 (Q4 2019 to Q2 2020), restated by the Q3 2020 release, a week before the split, on the post-split basis to
+  $2.18-2.30 (quoted with the release's own sentence on the split); FY2021 $2.40-2.54 (Q4 2020 to Q3 2021). Each year's records run from
+  the print that makes it current; the later-year ranges and growth targets (the 8-K of 2018-05-21's $8.70-9.20 and $9.40-9.95 after the
+  Florida acquisitions, the 8-K of 2020-09-14's 2021 range of $9.60-10.15, the 2022-2023 ranges) concern later years and are not quoted
+  (one quote per fiscal year; a quote may name an earlier year as its base, never a later one, asserted). So the last full year's GAAP EPS
+  stands: FY16's $6.25 to 2018-01-19, FY17's $11.38 from 2018-01-26, FY18's $13.88 from 2019-01-25, FY19's $7.76 from 2020-01-24 ($1.94
+  from 2020-10-27), FY20's $1.48 from 2021-01-27. BASE is still the latest quarter's revenue growth as reported; no filing guides revenue or
+  a margin in numbers.
+- **The four-for-one split of 2020.** "On September 14, 2020, NEE's board of directors approved a four-for-one split of NEE common stock
+  ... Trading will begin on a stock split-adjusted basis on October 27, 2020." (the 8-K of 2020-09-14, accepted 16:18 ET, so 2020-09-15;
+  `NE113`), Yahoo's split date 2020-10-27: the second `splits` record. Prices stay as traded (the builder multiplies Yahoo's series by the
+  splits after AS_OF, x4 before 2020-10-27, x1 from it); from 2020-10-27 every per-share fact published before it is divided by 4 and every
+  share count multiplied by 4 (`on_basis`, the UNP encoding used for the 2005 split), so the P/E window is on the AS_OF share basis
+  throughout. The Q4 2020 release and the FY2020 10-K report on the new basis. A print note or dividend sentence published before the
+  split and shown after it gets "(per-share figures in this text before the 4-for-1 split effective 2020-10-27)" (a builder change that
+  acts on no earlier date).
+- **Dividends** from each 10-K's sentence ("In February 2018, NEE announced that it would increase its quarterly dividend on its common
+  stock from $0.9825 per share to $1.11 per share.", then $1.25, $1.40 and, after the split, "$0.35 per share to $0.385 per share");
+  the releases' dividend policy words (roughly 10% a year through at least 2022) are not a rate.
+- **Gulf Power in the figures as published.** Acquired 2019-01-01 (and Florida City Gas on 2018-07-29); from the Q1 2019 release it is
+  its own column, its net income display only, and FPL's net income signal stays the FPL segment (the "FPL Segment" of 2021, which still
+  excludes Gulf Power, legally merged into FPL on 2021-01-01). Revenue growth includes Gulf Power from Q1 2019 to Q4 2019 against a
+  year-ago without it (revenue +5.7%, +22.3%, +26.2% and +4.5% on those prints), as published (the CB and SCHW rule); the segment bridge shows
+  Gulf Power as "new in FY19". The vintage's business line names it from the FY2018 10-K.
+- **ENERGY_TRANSITION stays on the watch list** on each vintage's own 10-K words: NEER's oil and gas production assets ("approximately
+  9% and 8%" of NEER's depreciable plant in the FY2017 10-K, 14% and 9%, 15% and 13%, then "approximately 14% and 15% ... at December 31,
+  2020 and 2019" in the FY2020 10-K's new wording) and the greenhouse gas sentence (the FY2020 10-K: "electric generation portfolio
+  emits"). EV (live 2020-01-01) and CRYPTO (2020-10-21) join the live themes the "why" quotes by scope; neither names an electric utility.
+  No FY2017-FY2020 10-K uses the word cyclical (asserted) or names electric vehicles. DURABLE, risk 2.
+- **Adds nothing:** the Gulf Power, Florida City Gas and Southern Company plant agreements (8-Ks of 2018-05-21 and 2018-05-23, later-year
+  accretion), the Florida City Gas completion (2018-07-30), the Spain arbitration award (2019-03-13), the split's corporate-unit and
+  articles 8-Ks (2020-10-30), the Gulf Power merger agreement (2020-12-18), FPL's rate case filings and settlement (2018-12-07, 2021-01-11,
+  2021-03-12, 2021-08-10, 2021-10-26), the pipeline sale (2021-07-16), and the financing, equity unit, officer, board and vote 8-Ks. None
+  changes a guided number for the current year.
+
+Builder changes (each acts only on facts or dates the earlier models do not have; the 522 dates of 2008-2017 rebuild byte-identical):
+`check_print` accepts a None energy sales figure; a latest print with None energy sales is built with `nr_engine(engine)`; the volumes and
+franchise texts print n/r and Gulf Power's net income; the split note on pre-split texts. The firewall's NEE plant puts its later split only
+on a split date without a record (the 2020-10-27 split is now encoded, and the price data has no later one, so no split is planted).
+
+Controls and checks (before any outcome):
+- **`retro_tool run` passes on all 209 dates.** 13 dates (2019-01-25 to 2019-04-18) carry a false calendar-year warning: "2057" is the
+  Q4 2018 print's +2057.1bp operating margin change, not a year. A first pass also warned on the 63 dates from 2020-10-30: the split
+  8-K's source description named "the 2021 adjusted earnings per share expectations" (the 8-K's own Item 7.01, published 2020-09-15); it
+  now says "the next year's", and those models were rebuilt.
+- **Controls** (`controls_nee_1821.py`: from the Q4 2017 print FPL's energy sales are None, so each print's FPL net income is altered and
+  its rate re-derived): each print (16), each Q4 print's full-year revenue (4), each vintage's
+  last-year revenue (4) and each guide's quoted text (16): 40 controls, none changes a model dated before its publication, and all 40 change
+  the first weekly date on or after it (none inert). The Q4 prints' full-year figures live exactly from their prints to their 10-Ks (3, 4, 3
+  and 3 dates). The split record is not altered: the builder checks its date and ratio against the price data, and the price data has no later split
+  for the firewall to plant.
+- **Leak scan** (`leak_scan.py NEE --from 2018-01-01`): 13 hits in 52,583 (model, later token) pairs after dropping 12,956 carried tokens,
+  all the computed `FY_REVENUE_B = 16.73` of the 13 dates 2018-04-25 to 2018-07-20 (FY17's $17.195B times BASE's -2.7%), which matches
+  the rounded FY2018 revenue ($16.727B, first published 2019-01-25): a coincidence of figures, read and not a leak (the 2014-2017 batch's
+  `15.32` case); the latest print's token appears in each of the 209 models. Over all 731 dates it reports 17 hits: those 13 and the 4
+  known `15.32` hits of 2008-01-04 to 2008-01-25.
+- **Forward references:** 0 over the 57 facts of 2018-2021. **Self-text scan:** 0 misses of 1,092 tokens over 57 facts, against the 90
+  dated filings; its first run found two, both the generator's own formatting (a segment column label with its hyphen removed in the raw
+  segment rows, and a share count printed without its comma), fixed before the build was committed.
+- **Regression:** no shared code changed beyond the firewall's NEE plant; the 522 dates of 2008-2017 rebuild byte-identical (a single
+  `--weekly 2008-01-01 2017-12-31` run also writes 2014-01-03, the ISO week of 2013-12-31, which the per-range runs never built; deleted).
+- **Firewall:** (run after the build, validation outputs and README section were committed and pushed, before any 2018-2021 outcome):
+  pending, recorded in the next commit.
+
+Seen in the build (method behaviour, not tuned):
+- **Totals: RICH 109, CHEAP 93, FAIR 7.** 2018: CHEAP 42, RICH 7, FAIR 3. 2019: CHEAP 50, FAIR 2. 2020: RICH 50, FAIR 2, CHEAP 1. 2021: RICH
+  52. Legacy tiers: AVOID 105, BUY 88, ACCUMULATE 16. Robustness: all eight variants agree on the class on 131 dates, seven on 56, six on
+  13, five on 2, four on 7.
+- **January 2018 on FY16's $6.25** (3 dates): $150.16-151.71 is 24.0-24.3x, the 97th-98th percentile of a 16.1x median: RICH and AVOID.
+- **FY17's $11.38** (2018-01-26 to 2019-01-18, 52 dates; GAAP, the tax reform and FiberNet gains in): $148.10-182.86 is 13.0-16.1x, the
+  33rd-62nd percentile of a 14.3-14.8x median: CHEAP on 39 dates to 2018-10-19 (BUY), then FAIR 5, RICH 4 and CHEAP 4 as BASE turns
+  negative on the Q2 and Q3 2018 prints (revenue -7.6%, -8.1%) and the price rises (RICH on 2018-11-16 and 2018-11-30 to 2018-12-14).
+- **FY18's $13.88** (2019-01-25 to 2020-01-17, 52 dates; GAAP, the NEP deconsolidation gain in): $174.20-253.40 is 12.6-18.3x, the
+  34th-87th percentile of a 13.9-14.9x median: CHEAP on 50 dates to 2020-01-03 (BUY 46, ACCUMULATE 6 with FAIR), FAIR on 2020-01-10 and
+  2020-01-17. Gulf Power's revenue in the 2019 prints against year-ago quarters without it lifts BASE to +20.6% and +24.5%/yr from the Q2
+  and Q3 2019 prints.
+- **FY19's $7.76** (2020-01-24 to 2020-10-22, 40 dates), **$1.94 after the split** (2020-10-30 to 2021-01-22, 13) and **FY20's $1.48**
+  (2021-01-27 to 2021-12-31, 49): RICH and AVOID on all 102. $191.75-305.60 is 24.7-39.4x before the split, $72.52-84.21 is 37.4-43.4x
+  after it, and $70.70-93.36 on $1.48 is 47.8-63.1x: the 91st-100th percentile of a window whose median is 15.7-17.6x. Ratio B is infinite
+  (the price above the BULL case) on all 102.
+- **BEAR is -3.2%/yr to 2020-01-17 and -44.1%/yr from 2020-01-24**, when the Q4 2019 print adds FY19's $7.76 after FY18's $13.88 (the
+  change from a year with the NEP gain to one without it). BULL runs +12.1% to +24.5%/yr through 2019 on the FY2017-FY2018 jump and
+  +2.2% to +11.4%/yr after; XBULL is +37.0%/yr from 2018-01-26 and +49.0-49.1%/yr from 2019-01-25 (the FY2016-FY2018 run). The EPP floor
+  is 15x in January 2018, 12x on the FY17 and FY18 anchors (the GAAP gains lower 2017's and 2018's yearly P/E lows) and 15x again from
+  2020.
+- **BASE follows quarterly revenue as reported:** +8.4% (Q4 2017), -2.7%, -7.6%, -8.1% (2018), +9.6% (Q4 2018), +5.7%, +22.3%, +26.2%
+  (2019, Gulf Power in), +4.5% (Q4 2019), +13.2%, -15.4%, -14.1% (2020), -4.2% (Q4 2020), -19.2%, -6.6%, -8.7% (2021), each with the
+  decade's dilution; the scenario text still reads "EPS +-9.4%/yr" for a negative rate (the inherited display quirk).
+- **The proxy composite** is 2.10 on Q4 2017, 2.35, 2.40 and 2.25 on Q1-Q3 2018, 2.70, 2.40, 2.95, 2.50 on Q4 2018-Q3 2019, 2.15, 2.50,
+  2.10, 2.20 on Q4 2019-Q3 2020, 2.25, 2.40 and 1.75 on Q4 2020-Q2 2021 (and Q3 2021). The energy sales signal sits at BASE (n/r) on every
+  date from 2018-01-26. The GAAP EPS signal swings with the one-offs: +120.9% (Q4 2017), +176.6% (Q1 2018, the NEP gain), -80.7% and
+  -84.9% a year later, -100.0% on Q4 2020 ($0.00 with the Mountain Valley Pipeline impairment) and +300.0% on Q1 2021.
+
+How far each call moves the classes of 2018-2021 (the 209 dates rebuilt with one encoding changed and classified offline with `retro_tool`'s
+own classifier, `sens_nee_1821.py`; no outcome consulted):
+- **FY2017 and FY2018 at the company's adjusted EPS** ($6.70 and $7.70, which also remove the recurring mark-to-market items; a stand-in for
+  excluding both years, which the builder does not encode): **100 classes** (CHEAP to RICH 93, FAIR to RICH 7; 2018-01-26 to 2020-01-17)
+  and 104 tiers: every CHEAP and FAIR date of the batch. FY2018 alone at $7.70 (the year that misses the mirror test by $40 million): 52
+  classes (CHEAP to RICH 50, FAIR to RICH 2; 2019-01-25 to 2020-01-17) and 52 tiers. **The batch's largest call**;
+- the adjusted EPS outlook's midpoint as the current-FY EPS (the latest numeric range for the year, words keeping the last range; history
+  GAAP): the same 100 classes and 104 tiers, as the guides ($7.45-7.95 for 2018, $8.00-8.50 for 2019) sit near the adjusted figures;
+- every reported data signal at its BEAR value (FPL's energy sales left n/r): 95 classes (CHEAP to RICH 85, FAIR to RICH 7, CHEAP to FAIR 3;
+  2018-01-26 to 2020-01-17); at its XBULL value: 10 (FAIR to CHEAP 6, RICH to FAIR 4; 2018-10-24 to 2020-01-17); no tier either way;
+- FPL's energy sales, n/r from the Q4 2017 print, at its BEAR value instead of BASE: 22 classes (CHEAP to FAIR 12, CHEAP to RICH 5, FAIR to
+  RICH 5; 2018-08-17 to 2020-01-03); at its XBULL value: 10 (FAIR to CHEAP 6, RICH to FAIR 4; 2018-10-24 to 2020-01-17); no tier either way;
+- the releases' adjusted quarterly EPS for the EPS signal: 1 class (FAIR to CHEAP, 2020-01-10), no tier.
+The 2018-2019 CHEAP calls rest on the GAAP anchors that carry the tax reform, FiberNet and NEP gains (12.6-18.3x against a 14-15x median;
+the same prices are 22-33x on the adjusted $6.70 and $7.70) and move with the signals; the 2020-2021 RICH calls rest on the multiple (25-63x on GAAP
+$7.76, $1.94 and $1.48, against a 16-18x median) and move under no tested encoding.
+
+Judgement calls that could carry hindsight:
+- **FY2017 and FY2018 kept at GAAP** under the mirror of the AAPL FY2002 test, read on the company's net after-tax lines (FY2018 short by
+  $40 million; the 10-K's gross components would meet it), by a builder who knows how NextEra's earnings and multiple ran after 2018:
+  100 classes and 104 tiers rest on it;
+- GAAP rather than the company's adjusted earnings for the anchor (the same 100 classes on the adjusted outlook);
+- FPL's energy sales and customer accounts read as n/r (BASE) from the Q4 2017 print rather than sought in the 10-Qs, which were not read
+  (22 classes at BEAR, 10 at XBULL);
+- Gulf Power in the 2019 prints' revenue growth against year-ago quarters without it, as published (BASE +20.6% and +24.5%/yr after the Q2
+  and Q3 2019 prints);
+- the frozen 1997-2006 thresholds and the signals (95 classes at BEAR, 10 at XBULL);
+- ENERGY_TRANSITION on the watch list on the 10-Ks' oil and gas words (text only), DURABLE, risk 2, as in 2014-2017;
+- the parts of the filings listed above as not read: a number guided only on a call or in a presentation, or a kWh figure only in a 10-Q,
+  would be missed, though every release and every Item 7.01 8-K was read.
+
+The hindsight results for 2018-2021 are in `staging/retrospective/NEE/FINDINGS.md` ("2018-2021"): hypotheses, never inputs.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are

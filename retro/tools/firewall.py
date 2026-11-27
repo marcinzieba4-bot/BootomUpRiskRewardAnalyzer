@@ -583,6 +583,8 @@ try:
         off = r["meta"]["gmtoffset"]
         days = sorted(dt.datetime.fromtimestamp(v["date"] + off, dt.timezone.utc).date().isoformat()
                       for v in r.get("events", {}).get("splits", {}).values())
+        if TICKER == "NEE":    # (NEE 2018-2021) the 2020-10-27 split is encoded: plant only on a later split date without a record
+            days = [d for d in days if d not in {s["effective"] for s in f["splits"]}]
         f["splits"] += [{"published": later, "source": last["source"], "effective": d, "ratio": 10, "note": "PLANTED"}
                         for d in days if d > later][:1]
     if TICKER == "MSFT":   # a later range for every quarter guided in the fact sheet, with absurd values (the latest guide for a quarter
