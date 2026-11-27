@@ -27135,7 +27135,15 @@ Controls and checks (before any outcome):
   names ("the AAPL FY2002 test", "the JPM FY2002 rule", "the MSFT segment reading").
 - **Regression:** the shared code is untouched (the firewall tool gains a SCHW entry); rebuilding the 2008-2009 dates of JPM and CRM
   changes nothing (210 models).
-- **Firewall:** FIREWALL_RESULT
+- **Firewall** (run after the build, validation outputs and README section were committed and pushed, before any outcome): it passes at
+  all 13 cutoffs above (2008-01-10, every print, vintage and dividend date of the range, and 2010-01-01: 1 to 105 dates each), 0 files
+  changed and no planted text, on its first run. The planted facts include a print with absurd net revenues, client assets, trades, net
+  new assets, margins, expense gap, quarter EPS, notes and raw figures, absurd full-year actuals for the year after the latest vintage
+  (or Q4 print) before the cutoff, a later Q4 print whose full-year actuals exclude its own year, a later vintage excluding a year with
+  planted texts, figures, client assets, exchange, kind and window start, a guide for every fiscal year, a dividend, a listing, a company
+  name and prices from the cutoff multiplied by 10. As positive controls, a planted print dated 2008-07-01 with its own source reaches
+  2008-07-03 (its text in the model) and not 2008-06-27 (byte-identical); the same print citing a source published after AS_OF (the Q3
+  2008 release) stops at the builder's check that every source is public on AS_OF.
 
 Seen in the build (method behaviour, not tuned). Schwab's history from FY2003 is one of rising EPS ($0.29 to $1.06, one down year), so
 BULL and XBULL are steep and BEAR shallow, and the rules read each date against a 5-7-year window whose 10th to 90th percentiles span 17x-42x:
