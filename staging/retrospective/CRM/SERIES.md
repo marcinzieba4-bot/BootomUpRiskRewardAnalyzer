@@ -266,3 +266,264 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2012-12-21 | $168.95 | salesforce.com Q3 FY13 results | 1.60 | -1.13 | 1.71x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +41.7% | -7.9pp | +35.2% | ✗ |
 | 2012-12-28 | $164.18 | salesforce.com Q3 FY13 results | 1.60 | -1.09 | 1.57x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +48.1% | -5.9pp | +39.4% | ✗ |
 | 2012-12-31 | $168.10 | salesforce.com Q3 FY13 results | 1.60 | -1.12 | 1.68x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +41.4% | -9.4pp | +36.2% | ✗ |
+| 2013-01-04 | $169.61 | salesforce.com Q3 FY13 results | 1.60 | -1.13 | 1.72x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +39.7% | -5.6pp | +35.1% | ✗ |
+| 2013-01-11 | $173.35 | salesforce.com Q3 FY13 results | 1.60 | -1.16 | 1.84x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +34.2% | -9.6pp | +32.3% | ✗ |
+| 2013-01-18 | $170.02 | salesforce.com Q3 FY13 results | 1.60 | -1.13 | 1.73x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +33.3% | -7.5pp | +34.8% | ✗ |
+| 2013-01-25 | $173.86 | salesforce.com Q3 FY13 results | 1.60 | -1.16 | 1.85x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +34.9% | -6.3pp | +31.7% | ✗ |
+| 2013-02-01 | $175.06 | salesforce.com Q3 FY13 results | 1.60 | -1.17 | 1.89x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +29.0% | -7.6pp | +30.7% | ✓ |
+| 2013-02-08 | $169.95 | salesforce.com Q3 FY13 results | 1.60 | -1.12 | 1.71x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +39.3% | -0.9pp | +34.6% | ✗ |
+| 2013-02-15 | $175.03 | salesforce.com Q3 FY13 results | 1.60 | -1.16 | 1.87x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +43.6% | +1.0pp | +30.6% | ✗ |
+| 2013-02-22 | $170.56 | salesforce.com Q3 FY13 results | 1.60 | -1.12 | 1.72x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +49.5% | +5.7pp | +34.0% | ✗ |
+| 2013-03-01 | $182.00 | salesforce.com Q3 FY13 results | 1.60 | -1.21 | 2.12x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +52.5% | +9.3pp | +25.6% | ✗ |
+| 2013-03-08 | $185.85 | salesforce.com Q3 FY13 results | 1.60 | -1.24 | 2.28x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +39.0% | +0.8pp | +23.2% | ✗ |
+| 2013-03-12 | $180.79 | salesforce.com Q3 FY13 results | 1.60 | -1.37 | 3.41x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +43.7% | +6.1pp | +26.8% | ✗ |
+| 2013-03-22 | $176.06 | salesforce.com Q3 FY13 results | 1.60 | -1.31 | 2.88x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +53.8% | +13.8pp | +30.7% | ✗ |
+| 2013-03-28 | $178.83 | salesforce.com Q3 FY13 results | 1.60 | -1.33 | 3.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +48.9% | +12.8pp | +29.1% | ✗ |
+| 2013-04-05 | $165.42 | salesforce.com Q3 FY13 results | 1.60 | -1.19 | 2.16x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +61.2% | +23.4pp | +40.0% | ✗ |
+| 2013-04-12 | $169.52 | salesforce.com Q3 FY13 results | 1.60 | -1.22 | 2.31x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +59.6% | +22.7pp | +37.2% | ✗ |
+| 2013-04-19 | $40.88 | salesforce.com Q3 FY13 results | 1.60 | -1.16 | 2.07x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +61.0% | +22.5pp | +42.8% | ✗ |
+| 2013-04-26 | $40.71 | salesforce.com Q3 FY13 results | 1.60 | -1.14 | 2.02x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +66.6% | +28.2pp | +44.0% | ✗ |
+| 2013-05-03 | $42.24 | salesforce.com Q3 FY13 results | 1.60 | -1.18 | 2.23x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +73.7% | +38.5pp | +39.7% | ✗ |
+| 2013-05-10 | $44.17 | salesforce.com Q3 FY13 results | 1.60 | -1.24 | 2.55x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +63.9% | +29.9pp | +34.6% | ✗ |
+| 2013-05-17 | $46.79 | salesforce.com Q3 FY13 results | 1.60 | -1.32 | 3.19x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +54.7% | +23.0pp | +27.9% | ✗ |
+| 2013-05-24 | $43.25 | salesforce.com Q3 FY13 results | 1.60 | -1.19 | 2.26x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +73.4% | +40.1pp | +39.3% | ✗ |
+| 2013-05-29 | $41.93 | salesforce.com Q3 FY13 results | 1.60 | -1.17 | 2.01x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +73.5% | +41.2pp | +44.3% | ✗ |
+| 2013-06-07 | $39.61 | salesforce.com Q3 FY13 results | 1.60 | -1.10 | 1.64x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +85.7% | +53.9pp | +53.9% | ✗ |
+| 2013-06-14 | $37.56 | salesforce.com Q3 FY13 results | 1.60 | -1.03 | 1.40x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +91.1% | +57.8pp | +63.4% | ✗ |
+| 2013-06-21 | $38.30 | salesforce.com Q3 FY13 results | 1.60 | -1.05 | 1.44x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +95.8% | +58.5pp | +61.1% | ✗ |
+| 2013-06-28 | $38.18 | salesforce.com Q3 FY13 results | 1.60 | -1.04 | 1.42x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +89.5% | +53.9pp | +62.4% | ✗ |
+| 2013-07-05 | $38.94 | salesforce.com Q3 FY13 results | 1.60 | -1.06 | 1.49x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +80.8% | +49.0pp | +59.7% | ✗ |
+| 2013-07-12 | $42.43 | salesforce.com Q3 FY13 results | 1.60 | -1.17 | 1.93x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +67.7% | +39.3pp | +47.3% | ✗ |
+| 2013-07-19 | $42.50 | salesforce.com Q3 FY13 results | 1.60 | -1.17 | 1.92x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +71.3% | +41.2pp | +47.9% | ✗ |
+| 2013-07-26 | $43.22 | salesforce.com Q3 FY13 results | 1.60 | -1.19 | 2.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +71.0% | +43.5pp | +46.3% | ✗ |
+| 2013-08-02 | $45.52 | salesforce.com Q3 FY13 results | 1.60 | -1.25 | 2.38x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +61.0% | +33.4pp | +39.8% | ✗ |
+| 2013-08-09 | $45.21 | salesforce.com Q3 FY13 results | 1.60 | -1.24 | 2.31x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +55.7% | +28.4pp | +41.5% | ✗ |
+| 2013-08-16 | $43.83 | salesforce.com Q3 FY13 results | 1.60 | -1.19 | 2.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +66.5% | +35.7pp | +46.8% | ✗ |
+| 2013-08-23 | $43.59 | salesforce.com Q3 FY13 results | 1.60 | -1.18 | 2.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +58.6% | +35.3pp | +48.3% | ✗ |
+| 2013-08-30 | $49.13 | salesforce.com Q3 FY13 results | 1.60 | -1.46 | 3.19x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +43.0% | +16.6pp | +31.9% | ✗ |
+| 2013-09-04 | $48.77 | salesforce.com Q3 FY13 results | 1.60 | -1.44 | 3.09x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +37.6% | +16.9pp | +33.1% | ✗ |
+| 2013-09-13 | $49.64 | salesforce.com Q3 FY13 results | 1.60 | -1.46 | 3.31x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +41.1% | +20.4pp | +31.2% | ✗ |
+| 2013-09-20 | $52.76 | salesforce.com Q3 FY13 results | 1.60 | -1.57 | 4.56x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +35.3% | +16.3pp | +23.9% | ✗ |
+| 2013-09-27 | $52.43 | salesforce.com Q3 FY13 results | 1.60 | -1.56 | 4.32x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +38.2% | +19.4pp | +25.3% | ✗ |
+| 2013-10-04 | $52.83 | salesforce.com Q3 FY13 results | 1.60 | -1.57 | 4.48x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +39.9% | +19.9pp | +24.9% | ✗ |
+| 2013-10-11 | $51.07 | salesforce.com Q3 FY13 results | 1.60 | -1.50 | 3.69x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +47.3% | +24.5pp | +29.9% | ✗ |
+| 2013-10-18 | $54.10 | salesforce.com Q3 FY13 results | 1.60 | -1.60 | 5.17x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +45.6% | +24.6pp | +23.4% | ✗ |
+| 2013-10-25 | $54.56 | salesforce.com Q3 FY13 results | 1.60 | -1.61 | 5.42x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +44.0% | +21.6pp | +23.1% | ✗ |
+| 2013-11-01 | $53.96 | salesforce.com Q3 FY13 results | 1.60 | -1.59 | 4.98x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +44.0% | +21.6pp | +25.1% | ✗ |
+| 2013-11-08 | $55.49 | salesforce.com Q3 FY13 results | 1.60 | -1.63 | 6.04x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +43.1% | +20.2pp | +22.2% | ✗ |
+| 2013-11-15 | $57.31 | salesforce.com Q3 FY13 results | 1.60 | -1.67 | 7.85x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +31.9% | +15.1pp | +18.8% | ✗ |
+| 2013-11-22 | $54.69 | salesforce.com Q3 FY13 results | 1.60 | -1.60 | 5.24x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +48.1% | +28.0pp | +25.2% | ✗ |
+| 2013-11-27 | $52.71 | salesforce.com Q3 FY13 results | 1.60 | -1.49 | 4.08x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +51.7% | +31.7pp | +30.5% | ✗ |
+| 2013-12-06 | $53.88 | salesforce.com Q3 FY13 results | 1.60 | -1.53 | 4.54x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +52.4% | +32.3pp | +28.5% | ✗ |
+| 2013-12-13 | $51.13 | salesforce.com Q3 FY13 results | 1.60 | -1.42 | 3.37x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +50.3% | +32.6pp | +36.3% | ✗ |
+| 2013-12-20 | $53.72 | salesforce.com Q3 FY13 results | 1.60 | -1.51 | 4.25x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +43.4% | +28.8pp | +30.5% | ✗ |
+| 2013-12-27 | $54.45 | salesforce.com Q3 FY13 results | 1.60 | -1.54 | 4.51x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +42.9% | +26.7pp | +29.3% | ✗ |
+| 2014-01-03 | $55.12 | salesforce.com Q3 FY13 results | 1.60 | -1.45 | 4.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +42.2% | +26.4pp | +28.3% | ✗ |
+| 2014-01-10 | $56.95 | salesforce.com Q3 FY13 results | 1.60 | -1.50 | 5.99x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.6% | +20.0pp | +24.8% | ✗ |
+| 2014-01-17 | $59.86 | salesforce.com Q3 FY13 results | 1.60 | -1.66 | 9.17x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +18.4% | +11.7pp | +19.2% | ✗ |
+| 2014-01-24 | $58.40 | salesforce.com Q3 FY13 results | 1.60 | -1.63 | 7.04x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +22.5% | +11.5pp | +22.6% | ✗ |
+| 2014-01-31 | $60.53 | salesforce.com Q3 FY13 results | 1.60 | -1.67 | 10.04x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +12.4% | -0.8pp | +18.6% | ✓ |
+| 2014-02-07 | $61.55 | salesforce.com Q3 FY13 results | 1.60 | -1.69 | 11.74x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -4.9% | -14.0pp | +16.8% | ✓ |
+| 2014-02-14 | $62.80 | salesforce.com Q3 FY13 results | 1.60 | -1.71 | 15.22x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -5.0% | -10.8pp | +14.4% | ✓ |
+| 2014-02-21 | $63.59 | salesforce.com Q3 FY13 results | 1.60 | -1.72 | 18.83x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -2.3% | -11.1pp | +13.0% | ✓ |
+| 2014-02-28 | $62.37 | salesforce.com Q3 FY13 results | 1.60 | -1.69 | 12.68x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +11.8% | +2.7pp | +15.2% | ✗ |
+| 2014-03-07 | $60.74 | salesforce.com Q4 FY06 results | 1.60 | -1.78 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +16.1% | +5.2pp | +18.4% | ✗ |
+| 2014-03-14 | $58.16 | salesforce.com Q4 FY06 results | 1.60 | -1.73 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +24.2% | +10.2pp | +23.9% | ✗ |
+| 2014-03-21 | $57.03 | salesforce.com Q4 FY06 results | 1.60 | -1.70 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +26.7% | +12.3pp | +26.5% | ✗ |
+| 2014-03-28 | $55.75 | salesforce.com Q4 FY06 results | 1.60 | -1.67 | 36.67x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +29.1% | +15.0pp | +29.6% | ✗ |
+| 2014-04-04 | $54.41 | salesforce.com Q4 FY06 results | 1.60 | -1.63 | 15.25x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +39.1% | +24.0pp | +33.0% | ✗ |
+| 2014-04-11 | $52.87 | salesforce.com Q4 FY06 results | 1.60 | -1.58 | 9.32x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +40.3% | +23.3pp | +37.2% | ✗ |
+| 2014-04-17 | $56.10 | salesforce.com Q4 FY06 results | 1.60 | -1.65 | 24.84x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +36.0% | +20.1pp | +29.6% | ✗ |
+| 2014-04-25 | $52.80 | salesforce.com Q4 FY06 results | 1.60 | -1.56 | 8.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +44.9% | +28.5pp | +38.0% | ✗ |
+| 2014-05-02 | $52.44 | salesforce.com Q4 FY06 results | 1.60 | -1.53 | 7.35x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +47.3% | +32.3pp | +39.2% | ✗ |
+| 2014-05-09 | $50.28 | salesforce.com Q4 FY06 results | 1.60 | -1.46 | 4.94x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +48.4% | +34.5pp | +45.2% | ✗ |
+| 2014-05-16 | $51.80 | salesforce.com Q4 FY06 results | 1.60 | -1.49 | 5.83x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +49.2% | +34.9pp | +41.1% | ✗ |
+| 2014-05-23 | $53.41 | salesforce.com Q4 FY06 results | 1.60 | -1.53 | 7.25x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +53.0% | +40.9pp | +37.1% | ✗ |
+| 2014-05-30 | $52.63 | salesforce.com Q4 FY06 results | 1.60 | -1.50 | 6.23x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +59.2% | +45.8pp | +39.4% | ✗ |
+| 2014-06-06 | $51.80 | salesforce.com Q4 FY06 results | 1.60 | -1.47 | 5.31x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +59.9% | +47.5pp | +42.1% | ✗ |
+| 2014-06-13 | $54.31 | salesforce.com Q4 FY06 results | 1.60 | -1.53 | 7.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +50.0% | +38.4pp | +35.9% | ✗ |
+| 2014-06-20 | $57.51 | salesforce.com Q4 FY06 results | 1.60 | -1.60 | 14.77x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +41.2% | +30.9pp | +28.6% | ✗ |
+| 2014-06-27 | $57.38 | salesforce.com Q4 FY06 results | 1.60 | -1.58 | 13.04x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +32.6% | +26.3pp | +29.1% | ✗ |
+| 2014-07-03 | $58.76 | salesforce.com Q4 FY06 results | 1.60 | -1.61 | 18.85x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +35.9% | +25.7pp | +26.3% | ✗ |
+| 2014-07-11 | $54.21 | salesforce.com Q4 FY06 results | 1.60 | -1.50 | 6.42x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +50.6% | +37.8pp | +37.2% | ✗ |
+| 2014-07-18 | $53.50 | salesforce.com Q4 FY06 results | 1.60 | -1.47 | 5.53x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +52.6% | +38.9pp | +39.4% | ✗ |
+| 2014-07-25 | $54.89 | salesforce.com Q4 FY06 results | 1.60 | -1.50 | 6.56x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +49.7% | +35.9pp | +36.2% | ✗ |
+| 2014-08-01 | $53.48 | salesforce.com Q4 FY06 results | 1.60 | -1.46 | 5.30x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +51.5% | +34.4pp | +40.1% | ✗ |
+| 2014-08-08 | $54.44 | salesforce.com Q4 FY06 results | 1.60 | -1.47 | 5.91x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +49.1% | +31.9pp | +38.0% | ✗ |
+| 2014-08-15 | $53.63 | salesforce.com Q4 FY06 results | 1.60 | -1.44 | 5.25x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +47.2% | +30.9pp | +40.4% | ✗ |
+| 2014-08-22 | $59.80 | salesforce.com Q4 FY06 results | 1.60 | -1.47 | 16.89x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +29.2% | +15.3pp | +26.1% | ✗ |
+| 2014-08-28 | $58.29 | salesforce.com Q4 FY06 results | 1.60 | -1.41 | 10.89x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +37.3% | +24.5pp | +29.7% | ✗ |
+| 2014-09-05 | $59.81 | salesforce.com Q4 FY06 results | 1.60 | -1.42 | 15.29x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +25.6% | +12.8pp | +26.8% | ✗ |
+| 2014-09-12 | $59.25 | salesforce.com Q4 FY06 results | 1.60 | -1.40 | 12.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +25.5% | +12.6pp | +28.1% | ✗ |
+| 2014-09-19 | $58.24 | salesforce.com Q4 FY06 results | 1.60 | -1.38 | 10.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +25.3% | +14.7pp | +30.4% | ✗ |
+| 2014-09-26 | $56.56 | salesforce.com Q4 FY06 results | 1.60 | -1.33 | 7.24x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +24.1% | +11.5pp | +34.3% | ✗ |
+| 2014-10-03 | $58.46 | salesforce.com Q4 FY06 results | 1.60 | -1.37 | 10.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +20.6% | +6.5pp | +29.9% | ✗ |
+| 2014-10-10 | $54.77 | salesforce.com Q4 FY06 results | 1.60 | -1.25 | 5.41x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +37.1% | +19.2pp | +38.5% | ✗ |
+| 2014-10-17 | $55.63 | salesforce.com Q4 FY06 results | 1.60 | -1.27 | 5.88x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +30.9% | +13.7pp | +36.2% | ✗ |
+| 2014-10-24 | $59.57 | salesforce.com Q4 FY06 results | 1.60 | -1.38 | 10.87x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +26.0% | +12.3pp | +27.1% | ✗ |
+| 2014-10-31 | $63.99 | salesforce.com Q4 FY06 results | 1.60 | -1.45 | 82.75x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +17.4% | +7.8pp | +18.2% | ✗ |
+| 2014-11-07 | $63.97 | salesforce.com Q4 FY06 results | 1.60 | -1.45 | 75.29x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +19.3% | +10.2pp | +18.1% | ✗ |
+| 2014-11-14 | $63.91 | salesforce.com Q4 FY06 results | 1.60 | -1.44 | 41.61x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +13.8% | +3.6pp | +18.1% | ✗ |
+| 2014-11-21 | $58.19 | salesforce.com Q4 FY06 results | 1.60 | -1.33 | 7.20x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +30.9% | +20.2pp | +29.7% | ✗ |
+| 2014-11-28 | $59.87 | salesforce.com Q4 FY06 results | 1.75 | -1.35 | 9.21x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +21.8% | +11.3pp | +25.8% | ✗ |
+| 2014-12-05 | $58.85 | salesforce.com Q4 FY06 results | 1.75 | -1.32 | 7.52x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +20.3% | +9.9pp | +27.7% | ✗ |
+| 2014-12-12 | $55.07 | salesforce.com Q4 FY06 results | 1.75 | -1.21 | 4.43x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +27.8% | +10.9pp | +36.1% | ✗ |
+| 2014-12-19 | $59.86 | salesforce.com Q4 FY06 results | 1.75 | -1.33 | 8.14x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +16.1% | +2.7pp | +25.0% | ✗ |
+| 2014-12-26 | $60.80 | salesforce.com Q4 FY06 results | 1.75 | -1.35 | 9.45x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +14.9% | +2.4pp | +22.9% | ✗ |
+| 2015-01-02 | $59.24 | salesforce.com Q4 FY06 results | 1.75 | -1.32 | 7.09x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +15.6% | +2.5pp | +25.9% | ✗ |
+| 2015-01-09 | $58.16 | salesforce.com Q4 FY06 results | 1.75 | -1.28 | 5.92x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +27.2% | +12.0pp | +28.1% | ✗ |
+| 2015-01-16 | $56.64 | salesforce.com Q4 FY06 results | 1.75 | -1.23 | 4.81x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +33.5% | +16.6pp | +31.6% | ✗ |
+| 2015-01-23 | $58.62 | salesforce.com Q4 FY06 results | 1.75 | -1.29 | 6.09x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +29.9% | +15.3pp | +27.3% | ✗ |
+| 2015-01-30 | $56.45 | salesforce.com Q4 FY06 results | 1.75 | -1.21 | 4.50x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +39.4% | +21.0pp | +32.6% | ✗ |
+| 2015-02-06 | $59.17 | salesforce.com Q4 FY06 results | 1.75 | -1.29 | 6.12x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +34.8% | +19.2pp | +27.0% | ✗ |
+| 2015-02-13 | $62.85 | salesforce.com Q4 FY06 results | 1.75 | -1.36 | 10.37x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.7% | +13.6pp | +20.2% | ✗ |
+| 2015-02-20 | $63.74 | salesforce.com Q4 FY06 results | 1.75 | -1.37 | 11.21x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +27.8% | +12.4pp | +19.1% | ✗ |
+| 2015-02-27 | $69.38 | salesforce.com Q4 FY06 results | 1.75 | -1.55 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +17.5% | +0.8pp | +9.8% | ✗ |
+| 2015-03-06 | $64.56 | salesforce.com Q4 FY06 results | 1.60 | -2.00 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +27.8% | +9.0pp | +18.4% | ✗ |
+| 2015-03-13 | $64.60 | salesforce.com Q4 FY06 results | 1.60 | -1.99 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +29.4% | +9.6pp | +18.7% | ✗ |
+| 2015-03-20 | $67.69 | salesforce.com Q4 FY06 results | 1.60 | -2.03 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +22.5% | +5.7pp | +13.6% | ✗ |
+| 2015-03-27 | $66.55 | salesforce.com Q4 FY06 results | 1.60 | -1.99 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +22.6% | +4.8pp | +15.8% | ✗ |
+| 2015-04-02 | $66.68 | salesforce.com Q4 FY06 results | 1.60 | -1.98 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +23.7% | +5.2pp | +15.8% | ✗ |
+| 2015-04-10 | $67.64 | salesforce.com Q4 FY06 results | 1.60 | -1.99 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +24.5% | +8.3pp | +14.5% | ✗ |
+| 2015-04-17 | $65.81 | salesforce.com Q4 FY06 results | 1.60 | -1.95 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +27.9% | +10.9pp | +17.9% | ✗ |
+| 2015-04-24 | $67.83 | salesforce.com Q4 FY06 results | 1.60 | -1.97 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +24.1% | +7.9pp | +14.6% | ✗ |
+| 2015-05-01 | $73.36 | salesforce.com Q4 FY06 results | 1.60 | -2.04 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +18.1% | +0.7pp | +6.2% | ✗ |
+| 2015-05-08 | $72.40 | salesforce.com Q4 FY06 results | 1.60 | -2.02 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +20.0% | +2.5pp | +7.9% | ✗ |
+| 2015-05-15 | $72.40 | salesforce.com Q4 FY06 results | 1.60 | -2.01 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +24.0% | +6.8pp | +8.3% | ✗ |
+| 2015-05-22 | $75.01 | salesforce.com Q4 FY06 results | 1.60 | -2.04 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +18.6% | +2.0pp | +4.8% | ✗ |
+| 2015-05-27 | $73.95 | salesforce.com Q4 FY06 results | 1.60 | -2.04 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +22.8% | +5.0pp | +6.4% | ✗ |
+| 2015-06-05 | $73.55 | salesforce.com Q4 FY06 results | 1.60 | -2.02 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +24.2% | +3.7pp | +7.2% | ✗ |
+| 2015-06-12 | $71.77 | salesforce.com Q4 FY06 results | 1.60 | -1.99 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +20.1% | -0.0pp | +10.0% | ✗ |
+| 2015-06-19 | $75.00 | salesforce.com Q4 FY06 results | 1.60 | -2.02 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +16.7% | -3.6pp | +5.5% | ✓ |
+| 2015-06-26 | $72.34 | salesforce.com Q4 FY06 results | 1.60 | -1.99 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +21.8% | +1.6pp | +9.5% | ✗ |
+| 2015-07-02 | $70.42 | salesforce.com Q4 FY06 results | 1.60 | -1.96 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +23.0% | +2.0pp | +12.7% | ✗ |
+| 2015-07-10 | $71.14 | salesforce.com Q4 FY06 results | 1.60 | -1.96 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +24.4% | +3.2pp | +11.8% | ✗ |
+| 2015-07-17 | $72.81 | salesforce.com Q4 FY06 results | 1.60 | -1.96 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +22.6% | +2.8pp | +9.5% | ✗ |
+| 2015-07-24 | $73.92 | salesforce.com Q4 FY06 results | 1.60 | -1.93 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +21.3% | -1.7pp | +8.0% | ✓ |
+| 2015-07-31 | $73.30 | salesforce.com Q4 FY06 results | 1.60 | -1.91 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +23.6% | +2.1pp | +9.1% | ✗ |
+| 2015-08-07 | $70.41 | salesforce.com Q4 FY06 results | 1.60 | -1.81 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.5% | +5.0pp | +13.9% | ✗ |
+| 2015-08-14 | $72.99 | salesforce.com Q4 FY06 results | 1.60 | -1.81 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +23.6% | +1.6pp | +10.1% | ✗ |
+| 2015-08-21 | $69.15 | salesforce.com Q4 FY06 results | 1.60 | -1.76 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +32.7% | +5.4pp | +16.6% | ✗ |
+| 2015-08-26 | $68.52 | salesforce.com Q4 FY06 results | 1.60 | -1.75 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +37.3% | +6.9pp | +18.1% | ✗ |
+| 2015-09-04 | $67.13 | salesforce.com Q4 FY06 results | 1.60 | -1.72 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +43.0% | +9.7pp | +21.0% | ✗ |
+| 2015-09-11 | $70.05 | salesforce.com Q4 FY06 results | 1.60 | -1.75 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +39.5% | +8.2pp | +16.5% | ✗ |
+| 2015-09-18 | $71.40 | salesforce.com Q4 FY06 results | 1.60 | -1.75 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +34.1% | +1.6pp | +14.9% | ✗ |
+| 2015-09-25 | $72.44 | salesforce.com Q4 FY06 results | 1.60 | -1.76 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +27.7% | -6.2pp | +13.9% | ✓ |
+| 2015-10-02 | $73.93 | salesforce.com Q4 FY06 results | 1.60 | -1.77 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +27.1% | -7.0pp | +12.2% | ✓ |
+| 2015-10-09 | $75.25 | salesforce.com Q4 FY06 results | 1.60 | -1.78 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +27.9% | -2.8pp | +10.9% | ✓ |
+| 2015-10-16 | $78.77 | salesforce.com Q4 FY06 results | 1.60 | -1.81 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +23.3% | -6.8pp | +6.5% | ✓ |
+| 2015-10-23 | $78.56 | salesforce.com Q4 FY06 results | 1.60 | -1.81 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +25.3% | -2.5pp | +7.4% | ✓ |
+| 2015-10-30 | $77.71 | salesforce.com Q4 FY06 results | 1.60 | -1.80 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +29.6% | +1.7pp | +9.2% | ✗ |
+| 2015-11-06 | $79.41 | salesforce.com Q4 FY06 results | 1.60 | -1.81 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +29.0% | +1.4pp | +7.6% | ✗ |
+| 2015-11-13 | $75.60 | salesforce.com Q4 FY06 results | 1.60 | -1.77 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +39.9% | +7.8pp | +13.8% | ✗ |
+| 2015-11-20 | $80.99 | salesforce.com Q4 FY06 results | 1.60 | -1.81 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +32.6% | +4.8pp | +7.0% | ✗ |
+| 2015-11-24 | $80.39 | salesforce.com Q4 FY06 results | 1.60 | -1.80 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +33.3% | +4.5pp | +8.3% | ✗ |
+| 2015-12-04 | $82.14 | salesforce.com Q4 FY06 results | 1.60 | -1.81 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +21.6% | -8.8pp | +6.9% | ✓ |
+| 2015-12-11 | $76.87 | salesforce.com Q4 FY06 results | 1.60 | -1.76 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +36.0% | -0.5pp | +15.1% | ✗ |
+| 2015-12-18 | $77.03 | salesforce.com Q4 FY06 results | 1.60 | -1.75 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +36.4% | -2.3pp | +15.7% | ✗ |
+| 2015-12-24 | $77.83 | salesforce.com Q4 FY06 results | 1.60 | -1.76 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +31.9% | -2.7pp | +15.3% | ✓ |
+| 2015-12-31 | $78.40 | salesforce.com Q4 FY06 results | 1.60 | -1.76 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +30.4% | -5.1pp | +15.1% | ✓ |
+| 2016-01-08 | $73.23 | salesforce.com Q4 FY06 results | 1.60 | -1.60 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +48.7% | +1.1pp | +24.1% | ✗ |
+| 2016-01-15 | $70.86 | salesforce.com Q4 FY06 results | 1.60 | -1.57 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +55.6% | +2.6pp | +29.1% | ✗ |
+| 2016-01-22 | $71.55 | salesforce.com Q4 FY06 results | 1.60 | -1.58 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +57.8% | +4.5pp | +28.7% | ✗ |
+| 2016-01-29 | $68.06 | salesforce.com Q4 FY06 results | 1.60 | -1.54 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +66.5% | +14.7pp | +36.4% | ✗ |
+| 2016-02-05 | $58.51 | salesforce.com Q4 FY06 results | 1.60 | -1.25 | 36.24x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +84.0% | +38.6pp | +59.7% | ✗ |
+| 2016-02-12 | $59.68 | salesforce.com Q4 FY06 results | 1.60 | -1.28 | 55.93x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +81.9% | +34.7pp | +57.5% | ✗ |
+| 2016-02-19 | $62.14 | salesforce.com Q4 FY06 results | 1.60 | -1.45 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +81.6% | +34.5pp | +52.1% | ✗ |
+| 2016-02-26 | $69.72 | salesforce.com Q4 FY06 results | 1.60 | -1.54 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +67.3% | +20.1pp | +36.4% | ✗ |
+| 2016-03-04 | $71.06 | salesforce.com Q4 FY06 results | 1.60 | -1.56 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +71.6% | +32.7pp | +34.7% | ✗ |
+| 2016-03-08 | $69.82 | - | 1.60 | -1.90 | 43.25x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +81.0% | +38.1pp | +38.0% | ✗ |
+| 2016-03-18 | $72.65 | - | 1.60 | -1.94 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +73.4% | +34.6pp | +34.1% | ✗ |
+| 2016-03-24 | $72.44 | - | 1.60 | -1.93 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +58.0% | +26.3pp | +35.6% | ✗ |
+| 2016-04-01 | $75.73 | - | 1.60 | -1.97 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +53.6% | +21.9pp | +30.5% | ✗ |
+| 2016-04-08 | $74.85 | - | 1.60 | -1.95 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +55.1% | +23.5pp | +32.9% | ✗ |
+| 2016-04-15 | $76.31 | - | 1.60 | -1.97 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +56.0% | +23.8pp | +31.2% | ✗ |
+| 2016-04-22 | $76.48 | - | 1.60 | -1.96 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +60.6% | +28.5pp | +32.0% | ✗ |
+| 2016-04-29 | $75.80 | - | 1.60 | -1.95 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +58.6% | +24.9pp | +34.0% | ✗ |
+| 2016-05-06 | $74.25 | - | 1.60 | -1.92 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +68.5% | +34.6pp | +37.8% | ✗ |
+| 2016-05-13 | $76.37 | - | 1.60 | -1.94 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +71.0% | +33.2pp | +35.1% | ✗ |
+| 2016-05-20 | $81.02 | - | 1.60 | -2.00 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +56.7% | +20.1pp | +28.3% | ✗ |
+| 2016-05-24 | $82.75 | - | 1.60 | -2.02 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +55.6% | +19.8pp | +26.3% | ✗ |
+| 2016-06-03 | $82.55 | - | 1.60 | -2.01 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +58.1% | +23.5pp | +27.6% | ✗ |
+| 2016-06-10 | $81.83 | - | 1.60 | -1.98 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +63.2% | +26.3pp | +29.7% | ✗ |
+| 2016-06-17 | $80.50 | - | 1.60 | -1.95 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +71.9% | +33.1pp | +33.1% | ✗ |
+| 2016-06-24 | $78.46 | - | 1.60 | -1.91 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +72.1% | +32.2pp | +37.9% | ✗ |
+| 2016-07-01 | $79.83 | - | 1.60 | -1.89 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +70.9% | +37.1pp | +36.7% | ✗ |
+| 2016-07-08 | $80.89 | - | 1.60 | -1.89 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +74.8% | +40.8pp | +35.9% | ✗ |
+| 2016-07-15 | $81.40 | - | 1.60 | -1.81 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +81.3% | +47.4pp | +36.4% | ✗ |
+| 2016-07-22 | $82.55 | - | 1.60 | -1.80 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +77.9% | +44.8pp | +35.9% | ✗ |
+| 2016-07-29 | $81.80 | - | 1.60 | -1.77 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +75.9% | +41.9pp | +38.5% | ✗ |
+| 2016-08-05 | $81.33 | - | 1.60 | -1.73 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +73.4% | +39.1pp | +40.5% | ✗ |
+| 2016-08-12 | $81.63 | - | 1.60 | -1.72 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +78.3% | +44.3pp | +41.4% | ✗ |
+| 2016-08-19 | $77.48 | - | 1.60 | -1.67 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +87.2% | +52.4pp | +50.3% | ✗ |
+| 2016-08-26 | $80.03 | - | 1.60 | -1.69 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +90.3% | +53.6pp | +46.9% | ✗ |
+| 2016-09-02 | $75.10 | - | 1.60 | -1.63 | 57.29x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +103.3% | +66.0pp | +58.1% | ✗ |
+| 2016-09-09 | $74.20 | - | 1.60 | -1.61 | 30.24x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +102.7% | +63.4pp | +61.2% | ✗ |
+| 2016-09-16 | $73.29 | - | 1.60 | -1.59 | 20.86x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +114.9% | +74.6pp | +64.8% | ✗ |
+| 2016-09-23 | $70.39 | - | 1.60 | -1.55 | 10.20x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +120.9% | +81.2pp | +73.2% | ✗ |
+| 2016-09-30 | $71.33 | - | 1.60 | -1.56 | 11.58x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +122.9% | +84.0pp | +72.8% | ✗ |
+| 2016-10-07 | $70.91 | - | 1.60 | -1.55 | 10.35x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +118.7% | +80.3pp | +75.6% | ✗ |
+| 2016-10-14 | $74.27 | - | 1.60 | -1.60 | 20.15x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +97.6% | +63.5pp | +68.9% | ✗ |
+| 2016-10-21 | $74.00 | - | 1.60 | -1.59 | 15.92x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +89.9% | +56.2pp | +70.8% | ✗ |
+| 2016-10-28 | $75.13 | - | 1.60 | -1.60 | 20.58x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +80.4% | +50.9pp | +69.3% | ✗ |
+| 2016-11-04 | $74.37 | - | 1.60 | -1.59 | 15.12x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +83.9% | +48.9pp | +71.9% | ✗ |
+| 2016-11-11 | $74.59 | - | 1.60 | -1.59 | 15.47x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +83.6% | +50.7pp | +72.3% | ✗ |
+| 2016-11-18 | $77.77 | - | 1.60 | -1.63 | 35.94x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +70.4% | +40.7pp | +65.9% | ✗ |
+| 2016-11-23 | $73.95 | - | 1.60 | -1.57 | 11.24x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +65.0% | +41.3pp | +74.6% | ✗ |
+| 2016-12-02 | $68.41 | - | 1.60 | -1.45 | 4.97x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +108.7% | +78.7pp | +89.8% | ✗ |
+| 2016-12-09 | $71.17 | - | 1.60 | -1.49 | 5.55x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +91.0% | +70.3pp | +83.4% | ✗ |
+| 2016-12-16 | $69.86 | - | 1.60 | -1.45 | 4.56x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +96.2% | +76.7pp | +87.9% | ✗ |
+| 2016-12-23 | $69.87 | - | 1.60 | -1.44 | 4.33x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +75.9% | +64.9pp | +88.6% | ✗ |
+| 2016-12-30 | $68.46 | - | 1.60 | -1.41 | 3.68x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +96.7% | +81.5pp | +93.1% | ✗ |
+| 2017-01-06 | $73.80 | - | 1.60 | -1.41 | 5.47x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +86.9% | +71.5pp | +79.8% | ✗ |
+| 2017-01-13 | $75.64 | - | 1.60 | -1.45 | 6.42x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +95.1% | +76.6pp | +76.3% | ✗ |
+| 2017-01-20 | $76.03 | - | 1.60 | -1.45 | 6.53x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +100.6% | +78.7pp | +76.3% | ✗ |
+| 2017-01-27 | $78.21 | - | 1.60 | -1.48 | 8.19x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +91.5% | +71.1pp | +72.3% | ✗ |
+| 2017-02-03 | $80.21 | - | 1.60 | -1.50 | 9.41x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +94.3% | +72.3pp | +68.9% | ✗ |
+| 2017-02-10 | $80.64 | - | 1.60 | -1.50 | 8.85x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +94.3% | +73.2pp | +69.2% | ✗ |
+| 2017-02-17 | $81.47 | - | 1.60 | -1.50 | 8.60x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +95.2% | +73.0pp | +68.7% | ✗ |
+| 2017-02-24 | $81.78 | - | 1.60 | -1.50 | 8.65x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +97.2% | +75.2pp | +69.0% | ✗ |
+| 2017-03-03 | $82.22 | - | 1.60 | -1.50 | 8.36x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +100.1% | +78.3pp | +69.2% | ✗ |
+| 2017-03-08 | $83.48 | - | 1.60 | -1.02 | 2.26x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +85.7% | +65.5pp | +67.3% | ✗ |
+| 2017-03-17 | $83.03 | - | 1.60 | -1.01 | 2.20x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +94.5% | +71.6pp | +69.1% | ✗ |
+| 2017-03-24 | $81.61 | - | 1.60 | -0.98 | 2.06x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +97.9% | +74.2pp | +73.1% | ✗ |
+| 2017-03-31 | $82.49 | - | 1.60 | -0.99 | 2.12x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +92.0% | +67.9pp | +72.1% | ✗ |
+| 2017-04-07 | $84.38 | - | 1.60 | -1.03 | 2.30x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +87.9% | +60.9pp | +69.3% | ✗ |
+| 2017-04-13 | $83.13 | - | 1.60 | -1.00 | 2.18x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +93.3% | +64.2pp | +72.8% | ✗ |
+| 2017-04-21 | $83.79 | - | 1.60 | -1.01 | 2.22x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +86.2% | +58.2pp | +72.2% | ✗ |
+| 2017-04-28 | $86.12 | - | 1.60 | -1.05 | 2.46x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +92.7% | +65.2pp | +68.5% | ✗ |
+| 2017-05-05 | $86.97 | - | 1.60 | -1.07 | 2.54x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +87.8% | +60.9pp | +67.8% | ✗ |
+| 2017-05-12 | $89.04 | - | 1.60 | -1.10 | 2.77x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +79.6% | +54.8pp | +64.5% | ✗ |
+| 2017-05-19 | $87.40 | - | 1.60 | -1.07 | 2.56x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +76.9% | +52.7pp | +68.3% | ✗ |
+| 2017-05-24 | $89.60 | - | 1.60 | -1.12 | 2.84x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +72.4% | +50.7pp | +64.7% | ✗ |
+| 2017-06-02 | $90.86 | - | 1.60 | -1.14 | 3.02x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +66.6% | +49.8pp | +62.9% | ✗ |
+| 2017-06-09 | $87.27 | - | 1.60 | -1.07 | 2.55x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +84.8% | +62.5pp | +70.1% | ✗ |
+| 2017-06-16 | $86.00 | - | 1.60 | -1.05 | 2.40x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +74.4% | +51.5pp | +73.0% | ✗ |
+| 2017-06-23 | $88.62 | - | 1.60 | -1.09 | 2.67x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +77.0% | +51.8pp | +68.2% | ✗ |
+| 2017-06-30 | $86.60 | - | 1.60 | -1.05 | 2.40x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +75.2% | +49.8pp | +72.5% | ✗ |
+| 2017-07-07 | $87.92 | - | 1.60 | -1.07 | 2.53x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +75.8% | +48.3pp | +70.2% | ✗ |
+| 2017-07-14 | $90.00 | - | 1.60 | -1.10 | 2.77x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +75.6% | +49.0pp | +66.5% | ✗ |
+| 2017-07-21 | $89.69 | - | 1.60 | -1.09 | 2.70x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +74.8% | +50.2pp | +67.3% | ✗ |
+| 2017-07-28 | $90.62 | - | 1.60 | -1.10 | 2.76x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +76.5% | +50.0pp | +65.8% | ✗ |
+| 2017-08-04 | $90.45 | - | 1.60 | -1.10 | 2.70x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +61.1% | +38.6pp | +66.4% | ✗ |
+| 2017-08-11 | $88.29 | - | 1.60 | -1.05 | 2.41x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +62.4% | +38.7pp | +70.5% | ✗ |
+| 2017-08-18 | $90.76 | - | 1.60 | -1.09 | 2.67x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +58.5% | +35.3pp | +65.8% | ✗ |
+| 2017-08-25 | $94.10 | - | 1.60 | -1.15 | 3.07x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +61.1% | +40.4pp | +59.9% | ✗ |
+| 2017-08-29 | $93.83 | - | 1.60 | -1.13 | 3.02x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +66.2% | +42.5pp | +60.4% | ✗ |
+| 2017-09-08 | $96.43 | - | 1.60 | -1.17 | 3.34x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +56.7% | +31.6pp | +56.1% | ✗ |
+| 2017-09-15 | $94.63 | - | 1.60 | -1.13 | 3.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +61.7% | +37.2pp | +59.0% | ✗ |
+| 2017-09-22 | $94.94 | - | 1.60 | -1.14 | 3.07x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +63.5% | +39.7pp | +58.4% | ✗ |
+| 2017-09-29 | $93.42 | - | 1.60 | -1.11 | 2.86x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +58.7% | +36.9pp | +60.9% | ✗ |
+| 2017-10-06 | $96.32 | - | 1.60 | -1.16 | 3.28x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +53.7% | +33.8pp | +55.8% | ✗ |
+| 2017-10-13 | $96.94 | - | 1.60 | -1.17 | 3.39x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +54.1% | +33.8pp | +54.9% | ✗ |
+| 2017-10-20 | $98.90 | - | 1.60 | -1.21 | 3.75x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +45.7% | +25.7pp | +51.9% | ✗ |
+| 2017-10-27 | $100.70 | - | 1.60 | -1.24 | 4.14x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +49.4% | +28.3pp | +49.3% | ✗ |
+| 2017-11-03 | $102.71 | - | 1.60 | -1.28 | 4.66x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +55.5% | +33.0pp | +46.8% | ✗ |
+| 2017-11-10 | $105.24 | - | 1.60 | -1.33 | 5.48x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +53.1% | +29.3pp | +43.7% | ✗ |
+| 2017-11-17 | $107.58 | - | 1.60 | -1.37 | 6.48x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +51.7% | +26.7pp | +41.2% | ✗ |
+| 2017-11-24 | $107.15 | - | 1.60 | -1.37 | 6.27x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +51.9% | +28.5pp | +42.4% | ✗ |
+| 2017-12-01 | $103.83 | - | 1.60 | -1.31 | 4.99x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +56.9% | +34.1pp | +47.4% | ✗ |
+| 2017-12-08 | $103.44 | - | 1.60 | -1.30 | 4.87x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +52.8% | +30.2pp | +48.3% | ✗ |
+| 2017-12-15 | $105.48 | - | 1.60 | -1.34 | 5.57x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +52.8% | +30.3pp | +45.8% | ✗ |
+| 2017-12-22 | $102.63 | - | 1.60 | -1.28 | 4.63x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +60.3% | +36.4pp | +50.5% | ✗ |
+| 2017-12-29 | $102.23 | - | 1.60 | -1.27 | 4.52x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +61.4% | +36.4pp | +51.6% | ✗ |

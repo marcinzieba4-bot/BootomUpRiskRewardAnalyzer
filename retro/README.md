@@ -26836,6 +26836,9 @@ Judgement calls that could carry hindsight, or limit the batch:
 - The signals, rule T and DURABLE, as in 2008-2012, by a builder who knows how salesforce.com's growth, margins and acquisitions turned
   out after these dates.
 
+The hindsight results for 2013-2017 are in `staging/retrospective/CRM/FINDINGS.md`, computed after the firewall result was pushed:
+hypotheses, never inputs, and labels of the reduced information set.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are

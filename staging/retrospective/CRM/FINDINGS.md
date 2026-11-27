@@ -1,7 +1,11 @@
 # CRM retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the CRM weekly dates: 262, 105 from 2008-01-04 to 2009-12-31 and 157 from 2010-01-08 to 2012-12-31,
-all salesforce.com, inc. (NYSE: CRM). They are **labels and hypotheses**: never feed them back into the method or the fact sheet. The
+Patterns seen in `outcome.json` for the CRM weekly dates: 523, 105 from 2008-01-04 to 2009-12-31, 157 from 2010-01-08 to 2012-12-31 and
+261 from 2013-01-04 to 2017-12-29, all salesforce.com, inc. (NYSE: CRM). The 2013-2017 dates are a reduced-data batch (SEC XBRL company
+facts only, no earnings releases or guidance: retro/README.md, "CRM 2013-2017"). They label a different information set from 2008-2012
+and are kept apart below. They were scored only after their build, validation outputs, README section and firewall result were
+committed and pushed (a63ef98, 52a4ebe, 3659fb8, 48598de), on 2026-11-27, in a session that had not opened this file or any CRM
+outcome before then. They are **labels and hypotheses**: never feed them back into the method or the fact sheet. The
 2010-2012 batch was decided in the session that scored 2008-2009 (disclosed in retro/README.md, "CRM 2010-2012") and scored only after
 its build, validation outputs, README section and firewall result were committed and pushed (ca1f2e5, 4c7980d, 12109b2, e1c9e54), on
 2026-11-26; its 3-year horizons end 2015-12-30, and the four-for-one split of 2013-04-18 falls inside most of them: `outcome.json`
@@ -183,3 +187,122 @@ Across the 157 dates of 2010-2012:
   +34.8%); AVOID was the lowest, the other three were not in order.
 - **Where the two-year price landed:** in the BASE band on 76 of the 157 dates, BULL on 69 and XBULL on 12 (all RICH); none at BEAR.
   `profile_drift` (hindsight): DURABLE, risk 2 on every date, against today's 2026 AI_EXPOSED (GENAI), risk 3, as before.
+
+## 2013 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID (2013-01-11 to 2013-12-27) | 43 | +48.9% | +29.0% to +73.7% | 41 | 40 | +30.7% | 1 |
+| class RICH, legacy tier WATCHLIST (2013-01-04 to 2013-07-05) | 9 | +80.8% | +33.3% to +95.8% | 9 | 6 | +53.9% | 0 |
+| FY2013E loss guide, FY11's $0.47 stands (2013-01-04 to 2013-03-08) | 10 | +39.3% | +29.0% to +52.5% | 9 | 4 | +32.3% | 1 |
+| FY2014E: guide not in the sheet, FY11's $0.47 stands (2013-03-12 to 2013-04-12) | 5 | +53.8% | +43.7% to +61.2% | 5 | 5 | +30.7% | 0 |
+| FY2014E: guide not in the sheet, FY11's $0.1175 stands (2013-04-19 to 2013-12-27) | 37 | +54.7% | +31.9% to +95.8% | 36 | 37 | +34.6% | 0 |
+| latest print Q3 FY13 (2013-01-04 to 2013-03-08) | 10 | +39.3% | +29.0% to +52.5% | 9 | 4 | +32.3% | 1 |
+| latest print Q4 FY13 (2013-03-12 to 2013-05-24) | 11 | +61.0% | +43.7% to +73.7% | 11 | 11 | +37.2% | 0 |
+| latest print Q1 FY14 (2013-05-29 to 2013-08-30) | 14 | +71.3% | +43.0% to +95.8% | 14 | 14 | +47.9% | 0 |
+| latest print Q2 FY14 (2013-09-04 to 2013-11-22) | 12 | +43.1% | +31.9% to +48.1% | 11 | 12 | +25.1% | 0 |
+| latest print Q3 FY14 (2013-11-27 to 2013-12-27) | 5 | +50.3% | +42.9% to +52.4% | 5 | 5 | +30.5% | 0 |
+
+
+
+- **RICH held on 1 of 52.** Every 2013 entry ($165.42-185.85 as traded before the split, $37.56-57.31 after; 320-488x, the 87th-100th
+  percentile) returned +29.0% to +95.8% over two years. 50 cleared the hurdle, 46 beat SPY, and over three years 48 beat SPY. The one
+  that held, 2013-02-01, returned +29.0% and lagged SPY by 7.6pp.
+- **The WATCHLIST dates returned more than the AVOID dates** (median +80.8% against +48.9%). The five of 2013-06-07 to 2013-07-05 were
+  the five lowest entries of the batch ($37.56-39.61) and returned +80.8% to +95.8%.
+
+## 2014 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID (2014-01-03 to 2014-12-26) | 52 | +29.2% | -5.0% to +59.9% | 23 | 48 | +29.6% | 4 |
+| FY2014E: guide not in the sheet, FY11's $0.1175 stands (2014-01-03 to 2014-02-28) | 9 | +12.4% | -5.0% to +42.2% | 1 | 5 | +18.6% | 4 |
+| FY2015E: guide not in the sheet, FY11's $0.1175 stands (2014-03-07 to 2014-12-26) | 43 | +32.6% | +13.8% to +59.9% | 22 | 43 | +29.9% | 0 |
+| latest print Q3 FY14 (2014-01-03 to 2014-02-28) | 9 | +12.4% | -5.0% to +42.2% | 1 | 5 | +18.6% | 4 |
+| latest print Q4 FY14 (2014-03-07 to 2014-05-23) | 12 | +40.3% | +16.1% to +53.0% | 8 | 12 | +37.1% | 0 |
+| latest print Q1 FY15 (2014-05-30 to 2014-08-22) | 13 | +49.7% | +29.2% to +59.9% | 12 | 13 | +37.2% | 0 |
+| latest print Q2 FY15 (2014-08-28 to 2014-11-21) | 13 | +25.5% | +13.8% to +37.3% | 2 | 13 | +29.7% | 0 |
+| latest print Q3 FY15 (2014-11-28 to 2014-12-26) | 5 | +20.3% | +14.9% to +27.8% | 0 | 5 | +25.8% | 0 |
+
+
+
+- **RICH held on 4 of 52, the 4 entries of 2014-01-31 to 2014-02-21** ($60.53-63.59, the 100th percentile). They returned -5.0%
+  to +12.4% over two years and lagged SPY by 0.8-14.0pp. Three of them are the batch's only negative two-year returns. Over three years
+  they returned +28.9% to +30.3%, under the 52.1% hurdle.
+- **From the FY2014 10-K** (FY15E, 43 dates) every entry beat SPY over two years (+13.8% to +59.9%), but only 22 cleared the hurdle: the
+  RICH call missed on the benchmark rather than on the hurdle.
+
+## 2015 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID (2015-01-02 to 2015-12-31) | 53 | +27.2% | +15.6% to +43.0% | 13 | 40 | +13.8% | 10 |
+| FY2015E: guide not in the sheet, FY11's $0.1175 stands (2015-01-02 to 2015-02-27) | 9 | +28.7% | +15.6% to +39.4% | 3 | 9 | +27.0% | 0 |
+| FY2016E: guide not in the sheet, FY11's $0.1175 stands (2015-03-06 to 2015-12-31) | 44 | +25.3% | +16.7% to +43.0% | 10 | 31 | +12.2% | 10 |
+| latest print Q3 FY15 (2015-01-02 to 2015-02-27) | 9 | +28.7% | +15.6% to +39.4% | 3 | 9 | +27.0% | 0 |
+| latest print Q4 FY15 (2015-03-06 to 2015-05-22) | 12 | +24.0% | +18.1% to +29.4% | 0 | 12 | +14.6% | 0 |
+| latest print Q1 FY16 (2015-05-27 to 2015-08-21) | 13 | +23.0% | +16.7% to +32.7% | 1 | 10 | +9.5% | 2 |
+| latest print Q2 FY16 (2015-08-26 to 2015-11-20) | 13 | +29.6% | +23.3% to +43.0% | 6 | 8 | +12.2% | 5 |
+| latest print Q3 FY16 (2015-11-24 to 2015-12-31) | 6 | +33.3% | +21.6% to +36.4% | 3 | 1 | +15.1% | 3 |
+
+
+
+- **RICH held on 10 of 53, the most of any year:** 2015-06-19 to 2015-12-31 ($72.44-82.14, the 97th-100th percentile). They returned
+  +16.7% to +31.9% over two years and lagged SPY by 1.7-8.8pp. Over three years every 2015 entry cleared the 52.1% hurdle (51 of 53; +49.0% to
+  +128.2%) and all 53 beat SPY. The year's calls held on the two-year horizon only.
+
+## 2016 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID (2016-01-08 to 2016-12-30) | 52 | +75.9% | +48.7% to +122.9% | 52 | 52 | +38.5% | 0 |
+| FY2016E: guide not in the sheet, FY11's $0.1175 stands (2016-01-08 to 2016-03-04) | 9 | +67.3% | +48.7% to +84.0% | 9 | 9 | +36.4% | 0 |
+| FY2017E: guide not in the sheet, FY11's $0.1175 stands (2016-03-08 to 2016-12-30) | 43 | +75.9% | +53.6% to +122.9% | 43 | 43 | +40.5% | 0 |
+| latest print Q3 FY16 (2016-01-08 to 2016-03-04) | 9 | +67.3% | +48.7% to +84.0% | 9 | 9 | +36.4% | 0 |
+| latest print Q4 FY16 (2016-03-08 to 2016-05-20) | 11 | +58.6% | +53.6% to +81.0% | 11 | 11 | +34.0% | 0 |
+| latest print Q1 FY17 (2016-05-24 to 2016-08-26) | 14 | +74.8% | +55.6% to +90.3% | 14 | 14 | +36.7% | 0 |
+| latest print Q2 FY17 (2016-09-02 to 2016-11-18) | 12 | +102.7% | +70.4% to +122.9% | 12 | 12 | +70.8% | 0 |
+| latest print Q3 FY17 (2016-11-23 to 2016-12-30) | 6 | +96.2% | +65.0% to +108.7% | 6 | 6 | +88.6% | 0 |
+
+
+
+- **RICH held on 0 of 52.** Every entry ($58.51-82.75, 498-704x FY11's $0.1175, the 80th-100th percentile; Ratio B infinite on 31
+  dates to 2016-08-26) returned +48.7% to +122.9% over two years, the best year of the batch. All 52 cleared the hurdle and beat
+  SPY. The seven XBULL landings of the batch are all in 2016 (2016-03-08 to 2016-06-17).
+
+## 2017 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID (2017-01-06 to 2017-12-29) | 52 | +75.2% | +45.7% to +100.6% | 52 | 52 | +67.3% | 0 |
+| FY2017E: guide not in the sheet, FY11's $0.1175 stands (2017-01-06 to 2017-03-03) | 9 | +95.1% | +86.9% to +100.6% | 9 | 9 | +69.2% | 0 |
+| FY2018E: guide not in the sheet, FY17's $0.26 stands (2017-03-08 to 2017-12-29) | 43 | +66.2% | +45.7% to +97.9% | 43 | 43 | +64.7% | 0 |
+| latest print Q3 FY17 (2017-01-06 to 2017-03-03) | 9 | +95.1% | +86.9% to +100.6% | 9 | 9 | +69.2% | 0 |
+| latest print Q4 FY17 (2017-03-08 to 2017-05-19) | 11 | +87.9% | +76.9% to +97.9% | 11 | 11 | +69.1% | 0 |
+| latest print Q1 FY18 (2017-05-24 to 2017-08-25) | 14 | +74.8% | +58.5% to +84.8% | 14 | 14 | +67.3% | 0 |
+| latest print Q2 FY18 (2017-08-29 to 2017-11-17) | 12 | +55.5% | +45.7% to +66.2% | 12 | 12 | +55.8% | 0 |
+| latest print Q3 FY18 (2017-11-24 to 2017-12-29) | 6 | +56.9% | +51.9% to +61.4% | 6 | 6 | +48.3% | 0 |
+
+- **RICH held on 0 of 52.** On FY17's $0.26 from the FY2017 10-K (314-414x, the 88th-99th percentile) the 43 entries returned +45.7%
+  to +97.9% over two years. The 9 before it, on FY11's $0.1175, returned +86.9% to +100.6%. All 52 cleared the hurdle and beat SPY.
+
+Across the 261 dates of 2013-2017 (the reduced-data batch):
+- **RICH on all 261, held on 15.** The two-year returns run from -5.0% to +122.9% (median +51.5%). 190 cleared the two-year hurdle and
+  238 beat SPY; over three years 223 cleared the 52.1% hurdle and 249 beat SPY. The 15 that held are 2013-02-01, 2014-01-31 to
+  2014-02-21 and ten dates of June to December 2015. Each returned -5.0% to +31.9% and was entered at the 97th percentile or above.
+- **The ordering again carried information the class line did not.** The rank correlation between the AS_OF P/E percentile and the
+  two-year return is -0.60 (-0.46 over three years), within a narrow band (80th-100th percentile): the dates at the 100th percentile
+  returned least. The dates are weekly and their horizons overlap, so this is one price path, not 261 observations.
+- **The stand-in EPS, again.** On the 203 dates where FY11's $0.1175 stood (2013-04-19 to 2017-03-03), the class was RICH on all and
+  held on 14; the median two-year return was +44.0%. On the 43 dates of FY17's $0.26 it held on none (+45.7% to +97.9%). This extends
+  the 2010-2012 hypothesis (a GAAP stand-in under losses measures nothing the price follows) to the years the reduced data could not
+  see guided. Whether a guided EPS would have read differently is not tested: the guides are not in the sheet.
+- **The growth signals stayed BEAR.** Subscription and support growth (+22.5% to +36.9%) and deferred revenue growth (+22.8% to +35.4%)
+  were under their BEAR lines on every print, and the proxy composite was 1.60-1.75. Rule T over IPO-era years ranked a company growing
+  25-37% a year as its worst case, and the composite could not separate the 2014 entries that lost from the 2016 entries that doubled.
+- **The legacy tiers:** AVOID on 252 dates (median two-year return +51.5%), WATCHLIST on 9 (+80.8%). Too few WATCHLIST dates to test.
+- **Where the two-year price landed:** in the BULL band on 254 of the 261 dates and XBULL on 7 (2016), none at BASE or BEAR. The BULL
+  case rested on the decade's EPS CAGR measured across the loss-year gaps.
+  `profile_drift` (hindsight): DURABLE, risk 2 on every date, against today's 2026 AI_EXPOSED (GENAI), risk 3, as before.
+- **Reduced data, read with care.** These labels score a model that could not see salesforce.com's guidance or 10-K text. Patterns here
+  are hypotheses about that information set, and should be retested when the batch is rebuilt from the filings.
