@@ -1,0 +1,149 @@
+
+════════════════════════════════════════════════════════════════════════
+  NEM  ·  Newmont Corporation  ·  $58.84  ·  RETROSPECTIVE as of 2021-08-13
+  Signal: ◉ BUY   Ratio B: 0.42x   Adj gap: +1.20  [UNDERVALUED]
+  Point-in-time: 13 sources, latest published 2021-08-13; latest print Q2 2021 (Jul 22)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2021E revenue, USD bn  →  FY2023E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2021E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Gold                          $ 13.41  $13.41  $13.70    +0.00    +0.29
+    +14.4% revenue in FY20
+  Other metals                  $  1.49  $ 1.49  $ 1.52    +0.00    +0.03
+    +66.0% revenue in FY20
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $ 14.90  $14.90  $15.22    +0.00    +0.32
+  FY2021E = FY20 $11.497B × (1 + 29.6%: the Q2 2021 revenue growth (no revenue guide), YoY, applied to the year (no FY21 revenue guide)); split pro rata to FY20 sales by metal (FY2020 10-K; other metals as sales less gold)
+  Q2 2021 (Jul 22): revenue $3.065B +29.6% YoY; gold ounces sold +15.1%; costs applicable to sales $755/oz (+0.9%);
+  pre-tax margin 30.77% (+751.1bp); EPS $0.80 vs $0.51 (+56.9%)
+  Revenue: sales $3,065M vs $2,365M a year earlier; consolidated gold ounces sold 1,444K vs 1,255K; costs applicable to sales $755 an ounce of gold vs $748; GAAP diluted EPS from continuing operations $0.80 vs $0.51; diluted shares 803M; adjusted figures, display only: Adjusted net income4 was $670 million or $0.83 per diluted share
+  FY21 outlook (Q2 2021 release, 2021-07-22, display only): 'Full-year results continue to be back-half weighted, in line with guidance ranges' — a production and unit-cost outlook: method r2 has no input for a production guide (the XOM rule) or for cost components (the MSFT segment rule), so no field; no filing guides revenue, EPS or a margin; BASE takes Q2 2021 revenue growth
+
+  FY2021E EPS check:  $14.900B × 27.3% pre-tax × (1−22.4%) ÷ 0.803B  =  $3.94  (FY2021E: no EPS guide in numbers, FY20's $3.31 (GAAP) stands)
+  FY2023E BEAR check: $14.900B × 27.3% ÷ 0.887B  =  $3.57  (scenario $3.31)
+  FY2023E BULL check: $15.220B × 27.7% ÷ 0.887B  =  $3.69  (scenario $5.13)
+  Every 1pp of pre-tax margin ≈ $0.144 EPS ≈ $2.58/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Gold ounces sold                      -27.0%   ≥-13.0%     ≥1.0%    ≥40.0%    +15.1%  ▲ BULL  ███░
+  Costs applicable to sales per oz      +52.0%    ≤28.0%     ≤5.0%   ≤-14.0%     +0.9%  ▲ BULL  ███░
+  Revenue growth                        -33.0%   ≥-10.0%    ≥13.0%    ≥55.0%    +29.6%  ▲ BULL  ███░
+  EPS growth                           -106.0%   ≥-34.0%    ≥38.0%   ≥297.0%    +56.9%  ▲ BULL  ███░
+  Pre-tax margin change               -8210.0bp  ≥-4020.0bp  ≥180.0bp  ≥3780.0bp  +751.1bp  ▲ BULL  ███░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.85 / 4.00
+  Market composite:   1.78 / 4.00  (back-solved from $58.84 + 15% hurdle)
+  SCA adjustment:    +0.23  ·  EPP-distance adj -0.10  →  Adj composite 2.98  →  Gap +1.20  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY20 consolidated gold ounces sold 5,831K (-9.8%), costs applicable to sales $756/oz (+4.9%) (FY2020 10-K); Q2 $755/oz (+0.9% YoY)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 17.8x FY21E vs a 17.9x 9.6-yr ex-FY11 ex-FY13 ex-FY15 ex-FY16 ex-FY17 ex-FY18 ex-FY19 median (48th percentile of its own range)  (+0.03 × 25%  =  +0.007)
+    +  Growth vs own history: Q2 2021 revenue growth (no revenue guide) +29.6% vs a -1.7% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  Cash and cash equivalents $4.583B, debt $5,480M (long-term $4,989M and current $491M) (Q2 2021), FY20 free cash flow $3.588B (net cash provided by (used in) operating activities of continuing operations $4,890M less additions to property, plant and mine development $1,302M (FY2020 10-K)), dividend $2.20 a year  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Gold ounces sold                      +15.1%    -27.0%  -42.1%  Grades, recoveries and mine sequencin…
+  Costs applicable to sales per oz       +0.9%    +52.0%  +51.1%  Labor, fuel, power and currencies lif…
+  Revenue growth                        +29.6%    -33.0%  -62.6%  Gold and copper prices and volumes fa…
+  EPS growth                            +56.9%   -106.0%  -162.9%  Write-downs and unit costs outrun the…
+  Pre-tax margin change               +751.1bp  -8210.0bp  -8961.1bp  Unit costs and charges outrun the met…
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$56.58  (model)  /  $42.37 (defined)
+  Bear probability (proxy model):  5.0%
+
+  KEY TRIGGER: gold ounces sold went from -2.9% (Q1 2021) to +15.1% YoY (Q2 2021), revenue +29.6%;
+  the bear case needs unit costs (+0.9% per ounce now) rising faster than the metal
+  price, with the pre-tax margin (+751.1bp now) giving way. A gold miner's downturn shows up in unit costs and ounces first;
+  the bear needs the gold price to stop covering them.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $3.31  (FY2021E: no EPS guide in numbers, FY20's $3.31 (GAAP) stands)
+  Min viable P/E at panic:          12x  [median of calendar-year P/E lows: 2012 11.7x, 2014 13.9x, 2020 11.9x, 2021 16.4x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $39.72/share
+  Current $58.84 vs Updated EPP $39.72:  +48%  ⚠ far above floor — large drawdown room
+  Bear $42.37 vs Updated EPP $39.72:  +7%  ✓ bear stays above the floor
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Gold ounces sold                             -13.0      -28.1   BASE floor (vs +15 now)
+  Costs applicable to sales per oz              28.0      +27.1   BASE floor (vs +1 now)
+  Revenue growth                               -10.0      -39.6   BASE floor (vs +30 now)
+  EPS growth                                   -34.0      -90.9   BASE floor (vs +57 now)
+  Pre-tax margin change                      -4020.0    -4771.1   BASE floor (vs +751 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $3.31 × (1+22.5%)² = $4.97
+  At 17x P/E (conservative):  $84.46/share
+  + Cumul. dividends (2yr):  +$4.53/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $84.46  (▲25.62 from $58.84)
+  Conservative total return:  +51% over 2yr  = +26%/yr
+
+  At 17.8x the multiple is already near its 17x median, so the conservative
+  case is a growth question: breakeven at 17x needs FY2023E EPS of $3.19,
+  i.e. -1.8%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $54.18  –  $75.31  (at 22th pct of range)
+  Annual dividend:      $2.20/share  (yield 3.7%)
+  Realized vol:         30% annualized (1-yr daily log returns)
+  Beta vs broad market: 0.74
+  1-sigma range (1yr):  $41.19  –  $76.49  ($58.84 ± 30%)
+  2-sigma range (1yr):  $23.54  –  $94.14
+  ────────────────────────────────────────────────────────────
+  Bear $42.37 requires:  ~0.9σ price move  (within normal vol range)
+  A gold producer whose revenue follows the gold price: the stock is +8% off its February
+  low (52 weeks) while gold ounces sold went from -2.9% (Q1 2021) to +15.1% YoY (Q2 2021), revenue +29.6%.
+  Near the low: the multiple has not run ahead of the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        3.31   12.8x  $  42.37     5.0%     30.8%   -25.8pp  Flat EPS (no EPS change in FY12-FY20 ex-FY13 ex-FY15 ex-FY16 ex-FY17 ex-FY18 ex-FY19 to measure: the 0% cap); P/E to its 10th pct
+  BASE        5.13   17.9x  $  91.83    17.6%     51.6%   -34.1pp  EPS +24.5%/yr (Q2 revenue YoY + margin + buyback); P/E at its 9.6-yr ex-FY11 ex-FY13 ex-FY15 ex-FY16 ex-FY17 ex-FY18 ex-FY19 median
+  BULL        5.13   19.1x  $  97.98    61.3%     14.8%   +46.5pp  EPS +24.5%/yr (FY12-FY20 ex-FY13 ex-FY15 ex-FY16 ex-FY17 ex-FY18 ex-FY19 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL       5.13   20.0x  $ 102.60    16.1%      2.8%   +13.4pp  EPS +24.5%/yr (best 2-yr run FY12-FY20 ex-FY13 ex-FY15 ex-FY16 ex-FY17 ex-FY18 ex-FY19, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $94.85  /  Market EV: $77.81  /  Current: $58.84
+  Conservative EV (2yr, ④): $84.46 + $4.53 divs = $89.00 total value
+  Downside (→ Bear $42.37): 28.0%   Upside (→ Bull $97.98): 66.5%   Ratio B 0.42x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $58.84 the market needs $77.82 in two years —
+  at or below the BASE case. That is a market composite of 1.78 against a model
+  read of 2.98: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.42x     +48%    +1.20  UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.26x     +48%    +1.35  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.55x     +48%    +0.67  UNDERVALUED / BUY
+  Scenario EPS +1.5pp/yr                          0.36x     +48%    +1.26  UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.49x     +48%    +1.13  UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.42x     +48%    +1.50  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.42x     +19%    +1.30  UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.42x     +48%    +1.37  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 print (late October) — revenue against the Q2 2021 revenue growth (no revenue guide): +29.6% YoY
+  (2) Unit costs — costs applicable to sales +0.9% per ounce in Q2 2021: what must hold if the gold price does not
+  (3) The FY21 outlook — gold sales and unit costs, not revenue or EPS (Q2 2021 release): the gold price sets revenue
+  (4) Ounces — consolidated gold ounces sold +15.1% in Q2 2021 against revenue +29.6%: the metal price, not volume, has carried revenue
+  (5) Capital structure at 18x — dividends declared $1.45 a share in FY2020 (regular); share repurchases text only
+  ◉ BUY  |  EPP floor $39.72  |  ADD below ~$78.06  |  TRIM above $97.98
+════════════════════════════════════════════════════════════════════════
+
