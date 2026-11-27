@@ -2319,6 +2319,18 @@
     "first_seen": "2014-10-10",
     "approx": true,
     "note": "the later Charter shareholder (CHTR); first hit of EDGAR full-text search for filings under CIK 1091667 (from 2001): the SC 13D/A amendments filed 2014-10-10; not read beyond the search result"
+   },
+   {
+    "term": "Cox Transactions",
+    "first_seen": "2025-10-31",
+    "approx": true,
+    "note": "Charter's name for its 2025-2026 combination with Cox Communications (CHTR); first in the 8-Ks and 10-Ks of CIK 1091667 downloaded for \"CHTR 2022-2026\" (8-K 0001091667-25-000167, the Q3 2025 release); the 425s and proxy materials of 2025 were not searched, so an earlier use is possible"
+   },
+   {
+    "term": "Spectrum Stream TV",
+    "first_seen": "2026-11-06",
+    "approx": true,
+    "note": "a later Charter video package name (CHTR); first in the 8-Ks and 10-Ks of CIK 1091667 downloaded for \"CHTR 2022-2026\" (8-K 0001091667-26-000072, the Q3 2026 release); other filings not searched"
    }
   ]
  }
