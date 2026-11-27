@@ -24,7 +24,7 @@ touching either directory.
   NKE (2008-2026 so far), AVGO (from its 2009-08-06 listing to 2026-10-30 so far), PEP (2008 to 2026-10-30 so far), MSFT
   (2008 to 2026-10-30 so far), XOM (2008 to 2026-10-30 so far), SHW (2008 to 2026-11-06 so far), WMT (2008 to 2026-11-06 so far), RCL (2008 to 2026-11-06 so far), MAR (2008 to 2026-11-03 so far), BKR (2008 to 2017-06-30, then 2019-02-01 to 2026-11-06 so far), PFE (2008 to 2026-11-04 so far), CMCSA (2008 to 2026-11-06 so far), CAT (2008 to 2026-11-06 so far), BMY (2008 to 2026-11-06 so far), NVDA (2008 to 2026-11-06 so far), F (2008-01-04 to 2026-11-06 so far; 2022-01-07 onward was built first at the owner's request, and dates before 2022 are an early era with its
   own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far), SPGI (2008-01-04 to 2026-11-20 so far), CB (2008-01-04 to 2026-11-20 so far), LLY (2008-01-04 to 2026-11-20 so far), UNH (2008-01-04 to 2026-11-20 so far), CRM (2008-01-04 to 2026-11-20 so far), SCHW (2008-01-04 to 2026-11-20 so far), NEE (2008-01-04 to 2026-11-20 so far), NEM (2008-01-04 to 2013-12-31 so far), LYB (from its 2010 share issue: 2012-02-10 to 2017-12-29 so far) and CHTR (from its first
-  anchoring year: 2019-02-01 to 2021-12-31 so far) sit in `staging/retrospective/` until the owner adds
+  anchoring year: 2019-02-01 to 2026-11-20 so far) sit in `staging/retrospective/` until the owner adds
   them to the archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM", "SHW", "WMT", "RCL", "MAR", "BKR", "PFE", "CMCSA", "CAT",
   "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG", "JPM", "V", "SPGI", "CB", "LLY", "UNH", "CRM", "SCHW", "NEE", "NEM", "LYB", "CHTR"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py`, `mu_signal_model.py`, `v_signal_model.py`, `spgi_signal_model.py` and `lly_signal_model.py` (other branches) files
   and today's profiles in `data/business_profiles.json` (NVDA's, SO's, V's, SPGI's, CB's, LLY's, UNH's, CRM's and NEE's included) are 2026 analyses: never inputs to a retrospective. AVGO did not trade
@@ -594,6 +594,14 @@ touching either directory.
   revenue, the Adjusted EBITDA margin, capital intensity, the operating margin) with rule T over the FY2018 10-K's decade, the
   Successor's 2011-2018 changes; DURABLE (the 10-Ks' "seasonal and cyclical variations" are advertising and seasonal-area patterns),
   STREAMING on the watch list from each 10-K's online-video words (the CMCSA encoding); no dividend; RICH 77, CHEAP 66, FAIR 10 of 153
-  dates; FY2017 kept at GAAP moves 56 classes, the batch's largest call (retro/README.md, "CHTR 2018-2021").
+  dates; FY2017 kept at GAAP moves 56 classes, the batch's largest call (retro/README.md, "CHTR 2018-2021"). From 2022: the 10-Ks reserve Item 6, so each vintage takes
+  three years from its statements of operations and the earlier years from the latest earlier vintage (`statement_years`,
+  `carried_from`); GAAP every year (FY21 $24.47 to FY25 $36.21; no year near the one-off tests); no guide in numbers (the capex outlooks
+  are in dollars from 2022, a cost component, display only); Adjusted EBITDA from the releases' reconciliation of non-GAAP measures from Q2
+  2022; all 20 prints before the open on a Friday; the Cox Transactions (closed 2026-08-19) in the Q3 2026 actual figures as published,
+  pro forma unused, the year-ago customer relationships from the addendum's actual summary (`basis_note`); STREAMING stays on the watch
+  list on each 10-K's words, GENAI and GLP1 out of scope (the FY2023-FY2025 10-Ks' AI sentence quoted, `ai_quote`, text only); CHEAP and
+  BUY on all 255 dates, and no tested encoding (a five-year window included) moves a class; the last date is 2026-11-20; built in a new
+  session without opening the 2019-2021 outcomes or findings (retro/README.md, "CHTR 2022-2026").
 - **Never use the owner's personal email** in request headers to external
   services (SEC asks for a contact in the User-Agent).
