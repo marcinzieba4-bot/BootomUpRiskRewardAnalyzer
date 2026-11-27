@@ -2281,6 +2281,24 @@
     "term": "XPLR Infrastructure",
     "first_seen": "2025-01-24",
     "note": "NextEra Energy Partners, LP's later name; first in a NextEra Energy filing among the 8-Ks and 10-Ks of 2022-2026 read for NEE in the Q4 2024 release (8-K accepted 2025-01-24 07:34 ET, before the open); the partnership's own filings were not searched"
+   },
+   {
+    "term": "Charter Spectrum",
+    "first_seen": "2014-02-21",
+    "approx": true,
+    "note": "Charter's later brand (CHTR); first hit of EDGAR full-text search for filings under CIK 1091667 (from 2001): the Q4 2013 release, 8-K 0001091667-14-000079 filed 2014-02-21; no CHTR model is built (retro/README.md, \"CHTR 2008-2009\")"
+   },
+   {
+    "term": "Spectrum Mobile",
+    "first_seen": "2017-12-22",
+    "approx": true,
+    "note": "Charter's later mobile brand (CHTR); first hit of EDGAR full-text search for filings under CIK 1091667 (from 2001): exhibits of the S-3ASR 0001193125-17-376789 filed 2017-12-22; not read beyond the search result"
+   },
+   {
+    "term": "Liberty Broadband",
+    "first_seen": "2014-10-10",
+    "approx": true,
+    "note": "the later Charter shareholder (CHTR); first hit of EDGAR full-text search for filings under CIK 1091667 (from 2001): the SC 13D/A amendments filed 2014-10-10; not read beyond the search result"
    }
   ]
  }
