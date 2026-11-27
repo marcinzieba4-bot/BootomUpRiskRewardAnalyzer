@@ -1,7 +1,10 @@
 # CRM retrospective findings (hindsight)
 
-Patterns seen in `outcome.json` for the CRM weekly dates: 732, 105 from 2008-01-04 to 2009-12-31, 157 from 2010-01-08 to 2012-12-31,
-261 from 2013-01-04 to 2017-12-29 and 209 from 2018-01-05 to 2021-12-31, all salesforce.com, inc. (NYSE: CRM). The 2013-2021 dates are
+Patterns seen in `outcome.json` for the CRM weekly dates: 987, 105 from 2008-01-04 to 2009-12-31, 157 from 2010-01-08 to 2012-12-31,
+261 from 2013-01-04 to 2017-12-29, 209 from 2018-01-05 to 2021-12-31 and 255 from 2022-01-07 to 2026-11-20, salesforce.com, inc. (NYSE:
+CRM; Salesforce, Inc. from 2022-04-04). The 2022-2026 batch is full data again (the filings themselves: retro/README.md, "CRM
+2022-2026"), built in a new session that had not opened this file or any CRM outcome, and scored only after its build, validation
+outputs, README section and firewall result were committed and pushed (f70c114, 1d3b63f, 3421949, 3db9626), on 2026-11-27. The 2013-2021 dates are
 reduced-data batches (SEC XBRL company facts only, no earnings releases or guidance: retro/README.md, "CRM 2013-2017" and "CRM
 2018-2021"). They label a different information set from 2008-2012 and are kept apart below. The 2018-2021 batch was decided in the
 session that scored 2013-2017 and was scored only after its build, validation outputs, README section and firewall result were
@@ -408,3 +411,139 @@ Across the 209 dates of 2018-2021 (the second reduced-data batch):
   BASE on 1.
   `profile_drift` (hindsight): DURABLE, risk 2 on every date, against today's 2026 AI_EXPOSED (GENAI), risk 3, as before.
 - **Reduced data, read with care,** as for 2013-2017: these labels score a model without salesforce.com's guidance or 10-K text.
+
+
+## 2022 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier BUY (2022-01-07 to 2022-11-11) | 24 | +40.7% | +10.0% to +117.4% | 16 | 19 | +36.8% | 3 |
+| class RICH, legacy tier AVOID (2022-03-03 to 2022-04-08) | 6 | +53.2% | +37.5% to +54.8% | 6 | 6 | +10.1% | 0 |
+| class RICH, legacy tier WATCHLIST (2022-04-14 to 2022-04-14) | 1 | +55.6% | +55.6% to +55.6% | 1 | 1 | +25.4% | 0 |
+| class RICH, legacy tier ACCUMULATE (2022-04-22 to 2022-05-06) | 3 | +60.0% | +57.0% to +62.7% | 3 | 3 | +39.5% | 0 |
+| class FAIR, legacy tier ACCUMULATE (2022-05-13 to 2022-05-27) | 2 | +66.5% | +65.2% to +66.5% | 2 | 2 | +49.4% | 0 |
+| class FAIR, legacy tier BUY (2022-05-20 to 2022-11-25) | 11 | +90.1% | +41.4% to +121.9% | 11 | 10 | +75.5% | 1 |
+| class CHEAP, legacy tier BUY (2022-12-02 to 2022-12-30) | 5 | +166.1% | +129.8% to +179.4% | 5 | 5 | +113.2% | 5 |
+| FY2022E $1.285 (Q3 FY22 release) (2022-01-07 to 2022-02-25) | 8 | +30.3% | +10.0% to +47.2% | 3 | 8 | -2.0% | 0 |
+| FY2023E $0.47 (Q4 FY22 release) (2022-03-03 to 2022-05-27) | 13 | +55.6% | +37.5% to +80.1% | 13 | 13 | +25.4% | 0 |
+| FY2023E $0.39 (Q1 FY23 release) (2022-06-02 to 2022-08-19) | 12 | +41.0% | +24.6% to +52.6% | 9 | 6 | +38.3% | 4 |
+| FY2023E $0.39 (Q2 FY23 release) (2022-08-26 to 2022-11-25) | 14 | +90.1% | +51.6% to +121.9% | 14 | 14 | +73.6% | 0 |
+| FY2023E $0.56 (Q3 FY23 release) (2022-12-02 to 2022-12-30) | 5 | +166.1% | +129.8% to +179.4% | 5 | 5 | +113.2% | 5 |
+| latest print Q3 FY22 (2022-01-07 to 2022-02-25) | 8 | +30.3% | +10.0% to +47.2% | 3 | 8 | -2.0% | 0 |
+| latest print Q4 FY22 (2022-03-03 to 2022-05-27) | 13 | +55.6% | +37.5% to +80.1% | 13 | 13 | +25.4% | 0 |
+| latest print Q1 FY23 (2022-06-02 to 2022-08-19) | 12 | +41.0% | +24.6% to +52.6% | 9 | 6 | +38.3% | 4 |
+| latest print Q2 FY23 (2022-08-26 to 2022-11-25) | 14 | +90.1% | +51.6% to +121.9% | 14 | 14 | +73.6% | 0 |
+| latest print Q3 FY23 (2022-12-02 to 2022-12-30) | 5 | +166.1% | +129.8% to +179.4% | 5 | 5 | +113.2% | 5 |
+
+- **RICH held on 3 of 34, FAIR on 1 of 13.** The RICH dates ($157.73-231.23, 153-488x the GAAP guides: FY22's $1.285, then FY23's
+  $0.47 and $0.39) returned +10.0% to +117.4% over two years (median +45.2%); 26 cleared the hurdle and 29 beat SPY. The FAIR dates
+  returned +41.4% to +121.9% and beat SPY by more than 15pp on 12. FY2023 came in at GAAP $0.21 and FY2024 at $4.20: the multiples were
+  of a GAAP year about to grow twentyfold, which the guided margin step pointed at (BASE up to +61.1%/yr from the Q4 FY22 print) but the class, read off
+  the P/E percentile, did not use.
+- **CHEAP from the Q3 FY23 print held on all 5** (2022-12-02 to 2022-12-30, $128.27-144.56 on FY23's $0.56), +129.8% to +179.4%.
+
+## 2023 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY (2023-01-06 to 2023-12-29) | 52 | +26.2% | -9.4% to +136.4% | 17 | 12 | +38.5% | 17 |
+| FY2023E $0.56 (Q3 FY23 release) (2023-01-06 to 2023-02-24) | 8 | +111.9% | +91.1% to +136.4% | 8 | 8 | +78.9% | 8 |
+| FY2024E $2.6 (Q4 FY23 release) (2023-03-03 to 2023-05-26) | 13 | +37.7% | +19.7% to +58.5% | 9 | 4 | +44.6% | 9 |
+| FY2024E $2.68 (Q1 FY24 release) (2023-06-02 to 2023-08-25) | 13 | +20.9% | +12.7% to +30.2% | 0 | 0 | +35.7% | 0 |
+| FY2024E $3.51 (Q2 FY24 release) (2023-09-01 to 2023-11-24) | 13 | +19.9% | +2.4% to +31.4% | 0 | 0 | +36.6% | 0 |
+| FY2024E $3.995 (Q3 FY24 release) (2023-12-01 to 2023-12-29) | 5 | +0.6% | -9.4% to +4.6% | 0 | 0 | +4.2% | 0 |
+| latest print Q3 FY23 (2023-01-06 to 2023-02-24) | 8 | +111.9% | +91.1% to +136.4% | 8 | 8 | +78.9% | 8 |
+| latest print Q4 FY23 (2023-03-03 to 2023-05-26) | 13 | +37.7% | +19.7% to +58.5% | 9 | 4 | +44.6% | 9 |
+| latest print Q1 FY24 (2023-06-02 to 2023-08-25) | 13 | +20.9% | +12.7% to +30.2% | 0 | 0 | +35.7% | 0 |
+| latest print Q2 FY24 (2023-09-01 to 2023-11-24) | 13 | +19.9% | +2.4% to +31.4% | 0 | 0 | +36.6% | 0 |
+| latest print Q3 FY24 (2023-12-01 to 2023-12-29) | 5 | +0.6% | -9.4% to +4.6% | 0 | 0 | +4.2% | 0 |
+
+- **CHEAP held on 17 of 52.** The 8 dates on FY23's $0.56 (January-February) returned +91.1% to +136.4%, and 9 of the 13 on FY24's
+  $2.60 (March-May) held (+19.7% to +58.5%). From the Q1 FY24 print (2023-06-02) none held: +2.4% to +31.4% over two years, under the
+  hurdle and behind SPY on all 31, as FY24's guide rose from $2.68 to $3.995 and the price with it. Over three years 5 of the 52 beat
+  SPY.
+
+## 2024 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY (2024-01-05 to 2024-11-22) | 47 | -31.4% | -46.2% to +7.6% | 0 | 0 | -16.1% | 0 |
+| FY2024E $3.995 (Q3 FY24 release) (2024-01-05 to 2024-02-23) | 8 | -18.0% | -38.0% to +3.3% | 0 | 0 | -5.7% | 0 |
+| FY2025E $6.11 (Q4 FY24 release) (2024-03-01 to 2024-05-24) | 13 | -33.8% | -42.8% to -31.4% | 0 | 0 | -17.8% | 0 |
+| FY2025E $6.08 (Q1 FY25 release) (2024-05-31 to 2024-08-23) | 13 | -26.9% | -36.9% to -17.1% | 0 | 0 | -13.6% | 0 |
+| FY2025E $6.09 (Q2 FY25 release) (2024-08-30 to 2024-11-22) | 13 | -16.7% | -46.2% to +7.6% | 0 | 0 | -27.3% | 0 |
+| latest print Q3 FY24 (2024-01-05 to 2024-02-23) | 8 | -18.0% | -38.0% to +3.3% | 0 | 0 | -5.7% | 0 |
+| latest print Q4 FY24 (2024-03-01 to 2024-05-24) | 13 | -33.8% | -42.8% to -31.4% | 0 | 0 | -17.8% | 0 |
+| latest print Q1 FY25 (2024-05-31 to 2024-08-23) | 13 | -26.9% | -36.9% to -17.1% | 0 | 0 | -13.6% | 0 |
+| latest print Q2 FY25 (2024-08-30 to 2024-11-22) | 13 | -16.7% | -46.2% to +7.6% | 0 | 0 | -27.3% | 0 |
+
+- **CHEAP held on 0 of 47 with a two-year horizon.** The entries ($231.94-342.02, 38-73x FY24E and FY25E, the 1st-59th percentile)
+  returned -46.2% to +7.6% over two years (median -31.4%), behind SPY by 36.5-80.5pp. The price two years on landed nearest BEAR on
+  all 47: the multiple fell as the GAAP EPS rose.
+
+## 2025 (52 dates)
+
+| Group | Dates | Median 1-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY |
+|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY (2025-01-03 to 2025-11-21) | 47 | -29.5% | -41.5% to +4.1% | 0 | 0 |
+| FY2025E $6.175 (Q3 FY25 release) (2025-01-03 to 2025-02-21) | 8 | -31.2% | -41.4% to -17.7% | 0 | 0 |
+| FY2026E $6.99 (Q4 FY25 release) (2025-02-28 to 2025-05-23) | 13 | -32.9% | -39.8% to -21.6% | 0 | 0 |
+| FY2026E $7.18 (Q1 FY26 release) (2025-05-30 to 2025-08-29) | 14 | -31.8% | -41.5% to +0.6% | 0 | 0 |
+| FY2026E $7.01 (Q2 FY26 release) (2025-09-05 to 2025-11-21) | 12 | -3.0% | -19.7% to +4.1% | 0 | 0 |
+| latest print Q3 FY25 (2025-01-03 to 2025-02-21) | 8 | -31.2% | -41.4% to -17.7% | 0 | 0 |
+| latest print Q4 FY25 (2025-02-28 to 2025-05-23) | 13 | -32.9% | -39.8% to -21.6% | 0 | 0 |
+| latest print Q1 FY26 (2025-05-30 to 2025-08-29) | 14 | -31.8% | -41.5% to +0.6% | 0 | 0 |
+| latest print Q2 FY26 (2025-09-05 to 2025-11-21) | 12 | -3.0% | -19.7% to +4.1% | 0 | 0 |
+
+- **On one-year returns:** the 47 CHEAP dates with a horizon ($227.11-341.70, 32-55x FY26E) returned -41.5% to +4.1% (median
+  -29.5%) and lagged SPY on all, by 14.7-68.0pp. GENAI was on the watch list from 2025-03-07 (text only, company-acknowledged, no
+  market read); the 38 dates from then with a one-year horizon returned a median -25.9% and beat SPY on none.
+
+## 2026 (47 dates)
+
+| Group | Dates | Median 6-month total return | Range | Cleared 15%/yr hurdle | Beat SPY |
+|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY (2026-01-02 to 2026-05-22) | 21 | +22.4% | -37.1% to +40.0% | 13 | 14 |
+| FY2026E $7.23 (Q3 FY26 release) (2026-01-02 to 2026-02-20) | 8 | -14.5% | -37.1% to +11.4% | 1 | 1 |
+| FY2027E $7.89 (Q4 FY26 release) (2026-02-27 to 2026-05-22) | 13 | +28.7% | +0.8% to +40.0% | 12 | 13 |
+| latest print Q3 FY26 (2026-01-02 to 2026-02-20) | 8 | -14.5% | -37.1% to +11.4% | 1 | 1 |
+| latest print Q4 FY26 (2026-02-27 to 2026-05-22) | 13 | +28.7% | +0.8% to +40.0% | 12 | 13 |
+
+- **On six-month returns only:** the 8 dates on FY26's $7.23 (January-February 2026) returned -37.1% to +11.4%; the 13 from the Q4 FY26
+  print, on FY27's $7.89 (the $25 billion accelerated repurchase announced in March), +0.8% to +40.0%, ahead of SPY on all. Twenty-six
+  dates have no horizon yet.
+
+Across the 255 dates of 2022-2026 (the first full-data batch since 2012; two-year horizons only on the 151 dates to 2024-11-22):
+- **CHEAP held on 22 of 104 with a two-year horizon, RICH on 3 of 34, FAIR on 1 of 13.** The CHEAP calls that held are one run,
+  2022-12-02 to 2023-05-19 ($128.27-210.36, the 7th-78th percentile): +34.9% to +179.4% over two years. The 82 from 2023-04-06 to
+  2024-11-22 ($192.55-342.02, 38-86x, the 1st-59th percentile) returned -46.2% to +31.8% and lagged SPY on all. Two-year prices of the
+  CHEAP dates landed nearest BEAR on 91 of 104. Over three years (99 dates to 2023-11-24) the RICH dates returned +23.3% to +67.9%
+  (16 of 34 beat SPY) and the CHEAP dates -25.1% to +106.0% (5 of 52).
+- **The own-history anchor was one earlier regime.** With FY2017 and FY2019-FY2023 excluded as distorted, the P/E window held FY2018's
+  days (160-232x) and the current year's. From 2023 every date read CHEAP, against that window, as the guided GAAP EPS rose from $2.60
+  to $10.23 (the GAAP operating margin from 3% to 20%), and the class was robust to every tested encoding (8 of 8 CHEAP from 2023-03-03).
+  It failed from mid-2023 while the multiple fell from 86x to 18x. Hypothesis, not a rule: an own-P/E history drawn from a low-margin
+  era, especially one thinned to a single kept year, is no anchor after a margin inflection; robustness to encodings that share the
+  window says nothing about the window. Test it on other tickers whose exclusions or inflections left such a window, as a cross-ticker
+  study, never fitted to CRM.
+- **The ordering ran backwards.** The rank correlation between the AS_OF P/E percentile and the two-year return is +0.53 (+0.41 over
+  three years), and between the P/E level and the two-year return +0.79: the highest GAAP multiples (2022, on guides of $0.39-1.285)
+  came before the best returns. In 2013-2017 the percentile correlation was -0.60, in 2018-2021 +0.02. One price path, overlapping
+  horizons.
+- **The pre-outcome tests, scored** (the README's sensitivity, on the dates with a two-year horizon): FY2020 at GAAP would have moved
+  47 dates of 2022 to CHEAP, and holds from 4 to 44; every data signal at XBULL 42 dates, 4 to 40; but FY2022 at GAAP 26 dates, 14
+  holds to 0; the reduced reading of FY2017 and FY2019-FY2021 34 dates, 14 to 6; FY2021 at GAAP 29, 13 to 8; no margin step 35, 14
+  to 8; signals at BEAR 18, 6 to 0; BASE on the latest quarter 9, 0 to 2. The one-off readings cut both ways, each through the window's
+  composition in 2022; none touched the 2023-2026 calls. The 2018-2021 hypothesis on FY2021 (a GAAP year lifted by investment gains and
+  a tax benefit reads CHEAP when the price does not follow it) is not retested here: this batch excluded FY2021 from the filings'
+  listed items, decided without having read it, and FY2021 is no stand-in on any 2022-2026 date.
+- **The tiers did not rank the returns:** BUY on 139 dates with a two-year horizon (median +22.3%), AVOID 6 (+53.2%), ACCUMULATE 5
+  (+62.7%), WATCHLIST 1. The growth signals stayed under their BEAR lines (subscription and support +8% to +25%, unearned revenue +6% to
+  +28%, against rule T's 40% and 43%), as in every batch: the start-up decade's thresholds (the 2008-2009 hypothesis).
+- **GENAI.** On the watch list from 2025-03-07, never re-filed, text only. The 2025 CHEAP calls failed while the market derated
+  software seats; the ACN re-file test (the P/E at or below the 30th percentile, here on 122 of the 151 dates from 2024) would have
+  changed the class label only, not the price state or the call. `profile_drift` (hindsight): DURABLE, risk 2 on every date, against
+  today's 2026 AI_EXPOSED (GENAI), risk 3 ("agentic AI compresses per-seat pricing, Agentforce is the counter-bet", reviewed
+  2026-09-22).
+- **Full data, read with care.** These labels score the full information set again (guides, 10-K text, listed one-offs), unlike
+  2013-2021; compare them with the reduced batches only as different information sets.
