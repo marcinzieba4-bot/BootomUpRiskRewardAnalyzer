@@ -23,6 +23,10 @@ model was built or scored):
   - guided margin step: none (no margin guide); the margin signal uses the latest quarter's pre-tax margin change;
   - dividend: the latest declared quarterly rate, each from the first filing that states it ('dividends'); the 2007 special
     dividend is not a rate.
+(SCHW 2010-2013) The listing moves from Nasdaq to the NYSE on 2010-03-05, the date the FY2009 10-K states ('listings', the PEP
+encoding); Q1 2010 is restated twice, by the 8-K of 2010-04-20 and the Q1 2010 10-Q ('restated', the JPM encoding: each from its own
+date); the Q1 2010 and Q3 2013 outlooks are bounds and words that feed no field ('outlook_words', text only); from CLOUD's live date the
+'why' quotes every live theme's registered scope (the CB 2014-2017 and UNH wording).
 The kind is DURABLE: the 10-Ks tie results to markets, rates and investor engagement but do not call the business cyclical (the
 JPM, LOW and SHW reading). No disruption theme in taxonomy_eras.json is live for a securities broker and bank in 2008-2009, so the
 builder refuses events until a theme encoding is decided, and it refuses guides, listings, splits and company names until their
@@ -118,12 +122,23 @@ def derived(r):
 
 
 def check_print(p, as_of):
-    """Re-derive a print's margins, growth and gaps from its raw figures; they must match the fact sheet. Every 10-Q of 2007-2009
-    reports its quarter's signal rows as the release does, so no print carries a restatement; the builder refuses one until its
-    encoding is decided."""
-    assert not p.get("restated"), (p["quarter"], "the SCHW builder has no encoding for a restated print")
-    for k, v in derived(p["raw"]).items():
-        assert p[k] == v, (p["quarter"], k, p[k], v)
+    """Re-derive a print's (and its restatements', once public) margins, growth and gaps from its raw figures; they must match the
+    fact sheet. Every 10-Q of 2007-2009 reports its quarter's signal rows as the release does; Q1 2010 is restated twice (the 8-K of
+    2010-04-20 and the Q1 2010 10-Q, SCHW 2010-2013)."""
+    for x in [p] + [r for r in p.get("restated", []) if r["published"] <= as_of]:
+        for k, v in derived(x["raw"]).items():
+            assert x[k] == v, (p["quarter"], k, x[k], v)
+
+
+def as_restated(p, as_of):
+    """A print with its restatements applied, in order, once each is public (a quarter from the latest filing that reports it: the
+    JPM encoding)."""
+    q = p
+    for rs in p.get("restated", []):
+        if rs["published"] <= as_of:
+            q = {**q, **{k: v for k, v in rs.items() if k not in ("published", "source", "rows")}}
+            q["extra_sources"] = list(q.get("extra_sources", [])) + [rs["source"]]
+    return q
 
 
 def build(as_of, facts, raw, spx, engine, out):
@@ -132,10 +147,10 @@ def build(as_of, facts, raw, spx, engine, out):
     chart = retro_tool.chart(SYMBOL)
     assert retro_tool.split_factor(chart, as_of) == 1.0, "a split after AS_OF needs an encoding ('splits')"
     px = raw
-    # no filing guides revenue, EPS or a margin in numbers, and none states a listing change, a split or a change of company name
-    # (Nasdaq: SCHW on every date, each 10-K's Item 5):
-    # the builder refuses any such fact, and any event, until its encoding is decided
-    for kind in ("guides", "listings", "splits", "company_names", "events"):
+    # no filing guides revenue, EPS or a margin in a range or a level, and none states a split or a change of company name: the builder
+    # refuses any such fact, and any event, until its encoding is decided. The listing moves from Nasdaq to the NYSE on 2010-03-05, as
+    # the FY2009 10-K states ('listings', the PEP encoding: effective on its stated date once the filing is public)
+    for kind in ("guides", "splits", "company_names", "events"):
         if [x for x in facts.get(kind, []) if x.get("published", x.get("effective", "")) <= as_of]:
             sys.exit(f"{as_of}: the SCHW builder has no encoding for {kind}; decide one first")
     for p in [p for p in facts["prints"] if p["published"] <= as_of]:  # a print public on AS_OF must match its raw figures
@@ -150,7 +165,7 @@ def build(as_of, facts, raw, spx, engine, out):
     reported = lambda h: {int(k) for k in h["eps_normalized"]} | {int(k) for k in h.get("eps_excluded", {})}
     first_fy = max(reported(h)) + 1
     guide_fy = lambda p: p["fy"] + (1 if p["quarter"].startswith("Q4") else 0)
-    public = [p for p in facts["prints"] if p["published"] <= as_of]
+    public = [as_restated(p, as_of) for p in facts["prints"] if p["published"] <= as_of]
     prints = [p for p in public if guide_fy(p) >= first_fy]
     if not prints:
         sys.exit(f"{as_of}: no quarterly print after FY{first_fy - 1} is public yet")
@@ -190,11 +205,17 @@ def build(as_of, facts, raw, spx, engine, out):
     nq = latest["q"]
     next_q = f"Q{nq % 4 + 1} {latest['fy'] + (1 if nq == 4 else 0)}"
 
+    # (SCHW 2010-2013) an outlook for the current year that gives bounds and words only ('outlook_words' on the print: Q1 2010, Q3
+    # 2013): no field, text only (the UNH and SPGI bound and words rules)
+    outlook = [p for p in prints if p.get("outlook_fy") == cur_fy]
+    outlook = outlook[-1] if outlook else None
     # ── current-FY EPS: no EPS guide in any filing of the period, so the last full year's EPS stands ──
     eps_now = eps_hist[last_fy]
-    eps_label = f"{fy_e}: no EPS guide in numbers, FY{last_fy % 100:02d}'s ${money(eps_now)} stands" + "".join(
+    no_eps = (f"no EPS range or level ('{outlook['eps_words']}' is words)" if outlook and outlook.get("eps_words") else
+              "no EPS guide in numbers")
+    eps_label = f"{fy_e}: {no_eps}, FY{last_fy % 100:02d}'s ${money(eps_now)} stands" + "".join(
         f" (FY{y % 100:02d} is excluded: {excluded[y]})" for y in range(last_fy + 1, cur_fy))
-    eps_label_short = (f"{fy_e}: no EPS guide in numbers, FY{last_fy % 100:02d}'s ${money(eps_now)} stands (FY" +
+    eps_label_short = (f"{fy_e}: {no_eps}, FY{last_fy % 100:02d}'s ${money(eps_now)} stands (FY" +
                        ", FY".join(f"{y % 100:02d}" for y in range(last_fy + 1, cur_fy)) + " excluded)") if cur_fy > last_fy + 1 else eps_label
     # ── forward revenue growth: no revenue guide in any filing, so the latest quarter's revenue growth (the UNP rule) ──
     fwd = [latest["sales_pct"]] * 2
@@ -202,9 +223,15 @@ def build(as_of, facts, raw, spx, engine, out):
     fwd_short, fwd_period = f"{latest['quarter'].split()[0]} revenue YoY", latest["quarter"]
     guide_text = (f"{next_q}: no revenue, EPS or margin guide in numbers in any filing; the latest quarter's revenue growth stands in "
                   "(the UNP rule)" + ("; the expense goal (2009 cuts of 7 to 8% of 2008's total spending) is a cost component, which "
-                                      "method r2 has no input for" if latest["published"] >= "2009-01-16" else ""))
+                                      "method r2 has no input for" if latest["published"] >= "2009-01-16" and cur_fy == 2009 else ""))
     cat3 = (f"(3) A {next_q} revenue guide — none: Schwab gives no revenue, EPS or margin outlook in numbers in any filing; "
             "the monthly activity reports in each release track client assets, net new assets and trades")
+    if outlook:
+        guide_text = (f"{next_q}: no revenue, EPS or margin guide in a range or a level in any filing; the latest quarter's revenue growth "
+                      f"stands in (the UNP rule); the {outlook['quarter']} release's outlook ('{outlook['outlook_words']}') feeds no "
+                      f"field: {outlook['outlook_reading']}")
+        cat3 = (f"(3) A {next_q} revenue guide — none in a range or a level: the {outlook['quarter']} release's outlook is bounds and "
+                "words; the monthly activity reports in each release track client assets, net new assets and trades")
     margin_guided = False                          # no margin guide: no guided step; the signal uses the latest quarter's change
     fy_margin_base = h["prev_fy_op_margin"]
 
@@ -212,6 +239,9 @@ def build(as_of, facts, raw, spx, engine, out):
     divs = [(d["published"], d["quarterly"] * 4, d["note"], d["source"]) for d in facts.get("dividends", []) if d["published"] <= as_of]
     _, dividend, dividend_note, dividend_src = max(divs, key=lambda x: x[0])
     exchange = h["exchange"]
+    moved = [x for x in facts.get("listings", []) if x["published"] <= as_of and x["effective"] <= as_of]
+    if moved:
+        exchange = max(moved, key=lambda x: x["effective"])["exchange"]
 
     # ── market statistics, prices truncated at AS_OF ──
     days = sorted(d for d in px if d <= as_of)
@@ -253,6 +283,15 @@ def build(as_of, facts, raw, spx, engine, out):
     cat4 = (f"(4) Trading activity — {latest['dart_k']:.1f}K daily average revenue trades in {latest['quarter']} "
             f"({latest['dart_pct']:+.1f}% YoY): the driver of trading revenue")
     why = h["why"]
+    # from CLOUD's live date (2012-10-30) every live theme is quoted with its registered scope (the CB 2014-2017 and UNH wording)
+    live = sorted(((t["live_from"], k, t["scope"]) for k, t in retro_tool.load_taxonomy()["themes"].items() if t["live_from"] <= as_of))
+    if [k for _, k, _ in live] != ["OFFSHORE"]:
+        scopes = ", ".join(f"{k} {'is scoped to' if i == 0 else 'to'} '{sc}'" for i, (_, k, sc) in enumerate(live))
+        head = why.split("; no theme in taxonomy_eras.json is live")[0]
+        assert head != why, (as_of, "the vintage's why lost its theme clause")
+        why = (head + "; no disruption theme in taxonomy_eras.json is live for a securities broker and bank on this date (of the live "
+               f"themes, {scopes}: none names brokerage or banking, and no 10-K names cloud or offshore delivery), so the watch list is "
+               "empty and these words stay here (the PEP obesity rule)")
     after_print = [p for p in prints if p["published"] < as_of and not any(p["published"] < d < as_of for d in days)]
     tag = f"(day after the {after_print[-1]['quarter']} print)" if after_print else f"(pre-{next_q} print)"
     # a print dated AS_OF occurs only in a week with no trading day after it; it meets AS_OF's close only if it was public before that
@@ -266,7 +305,8 @@ def build(as_of, facts, raw, spx, engine, out):
 
     company = h["company"]
     ids = (list(h["sources"]) + [x for p in prints for x in [p["source"]] + p.get("extra_sources", [])]
-           + [public[i - 1]["source"]] + ([dividend_src] if dividend_src else []))
+           + [public[i - 1]["source"]] + ([dividend_src] if dividend_src else [])
+           + ([max(moved, key=lambda x: x["effective"])["source"]] if moved else []))
     sources = [dict(id=x, **facts["sources"][x]) for x in dict.fromkeys(ids)]
     sources.append({"id": "Y0", "published": as_of, "title": "Yahoo Finance daily prices, SCHW and S&P 500, truncated at AS_OF",
                     "url": "https://finance.yahoo.com/quote/SCHW/history",

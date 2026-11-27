@@ -158,8 +158,9 @@ and a later vintage excluding a year with planted texts, figures, groups, window
 flag dated after CUTOFF (the dividend, split and company name every fact sheet gets, too); SCHW: a print whose net revenues,
 client assets, trades, net new assets, margins, expense gap, quarter EPS, notes and raw figures are absurd, with absurd full-year
 actuals for the year after the latest vintage (or Q4 print) before CUTOFF, a later Q4 print whose full-year actuals exclude its own
-year, and a later vintage excluding a year with planted texts, figures, client assets, exchange, kind and window start (the guide,
-dividend, listing and company name every fact sheet with those lists gets, too); GOOG: a print whose revenues, margins, opex and receivables gaps, quarter EPS, cash,
+year, and a later vintage excluding a year with planted texts, figures, client assets, exchange, kind and window start, and from SCHW
+2010-2013 a later restatement of the last print before CUTOFF and planted outlook words (the guide, dividend, listing and company name
+every fact sheet with those lists gets, too); GOOG: a print whose revenues, margins, opex and receivables gaps, quarter EPS, cash,
 notes and raw figures are absurd, with absurd full-year actuals for the year after the latest vintage before CUTOFF, a later Q4 print
 whose full-year actuals exclude its own year, a later 10-Q restatement of the last print before CUTOFF with absurd figures, and a later
 vintage excluding a year with planted texts, figures, outlook words, exchange and window start, every per-share figure on a planted
@@ -905,6 +906,15 @@ try:
                  prev_fy_client_assets_b=0.01, prev_fy_client_assets_growth=-99.0, prev_fy_nna_b=-999.0, tax_rate=0.99,
                  tax_note="PLANTED", groups=[["PLANTED", 1, -99]], groups_basis="PLANTED", exchange="PLANTED",
                  pe_window_start="1990-01-02", kind="CYCLICAL", margin_signal_name="PLANTED", eps_first_excluded={"1990": "PLANTED"})
+        # (SCHW 2010-2013) a later restatement of the last print before CUTOFF with absurd figures (a real one public before CUTOFF
+        # stays; 'restated' is a list in publication order), and outlook words for every year on the planted prints
+        p0 = max((p for p in f["prints"] if p["published"] < cutoff), key=lambda p: p["published"])
+        p0["restated"] = list(p0.get("restated", [])) + [
+            {"published": later, "source": p0["source"], "raw": dict(PLANT["raw"]),
+             **{k: PLANT[k] for k in ("sales_pct", "seq_pct", "pretax_margin", "pretax_margin_bp", "expense_pct", "expense_gap_pp", "ca_pct",
+                                      "dart_pct", "eps_q", "eps_note", "shares_note", "note")}, "rows": {}}]
+        for x in (last, q4):
+            x.update(outlook_fy=p0["fy"], outlook_words="PLANTED", outlook_reading="PLANTED", eps_words="PLANTED")
     if TICKER == "V":      # absurd full-year actuals on the planted print for the year after the latest vintage before CUTOFF (its
                            # first excluded year counted: the FY2008 vintage reports FY2008 only), a planted fiscal-year guide for the year
                            # after it, a later Q4 print whose full-year actuals exclude its own year, and a later vintage excluding a year and
