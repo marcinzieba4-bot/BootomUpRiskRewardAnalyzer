@@ -26666,6 +26666,172 @@ Judgement calls that could carry hindsight:
 The hindsight results for 2010-2012 are in `staging/retrospective/CRM/FINDINGS.md` (computed after the firewall result was pushed):
 hypotheses, never inputs.
 
+### CRM 2013-2017: a reduced-data batch (SEC XBRL only), the four-for-one split, five loss years, RICH throughout
+
+261 weekly dates, 2013-01-04 to 2017-12-29, on the same method, engine and rule-T thresholds. The owner asked for 2013-2017 ("find newest
+code. do retrospective analysis for CRM, 2013-2017. same rules as before"). The newest code was the branch with CRM 2008-2012 (its commit
+"CRM retrospective: hindsight outcomes and findings for 2010-2012", 2026-11-26); this branch was fast-forwarded to it.
+
+```bash
+python3 retro/build_crm.py --weekly 2013-01-01 2017-12-31                   # 261 dates, 2013-01-04 .. 2017-12-29
+for d in staging/retrospective/CRM/201[3-7]-*/; do python3 retro/retro_tool.py --archive staging/retrospective run "$d"; done
+for c in 2013-01-01 2013-02-25 2013-03-11 2013-04-18 2013-05-28 2013-09-03 2013-11-26 2014-03-06 2014-05-30 2014-08-27 2014-11-26 \
+         2015-03-06 2015-05-26 2015-08-25 2015-11-23 2016-03-07 2016-05-23 2016-09-01 2016-11-22 2017-03-07 2017-05-23 2017-08-28 \
+         2017-11-24 2018-01-01; do python3 retro/tools/firewall.py $c CRM; done
+```
+
+**A reduced-data batch.** This session could not download the filing documents. SEC's `www.sec.gov`, which serves them, refused every
+request without a deliverable contact address in the `User-Agent`, including a GitHub no-reply address. The owner's own email was ruled
+out: CLAUDE.md forbids it, and the session's privacy guard blocked it. `data.sec.gov`, which serves the filing index and the XBRL company
+facts, accepted a plain client name. The owner chose to build from those ("go XBRL") over stopping. So, from the first filing of the
+period that was not read, the fact sheet holds only what the 10-Qs' and 10-Ks' XBRL carries:
+- that filing is the 8-K of 2013-02-22 (item 8.01, accepted after the close), so the date is 2013-02-25 (`reduced_data.first_unread`);
+- the XBRL covers the statements of operations, balance sheets and cash flows, each dated by its filing's EDGAR acceptance time.
+
+**Not in it:** salesforce.com's earnings releases and their guidance, every other 8-K, and the 10-Ks' text. The models say so: every
+text that would read "no guide in numbers" reads "not in this fact sheet (reduced-data batch)", and `METHODOLOGY` carries the flag, so
+no model claims that a guide was not given. The 8 dates before 2013-02-25 (2013-01-04 to 2013-02-22) are full-data, built from the
+Q3 FY13 release as before. The batch should be redone from the filings themselves when they can be downloaded. Its outputs are labels
+of a different information set and stay apart in this section.
+
+The generator (a script in the session scratchpad, not the repository) reads every figure from the company facts by accession, tag and
+period, and requires it to be unique there; the `rows` of each print keep tag, period and value. It asserts:
+- every identity of the statements: gross profit less operating expenses is the operating result; operating expenses are R&D, marketing
+  and sales, G&A and any separately stated line; cost of revenues plus gross profit is total revenues where both are tagged; pre-tax
+  income less tax is net income;
+- that every fourth quarter derived from the 10-K equals the 10-K's own tagged quarterly revenues, gross profit and operating result;
+- that every year a later 10-K reports equals the earlier vintage's figure (revenue; EPS and diluted shares on each filing's share basis);
+- that each Q1-Q3 FY14 print's year-ago deferred revenue, taken from the Q1-Q3 FY13 10-Qs' XBRL, equals the 2012 release's figure.
+The source ids are `CR39`-`CR60`. The earlier fact sheet content is unchanged (asserted), and no filing published after 2017-12-31 is
+read. Disclosed: one exploration output in this session showed the FY2018 10-K's XBRL (published 2018-03-09) before the generator was
+written to stop at 2017-12-31. No figure from it is in the fact sheet.
+
+Same-session disclosure: none in the earlier sense. This batch was built in a new session. It did not open the 2008-2012 outcome files
+or `FINDINGS.md`, which it opened only after the firewall result below was pushed. It did read this README, including the 2010-2012
+section's summary of the 2008-2009 findings' two hypotheses (above). Like every builder, it knows salesforce.com's later history from
+its training. Decided before any 2013-2017 outcome was computed:
+
+- **Prints are the 10-Qs and 10-Ks,** dated by acceptance. Every one was accepted after the close (16:05-21:40 ET), so each is public
+  from the next trading day, and the weekly dates follow them (the first trading day after each, or the week's last when it is that
+  day: 2014-05-30, 2015-03-06 and 2017-11-24 meet their own close). The earnings releases' days are not print days in this batch.
+- **Revenue tags change in 2015.** Up to the Q3 FY15 10-Q, `Revenues` is total revenues and `SalesRevenueServicesNet` professional
+  services and other. From the FY2015 10-K on, `SalesRevenueServicesNet` is total revenues (equal to `Revenues` where both are tagged)
+  and `TechnologyServicesRevenue` professional services and other. Subscription and support is not tagged in the company facts: it is
+  total revenues less professional services and other (derived, and said so in each print's note). The generator asserts professional
+  services at 3-12% of revenues and the gross margin at 70-82% on every period.
+- **Q4 is derived:** the 10-K's fiscal year less the Q3 10-Q's nine months, both years, for revenues, subscription and support, gross
+  profit, R&D, marketing and sales, G&A and the operating result. The 10-K tags Q4 EPS for both years; the Q4 diluted share count is
+  not tagged, so the fiscal year's weighted average is shown (display only, said so).
+- **Deferred revenue** is current and noncurrent where the filing tags both. The Q1-Q3 FY18 10-Qs tag no noncurrent deferred revenue,
+  so those three prints compare current against the year-ago current balance, on the same basis (said so in the note). Noncurrent was
+  0.4-0.7% of the total in the four FY2017 quarters.
+- **One separately stated operating line:** Q1 FY16's $36.6M gain on contract termination (`GainLossOnContractTermination`, the
+  residual of operating expenses less the three lines) stays out of the opex signal, which counts R&D, marketing and sales and G&A
+  only, as before.
+- **The split.** The four-for-one split, effective 2013-04-18, is sourced to the price series' own split event, public on its day (`CR41`;
+  the FY2014 10-K's XBRL later tags the ratio, 4). From that date every earlier per-share figure is divided by 4 and every share count
+  multiplied by 4 (`eps_published` on each vintage gives each year's share basis). Prices are as traded: x4 before the split, x1 after.
+- **History: five more vintages,** the FY2013-FY2017 10-Ks, each taking its three income-statement years from its own XBRL; earlier years
+  keep the latest earlier filing that reported them (the ACN rule for a 10-K without five-year data), the ten fiscal years to the latest.
+  - **FY2013 to FY2016 are GAAP losses,** $(1.92) (pre-split; $(0.48) after), $(0.39), $(0.42) and $(0.07) a share, with no figure
+    excluding only one-offs in the sheet. Each is excluded as the latest year of its 10-K, its own days out of the P/E window, then a gap
+    (as FY2007 and FY2012). The window label reaches "10-yr ex-FY12 ex-FY13 ex-FY14 ex-FY15 ex-FY16".
+  - **FY2017 is GAAP $0.26.** Its pre-tax income is $25.4M and its tax line a $154.2M benefit (XBRL). No item is listed as a one-off in
+    this fact sheet, so the year stays at GAAP; the mirror test cannot be applied without the release or 10-K text (tested below).
+  - The history drops FY2005 with the FY2015 vintage and FY2007 with the FY2017 vintage; the FY2004 note leaves with the FY2014 vintage.
+    FY2006 stays at the company's $0.181 while it is in the decade.
+- **Current-FY EPS: the rollover rule.** Up to the FY2013 10-K the FY2013 range is a loss and FY11's $0.47 stands, as before. From the
+  FY2013 10-K no EPS guide is in the sheet, so the last full year stands:
+  - FY11's $0.1175 (post-split; $0.47 before) from 2013-03-11 to 2017-03-03, for FY2014 to FY2017;
+  - FY17's $0.26 from 2017-03-07, for FY2018.
+  - In the full-data reading, FY2014-FY2016 would rest on the same figure if their guides were losses. Whether they were is not in the
+    sheet, and FY2017's and FY2018's guides could have been positive.
+- **Forward revenue growth:** with no next-quarter guide in the sheet, the latest quarter's revenue growth stands in (the UNP rule):
+  +23.2% to +37.8% over the batch. The FY2014 revenue guide of the Q3 FY13 release ($3.80-3.85B) sets the bridge's total until the
+  FY2014 10-K. After it the bridge has the forward growth applied to the year, and one group, total revenues (the geographic split is
+  not in the company facts).
+- **Display only:**
+  - cash is cash and equivalents plus marketable (available-for-sale) securities;
+  - the convertible notes are the tagged convertible lines, other borrowings not shown;
+  - the tax rate is the 10-K's tax line over its pre-tax result (negative in loss years, so the EPS check reads oddly);
+  - free cash flow is operating cash flow less capital expenditures;
+  - no dividend and no repurchase in any cash flow statement.
+- **Durability: DURABLE, risk 2,** carried from the FY2012 10-K, the last whose text is in the sheet, and said so in the "why".
+- **Themes.** ECOMMERCE (live 2015-01-01), STREAMING (2015-08-04) and ENERGY_TRANSITION (2015-12-12) are scoped to physical retail,
+  pay-TV and fossil fuels: none names a software business, so the "why" quotes their scopes and says so, and the watch list stays empty.
+  CLOUD is read as before (salesforce.com's own model, on the FY2012 10-K's words).
+- **Builder change** (`retro/build_crm.py`):
+  - the reduced-data texts and `METHODOLOGY` flag from `reduced_data.first_unread`;
+  - the three 2015 themes allowed, with their sentence;
+  - the docstring.
+  The 262 models of 2008-2012 rebuild byte for byte. The firewall tool plants a later reduced-data flag.
+
+Controls and checks (before any outcome):
+- **`retro_tool run` passes on all 261 dates, with no warning.** It ran through a wrapper that calls `retro_tool.cmd_run` per date in
+  parallel and rebuilds the index once at the end: each `run` otherwise rebuilds the whole staging index.
+- **Controls:** 32 altered inputs, each rebuilt over all 523 dates. Each changes exactly the weekly dates from its publication on, and
+  none before:
+  - each of the 20 prints' deferred revenue (x1.5, re-derived), from its print to the next;
+  - each of the 5 vintages' last EPS year (x1.2) and its last revenue year (x1.1), from its 10-K to the next;
+  - the split's ratio (5 instead of 4): 246 dates from 2013-04-19;
+  - the reduced-data flag removed: 253 dates from 2013-03-01, none of the 8 full-data dates.
+  The baseline rebuild is byte-identical on all 523 dates.
+- **Leak scan:** 522 hits in 758,092 (model, later token) pairs over all 523 models, none a leak. Tokens are the source ids, titles,
+  notes and quotes of every fact published after a model's date, and their figures of four significant digits or more.
+  - 368 hits are FY2012's and FY2013's diluted share counts on the post-split basis (135.302M and 141.224M x4 = 541.208M and 564.896M),
+    in the models of 2013-04-19 to 2014-02-28. They equal the FY2014 10-K's restated counts because that filing applies the same factor.
+  - The other 154 are market statistics or counts that equal later figures: P/E percentiles and calendar-year lows, 52-week highs,
+    closes in the price source line, and the trading-day counts of the window line.
+  - No text of a later fact appears in any model.
+- **Self-text scan:** every dollar figure in the new facts' own texts (289) equals a value of its own filing's XBRL or of the fact it
+  cites (0 misses). The capitalized words are method vocabulary and tag names. Every per-share and share figure follows the split rule.
+- **Year and term check:** no 2013-2017 model prints a year after its date (fiscal-year labels and accession numbers aside). None of
+  salesforce.com's later product or acquisition names appears in any model (the anachronism list and the acquisitions of 2013-2018).
+- **Regression:** the 262 models of 2008-2012 rebuild byte for byte. No other ticker's code changes.
+
+Seen in the build (method behaviour, not tuned):
+- **RICH on all 261 dates, robustness 8 of 8 RICH on every date.** The legacy tier is AVOID on 252 dates and WATCHLIST on 9 (2013-01-04
+  to 2013-02-22, 4 of them; 2013-06-07 to 2013-07-05, 5).
+- **January to mid-April 2013** (15 dates): on FY11's $0.47 the as-traded $165-186 is 352-395x, the 93rd-99th percentile of an 8.5-8.7
+  year window (median 181-197x).
+- **From the split to the FY2017 10-K** (203 dates): on FY11's $0.1175, $37.56-82.75 is 320-704x, the 80th-100th percentile (median
+  169-219x). The EPP floor runs $16.10-30.43, 92-334% under the price, as the window loses FY2012-FY2016's days and gains 2014-2016's
+  own lows (2014's 418x among them). Ratio B is infinite (the price above BULL) on 79 dates between 2014-03-07 and 2016-08-26.
+- **From the FY2017 10-K** (43 dates): on FY17's $0.26, $81.61-107.58 is 314-414x, the 88th-99th percentile of a window that is now
+  FY2008-FY2011 and FY2017-FY2018 (median 211x). The floor is $53.82, 52-100% under the price.
+- **The proxy composite** is 1.60 on every print but Q3 FY15 (1.75). Subscription and support growth (+22.5% to +36.9%) and deferred
+  revenue growth (+22.8% to +35.4%) sit under their BEAR lines (40% and 43%) on every print. Those lines are rule T over the start-up
+  decade; the 2008-2009 findings' second hypothesis is about exactly this.
+
+How far each call moves the classes (the 261 dates rebuilt with one encoding changed and classified offline with `retro_tool`'s own
+`cmd_run`; no outcome consulted):
+
+| Encoding changed | Models changed | Classes moved | Tiers moved |
+|---|---|---|---|
+| FY2017 excluded by the mirror test (its $154.2M tax benefit read as a one-off against $25.4M of pre-tax income) | 43 | 0 | 0 |
+| FY2006 at GAAP $0.24 instead of the company's $0.181 | 156 | 0 | 0 |
+| every data signal at its BEAR value | 261 | 0 | 0 |
+| every data signal at its XBULL value | 261 | 0 | 0 |
+
+The RICH calls rest on the GAAP multiple of a year's EPS that is small against the price: FY11's, then FY17's. They are read against a
+history thinned by five loss years. None of the tested encodings moves a class or a tier. The untested one matters most: the guided
+EPS the earnings releases would have supplied.
+
+Judgement calls that could carry hindsight, or limit the batch:
+- **The reduced data itself:** without the releases, the current year's EPS is the last full year's. A positive guided EPS for FY2017
+  or FY2018, if one was given, would have stood instead. That is the largest gap, not tested because it is not in the sheet. Without the
+  10-K text, DURABLE and the theme reading are carried from the FY2012 10-K.
+- **Fact by fact:**
+  - FY2017 at GAAP despite a tax benefit six times its pre-tax income (no class either way);
+  - the split dated from the price series' own event;
+  - subscription and support derived as total less professional services;
+  - Q4 derived as the fiscal year less nine months;
+  - the FY18 deferred revenue on current balances only.
+- The tag reading of 2015, where the same tag changes meaning, was decided from the figures. An error would show as a broken identity or
+  a year-ago mismatch; none occurs.
+- The signals, rule T and DURABLE, as in 2008-2012, by a builder who knows how salesforce.com's growth, margins and acquisitions turned
+  out after these dates.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
@@ -27111,6 +27277,11 @@ Data sources that worked from the cloud session:
   `User-Agent` with a contact. Use a project or role address, not a personal one.
 - **Quarterly detail:** the 8-K earnings exhibits listed in
   `data.sec.gov/submissions/CIK##########.json`.
+- **SEC's two hosts differ** (seen 2026-11-27, CRM 2013-2017). `data.sec.gov` (the submissions index and XBRL company facts) accepted
+  a plain client name. `www.sec.gov` (every filing document) refused it, and a GitHub no-reply address too, with "Your Request
+  Originates from an Undeclared Automated Tool". Ask the owner for a deliverable project or role contact before a batch starts.
+  Never guess one, and never use the owner's personal email. Without one, only the XBRL company facts can be read: the reduced-data
+  batch of "CRM 2013-2017".
 
 ## Which model to run it on
 
