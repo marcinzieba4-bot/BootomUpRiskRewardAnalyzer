@@ -43,6 +43,15 @@ bridge only), the convertible senior notes of January 2010 in the balance text (
 CLOUD's live date (2012-10-30), every live theme's scope in the "why" (the CB and UNH wording), CLOUD out of scope as salesforce.com's own
 model.
 
+From 2013 on (retro/README.md, "CRM 2013-2017"; decided before any 2013-2017 date was built or scored, in a new session that had not
+opened the 2008-2012 outcomes or findings): a reduced-data batch. SEC refused this session's downloads of the filing documents, so from
+the first filing not read (the 8-K of 2013-02-22, public 2013-02-25; 'reduced_data' in the fact sheet) the facts are SEC's XBRL company
+facts of the 10-Qs and 10-Ks only, each dated by its filing: the 10-Q or 10-K is the print, the 10-K the vintage, and the releases'
+guidance is not in the sheet, so the method's own fallbacks apply (the latest quarter's revenue growth for the forward guide, the last
+full year's EPS for the current year: the rollover rule) and every text says the guide is not in this fact sheet rather than that none
+was given. The four-for-one split of 2013-04-18 (the price series' event) puts every earlier per-share figure on the new basis. The
+themes live from 2015 (ECOMMERCE, STREAMING, ENERGY_TRANSITION) name no software business, so the watch list stays empty.
+
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
 is the first trading day after it. salesforce.com released after the close, so a print is dated the next trading day; on a Friday
 that is the week's last trading day, and the print meets its close (public before the open; the AVGO rule).
@@ -53,6 +62,7 @@ Usage
   python3 retro/build_crm.py --weekly 2008-01-01 2008-12-31
   python3 retro/build_crm.py --weekly 2009-01-05 2009-12-31
   python3 retro/build_crm.py --weekly 2010-01-04 2012-12-31
+  python3 retro/build_crm.py --weekly 2013-01-01 2017-12-31
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/CRM/<AS_OF>
 """
 import argparse
@@ -273,6 +283,9 @@ def build(as_of, facts, raw, spx, engine, out):
     eps_hist = {int(k): v for k, v in h["eps_normalized"].items()}   # reported history only: the rules use this
     excluded = {int(k): v for k, v in h.get("eps_excluded", {}).items()}
     cur_fy = max(reported(h)) + 1
+    # (CRM 2013-2017) a reduced-data date: the earnings releases, other 8-Ks and 10-K text published from 'first_unread' are not in the sheet
+    reduced = as_of >= facts.get("reduced_data", {}).get("first_unread", "9999")
+    absent = "not in this fact sheet (reduced-data batch)"
     last_fy = max(eps_hist)        # the last full year in the history: cur_fy - 1 unless that year is excluded
     fy_e, fy_e_s, fy_h, fy_now = f"FY{cur_fy}E", f"FY{cur_fy % 100:02d}E", f"FY{cur_fy + 2}E", f"FY{cur_fy % 100:02d}"
     nq = latest["q"]
@@ -291,7 +304,7 @@ def build(as_of, facts, raw, spx, engine, out):
     else:      # no numeric EPS guide yet, or a guided loss (no P/E): the last full year's EPS stands (the rollover rule)
         eps_now = eps_hist[last_fy]
         why = (f"the EPS guide (${_eps_rng(ge['eps_guide'])}, {ge['doc']}) is not positive, which has no P/E" if loss_guide
-               else "no numeric EPS guide yet")
+               else f"the EPS guide is {absent}" if reduced else "no numeric EPS guide yet")
         eps_label = f"{fy_e}: {why}, FY{last_fy % 100:02d}'s ${money(eps_now)} stands" + "".join(
             f" ({excluded[y]})" if excluded[y].startswith(f"FY{y} is excluded") else f" (FY{y % 100:02d} is excluded: {excluded[y]})"
             for y in range(last_fy + 1, cur_fy))
@@ -311,9 +324,10 @@ def build(as_of, facts, raw, spx, engine, out):
         guide_ids = [g["source"], g["prior_source"]]
     else:
         fwd = [latest["sales_pct"]] * 2
-        fwd_label = f"{latest['quarter']} revenue growth (no {next_q} guide in numbers)"
+        fwd_label = f"{latest['quarter']} revenue growth (" + (f"the {next_q} guide is {absent}" if reduced else f"no {next_q} guide in numbers") + ")"
         fwd_short, fwd_period = f"{latest['quarter'].split()[0]} revenue YoY", latest["quarter"]
-        q_text = f"{next_q}: no revenue guide in numbers; the latest quarter's revenue growth stands in (the UNP rule)"
+        q_text = (f"{next_q}: the revenue guide is {absent}" if reduced else f"{next_q}: no revenue guide in numbers") + \
+            "; the latest quarter's revenue growth stands in (the UNP rule)"
         guide_ids = []
     rev = {int(k): v for k, v in h["revenue_usd_b"].items()}
     last_rev = rev[max(rev)]
@@ -327,19 +341,19 @@ def build(as_of, facts, raw, spx, engine, out):
         fy_rev_label = f"{fy_now} revenue guide midpoint ({pct_rng(gr['rev_guide_pct'])} growth on {fy_prev}'s ${last_rev:.3f}B, {gr['doc']})"
     else:
         fy_rev_b = last_rev * (1 + sum(fwd) / 2 / 100)
-        fy_rev_label = f"the {fwd_label}, YoY, applied to the year (no {fy_now} revenue guide)"
+        fy_rev_label = f"the {fwd_label}, YoY, applied to the year (" + (f"the {fy_now} revenue guide is {absent}" if reduced else f"no {fy_now} revenue guide") + ")"
     bits = ([f"EPS ${_eps_rng(ge['eps_guide'])} ({ge['doc']}: {ge['eps_guide_note']})"
              + (" (not positive: no P/E, so not used)" if loss_guide else "")
              + (f"; without the acquisition ${_eps_rng(ge['eps_ex_item']['eps'])}, not used ('{ge['eps_ex_item']['quote']}')"
-                if ge.get("eps_ex_item") else "")] if ge else [f"no {fy_now} EPS range in numbers yet"])
+                if ge.get("eps_ex_item") else "")] if ge else [f"the {fy_now} EPS range is {absent}" if reduced else f"no {fy_now} EPS range in numbers yet"])
     bits += ([f"revenue {_usd_rng(gr['rev_guide_usd_b'])} ({gr['doc']}; the segment bridge only)"] if gr and gr.get("rev_guide_usd_b") is not None
              else [f"revenue growth {pct_rng(gr['rev_guide_pct'])} ({gr['doc']}; the segment bridge only)"] if gr else
-             [f"no {fy_now} revenue range in numbers"])
+             [f"the {fy_now} revenue range is {absent}" if reduced else f"no {fy_now} revenue range in numbers"])
     bits += [g["note"] for g in fy_guides[-1:] if g.get("note")]
     guide_text = (f"{next_q} outlook: {q_text}; {fy_now} guide" + (f" ({', '.join(dict.fromkeys(g['doc'] for g in fy_guides))})" if fy_guides else "")
-                  + ": " + "; ".join(bits) + "; no margin guide")
+                  + ": " + "; ".join(bits) + ("; no margin guide in this fact sheet" if reduced else "; no margin guide"))
     cat3 = (f"(3) The {fy_now} EPS guide — ${_eps_rng(ge['eps_guide'])} GAAP ({ge['doc']})" if ge else
-            f"(3) A numeric {fy_now} EPS guide — none yet")
+            f"(3) The {fy_now} EPS guide — {absent}" if reduced else f"(3) A numeric {fy_now} EPS guide — none yet")
     margin_guided = False                          # no margin guide: no guided step; the signal uses the latest quarter
     fy_margin_base = h["prev_fy_op_margin"]
     guide_src = [g["source"] for g in fy_guides]
@@ -390,7 +404,9 @@ def build(as_of, facts, raw, spx, engine, out):
     # CLOUD is not live before 2012-10-30 (a date no earlier model may print); the 10-Ks' cloud computing words name salesforce.com's
     # own model, the side that displaces on-premise software, not a substitute for it (the GOOG, AVGO and NVDA reading)
     live = sorted(((t["live_from"], k, t["scope"]) for k, t in TAXO["themes"].items() if t["live_from"] <= as_of))
-    assert {k for _, k, _ in live} <= {"OFFSHORE", "CLOUD"}, (as_of, live, "a theme other than OFFSHORE and CLOUD is live: decide its encoding first")
+    # (CRM 2013-2017) the themes live from 2015 are scoped to retail, pay-TV and fossil fuels: none names a software business
+    later = ("ECOMMERCE", "STREAMING", "ENERGY_TRANSITION")
+    assert {k for _, k, _ in live} <= {"OFFSHORE", "CLOUD", *later}, (as_of, live, "a theme with no encoding is live: decide its encoding first")
     if [k for _, k, _ in live] == ["OFFSHORE"]:
         why = (h["why"] + "; no disruption theme in taxonomy_eras.json is live for a subscription software company on this date "
                "(OFFSHORE, the one theme live, is scoped to IT services, and the 10-K's cloud computing words, where it has them, describe "
@@ -398,10 +414,14 @@ def build(as_of, facts, raw, spx, engine, out):
                "obesity rule)")
     else:            # (CRM 2010-2012) from CLOUD's live date: every live theme with its registered scope (the CB and UNH wording)
         scopes = ", ".join(f"{k} {'is scoped to' if i == 0 else 'to'} '{sc}'" for i, (_, k, sc) in enumerate(live))
+        tenk = "the FY2012 10-K (the last whose text is in this fact sheet)" if reduced else "the 10-K"
+        rest = [k for _, k, _ in live if k in later]
+        rest_text = (f"; {', '.join(rest[:-1]) + ' and ' + rest[-1] if len(rest) > 1 else rest[0]} "
+                     f"name{'s' if len(rest) == 1 else ''} no software business") if rest else ""
         why = (h["why"] + "; no disruption theme in taxonomy_eras.json is live for a subscription software company on this date (of the "
-               f"live themes, {scopes}: the 10-K names cloud computing as salesforce.com's own model, the side that displaces on-premise "
-               "software, not a substitute for it, and names no offshore delivery), so the watch list is empty and these words stay here "
-               "(the PEP obesity rule)")
+               f"live themes, {scopes}: {tenk} names cloud computing as salesforce.com's own model, the side that displaces on-premise "
+               f"software, not a substitute for it, and names no offshore delivery{rest_text}), so the watch list is empty and these words "
+               "stay here (the PEP obesity rule)")
     cat4 = (f"(4) Operating expenses — R&D, marketing and sales and G&A {latest['opex_pct']:+.1f}% against revenue "
             f"{latest['sales_pct']:+.1f}% in {latest['quarter']} ({latest['opex_gap_pp']:+.1f}pp): the cost of growth")
 
@@ -433,6 +453,9 @@ def build(as_of, facts, raw, spx, engine, out):
                 + (f"; {latest['note']}" if latest.get("note") else ""))
     cash_return = h["cash_return_text"]
     R = repr
+    methodology_tail = ('\n               "; reduced-data batch from ' + facts["reduced_data"]["first_unread"] + ': SEC XBRL company facts of the 10-Qs "\n'
+                        '               "and 10-Ks only (the earnings releases, their guidance and the 10-Ks\' text are not in the fact sheet)"'
+                        if reduced else "")
     head = f'''#!/usr/bin/env python3
 """
 CRM Signal Model  ·  RETROSPECTIVE as of {as_of}  {tag}  (methodology v2, retro method r2)
@@ -452,7 +475,7 @@ AS_OF       = "{as_of}"
 PRICE_DATE  = "{as_of}"
 METHODOLOGY = ("house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs "
                "derived from dated facts by frozen rules (retro/README.md); subscription software signals with "
-               "salesforce.com's rule-T thresholds; the listing rule (CRM listed 2004-06-23)")
+               "salesforce.com's rule-T thresholds; the listing rule (CRM listed 2004-06-23)"{methodology_tail})
 SOURCES = {json.dumps(sources, ensure_ascii=False, indent=4)}
 
 # Durability as judged on AS_OF from the dated facts above.

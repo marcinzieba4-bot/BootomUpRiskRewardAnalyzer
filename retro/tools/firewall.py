@@ -153,8 +153,8 @@ EPS, notes and raw figures are absurd (from CRM 2010-2012 also its convertible n
 the latest vintage before CUTOFF, a later Q4 print whose full-year actuals exclude its own year, a later guide for every quarter and
 fiscal year guided before CUTOFF (a next-quarter dollar range, an EPS range with and without an acquisition, a revenue range, from CRM
 2010-2012 a revenue growth range, notes), a still later loss range for every guided year,
-and a later vintage excluding a year with planted texts, figures, groups, window start and kind (the dividend, split and company name
-every fact sheet gets, too); GOOG: a print whose revenues, margins, opex and receivables gaps, quarter EPS, cash,
+and a later vintage excluding a year with planted texts, figures, groups, window start and kind, and from CRM 2013-2017 a reduced-data
+flag dated after CUTOFF (the dividend, split and company name every fact sheet gets, too); GOOG: a print whose revenues, margins, opex and receivables gaps, quarter EPS, cash,
 notes and raw figures are absurd, with absurd full-year actuals for the year after the latest vintage before CUTOFF, a later Q4 print
 whose full-year actuals exclude its own year, a later 10-Q restatement of the last print before CUTOFF with absurd figures, and a later
 vintage excluding a year with planted texts, figures, outlook words, exchange and window start, every per-share figure on a planted
@@ -1069,6 +1069,8 @@ try:
                  cash_b=99.0, dividend_note="PLANTED", cash_return_text="PLANTED", groups=[["PLANTED", 1, -99]],
                  groups_basis="PLANTED", exchange="PLANTED", pe_window_start="1990-01-02", kind="CYCLICAL", margin_signal_name="PLANTED",
                  fy_label="PLANTED", eps_first_excluded={"1990": "PLANTED"})
+        if f.get("reduced_data", {}).get("first_unread", later) >= cutoff:   # (CRM 2013-2017) a reduced-data flag dated after CUTOFF
+            f["reduced_data"] = {"first_unread": later, "note": "PLANTED"}
     if TICKER == "MU":     # a later vintage excluding a year and readmitting none, with planted texts and figures
         v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}
         v.update(normalization="PLANTED", business_line="PLANTED", prev_fy_op_margin=-99.0, prev_fy_op_margin_note="PLANTED",
