@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "SCHW",
+ "as_of": "2012-01-19",
+ "computed": "2026-11-27",
+ "data_source": "Yahoo Finance daily closes + dividends (SCHW, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2012-07-19",
+   "price": 12.93,
+   "dividends": 0.12,
+   "total_return_pct": 4.7,
+   "benchmark_total_return_pct": 5.8,
+   "excess_pct": -1.0,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2013-01-18",
+   "price": 15.45,
+   "dividends": 0.24,
+   "total_return_pct": 25.9,
+   "benchmark_total_return_pct": 15.2,
+   "excess_pct": 10.7,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2014-01-17",
+   "price": 26.77,
+   "dividends": 0.48,
+   "total_return_pct": 118.7,
+   "benchmark_total_return_pct": 44.6,
+   "excess_pct": 74.1,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2015-01-16",
+   "price": 26.9,
+   "dividends": 0.72,
+   "total_return_pct": 121.7,
+   "benchmark_total_return_pct": 61.2,
+   "excess_pct": 60.5,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2014-01-16",
+   "price": 26.8
+  },
+  "low": {
+   "date": "2012-01-26",
+   "price": 11.61
+  },
+  "max_drawdown_pct": -23.1,
+  "return_to_avg_price_m12_m24_pct": 66.5
+ },
+ "scenario_landing_2y": "BULL",
+ "call_check_2y": {
+  "expectation": "CHEAP: should clear the hurdle or beat the benchmark",
+  "hit": true
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "DURABLE",
+   "risk": 2
+  },
+  "today": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Schwab: scale brokerage/bank; cash-sorting relief is the tailwind, rates the risk",
+   "reviewed": "2026-09-22"
+  }
+ }
+}
