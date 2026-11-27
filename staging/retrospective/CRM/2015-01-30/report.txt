@@ -1,0 +1,147 @@
+
+════════════════════════════════════════════════════════════════════════
+  CRM  ·  salesforce.com, inc.  ·  $56.45  ·  RETROSPECTIVE as of 2015-01-30
+  Signal: ✕ AVOID   Ratio B: 4.50x   Adj gap: -1.21  [OVERVALUED]
+  Point-in-time: 16 sources, latest published 2015-01-30; latest print Q3 FY15 (Nov 26)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2015E revenue, USD bn  →  FY2017E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2015E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Total revenues                $  5.24  $ 5.24  $10.52    +0.00    +5.28
+    +33.5% revenue in FY14
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $  5.24  $ 5.24  $10.52    +0.00    +5.28
+  FY2015E = FY14 $4.071B × (1 + 28.6%: the Q3 FY15 revenue growth (the Q4 FY15 guide is not in this fact sheet (reduced-data batch)), YoY, applied to the year (the FY15 revenue guide is not in this fact sheet (reduced-data batch))); split pro rata to FY14 total revenues (the FY2014 10-K's XBRL; the geographic split is not in this fact sheet), growth on the year before
+  Q3 FY15 (Nov 26): revenue $1.384B +28.6% YoY (+4.9% QoQ); subscription and support +28.3%; deferred revenue $2.224B +28.2%; R&D + M&S + G&A +18.4%;
+  gross margin 75.92% (+84.2bp); operating margin -1.59% (+750.8bp); EPS $(0.06) vs $(0.21)
+  Revenue: revenues $1,383.7M vs $1,076.0M a year earlier, $1,318.6M the quarter before; subscription and support $1,288.5M vs $1,004.5M (total revenues less professional services and other, as tagged); deferred revenue $2,224.0M (2014-10-31) vs $1,734.6M a year earlier, current and noncurrent (the balance sheets' XBRL); GAAP diluted EPS $(0.06) vs $(0.21) (the 10-Q's XBRL); diluted shares 629.5M; reduced-data print: the 10-Q's XBRL figures; salesforce.com's earnings release for the quarter is not in this fact sheet
+  Q4 FY15 outlook: Q4 FY15: the revenue guide is not in this fact sheet (reduced-data batch); the latest quarter's revenue growth stands in (the UNP rule); FY15 guide: the FY15 EPS range is not in this fact sheet (reduced-data batch); the FY15 revenue range is not in this fact sheet (reduced-data batch); no margin guide in this fact sheet
+
+  FY2015E EPS check:  $5.240B × -8.8% pre-tax × (1−35.1%) ÷ 0.629B  =  $-0.47  (FY2015E: the EPS guide is not in this fact sheet (reduced-data batch), FY11's $0.117 stands (FY2012 is excluded: a GAAP net loss of $(0.09) a share ('For the full fiscal year 2012, GAAP net loss per share was ($0.09)', the Q4 FY12 release), with no figure excluding only one-offs (the release's non-GAAP $1.36 also removes stock-based compensation, the amortization of purchased intangibles and the non-cash interest on the convertible notes, which recur: the NKE FY2007 and AVGO rule), so the year has no P/E (the r2 loss rule)) (FY2013 is excluded: a GAAP net loss of $(1.92) a share (net loss $270.4M, the FY2013 10-K's XBRL), with no figure excluding only one-offs in this fact sheet (reduced-data batch: the earnings releases are not in it), so the year has no P/E (the r2 loss rule)) (FY2014 is excluded: a GAAP net loss of $(0.39) a share (net loss $232.2M, the FY2014 10-K's XBRL), with no figure excluding only one-offs in this fact sheet (reduced-data batch: the earnings releases are not in it), so the year has no P/E (the r2 loss rule)))
+  FY2017E BEAR check: $5.240B × -8.8% ÷ 0.671B  =  $-0.45  (scenario $0.07)
+  FY2017E BULL check: $10.520B × -8.4% ÷ 0.671B  =  $-0.85  (scenario $0.22)
+  Every 1pp of pre-tax margin ≈ $0.054 EPS ≈ $10.19/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Subscription and support growth       +40.0%    ≥61.0%    ≥82.0%   ≥328.0%    +28.3%  ⚠ BEAR  █░░░
+  Deferred revenue growth               +43.0%    ≥68.0%    ≥93.0%   ≥169.0%    +28.2%  ⚠ BEAR  █░░░
+  Gross margin change                 -740.0bp  ≥-330.0bp   ≥70.0bp  ≥3600.0bp   +84.2bp  ▲ BULL  ███░
+  Opex growth less revenue             +49.0pp   ≤12.0pp  ≤-24.0pp  ≤-305.0pp   -10.2pp  ◦ BASE  ██░░
+  Operating margin change             -2800.0bp  ≥-720.0bp  ≥1360.0bp  ≥48650.0bp  +750.8bp  ◦ BASE  ██░░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.75 / 4.00
+  Market composite:   2.66 / 4.00  (back-solved from $56.45 + 15% hurdle)
+  SCA adjustment:    -0.10  ·  EPP-distance adj -0.20  →  Adj composite 1.45  →  Gap -1.21  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY14 revenues +33.5%, subscription and support +33.3%, gross margin 76.2%; Q3 deferred revenue +28.2% YoY  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 480.4x FY15E vs a 188.7x 10-yr ex-FY07 ex-FY12 ex-FY13 ex-FY14 median (90th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    -  Growth vs own history: Q3 FY15 revenue growth (the Q4 FY15 guide is not in this fact sheet (reduced-data batch)) +28.6% vs a 36.8% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  Cash, cash equivalents and marketable securities $1.827B (Q3 FY15), convertible senior notes $1,244.4M, net (the balance sheet's XBRL; other borrowings not shown), FY14 free cash flow $0.576B (net cash provided by operating activities $875.5M less capital expenditures $299.1M (XBRL)), no dividend  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Subscription and support growth       +28.3%    +40.0%  +11.7%  New subscriptions and renewals slow: …
+  Deferred revenue growth               +28.2%    +43.0%  +14.8%  Billings slow ahead of revenue: the n…
+  Gross margin change                  +84.2bp  -740.0bp  -824.2bp  Data-center and service costs outgrow…
+  Opex growth less revenue             -10.2pp   +49.0pp  +59.2pp  Marketing and sales, R&D and G&A do n…
+  Operating margin change             +750.8bp  -2800.0bp  -3550.8bp  Operating leverage works in reverse
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$17.46  (model)  /  $5.24 (defined)
+  Bear probability (proxy model):  33.0%
+
+  KEY TRIGGER: revenue went from +37.8% (Q2 FY15) to +28.6% YoY (Q3 FY15), +4.9% on the quarter before;
+  the bear case needs deferred revenue (+28.2% YoY now) and the operating
+  margin (+750.8bp now) giving way. A subscription slowdown shows up in deferred revenue first, then in
+  subscription and support revenue a few quarters later.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $0.12  (FY2015E: the EPS guide is not in this fact sheet (reduced-data batch), FY11's $0.117 stands (FY2012 is excluded: a GAAP net loss of $(0.09) a share ('For the full fiscal year 2012, GAAP net loss per share was ($0.09)', the Q4 FY12 release), with no figure excluding only one-offs (the release's non-GAAP $1.36 also removes stock-based compensation, the amortization of purchased intangibles and the non-cash interest on the convertible notes, which recur: the NKE FY2007 and AVGO rule), so the year has no P/E (the r2 loss rule)) (FY2013 is excluded: a GAAP net loss of $(1.92) a share (net loss $270.4M, the FY2013 10-K's XBRL), with no figure excluding only one-offs in this fact sheet (reduced-data batch: the earnings releases are not in it), so the year has no P/E (the r2 loss rule)) (FY2014 is excluded: a GAAP net loss of $(0.39) a share (net loss $232.2M, the FY2014 10-K's XBRL), with no figure excluding only one-offs in this fact sheet (reduced-data batch: the earnings releases are not in it), so the year has no P/E (the r2 loss rule)))
+  Min viable P/E at panic:          189x  [median of calendar-year P/E lows: 2005 72.2x, 2006 189.2x, 2007 259.1x, 2008 62.7x, 2009 40.9x, 2010 100.9x, 2011 263.8x, 2014 418.1x, 2015 469.0x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $22.21/share
+  Current $56.45 vs Updated EPP $22.21:  +154%  ⚠ far above floor — large drawdown room
+  Bear $5.24 vs Updated EPP $22.21:  -76%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Subscription and support growth               61.0      +32.7   BASE floor (vs +28 now)
+  Deferred revenue growth                       68.0      +39.8   BASE floor (vs +28 now)
+  Gross margin change                         -330.0     -414.2   BASE floor (vs +84 now)
+  Opex growth less revenue                      12.0      +22.2   BASE floor (vs -10 now)
+  Operating margin change                     -720.0    -1470.8   BASE floor (vs +751 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $0.12 × (1+23.3%)² = $0.18
+  At 188x P/E (conservative):  $33.61/share
+  + Cumul. dividends (2yr):  +$0.00/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $33.61  (▼22.84 from $56.45)
+  Conservative total return:  -40% over 2yr  = -20%/yr
+
+  23.3% EPS growth is what is left once the premium multiple (480.4x)
+  mean-reverts to 188x. Breakeven at 188x needs FY2017E EPS of $0.30,
+  i.e. 59.9%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $48.18  –  $67.00  (at 44th pct of range)
+  Annual dividend:      $0.00/share  (yield 0.0%)
+  Realized vol:         34% annualized (1-yr daily log returns)
+  Beta vs broad market: 1.65
+  1-sigma range (1yr):  $37.37  –  $75.53  ($56.45 ± 34%)
+  2-sigma range (1yr):  $18.29  –  $94.61
+  ────────────────────────────────────────────────────────────
+  Bear $5.24 requires:  ~2.7σ price move  (unusual — requires fundamental break)
+  A subscription software company priced on its growth: the stock is +15% off its April
+  low (52 weeks) while revenue went from +37.8% (Q2 FY15) to +28.6% YoY (Q3 FY15), +4.9% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        0.07   74.8x  $   5.24    33.0%      6.6%   +26.4pp  EPS -25.4%/yr (worst year FY05-FY11 ex-FY07, capped at 0%); P/E to its 10th pct
+  BASE        0.18  188.7x  $  33.97    50.0%     22.9%   +27.1pp  EPS +25.3%/yr (Q3 revenue YoY + margin + buyback); P/E at its 10-yr ex-FY07 ex-FY12 ex-FY13 ex-FY14 median
+  BULL        0.22  308.3x  $  67.83    14.3%     59.3%   -45.0pp  EPS +37.4%/yr (FY05-FY11 ex-FY07 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL       0.49  477.8x  $ 234.12     2.7%     11.2%    -8.5pp  EPS +104.9%/yr (best 2-yr run FY05-FY11 ex-FY07, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $34.77  /  Market EV: $74.58  /  Current: $56.45
+  Conservative EV (2yr, ④): $33.61 + $0.00 divs = $33.61 total value
+  Downside (→ Bear $5.24): 90.7%   Upside (→ Bull $67.83): 20.2%   Ratio B 4.50x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $56.45 the market needs $74.66 in two years —
+  above the BULL case. That is a market composite of 2.66 against a model
+  read of 1.45: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       4.50x    +154%    -1.21  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     1.01x    +154%    -0.75  OVERVALUED / ACCUMULATE
+  Multiples one band cheaper (p5/p25/med/p75)      infx    +154%    -1.70  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          3.80x    +154%    -1.17  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                          5.49x    +154%    -1.26  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             4.50x    +154%    -0.91  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 4.50x    +150%    -1.21  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    4.50x    +154%    -1.08  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 FY15 10-K (March) — revenue against the Q3 FY15 revenue growth (the Q4 FY15 guide is not in this fact sheet (reduced-data batch)): +28.6% YoY
+  (2) Deferred revenue — +28.2% YoY in Q3 FY15: billings run ahead of revenue, so they slow first
+  (3) The FY15 EPS guide — not in this fact sheet (reduced-data batch)
+  (4) Operating expenses — R&D, marketing and sales and G&A +18.4% against revenue +28.6% in Q3 FY15 (-10.2pp): the cost of growth
+  (5) Capital structure at 480x — no share repurchase program (no repurchase of common stock in the cash flow statements' XBRL)
+  ✕ AVOID  |  EPP floor $22.21  |  ADD below ~$28.87  |  TRIM above $67.83
+════════════════════════════════════════════════════════════════════════
+
