@@ -28041,8 +28041,9 @@ Controls and checks (before any outcome):
 - **Self-text scan** (`--from 2022-01-01`, the 2022-2026 filings): 747 tokens, one miss, "March" in the Q4 2021 print's `next_print` ("the
   quarter ends in March"), method wording that only the Q4 2021 release lacks among the filings of its date; passed with `--allow March`.
 - **Regression:** rebuilding the 731 dates of 2008-2021 on the extended fact sheet, builder and engines changes nothing.
-- **Firewall** (run after the build, validation outputs and README section were committed and pushed, before any outcome): the result is added in its own commit
-  once the run is done, at the 30 cutoffs above (2022-01-01, every print, vintage and dividend date, GENAI's and GLP1's live dates, and 2026-11-21).
+- **Firewall** (run after the build, validation outputs and README section were committed and pushed, before any outcome): it passes at
+  all 30 cutoffs above (2022-01-01, every print, vintage and dividend date, GENAI's and GLP1's live dates, and 2026-11-21: 731 to 986 dates
+  each), 0 files changed and no planted text, on its first run.
   Besides the earlier plants, each later vintage now carries a planted cloud reading, AI words and crypto words.
 
 Seen in the build (method behaviour, not tuned). BEAR is FY19 to FY20's -20.6%/yr to the Q4 2023 print, then FY22 to FY23's -27.4%/yr;
