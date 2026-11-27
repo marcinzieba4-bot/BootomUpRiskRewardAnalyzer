@@ -29383,7 +29383,11 @@ python3 retro/build_lyb.py --weekly 2012-02-06 2013-12-31                   # re
 python3 retro/build_lyb.py --weekly 2014-01-01 2017-12-31                   # 209 dates, 2014-01-03 .. 2017-12-29
 python3 retro/generators/lyb/controls_lyb.py 2014-01-01 2017-12-31          # 57 controls
 python3 retro/generators/lyb/sens_lyb.py <scratch> 2014-01-01 2017-12-31    # the sensitivity below
-for c in <each fact date of 2014-2017 and the day after it, 2015-12-12, 2018-01-01>; do   # 50 cutoffs
+for c in 2014-01-31 2014-02-01 2014-02-20 2014-02-21 2014-04-22 2014-04-23 2014-04-29 2014-04-30 2014-07-25 2014-07-26 \
+         2014-10-24 2014-10-25 2015-02-03 2015-02-04 2015-02-18 2015-02-19 2015-04-24 2015-04-25 2015-05-12 2015-05-13 \
+         2015-07-28 2015-07-29 2015-10-23 2015-10-24 2015-12-12 2016-02-02 2016-02-03 2016-02-17 2016-02-18 2016-04-22 \
+         2016-04-23 2016-05-17 2016-05-18 2016-07-29 2016-07-30 2016-11-01 2016-11-02 2017-02-03 2017-02-04 2017-02-17 \
+         2017-02-18 2017-04-28 2017-04-29 2017-06-01 2017-06-02 2017-07-28 2017-07-29 2017-10-27 2017-10-28 2018-01-01; do   # 50 cutoffs
   python3 retro/tools/firewall.py $c LYB; done
 ```
 
@@ -29460,7 +29464,7 @@ Controls and checks (before any outcome):
 - **Years after the as-of date and anachronisms:** none in the 209 models, reports and analyses other than the FY horizon labels.
 - **`retro_tool run`:** passes on all 209 dates, with no warnings.
 - **Firewall** (run after the build was committed, before any outcome): passes at 50 cutoffs (each fact date of 2014-2017 and the day
-  after it, 2015-12-12 and 2018-01-01), with 0 files changed and no planted text. The LYB plant now also plants the watch list's 10-K words.
+  after it, 2015-12-12 and 2018-01-01; listed above), with 0 files changed and no planted text (110 to 309 earlier dates each). The LYB plant now also plants the watch list's 10-K words.
 
 Seen in the build (method behaviour, not tuned):
 - **Totals: RICH 183, CHEAP 21, FAIR 5.** RICH on all 52 dates of 2014 but one (FAIR 2014-12-12) and all 53 of 2015; CHEAP on 2016-02-03
