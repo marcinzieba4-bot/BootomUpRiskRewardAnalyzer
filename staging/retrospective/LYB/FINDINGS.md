@@ -152,3 +152,103 @@ the range). None of it is an input.
   sample.
 - **One stock, one oil cycle.** The dates span one crude-oil fall and recovery, the buyback that cut the diluted share count by more than a quarter (555M to 395M) and
   the 2017 peak; they test the no-guide and short-window rules on a cyclical, not stock selection.
+
+# LYB 2018-2021 (hindsight)
+
+Patterns seen in `outcome.json` for the 209 LYB weekly dates of 2018-01-05 to 2021-12-31. Labels and hypotheses, never inputs. The
+batch was scored only after its build, validation outputs, README section and firewall result were committed and pushed (4e6e5fc48,
+d6b18ea82, b3a08e3a6, 7361d9585); the 2012-2017 outcomes and findings above were not opened before then. Outcomes computed on
+2026-11-27; every date has its 2-year horizon. Total returns include the interim dividends. Same conventions as above ("Call held" is
+`call_check_2y`: RICH should miss the hurdle and lag SPY, CHEAP should clear it). Tables from
+`retro/generators/lyb/findings_tables.py 2018,2019,2020,2021`.
+
+**Hindsight the model could not see:** polyethylene and olefin margins compressed through 2018-2019 as new U.S. capacity started, and
+the close fell from about $110 to about $70 by mid-2019; the pandemic took the close to $42 in March 2020, after which it more than doubled within
+a year; 2021 brought record earnings (released 2022-01-28, after the range), and the price fell back in 2022. None of it is an input.
+
+## 2018 (52 dates)
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID (2018-01-05 to 2018-01-26) | 4 | -16.5% | -23.4% to -12.8% | 0 | 0 | -26.6% | 4 |
+| class CHEAP, legacy tier BUY (2018-02-02 to 2018-12-28) | 48 | -28.7% | -59.8% to +25.0% | 0 | 0 | -24.9% | 0 |
+| FY17E $9.15 (FY16's) (2018-01-05 to 2018-01-26) | 4 | -16.5% | -23.4% to -12.8% | 0 | 0 | -26.6% | 4 |
+| FY18E $12.28 (FY17's) (2018-02-02 to 2018-12-28) | 48 | -28.7% | -59.8% to +25.0% | 0 | 0 | -24.9% | 0 |
+| latest print Q3 2017 (2018-01-05 to 2018-01-26) | 4 | -16.5% | -23.4% to -12.8% | 0 | 0 | -26.6% | 4 |
+| latest print Q4 2017 (2018-02-02 to 2018-04-20) | 12 | -35.7% | -59.8% to -15.6% | 0 | 0 | -20.6% | 0 |
+| latest print Q1 2018 (2018-04-27 to 2018-07-27) | 14 | -33.4% | -43.2% to -28.3% | 0 | 0 | -30.2% | 0 |
+| latest print Q2 2018 (2018-08-03 to 2018-10-26) | 13 | -22.4% | -37.2% to -6.2% | 0 | 0 | -29.7% | 0 |
+| latest print Q3 2018 (2018-10-31 to 2018-12-28) | 9 | +2.9% | -14.0% to +25.0% | 0 | 0 | -18.8% | 0 |
+## 2019 (52 dates)
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY (2019-01-04 to 2019-09-06) | 24 | +34.5% | +7.0% to +63.0% | 16 | 4 | -8.8% | 16 |
+| class FAIR, legacy tier BUY (2019-04-05 to 2019-07-26) | 3 | +25.4% | +23.7% to +26.3% | 0 | 0 | -13.3% | 0 |
+| class RICH, legacy tier BUY (2019-04-12 to 2019-12-27) | 25 | +18.0% | +1.7% to +35.3% | 2 | 0 | +6.0% | 23 |
+| FY18E $12.28 (FY17's) (2019-01-04 to 2019-01-25) | 4 | +17.5% | +12.6% to +22.5% | 0 | 0 | -17.5% | 0 |
+| FY19E $12.01 (FY18's) (2019-02-01 to 2019-02-15) | 3 | +19.2% | +7.0% to +22.8% | 0 | 0 | -18.4% | 0 |
+| FY19E $12.03 (FY18's) (2019-02-22 to 2019-12-27) | 45 | +27.9% | +1.7% to +63.0% | 18 | 4 | +6.0% | 39 |
+| latest print Q3 2018 (2019-01-04 to 2019-01-25) | 4 | +17.5% | +12.6% to +22.5% | 0 | 0 | -17.5% | 0 |
+| latest print Q4 2018 (2019-02-01 to 2019-04-18) | 12 | +26.3% | +7.0% to +34.5% | 5 | 0 | -14.7% | 6 |
+| latest print Q1 2019 (2019-04-26 to 2019-07-26) | 14 | +33.6% | +17.3% to +63.0% | 7 | 4 | +4.9% | 11 |
+| latest print Q2 2019 (2019-08-02 to 2019-10-25) | 13 | +24.2% | +11.5% to +57.2% | 6 | 0 | +13.8% | 13 |
+| latest print Q3 2019 (2019-11-01 to 2019-12-27) | 9 | +5.7% | +1.7% to +9.9% | 0 | 0 | +6.1% | 9 |
+## 2020 (53 dates)
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier BUY (2020-01-03 to 2020-11-06) | 25 | +47.2% | +11.2% to +97.3% | 18 | 19 | +40.7% | 4 |
+| class RICH, legacy tier ACCUMULATE (2020-01-31 to 2020-11-13) | 7 | +25.3% | +15.6% to +34.7% | 3 | 5 | +22.4% | 1 |
+| class RICH, legacy tier WATCHLIST (2020-02-07 to 2020-12-11) | 6 | +30.8% | +8.2% to +31.7% | 0 | 2 | +20.9% | 4 |
+| class CHEAP, legacy tier BUY (2020-03-13 to 2020-05-15) | 10 | +130.5% | +87.1% to +164.6% | 10 | 10 | +99.1% | 10 |
+| class FAIR, legacy tier BUY (2020-05-22 to 2020-05-22) | 1 | +93.0% | +93.0% to +93.0% | 1 | 1 | +64.7% | 0 |
+| class RICH, legacy tier AVOID (2020-12-04 to 2020-12-31) | 4 | +7.6% | +4.4% to +11.2% | 0 | 2 | +2.2% | 2 |
+| FY19E $12.03 (FY18's) (2020-01-03 to 2020-01-24) | 4 | +20.1% | +11.2% to +21.1% | 0 | 0 | +11.4% | 4 |
+| FY20E $9.58 (FY19's) (2020-01-31 to 2020-02-14) | 3 | +31.7% | +31.7% to +34.5% | 1 | 0 | +21.9% | 2 |
+| FY20E $9.60 (FY19's) (2020-02-21 to 2020-12-31) | 46 | +48.3% | +4.4% to +164.6% | 31 | 39 | +41.8% | 15 |
+| latest print Q3 2019 (2020-01-03 to 2020-01-24) | 4 | +20.1% | +11.2% to +21.1% | 0 | 0 | +11.4% | 4 |
+| latest print Q4 2019 (2020-01-31 to 2020-04-24) | 13 | +87.1% | +30.8% to +164.6% | 10 | 7 | +69.0% | 10 |
+| latest print Q1 2020 (2020-05-01 to 2020-07-24) | 13 | +63.0% | +44.2% to +115.4% | 13 | 13 | +51.2% | 3 |
+| latest print Q2 2020 (2020-07-31 to 2020-10-23) | 13 | +31.8% | +15.6% to +65.0% | 6 | 12 | +33.7% | 1 |
+| latest print Q3 2020 (2020-10-30 to 2020-12-31) | 10 | +15.1% | +4.4% to +34.7% | 3 | 7 | +5.9% | 3 |
+## 2021 (52 dates)
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID (2021-01-08 to 2021-07-23) | 29 | +3.5% | -10.1% to +28.1% | 0 | 14 | -13.8% | 15 |
+| class FAIR, legacy tier ACCUMULATE (2021-07-30 to 2021-12-17) | 9 | +10.9% | +7.5% to +26.3% | 0 | 9 | -9.8% | 7 |
+| class FAIR, legacy tier BUY (2021-09-03 to 2021-10-22) | 6 | +20.9% | +9.6% to +24.5% | 0 | 6 | -3.8% | 2 |
+| class RICH, legacy tier ACCUMULATE (2021-10-29 to 2021-12-31) | 8 | +19.5% | +13.3% to +25.2% | 0 | 8 | +3.1% | 0 |
+| FY20E $9.60 (FY19's) (2021-01-08 to 2021-01-22) | 3 | +13.9% | +7.9% to +16.6% | 0 | 3 | -2.9% | 0 |
+| FY21E $4.24 (FY20's) (2021-01-29 to 2021-02-19) | 4 | +20.6% | +11.4% to +28.1% | 0 | 4 | -1.4% | 0 |
+| FY21E $4.25 (FY20's) (2021-02-26 to 2021-12-31) | 45 | +8.3% | -10.1% to +26.3% | 0 | 30 | -11.2% | 24 |
+| latest print Q3 2020 (2021-01-08 to 2021-01-22) | 3 | +13.9% | +7.9% to +16.6% | 0 | 3 | -2.9% | 0 |
+| latest print Q4 2020 (2021-01-29 to 2021-04-23) | 13 | +3.7% | -7.1% to +28.1% | 0 | 8 | -13.6% | 5 |
+| latest print Q1 2021 (2021-04-30 to 2021-07-23) | 13 | +1.0% | -10.1% to +10.1% | 0 | 3 | -15.4% | 10 |
+| latest print Q2 2021 (2021-07-30 to 2021-10-22) | 13 | +13.7% | +7.5% to +24.5% | 0 | 13 | -7.2% | 9 |
+| latest print Q3 2021 (2021-10-29 to 2021-12-31) | 10 | +21.8% | +13.3% to +26.3% | 0 | 10 | +3.2% | 0 |
+
+## Across 2018-2021
+
+| Group | Dates | Mean 1-yr total return | Mean 2-yr total return | Mean 2-yr excess vs SPY | Mean 3-yr total return | Call held |
+|---|---|---|---|---|---|---|
+| class RICH | 108 | +10.7% | +19.7% | -3.8pp | +27.5% | 53 of 108 |
+| class FAIR | 19 | -3.6% | +21.1% | +10.1pp | +22.1% | (no direction) |
+| class CHEAP | 82 | +4.7% | +11.5% | -23.4pp | +30.7% | 26 of 82 |
+| all | 209 | +7.1% | +16.6% | -10.2pp | +28.2% | 88 of 209 |
+
+- **The CHEAP calls failed on all 48 dates of 2018 and held on 26 of 34 after.** The 2018 dates rested on FY17's $12.28, a year lifted
+  by the U.S. tax reform benefit and near the margin peak, with BASE at +21% to +27%/yr on revenue growth; their two years caught the
+  2018-2019 margin downturn and the 2020 crash (median -28.7%, none beat SPY, drawdowns to -70.6%). The CHEAP dates of 2019 (P/E 5.7-7.4x)
+  cleared the hurdle on 16 of 24 and the ten of March-May 2020 (P/E 4.4-6.1x, at the trough) on all ten (median +130.5%).
+- **The RICH calls held on 53 of 108.** They held in early 2018 (4 of 4) and through late 2019 (23 of 25), and failed through most of
+  2020 (11 of 42 held): the RICH class there came from BASE's negative revenue growth while the P/E sat below the window median, and the
+  two years ran into the 2020-2021 recovery (median +47.2% for the BUY-tier RICH dates). In 2021, on FY20's $4.25 anchor (20-27x), 15 of
+  the 37 RICH dates held; the median 2-yr return was +3.5% for the AVOID dates, and none cleared the hurdle.
+- **The two-year landing** was BASE on 86 dates, BEAR on 68, BULL on 40 and XBULL on 15; the median drawdown within two years -49.7%.
+- **What carried the classes** (from the sensitivity, a point-in-time result): the frozen rule-T signals (71 classes at XBULL), the GAAP
+  anchor of an unusual year (FY2017 with the tax reform benefit: 45 classes at a derived $10.23; FY2020 with the impairment: 8 at
+  $5.61) and BASE's revenue rule. Hypothesis (to test on other cyclical tickers, never folded into this archive): the last full year's
+  GAAP EPS of a one-off-heavy or trough year, used as the current year's with no guide, carries that year's distortion into the class in
+  both directions; together with the pro-cyclical BASE seen in 2014-2017, it makes CHEAP late at peaks (2018) and RICH late at troughs
+  (2020). Any change is a new method version, decided before scoring and tested out of sample.
+- **One stock, one cycle and one shock.** The dates span one margin downturn, one pandemic crash and its recovery, a large acquisition
+  (A. Schulman) and continued buybacks (395M to 334M diluted shares); they test the no-guide and GAAP-anchor rules on a cyclical, not
+  stock selection.

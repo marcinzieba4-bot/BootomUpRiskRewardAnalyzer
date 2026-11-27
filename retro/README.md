@@ -29801,7 +29801,8 @@ Judgement calls that could carry hindsight:
 - EV and CRYPTO out of scope, ENERGY_TRANSITION on the watch list (text only), CYCLICAL on the 10-Ks' own words;
 - the non-earnings 8-Ks read by their item text and exhibits for guided numbers only.
 
-The hindsight results for 2018-2021 are in `staging/retrospective/LYB/FINDINGS.md` ("LYB 2018-2021"): hypotheses, never inputs.
+The hindsight results for 2018-2021 are in `staging/retrospective/LYB/FINDINGS.md` ("LYB 2018-2021"), computed after the firewall
+result was pushed: hypotheses, never inputs.
 
 ## CHTR (Charter Communications): the thirty-eighth ticker, set up in staging, no date built
 
