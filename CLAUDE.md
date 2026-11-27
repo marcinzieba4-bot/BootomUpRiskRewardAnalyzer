@@ -554,6 +554,15 @@ touching either directory.
   rule); and Yahoo's CHTR series starts on 2010-01-05 (the new Class A, OTC: CCMM, then NASDAQ: CHTR from 2010-09-14), so 2008-2009 has
   no close either (the old Class A was suspended from NASDAQ on 2009-04-07 and cancelled on 2009-11-30). The first buildable date lies
   after 2013 and was not determined; annualizing December 2009 or anchoring on the eleven months would be a new rule, the owner's call
-  (retro/README.md, "CHTR", "CHTR 2008-2009").
+  (retro/README.md, "CHTR", "CHTR 2008-2009"). 2014-2017 cannot be built either, so the gate refuses all 523 weekly dates of
+  2008-01-04 to 2017-12-29 (a full-data batch, `gen_chtr_1417.py` appending the FY2014-FY2016 10-Ks and Q4 releases): 2014 $(1.70) and
+  2015 $(2.43) are losses (recast to $(1.88) and $(2.68) by the FY2016 10-K for the 0.9042 Parent Merger Exchange Ratio of 2016-05-18,
+  which Yahoo's series records no event for and which is recorded, not encoded), and FY2016's $15.94, the only positive year, carries the
+  "approximately $3.3 billion" valuation allowance reversal the 10-K calls non-recurring against $222M of income without it, with no
+  figure excluding only it, so it is excluded by the mirror of the AAPL FY2002 test (the batch's deciding call: kept, 46 dates of 2017
+  would pass; the Q4 2016 release's pro forma $3.91 is unused); a Q4 release's year extends its vintage until the 10-K (`q4_actuals`),
+  the later vintages' years are the priced shares' (`priced_issuers`); no guide, no dividend; the engine is unchanged (no signal or rule-T
+  value derived); the first buildable date lies after 2017 and was not determined, as FY2017's 2018 filings were not read
+  (retro/README.md, "CHTR 2014-2017").
 - **Never use the owner's personal email** in request headers to external
   services (SEC asks for a contact in the User-Agent).

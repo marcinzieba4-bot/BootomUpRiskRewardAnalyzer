@@ -41,7 +41,7 @@ and require byte-identical models. Restores the fact sheet and the price cache a
     python3 retro/tools/firewall.py 2009-01-01 NEE          # the NEE series (FPL Group, FPL) in staging/retrospective
     python3 retro/tools/firewall.py 2009-01-01 NEM          # the NEM series (Newmont Mining Corporation) in staging/retrospective
     python3 retro/tools/firewall.py 2013-01-01 LYB          # the LYB series in staging/retrospective (from the 2010 share issue)
-    python3 retro/tools/firewall.py 2010-01-01 CHTR         # the CHTR gate (no date built; retro/README.md, "CHTR 2008-2009")
+    python3 retro/tools/firewall.py 2010-01-01 CHTR         # the CHTR gate (no date built; retro/README.md, "CHTR 2008-2009", "CHTR 2014-2017")
 
 Plants a print, a history vintage, an event per live theme and a company name (UNP: also a guide and a
 dividend; LOW and AAPL: also a guide with every guided field; NKE: a guide in words, and futures orders on the last print before
@@ -552,6 +552,18 @@ if TICKER == "CHTR":   # no CHTR date is built (retro/README.md, "CHTR 2008-2009
     f1["history_vintages"].append({"published": later, "source": "PLANTED", "fy_label": "FY99",
                                    "periods": {"2098": yr("Predecessor"), "2099": yr("Successor")}})
     f1["listings"].append({"published": later, "source": "PLANTED", "issuer": "Successor", "exchange": "PLANTED", "symbol": "PLANTED"})
+    # (2014-2017, retro/README.md, "CHTR 2014-2017") a later Q4 release with a positive year and a later one-off test that would
+    # exclude every year of every vintage: neither may reach a date before the cutoff
+    f1.setdefault("q4_actuals", []).append({"published": later, "source": "PLANTED", "fy": 2097,
+                                            "period": {**yr("Charter Communications, Inc."), "start": "2097-01-01"}})
+    for v in f1["history_vintages"]:
+        if v["published"] < cutoff or v["source"] == "PLANTED":
+            continue
+        v.setdefault("one_off_tests", {})
+        for k in v["periods"]:
+            v["one_off_tests"].setdefault(k, {"fy": k, "kind": "PLANTED", "income_attributable_m": 1, "items_after_tax_m": 99,
+                                              "income_without_m": -98, "distorted": True, "figure_without_published": None,
+                                              "item": "PLANTED"})
     chtr, spx = build_chtr.trading_days("CHTR"), build_chtr.trading_days("^GSPC")
     before = build_chtr.weekly_dates("2008-01-01", (dt.date.fromisoformat(cutoff) - dt.timedelta(days=1)).isoformat(), spx)
     nxt = min([v["published"] for v in f0["history_vintages"] if v["published"] > later] + ["9999-12-31"])   # a real later vintage
