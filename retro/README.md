@@ -27256,6 +27256,11 @@ Controls and checks (before any outcome):
 - **Self-text scan:** 0 misses of 702 tokens over 165 facts (every capitalized word, dollar figure and year of each fact's own text in an FPL
   Group or NextEra Energy filing by the fact's date).
 - **Regression:** no shared code changed; the 105 dates of 2008-2009 rebuild byte-identical on the extended fact sheet.
+- **Firewall** (run after the build, validation outputs and README section were committed and pushed, before any 2010-2013 outcome):
+  it passes at all 16 cutoffs above (the day before each print and 10-K date that changes the anchor or the vintage, the name and listing
+  dates, 2012-11-02 and 2014-01-01: 108 to 314 dates each, the 2008-2009 dates included), 0 files changed and no planted text, with the same
+  plant as for 2008-2009 (a planted later print, full-year actuals, display-only guides, vintage, dividend, split, listing symbol, company
+  name and prices from the cutoff multiplied by 10).
 
 Seen in the build (method behaviour, not tuned):
 - **Totals: RICH 105, CHEAP 74, FAIR 30.** 2010: CHEAP 33, FAIR 16, RICH 3. 2011: RICH 26, CHEAP 22, FAIR 4. 2012: RICH 23, CHEAP 19, FAIR 10.
