@@ -4,6 +4,7 @@ CHTR (Charter Communications, Inc.) retrospective builder: the buildability gate
 
     python3 retro/build_chtr.py --weekly 2008-01-01 2009-12-31        # the requested range: every date refused, with its reason
     python3 retro/build_chtr.py --weekly 2010-01-01 2013-12-31        # the fallback range: every date refused, with its reason
+    python3 retro/build_chtr.py --weekly 2014-01-01 2017-12-31        # the 2014-2017 batch: every date refused, with its reason
     python3 retro/build_chtr.py --check --json START END              # buildable dates as JSON (firewall.py's CHTR gate test)
 
 Method r2 needs, on each as-of date, (1) a close of the stock as traded, and (2) the stock's own P/E: at least one full fiscal year
@@ -19,8 +20,11 @@ retro/facts/CHTR.json and Yahoo's CHTR and ^GSPC series truncated at the as-of d
       whose shares the date prices count (from the 2009-11-30 emergence, the Successor's; the BKR 2018 rule), and only a positive
       diluted EPS can anchor a P/E (a loss has none: the F, MU and CRM rule).
 
-Every weekly date of 2008-2013 fails (2), and every date before 2010-01-05 fails (1) too, so the builder writes nothing
-(retro/README.md, "CHTR 2008-2009"). A date that passes both would still need the prints, guides, rule-T thresholds and signals,
+Every weekly date of 2008-2017 fails (2), and every date before 2010-01-05 fails (1) too, so the builder writes nothing
+(retro/README.md, "CHTR 2008-2009", "CHTR 2014-2017"). From the FY2014 10-K the vintages name no Predecessor or Successor and print
+only the post-emergence years ('priced_issuers'); a Q4 release's full year extends the vintage until its 10-K ('q4_actuals'); and a
+positive year whose listed one-offs distort it, with no figure excluding only them, does not anchor (the AAPL FY2002 test and its
+mirror, 'one_off_tests'): FY2016's $15.94 with the approximately $3.3 billion valuation allowance reversal. A date that passes both would still need the prints, guides, rule-T thresholds and signals,
 none of which is transcribed, so the builder stops there rather than build from a partial sheet. Weekly dates are the last
 trading day of each ISO week (no print is transcribed, so no earnings week moves a date).
 """
@@ -63,18 +67,33 @@ def gate(as_of, facts, chtr):
     if not vs:
         return why + [f"no 10-K vintage is public on {as_of}"]
     v = max(vs, key=lambda v: v["published"])
-    # from the emergence only the Successor's periods are years of the priced shares (the filings from the FY2009 10-K label them);
-    # before it every period of the issuer counts (those filings know no Successor)
-    issuer = "Successor" if as_of >= EMERGENCE else "issuer"
-    years = {k: p for k, p in v["periods"].items() if p["months"] == 12 and (as_of < EMERGENCE or p["issuer"] == "Successor")}
-    kept = {k: p["eps_diluted"] for k, p in years.items() if p["eps_diluted"] > 0}
+    # a Q4 release's full year extends the vintage from the release until the 10-K that reports the year (the vintage rule)
+    q4 = [a for a in facts.get("q4_actuals", []) if a["published"] <= as_of and str(a["fy"]) not in v["periods"]]
+    periods = {**v["periods"], **{str(a["fy"]): a["period"] for a in q4}}
+    tests = {**v.get("one_off_tests", {}), **{str(a["fy"]): a["one_off_test"] for a in q4 if "one_off_test" in a}}
+    # from the emergence only the priced shares' periods are years of them: the Successor's in the vintages that label the
+    # Predecessor and the Successor (FY2009-FY2013 10-Ks); in the later ones every period is the post-emergence company's
+    # ('priced_issuers'); before it every period of the issuer counts (those filings know no Successor)
+    priced = v.get("priced_issuers", ["Successor"])
+    issuer = (f"the {priced[0]}'s" if "priced_issuers" not in v else f"{priced[0]}'s") if as_of >= EMERGENCE else "the issuer's"
+    from_q4 = {str(a["fy"]) for a in q4}                 # a Q4 release's year (2014 on) is the post-emergence company's
+    years = {k: p for k, p in periods.items() if p["months"] == 12 and (as_of < EMERGENCE or p["issuer"] in priced or k in from_q4)}
+    # a positive year whose listed one-offs distort it, with no published figure excluding only them, is excluded (the AAPL FY2002
+    # test and its mirror); no year of 1999-2015 is positive, so the test arises first for FY2016
+    distorted = {k: t for k, t in tests.items() if k in years and t["distorted"] and t["figure_without_published"] is None}
+    kept = {k: p["eps_diluted"] for k, p in years.items() if p["eps_diluted"] > 0 and k not in distorted}
     if not kept:
-        losses = ", ".join(f"{k} {p['eps_diluted']:+.2f}" for k, p in sorted(years.items()))
+        losses = ", ".join(f"{k} {p['eps_diluted']:+.2f}" for k, p in sorted(years.items()) if k not in distorted)
         part = ", ".join(f"{k} ({p['issuer']}, {p['months']} month{'s' if p['months'] > 1 else ''}) {p['eps_diluted']:+.2f}"
-                         for k, p in sorted(v["periods"].items()) if p["months"] != 12)
-        why.append(f"no full year of positive EPS of the {issuer}'s shares in the {v['fy_label']} 10-K ({v['source']}, "
-                   f"{v['published']}): " + (f"years {losses}" if losses else "no full year")
-                   + (f"; not years: {part}" if part else ""))
+                         for k, p in sorted(periods.items()) if p["months"] != 12)
+        excl = "; ".join(f"{k} {years[k]['eps_diluted']:+.2f} excluded: the listed one-off benefit (${t['items_after_tax_m']:,.0f}M, "
+                         f"{t['item']}) exceeds the year's income without it (${t['income_without_m']:,.0f}M of "
+                         f"${t['income_attributable_m']:,.0f}M), and no filing publishes a figure excluding only it (the mirror of the "
+                         "AAPL FY2002 test)" for k, t in sorted(distorted.items()))
+        src = f"the {v['fy_label']} 10-K ({v['source']}, {v['published']})" + "".join(
+            f" and the Q4 {a['fy']} release ({a['source']}, {a['published']})" for a in q4)
+        why.append(f"no full year of positive EPS of {issuer} shares in {src}: " + (f"years {losses}" if losses else "no full year")
+                   + (f"; not years: {part}" if part else "") + (f"; {excl}" if excl else ""))
     return why
 
 
@@ -108,7 +127,7 @@ def main():
     print(f"{len(dates)} dates: {len(passing)} pass the gate, {len(refused)} refused; nothing written")
     if passing and not a.check:
         sys.exit(f"{passing[0]}: passes the gate, but the CHTR prints, guides, rule-T thresholds and signals are not transcribed; "
-                 "extend retro/facts/CHTR.json and decide the engine's signals first (retro/README.md, \"CHTR 2008-2009\")")
+                 "extend retro/facts/CHTR.json and decide the engine's signals first (retro/README.md, \"CHTR 2014-2017\")")
 
 
 if __name__ == "__main__":
