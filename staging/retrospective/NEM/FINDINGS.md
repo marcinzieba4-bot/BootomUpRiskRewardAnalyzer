@@ -132,3 +132,104 @@ should clear the 15%/yr hurdle or beat SPY.
 - **The kind drifted** as in 2008-2009: DURABLE then (no 10-K said "cyclical"), CYCLICAL in today's profile. Label only; it changes no
   price state, but a CYCLICAL reading would at least have named the trap.
 - Within-2-year drawdowns ran from -22% (early 2010) to -67% (2012 entries): CHEAP here meant neither safe nor cheap.
+
+# NEM 2014-2017 (hindsight)
+
+Patterns seen in `outcome.json` for the 209 weekly dates from 2014-01-03 to 2017-12-29. **Labels and hypotheses**: never feed them back into
+the method or the fact sheet. Scored only after the point-in-time build, validation outputs, README section and firewall result were
+committed and pushed (5f919e4a7, c5c57da35, 63603c600, 4e2f43ec8), on 2026-11-27; the 2008-2013 findings above were first opened then.
+Every date has its 6-month, 1-, 2- and 3-year horizons. Total returns include the dividends paid. "Call held" is `call_check_2y`: CHEAP
+should clear the 15%/yr hurdle or beat SPY; RICH should not.
+
+Overall: CHEAP 105 dates, median 2-year total return +59.1%, 83 cleared the hurdle, 94 beat SPY, 94 calls held; FAIR 6, +45.6%; RICH 98,
++5.9%, 10 cleared, 9 beat SPY, 88 calls held. Scenario landings at 2 years: BULL 145, BASE 46, BEAR 18.
+
+## 2014 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY (2014-01-03 to 2014-12-26) | 52 | +54.2% | -31.7% to +91.2% | 35 | 41 | -3.6% | 41 |
+| FY13E $3.78 (FY12's) (2014-01-03 to 2014-02-14) | 7 | -23.0% | -31.7% to +14.9% | 0 | 2 | -11.7% | 2 |
+| FY14E $3.78 (FY12's) (2014-02-21 to 2014-06-06) | 16 | +25.6% | +0.6% to +54.2% | 6 | 10 | -11.2% | 10 |
+| FY14E $3.76 (FY12's) (2014-06-13 to 2014-12-26) | 29 | +64.9% | +42.9% to +91.2% | 29 | 29 | +16.9% | 29 |
+| latest print Q3 2013 (2014-01-03 to 2014-02-14) | 7 | -23.0% | -31.7% to +14.9% | 0 | 2 | -11.7% | 2 |
+| latest print Q4 2013 (2014-02-21 to 2014-04-17) | 9 | +9.9% | +0.6% to +29.2% | 0 | 3 | -12.4% | 3 |
+| latest print Q1 2014 (2014-04-25 to 2014-07-25) | 14 | +50.4% | +18.4% to +64.6% | 13 | 14 | -7.9% | 14 |
+| latest print Q2 2014 (2014-07-31 to 2014-10-24) | 13 | +64.2% | +51.8% to +77.4% | 13 | 13 | +10.7% | 13 |
+| latest print Q3 2014 (2014-10-31 to 2014-12-26) | 9 | +73.4% | +67.4% to +91.2% | 9 | 9 | +68.5% | 9 |
+3y (52 dates with one): 21 of 52 cleared, 48 beat SPY; range +25.1% to +104.2%
+1y range -39.2 19.4 excess 2y -42.6 82.2
+drawdown -43.8 -43.8
+
+## 2015 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY (2015-01-02 to 2015-12-31) | 40 | +92.8% | +39.9% to +148.0% | 40 | 40 | +84.0% | 40 |
+| class FAIR, legacy tier BUY (2015-02-20 to 2015-04-17) | 3 | +45.6% | +29.9% to +47.8% | 2 | 3 | +37.2% | 1 |
+| class CHEAP, legacy tier ACCUMULATE (2015-04-24 to 2015-07-02) | 7 | +34.5% | +24.3% to +42.9% | 4 | 7 | +45.1% | 7 |
+| class FAIR, legacy tier WATCHLIST (2015-05-15 to 2015-05-15) | 1 | +23.2% | +23.2% to +23.2% | 0 | 1 | +30.9% | 1 |
+| class CHEAP, legacy tier WATCHLIST (2015-05-22 to 2015-05-29) | 2 | +26.1% | +25.6% to +26.1% | 0 | 2 | +34.1% | 2 |
+| FY14E $3.76 (FY12's) (2015-01-02 to 2015-02-13) | 7 | +55.9% | +39.9% to +77.3% | 7 | 7 | +44.1% | 7 |
+| FY15E $1.10 (FY14's) (2015-02-20 to 2015-12-31) | 46 | +83.2% | +23.2% to +148.0% | 39 | 46 | +78.8% | 44 |
+| latest print Q3 2014 (2015-01-02 to 2015-02-13) | 7 | +55.9% | +39.9% to +77.3% | 7 | 7 | +44.1% | 7 |
+| latest print Q4 2014 (2015-02-20 to 2015-04-17) | 9 | +47.8% | +29.9% to +56.1% | 8 | 9 | +55.6% | 7 |
+| latest print Q1 2015 (2015-04-24 to 2015-07-17) | 13 | +34.5% | +23.2% to +64.4% | 7 | 13 | +45.1% | 13 |
+| latest print Q2 2015 (2015-07-24 to 2015-10-23) | 14 | +123.8% | +92.0% to +148.0% | 14 | 14 | +103.8% | 14 |
+| latest print Q3 2015 (2015-10-30 to 2015-12-31) | 10 | +107.3% | +81.6% to +115.2% | 10 | 10 | +98.0% | 10 |
+3y (53 dates with one): 45 of 53 cleared, 53 beat SPY; range +44.8% to +127.9%
+1y range -30.5 175.9 excess 2y 5.9 114.6
+drawdown -43.8 -32.6
+
+## 2016 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY (2016-01-08 to 2016-01-29) | 4 | +126.9% | +102.7% to +140.0% | 4 | 4 | +100.8% | 4 |
+| class FAIR, legacy tier ACCUMULATE (2016-02-05 to 2016-02-05) | 1 | +56.4% | +56.4% to +56.4% | 1 | 1 | +46.7% | 1 |
+| class FAIR, legacy tier WATCHLIST (2016-02-12 to 2016-02-12) | 1 | +44.6% | +44.6% to +44.6% | 1 | 0 | +38.9% | 1 |
+| class RICH, legacy tier AVOID (2016-02-19 to 2016-12-30) | 46 | +3.9% | -26.0% to +59.0% | 10 | 9 | +7.6% | 36 |
+| FY15E $1.10 (FY14's) (2016-01-08 to 2016-02-12) | 6 | +115.1% | +44.6% to +140.0% | 6 | 5 | +97.0% | 6 |
+| FY16E $1.10 (FY14's) (2016-02-19 to 2016-12-30) | 46 | +3.9% | -26.0% to +59.0% | 10 | 9 | +7.6% | 36 |
+| latest print Q3 2015 (2016-01-08 to 2016-02-12) | 6 | +115.1% | +44.6% to +140.0% | 6 | 5 | +97.0% | 6 |
+| latest print Q4 2015 (2016-02-19 to 2016-04-15) | 9 | +46.7% | +36.3% to +59.0% | 9 | 8 | +36.5% | 0 |
+| latest print Q1 2016 (2016-04-22 to 2016-07-15) | 13 | +10.5% | -9.4% to +34.0% | 1 | 1 | +5.4% | 12 |
+| latest print Q2 2016 (2016-07-22 to 2016-10-21) | 14 | -18.3% | -26.0% to -4.3% | 0 | 0 | -5.5% | 14 |
+| latest print Q3 2016 (2016-10-28 to 2016-12-30) | 10 | +3.9% | -13.2% to +7.8% | 0 | 0 | +11.2% | 10 |
+3y (52 dates with one): 4 of 52 cleared, 4 beat SPY; range -11.2% to +98.1%
+1y range -21.7 110.8 excess 2y -61.1 86.7
+drawdown -32.6 -26.6
+
+## 2017 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID (2017-01-06 to 2017-12-29) | 52 | +7.5% | -8.0% to +25.8% | 0 | 0 | -1.2% | 52 |
+| FY16E $1.10 (FY14's) (2017-01-06 to 2017-02-17) | 7 | -5.7% | -8.0% to +3.4% | 0 | 0 | +1.6% | 7 |
+| FY17E $1.30 (FY14's) (2017-02-23 to 2017-12-29) | 45 | +8.5% | -5.4% to +25.8% | 0 | 0 | -1.4% | 45 |
+| latest print Q3 2016 (2017-01-06 to 2017-02-17) | 7 | -5.7% | -8.0% to +3.4% | 0 | 0 | +1.6% | 7 |
+| latest print Q4 2016 (2017-02-23 to 2017-04-21) | 9 | +5.1% | +1.6% to +11.3% | 0 | 0 | +3.3% | 9 |
+| latest print Q1 2017 (2017-04-26 to 2017-07-21) | 13 | +9.4% | -5.4% to +25.8% | 0 | 0 | +0.8% | 13 |
+| latest print Q2 2017 (2017-07-26 to 2017-10-20) | 13 | +7.3% | +2.5% to +12.9% | 0 | 0 | -8.3% | 13 |
+| latest print Q3 2017 (2017-10-27 to 2017-12-29) | 10 | +15.3% | +8.5% to +20.7% | 0 | 0 | -1.5% | 10 |
+3y (52 dates with one): 41 of 52 cleared, 44 beat SPY; range +24.0% to +107.3%
+1y range -22.3 24.7 excess 2y -30.2 -0.9
+drawdown -29.4 -29.4
+
+## What the 2014-2017 labels suggest (hypotheses only)
+
+- The class followed the anchor more than the business. FY12's $3.78 against a $19-27 stock made every 2014 date CHEAP at 5-7x; the
+  calls held from the Q1 2014 print on (gold's low and the 2015-2016 rally), but the seven January-February 2014 dates lost 23% (median)
+  and only 2 of 7 held: an anchor two years stale and from a year of $1,660 gold.
+- The fragile 2015 CHEAP calls (FY14's $1.10 against a ~20x median) were the best entries of the batch: median +83% at 2 years, 46 of 46
+  beat SPY. The sensitivity table shows the method only narrowly called them CHEAP (the adjusted-EPS reading, a five-year window or the
+  signals at BEAR each turn most of them FAIR or RICH); hindsight favours the narrow call, not a rule.
+- RICH from 2016-02-19 on (FY15 excluded, the stock tripling off its low on the same $1.10, then $1.30) held on 88 of 98 dates: the
+  2016-2017 entries returned +3.9% and +7.5% median at 2 years and none of 2017's cleared the hurdle or beat SPY. The misses are the
+  Q4 2015-print dates of February-April 2016 (+47% median, 0 of 9 held): the exclusion of FY2015 flipped the class just as the rally ran.
+- At 3 years the 2017 RICH dates mostly cleared (41 of 52) on the 2019-2020 gold run: a 2-year RICH call on a gold miner is a
+  timing call against the metal, not a valuation one.
+- Profile drift again: DURABLE then (no 10-K says "cyclical"), CYCLICAL in today's profile. Label only.
+- Hypothesis for a later method version (never this one): for a miner whose GAAP years swing between write-down losses and thin profits,
+  the rollover anchor goes stale for years at a time (FY12 to February 2015, FY14 to the end of 2017); an anchor rule that tracks the
+  metal price or production economics would be a new rule, decided before scoring, with a full re-run.

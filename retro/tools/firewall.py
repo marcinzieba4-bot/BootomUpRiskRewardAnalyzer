@@ -1429,7 +1429,8 @@ try:
                  fcf_b=99.0, fcf_note="PLANTED", cash_return_text="PLANTED", groups=[["PLANTED", 1, -99]], groups_basis="PLANTED",
                  margin_signal_name="PLANTED", pe_window_start="2099-01-01", revenue_usd_b={**v["revenue_usd_b"], "2099": 0.01},
                  diluted_shares_m={**v["diluted_shares_m"], "2099": 1.0},
-                 eps_excluded={**v.get("eps_excluded", {}), "2098": "PLANTED"}, eps_first_excluded={"2097": "PLANTED"})
+                 eps_excluded={**v.get("eps_excluded", {}), "2098": "PLANTED"}, eps_first_excluded={"2097": "PLANTED"},
+                 climate_words="PLANTED")   # the ENERGY_TRANSITION reading's 10-K words (NEM 2014-2017)
         for g in f["guides"]:
             if g.get("doc") == "PLANTED":
                 for k in ("eps_guide", "rev_guide", "rev_guide_label", "volume_guide"):
