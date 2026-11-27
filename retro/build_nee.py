@@ -30,8 +30,14 @@ taxonomy_eras.json is live for an electric utility in 2008-2009 (ENERGY_TRANSITI
 and the builder refuses events, and any date from that live date, until a theme encoding is decided.
 
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
-is the first trading day after it (every release of the period came before the open on a weekday that has a next trading day in
-its week, so no print meets its own day's close).
+is the first trading day after it. Every release came before the open; those of 2007-2009 on a weekday with a next trading day in its
+week, while six of 2010-2013 came on a Friday (2010-07-23, 2010-10-29, 2011-04-29, 2011-11-04, 2012-01-27, 2013-11-01), so those weeks
+are dated the release day and the print meets that day's close ("day of the print, public before the open").
+
+NEE 2010-2013 (retro/README.md): the change of name to NextEra Energy, Inc. applies from the 8-K of 2010-05-24 that states it until a
+vintage carries it ('company_names'), and NYSE: NEE from its announced effective date, 2010-06-23 ('listings', the SPGI encoding);
+from CLOUD's live date (2012-10-30) the 'why' quotes every live theme's registered scope (the UNH and CB wording), none of which names
+an electric utility; the Q1 2013 release's EPS includes a gain from discontinued operations, kept as published (its note says so).
 
 Output goes to staging/retrospective/NEE until the series is added to the archive (--out archive/retrospective/NEE).
 
@@ -149,8 +155,6 @@ def build(as_of, facts, raw, spx, engine, out):
     events = [e for e in facts["events"] if e["published"] <= as_of]
     if events:
         sys.exit(f"{as_of}: the NEE builder has no encoding for event kinds {sorted({e['kind'] for e in events})}; decide one first")
-    if [c for c in facts["company_names"] if c["published"] <= as_of]:
-        sys.exit(f"{as_of}: a change of company name needs its encoding first")
     public = [p for p in facts["prints"] if p["published"] <= as_of]
     for p in public:                               # a print public on AS_OF must match its raw figures
         check_print(p)
@@ -218,8 +222,8 @@ def build(as_of, facts, raw, spx, engine, out):
     divs.append((h["published"], h["dividend_annual"], h["dividend_note"], None))
     _, dividend, dividend_note, dividend_src = max(divs, key=lambda x: x[0])
 
-    # ── the listing of the date ──
-    lst = [x for x in facts["listings"] if x["published"] <= as_of]
+    # ── the listing of the date: from its effective date, once published (NYSE: NEE from 2010-06-23) ──
+    lst = [x for x in facts["listings"] if x["published"] <= as_of and x["effective"] <= as_of]
     assert lst, (as_of, "no listing in scope")
     exchange, listed = lst[-1]["exchange"], lst[-1]["symbol"]
 
@@ -255,8 +259,15 @@ def build(as_of, facts, raw, spx, engine, out):
     stage, watch, factors = "none", [], []
     sig_name, trigger = "Disruption theme: none live for a utility", "No disruption theme is live for an electric utility"
     theme_summary = "no disruption theme is live for an electric utility on this date"
-    why = h["why"] + ("; no disruption theme in the registry is live for an electric utility on this date, so the watch list is empty and "
-                      "the 10-K's words on climate change stay here (the PEP obesity rule)")
+    live = sorted(((t["live_from"], k, t["scope"]) for k, t in retro_tool.load_taxonomy()["themes"].items() if t["live_from"] <= as_of))
+    if [k for _, k, _ in live] == ["OFFSHORE"]:
+        why = h["why"] + ("; no disruption theme in the registry is live for an electric utility on this date, so the watch list is empty and "
+                          "the 10-K's words on climate change stay here (the PEP obesity rule)")
+    else:   # from CLOUD's 2012-10-30: every live theme with its registered scope (the UNH and CB 2014-2017 wording; NEE 2010-2013)
+        scopes = ", ".join(f"{k} {'is scoped to' if i == 0 else 'to'} '{sc}'" for i, (_, k, sc) in enumerate(live))
+        why = h["why"] + ("; no disruption theme in the registry is live for an electric utility on this date (of the live themes, "
+                          f"{scopes}: none names an electric utility), so the watch list is empty and the 10-K's words on climate change "
+                          "and greenhouse gas emissions stay here (the PEP obesity rule)")
     kind, pit_risk = "DURABLE", 2
     if g:
         cat3 = (f"(3) The {fy_now} adjusted EPS outlook ({g['doc']}) — display only: the adjusted basis also removes recurring "
@@ -275,9 +286,11 @@ def build(as_of, facts, raw, spx, engine, out):
         tag = (f"(day of the {same_day[-1]['quarter']} print, public before the open)" if "before the open" in rt else
                f"(day of the {same_day[-1]['quarter']} print, released during the session)")
 
-    company = h["company"]
+    # a name changed since the vintage applies from its publication, until a later vintage carries it (the SPGI encoding)
+    renames = [n for n in facts["company_names"] if h["published"] < n["published"] <= as_of]
+    company = renames[-1]["name"] if renames else h["company"]
     ids = (list(h["sources"]) + [p["source"] for p in prints] + [public[i - 1]["source"]] + ([dividend_src] if dividend_src else [])
-           + [lst[-1]["source"]] + split_ids + ([g["source"]] if g else []))
+           + [lst[-1]["source"]] + split_ids + ([g["source"]] if g else []) + [n["source"] for n in renames])
     sources = [dict(id=i, **facts["sources"][i]) for i in dict.fromkeys(ids)]
     sources.append({"id": "W0", "published": as_of, "title": f"Yahoo Finance daily prices, {listed} and S&P 500, truncated at AS_OF",
                     "url": f"https://finance.yahoo.com/quote/{SYMBOL}/history",
