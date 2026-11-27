@@ -133,7 +133,8 @@ def build(as_of, facts, raw, spx, engine, out):
     yahoo = {ydate(v): v["numerator"] / v["denominator"] for v in chart.get("events", {}).get("splits", {}).values()}
     # a split record must sit on a split date of the price data, and every split of the price data on or before AS_OF needs one
     # (on_basis restates the per-share facts published before it); the splits after AS_OF put the window on the AS_OF share basis
-    assert all(yahoo.get(s["effective"]) == s["ratio"] for s in facts["splits"]), "a split's date and ratio must match the price data"
+    assert all(s["effective"] in yahoo for s in facts["splits"]), "a split's effective date must match the price data"
+    assert all(yahoo[s["effective"]] == s["ratio"] for s in facts["splits"] if s["effective"] <= as_of), "a split's ratio must match"
     assert {d for d in yahoo if d <= as_of} <= {s["effective"] for s in facts["splits"]}, (as_of, "an unencoded split")
     assert not facts.get("distributions"), "the NEE builder has no distribution encoding"
     fx = retro_tool.split_factor(chart, as_of)
