@@ -28170,7 +28170,11 @@ Controls and checks (before any outcome):
 - **Forward references:** 0 over the 71 facts of 2014-2017 (over all 235, the 9 the tool lists are 2008-2013 method words, "the PEP 2008
   core rule", and the listing notes, unchanged). **Self-text scan:** 0 misses of 859 tokens over 71 facts, against the 90 dated filings.
 - **Regression:** no shared code changed beyond the firewall's NEE plant; the 314 dates of 2008-2013 rebuild byte-identical.
-- **Firewall:** see below.
+- **Firewall** (run after the build, validation outputs and README section were committed and pushed, before any 2014-2017 outcome):
+  it passes at all 11 cutoffs above (each print and 10-K date that changes the anchor or the vintage, the FY2017 Friday print,
+  ENERGY_TRANSITION's live date and 2018-01-01: 317 to 522 dates each, the 2008-2013 dates included), 0 files changed and no planted text,
+  with the 2008-2013 plant (a later print with its full-year actuals, display-only guides, a vintage whose texts, figures and transition
+  quotes are planted, a dividend, a split, a listing symbol, a company name and prices from the cutoff multiplied by 10).
 
 Seen in the build (method behaviour, not tuned):
 - **Totals: RICH 189, CHEAP 13, FAIR 6.** 2014: RICH 51. 2015: RICH 34, CHEAP 13, FAIR 6. 2016: RICH 52. 2017: RICH 52. Legacy tiers: AVOID
