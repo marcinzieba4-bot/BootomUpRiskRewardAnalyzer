@@ -27780,23 +27780,50 @@ filings go in the session scratchpad, not the repo (every source's URL is in the
 1. **List the filings** from `data.sec.gov/submissions/CIK##########.json` (older years are in the paginated
    `filings.files`). Keep `acceptanceDateTime`: it is UTC, and a filing accepted after 16:00 ET counts from the
    next trading day. Read every 8-K in the period (items 2.02, 7.01, 8.01) for guidance changes, not only earnings.
+   `python3 retro/tools/edgar.py index CIK <dir>` writes `<dir>/allrows.json` (every page), and
+   `edgar.py list <dir> --from START --to END --forms 8-K 10-Q 10-K` prints them with their items.
 2. **Download** with a generic `User-Agent` (never the owner's email), convert with
-   `python3 -I retro/tools/html2rows.py <file.htm>`.
+   `python3 -I retro/tools/html2rows.py <file.htm>`. `edgar.py fetch CIK <dir> --from START --to END --forms ...`
+   does both: full submissions into `<dir>/tenk|tenq|eightk|other/<ACC>.txt`, split into `<ACC>/<TYPE>__<file>` with a
+   `.rows.txt` beside each HTML document (`edgar.py split` on a file already downloaded). Keep `<dir>` in the scratchpad.
 3. **Note the release time** (the conference-call time in the release): before the open or after the close.
+   `edgar.py when <dir> ACC --ticker T` prints the acceptance time in ET and the date the fact gets, in the words the
+   fact sheets' `filed` fields use.
 4. **Transcribe** prints, the history vintage and 10-K theme events into `retro/facts/ACN.json`. Rules that
    recur: numbers only (a guide restated in words keeps the last numeric range), company figures excluding
    one-offs when published, bookings growth in local currency derived from the FX impact the release states,
    group dollar weights year to date with the latest quarter's LC growth, the ten fiscal years to the latest one.
+   A generator script beats hand transcription: it reads each raw figure from its own row by label, computes every rate,
+   asserts each quotation in its own filing and writes the verbatim checklist. `retro/generators/schw/` is a worked
+   example (gen_schw.py's docstring lists the downloads); commit the generator with the sheet, so a later session can regenerate the
+   sheet byte for byte from the filings and extend it without retyping.
 5. **Check every value word for word** with `python3 -I retro/tools/verbatim.py checklist.json`, each string
    against its own filing.
 6. **Regression:** rebuild every earlier range; `git status archive` must show nothing.
 7. **Build** the new range (`build_acn.py --weekly START END`; start on the Monday after the last built week),
    then `retro_tool.py run` and `retro_tool.py outcome` on each new date, `retro_tool.py index` and `series ACN`.
 8. **Firewall:** commit, then `python3 retro/tools/firewall.py <first day after the range>` must report 0 changes.
-   Controls: alter one value of each new print or vintage and check that exactly the dates after its release change.
+   Controls: alter one value of each new print or vintage and check that exactly the dates after its release change:
+   `python3 retro/tools/controls.py T START END` (in memory, nothing on disk changes; the builders with the common
+   `build(as_of, facts, raw, spx, engine, out)`; exits non-zero if a control changes an earlier date).
 9. **Scan** the new outputs for years after the as-of date (other than FY labels, SEC accession numbers and the
-   `generated` stamp), anachronistic vocabulary, and facts from the next print appearing early.
+   `generated` stamp), anachronistic vocabulary, and facts from the next print appearing early. Three scans take any
+   fact sheet (`retro/tools/factwalk.py` reads every dated fact, nested restatements and `*_later` fields as facts of
+   their own dates):
+   - `python3 retro/tools/leak_scan.py T [--from START]`: no model holds a string or 4-digit figure of a later fact
+     (hits must be read: SCHW's three were trading-day counts in the P/E-window comment);
+   - `python3 retro/tools/forward_refs.py T [--from START]`: the author's own words in a fact (quotations, rows and
+     `next_print` left out) name no later quarter, year or date;
+   - `python3 -I retro/tools/selftext.py T --filings <dir> [--from START]`: every capitalized name, dollar figure and
+     year in a fact's own words is in a filing published by its date (method words and tickers pass; `--allow` more).
+   They were checked on SCHW (0 leaks, 0 forward references, 0 misses, each catching a planted later fact). Run on the
+   other sheets, `forward_refs.py` also lists words copied from filings outside single quotes and dates the filings
+   state themselves (notes due 2018, buybacks through 2009): review aids, not findings, and not yet reviewed there.
 10. **Commit and push**; report the judgement calls plainly.
+
+Shell pitfall: write any text with a `$` in it (findings, README sections, notes) through a quoted heredoc (`<<'EOF'`)
+or a file, never an unquoted one. Unquoted, the shell expands `$0`, `$1`, ... inside it: the SCHW findings once lost
+"$0.68" to "/bin/bash.68" and needed a corrective commit. And check each step's exit status before a chained `git commit`.
 
 **A new ticker** needs its own fact sheet. The engine is generic except for its
 signal names and thresholds, so give it a sibling template if the business needs
