@@ -29464,7 +29464,7 @@ Controls and checks (before any outcome):
 - **Years after the as-of date and anachronisms:** none in the 209 models, reports and analyses other than the FY horizon labels.
 - **`retro_tool run`:** passes on all 209 dates, with no warnings.
 - **Firewall** (run after the build was committed, before any outcome): passes at 50 cutoffs (each fact date of 2014-2017 and the day
-  after it, 2015-12-12 and 2018-01-01; listed above), with 0 files changed and no planted text (110 to 309 earlier dates each). The LYB plant now also plants the watch list's 10-K words.
+  after it, 2015-12-12 and 2018-01-01; listed above), with 0 files changed and no planted text (104 to 309 earlier dates each). The LYB plant now also plants the watch list's 10-K words.
 
 Seen in the build (method behaviour, not tuned):
 - **Totals: RICH 183, CHEAP 21, FAIR 5.** RICH on all 52 dates of 2014 but one (FAIR 2014-12-12) and all 53 of 2015; CHEAP on 2016-02-03
@@ -29498,6 +29498,8 @@ Judgement calls that could carry hindsight:
 - ENERGY_TRANSITION in scope through the Refining segment and the 10-Ks' own GHG sentence (text only, no class moves);
 - CYCLICAL on the 10-Ks' own words;
 - the non-earnings 8-Ks read by their item text and exhibits for guided numbers only.
+
+The hindsight results for 2014-2017 are in `staging/retrospective/LYB/FINDINGS.md` ("LYB 2014-2017"): hypotheses, never inputs.
 
 ## CHTR (Charter Communications): the thirty-eighth ticker, set up in staging, no date built
 
