@@ -39,6 +39,14 @@ reported (None), scores BASE and prints n/r through schw2_engine.py.tmpl, the No
 encoding), with DATs in the text only. From EV's live date the 'why' names electric vehicles among the subjects the 10-Ks were searched
 for; from CRYPTO's (2020-10-21), whose scope names banks and exchanges, it says no 10-K names cryptocurrency, blockchain, digital assets or
 a distributed ledger, so the watch list stays empty (the SPGI 2018-2021 reading).
+(SCHW 2022-2026) No new encoding of a number: Item 6 is reserved from the FY2021 10-K, so each vintage takes three years from the MD&A
+overview and the statements of income and keeps earlier years from the latest earlier vintage; GAAP every year (the releases' adjusted
+EPS also removes the recurring amortization of acquired intangibles); the rate increases to $0.20, $0.22, $0.25, $0.27 and $0.32 a
+quarter are 'dividends' facts; DATs only, so every date uses schw2_engine.py.tmpl. Text only: from the FY2021 10-K the cloud words are
+Schwab's own reliance on cloud technologies ('cloud_reading'); GENAI and GLP1 join the live themes the 'why' names, and the FY2023-FY2025
+10-Ks' artificial intelligence words are quoted ('ai_words'; GENAI's scope names no broker or bank); from the FY2025 10-K, which names
+digital assets among industry and competitive trends ('crypto_quote') and Schwab's own planned spot crypto trading ('crypto_own_quote'),
+CRYPTO is on the watch list, company-acknowledged with no market read, with a factor pair that nets to zero (the JPM and V encodings).
 The kind is DURABLE: the 10-Ks tie results to markets, rates and investor engagement but do not call the business cyclical (the
 JPM, LOW and SHW reading). No disruption theme in taxonomy_eras.json is live for a securities broker and bank in 2008-2009, so the
 builder refuses events until a theme encoding is decided, and it refuses guides, listings, splits and company names until their
@@ -316,23 +324,63 @@ def build(as_of, facts, raw, spx, engine, out):
         # from the FY2015 10-K, which names cloud computing only in an accounting standard ('cloud_words'), it quotes those words
         # (the UNH 'cloud_words' and LMT FY2016 readings); with OFFSHORE and CLOUD alone the clause is as before
         words = {"OFFSHORE": "offshore delivery", "CLOUD": "cloud", "ECOMMERCE": "e-commerce", "STREAMING": "streaming",
-                 "ENERGY_TRANSITION": "decarbonisation", "EV": "electric vehicles"}
+                 "ENERGY_TRANSITION": "decarbonisation", "EV": "electric vehicles", "GENAI": "artificial intelligence",
+                 "GLP1": "GLP-1 drugs"}
         live_k = [k for _, k, _ in live]
         if live_k == ["OFFSHORE", "CLOUD"]:
             none10k = "no 10-K names cloud or offshore delivery"
         else:
             assert set(live_k) <= set(words) | {"CRYPTO"}, (as_of, "a live theme the SCHW 10-Ks were not searched for", live_k)
-            named = [words[k] for k in live_k if k != "CRYPTO" and not (k == "CLOUD" and h.get("cloud_words"))]
+            named = [words[k] for k in live_k if k != "CRYPTO" and not (k == "CLOUD" and h.get("cloud_words"))
+                     and not (k == "GENAI" and h.get("ai_words"))]
             none10k = "no 10-K names " + ", ".join(named[:-1]) + " or " + named[-1]
+            tenk = h['fy_label'].replace('FY', 'FY20')
             if h.get("cloud_words"):
-                none10k += (f", and the {h['fy_label'].replace('FY', 'FY20')} 10-K names cloud computing only in an accounting standard "
+                # (SCHW 2022-2026) from the FY2021 10-K the cloud words are Schwab's own reliance on cloud technologies
+                # ('cloud_reading'); before it, an accounting standard
+                none10k += (f", and the {tenk} 10-K {h.get('cloud_reading', 'names cloud computing only in an accounting standard')} "
                             f"('{h['cloud_words']}'), not as a way its own business is delivered or displaced")
-        if "CRYPTO" in live_k:
+            if h.get("ai_words"):
+                # (SCHW 2022-2026) GENAI (live 2022-11-30) is scoped to software, IT services, professional information, search,
+                # education and mobility, none of them brokerage or banking; the FY2023-FY2025 10-Ks name artificial intelligence as a
+                # tool of fraud and cyber attack and, in FY2025, among industry and competitive trends ('ai_words', text only: the UNH
+                # and JPM 2022-2026 readings)
+                none10k += (f", and the {tenk} 10-K names artificial intelligence only as " +
+                            ("a tool of external fraud and cyber attack and among its industry and competitive trends" if len(h["ai_words"]) > 1
+                             else "a tool of external fraud and cyber attack") + " (" +
+                            " ".join(f"'{w}'" for w in h["ai_words"]) + "), not as a substitute for its own services")
+        cr_q = h.get("crypto_quote") if "CRYPTO" in live_k else None
+        if cr_q:
+            # (SCHW 2022-2026) the FY2025 10-K names digital assets among industry and competitive trends ('crypto_quote') and Schwab's
+            # own planned spot crypto trading ('crypto_own_quote'). CRYPTO's scope names banks and exchanges, so the current 10-K's
+            # words put it on the watch list, company-acknowledged, with no market read (the JPM encoding), and the offering of its own
+            # adds a factor pair that nets to zero (the V encoding); the theme signal stays at 2/4, so only text changes
+            cr = retro_tool.load_taxonomy()["themes"]["CRYPTO"]
+            val_word = "a premium" if pe_now_pctl >= 70 else "a discount to its own history" if pe_now_pctl <= 30 else "near its own median"
+            own = h.get("crypto_own_quote")
+            stage = "crypto"
+            watch = [{"theme": "CRYPTO", "status": "live, company-acknowledged; no market read",
+                      "reason": (f"Live: Schwab's own {tenk} 10-K lists '{cr_q}'" + (f" It names a crypto offering of its own: '{own}'"
+                                                                                      if own else "") +
+                                 f" The stock trades at {close / eps_now:.1f}x {fy_e_s} — {val_word}. Re-file as DISRUPTION_EXPOSED "
+                                 "(CRYPTO) only if dated evidence shows the market pricing crypto disintermediation of Schwab's "
+                                 "brokerage and banking specifically.")}]
+            if own:
+                factors = [(f"Crypto: Schwab's own planned spot crypto trading ({tenk} 10-K)", 0.2, 0.10),
+                           (f"Crypto competition ({tenk} 10-K): digital assets among industry and competitive trends", -0.2, 0.10)]
+            sig_name = "Crypto: disintermediation of brokerage and banking"
+            trigger = "Investors move to crypto platforms that need no broker or bank faster than Schwab offers the assets itself"
+            theme_summary = "crypto is live and company-acknowledged; no dated evidence ties the multiple to it"
+            why = (head + "; of the live themes in taxonomy_eras.json, " + scopes + ": CRYPTO names banks and exchanges, and the "
+                   f"{tenk} 10-K names digital assets among Schwab's industry and competitive trends and a crypto trading offer of its "
+                   f"own, so CRYPTO is on the watch list; of the rest none names brokerage or banking, and {none10k}; CRYPTO is live "
+                   f"(from {cr['live_from']}): these words put it on the watch list, company-acknowledged, with no dated evidence that "
+                   "the market prices it for Schwab")
+        elif "CRYPTO" in live_k:
             # (SCHW 2018-2021) CRYPTO's registered scope names banks and exchanges, but no 10-K of these years names cryptocurrency,
             # blockchain, digital assets or a distributed ledger, so nothing dated ties the theme to Schwab: no watch item (the SPGI
             # 2018-2021 reading; JPM's and V's watch items rest on their own 10-Ks' crypto words). Text only either way: the JPM
             # encoding adds no factor pair, so the theme signal stays at 2/4
-            assert not h.get("crypto_quote"), (as_of, "a crypto quote needs the JPM encoding")
             why = (head + "; no disruption theme in taxonomy_eras.json has dated evidence for a securities broker and bank on this date "
                    f"(of the live themes, {scopes}: CRYPTO alone names banks and exchanges, and no 10-K names cryptocurrency, "
                    f"blockchain, digital assets or a distributed ledger, so nothing dated ties it to Schwab; of the rest none names "

@@ -162,7 +162,8 @@ client assets, trades, net new assets, margins, expense gap, quarter EPS, notes 
 actuals for the year after the latest vintage (or Q4 print) before CUTOFF, a later Q4 print whose full-year actuals exclude its own
 year, and a later vintage excluding a year with planted texts, figures, client assets, exchange, kind and window start, and from SCHW
 2010-2013 a later restatement of the last print before CUTOFF and planted outlook words, and from SCHW 2018-2021 planted daily average
-trades (DATs) on the print and an acquisition note on the vintage (the guide, dividend, listing and company name
+trades (DATs) on the print and an acquisition note on the vintage, and from SCHW 2022-2026 a planted cloud reading, AI words and crypto
+words on the vintage (the guide, dividend, listing and company name
 every fact sheet with those lists gets, too); GOOG: a print whose revenues, margins, opex and receivables gaps, quarter EPS, cash,
 notes and raw figures are absurd, with absurd full-year actuals for the year after the latest vintage before CUTOFF, a later Q4 print
 whose full-year actuals exclude its own year, a later 10-Q restatement of the last print before CUTOFF with absurd figures, and a later
@@ -920,6 +921,9 @@ try:
                  pe_window_start="1990-01-02", kind="CYCLICAL", margin_signal_name="PLANTED", eps_first_excluded={"1990": "PLANTED"})
         v["cloud_words"] = "PLANTED"       # (SCHW 2014-2017) a later 10-K's cloud words, the theme clause's text
         v["acquisition_note"] = "PLANTED"  # (SCHW 2018-2021) a later 10-K's acquisition note (TD Ameritrade), the history comment
+        # (SCHW 2022-2026) a later 10-K's cloud reading, artificial intelligence words and crypto words (the CRYPTO watch-list text and
+        # factor pair)
+        v.update(cloud_reading="PLANTED", ai_words=["PLANTED"], crypto_quote="PLANTED", crypto_own_quote="PLANTED")
         # (SCHW 2010-2013) a later restatement of the last print before CUTOFF with absurd figures (a real one public before CUTOFF
         # stays; 'restated' is a list in publication order), and outlook words for every year on the planted prints
         p0 = max((p for p in f["prints"] if p["published"] < cutoff), key=lambda p: p["published"])
