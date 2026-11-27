@@ -23,9 +23,9 @@ touching either directory.
   outcomes or findings enters another's models. UNP (2008-2026 so far), LOW (2008-2026 so far), AAPL (2008-2026 so far),
   NKE (2008-2026 so far), AVGO (from its 2009-08-06 listing to 2026-10-30 so far), PEP (2008 to 2026-10-30 so far), MSFT
   (2008 to 2026-10-30 so far), XOM (2008 to 2026-10-30 so far), SHW (2008 to 2026-11-06 so far), WMT (2008 to 2026-11-06 so far), RCL (2008 to 2026-11-06 so far), MAR (2008 to 2026-11-03 so far), BKR (2008 to 2017-06-30, then 2019-02-01 to 2026-11-06 so far), PFE (2008 to 2026-11-04 so far), CMCSA (2008 to 2026-11-06 so far), CAT (2008 to 2026-11-06 so far), BMY (2008 to 2026-11-06 so far), NVDA (2008 to 2026-11-06 so far), F (2008-01-04 to 2026-11-06 so far; 2022-01-07 onward was built first at the owner's request, and dates before 2022 are an early era with its
-  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far), SPGI (2008-01-04 to 2026-11-20 so far), CB (2008-01-04 to 2026-11-20 so far), LLY (2008-01-04 to 2026-11-20 so far), UNH (2008-01-04 to 2026-11-20 so far) and CRM (2008-01-04 to 2021-12-31 so far) sit in `staging/retrospective/` until the owner adds
+  own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far), SPGI (2008-01-04 to 2026-11-20 so far), CB (2008-01-04 to 2026-11-20 so far), LLY (2008-01-04 to 2026-11-20 so far), UNH (2008-01-04 to 2026-11-20 so far), CRM (2008-01-04 to 2021-12-31 so far) and SCHW (2008-01-04 to 2009-12-31 so far) sit in `staging/retrospective/` until the owner adds
   them to the archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM", "SHW", "WMT", "RCL", "MAR", "BKR", "PFE", "CMCSA", "CAT",
-  "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG", "JPM", "V", "SPGI", "CB", "LLY", "UNH", "CRM"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py`, `mu_signal_model.py`, `v_signal_model.py`, `spgi_signal_model.py` and `lly_signal_model.py` (other branches) files
+  "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG", "JPM", "V", "SPGI", "CB", "LLY", "UNH", "CRM", "SCHW"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py`, `mu_signal_model.py`, `v_signal_model.py`, `spgi_signal_model.py` and `lly_signal_model.py` (other branches) files
   and today's profiles in `data/business_profiles.json` (NVDA's, SO's, V's, SPGI's, CB's, LLY's, UNH's and CRM's included) are 2026 analyses: never inputs to a retrospective. AVGO did not trade
   before its IPO, so its series starts at the listing (the listing and bounds rules of method r2). BKR's 2008 to 2017-06-30 dates are Baker
   Hughes Incorporated, listed as BHI: BKR is only the series key (and Yahoo's symbol for the history); the models print BHI. Its dates from
@@ -416,5 +416,17 @@ touching either directory.
   and CRYPTO out of scope; the class follows the last full year's EPS: RICH 115, CHEAP 94 (2019-03-08 to 2020-02-28 on FY19's $1.43,
   2021-03-19 on on FY21's $4.38); FY2021 excluded by the mirror test moves all 42 CHEAP dates of 2021 to RICH, the batch's largest
   call; decided in the session that scored 2013-2017, disclosed (retro/README.md, "CRM 2018-2021").
+  SCHW (The Charles Schwab Corporation, Nasdaq: SCHW), the first securities broker, is a full-data batch: `www.sec.gov` accepted a plain
+  client name (no contact address) in its session. Revenue is net revenues, continuing operations (U.S. Trust discontinued from the FY2006
+  10-K; the earlier 10-Ks include it, a seam in rule T); EPS is GAAP diluted EPS from continuing operations (no filing publishes a figure
+  excluding one-offs on that basis; Q3 2008's $.04 of securities charges stay in, FY08 $1.06); FY2002 is excluded by the AAPL test ($287M
+  of excluded items after tax against $117M of continuing income), so the history and the P/E window start with FY2003; no filing guides
+  revenue, EPS or a margin (the 2009 expense goal of cuts of 7 to 8% of 2008's spending is a cost component, unencoded), so the last full
+  year's EPS stands and BASE is the latest quarter's revenue growth plus the buyback; the earnings 8-Ks were accepted during the session,
+  so each print keeps its day, and the Friday Q4 2008 print dates its own week (the UNP Good Friday rule, "released during the session");
+  the signals are net revenue, client assets, the expense gap, daily average revenue trades and the pre-tax margin, from the FY2006 10-K's
+  own key metrics, with Schwab's rule-T thresholds over 1997-2006; dividends $0.05 and $0.06 a quarter from the 10-Qs that first state them;
+  DURABLE, no live theme; CHEAP and BUY on all 105 dates, and no tested encoding but the signals at BEAR (13 classes) moves a class
+  (retro/README.md, "SCHW").
 - **Never use the owner's personal email** in request headers to external
   services (SEC asks for a contact in the User-Agent).
