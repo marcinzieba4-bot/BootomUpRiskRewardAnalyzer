@@ -97,10 +97,10 @@ miss the hurdle and lag SPY) and FAIR (it should land within 15pp of SPY). Over 
 | latest print Q3 2010 (2010-10-15 to 2010-12-31) | 12 | -11.3% | -17.2% to -6.9% | 0 | 0 | -16.4% | 0 |
 
 - **Nothing held but RICH.** No 2010 entry cleared the hurdle or beat SPY over two years (-34.7% to +6.8%, 27.6 to 60.8pp behind it). The
-  11 RICH dates of January-April 2010 (on FY09E /bin/bash.68 at 27-29x) returned -30.6% to -15.0% and held; the 25 CHEAP and 16 FAIR dates
-  failed. Over three years 22 of the 52 cleared the 52.1% hurdle (-16.8% to +70.1%), the later 2010 entries.
-- **What 2010 assumed, and what came:** FY10E stood at FY09's /bin/bash.68 on every date from the Q4 2009 print; FY2010 came in at /bin/bash.38 (the
-  YieldPlus, money market fund and credit card charges in) and FY2011 at /bin/bash.70.
+  11 RICH dates of January-April 2010 (on FY10E $0.68, FY09's, at 27-29x) returned -30.6% to -15.0% and held; the 25 CHEAP and 16 FAIR
+  dates failed. Over three years 22 of the 52 cleared the 52.1% hurdle (-16.8% to +70.1%), the later 2010 entries.
+- **What 2010 assumed, and what came:** FY10E stood at FY09's $0.68 on every date from the Q4 2009 print; FY2010 came in at $0.38 (the
+  YieldPlus, money market fund and credit card charges in) and FY2011 at $0.70.
 
 ## 2011 (52 dates)
 
@@ -119,11 +119,11 @@ miss the hurdle and lag SPY) and FAIR (it should land within 15pp of SPY). Over 
 | latest print Q2 2011 (2011-07-19 to 2011-10-14) | 13 | +83.9% | +45.6% to +97.9% | 13 | 13 | +40.6% | 0 |
 | latest print Q3 2011 (2011-10-19 to 2011-12-30) | 11 | +116.9% | +82.7% to +135.7% | 11 | 11 | +65.5% | 4 |
 
-- **RICH held on the first half, not on the second.** The 28 RICH dates (January-August 2011, on FY11E /bin/bash.38, FY10's GAAP figure with the
-  charges in, at 28-51x) returned -13.0% to +69.6% over two years, 22 of them behind SPY. The FAIR dates of the second half (the price
-  falling to 0.77 while the class still read FY10's /bin/bash.38) returned up to +126.8%, so FAIR missed on the upside; the 4 CHEAP dates of
-  November-December 2011 returned +121.1% to +135.7%.
-- **The batch's largest call sits here.** Read at a derived /bin/bash.65 without the charges, the sensitivity run moves 67 classes, mostly 2011's
+- **RICH held on the first half, not on the second.** The 28 RICH dates (January-August 2011, on FY11E $0.38, FY10's GAAP figure with the
+  charges in, at 36-51x, the 67th-99th percentile) returned -13.0% to +69.6% over two years, 22 of them behind SPY. The 20 FAIR dates (two
+  in January, the rest from mid-July, $11.17-18.83 at 26-40x as the price fell) returned up to +126.8%, so FAIR missed, mostly on the
+  upside; the 4 CHEAP dates of November-December 2011 returned +121.1% to +135.7%.
+- **The batch's largest call sits here.** Read at a derived $0.65 without the charges, the sensitivity run moves 67 classes, mostly 2011's
   RICH and FAIR toward CHEAP. Hypothesis, not a rule: when the last full year carries large charges that the company reconciles only in
   dollars, the rollover rule's GAAP year can overstate the multiple; test it across tickers whose non-GAAP figures come without a
   per-share line, never fit it to SCHW.
@@ -142,9 +142,9 @@ miss the hurdle and lag SPY) and FAIR (it should land within 15pp of SPY). Over 
 | latest print Q2 2012 (2012-07-18 to 2012-10-12) | 13 | +117.6% | +106.3% to +137.8% | 13 | 13 | +91.0% | 13 |
 | latest print Q3 2012 (2012-10-16 to 2012-12-28) | 11 | +117.4% | +95.0% to +129.7% | 11 | 11 | +98.3% | 11 |
 
-- **CHEAP held on all 50 dates of 2012.** On FY12E /bin/bash.70 (FY11's) at 17-22x, the 3rd-34th percentile, the entries returned +73.2% to
+- **CHEAP held on all 50 dates of 2012.** On FY12E $0.70 (FY11's) at 17-22x, the 3rd-27th percentile, the entries returned +73.2% to
   +137.8% over two years and +103.9% to +180.6% over three, all clearing both hurdles and beating SPY (by 37.4 to 95.4pp). FY2012 came in
-  at /bin/bash.69, FY2013 at /bin/bash.78 and FY2014 at /bin/bash.95 (the Q4 2013 and Q4 2014 releases, outside the series), and the multiple rose with them.
+  at $0.69, FY2013 at $0.78 and FY2014 at $0.95 (the Q4 2013 and Q4 2014 releases, outside the series), and the multiple rose with them.
 
 ## 2013 (53 dates)
 
@@ -162,14 +162,15 @@ miss the hurdle and lag SPY) and FAIR (it should land within 15pp of SPY). Over 
 | latest print Q2 2013 (2013-07-17 to 2013-10-11) | 13 | +45.9% | +30.1% to +68.4% | 11 | 13 | +40.3% | 0 |
 | latest print Q3 2013 (2013-10-17 to 2013-12-31) | 12 | +34.1% | +23.5% to +41.5% | 6 | 12 | +25.3% | 0 |
 
-- **CHEAP held, RICH failed.** The 11 CHEAP dates (January to mid-April 2013) returned +58.0% to +98.6%; the 32 RICH dates from
-  2013-05-31 (30-38x FY13E /bin/bash.69, the 71st-87th percentile, tier AVOID) returned +23.5% to +71.7% over two years and beat SPY on every
-  one (by 1.6 to 38.4pp), 24 of them clearing the hurdle. The year's EPS went from FY12's /bin/bash.69 to /bin/bash.78, /bin/bash.95 and .03 (FY2013-FY2015).
+- **CHEAP held, RICH failed.** The 11 CHEAP dates (January to mid-April 2013, 22-25x) returned +58.0% to +98.6%; the 32 RICH dates from
+  2013-05-31 (29-38x FY13E $0.69, the 71st-87th percentile, tier AVOID) returned +23.5% to +71.7% over two years and beat SPY on every
+  one (by 1.6 to 38.4pp), 24 of them clearing the hurdle. EPS went from FY12's $0.69 to $0.78, $0.95 and $1.03 (FY2013-FY2015, the Q4
+  2013-Q4 2015 releases).
 
 ## Across 2008-2013
 
 - Hypothesis, not a rule: the method reads a rate-driven earnings stream with a lag both ways. After the 2008 rate collapse the last full
-  year (.06) overstated the earnings to come and the CHEAP calls of 2009 failed; with EPS held down by zero rates, fee waivers and the
+  year ($1.06) overstated the earnings to come and the CHEAP calls of 2009 failed; with EPS held down by zero rates, fee waivers and the
   2010 charges, the same own-history P/E made 2011's and 2013's multiples look RICH while the price ran ahead of the recovery the market
   priced. Both rest on the rollover rule (no guide, the last full year stands) and a P/E history drawn from other rate regimes. Test it on
   other rate-sensitive financials as a cross-ticker study (the cross-ticker scripts in `staging/retrospective/`), never inside SCHW's
