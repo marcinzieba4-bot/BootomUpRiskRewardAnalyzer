@@ -2241,6 +2241,31 @@
     "term": "Customer 360",
     "first_seen": "2018-04-17",
     "note": "first in a salesforce.com filing in its Rule 425 communication of 2018-04-17 (accepted 07:41 ET, before the open); EDGAR full-text search, CIK 1108524"
+   },
+   {
+    "term": "Einstein GPT",
+    "first_seen": "2023-04-28",
+    "note": "Salesforce's generative AI offering; first in a Salesforce filing in its annual report to security holders (ARS) of 2023-04-27 (accepted 16:12 ET, after the close); EDGAR full-text search, CIK 1108524"
+   },
+   {
+    "term": "Einstein Copilot",
+    "first_seen": "2024-05-03",
+    "note": "Salesforce's AI assistant; first in a Salesforce filing in its preliminary proxy statement of 2024-05-02 (accepted 17:05 ET, after the close); EDGAR full-text search, CIK 1108524"
+   },
+   {
+    "term": "Agentforce",
+    "first_seen": "2024-08-29",
+    "note": "Salesforce's AI agent platform; first in a Salesforce filing in its Q2 FY25 release (8-K accepted 2024-08-28 16:02 ET, after the close); EDGAR full-text search, CIK 1108524"
+   },
+   {
+    "term": "Agentforce 360",
+    "first_seen": "2025-11-19",
+    "note": "Salesforce's platform name; first in a Salesforce filing in its 8-K of 2025-11-18 on the Informatica closing (accepted 16:16 ET, after the close); EDGAR full-text search, CIK 1108524"
+   },
+   {
+    "term": "Data 360",
+    "first_seen": "2025-11-19",
+    "note": "Salesforce's data platform name; first in a Salesforce filing in its 8-K of 2025-11-18 on the Informatica closing (accepted 16:16 ET, after the close); EDGAR full-text search, CIK 1108524"
    }
   ]
  }

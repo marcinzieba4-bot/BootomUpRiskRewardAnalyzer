@@ -55,6 +55,20 @@ From 2018 (retro/README.md, "CRM 2018-2021", decided in the session that scored 
 (the FY2019 10-K restates FY2017-FY2018; unearned revenue for deferred revenue from Q1 FY19), total revenues standing in for subscription
 and support where professional services is not tagged, and EV and CRYPTO (live 2020) also naming no software business.
 
+From 2022 (retro/README.md, "CRM 2022-2026"; decided before any 2022-2026 date was built or scored, in a new session that had not
+opened the 2008-2021 outcomes or findings): full data again. SEC's www.sec.gov served the filing documents to a generic client name, so
+from 'reduced_data.full_from' (2022-01-01) the builder reads only the facts read from the filings themselves on those dates ('full_data':
+the earnings releases from Q4 FY21, the FY2020-FY2026 10-Ks, the Q1 FY26 10-Q, the 8-K of the change of name), in place of the
+reduced-data vintages and prints, and never reads them before that day, so every 2008-2021 model is unchanged. The full-data encodings:
+the releases are the prints (subscription and support revenue, unearned revenue against the year-ago quarter end from the release's own
+roll-forward); a year whose listed one-off items meet the AAPL FY2002 test or its mirror is excluded and stays a gap (FY2017, FY2019-FY2023:
+valuation allowance releases, a settlement charge, the strategic investments' gains and losses and the restructuring the filings list);
+the fiscal-year GAAP operating margin guide is a guided margin step (the ACN rule; the margin signal takes the step); the quarterly
+dividend from the first filing that states each rate (the NVDA rule); the change of name to Salesforce, Inc. from its 8-K (the ACN rule);
+GENAI (live 2022-11-30, scoped to software seats among other things) joins the watch list from the first 10-K whose competition risk
+factor names AI vendors among the competitors, company-acknowledged with no market read (the MSFT and GOOG rule; text only), and GLP1
+names no software business.
+
 Weekly dates (--weekly START END): one per ISO week, the week's last trading day, except in a week with an earnings release, where it
 is the first trading day after it. salesforce.com released after the close, so a print is dated the next trading day; on a Friday
 that is the week's last trading day, and the print meets its close (public before the open; the AVGO rule).
@@ -67,6 +81,7 @@ Usage
   python3 retro/build_crm.py --weekly 2010-01-04 2012-12-31
   python3 retro/build_crm.py --weekly 2013-01-01 2017-12-31
   python3 retro/build_crm.py --weekly 2018-01-01 2021-12-31
+  python3 retro/build_crm.py --weekly 2022-01-03 2026-11-22
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/CRM/<AS_OF>
 """
 import argparse
@@ -93,7 +108,9 @@ SYMBOL = "CRM"
 # the guide fields this builder has an encoding for; any other field needs its encoding decided first
 GUIDE_KEYS = {"fy", "published", "source", "doc", "quarter", "level_stated", "level_m", "prior_label", "prior_sales_m", "prior_source",
               "prior_row", "yoy_pct", "quote", "rev_guide_usd_b", "rev_quote", "eps_guide", "eps_quote", "eps_guide_note", "eps_ex_item",
-              "note", "display", "rev_guide_pct"}       # (CRM 2010-2012) a fiscal-year revenue guide stated as growth
+              "note", "display", "rev_guide_pct",       # (CRM 2010-2012) a fiscal-year revenue guide stated as growth
+              "op_margin_guide_pct", "margin_quote",    # (CRM 2022-2026) the fiscal-year GAAP operating margin guide, a guided step
+              "full_data"}                              # (CRM 2022-2026) read from the filings themselves, from reduced_data.full_from
 # rule T, the engine's signal thresholds: (BEAR, BASE, BULL, XBULL); the builder checks the fact sheet against them
 ENGINE_THRESHOLDS = {"sub": (40, 61, 82, 328), "deferred": (43, 68, 93, 169), "gross_margin": (-740, -330, 70, 3600),
                      "opex_gap": (49, 12, -24, -305), "op_margin": (-2800, -720, 1360, 48650)}
@@ -216,9 +233,25 @@ def _usd_rng(v):
     return f"${b(v[0])}B" if v[0] == v[1] else f"${b(v[0])}-{b(v[1])}B"
 
 
+def full_view(facts, as_of):
+    """(CRM 2022-2026) The fact sheet as read on AS_OF. Before reduced_data.full_from no fact read from the filings themselves
+    ('full_data') is seen, so every earlier model is unchanged; from it, those facts replace the reduced-data vintages and prints
+    (published from reduced_data.first_unread), and the earlier full-data facts stay."""
+    rd = facts.get("reduced_data", {})
+    full = as_of >= rd.get("full_from", "9999")
+    lists = ("history_vintages", "prints", "guides", "dividends", "events", "company_names")
+    if not full:
+        return {**facts, **{k: [x for x in facts.get(k, []) if not x.get("full_data")] for k in lists}}, False
+    cut = rd["first_unread"]
+    keep = lambda x: x.get("full_data") or x.get("published", "") < cut
+    return {**facts, "history_vintages": [v for v in facts["history_vintages"] if keep(v)],
+            "prints": [p for p in facts["prints"] if keep(p)]}, True
+
+
 def build(as_of, facts, raw, spx, engine, out):
     if as_of not in raw:
         sys.exit(f"{as_of} is not a trading day")
+    facts, full = full_view(facts, as_of)
     listing = facts["listing"]["first_trading_day"]
     assert min(raw) == listing, ("the price data must start on the listing day", min(raw), listing)
     # every price of the window on the AS_OF share basis: Yahoo's split-adjusted series times the splits after AS_OF
@@ -228,9 +261,13 @@ def build(as_of, facts, raw, spx, engine, out):
     yahoo_splits = {dt.datetime.fromtimestamp(v["date"] + chart["meta"]["gmtoffset"], dt.timezone.utc).date().isoformat()
                     for v in chart.get("events", {}).get("splits", {}).values()}
     assert all(s["effective"] in yahoo_splits for s in facts.get("splits", [])), "a split's effective date must match the price data"
+    # (CRM 2022-2026) on full-data dates a dividend, a change of name and a GENAI event have encodings; anything else needs one first
+    encoded = ("company_names", "dividends", "events") if full else ()
     for kind in ("events", "company_names", "distributions", "dividends"):
-        if [x for x in facts.get(kind, []) if x.get("published", x.get("effective", "")) <= as_of]:
+        if kind not in encoded and [x for x in facts.get(kind, []) if x.get("published", x.get("effective", "")) <= as_of]:
             sys.exit(f"{as_of}: the CRM builder has no encoding for {kind}; decide one first")
+    if any(e["kind"] != "genai_company_acknowledged" for e in facts.get("events", []) if e["published"] <= as_of):
+        sys.exit(f"{as_of}: the CRM builder has no encoding for that event kind; decide one first")
     for g in [g for g in facts["guides"] if g["published"] <= as_of]:      # a guide public on AS_OF may carry only encoded fields
         assert set(g) <= GUIDE_KEYS, (g["doc"], "a guide field with no encoding yet; decide one first", set(g) - GUIDE_KEYS)
         check_guide(g)
@@ -288,7 +325,7 @@ def build(as_of, facts, raw, spx, engine, out):
     excluded = {int(k): v for k, v in h.get("eps_excluded", {}).items()}
     cur_fy = max(reported(h)) + 1
     # (CRM 2013-2017) a reduced-data date: the earnings releases, other 8-Ks and 10-K text published from 'first_unread' are not in the sheet
-    reduced = as_of >= facts.get("reduced_data", {}).get("first_unread", "9999")
+    reduced = as_of >= facts.get("reduced_data", {}).get("first_unread", "9999") and not full    # (CRM 2022-2026) full data again
     absent = "not in this fact sheet (reduced-data batch)"
     last_fy = max(eps_hist)        # the last full year in the history: cur_fy - 1 unless that year is excluded
     fy_e, fy_e_s, fy_h, fy_now = f"FY{cur_fy}E", f"FY{cur_fy % 100:02d}E", f"FY{cur_fy + 2}E", f"FY{cur_fy % 100:02d}"
@@ -354,16 +391,24 @@ def build(as_of, facts, raw, spx, engine, out):
              else [f"revenue growth {pct_rng(gr['rev_guide_pct'])} ({gr['doc']}; the segment bridge only)"] if gr else
              [f"the {fy_now} revenue range is {absent}" if reduced else f"no {fy_now} revenue range in numbers"])
     bits += [g["note"] for g in fy_guides[-1:] if g.get("note")]
+    # (CRM 2022-2026) the fiscal-year GAAP operating margin guide: a guided margin step from the last full year's margin (the ACN rule)
+    gm = stated("op_margin_guide_pct")
+    margin_bit = (f"; GAAP operating margin {pct_rng(gm['op_margin_guide_pct'])} ('{gm['margin_quote']}', {gm['doc']}), a guided step from "
+                  f"{h['fy_label']}'s {h['prev_fy_op_margin']:.2f}%" if gm else "; no margin guide in this fact sheet" if reduced else "; no margin guide")
     guide_text = (f"{next_q} outlook: {q_text}; {fy_now} guide" + (f" ({', '.join(dict.fromkeys(g['doc'] for g in fy_guides))})" if fy_guides else "")
-                  + ": " + "; ".join(bits) + ("; no margin guide in this fact sheet" if reduced else "; no margin guide"))
+                  + ": " + "; ".join(bits) + margin_bit)
     cat3 = (f"(3) The {fy_now} EPS guide — ${_eps_rng(ge['eps_guide'])} GAAP ({ge['doc']})" if ge else
             f"(3) The {fy_now} EPS guide — {absent}" if reduced else f"(3) A numeric {fy_now} EPS guide — none yet")
-    margin_guided = False                          # no margin guide: no guided step; the signal uses the latest quarter
-    fy_margin_base = h["prev_fy_op_margin"]
+    margin_guided = bool(gm)                       # no margin guide: no guided step; the signal uses the latest quarter
+    fy_margin_base = round(sum(gm["op_margin_guide_pct"]) / 2, 4) if gm else h["prev_fy_op_margin"]
     guide_src = [g["source"] for g in fy_guides]
 
-    # ── dividend: none ('We have never paid any cash dividends on our common stock.') ──
-    dividend, dividend_note = h["dividend_annual"], h["dividend_note"]
+    # ── dividend: none ('We have never paid any cash dividends on our common stock.'); (CRM 2022-2026) from the first quarterly
+    # dividend, the latest rate from the first filing that states it (the NVDA rule; a 10-K that states no rate leaves it) ──
+    divs = [(d["published"], d["quarterly"] * 4, d["note"], d["source"]) for d in facts.get("dividends", []) if d["published"] <= as_of]
+    if h["dividend_annual"] is not None:
+        divs.append((h["published"], h["dividend_annual"], h["dividend_note"], None))
+    _, dividend, dividend_note, dividend_src = max(divs, key=lambda x: x[0])
 
     # ── market statistics, prices truncated at AS_OF ──
     days = sorted(d for d in px if d <= as_of)
@@ -411,8 +456,49 @@ def build(as_of, facts, raw, spx, engine, out):
     # (CRM 2013-2017) the themes live from 2015 are scoped to retail, pay-TV and fossil fuels, (CRM 2018-2021) EV and CRYPTO to
     # automotive and to payments, banks and exchanges: none names a software business
     later = ("ECOMMERCE", "STREAMING", "ENERGY_TRANSITION", "EV", "CRYPTO")
-    assert {k for _, k, _ in live} <= {"OFFSHORE", "CLOUD", *later}, (as_of, live, "a theme with no encoding is live: decide its encoding first")
-    if [k for _, k, _ in live] == ["OFFSHORE"]:
+    if full:          # (CRM 2022-2026) GENAI (2022-11-30) has an encoding, and GLP1 (2023-08-08) names no software business
+        later += ("GLP1",)
+    assert {k for _, k, _ in live} <= {"OFFSHORE", "CLOUD", *later, *(("GENAI",) if full else ())}, \
+        (as_of, live, "a theme with no encoding is live: decide its encoding first")
+    # a 10-K's GENAI wording is replaced by the next 10-K's (an event with a 'doc'); a theme counts only from its live date
+    events = [e for e in facts.get("events", []) if e["published"] <= as_of and h["published"] <= e["published"]
+              and TAXO["themes"][e["theme"]]["live_from"] <= as_of]
+    if full:          # (CRM 2022-2026) the 10-K read on AS_OF, every live theme with its registered scope, GENAI by the MSFT and GOOG rule
+        tenk = f"the {h['published_note']}"
+        scopes = ", ".join(f"{k} {'is scoped to' if i == 0 else 'to'} '{sc}'" for i, (_, k, sc) in enumerate(t for t in live if t[1] != "GENAI"))
+        rest = [k for _, k, _ in live if k in later]
+        rest_text = (f"; {', '.join(rest[:-1]) + ' and ' + rest[-1] if len(rest) > 1 else rest[0]} "
+                     f"name{'s' if len(rest) == 1 else ''} no software business") if rest else ""
+        inner = (f"{scopes}: {tenk} names cloud computing as salesforce.com's own model, the side that displaces on-premise software, "
+                 f"not a substitute for it, and names no offshore delivery{rest_text}")
+        genai = [t for t in live if t[1] == "GENAI"]
+        if events:
+            e = events[-1]
+            why = (h["why"] + f"; of the live themes in taxonomy_eras.json ({inner}), only GENAI is on the watch list: it is scoped to "
+                   f"'{genai[0][2]}', and {e['doc']} names AI vendors among salesforce.com's competitors, company-acknowledged with no "
+                   "market read (the MSFT and GOOG rule)")
+            val_word = "a premium" if pe_now_pctl >= 70 else "a discount to its own history" if pe_now_pctl <= 30 else "near its own median"
+            stage = "genai"
+            watch = [{"theme": "GENAI", "status": "live, company-acknowledged; no market read",
+                      "reason": (f"Live: Salesforce's own {e['doc']}, under '{e['heading']}', names among its current competitors "
+                                 f"'{e['risk_quote']}' and '{e['rival_quote']}'. It builds AI of its own: '{e['offering']}' The stock trades "
+                                 f"at {close / eps_now:.1f}x {fy_e_s} — {val_word}. Re-file as DISRUPTION_EXPOSED (GENAI) only if dated "
+                                 "evidence shows the market pricing generative-AI substitution of salesforce.com's software seats specifically.")}]
+            factors = [(f"Generative AI: {e['offering_short']}", 0.2, 0.10),
+                       (f"AI competition ({e['doc']}): {e['risk_short']}", -0.2, 0.10)]
+            sig_name = "Generative AI: net effect on subscription seats"
+            trigger = "Customers move work to AI-native competitors faster than Salesforce's own agents keep it"
+            theme_summary = "generative AI is live and company-acknowledged; no dated evidence ties the multiple to it"
+        elif genai:
+            why = (h["why"] + "; no disruption theme in taxonomy_eras.json is on the watch list for a subscription software company on this "
+                   f"date (of the live themes, {inner}; GENAI is scoped to '{genai[0][2]}': the scope names software seats, which "
+                   "salesforce.com sells, but a theme joins the watch list only from a company filing that names it as a competitive risk "
+                   f"(the PEP GLP1 rule, as MSFT and GOOG apply it), and {tenk} names AI only in salesforce.com's own offerings "
+                   f"('{h['ai_words']}')), so the watch list is empty and these words stay here (the PEP obesity rule)")
+        else:
+            why = (h["why"] + "; no disruption theme in taxonomy_eras.json is live for a subscription software company on this date (of the "
+                   f"live themes, {inner}), so the watch list is empty and these words stay here (the PEP obesity rule)")
+    elif [k for _, k, _ in live] == ["OFFSHORE"]:
         why = (h["why"] + "; no disruption theme in taxonomy_eras.json is live for a subscription software company on this date "
                "(OFFSHORE, the one theme live, is scoped to IT services, and the 10-K's cloud computing words, where it has them, describe "
                "salesforce.com's own model, not a substitute for it), so the watch list is empty and these words stay here (the PEP "
@@ -439,9 +525,12 @@ def build(as_of, facts, raw, spx, engine, out):
         assert "before the open" in same_day[-1].get("release_time", ""), (as_of, same_day[-1]["quarter"], "released on AS_OF, not before the open")
         tag = f"(day of the {same_day[-1]['quarter']} print, public before the open)"
 
-    company, exchange = h["company"], h["exchange"]
+    # a change of company name filed after the vintage (the ACN rule; Salesforce, Inc. from the 8-K of 2022-04-04)
+    renames = [n for n in facts.get("company_names", []) if h["published"] < n["published"] <= as_of]
+    company, exchange = (renames[-1]["name"] if renames else h["company"]), h["exchange"]
     ids = (list(h["sources"]) + [facts["listing"]["source"]] + [x for p in prints for x in [p["source"]] + p.get("extra_sources", [])]
-           + [public[i - 1]["source"]] + guide_ids + guide_src + split_ids)
+           + [public[i - 1]["source"]] + guide_ids + guide_src + split_ids
+           + ([dividend_src] if dividend_src else []) + [n["source"] for n in renames] + [e["id"] for e in events])
     sources = [dict(id=x, **facts["sources"][x]) for x in dict.fromkeys(ids)]
     sources.append({"id": "Y0", "published": as_of, "title": "Yahoo Finance daily prices, CRM and S&P 500, truncated at AS_OF",
                     "url": "https://finance.yahoo.com/quote/CRM/history",
@@ -529,7 +618,7 @@ EPS_LABEL       = {R(eps_label_short)}
 FWD_GUIDE       = {R(tuple(fwd))}   # the next-quarter revenue guide as growth on the year-ago quarter (else the latest quarter's growth)
 FWD_GUIDE_LABEL, FWD_PERIOD, FWD_BASIS_SHORT = {R(fwd_label)}, {R(fwd_period)}, {R(fwd_short)}
 GUIDE_TEXT      = {R(guide_text)}
-MARGIN_GUIDED   = {margin_guided}   # False: no margin guide, so no guided step; the signal uses the latest quarter's change
+MARGIN_GUIDED   = {margin_guided}   # {"True: the fiscal-year GAAP operating margin guide, a guided step from the last full year's margin; the signal takes the step" if margin_guided else "False: no margin guide, so no guided step; the signal uses the latest quarter's change"}
 FY_MARGIN_BASE  = {fy_margin_base}
 FY_REVENUE_B    = {fy_rev_b:.4f}
 FY_REVENUE_LABEL = {R(fy_rev_label)}

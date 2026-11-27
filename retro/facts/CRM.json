@@ -1,5 +1,5 @@
 {
- "_doc": "Point-in-time fact sheet for CRM retrospectives (retro/build_crm.py), generated from salesforce.com's own filings: every raw figure is the row string it appears in (kept in 'rows'), checked against its filing, and every growth rate, margin and rule-T value is computed from those figures. Every value is tied to a source and becomes visible only on or after that source's 'published' date (EDGAR's acceptance time in ET; after the 16:00 close, the next trading day). From 2013 (the 2013-2017 and 2018-2021 batches, sources CR39-CR76) the facts are SEC's XBRL company facts of the 10-Qs and 10-Ks only (a reduced-data batch, 'reduced_data'): each value is the tagged figure of its filing, kept in 'rows' as tag, period and value.",
+ "_doc": "Point-in-time fact sheet for CRM retrospectives (retro/build_crm.py), generated from salesforce.com's own filings: every raw figure is the row string it appears in (kept in 'rows'), checked against its filing, and every growth rate, margin and rule-T value is computed from those figures. Every value is tied to a source and becomes visible only on or after that source's 'published' date (EDGAR's acceptance time in ET; after the 16:00 close, the next trading day). From 2013 (the 2013-2017 and 2018-2021 batches, sources CR39-CR76) the facts are SEC's XBRL company facts of the 10-Qs and 10-Ks only (a reduced-data batch, 'reduced_data'): each value is the tagged figure of its filing, kept in 'rows' as tag, period and value. From 2022-01-01 (the 2022-2026 batch, sources CR77-CR108) the facts are read from the filings themselves again: each full-data fact carries 'full_data' true and its rows as the filing prints them ('reduced_data.full_from').",
  "ticker": "CRM",
  "sources": {
   "CR1": {
@@ -533,6 +533,230 @@
    "title": "salesforce.com Q3 FY22 10-Q (XBRL, SEC company facts)",
    "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852421000055/crm-20211031.htm",
    "supports": "Q3 FY22 statements of operations, balance sheet and cash flows as tagged in XBRL (accession 0001108524-21-000055, read through data.sec.gov/api/xbrl/companyfacts/CIK0001108524.json)"
+  },
+  "CR77": {
+   "published": "2020-03-06",
+   "filed": "accepted 2020-03-05 16:29 ET (after the close)",
+   "title": "salesforce.com FY2020 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852420000014/crm-20200131.htm",
+   "supports": "FY2020 Items 1, 1A and 5, the statements of operations (fiscal 2018-2020), cash flows and balance sheets, revenues by geography, the selected financial data of fiscal 2016-2020 and their listed items"
+  },
+  "CR78": {
+   "published": "2021-02-26",
+   "filed": "accepted 2021-02-25 16:17 ET (after the close)",
+   "title": "salesforce.com Q4 FY21 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852421000007/crm-q4fy21xexhibit991.htm",
+   "supports": "Q4 FY21 statements of operations, balance sheet and unearned revenue; the outlook"
+  },
+  "CR79": {
+   "published": "2021-03-18",
+   "filed": "filed 2021-03-17 (EDGAR filing date; the acceptance time is not in this fact sheet), dated from the next trading day",
+   "title": "salesforce.com FY2021 10-K",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001108524&type=10-K&dateb=20210317&owner=include&count=10",
+   "supports": "FY2021 Items 1, 1A and 5 (the business, competition and dividend wording), the statements of operations (fiscal 2019-2021), cash flows and balance sheets, revenues by geography, and the listed items of fiscal 2019-2021"
+  },
+  "CR80": {
+   "published": "2021-05-28",
+   "filed": "accepted 2021-05-27 16:10 ET (after the close)",
+   "title": "salesforce.com Q1 FY22 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852421000027/crm-q1fy22xexhibit991.htm",
+   "supports": "Q1 FY22 statements of operations, balance sheet and unearned revenue; the outlook"
+  },
+  "CR81": {
+   "published": "2021-08-26",
+   "filed": "accepted 2021-08-25 16:08 ET (after the close)",
+   "title": "salesforce.com Q2 FY22 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852421000044/crm-q2fy22xexhibit991.htm",
+   "supports": "Q2 FY22 statements of operations, balance sheet and unearned revenue; the outlook"
+  },
+  "CR82": {
+   "published": "2021-12-01",
+   "filed": "accepted 2021-11-30 16:08 ET (after the close)",
+   "title": "salesforce.com Q3 FY22 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852421000051/crm-q3fy22xexhibit991.htm",
+   "supports": "Q3 FY22 statements of operations, balance sheet and unearned revenue; the outlook"
+  },
+  "CR83": {
+   "published": "2022-03-02",
+   "filed": "accepted 2022-03-01 16:11 ET (after the close)",
+   "title": "salesforce.com Q4 FY22 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852422000010/crm-q4fy22xexhibit991.htm",
+   "supports": "Q4 FY22 statements of operations, balance sheet and unearned revenue; the outlook"
+  },
+  "CR84": {
+   "published": "2022-03-11",
+   "filed": "accepted 2022-03-11 08:06 ET (before the open)",
+   "title": "salesforce.com FY2022 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852422000013/crm-20220131.htm",
+   "supports": "FY2022 Items 1, 1A and 5, the statements of operations (fiscal 2020-2022), cash flows and balance sheets, revenues by geography"
+  },
+  "CR85": {
+   "published": "2022-04-04",
+   "filed": "accepted 2022-04-04 08:31 ET (before the open)",
+   "title": "Salesforce, Inc. 8-K (item 5.03, the change of legal name)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312522094496/d347891d8k.htm",
+   "supports": "the change of the company's legal name from salesforce.com, inc. to Salesforce, Inc., effective 2022-04-04"
+  },
+  "CR86": {
+   "published": "2022-06-01",
+   "filed": "accepted 2022-05-31 16:08 ET (after the close)",
+   "title": "Salesforce Q1 FY23 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852422000019/crm-q1fy23xexhibit991.htm",
+   "supports": "Q1 FY23 statements of operations, balance sheet and unearned revenue; the outlook"
+  },
+  "CR87": {
+   "published": "2022-08-25",
+   "filed": "accepted 2022-08-24 16:08 ET (after the close)",
+   "title": "Salesforce Q2 FY23 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852422000038/crm-q2fy23xexhibit991.htm",
+   "supports": "Q2 FY23 statements of operations, balance sheet and unearned revenue; the outlook"
+  },
+  "CR88": {
+   "published": "2022-12-01",
+   "filed": "accepted 2022-11-30 16:06 ET (after the close)",
+   "title": "Salesforce Q3 FY23 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852422000058/crm-q3fy23xexhibit991.htm",
+   "supports": "Q3 FY23 statements of operations, balance sheet and unearned revenue; the outlook"
+  },
+  "CR89": {
+   "published": "2023-03-02",
+   "filed": "accepted 2023-03-01 16:08 ET (after the close)",
+   "title": "Salesforce Q4 FY23 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852423000007/crm-q4fy23xexhibit991.htm",
+   "supports": "Q4 FY23 statements of operations, balance sheet and unearned revenue; the outlook"
+  },
+  "CR90": {
+   "published": "2023-03-09",
+   "filed": "accepted 2023-03-08 16:41 ET (after the close)",
+   "title": "Salesforce FY2023 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852423000011/crm-20230131.htm",
+   "supports": "FY2023 Items 1, 1A and 5, the statements of operations (fiscal 2021-2023), cash flows and balance sheets, revenues by geography"
+  },
+  "CR91": {
+   "published": "2023-06-01",
+   "filed": "accepted 2023-05-31 16:07 ET (after the close)",
+   "title": "Salesforce Q1 FY24 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852423000021/crm-q1fy24xexhibit991.htm",
+   "supports": "Q1 FY24 statements of operations, balance sheet and unearned revenue; the outlook"
+  },
+  "CR92": {
+   "published": "2023-08-31",
+   "filed": "accepted 2023-08-30 16:06 ET (after the close)",
+   "title": "Salesforce Q2 FY24 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852423000037/crm-q2fy24xexhibit991.htm",
+   "supports": "Q2 FY24 statements of operations, balance sheet and unearned revenue; the outlook"
+  },
+  "CR93": {
+   "published": "2023-11-30",
+   "filed": "accepted 2023-11-29 16:05 ET (after the close)",
+   "title": "Salesforce Q3 FY24 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852423000046/crm-q3fy24xexhibit991.htm",
+   "supports": "Q3 FY24 statements of operations, balance sheet and unearned revenue; the outlook"
+  },
+  "CR94": {
+   "published": "2024-02-29",
+   "filed": "accepted 2024-02-28 16:04 ET (after the close)",
+   "title": "Salesforce Q4 FY24 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852424000002/crm-q4fy24xexhibit991.htm",
+   "supports": "Q4 FY24 statements of operations, balance sheet and unearned revenue; the outlook"
+  },
+  "CR95": {
+   "published": "2024-03-07",
+   "filed": "accepted 2024-03-06 16:32 ET (after the close)",
+   "title": "Salesforce FY2024 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852424000005/crm-20240131.htm",
+   "supports": "FY2024 Items 1, 1A and 5, the statements of operations (fiscal 2022-2024), cash flows and balance sheets, revenues by geography"
+  },
+  "CR96": {
+   "published": "2024-05-30",
+   "filed": "accepted 2024-05-29 16:03 ET (after the close)",
+   "title": "Salesforce Q1 FY25 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852424000007/crm-q1fy25xexhibit991.htm",
+   "supports": "Q1 FY25 statements of operations, balance sheet and unearned revenue; the outlook"
+  },
+  "CR97": {
+   "published": "2024-08-29",
+   "filed": "accepted 2024-08-28 16:02 ET (after the close)",
+   "title": "Salesforce Q2 FY25 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852424000020/crm-q2fy25xexhibit991.htm",
+   "supports": "Q2 FY25 statements of operations, balance sheet and unearned revenue; the outlook"
+  },
+  "CR98": {
+   "published": "2024-12-04",
+   "filed": "accepted 2024-12-03 16:03 ET (after the close)",
+   "title": "Salesforce Q3 FY25 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852424000033/crm-q3fy25xexhibit991.htm",
+   "supports": "Q3 FY25 statements of operations, balance sheet and unearned revenue; the outlook"
+  },
+  "CR99": {
+   "published": "2025-02-27",
+   "filed": "accepted 2025-02-26 16:03 ET (after the close)",
+   "title": "Salesforce Q4 FY25 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852425000002/crm-q4fy25xexhibit991.htm",
+   "supports": "Q4 FY25 statements of operations, balance sheet and unearned revenue; the outlook"
+  },
+  "CR100": {
+   "published": "2025-03-06",
+   "filed": "accepted 2025-03-05 16:16 ET (after the close)",
+   "title": "Salesforce FY2025 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852425000006/crm-20250131.htm",
+   "supports": "FY2025 Items 1, 1A and 5, the statements of operations (fiscal 2023-2025), cash flows and balance sheets, revenues by geography"
+  },
+  "CR101": {
+   "published": "2025-05-29",
+   "filed": "accepted 2025-05-28 16:05 ET (after the close)",
+   "title": "Salesforce Q1 FY26 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852425000027/crm-q1fy26xexhibit991.htm",
+   "supports": "Q1 FY26 statements of operations, balance sheet and unearned revenue; the outlook"
+  },
+  "CR102": {
+   "published": "2025-05-29",
+   "filed": "accepted 2025-05-28 18:52 ET (after the close)",
+   "title": "Salesforce Q1 FY26 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852425000030/crm-20250430.htm",
+   "supports": "the quarterly dividend declared in Q1 FY26 ($0.416 a share), the first filing that states the rate"
+  },
+  "CR103": {
+   "published": "2025-09-04",
+   "filed": "accepted 2025-09-03 16:03 ET (after the close)",
+   "title": "Salesforce Q2 FY26 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852425000083/crm-q2fy26xexhibit991.htm",
+   "supports": "Q2 FY26 statements of operations, balance sheet and unearned revenue; the outlook"
+  },
+  "CR104": {
+   "published": "2025-12-04",
+   "filed": "accepted 2025-12-03 16:04 ET (after the close)",
+   "title": "Salesforce Q3 FY26 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852425000234/crm-q3fy26xexhibit991.htm",
+   "supports": "Q3 FY26 statements of operations, balance sheet and unearned revenue; the outlook"
+  },
+  "CR105": {
+   "published": "2026-02-26",
+   "filed": "accepted 2026-02-25 16:03 ET (after the close)",
+   "title": "Salesforce Q4 FY26 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000056/crm-q4fy26xexhibit991.htm",
+   "supports": "Q4 FY26 statements of operations, balance sheet and unearned revenue; the outlook"
+  },
+  "CR106": {
+   "published": "2026-03-03",
+   "filed": "accepted 2026-03-02 16:24 ET (after the close)",
+   "title": "Salesforce FY2026 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm",
+   "supports": "FY2026 Items 1, 1A and 5, the statements of operations (fiscal 2024-2026), cash flows and balance sheets, revenues by geography"
+  },
+  "CR107": {
+   "published": "2026-05-28",
+   "filed": "accepted 2026-05-27 16:18 ET (after the close)",
+   "title": "Salesforce Q1 FY27 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000125/crm-q1fy27xexhibit991.htm",
+   "supports": "Q1 FY27 statements of operations, balance sheet and unearned revenue; the outlook"
+  },
+  "CR108": {
+   "published": "2026-08-27",
+   "filed": "accepted 2026-08-26 16:03 ET (after the close)",
+   "title": "Salesforce Q2 FY27 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000187/crm-q2fy27xexhibit991.htm",
+   "supports": "Q2 FY27 statements of operations, balance sheet and unearned revenue; the outlook"
   }
  },
  "listing": {
@@ -2311,6 +2535,846 @@
     "2021": "2021-03-18"
    },
    "restated_note": "the FY2019 10-K restates FY2017 and FY2018 for ASC 606 (revenue from contracts with customers, adopted 2018-02-01, full retrospective as tagged): FY17 revenues $8.392B to $8.437B, EPS $0.26 to $0.46; FY18 revenues $10.480B to $10.540B, EPS $0.17 to $0.49; each year from the latest filing that reports it (the ACN FY19 rule), so FY2016 and earlier stay on the earlier basis (a seam)"
+  },
+  {
+   "published": "2021-03-18",
+   "sources": [
+    "CR79",
+    "CR77",
+    "CR61",
+    "CR57",
+    "CR53",
+    "CR49",
+    "CR45",
+    "CR65",
+    "CR78"
+   ],
+   "fy_label": "FY21",
+   "company": "salesforce.com, inc.",
+   "exchange": "NYSE",
+   "fiscal_year": "ends January 31",
+   "kind": "DURABLE",
+   "why": "'Salesforce is a global leader in customer relationship management (“CRM”) technology that brings companies and their customers together.' 'The market for our service offerings is highly competitive, rapidly evolving and fragmented, and subject to changing technology with low barriers to entry, shifting customer needs and frequent introductions of new products and services.' 'The market in which we participate is intensely competitive, and if we do not compete effectively, our operating results could be harmed.' (FY2021 10-K); DURABLE: no 10-K read calls the business cyclical ('cyclical' appears only of the economy's downturns)",
+   "eps_normalized": {
+    "2018": 0.49
+   },
+   "eps_sources": {
+    "2018": "CR77"
+   },
+   "eps_excluded": {
+    "2012": "FY2012 is excluded: a GAAP net loss of $(0.09) a share ('For the full fiscal year 2012, GAAP net loss per share was ($0.09)', the Q4 FY12 release), with no figure excluding only one-offs (the release's non-GAAP $1.36 also removes stock-based compensation, the amortization of purchased intangibles and the non-cash interest on the convertible notes, which recur: the NKE FY2007 and AVGO rule), so the year has no P/E (the r2 loss rule)",
+    "2013": "FY2013 is excluded: a GAAP net loss of $(1.92) a share (net loss $270.4M, the FY2013 10-K's XBRL), with no figure excluding only one-offs in this fact sheet (reduced-data batch: the earnings releases are not in it), so the year has no P/E (the r2 loss rule)",
+    "2014": "FY2014 is excluded: a GAAP net loss of $(0.39) a share (net loss $232.2M, the FY2014 10-K's XBRL), with no figure excluding only one-offs in this fact sheet (reduced-data batch: the earnings releases are not in it), so the year has no P/E (the r2 loss rule)",
+    "2015": "FY2015 is excluded: a GAAP net loss of $(0.42) a share (net loss $262.7M, the FY2015 10-K's XBRL), with no figure excluding only one-offs in this fact sheet (reduced-data batch: the earnings releases are not in it), so the year has no P/E (the r2 loss rule)",
+    "2016": "FY2016 is excluded: a GAAP net loss of $(0.07) a share (net loss $47.4M, the FY2016 10-K's XBRL), with no figure excluding only one-offs in this fact sheet (reduced-data batch: the earnings releases are not in it), so the year has no P/E (the r2 loss rule)",
+    "2017": "FY2017 is excluded, a year distorted by a listed one-off benefit (the mirror of the AAPL FY2002 test): the FY2020 10-K's selected data say 'Amounts include a benefit related to the partial release of the valuation allowance of $612 million, $2 million, $226 million, and $1 million for fiscal 2019, 2018, 2017 and 2016, respectively.', and FY2017's $226M is more than the year's net income without it ($97M of the $323M, derived; as adjusted for ASC 606), so reported EPS ($0.46) is more than double the EPS without it; no figure excluding only it is published, so the year has no P/E (the AVGO FY2018 rule)",
+    "2019": "FY2019 is excluded, a year distorted by a listed one-off benefit (the mirror of the AAPL FY2002 test): the FY2020 and FY2021 10-Ks list 'a benefit related to the partial release of the valuation allowance of $612 million' for fiscal 2019, more than the year's net income without it ($498M of the $1,110M, derived), so reported EPS ($1.43) is 2.2 times the EPS without it; no figure excluding only it is published, so the year has no P/E (the AVGO FY2018 rule)",
+    "2020": "FY2020 is excluded, a year distorted by a listed one-off item (the AAPL FY2002 test): 'Fiscal 2020 income from operations includes a $166 million one-time non-cash charge related to the accounting for our business combination with Salesforce.org, a related party, in which there was the settlement of the reseller agreement between the two companies.' (the FY2020 10-K), and the $166M charge is more than the year's $126M net income; no figure excluding only it is published (the non-GAAP figures also remove stock-based compensation and the amortization of purchased intangibles, which recur), so the year has no P/E",
+    "2021": "FY2021 is excluded, a year distorted by listed one-off benefits (the mirror of the AAPL FY2002 test): 'Two of the Company’s strategic investments completed their initial public offering, resulting in unrealized gains of $1.7 billion during fiscal 2021.' and 'approximately $2.0 billion of one-time benefit from a discrete tax item' (the Q4 FY21 release; the FY2021 10-K lists both), $3.7B together (derived) against the year's $4,072M net income, so reported EPS ($4.38) is far more than double the EPS without them; no figure excluding only them is published, so the year has no P/E (the AVGO FY2018 rule)"
+   },
+   "revenue_usd_b": {
+    "2012": 2.266539,
+    "2013": 3.050195,
+    "2014": 4.071003,
+    "2015": 5.373586,
+    "2016": 6.667216,
+    "2017": 8.437,
+    "2018": 10.54,
+    "2019": 13.282,
+    "2020": 17.098,
+    "2021": 21.252
+   },
+   "revenue_sources": {
+    "2012": "CR45",
+    "2013": "CR49",
+    "2014": "CR53",
+    "2015": "CR57",
+    "2016": "CR61",
+    "2017": "CR77",
+    "2018": "CR77",
+    "2019": "CR79",
+    "2020": "CR79",
+    "2021": "CR79"
+   },
+   "diluted_shares_m": {
+    "2012": 541.208,
+    "2013": 564.896,
+    "2014": 597.613,
+    "2015": 624.148,
+    "2016": 661.647,
+    "2017": 700.0,
+    "2018": 735.0,
+    "2019": 775.0,
+    "2020": 850.0,
+    "2021": 930.0
+   },
+   "shares_sources": {
+    "2012": "CR45",
+    "2013": "CR49",
+    "2014": "CR53",
+    "2015": "CR57",
+    "2016": "CR61",
+    "2017": "CR65",
+    "2018": "CR77",
+    "2019": "CR79",
+    "2020": "CR79",
+    "2021": "CR79"
+   },
+   "pe_window_start": "2004-02-01",
+   "normalization": "GAAP diluted EPS, each year from the latest filing that reports it (FY18 FY2020 10-K); the releases' non-GAAP figures also remove stock-based compensation and the amortization of purchased intangibles, which recur (the NKE FY2007 and AVGO rule); a year whose listed one-off items fail the AAPL FY2002 test or its mirror is excluded; FY2012 is excluded: a GAAP net loss of $(0.09) a share ('For the full fiscal year 2012, GAAP net loss per share was ($0.09)', the Q4 FY12 release), with no figure excluding only one-offs (the release's non-GAAP $1.36 also removes stock-based compensation, the amortization of purchased intangibles and the non-cash interest on the convertible notes, which recur: the NKE FY2007 and AVGO rule), so the year has no P/E (the r2 loss rule); it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2013 is excluded: a GAAP net loss of $(1.92) a share (net loss $270.4M, the FY2013 10-K's XBRL), with no figure excluding only one-offs in this fact sheet (reduced-data batch: the earnings releases are not in it), so the year has no P/E (the r2 loss rule); it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2014 is excluded: a GAAP net loss of $(0.39) a share (net loss $232.2M, the FY2014 10-K's XBRL), with no figure excluding only one-offs in this fact sheet (reduced-data batch: the earnings releases are not in it), so the year has no P/E (the r2 loss rule); it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2015 is excluded: a GAAP net loss of $(0.42) a share (net loss $262.7M, the FY2015 10-K's XBRL), with no figure excluding only one-offs in this fact sheet (reduced-data batch: the earnings releases are not in it), so the year has no P/E (the r2 loss rule); it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2016 is excluded: a GAAP net loss of $(0.07) a share (net loss $47.4M, the FY2016 10-K's XBRL), with no figure excluding only one-offs in this fact sheet (reduced-data batch: the earnings releases are not in it), so the year has no P/E (the r2 loss rule); it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2017 is excluded, a year distorted by a listed one-off benefit (the mirror of the AAPL FY2002 test): the FY2020 10-K's selected data say 'Amounts include a benefit related to the partial release of the valuation allowance of $612 million, $2 million, $226 million, and $1 million for fiscal 2019, 2018, 2017 and 2016, respectively.', and FY2017's $226M is more than the year's net income without it ($97M of the $323M, derived; as adjusted for ASC 606), so reported EPS ($0.46) is more than double the EPS without it; no figure excluding only it is published, so the year has no P/E (the AVGO FY2018 rule); it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2019 is excluded, a year distorted by a listed one-off benefit (the mirror of the AAPL FY2002 test): the FY2020 and FY2021 10-Ks list 'a benefit related to the partial release of the valuation allowance of $612 million' for fiscal 2019, more than the year's net income without it ($498M of the $1,110M, derived), so reported EPS ($1.43) is 2.2 times the EPS without it; no figure excluding only it is published, so the year has no P/E (the AVGO FY2018 rule); it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2020 is excluded, a year distorted by a listed one-off item (the AAPL FY2002 test): 'Fiscal 2020 income from operations includes a $166 million one-time non-cash charge related to the accounting for our business combination with Salesforce.org, a related party, in which there was the settlement of the reseller agreement between the two companies.' (the FY2020 10-K), and the $166M charge is more than the year's $126M net income; no figure excluding only it is published (the non-GAAP figures also remove stock-based compensation and the amortization of purchased intangibles, which recur), so the year has no P/E; it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2021 is excluded, a year distorted by listed one-off benefits (the mirror of the AAPL FY2002 test): 'Two of the Company’s strategic investments completed their initial public offering, resulting in unrealized gains of $1.7 billion during fiscal 2021.' and 'approximately $2.0 billion of one-time benefit from a discrete tax item' (the Q4 FY21 release; the FY2021 10-K lists both), $3.7B together (derived) against the year's $4,072M net income, so reported EPS ($4.38) is far more than double the EPS without them; no figure excluding only them is published, so the year has no P/E (the AVGO FY2018 rule); it stays a gap (the NKE FY2018 and XOM FY2020 rule); full-data reading from 2022-01-01: the 10-Ks and earnings releases themselves (FY2012-FY2016's losses as in the reduced-data batches, from the 10-Ks' XBRL)",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 2.14,
+   "prev_fy_op_margin_note": "FY21 income from operations $455M / revenues $21,252M (FY2021 10-K)",
+   "prev_fy_pretax_margin": 12.05,
+   "prev_fy_pretax_margin_note": "FY21 income before income taxes $2,561M / revenues $21,252M (FY2021 10-K)",
+   "prev_fy_gross_margin": 74.41,
+   "prev_fy_sales_growth": 24.3,
+   "prev_fy_sub_growth": 24.5,
+   "tax_rate": -0.59,
+   "tax_note": "FY21 benefit from income taxes $1,511M / pre-tax $2,561M (FY2021 10-K)",
+   "fcf_b": 4.091,
+   "fcf_label": "FY21",
+   "fcf_note": "net cash provided by operating activities $4,801M less capital expenditures $710M (FY2021 10-K)",
+   "cash_b": 11.966,
+   "dividend_annual": 0.0,
+   "dividend_note": "none: 'We have never paid any cash dividends on our common stock.' (FY2021 10-K)",
+   "cash_return_text": "no share repurchase program in the FY2021 10-K",
+   "business_line": "customer relationship management technology: the Customer 360 platform (the FY2021 10-K's description: 'With our Customer 360 platform, we deliver a single source of truth')",
+   "groups": [
+    [
+     "Americas",
+     14.736,
+     22.3
+    ],
+    [
+     "Europe",
+     4.501,
+     31.2
+    ],
+    [
+     "Asia Pacific",
+     2.015,
+     24.6
+    ]
+   ],
+   "groups_basis": "FY21 revenues by geography (the FY2021 10-K), growth on the year before",
+   "published_note": "FY2021 10-K",
+   "eps_published": {
+    "2012": "2014-03-06",
+    "2013": "2015-03-06",
+    "2014": "2016-03-07",
+    "2015": "2017-03-07",
+    "2016": "2018-03-12",
+    "2017": "2020-03-06",
+    "2018": "2020-03-06",
+    "2019": "2021-03-18",
+    "2020": "2021-03-18",
+    "2021": "2021-03-18"
+   },
+   "full_data": true
+  },
+  {
+   "published": "2022-03-11",
+   "sources": [
+    "CR84",
+    "CR79",
+    "CR77",
+    "CR61",
+    "CR57",
+    "CR53",
+    "CR49",
+    "CR65",
+    "CR78",
+    "CR83"
+   ],
+   "fy_label": "FY22",
+   "company": "salesforce.com, inc.",
+   "exchange": "NYSE",
+   "fiscal_year": "ends January 31",
+   "kind": "DURABLE",
+   "why": "'Salesforce is a global leader in customer relationship management (“CRM”) technology that brings companies and their customers together in the digital age.' 'The market for our service offerings is highly competitive, rapidly evolving and fragmented, and subject to changing technology with low barriers to entry, shifting customer needs and frequent introductions of new products and services.' 'The markets in which we participate are intensely competitive, and if we do not compete effectively, our operating results could be harmed.' (FY2022 10-K); DURABLE: no 10-K read calls the business cyclical ('cyclical' appears only of the economy's downturns)",
+   "eps_normalized": {
+    "2018": 0.49
+   },
+   "eps_sources": {
+    "2018": "CR77"
+   },
+   "eps_excluded": {
+    "2013": "FY2013 is excluded: a GAAP net loss of $(1.92) a share (net loss $270.4M, the FY2013 10-K's XBRL), with no figure excluding only one-offs in this fact sheet (reduced-data batch: the earnings releases are not in it), so the year has no P/E (the r2 loss rule)",
+    "2014": "FY2014 is excluded: a GAAP net loss of $(0.39) a share (net loss $232.2M, the FY2014 10-K's XBRL), with no figure excluding only one-offs in this fact sheet (reduced-data batch: the earnings releases are not in it), so the year has no P/E (the r2 loss rule)",
+    "2015": "FY2015 is excluded: a GAAP net loss of $(0.42) a share (net loss $262.7M, the FY2015 10-K's XBRL), with no figure excluding only one-offs in this fact sheet (reduced-data batch: the earnings releases are not in it), so the year has no P/E (the r2 loss rule)",
+    "2016": "FY2016 is excluded: a GAAP net loss of $(0.07) a share (net loss $47.4M, the FY2016 10-K's XBRL), with no figure excluding only one-offs in this fact sheet (reduced-data batch: the earnings releases are not in it), so the year has no P/E (the r2 loss rule)",
+    "2017": "FY2017 is excluded, a year distorted by a listed one-off benefit (the mirror of the AAPL FY2002 test): the FY2020 10-K's selected data say 'Amounts include a benefit related to the partial release of the valuation allowance of $612 million, $2 million, $226 million, and $1 million for fiscal 2019, 2018, 2017 and 2016, respectively.', and FY2017's $226M is more than the year's net income without it ($97M of the $323M, derived; as adjusted for ASC 606), so reported EPS ($0.46) is more than double the EPS without it; no figure excluding only it is published, so the year has no P/E (the AVGO FY2018 rule)",
+    "2019": "FY2019 is excluded, a year distorted by a listed one-off benefit (the mirror of the AAPL FY2002 test): the FY2020 and FY2021 10-Ks list 'a benefit related to the partial release of the valuation allowance of $612 million' for fiscal 2019, more than the year's net income without it ($498M of the $1,110M, derived), so reported EPS ($1.43) is 2.2 times the EPS without it; no figure excluding only it is published, so the year has no P/E (the AVGO FY2018 rule)",
+    "2020": "FY2020 is excluded, a year distorted by a listed one-off item (the AAPL FY2002 test): 'Fiscal 2020 income from operations includes a $166 million one-time non-cash charge related to the accounting for our business combination with Salesforce.org, a related party, in which there was the settlement of the reseller agreement between the two companies.' (the FY2020 10-K), and the $166M charge is more than the year's $126M net income; no figure excluding only it is published (the non-GAAP figures also remove stock-based compensation and the amortization of purchased intangibles, which recur), so the year has no P/E",
+    "2021": "FY2021 is excluded, a year distorted by listed one-off benefits (the mirror of the AAPL FY2002 test): 'Two of the Company’s strategic investments completed their initial public offering, resulting in unrealized gains of $1.7 billion during fiscal 2021.' and 'approximately $2.0 billion of one-time benefit from a discrete tax item' (the Q4 FY21 release; the FY2021 10-K lists both), $3.7B together (derived) against the year's $4,072M net income, so reported EPS ($4.38) is far more than double the EPS without them; no figure excluding only them is published, so the year has no P/E (the AVGO FY2018 rule)",
+    "2022": "FY2022 is excluded, a year distorted by a listed one-off benefit (the mirror of the AAPL FY2002 test): 'Mark-to-market accounting of the company’s strategic investments benefited GAAP diluted earnings per share by $0.93' (the Q4 FY22 release) of the year's $1.48, so reported EPS is 2.7 times the $0.55 without it (derived), more than double; no figure excluding only it is published (the non-GAAP $4.78 also removes stock-based compensation and the amortization of purchased intangibles, which recur), so the year has no P/E (the AVGO FY2018 rule)"
+   },
+   "revenue_usd_b": {
+    "2013": 3.050195,
+    "2014": 4.071003,
+    "2015": 5.373586,
+    "2016": 6.667216,
+    "2017": 8.437,
+    "2018": 10.54,
+    "2019": 13.282,
+    "2020": 17.098,
+    "2021": 21.252,
+    "2022": 26.492
+   },
+   "revenue_sources": {
+    "2013": "CR49",
+    "2014": "CR53",
+    "2015": "CR57",
+    "2016": "CR61",
+    "2017": "CR77",
+    "2018": "CR77",
+    "2019": "CR79",
+    "2020": "CR84",
+    "2021": "CR84",
+    "2022": "CR84"
+   },
+   "diluted_shares_m": {
+    "2013": 564.896,
+    "2014": 597.613,
+    "2015": 624.148,
+    "2016": 661.647,
+    "2017": 700.0,
+    "2018": 735.0,
+    "2019": 775.0,
+    "2020": 850.0,
+    "2021": 930.0,
+    "2022": 974.0
+   },
+   "shares_sources": {
+    "2013": "CR49",
+    "2014": "CR53",
+    "2015": "CR57",
+    "2016": "CR61",
+    "2017": "CR65",
+    "2018": "CR77",
+    "2019": "CR79",
+    "2020": "CR84",
+    "2021": "CR84",
+    "2022": "CR84"
+   },
+   "pe_window_start": "2004-02-01",
+   "normalization": "GAAP diluted EPS, each year from the latest filing that reports it (FY18 FY2020 10-K); the releases' non-GAAP figures also remove stock-based compensation and the amortization of purchased intangibles, which recur (the NKE FY2007 and AVGO rule); a year whose listed one-off items fail the AAPL FY2002 test or its mirror is excluded; FY2013 is excluded: a GAAP net loss of $(1.92) a share (net loss $270.4M, the FY2013 10-K's XBRL), with no figure excluding only one-offs in this fact sheet (reduced-data batch: the earnings releases are not in it), so the year has no P/E (the r2 loss rule); it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2014 is excluded: a GAAP net loss of $(0.39) a share (net loss $232.2M, the FY2014 10-K's XBRL), with no figure excluding only one-offs in this fact sheet (reduced-data batch: the earnings releases are not in it), so the year has no P/E (the r2 loss rule); it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2015 is excluded: a GAAP net loss of $(0.42) a share (net loss $262.7M, the FY2015 10-K's XBRL), with no figure excluding only one-offs in this fact sheet (reduced-data batch: the earnings releases are not in it), so the year has no P/E (the r2 loss rule); it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2016 is excluded: a GAAP net loss of $(0.07) a share (net loss $47.4M, the FY2016 10-K's XBRL), with no figure excluding only one-offs in this fact sheet (reduced-data batch: the earnings releases are not in it), so the year has no P/E (the r2 loss rule); it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2017 is excluded, a year distorted by a listed one-off benefit (the mirror of the AAPL FY2002 test): the FY2020 10-K's selected data say 'Amounts include a benefit related to the partial release of the valuation allowance of $612 million, $2 million, $226 million, and $1 million for fiscal 2019, 2018, 2017 and 2016, respectively.', and FY2017's $226M is more than the year's net income without it ($97M of the $323M, derived; as adjusted for ASC 606), so reported EPS ($0.46) is more than double the EPS without it; no figure excluding only it is published, so the year has no P/E (the AVGO FY2018 rule); it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2019 is excluded, a year distorted by a listed one-off benefit (the mirror of the AAPL FY2002 test): the FY2020 and FY2021 10-Ks list 'a benefit related to the partial release of the valuation allowance of $612 million' for fiscal 2019, more than the year's net income without it ($498M of the $1,110M, derived), so reported EPS ($1.43) is 2.2 times the EPS without it; no figure excluding only it is published, so the year has no P/E (the AVGO FY2018 rule); it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2020 is excluded, a year distorted by a listed one-off item (the AAPL FY2002 test): 'Fiscal 2020 income from operations includes a $166 million one-time non-cash charge related to the accounting for our business combination with Salesforce.org, a related party, in which there was the settlement of the reseller agreement between the two companies.' (the FY2020 10-K), and the $166M charge is more than the year's $126M net income; no figure excluding only it is published (the non-GAAP figures also remove stock-based compensation and the amortization of purchased intangibles, which recur), so the year has no P/E; it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2021 is excluded, a year distorted by listed one-off benefits (the mirror of the AAPL FY2002 test): 'Two of the Company’s strategic investments completed their initial public offering, resulting in unrealized gains of $1.7 billion during fiscal 2021.' and 'approximately $2.0 billion of one-time benefit from a discrete tax item' (the Q4 FY21 release; the FY2021 10-K lists both), $3.7B together (derived) against the year's $4,072M net income, so reported EPS ($4.38) is far more than double the EPS without them; no figure excluding only them is published, so the year has no P/E (the AVGO FY2018 rule); it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2022 is excluded, a year distorted by a listed one-off benefit (the mirror of the AAPL FY2002 test): 'Mark-to-market accounting of the company’s strategic investments benefited GAAP diluted earnings per share by $0.93' (the Q4 FY22 release) of the year's $1.48, so reported EPS is 2.7 times the $0.55 without it (derived), more than double; no figure excluding only it is published (the non-GAAP $4.78 also removes stock-based compensation and the amortization of purchased intangibles, which recur), so the year has no P/E (the AVGO FY2018 rule); it stays a gap (the NKE FY2018 and XOM FY2020 rule); full-data reading from 2022-01-01: the 10-Ks and earnings releases themselves (FY2012-FY2016's losses as in the reduced-data batches, from the 10-Ks' XBRL)",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 2.07,
+   "prev_fy_op_margin_note": "FY22 income from operations $548M / revenues $26,492M (FY2022 10-K)",
+   "prev_fy_pretax_margin": 5.78,
+   "prev_fy_pretax_margin_note": "FY22 income before income taxes $1,532M / revenues $26,492M (FY2022 10-K)",
+   "prev_fy_gross_margin": 73.48,
+   "prev_fy_sales_growth": 24.7,
+   "prev_fy_sub_growth": 23.4,
+   "tax_rate": 0.057,
+   "tax_note": "FY22 provision for income taxes $88M / pre-tax $1,532M (FY2022 10-K)",
+   "fcf_b": 5.283,
+   "fcf_label": "FY22",
+   "fcf_note": "net cash provided by operating activities $6,000M less capital expenditures $717M (FY2022 10-K)",
+   "cash_b": 10.537,
+   "dividend_annual": 0.0,
+   "dividend_note": "none: 'We have never paid any cash dividends on our common stock.' (FY2022 10-K)",
+   "cash_return_text": "no share repurchase program in the FY2022 10-K",
+   "business_line": "customer relationship management technology: the Customer 360 platform and Slack (the FY2022 10-K's description: 'With our Customer 360 platform, we deliver a single source of truth')",
+   "groups": [
+    [
+     "Americas",
+     17.983,
+     22.0
+    ],
+    [
+     "Europe",
+     6.016,
+     33.7
+    ],
+    [
+     "Asia Pacific",
+     2.493,
+     23.7
+    ]
+   ],
+   "groups_basis": "FY22 revenues by geography (the FY2022 10-K), growth on the year before",
+   "published_note": "FY2022 10-K",
+   "eps_published": {
+    "2013": "2015-03-06",
+    "2014": "2016-03-07",
+    "2015": "2017-03-07",
+    "2016": "2018-03-12",
+    "2017": "2020-03-06",
+    "2018": "2020-03-06",
+    "2019": "2021-03-18",
+    "2020": "2022-03-11",
+    "2021": "2022-03-11",
+    "2022": "2022-03-11"
+   },
+   "ai_words": "We are increasingly building AI into many of our offerings.",
+   "full_data": true
+  },
+  {
+   "published": "2023-03-09",
+   "sources": [
+    "CR90",
+    "CR84",
+    "CR79",
+    "CR77",
+    "CR61",
+    "CR57",
+    "CR53",
+    "CR65",
+    "CR78",
+    "CR83",
+    "CR89"
+   ],
+   "fy_label": "FY23",
+   "company": "Salesforce, Inc.",
+   "exchange": "NYSE",
+   "fiscal_year": "ends January 31",
+   "kind": "DURABLE",
+   "why": "'Salesforce is a global leader in customer relationship management (“CRM”) technology that brings companies and their customers together.' 'The market for our service offerings is highly competitive, rapidly evolving and fragmented, and subject to changing technology with low barriers to entry, shifting customer needs and frequent introductions of new products and services.' 'The markets in which we participate are intensely competitive, and if we do not compete effectively, our operating results could be harmed.' (FY2023 10-K); DURABLE: no 10-K read calls the business cyclical ('cyclical' appears only of the economy's downturns)",
+   "eps_normalized": {
+    "2018": 0.49
+   },
+   "eps_sources": {
+    "2018": "CR77"
+   },
+   "eps_excluded": {
+    "2014": "FY2014 is excluded: a GAAP net loss of $(0.39) a share (net loss $232.2M, the FY2014 10-K's XBRL), with no figure excluding only one-offs in this fact sheet (reduced-data batch: the earnings releases are not in it), so the year has no P/E (the r2 loss rule)",
+    "2015": "FY2015 is excluded: a GAAP net loss of $(0.42) a share (net loss $262.7M, the FY2015 10-K's XBRL), with no figure excluding only one-offs in this fact sheet (reduced-data batch: the earnings releases are not in it), so the year has no P/E (the r2 loss rule)",
+    "2016": "FY2016 is excluded: a GAAP net loss of $(0.07) a share (net loss $47.4M, the FY2016 10-K's XBRL), with no figure excluding only one-offs in this fact sheet (reduced-data batch: the earnings releases are not in it), so the year has no P/E (the r2 loss rule)",
+    "2017": "FY2017 is excluded, a year distorted by a listed one-off benefit (the mirror of the AAPL FY2002 test): the FY2020 10-K's selected data say 'Amounts include a benefit related to the partial release of the valuation allowance of $612 million, $2 million, $226 million, and $1 million for fiscal 2019, 2018, 2017 and 2016, respectively.', and FY2017's $226M is more than the year's net income without it ($97M of the $323M, derived; as adjusted for ASC 606), so reported EPS ($0.46) is more than double the EPS without it; no figure excluding only it is published, so the year has no P/E (the AVGO FY2018 rule)",
+    "2019": "FY2019 is excluded, a year distorted by a listed one-off benefit (the mirror of the AAPL FY2002 test): the FY2020 and FY2021 10-Ks list 'a benefit related to the partial release of the valuation allowance of $612 million' for fiscal 2019, more than the year's net income without it ($498M of the $1,110M, derived), so reported EPS ($1.43) is 2.2 times the EPS without it; no figure excluding only it is published, so the year has no P/E (the AVGO FY2018 rule)",
+    "2020": "FY2020 is excluded, a year distorted by a listed one-off item (the AAPL FY2002 test): 'Fiscal 2020 income from operations includes a $166 million one-time non-cash charge related to the accounting for our business combination with Salesforce.org, a related party, in which there was the settlement of the reseller agreement between the two companies.' (the FY2020 10-K), and the $166M charge is more than the year's $126M net income; no figure excluding only it is published (the non-GAAP figures also remove stock-based compensation and the amortization of purchased intangibles, which recur), so the year has no P/E",
+    "2021": "FY2021 is excluded, a year distorted by listed one-off benefits (the mirror of the AAPL FY2002 test): 'Two of the Company’s strategic investments completed their initial public offering, resulting in unrealized gains of $1.7 billion during fiscal 2021.' and 'approximately $2.0 billion of one-time benefit from a discrete tax item' (the Q4 FY21 release; the FY2021 10-K lists both), $3.7B together (derived) against the year's $4,072M net income, so reported EPS ($4.38) is far more than double the EPS without them; no figure excluding only them is published, so the year has no P/E (the AVGO FY2018 rule)",
+    "2022": "FY2022 is excluded, a year distorted by a listed one-off benefit (the mirror of the AAPL FY2002 test): 'Mark-to-market accounting of the company’s strategic investments benefited GAAP diluted earnings per share by $0.93' (the Q4 FY22 release) of the year's $1.48, so reported EPS is 2.7 times the $0.55 without it (derived), more than double; no figure excluding only it is published (the non-GAAP $4.78 also removes stock-based compensation and the amortization of purchased intangibles, which recur), so the year has no P/E (the AVGO FY2018 rule)",
+    "2023": "FY2023 is excluded, a year distorted by listed one-off items (the AAPL FY2002 test): 'Restructuring impacted fiscal 2023 GAAP and non-GAAP diluted EPS by (83) cents' and 'Mark-to-market accounting of the company’s strategic investments negatively impacted GAAP diluted EPS by $(0.18)' (the Q4 FY23 release), so the year's $0.21 is 0.17 times the $1.22 without them (derived), under half (restructuring $828M and $239M of losses on strategic investments against $208M of net income); no figure excluding only them is published (the non-GAAP $5.24 also removes stock-based compensation and amortization, which recur), so the year has no P/E"
+   },
+   "revenue_usd_b": {
+    "2014": 4.071003,
+    "2015": 5.373586,
+    "2016": 6.667216,
+    "2017": 8.437,
+    "2018": 10.54,
+    "2019": 13.282,
+    "2020": 17.098,
+    "2021": 21.252,
+    "2022": 26.492,
+    "2023": 31.352
+   },
+   "revenue_sources": {
+    "2014": "CR53",
+    "2015": "CR57",
+    "2016": "CR61",
+    "2017": "CR77",
+    "2018": "CR77",
+    "2019": "CR79",
+    "2020": "CR84",
+    "2021": "CR90",
+    "2022": "CR90",
+    "2023": "CR90"
+   },
+   "diluted_shares_m": {
+    "2014": 597.613,
+    "2015": 624.148,
+    "2016": 661.647,
+    "2017": 700.0,
+    "2018": 735.0,
+    "2019": 775.0,
+    "2020": 850.0,
+    "2021": 930.0,
+    "2022": 974.0,
+    "2023": 997.0
+   },
+   "shares_sources": {
+    "2014": "CR53",
+    "2015": "CR57",
+    "2016": "CR61",
+    "2017": "CR65",
+    "2018": "CR77",
+    "2019": "CR79",
+    "2020": "CR84",
+    "2021": "CR90",
+    "2022": "CR90",
+    "2023": "CR90"
+   },
+   "pe_window_start": "2004-02-01",
+   "normalization": "GAAP diluted EPS, each year from the latest filing that reports it (FY18 FY2020 10-K); the releases' non-GAAP figures also remove stock-based compensation and the amortization of purchased intangibles, which recur (the NKE FY2007 and AVGO rule); a year whose listed one-off items fail the AAPL FY2002 test or its mirror is excluded; FY2014 is excluded: a GAAP net loss of $(0.39) a share (net loss $232.2M, the FY2014 10-K's XBRL), with no figure excluding only one-offs in this fact sheet (reduced-data batch: the earnings releases are not in it), so the year has no P/E (the r2 loss rule); it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2015 is excluded: a GAAP net loss of $(0.42) a share (net loss $262.7M, the FY2015 10-K's XBRL), with no figure excluding only one-offs in this fact sheet (reduced-data batch: the earnings releases are not in it), so the year has no P/E (the r2 loss rule); it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2016 is excluded: a GAAP net loss of $(0.07) a share (net loss $47.4M, the FY2016 10-K's XBRL), with no figure excluding only one-offs in this fact sheet (reduced-data batch: the earnings releases are not in it), so the year has no P/E (the r2 loss rule); it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2017 is excluded, a year distorted by a listed one-off benefit (the mirror of the AAPL FY2002 test): the FY2020 10-K's selected data say 'Amounts include a benefit related to the partial release of the valuation allowance of $612 million, $2 million, $226 million, and $1 million for fiscal 2019, 2018, 2017 and 2016, respectively.', and FY2017's $226M is more than the year's net income without it ($97M of the $323M, derived; as adjusted for ASC 606), so reported EPS ($0.46) is more than double the EPS without it; no figure excluding only it is published, so the year has no P/E (the AVGO FY2018 rule); it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2019 is excluded, a year distorted by a listed one-off benefit (the mirror of the AAPL FY2002 test): the FY2020 and FY2021 10-Ks list 'a benefit related to the partial release of the valuation allowance of $612 million' for fiscal 2019, more than the year's net income without it ($498M of the $1,110M, derived), so reported EPS ($1.43) is 2.2 times the EPS without it; no figure excluding only it is published, so the year has no P/E (the AVGO FY2018 rule); it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2020 is excluded, a year distorted by a listed one-off item (the AAPL FY2002 test): 'Fiscal 2020 income from operations includes a $166 million one-time non-cash charge related to the accounting for our business combination with Salesforce.org, a related party, in which there was the settlement of the reseller agreement between the two companies.' (the FY2020 10-K), and the $166M charge is more than the year's $126M net income; no figure excluding only it is published (the non-GAAP figures also remove stock-based compensation and the amortization of purchased intangibles, which recur), so the year has no P/E; it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2021 is excluded, a year distorted by listed one-off benefits (the mirror of the AAPL FY2002 test): 'Two of the Company’s strategic investments completed their initial public offering, resulting in unrealized gains of $1.7 billion during fiscal 2021.' and 'approximately $2.0 billion of one-time benefit from a discrete tax item' (the Q4 FY21 release; the FY2021 10-K lists both), $3.7B together (derived) against the year's $4,072M net income, so reported EPS ($4.38) is far more than double the EPS without them; no figure excluding only them is published, so the year has no P/E (the AVGO FY2018 rule); it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2022 is excluded, a year distorted by a listed one-off benefit (the mirror of the AAPL FY2002 test): 'Mark-to-market accounting of the company’s strategic investments benefited GAAP diluted earnings per share by $0.93' (the Q4 FY22 release) of the year's $1.48, so reported EPS is 2.7 times the $0.55 without it (derived), more than double; no figure excluding only it is published (the non-GAAP $4.78 also removes stock-based compensation and the amortization of purchased intangibles, which recur), so the year has no P/E (the AVGO FY2018 rule); it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2023 is excluded, a year distorted by listed one-off items (the AAPL FY2002 test): 'Restructuring impacted fiscal 2023 GAAP and non-GAAP diluted EPS by (83) cents' and 'Mark-to-market accounting of the company’s strategic investments negatively impacted GAAP diluted EPS by $(0.18)' (the Q4 FY23 release), so the year's $0.21 is 0.17 times the $1.22 without them (derived), under half (restructuring $828M and $239M of losses on strategic investments against $208M of net income); no figure excluding only them is published (the non-GAAP $5.24 also removes stock-based compensation and amortization, which recur), so the year has no P/E; it stays a gap (the NKE FY2018 and XOM FY2020 rule); full-data reading from 2022-01-01: the 10-Ks and earnings releases themselves (FY2012-FY2016's losses as in the reduced-data batches, from the 10-Ks' XBRL)",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 3.29,
+   "prev_fy_op_margin_note": "FY23 income from operations $1,030M / revenues $31,352M (FY2023 10-K)",
+   "prev_fy_pretax_margin": 2.11,
+   "prev_fy_pretax_margin_note": "FY23 income before income taxes $660M / revenues $31,352M (FY2023 10-K)",
+   "prev_fy_gross_margin": 73.34,
+   "prev_fy_sales_growth": 18.3,
+   "prev_fy_sub_growth": 17.7,
+   "tax_rate": 0.685,
+   "tax_note": "FY23 provision for income taxes $452M / pre-tax $660M (FY2023 10-K)",
+   "fcf_b": 6.313,
+   "fcf_label": "FY23",
+   "fcf_note": "net cash provided by operating activities $7,111M less capital expenditures $798M (FY2023 10-K)",
+   "cash_b": 12.508,
+   "dividend_annual": 0.0,
+   "dividend_note": "none: 'We have never paid any cash dividends on our common stock.' (FY2023 10-K)",
+   "cash_return_text": "share repurchases: 'In February 2023, the Board of Directors authorized an additional $10.0 billion in repurchases under the Share Repurchase Program, for an aggregate total authorized of $20.0 billion.' (FY2023 10-K; the program was first authorized in August 2022, up to $10.0 billion)",
+   "business_line": "customer relationship management technology: the Customer 360 platform and Slack (the FY2023 10-K's description: 'Our Customer 360 platform unites sales, service, marketing, commerce and IT teams')",
+   "groups": [
+    [
+     "Americas",
+     21.25,
+     18.2
+    ],
+    [
+     "Europe",
+     7.163,
+     19.1
+    ],
+    [
+     "Asia Pacific",
+     2.939,
+     17.9
+    ]
+   ],
+   "groups_basis": "FY23 revenues by geography (the FY2023 10-K), growth on the year before",
+   "published_note": "FY2023 10-K",
+   "eps_published": {
+    "2014": "2016-03-07",
+    "2015": "2017-03-07",
+    "2016": "2018-03-12",
+    "2017": "2020-03-06",
+    "2018": "2020-03-06",
+    "2019": "2021-03-18",
+    "2020": "2022-03-11",
+    "2021": "2023-03-09",
+    "2022": "2023-03-09",
+    "2023": "2023-03-09"
+   },
+   "ai_words": "We are increasingly building AI into many of our offerings.",
+   "full_data": true
+  },
+  {
+   "published": "2024-03-07",
+   "sources": [
+    "CR95",
+    "CR90",
+    "CR84",
+    "CR79",
+    "CR77",
+    "CR61",
+    "CR57",
+    "CR65",
+    "CR78",
+    "CR83",
+    "CR89"
+   ],
+   "fy_label": "FY24",
+   "company": "Salesforce, Inc.",
+   "exchange": "NYSE",
+   "fiscal_year": "ends January 31",
+   "kind": "DURABLE",
+   "why": "'Salesforce, Inc. (“Salesforce,” the “Company,” “we” or “our”) is a global leader in customer relationship management (“CRM”) technology that brings companies and their customers together.' 'The market for our service offerings is highly competitive, rapidly evolving and fragmented, and subject to changing technology with low barriers to entry, shifting customer needs and frequent introductions of new products and services.' 'The markets in which we participate are intensely competitive, and if we do not compete effectively, our operating results could be harmed.' (FY2024 10-K); DURABLE: no 10-K read calls the business cyclical ('cyclical' appears only of the economy's downturns)",
+   "eps_normalized": {
+    "2018": 0.49,
+    "2024": 4.2
+   },
+   "eps_sources": {
+    "2018": "CR77",
+    "2024": "CR95"
+   },
+   "eps_excluded": {
+    "2015": "FY2015 is excluded: a GAAP net loss of $(0.42) a share (net loss $262.7M, the FY2015 10-K's XBRL), with no figure excluding only one-offs in this fact sheet (reduced-data batch: the earnings releases are not in it), so the year has no P/E (the r2 loss rule)",
+    "2016": "FY2016 is excluded: a GAAP net loss of $(0.07) a share (net loss $47.4M, the FY2016 10-K's XBRL), with no figure excluding only one-offs in this fact sheet (reduced-data batch: the earnings releases are not in it), so the year has no P/E (the r2 loss rule)",
+    "2017": "FY2017 is excluded, a year distorted by a listed one-off benefit (the mirror of the AAPL FY2002 test): the FY2020 10-K's selected data say 'Amounts include a benefit related to the partial release of the valuation allowance of $612 million, $2 million, $226 million, and $1 million for fiscal 2019, 2018, 2017 and 2016, respectively.', and FY2017's $226M is more than the year's net income without it ($97M of the $323M, derived; as adjusted for ASC 606), so reported EPS ($0.46) is more than double the EPS without it; no figure excluding only it is published, so the year has no P/E (the AVGO FY2018 rule)",
+    "2019": "FY2019 is excluded, a year distorted by a listed one-off benefit (the mirror of the AAPL FY2002 test): the FY2020 and FY2021 10-Ks list 'a benefit related to the partial release of the valuation allowance of $612 million' for fiscal 2019, more than the year's net income without it ($498M of the $1,110M, derived), so reported EPS ($1.43) is 2.2 times the EPS without it; no figure excluding only it is published, so the year has no P/E (the AVGO FY2018 rule)",
+    "2020": "FY2020 is excluded, a year distorted by a listed one-off item (the AAPL FY2002 test): 'Fiscal 2020 income from operations includes a $166 million one-time non-cash charge related to the accounting for our business combination with Salesforce.org, a related party, in which there was the settlement of the reseller agreement between the two companies.' (the FY2020 10-K), and the $166M charge is more than the year's $126M net income; no figure excluding only it is published (the non-GAAP figures also remove stock-based compensation and the amortization of purchased intangibles, which recur), so the year has no P/E",
+    "2021": "FY2021 is excluded, a year distorted by listed one-off benefits (the mirror of the AAPL FY2002 test): 'Two of the Company’s strategic investments completed their initial public offering, resulting in unrealized gains of $1.7 billion during fiscal 2021.' and 'approximately $2.0 billion of one-time benefit from a discrete tax item' (the Q4 FY21 release; the FY2021 10-K lists both), $3.7B together (derived) against the year's $4,072M net income, so reported EPS ($4.38) is far more than double the EPS without them; no figure excluding only them is published, so the year has no P/E (the AVGO FY2018 rule)",
+    "2022": "FY2022 is excluded, a year distorted by a listed one-off benefit (the mirror of the AAPL FY2002 test): 'Mark-to-market accounting of the company’s strategic investments benefited GAAP diluted earnings per share by $0.93' (the Q4 FY22 release) of the year's $1.48, so reported EPS is 2.7 times the $0.55 without it (derived), more than double; no figure excluding only it is published (the non-GAAP $4.78 also removes stock-based compensation and the amortization of purchased intangibles, which recur), so the year has no P/E (the AVGO FY2018 rule)",
+    "2023": "FY2023 is excluded, a year distorted by listed one-off items (the AAPL FY2002 test): 'Restructuring impacted fiscal 2023 GAAP and non-GAAP diluted EPS by (83) cents' and 'Mark-to-market accounting of the company’s strategic investments negatively impacted GAAP diluted EPS by $(0.18)' (the Q4 FY23 release), so the year's $0.21 is 0.17 times the $1.22 without them (derived), under half (restructuring $828M and $239M of losses on strategic investments against $208M of net income); no figure excluding only them is published (the non-GAAP $5.24 also removes stock-based compensation and amortization, which recur), so the year has no P/E"
+   },
+   "revenue_usd_b": {
+    "2015": 5.373586,
+    "2016": 6.667216,
+    "2017": 8.437,
+    "2018": 10.54,
+    "2019": 13.282,
+    "2020": 17.098,
+    "2021": 21.252,
+    "2022": 26.492,
+    "2023": 31.352,
+    "2024": 34.857
+   },
+   "revenue_sources": {
+    "2015": "CR57",
+    "2016": "CR61",
+    "2017": "CR77",
+    "2018": "CR77",
+    "2019": "CR79",
+    "2020": "CR84",
+    "2021": "CR90",
+    "2022": "CR95",
+    "2023": "CR95",
+    "2024": "CR95"
+   },
+   "diluted_shares_m": {
+    "2015": 624.148,
+    "2016": 661.647,
+    "2017": 700.0,
+    "2018": 735.0,
+    "2019": 775.0,
+    "2020": 850.0,
+    "2021": 930.0,
+    "2022": 974.0,
+    "2023": 997.0,
+    "2024": 984.0
+   },
+   "shares_sources": {
+    "2015": "CR57",
+    "2016": "CR61",
+    "2017": "CR65",
+    "2018": "CR77",
+    "2019": "CR79",
+    "2020": "CR84",
+    "2021": "CR90",
+    "2022": "CR95",
+    "2023": "CR95",
+    "2024": "CR95"
+   },
+   "pe_window_start": "2004-02-01",
+   "normalization": "GAAP diluted EPS, each year from the latest filing that reports it (FY18 FY2020 10-K; FY24 FY2024 10-K); the releases' non-GAAP figures also remove stock-based compensation and the amortization of purchased intangibles, which recur (the NKE FY2007 and AVGO rule); a year whose listed one-off items fail the AAPL FY2002 test or its mirror is excluded; FY2015 is excluded: a GAAP net loss of $(0.42) a share (net loss $262.7M, the FY2015 10-K's XBRL), with no figure excluding only one-offs in this fact sheet (reduced-data batch: the earnings releases are not in it), so the year has no P/E (the r2 loss rule); it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2016 is excluded: a GAAP net loss of $(0.07) a share (net loss $47.4M, the FY2016 10-K's XBRL), with no figure excluding only one-offs in this fact sheet (reduced-data batch: the earnings releases are not in it), so the year has no P/E (the r2 loss rule); it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2017 is excluded, a year distorted by a listed one-off benefit (the mirror of the AAPL FY2002 test): the FY2020 10-K's selected data say 'Amounts include a benefit related to the partial release of the valuation allowance of $612 million, $2 million, $226 million, and $1 million for fiscal 2019, 2018, 2017 and 2016, respectively.', and FY2017's $226M is more than the year's net income without it ($97M of the $323M, derived; as adjusted for ASC 606), so reported EPS ($0.46) is more than double the EPS without it; no figure excluding only it is published, so the year has no P/E (the AVGO FY2018 rule); it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2019 is excluded, a year distorted by a listed one-off benefit (the mirror of the AAPL FY2002 test): the FY2020 and FY2021 10-Ks list 'a benefit related to the partial release of the valuation allowance of $612 million' for fiscal 2019, more than the year's net income without it ($498M of the $1,110M, derived), so reported EPS ($1.43) is 2.2 times the EPS without it; no figure excluding only it is published, so the year has no P/E (the AVGO FY2018 rule); it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2020 is excluded, a year distorted by a listed one-off item (the AAPL FY2002 test): 'Fiscal 2020 income from operations includes a $166 million one-time non-cash charge related to the accounting for our business combination with Salesforce.org, a related party, in which there was the settlement of the reseller agreement between the two companies.' (the FY2020 10-K), and the $166M charge is more than the year's $126M net income; no figure excluding only it is published (the non-GAAP figures also remove stock-based compensation and the amortization of purchased intangibles, which recur), so the year has no P/E; it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2021 is excluded, a year distorted by listed one-off benefits (the mirror of the AAPL FY2002 test): 'Two of the Company’s strategic investments completed their initial public offering, resulting in unrealized gains of $1.7 billion during fiscal 2021.' and 'approximately $2.0 billion of one-time benefit from a discrete tax item' (the Q4 FY21 release; the FY2021 10-K lists both), $3.7B together (derived) against the year's $4,072M net income, so reported EPS ($4.38) is far more than double the EPS without them; no figure excluding only them is published, so the year has no P/E (the AVGO FY2018 rule); it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2022 is excluded, a year distorted by a listed one-off benefit (the mirror of the AAPL FY2002 test): 'Mark-to-market accounting of the company’s strategic investments benefited GAAP diluted earnings per share by $0.93' (the Q4 FY22 release) of the year's $1.48, so reported EPS is 2.7 times the $0.55 without it (derived), more than double; no figure excluding only it is published (the non-GAAP $4.78 also removes stock-based compensation and the amortization of purchased intangibles, which recur), so the year has no P/E (the AVGO FY2018 rule); it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2023 is excluded, a year distorted by listed one-off items (the AAPL FY2002 test): 'Restructuring impacted fiscal 2023 GAAP and non-GAAP diluted EPS by (83) cents' and 'Mark-to-market accounting of the company’s strategic investments negatively impacted GAAP diluted EPS by $(0.18)' (the Q4 FY23 release), so the year's $0.21 is 0.17 times the $1.22 without them (derived), under half (restructuring $828M and $239M of losses on strategic investments against $208M of net income); no figure excluding only them is published (the non-GAAP $5.24 also removes stock-based compensation and amortization, which recur), so the year has no P/E; it stays a gap (the NKE FY2018 and XOM FY2020 rule); full-data reading from 2022-01-01: the 10-Ks and earnings releases themselves (FY2012-FY2016's losses as in the reduced-data batches, from the 10-Ks' XBRL)",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 14.38,
+   "prev_fy_op_margin_note": "FY24 income from operations $5,011M / revenues $34,857M (FY2024 10-K)",
+   "prev_fy_pretax_margin": 14.2,
+   "prev_fy_pretax_margin_note": "FY24 income before income taxes $4,950M / revenues $34,857M (FY2024 10-K)",
+   "prev_fy_gross_margin": 75.5,
+   "prev_fy_sales_growth": 11.2,
+   "prev_fy_sub_growth": 12.1,
+   "tax_rate": 0.164,
+   "tax_note": "FY24 provision for income taxes $814M / pre-tax $4,950M (FY2024 10-K)",
+   "fcf_b": 9.498,
+   "fcf_label": "FY24",
+   "fcf_note": "net cash provided by operating activities $10,234M less capital expenditures $736M (FY2024 10-K)",
+   "cash_b": 14.194,
+   "dividend_annual": null,
+   "dividend_note": "'On February 28, 2024, we announced a quarterly dividend policy and the declaration of our first-ever cash dividend.' (FY2024 10-K; the rate from the filing that first states it)",
+   "cash_return_text": "share repurchases under the program authorized in August 2022; 'In February 2024, the Board of Directors authorized an additional' $10.0 billion (FY2024 10-K)",
+   "business_line": "customer relationship management technology: the AI-powered Customer 360 platform (the FY2024 10-K's description: 'Our AI-powered Customer 360 platform unites sales, service, marketing, commerce and IT teams')",
+   "groups": [
+    [
+     "Americas",
+     23.289,
+     9.6
+    ],
+    [
+     "Europe",
+     8.128,
+     13.5
+    ],
+    [
+     "Asia Pacific",
+     3.44,
+     17.0
+    ]
+   ],
+   "groups_basis": "FY24 revenues by geography (the FY2024 10-K), growth on the year before",
+   "published_note": "FY2024 10-K",
+   "eps_published": {
+    "2015": "2017-03-07",
+    "2016": "2018-03-12",
+    "2017": "2020-03-06",
+    "2018": "2020-03-06",
+    "2019": "2021-03-18",
+    "2020": "2022-03-11",
+    "2021": "2023-03-09",
+    "2022": "2024-03-07",
+    "2023": "2024-03-07",
+    "2024": "2024-03-07"
+   },
+   "ai_words": "We are increasingly building AI into many of our offerings, including generative AI.",
+   "full_data": true
+  },
+  {
+   "published": "2025-03-06",
+   "sources": [
+    "CR100",
+    "CR95",
+    "CR90",
+    "CR84",
+    "CR79",
+    "CR77",
+    "CR61",
+    "CR65",
+    "CR78",
+    "CR83",
+    "CR89"
+   ],
+   "fy_label": "FY25",
+   "company": "Salesforce, Inc.",
+   "exchange": "NYSE",
+   "fiscal_year": "ends January 31",
+   "kind": "DURABLE",
+   "why": "'Salesforce, Inc. (“Salesforce,” the “Company,” “we” or “our”) is a global leader in customer relationship management (“CRM”) technology, enabling companies of every size and industry to connect with their customers through the power of data, artificial intelligence (“AI”), CRM and trust.' 'The market for our service offerings is highly competitive, rapidly evolving and fragmented, and subject to changing technology with low barriers to entry, shifting customer needs and frequent introductions of new products and services.' 'The markets in which we participate are intensely competitive, and if we do not compete effectively, our operating results could be harmed.' (FY2025 10-K); DURABLE: no 10-K read calls the business cyclical ('cyclical' appears only of the economy's downturns)",
+   "eps_normalized": {
+    "2018": 0.49,
+    "2024": 4.2,
+    "2025": 6.36
+   },
+   "eps_sources": {
+    "2018": "CR77",
+    "2024": "CR100",
+    "2025": "CR100"
+   },
+   "eps_excluded": {
+    "2016": "FY2016 is excluded: a GAAP net loss of $(0.07) a share (net loss $47.4M, the FY2016 10-K's XBRL), with no figure excluding only one-offs in this fact sheet (reduced-data batch: the earnings releases are not in it), so the year has no P/E (the r2 loss rule)",
+    "2017": "FY2017 is excluded, a year distorted by a listed one-off benefit (the mirror of the AAPL FY2002 test): the FY2020 10-K's selected data say 'Amounts include a benefit related to the partial release of the valuation allowance of $612 million, $2 million, $226 million, and $1 million for fiscal 2019, 2018, 2017 and 2016, respectively.', and FY2017's $226M is more than the year's net income without it ($97M of the $323M, derived; as adjusted for ASC 606), so reported EPS ($0.46) is more than double the EPS without it; no figure excluding only it is published, so the year has no P/E (the AVGO FY2018 rule)",
+    "2019": "FY2019 is excluded, a year distorted by a listed one-off benefit (the mirror of the AAPL FY2002 test): the FY2020 and FY2021 10-Ks list 'a benefit related to the partial release of the valuation allowance of $612 million' for fiscal 2019, more than the year's net income without it ($498M of the $1,110M, derived), so reported EPS ($1.43) is 2.2 times the EPS without it; no figure excluding only it is published, so the year has no P/E (the AVGO FY2018 rule)",
+    "2020": "FY2020 is excluded, a year distorted by a listed one-off item (the AAPL FY2002 test): 'Fiscal 2020 income from operations includes a $166 million one-time non-cash charge related to the accounting for our business combination with Salesforce.org, a related party, in which there was the settlement of the reseller agreement between the two companies.' (the FY2020 10-K), and the $166M charge is more than the year's $126M net income; no figure excluding only it is published (the non-GAAP figures also remove stock-based compensation and the amortization of purchased intangibles, which recur), so the year has no P/E",
+    "2021": "FY2021 is excluded, a year distorted by listed one-off benefits (the mirror of the AAPL FY2002 test): 'Two of the Company’s strategic investments completed their initial public offering, resulting in unrealized gains of $1.7 billion during fiscal 2021.' and 'approximately $2.0 billion of one-time benefit from a discrete tax item' (the Q4 FY21 release; the FY2021 10-K lists both), $3.7B together (derived) against the year's $4,072M net income, so reported EPS ($4.38) is far more than double the EPS without them; no figure excluding only them is published, so the year has no P/E (the AVGO FY2018 rule)",
+    "2022": "FY2022 is excluded, a year distorted by a listed one-off benefit (the mirror of the AAPL FY2002 test): 'Mark-to-market accounting of the company’s strategic investments benefited GAAP diluted earnings per share by $0.93' (the Q4 FY22 release) of the year's $1.48, so reported EPS is 2.7 times the $0.55 without it (derived), more than double; no figure excluding only it is published (the non-GAAP $4.78 also removes stock-based compensation and the amortization of purchased intangibles, which recur), so the year has no P/E (the AVGO FY2018 rule)",
+    "2023": "FY2023 is excluded, a year distorted by listed one-off items (the AAPL FY2002 test): 'Restructuring impacted fiscal 2023 GAAP and non-GAAP diluted EPS by (83) cents' and 'Mark-to-market accounting of the company’s strategic investments negatively impacted GAAP diluted EPS by $(0.18)' (the Q4 FY23 release), so the year's $0.21 is 0.17 times the $1.22 without them (derived), under half (restructuring $828M and $239M of losses on strategic investments against $208M of net income); no figure excluding only them is published (the non-GAAP $5.24 also removes stock-based compensation and amortization, which recur), so the year has no P/E"
+   },
+   "revenue_usd_b": {
+    "2016": 6.667216,
+    "2017": 8.437,
+    "2018": 10.54,
+    "2019": 13.282,
+    "2020": 17.098,
+    "2021": 21.252,
+    "2022": 26.492,
+    "2023": 31.352,
+    "2024": 34.857,
+    "2025": 37.895
+   },
+   "revenue_sources": {
+    "2016": "CR61",
+    "2017": "CR77",
+    "2018": "CR77",
+    "2019": "CR79",
+    "2020": "CR84",
+    "2021": "CR90",
+    "2022": "CR95",
+    "2023": "CR100",
+    "2024": "CR100",
+    "2025": "CR100"
+   },
+   "diluted_shares_m": {
+    "2016": 661.647,
+    "2017": 700.0,
+    "2018": 735.0,
+    "2019": 775.0,
+    "2020": 850.0,
+    "2021": 930.0,
+    "2022": 974.0,
+    "2023": 997.0,
+    "2024": 984.0,
+    "2025": 974.0
+   },
+   "shares_sources": {
+    "2016": "CR61",
+    "2017": "CR65",
+    "2018": "CR77",
+    "2019": "CR79",
+    "2020": "CR84",
+    "2021": "CR90",
+    "2022": "CR95",
+    "2023": "CR100",
+    "2024": "CR100",
+    "2025": "CR100"
+   },
+   "pe_window_start": "2004-02-01",
+   "normalization": "GAAP diluted EPS, each year from the latest filing that reports it (FY18 FY2020 10-K; FY24 FY2025 10-K; FY25 FY2025 10-K); the releases' non-GAAP figures also remove stock-based compensation and the amortization of purchased intangibles, which recur (the NKE FY2007 and AVGO rule); a year whose listed one-off items fail the AAPL FY2002 test or its mirror is excluded; FY2016 is excluded: a GAAP net loss of $(0.07) a share (net loss $47.4M, the FY2016 10-K's XBRL), with no figure excluding only one-offs in this fact sheet (reduced-data batch: the earnings releases are not in it), so the year has no P/E (the r2 loss rule); it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2017 is excluded, a year distorted by a listed one-off benefit (the mirror of the AAPL FY2002 test): the FY2020 10-K's selected data say 'Amounts include a benefit related to the partial release of the valuation allowance of $612 million, $2 million, $226 million, and $1 million for fiscal 2019, 2018, 2017 and 2016, respectively.', and FY2017's $226M is more than the year's net income without it ($97M of the $323M, derived; as adjusted for ASC 606), so reported EPS ($0.46) is more than double the EPS without it; no figure excluding only it is published, so the year has no P/E (the AVGO FY2018 rule); it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2019 is excluded, a year distorted by a listed one-off benefit (the mirror of the AAPL FY2002 test): the FY2020 and FY2021 10-Ks list 'a benefit related to the partial release of the valuation allowance of $612 million' for fiscal 2019, more than the year's net income without it ($498M of the $1,110M, derived), so reported EPS ($1.43) is 2.2 times the EPS without it; no figure excluding only it is published, so the year has no P/E (the AVGO FY2018 rule); it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2020 is excluded, a year distorted by a listed one-off item (the AAPL FY2002 test): 'Fiscal 2020 income from operations includes a $166 million one-time non-cash charge related to the accounting for our business combination with Salesforce.org, a related party, in which there was the settlement of the reseller agreement between the two companies.' (the FY2020 10-K), and the $166M charge is more than the year's $126M net income; no figure excluding only it is published (the non-GAAP figures also remove stock-based compensation and the amortization of purchased intangibles, which recur), so the year has no P/E; it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2021 is excluded, a year distorted by listed one-off benefits (the mirror of the AAPL FY2002 test): 'Two of the Company’s strategic investments completed their initial public offering, resulting in unrealized gains of $1.7 billion during fiscal 2021.' and 'approximately $2.0 billion of one-time benefit from a discrete tax item' (the Q4 FY21 release; the FY2021 10-K lists both), $3.7B together (derived) against the year's $4,072M net income, so reported EPS ($4.38) is far more than double the EPS without them; no figure excluding only them is published, so the year has no P/E (the AVGO FY2018 rule); it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2022 is excluded, a year distorted by a listed one-off benefit (the mirror of the AAPL FY2002 test): 'Mark-to-market accounting of the company’s strategic investments benefited GAAP diluted earnings per share by $0.93' (the Q4 FY22 release) of the year's $1.48, so reported EPS is 2.7 times the $0.55 without it (derived), more than double; no figure excluding only it is published (the non-GAAP $4.78 also removes stock-based compensation and the amortization of purchased intangibles, which recur), so the year has no P/E (the AVGO FY2018 rule); it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2023 is excluded, a year distorted by listed one-off items (the AAPL FY2002 test): 'Restructuring impacted fiscal 2023 GAAP and non-GAAP diluted EPS by (83) cents' and 'Mark-to-market accounting of the company’s strategic investments negatively impacted GAAP diluted EPS by $(0.18)' (the Q4 FY23 release), so the year's $0.21 is 0.17 times the $1.22 without them (derived), under half (restructuring $828M and $239M of losses on strategic investments against $208M of net income); no figure excluding only them is published (the non-GAAP $5.24 also removes stock-based compensation and amortization, which recur), so the year has no P/E; it stays a gap (the NKE FY2018 and XOM FY2020 rule); full-data reading from 2022-01-01: the 10-Ks and earnings releases themselves (FY2012-FY2016's losses as in the reduced-data batches, from the 10-Ks' XBRL)",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 19.01,
+   "prev_fy_op_margin_note": "FY25 income from operations $7,205M / revenues $37,895M (FY2025 10-K)",
+   "prev_fy_pretax_margin": 19.63,
+   "prev_fy_pretax_margin_note": "FY25 income before income taxes $7,438M / revenues $37,895M (FY2025 10-K)",
+   "prev_fy_gross_margin": 77.19,
+   "prev_fy_sales_growth": 8.7,
+   "prev_fy_sub_growth": 9.7,
+   "tax_rate": 0.167,
+   "tax_note": "FY25 provision for income taxes $1,241M / pre-tax $7,438M (FY2025 10-K)",
+   "fcf_b": 12.434,
+   "fcf_label": "FY25",
+   "fcf_note": "net cash provided by operating activities $13,092M less capital expenditures $658M (FY2025 10-K)",
+   "cash_b": 14.032,
+   "dividend_annual": null,
+   "dividend_note": "'Prior to the fiscal year ended January 31, 2025, we had never declared or paid any cash dividends on our common stock.' (FY2025 10-K; the rate from the filing that first states it)",
+   "cash_return_text": "share repurchases under the program authorized in August 2022, 'for an aggregate total authorized of $30.0 billion.' (FY2025 10-K)",
+   "business_line": "customer relationship management technology: the AI-powered Salesforce Platform (the FY2025 10-K's description: 'Our AI-powered Salesforce Platform unites our offerings')",
+   "groups": [
+    [
+     "Americas",
+     25.143,
+     8.0
+    ],
+    [
+     "Europe",
+     8.891,
+     9.4
+    ],
+    [
+     "Asia Pacific",
+     3.861,
+     12.2
+    ]
+   ],
+   "groups_basis": "FY25 revenues by geography (the FY2025 10-K), growth on the year before",
+   "published_note": "FY2025 10-K",
+   "eps_published": {
+    "2016": "2018-03-12",
+    "2017": "2020-03-06",
+    "2018": "2020-03-06",
+    "2019": "2021-03-18",
+    "2020": "2022-03-11",
+    "2021": "2023-03-09",
+    "2022": "2024-03-07",
+    "2023": "2025-03-06",
+    "2024": "2025-03-06",
+    "2025": "2025-03-06"
+   },
+   "full_data": true
+  },
+  {
+   "published": "2026-03-03",
+   "sources": [
+    "CR106",
+    "CR100",
+    "CR95",
+    "CR90",
+    "CR84",
+    "CR79",
+    "CR77",
+    "CR65",
+    "CR78",
+    "CR83",
+    "CR89"
+   ],
+   "fy_label": "FY26",
+   "company": "Salesforce, Inc.",
+   "exchange": "NYSE",
+   "fiscal_year": "ends January 31",
+   "kind": "DURABLE",
+   "why": "'Salesforce, Inc. (“Salesforce,” the “Company,” “we” or “our”) is a global leader in customer relationship management (“CRM”) technology, helping organizations of any size become agentic enterprises.' 'The market for our service offerings is highly competitive, rapidly evolving and fragmented, and subject to changing technology with low barriers to entry, shifting customer needs and frequent introductions of new products and services.' 'The markets in which we participate are intensely competitive, and if we do not compete effectively, our operating results could be harmed.' (FY2026 10-K); DURABLE: no 10-K read calls the business cyclical ('cyclical' appears only of the economy's downturns, and of 'the cyclical nature and seasonality of our sales cycle and our customers’ businesses')",
+   "eps_normalized": {
+    "2018": 0.49,
+    "2024": 4.2,
+    "2025": 6.36,
+    "2026": 7.8
+   },
+   "eps_sources": {
+    "2018": "CR77",
+    "2024": "CR106",
+    "2025": "CR106",
+    "2026": "CR106"
+   },
+   "eps_excluded": {
+    "2017": "FY2017 is excluded, a year distorted by a listed one-off benefit (the mirror of the AAPL FY2002 test): the FY2020 10-K's selected data say 'Amounts include a benefit related to the partial release of the valuation allowance of $612 million, $2 million, $226 million, and $1 million for fiscal 2019, 2018, 2017 and 2016, respectively.', and FY2017's $226M is more than the year's net income without it ($97M of the $323M, derived; as adjusted for ASC 606), so reported EPS ($0.46) is more than double the EPS without it; no figure excluding only it is published, so the year has no P/E (the AVGO FY2018 rule)",
+    "2019": "FY2019 is excluded, a year distorted by a listed one-off benefit (the mirror of the AAPL FY2002 test): the FY2020 and FY2021 10-Ks list 'a benefit related to the partial release of the valuation allowance of $612 million' for fiscal 2019, more than the year's net income without it ($498M of the $1,110M, derived), so reported EPS ($1.43) is 2.2 times the EPS without it; no figure excluding only it is published, so the year has no P/E (the AVGO FY2018 rule)",
+    "2020": "FY2020 is excluded, a year distorted by a listed one-off item (the AAPL FY2002 test): 'Fiscal 2020 income from operations includes a $166 million one-time non-cash charge related to the accounting for our business combination with Salesforce.org, a related party, in which there was the settlement of the reseller agreement between the two companies.' (the FY2020 10-K), and the $166M charge is more than the year's $126M net income; no figure excluding only it is published (the non-GAAP figures also remove stock-based compensation and the amortization of purchased intangibles, which recur), so the year has no P/E",
+    "2021": "FY2021 is excluded, a year distorted by listed one-off benefits (the mirror of the AAPL FY2002 test): 'Two of the Company’s strategic investments completed their initial public offering, resulting in unrealized gains of $1.7 billion during fiscal 2021.' and 'approximately $2.0 billion of one-time benefit from a discrete tax item' (the Q4 FY21 release; the FY2021 10-K lists both), $3.7B together (derived) against the year's $4,072M net income, so reported EPS ($4.38) is far more than double the EPS without them; no figure excluding only them is published, so the year has no P/E (the AVGO FY2018 rule)",
+    "2022": "FY2022 is excluded, a year distorted by a listed one-off benefit (the mirror of the AAPL FY2002 test): 'Mark-to-market accounting of the company’s strategic investments benefited GAAP diluted earnings per share by $0.93' (the Q4 FY22 release) of the year's $1.48, so reported EPS is 2.7 times the $0.55 without it (derived), more than double; no figure excluding only it is published (the non-GAAP $4.78 also removes stock-based compensation and the amortization of purchased intangibles, which recur), so the year has no P/E (the AVGO FY2018 rule)",
+    "2023": "FY2023 is excluded, a year distorted by listed one-off items (the AAPL FY2002 test): 'Restructuring impacted fiscal 2023 GAAP and non-GAAP diluted EPS by (83) cents' and 'Mark-to-market accounting of the company’s strategic investments negatively impacted GAAP diluted EPS by $(0.18)' (the Q4 FY23 release), so the year's $0.21 is 0.17 times the $1.22 without them (derived), under half (restructuring $828M and $239M of losses on strategic investments against $208M of net income); no figure excluding only them is published (the non-GAAP $5.24 also removes stock-based compensation and amortization, which recur), so the year has no P/E"
+   },
+   "revenue_usd_b": {
+    "2017": 8.437,
+    "2018": 10.54,
+    "2019": 13.282,
+    "2020": 17.098,
+    "2021": 21.252,
+    "2022": 26.492,
+    "2023": 31.352,
+    "2024": 34.857,
+    "2025": 37.895,
+    "2026": 41.525
+   },
+   "revenue_sources": {
+    "2017": "CR77",
+    "2018": "CR77",
+    "2019": "CR79",
+    "2020": "CR84",
+    "2021": "CR90",
+    "2022": "CR95",
+    "2023": "CR100",
+    "2024": "CR106",
+    "2025": "CR106",
+    "2026": "CR106"
+   },
+   "diluted_shares_m": {
+    "2017": 700.0,
+    "2018": 735.0,
+    "2019": 775.0,
+    "2020": 850.0,
+    "2021": 930.0,
+    "2022": 974.0,
+    "2023": 997.0,
+    "2024": 984.0,
+    "2025": 974.0,
+    "2026": 956.0
+   },
+   "shares_sources": {
+    "2017": "CR65",
+    "2018": "CR77",
+    "2019": "CR79",
+    "2020": "CR84",
+    "2021": "CR90",
+    "2022": "CR95",
+    "2023": "CR100",
+    "2024": "CR106",
+    "2025": "CR106",
+    "2026": "CR106"
+   },
+   "pe_window_start": "2004-02-01",
+   "normalization": "GAAP diluted EPS, each year from the latest filing that reports it (FY18 FY2020 10-K; FY24 FY2026 10-K; FY25 FY2026 10-K; FY26 FY2026 10-K); the releases' non-GAAP figures also remove stock-based compensation and the amortization of purchased intangibles, which recur (the NKE FY2007 and AVGO rule); a year whose listed one-off items fail the AAPL FY2002 test or its mirror is excluded; FY2017 is excluded, a year distorted by a listed one-off benefit (the mirror of the AAPL FY2002 test): the FY2020 10-K's selected data say 'Amounts include a benefit related to the partial release of the valuation allowance of $612 million, $2 million, $226 million, and $1 million for fiscal 2019, 2018, 2017 and 2016, respectively.', and FY2017's $226M is more than the year's net income without it ($97M of the $323M, derived; as adjusted for ASC 606), so reported EPS ($0.46) is more than double the EPS without it; no figure excluding only it is published, so the year has no P/E (the AVGO FY2018 rule); it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2019 is excluded, a year distorted by a listed one-off benefit (the mirror of the AAPL FY2002 test): the FY2020 and FY2021 10-Ks list 'a benefit related to the partial release of the valuation allowance of $612 million' for fiscal 2019, more than the year's net income without it ($498M of the $1,110M, derived), so reported EPS ($1.43) is 2.2 times the EPS without it; no figure excluding only it is published, so the year has no P/E (the AVGO FY2018 rule); it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2020 is excluded, a year distorted by a listed one-off item (the AAPL FY2002 test): 'Fiscal 2020 income from operations includes a $166 million one-time non-cash charge related to the accounting for our business combination with Salesforce.org, a related party, in which there was the settlement of the reseller agreement between the two companies.' (the FY2020 10-K), and the $166M charge is more than the year's $126M net income; no figure excluding only it is published (the non-GAAP figures also remove stock-based compensation and the amortization of purchased intangibles, which recur), so the year has no P/E; it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2021 is excluded, a year distorted by listed one-off benefits (the mirror of the AAPL FY2002 test): 'Two of the Company’s strategic investments completed their initial public offering, resulting in unrealized gains of $1.7 billion during fiscal 2021.' and 'approximately $2.0 billion of one-time benefit from a discrete tax item' (the Q4 FY21 release; the FY2021 10-K lists both), $3.7B together (derived) against the year's $4,072M net income, so reported EPS ($4.38) is far more than double the EPS without them; no figure excluding only them is published, so the year has no P/E (the AVGO FY2018 rule); it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2022 is excluded, a year distorted by a listed one-off benefit (the mirror of the AAPL FY2002 test): 'Mark-to-market accounting of the company’s strategic investments benefited GAAP diluted earnings per share by $0.93' (the Q4 FY22 release) of the year's $1.48, so reported EPS is 2.7 times the $0.55 without it (derived), more than double; no figure excluding only it is published (the non-GAAP $4.78 also removes stock-based compensation and the amortization of purchased intangibles, which recur), so the year has no P/E (the AVGO FY2018 rule); it stays a gap (the NKE FY2018 and XOM FY2020 rule); FY2023 is excluded, a year distorted by listed one-off items (the AAPL FY2002 test): 'Restructuring impacted fiscal 2023 GAAP and non-GAAP diluted EPS by (83) cents' and 'Mark-to-market accounting of the company’s strategic investments negatively impacted GAAP diluted EPS by $(0.18)' (the Q4 FY23 release), so the year's $0.21 is 0.17 times the $1.22 without them (derived), under half (restructuring $828M and $239M of losses on strategic investments against $208M of net income); no figure excluding only them is published (the non-GAAP $5.24 also removes stock-based compensation and amortization, which recur), so the year has no P/E; it stays a gap (the NKE FY2018 and XOM FY2020 rule); full-data reading from 2022-01-01: the 10-Ks and earnings releases themselves (FY2012-FY2016's losses as in the reduced-data batches, from the 10-Ks' XBRL)",
+   "margin_signal_name": "Operating margin change",
+   "prev_fy_op_margin": 20.06,
+   "prev_fy_op_margin_note": "FY26 income from operations $8,331M / revenues $41,525M (FY2026 10-K)",
+   "prev_fy_pretax_margin": 22.93,
+   "prev_fy_pretax_margin_note": "FY26 income before income taxes $9,520M / revenues $41,525M (FY2026 10-K)",
+   "prev_fy_gross_margin": 77.68,
+   "prev_fy_sales_growth": 9.6,
+   "prev_fy_sub_growth": 10.4,
+   "tax_rate": 0.217,
+   "tax_note": "FY26 provision for income taxes $2,063M / pre-tax $9,520M (FY2026 10-K)",
+   "fcf_b": 14.402,
+   "fcf_label": "FY26",
+   "fcf_note": "net cash provided by operating activities $14,996M less capital expenditures $594M (FY2026 10-K)",
+   "cash_b": 9.565,
+   "dividend_annual": null,
+   "dividend_note": "'In February 2026, the Board declared a $0.44 dividend per share that is payable on April 23, 2026 to stockholders of record as of the close of business on April 9, 2026.' (FY2026 10-K; the rate from the filing that first states it)",
+   "cash_return_text": "share repurchases: 'In February 2026, the Board authorized $50.0 billion in share repurchases under the Share Repurchase Program that replaced the previous remaining unpurchased authorization.' (FY2026 10-K)",
+   "business_line": "customer relationship management technology: the AI-powered Agentforce 360 Platform (the FY2026 10-K's description: 'Our artificial intelligence (“AI”) powered Agentforce 360 Platform unites our offerings')",
+   "groups": [
+    [
+     "Americas",
+     27.193,
+     8.2
+    ],
+    [
+     "Europe",
+     10.017,
+     12.7
+    ],
+    [
+     "Asia Pacific",
+     4.315,
+     11.8
+    ]
+   ],
+   "groups_basis": "FY26 revenues by geography (the FY2026 10-K), growth on the year before",
+   "published_note": "FY2026 10-K",
+   "eps_published": {
+    "2017": "2020-03-06",
+    "2018": "2020-03-06",
+    "2019": "2021-03-18",
+    "2020": "2022-03-11",
+    "2021": "2023-03-09",
+    "2022": "2024-03-07",
+    "2023": "2025-03-06",
+    "2024": "2026-03-03",
+    "2025": "2026-03-03",
+    "2026": "2026-03-03"
+   },
+   "full_data": true
   }
  ],
  "prints": [
@@ -7518,6 +8582,1739 @@
    "shares_note": "diluted shares 1001.0M",
    "note": "reduced-data print: the 10-Q's XBRL figures; salesforce.com's earnings release for the quarter is not in this fact sheet",
    "next_print": "Q4 FY22 10-K (March)"
+  },
+  {
+   "quarter": "Q2 FY22",
+   "fy": 2022,
+   "q": 2,
+   "published": "2021-08-26",
+   "source": "CR81",
+   "release": "Aug 25",
+   "release_time": "after the close on Aug 25: 8-K accepted 2021-08-25 16:08 ET; public before the open of the next trading day 2021-08-26",
+   "period_end": "2021-07-31",
+   "raw": {
+    "sub_k": 5914000.0,
+    "sub_prior_k": 4840000.0,
+    "sales_k": 6340000.0,
+    "sales_prior_k": 5151000.0,
+    "gross_profit_k": 4727000.0,
+    "gross_profit_prior_k": 3840000.0,
+    "rd_k": 1020000.0,
+    "rd_prior_k": 898000.0,
+    "ms_k": 2736000.0,
+    "ms_prior_k": 2275000.0,
+    "ga_k": 639000.0,
+    "ga_prior_k": 489000.0,
+    "op_income_k": 332000.0,
+    "op_income_prior_k": 178000.0,
+    "deferred_k": 11067000.0,
+    "deferred_prior_k": 8711000.0,
+    "sales_prev_q_k": 5963000.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 5,914 | 4,840 | 11,450 | 9,415",
+    "sales": "Total revenues | 6,340 | 5,151 | 12,303 | 10,016",
+    "gp": "Gross profit | 4,727 | 3,840 | 9,135 | 7,451",
+    "rd": "Research and development | 1,020 | 898 | 1,971 | 1,757",
+    "ms": "Marketing and sales | 2,736 | 2,275 | 5,280 | 4,665",
+    "ga": "General and administrative | 639 | 489 | 1,198 | 991",
+    "op": "Income from operations | 332 | 178 | 686 | 38",
+    "eps": "Diluted net income per share | 0.56 | 2.85 | 1.06 | 2.96",
+    "shares": "Shares used in computing diluted net income per share | 950 | 922 | 945 | 919",
+    "deferred": "Unearned revenue, end of period | 11,067 | 8,711 | 11,067 | 8,711",
+    "deferred_hdr": "2021 | 2020 | 2021 | 2020",
+    "cash": "Cash and cash equivalents | 6,299 | 6,195; Marketable securities | 3,351 | 5,771",
+    "notes": [
+     "Noncurrent debt | 10,589 | 2,673"
+    ]
+   },
+   "sales_prev_q_row": {
+    "source": "CR80",
+    "row": "Total revenues | 5,963 | 4,865"
+   },
+   "extra_sources": [
+    "CR80"
+   ],
+   "sales_b": 6.34,
+   "sales_pct": 23.1,
+   "seq_pct": 6.3,
+   "sub_pct": 22.2,
+   "deferred_b": 11.067,
+   "deferred_pct": 27.0,
+   "gross_margin": 74.56,
+   "gross_margin_bp": 1.0,
+   "op_margin": 5.24,
+   "op_margin_bp": 178.1,
+   "opex_pct": 20.0,
+   "opex_gap_pp": -3.1,
+   "eps_q": 0.56,
+   "eps_q_prior": 2.85,
+   "diluted_shares_m": 950.0,
+   "cash_b": 9.65,
+   "sales_note": "revenues $6,340M vs $5,151M a year earlier, $5,963M the quarter before; subscription and support $5,914M vs $4,840M",
+   "deferred_note": "unearned revenue $11,067M at the quarter end vs $8,711M a year earlier (the release's unearned revenue roll-forward; the balance sheet's current liability)",
+   "eps_note": "GAAP diluted EPS $0.56 vs $2.85; the release's non-GAAP EPS also excludes stock-based compensation and the amortization of purchased intangibles, which recur, so it is not used",
+   "debt_note": "debt $10.589B (noncurrent debt $10,589M; the balance sheet)",
+   "shares_note": "diluted shares 950M",
+   "next_print": "Q3 FY22 print",
+   "full_data": true,
+   "note": "'Mark-to-market accounting of the company’s strategic investments benefited GAAP diluted earnings per share by $0.42' (display)"
+  },
+  {
+   "quarter": "Q3 FY22",
+   "fy": 2022,
+   "q": 3,
+   "published": "2021-12-01",
+   "source": "CR82",
+   "release": "Nov 30",
+   "release_time": "after the close on Nov 30: 8-K accepted 2021-11-30 16:08 ET; public before the open of the next trading day 2021-12-01",
+   "period_end": "2021-10-31",
+   "raw": {
+    "sub_k": 6379000.0,
+    "sub_prior_k": 5085000.0,
+    "sales_k": 6863000.0,
+    "sales_prior_k": 5419000.0,
+    "gross_profit_k": 5019000.0,
+    "gross_profit_prior_k": 4025000.0,
+    "rd_k": 1203000.0,
+    "rd_prior_k": 902000.0,
+    "ms_k": 3111000.0,
+    "ms_prior_k": 2377000.0,
+    "ga_k": 667000.0,
+    "ga_prior_k": 522000.0,
+    "op_income_k": 38000.0,
+    "op_income_prior_k": 224000.0,
+    "deferred_k": 10116000.0,
+    "deferred_prior_k": 7923000.0,
+    "sales_prev_q_k": 6340000.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 6,379 | 5,085 | 17,829 | 14,500",
+    "sales": "Total revenues | 6,863 | 5,419 | 19,166 | 15,435",
+    "gp": "Gross profit | 5,019 | 4,025 | 14,154 | 11,476",
+    "rd": "Research and development | 1,203 | 902 | 3,174 | 2,659",
+    "ms": "Marketing and sales | 3,111 | 2,377 | 8,391 | 7,042",
+    "ga": "General and administrative | 667 | 522 | 1,865 | 1,513",
+    "op": "Income from operations | 38 | 224 | 724 | 262",
+    "eps": "Diluted net income per share | 0.47 | 1.15 | 1.53 | 4.11",
+    "shares": "Shares used in computing diluted net income per share | 1,001 | 939 | 964 | 926",
+    "deferred": "Unearned revenue, end of period | 10,116 | 7,923 | 10,116 | 7,923",
+    "deferred_hdr": "2021 | 2020 | 2021 | 2020",
+    "cash": "Cash and cash equivalents | 4,753 | 6,195; Marketable securities | 4,638 | 5,771",
+    "notes": [
+     "Noncurrent debt | 10,591 | 2,673"
+    ]
+   },
+   "sales_prev_q_row": {
+    "source": "CR81",
+    "row": "Total revenues | 6,340 | 5,151 | 12,303 | 10,016"
+   },
+   "extra_sources": [
+    "CR81"
+   ],
+   "sales_b": 6.863,
+   "sales_pct": 26.6,
+   "seq_pct": 8.2,
+   "sub_pct": 25.4,
+   "deferred_b": 10.116,
+   "deferred_pct": 27.7,
+   "gross_margin": 73.13,
+   "gross_margin_bp": -114.4,
+   "op_margin": 0.55,
+   "op_margin_bp": -358.0,
+   "opex_pct": 31.0,
+   "opex_gap_pp": 4.4,
+   "eps_q": 0.47,
+   "eps_q_prior": 1.15,
+   "diluted_shares_m": 1001.0,
+   "cash_b": 9.391,
+   "sales_note": "revenues $6,863M vs $5,419M a year earlier, $6,340M the quarter before; subscription and support $6,379M vs $5,085M",
+   "deferred_note": "unearned revenue $10,116M at the quarter end vs $7,923M a year earlier (the release's unearned revenue roll-forward; the balance sheet's current liability)",
+   "eps_note": "GAAP diluted EPS $0.47 vs $1.15; the release's non-GAAP EPS also excludes stock-based compensation and the amortization of purchased intangibles, which recur, so it is not used",
+   "debt_note": "debt $10.591B (noncurrent debt $10,591M; the balance sheet)",
+   "shares_note": "diluted shares 1,001M",
+   "next_print": "Q4 FY22 print (February)",
+   "full_data": true,
+   "note": "'Mark-to-market accounting of the company’s strategic investments benefited GAAP diluted earnings per share by $0.27' (display)"
+  },
+  {
+   "quarter": "Q4 FY22",
+   "fy": 2022,
+   "q": 4,
+   "published": "2022-03-02",
+   "source": "CR83",
+   "release": "Mar 1",
+   "release_time": "after the close on Mar 1: 8-K accepted 2022-03-01 16:11 ET; public before the open of the next trading day 2022-03-02",
+   "period_end": "2022-01-31",
+   "raw": {
+    "sub_k": 6828000.0,
+    "sub_prior_k": 5476000.0,
+    "sales_k": 7326000.0,
+    "sales_prior_k": 5817000.0,
+    "gross_profit_k": 5312000.0,
+    "gross_profit_prior_k": 4338000.0,
+    "rd_k": 1291000.0,
+    "rd_prior_k": 939000.0,
+    "ms_k": 3464000.0,
+    "ms_prior_k": 2632000.0,
+    "ga_k": 733000.0,
+    "ga_prior_k": 574000.0,
+    "op_income_k": -176000.0,
+    "op_income_prior_k": 193000.0,
+    "deferred_k": 15628000.0,
+    "deferred_prior_k": 12607000.0,
+    "sales_prev_q_k": 6863000.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 6,828 | 5,476 | 24,657 | 19,976",
+    "sales": "Total revenues | 7,326 | 5,817 | 26,492 | 21,252",
+    "gp": "Gross profit | 5,312 | 4,338 | 19,466 | 15,814",
+    "rd": "Research and development | 1,291 | 939 | 4,465 | 3,598",
+    "ms": "Marketing and sales | 3,464 | 2,632 | 11,855 | 9,674",
+    "ga": "General and administrative | 733 | 574 | 2,598 | 2,087",
+    "op": "Income (loss) from operations | (176) | 193 | 548 | 455",
+    "eps": "Diluted net income (loss) per share | (0.03) | 0.28 | 1.48 | 4.38",
+    "shares": "Shares used in computing diluted net income (loss) per share | 986 | 939 | 974 | 930",
+    "deferred": "Unearned revenue, end of period | 15,628 | 12,607 | 15,628 | 12,607",
+    "deferred_hdr": "2022 | 2021 | 2022 | 2021",
+    "cash": "Cash and cash equivalents | 5,464 | 6,195; Marketable securities | 5,073 | 5,771",
+    "notes": [
+     "Noncurrent debt | 10,592 | 2,673"
+    ]
+   },
+   "sales_prev_q_row": {
+    "source": "CR82",
+    "row": "Total revenues | 6,863 | 5,419 | 19,166 | 15,435"
+   },
+   "extra_sources": [
+    "CR82"
+   ],
+   "sales_b": 7.326,
+   "sales_pct": 25.9,
+   "seq_pct": 6.7,
+   "sub_pct": 24.7,
+   "deferred_b": 15.628,
+   "deferred_pct": 24.0,
+   "gross_margin": 72.51,
+   "gross_margin_bp": -206.6,
+   "op_margin": -2.4,
+   "op_margin_bp": -572.0,
+   "opex_pct": 32.4,
+   "opex_gap_pp": 6.5,
+   "eps_q": -0.03,
+   "eps_q_prior": 0.28,
+   "diluted_shares_m": 986.0,
+   "cash_b": 10.537,
+   "sales_note": "revenues $7,326M vs $5,817M a year earlier, $6,863M the quarter before; subscription and support $6,828M vs $5,476M",
+   "deferred_note": "unearned revenue $15,628M at the quarter end vs $12,607M a year earlier (the release's unearned revenue roll-forward; the balance sheet's current liability)",
+   "eps_note": "GAAP diluted EPS $(0.03) vs $0.28; the release's non-GAAP EPS also excludes stock-based compensation and the amortization of purchased intangibles, which recur, so it is not used",
+   "debt_note": "debt $10.592B (noncurrent debt $10,592M; the balance sheet)",
+   "shares_note": "diluted shares 986M",
+   "next_print": "Q1 FY23 print (May)",
+   "full_data": true,
+   "note": "'Mark-to-market accounting of the company’s strategic investments benefited GAAP diluted earnings per share by $0.03' (display)",
+   "fy_actual": {
+    "fy": 2022,
+    "fy_label": "FY22",
+    "eps_normalized": null,
+    "revenue_usd_b": 26.492,
+    "diluted_shares_m": 974.0,
+    "normalization_note": "FY22 from the Q4 FY22 release",
+    "op_margin": 2.07,
+    "op_margin_note": "FY22 income from operations $548M / revenues $26,492M (Q4 FY22 release)",
+    "pretax_margin": 5.78,
+    "pretax_margin_note": "FY22 income before income taxes $1,532M / revenues $26,492M (Q4 FY22 release)",
+    "gross_margin": 73.48,
+    "sales_growth": 24.7,
+    "sub_growth": 23.4,
+    "tax_rate": 0.057,
+    "tax_note": "FY22 provision for income taxes $88M / pre-tax $1,532M",
+    "excluded_note": "FY2022 is excluded, a year distorted by a listed one-off benefit (the mirror of the AAPL FY2002 test): 'Mark-to-market accounting of the company’s strategic investments benefited GAAP diluted earnings per share by $0.93' (the Q4 FY22 release) of the year's $1.48, so reported EPS is 2.7 times the $0.55 without it (derived), more than double; no figure excluding only it is published (the non-GAAP $4.78 also removes stock-based compensation and the amortization of purchased intangibles, which recur), so the year has no P/E (the AVGO FY2018 rule)"
+   }
+  },
+  {
+   "quarter": "Q1 FY23",
+   "fy": 2023,
+   "q": 1,
+   "published": "2022-06-01",
+   "source": "CR86",
+   "release": "May 31",
+   "release_time": "after the close on May 31: 8-K accepted 2022-05-31 16:08 ET; public before the open of the next trading day 2022-06-01",
+   "period_end": "2022-04-30",
+   "raw": {
+    "sub_k": 6856000.0,
+    "sub_prior_k": 5536000.0,
+    "sales_k": 7411000.0,
+    "sales_prior_k": 5963000.0,
+    "gross_profit_k": 5366000.0,
+    "gross_profit_prior_k": 4408000.0,
+    "rd_k": 1318000.0,
+    "rd_prior_k": 951000.0,
+    "ms_k": 3372000.0,
+    "ms_prior_k": 2544000.0,
+    "ga_k": 656000.0,
+    "ga_prior_k": 559000.0,
+    "op_income_k": 20000.0,
+    "op_income_prior_k": 354000.0,
+    "deferred_k": 13636000.0,
+    "deferred_prior_k": 11158000.0,
+    "sales_prev_q_k": 7326000.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 6,856 | 5,536",
+    "sales": "Total revenues | 7,411 | 5,963",
+    "gp": "Gross profit | 5,366 | 4,408",
+    "rd": "Research and development | 1,318 | 951",
+    "ms": "Marketing and sales | 3,372 | 2,544",
+    "ga": "General and administrative | 656 | 559",
+    "op": "Income from operations | 20 | 354",
+    "eps": "Diluted net income per share | 0.03 | 0.50",
+    "shares": "Shares used in computing diluted net income per share | 1,001 | 940",
+    "deferred": "Unearned revenue, end of period | 13,636 | 11,158",
+    "deferred_hdr": "2022 | 2021",
+    "cash": "Cash and cash equivalents | 6,859 | 5,464; Marketable securities | 6,644 | 5,073",
+    "notes": [
+     "Debt, current | 1,002 | 4",
+     "Noncurrent debt | 9,595 | 10,592"
+    ]
+   },
+   "sales_prev_q_row": {
+    "source": "CR83",
+    "row": "Total revenues | 7,326 | 5,817 | 26,492 | 21,252"
+   },
+   "extra_sources": [
+    "CR83"
+   ],
+   "sales_b": 7.411,
+   "sales_pct": 24.3,
+   "seq_pct": 1.2,
+   "sub_pct": 23.8,
+   "deferred_b": 13.636,
+   "deferred_pct": 22.2,
+   "gross_margin": 72.41,
+   "gross_margin_bp": -151.7,
+   "op_margin": 0.27,
+   "op_margin_bp": -566.7,
+   "opex_pct": 31.9,
+   "opex_gap_pp": 7.6,
+   "eps_q": 0.03,
+   "eps_q_prior": 0.5,
+   "diluted_shares_m": 1001.0,
+   "cash_b": 13.503,
+   "sales_note": "revenues $7,411M vs $5,963M a year earlier, $7,326M the quarter before; subscription and support $6,856M vs $5,536M",
+   "deferred_note": "unearned revenue $13,636M at the quarter end vs $11,158M a year earlier (the release's unearned revenue roll-forward; the balance sheet's current liability)",
+   "eps_note": "GAAP diluted EPS $0.03 vs $0.50; the release's non-GAAP EPS also excludes stock-based compensation and the amortization of purchased intangibles, which recur, so it is not used",
+   "debt_note": "debt $10.597B (derived: debt, current $1,002M plus noncurrent debt $9,595M, the balance sheet)",
+   "shares_note": "diluted shares 1,001M",
+   "next_print": "Q2 FY23 print (August)",
+   "full_data": true
+  },
+  {
+   "quarter": "Q2 FY23",
+   "fy": 2023,
+   "q": 2,
+   "published": "2022-08-25",
+   "source": "CR87",
+   "release": "Aug 24",
+   "release_time": "after the close on Aug 24: 8-K accepted 2022-08-24 16:08 ET; public before the open of the next trading day 2022-08-25",
+   "period_end": "2022-07-31",
+   "raw": {
+    "sub_k": 7143000.0,
+    "sub_prior_k": 5914000.0,
+    "sales_k": 7720000.0,
+    "sales_prior_k": 6340000.0,
+    "gross_profit_k": 5593000.0,
+    "gross_profit_prior_k": 4727000.0,
+    "rd_k": 1329000.0,
+    "rd_prior_k": 1020000.0,
+    "ms_k": 3424000.0,
+    "ms_prior_k": 2736000.0,
+    "ga_k": 647000.0,
+    "ga_prior_k": 639000.0,
+    "op_income_k": 193000.0,
+    "op_income_prior_k": 332000.0,
+    "deferred_k": 12825000.0,
+    "deferred_prior_k": 11067000.0,
+    "sales_prev_q_k": 7411000.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 7,143 | 5,914 | 13,999 | 11,450",
+    "sales": "Total revenues | 7,720 | 6,340 | 15,131 | 12,303",
+    "gp": "Gross profit | 5,593 | 4,727 | 10,959 | 9,135",
+    "rd": "Research and development | 1,329 | 1,020 | 2,647 | 1,971",
+    "ms": "Marketing and sales | 3,424 | 2,736 | 6,796 | 5,280",
+    "ga": "General and administrative | 647 | 639 | 1,303 | 1,198",
+    "op": "Income from operations | 193 | 332 | 213 | 686",
+    "eps": "Diluted net income per share | 0.07 | 0.56 | 0.10 | 1.06",
+    "shares": "Shares used in computing diluted net income per share | 1,001 | 950 | 1,001 | 945",
+    "deferred": "Unearned revenue, end of period | 12,825 | 11,067 | 12,825 | 11,067",
+    "deferred_hdr": "2022 | 2021 | 2022 | 2021",
+    "cash": "Cash and cash equivalents | 6,931 | 5,464; Marketable securities | 6,602 | 5,073",
+    "notes": [
+     "Debt, current | 1,183 | 4",
+     "Noncurrent debt | 9,416 | 10,592"
+    ]
+   },
+   "sales_prev_q_row": {
+    "source": "CR86",
+    "row": "Total revenues | 7,411 | 5,963"
+   },
+   "extra_sources": [
+    "CR86"
+   ],
+   "sales_b": 7.72,
+   "sales_pct": 21.8,
+   "seq_pct": 4.2,
+   "sub_pct": 20.8,
+   "deferred_b": 12.825,
+   "deferred_pct": 15.9,
+   "gross_margin": 72.45,
+   "gross_margin_bp": -211.0,
+   "op_margin": 2.5,
+   "op_margin_bp": -273.7,
+   "opex_pct": 22.9,
+   "opex_gap_pp": 1.1,
+   "eps_q": 0.07,
+   "eps_q_prior": 0.56,
+   "diluted_shares_m": 1001.0,
+   "cash_b": 13.533,
+   "sales_note": "revenues $7,720M vs $6,340M a year earlier, $7,411M the quarter before; subscription and support $7,143M vs $5,914M",
+   "deferred_note": "unearned revenue $12,825M at the quarter end vs $11,067M a year earlier (the release's unearned revenue roll-forward; the balance sheet's current liability)",
+   "eps_note": "GAAP diluted EPS $0.07 vs $0.56; the release's non-GAAP EPS also excludes stock-based compensation and the amortization of purchased intangibles, which recur, so it is not used",
+   "debt_note": "debt $10.599B (derived: debt, current $1,183M plus noncurrent debt $9,416M, the balance sheet)",
+   "shares_note": "diluted shares 1,001M",
+   "next_print": "Q3 FY23 print (November)",
+   "full_data": true,
+   "note": "'Mark-to-market accounting of the company’s strategic investments benefited GAAP diluted EPS by $0.03' (display)"
+  },
+  {
+   "quarter": "Q3 FY23",
+   "fy": 2023,
+   "q": 3,
+   "published": "2022-12-01",
+   "source": "CR88",
+   "release": "Nov 30",
+   "release_time": "after the close on Nov 30: 8-K accepted 2022-11-30 16:06 ET; public before the open of the next trading day 2022-12-01",
+   "period_end": "2022-10-31",
+   "raw": {
+    "sub_k": 7233000.0,
+    "sub_prior_k": 6379000.0,
+    "sales_k": 7837000.0,
+    "sales_prior_k": 6863000.0,
+    "gross_profit_k": 5749000.0,
+    "gross_profit_prior_k": 5019000.0,
+    "rd_k": 1280000.0,
+    "rd_prior_k": 1203000.0,
+    "ms_k": 3345000.0,
+    "ms_prior_k": 3111000.0,
+    "ga_k": 664000.0,
+    "ga_prior_k": 667000.0,
+    "op_income_k": 460000.0,
+    "op_income_prior_k": 38000.0,
+    "deferred_k": 11193000.0,
+    "deferred_prior_k": 10116000.0,
+    "sales_prev_q_k": 7720000.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 7,233 | 6,379 | 21,232 | 17,829",
+    "sales": "Total revenues | 7,837 | 6,863 | 22,968 | 19,166",
+    "gp": "Gross profit | 5,749 | 5,019 | 16,708 | 14,154",
+    "rd": "Research and development | 1,280 | 1,203 | 3,927 | 3,174",
+    "ms": "Marketing and sales | 3,345 | 3,111 | 10,141 | 8,391",
+    "ga": "General and administrative | 664 | 667 | 1,967 | 1,865",
+    "op": "Income from operations | 460 | 38 | 673 | 724",
+    "eps": "Diluted net income per share | 0.21 | 0.47 | 0.31 | 1.53",
+    "shares": "Shares used in computing diluted net income per share | 1,000 | 1,001 | 1,001 | 964",
+    "deferred": "Unearned revenue, end of period | 11,193 | 10,116 | 11,193 | 10,116",
+    "deferred_hdr": "2022 | 2021 | 2022 | 2021",
+    "cash": "Cash and cash equivalents | 6,076 | 5,464; Marketable securities | 5,842 | 5,073",
+    "notes": [
+     "Debt, current | 1,182 | 4",
+     "Noncurrent debt | 9,418 | 10,592"
+    ]
+   },
+   "sales_prev_q_row": {
+    "source": "CR87",
+    "row": "Total revenues | 7,720 | 6,340 | 15,131 | 12,303"
+   },
+   "extra_sources": [
+    "CR87"
+   ],
+   "sales_b": 7.837,
+   "sales_pct": 14.2,
+   "seq_pct": 1.5,
+   "sub_pct": 13.4,
+   "deferred_b": 11.193,
+   "deferred_pct": 10.6,
+   "gross_margin": 73.36,
+   "gross_margin_bp": 22.6,
+   "op_margin": 5.87,
+   "op_margin_bp": 531.6,
+   "opex_pct": 6.2,
+   "opex_gap_pp": -8.0,
+   "eps_q": 0.21,
+   "eps_q_prior": 0.47,
+   "diluted_shares_m": 1000.0,
+   "cash_b": 11.918,
+   "sales_note": "revenues $7,837M vs $6,863M a year earlier, $7,720M the quarter before; subscription and support $7,233M vs $6,379M",
+   "deferred_note": "unearned revenue $11,193M at the quarter end vs $10,116M a year earlier (the release's unearned revenue roll-forward; the balance sheet's current liability)",
+   "eps_note": "GAAP diluted EPS $0.21 vs $0.47; the release's non-GAAP EPS also excludes stock-based compensation and the amortization of purchased intangibles, which recur, so it is not used",
+   "debt_note": "debt $10.600B (derived: debt, current $1,182M plus noncurrent debt $9,418M, the balance sheet)",
+   "shares_note": "diluted shares 1,000M",
+   "next_print": "Q4 FY23 print (March)",
+   "full_data": true,
+   "note": "'Mark-to-market accounting of the Company’s strategic investments benefited GAAP diluted EPS by $0.02' (display)"
+  },
+  {
+   "quarter": "Q4 FY23",
+   "fy": 2023,
+   "q": 4,
+   "published": "2023-03-02",
+   "source": "CR89",
+   "release": "Mar 1",
+   "release_time": "after the close on Mar 1: 8-K accepted 2023-03-01 16:08 ET; public before the open of the next trading day 2023-03-02",
+   "period_end": "2023-01-31",
+   "raw": {
+    "sub_k": 7789000.0,
+    "sub_prior_k": 6828000.0,
+    "sales_k": 8384000.0,
+    "sales_prior_k": 7326000.0,
+    "gross_profit_k": 6284000.0,
+    "gross_profit_prior_k": 5312000.0,
+    "rd_k": 1128000.0,
+    "rd_prior_k": 1291000.0,
+    "ms_k": 3385000.0,
+    "ms_prior_k": 3464000.0,
+    "ga_k": 586000.0,
+    "ga_prior_k": 733000.0,
+    "op_income_k": 357000.0,
+    "op_income_prior_k": -176000.0,
+    "deferred_k": 17376000.0,
+    "deferred_prior_k": 15628000.0,
+    "sales_prev_q_k": 7837000.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 7,789 | 6,828 | 29,021 | 24,657",
+    "sales": "Total revenues | 8,384 | 7,326 | 31,352 | 26,492",
+    "gp": "Gross profit | 6,284 | 5,312 | 22,992 | 19,466",
+    "rd": "Research and development | 1,128 | 1,291 | 5,055 | 4,465",
+    "ms": "Marketing and sales | 3,385 | 3,464 | 13,526 | 11,855",
+    "ga": "General and administrative | 586 | 733 | 2,553 | 2,598",
+    "op": "Income (loss) from operations | 357 | (176) | 1,030 | 548",
+    "eps": "Diluted net income (loss) per share | (0.10) | (0.03) | 0.21 | 1.48",
+    "shares": "Shares used in computing diluted net income (loss) per share | 984 | 986 | 997 | 974",
+    "deferred": "Unearned revenue, end of period | 17,376 | 15,628 | 17,376 | 15,628",
+    "deferred_hdr": "2023 | 2022 | 2023 | 2022",
+    "cash": "Cash and cash equivalents | 7,016 | 5,464; Marketable securities | 5,492 | 5,073",
+    "notes": [
+     "Debt, current | 1,182 | 4",
+     "Noncurrent debt | 9,419 | 10,592",
+     "Restructuring (3) | 828 | 0 | 828 | 0"
+    ]
+   },
+   "sales_prev_q_row": {
+    "source": "CR88",
+    "row": "Total revenues | 7,837 | 6,863 | 22,968 | 19,166"
+   },
+   "extra_sources": [
+    "CR88"
+   ],
+   "sales_b": 8.384,
+   "sales_pct": 14.4,
+   "seq_pct": 7.0,
+   "sub_pct": 14.1,
+   "deferred_b": 17.376,
+   "deferred_pct": 11.2,
+   "gross_margin": 74.95,
+   "gross_margin_bp": 244.3,
+   "op_margin": 4.26,
+   "op_margin_bp": 666.1,
+   "opex_pct": -7.1,
+   "opex_gap_pp": -21.5,
+   "eps_q": -0.1,
+   "eps_q_prior": -0.03,
+   "diluted_shares_m": 984.0,
+   "cash_b": 12.508,
+   "sales_note": "revenues $8,384M vs $7,326M a year earlier, $7,837M the quarter before; subscription and support $7,789M vs $6,828M",
+   "deferred_note": "unearned revenue $17,376M at the quarter end vs $15,628M a year earlier (the release's unearned revenue roll-forward; the balance sheet's current liability)",
+   "eps_note": "GAAP diluted EPS $(0.10) vs $(0.03); the release's non-GAAP EPS also excludes stock-based compensation and the amortization of purchased intangibles, which recur, so it is not used",
+   "debt_note": "debt $10.601B (derived: debt, current $1,182M plus noncurrent debt $9,419M, the balance sheet)",
+   "shares_note": "diluted shares 984M",
+   "next_print": "Q1 FY24 print (May)",
+   "full_data": true,
+   "note": "restructuring $828M vs $0M a year earlier, a separately stated operating line outside the opex signal; 'Mark-to-market accounting of the Company’s strategic investments negatively impacted GAAP diluted loss per share by $(0.24)' (display)",
+   "fy_actual": {
+    "fy": 2023,
+    "fy_label": "FY23",
+    "eps_normalized": null,
+    "revenue_usd_b": 31.352,
+    "diluted_shares_m": 997.0,
+    "normalization_note": "FY23 from the Q4 FY23 release",
+    "op_margin": 3.29,
+    "op_margin_note": "FY23 income from operations $1,030M / revenues $31,352M (Q4 FY23 release)",
+    "pretax_margin": 2.11,
+    "pretax_margin_note": "FY23 income before income taxes $660M / revenues $31,352M (Q4 FY23 release)",
+    "gross_margin": 73.34,
+    "sales_growth": 18.3,
+    "sub_growth": 17.7,
+    "tax_rate": 0.685,
+    "tax_note": "FY23 provision for income taxes $452M / pre-tax $660M",
+    "excluded_note": "FY2023 is excluded, a year distorted by listed one-off items (the AAPL FY2002 test): 'Restructuring impacted fiscal 2023 GAAP and non-GAAP diluted EPS by (83) cents' and 'Mark-to-market accounting of the company’s strategic investments negatively impacted GAAP diluted EPS by $(0.18)' (the Q4 FY23 release), so the year's $0.21 is 0.17 times the $1.22 without them (derived), under half (restructuring $828M and $239M of losses on strategic investments against $208M of net income); no figure excluding only them is published (the non-GAAP $5.24 also removes stock-based compensation and amortization, which recur), so the year has no P/E"
+   }
+  },
+  {
+   "quarter": "Q1 FY24",
+   "fy": 2024,
+   "q": 1,
+   "published": "2023-06-01",
+   "source": "CR91",
+   "release": "May 31",
+   "release_time": "after the close on May 31: 8-K accepted 2023-05-31 16:07 ET; public before the open of the next trading day 2023-06-01",
+   "period_end": "2023-04-30",
+   "raw": {
+    "sub_k": 7642000.0,
+    "sub_prior_k": 6856000.0,
+    "sales_k": 8247000.0,
+    "sales_prior_k": 7411000.0,
+    "gross_profit_k": 6122000.0,
+    "gross_profit_prior_k": 5366000.0,
+    "rd_k": 1207000.0,
+    "rd_prior_k": 1318000.0,
+    "ms_k": 3154000.0,
+    "ms_prior_k": 3372000.0,
+    "ga_k": 638000.0,
+    "ga_prior_k": 656000.0,
+    "op_income_k": 412000.0,
+    "op_income_prior_k": 20000.0,
+    "deferred_k": 15121000.0,
+    "deferred_prior_k": 13636000.0,
+    "sales_prev_q_k": 8384000.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 7,642 | 6,856",
+    "sales": "Total revenues | 8,247 | 7,411",
+    "gp": "Gross profit | 6,122 | 5,366",
+    "rd": "Research and development | 1,207 | 1,318",
+    "ms": "Marketing and sales | 3,154 | 3,372",
+    "ga": "General and administrative | 638 | 656",
+    "op": "Income from operations | 412 | 20",
+    "eps": "Diluted net income per share | 0.20 | 0.03",
+    "shares": "Shares used in computing diluted net income per share | 988 | 1,001",
+    "deferred": "Unearned revenue, end of period | 15,121 | 13,636",
+    "deferred_hdr": "2023 | 2022",
+    "cash": "Cash and cash equivalents | 9,155 | 7,016; Marketable securities | 4,822 | 5,492",
+    "notes": [
+     "Debt, current | 181 | 1,182",
+     "Noncurrent debt | 9,421 | 9,419",
+     "Restructuring (3) | 711 | 0"
+    ]
+   },
+   "sales_prev_q_row": {
+    "source": "CR89",
+    "row": "Total revenues | 8,384 | 7,326 | 31,352 | 26,492"
+   },
+   "extra_sources": [
+    "CR89"
+   ],
+   "sales_b": 8.247,
+   "sales_pct": 11.3,
+   "seq_pct": -1.6,
+   "sub_pct": 11.5,
+   "deferred_b": 15.121,
+   "deferred_pct": 10.9,
+   "gross_margin": 74.23,
+   "gross_margin_bp": 182.7,
+   "op_margin": 5.0,
+   "op_margin_bp": 472.6,
+   "opex_pct": -6.5,
+   "opex_gap_pp": -17.8,
+   "eps_q": 0.2,
+   "eps_q_prior": 0.03,
+   "diluted_shares_m": 988.0,
+   "cash_b": 13.977,
+   "sales_note": "revenues $8,247M vs $7,411M a year earlier, $8,384M the quarter before; subscription and support $7,642M vs $6,856M",
+   "deferred_note": "unearned revenue $15,121M at the quarter end vs $13,636M a year earlier (the release's unearned revenue roll-forward; the balance sheet's current liability)",
+   "eps_note": "GAAP diluted EPS $0.20 vs $0.03; the release's non-GAAP EPS also excludes stock-based compensation and the amortization of purchased intangibles, which recur, so it is not used",
+   "debt_note": "debt $9.602B (derived: debt, current $181M plus noncurrent debt $9,421M, the balance sheet)",
+   "shares_note": "diluted shares 988M",
+   "next_print": "Q2 FY24 print (August)",
+   "full_data": true,
+   "note": "restructuring $711M vs $0M a year earlier, a separately stated operating line outside the opex signal; 'Losses on the Company’s strategic investments negatively impacted GAAP diluted earnings per share by $(0.11)' (display)"
+  },
+  {
+   "quarter": "Q2 FY24",
+   "fy": 2024,
+   "q": 2,
+   "published": "2023-08-31",
+   "source": "CR92",
+   "release": "Aug 30",
+   "release_time": "after the close on Aug 30: 8-K accepted 2023-08-30 16:06 ET; public before the open of the next trading day 2023-08-31",
+   "period_end": "2023-07-31",
+   "raw": {
+    "sub_k": 8006000.0,
+    "sub_prior_k": 7143000.0,
+    "sales_k": 8603000.0,
+    "sales_prior_k": 7720000.0,
+    "gross_profit_k": 6490000.0,
+    "gross_profit_prior_k": 5593000.0,
+    "rd_k": 1220000.0,
+    "rd_prior_k": 1329000.0,
+    "ms_k": 3113000.0,
+    "ms_prior_k": 3424000.0,
+    "ga_k": 632000.0,
+    "ga_prior_k": 647000.0,
+    "op_income_k": 1476000.0,
+    "op_income_prior_k": 193000.0,
+    "deferred_k": 14237000.0,
+    "deferred_prior_k": 12825000.0,
+    "sales_prev_q_k": 8247000.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 8,006 | 7,143 | 15,648 | 13,999",
+    "sales": "Total revenues | 8,603 | 7,720 | 16,850 | 15,131",
+    "gp": "Gross profit | 6,490 | 5,593 | 12,612 | 10,959",
+    "rd": "Research and development | 1,220 | 1,329 | 2,427 | 2,647",
+    "ms": "Marketing and sales | 3,113 | 3,424 | 6,267 | 6,796",
+    "ga": "General and administrative | 632 | 647 | 1,270 | 1,303",
+    "op": "Income from operations | 1,476 | 193 | 1,888 | 213",
+    "eps": "Diluted net income per share | 1.28 | 0.07 | 1.49 | 0.10",
+    "shares": "Shares used in computing diluted net income per share | 986 | 1,001 | 987 | 1,001",
+    "deferred": "Unearned revenue, end of period | 14,237 | 12,825 | 14,237 | 12,825",
+    "deferred_hdr": "2023 | 2022 | 2023 | 2022",
+    "cash": "Cash and cash equivalents | 6,772 | 7,016; Marketable securities | 5,625 | 5,492",
+    "notes": [
+     "Debt, current | 999 | 1,182",
+     "Noncurrent debt | 8,424 | 9,419",
+     "Restructuring (3) | 49 | 0 | 760 | 0"
+    ]
+   },
+   "sales_prev_q_row": {
+    "source": "CR91",
+    "row": "Total revenues | 8,247 | 7,411"
+   },
+   "extra_sources": [
+    "CR91"
+   ],
+   "sales_b": 8.603,
+   "sales_pct": 11.4,
+   "seq_pct": 4.3,
+   "sub_pct": 12.1,
+   "deferred_b": 14.237,
+   "deferred_pct": 11.0,
+   "gross_margin": 75.44,
+   "gross_margin_bp": 299.1,
+   "op_margin": 17.16,
+   "op_margin_bp": 1465.7,
+   "opex_pct": -8.1,
+   "opex_gap_pp": -19.5,
+   "eps_q": 1.28,
+   "eps_q_prior": 0.07,
+   "diluted_shares_m": 986.0,
+   "cash_b": 12.397,
+   "sales_note": "revenues $8,603M vs $7,720M a year earlier, $8,247M the quarter before; subscription and support $8,006M vs $7,143M",
+   "deferred_note": "unearned revenue $14,237M at the quarter end vs $12,825M a year earlier (the release's unearned revenue roll-forward; the balance sheet's current liability)",
+   "eps_note": "GAAP diluted EPS $1.28 vs $0.07; the release's non-GAAP EPS also excludes stock-based compensation and the amortization of purchased intangibles, which recur, so it is not used",
+   "debt_note": "debt $9.423B (derived: debt, current $999M plus noncurrent debt $8,424M, the balance sheet)",
+   "shares_note": "diluted shares 986M",
+   "next_print": "Q3 FY24 print (November)",
+   "full_data": true,
+   "note": "restructuring $49M vs $0M a year earlier, a separately stated operating line outside the opex signal; 'Losses on the Company’s strategic investments negatively impacted GAAP diluted EPS by $(0.02)' (display)"
+  },
+  {
+   "quarter": "Q3 FY24",
+   "fy": 2024,
+   "q": 3,
+   "published": "2023-11-30",
+   "source": "CR93",
+   "release": "Nov 29",
+   "release_time": "after the close on Nov 29: 8-K accepted 2023-11-29 16:05 ET; public before the open of the next trading day 2023-11-30",
+   "period_end": "2023-10-31",
+   "raw": {
+    "sub_k": 8141000.0,
+    "sub_prior_k": 7233000.0,
+    "sales_k": 8720000.0,
+    "sales_prior_k": 7837000.0,
+    "gross_profit_k": 6565000.0,
+    "gross_profit_prior_k": 5749000.0,
+    "rd_k": 1204000.0,
+    "rd_prior_k": 1280000.0,
+    "ms_k": 3173000.0,
+    "ms_prior_k": 3345000.0,
+    "ga_k": 632000.0,
+    "ga_prior_k": 664000.0,
+    "op_income_k": 1501000.0,
+    "op_income_prior_k": 460000.0,
+    "deferred_k": 12564000.0,
+    "deferred_prior_k": 11193000.0,
+    "sales_prev_q_k": 8603000.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 8,141 | 7,233 | 23,789 | 21,232",
+    "sales": "Total revenues | 8,720 | 7,837 | 25,570 | 22,968",
+    "gp": "Gross profit | 6,565 | 5,749 | 19,177 | 16,708",
+    "rd": "Research and development | 1,204 | 1,280 | 3,631 | 3,927",
+    "ms": "Marketing and sales | 3,173 | 3,345 | 9,440 | 10,141",
+    "ga": "General and administrative | 632 | 664 | 1,902 | 1,967",
+    "op": "Income from operations | 1,501 | 460 | 3,389 | 673",
+    "eps": "Diluted net income per share | 1.25 | 0.21 | 2.73 | 0.31",
+    "shares": "Shares used in computing diluted net income per share | 981 | 1,000 | 985 | 1,001",
+    "deferred": "Unearned revenue, end of period | 12,564 | 11,193 | 12,564 | 11,193",
+    "deferred_hdr": "2023 | 2022 | 2023 | 2022",
+    "cash": "Cash and cash equivalents | 6,453 | 7,016; Marketable securities | 5,410 | 5,492",
+    "notes": [
+     "Debt, current | 999 | 1,182",
+     "Noncurrent debt | 8,426 | 9,419",
+     "Restructuring (3) | 55 | 0 | 815 | 0"
+    ]
+   },
+   "sales_prev_q_row": {
+    "source": "CR92",
+    "row": "Total revenues | 8,603 | 7,720 | 16,850 | 15,131"
+   },
+   "extra_sources": [
+    "CR92"
+   ],
+   "sales_b": 8.72,
+   "sales_pct": 11.3,
+   "seq_pct": 1.4,
+   "sub_pct": 12.6,
+   "deferred_b": 12.564,
+   "deferred_pct": 12.2,
+   "gross_margin": 75.29,
+   "gross_margin_bp": 193.0,
+   "op_margin": 17.21,
+   "op_margin_bp": 1134.4,
+   "opex_pct": -5.3,
+   "opex_gap_pp": -16.6,
+   "eps_q": 1.25,
+   "eps_q_prior": 0.21,
+   "diluted_shares_m": 981.0,
+   "cash_b": 11.863,
+   "sales_note": "revenues $8,720M vs $7,837M a year earlier, $8,603M the quarter before; subscription and support $8,141M vs $7,233M",
+   "deferred_note": "unearned revenue $12,564M at the quarter end vs $11,193M a year earlier (the release's unearned revenue roll-forward; the balance sheet's current liability)",
+   "eps_note": "GAAP diluted EPS $1.25 vs $0.21; the release's non-GAAP EPS also excludes stock-based compensation and the amortization of purchased intangibles, which recur, so it is not used",
+   "debt_note": "debt $9.425B (derived: debt, current $999M plus noncurrent debt $8,426M, the balance sheet)",
+   "shares_note": "diluted shares 981M",
+   "next_print": "Q4 FY24 print (March)",
+   "full_data": true,
+   "note": "restructuring $55M vs $0M a year earlier, a separately stated operating line outside the opex signal; 'Losses on the Company’s strategic investments negatively impacted GAAP diluted EPS by $(0.06)' (display)"
+  },
+  {
+   "quarter": "Q4 FY24",
+   "fy": 2024,
+   "q": 4,
+   "published": "2024-02-29",
+   "source": "CR94",
+   "release": "Feb 28",
+   "release_time": "after the close on Feb 28: 8-K accepted 2024-02-28 16:04 ET; public before the open of the next trading day 2024-02-29",
+   "period_end": "2024-01-31",
+   "raw": {
+    "sub_k": 8748000.0,
+    "sub_prior_k": 7789000.0,
+    "sales_k": 9287000.0,
+    "sales_prior_k": 8384000.0,
+    "gross_profit_k": 7139000.0,
+    "gross_profit_prior_k": 6284000.0,
+    "rd_k": 1275000.0,
+    "rd_prior_k": 1128000.0,
+    "ms_k": 3437000.0,
+    "ms_prior_k": 3385000.0,
+    "ga_k": 632000.0,
+    "ga_prior_k": 586000.0,
+    "op_income_k": 1622000.0,
+    "op_income_prior_k": 357000.0,
+    "deferred_k": 19003000.0,
+    "deferred_prior_k": 17376000.0,
+    "sales_prev_q_k": 8720000.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 8,748 | 7,789 | 32,537 | 29,021",
+    "sales": "Total revenues | 9,287 | 8,384 | 34,857 | 31,352",
+    "gp": "Gross profit | 7,139 | 6,284 | 26,316 | 22,992",
+    "rd": "Research and development | 1,275 | 1,128 | 4,906 | 5,055",
+    "ms": "Marketing and sales | 3,437 | 3,385 | 12,877 | 13,526",
+    "ga": "General and administrative | 632 | 586 | 2,534 | 2,553",
+    "op": "Income from operations | 1,622 | 357 | 5,011 | 1,030",
+    "eps": "Diluted net income (loss) per share | 1.47 | (0.10) | 4.20 | 0.21",
+    "shares": "Shares used in computing diluted net income (loss) per share | 983 | 984 | 984 | 997",
+    "deferred": "Unearned revenue, end of period | 19,003 | 17,376 | 19,003 | 17,376",
+    "deferred_hdr": "2024 | 2023 | 2024 | 2023",
+    "cash": "Cash and cash equivalents | 8,472 | 7,016; Marketable securities | 5,722 | 5,492",
+    "notes": [
+     "Debt, current | 999 | 1,182",
+     "Noncurrent debt | 8,427 | 9,419",
+     "Restructuring (3) | 173 | 828 | 988 | 828"
+    ]
+   },
+   "sales_prev_q_row": {
+    "source": "CR93",
+    "row": "Total revenues | 8,720 | 7,837 | 25,570 | 22,968"
+   },
+   "extra_sources": [
+    "CR93"
+   ],
+   "sales_b": 9.287,
+   "sales_pct": 10.8,
+   "seq_pct": 6.5,
+   "sub_pct": 12.3,
+   "deferred_b": 19.003,
+   "deferred_pct": 9.4,
+   "gross_margin": 76.87,
+   "gross_margin_bp": 191.9,
+   "op_margin": 17.47,
+   "op_margin_bp": 1320.7,
+   "opex_pct": 4.8,
+   "opex_gap_pp": -6.0,
+   "eps_q": 1.47,
+   "eps_q_prior": -0.1,
+   "diluted_shares_m": 983.0,
+   "cash_b": 14.194,
+   "sales_note": "revenues $9,287M vs $8,384M a year earlier, $8,720M the quarter before; subscription and support $8,748M vs $7,789M",
+   "deferred_note": "unearned revenue $19,003M at the quarter end vs $17,376M a year earlier (the release's unearned revenue roll-forward; the balance sheet's current liability)",
+   "eps_note": "GAAP diluted EPS $1.47 vs $(0.10); the release's non-GAAP EPS also excludes stock-based compensation and the amortization of purchased intangibles, which recur, so it is not used",
+   "debt_note": "debt $9.426B (derived: debt, current $999M plus noncurrent debt $8,427M, the balance sheet)",
+   "shares_note": "diluted shares 983M",
+   "next_print": "Q1 FY25 print (May)",
+   "full_data": true,
+   "note": "restructuring $173M vs $828M a year earlier, a separately stated operating line outside the opex signal; 'Losses on the Company’s strategic investments negatively impacted GAAP diluted EPS by $(0.03)' (display)",
+   "fy_actual": {
+    "fy": 2024,
+    "fy_label": "FY24",
+    "eps_normalized": 4.2,
+    "revenue_usd_b": 34.857,
+    "diluted_shares_m": 984.0,
+    "normalization_note": "FY24 from the Q4 FY24 release (GAAP): its listed items ('Restructuring negatively impacted fiscal 2024 GAAP diluted EPS by $(1.00)', and $(0.21) of losses on strategic investments) leave reported EPS 0.78 times the $5.41 without them (derived), so it is kept (the AAPL FY2002 test is not met)",
+    "op_margin": 14.38,
+    "op_margin_note": "FY24 income from operations $5,011M / revenues $34,857M (Q4 FY24 release)",
+    "pretax_margin": 14.2,
+    "pretax_margin_note": "FY24 income before income taxes $4,950M / revenues $34,857M (Q4 FY24 release)",
+    "gross_margin": 75.5,
+    "sales_growth": 11.2,
+    "sub_growth": 12.1,
+    "tax_rate": 0.164,
+    "tax_note": "FY24 provision for income taxes $814M / pre-tax $4,950M"
+   }
+  },
+  {
+   "quarter": "Q1 FY25",
+   "fy": 2025,
+   "q": 1,
+   "published": "2024-05-30",
+   "source": "CR96",
+   "release": "May 29",
+   "release_time": "after the close on May 29: 8-K accepted 2024-05-29 16:03 ET; public before the open of the next trading day 2024-05-30",
+   "period_end": "2024-04-30",
+   "raw": {
+    "sub_k": 8585000.0,
+    "sub_prior_k": 7642000.0,
+    "sales_k": 9133000.0,
+    "sales_prior_k": 8247000.0,
+    "gross_profit_k": 6971000.0,
+    "gross_profit_prior_k": 6122000.0,
+    "rd_k": 1368000.0,
+    "rd_prior_k": 1207000.0,
+    "ms_k": 3239000.0,
+    "ms_prior_k": 3154000.0,
+    "ga_k": 647000.0,
+    "ga_prior_k": 638000.0,
+    "op_income_k": 1709000.0,
+    "op_income_prior_k": 412000.0,
+    "deferred_k": 16061000.0,
+    "deferred_prior_k": 15121000.0,
+    "sales_prev_q_k": 9287000.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 8,585 | 7,642",
+    "sales": "Total revenues | 9,133 | 8,247",
+    "gp": "Gross profit | 6,971 | 6,122",
+    "rd": "Research and development | 1,368 | 1,207",
+    "ms": "Sales and marketing | 3,239 | 3,154",
+    "ga": "General and administrative | 647 | 638",
+    "op": "Income from operations | 1,709 | 412",
+    "eps": "Diluted net income per share (3) | 1.56 | 0.20",
+    "shares": "Shares used in computing diluted net income per share | 985 | 988",
+    "deferred": "Unearned revenue, end of period | 16,061 | 15,121",
+    "deferred_hdr": "2024 | 2023",
+    "cash": "Cash and cash equivalents | 9,958 | 8,472; Marketable securities | 7,712 | 5,722",
+    "notes": [
+     "Debt, current | 1,000 | 999",
+     "Noncurrent debt | 8,429 | 8,427",
+     "Restructuring | 8 | 711"
+    ]
+   },
+   "sales_prev_q_row": {
+    "source": "CR94",
+    "row": "Total revenues | 9,287 | 8,384 | 34,857 | 31,352"
+   },
+   "extra_sources": [
+    "CR94"
+   ],
+   "sales_b": 9.133,
+   "sales_pct": 10.7,
+   "seq_pct": -1.7,
+   "sub_pct": 12.3,
+   "deferred_b": 16.061,
+   "deferred_pct": 6.2,
+   "gross_margin": 76.33,
+   "gross_margin_bp": 209.5,
+   "op_margin": 18.71,
+   "op_margin_bp": 1371.7,
+   "opex_pct": 5.1,
+   "opex_gap_pp": -5.6,
+   "eps_q": 1.56,
+   "eps_q_prior": 0.2,
+   "diluted_shares_m": 985.0,
+   "cash_b": 17.67,
+   "sales_note": "revenues $9,133M vs $8,247M a year earlier, $9,287M the quarter before; subscription and support $8,585M vs $7,642M",
+   "deferred_note": "unearned revenue $16,061M at the quarter end vs $15,121M a year earlier (the release's unearned revenue roll-forward; the balance sheet's current liability)",
+   "eps_note": "GAAP diluted EPS $1.56 vs $0.20; the release's non-GAAP EPS also excludes stock-based compensation and the amortization of purchased intangibles, which recur, so it is not used",
+   "debt_note": "debt $9.429B (derived: debt, current $1,000M plus noncurrent debt $8,429M, the balance sheet)",
+   "shares_note": "diluted shares 985M",
+   "next_print": "Q2 FY25 print (August)",
+   "full_data": true,
+   "note": "restructuring $8M vs $711M a year earlier, a separately stated operating line outside the opex signal; 'During the three months ended April 30, 2024 and 2023, gains (losses) on strategic investments impacted GAAP diluted EPS by $0.03 and $(0.11)' (display)"
+  },
+  {
+   "quarter": "Q2 FY25",
+   "fy": 2025,
+   "q": 2,
+   "published": "2024-08-29",
+   "source": "CR97",
+   "release": "Aug 28",
+   "release_time": "after the close on Aug 28: 8-K accepted 2024-08-28 16:02 ET; public before the open of the next trading day 2024-08-29",
+   "period_end": "2024-07-31",
+   "raw": {
+    "sub_k": 8764000.0,
+    "sub_prior_k": 8006000.0,
+    "sales_k": 9325000.0,
+    "sales_prior_k": 8603000.0,
+    "gross_profit_k": 7166000.0,
+    "gross_profit_prior_k": 6490000.0,
+    "rd_k": 1349000.0,
+    "rd_prior_k": 1220000.0,
+    "ms_k": 3224000.0,
+    "ms_prior_k": 3113000.0,
+    "ga_k": 711000.0,
+    "ga_prior_k": 632000.0,
+    "op_income_k": 1783000.0,
+    "op_income_prior_k": 1476000.0,
+    "deferred_k": 15222000.0,
+    "deferred_prior_k": 14237000.0,
+    "sales_prev_q_k": 9133000.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 8,764 | 8,006 | 17,349 | 15,648",
+    "sales": "Total revenues | 9,325 | 8,603 | 18,458 | 16,850",
+    "gp": "Gross profit | 7,166 | 6,490 | 14,137 | 12,612",
+    "rd": "Research and development | 1,349 | 1,220 | 2,717 | 2,427",
+    "ms": "Sales and marketing | 3,224 | 3,113 | 6,463 | 6,267",
+    "ga": "General and administrative | 711 | 632 | 1,358 | 1,270",
+    "op": "Income from operations | 1,783 | 1,476 | 3,492 | 1,888",
+    "eps": "Diluted net income per share (3) | 1.47 | 1.28 | 3.03 | 1.49",
+    "shares": "Shares used in computing diluted net income per share | 973 | 986 | 979 | 987",
+    "deferred": "Unearned revenue, end of period | 15,222 | 14,237 | 15,222 | 14,237",
+    "deferred_hdr": "2024 | 2023 | 2024 | 2023",
+    "cash": "Cash and cash equivalents | 7,682 | 8,472; Marketable securities | 4,954 | 5,722",
+    "notes": [
+     "Debt, current | 0 | 999",
+     "Noncurrent debt | 8,430 | 8,427",
+     "Restructuring | 99 | 49 | 107 | 760"
+    ]
+   },
+   "sales_prev_q_row": {
+    "source": "CR96",
+    "row": "Total revenues | 9,133 | 8,247"
+   },
+   "extra_sources": [
+    "CR96"
+   ],
+   "sales_b": 9.325,
+   "sales_pct": 8.4,
+   "seq_pct": 2.1,
+   "sub_pct": 9.5,
+   "deferred_b": 15.222,
+   "deferred_pct": 6.9,
+   "gross_margin": 76.85,
+   "gross_margin_bp": 140.8,
+   "op_margin": 19.12,
+   "op_margin_bp": 196.4,
+   "opex_pct": 6.4,
+   "opex_gap_pp": -2.0,
+   "eps_q": 1.47,
+   "eps_q_prior": 1.28,
+   "diluted_shares_m": 973.0,
+   "cash_b": 12.636,
+   "sales_note": "revenues $9,325M vs $8,603M a year earlier, $9,133M the quarter before; subscription and support $8,764M vs $8,006M",
+   "deferred_note": "unearned revenue $15,222M at the quarter end vs $14,237M a year earlier (the release's unearned revenue roll-forward; the balance sheet's current liability)",
+   "eps_note": "GAAP diluted EPS $1.47 vs $1.28; the release's non-GAAP EPS also excludes stock-based compensation and the amortization of purchased intangibles, which recur, so it is not used",
+   "debt_note": "debt $8.430B (noncurrent debt $8,430M; the balance sheet)",
+   "shares_note": "diluted shares 973M",
+   "next_print": "Q3 FY25 print (November)",
+   "full_data": true,
+   "note": "restructuring $99M vs $49M a year earlier, a separately stated operating line outside the opex signal; 'During the three months ended July 31, 2024 and 2023, losses on strategic investments impacted GAAP diluted EPS by $(0.03) and $(0.02)' (display)"
+  },
+  {
+   "quarter": "Q3 FY25",
+   "fy": 2025,
+   "q": 3,
+   "published": "2024-12-04",
+   "source": "CR98",
+   "release": "Dec 3",
+   "release_time": "after the close on Dec 3: 8-K accepted 2024-12-03 16:03 ET; public before the open of the next trading day 2024-12-04",
+   "period_end": "2024-10-31",
+   "raw": {
+    "sub_k": 8879000.0,
+    "sub_prior_k": 8141000.0,
+    "sales_k": 9444000.0,
+    "sales_prior_k": 8720000.0,
+    "gross_profit_k": 7339000.0,
+    "gross_profit_prior_k": 6565000.0,
+    "rd_k": 1356000.0,
+    "rd_prior_k": 1204000.0,
+    "ms_k": 3323000.0,
+    "ms_prior_k": 3173000.0,
+    "ga_k": 711000.0,
+    "ga_prior_k": 632000.0,
+    "op_income_k": 1893000.0,
+    "op_income_prior_k": 1501000.0,
+    "deferred_k": 13472000.0,
+    "deferred_prior_k": 12564000.0,
+    "sales_prev_q_k": 9325000.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 8,879 | 8,141 | 26,228 | 23,789",
+    "sales": "Total revenues | 9,444 | 8,720 | 27,902 | 25,570",
+    "gp": "Gross profit | 7,339 | 6,565 | 21,476 | 19,177",
+    "rd": "Research and development | 1,356 | 1,204 | 4,073 | 3,631",
+    "ms": "Sales and marketing | 3,323 | 3,173 | 9,786 | 9,440",
+    "ga": "General and administrative | 711 | 632 | 2,069 | 1,902",
+    "op": "Income from operations | 1,893 | 1,501 | 5,385 | 3,389",
+    "eps": "Diluted net income per share (3) | 1.58 | 1.25 | 4.60 | 2.73",
+    "shares": "Shares used in computing diluted net income per share | 965 | 981 | 975 | 985",
+    "deferred": "Unearned revenue, end of period | 13,472 | 12,564 | 13,472 | 12,564",
+    "deferred_hdr": "2024 | 2023 | 2024 | 2023",
+    "cash": "Cash and cash equivalents | 7,997 | 8,472; Marketable securities | 4,760 | 5,722",
+    "notes": [
+     "Debt, current | 0 | 999",
+     "Noncurrent debt | 8,432 | 8,427",
+     "Restructuring | 56 | 55 | 163 | 815"
+    ]
+   },
+   "sales_prev_q_row": {
+    "source": "CR97",
+    "row": "Total revenues | 9,325 | 8,603 | 18,458 | 16,850"
+   },
+   "extra_sources": [
+    "CR97"
+   ],
+   "sales_b": 9.444,
+   "sales_pct": 8.3,
+   "seq_pct": 1.3,
+   "sub_pct": 9.1,
+   "deferred_b": 13.472,
+   "deferred_pct": 7.2,
+   "gross_margin": 77.71,
+   "gross_margin_bp": 242.4,
+   "op_margin": 20.04,
+   "op_margin_bp": 283.1,
+   "opex_pct": 7.6,
+   "opex_gap_pp": -0.7,
+   "eps_q": 1.58,
+   "eps_q_prior": 1.25,
+   "diluted_shares_m": 965.0,
+   "cash_b": 12.757,
+   "sales_note": "revenues $9,444M vs $8,720M a year earlier, $9,325M the quarter before; subscription and support $8,879M vs $8,141M",
+   "deferred_note": "unearned revenue $13,472M at the quarter end vs $12,564M a year earlier (the release's unearned revenue roll-forward; the balance sheet's current liability)",
+   "eps_note": "GAAP diluted EPS $1.58 vs $1.25; the release's non-GAAP EPS also excludes stock-based compensation and the amortization of purchased intangibles, which recur, so it is not used",
+   "debt_note": "debt $8.432B (noncurrent debt $8,432M; the balance sheet)",
+   "shares_note": "diluted shares 965M",
+   "next_print": "Q4 FY25 print (February)",
+   "full_data": true,
+   "note": "restructuring $56M vs $55M a year earlier, a separately stated operating line outside the opex signal; 'During the three months ended October 31, 2024, losses on strategic investments impacted GAAP diluted net income per share by $(0.17) on a U.S' (display)"
+  },
+  {
+   "quarter": "Q4 FY25",
+   "fy": 2025,
+   "q": 4,
+   "published": "2025-02-27",
+   "source": "CR99",
+   "release": "Feb 26",
+   "release_time": "after the close on Feb 26: 8-K accepted 2025-02-26 16:03 ET; public before the open of the next trading day 2025-02-27",
+   "period_end": "2025-01-31",
+   "raw": {
+    "sub_k": 9451000.0,
+    "sub_prior_k": 8748000.0,
+    "sales_k": 9993000.0,
+    "sales_prior_k": 9287000.0,
+    "gross_profit_k": 7776000.0,
+    "gross_profit_prior_k": 7139000.0,
+    "rd_k": 1420000.0,
+    "rd_prior_k": 1275000.0,
+    "ms_k": 3471000.0,
+    "ms_prior_k": 3437000.0,
+    "ga_k": 767000.0,
+    "ga_prior_k": 632000.0,
+    "op_income_k": 1820000.0,
+    "op_income_prior_k": 1622000.0,
+    "deferred_k": 20743000.0,
+    "deferred_prior_k": 19003000.0,
+    "sales_prev_q_k": 9444000.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 9,451 | 8,748 | 35,679 | 32,537",
+    "sales": "Total revenues | 9,993 | 9,287 | 37,895 | 34,857",
+    "gp": "Gross profit | 7,776 | 7,139 | 29,252 | 26,316",
+    "rd": "Research and development | 1,420 | 1,275 | 5,493 | 4,906",
+    "ms": "Sales and marketing | 3,471 | 3,437 | 13,257 | 12,877",
+    "ga": "General and administrative | 767 | 632 | 2,836 | 2,534",
+    "op": "Income from operations | 1,820 | 1,622 | 7,205 | 5,011",
+    "eps": "Diluted net income per share (3) | 1.75 | 1.47 | 6.36 | 4.20",
+    "shares": "Shares used in computing diluted net income per share | 974 | 983 | 974 | 984",
+    "deferred": "Unearned revenue, end of period | 20,743 | 19,003 | 20,743 | 19,003",
+    "deferred_hdr": "2025 | 2024 | 2025 | 2024",
+    "cash": "Cash and cash equivalents | 8,848 | 8,472; Marketable securities | 5,184 | 5,722",
+    "notes": [
+     "Debt, current | 0 | 999",
+     "Noncurrent debt | 8,433 | 8,427",
+     "Restructuring | 298 | 173 | 461 | 988"
+    ]
+   },
+   "sales_prev_q_row": {
+    "source": "CR98",
+    "row": "Total revenues | 9,444 | 8,720 | 27,902 | 25,570"
+   },
+   "extra_sources": [
+    "CR98"
+   ],
+   "sales_b": 9.993,
+   "sales_pct": 7.6,
+   "seq_pct": 5.8,
+   "sub_pct": 8.0,
+   "deferred_b": 20.743,
+   "deferred_pct": 9.2,
+   "gross_margin": 77.81,
+   "gross_margin_bp": 94.4,
+   "op_margin": 18.21,
+   "op_margin_bp": 74.7,
+   "opex_pct": 5.9,
+   "opex_gap_pp": -1.7,
+   "eps_q": 1.75,
+   "eps_q_prior": 1.47,
+   "diluted_shares_m": 974.0,
+   "cash_b": 14.032,
+   "sales_note": "revenues $9,993M vs $9,287M a year earlier, $9,444M the quarter before; subscription and support $9,451M vs $8,748M",
+   "deferred_note": "unearned revenue $20,743M at the quarter end vs $19,003M a year earlier (the release's unearned revenue roll-forward; the balance sheet's current liability)",
+   "eps_note": "GAAP diluted EPS $1.75 vs $1.47; the release's non-GAAP EPS also excludes stock-based compensation and the amortization of purchased intangibles, which recur, so it is not used",
+   "debt_note": "debt $8.433B (noncurrent debt $8,433M; the balance sheet)",
+   "shares_note": "diluted shares 974M",
+   "next_print": "Q1 FY26 print (May)",
+   "full_data": true,
+   "note": "restructuring $298M vs $173M a year earlier, a separately stated operating line outside the opex signal; 'During the three months ended January 31, 2025 and 2024, gains (losses) on strategic investments impacted GAAP diluted net income per share by $0.07 and $(0.03)' (display)",
+   "fy_actual": {
+    "fy": 2025,
+    "fy_label": "FY25",
+    "eps_normalized": 6.36,
+    "revenue_usd_b": 37.895,
+    "diluted_shares_m": 974.0,
+    "normalization_note": "FY25 from the Q4 FY25 release (GAAP): its listed items (restructuring $461M and $(0.09) a share of losses on strategic investments) are a fraction of the year's $6,197M net income, so it is kept",
+    "op_margin": 19.01,
+    "op_margin_note": "FY25 income from operations $7,205M / revenues $37,895M (Q4 FY25 release)",
+    "pretax_margin": 19.63,
+    "pretax_margin_note": "FY25 income before income taxes $7,438M / revenues $37,895M (Q4 FY25 release)",
+    "gross_margin": 77.19,
+    "sales_growth": 8.7,
+    "sub_growth": 9.7,
+    "tax_rate": 0.167,
+    "tax_note": "FY25 provision for income taxes $1,241M / pre-tax $7,438M"
+   }
+  },
+  {
+   "quarter": "Q1 FY26",
+   "fy": 2026,
+   "q": 1,
+   "published": "2025-05-29",
+   "source": "CR101",
+   "release": "May 28",
+   "release_time": "after the close on May 28: 8-K accepted 2025-05-28 16:05 ET; public before the open of the next trading day 2025-05-29",
+   "period_end": "2025-04-30",
+   "raw": {
+    "sub_k": 9297000.0,
+    "sub_prior_k": 8585000.0,
+    "sales_k": 9829000.0,
+    "sales_prior_k": 9133000.0,
+    "gross_profit_k": 7564000.0,
+    "gross_profit_prior_k": 6971000.0,
+    "rd_k": 1460000.0,
+    "rd_prior_k": 1368000.0,
+    "ms_k": 3429000.0,
+    "ms_prior_k": 3239000.0,
+    "ga_k": 697000.0,
+    "ga_prior_k": 647000.0,
+    "op_income_k": 1942000.0,
+    "op_income_prior_k": 1709000.0,
+    "deferred_k": 17799000.0,
+    "deferred_prior_k": 16061000.0,
+    "sales_prev_q_k": 9993000.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 9,297 | 8,585",
+    "sales": "Total revenues | 9,829 | 9,133",
+    "gp": "Gross profit | 7,564 | 6,971",
+    "rd": "Research and development | 1,460 | 1,368",
+    "ms": "Sales and marketing | 3,429 | 3,239",
+    "ga": "General and administrative | 697 | 647",
+    "op": "Income from operations | 1,942 | 1,709",
+    "eps": "Diluted net income per share (3) | 1.59 | 1.56",
+    "shares": "Shares used in computing diluted net income per share | 970 | 985",
+    "deferred": "Unearned revenue, end of period | 17,799 | 16,061",
+    "deferred_hdr": "2025 | 2024",
+    "cash": "Cash and cash equivalents | 10,928 | 8,848; Marketable securities | 6,480 | 5,184",
+    "notes": [
+     "Noncurrent debt | 8,435 | 8,433",
+     "Restructuring | 36 | 8"
+    ]
+   },
+   "sales_prev_q_row": {
+    "source": "CR99",
+    "row": "Total revenues | 9,993 | 9,287 | 37,895 | 34,857"
+   },
+   "extra_sources": [
+    "CR99"
+   ],
+   "sales_b": 9.829,
+   "sales_pct": 7.6,
+   "seq_pct": -1.6,
+   "sub_pct": 8.3,
+   "deferred_b": 17.799,
+   "deferred_pct": 10.8,
+   "gross_margin": 76.96,
+   "gross_margin_bp": 62.8,
+   "op_margin": 19.76,
+   "op_margin_bp": 104.5,
+   "opex_pct": 6.3,
+   "opex_gap_pp": -1.3,
+   "eps_q": 1.59,
+   "eps_q_prior": 1.56,
+   "diluted_shares_m": 970.0,
+   "cash_b": 17.408,
+   "sales_note": "revenues $9,829M vs $9,133M a year earlier, $9,993M the quarter before; subscription and support $9,297M vs $8,585M",
+   "deferred_note": "unearned revenue $17,799M at the quarter end vs $16,061M a year earlier (the release's unearned revenue roll-forward; the balance sheet's current liability)",
+   "eps_note": "GAAP diluted EPS $1.59 vs $1.56; the release's non-GAAP EPS also excludes stock-based compensation and the amortization of purchased intangibles, which recur, so it is not used",
+   "debt_note": "debt $8.435B (noncurrent debt $8,435M; the balance sheet)",
+   "shares_note": "diluted shares 970M",
+   "next_print": "Q2 FY26 print (August)",
+   "full_data": true,
+   "note": "restructuring $36M vs $8M a year earlier, a separately stated operating line outside the opex signal; 'During the three months ended April 30, 2025 and 2024, gains (losses) on strategic investments impacted GAAP diluted net income per share by $(0.05) and $0.03' (display)"
+  },
+  {
+   "quarter": "Q2 FY26",
+   "fy": 2026,
+   "q": 2,
+   "published": "2025-09-04",
+   "source": "CR103",
+   "release": "Sep 3",
+   "release_time": "after the close on Sep 3: 8-K accepted 2025-09-03 16:03 ET; public before the open of the next trading day 2025-09-04",
+   "period_end": "2025-07-31",
+   "raw": {
+    "sub_k": 9690000.0,
+    "sub_prior_k": 8764000.0,
+    "sales_k": 10236000.0,
+    "sales_prior_k": 9325000.0,
+    "gross_profit_k": 7994000.0,
+    "gross_profit_prior_k": 7166000.0,
+    "rd_k": 1481000.0,
+    "rd_prior_k": 1349000.0,
+    "ms_k": 3443000.0,
+    "ms_prior_k": 3224000.0,
+    "ga_k": 734000.0,
+    "ga_prior_k": 711000.0,
+    "op_income_k": 2332000.0,
+    "op_income_prior_k": 1783000.0,
+    "deferred_k": 16555000.0,
+    "deferred_prior_k": 15222000.0,
+    "sales_prev_q_k": 9829000.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 9,690 | 8,764 | 18,987 | 17,349",
+    "sales": "Total revenues | 10,236 | 9,325 | 20,065 | 18,458",
+    "gp": "Gross profit | 7,994 | 7,166 | 15,558 | 14,137",
+    "rd": "Research and development | 1,481 | 1,349 | 2,941 | 2,717",
+    "ms": "Sales and marketing | 3,443 | 3,224 | 6,872 | 6,463",
+    "ga": "General and administrative | 734 | 711 | 1,431 | 1,358",
+    "op": "Income from operations | 2,332 | 1,783 | 4,274 | 3,492",
+    "eps": "Diluted net income per share (3) | 1.96 | 1.47 | 3.55 | 3.03",
+    "shares": "Shares used in computing diluted net income per share | 962 | 973 | 966 | 979",
+    "deferred": "Unearned revenue, end of period | 16,555 | 15,222 | 16,555 | 15,222",
+    "deferred_hdr": "2025 | 2024 | 2025 | 2024",
+    "cash": "Cash and cash equivalents | 10,365 | 8,848; Marketable securities | 5,007 | 5,184",
+    "notes": [
+     "Noncurrent debt | 8,436 | 8,433",
+     "Restructuring | 4 | 99 | 40 | 107"
+    ]
+   },
+   "sales_prev_q_row": {
+    "source": "CR101",
+    "row": "Total revenues | 9,829 | 9,133"
+   },
+   "extra_sources": [
+    "CR101"
+   ],
+   "sales_b": 10.236,
+   "sales_pct": 9.8,
+   "seq_pct": 4.1,
+   "sub_pct": 10.6,
+   "deferred_b": 16.555,
+   "deferred_pct": 8.8,
+   "gross_margin": 78.1,
+   "gross_margin_bp": 125.0,
+   "op_margin": 22.78,
+   "op_margin_bp": 366.2,
+   "opex_pct": 7.1,
+   "opex_gap_pp": -2.7,
+   "eps_q": 1.96,
+   "eps_q_prior": 1.47,
+   "diluted_shares_m": 962.0,
+   "cash_b": 15.372,
+   "sales_note": "revenues $10,236M vs $9,325M a year earlier, $9,829M the quarter before; subscription and support $9,690M vs $8,764M",
+   "deferred_note": "unearned revenue $16,555M at the quarter end vs $15,222M a year earlier (the release's unearned revenue roll-forward; the balance sheet's current liability)",
+   "eps_note": "GAAP diluted EPS $1.96 vs $1.47; the release's non-GAAP EPS also excludes stock-based compensation and the amortization of purchased intangibles, which recur, so it is not used",
+   "debt_note": "debt $8.436B (noncurrent debt $8,436M; the balance sheet)",
+   "shares_note": "diluted shares 962M",
+   "next_print": "Q3 FY26 print (December)",
+   "full_data": true,
+   "note": "restructuring $4M vs $99M a year earlier, a separately stated operating line outside the opex signal; 'During the three months ended July 31, 2025 and 2024, gains (losses) on strategic investments impacted GAAP diluted net income per share by $0.00 and $(0.03)' (display)"
+  },
+  {
+   "quarter": "Q3 FY26",
+   "fy": 2026,
+   "q": 3,
+   "published": "2025-12-04",
+   "source": "CR104",
+   "release": "Dec 3",
+   "release_time": "after the close on Dec 3: 8-K accepted 2025-12-03 16:04 ET; public before the open of the next trading day 2025-12-04",
+   "period_end": "2025-10-31",
+   "raw": {
+    "sub_k": 9726000.0,
+    "sub_prior_k": 8879000.0,
+    "sales_k": 10259000.0,
+    "sales_prior_k": 9444000.0,
+    "gross_profit_k": 8004000.0,
+    "gross_profit_prior_k": 7339000.0,
+    "rd_k": 1433000.0,
+    "rd_prior_k": 1356000.0,
+    "ms_k": 3456000.0,
+    "ms_prior_k": 3323000.0,
+    "ga_k": 667000.0,
+    "ga_prior_k": 711000.0,
+    "op_income_k": 2188000.0,
+    "op_income_prior_k": 1893000.0,
+    "deferred_k": 14996000.0,
+    "deferred_prior_k": 13472000.0,
+    "sales_prev_q_k": 10236000.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 9,726 | 8,879 | 28,713 | 26,228",
+    "sales": "Total revenues | 10,259 | 9,444 | 30,324 | 27,902",
+    "gp": "Gross profit | 8,004 | 7,339 | 23,562 | 21,476",
+    "rd": "Research and development | 1,433 | 1,356 | 4,374 | 4,073",
+    "ms": "Sales and marketing | 3,456 | 3,323 | 10,328 | 9,786",
+    "ga": "General and administrative | 667 | 711 | 2,098 | 2,069",
+    "op": "Income from operations | 2,188 | 1,893 | 6,462 | 5,385",
+    "eps": "Diluted net income per share (3) | 2.19 | 1.58 | 5.73 | 4.60",
+    "shares": "Shares used in computing diluted net income per share | 952 | 965 | 962 | 975",
+    "deferred": "Unearned revenue, end of period | 14,996 | 13,472 | 14,996 | 13,472",
+    "deferred_hdr": "2025 | 2024 | 2025 | 2024",
+    "cash": "Cash and cash equivalents | 8,978 | 8,848; Marketable securities | 2,345 | 5,184",
+    "notes": [
+     "Noncurrent debt | 8,438 | 8,433",
+     "Restructuring | 260 | 56 | 300 | 163"
+    ]
+   },
+   "sales_prev_q_row": {
+    "source": "CR103",
+    "row": "Total revenues | 10,236 | 9,325 | 20,065 | 18,458"
+   },
+   "extra_sources": [
+    "CR103"
+   ],
+   "sales_b": 10.259,
+   "sales_pct": 8.6,
+   "seq_pct": 0.2,
+   "sub_pct": 9.5,
+   "deferred_b": 14.996,
+   "deferred_pct": 11.3,
+   "gross_margin": 78.02,
+   "gross_margin_bp": 30.9,
+   "op_margin": 21.33,
+   "op_margin_bp": 128.3,
+   "opex_pct": 3.1,
+   "opex_gap_pp": -5.6,
+   "eps_q": 2.19,
+   "eps_q_prior": 1.58,
+   "diluted_shares_m": 952.0,
+   "cash_b": 11.323,
+   "sales_note": "revenues $10,259M vs $9,444M a year earlier, $10,236M the quarter before; subscription and support $9,726M vs $8,879M",
+   "deferred_note": "unearned revenue $14,996M at the quarter end vs $13,472M a year earlier (the release's unearned revenue roll-forward; the balance sheet's current liability)",
+   "eps_note": "GAAP diluted EPS $2.19 vs $1.58; the release's non-GAAP EPS also excludes stock-based compensation and the amortization of purchased intangibles, which recur, so it is not used",
+   "debt_note": "debt $8.438B (noncurrent debt $8,438M; the balance sheet)",
+   "shares_note": "diluted shares 952M",
+   "next_print": "Q4 FY26 print (February)",
+   "full_data": true,
+   "note": "restructuring $260M vs $56M a year earlier, a separately stated operating line outside the opex signal; 'During the three months ended October 31, 2025 and 2024, gains (losses) on strategic investments impacted GAAP diluted net income per share by $0.21 and $(0.17)' (display)"
+  },
+  {
+   "quarter": "Q4 FY26",
+   "fy": 2026,
+   "q": 4,
+   "published": "2026-02-26",
+   "source": "CR105",
+   "release": "Feb 25",
+   "release_time": "after the close on Feb 25: 8-K accepted 2026-02-25 16:03 ET; public before the open of the next trading day 2026-02-26",
+   "period_end": "2026-01-31",
+   "raw": {
+    "sub_k": 10675000.0,
+    "sub_prior_k": 9451000.0,
+    "sales_k": 11201000.0,
+    "sales_prior_k": 9993000.0,
+    "gross_profit_k": 8693000.0,
+    "gross_profit_prior_k": 7776000.0,
+    "rd_k": 1619000.0,
+    "rd_prior_k": 1420000.0,
+    "ms_k": 4017000.0,
+    "ms_prior_k": 3471000.0,
+    "ga_k": 902000.0,
+    "ga_prior_k": 767000.0,
+    "op_income_k": 1869000.0,
+    "op_income_prior_k": 1820000.0,
+    "deferred_k": 24317000.0,
+    "deferred_prior_k": 20743000.0,
+    "sales_prev_q_k": 10259000.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 10,675 | 9,451 | 39,388 | 35,679",
+    "sales": "Total revenues | 11,201 | 9,993 | 41,525 | 37,895",
+    "gp": "Gross profit | 8,693 | 7,776 | 32,255 | 29,252",
+    "rd": "Research and development | 1,619 | 1,420 | 5,993 | 5,493",
+    "ms": "Sales and marketing | 4,017 | 3,471 | 14,345 | 13,257",
+    "ga": "General and administrative | 902 | 767 | 3,000 | 2,836",
+    "op": "Income from operations | 1,869 | 1,820 | 8,331 | 7,205",
+    "eps": "Diluted net income per share (3) | 2.07 | 1.75 | 7.80 | 6.36",
+    "shares": "Shares used in computing diluted net income per share | 940 | 974 | 956 | 974",
+    "deferred": "Unearned revenue, end of period | 24,317 | 20,743 | 24,317 | 20,743",
+    "deferred_hdr": "2026 | 2025 | 2026 | 2025",
+    "cash": "Cash and cash equivalents | 7,327 | 8,848; Marketable securities | 2,238 | 5,184",
+    "notes": [
+     "Debt, current | 4,000 | 0",
+     "Noncurrent debt | 10,439 | 8,433",
+     "Restructuring | 286 | 298 | 586 | 461"
+    ]
+   },
+   "sales_prev_q_row": {
+    "source": "CR104",
+    "row": "Total revenues | 10,259 | 9,444 | 30,324 | 27,902"
+   },
+   "extra_sources": [
+    "CR104"
+   ],
+   "sales_b": 11.201,
+   "sales_pct": 12.1,
+   "seq_pct": 9.2,
+   "sub_pct": 13.0,
+   "deferred_b": 24.317,
+   "deferred_pct": 17.2,
+   "gross_margin": 77.61,
+   "gross_margin_bp": -20.5,
+   "op_margin": 16.69,
+   "op_margin_bp": -152.7,
+   "opex_pct": 15.6,
+   "opex_gap_pp": 3.5,
+   "eps_q": 2.07,
+   "eps_q_prior": 1.75,
+   "diluted_shares_m": 940.0,
+   "cash_b": 9.565,
+   "sales_note": "revenues $11,201M vs $9,993M a year earlier, $10,259M the quarter before; subscription and support $10,675M vs $9,451M",
+   "deferred_note": "unearned revenue $24,317M at the quarter end vs $20,743M a year earlier (the release's unearned revenue roll-forward; the balance sheet's current liability)",
+   "eps_note": "GAAP diluted EPS $2.07 vs $1.75; the release's non-GAAP EPS also excludes stock-based compensation and the amortization of purchased intangibles, which recur, so it is not used",
+   "debt_note": "debt $14.439B (derived: debt, current $4,000M plus noncurrent debt $10,439M, the balance sheet)",
+   "shares_note": "diluted shares 940M",
+   "next_print": "Q1 FY27 print (May)",
+   "full_data": true,
+   "note": "restructuring $286M vs $298M a year earlier, a separately stated operating line outside the opex signal; 'During the three months ended January 31, 2026 and 2025, gains on strategic investments impacted GAAP diluted net income per share by $0.66 and $0.07' (display)",
+   "fy_actual": {
+    "fy": 2026,
+    "fy_label": "FY26",
+    "eps_normalized": 7.8,
+    "revenue_usd_b": 41.525,
+    "diluted_shares_m": 956.0,
+    "normalization_note": "FY26 from the Q4 FY26 release (GAAP): its listed items ($0.81 a share of gains on strategic investments, and restructuring and acquisition-related costs of $658M before tax) are a fraction of the year's $7,457M net income, so it is kept",
+    "op_margin": 20.06,
+    "op_margin_note": "FY26 income from operations $8,331M / revenues $41,525M (Q4 FY26 release)",
+    "pretax_margin": 22.93,
+    "pretax_margin_note": "FY26 income before income taxes $9,520M / revenues $41,525M (Q4 FY26 release)",
+    "gross_margin": 77.68,
+    "sales_growth": 9.6,
+    "sub_growth": 10.4,
+    "tax_rate": 0.217,
+    "tax_note": "FY26 provision for income taxes $2,063M / pre-tax $9,520M"
+   }
+  },
+  {
+   "quarter": "Q1 FY27",
+   "fy": 2027,
+   "q": 1,
+   "published": "2026-05-28",
+   "source": "CR107",
+   "release": "May 27",
+   "release_time": "after the close on May 27: 8-K accepted 2026-05-27 16:18 ET; public before the open of the next trading day 2026-05-28",
+   "period_end": "2026-04-30",
+   "raw": {
+    "sub_k": 10593000.0,
+    "sub_prior_k": 9297000.0,
+    "sales_k": 11133000.0,
+    "sales_prior_k": 9829000.0,
+    "gross_profit_k": 8563000.0,
+    "gross_profit_prior_k": 7564000.0,
+    "rd_k": 1627000.0,
+    "rd_prior_k": 1460000.0,
+    "ms_k": 3769000.0,
+    "ms_prior_k": 3429000.0,
+    "ga_k": 740000.0,
+    "ga_prior_k": 697000.0,
+    "op_income_k": 2347000.0,
+    "op_income_prior_k": 1942000.0,
+    "deferred_k": 20363000.0,
+    "deferred_prior_k": 17799000.0,
+    "sales_prev_q_k": 11201000.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 10,593 | 9,297",
+    "sales": "Total revenues | 11,133 | 9,829",
+    "gp": "Gross profit | 8,563 | 7,564",
+    "rd": "Research and development | 1,627 | 1,460",
+    "ms": "Sales and marketing | 3,769 | 3,429",
+    "ga": "General and administrative | 740 | 697",
+    "op": "Income from operations | 2,347 | 1,942",
+    "eps": "Diluted net income per share (3) | 2.42 | 1.59",
+    "shares": "Shares used in computing diluted net income per share | 871 | 970",
+    "deferred": "Unearned revenue, end of period | 20,363 | 17,799",
+    "deferred_hdr": "2026 | 2025",
+    "cash": "Cash and cash equivalents | 8,935 | 7,327; Marketable securities | 2,902 | 2,238",
+    "notes": [
+     "Debt, current | 0 | 4,000",
+     "Noncurrent debt | 39,280 | 10,439",
+     "Restructuring | 80 | 36"
+    ]
+   },
+   "sales_prev_q_row": {
+    "source": "CR105",
+    "row": "Total revenues | 11,201 | 9,993 | 41,525 | 37,895"
+   },
+   "extra_sources": [
+    "CR105"
+   ],
+   "sales_b": 11.133,
+   "sales_pct": 13.3,
+   "seq_pct": -0.6,
+   "sub_pct": 13.9,
+   "deferred_b": 20.363,
+   "deferred_pct": 14.4,
+   "gross_margin": 76.92,
+   "gross_margin_bp": -4.0,
+   "op_margin": 21.08,
+   "op_margin_bp": 132.4,
+   "opex_pct": 9.8,
+   "opex_gap_pp": -3.4,
+   "eps_q": 2.42,
+   "eps_q_prior": 1.59,
+   "diluted_shares_m": 871.0,
+   "cash_b": 11.837,
+   "sales_note": "revenues $11,133M vs $9,829M a year earlier, $11,201M the quarter before; subscription and support $10,593M vs $9,297M",
+   "deferred_note": "unearned revenue $20,363M at the quarter end vs $17,799M a year earlier (the release's unearned revenue roll-forward; the balance sheet's current liability)",
+   "eps_note": "GAAP diluted EPS $2.42 vs $1.59; the release's non-GAAP EPS also excludes stock-based compensation and the amortization of purchased intangibles, which recur, so it is not used",
+   "debt_note": "debt $39.280B (noncurrent debt $39,280M; the balance sheet)",
+   "shares_note": "diluted shares 871M",
+   "next_print": "Q2 FY27 print (September)",
+   "full_data": true,
+   "note": "restructuring $80M vs $36M a year earlier, a separately stated operating line outside the opex signal; 'During the three months ended April 30, 2026 and 2025, gains (losses) on strategic investments impacted GAAP diluted net income per share by $0.49 and $(0.05)' (display)"
+  },
+  {
+   "quarter": "Q2 FY27",
+   "fy": 2027,
+   "q": 2,
+   "published": "2026-08-27",
+   "source": "CR108",
+   "release": "Aug 26",
+   "release_time": "after the close on Aug 26: 8-K accepted 2026-08-26 16:03 ET; public before the open of the next trading day 2026-08-27",
+   "period_end": "2026-07-31",
+   "raw": {
+    "sub_k": 10820000.0,
+    "sub_prior_k": 9690000.0,
+    "sales_k": 11345000.0,
+    "sales_prior_k": 10236000.0,
+    "gross_profit_k": 8696000.0,
+    "gross_profit_prior_k": 7994000.0,
+    "rd_k": 1687000.0,
+    "rd_prior_k": 1481000.0,
+    "ms_k": 3859000.0,
+    "ms_prior_k": 3443000.0,
+    "ga_k": 725000.0,
+    "ga_prior_k": 734000.0,
+    "op_income_k": 2331000.0,
+    "op_income_prior_k": 2332000.0,
+    "deferred_k": 18787000.0,
+    "deferred_prior_k": 16555000.0,
+    "sales_prev_q_k": 11133000.0
+   },
+   "rows": {
+    "sub": "Subscription and support | 10,820 | 9,690 | 21,413 | 18,987",
+    "sales": "Total revenues | 11,345 | 10,236 | 22,478 | 20,065",
+    "gp": "Gross profit | 8,696 | 7,994 | 17,259 | 15,558",
+    "rd": "Research and development | 1,687 | 1,481 | 3,314 | 2,941",
+    "ms": "Sales and marketing | 3,859 | 3,443 | 7,628 | 6,872",
+    "ga": "General and administrative | 725 | 734 | 1,465 | 1,431",
+    "op": "Income from operations | 2,331 | 2,332 | 4,678 | 4,274",
+    "eps": "Diluted net income per share (3) | 4.29 | 1.96 | 6.67 | 3.55",
+    "shares": "Shares used in computing diluted net income per share | 821 | 962 | 845 | 966",
+    "deferred": "Unearned revenue, end of period | 18,787 | 16,555 | 18,787 | 16,555",
+    "deferred_hdr": "2026 | 2025 | 2026 | 2025",
+    "cash": "Cash and cash equivalents | 8,310 | 7,327; Marketable securities | 3,093 | 2,238",
+    "notes": [
+     "Debt, current | 0 | 4,000",
+     "Noncurrent debt | 39,288 | 10,439",
+     "Restructuring | 94 | 4 | 174 | 40"
+    ]
+   },
+   "sales_prev_q_row": {
+    "source": "CR107",
+    "row": "Total revenues | 11,133 | 9,829"
+   },
+   "extra_sources": [
+    "CR107"
+   ],
+   "sales_b": 11.345,
+   "sales_pct": 10.8,
+   "seq_pct": 1.9,
+   "sub_pct": 11.7,
+   "deferred_b": 18.787,
+   "deferred_pct": 13.5,
+   "gross_margin": 76.65,
+   "gross_margin_bp": -144.6,
+   "op_margin": 20.55,
+   "op_margin_bp": -223.6,
+   "opex_pct": 10.8,
+   "opex_gap_pp": -0.0,
+   "eps_q": 4.29,
+   "eps_q_prior": 1.96,
+   "diluted_shares_m": 821.0,
+   "cash_b": 11.403,
+   "sales_note": "revenues $11,345M vs $10,236M a year earlier, $11,133M the quarter before; subscription and support $10,820M vs $9,690M",
+   "deferred_note": "unearned revenue $18,787M at the quarter end vs $16,555M a year earlier (the release's unearned revenue roll-forward; the balance sheet's current liability)",
+   "eps_note": "GAAP diluted EPS $4.29 vs $1.96; the release's non-GAAP EPS also excludes stock-based compensation and the amortization of purchased intangibles, which recur, so it is not used",
+   "debt_note": "debt $39.288B (noncurrent debt $39,288M; the balance sheet)",
+   "shares_note": "diluted shares 821M",
+   "next_print": "Q3 FY27 print (December)",
+   "full_data": true,
+   "note": "restructuring $94M vs $4M a year earlier, a separately stated operating line outside the opex signal; 'During the three months ended July 31, 2026 and 2025, gains on strategic investments impacted GAAP diluted net income per share by $2.43 and $0.00' (display)"
   }
  ],
  "guides": [
@@ -8396,11 +11193,868 @@
    ],
    "rev_quote": "Revenue for the company’s full fiscal year 2014 is projected to be in the range of approximately $3.80 billion to approximately $3.85 billion.",
    "note": "'The company will provide its expectations for FY14 GAAP and non-GAAP EPS when it announces its fourth quarter fiscal year 2013 results in February 2013.' (Q3 FY13 release)"
+  },
+  {
+   "fy": 2022,
+   "published": "2021-12-01",
+   "source": "CR82",
+   "doc": "Q3 FY22 release",
+   "quarter": "Q4 FY22",
+   "level_stated": true,
+   "level_m": [
+    7224.0,
+    7234.0
+   ],
+   "prior_label": "Q4 FY21",
+   "prior_sales_m": 5817.0,
+   "prior_source": "CR78",
+   "prior_row": "Total revenues | 5,817 | 4,851 | 21,252 | 17,098",
+   "yoy_pct": [
+    24.2,
+    24.4
+   ],
+   "quote": "Revenue(1) | $7.224 - $7.234 Billion | $26.39 - $26.40 Billion | $7.215 - $7.250 Billion | $31.7 - $31.8 Billion",
+   "rev_guide_usd_b": [
+    26.39,
+    26.4
+   ],
+   "rev_quote": "Revenue(1) | $7.224 - $7.234 Billion | $26.39 - $26.40 Billion | $7.215 - $7.250 Billion | $31.7 - $31.8 Billion",
+   "eps_guide": [
+    1.28,
+    1.29
+   ],
+   "eps_quote": "GAAP earnings (loss) per share | ($0.24) - ($0.23) | $1.28 - $1.29 | N/A | N/A",
+   "eps_guide_note": "GAAP diluted EPS",
+   "op_margin_guide_pct": [
+    1.8,
+    1.8
+   ],
+   "margin_quote": "GAAP operating margin | N/A | ~1.8% | N/A | ~3.0 - 3.5%",
+   "display": "'($0.24) - ($0.23)' (Q4 FY22 GAAP EPS)",
+   "full_data": true
+  },
+  {
+   "fy": 2023,
+   "published": "2021-12-01",
+   "source": "CR82",
+   "doc": "Q3 FY22 release",
+   "rev_guide_usd_b": [
+    31.7,
+    31.8
+   ],
+   "rev_quote": "Revenue(1) | $7.224 - $7.234 Billion | $26.39 - $26.40 Billion | $7.215 - $7.250 Billion | $31.7 - $31.8 Billion",
+   "op_margin_guide_pct": [
+    3.0,
+    3.5
+   ],
+   "margin_quote": "GAAP operating margin | N/A | ~1.8% | N/A | ~3.0 - 3.5%",
+   "note": "'Reiterates FY23 GAAP Operating Margin Guidance of Approximately 3.0% to 3.5%' (Q3 FY22 release); no FY23 EPS range yet",
+   "full_data": true
+  },
+  {
+   "fy": 2023,
+   "published": "2022-03-02",
+   "source": "CR83",
+   "doc": "Q4 FY22 release",
+   "quarter": "Q1 FY23",
+   "level_stated": true,
+   "level_m": [
+    7370.0,
+    7380.0
+   ],
+   "prior_label": "Q1 FY22",
+   "prior_sales_m": 5963.0,
+   "prior_source": "CR80",
+   "prior_row": "Total revenues | 5,963 | 4,865",
+   "yoy_pct": [
+    23.6,
+    23.8
+   ],
+   "quote": "Revenue(1) | $7.37 - $7.38 Billion | $32.0 - $32.1 Billion",
+   "rev_guide_usd_b": [
+    32.0,
+    32.1
+   ],
+   "rev_quote": "Revenue(1) | $7.37 - $7.38 Billion | $32.0 - $32.1 Billion",
+   "eps_guide": [
+    0.46,
+    0.48
+   ],
+   "eps_quote": "GAAP earnings (loss) per share | ($0.05) - ($0.04) | $0.46 - $0.48",
+   "eps_guide_note": "GAAP diluted EPS",
+   "op_margin_guide_pct": [
+    3.6,
+    3.6
+   ],
+   "margin_quote": "GAAP operating margin | N/A | ~3.6%",
+   "display": "'($0.05) - ($0.04)' (Q1 FY23 GAAP EPS)",
+   "full_data": true
+  },
+  {
+   "fy": 2023,
+   "published": "2022-06-01",
+   "source": "CR86",
+   "doc": "Q1 FY23 release",
+   "quarter": "Q2 FY23",
+   "level_stated": true,
+   "level_m": [
+    7690.0,
+    7700.0
+   ],
+   "prior_label": "Q2 FY22",
+   "prior_sales_m": 6340.0,
+   "prior_source": "CR81",
+   "prior_row": "Total revenues | 6,340 | 5,151 | 12,303 | 10,016",
+   "yoy_pct": [
+    21.3,
+    21.5
+   ],
+   "quote": "Revenue(1) | $7.69 - $7.70 Billion | $31.7 - $31.8 Billion",
+   "rev_guide_usd_b": [
+    31.7,
+    31.8
+   ],
+   "rev_quote": "Revenue(1) | $7.69 - $7.70 Billion | $31.7 - $31.8 Billion",
+   "eps_guide": [
+    0.38,
+    0.4
+   ],
+   "eps_quote": "GAAP earnings (loss) per share | ($0.03) - ($0.02) | $0.38 - $0.40",
+   "eps_guide_note": "GAAP diluted EPS",
+   "op_margin_guide_pct": [
+    3.8,
+    3.8
+   ],
+   "margin_quote": "GAAP operating margin | N/A | ~3.8%",
+   "display": "'($0.03) - ($0.02)' (Q2 FY23 GAAP EPS)",
+   "full_data": true
+  },
+  {
+   "fy": 2023,
+   "published": "2022-08-25",
+   "source": "CR87",
+   "doc": "Q2 FY23 release",
+   "quarter": "Q3 FY23",
+   "level_stated": true,
+   "level_m": [
+    7820.0,
+    7830.0
+   ],
+   "prior_label": "Q3 FY22",
+   "prior_sales_m": 6863.0,
+   "prior_source": "CR82",
+   "prior_row": "Total revenues | 6,863 | 5,419 | 19,166 | 15,435",
+   "yoy_pct": [
+    13.9,
+    14.1
+   ],
+   "quote": "Revenue(1) | $7.82 - $7.83 Billion | $30.9 - $31.0 Billion",
+   "rev_guide_usd_b": [
+    30.9,
+    31.0
+   ],
+   "rev_quote": "Revenue(1) | $7.82 - $7.83 Billion | $30.9 - $31.0 Billion",
+   "eps_guide": [
+    0.38,
+    0.4
+   ],
+   "eps_quote": "GAAP earnings per share(3) | $0.09 - $0.10 | $0.38 - $0.40",
+   "eps_guide_note": "GAAP diluted EPS",
+   "op_margin_guide_pct": [
+    3.6,
+    3.6
+   ],
+   "margin_quote": "GAAP operating margin | N/A | ~3.6%",
+   "display": "'$0.09 - $0.10' (Q3 FY23 GAAP EPS)",
+   "full_data": true
+  },
+  {
+   "fy": 2023,
+   "published": "2022-12-01",
+   "source": "CR88",
+   "doc": "Q3 FY23 release",
+   "quarter": "Q4 FY23",
+   "level_stated": true,
+   "level_m": [
+    7932.0,
+    8032.0
+   ],
+   "prior_label": "Q4 FY22",
+   "prior_sales_m": 7326.0,
+   "prior_source": "CR83",
+   "prior_row": "Total revenues | 7,326 | 5,817 | 26,492 | 21,252",
+   "yoy_pct": [
+    8.3,
+    9.6
+   ],
+   "quote": "Revenue(1) | $7.932 - $8.032 Billion | $30.9 - $31.0 Billion",
+   "rev_guide_usd_b": [
+    30.9,
+    31.0
+   ],
+   "rev_quote": "Revenue(1) | $7.932 - $8.032 Billion | $30.9 - $31.0 Billion",
+   "eps_guide": [
+    0.55,
+    0.57
+   ],
+   "eps_quote": "GAAP earnings per share(3) | $0.23 - $0.25 | $0.55 - $0.57",
+   "eps_guide_note": "GAAP diluted EPS",
+   "op_margin_guide_pct": [
+    3.8,
+    3.8
+   ],
+   "margin_quote": "GAAP operating margin | N/A | ~3.8%",
+   "display": "'$0.23 - $0.25' (Q4 FY23 GAAP EPS)",
+   "full_data": true
+  },
+  {
+   "fy": 2024,
+   "published": "2023-03-02",
+   "source": "CR89",
+   "doc": "Q4 FY23 release",
+   "quarter": "Q1 FY24",
+   "level_stated": true,
+   "level_m": [
+    8160.0,
+    8180.0
+   ],
+   "prior_label": "Q1 FY23",
+   "prior_sales_m": 7411.0,
+   "prior_source": "CR86",
+   "prior_row": "Total revenues | 7,411 | 5,963",
+   "yoy_pct": [
+    10.1,
+    10.4
+   ],
+   "quote": "Revenue | $8.16 - $8.18 Billion | $34.5 - $34.7 Billion",
+   "rev_guide_usd_b": [
+    34.5,
+    34.7
+   ],
+   "rev_quote": "Revenue | $8.16 - $8.18 Billion | $34.5 - $34.7 Billion",
+   "eps_guide": [
+    2.59,
+    2.61
+   ],
+   "eps_quote": "GAAP Earnings per Share(2) | $0.24 - $0.25 | $2.59 - $2.61",
+   "eps_guide_note": "GAAP diluted EPS",
+   "op_margin_guide_pct": [
+    10.8,
+    10.8
+   ],
+   "margin_quote": "GAAP Operating Margin | N/A | ~10.8%",
+   "display": "'$0.24 - $0.25' (Q1 FY24 GAAP EPS)",
+   "full_data": true
+  },
+  {
+   "fy": 2024,
+   "published": "2023-06-01",
+   "source": "CR91",
+   "doc": "Q1 FY24 release",
+   "quarter": "Q2 FY24",
+   "level_stated": true,
+   "level_m": [
+    8510.0,
+    8530.0
+   ],
+   "prior_label": "Q2 FY23",
+   "prior_sales_m": 7720.0,
+   "prior_source": "CR87",
+   "prior_row": "Total revenues | 7,720 | 6,340 | 15,131 | 12,303",
+   "yoy_pct": [
+    10.2,
+    10.5
+   ],
+   "quote": "Revenue | $8.51 - $8.53 Billion | $34.5 - $34.7 Billion",
+   "rev_guide_usd_b": [
+    34.5,
+    34.7
+   ],
+   "rev_quote": "Revenue | $8.51 - $8.53 Billion | $34.5 - $34.7 Billion",
+   "eps_guide": [
+    2.67,
+    2.69
+   ],
+   "eps_quote": "GAAP Earnings per Share(2) | $0.79 - $0.80 | $2.67 - $2.69",
+   "eps_guide_note": "GAAP diluted EPS",
+   "op_margin_guide_pct": [
+    11.4,
+    11.4
+   ],
+   "margin_quote": "GAAP Operating Margin | N/A | ~11.4%",
+   "display": "'$0.79 - $0.80' (Q2 FY24 GAAP EPS)",
+   "full_data": true
+  },
+  {
+   "fy": 2024,
+   "published": "2023-08-31",
+   "source": "CR92",
+   "doc": "Q2 FY24 release",
+   "quarter": "Q3 FY24",
+   "level_stated": true,
+   "level_m": [
+    8700.0,
+    8720.0
+   ],
+   "prior_label": "Q3 FY23",
+   "prior_sales_m": 7837.0,
+   "prior_source": "CR88",
+   "prior_row": "Total revenues | 7,837 | 6,863 | 22,968 | 19,166",
+   "yoy_pct": [
+    11.0,
+    11.3
+   ],
+   "quote": "Revenue | $8.70 - $8.72 Billion | $34.7 - $34.8 Billion",
+   "rev_guide_usd_b": [
+    34.7,
+    34.8
+   ],
+   "rev_quote": "Revenue | $8.70 - $8.72 Billion | $34.7 - $34.8 Billion",
+   "eps_guide": [
+    3.5,
+    3.52
+   ],
+   "eps_quote": "GAAP Diluted Earnings per Share(2) | $1.02 - $1.03 | $3.50 - $3.52",
+   "eps_guide_note": "GAAP diluted EPS",
+   "op_margin_guide_pct": [
+    13.3,
+    13.3
+   ],
+   "margin_quote": "GAAP Operating Margin | N/A | ~13.3%",
+   "display": "'$1.02 - $1.03' (Q3 FY24 GAAP EPS)",
+   "full_data": true
+  },
+  {
+   "fy": 2024,
+   "published": "2023-11-30",
+   "source": "CR93",
+   "doc": "Q3 FY24 release",
+   "quarter": "Q4 FY24",
+   "level_stated": true,
+   "level_m": [
+    9180.0,
+    9230.0
+   ],
+   "prior_label": "Q4 FY23",
+   "prior_sales_m": 8384.0,
+   "prior_source": "CR89",
+   "prior_row": "Total revenues | 8,384 | 7,326 | 31,352 | 26,492",
+   "yoy_pct": [
+    9.5,
+    10.1
+   ],
+   "quote": "Revenue | $9.18 - $9.23 Billion | $34.75 - $34.8 Billion",
+   "rev_guide_usd_b": [
+    34.75,
+    34.8
+   ],
+   "rev_quote": "Revenue | $9.18 - $9.23 Billion | $34.75 - $34.8 Billion",
+   "eps_guide": [
+    3.99,
+    4.0
+   ],
+   "eps_quote": "GAAP Diluted Earnings per Share(2) | $1.26 - $1.27 | $3.99 - $4.00",
+   "eps_guide_note": "GAAP diluted EPS",
+   "op_margin_guide_pct": [
+    14.5,
+    14.5
+   ],
+   "margin_quote": "GAAP Operating Margin | N/A | 14.5%",
+   "display": "'$1.26 - $1.27' (Q4 FY24 GAAP EPS)",
+   "full_data": true
+  },
+  {
+   "fy": 2025,
+   "published": "2024-02-29",
+   "source": "CR94",
+   "doc": "Q4 FY24 release",
+   "quarter": "Q1 FY25",
+   "level_stated": true,
+   "level_m": [
+    9120.0,
+    9170.0
+   ],
+   "prior_label": "Q1 FY24",
+   "prior_sales_m": 8247.0,
+   "prior_source": "CR91",
+   "prior_row": "Total revenues | 8,247 | 7,411",
+   "yoy_pct": [
+    10.6,
+    11.2
+   ],
+   "quote": "Total Revenue | $9.12 - $9.17 Billion | $37.7 - $38.0 Billion",
+   "rev_guide_usd_b": [
+    37.7,
+    38.0
+   ],
+   "rev_quote": "Total Revenue | $9.12 - $9.17 Billion | $37.7 - $38.0 Billion",
+   "eps_guide": [
+    6.07,
+    6.15
+   ],
+   "eps_quote": "GAAP Diluted Earnings per Share(2) | $1.42 - $1.44 | $6.07 - $6.15",
+   "eps_guide_note": "GAAP diluted EPS",
+   "op_margin_guide_pct": [
+    20.4,
+    20.4
+   ],
+   "margin_quote": "GAAP Operating Margin | N/A | ~20.4%",
+   "display": "'$1.42 - $1.44' (Q1 FY25 GAAP EPS)",
+   "full_data": true
+  },
+  {
+   "fy": 2025,
+   "published": "2024-05-30",
+   "source": "CR96",
+   "doc": "Q1 FY25 release",
+   "quarter": "Q2 FY25",
+   "level_stated": true,
+   "level_m": [
+    9200.0,
+    9250.0
+   ],
+   "prior_label": "Q2 FY24",
+   "prior_sales_m": 8603.0,
+   "prior_source": "CR92",
+   "prior_row": "Total revenues | 8,603 | 7,720 | 16,850 | 15,131",
+   "yoy_pct": [
+    6.9,
+    7.5
+   ],
+   "quote": "Total Revenue | $9.20 - $9.25 Billion | $37.7 - $38.0 Billion",
+   "rev_guide_usd_b": [
+    37.7,
+    38.0
+   ],
+   "rev_quote": "Total Revenue | $9.20 - $9.25 Billion | $37.7 - $38.0 Billion",
+   "eps_guide": [
+    6.04,
+    6.12
+   ],
+   "eps_quote": "GAAP Diluted Earnings per Share(3) | $1.31 - $1.33 | $6.04 - $6.12",
+   "eps_guide_note": "GAAP diluted EPS",
+   "op_margin_guide_pct": [
+    19.9,
+    19.9
+   ],
+   "margin_quote": "GAAP Operating Margin | N/A | 19.9%",
+   "display": "'$1.31 - $1.33' (Q2 FY25 GAAP EPS)",
+   "full_data": true
+  },
+  {
+   "fy": 2025,
+   "published": "2024-08-29",
+   "source": "CR97",
+   "doc": "Q2 FY25 release",
+   "quarter": "Q3 FY25",
+   "level_stated": true,
+   "level_m": [
+    9310.0,
+    9360.0
+   ],
+   "prior_label": "Q3 FY24",
+   "prior_sales_m": 8720.0,
+   "prior_source": "CR93",
+   "prior_row": "Total revenues | 8,720 | 7,837 | 25,570 | 22,968",
+   "yoy_pct": [
+    6.8,
+    7.3
+   ],
+   "quote": "Total Revenue | $9.31 - $9.36 Billion | $37.7 - $38.0 Billion",
+   "rev_guide_usd_b": [
+    37.7,
+    38.0
+   ],
+   "rev_quote": "Total Revenue | $9.31 - $9.36 Billion | $37.7 - $38.0 Billion",
+   "eps_guide": [
+    6.05,
+    6.13
+   ],
+   "eps_quote": "GAAP Diluted Earnings per Share(3) | $1.41 - $1.43 | $6.05 - $6.13",
+   "eps_guide_note": "GAAP diluted EPS",
+   "op_margin_guide_pct": [
+    19.7,
+    19.7
+   ],
+   "margin_quote": "GAAP Operating Margin | N/A | 19.7%",
+   "display": "'$1.41 - $1.43' (Q3 FY25 GAAP EPS)",
+   "full_data": true
+  },
+  {
+   "fy": 2025,
+   "published": "2024-12-04",
+   "source": "CR98",
+   "doc": "Q3 FY25 release",
+   "quarter": "Q4 FY25",
+   "level_stated": true,
+   "level_m": [
+    9900.0,
+    10100.0
+   ],
+   "prior_label": "Q4 FY24",
+   "prior_sales_m": 9287.0,
+   "prior_source": "CR94",
+   "prior_row": "Total revenues | 9,287 | 8,384 | 34,857 | 31,352",
+   "yoy_pct": [
+    6.6,
+    8.8
+   ],
+   "quote": "Total Revenue | $9.90 - $10.10 Billion | $37.8 - $38.0 Billion",
+   "rev_guide_usd_b": [
+    37.8,
+    38.0
+   ],
+   "rev_quote": "Total Revenue | $9.90 - $10.10 Billion | $37.8 - $38.0 Billion",
+   "eps_guide": [
+    6.15,
+    6.2
+   ],
+   "eps_quote": "GAAP Diluted Net Income per Share(3) | $1.55 - $1.60 | $6.15 - $6.20",
+   "eps_guide_note": "GAAP diluted EPS",
+   "op_margin_guide_pct": [
+    19.8,
+    19.8
+   ],
+   "margin_quote": "GAAP Operating Margin | N/A | 19.8%",
+   "display": "'$1.55 - $1.60' (Q4 FY25 GAAP EPS)",
+   "full_data": true
+  },
+  {
+   "fy": 2026,
+   "published": "2025-02-27",
+   "source": "CR99",
+   "doc": "Q4 FY25 release",
+   "quarter": "Q1 FY26",
+   "level_stated": true,
+   "level_m": [
+    9710.0,
+    9760.0
+   ],
+   "prior_label": "Q1 FY25",
+   "prior_sales_m": 9133.0,
+   "prior_source": "CR96",
+   "prior_row": "Total revenues | 9,133 | 8,247",
+   "yoy_pct": [
+    6.3,
+    6.9
+   ],
+   "quote": "Total revenue | $9.71 - $9.76 billion | $40.5 - $40.9 billion",
+   "rev_guide_usd_b": [
+    40.5,
+    40.9
+   ],
+   "rev_quote": "Total revenue | $9.71 - $9.76 billion | $40.5 - $40.9 billion",
+   "eps_guide": [
+    6.95,
+    7.03
+   ],
+   "eps_quote": "GAAP diluted net income per share(2) | $1.49 - $1.51 | $6.95 - $7.03",
+   "eps_guide_note": "GAAP diluted EPS",
+   "op_margin_guide_pct": [
+    21.6,
+    21.6
+   ],
+   "margin_quote": "GAAP operating margin | N/A | 21.6%",
+   "display": "'$1.49 - $1.51' (Q1 FY26 GAAP EPS)",
+   "full_data": true
+  },
+  {
+   "fy": 2026,
+   "published": "2025-05-29",
+   "source": "CR101",
+   "doc": "Q1 FY26 release",
+   "quarter": "Q2 FY26",
+   "level_stated": true,
+   "level_m": [
+    10110.0,
+    10160.0
+   ],
+   "prior_label": "Q2 FY25",
+   "prior_sales_m": 9325.0,
+   "prior_source": "CR97",
+   "prior_row": "Total revenues | 9,325 | 8,603 | 18,458 | 16,850",
+   "yoy_pct": [
+    8.4,
+    9.0
+   ],
+   "quote": "Revenue | $10.11 - $10.16 billion",
+   "rev_guide_usd_b": [
+    41.0,
+    41.3
+   ],
+   "rev_quote": "Revenue | $41.0 - $41.3 billion",
+   "eps_guide": [
+    7.15,
+    7.21
+   ],
+   "eps_quote": "Diluted net income per share | $7.15 - $7.21 | $11.27 - $11.33",
+   "eps_guide_note": "GAAP diluted EPS",
+   "op_margin_guide_pct": [
+    21.6,
+    21.6
+   ],
+   "margin_quote": "Operating margin | 21.6% | 34.0%",
+   "display": "'Diluted net income per share | $1.80 - $1.82 | $2.76 - $2.78' (Q2 FY26 GAAP EPS)",
+   "full_data": true
+  },
+  {
+   "fy": 2026,
+   "published": "2025-09-04",
+   "source": "CR103",
+   "doc": "Q2 FY26 release",
+   "quarter": "Q3 FY26",
+   "level_stated": true,
+   "level_m": [
+    10240.0,
+    10290.0
+   ],
+   "prior_label": "Q3 FY25",
+   "prior_sales_m": 9444.0,
+   "prior_source": "CR98",
+   "prior_row": "Total revenues | 9,444 | 8,720 | 27,902 | 25,570",
+   "yoy_pct": [
+    8.4,
+    9.0
+   ],
+   "quote": "Revenue | $10.24 - $10.29 billion",
+   "rev_guide_usd_b": [
+    41.1,
+    41.3
+   ],
+   "rev_quote": "Revenue | $41.1 - $41.3 billion",
+   "eps_guide": [
+    6.99,
+    7.03
+   ],
+   "eps_quote": "Diluted net income per share | $6.99 - $7.03 | $11.33 - $11.37",
+   "eps_guide_note": "GAAP diluted EPS",
+   "op_margin_guide_pct": [
+    21.2,
+    21.2
+   ],
+   "margin_quote": "Operating margin | 21.2% | 34.1%",
+   "display": "'Diluted net income per share | $1.60 - $1.62 | $2.84 - $2.86' (Q3 FY26 GAAP EPS)",
+   "full_data": true
+  },
+  {
+   "fy": 2026,
+   "published": "2025-12-04",
+   "source": "CR104",
+   "doc": "Q3 FY26 release",
+   "quarter": "Q4 FY26",
+   "level_stated": true,
+   "level_m": [
+    11130.0,
+    11230.0
+   ],
+   "prior_label": "Q4 FY25",
+   "prior_sales_m": 9993.0,
+   "prior_source": "CR99",
+   "prior_row": "Total revenues | 9,993 | 9,287 | 37,895 | 34,857",
+   "yoy_pct": [
+    11.4,
+    12.4
+   ],
+   "quote": "Revenue | $11.13 - $11.23 billion",
+   "rev_guide_usd_b": [
+    41.45,
+    41.55
+   ],
+   "rev_quote": "Revenue | $41.45 - $41.55 billion",
+   "eps_guide": [
+    7.22,
+    7.24
+   ],
+   "eps_quote": "Diluted net income per share | $7.22 - $7.24 | $11.75 - $11.77",
+   "eps_guide_note": "GAAP diluted EPS",
+   "op_margin_guide_pct": [
+    20.3,
+    20.3
+   ],
+   "margin_quote": "Operating margin | 20.3% | 34.1%",
+   "display": "'Diluted net income per share | $1.47 - $1.49 | $3.02 - $3.04' (Q4 FY26 GAAP EPS)",
+   "full_data": true
+  },
+  {
+   "fy": 2027,
+   "published": "2026-02-26",
+   "source": "CR105",
+   "doc": "Q4 FY26 release",
+   "quarter": "Q1 FY27",
+   "level_stated": true,
+   "level_m": [
+    11030.0,
+    11080.0
+   ],
+   "prior_label": "Q1 FY26",
+   "prior_sales_m": 9829.0,
+   "prior_source": "CR101",
+   "prior_row": "Total revenues | 9,829 | 9,133",
+   "yoy_pct": [
+    12.2,
+    12.7
+   ],
+   "quote": "Revenue | $11.03 - $11.08 billion | N/A",
+   "rev_guide_usd_b": [
+    45.8,
+    46.2
+   ],
+   "rev_quote": "Revenue | $45.80 - $46.20 billion | N/A",
+   "eps_guide": [
+    7.85,
+    7.93
+   ],
+   "eps_quote": "Diluted net income per share | $7.85 - $7.93 | $13.11 - $13.19",
+   "eps_guide_note": "GAAP diluted EPS",
+   "op_margin_guide_pct": [
+    20.9,
+    20.9
+   ],
+   "margin_quote": "Operating margin | 20.9% | 34.3%",
+   "display": "'Diluted net income per share | $1.77 - $1.79 | $3.11 - $3.13' (Q1 FY27 GAAP EPS)",
+   "full_data": true
+  },
+  {
+   "fy": 2027,
+   "published": "2026-05-28",
+   "source": "CR107",
+   "doc": "Q1 FY27 release",
+   "quarter": "Q2 FY27",
+   "level_stated": true,
+   "level_m": [
+    11270.0,
+    11350.0
+   ],
+   "prior_label": "Q2 FY26",
+   "prior_sales_m": 10236.0,
+   "prior_source": "CR103",
+   "prior_row": "Total revenues | 10,236 | 9,325 | 20,065 | 18,458",
+   "yoy_pct": [
+    10.1,
+    10.9
+   ],
+   "quote": "Revenue | $11.27 - $11.35 billion | N/A",
+   "rev_guide_usd_b": [
+    45.9,
+    46.2
+   ],
+   "rev_quote": "Revenue | $45.9 - $46.2 billion | N/A",
+   "eps_guide": [
+    7.93,
+    7.99
+   ],
+   "eps_quote": "Diluted net income per share | $7.93 - $7.99 | $14.06 - $14.12",
+   "eps_guide_note": "GAAP diluted EPS",
+   "op_margin_guide_pct": [
+    20.6,
+    20.6
+   ],
+   "margin_quote": "Operating margin | 20.6% | 34.3%",
+   "display": "'Diluted net income per share | $1.74 - $1.76 | $3.25 - $3.27' (Q2 FY27 GAAP EPS)",
+   "full_data": true
+  },
+  {
+   "fy": 2027,
+   "published": "2026-08-27",
+   "source": "CR108",
+   "doc": "Q2 FY27 release",
+   "quarter": "Q3 FY27",
+   "level_stated": true,
+   "level_m": [
+    11420.0,
+    11500.0
+   ],
+   "prior_label": "Q3 FY26",
+   "prior_sales_m": 10259.0,
+   "prior_source": "CR104",
+   "prior_row": "Total revenues | 10,259 | 9,444 | 30,324 | 27,902",
+   "yoy_pct": [
+    11.3,
+    12.1
+   ],
+   "quote": "Revenue | $11.42 - $11.5 billion | N/A",
+   "rev_guide_usd_b": [
+    46.1,
+    46.4
+   ],
+   "rev_quote": "Revenue | $46.1 - $46.4 billion | N/A",
+   "eps_guide": [
+    10.21,
+    10.25
+   ],
+   "eps_quote": "Diluted net income per share | $10.21 - $10.25 | $16.67 - $16.71",
+   "eps_guide_note": "GAAP diluted EPS",
+   "op_margin_guide_pct": [
+    20.1,
+    20.1
+   ],
+   "margin_quote": "Operating margin | 20.1% | 34.3%",
+   "display": "'Diluted net income per share | $1.81 - $1.83 | $3.42 - $3.44' (Q3 FY27 GAAP EPS)",
+   "full_data": true
   }
  ],
- "dividends": [],
- "events": [],
- "company_names": [],
+ "dividends": [
+  {
+   "published": "2024-02-29",
+   "source": "CR94",
+   "quarterly": 0.4,
+   "note": "$0.40 quarterly, the first dividend ('Salesforce’s Board of Directors declared a cash dividend of $0.40 per share of our outstanding common stock', Q4 FY24 release)",
+   "full_data": true
+  },
+  {
+   "published": "2025-05-29",
+   "source": "CR102",
+   "quarterly": 0.416,
+   "note": "$0.416 quarterly ('Three months ended April 30, 2025 | April 10, 2025 | April 24, 2025 | 0.416 | 406', the Q1 FY26 10-Q's dividends table, the first filing that states the rate)",
+   "full_data": true
+  },
+  {
+   "published": "2026-02-26",
+   "source": "CR105",
+   "quarterly": 0.44,
+   "note": "$0.44 quarterly ('Salesforce’s Board of Directors declared a quarterly cash dividend of $0.44 per share of outstanding common stock, which represents a 5.8% Y/Y increase.', Q4 FY26 release)",
+   "full_data": true
+  }
+ ],
+ "events": [
+  {
+   "published": "2025-03-06",
+   "id": "CR100",
+   "theme": "GENAI",
+   "kind": "genai_company_acknowledged",
+   "doc": "FY2025 10-K",
+   "heading": "The markets in which we participate are intensely competitive, and if we do not compete effectively, our operating results could be harmed.",
+   "risk_quote": "vendors who offer software tailored to specific services, industries or market segments, as opposed to our full suite of service offerings, including suppliers of traditional business intelligence and data preparation products, integration software vendors, marketing vendors, e-commerce solutions vendors or AI software and service vendors",
+   "rival_quote": "cloud computing development platform companies who may develop toolsets and products that allow customers to build new applications, including AI-augmented applications",
+   "offering": "Founded in 1999, we bring humans together with AI agents to drive customer success on one deeply unified platform.",
+   "offering_short": "Salesforce builds AI agents into its own platform",
+   "risk_short": "AI software and service vendors among its competitors",
+   "full_data": true
+  },
+  {
+   "published": "2026-03-03",
+   "id": "CR106",
+   "theme": "GENAI",
+   "kind": "genai_company_acknowledged",
+   "doc": "FY2026 10-K",
+   "heading": "The markets in which we participate are intensely competitive, and if we do not compete effectively, our operating results could be harmed.",
+   "risk_quote": "AI-native companies and emerging startups that leverage generative AI and large language models as the core foundation of their architecture, offering highly specialized, autonomous, or automated solutions that may bypass traditional business process workflows or displace established user interfaces",
+   "rival_quote": "vendors who offer software tailored to specific services, industries or market segments, as opposed to our full suite of service offerings, including suppliers of traditional business intelligence and data preparation products, integration software vendors, marketing vendors, e-commerce solutions vendors or AI software and service vendors",
+   "offering": "Founded in 1999, we bring humans, agents, applications, and data together on a trusted, unified platform to unlock growth and innovation.",
+   "offering_short": "Salesforce builds AI agents into its own platform",
+   "risk_short": "AI-native companies whose agents may bypass workflows or displace established user interfaces",
+   "full_data": true
+  }
+ ],
+ "company_names": [
+  {
+   "published": "2022-04-04",
+   "name": "Salesforce, Inc.",
+   "source": "CR85",
+   "quote": "Effective April 4, 2022, Salesforce, Inc. (formerly salesforce.com, inc.) (the “Company”) changed the legal name of the Company from “salesforce.com, inc.” to “Salesforce, Inc.”",
+   "full_data": true
+  }
+ ],
  "splits": [
   {
    "published": "2013-04-18",
@@ -8960,6 +12614,8 @@
  },
  "reduced_data": {
   "first_unread": "2013-02-25",
-  "note": "from 2013-02-25, the first trading day after the first filing of the batch that was not read (the 8-K of 2013-02-22, item 8.01, accepted after the close), the fact sheet holds only what SEC's XBRL company facts carry: the 10-Q and 10-K statements, each dated by its filing. salesforce.com's earnings releases (and their guidance), its other 8-Ks and the 10-Ks' text are not in it: SEC refused this session's downloads of the filing documents. The earlier facts are unchanged"
+  "note": "from 2013-02-25, the first trading day after the first filing of the batch that was not read (the 8-K of 2013-02-22, item 8.01, accepted after the close), the fact sheet holds only what SEC's XBRL company facts carry: the 10-Q and 10-K statements, each dated by its filing. salesforce.com's earnings releases (and their guidance), its other 8-Ks and the 10-Ks' text are not in it: SEC refused this session's downloads of the filing documents. The earlier facts are unchanged",
+  "full_from": "2022-01-01",
+  "full_note": "from 2022-01-01 the batch reads the filings themselves again (SEC's www.sec.gov served them to a generic client name): every fact with 'full_data' true (CR77-CR108: the earnings releases from Q4 FY21, the FY2020-FY2026 10-Ks, the Q1 FY26 10-Q and the 8-K of 2022-04-04) is read only on dates from that day, and on those dates the reduced-data vintages and prints (CR39-CR76) give way to them; the 2013-2021 models keep the reduced reading"
  }
 }

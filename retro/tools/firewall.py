@@ -154,7 +154,8 @@ the latest vintage before CUTOFF, a later Q4 print whose full-year actuals exclu
 fiscal year guided before CUTOFF (a next-quarter dollar range, an EPS range with and without an acquisition, a revenue range, from CRM
 2010-2012 a revenue growth range, notes), a still later loss range for every guided year,
 and a later vintage excluding a year with planted texts, figures, groups, window start and kind, and from CRM 2013-2017 a reduced-data
-flag dated after CUTOFF (the dividend, split and company name every fact sheet gets, too); GOOG: a print whose revenues, margins, opex and receivables gaps, quarter EPS, cash,
+flag dated after CUTOFF, and from CRM 2022-2026 a planted GAAP operating margin in every later guide, a full-data date after CUTOFF,
+planted AI words on the later vintage and a later GENAI event (the dividend, split and company name every fact sheet gets, too); GOOG: a print whose revenues, margins, opex and receivables gaps, quarter EPS, cash,
 notes and raw figures are absurd, with absurd full-year actuals for the year after the latest vintage before CUTOFF, a later Q4 print
 whose full-year actuals exclude its own year, a later 10-Q restatement of the last print before CUTOFF with absurd figures, and a later
 vintage excluding a year with planted texts, figures, outlook words, exchange and window start, every per-share figure on a planted
@@ -465,7 +466,8 @@ GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -99
                "CRM": dict(quarter="Q9 FY99", level_stated=True, level_m=[0.5, 0.6], prior_label="PLANTED", prior_sales_m=1,
                            prior_source="CR1", prior_row="PLANTED", yoy_pct=[-99, -98], quote="PLANTED", rev_guide_usd_b=[0.1, 0.2],
                            rev_quote="PLANTED", eps_quote="PLANTED", eps_guide_note="PLANTED", note="PLANTED", display="PLANTED",
-                           eps_ex_item={"eps": [0.01, 0.02], "quote": "PLANTED"}),
+                           eps_ex_item={"eps": [0.01, 0.02], "quote": "PLANTED"},
+                           op_margin_guide_pct=[-99.0, -98.0], margin_quote="PLANTED"),     # the GAAP margin guide (CRM 2022-2026)
                "LMT": dict(rev_guide_usd_b=[0.1, 0.2], segop_guide_usd_b=[0.1, 0.2], cfo_words="PLANTED", note="PLANTED",
                            eps_label="PLANTED", rev_base_usd_b=0.01, rev_base_label="PLANTED"),   # the stated base (LMT 2018-2021)
                "SPGI": dict(eps_growth=[-99, -98], eps_growth_base=0.01, eps_growth_base_note="PLANTED", eps_guide_note="PLANTED",
@@ -1046,6 +1048,8 @@ try:
                 x.update(rev_guide_usd_b=[0.1, 0.2], rev_quote="PLANTED")
             if g.get("rev_guide_pct") is not None:       # a fiscal-year revenue guide stated as growth (CRM 2010-2012)
                 x.update(rev_guide_pct=[-99, -98], rev_quote="PLANTED")
+            if g.get("op_margin_guide_pct") is not None:  # the fiscal-year GAAP operating margin guide (CRM 2022-2026)
+                x.update(op_margin_guide_pct=[-99.0, -98.0], margin_quote="PLANTED")
             f["guides"].append(x)
         for y in sorted({g["fy"] for g in f["guides"]} | {2099}):
             f["guides"].append({"fy": y, "published": (dt.date.fromisoformat(later) + dt.timedelta(days=1)).isoformat(),
@@ -1071,6 +1075,16 @@ try:
                  fy_label="PLANTED", eps_first_excluded={"1990": "PLANTED"})
         if f.get("reduced_data", {}).get("first_unread", later) >= cutoff:   # (CRM 2013-2017) a reduced-data flag dated after CUTOFF
             f["reduced_data"] = {"first_unread": later, "note": "PLANTED"}
+        if f.get("reduced_data", {}).get("full_from", later) >= cutoff:      # (CRM 2022-2026) a full-data date after CUTOFF
+            f["reduced_data"] = {**f["reduced_data"], "full_from": later, "full_note": "PLANTED"}
+        if "ai_words" in v:                                                  # the 10-K's own AI words (CRM 2022-2026)
+            v["ai_words"] = "PLANTED"
+        if cutoff > f.get("reduced_data", {}).get("full_from", "9999"):      # the later vintage as a full-data date reads it
+            v["full_data"] = True
+        if f.get("events") and not [e for e in f["events"] if e["published"] < cutoff]:   # a later GENAI event (CRM 2022-2026)
+            e = copy.deepcopy(f["events"][0])
+            e.update(published=later, doc="PLANTED", risk_quote="PLANTED", risk_short="PLANTED", offering="PLANTED")
+            f["events"].append(e)
     if TICKER == "MU":     # a later vintage excluding a year and readmitting none, with planted texts and figures
         v["eps_excluded"] = {**v.get("eps_excluded", {}), "2098": "PLANTED"}
         v.update(normalization="PLANTED", business_line="PLANTED", prev_fy_op_margin=-99.0, prev_fy_op_margin_note="PLANTED",
