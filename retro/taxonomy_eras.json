@@ -2241,6 +2241,16 @@
     "term": "Customer 360",
     "first_seen": "2018-04-17",
     "note": "first in a salesforce.com filing in its Rule 425 communication of 2018-04-17 (accepted 07:41 ET, before the open); EDGAR full-text search, CIK 1108524"
+   },
+   {
+    "term": "NextEra Energy Resources",
+    "first_seen": "2009-01-08",
+    "note": "FPL Energy, LLC's new name ('On January 7, 2009, FPL Energy, LLC, an indirect wholly owned subsidiary of FPL Group, changed its name to NextEra Energy Resources, LLC.'); first in FPL Group's 8-K accepted 2009-01-07 16:15 ET, after the close, so it counts from the next trading day; EDGAR full-text search, CIK 753308"
+   },
+   {
+    "term": "NextEra Energy, Inc.",
+    "first_seen": "2010-03-19",
+    "note": "FPL Group, Inc.'s later name; first in a filing under CIK 753308 in the 8-K accepted 2010-03-19 12:15 ET (during the session); EDGAR full-text search finds none before it"
    }
   ]
  }
