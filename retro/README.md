@@ -27111,8 +27111,10 @@ Controls and checks (before any outcome):
   inert: the Q2 FY22 print (never the latest on a full-data date) and the Q3 FY22 release's FY23 guide (restated before FY23 was current).
 - **Leak scan:** 132,106 (model, later token) pairs over the 255 new models (the source ids, texts and figures of four significant digits
   or more of every fact published after a model's date, less what an earlier fact or the engine carries): 13 hits, one coincidence. The
-  Q2 FY24 release's Q3 FY24 range, $8,700-8,720M, ends at Q3 FY24's actual $8,720M. As a positive control, the
-  latest print's notes appear in each of the 255 models.
+  Q2 FY24 release's Q3 FY24 range, $8,700-8,720M, ends at Q3 FY24's actual $8,720M. Over the 732 models of 2008-2021 against the new
+  facts: 890,791 pairs, 2 hits, both market statistics equal to later figures (a close of $26.40 on 2008-11-14, the FY22 revenue
+  guide's $26.40B; a 75th-percentile P/E of 262.7x on 2009-10-09, FY2015's $262.7M net loss in a new vintage's text). As a positive
+  control, the latest print's notes appear in each of the 255 models.
 - **Self-text scan:** 471 dollar figures in the new facts' own texts (quoted filing text aside), each a value of the fact's own filings
   or marked derived (EPS without the listed items, debt sums); 3 are the FY2012-FY2013 loss texts carried unchanged from the earlier sheet.
 - **XBRL check:** every print's revenues, gross profit, operating result, R&D, marketing and sales, G&A, unearned revenue and diluted EPS
@@ -27120,6 +27122,11 @@ Controls and checks (before any outcome):
 - **Year and term check:** no 2022-2026 model prints a year after its date (fiscal-year labels, URLs and accession numbers aside), and no
   product name appears before its first filing.
 - **Regression:** the 732 models of 2008-2021 rebuild byte for byte. No other ticker's code changes.
+- **Firewall.** It was run after the build, validation outputs and README section were committed and pushed, before any 2022-2026
+  outcome. It passes at all 28 cutoffs above, on its first run: 0 files changed and no planted text, 732 to 987 dates each. The cutoffs
+  are 2022-01-01, every print, 10-K and dividend date of the range, the change of name, GENAI's live date and 2026-11-21. As positive
+  controls (built offline), a planted print dated 2024-07-01 with its own source reaches 2024-07-05 and not 2024-06-28 (byte-identical);
+  the same print citing a source published after AS_OF stops at the builder's check that every source is public on AS_OF.
 
 Seen in the build (method behaviour, not tuned). The guided GAAP EPS rises from $0.39 to $10.23 over the range, against a window that
 keeps FY2018's 160x-232x days:
