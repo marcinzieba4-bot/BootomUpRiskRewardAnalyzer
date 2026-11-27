@@ -45,6 +45,17 @@ NEM 2010-2013 (retro/README.md, "NEM 2010-2013"; decided before any 2010-2013 mo
     SCHW rule), public before that day's open;
   - from CLOUD's live date (2012-10-30) the 'why' quotes every live theme's registered scope (the NEE 2010-2013 wording).
 
+NEM 2014-2017 (retro/README.md, "NEM 2014-2017"; decided before any 2014-2017 model was built or scored):
+  - five more vintages (the FY2013-FY2016 10-Ks and the 8-K of 2014-06-13 recasting the FY2013 10-K's Items 6-8, a vintage of its
+    own), each holding the ten fiscal years to the latest one; FY2013 and FY2016 are losses and FY2015 fails the AAPL FY2002 test
+    (then $0.00 restated, Batu Hijau discontinued), each excluded as the latest year and then a gap, so FY12's $3.78 (then $3.76)
+    stands to the FY2014 10-K and FY14's $1.10 (then $1.30 restated) after it;
+  - from Q2 2014 every release tabulates consolidated gold ounces sold against the year-ago quarter (the costs applicable to sales
+    reconciliation's per-ounce denominator), rule T's line, so the ounces signal reads it through the original engine (Q4 2013 and
+    Q1 2014 keep ounces produced and nem2);
+  - ECOMMERCE, STREAMING and ENERGY_TRANSITION go live in 2015; none names a miner, and ENERGY_TRANSITION is read as out of scope with
+    the 10-K's own climate-change risk factor quoted (the vintage's 'climate_words', text only).
+
 Output goes to staging/retrospective/NEM until the series is added to the archive (--out archive/retrospective/NEM).
 
 Usage
@@ -191,7 +202,8 @@ def build(as_of, facts, raw, spx, engine, out, engine2=None):
     # ── current-FY EPS: no EPS guide in any filing of the period, so the last full year's EPS stands ──
     eps_now = eps_hist[last_fy]
     between = list(range(last_fy + 1, cur_fy))
-    why_gap = {2007: "a loss", 2011: "the Hope Bay write-down, the AAPL FY2002 test"}
+    why_gap = {2007: "a loss", 2011: "the Hope Bay write-down, the AAPL FY2002 test", 2013: "a loss",
+               2015: "the AAPL FY2002 test" + (", then $0.00 restated" if "2016" in h["eps_excluded"] else ""), 2016: "a loss"}
     if between == [2007] or not between:
         gap_text = " (FY07 excluded: a loss)" if between else ""
     else:
@@ -266,12 +278,17 @@ def build(as_of, facts, raw, spx, engine, out, engine2=None):
                 "  the bear needs the gold price to stop covering them.")
     theme_summary = "no disruption theme has dated evidence"
     live = sorted(((t["live_from"], k, t["scope"]) for k, t in retro_tool.load_taxonomy()["themes"].items() if t["live_from"] <= as_of))
-    assert {k for _, k, _ in live} <= {"OFFSHORE", "CLOUD"}, (as_of, "a live theme needs its scope reading for a gold miner first", live)
+    assert {k for _, k, _ in live} <= {"OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING", "ENERGY_TRANSITION"}, (
+        as_of, "a live theme needs its scope reading for a gold miner first", live)
     why = h["why"]
     if [k for _, k, _ in live] != ["OFFSHORE"]:   # from CLOUD's 2012-10-30: every live theme with its registered scope (NEE 2010-2013)
         scopes = ", ".join(f"{k} {'is scoped to' if i == 0 else 'to'} '{sc}'" for i, (_, k, sc) in enumerate(live))
         why += ("; no disruption theme in the registry is live for a gold miner on this date (of the live themes, "
                 f"{scopes}: none names a miner), so the watch list is empty")
+    if "ENERGY_TRANSITION" in {k for _, k, _ in live}:   # NEM 2014-2017: out of scope; the 10-K's climate words quoted, text only
+        assert h.get("climate_words"), (as_of, "ENERGY_TRANSITION's reading quotes the vintage's climate-change risk factor")
+        why += ("; Newmont holds no oil, gas or coal reserves and no refining, so ENERGY_TRANSITION is read as out of scope, and the "
+                f"10-K's own climate words are a cost, not a stranded reserve: {h['climate_words']} (text only)")
     oz_basis = latest.get("oz_basis", "sold")
     cat4 = (f"(4) Ounces — consolidated gold ounces {oz_basis} {latest['oz_pct']:+.1f}% in {latest['quarter']} against revenue "
             f"{latest['sales_pct']:+.1f}%: the metal price, not volume, has carried revenue")
