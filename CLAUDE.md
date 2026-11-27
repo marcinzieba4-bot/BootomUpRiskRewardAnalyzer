@@ -25,7 +25,7 @@ touching either directory.
   (2008 to 2026-10-30 so far), XOM (2008 to 2026-10-30 so far), SHW (2008 to 2026-11-06 so far), WMT (2008 to 2026-11-06 so far), RCL (2008 to 2026-11-06 so far), MAR (2008 to 2026-11-03 so far), BKR (2008 to 2017-06-30, then 2019-02-01 to 2026-11-06 so far), PFE (2008 to 2026-11-04 so far), CMCSA (2008 to 2026-11-06 so far), CAT (2008 to 2026-11-06 so far), BMY (2008 to 2026-11-06 so far), NVDA (2008 to 2026-11-06 so far), F (2008-01-04 to 2026-11-06 so far; 2022-01-07 onward was built first at the owner's request, and dates before 2022 are an early era with its
   own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far), SPGI (2008-01-04 to 2026-11-20 so far), CB (2008-01-04 to 2026-11-20 so far), LLY (2008-01-04 to 2026-11-20 so far), UNH (2008-01-04 to 2026-11-20 so far), CRM (2008-01-04 to 2026-11-20 so far), SCHW (2008-01-04 to 2026-11-20 so far), NEE (2008-01-04 to 2026-11-20 so far), NEM (2008-01-04 to 2009-12-31 so far) and LYB (from its 2010 share issue: 2012-02-10 to 2013-12-31 so far) sit in `staging/retrospective/` until the owner adds
   them to the archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM", "SHW", "WMT", "RCL", "MAR", "BKR", "PFE", "CMCSA", "CAT",
-  "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG", "JPM", "V", "SPGI", "CB", "LLY", "UNH", "CRM", "SCHW", "NEE", "NEM", "LYB"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py`, `mu_signal_model.py`, `v_signal_model.py`, `spgi_signal_model.py` and `lly_signal_model.py` (other branches) files
+  "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG", "JPM", "V", "SPGI", "CB", "LLY", "UNH", "CRM", "SCHW", "NEE", "NEM", "LYB"; "CHTR" is set up with no date built). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py`, `mu_signal_model.py`, `v_signal_model.py`, `spgi_signal_model.py` and `lly_signal_model.py` (other branches) files
   and today's profiles in `data/business_profiles.json` (NVDA's, SO's, V's, SPGI's, CB's, LLY's, UNH's, CRM's and NEE's included) are 2026 analyses: never inputs to a retrospective. AVGO did not trade
   before its IPO, so its series starts at the listing (the listing and bounds rules of method r2). BKR's 2008 to 2017-06-30 dates are Baker
   Hughes Incorporated, listed as BHI: BKR is only the series key (and Yahoo's symbol for the history); the models print BHI. Its dates from
@@ -545,5 +545,15 @@ touching either directory.
   revenue and two GAAP margins, rule T over the 2007-2011 values the first date's filings report; CYCLICAL on the 10-Ks' own words, no
   live theme; dividends from the first filing that states each interim rate (specials are not a rate); RICH and AVOID on all 100 dates,
   robustness 8 of 8, and no tested encoding moves a class (retro/README.md, "LYB").
+  CHTR (Charter Communications, Inc., CIK 1091667) is set up in staging with no date built: its fact sheet, generator
+  (`retro/generators/chtr/`), gate builder (`retro/build_chtr.py`) and engine (`chtr_engine.py.tmpl`, the cable engine with every
+  threshold unset) exist, and the builder refuses every weekly date of 2008-01-04 to 2013-12-31 (314) with its reason
+  (`staging/retrospective/CHTR/GATE.md`). Every fiscal year from 1999 to 2013 is a loss per share, so no year anchors a P/E (the F, MU and
+  CRM loss rule); 2009 is reported as the Predecessor's eleven months ($12.61, the Plan and fresh start gains) and the Successor's
+  December ($0.02), neither a year (the CTVA 2017 rule); from the 2009-11-30 emergence only the Successor's years count (the BKR 2018
+  rule); and Yahoo's CHTR series starts on 2010-01-05 (the new Class A, OTC: CCMM, then NASDAQ: CHTR from 2010-09-14), so 2008-2009 has
+  no close either (the old Class A was suspended from NASDAQ on 2009-04-07 and cancelled on 2009-11-30). The first buildable date lies
+  after 2013 and was not determined; annualizing December 2009 or anchoring on the eleven months would be a new rule, the owner's call
+  (retro/README.md, "CHTR", "CHTR 2008-2009").
 - **Never use the owner's personal email** in request headers to external
   services (SEC asks for a contact in the User-Agent).

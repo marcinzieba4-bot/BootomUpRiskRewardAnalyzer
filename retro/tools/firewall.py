@@ -41,6 +41,7 @@ and require byte-identical models. Restores the fact sheet and the price cache a
     python3 retro/tools/firewall.py 2009-01-01 NEE          # the NEE series (FPL Group, FPL) in staging/retrospective
     python3 retro/tools/firewall.py 2009-01-01 NEM          # the NEM series (Newmont Mining Corporation) in staging/retrospective
     python3 retro/tools/firewall.py 2013-01-01 LYB          # the LYB series in staging/retrospective (from the 2010 share issue)
+    python3 retro/tools/firewall.py 2010-01-01 CHTR         # the CHTR gate (no date built; retro/README.md, "CHTR 2008-2009")
 
 Plants a print, a history vintage, an event per live theme and a company name (UNP: also a guide and a
 dividend; LOW and AAPL: also a guide with every guided field; NKE: a guide in words, and futures orders on the last print before
@@ -214,7 +215,8 @@ OUTDIR = {"ACN": "archive/retrospective/ACN", "UNP": "staging/retrospective/UNP"
           "LLY": "staging/retrospective/LLY", "UNH": "staging/retrospective/UNH", "CRM": "staging/retrospective/CRM",
           "SCHW": "staging/retrospective/SCHW",
           "NEE": "staging/retrospective/NEE", "NEM": "staging/retrospective/NEM",
-          "LYB": "staging/retrospective/LYB"}[TICKER]
+          "LYB": "staging/retrospective/LYB",
+          "CHTR": "staging/retrospective/CHTR"}[TICKER]
 ARCHIVE = os.path.join(ROOT, OUTDIR)
 BUILDER = os.path.join(ROOT, "retro", f"build_{TICKER.lower()}.py")
 # absurd values for every field the builder reads from a print
@@ -468,7 +470,7 @@ PLANT = {"ACN": dict(quarter="Q9 FY99", revenue_lc=-60, margin_bp=-999, fy_eps_g
                      oz_pct=-60.0, cas_pct=99.0, pretax_margin=-50.0, pretax_margin_prior=50.0, margin_bp=-10000.0, eps_q=0.01,
                      eps_q_prior=9.99, eps_pct=-99.9, diluted_shares_m=1.0, cash_b=99.0, debt_note="PLANTED", rev_note="PLANTED",
                      oz_note="PLANTED", cas_note="PLANTED", eps_note="PLANTED", adj_note="PLANTED", next_print="PLANTED",
-                     raw=dict(rev_m=4, rev_prior_m=10, pretax_m=-2, pretax_prior_m=5, oz_k=4, oz_prior_k=10, cas=9999, cas_prior=1))}[TICKER]
+                     raw=dict(rev_m=4, rev_prior_m=10, pretax_m=-2, pretax_prior_m=5, oz_k=4, oz_prior_k=10, cas=9999, cas_prior=1))}.get(TICKER, {})   # CHTR: none (the gate test below)
 # LOW and AAPL guides carry more fields than UNP's: plant every one the builder reads (NKE's are words only)
 GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -999], margin_def="PLANTED", stores_guide=1,
                            store_opening_m=9999, fy_words="PLANTED",
@@ -537,6 +539,30 @@ if git("status", "--porcelain", "retro/facts", OUTDIR).strip():
     sys.exit("commit first: the fact sheet or the archive has uncommitted changes")
 
 later = (dt.date.fromisoformat(cutoff) + dt.timedelta(days=10)).isoformat()
+if TICKER == "CHTR":   # no CHTR date is built (retro/README.md, "CHTR 2008-2009"), so the test is the gate's: in memory, a later 10-K
+                       # vintage with a positive full year for both issuers, a later listing and a later series start; every weekly date
+                       # before CUTOFF must keep its exact refusal, and the planted vintage must change the refusal of the dates after it
+    sys.path.insert(0, os.path.join(ROOT, "retro"))
+    import build_chtr
+    with open(FACTS, encoding="utf-8") as fh:
+        f0 = json.load(fh)
+    f1 = copy.deepcopy(f0)
+    yr = lambda who: {"issuer": who, "start": "PLANTED", "end": "PLANTED", "months": 12, "revenue_m": 0.01, "eps_diluted": 99.99,
+                      "eps_continuing": 99.99, "diluted_shares_m": 1.0}
+    f1["history_vintages"].append({"published": later, "source": "PLANTED", "fy_label": "FY99",
+                                   "periods": {"2098": yr("Predecessor"), "2099": yr("Successor")}})
+    f1["listings"].append({"published": later, "source": "PLANTED", "issuer": "Successor", "exchange": "PLANTED", "symbol": "PLANTED"})
+    chtr, spx = build_chtr.trading_days("CHTR"), build_chtr.trading_days("^GSPC")
+    before = build_chtr.weekly_dates("2008-01-01", (dt.date.fromisoformat(cutoff) - dt.timedelta(days=1)).isoformat(), spx)
+    nxt = min([v["published"] for v in f0["history_vintages"] if v["published"] > later] + ["9999-12-31"])   # a real later vintage
+    after = [d for d in build_chtr.weekly_dates(later, (dt.date.fromisoformat(later) + dt.timedelta(days=60)).isoformat(), spx)
+             if d < nxt]                                                                                     # replaces the plant
+    g = lambda d, f: build_chtr.gate(d, f, {k: c for k, c in chtr.items() if k <= d})
+    changed = [d for d in before if g(d, f0) != g(d, f1)]
+    moved = [d for d in after if g(d, f0) != g(d, f1)]
+    print(f"{len(before)} weekly dates before {cutoff}: {len(changed)} refusals changed by the planted later facts; "
+          f"control: {len(moved)} of {len(after)} dates after {later} changed")
+    sys.exit(1 if changed or len(moved) != len(after) else 0)
 dates = sorted(os.path.basename(d) for d in glob.glob(os.path.join(ARCHIVE, "20*")) if os.path.basename(d) < cutoff)
 backup = tempfile.mkdtemp()
 changed = planted = ["not run"]
