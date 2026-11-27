@@ -1,0 +1,248 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "SCHW",
+ "company": "The Charles Schwab Corporation",
+ "as_of": "2010-12-10",
+ "price_date": "2010-12-10",
+ "price": 16.72,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); net revenue, client assets, expense, trading activity and pre-tax margin signals with Schwab's rule-T thresholds",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'The Charles Schwab Corporation (CSC) ... engages, through its subsidiaries (collectively referred to as the Company, and primarily located in San Francisco except as indicated), in securities brokerage, banking, and related financial services.' 'Developments in the business, economic, and geopolitical environment could negatively impact the Company’s business.' 'The Company’s industry is characterized by aggressive price competition.' (FY2009 10-K); DURABLE, risk 2: the 10-K ties results to markets, rates and investor engagement and names price competition, a cycle and a competitive field, and does not call its own business cyclical (the JPM, LOW and SHW reading); no theme in taxonomy_eras.json is live for a securities broker and bank on these dates (OFFSHORE is scoped to IT services), so the watch list is empty and these words stay here (the PEP obesity rule)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, NEUTRALLY VALUED",
+  "quality_label": "◎ QUALITY, NEUTRALLY VALUED",
+  "quality_color": "#f0b429",
+  "quality_tone": "amber",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "FAIR",
+  "quality_note": "'The Charles Schwab Corporation (CSC) ... engages, through its subsidiaries (collectively referred to as the Company, and primarily located in San Francisco except as indicated), in securities brokerage, banking, and related financial services.' 'Developments in the business, economic, and geopolitical environment could negatively impact the Company’s business.' 'The Company’s industry is characterized by aggressive price competition.' (FY2009 10-K); DURABLE, risk 2: the 10-K ties results to markets, rates and investor engagement and names price competition, a cycle and a competitive field, and does not call its own business cyclical (the JPM, LOW and SHW reading); no theme in taxonomy_eras.json is live for a securities broker and bank on these dates (OFFSHORE is scoped to IT services), so the watch list is empty and these words stay here (the PEP obesity rule). durable franchise (obsolescence risk 2/5); price fair; Ratio B 1.10x; +29% to EPP floor; model-vs-market gap -0.19; conservative 2yr +17%.",
+  "theme": null
+ },
+ "legacy_signal_short": "WATCHLIST",
+ "legacy_signal": "◐ WATCHLIST",
+ "metrics": {
+  "ratio_b": 1.1,
+  "ratio_b_fmt": "1.10x",
+  "epp": 12.92,
+  "epp_gap_pct": 29.4,
+  "epp_adj": 0.0,
+  "proxy_composite": 1.85,
+  "sca": 0.134,
+  "adj_composite": 1.984,
+  "market_composite": 2.17,
+  "adj_gap": -0.19,
+  "valuation": "FAIRLY VALUED",
+  "cons_return_2yr": 16.8,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.28,
+    "pe": 20.2,
+    "price": 5.66,
+    "desc": "EPS -35.8%/yr (worst year FY03-FY09, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 0.79,
+    "pe": 25.2,
+    "price": 19.91,
+    "desc": "EPS +7.8%/yr (Q3 revenue YoY + margin + buyback); P/E at its 7.9-yr median"
+   },
+   "BULL": {
+    "eps": 0.9,
+    "pe": 29.8,
+    "price": 26.82,
+    "desc": "EPS +15.3%/yr (FY03-FY09 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 1.8,
+    "pe": 39.3,
+    "price": 70.74,
+    "desc": "EPS +62.9%/yr (best 2-yr run FY03-FY09, at least BULL); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 1.1,
+   "epp_gap_pct": 29.4,
+   "adj_gap": -0.19,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 16.8,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.57,
+   "epp_gap_pct": 29.4,
+   "adj_gap": 0.19,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 16.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 1.92,
+   "epp_gap_pct": 29.4,
+   "adj_gap": -0.52,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 16.8,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 1.0,
+   "epp_gap_pct": 29.4,
+   "adj_gap": -0.13,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 16.8,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 1.21,
+   "epp_gap_pct": 29.4,
+   "adj_gap": -0.24,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 16.8,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 1.1,
+   "epp_gap_pct": 29.4,
+   "adj_gap": 0.11,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 16.8,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 1.1,
+   "epp_gap_pct": 11.8,
+   "adj_gap": -0.19,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 16.8,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 1.1,
+   "epp_gap_pct": 29.4,
+   "adj_gap": -0.01,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 16.8,
+   "price_state": "FAIR"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP",
+  "FAIR",
+  "RICH"
+ ],
+ "summary": "SCHW (retrospective, 2010-12-10) ◐ WATCHLIST — Ratio B 1.10x (66.1% downside to Bear $5.66 / +60.4% upside to Bull $26.82) | Adj composite 1.98 vs market 2.17: gap -0.19 [FAIRLY VALUED] | +29% above the EPP floor $12.92 (19x FY10E $0.68) | Conservative 2-yr case: +16.8% total (+8.4%/yr) | At 24.6x FY10E the 15% hurdle price $22.11 sits between the BASE and BULL cases; revenue +5.1% YoY in Q3 2010, forward revenues +5.1% (Q3 2010 revenue growth (no Q4 2010 guide)); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "SCHW25",
+   "published": "2010-02-25",
+   "filed": "accepted 2010-02-25 14:43 ET (during market hours)",
+   "title": "The Charles Schwab Corporation FY2009 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/316709/000119312510040444/d10k.htm",
+   "supports": "selected financial and operating data 2005-2009, the 2007-2009 client activity metrics and statements of income: the FY09 history vintage; Items 1, 1A and 5; the transfer of the listing to the NYSE"
+  },
+  {
+   "id": "SCHW14",
+   "published": "2008-02-27",
+   "filed": "accepted 2008-02-26 19:50 ET (after the close), so dated the next trading day",
+   "title": "The Charles Schwab Corporation FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/316709/000119312508039024/d10k.htm",
+   "supports": "selected financial and operating data 2003-2007, the 2005-2007 client activity metrics and the 2005-2007 statements of income: the FY07 history vintage; Items 1, 1A and 5"
+  },
+  {
+   "id": "SCHW20",
+   "published": "2009-02-26",
+   "filed": "accepted 2009-02-25 16:15 ET (after the close), so dated the next trading day",
+   "title": "The Charles Schwab Corporation FY2008 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/316709/000119312509037420/d10k.htm",
+   "supports": "selected financial and operating data 2004-2008, the 2006-2008 client activity metrics and the 2006-2008 statements of income: the FY08 history vintage; Items 1, 1A and 5"
+  },
+  {
+   "id": "SCHW24",
+   "published": "2010-01-20",
+   "filed": "accepted 2010-01-19 16:35 ET (after the close), so dated the next trading day",
+   "title": "Schwab Q4 2009 earnings release (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/316709/000119312510008163/dex991.htm",
+   "supports": "Q4 2009 and FY2009 statement of income, financial and operating highlights, client assets and trades"
+  },
+  {
+   "id": "SCHW26",
+   "published": "2010-04-15",
+   "filed": "accepted 2010-04-15 15:40 ET (during market hours)",
+   "title": "Schwab Q1 2010 earnings release (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/316709/000119312510084322/dex991.htm",
+   "supports": "Q1 2010 statement of income, financial and operating highlights, client assets and trades"
+  },
+  {
+   "id": "SCHW27",
+   "published": "2010-04-20",
+   "filed": "accepted 2010-04-20 15:04 ET (during market hours)",
+   "title": "Schwab 8-K of 2010-04-20 (exhibit 99.1): the YieldPlus class action settlement and the added Q1 2010 reserve",
+   "url": "https://www.sec.gov/Archives/edgar/data/316709/000118143110022140/rrd273091_31777.htm",
+   "supports": "the $172 million pre-tax increase in the contingency reserve that reduces first quarter 2010 results"
+  },
+  {
+   "id": "SCHW28",
+   "published": "2010-05-07",
+   "filed": "accepted 2010-05-07 12:46 ET (during market hours)",
+   "title": "The Charles Schwab Corporation Q1 2010 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/316709/000119312510112442/d10q.htm",
+   "supports": "Q1 2010 statement of income as restated for the YieldPlus settlement reserve"
+  },
+  {
+   "id": "SCHW29",
+   "published": "2010-07-16",
+   "filed": "accepted 2010-07-16 15:55 ET (during market hours)",
+   "title": "Schwab Q2 2010 earnings release (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/316709/000119312510160170/dex991.htm",
+   "supports": "Q2 2010 statement of income, financial and operating highlights, client assets and trades"
+  },
+  {
+   "id": "SCHW30",
+   "published": "2010-10-15",
+   "filed": "accepted 2010-10-15 15:32 ET (during market hours)",
+   "title": "Schwab Q3 2010 earnings release (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/316709/000119312510230201/dex991.htm",
+   "supports": "Q3 2010 statement of income, financial and operating highlights, client assets and trades"
+  },
+  {
+   "id": "SCHW17",
+   "published": "2008-08-07",
+   "filed": "accepted 2008-08-07 15:21 ET (during market hours)",
+   "title": "The Charles Schwab Corporation Q2 2008 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/316709/000119312508169989/d10q.htm",
+   "supports": "the quarterly dividend raised to $.06 a share (July 22, 2008)"
+  },
+  {
+   "id": "Y0",
+   "published": "2010-12-10",
+   "title": "Yahoo Finance daily prices, SCHW and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/SCHW/history",
+   "supports": "close $16.72 as traded on AS_OF, 52-week range, realized vol, beta, the 7.9-yr P/E distribution from 2003-01-02"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-27"
+}
