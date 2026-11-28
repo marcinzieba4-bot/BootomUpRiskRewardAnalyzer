@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Generate retro/facts/LYB.json (2012-02-10 to 2021-12-31) from LyondellBasell Industries N.V.'s own filings (edgar.py's rows).
+"""Generate retro/facts/LYB.json (2012-02-10 to 2026-11-20) from LyondellBasell Industries N.V.'s own filings (edgar.py's rows).
 
 Every raw figure is read from its own labelled row (the row is kept for the verbatim checklist), every rate, margin, tax rate
 and rule-T value is computed, every quoted sentence is asserted present in its own filing. Only filings accepted on or before
-2021-12-31 are read. The downloads (keep them outside the repository):
+2026-11-22 are read. The downloads (keep them outside the repository):
 
     python3 retro/tools/edgar.py index 1489393 <dir>
-    python3 retro/tools/edgar.py fetch 1489393 <dir> --from 2010-04-01 --to 2021-12-31 --forms 10-K 10-Q 8-K 8-K/A 10-12B 10-12B/A
+    python3 retro/tools/edgar.py fetch 1489393 <dir> --from 2010-04-01 --to 2026-11-27 --forms 10-K 10-Q 8-K 8-K/A 10-12B 10-12B/A
 
 Run:
     python3 -I retro/generators/lyb/gen_lyb.py --filings <dir> [--out retro/facts/LYB.json] [--checklist <dir>/checklist_lyb.json]
@@ -33,7 +33,7 @@ sys.path.insert(0, os.path.join(REPO, "retro"))
 import retro_tool  # noqa: E402  (the repo's own tool: trading days from the Yahoo cache)
 
 ET = ZoneInfo("America/New_York")
-CUT = "2021-12-31"
+CUT = "2026-11-22"
 CIK = 1489393
 FILINGS = {r[3]: r for r in json.load(open(os.path.join(SP, "allrows.json")))}
 chart = retro_tool.chart("LYB")
@@ -1296,13 +1296,407 @@ quote(FPRE, "First quarter 2020 net income is expected to be in the range of $11
 for qq in REL3:
     quote(FREL3[qq], "OUTLOOK")
 
+# ══ 2022-2026: the Q4 2021 to Q3 2026 releases, the FY2021-FY2025 10-Ks, the dividends and repurchase authorities to 2026-11-22 ══
+# (added for retro/README.md, "LYB 2022-2026"; everything above is unchanged, so the 2012-2021 facts regenerate byte for byte).
+# From Q4 2021 every release is Exhibit 99.1 (Table 1, the earnings summary; Table 2, the EBITDA reconciliation) and Exhibit 99.2 (the
+# segment overview tables, operating income by segment); no release prints the consolidated operating income. For Q1-Q3 it comes from
+# the quarter's 10-Q, accepted the same Friday during the session ('oi_source', the 2018-2021 encoding); the fourth quarter has no 10-Q
+# and no filing prints a fourth-quarter operating income, so a Q4 print's operating margin is n/r (None). From Q1 2025 the EBITDA
+# reconciliation starts from net income (the refining business discontinued, its results an identified item), so the pre-tax income comes
+# from the 10-Q for Q1-Q3 and is n/r for Q4 2025. Items 6 of the FY2021-FY2025 10-Ks are 'Reserved': each vintage takes three years from
+# its own statements and earlier years from the latest earlier vintage, the ten fiscal years to the latest one.
+REL4 = {"Q4 2021": ("0001489393-22-000003", None), "Q1 2022": ("0001489393-22-000018", "0001489393-22-000020"),
+        "Q2 2022": ("0001489393-22-000035", "0001489393-22-000037"), "Q3 2022": ("0001489393-22-000043", "0001489393-22-000046"),
+        "Q4 2022": ("0001489393-23-000002", None), "Q1 2023": ("0001489393-23-000023", "0001489393-23-000025"),
+        "Q2 2023": ("0001489393-23-000036", "0001489393-23-000037"), "Q3 2023": ("0001489393-23-000040", "0001489393-23-000043"),
+        "Q4 2023": ("0001489393-24-000005", None), "Q1 2024": ("0001489393-24-000018", "0001489393-24-000020"),
+        "Q2 2024": ("0001489393-24-000035", "0001489393-24-000037"), "Q3 2024": ("0001489393-24-000040", "0001489393-24-000046"),
+        "Q4 2024": ("0001489393-25-000004", None), "Q1 2025": ("0001489393-25-000021", "0001489393-25-000022"),
+        "Q2 2025": ("0001489393-25-000038", "0001489393-25-000041"), "Q3 2025": ("0001489393-25-000054", "0001489393-25-000056"),
+        "Q4 2025": ("0001489393-26-000003", None), "Q1 2026": ("0001489393-26-000025", "0001489393-26-000028"),
+        "Q2 2026": ("0001489393-26-000057", "0001489393-26-000061"), "Q3 2026": ("0001489393-26-000067", "0001489393-26-000070")}
+SID4 = {q: f"LB{120 + i}" for i, q in enumerate(REL4)}
+QSID4 = {q: f"LB{140 + i}" for i, q in enumerate(q for q, (_, b) in REL4.items() if b)}
+FREL4 = {q: doc(a, "EX-99.1__") for q, (a, _) in REL4.items()}
+FSEG4 = {q: doc(a, "EX-99.2__") for q, (a, _) in REL4.items()}
+DISC25 = ("Q1 2025", "Q2 2025", "Q3 2025", "Q4 2025")          # releases whose year-ago quarter is restated without the refining business
+quote(FREL4["Q1 2025"], "In February 2025, we ceased business operations at our Houston refinery. Accordingly, our refining business, "
+                        "previously disclosed as the Refining segment, is reported as a discontinued operation. The related operating "
+                        "results of our refining business are reported as discontinued operations for all periods presented.")
+# the 8-K/A of 2024-11-01 (accepted 15:04 ET, the release's day) re-files Exhibit 99.2 of Q3 2024 to correct one word of its text
+# ("438 million shares" to "438 thousand shares"): every figure is the same, so it adds nothing (asserted)
+_a, _b = lines(FSEG4["Q3 2024"]), lines(doc("0001489393-24-000043", "EX-99.2__"))
+assert len(_a) == len(_b) and [i for i, (x, y) in enumerate(zip(_a, _b)) if x != y] == [65] and "438 thousand shares" in _b[65]
+
+
+def earnings4(path):
+    """Table 1 (Earnings Summary), its first block (the 'Excluding Identified Items' block below it is the company's adjusted view)."""
+    i0, i1 = table_at(path, "Earnings Summary")
+    L = lines(path)
+    i1 = next((i for i in range(i0 + 1, i1) if L[i].startswith(("Excluding", "(a)", "(1)"))), i1)
+    rev = five(path, None, "Sales and other operating revenues", i0, i1)
+    ni = five(path, None, first_label(path, i0, i1, ("Net income", "Net income (loss)", "Net (loss) income")), i0, i1)
+    eps = five(path, None, first_label(path, i0, i1, ("Diluted earnings per share", "Diluted earnings (loss) per share",
+                                                    "Diluted (loss) earnings per share")), i0, i1)
+    sh = five(path, None, "Weighted average diluted share count", i0, i1)
+    eb = five(path, None, "EBITDA", i0, i1)
+    return rev, ni, eps, sh, eb
+
+
+def recon4(path):
+    """Table 2, the reconciliation of net income to EBITDA: income from continuing operations and the provision for income taxes
+    (None where the table starts from net income, from Q1 2025), and the net income excluding identified items."""
+    L = lines(path)
+    i0 = [i for i, x in enumerate(L) if re.match(r"Table 2\s*[-–—]\s*Reconciliation", x)]
+    assert len(i0) == 1, path
+    i0 = i0[0]
+    i1 = next(i for i in range(i0 + 1, len(L)) if re.match(r"Table \d+\s*[-–—]", L[i]))
+    lab = lambda x: dnorm(nofoot(x.split(" |")[0]))
+    inc = [i for i in range(i0, i1) if "|" in L[i] and lab(L[i]) in ("Income from continuing operations", "(Loss) income from "
+                                                                   "continuing operations", "Income (loss) from continuing operations")]
+    excl = next(i for i in range(i0, i1) if "|" in L[i] and lab(L[i]).startswith("Net income") and "excluding" in lab(L[i]))
+    _, ex = row2(path, lab(L[excl]), excl, excl + 1)
+    if not inc:
+        return None, None, ex
+    assert len(inc) == 1, (path, inc)
+    _, iv = row2(path, lab(L[inc[0]]), inc[0], inc[0] + 1)
+    t = next(i for i in range(inc[0] + 1, inc[0] + 3) if "|" in L[i] and "income taxes" in lab(L[i]))
+    _, tv = row2(path, lab(L[t]), t, t + 1)
+    return iv, tv, ex
+
+
+def seg4(qq, label):
+    """A segment's operating income row in Exhibit 99.2's segment overview table (the quarter, the previous quarter, the year-ago quarter,
+    then the year to date; Q3 2026: the quarter, the previous quarter, then the nine months, with no year-ago quarter)."""
+    f2 = FSEG4[qq]
+    t = {OPA2: "O&P-Americas Financial Overview", IND: "I&D Financial Overview"}[label]
+    i0, i1 = table_at(f2, t)
+    lab = first_label(f2, i0, i1, ("Operating income", "Operating income (loss)", "Operating (loss) income"))
+    _, v = row2(f2, lab, i0, i1)
+    return v
+
+
+def tenq4(acc, rev_now, rev_prior):
+    """The 10-Q's statement of income: operating income and income from continuing operations before income taxes, the quarter and the
+    year-ago quarter (the revenues total checked against the release's)."""
+    f = doc(acc, "10-Q__")
+    st = next(i for i, x in enumerate(lines(f)) if x in ("CONSOLIDATED STATEMENTS OF INCOME", "CONSOLIDATED STATEMENTS OF INCOME (LOSS)",
+                                                          "CONSOLIDATED STATEMENTS OF (LOSS) INCOME"))
+    r0 = line_no(f, "Sales and other operating revenues", 0, st)
+    tot = next(x for x in lines(f)[r0:r0 + 6] if "|" in x and re.fullmatch(r"[\d,| ]+", x)
+               and [num(t) for t in x.split("|")][:2] == [rev_now, rev_prior])
+    CHECK.setdefault(f, []).append(tot)
+    _, oi = row2(f, first_label(f, st, st + 30, ("Operating income", "Operating income (loss)", "Operating (loss) income")), st, st + 30)
+    _, pt = row2(f, first_label(f, st, st + 30, ("Income from continuing operations before income taxes",
+                                                 "Income (loss) from continuing operations before income taxes",
+                                                 "(Loss) income from continuing operations before income taxes")), st, st + 30)
+    return f, oi[0], oi[1], pt[0], pt[1]
+
+
+usd_e = lambda e: f"${e:.2f}" if e >= 0 else f"$({-e:.2f})"      # a loss per share in parentheses, as the filings print it
+ORDER4 = list(REL4)
+q4_note = ("operating income: not in the release (its segment tables give segment operating income only) and the fourth quarter has no "
+           "10-Q, so the operating margin is n/r")
+for qi, (qq, (acc, qacc)) in enumerate(REL4.items()):
+    q, fy = int(qq[1]), int(qq[3:])
+    f = FREL4[qq]
+    rev, ni, eps, sh, ebitda = earnings4(f)
+    opa_v, ind_v = seg4(qq, OPA2), seg4(qq, IND)
+    seg_from = ""
+    if len(opa_v) == 4:                     # Q3 2026: no year-ago column; the year-ago quarter as the Q3 2025 release printed it
+        assert qq == "Q3 2026" and len(ind_v) == 4
+        y = next(p for p in prints if p["quarter"] == "Q3 2025")
+        ya_o, ya_i = seg4("Q3 2025", OPA2), seg4("Q3 2025", IND)
+        assert (opa_v[3], ind_v[3]) == (ya_o[3], ya_i[3]), "the nine months of 2025 as the Q3 2025 release printed them (no recast)"
+        opa, opa_p, ind, ind_p = opa_v[0], y["raw"]["opa_m"], ind_v[0], y["raw"]["ind_m"]
+        seg_from = (" (this release's segment tables print no third quarter 2025 column: the year-ago quarter is the Q3 2025 release's, "
+                    "whose nine months of 2025 this release repeats unchanged)")
+    else:
+        opa, opa_p, ind, ind_p = opa_v[0], opa_v[2], ind_v[0], ind_v[2]
+    inc, tax, excl = recon4(f)
+    pub, filed = published(acc)
+    sid = source(SID4[qq], acc, f"LyondellBasell Industries N.V. {qq} results (8-K, Exhibits 99.1 and 99.2)", f,
+                 "the quarter's Table 1 (revenues, net income, diluted EPS, diluted shares), the EBITDA reconciliation (income from "
+                 "continuing operations and the provision for income taxes, where printed; the net income excluding identified items) and "
+                 "Exhibit 99.2's segment overview tables (segment operating income), each with the year-ago quarter as this release shows it")
+    oi_src, oi, oi_p, pti, pti_p = None, None, None, None, None
+    if inc is not None:
+        pti, pti_p = inc[0] + tax[0], inc[2] + tax[2]
+        pt_note = (f"income before income taxes: income from continuing operations {usd_m(inc[0])} plus the provision for income taxes "
+                   f"{usd_m(tax[0])}, against {usd_m(inc[2])} plus {usd_m(tax[2])}")
+    if qacc:
+        fq, oi, oi_p, qpt, qpt_p = tenq4(qacc, rev[0], rev[2])
+        oi_src = source(QSID4[qq], qacc, f"LyondellBasell Industries N.V. {qq} 10-Q", fq,
+                        "the statement of income's operating income and income from continuing operations before income taxes for the "
+                        "quarter and the year-ago quarter (the release prints no operating income)")
+        assert SRC[oi_src]["published"] == pub, (qq, "the 10-Q is public on the release's date", SRC[oi_src]["published"], pub)
+        if inc is not None:
+            assert (qpt, qpt_p) == (pti, pti_p), (qq, "the release's pre-tax components and the 10-Q's pre-tax income agree")
+        else:
+            pti, pti_p = qpt, qpt_p
+            pt_note = f"income from continuing operations before income taxes {usd_m(pti)} vs {usd_m(pti_p)} ({qq} 10-Q)"
+    elif inc is None:
+        pt_note = ("income before income taxes: not in the release (from Q1 2025 its EBITDA reconciliation starts from net income, the "
+                   "discontinued refining business among the identified items) and the fourth quarter has no 10-Q, so the pre-tax margin is n/r")
+    raw = dict(rev_m=rev[0], rev_prior_m=rev[2], oi_m=oi, oi_prior_m=oi_p, pti_m=pti, pti_prior_m=pti_p, eps_q=eps[0], eps_q_prior=eps[2],
+               dil_sh_m=sh[0], opa_m=opa, opa_prior_m=opa_p, ind_m=ind, ind_prior_m=ind_p, ebitda_m=ebitda[0])
+    rel_day = dt.date.fromisoformat(FILINGS[acc][1][:10])
+    nq = ORDER4[qi + 1] if qi + 1 < len(ORDER4) else "Q4 2026"
+    m_ = lambda x, r: None if x is None else mg(x, r)
+    bp_ = lambda a, ra, b, rb: None if a is None else round((mg(a, ra) - mg(b, rb)) * 100, 1)
+    p = dict(quarter=qq, fy=fy, q=q, published=pub, source=sid, release=f"{rel_day.strftime('%b')} {rel_day.day}",
+             release_time=f"8-K {filed}", period_end=f"{fy}-{QDATE[q]}", raw=raw,
+             sales_b=round(rev[0] / 1000, 3), sales_pct=pct(rev[2], rev[0]),
+             opm=m_(oi, rev[0]), opm_bp=bp_(oi, rev[0], oi_p, rev[2]),
+             ptm=m_(pti, rev[0]), ptm_bp=bp_(pti, rev[0], pti_p, rev[2]),
+             eps_q=eps[0], eps_q_prior=eps[2], diluted_shares_m=sh[0],
+             opa_pct=pct(opa_p, opa), ind_pct=pct(ind_p, ind),
+             seg_note=f"O&P–Americas operating income {usd_m(opa)} vs {usd_m(opa_p)}, Intermediates & Derivatives {usd_m(ind)} vs "
+                      f"{usd_m(ind_p)}{seg_from}",
+             sales_note=f"sales and other operating revenues {usd_m(rev[0])} vs {usd_m(rev[2])}" + (
+                 " (the year-ago quarter without the refining business, a discontinued operation, as this release shows it)"
+                 if qq in DISC25 else ""),
+             margin_note=((f"operating income {usd_m(oi)} vs {usd_m(oi_p)} ({qq} 10-Q)" if qacc else q4_note) + "; " + pt_note),
+             eps_note=f"GAAP, diluted on net income (the release prints no continuing-operations figure), "
+                      f"{'$%.2f' % eps[0] if eps[0] >= 0 else '$(%.2f)' % -eps[0]} against "
+                      f"{'$%.2f' % eps[2] if eps[2] >= 0 else '$(%.2f)' % -eps[2]} a year earlier",
+             cash_note=f"EBITDA {usd_m(ebitda[0])} (non-GAAP, display only)",
+             next_print=f"the {nq} release")
+    if oi_src:
+        p["oi_source"] = oi_src
+    if q == 4:
+        # the full year: Table 1's year column; the one-off test on Table 2's identified items after tax for the year (net income
+        # excluding identified items less net income: every item the table lists, charges net of benefits, as for 2014-2017's table)
+        items = round(excl[3] - ni[3], 1)
+        kind = "charges" if items >= 0 else "benefits"
+        dist = (-items > ni[3] + items) if kind == "benefits" else (items > ni[3])
+        loss = eps[3] <= 0
+        lab_ex = next(x.split(" |")[0] for x in lines(f) if x.startswith("Net income") and "excluding" in x)
+        if loss:
+            test_note = (f"the release's Table 2: '{nofoot(lab_ex)}' of {usd_m(excl[3])} against net income (loss) of {usd_m(ni[3])}, "
+                         f"identified items of {usd_m(items)} after tax: the year is a loss, so it is excluded whatever the test")
+        else:
+            test_note = (f"the release's Table 2: '{nofoot(lab_ex)}' of {usd_m(excl[3])} against net income of {usd_m(ni[3])}, "
+                         f"identified items of {usd_m(items)} after tax (every item the table lists, charges net of benefits): kept at "
+                         "GAAP; the net is a charge, so the mirror test does not arise")
+        a = dict(fy=fy, fy_label=f"FY{fy % 100}", eps_normalized=None if loss else eps[3],
+                 excluded_note=(f"{usd_e(eps[3])} a diluted share on net income for FY{fy % 100} (the {qq} release): a loss, so the year has no P/E and is "
+                                "excluded as the latest year, its days out of the window (the MU FY2003 and NEM FY2007 rule)") if loss else None,
+                 eps_gaap=eps[3], revenue_usd_b=round(rev[3] / 1000, 3), diluted_shares_m=sh[3],
+                 normalization_note=(f"FY{fy % 100} ${eps[3]:.2f} diluted on net income (the {qq} release prints no continuing-operations "
+                                     f"figure) from the {qq} release ({pub}) until the 10-K") if not loss else
+                                    f"FY{fy % 100} excluded (a loss) from the {qq} release ({pub}) until the 10-K",
+                 sales_growth=pct(rev[4], rev[3]),
+                 one_off_test=dict(items_after_tax_m=items, income_attributable_m=ni[3], distorted=dist, kind=kind, note=test_note))
+        if inc is not None:
+            pti_y = inc[3] + tax[3]
+            comp = f"income from continuing operations {usd_m(inc[3])} plus the provision for income taxes {usd_m(tax[3])}"
+            a.update(op_margin=mg(pti_y, rev[3]),
+                     op_margin_note=f"FY{fy % 100} income before income taxes ({comp}) / revenues {usd_m(rev[3])} ({qq} release)",
+                     check_pretax_margin=mg(pti_y, rev[3]), check_pretax_note=f"FY{fy % 100} income before income taxes / revenues ({qq} release)",
+                     tax_rate=round(tax[3] / pti_y, 3),
+                     tax_note=f"FY{fy % 100} effective rate: the provision for income taxes on income before income taxes ({comp})")
+        else:                                   # Q4 2025: no pre-tax income in the release; the vintage's last year's margin stands
+            a.update(op_margin=None, op_margin_note=None, check_pretax_margin=None, check_pretax_note=None, tax_rate=None, tax_note=None)
+        p["fy_actual"] = a
+    prints.append(p)
+# the company's EPS excluding identified items removes the LCM adjustments and the asset write-downs 'in excess of $10 million in aggregate
+# for the period', which recur (impairments or write-downs in each year of 2021-2025): not a figure excluding only one-offs; GAAP stands
+quote(FREL4["Q2 2025"], "“Identified items” include adjustments for lower of cost or market (\"LCM\"), gain on sale of business, asset "
+                        "write-downs in excess of $10 million in aggregate for the period")
+# the 2027 targets of the 2023 Capital Markets Day (Q1 2023 release) are mid-cycle aspirations on 2013-2022 average margins, no guide
+quote(FREL4["Q1 2023"], "Launched new strategy targeting net income(b) of $6.3 billion and $10 billion of normalized EBITDA(a)(b) by 2027")
+quote(FREL4["Q1 2023"], "(b) Reflects a 2022 year-end asset portfolio with 2013-2022 historical average margins and operating rates and "
+                        "the company's strategic initiatives.")
+for qq in REL4:
+    quote(FREL4[qq], "OUTLOOK")
+
+# ── the FY2021-FY2025 10-Ks (Item 6 reserved: three years from the statements) ──
+K21, K22, K23, K24, K25 = ("0001489393-22-000009", "0001489393-23-000006", "0001489393-24-000012", "0001489393-25-000008",
+                           "0001489393-26-000012")
+F21, F22, F23, F24, F25 = (doc(k, "10-K__") for k in (K21, K22, K23, K24, K25))
+CYCQ24 = "Our business operations are subject to the cyclical and volatile nature of the supply-demand balance in the chemical industry."
+GHGQ22 = ("Additional regulations could be forthcoming at the U.S. federal or state level that could result in increased operating costs "
+          "for compliance, required acquisition or trading of emission allowances, or compliance costs associated with additional regulatory "
+          "frameworks for a range of potential carbon reduction projects, including carbon capture, use, and sequestration projects. "
+          "Additionally, demand for the products we produce may be reduced.")
+GHGQ24 = ("several state governments have promulgated regulations directed at GHG emissions reductions from certain types of facilities, and "
+          "additional regulations could be forthcoming, that could result in increased operating costs for compliance, required acquisition "
+          "or trading of emission allowances, or other costs.", "Additionally, demand for the products we produce may be reduced.")
+AIQ = "In addition, the complex and dynamic regulatory environment surrounding artificial intelligence (“AI”), including generative AI, subjects us to a variety of risks."
+REFX = "Accordingly, our refining business, previously disclosed as the Refining segment, is reported as a discontinued operation."
+SEGN25 = SEGN18[:4] + SEGN18[5:]
+DIVQ4 = {2021: "December | 1.13 | 376 | November 29, 2021", 2022: "December - Quarterly dividend | 1.19 | 386 | November 28, 2022",
+         2023: "December - Quarterly dividend | 1.25 | 406 | November 27, 2023", 2024: "December | 1.34 | 437 | December 2, 2024",
+         2025: ("In February 2026, we declared a quarterly dividend of $0.69 per share, representing a $0.68 per share reduction from our "
+                "fourth quarter 2025 dividend.")}
+DIVR4 = {2021: 1.13, 2022: 1.19, 2023: 1.25, 2024: 1.34, 2025: 0.69}
+
+
+def tenk4(path, acc, sid, fy, title):
+    """One FY2021-FY2025 10-K vintage: the statement of income's three years (revenues, pre-tax income, tax), the EPS note's diluted EPS
+    from continuing operations and diluted shares (three years), the cash flow statement, the segment note's revenues from customers
+    (this year and last), and its own words (cyclicality, greenhouse gas regulation, refining, AI)."""
+    L = lines(path)
+    st = line_no(path, "CONSOLIDATED STATEMENTS OF INCOME")
+    yrs = [int(c) for c in cells(next(x for x in L[st:st + 4] if x.startswith("Millions of dollars, except earnings")))]
+    r0 = line_no(path, "Related parties", 0, st)
+    tot = L[r0 + 1]
+    assert re.fullmatch(r"[\d,| ]+", tot), (fy, tot)
+    rv = [num(t) for t in tot.split("|")]
+    CHECK.setdefault(path, []).append(tot)
+    _, pt = row2(path, first_label(path, st, st + 40, ("Income from continuing operations before income taxes",
+                                                      "Income (loss) from continuing operations before income taxes")), st, st + 40)
+    _, tx = row2(path, first_label(path, st, st + 40, ("Provision for income taxes", "Provision for (benefit from) income taxes",
+                                                      "(Benefit from) provision for income taxes")), st, st + 40)
+    e = line_no(path, "Potential dilutive shares")
+    _, shr = row(path, "Potential dilutive shares", e, e + 1)
+    _, epr = row(path, "Diluted", e, e + 4)
+    assert len(shr) == 6 and len(epr) == 6, (fy, shr, epr)
+    cfo = line_no(path, "Net cash provided by operating activities |")
+    _, ocf = row(path, "Net cash provided by operating activities", cfo, cfo + 1)
+    _, capex = row(path, "Expenditures for property, plant and equipment", cfo, cfo + 4)
+    cf = line_no(path, "Cash flows from financing activities:")
+    _, rep = row(path, "Repurchases of Company ordinary shares", cf, cf + 4)
+    _, dvp = row(path, "Dividends paid - common stock", cf, cf + 4)
+    s24 = line_no(path, f"Year Ended December 31, {fy}", 0, e)
+    _, cust = row(path, "Customers", s24, s24 + 6)
+    s24p = line_no(path, f"Year Ended December 31, {fy - 1}", 0, s24)
+    _, custp = row(path, "Customers", s24p, s24p + 6)
+    nseg = 5 if fy == 2025 else 6
+    assert len(cust) == nseg + 2 and cust[-1] == rv[0] and custp[-1] == rv[1], (fy, cust, custp, rv)
+    full = norm(" ".join(L))
+    low = full.lower()
+    assert not any(w in low for w in ("electric vehicle", "e-commerce", "streaming", "crypto", "cloud", "glp-1", "obesity")), fy
+    assert "automotive" in low, fy
+    ai = quote(path, AIQ) if fy >= 2024 else None
+    if fy < 2024:
+        assert "artificial intelligence" not in low and "generative" not in low, fy
+    m = re.search(r"Refining\. Our Refining segment refines[^•]*?\.(?= •|$)", full)
+    if fy <= 2024:
+        refq = quote(path, m.group(0))
+        why = quote(path, CYCQ if fy <= 2023 else CYCQ24)
+        ghg = (quote(path, GHGQ20) if fy == 2021 else quote(path, GHGQ22) if fy <= 2023 else
+               " … ".join(quote(path, s) for s in GHGQ24))
+        refx = None
+    else:                                    # FY2025: the refining business is a discontinued operation; no greenhouse gas demand words
+        assert m is None and "demand for the products we produce may be reduced" not in full
+        refq, ghg, refx, why = None, None, quote(path, REFX), quote(path, CYCQ24)
+    source(sid, acc, title, path,
+           f"FY{fy} annual history (Item 6 reserved): the statement of income (revenues, income before income taxes and the provision, "
+           "three years), the EPS note's diluted EPS from continuing operations and diluted shares, the cash flow statement, the segment "
+           "note (revenues from customers), the dividend table and the risk factors (cyclicality, greenhouse gas regulation, AI) and "
+           "Item 1's segment description")
+    return dict(rv=dict(zip(yrs, rv)), ep=dict(zip(yrs, epr[0::2])), ocf=ocf[0], capex=capex[0], sh=dict(zip(yrs, shr[0::2])),
+                pt=pt[0], tx=tx[0], rep=rep[0], dvp=dvp[0], cust=cust, custp=custp, why=why, ghg=ghg, refq=refq, refx=refx, ai=ai,
+                pub=SRC[sid]["published"], nseg=nseg)
+
+
+T21 = tenk4(F21, K21, "LB110", 2021, "LyondellBasell Industries N.V. FY2021 10-K")
+T22 = tenk4(F22, K22, "LB111", 2022, "LyondellBasell Industries N.V. FY2022 10-K")
+T23 = tenk4(F23, K23, "LB112", 2023, "LyondellBasell Industries N.V. FY2023 10-K")
+T24 = tenk4(F24, K24, "LB113", 2024, "LyondellBasell Industries N.V. FY2024 10-K")
+T25 = tenk4(F25, K25, "LB114", 2025, "LyondellBasell Industries N.V. FY2025 10-K")
+assert [T21["ep"][2021], T22["ep"][2022], T23["ep"][2023], T24["ep"][2024], T25["ep"][2025]] == [16.77, 11.83, 6.48, 4.14, -2.48]
+assert (T25["ep"][2024], T25["ep"][2023], T25["rv"][2023]) == (4.39, 5.68, 33336)          # restated without the refining business
+for fy, path in ((2021, F21), (2022, F22), (2023, F23), (2024, F24), (2025, F25)):
+    DIVQ[fy] = quote(path, DIVQ4[fy])
+    DIVR[fy] = DIVR4[fy]
+# the 8-Ks of 2023-03-07 (a summary of 2020-2022 on the segment structure effective January 1, 2023) and 2023-05-12 (the FY2022 10-K's
+# Items recast for that structure) recast segments only: the revenues, EPS and shares a model reads are the FY2022 10-K's (asserted), and
+# the segment bridge is display only, so they add nothing (the UNH 2011-05-23 segment recast precedent)
+FR23 = doc("0001489393-23-000008", "EX-99.1__")
+quote(FR23, "Based on Segment Structure Effective as of January 1, 2023")
+assert row(FR23, "Total sales and other operating revenues", 0)[1] == [T22["rv"][2020], T22["rv"][2021], T22["rv"][2022]]
+FR23b = doc("0001489393-23-000028", "EX-99.1__")
+_e = line_no(FR23b, "Potential dilutive shares")
+assert row(FR23b, "Potential dilutive shares", _e, _e + 1)[1][0::2] == [T22["sh"][y] for y in (2022, 2021, 2020)]
+assert row(FR23b, "Diluted", _e, _e + 4)[1][0::2] == [T22["ep"][y] for y in (2022, 2021, 2020)]
+
+
+def vintage4(prev, t, fy, sid):
+    """The FY2021-FY2025 vintages: three years from the 10-K's statements, earlier years from the latest earlier vintage, the ten fiscal
+    years to the latest one (EPS and shares included, so 2010 and 2011 leave); a loss year is excluded."""
+    tt = dict(t, ep={y: v for y, v in t["ep"].items() if v > 0})
+    v = vintage(prev, tt, fy, sid)
+    keep = [str(y) for y in range(fy - 9, fy + 1)]
+    v["eps_normalized"] = {y: e for y, e in v["eps_normalized"].items() if y in keep}
+    v["eps_excluded"] = {str(y): (f"{usd_e(e)} a diluted share from continuing operations for FY{y % 100} (FY{fy} 10-K): a loss, so "
+                                  "the year has no P/E and is excluded, its days out of the window (the MU FY2003 and NEM FY2007 rule)")
+                         for y, e in t["ep"].items() if e <= 0}
+    v["diluted_shares_m"] = {y: n for y, n in v["diluted_shares_m"].items() if y in keep}
+    segs = SEGN18 if t["nseg"] == 6 else SEGN25
+    v.update(groups=[[n, round(c / 1000, 3), pct(pc, c)] for n, c, pc in zip(segs, t["cust"][:t["nseg"]], t["custp"][:t["nseg"]])],
+             business_line=("Olefins and polyolefins, intermediates and derivatives, advanced polymer solutions, refining, technology"
+                            if t["nseg"] == 6 else "Olefins and polyolefins, intermediates and derivatives, advanced polymer solutions, technology"),
+             shares_note="diluted weighted-average shares of the EPS note; the ten fiscal years to the latest one",
+             tenk_scan=True)
+    first = min(int(y) for y, s in v["revenue_sources"].items() if s == sid)
+    v["revenue_note"] = (f"{first}-{fy} from the FY{fy} 10-K's statement of income (Item 6 reserved)"
+                         + (", from continuing operations without the refining business (discontinued in 2025); earlier years with it, as "
+                            "the earlier 10-Ks report them (a seam)" if fy == 2025 else "") +
+                         "; earlier years from the latest earlier 10-K that reports them; the ten fiscal years to the latest one")
+    v["dividend_note"] = (f"${DIVR[fy]:.2f} a quarter, the interim dividend of {fy} (FY{fy} 10-K, the dividend table's December row: "
+                          f"'{DIVQ[fy]}')" if fy < 2025 else f"$0.69 a quarter, the interim dividend declared in February 2026 (FY2025 10-K: '{DIVQ[fy]}')")
+    for k in ("refining_quote", "transition_quote", "cloud_quote"):
+        v.pop(k, None)
+    if t["refq"]:
+        v.update(refining_quote=t["refq"], transition_quote=t["ghg"])
+    else:
+        v["refining_exit_quote"] = t["refx"]
+    if t["ai"]:
+        v["ai_quote"] = t["ai"]
+    return v
+
+
+V12 = vintage4(V11, T21, 2021, "LB110")
+V13 = vintage4(V12, T22, 2022, "LB111")
+V14 = vintage4(V13, T23, 2023, "LB112")
+V15 = vintage4(V14, T24, 2024, "LB113")
+V16 = vintage4(V15, T25, 2025, "LB114")
+assert sorted(V16["eps_normalized"]) == [str(y) for y in range(2016, 2025)] and list(V16["eps_excluded"]) == ["2025"]
+assert "2011" not in V12["eps_normalized"] and "2012" in V12["eps_normalized"] and min(V16["revenue_usd_b"]) == "2016"
+
+# ── dividends: each declared interim rate from the first filing that states it ──
+DIV4 = [("Q2 2022", "10-Q", 1.19, "Dividends - common stock ($1.19 per share)"),
+        ("Q2 2023", "release", 1.25, "Increased quarterly dividend by 5% to $1.25 per share"),
+        ("Q2 2024", "release", 1.34, "Increased quarterly dividend by 7% to $1.34 per share"),
+        ("Q2 2025", "10-Q", 1.37, "Dividends - common stock ($1.37 per share)"),
+        ("FY2025", "10-K", 0.69, DIVQ4[2025])]
+for qq, kind_, rate, s in DIV4:
+    if kind_ == "10-K":
+        sid, path = "LB114", F25
+    elif kind_ == "10-Q":
+        sid, path = QSID4[qq], doc(REL4[qq][1], "10-Q__")
+    else:
+        sid, path = SID4[qq], FREL4[qq]
+    dividends.append(dict(published=SRC[sid]["published"], source=sid, quarterly=rate,
+                          note=f"${rate:.2f} a quarter, the interim dividend rate first stated in the {qq} {kind_}",
+                          quote=quote(path, s)))
+
+# ── repurchase authorities: each annual meeting's program (display only, the share counts carry their effect) ──
+BB4 = [("LB160", "0001489393-22-000028", "2022", "34,026,947 shares, until November 27, 2023"),
+       ("LB161", "0001489393-23-000032", "2023", "34,042,250 shares, until November 19, 2024"),
+       ("LB162", "0001489393-24-000025", "2024", "34,042,250 shares, until November 24, 2025"),
+       ("LB163", "0001489393-25-000028", "2025", "34,042,250 shares, until November 23, 2026"),
+       ("LB164", "0001489393-26-000034", "2026", "34,042,250 shares, until November 22, 2027")]
+for sid, acc, yr, tail in BB4:
+    fb = doc(acc, "8-K__")
+    source(sid, acc, f"LyondellBasell Industries N.V. 8-K (the {yr} annual meeting)", fb, "the share repurchase authority")
+    buybacks2.append(dict(published=SRC[sid]["published"], source=sid,
+                          quote=quote(fb, "the Company’s shareholders approved a new share repurchase program authorizing the Company to "
+                                          "repurchase up to 10% of the Company’s issued share capital as of the date of the Annual Meeting, "
+                                          f"or {tail}"),
+                          note="display only: the diluted share counts carry its effect",
+                          text=f"the {yr} annual meeting's program to repurchase up to 10% of the shares ({tail.split(' shares')[0]})"))
+
 facts = dict(
     _doc=("LyondellBasell Industries N.V. (NYSE: LYB), point-in-time facts for retro/build_lyb.py. Every value carries its source and "
           "the source's publication date (EDGAR acceptance time; at or after the 16:00 ET close it counts from the next trading day). "
           "Generated by retro/generators/lyb/gen_lyb.py from the filings' converted rows: each figure is read from its labelled row, "
           "the row is asserted present in its own filing, and every rate, margin, tax rate and rule-T value is computed."),
     ticker="LYB", sources=dict(sorted(SRC.items(), key=lambda kv: (kv[1]["published"], kv[0]))), listing=listing, distributions=[],
-    history_vintages=[V1, V2, V3, V4, V5, V6, V7, V8, V9, V10, V11], prints=prints, guides=[], dividends=dividends, events=[], company_names=[],
+    history_vintages=[V1, V2, V3, V4, V5, V6, V7, V8, V9, V10, V11, V12, V13, V14, V15, V16], prints=prints, guides=[], dividends=dividends, events=[], company_names=[],
     buyback_programs=[dict(published=SRC["LB30"]["published"], source="LB30", quote=BUYBACK_Q,
                            note="display only: the diluted share counts carry its effect",
                            text="a share repurchase program for up to 10% of the shares from May 2013")] + buybacks2,
@@ -1320,5 +1714,6 @@ print(f"wrote {out}: {len(prints)} prints, {len(facts["history_vintages"])} vint
 for k, e in rule_t.items():
     print(f"  rule T {k}: {e['values']} -> {e['thresholds']}")
 for p in prints:
-    print(f"  {p['quarter']} {p['published']} rev {p['sales_pct']:+.1f}% opm {p['opm_bp']:+.0f}bp ptm {p['ptm_bp']:+.0f}bp "
+    bp = lambda v: "n/r" if v is None else f"{v:+.0f}bp"
+    print(f"  {p['quarter']} {p['published']} rev {p['sales_pct']:+.1f}% opm {bp(p['opm_bp'])} ptm {bp(p['ptm_bp'])} "
           f"O&P-A {p['opa_pct']} I&D {p['ind_pct']} eps {p['eps_q']} vs {p['eps_q_prior']} sh {p['diluted_shares_m']} | {p['release_time']}")

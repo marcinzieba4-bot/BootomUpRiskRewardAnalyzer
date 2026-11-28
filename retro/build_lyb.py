@@ -19,7 +19,7 @@ the filing reports it, each year from the latest filing that reports it; a relea
 release: the Berre refinery in discontinued operations) restates it until the next 10-K ('restates' on the print). The combined
 Successor and Predecessor 2010, which each 10-K's MD&A prints and calls the year, is a year of revenues (never of EPS).
 
-LyondellBasell guides no revenue, EPS or margin in numbers in any filing of 2010-2021, so:
+LyondellBasell guides no revenue, EPS or margin in numbers in any filing of 2010-2026, so:
   - current-FY EPS: the last full year's GAAP EPS stands (the PFE rule for a year with no reported-EPS guide),
   - BASE growth and the growth factor: the latest quarter's revenue growth as reported (the SO, UNP and KMI no-guide rule),
   - guided margin step: none; the margin signal uses the latest quarter's change.
@@ -39,6 +39,7 @@ Usage
   python3 retro/build_lyb.py --weekly 2012-02-06 2013-12-31      # 100 dates, 2012-02-10 .. 2013-12-31
   python3 retro/build_lyb.py --weekly 2014-01-01 2017-12-31      # 209 dates, 2014-01-03 .. 2017-12-29 (retro/README.md, "LYB 2014-2017")
   python3 retro/build_lyb.py --weekly 2018-01-01 2021-12-31      # 209 dates, 2018-01-05 .. 2021-12-31 (retro/README.md, "LYB 2018-2021")
+  python3 retro/build_lyb.py --weekly 2022-01-03 2026-11-22      # 255 dates, 2022-01-07 .. 2026-11-20 (retro/README.md, "LYB 2022-2026")
   python3 retro/build_lyb.py 2012-02-10
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/LYB/<AS_OF>
 """
@@ -58,6 +59,8 @@ from build_unp import money  # noqa: E402
 
 FACTS = os.path.join(HERE, "facts", "LYB.json")
 ENGINE = os.path.join(HERE, "templates", "lyb_engine.py.tmpl")
+# the None-tolerant copy, for a latest print with no operating (or pre-tax) income in the filings (the Q4 prints from Q4 2021)
+ENGINE_NR = os.path.join(HERE, "templates", "lyb2_engine.py.tmpl")
 OUT = os.path.join(ROOT, "staging", "retrospective", "LYB")
 SYMBOL = "LYB"
 # rule T, the engine's signal thresholds: (BEAR, BASE, BULL, XBULL); the builder checks the fact sheet against them
@@ -69,7 +72,8 @@ PRINT_KEYS = {"quarter", "fy", "q", "published", "source", "release", "release_t
               "sales_note", "margin_note", "eps_note", "cash_note", "next_print", "fy_actual", "restates",
               "oi_source"}   # oi_source: the 10-Q that gives the quarter's operating income where the release prints none (2018, 2021)
 FY_KEYS = {"fy", "fy_label", "eps_normalized", "excluded_note", "revenue_usd_b", "diluted_shares_m", "normalization_note", "op_margin",
-           "op_margin_note", "sales_growth", "check_pretax_margin", "check_pretax_note", "tax_rate", "tax_note", "one_off_test"}
+           "op_margin_note", "sales_growth", "check_pretax_margin", "check_pretax_note", "tax_rate", "tax_note", "one_off_test",
+           "eps_gaap"}   # eps_gaap: the year's GAAP EPS, for a year excluded as a loss (FY2025)
 RESTATE_KEYS = {"eps_normalized", "revenue_usd_b", "note"}
 
 
@@ -106,9 +110,12 @@ def check_print(p):
     # growth on the year-ago figure; against a year-ago loss, over the loss's absolute value (the CAT 2014-2017 and SO 2018-2021 rule)
     pct = lambda a, b: round((b / a - 1) * 100, 1) if a > 0 else round((b - a) / abs(a) * 100, 1) if a < 0 else None
     mg = lambda x, rev: round(x / rev * 100 + 0.0, 2)
+    # a quarter with no operating (or pre-tax) income in the filings (the Q4 prints from Q4 2021) keeps its margin None: n/r, BASE
+    m_ = lambda x, rev: None if x is None else mg(x, rev)
+    bp_ = lambda x, rev, xp, revp: None if x is None else round((mg(x, rev) - mg(xp, revp)) * 100, 1)
     want = {"sales_b": round(r["rev_m"] / 1000, 3), "sales_pct": pct(r["rev_prior_m"], r["rev_m"]),
-            "opm": mg(r["oi_m"], r["rev_m"]), "opm_bp": round((mg(r["oi_m"], r["rev_m"]) - mg(r["oi_prior_m"], r["rev_prior_m"])) * 100, 1),
-            "ptm": mg(r["pti_m"], r["rev_m"]), "ptm_bp": round((mg(r["pti_m"], r["rev_m"]) - mg(r["pti_prior_m"], r["rev_prior_m"])) * 100, 1),
+            "opm": m_(r["oi_m"], r["rev_m"]), "opm_bp": bp_(r["oi_m"], r["rev_m"], r["oi_prior_m"], r["rev_prior_m"]),
+            "ptm": m_(r["pti_m"], r["rev_m"]), "ptm_bp": bp_(r["pti_m"], r["rev_m"], r["pti_prior_m"], r["rev_prior_m"]),
             "eps_q": r["eps_q"], "eps_q_prior": r["eps_q_prior"], "diluted_shares_m": r["dil_sh_m"],
             "opa_pct": pct(r["opa_prior_m"], r["opa_m"]), "ind_pct": pct(r["ind_prior_m"], r["ind_m"])}
     for k, v in want.items():
@@ -125,7 +132,9 @@ def check_print(p):
         it, inc = t["items_after_tax_m"], t["income_attributable_m"]
         assert t["kind"] == ("benefits" if it < 0 else "charges"), (p["quarter"], "the one-off test's kind")
         assert t["distorted"] == ((-it > inc + it) if it < 0 else (it > inc)), (p["quarter"], "the one-off test")
-        assert kept == (not t["distorted"] and a["eps_normalized"] > 0), (p["quarter"], "the year's EPS and the one-off test disagree")
+        gaap = a.get("eps_gaap", a["eps_normalized"])          # a loss year (FY2025) carries its GAAP EPS here, out of the history
+        assert kept == (not t["distorted"] and gaap > 0), (p["quarter"], "the year's EPS and the one-off test disagree")
+        assert not kept or gaap == a["eps_normalized"], (p["quarter"], "a kept year is its GAAP EPS")
 
 
 def build(as_of, facts, raw, spx, engine, out):
@@ -147,7 +156,7 @@ def build(as_of, facts, raw, spx, engine, out):
     for v in vintages:                                 # the fiscal calendar the filings state must match the rule
         for y, end in v.get("fiscal_year_ends", {}).items():
             assert fiscal_year_end(int(y)).isoformat() == end, (y, end)
-    assert not [g for g in facts["guides"] if g["published"] <= as_of], "a guide needs its encoding first (no LYB filing of 2010-2021 gives one)"
+    assert not [g for g in facts["guides"] if g["published"] <= as_of], "a guide needs its encoding first (no LYB filing of 2010-2026 gives one)"
     assert rule_t(facts["rule_t"]) == ENGINE_THRESHOLDS, "the engine's thresholds must follow rule T on the fact sheet's values"
     public = [p for p in facts["prints"] if p["published"] <= as_of]
     for p in public:                                   # a print public on AS_OF must match its raw figures
@@ -176,11 +185,15 @@ def build(as_of, facts, raw, spx, engine, out):
                      revenue_usd_b={**h["revenue_usd_b"], y: a["revenue_usd_b"]},
                      diluted_shares_m={**h["diluted_shares_m"], y: a["diluted_shares_m"]},
                      normalization=f'{h["normalization"]}; {a["normalization_note"]}',
-                     prev_fy_op_margin=a["op_margin"], prev_fy_op_margin_note=a["op_margin_note"],
                      prev_fy_sales_growth=a["sales_growth"],
-                     check_pretax_margin=a["check_pretax_margin"], check_pretax_note=a["check_pretax_note"],
-                     tax_rate=a["tax_rate"], tax_note=f'{a["tax_note"]} ({p["source"]})',
                      extended=f'{h["extended"]}, FY{y[2:]} from {p["source"]} ({p["published"]})')
+            if a["op_margin"] is not None:
+                h.update(prev_fy_op_margin=a["op_margin"], prev_fy_op_margin_note=a["op_margin_note"],
+                         check_pretax_margin=a["check_pretax_margin"], check_pretax_note=a["check_pretax_note"],
+                         tax_rate=a["tax_rate"], tax_note=f'{a["tax_note"]} ({p["source"]})')
+            else:                                     # Q4 2025: the release prints no pre-tax income; the vintage's last year's stand
+                h.update(normalization=f'{h["normalization"]}; FY{y[2:]}\'s income before income taxes is not in the {p["quarter"]} '
+                                       "release, so the pre-tax margin and tax rate below are the vintage's last year's until the 10-K")
     # a release that republishes an earlier year on a new basis restates it from its own date until a 10-K published after it (the
     # LMT, PFE and CB print-level rule): the Q2 2012 release's FY2011 from continuing operations (the Berre refinery discontinued)
     restated = []
@@ -272,36 +285,52 @@ def build(as_of, facts, raw, spx, engine, out):
     live = sorted(((t["live_from"], k, t["scope"]) for k, t in retro_tool.load_taxonomy()["themes"].items() if t["live_from"] <= as_of))
     live_k = [k for _, k, _ in live]
     out_k = [k for k in live_k if k != "ENERGY_TRANSITION"]
-    assert out_k == ["OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING", "EV", "CRYPTO"][:len(out_k)], (as_of, "a live theme the LYB 10-Ks were not searched for", live_k)
+    assert out_k == ["OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING", "EV", "CRYPTO", "GENAI", "GLP1"][:len(out_k)], (as_of, "a live theme the LYB 10-Ks were not searched for", live_k)
+    # from the FY2025 10-K the refining business is a discontinued operation and the greenhouse gas demand words are gone, so
+    # ENERGY_TRANSITION (scoped to refining) is read as out of scope (retro/README.md, "LYB 2022-2026")
+    et_out = bool(h.get("refining_exit_quote"))
     if live_k != ["OFFSHORE"]:
         out_live = [x for x in live if x[1] != "ENERGY_TRANSITION"]
         scopes = ", ".join(f"{k} {'is scoped to' if i == 0 else 'to'} '{sc}'" for i, (_, k, sc) in enumerate(out_live))
         named = [w for k, w in (("CLOUD", "cloud"), ("OFFSHORE", "offshore delivery"), ("ECOMMERCE", "e-commerce"),
-                                ("STREAMING", "streaming"), ("EV", "electric vehicles"), ("CRYPTO", "crypto")) if k in live_k
-                 and not (k == "CLOUD" and h.get("cloud_quote"))]     # from the FY2018 10-K: cloud is named once (below)
+                                ("STREAMING", "streaming"), ("EV", "electric vehicles"), ("CRYPTO", "crypto"),
+                                ("GENAI", "generative AI"), ("GLP1", "GLP-1 drugs")) if k in live_k
+                 and not (k == "CLOUD" and h.get("cloud_quote"))     # from the FY2018 10-K: cloud is named once (below)
+                 and not (k == "GENAI" and h.get("ai_quote"))]       # from the FY2024 10-K: generative AI is named (below)
         named = ", ".join(named[:-1]) + (", or " if len(named) > 2 else " or ") + named[-1]
         head = why.split("; no theme in taxonomy_eras.json is live")[0]
         assert head != why, (as_of, "the vintage's why lost its theme clause")
-        if "ENERGY_TRANSITION" not in live_k:
+        names = f"the {h['tenk_label']} names no {named}" if h.get("tenk_scan") else f"no 10-K names {named}"   # FY2021 10-K on: its own words
+        if et_out:
+            et_t = next(x for x in live if x[1] == "ENERGY_TRANSITION")
+            why = (head + "; no disruption theme in taxonomy_eras.json is in scope for a chemicals company on this date (of the live "
+                   f"themes, {scopes}: none names chemicals, and {names}; ENERGY_TRANSITION, scoped to '{et_t[2]}', leaves the watch "
+                   f"list with the {h['tenk_label']}: '{h['refining_exit_quote']}', and its risk factors no longer say that demand for "
+                   "the products it makes may be reduced), so the watch list is empty and these words stay here (the PEP obesity rule)")
+        elif "ENERGY_TRANSITION" not in live_k:
             why = (head + "; no disruption theme in taxonomy_eras.json is live for a chemicals and refining company on this date (of the "
                    f"live themes, {scopes}: none names chemicals or refining, and no 10-K names {named}), so the watch "
                    "list is empty and these words stay here (the PEP obesity rule)")
         else:
-            why = head + f"; of the other live themes, {scopes}: none names chemicals or refining, and no 10-K names {named}"
+            why = head + f"; of the other live themes, {scopes}: none names chemicals or refining, and {names}"
         if h.get("cloud_quote"):      # the FY2018-FY2020 10-Ks name cloud once, in an accounting standard's title (the SCHW cloud_words)
             why += (f"; the {h['tenk_label']} names cloud only in an accounting standard's title ('{h['cloud_quote']}'), not as a "
                     "business LyondellBasell sells or buys in place of its own")
+        if h.get("ai_quote"):         # the FY2024 and FY2025 10-Ks name generative AI in a data privacy and security risk factor
+            why += (f"; the {h['tenk_label']} names generative AI only in its data privacy and security risk factor ('{h['ai_quote']}'), "
+                    "not as a substitute for the products LyondellBasell makes")
         if "EV" in live_k:            # EV's scope names auto parts suppliers and fuel retail; LyondellBasell is neither (retro/README.md)
             why += ("; EV's 'auto parts suppliers' and 'fuel retail' name no LyondellBasell business: its 10-Ks say its products go "
-                    "into 'automotive components' among many uses, and its Houston refinery's refined products are ENERGY_TRANSITION's "
-                    "refining")
+                    "into 'automotive components' among many uses, and " + (
+                        "its refining business is a discontinued operation" if et_out else
+                        "its Houston refinery's refined products are ENERGY_TRANSITION's refining"))
     # ENERGY_TRANSITION is live from 2015-12-12 and scoped to oil, gas and coal reserves and refining; LyondellBasell's Refining segment
     # (the Houston refinery) is refining, and each 10-K's greenhouse gas risk factor says GHG reduction policies "could significantly
     # increase our costs or reduce demand for products we produce", so the theme goes on the watch list (the XOM, SO and KMI rule:
     # company-acknowledged, no market read). No factor pair is added, so only text changes; re-filing needs dated evidence of market
     # pricing for LyondellBasell (retro/README.md, "LYB 2014-2017"). Dates before the live date keep the text above
     et = retro_tool.load_taxonomy()["themes"]["ENERGY_TRANSITION"]
-    if et["live_from"] <= as_of:
+    if et["live_from"] <= as_of and not et_out:
         assert h.get("transition_quote") and h.get("refining_quote") and h.get("tenk_label"), (as_of, "the vintage needs its own 10-K words for the watch list")
         val_word = ("a premium" if pe_now_pctl >= 70 else "a discount to its own history" if pe_now_pctl <= 30 else "near its own median")
         stage = "transition"
@@ -353,7 +382,11 @@ def build(as_of, facts, raw, spx, engine, out):
                 f"EPS {latest['eps_note']}")
     fy_rev = rev[max(rev)] * (1 + sum(fwd) / 2 / 100)
     fy_rev_label = f"{fwd_label}, applied to the year (no {fy_now} revenue guide)"
-    franchise_q = f"{latest['quarter'].split()[0]} operating margin {latest['opm']:.2f}% ({latest['opm_bp']:+.0f}bp)"
+    franchise_q = (f"{latest['quarter'].split()[0]} operating margin {latest['opm']:.2f}% ({latest['opm_bp']:+.0f}bp)" if latest["opm"] is not None
+                   else f"{latest['quarter'].split()[0]} operating margin n/r (no operating income for the quarter in the filings)")
+    if latest["opm"] is None or latest["ptm"] is None:   # the None-tolerant engine (the BKR bkr3 and NEE nee2 encoding)
+        with open(ENGINE_NR, encoding="utf-8") as fh:
+            engine = fh.read()
     fcf_text = f"${h['fcf_b']:.2f}B" if h["fcf_b"] >= 0 else f"$({-h['fcf_b']:.2f})B"
     LATEST = {k: latest.get(k) for k in latest_keys}
     R = repr

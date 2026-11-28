@@ -177,7 +177,8 @@ quarter guided before CUTOFF, in numbers and in words, and from MU 2022-2026 the
 fact sheet with a 'splits' list, SHW's from 2021-2023: a later split on the price data's next split date; LYB: a print whose
 segment operating income, revenue, margins, EPS, notes and raw figures are absurd, with absurd full-year actuals for the year after the
 latest vintage before CUTOFF and a restatement of every year of the history, a later vintage with planted texts, figures, kind and an
-excluded year, and a later share repurchase program; a CLOUD event
+excluded year, and a later share repurchase program (from LYB 2022-2026 also a later vintage with the refining business discontinued
+and a later Q4 print with n/r margins whose loss year is excluded); a CLOUD event
 from a later 10-K, as for every live theme), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
 before CUTOFF changed.
@@ -1380,7 +1381,24 @@ try:
                  revenue_usd_b={**v["revenue_usd_b"], "2099": 0.01}, diluted_shares_m={**v["diluted_shares_m"], "2099": 1.0},
                  eps_excluded={**v.get("eps_excluded", {}), "2098": "PLANTED"},
                  refining_quote="PLANTED", transition_quote="PLANTED", tenk_label="PLANTED",   # the watch-list words (LYB 2014-2017)
-                 cloud_quote="PLANTED")                                                        # the 10-Ks' cloud words (LYB 2018-2021)
+                 cloud_quote="PLANTED",                                                        # the 10-Ks' cloud words (LYB 2018-2021)
+                 ai_quote="PLANTED")                     # the 10-Ks' generative AI words (LYB 2022-2026)
+        # (LYB 2022-2026) a second later vintage with the refining business discontinued (ENERGY_TRANSITION out of scope), and a later
+        # Q4 print with no operating or pre-tax income (n/r) whose year is a loss, excluded (eps_gaap)
+        v2 = copy.deepcopy(v)
+        v2.update(refining_exit_quote="PLANTED", tenk_scan=True)
+        v2.pop("refining_quote", None)
+        v2.pop("transition_quote", None)
+        f["history_vintages"].append(v2)
+        last2 = copy.deepcopy(last)
+        last2.update(quarter="Q4 2099", q=4, opm=None, opm_bp=None, ptm=None, ptm_bp=None,
+                     raw={**last["raw"], "oi_m": None, "oi_prior_m": None, "pti_m": None, "pti_prior_m": None})
+        last2["fy_actual"] = {**last["fy_actual"], "eps_normalized": None, "eps_gaap": -9.99, "excluded_note": "PLANTED",
+                              "op_margin": None, "op_margin_note": None, "check_pretax_margin": None, "check_pretax_note": None,
+                              "tax_rate": None, "tax_note": None,
+                              "one_off_test": {"kind": "charges", "items_after_tax_m": 9.0, "income_attributable_m": -1,
+                                               "distorted": True, "note": "PLANTED"}}
+        f["prints"].append(last2)
         f["buyback_programs"].append({"published": later, "source": last["source"], "quote": "PLANTED", "note": "PLANTED", "text": "PLANTED"})
     if TICKER == "SO":     # absurd full-year actuals on the planted print, for the year after the latest vintage before CUTOFF, and a later
                            # vintage whose every text and figure the models quote is planted (SO 2008-2009)
