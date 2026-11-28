@@ -30132,6 +30132,9 @@ Judgement calls that could carry hindsight:
   read;
 - the last date set by the build time (2026-11-20).
 
+The hindsight results for 2022-2026 are in `staging/retrospective/LYB/FINDINGS.md` ("LYB 2022-2026"), computed after the firewall
+result was pushed: hypotheses, never inputs.
+
 ## CHTR (Charter Communications): the thirty-eighth ticker, in staging, built from 2019-02-01
 
 The CHTR series is set up apart from every other ticker and shares nothing with them but the machinery: its own fact sheet

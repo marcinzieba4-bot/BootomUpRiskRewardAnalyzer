@@ -252,3 +252,98 @@ a year; 2021 brought record earnings (released 2022-01-28, after the range), and
 - **One stock, one cycle and one shock.** The dates span one margin downturn, one pandemic crash and its recovery, a large acquisition
   (A. Schulman) and continued buybacks (395M to 334M diluted shares); they test the no-guide and GAAP-anchor rules on a cyclical, not
   stock selection.
+
+
+# LYB 2022-2026 (hindsight)
+
+Patterns seen in `outcome.json` for the 255 LYB weekly dates of 2022-01-07 to 2026-11-20. Labels and hypotheses, never inputs. The
+batch was scored only after its build, validation outputs, README section and firewall result were committed and pushed (ce5441085,
+85e10305d); the 2012-2021 outcomes and findings above were not opened before then. Outcomes computed on 2026-11-28: 151 dates (to
+2024-11-22) have their 2-year horizon, 203 a 1-year one and 99 a 3-year one; the 2025-2026 dates have no 2-year outcome yet. Total
+returns include the interim and special dividends. Same conventions as above ("Call held" is `call_check_2y`: RICH should miss the
+hurdle and lag SPY, CHEAP should clear it). Tables from `retro/generators/lyb/findings_tables.py 2022,2023,2024,2025,2026`.
+
+**Hindsight the model could not see:** FY2021's record earnings were a peak; polyolefin margins fell through 2022-2025 as demand
+weakened and capacity grew, with impairments, the refinery exit and the European asset sale along the way, and the close fell from about
+$100 in early 2022 to the $40s-$50s by 2025, with the dividend halved in February 2026; the S&P 500 rose strongly over the same years.
+None of it is an input.
+
+## 2022 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier ACCUMULATE (2022-01-07 to 2022-01-21) | 2 | +15.0% | +14.4% to +15.0% | 0 | 2 | -0.4% | 0 |
+| class RICH, legacy tier WATCHLIST (2022-01-14 to 2022-01-14) | 1 | +6.3% | +6.3% to +6.3% | 0 | 1 | -8.8% | 0 |
+| class CHEAP, legacy tier BUY (2022-01-28 to 2022-12-30) | 49 | +13.3% | -3.1% to +41.8% | 6 | 1 | +8.4% | 7 |
+| FY21E $4.25 (FY20's) (2022-01-07 to 2022-01-21) | 3 | +14.4% | +6.3% to +15.0% | 0 | 3 | -4.0% | 0 |
+| FY22E $16.75 (FY21's) (2022-01-28 to 2022-02-18) | 4 | +12.7% | +7.5% to +14.8% | 0 | 1 | -6.3% | 1 |
+| FY22E $16.77 (FY21's) (2022-02-25 to 2022-12-30) | 45 | +14.4% | -3.1% to +41.8% | 6 | 0 | +10.1% | 6 |
+| latest print Q3 2021 (2022-01-07 to 2022-01-21) | 3 | +14.4% | +6.3% to +15.0% | 0 | 3 | -4.0% | 0 |
+| latest print Q4 2021 (2022-01-28 to 2022-04-22) | 13 | +12.1% | +7.2% to +20.1% | 0 | 1 | -8.0% | 1 |
+| latest print Q1 2022 (2022-04-29 to 2022-07-22) | 13 | +10.0% | -3.1% to +24.6% | 0 | 0 | -6.2% | 0 |
+| latest print Q2 2022 (2022-07-29 to 2022-10-21) | 13 | +24.6% | +14.4% to +41.8% | 6 | 0 | +17.5% | 6 |
+| latest print Q3 2022 (2022-10-28 to 2022-12-30) | 10 | +7.4% | +0.4% to +25.4% | 0 | 0 | +15.2% | 0 |
+
+Three years (52 dates with one): 0 of 52 cleared, 0 beat SPY; range -33.9% to +3.9%
+
+## 2023 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY (2023-01-06 to 2023-01-27) | 4 | -6.7% | -8.9% to -5.2% | 0 | 0 | +0.9% | 0 |
+| class RICH, legacy tier AVOID (2023-02-03 to 2023-12-29) | 37 | -34.4% | -44.3% to -9.5% | 0 | 0 | -25.0% | 37 |
+| class FAIR, legacy tier WATCHLIST (2023-03-10 to 2023-03-24) | 3 | -2.3% | -4.9% to +1.0% | 0 | 0 | +3.2% | 0 |
+| class RICH, legacy tier WATCHLIST (2023-05-12 to 2023-07-14) | 8 | -22.5% | -27.8% to -19.2% | 0 | 0 | -9.4% | 8 |
+| FY22E $16.77 (FY21's) (2023-01-06 to 2023-01-27) | 4 | -6.7% | -8.9% to -5.2% | 0 | 0 | +0.9% | 0 |
+| FY23E $11.81 (FY22's) (2023-02-03 to 2023-02-17) | 3 | -11.9% | -13.5% to -10.7% | 0 | 0 | -5.8% | 3 |
+| FY23E $11.83 (FY22's) (2023-02-24 to 2023-12-29) | 45 | -29.9% | -44.3% to +1.0% | 0 | 0 | -21.3% | 42 |
+| latest print Q3 2022 (2023-01-06 to 2023-01-27) | 4 | -6.7% | -8.9% to -5.2% | 0 | 0 | +0.9% | 0 |
+| latest print Q4 2022 (2023-02-03 to 2023-04-21) | 12 | -11.9% | -30.0% to +1.0% | 0 | 0 | -5.7% | 9 |
+| latest print Q1 2023 (2023-04-28 to 2023-07-28) | 14 | -23.2% | -28.0% to -19.2% | 0 | 0 | -9.7% | 14 |
+| latest print Q2 2023 (2023-08-04 to 2023-10-20) | 12 | -35.0% | -40.7% to -29.9% | 0 | 0 | -26.7% | 12 |
+| latest print Q3 2023 (2023-10-27 to 2023-12-29) | 10 | -42.8% | -44.3% to -34.0% | 0 | 0 | -34.6% | 10 |
+
+Three years (47 dates with one): 0 of 52 cleared, 0 beat SPY; range -31.4% to +5.3%
+
+## 2024 (47 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID (2024-01-05 to 2024-11-22) | 47 | -24.1% | -41.9% to -10.5% | 0 | 0 | -40.3% | 47 |
+| FY23E $11.83 (FY22's) (2024-01-05 to 2024-01-26) | 4 | -35.5% | -41.9% to -34.0% | 0 | 0 | -38.7% | 4 |
+| FY24E $6.46 (FY23's) (2024-02-02 to 2024-02-16) | 3 | -30.6% | -34.3% to -30.1% | 0 | 0 | -41.4% | 3 |
+| FY24E $6.48 (FY23's) (2024-02-23 to 2024-11-22) | 40 | -22.6% | -32.8% to -10.5% | 0 | 0 | -40.8% | 40 |
+| latest print Q3 2023 (2024-01-05 to 2024-01-26) | 4 | -35.5% | -41.9% to -34.0% | 0 | 0 | -38.7% | 4 |
+| latest print Q4 2023 (2024-02-02 to 2024-04-19) | 12 | -21.9% | -34.3% to -11.4% | 0 | 0 | -44.9% | 12 |
+| latest print Q1 2024 (2024-04-26 to 2024-07-26) | 14 | -22.7% | -32.8% to -14.1% | 0 | 0 | -41.2% | 14 |
+| latest print Q2 2024 (2024-08-02 to 2024-10-25) | 13 | -24.5% | -30.5% to -13.9% | 0 | 0 | -39.3% | 13 |
+| latest print Q3 2024 (2024-11-01 to 2024-11-22) | 4 | -11.3% | -22.9% to -10.5% | 0 | 0 | -27.1% | 4 |
+
+Three years:: none yet
+
+## Across 2022-2026 (dates with each horizon)
+
+| Group | Dates | Mean 1-yr total return | Mean 2-yr total return | Mean 2-yr excess vs SPY | Mean 3-yr total return | Call held |
+|---|---|---|---|---|---|---|
+| class RICH | 193 (147 with 1 yr, 95 with 2, 43 with 3) | -5.0% | -25.8% | -67.6pp | -15.7% | 92 of 95 |
+| class FAIR | 7 (3, 3, 3) | +21.1% | -2.1% | -50.7pp | -0.6% | (no direction) |
+| class CHEAP | 55 (53, 53, 53) | +10.4% | +13.8% | -26.3pp | -19.7% | 7 of 53 |
+| all | 255 (203, 151, 99) | -0.6% | -11.4% | -52.8pp | -17.4% | 99 of 151 |
+
+- **The CHEAP calls of 2022 mostly failed the hurdle.** All 53 rested on FY21's record $16.75-$16.77 (4.4-7.0x against a 9x median):
+  the median 2-yr total return was +13.3% for the 49 of 2022 with special and interim dividends (2-yr hurdle +32.2%), 6 cleared it (all
+  in the weeks after the Q2 2022 print, when the close was lowest; `call_check_2y` counts 7 as held) and 1 beat SPY; the 4 CHEAP
+  dates of January 2023 lost 5.2% to 8.9%; the 3-yr returns turned negative (-33.9% to +3.9%).
+  The anchor was a peak year: a P/E on the last full year's GAAP EPS at a cyclical peak read as cheap, as with FY2017 in 2018.
+- **The RICH calls held on 92 of 95.** From the Q4 2022 print on, with BASE negative on falling revenues (2023) and then a P/E of 11-19x
+  on FY23's $6.48 and FY24's $4.14 (2024), the two years ran into the downturn: median 2-yr -34.4% for the AVOID dates of 2023, -24.1% for
+  those of 2024, none cleared the hurdle or beat SPY. The 3 that did not hold were January 2022 (FY20's $4.25 anchor, RICH just before
+  the record year printed; +6.3% to +15.0%, all beating SPY in a falling market).
+- **The two-year landing** was BASE on 78 dates, BEAR on 67, BULL on 6; the median drawdown within two years -49.7%.
+- **What carried the classes** (from the sensitivity, a point-in-time result): the last full year's GAAP EPS (the adjusted EPS moves 26
+  classes, mostly RICH to FAIR in 2023-2026), the frozen rule-T signals (26 at XBULL) and BASE's revenue rule. The hypothesis from 2018-2021
+  (the last full year's GAAP EPS, used as the current year's with no guide, makes CHEAP late at peaks and RICH late at troughs) is
+  consistent with 2022's CHEAP calls; the RICH calls of 2023-2024 held because the downturn continued, so they do not test the trough side.
+  Any change is a new method version, decided before scoring and tested out of sample.
+- **One stock, one cycle.** The dates span one peak and one long downturn, a refinery exit, a dividend cut and continued but smaller
+  buybacks (334M to 322M diluted shares); they test the no-guide and GAAP-anchor rules on a cyclical, not stock selection.
