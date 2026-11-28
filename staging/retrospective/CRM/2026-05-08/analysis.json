@@ -1,0 +1,300 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "CRM",
+ "company": "Salesforce, Inc.",
+ "as_of": "2026-05-08",
+ "price_date": "2026-05-08",
+ "price": 181.82,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); subscription software signals with salesforce.com's rule-T thresholds; the listing rule (CRM listed 2004-06-23)",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'Salesforce, Inc. (“Salesforce,” the “Company,” “we” or “our”) is a global leader in customer relationship management (“CRM”) technology, helping organizations of any size become agentic enterprises.' 'The market for our service offerings is highly competitive, rapidly evolving and fragmented, and subject to changing technology with low barriers to entry, shifting customer needs and frequent introductions of new products and services.' 'The markets in which we participate are intensely competitive, and if we do not compete effectively, our operating results could be harmed.' (FY2026 10-K); DURABLE: no 10-K read calls the business cyclical ('cyclical' appears only of the economy's downturns, and of 'the cyclical nature and seasonality of our sales cycle and our customers’ businesses'); of the live themes in taxonomy_eras.json (OFFSHORE is scoped to 'lower-cost offshore delivery (Indian IT services) takes share and price from Western consulting, systems integration and outsourcing', CLOUD to 'public cloud displaces on-premise hardware, storage, legacy databases and data-center outsourcing', ECOMMERCE to 'e-commerce (Amazon effect) displaces physical retail, malls, grocery, distribution', STREAMING to 'cord-cutting / streaming displaces linear TV networks and pay-TV bundles', ENERGY_TRANSITION to 'decarbonisation strands oil, gas and coal reserves and refining', EV to 'battery-electric vehicles displace ICE powertrains, auto parts suppliers and fuel retail', CRYPTO to 'crypto / DeFi disintermediates payments networks, banks, exchanges, remittance', GLP1 to 'GLP-1 obesity drugs reduce demand for snacks, beverages, sleep-apnea/diabetes/cardio devices': the FY2026 10-K names cloud computing as salesforce.com's own model, the side that displaces on-premise software, not a substitute for it, and names no offshore delivery; ECOMMERCE, STREAMING, ENERGY_TRANSITION, EV, CRYPTO and GLP1 name no software business), only GENAI is on the watch list: it is scoped to 'generative / autonomous AI substitutes the core product: software seats, IT services and BPO hours, professional information, search, education content, mobility', and FY2026 10-K names AI vendors among salesforce.com's competitors, company-acknowledged with no market read (the MSFT and GOOG rule)",
+  "theme_watch": [
+   {
+    "theme": "GENAI",
+    "status": "live, company-acknowledged; no market read",
+    "reason": "Live: Salesforce's own FY2026 10-K, under 'The markets in which we participate are intensely competitive, and if we do not compete effectively, our operating results could be harmed.', names among its current competitors 'AI-native companies and emerging startups that leverage generative AI and large language models as the core foundation of their architecture, offering highly specialized, autonomous, or automated solutions that may bypass traditional business process workflows or displace established user interfaces' and 'vendors who offer software tailored to specific services, industries or market segments, as opposed to our full suite of service offerings, including suppliers of traditional business intelligence and data preparation products, integration software vendors, marketing vendors, e-commerce solutions vendors or AI software and service vendors'. It builds AI of its own: 'Founded in 1999, we bring humans, agents, applications, and data together on a trusted, unified platform to unlock growth and innovation.' The stock trades at 23.0x FY27E — a discount to its own history. Re-file as DISRUPTION_EXPOSED (GENAI) only if dated evidence shows the market pricing generative-AI substitution of salesforce.com's software seats specifically."
+   }
+  ],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "'Salesforce, Inc. (“Salesforce,” the “Company,” “we” or “our”) is a global leader in customer relationship management (“CRM”) technology, helping organizations of any size become agentic enterprises.' 'The market for our service offerings is highly competitive, rapidly evolving and fragmented, and subject to changing technology with low barriers to entry, shifting customer needs and frequent introductions of new products and services.' 'The markets in which we participate are intensely competitive, and if we do not compete effectively, our operating results could be harmed.' (FY2026 10-K); DURABLE: no 10-K read calls the business cyclical ('cyclical' appears only of the economy's downturns, and of 'the cyclical nature and seasonality of our sales cycle and our customers’ businesses'); of the live themes in taxonomy_eras.json (OFFSHORE is scoped to 'lower-cost offshore delivery (Indian IT services) takes share and price from Western consulting, systems integration and outsourcing', CLOUD to 'public cloud displaces on-premise hardware, storage, legacy databases and data-center outsourcing', ECOMMERCE to 'e-commerce (Amazon effect) displaces physical retail, malls, grocery, distribution', STREAMING to 'cord-cutting / streaming displaces linear TV networks and pay-TV bundles', ENERGY_TRANSITION to 'decarbonisation strands oil, gas and coal reserves and refining', EV to 'battery-electric vehicles displace ICE powertrains, auto parts suppliers and fuel retail', CRYPTO to 'crypto / DeFi disintermediates payments networks, banks, exchanges, remittance', GLP1 to 'GLP-1 obesity drugs reduce demand for snacks, beverages, sleep-apnea/diabetes/cardio devices': the FY2026 10-K names cloud computing as salesforce.com's own model, the side that displaces on-premise software, not a substitute for it, and names no offshore delivery; ECOMMERCE, STREAMING, ENERGY_TRANSITION, EV, CRYPTO and GLP1 name no software business), only GENAI is on the watch list: it is scoped to 'generative / autonomous AI substitutes the core product: software seats, IT services and BPO hours, professional information, search, education content, mobility', and FY2026 10-K names AI vendors among salesforce.com's competitors, company-acknowledged with no market read (the MSFT and GOOG rule). durable franchise (obsolescence risk 2/5); price cheap; Ratio B -0.07x; -36% to EPP floor; model-vs-market gap +0.73; conservative 2yr +148%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": -0.07,
+  "ratio_b_fmt": "-0.07x",
+  "epp": 284.04,
+  "epp_gap_pct": -36.0,
+  "epp_adj": 0.2,
+  "proxy_composite": 1.6,
+  "sca": 0.15,
+  "adj_composite": 1.95,
+  "market_composite": 1.22,
+  "adj_gap": 0.73,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 148.2,
+  "scenarios": {
+   "BEAR": {
+    "eps": 7.89,
+    "pe": 30.8,
+    "price": 243.01,
+    "desc": "EPS +0.0%/yr (worst year FY18-FY26 ex-FY19 ex-FY20 ex-FY21 ex-FY22 ex-FY23, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 10.09,
+    "pe": 46.8,
+    "price": 472.21,
+    "desc": "EPS +13.1%/yr (Q1 FY27 guide YoY + margin + buyback); P/E at its 9.3-yr ex-FY17 ex-FY19 ex-FY20 ex-FY21 ex-FY22 ex-FY23 median"
+   },
+   "BULL": {
+    "eps": 15.76,
+    "pe": 63.4,
+    "price": 999.18,
+    "desc": "EPS +41.3%/yr (FY18-FY26 ex-FY19 ex-FY20 ex-FY21 ex-FY22 ex-FY23 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 15.76,
+    "pe": 189.7,
+    "price": 2989.67,
+    "desc": "EPS +41.3%/yr (best 2-yr run FY18-FY26 ex-FY19 ex-FY20 ex-FY21 ex-FY22 ex-FY23, at least BULL); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": -0.07,
+   "epp_gap_pct": -36.0,
+   "adj_gap": 0.73,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 148.2,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": -0.03,
+   "epp_gap_pct": -36.0,
+   "adj_gap": 0.95,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 148.2,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": -0.02,
+   "epp_gap_pct": -36.0,
+   "adj_gap": 0.73,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 148.2,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": -0.08,
+   "epp_gap_pct": -36.0,
+   "adj_gap": 0.95,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 148.2,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": -0.07,
+   "epp_gap_pct": -36.0,
+   "adj_gap": 0.73,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 148.2,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": -0.07,
+   "epp_gap_pct": -36.0,
+   "adj_gap": 1.03,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 148.2,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": -0.07,
+   "epp_gap_pct": -40.9,
+   "adj_gap": 0.73,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 148.2,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": -0.07,
+   "epp_gap_pct": -36.0,
+   "adj_gap": 0.73,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 148.2,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "CRM (retrospective, 2026-05-08) ◉ BUY — Ratio B -0.07x (-33.7% downside to Bear $243.01 / +449.5% upside to Bull $999.18) | Adj composite 1.95 vs market 1.22: gap +0.73 [UNDERVALUED] | -36% above the EPP floor $284.04 (36x FY27E $7.89) | Conservative 2-yr case: +148.2% total (+74.1%/yr) | At 23.0x FY27E the 15% hurdle price $240.46 sits at or below the BASE case; revenue +12.1% YoY in Q4 FY26, forward revenues +12.2-12.7% (Q1 FY27 revenue guide (Q4 FY26 release)); generative AI is live and company-acknowledged; no dated evidence ties the multiple to it.",
+ "sources": [
+  {
+   "id": "CR106",
+   "published": "2026-03-03",
+   "filed": "accepted 2026-03-02 16:24 ET (after the close)",
+   "title": "Salesforce FY2026 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm",
+   "supports": "FY2026 Items 1, 1A and 5, the statements of operations (fiscal 2024-2026), cash flows and balance sheets, revenues by geography"
+  },
+  {
+   "id": "CR100",
+   "published": "2025-03-06",
+   "filed": "accepted 2025-03-05 16:16 ET (after the close)",
+   "title": "Salesforce FY2025 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852425000006/crm-20250131.htm",
+   "supports": "FY2025 Items 1, 1A and 5, the statements of operations (fiscal 2023-2025), cash flows and balance sheets, revenues by geography"
+  },
+  {
+   "id": "CR95",
+   "published": "2024-03-07",
+   "filed": "accepted 2024-03-06 16:32 ET (after the close)",
+   "title": "Salesforce FY2024 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852424000005/crm-20240131.htm",
+   "supports": "FY2024 Items 1, 1A and 5, the statements of operations (fiscal 2022-2024), cash flows and balance sheets, revenues by geography"
+  },
+  {
+   "id": "CR90",
+   "published": "2023-03-09",
+   "filed": "accepted 2023-03-08 16:41 ET (after the close)",
+   "title": "Salesforce FY2023 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852423000011/crm-20230131.htm",
+   "supports": "FY2023 Items 1, 1A and 5, the statements of operations (fiscal 2021-2023), cash flows and balance sheets, revenues by geography"
+  },
+  {
+   "id": "CR84",
+   "published": "2022-03-11",
+   "filed": "accepted 2022-03-11 08:06 ET (before the open)",
+   "title": "salesforce.com FY2022 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852422000013/crm-20220131.htm",
+   "supports": "FY2022 Items 1, 1A and 5, the statements of operations (fiscal 2020-2022), cash flows and balance sheets, revenues by geography"
+  },
+  {
+   "id": "CR79",
+   "published": "2021-03-18",
+   "filed": "filed 2021-03-17 (EDGAR filing date; the acceptance time is not in this fact sheet), dated from the next trading day",
+   "title": "salesforce.com FY2021 10-K",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001108524&type=10-K&dateb=20210317&owner=include&count=10",
+   "supports": "FY2021 Items 1, 1A and 5 (the business, competition and dividend wording), the statements of operations (fiscal 2019-2021), cash flows and balance sheets, revenues by geography, and the listed items of fiscal 2019-2021"
+  },
+  {
+   "id": "CR77",
+   "published": "2020-03-06",
+   "filed": "accepted 2020-03-05 16:29 ET (after the close)",
+   "title": "salesforce.com FY2020 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852420000014/crm-20200131.htm",
+   "supports": "FY2020 Items 1, 1A and 5, the statements of operations (fiscal 2018-2020), cash flows and balance sheets, revenues by geography, the selected financial data of fiscal 2016-2020 and their listed items"
+  },
+  {
+   "id": "CR65",
+   "published": "2019-03-08",
+   "filed": "accepted 2019-03-08 08:04 ET (before the open)",
+   "title": "salesforce.com FY2019 10-K (XBRL, SEC company facts)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852419000009/crmq4fy1910-k.htm",
+   "supports": "FY2019 statements of operations, balance sheets and cash flows as tagged in XBRL, three fiscal years, and the eight quarters' revenues, gross profit, operating result and EPS (accession 0001108524-19-000009, read through data.sec.gov/api/xbrl/companyfacts/CIK0001108524.json)"
+  },
+  {
+   "id": "CR78",
+   "published": "2021-02-26",
+   "filed": "accepted 2021-02-25 16:17 ET (after the close)",
+   "title": "salesforce.com Q4 FY21 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852421000007/crm-q4fy21xexhibit991.htm",
+   "supports": "Q4 FY21 statements of operations, balance sheet and unearned revenue; the outlook"
+  },
+  {
+   "id": "CR83",
+   "published": "2022-03-02",
+   "filed": "accepted 2022-03-01 16:11 ET (after the close)",
+   "title": "salesforce.com Q4 FY22 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852422000010/crm-q4fy22xexhibit991.htm",
+   "supports": "Q4 FY22 statements of operations, balance sheet and unearned revenue; the outlook"
+  },
+  {
+   "id": "CR89",
+   "published": "2023-03-02",
+   "filed": "accepted 2023-03-01 16:08 ET (after the close)",
+   "title": "Salesforce Q4 FY23 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852423000007/crm-q4fy23xexhibit991.htm",
+   "supports": "Q4 FY23 statements of operations, balance sheet and unearned revenue; the outlook"
+  },
+  {
+   "id": "CR2",
+   "published": "2005-03-28",
+   "filed": "accepted 2005-03-25 17:26 ET (after the close)",
+   "title": "salesforce.com FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312505061027/d10k.htm",
+   "supports": "the listing ('since June 23, 2004'); five-year selected data, fiscal 2001-2005 (rule T, the fiscal 2002 change)"
+  },
+  {
+   "id": "CR105",
+   "published": "2026-02-26",
+   "filed": "accepted 2026-02-25 16:03 ET (after the close)",
+   "title": "Salesforce Q4 FY26 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000056/crm-q4fy26xexhibit991.htm",
+   "supports": "Q4 FY26 statements of operations, balance sheet and unearned revenue; the outlook"
+  },
+  {
+   "id": "CR104",
+   "published": "2025-12-04",
+   "filed": "accepted 2025-12-03 16:04 ET (after the close)",
+   "title": "Salesforce Q3 FY26 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852425000234/crm-q3fy26xexhibit991.htm",
+   "supports": "Q3 FY26 statements of operations, balance sheet and unearned revenue; the outlook"
+  },
+  {
+   "id": "CR101",
+   "published": "2025-05-29",
+   "filed": "accepted 2025-05-28 16:05 ET (after the close)",
+   "title": "Salesforce Q1 FY26 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852425000027/crm-q1fy26xexhibit991.htm",
+   "supports": "Q1 FY26 statements of operations, balance sheet and unearned revenue; the outlook"
+  },
+  {
+   "id": "CR41",
+   "published": "2013-04-18",
+   "filed": "the price series' split event, first traded on the new basis 2013-04-18",
+   "title": "Yahoo Finance CRM price series: the four-for-one split of 2013-04-18 (split event 4:1)",
+   "url": "https://finance.yahoo.com/quote/CRM/history",
+   "supports": "the four-for-one split, effective 2013-04-18, public on its day in the price data (the FY2014 10-K's XBRL later tags the ratio: StockholdersEquityNoteStockSplitConversionRatio1 = 4)"
+  },
+  {
+   "id": "Y0",
+   "published": "2026-05-08",
+   "title": "Yahoo Finance daily prices, CRM and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/CRM/history",
+   "supports": "close $181.82 as traded on AS_OF (Yahoo's split-adjusted close x1), 52-week range, realized vol, beta, the 9.3-yr ex-FY17 ex-FY19 ex-FY20 ex-FY21 ex-FY22 ex-FY23 P/E distribution from the listing on 2004-06-23"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-27"
+}

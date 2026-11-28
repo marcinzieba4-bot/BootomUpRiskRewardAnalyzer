@@ -1,0 +1,151 @@
+
+════════════════════════════════════════════════════════════════════════
+  NVDA  ·  NVIDIA Corporation  ·  $14.15  ·  RETROSPECTIVE as of 2011-10-07
+  Signal: ◎ ACCUMULATE   Ratio B: 0.78x   Adj gap: +1.46  [UNDERVALUED]
+  Point-in-time: 15 sources, latest published 2011-10-07; latest print Q2 FY12 (Aug 11)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2012E revenue, USD bn  →  FY2014E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2012E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  GPU                           $  3.20  $ 3.20  $ 3.95    +0.00    +0.75
+    -5.0% revenue in FY11
+  Professional Solutions        $  1.04  $ 1.04  $ 1.28    +0.00    +0.24
+    +60.4% revenue in FY11
+  Consumer Products             $  0.25  $ 0.25  $ 0.31    +0.00    +0.06
+    +26.6% revenue in FY11
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $  4.49  $ 4.49  $ 5.54    +0.00    +1.05
+  FY2012E = FY11 $3.543B × (1 + 26.5%: the Q3 FY12 revenue guide (Q2 FY12 release), YoY, applied to the year (no FY12 revenue guide)); split pro rata to FY11 segment revenue (FY2011 10-K)
+  Q2 FY12 (Aug 11): revenue $1.016B +25.3% YoY (+5.7% QoQ); inventories -16.7%; R&D + SG&A +13.5%;
+  gross margin 51.67% (+3512.0bp); operating margin 17.12% (+3871.9bp); EPS $0.25 vs $(0.25)
+  Revenue: revenue $1,016.5M vs $811.2M a year earlier, $962.0M the quarter before; inventories $361.9M (2011-07-31) vs $434.2M a year earlier (Q2 FY11 10-Q); GAAP diluted EPS $0.25 vs $(0.25); the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used; diluted shares 613.9M
+  Q3 FY12 outlook (Q2 FY12 release): revenue +4% to +6% on Q2 FY12's $1,016.5M ('Revenue is expected to be up 4 to 6 percent from the second quarter'), i.e. $1,057.2M-$1,077.5M against Q3 FY11's $843.9M: +25.3% to +27.7% YoY; display only: 'GAAP and non-GAAP gross margins are expected to be flat'; no fiscal-year revenue, EPS or margin guide
+
+  FY2012E EPS check:  $4.490B × 7.6% pre-tax × (1−6.7%) ÷ 0.614B  =  $0.52  (FY2012E: no EPS guide in numbers, FY11's $0.43 stands)
+  FY2014E BEAR check: $4.490B × 7.6% ÷ 0.634B  =  $0.51  (scenario $0.05)
+  FY2014E BULL check: $5.540B × 8.1% ÷ 0.634B  =  $0.66  (scenario $0.67)
+  Every 1pp of pre-tax margin ≈ $0.068 EPS ≈ $2.16/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Revenue growth                        -43.0%    ≥-5.0%    ≥34.0%   ≥137.0%    +25.3%  ◦ BASE  ██░░
+  Gross margin change                 -1760.0bp  ≥-770.0bp  ≥210.0bp  ≥720.0bp  +3512.0bp  ★ XBULL  ████
+  Opex growth less revenue             +47.0pp   ≤22.0pp   ≤-2.0pp  ≤-47.0pp   -11.8pp  ▲ BULL  ███░
+  Inventory growth less revenue       +115.0pp   ≤66.0pp   ≤17.0pp  ≤-105.0pp   -42.0pp  ▲ BULL  ███░
+  Operating margin change             -2010.0bp  ≥-950.0bp  ≥120.0bp  ≥1280.0bp  +3871.9bp  ★ XBULL  ████
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    3.00 / 4.00
+  Market composite:   1.66 / 4.00  (back-solved from $14.15 + 15% hurdle)
+  SCA adjustment:    +0.22  ·  EPP-distance adj -0.10  →  Adj composite 3.12  →  Gap +1.46  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY11 revenue +6.5%, gross margin 39.8%; Q2 gross margin 51.67% (+3512bp YoY)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 32.9x FY12E vs a 31.6x 10-yr ex-FY09 ex-FY10 median (52nd percentile of its own range)  (-0.03 × 25%  =  -0.007)
+    +  Growth vs own history: Q3 FY12 revenue guide (Q2 FY12 release) +25.3-27.7% vs a 10.3% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  Cash, cash equivalents and marketable securities $2.474B, long-term capital lease obligations $22.5M (Q2 FY12), FY11 free cash flow $0.578B (net cash provided by operating activities $675.8M less purchases of property and equipment and intangible assets $97.9M), no dividend  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Revenue growth                        +25.3%    -43.0%  -68.3%  PC demand and channel destocking cut …
+  Gross margin change                 +3512.0bp  -1760.0bp  -5272.0bp  Price erosion, mix and product charge…
+  Opex growth less revenue             -11.8pp   +47.0pp  +58.8pp  R&D and SG&A do not come down with re…
+  Inventory growth less revenue        -42.0pp  +115.0pp  +157.0pp  Inventory builds ahead of demand: wri…
+  Operating margin change             +3871.9bp  -2010.0bp  -5881.9bp  Operating leverage works in reverse
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$9.14  (model)  /  $0.86 (defined)
+  Bear probability (proxy model):  4.6%
+
+  KEY TRIGGER: revenue went from -4.0% (Q1 FY12) to +25.3% YoY (Q2 FY12), +5.7% on the quarter before;
+  the bear case needs a downturn in gross margin (+3512.0bp now)
+  and inventories (-42.0pp against revenue) giving way. A GPU downturn shows up in channel inventories and the next quarter's
+  revenue first; the bear needs it in gross margin as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $0.43  (FY2012E: no EPS guide in numbers, FY11's $0.43 stands)
+  Min viable P/E at panic:          19x  [median of calendar-year P/E lows: 2001 38.3x, 2002 24.6x, 2003 33.9x, 2004 18.5x, 2005 12.8x, 2006 15.5x, 2007 14.4x, 2008 17.8x, 2010 20.7x, 2011 27.3x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $8.17/share
+  Current $14.15 vs Updated EPP $8.17:  +73%  ⚠ far above floor — large drawdown room
+  Bear $0.86 vs Updated EPP $8.17:  -89%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Revenue growth                                -5.0      -30.3   BASE floor (vs +25 now)
+  Gross margin change                         -770.0    -4282.0   BASE floor (vs +3512 now)
+  Opex growth less revenue                      22.0      +33.8   BASE floor (vs -12 now)
+  Inventory growth less revenue                 66.0     +108.0   BASE floor (vs -42 now)
+  Operating margin change                     -950.0    -4821.9   BASE floor (vs +3872 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $0.43 × (1+22.9%)² = $0.65
+  At 31x P/E (conservative):  $20.14/share
+  + Cumul. dividends (2yr):  +$0.00/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $20.14  (▲5.99 from $14.15)
+  Conservative total return:  +42% over 2yr  = +21%/yr
+
+  At 32.9x the multiple is already near its 31x median, so the conservative
+  case is a growth question: breakeven at 31x needs FY2014E EPS of $0.46,
+  i.e. 3.0%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $10.51  –  $26.17  (at 23th pct of range)
+  Annual dividend:      $0.00/share  (yield 0.0%)
+  Realized vol:         54% annualized (1-yr daily log returns)
+  Beta vs broad market: 1.61
+  1-sigma range (1yr):  $6.51  –  $21.79  ($14.15 ± 54%)
+  2-sigma range (1yr):  $-1.13  –  $29.43
+  ────────────────────────────────────────────────────────────
+  Bear $0.86 requires:  ~1.7σ price move  (unusual — requires fundamental break)
+  A GPU maker in a cyclical industry: the stock is +31% off its October
+  low (52 weeks) while revenue went from -4.0% (Q1 FY12) to +25.3% YoY (Q2 FY12), +5.7% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        0.05   17.1x  $   0.86     4.6%     39.9%   -35.3pp  EPS -64.3%/yr (worst year FY02-FY11 ex-FY09 ex-FY10, capped at 0%); P/E to its 10th pct
+  BASE        0.67   31.6x  $  21.17    15.9%     44.8%   -28.9pp  EPS +24.9%/yr (Q3 FY12 guide YoY + margin + buyback); P/E at its 10-yr ex-FY09 ex-FY10 median
+  BULL        0.67   46.7x  $  31.29    55.5%     12.8%   +42.6pp  EPS +24.9%/yr (FY02-FY11 ex-FY09 ex-FY10 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL       2.63   77.4x  $ 203.56    24.1%      2.4%   +21.7pp  EPS +147.2%/yr (best 2-yr run FY02-FY11 ex-FY09 ex-FY10, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $69.82  /  Market EV: $18.79  /  Current: $14.15
+  Conservative EV (2yr, ④): $20.14 + $0.00 divs = $20.14 total value
+  Downside (→ Bear $0.86): 93.9%   Upside (→ Bull $31.29): 121.1%   Ratio B 0.78x  →  ◎ ACCUMULATE
+
+  To earn the 15%/yr hurdle from $14.15 the market needs $18.71 in two years —
+  at or below the BASE case. That is a market composite of 1.66 against a model
+  read of 3.12: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.78x     +73%    +1.46  UNDERVALUED / ACCUMULATE
+  Multiples one band richer (p25/p75/p90/max)     0.34x     +73%    +1.83  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     1.90x     +73%    +1.03  UNDERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          0.73x     +73%    +1.49  UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.82x     +73%    +1.44  UNDERVALUED / ACCUMULATE
+  Structural read +0.30 (bullish SCA)             0.78x     +73%    +1.76  UNDERVALUED / ACCUMULATE
+  EPP P/E +3 turns (softer floor)                 0.78x     +50%    +1.46  UNDERVALUED / ACCUMULATE
+  Hurdle 10%/yr instead of 15%                    0.78x     +73%    +1.53  UNDERVALUED / ACCUMULATE
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 FY12 print (November) — revenue against the Q3 FY12 revenue guide (Q2 FY12 release): +25.3-27.7% YoY
+  (2) Gross margin — +3512.0bp in Q2 FY12: price erosion, mix and product charges, what must hold if revenue does not
+  (3) The Q3 FY12 guide — +4% to +6% on Q2 FY12 (+25.3% to +27.7% YoY): NVIDIA guides one quarter at a time, in revenue
+  (4) Inventories — -16.7% against revenue +25.3% in Q2 FY12 (-42.0pp): write-downs follow if orders slow
+  (5) Capital structure at 33x — 'Through January 30, 2011, we have repurchased an aggregate of 90.9 million shares under our stock repurchase program for a total cost of $1.46 billion.' (FY2011 10-K)
+  ◎ ACCUMULATE  |  EPP floor $8.17  |  ADD below ~$17.99  |  TRIM above $31.29
+════════════════════════════════════════════════════════════════════════
+

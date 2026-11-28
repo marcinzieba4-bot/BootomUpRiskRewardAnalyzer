@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "CB",
+ "as_of": "2010-07-23",
+ "computed": "2026-11-21",
+ "data_source": "Yahoo Finance daily closes + dividends (CB, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2011-01-21",
+   "price": 60.51,
+   "dividends": 0.66,
+   "total_return_pct": 16.0,
+   "benchmark_total_return_pct": 17.4,
+   "excess_pct": -1.4,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2011-07-22",
+   "price": 65.78,
+   "dividends": 1.34,
+   "total_return_pct": 27.2,
+   "benchmark_total_return_pct": 24.1,
+   "excess_pct": 3.1,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2012-07-23",
+   "price": 69.89,
+   "dividends": 2.63,
+   "total_return_pct": 37.5,
+   "benchmark_total_return_pct": 27.0,
+   "excess_pct": 10.5,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2013-07-23",
+   "price": 93.23,
+   "dividends": 5.1,
+   "total_return_pct": 86.4,
+   "benchmark_total_return_pct": 60.9,
+   "excess_pct": 25.5,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2012-05-03",
+   "price": 77.0
+  },
+  "low": {
+   "date": "2010-08-11",
+   "price": 52.43
+  },
+  "max_drawdown_pct": -15.0,
+  "return_to_avg_price_m12_m24_pct": 31.9
+ },
+ "scenario_landing_2y": "BASE",
+ "call_check_2y": {
+  "expectation": "CHEAP: should clear the hurdle or beat the benchmark",
+  "hit": true
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "CYCLICAL",
+   "risk": 2
+  },
+  "today": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Global P&C underwriter; cat season swings, franchise durable",
+   "reviewed": "2026-09-22"
+  }
+ }
+}

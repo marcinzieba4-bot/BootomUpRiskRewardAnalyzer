@@ -1,0 +1,224 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "PFE",
+ "company": "Pfizer Inc",
+ "as_of": "2013-07-19",
+ "price_date": "2013-07-19",
+ "price": 29.09,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); pharmaceutical signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'is a research-based, global biopharmaceutical company. We apply science and our global resources to improve health and well-being at every stage of life' (FY2012 10-K, Item 1); 'Competition from manufacturers of generic drugs is a major challenge for us around the world, and the loss or expiration of intellectual property rights can have a significant adverse effect on our revenues. Upon the expiration or loss of patent protection for one of our products ... we can lose the major portion of revenues for that product in a very short period of time' (Item 1A); biopharmaceutical revenues 'decreased 17% in 2012 compared to 2011, primarily reflecting lower revenues from Lipitor, Geodon, Caduet, Xalatan and Aromasin, all due to the loss of exclusivity' (FY2012 10-K, Item 1); 'Our businesses are conducted in intensely competitive and often highly regulated markets'",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "'is a research-based, global biopharmaceutical company. We apply science and our global resources to improve health and well-being at every stage of life' (FY2012 10-K, Item 1); 'Competition from manufacturers of generic drugs is a major challenge for us around the world, and the loss or expiration of intellectual property rights can have a significant adverse effect on our revenues. Upon the expiration or loss of patent protection for one of our products ... we can lose the major portion of revenues for that product in a very short period of time' (Item 1A); biopharmaceutical revenues 'decreased 17% in 2012 compared to 2011, primarily reflecting lower revenues from Lipitor, Geodon, Caduet, Xalatan and Aromasin, all due to the loss of exclusivity' (FY2012 10-K, Item 1); 'Our businesses are conducted in intensely competitive and often highly regulated markets'. durable franchise (obsolescence risk 2/5); price rich; Ratio B 9.47x; +20% to EPP floor; model-vs-market gap -1.67; conservative 2yr +0%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": 9.47,
+  "ratio_b_fmt": "9.47x",
+  "epp": 24.24,
+  "epp_gap_pct": 20.0,
+  "epp_adj": 0.0,
+  "proxy_composite": 1.8,
+  "sca": -0.02,
+  "adj_composite": 1.78,
+  "market_composite": 3.45,
+  "adj_gap": -1.67,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": 0.5,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.77,
+    "pe": 14.3,
+    "price": 11,
+    "desc": "EPS -28.7%/yr (worst year FY04-FY12, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 1.17,
+    "pe": 18.2,
+    "price": 21,
+    "desc": "EPS +-12.0%/yr (FY13 guide + margin + buyback); P/E at its 9.5-yr median"
+   },
+   "BULL": {
+    "eps": 1.47,
+    "pe": 21.0,
+    "price": 31,
+    "desc": "EPS +-1.6%/yr (FY04-FY12 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 1.85,
+    "pe": 24.8,
+    "price": 46,
+    "desc": "EPS +10.6%/yr (best 2-yr run FY04-FY12); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 9.47,
+   "epp_gap_pct": 20.0,
+   "adj_gap": -1.67,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 0.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 2.33,
+   "epp_gap_pct": 20.0,
+   "adj_gap": -1.33,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 0.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 20.0,
+   "adj_gap": -1.99,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 0.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 6.22,
+   "epp_gap_pct": 20.0,
+   "adj_gap": -1.61,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 0.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 19.88,
+   "epp_gap_pct": 20.0,
+   "adj_gap": -1.73,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 0.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 9.47,
+   "epp_gap_pct": 20.0,
+   "adj_gap": -1.37,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 0.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 9.47,
+   "epp_gap_pct": 1.1,
+   "adj_gap": -1.67,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 0.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 9.47,
+   "epp_gap_pct": 20.0,
+   "adj_gap": -1.45,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 0.5,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "RICH"
+ ],
+ "summary": "PFE (retrospective, 2013-07-19) ✕ AVOID — Ratio B 9.47x (62.2% downside to Bear $11 / +6.6% upside to Bull $31) | Adj composite 1.78 vs market 3.45: gap -1.67 [OVERVALUED] | +20% above the EPP floor $24 (16x FY13E $1.51) | Conservative 2-yr case: +0.5% total (+0.3%/yr) | At 19.2x FY13E the 15% hurdle price $38 sits above the BULL case; U.S. revenues -9.8% in Q1 2013, forward revenues -13.9% to -10.5% (FY13 revenue guide); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "PF41",
+   "published": "2013-03-01",
+   "filed": "2013-02-28 16:57 ET (after the close)",
+   "title": "Pfizer FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800313000006/pfe-12312012xex13.htm",
+   "supports": "financial summary 2008-2012 (restated without Nutrition and Capsugel); statement of income; revenues by operating segment and geography; cash flows; the first-quarter 2013 dividend of $0.24; Item 1 and Item 1A wording"
+  },
+  {
+   "id": "PF35",
+   "published": "2012-02-29",
+   "filed": "2012-02-28 17:07 ET (after the close)",
+   "title": "Pfizer FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000119312512085703/d278590dex13.htm",
+   "supports": "financial summary 2007-2011 (restated without Capsugel); statement of income; revenues by operating segment and geography; cash flows; the first-quarter 2012 dividend of $0.22; Item 1 and Item 1A wording"
+  },
+  {
+   "id": "PF29",
+   "published": "2011-02-28",
+   "filed": "2011-02-28 10:00 ET",
+   "title": "Pfizer FY2010 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000119312511048877/dex13.htm",
+   "supports": "financial summary 2006-2010; statement of income; revenues by business and geography; cash flows; the first-quarter 2011 dividend of $0.20; Item 1 and Item 1A wording"
+  },
+  {
+   "id": "PF24",
+   "published": "2010-02-26",
+   "filed": "2010-02-26 13:43 ET",
+   "title": "Pfizer FY2009 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000119312510042425/dex13.htm",
+   "supports": "financial summary 2004-2009 (revenues, diluted EPS from continuing operations, diluted shares); statement of income; revenues by business and geography; cash flows; the first-quarter 2010 dividend of $0.18; Item 1 and Item 1A wording"
+  },
+  {
+   "id": "PF40",
+   "published": "2013-01-29",
+   "filed": "2013-01-29 09:01 ET (before the open)",
+   "title": "Pfizer Q4 2012 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000115752313000304/a50544239ex99.htm",
+   "supports": "fourth-quarter and full-year 2012 statements of income (2011 restated without Nutrition) and revenues by U.S. and international; 2013 guidance"
+  },
+  {
+   "id": "PF42",
+   "published": "2013-04-30",
+   "filed": "2013-04-30 09:11 ET (before the open)",
+   "title": "Pfizer Q1 2013 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000115752313002129/a50620601-ex99.htm",
+   "supports": "first-quarter 2013 statement of income and revenues by U.S. and international; 2013 guidance"
+  },
+  {
+   "id": "PF45",
+   "published": "2013-06-24",
+   "filed": "2013-06-24 11:49 ET",
+   "title": "Pfizer Form 425: preliminary results of the Zoetis exchange offer, 2013 guidance adjusted",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000119312513268436/d558864d425.htm",
+   "supports": "2013 guidance adjusted solely for the Zoetis exchange offer (revenues without Zoetis for the full year; reported EPS unchanged, without the gain on the disposition)"
+  },
+  {
+   "id": "W0",
+   "published": "2013-07-19",
+   "title": "Yahoo Finance daily prices, PFE and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/PFE/history",
+   "supports": "close $29.09 as traded on AS_OF, 52-week range, realized vol, beta, the 9.5-yr P/E distribution"
+  }
+ ],
+ "warnings": [
+  "calendar year(s) 2070 after 2013 outside FY labels — make sure they are forecasts"
+ ],
+ "generated": "2026-11-10"
+}

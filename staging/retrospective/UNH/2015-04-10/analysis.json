@@ -1,0 +1,294 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "UNH",
+ "company": "UnitedHealth Group Incorporated",
+ "as_of": "2015-04-10",
+ "price_date": "2015-04-10",
+ "price": 119.0,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); premium revenue, medical care ratio, fee revenue, operating cost ratio and operating margin signals with UnitedHealth Group's rule-T thresholds",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'UnitedHealth Group is a diversified health and well-being company dedicated to helping people live healthier lives and making the health system work better for everyone.' 'If we fail to estimate, price for and manage our medical costs in an effective manner, the profitability of our risk-based products and services could decline and could materially and adversely affect our results of operations, financial position and cash flows.' 'Premium revenues from risk-based benefits products comprise nearly 90% of our total consolidated revenues.'; no disruption theme in taxonomy_eras.json is live for a health benefits company on this date (of the live themes, OFFSHORE is scoped to 'lower-cost offshore delivery (Indian IT services) takes share and price from Western consulting, systems integration and outsourcing', CLOUD to 'public cloud displaces on-premise hardware, storage, legacy databases and data-center outsourcing', ECOMMERCE to 'e-commerce (Amazon effect) displaces physical retail, malls, grocery, distribution': none names health benefits, and no 10-K names cloud or offshore delivery), so the watch list is empty and these words stay here (the PEP obesity rule)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "'UnitedHealth Group is a diversified health and well-being company dedicated to helping people live healthier lives and making the health system work better for everyone.' 'If we fail to estimate, price for and manage our medical costs in an effective manner, the profitability of our risk-based products and services could decline and could materially and adversely affect our results of operations, financial position and cash flows.' 'Premium revenues from risk-based benefits products comprise nearly 90% of our total consolidated revenues.'; no disruption theme in taxonomy_eras.json is live for a health benefits company on this date (of the live themes, OFFSHORE is scoped to 'lower-cost offshore delivery (Indian IT services) takes share and price from Western consulting, systems integration and outsourcing', CLOUD to 'public cloud displaces on-premise hardware, storage, legacy databases and data-center outsourcing', ECOMMERCE to 'e-commerce (Amazon effect) displaces physical retail, malls, grocery, distribution': none names health benefits, and no 10-K names cloud or offshore delivery), so the watch list is empty and these words stay here (the PEP obesity rule). durable franchise (obsolescence risk 2/5); price rich; +116% to EPP floor; model-vs-market gap -1.63; conservative 2yr -30%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": Infinity,
+  "ratio_b_fmt": "infx",
+  "epp": 55.12,
+  "epp_gap_pct": 115.9,
+  "epp_adj": -0.2,
+  "proxy_composite": 2.2,
+  "sca": 0.0,
+  "adj_composite": 2.0,
+  "market_composite": 3.63,
+  "adj_gap": -1.63,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": -29.5,
+  "scenarios": {
+   "BEAR": {
+    "eps": 4.35,
+    "pe": 7.9,
+    "price": 34.37,
+    "desc": "EPS -15.7%/yr (worst year FY05-FY14, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 7.62,
+    "pe": 11.3,
+    "price": 86.11,
+    "desc": "EPS +11.5%/yr (FY15 guide + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 7.62,
+    "pe": 15.4,
+    "price": 117.35,
+    "desc": "EPS +11.5%/yr (FY05-FY14 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 9.28,
+    "pe": 19.1,
+    "price": 177.25,
+    "desc": "EPS +23.1%/yr (best 2-yr run FY05-FY14, at least BULL); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 115.9,
+   "adj_gap": -1.63,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -29.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 2.98,
+   "epp_gap_pct": 115.9,
+   "adj_gap": -0.92,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -29.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 115.9,
+   "adj_gap": -1.77,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -29.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 44.23,
+   "epp_gap_pct": 115.9,
+   "adj_gap": -1.54,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -29.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 115.9,
+   "adj_gap": -1.74,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -29.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 115.9,
+   "adj_gap": -1.33,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -29.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 61.9,
+   "adj_gap": -1.53,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -29.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 115.9,
+   "adj_gap": -1.39,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -29.5,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "RICH"
+ ],
+ "summary": "UNH (retrospective, 2015-04-10) ✕ AVOID — Ratio B infx (71.1% downside to Bear $34.37 / -1.4% upside to Bull $117.35) | Adj composite 2.00 vs market 3.63: gap -1.63 [OVERVALUED] | +116% above the EPP floor $55.12 (9x FY15E $6.12) | Conservative 2-yr case: -29.5% total (-14.8%/yr) | At 19.4x FY15E the 15% hurdle price $157.38 sits above the BULL case; revenue +7.4% YoY in Q4 2014, forward revenues +7.7-8.5% (FY15 revenue guide); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "UH16",
+   "published": "2008-01-22",
+   "filed": "2008-01-22 06:13 ET, before the open",
+   "title": "UnitedHealth Group Q4 2007 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000119312508009086/dex991.htm",
+   "supports": "Q4 2007 print and FY2007 actuals (EPS excluding the IRS Section 409A charges); FY2008 guide"
+  },
+  {
+   "id": "UH17",
+   "published": "2008-02-22",
+   "filed": "2008-02-21 17:12 ET, after the close",
+   "title": "UnitedHealth Group FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000119312508035391/d10k.htm",
+   "supports": "history vintage FY2007"
+  },
+  {
+   "id": "UH23",
+   "published": "2009-01-22",
+   "filed": "2009-01-22 06:09 ET, before the open",
+   "title": "UnitedHealth Group Q4 2008 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000119312509009268/dex991.htm",
+   "supports": "Q4 2008 print and FY2008 actuals (EPS excluding special items); FY2009 guide"
+  },
+  {
+   "id": "UH24",
+   "published": "2009-02-12",
+   "filed": "2009-02-11 17:25 ET, after the close",
+   "title": "UnitedHealth Group FY2008 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000119312509025587/d10k.htm",
+   "supports": "history vintage FY2008"
+  },
+  {
+   "id": "UH30",
+   "published": "2010-02-11",
+   "filed": "2010-02-10 16:37 ET, after the close",
+   "title": "UnitedHealth Group FY2009 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000119312510027229/d10k.htm",
+   "supports": "history vintage FY2009"
+  },
+  {
+   "id": "UH36",
+   "published": "2011-02-11",
+   "filed": "2011-02-10 16:04 ET, after the close",
+   "title": "UnitedHealth Group FY2010 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000119312511030615/d10k.htm",
+   "supports": "history vintage FY2010"
+  },
+  {
+   "id": "UH43",
+   "published": "2012-02-09",
+   "filed": "2012-02-08 19:46 ET, after the close",
+   "title": "UnitedHealth Group FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176612000009/unh2011123110k.htm",
+   "supports": "history vintage FY2011"
+  },
+  {
+   "id": "UH49",
+   "published": "2013-02-07",
+   "filed": "2013-02-06 18:00 ET, after the close",
+   "title": "UnitedHealth Group FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176613000005/unh2012123110-k.htm",
+   "supports": "history vintage FY2012"
+  },
+  {
+   "id": "UH55",
+   "published": "2014-02-13",
+   "filed": "2014-02-12 16:32 ET, after the close",
+   "title": "UnitedHealth Group FY2013 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176614000008/unh2013123110-k.htm",
+   "supports": "history vintage FY2013"
+  },
+  {
+   "id": "UH61",
+   "published": "2015-02-11",
+   "filed": "2015-02-10 16:45 ET, after the close",
+   "title": "UnitedHealth Group FY2014 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176615000007/unh2014123110-k.htm",
+   "supports": "history vintage FY2014"
+  },
+  {
+   "id": "UH60",
+   "published": "2015-01-21",
+   "filed": "2015-01-21 06:04 ET, before the open",
+   "title": "UnitedHealth Group Q4 2014 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176615000002/q4exhibit991.htm",
+   "supports": "Q4 2014 print and FY2014 actuals (GAAP); FY2015 guide"
+  },
+  {
+   "id": "UH59",
+   "published": "2014-12-02",
+   "filed": "2014-12-01 16:02 ET, after the close",
+   "title": "UnitedHealth Group 8-K of 2014-12-01 (investor conference release, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176614000053/unh_investorconference2014.htm",
+   "supports": "FY2014 and FY2015 guides"
+  },
+  {
+   "id": "UH58",
+   "published": "2014-10-16",
+   "filed": "2014-10-16 06:03 ET, before the open",
+   "title": "UnitedHealth Group Q3 2014 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176614000048/a2014q3exhibit991.htm",
+   "supports": "Q3 2014 print; FY2014 guide"
+  },
+  {
+   "id": "UH3",
+   "published": "2001-04-02",
+   "filed": "2001-04-02 (EDGAR gives the filing date only)",
+   "title": "UnitedHealth Group FY2000 10-K/A (annual report, Exhibit 13)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000091205701506576/a2044205zex-13.txt",
+   "supports": "rule T: 1999 against 1998; 1998 diluted shares; the 2000 two-for-one split"
+  },
+  {
+   "id": "UH6",
+   "published": "2004-03-16",
+   "filed": "2004-03-15 17:10 ET, after the close",
+   "title": "UnitedHealth Group FY2003 10-K (annual report, Exhibit 13)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000095013404003522/c82635exv13.htm",
+   "supports": "1999 and 2000 EPS excluding the UnitedHealth Capital items; 1999 revenues; rule T: 2002 against 2001; 2001 diluted shares; the 2003 split"
+  },
+  {
+   "id": "UH8",
+   "published": "2006-02-27",
+   "filed": "2006-02-24 17:00 ET, after the close",
+   "title": "UnitedHealth Group FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000119312506038949/d10k.htm",
+   "supports": "2001 EPS and revenues (five-year summary, after the 2005 split); the 2005 split"
+  },
+  {
+   "id": "Y0",
+   "published": "2015-04-10",
+   "title": "Yahoo Finance daily prices, UNH and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/UNH/history",
+   "supports": "close $119.00 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution from 2005-04-11"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-24"
+}

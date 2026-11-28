@@ -1,0 +1,157 @@
+
+════════════════════════════════════════════════════════════════════════
+  CB  ·  Chubb Limited  ·  $186.55  ·  RETROSPECTIVE as of 2023-03-24
+  Signal: ✕ AVOID   Ratio B: 3.12x   Adj gap: -0.61  [OVERVALUED]
+  Point-in-time: 22 sources, latest published 2023-03-24; latest print Q4 2022 (Jan 31)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2023E revenue, USD bn  →  FY2025E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2023E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  North America Commercial P&C  $ 19.93  $19.93  $23.84    +0.00    +3.91
+    +10.6% net premiums earned in FY22
+  North America Personal P&C I  $  6.03  $ 6.03  $ 7.22    +0.00    +1.19
+    +5.4% net premiums earned in FY22
+  North America Agricultural I  $  3.31  $ 3.31  $ 3.96    +0.00    +0.65
+    +21.4% net premiums earned in FY22
+  Overseas General Insurance    $ 12.58  $12.58  $15.06    +0.00    +2.48
+    +3.5% net premiums earned in FY22
+  Global Reinsurance            $  1.07  $ 1.07  $ 1.29    +0.00    +0.22
+    +15.5% net premiums earned in FY22
+  Life Insurance                $  4.12  $ 4.12  $ 4.93    +0.00    +0.81
+    +47.3% net premiums earned in FY22
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $ 47.04  $47.04  $56.30    +0.00    +9.26
+  FY2023E = FY22 $43.166B × (1 + 9.0%: the Q4 2022 revenue growth (no Q1 2023 guide), YoY, applied to the year (no FY23 revenue guide)); split pro rata to FY22 net premiums earned by segment (the segment note) (FY22 growth)
+  Q4 2022 (Jan 31): total revenues $11.426B +9.0% YoY (-5.8% QoQ); net premiums earned +13.2% (written +11.8%); net investment income +24.9%;
+  P&C combined ratio 88.0% (+250.0bp); pre-tax margin 14.48% (-980.2bp); book value per share -12.9%; EPS $3.13 vs $4.95
+  Revenue: total revenues $11,426M vs $10,483M a year earlier, $12,130M the quarter before (net premiums earned, net investment income and net realized gains (losses)); net premiums earned $10,551M vs $9,321M; net premiums written $10,234M vs $9,150M; net investment income $1,053M vs $843M; net realized gains (losses) $-178M vs $319M; diluted EPS (net income) $3.13 vs $4.95; the company's core operating income $4.05 vs $3.81 a share, which also removes realized gains and losses, which recur, and the amortization of the fair value adjustments of acquired debt and invested assets, which recurs (not used); diluted shares 418.9M; book value per share $121.90 vs $139.99 a year earlier; P&C combined ratio 88.0% vs 85.5%; in Switzerland from 2008-07-18 (the Continuation): common shares and dividends stated in Swiss francs, paid in dollars; Cigna's Asian accident and health and life business is in the figures from 2022-07-01, as published; the quarter before is Q3 2022 as its own release printed it
+  Q1 2023: no revenue, EPS or margin guide in numbers in any filing for FY23; the latest quarter's revenue growth stands in (the UNP rule)
+
+  FY2023E EPS check:  $47.040B × 15.2% pre-tax × (1−19.1%) ÷ 0.419B  =  $13.83  (FY2023E: no EPS guide in numbers, FY22's $12.55 stands)
+  FY2025E BEAR check: $47.040B × 15.2% ÷ 0.438B  =  $13.22  (scenario $5.32)
+  FY2025E BULL check: $56.300B × 15.6% ÷ 0.438B  =  $16.23  (scenario $14.29)
+  Every 1pp of pre-tax margin ≈ $0.908 EPS ≈ $12.99/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Net premiums earned growth            -13.0%     ≥1.0%    ≥14.0%   ≥178.0%    +13.2%  ◦ BASE  ██░░
+  Combined ratio (P&C)                +3240.0bp  ≤1600.0bp  ≤-40.0bp  ≤-1140.0bp  +250.0bp  ◦ BASE  ██░░
+  Net investment income growth          -19.0%     ≥1.0%    ≥22.0%    ≥56.0%    +24.9%  ▲ BULL  ███░
+  Book value per share growth            -9.0%     ≥2.0%    ≥13.0%    ≥24.0%    -12.9%  ⚠ BEAR  █░░░
+  Pre-tax margin change               -5500.0bp  ≥-2820.0bp  ≥-130.0bp  ≥1660.0bp  -980.2bp  ◦ BASE  ██░░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.00 / 4.00
+  Market composite:   2.81 / 4.00  (back-solved from $186.55 + 15% hurdle)
+  SCA adjustment:    +0.20  ·  EPP-distance adj +0.00  →  Adj composite 2.20  →  Gap -0.61  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY22 total revenues +5.4%, net premiums earned +11.1%, P&C combined ratio 87.6%; Q4 combined ratio 88.0% (+250bp YoY)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 14.9x FY23E vs a 14.3x 10-yr median (54th percentile of its own range)  (-0.07 × 25%  =  -0.018)
+    +  Growth vs own history: Q4 2022 revenue growth (no Q1 2023 guide) +9% vs a 4.5% 9-yr median  (+0.45 × 20%  =  +0.090)
+    +  Book value $121.90 a share (-12.9% YoY) at the end of Q4 2022 (FY22 $121.90), dividend $3.32 a year  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Net premiums earned growth            +13.2%    -13.0%  -26.2%  Premiums shrink as prices soften or e…
+  Combined ratio (P&C)                +250.0bp  +3240.0bp  +2990.0bp  Losses and expenses take more of prem…
+  Net investment income growth          +24.9%    -19.0%  -43.9%  Yields and invested assets fall
+  Book value per share growth           -12.9%     -9.0%   +3.9%  Investment marks and losses erode cap…
+  Pre-tax margin change               -980.2bp  -5500.0bp  -4519.8bp  Realized losses and claims outrun rev…
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$94.35  (model)  /  $46.28 (defined)
+  Bear probability (proxy model):  17.6%
+
+  KEY TRIGGER: revenue went from +11.8% (Q3 2022) to +9.0% YoY (Q4 2022), -5.8% on the quarter before;
+  the bear case needs the combined ratio (+250.0bp YoY now) rising further
+  and book value (-12.9% YoY) shrinking under losses and marks. Catastrophes and reserve charges show up in the combined ratio first;
+  investment marks show up in book value before they reach earnings.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $12.55  (FY2023E: no EPS guide in numbers, FY22's $12.55 stands)
+  Min viable P/E at panic:          12x  [median of calendar-year P/E lows: 2013 7.9x, 2014 10.9x, 2015 11.6x, 2016 12.2x, 2017 15.7x, 2018 14.2x, 2019 12.8x, 2020 12.1x, 2021 7.5x, 2022 13.9x, 2023 14.8x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $150.60/share
+  Current $186.55 vs Updated EPP $150.60:  +24%  moderate distance to floor
+  Bear $46.28 vs Updated EPP $150.60:  -69%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Net premiums earned growth                     1.0      -12.2   BASE floor (vs +13 now)
+  Combined ratio (P&C)                        1600.0    +1350.0   BASE floor (vs +250 now)
+  Net investment income growth                   1.0      -23.9   BASE floor (vs +25 now)
+  Book value per share growth                    2.0      +14.9   BASE floor (vs -13 now)
+  Pre-tax margin change                      -2820.0    -1839.8   BASE floor (vs -980 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $12.55 × (1+4.7%)² = $13.76
+  At 14x P/E (conservative):  $192.68/share
+  + Cumul. dividends (2yr):  +$6.84/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $192.68  (▲6.13 from $186.55)
+  Conservative total return:  +7% over 2yr  = +3%/yr
+
+  At 14.9x the multiple is already near its 14x median, so the conservative
+  case is a growth question: breakeven at 14x needs FY2025E EPS of $12.84,
+  i.e. 1.1%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $173.78  –  $231.37  (at 22th pct of range)
+  Annual dividend:      $3.32/share  (yield 1.8%)
+  Realized vol:         24% annualized (1-yr daily log returns)
+  Beta vs broad market: 0.58
+  1-sigma range (1yr):  $142.52  –  $230.58  ($186.55 ± 24%)
+  2-sigma range (1yr):  $98.50  –  $274.60
+  ────────────────────────────────────────────────────────────
+  Bear $46.28 requires:  ~3.2σ price move  (unusual — requires fundamental break)
+  An insurer whose earnings follow the underwriting cycle, catastrophes and markets: the stock is +7% off its September
+  low (52 weeks) while revenue went from +11.8% (Q3 2022) to +9.0% YoY (Q4 2022), -5.8% on the quarter before.
+  Near the low: the multiple has not run ahead of the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        5.32    8.7x  $  46.28    17.6%      5.1%   +12.5pp  EPS -34.9%/yr (worst year FY13-FY22, capped at 0%); P/E to its 10th pct
+  BASE       14.29   14.3x  $ 204.35    61.5%     17.9%   +43.5pp  EPS +6.7%/yr (Q4 revenue YoY + margin + buyback); P/E at its 10-yr median
+  BULL       14.29   16.2x  $ 231.50    17.6%     62.5%   -44.9pp  EPS +6.7%/yr (FY13-FY22 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL      24.91   17.5x  $ 435.93     3.3%     14.4%   -11.1pp  EPS +40.9%/yr (best 2-yr run FY13-FY22, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $189.00  /  Market EV: $246.62  /  Current: $186.55
+  Conservative EV (2yr, ④): $192.68 + $6.84 divs = $199.52 total value
+  Downside (→ Bear $46.28): 75.2%   Upside (→ Bull $231.50): 24.1%   Ratio B 3.12x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $186.55 the market needs $246.71 in two years —
+  above the BULL case. That is a market composite of 2.81 against a model
+  read of 2.20: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       3.12x     +24%    -0.61  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     1.91x     +24%    -0.23  MODESTLY OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)     8.00x     +24%    -0.85  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          2.67x     +24%    -0.52  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                          3.72x     +24%    -0.69  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             3.12x     +24%    -0.31  MODESTLY OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 3.12x      -1%    -0.41  MODESTLY OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    3.12x     +24%    -0.32  MODESTLY OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 2023 print (the quarter ends in Mar) — revenue against the Q4 2022 revenue growth (no Q1 2023 guide): +9% YoY
+  (2) Underwriting — the P&C combined ratio was 88.0% in Q4 2022 (+250.0bp YoY): what must hold for premiums to turn into earnings
+  (3) The FY23 guide — none in any filing: Chubb gives no consolidated revenue, EPS or margin outlook in numbers for the year
+  (4) Book value — $121.90 a share at the end of Q4 2022 (-12.9% YoY): investment marks and reserve charges reach capital here first
+  (5) Capital at 15x — dividend $0.83 a quarter: 'At our May 2022 annual general meeting, our shareholders approved an annual dividend for the following year of up to $3.32 per share, expected to be paid in four quarterly installments of $0.83 per share after the general meeting by way of distribution from capital contribution reserves, transferred to free reserves for payment'; book value $121.90 a share at the end of Q4 2022
+  ✕ AVOID  |  EPP floor $150.60  |  ADD below ~$173.70  |  TRIM above $231.50
+════════════════════════════════════════════════════════════════════════
+

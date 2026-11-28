@@ -1,0 +1,270 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "CRM",
+ "company": "salesforce.com, inc.",
+ "as_of": "2021-08-13",
+ "price_date": "2021-08-13",
+ "price": 251.56,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); subscription software signals with salesforce.com's rule-T thresholds; the listing rule (CRM listed 2004-06-23); reduced-data batch from 2013-02-25: SEC XBRL company facts of the 10-Qs and 10-Ks only (the earnings releases, their guidance and the 10-Ks' text are not in the fact sheet)",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'We are a leading provider of enterprise cloud computing and social enterprise solutions, and are dedicated to helping customers transform themselves into social enterprises.' 'The market for our offerings is highly competitive, rapidly evolving and fragmented, and subject to changing technology, frequent introductions of new products and services, and as we have seen recently, consolidation.' 'The market in which we participate is intensely competitive, and if we do not compete effectively, our operating results could be harmed.' (FY2012 10-K, the last 10-K whose text is in this fact sheet: the FY2013-FY2021 10-Ks' text is not, a reduced-data batch); DURABLE: no 10-K read calls the business cyclical ('cycle' appears only as the sales cycle and payment cycles); no disruption theme in taxonomy_eras.json is live for a subscription software company on this date (of the live themes, OFFSHORE is scoped to 'lower-cost offshore delivery (Indian IT services) takes share and price from Western consulting, systems integration and outsourcing', CLOUD to 'public cloud displaces on-premise hardware, storage, legacy databases and data-center outsourcing', ECOMMERCE to 'e-commerce (Amazon effect) displaces physical retail, malls, grocery, distribution', STREAMING to 'cord-cutting / streaming displaces linear TV networks and pay-TV bundles', ENERGY_TRANSITION to 'decarbonisation strands oil, gas and coal reserves and refining', EV to 'battery-electric vehicles displace ICE powertrains, auto parts suppliers and fuel retail', CRYPTO to 'crypto / DeFi disintermediates payments networks, banks, exchanges, remittance': the FY2012 10-K (the last whose text is in this fact sheet) names cloud computing as salesforce.com's own model, the side that displaces on-premise software, not a substitute for it, and names no offshore delivery; ECOMMERCE, STREAMING, ENERGY_TRANSITION, EV and CRYPTO name no software business), so the watch list is empty and these words stay here (the PEP obesity rule)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "'We are a leading provider of enterprise cloud computing and social enterprise solutions, and are dedicated to helping customers transform themselves into social enterprises.' 'The market for our offerings is highly competitive, rapidly evolving and fragmented, and subject to changing technology, frequent introductions of new products and services, and as we have seen recently, consolidation.' 'The market in which we participate is intensely competitive, and if we do not compete effectively, our operating results could be harmed.' (FY2012 10-K, the last 10-K whose text is in this fact sheet: the FY2013-FY2021 10-Ks' text is not, a reduced-data batch); DURABLE: no 10-K read calls the business cyclical ('cycle' appears only as the sales cycle and payment cycles); no disruption theme in taxonomy_eras.json is live for a subscription software company on this date (of the live themes, OFFSHORE is scoped to 'lower-cost offshore delivery (Indian IT services) takes share and price from Western consulting, systems integration and outsourcing', CLOUD to 'public cloud displaces on-premise hardware, storage, legacy databases and data-center outsourcing', ECOMMERCE to 'e-commerce (Amazon effect) displaces physical retail, malls, grocery, distribution', STREAMING to 'cord-cutting / streaming displaces linear TV networks and pay-TV bundles', ENERGY_TRANSITION to 'decarbonisation strands oil, gas and coal reserves and refining', EV to 'battery-electric vehicles displace ICE powertrains, auto parts suppliers and fuel retail', CRYPTO to 'crypto / DeFi disintermediates payments networks, banks, exchanges, remittance': the FY2012 10-K (the last whose text is in this fact sheet) names cloud computing as salesforce.com's own model, the side that displaces on-premise software, not a substitute for it, and names no offshore delivery; ECOMMERCE, STREAMING, ENERGY_TRANSITION, EV and CRYPTO name no software business), so the watch list is empty and these words stay here (the PEP obesity rule). durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.11x; -29% to EPP floor; model-vs-market gap +0.73; conservative 2yr +255%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.11,
+  "ratio_b_fmt": "0.11x",
+  "epp": 354.78,
+  "epp_gap_pct": -29.1,
+  "epp_adj": 0.2,
+  "proxy_composite": 1.6,
+  "sca": 0.147,
+  "adj_composite": 1.947,
+  "market_composite": 1.22,
+  "adj_gap": 0.73,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 255.4,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.05,
+    "pe": 46.9,
+    "price": 2.35,
+    "desc": "EPS -89.5%/yr (worst year FY17-FY21, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 5.97,
+    "pe": 155.7,
+    "price": 929.53,
+    "desc": "EPS +16.8%/yr (Q1 revenue YoY + margin + buyback); P/E at its 5.5-yr ex-FY12 ex-FY13 ex-FY14 ex-FY15 ex-FY16 median"
+   },
+   "BULL": {
+    "eps": 13.52,
+    "pe": 193.6,
+    "price": 2617.47,
+    "desc": "EPS +75.7%/yr (FY17-FY21 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 13.62,
+    "pe": 1043.3,
+    "price": 14209.75,
+    "desc": "EPS +76.3%/yr (best 2-yr run FY17-FY21, at least BULL); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.11,
+   "epp_gap_pct": -29.1,
+   "adj_gap": 0.73,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 255.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.02,
+   "epp_gap_pct": -29.1,
+   "adj_gap": 0.95,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 255.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 0.13,
+   "epp_gap_pct": -29.1,
+   "adj_gap": 0.52,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 255.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.1,
+   "epp_gap_pct": -29.1,
+   "adj_gap": 0.73,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 255.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.11,
+   "epp_gap_pct": -29.1,
+   "adj_gap": 0.73,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 255.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.11,
+   "epp_gap_pct": -29.1,
+   "adj_gap": 1.03,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 255.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.11,
+   "epp_gap_pct": -31.6,
+   "adj_gap": 0.73,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 255.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.11,
+   "epp_gap_pct": -29.1,
+   "adj_gap": 0.73,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 255.4,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "CRM (retrospective, 2021-08-13) ◉ BUY — Ratio B 0.11x (99.1% downside to Bear $2.35 / +940.5% upside to Bull $2617.47) | Adj composite 1.95 vs market 1.22: gap +0.73 [UNDERVALUED] | -29% above the EPP floor $354.78 (81x FY22E $4.38) | Conservative 2-yr case: +255.4% total (+127.7%/yr) | At 57.4x FY22E the 15% hurdle price $332.69 sits at or below the BASE case; revenue +22.6% YoY in Q1 FY22, forward revenues +22.6% (Q1 FY22 revenue growth (the Q2 FY22 guide is not in this fact sheet (reduced-data batch))); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "CR73",
+   "published": "2021-03-18",
+   "filed": "filed 2021-03-17 (EDGAR filing date; the acceptance time is not in this fact sheet), dated from the next trading day",
+   "title": "salesforce.com FY2021 10-K (XBRL, SEC company facts)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852421000014/",
+   "supports": "FY2021 statements of operations, balance sheets and cash flows as tagged in XBRL, three fiscal years (no quarterly data is tagged) (accession 0001108524-21-000014, read through data.sec.gov/api/xbrl/companyfacts/CIK0001108524.json)"
+  },
+  {
+   "id": "CR69",
+   "published": "2020-03-06",
+   "filed": "accepted 2020-03-05 16:29 ET (after the close)",
+   "title": "salesforce.com FY2020 10-K (XBRL, SEC company facts)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852420000014/crm-20200131.htm",
+   "supports": "FY2020 statements of operations, balance sheets and cash flows as tagged in XBRL, three fiscal years, and the eight quarters' revenues, gross profit, operating result and EPS (accession 0001108524-20-000014, read through data.sec.gov/api/xbrl/companyfacts/CIK0001108524.json)"
+  },
+  {
+   "id": "CR65",
+   "published": "2019-03-08",
+   "filed": "accepted 2019-03-08 08:04 ET (before the open)",
+   "title": "salesforce.com FY2019 10-K (XBRL, SEC company facts)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852419000009/crmq4fy1910-k.htm",
+   "supports": "FY2019 statements of operations, balance sheets and cash flows as tagged in XBRL, three fiscal years, and the eight quarters' revenues, gross profit, operating result and EPS (accession 0001108524-19-000009, read through data.sec.gov/api/xbrl/companyfacts/CIK0001108524.json)"
+  },
+  {
+   "id": "CR61",
+   "published": "2018-03-12",
+   "filed": "accepted 2018-03-09 17:01 ET (after the close)",
+   "title": "salesforce.com FY2018 10-K (XBRL, SEC company facts)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852418000011/crmq4fy1810-k.htm",
+   "supports": "FY2018 statements of operations, balance sheets and cash flows as tagged in XBRL, three fiscal years, and the eight quarters' revenues, gross profit, operating result and EPS (accession 0001108524-18-000011, read through data.sec.gov/api/xbrl/companyfacts/CIK0001108524.json)"
+  },
+  {
+   "id": "CR57",
+   "published": "2017-03-07",
+   "filed": "accepted 2017-03-06 16:38 ET (after the close)",
+   "title": "salesforce.com FY2017 10-K (XBRL, SEC company facts)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852417000006/crm-2017131x10k.htm",
+   "supports": "FY2017 statements of operations, balance sheets and cash flows as tagged in XBRL, three fiscal years, and the eight quarters' revenues, gross profit, operating result and EPS (accession 0001108524-17-000006, read through data.sec.gov/api/xbrl/companyfacts/CIK0001108524.json)"
+  },
+  {
+   "id": "CR53",
+   "published": "2016-03-07",
+   "filed": "accepted 2016-03-04 17:53 ET (after the close)",
+   "title": "salesforce.com FY2016 10-K (XBRL, SEC company facts)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852416000053/crm-2016131x10k.htm",
+   "supports": "FY2016 statements of operations, balance sheets and cash flows as tagged in XBRL, three fiscal years, and the eight quarters' revenues, gross profit, operating result and EPS (accession 0001108524-16-000053, read through data.sec.gov/api/xbrl/companyfacts/CIK0001108524.json)"
+  },
+  {
+   "id": "CR49",
+   "published": "2015-03-06",
+   "filed": "accepted 2015-03-05 18:19 ET (after the close)",
+   "title": "salesforce.com FY2015 10-K (XBRL, SEC company facts)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852415000008/crm-2015131x10k.htm",
+   "supports": "FY2015 statements of operations, balance sheets and cash flows as tagged in XBRL, three fiscal years, and the eight quarters' revenues, gross profit, operating result and EPS (accession 0001108524-15-000008, read through data.sec.gov/api/xbrl/companyfacts/CIK0001108524.json)"
+  },
+  {
+   "id": "CR45",
+   "published": "2014-03-06",
+   "filed": "accepted 2014-03-05 17:19 ET (after the close)",
+   "title": "salesforce.com FY2014 10-K (XBRL, SEC company facts)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312514084762/d648028d10k.htm",
+   "supports": "FY2014 statements of operations, balance sheets and cash flows as tagged in XBRL, three fiscal years, and the eight quarters' revenues, gross profit, operating result and EPS (accession 0001193125-14-084762, read through data.sec.gov/api/xbrl/companyfacts/CIK0001108524.json)"
+  },
+  {
+   "id": "CR2",
+   "published": "2005-03-28",
+   "filed": "accepted 2005-03-25 17:26 ET (after the close)",
+   "title": "salesforce.com FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312505061027/d10k.htm",
+   "supports": "the listing ('since June 23, 2004'); five-year selected data, fiscal 2001-2005 (rule T, the fiscal 2002 change)"
+  },
+  {
+   "id": "CR72",
+   "published": "2020-12-04",
+   "filed": "accepted 2020-12-04 08:43 ET (before the open)",
+   "title": "salesforce.com Q3 FY21 10-Q (XBRL, SEC company facts)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852420000047/crm-20201031.htm",
+   "supports": "Q3 FY21 statements of operations, balance sheet and cash flows as tagged in XBRL (accession 0001108524-20-000047, read through data.sec.gov/api/xbrl/companyfacts/CIK0001108524.json)"
+  },
+  {
+   "id": "CR74",
+   "published": "2021-06-02",
+   "filed": "accepted 2021-06-02 08:08 ET (before the open)",
+   "title": "salesforce.com Q1 FY22 10-Q (XBRL, SEC company facts)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852421000030/crm-20210430.htm",
+   "supports": "Q1 FY22 statements of operations, balance sheet and cash flows as tagged in XBRL (accession 0001108524-21-000030, read through data.sec.gov/api/xbrl/companyfacts/CIK0001108524.json)"
+  },
+  {
+   "id": "CR70",
+   "published": "2020-06-02",
+   "filed": "filed 2020-06-01 (EDGAR filing date; the acceptance time is not in this fact sheet), dated from the next trading day",
+   "title": "salesforce.com Q1 FY21 10-Q (XBRL, SEC company facts)",
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001108524&type=10-Q&dateb=20200601&owner=include&count=10",
+   "supports": "Q1 FY21 statements of operations, balance sheet and cash flows as tagged in XBRL (the 10-Q filed 2020-06-01, read through data.sec.gov/api/xbrl/companyfacts/CIK0001108524.json)"
+  },
+  {
+   "id": "CR41",
+   "published": "2013-04-18",
+   "filed": "the price series' split event, first traded on the new basis 2013-04-18",
+   "title": "Yahoo Finance CRM price series: the four-for-one split of 2013-04-18 (split event 4:1)",
+   "url": "https://finance.yahoo.com/quote/CRM/history",
+   "supports": "the four-for-one split, effective 2013-04-18, public on its day in the price data (the FY2014 10-K's XBRL later tags the ratio: StockholdersEquityNoteStockSplitConversionRatio1 = 4)"
+  },
+  {
+   "id": "Y0",
+   "published": "2021-08-13",
+   "title": "Yahoo Finance daily prices, CRM and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/CRM/history",
+   "supports": "close $251.56 as traded on AS_OF (Yahoo's split-adjusted close x1), 52-week range, realized vol, beta, the 5.5-yr ex-FY12 ex-FY13 ex-FY14 ex-FY15 ex-FY16 P/E distribution from the listing on 2004-06-23"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-27"
+}

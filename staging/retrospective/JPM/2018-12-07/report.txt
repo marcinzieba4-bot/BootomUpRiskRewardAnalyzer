@@ -1,0 +1,149 @@
+
+════════════════════════════════════════════════════════════════════════
+  JPM  ·  JPMorgan Chase & Co.  ·  $103.29  ·  RETROSPECTIVE as of 2018-12-07
+  Signal: ◐ WATCHLIST   Ratio B: 1.73x   Adj gap: -0.05  [FAIRLY VALUED]
+  Point-in-time: 14 sources, latest published 2018-12-07; latest print Q3 2018 (Oct 12)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2018E revenue, USD bn  →  FY2020E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2018E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Noninterest revenue           $ 52.80  $52.80  $57.61    +0.00    +4.81
+    -0.1% revenue in FY17
+  Net interest income           $ 53.40  $53.40  $58.28    +0.00    +4.88
+    +8.7% revenue in FY17
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $106.20  $106.20  $115.89    +0.00    +9.69
+  FY2018E = FY17 $99.624B × (1 + 6.6%: the Q3 2018 revenue growth (no Q4 2018 guide), YoY, applied to the year (no FY18 revenue guide)); split pro rata to FY17 total net revenue by component, reported basis (FY17 growth)
+  Q3 2018 (Oct 12): total net revenue $27.260B +6.6% YoY (-1.8% QoQ); nonperforming assets -18.2% (loans +4.4%); noninterest expense +7.2%;
+  provision 3.48% of revenue (-219.9bp); pre-tax margin 39.21% (+185.1bp); EPS $2.34 vs $1.76
+  Revenue: total net revenue $27,260M vs $25,578M a year earlier, $27,753M the quarter before (reported basis); provision for credit losses $948M vs $1,452M; nonperforming assets $5,034M vs $6,154M a year earlier; loans $954,318M vs $913,761M; GAAP diluted EPS $2.34 vs $1.76 (the supplement prints no figure excluding merger costs); diluted shares 3,394.3M; Tier 1 capital ratio 13.6%; cash dividends declared $0.80 a share in the quarter
+  Q4 2018: no revenue, EPS or margin guide in numbers in any filing; the latest quarter's revenue growth stands in (the UNP rule); the releases, 10-Qs and investor slides give credit-loss and segment outlooks only, which method r2 has no input for
+
+  FY2018E EPS check:  $106.200B × 36.0% pre-tax × (1−31.9%) ÷ 3.394B  =  $7.67  (FY2018E: no EPS guide in numbers, FY17's $6.87 stands)
+  FY2020E BEAR check: $106.200B × 36.0% ÷ 3.406B  =  $7.64  (scenario $4.80)
+  FY2020E BULL check: $115.890B × 36.4% ÷ 3.406B  =  $8.43  (scenario $10.85)
+  Every 1pp of pre-tax margin ≈ $0.213 EPS ≈ $2.34/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Net revenue growth                    -33.0%   ≥-12.0%    ≥10.0%    ≥29.0%     +6.6%  ◦ BASE  ██░░
+  Credit cost (provision/revenue)     +1340.0bp  ≤670.0bp    ≤0.0bp  ≤-1020.0bp  -219.9bp  ▲ BULL  ███░
+  Expense growth less revenue          +65.0pp   ≤29.0pp   ≤-7.0pp  ≤-17.0pp    +0.7pp  ◦ BASE  ██░░
+  Nonperforming assets less loans     +231.0pp  ≤109.0pp  ≤-12.0pp  ≤-85.0pp   -22.6pp  ▲ BULL  ███░
+  Pre-tax margin change               -3910.0bp  ≥-1760.0bp  ≥400.0bp  ≥2200.0bp  +185.1bp  ◦ BASE  ██░░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.35 / 4.00
+  Market composite:   2.40 / 4.00  (back-solved from $103.29 + 15% hurdle)
+  SCA adjustment:    +0.10  ·  EPP-distance adj -0.10  →  Adj composite 2.35  →  Gap -0.05  [FAIRLY VALUED]
+
+  Structural factors:
+    +  Franchise: FY17 total net revenue +4.1%, provision 5.3% of revenue; Q3 provision 3.5% of revenue (-220bp YoY)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 15.0x FY18E vs a 11.0x 10-yr median (84th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: Q3 2018 revenue growth (no Q4 2018 guide) +6.6% vs a -0.2% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  Tier 1 capital ratio 13.6%, nonperforming assets $5.034B (-18.2% YoY) at the end of Q3 2018, dividend $3.20 a year  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Net revenue growth                     +6.6%    -33.0%  -39.6%  Markets and fee revenue fall with the…
+  Credit cost (provision/revenue)     -219.9bp  +1340.0bp  +1559.9bp  Loan losses and reserve builds take m…
+  Expense growth less revenue           +0.7pp   +65.0pp  +64.3pp  Noninterest expense does not fall wit…
+  Nonperforming assets less loans      -22.6pp  +231.0pp  +253.6pp  Problem assets grow faster than the l…
+  Pre-tax margin change               +185.1bp  -3910.0bp  -4095.1bp  Credit costs and expenses outrun revenue
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$59.09  (model)  /  $37.92 (defined)
+  Bear probability (proxy model):  12.0%
+
+  KEY TRIGGER: revenue went from +7.9% (Q2 2018) to +6.6% YoY (Q3 2018), -1.8% on the quarter before;
+  the bear case needs credit costs (-219.9bp of revenue now) rising further
+  and nonperforming assets (-22.6pp against loans) outgrowing the loan book. A credit downturn shows up in nonperforming assets and the provision first;
+  the bear needs it in net revenue as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $6.87  (FY2018E: no EPS guide in numbers, FY17's $6.87 stands)
+  Min viable P/E at panic:          9x  [median of calendar-year P/E lows: 2008 32.5x, 2009 6.9x, 2010 9.0x, 2011 6.3x, 2012 6.0x, 2013 10.3x, 2014 10.1x, 2015 9.1x, 2016 8.6x, 2017 12.0x, 2018 15.0x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $61.83/share
+  Current $103.29 vs Updated EPP $61.83:  +67%  ⚠ far above floor — large drawdown room
+  Bear $37.92 vs Updated EPP $61.83:  -39%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Net revenue growth                           -12.0      -18.6   BASE floor (vs +7 now)
+  Credit cost (provision/revenue)              670.0     +889.9   BASE floor (vs -220 now)
+  Expense growth less revenue                   29.0      +28.3   BASE floor (vs +1 now)
+  Nonperforming assets less loans              109.0     +131.6   BASE floor (vs -23 now)
+  Pre-tax margin change                      -1760.0    -1945.1   BASE floor (vs +185 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $6.87 × (1+4.4%)² = $7.49
+  At 11x P/E (conservative):  $82.41/share
+  + Cumul. dividends (2yr):  +$6.59/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $82.41  (▼20.88 from $103.29)
+  Conservative total return:  -14% over 2yr  = -7%/yr
+
+  4.4% EPS growth is what is left once the premium multiple (15.0x)
+  mean-reverts to 11x. Breakeven at 11x needs FY2020E EPS of $8.79,
+  i.e. 13.1%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $102.20  –  $119.33  (at 6th pct of range)
+  Annual dividend:      $3.20/share  (yield 3.1%)
+  Realized vol:         21% annualized (1-yr daily log returns)
+  Beta vs broad market: 1.04
+  1-sigma range (1yr):  $81.19  –  $125.39  ($103.29 ± 21%)
+  2-sigma range (1yr):  $59.08  –  $147.50
+  ────────────────────────────────────────────────────────────
+  Bear $37.92 requires:  ~3.0σ price move  (unusual — requires fundamental break)
+  A bank whose earnings follow credit and markets: the stock is +0% off its June
+  low (52 weeks) while revenue went from +7.9% (Q2 2018) to +6.6% YoY (Q3 2018), -1.8% on the quarter before.
+  Near the low: the multiple has not run ahead of the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        4.80    7.9x  $  37.92    12.0%     11.1%    +0.9pp  EPS -16.4%/yr (worst year FY08-FY17, capped at 0%); P/E to its 10th pct
+  BASE        7.78   11.0x  $  85.58    42.0%     38.8%    +3.2pp  EPS +6.4%/yr (Q3 revenue YoY + margin + buyback); P/E at its 10-yr median
+  BULL       10.85   13.0x  $ 141.05    38.7%     42.1%    -3.5pp  EPS +25.7%/yr (FY08-FY17 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL      30.91   16.2x  $ 500.74     7.3%      8.0%    -0.7pp  EPS +112.1%/yr (best 2-yr run FY08-FY17, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $131.59  /  Market EV: $136.72  /  Current: $103.29
+  Conservative EV (2yr, ④): $82.41 + $6.59 divs = $89.00 total value
+  Downside (→ Bear $37.92): 63.3%   Upside (→ Bull $141.05): 36.6%   Ratio B 1.73x  →  ◐ WATCHLIST
+
+  To earn the 15%/yr hurdle from $103.29 the market needs $136.60 in two years —
+  between the BASE and BULL cases. That is a market composite of 2.40 against a model
+  read of 2.35: price and numbers roughly agree.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       1.73x     +67%    -0.05  FAIRLY VALUED / WATCHLIST
+  Multiples one band richer (p25/p75/p90/max)     0.77x     +67%    +0.47  MODESTLY UNDERVALUED / ACCUMULATE
+  Multiples one band cheaper (p5/p25/med/p75)     4.28x     +67%    -0.32  MODESTLY OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          1.53x     +67%    -0.01  FAIRLY VALUED / WATCHLIST
+  Scenario EPS -1.5pp/yr                          1.98x     +67%    -0.09  FAIRLY VALUED / AVOID
+  Structural read +0.30 (bullish SCA)             1.73x     +67%    +0.25  MODESTLY UNDERVALUED / WATCHLIST
+  EPP P/E +3 turns (softer floor)                 1.73x     +25%    +0.05  FAIRLY VALUED / WATCHLIST
+  Hurdle 10%/yr instead of 15%                    1.73x     +67%    +0.07  FAIRLY VALUED / WATCHLIST
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 2018 print (the quarter ends in December) — revenue against the Q3 2018 revenue growth (no Q4 2018 guide): +6.6% YoY
+  (2) Credit costs — the provision took 3.5% of revenue in Q3 2018 (-219.9bp YoY): what must turn before earnings can
+  (3) A Q4 2018 revenue guide — none: JPMorgan Chase gives no firm-wide revenue, EPS or margin outlook in any filing; net charge-offs and reserve builds by business are in each supplement
+  (4) Nonperforming assets — -18.2% against loans +4.4% in Q3 2018 (-22.6pp): problem loans outgrowing the book would show here first
+  (5) Capital at 15x — dividend $0.80 a quarter: 'This adjustment resulted from the declaration by the Board of Directors of JPMorgan Chase on September 18, 2018 of a quarterly dividend of $0.80 per share on the outstanding shares of the Firm’s common stock' (8-K of 2018-10-04, the first filing to state the declared rate; the CCAR 8-K of 2018-06-28 and the Q2 2018 10-Q state an intention); Tier 1 capital ratio 13.6% at the end of Q3 2018
+  ◐ WATCHLIST  |  EPP floor $61.83  |  ADD below ~$72.74  |  TRIM above $141.05
+════════════════════════════════════════════════════════════════════════
+

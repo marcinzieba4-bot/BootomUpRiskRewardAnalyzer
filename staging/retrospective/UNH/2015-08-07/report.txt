@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  UNH  ·  UnitedHealth Group Incorporated  ·  $121.82  ·  RETROSPECTIVE as of 2015-08-07
+  Signal: ✕ AVOID   Ratio B: 4.07x   Adj gap: -1.48  [OVERVALUED]
+  Point-in-time: 18 sources, latest published 2015-08-07; latest print Q2 2015 (Jul 16)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2015E revenue, USD bn  →  FY2017E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2015E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  UnitedHealthcare              $109.79  $109.79  $138.13    +0.00   +28.34
+    +5.3% revenues in FY14
+  OptumHealth                   $ 10.11  $10.11  $12.72    +0.00    +2.61
+    +11.9% revenues in FY14
+  OptumInsight                  $  4.79  $ 4.79  $ 6.03    +0.00    +1.24
+    +10.9% revenues in FY14
+  OptumRx                       $ 29.31  $29.31  $36.87    +0.00    +7.56
+    +33.2% revenues in FY14
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $154.00  $154.00  $193.75    +0.00   +39.75
+  FY2015E = FY14 $130.474B × (1 + 18.0%: FY15 revenue guide midpoint (Q2 2015 release)); split pro rata to FY14 segment revenues before eliminations (FY14 growth)
+  Q2 2015 (Jul 16): revenues $36.263B +11.3% YoY (+1.4% QoQ); premiums +10.8%; services and products +17.3%;
+  medical care ratio 81.43% (-13.3bp); operating cost ratio 16.14% (+15.6bp); operating margin 7.98% (+14.9bp); EPS $1.64 vs $1.42
+  Revenue: revenues $36,263M vs $32,574M a year earlier, $35,756M the quarter before (premiums, services, products and investment and other income); premiums $31,961M (+10.8%), services $2,865M and products $1,223M (+17.3% together), investment and other income $214M (-14.4%); diluted EPS attributable to UnitedHealth Group common shareholders $1.64 vs $1.42 a year earlier (GAAP); diluted shares 966M vs 991M a year earlier
+  FY15 guide (8-K of 2014-12-01, Q4 2014 release, Q1 2015 release, Q2 2015 release): EPS $6.25-6.35 (Q2 2015 release: as published (GAAP), Catamaran in); revenue about $154.0B (+18% on FY14's $130.47B; Q2 2015 release); no operating margin guide in numbers; the revenue guide includes the anticipated Catamaran combination, as published
+
+  FY2015E EPS check:  $154.000B × 7.4% pre-tax × (1−41.8%) ÷ 0.966B  =  $6.86  (FY2015E EPS, guide midpoint ($6.25-6.35, Q2 2015 release))
+  FY2017E BEAR check: $154.000B × 7.4% ÷ 0.901B  =  $7.36  (scenario $4.48)
+  FY2017E BULL check: $193.750B × 7.8% ÷ 0.901B  =  $9.76  (scenario $9.29)
+  Every 1pp of pre-tax margin ≈ $0.928 EPS ≈ $10.48/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Premium revenue growth                 -6.0%     ≥6.0%    ≥18.0%    ≥56.0%    +10.8%  ◦ BASE  ██░░
+  Medical care ratio                  +630.0bp  ≤290.0bp  ≤-60.0bp  ≤-230.0bp   -13.3bp  ◦ BASE  ██░░
+  Fee revenue (services+products)        -8.0%     ≥2.0%    ≥12.0%    ≥31.0%    +17.3%  ▲ BULL  ███░
+  Operating cost ratio                +160.0bp   ≤60.0bp  ≤-50.0bp  ≤-300.0bp   +15.6bp  ◦ BASE  ██░░
+  Operating margin change             -1400.0bp  ≥-650.0bp   ≥90.0bp  ≥510.0bp   +14.9bp  ◦ BASE  ██░░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.15 / 4.00
+  Market composite:   3.53 / 4.00  (back-solved from $121.82 + 15% hurdle)
+  SCA adjustment:    +0.10  ·  EPP-distance adj -0.20  →  Adj composite 2.05  →  Gap -1.48  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY14 revenues +6.5%, premiums +5.2%, medical care ratio 80.88%; Q2 medical care ratio 81.43% (-13bp YoY)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 19.3x FY15E vs a 11.3x 10-yr median (94th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: FY15 revenue guide +18% vs a 8.1% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  FY14 cash and investments $28.06B, cash flows from operations $8.05B, debt-to-total-capital 34.9%, dividend $2.00 a year  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Premium revenue growth                +10.8%     -6.0%  -16.8%  Risk-based membership and premium yie…
+  Medical care ratio                   -13.3bp  +630.0bp  +643.3bp  Medical costs outrun premium rates
+  Fee revenue (services+products)       +17.3%     -8.0%  -25.3%  Fee-based clients and services shrink
+  Operating cost ratio                 +15.6bp  +160.0bp  +144.4bp  Administrative costs outgrow revenues
+  Operating margin change              +14.9bp  -1400.0bp  -1414.9bp  Medical and operating costs outrun re…
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$57.79  (model)  /  $35.39 (defined)
+  Bear probability (proxy model):  15.5%
+
+  KEY TRIGGER: revenue went from +12.8% (Q1 2015) to +11.3% YoY (Q2 2015), +1.4% on the quarter before;
+  the bear case needs the medical care ratio (-13.3bp YoY now) rising further
+  and premium growth (+10.8% YoY) fading as risk membership shrinks. Medical cost trends that outrun premium rates show up in the medical care ratio first;
+  charges land in operating costs.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $6.30  (FY2015E EPS, guide midpoint ($6.25-6.35, Q2 2015 release))
+  Min viable P/E at panic:          9x  [median of calendar-year P/E lows: 2005 21.8x, 2006 14.2x, 2007 13.2x, 2008 5.5x, 2009 5.0x, 2010 6.8x, 2011 7.8x, 2012 9.5x, 2013 9.3x, 2014 12.2x, 2015 15.7x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $56.70/share
+  Current $121.82 vs Updated EPP $56.70:  +115%  ⚠ far above floor — large drawdown room
+  Bear $35.39 vs Updated EPP $56.70:  -38%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Premium revenue growth                         6.0       -4.8   BASE floor (vs +11 now)
+  Medical care ratio                           290.0     +303.3   BASE floor (vs -13 now)
+  Fee revenue (services+products)                2.0      -15.3   BASE floor (vs +17 now)
+  Operating cost ratio                          60.0      +44.4   BASE floor (vs +16 now)
+  Operating margin change                     -650.0     -664.9   BASE floor (vs +15 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $6.30 × (1+19.4%)² = $8.98
+  At 11x P/E (conservative):  $98.81/share
+  + Cumul. dividends (2yr):  +$4.12/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $98.81  (▼23.01 from $121.82)
+  Conservative total return:  -16% over 2yr  = -8%/yr
+
+  19.4% EPS growth is what is left once the premium multiple (19.3x)
+  mean-reverts to 11x. Breakeven at 11x needs FY2017E EPS of $10.70,
+  i.e. 30.3%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $78.74  –  $126.05  (at 91th pct of range)
+  Annual dividend:      $2.00/share  (yield 1.6%)
+  Realized vol:         21% annualized (1-yr daily log returns)
+  Beta vs broad market: 1.17
+  1-sigma range (1yr):  $95.87  –  $147.77  ($121.82 ± 21%)
+  2-sigma range (1yr):  $69.92  –  $173.72
+  ────────────────────────────────────────────────────────────
+  Bear $35.39 requires:  ~3.3σ price move  (unusual — requires fundamental break)
+  A health benefits company whose earnings follow medical cost trends against premium rates: the stock is +53% off its August
+  low (52 weeks) while revenue went from +12.8% (Q1 2015) to +11.3% YoY (Q2 2015), +1.4% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        4.48    7.9x  $  35.39    15.5%      2.1%   +13.4pp  EPS -15.7%/yr (worst year FY05-FY14, capped at 0%); P/E to its 10th pct
+  BASE        9.29   11.3x  $ 104.98    54.1%      7.3%   +46.8pp  EPS +21.4%/yr (FY15 guide + margin + buyback); P/E at its 10-yr median
+  BULL        9.29   15.4x  $ 143.07    25.6%     25.6%    -0.0pp  EPS +21.4%/yr (FY05-FY14 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL       9.55   18.7x  $ 178.59     4.8%     65.0%   -60.2pp  EPS +23.1%/yr (best 2-yr run FY05-FY14, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $107.48  /  Market EV: $161.11  /  Current: $121.82
+  Conservative EV (2yr, ④): $98.81 + $4.12 divs = $102.93 total value
+  Downside (→ Bear $35.39): 70.9%   Upside (→ Bull $143.07): 17.4%   Ratio B 4.07x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $121.82 the market needs $161.11 in two years —
+  above the BULL case. That is a market composite of 3.53 against a model
+  read of 2.05: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       4.07x    +115%    -1.48  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     1.55x    +115%    -0.47  MODESTLY OVERVALUED / WATCHLIST
+  Multiples one band cheaper (p5/p25/med/p75)      infx    +115%    -1.72  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          3.34x    +115%    -1.36  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                          5.15x    +115%    -1.62  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             4.07x    +115%    -1.18  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 4.07x     +61%    -1.38  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    4.07x    +115%    -1.14  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 2015 print (the quarter ends in Sep) — revenue against the FY15 revenue guide: +18% YoY
+  (2) Medical costs — the medical care ratio was 81.43% in Q2 2015 (-13.3bp YoY): what must hold for premiums to turn into earnings
+  (3) The FY15 EPS guide — $6.25-6.35 (Q2 2015 release)
+  (4) Operating costs — operating cost ratio 16.14% in Q2 2015 (+15.6bp YoY): where legal, restructuring and other charges land
+  (5) Capital at 19x — dividend $2.00 a year, paid quarterly (UnitedHealth Group Q2 2015 earnings release): 'During the quarter, UnitedHealth Group increased the annual dividend payment rate by 33 percent to $2.00 per share.'; diluted shares 966M vs 991M a year earlier
+  ✕ AVOID  |  EPP floor $56.70  |  ADD below ~$89.23  |  TRIM above $143.07
+════════════════════════════════════════════════════════════════════════
+

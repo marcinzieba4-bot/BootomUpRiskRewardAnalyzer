@@ -1,0 +1,155 @@
+
+════════════════════════════════════════════════════════════════════════
+  SCHW  ·  The Charles Schwab Corporation  ·  $91.70  ·  RETROSPECTIVE as of 2026-06-18
+  Signal: ◎ ACCUMULATE   Ratio B: 0.87x   Adj gap: +0.93  [UNDERVALUED]
+  Point-in-time: 10 sources, latest published 2026-06-18; latest print Q1 2026 (Apr 17)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2026E revenue, USD bn  →  FY2028E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2026E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Asset management and adminis  $  7.53  $ 7.53  $ 9.76    +0.00    +2.23
+    +13.8% revenue in FY25
+  Net interest revenue          $ 13.61  $13.61  $17.62    +0.00    +4.01
+    +28.5% revenue in FY25
+  Trading revenue               $  4.54  $ 4.54  $ 5.88    +0.00    +1.34
+    +20.1% revenue in FY25
+  Other (bank deposit account   $  2.02  $ 2.02  $ 2.62    +0.00    +0.60
+    +17.7% revenue in FY25
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $ 27.70  $27.70  $35.88    +0.00    +8.18
+  FY2026E = FY25 $23.921B × (1 + 15.8%: the Q1 2026 revenue growth (no Q2 2026 guide), YoY, applied to the year (no FY26 revenue guide)); split pro rata to FY25 net revenues by component (asset management and administration fees, net interest revenue, trading revenue, other; FY25 growth, each component as the FY25 10-K reports both years)
+  Q1 2026 (Apr 17): net revenues $6.482B +15.8% YoY (+2.3% QoQ); client assets $11,767.9B +18.5%; revenue trades n/r;
+  expenses excluding interest +4.8%; pre-tax margin 49.18% (+533.5bp); net new client assets $139.9B; EPS $1.37 vs $0.99
+  Revenue: net revenues $6,482M vs $5,599M a year earlier, $6,336M the quarter before; client assets $11,767.9B vs $9,929.7B a year earlier; net new client assets $139.9B in the quarter; daily average revenue trades not reported (clients' daily average trades, DATs, 9,899.0K vs 7,391.0K, display only); diluted EPS $1.37 vs $0.99, GAAP (per common share, after preferred dividends); diluted shares 1,752M; expenses excluding interest $3,294M vs $3,144M; GAAP: Forge Global (acquired on March 2, 2026, its 8-K) in the figures as published, nothing made pro forma; the release's adjusted diluted EPS also excludes the amortization of acquired intangible assets, a recurring item ('Amortization of acquired intangible assets will continue in future periods over their remaining useful lives.'), so GAAP stands ('Closed Forge Global acquisition in early March'); an outlook given only at a business update or in commentary the company did not file is unused (the CRM rule): 'The company will host its Spring Business Update for institutional investors this morning from 7:30 a.'
+  Q2 2026: no revenue, EPS or margin guide in numbers in any filing; the latest quarter's revenue growth stands in (the UNP rule)
+
+  FY2026E EPS check:  $27.700B × 47.9% pre-tax × (1−22.8%) ÷ 1.752B  =  $5.85  (FY2026E: no EPS guide in numbers, FY25's $4.65 stands)
+  FY2028E BEAR check: $27.700B × 47.9% ÷ 1.871B  =  $5.48  (scenario $2.45)
+  FY2028E BULL check: $35.880B × 48.3% ÷ 1.871B  =  $7.16  (scenario $6.16)
+  Every 1pp of pre-tax margin ≈ $0.122 EPS ≈ $2.64/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Net revenue growth                    -56.0%   ≥-22.0%    ≥12.0%    ≥41.0%    +15.8%  ▲ BULL  ███░
+  Client assets growth                  -34.0%   ≥-10.0%    ≥15.0%    ≥42.0%    +18.5%  ▲ BULL  ███░
+  Expense growth less revenue          +35.0pp   ≤16.0pp   ≤-3.0pp  ≤-16.0pp   -11.0pp  ▲ BULL  ███░
+  Daily average revenue trades          -91.0%   ≥-34.0%    ≥22.0%    ≥68.0%       n/r  ◦ BASE  ██░░
+  Pre-tax margin change               -3510.0bp  ≥-1640.0bp  ≥230.0bp  ≥1330.0bp  +533.5bp  ▲ BULL  ███░
+  Crypto: disintermediation of brokerage and banking    +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.70 / 4.00
+  Market composite:   2.05 / 4.00  (back-solved from $91.70 + 15% hurdle)
+  SCA adjustment:    +0.28  ·  EPP-distance adj +0.00  →  Adj composite 2.98  →  Gap +0.93  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY25 net revenues +22.0%, client assets $11,903.0B (+17.8%); Q1 net new client assets $139.9B  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 19.7x FY26E vs a 21.6x 10-yr median (30th percentile of its own range)  (+0.33 × 25%  =  +0.083)
+    +  Growth vs own history: Q1 2026 revenue growth (no Q2 2026 guide) +15.8% vs a 12.1% 9-yr median  (+0.37 × 20%  =  +0.074)
+    +  Client assets $11,767.9B (+18.5% YoY) at the end of Q1 2026, pre-tax margin 49.2%, dividend $1.28 a year  (+0.30 × 15%  =  +0.045)
+    +  Crypto: Schwab's own planned spot crypto trading (FY2025 10-K)  (+0.20 × 10%  =  +0.020)
+    -  Crypto competition (FY2025 10-K): digital assets among industry and competitive trends  (-0.20 × 10%  =  -0.020)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Net revenue growth                    +15.8%    -56.0%  -71.8%  Asset-based and trading revenue fall …
+  Client assets growth                  +18.5%    -34.0%  -52.5%  Client assets shrink with markets and…
+  Expense growth less revenue          -11.0pp   +35.0pp  +46.0pp  Expenses excluding interest do not fa…
+  Daily average revenue trades             n/r    -91.0%     n/r  Clients trade less
+  Pre-tax margin change               +533.5bp  -3510.0bp  -4043.5bp  Expenses outrun revenue
+  Crypto: disintermediation of brokerage and banking    +2.0/4    +1.0/4  -1.0/4  Investors move to crypto platforms th…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$67.06  (model)  /  $40.43 (defined)
+  Bear probability (proxy model):  6.0%
+
+  KEY TRIGGER: revenue went from +18.9% (Q4 2025) to +15.8% YoY (Q1 2026), +2.3% on the quarter before;
+  the bear case needs client assets (+18.5% YoY now) shrinking further
+  and trades (n/r YoY) falling with them. Lower markets and rates show up in client assets and asset-based fees first;
+  the bear needs them in net revenue as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $4.65  (FY2026E: no EPS guide in numbers, FY25's $4.65 stands)
+  Min viable P/E at panic:          18x  [median of calendar-year P/E lows: 2016 18.4x, 2017 23.3x, 2018 15.6x, 2019 13.1x, 2020 13.4x, 2021 18.2x, 2022 17.1x, 2023 18.6x, 2024 20.6x, 2025 14.9x, 2026 18.4x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $83.70/share
+  Current $91.70 vs Updated EPP $83.70:  +10%  moderate distance to floor
+  Bear $40.43 vs Updated EPP $83.70:  -52%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Net revenue growth                           -22.0      -37.8   BASE floor (vs +16 now)
+  Client assets growth                         -10.0      -28.5   BASE floor (vs +18 now)
+  Expense growth less revenue                   16.0      +27.0   BASE floor (vs -11 now)
+  Daily average revenue trades                 -34.0        n/r   BASE floor (not reported now)
+  Pre-tax margin change                      -1640.0    -2173.5   BASE floor (vs +534 now)
+  Crypto: disintermediation of brokerage and banking             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $4.65 × (1+10.5%)² = $5.67
+  At 21x P/E (conservative):  $119.17/share
+  + Cumul. dividends (2yr):  +$2.64/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $119.17  (▲27.47 from $91.70)
+  Conservative total return:  +33% over 2yr  = +16%/yr
+
+  At 19.7x the multiple is already near its 21x median, so the conservative
+  case is a growth question: breakeven at 21x needs FY2028E EPS of $4.24,
+  i.e. -4.5%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $83.96  –  $107.50  (at 33th pct of range)
+  Annual dividend:      $1.28/share  (yield 1.4%)
+  Realized vol:         25% annualized (1-yr daily log returns)
+  Beta vs broad market: 0.54
+  1-sigma range (1yr):  $69.05  –  $114.35  ($91.70 ± 25%)
+  2-sigma range (1yr):  $46.40  –  $137.00
+  ────────────────────────────────────────────────────────────
+  Bear $40.43 requires:  ~2.3σ price move  (unusual — requires fundamental break)
+  A broker whose earnings follow markets and rates: the stock is +7% off its May
+  low (52 weeks) while revenue went from +18.9% (Q4 2025) to +15.8% YoY (Q1 2026), +2.3% on the quarter before.
+  Near the low: the multiple has not run ahead of the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        2.45   16.5x  $  40.43     6.0%     17.0%   -11.0pp  EPS -27.4%/yr (worst year FY16-FY25, capped at 0%); P/E to its 10th pct
+  BASE        5.88   21.6x  $ 127.01    20.8%     59.2%   -38.4pp  EPS +12.5%/yr (Q1 revenue YoY + margin + buyback); P/E at its 10-yr median
+  BULL        6.16   24.5x  $ 150.92    61.6%     20.0%   +41.5pp  EPS +15.1%/yr (FY16-FY25 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL       8.70   26.8x  $ 233.16    11.6%      3.8%    +7.8pp  EPS +36.8%/yr (best 2-yr run FY16-FY25, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $148.90  /  Market EV: $121.13  /  Current: $91.70
+  Conservative EV (2yr, ④): $119.17 + $2.64 divs = $121.81 total value
+  Downside (→ Bear $40.43): 55.9%   Upside (→ Bull $150.92): 64.6%   Ratio B 0.87x  →  ◎ ACCUMULATE
+
+  To earn the 15%/yr hurdle from $91.70 the market needs $121.27 in two years —
+  at or below the BASE case. That is a market composite of 2.05 against a model
+  read of 2.98: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.87x     +10%    +0.93  UNDERVALUED / ACCUMULATE
+  Multiples one band richer (p25/p75/p90/max)     0.62x     +10%    +1.20  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     1.28x     +10%    +0.57  UNDERVALUED / WATCHLIST
+  Scenario EPS +1.5pp/yr                          0.78x     +10%    +1.02  UNDERVALUED / ACCUMULATE
+  Scenario EPS -1.5pp/yr                          0.96x     +10%    +0.83  UNDERVALUED / ACCUMULATE
+  Structural read +0.30 (bullish SCA)             0.87x     +10%    +1.23  UNDERVALUED / ACCUMULATE
+  EPP P/E +3 turns (softer floor)                 0.87x      -6%    +1.13  UNDERVALUED / ACCUMULATE
+  Hurdle 10%/yr instead of 15%                    0.87x     +10%    +1.14  UNDERVALUED / ACCUMULATE
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 2026 print (the quarter ends in June) — revenue against the Q1 2026 revenue growth (no Q2 2026 guide): +15.8% YoY
+  (2) Client assets — $11,767.9B at the end of Q1 2026 (+18.5% YoY): asset-based revenue follows them
+  (3) A Q2 2026 revenue guide — none: Schwab gives no revenue, EPS or margin outlook in numbers in any filing; the monthly activity reports in each release track client assets, net new assets and trades
+  (4) Trading activity — revenue trades not reported in Q1 2026: from the Q1 2020 release the activity table prints clients' daily average trades (DATs) only (9,899.0K vs 7,391.0K a year earlier, display only), so the signal scores BASE (n/r)
+  (5) Capital at 20x — dividend $0.32 a quarter: 'In addition, on January 29, 2026, the Board of Directors of the Company declared a five cent, or 19%, increase in the quarterly cash dividend to $.32 per common share.' (FY2025 10-K)
+  ◎ ACCUMULATE  |  EPP floor $83.70  |  ADD below ~$107.96  |  TRIM above $150.92
+════════════════════════════════════════════════════════════════════════
+

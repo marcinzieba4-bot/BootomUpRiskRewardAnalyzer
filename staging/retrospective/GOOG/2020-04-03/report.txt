@@ -1,0 +1,159 @@
+
+════════════════════════════════════════════════════════════════════════
+  GOOG  ·  Alphabet Inc.  ·  $1,097.88  ·  RETROSPECTIVE as of 2020-04-03
+  Signal: ◎ ACCUMULATE   Ratio B: 0.98x   Adj gap: +0.02  [FAIRLY VALUED]
+  Point-in-time: 12 sources, latest published 2020-04-03; latest print Q4 2019 (Feb 3)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2020E revenue, USD bn  →  FY2022E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2020E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Google Search & other         $115.09  $115.09  $168.23    +0.00   +53.14
+    +15.0% revenue in FY19
+  YouTube ads                   $ 17.77  $17.77  $25.98    +0.00    +8.21
+    +35.8% revenue in FY19
+  Google Network Members' prop  $ 25.27  $25.27  $36.95    +0.00   +11.68
+    +7.7% revenue in FY19
+  Google Cloud                  $ 10.46  $10.46  $15.29    +0.00    +4.83
+    +52.8% revenue in FY19
+  Google other                  $ 19.96  $19.96  $29.17    +0.00    +9.21
+    +21.0% revenue in FY19
+  Other Bets                    $  0.77  $ 0.77  $ 1.13    +0.00    +0.36
+    +10.8% revenue in FY19
+  Hedging gains (losses)        $  0.53  $ 0.53  $ 0.78    +0.00    +0.25
+    new in FY19, no prior-year revenue
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $189.85  $189.85  $277.53    +0.00   +87.68
+  FY2020E = FY19 $161.857B × (1 + 17.3%: the Q4 2019 revenue growth (no Q1 2020 guide), YoY, applied to the year (no FY20 revenue guide)); split pro rata to FY19 revenues by type (FY19 growth)
+  Q4 2019 (Feb 3): revenue $46.075B +17.3% YoY (+13.8% QoQ); receivables +21.5%; R&D + S&M + G&A +20.2%;
+  gross margin 54.38% (-0.1bp); operating margin 20.11% (-82.1bp); EPS $15.35 vs $12.77
+  Revenue: revenues $46,075.0M vs $39,276.0M a year earlier, $40,499.0M the quarter before (Google Search & other $27,185.0M, YouTube ads $4,717.0M, Google Network $6,032.0M, Google other $5,264.0M, Google Cloud $2,614.0M, Other Bets $172.0M, hedging gains (losses) $91.0M); the release gives no paid-click table; accounts receivable $25,326.0M (2019-12-31) vs $20,838.0M a year earlier (the release's December 31, 2018 column); GAAP diluted EPS $15.35 vs $12.77 (every class); diluted shares 695.2M; employees: 'Number of employees | 98,771 | 118,899'; TAC: 'Total TAC | $7,436 | $8,501'; revenues by type from this release: Google Search & other, YouTube ads, Google Network, Google Cloud, Google other, Other Bets and hedging gains (display); 'Hedging gains (losses), which were previously included in Google revenues, are presented separately.'
+  Q1 2020: no revenue, EPS or margin guide in numbers in any filing; the latest quarter's revenue growth stands in (the UNP rule); in words only, the FY19 10-K: 'Our revenue growth rate could decline over time, and we anticipate downward pressure on our operating margin in the future.' (display only); the releases estimate stock-based compensation, dilution and capital expenditure, which method r2 has no input for
+
+  FY2020E EPS check:  $189.850B × 24.5% pre-tax × (1−13.3%) ÷ 0.695B  =  $57.94  (FY2020E: no EPS guide in numbers, FY19's $49.16 stands)
+  FY2022E BEAR check: $189.850B × 24.5% ÷ 0.707B  =  $56.96  (scenario $20.54)
+  FY2022E BULL check: $277.530B × 24.9% ÷ 0.707B  =  $84.63  (scenario $66.66)
+  Every 1pp of pre-tax margin ≈ $2.367 EPS ≈ $57.75/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Revenue growth                        -88.0%    ≥73.0%   ≥234.0%  ≥8585.0%    +17.3%  ⚠ BEAR  █░░░
+  Gross margin change                 -2910.0bp  ≥-1350.0bp  ≥210.0bp  ≥38090.0bp    -0.1bp  ◦ BASE  ██░░
+  Opex growth less revenue            +183.0pp   ≤72.0pp  ≤-38.0pp  ≤-8252.0pp    +2.9pp  ◦ BASE  ██░░
+  Receivables growth less revenue      +55.0pp   ≤28.0pp    ≤2.0pp  ≤-84.0pp    +4.2pp  ◦ BASE  ██░░
+  Operating margin change             -5090.0bp  ≥-1910.0bp  ≥1280.0bp  ≥288470.0bp   -82.1bp  ◦ BASE  ██░░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.80 / 4.00
+  Market composite:   1.90 / 4.00  (back-solved from $1,097.88 + 15% hurdle)
+  SCA adjustment:    +0.12  ·  EPP-distance adj +0.00  →  Adj composite 1.92  →  Gap +0.02  [FAIRLY VALUED]
+
+  Structural factors:
+    +  Franchise: FY19 revenues +18.3%, gross margin 55.6%; Q4 gross margin 54.38% (-0bp YoY)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 22.3x FY20E vs a 24.4x 10-yr median (36th percentile of its own range)  (+0.23 × 25%  =  +0.058)
+    -  Growth vs own history: Q4 2019 revenue growth (no Q1 2020 guide) +17.3% vs a 20.6% 9-yr median  (-0.33 × 20%  =  -0.066)
+    +  Cash, cash equivalents and marketable securities $119.675B, long-term debt $4,554.0M (no short-term debt line) (Q4 2019), FY19 free cash flow $30.972B (cash from operations $54,520.0M less purchases of property and equipment $23,548.0M), no dividend  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Revenue growth                        +17.3%    -88.0%  -105.3%  Advertisers cut budgets: fewer paid c…
+  Gross margin change                   -0.1bp  -2910.0bp  -2909.9bp  Traffic acquisition and data-center c…
+  Opex growth less revenue              +2.9pp  +183.0pp  +180.1pp  Hiring and R&D do not slow with revenue
+  Receivables growth less revenue       +4.2pp   +55.0pp  +50.8pp  Advertisers pay more slowly: collecti…
+  Operating margin change              -82.1bp  -5090.0bp  -5007.9bp  Operating leverage works in reverse
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$763.56  (model)  /  $373.83 (defined)
+  Bear probability (proxy model):  29.4%
+
+  KEY TRIGGER: revenue went from +20.0% (Q3 2019) to +17.3% YoY (Q4 2019), +13.8% on the quarter before;
+  the bear case needs a downturn in gross margin (-0.1bp now)
+  and receivables (+4.2pp against revenue) giving way. An advertising slowdown shows up in paid clicks and revenue growth first;
+  the bear needs it in gross margin as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $49.16  (FY2020E: no EPS guide in numbers, FY19's $49.16 stands)
+  Min viable P/E at panic:          20x  [median of calendar-year P/E lows: 2010 16.5x, 2011 16.0x, 2012 16.2x, 2013 18.0x, 2014 24.9x, 2015 20.2x, 2016 24.0x, 2017 43.7x, 2018 22.3x, 2019 20.7x, 2020 21.5x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $983.20/share
+  Current $1,097.88 vs Updated EPP $983.20:  +12%  moderate distance to floor
+  Bear $373.83 vs Updated EPP $983.20:  -62%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Revenue growth                                73.0      +55.7   BASE floor (vs +17 now)
+  Gross margin change                        -1350.0    -1349.9   BASE floor (vs -0 now)
+  Opex growth less revenue                      72.0      +69.1   BASE floor (vs +3 now)
+  Receivables growth less revenue               28.0      +23.8   BASE floor (vs +4 now)
+  Operating margin change                    -1910.0    -1827.9   BASE floor (vs -82 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $49.16 × (1+14.4%)² = $64.39
+  At 24x P/E (conservative):  $1,545.27/share
+  + Cumul. dividends (2yr):  +$0.00/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $1,545.27  (▲447.39 from $1,097.88)
+  Conservative total return:  +41% over 2yr  = +20%/yr
+
+  At 22.3x the multiple is already near its 24x median, so the conservative
+  case is a growth question: breakeven at 24x needs FY2022E EPS of $45.75,
+  i.e. -3.5%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $1,013.54  –  $1,532.11  (at 16th pct of range)
+  Annual dividend:      $0.00/share  (yield 0.0%)
+  Realized vol:         35% annualized (1-yr daily log returns)
+  Beta vs broad market: 0.93
+  1-sigma range (1yr):  $718.01  –  $1,477.75  ($1,097.88 ± 35%)
+  2-sigma range (1yr):  $338.15  –  $1,857.61
+  ────────────────────────────────────────────────────────────
+  Bear $373.83 requires:  ~1.9σ price move  (unusual — requires fundamental break)
+  An advertising business whose revenue follows advertisers' budgets: the stock is +6% off its June
+  low (52 weeks) while revenue went from +20.0% (Q3 2019) to +17.3% YoY (Q4 2019), +13.8% on the quarter before.
+  Near the low: the multiple has not run ahead of the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR       20.54   18.2x  $ 373.83    29.4%     23.0%    +6.4pp  EPS -35.4%/yr (worst year FY10-FY19, capped at 0%); P/E to its 10th pct
+  BASE       66.66   24.4x  $1,626.50    52.7%     57.5%    -4.8pp  EPS +16.4%/yr (Q4 revenue YoY + margin + buyback); P/E at its 10-yr median
+  BULL       66.66   27.6x  $1,839.82    15.1%     16.5%    -1.4pp  EPS +16.4%/yr (FY10-FY19 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL     134.26   31.7x  $4,256.04     2.9%      3.1%    -0.3pp  EPS +65.3%/yr (best 2-yr run FY10-FY19, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $1,365.46  /  Market EV: $1,455.59  /  Current: $1,097.88
+  Conservative EV (2yr, ④): $1,545.27 + $0.00 divs = $1,545.27 total value
+  Downside (→ Bear $373.83): 65.9%   Upside (→ Bull $1839.82): 67.6%   Ratio B 0.98x  →  ◎ ACCUMULATE
+
+  To earn the 15%/yr hurdle from $1,097.88 the market needs $1,451.95 in two years —
+  at or below the BASE case. That is a market composite of 1.90 against a model
+  read of 1.92: price and numbers roughly agree.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.98x     +12%    +0.02  FAIRLY VALUED / ACCUMULATE
+  Multiples one band richer (p25/p75/p90/max)     0.66x     +12%    +0.27  MODESTLY UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     1.40x     +12%    -0.32  MODESTLY OVERVALUED / WATCHLIST
+  Scenario EPS +1.5pp/yr                          0.89x     +12%    +0.07  FAIRLY VALUED / ACCUMULATE
+  Scenario EPS -1.5pp/yr                          1.07x     +12%    -0.03  FAIRLY VALUED / ACCUMULATE
+  Structural read +0.30 (bullish SCA)             0.98x     +12%    +0.32  MODESTLY UNDERVALUED / ACCUMULATE
+  EPP P/E +3 turns (softer floor)                 0.98x      -3%    +0.22  MODESTLY UNDERVALUED / ACCUMULATE
+  Hurdle 10%/yr instead of 15%                    0.98x     +12%    +0.16  FAIRLY VALUED / ACCUMULATE
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 2020 print (the quarter ends in March) — revenue against the Q4 2019 revenue growth (no Q1 2020 guide): +17.3% YoY
+  (2) Gross margin — -0.1bp in Q4 2019: traffic acquisition and data-center costs against revenue, what must hold if revenue does not
+  (3) A Q1 2020 revenue guide — none: Google gives no revenue, EPS or margin outlook in any filing; aggregate paid clicks and traffic acquisition costs are in each release
+  (4) Receivables — +21.5% against revenue +17.3% in Q4 2019 (+4.2pp): advertisers paying more slowly would show here first
+  (5) Capital structure at 22x — repurchases of capital stock $6,098.0M in Q4 2019 (the cash flow statement); no dividend
+  ◎ ACCUMULATE  |  EPP floor $983.20  |  ADD below ~$1,382.52  |  TRIM above $1,839.82
+════════════════════════════════════════════════════════════════════════
+

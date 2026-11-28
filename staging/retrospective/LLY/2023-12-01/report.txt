@@ -1,0 +1,155 @@
+
+════════════════════════════════════════════════════════════════════════
+  LLY  ·  Eli Lilly and Company  ·  $584.04  ·  RETROSPECTIVE as of 2023-12-01
+  Signal: ✕ AVOID   Ratio B: infx   Adj gap: -0.90  [OVERVALUED]
+  Point-in-time: 12 sources, latest published 2023-12-01; latest print Q3 2023 (Nov 2)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2023E revenues, USD bn  →  FY2025E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2023E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Diabetes                  $    17.1  $  17.1  $  17.9      +0.0      +0.8
+    +9.7% revenues in FY22
+  Oncology                  $     6.7  $   6.7  $   7.0      +0.0      +0.3
+    -1.3% revenues in FY22
+  Other                     $     4.1  $   4.1  $   4.3      +0.0      +0.2
+    -14.8% revenues in FY22
+  Immunology                $     3.9  $   3.9  $   4.1      +0.0      +0.2
+    -0.5% revenues in FY22
+  Neuroscience              $     1.8  $   1.8  $   1.9      +0.0      +0.1
+    -18.6% revenues in FY22
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    33.6  $  33.6  $  35.2      +0.0      +1.6
+  FY2023E = FY22 $28.54B × (1 + 17.9%: FY23 revenue guide midpoint); split pro rata to FY22 revenue by product class (FY2022 10-K, U.S. plus outside the U.S.)
+  Q3 2023 (Nov 2): revenues $9.50B +36.8%; U.S. +21.0%; international +64.0%; gross margin 80.42% (+316.5bp);
+  pre-tax margin 4.50% (-1805.5bp); EPS $-0.06 vs $1.61
+  company-wide U.S. and outside-U.S. sales: U.S. +21% to $5.37B, outside the U.S. +64% to $4.13B, as the release states them (the dollars to $0.01B); total revenue growth ex-FX +36% (37% less the +1 points of exchange rates the release states); reported EPS $(0.06) against $1.61; the company's non-GAAP figure $0.10 against $1.98 is shown only (it also removes the amortization of intangible assets, which recurs, and other listed items; from Q1 2022 it keeps acquired in-process research and development (the 8-K of 2022-04-14); the history is GAAP: the NKE FY2007, PFE and BMY rule); a loss quarter on the acquired IPR&D charges, with revenue from the sale of rights for the olanzapine portfolio, as published ('EPS in Q3 2023 was inclusive of an increase of $1.22 of EPS associated with the sale of rights for the olanzapine portfolio, as well as a decrease of $3.29 from acquired IPR&D charges, compared with a decrease of $0.06 from acquired IPR&D charges in Q3 2022.')
+  FY23 guide (8-K of 2022-12-13, Q4 2022 release, Q1 2023 release, Q2 2023 release, Q3 2023 release): reported EPS $5.95-6.15; the company's adjusted EPS $6.50-6.70 (shown only: it excludes amortization of intangible assets, net losses on investments in equity securities (the amortization recurs; from Q1 2022 acquired in-process research and development stays in both ranges)); revenue $33.4-33.9B (+17-18.8% on FY22's $28.54B)
+
+  FY2023E EPS check:  $33.6B × 23.9% pre-tax × (1−8.3%) ÷ 0.900B  =  $8.17  (FY2023E reported EPS, guide midpoint)
+  FY2025E BEAR check: $33.6B × 23.9% ÷ 0.863B  =  $8.51  (scenario $1.31)
+  FY2025E BULL check: $35.2B × 24.3% ÷ 0.863B  =  $9.06  (scenario $8.70)
+  Every 1pp of pre-tax margin ≈ $0.34 EPS ≈ $11/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  U.S. revenue growth                -31.0%  ≥-11.0%    ≥8.0%   ≥25.0%    +21.0%  ▲ BULL  ███░
+  International revenue growth        -7.0%    ≥1.0%    ≥9.0%   ≥19.0%    +64.0%  ★ XBULL  ████
+  Revenue growth                     -16.0%   ≥-4.0%    ≥8.0%   ≥16.0%    +36.8%  ★ XBULL  ████
+  Gross margin change               -450.0bp  ≥-200.0bp  ≥50.0bp  ≥250.0bp  +316.5bp  ★ XBULL  ████
+  Pre-tax margin change             -1400.0bp  ≥-750.0bp  ≥-90.0bp  ≥590.0bp  -1805.5bp  ⚠ BEAR  █░░░
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    3.05 / 4.00
+  Market composite:   3.75 / 4.00  (back-solved from $584 + 15% hurdle)
+  SCA adjustment:    +0.10  ·  EPP-distance adj -0.30  →  Adj composite 2.85  →  Gap -0.90  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY22 total revenue +0.8% (U.S. +8.2%, outside the U.S. -10.0%), Diabetes 51% of the product classes; Q3 gross margin 80.42% (+316.5bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 96.5x FY23E vs a 31.1x 10-yr ex-FY17 median (99th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: FY23 revenue guide +17-18.8% vs a 7.4% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  FY22 year-end cash and short-term investments $2.21B, FY22 free cash flow $5.23B, dividend $4.52 a year, 'In 2022, we repurchased $1.50 billion of shares under our $5.00 billion share repurchase program authorized in May 2021.' (FY2022 10-K)  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  U.S. revenue growth                 +21.0%    -31.0%  -52.0%  Generic entry as U.S. patents expire
+  International revenue growth        +64.0%     -7.0%  -71.0%  Price cuts, generics and currency abroad
+  Revenue growth                      +36.8%    -16.0%  -52.8%  Exclusivity losses outrun new products
+  Gross margin change               +316.5bp  -450.0bp  -766.5bp  Write-offs and mix raise cost of sales
+  Pre-tax margin change             -1805.5bp  -1400.0bp  +405.5bp  Charges and deleverage on falling sales
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$105  (model)  /  $29 (defined)
+  Bear probability (proxy model):  4.4%
+
+  KEY TRIGGER: U.S. revenue growth went from +41.0% (Q2 2023) to +21.0% (Q3 2023);
+  the bear case needs U.S. exclusivity losses that international growth (+64.0% now)
+  and the cost base no longer absorb. Patent expirations drive the decline, by the company's own account; the bear needs
+  new products and cost cuts to stop covering them.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $6.05  (FY2023E reported EPS, guide midpoint)
+  Min viable P/E at panic:          25x  [median of calendar-year P/E lows: 2013 11.4x, 2014 25.2x, 2015 29.0x, 2016 25.7x, 2018 24.3x, 2019 21.5x, 2020 17.5x, 2021 26.8x, 2022 34.0x, 2023 51.3x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $151/share
+  Current $584 vs Updated EPP $151:  +286%  ⚠ far above floor — large drawdown room
+  Bear $29 vs Updated EPP $151:  -81%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.30 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  U.S. revenue growth                        -11.0      -32.0   BASE floor (vs +21 now)
+  International revenue growth                 1.0      -63.0   BASE floor (vs +64 now)
+  Revenue growth                              -4.0      -40.8   BASE floor (vs +37 now)
+  Gross margin change                       -200.0     -516.5   BASE floor (vs +316 now)
+  Pre-tax margin change                     -750.0    +1055.5   BASE floor (vs -1806 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $6.05 × (1+17.9%)² = $8.42
+  At 31x P/E (conservative):  $261/share
+  + Cumul. dividends (2yr):  +$9.31/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $261  (▼323 from $584)
+  Conservative total return:  -54% over 2yr  = -27%/yr
+
+  17.9% EPS growth is what is left once the premium multiple (96.5x)
+  mean-reverts to 31x. Breakeven at 31x needs FY2025E EPS of $18.54,
+  i.e. 75.1%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $309.20  –  $629.97  (at 86th pct of range)
+  Annual dividend:      $4.52/share  (yield 0.8%)
+  Realized vol (1yr):   28% annualized
+  Beta vs broad market: 0.45
+  1-sigma range (1yr):  $420  –  $748  ($584 ± 28%)
+  2-sigma range (1yr):  $256  –  $912
+  ────────────────────────────────────────────────────────────
+  Bear $29 requires:  ~3.4σ price move  (unusual — requires fundamental break)
+  A research-based pharmaceutical company with a 0.5 beta: the stock is +88% off its March
+  low while U.S. revenue growth went from +41.0% (Q2 2023) to +21.0% (Q3 2023).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        1.31  22.4x  $     29     4.4%      1.2%    +3.1pp  EPS -53.5%/yr (worst year FY13-FY22 ex-FY17, capped at 0%); P/E to its 10th pct
+  BASE        8.70  31.1x  $    271    15.2%      4.3%   +10.9pp  EPS +19.9%/yr (FY23 guide + margin + buyback); P/E at its 10-yr ex-FY17 median
+  BULL        8.70  37.9x  $    330    53.1%     15.0%   +38.1pp  EPS +19.9%/yr (FY13-FY22 ex-FY17 CAGR); P/E holds its 75th pct
+  XBULL      13.47  53.4x  $    719    27.3%     79.5%   -52.2pp  EPS +49.2%/yr (best 2-yr run FY13-FY22 ex-FY17); P/E at its 90th pct
+
+  Proxy EV (2yr): $414  /  Market EV: $633  /  Current: $584
+  Conservative EV (2yr, ④): $261 + $9.31 divs = $270 total value
+  Downside (→ Bear $29): 95.0%   Upside (→ Bull $330): -43.5%   Ratio B infx  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $584 the market needs $772 in two years —
+  above the BULL case. That is a market composite of 3.75 against a model
+  read of 2.85: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                        infx    +286%    -0.90  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)      infx    +286%    -0.34  MODESTLY OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx    +286%    -1.08  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                           infx    +286%    -0.92  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                           infx    +286%    -0.90  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)              infx    +286%    -0.60  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                  infx    +245%    -0.90  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                     infx    +286%    -0.90  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 2023 print (early February) — the next read on U.S. revenues (+21.0% now) and the guide
+  (2) Gross margin — +316.5bp in Q3 2023: cost of sales against the mix lost to generics, what must hold if U.S. revenues do not
+  (3) FY23 reported EPS guide $5.95-6.15 (Q3 2023 release)
+  (4) Pre-tax margin — 4.50% in Q3 2023 (-1805.5bp): where in-process R&D, restructuring and litigation charges land
+  (5) Capital return at 97x — the release reports no share repurchases: management's own read of the multiple
+  ✕ AVOID  |  EPP floor $151  |  ADD below ~$230  |  TRIM above $330
+════════════════════════════════════════════════════════════════════════
+

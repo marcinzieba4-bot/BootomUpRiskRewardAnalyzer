@@ -1,0 +1,286 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "UNH",
+ "company": "UnitedHealth Group Incorporated",
+ "as_of": "2012-08-31",
+ "price_date": "2012-08-31",
+ "price": 54.3,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); premium revenue, medical care ratio, fee revenue, operating cost ratio and operating margin signals with UnitedHealth Group's rule-T thresholds",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'UnitedHealth Group is a diversified health and well-being company, whose mission is to help people live healthier lives and help make health care work better.' 'If we fail to effectively estimate, price for and manage our medical costs, the profitability of our risk-based products and services could decline and could materially and adversely affect our results of operations, financial position and cash flows.' 'Premium revenues from risk-based benefits products comprise approximately 90% of our total consolidated revenues.'; no disruption theme in taxonomy_eras.json is live for a health benefits company on this date (OFFSHORE is scoped to IT services), so the watch list is empty and these words stay here (the PEP obesity rule)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "'UnitedHealth Group is a diversified health and well-being company, whose mission is to help people live healthier lives and help make health care work better.' 'If we fail to effectively estimate, price for and manage our medical costs, the profitability of our risk-based products and services could decline and could materially and adversely affect our results of operations, financial position and cash flows.' 'Premium revenues from risk-based benefits products comprise approximately 90% of our total consolidated revenues.'; no disruption theme in taxonomy_eras.json is live for a health benefits company on this date (OFFSHORE is scoped to IT services), so the watch list is empty and these words stay here (the PEP obesity rule). durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.35x; -16% to EPP floor; model-vs-market gap +0.73; conservative 2yr +62%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.35,
+  "ratio_b_fmt": "0.35x",
+  "epp": 64.35,
+  "epp_gap_pct": -15.6,
+  "epp_adj": 0.2,
+  "proxy_composite": 2.0,
+  "sca": 0.171,
+  "adj_composite": 2.371,
+  "market_composite": 1.64,
+  "adj_gap": 0.73,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 62.0,
+  "scenarios": {
+   "BEAR": {
+    "eps": 3.52,
+    "pe": 7.9,
+    "price": 27.81,
+    "desc": "EPS -15.7%/yr (worst year FY02-FY11, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 5.96,
+    "pe": 15.0,
+    "price": 89.4,
+    "desc": "EPS +9.8%/yr (FY12 guide + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 7.07,
+    "pe": 18.3,
+    "price": 129.38,
+    "desc": "EPS +19.5%/yr (FY02-FY11 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 9.54,
+    "pe": 21.7,
+    "price": 207.02,
+    "desc": "EPS +38.8%/yr (best 2-yr run FY02-FY11, at least BULL); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.35,
+   "epp_gap_pct": -15.6,
+   "adj_gap": 0.73,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 62.0,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.22,
+   "epp_gap_pct": -15.6,
+   "adj_gap": 0.92,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 62.0,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 0.55,
+   "epp_gap_pct": -15.6,
+   "adj_gap": 0.17,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 62.0,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.32,
+   "epp_gap_pct": -15.6,
+   "adj_gap": 0.76,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 62.0,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.38,
+   "epp_gap_pct": -15.6,
+   "adj_gap": 0.69,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 62.0,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.35,
+   "epp_gap_pct": -15.6,
+   "adj_gap": 1.03,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 62.0,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.35,
+   "epp_gap_pct": -31.4,
+   "adj_gap": 0.73,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 62.0,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.35,
+   "epp_gap_pct": -15.6,
+   "adj_gap": 0.83,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 62.0,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "UNH (retrospective, 2012-08-31) ◉ BUY — Ratio B 0.35x (48.8% downside to Bear $27.81 / +138.3% upside to Bull $129.38) | Adj composite 2.37 vs market 1.64: gap +0.73 [UNDERVALUED] | -16% above the EPP floor $64.35 (13x FY12E $4.95) | Conservative 2-yr case: +62.0% total (+31.0%/yr) | At 11.0x FY12E the 15% hurdle price $71.81 sits at or below the BASE case; revenue +8.0% YoY in Q2 2012, forward revenues +8% (FY12 revenue guide); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "UH9",
+   "published": "2007-03-06",
+   "filed": "2007-03-06 06:18 ET, before the open",
+   "title": "UnitedHealth Group FY2006 10-K (restating 2002-2005)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000119312507046861/d10k.htm",
+   "supports": "history vintage FY2006 (2002-2006 restated, FAS 123R); rule T: 2003-2006"
+  },
+  {
+   "id": "UH16",
+   "published": "2008-01-22",
+   "filed": "2008-01-22 06:13 ET, before the open",
+   "title": "UnitedHealth Group Q4 2007 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000119312508009086/dex991.htm",
+   "supports": "Q4 2007 print and FY2007 actuals (EPS excluding the IRS Section 409A charges); FY2008 guide"
+  },
+  {
+   "id": "UH17",
+   "published": "2008-02-22",
+   "filed": "2008-02-21 17:12 ET, after the close",
+   "title": "UnitedHealth Group FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000119312508035391/d10k.htm",
+   "supports": "history vintage FY2007"
+  },
+  {
+   "id": "UH23",
+   "published": "2009-01-22",
+   "filed": "2009-01-22 06:09 ET, before the open",
+   "title": "UnitedHealth Group Q4 2008 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000119312509009268/dex991.htm",
+   "supports": "Q4 2008 print and FY2008 actuals (EPS excluding special items); FY2009 guide"
+  },
+  {
+   "id": "UH24",
+   "published": "2009-02-12",
+   "filed": "2009-02-11 17:25 ET, after the close",
+   "title": "UnitedHealth Group FY2008 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000119312509025587/d10k.htm",
+   "supports": "history vintage FY2008"
+  },
+  {
+   "id": "UH30",
+   "published": "2010-02-11",
+   "filed": "2010-02-10 16:37 ET, after the close",
+   "title": "UnitedHealth Group FY2009 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000119312510027229/d10k.htm",
+   "supports": "history vintage FY2009"
+  },
+  {
+   "id": "UH36",
+   "published": "2011-02-11",
+   "filed": "2011-02-10 16:04 ET, after the close",
+   "title": "UnitedHealth Group FY2010 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000119312511030615/d10k.htm",
+   "supports": "history vintage FY2010"
+  },
+  {
+   "id": "UH43",
+   "published": "2012-02-09",
+   "filed": "2012-02-08 19:46 ET, after the close",
+   "title": "UnitedHealth Group FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176612000009/unh2011123110k.htm",
+   "supports": "history vintage FY2011"
+  },
+  {
+   "id": "UH42",
+   "published": "2012-01-19",
+   "filed": "2012-01-19 06:06 ET, before the open",
+   "title": "UnitedHealth Group Q4 2011 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176612000004/a2011q4exhibit991.htm",
+   "supports": "Q4 2011 print and FY2011 actuals (GAAP); FY2012 guide"
+  },
+  {
+   "id": "UH44",
+   "published": "2012-04-19",
+   "filed": "2012-04-19 06:10 ET, before the open",
+   "title": "UnitedHealth Group Q1 2012 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176612000012/a2012q1exhibit991.htm",
+   "supports": "Q1 2012 print; FY2012 guide"
+  },
+  {
+   "id": "UH45",
+   "published": "2012-07-19",
+   "filed": "2012-07-19 06:10 ET, before the open",
+   "title": "UnitedHealth Group Q2 2012 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176612000023/a2012q2exhibit991.htm",
+   "supports": "Q2 2012 print; FY2012 guide; the $0.85 annual dividend rate"
+  },
+  {
+   "id": "UH41",
+   "published": "2011-11-28",
+   "filed": "2011-11-28 07:10 ET, before the open",
+   "title": "UnitedHealth Group 8-K of 2011-11-28 (investor conference release, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000129993311003431/exhibit1.htm",
+   "supports": "FY2011 and FY2012 guides"
+  },
+  {
+   "id": "UH3",
+   "published": "2001-04-02",
+   "filed": "2001-04-02 (EDGAR gives the filing date only)",
+   "title": "UnitedHealth Group FY2000 10-K/A (annual report, Exhibit 13)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000091205701506576/a2044205zex-13.txt",
+   "supports": "rule T: 1999 against 1998; 1998 diluted shares; the 2000 two-for-one split"
+  },
+  {
+   "id": "UH6",
+   "published": "2004-03-16",
+   "filed": "2004-03-15 17:10 ET, after the close",
+   "title": "UnitedHealth Group FY2003 10-K (annual report, Exhibit 13)",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000095013404003522/c82635exv13.htm",
+   "supports": "1999 and 2000 EPS excluding the UnitedHealth Capital items; 1999 revenues; rule T: 2002 against 2001; 2001 diluted shares; the 2003 split"
+  },
+  {
+   "id": "UH8",
+   "published": "2006-02-27",
+   "filed": "2006-02-24 17:00 ET, after the close",
+   "title": "UnitedHealth Group FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/731766/000119312506038949/d10k.htm",
+   "supports": "2001 EPS and revenues (five-year summary, after the 2005 split); the 2005 split"
+  },
+  {
+   "id": "Y0",
+   "published": "2012-08-31",
+   "title": "Yahoo Finance daily prices, UNH and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/UNH/history",
+   "supports": "close $54.30 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution from 2002-09-03"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-24"
+}

@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  UNH  ·  UnitedHealth Group Incorporated  ·  $492.09  ·  RETROSPECTIVE as of 2023-04-28
+  Signal: ◎ ACCUMULATE   Ratio B: 1.00x   Adj gap: -0.51  [OVERVALUED]
+  Point-in-time: 15 sources, latest published 2023-04-28; latest print Q1 2023 (Apr 14)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2023E revenue, USD bn  →  FY2025E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2023E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  UnitedHealthcare              $205.69  $205.69  $255.36    +0.00   +49.67
+    +12.0% revenues in FY22
+  Optum Health                  $ 58.62  $58.62  $72.77    +0.00   +14.15
+    +31.6% revenues in FY22
+  Optum Insight                 $ 12.01  $12.01  $14.91    +0.00    +2.90
+    +19.5% revenues in FY22
+  Optum Rx                      $ 82.18  $82.18  $102.02    +0.00   +19.84
+    +9.3% revenues in FY22
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $358.50  $358.50  $445.06    +0.00   +86.56
+  FY2023E = FY22 $324.162B × (1 + 10.6%: FY23 revenue guide midpoint (Q4 2022 release)); split pro rata to FY22 segment revenues before eliminations (FY22 growth)
+  Q1 2023 (Apr 14): revenues $91.931B +14.7% YoY (+11.0% QoQ); premiums +13.6%; services and products +16.8%;
+  medical care ratio 82.22% (+24.3bp); operating cost ratio 14.82% (+59.6bp); operating margin 8.80% (+12.4bp); EPS $5.95 vs $5.27
+  Revenue: revenues $91,931M vs $80,149M a year earlier, $82,787M the quarter before (premiums, products, services and investment and other income); premiums $72,786M (+13.6%), products $10,267M and services $8,080M (+16.8% together), investment and other income $798M (+117.4%); diluted EPS attributable to UnitedHealth Group common shareholders $5.95 vs $5.27 a year earlier (GAAP); adjusted EPS $6.26 vs $5.49 (it excludes the amortization of acquisition-related intangible assets, which recurs: not used); diluted shares 943M vs 954M a year earlier
+  FY23 guide (8-K of 2022-11-28, Q4 2022 release, Q1 2023 release): EPS $23.25-23.75 (Q1 2023 release: as published (GAAP); the adjusted $24.50-25.00 also excludes the amortization of acquisition-related intangible assets, which recurs: not used); revenue $357.0-360.0B (+10.1-11.1% on FY22's $324.16B; Q4 2022 release); no operating margin guide in numbers; no revenue figure: the $357-360B range stands
+
+  FY2023E EPS check:  $358.500B × 8.1% pre-tax × (1−21.6%) ÷ 0.943B  =  $24.22  (FY2023E EPS, guide midpoint ($23.25-23.75, Q1 2023 release))
+  FY2025E BEAR check: $358.500B × 8.1% ÷ 0.927B  =  $24.62  (scenario $23.50)
+  FY2025E BULL check: $445.060B × 8.5% ÷ 0.927B  =  $32.07  (scenario $31.71)
+  Every 1pp of pre-tax margin ≈ $2.979 EPS ≈ $56.59/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Premium revenue growth                 -6.0%     ≥6.0%    ≥18.0%    ≥56.0%    +13.6%  ◦ BASE  ██░░
+  Medical care ratio                  +630.0bp  ≤290.0bp  ≤-60.0bp  ≤-230.0bp   +24.3bp  ◦ BASE  ██░░
+  Fee revenue (services+products)        -8.0%     ≥2.0%    ≥12.0%    ≥31.0%    +16.8%  ▲ BULL  ███░
+  Operating cost ratio                +160.0bp   ≤60.0bp  ≤-50.0bp  ≤-300.0bp   +59.6bp  ◦ BASE  ██░░
+  Operating margin change             -1400.0bp  ≥-650.0bp   ≥90.0bp  ≥510.0bp   +12.4bp  ◦ BASE  ██░░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.15 / 4.00
+  Market composite:   2.66 / 4.00  (back-solved from $492.09 + 15% hurdle)
+  SCA adjustment:    -0.00  ·  EPP-distance adj +0.00  →  Adj composite 2.15  →  Gap -0.51  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY22 revenues +12.7%, premiums +13.7%, medical care ratio 81.99%; Q1 medical care ratio 82.22% (+24bp YoY)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 20.9x FY23E vs a 19.0x 10-yr median (75th percentile of its own range)  (-0.42 × 25%  =  -0.105)
+    -  Growth vs own history: FY23 revenue guide +10.1-11.1% vs a 11.8% 9-yr median  (-0.12 × 20%  =  -0.024)
+    +  FY22 cash and investments $71.64B, cash flows from operations $26.21B, debt-to-total-capital 41.4%, dividend $6.60 a year  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Premium revenue growth                +13.6%     -6.0%  -19.6%  Risk-based membership and premium yie…
+  Medical care ratio                   +24.3bp  +630.0bp  +605.7bp  Medical costs outrun premium rates
+  Fee revenue (services+products)       +16.8%     -8.0%  -24.8%  Fee-based clients and services shrink
+  Operating cost ratio                 +59.6bp  +160.0bp  +100.4bp  Administrative costs outgrow revenues
+  Operating margin change              +12.4bp  -1400.0bp  -1412.4bp  Medical and operating costs outrun re…
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$397.57  (model)  /  $321.95 (defined)
+  Bear probability (proxy model):  15.5%
+
+  KEY TRIGGER: revenue went from +12.3% (Q4 2022) to +14.7% YoY (Q1 2023), +11.0% on the quarter before;
+  the bear case needs the medical care ratio (+24.3bp YoY now) rising further
+  and premium growth (+13.6% YoY) fading as risk membership shrinks. Medical cost trends that outrun premium rates show up in the medical care ratio first;
+  charges land in operating costs.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $23.50  (FY2023E EPS, guide midpoint ($23.25-23.75, Q1 2023 release))
+  Min viable P/E at panic:          15x  [median of calendar-year P/E lows: 2013 10.7x, 2014 12.2x, 2015 16.5x, 2016 15.1x, 2017 14.7x, 2018 17.4x, 2019 15.0x, 2020 12.2x, 2021 17.9x, 2022 21.3x, 2023 19.6x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $352.50/share
+  Current $492.09 vs Updated EPP $352.50:  +40%  moderate distance to floor
+  Bear $321.95 vs Updated EPP $352.50:  -9%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Premium revenue growth                         6.0       -7.6   BASE floor (vs +14 now)
+  Medical care ratio                           290.0     +265.7   BASE floor (vs +24 now)
+  Fee revenue (services+products)                2.0      -14.8   BASE floor (vs +17 now)
+  Operating cost ratio                          60.0       +0.4   BASE floor (vs +60 now)
+  Operating margin change                     -650.0     -662.4   BASE floor (vs +12 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $23.50 × (1+9.4%)² = $28.14
+  At 19x P/E (conservative):  $534.64/share
+  + Cumul. dividends (2yr):  +$13.60/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $534.64  (▲42.55 from $492.09)
+  Conservative total return:  +11% over 2yr  = +6%/yr
+
+  9.4% EPS growth is what is left once the premium multiple (20.9x)
+  mean-reverts to 19x. Breakeven at 19x needs FY2025E EPS of $25.18,
+  i.e. 3.5%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $449.70  –  $558.10  (at 39th pct of range)
+  Annual dividend:      $6.60/share  (yield 1.3%)
+  Realized vol:         24% annualized (1-yr daily log returns)
+  Beta vs broad market: 0.52
+  1-sigma range (1yr):  $373.99  –  $610.19  ($492.09 ± 24%)
+  2-sigma range (1yr):  $255.89  –  $728.29
+  ────────────────────────────────────────────────────────────
+  Bear $321.95 requires:  ~1.4σ price move  (within normal vol range)
+  A health benefits company whose earnings follow medical cost trends against premium rates: the stock is +9% off its June
+  low (52 weeks) while revenue went from +12.3% (Q4 2022) to +14.7% YoY (Q1 2023), +11.0% on the quarter before.
+  Near the low: the multiple has not run ahead of the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR       23.50   13.7x  $ 321.95    15.5%      6.6%    +8.9pp  EPS +0.0%/yr (worst year FY13-FY22, capped at 0%); P/E to its 10th pct
+  BASE       29.18   19.0x  $ 554.42    54.1%     22.9%   +31.2pp  EPS +11.4%/yr (FY23 guide + margin + buyback); P/E at its 10-yr median
+  BULL       31.71   20.9x  $ 662.74    25.6%     59.3%   -33.7pp  EPS +16.2%/yr (FY13-FY22 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL      41.92   23.2x  $ 972.54     4.8%     11.2%    -6.4pp  EPS +33.6%/yr (best 2-yr run FY13-FY22, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $566.25  /  Market EV: $650.21  /  Current: $492.09
+  Conservative EV (2yr, ④): $534.64 + $13.60 divs = $548.24 total value
+  Downside (→ Bear $321.95): 34.6%   Upside (→ Bull $662.74): 34.7%   Ratio B 1.00x  →  ◎ ACCUMULATE
+
+  To earn the 15%/yr hurdle from $492.09 the market needs $650.79 in two years —
+  between the BASE and BULL cases. That is a market composite of 2.66 against a model
+  read of 2.15: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       1.00x     +40%    -0.51  OVERVALUED / ACCUMULATE
+  Multiples one band richer (p25/p75/p90/max)     0.41x     +40%    -0.08  FAIRLY VALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     1.69x     +40%    -0.92  OVERVALUED / WATCHLIST
+  Scenario EPS +1.5pp/yr                          0.84x     +40%    -0.39  MODESTLY OVERVALUED / ACCUMULATE
+  Scenario EPS -1.5pp/yr                          1.19x     +40%    -0.66  OVERVALUED / WATCHLIST
+  Structural read +0.30 (bullish SCA)             1.00x     +40%    -0.21  MODESTLY OVERVALUED / ACCUMULATE
+  EPP P/E +3 turns (softer floor)                 1.00x     +16%    -0.51  OVERVALUED / ACCUMULATE
+  Hurdle 10%/yr instead of 15%                    1.00x     +40%    -0.18  FAIRLY VALUED / ACCUMULATE
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 2023 print (the quarter ends in Jun) — revenue against the FY23 revenue guide: +10.1-11.1% YoY
+  (2) Medical costs — the medical care ratio was 82.22% in Q1 2023 (+24.3bp YoY): what must hold for premiums to turn into earnings
+  (3) The FY23 EPS guide — $23.25-23.75 (Q1 2023 release)
+  (4) Operating costs — operating cost ratio 14.82% in Q1 2023 (+59.6bp YoY): where legal, restructuring and other charges land
+  (5) Capital at 21x — dividend $6.60 a year, paid quarterly: 'In June 2022, the Company’s Board of Directors increased the Company’s quarterly cash dividend to shareholders to an annual rate of $6.60 compared to $5.80 per share, which the Company had paid since June 2021.'; diluted shares 943M vs 954M a year earlier
+  ◎ ACCUMULATE  |  EPP floor $352.50  |  ADD below ~$471.26  |  TRIM above $662.74
+════════════════════════════════════════════════════════════════════════
+

@@ -1,0 +1,149 @@
+
+════════════════════════════════════════════════════════════════════════
+  CTVA  ·  Corteva, Inc.  ·  $63.70  ·  RETROSPECTIVE as of 2023-03-03
+  Signal: ◐ WATCHLIST   Ratio B: 1.41x   Adj gap: -0.13  [FAIRLY VALUED]
+  Point-in-time: 6 sources, latest published 2023-03-03; latest print Q4 2022 (Feb 1)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2023E net sales, USD bn  →  FY2025E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2023E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Seed                      $     9.4  $   9.4  $  11.6      +0.0      +2.2
+    +6.9% net sales in FY22
+  Crop Protection           $     8.9  $   8.9  $  10.9      +0.0      +2.0
+    +16.9% net sales in FY22
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    18.3  $  18.3  $  22.5      +0.0      +4.2
+  FY2023E = FY22 $17.45B × (1 + 4.6%: FY2023 net sales guide $18.1-18.4B (Q4 2022 release) on FY22 $17.455B, no Q1 2023 guide: the guide's midpoint); split pro rata to FY22 segment net sales (FY2022 10-K)
+  Q4 2022 (Feb 1): net sales $3.83B +9.9%; organic: Seed +18%, Crop Protection +7%; price +12%;
+  gross margin 34.38% (-146.5bp); pre-tax margin -5.31% (-1234.9bp); EPS $(0.06) vs $0.21
+  Activity: net sales $3,825M vs $3,479M; organic +11% (price +12%, volume -1%, currency -1%); by segment: Seed $1,646M vs $1,392M, organic +18%; Crop Protection $2,179M vs $2,087M, organic +7%; cost of goods sold $2,510M vs $2,232M; income from continuing operations before income taxes $(203)M vs $245M; EPS GAAP, diluted from continuing operations, $(0.06) against $0.21 a year earlier
+  FY23: net sales guided in the Q4 2022 release: net sales $18.1-18.4B (BASE takes the guide's growth on FY22 net sales; no GAAP EPS or margin guide); the Q4 2022 release guides Operating EBITDA $3.40-3.60B; Operating EPS $2.70-2.90 (non-GAAP, display only: the history is GAAP)
+
+  FY2023E EPS check:  $18.3B × 8.2% pre-tax × (1−14.7%) ÷ 0.715B  =  $1.78  (FY2023E: no reported (GAAP) EPS guide, FY22's $1.66 stands)
+  FY2025E BEAR check: $18.3B × 8.2% ÷ 0.703B  =  $1.82  (scenario $0.77)
+  FY2025E BULL check: $22.5B × 8.6% ÷ 0.703B  =  $2.34  (scenario $2.81)
+  Every 1pp of pre-tax margin ≈ $0.22 EPS ≈ $6/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Seed organic sales growth           -4.0%   ≥-1.0%    ≥3.0%    ≥6.0%    +18.0%  ★ XBULL  ████
+  Crop Protection organic growth      -4.0%    ≥1.0%    ≥6.0%   ≥11.0%     +7.0%  ▲ BULL  ███░
+  Price (local price & mix)           -1.0%    ≥0.0%    ≥2.0%    ≥3.0%    +12.0%  ★ XBULL  ████
+  Gross margin change               -70.0bp  ≥210.0bp  ≥490.0bp  ≥770.0bp  -146.5bp  ⚠ BEAR  █░░░
+  Pre-tax margin change             -440.0bp  ≥130.0bp  ≥700.0bp  ≥4540.0bp  -1234.9bp  ⚠ BEAR  █░░░
+  Disruption theme: none in scope    +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.60 / 4.00
+  Market composite:   2.67 / 4.00  (back-solved from $64 + 15% hurdle)
+  SCA adjustment:    +0.04  ·  EPP-distance adj -0.10  →  Adj composite 2.54  →  Gap -0.13  [FAIRLY VALUED]
+
+  Structural factors:
+    +  Franchise: FY22 net sales +11.5%, Seed +6.9%, Crop Protection +16.9%; Q4 gross margin 34.38% (-146bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 38.4x FY23E vs a 29.1x 3.2-yr ex-FY19 median (92nd percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: FY2023 net sales guide $18.1-18.4B (Q4 2022 release) on FY22 $17.455B, no Q1 2023 guide +3.7-5.4% vs a 2.7% 5-yr median  (+0.19 × 20%  =  +0.038)
+    +  Cash and marketable securities $3.31B, FY22 free cash flow $0.27B, dividend $0.60 a year, $1,000M of common stock repurchased and $418M of dividends paid in FY22  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Seed organic sales growth           +18.0%     -4.0%  -22.0%  Farmers trade down or plant less
+  Crop Protection organic growth       +7.0%     -4.0%  -11.0%  The channel destocks; generics take s…
+  Price (local price & mix)           +12.0%     -1.0%  -13.0%  Pricing gives way to competition
+  Gross margin change               -146.5bp   -70.0bp  +76.5bp  Input costs outrun price and mix
+  Pre-tax margin change             -1234.9bp  -440.0bp  +794.9bp  Charges and fixed costs as sales fall
+  Disruption theme: none in scope     +2.0/4    +1.0/4  -1.0/4  No live disruption theme covers seed …
+
+  Bear composite:  1.00  →  Bear scenario price: ~$28  (model)  /  $14 (defined)
+  Bear probability (proxy model):  7.5%
+
+  KEY TRIGGER: Seed organic growth went from +21.0% (Q3 2022) to +18.0% (Q4 2022);
+  the bear case needs farm demand to fall far enough that Crop Protection (+7.0% now)
+  and price (+12.0% now) give way as well. Planted area, farm income and the channel drive sales, by the company's own account;
+  the bear needs them to fall, not one quarter's timing.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $1.66  (FY2023E: no reported (GAAP) EPS guide, FY22's $1.66 stands)
+  Min viable P/E at panic:          24x  [median of calendar-year P/E lows: 2020 21.2x, 2021 15.7x, 2022 27.4x, 2023 35.5x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $40/share
+  Current $64 vs Updated EPP $40:  +60%  ⚠ far above floor — large drawdown room
+  Bear $14 vs Updated EPP $40:  -65%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Seed organic sales growth                   -1.0      -19.0   BASE floor (vs +18 now)
+  Crop Protection organic growth               1.0       -6.0   BASE floor (vs +7 now)
+  Price (local price & mix)                    0.0      -12.0   BASE floor (vs +12 now)
+  Gross margin change                        210.0     +356.5   BASE floor (vs -146 now)
+  Pre-tax margin change                      130.0    +1364.9   BASE floor (vs -1235 now)
+  Disruption theme: none in scope              2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $1.66 × (1+3.4%)² = $1.77
+  At 29x P/E (conservative):  $51/share
+  + Cumul. dividends (2yr):  +$1.24/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $51  (▼12 from $64)
+  Conservative total return:  -17% over 2yr  = -9%/yr
+
+  3.4% EPS growth is what is left once the premium multiple (38.4x)
+  mean-reverts to 29x. Breakeven at 29x needs FY2025E EPS of $2.15,
+  i.e. 13.9%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $49.56  –  $68.43  (at 75th pct of range)
+  Annual dividend:      $0.60/share  (yield 0.9%)
+  Realized vol (1yr):   28% annualized
+  Beta vs broad market: 0.59
+  1-sigma range (1yr):  $46  –  $82  ($64 ± 28%)
+  2-sigma range (1yr):  $27  –  $100
+  ────────────────────────────────────────────────────────────
+  Bear $14 requires:  ~2.7σ price move  (unusual — requires fundamental break)
+  A seed and crop protection company with a 0.6 beta: the stock is +27% off its March
+  low while Seed organic growth went from +21.0% (Q3 2022) to +18.0% (Q4 2022).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        0.77  17.8x  $     14     7.5%      6.4%    +1.1pp  EPS -32.0%/yr (worst year FY20-FY22, capped at 0%); P/E to its 10th pct
+  BASE        1.84  29.1x  $     54    26.3%     22.4%    +3.9pp  EPS +5.4%/yr (FY23 net sales guide + margin + buyback); P/E at its 3.2-yr ex-FY19 median
+  BULL        2.81  35.3x  $     99    55.7%     59.9%    -4.2pp  EPS +30.1%/yr (FY20-FY22 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL       2.81  37.8x  $    106    10.5%     11.3%    -0.8pp  EPS +30.1%/yr (best 2-yr run FY20-FY22, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $82  /  Market EV: $84  /  Current: $64
+  Conservative EV (2yr, ④): $51 + $1.24 divs = $53 total value
+  Downside (→ Bear $14): 78.0%   Upside (→ Bull $99): 55.4%   Ratio B 1.41x  →  ◐ WATCHLIST
+
+  To earn the 15%/yr hurdle from $64 the market needs $84 in two years —
+  between the BASE and BULL cases. That is a market composite of 2.67 against a model
+  read of 2.54: price and numbers roughly agree.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       1.41x     +60%    -0.13  FAIRLY VALUED / WATCHLIST
+  Multiples one band richer (p25/p75/p90/max)     1.15x     +60%    +0.06  FAIRLY VALUED / WATCHLIST
+  Multiples one band cheaper (p5/p25/med/p75)     2.77x     +60%    -0.83  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          1.30x     +60%    -0.07  FAIRLY VALUED / WATCHLIST
+  Scenario EPS -1.5pp/yr                          1.57x     +60%    -0.21  MODESTLY OVERVALUED / WATCHLIST
+  Structural read +0.30 (bullish SCA)             1.41x     +60%    +0.17  FAIRLY VALUED / WATCHLIST
+  EPP P/E +3 turns (softer floor)                 1.41x     +42%    -0.13  FAIRLY VALUED / WATCHLIST
+  Hurdle 10%/yr instead of 15%                    1.41x     +60%    +0.04  FAIRLY VALUED / WATCHLIST
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) the Q1 2023 release — the next read on Seed (+18.0% now) and Crop Protection (+7.0% now) organic growth
+  (2) Price — +12.0% in Q4 2022; gross margin -146.5bp: pricing and mix against input costs
+  (3) The FY23 guide — net sales $18.1-18.4B (Q4 2022 release); Operating EBITDA $3.40-3.60B; Operating EPS $2.70-2.90 (non-GAAP, display only: the history is GAAP)
+  (4) Free cash flow — FY22 cash provided by (used for) operating activities $872M less capital expenditures $605M (FY2022 10-K)
+  (5) Capital return at 38x — $1,000M of common stock repurchased and $418M of dividends paid in FY22: management's own read of the multiple
+  ◐ WATCHLIST  |  EPP floor $40  |  ADD below ~$46  |  TRIM above $99
+════════════════════════════════════════════════════════════════════════
+

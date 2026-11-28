@@ -1,0 +1,149 @@
+
+════════════════════════════════════════════════════════════════════════
+  MU  ·  Micron Technology, Inc.  ·  $3.73  ·  RETROSPECTIVE as of 2009-02-13
+  Signal: ◉ BUY   Ratio B: -0.01x   Adj gap: +1.28  [UNDERVALUED]
+  Point-in-time: 7 sources, latest published 2009-02-13; latest print Q1 FY09 (Dec 23)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2009E revenue, USD bn  →  FY2011E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2009E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Memory                        $  4.74  $ 4.74  $ 5.45    +0.00    +0.71
+    +3.7% revenue in FY08
+  Imaging                       $  0.60  $ 0.60  $ 0.69    +0.00    +0.09
+    -4.9% revenue in FY08
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $  5.34  $ 5.34  $ 6.14    +0.00    +0.80
+  FY2009E = FY08 $5.841B × (1 − 8.7%: the Q1 FY09 revenue growth (no Q2 FY09 guide), YoY, applied to the year (no FY09 revenue guide)); split pro rata to FY08 segment net sales (FY2008 10-K)
+  Q1 FY09 (Dec 23): revenue $1.402B -8.7% YoY (-3.2% QoQ); inventories -38.8%; R&D + SG&A +1.8%;
+  gross margin -32.03% (-3235.1bp); operating margin -47.93% (-3099.3bp); EPS $(0.91) vs $(0.34)
+  Revenue: net sales $1,402M vs $1,535M a year earlier, $1,449M the quarter before; inventories $883M (2008-12-04) vs $1,443M a year earlier (Q1 FY08 10-Q); GAAP diluted EPS $(0.91) vs $(0.34); diluted shares 773.3M; 'These results reflect a non-cash charge to cost of goods sold of $369 million to write down the value of work in process and finished goods inventories of memory products to their estimated market values and a benefit of $157 million from first quarter sales of products that were subject to previous write-downs.'; 'The company’s first quarter of fiscal 2009 included 14 weeks while the company’s fourth quarter and first quarter of fiscal 2008 each included 13 weeks.' (as published; charges stay in)
+  Q2 FY09: no revenue guide in numbers or words in any filing; the latest quarter's revenue growth stands in (the UNP rule); no fiscal-year revenue, EPS or margin guide (the releases estimate fiscal-year capital expenditures only, which method r2 has no input for)
+
+  FY2009E EPS check:  $5.340B × -27.6% pre-tax × (1−-1.1%) ÷ 0.773B  =  $-1.93  (FY2009E: no EPS guide in numbers, FY05's $0.29 stands (FY06, FY07, FY08 excluded))
+  FY2011E BEAR check: $5.340B × -27.6% ÷ 0.842B  =  $-1.77  (scenario $0.29)
+  FY2011E BULL check: $6.140B × -27.2% ÷ 0.842B  =  $-2.00  (scenario $0.42)
+  Every 1pp of pre-tax margin ≈ $0.070 EPS ≈ $2.86/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Revenue growth                        -86.0%   ≥-38.0%     ≥9.0%   ≥147.0%     -8.7%  ◦ BASE  ██░░
+  Gross margin change                 -9420.0bp  ≥-4820.0bp  ≥-230.0bp  ≥3050.0bp  -3235.1bp  ◦ BASE  ██░░
+  Opex growth less revenue            +109.0pp   ≤55.0pp    ≤2.0pp  ≤-102.0pp   +10.5pp  ◦ BASE  ██░░
+  Inventory growth less revenue        +97.0pp   ≤51.0pp    ≤5.0pp  ≤-43.0pp   -30.1pp  ▲ BULL  ███░
+  Operating margin change             -12480.0bp  ≥-6240.0bp    ≥0.0bp  ≥4400.0bp  -3099.3bp  ◦ BASE  ██░░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.15 / 4.00
+  Market composite:   1.22 / 4.00  (back-solved from $3.73 + 15% hurdle)
+  SCA adjustment:    +0.15  ·  EPP-distance adj +0.20  →  Adj composite 2.50  →  Gap +1.28  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY08 net sales +2.7%, gross margin -0.9%; Q1 gross margin -32.03% (-3235bp YoY)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 12.9x FY09E vs a 40.9x 5.5-yr ex-FY06 ex-FY07 ex-FY08 median (9th percentile of its own range)  (+0.50 × 25%  =  +0.125)
+    -  Growth vs own history: Q1 FY09 revenue growth (no Q2 FY09 guide) -8.7% vs a 8.0% 4-yr median  (-0.50 × 20%  =  -0.100)
+    +  Cash and short-term investments $1.028B, long-term debt $2,523M and its current portion $343M (Q1 FY09), FY08 free cash flow $(1.511)B (net cash provided by operating activities $1,018M less expenditures for property, plant and equipment $2,529M), no dividend  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Revenue growth                         -8.7%    -86.0%  -77.3%  Oversupply and falling selling prices…
+  Gross margin change                 -3235.1bp  -9420.0bp  -6184.9bp  Selling prices fall faster than cost …
+  Opex growth less revenue             +10.5pp  +109.0pp  +98.5pp  R&D and SG&A do not come down with re…
+  Inventory growth less revenue        -30.1pp   +97.0pp  +127.1pp  Inventory builds ahead of demand: wri…
+  Operating margin change             -3099.3bp  -12480.0bp  -9380.7bp  Operating leverage works in reverse
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$6.36  (model)  /  $3.86 (defined)
+  Bear probability (proxy model):  15.5%
+
+  KEY TRIGGER: revenue went from +0.8% (Q4 FY08) to -8.7% YoY (Q1 FY09), -3.2% on the quarter before;
+  the bear case needs a downturn in gross margin (-3235.1bp now)
+  and inventories (-30.1pp against revenue) giving way. A memory downturn shows up in average selling prices and inventories
+  first; the bear needs it in gross margin as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $0.29  (FY2009E: no EPS guide in numbers, FY05's $0.29 stands (FY06, FY07, FY08 excluded))
+  Min viable P/E at panic:          32x  [median of calendar-year P/E lows: 2003 47.9x, 2004 38.2x, 2005 32.4x, 2008 5.8x, 2009 9.8x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $9.28/share
+  Current $3.73 vs Updated EPP $9.28:  -60%  ✓ BELOW panic floor — deep-value zone
+  Bear $3.86 vs Updated EPP $9.28:  -58%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Revenue growth                               -38.0      -29.3   BASE floor (vs -9 now)
+  Gross margin change                        -4820.0    -1584.9   BASE floor (vs -3235 now)
+  Opex growth less revenue                      55.0      +44.5   BASE floor (vs +10 now)
+  Inventory growth less revenue                 51.0      +81.1   BASE floor (vs -30 now)
+  Operating margin change                    -6240.0    -3140.7   BASE floor (vs -3099 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $0.29 × (1+0.0%)² = $0.29
+  At 40x P/E (conservative):  $11.60/share
+  + Cumul. dividends (2yr):  +$0.00/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $11.60  (▲7.87 from $3.73)
+  Conservative total return:  +211% over 2yr  = +105%/yr
+
+  At 12.9x the multiple is already near its 40x median, so the conservative
+  case is a growth question: breakeven at 40x needs FY2011E EPS of $0.09,
+  i.e. -43.3%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $1.59  –  $8.97  (at 29th pct of range)
+  Annual dividend:      $0.00/share  (yield 0.0%)
+  Realized vol:         99% annualized (1-yr daily log returns)
+  Beta vs broad market: 1.42
+  1-sigma range (1yr):  $0.04  –  $7.42  ($3.73 ± 99%)
+  2-sigma range (1yr):  $-3.66  –  $11.12
+  ────────────────────────────────────────────────────────────
+  Bear $3.86 requires:  ~-0.0σ price move  (within normal vol range)
+  A memory maker whose selling prices follow industry supply: the stock is +121% off its November
+  low (52 weeks) while revenue went from +0.8% (Q4 FY08) to -8.7% YoY (Q1 FY09), -3.2% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        0.29   13.3x  $   3.86    15.5%     72.2%   -56.7pp  EPS +0.0%/yr (worst year FY04-FY05, capped at 0%); P/E to its 10th pct
+  BASE        0.22   40.9x  $   9.00    54.1%     20.7%   +33.4pp  EPS -13.1%/yr (Q1 revenue YoY + margin + buyback); P/E at its 5.5-yr ex-FY06 ex-FY07 ex-FY08 median
+  BULL        0.42   56.7x  $  23.81    25.6%      5.9%   +19.6pp  EPS +20.8%/yr (FY04-FY05 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL       0.42   63.0x  $  26.46     4.8%      1.1%    +3.7pp  EPS +20.8%/yr (no 2-yr run in FY04-FY05: BULL's rate); P/E at its 90th pct
+
+  Proxy EV (2yr): $12.83  /  Market EV: $6.36  /  Current: $3.73
+  Conservative EV (2yr, ④): $11.60 + $0.00 divs = $11.60 total value
+  Downside (→ Bear $3.86): -3.5%   Upside (→ Bull $23.81): 538.3%   Ratio B -0.01x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $3.73 the market needs $4.93 in two years —
+  at or below the BASE case. That is a market composite of 1.22 against a model
+  read of 2.50: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                      -0.01x     -60%    +1.28  UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)    -0.29x     -60%    +1.50  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.07x     -60%    +1.28  UNDERVALUED / BUY
+  Scenario EPS +1.5pp/yr                         -0.01x     -60%    +1.28  UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                         -0.00x     -60%    +1.28  UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)            -0.01x     -60%    +1.58  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                -0.01x     -63%    +1.28  UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                   -0.01x     -60%    +1.28  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 FY09 print (the quarter ends in early March) — revenue against the Q1 FY09 revenue growth (no Q2 FY09 guide): -8.7% YoY
+  (2) Gross margin — -3235.1bp in Q1 FY09: selling prices against cost per bit, what must hold if revenue does not
+  (3) A Q2 FY09 revenue guide — none: Micron gives no revenue, EPS or margin outlook in any filing
+  (4) Inventories — -38.8% against revenue -8.7% in Q1 FY09 (-30.1pp): write-downs follow if selling prices fall below cost
+  (5) Capital structure at 13x — no dividend ('The Company has not declared or paid cash dividends since 1996 and does not intend to pay cash dividends on its common stock for the foreseeable future.', FY2008 10-K) and no repurchase program
+  ◉ BUY  |  EPP floor $9.28  |  ADD below ~$7.65  |  TRIM above $23.81
+════════════════════════════════════════════════════════════════════════
+

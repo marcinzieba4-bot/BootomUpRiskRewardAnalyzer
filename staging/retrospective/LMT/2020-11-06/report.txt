@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  LMT  ·  Lockheed Martin Corporation  ·  $361.27  ·  RETROSPECTIVE as of 2020-11-06
+  Signal: ◉ BUY   Ratio B: 0.65x   Adj gap: +0.46  [MODESTLY UNDERVALUED]
+  Point-in-time: 15 sources, latest published 2020-11-06; latest print Q3 2020 (Oct 20)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2020E net sales, USD bn  →  FY2022E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Business segment             FY2020E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Aeronautics               $    25.8  $  25.8  $  27.4      +0.0      +1.6
+    +11.5% net sales in FY19
+  Missiles and Fire Contro  $    11.1  $  11.1  $  11.7      +0.0      +0.6
+    +19.7% net sales in FY19
+  Rotary and Mission Syste  $    16.5  $  16.5  $  17.5      +0.0      +1.0
+    +6.2% net sales in FY19
+  Space                     $    11.8  $  11.8  $  12.6      +0.0      +0.8
+    +10.7% net sales in FY19
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    65.2  $  65.2  $  69.2      +0.0      +4.0
+  FY2020E = FY19 $59.81B × (1 + 9.1%: FY20 net sales guide midpoint); split pro rata to FY19 net sales by business segment (FY2019 10-K, Selected Financial Data by Business Segment)
+  Q3 2020 (Oct 20): net sales $16.50B +8.7%; backlog +9.5%; segment operating profit +5.8%;
+  segment margin 10.68% (-29.3bp); diluted EPS $6.25 vs $5.66 (+10.4%)
+  Total backlog $150,447M at the quarter's end against $137,355M at September 29, 2019 (Q3 2019 release) (+9.5%); segment operating profit $1,762M against $1,665M a year earlier (+5.8%), as the releases show them; diluted EPS from continuing operations (the release reports discontinued operations)
+  FY20 guide (Q4 2019 release, Q1 2020 release, Q2 2020 release, Q3 2020 release): net sales $65.25B; diluted EPS from continuing operations $24.45; segment operating profit $7.125B and cash from operations at least $8,000M (display only: no margin is derived from two guided figures); the 'Current Guidance' column (beside 'July 2020 Outlook')
+
+  FY2020E EPS check:  $65.2B × 12.1% pre-tax × (1−14.0%) ÷ 0.281B  =  $24.21  (FY2020E EPS, guide midpoint (Q3 2020 release))
+  FY2022E BEAR check: $65.2B × 12.1% ÷ 0.264B  =  $25.70  (scenario $19.39)
+  FY2022E BULL check: $69.2B × 12.5% ÷ 0.264B  =  $28.18  (scenario $31.42)
+  Every 1pp of pre-tax margin ≈ $2.00 EPS ≈ $34/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Backlog growth                     -14.0%   ≥-7.0%    ≥1.0%   ≥29.0%     +9.5%  ▲ BULL  ███░
+  Net sales growth                   -19.0%   ≥-7.0%    ≥5.0%   ≥20.0%     +8.7%  ▲ BULL  ███░
+  Segment operating profit growth    -18.0%    ≥0.0%   ≥18.0%   ≥22.0%     +5.8%  ◦ BASE  ██░░
+  Diluted EPS growth                  +0.0%   ≥21.0%   ≥41.0%   ≥45.0%    +10.4%  ⚠ BEAR  █░░░
+  Segment operating margin change   -30.0bp  ≥10.0bp  ≥50.0bp  ≥100.0bp   -29.3bp  ⚠ BEAR  █░░░
+  Disruption theme: none in scope    +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.10 / 4.00
+  Market composite:   1.94 / 4.00  (back-solved from $361 + 15% hurdle)
+  SCA adjustment:    +0.30  ·  EPP-distance adj +0.00  →  Adj composite 2.40  →  Gap +0.46  [MODESTLY UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY19 net sales +11.3%, backlog +10.4%, segment operating profit +11.9%; Q3 segment margin 10.68% (-29.3bp)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 14.8x FY20E vs a 16.8x 10-yr median (33rd percentile of its own range)  (+0.28 × 25%  =  +0.070)
+    +  Growth vs own history: FY20 net sales guide +9.1% vs a 1.8% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  FY19 year-end cash and cash equivalents $1.514B, FY19 operating cash flow $7.311B, dividend $10.40 a year, repurchases of common stock $1,200M in 2019 (FY2019 10-K)  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Backlog growth                       +9.5%    -14.0%  -23.5%  Orders stop replacing sales
+  Net sales growth                     +8.7%    -19.0%  -27.7%  Program volume falls
+  Segment operating profit growth      +5.8%    -18.0%  -23.8%  Program profits stop growing
+  Diluted EPS growth                  +10.4%     +0.0%  -10.4%  Pension and tax lines take the gains
+  Segment operating margin change    -29.3bp   -30.0bp  -0.7bp  Program margins slip on fixed-price work
+  Disruption theme: none in scope     +2.0/4    +1.0/4  -1.0/4  No live disruption theme covers defen…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$297  (model)  /  $200 (defined)
+  Bear probability (proxy model):  16.3%
+
+  KEY TRIGGER: Backlog growth went from +10.0% (Q2 2020) to +9.5% (Q3 2020);
+  the bear case needs orders to stop replacing sales (net sales +8.7% now) while
+  program margins slip. The 10-K ties future sales to Congressional appropriations for defense procurement
+  and research and development; a terminated or delayed program leaves the backlog.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $24.45  (FY2020E EPS, guide midpoint (Q3 2020 release))
+  Min viable P/E at panic:          11x  [median of calendar-year P/E lows: 2010 9.6x, 2011 8.5x, 2012 11.4x, 2013 10.5x, 2014 14.5x, 2015 18.7x, 2016 17.1x, 2017 18.9x, 2018 13.9x, 2019 11.8x, 2020 11.3x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $269/share
+  Current $361 vs Updated EPP $269:  +34%  moderate distance to floor
+  Bear $200 vs Updated EPP $269:  -26%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Backlog growth                              -7.0      -16.5   BASE floor (vs +10 now)
+  Net sales growth                            -7.0      -15.7   BASE floor (vs +9 now)
+  Segment operating profit growth              0.0       -5.8   BASE floor (vs +6 now)
+  Diluted EPS growth                          21.0      +10.6   BASE floor (vs +10 now)
+  Segment operating margin change             10.0      +39.3   BASE floor (vs -29 now)
+  Disruption theme: none in scope              2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $24.45 × (1+10.0%)² = $29.61
+  At 16x P/E (conservative):  $474/share
+  + Cumul. dividends (2yr):  +$21.42/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $474  (▲112 from $361)
+  Conservative total return:  +37% over 2yr  = +19%/yr
+
+  At 14.8x the multiple is already near its 16x median, so the conservative
+  case is a growth question: breakeven at 16x needs FY2022E EPS of $21.24,
+  i.e. -6.8%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $266.11  –  $442.53  (at 54th pct of range)
+  Annual dividend:      $10.40/share  (yield 2.9%)
+  Realized vol (1yr):   41% annualized
+  Beta vs broad market: 0.88
+  1-sigma range (1yr):  $212  –  $510  ($361 ± 41%)
+  2-sigma range (1yr):  $64  –  $659
+  ────────────────────────────────────────────────────────────
+  Bear $200 requires:  ~1.1σ price move  (within normal vol range)
+  A defense prime contractor with a 0.9 beta: the stock is +31% off its March
+  low while Backlog growth went from +10.0% (Q2 2020) to +9.5% (Q3 2020).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR       19.39  10.3x  $    200    16.3%     20.7%    -4.4pp  EPS -11.0%/yr (worst year FY10-FY19, capped at 0%); P/E to its 10th pct
+  BASE       30.69  16.8x  $    516    56.8%     59.2%    -2.4pp  EPS +12.0%/yr (FY20 guide + margin + buyback); P/E at its 10-yr median
+  BULL       31.42  19.4x  $    610    22.7%     16.9%    +5.7pp  EPS +13.4%/yr (FY10-FY19 CAGR); P/E holds its 75th pct
+  XBULL      40.44  21.1x  $    853     4.3%      3.2%    +1.1pp  EPS +28.6%/yr (best 2-yr run FY10-FY19); P/E at its 90th pct
+
+  Proxy EV (2yr): $500  /  Market EV: $477  /  Current: $361
+  Conservative EV (2yr, ④): $474 + $21.42 divs = $495 total value
+  Downside (→ Bear $200): 44.6%   Upside (→ Bull $610): 68.8%   Ratio B 0.65x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $361 the market needs $478 in two years —
+  at or below the BASE case. That is a market composite of 1.94 against a model
+  read of 2.40: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.65x     +34%    +0.46  MODESTLY UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.36x     +34%    +0.74  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     1.03x     +34%    -0.10  FAIRLY VALUED / ACCUMULATE
+  Scenario EPS +1.5pp/yr                          0.58x     +34%    +0.52  UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.73x     +34%    +0.35  MODESTLY UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.65x     +34%    +0.76  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.65x      +6%    +0.46  MODESTLY UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.65x     +34%    +0.64  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 2020 print (late January) — the next read on backlog (+9.5% now) and the outlook
+  (2) Segment margin — -29.3bp in Q3 2020: program execution on fixed-price and cost-plus work, what must hold if volume does not
+  (3) FY20 diluted EPS from continuing operations guide $24.45 (Q3 2020 release): the company's own read of the year, FAS/CAS pension adjustment included
+  (4) FY20 net sales guide $65.25B (Q3 2020 release): program volume in one number
+  (5) Capital return at 15x — Repurchasing 0.2 million shares for $85 million, which includes $26 million paid for shares repurchased in the second quarter of 2020; compared to repurchasing 0.6 million shares for $210 million in the third quarter of 2019: management's own read of the multiple
+  ◉ BUY  |  EPP floor $269  |  ADD below ~$439  |  TRIM above $610
+════════════════════════════════════════════════════════════════════════
+

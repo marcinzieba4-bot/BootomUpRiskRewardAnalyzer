@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  SCHW  ·  The Charles Schwab Corporation  ·  $38.27  ·  RETROSPECTIVE as of 2019-08-30
+  Signal: ◉ BUY   Ratio B: 0.43x   Adj gap: +0.76  [UNDERVALUED]
+  Point-in-time: 11 sources, latest published 2019-08-30; latest print Q2 2019 (Jul 17)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2019E revenue, USD bn  →  FY2021E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2019E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Asset management and adminis  $  3.48  $ 3.48  $ 4.23    +0.00    +0.75
+    -4.8% revenue in FY18
+  Net interest revenue          $  6.28  $ 6.28  $ 7.64    +0.00    +1.36
+    +36.0% revenue in FY18
+  Trading revenue               $  0.82  $ 0.82  $ 1.00    +0.00    +0.18
+    +16.7% revenue in FY18
+  Other                         $  0.34  $ 0.34  $ 0.42    +0.00    +0.08
+    +9.3% revenue in FY18
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $ 10.92  $10.92  $13.29    +0.00    +2.37
+  FY2019E = FY18 $10.132B × (1 + 7.8%: the Q2 2019 revenue growth (no Q3 2019 guide), YoY, applied to the year (no FY19 revenue guide)); split pro rata to FY18 net revenues by component (asset management and administration fees, net interest revenue, trading revenue, other; FY18 growth, each component as the FY18 10-K reports both years)
+  Q2 2019 (Jul 17): net revenues $2.681B +7.8% YoY (-1.5% QoQ); client assets $3,702.4B +9.0%; trades 392.0K a day +4.3%;
+  expenses excluding interest +6.6%; pre-tax margin 46.10% (+60.7bp); net new client assets $37.2B; EPS $0.66 vs $0.60
+  Revenue: net revenues $2,681M vs $2,486M a year earlier, $2,723M the quarter before; client assets $3,702.4B vs $3,397.0B a year earlier; net new client assets $37.2B in the quarter; daily average revenue trades 392.0K vs 376.0K; diluted EPS $0.66 vs $0.60, GAAP (per common share, after preferred dividends); diluted shares 1,337M; expenses excluding interest $1,445M vs $1,355M
+  Q3 2019: no revenue, EPS or margin guide in numbers in any filing; the latest quarter's revenue growth stands in (the UNP rule)
+
+  FY2019E EPS check:  $10.920B × 45.0% pre-tax × (1−23.1%) ÷ 1.337B  =  $2.83  (FY2019E: no EPS guide in numbers, FY18's $2.45 stands)
+  FY2021E BEAR check: $10.920B × 45.0% ÷ 1.384B  =  $2.73  (scenario $0.77)
+  FY2021E BULL check: $13.290B × 45.4% ÷ 1.384B  =  $3.35  (scenario $3.26)
+  Every 1pp of pre-tax margin ≈ $0.063 EPS ≈ $1.59/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Net revenue growth                    -56.0%   ≥-22.0%    ≥12.0%    ≥41.0%     +7.8%  ◦ BASE  ██░░
+  Client assets growth                  -34.0%   ≥-10.0%    ≥15.0%    ≥42.0%     +9.0%  ◦ BASE  ██░░
+  Expense growth less revenue          +35.0pp   ≤16.0pp   ≤-3.0pp  ≤-16.0pp    -1.2pp  ◦ BASE  ██░░
+  Daily average revenue trades          -91.0%   ≥-34.0%    ≥22.0%    ≥68.0%     +4.3%  ◦ BASE  ██░░
+  Pre-tax margin change               -3510.0bp  ≥-1640.0bp  ≥230.0bp  ≥1330.0bp   +60.7bp  ◦ BASE  ██░░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.00 / 4.00
+  Market composite:   1.62 / 4.00  (back-solved from $38.27 + 15% hurdle)
+  SCA adjustment:    +0.18  ·  EPP-distance adj +0.20  →  Adj composite 2.38  →  Gap +0.76  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY18 net revenues +17.6%, client assets $3,252.2B (-3.3%); Q2 net new client assets $37.2B  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 15.6x FY19E vs a 25.4x 10-yr median (1st percentile of its own range)  (+0.50 × 25%  =  +0.125)
+    -  Growth vs own history: Q2 2019 revenue growth (no Q3 2019 guide) +7.8% vs a 11.3% 9-yr median  (-0.35 × 20%  =  -0.070)
+    +  Client assets $3,702.4B (+9.0% YoY) at the end of Q2 2019, pre-tax margin 46.1%, dividend $0.68 a year  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Net revenue growth                     +7.8%    -56.0%  -63.8%  Asset-based and trading revenue fall …
+  Client assets growth                   +9.0%    -34.0%  -43.0%  Client assets shrink with markets and…
+  Expense growth less revenue           -1.2pp   +35.0pp  +36.2pp  Expenses excluding interest do not fa…
+  Daily average revenue trades           +4.3%    -91.0%  -95.3%  Clients trade less
+  Pre-tax margin change                +60.7bp  -3510.0bp  -3570.7bp  Expenses outrun revenue
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$31.85  (model)  /  $13.86 (defined)
+  Bear probability (proxy model):  17.6%
+
+  KEY TRIGGER: revenue went from +13.6% (Q1 2019) to +7.8% YoY (Q2 2019), -1.5% on the quarter before;
+  the bear case needs client assets (+9.0% YoY now) shrinking further
+  and trades (+4.3% YoY) falling with them. Lower markets and rates show up in client assets and asset-based fees first;
+  the bear needs them in net revenue as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $2.45  (FY2019E: no EPS guide in numbers, FY18's $2.45 stands)
+  Min viable P/E at panic:          19x  [median of calendar-year P/E lows: 2009 24.9x, 2010 33.6x, 2011 15.4x, 2012 16.8x, 2013 19.3x, 2014 24.9x, 2015 25.2x, 2016 17.0x, 2017 23.3x, 2018 15.6x, 2019 14.7x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $46.55/share
+  Current $38.27 vs Updated EPP $46.55:  -18%  ✓ BELOW panic floor — deep-value zone
+  Bear $13.86 vs Updated EPP $46.55:  -70%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Net revenue growth                           -22.0      -29.8   BASE floor (vs +8 now)
+  Client assets growth                         -10.0      -19.0   BASE floor (vs +9 now)
+  Expense growth less revenue                   16.0      +17.2   BASE floor (vs -1 now)
+  Daily average revenue trades                 -34.0      -38.3   BASE floor (vs +4 now)
+  Pre-tax margin change                      -1640.0    -1700.7   BASE floor (vs +61 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $2.45 × (1+4.0%)² = $2.65
+  At 25x P/E (conservative):  $66.30/share
+  + Cumul. dividends (2yr):  +$1.40/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $66.30  (▲28.03 from $38.27)
+  Conservative total return:  +77% over 2yr  = +38%/yr
+
+  At 15.6x the multiple is already near its 25x median, so the conservative
+  case is a growth question: breakeven at 25x needs FY2021E EPS of $1.47,
+  i.e. -22.4%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $35.85  –  $52.70  (at 14th pct of range)
+  Annual dividend:      $0.68/share  (yield 1.8%)
+  Realized vol:         29% annualized (1-yr daily log returns)
+  Beta vs broad market: 1.17
+  1-sigma range (1yr):  $27.32  –  $49.22  ($38.27 ± 29%)
+  2-sigma range (1yr):  $16.38  –  $60.16
+  ────────────────────────────────────────────────────────────
+  Bear $13.86 requires:  ~2.2σ price move  (unusual — requires fundamental break)
+  A broker whose earnings follow markets and rates: the stock is +6% off its August
+  low (52 weeks) while revenue went from +13.6% (Q1 2019) to +7.8% YoY (Q2 2019), -1.5% on the quarter before.
+  Near the low: the multiple has not run ahead of the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        0.77   18.0x  $  13.86    17.6%     43.1%   -25.5pp  EPS -44.1%/yr (worst year FY09-FY18, capped at 0%); P/E to its 10th pct
+  BASE        2.75   25.4x  $  69.85    61.5%     42.4%   +19.0pp  EPS +6.0%/yr (Q2 revenue YoY + margin + buyback); P/E at its 10-yr median
+  BULL        3.26   29.1x  $  94.87    17.6%     12.2%    +5.5pp  EPS +15.3%/yr (FY09-FY18 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL       4.58   34.2x  $ 156.64     3.3%      2.3%    +1.0pp  EPS +36.8%/yr (best 2-yr run FY09-FY18, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $67.28  /  Market EV: $50.73  /  Current: $38.27
+  Conservative EV (2yr, ④): $66.30 + $1.40 divs = $67.70 total value
+  Downside (→ Bear $13.86): 63.8%   Upside (→ Bull $94.87): 147.9%   Ratio B 0.43x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $38.27 the market needs $50.61 in two years —
+  at or below the BASE case. That is a market composite of 1.62 against a model
+  read of 2.38: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.43x     -18%    +0.76  UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.31x     -18%    +0.90  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.56x     -18%    +0.56  UNDERVALUED / BUY
+  Scenario EPS +1.5pp/yr                          0.40x     -18%    +0.79  UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.46x     -18%    +0.73  UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.43x     -18%    +1.06  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.43x     -29%    +0.76  UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.43x     -18%    +0.84  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 2019 print (the quarter ends in September) — revenue against the Q2 2019 revenue growth (no Q3 2019 guide): +7.8% YoY
+  (2) Client assets — $3,702.4B at the end of Q2 2019 (+9.0% YoY): asset-based revenue follows them
+  (3) A Q3 2019 revenue guide — none: Schwab gives no revenue, EPS or margin outlook in numbers in any filing; the monthly activity reports in each release track client assets, net new assets and trades
+  (4) Trading activity — 392.0K daily average revenue trades in Q2 2019 (+4.3% YoY): the driver of trading revenue
+  (5) Capital at 16x — dividend $0.17 a quarter: 'On January 30, 2019, CSC publicly announced that its Board of Directors authorized a new Share Repurchase Program to repurchase up to $4.0 billion of common stock, and declared a four cent, or 31%, increase in the quarterly cash dividend to $0.17 per common share.' (FY2018 10-K)
+  ◉ BUY  |  EPP floor $46.55  |  ADD below ~$59.37  |  TRIM above $94.87
+════════════════════════════════════════════════════════════════════════
+

@@ -1,0 +1,238 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "LLY",
+ "company": "Eli Lilly and Company",
+ "as_of": "2008-01-18",
+ "price_date": "2008-01-18",
+ "price": 53.71,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); pharmaceutical signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'We discover, develop, manufacture, and sell products in one significant business segment — pharmaceutical products.' (FY2006 10-K, Item 1); 'Our long-term success depends on intellectual property protection.' (FY2006 10-K, Item 1A heading); 'We currently expect no major patent expirations in this decade, but several major products will lose intellectual property protection in the first half of the next decade.' (FY2006 10-K, Item 1A); 'Our product sales can be adversely affected by the introduction by competitors of branded products that are perceived as superior by the marketplace, by generic versions of our branded products, and by generic versions of other products in the same therapeutic class as our branded products.' (FY2006 10-K, Item 1A); 'Zyprexa sales of $4.417 billion represented 28 percent of our revenues in 2006.' (FY2006 10-K, Item 1A)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "'We discover, develop, manufacture, and sell products in one significant business segment — pharmaceutical products.' (FY2006 10-K, Item 1); 'Our long-term success depends on intellectual property protection.' (FY2006 10-K, Item 1A heading); 'We currently expect no major patent expirations in this decade, but several major products will lose intellectual property protection in the first half of the next decade.' (FY2006 10-K, Item 1A); 'Our product sales can be adversely affected by the introduction by competitors of branded products that are perceived as superior by the marketplace, by generic versions of our branded products, and by generic versions of other products in the same therapeutic class as our branded products.' (FY2006 10-K, Item 1A); 'Zyprexa sales of $4.417 billion represented 28 percent of our revenues in 2006.' (FY2006 10-K, Item 1A). durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.35x; -12% to EPP floor; model-vs-market gap +1.94; conservative 2yr +103%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.35,
+  "ratio_b_fmt": "0.35x",
+  "epp": 61.27,
+  "epp_gap_pct": -12.3,
+  "epp_adj": 0.2,
+  "proxy_composite": 2.9,
+  "sca": 0.35,
+  "adj_composite": 3.45,
+  "market_composite": 1.51,
+  "adj_gap": 1.94,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 103.4,
+  "scenarios": {
+   "BEAR": {
+    "eps": 1.37,
+    "pe": 20.9,
+    "price": 29,
+    "desc": "EPS -30.0%/yr (worst year FY97-FY06, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 3.78,
+    "pe": 29.6,
+    "price": 112,
+    "desc": "EPS +16.4%/yr (Q3 sales ex-FX + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 3.78,
+    "pe": 32.9,
+    "price": 124,
+    "desc": "EPS +16.4%/yr (FY97-FY06 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 4.16,
+    "pe": 39.2,
+    "price": 163,
+    "desc": "EPS +22.1%/yr (best 2-yr run FY97-FY06); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.35,
+   "epp_gap_pct": -12.3,
+   "adj_gap": 1.94,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 103.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.23,
+   "epp_gap_pct": -12.3,
+   "adj_gap": 2.05,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 103.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 0.46,
+   "epp_gap_pct": -12.3,
+   "adj_gap": 1.73,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 103.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.33,
+   "epp_gap_pct": -12.3,
+   "adj_gap": 1.96,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 103.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.38,
+   "epp_gap_pct": -12.3,
+   "adj_gap": 1.91,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 103.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.35,
+   "epp_gap_pct": -12.3,
+   "adj_gap": 2.24,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 103.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.35,
+   "epp_gap_pct": -22.9,
+   "adj_gap": 1.94,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 103.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.35,
+   "epp_gap_pct": -12.3,
+   "adj_gap": 2.02,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 103.4,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "LLY (retrospective, 2008-01-18) ◉ BUY — Ratio B 0.35x (46.0% downside to Bear $29 / +130.9% upside to Bull $124) | Adj composite 3.45 vs market 1.51: gap +1.94 [UNDERVALUED] | -12% above the EPP floor $61 (22x FY07E $2.79) | Conservative 2-yr case: +103.4% total (+51.7%/yr) | At 19.3x FY07E the 15% hurdle price $71 sits at or below the BASE case; U.S. revenues +18.0% in Q3 2007, forward revenues +16% (no FY07 revenue guide in numbers, Q3 2007 net sales growth ex-FX); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "LL4",
+   "published": "2002-03-28",
+   "filed": "2002-03-28 (EDGAR gives the filing date only)",
+   "title": "Eli Lilly FY2001 10-K405 (annual report, Exhibit 13)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095013702001754/c67933ex13.htm",
+   "supports": "statement of income and geographic data (rule T)"
+  },
+  {
+   "id": "LL5",
+   "published": "2003-03-21",
+   "filed": "2003-03-20 17:07 ET, after the close",
+   "title": "Eli Lilly FY2002 10-K (annual report, Exhibit 13)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095013703001575/c75275exv13.htm",
+   "supports": "statement of income and geographic data (rule T)"
+  },
+  {
+   "id": "LL6",
+   "published": "2004-03-15",
+   "filed": "2004-03-15 13:43 ET, during the session",
+   "title": "Eli Lilly FY2003 10-K (annual report, Exhibit 13)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095013704001857/c83409exv13.htm",
+   "supports": "statement of income and geographic data (rule T)"
+  },
+  {
+   "id": "LL7",
+   "published": "2005-03-08",
+   "filed": "2005-03-08 08:01 ET, before the open",
+   "title": "Eli Lilly FY2004 10-K (annual report, Exhibit 13)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095013405004385/c92539exv13.htm",
+   "supports": "statement of income and geographic data (rule T)"
+  },
+  {
+   "id": "LL8",
+   "published": "2006-03-01",
+   "filed": "2006-03-01 09:01 ET, before the open",
+   "title": "Eli Lilly FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095013706002395/c02657e10vk.htm",
+   "supports": "statement of income and geographic data (rule T)"
+  },
+  {
+   "id": "LL9",
+   "published": "2007-03-01",
+   "filed": "2007-02-28 17:18 ET, after the close",
+   "title": "Eli Lilly FY2006 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095013707003013/c12621e10vk.htm",
+   "supports": "statement of income and geographic data (rule T); history vintage: five-year summary, statements of income and cash flows, balance sheet, segment and geographic data, Items 1 and 1A"
+  },
+  {
+   "id": "LL10",
+   "published": "2007-07-24",
+   "filed": "2007-07-24 08:00 ET, before the open",
+   "title": "Eli Lilly Q2 2007 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095012407003723/c16977exv99w1.htm",
+   "supports": "Q2 2007: reported operating results (net sales $4,631.0M vs $3,866.9M, cost of sales, pre-tax income $926.7M vs $1,040.5M, diluted EPS $0.61 vs $0.76); growth 20% with exchange rates +3 points; FY2007 guide: reported EPS $2.75-2.85, revenue in words"
+  },
+  {
+   "id": "LL12",
+   "published": "2007-10-19",
+   "filed": "2007-10-19 11:56 ET, during the session",
+   "title": "Eli Lilly Q3 2007 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095013707015729/c19455exv99w1.htm",
+   "supports": "Q3 2007: reported operating results (net sales $4,586.8M vs $3,864.1M, cost of sales, pre-tax income $1,178.4M vs $1,105.8M, diluted EPS $0.85 vs $0.80); growth 19% with exchange rates +3 points; FY2007 guide: reported EPS $2.76-2.81, revenue in words"
+  },
+  {
+   "id": "LL13",
+   "published": "2007-11-05",
+   "filed": "2007-11-05 10:19 ET, during the session",
+   "title": "Eli Lilly Q3 2007 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095013707016548/c21135e10vq.htm",
+   "supports": "Q3 2007 U.S. and outside-U.S. net sales ('Sales in the U.S. increased by $370.4 million, or 18 percent'; table row 'Total net sales | 2,477.1 | 2,109.7 | 4,586.8 | 3,864.1 | 19')"
+  },
+  {
+   "id": "W0",
+   "published": "2008-01-18",
+   "title": "Yahoo Finance daily prices, LLY and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/LLY/history",
+   "supports": "close $53.71 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-21"
+}

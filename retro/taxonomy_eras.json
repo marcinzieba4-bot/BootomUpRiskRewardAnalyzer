@@ -1091,6 +1091,1288 @@
     "term": "Proxxima",
     "first_seen": "2024-04-11",
     "note": "ExxonMobil's thermoset resin product line; first in an ExxonMobil filing in its annual report to shareholders (ARS accepted 2024-04-11 09:00 ET, before the open)"
+   },
+   {
+    "term": "Global Finishes Group",
+    "first_seen": "2008-10-16",
+    "note": "Sherwin-Williams' renamed Global Group; first in a Sherwin-Williams filing in its Q3 2008 earnings 8-K (accepted 2008-10-16 09:48 ET, during the session)"
+   },
+   {
+    "term": "Latin America Coatings Group",
+    "first_seen": "2009-02-24",
+    "note": "a Sherwin-Williams reportable segment from 2009; first in a Sherwin-Williams filing in its FY2008 10-K (accepted 2009-02-24 15:05 ET, during the session)"
+   },
+   {
+    "term": "HGTV HOME",
+    "first_seen": "2012-02-23",
+    "note": "the HGTV HOME by Sherwin-Williams brand; first in a Sherwin-Williams filing in its FY2011 10-K (accepted 2012-02-23 15:07 ET, during the session)"
+   },
+   {
+    "term": "The Americas Group",
+    "first_seen": "2014-10-23",
+    "note": "Sherwin-Williams' renamed Paint Stores Group; first in a Sherwin-Williams filing in a Form 4 of 2014-10-23 (accepted 15:27 ET, during the session)"
+   },
+   {
+    "term": "Consumer Brands Group",
+    "first_seen": "2017-07-20",
+    "note": "a Sherwin-Williams reportable segment after the Valspar acquisition; first in a Sherwin-Williams filing in its Q2 2017 earnings 8-K (accepted 2017-07-20 07:31 ET, before the open)"
+   },
+   {
+    "term": "Performance Coatings Group",
+    "first_seen": "2017-07-20",
+    "note": "a Sherwin-Williams reportable segment after the Valspar acquisition; first in a Sherwin-Williams filing in its Q2 2017 earnings 8-K (accepted 2017-07-20 07:31 ET, before the open)"
+   },
+   {
+    "term": "Walmart U.S.",
+    "first_seen": "2008-08-14",
+    "note": "Wal-Mart's renamed Wal-Mart Stores segment; first in a Wal-Mart filing in its Q2 FY2009 earnings 8-K (accepted 2008-08-14 06:14 ET, before the open)"
+   },
+   {
+    "term": "Walmart International",
+    "first_seen": "2010-02-18",
+    "note": "Wal-Mart's renamed International segment; first in a Wal-Mart filing in its Q4 FY2010 earnings 8-K (accepted 2010-02-18 07:15 ET, before the open)"
+   },
+   {
+    "term": "Jet.com",
+    "first_seen": "2016-08-08",
+    "note": "the e-commerce company Wal-Mart agreed to acquire; first in a Wal-Mart filing in its 8-K of 2016-08-08 (accepted 08:30 ET, before the open)"
+   },
+   {
+    "term": "Walmart Inc.",
+    "first_seen": "2017-12-06",
+    "note": "Wal-Mart Stores, Inc.'s new name from 2018-02-01; first in a Wal-Mart filing in its 8-K of 2017-12-06 announcing the change (accepted 09:00 ET, before the open; corrected 2026-11-07 from a Form 4 of 2018-01-31, found while reading every 2017 8-K)"
+   },
+   {
+    "term": "Flipkart",
+    "first_seen": "2018-05-09",
+    "note": "the Indian e-commerce company Walmart agreed to acquire a majority of; first in a Walmart filing in its 8-K of 2018-05-09 (accepted 07:04 ET, before the open)"
+   },
+   {
+    "term": "TUI Cruises",
+    "first_seen": "2008-02-19",
+    "note": "Royal Caribbean's German joint venture; first in a Royal Caribbean filing in its FY2007 10-K (accepted 2008-02-19 07:25 ET, before the open)"
+   },
+   {
+    "term": "Oasis of the Seas",
+    "first_seen": "2008-07-28",
+    "note": "the first Oasis-class ship (ordered as Project Genesis); first in a Royal Caribbean filing in its Q2 2008 10-Q (accepted 2008-07-25 16:17 ET, after the close, so it counts from the next trading day)"
+   },
+   {
+    "term": "Allure of the Seas",
+    "first_seen": "2008-07-28",
+    "note": "the second Oasis-class ship; first in a Royal Caribbean filing in its Q2 2008 10-Q (accepted 2008-07-25 16:17 ET, after the close)"
+   },
+   {
+    "term": "Oasis-class",
+    "first_seen": "2008-07-28",
+    "note": "Royal Caribbean International's ship class formerly called Project Genesis; first in a Royal Caribbean filing in its Q2 2008 10-Q (accepted 2008-07-25 16:17 ET, after the close)"
+   },
+   {
+    "term": "Celebrity Silhouette",
+    "first_seen": "2010-02-24",
+    "note": "the fourth Solstice-class ship; first in a Royal Caribbean filing in its FY2009 10-K (accepted 2010-02-23 16:36 ET, after the close)"
+   },
+   {
+    "term": "Celebrity Reflection",
+    "first_seen": "2010-10-28",
+    "note": "the fifth Solstice-class ship; first in a Royal Caribbean filing in its Q3 2010 10-Q (accepted 2010-10-27 16:35 ET, after the close)"
+   },
+   {
+    "term": "Project Sunshine",
+    "first_seen": "2011-02-14",
+    "note": "the code name of Royal Caribbean International's next ship class (later Quantum-class); first in a Royal Caribbean filing in its 8-K of 2011-02-11 (accepted 16:28 ET, after the close, so it counts from the next trading day)"
+   },
+   {
+    "term": "Quantum-class",
+    "first_seen": "2013-02-25",
+    "note": "the ship class ordered as Project Sunshine; first in a Royal Caribbean filing in its FY2012 10-K (accepted 2013-02-25 08:01 ET, before the open)"
+   },
+   {
+    "term": "Project Edge",
+    "first_seen": "2014-12-05",
+    "note": "the code name of Celebrity Cruises' next ship class (later Edge-class); first in a Royal Caribbean filing in its 8-K of 2014-12-04 (accepted 16:54 ET, after the close, so it counts from the next trading day)"
+   },
+   {
+    "term": "Project Icon",
+    "first_seen": "2016-10-31",
+    "note": "the code name of Royal Caribbean International's next ship class (later Icon-class); first in a Royal Caribbean filing in its Q3 2016 10-Q (accepted 2016-10-28 17:11 ET, after the close, so it counts from the next trading day)"
+   },
+   {
+    "term": "Quantum of the Seas",
+    "first_seen": "2013-02-25",
+    "note": "the first Quantum-class ship; first in a Royal Caribbean filing in its FY2012 10-K (accepted 2013-02-25 08:01 ET, before the open)"
+   },
+   {
+    "term": "Celebrity Edge",
+    "first_seen": "2017-02-24",
+    "note": "the first Edge-class ship; first in a Royal Caribbean filing in its FY2016 10-K (accepted 2017-02-23 17:29 ET, after the close)"
+   },
+   {
+    "term": "Silversea",
+    "first_seen": "2018-06-14",
+    "note": "the luxury cruise line Royal Caribbean agreed to acquire a majority of; first in a Royal Caribbean filing in its 8-K of 2018-06-14 (accepted 07:05 ET, before the open)"
+   },
+   {
+    "term": "Perfect Day at CocoCay",
+    "first_seen": "2018-10-25",
+    "note": "Royal Caribbean's private-island destination; first in a Royal Caribbean filing in its Q3 2018 earnings 8-K (accepted 2018-10-25 08:39 ET, before the open)"
+   },
+   {
+    "term": "Icon of the Seas",
+    "first_seen": "2021-08-05",
+    "note": "the first Icon-class ship; first in a Royal Caribbean filing in its Q2 2021 10-Q (accepted 2021-08-05 09:01 ET, during the session)"
+   },
+   {
+    "term": "Celebrity Flora",
+    "first_seen": "2018-02-21",
+    "note": "the Celebrity ship designed for the Galapagos Islands; first in a Royal Caribbean filing in its FY2017 10-K (accepted 2018-02-20 19:14 ET, after the close, so it counts from the next trading day)"
+   },
+   {
+    "term": "Project Invictus",
+    "first_seen": "2018-08-01",
+    "note": "Silversea's ship and product program; first in a Royal Caribbean filing in its 8-K of 2018-07-31 (accepted 16:36 ET, after the close, so it counts from the next trading day)"
+   },
+   {
+    "term": "Silver Moon",
+    "first_seen": "2018-10-26",
+    "note": "a Silversea ship on order; first in a Royal Caribbean filing in its Q3 2018 10-Q (accepted 2018-10-25 17:32 ET, after the close)"
+   },
+   {
+    "term": "Silver Dawn",
+    "first_seen": "2018-10-26",
+    "note": "a Silversea ship on order; first in a Royal Caribbean filing in its Q3 2018 10-Q (accepted 2018-10-25 17:32 ET, after the close)"
+   },
+   {
+    "term": "Spectrum of the Seas",
+    "first_seen": "2018-10-25",
+    "note": "the Quantum-class ship for China; first in a Royal Caribbean filing in its Q3 2018 earnings 8-K (accepted 2018-10-25 08:39 ET, before the open)"
+   },
+   {
+    "term": "Silver Origin",
+    "first_seen": "2019-02-25",
+    "note": "a Silversea expedition ship; first in a Royal Caribbean filing in its FY2018 10-K (accepted Friday 2019-02-22 17:15 ET, after the close)"
+   },
+   {
+    "term": "Celebrity Apex",
+    "first_seen": "2019-05-02",
+    "note": "the second Edge-class ship; first in a Royal Caribbean filing in its Q1 2019 10-Q (accepted 2019-05-01 18:07 ET, after the close)"
+   },
+   {
+    "term": "Odyssey of the Seas",
+    "first_seen": "2019-07-26",
+    "note": "the fifth Quantum-class ship; first in a Royal Caribbean filing in its Q2 2019 10-Q (accepted 2019-07-25 18:01 ET, after the close)"
+   },
+   {
+    "term": "Wonder of the Seas",
+    "first_seen": "2019-10-31",
+    "note": "the fifth Oasis-class ship; first in a Royal Caribbean filing in its Q3 2019 10-Q (accepted 2019-10-30 17:28 ET, after the close)"
+   },
+   {
+    "term": "Healthy Sail Panel",
+    "first_seen": "2020-07-06",
+    "note": "the health panel formed with Norwegian Cruise Line Holdings; first in a Royal Caribbean filing in its 8-K of 2020-07-06 (accepted 10:55 ET, during the session)"
+   },
+   {
+    "term": "Utopia of the Seas",
+    "first_seen": "2022-05-06",
+    "note": "the sixth Oasis-class ship; first in a Royal Caribbean filing in its Q1 2022 10-Q (accepted 2022-05-05 17:15 ET, after the close, so it counts from the next trading day)"
+   },
+   {
+    "term": "Silver Nova",
+    "first_seen": "2022-03-01",
+    "note": "a Silversea Nova-class ship; first in a Royal Caribbean filing in its FY2021 10-K (accepted 2022-03-01 09:15 ET, before the open)"
+   },
+   {
+    "term": "Silver Ray",
+    "first_seen": "2023-02-24",
+    "note": "the second Silversea Nova-class ship; first in a Royal Caribbean filing in its FY2022 10-K (accepted 2023-02-23 17:28 ET, after the close, so it counts from the next trading day)"
+   },
+   {
+    "term": "Star of the Seas",
+    "first_seen": "2023-10-27",
+    "note": "the second Icon-class ship; first in a Royal Caribbean filing in its Q3 2023 10-Q (accepted 2023-10-26 17:17 ET, after the close, so it counts from the next trading day)"
+   },
+   {
+    "term": "Celebrity Ascent",
+    "first_seen": "2022-03-01",
+    "note": "the fourth Edge-class ship; first in a Royal Caribbean filing in its FY2021 10-K (accepted 2022-03-01 09:15 ET, before the open)"
+   },
+   {
+    "term": "Celebrity Xcel",
+    "first_seen": "2023-12-26",
+    "note": "the fifth Edge-class ship; first in a Royal Caribbean filing in its 8-K of 2023-12-22 (accepted 2023-12-22 16:30 ET, after the close, so it counts from the next trading day)"
+   },
+   {
+    "term": "Trifecta",
+    "first_seen": "2022-11-03",
+    "note": "the company's 2022-2025 performance program; first in a Royal Caribbean filing in its Q3 2022 earnings 8-K (accepted 2022-11-03 08:24 ET, before the open)"
+   },
+   {
+    "term": "Celebrity River Cruises",
+    "first_seen": "2025-01-28",
+    "note": "Celebrity's river-cruise brand; first in a Royal Caribbean filing in its Q4 2024 earnings 8-K (accepted 2025-01-28 06:33 ET, before the open)"
+   },
+   {
+    "term": "Perfecta",
+    "first_seen": "2025-04-21",
+    "note": "the company's performance program after Trifecta; first in a Royal Caribbean filing in its proxy statement (DEF 14A) of 2025-04-18 (accepted 2025-04-18 16:25 ET, after the close on Good Friday, a market holiday, so it counts from the next trading day)"
+   },
+   {
+    "term": "Silver Endeavour",
+    "first_seen": "2022-07-28",
+    "note": "the Silversea expedition ship acquired in 2022; first in a Royal Caribbean filing in its Q2 2022 earnings 8-K (accepted 2022-07-28 08:05 ET, before the open)"
+   },
+   {
+    "term": "Hideaway Beach",
+    "first_seen": "2023-02-24",
+    "note": "the adults-only area at Perfect Day at CocoCay; first in a Royal Caribbean filing in its FY2022 10-K (accepted 2023-02-23 17:28 ET, after the close, so it counts from the next trading day)"
+   },
+   {
+    "term": "Discovery-class",
+    "first_seen": "2026-01-29",
+    "note": "a class of ships on order; first in a Royal Caribbean filing in its Q4 2025 earnings 8-K (accepted 2026-01-29 06:32 ET, before the open)"
+   },
+   {
+    "term": "Autograph Collection",
+    "first_seen": "2010-02-11",
+    "note": "a Marriott brand (soft-branded collection); first in a Marriott filing in its 8-K of 2010-02-11 (accepted 2010-02-11 07:27 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "AC Hotels by Marriott",
+    "first_seen": "2011-02-15",
+    "note": "the Marriott brand formed with AC Hotels; first in a Marriott filing in its 8-K of 2011-02-14 (accepted 2011-02-14 19:16 ET, after the close, so it counts from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "Moxy Hotels",
+    "first_seen": "2013-08-01",
+    "note": "a Marriott brand; first in a Marriott filing in its 10-Q of 2013-08-01 (accepted 2013-08-01 11:42 ET, during the session), EDGAR full-text search"
+   },
+   {
+    "term": "Marriott Vacations Worldwide",
+    "first_seen": "2011-06-29",
+    "note": "the timeshare spin-off of 2011; first in a Marriott filing in its 8-K of 2011-06-28 (accepted 2011-06-28 16:58 ET, after the close, so it counts from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "Marriott Bonvoy",
+    "first_seen": "2019-03-01",
+    "note": "Marriott's loyalty programme after the Starwood merger; first in a Marriott filing in its 8-K of 2019-02-28 (accepted 2019-02-28 16:55 ET, after the close, so it counts from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "Ritz-Carlton Destination Club",
+    "first_seen": "2009-07-16",
+    "note": "Marriott's renamed fractional and residential timeshare brand; first in a Marriott filing in its 8-K of 2009-07-16 (accepted 2009-07-16 07:38 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Ritz-Carlton Reserve",
+    "first_seen": "2011-02-18",
+    "note": "a Ritz-Carlton sub-brand; first in a Marriott filing in its 10-K of 2011-02-18 (accepted 2011-02-18 10:27 ET, during the session), EDGAR full-text search"
+   },
+   {
+    "term": "Ritz-Carlton Yacht Collection",
+    "first_seen": "2023-02-14",
+    "note": "Marriott's yacht brand; first in a Marriott filing in its FY2022 10-K (accepted 2023-02-14 15:00 ET, during the session), EDGAR full-text search"
+   },
+   {
+    "term": "Apartments by Marriott Bonvoy",
+    "first_seen": "2023-03-28",
+    "note": "a Marriott apartment-rental offering; first in a Marriott filing in its 2022 annual report to shareholders (ARS, accepted 2023-03-28 08:56 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "City Express by Marriott",
+    "first_seen": "2023-05-02",
+    "note": "the Marriott brand name of the City Express portfolio acquired in 2023 (the acquired name 'City Express' predates the deal and is not added); first in a Marriott filing in its Q1 2023 10-Q (accepted 2023-05-02 12:31 ET, during the session), EDGAR full-text search"
+   },
+   {
+    "term": "MGM Collection with Marriott Bonvoy",
+    "first_seen": "2023-08-01",
+    "note": "the licensing collection with MGM Resorts; first in a Marriott filing in its Q2 2023 earnings 8-K (accepted 2023-08-01 07:23 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "StudioRes",
+    "first_seen": "2023-09-27",
+    "note": "a Marriott midscale extended-stay brand; first in a Marriott filing in its 8-K of 2023-09-27 (security analyst meeting, accepted 06:29 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Four Points Flex",
+    "first_seen": "2024-11-04",
+    "note": "a Marriott midscale brand; first in a Marriott filing in its Q3 2024 earnings 8-K (accepted 2024-11-04 07:21 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Sonder by Marriott Bonvoy",
+    "first_seen": "2025-02-11",
+    "note": "the licensing offering with Sonder; first in a Marriott filing in its Q4 2024 earnings 8-K (accepted 2025-02-11 07:30 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Series by Marriott",
+    "first_seen": "2025-08-05",
+    "note": "a Marriott midscale/upper-midscale collection brand; first in a Marriott filing in its Q2 2025 earnings 8-K (accepted 2025-08-05 07:00 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Outdoor Collection by Marriott Bonvoy",
+    "first_seen": "2025-11-04",
+    "note": "a Marriott outdoor-lodging collection; first in a Marriott filing in its Q3 2025 earnings 8-K (accepted 2025-11-04 07:00 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Marriott Bonvoy Outdoors",
+    "first_seen": "2026-03-27",
+    "note": "first in a Marriott filing in its proxy statement (DEF 14A, accepted 2026-03-27 10:00 ET, during the session), EDGAR full-text search"
+   },
+   {
+    "term": "Kymera",
+    "first_seen": "2010-11-01",
+    "note": "a Baker Hughes hybrid drill bit; first in a Baker Hughes filing in its Q3 2010 earnings 8-K (accepted 2010-11-01 06:01 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Baker Hughes, a GE company",
+    "first_seen": "2016-11-01",
+    "note": "the name of the combined company announced with GE; first in a Baker Hughes filing in a Rule 425 communication (accepted 2016-10-31 17:24 ET, after the close, so from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "TerrAdapt",
+    "first_seen": "2017-03-28",
+    "note": "a Baker Hughes adaptive drill bit; first in a Baker Hughes filing in an 8-K exhibit (accepted 2017-03-28 10:30 ET, during the session), EDGAR full-text search"
+   },
+   {
+    "term": "BHGE",
+    "first_seen": "2017-06-08",
+    "note": "the abbreviation and ticker of Baker Hughes, a GE company; first in a Baker Hughes filing in an 8-K (accepted 2017-06-07 17:23 ET, after the close, so from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "Baker Hughes Company",
+    "first_seen": "2019-09-17",
+    "note": "the name Baker Hughes, a GE company took on 2019-10-17; first in a Baker Hughes filing in an 8-K on the written consent approving it (accepted 2019-09-16 21:54 ET, after the close, so from the next trading day)"
+   },
+   {
+    "term": "Leucipa",
+    "first_seen": "2023-04-19",
+    "note": "a Baker Hughes automated field production software; first in a Baker Hughes filing in its Q1 2023 earnings 8-K (accepted 2023-04-19 07:06 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Cordant",
+    "first_seen": "2023-04-19",
+    "note": "a Baker Hughes industrial asset-performance software; first in a Baker Hughes filing in its Q1 2023 earnings 8-K (accepted 2023-04-19 07:06 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Eliquis",
+    "first_seen": "2010-10-26",
+    "note": "the brand name of apixaban (Bristol-Myers Squibb and Pfizer); first in any filing in Bristol-Myers Squibb's Q3 2010 earnings 8-K (accepted 2010-10-26 07:53 ET, before the open; its 10-Q the same day), EDGAR full-text search over all filers; Pfizer's first is its Q1 2011 earnings 8-K (accepted 2011-05-03 08:54 ET)"
+   },
+   {
+    "term": "Zoetis",
+    "first_seen": "2012-07-31",
+    "note": "the name of Pfizer's animal health business as a separate company; first in a Pfizer filing in its Q2 2012 earnings 8-K (accepted 2012-07-31 08:54 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Xeljanz",
+    "first_seen": "2012-11-09",
+    "note": "the brand name of tofacitinib; first in a Pfizer filing in its Q3 2012 10-Q (accepted 2012-11-09 13:39 ET), EDGAR full-text search"
+   },
+   {
+    "term": "Ibrance",
+    "first_seen": "2015-01-27",
+    "note": "the brand name of palbociclib; first in a Pfizer filing in its Q4 2014 earnings 8-K (accepted 2015-01-27 08:43 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Pfizer Innovative Health",
+    "first_seen": "2016-08-02",
+    "note": "a Pfizer operating segment; first in a Pfizer filing in its Q2 2016 earnings 8-K (accepted 2016-08-02 08:55 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Pfizer Essential Health",
+    "first_seen": "2016-08-02",
+    "note": "a Pfizer operating segment; first in a Pfizer filing in its Q2 2016 earnings 8-K (accepted 2016-08-02 08:55 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Viatris",
+    "first_seen": "2019-11-13",
+    "note": "the company formed from Pfizer's Upjohn business and Mylan; first in a filing under Pfizer's CIK in a Form 425 (accepted 2019-11-12 16:51 ET, after the close, so from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "Comirnaty",
+    "first_seen": "2021-11-02",
+    "note": "the brand name of the Pfizer-BioNTech COVID-19 vaccine; first in a Pfizer filing in its Q3 2021 earnings 8-K (accepted 2021-11-02 08:25 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Paxlovid",
+    "first_seen": "2021-11-12",
+    "note": "the brand name of nirmatrelvir and ritonavir; first in a Pfizer filing in its Q3 2021 10-Q (accepted 2021-11-12 06:06 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Seagen",
+    "first_seen": "2023-03-13",
+    "note": "the company Pfizer agreed to acquire (completed 2023-12-14); first in a filing under Pfizer's CIK in its 8-K of the merger agreement (accepted 2023-03-13 08:29 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Pfizer Ignite",
+    "first_seen": "2023-05-02",
+    "note": "a Pfizer business (research and development services for biotech companies); first in a Pfizer filing in its Q1 2023 earnings 8-K (accepted 2023-05-02 08:05 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Xfinity",
+    "first_seen": "2010-02-23",
+    "note": "Comcast's consumer brand for its cable services; first in a Comcast filing in its FY2009 10-K (accepted 2010-02-23 15:47 ET, during the session), EDGAR full-text search"
+   },
+   {
+    "term": "NBCUniversal",
+    "first_seen": "2011-01-31",
+    "note": "the name of the joint venture Comcast formed with GE's NBC Universal, written as one word; first in a Comcast filing in its 8-K on the closing (accepted 2011-01-31 10:02 ET, during the session), EDGAR full-text search"
+   },
+   {
+    "term": "Peacock",
+    "first_seen": "2011-02-25",
+    "note": "an NBCUniversal name (later its streaming service); first in a Comcast filing in an exhibit to its FY2010 10-K (accepted 2011-02-25 15:02 ET, during the session), EDGAR full-text search"
+   },
+   {
+    "term": "Versant",
+    "first_seen": "2025-07-31",
+    "note": "Versant Media, the cable-network company Comcast spun off; first in a Comcast filing in its Q2 2025 earnings 8-K (accepted 2025-07-31 07:07 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Bucyrus",
+    "first_seen": "2010-01-28",
+    "note": "the mining-equipment maker Caterpillar agreed to acquire on 2010-11-15 (completed 2011-07-08); first in a filing under Caterpillar's CIK in the transcript 8-K of its Q4 2009 call (accepted 2010-01-28 13:42 ET, during the session), EDGAR full-text search"
+   },
+   {
+    "term": "Electro-Motive",
+    "first_seen": "2010-06-01",
+    "note": "Electro-Motive Diesel, the locomotive maker Progress Rail agreed to acquire; first in a Caterpillar filing in its 8-K of the agreement (accepted 2010-06-01 08:33 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Siwei",
+    "first_seen": "2012-04-30",
+    "note": "Zhengzhou Siwei, the Chinese roof-support maker Caterpillar bought through ERA Mining Machinery in 2012; first in a filing under Caterpillar's CIK in its Form CB (accepted 2012-04-30 14:28 ET, during the session), EDGAR full-text search"
+   },
+   {
+    "term": "Onglyza",
+    "first_seen": "2008-07-24",
+    "note": "the brand name of saxagliptin (Bristol-Myers Squibb and AstraZeneca); first in a Bristol-Myers Squibb filing in its Q2 2008 earnings 8-K (accepted 2008-07-24 08:06 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Nulojix",
+    "first_seen": "2010-10-26",
+    "note": "the brand name of belatacept; first in a Bristol-Myers Squibb filing in its Q3 2010 10-Q (accepted 2010-10-26 10:29 ET, during the session), EDGAR full-text search"
+   },
+   {
+    "term": "Yervoy",
+    "first_seen": "2011-02-18",
+    "note": "the brand name of ipilimumab; first in a Bristol-Myers Squibb filing in its FY2010 10-K (accepted 2011-02-18 13:34 ET, during the session), EDGAR full-text search"
+   },
+   {
+    "term": "Farxiga",
+    "first_seen": "2014-01-24",
+    "note": "the U.S. brand name of dapagliflozin; first in a Bristol-Myers Squibb filing in its Q4 2013 earnings 8-K (accepted 2014-01-24 08:40 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Opdivo",
+    "first_seen": "2014-07-24",
+    "note": "the brand name of nivolumab; first in a Bristol-Myers Squibb filing in its Q2 2014 earnings 8-K (accepted 2014-07-24 08:35 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Daklinza",
+    "first_seen": "2014-07-24",
+    "note": "the brand name of daclatasvir; first in a Bristol-Myers Squibb filing in its Q2 2014 earnings 8-K (accepted 2014-07-24 08:35 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Empliciti",
+    "first_seen": "2015-10-27",
+    "note": "the brand name of elotuzumab; first in a Bristol-Myers Squibb filing in its Q3 2015 10-Q (accepted 2015-10-27 12:36 ET, during the session), EDGAR full-text search"
+   },
+   {
+    "term": "Reblozyl",
+    "first_seen": "2019-11-21",
+    "note": "the brand name of luspatercept (from Celgene); first in a Bristol-Myers Squibb filing in an 8-K exhibit (accepted 2019-11-20 17:21 ET, after the close, so from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "Zeposia",
+    "first_seen": "2020-04-23",
+    "note": "the brand name of ozanimod (from Celgene); first in a Bristol-Myers Squibb filing in a DEFA14A (accepted 2020-04-23 08:59 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Breyanzi",
+    "first_seen": "2021-02-10",
+    "note": "the brand name of lisocabtagene maraleucel; first in a Bristol-Myers Squibb filing in its FY2020 10-K (accepted 2021-02-10 15:13 ET, during the session), EDGAR full-text search"
+   },
+   {
+    "term": "Abecma",
+    "first_seen": "2021-04-19",
+    "note": "the brand name of idecabtagene vicleucel; first in a Bristol-Myers Squibb filing in a DEFA14A (accepted 2021-04-19 07:41 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Opdualag",
+    "first_seen": "2022-04-21",
+    "note": "the brand name of nivolumab and relatlimab; first in a Bristol-Myers Squibb filing in a DEFA14A (accepted 2022-04-20 16:30 ET, after the close, so from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "Camzyos",
+    "first_seen": "2022-04-29",
+    "note": "the brand name of mavacamten (from MyoKardia); first in a Bristol-Myers Squibb filing in its Q1 2022 earnings 8-K (accepted 2022-04-29 07:42 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Sotyktu",
+    "first_seen": "2022-10-26",
+    "note": "the brand name of deucravacitinib; first in a Bristol-Myers Squibb filing in its Q3 2022 earnings 8-K (accepted 2022-10-26 07:48 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Krazati",
+    "first_seen": "2023-10-10",
+    "note": "the brand name of adagrasib (Mirati Therapeutics, acquired 2024); first in a filing under Bristol-Myers Squibb's CIK in a DFAN14A (accepted 2023-10-10 06:48 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Cobenfy",
+    "first_seen": "2024-10-31",
+    "note": "the brand name of xanomeline and trospium chloride (from Karuna Therapeutics); first in a Bristol-Myers Squibb filing in its Q3 2024 earnings 8-K (accepted 2024-10-31 07:52 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Tegra",
+    "first_seen": "2008-08-13",
+    "note": "NVIDIA's computer-on-a-chip brand; first in an NVIDIA filing in its Q2 FY09 earnings 8-K (accepted 2008-08-12 16:49 ET, after the close, so it counts from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "3D Vision",
+    "first_seen": "2009-02-11",
+    "note": "NVIDIA's GeForce 3D Vision stereoscopic product; first in an NVIDIA filing in its Q4 FY09 earnings 8-K (accepted 2009-02-10 16:29 ET, after the close, so it counts from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "Fermi",
+    "first_seen": "2009-11-06",
+    "note": "NVIDIA's GPU architecture announced in 2009; first in an NVIDIA filing in its Q3 FY10 earnings 8-K (accepted 2009-11-05 16:25 ET, after the close, so it counts from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "Optimus",
+    "first_seen": "2010-02-18",
+    "note": "NVIDIA's notebook graphics-switching technology; first in an NVIDIA filing in its Q4 FY10 earnings 8-K (accepted 2010-02-17 16:50 ET, after the close, so it counts from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "Kepler",
+    "first_seen": "2012-02-16",
+    "note": "NVIDIA's GPU architecture after Fermi; first in an NVIDIA filing in its Q4 FY12 earnings 8-K (accepted 2012-02-15 16:40 ET, after the close, so it counts from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "NVLink",
+    "first_seen": "2014-05-09",
+    "note": "NVIDIA's GPU interconnect; first in an NVIDIA filing in its Q1 FY15 earnings 8-K (accepted 2014-05-08 16:28 ET, after the close, so it counts from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "Jetson",
+    "first_seen": "2014-05-09",
+    "note": "NVIDIA's embedded computing modules; first in an NVIDIA filing in its Q1 FY15 earnings 8-K (accepted 2014-05-08 16:28 ET, after the close, so it counts from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "GeForce NOW",
+    "first_seen": "2015-11-06",
+    "note": "NVIDIA's cloud gaming service; first in an NVIDIA filing in its Q3 FY16 earnings 8-K (accepted 2015-11-05 16:25 ET, after the close, so it counts from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "DGX",
+    "first_seen": "2016-05-13",
+    "note": "NVIDIA's AI systems; first in an NVIDIA filing in its Q1 FY17 earnings 8-K (accepted 2016-05-12 16:39 ET, after the close, so it counts from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "DLSS",
+    "first_seen": "2019-02-15",
+    "note": "NVIDIA's deep learning super sampling; first in an NVIDIA filing in its Q4 FY19 earnings 8-K (accepted 2019-02-14 16:23 ET, after the close, so it counts from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "Omniverse",
+    "first_seen": "2019-05-17",
+    "note": "NVIDIA's 3D collaboration platform; first in an NVIDIA filing in its Q1 FY20 earnings 8-K (accepted 2019-05-16 16:22 ET, after the close, so it counts from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "Ford Next",
+    "first_seen": "2022-02-04",
+    "note": "Ford's former mobility business unit; first in a Ford filing in its FY2021 10-K (accepted 2022-02-03 18:24 ET, after the close, so it counts from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "Model e",
+    "first_seen": "2022-03-02",
+    "note": "Ford's electric-vehicle business segment (Ford Model e); first in a Ford filing in its 8-K of 2022-03-02 (accepted 07:03 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Universal EV Platform",
+    "first_seen": "2025-12-16",
+    "note": "Ford's low-cost EV platform; first in a Ford filing in its 8-K of 2025-12-15 (accepted 16:07 ET, after the close, so it counts from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "Ford Energy",
+    "first_seen": "2026-02-11",
+    "note": "Ford's energy-storage business; first in a Ford filing in its Q4 2025 earnings 8-K (accepted 2026-02-10 16:08 ET, after the close, so it counts from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "New Corteva",
+    "first_seen": "2025-10-01",
+    "note": "Corteva's name for its crop protection business after the planned separation; first in a Corteva filing in the 8-K announcing the plan (accepted 2025-10-01 06:55 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Vylor",
+    "first_seen": "2026-05-06",
+    "note": "the name of the seed company Corteva spun off; first in a Corteva filing in the Q1 2026 release (8-K accepted 2026-05-05 16:41 ET, after the close, so from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "Information Systems & Global Solutions",
+    "first_seen": "2010-06-02",
+    "note": "Lockheed Martin's renamed IS&GS segment; first in a Lockheed Martin filing in the 8-K of 2010-06-02 (accepted 08:47 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Mission Systems and Training",
+    "first_seen": "2012-10-24",
+    "note": "a Lockheed Martin business segment; first in a Lockheed Martin filing in its Q3 2012 earnings 8-K (accepted 2012-10-24 07:37 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "Rotary and Mission Systems",
+    "first_seen": "2016-10-25",
+    "note": "a Lockheed Martin business segment after the Sikorsky acquisition; first in a Lockheed Martin filing in its Q3 2016 earnings 8-K (accepted 2016-10-25 07:32 ET, before the open), EDGAR full-text search"
+   },
+   {
+    "term": "MeiYa",
+    "first_seen": "2008-04-23",
+    "note": "Micron's stack DRAM joint venture with Nanya (MeiYa Technology); first in a Micron filing in its 8-K of 2008-04-23 (accepted 12:50 ET, during the session), EDGAR full-text search"
+   },
+   {
+    "term": "Aptina",
+    "first_seen": "2008-07-08",
+    "note": "Micron's imaging business (Aptina Imaging); first in a Micron filing in its Q3 FY08 10-Q (accepted 2008-07-08 15:30 ET, during the session), EDGAR full-text search"
+   },
+   {
+    "term": "Hybrid Memory Cube",
+    "first_seen": "2013-02-06",
+    "note": "Micron's stacked DRAM architecture; first in a Micron filing in its 8-K of 2013-02-05 (accepted 16:07 ET, after the close, so it counts from the next trading day), EDGAR full-text search"
+   },
+   {
+    "term": "3D XPoint",
+    "first_seen": "2015-10-27",
+    "note": "the memory technology Micron and Intel announced in 2015; first in a Micron filing in its FY2015 10-K (accepted 2015-10-27 15:37 ET, during the session), EDGAR full-text search"
+   },
+   {
+    "term": "Google Chrome",
+    "first_seen": "2009-02-04",
+    "note": "Google's web browser (released 2008-09-02); first in a Google filing in its option-exchange tender offer (SC TO-I, accepted 2009-02-03 17:25 ET, after the close, so it counts from the next trading day), then the FY2008 10-K, EDGAR full-text search"
+   },
+   {
+    "term": "Nexus One",
+    "first_seen": "2010-02-16",
+    "note": "Google's phone (2010); first in a Google filing in its FY2009 10-K (accepted 2010-02-12 17:19 ET, after the close; 2010-02-15 was a market holiday), EDGAR full-text search"
+   },
+   {
+    "term": "Google Play",
+    "first_seen": "2012-04-16",
+    "note": "Google's app and content store (2012); first in a Google filing in a DEFA14A (accepted 2012-04-13 17:28 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "Chromebook",
+    "first_seen": "2014-02-12",
+    "note": "Chrome OS laptops (2011); first in a Google filing in its FY2013 10-K (accepted 2014-02-11 18:08 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "GOOGL",
+    "first_seen": "2014-02-12",
+    "note": "the NASDAQ symbol the Class A common stock took when the Class C capital stock was distributed in 2014 (the Class A traded as GOOG before); first in a Google filing in its FY2013 10-K (accepted 2014-02-11 18:08 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "Alphabet Inc",
+    "first_seen": "2015-08-11",
+    "note": "the holding company announced for Google; first in a Google filing in its 8-K of 2015-08-10 (accepted 16:45 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "Other Bets",
+    "first_seen": "2015-10-23",
+    "note": "Alphabet's reporting name for its non-Google businesses (2015); first in a Google filing in the Q3 2015 earnings 8-K (ex.99.1, accepted 2015-10-22 16:09 ET under Google Inc., after the close), EDGAR full-text search"
+   },
+   {
+    "term": "Verily",
+    "first_seen": "2016-02-12",
+    "note": "Alphabet's life sciences unit (renamed from Google Life Sciences in 2015); first in a Google or Alphabet filing in the FY2015 10-K (accepted 2016-02-11 16:38 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "Waymo",
+    "first_seen": "2017-02-03",
+    "note": "Alphabet's self-driving car unit (2016); first in a Google or Alphabet filing in the FY2016 10-K (accepted 2017-02-02 18:13 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "Google Assistant",
+    "first_seen": "2017-02-03",
+    "note": "Google's voice assistant (2016); first in a Google or Alphabet filing in the FY2016 10-K (accepted 2017-02-02 18:13 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "Google Home",
+    "first_seen": "2017-02-03",
+    "note": "Google's smart speaker (2016); first in a Google or Alphabet filing in the FY2016 10-K (accepted 2017-02-02 18:13 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "DeepMind",
+    "first_seen": "2017-04-28",
+    "note": "Google's AI research unit (acquired 2014); first in a Google or Alphabet filing in the Q1 2017 earnings 8-K (the founders' letter, accepted 2017-04-27 16:02 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "YouTube TV",
+    "first_seen": "2020-02-04",
+    "note": "YouTube's live TV subscription (2017); first in a Google or Alphabet filing in the FY2019 10-K (accepted 2020-02-03 21:03 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "Google Pixel",
+    "first_seen": "2023-04-24",
+    "note": "Google's phone line (2016) by its full name; first in a Google or Alphabet filing in the 2022 annual report to shareholders (ARS, accepted 2023-04-21 17:13 ET on a Friday, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "Tensor Processing Unit",
+    "first_seen": "2026-04-27",
+    "note": "Google's AI accelerator (2016) by its full name; first in a Google or Alphabet filing in the 2026 proxy statement (DEF 14A, accepted 2026-04-24 16:15 ET on a Friday, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "Fitbit",
+    "first_seen": "2020-02-04",
+    "note": "the wearables maker Google agreed to buy in 2019; first in a Google or Alphabet filing in the FY2019 10-K (accepted 2020-02-03 21:03 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "Google Workspace",
+    "first_seen": "2020-10-30",
+    "note": "Google's renamed productivity suite (G Suite until 2020); first in a Google or Alphabet filing in the Q3 2020 10-Q (accepted 2020-10-29 19:30 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "YouTube Shorts",
+    "first_seen": "2022-10-26",
+    "note": "YouTube's short-video format (2020) by its full name; first in a Google or Alphabet filing in the Q3 2022 earnings 8-K (ex.99.1, accepted 2022-10-25 16:01 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "Pixel Watch",
+    "first_seen": "2023-02-03",
+    "note": "Google's smartwatch (2022); first in a Google or Alphabet filing in the FY2022 10-K (accepted 2023-02-02 21:23 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "Google DeepMind",
+    "first_seen": "2023-04-21",
+    "note": "the AI unit formed by combining DeepMind and Google Research's Brain team (2023); first in a Google or Alphabet filing in the 8-K of 2023-04-20 (ex.99.1, accepted 16:24 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "Search Generative Experience",
+    "first_seen": "2024-01-31",
+    "note": "Google's generative-AI search test (2023); first in a Google or Alphabet filing in the FY2023 10-K (accepted 2024-01-30 21:43 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "Duet AI",
+    "first_seen": "2024-01-31",
+    "note": "Google's AI assistant for Workspace and Cloud (2023); first in a Google or Alphabet filing in the FY2023 10-K (accepted 2024-01-30 21:43 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "Gemini App",
+    "first_seen": "2024-10-30",
+    "note": "Google's Gemini assistant app (2024); first in a Google or Alphabet filing in the Q3 2024 earnings 8-K (ex.99.1, accepted 2024-10-29 16:01 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "AI Overviews",
+    "first_seen": "2025-02-05",
+    "note": "Google Search's generative-AI summaries (2024); first in a Google or Alphabet filing in the Q4 2024 earnings 8-K (ex.99.1, accepted 2025-02-04 16:01 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "NotebookLM",
+    "first_seen": "2025-02-05",
+    "note": "Google's AI research notebook (2023); first in a Google or Alphabet filing in the FY2024 10-K (accepted 2025-02-04 20:41 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "Gemini Enterprise",
+    "first_seen": "2025-10-30",
+    "note": "Google Cloud's AI agent platform (2025); first in a Google or Alphabet filing in the Q3 2025 10-Q (accepted 2025-10-29 21:55 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "Gemini 3",
+    "first_seen": "2026-02-05",
+    "note": "Google's model generation released in November 2025; first in a Google or Alphabet filing in the Q4 2025 earnings 8-K (ex.99.1, accepted 2026-02-04 16:01 ET, after the close), EDGAR full-text search"
+   },
+   {
+    "term": "McGraw-Hill Financial",
+    "first_seen": "2011-02-01",
+    "note": "the McGraw-Hill segment launched with the Q4 2010 results (8-K, ex.99, accepted 2011-02-01 before the open: 'launch of new segment, McGraw-Hill Financial'); earlier EDGAR full-text hits under CIK 64040 are punctuation artifacts, a 1989-1993 biography line ('McGraw-Hill Financial Services Company') and a subsidiary name"
+   },
+   {
+    "term": "McGraw Hill Financial",
+    "first_seen": "2011-02-01",
+    "note": "the company's name from 2013-05-01 (EDGAR's name record), dated with the hyphenated segment name it grew from"
+   },
+   {
+    "term": "S&P Capital IQ",
+    "first_seen": "2011-09-12",
+    "note": "McGraw-Hill's data and analytics brand; first in a filing under CIK 64040 in the 8-K of 2011-09-12 (ex.99.1, 'the newly launched S&P Capital IQ'), EDGAR full-text search"
+   },
+   {
+    "term": "S&P/Dow Jones Indices",
+    "first_seen": "2011-11-04",
+    "note": "the index joint venture announced in the 8-K of 2011-11-04 (ex.99.1), EDGAR full-text search"
+   },
+   {
+    "term": "S&P Dow Jones Indices",
+    "first_seen": "2011-11-04",
+    "note": "the same joint venture's later spelling, dated with its first announcement (8-K of 2011-11-04)"
+   },
+   {
+    "term": "Commodities & Commercial",
+    "first_seen": "2012-01-31",
+    "note": "McGraw-Hill's segment of Platts, J.D. Power and Associates, McGraw-Hill Construction and Aviation Week; first in a filing under CIK 64040 in the Q4 2011 results (8-K, ex.99, accepted 2012-01-31 before the open), EDGAR full-text search"
+   },
+   {
+    "term": "MHFI",
+    "first_seen": "2013-04-30",
+    "note": "McGraw Hill Financial's NYSE symbol from 2013-05-14; first in a filing under CIK 64040 in the Q1 2013 results (8-K, ex.99, accepted 2013-04-30 before the open: 'New Ticker Symbol, MHFI, Will Begin Trading on May 14th'), EDGAR full-text search (the earlier hits are other filers' abbreviations)"
+   },
+   {
+    "term": "S&P Global Market Intelligence",
+    "first_seen": "2016-02-26",
+    "note": "first in a filing under CIK 64040 in the 8-K of 2016-02-26 (ex.99), EDGAR full-text search"
+   },
+   {
+    "term": "S&P Global Inc",
+    "first_seen": "2016-03-04",
+    "note": "McGraw Hill Financial's new name (effective 2016-04-28), first in the PRE 14A of 2016-03-04, EDGAR full-text search"
+   },
+   {
+    "term": "S&P Global Ratings",
+    "first_seen": "2016-06-29",
+    "note": "first in a filing under CIK 64040 in the S-3 of 2016-06-29, EDGAR full-text search"
+   },
+   {
+    "term": "S&P Capital IQ and SNL",
+    "first_seen": "2015-09-08",
+    "note": "McGraw Hill Financial's segment after the SNL Financial acquisition (2015-09-01); first in a filing under CIK 64040 in the 8-K of 2015-09-08 (ex.99.1, 'The combination of S&P Capital IQ and SNL Financial'), EDGAR full-text search"
+   },
+   {
+    "term": "S&P Global Platts",
+    "first_seen": "2016-06-29",
+    "note": "S&P Global's commodities business; first in a filing under CIK 64040 in the S-3 of 2016-06-29, EDGAR full-text search"
+   },
+   {
+    "term": "Market and Commodities Intelligence",
+    "first_seen": "2016-11-03",
+    "note": "S&P Global's segment of Market Intelligence and Platts from the fourth quarter of 2016; first in a filing under CIK 64040 in the Q3 2016 results (8-K, ex.99.1, accepted 2016-11-03 before the open: 'a new segment to be named Market and Commodities Intelligence'), EDGAR full-text search"
+   },
+   {
+    "term": "Mobility Global",
+    "first_seen": "2026-03-31",
+    "note": "S&P Global's mobility business, distributed on 2026-07-01; first in a filing under CIK 64040 in the DEF 14A of 2026-03-31, EDGAR full-text search"
+   },
+   {
+    "term": "Commodity Insights",
+    "first_seen": "2022-02-28",
+    "note": "S&P Global's commodities segment after the IHS Markit merger (Platts and IHS Markit's resources businesses); first in a filing under CIK 64040 in the 8-K of 2022-02-28 (ex.99, the pro forma combined segments), EDGAR full-text search"
+   },
+   {
+    "term": "S&P Global Commodity Insights",
+    "first_seen": "2022-05-04",
+    "note": "the segment's full name; first in a filing under CIK 64040 in the Q1 2022 10-Q, EDGAR full-text search"
+   },
+   {
+    "term": "Engineering Solutions",
+    "first_seen": "2022-02-28",
+    "note": "S&P Global's engineering segment from the IHS Markit merger (sold on 2023-05-02); first in a filing under CIK 64040 in the 8-K of 2022-02-28 (ex.99), EDGAR full-text search"
+   },
+   {
+    "term": "S&P Global Mobility",
+    "first_seen": "2022-05-04",
+    "note": "S&P Global's automotive segment from the IHS Markit merger (distributed as Mobility Global on 2026-07-01); first in a filing under CIK 64040 in the Q1 2022 10-Q, EDGAR full-text search"
+   },
+   {
+    "term": "IHS Markit",
+    "first_seen": "2017-02-09",
+    "note": "the company formed by the 2016 IHS-Markit merger, merged into S&P Global on 2022-02-28; first in a filing under CIK 64040 in the FY2016 10-K (its peer group, 'IHS Markit Ltd.'), EDGAR full-text search"
+   },
+   {
+    "term": "OSTTRA",
+    "first_seen": "2022-02-28",
+    "note": "the post-trade joint venture with CME Group (formed September 2021, sold in 2025); first in a filing under CIK 64040 in the 8-K of 2022-02-28 (ex.99), EDGAR full-text search"
+   },
+   {
+    "term": "S&P Global Energy",
+    "first_seen": "2025-11-13",
+    "note": "the Commodity Insights segment's new name; first in a filing under CIK 64040 in the Investor Day 8-K of 2025-11-13 (ex.99), EDGAR full-text search"
+   },
+   {
+    "term": "Chubb Limited",
+    "first_seen": "2015-07-07",
+    "note": "ACE Limited's name after it acquired The Chubb Corporation (the CB series key's later company); first in a filing under CIK 896159 in the 8-K of 2015-07-07 (Item 1.01, the merger agreement: 'to change its name from ACE Limited to Chubb Limited'), EDGAR full-text search. The Chubb Corporation, NYSE: CB in 2008-2009, is a different company, so 'Chubb' alone is not anachronistic"
+   },
+   {
+    "term": "Effient",
+    "first_seen": "2008-01-29",
+    "note": "an Eli Lilly product name; first in a filing under CIK 59478 in the 8-K of 2008-01-29 (ex.99), EDGAR full-text search"
+   },
+   {
+    "term": "Livalo",
+    "first_seen": "2010-01-28",
+    "note": "an Eli Lilly product name; first in a filing under CIK 59478 in the 8-K of 2010-01-28 (ex.99), EDGAR full-text search"
+   },
+   {
+    "term": "Axiron",
+    "first_seen": "2010-04-19",
+    "note": "an Eli Lilly product name; first in a filing under CIK 59478 in the 8-K of 2010-04-19 (ex.99), EDGAR full-text search"
+   },
+   {
+    "term": "Bydureon",
+    "first_seen": "2010-04-19",
+    "note": "an Eli Lilly product name; first in a filing under CIK 59478 in the 8-K of 2010-04-19 (ex.99), EDGAR full-text search"
+   },
+   {
+    "term": "Tradjenta",
+    "first_seen": "2011-06-30",
+    "note": "an Eli Lilly product name; first in a filing under CIK 59478 in the 8-K of 2011-06-30 (ex.99), EDGAR full-text search"
+   },
+   {
+    "term": "Jentadueto",
+    "first_seen": "2012-01-31",
+    "note": "an Eli Lilly product name; first in a filing under CIK 59478 in the 8-K of 2012-01-31 (ex.99), EDGAR full-text search"
+   },
+   {
+    "term": "Cyramza",
+    "first_seen": "2014-04-24",
+    "note": "an Eli Lilly product name; first in a filing under CIK 59478 in the 8-K of 2014-04-24 (ex.99), EDGAR full-text search"
+   },
+   {
+    "term": "Jardiance",
+    "first_seen": "2014-07-24",
+    "note": "an Eli Lilly product name; first in a filing under CIK 59478 in the 8-K of 2014-07-24 (ex.99), EDGAR full-text search"
+   },
+   {
+    "term": "Trulicity",
+    "first_seen": "2014-10-23",
+    "note": "an Eli Lilly product name; first in a filing under CIK 59478 in the 8-K of 2014-10-23 (ex.99), EDGAR full-text search"
+   },
+   {
+    "term": "Basaglar",
+    "first_seen": "2014-10-23",
+    "note": "an Eli Lilly product name; first in a filing under CIK 59478 in the 8-K of 2014-10-23 (ex.99), EDGAR full-text search"
+   },
+   {
+    "term": "Glyxambi",
+    "first_seen": "2015-02-20",
+    "note": "an Eli Lilly product name; first in a filing under CIK 59478 in the 10-K of 2015-02-19, accepted 16:02 ET after the close, so from the next trading day, EDGAR full-text search"
+   },
+   {
+    "term": "Synjardy",
+    "first_seen": "2015-04-23",
+    "note": "an Eli Lilly product name; first in a filing under CIK 59478 in the 8-K of 2015-04-23 (ex.99), EDGAR full-text search"
+   },
+   {
+    "term": "Portrazza",
+    "first_seen": "2016-01-05",
+    "note": "an Eli Lilly product name; first in a filing under CIK 59478 in the 8-K of 2016-01-05 (ex.99), EDGAR full-text search"
+   },
+   {
+    "term": "Taltz",
+    "first_seen": "2016-04-26",
+    "note": "an Eli Lilly product name; first in a filing under CIK 59478 in the 8-K of 2016-04-26 (ex.99), EDGAR full-text search"
+   },
+   {
+    "term": "Lartruvo",
+    "first_seen": "2016-10-25",
+    "note": "an Eli Lilly product name; first in a filing under CIK 59478 in the 8-K of 2016-10-25 (ex.99), EDGAR full-text search"
+   },
+   {
+    "term": "Olumiant",
+    "first_seen": "2017-02-21",
+    "note": "an Eli Lilly product name; first in a filing under CIK 59478 in the 10-K of 2017-02-21, EDGAR full-text search"
+   },
+   {
+    "term": "Verzenio",
+    "first_seen": "2017-10-24",
+    "note": "an Eli Lilly product name; first in a filing under CIK 59478 in the 8-K of 2017-10-24 (ex.99), EDGAR full-text search"
+   },
+   {
+    "term": "Emgality",
+    "first_seen": "2018-11-06",
+    "note": "an Eli Lilly product name; first in a filing under CIK 59478 in the 8-K of 2018-11-06 (ex.99), EDGAR full-text search"
+   },
+   {
+    "term": "Baqsimi",
+    "first_seen": "2019-07-30",
+    "note": "an Eli Lilly product name; first in a filing under CIK 59478 in the 8-K of 2019-07-30 (ex.99), EDGAR full-text search"
+   },
+   {
+    "term": "Reyvow",
+    "first_seen": "2019-10-23",
+    "note": "an Eli Lilly product name; first in a filing under CIK 59478 in the 8-K of 2019-10-23 (ex.99), EDGAR full-text search"
+   },
+   {
+    "term": "Trijardy",
+    "first_seen": "2020-01-30",
+    "note": "an Eli Lilly product name; first in a filing under CIK 59478 in the 8-K of 2020-01-30 (ex.99), EDGAR full-text search"
+   },
+   {
+    "term": "Lyumjev",
+    "first_seen": "2020-05-01",
+    "note": "an Eli Lilly product name; first in a filing under CIK 59478 in the 10-Q of 2020-05-01, EDGAR full-text search"
+   },
+   {
+    "term": "Retevmo",
+    "first_seen": "2020-07-30",
+    "note": "an Eli Lilly product name; first in a filing under CIK 59478 in the 8-K of 2020-07-30 (ex.99), EDGAR full-text search"
+   },
+   {
+    "term": "Mounjaro",
+    "first_seen": "2022-08-04",
+    "note": "an Eli Lilly product name; first in a filing under CIK 59478 in the 8-K of 2022-08-04 (ex.99), EDGAR full-text search"
+   },
+   {
+    "term": "Jaypirca",
+    "first_seen": "2023-02-02",
+    "note": "an Eli Lilly product name; first in a filing under CIK 59478 in the 8-K of 2023-02-02 (ex.99), EDGAR full-text search"
+   },
+   {
+    "term": "Rezvoglar",
+    "first_seen": "2023-04-27",
+    "note": "an Eli Lilly product name; first in a filing under CIK 59478 in the 10-Q of 2023-04-27, EDGAR full-text search"
+   },
+   {
+    "term": "Omvoh",
+    "first_seen": "2023-04-27",
+    "note": "an Eli Lilly product name; first in a filing under CIK 59478 in the 10-Q of 2023-04-27, EDGAR full-text search"
+   },
+   {
+    "term": "Ebglyss",
+    "first_seen": "2024-02-06",
+    "note": "an Eli Lilly product name; first in a filing under CIK 59478 in the 8-K of 2024-02-06 (ex.99), EDGAR full-text search"
+   },
+   {
+    "term": "Kisunla",
+    "first_seen": "2024-08-08",
+    "note": "an Eli Lilly product name; first in a filing under CIK 59478 in the 8-K of 2024-08-08 (ex.99), EDGAR full-text search"
+   },
+   {
+    "term": "Inluriyo",
+    "first_seen": "2025-10-30",
+    "note": "an Eli Lilly product name; first in a filing under CIK 59478 in the 8-K of 2025-10-30 (ex.99), EDGAR full-text search"
+   },
+   {
+    "term": "Foundayo",
+    "first_seen": "2026-04-30",
+    "note": "an Eli Lilly product name; first in a filing under CIK 59478 in the 8-K of 2026-04-30 (ex.99), EDGAR full-text search"
+   },
+   {
+    "term": "Onswik",
+    "first_seen": "2026-10-29",
+    "note": "an Eli Lilly product name; first in a filing under CIK 59478 in the 8-K of 2026-10-29 (ex.99), EDGAR full-text search"
+   },
+   {
+    "term": "UnitedHealthcare Community & State",
+    "first_seen": "2010-10-19",
+    "note": "UnitedHealth Group's renamed Medicaid business (AmeriChoice before); first in the Q3 2010 release (8-K accepted 2010-10-19 06:09 ET, before the open; EDGAR full-text search, CIK 731766)"
+   },
+   {
+    "term": "OptumRx",
+    "first_seen": "2011-04-21",
+    "note": "UnitedHealth Group's renamed pharmacy benefit business (Prescription Solutions before); first in the Q1 2011 release (8-K accepted 2011-04-21 06:12 ET, before the open; EDGAR full-text search, CIK 731766)"
+   },
+   {
+    "term": "OptumInsight",
+    "first_seen": "2011-04-21",
+    "note": "UnitedHealth Group's renamed health information business (Ingenix before); first in the Q1 2011 release (8-K accepted 2011-04-21 06:12 ET, before the open; EDGAR full-text search, CIK 731766)"
+   },
+   {
+    "term": "Optum360",
+    "first_seen": "2013-10-17",
+    "note": "first in UnitedHealth Group's Q3 2013 release (8-K accepted 2013-10-17 06:06 ET, before the open; EDGAR full-text search, CIK 731766)"
+   },
+   {
+    "term": "OptumCare",
+    "first_seen": "2015-04-16",
+    "note": "first in UnitedHealth Group's Q1 2015 release (8-K accepted 2015-04-16 06:01 ET, before the open; EDGAR full-text search, CIK 731766)"
+   },
+   {
+    "term": "Service Cloud",
+    "first_seen": "2009-08-21",
+    "note": "salesforce.com's customer service application; first in a salesforce.com filing in its Q2 FY10 release (8-K accepted 2009-08-20 16:33 ET, after the close, so it counts from the next trading day); EDGAR full-text search, CIK 1108524"
+   },
+   {
+    "term": "Sales Cloud",
+    "first_seen": "2010-02-25",
+    "note": "salesforce.com's sales application; first in its Q4 FY10 release (8-K accepted 2010-02-24 16:32 ET, after the close); EDGAR full-text search, CIK 1108524"
+   },
+   {
+    "term": "Chatter",
+    "first_seen": "2010-02-25",
+    "note": "salesforce.com's collaboration application; first in its Q4 FY10 release (8-K accepted 2010-02-24 16:32 ET, after the close); EDGAR full-text search, CIK 1108524"
+   },
+   {
+    "term": "Heroku",
+    "first_seen": "2010-12-08",
+    "note": "the platform salesforce.com acquired; first in a salesforce.com filing in its 8-K of 2010-12-08 (accepted 06:38 ET, before the open); EDGAR full-text search, CIK 1108524"
+   },
+   {
+    "term": "Radian6",
+    "first_seen": "2011-03-31",
+    "note": "the social media monitoring company salesforce.com acquired; first in its 8-K of 2011-03-30 (accepted 17:01 ET, after the close); EDGAR full-text search, CIK 1108524"
+   },
+   {
+    "term": "Database.com",
+    "first_seen": "2011-11-18",
+    "note": "first in salesforce.com's Q3 FY12 release (8-K accepted 2011-11-17 16:30 ET, after the close); EDGAR full-text search, CIK 1108524"
+   },
+   {
+    "term": "Data.com",
+    "first_seen": "2011-11-18",
+    "note": "first in salesforce.com's Q3 FY12 release (8-K accepted 2011-11-17 16:30 ET, after the close); EDGAR full-text search, CIK 1108524"
+   },
+   {
+    "term": "Desk.com",
+    "first_seen": "2012-05-18",
+    "note": "first in salesforce.com's Q1 FY13 release (8-K accepted 2012-05-17 16:27 ET, after the close); EDGAR full-text search, CIK 1108524"
+   },
+   {
+    "term": "Marketing Cloud",
+    "first_seen": "2012-08-24",
+    "note": "first in salesforce.com's Q2 FY13 release (8-K accepted 2012-08-23 16:35 ET, after the close); EDGAR full-text search, CIK 1108524"
+   },
+   {
+    "term": "Work.com",
+    "first_seen": "2012-11-21",
+    "note": "first in salesforce.com's Q3 FY13 release (8-K accepted 2012-11-20 16:31 ET, after the close); EDGAR full-text search, CIK 1108524"
+   },
+   {
+    "term": "Salesforce1",
+    "first_seen": "2014-02-28",
+    "note": "salesforce.com's mobile platform; first in its Q4 FY14 release (8-K accepted 2014-02-27 16:40 ET, after the close); the search's earlier hit, a 2011 SC 13G/A, matches only its file name; EDGAR full-text search, CIK 1108524"
+   },
+   {
+    "term": "Trailhead",
+    "first_seen": "2016-03-07",
+    "note": "salesforce.com's learning platform; first in its FY2016 10-K (accepted 2016-03-04 17:53 ET, after the close, so it counts from the next trading day); EDGAR full-text search, CIK 1108524"
+   },
+   {
+    "term": "Commerce Cloud",
+    "first_seen": "2016-06-01",
+    "note": "salesforce.com's name for Demandware; first in its SC TO-C of 2016-06-01 (accepted 08:13 ET, before the open); EDGAR full-text search, CIK 1108524"
+   },
+   {
+    "term": "Customer 360",
+    "first_seen": "2018-04-17",
+    "note": "first in a salesforce.com filing in its Rule 425 communication of 2018-04-17 (accepted 07:41 ET, before the open); EDGAR full-text search, CIK 1108524"
+   },
+   {
+    "term": "Einstein GPT",
+    "first_seen": "2023-04-28",
+    "note": "Salesforce's generative AI offering; first in a Salesforce filing in its annual report to security holders (ARS) of 2023-04-27 (accepted 16:12 ET, after the close); EDGAR full-text search, CIK 1108524"
+   },
+   {
+    "term": "Einstein Copilot",
+    "first_seen": "2024-05-03",
+    "note": "Salesforce's AI assistant; first in a Salesforce filing in its preliminary proxy statement of 2024-05-02 (accepted 17:05 ET, after the close); EDGAR full-text search, CIK 1108524"
+   },
+   {
+    "term": "Agentforce",
+    "first_seen": "2024-08-29",
+    "note": "Salesforce's AI agent platform; first in a Salesforce filing in its Q2 FY25 release (8-K accepted 2024-08-28 16:02 ET, after the close); EDGAR full-text search, CIK 1108524"
+   },
+   {
+    "term": "Agentforce 360",
+    "first_seen": "2025-11-19",
+    "note": "Salesforce's platform name; first in a Salesforce filing in its 8-K of 2025-11-18 on the Informatica closing (accepted 16:16 ET, after the close); EDGAR full-text search, CIK 1108524"
+   },
+   {
+    "term": "Data 360",
+    "first_seen": "2025-11-19",
+    "note": "Salesforce's data platform name; first in a Salesforce filing in its 8-K of 2025-11-18 on the Informatica closing (accepted 16:16 ET, after the close); EDGAR full-text search, CIK 1108524"
+   },
+   {
+    "term": "NextEra Energy Resources",
+    "first_seen": "2009-01-08",
+    "note": "FPL Energy, LLC's new name ('On January 7, 2009, FPL Energy, LLC, an indirect wholly owned subsidiary of FPL Group, changed its name to NextEra Energy Resources, LLC.'); first in FPL Group's 8-K accepted 2009-01-07 16:15 ET, after the close, so it counts from the next trading day; EDGAR full-text search, CIK 753308"
+   },
+   {
+    "term": "NextEra Energy, Inc.",
+    "first_seen": "2010-03-19",
+    "note": "FPL Group, Inc.'s later name; first in a filing under CIK 753308 in the 8-K accepted 2010-03-19 12:15 ET (during the session); EDGAR full-text search finds none before it"
+   },
+   {
+    "term": "XPLR Infrastructure",
+    "first_seen": "2025-01-24",
+    "note": "NextEra Energy Partners, LP's later name; first in a NextEra Energy filing among the 8-Ks and 10-Ks of 2022-2026 read for NEE in the Q4 2024 release (8-K accepted 2025-01-24 07:34 ET, before the open); the partnership's own filings were not searched"
+   },
+   {
+    "term": "Ahafo North",
+    "first_seen": "2008-02-21",
+    "note": "Newmont's project name in Ghana; first in Newmont's FY2007 10-K (accepted 2008-02-21 14:14 ET, during the session); EDGAR full-text search, CIK 1164727"
+   },
+   {
+    "term": "Newmont Goldcorp",
+    "first_seen": "2019-01-15",
+    "note": "Newmont's name after the Goldcorp acquisition; first in Newmont's 8-K accepted 2019-01-14 17:21 ET, after the close, so it counts from the next trading day; EDGAR full-text search, CIK 1164727"
+   },
+   {
+    "term": "Nevada Gold Mines",
+    "first_seen": "2019-07-01",
+    "note": "the Barrick-Newmont Nevada joint venture; first in Newmont's 8-K accepted 2019-07-01 09:11 ET, before the open; EDGAR full-text search, CIK 1164727"
+   },
+   {
+    "term": "Advanced Polymer Solutions",
+    "first_seen": "2018-02-15",
+    "note": "a LyondellBasell segment name (with the A. Schulman acquisition); first in a filing under CIK 1489393 in the 8-K of 2018-02-15 (ex.99.1), EDGAR full-text search"
+   },
+   {
+    "term": "Charter Spectrum",
+    "first_seen": "2014-02-21",
+    "approx": true,
+    "note": "Charter's later brand (CHTR); first hit of EDGAR full-text search for filings under CIK 1091667 (from 2001): the Q4 2013 release, 8-K 0001091667-14-000079 filed 2014-02-21; no CHTR model is built (retro/README.md, \"CHTR 2008-2009\"); the CHTR models from 2019-02-01 all follow it (\"CHTR 2018-2021\")"
+   },
+   {
+    "term": "Spectrum Mobile",
+    "first_seen": "2017-12-22",
+    "approx": true,
+    "note": "Charter's later mobile brand (CHTR); first hit of EDGAR full-text search for filings under CIK 1091667 (from 2001): exhibits of the S-3ASR 0001193125-17-376789 filed 2017-12-22; not read beyond the search result"
+   },
+   {
+    "term": "Liberty Broadband",
+    "first_seen": "2014-10-10",
+    "approx": true,
+    "note": "the later Charter shareholder (CHTR); first hit of EDGAR full-text search for filings under CIK 1091667 (from 2001): the SC 13D/A amendments filed 2014-10-10; not read beyond the search result"
+   },
+   {
+    "term": "Cox Transactions",
+    "first_seen": "2025-10-31",
+    "approx": true,
+    "note": "Charter's name for its 2025-2026 combination with Cox Communications (CHTR); first in the 8-Ks and 10-Ks of CIK 1091667 downloaded for \"CHTR 2022-2026\" (8-K 0001091667-25-000167, the Q3 2025 release); the 425s and proxy materials of 2025 were not searched, so an earlier use is possible"
+   },
+   {
+    "term": "Spectrum Stream TV",
+    "first_seen": "2026-11-06",
+    "approx": true,
+    "note": "a later Charter video package name (CHTR); first in the 8-Ks and 10-Ks of CIK 1091667 downloaded for \"CHTR 2022-2026\" (8-K 0001091667-26-000072, the Q3 2026 release); other filings not searched"
+   },
+   {
+    "term": "Viper Energy",
+    "first_seen": "2013-11-06",
+    "approx": true,
+    "note": "Diamondback's later mineral-interest subsidiary and its partnership (FANG); first in the Diamondback filings downloaded for \"FANG 2008-2009\" (2012-02 to 2014-03): exhibit 10.3 of the Q3 2013 10-Q 0001539838-13-000093, accepted 2013-11-05 16:37 ET (after the close); earlier filings of other issuers not searched, and \"Viper\" alone is a 2013 well name (the Q2 2013 release), so only the two words are listed; no FANG model of 2014-2017 contains it (retro/README.md, \"FANG 2014-2017\")"
+   },
+   {
+    "term": "Rattler Midstream",
+    "first_seen": "2017-04-26",
+    "approx": true,
+    "note": "Diamondback's later midstream subsidiary (FANG); first hit of EDGAR full-text search for filings under CIK 1539838 (from 2012): the S-4 0001193125-17-139727 filed 2017-04-26; not read beyond the search result; no FANG model of 2014-2017 contains it (retro/README.md, \"FANG 2014-2017\")"
+   },
+   {
+    "term": "ONE Gas",
+    "first_seen": "2013-07-25",
+    "approx": true,
+    "note": "the natural gas distribution business ONEOK separated in 2014 (OKE); earliest hit of EDGAR full-text search for filings under CIK 1039684 (from 2001), first page of results: the 8-K 0001039684-13-000074 filed 2013-07-25; not read beyond the search result"
+   },
+   {
+    "term": "Bakken NGL Pipeline",
+    "first_seen": "2010-07-27",
+    "approx": true,
+    "note": "a later ONEOK Partners pipeline (OKE); earliest hit of EDGAR full-text search for filings under CIK 1039684 (from 2001), first page of results: the 8-K 0000909281-10-000116 filed 2010-07-27; not read beyond the search result"
+   },
+   {
+    "term": "Roadrunner Gas Transmission",
+    "first_seen": "2015-04-03",
+    "approx": true,
+    "note": "a later ONEOK pipeline joint venture (OKE); earliest hit of EDGAR full-text search for filings under CIK 1039684 (from 2001), first page of results: the 8-K 0001039684-15-000025 filed 2015-04-03; not read beyond the search result"
+   },
+   {
+    "term": "Elk Creek Pipeline",
+    "first_seen": "2018-01-04",
+    "approx": true,
+    "note": "a later ONEOK NGL pipeline (OKE); earliest hit of EDGAR full-text search for filings under CIK 1039684 (from 2001), first page of results: the 424B5 0001193125-18-002952 filed 2018-01-04; not read beyond the search result"
+   },
+   {
+    "term": "Magellan Midstream",
+    "first_seen": "2023-05-15",
+    "approx": true,
+    "note": "the later ONEOK acquisition (OKE); earliest hit of EDGAR full-text search for filings under CIK 1039684 (from 2001), first page of results: the 8-K 0001193125-23-144039 filed 2023-05-15; not read beyond the search result"
    }
   ]
  }

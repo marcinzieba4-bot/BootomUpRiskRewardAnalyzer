@@ -1,0 +1,326 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "F",
+ "company": "Ford Motor Company",
+ "as_of": "2018-12-14",
+ "price_date": "2018-12-14",
+ "price": 8.52,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); automaker signals, the early era",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "Ford Motor Company: 'We are a global company based in Dearborn, Michigan.' ('Our vehicle brands are Ford and Lincoln.'); among its risk factors, 'Industry sales volume, particularly in the United States, Europe, or China, could decline if there is a financial crisis, recession, or significant geopolitical event.' and 'Ford’s results are dependent on sales of larger, more profitable vehicles, particularly in the United States.' (its own FY2017 10-K); no disruption theme in the registry is live for an automaker on this date, so the watch list is empty and the 10-K's words on the shift away from trucks and SUVs stay here (the PEP obesity rule)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "Ford Motor Company: 'We are a global company based in Dearborn, Michigan.' ('Our vehicle brands are Ford and Lincoln.'); among its risk factors, 'Industry sales volume, particularly in the United States, Europe, or China, could decline if there is a financial crisis, recession, or significant geopolitical event.' and 'Ford’s results are dependent on sales of larger, more profitable vehicles, particularly in the United States.' (its own FY2017 10-K); no disruption theme in the registry is live for an automaker on this date, so the watch list is empty and the 10-K's words on the shift away from trucks and SUVs stay here (the PEP obesity rule). durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.09x; +1% to EPP floor; model-vs-market gap +0.98; conservative 2yr +30%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.09,
+  "ratio_b_fmt": "0.09x",
+  "epp": 8.4,
+  "epp_gap_pct": 1.4,
+  "epp_adj": 0.0,
+  "proxy_composite": 1.95,
+  "sca": 0.25,
+  "adj_composite": 2.2,
+  "market_composite": 1.22,
+  "adj_gap": 0.98,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 29.5,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.73,
+    "pe": 6.4,
+    "price": 5,
+    "desc": "EPS -28.0%/yr (worst year FY09-FY17, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 1.32,
+    "pe": 7.7,
+    "price": 10,
+    "desc": "EPS +-2.8%/yr (Q3 revenue + margin + buyback); P/E at its 10-yr ex-FY08 median"
+   },
+   "BULL": {
+    "eps": 5.11,
+    "pe": 9.4,
+    "price": 48,
+    "desc": "EPS +91.1%/yr (FY09-FY17 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 211.4,
+    "pe": 158.0,
+    "price": 33401,
+    "desc": "EPS +1128.8%/yr (best 2-yr run FY09-FY17); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.09,
+   "epp_gap_pct": 1.4,
+   "adj_gap": 0.98,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 29.5,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.0,
+   "epp_gap_pct": 1.4,
+   "adj_gap": 0.98,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 29.5,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 0.12,
+   "epp_gap_pct": 1.4,
+   "adj_gap": 0.98,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 29.5,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.09,
+   "epp_gap_pct": 1.4,
+   "adj_gap": 0.98,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 29.5,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.09,
+   "epp_gap_pct": 1.4,
+   "adj_gap": 0.98,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 29.5,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.09,
+   "epp_gap_pct": 1.4,
+   "adj_gap": 1.28,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 29.5,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.09,
+   "epp_gap_pct": -32.4,
+   "adj_gap": 1.18,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 29.5,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.09,
+   "epp_gap_pct": 1.4,
+   "adj_gap": 0.98,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 29.5,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "F (retrospective, 2018-12-14) ◉ BUY — Ratio B 0.09x (41.3% downside to Bear $5 / +463.4% upside to Bull $48) | Adj composite 2.20 vs market 1.22: gap +0.98 [UNDERVALUED] | +1% above the EPP floor $8 (6x FY18E $1.40) | Conservative 2-yr case: +29.5% total (+14.8%/yr) | At 6.1x FY18E the 15% hurdle price $11 sits between the BASE and BULL cases; wholesale units -10.0% in Q3 2018, forward revenues +3.3% (no Q4 2018 revenue guide, Q3 2018 revenue as reported); no disruption theme is live for an automaker on this date.",
+ "sources": [
+  {
+   "id": "F144",
+   "published": "2018-02-08",
+   "filed": "2018-02-08 11:41 ET (during the session)",
+   "title": "Ford FY2017 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799618000015/f1231201710-k.htm",
+   "supports": "FY2017 annual report"
+  },
+  {
+   "id": "F101",
+   "published": "2011-01-28",
+   "filed": "2011-01-28 07:20 ET (before the open)",
+   "title": "Ford Q4 2010 results (8-K exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000115752311000435/a6589107ex99-1.htm",
+   "supports": "Q4 2010 results release: wholesales, revenue, pre-tax results, Ford Credit, EPS excluding special items, outlook"
+  },
+  {
+   "id": "F109",
+   "published": "2012-01-27",
+   "filed": "2012-01-27 08:15 ET (before the open)",
+   "title": "Ford Q4 2011 results (8-K exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000115752312000341/a50146220ex99.htm",
+   "supports": "Q4 2011 results release: wholesales, revenue, pre-tax results, Ford Credit, EPS excluding special items"
+  },
+  {
+   "id": "F113",
+   "published": "2013-01-29",
+   "filed": "2013-01-29 07:43 ET (before the open)",
+   "title": "Ford Q4 2012 results (8-K exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799613000008/exhibit99toearnings8-kdate.htm",
+   "supports": "Q4 2012 results release: wholesales, revenue, pre-tax results, Ford Credit, EPS excluding special items"
+  },
+  {
+   "id": "F117",
+   "published": "2014-01-28",
+   "filed": "2014-01-28 07:25 ET (before the open)",
+   "title": "Ford Q4 2013 results (8-K exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799614000004/exhibit99toearnings8-kdate.htm",
+   "supports": "Q4 2013 results release: wholesales, revenue, pre-tax results, Ford Credit, EPS excluding special items"
+  },
+  {
+   "id": "F126",
+   "published": "2016-01-07",
+   "filed": "2016-01-07 08:16 ET (before the open)",
+   "title": "Ford 8-K of 2016-01-07 (mark-to-market pension accounting; exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799616000076/exhibit992tomtm8-kdated1x7.htm",
+   "supports": "2013 and 2014 EPS excluding special items revised for mark-to-market pension and OPEB accounting"
+  },
+  {
+   "id": "F129",
+   "published": "2016-02-11",
+   "filed": "2016-02-11 08:13 ET (before the open)",
+   "title": "Ford FY2015 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799616000092/f1231201510-k.htm",
+   "supports": "FY2015 annual report (revised for mark-to-market pension accounting)"
+  },
+  {
+   "id": "F107",
+   "published": "2013-02-19",
+   "filed": "2013-02-19 07:12 ET (before the open)",
+   "title": "Ford FY2012 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799613000014/f12312012-10k.htm",
+   "supports": "FY2012 annual report"
+  },
+  {
+   "id": "F108",
+   "published": "2014-02-18",
+   "filed": "2014-02-18 14:09 ET (during the session)",
+   "title": "Ford FY2013 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799614000010/f1231201310k.htm",
+   "supports": "FY2013 annual report"
+  },
+  {
+   "id": "F122",
+   "published": "2015-02-13",
+   "filed": "2015-02-13 07:03 ET (before the open)",
+   "title": "Ford FY2014 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799615000013/f1231201410-k.htm",
+   "supports": "FY2014 annual report"
+  },
+  {
+   "id": "F135",
+   "published": "2017-02-09",
+   "filed": "2017-02-09 08:44 ET (before the open)",
+   "title": "Ford FY2016 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799617000013/f1231201610-k.htm",
+   "supports": "FY2016 annual report"
+  },
+  {
+   "id": "F80",
+   "published": "2011-02-28",
+   "filed": "2011-02-28 07:33 ET (before the open)",
+   "title": "Ford FY2010 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000115752311001210/a6622311.htm",
+   "supports": "FY2010 annual report"
+  },
+  {
+   "id": "F143",
+   "published": "2018-01-25",
+   "filed": "2018-01-24 16:29 ET (after the close)",
+   "title": "Ford Q4 2017 results (8-K exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799618000008/exhibit991pressreleasefo.htm",
+   "supports": "Q4 2017 results release (99.1: income statements, EPS reconciliation, Ford Credit) and presentation (99.2: wholesales, revenue, adjusted EPS)"
+  },
+  {
+   "id": "F140",
+   "published": "2017-10-26",
+   "filed": "2017-10-26 07:14 ET (before the open)",
+   "title": "Ford Q3 2017 results (8-K exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799617000090/q32017earningsrelease.htm",
+   "supports": "Q3 2017 results release: income statement, Ford Credit, adjusted EPS; wholesales in its images (q32017earningsrelease002.jpg)"
+  },
+  {
+   "id": "F145",
+   "published": "2018-04-26",
+   "filed": "2018-04-25 16:33 ET (after the close)",
+   "title": "Ford Q1 2018 results (8-K exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799618000033/exhibit991pressreleasefo.htm",
+   "supports": "Q1 2018 results release: income statements, wholesales, adjusted EPS"
+  },
+  {
+   "id": "F146",
+   "published": "2018-04-26",
+   "filed": "2018-04-25 19:38 ET (after the close)",
+   "title": "Ford Q1 2018 Form 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799618000036/f0331201810-q.htm",
+   "supports": "Company cash at March 31, 2018"
+  },
+  {
+   "id": "F147",
+   "published": "2018-07-26",
+   "filed": "2018-07-25 16:22 ET (after the close)",
+   "title": "Ford Q2 2018 results (8-K exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799618000061/exhibit991pressreleasefo.htm",
+   "supports": "Q2 2018 results release: income statements, wholesales, adjusted EPS, the lowered 2018 guide"
+  },
+  {
+   "id": "F148",
+   "published": "2018-07-26",
+   "filed": "2018-07-25 19:41 ET (after the close)",
+   "title": "Ford Q2 2018 Form 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799618000063/f0630201810-q.htm",
+   "supports": "Company cash at June 30, 2018"
+  },
+  {
+   "id": "F149",
+   "published": "2018-10-25",
+   "filed": "2018-10-24 16:32 ET (after the close)",
+   "title": "Ford Q3 2018 results (8-K exhibit 99.2, the presentation; exhibit 99.1's text layer is glyph-encoded)",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799618000082/exhibit992october2420188.htm",
+   "supports": "Q3 2018 wholesales and adjusted EPS"
+  },
+  {
+   "id": "F150",
+   "published": "2018-10-25",
+   "filed": "2018-10-24 19:14 ET (after the close)",
+   "title": "Ford Q3 2018 Form 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799618000084/f0930201810-q.htm",
+   "supports": "Q3 2018 income statement and segment note (revenue, pre-tax results, Ford Credit, EPS), Company cash at September 30, 2018"
+  },
+  {
+   "id": "A0",
+   "published": "2018-12-14",
+   "title": "Yahoo Finance daily prices, F and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/F/history",
+   "supports": "close $8.52 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr ex-FY08 P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-14"
+}

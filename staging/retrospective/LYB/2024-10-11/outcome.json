@@ -1,0 +1,65 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "LYB",
+ "as_of": "2024-10-11",
+ "computed": "2026-11-28",
+ "data_source": "Yahoo Finance daily closes + dividends (LYB, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2025-04-11",
+   "price": 56.89,
+   "dividends": 2.68,
+   "total_return_pct": -36.5,
+   "benchmark_total_return_pct": -7.2,
+   "excess_pct": -29.2,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2025-10-10",
+   "price": 44.91,
+   "dividends": 5.42,
+   "total_return_pct": -46.3,
+   "benchmark_total_return_pct": 13.9,
+   "excess_pct": -60.3,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2026-10-09",
+   "price": 60.03,
+   "dividends": 8.86,
+   "total_return_pct": -26.5,
+   "benchmark_total_return_pct": 36.9,
+   "excess_pct": -63.4,
+   "hurdle_pct": 32.2
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2024-10-14",
+   "price": 93.44
+  },
+  "low": {
+   "date": "2025-12-08",
+   "price": 42.28
+  },
+  "max_drawdown_pct": -54.9,
+  "return_to_avg_price_m12_m24_pct": -37.1
+ },
+ "scenario_landing_2y": "BASE",
+ "call_check_2y": {
+  "expectation": "RICH: should miss the hurdle and lag the benchmark",
+  "hit": true
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "CYCLICAL",
+   "risk": 2
+  },
+  "today": {
+   "kind": "CYCLICAL",
+   "risk": 3,
+   "why": "LyondellBasell: polyolefins at a trough with leverage and a dividend cut",
+   "reviewed": "2026-09-22"
+  }
+ }
+}

@@ -1,0 +1,260 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "LYB",
+ "company": "LyondellBasell Industries N.V.",
+ "as_of": "2017-11-24",
+ "price_date": "2017-11-24",
+ "price": 104.34,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); chemical and refining signals",
+ "pit_profile": {
+  "kind": "CYCLICAL",
+  "risk": 2,
+  "why": "Risk factor (FY2016 10-K): Our business operations are subject to the cyclical and volatile nature of the supply-demand balance in the chemical and refining industries.; of the other live themes, OFFSHORE is scoped to 'lower-cost offshore delivery (Indian IT services) takes share and price from Western consulting, systems integration and outsourcing', CLOUD to 'public cloud displaces on-premise hardware, storage, legacy databases and data-center outsourcing', ECOMMERCE to 'e-commerce (Amazon effect) displaces physical retail, malls, grocery, distribution', STREAMING to 'cord-cutting / streaming displaces linear TV networks and pay-TV bundles': none names chemicals or refining, and no 10-K names cloud, offshore delivery, e-commerce, or streaming; ENERGY_TRANSITION is live (from 2015-12-12): the Refining segment refines crude oil and the greenhouse gas risk factor puts the theme on the watch list, company-acknowledged, with no dated evidence that the market prices it for LyondellBasell",
+  "theme_watch": [
+   {
+    "theme": "ENERGY_TRANSITION",
+    "status": "live, company-acknowledged; no market read",
+    "reason": "Live: LyondellBasell's own FY2016 10-K says 'Refining. Our Refining segment refines heavy, high-sulfur crude oil and other crude oils of varied types and sources available on the U.S. Gulf Coast into refined products including gasoline and distillates.' and, of greenhouse gas laws and regulations, 'Compliance with these or other changes in laws, regulations and obligations that create a GHG emissions trading scheme or GHG reduction policies generally could significantly increase our costs or reduce demand for products we produce.' The stock trades at 11.4x FY17E — a premium. Re-file as DISRUPTION_EXPOSED (ENERGY_TRANSITION) only if dated evidence shows the market pricing decarbonisation of LyondellBasell's refining and the demand for its products specifically."
+   }
+  ],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "TOO MUCH CYCLE RISK",
+  "quality_label": "✕ TOO MUCH CYCLE RISK",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "CYCLICAL",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "Risk factor (FY2016 10-K): Our business operations are subject to the cyclical and volatile nature of the supply-demand balance in the chemical and refining industries.; of the other live themes, OFFSHORE is scoped to 'lower-cost offshore delivery (Indian IT services) takes share and price from Western consulting, systems integration and outsourcing', CLOUD to 'public cloud displaces on-premise hardware, storage, legacy databases and data-center outsourcing', ECOMMERCE to 'e-commerce (Amazon effect) displaces physical retail, malls, grocery, distribution', STREAMING to 'cord-cutting / streaming displaces linear TV networks and pay-TV bundles': none names chemicals or refining, and no 10-K names cloud, offshore delivery, e-commerce, or streaming; ENERGY_TRANSITION is live (from 2015-12-12): the Refining segment refines crude oil and the greenhouse gas risk factor puts the theme on the watch list, company-acknowledged, with no dated evidence that the market prices it for LyondellBasell. cyclical (obsolescence risk 2/5); price rich; Ratio B 1.08x; +63% to EPP floor; model-vs-market gap -1.20; conservative 2yr +18%.",
+  "theme": null
+ },
+ "legacy_signal_short": "ACCUMULATE",
+ "legacy_signal": "◎ ACCUMULATE",
+ "metrics": {
+  "ratio_b": 1.08,
+  "ratio_b_fmt": "1.08x",
+  "epp": 64.05,
+  "epp_gap_pct": 62.9,
+  "epp_adj": -0.1,
+  "proxy_composite": 1.65,
+  "sca": 0.1,
+  "adj_composite": 1.65,
+  "market_composite": 2.85,
+  "adj_gap": -1.2,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": 18.2,
+  "scenarios": {
+   "BEAR": {
+    "eps": 8.31,
+    "pe": 8.1,
+    "price": 67,
+    "desc": "EPS -4.7%/yr (worst year FY11-FY16, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 13.32,
+    "pe": 9.5,
+    "price": 127,
+    "desc": "EPS +20.6%/yr (Q3 revenues + margin + buyback); P/E at its 6.9-yr ex-FY10 median"
+   },
+   "BULL": {
+    "eps": 13.32,
+    "pe": 10.4,
+    "price": 139,
+    "desc": "EPS +20.6%/yr (FY11-FY16 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 14.76,
+    "pe": 11.4,
+    "price": 168,
+    "desc": "EPS +27.0%/yr (best 2-yr run FY11-FY16, at least BULL); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 1.08,
+   "epp_gap_pct": 62.9,
+   "adj_gap": -1.2,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 18.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.68,
+   "epp_gap_pct": 62.9,
+   "adj_gap": -0.59,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 18.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 1.82,
+   "epp_gap_pct": 62.9,
+   "adj_gap": -1.71,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 18.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.91,
+   "epp_gap_pct": 62.9,
+   "adj_gap": -0.99,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 18.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 1.33,
+   "epp_gap_pct": 62.9,
+   "adj_gap": -1.43,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 18.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 1.08,
+   "epp_gap_pct": 62.9,
+   "adj_gap": -0.9,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 18.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 1.08,
+   "epp_gap_pct": 14.0,
+   "adj_gap": -1.1,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 18.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 1.08,
+   "epp_gap_pct": 62.9,
+   "adj_gap": -0.65,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 18.2,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "RICH"
+ ],
+ "summary": "LYB (retrospective, 2017-11-24) ◎ ACCUMULATE — Ratio B 1.08x (35.8% downside to Bear $67 / +33.2% upside to Bull $139) | Adj composite 1.65 vs market 2.85: gap -1.20 [OVERVALUED] | +63% above the EPP floor $64 (7x FY17E $9.15) | Conservative 2-yr case: +18.2% total (+9.1%/yr) | At 11.4x FY17E the 15% hurdle price $138 sits between the BASE and BULL cases; O&P–Americas -14.6% and Intermediates & Derivatives +37.1% operating income in Q3 2017, forward revenues +15.6% (no FY17 revenue guide in numbers, Q3 2017 revenues as reported); the energy transition is live and company-acknowledged; no dated evidence ties the multiple to it.",
+ "sources": [
+  {
+   "id": "LB7",
+   "published": "2017-02-17",
+   "filed": "accepted 2017-02-17 13:01 ET (during market hours)",
+   "title": "LyondellBasell Industries N.V. FY2016 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1489393/000119312517047661/d341907d10k.htm",
+   "supports": "FY2016 annual history: the selected financial data (revenues and diluted EPS from continuing operations, five years), the EPS note's diluted shares, the statements of income and cash flows, the segment note (revenues from customers), the dividend increase and the risk factors (cyclicality, greenhouse gas regulation) and Item 1's segment description"
+  },
+  {
+   "id": "LB2",
+   "published": "2012-02-29",
+   "filed": "accepted 2012-02-29 13:11 ET (during market hours)",
+   "title": "LyondellBasell Industries N.V. FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1489393/000119312512088192/d300123d10k.htm",
+   "supports": "FY2011 annual history: the selected financial data (revenues 2007-2011, diluted EPS 2011), the MD&A's combined 2010 revenues, the EPS note's diluted shares (2011, May-December 2010), the cash flow statement, the segment note (2011 revenues from customers), the dividends paid and the risk factors"
+  },
+  {
+   "id": "LB3",
+   "published": "2013-02-12",
+   "filed": "accepted 2013-02-12 15:29 ET (during market hours)",
+   "title": "LyondellBasell Industries N.V. FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1489393/000119312513051488/d464702d10k.htm",
+   "supports": "FY2012 annual history: the selected financial data (revenues 2008-2012 from continuing operations, diluted EPS from continuing operations 2011-2012), the MD&A's combined 2010 revenues, the EPS note's diluted shares, the cash flow statement, the segment note (2011-2012 revenues from customers) and the risk factors"
+  },
+  {
+   "id": "LB4",
+   "published": "2014-02-20",
+   "filed": "accepted 2014-02-20 14:15 ET (during market hours)",
+   "title": "LyondellBasell Industries N.V. FY2013 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1489393/000119312514060399/d664462d10k.htm",
+   "supports": "FY2013 annual history: the selected financial data (revenues and diluted EPS from continuing operations, five years), the EPS note's diluted shares, the statements of income and cash flows, the segment note (revenues from customers), the dividend increase and the risk factors (cyclicality, greenhouse gas regulation) and Item 1's segment description"
+  },
+  {
+   "id": "LB6",
+   "published": "2016-02-17",
+   "filed": "accepted 2016-02-16 16:21 ET (after the close), so dated the next trading day",
+   "title": "LyondellBasell Industries N.V. FY2015 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1489393/000119312516465311/d131519d10k.htm",
+   "supports": "FY2015 annual history: the selected financial data (revenues and diluted EPS from continuing operations, five years), the EPS note's diluted shares, the statements of income and cash flows, the segment note (revenues from customers), the dividend increase and the risk factors (cyclicality, greenhouse gas regulation) and Item 1's segment description"
+  },
+  {
+   "id": "LB52",
+   "published": "2017-02-03",
+   "filed": "accepted 2017-02-03 06:45 ET (before the open)",
+   "title": "LyondellBasell Industries N.V. Q4 2016 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1489393/000119312517029768/d336397dex991.htm",
+   "supports": "the quarter's Table 1 (revenues, diluted EPS from continuing operations, diluted shares), the segment reconciliation (segment operating income) and the income statement table, each with the year-ago quarter as this release shows it"
+  },
+  {
+   "id": "LB53",
+   "published": "2017-04-28",
+   "filed": "accepted 2017-04-28 06:45 ET (before the open)",
+   "title": "LyondellBasell Industries N.V. Q1 2017 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1489393/000119312517145129/d383604dex991.htm",
+   "supports": "the quarter's Table 1 (revenues, diluted EPS from continuing operations, diluted shares), the segment reconciliation (segment operating income) and the income statement table, each with the year-ago quarter as this release shows it"
+  },
+  {
+   "id": "LB54",
+   "published": "2017-07-28",
+   "filed": "accepted 2017-07-28 06:45 ET (before the open)",
+   "title": "LyondellBasell Industries N.V. Q2 2017 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1489393/000119312517239266/d431629dex991.htm",
+   "supports": "the quarter's Table 1 (revenues, diluted EPS from continuing operations, diluted shares), the segment reconciliation (segment operating income) and the income statement table, each with the year-ago quarter as this release shows it"
+  },
+  {
+   "id": "LB55",
+   "published": "2017-10-27",
+   "filed": "accepted 2017-10-27 06:48 ET (before the open)",
+   "title": "LyondellBasell Industries N.V. Q3 2017 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1489393/000119312517321949/d461546dex991.htm",
+   "supports": "the quarter's Table 1 (revenues, diluted EPS from continuing operations, diluted shares), the segment reconciliation (segment operating income) and the income statement table, each with the year-ago quarter as this release shows it"
+  },
+  {
+   "id": "LB1",
+   "published": "2011-03-18",
+   "filed": "accepted 2011-03-18 06:02 ET (before the open)",
+   "title": "LyondellBasell Industries N.V. FY2010 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1489393/000095012311026580/h80612e10vk.htm",
+   "supports": "the selected financial data (revenues 2006-2009 and the two 2010 periods), the MD&A's combined 2010 revenues and operating income, the statements of income (2008-2010), the segment note, the EPS note (May-December 2010), Item 5 (the listing, no dividends yet) and the risk factors"
+  },
+  {
+   "id": "LB34",
+   "published": "2017-06-01",
+   "filed": "accepted 2017-05-31 16:01 ET (after the close), so dated the next trading day",
+   "title": "LyondellBasell Industries N.V. 8-K (Item 5.07: the 2017 annual meeting)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1489393/000119312517189202/d514388d8k.htm",
+   "supports": "the shareholders' approval of the authority to repurchase up to 10% of the shares"
+  },
+  {
+   "id": "A0",
+   "published": "2017-11-24",
+   "title": "Yahoo Finance daily prices, LyondellBasell Industries N.V. ordinary shares (NYSE: LYB) and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/LYB/history",
+   "supports": "close $104.34 as traded on AS_OF, 52-week range, realized vol, beta, the 6.9-yr ex-FY10 P/E distribution since the shares were issued on 2010-04-30"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-27"
+}

@@ -1,0 +1,232 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "PFE",
+ "company": "Pfizer Inc",
+ "as_of": "2013-02-15",
+ "price_date": "2013-02-15",
+ "price": 27.29,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); pharmaceutical signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'is a research-based, global biopharmaceutical company. We apply science and our global resources to improve health and well-being at every stage of life' (FY2011 10-K, Item 1); 'Competition from manufacturers of generic drugs is a major challenge for us around the world. Upon the expiration or loss of patent protection for one of our products ... we can lose the major portion of sales of that product in a very short period' (Item 1A); 'Lipitor lost exclusivity in the U.S. in November 2011' (the 2011 Financial Report); 'Our businesses are conducted in intensely competitive and often highly regulated markets'",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "'is a research-based, global biopharmaceutical company. We apply science and our global resources to improve health and well-being at every stage of life' (FY2011 10-K, Item 1); 'Competition from manufacturers of generic drugs is a major challenge for us around the world. Upon the expiration or loss of patent protection for one of our products ... we can lose the major portion of sales of that product in a very short period' (Item 1A); 'Lipitor lost exclusivity in the U.S. in November 2011' (the 2011 Financial Report); 'Our businesses are conducted in intensely competitive and often highly regulated markets'. durable franchise (obsolescence risk 2/5); price rich; Ratio B 3.46x; +8% to EPP floor; model-vs-market gap -1.05; conservative 2yr +10%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": 3.46,
+  "ratio_b_fmt": "3.46x",
+  "epp": 25.2,
+  "epp_gap_pct": 8.3,
+  "epp_adj": 0.0,
+  "proxy_composite": 1.95,
+  "sca": 0.126,
+  "adj_composite": 2.075,
+  "market_composite": 3.13,
+  "adj_gap": -1.05,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": 10.5,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.8,
+    "pe": 14.3,
+    "price": 11,
+    "desc": "EPS -28.7%/yr (worst year FY04-FY12, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 1.49,
+    "pe": 18.1,
+    "price": 27,
+    "desc": "EPS +-2.8%/yr (FY13 guide + margin + buyback); P/E at its 9.1-yr median"
+   },
+   "BULL": {
+    "eps": 1.53,
+    "pe": 21.2,
+    "price": 32,
+    "desc": "EPS +-1.6%/yr (FY04-FY12 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 1.96,
+    "pe": 24.8,
+    "price": 49,
+    "desc": "EPS +11.7%/yr (best 2-yr run FY04-FY12); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 3.46,
+   "epp_gap_pct": 8.3,
+   "adj_gap": -1.05,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 10.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 1.33,
+   "epp_gap_pct": 8.3,
+   "adj_gap": -0.5,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 10.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 24.35,
+   "epp_gap_pct": 8.3,
+   "adj_gap": -1.42,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 10.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 2.68,
+   "epp_gap_pct": 8.3,
+   "adj_gap": -0.98,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 10.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 4.39,
+   "epp_gap_pct": 8.3,
+   "adj_gap": -1.15,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 10.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 3.46,
+   "epp_gap_pct": 8.3,
+   "adj_gap": -0.75,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 10.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 3.46,
+   "epp_gap_pct": -8.8,
+   "adj_gap": -0.85,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 10.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 3.46,
+   "epp_gap_pct": 8.3,
+   "adj_gap": -0.79,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 10.5,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "RICH"
+ ],
+ "summary": "PFE (retrospective, 2013-02-15) ✕ AVOID — Ratio B 3.46x (59.7% downside to Bear $11 / +17.3% upside to Bull $32) | Adj composite 2.08 vs market 3.13: gap -1.05 [OVERVALUED] | +8% above the EPP floor $25 (16x FY13E $1.57) | Conservative 2-yr case: +10.5% total (+5.3%/yr) | At 17.3x FY13E the 15% hurdle price $36 sits above the BULL case; U.S. revenues -8.6% in Q4 2012, forward revenues -4.7% to -1.3% (FY13 revenue guide); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "PF35",
+   "published": "2012-02-29",
+   "filed": "2012-02-28 17:07 ET (after the close)",
+   "title": "Pfizer FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000119312512085703/d278590dex13.htm",
+   "supports": "financial summary 2007-2011 (restated without Capsugel); statement of income; revenues by operating segment and geography; cash flows; the first-quarter 2012 dividend of $0.22; Item 1 and Item 1A wording"
+  },
+  {
+   "id": "PF29",
+   "published": "2011-02-28",
+   "filed": "2011-02-28 10:00 ET",
+   "title": "Pfizer FY2010 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000119312511048877/dex13.htm",
+   "supports": "financial summary 2006-2010; statement of income; revenues by business and geography; cash flows; the first-quarter 2011 dividend of $0.20; Item 1 and Item 1A wording"
+  },
+  {
+   "id": "PF24",
+   "published": "2010-02-26",
+   "filed": "2010-02-26 13:43 ET",
+   "title": "Pfizer FY2009 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000119312510042425/dex13.htm",
+   "supports": "financial summary 2004-2009 (revenues, diluted EPS from continuing operations, diluted shares); statement of income; revenues by business and geography; cash flows; the first-quarter 2010 dividend of $0.18; Item 1 and Item 1A wording"
+  },
+  {
+   "id": "PF34",
+   "published": "2012-01-31",
+   "filed": "2012-01-31 09:08 ET (before the open)",
+   "title": "Pfizer Q4 2011 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000115752312000378/a50149901ex99.htm",
+   "supports": "fourth-quarter and full-year 2011 statements of income (2010 restated without Capsugel) and revenues by U.S. and international; 2012 guidance"
+  },
+  {
+   "id": "PF36",
+   "published": "2012-05-01",
+   "filed": "2012-05-01 09:01 ET (before the open)",
+   "title": "Pfizer Q1 2012 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000115752312002322/a50259007ex99.htm",
+   "supports": "first-quarter 2012 statement of income and revenues by U.S. and international; 2012 guidance updated for the decision to divest Nutrition"
+  },
+  {
+   "id": "PF37",
+   "published": "2012-07-31",
+   "filed": "2012-07-31 08:54 ET (before the open)",
+   "title": "Pfizer Q2 2012 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000115752312004028/a50358545ex_99.htm",
+   "supports": "second-quarter 2012 statement of income (Nutrition discontinued) and revenues by U.S. and international; 2012 guidance"
+  },
+  {
+   "id": "PF39",
+   "published": "2012-11-01",
+   "filed": "2012-11-01 08:59 ET (before the open)",
+   "title": "Pfizer Q3 2012 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000115752312005612/a50457010ex99.htm",
+   "supports": "third-quarter 2012 statement of income and revenues by U.S. and international; 2012 guidance and its reconciliation (Nutrition income)"
+  },
+  {
+   "id": "PF40",
+   "published": "2013-01-29",
+   "filed": "2013-01-29 09:01 ET (before the open)",
+   "title": "Pfizer Q4 2012 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000115752313000304/a50544239ex99.htm",
+   "supports": "fourth-quarter and full-year 2012 statements of income (2011 restated without Nutrition) and revenues by U.S. and international; 2013 guidance"
+  },
+  {
+   "id": "W0",
+   "published": "2013-02-15",
+   "title": "Yahoo Finance daily prices, PFE and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/PFE/history",
+   "supports": "close $27.29 as traded on AS_OF, 52-week range, realized vol, beta, the 9.1-yr P/E distribution"
+  }
+ ],
+ "warnings": [
+  "calendar year(s) 2070 after 2013 outside FY labels — make sure they are forecasts"
+ ],
+ "generated": "2026-11-10"
+}

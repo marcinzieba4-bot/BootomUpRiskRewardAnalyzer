@@ -1,0 +1,155 @@
+
+════════════════════════════════════════════════════════════════════════
+  V  ·  Visa Inc.  ·  $138.06  ·  RETROSPECTIVE as of 2019-01-11
+  Signal: ◐ WATCHLIST   Ratio B: 1.58x   Adj gap: -1.11  [OVERVALUED]
+  Point-in-time: 15 sources, latest published 2019-01-11; latest print Q4 FY18 (Oct 24)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2019E revenue, USD bn  →  FY2021E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2019E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Service revenues              $  9.98  $ 9.98  $12.72    +0.00    +2.74
+    +11.8% revenue in FY18
+  Data processing revenues      $ 10.10  $10.10  $12.88    +0.00    +2.78
+    +15.9% revenue in FY18
+  International transaction re  $  8.07  $ 8.07  $10.29    +0.00    +2.22
+    +14.1% revenue in FY18
+  Other revenues                $  1.06  $ 1.06  $ 1.35    +0.00    +0.29
+    +12.2% revenue in FY18
+  Client incentives             $ -6.14  $-6.14  $-7.83    +0.00    -1.69
+    +20.3% revenue in FY18
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $ 23.07  $23.07  $29.41    +0.00    +6.34
+  FY2019E = FY18 $20.609B × (1 + 11.9%: the Q4 FY18 revenue growth (no FY19 revenue range), YoY, applied to the year); split pro rata to FY18 net revenues by line, incentives as reported (FY18 growth)
+  Q4 FY18 (Oct 24): total operating revenues $5.434B +11.9% YoY (+3.7% QoQ); receivables +6.7%; operating expenses ex litigation +11.3%;
+  net-to-gross 78.34% (+5.1bp); operating margin 66.27% (+10.9bp); EPS $1.23 vs $0.90
+  Revenue: net revenues $5,434M vs $4,855M a year earlier, $5,240M the quarter before (service $2,323M, data processing $2,394M, international transaction $1,963M, other $256M, less client incentives $1,502M); 'Payments volume for the three months ended June 30, 2018, on which fiscal fourth quarter service revenue is recognized, grew 11% over the prior year on a constant-dollar basis.' 'Total processed transactions, which represent transactions processed by Visa, for the three months ended September 30, 2018, were 32.8 billion, a 12% increase over the prior year.'; accounts receivable $1,208M (2018-09-30) vs $1,132M a year earlier (the release's September 30 column); GAAP diluted class A EPS $1.23 vs $0.90; 'GAAP net income of $10.3B or $4.42 per share and adjusted net income of $10.7B or $4.61 per share'; the operating margin and the opex signal exclude the $195M donation of investment securities to the Visa Foundation, as the release's adjusted figures do; diluted class A shares 2,306M (as converted, series B and C preferred included)
+  FY19 (Q4 FY18 print): 'Annual net revenue growth: Low double-digits on a nominal basis, with approximately 1 percentage point of negative foreign currency impact and de minimus impact from the new revenue accounting standard' is words and gives no field: the latest quarter's revenue growth stands in (the UNP rule); 'High teens on a GAAP nominal dollar basis and mid- teens on an adjusted, non-GAAP nominal dollar basis' is words and gives no field; no margin guide; no next-quarter guide is given
+
+  FY2019E EPS check:  $23.070B × 65.1% pre-tax × (1−20.0%) ÷ 2.306B  =  $5.21  (FY2019E: no EPS guide in numbers (EPS growth in words only), FY18's $4.61 stands)
+  FY2021E BEAR check: $23.070B × 65.1% ÷ 2.170B  =  $5.53  (scenario $4.61)
+  FY2021E BULL check: $29.410B × 65.5% ÷ 2.170B  =  $7.10  (scenario $6.85)
+  Every 1pp of pre-tax margin ≈ $0.080 EPS ≈ $1.87/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Revenue growth                         -3.0%    ≥10.0%    ≥22.0%    ≥74.0%    +11.9%  ◦ BASE  ██░░
+  Net-to-gross revenue change         -640.0bp  ≥-330.0bp  ≥-30.0bp  ≥430.0bp    +5.1bp  ▲ BULL  ███░
+  Opex growth less revenue             +13.0pp    ≤2.0pp   ≤-9.0pp  ≤-25.0pp    -0.7pp  ◦ BASE  ██░░
+  Receivables growth less revenue       +6.0pp   ≤-1.0pp   ≤-9.0pp  ≤-35.0pp    -5.2pp  ◦ BASE  ██░░
+  Operating margin change             -15780.0bp  ≥-7710.0bp  ≥350.0bp  ≥8930.0bp   +10.9bp  ◦ BASE  ██░░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.20 / 4.00
+  Market composite:   3.19 / 4.00  (back-solved from $138.06 + 15% hurdle)
+  SCA adjustment:    -0.02  ·  EPP-distance adj -0.10  →  Adj composite 2.08  →  Gap -1.11  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY18 total operating revenues +12.3%, 79.0% of gross revenues kept after client incentives; Q4 78.34% (+5bp YoY)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 29.9x FY19E vs a 23.4x 10-yr median (96th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    -  Growth vs own history: Q4 FY18 revenue growth (no FY19 revenue range) +11.9% vs a 13.0% 9-yr median  (-0.11 × 20%  =  -0.022)
+    +  Cash and cash equivalents $8.162B, long-term debt $16,630M on the release's balance sheet (Q4 FY18), FY18 free cash flow $11.995B (net cash provided by operating activities $12,713M less purchases of property, equipment and technology $718M), dividend $1.00 a year  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Revenue growth                        +11.9%     -3.0%  -14.9%  Spending and cross-border travel slow…
+  Net-to-gross revenue change           +5.1bp  -640.0bp  -645.1bp  Client incentives take more of gross …
+  Opex growth less revenue              -0.7pp   +13.0pp  +13.7pp  Marketing and personnel do not slow w…
+  Receivables growth less revenue       -5.2pp    +6.0pp  +11.2pp  Clients pay more slowly: collections lag
+  Operating margin change              +10.9bp  -15780.0bp  -15790.9bp  Operating leverage works in reverse
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$95.77  (model)  /  $73.76 (defined)
+  Bear probability (proxy model):  14.7%
+
+  KEY TRIGGER: revenue went from +14.8% (Q3 FY18) to +11.9% YoY (Q4 FY18), +3.7% on the quarter before;
+  the bear case needs incentives taking more of gross revenues (+5.1bp now)
+  and receivables (-5.2pp against revenue) giving way. A spending slowdown shows up in payments volume and service revenues first;
+  the bear needs it in processed transactions as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $4.61  (FY2019E: no EPS guide in numbers (EPS growth in words only), FY18's $4.61 stands)
+  Min viable P/E at panic:          20x  [median of calendar-year P/E lows: 2009 13.7x, 2010 13.4x, 2011 13.6x, 2012 16.0x, 2013 20.1x, 2014 19.1x, 2015 23.5x, 2016 21.7x, 2017 22.8x, 2018 24.7x, 2019 27.8x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $92.20/share
+  Current $138.06 vs Updated EPP $92.20:  +50%  ⚠ far above floor — large drawdown room
+  Bear $73.76 vs Updated EPP $92.20:  -20%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Revenue growth                                10.0       -1.9   BASE floor (vs +12 now)
+  Net-to-gross revenue change                 -330.0     -335.1   BASE floor (vs +5 now)
+  Opex growth less revenue                       2.0       +2.7   BASE floor (vs -1 now)
+  Receivables growth less revenue               -1.0       +4.2   BASE floor (vs -5 now)
+  Operating margin change                    -7710.0    -7720.9   BASE floor (vs +11 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $4.61 × (1+12.9%)² = $5.87
+  At 23x P/E (conservative):  $135.12/share
+  + Cumul. dividends (2yr):  +$2.06/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $135.12  (▼2.94 from $138.06)
+  Conservative total return:  -1% over 2yr  = -0%/yr
+
+  12.9% EPS growth is what is left once the premium multiple (29.9x)
+  mean-reverts to 23x. Breakeven at 23x needs FY2021E EPS of $5.91,
+  i.e. 13.3%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $111.02  –  $151.56  (at 67th pct of range)
+  Annual dividend:      $1.00/share  (yield 0.7%)
+  Realized vol:         26% annualized (1-yr daily log returns)
+  Beta vs broad market: 1.26
+  1-sigma range (1yr):  $102.30  –  $173.82  ($138.06 ± 26%)
+  2-sigma range (1yr):  $66.54  –  $209.58
+  ────────────────────────────────────────────────────────────
+  Bear $73.76 requires:  ~1.8σ price move  (unusual — requires fundamental break)
+  A payments network whose revenue follows consumer spending: the stock is +21% off its February
+  low (52 weeks) while revenue went from +14.8% (Q3 FY18) to +11.9% YoY (Q4 FY18), +3.7% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        4.61   16.0x  $  73.76    14.7%      3.8%   +10.9pp  EPS +0.0%/yr (worst year FY09-FY18, capped at 0%); P/E to its 10th pct
+  BASE        6.09   23.4x  $ 142.51    51.3%     13.1%   +38.2pp  EPS +14.9%/yr (Q4 revenue YoY + margin + buyback); P/E at its 10-yr median
+  BULL        6.85   26.1x  $ 178.78    28.6%     45.7%   -17.1pp  EPS +21.9%/yr (FY09-FY18 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL       7.48   28.4x  $ 212.43     5.4%     37.4%   -32.0pp  EPS +27.4%/yr (best 2-yr run FY09-FY18, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $146.57  /  Market EV: $182.68  /  Current: $138.06
+  Conservative EV (2yr, ④): $135.12 + $2.06 divs = $137.18 total value
+  Downside (→ Bear $73.76): 46.6%   Upside (→ Bull $178.78): 29.5%   Ratio B 1.58x  →  ◐ WATCHLIST
+
+  To earn the 15%/yr hurdle from $138.06 the market needs $182.58 in two years —
+  above the BULL case. That is a market composite of 3.19 against a model
+  read of 2.08: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       1.58x     +50%    -1.11  OVERVALUED / WATCHLIST
+  Multiples one band richer (p25/p75/p90/max)     0.86x     +50%    -0.52  OVERVALUED / ACCUMULATE
+  Multiples one band cheaper (p5/p25/med/p75)     3.10x     +50%    -1.58  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          1.35x     +50%    -0.95  OVERVALUED / WATCHLIST
+  Scenario EPS -1.5pp/yr                          1.88x     +50%    -1.25  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             1.58x     +50%    -0.81  OVERVALUED / WATCHLIST
+  EPP P/E +3 turns (softer floor)                 1.58x     +30%    -1.01  OVERVALUED / WATCHLIST
+  Hurdle 10%/yr instead of 15%                    1.58x     +50%    -0.57  OVERVALUED / WATCHLIST
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 FY19 print (the quarter ends in December) — revenue against the Q4 FY18 revenue growth (no FY19 revenue range): +11.9% YoY
+  (2) Client incentives — 78.3% of gross revenues kept in Q4 FY18 (+5.1bp YoY): pricing, what must hold if volume does not
+  (3) Payments volume and processed transactions — the drivers of service and data processing revenues, in each release (Q4 FY18: see the revenue line)
+  (4) Receivables — +6.7% against revenue +11.9% in Q4 FY18 (-5.2pp): clients paying more slowly would show here first
+  (5) Capital structure at 30x — dividend $0.25 a quarter, declared 2018-10-16 (a 19% increase); 'During the three months ended September 30, 2018, the Company repurchased 11.5 million shares of class A common stock at an average price of $142.84 per share for $1.6 billion.' (no guided number: it adds nothing)
+  ◐ WATCHLIST  |  EPP floor $92.20  |  ADD below ~$121.13  |  TRIM above $178.78
+════════════════════════════════════════════════════════════════════════
+

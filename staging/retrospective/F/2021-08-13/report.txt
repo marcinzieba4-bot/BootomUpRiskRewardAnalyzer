@@ -1,0 +1,148 @@
+
+════════════════════════════════════════════════════════════════════════
+  F  ·  Ford Motor Company  ·  $13.59  ·  RETROSPECTIVE as of 2021-08-13
+  Signal: ✕ AVOID   Ratio B: infx   Adj gap: -0.87  [OVERVALUED]
+  Point-in-time: 18 sources, latest published 2021-08-13; latest print Q2 2021 (July 28)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2021E revenues, USD bn  →  FY2023E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2021E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Automotive                $   160.1  $ 160.1  $ 157.8      +0.0      -2.3
+    -19.3% revenues in FY20
+  Ford Credit               $    15.5  $  15.5  $  15.3      +0.0      -0.2
+    -8.6% revenues in FY20
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $   175.6  $ 175.6  $ 173.1      +0.0      -2.5
+  FY2021E = FY20 $127.14B × (1 + 38.1%: no Q3 2021 revenue guide, Q2 2021 revenue as reported, applied to the year (no FY21 revenue guide)); split pro rata to FY20 segment revenues (FY2020 10-K income statement; Mobility $56M left out)
+  Q2 2021 (July 28): total revenues $26.75B +38.1%; wholesales +18.4%; Ford Credit pre-tax +198.9%;
+  pre-tax margin 2.8% (-285bp); EPS excl. special items $0.13 vs $-0.35
+  Wholesales +18.4% (645K to 764K, wholesales as the filing shows them against the year-ago quarter); Ford Credit pre-tax +198.9% ($543M to $1,623M); revenue +38.1% as reported ($19.4B to $26.8B); pre-tax $1,084M to $735M; EPS excluding special items $0.13 vs $-0.35 (GAAP $0.14 vs $0.28)
+  FY21: no EPS, revenue or margin guide in numbers in any filing (Ford's outlook is in words and planning assumptions, not encoded; BASE takes Q2 2021 revenue growth)
+
+  FY2021E EPS check:  $175.6B × -0.9% pre-tax × (1−-14.3%) ÷ 4.028B  =  $-0.44  (FY2021E: no EPS guide in numbers, FY20's $0.41 (excluding special items) stands)
+  FY2023E BEAR check: $175.6B × -0.9% ÷ 3.997B  =  $-0.44  (scenario $0.05)
+  FY2023E BULL check: $173.1B × -0.5% ÷ 3.997B  =  $-0.24  (scenario $0.79)
+  Every 1pp of pre-tax margin ≈ $0.50 EPS ≈ $4/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Wholesale units                    -10.0%   ≥-6.0%   ≥-1.0%    ≥6.0%    +18.4%  ★ XBULL  ████
+  Ford Credit pre-tax                -98.0%  ≥-33.0%   ≥32.0%   ≥85.0%   +198.9%  ★ XBULL  ████
+  Revenue growth                     -22.0%   ≥-9.0%    ≥3.0%    ≥6.0%    +38.1%  ★ XBULL  ████
+  EPS growth (excl. special items)  -192.0%  ≥-53.0%   ≥87.0%  ≥102.0%       n/r  ◦ BASE  ██░░
+  Pre-tax margin change             -1820.0bp  ≥-1000.0bp  ≥-180.0bp  ≥630.0bp  -285.0bp  ◦ BASE  ██░░
+  Disruption theme: EV live, not on the watch list   +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    3.10 / 4.00
+  Market composite:   3.77 / 4.00  (back-solved from $14 + 15% hurdle)
+  SCA adjustment:    +0.10  ·  EPP-distance adj -0.30  →  Adj composite 2.90  →  Gap -0.87  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY20 revenue -18.4%, wholesales -22.3% (4,187K vs 5,386K vehicles sold at wholesale (each 10-K's Item 1)); Q2 2021 pre-tax margin 2.8% (-285bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 33.1x FY21E vs a 7.9x 10-yr median (98th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: no Q3 2021 revenue guide, Q2 2021 revenue as reported +38.1% vs a 1.5% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  Company cash n/r, FY20 Company adjusted free cash flow $0.7B, dividend $0.00 a year, We completed no share repurchases during the fourth quarter of 2020.  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Wholesale units                     +18.4%    -10.0%  -28.4%  Plant shutdowns or weaker demand cut …
+  Ford Credit pre-tax                +198.9%    -98.0%  -296.9%  Credit losses, residuals and funding …
+  Revenue growth                      +38.1%    -22.0%  -60.1%  Volume and pricing fall together
+  EPS growth (excl. special items)       n/r   -192.0%     n/r  Volume, mix and pricing fall faster t…
+  Pre-tax margin change             -285.0bp  -1820.0bp  -1535.0bp  Pricing fades while costs stay up
+  Disruption theme: EV live, not on the watch list    +2.0/4    +1.0/4  -1.0/4  No risk factor of the 10-K names a sh…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$2  (model)  /  $0 (defined)
+  Bear probability (proxy model):  4.2%
+
+  KEY TRIGGER: wholesale units went from -5.7% (Q1 2021) to +18.4% (Q2 2021);
+  the bear case needs a volume and pricing fall that the pre-tax margin (-285bp now)
+  and Ford Credit (+198.9% pre-tax now) no longer absorb.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $0.41  (FY2021E: no EPS guide in numbers, FY20's $0.41 (excluding special items) stands)
+  Min viable P/E at panic:          6x  [median of calendar-year P/E lows: 2011 6.2x, 2012 6.3x, 2013 6.5x, 2014 10.1x, 2015 6.7x, 2016 6.3x, 2017 5.9x, 2018 5.9x, 2019 6.5x, 2020 9.8x, 2021 20.8x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $2/share
+  Current $14 vs Updated EPP $2:  +452%  ⚠ far above floor — large drawdown room
+  Bear $0 vs Updated EPP $2:  -100%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.30 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Wholesale units                             -6.0      -24.4   BASE floor (vs +18 now)
+  Ford Credit pre-tax                        -33.0     -231.9   BASE floor (vs +199 now)
+  Revenue growth                              -9.0      -47.1   BASE floor (vs +38 now)
+  EPS growth (excl. special items)           -53.0        n/r   BASE floor (not reported now)
+  Pre-tax margin change                    -1000.0     -715.0   BASE floor (vs -285 now)
+  Disruption theme: EV live, not on the watch list             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $0.41 × (1+36.5%)² = $0.76
+  At 7x P/E (conservative):  $5/share
+  + Cumul. dividends (2yr):  +$0.00/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $5  (▼8 from $14)
+  Conservative total return:  -61% over 2yr  = -30%/yr
+
+  36.5% EPS growth is what is left once the premium multiple (33.1x)
+  mean-reverts to 7x. Breakeven at 7x needs FY2023E EPS of $1.94,
+  i.e. 117.6%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $6.41  –  $16.45  (at 72th pct of range)
+  Annual dividend:      $0.00/share  (yield 0.0%)
+  Realized vol (1yr):   39% annualized
+  Beta vs broad market: 0.97
+  1-sigma range (1yr):  $8  –  $19  ($14 ± 39%)
+  2-sigma range (1yr):  $3  –  $24
+  ────────────────────────────────────────────────────────────
+  Bear $0 requires:  ~2.5σ price move  (unusual — requires fundamental break)
+  An automaker with a 1.0 beta: the stock is +109% off its September
+  low while wholesale units went from -5.7% (Q1 2021) to +18.4% (Q2 2021).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        0.05   6.7x  $      0     4.2%      1.2%    +2.9pp  EPS -65.5%/yr (worst year FY11-FY20, capped at 0%); P/E to its 10th pct
+  BASE        0.79   7.9x  $      6    14.5%      4.3%   +10.2pp  EPS +38.5%/yr (Q2 revenue + margin + buyback); P/E at its 10-yr median
+  BULL        0.79  10.7x  $      8    50.6%     15.0%   +35.6pp  EPS +38.5%/yr (FY11-FY20 CAGR); P/E holds its 75th pct
+  XBULL       0.79  17.7x  $     14    30.7%     79.5%   -48.8pp  EPS +38.5%/yr (best 2-yr run FY11-FY20); P/E at its 90th pct
+
+  Proxy EV (2yr): $9  /  Market EV: $13  /  Current: $14
+  Conservative EV (2yr, ④): $5 + $0.00 divs = $5 total value
+  Downside (→ Bear $0): 100.0%   Upside (→ Bull $8): -41.1%   Ratio B infx  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $14 the market needs $18 in two years —
+  above the BULL case. That is a market composite of 3.77 against a model
+  read of 2.90: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                        infx    +452%    -0.87  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)    33.15x    +452%    -0.21  MODESTLY OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx    +452%    -0.87  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                           infx    +452%    -0.87  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                           infx    +452%    -0.87  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)              infx    +452%    -0.57  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                  infx    +268%    -0.87  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                     infx    +452%    -0.87  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 2021 print — the next read on wholesale units (+18.4% now); no volume guide in numbers to read it against
+  (2) Pre-tax margin — -285bp in Q2 2021: net pricing, mix and structural costs against volume
+  (3) A FY21 outlook in numbers — none: Ford's outlook is in words and planning assumptions
+  (4) Ford Credit pre-tax — +198.9% in Q2 2021 ($1,623M vs $543M): credit losses, lease residuals and funding costs
+  (5) Capital return at 33x — We completed no share repurchases during the fourth quarter of 2020.: management's own read of the multiple
+  ✕ AVOID  |  EPP floor $2  |  ADD below ~$5  |  TRIM above $8
+════════════════════════════════════════════════════════════════════════
+

@@ -1,0 +1,149 @@
+
+════════════════════════════════════════════════════════════════════════
+  BHI  ·  Baker Hughes Incorporated  ·  $34.83  ·  RETROSPECTIVE as of 2008-11-28
+  Signal: ◉ BUY   Ratio B: -0.02x   Adj gap: +1.59  [UNDERVALUED]
+  Point-in-time: 15 sources, latest published 2008-11-28; latest print Q3 2008 (Oct 22)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2008E revenues, USD bn  →  FY2010E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2008E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Drilling and Evaluation   $     5.9  $   5.9  $   7.2      +0.0      +1.3
+    +13.6% revenues in FY07
+  Completion and Productio  $     5.8  $   5.8  $   7.0      +0.0      +1.2
+    +17.6% revenues in FY07
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    11.7  $  11.7  $  14.2      +0.0      +2.5
+  FY2008E = FY07 $10.43B × (1 + 12.4%: no Q4 2008 revenue guide, Q3 2008 revenue as reported, applied to the year (no FY08 revenue guide)); split pro rata to FY07 segment revenues (FY2007 10-K)
+  Q3 2008 (Oct 22): total revenues $3.01B +12.4%; North America +15.0%; outside North America +10.5%;
+  gross margin 29.19% (-134.2bp); operating margin 19.95% (-180.9bp); EPS $1.39 vs $1.22
+  Activity: North America +15.0% (North America $1,311.7M vs $1,140.7M (revenue by the region that provides operational support)); outside North America +10.5% (Oilfield Operations less North America, $1,697.8M vs $1,537.1M); revenue +12.4% as reported (total revenues $3,009.6M vs $2,677.6M); the release on the rig count: 'revenue from our U.S. land operations increased 25% compared to a rig count which increased 11%'; EPS Q3 2008 includes a $0.10 discrete tax benefit and an estimated $0.11 hurricane impact
+  FY08: no EPS, revenue or margin guide in numbers (BASE takes Q3 2008 revenue growth); the Q3 2008 release's outlook for revenue outside North America, display only (it guides a region, not the company's revenue): 'Outside of North America, revenue for the fourth quarter 2008 is expected to increase between 14% and 15% compared to the fourth quarter 2007.'
+
+  FY2008E EPS check:  $11.7B × 21.6% pre-tax × (1−32.9%) ÷ 0.308B  =  $5.51  (FY2008E: no EPS guide in numbers, FY07's $4.73 stands)
+  FY2010E BEAR check: $11.7B × 21.6% ÷ 0.306B  =  $5.55  (scenario $2.59)
+  FY2010E BULL check: $14.2B × 22.0% ÷ 0.306B  =  $6.86  (scenario $13.12)
+  Every 1pp of pre-tax margin ≈ $0.25 EPS ≈ $7/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  North America revenue              -42.0%  ≥-14.0%   ≥14.0%   ≥31.0%    +15.0%  ▲ BULL  ███░
+  Revenue outside North America      -64.0%  ≥-27.0%   ≥11.0%   ≥22.0%    +10.5%  ◦ BASE  ██░░
+  Revenue growth                     -58.0%  ≥-23.0%   ≥12.0%   ≥26.0%    +12.4%  ▲ BULL  ███░
+  Gross margin change               -670.0bp  ≥-300.0bp  ≥60.0bp  ≥640.0bp  -134.2bp  ◦ BASE  ██░░
+  Operating margin change           -2440.0bp  ≥-1060.0bp  ≥330.0bp  ≥750.0bp  -180.9bp  ◦ BASE  ██░░
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.35 / 4.00
+  Market composite:   1.22 / 4.00  (back-solved from $35 + 15% hurdle)
+  SCA adjustment:    +0.26  ·  EPP-distance adj +0.20  →  Adj composite 2.81  →  Gap +1.59  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY07 revenue +15.5%, North America +9.0% (North America $4,358.0M vs $3,999.6M, Q4 2007 release); Q3 operating margin 19.95% (-181bp)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 7.4x FY08E vs a 26.5x 10-yr median (1st percentile of its own range)  (+0.50 × 25%  =  +0.125)
+    +  Growth vs own history: no Q4 2008 revenue guide, Q3 2008 revenue as reported +12.4% vs a 11.8% 8-yr median  (+0.06 × 20%  =  +0.012)
+    +  Cash and short-term investments $1.13B, FY07 free cash flow $0.35B, dividend $0.60 a year, $521.5M of common stock repurchased and $166.2M of dividends paid in FY07  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  North America revenue               +15.0%    -42.0%  -57.0%  Gas drilling in the US and Canada falls
+  Revenue outside North America       +10.5%    -64.0%  -74.5%  International spending follows oil pr…
+  Revenue growth                      +12.4%    -58.0%  -70.4%  Customers cut drilling and production…
+  Gross margin change               -134.2bp  -670.0bp  -535.8bp  Pricing falls faster than costs
+  Operating margin change           -180.9bp  -2440.0bp  -2259.1bp  Fixed costs stay as activity falls
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$267  (model)  /  $42 (defined)
+  Bear probability (proxy model):  12.0%
+
+  KEY TRIGGER: North America revenue went from +19.7% (Q2 2008) to +15.0% (Q3 2008);
+  the bear case needs customers' drilling budgets to fall far enough that revenue outside North
+  America (+10.5% now) and the operating margin (-180.9bp now) give way. Activity drives revenue, by the company's own account; the bear needs
+  customers' spending to fall, not only the rig count.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $4.73  (FY2008E: no EPS guide in numbers, FY07's $4.73 stands)
+  Min viable P/E at panic:          20x  [median of calendar-year P/E lows: 1999 207.8x, 2000 96.4x, 2001 20.7x, 2002 24.3x, 2003 27.7x, 2004 20.3x, 2005 16.1x, 2006 15.2x, 2007 13.3x, 2008 5.7x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $95/share
+  Current $35 vs Updated EPP $95:  -63%  ✓ BELOW panic floor — deep-value zone
+  Bear $42 vs Updated EPP $95:  -56%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  North America revenue                      -14.0      -29.0   BASE floor (vs +15 now)
+  Revenue outside North America              -27.0      -37.5   BASE floor (vs +10 now)
+  Revenue growth                             -23.0      -35.4   BASE floor (vs +12 now)
+  Gross margin change                       -300.0     -165.8   BASE floor (vs -134 now)
+  Operating margin change                  -1060.0     -879.1   BASE floor (vs -181 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $4.73 × (1+10.8%)² = $5.80
+  At 26x P/E (conservative):  $151/share
+  + Cumul. dividends (2yr):  +$1.24/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $151  (▲116 from $35)
+  Conservative total return:  +337% over 2yr  = +168%/yr
+
+  At 7.4x the multiple is already near its 26x median, so the conservative
+  case is a growth question: breakeven at 26x needs FY2010E EPS of $1.29,
+  i.e. -47.7%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $26.87  –  $90.81  (at 12th pct of range)
+  Annual dividend:      $0.60/share  (yield 1.7%)
+  Realized vol (1yr):   67% annualized
+  Beta vs broad market: 1.24
+  1-sigma range (1yr):  $11  –  $58  ($35 ± 67%)
+  2-sigma range (1yr):  $-12  –  $82
+  ────────────────────────────────────────────────────────────
+  Bear $42 requires:  ~-0.3σ price move  (within normal vol range)
+  An oilfield services company with a 1.2 beta: the stock is +29% off its November
+  low while North America revenue went from +19.7% (Q2 2008) to +15.0% (Q3 2008).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        2.59  16.3x  $     42    12.0%     72.2%   -60.2pp  EPS -26.0%/yr (worst year FY99-FY07, capped at 0%); P/E to its 10th pct
+  BASE        6.02  26.5x  $    160    42.0%     20.7%   +21.3pp  EPS +12.8%/yr (Q3 revenue + margin + buyback); P/E at its 10-yr median
+  BULL       13.12  35.5x  $    466    38.7%      5.9%   +32.7pp  EPS +66.5%/yr (FY99-FY07 CAGR); P/E holds its 75th pct
+  XBULL      75.09  209.4x  $ 15,724     7.3%      1.1%    +6.2pp  EPS +298.4%/yr (best 2-yr run FY99-FY07); P/E at its 90th pct
+
+  Proxy EV (2yr): $1,400  /  Market EV: $267  /  Current: $35
+  Conservative EV (2yr, ④): $151 + $1.24 divs = $152 total value
+  Downside (→ Bear $42): -20.6%   Upside (→ Bull $466): 1237.9%   Ratio B -0.02x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $35 the market needs $46 in two years —
+  at or below the BASE case. That is a market composite of 1.22 against a model
+  read of 2.81: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                      -0.02x     -63%    +1.59  UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)    -0.00x     -63%    +1.59  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)    -0.01x     -63%    +1.64  UNDERVALUED / BUY
+  Scenario EPS +1.5pp/yr                         -0.02x     -63%    +1.59  UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                         -0.01x     -63%    +1.59  UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)            -0.02x     -63%    +1.89  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                -0.02x     -68%    +1.59  UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                   -0.02x     -63%    +1.59  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 2008 print (late January) — the next read on North America revenue (+15.0% now); no revenue or EPS guide to read it against
+  (2) Operating margin — -180.9bp in Q3 2008: pricing and utilization against costs
+  (3) A FY08 guide — none in numbers: Baker Hughes guides revenue outside North America, not EPS or total revenue (Q3 2008 outlook: 'Outside of North America, revenue for the fourth quarter 2008 is expected to increase between 14% and 15% compared to the fourth quarter 2007.')
+  (4) Capital expenditures — In the third quarter 2008, the company’s capital expenditures were $300 million, depreciation and amortization expense was $158 million and dividend payments were $46 million.
+  (5) Capital return at 7x — During the third quarter of 2008, the company repurchased 538,900 shares of common stock at an average price of $71.26 per share for a total of $39 million.: management's own read of the multiple
+  ◉ BUY  |  EPP floor $95  |  ADD below ~$136  |  TRIM above $466
+════════════════════════════════════════════════════════════════════════
+

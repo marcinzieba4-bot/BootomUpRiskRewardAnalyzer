@@ -1,0 +1,157 @@
+
+════════════════════════════════════════════════════════════════════════
+  V  ·  Visa Inc.  ·  $327.98  ·  RETROSPECTIVE as of 2025-11-21
+  Signal: ◎ ACCUMULATE   Ratio B: 0.97x   Adj gap: -0.67  [OVERVALUED]
+  Point-in-time: 16 sources, latest published 2025-11-21; latest print Q4 FY25 (Oct 28)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2026E revenue, USD bn  →  FY2028E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2026E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Service revenues              $ 19.56  $19.56  $24.29    +0.00    +4.73
+    +8.8% revenue in FY25
+  Data processing revenues      $ 22.29  $22.29  $27.69    +0.00    +5.40
+    +12.9% revenue in FY25
+  International transaction re  $ 15.80  $15.80  $19.62    +0.00    +3.82
+    +11.9% revenue in FY25
+  Other revenues                $  4.52  $ 4.52  $ 5.61    +0.00    +1.09
+    +26.8% revenue in FY25
+  Client incentives             $-17.56  $-17.56  $-21.81    +0.00    -4.25
+    +14.4% revenue in FY25
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $ 44.61  $44.61  $55.40    +0.00   +10.79
+  FY2026E = FY25 $40.000B × (1 + 11.5%: the Q4 FY25 revenue growth (no FY26 revenue range), YoY, applied to the year); split pro rata to FY25 net revenue by line, incentives as reported (FY25 growth)
+  Q4 FY25 (Oct 28): total operating revenues $10.724B +11.5% YoY (+5.4% QoQ); receivables +22.1%; operating expenses ex litigation +12.7%;
+  net-to-gross 71.63% (-97.6bp); operating margin 57.33% (-868.9bp); EPS $2.62 vs $2.65
+  Revenue: net revenue $10,724M vs $9,617M a year earlier, $10,172M the quarter before (service $4,602M, data processing $5,394M, international transaction $3,800M, other $1,176M, less client incentives $4,248M); 'Payments volume for the three months ended June 30, 2025, on which fiscal fourth quarter service revenue is recognized, increased 8% over the prior year on a constant-dollar basis.' 'Total processed transactions, which represent transactions processed by Visa, for the three months ended September 30, 2025, were 67.7 billion, a 10% increase over the prior year.'; accounts receivable $3,126M (2025-09-30) vs $2,561M a year earlier (the release's September 30 column); GAAP diluted class A EPS $2.62 vs $2.65; 'GAAP net income of $20.1B or $10.20 per share and non-GAAP net income of $22.5B or $11.47 per share'; diluted class A shares 1,945M (as converted); no outlook for FY2026 in the release
+  FY26: no outlook in any print; no revenue range in numbers: the latest quarter's revenue growth stands in (the UNP rule)
+
+  FY2026E EPS check:  $44.610B × 60.5% pre-tax × (1−17.1%) ÷ 1.945B  =  $11.50  (FY2026E: no EPS guide in numbers, FY25's $10.20 stands)
+  FY2028E BEAR check: $44.610B × 60.5% ÷ 1.856B  =  $12.05  (scenario $8.24)
+  FY2028E BULL check: $55.400B × 60.9% ÷ 1.856B  =  $15.06  (scenario $13.55)
+  Every 1pp of pre-tax margin ≈ $0.190 EPS ≈ $5.51/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Revenue growth                         -3.0%    ≥10.0%    ≥22.0%    ≥74.0%    +11.5%  ◦ BASE  ██░░
+  Net-to-gross revenue change         -640.0bp  ≥-330.0bp  ≥-30.0bp  ≥430.0bp   -97.6bp  ◦ BASE  ██░░
+  Opex growth less revenue             +13.0pp    ≤2.0pp   ≤-9.0pp  ≤-25.0pp    +1.2pp  ◦ BASE  ██░░
+  Receivables growth less revenue       +6.0pp   ≤-1.0pp   ≤-9.0pp  ≤-35.0pp   +10.6pp  ⚠ BEAR  █░░░
+  Operating margin change             -15780.0bp  ≥-7710.0bp  ≥350.0bp  ≥8930.0bp  -868.9bp  ◦ BASE  ██░░
+  Crypto: disintermediation of card payments    +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.85 / 4.00
+  Market composite:   2.57 / 4.00  (back-solved from $327.98 + 15% hurdle)
+  SCA adjustment:    +0.05  ·  EPP-distance adj +0.00  →  Adj composite 1.90  →  Gap -0.67  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY25 total operating revenues +11.3%, 71.8% of gross revenues kept after client incentives; Q4 71.63% (-98bp YoY)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 32.2x FY26E vs a 29.0x 10-yr median (69th percentile of its own range)  (-0.32 × 25%  =  -0.080)
+    +  Growth vs own history: Q4 FY25 revenue growth (no FY26 revenue range) +11.5% vs a 11.4% 9-yr median  (+0.01 × 20%  =  +0.002)
+    +  Cash and cash equivalents $17.164B, current maturities of debt $5,569M; long-term debt $19,602M on the release's balance sheet (Q4 FY25), FY25 free cash flow $21.577B (net cash provided by operating activities $23,059M less purchases of property, equipment and technology $1,482M), dividend $2.68 a year  (+0.30 × 15%  =  +0.045)
+    +  Crypto: Visa's own crypto-linked credentials (FY2025 10-K)  (+0.20 × 10%  =  +0.020)
+    -  Crypto competition (FY2025 10-K): cryptocurrencies among the changes in global payments  (-0.20 × 10%  =  -0.020)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Revenue growth                        +11.5%     -3.0%  -14.5%  Spending and cross-border travel slow…
+  Net-to-gross revenue change          -97.6bp  -640.0bp  -542.4bp  Client incentives take more of gross …
+  Opex growth less revenue              +1.2pp   +13.0pp  +11.8pp  Marketing and personnel do not slow w…
+  Receivables growth less revenue      +10.6pp    +6.0pp  -4.6pp  Clients pay more slowly: collections lag
+  Operating margin change             -868.9bp  -15780.0bp  -14911.1bp  Operating leverage works in reverse
+  Crypto: disintermediation of card payments    +2.0/4    +1.0/4  -1.0/4  Payments move to crypto rails that by…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$262.31  (model)  /  $206.00 (defined)
+  Bear probability (proxy model):  26.1%
+
+  KEY TRIGGER: revenue went from +14.3% (Q3 FY25) to +11.5% YoY (Q4 FY25), +5.4% on the quarter before;
+  the bear case needs incentives taking more of gross revenues (-97.6bp now)
+  and receivables (+10.6pp against revenue) giving way. A spending slowdown shows up in payments volume and service revenues first;
+  the bear needs it in processed transactions as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $10.20  (FY2026E: no EPS guide in numbers, FY25's $10.20 stands)
+  Min viable P/E at panic:          23x  [median of calendar-year P/E lows: 2015 26.8x, 2016 21.7x, 2017 22.8x, 2018 22.4x, 2019 23.6x, 2020 27.8x, 2021 27.2x, 2022 21.5x, 2023 23.5x, 2024 26.1x, 2025 30.1x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $234.60/share
+  Current $327.98 vs Updated EPP $234.60:  +40%  moderate distance to floor
+  Bear $206.00 vs Updated EPP $234.60:  -12%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Revenue growth                                10.0       -1.5   BASE floor (vs +12 now)
+  Net-to-gross revenue change                 -330.0     -232.4   BASE floor (vs -98 now)
+  Opex growth less revenue                       2.0       +0.8   BASE floor (vs +1 now)
+  Receivables growth less revenue               -1.0      -11.6   BASE floor (vs +11 now)
+  Operating margin change                    -7710.0    -6841.1   BASE floor (vs -869 now)
+  Crypto: disintermediation of card payments             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $10.20 × (1+11.8%)² = $12.75
+  At 29x P/E (conservative):  $369.77/share
+  + Cumul. dividends (2yr):  +$5.52/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $369.77  (▲41.79 from $327.98)
+  Conservative total return:  +14% over 2yr  = +7%/yr
+
+  11.8% EPS growth is what is left once the premium multiple (32.2x)
+  mean-reverts to 29x. Breakeven at 29x needs FY2028E EPS of $11.12,
+  i.e. 4.4%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $299.00  –  $375.51  (at 38th pct of range)
+  Annual dividend:      $2.68/share  (yield 0.8%)
+  Realized vol:         22% annualized (1-yr daily log returns)
+  Beta vs broad market: 0.78
+  1-sigma range (1yr):  $255.82  –  $400.14  ($327.98 ± 22%)
+  2-sigma range (1yr):  $183.67  –  $472.29
+  ────────────────────────────────────────────────────────────
+  Bear $206.00 requires:  ~1.7σ price move  (unusual — requires fundamental break)
+  A payments network whose revenue follows consumer spending: the stock is +7% off its January
+  low (52 weeks) while revenue went from +14.3% (Q3 FY25) to +11.5% YoY (Q4 FY25), +5.4% on the quarter before.
+  Near the low: the multiple has not run ahead of the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        8.24   25.0x  $ 206.00    26.1%      8.0%   +18.0pp  EPS -10.1%/yr (worst year FY16-FY25, capped at 0%); P/E to its 10th pct
+  BASE       13.21   29.0x  $ 383.09    55.2%     28.1%   +27.1pp  EPS +13.8%/yr (Q4 revenue YoY + margin + buyback); P/E at its 10-yr median
+  BULL       13.55   33.5x  $ 453.93    15.8%     53.7%   -37.9pp  EPS +15.3%/yr (FY16-FY25 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL      16.56   39.1x  $ 647.50     3.0%     10.2%    -7.2pp  EPS +27.4%/yr (best 2-yr run FY16-FY25, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $356.04  /  Market EV: $433.77  /  Current: $327.98
+  Conservative EV (2yr, ④): $369.77 + $5.52 divs = $375.30 total value
+  Downside (→ Bear $206.00): 37.2%   Upside (→ Bull $453.93): 38.4%   Ratio B 0.97x  →  ◎ ACCUMULATE
+
+  To earn the 15%/yr hurdle from $327.98 the market needs $433.75 in two years —
+  between the BASE and BULL cases. That is a market composite of 2.57 against a model
+  read of 1.90: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.97x     +40%    -0.67  OVERVALUED / ACCUMULATE
+  Multiples one band richer (p25/p75/p90/max)     0.53x     +40%    -0.15  FAIRLY VALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     2.03x     +40%    -1.24  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          0.83x     +40%    -0.56  OVERVALUED / ACCUMULATE
+  Scenario EPS -1.5pp/yr                          1.14x     +40%    -0.80  OVERVALUED / WATCHLIST
+  Structural read +0.30 (bullish SCA)             0.97x     +40%    -0.37  MODESTLY OVERVALUED / ACCUMULATE
+  EPP P/E +3 turns (softer floor)                 0.97x     +24%    -0.67  OVERVALUED / ACCUMULATE
+  Hurdle 10%/yr instead of 15%                    0.97x     +40%    -0.35  MODESTLY OVERVALUED / ACCUMULATE
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 FY26 print (the quarter ends in December) — revenue against the Q4 FY25 revenue growth (no FY26 revenue range): +11.5% YoY
+  (2) Client incentives — 71.6% of gross revenues kept in Q4 FY25 (-97.6bp YoY): pricing, what must hold if volume does not
+  (3) Payments volume and processed transactions — the drivers of service and data processing revenues, in each release (Q4 FY25: see the revenue line)
+  (4) Receivables — +22.1% against revenue +11.5% in Q4 FY25 (+10.6pp): clients paying more slowly would show here first
+  (5) Capital structure at 32x — dividend $0.67 a quarter, declared October 28, 2025 (a 14% increase; the Q4 FY25 release); 'During the three months ended September 30, 2025, Visa repurchased approximately 14 million shares of class A common stock at an average cost of $349.77 per share for $4.9 billion.' (no guided number: it adds nothing)
+  ◎ ACCUMULATE  |  EPP floor $234.60  |  ADD below ~$325.63  |  TRIM above $453.93
+════════════════════════════════════════════════════════════════════════
+

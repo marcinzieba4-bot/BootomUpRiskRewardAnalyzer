@@ -1,0 +1,278 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "BKR",
+ "company": "Baker Hughes Company",
+ "as_of": "2025-05-23",
+ "price_date": "2025-05-23",
+ "price": 36.74,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); orders, revenue and margin signals; the listing and short-history bounds rules",
+ "pit_profile": {
+  "kind": "CYCLICAL",
+  "risk": 2,
+  "why": "Baker Hughes: 'an energy technology company with a diversified portfolio of technologies and services that span the energy and industrial value chain'; 'Our revenue is predominately generated from the sale of products and services to major, national, and independent oil and natural gas companies worldwide, and is dependent on spending by our customers for oil and natural gas exploration, field development and production'; 'We operate in a highly competitive environment, which may adversely affect our ability to succeed'; 'may shift demand from oil and natural gas towards an investment in relatively lower carbon emitting energy sources and alternative energy solutions' (its own FY2024 10-K): revenues and earnings that follow customers' spending on exploration, development and production through the commodity cycle, by the company's own account; ENERGY_TRANSITION is live from 2015-12-12 but scoped to oil, gas and coal reserves and refining, which an oilfield services and equipment company does not hold, so the climate-change wording stays here",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "CYCLICAL, RISK PRICED IN",
+  "quality_label": "◎ CYCLICAL, RISK PRICED IN",
+  "quality_color": "#f0b429",
+  "quality_tone": "amber",
+  "business_kind": "CYCLICAL",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "Baker Hughes: 'an energy technology company with a diversified portfolio of technologies and services that span the energy and industrial value chain'; 'Our revenue is predominately generated from the sale of products and services to major, national, and independent oil and natural gas companies worldwide, and is dependent on spending by our customers for oil and natural gas exploration, field development and production'; 'We operate in a highly competitive environment, which may adversely affect our ability to succeed'; 'may shift demand from oil and natural gas towards an investment in relatively lower carbon emitting energy sources and alternative energy solutions' (its own FY2024 10-K): revenues and earnings that follow customers' spending on exploration, development and production through the commodity cycle, by the company's own account; ENERGY_TRANSITION is live from 2015-12-12 but scoped to oil, gas and coal reserves and refining, which an oilfield services and equipment company does not hold, so the climate-change wording stays here. cyclical (obsolescence risk 2/5); price cheap; Ratio B 0.03x; -2% to EPP floor; model-vs-market gap +1.52; conservative 2yr +46%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.03,
+  "ratio_b_fmt": "0.03x",
+  "epp": 37.6,
+  "epp_gap_pct": -2.3,
+  "epp_adj": 0.2,
+  "proxy_composite": 2.15,
+  "sca": 0.168,
+  "adj_composite": 2.518,
+  "market_composite": 1.0,
+  "adj_gap": 1.52,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 45.9,
+  "scenarios": {
+   "BEAR": {
+    "eps": 2.35,
+    "pe": 14.2,
+    "price": 33,
+    "desc": "EPS +0.0%/yr (worst year FY18-FY24 ex-FY19 ex-FY20 ex-FY21, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 2.44,
+    "pe": 22.0,
+    "price": 54,
+    "desc": "EPS +2.0%/yr (Q1 revenue + margin + buyback); P/E at its 7.4-yr ex-FY17 ex-FY19 ex-FY20 ex-FY21 median"
+   },
+   "BULL": {
+    "eps": 4.08,
+    "pe": 40.0,
+    "price": 163,
+    "desc": "EPS +31.7%/yr (FY18-FY24 ex-FY19 ex-FY20 ex-FY21 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 6.07,
+    "pe": 72.3,
+    "price": 439,
+    "desc": "EPS +60.7%/yr (best 2-yr run FY18-FY24 ex-FY19 ex-FY20 ex-FY21, at least BULL); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.03,
+   "epp_gap_pct": -2.3,
+   "adj_gap": 1.52,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 45.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": -0.02,
+   "epp_gap_pct": -2.3,
+   "adj_gap": 1.52,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 45.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 0.09,
+   "epp_gap_pct": -2.3,
+   "adj_gap": 0.88,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 45.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.02,
+   "epp_gap_pct": -2.3,
+   "adj_gap": 1.3,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 45.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.04,
+   "epp_gap_pct": -2.3,
+   "adj_gap": 1.26,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 45.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.03,
+   "epp_gap_pct": -2.3,
+   "adj_gap": 1.82,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 45.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.03,
+   "epp_gap_pct": -17.7,
+   "adj_gap": 1.52,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 45.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.03,
+   "epp_gap_pct": -2.3,
+   "adj_gap": 1.52,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 45.9,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "BKR (retrospective, 2025-05-23) ◉ BUY — Ratio B 0.03x (10.2% downside to Bear $33 / +343.7% upside to Bull $163) | Adj composite 2.52 vs market 1.00: gap +1.52 [UNDERVALUED] | -2% above the EPP floor $38 (16x FY25E $2.35) | Conservative 2-yr case: +45.9% total (+22.9%/yr) | At 15.6x FY25E the 15% hurdle price $49 sits at or below the BASE case; orders -1.3% and revenue +0.1% in Q1 2025, forward revenues +0.1% (no Q2 2025 revenue guide, Q1 2025 revenue as reported); ENERGY_TRANSITION is live from 2015-12-12 but scoped to oil, gas and coal reserves and refining; no theme in scope has dated evidence.",
+ "sources": [
+  {
+   "id": "BK108",
+   "published": "2025-02-04",
+   "filed": "2025-02-04 07:05 ET (before the open)",
+   "title": "Baker Hughes Company FY2024 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160525000035/bkr-20241231.htm",
+   "supports": "statements of income and cash flows to 2024, orders, segment revenue, Class A and Class B shares outstanding, dividends, the business description and risk factors"
+  },
+  {
+   "id": "BK107",
+   "published": "2025-01-31",
+   "filed": "2025-01-30 17:10 ET (after the close)",
+   "title": "Baker Hughes Company Q4 2024 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160525000014/earningsreleaseex991123120.htm",
+   "supports": "Q4 2024 orders, revenue, segments, margins and EPS; the full year's statement of income and total-year tables"
+  },
+  {
+   "id": "BK103",
+   "published": "2024-02-05",
+   "filed": "2024-02-05 07:52 ET (before the open)",
+   "title": "Baker Hughes Company FY2023 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160524000033/bkr-20231231.htm",
+   "supports": "statements of income and cash flows to 2023, orders, segment revenue, Class A and Class B shares outstanding, dividends, the business description and risk factors"
+  },
+  {
+   "id": "BK102",
+   "published": "2024-01-24",
+   "filed": "2024-01-23 17:25 ET (after the close)",
+   "title": "Baker Hughes Company Q4 2023 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160524000007/earningsreleaseex991123120.htm",
+   "supports": "Q4 2023 orders, revenue, segments, margins and EPS; the full year's statement of income and total-year tables"
+  },
+  {
+   "id": "BK98",
+   "published": "2023-02-15",
+   "filed": "2023-02-14 16:16 ET (after the close)",
+   "title": "Baker Hughes Company FY2022 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160523000044/bkr-20221231.htm",
+   "supports": "statements of income and cash flows to 2022, orders, segment revenue, Class A and Class B shares outstanding, dividends, the business description and risk factors"
+  },
+  {
+   "id": "BK92",
+   "published": "2022-02-14",
+   "filed": "2022-02-11 16:42 ET (after the close)",
+   "title": "Baker Hughes Company FY2021 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160522000050/bkr-20211231.htm",
+   "supports": "statements of income and cash flows to 2021, orders, segment revenue, Class A and Class B shares outstanding, dividends, the business description and risk factors"
+  },
+  {
+   "id": "BK86",
+   "published": "2021-02-26",
+   "filed": "2021-02-25 16:07 ET (after the close)",
+   "title": "Baker Hughes Company FY2020 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160521000026/bkr-20201231.htm",
+   "supports": "statements of income 2018-2020, orders, segment revenue and operating income, Class A and Class B shares outstanding, cash flows, dividends, the business description and risk factors"
+  },
+  {
+   "id": "BK80",
+   "published": "2020-02-14",
+   "filed": "2020-02-13 16:18 ET (after the close)",
+   "title": "Baker Hughes Company FY2019 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160520000019/fiscalyear2019form10-k.htm",
+   "supports": "selected financial data 2015-2019, orders, segment revenue and operating income, Class A and Class B shares outstanding, cash flows, dividends, the business description and risk factors"
+  },
+  {
+   "id": "BK79",
+   "published": "2020-01-22",
+   "filed": "2020-01-22 07:05 ET (before the open)",
+   "title": "Baker Hughes Company Q4 2019 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160520000004/earningsreleaseexhibit.htm",
+   "supports": "Q4 2019 orders, revenue, segment and operating income; full-year 2019 statement of income and total-year table; the identified items of the third and fourth quarters of 2019"
+  },
+  {
+   "id": "BK76",
+   "published": "2019-07-31",
+   "filed": "2019-07-31 06:49 ET (before the open)",
+   "title": "Baker Hughes, a GE company Q2 2019 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160519000055/earningsreleaseexhibit9910.htm",
+   "supports": "Q2 2019 orders, revenue, segment and operating income; the identified items of the first and second quarters of 2019"
+  },
+  {
+   "id": "BK74",
+   "published": "2019-02-20",
+   "filed": "2019-02-19 16:55 ET (after the close)",
+   "title": "Baker Hughes, a GE company FY2018 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160519000021/fiscalyear2018form10-k.htm",
+   "supports": "selected financial data 2014-2018, orders, segment revenue and operating income 2016-2018, Class A and Class B shares outstanding, cash flows, dividends, the business description and risk factors"
+  },
+  {
+   "id": "BK71",
+   "published": "2018-07-20",
+   "filed": "2018-07-20 06:49 ET (before the open)",
+   "title": "Baker Hughes, a GE company Q2 2018 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160518000078/earningsreleaseexhibit9910.htm",
+   "supports": "the identified items attributable to BHGE in the first and second quarters of 2018 (Table 1b)"
+  },
+  {
+   "id": "BK69",
+   "published": "2017-07-03",
+   "filed": "2017-07-03 11:56 ET (during the session)",
+   "title": "Baker Hughes, a GE company 8-K12B: the combination with GE's oil and gas business closed on July 3, 2017",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000119312517220852/d343521d8k12b.htm",
+   "supports": "the successor issuer: each Baker Hughes share became one Class A share of Baker Hughes, a GE company and the $17.50 special dividend; Class A common stock trading on the NYSE as BHGE from July 5, 2017"
+  },
+  {
+   "id": "BK109",
+   "published": "2025-04-23",
+   "filed": "2025-04-22 17:08 ET (after the close)",
+   "title": "Baker Hughes Company Q1 2025 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1701605/000170160525000073/earningsreleaseex991033120.htm",
+   "supports": "Q1 2025 orders, revenue, segments, margins and EPS"
+  },
+  {
+   "id": "A0",
+   "published": "2025-05-23",
+   "title": "Yahoo Finance daily prices, Baker Hughes Company Class A common stock (Nasdaq: BKR) and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/BKR/history",
+   "supports": "close $36.74 as traded on AS_OF, 52-week range, realized vol, beta, the 7.4-yr ex-FY17 ex-FY19 ex-FY20 ex-FY21 P/E distribution since the listing on 2017-07-05"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-10"
+}

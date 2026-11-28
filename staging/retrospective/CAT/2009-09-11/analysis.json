@@ -1,0 +1,222 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "CAT",
+ "company": "Caterpillar Inc.",
+ "as_of": "2009-09-11",
+ "price_date": "2009-09-11",
+ "price": 48.53,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); machinery and engines signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'Caterpillar is the leader in construction and mining equipment, and diesel and natural gas engines and industrial gas turbines in our size range' (FY2008 10-K, Item 1); 'Caterpillar products and product support services are sold worldwide into a variety of highly competitive markets'; 'Our results of operations are materially affected by the conditions in the global economy generally and in the global capital markets.', 'Decisions to purchase our machines and engines are dependent upon performance of these industries.' and 'The rates of infrastructure spending, housing starts and commercial construction, play a significant role in our results.' (Item 1A): demand that depends on the economy and the industries served is not earnings that are the cycle (the RCL rule), so DURABLE; no disruption theme is live for it",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "'Caterpillar is the leader in construction and mining equipment, and diesel and natural gas engines and industrial gas turbines in our size range' (FY2008 10-K, Item 1); 'Caterpillar products and product support services are sold worldwide into a variety of highly competitive markets'; 'Our results of operations are materially affected by the conditions in the global economy generally and in the global capital markets.', 'Decisions to purchase our machines and engines are dependent upon performance of these industries.' and 'The rates of infrastructure spending, housing starts and commercial construction, play a significant role in our results.' (Item 1A): demand that depends on the economy and the industries served is not earnings that are the cycle (the RCL rule), so DURABLE; no disruption theme is live for it. durable franchise (obsolescence risk 2/5); price rich; +138% to EPP floor; model-vs-market gap -2.46; conservative 2yr -44%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": Infinity,
+  "ratio_b_fmt": "infx",
+  "epp": 20.4,
+  "epp_gap_pct": 137.9,
+  "epp_adj": -0.2,
+  "proxy_composite": 1.15,
+  "sca": -0.1,
+  "adj_composite": 0.85,
+  "market_composite": 3.31,
+  "adj_gap": -2.46,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": -43.8,
+  "scenarios": {
+   "BEAR": {
+    "eps": 1.26,
+    "pe": 11.6,
+    "price": 15,
+    "desc": "EPS -13.9%/yr (worst year FY99-FY08, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 0.78,
+    "pe": 14.3,
+    "price": 11,
+    "desc": "EPS +-32.3%/yr (FY09 guide + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 2.35,
+    "pe": 18.6,
+    "price": 44,
+    "desc": "EPS +17.6%/yr (FY99-FY08 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 4.4,
+    "pe": 22.1,
+    "price": 97,
+    "desc": "EPS +60.9%/yr (best 2-yr run FY99-FY08); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 137.9,
+   "adj_gap": -2.46,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -43.8,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 9.37,
+   "epp_gap_pct": 137.9,
+   "adj_gap": -2.19,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -43.8,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 137.9,
+   "adj_gap": -2.71,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -43.8,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 137.9,
+   "adj_gap": -2.42,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -43.8,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 137.9,
+   "adj_gap": -2.5,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -43.8,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 137.9,
+   "adj_gap": -2.16,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -43.8,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 90.3,
+   "adj_gap": -2.36,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -43.8,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 137.9,
+   "adj_gap": -2.35,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -43.8,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "RICH"
+ ],
+ "summary": "CAT (retrospective, 2009-09-11) ✕ AVOID — Ratio B infx (69.1% downside to Bear $15 / +-9.3% upside to Bull $44) | Adj composite 0.85 vs market 3.31: gap -2.46 [OVERVALUED] | +138% above the EPP floor $20 (12x FY09E $1.70) | Conservative 2-yr case: -43.8% total (-21.9%/yr) | At 28.5x FY09E the 15% hurdle price $64 sits above the BULL case; Machinery sales -49.1% in Q2 2009, forward revenues -37.7% to -29.9% (FY09 sales and revenues guide); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "CT28",
+   "published": "2009-05-15",
+   "filed": "2009-05-14 16:51 ET (after the close, so dated the next trading day)",
+   "title": "Caterpillar 8-K, Item 8.01: the FY2006-FY2008 financial statements recast for SFAS 160 and the 2009 segments (Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823009000186/ex_99-1.htm",
+   "supports": "Five-year Financial Summary 2004-2008 and Results of Operations 2006-2008 as recast: sales and revenues, operating profit, profit per share - diluted and diluted shares unchanged; consolidated profit before taxes $4,501M in 2008 (the FY2008 10-K: $4,473M) with the provision for income taxes of $953M; operating cash flow $4,797M; cash and short-term investments $2,736M; external sales of Machinery $31,804M, Engines $16,240M and Financial Products $3,280M"
+  },
+  {
+   "id": "CT25",
+   "published": "2009-01-26",
+   "filed": "2009-01-26 08:33 ET (before the open)",
+   "title": "Caterpillar 8-K: fourth-quarter 2008 results release (Exhibit 99.7)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823009000023/ex_99-7.htm",
+   "supports": "fourth-quarter and full-year 2008 sales by geographic region and statement of results; 2009 outlook: sales and revenues plus or minus 10 percent from $40 billion, profit of $2.50 per share excluding redundancy costs"
+  },
+  {
+   "id": "CT27",
+   "published": "2009-04-21",
+   "filed": "2009-04-21 08:57 ET (before the open)",
+   "title": "Caterpillar 8-K: first-quarter 2009 results release (Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823009000153/ex_99-1.htm",
+   "supports": "first-quarter 2009 sales by geographic region and statement of results; 2009 outlook: sales and revenues plus or minus 10 percent around a midpoint of $35 billion, profit of about $1.25 per share excluding redundancy costs at the midpoint"
+  },
+  {
+   "id": "CT29",
+   "published": "2009-07-21",
+   "filed": "2009-07-21 08:53 ET (before the open)",
+   "title": "Caterpillar 8-K: second-quarter 2009 results release (Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823009000266/ex_99-1.htm",
+   "supports": "second-quarter 2009 sales by geographic region and statement of results; 2009 outlook: sales and revenues $32 billion to $36 billion, profit $1.15 to $2.25 per share excluding redundancy costs"
+  },
+  {
+   "id": "CT24",
+   "published": "2008-10-21",
+   "filed": "2008-10-21 08:49 ET (before the open)",
+   "title": "Caterpillar 8-K: third-quarter 2008 results release (Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823008000355/ex_99-1.htm",
+   "supports": "third-quarter 2008 sales by geographic region and statement of results; 2008 outlook maintained (sales and revenues to top $50 billion, profit of about $6.00 per share); 2009 sales and revenues about flat with 2008"
+  },
+  {
+   "id": "CT21",
+   "published": "2008-06-11",
+   "filed": "2008-06-11 11:17 ET",
+   "title": "Caterpillar 8-K: 'Caterpillar Inc. Raises Dividend Rate 17 Percent' (Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823008000222/ex_99-1.htm",
+   "supports": "a quarterly cash dividend of $0.42 per share, payable August 20, 2008"
+  },
+  {
+   "id": "CT9",
+   "published": "2005-06-08",
+   "filed": "2005-06-08 12:00 ET",
+   "title": "Caterpillar 8-K: 'Caterpillar Splits Stock; Increases Dividend Rate'",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823005000429/form8k060805_dividend.htm",
+   "supports": "a two-for-one stock split; the split shares distributed on July 13 to stockholders of record on June 22, 2005"
+  },
+  {
+   "id": "W0",
+   "published": "2009-09-11",
+   "title": "Yahoo Finance daily prices, CAT and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/CAT/history",
+   "supports": "close $48.53 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-11"
+}

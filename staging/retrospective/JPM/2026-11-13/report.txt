@@ -1,0 +1,149 @@
+
+════════════════════════════════════════════════════════════════════════
+  JPM  ·  JPMorgan Chase & Co.  ·  $346.19  ·  RETROSPECTIVE as of 2026-11-13
+  Signal: ✕ AVOID   Ratio B: infx   Adj gap: -1.50  [OVERVALUED]
+  Point-in-time: 13 sources, latest published 2026-11-13; latest print Q3 2026 (Oct 13)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2026E revenue, USD bn  →  FY2028E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2026E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Noninterest revenue           $ 94.05  $94.05  $108.41    +0.00   +14.36
+    +2.4% revenue in FY25
+  Net interest income           $103.17  $103.17  $118.92    +0.00   +15.75
+    +3.1% revenue in FY25
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $197.22  $197.22  $227.33    +0.00   +30.11
+  FY2026E = FY25 $182.447B × (1 + 8.1%: the Q3 2026 revenue growth (no Q4 2026 guide), YoY, applied to the year (no FY26 revenue guide)); split pro rata to FY25 total net revenue by component, reported basis (FY25 growth)
+  Q3 2026 (Oct 13): total net revenue $50.172B +8.1% YoY (-12.5% QoQ); nonperforming assets -6.0% (loans +10.4%); noninterest expense +12.4%;
+  provision 5.47% of revenue (-186.3bp); pre-tax margin 40.13% (-24.1bp); EPS $5.57 vs $5.07
+  Revenue: total net revenue $50,172M vs $46,427M a year earlier, $57,347M the quarter before (reported basis); provision for credit losses $2,743M vs $3,403M; nonperforming assets $9,996M vs $10,635M a year earlier; loans $1,584,641M vs $1,435,246M; GAAP diluted EPS $5.57 vs $5.07 (the supplement prints no figure excluding merger costs); diluted shares 2,683.0M; Tier 1 capital ratio 14.8%; cash dividends declared $1.65 a share in the quarter; the release: 'NET INCOME OF $15.8 BILLION ($5.75 PER SHARE) EXCLUDING A SIGNIFICANT ITEM' ($658 million of net investment securities losses; the quarter's EPS stays GAAP)
+  Q4 2026: no revenue, EPS or margin guide in numbers in any filing; the latest quarter's revenue growth stands in (the UNP rule); the releases, 10-Qs and investor slides give credit-loss and segment outlooks only, which method r2 has no input for
+
+  FY2026E EPS check:  $197.220B × 39.8% pre-tax × (1−21.4%) ÷ 2.683B  =  $22.99  (FY2026E: no EPS guide in numbers, FY25's $20.02 stands)
+  FY2028E BEAR check: $197.220B × 39.8% ÷ 2.515B  =  $24.53  (scenario $12.40)
+  FY2028E BULL check: $227.330B × 40.2% ÷ 2.515B  =  $28.56  (scenario $25.99)
+  Every 1pp of pre-tax margin ≈ $0.578 EPS ≈ $6.70/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Net revenue growth                    -33.0%   ≥-12.0%    ≥10.0%    ≥29.0%     +8.1%  ◦ BASE  ██░░
+  Credit cost (provision/revenue)     +1340.0bp  ≤670.0bp    ≤0.0bp  ≤-1020.0bp  -186.3bp  ▲ BULL  ███░
+  Expense growth less revenue          +65.0pp   ≤29.0pp   ≤-7.0pp  ≤-17.0pp    +4.3pp  ◦ BASE  ██░░
+  Nonperforming assets less loans     +231.0pp  ≤109.0pp  ≤-12.0pp  ≤-85.0pp   -16.4pp  ▲ BULL  ███░
+  Pre-tax margin change               -3910.0bp  ≥-1760.0bp  ≥400.0bp  ≥2200.0bp   -24.1bp  ◦ BASE  ██░░
+  Crypto: disintermediation of payments and banking    +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.35 / 4.00
+  Market composite:   3.80 / 4.00  (back-solved from $346.19 + 15% hurdle)
+  SCA adjustment:    +0.05  ·  EPP-distance adj -0.10  →  Adj composite 2.30  →  Gap -1.50  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY25 total net revenue +2.8%, provision 7.8% of revenue; Q3 provision 5.5% of revenue (-186bp YoY)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 17.3x FY26E vs a 11.6x 10-yr median (98th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: Q3 2026 revenue growth (no Q4 2026 guide) +8.1% vs a 5.8% 9-yr median  (+0.23 × 20%  =  +0.046)
+    +  Tier 1 capital ratio 14.8%, nonperforming assets $9.996B (-6.0% YoY) at the end of Q3 2026, dividend $6.60 a year  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Net revenue growth                     +8.1%    -33.0%  -41.1%  Markets and fee revenue fall with the…
+  Credit cost (provision/revenue)     -186.3bp  +1340.0bp  +1526.3bp  Loan losses and reserve builds take m…
+  Expense growth less revenue           +4.3pp   +65.0pp  +60.7pp  Noninterest expense does not fall wit…
+  Nonperforming assets less loans      -16.4pp  +231.0pp  +247.4pp  Problem assets grow faster than the l…
+  Pre-tax margin change                -24.1bp  -3910.0bp  -3885.9bp  Credit costs and expenses outrun revenue
+  Crypto: disintermediation of payments and banking    +2.0/4    +1.0/4  -1.0/4  Payments move to crypto rails that ne…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$168.72  (model)  /  $115.32 (defined)
+  Bear probability (proxy model):  12.0%
+
+  KEY TRIGGER: revenue went from +27.7% (Q2 2026) to +8.1% YoY (Q3 2026), -12.5% on the quarter before;
+  the bear case needs credit costs (-186.3bp of revenue now) rising further
+  and nonperforming assets (-16.4pp against loans) outgrowing the loan book. A credit downturn shows up in nonperforming assets and the provision first;
+  the bear needs it in net revenue as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $20.02  (FY2026E: no EPS guide in numbers, FY25's $20.02 stands)
+  Min viable P/E at panic:          9x  [median of calendar-year P/E lows: 2016 12.5x, 2017 12.0x, 2018 10.2x, 2019 9.1x, 2020 8.9x, 2021 8.2x, 2022 8.4x, 2023 7.7x, 2024 9.2x, 2025 10.5x, 2026 14.1x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $180.18/share
+  Current $346.19 vs Updated EPP $180.18:  +92%  ⚠ far above floor — large drawdown room
+  Bear $115.32 vs Updated EPP $180.18:  -36%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Net revenue growth                           -12.0      -20.1   BASE floor (vs +8 now)
+  Credit cost (provision/revenue)              670.0     +856.3   BASE floor (vs -186 now)
+  Expense growth less revenue                   29.0      +24.7   BASE floor (vs +4 now)
+  Nonperforming assets less loans              109.0     +125.4   BASE floor (vs -16 now)
+  Pre-tax margin change                      -1760.0    -1735.9   BASE floor (vs -24 now)
+  Crypto: disintermediation of payments and banking             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $20.02 × (1+9.3%)² = $23.91
+  At 11x P/E (conservative):  $263.04/share
+  + Cumul. dividends (2yr):  +$13.60/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $263.04  (▼83.15 from $346.19)
+  Conservative total return:  -20% over 2yr  = -10%/yr
+
+  9.3% EPS growth is what is left once the premium multiple (17.3x)
+  mean-reverts to 11x. Breakeven at 11x needs FY2028E EPS of $30.24,
+  i.e. 22.9%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $279.10  –  $366.50  (at 77th pct of range)
+  Annual dividend:      $6.60/share  (yield 1.9%)
+  Realized vol:         23% annualized (1-yr daily log returns)
+  Beta vs broad market: 0.77
+  1-sigma range (1yr):  $267.95  –  $424.43  ($346.19 ± 23%)
+  2-sigma range (1yr):  $189.71  –  $502.67
+  ────────────────────────────────────────────────────────────
+  Bear $115.32 requires:  ~3.0σ price move  (unusual — requires fundamental break)
+  A bank whose earnings follow credit and markets: the stock is +22% off its March
+  low (52 weeks) while revenue went from +27.7% (Q2 2026) to +8.1% YoY (Q3 2026), -12.5% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR       12.40    9.3x  $ 115.32    12.0%      1.2%   +10.8pp  EPS -21.3%/yr (worst year FY16-FY25, capped at 0%); P/E to its 10th pct
+  BASE       24.80   11.6x  $ 287.68    42.0%      4.3%   +37.7pp  EPS +11.3%/yr (Q3 revenue YoY + margin + buyback); P/E at its 10-yr median
+  BULL       25.99   13.3x  $ 345.67    38.7%     15.0%   +23.6pp  EPS +13.9%/yr (FY16-FY25 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL      31.24   15.3x  $ 477.97     7.3%     79.5%   -72.2pp  EPS +24.9%/yr (best 2-yr run FY16-FY25, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $303.24  /  Market EV: $445.46  /  Current: $346.19
+  Conservative EV (2yr, ④): $263.04 + $13.60 divs = $276.63 total value
+  Downside (→ Bear $115.32): 66.7%   Upside (→ Bull $345.67): -0.2%   Ratio B infx  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $346.19 the market needs $457.84 in two years —
+  above the BULL case. That is a market composite of 3.80 against a model
+  read of 2.30: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                        infx     +92%    -1.50  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     4.27x     +92%    -0.98  OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx     +92%    -1.47  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                         22.92x     +92%    -1.44  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                           infx     +92%    -1.47  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)              infx     +92%    -1.20  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                  infx     +44%    -1.50  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                     infx     +92%    -1.20  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 2026 print (the quarter ends in December) — revenue against the Q3 2026 revenue growth (no Q4 2026 guide): +8.1% YoY
+  (2) Credit costs — the provision took 5.5% of revenue in Q3 2026 (-186.3bp YoY): what must turn before earnings can
+  (3) A Q4 2026 revenue guide — none: JPMorgan Chase gives no firm-wide revenue, EPS or margin outlook in any filing; net charge-offs and reserve builds by business are in each supplement
+  (4) Nonperforming assets — -6.0% against loans +10.4% in Q3 2026 (-16.4pp): problem loans outgrowing the book would show here first
+  (5) Capital at 17x — dividend $1.65 a quarter: 'On September 15, 2026, the Board of Directors declared quarterly common stock dividends of $1.65 per share.' (Q3 2026 supplement, the first filing to state the declared rate; the 8-K of 2026-06-24 and the Q2 2026 10-Q state an intention); Tier 1 capital ratio 14.8% at the end of Q3 2026
+  ✕ AVOID  |  EPP floor $180.18  |  ADD below ~$244.53  |  TRIM above $345.67
+════════════════════════════════════════════════════════════════════════
+

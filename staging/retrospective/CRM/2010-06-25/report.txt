@@ -1,0 +1,151 @@
+
+════════════════════════════════════════════════════════════════════════
+  CRM  ·  salesforce.com, inc.  ·  $91.62  ·  RETROSPECTIVE as of 2010-06-25
+  Signal: ◉ BUY   Ratio B: 0.48x   Adj gap: -0.55  [OVERVALUED]
+  Point-in-time: 9 sources, latest published 2010-06-25; latest print Q1 FY11 (May 20)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2011E revenue, USD bn  →  FY2013E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2011E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Americas                      $  1.10  $ 1.10  $ 2.44    +0.00    +1.34
+    +19.0% revenue in FY10
+  Europe                        $  0.28  $ 0.28  $ 0.61    +0.00    +0.33
+    +21.9% revenue in FY10
+  Asia Pacific                  $  0.18  $ 0.18  $ 0.40    +0.00    +0.22
+    +36.3% revenue in FY10
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $  1.56  $ 1.56  $ 3.45    +0.00    +1.89
+  FY2011E = FY10 $1.306B × (1 + 18.7%: FY11 revenue guide midpoint ($1.545-1.555B, Q1 FY11 release)); split pro rata to FY10 revenues by geography (FY2010 10-K), growth on the year before
+  Q1 FY11 (May 20): revenue $0.377B +23.6% YoY (+6.4% QoQ); subscription and support +24.5%; deferred revenue $0.664B +21.0%; R&D + M&S + G&A +27.8%;
+  gross margin 81.00% (+127.1bp); operating margin 8.77% (-110.8bp); EPS $0.13 vs $0.15
+  Revenue: revenues $376.8M vs $304.9M a year earlier, $354.0M the quarter before; subscription and support $350.7M vs $281.8M; deferred revenue $664.5M (2010-04-30) vs $549.4M a year earlier, current and noncurrent (the release's Additional Metrics); GAAP diluted EPS $0.13 vs $0.15; the release's non-GAAP EPS also excludes stock-based compensation, the amortization of purchased intangibles and the non-cash interest on the convertible senior notes, which recur, so it is not used; diluted shares 132.3M
+  Q2 FY11 outlook: Q2 FY11 revenue $381-383M ('Revenue for the company’s second quarter is projected to be in the range of approximately $381 million to approximately $383 million.') against Q2 FY10's $316.1M: +20.5% to +21.2% YoY; display only: 'GAAP fully diluted EPS is expected to be in the range of approximately $0.07 to approximately $0.08' (Q2 FY11); FY11 guide (Q3 FY10 release, Q4 FY10 release, Q1 FY11 release): EPS $0.38-0.40 (Q1 FY11 release: GAAP diluted EPS, including the Jigsaw acquisition (its effect recurs, the InStranet reading)); revenue $1.545-1.555B (Q1 FY11 release; the segment bridge only); 'The acquisition is expected to reduce both GAAP and non-GAAP EPS performance for fiscal year 2011 by approximately $0.20 and $0.11, respectively.' (Q1 FY11 release); no margin guide
+
+  FY2011E EPS check:  $1.560B × 10.9% pre-tax × (1−40.5%) ÷ 0.132B  =  $0.77  (FY2011E EPS, guide midpoint ($0.38-0.40, Q1 FY11 release))
+  FY2013E BEAR check: $1.560B × 10.9% ÷ 0.140B  =  $0.72  (scenario $0.39)
+  FY2013E BULL check: $3.450B × 11.3% ÷ 0.140B  =  $1.66  (scenario $0.94)
+  Every 1pp of pre-tax margin ≈ $0.070 EPS ≈ $12.00/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Subscription and support growth       +40.0%    ≥61.0%    ≥82.0%   ≥328.0%    +24.5%  ⚠ BEAR  █░░░
+  Deferred revenue growth               +43.0%    ≥68.0%    ≥93.0%   ≥169.0%    +21.0%  ⚠ BEAR  █░░░
+  Gross margin change                 -740.0bp  ≥-330.0bp   ≥70.0bp  ≥3600.0bp  +127.1bp  ▲ BULL  ███░
+  Opex growth less revenue             +49.0pp   ≤12.0pp  ≤-24.0pp  ≤-305.0pp    +4.2pp  ◦ BASE  ██░░
+  Operating margin change             -2800.0bp  ≥-720.0bp  ≥1360.0bp  ≥48650.0bp  -110.8bp  ◦ BASE  ██░░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.75 / 4.00
+  Market composite:   2.03 / 4.00  (back-solved from $91.62 + 15% hurdle)
+  SCA adjustment:    -0.07  ·  EPP-distance adj -0.20  →  Adj composite 1.48  →  Gap -0.55  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY10 revenues +21.3%, subscription and support +22.8%, gross margin 80.2%; Q1 deferred revenue +21.0% YoY  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 234.9x FY11E vs a 171.1x 6.0-yr ex-FY07 median (74th percentile of its own range)  (-0.40 × 25%  =  -0.100)
+    -  Growth vs own history: Q2 FY11 revenue guide (Q1 FY11 release) +20.5-21.2% vs a 50.6% 5-yr median  (-0.50 × 20%  =  -0.100)
+    +  Cash, cash equivalents and marketable securities $1.901B (Q1 FY11), convertible senior notes $455.6M, net (the balance sheet), FY10 free cash flow $0.217B (net cash provided by operating activities $270.9M less capital expenditures $53.9M), no dividend  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Subscription and support growth       +24.5%    +40.0%  +15.5%  New subscriptions and renewals slow: …
+  Deferred revenue growth               +21.0%    +43.0%  +22.0%  Billings slow ahead of revenue: the n…
+  Gross margin change                 +127.1bp  -740.0bp  -867.1bp  Data-center and service costs outgrow…
+  Opex growth less revenue              +4.2pp   +49.0pp  +44.8pp  Marketing and sales, R&D and G&A do n…
+  Operating margin change             -110.8bp  -2800.0bp  -2689.2bp  Operating leverage works in reverse
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$57.69  (model)  /  $27.14 (defined)
+  Bear probability (proxy model):  33.0%
+
+  KEY TRIGGER: revenue went from +22.3% (Q4 FY10) to +23.6% YoY (Q1 FY11), +6.4% on the quarter before;
+  the bear case needs deferred revenue (+21.0% YoY now) and the operating
+  margin (-110.8bp now) giving way. A subscription slowdown shows up in deferred revenue first, then in
+  subscription and support revenue a few quarters later.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $0.39  (FY2011E EPS, guide midpoint ($0.38-0.40, Q1 FY11 release))
+  Min viable P/E at panic:          100x  [median of calendar-year P/E lows: 2004 137.0x, 2005 72.2x, 2006 189.2x, 2007 259.1x, 2008 62.7x, 2009 40.9x, 2010 100.9x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $39.00/share
+  Current $91.62 vs Updated EPP $39.00:  +135%  ⚠ far above floor — large drawdown room
+  Bear $27.14 vs Updated EPP $39.00:  -30%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Subscription and support growth               61.0      +36.5   BASE floor (vs +24 now)
+  Deferred revenue growth                       68.0      +47.0   BASE floor (vs +21 now)
+  Gross margin change                         -330.0     -457.1   BASE floor (vs +127 now)
+  Opex growth less revenue                      12.0       +7.8   BASE floor (vs +4 now)
+  Operating margin change                     -720.0     -609.2   BASE floor (vs -111 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $0.39 × (1+16.0%)² = $0.52
+  At 171x P/E (conservative):  $89.74/share
+  + Cumul. dividends (2yr):  +$0.00/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $89.74  (▼1.88 from $91.62)
+  Conservative total return:  -2% over 2yr  = -1%/yr
+
+  16.0% EPS growth is what is left once the premium multiple (234.9x)
+  mean-reverts to 171x. Breakeven at 171x needs FY2013E EPS of $0.54,
+  i.e. 17.2%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $35.27  –  $97.94  (at 90th pct of range)
+  Annual dividend:      $0.00/share  (yield 0.0%)
+  Realized vol:         39% annualized (1-yr daily log returns)
+  Beta vs broad market: 1.53
+  1-sigma range (1yr):  $55.61  –  $127.63  ($91.62 ± 39%)
+  2-sigma range (1yr):  $19.61  –  $163.63
+  ────────────────────────────────────────────────────────────
+  Bear $27.14 requires:  ~1.8σ price move  (unusual — requires fundamental break)
+  A subscription software company priced on its growth: the stock is +158% off its July
+  low (52 weeks) while revenue went from +22.3% (Q4 FY10) to +23.6% YoY (Q1 FY11), +6.4% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        0.39   69.6x  $  27.14    33.0%     17.2%   +15.7pp  EPS +0.0%/yr (worst year FY05-FY10 ex-FY07, capped at 0%); P/E to its 10th pct
+  BASE        0.54  171.1x  $  92.39    50.0%     60.1%   -10.1pp  EPS +18.0%/yr (Q2 FY11 guide YoY + margin + buyback); P/E at its 6.0-yr ex-FY07 median
+  BULL        0.94  239.3x  $ 224.94    14.3%     19.0%    -4.7pp  EPS +55.2%/yr (FY05-FY10 ex-FY07 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL       1.64  306.0x  $ 501.84     2.7%      3.6%    -0.9pp  EPS +104.9%/yr (best 2-yr run FY05-FY10 ex-FY07, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $100.95  /  Market EV: $121.11  /  Current: $91.62
+  Conservative EV (2yr, ④): $89.74 + $0.00 divs = $89.74 total value
+  Downside (→ Bear $27.14): 70.4%   Upside (→ Bull $224.94): 145.5%   Ratio B 0.48x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $91.62 the market needs $121.17 in two years —
+  between the BASE and BULL cases. That is a market composite of 2.03 against a model
+  read of 1.48: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.48x    +135%    -0.55  OVERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.28x    +135%    -0.15  FAIRLY VALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.98x    +135%    -0.92  OVERVALUED / ACCUMULATE
+  Scenario EPS +1.5pp/yr                          0.45x    +135%    -0.52  OVERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.52x    +135%    -0.58  OVERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.48x    +135%    -0.25  MODESTLY OVERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.48x    +128%    -0.55  OVERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.48x    +135%    -0.40  MODESTLY OVERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 FY11 print (August) — revenue against the Q2 FY11 revenue guide (Q1 FY11 release): +20.5-21.2% YoY
+  (2) Deferred revenue — +21.0% YoY in Q1 FY11: billings run ahead of revenue, so they slow first
+  (3) The FY11 EPS guide — $0.38-0.40 GAAP (Q1 FY11 release)
+  (4) Operating expenses — R&D, marketing and sales and G&A +27.8% against revenue +23.6% in Q1 FY11 (+4.2pp): the cost of growth
+  (5) Capital structure at 235x — no share repurchase program (the 10-K's only repurchases are of unvested shares from employees)
+  ◉ BUY  |  EPP floor $39.00  |  ADD below ~$78.53  |  TRIM above $224.94
+════════════════════════════════════════════════════════════════════════
+

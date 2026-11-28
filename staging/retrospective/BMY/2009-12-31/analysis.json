@@ -1,0 +1,263 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "BMY",
+ "company": "Bristol-Myers Squibb Company",
+ "as_of": "2009-12-31",
+ "price_date": "2009-12-31",
+ "price": 25.25,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); pharmaceutical signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'is engaged in the discovery, development, licensing, manufacturing, marketing, distribution and sale of pharmaceutical and nutritional products.' (FY2008 10-K, Item 1); 'Our Pharmaceuticals Segment is confronted by a record level of industry patent expirations and increasingly aggressive generic competition.' (Item 1A); 'In 2008, net sales of PLAVIX* contributed $5.6 billion, representing 27% of total net sales' (Item 1A); 'It is possible that the Company may lose market exclusivity of a product earlier than expected.' (Item 1A heading)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "'is engaged in the discovery, development, licensing, manufacturing, marketing, distribution and sale of pharmaceutical and nutritional products.' (FY2008 10-K, Item 1); 'Our Pharmaceuticals Segment is confronted by a record level of industry patent expirations and increasingly aggressive generic competition.' (Item 1A); 'In 2008, net sales of PLAVIX* contributed $5.6 billion, representing 27% of total net sales' (Item 1A); 'It is possible that the Company may lose market exclusivity of a product earlier than expected.' (Item 1A heading). durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.69x; -3% to EPP floor; model-vs-market gap +1.39; conservative 2yr +36%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.69,
+  "ratio_b_fmt": "0.69x",
+  "epp": 26.09,
+  "epp_gap_pct": -3.2,
+  "epp_adj": 0.2,
+  "proxy_composite": 2.8,
+  "sca": 0.239,
+  "adj_composite": 3.239,
+  "market_composite": 1.85,
+  "adj_gap": 1.39,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 36.3,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.32,
+    "pe": 13.5,
+    "price": 4,
+    "desc": "EPS -54.1%/yr (worst year FY02-FY08, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 1.74,
+    "pe": 19.4,
+    "price": 34,
+    "desc": "EPS +6.5%/yr (Q3 sales ex-FX + margin + buyback); P/E at its 8.0-yr median"
+   },
+   "BULL": {
+    "eps": 1.76,
+    "pe": 31.6,
+    "price": 56,
+    "desc": "EPS +7.0%/yr (FY02-FY08 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 3.94,
+    "pe": 39.4,
+    "price": 155,
+    "desc": "EPS +60.1%/yr (best 2-yr run FY02-FY08); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.69,
+   "epp_gap_pct": -3.2,
+   "adj_gap": 1.39,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 36.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.46,
+   "epp_gap_pct": -3.2,
+   "adj_gap": 1.72,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 36.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 2.43,
+   "epp_gap_pct": -3.2,
+   "adj_gap": 0.9,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 36.3,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.67,
+   "epp_gap_pct": -3.2,
+   "adj_gap": 1.42,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 36.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.74,
+   "epp_gap_pct": -3.2,
+   "adj_gap": 1.34,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 36.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.69,
+   "epp_gap_pct": -3.2,
+   "adj_gap": 1.69,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 36.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.69,
+   "epp_gap_pct": -17.8,
+   "adj_gap": 1.39,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 36.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.69,
+   "epp_gap_pct": -3.2,
+   "adj_gap": 1.49,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 36.3,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP",
+  "RICH"
+ ],
+ "summary": "BMY (retrospective, 2009-12-31) ◉ BUY — Ratio B 0.69x (84.2% downside to Bear $4 / +121.8% upside to Bull $56) | Adj composite 3.24 vs market 1.85: gap +1.39 [UNDERVALUED] | -3% above the EPP floor $26 (17x FY09E $1.53) | Conservative 2-yr case: +36.3% total (+18.1%/yr) | At 16.4x FY09E the 15% hurdle price $33 sits at or below the BASE case; U.S. revenues +9.2% in Q3 2009, forward revenues +7% (no FY09 revenue guide in numbers, Q3 2009 net sales growth ex-FX); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "BM22",
+   "published": "2009-04-28",
+   "filed": "2009-04-28 12:00 ET (during the session)",
+   "title": "Bristol-Myers Squibb 8-K of 2009-04-28 (FY2006-FY2008 statements revised for the 2009 segments and SFAS 160)",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312509089618/dex991.htm",
+   "supports": "revised consolidated financial statements for 2006-2008 (the 2009 segments, BioPharmaceuticals and Mead Johnson, and SFAS 160): five-year summary 2004-2008 with EPS, net sales and shares unchanged from the FY2008 10-K; statement of earnings; geographic areas; cash flows"
+  },
+  {
+   "id": "BM20",
+   "published": "2009-02-20",
+   "filed": "2009-02-20 06:11 ET (before the open)",
+   "title": "Bristol-Myers Squibb FY2008 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312509033538/d10k.htm",
+   "supports": "five-year summary 2004-2008 (ConvaTec and Medical Imaging discontinued: diluted EPS from continuing operations $1.02, $1.35, $0.62, $0.88, $1.59; net sales; diluted shares); statement of earnings 2006-2008 (cost of products sold, provision for income taxes $1,320M in 2008); geographic areas 2006-2008; cash flows; segment net sales; the $0.31 quarterly dividend; durability wording (Items 1 and 1A)"
+  },
+  {
+   "id": "BM15",
+   "published": "2008-02-22",
+   "filed": "2008-02-21 20:40 ET (after the close)",
+   "title": "Bristol-Myers Squibb FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312508035566/d10k.htm",
+   "supports": "five-year summary 2003-2007 (Medical Imaging discontinued: diluted EPS from continuing operations $1.53, $1.12, $1.44, $0.73, $0.99; net sales; diluted shares); statement of earnings 2005-2007 (cost of products sold, provision for income taxes $803M in 2007); geographic areas 2005-2007; cash flows; segment net sales; the $0.31 quarterly dividend; durability wording (Items 1, 1A and 7)"
+  },
+  {
+   "id": "BM10",
+   "published": "2007-02-27",
+   "filed": "2007-02-26 17:25 ET (after the close)",
+   "title": "Bristol-Myers Squibb FY2006 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312507039915/d10k.htm",
+   "supports": "five-year summary 2002-2006 (net sales, pre-tax earnings, diluted EPS from continuing operations $1.06, $1.59, $1.21, $1.52, $0.81 and diluted shares); statement of earnings 2004-2006 (cost of products sold, provision for income taxes $610M in 2006); geographic areas 2004-2006; cash flows; segment net sales; the $0.28 quarterly dividend; durability wording (Items 1 and 1A)"
+  },
+  {
+   "id": "BM9",
+   "published": "2006-03-14",
+   "filed": "2006-03-13 17:34 ET (after the close)",
+   "title": "Bristol-Myers Squibb FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312506052456/d10k.htm",
+   "supports": "statement of earnings 2003-2005 (net sales $18,653M, $19,380M, $19,207M; cost of products sold $5,406M, $5,989M, $5,928M); geographic areas, United States $10,656M, $10,613M, $10,461M; five-year summary 2001-2005 (2001: net sales $16,612M, pre-tax $2,252M, earnings from continuing operations $1,866M, $0.95 a diluted share, 1,965M shares; 2002 net sales $16,208M, pre-tax $2,748M)"
+  },
+  {
+   "id": "BM7",
+   "published": "2004-06-29",
+   "filed": "2004-06-28 16:18 ET (after the close)",
+   "title": "Bristol-Myers Squibb FY2003 10-K/A (restated)",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312504110278/d10ka.htm",
+   "supports": "restated statement of earnings 2001-2003 (net sales $18,044M, $18,106M, $20,894M; cost of products sold $5,515M, $6,532M, $7,592M); geographic areas, United States $11,802M, $11,348M, $12,897M; five-year summary 1999-2003 (net sales $16,491M and $17,519M, pre-tax $4,733M and $5,263M for 1999 and 2000); the items affecting the comparability of 2001 ($2,962M before and $1,905M after taxes)"
+  },
+  {
+   "id": "BM19",
+   "published": "2009-01-27",
+   "filed": "2009-01-27 08:32 ET (before the open)",
+   "title": "Bristol-Myers Squibb Q4 2008 results (8-K, Exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312509011613/dex991.htm",
+   "supports": "Q4 2008 statement of earnings (net sales $5,249M vs $5,058M, cost of products sold $1,522M vs $1,716M, pre-tax $1,888M vs $172M, diluted EPS $0.61 vs $-0.10, 1,982M diluted shares); U.S. $3,189M vs $2,874M and international $2,060M vs $2,184M net sales (supplemental exhibit); net sales growth 8% excluding foreign exchange impact, as the release states; FY2008 net sales $20,597M, diluted EPS from continuing operations $1.59 (2,001M shares), provision for income taxes $1,320M; FY2007 restated $18,193M and $0.88; FY2009 guide: GAAP EPS $1.58-1.73, non-GAAP EPS $1.85-2.00 (low single-digit revenue growth (mid-to-high single digit growth excluding foreign exchange), in words)"
+  },
+  {
+   "id": "BM21",
+   "published": "2009-04-28",
+   "filed": "2009-04-28 08:39 ET (before the open)",
+   "title": "Bristol-Myers Squibb Q1 2009 results (8-K, Exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312509089307/dex991.htm",
+   "supports": "Q1 2009 statement of earnings (net sales $5,015M vs $4,891M, cost of products sold $1,413M vs $1,570M, pre-tax $1,384M vs $1,207M, diluted EPS $0.32 vs $0.32, 1,983M diluted shares); U.S. $3,031M vs $2,747M and international $1,984M vs $2,144M net sales (supplemental exhibit); net sales growth 8% excluding foreign exchange impact, as the release states; FY2009 guide: GAAP EPS $1.58-1.73, non-GAAP EPS $1.85-2.00 (low single-digit revenue growth (mid-to-high single digit growth excluding foreign exchange), in words)"
+  },
+  {
+   "id": "BM23",
+   "published": "2009-07-23",
+   "filed": "2009-07-23 10:31 ET (during the session)",
+   "title": "Bristol-Myers Squibb Q2 2009 results (8-K, Exhibits 99.1 and 99.3)",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312509153687/dex991.htm",
+   "supports": "Q2 2009 statement of earnings (net sales $5,384M vs $5,203M, cost of products sold $1,461M vs $1,670M, pre-tax $1,741M vs $1,221M, diluted EPS $0.49 vs $0.36, 1,983M diluted shares); U.S. $3,247M vs $2,898M and international $2,137M vs $2,305M net sales (supplemental exhibit); net sales growth 8% excluding foreign exchange impact, as the release states; FY2009 guide: GAAP EPS $1.58-1.68, non-GAAP EPS $1.95-2.05 (low single-digit revenue growth (high single digit growth excluding foreign exchange), in words)"
+  },
+  {
+   "id": "BM24",
+   "published": "2009-10-22",
+   "filed": "2009-10-22 09:24 ET (before the open)",
+   "title": "Bristol-Myers Squibb Q3 2009 results (8-K, Exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312509211606/dex991.htm",
+   "supports": "Q3 2009 statement of earnings (net sales $5,487M vs $5,254M, cost of products sold $1,562M vs $1,634M, pre-tax $1,724M vs $1,155M, diluted EPS $0.48 vs $0.29, 1,984M diluted shares); U.S. $3,256M vs $2,983M and international $2,231M vs $2,271M net sales (supplemental exhibit); net sales growth 7% excluding foreign exchange impact, as the release states; FY2009 guide: GAAP EPS $1.72-1.77, non-GAAP EPS $2.00-2.05 (mid single-digit revenue growth (high single digit growth excluding foreign exchange), in words)"
+  },
+  {
+   "id": "BM25",
+   "published": "2009-12-24",
+   "filed": "2009-12-24 06:07 ET (before the open)",
+   "title": "Bristol-Myers Squibb 8-K of 2009-12-24 (Mead Johnson split-off; 2009 guidance update, Exhibit 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312509259756/dex992.htm",
+   "supports": "2009 guidance updated for the Mead Johnson split-off (GAAP EPS from continuing operations $1.51-1.56, non-GAAP $1.75-1.80)"
+  },
+  {
+   "id": "BM4",
+   "published": "2002-04-01",
+   "filed": "2002-04-01 (EDGAR gives the filing date only)",
+   "title": "Bristol-Myers Squibb FY2001 10-K405",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000091205702013034/a2074555z10-k405.htm",
+   "supports": "the Zimmer spin-off: 'On August 6, 2001, the Company spun off Zimmer Holdings, Inc., in a tax-free distribution, resulting in a common stock dividend of $203 million.'"
+  },
+  {
+   "id": "W0",
+   "published": "2009-12-31",
+   "title": "Yahoo Finance daily prices, BMY and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/BMY/history",
+   "supports": "close $25.25 as traded on AS_OF, 52-week range, realized vol, beta, the 8.0-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-12"
+}

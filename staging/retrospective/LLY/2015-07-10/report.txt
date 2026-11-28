@@ -1,0 +1,157 @@
+
+════════════════════════════════════════════════════════════════════════
+  LLY  ·  Eli Lilly and Company  ·  $88.29  ·  RETROSPECTIVE as of 2015-07-10
+  Signal: ✕ AVOID   Ratio B: infx   Adj gap: -2.27  [OVERVALUED]
+  Point-in-time: 11 sources, latest published 2015-07-10; latest print Q1 2015 (Apr 23)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2015E revenues, USD bn  →  FY2017E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2015E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Endocrinology             $     7.0  $   7.0  $   7.5      +0.0      +0.5
+    -5.0% revenues in FY14
+  Neuroscience              $     3.6  $   3.6  $   3.9      +0.0      +0.3
+    -50.2% revenues in FY14
+  Oncology                  $     3.4  $   3.4  $   3.6      +0.0      +0.2
+    +3.8% revenues in FY14
+  Cardiovascular            $     3.1  $   3.1  $   3.3      +0.0      +0.2
+    +4.5% revenues in FY14
+  Animal health             $     2.4  $   2.4  $   2.5      +0.0      +0.1
+    +9.1% revenues in FY14
+  Other pharmaceuticals     $     0.3  $   0.3  $   0.3      +0.0      +0.0
+    +15.1% revenues in FY14
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    19.8  $  19.8  $  21.1      +0.0      +1.3
+  FY2015E = FY14 $19.62B × (1 + 0.7%: FY15 revenue guide midpoint); split pro rata to FY14 revenue by product class (segment revenue: human pharmaceutical products and animal health) (FY2014 10-K, segment information)
+  Q1 2015 (Apr 23): revenues $4.64B -0.8%; U.S. +6.0%; international -6.0%; gross margin 74.32% (+43.0bp);
+  pre-tax margin 13.30% (-571.8bp); EPS $0.50 vs $0.68
+  company-wide U.S. and outside-U.S. sales: U.S. +6% to $2.197B, outside the U.S. -6% to $2.447B, as the release states them; total revenue growth ex-FX +5% (-1% less the -6 points of exchange rates the release states); reported EPS $0.50 against $0.68; the company's non-GAAP figure $0.87 against $0.74 is shown only (it also removes the amortization of intangible assets and acquired in-process research and development, which recur; the history is GAAP: the NKE FY2007, PFE and BMY rule); revenue includes Novartis Animal Health from its acquisition, as published ('the inclusion of revenue from Novartis Animal Health')
+  FY15 guide (8-K of 2015-01-07, Q4 2014 release, Q1 2015 release): reported EPS $2.21-2.31; the company's adjusted EPS $3.10-3.20 (shown only: it excludes the amortization of intangible assets, which recurs, besides acquired in-process research and development, which recurs, and asset impairment, restructuring, integration and inventory step-up costs); revenue $19.5-20.0B (-0.6% to +2% on FY14's $19.62B)
+
+  FY2015E EPS check:  $19.8B × 15.3% pre-tax × (1−20.3%) ÷ 1.067B  =  $2.26  (FY2015E reported EPS, guide midpoint)
+  FY2017E BEAR check: $19.8B × 15.3% ÷ 1.063B  =  $2.27  (scenario $0.60)
+  FY2017E BULL check: $21.1B × 15.7% ÷ 1.063B  =  $2.48  (scenario $2.36)
+  Every 1pp of pre-tax margin ≈ $0.15 EPS ≈ $2/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  U.S. revenue growth                -31.0%  ≥-11.0%    ≥8.0%   ≥25.0%     +6.0%  ◦ BASE  ██░░
+  International revenue growth        -7.0%    ≥1.0%    ≥9.0%   ≥19.0%     -6.0%  ⚠ BEAR  █░░░
+  Revenue growth                     -16.0%   ≥-4.0%    ≥8.0%   ≥16.0%     -0.8%  ◦ BASE  ██░░
+  Gross margin change               -450.0bp  ≥-200.0bp  ≥50.0bp  ≥250.0bp   +43.0bp  ◦ BASE  ██░░
+  Pre-tax margin change             -1400.0bp  ≥-750.0bp  ≥-90.0bp  ≥590.0bp  -571.8bp  ◦ BASE  ██░░
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.80 / 4.00
+  Market composite:   3.77 / 4.00  (back-solved from $88 + 15% hurdle)
+  SCA adjustment:    -0.10  ·  EPP-distance adj -0.20  →  Adj composite 1.50  →  Gap -2.27  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY14 total revenue -15.1% (U.S. -29.1%, outside the U.S. +2.5%), Endocrinology 35% of the product classes; Q1 gross margin 74.32% (+43.0bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 39.1x FY15E vs a 12.7x 10-yr ex-FY08 median (100th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    -  Growth vs own history: FY15 revenue guide -0.6% to +2% vs a 5.7% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  FY14 year-end cash and short-term investments $4.83B, FY14 free cash flow $3.20B, dividend $2.00 a year, 'In 2014, we repurchased $800.0 million of shares under the $5.00 billion share repurchase program previously announced in October 2013.' (FY2014 10-K)  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  U.S. revenue growth                  +6.0%    -31.0%  -37.0%  Generic entry as U.S. patents expire
+  International revenue growth         -6.0%     -7.0%   -1.0%  Price cuts, generics and currency abroad
+  Revenue growth                       -0.8%    -16.0%  -15.2%  Exclusivity losses outrun new products
+  Gross margin change                +43.0bp  -450.0bp  -493.0bp  Write-offs and mix raise cost of sales
+  Pre-tax margin change             -571.8bp  -1400.0bp  -828.2bp  Charges and deleverage on falling sales
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$14  (model)  /  $5 (defined)
+  Bear probability (proxy model):  29.4%
+
+  KEY TRIGGER: U.S. revenue growth went from -19.0% (Q4 2014) to +6.0% (Q1 2015);
+  the bear case needs U.S. exclusivity losses that international growth (-6.0% now)
+  and the cost base no longer absorb. Patent expirations drive the decline, by the company's own account; the bear needs
+  new products and cost cuts to stop covering them.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $2.26  (FY2015E reported EPS, guide midpoint)
+  Min viable P/E at panic:          14x  [median of calendar-year P/E lows: 2005 27.2x, 2006 20.6x, 2007 18.1x, 2009 7.0x, 2010 7.0x, 2011 8.6x, 2012 10.5x, 2013 11.0x, 2014 22.7x, 2015 30.3x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $32/share
+  Current $88 vs Updated EPP $32:  +179%  ⚠ far above floor — large drawdown room
+  Bear $5 vs Updated EPP $32:  -84%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  U.S. revenue growth                        -11.0      -17.0   BASE floor (vs +6 now)
+  International revenue growth                 1.0       +7.0   BASE floor (vs -6 now)
+  Revenue growth                              -4.0       -3.2   BASE floor (vs -1 now)
+  Gross margin change                       -200.0     -243.0   BASE floor (vs +43 now)
+  Pre-tax margin change                     -750.0     -178.2   BASE floor (vs -572 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $2.26 × (1+0.0%)² = $2.26
+  At 12x P/E (conservative):  $27/share
+  + Cumul. dividends (2yr):  +$4.12/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $27  (▼61 from $88)
+  Conservative total return:  -65% over 2yr  = -32%/yr
+
+  0.0% EPS growth is what is left once the premium multiple (39.1x)
+  mean-reverts to 12x. Breakeven at 12x needs FY2017E EPS of $7.01,
+  i.e. 76.2%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $60.14  –  $88.78  (at 98th pct of range)
+  Annual dividend:      $2.00/share  (yield 2.3%)
+  Realized vol (1yr):   19% annualized
+  Beta vs broad market: 0.82
+  1-sigma range (1yr):  $72  –  $105  ($88 ± 19%)
+  2-sigma range (1yr):  $55  –  $122
+  ────────────────────────────────────────────────────────────
+  Bear $5 requires:  ~5.0σ price move  (unusual — requires fundamental break)
+  A research-based pharmaceutical company with a 0.8 beta: the stock is +46% off its August
+  low while U.S. revenue growth went from -19.0% (Q4 2014) to +6.0% (Q1 2015).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        0.60   7.9x  $      5    29.4%      1.2%   +28.2pp  EPS -48.4%/yr (worst year FY05-FY14 ex-FY08, capped at 0%); P/E to its 10th pct
+  BASE        2.30  12.7x  $     29    52.7%      4.3%   +48.4pp  EPS +0.9%/yr (FY15 guide + margin + buyback); P/E at its 10-yr ex-FY08 median
+  BULL        2.36  23.1x  $     55    15.1%     15.0%    +0.1pp  EPS +2.2%/yr (FY05-FY14 ex-FY08 CAGR); P/E holds its 75th pct
+  XBULL       3.35  29.6x  $     99     2.9%     79.5%   -76.6pp  EPS +21.7%/yr (best 2-yr run FY05-FY14 ex-FY08); P/E at its 90th pct
+
+  Proxy EV (2yr): $28  /  Market EV: $88  /  Current: $88
+  Conservative EV (2yr, ④): $27 + $4.12 divs = $31 total value
+  Downside (→ Bear $5): 94.3%   Upside (→ Bull $55): -37.7%   Ratio B infx  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $88 the market needs $117 in two years —
+  above the BULL case. That is a market composite of 3.77 against a model
+  read of 1.50: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                        infx    +179%    -2.27  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)      infx    +179%    -2.22  OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx    +179%    -2.27  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                           infx    +179%    -2.27  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                           infx    +179%    -2.27  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)              infx    +179%    -1.97  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                  infx    +130%    -2.27  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                     infx    +179%    -2.27  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 2015 print (late July) — the next read on U.S. revenues (+6.0% now) and the guide
+  (2) Gross margin — +43.0bp in Q1 2015: cost of sales against the mix lost to generics, what must hold if U.S. revenues do not
+  (3) FY15 reported EPS guide $2.21-2.31 (Q1 2015 release)
+  (4) Pre-tax margin — 13.30% in Q1 2015 (-571.8bp): where in-process R&D, restructuring and litigation charges land
+  (5) Capital return at 39x — the release reports no share repurchases: management's own read of the multiple
+  ✕ AVOID  |  EPP floor $32  |  ADD below ~$25  |  TRIM above $55
+════════════════════════════════════════════════════════════════════════
+

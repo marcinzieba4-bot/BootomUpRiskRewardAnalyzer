@@ -1,0 +1,191 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "CTVA",
+ "company": "Corteva, Inc.",
+ "as_of": "2021-04-30",
+ "price_date": "2021-04-30",
+ "price": 48.76,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); seed and crop protection signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "Corteva: 'The company competes with producers of seed germplasm, trait developers, and crop protection products on a global basis.'; the FY2020 10-K's risk factors: 'Climate change and unpredictable seasonal and weather factors could impact Corteva’s sales and earnings.'; no disruption theme in the registry covers seed and crop protection (GLP1 is scoped to snacks, beverages and devices, ENERGY_TRANSITION to oil, gas and coal reserves and refining), so the weather and climate wording stays here",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "Corteva: 'The company competes with producers of seed germplasm, trait developers, and crop protection products on a global basis.'; the FY2020 10-K's risk factors: 'Climate change and unpredictable seasonal and weather factors could impact Corteva’s sales and earnings.'; no disruption theme in the registry covers seed and crop protection (GLP1 is scoped to snacks, beverages and devices, ENERGY_TRANSITION to oil, gas and coal reserves and refining), so the weather and climate wording stays here. durable franchise (obsolescence risk 2/5); price rich; +66% to EPP floor; model-vs-market gap -0.99; conservative 2yr -38%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": Infinity,
+  "ratio_b_fmt": "infx",
+  "epp": 29.4,
+  "epp_gap_pct": 65.9,
+  "epp_adj": -0.1,
+  "proxy_composite": 2.95,
+  "sca": 0.086,
+  "adj_composite": 2.936,
+  "market_composite": 3.93,
+  "adj_gap": -0.99,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": -37.5,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.98,
+    "pe": 25.5,
+    "price": 25,
+    "desc": "Flat EPS (no EPS change in FY20-FY20 to measure: the 0% cap); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 1.02,
+    "pe": 30.0,
+    "price": 31,
+    "desc": "EPS +1.9%/yr (FY21 net sales guide + margin + buyback); P/E at its 1.3-yr ex-FY19 median"
+   },
+   "BULL": {
+    "eps": 1.02,
+    "pe": 40.0,
+    "price": 41,
+    "desc": "EPS +1.9%/yr (no FY20-FY20 CAGR to measure: BASE's rate); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 1.02,
+    "pe": 47.6,
+    "price": 49,
+    "desc": "EPS +1.9%/yr (no 2-yr run in FY20-FY20: BULL's rate); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 65.9,
+   "adj_gap": -0.99,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -37.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 90.67,
+   "epp_gap_pct": 65.9,
+   "adj_gap": -0.86,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -37.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 65.9,
+   "adj_gap": -0.83,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -37.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 65.9,
+   "adj_gap": -0.99,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -37.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 65.9,
+   "adj_gap": -0.99,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -37.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 65.9,
+   "adj_gap": -0.69,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -37.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 50.8,
+   "adj_gap": -0.99,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -37.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 65.9,
+   "adj_gap": -0.99,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -37.5,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "RICH"
+ ],
+ "summary": "CTVA (retrospective, 2021-04-30) ✕ AVOID — Ratio B infx (48.7% downside to Bear $25 / +-15.9% upside to Bull $41) | Adj composite 2.94 vs market 3.93: gap -0.99 [OVERVALUED] | +66% above the EPP floor $29 (30x FY21E $0.98) | Conservative 2-yr case: -37.5% total (-18.8%/yr) | At 49.8x FY21E the 15% hurdle price $64 sits above the BULL case; Seed organic +9.0% and Crop Protection organic +21.0% in Q4 2020, forward revenues +1.3-2.7% (FY2021 net sales guide $14.4-14.6B (Q4 2020 release) on FY20 $14.217B, no Q1 2021 guide); no theme in the registry covers seed and crop protection (GLP1 is scoped to snacks, beverages and devices, ENERGY_TRANSITION to oil, gas and coal reserves and refining); none has dated evidence.",
+ "sources": [
+  {
+   "id": "CT2",
+   "published": "2021-02-12",
+   "filed": "2021-02-11 16:11 ET (EDGAR acceptance)",
+   "title": "Corteva FY2020 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1755672/000175567221000008/ctva-20201231.htm",
+   "supports": "FY2020 annual history: the consolidated statements of operations (net sales, cost of goods sold, income from continuing operations before income taxes, diluted EPS from continuing operations), the EPS note's diluted share counts, the MD&A segment net sales, the cash flow statement, the dividend and the risk factors; the selected financial data"
+  },
+  {
+   "id": "CT1",
+   "published": "2020-02-14",
+   "filed": "2020-02-14 07:29 ET (EDGAR acceptance)",
+   "title": "Corteva FY2019 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1755672/000175567220000006/ctva-12x31x201910xk.htm",
+   "supports": "FY2019 annual history: the consolidated statements of operations (net sales, cost of goods sold, income from continuing operations before income taxes, diluted EPS from continuing operations), the EPS note's diluted share counts, the MD&A segment net sales, the cash flow statement, the dividend and the risk factors; the selected financial data"
+  },
+  {
+   "id": "CT9",
+   "published": "2021-02-04",
+   "filed": "2021-02-03 17:08 ET (EDGAR acceptance, after the close)",
+   "title": "Corteva Q4 2020 results (8-K, earnings release)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1755672/000175567221000005/a02032021_4qfyx2020xearn.htm",
+   "supports": "Q4 2020 results: the release (exhibit 99.1, a02032021_4qfyx2020xearn.htm) and its schedules (exhibit 99.2, https://www.sec.gov/Archives/edgar/data/1755672/000175567221000005/a123120enr.htm): the statement of operations, segment net sales, the price-volume-currency analysis, the balance sheet and the full-year guide",
+   "exhibit_schedules": "https://www.sec.gov/Archives/edgar/data/1755672/000175567221000005/a123120enr.htm"
+  },
+  {
+   "id": "A0",
+   "published": "2021-04-30",
+   "title": "Yahoo Finance daily prices, Corteva, Inc. common stock (NYSE: CTVA) and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/CTVA/history",
+   "supports": "close $48.76 as traded on AS_OF, 52-week range, realized vol, beta, the 1.3-yr ex-FY19 P/E distribution since the listing on 2019-06-03"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-16"
+}

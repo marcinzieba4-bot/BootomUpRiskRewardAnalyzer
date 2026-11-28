@@ -1,0 +1,151 @@
+
+════════════════════════════════════════════════════════════════════════
+  GOOG  ·  Google Inc.  ·  $491.98  ·  RETROSPECTIVE as of 2008-07-25
+  Signal: ◉ BUY   Ratio B: 0.02x   Adj gap: +0.95  [UNDERVALUED]
+  Point-in-time: 11 sources, latest published 2008-07-25; latest print Q2 2008 (Jul 17)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2008E revenue, USD bn  →  FY2010E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2008E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Google web sites              $ 14.73  $14.73  $84.95    +0.00   +70.22
+    +67.8% revenue in FY07
+  Google Network web sites      $  8.02  $ 8.02  $46.28    +0.00   +38.26
+    +39.1% revenue in FY07
+  Licensing and other           $  0.25  $ 0.25  $ 1.45    +0.00    +1.20
+    +61.5% revenue in FY07
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $ 23.00  $23.00  $132.68    +0.00   +109.68
+  FY2008E = FY07 $16.594B × (1 + 38.6%: the Q2 2008 revenue growth (no Q3 2008 guide), YoY, applied to the year (no FY08 revenue guide)); split pro rata to FY07 revenues by source (FY07 growth)
+  Q2 2008 (Jul 17): revenue $5.367B +38.6% YoY (+3.5% QoQ); receivables +60.2%; R&D + S&M + G&A +36.0%;
+  gross margin 59.99% (+28.3bp); operating margin 29.40% (+87.2bp); EPS $3.92 vs $2.93
+  Revenue: revenues $5,367.2M vs $3,872.0M a year earlier, $5,186.0M the quarter before (Google web sites $3,530.1M, Google Network web sites $1,655.3M, licensing and other $181.8M); 'Aggregate paid clicks, which include clicks related to ads served on Google sites and the sites of our AdSense partners, increased approximately 19% over the second quarter of 2007 and decreased approximately 1% over the first quarter of 2008.'; accounts receivable $2,641.9M (2008-06-30) vs $1,648.7M a year earlier (Q2 2007 10-Q); GAAP diluted EPS $3.92 vs $2.93; diluted shares 318.0M; 'Google employed 19,604 full-time employees as of June 30, 2008, up from 19,156 full-time employees as of March 31, 2008.'; 'TAC as a percentage of advertising revenues was 28% in the second quarter, compared to 29% in the first quarter of 2008.'
+  Q3 2008: no revenue, EPS or margin guide in numbers in any filing; the latest quarter's revenue growth stands in (the UNP rule); in words only, the FY07 10-K: 'We expect our revenue growth rate to decline and anticipate downward pressure on our operating margin in the future.' (display only); the releases estimate stock-based compensation, dilution and capital expenditure, which method r2 has no input for
+
+  FY2008E EPS check:  $23.000B × 34.2% pre-tax × (1−25.9%) ÷ 0.318B  =  $18.32  (FY2008E: no EPS guide in numbers, FY07's $13.29 stands)
+  FY2010E BEAR check: $23.000B × 34.2% ÷ 0.374B  =  $15.59  (scenario $11.03)
+  FY2010E BULL check: $132.680B × 34.6% ÷ 0.374B  =  $91.00  (scenario $92.05)
+  Every 1pp of pre-tax margin ≈ $0.536 EPS ≈ $22.24/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Revenue growth                        -88.0%    ≥73.0%   ≥234.0%  ≥8585.0%    +38.6%  ⚠ BEAR  █░░░
+  Gross margin change                 -2910.0bp  ≥-1350.0bp  ≥210.0bp  ≥38090.0bp   +28.3bp  ◦ BASE  ██░░
+  Opex growth less revenue            +183.0pp   ≤72.0pp  ≤-38.0pp  ≤-8252.0pp    -2.6pp  ◦ BASE  ██░░
+  Receivables growth less revenue      +55.0pp   ≤28.0pp    ≤2.0pp  ≤-84.0pp   +21.6pp  ◦ BASE  ██░░
+  Operating margin change             -5090.0bp  ≥-1910.0bp  ≥1280.0bp  ≥288470.0bp   +87.2bp  ◦ BASE  ██░░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.80 / 4.00
+  Market composite:   1.00 / 4.00  (back-solved from $491.98 + 15% hurdle)
+  SCA adjustment:    +0.15  ·  EPP-distance adj +0.00  →  Adj composite 1.95  →  Gap +0.95  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY07 revenues +56.5%, gross margin 59.9%; Q2 gross margin 59.99% (+28bp YoY)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 37.0x FY08E vs a 41.5x 3.9-yr median (19th percentile of its own range)  (+0.50 × 25%  =  +0.125)
+    -  Growth vs own history: Q2 2008 revenue growth (no Q3 2008 guide) +38.6% vs a 105.0% 6-yr median  (-0.50 × 20%  =  -0.100)
+    +  Cash, cash equivalents and marketable securities $12.734B, no borrowings on the release's balance sheet (Q2 2008), FY07 free cash flow $3.373B (cash from operations $5,775.4M less purchases of property and equipment $2,402.8M), no dividend  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Revenue growth                        +38.6%    -88.0%  -126.6%  Advertisers cut budgets: fewer paid c…
+  Gross margin change                  +28.3bp  -2910.0bp  -2938.3bp  Traffic acquisition and data-center c…
+  Opex growth less revenue              -2.6pp  +183.0pp  +185.6pp  Hiring and R&D do not slow with revenue
+  Receivables growth less revenue      +21.6pp   +55.0pp  +33.4pp  Advertisers pay more slowly: collecti…
+  Operating margin change              +87.2bp  -5090.0bp  -5177.2bp  Operating leverage works in reverse
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$914.62  (model)  /  $390.46 (defined)
+  Bear probability (proxy model):  29.4%
+
+  KEY TRIGGER: revenue went from +41.5% (Q1 2008) to +38.6% YoY (Q2 2008), +3.5% on the quarter before;
+  the bear case needs a downturn in gross margin (+28.3bp now)
+  and receivables (+21.6pp against revenue) giving way. An advertising slowdown shows up in paid clicks and revenue growth first;
+  the bear needs it in gross margin as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $13.29  (FY2008E: no EPS guide in numbers, FY07's $13.29 stands)
+  Min viable P/E at panic:          33x  [median of calendar-year P/E lows: 2004 67.1x, 2005 34.9x, 2006 33.9x, 2007 33.0x, 2008 31.1x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $438.57/share
+  Current $491.98 vs Updated EPP $438.57:  +12%  moderate distance to floor
+  Bear $390.46 vs Updated EPP $438.57:  -11%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Revenue growth                                73.0      +34.4   BASE floor (vs +39 now)
+  Gross margin change                        -1350.0    -1378.3   BASE floor (vs +28 now)
+  Opex growth less revenue                      72.0      +74.6   BASE floor (vs -3 now)
+  Receivables growth less revenue               28.0       +6.4   BASE floor (vs +22 now)
+  Operating margin change                    -1910.0    -1997.2   BASE floor (vs +87 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $13.29 × (1+28.2%)² = $21.84
+  At 41x P/E (conservative):  $895.53/share
+  + Cumul. dividends (2yr):  +$0.00/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $895.53  (▲403.55 from $491.98)
+  Conservative total return:  +82% over 2yr  = +41%/yr
+
+  At 37.0x the multiple is already near its 41x median, so the conservative
+  case is a growth question: breakeven at 41x needs FY2010E EPS of $12.00,
+  i.e. -5.0%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $412.11  –  $747.24  (at 24th pct of range)
+  Annual dividend:      $0.00/share  (yield 0.0%)
+  Realized vol:         40% annualized (1-yr daily log returns)
+  Beta vs broad market: 0.96
+  1-sigma range (1yr):  $294.70  –  $689.26  ($491.98 ± 40%)
+  2-sigma range (1yr):  $97.41  –  $886.55
+  ────────────────────────────────────────────────────────────
+  Bear $390.46 requires:  ~0.5σ price move  (within normal vol range)
+  An advertising business whose revenue follows advertisers' budgets: the stock is +19% off its March
+  low (52 weeks) while revenue went from +41.5% (Q1 2008) to +38.6% YoY (Q2 2008), +3.5% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR       11.03   35.4x  $ 390.46    29.4%     72.2%   -42.9pp  EPS -8.9%/yr (worst year FY01-FY07, capped at 0%); P/E to its 10th pct
+  BASE       22.53   41.5x  $ 935.00    52.7%     20.7%   +32.0pp  EPS +30.2%/yr (Q2 revenue YoY + margin + buyback); P/E at its 3.9-yr median
+  BULL       92.05   53.8x  $4,952.29    15.1%      5.9%    +9.2pp  EPS +163.2%/yr (FY01-FY07 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL     162.72   79.7x  $12,968.78     2.9%      1.1%    +1.7pp  EPS +249.9%/yr (best 2-yr run FY01-FY07, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $1,724.13  /  Market EV: $914.62  /  Current: $491.98
+  Conservative EV (2yr, ④): $895.53 + $0.00 divs = $895.53 total value
+  Downside (→ Bear $390.46): 20.6%   Upside (→ Bull $4952.29): 906.6%   Ratio B 0.02x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $491.98 the market needs $650.64 in two years —
+  at or below the BASE case. That is a market composite of 1.00 against a model
+  read of 1.95: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.02x     +12%    +0.95  UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.01x     +12%    +0.73  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.03x     +12%    +0.78  UNDERVALUED / BUY
+  Scenario EPS +1.5pp/yr                          0.02x     +12%    +0.73  UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.03x     +12%    +0.73  UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.02x     +12%    +1.25  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.02x      +3%    +0.95  UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.02x     +12%    +0.95  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 2008 print (the quarter ends in September) — revenue against the Q2 2008 revenue growth (no Q3 2008 guide): +38.6% YoY
+  (2) Gross margin — +28.3bp in Q2 2008: traffic acquisition and data-center costs against revenue, what must hold if revenue does not
+  (3) A Q3 2008 revenue guide — none: Google gives no revenue, EPS or margin outlook in any filing; aggregate paid clicks and traffic acquisition costs are in each release
+  (4) Receivables — +60.2% against revenue +38.6% in Q2 2008 (+21.6pp): advertisers paying more slowly would show here first
+  (5) Capital structure at 37x — no dividend ('We have never declared or paid any cash dividend on our common stock.') and no share repurchase in the period
+  ◉ BUY  |  EPP floor $438.57  |  ADD below ~$794.75  |  TRIM above $4,952.29
+════════════════════════════════════════════════════════════════════════
+

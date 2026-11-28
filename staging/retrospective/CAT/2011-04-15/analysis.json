@@ -1,0 +1,206 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "CAT",
+ "company": "Caterpillar Inc.",
+ "as_of": "2011-04-15",
+ "price_date": "2011-04-15",
+ "price": 107.21,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); machinery and engines signals",
+ "pit_profile": {
+  "kind": "CYCLICAL",
+  "risk": 2,
+  "why": "'Caterpillar is the world’s leading manufacturer of construction and mining equipment, diesel and natural gas engines, industrial gas turbines and diesel-electric locomotives' (FY2010 10-K, Item 1); 'Caterpillar products and product support services are sold worldwide into a variety of highly competitive markets'; 'The demand for our products and services tends to be cyclical and can be significantly reduced in an economic environment characterized by higher unemployment, lower consumer spending, lower corporate earnings and lower levels of government and business investment.' and 'The energy and mining industries are major users of our machines and engines.' (Item 1A): the 10-K calls the demand for its own products cyclical (BKR's 'Our business is cyclical'), so CYCLICAL from the FY2010 10-K; no disruption theme is live for it",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "CYCLICAL, RISK PRICED IN",
+  "quality_label": "◎ CYCLICAL, RISK PRICED IN",
+  "quality_color": "#f0b429",
+  "quality_tone": "amber",
+  "business_kind": "CYCLICAL",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "'Caterpillar is the world’s leading manufacturer of construction and mining equipment, diesel and natural gas engines, industrial gas turbines and diesel-electric locomotives' (FY2010 10-K, Item 1); 'Caterpillar products and product support services are sold worldwide into a variety of highly competitive markets'; 'The demand for our products and services tends to be cyclical and can be significantly reduced in an economic environment characterized by higher unemployment, lower consumer spending, lower corporate earnings and lower levels of government and business investment.' and 'The energy and mining industries are major users of our machines and engines.' (Item 1A): the 10-K calls the demand for its own products cyclical (BKR's 'Our business is cyclical'), so CYCLICAL from the FY2010 10-K; no disruption theme is live for it. cyclical (obsolescence risk 2/5); price cheap; Ratio B 0.50x; +49% to EPP floor; model-vs-market gap +1.95; conservative 2yr +106%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.5,
+  "ratio_b_fmt": "0.50x",
+  "epp": 72.0,
+  "epp_gap_pct": 48.9,
+  "epp_adj": -0.1,
+  "proxy_composite": 3.5,
+  "sca": 0.138,
+  "adj_composite": 3.538,
+  "market_composite": 1.59,
+  "adj_gap": 1.95,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 106.3,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.89,
+    "pe": 11.9,
+    "price": 11,
+    "desc": "EPS -61.5%/yr (worst year FY01-FY10, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 15.93,
+    "pe": 14.6,
+    "price": 233,
+    "desc": "EPS +62.9%/yr (Q4 sales and revenues + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 15.93,
+    "pe": 18.7,
+    "price": 298,
+    "desc": "EPS +62.9%/yr (FY01-FY10 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 15.93,
+    "pe": 22.3,
+    "price": 355,
+    "desc": "EPS +62.9%/yr (best 2-yr run FY01-FY10); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.5,
+   "epp_gap_pct": 48.9,
+   "adj_gap": 1.95,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 106.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.38,
+   "epp_gap_pct": 48.9,
+   "adj_gap": 2.09,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 106.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 0.77,
+   "epp_gap_pct": 48.9,
+   "adj_gap": 1.84,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 106.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.48,
+   "epp_gap_pct": 48.9,
+   "adj_gap": 1.97,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 106.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.53,
+   "epp_gap_pct": 48.9,
+   "adj_gap": 1.93,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 106.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.5,
+   "epp_gap_pct": 48.9,
+   "adj_gap": 2.25,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 106.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.5,
+   "epp_gap_pct": 19.1,
+   "adj_gap": 2.05,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 106.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.5,
+   "epp_gap_pct": 48.9,
+   "adj_gap": 2.01,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 106.3,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "CAT (retrospective, 2011-04-15) ◉ BUY — Ratio B 0.50x (89.7% downside to Bear $11 / +178.0% upside to Bull $298) | Adj composite 3.54 vs market 1.59: gap +1.95 [UNDERVALUED] | +49% above the EPP floor $72 (12x FY11E $6.00) | Conservative 2-yr case: +106.3% total (+53.1%/yr) | At 17.9x FY11E the 15% hurdle price $142 sits at or below the BASE case; Machinery sales +87.8% in Q4 2010, forward revenues +62.2% (no FY11 sales and revenues guide in numbers, Q4 2010 growth); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "CT38",
+   "published": "2011-02-23",
+   "filed": "2011-02-22 17:15 ET (after the close, so dated the next trading day)",
+   "title": "Caterpillar FY2010 10-K and Exhibit 13",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465911008938/a10-18643_1ex13.htm",
+   "supports": "Five-year Financial Summary 2006-2010; Results of Operations 2008-2010 (operating profit $3,963M, profit before taxes $3,750M and tax $968M in 2010; diluted shares 627.9M, 626.0M, 650.4M); 2009 profit per share $2.18 excluding redundancy costs; external sales of Machinery $27,767M, Engines $12,100M and Financial Products $2,721M in 2010; cash and short-term investments $3,592M; operating cash flow $5,009M; Item 1 and Item 1A wording"
+  },
+  {
+   "id": "CT37",
+   "published": "2011-01-27",
+   "filed": "2011-01-27 09:56 ET (during the session)",
+   "title": "Caterpillar 8-K: fourth-quarter 2010 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465911003292/a11-4658_1ex99d1.htm",
+   "supports": "fourth-quarter and full-year 2010 sales by geographic region and statement of results; 2009 profit per share $2.18 excluding redundancy costs; 2011 outlook: sales and revenues to exceed $50 billion, profit near $6.00 per share"
+  },
+  {
+   "id": "CT36",
+   "published": "2010-10-21",
+   "filed": "2010-10-21 08:19 ET (before the open)",
+   "title": "Caterpillar 8-K: third-quarter 2010 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823010000494/ex_99-1.htm",
+   "supports": "third-quarter 2010 sales by geographic region and statement of results; 2010 outlook: sales and revenues $41 to $42 billion, profit $3.80 to $4.00 per share; preliminary 2011 sales and revenues approaching $50 billion"
+  },
+  {
+   "id": "CT34",
+   "published": "2010-06-14",
+   "filed": "2010-06-11 16:53 ET (after the close, so dated the next trading day)",
+   "title": "Caterpillar 8-K: annual meeting results and dividend release (Exhibit 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823010000299/ex_99-2.htm",
+   "supports": "a quarterly cash dividend of $0.44 per share, payable August 20, 2010"
+  },
+  {
+   "id": "CT9",
+   "published": "2005-06-08",
+   "filed": "2005-06-08 12:00 ET",
+   "title": "Caterpillar 8-K: 'Caterpillar Splits Stock; Increases Dividend Rate'",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823005000429/form8k060805_dividend.htm",
+   "supports": "a two-for-one stock split; the split shares distributed on July 13 to stockholders of record on June 22, 2005"
+  },
+  {
+   "id": "W0",
+   "published": "2011-04-15",
+   "title": "Yahoo Finance daily prices, CAT and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/CAT/history",
+   "supports": "close $107.21 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-11"
+}

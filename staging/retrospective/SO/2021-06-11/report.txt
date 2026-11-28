@@ -1,0 +1,154 @@
+
+════════════════════════════════════════════════════════════════════════
+  SO  ·  The Southern Company  ·  $63.85  ·  RETROSPECTIVE as of 2021-06-11
+  Signal: ✕ AVOID   Ratio B: 3.31x   Adj gap: -0.47  [MODESTLY OVERVALUED]
+  Point-in-time: 16 sources, latest published 2021-06-11; latest print Q1 2021 (2021-04-29)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2021E revenues, USD bn  →  FY2023E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Revenue line                 FY2021E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Retail electric           $    16.1  $  16.1  $  16.6      +0.0      +0.5
+    -3.1% revenues in FY20
+  Wholesale electric        $     2.3  $   2.3  $   2.4      +0.0      +0.1
+    -9.6% revenues in FY20
+  Other electric            $     0.8  $   0.8  $   0.8      +0.0      +0.0
+    +5.7% revenues in FY20
+  Natural gas               $     4.0  $   4.0  $   4.2      +0.0      +0.2
+    -9.4% revenues in FY20
+  Other revenues            $     0.8  $   0.8  $   0.8      +0.0      +0.0
+    -9.8% revenues in FY20
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    24.0  $  24.0  $  24.8      +0.0      +0.8
+  FY2021E = FY20 $20.38B × (1 + 17.8%: no Q2 2021 revenue guide, Q1 2021 revenue as reported, applied to the year (no FY21 revenue guide)); split pro rata to FY20 operating revenues by line (SO76 income statement; the 10-K has no selected data)
+  Q1 2021 (2021-04-29): total revenues $5.91B +17.8%; retail kWh +1.8% (weather-adjusted -1.6%); electric utilities' net income +19.0%;
+  operating margin 27.04% (+187.0bp); EPS $1.07 vs $0.82 (GAAP)
+  Retail kWh +1.8% as reported (34,045 to 34,651 million kWh, weather-adjusted -1.6%); electric utilities' net income +19.0% ($717M to $853M, the traditional operating companies and Southern Power; the release's Total also includes Southern Company Gas, so the signal sums the traditional electric operating companies and Southern Power, the 10-K's electric utilities, each as reported); revenue +17.8% as reported ($5,018M to $5,910M); operating income $1,263M to $1,598M (operating income includes, as the release publishes it, Estimated Loss on Plant Vogtle Units 3 and 4 $48M (none a year earlier); (Gain) Loss on Dispositions, net -$44M (-$39M a year earlier); no operating income excluding them is published, so the margin is as reported); EPS: basic EPS as reported $1.07 vs $0.82; the release's figure excluding items ($0.98 vs $0.78) also excludes Wholesale Gas Services, not only one-offs, so GAAP stands
+  FY21: no EPS, revenue or margin guide in numbers in any filing (the Q1 2021 release says its earnings slides with supplemental financial information are on the company's website (the Q4 2020 release named among them 'including earnings guidance for 2021'): website posts are not filings, so they add nothing; no transcript is filed; BASE takes Q1 2021 revenue growth)
+
+  FY2021E EPS check:  $24.0B × 17.2% pre-tax × (1−11.2%) ÷ 1.060B  =  $3.45  (FY2021E: no EPS guide in numbers in any filing, FY20's $2.93 (GAAP) stands)
+  FY2023E BEAR check: $24.0B × 17.2% ÷ 1.109B  =  $3.30  (scenario $1.24)
+  FY2023E BULL check: $24.8B × 17.6% ÷ 1.109B  =  $3.49  (scenario $3.91)
+  Every 1pp of pre-tax margin ≈ $0.20 EPS ≈ $3/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Retail kWh sales                    -8.0%   ≥-3.0%    ≥2.0%    ≥6.0%     +1.8%  ◦ BASE  ██░░
+  Electric utilities net income       -7.0%   ≥-2.0%    ≥3.0%   ≥13.0%    +19.0%  ★ XBULL  ████
+  Revenue growth                     -10.0%   ≥-2.0%    ≥6.0%   ≥16.0%    +17.8%  ★ XBULL  ████
+  EPS growth                         -15.0%   ≥-6.0%    ≥3.0%   ≥15.0%    +30.5%  ★ XBULL  ████
+  Operating margin change           -410.0bp  ≥-220.0bp  ≥-30.0bp  ≥150.0bp  +187.0bp  ★ XBULL  ████
+  Energy transition: CO2 rules on coal reserves and units   +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    3.30 / 4.00
+  Market composite:   3.77 / 4.00  (back-solved from $64 + 15% hurdle)
+  SCA adjustment:    +0.10  ·  EPP-distance adj -0.10  →  Adj composite 3.30  →  Gap -0.47  [MODESTLY OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY20 revenue -4.9%, retail kWh -5.3%, electric utilities' net income -4.7%; Q1 2021 operating margin 27.0% (+187.0bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 21.8x FY21E vs a 16.9x 10-yr ex-FY17 median (95th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: no Q2 2021 revenue guide, Q1 2021 revenue as reported +17.8% vs a 2.0% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  FY20 year-end cash $1.068B, FY20 free cash flow $-0.74B (net cash provided from operating activities $6,696M less property additions $7,441M (SO76)), dividend $2.56 a year, common stock issued $74M in 2020, none repurchased (SO76 cash flows): the dividend is the return  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Retail kWh sales                     +1.8%     -8.0%   -9.8%  Recession and mild weather cut retail…
+  Electric utilities net income       +19.0%     -7.0%  -26.0%  Rate relief lags costs and lost sales
+  Revenue growth                      +17.8%    -10.0%  -27.8%  Sales and fuel recovery fall together
+  EPS growth                          +30.5%    -15.0%  -45.5%  Costs, interest and dilution outrun r…
+  Operating margin change           +187.0bp  -410.0bp  -597.0bp  Fuel and O&M costs outrun recovery
+  Energy transition: CO2 rules on coal reserves and units    +2.0/4    +1.0/4  -1.0/4  CO2 rules retire coal units and stran…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$31  (model)  /  $17 (defined)
+  Bear probability (proxy model):  3.2%
+
+  KEY TRIGGER: retail kWh sales went from -1.3% (Q4 2020) to +1.8% (Q1 2021);
+  the bear case needs a demand and cost squeeze that the operating margin (+187.0bp now)
+  and the electric utilities' earnings (+19.0% now) no longer absorb.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $2.93  (FY2021E: no EPS guide in numbers in any filing, FY20's $2.93 (GAAP) stands)
+  Min viable P/E at panic:          14x  [median of calendar-year P/E lows: 2011 14.9x, 2012 15.7x, 2013 14.8x, 2014 14.4x, 2015 14.4x, 2016 18.2x, 2018 19.7x, 2019 9.7x, 2020 14.8x, 2021 19.4x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $41/share
+  Current $64 vs Updated EPP $41:  +56%  ⚠ far above floor — large drawdown room
+  Bear $17 vs Updated EPP $41:  -59%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Retail kWh sales                            -3.0       -4.8   BASE floor (vs +2 now)
+  Electric utilities net income               -2.0      -21.0   BASE floor (vs +19 now)
+  Revenue growth                              -2.0      -19.8   BASE floor (vs +18 now)
+  EPS growth                                  -6.0      -36.5   BASE floor (vs +30 now)
+  Operating margin change                   -220.0     -407.0   BASE floor (vs +187 now)
+  Energy transition: CO2 rules on coal reserves and units             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $2.93 × (1+13.5%)² = $3.77
+  At 16x P/E (conservative):  $60/share
+  + Cumul. dividends (2yr):  +$5.27/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $60  (▼3 from $64)
+  Conservative total return:  +3% over 2yr  = +1%/yr
+
+  13.5% EPS growth is what is left once the premium multiple (21.8x)
+  mean-reverts to 16x. Breakeven at 16x needs FY2023E EPS of $3.66,
+  i.e. 11.8%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $50.40  –  $66.93  (at 81th pct of range)
+  Annual dividend:      $2.56/share  (yield 4.0%)
+  Realized vol (1yr):   20% annualized
+  Beta vs broad market: 0.44
+  1-sigma range (1yr):  $51  –  $76  ($64 ± 20%)
+  2-sigma range (1yr):  $39  –  $89
+  ────────────────────────────────────────────────────────────
+  Bear $17 requires:  ~3.7σ price move  (unusual — requires fundamental break)
+  A regulated utility with a 0.4 beta: the stock is +25% off its June
+  low while retail kWh sales went from -1.3% (Q4 2020) to +1.8% (Q1 2021).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        1.24  13.8x  $     17     3.2%      1.2%    +2.0pp  EPS -34.9%/yr (worst year FY11-FY20 ex-FY17, capped at 0%); P/E to its 10th pct
+  BASE        3.91  16.9x  $     66    11.2%      4.3%    +6.9pp  EPS +15.5%/yr (Q1 revenue + margin + buyback); P/E at its 10-yr ex-FY17 median
+  BULL        3.91  19.9x  $     78    39.2%     15.0%   +24.2pp  EPS +15.5%/yr (FY11-FY20 ex-FY17 CAGR); P/E holds its 75th pct
+  XBULL       3.96  20.9x  $     83    46.3%     79.5%   -33.1pp  EPS +16.2%/yr (best 2-yr run FY11-FY20 ex-FY17); P/E at its 90th pct
+
+  Proxy EV (2yr): $77  /  Market EV: $81  /  Current: $64
+  Conservative EV (2yr, ④): $60 + $5.27 divs = $66 total value
+  Downside (→ Bear $17): 73.4%   Upside (→ Bull $78): 22.2%   Ratio B 3.31x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $64 the market needs $84 in two years —
+  above the BULL case. That is a market composite of 3.77 against a model
+  read of 3.30: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       3.31x     +56%    -0.47  MODESTLY OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     2.47x     +56%    +0.10  FAIRLY VALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)    22.72x     +56%    -0.47  MODESTLY OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          2.84x     +56%    -0.50  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                          4.20x     +56%    -0.47  MODESTLY OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             3.31x     +56%    -0.17  FAIRLY VALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 3.31x     +28%    -0.37  MODESTLY OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    3.31x     +56%    -0.03  FAIRLY VALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 2021 print (late July) — the next read on retail kWh sales (+1.8% now); no sales guide in numbers to read it against
+  (2) Operating margin — +187.0bp in Q1 2021: fuel and purchased power, non-fuel O&M and depreciation against rate relief
+  (3) A FY21 earnings guide in numbers — none in any filing (guidance is given on the analyst call and in slides on the company's website only)
+  (4) Electric utilities' net income — +19.0% in Q1 2021 ($853M vs $717M): rate relief against sales, weather and costs
+  (5) Capital return at 22x — common stock issued $74M in 2020, none repurchased (SO76 cash flows): the dividend is the return: management's own read of the multiple
+  ✕ AVOID  |  EPP floor $41  |  ADD below ~$56  |  TRIM above $78
+════════════════════════════════════════════════════════════════════════
+

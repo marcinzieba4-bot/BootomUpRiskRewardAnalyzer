@@ -1,0 +1,265 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "MU",
+ "company": "Micron Technology, Inc.",
+ "as_of": "2025-11-21",
+ "price_date": "2025-11-21",
+ "price": 207.37,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); semiconductor signals with Micron's rule-T thresholds",
+ "pit_profile": {
+  "kind": "CYCLICAL",
+  "risk": 2,
+  "why": "'We are an industry leader in innovative memory and storage solutions transforming how the world uses information to enrich life for all.' 'Volatility in average selling prices for our semiconductor memory and storage products may adversely affect our business.' 'The semiconductor memory and storage markets are highly competitive.' (FY2025 10-K); CYCLICAL: the 10-K calls its own business cyclical ('If we choose to exercise such discretion due to the cyclicality of our business or other factors, we may not be able to fully utilize these incentives.' 'We may fail to achieve these milestones, in a timely manner or at all, due to a variety of factors, some of which may be outside of our control, including a cyclical downturn in our business or global downturn.'), words no earlier Micron 10-K uses; the company names the cyclicality of its own business, BKR's 'Our business is cyclical' and CAT's 'The demand for our products and services tends to be cyclical' reading, not AVGO's industry wording, so the kind is CYCLICAL from the FY2025 10-K, the label only; the 10-K names AI only among the markets and applications Micron sells into ('Every day, the innovations that our people create fuel the data economy, enabling advances in artificial intelligence (AI) and compute-intensive applications that unleash opportunities — from the data center to the intelligent edge and across the client and mobile user experience.'), its own demand and not a substitute for its products (the NVDA reading), and no theme in taxonomy_eras.json is scoped to a memory maker (GENAI, live from 2022-11-30, is scoped to generative AI substituting the core product: software seats, IT services and BPO hours, professional information, search, education content and mobility; EV, live from 2020-01-01, to combustion powertrains, auto parts and fuel retail; CRYPTO, live from 2020-10-21, to payments, banks and exchanges), so the watch list is empty",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "TOO MUCH CYCLE RISK",
+  "quality_label": "✕ TOO MUCH CYCLE RISK",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "CYCLICAL",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "'We are an industry leader in innovative memory and storage solutions transforming how the world uses information to enrich life for all.' 'Volatility in average selling prices for our semiconductor memory and storage products may adversely affect our business.' 'The semiconductor memory and storage markets are highly competitive.' (FY2025 10-K); CYCLICAL: the 10-K calls its own business cyclical ('If we choose to exercise such discretion due to the cyclicality of our business or other factors, we may not be able to fully utilize these incentives.' 'We may fail to achieve these milestones, in a timely manner or at all, due to a variety of factors, some of which may be outside of our control, including a cyclical downturn in our business or global downturn.'), words no earlier Micron 10-K uses; the company names the cyclicality of its own business, BKR's 'Our business is cyclical' and CAT's 'The demand for our products and services tends to be cyclical' reading, not AVGO's industry wording, so the kind is CYCLICAL from the FY2025 10-K, the label only; the 10-K names AI only among the markets and applications Micron sells into ('Every day, the innovations that our people create fuel the data economy, enabling advances in artificial intelligence (AI) and compute-intensive applications that unleash opportunities — from the data center to the intelligent edge and across the client and mobile user experience.'), its own demand and not a substitute for its products (the NVDA reading), and no theme in taxonomy_eras.json is scoped to a memory maker (GENAI, live from 2022-11-30, is scoped to generative AI substituting the core product: software seats, IT services and BPO hours, professional information, search, education content and mobility; EV, live from 2020-01-01, to combustion powertrains, auto parts and fuel retail; CRYPTO, live from 2020-10-21, to payments, banks and exchanges), so the watch list is empty. cyclical (obsolescence risk 2/5); price rich; Ratio B 2.43x; +290% to EPP floor; model-vs-market gap +0.69; conservative 2yr -20%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": 2.43,
+  "ratio_b_fmt": "2.43x",
+  "epp": 53.13,
+  "epp_gap_pct": 290.3,
+  "epp_adj": -0.3,
+  "proxy_composite": 3.0,
+  "sca": 0.1,
+  "adj_composite": 2.8,
+  "market_composite": 2.11,
+  "adj_gap": 0.69,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": -19.9,
+  "scenarios": {
+   "BEAR": {
+    "eps": 1.4,
+    "pe": 4.4,
+    "price": 6.16,
+    "desc": "EPS -57.0%/yr (worst year FY17-FY25 ex-FY23, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 15.44,
+    "pe": 11.0,
+    "price": 169.84,
+    "desc": "EPS +42.6%/yr (Q1 FY26 guide YoY + margin + buyback); P/E at its 9.2-yr ex-FY16 ex-FY23 median"
+   },
+   "BULL": {
+    "eps": 15.44,
+    "pe": 18.8,
+    "price": 290.27,
+    "desc": "EPS +42.6%/yr (FY17-FY25 ex-FY23 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 24.82,
+    "pe": 101.2,
+    "price": 2511.78,
+    "desc": "EPS +80.8%/yr (best 2-yr run FY17-FY25 ex-FY23, at least BULL); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 2.43,
+   "epp_gap_pct": 290.3,
+   "adj_gap": 0.69,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -19.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.15,
+   "epp_gap_pct": 290.3,
+   "adj_gap": 1.45,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": -19.9,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 290.3,
+   "adj_gap": -0.42,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -19.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 2.19,
+   "epp_gap_pct": 290.3,
+   "adj_gap": 0.71,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -19.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 2.71,
+   "epp_gap_pct": 290.3,
+   "adj_gap": 0.67,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -19.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 2.43,
+   "epp_gap_pct": 290.3,
+   "adj_gap": 0.99,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -19.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 2.43,
+   "epp_gap_pct": 173.2,
+   "adj_gap": 0.79,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -19.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 2.43,
+   "epp_gap_pct": 290.3,
+   "adj_gap": 0.76,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -19.9,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "FAIR",
+  "RICH"
+ ],
+ "summary": "MU (retrospective, 2025-11-21) ✕ AVOID — Ratio B 2.43x (97.0% downside to Bear $6.16 / +40.0% upside to Bull $290.27) | Adj composite 2.80 vs market 2.11: gap +0.69 [UNDERVALUED] | +290% above the EPP floor $53.13 (7x FY26E $7.59) | Conservative 2-yr case: -19.9% total (-10.0%/yr) | At 27.3x FY26E the 15% hurdle price $274.25 sits between the BASE and BULL cases; revenue +46.0% YoY in Q4 FY25, forward revenues +40.1-47% (Q1 FY26 revenue guide (Q4 FY25 results (8-K ex.99.1, Business Outlook))); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "MU121",
+   "published": "2018-10-15",
+   "filed": "accepted 2018-10-15 14:40 ET (during the session)",
+   "title": "Micron FY2018 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312518000092/a2018q4.htm",
+   "supports": "history FY2014-FY2018 (selected data, statements of operations), segments, Items 1, 1A and 5"
+  },
+  {
+   "id": "MU122",
+   "published": "2019-10-17",
+   "filed": "accepted 2019-10-17 14:44 ET (during the session)",
+   "title": "Micron FY2019 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312519000094/a2019q4.htm",
+   "supports": "history FY2015-FY2019 (selected data, statements of operations), segments, Items 1, 1A and 5"
+  },
+  {
+   "id": "MU123",
+   "published": "2020-10-19",
+   "filed": "accepted 2020-10-19 14:36 ET (during the session)",
+   "title": "Micron FY2020 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312520000082/mu-20200903.htm",
+   "supports": "history FY2016-FY2020 (selected data, statements of operations), segments, Items 1, 1A and 5"
+  },
+  {
+   "id": "MU124",
+   "published": "2021-10-08",
+   "filed": "accepted 2021-10-08 13:23 ET (during the session)",
+   "title": "Micron FY2021 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312521000065/mu-20210902.htm",
+   "supports": "history FY2019-FY2021 (statements of operations; Item 6 reserved), segments, Items 1, 1A and 5"
+  },
+  {
+   "id": "MU183",
+   "published": "2022-10-07",
+   "filed": "accepted 2022-10-07 14:57 ET (during the session)",
+   "title": "Micron FY2022 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312522000048/mu-20220901.htm",
+   "supports": "history FY2020-FY2022 (statements of operations; Item 6 reserved), segments, Items 1, 1A and 5"
+  },
+  {
+   "id": "MU184",
+   "published": "2023-10-09",
+   "filed": "accepted 2023-10-06 16:01 ET (after the 16:00 ET close)",
+   "title": "Micron FY2023 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312523000054/mu-20230831.htm",
+   "supports": "history FY2021-FY2023 (statements of operations; Item 6 reserved), segments, Items 1, 1A and 5"
+  },
+  {
+   "id": "MU185",
+   "published": "2024-10-07",
+   "filed": "accepted 2024-10-04 16:12 ET (after the 16:00 ET close)",
+   "title": "Micron FY2024 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312524000027/mu-20240829.htm",
+   "supports": "history FY2022-FY2024 (statements of operations; Item 6 reserved), segments, Items 1, 1A and 5"
+  },
+  {
+   "id": "MU186",
+   "published": "2025-10-03",
+   "filed": "accepted 2025-10-03 14:42 ET (during the session)",
+   "title": "Micron FY2025 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/mu-20250828.htm",
+   "supports": "history FY2023-FY2025 (statements of operations; Item 6 reserved), segments, Items 1, 1A and 5"
+  },
+  {
+   "id": "MU175",
+   "published": "2025-09-24",
+   "filed": "accepted 2025-09-23 16:02 ET (after the 16:00 ET close)",
+   "title": "Micron Q4 FY25 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000024/a2025q4ex991-pressrelease.htm",
+   "supports": "Q4 FY25 revenue, gross margin, SG&A, R&D, operating income, diluted EPS and shares against the year-ago quarter; inventories, cash and debt; FY25 actuals; Q1 FY26 guidance"
+  },
+  {
+   "id": "MU174",
+   "published": "2025-06-26",
+   "filed": "accepted 2025-06-25 16:03 ET (after the 16:00 ET close)",
+   "title": "Micron Q3 FY25 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000019/a2025q3ex991-pressrelease.htm",
+   "supports": "Q3 FY25 revenue, gross margin, SG&A, R&D, operating income, diluted EPS and shares against the year-ago quarter; inventories, cash and debt; Q4 FY25 guidance"
+  },
+  {
+   "id": "MU172",
+   "published": "2024-12-19",
+   "filed": "accepted 2024-12-18 16:00 ET (after the 16:00 ET close)",
+   "title": "Micron Q1 FY25 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312524000046/a2025q1ex991-pressrelease.htm",
+   "supports": "Q1 FY25 revenue, gross margin, SG&A, R&D, operating income, diluted EPS and shares against the year-ago quarter; inventories, cash and debt; Q2 FY25 guidance"
+  },
+  {
+   "id": "MU30",
+   "published": "2009-12-18",
+   "filed": "accepted 2009-12-18 10:01 ET (during the session)",
+   "title": "Micron 8-K of 2009-12-18 (Item 3.01, transfer of listing)",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312509000140/form8kmarketchange.htm",
+   "supports": "the move from the NYSE to the NASDAQ Global Select Market"
+  },
+  {
+   "id": "Y0",
+   "published": "2025-11-21",
+   "title": "Yahoo Finance daily prices, MU and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/MU/history",
+   "supports": "close $207.37 as traded on AS_OF, 52-week range, realized vol, beta, the 9.2-yr ex-FY16 ex-FY23 P/E distribution from 2016-09-02"
+  }
+ ],
+ "warnings": [
+  "calendar year(s) 2069 after 2025 outside FY labels — make sure they are forecasts"
+ ],
+ "generated": "2026-11-18"
+}

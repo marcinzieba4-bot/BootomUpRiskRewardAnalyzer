@@ -1,0 +1,65 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "NEM",
+ "as_of": "2024-08-09",
+ "computed": "2026-11-28",
+ "data_source": "Yahoo Finance daily closes + dividends (NEM, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2025-02-07",
+   "price": 44.84,
+   "dividends": 0.5,
+   "total_return_pct": -5.0,
+   "benchmark_total_return_pct": 13.4,
+   "excess_pct": -18.4,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2025-08-08",
+   "price": 68.98,
+   "dividends": 1.0,
+   "total_return_pct": 46.7,
+   "benchmark_total_return_pct": 20.9,
+   "excess_pct": 25.8,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2026-08-07",
+   "price": 112.98,
+   "dividends": 2.02,
+   "total_return_pct": 141.0,
+   "benchmark_total_return_pct": 47.8,
+   "excess_pct": 93.2,
+   "hurdle_pct": 32.2
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2026-01-28",
+   "price": 131.95
+  },
+  "low": {
+   "date": "2024-12-30",
+   "price": 37.0
+  },
+  "max_drawdown_pct": -36.9,
+  "return_to_avg_price_m12_m24_pct": 108.6
+ },
+ "scenario_landing_2y": "BASE",
+ "call_check_2y": {
+  "expectation": "CHEAP: should clear the hurdle or beat the benchmark",
+  "hit": true
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "CYCLICAL",
+   "risk": 2
+  },
+  "today": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Newmont: gold miner; gold price, rising AISC",
+   "reviewed": "2026-09-22"
+  }
+ }
+}

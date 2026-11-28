@@ -1,0 +1,300 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "MAR",
+ "company": "Marriott International, Inc.",
+ "as_of": "2026-07-10",
+ "price_date": "2026-07-10",
+ "price": 376.11,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); hotel signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "Marriott: 'Consistent with our focus on franchising, management, and licensing, we own or lease very few of our lodging properties (less than one percent of our system)'; 'We are a worldwide franchisor, operator, and licensor of hotel, residential, timeshare, and other lodging properties under a portfolio of compelling brands at different price and service points'; 'As of year-end 2025, our system included 9,805 properties (1,779,936 rooms) in 145 countries and territories'; 'Our industry is highly competitive, which may impact our ability to compete successfully for guests'; 'Our hotel brands and other lodging offerings generally compete with regional, national, and international chains that operate lodging properties or franchise their brands, lodging properties that are not affiliated with a chain, and online platforms that allow travelers to book short-term rentals of homes and apartments'; 'Economic and other global, national, and regional conditions and events have in the past materially impacted, and could in the future materially impact, our business, operations, financial results, and growth'; 'Changes in the way hotel rooms are booked could adversely impact our business'; 'In addition, the introduction of AI capabilities by existing and emerging travel intermediaries may change the way guests plan, book, and pay for travel, which may disrupt how our products and services are marketed and distributed, potentially eroding brand loyalty, increasing distribution costs, and negatively affecting our Loyalty Program, which could adversely impact our financial performance and our ability to grow our business' (its own FY2025 10-K): a hotel management and franchise system whose fees follow the revenues and profits of its hotels through the economy, by its own account; no disruption theme is live for it (the AI sentence of its booking-channel risk factor names a risk no theme in taxonomy_eras.json covers: GENAI is scoped to software, IT services, information, search, education and mobility, so it stays here, as home sharing did from FY2015)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "Marriott: 'Consistent with our focus on franchising, management, and licensing, we own or lease very few of our lodging properties (less than one percent of our system)'; 'We are a worldwide franchisor, operator, and licensor of hotel, residential, timeshare, and other lodging properties under a portfolio of compelling brands at different price and service points'; 'As of year-end 2025, our system included 9,805 properties (1,779,936 rooms) in 145 countries and territories'; 'Our industry is highly competitive, which may impact our ability to compete successfully for guests'; 'Our hotel brands and other lodging offerings generally compete with regional, national, and international chains that operate lodging properties or franchise their brands, lodging properties that are not affiliated with a chain, and online platforms that allow travelers to book short-term rentals of homes and apartments'; 'Economic and other global, national, and regional conditions and events have in the past materially impacted, and could in the future materially impact, our business, operations, financial results, and growth'; 'Changes in the way hotel rooms are booked could adversely impact our business'; 'In addition, the introduction of AI capabilities by existing and emerging travel intermediaries may change the way guests plan, book, and pay for travel, which may disrupt how our products and services are marketed and distributed, potentially eroding brand loyalty, increasing distribution costs, and negatively affecting our Loyalty Program, which could adversely impact our financial performance and our ability to grow our business' (its own FY2025 10-K): a hotel management and franchise system whose fees follow the revenues and profits of its hotels through the economy, by its own account; no disruption theme is live for it (the AI sentence of its booking-channel risk factor names a risk no theme in taxonomy_eras.json covers: GENAI is scoped to software, IT services, information, search, education and mobility, so it stays here, as home sharing did from FY2015). durable franchise (obsolescence risk 2/5); price rich; Ratio B 2.36x; +42% to EPP floor; model-vs-market gap -0.17; conservative 2yr +0%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": 2.36,
+  "ratio_b_fmt": "2.36x",
+  "epp": 264.62,
+  "epp_gap_pct": 42.1,
+  "epp_adj": -0.1,
+  "proxy_composite": 2.3,
+  "sca": 0.103,
+  "adj_composite": 2.302,
+  "market_composite": 2.47,
+  "adj_gap": -0.17,
+  "valuation": "FAIRLY VALUED",
+  "cons_return_2yr": 0.1,
+  "scenarios": {
+   "BEAR": {
+    "eps": 5.74,
+    "pe": 19.8,
+    "price": 114,
+    "desc": "EPS -29.4%/yr (worst year FY16-FY25 ex-FY20, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 14.24,
+    "pe": 27.6,
+    "price": 393,
+    "desc": "EPS +11.3%/yr (Q2 fee guide + margin + buyback); P/E at its 10-yr ex-FY20 median"
+   },
+   "BULL": {
+    "eps": 15.18,
+    "pe": 32.1,
+    "price": 487,
+    "desc": "EPS +14.9%/yr (FY16-FY25 ex-FY20 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 35.07,
+    "pe": 39.3,
+    "price": 1378,
+    "desc": "EPS +74.6%/yr (best 2-yr run FY16-FY25 ex-FY20); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 2.36,
+   "epp_gap_pct": 42.1,
+   "adj_gap": -0.17,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 0.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 1.11,
+   "epp_gap_pct": 42.1,
+   "adj_gap": 0.18,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 0.1,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 6.41,
+   "epp_gap_pct": 42.1,
+   "adj_gap": -0.54,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 0.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 2.06,
+   "epp_gap_pct": 42.1,
+   "adj_gap": -0.11,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 0.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 2.75,
+   "epp_gap_pct": 42.1,
+   "adj_gap": -0.23,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 0.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 2.36,
+   "epp_gap_pct": 42.1,
+   "adj_gap": 0.13,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 0.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 2.36,
+   "epp_gap_pct": 25.7,
+   "adj_gap": -0.07,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 0.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 2.36,
+   "epp_gap_pct": 42.1,
+   "adj_gap": 0.0,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 0.1,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "FAIR",
+  "RICH"
+ ],
+ "summary": "MAR (retrospective, 2026-07-10) ✕ AVOID — Ratio B 2.36x (69.7% downside to Bear $114 / +29.5% upside to Bull $487) | Adj composite 2.30 vs market 2.47: gap -0.17 [FAIRLY VALUED] | +42% above the EPP floor $265 (23x FY26E $11.51) | Conservative 2-yr case: +0.1% total (+0.0%/yr) | At 32.7x FY26E the 15% hurdle price $497 sits above the BULL case; North American RevPAR +4.6% in Q1 2026, forward fee revenue +9.86-10.93% (Q2 2026 fee revenue guide); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "MA137",
+   "published": "2026-02-10",
+   "title": "Marriott International FY2025 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000104828626000007/mar-20251231.htm",
+   "supports": "statements of income (three years), EPS note, segments, cash flow, lodging statistics, dividends, risk factors"
+  },
+  {
+   "id": "MA136",
+   "published": "2026-02-10",
+   "title": "Marriott International Q4 2025 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000104828626000005/mar-2025q4xex99earningsrel.htm",
+   "supports": "Q4 2025 print, FY2025 actuals, outlook"
+  },
+  {
+   "id": "MA96",
+   "published": "2019-03-01",
+   "title": "Marriott International FY2018 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828019002337/mar-q42018x10k.htm",
+   "supports": "selected financial data, segments, cash flow, dividend, risk factors"
+  },
+  {
+   "id": "MA108",
+   "published": "2021-02-18",
+   "title": "Marriott International FY2020 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828021002433/mar-20201231.htm",
+   "supports": "selected financial data, segments, cash flow, dividend, risk factors"
+  },
+  {
+   "id": "MA113",
+   "published": "2022-02-15",
+   "title": "Marriott International FY2021 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828022002666/mar-20211231.htm",
+   "supports": "statements of income (three years), EPS note, segments, cash flow, lodging statistics, dividends, risk factors"
+  },
+  {
+   "id": "MA119",
+   "published": "2023-02-14",
+   "title": "Marriott International FY2022 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828023003485/mar-20221231.htm",
+   "supports": "statements of income (three years), EPS note, segments, cash flow, lodging statistics, dividends, risk factors"
+  },
+  {
+   "id": "MA125",
+   "published": "2024-02-13",
+   "title": "Marriott International FY2023 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828024004372/mar-20231231.htm",
+   "supports": "statements of income (three years), EPS note, segments, cash flow, lodging statistics, dividends, risk factors"
+  },
+  {
+   "id": "MA131",
+   "published": "2025-02-11",
+   "title": "Marriott International FY2024 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828025004818/mar-20241231.htm",
+   "supports": "statements of income (three years), EPS note, segments, cash flow, lodging statistics, dividends, risk factors"
+  },
+  {
+   "id": "MA107",
+   "published": "2021-02-18",
+   "title": "Marriott International Q4 2020 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828021002419/mar-2020q4earningsreleasee.htm",
+   "supports": "Q4 2020 print, FY2020 actuals"
+  },
+  {
+   "id": "MA1",
+   "published": "1999-03-16",
+   "title": "Marriott International FY1998 Form 10-K405",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000092838599000780/0000928385-99-000780.txt",
+   "supports": "the March 27, 1998 spinoff: no stock price data before it ('we were not a publicly-held company during that time')"
+  },
+  {
+   "id": "MA138",
+   "published": "2026-05-06",
+   "title": "Marriott International Q1 2026 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000104828626000012/mar-2026q1xex99earningsrel.htm",
+   "supports": "Q1 2026 print, outlook"
+  },
+  {
+   "id": "MA133",
+   "published": "2025-08-05",
+   "title": "Marriott International Q2 2025 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828025037592/mar-2025q2xex99earningsrel.htm",
+   "supports": "Q2 2025 print, outlook"
+  },
+  {
+   "id": "MA12",
+   "published": "2007-02-21",
+   "title": "Marriott International FY2006 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312507035757/d10k.htm",
+   "supports": "selected financial data 1999-2006, segments, synthetic fuel lines 2004-2006, RevPAR statistics, cash flow, dividend, risk factors"
+  },
+  {
+   "id": "MA27",
+   "published": "2009-05-05",
+   "title": "Marriott International 8-K/A of 2009-05-05 (Ex. 99.1, stock dividend)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000118143109022814/rrd241247_28284.htm",
+   "supports": "a stock dividend of 0.00369 share per share (record date June 25, 2009), paid in place of the cash dividend"
+  },
+  {
+   "id": "MA31",
+   "published": "2009-10-09",
+   "title": "Marriott International Q3 2009 Form 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312509206036/d10q.htm",
+   "supports": "the second stock dividend's ratio, 0.00379 share per share (record date August 20, 2009)"
+  },
+  {
+   "id": "MA35",
+   "published": "2010-02-16",
+   "title": "Marriott International FY2009 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312510030603/d10k.htm",
+   "supports": "selected financial data, segments, cash flow, dividend, risk factors; the third 2009 stock dividend's ratio"
+  },
+  {
+   "id": "MA47",
+   "published": "2011-10-26",
+   "title": "Marriott International 8-K of 2011-10-26 (Ex. 99, spin-off approved)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312511281516/d247139dex99.htm",
+   "supports": "the spin-off of Marriott Vacations Worldwide: one share for every ten Marriott shares, record date November 10, distribution November 21, 2011"
+  },
+  {
+   "id": "MA48",
+   "published": "2011-11-21",
+   "title": "Marriott International 8-K of 2011-11-21 (spin-off completed)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312511317838/d257339d8k.htm",
+   "supports": "the spin-off of Marriott Vacations Worldwide completed on November 21, 2011"
+  },
+  {
+   "id": "MA60",
+   "published": "2013-10-07",
+   "title": "Marriott International 8-K of 2013-10-07 (Item 3.01, transfer of listing)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312513392754/d607930d8k.htm",
+   "supports": "the listing moved from the NYSE to NASDAQ, trading there from October 21, 2013"
+  },
+  {
+   "id": "W0",
+   "published": "2026-07-10",
+   "title": "Yahoo Finance daily prices, MAR and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/MAR/history",
+   "supports": "close $376.11 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr ex-FY20 P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-09"
+}

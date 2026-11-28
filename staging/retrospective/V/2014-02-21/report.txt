@@ -1,0 +1,155 @@
+
+════════════════════════════════════════════════════════════════════════
+  V  ·  Visa Inc.  ·  $223.36  ·  RETROSPECTIVE as of 2014-02-21
+  Signal: ✕ AVOID   Ratio B: 2.95x   Adj gap: -1.73  [OVERVALUED]
+  Point-in-time: 10 sources, latest published 2014-02-21; latest print Q1 FY14 (Jan 30)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2014E revenue, USD bn  →  FY2016E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2014E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Service revenues              $  5.94  $ 5.94  $ 7.75    +0.00    +1.81
+    +9.9% revenue in FY13
+  Data processing revenues      $  5.15  $ 5.15  $ 6.72    +0.00    +1.57
+    +16.8% revenue in FY13
+  International transaction re  $  3.76  $ 3.76  $ 4.91    +0.00    +1.15
+    +12.0% revenue in FY13
+  Other revenues                $  0.79  $ 0.79  $ 1.04    +0.00    +0.25
+    +1.7% revenue in FY13
+  Client incentives             $ -2.57  $-2.57  $-3.36    +0.00    -0.79
+    +7.7% revenue in FY13
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $ 13.07  $13.07  $17.06    +0.00    +3.99
+  FY2014E = FY13 $11.778B × (1 + 10.9%: the Q1 FY14 revenue growth (no FY14 revenue range), YoY, applied to the year); split pro rata to FY13 operating revenues by line, incentives as reported (FY13 growth)
+  Q1 FY14 (Jan 30): total operating revenues $3.155B +10.9% YoY (+6.1% QoQ); receivables +4.9%; operating expenses ex litigation +3.4%;
+  net-to-gross 84.04% (+31.3bp); operating margin 65.83% (+258.5bp); EPS $2.20 vs $1.93
+  Revenue: total operating revenues $3,155M vs $2,846M a year earlier, $2,973M the quarter before (service $1,419M, data processing $1,264M, international transaction $891M, other $180M, less client incentives $599M); 'Payments volume growth, on a constant dollar basis, for the three months ended September 30, 2013, on which fiscal first quarter service revenue is recognized, was 13% over the prior year at $1.1 trillion.' 'Total processed transactions, which represent transactions processed by VisaNet, for the three months ended December 31, 2013, were 16.0 billion, a 13% increase over the prior year.'; accounts receivable $840M (2013-12-31) vs $801M a year earlier (the year-ago 10-Q); GAAP diluted class A EPS $2.20 vs $1.93; diluted class A shares 639M (as converted)
+  FY14 (Q1 FY14 print): 'Annual net revenue growth: Low double-digits on a constant dollar basis, with an expectation of two percentage points of negative foreign currency impact;' is words and gives no field: the latest quarter's revenue growth stands in (the UNP rule); 'Annual diluted class A common stock earnings per share growth: Mid to high teens; and' is words and gives no field; 'Annual operating margin: Low 60s;' is words and gives no margin step; no next-quarter guide is given
+
+  FY2014E EPS check:  $13.070B × 61.6% pre-tax × (1−31.4%) ÷ 0.639B  =  $8.65  (FY2014E: no EPS guide in numbers (EPS growth in words only), FY13's $7.59 stands)
+  FY2016E BEAR check: $13.070B × 61.6% ÷ 0.592B  =  $9.33  (scenario $7.59)
+  FY2016E BULL check: $17.060B × 62.0% ÷ 0.592B  =  $12.25  (scenario $11.88)
+  Every 1pp of pre-tax margin ≈ $0.140 EPS ≈ $2.71/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Revenue growth                         -3.0%    ≥10.0%    ≥22.0%    ≥74.0%    +10.9%  ◦ BASE  ██░░
+  Net-to-gross revenue change         -640.0bp  ≥-330.0bp  ≥-30.0bp  ≥430.0bp   +31.3bp  ▲ BULL  ███░
+  Opex growth less revenue             +13.0pp    ≤2.0pp   ≤-9.0pp  ≤-25.0pp    -7.5pp  ◦ BASE  ██░░
+  Receivables growth less revenue       +6.0pp   ≤-1.0pp   ≤-9.0pp  ≤-35.0pp    -6.0pp  ◦ BASE  ██░░
+  Operating margin change             -15780.0bp  ≥-7710.0bp  ≥350.0bp  ≥8930.0bp  +258.5bp  ◦ BASE  ██░░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.20 / 4.00
+  Market composite:   3.77 / 4.00  (back-solved from $223.36 + 15% hurdle)
+  SCA adjustment:    -0.06  ·  EPP-distance adj -0.10  →  Adj composite 2.04  →  Gap -1.73  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY13 total operating revenues +13.0%, 83.5% of gross revenues kept after client incentives; Q1 84.04% (+31bp YoY)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 29.4x FY14E vs a 19.3x 5.4-yr median (99th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    -  Growth vs own history: Q1 FY14 revenue growth (no FY14 revenue range) +10.9% vs a 13.7% 4-yr median  (-0.28 × 20%  =  -0.056)
+    +  Cash and cash equivalents $2.121B, no debt on the release's balance sheet (Q1 FY14), FY13 free cash flow $2.551B (net cash provided by operating activities $3,022M less purchases of property, equipment and technology $471M), dividend $1.60 a year  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Revenue growth                        +10.9%     -3.0%  -13.9%  Spending and cross-border travel slow…
+  Net-to-gross revenue change          +31.3bp  -640.0bp  -671.3bp  Client incentives take more of gross …
+  Opex growth less revenue              -7.5pp   +13.0pp  +20.5pp  Marketing and personnel do not slow w…
+  Receivables growth less revenue       -6.0pp    +6.0pp  +12.0pp  Clients pay more slowly: collections lag
+  Operating margin change             +258.5bp  -15780.0bp  -16038.5bp  Operating leverage works in reverse
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$141.39  (model)  /  $114.61 (defined)
+  Bear probability (proxy model):  14.7%
+
+  KEY TRIGGER: revenue went from +8.9% (Q4 FY13) to +10.9% YoY (Q1 FY14), +6.1% on the quarter before;
+  the bear case needs incentives taking more of gross revenues (+31.3bp now)
+  and receivables (-6.0pp against revenue) giving way. A spending slowdown shows up in payments volume and service revenues first;
+  the bear needs it in processed transactions as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $7.59  (FY2014E: no EPS guide in numbers (EPS growth in words only), FY13's $7.59 stands)
+  Min viable P/E at panic:          15x  [median of calendar-year P/E lows: 2008 15.0x, 2009 13.7x, 2010 13.4x, 2011 13.6x, 2012 16.0x, 2013 20.4x, 2014 28.1x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $113.85/share
+  Current $223.36 vs Updated EPP $113.85:  +96%  ⚠ far above floor — large drawdown room
+  Bear $114.61 vs Updated EPP $113.85:  +1%  ✓ bear stays above the floor
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Revenue growth                                10.0       -0.9   BASE floor (vs +11 now)
+  Net-to-gross revenue change                 -330.0     -361.3   BASE floor (vs +31 now)
+  Opex growth less revenue                       2.0       +9.5   BASE floor (vs -8 now)
+  Receivables growth less revenue               -1.0       +5.0   BASE floor (vs -6 now)
+  Operating margin change                    -7710.0    -7968.5   BASE floor (vs +258 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $7.59 × (1+12.6%)² = $9.63
+  At 19x P/E (conservative):  $182.88/share
+  + Cumul. dividends (2yr):  +$3.30/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $182.88  (▼40.48 from $223.36)
+  Conservative total return:  -17% over 2yr  = -8%/yr
+
+  12.6% EPS growth is what is left once the premium multiple (29.4x)
+  mean-reverts to 19x. Breakeven at 19x needs FY2016E EPS of $11.58,
+  i.e. 23.5%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $155.68  –  $235.50  (at 85th pct of range)
+  Annual dividend:      $1.60/share  (yield 0.7%)
+  Realized vol:         22% annualized (1-yr daily log returns)
+  Beta vs broad market: 1.12
+  1-sigma range (1yr):  $174.00  –  $272.72  ($223.36 ± 22%)
+  2-sigma range (1yr):  $124.63  –  $322.09
+  ────────────────────────────────────────────────────────────
+  Bear $114.61 requires:  ~2.2σ price move  (unusual — requires fundamental break)
+  A payments network whose revenue follows consumer spending: the stock is +43% off its February
+  low (52 weeks) while revenue went from +8.9% (Q4 FY13) to +10.9% YoY (Q1 FY14), +6.1% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        7.59   15.1x  $ 114.61    14.7%      1.2%   +13.5pp  EPS +0.0%/yr (worst year FY09-FY13, capped at 0%); P/E to its 10th pct
+  BASE        9.97   19.3x  $ 192.42    51.3%      4.3%   +47.0pp  EPS +14.6%/yr (Q1 revenue YoY + margin + buyback); P/E at its 5.4-yr median
+  BULL       11.88   21.9x  $ 260.17    28.6%     15.0%   +13.6pp  EPS +25.1%/yr (FY09-FY13 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL      12.22   24.3x  $ 296.95     5.4%     79.5%   -74.1pp  EPS +26.9%/yr (best 2-yr run FY09-FY13, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $206.03  /  Market EV: $284.69  /  Current: $223.36
+  Conservative EV (2yr, ④): $182.88 + $3.30 divs = $186.18 total value
+  Downside (→ Bear $114.61): 48.7%   Upside (→ Bull $260.17): 16.5%   Ratio B 2.95x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $223.36 the market needs $295.39 in two years —
+  above the BULL case. That is a market composite of 3.77 against a model
+  read of 2.04: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       2.95x     +96%    -1.73  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     1.44x     +96%    -1.02  OVERVALUED / WATCHLIST
+  Multiples one band cheaper (p5/p25/med/p75)    19.01x     +96%    -1.89  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          2.36x     +96%    -1.71  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                          3.86x     +96%    -1.73  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             2.95x     +96%    -1.43  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 2.95x     +63%    -1.73  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    2.95x     +96%    -1.37  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 FY14 print (the quarter ends in March) — revenue against the Q1 FY14 revenue growth (no FY14 revenue range): +10.9% YoY
+  (2) Client incentives — 84.0% of gross revenues kept in Q1 FY14 (+31.3bp YoY): pricing, what must hold if volume does not
+  (3) Payments volume and processed transactions — the drivers of service and data processing revenues, in each release (Q1 FY14: see the revenue line)
+  (4) Receivables — +4.9% against revenue +10.9% in Q1 FY14 (-6.0pp): clients paying more slowly would show here first
+  (5) Capital structure at 29x — dividend $0.40 a quarter, declared 2013-10-23 (a 21% increase); 'During the three months ended December 31, 2013, the Company repurchased 5.5 million shares of class A common stock, at an average price of $199.56 per share, using $1.1 billion of cash on hand.' (no guided number: it adds nothing)
+  ✕ AVOID  |  EPP floor $113.85  |  ADD below ~$163.56  |  TRIM above $260.17
+════════════════════════════════════════════════════════════════════════
+

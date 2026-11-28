@@ -1,0 +1,262 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "GOOG",
+ "company": "Google Inc.",
+ "as_of": "2008-02-08",
+ "price_date": "2008-02-08",
+ "price": 516.69,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); revenue, margin, expense and receivables signals with Google's rule-T thresholds",
+ "pit_profile": {
+  "kind": "CYCLICAL",
+  "risk": 2,
+  "why": "'Google is a global technology leader focused on improving the ways people connect with information.' 'We generate our revenue almost entirely from advertising, and the reduction in spending by or loss of advertisers could seriously harm our business.' 'We face significant competition from Microsoft and Yahoo.' 'As our growth rate has slowed, the cyclicality and seasonality in our business has become more pronounced and will cause our operating results to fluctuate in the future.' (FY2006 10-K); CYCLICAL: the 10-K says so of its own business ('the cyclicality and seasonality in our business'), the BKR, CAT and NVDA reading, not an industry's words; no theme in taxonomy_eras.json is live for a search and advertising company on these dates (OFFSHORE is scoped to IT services), so the watch list is empty; the competitors named are a competitive field, not a theme, and stay here (the PEP obesity rule)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "CYCLICAL, RISK PRICED IN",
+  "quality_label": "◎ CYCLICAL, RISK PRICED IN",
+  "quality_color": "#f0b429",
+  "quality_tone": "amber",
+  "business_kind": "CYCLICAL",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "'Google is a global technology leader focused on improving the ways people connect with information.' 'We generate our revenue almost entirely from advertising, and the reduction in spending by or loss of advertisers could seriously harm our business.' 'We face significant competition from Microsoft and Yahoo.' 'As our growth rate has slowed, the cyclicality and seasonality in our business has become more pronounced and will cause our operating results to fluctuate in the future.' (FY2006 10-K); CYCLICAL: the 10-K says so of its own business ('the cyclicality and seasonality in our business'), the BKR, CAT and NVDA reading, not an industry's words; no theme in taxonomy_eras.json is live for a search and advertising company on these dates (OFFSHORE is scoped to IT services), so the watch list is empty; the competitors named are a competitive field, not a theme, and stay here (the PEP obesity rule). cyclical (obsolescence risk 2/5); price cheap; Ratio B 0.03x; +14% to EPP floor; model-vs-market gap +0.67; conservative 2yr +112%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.03,
+  "ratio_b_fmt": "0.03x",
+  "epp": 451.86,
+  "epp_gap_pct": 14.3,
+  "epp_adj": 0.0,
+  "proxy_composite": 1.8,
+  "sca": 0.093,
+  "adj_composite": 1.893,
+  "market_composite": 1.22,
+  "adj_gap": 0.67,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 112.3,
+  "scenarios": {
+   "BEAR": {
+    "eps": 11.03,
+    "pe": 35.7,
+    "price": 393.77,
+    "desc": "EPS -8.9%/yr (worst year FY01-FY07, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 26.87,
+    "pe": 42.4,
+    "price": 1139.29,
+    "desc": "EPS +42.2%/yr (Q4 revenue YoY + margin + buyback); P/E at its 3.5-yr median"
+   },
+   "BULL": {
+    "eps": 92.05,
+    "pe": 57.1,
+    "price": 5256.06,
+    "desc": "EPS +163.2%/yr (FY01-FY07 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 162.72,
+    "pe": 81.5,
+    "price": 13261.68,
+    "desc": "EPS +249.9%/yr (best 2-yr run FY01-FY07, at least BULL); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.03,
+   "epp_gap_pct": 14.3,
+   "adj_gap": 0.67,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 112.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.01,
+   "epp_gap_pct": 14.3,
+   "adj_gap": 0.67,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 112.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 0.04,
+   "epp_gap_pct": 14.3,
+   "adj_gap": 0.89,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 112.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.02,
+   "epp_gap_pct": 14.3,
+   "adj_gap": 0.67,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 112.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.03,
+   "epp_gap_pct": 14.3,
+   "adj_gap": 0.89,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 112.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.03,
+   "epp_gap_pct": 14.3,
+   "adj_gap": 0.97,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 112.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.03,
+   "epp_gap_pct": 5.1,
+   "adj_gap": 0.67,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 112.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.03,
+   "epp_gap_pct": 14.3,
+   "adj_gap": 0.67,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 112.3,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "GOOG (retrospective, 2008-02-08) ◉ BUY — Ratio B 0.03x (23.8% downside to Bear $393.77 / +917.3% upside to Bull $5256.06) | Adj composite 1.89 vs market 1.22: gap +0.67 [UNDERVALUED] | +14% above the EPP floor $451.86 (34x FY08E $13.29) | Conservative 2-yr case: +112.3% total (+56.2%/yr) | At 38.9x FY08E the 15% hurdle price $683.32 sits at or below the BASE case; revenue +50.6% YoY in Q4 2007, forward revenues +50.6% (Q4 2007 revenue growth (no Q1 2008 guide)); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "GOOG5",
+   "published": "2007-03-02",
+   "filed": "accepted 2007-03-01 16:52 ET (after the 16:00 ET close)",
+   "title": "Google FY2006 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312507044494/d10k.htm",
+   "supports": "selected financial data 2002-2006, diluted shares 2004-2006, revenues by source 2004-2006, cash flows, the December 2005 and 2006 receivables (rule T), the business description, risk factors and Item 5"
+  },
+  {
+   "id": "GOOG4",
+   "published": "2006-03-16",
+   "filed": "accepted 2006-03-16 15:34 ET (during the session)",
+   "title": "Google FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312506056598/d10k.htm",
+   "supports": "selected financial data 2001-2005 (FY2001 EPS, revenue and diluted shares; FY2002-FY2003 diluted shares), the 2001-2002 rule-T changes, the December 2004 and 2005 receivables with that filing's revenues (rule T)"
+  },
+  {
+   "id": "GOOG3",
+   "published": "2005-02-02",
+   "filed": "accepted 2005-02-01 16:29 ET (after the 16:00 ET close)",
+   "title": "Google Q4 2004 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312505016344/dex991.htm",
+   "supports": "FY2004 diluted EPS of $1.49 before material non-recurring and other items (GAAP $1.46)"
+  },
+  {
+   "id": "GOOG10",
+   "published": "2007-02-01",
+   "filed": "accepted 2007-01-31 16:05 ET (after the 16:00 ET close)",
+   "title": "Google Q4 2006 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312507017352/dex991.htm",
+   "supports": "Q4 2006 revenues by source, costs and expenses, operating income, diluted EPS and shares against the year-ago quarter and the fiscal year; receivables and cash; paid clicks, TAC and headcount"
+  },
+  {
+   "id": "GOOG8",
+   "published": "2006-10-20",
+   "filed": "accepted 2006-10-19 16:12 ET (after the 16:00 ET close)",
+   "title": "Google Q3 2006 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312506211121/dex991.htm",
+   "supports": "Q3 2006 revenues (the quarter before a later print)"
+  },
+  {
+   "id": "GOOG11",
+   "published": "2007-04-20",
+   "filed": "accepted 2007-04-19 16:13 ET (after the 16:00 ET close)",
+   "title": "Google Q1 2007 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312507085176/dex991.htm",
+   "supports": "Q1 2007 revenues by source, costs and expenses, operating income, diluted EPS and shares against the year-ago quarter; receivables and cash; paid clicks, TAC and headcount"
+  },
+  {
+   "id": "GOOG6",
+   "published": "2006-05-11",
+   "filed": "accepted 2006-05-10 16:51 ET (after the 16:00 ET close)",
+   "title": "Google Q1 2006 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312506107734/d10q.htm",
+   "supports": "receivables at the end of Q1 2006 (the year-ago quarter of a later print)"
+  },
+  {
+   "id": "GOOG13",
+   "published": "2007-07-20",
+   "filed": "accepted 2007-07-19 16:06 ET (after the 16:00 ET close)",
+   "title": "Google Q2 2007 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312507158138/dex991.htm",
+   "supports": "Q2 2007 revenues by source, costs and expenses, operating income, diluted EPS and shares against the year-ago quarter; receivables and cash; paid clicks, TAC and headcount"
+  },
+  {
+   "id": "GOOG7",
+   "published": "2006-08-10",
+   "filed": "accepted 2006-08-09 17:07 ET (after the 16:00 ET close)",
+   "title": "Google Q2 2006 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312506167945/d10q.htm",
+   "supports": "receivables at the end of Q2 2006 (the year-ago quarter of a later print)"
+  },
+  {
+   "id": "GOOG15",
+   "published": "2007-10-19",
+   "filed": "accepted 2007-10-18 16:10 ET (after the 16:00 ET close)",
+   "title": "Google Q3 2007 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312507221254/dex991.htm",
+   "supports": "Q3 2007 revenues by source, costs and expenses, operating income, diluted EPS and shares against the year-ago quarter; receivables and cash; paid clicks, TAC and headcount"
+  },
+  {
+   "id": "GOOG9",
+   "published": "2006-11-08",
+   "filed": "accepted 2006-11-08 14:35 ET (during the session)",
+   "title": "Google Q3 2006 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312506228163/d10q.htm",
+   "supports": "receivables at the end of Q3 2006 (the year-ago quarter of a later print)"
+  },
+  {
+   "id": "GOOG17",
+   "published": "2008-02-01",
+   "filed": "accepted 2008-01-31 16:06 ET (after the 16:00 ET close)",
+   "title": "Google Q4 2007 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1288776/000119312508016919/dex991.htm",
+   "supports": "Q4 2007 revenues by source, costs and expenses, operating income, diluted EPS and shares against the year-ago quarter and the fiscal year; receivables and cash; paid clicks, TAC and headcount"
+  },
+  {
+   "id": "Y0",
+   "published": "2008-02-08",
+   "title": "Yahoo Finance daily prices, GOOG and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/GOOG/history",
+   "supports": "close $516.69 as traded on AS_OF, 52-week range, realized vol, beta, the 3.5-yr P/E distribution from 2004-08-19"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-18"
+}

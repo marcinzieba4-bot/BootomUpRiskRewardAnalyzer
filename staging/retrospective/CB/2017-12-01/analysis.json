@@ -1,0 +1,262 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "CB",
+ "company": "Chubb Limited",
+ "as_of": "2017-12-01",
+ "price_date": "2017-12-01",
+ "price": 151.64,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); net premiums earned, combined ratio, investment income, book value and pre-tax margin signals with ACE's rule-T thresholds",
+ "pit_profile": {
+  "kind": "CYCLICAL",
+  "risk": 2,
+  "why": "'are a global insurance and reinsurance organization, serving the needs of a diverse group of clients worldwide' 'Insurance and reinsurance markets are historically cyclical, and we expect to experience periods with excess underwriting capacity and unfavorable premium rates.' 'The incidence and severity of catastrophes are inherently unpredictable and our losses from catastrophes could be substantial.' (FY2016 10-K, Items 1 and 1A): the company calls its own business cyclical (the XOM, CAT and GOOG reading), so CYCLICAL; catastrophe losses are the business's own recurring cost, not a substitution theme; no disruption theme in taxonomy_eras.json is live for a property and casualty insurer on this date (of the live themes, OFFSHORE is scoped to 'lower-cost offshore delivery (Indian IT services) takes share and price from Western consulting, systems integration and outsourcing', CLOUD to 'public cloud displaces on-premise hardware, storage, legacy databases and data-center outsourcing', ECOMMERCE to 'e-commerce (Amazon effect) displaces physical retail, malls, grocery, distribution', STREAMING to 'cord-cutting / streaming displaces linear TV networks and pay-TV bundles', ENERGY_TRANSITION to 'decarbonisation strands oil, gas and coal reserves and refining': none names insurance), so the watch list is empty and these words stay here (the PEP obesity rule)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "TOO MUCH CYCLE RISK",
+  "quality_label": "✕ TOO MUCH CYCLE RISK",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "CYCLICAL",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "'are a global insurance and reinsurance organization, serving the needs of a diverse group of clients worldwide' 'Insurance and reinsurance markets are historically cyclical, and we expect to experience periods with excess underwriting capacity and unfavorable premium rates.' 'The incidence and severity of catastrophes are inherently unpredictable and our losses from catastrophes could be substantial.' (FY2016 10-K, Items 1 and 1A): the company calls its own business cyclical (the XOM, CAT and GOOG reading), so CYCLICAL; catastrophe losses are the business's own recurring cost, not a substitution theme; no disruption theme in taxonomy_eras.json is live for a property and casualty insurer on this date (of the live themes, OFFSHORE is scoped to 'lower-cost offshore delivery (Indian IT services) takes share and price from Western consulting, systems integration and outsourcing', CLOUD to 'public cloud displaces on-premise hardware, storage, legacy databases and data-center outsourcing', ECOMMERCE to 'e-commerce (Amazon effect) displaces physical retail, malls, grocery, distribution', STREAMING to 'cord-cutting / streaming displaces linear TV networks and pay-TV bundles', ENERGY_TRANSITION to 'decarbonisation strands oil, gas and coal reserves and refining': none names insurance), so the watch list is empty and these words stay here (the PEP obesity rule). cyclical (obsolescence risk 2/5); price rich; +71% to EPP floor; model-vs-market gap -1.53; conservative 2yr -26%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": Infinity,
+  "ratio_b_fmt": "infx",
+  "epp": 88.7,
+  "epp_gap_pct": 71.0,
+  "epp_adj": -0.1,
+  "proxy_composite": 1.8,
+  "sca": -0.1,
+  "adj_composite": 1.6,
+  "market_composite": 3.13,
+  "adj_gap": -1.53,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": -25.9,
+  "scenarios": {
+   "BEAR": {
+    "eps": 1.82,
+    "pe": 6.0,
+    "price": 10.92,
+    "desc": "EPS -54.7%/yr (worst year FY07-FY16, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 8.4,
+    "pe": 12.4,
+    "price": 104.16,
+    "desc": "EPS -2.7%/yr (Q3 revenue YoY + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 9.17,
+    "pe": 14.3,
+    "price": 131.13,
+    "desc": "EPS +1.7%/yr (FY07-FY16 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 23.17,
+    "pe": 16.0,
+    "price": 370.72,
+    "desc": "EPS +61.6%/yr (best 2-yr run FY07-FY16, at least BULL); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 71.0,
+   "adj_gap": -1.53,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -25.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 71.0,
+   "adj_gap": -1.36,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -25.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 71.0,
+   "adj_gap": -1.67,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -25.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 71.0,
+   "adj_gap": -1.49,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -25.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 71.0,
+   "adj_gap": -1.56,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -25.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 71.0,
+   "adj_gap": -1.23,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -25.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 31.5,
+   "adj_gap": -1.43,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -25.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 71.0,
+   "adj_gap": -1.43,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -25.9,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "RICH"
+ ],
+ "summary": "CB (retrospective, 2017-12-01) ✕ AVOID — Ratio B infx (92.8% downside to Bear $10.92 / -13.5% upside to Bull $131.13) | Adj composite 1.60 vs market 3.13: gap -1.53 [OVERVALUED] | +71% above the EPP floor $88.70 (10x FY17E $8.87) | Conservative 2-yr case: -25.9% total (-13.0%/yr) | At 17.1x FY17E the 15% hurdle price $200.54 sits above the BULL case; revenue +1.0% YoY in Q3 2017, forward revenues +1% (Q3 2017 revenue growth (no Q4 2017 guide)); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "CB71",
+   "published": "2017-03-01",
+   "filed": "accepted 2017-02-28 21:56 UTC (2017-02-28 16:56 ET, after the close), dated the next trading day",
+   "title": "Chubb Limited FY2016 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/896159/000089615917000004/cb-12312016x10k.htm",
+   "supports": "selected data 2012-2016, the statement of operations, the earnings per share note and the segment premiums: the FY16 history vintage; Item 1 and 1A wording"
+  },
+  {
+   "id": "CB40",
+   "published": "2012-02-27",
+   "filed": "accepted 2012-02-24 21:11 UTC (2012-02-24 16:11 ET, after the close), dated the next trading day",
+   "title": "ACE Limited FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/896159/000119312512078111/d267038d10k.htm",
+   "supports": "selected data 2007-2011, the statement of operations and the segment premiums: the FY11 history vintage; Item 1 and 1A wording; the $0.47 quarterly dividend"
+  },
+  {
+   "id": "CB46",
+   "published": "2013-02-28",
+   "filed": "accepted 2013-02-28 20:46 UTC (2013-02-28 15:46 ET, during market hours)",
+   "title": "ACE Limited FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/896159/000089615913000003/ace-12312012x10k.htm",
+   "supports": "selected data 2008-2012, the statement of operations and the segment premiums: the FY12 history vintage; Item 1 and 1A wording"
+  },
+  {
+   "id": "CB52",
+   "published": "2014-02-28",
+   "filed": "accepted 2014-02-28 20:52 UTC (2014-02-28 15:52 ET, during market hours)",
+   "title": "ACE Limited FY2013 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/896159/000089615914000003/ace-12312013x10k.htm",
+   "supports": "selected data 2009-2013, the statement of operations, the earnings per share note and the segment premiums: the FY13 history vintage; Item 1 and 1A wording; the $0.63 quarterly dividend"
+  },
+  {
+   "id": "CB58",
+   "published": "2015-02-27",
+   "filed": "accepted 2015-02-27 20:45 UTC (2015-02-27 15:45 ET, during market hours)",
+   "title": "ACE Limited FY2014 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/896159/000089615915000006/ace-12312014x10k.htm",
+   "supports": "selected data 2010-2014, the statement of operations, the earnings per share note and the segment premiums: the FY14 history vintage; Item 1 and 1A wording"
+  },
+  {
+   "id": "CB65",
+   "published": "2016-02-29",
+   "filed": "accepted 2016-02-26 22:40 UTC (2016-02-26 17:40 ET, after the close), dated the next trading day",
+   "title": "Chubb Limited FY2015 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/896159/000089615916000027/cb-1231201510k.htm",
+   "supports": "selected data 2011-2015, the statement of operations, the earnings per share note and the segment premiums: the FY15 history vintage; Item 1 and 1A wording"
+  },
+  {
+   "id": "CB70",
+   "published": "2017-02-01",
+   "filed": "accepted 2017-01-31 22:07 UTC (2017-01-31 17:07 ET, after the close), dated the next trading day",
+   "title": "Chubb Limited Q4 2016 earnings release and financial supplement (8-K, Item 2.02, exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/896159/000119312517025874/d339427dex991.htm",
+   "supports": "Q4 2016 figures against the year-ago quarter (the release's summary consolidated financial data and the supplement's book value per share); the full-year figures"
+  },
+  {
+   "id": "CB72",
+   "published": "2017-04-26",
+   "filed": "accepted 2017-04-26 00:38 UTC (2017-04-25 20:38 ET, after the close), dated the next trading day",
+   "title": "Chubb Limited Q1 2017 earnings release and financial supplement (8-K, Item 2.02, exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/896159/000119312517137353/d346322dex991.htm",
+   "supports": "Q1 2017 figures against the year-ago quarter (the release's summary consolidated financial data and the supplement's book value per share)"
+  },
+  {
+   "id": "CB73",
+   "published": "2017-07-26",
+   "filed": "accepted 2017-07-25 20:41 UTC (2017-07-25 16:41 ET, after the close), dated the next trading day",
+   "title": "Chubb Limited Q2 2017 earnings release and financial supplement (8-K, Item 2.02, exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/896159/000119312517235074/d430928dex991.htm",
+   "supports": "Q2 2017 figures against the year-ago quarter (the release's summary consolidated financial data and the supplement's book value per share)"
+  },
+  {
+   "id": "CB75",
+   "published": "2017-10-27",
+   "filed": "accepted 2017-10-26 20:35 UTC (2017-10-26 16:35 ET, after the close), dated the next trading day",
+   "title": "Chubb Limited Q3 2017 earnings release and financial supplement (8-K, Item 2.02, exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/896159/000119312517321296/d484125dex991.htm",
+   "supports": "Q3 2017 figures against the year-ago quarter (the release's summary consolidated financial data and the supplement's book value per share)"
+  },
+  {
+   "id": "CB74",
+   "published": "2017-08-03",
+   "filed": "accepted 2017-08-03 18:59 UTC (2017-08-03 14:59 ET, during market hours)",
+   "title": "Chubb Limited Q2 2017 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/896159/000089615917000015/cb-63017x10q.htm",
+   "supports": "the 2017 annual general meeting's dividend: $0.71 a quarter"
+  },
+  {
+   "id": "CB63",
+   "published": "2016-01-15",
+   "filed": "accepted 2016-01-15 19:25 UTC (2016-01-15 14:25 ET, during market hours)",
+   "title": "Chubb Limited (formerly ACE Limited) 8-K (Items 1.01, 2.01, 2.03, 5.03, 9.01)",
+   "url": "https://www.sec.gov/Archives/edgar/data/896159/000119312516430900/d113231d8k.htm",
+   "supports": "the completed acquisition of The Chubb Corporation (2016-01-14), the name Chubb Limited and the NYSE symbol CB from 2016-01-15"
+  },
+  {
+   "id": "Y0",
+   "published": "2017-12-01",
+   "title": "Yahoo Finance daily prices, CB and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/CB/history",
+   "supports": "close $151.64 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution from 2007-12-03"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-21"
+}

@@ -1,0 +1,228 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "KMI",
+ "company": "Kinder Morgan, Inc.",
+ "as_of": "2016-02-26",
+ "price_date": "2016-02-26",
+ "price": 17.76,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); pipeline signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "The overwhelming majority of cash we generate is fee-based and therefore is not directly exposed to commodity prices. Risk factor: A sharp decline in the prices of oil, NGL or natural gas, or a prolonged unfavorable price environment, would result in a commensurate reduction in our revenues, income and cash flows from our businesses that produce, process, or purchase and sell oil, NGL, or natural gas, and could have a material adverse effect on the carrying value of our CO2 business segment’s proved reserves.; ENERGY_TRANSITION is live (from 2015-12-12): the CO2 segment owns working interests in oil fields and the greenhouse gas risk factor puts the theme on the watch list, company-acknowledged, with no dated evidence that the market prices it for Kinder Morgan",
+  "theme_watch": [
+   {
+    "theme": "ENERGY_TRANSITION",
+    "status": "live, company-acknowledged; no market read",
+    "reason": "Live: Kinder Morgan's own FY2015 10-K says 'We own approximately 97% working interest in the SACROC unit, an approximately 50% working interest in the Yates unit, an approximately 99% working interest in the Katz unit and a 99% working interest in the Goldsmith Landreth unit.' and, of greenhouse gas laws and regulations, 'Such laws or regulations could also lead to reduced demand for hydrocarbon products that are deemed to contribute to greenhouse gases, or restrictions on their use, which in turn could adversely affect demand for our products and services.' The stock trades at 20.0x FY16E — a discount to its own history. Re-file as DISRUPTION_EXPOSED (ENERGY_TRANSITION) only if dated evidence shows the market pricing decarbonisation of Kinder Morgan's oil reserves and the hydrocarbons its pipelines carry specifically."
+   }
+  ],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "The overwhelming majority of cash we generate is fee-based and therefore is not directly exposed to commodity prices. Risk factor: A sharp decline in the prices of oil, NGL or natural gas, or a prolonged unfavorable price environment, would result in a commensurate reduction in our revenues, income and cash flows from our businesses that produce, process, or purchase and sell oil, NGL, or natural gas, and could have a material adverse effect on the carrying value of our CO2 business segment’s proved reserves.; ENERGY_TRANSITION is live (from 2015-12-12): the CO2 segment owns working interests in oil fields and the greenhouse gas risk factor puts the theme on the watch list, company-acknowledged, with no dated evidence that the market prices it for Kinder Morgan. durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.03x; -36% to EPP floor; model-vs-market gap +0.19; conservative 2yr +101%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.03,
+  "ratio_b_fmt": "0.03x",
+  "epp": 27.59,
+  "epp_gap_pct": -35.6,
+  "epp_adj": 0.2,
+  "proxy_composite": 1.3,
+  "sca": 0.15,
+  "adj_composite": 1.65,
+  "market_composite": 1.46,
+  "adj_gap": 0.19,
+  "valuation": "FAIRLY VALUED",
+  "cons_return_2yr": 101.2,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.53,
+    "pe": 30.7,
+    "price": 16,
+    "desc": "EPS -22.6%/yr (worst year FY12-FY14, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 0.4,
+    "pe": 39.9,
+    "price": 16,
+    "desc": "EPS -32.6%/yr (Q4 revenues + margin + buyback); P/E at its 4.1-yr ex-FY11 ex-FY15 median"
+   },
+   "BULL": {
+    "eps": 1.41,
+    "pe": 58.5,
+    "price": 82,
+    "desc": "EPS +26.1%/yr (FY12-FY14 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 1.41,
+    "pe": 63.3,
+    "price": 89,
+    "desc": "EPS +26.1%/yr (best 2-yr run FY12-FY14, at least BULL); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.03,
+   "epp_gap_pct": -35.6,
+   "adj_gap": 0.19,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 101.2,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.01,
+   "epp_gap_pct": -35.6,
+   "adj_gap": 0.63,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 101.2,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 0.07,
+   "epp_gap_pct": -35.6,
+   "adj_gap": -0.36,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 101.2,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.01,
+   "epp_gap_pct": -35.6,
+   "adj_gap": 0.25,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 101.2,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.03,
+   "epp_gap_pct": -35.6,
+   "adj_gap": 0.14,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 101.2,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.03,
+   "epp_gap_pct": -35.6,
+   "adj_gap": 0.49,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 101.2,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.03,
+   "epp_gap_pct": -41.3,
+   "adj_gap": 0.19,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 101.2,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.03,
+   "epp_gap_pct": -35.6,
+   "adj_gap": 0.34,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 101.2,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "KMI (retrospective, 2016-02-26) ◉ BUY — Ratio B 0.03x (9.9% downside to Bear $16 / +361.7% upside to Bull $82) | Adj composite 1.65 vs market 1.46: gap +0.19 [FAIRLY VALUED] | -36% above the EPP floor $28 (31x FY16E $0.89) | Conservative 2-yr case: +101.2% total (+50.6%/yr) | At 20.0x FY16E the 15% hurdle price $23 sits between the BASE and BULL cases; segment EBDA -57.3% and Natural Gas Pipelines -87.9% in Q4 2015, forward revenues -8% (no FY16 revenue guide in numbers, Q4 2015 revenues as reported); the energy transition is live and company-acknowledged; no dated evidence ties the multiple to it.",
+ "sources": [
+  {
+   "id": "KM6",
+   "published": "2016-02-16",
+   "filed": "2016-02-16 07:26 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. FY2015 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630716000072/kmi-2015x10k.htm",
+   "supports": "FY2015 annual history: the five-year review (revenues, Class P diluted EPS from continuing operations, diluted shares), the statements of income and cash flows, the segment note, the business description and the risk factors"
+  },
+  {
+   "id": "KM1",
+   "published": "2011-03-02",
+   "filed": "2011-03-02 14:00 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. FY2010 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630711000009/kmi10k2010.htm",
+   "supports": "the five-year review's 2006 revenues (the Predecessor Company's full year), the 2008-2010 statements of income and the 2008-2010 segment EBDA table (rule T)"
+  },
+  {
+   "id": "KM3",
+   "published": "2013-03-01",
+   "filed": "2013-03-01 08:16 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630713000015/kmi-20121231x10k.htm",
+   "supports": "FY2012 annual history: the five-year review (revenues, Class P diluted EPS from continuing operations, diluted Class P shares), the statements of income and cash flows, the segment note and the risk factors"
+  },
+  {
+   "id": "KM4",
+   "published": "2014-02-24",
+   "filed": "2014-02-21 17:55 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. FY2013 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630714000010/kmi-2013x10k.htm",
+   "supports": "FY2013 annual history: the five-year review (revenues, Class P diluted EPS from continuing operations, diluted Class P shares), the statements of income and cash flows, the segment note and the risk factors"
+  },
+  {
+   "id": "KM5",
+   "published": "2015-02-23",
+   "filed": "2015-02-23 06:07 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. FY2014 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630715000014/kmi-2014x10k.htm",
+   "supports": "FY2014 annual history: the five-year review (revenues, Class P diluted EPS from continuing operations, diluted shares), the statements of income and cash flows, the segment note, the business description and the risk factors"
+  },
+  {
+   "id": "KM44",
+   "published": "2016-01-21",
+   "filed": "2016-01-20 16:09 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. Q4 2015 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630716000067/kmiq420158-kexh991.htm",
+   "supports": "Q4 2015 print: the preliminary consolidated statement of income (revenues, operating income, income before income taxes, EPS, diluted shares, the declared dividend), the segment EBDA table and the dividend outlook"
+  },
+  {
+   "id": "KM2",
+   "published": "2012-02-23",
+   "filed": "2012-02-22 20:57 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000113501712000009/kmi10k2011.htm",
+   "supports": "FY2011 annual history: the five-year review (revenues 2008-2011), the statements of income (operating income, income from continuing operations before income taxes, income tax expense, 2009-2011), the segment EBDA table (2009-2011), the EPS note's period, the cash flow statement, Item 5 (the listing and dividends) and the risk factors"
+  },
+  {
+   "id": "A0",
+   "published": "2016-02-26",
+   "title": "Yahoo Finance daily prices, Kinder Morgan, Inc. Class P common stock (NYSE: KMI) and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/KMI/history",
+   "supports": "close $17.76 as traded on AS_OF, 52-week range, realized vol, beta, the 4.1-yr ex-FY11 ex-FY15 P/E distribution since the listing on 2011-02-11"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-16"
+}

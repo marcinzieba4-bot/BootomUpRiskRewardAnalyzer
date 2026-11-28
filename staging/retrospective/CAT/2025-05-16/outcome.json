@@ -1,0 +1,51 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "CAT",
+ "as_of": "2025-05-16",
+ "computed": "2026-11-12",
+ "data_source": "Yahoo Finance daily closes + dividends (CAT, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2025-11-14",
+   "price": 554.03,
+   "dividends": 3.02,
+   "total_return_pct": 57.5,
+   "benchmark_total_return_pct": 13.7,
+   "excess_pct": 43.9,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2026-05-15",
+   "price": 888.31,
+   "dividends": 6.04,
+   "total_return_pct": 152.9,
+   "benchmark_total_return_pct": 25.6,
+   "excess_pct": 127.3,
+   "hurdle_pct": 15.0
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2026-06-30",
+   "price": 1064.9
+  },
+  "low": {
+   "date": "2025-05-21",
+   "price": 342.51
+  },
+  "max_drawdown_pct": -48.0,
+  "return_to_avg_price_m12_m24_pct": 136.1
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "CYCLICAL",
+   "risk": 2
+  },
+  "today": {
+   "kind": "CYCLICAL",
+   "risk": 1,
+   "why": "Caterpillar: heavy equipment; record backlog at a cycle-peak multiple",
+   "reviewed": "2026-09-22"
+  }
+ }
+}

@@ -1,0 +1,152 @@
+
+════════════════════════════════════════════════════════════════════════
+  CMCSA  ·  Comcast Corporation  ·  $17.67  ·  RETROSPECTIVE as of 2010-06-25
+  Signal: ◉ BUY   Ratio B: 0.04x   Adj gap: +1.03  [UNDERVALUED]
+  Point-in-time: 8 sources, latest published 2010-06-25; latest print Q1 2010 (Apr 28)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2010E revenues, USD bn  →  FY2012E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2010E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Cable                     $    34.8  $  34.8  $  44.6      +0.0      +9.8
+    +3.8% revenues in FY09
+  Programming               $     1.5  $   1.5  $   2.0      +0.0      +0.5
+    +4.9% revenues in FY09
+  Corporate and Other       $     0.8  $   0.8  $   1.0      +0.0      +0.2
+    +16.1% revenues in FY09
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    37.1  $  37.1  $  47.6      +0.0     +10.5
+  FY2010E = FY09 $35.76B × (1 + 3.8%: no FY10 revenue guide in numbers, Q1 2010 revenue growth, applied to the year); split pro rata to FY09 segment revenues before eliminations of $(345)M (FY2009 10-K)
+  Q1 2010 (Apr 28): revenues $9.20B +3.8%; video subscribers -2.6%;
+  operating cash flow margin 38.74% (-10.3bp); operating margin 21.03% (+60.2bp);
+  capital expenditures 10.05% of revenues (-303.2bp); EPS $0.31 vs $0.27
+  video subscribers 23,477K against 24,104K a year earlier (-2.60%), as the release shows them; capital expenditures $925M against $1,160M
+  FY10: no guide in numbers yet
+
+  FY2010E EPS check:  $37.1B × 14.3% pre-tax × (1−28.9%) ÷ 2.837B  =  $1.33  (FY2010E: no EPS guide, FY09's $1.26 stands)
+  FY2012E BEAR check: $37.1B × 14.3% ÷ 2.659B  =  $1.42  (scenario $1.00)
+  FY2012E BULL check: $47.6B × 14.7% ÷ 2.659B  =  $1.87  (scenario $2.30)
+  Every 1pp of pre-tax margin ≈ $0.09 EPS ≈ $3/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Video subscriber growth            -10.0%   ≥-1.0%    ≥8.0%  ≥151.0%     -2.6%  ⚠ BEAR  █░░░
+  Revenue growth                      +0.0%   ≥10.0%   ≥19.0%  ≥126.0%     +3.8%  ⚠ BEAR  █░░░
+  Operating cash flow margin change  -510.0bp  ≥-230.0bp  ≥50.0bp  ≥220.0bp   -10.3bp  ◦ BASE  ██░░
+  Capital intensity change          +1270.0bp  ≤620.0bp  ≤-30.0bp  ≤-1150.0bp  -303.2bp  ▲ BULL  ███░
+  Operating margin change           -2440.0bp  ≥-1210.0bp  ≥10.0bp  ≥3370.0bp   +60.2bp  ▲ BULL  ███░
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.90 / 4.00
+  Market composite:   1.22 / 4.00  (back-solved from $18 + 15% hurdle)
+  SCA adjustment:    +0.15  ·  EPP-distance adj +0.20  →  Adj composite 2.25  →  Gap +1.03  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY09 revenues +3.9%, cable 94% of segment revenues, video subscribers -2.48% (video customers 23.6 million against 24.2 million (FY2009 10-K table)); Q1 operating cash flow margin 38.74% (-10.3bp)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 14.0x FY10E vs a 34.6x 6.5-yr median (19th percentile of its own range)  (+0.50 × 25%  =  +0.125)
+    -  Growth vs own history: no FY10 revenue guide in numbers, Q1 2010 revenue growth +3.8% vs a 10.8% 5-yr median  (-0.50 × 20%  =  -0.100)
+    +  FY09 year-end cash and current investments $0.72B, FY09 free cash flow $4.42B, dividend $0.38 a year, about 49.8 million shares repurchased in 2009 for $765 million (FY2009 10-K)  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Video subscriber growth              -2.6%    -10.0%   -7.4%  DBS and phone-company video take share
+  Revenue growth                       +3.8%     +0.0%   -3.8%  Housing, advertising and price pressure
+  Operating cash flow margin change   -10.3bp  -510.0bp  -499.7bp  Programming costs outrun price increases
+  Capital intensity change          -303.2bp  +1270.0bp  +1573.2bp  Boxes and network spend rise with churn
+  Operating margin change            +60.2bp  -2440.0bp  -2500.2bp  Depreciation and costs on slower sales
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$32  (model)  /  $12 (defined)
+  Bear probability (proxy model):  23.0%
+
+  KEY TRIGGER: video subscriber growth went from -2.6% (Q4 2009) to -2.6% (Q1 2010);
+  the bear case needs video losses that revenue growth (+3.8% now) and the
+  operating cash flow margin no longer absorb. DBS and phone-company video are the competition the 10-K names; pricing and
+  digital, Internet and phone growth are what must cover the video losses.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $1.26  (FY2010E: no EPS guide, FY09's $1.26 stands)
+  Min viable P/E at panic:          23x  [median of calendar-year P/E lows: 2004 63.0x, 2005 69.1x, 2006 29.0x, 2007 23.8x, 2008 14.4x, 2009 8.9x, 2010 12.1x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $29/share
+  Current $18 vs Updated EPP $29:  -39%  ✓ BELOW panic floor — deep-value zone
+  Bear $12 vs Updated EPP $29:  -59%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Video subscriber growth                     -1.0       +1.6   BASE floor (vs -3 now)
+  Revenue growth                              10.0       +6.2   BASE floor (vs +4 now)
+  Operating cash flow margin change          -230.0     -219.7   BASE floor (vs -10 now)
+  Capital intensity change                   620.0     +923.2   BASE floor (vs -303 now)
+  Operating margin change                  -1210.0    -1270.2   BASE floor (vs +60 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $1.26 × (1+5.0%)² = $1.39
+  At 34x P/E (conservative):  $47/share
+  + Cumul. dividends (2yr):  +$0.78/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $47  (▲30 from $18)
+  Conservative total return:  +172% over 2yr  = +86%/yr
+
+  At 14.0x the multiple is already near its 34x median, so the conservative
+  case is a growth question: breakeven at 34x needs FY2012E EPS of $0.50,
+  i.e. -37.2%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $13.04  –  $20.56  (at 62th pct of range)
+  Annual dividend:      $0.38/share  (yield 2.2%)
+  Realized vol (1yr):   30% annualized
+  Beta vs broad market: 1.02
+  1-sigma range (1yr):  $12  –  $23  ($18 ± 30%)
+  2-sigma range (1yr):  $7  –  $28
+  ────────────────────────────────────────────────────────────
+  Bear $12 requires:  ~1.1σ price move  (within normal vol range)
+  The largest U.S. cable operator with a 1.0 beta: the stock is +33% off its July
+  low while video subscriber growth went from -2.6% (Q4 2009) to -2.6% (Q1 2010).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        1.00  12.0x  $     12    23.0%     72.2%   -49.3pp  EPS -10.7%/yr (worst year FY04-FY09, capped at 0%); P/E to its 10th pct
+  BASE        1.44  34.6x  $     50    57.5%     20.7%   +36.8pp  EPS +7.0%/yr (Q1 revenues + margin + buyback); P/E at its 6.5-yr median
+  BULL        2.30  68.5x  $    158    16.5%      5.9%   +10.5pp  EPS +35.1%/yr (FY04-FY09 CAGR); P/E holds its 75th pct
+  XBULL       3.73  82.0x  $    306     3.1%      1.1%    +2.0pp  EPS +72.0%/yr (best 2-yr run FY04-FY09); P/E at its 90th pct
+
+  Proxy EV (2yr): $67  /  Market EV: $32  /  Current: $18
+  Conservative EV (2yr, ④): $47 + $0.78 divs = $48 total value
+  Downside (→ Bear $12): 32.1%   Upside (→ Bull $158): 794.2%   Ratio B 0.04x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $18 the market needs $23 in two years —
+  at or below the BASE case. That is a market composite of 1.22 against a model
+  read of 2.25: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.04x     -39%    +1.03  UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)    -0.00x     -39%    +1.03  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.11x     -39%    +0.90  UNDERVALUED / BUY
+  Scenario EPS +1.5pp/yr                          0.04x     -39%    +1.03  UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.04x     -39%    +1.03  UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.04x     -39%    +1.33  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.04x     -46%    +1.03  UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.04x     -39%    +1.03  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 2010 print (late July) — the next read on video subscribers (-2.6% now) and the guide
+  (2) Operating cash flow margin — -10.3bp in Q1 2010: programming costs against pricing, what must hold if subscribers do not
+  (3) A FY10 revenue guide in numbers — none yet
+  (4) Capital intensity — capital expenditures 10.1% of revenues in Q1 2010 (-303.2bp): set-top boxes and network against free cash flow
+  (5) Capital return at 14x — In the first quarter of 2010, 19.2 million common shares repurchased for $300 million: management's own read of the multiple
+  ◉ BUY  |  EPP floor $29  |  ADD below ~$42  |  TRIM above $158
+════════════════════════════════════════════════════════════════════════
+

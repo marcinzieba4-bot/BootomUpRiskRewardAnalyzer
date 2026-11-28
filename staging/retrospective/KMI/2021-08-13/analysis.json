@@ -1,0 +1,252 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "KMI",
+ "company": "Kinder Morgan, Inc.",
+ "as_of": "2021-08-13",
+ "price_date": "2021-08-13",
+ "price": 17.21,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); pipeline signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "These long-term contracts are typically structured with a fixed fee reserving the right to transport or store natural gas and specify that we receive the majority of our fee for making the capacity available, whether or not the customer actually chooses to utilize the capacity. Risk factor: Sharp declines in the prices of crude oil, NGL or natural gas (such as we experienced in the first half of 2020) or a prolonged unfavorable price environment, may result in a commensurate reduction in our revenues, income and cash flows from our businesses that produce, process, or purchase and sell crude oil, NGL, or natural gas, and could have a material adverse effect on the carrying value (which includes assigned goodwill) of our CO2 business segment’s proved reserves, certain assets in certain midstream businesses within our Natural Gas Pipelines business segment, and certain assets within our Products Pipelines business segment.; ENERGY_TRANSITION is live (from 2015-12-12): the CO2 segment owns working interests in oil fields and the greenhouse gas risk factor puts the theme on the watch list, company-acknowledged, with no dated evidence that the market prices it for Kinder Morgan",
+  "theme_watch": [
+   {
+    "theme": "ENERGY_TRANSITION",
+    "status": "live, company-acknowledged; no market read",
+    "reason": "Live: Kinder Morgan's own FY2020 10-K says 'We also hold ownership interests in several oil-producing fields and own a crude oil pipeline, all located in the Permian Basin region of West Texas.' and, of greenhouse gas laws and regulations, 'Such laws or regulations could also lead to reduced demand for hydrocarbon products that are deemed to contribute to GHGs, or restrictions on their use, which in turn could adversely affect demand for our products and services.' The stock trades at 22.9x FY21E — a discount to its own history. Re-file as DISRUPTION_EXPOSED (ENERGY_TRANSITION) only if dated evidence shows the market pricing decarbonisation of Kinder Morgan's oil reserves and the hydrocarbons its pipelines carry specifically."
+   }
+  ],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "These long-term contracts are typically structured with a fixed fee reserving the right to transport or store natural gas and specify that we receive the majority of our fee for making the capacity available, whether or not the customer actually chooses to utilize the capacity. Risk factor: Sharp declines in the prices of crude oil, NGL or natural gas (such as we experienced in the first half of 2020) or a prolonged unfavorable price environment, may result in a commensurate reduction in our revenues, income and cash flows from our businesses that produce, process, or purchase and sell crude oil, NGL, or natural gas, and could have a material adverse effect on the carrying value (which includes assigned goodwill) of our CO2 business segment’s proved reserves, certain assets in certain midstream businesses within our Natural Gas Pipelines business segment, and certain assets within our Products Pipelines business segment.; ENERGY_TRANSITION is live (from 2015-12-12): the CO2 segment owns working interests in oil fields and the greenhouse gas risk factor puts the theme on the watch list, company-acknowledged, with no dated evidence that the market prices it for Kinder Morgan. durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.39x; -8% to EPP floor; model-vs-market gap +0.32; conservative 2yr +68%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.39,
+  "ratio_b_fmt": "0.39x",
+  "epp": 18.77,
+  "epp_gap_pct": -8.3,
+  "epp_adj": 0.2,
+  "proxy_composite": 1.45,
+  "sca": 0.33,
+  "adj_composite": 1.98,
+  "market_composite": 1.66,
+  "adj_gap": 0.32,
+  "valuation": "MODESTLY UNDERVALUED",
+  "cons_return_2yr": 68.1,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.45,
+    "pe": 20.8,
+    "price": 9,
+    "desc": "EPS -22.6%/yr (worst year FY12-FY19 ex-FY15 ex-FY16 ex-FY17, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 0.92,
+    "pe": 30.9,
+    "price": 28,
+    "desc": "EPS +10.9%/yr (Q2 revenues + margin + buyback); P/E at its 9.6-yr ex-FY11 ex-FY15 ex-FY16 ex-FY17 ex-FY20 median"
+   },
+   "BULL": {
+    "eps": 0.92,
+    "pe": 41.4,
+    "price": 38,
+    "desc": "EPS +10.9%/yr (FY12-FY19 ex-FY15 ex-FY16 ex-FY17 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 1.19,
+    "pe": 60.9,
+    "price": 72,
+    "desc": "EPS +26.1%/yr (best 2-yr run FY12-FY19 ex-FY15 ex-FY16 ex-FY17, at least BULL); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.39,
+   "epp_gap_pct": -8.3,
+   "adj_gap": 0.32,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 68.1,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.19,
+   "epp_gap_pct": -8.3,
+   "adj_gap": 0.59,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 68.1,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 0.76,
+   "epp_gap_pct": -8.3,
+   "adj_gap": -0.22,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 68.1,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.33,
+   "epp_gap_pct": -8.3,
+   "adj_gap": 0.38,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 68.1,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.41,
+   "epp_gap_pct": -8.3,
+   "adj_gap": 0.31,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 68.1,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.39,
+   "epp_gap_pct": -8.3,
+   "adj_gap": 0.62,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 68.1,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.39,
+   "epp_gap_pct": -18.2,
+   "adj_gap": 0.32,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 68.1,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.39,
+   "epp_gap_pct": -8.3,
+   "adj_gap": 0.42,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 68.1,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "KMI (retrospective, 2021-08-13) ◉ BUY — Ratio B 0.39x (47.7% downside to Bear $9 / +120.8% upside to Bull $38) | Adj composite 1.98 vs market 1.66: gap +0.32 [MODESTLY UNDERVALUED] | -8% above the EPP floor $19 (25x FY21E $0.75) | Conservative 2-yr case: +68.1% total (+34.1%/yr) | At 22.9x FY21E the 15% hurdle price $23 sits at or below the BASE case; segment EBDA -84.8% and Natural Gas Pipelines -18900.0% in Q2 2021, forward revenues +23% (no FY21 revenue guide in numbers, Q2 2021 revenues as reported); the energy transition is live and company-acknowledged; no dated evidence ties the multiple to it.",
+ "sources": [
+  {
+   "id": "KM62",
+   "published": "2021-02-08",
+   "filed": "2021-02-05 17:06 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. FY2020 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630721000022/kmi-20201231.htm",
+   "supports": "FY2020 annual history: the five-year review (revenues, Class P diluted EPS from continuing operations, diluted shares), the statements of income and cash flows, the segment note, the dividend table, the business description and the risk factors"
+  },
+  {
+   "id": "KM6",
+   "published": "2016-02-16",
+   "filed": "2016-02-16 07:26 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. FY2015 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630716000072/kmi-2015x10k.htm",
+   "supports": "FY2015 annual history: the five-year review (revenues, Class P diluted EPS from continuing operations, diluted shares), the statements of income and cash flows, the segment note, the business description and the risk factors"
+  },
+  {
+   "id": "KM7",
+   "published": "2017-02-13",
+   "filed": "2017-02-10 16:47 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. FY2016 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630717000008/kmi-2016x10k.htm",
+   "supports": "FY2016 annual history: the five-year review (revenues, Class P diluted EPS from continuing operations, diluted shares), the statements of income and cash flows, the segment note, the business description and the risk factors"
+  },
+  {
+   "id": "KM8",
+   "published": "2018-02-12",
+   "filed": "2018-02-09 17:10 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. FY2017 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630718000010/kmi-2017x10k.htm",
+   "supports": "FY2017 annual history: the five-year review (revenues, Class P diluted EPS from continuing operations, diluted shares), the statements of income and cash flows, the segment note, the business description and the risk factors"
+  },
+  {
+   "id": "KM60",
+   "published": "2019-02-11",
+   "filed": "2019-02-08 17:34 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. FY2018 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630719000033/kmi-2018x10k.htm",
+   "supports": "FY2018 annual history: the five-year review (revenues, Class P diluted EPS from continuing operations, diluted shares), the statements of income and cash flows, the segment note, the dividend table, the business description and the risk factors"
+  },
+  {
+   "id": "KM61",
+   "published": "2020-02-12",
+   "filed": "2020-02-11 19:42 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. FY2019 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630720000022/kmi-2019x10k.htm",
+   "supports": "FY2019 annual history: the five-year review (revenues, Class P diluted EPS from continuing operations, diluted shares), the statements of income and cash flows, the segment note, the dividend table, the business description and the risk factors"
+  },
+  {
+   "id": "KM72",
+   "published": "2021-01-21",
+   "filed": "2021-01-20 16:13 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. Q4 2020 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630721000002/kmi2020q48-kex991.htm",
+   "supports": "Q4 2020 print: the preliminary consolidated statement of income (revenues, operating income, income before income taxes, EPS, diluted shares, the declared dividend), the supplemental information's GAAP segment EBDA and the outlook and the year's certain items"
+  },
+  {
+   "id": "KM73",
+   "published": "2021-04-22",
+   "filed": "2021-04-21 16:12 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. Q1 2021 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630721000030/kmi2021q18-kex991.htm",
+   "supports": "Q1 2021 print: the preliminary consolidated statement of income (revenues, operating income, income before income taxes, EPS, diluted shares, the declared dividend), the supplemental information's GAAP segment EBDA and the outlook"
+  },
+  {
+   "id": "KM74",
+   "published": "2021-07-22",
+   "filed": "2021-07-21 16:12 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. Q2 2021 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000150630721000056/kmi2021q28-kex991.htm",
+   "supports": "Q2 2021 print: the preliminary consolidated statement of income (revenues, operating income, income before income taxes, EPS, diluted shares, the declared dividend), the supplemental information's GAAP segment EBDA and the outlook"
+  },
+  {
+   "id": "KM2",
+   "published": "2012-02-23",
+   "filed": "2012-02-22 20:57 ET (EDGAR acceptance)",
+   "title": "Kinder Morgan, Inc. FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1506307/000113501712000009/kmi10k2011.htm",
+   "supports": "FY2011 annual history: the five-year review (revenues 2008-2011), the statements of income (operating income, income from continuing operations before income taxes, income tax expense, 2009-2011), the segment EBDA table (2009-2011), the EPS note's period, the cash flow statement, Item 5 (the listing and dividends) and the risk factors"
+  },
+  {
+   "id": "A0",
+   "published": "2021-08-13",
+   "title": "Yahoo Finance daily prices, Kinder Morgan, Inc. Class P common stock (NYSE: KMI) and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/KMI/history",
+   "supports": "close $17.21 as traded on AS_OF, 52-week range, realized vol, beta, the 9.6-yr ex-FY11 ex-FY15 ex-FY16 ex-FY17 ex-FY20 P/E distribution since the listing on 2011-02-11"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-16"
+}

@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "V",
+ "as_of": "2018-07-20",
+ "computed": "2026-11-20",
+ "data_source": "Yahoo Finance daily closes + dividends (V, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2019-01-18",
+   "price": 138.5,
+   "dividends": 0.46,
+   "total_return_pct": -1.4,
+   "benchmark_total_return_pct": -3.7,
+   "excess_pct": 2.3,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2019-07-19",
+   "price": 179.24,
+   "dividends": 0.96,
+   "total_return_pct": 27.8,
+   "benchmark_total_return_pct": 8.2,
+   "excess_pct": 19.6,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2020-07-20",
+   "price": 198.47,
+   "dividends": 2.11,
+   "total_return_pct": 42.3,
+   "benchmark_total_return_pct": 19.9,
+   "excess_pct": 22.3,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2021-07-20",
+   "price": 242.7,
+   "dividends": 3.37,
+   "total_return_pct": 74.5,
+   "benchmark_total_return_pct": 60.1,
+   "excess_pct": 14.4,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2020-02-19",
+   "price": 213.31
+  },
+  "low": {
+   "date": "2018-12-24",
+   "price": 121.73
+  },
+  "max_drawdown_pct": -36.4,
+  "return_to_avg_price_m12_m24_pct": 29.9
+ },
+ "scenario_landing_2y": "XBULL",
+ "call_check_2y": {
+  "expectation": "RICH: should miss the hurdle and lag the benchmark",
+  "hit": false
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "DURABLE",
+   "risk": 2
+  },
+  "today": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Payments network duopoly; DOJ debit suit is the overhang",
+   "reviewed": "2026-09-22"
+  }
+ }
+}

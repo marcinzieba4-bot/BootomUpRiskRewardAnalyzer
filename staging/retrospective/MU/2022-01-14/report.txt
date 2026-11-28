@@ -1,0 +1,155 @@
+
+════════════════════════════════════════════════════════════════════════
+  MU  ·  Micron Technology, Inc.  ·  $97.36  ·  RETROSPECTIVE as of 2022-01-14
+  Signal: ✕ AVOID   Ratio B: 13.26x   Adj gap: -0.47  [MODESTLY OVERVALUED]
+  Point-in-time: 15 sources, latest published 2022-01-14; latest print Q1 FY22 (Dec 20)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2022E revenue, USD bn  →  FY2024E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2022E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  CNBU                          $ 14.77  $14.77  $19.34    +0.00    +4.57
+    +33.7% revenue in FY21
+  MBU                           $  8.67  $ 8.67  $11.35    +0.00    +2.68
+    +26.3% revenue in FY21
+  EBU                           $  5.06  $ 5.06  $ 6.63    +0.00    +1.57
+    +52.6% revenue in FY21
+  SBU                           $  4.78  $ 4.78  $ 6.26    +0.00    +1.48
+    +5.5% revenue in FY21
+  All Other                     $  0.05  $ 0.05  $ 0.06    +0.00    +0.01
+    +60.0% revenue in FY21
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $ 33.33  $33.33  $43.64    +0.00   +10.31
+  FY2022E = FY21 $27.705B × (1 + 20.3%: the Q2 FY22 revenue guide (Q1 FY22 results (8-K ex.99.1, Business Outlook)), YoY, applied to the year (no FY22 revenue guide)); split pro rata to FY21 segment revenue (FY2021 10-K)
+  Q1 FY22 (Dec 20): revenue $7.687B +33.2% YoY (-7.1% QoQ); inventories -12.6%; R&D + SG&A +12.8%;
+  gross margin 46.38% (+1630.6bp); operating margin 34.23% (+1922.6bp); EPS $2.04 vs $0.71
+  Revenue: revenue $7,687M vs $5,773M a year earlier, $8,274M the quarter before; inventories $4,827M (2021-12-02) vs $5,521M a year earlier (Q1 FY21 10-Q); GAAP diluted EPS $2.04 vs $0.71; diluted shares 1130.0M; inventories since Q2 FY21 exclude spare parts, which the year-ago 10-Q's figure includes, used as published (the Q2 FY21 10-Q: 'Beginning in the second quarter of 2021, we changed the classification of spare parts for equipment to better align with the manner in which they are used in operations.')
+  Q2 FY22 outlook (Q1 FY22 results (8-K ex.99.1, Business Outlook)): revenue $7,500.0M ±$200.0M, i.e. $7,300.0M-$7,700.0M ('Revenue | $7.5 billion ± $200 million | $7.5 billion ± $200 million') against Q2 FY21's $6,236.0M: +17.1% to +23.5% YoY; display only: GAAP (non-GAAP) gross margin 45.0% ± 1% (46.0% ± 1%), operating expenses $1,058 million ± $25 million ($975 million ± $25 million), diluted EPS $1.83 ± $0.10 ($1.95 ± $0.10); no fiscal-year revenue, EPS or margin guide
+
+  FY2022E EPS check:  $33.330B × 22.4% pre-tax × (1−6.3%) ÷ 1.130B  =  $6.20  (FY2022E: no EPS guide in numbers, FY21's $5.14 stands)
+  FY2024E BEAR check: $33.330B × 22.4% ÷ 1.165B  =  $6.01  (scenario $0.95)
+  FY2024E BULL check: $43.640B × 22.8% ÷ 1.165B  =  $8.01  (scenario $7.25)
+  Every 1pp of pre-tax margin ≈ $0.276 EPS ≈ $2.57/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Revenue growth                        -86.0%   ≥-38.0%     ≥9.0%   ≥147.0%    +33.2%  ▲ BULL  ███░
+  Gross margin change                 -9420.0bp  ≥-4820.0bp  ≥-230.0bp  ≥3050.0bp  +1630.6bp  ▲ BULL  ███░
+  Opex growth less revenue            +109.0pp   ≤55.0pp    ≤2.0pp  ≤-102.0pp   -20.4pp  ▲ BULL  ███░
+  Inventory growth less revenue        +97.0pp   ≤51.0pp    ≤5.0pp  ≤-43.0pp   -45.7pp  ★ XBULL  ████
+  Operating margin change             -12480.0bp  ≥-6240.0bp    ≥0.0bp  ≥4400.0bp  +1922.6bp  ▲ BULL  ███░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    3.00 / 4.00
+  Market composite:   3.27 / 4.00  (back-solved from $97.36 + 15% hurdle)
+  SCA adjustment:    +0.10  ·  EPP-distance adj -0.30  →  Adj composite 2.80  →  Gap -0.47  [MODESTLY OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY21 net sales +29.3%, gross margin 37.6%; Q1 gross margin 46.38% (+1631bp YoY)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 18.9x FY22E vs a 9.3x 8.4-yr ex-FY12 ex-FY13 ex-FY16 median (89th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: Q2 FY22 revenue guide (Q1 FY22 results (8-K ex.99.1, Business Outlook)) +17.1-23.5% vs a 10.2% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  Cash and short-term investments $9.580B, long-term debt $6,904M and current debt $118M (Q1 FY22), FY21 free cash flow $2.438B (net cash provided by operating activities $12,468M less expenditures for property, plant, and equipment $10,030M), dividend $0.40 a year  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Revenue growth                        +33.2%    -86.0%  -119.2%  Oversupply and falling selling prices…
+  Gross margin change                 +1630.6bp  -9420.0bp  -11050.6bp  Selling prices fall faster than cost …
+  Opex growth less revenue             -20.4pp  +109.0pp  +129.4pp  R&D and SG&A do not come down with re…
+  Inventory growth less revenue        -45.7pp   +97.0pp  +142.7pp  Inventory builds ahead of demand: wri…
+  Operating margin change             +1922.6bp  -12480.0bp  -14402.6bp  Operating leverage works in reverse
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$25.02  (model)  /  $3.99 (defined)
+  Bear probability (proxy model):  4.6%
+
+  KEY TRIGGER: revenue went from +36.6% (Q4 FY21) to +33.2% YoY (Q1 FY22), -7.1% on the quarter before;
+  the bear case needs a downturn in gross margin (+1630.6bp now)
+  and inventories (-45.7pp against revenue) giving way. A memory downturn shows up in average selling prices and inventories
+  first; the bear needs it in gross margin as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $5.14  (FY2022E: no EPS guide in numbers, FY21's $5.14 stands)
+  Min viable P/E at panic:          5x  [median of calendar-year P/E lows: 2013 5.3x, 2014 8.1x, 2015 5.8x, 2016 3.8x, 2017 2.8x, 2018 3.4x, 2019 5.6x, 2020 8.7x, 2021 12.9x, 2022 18.3x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $25.70/share
+  Current $97.36 vs Updated EPP $25.70:  +279%  ⚠ far above floor — large drawdown room
+  Bear $3.99 vs Updated EPP $25.70:  -84%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.30 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Revenue growth                               -38.0      -71.2   BASE floor (vs +33 now)
+  Gross margin change                        -4820.0    -6450.6   BASE floor (vs +1631 now)
+  Opex growth less revenue                      55.0      +75.4   BASE floor (vs -20 now)
+  Inventory growth less revenue                 51.0      +96.7   BASE floor (vs -46 now)
+  Operating margin change                    -6240.0    -8162.6   BASE floor (vs +1923 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $5.14 × (1+16.7%)² = $7.01
+  At 9x P/E (conservative):  $63.05/share
+  + Cumul. dividends (2yr):  +$0.82/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $63.05  (▼34.31 from $97.36)
+  Conservative total return:  -34% over 2yr  = -17%/yr
+
+  16.7% EPS growth is what is left once the premium multiple (18.9x)
+  mean-reverts to 9x. Breakeven at 9x needs FY2024E EPS of $10.73,
+  i.e. 44.5%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $65.67  –  $98.45  (at 97th pct of range)
+  Annual dividend:      $0.40/share  (yield 0.4%)
+  Realized vol:         40% annualized (1-yr daily log returns)
+  Beta vs broad market: 1.70
+  1-sigma range (1yr):  $58.90  –  $135.82  ($97.36 ± 40%)
+  2-sigma range (1yr):  $20.45  –  $174.27
+  ────────────────────────────────────────────────────────────
+  Bear $3.99 requires:  ~2.4σ price move  (unusual — requires fundamental break)
+  A memory maker whose selling prices follow industry supply: the stock is +47% off its October
+  low (52 weeks) while revenue went from +36.6% (Q4 FY21) to +33.2% YoY (Q1 FY22), -7.1% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        0.95    4.2x  $   3.99     4.6%      3.4%    +1.2pp  EPS -57.0%/yr (worst year FY14-FY21 ex-FY16, capped at 0%); P/E to its 10th pct
+  BASE        7.25    9.3x  $  67.43    15.9%     11.8%    +4.1pp  EPS +18.7%/yr (Q2 FY22 guide YoY + margin + buyback); P/E at its 8.4-yr ex-FY12 ex-FY13 ex-FY16 median
+  BULL        7.25   14.4x  $ 104.40    55.5%     41.0%   +14.4pp  EPS +18.7%/yr (FY14-FY21 ex-FY16 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL       9.18   19.3x  $ 177.17    24.1%     43.9%   -19.8pp  EPS +33.6%/yr (best 2-yr run FY14-FY21 ex-FY16, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $111.49  /  Market EV: $128.59  /  Current: $97.36
+  Conservative EV (2yr, ④): $63.05 + $0.82 divs = $63.87 total value
+  Downside (→ Bear $3.99): 95.9%   Upside (→ Bull $104.40): 7.2%   Ratio B 13.26x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $97.36 the market needs $128.76 in two years —
+  above the BULL case. That is a market composite of 3.27 against a model
+  read of 2.80: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                      13.26x    +279%    -0.47  MODESTLY OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     2.15x    +279%    +0.23  MODESTLY UNDERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx    +279%    -0.97  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          9.14x    +279%    -0.42  MODESTLY OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                         23.79x    +279%    -0.53  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)            13.26x    +279%    -0.17  FAIRLY VALUED / AVOID
+  EPP P/E +3 turns (softer floor)                13.26x    +137%    -0.37  MODESTLY OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                   13.26x    +279%    -0.31  MODESTLY OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 FY22 print (the quarter ends in early March) — revenue against the Q2 FY22 revenue guide (Q1 FY22 results (8-K ex.99.1, Business Outlook)): +17.1-23.5% YoY
+  (2) Gross margin — +1630.6bp in Q1 FY22: selling prices against cost per bit, what must hold if revenue does not
+  (3) The Q2 FY22 guide — revenue $7,500.0M ±$200.0M, i.e. $7,300.0M-$7,700.0M (+17.1% to +23.5% YoY): Micron guides one quarter at a time, in revenue
+  (4) Inventories — -12.6% against revenue +33.2% in Q1 FY22 (-45.7pp): write-downs follow if selling prices fall below cost
+  (5) Capital structure at 19x — 'On December 17, 2021, Micron’s Board of Directors declared a quarterly dividend of $0.10 per share, payable in cash on January 18, 2022, to shareholders of record as of the close of business on January 3, 2022.' (Q1 FY22 results (8-K ex.99.1))
+  ✕ AVOID  |  EPP floor $25.70  |  ADD below ~$57.32  |  TRIM above $104.40
+════════════════════════════════════════════════════════════════════════
+

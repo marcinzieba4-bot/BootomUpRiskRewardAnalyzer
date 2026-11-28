@@ -1,0 +1,304 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "NVDA",
+ "company": "NVIDIA Corporation",
+ "as_of": "2016-12-23",
+ "price_date": "2016-12-23",
+ "price": 109.78,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); semiconductor signals with NVIDIA's rule-T thresholds; the listing rule (NVDA listed 1999-01-22)",
+ "pit_profile": {
+  "kind": "CYCLICAL",
+  "risk": 2,
+  "why": "'NVIDIA is the world leader in visual computing. It enables us to open up new avenues of exploration, facilitate creativity and discovery, and power breakthroughs in new areas like artificial intelligence, virtual reality and autonomous cars.' 'The market for our products is intensely competitive and is characterized by rapid technological change, evolving industry standards and declining average selling prices.' Its current competitors include 'suppliers of discrete and integrated GPUs, including supercomputers and chipsets that incorporate 3D graphics functionality as part of their existing solutions, such as Advanced Micro Devices, or AMD, and Intel Corporation, or Intel' (FY2016 10-K); CYCLICAL kept although the 10-K no longer calls the business cyclical (the BKR FY2015 rule; the class label only); the 10-K names artificial intelligence and autonomous cars as markets NVIDIA serves, not as substitutes for its products, so no theme in taxonomy_eras.json applies (the FY2013 10-K's cloud reading), and GPUs integrated into other processors stay here (the PEP obesity rule)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "TOO MUCH CYCLE RISK",
+  "quality_label": "✕ TOO MUCH CYCLE RISK",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "CYCLICAL",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "'NVIDIA is the world leader in visual computing. It enables us to open up new avenues of exploration, facilitate creativity and discovery, and power breakthroughs in new areas like artificial intelligence, virtual reality and autonomous cars.' 'The market for our products is intensely competitive and is characterized by rapid technological change, evolving industry standards and declining average selling prices.' Its current competitors include 'suppliers of discrete and integrated GPUs, including supercomputers and chipsets that incorporate 3D graphics functionality as part of their existing solutions, such as Advanced Micro Devices, or AMD, and Intel Corporation, or Intel' (FY2016 10-K); CYCLICAL kept although the 10-K no longer calls the business cyclical (the BKR FY2015 rule; the class label only); the 10-K names artificial intelligence and autonomous cars as markets NVIDIA serves, not as substitutes for its products, so no theme in taxonomy_eras.json applies (the FY2013 10-K's cloud reading), and GPUs integrated into other processors stay here (the PEP obesity rule). cyclical (obsolescence risk 2/5); price rich; +578% to EPP floor; model-vs-market gap -1.00; conservative 2yr -58%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": Infinity,
+  "ratio_b_fmt": "infx",
+  "epp": 16.2,
+  "epp_gap_pct": 577.7,
+  "epp_adj": -0.3,
+  "proxy_composite": 3.0,
+  "sca": 0.1,
+  "adj_composite": 2.8,
+  "market_composite": 3.8,
+  "adj_gap": -1.0,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": -57.9,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.73,
+    "pe": 14.7,
+    "price": 10.73,
+    "desc": "EPS -17.8%/yr (worst year FY07-FY16 ex-FY09 ex-FY10, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 2.44,
+    "pe": 19.9,
+    "price": 48.56,
+    "desc": "EPS +50.3%/yr (Q4 FY17 guide YoY + margin + buyback); P/E at its 10-yr ex-FY09 ex-FY10 median"
+   },
+   "BULL": {
+    "eps": 2.44,
+    "pe": 26.6,
+    "price": 64.9,
+    "desc": "EPS +50.3%/yr (FY07-FY16 ex-FY09 ex-FY10 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 2.44,
+    "pe": 39.6,
+    "price": 96.62,
+    "desc": "EPS +50.3%/yr (best 2-yr run FY07-FY16 ex-FY09 ex-FY10, at least BULL); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 577.7,
+   "adj_gap": -1.0,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -57.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 577.7,
+   "adj_gap": -0.38,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -57.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 577.7,
+   "adj_gap": -1.0,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -57.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 577.7,
+   "adj_gap": -0.97,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -57.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 577.7,
+   "adj_gap": -0.97,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -57.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 577.7,
+   "adj_gap": -0.7,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -57.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 464.7,
+   "adj_gap": -1.0,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -57.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 577.7,
+   "adj_gap": -1.0,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -57.9,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "RICH"
+ ],
+ "summary": "NVDA (retrospective, 2016-12-23) ✕ AVOID — Ratio B infx (90.2% downside to Bear $10.73 / -40.9% upside to Bull $64.90) | Adj composite 2.80 vs market 3.80: gap -1.00 [OVERVALUED] | +578% above the EPP floor $16.20 (15x FY17E $1.08) | Conservative 2-yr case: -57.9% total (-28.9%/yr) | At 101.6x FY17E the 15% hurdle price $145.18 sits above the BULL case; revenue +53.6% YoY in Q3 FY17, forward revenues +46.9-52.9% (Q4 FY17 revenue guide (Q3 FY17 release)); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "NV93",
+   "published": "2016-03-17",
+   "filed": "accepted 2016-03-16 18:07 ET, after the close; dated the next trading day",
+   "title": "NVIDIA FY2016 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581016000205/nvda-2016x10k.htm",
+   "supports": "selected financial data fiscal 2012-2016; statements, segments, cash flows, risk factors, the dividend (the FY2016 history vintage)"
+  },
+  {
+   "id": "NV40",
+   "published": "2011-03-17",
+   "filed": "accepted 2011-03-16 16:33 ET, after the close; dated the next trading day",
+   "title": "NVIDIA FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581011000015/fy2011form10k.htm",
+   "supports": "selected financial data fiscal 2007-2011; statements, segments, cash flows, risk factors (the FY2011 history vintage)"
+  },
+  {
+   "id": "NV41",
+   "published": "2012-03-14",
+   "filed": "accepted 2012-03-13 16:56 ET, after the close; dated the next trading day",
+   "title": "NVIDIA FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581012000013/nvda-2012x10k.htm",
+   "supports": "selected financial data fiscal 2008-2012; statements, segments, cash flows, risk factors (the FY2012 history vintage)"
+  },
+  {
+   "id": "NV42",
+   "published": "2013-03-13",
+   "filed": "accepted 2013-03-12 17:03 ET, after the close; dated the next trading day",
+   "title": "NVIDIA FY2013 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581013000008/nvda-2013x10k.htm",
+   "supports": "selected financial data fiscal 2009-2013; statements, segments, cash flows, risk factors, the dividend (the FY2013 history vintage)"
+  },
+  {
+   "id": "NV73",
+   "published": "2014-03-13",
+   "filed": "accepted 2014-03-12 19:18 ET, after the close; dated the next trading day",
+   "title": "NVIDIA FY2014 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581014000030/nvda-2014x10k.htm",
+   "supports": "selected financial data fiscal 2010-2014; statements, segments, cash flows, risk factors, the dividend (the FY2014 history vintage)"
+  },
+  {
+   "id": "NV85",
+   "published": "2015-03-12",
+   "filed": "accepted 2015-03-11 19:48 ET, after the close; dated the next trading day",
+   "title": "NVIDIA FY2015 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581015000036/nvda-2015x10k.htm",
+   "supports": "selected financial data fiscal 2011-2015; statements, segments, cash flows, risk factors, the dividend (the FY2015 history vintage)"
+  },
+  {
+   "id": "NV1",
+   "published": "1999-04-29",
+   "filed": "filed 1999-04-29 (EDGAR gives the filing date only)",
+   "title": "NVIDIA FY1999 10-K405",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000092962499000772/0000929624-99-000772.txt",
+   "supports": "Item 5: 'Public trading of our stock began on January 22, 1999.' (the listing)"
+  },
+  {
+   "id": "NV92",
+   "published": "2016-02-18",
+   "filed": "accepted 2016-02-17 16:28 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q4 FY16 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581016000189/q416pr.htm",
+   "supports": "Q4 FY16 and FY2016 statements and balance sheet; the Q1 FY17 outlook"
+  },
+  {
+   "id": "NV90",
+   "published": "2015-11-06",
+   "filed": "accepted 2015-11-05 16:25 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q3 FY16 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581015000165/q316pr.htm",
+   "supports": "Q3 FY16 statements and balance sheet; the Q4 FY16 outlook; the dividend increase"
+  },
+  {
+   "id": "NV94",
+   "published": "2016-05-13",
+   "filed": "accepted 2016-05-12 16:39 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q1 FY17 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581016000243/q117pr.htm",
+   "supports": "Q1 FY17 statements and balance sheet; the Q2 FY17 outlook"
+  },
+  {
+   "id": "NV87",
+   "published": "2015-05-21",
+   "filed": "accepted 2015-05-20 16:55 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q1 FY16 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581015000097/nvda2016q110q.htm",
+   "supports": "inventories at April 26, 2015 (the year-ago quarter of Q1 FY17)"
+  },
+  {
+   "id": "NV96",
+   "published": "2016-08-12",
+   "filed": "accepted 2016-08-11 16:22 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q2 FY17 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581016000292/q2fy17pr.htm",
+   "supports": "Q2 FY17 statements and balance sheet; the Q3 FY17 outlook"
+  },
+  {
+   "id": "NV89",
+   "published": "2015-08-20",
+   "filed": "accepted 2015-08-19 16:41 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q2 FY16 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581015000143/nvda2016q210q.htm",
+   "supports": "inventories at July 26, 2015 (the year-ago quarter of Q2 FY17)"
+  },
+  {
+   "id": "NV98",
+   "published": "2016-11-11",
+   "filed": "accepted 2016-11-10 16:21 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q3 FY17 results (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581016000343/q3fy17pr.htm",
+   "supports": "Q3 FY17 statements and balance sheet; the Q4 FY17 outlook; the dividend increase"
+  },
+  {
+   "id": "NV91",
+   "published": "2015-11-19",
+   "filed": "accepted 2015-11-18 16:39 ET, after the close; dated the next trading day",
+   "title": "NVIDIA Q3 FY16 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581015000173/nvda2016q310q.htm",
+   "supports": "inventories at October 25, 2015 (the year-ago quarter of Q3 FY17)"
+  },
+  {
+   "id": "NV10",
+   "published": "2007-03-16",
+   "filed": "accepted 2007-03-16 14:12 ET, during the session",
+   "title": "NVIDIA FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581007000008/fy2007annualreportonform10-k.htm",
+   "supports": "selected financial data fiscal 2003-2007; statements, segments, cash flows, risk factors (the FY2007 history vintage); the 2006 split"
+  },
+  {
+   "id": "NV20",
+   "published": "2007-08-10",
+   "filed": "accepted 2007-08-09 16:47 ET, after the close; dated the next trading day",
+   "title": "NVIDIA 8-K: three-for-two stock split",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581007000042/exhibit.htm",
+   "supports": "the three-for-two split, distributed on or about September 10, 2007"
+  },
+  {
+   "id": "Y0",
+   "published": "2016-12-23",
+   "title": "Yahoo Finance daily prices, NVDA and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/NVDA/history",
+   "supports": "close $109.78 as traded on AS_OF (Yahoo's split-adjusted close x40), 52-week range, realized vol, beta, the 10-yr ex-FY09 ex-FY10 P/E distribution from the listing on 1999-01-22"
+  }
+ ],
+ "warnings": [
+  "calendar year(s) 2018, 2021, 2026 after 2016 outside FY labels — make sure they are forecasts"
+ ],
+ "generated": "2026-11-13"
+}

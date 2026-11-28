@@ -1,0 +1,151 @@
+
+════════════════════════════════════════════════════════════════════════
+  WMT  ·  Wal-Mart Stores, Inc.  ·  $74.70  ·  RETROSPECTIVE as of 2014-02-28
+  Signal: ◉ BUY   Ratio B: 0.33x   Adj gap: -1.09  [OVERVALUED]
+  Point-in-time: 17 sources, latest published 2014-02-28; latest print Q4 FY14 (Feb 20)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2015E net sales, USD bn  →  FY2017E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2015E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Walmart U.S.              $   289.7  $ 289.7  $ 328.4      +0.0     +38.7
+    +3.9% net sales in FY13
+  Walmart International     $   142.7  $ 142.7  $ 161.8      +0.0     +19.1
+    +7.4% net sales in FY13
+  Sam's Club                $    59.6  $  59.6  $  67.5      +0.0      +7.9
+    +4.9% net sales in FY13
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $   492.0  $ 492.0  $ 557.7      +0.0     +65.7
+  FY2015E = FY14 $473.08B × (1 + 4.0%: FY15 net sales guide); split pro rata to FY13 segment net sales (FY2013 10-K)
+  Q4 FY14 (Feb 20): net sales $128.79B +1.4%; U.S. comps -0.4%; gross margin 23.93% (-40.2bp);
+  operating margin 5.70% (-105.3bp); EPS $1.34 vs $1.67; inventory +2.4% (+1.0pp vs sales)
+  Segment net sales: Walmart U.S. $76.43B +2.4%, Walmart International $37.67B -0.4%, Sam's Club $14.68B +1.3%; comps: Total U.S. comparable store sales with fuel -0.4% (Total U.S. | -0.4% | 0.5% | -0.4% | 0.6% | 0.0% | 0.1%); inventory $44.86B +2.4% year on year; currency: currency exchange rate fluctuations of $1,787 million (the release's constant-currency table), +2.8% at constant currency; EPS reported; the company's underlying $1.60 excludes discrete items of $0.26
+  FY15 guide (Q4 FY14 release): EPS $5.10-5.45 (Q4 FY14 release); net sales +3-5% ('we expect to be toward the low end of the net sales guidance'); Q1 FY15: Walmart U.S. comparable sales relatively flat; Sam's Club without fuel relatively flat, EPS $1.10-1.20
+
+  FY2015E EPS check:  ($492.0B × 5.68% − $2.22B interest) × (1−32.9%) ÷ 3.254B  =  $5.31  (FY2015E EPS, guide midpoint $5.28)
+  FY2017E BEAR check: ($492.0B × 5.68% − interest) ÷ 3.067B  =  $5.63  (scenario $5.28)
+  FY2017E BULL check: ($557.7B × 6.08% − interest) ÷ 3.067B  =  $6.94  (scenario $6.31)
+  Every 1pp of operating margin ≈ $1.01 EPS ≈ $15/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  U.S. comparable store sales         -1.0%    ≥2.0%    ≥5.0%    ≥9.0%     -0.4%  ⚠ BEAR  █░░░
+  Gross margin change               -60.0bp  ≥-20.0bp  ≥30.0bp  ≥60.0bp   -40.2bp  ⚠ BEAR  █░░░
+  Net sales growth                    +7.0%   ≥10.0%   ≥13.0%   ≥19.0%     +1.4%  ⚠ BEAR  █░░░
+  Inventory growth less sales growth   +6.0pp   ≤1.0pp  ≤-4.0pp  ≤-15.0pp    +1.0pp  ◦ BASE  ██░░
+  Operating margin change           -90.0bp  ≥-40.0bp  ≥10.0bp  ≥40.0bp  -105.3bp  ⚠ BEAR  █░░░
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.30 / 4.00
+  Market composite:   2.52 / 4.00  (back-solved from $75 + 15% hurdle)
+  SCA adjustment:    +0.13  ·  EPP-distance adj +0.00  →  Adj composite 1.43  →  Gap -1.09  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY14 net sales +1.6% on U.S. comps -0.4%, no year-end store count in the Q4 release; Q4 gross margin 23.93% (-40.2bp)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 14.2x FY15E vs a 14.9x 10-yr median (37th percentile of its own range)  (+0.22 × 25%  =  +0.055)
+    -  Growth vs own history: FY15 net sales guide +3-5% vs a 6.6% 10-yr median  (-0.26 × 20%  =  -0.052)
+    +  Cash $7.28B at 2014-01-31, FY14 free cash flow $10.14B, dividend $1.88 a year, purchase of Company stock $7,600M in fiscal 2013 (the Q4 FY13 release)  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  U.S. comparable store sales          -0.4%     -1.0%   -0.6%  Traffic and ticket fall together
+  Gross margin change                -40.2bp   -60.0bp  -19.8bp  Price cuts and mix shift compress the…
+  Net sales growth                     +1.4%     +7.0%   +5.6%  Comps stall as new stores and currenc…
+  Inventory growth less sales growth    +1.0pp    +6.0pp  +5.0pp  Inventory outruns sales; markdowns fo…
+  Operating margin change           -105.3bp   -90.0bp  +15.3bp  Expenses deleverage on low comps
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$73  (model)  /  $65 (defined)
+  Bear probability (proxy model):  68.8%
+
+  KEY TRIGGER: U.S. comps went from -0.2% (Q3 FY14) to -0.4% (Q4 FY14);
+  the bear case needs a demand recession that gross margin (-40.2bp now)
+  and expense control no longer cover. General economic conditions drive demand, by the company's own account; the bear
+  needs fuel, labor and health-care costs to keep rising while comps fall.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $5.28  (FY2015E EPS, guide midpoint)
+  Min viable P/E at panic:          13x  [median of calendar-year P/E lows: 2004 20.9x, 2005 15.6x, 2006 14.7x, 2007 13.4x, 2008 14.3x, 2009 12.6x, 2010 11.8x, 2011 10.7x, 2012 11.4x, 2013 13.5x, 2014 13.8x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $69/share
+  Current $75 vs Updated EPP $69:  +9%  moderate distance to floor
+  Bear $65 vs Updated EPP $69:  -5%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  U.S. comparable store sales                  2.0       +2.4   BASE floor (vs -0 now)
+  Gross margin change                        -20.0      +20.2   BASE floor (vs -40 now)
+  Net sales growth                            10.0       +8.6   BASE floor (vs +1 now)
+  Inventory growth less sales growth             1.0       +0.0   BASE floor (vs +1 now)
+  Operating margin change                    -40.0      +65.3   BASE floor (vs -105 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $5.28 × (1+4.9%)² = $5.81
+  At 14x P/E (conservative):  $81/share
+  + Cumul. dividends (2yr):  +$3.87/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $81  (▲7 from $75)
+  Conservative total return:  +14% over 2yr  = +7%/yr
+
+  At 14.2x the multiple is already near its 14x median, so the conservative
+  case is a growth question: breakeven at 14x needs FY2017E EPS of $5.06,
+  i.e. -2.1%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $70.78  –  $81.37  (at 37th pct of range)
+  Annual dividend:      $1.88/share  (yield 2.5%)
+  Realized vol (1yr):   12% annualized
+  Beta vs broad market: 0.56
+  1-sigma range (1yr):  $65  –  $84  ($75 ± 12%)
+  2-sigma range (1yr):  $56  –  $93
+  ────────────────────────────────────────────────────────────
+  Bear $65 requires:  ~1.0σ price move  (within normal vol range)
+  A discount retailer with a 0.6 beta: the stock is +4% off its March
+  low while U.S. comps went from -0.2% (Q3 FY14) to -0.4% (Q4 FY14).
+  Near the low: the multiple has de-rated alongside the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        5.28  12.3x  $     65    68.8%      8.9%   +59.9pp  Flat EPS (worst year FY04-FY14, capped at 0%); P/E to its 10th pct
+  BASE        6.03  14.9x  $     90    23.3%     31.1%    -7.8pp  EPS +6.9%/yr (FY15 guide + margin + buyback); P/E at its 10-yr median
+  BULL        6.31  16.5x  $    104     6.7%     50.4%   -43.8pp  EPS +9.4%/yr (FY04-FY14 CAGR); P/E holds its 75th pct
+  XBULL       6.90  19.2x  $    132     1.3%      9.5%    -8.3pp  EPS +14.4%/yr (best 2-yr run FY04-FY14); P/E at its 90th pct
+
+  Proxy EV (2yr): $74  /  Market EV: $99  /  Current: $75
+  Conservative EV (2yr, ④): $81 + $3.87 divs = $85 total value
+  Downside (→ Bear $65): 13.0%   Upside (→ Bull $104): 39.2%   Ratio B 0.33x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $75 the market needs $99 in two years —
+  between the BASE and BULL cases. That is a market composite of 2.52 against a model
+  read of 1.43: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.33x      +9%    -1.09  OVERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.08x      +9%    -0.49  MODESTLY OVERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.66x      +9%    -1.77  OVERVALUED / BUY
+  Scenario EPS +1.5pp/yr                          0.24x      +9%    -0.94  OVERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.44x      +9%    -1.25  OVERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.33x      +9%    -0.79  OVERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.33x     -11%    -0.89  OVERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.33x      +9%    -0.64  OVERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 FY15 print (mid-May) — the next read on comps (-0.4% now) and the guide
+  (2) Gross margin — -40.2bp in Q4 FY14: price cuts, mix and fuel against cost of sales, what must hold if comps do not
+  (3) FY15 EPS guide $5.10-5.45 (Q4 FY14 release)
+  (4) Operating margin — 5.70% in Q4 FY14 (-105.3bp): where expense deleverage on low comps shows first
+  (5) Capital return at 14x — Purchase of Company stock $6,683M in fiscal 2014: management's own read of the multiple
+  ◉ BUY  |  EPP floor $69  |  ADD below ~$76  |  TRIM above $104
+════════════════════════════════════════════════════════════════════════
+

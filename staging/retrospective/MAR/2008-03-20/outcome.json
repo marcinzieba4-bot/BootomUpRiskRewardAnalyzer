@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "MAR",
+ "as_of": "2008-03-20",
+ "computed": "2026-11-09",
+ "data_source": "Yahoo Finance daily closes + dividends (MAR, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2008-09-19",
+   "price": 28.17,
+   "dividends": 0.25,
+   "total_return_pct": -17.2,
+   "benchmark_total_return_pct": -5.0,
+   "excess_pct": -12.2,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2009-03-20",
+   "price": 15.67,
+   "dividends": 0.34,
+   "total_return_pct": -53.4,
+   "benchmark_total_return_pct": -39.9,
+   "excess_pct": -13.4,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2010-03-19",
+   "price": 29.38,
+   "dividends": 0.47,
+   "total_return_pct": -13.0,
+   "benchmark_total_return_pct": -8.6,
+   "excess_pct": -4.4,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2011-03-18",
+   "price": 38.39,
+   "dividends": 0.73,
+   "total_return_pct": 14.0,
+   "benchmark_total_return_pct": 2.1,
+   "excess_pct": 11.9,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2008-05-12",
+   "price": 36.8
+  },
+  "low": {
+   "date": "2008-11-20",
+   "price": 12.49
+  },
+  "max_drawdown_pct": -66.1,
+  "return_to_avg_price_m12_m24_pct": -28.0
+ },
+ "scenario_landing_2y": "BEAR",
+ "call_check_2y": {
+  "expectation": "CHEAP: should clear the hurdle or beat the benchmark",
+  "hit": false
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "DURABLE",
+   "risk": 2
+  },
+  "today": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Marriott: asset-light franchisor; Middle East RevPAR headwind",
+   "reviewed": "2026-09-22"
+  }
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "JPM",
+ "as_of": "2024-09-06",
+ "computed": "2026-11-19",
+ "data_source": "Yahoo Finance daily closes + dividends (JPM, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2025-03-06",
+   "price": 246.54,
+   "dividends": 2.5,
+   "total_return_pct": 17.2,
+   "benchmark_total_return_pct": 6.7,
+   "excess_pct": 10.5,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2025-09-05",
+   "price": 294.38,
+   "dividends": 5.3,
+   "total_return_pct": 41.1,
+   "benchmark_total_return_pct": 21.1,
+   "excess_pct": 19.9,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2026-09-04",
+   "price": 358.64,
+   "dividends": 11.3,
+   "total_return_pct": 74.1,
+   "benchmark_total_return_pct": 45.3,
+   "excess_pct": 28.9,
+   "hurdle_pct": 32.2
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2026-08-12",
+   "price": 365.18
+  },
+  "low": {
+   "date": "2024-09-13",
+   "price": 204.32
+  },
+  "max_drawdown_pct": -24.9,
+  "return_to_avg_price_m12_m24_pct": 48.8
+ },
+ "scenario_landing_2y": "XBULL",
+ "call_check_2y": {
+  "expectation": "FAIR: should land within +/-15pp of the benchmark",
+  "hit": false
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "DURABLE",
+   "risk": 2
+  },
+  "today": {
+   "kind": "CYCLICAL",
+   "risk": 1,
+   "why": "Best-in-class universal bank; still a rate/credit cycle at a record multiple",
+   "reviewed": "2026-09-22"
+  }
+ }
+}

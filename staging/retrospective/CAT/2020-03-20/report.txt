@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  CAT  ·  Caterpillar Inc.  ·  $95.50  ·  RETROSPECTIVE as of 2020-03-20
+  Signal: ◉ BUY   Ratio B: 0.48x   Adj gap: +0.32  [MODESTLY UNDERVALUED]
+  Point-in-time: 5 sources, latest published 2020-03-20; latest print Q4 2019 (Jan 31)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2020E sales and revenues, USD bn  →  FY2022E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Line of business             FY2020E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Construction Industries   $    20.5  $  20.5  $  21.6      +0.0      +1.1
+    -2.4% external sales and revenues in FY19
+  Resource Industries       $     8.9  $   8.9  $   9.4      +0.0      +0.5
+    -0.8% external sales and revenues in FY19
+  Energy & Transportation   $    16.8  $  16.8  $  17.7      +0.0      +0.9
+    -1.8% external sales and revenues in FY19
+  Financial Products Segme  $     3.1  $   3.1  $   3.3      +0.0      +0.2
+    +4.7% external sales and revenues in FY19
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    49.3  $  49.3  $  52.0      +0.0      +2.7
+  FY2020E = FY19 $53.80B × (1 − 8.4%: no FY20 sales and revenues guide in numbers, Q4 2019 growth, applied to the year); split pro rata to FY19 external sales of the four reportable segments (FY2019 10-K; All Other and corporate items left out)
+  Q4 2019 (Jan 31): sales and revenues $13.14B -8.4%; Machinery -13.3%; Engines -1.9%;
+  operating margin 14.07% (+94.6bp); profit per share $1.97 vs $1.78 (+10.7%)
+  Machinery (Construction Industries $4,983M and Resource Industries $2,276M against $5,666M and $2,711M a year earlier, -13.3%), Engines (Energy & Transportation $5,166M against $5,265M, -1.9%), as the release's sales and revenues by segment show them; the release: 'Adjusted profit per share in the fourth quarter of 2019 was $2.63, compared with fourth-quarter 2018 adjusted profit per share of $2.55.'
+  FY20 guide (Q4 2019 release): profit per share $8.50-10.00 (no mark-to-market gain or loss)
+
+  FY2020E EPS check:  $49.3B × 14.5% pre-tax × (1−22.4%) ÷ 0.556B  =  $10.00  (FY2020E EPS, guide midpoint (no mark-to-market gain or loss))
+  FY2022E BEAR check: $49.3B × 14.5% ÷ 0.539B  =  $10.31  (scenario $3.78)
+  FY2022E BULL check: $52.0B × 14.9% ÷ 0.539B  =  $11.17  (scenario $11.50)
+  Every 1pp of pre-tax margin ≈ $0.69 EPS ≈ $10/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Machinery sales growth             -33.0%  ≥-13.0%    ≥8.0%   ≥38.0%    -13.3%  ⚠ BEAR  █░░░
+  Engines sales growth               -19.0%   ≥-3.0%   ≥13.0%   ≥37.0%     -1.9%  ◦ BASE  ██░░
+  Sales and revenues growth          -24.0%   ≥-6.0%   ≥12.0%   ≥33.0%     -8.4%  ⚠ BEAR  █░░░
+  Profit per share growth            -92.0%  ≥-36.0%   ≥20.0%   ≥85.0%    +10.7%  ◦ BASE  ██░░
+  Operating margin change           -710.0bp  ≥-320.0bp  ≥80.0bp  ≥160.0bp   +94.6bp  ▲ BULL  ███░
+  Disruption theme: none in scope    +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.80 / 4.00
+  Market composite:   1.83 / 4.00  (back-solved from $96 + 15% hurdle)
+  SCA adjustment:    +0.15  ·  EPP-distance adj +0.20  →  Adj composite 2.15  →  Gap +0.32  [MODESTLY UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY19 sales and revenues -1.7%, Machinery -1.9%, Engines -1.8%; Q4 operating margin 14.07% (+94.6bp)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 10.3x FY20E vs a 14.5x 10-yr median (2nd percentile of its own range)  (+0.50 × 25%  =  +0.125)
+    -  Growth vs own history: no FY20 sales and revenues guide in numbers, Q4 2019 growth -8.4% vs a -0.8% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  FY19 year-end cash and short-term investments $8.284B, FY19 operating cash flow $6.912B, dividend $4.12 a year, dividends paid $2,132M and common shares repurchased $4,047M in 2019 (FY2019 10-K)  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Machinery sales growth              -13.3%    -33.0%  -19.7%  Construction and mining fleets stop g…
+  Engines sales growth                 -1.9%    -19.0%  -17.1%  Truck, power and oil and gas engines …
+  Sales and revenues growth            -8.4%    -24.0%  -15.6%  Volume and price fall together
+  Profit per share growth             +10.7%    -92.0%  -102.7%  Costs stay up while volume falls
+  Operating margin change            +94.6bp  -710.0bp  -804.6bp  Factories deleverage on lower volume
+  Disruption theme: none in scope     +2.0/4    +1.0/4  -1.0/4  No live disruption theme covers const…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$75  (model)  /  $43 (defined)
+  Bear probability (proxy model):  29.4%
+
+  KEY TRIGGER: Machinery sales growth went from -9.0% (Q3 2019) to -13.3% (Q4 2019);
+  the bear case needs a fall in machinery demand that Engines (-1.9% now) and
+  price realization no longer offset. The 10-K ties demand to the energy and mining industries and to infrastructure,
+  housing and commercial construction; dealer inventory changes move company sales either way.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $9.25  (FY2020E EPS, guide midpoint (no mark-to-market gain or loss))
+  Min viable P/E at panic:          12x  [median of calendar-year P/E lows: 2010 13.5x, 2011 15.7x, 2012 9.9x, 2013 13.5x, 2014 12.1x, 2015 11.9x, 2016 16.9x, 2017 13.3x, 2018 10.0x, 2019 10.3x, 2020 10.0x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $111/share
+  Current $96 vs Updated EPP $111:  -14%  ✓ BELOW panic floor — deep-value zone
+  Bear $43 vs Updated EPP $111:  -61%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Machinery sales growth                     -13.0       +0.3   BASE floor (vs -13 now)
+  Engines sales growth                        -3.0       -1.1   BASE floor (vs -2 now)
+  Sales and revenues growth                   -6.0       +2.4   BASE floor (vs -8 now)
+  Profit per share growth                    -36.0      -46.7   BASE floor (vs +11 now)
+  Operating margin change                   -320.0     -414.6   BASE floor (vs +95 now)
+  Disruption theme: none in scope              2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $9.25 × (1+0.0%)² = $9.25
+  At 14x P/E (conservative):  $130/share
+  + Cumul. dividends (2yr):  +$8.49/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $130  (▲34 from $96)
+  Conservative total return:  +44% over 2yr  = +22%/yr
+
+  At 10.3x the multiple is already near its 14x median, so the conservative
+  case is a growth question: breakeven at 14x needs FY2022E EPS of $6.22,
+  i.e. -18.0%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $87.50  –  $150.55  (at 13th pct of range)
+  Annual dividend:      $4.12/share  (yield 4.3%)
+  Realized vol (1yr):   34% annualized
+  Beta vs broad market: 0.96
+  1-sigma range (1yr):  $63  –  $128  ($96 ± 34%)
+  2-sigma range (1yr):  $30  –  $161
+  ────────────────────────────────────────────────────────────
+  Bear $43 requires:  ~1.6σ price move  (unusual — requires fundamental break)
+  The largest maker of construction and mining equipment with a 1.0 beta: the stock is +4% off its March
+  low while Machinery sales growth went from -9.0% (Q3 2019) to -13.3% (Q4 2019).
+  Near the low: the multiple has de-rated alongside the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        3.78  11.4x  $     43    29.4%     27.4%    +2.0pp  EPS -36.1%/yr (worst year FY10-FY19, capped at 0%); P/E to its 10th pct
+  BASE        8.02  14.5x  $    116    52.7%     54.2%    -1.5pp  EPS +-6.9%/yr (Q4 sales and revenues + margin + buyback); P/E at its 10-yr median
+  BULL       11.50  17.7x  $    204    15.1%     15.5%    -0.4pp  EPS +11.5%/yr (FY10-FY19 CAGR); P/E holds its 75th pct
+  XBULL      30.35  22.5x  $    683     2.9%      2.9%    -0.1pp  EPS +81.1%/yr (best 2-yr run FY10-FY19); P/E at its 90th pct
+
+  Proxy EV (2yr): $124  /  Market EV: $126  /  Current: $96
+  Conservative EV (2yr, ④): $130 + $8.49 divs = $138 total value
+  Downside (→ Bear $43): 55.0%   Upside (→ Bull $204): 113.6%   Ratio B 0.48x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $96 the market needs $126 in two years —
+  between the BASE and BULL cases. That is a market composite of 1.83 against a model
+  read of 2.15: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.48x     -14%    +0.32  MODESTLY UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.28x     -14%    +0.58  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.76x     -14%    +0.05  FAIRLY VALUED / ACCUMULATE
+  Scenario EPS +1.5pp/yr                          0.45x     -14%    +0.37  MODESTLY UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.53x     -14%    +0.27  MODESTLY UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.48x     -14%    +0.62  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.48x     -31%    +0.32  MODESTLY UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.48x     -14%    +0.45  MODESTLY UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 2020 print (late April) — the next read on Machinery sales (-13.3% now) and the guide
+  (2) Operating margin — +94.6bp in Q4 2019: price realization against material and factory costs, what must hold if volume does not
+  (3) FY20 profit per share guide $8.50-10.00 (Q4 2019 release): the company's own read of the year
+  (4) A FY20 sales and revenues guide in numbers — none yet
+  (5) Capital return at 10x — During the year, the company repurchased $4.0 billion of Caterpillar common stock and paid dividends of $2.1 billion.: management's own read of the multiple
+  ◉ BUY  |  EPP floor $111  |  ADD below ~$99  |  TRIM above $204
+════════════════════════════════════════════════════════════════════════
+

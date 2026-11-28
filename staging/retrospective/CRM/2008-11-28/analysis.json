@@ -1,0 +1,230 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "CRM",
+ "company": "salesforce.com, inc.",
+ "as_of": "2008-11-28",
+ "price_date": "2008-11-28",
+ "price": 28.62,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); subscription software signals with salesforce.com's rule-T thresholds; the listing rule (CRM listed 2004-06-23)",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'We are the leading provider, based on revenues and market share, of software on demand, according to a July 2007 report by International Data Corporation, or IDC.' 'The market for CRM, enterprise business applications, and development platforms is highly competitive, rapidly evolving and fragmented, and subject to changing technology, shifting customer needs and frequent introductions of new products and services.' 'enterprise software application vendors including Amdocs Limited, Epicor Software Corporation, IBM Corporation, Infor Global Solutions, Microsoft Corporation, Oracle Corporation, and SAP AG;' (FY2008 10-K); DURABLE: no 10-K calls the business cyclical ('cycle' appears only as the sales cycle and payment cycles); no disruption theme in taxonomy_eras.json is live for a subscription software company on this date (OFFSHORE, the one theme live, is scoped to IT services, and the 10-K's cloud computing words, where it has them, describe salesforce.com's own model, not a substitute for it), so the watch list is empty and these words stay here (the PEP obesity rule)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "'We are the leading provider, based on revenues and market share, of software on demand, according to a July 2007 report by International Data Corporation, or IDC.' 'The market for CRM, enterprise business applications, and development platforms is highly competitive, rapidly evolving and fragmented, and subject to changing technology, shifting customer needs and frequent introductions of new products and services.' 'enterprise software application vendors including Amdocs Limited, Epicor Software Corporation, IBM Corporation, Infor Global Solutions, Microsoft Corporation, Oracle Corporation, and SAP AG;' (FY2008 10-K); DURABLE: no 10-K calls the business cyclical ('cycle' appears only as the sales cycle and payment cycles); no disruption theme in taxonomy_eras.json is live for a subscription software company on this date (OFFSHORE, the one theme live, is scoped to IT services, and the 10-K's cloud computing words, where it has them, describe salesforce.com's own model, not a substitute for it), so the watch list is empty and these words stay here (the PEP obesity rule). durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.02x; -29% to EPP floor; model-vs-market gap +1.00; conservative 2yr +259%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.02,
+  "ratio_b_fmt": "0.02x",
+  "epp": 40.41,
+  "epp_gap_pct": -29.2,
+  "epp_adj": 0.2,
+  "proxy_composite": 1.75,
+  "sca": 0.15,
+  "adj_composite": 2.1,
+  "market_composite": 1.1,
+  "adj_gap": 1.0,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 259.4,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.29,
+    "pe": 92.8,
+    "price": 26.91,
+    "desc": "EPS +0.0%/yr (worst year FY05-FY08 ex-FY07, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 0.48,
+    "pe": 220.1,
+    "price": 105.65,
+    "desc": "EPS +27.9%/yr (Q4 FY09 guide YoY + margin + buyback); P/E at its 4.4-yr ex-FY07 median"
+   },
+   "BULL": {
+    "eps": 0.49,
+    "pe": 284.3,
+    "price": 139.31,
+    "desc": "EPS +28.9%/yr (FY05-FY08 ex-FY07 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 0.49,
+    "pe": 332.7,
+    "price": 163.02,
+    "desc": "EPS +28.9%/yr (best 2-yr run FY05-FY08 ex-FY07, at least BULL); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.02,
+   "epp_gap_pct": -29.2,
+   "adj_gap": 1.0,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 259.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": -0.07,
+   "epp_gap_pct": -29.2,
+   "adj_gap": 1.1,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 259.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 0.06,
+   "epp_gap_pct": -29.2,
+   "adj_gap": 0.97,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 259.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.01,
+   "epp_gap_pct": -29.2,
+   "adj_gap": 1.1,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 259.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.02,
+   "epp_gap_pct": -29.2,
+   "adj_gap": 0.88,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 259.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.02,
+   "epp_gap_pct": -29.2,
+   "adj_gap": 1.3,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 259.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.02,
+   "epp_gap_pct": -30.7,
+   "adj_gap": 1.0,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 259.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.02,
+   "epp_gap_pct": -29.2,
+   "adj_gap": 1.0,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 259.4,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "CRM (retrospective, 2008-11-28) ◉ BUY — Ratio B 0.02x (6.0% downside to Bear $26.91 / +386.8% upside to Bull $139.31) | Adj composite 2.10 vs market 1.10: gap +1.00 [UNDERVALUED] | -29% above the EPP floor $40.41 (137x FY09E $0.29) | Conservative 2-yr case: +259.4% total (+129.7%/yr) | At 97.0x FY09E the 15% hurdle price $37.85 sits at or below the BASE case; revenue +43.4% YoY in Q3 FY09, forward revenues +30.9-31.4% (Q4 FY09 revenue guide (Q3 FY09 release)); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "CR15",
+   "published": "2008-03-03",
+   "filed": "accepted 2008-02-29 16:53 ET (after the close)",
+   "title": "salesforce.com FY2008 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312508043828/d10k.htm",
+   "supports": "five-year selected data fiscal 2004-2008, statements, balance sheets, geography; the FY2008 history vintage"
+  },
+  {
+   "id": "CR3",
+   "published": "2006-02-23",
+   "filed": "accepted 2006-02-22 16:24 ET (after the close)",
+   "title": "salesforce.com Q4 FY06 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312506036718/dex991.htm",
+   "supports": "FY2006 diluted EPS excluding the reversal of the deferred tax valuation allowance and the lease recovery ($0.181; GAAP $0.240)"
+  },
+  {
+   "id": "CR2",
+   "published": "2005-03-28",
+   "filed": "accepted 2005-03-25 17:26 ET (after the close)",
+   "title": "salesforce.com FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312505061027/d10k.htm",
+   "supports": "the listing ('since June 23, 2004'); five-year selected data, fiscal 2001-2005 (rule T, the fiscal 2002 change)"
+  },
+  {
+   "id": "CR14",
+   "published": "2008-02-28",
+   "filed": "accepted 2008-02-27 16:39 ET (after the close)",
+   "title": "salesforce.com Q4 FY08 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312508040139/dex991.htm",
+   "supports": "Q4 FY08 statements of operations, balance sheet and additional metrics; the outlook"
+  },
+  {
+   "id": "CR13",
+   "published": "2007-11-16",
+   "filed": "accepted 2007-11-15 16:32 ET (after the close)",
+   "title": "salesforce.com Q3 FY08 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312507248577/dex991.htm",
+   "supports": "Q3 FY08 statements of operations, balance sheet and additional metrics; the outlook"
+  },
+  {
+   "id": "CR16",
+   "published": "2008-05-22",
+   "filed": "accepted 2008-05-21 16:34 ET (after the close)",
+   "title": "salesforce.com Q1 FY09 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312508120092/dex991.htm",
+   "supports": "Q1 FY09 statements of operations, balance sheet and additional metrics; the outlook"
+  },
+  {
+   "id": "CR17",
+   "published": "2008-08-21",
+   "filed": "accepted 2008-08-20 16:34 ET (after the close)",
+   "title": "salesforce.com Q2 FY09 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312508181542/dex991.htm",
+   "supports": "Q2 FY09 statements of operations, balance sheet and additional metrics; the outlook"
+  },
+  {
+   "id": "CR18",
+   "published": "2008-11-21",
+   "filed": "accepted 2008-11-20 16:36 ET (after the close)",
+   "title": "salesforce.com Q3 FY09 results (8-K ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000119312508240188/dex991.htm",
+   "supports": "Q3 FY09 statements of operations, balance sheet and additional metrics; the outlook"
+  },
+  {
+   "id": "Y0",
+   "published": "2008-11-28",
+   "title": "Yahoo Finance daily prices, CRM and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/CRM/history",
+   "supports": "close $28.62 as traded on AS_OF (Yahoo's split-adjusted close x4), 52-week range, realized vol, beta, the 4.4-yr ex-FY07 P/E distribution from the listing on 2004-06-23"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-26"
+}

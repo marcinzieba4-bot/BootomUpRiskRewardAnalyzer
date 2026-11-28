@@ -1,0 +1,149 @@
+
+════════════════════════════════════════════════════════════════════════
+  BKR  ·  Baker Hughes Company  ·  $33.48  ·  RETROSPECTIVE as of 2024-05-31
+  Signal: ◉ BUY   Ratio B: 0.03x   Adj gap: +1.75  [UNDERVALUED]
+  Point-in-time: 13 sources, latest published 2024-05-31; latest print Q1 2024 (Apr 23)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2024E revenues, USD bn  →  FY2026E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2024E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Oilfield Services & Equi  $    17.2  $  17.2  $  18.4      +0.0      +1.2
+    +16.1% revenues in FY23
+  Industrial & Energy Tech  $    11.4  $  11.4  $  12.1      +0.0      +0.7
+    +28.0% revenues in FY23
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    28.6  $  28.6  $  30.5      +0.0      +1.9
+  FY2024E = FY23 $25.51B × (1 + 12.3%: no Q2 2024 revenue guide, Q1 2024 revenue as reported, applied to the year (no FY24 revenue guide)); split pro rata to FY23 segment revenue (FY2023 10-K)
+  Q1 2024 (Apr 23): revenue $6.42B +12.3%; orders -14.3%; gross margin 19.91% (-18.9bp);
+  segment operating margin 11.72% (+101.0bp); operating margin 10.17% (+251.2bp); EPS $0.45 vs $0.57
+  Activity: orders -14.3% (orders $6,542M vs $7,632M); revenue +12.3% as reported (revenue $6,418M vs $5,716M); by segment: Oilfield Services & Equipment +5.8%; Industrial & Energy Technology +23.2%; total segment operating income $752M vs $612M; operating income $653M vs $438M; cost of revenue $5,140M vs $4,567M; EPS Q1 2024 adjusted (non-GAAP, the release's figure excluding identified items): $0.43 a diluted share; GAAP $0.45
+  FY24: no guide in numbers (BASE takes Q1 2024 revenue growth); the Q1 2024 release gives no outlook in numbers
+
+  FY2024E EPS check:  $28.6B × 10.4% pre-tax × (1−25.8%) ÷ 0.998B  =  $2.21  (FY2024E: no EPS guide in numbers, FY23's $1.60 stands)
+  FY2026E BEAR check: $28.6B × 10.4% ÷ 0.957B  =  $2.31  (scenario $1.60)
+  FY2026E BULL check: $30.5B × 10.8% ÷ 0.957B  =  $2.56  (scenario $2.66)
+  Every 1pp of pre-tax margin ≈ $0.21 EPS ≈ $6/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Orders                             -63.0%  ≥-27.0%   ≥10.0%   ≥55.0%    -14.3%  ◦ BASE  ██░░
+  Revenue growth                     -50.0%  ≥-20.0%    ≥9.0%   ≥33.0%    +12.3%  ▲ BULL  ███░
+  Gross margin change               -770.0bp  ≥-470.0bp  ≥-170.0bp  ≥120.0bp   -18.9bp  ▲ BULL  ███░
+  Segment operating margin change   -710.0bp  ≥-510.0bp  ≥-310.0bp  ≥190.0bp  +101.0bp  ▲ BULL  ███░
+  Operating margin change           -2640.0bp  ≥-1330.0bp  ≥-20.0bp  ≥580.0bp  +251.2bp  ▲ BULL  ███░
+  Disruption theme: none in scope    +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.65 / 4.00
+  Market composite:   1.22 / 4.00  (back-solved from $33 + 15% hurdle)
+  SCA adjustment:    +0.32  ·  EPP-distance adj +0.00  →  Adj composite 2.97  →  Gap +1.75  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY23 revenue +20.6%, orders +13.8% (orders $30.5 billion vs $26.8 billion (FY2023 10-K)); Q1 segment operating margin 11.72% (+101bp)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 20.9x FY24E vs a 28.9x 6.4-yr ex-FY17 ex-FY19 ex-FY20 ex-FY21 median (27th percentile of its own range)  (+0.38 × 25%  =  +0.095)
+    +  Growth vs own history: no Q2 2024 revenue guide, Q1 2024 revenue as reported +12.3% vs a 3.2% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  Cash and cash equivalents $2.72B, FY23 free cash flow $2.05B, dividend $0.84 a year, $538M of Class A common stock repurchased and $786M of dividends paid in FY23  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Orders                              -14.3%    -63.0%  -48.7%  Customers defer equipment and service…
+  Revenue growth                      +12.3%    -50.0%  -62.3%  Customers cut drilling and project bu…
+  Gross margin change                -18.9bp  -770.0bp  -751.1bp  Pricing falls faster than costs
+  Segment operating margin change   +101.0bp  -710.0bp  -811.0bp  Mix and productivity turn against the…
+  Operating margin change           +251.2bp  -2640.0bp  -2891.2bp  Charges and fixed costs as activity f…
+  Disruption theme: none in scope     +2.0/4    +1.0/4  -1.0/4  No live disruption theme covers oilfi…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$45  (model)  /  $30 (defined)
+  Bear probability (proxy model):  6.7%
+
+  KEY TRIGGER: orders went from -13.8% (Q4 2023) to -14.3% (Q1 2024);
+  the bear case needs customers' spending to fall far enough that revenue (+12.3% now)
+  and the segment operating margin (+101.0bp now) give way. Customers' spending drives revenue, by the company's own account; the bear needs
+  that spending to fall, not only one quarter's orders.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $1.60  (FY2024E: no EPS guide in numbers, FY23's $1.60 stands)
+  Min viable P/E at panic:          20x  [median of calendar-year P/E lows: 2018 45.5x, 2022 22.5x, 2023 16.7x, 2024 17.8x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $32/share
+  Current $33 vs Updated EPP $32:  +5%  moderate distance to floor
+  Bear $30 vs Updated EPP $32:  -6%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Orders                                     -27.0      -12.7   BASE floor (vs -14 now)
+  Revenue growth                             -20.0      -32.3   BASE floor (vs +12 now)
+  Gross margin change                       -470.0     -451.1   BASE floor (vs -19 now)
+  Segment operating margin change           -510.0     -611.0   BASE floor (vs +101 now)
+  Operating margin change                  -1330.0    -1581.2   BASE floor (vs +251 now)
+  Disruption theme: none in scope              2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $1.60 × (1+12.4%)² = $2.02
+  At 28x P/E (conservative):  $57/share
+  + Cumul. dividends (2yr):  +$1.73/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $57  (▲23 from $33)
+  Conservative total return:  +74% over 2yr  = +37%/yr
+
+  At 20.9x the multiple is already near its 28x median, so the conservative
+  case is a growth question: breakeven at 28x needs FY2026E EPS of $1.13,
+  i.e. -15.8%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $27.19  –  $37.58  (at 61th pct of range)
+  Annual dividend:      $0.84/share  (yield 2.5%)
+  Realized vol (1yr):   22% annualized
+  Beta vs broad market: 0.52
+  1-sigma range (1yr):  $26  –  $41  ($33 ± 22%)
+  2-sigma range (1yr):  $18  –  $49
+  ────────────────────────────────────────────────────────────
+  Bear $30 requires:  ~0.5σ price move  (within normal vol range)
+  An energy technology company, in its own words, with a 0.5 beta: the stock is +17% off its January
+  low while orders went from -13.8% (Q4 2023) to -14.3% (Q1 2024).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        1.60  18.7x  $     30     6.7%     72.2%   -65.5pp  EPS +0.0%/yr (worst year FY18-FY23 ex-FY19 ex-FY20 ex-FY21, capped at 0%); P/E to its 10th pct
+  BASE        2.09  28.9x  $     60    23.5%     20.7%    +2.8pp  EPS +14.4%/yr (Q1 revenue + margin + buyback); P/E at its 6.4-yr ex-FY17 ex-FY19 ex-FY20 ex-FY21 median
+  BULL        2.66  57.9x  $    154    58.7%      5.9%   +52.8pp  EPS +28.9%/yr (FY18-FY23 ex-FY19 ex-FY20 ex-FY21 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL       2.66  73.4x  $    195    11.1%      1.1%   +10.0pp  EPS +28.9%/yr (no 2-yr run in FY18-FY23 ex-FY19 ex-FY20 ex-FY21: BULL's rate); P/E at its 90th pct
+
+  Proxy EV (2yr): $128  /  Market EV: $45  /  Current: $33
+  Conservative EV (2yr, ④): $57 + $1.73 divs = $58 total value
+  Downside (→ Bear $30): 10.4%   Upside (→ Bull $154): 360.0%   Ratio B 0.03x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $33 the market needs $44 in two years —
+  at or below the BASE case. That is a market composite of 1.22 against a model
+  read of 2.97: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.03x      +5%    +1.75  UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.00x      +5%    +1.75  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.10x      +5%    +1.32  UNDERVALUED / BUY
+  Scenario EPS +1.5pp/yr                          0.02x      +5%    +1.75  UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.04x      +5%    +1.96  UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.03x      +5%    +2.05  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.03x      -9%    +1.95  UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.03x      +5%    +1.75  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 2024 print (late July) — the next read on orders (-14.3% now); no revenue or EPS guide to read it against
+  (2) Segment operating margin — +101.0bp in Q1 2024: pricing, mix and productivity against costs
+  (3) A FY24 guide — none in numbers: no filing guides EPS, revenue or a margin; the Q1 2024 release on the work in hand: 'Remaining Performance Obligations (RPO) in the first quarter ended at $32.7 billion, a decrease of $0.8 billion from the fourth quarter of 2023.'
+  (4) Capital expenditures — Capital expenditures, net of proceeds from disposal of assets, were $282 million for the first quarter of 2024. Capital expenditures, net of proceeds from disposal of assets, were $210 million for OFSE, and $69 million for IET.
+  (5) Capital return at 21x — Cash flow from operating activities was $784 million for the first quarter of 2024. Free cash flow (a non-GAAP measure) for the quarter was $502 million.: management's own read of the multiple
+  ◉ BUY  |  EPP floor $32  |  ADD below ~$51  |  TRIM above $154
+════════════════════════════════════════════════════════════════════════
+

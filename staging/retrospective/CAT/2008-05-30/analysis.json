@@ -1,0 +1,216 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "CAT",
+ "company": "Caterpillar Inc.",
+ "as_of": "2008-05-30",
+ "price_date": "2008-05-30",
+ "price": 82.64,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); machinery and engines signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'Caterpillar is the leader in construction and mining equipment, and diesel and natural gas engines and industrial gas turbines in our size range' (FY2007 10-K, Item 1); 'Caterpillar products and product support services are sold worldwide into a variety of highly competitive markets'; 'The energy and mining industries are major users of our machines and engines. Decisions to purchase our machines and engines are dependent upon performance of these industries.' and 'The rates of infrastructure spending, housing starts, and commercial construction, play a significant role in our results.' (Item 1A): demand that depends on the industries served is not earnings that are the cycle (the RCL rule), so DURABLE; no disruption theme is live for it",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "'Caterpillar is the leader in construction and mining equipment, and diesel and natural gas engines and industrial gas turbines in our size range' (FY2007 10-K, Item 1); 'Caterpillar products and product support services are sold worldwide into a variety of highly competitive markets'; 'The energy and mining industries are major users of our machines and engines. Decisions to purchase our machines and engines are dependent upon performance of these industries.' and 'The rates of infrastructure spending, housing starts, and commercial construction, play a significant role in our results.' (Item 1A): demand that depends on the industries served is not earnings that are the cycle (the RCL rule), so DURABLE; no disruption theme is live for it. durable franchise (obsolescence risk 2/5); price cheap; Ratio B 1.04x; +27% to EPP floor; model-vs-market gap +0.52; conservative 2yr +18%.",
+  "theme": null
+ },
+ "legacy_signal_short": "ACCUMULATE",
+ "legacy_signal": "◎ ACCUMULATE",
+ "metrics": {
+  "ratio_b": 1.04,
+  "ratio_b_fmt": "1.04x",
+  "epp": 65.01,
+  "epp_gap_pct": 27.1,
+  "epp_adj": 0.0,
+  "proxy_composite": 2.55,
+  "sca": 0.127,
+  "adj_composite": 2.677,
+  "market_composite": 2.16,
+  "adj_gap": 0.52,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 17.6,
+  "scenarios": {
+   "BEAR": {
+    "eps": 2.42,
+    "pe": 11.6,
+    "price": 28,
+    "desc": "EPS -36.0%/yr (worst year FY98-FY07, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 6.99,
+    "pe": 14.2,
+    "price": 99,
+    "desc": "EPS +8.7%/yr (FY08 guide + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 7.32,
+    "pe": 18.5,
+    "price": 135,
+    "desc": "EPS +11.3%/yr (FY98-FY07 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 15.31,
+    "pe": 22.3,
+    "price": 341,
+    "desc": "EPS +60.9%/yr (best 2-yr run FY98-FY07); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 1.04,
+   "epp_gap_pct": 27.1,
+   "adj_gap": 0.52,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 17.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.64,
+   "epp_gap_pct": 27.1,
+   "adj_gap": 0.93,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 17.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 2.6,
+   "epp_gap_pct": 27.1,
+   "adj_gap": 0.17,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 17.6,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.94,
+   "epp_gap_pct": 27.1,
+   "adj_gap": 0.58,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 17.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 1.15,
+   "epp_gap_pct": 27.1,
+   "adj_gap": 0.47,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 17.6,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 1.04,
+   "epp_gap_pct": 27.1,
+   "adj_gap": 0.82,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 17.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 1.04,
+   "epp_gap_pct": -0.1,
+   "adj_gap": 0.72,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 17.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 1.04,
+   "epp_gap_pct": 27.1,
+   "adj_gap": 0.7,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 17.6,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP",
+  "FAIR",
+  "RICH"
+ ],
+ "summary": "CAT (retrospective, 2008-05-30) ◎ ACCUMULATE — Ratio B 1.04x (66.1% downside to Bear $28 / +63.4% upside to Bull $135) | Adj composite 2.68 vs market 2.16: gap +0.52 [UNDERVALUED] | +27% above the EPP floor $65 (11x FY08E $5.91) | Conservative 2-yr case: +17.6% total (+8.8%/yr) | At 14.0x FY08E the 15% hurdle price $109 sits between the BASE and BULL cases; Machinery sales +16.1% in Q1 2008, forward revenues +5-10% (FY08 sales and revenues guide); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "CT19",
+   "published": "2008-02-22",
+   "filed": "2008-02-22 13:39 ET",
+   "title": "Caterpillar FY2007 10-K and Exhibit 13",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823008000052/ex_13.htm",
+   "supports": "Five-year Financial Summary 2003-2007; Results of Operations 2005-2007 (operating profit $3,784M, $4,921M, $4,921M; profit before taxes $4,953M and provision for income taxes $1,485M in 2007; diluted shares 705.8M, 683.8M, 659.5M); external sales of Machinery $28,359M, Engines $13,603M and Financial Products $2,996M in 2007; cash and short-term investments $1,122M; operating cash flow $7,935M; treasury shares purchased $2,405M; Item 1 and Item 1A wording"
+  },
+  {
+   "id": "CT18",
+   "published": "2008-01-25",
+   "filed": "2008-01-25 08:32 ET (before the open)",
+   "title": "Caterpillar 8-K: fourth-quarter 2007 results release (Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823008000025/ex_99-1.htm",
+   "supports": "fourth-quarter and full-year 2007 sales by geographic region and statement of results; 2008 outlook: sales and revenues up 5 to 10 percent, profit per share up 5 to 15 percent from 2007"
+  },
+  {
+   "id": "CT20",
+   "published": "2008-04-18",
+   "filed": "2008-04-18 10:53 ET (during the session)",
+   "title": "Caterpillar 8-K: first-quarter 2008 results release (Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823008000149/ex_99-1.htm",
+   "supports": "first-quarter 2008 sales by geographic region and statement of results; 2008 outlook unchanged: sales and revenues up 5 to 10 percent, profit per share up 5 to 15 percent from 2007"
+  },
+  {
+   "id": "CT17",
+   "published": "2007-10-19",
+   "filed": "2007-10-19 09:23 ET (before the open)",
+   "title": "Caterpillar 8-K: third-quarter 2007 results release (Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823007000480/ex99-1.htm",
+   "supports": "third-quarter 2007 sales by geographic region and statement of results; 2007 outlook: sales and revenues of about $44 billion, profit per share $5.20 to $5.60; preliminary 2008 outlook: sales and revenues up 5 to 10 percent, profit per share up 5 to 15 percent from the mid-point of the 2007 outlook range"
+  },
+  {
+   "id": "CT15",
+   "published": "2007-06-13",
+   "filed": "2007-06-13 11:51 ET",
+   "title": "Caterpillar 8-K: 'Caterpillar Raises Dividend Rate 20 Percent'",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823007000341/form8k_061307dividend.htm",
+   "supports": "a quarterly cash dividend of $0.36 per share, payable August 20, 2007"
+  },
+  {
+   "id": "CT9",
+   "published": "2005-06-08",
+   "filed": "2005-06-08 12:00 ET",
+   "title": "Caterpillar 8-K: 'Caterpillar Splits Stock; Increases Dividend Rate'",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823005000429/form8k060805_dividend.htm",
+   "supports": "a two-for-one stock split; the split shares distributed on July 13 to stockholders of record on June 22, 2005"
+  },
+  {
+   "id": "W0",
+   "published": "2008-05-30",
+   "title": "Yahoo Finance daily prices, CAT and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/CAT/history",
+   "supports": "close $82.64 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-11"
+}

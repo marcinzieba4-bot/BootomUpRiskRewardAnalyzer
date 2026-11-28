@@ -1,0 +1,161 @@
+
+════════════════════════════════════════════════════════════════════════
+  GOOG  ·  Alphabet Inc.  ·  $168.40  ·  RETROSPECTIVE as of 2024-08-02
+  Signal: ◐ WATCHLIST   Ratio B: 1.69x   Adj gap: -0.79  [OVERVALUED]
+  Point-in-time: 17 sources, latest published 2024-08-02; latest print Q2 2024 (Jul 23)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2024E revenue, USD bn  →  FY2026E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2024E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Google Search & other         $198.84  $198.84  $279.88    +0.00   +81.04
+    +7.7% revenue in FY23
+  YouTube ads                   $ 35.80  $35.80  $50.39    +0.00   +14.59
+    +7.8% revenue in FY23
+  Google Network                $ 35.57  $35.57  $50.07    +0.00   +14.50
+    -4.5% revenue in FY23
+  Google subscriptions, platfo  $ 39.41  $39.41  $55.47    +0.00   +16.06
+    +19.4% revenue in FY23
+  Google Cloud                  $ 37.59  $37.59  $52.91    +0.00   +15.32
+    +25.9% revenue in FY23
+  Other Bets                    $  1.73  $ 1.73  $ 2.44    +0.00    +0.71
+    +43.0% revenue in FY23
+  Hedging gains (losses)        $  0.27  $ 0.27  $ 0.38    +0.00    +0.11
+    -88.0% revenue in FY23
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $349.21  $349.21  $491.54    +0.00   +142.33
+  FY2024E = FY23 $307.394B × (1 + 13.6%: the Q2 2024 revenue growth (no Q3 2024 guide), YoY, applied to the year (no FY24 revenue guide)); split pro rata to FY23 revenues by type (FY23 growth)
+  Q2 2024 (Jul 23): revenue $84.742B +13.6% YoY (+5.2% QoQ); receivables +21.3%; R&D + S&M + G&A +4.6%;
+  gross margin 58.10% (+88.0bp); operating margin 32.36% (+309.1bp); EPS $1.89 vs $1.44
+  Revenue: revenues $84,742.0M vs $74,604.0M a year earlier, $80,539.0M the quarter before (Google Search & other $48,509.0M, YouTube ads $8,663.0M, Google Network $7,444.0M, Google subscriptions, platforms, and devices $9,312.0M, Google Cloud $10,347.0M, Other Bets $365.0M, hedging gains (losses) $102.0M); the release gives no paid-click table; accounts receivable $47,087.0M (2024-06-30) vs $38,804.0M a year earlier (Q2 2023 10-Q); GAAP diluted EPS $1.89 vs $1.44 (the release prints one figure for every class); diluted shares 12,495.0M; employees: 'Number of employees | 181,798 | 179,582'; TAC: 'Total TAC | 12,537 | 13,387'
+  Q3 2024: no revenue, EPS or margin guide in numbers in any filing; the latest quarter's revenue growth stands in (the UNP rule); in words only, the FY23 10-K: 'Our revenue growth rate could decline over time, and we may experience downward pressure on our operating margin in the future.' (display only); the releases estimate stock-based compensation, dilution and capital expenditure, which method r2 has no input for
+
+  FY2024E EPS check:  $349.210B × 27.9% pre-tax × (1−13.9%) ÷ 12.495B  =  $6.71  (FY2024E: no EPS guide in numbers, FY23's $5.80 stands)
+  FY2026E BEAR check: $349.210B × 27.9% ÷ 12.281B  =  $6.83  (scenario $2.42)
+  FY2026E BULL check: $491.540B × 28.3% ÷ 12.281B  =  $9.75  (scenario $8.59)
+  Every 1pp of pre-tax margin ≈ $0.241 EPS ≈ $6.09/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Revenue growth                        -88.0%    ≥73.0%   ≥234.0%  ≥8585.0%    +13.6%  ⚠ BEAR  █░░░
+  Gross margin change                 -2910.0bp  ≥-1350.0bp  ≥210.0bp  ≥38090.0bp   +88.0bp  ◦ BASE  ██░░
+  Opex growth less revenue            +183.0pp   ≤72.0pp  ≤-38.0pp  ≤-8252.0pp    -9.0pp  ◦ BASE  ██░░
+  Receivables growth less revenue      +55.0pp   ≤28.0pp    ≤2.0pp  ≤-84.0pp    +7.8pp  ◦ BASE  ██░░
+  Operating margin change             -5090.0bp  ≥-1910.0bp  ≥1280.0bp  ≥288470.0bp  +309.1bp  ◦ BASE  ██░░
+  Generative AI: net effect on Search and advertising    +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.80 / 4.00
+  Market composite:   2.40 / 4.00  (back-solved from $168.40 + 15% hurdle)
+  SCA adjustment:    -0.09  ·  EPP-distance adj -0.10  →  Adj composite 1.61  →  Gap -0.79  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY23 revenues +8.7%, gross margin 56.6%; Q2 gross margin 58.10% (+88bp YoY)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 29.0x FY24E vs a 25.3x 10-yr median (81st percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    -  Growth vs own history: Q2 2024 revenue growth (no Q3 2024 guide) +13.6% vs a 18.3% 9-yr median  (-0.47 × 20%  =  -0.094)
+    +  Cash, cash equivalents and marketable securities $100.725B, long-term debt $13,238.0M (no short-term debt line) (Q2 2024), FY23 free cash flow $69.495B (cash from operations $101,746.0M less purchases of property and equipment $32,251.0M), dividend $0.80 a year  (+0.30 × 15%  =  +0.045)
+    +  Generative AI: Google builds it into its own products and services  (+0.20 × 10%  =  +0.020)
+    -  AI competition (FY2023 10-K): other companies' AI products may be similar or superior to Google's  (-0.20 × 10%  =  -0.020)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Revenue growth                        +13.6%    -88.0%  -101.6%  Advertisers cut budgets: fewer paid c…
+  Gross margin change                  +88.0bp  -2910.0bp  -2998.0bp  Traffic acquisition and data-center c…
+  Opex growth less revenue              -9.0pp  +183.0pp  +192.0pp  Hiring and R&D do not slow with revenue
+  Receivables growth less revenue       +7.8pp   +55.0pp  +47.2pp  Advertisers pay more slowly: collecti…
+  Operating margin change             +309.1bp  -5090.0bp  -5399.1bp  Operating leverage works in reverse
+  Generative AI: net effect on Search and advertising    +2.0/4    +1.0/4  -1.0/4  Users take queries to other companies…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$96.33  (model)  /  $50.58 (defined)
+  Bear probability (proxy model):  29.4%
+
+  KEY TRIGGER: revenue went from +15.4% (Q1 2024) to +13.6% YoY (Q2 2024), +5.2% on the quarter before;
+  the bear case needs a downturn in gross margin (+88.0bp now)
+  and receivables (+7.8pp against revenue) giving way. An advertising slowdown shows up in paid clicks and revenue growth first;
+  the bear needs it in gross margin as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $5.80  (FY2024E: no EPS guide in numbers, FY23's $5.80 stands)
+  Min viable P/E at panic:          20x  [median of calendar-year P/E lows: 2014 24.9x, 2015 20.2x, 2016 24.0x, 2017 43.7x, 2018 22.3x, 2019 20.7x, 2020 18.0x, 2021 15.4x, 2022 18.3x, 2023 15.0x, 2024 22.9x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $116.00/share
+  Current $168.40 vs Updated EPP $116.00:  +45%  ⚠ far above floor — large drawdown room
+  Bear $50.58 vs Updated EPP $116.00:  -56%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Revenue growth                                73.0      +59.4   BASE floor (vs +14 now)
+  Gross margin change                        -1350.0    -1438.0   BASE floor (vs +88 now)
+  Opex growth less revenue                      72.0      +81.0   BASE floor (vs -9 now)
+  Receivables growth less revenue               28.0      +20.2   BASE floor (vs +8 now)
+  Operating margin change                    -1910.0    -2219.1   BASE floor (vs +309 now)
+  Generative AI: net effect on Search and advertising             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $5.80 × (1+12.5%)² = $7.34
+  At 25x P/E (conservative):  $183.39/share
+  + Cumul. dividends (2yr):  +$1.65/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $183.39  (▲14.99 from $168.40)
+  Conservative total return:  +10% over 2yr  = +5%/yr
+
+  12.5% EPS growth is what is left once the premium multiple (29.0x)
+  mean-reverts to 25x. Breakeven at 25x needs FY2026E EPS of $6.67,
+  i.e. 7.2%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $121.46  –  $193.31  (at 65th pct of range)
+  Annual dividend:      $0.80/share  (yield 0.5%)
+  Realized vol:         27% annualized (1-yr daily log returns)
+  Beta vs broad market: 1.34
+  1-sigma range (1yr):  $122.26  –  $214.54  ($168.40 ± 27%)
+  2-sigma range (1yr):  $76.12  –  $260.68
+  ────────────────────────────────────────────────────────────
+  Bear $50.58 requires:  ~2.6σ price move  (unusual — requires fundamental break)
+  An advertising business whose revenue follows advertisers' budgets: the stock is +36% off its October
+  low (52 weeks) while revenue went from +15.4% (Q1 2024) to +13.6% YoY (Q2 2024), +5.2% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        2.42   20.9x  $  50.58    29.4%     11.1%   +18.3pp  EPS -35.4%/yr (worst year FY14-FY23, capped at 0%); P/E to its 10th pct
+  BASE        7.60   25.3x  $ 192.28    52.7%     38.8%   +13.9pp  EPS +14.5%/yr (Q2 revenue YoY + margin + buyback); P/E at its 10-yr median
+  BULL        8.59   27.7x  $ 237.94    15.1%     42.1%   -27.1pp  EPS +21.7%/yr (FY14-FY23 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL      15.84   33.1x  $ 524.30     2.9%      8.0%    -5.1pp  EPS +65.3%/yr (best 2-yr run FY14-FY23, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $166.99  /  Market EV: $222.21  /  Current: $168.40
+  Conservative EV (2yr, ④): $183.39 + $1.65 divs = $185.03 total value
+  Downside (→ Bear $50.58): 70.0%   Upside (→ Bull $237.94): 41.3%   Ratio B 1.69x  →  ◐ WATCHLIST
+
+  To earn the 15%/yr hurdle from $168.40 the market needs $222.71 in two years —
+  between the BASE and BULL cases. That is a market composite of 2.40 against a model
+  read of 1.61: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       1.69x     +45%    -0.79  OVERVALUED / WATCHLIST
+  Multiples one band richer (p25/p75/p90/max)     0.97x     +45%    -0.41  MODESTLY OVERVALUED / ACCUMULATE
+  Multiples one band cheaper (p5/p25/med/p75)     2.53x     +45%    -1.07  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          1.52x     +45%    -0.73  OVERVALUED / WATCHLIST
+  Scenario EPS -1.5pp/yr                          1.91x     +45%    -0.86  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             1.69x     +45%    -0.49  MODESTLY OVERVALUED / WATCHLIST
+  EPP P/E +3 turns (softer floor)                 1.69x     +26%    -0.69  OVERVALUED / WATCHLIST
+  Hurdle 10%/yr instead of 15%                    1.69x     +45%    -0.60  OVERVALUED / WATCHLIST
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 2024 print (the quarter ends in September) — revenue against the Q2 2024 revenue growth (no Q3 2024 guide): +13.6% YoY
+  (2) Gross margin — +88.0bp in Q2 2024: traffic acquisition and data-center costs against revenue, what must hold if revenue does not
+  (3) A Q3 2024 revenue guide — none: Google gives no revenue, EPS or margin outlook in any filing; aggregate paid clicks and traffic acquisition costs are in each release
+  (4) Receivables — +21.3% against revenue +13.6% in Q2 2024 (+7.8pp): advertisers paying more slowly would show here first
+  (5) Capital structure at 29x — repurchases of stock $15,684.0M in Q2 2024 (the cash flow statement); 'On July 23, 2024, Alphabet announced a cash dividend of $0.20 per share that will be paid on September 16, 2024, to stockholders of record as of September 9, 2024, on each of the company’s Class A, Class B, and Class C shares.'
+  ◐ WATCHLIST  |  EPP floor $116.00  |  ADD below ~$163.44  |  TRIM above $237.94
+════════════════════════════════════════════════════════════════════════
+

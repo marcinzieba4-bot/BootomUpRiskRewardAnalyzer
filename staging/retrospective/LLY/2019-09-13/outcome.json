@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "LLY",
+ "as_of": "2019-09-13",
+ "computed": "2026-11-22",
+ "data_source": "Yahoo Finance daily closes + dividends (LLY, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2020-03-13",
+   "price": 139.37,
+   "dividends": 1.39,
+   "total_return_pct": 26.9,
+   "benchmark_total_return_pct": -9.6,
+   "excess_pct": 36.5,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2020-09-11",
+   "price": 148.09,
+   "dividends": 2.87,
+   "total_return_pct": 36.1,
+   "benchmark_total_return_pct": 12.9,
+   "excess_pct": 23.3,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2021-09-13",
+   "price": 237.96,
+   "dividends": 6.16,
+   "total_return_pct": 120.1,
+   "benchmark_total_return_pct": 52.1,
+   "excess_pct": 68.1,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2022-09-13",
+   "price": 306.48,
+   "dividends": 9.95,
+   "total_return_pct": 185.4,
+   "benchmark_total_return_pct": 36.3,
+   "excess_pct": 149.0,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2021-08-17",
+   "price": 272.71
+  },
+  "low": {
+   "date": "2019-10-10",
+   "price": 106.92
+  },
+  "max_drawdown_pct": -22.9,
+  "return_to_avg_price_m12_m24_pct": 75.0
+ },
+ "scenario_landing_2y": "XBULL",
+ "call_check_2y": {
+  "expectation": "RICH: should miss the hurdle and lag the benchmark",
+  "hit": false
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "DURABLE",
+   "risk": 2
+  },
+  "today": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Eli Lilly: GLP-1 leader; priced for it",
+   "reviewed": "2026-09-22"
+  }
+ }
+}

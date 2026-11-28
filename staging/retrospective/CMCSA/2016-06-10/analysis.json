@@ -1,0 +1,320 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "CMCSA",
+ "company": "Comcast Corporation",
+ "as_of": "2016-06-10",
+ "price_date": "2016-06-10",
+ "price": 62.8,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); cable signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'We are a global media and technology company with two primary businesses, Comcast Cable and NBCUniversal' (FY2015 10-K); 'Some of these products and services charge no fee or a lower fee than our traditional video packages for access to their content, which adversely affects demand for our video services, including for expanded digital video packages, premium networks, and our DVR and On Demand services'; 'Reduced viewing of our content through traditional linear television distribution outlets has caused and will likely continue to cause audience ratings declines for NBCUniversal’s linear television content'; 'Weak economic conditions may have a negative impact on our businesses'; STREAMING is live (from 2015-08-04) and its consumer-behaviour risk factor puts it on the watch list: company-acknowledged, with no dated evidence that the market prices it for Comcast",
+  "theme_watch": [
+   {
+    "theme": "STREAMING",
+    "status": "live, company-acknowledged; no market read",
+    "reason": "Live: Comcast's own FY2015 10-K says 'Changes in consumer behavior driven by alternative methods for viewing content may adversely affect our businesses and challenge existing business models. Some of these products and services charge no fee or a lower fee than our traditional video packages for access to their content, which adversely affects demand for our video services, including for expanded digital video packages, premium networks, and our DVR and On Demand services.' At the same time it streams to its own video customers: 'We also have streaming services that provide customers with access to certain programming via On Demand, online and through our mobile apps and, depending on the customer’s level of service, may require an additional monthly fee'. The stock trades at 19.3x FY16E — a premium. The theme registry dates the market's pricing of streaming to 2015-08-04 (Disney lowers cable-network outlook on ESPN subscriber losses; media stocks sell off), evidence that names Disney's networks, not Comcast. Re-file as DISRUPTION_EXPOSED (STREAMING) only if dated evidence shows the market pricing streaming substitution of Comcast's video customers or networks specifically."
+   }
+  ],
+  "evidence": [
+   "CM56"
+  ]
+ },
+ "classification": {
+  "quality_class": "QUALITY, NEUTRALLY VALUED",
+  "quality_label": "◎ QUALITY, NEUTRALLY VALUED",
+  "quality_color": "#f0b429",
+  "quality_tone": "amber",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "FAIR",
+  "quality_note": "'We are a global media and technology company with two primary businesses, Comcast Cable and NBCUniversal' (FY2015 10-K); 'Some of these products and services charge no fee or a lower fee than our traditional video packages for access to their content, which adversely affects demand for our video services, including for expanded digital video packages, premium networks, and our DVR and On Demand services'; 'Reduced viewing of our content through traditional linear television distribution outlets has caused and will likely continue to cause audience ratings declines for NBCUniversal’s linear television content'; 'Weak economic conditions may have a negative impact on our businesses'; STREAMING is live (from 2015-08-04) and its consumer-behaviour risk factor puts it on the watch list: company-acknowledged, with no dated evidence that the market prices it for Comcast. durable franchise (obsolescence risk 2/5); price fair; Ratio B 0.64x; +29% to EPP floor; model-vs-market gap -0.46; conservative 2yr +2%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.64,
+  "ratio_b_fmt": "0.64x",
+  "epp": 48.75,
+  "epp_gap_pct": 28.8,
+  "epp_adj": 0.0,
+  "proxy_composite": 1.95,
+  "sca": -0.037,
+  "adj_composite": 1.913,
+  "market_composite": 2.37,
+  "adj_gap": -0.46,
+  "valuation": "MODESTLY OVERVALUED",
+  "cons_return_2yr": 2.1,
+  "scenarios": {
+   "BEAR": {
+    "eps": 3.25,
+    "pe": 13.5,
+    "price": 44,
+    "desc": "Flat EPS (worst year FY06-FY15, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 3.78,
+    "pe": 17.6,
+    "price": 67,
+    "desc": "EPS +7.8%/yr (Q1 revenues + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 4.73,
+    "pe": 19.5,
+    "price": 92,
+    "desc": "EPS +20.6%/yr (FY06-FY15 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 5.08,
+    "pe": 35.5,
+    "price": 180,
+    "desc": "EPS +25.0%/yr (best 2-yr run FY06-FY15); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.64,
+   "epp_gap_pct": 28.8,
+   "adj_gap": -0.46,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 2.1,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.13,
+   "epp_gap_pct": 28.8,
+   "adj_gap": 0.18,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 2.1,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 1.03,
+   "epp_gap_pct": 28.8,
+   "adj_gap": -1.23,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 2.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.55,
+   "epp_gap_pct": 28.8,
+   "adj_gap": -0.4,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 2.1,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.76,
+   "epp_gap_pct": 28.8,
+   "adj_gap": -0.54,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 2.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.64,
+   "epp_gap_pct": 28.8,
+   "adj_gap": -0.16,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 2.1,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.64,
+   "epp_gap_pct": 7.4,
+   "adj_gap": -0.46,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 2.1,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.64,
+   "epp_gap_pct": 28.8,
+   "adj_gap": -0.26,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 2.1,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP",
+  "FAIR",
+  "RICH"
+ ],
+ "summary": "CMCSA (retrospective, 2016-06-10) ◉ BUY — Ratio B 0.64x (29.9% downside to Bear $44 / +46.5% upside to Bull $92) | Adj composite 1.91 vs market 2.37: gap -0.46 [MODESTLY OVERVALUED] | +29% above the EPP floor $49 (15x FY16E $3.25) | Conservative 2-yr case: +2.1% total (+1.1%/yr) | At 19.3x FY16E the 15% hurdle price $83 sits between the BASE and BULL cases; video subscribers +0.1% in Q1 2016, forward revenues +5.2% (no FY16 revenue guide in numbers, Q1 2016 revenue growth); streaming is live and company-acknowledged; no dated evidence ties the multiple to it.",
+ "sources": [
+  {
+   "id": "CM56",
+   "published": "2016-02-08",
+   "filed": "2016-02-05 17:00 ET (after the close)",
+   "title": "Comcast FY2015 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-16-452423.txt",
+   "supports": "selected financial data 2011-2015; diluted shares 2,518M, 2,620M, 2,665M; video customers 2013-2015; segment revenues; the $1.10 annual dividend rate; risk factors"
+  },
+  {
+   "id": "CM55",
+   "published": "2016-02-03",
+   "filed": "2016-02-03 07:05 ET (before the open)",
+   "title": "Comcast Q4 2015 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001104659-16-093384.txt",
+   "supports": "Q4 and full-year 2015 statement of income; EPS excluding adjustments, 2015 $3.25 and 2014 $2.93 (GAAP $3.24 and $3.20); video customers; capital expenditures; the dividend raised to $0.275 a quarter"
+  },
+  {
+   "id": "CM50",
+   "published": "2015-02-24",
+   "filed": "2015-02-24 07:05 ET (before the open)",
+   "title": "Comcast Q4 2014 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001104659-15-013199.txt",
+   "supports": "Q4 and full-year 2014 statement of income; EPS excluding adjustments, 2014 $2.93 and 2013 $2.47 (GAAP $3.20 and $2.56); video customers; capital expenditures; the dividend raised to $0.25 a quarter"
+  },
+  {
+   "id": "CM45",
+   "published": "2014-01-28",
+   "filed": "2014-01-28 07:05 ET (before the open)",
+   "title": "Comcast Q4 2013 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001104659-14-004395.txt",
+   "supports": "Q4 and full-year 2013 statement of income; EPS excluding adjustments, 2013 $2.47 and 2012 $1.93 (GAAP $2.56 and $2.28); video customers; capital expenditures; the dividend raised to $0.225 a quarter"
+  },
+  {
+   "id": "CM40",
+   "published": "2013-02-13",
+   "filed": "2013-02-13 06:09 ET (before the open)",
+   "title": "Comcast Q4 2012 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-13-053227.txt",
+   "supports": "Q4 and full-year 2012 statement of operations; EPS excluding gains, tax adjustments and transaction costs, 2012 $1.93 and 2011 $1.58 (GAAP $2.28 and $1.50); video customers; the dividend raised to $0.195 a quarter"
+  },
+  {
+   "id": "CM35",
+   "published": "2012-02-15",
+   "filed": "2012-02-15 07:06 ET (before the open)",
+   "title": "Comcast Q4 2011 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-12-062176.txt",
+   "supports": "Q4 and full-year 2011 statement of operations; EPS excluding the NBCUniversal transaction costs and non-recurring items, 2011 $1.58 (GAAP $1.50); video customers; the dividend raised to $0.1625 a quarter"
+  },
+  {
+   "id": "CM30",
+   "published": "2011-02-16",
+   "filed": "2011-02-16 07:05 ET (before the open)",
+   "title": "Comcast Q4 2010 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-11-037238.txt",
+   "supports": "Q4 and full-year 2010 statement of operations; EPS excluding the NBCUniversal transaction costs and non-recurring items, 2010 $1.31 and 2009 $1.11 (GAAP $1.29 and $1.26); video customers; the dividend raised to $0.1125 a quarter"
+  },
+  {
+   "id": "CM19",
+   "published": "2009-02-18",
+   "filed": "2009-02-18 07:05 ET (before the open)",
+   "title": "Comcast Q4 2008 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001157523-09-001338.txt",
+   "supports": "Q4 and full-year 2008 statement of operations; Adjusted EPS 2008 $0.91 and 2007 $0.74; video customers; quarterly dividend raised to $0.0675; no 2009 outlook in numbers"
+  },
+  {
+   "id": "CM14",
+   "published": "2008-02-14",
+   "filed": "2008-02-14 06:51 ET (before the open)",
+   "title": "Comcast Q4 2007 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-08-030118.txt",
+   "supports": "Q4 and full-year 2007 statement of operations; Adjusted EPS 2007 $0.74 and 2006 $0.60; 2008 Financial Outlook (consolidated revenue growth of 8% to 10%); first quarterly dividend of $0.0625"
+  },
+  {
+   "id": "CM51",
+   "published": "2015-02-27",
+   "filed": "2015-02-27 13:16 ET (during the session)",
+   "title": "Comcast FY2014 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-15-068526.txt",
+   "supports": "selected financial data 2010-2014; diluted shares 2,620M, 2,665M, 2,717M; video customers 2012-2014; segment revenues; the $1.00 annual dividend rate; risk factors"
+  },
+  {
+   "id": "CM46",
+   "published": "2014-02-12",
+   "filed": "2014-02-12 12:49 ET (during the session)",
+   "title": "Comcast FY2013 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-14-047522.txt",
+   "supports": "selected financial data 2009-2013; diluted shares 2,665M, 2,717M, 2,778M; video customers 2009-2013; segment revenues; the $0.90 annual dividend rate; risk factors"
+  },
+  {
+   "id": "CM41",
+   "published": "2013-02-21",
+   "filed": "2013-02-20 18:48 ET (after the close)",
+   "title": "Comcast FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-13-067658.txt",
+   "supports": "selected financial data 2008-2012; diluted shares 2,717M, 2,778M, 2,820M; video customers 2008-2012; segment revenues; the $0.78 annual dividend rate"
+  },
+  {
+   "id": "CM36",
+   "published": "2012-02-23",
+   "filed": "2012-02-23 07:06 ET (before the open)",
+   "title": "Comcast FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-12-073905.txt",
+   "supports": "selected financial data 2007-2011; diluted shares 2,778M, 2,820M, 2,885M; video customers 2007-2011; segment revenues of Cable Communications and the NBCUniversal segments; the $0.65 annual dividend rate"
+  },
+  {
+   "id": "CM31",
+   "published": "2011-02-25",
+   "filed": "2011-02-25 15:02 ET",
+   "title": "Comcast FY2010 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-11-047243.txt",
+   "supports": "selected financial data 2006-2010; diluted shares 2,820M, 2,885M, 2,952M; video customers 2006-2010; segment revenues; the $0.45 planned annual dividend; the NBCUniversal transaction closed on January 28, 2011"
+  },
+  {
+   "id": "CM26",
+   "published": "2010-02-23",
+   "filed": "2010-02-23 15:47 ET",
+   "title": "Comcast FY2009 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-10-037551.txt",
+   "supports": "selected financial data 2005-2009 (revenues reclassified for advertising commissions; diluted EPS from continuing operations $1.26, $0.86, $0.83, $0.70, $0.25); diluted shares 2,885M, 2,952M, 3,129M; video customers 2005-2009; segment revenues; the $0.378 planned annual dividend"
+  },
+  {
+   "id": "CM20",
+   "published": "2009-02-20",
+   "filed": "2009-02-20 13:52 ET",
+   "title": "Comcast FY2008 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-09-033975.txt",
+   "supports": "selected financial data 2004-2008; consolidated statement of operations 2006-2008; diluted shares 3,180M, 3,129M, 2,952M; capital expenditures; video customers 2004-2008; segment revenues"
+  },
+  {
+   "id": "CM57",
+   "published": "2016-04-27",
+   "filed": "2016-04-27 07:06 ET (before the open)",
+   "title": "Comcast Q1 2016 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001104659-16-114400.txt",
+   "supports": "Q1 2016 statement of income, capital expenditures, video customers"
+  },
+  {
+   "id": "CM24",
+   "published": "2007-02-01",
+   "filed": "2007-02-01 07:06 ET (before the open)",
+   "title": "Comcast 8-K: three-for-two stock split",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-07-017749.txt",
+   "supports": "a three-for-two stock split in the form of a 50% stock dividend payable on February 21, 2007 (the stock traded ex-dividend from February 22, 2007, FY2006 Annual Report)"
+  },
+  {
+   "id": "W0",
+   "published": "2016-06-10",
+   "title": "Yahoo Finance daily prices, CMCSA and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/CMCSA/history",
+   "supports": "close $62.80 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-11"
+}

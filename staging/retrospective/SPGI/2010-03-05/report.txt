@@ -1,0 +1,151 @@
+
+════════════════════════════════════════════════════════════════════════
+  MHP  ·  The McGraw-Hill Companies, Inc.  ·  $35.28  ·  RETROSPECTIVE as of 2010-03-05
+  Signal: ◉ BUY   Ratio B: 0.39x   Adj gap: +1.09  [UNDERVALUED]
+  Point-in-time: 5 sources, latest published 2010-03-05; latest print Q4 2009 (Jan 26)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2010E revenue, USD bn  →  FY2012E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                      FY2010E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Financial Services        $     2.7  $   2.7  $   2.9      +0.0      +0.2
+    -1.7% revenue in FY09
+  McGraw-Hill Education     $     2.5  $   2.5  $   2.7      +0.0      +0.2
+    -9.5% revenue in FY09
+  Information & Media       $     1.0  $   1.0  $   1.1      +0.0      +0.1
+    -10.2% revenue in FY09
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $     6.2  $   6.2  $   6.7      +0.0      +0.5
+  FY2010E = FY09 $5.95B × (1 + 3.3%: no FY10 revenue guide in numbers, Q4 2009 growth, applied to the year); split pro rata to FY09 revenue by segment (SP23)
+  Q4 2009 (Jan 26): revenue $1.46B +3.3%; Financial Services +10.6%; Education +2.6%; Information & Media -11.4%;
+  segment operating margin 22.52% (+570.2bp); diluted EPS $0.53 vs $0.37 (+43.2%)
+  Financial Services revenue $689.2M against $623.1M a year earlier (+10.6%), McGraw-Hill Education $520.0M against $506.5M (+2.6%), Information & Media $253.3M (-11.4%), as the release's segment table shows them; 'Fourth quarter earnings per share in 2009 included a pre-tax gain of $10.5 million ($6.7 million after tax), or $0.02 per diluted share from the divestiture of BusinessWeek in December.'; 'In the fourth quarter of 2008, diluted earnings per share included a pre-tax restructuring charge of $26.3 million ($16.4 million after tax), or $0.05 per diluted share.'
+  FY10 guide (Q4 2009 release): EPS $2.55-2.65
+
+  FY2010E EPS check:  $6.2B × 19.8% pre-tax × (1−36.4%) ÷ 0.315B  =  $2.48  (FY2010E EPS, guide midpoint)
+  FY2012E BEAR check: $6.2B × 19.8% ÷ 0.299B  =  $2.61  (scenario $1.69)
+  FY2012E BULL check: $6.7B × 20.2% ÷ 0.299B  =  $2.88  (scenario $3.02)
+  Every 1pp of pre-tax margin ≈ $0.13 EPS ≈ $3/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Financial Services revenue growth    -7.0%    ≥4.0%   ≥14.0%   ≥18.0%    +10.6%  ◦ BASE  ██░░
+  Education revenue growth           -16.0%   ≥-6.0%    ≥5.0%   ≥23.0%     +2.6%  ◦ BASE  ██░░
+  Revenue growth                      +1.0%    ≥4.0%    ≥7.0%   ≥15.0%     +3.3%  ⚠ BEAR  █░░░
+  Diluted EPS growth                 -98.0%  ≥-43.0%   ≥13.0%   ≥53.0%    +43.2%  ▲ BULL  ███░
+  Segment operating margin change   -970.0bp  ≥-440.0bp  ≥90.0bp  ≥460.0bp  +570.2bp  ★ XBULL  ████
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.30 / 4.00
+  Market composite:   1.64 / 4.00  (back-solved from $35 + 15% hurdle)
+  SCA adjustment:    +0.23  ·  EPP-distance adj +0.20  →  Adj composite 2.73  →  Gap +1.09  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY09 revenue -6.3%, Financial Services -1.7%, Education -9.5%; Q4 segment operating margin 22.52% (+570.2bp)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 13.6x FY10E vs a 20.3x 10-yr median (12th percentile of its own range)  (+0.50 × 25%  =  +0.125)
+    -  Growth vs own history: no FY10 revenue guide in numbers, Q4 2009 growth +3.3% vs a 4.2% 9-yr median  (-0.09 × 20%  =  -0.018)
+    +  FY09 year-end cash and equivalents $1.210B, FY09 operating cash flow $1.321B, dividend $0.94 a year, no repurchase of treasury shares in 2009 (SP23)  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Financial Services revenue growth    +10.6%     -7.0%  -17.6%  Debt issuance volume falls
+  Education revenue growth             +2.6%    -16.0%  -18.6%  State adoptions and school funding sh…
+  Revenue growth                       +3.3%     +1.0%   -2.3%  Issuance, adoptions and advertising f…
+  Diluted EPS growth                  +43.2%    -98.0%  -141.2%  Costs stay up while revenue falls
+  Segment operating margin change   +570.2bp  -970.0bp  -1540.2bp  Segment profit falls faster than revenue
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$34  (model)  /  $22 (defined)
+  Bear probability (proxy model):  12.9%
+
+  KEY TRIGGER: Financial Services revenue growth went from -2.2% (Q3 2009) to +10.6% (Q4 2009);
+  the bear case needs a fall in debt issuance that Education (+2.6% now) and
+  Information & Media no longer offset. The 10-K ties results to the volume of debt issued in the capital markets, to state
+  adoption opportunities and educational funding, and to advertising.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $2.60  (FY2010E EPS, guide midpoint)
+  Min viable P/E at panic:          17x  [median of calendar-year P/E lows: 2000 18.0x, 2001 25.7x, 2002 17.4x, 2003 14.7x, 2004 17.7x, 2005 18.4x, 2006 19.6x, 2007 14.9x, 2008 7.4x, 2009 7.5x, 2010 12.8x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $44/share
+  Current $35 vs Updated EPP $44:  -20%  ✓ BELOW panic floor — deep-value zone
+  Bear $22 vs Updated EPP $44:  -50%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Financial Services revenue growth             4.0       -6.6   BASE floor (vs +11 now)
+  Education revenue growth                    -6.0       -8.6   BASE floor (vs +3 now)
+  Revenue growth                               4.0       +0.7   BASE floor (vs +3 now)
+  Diluted EPS growth                         -43.0      -86.2   BASE floor (vs +43 now)
+  Segment operating margin change           -440.0    -1010.2   BASE floor (vs +570 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $2.60 × (1+3.8%)² = $2.80
+  At 20x P/E (conservative):  $56/share
+  + Cumul. dividends (2yr):  +$1.94/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $56  (▲21 from $35)
+  Conservative total return:  +64% over 2yr  = +32%/yr
+
+  At 13.6x the multiple is already near its 20x median, so the conservative
+  case is a growth question: breakeven at 20x needs FY2012E EPS of $1.67,
+  i.e. -19.9%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $17.22  –  $36.67  (at 93th pct of range)
+  Annual dividend:      $0.94/share  (yield 2.7%)
+  Realized vol (1yr):   45% annualized
+  Beta vs broad market: 1.25
+  1-sigma range (1yr):  $20  –  $51  ($35 ± 45%)
+  2-sigma range (1yr):  $4  –  $67
+  ────────────────────────────────────────────────────────────
+  Bear $22 requires:  ~0.8σ price move  (within normal vol range)
+  An information services company (ratings, education, business information) with a 1.2 beta: the stock is +103% off its March
+  low while Financial Services revenue growth went from -2.2% (Q3 2009) to +10.6% (Q4 2009).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        1.69  13.1x  $     22    12.9%     41.5%   -28.6pp  EPS -19.3%/yr (worst year FY00-FY09, capped at 0%); P/E to its 10th pct
+  BASE        2.91  20.3x  $     59    45.2%     43.6%    +1.6pp  EPS +5.8%/yr (Q4 revenue + margin + buyback); P/E at its 10-yr median
+  BULL        3.02  23.0x  $     69    35.2%     12.5%   +22.7pp  EPS +7.8%/yr (FY00-FY09 CAGR); P/E holds its 75th pct
+  XBULL       4.85  27.7x  $    134     6.6%      2.4%    +4.3pp  EPS +36.5%/yr (best 2-yr run FY00-FY09); P/E at its 90th pct
+
+  Proxy EV (2yr): $63  /  Market EV: $47  /  Current: $35
+  Conservative EV (2yr, ④): $56 + $1.94 divs = $58 total value
+  Downside (→ Bear $22): 37.6%   Upside (→ Bull $69): 95.6%   Ratio B 0.39x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $35 the market needs $47 in two years —
+  at or below the BASE case. That is a market composite of 1.64 against a model
+  read of 2.73: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.39x     -20%    +1.09  UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.15x     -20%    +1.32  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.67x     -20%    +0.79  UNDERVALUED / BUY
+  Scenario EPS +1.5pp/yr                          0.33x     -20%    +1.14  UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.45x     -20%    +1.04  UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.39x     -20%    +1.39  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.39x     -32%    +1.09  UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.39x     -20%    +1.20  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 2010 print (late April) — the next read on Financial Services revenue (+10.6% now) and the guide
+  (2) Segment operating margin — +570.2bp in Q4 2009: costs against the ratings mix, what must hold if revenue does not
+  (3) FY10 EPS guide $2.55-2.65 (Q4 2009 release): the company's own read of the year
+  (4) A FY10 consolidated revenue guide in numbers — none yet
+  (5) Capital return at 14x — dividend per common share $0.225 in the quarter (statement of income); the release states no repurchase: management's own read of the multiple
+  ◉ BUY  |  EPP floor $44  |  ADD below ~$50  |  TRIM above $69
+════════════════════════════════════════════════════════════════════════
+

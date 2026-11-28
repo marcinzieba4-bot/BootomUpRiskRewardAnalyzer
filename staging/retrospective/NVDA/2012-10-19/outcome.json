@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "NVDA",
+ "as_of": "2012-10-19",
+ "computed": "2026-11-13",
+ "data_source": "Yahoo Finance daily closes + dividends (NVDA, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2013-04-19",
+   "price": 12.57,
+   "dividends": 0.15,
+   "total_return_pct": 5.0,
+   "benchmark_total_return_pct": 9.6,
+   "excess_pct": -4.6,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2013-10-18",
+   "price": 15.81,
+   "dividends": 0.3,
+   "total_return_pct": 33.0,
+   "benchmark_total_return_pct": 24.0,
+   "excess_pct": 9.0,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2014-10-17",
+   "price": 17.42,
+   "dividends": 0.64,
+   "total_return_pct": 49.1,
+   "benchmark_total_return_pct": 36.4,
+   "excess_pct": 12.8,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2015-10-19",
+   "price": 27.81,
+   "dividends": 1.01,
+   "total_return_pct": 138.0,
+   "benchmark_total_return_pct": 49.6,
+   "excess_pct": 88.3,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2014-09-04",
+   "price": 20.03
+  },
+  "low": {
+   "date": "2012-11-16",
+   "price": 11.38
+  },
+  "max_drawdown_pct": -16.2,
+  "return_to_avg_price_m12_m24_pct": 45.8
+ },
+ "scenario_landing_2y": "BEAR",
+ "call_check_2y": {
+  "expectation": "CHEAP: should clear the hurdle or beat the benchmark",
+  "hit": true
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "CYCLICAL",
+   "risk": 2
+  },
+  "today": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Nvidia: AI compute leader; demand is a capex cycle, China conceded",
+   "reviewed": "2026-09-22"
+  }
+ }
+}

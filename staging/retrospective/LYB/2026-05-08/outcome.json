@@ -1,0 +1,42 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "LYB",
+ "as_of": "2026-05-08",
+ "computed": "2026-11-28",
+ "data_source": "Yahoo Finance daily closes + dividends (LYB, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2026-11-06",
+   "price": 60.72,
+   "dividends": 1.38,
+   "total_return_pct": -13.5,
+   "benchmark_total_return_pct": 0.2,
+   "excess_pct": -13.7,
+   "hurdle_pct": 7.2
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2026-05-15",
+   "price": 75.06
+  },
+  "low": {
+   "date": "2026-07-01",
+   "price": 52.58
+  },
+  "max_drawdown_pct": -29.9,
+  "return_to_avg_price_m12_m24_pct": null
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "CYCLICAL",
+   "risk": 2
+  },
+  "today": {
+   "kind": "CYCLICAL",
+   "risk": 3,
+   "why": "LyondellBasell: polyolefins at a trough with leverage and a dividend cut",
+   "reviewed": "2026-09-22"
+  }
+ }
+}

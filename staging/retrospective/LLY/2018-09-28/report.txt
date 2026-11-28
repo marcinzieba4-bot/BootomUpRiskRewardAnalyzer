@@ -1,0 +1,159 @@
+
+════════════════════════════════════════════════════════════════════════
+  LLY  ·  Eli Lilly and Company  ·  $107.31  ·  RETROSPECTIVE as of 2018-09-28
+  Signal: ✕ AVOID   Ratio B: infx   Adj gap: -1.65  [OVERVALUED]
+  Point-in-time: 11 sources, latest published 2018-09-28; latest print Q2 2018 (Jul 24)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2018E revenues, USD bn  →  FY2020E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2018E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Endocrinology             $    10.7  $  10.7  $  11.0      +0.0      +0.3
+    +24.8% revenues in FY17
+  Oncology                  $     4.0  $   4.0  $   4.1      +0.0      +0.1
+    +2.4% revenues in FY17
+  Animal health products    $     3.3  $   3.3  $   3.4      +0.0      +0.1
+    -2.3% revenues in FY17
+  Cardiovascular            $     3.0  $   3.0  $   3.1      +0.0      +0.1
+    -11.0% revenues in FY17
+  Neuroscience              $     2.3  $   2.3  $   2.4      +0.0      +0.1
+    -20.2% revenues in FY17
+  Immunology                $     0.6  $   0.6  $   0.7      +0.0      +0.1
+    +435.0% revenues in FY17
+  Other human pharmaceutic  $     0.3  $   0.3  $   0.3      +0.0      +0.0
+    +20.3% revenues in FY17
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    24.2  $  24.2  $  25.0      +0.0      +0.8
+  FY2018E = FY17 $22.87B × (1 + 6.0%: FY18 revenue guide midpoint); split pro rata to FY17 revenue by product class (FY2017 10-K, segment information)
+  Q2 2018 (Jul 24): revenues $6.36B +9.1%; U.S. +8.0%; international +10.0%; gross margin 73.21% (+19.3bp);
+  pre-tax margin 0.08% (-2156.7bp); EPS $-0.25 vs $0.95
+  company-wide U.S. and outside-U.S. sales: U.S. +8% to $3.602B, outside the U.S. +10% to $2.753B, as the release states them; total revenue growth ex-FX +7% (9% less the +2 points of exchange rates the release states); reported EPS a loss of $0.25 against $0.95; the company's non-GAAP figure $1.50 against $1.11 is shown only (it also removes the amortization of intangible assets and acquired in-process research and development, which recur; the history is GAAP: the NKE FY2007, PFE and BMY rule); the quarter's pre-tax income carries the acquired in-process research and development charges ('higher acquired in-process research and development charges associated with the acquisition of ARMO BioSciences'; reported EPS a loss of $0.25)
+  FY18 guide (8-K of 2017-12-13, Q4 2017 release, Q1 2018 release, Q2 2018 release): reported EPS $3.19-3.29; the company's adjusted EPS $5.40-5.50 (shown only: it excludes the amortization of intangible assets and acquired in-process research and development, which recur, and other listed items); revenue $24.0-24.5B (+4.9-7.1% on FY17's $22.87B); the reported range includes 'higher acquired in-process research and development charges associated with the acquisition of ARMO BioSciences'
+
+  FY2018E EPS check:  $24.2B × 9.6% pre-tax × (1−109.3%) ÷ 1.030B  =  $-0.21  (FY2018E reported EPS, guide midpoint)
+  FY2020E BEAR check: $24.2B × 9.6% ÷ 1.021B  =  $-0.21  (scenario $0.86)
+  FY2020E BULL check: $25.0B × 10.0% ÷ 1.021B  =  $-0.23  (scenario $3.67)
+  Every 1pp of pre-tax margin ≈ $-0.02 EPS ≈ $-0/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  U.S. revenue growth                -31.0%  ≥-11.0%    ≥8.0%   ≥25.0%     +8.0%  ▲ BULL  ███░
+  International revenue growth        -7.0%    ≥1.0%    ≥9.0%   ≥19.0%    +10.0%  ▲ BULL  ███░
+  Revenue growth                     -16.0%   ≥-4.0%    ≥8.0%   ≥16.0%     +9.1%  ▲ BULL  ███░
+  Gross margin change               -450.0bp  ≥-200.0bp  ≥50.0bp  ≥250.0bp   +19.3bp  ◦ BASE  ██░░
+  Pre-tax margin change             -1400.0bp  ≥-750.0bp  ≥-90.0bp  ≥590.0bp  -2156.7bp  ⚠ BEAR  █░░░
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.40 / 4.00
+  Market composite:   3.77 / 4.00  (back-solved from $107 + 15% hurdle)
+  SCA adjustment:    +0.02  ·  EPP-distance adj -0.30  →  Adj composite 2.12  →  Gap -1.65  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY17 total revenue +7.8% (U.S. +11.1%, outside the U.S. +3.8%), Endocrinology 44% of the product classes; Q2 gross margin 73.21% (+19.3bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 33.1x FY18E vs a 12.5x 9.7-yr ex-FY08 ex-FY17 median (93rd percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: FY18 revenue guide +4.9-7.1% vs a 5.2% 9-yr median  (+0.08 × 20%  =  +0.016)
+    +  FY17 year-end cash and short-term investments $8.03B, FY17 free cash flow $4.54B, dividend $2.25 a year, 'In 2017, we repurchased $359.8 million of shares under the $5.00 billion share repurchase program previously announced in October 2013.' (FY2017 10-K)  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  U.S. revenue growth                  +8.0%    -31.0%  -39.0%  Generic entry as U.S. patents expire
+  International revenue growth        +10.0%     -7.0%  -17.0%  Price cuts, generics and currency abroad
+  Revenue growth                       +9.1%    -16.0%  -25.1%  Exclusivity losses outrun new products
+  Gross margin change                +19.3bp  -450.0bp  -469.3bp  Write-offs and mix raise cost of sales
+  Pre-tax margin change             -2156.7bp  -1400.0bp  +756.7bp  Charges and deleverage on falling sales
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$22  (model)  /  $7 (defined)
+  Bear probability (proxy model):  11.1%
+
+  KEY TRIGGER: U.S. revenue growth went from +8.0% (Q1 2018) to +8.0% (Q2 2018);
+  the bear case needs U.S. exclusivity losses that international growth (+10.0% now)
+  and the cost base no longer absorb. Patent expirations drive the decline, by the company's own account; the bear needs
+  new products and cost cuts to stop covering them.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $3.24  (FY2018E reported EPS, guide midpoint)
+  Min viable P/E at panic:          11x  [median of calendar-year P/E lows: 2009 7.0x, 2010 7.0x, 2011 8.6x, 2012 10.5x, 2013 11.0x, 2014 22.7x, 2015 30.3x, 2016 25.6x, 2018 22.9x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $36/share
+  Current $107 vs Updated EPP $36:  +201%  ⚠ far above floor — large drawdown room
+  Bear $7 vs Updated EPP $36:  -80%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.30 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  U.S. revenue growth                        -11.0      -19.0   BASE floor (vs +8 now)
+  International revenue growth                 1.0       -9.0   BASE floor (vs +10 now)
+  Revenue growth                              -4.0      -13.1   BASE floor (vs +9 now)
+  Gross margin change                       -200.0     -219.3   BASE floor (vs +19 now)
+  Pre-tax margin change                     -750.0    +1406.7   BASE floor (vs -2157 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $3.24 × (1+4.4%)² = $3.53
+  At 12x P/E (conservative):  $42/share
+  + Cumul. dividends (2yr):  +$4.63/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $42  (▼65 from $107)
+  Conservative total return:  -56% over 2yr  = -28%/yr
+
+  4.4% EPS growth is what is left once the premium multiple (33.1x)
+  mean-reverts to 12x. Breakeven at 12x needs FY2020E EPS of $8.56,
+  i.e. 62.5%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $73.69  –  $107.84  (at 98th pct of range)
+  Annual dividend:      $2.25/share  (yield 2.1%)
+  Realized vol (1yr):   18% annualized
+  Beta vs broad market: 0.85
+  1-sigma range (1yr):  $88  –  $127  ($107 ± 18%)
+  2-sigma range (1yr):  $68  –  $146
+  ────────────────────────────────────────────────────────────
+  Bear $7 requires:  ~5.2σ price move  (unusual — requires fundamental break)
+  A research-based pharmaceutical company with a 0.8 beta: the stock is +45% off its February
+  low while U.S. revenue growth went from +8.0% (Q1 2018) to +8.0% (Q2 2018).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        0.86   7.9x  $      7    11.1%      1.2%    +9.9pp  EPS -48.4%/yr (worst year FY09-FY16, capped at 0%); P/E to its 10th pct
+  BASE        3.67  12.5x  $     46    38.8%      4.3%   +34.5pp  EPS +6.4%/yr (FY18 guide + margin + buyback); P/E at its 9.7-yr ex-FY08 ex-FY17 median
+  BULL        3.67  28.8x  $    106    42.1%     15.0%   +27.1pp  EPS +6.4%/yr (FY09-FY16 CAGR); P/E holds its 75th pct
+  XBULL       3.75  32.2x  $    121     8.0%     79.5%   -71.5pp  EPS +7.6%/yr (best 2-yr run FY09-FY16); P/E at its 90th pct
+
+  Proxy EV (2yr): $73  /  Market EV: $114  /  Current: $107
+  Conservative EV (2yr, ④): $42 + $4.63 divs = $47 total value
+  Downside (→ Bear $7): 93.5%   Upside (→ Bull $106): -1.2%   Ratio B infx  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $107 the market needs $142 in two years —
+  above the BULL case. That is a market composite of 3.77 against a model
+  read of 2.12: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                        infx    +201%    -1.65  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     9.29x    +201%    -1.65  OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx    +201%    -1.63  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                         59.36x    +201%    -1.65  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                           infx    +201%    -1.81  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)              infx    +201%    -1.35  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                  infx    +137%    -1.55  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                     infx    +201%    -1.65  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 2018 print (late October) — the next read on U.S. revenues (+8.0% now) and the guide
+  (2) Gross margin — +19.3bp in Q2 2018: cost of sales against the mix lost to generics, what must hold if U.S. revenues do not
+  (3) FY18 reported EPS guide $3.19-3.29 (Q2 2018 release)
+  (4) Pre-tax margin — 0.08% in Q2 2018 (-2156.7bp): where in-process R&D, restructuring and litigation charges land
+  (5) Capital return at 33x — 'The company completed its previously-announced $5 billion share repurchase program and has authorized a new $8 billion share repurchase program.' (Q2 2018 release): management's own read of the multiple
+  ✕ AVOID  |  EPP floor $36  |  ADD below ~$39  |  TRIM above $106
+════════════════════════════════════════════════════════════════════════
+

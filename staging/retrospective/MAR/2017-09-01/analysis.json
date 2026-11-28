@@ -1,0 +1,306 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "MAR",
+ "company": "Marriott International, Inc.",
+ "as_of": "2017-09-01",
+ "price_date": "2017-09-01",
+ "price": 103.8,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); hotel signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "Marriott: 'Consistent with our focus on management, franchising, and licensing, we own very few of our lodging properties'; 'We operate, franchise, or license 6,080 properties worldwide, with 1,190,604 rooms as of year-end 2016'; 'Our industry is highly competitive, which may impact our ability to compete successfully with other hotel properties and home and apartment sharing services for customers'; 'Economic uncertainty could continue to impact our financial results and growth'; 'An increase in the use of third-party Internet services to book online hotel reservations could adversely impact our business'; 'Our 2016 results reflected a year-over-year increase in the number of properties in our system, favorable demand for our brands in many markets around the world, and slow but steady economic growth'; and 'On September 23, 2016 (the “Merger Date”), we completed the acquisition of Starwood Hotels & Resorts Worldwide, LLC, formerly known as Starwood Hotels & Resorts Worldwide, Inc.' ... 'Our combined company now operates or franchises over 6,000 properties with nearly 1.2 million rooms' (its own FY2016 10-K): a hotel management and franchise system whose fees follow the revenues and profits of its hotels through the economy, by its own account; no disruption theme is live for it",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "Marriott: 'Consistent with our focus on management, franchising, and licensing, we own very few of our lodging properties'; 'We operate, franchise, or license 6,080 properties worldwide, with 1,190,604 rooms as of year-end 2016'; 'Our industry is highly competitive, which may impact our ability to compete successfully with other hotel properties and home and apartment sharing services for customers'; 'Economic uncertainty could continue to impact our financial results and growth'; 'An increase in the use of third-party Internet services to book online hotel reservations could adversely impact our business'; 'Our 2016 results reflected a year-over-year increase in the number of properties in our system, favorable demand for our brands in many markets around the world, and slow but steady economic growth'; and 'On September 23, 2016 (the “Merger Date”), we completed the acquisition of Starwood Hotels & Resorts Worldwide, LLC, formerly known as Starwood Hotels & Resorts Worldwide, Inc.' ... 'Our combined company now operates or franchises over 6,000 properties with nearly 1.2 million rooms' (its own FY2016 10-K): a hotel management and franchise system whose fees follow the revenues and profits of its hotels through the economy, by its own account; no disruption theme is live for it. durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.35x; +33% to EPP floor; model-vs-market gap +1.04; conservative 2yr +160%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.35,
+  "ratio_b_fmt": "0.35x",
+  "epp": 78.28,
+  "epp_gap_pct": 32.6,
+  "epp_adj": 0.0,
+  "proxy_composite": 2.3,
+  "sca": 0.168,
+  "adj_composite": 2.467,
+  "market_composite": 1.43,
+  "adj_gap": 1.04,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 160.1,
+  "scenarios": {
+   "BEAR": {
+    "eps": 1.61,
+    "pe": 19.4,
+    "price": 31,
+    "desc": "EPS -37.6%/yr (worst year FY07-FY16, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 11.9,
+    "pe": 23.6,
+    "price": 281,
+    "desc": "EPS +69.9%/yr (Q3 fee guide + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 11.9,
+    "pe": 26.4,
+    "price": 314,
+    "desc": "EPS +69.9%/yr (FY07-FY16 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 11.9,
+    "pe": 30.5,
+    "price": 363,
+    "desc": "EPS +69.9%/yr (best 2-yr run FY07-FY16); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.35,
+   "epp_gap_pct": 32.6,
+   "adj_gap": 1.04,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 160.1,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.27,
+   "epp_gap_pct": 32.6,
+   "adj_gap": 1.12,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 160.1,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 0.43,
+   "epp_gap_pct": 32.6,
+   "adj_gap": 0.97,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 160.1,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.33,
+   "epp_gap_pct": 32.6,
+   "adj_gap": 1.06,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 160.1,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.37,
+   "epp_gap_pct": 32.6,
+   "adj_gap": 1.02,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 160.1,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.35,
+   "epp_gap_pct": 32.6,
+   "adj_gap": 1.34,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 160.1,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.35,
+   "epp_gap_pct": 14.5,
+   "adj_gap": 1.04,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 160.1,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.35,
+   "epp_gap_pct": 32.6,
+   "adj_gap": 1.1,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 160.1,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "MAR (retrospective, 2017-09-01) ◉ BUY — Ratio B 0.35x (70.1% downside to Bear $31 / +202.5% upside to Bull $314) | Adj composite 2.47 vs market 1.43: gap +1.04 [UNDERVALUED] | +33% above the EPP floor $78 (19x FY17E $4.12) | Conservative 2-yr case: +160.1% total (+80.1%/yr) | At 25.2x FY17E the 15% hurdle price $137 sits at or below the BASE case; North American RevPAR +1.1% in Q2 2017, forward fee revenue +64.97-68.02% (Q3 2017 fee revenue guide); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "MA83",
+   "published": "2017-02-21",
+   "title": "Marriott International FY2016 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828017001506/mar-q42016x10k.htm",
+   "supports": "selected financial data, segments, cash flow, dividend, risk factors; the Starwood acquisition"
+  },
+  {
+   "id": "MA82",
+   "published": "2017-02-16",
+   "title": "Marriott International Q4 2016 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828017001392/mar-2016q4earningsreleasee.htm",
+   "supports": "Q4 2016 print, FY2016 actuals, FY2017 and Q1 2017 guides"
+  },
+  {
+   "id": "MA49",
+   "published": "2012-02-16",
+   "title": "Marriott International Q4 2011 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312512063574/d297630dex99.htm",
+   "supports": "Q4 2011 print and FY2011 actuals as adjusted for the timeshare spin-off; FY2012 and Q1 2012 guides"
+  },
+  {
+   "id": "MA34",
+   "published": "2010-02-11",
+   "title": "Marriott International Q4 2009 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312510028013/dex99.htm",
+   "supports": "Q4 2009 print (16 weeks), FY2009 adjusted actuals, FY2010 and Q1 2010 guides"
+  },
+  {
+   "id": "MA40",
+   "published": "2011-02-15",
+   "title": "Marriott International Q4 2010 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312511035394/dex99.htm",
+   "supports": "Q4 2010 print, FY2010 actuals, FY2011 and Q1 2011 guides"
+  },
+  {
+   "id": "MA55",
+   "published": "2013-02-20",
+   "title": "Marriott International Q4 2012 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312513065389/d485573dex99.htm",
+   "supports": "Q4 2012 print, FY2012 actuals, FY2013 and Q1 2013 guides"
+  },
+  {
+   "id": "MA63",
+   "published": "2014-02-20",
+   "title": "Marriott International Q4 2013 earnings release (8-K, Ex. 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312514058917/d679808dex992.htm",
+   "supports": "Q4 2013 print, FY2013 actuals, FY2014 and Q1 2014 guides"
+  },
+  {
+   "id": "MA35",
+   "published": "2010-02-16",
+   "title": "Marriott International FY2009 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312510030603/d10k.htm",
+   "supports": "selected financial data, segments, cash flow, dividend, risk factors; the third 2009 stock dividend's ratio"
+  },
+  {
+   "id": "MA76",
+   "published": "2016-02-18",
+   "title": "Marriott International FY2015 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828016011346/mar-q42015x10k.htm",
+   "supports": "selected financial data, segments, cash flow, dividend, risk factors; the pending Starwood merger"
+  },
+  {
+   "id": "MA1",
+   "published": "1999-03-16",
+   "title": "Marriott International FY1998 Form 10-K405",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000092838599000780/0000928385-99-000780.txt",
+   "supports": "the March 27, 1998 spinoff: no stock price data before it ('we were not a publicly-held company during that time')"
+  },
+  {
+   "id": "MA84",
+   "published": "2017-05-09",
+   "title": "Marriott International Q1 2017 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828017005170/mar-2017q1earningsreleasee.htm",
+   "supports": "Q1 2017 print; FY2017 and Q2 2017 guides"
+  },
+  {
+   "id": "MA86",
+   "published": "2017-08-08",
+   "title": "Marriott International Q2 2017 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828017008232/mar-2017q2earningsreleasee.htm",
+   "supports": "Q2 2017 print; FY2017 and Q3 2017 guides"
+  },
+  {
+   "id": "MA81",
+   "published": "2016-11-08",
+   "title": "Marriott International Q3 2016 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828016020960/mar-2016q3earningsreleasee.htm",
+   "supports": "Q3 2016 print; Q4 2016 guide for the combined company; FY2017 outlook"
+  },
+  {
+   "id": "MA85",
+   "published": "2017-05-09",
+   "title": "Marriott International Q1 2017 Form 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828017005211/mar-q12017x10q.htm",
+   "supports": "the quarterly cash dividend of $0.33 a share declared on May 5, 2017"
+  },
+  {
+   "id": "MA12",
+   "published": "2007-02-21",
+   "title": "Marriott International FY2006 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312507035757/d10k.htm",
+   "supports": "selected financial data 1999-2006, segments, synthetic fuel lines 2004-2006, RevPAR statistics, cash flow, dividend, risk factors"
+  },
+  {
+   "id": "MA27",
+   "published": "2009-05-05",
+   "title": "Marriott International 8-K/A of 2009-05-05 (Ex. 99.1, stock dividend)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000118143109022814/rrd241247_28284.htm",
+   "supports": "a stock dividend of 0.00369 share per share (record date June 25, 2009), paid in place of the cash dividend"
+  },
+  {
+   "id": "MA31",
+   "published": "2009-10-09",
+   "title": "Marriott International Q3 2009 Form 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312509206036/d10q.htm",
+   "supports": "the second stock dividend's ratio, 0.00379 share per share (record date August 20, 2009)"
+  },
+  {
+   "id": "MA47",
+   "published": "2011-10-26",
+   "title": "Marriott International 8-K of 2011-10-26 (Ex. 99, spin-off approved)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312511281516/d247139dex99.htm",
+   "supports": "the spin-off of Marriott Vacations Worldwide: one share for every ten Marriott shares, record date November 10, distribution November 21, 2011"
+  },
+  {
+   "id": "MA48",
+   "published": "2011-11-21",
+   "title": "Marriott International 8-K of 2011-11-21 (spin-off completed)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312511317838/d257339d8k.htm",
+   "supports": "the spin-off of Marriott Vacations Worldwide completed on November 21, 2011"
+  },
+  {
+   "id": "MA60",
+   "published": "2013-10-07",
+   "title": "Marriott International 8-K of 2013-10-07 (Item 3.01, transfer of listing)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312513392754/d607930d8k.htm",
+   "supports": "the listing moved from the NYSE to NASDAQ, trading there from October 21, 2013"
+  },
+  {
+   "id": "W0",
+   "published": "2017-09-01",
+   "title": "Yahoo Finance daily prices, MAR and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/MAR/history",
+   "supports": "close $103.80 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-09"
+}

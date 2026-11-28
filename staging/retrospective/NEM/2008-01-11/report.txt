@@ -1,0 +1,149 @@
+
+════════════════════════════════════════════════════════════════════════
+  NEM  ·  Newmont Mining Corporation  ·  $54.72  ·  RETROSPECTIVE as of 2008-01-11
+  Signal: ◉ BUY   Ratio B: 0.33x   Adj gap: +1.31  [UNDERVALUED]
+  Point-in-time: 7 sources, latest published 2008-01-11; latest print Q3 2007 (Oct 31)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2007E revenue, USD bn  →  FY2009E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2007E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Gold                          $  6.45  $ 6.45  $ 9.18    +0.00    +2.73
+    +17.3% revenue in FY06
+  Copper                        $  1.00  $ 1.00  $ 1.43    +0.00    +0.43
+    -0.1% revenue in FY06
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $  7.45  $ 7.45  $10.61    +0.00    +3.16
+  FY2007E = FY06 $4.987B × (1 + 49.4%: the Q3 2007 revenue growth (no revenue guide), YoY, applied to the year (no FY07 revenue guide)); split pro rata to FY06 sales by metal, net (8-K of 2007-10-16)
+  Q3 2007 (Oct 31): revenue $1.646B +49.4% YoY; gold ounces sold -4.9%; costs applicable to sales $388/oz (+22.0%);
+  pre-tax margin 36.88% (+1881.9bp); EPS $0.72 vs $0.09 (+700.0%)
+  Revenue: revenues $1,646M vs $1,102M a year earlier; consolidated gold ounces sold 1,614K vs 1,698K; costs applicable to sales $388 an ounce of gold vs $318; GAAP diluted EPS from continuing operations $0.72 vs $0.09; diluted shares 453M
+  FY07 outlook (Q3 2007 release, 2007-10-31, display only): 'we are narrowing our outlook for equity gold sales to between 5.2 and 5.4 million ounces at costs applicable to sales of between $400 and $430 per ounce for 2007.' — a volume and unit-cost outlook: method r2 has no input for a production guide (the XOM rule) or for cost components (the MSFT segment rule), so no field; no filing guides revenue, EPS or a margin; BASE takes Q3 2007 revenue growth
+
+  FY2007E EPS check:  $7.450B × 24.7% pre-tax × (1−27.4%) ÷ 0.453B  =  $2.95  (FY2007E: no EPS guide in numbers, FY06's $1.18 (GAAP) stands)
+  FY2009E BEAR check: $7.450B × 24.7% ÷ 0.496B  =  $2.69  (scenario $0.51)
+  FY2009E BULL check: $10.610B × 25.1% ÷ 0.496B  =  $3.89  (scenario $2.47)
+  Every 1pp of pre-tax margin ≈ $0.119 EPS ≈ $5.43/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Gold ounces sold                      -27.0%   ≥-13.0%     ≥1.0%    ≥40.0%     -4.9%  ◦ BASE  ██░░
+  Costs applicable to sales per oz      +52.0%    ≤28.0%     ≤5.0%   ≤-14.0%    +22.0%  ◦ BASE  ██░░
+  Revenue growth                        -33.0%   ≥-10.0%    ≥13.0%    ≥55.0%    +49.4%  ▲ BULL  ███░
+  EPS growth                           -106.0%   ≥-34.0%    ≥38.0%   ≥297.0%   +700.0%  ★ XBULL  ████
+  Pre-tax margin change               -8210.0bp  ≥-4020.0bp  ≥180.0bp  ≥3780.0bp  +1881.9bp  ▲ BULL  ███░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.60 / 4.00
+  Market composite:   1.51 / 4.00  (back-solved from $54.72 + 15% hurdle)
+  SCA adjustment:    +0.22  ·  EPP-distance adj +0.00  →  Adj composite 2.82  →  Gap +1.31  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY06 consolidated gold ounces sold 7,361K (-12.7%), costs applicable to sales $304/oz (+28.3%) (FY2006 10-K); Q3 $388/oz (+22.0% YoY)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 46.4x FY07E vs a 45.5x 6.0-yr median (52nd percentile of its own range)  (-0.03 × 25%  =  -0.007)
+    +  Growth vs own history: Q3 2007 revenue growth (no revenue guide) +49.4% vs a 17.9% 4-yr median  (+0.50 × 20%  =  +0.100)
+    +  Cash and cash equivalents $1.053B, debt $3,033M (long-term $2,745M and current portion $288M) (Q3 2007), FY06 free cash flow $-0.412B (net cash provided from continuing operations $1,133M less additions to property, plant and mine development $1,545M (8-K of 2007-10-16)), dividend $0.40 a year  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Gold ounces sold                       -4.9%    -27.0%  -22.1%  Grades, recoveries and mine sequencin…
+  Costs applicable to sales per oz      +22.0%    +52.0%  +30.0%  Labor, fuel, power and currencies lif…
+  Revenue growth                        +49.4%    -33.0%  -82.4%  Gold and copper prices and volumes fa…
+  EPS growth                           +700.0%   -106.0%  -806.0%  Write-downs and unit costs outrun the…
+  Pre-tax margin change               +1881.9bp  -8210.0bp  -10091.9bp  Unit costs and charges outrun the met…
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$48.87  (model)  /  $16.37 (defined)
+  Bear probability (proxy model):  7.5%
+
+  KEY TRIGGER: gold ounces sold went from -21.4% (Q2 2007) to -4.9% YoY (Q3 2007), revenue +49.4%;
+  the bear case needs unit costs (+22.0% per ounce now) rising faster than the metal
+  price, with the pre-tax margin (+1881.9bp now) giving way. A gold miner's downturn shows up in unit costs and ounces first;
+  the bear needs the gold price to stop covering them.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $1.18  (FY2007E: no EPS guide in numbers, FY06's $1.18 (GAAP) stands)
+  Min viable P/E at panic:          38x  [median of calendar-year P/E lows: 2002 64.5x, 2003 21.2x, 2004 38.9x, 2005 58.5x, 2006 34.6x, 2007 32.7x, 2008 43.7x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $44.84/share
+  Current $54.72 vs Updated EPP $44.84:  +22%  moderate distance to floor
+  Bear $16.37 vs Updated EPP $44.84:  -63%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Gold ounces sold                             -13.0       -8.1   BASE floor (vs -5 now)
+  Costs applicable to sales per oz              28.0       +6.0   BASE floor (vs +22 now)
+  Revenue growth                               -10.0      -59.4   BASE floor (vs +49 now)
+  EPS growth                                   -34.0     -734.0   BASE floor (vs +700 now)
+  Pre-tax margin change                      -4020.0    -5901.9   BASE floor (vs +1882 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $1.18 × (1+42.7%)² = $2.40
+  At 45x P/E (conservative):  $108.14/share
+  + Cumul. dividends (2yr):  +$0.82/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $108.14  (▲53.42 from $54.72)
+  Conservative total return:  +99% over 2yr  = +50%/yr
+
+  At 46.4x the multiple is already near its 45x median, so the conservative
+  case is a growth question: breakeven at 45x needs FY2009E EPS of $1.20,
+  i.e. 0.7%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $38.01  –  $56.35  (at 91th pct of range)
+  Annual dividend:      $0.40/share  (yield 0.7%)
+  Realized vol:         31% annualized (1-yr daily log returns)
+  Beta vs broad market: 0.93
+  1-sigma range (1yr):  $37.76  –  $71.68  ($54.72 ± 31%)
+  2-sigma range (1yr):  $20.79  –  $88.65
+  ────────────────────────────────────────────────────────────
+  Bear $16.37 requires:  ~2.3σ price move  (unusual — requires fundamental break)
+  A gold producer whose revenue follows the gold price: the stock is +42% off its June
+  low (52 weeks) while gold ounces sold went from -21.4% (Q2 2007) to -4.9% YoY (Q3 2007), revenue +49.4%.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        0.51   32.1x  $  16.37     7.5%     52.3%   -44.7pp  EPS -34.1%/yr (worst year FY02-FY06, capped at 0%); P/E to its 10th pct
+  BASE        2.47   45.5x  $ 112.39    26.3%     35.6%    -9.3pp  EPS +44.7%/yr (Q3 revenue YoY + margin + buyback); P/E at its 6.0-yr median
+  BULL        2.47   69.3x  $ 171.17    55.7%     10.2%   +45.5pp  EPS +44.7%/yr (FY02-FY06 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL       3.70   87.4x  $ 323.38    10.5%      1.9%    +8.6pp  EPS +77.1%/yr (best 2-yr run FY02-FY06, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $160.06  /  Market EV: $72.28  /  Current: $54.72
+  Conservative EV (2yr, ④): $108.14 + $0.82 divs = $108.97 total value
+  Downside (→ Bear $16.37): 70.1%   Upside (→ Bull $171.17): 212.8%   Ratio B 0.33x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $54.72 the market needs $72.37 in two years —
+  at or below the BASE case. That is a market composite of 1.51 against a model
+  read of 2.82: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.33x     +22%    +1.31  UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.22x     +22%    +1.52  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.73x     +22%    +1.09  UNDERVALUED / BUY
+  Scenario EPS +1.5pp/yr                          0.31x     +22%    +1.33  UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.35x     +22%    +1.29  UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.33x     +22%    +1.61  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.33x     +13%    +1.31  UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.33x     +22%    +1.37  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 and full-year print with the 10-K (February) — revenue against the Q3 2007 revenue growth (no revenue guide): +49.4% YoY
+  (2) Unit costs — costs applicable to sales +22.0% per ounce in Q3 2007: what must hold if the gold price does not
+  (3) The FY07 outlook — gold sales and unit costs, not revenue or EPS (Q3 2007 release): the gold price sets revenue
+  (4) Ounces — consolidated gold ounces sold -4.9% in Q3 2007 against revenue +49.4%: the metal price, not volume, has carried revenue
+  (5) Capital structure at 46x — dividend $0.10 a quarter; no repurchase program in the FY2006 10-K
+  ◉ BUY  |  EPP floor $44.84  |  ADD below ~$95.53  |  TRIM above $171.17
+════════════════════════════════════════════════════════════════════════
+

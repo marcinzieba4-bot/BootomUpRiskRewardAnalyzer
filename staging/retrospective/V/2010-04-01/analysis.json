@@ -1,0 +1,222 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "V",
+ "company": "Visa Inc.",
+ "as_of": "2010-04-01",
+ "price_date": "2010-04-01",
+ "price": 92.55,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); revenue, net-to-gross, expense, receivables and operating-margin signals with Visa's rule-T thresholds",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'Visa operates the world’s largest retail electronic payments network and manages a leading global payments brand.' 'We depend heavily upon the overall level of consumer, business and government spending.' 'Within the general purpose payment card industry, we face substantial and intense competition worldwide in the provision of payments services to financial institution customers and their cardholder merchants.' 'Interchange reimbursement fees and related practices have been the topic of recent committee hearings in the U.S. House of Representatives and the U.S. Senate, as well as conferences held by a number of U.S. Federal Reserve Banks.'; no 10-K calls the business cyclical (the economy and spending are a 'why', not the company's own label: the LOW, SHW and JPM reading), so the kind is DURABLE; no disruption theme in taxonomy_eras.json is live for a payments network on these dates, so the watch list is empty",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "'Visa operates the world’s largest retail electronic payments network and manages a leading global payments brand.' 'We depend heavily upon the overall level of consumer, business and government spending.' 'Within the general purpose payment card industry, we face substantial and intense competition worldwide in the provision of payments services to financial institution customers and their cardholder merchants.' 'Interchange reimbursement fees and related practices have been the topic of recent committee hearings in the U.S. House of Representatives and the U.S. Senate, as well as conferences held by a number of U.S. Federal Reserve Banks.'; no 10-K calls the business cyclical (the economy and spending are a 'why', not the company's own label: the LOW, SHW and JPM reading), so the kind is DURABLE; no disruption theme in taxonomy_eras.json is live for a payments network on these dates, so the watch list is empty. durable franchise (obsolescence risk 2/5); price rich; Ratio B 4.27x; +99% to EPP floor; model-vs-market gap -1.72; conservative 2yr -12%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": 4.27,
+  "ratio_b_fmt": "4.27x",
+  "epp": 46.5,
+  "epp_gap_pct": 99.0,
+  "epp_adj": -0.1,
+  "proxy_composite": 2.15,
+  "sca": 0.0,
+  "adj_composite": 2.05,
+  "market_composite": 3.77,
+  "adj_gap": -1.72,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": -12.2,
+  "scenarios": {
+   "BEAR": {
+    "eps": 3.1,
+    "pe": 16.6,
+    "price": 51.46,
+    "desc": "Flat EPS (no EPS change in FY09-FY09 to measure: the 0% cap); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 3.96,
+    "pe": 21.5,
+    "price": 85.14,
+    "desc": "EPS +13.0%/yr (FY10 revenue guide + margin + buyback); P/E at its 1.5-yr median"
+   },
+   "BULL": {
+    "eps": 3.96,
+    "pe": 25.8,
+    "price": 102.17,
+    "desc": "EPS +13.0%/yr (no FY09-FY09 CAGR to measure: BASE's rate); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 3.96,
+    "pe": 28.0,
+    "price": 110.88,
+    "desc": "EPS +13.0%/yr (no 2-yr run in FY09-FY09: BULL's rate); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 4.27,
+   "epp_gap_pct": 99.0,
+   "adj_gap": -1.72,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -12.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 2.06,
+   "epp_gap_pct": 99.0,
+   "adj_gap": -1.72,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -12.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 99.0,
+   "adj_gap": -1.85,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -12.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 3.11,
+   "epp_gap_pct": 99.0,
+   "adj_gap": -1.72,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -12.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 6.48,
+   "epp_gap_pct": 99.0,
+   "adj_gap": -1.72,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -12.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 4.27,
+   "epp_gap_pct": 99.0,
+   "adj_gap": -1.42,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -12.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 4.27,
+   "epp_gap_pct": 65.9,
+   "adj_gap": -1.72,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -12.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 4.27,
+   "epp_gap_pct": 99.0,
+   "adj_gap": -1.72,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -12.2,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "RICH"
+ ],
+ "summary": "V (retrospective, 2010-04-01) ✕ AVOID — Ratio B 4.27x (44.4% downside to Bear $51.46 / +10.4% upside to Bull $102.17) | Adj composite 2.05 vs market 3.77: gap -1.72 [OVERVALUED] | +99% above the EPP floor $46.50 (15x FY10E $3.10) | Conservative 2-yr case: -12.2% total (-6.1%/yr) | At 29.9x FY10E the 15% hurdle price $122.40 sits above the BULL case; revenue +12.7% YoY in Q1 FY10, forward revenues +11-15% (FY10 net revenue growth guide); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "V11",
+   "published": "2009-11-23",
+   "filed": "accepted 2009-11-20 16:07 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-K for the fiscal year ended September 30, 2009",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312509239249/d10k.htm",
+   "supports": "fiscal 2009 statements of operations and cash flows, selected data, diluted class A EPS and shares, Item 1, 1A and 5 wording"
+  },
+  {
+   "id": "V6",
+   "published": "2008-10-30",
+   "filed": "accepted 2008-10-29 16:46 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q4 and full-year 2008 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312508219089/dex991.htm",
+   "supports": "fiscal 2008 GAAP and adjusted net income and diluted class A EPS, the reconciliation of the adjustments, the effective tax rate, and 'no comparable earnings per share measure for 2007'"
+  },
+  {
+   "id": "V10",
+   "published": "2009-10-28",
+   "filed": "accepted 2009-10-27 16:13 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q4 and full-year 2009 results (8-K ex.99.1, with the ex.99.2 presentation)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312509214847/dex991.htm",
+   "supports": "Q4 FY09 and fiscal 2009 revenues, incentives, expenses, operating and pre-tax income, taxes, diluted class A EPS and shares against Q4 FY08 and fiscal 2008; receivables, cash and debt; the FY2010 outlook; the presentation's gross revenues"
+  },
+  {
+   "id": "V8",
+   "published": "2009-07-30",
+   "filed": "accepted 2009-07-29 16:29 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q3 2009 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312509158179/dex991.htm",
+   "supports": "Q3 FY09 revenues, incentives, expenses, operating income, diluted class A EPS and shares against Q3 FY08; the five-quarter revenue table; receivables; the financial outlook through 2010"
+  },
+  {
+   "id": "V20",
+   "published": "2010-02-04",
+   "filed": "accepted 2010-02-03 16:13 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q1 2010 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312510020769/dex991.htm",
+   "supports": "Q1 FY10 revenues, client incentives, expenses, operating income, diluted class A EPS and shares against the year-ago quarter; receivables, cash and debt; the financial outlook"
+  },
+  {
+   "id": "V12",
+   "published": "2009-02-09",
+   "filed": "accepted 2009-02-09 15:47 ET (during market hours)",
+   "title": "Visa Inc. 10-Q for the quarter ended December 31, 2008",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312509022518/d10q.htm",
+   "supports": "accounts receivable at December 31, 2008 (the year-ago balance for the Q1 FY10 print)"
+  },
+  {
+   "id": "V9",
+   "published": "2009-10-21",
+   "filed": "accepted 2009-10-21 08:22 ET (before the open)",
+   "title": "Visa Inc. 8-K of 2009-10-21: quarterly dividend declared, rate up 19% (ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312509210766/dex991.htm",
+   "supports": "the declared quarterly dividend, $0.125 a class A share"
+  },
+  {
+   "id": "Y0",
+   "published": "2010-04-01",
+   "title": "Yahoo Finance daily prices, V and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/V/history",
+   "supports": "close $92.55 as traded on AS_OF, 52-week range, realized vol, beta, the 1.5-yr P/E distribution from 2008-10-01"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-20"
+}

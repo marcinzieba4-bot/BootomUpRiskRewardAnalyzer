@@ -1,0 +1,200 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "PFE",
+ "company": "Pfizer Inc",
+ "as_of": "2009-09-04",
+ "price_date": "2009-09-04",
+ "price": 16.39,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); pharmaceutical signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'is a research-based, global pharmaceutical company. We discover, develop, manufacture and market leading prescription medicines for humans and animals' (FY2008 10-K, Item 1); 'Competition from manufacturers of generic drugs is a major challenge for us around the world. Upon the expiration or loss of patent protection for one of our products ... we can lose the major portion of sales of that product in a very short period' (Item 1A); Lipitor's U.S. basic product patent 'expires in March 2010', the enantiomer patent 'expires in June 2011' (both including the pediatric exclusivity period); 'Our businesses are conducted in intensely competitive and often highly regulated markets'",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "'is a research-based, global pharmaceutical company. We discover, develop, manufacture and market leading prescription medicines for humans and animals' (FY2008 10-K, Item 1); 'Competition from manufacturers of generic drugs is a major challenge for us around the world. Upon the expiration or loss of patent protection for one of our products ... we can lose the major portion of sales of that product in a very short period' (Item 1A); Lipitor's U.S. basic product patent 'expires in March 2010', the enantiomer patent 'expires in June 2011' (both including the pediatric exclusivity period); 'Our businesses are conducted in intensely competitive and often highly regulated markets'. durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.62x; -20% to EPP floor; model-vs-market gap +0.46; conservative 2yr +67%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.62,
+  "ratio_b_fmt": "0.62x",
+  "epp": 20.62,
+  "epp_gap_pct": -20.5,
+  "epp_adj": 0.2,
+  "proxy_composite": 1.95,
+  "sca": 0.15,
+  "adj_composite": 2.3,
+  "market_composite": 1.84,
+  "adj_gap": 0.46,
+  "valuation": "MODESTLY UNDERVALUED",
+  "cons_return_2yr": 67.4,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.7,
+    "pe": 11.8,
+    "price": 8,
+    "desc": "EPS -28.7%/yr (worst year FY04-FY08, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 1.3,
+    "pe": 19.6,
+    "price": 25,
+    "desc": "EPS +-2.7%/yr (FY09 guide + margin + buyback); P/E at its 5.7-yr median"
+   },
+   "BULL": {
+    "eps": 1.3,
+    "pe": 23.1,
+    "price": 30,
+    "desc": "EPS +-2.7%/yr (FY04-FY08 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 1.59,
+    "pe": 25.8,
+    "price": 41,
+    "desc": "EPS +7.6%/yr (best 2-yr run FY04-FY08); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.62,
+   "epp_gap_pct": -20.5,
+   "adj_gap": 0.46,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 67.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.31,
+   "epp_gap_pct": -20.5,
+   "adj_gap": 0.74,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 67.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 1.09,
+   "epp_gap_pct": -20.5,
+   "adj_gap": 0.0,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 67.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.51,
+   "epp_gap_pct": -20.5,
+   "adj_gap": 0.54,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 67.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.67,
+   "epp_gap_pct": -20.5,
+   "adj_gap": 0.45,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 67.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.62,
+   "epp_gap_pct": -20.5,
+   "adj_gap": 0.76,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 67.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.62,
+   "epp_gap_pct": -33.8,
+   "adj_gap": 0.46,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 67.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.62,
+   "epp_gap_pct": -20.5,
+   "adj_gap": 0.6,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 67.4,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "PFE (retrospective, 2009-09-04) ◉ BUY — Ratio B 0.62x (51.2% downside to Bear $8 / +83.0% upside to Bull $30) | Adj composite 2.30 vs market 1.84: gap +0.46 [MODESTLY UNDERVALUED] | -21% above the EPP floor $21 (15x FY09E $1.38) | Conservative 2-yr case: +67.4% total (+33.7%/yr) | At 11.9x FY09E the 15% hurdle price $22 sits at or below the BASE case; U.S. revenues -4.9% in Q2 2009, forward revenues -6.8% to -4.8% (FY09 revenue guide); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "PF19",
+   "published": "2009-02-27",
+   "filed": "2009-02-27 12:59 ET",
+   "title": "Pfizer FY2008 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000119312509040568/dex13.htm",
+   "supports": "financial summary 2003-2008 (2008 revenues $48,296M, diluted EPS from continuing operations $1.19); statement of income 2006-2008; geographic and segment data; cash flows; dividends; Item 1 and Item 1A wording"
+  },
+  {
+   "id": "PF17",
+   "published": "2009-01-26",
+   "filed": "2009-01-26 07:38 ET (before the open)",
+   "title": "Pfizer Q4 2008 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000115752309000451/a5879454ex99.htm",
+   "supports": "fourth-quarter and full-year 2008 statements of income and revenues by U.S. and international; 2009 guidance"
+  },
+  {
+   "id": "PF20",
+   "published": "2009-04-28",
+   "filed": "2009-04-28 08:30 ET (before the open)",
+   "title": "Pfizer Q1 2009 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000115752309003033/a5950213ex99.htm",
+   "supports": "first-quarter 2009 statement of income and revenues by U.S. and international; 2009 guidance"
+  },
+  {
+   "id": "PF21",
+   "published": "2009-07-22",
+   "filed": "2009-07-22 08:45 ET (before the open)",
+   "title": "Pfizer Q2 2009 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000115752309004987/a6011824ex99.htm",
+   "supports": "second-quarter 2009 statement of income and revenues by U.S. and international; 2009 guidance"
+  },
+  {
+   "id": "W0",
+   "published": "2009-09-04",
+   "title": "Yahoo Finance daily prices, PFE and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/PFE/history",
+   "supports": "close $16.39 as traded on AS_OF, 52-week range, realized vol, beta, the 5.7-yr P/E distribution"
+  }
+ ],
+ "warnings": [
+  "calendar year(s) 2010, 2011, 2070 after 2009 outside FY labels — make sure they are forecasts"
+ ],
+ "generated": "2026-11-10"
+}

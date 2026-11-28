@@ -1,0 +1,149 @@
+
+════════════════════════════════════════════════════════════════════════
+  JPM  ·  JPMorgan Chase & Co.  ·  $138.73  ·  RETROSPECTIVE as of 2023-04-14
+  Signal: ◉ BUY   Ratio B: 0.63x   Adj gap: +1.14  [UNDERVALUED]
+  Point-in-time: 11 sources, latest published 2023-04-14; latest print Q1 2023 (Apr 14)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2023E revenue, USD bn  →  FY2025E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2023E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Noninterest revenue           $ 77.36  $77.36  $82.30    +0.00    +4.94
+    -10.6% revenue in FY22
+  Net interest income           $ 83.25  $83.25  $88.58    +0.00    +5.33
+    +27.5% revenue in FY22
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $160.61  $160.61  $170.88    +0.00   +10.27
+  FY2023E = FY22 $128.695B × (1 + 24.8%: the Q1 2023 revenue growth (no Q2 2023 guide), YoY, applied to the year (no FY23 revenue guide)); split pro rata to FY22 total net revenue by component, reported basis (FY22 growth)
+  Q1 2023 (Apr 14): total net revenue $38.349B +24.8% YoY (+11.0% QoQ); nonperforming assets -13.8% (loans +5.2%); noninterest expense +4.8%;
+  provision 5.93% of revenue (+117.0bp); pre-tax margin 41.64% (+887.6bp); EPS $4.10 vs $2.63
+  Revenue: total net revenue $38,349M vs $30,717M a year earlier, $34,547M the quarter before (reported basis); provision for credit losses $2,275M vs $1,463M; nonperforming assets $7,418M vs $8,605M a year earlier; loans $1,128,896M vs $1,073,285M; GAAP diluted EPS $4.10 vs $2.63 (the supplement prints no figure excluding merger costs); diluted shares 2,972.7M; Tier 1 capital ratio 15.4%; cash dividends declared $1.00 a share in the quarter
+  Q2 2023: no revenue, EPS or margin guide in numbers in any filing; the latest quarter's revenue growth stands in (the UNP rule); the releases, 10-Qs and investor slides give credit-loss and segment outlooks only, which method r2 has no input for
+
+  FY2023E EPS check:  $160.610B × 35.9% pre-tax × (1−18.4%) ÷ 2.973B  =  $15.83  (FY2023E: no EPS guide in numbers, FY22's $12.09 stands)
+  FY2025E BEAR check: $160.610B × 35.9% ÷ 2.799B  =  $16.81  (scenario $7.49)
+  FY2025E BULL check: $170.880B × 36.3% ÷ 2.799B  =  $18.09  (scenario $19.74)
+  Every 1pp of pre-tax margin ≈ $0.441 EPS ≈ $4.89/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Net revenue growth                    -33.0%   ≥-12.0%    ≥10.0%    ≥29.0%    +24.8%  ▲ BULL  ███░
+  Credit cost (provision/revenue)     +1340.0bp  ≤670.0bp    ≤0.0bp  ≤-1020.0bp  +117.0bp  ◦ BASE  ██░░
+  Expense growth less revenue          +65.0pp   ≤29.0pp   ≤-7.0pp  ≤-17.0pp   -20.1pp  ★ XBULL  ████
+  Nonperforming assets less loans     +231.0pp  ≤109.0pp  ≤-12.0pp  ≤-85.0pp   -19.0pp  ▲ BULL  ███░
+  Pre-tax margin change               -3910.0bp  ≥-1760.0bp  ≥400.0bp  ≥2200.0bp  +887.6bp  ▲ BULL  ███░
+  Crypto: disintermediation of payments and banking    +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.80 / 4.00
+  Market composite:   1.83 / 4.00  (back-solved from $138.73 + 15% hurdle)
+  SCA adjustment:    +0.18  ·  EPP-distance adj +0.00  →  Adj composite 2.97  →  Gap +1.14  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY22 total net revenue +5.8%, provision 5.0% of revenue; Q1 provision 5.9% of revenue (+117bp YoY)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 11.5x FY23E vs a 11.1x 10-yr median (62nd percentile of its own range)  (-0.20 × 25%  =  -0.050)
+    +  Growth vs own history: Q1 2023 revenue growth (no Q2 2023 guide) +24.8% vs a 3.7% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  Tier 1 capital ratio 15.4%, nonperforming assets $7.418B (-13.8% YoY) at the end of Q1 2023, dividend $4.00 a year  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Net revenue growth                    +24.8%    -33.0%  -57.8%  Markets and fee revenue fall with the…
+  Credit cost (provision/revenue)     +117.0bp  +1340.0bp  +1223.0bp  Loan losses and reserve builds take m…
+  Expense growth less revenue          -20.1pp   +65.0pp  +85.1pp  Noninterest expense does not fall wit…
+  Nonperforming assets less loans      -19.0pp  +231.0pp  +250.0pp  Problem assets grow faster than the l…
+  Pre-tax margin change               +887.6bp  -3910.0bp  -4797.6bp  Credit costs and expenses outrun revenue
+  Crypto: disintermediation of payments and banking    +2.0/4    +1.0/4  -1.0/4  Payments move to crypto rails that ne…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$115.16  (model)  /  $72.65 (defined)
+  Bear probability (proxy model):  5.2%
+
+  KEY TRIGGER: revenue went from +18.1% (Q4 2022) to +24.8% YoY (Q1 2023), +11.0% on the quarter before;
+  the bear case needs credit costs (+117.0bp of revenue now) rising further
+  and nonperforming assets (-19.0pp against loans) outgrowing the loan book. A credit downturn shows up in nonperforming assets and the provision first;
+  the bear needs it in net revenue as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $12.09  (FY2023E: no EPS guide in numbers, FY22's $12.09 stands)
+  Min viable P/E at panic:          9x  [median of calendar-year P/E lows: 2013 10.7x, 2014 10.1x, 2015 9.1x, 2016 8.6x, 2017 12.0x, 2018 10.2x, 2019 9.1x, 2020 8.9x, 2021 8.2x, 2022 8.4x, 2023 10.3x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $108.81/share
+  Current $138.73 vs Updated EPP $108.81:  +27%  moderate distance to floor
+  Bear $72.65 vs Updated EPP $108.81:  -33%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Net revenue growth                           -12.0      -36.8   BASE floor (vs +25 now)
+  Credit cost (provision/revenue)              670.0     +553.0   BASE floor (vs +117 now)
+  Expense growth less revenue                   29.0      +49.1   BASE floor (vs -20 now)
+  Nonperforming assets less loans              109.0     +128.0   BASE floor (vs -19 now)
+  Pre-tax margin change                      -1760.0    -2647.6   BASE floor (vs +888 now)
+  Crypto: disintermediation of payments and banking             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $12.09 × (1+25.8%)² = $19.12
+  At 11x P/E (conservative):  $210.36/share
+  + Cumul. dividends (2yr):  +$8.24/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $210.36  (▲71.63 from $138.73)
+  Conservative total return:  +58% over 2yr  = +29%/yr
+
+  At 11.5x the multiple is already near its 11x median, so the conservative
+  case is a growth question: breakeven at 11x needs FY2025E EPS of $11.86,
+  i.e. -0.9%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $101.28  –  $144.34  (at 87th pct of range)
+  Annual dividend:      $4.00/share  (yield 2.9%)
+  Realized vol:         29% annualized (1-yr daily log returns)
+  Beta vs broad market: 0.88
+  1-sigma range (1yr):  $98.50  –  $178.96  ($138.73 ± 29%)
+  2-sigma range (1yr):  $58.27  –  $219.19
+  ────────────────────────────────────────────────────────────
+  Bear $72.65 requires:  ~1.6σ price move  (unusual — requires fundamental break)
+  A bank whose earnings follow credit and markets: the stock is +36% off its October
+  low (52 weeks) while revenue went from +18.1% (Q4 2022) to +24.8% YoY (Q1 2023), +11.0% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        7.49    9.7x  $  72.65     5.2%     27.4%   -22.2pp  EPS -21.3%/yr (worst year FY13-FY22, capped at 0%); P/E to its 10th pct
+  BASE       19.74   11.1x  $ 219.11    18.0%     54.2%   -36.2pp  EPS +27.8%/yr (Q1 revenue YoY + margin + buyback); P/E at its 10-yr median
+  BULL       19.74   12.3x  $ 242.80    62.8%     15.5%   +47.3pp  EPS +27.8%/yr (FY13-FY22 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL      19.74   13.2x  $ 260.57    14.0%      2.9%   +11.1pp  EPS +27.8%/yr (best 2-yr run FY13-FY22, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $232.25  /  Market EV: $183.93  /  Current: $138.73
+  Conservative EV (2yr, ④): $210.36 + $8.24 divs = $218.60 total value
+  Downside (→ Bear $72.65): 47.6%   Upside (→ Bull $242.80): 75.0%   Ratio B 0.63x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $138.73 the market needs $183.47 in two years —
+  at or below the BASE case. That is a market composite of 1.83 against a model
+  read of 2.97: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.63x     +27%    +1.14  UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.51x     +27%    +1.29  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.85x     +27%    +0.98  UNDERVALUED / ACCUMULATE
+  Scenario EPS +1.5pp/yr                          0.57x     +27%    +1.20  UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.70x     +27%    +1.09  UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.63x     +27%    +1.44  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.63x      -4%    +1.34  UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.63x     +27%    +1.28  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 2023 print (the quarter ends in June) — revenue against the Q1 2023 revenue growth (no Q2 2023 guide): +24.8% YoY
+  (2) Credit costs — the provision took 5.9% of revenue in Q1 2023 (+117.0bp YoY): what must turn before earnings can
+  (3) A Q2 2023 revenue guide — none: JPMorgan Chase gives no firm-wide revenue, EPS or margin outlook in any filing; net charge-offs and reserve builds by business are in each supplement
+  (4) Nonperforming assets — -13.8% against loans +5.2% in Q1 2023 (-19.0pp): problem loans outgrowing the book would show here first
+  (5) Capital at 11x — dividend $1.00 a quarter: 'On September 21, 2021, the Board of Directors declared a quarterly common stock dividend of $1.00 per share' (Q3 2021 supplement, the first filing to state the declared rate; the 8-K of 2021-06-28 and the Q2 2021 10-Q state an intention); Tier 1 capital ratio 15.4% at the end of Q1 2023
+  ◉ BUY  |  EPP floor $108.81  |  ADD below ~$186.24  |  TRIM above $242.80
+════════════════════════════════════════════════════════════════════════
+

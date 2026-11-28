@@ -1,0 +1,155 @@
+
+════════════════════════════════════════════════════════════════════════
+  KMI  ·  Kinder Morgan, Inc.  ·  $38.03  ·  RETROSPECTIVE as of 2015-07-02
+  Signal: ◉ BUY   Ratio B: 0.49x   Adj gap: -0.35  [MODESTLY OVERVALUED]
+  Point-in-time: 8 sources, latest published 2015-07-02; latest print Q1 2015 (Apr 15)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2015E revenues, USD bn  →  FY2017E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2015E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Natural Gas Pipelines     $     9.0  $   9.0  $  10.2      +0.0      +1.2
+    +17.9% revenues in FY14
+  CO2                       $     1.7  $   1.7  $   2.0      +0.0      +0.3
+    +5.5% revenues in FY14
+  Terminals                 $     1.5  $   1.5  $   1.7      +0.0      +0.2
+    +21.9% revenues in FY14
+  Products Pipelines        $     1.8  $   1.8  $   2.1      +0.0      +0.3
+    +11.6% revenues in FY14
+  Kinder Morgan Canada      $     0.3  $   0.3  $   0.3      +0.0      +0.0
+    -3.6% revenues in FY14
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    14.3  $  14.3  $  16.3      +0.0      +2.0
+  FY2015E = FY14 $16.23B × (1 − 11.1%: no FY15 revenue guide in numbers, Q1 2015 revenues as reported, applied to the year (no FY15 revenue guide)); split pro rata to FY14 segment revenues from external customers ( FY2014 10-K)
+  Q1 2015 (Apr 15): revenues $3.60B -11.1%; segment EBDA -0.2%, Natural Gas Pipelines -5.1%;
+  operating margin 31.00% (+266.0bp); pre-tax margin 19.54% (-25.0bp); EPS $0.22 vs $0.28
+  Activity: revenues $3,597M vs $4,047M; segment EBDA: the release's segment EBDA table (GAAP): total $1,902M vs $1,906M, Natural Gas Pipelines $1,015M vs $1,070M; operating income $1,115M vs $1,147M; income before income taxes $703M vs $801M; DCF per share before certain items $0.58 vs $0.55 (non-GAAP, display only); EPS GAAP, diluted per Class P common share, $0.22 against $0.28 a year earlier
+  FY15: no revenue, EPS or margin guide in numbers (BASE takes Q1 2015 revenue growth as reported); the Q1 2015 release's dividends: "kMI expects to declare dividends of $2.00 per share for 2015" (a dividend outlook, not an earnings or revenue guide: display only)
+
+  FY2015E EPS check:  $14.3B × 19.1% pre-tax × (1−21.0%) ÷ 2.151B  =  $1.00  (FY2015E: no reported (GAAP) EPS guide, FY14's $0.89 stands)
+  FY2017E BEAR check: $14.3B × 19.1% ÷ 2.825B  =  $0.76  (scenario $0.53)
+  FY2017E BULL check: $16.3B × 19.4% ÷ 2.825B  =  $0.89  (scenario $1.41)
+  Every 1pp of pre-tax margin ≈ $0.05 EPS ≈ $2/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Segment EBDA growth                -23.0%   ≥-9.0%    ≥5.0%   ≥18.0%     -0.2%  ◦ BASE  ██░░
+  Natural Gas Pipelines EBDA growth   -13.0%   ≥-7.0%   ≥-1.0%    ≥5.0%     -5.1%  ◦ BASE  ██░░
+  Revenue growth                     -89.0%  ≥-41.0%    ≥7.0%   ≥26.0%    -11.1%  ◦ BASE  ██░░
+  Operating margin change           -1340.0bp  ≥-390.0bp  ≥550.0bp  ≥4000.0bp  +266.0bp  ◦ BASE  ██░░
+  Pre-tax margin change             -2510.0bp  ≥-960.0bp  ≥590.0bp  ≥3930.0bp   -25.0bp  ◦ BASE  ██░░
+  Disruption theme: none in scope    +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.00 / 4.00
+  Market composite:   2.38 / 4.00  (back-solved from $38 + 15% hurdle)
+  SCA adjustment:    +0.03  ·  EPP-distance adj +0.00  →  Adj composite 2.03  →  Gap -0.35  [MODESTLY OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY14 revenues +15.3%; Q1 operating margin 31.00% (+266bp)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 42.7x FY15E vs a 43.1x 3.5-yr ex-FY11 median (48th percentile of its own range)  (+0.03 × 25%  =  +0.007)
+    -  Growth vs own history: no FY15 revenue guide in numbers, Q1 2015 revenues as reported -11.1% vs a 14.7% 6-yr median  (-0.50 × 20%  =  -0.100)
+    +  FY14 free cash flow $0.85B (consolidated), dividend $1.92 a year, $1,760M of cash dividends on common shares paid in FY14, $192M of shares and warrants repurchased  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Segment EBDA growth                  -0.2%    -23.0%  -22.8%  Volumes and rates fall across the seg…
+  Natural Gas Pipelines EBDA growth     -5.1%    -13.0%   -7.9%  Gas transport and storage contracts r…
+  Revenue growth                      -11.1%    -89.0%  -77.9%  Commodity sales and volumes fall
+  Operating margin change           +266.0bp  -1340.0bp  -1606.0bp  Charges and costs outrun revenues
+  Pre-tax margin change              -25.0bp  -2510.0bp  -2485.0bp  Interest and charges as earnings fall
+  Disruption theme: none in scope     +2.0/4    +1.0/4  -1.0/4  No live disruption theme covers pipel…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$22  (model)  /  $17 (defined)
+  Bear probability (proxy model):  17.6%
+
+  KEY TRIGGER: Segment EBDA growth went from -3.8% (Q4 2014) to -0.2% (Q1 2015);
+  the bear case needs Natural Gas Pipelines (-5.1% now) and revenues
+  (-11.1% now) to give way as well. Contracted transport and storage fees drive most of the cash, by the company's own account;
+  the bear needs volumes and rates to fall, not one quarter's commodity prices.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $0.89  (FY2015E: no reported (GAAP) EPS guide, FY14's $0.89 stands)
+  Min viable P/E at panic:          38x  [median of calendar-year P/E lows: 2012 54.9x, 2013 28.3x, 2014 34.8x, 2015 42.7x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $34/share
+  Current $38 vs Updated EPP $34:  +12%  moderate distance to floor
+  Bear $17 vs Updated EPP $34:  -50%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Segment EBDA growth                         -9.0       -8.8   BASE floor (vs -0 now)
+  Natural Gas Pipelines EBDA growth            -7.0       -1.9   BASE floor (vs -5 now)
+  Revenue growth                             -41.0      -29.9   BASE floor (vs -11 now)
+  Operating margin change                   -390.0     -656.0   BASE floor (vs +266 now)
+  Pre-tax margin change                     -960.0     -935.0   BASE floor (vs -25 now)
+  Disruption theme: none in scope              2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $0.89 × (1+0.0%)² = $0.89
+  At 43x P/E (conservative):  $38/share
+  + Cumul. dividends (2yr):  +$3.96/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $38  (▲0 from $38)
+  Conservative total return:  +11% over 2yr  = +6%/yr
+
+  At 42.7x the multiple is already near its 43x median, so the conservative
+  case is a growth question: breakeven at 43x needs FY2017E EPS of $0.79,
+  i.e. -5.6%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $33.25  –  $44.71  (at 42th pct of range)
+  Annual dividend:      $1.92/share  (yield 5.0%)
+  Realized vol (1yr):   23% annualized
+  Beta vs broad market: 0.95
+  1-sigma range (1yr):  $29  –  $47  ($38 ± 23%)
+  2-sigma range (1yr):  $21  –  $55
+  ────────────────────────────────────────────────────────────
+  Bear $17 requires:  ~2.4σ price move  (unusual — requires fundamental break)
+  A pipeline transportation and energy storage company with a 0.9 beta: the stock is +10% off its October
+  low while Segment EBDA growth went from -3.8% (Q4 2014) to -0.2% (Q1 2015).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        0.53  31.8x  $     17    17.6%     11.5%    +6.1pp  EPS -22.6%/yr (worst year FY12-FY14, capped at 0%); P/E to its 10th pct
+  BASE        0.49  43.1x  $     21    61.5%     40.1%   +21.4pp  EPS -25.7%/yr (Q1 revenues + margin + buyback); P/E at its 3.5-yr ex-FY11 median
+  BULL        1.41  57.6x  $     81    17.6%     40.7%   -23.1pp  EPS +26.1%/yr (FY12-FY14 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL       1.41  63.0x  $     89     3.3%      7.7%    -4.4pp  EPS +26.1%/yr (best 2-yr run FY12-FY14, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $33  /  Market EV: $50  /  Current: $38
+  Conservative EV (2yr, ④): $38 + $3.96 divs = $42 total value
+  Downside (→ Bear $17): 55.3%   Upside (→ Bull $81): 113.0%   Ratio B 0.49x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $38 the market needs $50 in two years —
+  between the BASE and BULL cases. That is a market composite of 2.38 against a model
+  read of 2.03: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.49x     +12%    -0.35  MODESTLY OVERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.39x     +12%    -0.22  MODESTLY OVERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.96x     +12%    -0.63  OVERVALUED / ACCUMULATE
+  Scenario EPS +1.5pp/yr                          0.46x     +12%    -0.32  MODESTLY OVERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.54x     +12%    -0.38  MODESTLY OVERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.49x     +12%    -0.05  FAIRLY VALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.49x      +4%    -0.35  MODESTLY OVERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.49x     +12%    -0.27  MODESTLY OVERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) the Q2 2015 release — the next read on segment EBDA (-0.2% now) and Natural Gas Pipelines (-5.1% now)
+  (2) Margins — operating +266.0bp and pre-tax -25.0bp in Q1 2015: charges, interest and commodity prices
+  (3) The FY15 outlook — no revenue, EPS or margin guide in numbers; dividends: "kMI expects to declare dividends of $2.00 per share for 2015" (a dividend outlook, not an earnings or revenue guide: display only)
+  (4) Free cash flow — FY14 net cash provided by operating activities $4,467M less capital expenditures $3,617M ( FY2014 10-K)
+  (5) Capital return at 43x — $1,760M of cash dividends on common shares paid in FY14, $192M of shares and warrants repurchased: management's own read of the multiple
+  ◉ BUY  |  EPP floor $34  |  ADD below ~$18  |  TRIM above $81
+════════════════════════════════════════════════════════════════════════
+

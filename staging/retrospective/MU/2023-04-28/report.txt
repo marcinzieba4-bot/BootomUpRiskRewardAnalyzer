@@ -1,0 +1,155 @@
+
+════════════════════════════════════════════════════════════════════════
+  MU  ·  Micron Technology, Inc.  ·  $64.36  ·  RETROSPECTIVE as of 2023-04-28
+  Signal: ◎ ACCUMULATE   Ratio B: 0.86x   Adj gap: -1.08  [OVERVALUED]
+  Point-in-time: 16 sources, latest published 2023-04-28; latest print Q2 FY23 (Mar 28)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2023E revenue, USD bn  →  FY2025E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2023E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  CNBU                          $  5.86  $ 5.86  $ 7.69    +0.00    +1.83
+    +11.5% revenue in FY22
+  MBU                           $  3.11  $ 3.11  $ 4.08    +0.00    +0.97
+    +0.8% revenue in FY22
+  EBU                           $  2.24  $ 2.24  $ 2.94    +0.00    +0.70
+    +24.4% revenue in FY22
+  SBU                           $  1.95  $ 1.95  $ 2.56    +0.00    +0.61
+    +14.6% revenue in FY22
+  All Other                     $  0.01  $ 0.01  $ 0.01    +0.00    +0.00
+    -57.5% revenue in FY22
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $ 13.17  $13.17  $17.28    +0.00    +4.11
+  FY2023E = FY22 $30.758B × (1 − 57.2%: the Q3 FY23 revenue guide (Q2 FY23 results (8-K ex.99.1, Business Outlook)), YoY, applied to the year (no FY23 revenue guide)); split pro rata to FY22 segment revenue (FY2022 10-K)
+  Q2 FY23 (Mar 28): revenue $3.693B -52.6% YoY (-9.6% QoQ); inventories +51.0%; R&D + SG&A -3.4%;
+  gross margin -32.66% (-7986.9bp); operating margin -62.36% (-9506.1bp); EPS $(2.12) vs $2.00
+  Revenue: revenue $3,693M vs $7,786M a year earlier, $4,085M the quarter before; inventories $8,129M (2023-03-02) vs $5,383M a year earlier (Q2 FY22 10-Q); GAAP diluted EPS $(2.12) vs $2.00; diluted shares 1091.0M; 'In the second quarter of 2023, we recorded a charge of $1.43 billion to cost of goods sold to write down the carrying value of work in process and finished goods inventories to their estimated net realizable values.' (in the gross margin, as published)
+  Q3 FY23 outlook (Q2 FY23 results (8-K ex.99.1, Business Outlook)): revenue $3,700.0M ±$200.0M, i.e. $3,500.0M-$3,900.0M ('Revenue | $3.70 billion ± $200 million | $3.70 billion ± $200 million') against Q3 FY22's $8,642.0M: -59.5% to -54.9% YoY; display only: GAAP (non-GAAP) gross margin (23.0%) ± 2.5% ((21.0%) ± 2.5%), operating expenses $1.07 billion ± $15 million ($900 million ± $15 million), diluted EPS ($1.79) ± $0.07 (($1.58) ± $0.07); 'This guidance assumes a write down of approximately $500 million associated with inventory produced during the third quarter, impacting both GAAP and non-GAAP diluted earnings (loss) per share by approximately $0.'; no fiscal-year revenue, EPS or margin guide
+
+  FY2023E EPS check:  $13.170B × 31.1% pre-tax × (1−9.3%) ÷ 1.091B  =  $3.41  (FY2023E: no EPS guide in numbers, FY22's $7.75 stands)
+  FY2025E BEAR check: $13.170B × 31.1% ÷ 1.105B  =  $3.36  (scenario $1.43)
+  FY2025E BULL check: $17.280B × 31.5% ÷ 1.105B  =  $4.47  (scenario $10.24)
+  Every 1pp of pre-tax margin ≈ $0.110 EPS ≈ $0.93/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Revenue growth                        -86.0%   ≥-38.0%     ≥9.0%   ≥147.0%    -52.6%  ⚠ BEAR  █░░░
+  Gross margin change                 -9420.0bp  ≥-4820.0bp  ≥-230.0bp  ≥3050.0bp  -7986.9bp  ⚠ BEAR  █░░░
+  Opex growth less revenue            +109.0pp   ≤55.0pp    ≤2.0pp  ≤-102.0pp   +49.2pp  ◦ BASE  ██░░
+  Inventory growth less revenue        +97.0pp   ≤51.0pp    ≤5.0pp  ≤-43.0pp  +103.6pp  ⚠ BEAR  █░░░
+  Operating margin change             -12480.0bp  ≥-6240.0bp    ≥0.0bp  ≥4400.0bp  -9506.1bp  ⚠ BEAR  █░░░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.30 / 4.00
+  Market composite:   2.31 / 4.00  (back-solved from $64.36 + 15% hurdle)
+  SCA adjustment:    +0.03  ·  EPP-distance adj -0.10  →  Adj composite 1.23  →  Gap -1.08  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY22 net sales +11.0%, gross margin 45.2%; Q2 gross margin -32.66% (-7987bp YoY)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 8.3x FY23E vs a 8.5x 9.7-yr ex-FY13 ex-FY16 median (49th percentile of its own range)  (+0.02 × 25%  =  +0.005)
+    -  Growth vs own history: Q3 FY23 revenue guide (Q2 FY23 results (8-K ex.99.1, Business Outlook)) -59.5% to -54.9% vs a 11.0% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  Cash and short-term investments $10.818B, long-term debt $12,037M and current debt $237M (Q2 FY23), FY22 free cash flow $3.114B (net cash provided by operating activities $15,181M less expenditures for property, plant, and equipment $12,067M), dividend $0.46 a year  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Revenue growth                        -52.6%    -86.0%  -33.4%  Oversupply and falling selling prices…
+  Gross margin change                 -7986.9bp  -9420.0bp  -1433.1bp  Selling prices fall faster than cost …
+  Opex growth less revenue             +49.2pp  +109.0pp  +59.8pp  R&D and SG&A do not come down with re…
+  Inventory growth less revenue       +103.6pp   +97.0pp  -6.6pp  Inventory builds ahead of demand: wri…
+  Operating margin change             -9506.1bp  -12480.0bp  -2973.9bp  Operating leverage works in reverse
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$20.22  (model)  /  $6.43 (defined)
+  Bear probability (proxy model):  68.8%
+
+  KEY TRIGGER: revenue went from -46.9% (Q1 FY23) to -52.6% YoY (Q2 FY23), -9.6% on the quarter before;
+  the bear case needs a downturn in gross margin (-7986.9bp now)
+  and inventories (+103.6pp against revenue) giving way. A memory downturn shows up in average selling prices and inventories
+  first; the bear needs it in gross margin as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $7.75  (FY2023E: no EPS guide in numbers, FY22's $7.75 stands)
+  Min viable P/E at panic:          5x  [median of calendar-year P/E lows: 2013 5.3x, 2014 8.1x, 2015 5.8x, 2016 3.8x, 2017 2.8x, 2018 3.4x, 2019 5.6x, 2020 8.7x, 2021 8.6x, 2022 6.3x, 2023 6.5x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $38.75/share
+  Current $64.36 vs Updated EPP $38.75:  +66%  ⚠ far above floor — large drawdown room
+  Bear $6.43 vs Updated EPP $38.75:  -83%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Revenue growth                               -38.0      +14.6   BASE floor (vs -53 now)
+  Gross margin change                        -4820.0    +3166.9   BASE floor (vs -7987 now)
+  Opex growth less revenue                      55.0       +5.8   BASE floor (vs +49 now)
+  Inventory growth less revenue                 51.0      -52.6   BASE floor (vs +104 now)
+  Operating margin change                    -6240.0    +3266.1   BASE floor (vs -9506 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $7.75 × (1+0.0%)² = $7.75
+  At 8x P/E (conservative):  $62.00/share
+  + Cumul. dividends (2yr):  +$0.95/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $62.00  (▼2.36 from $64.36)
+  Conservative total return:  -2% over 2yr  = -1%/yr
+
+  At 8.3x the multiple is already near its 8x median, so the conservative
+  case is a growth question: breakeven at 8x needs FY2025E EPS of $7.93,
+  i.e. 1.1%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $48.43  –  $75.41  (at 59th pct of range)
+  Annual dividend:      $0.46/share  (yield 0.7%)
+  Realized vol:         44% annualized (1-yr daily log returns)
+  Beta vs broad market: 1.39
+  1-sigma range (1yr):  $36.04  –  $92.68  ($64.36 ± 44%)
+  2-sigma range (1yr):  $7.72  –  $121.00
+  ────────────────────────────────────────────────────────────
+  Bear $6.43 requires:  ~2.0σ price move  (unusual — requires fundamental break)
+  A memory maker whose selling prices follow industry supply: the stock is +32% off its September
+  low (52 weeks) while revenue went from -46.9% (Q1 FY23) to -52.6% YoY (Q2 FY23), -9.6% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        1.43    4.5x  $   6.43    68.8%     12.8%   +56.0pp  EPS -57.0%/yr (worst year FY14-FY22 ex-FY16, capped at 0%); P/E to its 10th pct
+  BASE        1.38    8.5x  $  11.73    23.3%     44.6%   -21.3pp  EPS -57.9%/yr (Q3 FY23 guide YoY + margin + buyback); P/E at its 9.7-yr ex-FY13 ex-FY16 median
+  BULL       10.24   12.9x  $ 132.10     6.7%     35.9%   -29.2pp  EPS +15.0%/yr (FY14-FY22 ex-FY16 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL      25.34   18.7x  $ 473.86     1.3%      6.8%    -5.5pp  EPS +80.8%/yr (best 2-yr run FY14-FY22 ex-FY16, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $21.94  /  Market EV: $85.57  /  Current: $64.36
+  Conservative EV (2yr, ④): $62.00 + $0.95 divs = $62.95 total value
+  Downside (→ Bear $6.43): 90.0%   Upside (→ Bull $132.10): 105.3%   Ratio B 0.86x  →  ◎ ACCUMULATE
+
+  To earn the 15%/yr hurdle from $64.36 the market needs $85.12 in two years —
+  between the BASE and BULL cases. That is a market composite of 2.31 against a model
+  read of 1.23: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.86x     +66%    -1.08  OVERVALUED / ACCUMULATE
+  Multiples one band richer (p25/p75/p90/max)     0.43x     +66%    -0.89  OVERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     2.60x     +66%    -1.36  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          0.80x     +66%    -1.06  OVERVALUED / ACCUMULATE
+  Scenario EPS -1.5pp/yr                          0.91x     +66%    -1.10  OVERVALUED / ACCUMULATE
+  Structural read +0.30 (bullish SCA)             0.86x     +66%    -0.78  OVERVALUED / ACCUMULATE
+  EPP P/E +3 turns (softer floor)                 0.86x      +4%    -0.98  OVERVALUED / ACCUMULATE
+  Hurdle 10%/yr instead of 15%                    0.86x     +66%    -1.03  OVERVALUED / ACCUMULATE
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 FY23 print (the quarter ends in early June) — revenue against the Q3 FY23 revenue guide (Q2 FY23 results (8-K ex.99.1, Business Outlook)): -59.5% to -54.9% YoY
+  (2) Gross margin — -7986.9bp in Q2 FY23: selling prices against cost per bit, what must hold if revenue does not
+  (3) The Q3 FY23 guide — revenue $3,700.0M ±$200.0M, i.e. $3,500.0M-$3,900.0M (-59.5% to -54.9% YoY): Micron guides one quarter at a time, in revenue
+  (4) Inventories — +51.0% against revenue -52.6% in Q2 FY23 (+103.6pp): write-downs follow if selling prices fall below cost
+  (5) Capital structure at 8x — 'Micron’s Board of Directors has declared a quarterly dividend of $0.115 per share, payable in cash on April 25, 2023, to shareholders of record as of the close of business on April 10, 2023.' (Q2 FY23 results (8-K ex.99.1))
+  ◎ ACCUMULATE  |  EPP floor $38.75  |  ADD below ~$9.97  |  TRIM above $132.10
+════════════════════════════════════════════════════════════════════════
+

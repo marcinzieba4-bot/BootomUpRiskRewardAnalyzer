@@ -1,0 +1,287 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "MAR",
+ "company": "Marriott International, Inc.",
+ "as_of": "2013-01-25",
+ "price_date": "2013-01-25",
+ "price": 39.56,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); hotel signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "Marriott: 'Consistent with our focus on management, franchising, and licensing, we own very few of our lodging properties'; 'At year-end 2011, our system was comprised of 3,718 properties (643,196 rooms)'; 'Our industry is highly competitive, which may impact our ability to compete successfully with other hotel properties for customers'; 'General economic uncertainty and weak demand in the lodging industry could continue to impact our financial results and growth'; 'Conditions for our lodging business improved in 2011 reflecting generally low supply growth, a more favorable economic climate in most developed markets around the world, albeit at a generally low growth rate, and stronger economic growth in emerging markets, strong unit growth, and the impact of operating efficiencies across our company'; and 'we completed a spin-off of our timeshare operations and timeshare development business through a special tax-free dividend to our shareholders' (its own FY2011 10-K): a hotel management and franchise system whose fees follow the revenues and profits of its hotels through the economy, by its own account; no disruption theme is live for it",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, NEUTRALLY VALUED",
+  "quality_label": "◎ QUALITY, NEUTRALLY VALUED",
+  "quality_color": "#f0b429",
+  "quality_tone": "amber",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "FAIR",
+  "quality_note": "Marriott: 'Consistent with our focus on management, franchising, and licensing, we own very few of our lodging properties'; 'At year-end 2011, our system was comprised of 3,718 properties (643,196 rooms)'; 'Our industry is highly competitive, which may impact our ability to compete successfully with other hotel properties for customers'; 'General economic uncertainty and weak demand in the lodging industry could continue to impact our financial results and growth'; 'Conditions for our lodging business improved in 2011 reflecting generally low supply growth, a more favorable economic climate in most developed markets around the world, albeit at a generally low growth rate, and stronger economic growth in emerging markets, strong unit growth, and the impact of operating efficiencies across our company'; and 'we completed a spin-off of our timeshare operations and timeshare development business through a special tax-free dividend to our shareholders' (its own FY2011 10-K): a hotel management and franchise system whose fees follow the revenues and profits of its hotels through the economy, by its own account; no disruption theme is live for it. durable franchise (obsolescence risk 2/5); price fair; Ratio B 1.72x; +22% to EPP floor; model-vs-market gap +0.17; conservative 2yr +20%.",
+  "theme": null
+ },
+ "legacy_signal_short": "WATCHLIST",
+ "legacy_signal": "◐ WATCHLIST",
+ "metrics": {
+  "ratio_b": 1.72,
+  "ratio_b_fmt": "1.72x",
+  "epp": 32.3,
+  "epp_gap_pct": 22.5,
+  "epp_adj": 0.0,
+  "proxy_composite": 2.5,
+  "sca": 0.145,
+  "adj_composite": 2.645,
+  "market_composite": 2.48,
+  "adj_gap": 0.17,
+  "valuation": "FAIRLY VALUED",
+  "cons_return_2yr": 20.4,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.66,
+    "pe": 19.6,
+    "price": 13,
+    "desc": "EPS -37.6%/yr (worst year FY02-FY11, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 2.1,
+    "pe": 23.6,
+    "price": 50,
+    "desc": "EPS +11.1%/yr (Q4 fee guide + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 2.1,
+    "pe": 26.4,
+    "price": 55,
+    "desc": "EPS +11.1%/yr (FY02-FY11 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 2.94,
+    "pe": 30.0,
+    "price": 88,
+    "desc": "EPS +31.6%/yr (best 2-yr run FY02-FY11); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 1.72,
+   "epp_gap_pct": 22.5,
+   "adj_gap": 0.17,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 20.4,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 1.09,
+   "epp_gap_pct": 22.5,
+   "adj_gap": 0.58,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 20.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 2.64,
+   "epp_gap_pct": 22.5,
+   "adj_gap": -0.23,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 20.4,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 1.52,
+   "epp_gap_pct": 22.5,
+   "adj_gap": 0.25,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 20.4,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 1.84,
+   "epp_gap_pct": 22.5,
+   "adj_gap": 0.08,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 20.4,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 1.72,
+   "epp_gap_pct": 22.5,
+   "adj_gap": 0.46,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 20.4,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 1.72,
+   "epp_gap_pct": 5.8,
+   "adj_gap": 0.17,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 20.4,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 1.72,
+   "epp_gap_pct": 22.5,
+   "adj_gap": 0.46,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 20.4,
+   "price_state": "FAIR"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP",
+  "FAIR",
+  "RICH"
+ ],
+ "summary": "MAR (retrospective, 2013-01-25) ◐ WATCHLIST — Ratio B 1.72x (67.1% downside to Bear $13 / +39.0% upside to Bull $55) | Adj composite 2.65 vs market 2.48: gap +0.17 [FAIRLY VALUED] | +22% above the EPP floor $32 (19x FY12E $1.70) | Conservative 2-yr case: +20.4% total (+10.2%/yr) | At 23.3x FY12E the 15% hurdle price $52 sits between the BASE and BULL cases; North American RevPAR +7.0% in Q3 2012, forward fee revenue +5.95-8.33% (Q4 2012 fee revenue guide); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "MA50",
+   "published": "2012-02-16",
+   "title": "Marriott International FY2011 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000144530512000342/mar-q42011x10k.htm",
+   "supports": "selected financial data, segments, cash flow, dividend, risk factors; the timeshare spin-off"
+  },
+  {
+   "id": "MA49",
+   "published": "2012-02-16",
+   "title": "Marriott International Q4 2011 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312512063574/d297630dex99.htm",
+   "supports": "Q4 2011 print and FY2011 actuals as adjusted for the timeshare spin-off; FY2012 and Q1 2012 guides"
+  },
+  {
+   "id": "MA11",
+   "published": "2007-02-08",
+   "title": "Marriott International Q4 2006 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312507023406/dex99.htm",
+   "supports": "FY2006 EPS excluding synthetic fuel $1.65 and FY2005 $1.33 excluding synthetic fuel, the CTF charge and the leveraged lease charge; FY2006 measures excluding synthetic fuel; the FY2007 guide"
+  },
+  {
+   "id": "MA34",
+   "published": "2010-02-11",
+   "title": "Marriott International Q4 2009 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312510028013/dex99.htm",
+   "supports": "Q4 2009 print (16 weeks), FY2009 adjusted actuals, FY2010 and Q1 2010 guides"
+  },
+  {
+   "id": "MA8",
+   "published": "2005-02-23",
+   "title": "Marriott International FY2004 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312505034535/d10k.htm",
+   "supports": "FY2002 synthetic fuel revenues $193M and expenses $327M (statement of income)"
+  },
+  {
+   "id": "MA1",
+   "published": "1999-03-16",
+   "title": "Marriott International FY1998 Form 10-K405",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000092838599000780/0000928385-99-000780.txt",
+   "supports": "the March 27, 1998 spinoff: no stock price data before it ('we were not a publicly-held company during that time')"
+  },
+  {
+   "id": "MA51",
+   "published": "2012-04-19",
+   "title": "Marriott International Q1 2012 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312512168455/d335773dex99.htm",
+   "supports": "Q1 2012 print; FY2012 and Q2 2012 guides"
+  },
+  {
+   "id": "MA53",
+   "published": "2012-07-12",
+   "title": "Marriott International Q2 2012 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312512299886/d378934dex99.htm",
+   "supports": "Q2 2012 print; FY2012 and Q3 2012 guides"
+  },
+  {
+   "id": "MA54",
+   "published": "2012-10-04",
+   "title": "Marriott International Q3 2012 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312512413980/d419341dex99.htm",
+   "supports": "Q3 2012 print; FY2012 and Q4 2012 guides"
+  },
+  {
+   "id": "MA46",
+   "published": "2011-10-06",
+   "title": "Marriott International Q3 2011 earnings release (8-K, Ex. 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312511264800/d238372dex99.htm",
+   "supports": "Q3 2011 print; FY2011 and Q4 2011 guides; FY2012 outlook"
+  },
+  {
+   "id": "MA52",
+   "published": "2012-05-09",
+   "title": "Marriott International 8-K of 2012-05-08 (Ex. 99, dividend; calendar fiscal year)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312512218846/d348694dex99.htm",
+   "supports": "the quarterly cash dividend raised to $0.13 a share; a calendar fiscal year from FY2013"
+  },
+  {
+   "id": "MA12",
+   "published": "2007-02-21",
+   "title": "Marriott International FY2006 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312507035757/d10k.htm",
+   "supports": "selected financial data 1999-2006, segments, synthetic fuel lines 2004-2006, RevPAR statistics, cash flow, dividend, risk factors"
+  },
+  {
+   "id": "MA27",
+   "published": "2009-05-05",
+   "title": "Marriott International 8-K/A of 2009-05-05 (Ex. 99.1, stock dividend)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000118143109022814/rrd241247_28284.htm",
+   "supports": "a stock dividend of 0.00369 share per share (record date June 25, 2009), paid in place of the cash dividend"
+  },
+  {
+   "id": "MA31",
+   "published": "2009-10-09",
+   "title": "Marriott International Q3 2009 Form 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312509206036/d10q.htm",
+   "supports": "the second stock dividend's ratio, 0.00379 share per share (record date August 20, 2009)"
+  },
+  {
+   "id": "MA35",
+   "published": "2010-02-16",
+   "title": "Marriott International FY2009 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312510030603/d10k.htm",
+   "supports": "selected financial data, segments, cash flow, dividend, risk factors; the third 2009 stock dividend's ratio"
+  },
+  {
+   "id": "MA47",
+   "published": "2011-10-26",
+   "title": "Marriott International 8-K of 2011-10-26 (Ex. 99, spin-off approved)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312511281516/d247139dex99.htm",
+   "supports": "the spin-off of Marriott Vacations Worldwide: one share for every ten Marriott shares, record date November 10, distribution November 21, 2011"
+  },
+  {
+   "id": "MA48",
+   "published": "2011-11-21",
+   "title": "Marriott International 8-K of 2011-11-21 (spin-off completed)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000119312511317838/d257339d8k.htm",
+   "supports": "the spin-off of Marriott Vacations Worldwide completed on November 21, 2011"
+  },
+  {
+   "id": "W0",
+   "published": "2013-01-25",
+   "title": "Yahoo Finance daily prices, MAR and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/MAR/history",
+   "supports": "close $39.56 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-09"
+}

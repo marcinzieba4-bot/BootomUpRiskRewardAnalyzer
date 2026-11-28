@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  MHFI  ·  McGraw Hill Financial, Inc.  ·  $70.77  ·  RETROSPECTIVE as of 2013-10-23
+  Signal: ✕ AVOID   Ratio B: 3.64x   Adj gap: -0.56  [OVERVALUED]
+  Point-in-time: 13 sources, latest published 2013-10-23; latest print Q3 2013 (Oct 22)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2013E revenue, USD bn  →  FY2015E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                      FY2013E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  S&P Ratings               $     2.1  $   2.1  $   2.1      +0.0      +0.0
+    +15.1% revenue in FY12
+  S&P Capital IQ            $     1.2  $   1.2  $   1.2      +0.0      +0.0
+    +9.0% revenue in FY12
+  Commodities & Commercial  $     1.0  $   1.0  $   1.0      +0.0      +0.0
+    +8.6% revenue in FY12
+  S&P Dow Jones Indices     $     0.4  $   0.4  $   0.4      +0.0      +0.0
+    +20.1% revenue in FY12
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $     4.7  $   4.7  $   4.7      +0.0      +0.0
+  FY2013E = FY12 $4.45B × (1 + 7.0%: no FY13 revenue guide in numbers, Q3 2013 growth, applied to the year); split pro rata to FY12 revenue by segment (SP39)
+  Q3 2013 (Oct 22): revenue $1.19B +7.0%; Financial Services +7.1%; Education n/r; Commodities & Commercial Markets +6.7%;
+  segment operating margin 39.20% (+604.2bp); diluted EPS $0.84 vs $0.53 (+58.5%)
+  Financial Services revenue $939.0M against $877.0M a year earlier (+7.1%), McGraw-Hill Education not reported, Commodities & Commercial Markets $255.0M (+6.7%), as the release's segment table shows them; 'Adjusted net income from continuing operations increased 11% to $222 million and adjusted diluted earnings per share from continuing operations increased 13% to $0.80.'; 'The adjustments exclude the impact of the gain on sale of Aviation Week and India Index Services by CRISIL, as well as one-time costs related primarily to the Growth and Value Plan.'; Financial Services line: S&P Ratings $540.0M + S&P Capital IQ $293.0M + S&P Dow Jones Indices $124.0M less the royalty elimination $18.0M; McGraw-Hill Education is a discontinued operation: its revenue is not reported (n/r)
+  FY13 guide (Q4 2012 release, Q1 2013 release, Q2 2013 release, 8-K of 2013-09-10, Q3 2013 release): revenue growth in words, 'high single-digit revenue growth for the full year, maybe a tad better' (no field); EPS $3.25-3.30 (adjusted)
+
+  FY2013E EPS check:  $4.7B × 25.4% pre-tax × (1−35.8%) ÷ 0.279B  =  $2.75  (FY2013E EPS, guide midpoint (adjusted))
+  FY2015E BEAR check: $4.7B × 25.4% ÷ 0.260B  =  $2.94  (scenario $1.21)
+  FY2015E BULL check: $4.7B × 25.8% ÷ 0.260B  =  $2.99  (scenario $3.99)
+  Every 1pp of pre-tax margin ≈ $0.11 EPS ≈ $2/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Financial Services revenue growth    -7.0%    ≥4.0%   ≥14.0%   ≥18.0%     +7.1%  ◦ BASE  ██░░
+  Education revenue growth           -16.0%   ≥-6.0%    ≥5.0%   ≥23.0%       n/r  ◦ BASE  ██░░
+  Revenue growth                      +1.0%    ≥4.0%    ≥7.0%   ≥15.0%     +7.0%  ▲ BULL  ███░
+  Diluted EPS growth                 -98.0%  ≥-43.0%   ≥13.0%   ≥53.0%    +58.5%  ★ XBULL  ████
+  Segment operating margin change   -970.0bp  ≥-440.0bp  ≥90.0bp  ≥460.0bp  +604.2bp  ★ XBULL  ████
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.75 / 4.00
+  Market composite:   3.23 / 4.00  (back-solved from $71 + 15% hurdle)
+  SCA adjustment:    +0.02  ·  EPP-distance adj -0.10  →  Adj composite 2.67  →  Gap -0.56  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY12 revenue +12.5%, Financial Services +13.7%, Education n/r; Q3 segment operating margin 39.20% (+604.2bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 21.6x FY13E vs a 19.5x 10-yr median (77th percentile of its own range)  (-0.45 × 25%  =  -0.113)
+    +  Growth vs own history: no FY13 revenue guide in numbers, Q3 2013 growth +7% vs a 6.6% 9-yr median  (+0.04 × 20%  =  +0.008)
+    +  FY12 year-end cash and equivalents $0.760B, FY12 operating cash flow $0.747B, dividend $1.12 a year, repurchase of treasury shares $295M in 2012 (SP39)  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Financial Services revenue growth     +7.1%     -7.0%  -14.1%  Debt issuance volume falls
+  Education revenue growth               n/r    -16.0%     n/r  State adoptions and school funding sh…
+  Revenue growth                       +7.0%     +1.0%   -6.0%  Issuance, adoptions and advertising f…
+  Diluted EPS growth                  +58.5%    -98.0%  -156.5%  Costs stay up while revenue falls
+  Segment operating margin change   +604.2bp  -970.0bp  -1574.2bp  Segment profit falls faster than revenue
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$36  (model)  /  $19 (defined)
+  Bear probability (proxy model):  5.3%
+
+  KEY TRIGGER: Financial Services revenue growth went from +19.1% (Q2 2013) to +7.1% (Q3 2013);
+  the bear case needs a fall in debt issuance that Education (n/r now) and
+  Commodities & Commercial Markets (+6.7% now) no longer offset. The 10-K ties results to the volume of securities issued and traded in the capital
+  markets, to interest rates and to volatility in the financial markets.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $3.27  (FY2013E EPS, guide midpoint (adjusted))
+  Min viable P/E at panic:          15x  [median of calendar-year P/E lows: 2003 17.9x, 2004 17.7x, 2005 18.4x, 2006 19.6x, 2007 14.9x, 2008 10.4x, 2009 10.0x, 2010 14.5x, 2011 16.9x, 2012 15.4x, 2013 13.0x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $49/share
+  Current $71 vs Updated EPP $49:  +44%  ⚠ far above floor — large drawdown room
+  Bear $19 vs Updated EPP $49:  -61%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Financial Services revenue growth             4.0       -3.1   BASE floor (vs +7 now)
+  Education revenue growth                    -6.0        n/r   BASE floor (not reported now)
+  Revenue growth                               4.0       -3.0   BASE floor (vs +7 now)
+  Diluted EPS growth                         -43.0     -101.5   BASE floor (vs +58 now)
+  Segment operating margin change           -440.0    -1044.2   BASE floor (vs +604 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $3.27 × (1+8.4%)² = $3.85
+  At 19x P/E (conservative):  $73/share
+  + Cumul. dividends (2yr):  +$2.31/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $73  (▲2 from $71)
+  Conservative total return:  +7% over 2yr  = +3%/yr
+
+  8.4% EPS growth is what is left once the premium multiple (21.6x)
+  mean-reverts to 19x. Breakeven at 19x needs FY2015E EPS of $3.60,
+  i.e. 4.9%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $42.07  –  $70.93  (at 99th pct of range)
+  Annual dividend:      $1.12/share  (yield 1.6%)
+  Realized vol (1yr):   28% annualized
+  Beta vs broad market: 0.97
+  1-sigma range (1yr):  $51  –  $90  ($71 ± 28%)
+  2-sigma range (1yr):  $32  –  $110
+  ────────────────────────────────────────────────────────────
+  Bear $19 requires:  ~2.6σ price move  (unusual — requires fundamental break)
+  An information services company (ratings, education, business information) with a 1.0 beta: the stock is +66% off its February
+  low while Financial Services revenue growth went from +19.1% (Q2 2013) to +7.1% (Q3 2013).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        1.21  15.6x  $     19     5.3%      3.6%    +1.7pp  EPS -39.1%/yr (worst year FY03-FY12, capped at 0%); P/E to its 10th pct
+  BASE        3.99  19.5x  $     78    18.4%     12.4%    +6.0pp  EPS +10.4%/yr (Q3 revenue + margin + buyback); P/E at its 10-yr median
+  BULL        3.99  21.4x  $     85    64.2%     43.4%   +20.8pp  EPS +10.4%/yr (FY03-FY12 CAGR); P/E holds its 75th pct
+  XBULL       4.84  23.5x  $    114    12.1%     40.6%   -28.5pp  EPS +21.6%/yr (best 2-yr run FY03-FY12); P/E at its 90th pct
+
+  Proxy EV (2yr): $84  /  Market EV: $94  /  Current: $71
+  Conservative EV (2yr, ④): $73 + $2.31 divs = $75 total value
+  Downside (→ Bear $19): 73.2%   Upside (→ Bull $85): 20.1%   Ratio B 3.64x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $71 the market needs $94 in two years —
+  above the BULL case. That is a market composite of 3.23 against a model
+  read of 2.67: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       3.64x     +44%    -0.56  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     2.14x     +44%    -0.06  FAIRLY VALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)     7.44x     +44%    -0.89  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          3.00x     +44%    -0.46  MODESTLY OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                          4.31x     +44%    -0.67  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             3.64x     +44%    -0.26  MODESTLY OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 3.64x     +20%    -0.46  MODESTLY OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    3.64x     +44%    -0.21  MODESTLY OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 2013 print (late January) — the next read on Financial Services revenue (+7.1% now) and the guide
+  (2) Segment operating margin — +604.2bp in Q3 2013: costs against the ratings mix, what must hold if revenue does not
+  (3) FY13 EPS guide $3.25-3.30 (Q3 2013 release): the company's own read of the year
+  (4) A FY13 consolidated revenue guide in numbers — none yet (revenue growth in words only)
+  (5) Capital return at 22x — 'During the quarter, the Company repurchased approximately 5.7 million shares.': management's own read of the multiple
+  ✕ AVOID  |  EPP floor $49  |  ADD below ~$66  |  TRIM above $85
+════════════════════════════════════════════════════════════════════════
+

@@ -1,0 +1,155 @@
+
+════════════════════════════════════════════════════════════════════════
+  V  ·  Visa Inc.  ·  $78.23  ·  RETROSPECTIVE as of 2011-05-20
+  Signal: ◉ BUY   Ratio B: 0.21x   Adj gap: +0.31  [MODESTLY UNDERVALUED]
+  Point-in-time: 10 sources, latest published 2011-05-20; latest print Q2 FY11 (May 5)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2011E revenue, USD bn  →  FY2013E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2011E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Service revenues              $  3.95  $ 3.95  $ 5.38    +0.00    +1.43
+    +10.2% revenue in FY10
+  Data processing revenues      $  3.53  $ 3.53  $ 4.81    +0.00    +1.28
+    +28.6% revenue in FY10
+  International transaction re  $  2.59  $ 2.59  $ 3.52    +0.00    +0.93
+    +19.5% revenue in FY10
+  Other revenues                $  0.81  $ 0.81  $ 1.10    +0.00    +0.29
+    +14.1% revenue in FY10
+  Volume and support incentive  $ -1.76  $-1.76  $-2.40    +0.00    -0.64
+    +26.4% revenue in FY10
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $  9.12  $ 9.12  $12.41    +0.00    +3.29
+  FY2011E = FY10 $8.065B × (1 + 13.0%: the FY11 net revenue growth guide's midpoint); split pro rata to FY10 operating revenues by line, incentives as reported (FY10 growth)
+  Q2 FY11 (May 5): total operating revenues $2.245B +14.6% YoY (+0.3% QoQ); receivables +7.2%; operating expenses ex litigation +2.5%;
+  net-to-gross 83.27% (-77.0bp); operating margin 61.60% (+432.9bp); EPS $1.23 vs $0.96
+  Revenue: total operating revenues $2,245M vs $1,959M a year earlier, $2,238M the quarter before (service $1,093M, data processing $823M, international transaction $624M, other $156M, less client incentives $451M); 'Payments volume growth, on a constant dollar basis, for the three months ended December 31, 2010, on which fiscal second quarter service revenue is recognized, was a positive 15% over the prior year at $897 billion.' 'Total processed transactions, which represent transactions processed by VisaNet, for the three months ended March 31, 2011, were 12 billion, a positive 13% increase over the prior year.'; accounts receivable $538M (2011-03-31) vs $502M a year earlier (the year-ago 10-Q); GAAP diluted class A EPS $1.23 vs $0.96; diluted class A shares 714M (as converted)
+  FY11 (Q2 FY11 print): 'Annual net revenue growth: 11% to 15% range;' — the 11-15% range stands, its words in the note (the ACN words rule); 'Annual diluted class A common stock earnings per share growth of greater than 20%;' is a one-sided bound and gives no field; 'Annual operating margin: About 60%;' is a number: a margin step from FY10's 56.90% to 60%; no next-quarter guide is given, so the fiscal-year range stands in (method r2's fallback)
+
+  FY2011E EPS check:  $9.120B × 57.5% pre-tax × (1−36.1%) ÷ 0.714B  =  $4.69  (FY2011E: no EPS guide in numbers (growth 'of greater than 20%' is a one-sided bound), FY10's $3.91 stands)
+  FY2013E BEAR check: $9.120B × 57.5% ÷ 0.676B  =  $4.96  (scenario $3.91)
+  FY2013E BULL check: $12.410B × 57.9% ÷ 0.676B  =  $6.80  (scenario $6.22)
+  Every 1pp of pre-tax margin ≈ $0.082 EPS ≈ $1.58/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Revenue growth                         -3.0%    ≥10.0%    ≥22.0%    ≥74.0%    +14.6%  ◦ BASE  ██░░
+  Net-to-gross revenue change         -640.0bp  ≥-330.0bp  ≥-30.0bp  ≥430.0bp   -77.0bp  ◦ BASE  ██░░
+  Opex growth less revenue             +13.0pp    ≤2.0pp   ≤-9.0pp  ≤-25.0pp   -12.1pp  ▲ BULL  ███░
+  Receivables growth less revenue       +6.0pp   ≤-1.0pp   ≤-9.0pp  ≤-35.0pp    -7.4pp  ◦ BASE  ██░░
+  Operating margin change             -15780.0bp  ≥-7710.0bp  ≥350.0bp  ≥8930.0bp  +310.0bp  ◦ BASE  ██░░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.15 / 4.00
+  Market composite:   1.85 / 4.00  (back-solved from $78.23 + 15% hurdle)
+  SCA adjustment:    +0.01  ·  EPP-distance adj +0.00  →  Adj composite 2.16  →  Gap +0.31  [MODESTLY UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY10 total operating revenues +16.7%, 83.8% of gross revenues kept after client incentives; Q2 83.27% (-77bp YoY)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 20.0x FY11E vs a 19.4x 2.6-yr median (60th percentile of its own range)  (-0.17 × 25%  =  -0.043)
+    -  Growth vs own history: FY11 net revenue growth guide +11-15% vs a 16.7% 1-yr median  (-0.37 × 20%  =  -0.074)
+    +  Cash and cash equivalents $3.512B, debt $37M (current $12M, long-term $25M) (Q2 FY11), FY10 free cash flow $2.450B (net cash provided by operating activities $2,691M less purchases of property, equipment and technology $241M), dividend $0.60 a year  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Revenue growth                        +14.6%     -3.0%  -17.6%  Spending and cross-border travel slow…
+  Net-to-gross revenue change          -77.0bp  -640.0bp  -563.0bp  Client incentives take more of gross …
+  Opex growth less revenue             -12.1pp   +13.0pp  +25.1pp  Marketing and personnel do not slow w…
+  Receivables growth less revenue       -7.4pp    +6.0pp  +13.4pp  Clients pay more slowly: collections lag
+  Operating margin change             +310.0bp  -15780.0bp  -16090.0bp  Operating leverage works in reverse
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$80.62  (model)  /  $66.86 (defined)
+  Bear probability (proxy model):  15.5%
+
+  KEY TRIGGER: revenue went from +14.2% (Q1 FY11) to +14.6% YoY (Q2 FY11), +0.3% on the quarter before;
+  the bear case needs incentives taking more of gross revenues (-77.0bp now)
+  and receivables (-7.4pp against revenue) giving way. A spending slowdown shows up in payments volume and service revenues first;
+  the bear needs it in processed transactions as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $3.91  (FY2011E: no EPS guide in numbers (growth 'of greater than 20%' is a one-sided bound), FY10's $3.91 stands)
+  Min viable P/E at panic:          15x  [median of calendar-year P/E lows: 2008 15.0x, 2009 13.7x, 2010 16.7x, 2011 17.7x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $58.65/share
+  Current $78.23 vs Updated EPP $58.65:  +33%  moderate distance to floor
+  Bear $66.86 vs Updated EPP $58.65:  +14%  ✓ bear stays above the floor
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Revenue growth                                10.0       -4.6   BASE floor (vs +15 now)
+  Net-to-gross revenue change                 -330.0     -253.0   BASE floor (vs -77 now)
+  Opex growth less revenue                       2.0      +14.1   BASE floor (vs -12 now)
+  Receivables growth less revenue               -1.0       +6.4   BASE floor (vs -7 now)
+  Operating margin change                    -7710.0    -8020.0   BASE floor (vs +310 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $3.91 × (1+18.9%)² = $5.53
+  At 19x P/E (conservative):  $104.98/share
+  + Cumul. dividends (2yr):  +$1.24/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $104.98  (▲26.75 from $78.23)
+  Conservative total return:  +36% over 2yr  = +18%/yr
+
+  At 20.0x the multiple is already near its 19x median, so the conservative
+  case is a growth question: breakeven at 19x needs FY2013E EPS of $4.05,
+  i.e. 1.8%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $64.90  –  $83.79  (at 71th pct of range)
+  Annual dividend:      $0.60/share  (yield 0.8%)
+  Realized vol:         30% annualized (1-yr daily log returns)
+  Beta vs broad market: 0.87
+  1-sigma range (1yr):  $55.15  –  $101.31  ($78.23 ± 30%)
+  2-sigma range (1yr):  $32.07  –  $124.39
+  ────────────────────────────────────────────────────────────
+  Bear $66.86 requires:  ~0.5σ price move  (within normal vol range)
+  A payments network whose revenue follows consumer spending: the stock is +19% off its September
+  low (52 weeks) while revenue went from +14.2% (Q1 FY11) to +14.6% YoY (Q2 FY11), +0.3% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        3.91   17.1x  $  66.86    15.5%     26.1%   -10.6pp  EPS +0.0%/yr (worst year FY09-FY10, capped at 0%); P/E to its 10th pct
+  BASE        5.71   19.4x  $ 110.77    54.1%     55.2%    -1.0pp  EPS +20.9%/yr (FY11 revenue guide + margin + buyback); P/E at its 2.6-yr median
+  BULL        6.22   21.2x  $ 131.86    25.6%     15.8%    +9.8pp  EPS +26.1%/yr (FY09-FY10 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL       6.22   22.5x  $ 139.95     4.8%      3.0%    +1.8pp  EPS +26.1%/yr (no 2-yr run in FY09-FY10: BULL's rate); P/E at its 90th pct
+
+  Proxy EV (2yr): $110.76  /  Market EV: $103.53  /  Current: $78.23
+  Conservative EV (2yr, ④): $104.98 + $1.24 divs = $106.21 total value
+  Downside (→ Bear $66.86): 14.5%   Upside (→ Bull $131.86): 68.6%   Ratio B 0.21x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $78.23 the market needs $103.46 in two years —
+  at or below the BASE case. That is a market composite of 1.85 against a model
+  read of 2.16: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.21x     +33%    +0.31  MODESTLY UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.11x     +33%    +0.52  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.33x     +33%    +0.01  FAIRLY VALUED / BUY
+  Scenario EPS +1.5pp/yr                          0.16x     +33%    +0.40  MODESTLY UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.27x     +33%    +0.20  FAIRLY VALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.21x     +33%    +0.61  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.21x     +11%    +0.31  MODESTLY UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.21x     +33%    +0.55  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 FY11 print (the quarter ends in June) — revenue against the FY11 net revenue growth guide: +11-15% YoY
+  (2) Client incentives — 83.3% of gross revenues kept in Q2 FY11 (-77.0bp YoY): pricing, what must hold if volume does not
+  (3) Payments volume and processed transactions — the drivers of service and data processing revenues, in each release (Q2 FY11: see the revenue line)
+  (4) Receivables — +7.2% against revenue +14.6% in Q2 FY11 (-7.4pp): clients paying more slowly would show here first
+  (5) Capital structure at 20x — dividend $0.15 a quarter, declared 2010-10-20 (a 20% increase); 'The Company authorized a new $1 billion share repurchase program' (a plan, no guided number: it adds nothing)
+  ◉ BUY  |  EPP floor $58.65  |  ADD below ~$94.15  |  TRIM above $131.86
+════════════════════════════════════════════════════════════════════════
+

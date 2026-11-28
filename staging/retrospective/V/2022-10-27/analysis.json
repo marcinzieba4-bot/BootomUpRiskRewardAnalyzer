@@ -1,0 +1,341 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "V",
+ "company": "Visa Inc.",
+ "as_of": "2022-10-27",
+ "price_date": "2022-10-27",
+ "price": 204.29,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); revenue, net-to-gross, expense, receivables and operating-margin signals with Visa's rule-T thresholds",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'Visa is a global payments technology company that enables innovative, reliable and secure electronic payments across more than 200 countries and territories.' 'We face intense competition in our industry.'; no 10-K calls the business cyclical (this one no longer has the earlier 10-Ks' sentence on economic conditions and consumer spending), so the kind is DURABLE; CRYPTO is live (from 2020-10-21) and its scope names payments networks: the 10-K's words put it on the watch list, company-acknowledged, with no dated evidence that the market prices it for Visa",
+  "theme_watch": [
+   {
+    "theme": "CRYPTO",
+    "status": "live, company-acknowledged; no market read",
+    "reason": "Live: Visa's own FY2021 10-K says 'The global payments industry is undergoing significant and rapid technological change, including mobile and other proximity and in-app payment technologies, ecommerce, tokenization, cryptocurrencies, distributed ledger and blockchain technologies, and new authentication technologies such as biometrics, 3D Secure 2.0 and dynamic cardholder verification values or dCVV2.' It names a crypto offering of its own: 'We enable cryptocurrencies for everyday payments through our global presence, partnership approach and trusted brand.' The stock trades at 29.2x FY23E — near its own median. Re-file as DISRUPTION_EXPOSED (CRYPTO) only if dated evidence shows the market pricing crypto disintermediation of Visa's network specifically."
+   }
+  ],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "'Visa is a global payments technology company that enables innovative, reliable and secure electronic payments across more than 200 countries and territories.' 'We face intense competition in our industry.'; no 10-K calls the business cyclical (this one no longer has the earlier 10-Ks' sentence on economic conditions and consumer spending), so the kind is DURABLE; CRYPTO is live (from 2020-10-21) and its scope names payments networks: the 10-K's words put it on the watch list, company-acknowledged, with no dated evidence that the market prices it for Visa. durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.63x; +33% to EPP floor; model-vs-market gap +0.45; conservative 2yr +33%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.63,
+  "ratio_b_fmt": "0.63x",
+  "epp": 154.0,
+  "epp_gap_pct": 32.7,
+  "epp_adj": 0.0,
+  "proxy_composite": 2.35,
+  "sca": 0.168,
+  "adj_composite": 2.518,
+  "market_composite": 2.07,
+  "adj_gap": 0.45,
+  "valuation": "MODESTLY UNDERVALUED",
+  "cons_return_2yr": 33.1,
+  "scenarios": {
+   "BEAR": {
+    "eps": 5.66,
+    "pe": 22.9,
+    "price": 129.61,
+    "desc": "EPS -10.1%/yr (worst year FY12-FY22, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 10.27,
+    "pe": 27.2,
+    "price": 279.34,
+    "desc": "EPS +21.1%/yr (Q4 revenue YoY + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 10.27,
+    "pe": 31.5,
+    "price": 323.5,
+    "desc": "EPS +21.1%/yr (FY12-FY22 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 11.36,
+    "pe": 39.1,
+    "price": 444.18,
+    "desc": "EPS +27.4%/yr (best 2-yr run FY12-FY22, at least BULL); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.63,
+   "epp_gap_pct": 32.7,
+   "adj_gap": 0.45,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 33.1,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.33,
+   "epp_gap_pct": 32.7,
+   "adj_gap": 0.82,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 33.1,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 1.12,
+   "epp_gap_pct": 32.7,
+   "adj_gap": -0.12,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 33.1,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.55,
+   "epp_gap_pct": 32.7,
+   "adj_gap": 0.57,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 33.1,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.72,
+   "epp_gap_pct": 32.7,
+   "adj_gap": 0.33,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 33.1,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.63,
+   "epp_gap_pct": 32.7,
+   "adj_gap": 0.75,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 33.1,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.63,
+   "epp_gap_pct": 16.7,
+   "adj_gap": 0.45,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 33.1,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.63,
+   "epp_gap_pct": 32.7,
+   "adj_gap": 0.72,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 33.1,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP",
+  "FAIR"
+ ],
+ "summary": "V (retrospective, 2022-10-27) ◉ BUY — Ratio B 0.63x (36.6% downside to Bear $129.61 / +58.4% upside to Bull $323.50) | Adj composite 2.52 vs market 2.07: gap +0.45 [MODESTLY UNDERVALUED] | +33% above the EPP floor $154.00 (22x FY23E $7.00) | Conservative 2-yr case: +33.1% total (+16.5%/yr) | At 29.2x FY23E the 15% hurdle price $270.17 sits at or below the BASE case; revenue +18.7% YoY in Q4 FY22, forward revenues +18.7% (Q4 FY22 revenue growth (no FY23 revenue range)); crypto is live and company-acknowledged; no dated evidence ties the multiple to it.",
+ "sources": [
+  {
+   "id": "V123",
+   "published": "2021-11-19",
+   "filed": "accepted 2021-11-18 16:06 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-K for the fiscal year ended September 30, 2021",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316121000060/v-20210930.htm",
+   "supports": "fiscal 2021 statements of operations and cash flows, diluted class A EPS and shares, the company's figures in the MD&A, Item 1, 1A and 5 wording"
+  },
+  {
+   "id": "V64",
+   "published": "2014-11-21",
+   "filed": "accepted 2014-11-20 18:57 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-K for the fiscal year ended September 30, 2014",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316114000017/v09301410-k.htm",
+   "supports": "fiscal 2014 statements of operations and cash flows, selected data, diluted class A EPS and shares, the company's adjusted figures in the MD&A, Item 1, 1A and 5 wording"
+  },
+  {
+   "id": "V65",
+   "published": "2015-11-20",
+   "filed": "accepted 2015-11-19 18:24 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-K for the fiscal year ended September 30, 2015",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316115000013/v093015.htm",
+   "supports": "fiscal 2015 statements of operations and cash flows, selected data, diluted class A EPS and shares, the company's adjusted figures in the MD&A, Item 1, 1A and 5 wording"
+  },
+  {
+   "id": "V66",
+   "published": "2016-11-16",
+   "filed": "accepted 2016-11-15 16:44 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-K for the fiscal year ended September 30, 2016",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316116000058/v093016.htm",
+   "supports": "fiscal 2016 statements of operations and cash flows, selected data, diluted class A EPS and shares, the company's adjusted figures in the MD&A, Item 1, 1A and 5 wording"
+  },
+  {
+   "id": "V67",
+   "published": "2017-11-17",
+   "filed": "accepted 2017-11-16 20:07 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-K for the fiscal year ended September 30, 2017",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316117000044/v093017.htm",
+   "supports": "fiscal 2017 statements of operations and cash flows, selected data, diluted class A EPS and shares, the company's adjusted figures in the MD&A, Item 1, 1A and 5 wording"
+  },
+  {
+   "id": "V120",
+   "published": "2018-11-19",
+   "filed": "accepted 2018-11-16 16:10 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-K for the fiscal year ended September 30, 2018",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316118000055/v093018.htm",
+   "supports": "fiscal 2018 statements of operations and cash flows, selected data, diluted class A EPS and shares, the company's figures in the MD&A, Item 1, 1A and 5 wording"
+  },
+  {
+   "id": "V121",
+   "published": "2019-11-14",
+   "filed": "accepted 2019-11-14 15:35 ET (during the session)",
+   "title": "Visa Inc. 10-K for the fiscal year ended September 30, 2019",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316119000050/v093019form10k.htm",
+   "supports": "fiscal 2019 statements of operations and cash flows, selected data, diluted class A EPS and shares, the company's figures in the MD&A, Item 1, 1A and 5 wording"
+  },
+  {
+   "id": "V122",
+   "published": "2020-11-20",
+   "filed": "accepted 2020-11-19 16:03 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-K for the fiscal year ended September 30, 2020",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316120000070/v-20200930.htm",
+   "supports": "fiscal 2020 statements of operations and cash flows, selected data, diluted class A EPS and shares, the company's figures in the MD&A, Item 1, 1A and 5 wording"
+  },
+  {
+   "id": "V145",
+   "published": "2021-10-27",
+   "filed": "accepted 2021-10-26 16:06 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q4 2021 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316121000056/q42021earningsrelease.htm",
+   "supports": "Q4 FY21 revenues, client incentives, expenses, operating income, diluted class A EPS and shares against the year-ago quarter and the fiscal year; receivables, cash and debt; the financial outlook"
+  },
+  {
+   "id": "V144",
+   "published": "2021-07-28",
+   "filed": "accepted 2021-07-27 16:40 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q3 2021 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316121000038/q32021earningsrelease.htm",
+   "supports": "Q3 FY21 revenues, client incentives, expenses, operating income, diluted class A EPS and shares against the year-ago quarter; receivables, cash and debt; the financial outlook"
+  },
+  {
+   "id": "V141",
+   "published": "2020-10-29",
+   "filed": "accepted 2020-10-28 16:03 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q4 2020 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316120000061/q42020ex991.htm",
+   "supports": "Q4 FY20 revenues, client incentives, expenses, operating income, diluted class A EPS and shares against the year-ago quarter and the fiscal year; receivables, cash and debt; the financial outlook"
+  },
+  {
+   "id": "V190",
+   "published": "2022-01-28",
+   "filed": "accepted 2022-01-27 16:08 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q1 2022 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316122000009/q12022earningsrelease.htm",
+   "supports": "Q1 FY22 revenues, client incentives, expenses, operating income, diluted class A EPS and shares against the year-ago quarter; receivables, cash and debt; no financial outlook in the release"
+  },
+  {
+   "id": "V159",
+   "published": "2021-02-01",
+   "filed": "accepted 2021-01-29 16:02 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-Q for the quarter ended December 31, 2020",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316121000012/v-20201231.htm",
+   "supports": "the quarter's statements and accounts receivable at its quarter end (checked against the release; the year-ago balance for the Q1 FY22 print)"
+  },
+  {
+   "id": "V142",
+   "published": "2021-01-29",
+   "filed": "accepted 2021-01-28 16:02 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q1 2021 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316121000009/q12021ex991.htm",
+   "supports": "Q1 FY21 revenues, client incentives, expenses, operating income, diluted class A EPS and shares against the year-ago quarter; receivables, cash and debt; the financial outlook"
+  },
+  {
+   "id": "V191",
+   "published": "2022-04-27",
+   "filed": "accepted 2022-04-26 16:05 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q2 2022 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316122000023/q22022earningsrelease.htm",
+   "supports": "Q2 FY22 revenues, client incentives, expenses, operating income, diluted class A EPS and shares against the year-ago quarter; receivables, cash and debt; no financial outlook in the release"
+  },
+  {
+   "id": "V160",
+   "published": "2021-04-30",
+   "filed": "accepted 2021-04-29 16:06 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-Q for the quarter ended March 31, 2021",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316121000029/v-20210331.htm",
+   "supports": "the quarter's statements and accounts receivable at its quarter end (checked against the release; the year-ago balance for the Q2 FY22 print)"
+  },
+  {
+   "id": "V143",
+   "published": "2021-04-28",
+   "filed": "accepted 2021-04-27 16:06 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q2 2021 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316121000023/q22021ex991.htm",
+   "supports": "Q2 FY21 revenues, client incentives, expenses, operating income, diluted class A EPS and shares against the year-ago quarter; receivables, cash and debt; the financial outlook"
+  },
+  {
+   "id": "V192",
+   "published": "2022-07-27",
+   "filed": "accepted 2022-07-26 16:05 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q3 2022 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316122000055/q32022earningsrelease.htm",
+   "supports": "Q3 FY22 revenues, client incentives, expenses, operating income, diluted class A EPS and shares against the year-ago quarter; receivables, cash and debt; no financial outlook in the release"
+  },
+  {
+   "id": "V161",
+   "published": "2021-07-30",
+   "filed": "accepted 2021-07-29 16:03 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-Q for the quarter ended June 30, 2021",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316121000042/v-20210630.htm",
+   "supports": "the quarter's statements and accounts receivable at its quarter end (checked against the release; the year-ago balance for the Q3 FY22 print)"
+  },
+  {
+   "id": "V193",
+   "published": "2022-10-26",
+   "filed": "accepted 2022-10-25 16:05 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q4 2022 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316122000076/q42022earningsrelease.htm",
+   "supports": "Q4 FY22 revenues, client incentives, expenses, operating income, diluted class A EPS and shares against the year-ago quarter and the fiscal year; receivables, cash and debt; no financial outlook in the release"
+  },
+  {
+   "id": "V84",
+   "published": "2015-01-30",
+   "filed": "accepted 2015-01-29 16:08 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q1 2015 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312515025534/d858600dex991.htm",
+   "supports": "Q1 FY15 revenues, client incentives, expenses, operating income, diluted class A EPS and shares against the year-ago quarter; receivables, cash and debt; the financial outlook"
+  },
+  {
+   "id": "Y0",
+   "published": "2022-10-27",
+   "title": "Yahoo Finance daily prices, V and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/V/history",
+   "supports": "close $204.29 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution from 2012-10-31"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-20"
+}

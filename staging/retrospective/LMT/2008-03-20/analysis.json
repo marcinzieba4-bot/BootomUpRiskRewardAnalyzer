@@ -1,0 +1,214 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "LMT",
+ "company": "Lockheed Martin Corporation",
+ "as_of": "2008-03-20",
+ "price_date": "2008-03-20",
+ "price": 100.05,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); defense prime contractor signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'In 2007, 84% of our net sales were made to the U.S. Government, either as a prime contractor or as a subcontractor.' (FY2007 10-K, Item 1); 'Reduced funding for defense procurement and research and development programs could result in terminated or delayed contracts and adversely affect our ability to grow or maintain our sales and profitability.' (Item 1A): sales that depend on Congressional appropriations are not earnings that are the cycle, so DURABLE (the CAT and SO precedent); OFFSHORE (live from 2004-11-05) is scoped to offshore delivery taking share in Western consulting, systems integration and outsourcing, and the 10-K names no offshore competition, so no disruption theme in scope is live",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "'In 2007, 84% of our net sales were made to the U.S. Government, either as a prime contractor or as a subcontractor.' (FY2007 10-K, Item 1); 'Reduced funding for defense procurement and research and development programs could result in terminated or delayed contracts and adversely affect our ability to grow or maintain our sales and profitability.' (Item 1A): sales that depend on Congressional appropriations are not earnings that are the cycle, so DURABLE (the CAT and SO precedent); OFFSHORE (live from 2004-11-05) is scoped to offshore delivery taking share in Western consulting, systems integration and outsourcing, and the 10-K names no offshore competition, so no disruption theme in scope is live. durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.04x; +8% to EPP floor; model-vs-market gap +0.54; conservative 2yr +11%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.04,
+  "ratio_b_fmt": "0.04x",
+  "epp": 92.95,
+  "epp_gap_pct": 7.6,
+  "epp_adj": 0.0,
+  "proxy_composite": 2.2,
+  "sca": 0.133,
+  "adj_composite": 2.333,
+  "market_composite": 1.79,
+  "adj_gap": 0.54,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 11.4,
+  "scenarios": {
+   "BEAR": {
+    "eps": 7.15,
+    "pe": 13.1,
+    "price": 94,
+    "desc": "Flat EPS (worst year FY03-FY07, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 7.49,
+    "pe": 15.3,
+    "price": 115,
+    "desc": "EPS +2.4%/yr (FY08 guide + margin + buyback); P/E at its 5.2-yr median"
+   },
+   "BULL": {
+    "eps": 12.45,
+    "pe": 19.1,
+    "price": 238,
+    "desc": "EPS +32.0%/yr (FY03-FY07 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 14.65,
+    "pe": 20.8,
+    "price": 305,
+    "desc": "EPS +43.2%/yr (best 2-yr run FY03-FY07); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.04,
+   "epp_gap_pct": 7.6,
+   "adj_gap": 0.54,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 11.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": -0.01,
+   "epp_gap_pct": 7.6,
+   "adj_gap": 0.9,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 11.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 0.11,
+   "epp_gap_pct": 7.6,
+   "adj_gap": 0.2,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 11.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.03,
+   "epp_gap_pct": 7.6,
+   "adj_gap": 0.62,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 11.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.07,
+   "epp_gap_pct": 7.6,
+   "adj_gap": 0.42,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 11.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.04,
+   "epp_gap_pct": 7.6,
+   "adj_gap": 0.84,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 11.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.04,
+   "epp_gap_pct": -12.5,
+   "adj_gap": 0.74,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 11.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.04,
+   "epp_gap_pct": 7.6,
+   "adj_gap": 0.8,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 11.4,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "LMT (retrospective, 2008-03-20) ◉ BUY — Ratio B 0.04x (6.0% downside to Bear $94 / +137.9% upside to Bull $238) | Adj composite 2.33 vs market 1.79: gap +0.54 [UNDERVALUED] | +8% above the EPP floor $93 (13x FY08E $7.15) | Conservative 2-yr case: +11.4% total (+5.7%/yr) | At 14.0x FY08E the 15% hurdle price $132 sits between the BASE and BULL cases; backlog +1.0% in Q4 2007, forward revenues -0.1% to +2.2% (FY08 net sales guide); OFFSHORE (live from 2004-11-05) is scoped to offshore delivery in Western consulting, systems integration and outsourcing, and the 10-Ks name no offshore competition; no theme in scope has dated evidence.",
+ "sources": [
+  {
+   "id": "LM18",
+   "published": "2008-02-29",
+   "filed": "2008-02-28 16:21 ET, after the close (dated the next trading day)",
+   "title": "Lockheed Martin FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312508041793/d10k.htm",
+   "supports": "five-year summary 2007-2003 (net sales, diluted EPS $7.10, $5.80, $4.10, $2.83, $2.34, negotiated backlog $76,660M and $75,905M); total business segments operating profit 2007-2005 $4,691M, $4,031M, $3,421M; average diluted shares 427.1M, 436.4M, 445.7M; Items 1 and 1A"
+  },
+  {
+   "id": "LM8",
+   "published": "2006-02-28",
+   "filed": "2006-02-28 13:22 ET, during the session",
+   "title": "Lockheed Martin FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312506040986/d10k.htm",
+   "supports": "net sales and negotiated backlog 2005-2001 (five-year summary); total business segments operating profit 2005-2003 $3,432M, $2,976M, $2,468M; average diluted shares 2005-2003 445.7M, 447.1M, 450.0M"
+  },
+  {
+   "id": "LM9",
+   "published": "2007-02-27",
+   "filed": "2007-02-26 17:21 ET, after the close (dated the next trading day)",
+   "title": "Lockheed Martin FY2006 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312507039899/d10k.htm",
+   "supports": "five-year summary 2006-2002 (net sales $39,620M, $37,213M, $35,526M, $31,824M, $26,578M; diluted EPS from continuing operations $5.80, $4.10, $2.83, $2.34, $1.18; negotiated backlog $75,905M, $74,825M, $73,986M, $76,899M, $70,385M); total business segments operating profit 2006-2004 $4,048M, $3,432M, $2,976M; average diluted shares 436.4M, 445.7M, 447.1M; Items 1 and 1A"
+  },
+  {
+   "id": "LM19",
+   "published": "2008-01-24",
+   "filed": "2008-01-24 06:35 ET, before the open",
+   "title": "Lockheed Martin Q4 2007 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312508010954/dex991.htm",
+   "supports": "Q4 2007: net sales $10,841M vs $10,840M, segment operating profit $1,256M vs $1,161M, diluted EPS $1.89 vs $1.68, total backlog $76,700M, average diluted shares 423.4M; FY2008 outlook net sales $41.8-42.8B, diluted EPS $7.05-7.25"
+  },
+  {
+   "id": "LM14",
+   "published": "2007-01-25",
+   "filed": "2007-01-25 06:38 ET, before the open",
+   "title": "Lockheed Martin Q4 2006 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312507012335/dex99.htm",
+   "supports": "Q4 2006: net sales $10,840M vs $10,229M, segment operating profit $1,166M vs $949M, diluted EPS $1.68 vs $1.29, total backlog $75,905M, average diluted shares 432.8M; FY2007 outlook net sales $40.25-41.25B, diluted EPS $5.80-6.00"
+  },
+  {
+   "id": "LM17",
+   "published": "2007-10-23",
+   "filed": "2007-10-23 07:42 ET, before the open",
+   "title": "Lockheed Martin Q3 2007 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312507223289/dex99.htm",
+   "supports": "Q3 2007: net sales $11,095M vs $9,605M, segment operating profit $1,232M vs $975M, diluted EPS $1.80 vs $1.46, total backlog $72,700M, average diluted shares 424.5M; FY2007 outlook net sales $41-41.75B, diluted EPS $6.70-6.85; FY2008 outlook net sales $41.25-42.75B, diluted EPS $6.95-7.15 (preliminary)"
+  },
+  {
+   "id": "W0",
+   "published": "2008-03-20",
+   "title": "Yahoo Finance daily prices, LMT and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/LMT/history",
+   "supports": "close $100.05 as traded on AS_OF, 52-week range, realized vol, beta, the 5.2-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-16"
+}

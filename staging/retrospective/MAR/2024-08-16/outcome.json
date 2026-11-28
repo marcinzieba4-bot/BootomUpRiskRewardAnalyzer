@@ -1,0 +1,65 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "MAR",
+ "as_of": "2024-08-16",
+ "computed": "2026-11-09",
+ "data_source": "Yahoo Finance daily closes + dividends (MAR, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2025-02-14",
+   "price": 283.52,
+   "dividends": 0.63,
+   "total_return_pct": 28.8,
+   "benchmark_total_return_pct": 10.7,
+   "excess_pct": 18.2,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2025-08-15",
+   "price": 265.2,
+   "dividends": 1.93,
+   "total_return_pct": 21.1,
+   "benchmark_total_return_pct": 17.4,
+   "excess_pct": 3.7,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2026-08-14",
+   "price": 356.72,
+   "dividends": 4.67,
+   "total_return_pct": 63.9,
+   "benchmark_total_return_pct": 42.7,
+   "excess_pct": 21.1,
+   "hurdle_pct": 32.2
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2026-06-12",
+   "price": 402.54
+  },
+  "low": {
+   "date": "2025-04-08",
+   "price": 211.12
+  },
+  "max_drawdown_pct": -30.7,
+  "return_to_avg_price_m12_m24_pct": 47.2
+ },
+ "scenario_landing_2y": "BULL",
+ "call_check_2y": {
+  "expectation": "CHEAP: should clear the hurdle or beat the benchmark",
+  "hit": true
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "DURABLE",
+   "risk": 2
+  },
+  "today": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Marriott: asset-light franchisor; Middle East RevPAR headwind",
+   "reviewed": "2026-09-22"
+  }
+ }
+}

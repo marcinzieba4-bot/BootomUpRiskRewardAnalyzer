@@ -1,0 +1,151 @@
+
+════════════════════════════════════════════════════════════════════════
+  CAT  ·  Caterpillar Inc.  ·  $58.78  ·  RETROSPECTIVE as of 2009-11-13
+  Signal: ✕ AVOID   Ratio B: infx   Adj gap: -2.53  [OVERVALUED]
+  Point-in-time: 9 sources, latest published 2009-11-13; latest print Q3 2009 (Oct 20)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2009E sales and revenues, USD bn  →  FY2011E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Line of business             FY2009E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Machinery                 $    20.1  $  20.1  $  24.9      +0.0      +4.8
+    +12.1% external sales and revenues in FY08
+  Engines                   $    10.3  $  10.3  $  12.7      +0.0      +2.4
+    +19.4% external sales and revenues in FY08
+  Financial Products        $     2.1  $   2.1  $   2.6      +0.0      +0.5
+    +9.5% external sales and revenues in FY08
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    32.5  $  32.5  $  40.2      +0.0      +7.7
+  FY2009E = FY08 $51.32B × (1 − 36.7%: FY09 sales and revenues guide midpoint); split pro rata to FY08 external sales and revenues by line of business (FY2008 recast, 8-K of 2009-05-14, Enterprise-wide Disclosures)
+  Q3 2009 (Oct 20): sales and revenues $7.30B -43.8%; Machinery -51.5%; Engines -34.6%;
+  operating margin 3.80% (-524.1bp); profit per share $0.64 vs $1.39 (-54.0%)
+  Machinery sales $3,904M against $8,051M a year earlier (-51.5%), Engines $2,679M against $4,097M (-34.6%), as the release's sales table shows them
+  FY09 guide (Q3 2008 release, Q4 2008 release, Q1 2009 release, Q2 2009 release, Q3 2009 release): sales and revenues $32-33B; profit per share $1.85-2.05 (excluding redundancy costs; $1.10-1.30 including them)
+
+  FY2009E EPS check:  $32.5B × 8.8% pre-tax × (1−21.2%) ÷ 0.635B  =  $3.54  (FY2009E EPS, guide midpoint (excluding redundancy costs; $1.10-1.30 including them))
+  FY2011E BEAR check: $32.5B × 8.8% ÷ 0.616B  =  $3.65  (scenario $1.45)
+  FY2011E BULL check: $40.2B × 9.2% ÷ 0.616B  =  $4.71  (scenario $2.70)
+  Every 1pp of pre-tax margin ≈ $0.40 EPS ≈ $6/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Machinery sales growth             -33.0%  ≥-13.0%    ≥8.0%   ≥38.0%    -51.5%  ⚠ BEAR  █░░░
+  Engines sales growth               -19.0%   ≥-3.0%   ≥13.0%   ≥37.0%    -34.6%  ⚠ BEAR  █░░░
+  Sales and revenues growth          -24.0%   ≥-6.0%   ≥12.0%   ≥33.0%    -43.8%  ⚠ BEAR  █░░░
+  Profit per share growth            -92.0%  ≥-36.0%   ≥20.0%   ≥85.0%    -54.0%  ⚠ BEAR  █░░░
+  Operating margin change           -710.0bp  ≥-320.0bp  ≥80.0bp  ≥160.0bp  -524.1bp  ⚠ BEAR  █░░░
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.15 / 4.00
+  Market composite:   3.38 / 4.00  (back-solved from $59 + 15% hurdle)
+  SCA adjustment:    -0.10  ·  EPP-distance adj -0.20  →  Adj composite 0.85  →  Gap -2.53  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY08 sales and revenues +14.2%, Machinery +12.1%, Engines +19.4%; Q3 operating margin 3.80% (-524.1bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 30.1x FY09E vs a 14.3x 10-yr median (100th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    -  Growth vs own history: FY09 sales and revenues guide -37.7% to -35.7% vs a 13.0% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  FY08 year-end cash and short-term investments $2.736B, FY08 operating cash flow $4.797B, dividend $1.68 a year, treasury shares purchased $1,800M in 2008 (FY2008 recast, 8-K of 2009-05-14)  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Machinery sales growth              -51.5%    -33.0%  +18.5%  Construction and mining fleets stop g…
+  Engines sales growth                -34.6%    -19.0%  +15.6%  Truck, power and oil and gas engines …
+  Sales and revenues growth           -43.8%    -24.0%  +19.8%  Volume and price fall together
+  Profit per share growth             -54.0%    -92.0%  -38.0%  Costs stay up while volume falls
+  Operating margin change           -524.1bp  -710.0bp  -185.9bp  Factories deleverage on lower volume
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$19  (model)  /  $17 (defined)
+  Bear probability (proxy model):  72.2%
+
+  KEY TRIGGER: Machinery sales growth went from -49.1% (Q2 2009) to -51.5% (Q3 2009);
+  the bear case needs a fall in machinery demand that Engines (-34.6% now) and
+  price realization no longer offset. The 10-K ties demand to the energy and mining industries and to infrastructure,
+  housing and commercial construction; dealer inventory changes move company sales either way.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $1.95  (FY2009E EPS, guide midpoint (excluding redundancy costs; $1.10-1.30 including them))
+  Min viable P/E at panic:          11x  [median of calendar-year P/E lows: 1999 16.5x, 2000 9.9x, 2001 15.4x, 2002 14.7x, 2003 13.5x, 2004 12.1x, 2005 10.3x, 2006 11.2x, 2007 10.8x, 2008 5.8x, 2009 11.4x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $21/share
+  Current $59 vs Updated EPP $21:  +174%  ⚠ far above floor — large drawdown room
+  Bear $17 vs Updated EPP $21:  -21%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Machinery sales growth                     -13.0      +38.5   BASE floor (vs -52 now)
+  Engines sales growth                        -3.0      +31.6   BASE floor (vs -35 now)
+  Sales and revenues growth                   -6.0      +37.8   BASE floor (vs -44 now)
+  Profit per share growth                    -36.0      +18.0   BASE floor (vs -54 now)
+  Operating margin change                   -320.0     +204.1   BASE floor (vs -524 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $1.95 × (1+0.0%)² = $1.95
+  At 14x P/E (conservative):  $27/share
+  + Cumul. dividends (2yr):  +$3.46/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $27  (▼31 from $59)
+  Conservative total return:  -48% over 2yr  = -24%/yr
+
+  0.0% EPS growth is what is left once the premium multiple (30.1x)
+  mean-reverts to 14x. Breakeven at 14x needs FY2011E EPS of $3.95,
+  i.e. 42.3%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $21.71  –  $61.28  (at 94th pct of range)
+  Annual dividend:      $1.68/share  (yield 2.9%)
+  Realized vol (1yr):   57% annualized
+  Beta vs broad market: 1.33
+  1-sigma range (1yr):  $25  –  $92  ($59 ± 57%)
+  2-sigma range (1yr):  $-8  –  $126
+  ────────────────────────────────────────────────────────────
+  Bear $17 requires:  ~1.2σ price move  (within normal vol range)
+  The largest maker of construction and mining equipment with a 1.3 beta: the stock is +165% off its March
+  low while Machinery sales growth went from -49.1% (Q2 2009) to -51.5% (Q3 2009).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        1.45  11.6x  $     17    72.2%      2.8%   +69.4pp  EPS -13.9%/yr (worst year FY99-FY08, capped at 0%); P/E to its 10th pct
+  BASE        0.82  14.3x  $     12    20.7%      9.8%   +10.9pp  EPS +-35.2%/yr (FY09 guide + margin + buyback); P/E at its 10-yr median
+  BULL        2.70  18.2x  $     49     5.9%     34.4%   -28.4pp  EPS +17.6%/yr (FY99-FY08 CAGR); P/E holds its 75th pct
+  XBULL       5.05  22.2x  $    112     1.1%     53.0%   -51.9pp  EPS +60.9%/yr (best 2-yr run FY99-FY08); P/E at its 90th pct
+
+  Proxy EV (2yr): $19  /  Market EV: $78  /  Current: $59
+  Conservative EV (2yr, ④): $27 + $3.46 divs = $31 total value
+  Downside (→ Bear $17): 71.1%   Upside (→ Bull $49): -16.6%   Ratio B infx  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $59 the market needs $78 in two years —
+  above the BULL case. That is a market composite of 3.38 against a model
+  read of 0.85: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                        infx    +174%    -2.53  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)    33.43x    +174%    -2.20  OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx    +174%    -2.85  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                           infx    +174%    -2.49  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                           infx    +174%    -2.56  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)              infx    +174%    -2.23  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                  infx    +115%    -2.53  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                     infx    +174%    -2.42  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 2009 print (late January) — the next read on Machinery sales (-51.5% now) and the guide
+  (2) Operating margin — -524.1bp in Q3 2009: price realization against material and factory costs, what must hold if volume does not
+  (3) FY09 profit per share guide $1.85-2.05 (Q3 2009 release): the company's own read of the year
+  (4) FY09 sales and revenues guide $32-33B (Q3 2009 release): volume, price and currency in one number
+  (5) Capital return at 30x — No stock repurchase is expected.: management's own read of the multiple
+  ✕ AVOID  |  EPP floor $21  |  ADD below ~$10  |  TRIM above $49
+════════════════════════════════════════════════════════════════════════
+

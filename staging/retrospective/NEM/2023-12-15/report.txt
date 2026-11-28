@@ -1,0 +1,149 @@
+
+════════════════════════════════════════════════════════════════════════
+  NEM  ·  Newmont Corporation  ·  $40.87  ·  RETROSPECTIVE as of 2023-12-15
+  Signal: ◉ BUY   Ratio B: 0.02x   Adj gap: +0.12  [FAIRLY VALUED]
+  Point-in-time: 14 sources, latest published 2023-12-15; latest print Q3 2023 (Oct 26)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2023E revenue, USD bn  →  FY2025E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2023E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Gold                          $  9.85  $ 9.85  $10.80    +0.00    +0.95
+    -1.2% revenue in FY22
+  Other metals                  $  1.42  $ 1.42  $ 1.55    +0.00    +0.13
+    -10.7% revenue in FY22
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $ 11.27  $11.27  $12.35    +0.00    +1.08
+  FY2023E = FY22 $11.915B × (1 − 5.4%: the Q3 2023 revenue growth (no revenue guide), YoY, applied to the year (no FY23 revenue guide)); split pro rata to FY22 sales by metal (FY2022 10-K; other metals as sales less gold)
+  Q3 2023 (Oct 26): revenue $2.493B -5.4% YoY; gold ounces sold -10.1%; costs applicable to sales $1,019/oz (+5.3%);
+  pre-tax margin 9.31% (-193.2bp); EPS $0.20 vs $0.28 (-28.6%)
+  Revenue: sales $2,493M vs $2,634M a year earlier; consolidated gold ounces sold 1,250K vs 1,391K; costs applicable to sales $1,019 an ounce of gold vs $968; GAAP diluted EPS from continuing operations $0.20 vs $0.28; diluted shares 796M; adjusted figures, display only: Adjusted Net Income (ANI)** of $0.36 per diluted share
+  FY23 outlook (Q3 2023 release, 2023-10-26, display only): 'Revised 2023 outlook for the standalone Newmont portfolio to 5.3 million ounces of attributable production, CAS per ounce** of $1,000 and AISC per ounce** of $1,400' — a production and unit-cost outlook: method r2 has no input for a production guide (the XOM rule) or for cost components (the MSFT segment rule), so no field; no filing guides revenue, EPS or a margin; BASE takes Q3 2023 revenue growth
+
+  FY2023E EPS check:  $11.270B × -0.4% pre-tax × (1−-892.2%) ÷ 0.796B  =  $-0.60  (FY2023E: no EPS guide in numbers, FY20's $3.31 (GAAP) stands (FY21 excluded: the AAPL FY2002 test; FY22 excluded: a loss))
+  FY2025E BEAR check: $11.270B × -0.4% ÷ 0.879B  =  $-0.55  (scenario $3.31)
+  FY2025E BULL check: $12.350B × -0.0% ÷ 0.879B  =  $-0.04  (scenario $4.54)
+  Every 1pp of pre-tax margin ≈ $1.405 EPS ≈ $24.16/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Gold ounces sold                      -27.0%   ≥-13.0%     ≥1.0%    ≥40.0%    -10.1%  ◦ BASE  ██░░
+  Costs applicable to sales per oz      +52.0%    ≤28.0%     ≤5.0%   ≤-14.0%     +5.3%  ◦ BASE  ██░░
+  Revenue growth                        -33.0%   ≥-10.0%    ≥13.0%    ≥55.0%     -5.4%  ◦ BASE  ██░░
+  EPS growth                           -106.0%   ≥-34.0%    ≥38.0%   ≥297.0%    -28.6%  ◦ BASE  ██░░
+  Pre-tax margin change               -8210.0bp  ≥-4020.0bp  ≥180.0bp  ≥3780.0bp  -193.2bp  ◦ BASE  ██░░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.00 / 4.00
+  Market composite:   2.03 / 4.00  (back-solved from $40.87 + 15% hurdle)
+  SCA adjustment:    +0.15  ·  EPP-distance adj +0.00  →  Adj composite 2.15  →  Gap +0.12  [FAIRLY VALUED]
+
+  Structural factors:
+    +  Franchise: FY22 consolidated gold ounces sold 5,812K (-1.4%), costs applicable to sales $933/oz (+18.9%) (FY2022 10-K); Q3 $1,019/oz (+5.3% YoY)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 12.3x FY23E vs a 17.2x 10-yr ex-FY13 ex-FY15 ex-FY16 ex-FY17 ex-FY18 ex-FY19 ex-FY21 ex-FY22 median (13th percentile of its own range)  (+0.50 × 25%  =  +0.125)
+    -  Growth vs own history: Q3 2023 revenue growth (no revenue guide) -5.4% vs a 6.3% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  Cash and cash equivalents $3.190B, debt $5,575M (long-term $5,575M and current $0M) (Q3 2023), FY22 free cash flow $1.067B (net cash provided by (used in) operating activities of continuing operations $3,198M less additions to property, plant and mine development $2,131M (FY2022 10-K)), dividend $1.60 a year  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Gold ounces sold                      -10.1%    -27.0%  -16.9%  Grades, recoveries and mine sequencin…
+  Costs applicable to sales per oz       +5.3%    +52.0%  +46.7%  Labor, fuel, power and currencies lif…
+  Revenue growth                         -5.4%    -33.0%  -27.6%  Gold and copper prices and volumes fa…
+  EPS growth                            -28.6%   -106.0%  -77.4%  Write-downs and unit costs outrun the…
+  Pre-tax margin change               -193.2bp  -8210.0bp  -8016.8bp  Unit costs and charges outrun the met…
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$44.50  (model)  /  $40.05 (defined)
+  Bear probability (proxy model):  17.6%
+
+  KEY TRIGGER: gold ounces sold went from -18.3% (Q2 2023) to -10.1% YoY (Q3 2023), revenue -5.4%;
+  the bear case needs unit costs (+5.3% per ounce now) rising faster than the metal
+  price, with the pre-tax margin (-193.2bp now) giving way. A gold miner's downturn shows up in unit costs and ounces first;
+  the bear needs the gold price to stop covering them.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $3.31  (FY2023E: no EPS guide in numbers, FY20's $3.31 (GAAP) stands (FY21 excluded: the AAPL FY2002 test; FY22 excluded: a loss))
+  Min viable P/E at panic:          11x  [median of calendar-year P/E lows: 2014 13.9x, 2020 11.9x, 2023 10.3x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $36.41/share
+  Current $40.87 vs Updated EPP $36.41:  +12%  moderate distance to floor
+  Bear $40.05 vs Updated EPP $36.41:  +10%  ✓ bear stays above the floor
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Gold ounces sold                             -13.0       -2.9   BASE floor (vs -10 now)
+  Costs applicable to sales per oz              28.0      +22.7   BASE floor (vs +5 now)
+  Revenue growth                               -10.0       -4.6   BASE floor (vs -5 now)
+  EPS growth                                   -34.0       -5.4   BASE floor (vs -29 now)
+  Pre-tax margin change                      -4020.0    -3826.8   BASE floor (vs -193 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $3.31 × (1+0.0%)² = $3.31
+  At 17x P/E (conservative):  $56.27/share
+  + Cumul. dividends (2yr):  +$3.30/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $56.27  (▲15.40 from $40.87)
+  Conservative total return:  +46% over 2yr  = +23%/yr
+
+  At 12.3x the multiple is already near its 17x median, so the conservative
+  case is a growth question: breakeven at 17x needs FY2025E EPS of $2.21,
+  i.e. -18.3%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $33.59  –  $55.41  (at 33th pct of range)
+  Annual dividend:      $1.60/share  (yield 3.9%)
+  Realized vol:         33% annualized (1-yr daily log returns)
+  Beta vs broad market: 0.59
+  1-sigma range (1yr):  $27.38  –  $54.36  ($40.87 ± 33%)
+  2-sigma range (1yr):  $13.90  –  $67.84
+  ────────────────────────────────────────────────────────────
+  Bear $40.05 requires:  ~0.1σ price move  (within normal vol range)
+  A gold producer whose revenue follows the gold price: the stock is +20% off its November
+  low (52 weeks) while gold ounces sold went from -18.3% (Q2 2023) to -10.1% YoY (Q3 2023), revenue -5.4%.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        3.31   12.1x  $  40.05    17.6%     17.2%    +0.4pp  Flat EPS (no EPS change in FY14-FY20 ex-FY15 ex-FY16 ex-FY17 ex-FY18 ex-FY19 to measure: the 0% cap); P/E to its 10th pct
+  BASE        2.65   17.2x  $  45.58    61.5%     60.1%    +1.3pp  EPS -10.5%/yr (Q3 revenue YoY + margin + buyback); P/E at its 10-yr ex-FY13 ex-FY15 ex-FY16 ex-FY17 ex-FY18 ex-FY19 ex-FY21 ex-FY22 median
+  BULL        4.54   19.0x  $  86.26    17.6%     19.0%    -1.4pp  EPS +17.2%/yr (FY14-FY20 ex-FY15 ex-FY16 ex-FY17 ex-FY18 ex-FY19 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL       4.54   19.9x  $  90.35     3.3%      3.6%    -0.3pp  EPS +17.2%/yr (no 2-yr run in FY14-FY20 ex-FY15 ex-FY16 ex-FY17 ex-FY18 ex-FY19: BULL's rate); P/E at its 90th pct
+
+  Proxy EV (2yr): $53.26  /  Market EV: $53.98  /  Current: $40.87
+  Conservative EV (2yr, ④): $56.27 + $3.30 divs = $59.57 total value
+  Downside (→ Bear $40.05): 2.0%   Upside (→ Bull $86.26): 111.1%   Ratio B 0.02x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $40.87 the market needs $54.05 in two years —
+  between the BASE and BULL cases. That is a market composite of 2.03 against a model
+  read of 2.15: price and numbers roughly agree.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.02x     +12%    +0.12  FAIRLY VALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)    -0.08x     +12%    +0.51  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.07x     +12%    -0.14  FAIRLY VALUED / BUY
+  Scenario EPS +1.5pp/yr                         -0.01x     +12%    +0.24  MODESTLY UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.05x     +12%    +0.05  FAIRLY VALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.02x     +12%    +0.42  MODESTLY UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.02x     -12%    +0.32  MODESTLY UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.02x     +12%    +0.51  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 and full-year print (February) — revenue against the Q3 2023 revenue growth (no revenue guide): -5.4% YoY
+  (2) Unit costs — costs applicable to sales +5.3% per ounce in Q3 2023: what must hold if the gold price does not
+  (3) The FY23 outlook — gold sales and unit costs, not revenue or EPS (Q3 2023 release): the gold price sets revenue
+  (4) Ounces — consolidated gold ounces sold -10.1% in Q3 2023 against revenue -5.4%: the metal price, not volume, has carried revenue
+  (5) Capital structure at 12x — dividends declared $2.05 a share in FY2022 (regular); share repurchases text only
+  ◉ BUY  |  EPP floor $36.41  |  ADD below ~$38.74  |  TRIM above $86.26
+════════════════════════════════════════════════════════════════════════
+

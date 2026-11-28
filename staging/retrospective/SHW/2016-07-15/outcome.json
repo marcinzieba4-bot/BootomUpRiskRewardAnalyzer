@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "SHW",
+ "as_of": "2016-07-15",
+ "computed": "2026-11-06",
+ "data_source": "Yahoo Finance daily closes + dividends (SHW, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2017-01-13",
+   "price": 285.1,
+   "dividends": 1.68,
+   "total_return_pct": -6.3,
+   "benchmark_total_return_pct": 6.3,
+   "excess_pct": -12.6,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2017-07-14",
+   "price": 356.47,
+   "dividends": 3.38,
+   "total_return_pct": 17.6,
+   "benchmark_total_return_pct": 15.9,
+   "excess_pct": 1.7,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2018-07-13",
+   "price": 418.39,
+   "dividends": 6.8,
+   "total_return_pct": 39.0,
+   "benchmark_total_return_pct": 34.0,
+   "excess_pct": 5.0,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2019-07-15",
+   "price": 473.87,
+   "dividends": 10.78,
+   "total_return_pct": 58.4,
+   "benchmark_total_return_pct": 46.3,
+   "excess_pct": 12.1,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2018-01-12",
+   "price": 432.84
+  },
+  "low": {
+   "date": "2016-11-01",
+   "price": 240.63
+  },
+  "max_drawdown_pct": -22.9,
+  "return_to_avg_price_m12_m24_pct": 26.2
+ },
+ "scenario_landing_2y": "BULL",
+ "call_check_2y": {
+  "expectation": "RICH: should miss the hurdle and lag the benchmark",
+  "hit": false
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "DURABLE",
+   "risk": 2
+  },
+  "today": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Sherwin-Williams: paint stores moat, pricing power",
+   "reviewed": "2026-09-22"
+  }
+ }
+}

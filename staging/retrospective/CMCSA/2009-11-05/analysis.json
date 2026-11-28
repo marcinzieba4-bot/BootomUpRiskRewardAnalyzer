@@ -1,0 +1,238 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "CMCSA",
+ "company": "Comcast Corporation",
+ "as_of": "2009-11-05",
+ "price_date": "2009-11-05",
+ "price": 14.2,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); cable signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'Competition for the cable services we offer consists primarily of DBS operators and local phone companies' (FY2008 10-K); 'Intensifying competition and a weakening economy affected our net customer additions in 2008'; 'We expect advances in communications technology, such as video streaming over the Internet, to continue in the future, and we are unable to predict what effects these developments will have on our businesses and operations'; competitors include 'online services that offer Internet video streaming, downloading and distribution of movies, television shows and other video programming'",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "'Competition for the cable services we offer consists primarily of DBS operators and local phone companies' (FY2008 10-K); 'Intensifying competition and a weakening economy affected our net customer additions in 2008'; 'We expect advances in communications technology, such as video streaming over the Internet, to continue in the future, and we are unable to predict what effects these developments will have on our businesses and operations'; competitors include 'online services that offer Internet video streaming, downloading and distribution of movies, television shows and other video programming'. durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.02x; -40% to EPP floor; model-vs-market gap +0.88; conservative 2yr +155%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.02,
+  "ratio_b_fmt": "0.02x",
+  "epp": 23.66,
+  "epp_gap_pct": -40.0,
+  "epp_adj": 0.2,
+  "proxy_composite": 1.75,
+  "sca": 0.15,
+  "adj_composite": 2.1,
+  "market_composite": 1.22,
+  "adj_gap": 0.88,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 155.4,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.73,
+    "pe": 16.5,
+    "price": 12,
+    "desc": "EPS -10.7%/yr (worst year FY04-FY08, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 1.03,
+    "pe": 36.0,
+    "price": 37,
+    "desc": "EPS +6.4%/yr (Q3 revenues + margin + buyback); P/E at its 5.8-yr median"
+   },
+   "BULL": {
+    "eps": 1.64,
+    "pe": 69.9,
+    "price": 115,
+    "desc": "EPS +34.3%/yr (FY04-FY08 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 2.69,
+    "pe": 83.2,
+    "price": 224,
+    "desc": "EPS +72.0%/yr (best 2-yr run FY04-FY08); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.02,
+   "epp_gap_pct": -40.0,
+   "adj_gap": 0.88,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 155.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": -0.01,
+   "epp_gap_pct": -40.0,
+   "adj_gap": 1.1,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 155.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 0.07,
+   "epp_gap_pct": -40.0,
+   "adj_gap": 0.82,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 155.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.02,
+   "epp_gap_pct": -40.0,
+   "adj_gap": 0.88,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 155.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.02,
+   "epp_gap_pct": -40.0,
+   "adj_gap": 0.88,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 155.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.02,
+   "epp_gap_pct": -40.0,
+   "adj_gap": 1.18,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 155.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.02,
+   "epp_gap_pct": -46.2,
+   "adj_gap": 0.88,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 155.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.02,
+   "epp_gap_pct": -40.0,
+   "adj_gap": 0.88,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 155.4,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "CMCSA (retrospective, 2009-11-05) ◉ BUY — Ratio B 0.02x (15.5% downside to Bear $12 / +709.9% upside to Bull $115) | Adj composite 2.10 vs market 1.22: gap +0.88 [UNDERVALUED] | -40% above the EPP floor $24 (26x FY09E $0.91) | Conservative 2-yr case: +155.4% total (+77.7%/yr) | At 15.6x FY09E the 15% hurdle price $19 sits at or below the BASE case; video subscribers -2.7% in Q3 2009, forward revenues +3% (no FY09 revenue guide in numbers, Q3 2009 revenue growth); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "CM20",
+   "published": "2009-02-20",
+   "filed": "2009-02-20 13:52 ET",
+   "title": "Comcast FY2008 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-09-033975.txt",
+   "supports": "selected financial data 2004-2008; consolidated statement of operations 2006-2008; diluted shares 3,180M, 3,129M, 2,952M; capital expenditures; video customers 2004-2008; segment revenues"
+  },
+  {
+   "id": "CM19",
+   "published": "2009-02-18",
+   "filed": "2009-02-18 07:05 ET (before the open)",
+   "title": "Comcast Q4 2008 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001157523-09-001338.txt",
+   "supports": "Q4 and full-year 2008 statement of operations; Adjusted EPS 2008 $0.91 and 2007 $0.74; video customers; quarterly dividend raised to $0.0675; no 2009 outlook in numbers"
+  },
+  {
+   "id": "CM15",
+   "published": "2008-02-20",
+   "filed": "2008-02-20 11:54 ET",
+   "title": "Comcast FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-08-034239.txt",
+   "supports": "selected financial data 2003-2007; consolidated statement of operations 2005-2007; diluted shares 3,312M, 3,180M, 3,129M; capital expenditures; video subscribers 2003-2007; segment revenues; the $0.0625 quarterly dividend"
+  },
+  {
+   "id": "CM14",
+   "published": "2008-02-14",
+   "filed": "2008-02-14 06:51 ET (before the open)",
+   "title": "Comcast Q4 2007 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-08-030118.txt",
+   "supports": "Q4 and full-year 2007 statement of operations; Adjusted EPS 2007 $0.74 and 2006 $0.60; 2008 Financial Outlook (consolidated revenue growth of 8% to 10%); first quarterly dividend of $0.0625"
+  },
+  {
+   "id": "CM9",
+   "published": "2007-02-26",
+   "filed": "2007-02-26 12:08 ET",
+   "title": "Comcast FY2006 10-K (2006 Annual Report as Exhibit 13.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-07-039301.txt",
+   "supports": "consolidated statement of operations 2004-2006 (revenues $19,221M, $21,075M, $24,966M; operating income $2,829M, $3,521M, $4,619M; diluted EPS from continuing operations $0.28, $0.25, $0.70 after the 3-for-2 split); diluted shares 3,375M, 3,312M, 3,180M; capital expenditures $3,660M, $3,621M, $4,395M; video subscribers 2002-2006 in millions excluding the systems transferred to Time Warner; segment revenues; 2006 Free Cash Flow $2,623M; no cash dividend"
+  },
+  {
+   "id": "CM21",
+   "published": "2009-04-30",
+   "filed": "2009-04-30 07:05 ET (before the open)",
+   "title": "Comcast Q1 2009 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001157523-09-003188.txt",
+   "supports": "Q1 2009 statement of operations, capital expenditures, video customers"
+  },
+  {
+   "id": "CM22",
+   "published": "2009-08-06",
+   "filed": "2009-08-06 07:06 ET (before the open)",
+   "title": "Comcast Q2 2009 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-09-166279.txt",
+   "supports": "Q2 2009 statement of operations, capital expenditures, video customers"
+  },
+  {
+   "id": "CM23",
+   "published": "2009-11-04",
+   "filed": "2009-11-04 07:09 ET (before the open)",
+   "title": "Comcast Q3 2009 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-09-222941.txt",
+   "supports": "Q3 2009 statement of operations, capital expenditures, video customers"
+  },
+  {
+   "id": "CM24",
+   "published": "2007-02-01",
+   "filed": "2007-02-01 07:06 ET (before the open)",
+   "title": "Comcast 8-K: three-for-two stock split",
+   "url": "https://www.sec.gov/Archives/edgar/data/1166691/0001193125-07-017749.txt",
+   "supports": "a three-for-two stock split in the form of a 50% stock dividend payable on February 21, 2007 (the stock traded ex-dividend from February 22, 2007, FY2006 Annual Report)"
+  },
+  {
+   "id": "W0",
+   "published": "2009-11-05",
+   "title": "Yahoo Finance daily prices, CMCSA and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/CMCSA/history",
+   "supports": "close $14.20 as traded on AS_OF, 52-week range, realized vol, beta, the 5.8-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-11"
+}

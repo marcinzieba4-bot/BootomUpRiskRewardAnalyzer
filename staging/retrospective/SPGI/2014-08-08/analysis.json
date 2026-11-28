@@ -1,0 +1,266 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "SPGI",
+ "company": "McGraw Hill Financial, Inc.",
+ "as_of": "2014-08-08",
+ "price_date": "2014-08-08",
+ "price": 78.55,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); ratings, education and information signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "McGraw Hill Financial 'is a leading ratings, benchmarks and analytics provider serving the global capital, commodities and commercial markets' (Item 1); Item 1A: 'Changes in the volume of securities issued and traded in domestic and/or global capital markets and changes in interest rates and volatility in the financial markets could have a material impact on our results of operations', and no risk factor calling a business cyclical; a fall in debt issuance or the markets it serves cuts revenue, and no disruption theme is live for the business on this date",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "McGraw Hill Financial 'is a leading ratings, benchmarks and analytics provider serving the global capital, commodities and commercial markets' (Item 1); Item 1A: 'Changes in the volume of securities issued and traded in domestic and/or global capital markets and changes in interest rates and volatility in the financial markets could have a material impact on our results of operations', and no risk factor calling a business cyclical; a fall in debt issuance or the markets it serves cuts revenue, and no disruption theme is live for the business on this date. durable franchise (obsolescence risk 2/5); price rich; Ratio B 2.31x; +36% to EPP floor; model-vs-market gap -0.30; conservative 2yr +14%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": 2.31,
+  "ratio_b_fmt": "2.31x",
+  "epp": 57.75,
+  "epp_gap_pct": 36.0,
+  "epp_adj": 0.0,
+  "proxy_composite": 2.45,
+  "sca": 0.102,
+  "adj_composite": 2.552,
+  "market_composite": 2.85,
+  "adj_gap": -0.3,
+  "valuation": "MODESTLY OVERVALUED",
+  "cons_return_2yr": 14.5,
+  "scenarios": {
+   "BEAR": {
+    "eps": 1.43,
+    "pe": 15.6,
+    "price": 22,
+    "desc": "EPS -39.1%/yr (worst year FY04-FY13, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 4.77,
+    "pe": 19.7,
+    "price": 94,
+    "desc": "EPS +11.3%/yr (Q2 revenue + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 4.77,
+    "pe": 21.6,
+    "price": 103,
+    "desc": "EPS +11.3%/yr (FY04-FY13 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 6.13,
+    "pe": 23.5,
+    "price": 144,
+    "desc": "EPS +26.2%/yr (best 2-yr run FY04-FY13); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 2.31,
+   "epp_gap_pct": 36.0,
+   "adj_gap": -0.3,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 14.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 1.6,
+   "epp_gap_pct": 36.0,
+   "adj_gap": 0.15,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 14.5,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 3.79,
+   "epp_gap_pct": 36.0,
+   "adj_gap": -0.64,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 14.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 2.02,
+   "epp_gap_pct": 36.0,
+   "adj_gap": -0.14,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 14.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 2.64,
+   "epp_gap_pct": 36.0,
+   "adj_gap": -0.42,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 14.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 2.31,
+   "epp_gap_pct": 36.0,
+   "adj_gap": 0.0,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 14.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 2.31,
+   "epp_gap_pct": 13.3,
+   "adj_gap": -0.3,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 14.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 2.31,
+   "epp_gap_pct": 36.0,
+   "adj_gap": 0.1,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 14.5,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "FAIR",
+  "RICH"
+ ],
+ "summary": "MHFI (retrospective, 2014-08-08) ✕ AVOID — Ratio B 2.31x (72.0% downside to Bear $22 / +31.1% upside to Bull $103) | Adj composite 2.55 vs market 2.85: gap -0.30 [MODESTLY OVERVALUED] | +36% above the EPP floor $58 (15x FY14E $3.85) | Conservative 2-yr case: +14.5% total (+7.2%/yr) | At 20.4x FY14E the 15% hurdle price $104 sits above the BULL case; Financial Services revenue +9.3% in Q2 2014, forward revenues +7.7% (no FY14 revenue guide in numbers, Q2 2014 growth); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "SP46",
+   "published": "2014-02-07",
+   "filed": "accepted 2014-02-07 09:09 ET, before the open",
+   "title": "McGraw Hill Financial FY2013 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404014000007/mhfi-20131231x10k.htm",
+   "supports": "annual history (selected financial data: revenue, pre-tax income, diluted EPS from continuing operations; segment revenue and operating profit), cash, operating cash flow, repurchases, the dividend rate, diluted shares, Items 1 and 1A"
+  },
+  {
+   "id": "SP45",
+   "published": "2014-02-04",
+   "filed": "8-K accepted 2014-02-04 07:10 ET, before the open",
+   "title": "McGraw Hill Financial Q4 2013 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000114420414005713/v367061_ex99.htm",
+   "supports": "Q4 2013: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2013 actuals; FY2014 outlook"
+  },
+  {
+   "id": "SP37",
+   "published": "2013-02-12",
+   "filed": "8-K accepted 2013-02-12 07:10 ET, before the open",
+   "title": "The McGraw-Hill Companies Q4 2012 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000114420413007556/v334572_ex99-1.htm",
+   "supports": "Q4 2012: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2012 actuals; FY2011 republished; FY2013 outlook"
+  },
+  {
+   "id": "SP39",
+   "published": "2013-03-20",
+   "filed": "accepted 2013-03-20 15:59 ET, during the session",
+   "title": "The McGraw-Hill Companies FY2012 10-K/A (Amendment No. 1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404013000008/mhp-20121231x10ka.htm",
+   "supports": "annual history (revenue, segment operating profit, pre-tax income, diluted EPS from continuing operations), segments, cash, operating cash flow, repurchases, the dividend rate, Items 1 and 1A"
+  },
+  {
+   "id": "SP33",
+   "published": "2012-02-07",
+   "filed": "accepted 2012-02-07 12:35 ET, during the session",
+   "title": "The McGraw-Hill Companies FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000119312512043165/d272748d10k.htm",
+   "supports": "annual history (revenue, segment operating profit, pre-tax income, diluted EPS from continuing operations), segments, cash, operating cash flow, repurchases, the dividend rate, Items 1 and 1A"
+  },
+  {
+   "id": "SP28",
+   "published": "2011-02-23",
+   "filed": "accepted 2011-02-23 15:16 ET, during the session",
+   "title": "The McGraw-Hill Companies FY2010 10-K and Exhibit 13",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000095012311017079/y88684exv13.htm",
+   "supports": "annual history (revenue, segment operating profit, pre-tax income, diluted EPS from continuing operations), segments, cash, operating cash flow, repurchases, the dividend rate, Items 1 and 1A",
+   "also": "https://www.sec.gov/Archives/edgar/data/64040/000095012311017079/y88684e10vk.htm"
+  },
+  {
+   "id": "SP23",
+   "published": "2010-02-24",
+   "filed": "accepted 2010-02-24 15:46 ET, during the session",
+   "title": "The McGraw-Hill Companies FY2009 10-K and Exhibit 13",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000095012310016328/y80741exv13.htm",
+   "supports": "annual history (revenue, segment operating profit, pre-tax income, diluted EPS from continuing operations), segments, cash, operating cash flow, repurchases, the dividend rate, Items 1 and 1A",
+   "also": "https://www.sec.gov/Archives/edgar/data/64040/000095012310016328/y80741e10vk.htm"
+  },
+  {
+   "id": "SP47",
+   "published": "2006-02-24",
+   "filed": "accepted 2006-02-24 14:56 ET, during the session",
+   "title": "The McGraw-Hill Companies FY2005 10-K, Exhibit 13 (earnings per share note)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000095012306002219/y17693exv13.htm",
+   "supports": "2004 and 2005 diluted weighted average shares 385,824K and 382,570K (Earnings per share note)"
+  },
+  {
+   "id": "SP48",
+   "published": "2014-04-29",
+   "filed": "8-K accepted 2014-04-29 07:11 ET, before the open",
+   "title": "McGraw Hill Financial Q1 2014 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000114420414025518/v376210_ex99-1.htm",
+   "supports": "Q1 2014: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2014 outlook"
+  },
+  {
+   "id": "SP49",
+   "published": "2014-07-29",
+   "filed": "8-K accepted 2014-07-29 07:12 ET, before the open",
+   "title": "McGraw Hill Financial Q2 2014 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000114420414045320/v384875_ex99.htm",
+   "supports": "Q2 2014: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2014 outlook"
+  },
+  {
+   "id": "SP4",
+   "published": "2007-02-28",
+   "filed": "accepted 2007-02-28 14:02 ET, during the session",
+   "title": "The McGraw-Hill Companies FY2006 10-K and Exhibit 13",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000095012307002897/y30806exv13.htm",
+   "supports": "Eleven-Year Financial Review 1996-2006 (revenue and operating profit by segment, pre-tax income, diluted EPS from continuing operations), cash, operating cash flow, repurchases, the dividend rate, Items 1 and 1A",
+   "also": "https://www.sec.gov/Archives/edgar/data/64040/000095012307002897/y30806e10vk.htm"
+  },
+  {
+   "id": "SP40",
+   "published": "2013-04-30",
+   "filed": "8-K accepted 2013-04-30 07:10 ET, before the open",
+   "title": "The McGraw-Hill Companies Q1 2013 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000114420413024851/v343076_ex99.htm",
+   "supports": "Q1 2013: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2013 outlook; the NYSE symbol MHFI from May 14, 2013"
+  },
+  {
+   "id": "W0",
+   "published": "2014-08-08",
+   "title": "Yahoo Finance daily prices, MHFI and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/SPGI/history",
+   "supports": "close $78.55 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-20"
+}

@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  CRM  ·  Salesforce, Inc.  ·  $240.36  ·  RETROSPECTIVE as of 2025-10-03
+  Signal: ◉ BUY   Ratio B: -0.01x   Adj gap: +0.88  [UNDERVALUED]
+  Point-in-time: 19 sources, latest published 2025-10-03; latest print Q2 FY26 (Sep 3)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2026E revenue, USD bn  →  FY2028E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2026E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Americas                      $ 27.34  $27.34  $40.22    +0.00   +12.88
+    +8.0% revenue in FY25
+  Europe                        $  9.67  $ 9.67  $14.22    +0.00    +4.55
+    +9.4% revenue in FY25
+  Asia Pacific                  $  4.20  $ 4.20  $ 6.18    +0.00    +1.98
+    +12.2% revenue in FY25
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $ 41.21  $41.21  $60.62    +0.00   +19.41
+  FY2026E = FY25 $37.895B × (1 + 8.7%: FY26 revenue guide midpoint ($41.10-41.30B, Q2 FY26 release)); split pro rata to FY25 revenues by geography (the FY2025 10-K), growth on the year before
+  Q2 FY26 (Sep 3): revenue $10.236B +9.8% YoY (+4.1% QoQ); subscription and support +10.6%; deferred revenue $16.555B +8.8%; R&D + M&S + G&A +7.1%;
+  gross margin 78.10% (+125.0bp); operating margin 22.78% (+366.2bp); EPS $1.96 vs $1.47
+  Revenue: revenues $10,236M vs $9,325M a year earlier, $9,829M the quarter before; subscription and support $9,690M vs $8,764M; unearned revenue $16,555M at the quarter end vs $15,222M a year earlier (the release's unearned revenue roll-forward; the balance sheet's current liability); GAAP diluted EPS $1.96 vs $1.47; the release's non-GAAP EPS also excludes stock-based compensation and the amortization of purchased intangibles, which recur, so it is not used; diluted shares 962M; restructuring $4M vs $99M a year earlier, a separately stated operating line outside the opex signal; 'During the three months ended July 31, 2025 and 2024, gains (losses) on strategic investments impacted GAAP diluted net income per share by $0.00 and $(0.03)' (display)
+  Q3 FY26 outlook: Q3 FY26 revenue $10,240-10,290M ('Revenue | $10.24 - $10.29 billion') against Q3 FY25's $9,444.0M: +8.4% to +9% YoY; display only: 'Diluted net income per share | $1.60 - $1.62 | $2.84 - $2.86' (Q3 FY26 GAAP EPS); FY26 guide (Q4 FY25 release, Q1 FY26 release, Q2 FY26 release): EPS $6.99-7.03 (Q2 FY26 release: GAAP diluted EPS); revenue $41.10-41.30B (Q2 FY26 release; the segment bridge only); GAAP operating margin 21.2% ('Operating margin | 21.2% | 34.1%', Q2 FY26 release), a guided step from FY25's 19.01%
+
+  FY2026E EPS check:  $41.210B × 19.6% pre-tax × (1−16.7%) ÷ 0.962B  =  $7.00  (FY2026E EPS, guide midpoint ($6.99-7.03, Q2 FY26 release))
+  FY2028E BEAR check: $41.210B × 19.6% ÷ 1.045B  =  $6.45  (scenario $7.01)
+  FY2028E BULL check: $60.620B × 20.0% ÷ 1.045B  =  $9.68  (scenario $14.58)
+  Every 1pp of pre-tax margin ≈ $0.357 EPS ≈ $17.56/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Subscription and support growth       +40.0%    ≥61.0%    ≥82.0%   ≥328.0%    +10.6%  ⚠ BEAR  █░░░
+  Deferred revenue growth               +43.0%    ≥68.0%    ≥93.0%   ≥169.0%     +8.8%  ⚠ BEAR  █░░░
+  Gross margin change                 -740.0bp  ≥-330.0bp   ≥70.0bp  ≥3600.0bp  +125.0bp  ▲ BULL  ███░
+  Opex growth less revenue             +49.0pp   ≤12.0pp  ≤-24.0pp  ≤-305.0pp    -2.7pp  ◦ BASE  ██░░
+  Operating margin change             -2800.0bp  ≥-720.0bp  ≥1360.0bp  ≥48650.0bp  +219.0bp  ◦ BASE  ██░░
+  Generative AI: net effect on subscription seats    +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.75 / 4.00
+  Market composite:   1.22 / 4.00  (back-solved from $240.36 + 15% hurdle)
+  SCA adjustment:    +0.15  ·  EPP-distance adj +0.20  →  Adj composite 2.10  →  Gap +0.88  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY25 revenues +8.7%, subscription and support +9.7%, gross margin 77.2%; Q2 unearned revenue +8.8% YoY  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 34.3x FY26E vs a 49.2x 8.7-yr ex-FY16 ex-FY17 ex-FY19 ex-FY20 ex-FY21 ex-FY22 ex-FY23 median (1st percentile of its own range)  (+0.50 × 25%  =  +0.125)
+    -  Growth vs own history: Q3 FY26 revenue guide (Q2 FY26 release) +8.4-9% vs a 24.7% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  Cash, cash equivalents and marketable securities $15.372B (Q2 FY26), debt $8.436B (noncurrent debt $8,436M; the balance sheet), FY25 free cash flow $12.434B (net cash provided by operating activities $13,092M less capital expenditures $658M (FY2025 10-K)), dividend $1.66 a year  (+0.30 × 15%  =  +0.045)
+    +  Generative AI: Salesforce builds AI agents into its own platform  (+0.20 × 10%  =  +0.020)
+    -  AI competition (FY2025 10-K): AI software and service vendors among its competitors  (-0.20 × 10%  =  -0.020)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Subscription and support growth       +10.6%    +40.0%  +29.4%  New subscriptions and renewals slow: …
+  Deferred revenue growth                +8.8%    +43.0%  +34.2%  Billings slow ahead of revenue: the n…
+  Gross margin change                 +125.0bp  -740.0bp  -865.0bp  Data-center and service costs outgrow…
+  Opex growth less revenue              -2.7pp   +49.0pp  +51.7pp  Marketing and sales, R&D and G&A do n…
+  Operating margin change             +219.0bp  -2800.0bp  -3019.0bp  Operating leverage works in reverse
+  Generative AI: net effect on subscription seats    +2.0/4    +1.0/4  -1.0/4  Customers move work to AI-native comp…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$461.82  (model)  /  $264.98 (defined)
+  Bear probability (proxy model):  33.0%
+
+  KEY TRIGGER: revenue went from +7.6% (Q1 FY26) to +9.8% YoY (Q2 FY26), +4.1% on the quarter before;
+  the bear case needs deferred revenue (+8.8% YoY now) and the operating
+  margin (+366.2bp now) giving way. A subscription slowdown shows up in deferred revenue first, then in
+  subscription and support revenue a few quarters later.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $7.01  (FY2026E EPS, guide midpoint ($6.99-7.03, Q2 FY26 release))
+  Min viable P/E at panic:          38x  [median of calendar-year P/E lows: 2017 160.4x, 2018 213.1x, 2023 38.5x, 2024 34.3x, 2025 33.0x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $266.38/share
+  Current $240.36 vs Updated EPP $266.38:  -10%  ✓ BELOW panic floor — deep-value zone
+  Bear $264.98 vs Updated EPP $266.38:  -1%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Subscription and support growth               61.0      +50.4   BASE floor (vs +11 now)
+  Deferred revenue growth                       68.0      +59.2   BASE floor (vs +9 now)
+  Gross margin change                         -330.0     -455.0   BASE floor (vs +125 now)
+  Opex growth less revenue                      12.0      +14.7   BASE floor (vs -3 now)
+  Operating margin change                     -720.0     -939.0   BASE floor (vs +219 now)
+  Generative AI: net effect on subscription seats             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $7.01 × (1+12.8%)² = $8.92
+  At 49x P/E (conservative):  $437.24/share
+  + Cumul. dividends (2yr):  +$3.42/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $437.24  (▲196.88 from $240.36)
+  Conservative total return:  +83% over 2yr  = +42%/yr
+
+  At 34.3x the multiple is already near its 49x median, so the conservative
+  case is a growth question: breakeven at 49x needs FY2028E EPS of $4.84,
+  i.e. -16.9%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $226.48  –  $369.00  (at 10th pct of range)
+  Annual dividend:      $1.66/share  (yield 0.7%)
+  Realized vol:         32% annualized (1-yr daily log returns)
+  Beta vs broad market: 1.10
+  1-sigma range (1yr):  $162.24  –  $318.48  ($240.36 ± 32%)
+  2-sigma range (1yr):  $84.13  –  $396.59
+  ────────────────────────────────────────────────────────────
+  Bear $264.98 requires:  ~-0.3σ price move  (within normal vol range)
+  A subscription software company priced on its growth: the stock is +4% off its August
+  low (52 weeks) while revenue went from +7.6% (Q1 FY26) to +9.8% YoY (Q2 FY26), +4.1% on the quarter before.
+  Near the low: the multiple has not run ahead of the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        7.01   37.8x  $ 264.98    33.0%     72.2%   -39.3pp  EPS +0.0%/yr (worst year FY18-FY25 ex-FY19 ex-FY20 ex-FY21 ex-FY22 ex-FY23, capped at 0%); P/E to its 10th pct
+  BASE        9.24   49.2x  $ 454.61    50.0%     20.7%   +29.3pp  EPS +14.8%/yr (Q3 FY26 guide YoY + margin + buyback); P/E at its 8.7-yr ex-FY16 ex-FY17 ex-FY19 ex-FY20 ex-FY21 ex-FY22 ex-FY23 median
+  BULL       14.58  167.1x  $2,436.32    14.3%      5.9%    +8.4pp  EPS +44.2%/yr (FY18-FY25 ex-FY19 ex-FY20 ex-FY21 ex-FY22 ex-FY23 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL      14.58  194.6x  $2,837.27     2.7%      1.1%    +1.6pp  EPS +44.2%/yr (no 2-yr run in FY18-FY25 ex-FY19 ex-FY20 ex-FY21 ex-FY22 ex-FY23: BULL's rate); P/E at its 90th pct
+
+  Proxy EV (2yr): $740.48  /  Market EV: $461.82  /  Current: $240.36
+  Conservative EV (2yr, ④): $437.24 + $3.42 divs = $440.66 total value
+  Downside (→ Bear $264.98): -10.2%   Upside (→ Bull $2436.32): 913.6%   Ratio B -0.01x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $240.36 the market needs $317.88 in two years —
+  at or below the BASE case. That is a market composite of 1.22 against a model
+  read of 2.10: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                      -0.01x     -10%    +0.88  UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)    -0.02x     -10%    +1.10  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)    -0.02x     -10%    +1.10  UNDERVALUED / BUY
+  Scenario EPS +1.5pp/yr                         -0.01x     -10%    +0.88  UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                         -0.01x     -10%    +0.88  UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)            -0.01x     -10%    +1.18  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                -0.01x     -16%    +0.88  UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                   -0.01x     -10%    +0.88  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 FY26 print (December) — revenue against the Q3 FY26 revenue guide (Q2 FY26 release): +8.4-9% YoY
+  (2) Deferred revenue — +8.8% YoY in Q2 FY26: billings run ahead of revenue, so they slow first
+  (3) The FY26 EPS guide — $6.99-7.03 GAAP (Q2 FY26 release)
+  (4) Operating expenses — R&D, marketing and sales and G&A +7.1% against revenue +9.8% in Q2 FY26 (-2.7pp): the cost of growth
+  (5) Capital structure at 34x — share repurchases under the program authorized in August 2022, 'for an aggregate total authorized of $30.0 billion.' (FY2025 10-K)
+  ◉ BUY  |  EPP floor $266.38  |  ADD below ~$386.42  |  TRIM above $2,436.32
+════════════════════════════════════════════════════════════════════════
+

@@ -1,0 +1,53 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "GOOG",
+ "as_of": "2023-11-24",
+ "computed": "2026-11-19",
+ "data_source": "Yahoo Finance daily closes + dividends (GOOG, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2024-05-24",
+   "price": 176.33,
+   "dividends": 0,
+   "total_return_pct": 27.6,
+   "benchmark_total_return_pct": 17.1,
+   "excess_pct": 10.5,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2024-11-22",
+   "price": 166.57,
+   "dividends": 0.4,
+   "total_return_pct": 20.8,
+   "benchmark_total_return_pct": 32.3,
+   "excess_pct": -11.5,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2025-11-24",
+   "price": 318.47,
+   "dividends": 1.22,
+   "total_return_pct": 131.3,
+   "benchmark_total_return_pct": 50.0,
+   "excess_pct": 81.3,
+   "hurdle_pct": 32.2
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2025-11-24",
+   "price": 318.47
+  },
+  "low": {
+   "date": "2023-12-04",
+   "price": 130.63
+  },
+  "max_drawdown_pct": -29.4,
+  "return_to_avg_price_m12_m24_pct": 44.1
+ },
+ "scenario_landing_2y": "XBULL",
+ "call_check_2y": {
+  "expectation": "RICH: should miss the hurdle and lag the benchmark",
+  "hit": false
+ }
+}

@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  SCHW  ·  The Charles Schwab Corporation  ·  $40.16  ·  RETROSPECTIVE as of 2017-09-01
+  Signal: ✕ AVOID   Ratio B: 2.64x   Adj gap: -0.10  [FAIRLY VALUED]
+  Point-in-time: 11 sources, latest published 2017-09-01; latest print Q2 2017 (Jul 19)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2017E revenue, USD bn  →  FY2019E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2017E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Asset management and adminis  $  3.56  $ 3.56  $ 3.89    +0.00    +0.33
+    +15.3% revenue in FY16
+  Net interest revenue          $  3.87  $ 3.87  $ 4.23    +0.00    +0.36
+    +31.6% revenue in FY16
+  Trading revenue               $  0.96  $ 0.96  $ 1.05    +0.00    +0.09
+    -4.7% revenue in FY16
+  Other (net of the provision   $  0.32  $ 0.32  $ 0.35    +0.00    +0.03
+    -18.6% revenue in FY16
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $  8.71  $ 8.71  $ 9.52    +0.00    +0.81
+  FY2017E = FY16 $7.478B × (1 + 16.5%: the Q2 2017 revenue growth (no Q3 2017 guide), YoY, applied to the year (no FY17 revenue guide)); split pro rata to FY16 net revenues by component (asset management and administration fees, net interest revenue, trading revenue, other net of the provision for loan losses and net impairment losses on securities; FY16 growth)
+  Q2 2017 (Jul 19): net revenues $2.130B +16.5% YoY (+2.4% QoQ); client assets $3,040.6B +16.0%; trades 311.0K a day +11.5%;
+  expenses excluding interest +10.2%; pre-tax margin 42.68% (+328.9bp); net new client assets $64.5B; EPS $0.39 vs $0.30
+  Revenue: net revenues $2,130M vs $1,828M a year earlier, $2,081M the quarter before; client assets $3,040.6B vs $2,622.0B a year earlier; net new client assets $64.5B in the quarter; daily average revenue trades 311.0K vs 279.0K; diluted EPS $0.39 vs $0.30, GAAP (per common share, after preferred dividends); diluted shares 1,351M; expenses excluding interest $1,221M vs $1,108M
+  Q3 2017: no revenue, EPS or margin guide in numbers in any filing; the latest quarter's revenue growth stands in (the UNP rule)
+
+  FY2017E EPS check:  $8.710B × 40.0% pre-tax × (1−36.9%) ÷ 1.351B  =  $1.63  (FY2017E: no EPS guide in numbers, FY16's $1.31 stands)
+  FY2019E BEAR check: $8.710B × 40.0% ÷ 1.377B  =  $1.60  (scenario $0.41)
+  FY2019E BULL check: $9.520B × 40.4% ÷ 1.377B  =  $1.76  (scenario $1.75)
+  Every 1pp of pre-tax margin ≈ $0.041 EPS ≈ $1.06/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Net revenue growth                    -56.0%   ≥-22.0%    ≥12.0%    ≥41.0%    +16.5%  ▲ BULL  ███░
+  Client assets growth                  -34.0%   ≥-10.0%    ≥15.0%    ≥42.0%    +16.0%  ▲ BULL  ███░
+  Expense growth less revenue          +35.0pp   ≤16.0pp   ≤-3.0pp  ≤-16.0pp    -6.3pp  ▲ BULL  ███░
+  Daily average revenue trades          -91.0%   ≥-34.0%    ≥22.0%    ≥68.0%    +11.5%  ◦ BASE  ██░░
+  Pre-tax margin change               -3510.0bp  ≥-1640.0bp  ≥230.0bp  ≥1330.0bp  +328.9bp  ▲ BULL  ███░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.70 / 4.00
+  Market composite:   2.81 / 4.00  (back-solved from $40.16 + 15% hurdle)
+  SCA adjustment:    +0.11  ·  EPP-distance adj -0.10  →  Adj composite 2.71  →  Gap -0.10  [FAIRLY VALUED]
+
+  Structural factors:
+    +  Franchise: FY16 net revenues +17.2%, client assets $2,779.5B (+10.6%); Q2 net new client assets $64.5B  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 30.7x FY17E vs a 26.1x 10-yr median (79th percentile of its own range)  (-0.48 × 25%  =  -0.120)
+    +  Growth vs own history: Q2 2017 revenue growth (no Q3 2017 guide) +16.5% vs a 5.3% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  Client assets $3,040.6B (+16.0% YoY) at the end of Q2 2017, pre-tax margin 42.7%, dividend $0.32 a year  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Net revenue growth                    +16.5%    -56.0%  -72.5%  Asset-based and trading revenue fall …
+  Client assets growth                  +16.0%    -34.0%  -50.0%  Client assets shrink with markets and…
+  Expense growth less revenue           -6.3pp   +35.0pp  +41.3pp  Expenses excluding interest do not fa…
+  Daily average revenue trades          +11.5%    -91.0%  -102.5%  Clients trade less
+  Pre-tax margin change               +328.9bp  -3510.0bp  -3838.9bp  Expenses outrun revenue
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$18.93  (model)  /  $7.54 (defined)
+  Bear probability (proxy model):  6.0%
+
+  KEY TRIGGER: revenue went from +18.0% (Q1 2017) to +16.5% YoY (Q2 2017), +2.4% on the quarter before;
+  the bear case needs client assets (+16.0% YoY now) shrinking further
+  and trades (+11.5% YoY) falling with them. Lower markets and rates show up in client assets and asset-based fees first;
+  the bear needs them in net revenue as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $1.31  (FY2017E: no EPS guide in numbers, FY16's $1.31 stands)
+  Min viable P/E at panic:          19x  [median of calendar-year P/E lows: 2007 20.6x, 2008 13.8x, 2009 16.7x, 2010 33.6x, 2011 15.4x, 2012 16.8x, 2013 19.3x, 2014 24.9x, 2015 25.2x, 2016 17.0x, 2017 28.6x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $24.89/share
+  Current $40.16 vs Updated EPP $24.89:  +61%  ⚠ far above floor — large drawdown room
+  Bear $7.54 vs Updated EPP $24.89:  -70%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Net revenue growth                           -22.0      -38.5   BASE floor (vs +16 now)
+  Client assets growth                         -10.0      -26.0   BASE floor (vs +16 now)
+  Expense growth less revenue                   16.0      +22.3   BASE floor (vs -6 now)
+  Daily average revenue trades                 -34.0      -45.5   BASE floor (vs +12 now)
+  Pre-tax margin change                      -1640.0    -1968.9   BASE floor (vs +329 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $1.31 × (1+13.5%)² = $1.69
+  At 26x P/E (conservative):  $43.90/share
+  + Cumul. dividends (2yr):  +$0.66/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $43.90  (▲3.74 from $40.16)
+  Conservative total return:  +11% over 2yr  = +5%/yr
+
+  13.5% EPS growth is what is left once the premium multiple (30.7x)
+  mean-reverts to 26x. Breakeven at 26x needs FY2019E EPS of $1.52,
+  i.e. 7.7%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $29.86  –  $44.10  (at 72th pct of range)
+  Annual dividend:      $0.32/share  (yield 0.8%)
+  Realized vol:         23% annualized (1-yr daily log returns)
+  Beta vs broad market: 1.63
+  1-sigma range (1yr):  $30.80  –  $49.52  ($40.16 ± 23%)
+  2-sigma range (1yr):  $21.45  –  $58.87
+  ────────────────────────────────────────────────────────────
+  Bear $7.54 requires:  ~3.5σ price move  (unusual — requires fundamental break)
+  A broker whose earnings follow markets and rates: the stock is +33% off its September
+  low (52 weeks) while revenue went from +18.0% (Q1 2017) to +16.5% YoY (Q2 2017), +2.4% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        0.41   18.4x  $   7.54     6.0%      5.1%    +0.8pp  EPS -44.1%/yr (worst year FY07-FY16, capped at 0%); P/E to its 10th pct
+  BASE        1.75   26.1x  $  45.68    20.8%     17.9%    +2.9pp  EPS +15.5%/yr (Q2 revenue YoY + margin + buyback); P/E at its 10-yr median
+  BULL        1.75   30.0x  $  52.50    61.6%     62.5%    -1.0pp  EPS +15.5%/yr (FY07-FY16 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL       2.38   34.2x  $  81.40    11.6%     14.4%    -2.8pp  EPS +34.8%/yr (best 2-yr run FY07-FY16, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $51.76  /  Market EV: $53.14  /  Current: $40.16
+  Conservative EV (2yr, ④): $43.90 + $0.66 divs = $44.56 total value
+  Downside (→ Bear $7.54): 81.2%   Upside (→ Bull $52.50): 30.7%   Ratio B 2.64x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $40.16 the market needs $53.11 in two years —
+  above the BULL case. That is a market composite of 2.81 against a model
+  read of 2.71: price and numbers roughly agree.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       2.64x     +61%    -0.10  FAIRLY VALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     1.60x     +61%    +0.46  MODESTLY UNDERVALUED / WATCHLIST
+  Multiples one band cheaper (p5/p25/med/p75)     5.99x     +61%    -0.50  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          2.33x     +61%    +0.02  FAIRLY VALUED / AVOID
+  Scenario EPS -1.5pp/yr                          3.05x     +61%    -0.21  MODESTLY OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             2.64x     +61%    +0.20  FAIRLY VALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 2.64x     +39%    -0.00  FAIRLY VALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    2.64x     +61%    +0.21  MODESTLY UNDERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 2017 print (the quarter ends in September) — revenue against the Q2 2017 revenue growth (no Q3 2017 guide): +16.5% YoY
+  (2) Client assets — $3,040.6B at the end of Q2 2017 (+16.0% YoY): asset-based revenue follows them
+  (3) A Q3 2017 revenue guide — none: Schwab gives no revenue, EPS or margin outlook in numbers in any filing; the monthly activity reports in each release track client assets, net new assets and trades
+  (4) Trading activity — 311.0K daily average revenue trades in Q2 2017 (+11.5% YoY): the driver of trading revenue
+  (5) Capital at 31x — dividend $0.08 a quarter: 'On January 26, 2017, the Board of Directors of the Company declared a one cent, or 14%, increase in the quarterly cash dividend to $0.08 per common share.' (FY2016 10-K)
+  ✕ AVOID  |  EPP floor $24.89  |  ADD below ~$38.83  |  TRIM above $52.50
+════════════════════════════════════════════════════════════════════════
+

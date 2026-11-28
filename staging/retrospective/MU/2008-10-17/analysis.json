@@ -1,0 +1,246 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "MU",
+ "company": "Micron Technology, Inc.",
+ "as_of": "2008-10-17",
+ "price_date": "2008-10-17",
+ "price": 4.12,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); semiconductor signals with Micron's rule-T thresholds",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'The Company is a global manufacturer and marketer of semiconductor devices, principally DRAM and NAND Flash memory and CMOS image sensors.' 'We have experienced dramatic declines in average selling prices for our semiconductor memory products which have adversely affected our business.' 'The semiconductor memory industry is highly competitive.' 'Some of our competitors are large corporations or conglomerates that may have greater resources to withstand downturns in the semiconductor markets in which we compete' (FY2007 10-K); DURABLE: no Micron 10-K calls its own business cyclical (CYCLICAL needs the company's 'our business is cyclical', as BKR, CAT and NVDA said; the F and AVGO reading of industry words), so the kind is DURABLE, the label only; no theme in taxonomy_eras.json is live for a memory maker (OFFSHORE is scoped to IT services), so the watch list is empty",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "'The Company is a global manufacturer and marketer of semiconductor devices, principally DRAM and NAND Flash memory and CMOS image sensors.' 'We have experienced dramatic declines in average selling prices for our semiconductor memory products which have adversely affected our business.' 'The semiconductor memory industry is highly competitive.' 'Some of our competitors are large corporations or conglomerates that may have greater resources to withstand downturns in the semiconductor markets in which we compete' (FY2007 10-K); DURABLE: no Micron 10-K calls its own business cyclical (CYCLICAL needs the company's 'our business is cyclical', as BKR, CAT and NVDA said; the F and AVGO reading of industry words), so the kind is DURABLE, the label only; no theme in taxonomy_eras.json is live for a memory maker (OFFSHORE is scoped to IT services), so the watch list is empty. durable franchise (obsolescence risk 2/5); price cheap; Ratio B -0.29x; -59% to EPP floor; model-vs-market gap +1.43; conservative 2yr +196%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": -0.29,
+  "ratio_b_fmt": "-0.29x",
+  "epp": 10.15,
+  "epp_gap_pct": -59.4,
+  "epp_adj": 0.2,
+  "proxy_composite": 2.3,
+  "sca": 0.15,
+  "adj_composite": 2.65,
+  "market_composite": 1.22,
+  "adj_gap": 1.43,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 195.6,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.29,
+    "pe": 34.7,
+    "price": 10.06,
+    "desc": "EPS +0.0%/yr (worst year FY04-FY05, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 0.27,
+    "pe": 42.4,
+    "price": 11.45,
+    "desc": "EPS -3.6%/yr (Q4 revenue YoY + margin + buyback); P/E at its 5.1-yr ex-FY06 ex-FY07 ex-FY08 median"
+   },
+   "BULL": {
+    "eps": 0.42,
+    "pe": 58.1,
+    "price": 24.4,
+    "desc": "EPS +20.8%/yr (FY04-FY05 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 0.42,
+    "pe": 63.8,
+    "price": 26.8,
+    "desc": "EPS +20.8%/yr (no 2-yr run in FY04-FY05: BULL's rate); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": -0.29,
+   "epp_gap_pct": -59.4,
+   "adj_gap": 1.43,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 195.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": -0.31,
+   "epp_gap_pct": -59.4,
+   "adj_gap": 1.65,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 195.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": -0.03,
+   "epp_gap_pct": -59.4,
+   "adj_gap": 1.65,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 195.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": -0.3,
+   "epp_gap_pct": -59.4,
+   "adj_gap": 1.43,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 195.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": -0.29,
+   "epp_gap_pct": -59.4,
+   "adj_gap": 1.43,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 195.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": -0.29,
+   "epp_gap_pct": -59.4,
+   "adj_gap": 1.73,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 195.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": -0.29,
+   "epp_gap_pct": -62.6,
+   "adj_gap": 1.43,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 195.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": -0.29,
+   "epp_gap_pct": -59.4,
+   "adj_gap": 1.43,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 195.6,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "MU (retrospective, 2008-10-17) ◉ BUY — Ratio B -0.29x (-144.2% downside to Bear $10.06 / +492.2% upside to Bull $24.40) | Adj composite 2.65 vs market 1.22: gap +1.43 [UNDERVALUED] | -59% above the EPP floor $10.15 (35x FY09E $0.29) | Conservative 2-yr case: +195.6% total (+97.8%/yr) | At 14.2x FY09E the 15% hurdle price $5.45 sits at or below the BASE case; revenue +0.8% YoY in Q4 FY08, forward revenues +0.8% (Q4 FY08 revenue growth (no Q1 FY09 guide)); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "MU9",
+   "published": "2006-11-08",
+   "filed": "accepted 2006-11-07 19:56 ET (after the 16:00 ET close)",
+   "title": "Micron FY2006 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000110465906072331/a06-20825_210k.htm",
+   "supports": "rule T: FY2002-FY2003 selected data, FY2005 SG&A and R&D, FY2006 inventories; FY2004 diluted shares"
+  },
+  {
+   "id": "MU10",
+   "published": "2007-10-29",
+   "filed": "accepted 2007-10-26 16:27 ET (after the 16:00 ET close)",
+   "title": "Micron FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312507000108/mti10k-fy2007.htm",
+   "supports": "history FY2003-FY2007 (selected data, statements of operations), FY2006's listed one-off benefits, segments, Items 1, 1A and 5; rule T FY2004-FY2007"
+  },
+  {
+   "id": "MU13",
+   "published": "2007-10-03",
+   "filed": "accepted 2007-10-02 16:04 ET (after the 16:00 ET close)",
+   "title": "Micron Q4 FY07 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312507000086/exhibit99-1.htm",
+   "supports": "Q4 FY07 net sales, gross margin, SG&A, R&D, operating income, diluted EPS and shares against the year-ago quarter; inventories, cash and debt"
+  },
+  {
+   "id": "MU14",
+   "published": "2007-12-21",
+   "filed": "accepted 2007-12-20 16:01 ET (after the 16:00 ET close)",
+   "title": "Micron Q1 FY08 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312507000134/exhibit99-1.htm",
+   "supports": "Q1 FY08 net sales, gross margin, SG&A, R&D, operating income, diluted EPS and shares against the year-ago quarter; inventories, cash and debt"
+  },
+  {
+   "id": "MU23",
+   "published": "2007-01-17",
+   "filed": "accepted 2007-01-16 16:14 ET (after the 16:00 ET close)",
+   "title": "Micron Q1 FY07 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000110465907002662/a07-1385_110q.htm",
+   "supports": "inventories at the end of Q1 FY07 (the year-ago quarter of a later print)"
+  },
+  {
+   "id": "MU15",
+   "published": "2008-04-03",
+   "filed": "accepted 2008-04-02 16:03 ET (after the 16:00 ET close)",
+   "title": "Micron Q2 FY08 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312508000020/exhibit99-1.htm",
+   "supports": "Q2 FY08 net sales, gross margin, SG&A, R&D, operating income, diluted EPS and shares against the year-ago quarter; inventories, cash and debt"
+  },
+  {
+   "id": "MU24",
+   "published": "2007-04-11",
+   "filed": "accepted 2007-04-10 16:20 ET (after the 16:00 ET close)",
+   "title": "Micron Q2 FY07 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312507000028/mti10q2-07.htm",
+   "supports": "inventories at the end of Q2 FY07 (the year-ago quarter of a later print)"
+  },
+  {
+   "id": "MU16",
+   "published": "2008-06-27",
+   "filed": "accepted 2008-06-26 16:04 ET (after the 16:00 ET close)",
+   "title": "Micron Q3 FY08 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312508000038/exhibit99-1.htm",
+   "supports": "Q3 FY08 net sales, gross margin, SG&A, R&D, operating income, diluted EPS and shares against the year-ago quarter; inventories, cash and debt"
+  },
+  {
+   "id": "MU25",
+   "published": "2007-07-11",
+   "filed": "accepted 2007-07-10 17:01 ET (after the 16:00 ET close)",
+   "title": "Micron Q3 FY07 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312507000047/mti10q3-07.htm",
+   "supports": "inventories at the end of Q3 FY07 (the year-ago quarter of a later print)"
+  },
+  {
+   "id": "MU17",
+   "published": "2008-10-02",
+   "filed": "accepted 2008-10-01 16:03 ET (after the 16:00 ET close)",
+   "title": "Micron Q4 FY08 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312508000072/exhibit99-1.htm",
+   "supports": "Q4 FY08 net sales, gross margin, SG&A, R&D, operating income, diluted EPS and shares against the year-ago quarter; inventories, cash and debt"
+  },
+  {
+   "id": "Y0",
+   "published": "2008-10-17",
+   "title": "Yahoo Finance daily prices, MU and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/MU/history",
+   "supports": "close $4.12 as traded on AS_OF, 52-week range, realized vol, beta, the 5.1-yr ex-FY06 ex-FY07 ex-FY08 P/E distribution from 2003-08-29"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-17"
+}

@@ -1,0 +1,254 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "NEE",
+ "company": "NextEra Energy, Inc.",
+ "as_of": "2014-04-25",
+ "price_date": "2014-04-25",
+ "price": 97.67,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); electric utility signals on FPL Group's own lines",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "NextEra Energy, Inc.: 'FPL is a rate-regulated electric utility engaged primarily in the generation, transmission, distribution and sale of electric energy in Florida.' and 'NEER produces the majority of its electricity from clean and renewable sources, including wind and solar.'; among its risk factors, 'NEE's and FPL's business, financial condition, results of operations and prospects may be materially adversely affected by the extensive regulation of their business.', 'NEE's and FPL's business, financial condition, results of operations and prospects can be materially adversely affected by weather conditions, including, but not limited to, the impact of severe weather.' and 'NEE's and FPL's business could be negatively affected by federal or state laws or regulations mandating new or additional limits on the production of greenhouse gas emissions.' (its own FY2013 10-K); no disruption theme in the registry is live for an electric utility on this date (of the live themes, OFFSHORE is scoped to 'lower-cost offshore delivery (Indian IT services) takes share and price from Western consulting, systems integration and outsourcing', CLOUD to 'public cloud displaces on-premise hardware, storage, legacy databases and data-center outsourcing': none names an electric utility), so the watch list is empty and the 10-K's words on climate change and greenhouse gas emissions stay here (the PEP obesity rule)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "NextEra Energy, Inc.: 'FPL is a rate-regulated electric utility engaged primarily in the generation, transmission, distribution and sale of electric energy in Florida.' and 'NEER produces the majority of its electricity from clean and renewable sources, including wind and solar.'; among its risk factors, 'NEE's and FPL's business, financial condition, results of operations and prospects may be materially adversely affected by the extensive regulation of their business.', 'NEE's and FPL's business, financial condition, results of operations and prospects can be materially adversely affected by weather conditions, including, but not limited to, the impact of severe weather.' and 'NEE's and FPL's business could be negatively affected by federal or state laws or regulations mandating new or additional limits on the production of greenhouse gas emissions.' (its own FY2013 10-K); no disruption theme in the registry is live for an electric utility on this date (of the live themes, OFFSHORE is scoped to 'lower-cost offshore delivery (Indian IT services) takes share and price from Western consulting, systems integration and outsourcing', CLOUD to 'public cloud displaces on-premise hardware, storage, legacy databases and data-center outsourcing': none names an electric utility), so the watch list is empty and the 10-K's words on climate change and greenhouse gas emissions stay here (the PEP obesity rule). durable franchise (obsolescence risk 2/5); price rich; +82% to EPP floor; model-vs-market gap -1.72; conservative 2yr -25%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": Infinity,
+  "ratio_b_fmt": "infx",
+  "epp": 53.64,
+  "epp_gap_pct": 82.1,
+  "epp_adj": -0.1,
+  "proxy_composite": 2.05,
+  "sca": 0.1,
+  "adj_composite": 2.05,
+  "market_composite": 3.77,
+  "adj_gap": -1.72,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": -24.9,
+  "scenarios": {
+   "BEAR": {
+    "eps": 3.98,
+    "pe": 11.4,
+    "price": 45,
+    "desc": "EPS -5.6%/yr (worst year FY04-FY13, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 5.0,
+    "pe": 14.4,
+    "price": 72,
+    "desc": "EPS +5.8%/yr (Q4 revenue + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 5.1,
+    "pe": 17.5,
+    "price": 89,
+    "desc": "EPS +6.8%/yr (FY04-FY13 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 6.25,
+    "pe": 19.0,
+    "price": 119,
+    "desc": "EPS +18.2%/yr (best 2-yr run FY04-FY13); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 82.1,
+   "adj_gap": -1.72,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -24.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 82.1,
+   "adj_gap": -1.69,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -24.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 82.1,
+   "adj_gap": -1.72,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -24.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 82.1,
+   "adj_gap": -1.72,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -24.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 82.1,
+   "adj_gap": -1.72,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -24.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 82.1,
+   "adj_gap": -1.42,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -24.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 45.7,
+   "adj_gap": -1.72,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -24.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 82.1,
+   "adj_gap": -1.72,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -24.9,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "RICH"
+ ],
+ "summary": "NEE (retrospective, 2014-04-25) ✕ AVOID — Ratio B infx (53.9% downside to Bear $45 / +-8.9% upside to Bull $89) | Adj composite 2.05 vs market 3.77: gap -1.72 [OVERVALUED] | +82% above the EPP floor $54 (12x FY14E $4.47) | Conservative 2-yr case: -24.9% total (-12.4%/yr) | At 21.9x FY14E the 15% hurdle price $129 sits above the BULL case; FPL energy sales +7.7% in Q4 2013, forward revenues +7.6% (no Q1 2014 revenue guide, Q4 2013 revenue as reported); no disruption theme is live for an electric utility on this date.",
+ "sources": [
+  {
+   "id": "NE66",
+   "published": "2014-02-24",
+   "filed": "2014-02-24 11:06 ET (during the session)",
+   "title": "NextEra Energy FY2013 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330814000025/nee-12312013x10k.htm",
+   "supports": "FY2013 annual report (combined filing with Florida Power & Light Company)"
+  },
+  {
+   "id": "NE11",
+   "published": "2009-02-27",
+   "filed": "2009-02-26 19:15 ET (after the close)",
+   "title": "FPL Group FY2008 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330809000025/form10k123108.htm",
+   "supports": "FY2008 annual report (combined filing with Florida Power & Light Company)"
+  },
+  {
+   "id": "NE32",
+   "published": "2010-02-26",
+   "filed": "2010-02-26 14:59 ET (during the session)",
+   "title": "FPL Group FY2009 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330810000025/form10k123109.htm",
+   "supports": "FY2009 annual report (combined filing with Florida Power & Light Company)"
+  },
+  {
+   "id": "NE33",
+   "published": "2011-02-28",
+   "filed": "2011-02-28 10:42 ET (during the session)",
+   "title": "NextEra Energy FY2010 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330811000025/form10k123110.htm",
+   "supports": "FY2010 annual report (combined filing with Florida Power & Light Company)"
+  },
+  {
+   "id": "NE34",
+   "published": "2012-02-28",
+   "filed": "2012-02-28 15:26 ET (during the session)",
+   "title": "NextEra Energy FY2011 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330812000025/nee-12312011x10k.htm",
+   "supports": "FY2011 annual report (combined filing with Florida Power & Light Company)"
+  },
+  {
+   "id": "NE35",
+   "published": "2013-03-01",
+   "filed": "2013-02-28 16:40 ET (after the close)",
+   "title": "NextEra Energy FY2012 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330813000023/nee-12312012x10k.htm",
+   "supports": "FY2012 annual report (combined filing with Florida Power & Light Company)"
+  },
+  {
+   "id": "NE9",
+   "published": "2007-02-27",
+   "filed": "2007-02-27 13:47 ET (during the session)",
+   "title": "FPL Group FY2006 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330807000016/form10k2006.htm",
+   "supports": "FY2006 annual report (combined filing with Florida Power & Light Company)"
+  },
+  {
+   "id": "NE70",
+   "published": "2014-01-28",
+   "filed": "2014-01-28 07:32 ET (before the open)",
+   "title": "NextEra Energy Q4 2013 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330814000003/exhibit99dated01-28x2014",
+   "supports": "Q4 2013 earnings release: segment statements of income, earnings per share, FPL statistics, outlook"
+  },
+  {
+   "id": "NE51",
+   "published": "2013-11-01",
+   "filed": "2013-11-01 07:34 ET (before the open)",
+   "title": "NextEra Energy Q3 2013 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330813000085/exhibit99dated11-01x2013.htm",
+   "supports": "Q3 2013 earnings release: segment statements of income, earnings per share, FPL statistics, outlook"
+  },
+  {
+   "id": "NE52",
+   "published": "2010-05-24",
+   "filed": "2010-05-24 10:48 ET (during the session)",
+   "title": "NextEra Energy 8-K of 2010-05-24 (Items 5.03, 5.07 and 8.01)",
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330810000065/form8k052110.htm",
+   "supports": "the change of name to NextEra Energy, Inc. and of the NYSE symbol from FPL to NEE"
+  },
+  {
+   "id": "NE8",
+   "published": "2006-02-24",
+   "filed": "2006-02-23 16:04 ET (after the close)",
+   "title": "FPL Group FY2005 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330806000032/file10k2005.htm",
+   "supports": "FY2005 annual report (combined filing with Florida Power & Light Company)"
+  },
+  {
+   "id": "W0",
+   "published": "2014-04-25",
+   "title": "Yahoo Finance daily prices, NEE and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/NEE/history",
+   "supports": "close $97.67 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-27"
+}

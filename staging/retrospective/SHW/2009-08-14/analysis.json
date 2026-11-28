@@ -1,0 +1,262 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "SHW",
+ "company": "The Sherwin-Williams Company",
+ "as_of": "2009-08-14",
+ "price_date": "2009-08-14",
+ "price": 60.46,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); paint and coatings signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "Sherwin-Williams: 'engaged in the development, manufacture, distribution and sale of paint, coatings and related products to professional, industrial, commercial and retail customers primarily in North and South America'; 'We are a leading manufacturer and retailer of paint, coatings and related products to professional, industrial, commercial and retail customers'; its Paint Stores Group 'consisted of 3,346 company-operated specialty paint stores'; and 'Portions of our business involve the sale of paint, coatings and related products to segments of the economy that are cyclical in nature, particularly segments relating to construction, housing and manufacturing' (its own FY2008 10-K): a store-network franchise whose demand follows construction and housing by its own account; the franchise does not",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "Sherwin-Williams: 'engaged in the development, manufacture, distribution and sale of paint, coatings and related products to professional, industrial, commercial and retail customers primarily in North and South America'; 'We are a leading manufacturer and retailer of paint, coatings and related products to professional, industrial, commercial and retail customers'; its Paint Stores Group 'consisted of 3,346 company-operated specialty paint stores'; and 'Portions of our business involve the sale of paint, coatings and related products to segments of the economy that are cyclical in nature, particularly segments relating to construction, housing and manufacturing' (its own FY2008 10-K): a store-network franchise whose demand follows construction and housing by its own account; the franchise does not. durable franchise (obsolescence risk 2/5); price rich; Ratio B 56.41x; +55% to EPP floor; model-vs-market gap -1.77; conservative 2yr -19%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": 56.41,
+  "ratio_b_fmt": "56.41x",
+  "epp": 39.05,
+  "epp_gap_pct": 54.8,
+  "epp_adj": -0.1,
+  "proxy_composite": 2.2,
+  "sca": -0.1,
+  "adj_composite": 2.0,
+  "market_composite": 3.77,
+  "adj_gap": -1.77,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": -18.8,
+  "scenarios": {
+   "BEAR": {
+    "eps": 2.57,
+    "pe": 11.6,
+    "price": 30,
+    "desc": "EPS -14.9%/yr (worst year FY99-FY08, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 3.03,
+    "pe": 13.5,
+    "price": 41,
+    "desc": "EPS +-7.6%/yr (Q3 guide + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 4.24,
+    "pe": 14.4,
+    "price": 61,
+    "desc": "EPS +9.3%/yr (FY99-FY08 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 5.47,
+    "pe": 15.2,
+    "price": 83,
+    "desc": "EPS +24.1%/yr (best 2-yr run FY99-FY08); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 56.41,
+   "epp_gap_pct": 54.8,
+   "adj_gap": -1.77,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -18.8,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 8.04,
+   "epp_gap_pct": 54.8,
+   "adj_gap": -1.44,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -18.8,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 54.8,
+   "adj_gap": -1.75,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -18.8,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 11.6,
+   "epp_gap_pct": 54.8,
+   "adj_gap": -1.75,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -18.8,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 54.8,
+   "adj_gap": -1.8,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -18.8,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 56.41,
+   "epp_gap_pct": 54.8,
+   "adj_gap": -1.47,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -18.8,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 56.41,
+   "epp_gap_pct": 21.6,
+   "adj_gap": -1.67,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -18.8,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 56.41,
+   "epp_gap_pct": 54.8,
+   "adj_gap": -1.53,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -18.8,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "RICH"
+ ],
+ "summary": "SHW (retrospective, 2009-08-14) ✕ AVOID — Ratio B 56.41x (50.4% downside to Bear $30 / +0.9% upside to Bull $61) | Adj composite 2.00 vs market 3.77: gap -1.77 [OVERVALUED] | +55% above the EPP floor $39 (11x FY09E $3.55) | Conservative 2-yr case: -18.8% total (-9.4%/yr) | At 17.0x FY09E the 15% hurdle price $80 sits above the BULL case; comps -13.5% in Q2 2009, forward sales -13% to -10% (Q3 2009 net sales guide); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "SH22",
+   "published": "2009-02-24",
+   "filed": "2009-02-24 15:05 ET, during the session",
+   "title": "Sherwin-Williams FY2008 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000095015209001707/l34437aexv13.htm",
+   "supports": "financial summary 2004-2008; statements of consolidated income 2006-2008; 2008 average common shares assuming dilution 119,343,229; comparable store sales -5.3% (2008); segment net sales 2007-2008; quarterly dividend $.355 from February 18, 2009; Item 1 and Item 1A"
+  },
+  {
+   "id": "SH15",
+   "published": "2008-02-28",
+   "filed": "2008-02-28 09:55 ET, during the session",
+   "title": "Sherwin-Williams FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000095015208001496/l29360aexv13.htm",
+   "supports": "financial summary 2003-2007; statements of consolidated income 2005-2007; 2007 average common shares assuming dilution 130,924,690; comparable store sales -1.1% (2007); segment net sales 2006-2007; quarterly dividend $.35 from February 20, 2008; Item 1 and Item 1A"
+  },
+  {
+   "id": "SH9",
+   "published": "2007-03-01",
+   "filed": "2007-02-28 17:29 ET, after the close",
+   "title": "Sherwin-Williams FY2006 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000095015207001637/l22329aexv13.htm",
+   "supports": "financial summary 2002-2006; statements of consolidated income 2004-2006; 2006 average common shares assuming dilution 137,342,108; comparable store sales 13.6% (2005) and 9.1% (2006); segment net sales 2004-2006 after the 2006 realignment (Consumer Group $1,292,606K, $1,391,160K, $1,364,179K); quarterly dividend $.315 from February 21, 2007; Item 1 and Item 1A (the 'why')"
+  },
+  {
+   "id": "SH8",
+   "published": "2006-03-07",
+   "filed": "2006-03-07 15:10 ET",
+   "title": "Sherwin-Williams FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000095015206001786/l17545aexv13.htm",
+   "supports": "financial summary 2001-2005 (2001 diluted $1.68); statements of consolidated income 2003-2005; net sales from stores opened more than twelve calendar months 'increased 10.1 percent for the full year' 2004; segment net external sales 2001-2005 (Consumer $1,142M, $1,178M, $1,190M) and 2004 vs 2003 ($1,296,251K vs $1,189,666K)"
+  },
+  {
+   "id": "SH7",
+   "published": "2005-03-10",
+   "filed": "2005-03-10 10:44 ET",
+   "title": "Sherwin-Williams FY2004 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000095015205001943/l11720aexv13.txt",
+   "supports": "financial summary 2000-2004 (2000 diluted $.10); statements of consolidated income 2002-2004; sales from stores opened more than twelve calendar months 'increased 4.0 percent in 2003'; segment net external sales 2000-2004 (Consumer $1,251M, $1,142M)"
+  },
+  {
+   "id": "SH6",
+   "published": "2004-03-11",
+   "filed": "2004-03-11 12:24 ET",
+   "title": "Sherwin-Williams FY2003 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000095015204001806/l05235aexv13.txt",
+   "supports": "financial summary 1999-2003 (1999 diluted $1.80); statements of consolidated income 2001-2003; comparable-store sales 'increased 1.9 percent in 2002'; segment net external sales 1999-2003 (Consumer $1,224M, $1,251M)"
+  },
+  {
+   "id": "SH5",
+   "published": "2003-03-13",
+   "filed": "2003-03-13 11:10 ET",
+   "title": "Sherwin-Williams FY2002 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000095015203002867/l97882aexv13.txt",
+   "supports": "financial summary 1998-2002 (1998 diluted $1.57); statements of consolidated income 2000-2002; the 2000 results excluding the impairment charge (income before income taxes $495,446K, diluted net income per share $1.90); comparable-store sales 'decreased 1.3 percent in 2001'; segment net external sales 1998-2002 (Consumer $1,282M, $1,224M)"
+  },
+  {
+   "id": "SH4",
+   "published": "2002-03-14",
+   "filed": "2002-03-14 (EDGAR gives the filing date only)",
+   "title": "Sherwin-Williams FY2001 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000095015202001777/l92671aex13.txt",
+   "supports": "financial summary 1997-2001 (1997 net income - diluted $1.50); statements of consolidated income 1999-2001; comparable-store sales 'increased 3.7 percent in 2000'; segment net external sales 1997-2001 (Consumer $1,409M, $1,282M)"
+  },
+  {
+   "id": "SH21",
+   "published": "2009-01-22",
+   "filed": "2009-01-22 09:27 ET, before the open",
+   "title": "Sherwin-Williams Q4 2008 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000095015209000466/l35192aexv99.htm",
+   "supports": "Q4 and FY2008 statements of income, comparable-store and segment sales, currency effect; FY2009 EPS $3.00 to $4.00, Q1 2009 EPS $.05 to $.25; net sales in words"
+  },
+  {
+   "id": "SH23",
+   "published": "2009-04-16",
+   "filed": "2009-04-16 09:22 ET, before the open",
+   "title": "Sherwin-Williams Q1 2009 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000095015209003802/l36126aexv99.htm",
+   "supports": "Q1 2009 statement of income, comparable-store and Consumer Group sales, currency effect; Q2 2009 net sales -9% to -12% and EPS $1.20 to $1.45; FY2009 EPS $3.00 to $4.00 reaffirmed"
+  },
+  {
+   "id": "SH24",
+   "published": "2009-07-21",
+   "filed": "2009-07-21 09:59 ET, during the session",
+   "title": "Sherwin-Williams Q2 2009 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000095012309023720/l37039aexv99.htm",
+   "supports": "Q2 2009 statement of income, comparable-store and Consumer Group sales, currency effect; Q3 2009 net sales -10% to -13% and EPS $1.15 to $1.45; FY2009 net sales -11% to -12.5% and EPS $3.30 to $3.80"
+  },
+  {
+   "id": "SH20",
+   "published": "2008-10-16",
+   "filed": "2008-10-16 09:48 ET, during the session",
+   "title": "Sherwin-Williams Q3 2008 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000095015208007932/l34106aexv99.htm",
+   "supports": "Q3 2008 statement of income, comparable-store and Consumer Group sales, currency effect; FY2008 EPS $3.97 to $4.17; Q4 2008 EPS $.40 to $.60; the Global Group renamed the Global Finishes Group"
+  },
+  {
+   "id": "W0",
+   "published": "2009-08-14",
+   "title": "Yahoo Finance daily prices, SHW and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/SHW/history",
+   "supports": "close $60.46 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-06"
+}

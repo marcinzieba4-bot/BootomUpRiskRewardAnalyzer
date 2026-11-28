@@ -1,0 +1,230 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "LLY",
+ "company": "Eli Lilly and Company",
+ "as_of": "2011-05-20",
+ "price_date": "2011-05-20",
+ "price": 38.44,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); pharmaceutical signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'We discover, develop, manufacture, and sell products in one significant business segment—pharmaceutical products.' (FY2010 10-K, Item 1); 'Our long-term success depends on intellectual property protection.' (FY2010 10-K, Item 1A heading); 'We depend on patent-protected products for most of our revenues, cash flows, and earnings, and we will lose effective intellectual property protection for many of them in the next several years.' (FY2010 10-K, Item 1A); 'Eight significant products, which together comprised 74 percent of our worldwide revenue in 2010, have lost or will lose their most significant remaining U.S. patent protection and data-based exclusivity' (FY2010 10-K, Item 1A); 'Loss of exclusivity, whether by expiration or as a consequence of litigation, typically results in a rapid and severe decline in sales.' (FY2010 10-K, Item 1A); 'Our product sales can be adversely affected by the introduction by competitors of branded products that are perceived as superior by the marketplace, by generic versions of our branded products, and by generic versions of other products in the same therapeutic class as our branded products.' (FY2010 10-K, Item 1A)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "'We discover, develop, manufacture, and sell products in one significant business segment—pharmaceutical products.' (FY2010 10-K, Item 1); 'Our long-term success depends on intellectual property protection.' (FY2010 10-K, Item 1A heading); 'We depend on patent-protected products for most of our revenues, cash flows, and earnings, and we will lose effective intellectual property protection for many of them in the next several years.' (FY2010 10-K, Item 1A); 'Eight significant products, which together comprised 74 percent of our worldwide revenue in 2010, have lost or will lose their most significant remaining U.S. patent protection and data-based exclusivity' (FY2010 10-K, Item 1A); 'Loss of exclusivity, whether by expiration or as a consequence of litigation, typically results in a rapid and severe decline in sales.' (FY2010 10-K, Item 1A); 'Our product sales can be adversely affected by the introduction by competitors of branded products that are perceived as superior by the marketplace, by generic versions of our branded products, and by generic versions of other products in the same therapeutic class as our branded products.' (FY2010 10-K, Item 1A). durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.24x; -49% to EPP floor; model-vs-market gap +1.05; conservative 2yr +160%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.24,
+  "ratio_b_fmt": "0.24x",
+  "epp": 74.77,
+  "epp_gap_pct": -48.6,
+  "epp_adj": 0.2,
+  "proxy_composite": 2.05,
+  "sca": 0.181,
+  "adj_composite": 2.431,
+  "market_composite": 1.38,
+  "adj_gap": 1.05,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 159.6,
+  "scenarios": {
+   "BEAR": {
+    "eps": 1.93,
+    "pe": 7.9,
+    "price": 15,
+    "desc": "EPS -30.0%/yr (worst year FY01-FY10 ex-FY08, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 4.33,
+    "pe": 23.3,
+    "price": 101,
+    "desc": "EPS +4.8%/yr (Q1 sales ex-FX + margin + buyback); P/E at its 10-yr ex-FY08 median"
+   },
+   "BULL": {
+    "eps": 4.48,
+    "pe": 30.1,
+    "price": 135,
+    "desc": "EPS +6.7%/yr (FY01-FY10 ex-FY08 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 5.83,
+    "pe": 33.8,
+    "price": 197,
+    "desc": "EPS +21.7%/yr (best 2-yr run FY01-FY10 ex-FY08); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.24,
+   "epp_gap_pct": -48.6,
+   "adj_gap": 1.05,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 159.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.18,
+   "epp_gap_pct": -48.6,
+   "adj_gap": 1.43,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 159.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 0.36,
+   "epp_gap_pct": -48.6,
+   "adj_gap": 0.48,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 159.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.22,
+   "epp_gap_pct": -48.6,
+   "adj_gap": 1.08,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 159.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.25,
+   "epp_gap_pct": -48.6,
+   "adj_gap": 1.04,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 159.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.24,
+   "epp_gap_pct": -48.6,
+   "adj_gap": 1.35,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 159.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.24,
+   "epp_gap_pct": -55.6,
+   "adj_gap": 1.05,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 159.6,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.24,
+   "epp_gap_pct": -48.6,
+   "adj_gap": 1.11,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 159.6,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "LLY (retrospective, 2011-05-20) ◉ BUY — Ratio B 0.24x (61.0% downside to Bear $15 / +251.2% upside to Bull $135) | Adj composite 2.43 vs market 1.38: gap +1.05 [UNDERVALUED] | -49% above the EPP floor $75 (19x FY11E $3.94) | Conservative 2-yr case: +159.6% total (+79.8%/yr) | At 9.8x FY11E the 15% hurdle price $51 sits at or below the BASE case; U.S. revenues +1.0% in Q1 2011, forward revenues +5% (no FY11 revenue guide in numbers, Q1 2011 total revenue growth ex-FX); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "LL8",
+   "published": "2006-03-01",
+   "filed": "2006-03-01 09:01 ET, before the open",
+   "title": "Eli Lilly FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095013706002395/c02657e10vk.htm",
+   "supports": "statement of income and geographic data (rule T)"
+  },
+  {
+   "id": "LL9",
+   "published": "2007-03-01",
+   "filed": "2007-02-28 17:18 ET, after the close",
+   "title": "Eli Lilly FY2006 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095013707003013/c12621e10vk.htm",
+   "supports": "statement of income and geographic data (rule T); history vintage: five-year summary, statements of income and cash flows, balance sheet, segment and geographic data, Items 1 and 1A"
+  },
+  {
+   "id": "LL21",
+   "published": "2008-10-21",
+   "filed": "2008-10-21 15:53 ET, during the session",
+   "title": "Eli Lilly FY2007 10-K/A (Amendment No. 1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095013708012864/c46966ae10vkza.htm",
+   "supports": "history vintage: five-year summary, statements of income and cash flows, balance sheet, segment and geographic data, Items 1 and 1A"
+  },
+  {
+   "id": "LL26",
+   "published": "2009-02-27",
+   "filed": "2009-02-27 11:19 ET, during the session",
+   "title": "Eli Lilly FY2008 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095015209001897/c49534e10vk.htm",
+   "supports": "history vintage: five-year summary, statements of income and cash flows, balance sheet, segment and geographic data, Items 1 and 1A"
+  },
+  {
+   "id": "LL35",
+   "published": "2010-02-22",
+   "filed": "2010-02-22 12:45 ET, during the session",
+   "title": "Eli Lilly FY2009 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000095012310014958/c55339ke10vk.htm",
+   "supports": "history vintage: five-year summary, statements of operations and cash flows, balance sheet, segment and geographic data, Items 1 and 1A"
+  },
+  {
+   "id": "LL40",
+   "published": "2011-02-22",
+   "filed": "2011-02-22 10:46 ET, during the session",
+   "title": "Eli Lilly FY2010 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000119312511041620/d10k.htm",
+   "supports": "history vintage: five-year summary, statements of operations and cash flows, balance sheet, segment and geographic data, Items 1 and 1A"
+  },
+  {
+   "id": "LL39",
+   "published": "2011-01-27",
+   "filed": "2011-01-27 06:06 ET, before the open",
+   "title": "Eli Lilly Q4 2010 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000119312511015305/dex991.htm",
+   "supports": "Q4 2010: reported operating results (total revenue $6,187.0M vs $5,934.2M, cost of sales, pre-tax income $1,409.6M vs $1,137.2M, diluted EPS $1.05 vs $0.83); growth 4% with exchange rates -1 points; U.S. and outside-U.S. revenue; FY2010 actuals (total revenue $23,076.0M, diluted EPS $4.58, U.S. and outside-U.S. revenue); FY2011 guide: reported EPS $3.92-4.07, revenue in words"
+  },
+  {
+   "id": "LL41",
+   "published": "2011-04-18",
+   "filed": "2011-04-18 06:31 ET, before the open",
+   "title": "Eli Lilly Q1 2011 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000119312511100301/dex991.htm",
+   "supports": "Q1 2011: reported operating results (total revenue $5,839.2M vs $5,485.5M, cost of sales, pre-tax income $1,273.9M vs $1,707.8M, diluted EPS $0.95 vs $1.13); growth 6% with exchange rates +1 points; U.S. and outside-U.S. revenue; FY2011 guide: reported EPS $3.86-4.01, revenue in words"
+  },
+  {
+   "id": "W0",
+   "published": "2011-05-20",
+   "title": "Yahoo Finance daily prices, LLY and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/LLY/history",
+   "supports": "close $38.44 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr ex-FY08 P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-21"
+}

@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  SCHW  ·  The Charles Schwab Corporation  ·  $26.84  ·  RETROSPECTIVE as of 2014-04-16
+  Signal: ✕ AVOID   Ratio B: 6.56x   Adj gap: -0.33  [MODESTLY OVERVALUED]
+  Point-in-time: 10 sources, latest published 2014-04-16; latest print Q1 2014 (Apr 15)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2014E revenue, USD bn  →  FY2016E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2014E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Asset management and adminis  $  2.65  $ 2.65  $ 2.94    +0.00    +0.29
+    +13.3% revenue in FY13
+  Net interest revenue          $  2.27  $ 2.27  $ 2.52    +0.00    +0.25
+    +12.2% revenue in FY13
+  Trading revenue               $  1.05  $ 1.05  $ 1.16    +0.00    +0.11
+    +5.2% revenue in FY13
+  Other (net of the provision   $  0.26  $ 0.26  $ 0.29    +0.00    +0.03
+    +9.1% revenue in FY13
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $  6.23  $ 6.23  $ 6.91    +0.00    +0.68
+  FY2014E = FY13 $5.435B × (1 + 14.6%: the Q1 2014 revenue growth (no Q2 2014 guide), YoY, applied to the year (no FY14 revenue guide)); split pro rata to FY13 net revenues by component (asset management and administration fees, net interest revenue, trading revenue, other net of the provision for loan losses and net impairment losses on securities; FY13 growth)
+  Q1 2014 (Apr 15): net revenues $1.478B +14.6% YoY (+3.0% QoQ); client assets $2,308.0B +10.7%; trades 337.3K a day +12.9%;
+  expenses excluding interest -0.3%; pre-tax margin 35.32% (+965.9bp); net new client assets $34.2B; EPS $0.24 vs $0.15
+  Revenue: net revenues $1,478M vs $1,290M a year earlier, $1,435M the quarter before; client assets $2,308.0B vs $2,084.9B a year earlier; net new client assets $34.2B in the quarter; daily average revenue trades 337.3K vs 298.7K; diluted EPS $0.24 vs $0.15, GAAP (per common share, after preferred dividends); diluted shares 1,311M; expenses excluding interest $956M vs $959M
+  Q2 2014: no revenue, EPS or margin guide in numbers in any filing; the latest quarter's revenue growth stands in (the UNP rule)
+
+  FY2014E EPS check:  $6.230B × 31.4% pre-tax × (1−37.2%) ÷ 1.311B  =  $0.94  (FY2014E: no EPS guide in numbers, FY13's $0.78 stands)
+  FY2016E BEAR check: $6.230B × 31.4% ÷ 1.295B  =  $0.95  (scenario $0.24)
+  FY2016E BULL check: $6.910B × 31.8% ÷ 1.295B  =  $1.06  (scenario $1.04)
+  Every 1pp of pre-tax margin ≈ $0.030 EPS ≈ $0.73/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Net revenue growth                    -56.0%   ≥-22.0%    ≥12.0%    ≥41.0%    +14.6%  ▲ BULL  ███░
+  Client assets growth                  -34.0%   ≥-10.0%    ≥15.0%    ≥42.0%    +10.7%  ◦ BASE  ██░░
+  Expense growth less revenue          +35.0pp   ≤16.0pp   ≤-3.0pp  ≤-16.0pp   -14.9pp  ▲ BULL  ███░
+  Daily average revenue trades          -91.0%   ≥-34.0%    ≥22.0%    ≥68.0%    +12.9%  ◦ BASE  ██░░
+  Pre-tax margin change               -3510.0bp  ≥-1640.0bp  ≥230.0bp  ≥1330.0bp  +965.9bp  ▲ BULL  ███░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.50 / 4.00
+  Market composite:   2.83 / 4.00  (back-solved from $26.84 + 15% hurdle)
+  SCA adjustment:    +0.10  ·  EPP-distance adj -0.10  →  Adj composite 2.50  →  Gap -0.33  [MODESTLY OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY13 net revenues +11.3%, client assets $2,249.4B (+15.3%); Q1 net new client assets $34.2B  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 34.4x FY14E vs a 24.4x 10-yr median (84th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: Q1 2014 revenue growth (no Q2 2014 guide) +14.6% vs a 5.9% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  Client assets $2,308.0B (+10.7% YoY) at the end of Q1 2014, pre-tax margin 35.3%, dividend $0.24 a year  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Net revenue growth                    +14.6%    -56.0%  -70.6%  Asset-based and trading revenue fall …
+  Client assets growth                  +10.7%    -34.0%  -44.7%  Client assets shrink with markets and…
+  Expense growth less revenue          -14.9pp   +35.0pp  +49.9pp  Expenses excluding interest do not fa…
+  Daily average revenue trades          +12.9%    -91.0%  -103.9%  Clients trade less
+  Pre-tax margin change               +965.9bp  -3510.0bp  -4475.9bp  Expenses outrun revenue
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$11.13  (model)  /  $4.42 (defined)
+  Bear probability (proxy model):  9.3%
+
+  KEY TRIGGER: revenue went from +18.1% (Q4 2013) to +14.6% YoY (Q1 2014), +3.0% on the quarter before;
+  the bear case needs client assets (+10.7% YoY now) shrinking further
+  and trades (+12.9% YoY) falling with them. Lower markets and rates show up in client assets and asset-based fees first;
+  the bear needs them in net revenue as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $0.78  (FY2014E: no EPS guide in numbers, FY13's $0.78 stands)
+  Min viable P/E at panic:          19x  [median of calendar-year P/E lows: 2004 31.9x, 2005 20.6x, 2006 20.7x, 2007 19.3x, 2008 13.8x, 2009 16.7x, 2010 33.6x, 2011 15.4x, 2012 16.8x, 2013 19.3x, 2014 30.3x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $14.82/share
+  Current $26.84 vs Updated EPP $14.82:  +81%  ⚠ far above floor — large drawdown room
+  Bear $4.42 vs Updated EPP $14.82:  -70%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Net revenue growth                           -22.0      -36.6   BASE floor (vs +15 now)
+  Client assets growth                         -10.0      -20.7   BASE floor (vs +11 now)
+  Expense growth less revenue                   16.0      +30.9   BASE floor (vs -15 now)
+  Daily average revenue trades                 -34.0      -46.9   BASE floor (vs +13 now)
+  Pre-tax margin change                      -1640.0    -2605.9   BASE floor (vs +966 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $0.78 × (1+13.2%)² = $1.00
+  At 24x P/E (conservative):  $23.99/share
+  + Cumul. dividends (2yr):  +$0.49/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $23.99  (▼2.85 from $26.84)
+  Conservative total return:  -9% over 2yr  = -4%/yr
+
+  13.2% EPS growth is what is left once the premium multiple (34.4x)
+  mean-reverts to 24x. Breakeven at 24x needs FY2016E EPS of $1.10,
+  i.e. 18.6%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $16.05  –  $29.13  (at 82th pct of range)
+  Annual dividend:      $0.24/share  (yield 0.9%)
+  Realized vol:         28% annualized (1-yr daily log returns)
+  Beta vs broad market: 1.54
+  1-sigma range (1yr):  $19.43  –  $34.25  ($26.84 ± 28%)
+  2-sigma range (1yr):  $12.02  –  $41.66
+  ────────────────────────────────────────────────────────────
+  Bear $4.42 requires:  ~3.0σ price move  (unusual — requires fundamental break)
+  A broker whose earnings follow markets and rates: the stock is +66% off its May
+  low (52 weeks) while revenue went from +18.1% (Q4 2013) to +14.6% YoY (Q1 2014), +3.0% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        0.24   18.4x  $   4.42     9.3%      5.1%    +4.2pp  EPS -44.1%/yr (worst year FY04-FY13, capped at 0%); P/E to its 10th pct
+  BASE        1.04   24.4x  $  25.38    32.4%     17.7%   +14.6pp  EPS +15.2%/yr (Q1 revenue YoY + margin + buyback); P/E at its 10-yr median
+  BULL        1.04   29.1x  $  30.26    49.1%     61.9%   -12.8pp  EPS +15.2%/yr (FY04-FY13 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL       2.07   38.3x  $  79.28     9.3%     15.3%    -6.0pp  EPS +62.9%/yr (best 2-yr run FY04-FY13, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $30.83  /  Market EV: $35.57  /  Current: $26.84
+  Conservative EV (2yr, ④): $23.99 + $0.49 divs = $24.48 total value
+  Downside (→ Bear $4.42): 83.5%   Upside (→ Bull $30.26): 12.7%   Ratio B 6.56x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $26.84 the market needs $35.50 in two years —
+  above the BULL case. That is a market composite of 2.83 against a model
+  read of 2.50: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       6.56x     +81%    -0.33  MODESTLY OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     1.68x     +81%    +0.20  MODESTLY UNDERVALUED / WATCHLIST
+  Multiples one band cheaper (p5/p25/med/p75)      infx     +81%    -0.63  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          5.14x     +81%    -0.28  MODESTLY OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                          8.95x     +81%    -0.37  MODESTLY OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             6.56x     +81%    -0.03  FAIRLY VALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 6.56x     +56%    -0.33  MODESTLY OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    6.56x     +81%    -0.12  FAIRLY VALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 2014 print (the quarter ends in June) — revenue against the Q1 2014 revenue growth (no Q2 2014 guide): +14.6% YoY
+  (2) Client assets — $2,308.0B at the end of Q1 2014 (+10.7% YoY): asset-based revenue follows them
+  (3) A Q2 2014 revenue guide — none: Schwab gives no revenue, EPS or margin outlook in numbers in any filing; the monthly activity reports in each release track client assets, net new assets and trades
+  (4) Trading activity — 337.3K daily average revenue trades in Q1 2014 (+12.9% YoY): the driver of trading revenue
+  (5) Capital at 34x — dividend $0.06 a quarter: 'on July 22, 2008, the Board of Directors increased the quarterly cash dividend from $.05 per share to $.06 per share' (Q2 2008 10-Q)
+  ✕ AVOID  |  EPP floor $14.82  |  ADD below ~$21.57  |  TRIM above $30.26
+════════════════════════════════════════════════════════════════════════
+

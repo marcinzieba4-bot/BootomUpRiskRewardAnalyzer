@@ -1,0 +1,155 @@
+
+════════════════════════════════════════════════════════════════════════
+  MU  ·  Micron Technology, Inc.  ·  $86.03  ·  RETROSPECTIVE as of 2021-04-23
+  Signal: ✕ AVOID   Ratio B: infx   Adj gap: -1.10  [OVERVALUED]
+  Point-in-time: 17 sources, latest published 2021-04-23; latest print Q2 FY21 (Mar 31)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2021E revenue, USD bn  →  FY2023E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2021E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  CNBU                          $ 11.99  $11.99  $14.62    +0.00    +2.63
+    -7.9% revenue in FY20
+  MBU                           $  7.44  $ 7.44  $ 9.08    +0.00    +1.64
+    -10.9% revenue in FY20
+  SBU                           $  4.92  $ 4.92  $ 5.99    +0.00    +1.07
+    -1.6% revenue in FY20
+  EBU                           $  3.60  $ 3.60  $ 4.39    +0.00    +0.79
+    -12.0% revenue in FY20
+  All Other                     $  0.03  $ 0.03  $ 0.04    +0.00    +0.01
+    -65.3% revenue in FY20
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $ 27.98  $27.98  $34.12    +0.00    +6.14
+  FY2021E = FY20 $21.435B × (1 + 30.6%: the Q3 FY21 revenue guide (Q2 FY21 results (8-K ex.99.1, Business Outlook)), YoY, applied to the year (no FY21 revenue guide)); split pro rata to FY20 segment revenue (FY2020 10-K)
+  Q2 FY21 (Mar 31): revenue $6.236B +30.0% YoY (+8.0% QoQ); inventories -8.9%; R&D + SG&A -5.4%;
+  gross margin 26.44% (-180.4bp); operating margin 10.63% (+145.9bp); EPS $0.53 vs $0.36
+  Revenue: revenue $6,236M vs $4,797M a year earlier, $5,773M the quarter before; inventories $4,743M (2021-03-04) vs $5,208M a year earlier (Q2 FY20 10-Q); GAAP diluted EPS $0.53 vs $0.36; diluted shares 1144.0M; 'Effective as of the beginning of the second quarter of 2021, we changed our method of inventory costing from average cost to FIFO.' (prior periods not adjusted; the change, the cost-absorption change, the 3D XPoint inventory write-down and the patent license charges stay in the margins, as published); inventories from Q2 FY21 exclude spare parts, which the year-ago 10-Q's figure includes, used as published (the Q2 FY21 10-Q: 'Beginning in the second quarter of 2021, we changed the classification of spare parts for equipment to better align with the manner in which they are used in operations.')
+  Q3 FY21 outlook (Q2 FY21 results (8-K ex.99.1, Business Outlook)): revenue $7,100.0M ±$200.0M, i.e. $6,900.0M-$7,300.0M ('Revenue | $7.1 billion ± $200 million | $7.1 billion ± $200 million') against Q3 FY20's $5,438.0M: +26.9% to +34.2% YoY; display only: GAAP (non-GAAP) gross margin 40.5% ± 1% (41.5% ± 1%), operating expenses $930 million ± $25 million ($875 million ± $25 million), diluted EPS $1.52 ± $0.07 ($1.62 ± $0.07); no fiscal-year revenue, EPS or margin guide
+
+  FY2021E EPS check:  $27.980B × 13.9% pre-tax × (1−9.4%) ÷ 1.144B  =  $3.08  (FY2021E: no EPS guide in numbers, FY20's $2.37 stands)
+  FY2023E BEAR check: $27.980B × 13.9% ÷ 1.173B  =  $3.01  (scenario $0.44)
+  FY2023E BULL check: $34.120B × 14.3% ÷ 1.173B  =  $3.77  (scenario $3.96)
+  Every 1pp of pre-tax margin ≈ $0.222 EPS ≈ $1.80/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Revenue growth                        -86.0%   ≥-38.0%     ≥9.0%   ≥147.0%    +30.0%  ▲ BULL  ███░
+  Gross margin change                 -9420.0bp  ≥-4820.0bp  ≥-230.0bp  ≥3050.0bp  -180.4bp  ▲ BULL  ███░
+  Opex growth less revenue            +109.0pp   ≤55.0pp    ≤2.0pp  ≤-102.0pp   -35.4pp  ▲ BULL  ███░
+  Inventory growth less revenue        +97.0pp   ≤51.0pp    ≤5.0pp  ≤-43.0pp   -38.9pp  ▲ BULL  ███░
+  Operating margin change             -12480.0bp  ≥-6240.0bp    ≥0.0bp  ≥4400.0bp  +145.9bp  ▲ BULL  ███░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.85 / 4.00
+  Market composite:   3.75 / 4.00  (back-solved from $86.03 + 15% hurdle)
+  SCA adjustment:    +0.10  ·  EPP-distance adj -0.30  →  Adj composite 2.65  →  Gap -1.10  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY20 net sales -8.4%, gross margin 30.6%; Q2 gross margin 26.44% (-180bp YoY)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 36.3x FY21E vs a 8.1x 7.6-yr ex-FY11 ex-FY12 ex-FY13 ex-FY16 median (97th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: Q3 FY21 revenue guide (Q2 FY21 results (8-K ex.99.1, Business Outlook)) +26.9-34.2% vs a -1.0% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  Cash and short-term investments $7.184B, long-term debt $6,298M and current debt $323M (Q2 FY21), FY20 free cash flow $0.083B (net cash provided by operating activities $8,306M less expenditures for property, plant, and equipment $8,223M), no dividend  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Revenue growth                        +30.0%    -86.0%  -116.0%  Oversupply and falling selling prices…
+  Gross margin change                 -180.4bp  -9420.0bp  -9239.6bp  Selling prices fall faster than cost …
+  Opex growth less revenue             -35.4pp  +109.0pp  +144.4pp  R&D and SG&A do not come down with re…
+  Inventory growth less revenue        -38.9pp   +97.0pp  +135.9pp  Inventory builds ahead of demand: wri…
+  Operating margin change             +145.9bp  -12480.0bp  -12625.9bp  Operating leverage works in reverse
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$12.41  (model)  /  $1.80 (defined)
+  Bear probability (proxy model):  5.0%
+
+  KEY TRIGGER: revenue went from +12.2% (Q1 FY21) to +30.0% YoY (Q2 FY21), +8.0% on the quarter before;
+  the bear case needs a downturn in gross margin (-180.4bp now)
+  and inventories (-38.9pp against revenue) giving way. A memory downturn shows up in average selling prices and inventories
+  first; the bear needs it in gross margin as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $2.37  (FY2021E: no EPS guide in numbers, FY20's $2.37 stands)
+  Min viable P/E at panic:          5x  [median of calendar-year P/E lows: 2013 5.3x, 2014 8.1x, 2015 5.8x, 2016 3.8x, 2017 2.8x, 2018 3.4x, 2019 5.6x, 2020 14.5x, 2021 31.2x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $11.85/share
+  Current $86.03 vs Updated EPP $11.85:  +626%  ⚠ far above floor — large drawdown room
+  Bear $1.80 vs Updated EPP $11.85:  -85%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.30 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Revenue growth                               -38.0      -68.0   BASE floor (vs +30 now)
+  Gross margin change                        -4820.0    -4639.6   BASE floor (vs -180 now)
+  Opex growth less revenue                      55.0      +90.4   BASE floor (vs -35 now)
+  Inventory growth less revenue                 51.0      +89.9   BASE floor (vs -39 now)
+  Operating margin change                    -6240.0    -6385.9   BASE floor (vs +146 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $2.37 × (1+27.3%)² = $3.84
+  At 8x P/E (conservative):  $30.71/share
+  + Cumul. dividends (2yr):  +$0.00/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $30.71  (▼55.32 from $86.03)
+  Conservative total return:  -64% over 2yr  = -32%/yr
+
+  27.3% EPS growth is what is left once the premium multiple (36.3x)
+  mean-reverts to 8x. Breakeven at 8x needs FY2023E EPS of $10.75,
+  i.e. 113.0%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $42.25  –  $96.96  (at 80th pct of range)
+  Annual dividend:      $0.00/share  (yield 0.0%)
+  Realized vol:         45% annualized (1-yr daily log returns)
+  Beta vs broad market: 1.50
+  1-sigma range (1yr):  $47.57  –  $124.49  ($86.03 ± 45%)
+  2-sigma range (1yr):  $9.12  –  $162.94
+  ────────────────────────────────────────────────────────────
+  Bear $1.80 requires:  ~2.2σ price move  (unusual — requires fundamental break)
+  A memory maker whose selling prices follow industry supply: the stock is +102% off its August
+  low (52 weeks) while revenue went from +12.2% (Q1 FY21) to +30.0% YoY (Q2 FY21), +8.0% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        0.44    4.1x  $   1.80     5.0%      1.2%    +3.8pp  EPS -57.0%/yr (worst year FY14-FY20 ex-FY16, capped at 0%); P/E to its 10th pct
+  BASE        3.96    8.1x  $  32.08    17.6%      4.3%   +13.3pp  EPS +29.3%/yr (Q3 FY21 guide YoY + margin + buyback); P/E at its 7.6-yr ex-FY11 ex-FY12 ex-FY13 ex-FY16 median
+  BULL        3.96   14.5x  $  57.42    61.3%     15.0%   +46.3pp  EPS +29.3%/yr (FY14-FY20 ex-FY16 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL       4.23   22.4x  $  94.75    16.1%     79.5%   -63.3pp  EPS +33.6%/yr (best 2-yr run FY14-FY20 ex-FY16, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $56.20  /  Market EV: $85.31  /  Current: $86.03
+  Conservative EV (2yr, ④): $30.71 + $0.00 divs = $30.71 total value
+  Downside (→ Bear $1.80): 97.9%   Upside (→ Bull $57.42): -33.3%   Ratio B infx  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $86.03 the market needs $113.77 in two years —
+  above the BULL case. That is a market composite of 3.75 against a model
+  read of 2.65: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                        infx    +626%    -1.10  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)    31.23x    +626%    -0.56  OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx    +626%    -1.12  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                           infx    +626%    -1.12  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                           infx    +626%    -1.10  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)              infx    +626%    -0.80  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                  infx    +354%    -1.10  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                     infx    +626%    -1.10  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 FY21 print (the quarter ends in early June) — revenue against the Q3 FY21 revenue guide (Q2 FY21 results (8-K ex.99.1, Business Outlook)): +26.9-34.2% YoY
+  (2) Gross margin — -180.4bp in Q2 FY21: selling prices against cost per bit, what must hold if revenue does not
+  (3) The Q3 FY21 guide — revenue $7,100.0M ±$200.0M, i.e. $6,900.0M-$7,300.0M (+26.9% to +34.2% YoY): Micron guides one quarter at a time, in revenue
+  (4) Inventories — -8.9% against revenue +30.0% in Q2 FY21 (-38.9pp): write-downs follow if selling prices fall below cost
+  (5) Capital structure at 36x — 'In May 2018, we announced that our Board of Directors authorized the discretionary repurchase of up to $10 billion of our outstanding common stock' No dividend declared (FY2020 10-K)
+  ✕ AVOID  |  EPP floor $11.85  |  ADD below ~$27.27  |  TRIM above $57.42
+════════════════════════════════════════════════════════════════════════
+

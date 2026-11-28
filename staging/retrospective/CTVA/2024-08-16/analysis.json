@@ -1,0 +1,241 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "CTVA",
+ "company": "Corteva, Inc.",
+ "as_of": "2024-08-16",
+ "price_date": "2024-08-16",
+ "price": 53.8,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); seed and crop protection signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "Corteva: 'The company competes with producers of seed germplasm, trait developers, and crop protection products on a global basis.'; the FY2023 10-K's risk factors: 'Climate change and unpredictable seasonal and weather factors could impact Corteva’s sales and earnings.'; no disruption theme in the registry covers seed and crop protection (GLP1 is scoped to snacks, beverages and devices, ENERGY_TRANSITION to oil, gas and coal reserves and refining), so the weather and climate wording stays here",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "Corteva: 'The company competes with producers of seed germplasm, trait developers, and crop protection products on a global basis.'; the FY2023 10-K's risk factors: 'Climate change and unpredictable seasonal and weather factors could impact Corteva’s sales and earnings.'; no disruption theme in the registry covers seed and crop protection (GLP1 is scoped to snacks, beverages and devices, ENERGY_TRANSITION to oil, gas and coal reserves and refining), so the weather and climate wording stays here. durable franchise (obsolescence risk 2/5); price rich; Ratio B 4.65x; +53% to EPP floor; model-vs-market gap -0.93; conservative 2yr -15%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": 4.65,
+  "ratio_b_fmt": "4.65x",
+  "epp": 35.1,
+  "epp_gap_pct": 53.3,
+  "epp_adj": -0.1,
+  "proxy_composite": 2.35,
+  "sca": 0.0,
+  "adj_composite": 2.25,
+  "market_composite": 3.18,
+  "adj_gap": -0.93,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": -15.2,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.6,
+    "pe": 18.2,
+    "price": 11,
+    "desc": "EPS -32.0%/yr (worst year FY20-FY23, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 1.35,
+    "pe": 34.6,
+    "price": 47,
+    "desc": "EPS +1.7%/yr (FY24 net sales guide + margin + buyback); P/E at its 4.6-yr ex-FY19 median"
+   },
+   "BULL": {
+    "eps": 1.57,
+    "pe": 40.0,
+    "price": 63,
+    "desc": "EPS +9.9%/yr (FY20-FY23 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 2.2,
+    "pe": 43.8,
+    "price": 96,
+    "desc": "EPS +30.1%/yr (best 2-yr run FY20-FY23, at least BULL); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 4.65,
+   "epp_gap_pct": 53.3,
+   "adj_gap": -0.93,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -15.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 2.49,
+   "epp_gap_pct": 53.3,
+   "adj_gap": -0.64,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -15.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 214.0,
+   "epp_gap_pct": 53.3,
+   "adj_gap": -1.2,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -15.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 3.82,
+   "epp_gap_pct": 53.3,
+   "adj_gap": -0.86,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -15.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 5.94,
+   "epp_gap_pct": 53.3,
+   "adj_gap": -1.01,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -15.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 4.65,
+   "epp_gap_pct": 53.3,
+   "adj_gap": -0.63,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -15.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 4.65,
+   "epp_gap_pct": 37.9,
+   "adj_gap": -0.83,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -15.2,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 4.65,
+   "epp_gap_pct": 53.3,
+   "adj_gap": -0.71,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -15.2,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "RICH"
+ ],
+ "summary": "CTVA (retrospective, 2024-08-16) ✕ AVOID — Ratio B 4.65x (79.6% downside to Bear $11 / +17.1% upside to Bull $63) | Adj composite 2.25 vs market 3.18: gap -0.93 [OVERVALUED] | +53% above the EPP floor $35 (27x FY24E $1.30) | Conservative 2-yr case: -15.2% total (-7.6%/yr) | At 41.4x FY24E the 15% hurdle price $71 sits above the BULL case; Seed organic +3.0% and Crop Protection organic +1.0% in Q2 2024, forward revenues -0.2% to +1.6% (FY2024 net sales guide $17.2-17.5B (Q2 2024 release) on FY23 $17.226B, no Q3 2024 guide); no theme in the registry covers seed and crop protection (GLP1 is scoped to snacks, beverages and devices, ENERGY_TRANSITION to oil, gas and coal reserves and refining); none has dated evidence.",
+ "sources": [
+  {
+   "id": "CT5",
+   "published": "2024-02-08",
+   "filed": "2024-02-08 14:13 ET (EDGAR acceptance)",
+   "title": "Corteva FY2023 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1755672/000175567224000004/ctva-20231231.htm",
+   "supports": "FY2023 annual history: the consolidated statements of operations (net sales, cost of goods sold, income from continuing operations before income taxes, diluted EPS from continuing operations), the EPS note's diluted share counts, the MD&A segment net sales, the cash flow statement, the dividend and the risk factors"
+  },
+  {
+   "id": "CT4",
+   "published": "2023-02-09",
+   "filed": "2023-02-09 10:33 ET (EDGAR acceptance)",
+   "title": "Corteva FY2022 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1755672/000175567223000005/ctva-20221231.htm",
+   "supports": "FY2022 annual history: the consolidated statements of operations (net sales, cost of goods sold, income from continuing operations before income taxes, diluted EPS from continuing operations), the EPS note's diluted share counts, the MD&A segment net sales, the cash flow statement, the dividend and the risk factors"
+  },
+  {
+   "id": "CT3",
+   "published": "2022-02-11",
+   "filed": "2022-02-10 16:09 ET (EDGAR acceptance)",
+   "title": "Corteva FY2021 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1755672/000175567222000005/ctva-20211231.htm",
+   "supports": "FY2021 annual history: the consolidated statements of operations (net sales, cost of goods sold, income from continuing operations before income taxes, diluted EPS from continuing operations), the EPS note's diluted share counts, the MD&A segment net sales, the cash flow statement, the dividend and the risk factors"
+  },
+  {
+   "id": "CT2",
+   "published": "2021-02-12",
+   "filed": "2021-02-11 16:11 ET (EDGAR acceptance)",
+   "title": "Corteva FY2020 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1755672/000175567221000008/ctva-20201231.htm",
+   "supports": "FY2020 annual history: the consolidated statements of operations (net sales, cost of goods sold, income from continuing operations before income taxes, diluted EPS from continuing operations), the EPS note's diluted share counts, the MD&A segment net sales, the cash flow statement, the dividend and the risk factors; the selected financial data"
+  },
+  {
+   "id": "CT1",
+   "published": "2020-02-14",
+   "filed": "2020-02-14 07:29 ET (EDGAR acceptance)",
+   "title": "Corteva FY2019 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1755672/000175567220000006/ctva-12x31x201910xk.htm",
+   "supports": "FY2019 annual history: the consolidated statements of operations (net sales, cost of goods sold, income from continuing operations before income taxes, diluted EPS from continuing operations), the EPS note's diluted share counts, the MD&A segment net sales, the cash flow statement, the dividend and the risk factors; the selected financial data"
+  },
+  {
+   "id": "CT21",
+   "published": "2024-02-01",
+   "filed": "2024-01-31 17:04 ET (EDGAR acceptance, after the close)",
+   "title": "Corteva Q4 2023 results (8-K, earnings release)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1755672/000175567224000002/a4q_23xearningsxnewsxrel.htm",
+   "supports": "Q4 2023 results: the release (exhibit 99.1, a4q_23xearningsxnewsxrel.htm) and its schedules (exhibit 99.2, https://www.sec.gov/Archives/edgar/data/1755672/000175567224000002/a123123enrschedules.htm): the statement of operations, segment net sales, the price-volume-currency analysis, the balance sheet and the full-year guide",
+   "exhibit_schedules": "https://www.sec.gov/Archives/edgar/data/1755672/000175567224000002/a123123enrschedules.htm"
+  },
+  {
+   "id": "CT22",
+   "published": "2024-05-02",
+   "filed": "2024-05-01 17:10 ET (EDGAR acceptance, after the close)",
+   "title": "Corteva Q1 2024 results (8-K, earnings release)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1755672/000175567224000006/final_1qx2024xearningsxn.htm",
+   "supports": "Q1 2024 results: the release (exhibit 99.1, final_1qx2024xearningsxn.htm) and its schedules (exhibit 99.2, https://www.sec.gov/Archives/edgar/data/1755672/000175567224000006/cortevaq12024enrschedules.htm): the statement of operations, segment net sales, the price-volume-currency analysis, the balance sheet and the full-year guide",
+   "exhibit_schedules": "https://www.sec.gov/Archives/edgar/data/1755672/000175567224000006/cortevaq12024enrschedules.htm"
+  },
+  {
+   "id": "CT23",
+   "published": "2024-08-01",
+   "filed": "2024-07-31 16:41 ET (EDGAR acceptance, after the close)",
+   "title": "Corteva Q2 2024 results (8-K, earnings release)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1755672/000175567224000017/final_2qx2024xearningsxn.htm",
+   "supports": "Q2 2024 results: the release (exhibit 99.1, final_2qx2024xearningsxn.htm) and its schedules (exhibit 99.2, https://www.sec.gov/Archives/edgar/data/1755672/000175567224000017/cortevaq22024enrschedules.htm): the statement of operations, segment net sales, the price-volume-currency analysis, the balance sheet and the full-year guide",
+   "exhibit_schedules": "https://www.sec.gov/Archives/edgar/data/1755672/000175567224000017/cortevaq22024enrschedules.htm"
+  },
+  {
+   "id": "CT36",
+   "published": "2024-08-02",
+   "filed": "2024-08-01 17:19 ET (EDGAR acceptance)",
+   "title": "Corteva Q2 2024 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1755672/000175567224000019/ctva-20240630.htm",
+   "supports": "the quarterly dividend rate approved in July 2024"
+  },
+  {
+   "id": "A0",
+   "published": "2024-08-16",
+   "title": "Yahoo Finance daily prices, Corteva, Inc. common stock (NYSE: CTVA) and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/CTVA/history",
+   "supports": "close $53.80 as traded on AS_OF, 52-week range, realized vol, beta, the 4.6-yr ex-FY19 P/E distribution since the listing on 2019-06-03"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-16"
+}

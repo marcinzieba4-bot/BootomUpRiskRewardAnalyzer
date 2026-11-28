@@ -1,0 +1,271 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "MU",
+ "company": "Micron Technology, Inc.",
+ "as_of": "2017-10-27",
+ "price_date": "2017-10-27",
+ "price": 40.85,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); semiconductor signals with Micron's rule-T thresholds",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'Micron Technology, Inc., including its consolidated subsidiaries, is an industry leader in innovative memory and storage solutions.' 'We have experienced volatility in average selling prices for our semiconductor memory and storage products which may adversely affect our business.' 'The semiconductor memory and storage markets are highly competitive.' (FY2017 10-K); DURABLE: no Micron 10-K calls its own business cyclical (CYCLICAL needs the company's 'our business is cyclical', as BKR, CAT and NVDA said; the F and AVGO reading of industry words), so the kind is DURABLE, the label only; the 10-K names the cloud only among the markets Micron sells into ('Increasingly our SSDs are being utilized in large-scale cloud environments.'), its own demand and not a substitute for its products (the NVDA reading), and no other theme in taxonomy_eras.json is scoped to a memory maker, so the watch list is empty",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, NEUTRALLY VALUED",
+  "quality_label": "◎ QUALITY, NEUTRALLY VALUED",
+  "quality_color": "#f0b429",
+  "quality_tone": "amber",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "FAIR",
+  "quality_note": "'Micron Technology, Inc., including its consolidated subsidiaries, is an industry leader in innovative memory and storage solutions.' 'We have experienced volatility in average selling prices for our semiconductor memory and storage products which may adversely affect our business.' 'The semiconductor memory and storage markets are highly competitive.' (FY2017 10-K); DURABLE: no Micron 10-K calls its own business cyclical (CYCLICAL needs the company's 'our business is cyclical', as BKR, CAT and NVDA said; the F and AVGO reading of industry words), so the kind is DURABLE, the label only; the 10-K names the cloud only among the markets Micron sells into ('Increasingly our SSDs are being utilized in large-scale cloud environments.'), its own demand and not a substitute for its products (the NVDA reading), and no other theme in taxonomy_eras.json is scoped to a memory maker, so the watch list is empty. durable franchise (obsolescence risk 2/5); price fair; Ratio B 0.33x; +132% to EPP floor; model-vs-market gap +1.56; conservative 2yr +75%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.33,
+  "ratio_b_fmt": "0.33x",
+  "epp": 17.64,
+  "epp_gap_pct": 131.6,
+  "epp_adj": -0.2,
+  "proxy_composite": 3.2,
+  "sca": 0.155,
+  "adj_composite": 3.155,
+  "market_composite": 1.6,
+  "adj_gap": 1.56,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 75.4,
+  "scenarios": {
+   "BEAR": {
+    "eps": 4.17,
+    "pe": 4.1,
+    "price": 17.1,
+    "desc": "EPS -2.8%/yr (worst year FY10-FY17 ex-FY11 ex-FY12 ex-FY13 ex-FY16, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 10.5,
+    "pe": 7.0,
+    "price": 73.5,
+    "desc": "EPS +54.3%/yr (Q1 FY18 guide YoY + margin + buyback); P/E at its 8.1-yr ex-FY08 ex-FY09 ex-FY11 ex-FY12 ex-FY13 ex-FY16 median"
+   },
+   "BULL": {
+    "eps": 10.5,
+    "pe": 10.7,
+    "price": 112.35,
+    "desc": "EPS +54.3%/yr (FY10-FY17 ex-FY11 ex-FY12 ex-FY13 ex-FY16 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 10.5,
+    "pe": 12.8,
+    "price": 134.4,
+    "desc": "EPS +54.3%/yr (best 2-yr run FY10-FY17 ex-FY11 ex-FY12 ex-FY13 ex-FY16, at least BULL); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.33,
+   "epp_gap_pct": 131.6,
+   "adj_gap": 1.56,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 75.4,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.21,
+   "epp_gap_pct": 131.6,
+   "adj_gap": 1.83,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 75.4,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 0.75,
+   "epp_gap_pct": 131.6,
+   "adj_gap": 1.08,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 75.4,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.31,
+   "epp_gap_pct": 131.6,
+   "adj_gap": 1.59,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 75.4,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.36,
+   "epp_gap_pct": 131.6,
+   "adj_gap": 1.53,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 75.4,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.33,
+   "epp_gap_pct": 131.6,
+   "adj_gap": 1.85,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 75.4,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.33,
+   "epp_gap_pct": 32.3,
+   "adj_gap": 1.76,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 75.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.33,
+   "epp_gap_pct": 131.6,
+   "adj_gap": 1.65,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 75.4,
+   "price_state": "FAIR"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP",
+  "FAIR"
+ ],
+ "summary": "MU (retrospective, 2017-10-27) ◉ BUY — Ratio B 0.33x (58.1% downside to Bear $17.10 / +175.0% upside to Bull $112.35) | Adj composite 3.16 vs market 1.60: gap +1.56 [UNDERVALUED] | +132% above the EPP floor $17.64 (4x FY18E $4.41) | Conservative 2-yr case: +75.4% total (+37.7%/yr) | At 9.3x FY18E the 15% hurdle price $54.02 sits at or below the BASE case; revenue +90.8% YoY in Q4 FY17, forward revenues +53.7-63.7% (Q1 FY18 revenue guide (Q4 FY17 guidance slide (8-K ex.99.2))); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "MU34",
+   "published": "2010-10-26",
+   "filed": "accepted 2010-10-26 13:57 ET (during the session)",
+   "title": "Micron FY2010 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312510000174/q4fy2010.htm",
+   "supports": "history FY2006-FY2010 (selected data, statements of operations), segments, Items 1, 1A and 5"
+  },
+  {
+   "id": "MU35",
+   "published": "2011-10-25",
+   "filed": "accepted 2011-10-25 15:34 ET (during the session)",
+   "title": "Micron FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312511000189/mu-912011x10k.htm",
+   "supports": "history FY2007-FY2011 (selected data, statements of operations), segments, Items 1, 1A and 5"
+  },
+  {
+   "id": "MU36",
+   "published": "2012-10-31",
+   "filed": "accepted 2012-10-29 16:49 ET (after the 16:00 ET close)",
+   "title": "Micron FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312512000156/a2012q4.htm",
+   "supports": "history FY2008-FY2012 (selected data, statements of operations), segments, Items 1, 1A and 5"
+  },
+  {
+   "id": "MU37",
+   "published": "2013-10-29",
+   "filed": "accepted 2013-10-28 16:39 ET (after the 16:00 ET close)",
+   "title": "Micron FY2013 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312513000228/a2013q4.htm",
+   "supports": "history FY2009-FY2013 (selected data, statements of operations), segments, Items 1, 1A and 5"
+  },
+  {
+   "id": "MU64",
+   "published": "2014-10-28",
+   "filed": "accepted 2014-10-27 16:21 ET (after the 16:00 ET close)",
+   "title": "Micron FY2014 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312514000195/a2014q4.htm",
+   "supports": "history FY2010-FY2014 (selected data, statements of operations), segments, Items 1, 1A and 5"
+  },
+  {
+   "id": "MU65",
+   "published": "2015-10-27",
+   "filed": "accepted 2015-10-27 15:37 ET (during the session)",
+   "title": "Micron FY2015 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312515000112/a2015q4.htm",
+   "supports": "history FY2011-FY2015 (selected data, statements of operations), segments, Items 1, 1A and 5"
+  },
+  {
+   "id": "MU66",
+   "published": "2016-10-28",
+   "filed": "accepted 2016-10-28 13:49 ET (during the session)",
+   "title": "Micron FY2016 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312516000269/a2016q4.htm",
+   "supports": "history FY2012-FY2016 (selected data, statements of operations), segments, Items 1, 1A and 5"
+  },
+  {
+   "id": "MU67",
+   "published": "2017-10-26",
+   "filed": "accepted 2017-10-26 12:51 ET (during the session)",
+   "title": "Micron FY2017 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312517000131/a2017q4.htm",
+   "supports": "history FY2013-FY2017 (selected data, statements of operations), segments, Items 1, 1A and 5"
+  },
+  {
+   "id": "MU83",
+   "published": "2017-09-27",
+   "filed": "accepted 2017-09-26 16:00 ET (after the 16:00 ET close)",
+   "title": "Micron Q4 FY17 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312517000106/a2017q4exhibit991-pressrel.htm",
+   "supports": "Q4 FY17 net sales, gross margin, SG&A, R&D, operating income, diluted EPS and shares against the year-ago quarter; inventories, cash and debt"
+  },
+  {
+   "id": "MU82",
+   "published": "2017-06-30",
+   "filed": "accepted 2017-06-29 16:01 ET (after the 16:00 ET close)",
+   "title": "Micron Q3 FY17 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312517000080/a2017q3exhibit991-pressrel.htm",
+   "supports": "Q3 FY17 net sales, gross margin, SG&A, R&D, operating income, diluted EPS and shares against the year-ago quarter; inventories, cash and debt"
+  },
+  {
+   "id": "MU103",
+   "published": "2017-09-27",
+   "filed": "accepted 2017-09-26 16:00 ET (after the 16:00 ET close)",
+   "title": "Micron Q4 FY17 guidance slide (8-K ex.99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312517000106/a2017q4exhibit992-slides.htm",
+   "supports": "Q1 FY18 guidance"
+  },
+  {
+   "id": "MU80",
+   "published": "2016-12-22",
+   "filed": "accepted 2016-12-21 16:00 ET (after the 16:00 ET close)",
+   "title": "Micron Q1 FY17 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312516000306/a2017q1exhibit991-pressrel.htm",
+   "supports": "Q1 FY17 net sales, gross margin, SG&A, R&D, operating income, diluted EPS and shares against the year-ago quarter; inventories, cash and debt"
+  },
+  {
+   "id": "MU30",
+   "published": "2009-12-18",
+   "filed": "accepted 2009-12-18 10:01 ET (during the session)",
+   "title": "Micron 8-K of 2009-12-18 (Item 3.01, transfer of listing)",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312509000140/form8kmarketchange.htm",
+   "supports": "the move from the NYSE to the NASDAQ Global Select Market"
+  },
+  {
+   "id": "Y0",
+   "published": "2017-10-27",
+   "title": "Yahoo Finance daily prices, MU and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/MU/history",
+   "supports": "close $40.85 as traded on AS_OF, 52-week range, realized vol, beta, the 8.1-yr ex-FY08 ex-FY09 ex-FY11 ex-FY12 ex-FY13 ex-FY16 P/E distribution from 2009-09-04"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-18"
+}

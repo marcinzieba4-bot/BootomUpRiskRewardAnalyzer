@@ -1,0 +1,149 @@
+
+════════════════════════════════════════════════════════════════════════
+  CTVA  ·  Corteva, Inc.  ·  $76.68  ·  RETROSPECTIVE as of 2026-08-14
+  Signal: ✕ AVOID   Ratio B: 3.04x   Adj gap: -1.59  [OVERVALUED]
+  Point-in-time: 11 sources, latest published 2026-08-14; latest print Q2 2026 (Jul 30)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2026E net sales, USD bn  →  FY2028E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2026E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Seed                      $     9.8  $   9.8  $  11.6      +0.0      +1.8
+    +3.7% net sales in FY25
+  Crop Protection           $     7.4  $   7.4  $   8.8      +0.0      +1.4
+    +1.9% net sales in FY25
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    17.2  $  17.2  $  20.4      +0.0      +3.2
+  FY2026E = FY25 $17.40B × (1 − 1.2%: no FY26 net sales guide in numbers, Q2 2026 net sales as reported, applied to the year (no FY26 net sales guide)); split pro rata to FY25 segment net sales (FY2025 10-K)
+  Q2 2026 (Jul 30): net sales $6.38B -1.2%; organic: Seed +0%, Crop Protection -6%; price +1%;
+  gross margin 57.39% (+280.7bp); pre-tax margin 25.47% (-246.9bp); EPS $1.81 vs $2.02
+  Activity: net sales $6,379M vs $6,456M; organic -2% (price +1%, volume -3%, currency +1%); by segment: Seed $4,532M vs $4,537M, organic +0%; Crop Protection $1,847M vs $1,919M, organic -6%; cost of goods sold $2,718M vs $2,932M; income from continuing operations before income taxes $1,625M vs $1,804M; EPS GAAP, diluted from continuing operations, $1.81 against $2.02 a year earlier
+  FY26: no net sales guide in numbers (BASE takes Q2 2026 net sales growth as reported); the Q2 2026 release guides Operating EBITDA $4.10-4.30B; Operating EPS $3.60-3.80 (non-GAAP, display only: the history is GAAP)
+
+  FY2026E EPS check:  $17.2B × 9.7% pre-tax × (1−28.7%) ÷ 0.670B  =  $1.78  (FY2026E: no reported (GAAP) EPS guide, FY25's $1.75 stands)
+  FY2028E BEAR check: $17.2B × 9.7% ÷ 0.652B  =  $1.83  (scenario $0.81)
+  FY2028E BULL check: $20.4B × 10.1% ÷ 0.652B  =  $2.25  (scenario $2.21)
+  Every 1pp of pre-tax margin ≈ $0.18 EPS ≈ $7/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Seed organic sales growth           -4.0%   ≥-1.0%    ≥3.0%    ≥6.0%     +0.0%  ◦ BASE  ██░░
+  Crop Protection organic growth      -4.0%    ≥1.0%    ≥6.0%   ≥11.0%     -6.0%  ⚠ BEAR  █░░░
+  Price (local price & mix)           -1.0%    ≥0.0%    ≥2.0%    ≥3.0%     +1.0%  ◦ BASE  ██░░
+  Gross margin change               -70.0bp  ≥210.0bp  ≥490.0bp  ≥770.0bp  +280.7bp  ◦ BASE  ██░░
+  Pre-tax margin change             -440.0bp  ≥130.0bp  ≥700.0bp  ≥4540.0bp  -246.9bp  ⚠ BEAR  █░░░
+  Disruption theme: none in scope    +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.65 / 4.00
+  Market composite:   3.08 / 4.00  (back-solved from $77 + 15% hurdle)
+  SCA adjustment:    -0.06  ·  EPP-distance adj -0.10  →  Adj composite 1.49  →  Gap -1.59  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY25 net sales +2.9%, Seed +3.7%, Crop Protection +1.9%; Q2 gross margin 57.39% (+281bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 43.8x FY26E vs a 37.3x 6.6-yr ex-FY19 median (76th percentile of its own range)  (-0.43 × 25%  =  -0.107)
+    -  Growth vs own history: no FY26 net sales guide in numbers, Q2 2026 net sales as reported -1.2% vs a 2.7% 7-yr median  (-0.39 × 20%  =  -0.078)
+    +  Cash and marketable securities $2.37B, FY25 free cash flow $2.81B, dividend $0.72 a year, $1,071M of common stock repurchased and $475M of dividends paid in FY25  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Seed organic sales growth            +0.0%     -4.0%   -4.0%  Farmers trade down or plant less
+  Crop Protection organic growth       -6.0%     -4.0%   +2.0%  The channel destocks; generics take s…
+  Price (local price & mix)            +1.0%     -1.0%   -2.0%  Pricing gives way to competition
+  Gross margin change               +280.7bp   -70.0bp  -350.7bp  Input costs outrun price and mix
+  Pre-tax margin change             -246.9bp  -440.0bp  -193.1bp  Charges and fixed costs as sales fall
+  Disruption theme: none in scope     +2.0/4    +1.0/4  -1.0/4  No live disruption theme covers seed …
+
+  Bear composite:  1.00  →  Bear scenario price: ~$32  (model)  /  $15 (defined)
+  Bear probability (proxy model):  40.7%
+
+  KEY TRIGGER: Seed organic growth went from +9.0% (Q1 2026) to +0.0% (Q2 2026);
+  the bear case needs farm demand to fall far enough that Crop Protection (-6.0% now)
+  and price (+1.0% now) give way as well. Planted area, farm income and the channel drive sales, by the company's own account;
+  the bear needs them to fall, not one quarter's timing.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $1.75  (FY2026E: no reported (GAAP) EPS guide, FY25's $1.75 stands)
+  Min viable P/E at panic:          31x  [median of calendar-year P/E lows: 2020 21.2x, 2021 15.7x, 2022 27.4x, 2023 33.5x, 2024 36.4x, 2025 31.7x, 2026 38.7x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $54/share
+  Current $77 vs Updated EPP $54:  +41%  ⚠ far above floor — large drawdown room
+  Bear $15 vs Updated EPP $54:  -72%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Seed organic sales growth                   -1.0       -1.0   BASE floor (vs +0 now)
+  Crop Protection organic growth               1.0       +7.0   BASE floor (vs -6 now)
+  Price (local price & mix)                    0.0       -1.0   BASE floor (vs +1 now)
+  Gross margin change                        210.0      -70.7   BASE floor (vs +281 now)
+  Pre-tax margin change                      130.0     +376.9   BASE floor (vs -247 now)
+  Disruption theme: none in scope              2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $1.75 × (1+0.0%)² = $1.75
+  At 37x P/E (conservative):  $65/share
+  + Cumul. dividends (2yr):  +$1.48/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $65  (▼12 from $77)
+  Conservative total return:  -14% over 2yr  = -7%/yr
+
+  0.0% EPS growth is what is left once the premium multiple (43.8x)
+  mean-reverts to 37x. Breakeven at 37x needs FY2028E EPS of $2.03,
+  i.e. 7.8%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $60.54  –  $90.97  (at 53th pct of range)
+  Annual dividend:      $0.72/share  (yield 0.9%)
+  Realized vol (1yr):   27% annualized
+  Beta vs broad market: 0.14
+  1-sigma range (1yr):  $56  –  $98  ($77 ± 27%)
+  2-sigma range (1yr):  $35  –  $119
+  ────────────────────────────────────────────────────────────
+  Bear $15 requires:  ~2.9σ price move  (unusual — requires fundamental break)
+  A seed and crop protection company with a 0.1 beta: the stock is +26% off its October
+  low while Seed organic growth went from +9.0% (Q1 2026) to +0.0% (Q2 2026).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        0.81  18.8x  $     15    40.7%      4.2%   +36.5pp  EPS -32.0%/yr (worst year FY20-FY25, capped at 0%); P/E to its 10th pct
+  BASE        1.76  37.3x  $     66    44.2%     14.8%   +29.4pp  EPS +0.2%/yr (Q2 net sales + margin + buyback); P/E at its 6.6-yr ex-FY19 median
+  BULL        2.21  43.7x  $     97    12.7%     51.7%   -39.0pp  EPS +12.3%/yr (FY20-FY25 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL       2.96  46.9x  $    139     2.4%     29.3%   -26.9pp  EPS +30.1%/yr (best 2-yr run FY20-FY25, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $51  /  Market EV: $101  /  Current: $77
+  Conservative EV (2yr, ④): $65 + $1.48 divs = $66 total value
+  Downside (→ Bear $15): 80.4%   Upside (→ Bull $97): 26.5%   Ratio B 3.04x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $77 the market needs $101 in two years —
+  above the BULL case. That is a market composite of 3.08 against a model
+  read of 1.49: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       3.04x     +41%    -1.59  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     1.93x     +41%    -1.27  OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)    11.78x     +41%    -1.88  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          2.72x     +41%    -1.52  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                          3.56x     +41%    -1.67  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             3.04x     +41%    -1.29  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 3.04x     +29%    -1.49  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    3.04x     +41%    -1.30  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) the Q3 2026 release — the next read on Seed (+0.0% now) and Crop Protection (-6.0% now) organic growth
+  (2) Price — +1.0% in Q2 2026; gross margin +280.7bp: pricing and mix against input costs
+  (3) The FY26 guide — no net sales guide in numbers; Operating EBITDA $4.10-4.30B; Operating EPS $3.60-3.80 (non-GAAP, display only: the history is GAAP)
+  (4) Free cash flow — FY25 cash provided by (used for) operating activities $3,406M less capital expenditures $591M (FY2025 10-K)
+  (5) Capital return at 44x — $1,071M of common stock repurchased and $475M of dividends paid in FY25: management's own read of the multiple
+  ✕ AVOID  |  EPP floor $54  |  ADD below ~$56  |  TRIM above $97
+════════════════════════════════════════════════════════════════════════
+

@@ -1,0 +1,147 @@
+
+════════════════════════════════════════════════════════════════════════
+  CRM  ·  salesforce.com, inc.  ·  $161.11  ·  RETROSPECTIVE as of 2019-11-08
+  Signal: ◉ BUY   Ratio B: 0.32x   Adj gap: +0.33  [MODESTLY UNDERVALUED]
+  Point-in-time: 16 sources, latest published 2019-11-08; latest print Q2 FY20 (Aug 23)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2020E revenue, USD bn  →  FY2022E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2020E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Total revenues                $ 16.18  $16.18  $27.09    +0.00   +10.91
+    +26.0% revenue in FY19
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $ 16.18  $16.18  $27.09    +0.00   +10.91
+  FY2020E = FY19 $13.282B × (1 + 21.8%: the Q2 FY20 revenue growth (the Q3 FY20 guide is not in this fact sheet (reduced-data batch)), YoY, applied to the year (the FY20 revenue guide is not in this fact sheet (reduced-data batch))); split pro rata to FY19 total revenues (the FY2019 10-K's XBRL; the geographic split is not in this fact sheet), growth on the year before
+  Q2 FY20 (Aug 23): revenue $3.997B +21.8% YoY (+7.0% QoQ); subscription and support +21.8%; deferred revenue $7.142B +21.4%; R&D + M&S + G&A +21.1%;
+  gross margin 75.81% (+168.3bp); operating margin 1.45% (-205.4bp); EPS $0.11 vs $0.39
+  Revenue: revenues $3,997.0M vs $3,281.0M a year earlier, $3,737.0M the quarter before; subscription and support is not in the company facts (professional services is tagged only in segment detail), so total revenues stand in for its signal; unearned revenue $7,142.0M (2019-07-31) vs $5,883.0M a year earlier, current only (the balance sheets' XBRL); GAAP diluted EPS $0.11 vs $0.39 (the 10-Q's XBRL); diluted shares 795.0M; reduced-data print: the 10-Q's XBRL figures; salesforce.com's earnings release for the quarter is not in this fact sheet; operating expenses include a separately stated $166.0M line that the company facts do not name (the residual of operating expenses less R&D, marketing and sales and G&A), left out of the opex signal
+  Q3 FY20 outlook: Q3 FY20: the revenue guide is not in this fact sheet (reduced-data batch); the latest quarter's revenue growth stands in (the UNP rule); FY20 guide: the FY20 EPS range is not in this fact sheet (reduced-data batch); the FY20 revenue range is not in this fact sheet (reduced-data batch); no margin guide in this fact sheet
+
+  FY2020E EPS check:  $16.180B × 7.4% pre-tax × (1−-12.9%) ÷ 0.795B  =  $1.70  (FY2020E: the EPS guide is not in this fact sheet (reduced-data batch), FY19's $1.43 stands)
+  FY2022E BEAR check: $16.180B × 7.4% ÷ 0.868B  =  $1.56  (scenario $0.80)
+  FY2022E BULL check: $27.090B × 7.8% ÷ 0.868B  =  $2.75  (scenario $2.33)
+  Every 1pp of pre-tax margin ≈ $0.230 EPS ≈ $36.88/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Subscription and support growth       +40.0%    ≥61.0%    ≥82.0%   ≥328.0%    +21.8%  ⚠ BEAR  █░░░
+  Deferred revenue growth               +43.0%    ≥68.0%    ≥93.0%   ≥169.0%    +21.4%  ⚠ BEAR  █░░░
+  Gross margin change                 -740.0bp  ≥-330.0bp   ≥70.0bp  ≥3600.0bp  +168.3bp  ▲ BULL  ███░
+  Opex growth less revenue             +49.0pp   ≤12.0pp  ≤-24.0pp  ≤-305.0pp    -0.7pp  ◦ BASE  ██░░
+  Operating margin change             -2800.0bp  ≥-720.0bp  ≥1360.0bp  ≥48650.0bp  -205.4bp  ◦ BASE  ██░░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.75 / 4.00
+  Market composite:   1.50 / 4.00  (back-solved from $161.11 + 15% hurdle)
+  SCA adjustment:    +0.08  ·  EPP-distance adj +0.00  →  Adj composite 1.83  →  Gap +0.33  [MODESTLY UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY19 revenues +26.0%, subscription and support not in the company facts, gross margin 74.0%; Q2 unearned revenue +21.4% YoY  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 112.7x FY20E vs a 160.5x 10-yr ex-FY12 ex-FY13 ex-FY14 ex-FY15 ex-FY16 median (37th percentile of its own range)  (+0.22 × 25%  =  +0.055)
+    -  Growth vs own history: Q2 FY20 revenue growth (the Q3 FY20 guide is not in this fact sheet (reduced-data batch)) +21.8% vs a 26.9% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  Cash, cash equivalents and marketable securities $6.042B (Q2 FY20), debt $2,996.0M, current and noncurrent (us-gaap:LongTermDebt, the balance sheet's XBRL), FY19 free cash flow $2.803B (net cash provided by operating activities $3,398.0M less capital expenditures $595.0M (XBRL)), no dividend  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Subscription and support growth       +21.8%    +40.0%  +18.2%  New subscriptions and renewals slow: …
+  Deferred revenue growth               +21.4%    +43.0%  +21.6%  Billings slow ahead of revenue: the n…
+  Gross margin change                 +168.3bp  -740.0bp  -908.3bp  Data-center and service costs outgrow…
+  Opex growth less revenue              -0.7pp   +49.0pp  +49.7pp  Marketing and sales, R&D and G&A do n…
+  Operating margin change             -205.4bp  -2800.0bp  -2594.6bp  Operating leverage works in reverse
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$157.14  (model)  /  $76.40 (defined)
+  Bear probability (proxy model):  33.0%
+
+  KEY TRIGGER: revenue went from +24.3% (Q1 FY20) to +21.8% YoY (Q2 FY20), +7.0% on the quarter before;
+  the bear case needs deferred revenue (+21.4% YoY now) and the operating
+  margin (-205.4bp now) giving way. A subscription slowdown shows up in deferred revenue first, then in
+  subscription and support revenue a few quarters later.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $1.43  (FY2020E: the EPS guide is not in this fact sheet (reduced-data batch), FY19's $1.43 stands)
+  Min viable P/E at panic:          100x  [median of calendar-year P/E lows: 2009 99.3x, 2010 100.9x, 2011 263.8x, 2016 117.5x, 2017 153.3x, 2018 72.7x, 2019 91.2x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $143.00/share
+  Current $161.11 vs Updated EPP $143.00:  +13%  moderate distance to floor
+  Bear $76.40 vs Updated EPP $143.00:  -47%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Subscription and support growth               61.0      +39.2   BASE floor (vs +22 now)
+  Deferred revenue growth                       68.0      +46.6   BASE floor (vs +21 now)
+  Gross margin change                         -330.0     -498.3   BASE floor (vs +168 now)
+  Opex growth less revenue                      12.0      +12.7   BASE floor (vs -1 now)
+  Operating margin change                     -720.0     -514.6   BASE floor (vs -205 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $1.43 × (1+15.3%)² = $1.90
+  At 160x P/E (conservative):  $304.21/share
+  + Cumul. dividends (2yr):  +$0.00/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $304.21  (▲143.10 from $161.11)
+  Conservative total return:  +89% over 2yr  = +44%/yr
+
+  At 112.7x the multiple is already near its 160x median, so the conservative
+  case is a growth question: breakeven at 160x needs FY2022E EPS of $1.01,
+  i.e. -16.1%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $113.60  –  $167.56  (at 88th pct of range)
+  Annual dividend:      $0.00/share  (yield 0.0%)
+  Realized vol:         32% annualized (1-yr daily log returns)
+  Beta vs broad market: 1.48
+  1-sigma range (1yr):  $109.07  –  $213.15  ($161.11 ± 32%)
+  2-sigma range (1yr):  $57.03  –  $265.19
+  ────────────────────────────────────────────────────────────
+  Bear $76.40 requires:  ~1.6σ price move  (unusual — requires fundamental break)
+  A subscription software company priced on its growth: the stock is +34% off its November
+  low (52 weeks) while revenue went from +24.3% (Q1 FY20) to +21.8% YoY (Q2 FY20), +7.0% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        0.80   95.5x  $  76.40    33.0%     53.1%   -20.1pp  EPS -25.4%/yr (worst year FY10-FY19 ex-FY12 ex-FY13 ex-FY14 ex-FY15 ex-FY16, capped at 0%); P/E to its 10th pct
+  BASE        1.97  160.5x  $ 316.19    50.0%     35.0%   +15.0pp  EPS +17.3%/yr (Q2 revenue YoY + margin + buyback); P/E at its 10-yr ex-FY12 ex-FY13 ex-FY14 ex-FY15 ex-FY16 median
+  BULL        2.33  183.9x  $ 428.49    14.3%     10.0%    +4.3pp  EPS +27.8%/yr (FY10-FY19 ex-FY12 ex-FY13 ex-FY14 ex-FY15 ex-FY16 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL       4.45  222.2x  $ 988.79     2.7%      1.9%    +0.8pp  EPS +76.3%/yr (best 2-yr run FY10-FY19 ex-FY12 ex-FY13 ex-FY14 ex-FY15 ex-FY16, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $271.43  /  Market EV: $212.90  /  Current: $161.11
+  Conservative EV (2yr, ④): $304.21 + $0.00 divs = $304.21 total value
+  Downside (→ Bear $76.40): 52.6%   Upside (→ Bull $428.49): 166.0%   Ratio B 0.32x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $161.11 the market needs $213.07 in two years —
+  at or below the BASE case. That is a market composite of 1.50 against a model
+  read of 1.83: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.32x     +13%    +0.33  MODESTLY UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.21x     +13%    +0.46  MODESTLY UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.43x     +13%    +0.01  FAIRLY VALUED / BUY
+  Scenario EPS +1.5pp/yr                          0.29x     +13%    +0.36  MODESTLY UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.34x     +13%    +0.30  MODESTLY UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.32x     +13%    +0.63  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.32x      +9%    +0.33  MODESTLY UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.32x     +13%    +0.41  MODESTLY UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 FY20 10-Q (November) — revenue against the Q2 FY20 revenue growth (the Q3 FY20 guide is not in this fact sheet (reduced-data batch)): +21.8% YoY
+  (2) Deferred revenue — +21.4% YoY in Q2 FY20: billings run ahead of revenue, so they slow first
+  (3) The FY20 EPS guide — not in this fact sheet (reduced-data batch)
+  (4) Operating expenses — R&D, marketing and sales and G&A +21.1% against revenue +21.8% in Q2 FY20 (-0.7pp): the cost of growth
+  (5) Capital structure at 113x — no share repurchase program (no repurchase of common stock in the cash flow statements' XBRL)
+  ◉ BUY  |  EPP floor $143.00  |  ADD below ~$268.76  |  TRIM above $428.49
+════════════════════════════════════════════════════════════════════════
+

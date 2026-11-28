@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  KMI  ·  Kinder Morgan, Inc.  ·  $25.29  ·  RETROSPECTIVE as of 2025-04-04
+  Signal: ◎ ACCUMULATE   Ratio B: 0.84x   Adj gap: -0.59  [OVERVALUED]
+  Point-in-time: 9 sources, latest published 2025-04-04; latest print Q4 2024 (Jan 22)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2025E revenues, USD bn  →  FY2027E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2025E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Natural Gas Pipelines     $     8.8  $   8.8  $   8.9      +0.0      +0.1
+    -2.4% revenues in FY24
+  CO2                       $     1.2  $   1.2  $   1.2      +0.0      +0.0
+    -0.2% revenues in FY24
+  Terminals                 $     2.0  $   2.0  $   2.0      +0.0      +0.0
+    +5.3% revenues in FY24
+  Products Pipelines        $     2.9  $   2.9  $   2.9      +0.0      +0.0
+    -3.6% revenues in FY24
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    14.9  $  14.9  $  15.0      +0.0      +0.1
+  FY2025E = FY24 $15.10B × (1 − 1.3%: no FY25 revenue guide in numbers, Q4 2024 revenues as reported, applied to the year (no FY25 revenue guide)); split pro rata to FY24 segment revenues from external customers (FY2024 10-K)
+  Q4 2024 (Jan 22): revenues $3.99B -1.3%; segment EBDA +2.5%, Natural Gas Pipelines +2.9%;
+  operating margin 27.79% (+52.0bp); pre-tax margin 22.35% (+194.0bp); EPS $0.30 vs $0.27
+  Activity: revenues $3,987M vs $4,038M; segment EBDA: the release's reconciliation of segment EBDA (GAAP; the total is the sum of the four segments' rows): total $2,133M vs $2,080M, Natural Gas Pipelines $1,392M vs $1,353M; operating income $1,108M vs $1,101M; income before income taxes $891M vs $824M; DCF per common share $0.57 vs $0.52; adjusted earnings per common share $0.32 vs $0.28 (non-GAAP, display only); EPS GAAP, diluted per Class P common share, $0.30 against $0.27 a year earlier
+  FY25: no revenue or margin guide in numbers (BASE takes Q4 2024 revenue growth as reported); GAAP EPS $1.26 from the Q4 2024 release's earnings guide; the Q4 2024 release's "for 2025, KMI budgeted net income attributable to KMI of $2.8 billion, up 8% versus 2024 and Adjusted EPS of $1.27, up 10% from 2024" (the GAAP net income figure is the guide; the adjusted EPS and EBITDA figures and the dividend outlook are display only)
+
+  FY2025E EPS check:  $14.9B × 22.6% pre-tax × (1−20.2%) ÷ 2.222B  =  $1.21  (FY2025E: GAAP earnings guide, the Q4 2024 release's net income attributable to KMI of $2.8 billion / 2,222M diluted shares = $1.26)
+  FY2027E BEAR check: $14.9B × 22.6% ÷ 2.228B  =  $1.20  (scenario $1.13)
+  FY2027E BULL check: $15.0B × 23.0% ÷ 2.228B  =  $1.23  (scenario $1.52)
+  Every 1pp of pre-tax margin ≈ $0.05 EPS ≈ $1/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Segment EBDA growth                -23.0%   ≥-9.0%    ≥5.0%   ≥18.0%     +2.5%  ◦ BASE  ██░░
+  Natural Gas Pipelines EBDA growth   -13.0%   ≥-7.0%   ≥-1.0%    ≥5.0%     +2.9%  ▲ BULL  ███░
+  Revenue growth                     -89.0%  ≥-41.0%    ≥7.0%   ≥26.0%     -1.3%  ◦ BASE  ██░░
+  Operating margin change           -1340.0bp  ≥-390.0bp  ≥550.0bp  ≥4000.0bp   +52.0bp  ◦ BASE  ██░░
+  Pre-tax margin change             -2510.0bp  ≥-960.0bp  ≥590.0bp  ≥3930.0bp  +194.0bp  ◦ BASE  ██░░
+  Energy transition: oil reserves and hydrocarbon demand   +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.20 / 4.00
+  Market composite:   2.92 / 4.00  (back-solved from $25 + 15% hurdle)
+  SCA adjustment:    +0.13  ·  EPP-distance adj +0.00  →  Adj composite 2.33  →  Gap -0.59  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY24 revenues -1.5%; Q4 operating margin 27.79% (+52bp)  (+0.40 × 20%  =  +0.080)
+    ·  Multiple: 20.1x FY25E vs a 20.1x 7.3-yr ex-FY15 ex-FY16 ex-FY17 ex-FY20 median (50th percentile of its own range)  (+0.00 × 25%  =  +0.000)
+    +  Growth vs own history: no FY25 revenue guide in numbers, Q4 2024 revenues as reported -1.3% vs a -1.5% 9-yr median  (+0.02 × 20%  =  +0.004)
+    +  FY24 free cash flow $3.01B (consolidated), dividend $1.15 a year, $2,557M of cash dividends on common shares paid in FY24, $7M of common shares repurchased  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Segment EBDA growth                  +2.5%    -23.0%  -25.5%  Volumes and rates fall across the seg…
+  Natural Gas Pipelines EBDA growth     +2.9%    -13.0%  -15.9%  Gas transport and storage contracts r…
+  Revenue growth                       -1.3%    -89.0%  -87.7%  Commodity sales and volumes fall
+  Operating margin change            +52.0bp  -1340.0bp  -1392.0bp  Charges and costs outrun revenues
+  Pre-tax margin change             +194.0bp  -2510.0bp  -2704.0bp  Interest and charges as earnings fall
+  Energy transition: oil reserves and hydrocarbon demand    +2.0/4    +1.0/4  -1.0/4  Greenhouse gas rules cut hydrocarbon …
+
+  Bear composite:  1.00  →  Bear scenario price: ~$21  (model)  /  $18 (defined)
+  Bear probability (proxy model):  14.7%
+
+  KEY TRIGGER: Segment EBDA growth went from +5.1% (Q3 2024) to +2.5% (Q4 2024);
+  the bear case needs Natural Gas Pipelines (+2.9% now) and revenues
+  (-1.3% now) to give way as well. Contracted transport and storage fees drive most of the cash, by the company's own account;
+  the bear needs volumes and rates to fall, not one quarter's commodity prices.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $1.26  (FY2025E: GAAP earnings guide, the Q4 2024 release's net income attributable to KMI of $2.8 billion / 2,222M diluted shares = $1.26)
+  Min viable P/E at panic:          16x  [median of calendar-year P/E lows: 2018 22.3x, 2019 16.4x, 2021 17.4x, 2022 14.3x, 2023 15.1x, 2024 14.2x, 2025 20.1x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $20/share
+  Current $25 vs Updated EPP $20:  +25%  moderate distance to floor
+  Bear $18 vs Updated EPP $20:  -11%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Segment EBDA growth                         -9.0      -11.5   BASE floor (vs +2 now)
+  Natural Gas Pipelines EBDA growth            -7.0       -9.9   BASE floor (vs +3 now)
+  Revenue growth                             -41.0      -39.7   BASE floor (vs -1 now)
+  Operating margin change                   -390.0     -442.0   BASE floor (vs +52 now)
+  Pre-tax margin change                     -960.0    -1154.0   BASE floor (vs +194 now)
+  Energy transition: oil reserves and hydrocarbon demand             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $1.26 × (1+0.0%)² = $1.26
+  At 20x P/E (conservative):  $25/share
+  + Cumul. dividends (2yr):  +$2.37/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $25  (▼0 from $25)
+  Conservative total return:  +9% over 2yr  = +5%/yr
+
+  At 20.1x the multiple is already near its 20x median, so the conservative
+  case is a growth question: breakeven at 20x needs FY2027E EPS of $1.15,
+  i.e. -4.6%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $17.61  –  $31.48  (at 55th pct of range)
+  Annual dividend:      $1.15/share  (yield 4.5%)
+  Realized vol (1yr):   25% annualized
+  Beta vs broad market: 0.76
+  1-sigma range (1yr):  $19  –  $32  ($25 ± 25%)
+  2-sigma range (1yr):  $13  –  $38
+  ────────────────────────────────────────────────────────────
+  Bear $18 requires:  ~1.2σ price move  (within normal vol range)
+  A pipeline transportation and energy storage company with a 0.8 beta: the stock is +43% off its April
+  low while Segment EBDA growth went from +5.1% (Q3 2024) to +2.5% (Q4 2024).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        1.13  15.6x  $     18    14.7%      4.8%    +9.9pp  EPS -5.4%/yr (worst year FY18-FY24 ex-FY20, capped at 0%); P/E to its 10th pct
+  BASE        1.22  20.1x  $     25    51.3%     16.8%   +34.4pp  EPS -1.4%/yr (Q4 revenues + margin + buyback); P/E at its 7.3-yr ex-FY15 ex-FY16 ex-FY17 ex-FY20 median
+  BULL        1.52  22.2x  $     34    28.6%     58.8%   -30.2pp  EPS +10.0%/yr (FY18-FY24 ex-FY20 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL       1.71  25.3x  $     43     5.4%     19.6%   -14.2pp  EPS +16.6%/yr (best 2-yr run FY18-FY24 ex-FY20, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $28  /  Market EV: $33  /  Current: $25
+  Conservative EV (2yr, ④): $25 + $2.37 divs = $28 total value
+  Downside (→ Bear $18): 28.8%   Upside (→ Bull $34): 34.4%   Ratio B 0.84x  →  ◎ ACCUMULATE
+
+  To earn the 15%/yr hurdle from $25 the market needs $33 in two years —
+  between the BASE and BULL cases. That is a market composite of 2.92 against a model
+  read of 2.33: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.84x     +25%    -0.59  OVERVALUED / ACCUMULATE
+  Multiples one band richer (p25/p75/p90/max)     0.57x     +25%    -0.14  FAIRLY VALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     1.45x     +25%    -1.08  OVERVALUED / WATCHLIST
+  Scenario EPS +1.5pp/yr                          0.75x     +25%    -0.42  MODESTLY OVERVALUED / ACCUMULATE
+  Scenario EPS -1.5pp/yr                          1.08x     +25%    -0.73  OVERVALUED / ACCUMULATE
+  Structural read +0.30 (bullish SCA)             0.84x     +25%    -0.29  MODESTLY OVERVALUED / ACCUMULATE
+  EPP P/E +3 turns (softer floor)                 0.84x      +6%    -0.59  OVERVALUED / ACCUMULATE
+  Hurdle 10%/yr instead of 15%                    0.84x     +25%    -0.19  FAIRLY VALUED / ACCUMULATE
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) the Q1 2025 release — the next read on segment EBDA (+2.5% now) and Natural Gas Pipelines (+2.9% now)
+  (2) Margins — operating +52.0bp and pre-tax +194.0bp in Q4 2024: charges, interest and commodity prices
+  (3) The FY25 outlook — GAAP EPS $1.26 (the Q4 2024 release's net income attributable to KMI of $2.8 billion / 2,222M diluted shares); no revenue or margin guide in numbers; "for 2025, KMI budgeted net income attributable to KMI of $2.8 billion, up 8% versus 2024 and Adjusted EPS of $1.27, up 10% from 2024" (the GAAP net income figure is the guide; the adjusted EPS and EBITDA figures and the dividend outlook are display only)
+  (4) Free cash flow — FY24 net cash provided by operating activities $5,635M less capital expenditures $2,629M (FY2024 10-K)
+  (5) Capital return at 20x — $2,557M of cash dividends on common shares paid in FY24, $7M of common shares repurchased: management's own read of the multiple
+  ◎ ACCUMULATE  |  EPP floor $20  |  ADD below ~$21  |  TRIM above $34
+════════════════════════════════════════════════════════════════════════
+

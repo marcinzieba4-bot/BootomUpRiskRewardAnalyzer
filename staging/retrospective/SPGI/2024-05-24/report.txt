@@ -1,0 +1,160 @@
+
+════════════════════════════════════════════════════════════════════════
+  SPGI  ·  S&P Global Inc.  ·  $438.24  ·  RETROSPECTIVE as of 2024-05-24
+  Signal: ✕ AVOID   Ratio B: 3.12x   Adj gap: -0.33  [MODESTLY OVERVALUED]
+  Point-in-time: 14 sources, latest published 2024-05-24; latest print Q1 2024 (Apr 25)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2024E revenue, USD bn  →  FY2026E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                      FY2024E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Market Intelligence       $     4.6  $   4.6  $   5.6      +0.0      +1.0
+    +14.8% revenue in FY23
+  Ratings                   $     3.5  $   3.5  $   4.3      +0.0      +0.8
+    +9.2% revenue in FY23
+  Commodity Insights        $     2.1  $   2.1  $   2.5      +0.0      +0.4
+    +15.5% revenue in FY23
+  Mobility                  $     1.6  $   1.6  $   1.9      +0.0      +0.3
+    +29.9% revenue in FY23
+  Indices                   $     1.5  $   1.5  $   1.8      +0.0      +0.3
+    +4.8% revenue in FY23
+  Engineering Solutions     $     0.1  $   0.1  $   0.2      +0.0      +0.1
+    -58.8% revenue in FY23
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    13.4  $  13.4  $  16.3      +0.0      +2.9
+  FY2024E = FY23 $12.50B × (1 + 7.0%: FY24 revenue guide midpoint, on FY23); split pro rata to FY23 revenue by segment (SP104)
+  Q1 2024 (Apr 25): revenue $3.49B +10.5%; Financial Services +16.0%; Education n/r; Commodity Insights +10.0%;
+  segment operating margin 41.13% (+287.5bp); diluted EPS $3.16 vs $2.47 (+27.9%)
+  Financial Services revenue $2,546.0M against $2,194.0M a year earlier (+16.0%), McGraw-Hill Education not reported, Commodity Insights $559.0M (+10.0%), as the release's segment table shows them; 'Adjusted net income for the first quarter increased 24% to $1,258 million and adjusted diluted earnings per share increased 27% to $4.01.'; Financial Services line: Ratings $1,062.0M + Market Intelligence $1,142.0M + Indices $387.0M less the royalty elimination $45.0M; McGraw-Hill Education, sold in 2013, is not reported (n/r); outside the Financial Services line and Commodity Insights: Mobility $386.0M (a year earlier $358.0M); Engineering Solutions $0.0M (a year earlier $100.0M)
+  FY24 guide (Q4 2023 release, Q1 2024 release): revenue +6-8%; EPS $10.80-11.05 (GAAP); adjusted EPS $13.85-14.10 (adjusted, excluding merger expenses and deal-related amortization: no field, amortization recurs); GAAP operating margin expansion 500-550bp (Q1 2024 release; on 32.17%, so 37.42%)
+
+  FY2024E EPS check:  $13.4B × 29.4% pre-tax × (1−21.2%) ÷ 0.314B  =  $9.88  (FY2024E EPS, guide midpoint (GAAP))
+  FY2026E BEAR check: $13.4B × 29.4% ÷ 0.325B  =  $9.54  (scenario $5.79)
+  FY2026E BULL check: $16.3B × 29.8% ÷ 0.325B  =  $11.76  (scenario $15.54)
+  Every 1pp of pre-tax margin ≈ $0.34 EPS ≈ $9/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Financial Services revenue growth    -7.0%    ≥4.0%   ≥14.0%   ≥18.0%    +16.0%  ▲ BULL  ███░
+  Education revenue growth           -16.0%   ≥-6.0%    ≥5.0%   ≥23.0%       n/r  ◦ BASE  ██░░
+  Revenue growth                      +1.0%    ≥4.0%    ≥7.0%   ≥15.0%    +10.5%  ▲ BULL  ███░
+  Diluted EPS growth                 -98.0%  ≥-43.0%   ≥13.0%   ≥53.0%    +27.9%  ▲ BULL  ███░
+  Guided operating margin step (GAAP)  -970.0bp  ≥-440.0bp  ≥90.0bp  ≥460.0bp  +525.0bp  ★ XBULL  ████
+  Generative AI: net effect on data, ratings and benchmarks   +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.80 / 4.00
+  Market composite:   2.93 / 4.00  (back-solved from $438 + 15% hurdle)
+  SCA adjustment:    -0.00  ·  EPP-distance adj -0.20  →  Adj composite 2.60  →  Gap -0.33  [MODESTLY OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY23 revenue +11.8%, Financial Services +11.2%, Education n/r; Q1 segment operating margin 41.13% (+287.5bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 40.1x FY24E vs a 27.0x 10-yr median (88th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    -  Growth vs own history: FY24 revenue guide +6-8% vs a 7.1% 9-yr median  (-0.01 × 20%  =  -0.002)
+    +  FY23 year-end cash and equivalents $1.290B, FY23 operating cash flow $3.710B, dividend $3.64 a year, repurchase of treasury shares $3,301M in 2023 (SP104)  (+0.30 × 15%  =  +0.045)
+    +  Generative AI: S&P Global builds AI into its own products and processes  (+0.20 × 10%  =  +0.020)
+    -  AI competition (FY2023 10-K): generative AI may widen access to free or inexpensive information  (-0.20 × 10%  =  -0.020)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Financial Services revenue growth    +16.0%     -7.0%  -23.0%  Debt issuance volume falls
+  Education revenue growth               n/r    -16.0%     n/r  State adoptions and school funding sh…
+  Revenue growth                      +10.5%     +1.0%   -9.5%  Issuance, adoptions and advertising f…
+  Diluted EPS growth                  +27.9%    -98.0%  -125.9%  Costs stay up while revenue falls
+  Guided operating margin step (GAAP)  +525.0bp  -970.0bp  -1495.0bp  Segment profit falls faster than revenue
+  Generative AI: net effect on data, ratings and benchmarks    +2.0/4    +1.0/4  -1.0/4  Customers take free or AI-built subst…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$197  (model)  /  $93 (defined)
+  Bear probability (proxy model):  5.2%
+
+  KEY TRIGGER: Financial Services revenue growth went from +11.6% (Q4 2023) to +16.0% (Q1 2024);
+  the bear case needs a fall in debt issuance that Education (n/r now) and
+  Commodity Insights (+10.0% now) no longer offset. The 10-K ties results to the volume of securities issued and traded in the capital
+  markets, to flows into investment products, to interest rates and to volatility in the
+  financial and commodities markets.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $10.93  (FY2024E EPS, guide midpoint (GAAP))
+  Min viable P/E at panic:          19x  [median of calendar-year P/E lows: 2014 19.7x, 2015 18.9x, 2016 10.2x, 2017 18.8x, 2018 20.6x, 2019 19.1x, 2020 19.9x, 2021 24.5x, 2022 28.1x, 2023 39.5x, 2024 37.4x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $208/share
+  Current $438 vs Updated EPP $208:  +111%  ⚠ far above floor — large drawdown room
+  Bear $93 vs Updated EPP $208:  -55%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Financial Services revenue growth             4.0      -12.0   BASE floor (vs +16 now)
+  Education revenue growth                    -6.0        n/r   BASE floor (not reported now)
+  Revenue growth                               4.0       -6.5   BASE floor (vs +10 now)
+  Diluted EPS growth                         -43.0      -70.9   BASE floor (vs +28 now)
+  Guided operating margin step (GAAP)          -440.0     -965.0   BASE floor (vs +525 now)
+  Generative AI: net effect on data, ratings and benchmarks             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $10.93 × (1+17.3%)² = $15.02
+  At 27x P/E (conservative):  $406/share
+  + Cumul. dividends (2yr):  +$7.50/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $406  (▼33 from $438)
+  Conservative total return:  -6% over 2yr  = -3%/yr
+
+  17.3% EPS growth is what is left once the premium multiple (40.1x)
+  mean-reverts to 27x. Breakeven at 27x needs FY2026E EPS of $15.95,
+  i.e. 20.8%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $340.49  –  $461.16  (at 81th pct of range)
+  Annual dividend:      $3.64/share  (yield 0.8%)
+  Realized vol (1yr):   19% annualized
+  Beta vs broad market: 0.98
+  1-sigma range (1yr):  $354  –  $523  ($438 ± 19%)
+  2-sigma range (1yr):  $269  –  $607
+  ────────────────────────────────────────────────────────────
+  Bear $93 requires:  ~4.1σ price move  (unusual — requires fundamental break)
+  An information services company (ratings, education, business information) with a 1.0 beta: the stock is +28% off its October
+  low while Financial Services revenue growth went from +11.6% (Q4 2023) to +16.0% (Q1 2024).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        5.79  16.1x  $     93     5.2%      4.8%    +0.4pp  EPS -27.2%/yr (worst year FY14-FY23, capped at 0%); P/E to its 10th pct
+  BASE       15.54  27.0x  $    420    18.0%     16.7%    +1.3pp  EPS +19.3%/yr (FY24 guide + margin + buyback); P/E at its 10-yr median
+  BULL       15.54  35.3x  $    549    62.8%     58.4%    +4.4pp  EPS +19.3%/yr (FY14-FY23 CAGR); P/E holds its 75th pct
+  XBULL      22.36  41.2x  $    921    14.0%     20.1%    -6.1pp  EPS +43.1%/yr (best 2-yr run FY14-FY23); P/E at its 90th pct
+
+  Proxy EV (2yr): $554  /  Market EV: $580  /  Current: $438
+  Conservative EV (2yr, ④): $406 + $7.50 divs = $413 total value
+  Downside (→ Bear $93): 78.8%   Upside (→ Bull $549): 25.3%   Ratio B 3.12x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $438 the market needs $580 in two years —
+  above the BULL case. That is a market composite of 2.93 against a model
+  read of 2.60: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       3.12x    +111%    -0.33  MODESTLY OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     1.52x    +111%    +0.26  MODESTLY UNDERVALUED / WATCHLIST
+  Multiples one band cheaper (p5/p25/med/p75)      infx    +111%    -0.72  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          2.70x    +111%    -0.25  MODESTLY OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                          3.71x    +111%    -0.40  MODESTLY OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             3.12x    +111%    -0.03  FAIRLY VALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 3.12x     +82%    -0.23  MODESTLY OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    3.12x    +111%    -0.06  FAIRLY VALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 2024 print (late July) — the next read on Financial Services revenue (+16.0% now) and the guide
+  (2) Segment operating margin — +287.5bp in Q1 2024: costs against the ratings mix, what must hold if revenue does not
+  (3) FY24 EPS guide $10.80-11.05 (Q1 2024 release): the company's own read of the year
+  (4) FY24 revenue guide +6-8% (Q1 2024 release): ratings, data and index revenue in one number
+  (5) Capital return at 40x — statement of cash flows, the first quarter of 2024: repurchase of treasury shares $500M, dividends paid to shareholders $286M (the release gives no amount returned in the quarter): management's own read of the multiple
+  ✕ AVOID  |  EPP floor $208  |  ADD below ~$357  |  TRIM above $549
+════════════════════════════════════════════════════════════════════════
+

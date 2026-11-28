@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "FANG",
+ "as_of": "2014-04-04",
+ "computed": "2026-11-28",
+ "data_source": "Yahoo Finance daily closes + dividends (FANG, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2014-10-03",
+   "price": 73.0,
+   "dividends": 0,
+   "total_return_pct": 8.6,
+   "benchmark_total_return_pct": 6.4,
+   "excess_pct": 2.1,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2015-04-02",
+   "price": 78.88,
+   "dividends": 0,
+   "total_return_pct": 17.3,
+   "benchmark_total_return_pct": 12.9,
+   "excess_pct": 4.4,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2016-04-04",
+   "price": 74.51,
+   "dividends": 0,
+   "total_return_pct": 10.8,
+   "benchmark_total_return_pct": 15.1,
+   "excess_pct": -4.3,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2017-04-04",
+   "price": 106.77,
+   "dividends": 0,
+   "total_return_pct": 58.8,
+   "benchmark_total_return_pct": 33.2,
+   "excess_pct": 25.6,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2014-06-23",
+   "price": 91.41
+  },
+  "low": {
+   "date": "2014-12-12",
+   "price": 52.47
+  },
+  "max_drawdown_pct": -42.6,
+  "return_to_avg_price_m12_m24_pct": 8.6
+ },
+ "scenario_landing_2y": "BEAR",
+ "call_check_2y": {
+  "expectation": "FAIR: should land within +/-15pp of the benchmark",
+  "hit": true
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "CYCLICAL",
+   "risk": 2
+  },
+  "today": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Diamondback: lowest-cost Permian E&P; oil price",
+   "reviewed": "2026-09-22"
+  }
+ }
+}

@@ -1,0 +1,150 @@
+
+════════════════════════════════════════════════════════════════════════
+  F  ·  Ford Motor Company  ·  $10.78  ·  RETROSPECTIVE as of 2024-09-27
+  Signal: ◎ ACCUMULATE   Ratio B: 1.06x   Adj gap: +1.04  [UNDERVALUED]
+  Point-in-time: 18 sources, latest published 2024-09-27; latest print Q2 2024 (July 24)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2024E revenues, USD bn  →  FY2026E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2024E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Company excluding Ford C  $   176.4  $ 176.4  $ 184.4      +0.0      +8.0
+    +11.3% revenues in FY23
+  Ford Credit               $    10.9  $  10.9  $  11.4      +0.0      +0.5
+    +14.6% revenues in FY23
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $   187.3  $ 187.3  $ 195.8      +0.0      +8.5
+  FY2024E = FY23 $176.19B × (1 + 6.3%: no Q3 2024 revenue guide, Q2 2024 revenue as reported, applied to the year (no FY24 revenue guide)); split pro rata to FY23 revenues, Company excluding Ford Credit and Ford Credit (FY2023 10-K supplemental information)
+  Q2 2024 (July 24): total revenues $47.81B +6.3%; wholesales +2.1%; Ford Credit EBT -12.1%;
+  adjusted EBIT margin 5.8% (-260bp); adjusted EPS $0.47 vs $0.72
+  Wholesales +2.1% (1,119K to 1,142K, Ford Blue + Ford Model e + Ford Pro wholesale units (10-Q; they exclude sales between the segments)); Ford Credit EBT -12.1% ($390M to $343M); revenue +6.3% as reported; adjusted EPS $0.47 vs $0.72 (GAAP $0.46 vs $0.47)
+  FY24: no EPS, revenue or margin guide in numbers (BASE takes Q2 2024 revenue growth); full-year outlook (Q2 2024 release, 2024-07-25): 'Ford’s guidance range for adjusted EBIT remains $10 billion to $12 billion' (display only: method r2 has no EBIT input)
+
+  FY2024E EPS check:  $187.3B × 5.9% adj. EBIT × (1−10.0%) ÷ 4.022B  =  $2.47  (FY2024E: no EPS guide in numbers, FY23's $2.01 (company adjusted) stands)
+  FY2026E BEAR check: $187.3B × 5.9% ÷ 4.041B  =  $2.46  (scenario $0.19)
+  FY2026E BULL check: $195.8B × 6.3% ÷ 4.041B  =  $2.75  (scenario $2.27)
+  Every 1pp of adjusted EBIT margin ≈ $0.42 EPS ≈ $3/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Wholesale units                    -44.0%  ≥-22.0%    ≥0.0%   ≥12.0%     +2.1%  ▲ BULL  ███░
+  Ford Credit EBT                    -46.0%  ≥-29.0%  ≥-13.0%   ≥14.0%    -12.1%  ▲ BULL  ███░
+  Revenue growth                     -39.0%  ≥-18.0%    ≥2.0%   ≥10.0%     +6.3%  ▲ BULL  ███░
+  Adjusted EPS growth               -122.0%  ≥-66.0%   ≥-9.0%  ≥233.0%    -34.7%  ◦ BASE  ██░░
+  Adjusted EBIT margin change       -220.0bp  ≥-190.0bp  ≥-150.0bp  ≥-30.0bp  -260.0bp  ⚠ BEAR  █░░░
+  EV shift: net effect on Ford's profit pool   +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.40 / 4.00
+  Market composite:   1.67 / 4.00  (back-solved from $11 + 15% hurdle)
+  SCA adjustment:    +0.31  ·  EPP-distance adj +0.00  →  Adj composite 2.71  →  Gap +1.04  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY23 revenue +11.5%, wholesales +4.3% (4,413K vs 4,231K Total Company wholesales, FY2023 10-K); Q2 2024 adjusted EBIT margin 5.8% (-260bp)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 5.4x FY24E vs a 7.5x 10-yr median (2nd percentile of its own range)  (+0.50 × 25%  =  +0.125)
+    +  Growth vs own history: no Q3 2024 revenue guide, Q2 2024 revenue as reported +6.3% vs a 3.3% 9-yr median  (+0.30 × 20%  =  +0.060)
+    +  Cash and cash equivalents $19.95B, FY23 adjusted free cash flow $6.80B, dividend $0.60 a year, 'Shareholder distributions (including cash dividends and anti-dilutive share repurchases) were $5.3 billion in 2023' (FY2023 10-K)  (+0.30 × 15%  =  +0.045)
+    +  Electrified vehicles of its own: Ford sells them as well  (+0.20 × 10%  =  +0.020)
+    -  EV shift (FY2023 10-K): 'a shift in consumer preferences away from larger, more profitable vehicles with internal combustion engines'  (-0.20 × 10%  =  -0.020)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Wholesale units                      +2.1%    -44.0%  -46.1%  Plant shutdowns or weaker demand cut …
+  Ford Credit EBT                     -12.1%    -46.0%  -33.9%  Credit losses, residuals and funding …
+  Revenue growth                       +6.3%    -39.0%  -45.3%  Volume and pricing fall together
+  Adjusted EPS growth                 -34.7%   -122.0%  -87.3%  Costs, warranty and tariffs outrun pr…
+  Adjusted EBIT margin change       -260.0bp  -220.0bp  +40.0bp  Pricing fades while costs stay up
+  EV shift: net effect on Ford's profit pool    +2.0/4    +1.0/4  -1.0/4  Demand moves from larger combustion-e…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$7  (model)  /  $1 (defined)
+  Bear probability (proxy model):  11.1%
+
+  KEY TRIGGER: wholesale units went from -0.9% (Q1 2024) to +2.1% (Q2 2024);
+  the bear case needs a volume and pricing fall that the adjusted EBIT margin (-260bp now)
+  and Ford Credit (-12.1% EBT now) no longer absorb.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $2.01  (FY2024E: no EPS guide in numbers, FY23's $2.01 (company adjusted) stands)
+  Min viable P/E at panic:          5x  [median of calendar-year P/E lows: 2014 11.7x, 2015 6.7x, 2016 6.3x, 2017 5.9x, 2018 5.9x, 2019 6.7x, 2020 11.1x, 2021 5.4x, 2022 5.8x, 2023 4.8x, 2024 4.8x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $10/share
+  Current $11 vs Updated EPP $10:  +7%  moderate distance to floor
+  Bear $1 vs Updated EPP $10:  -90%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Wholesale units                            -22.0      -24.1   BASE floor (vs +2 now)
+  Ford Credit EBT                            -29.0      -16.9   BASE floor (vs -12 now)
+  Revenue growth                             -18.0      -24.3   BASE floor (vs +6 now)
+  Adjusted EPS growth                        -66.0      -31.3   BASE floor (vs -35 now)
+  Adjusted EBIT margin change               -190.0      +70.0   BASE floor (vs -260 now)
+  EV shift: net effect on Ford's profit pool             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $2.01 × (1+4.1%)² = $2.18
+  At 7x P/E (conservative):  $15/share
+  + Cumul. dividends (2yr):  +$1.24/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $15  (▲4 from $11)
+  Conservative total return:  +53% over 2yr  = +26%/yr
+
+  At 5.4x the multiple is already near its 7x median, so the conservative
+  case is a growth question: breakeven at 7x needs FY2026E EPS of $1.36,
+  i.e. -17.6%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $9.49  –  $14.85  (at 24th pct of range)
+  Annual dividend:      $0.60/share  (yield 5.6%)
+  Realized vol (1yr):   39% annualized
+  Beta vs broad market: 1.29
+  1-sigma range (1yr):  $7  –  $15  ($11 ± 39%)
+  2-sigma range (1yr):  $2  –  $19
+  ────────────────────────────────────────────────────────────
+  Bear $1 requires:  ~2.3σ price move  (unusual — requires fundamental break)
+  An automaker with a 1.3 beta: the stock is +11% off its November
+  low while wholesale units went from -0.9% (Q1 2024) to +2.1% (Q2 2024).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        0.19   6.0x  $      1    11.1%     39.1%   -28.0pp  EPS -69.0%/yr (worst year FY14-FY23, capped at 0%); P/E to its 10th pct
+  BASE        2.26   7.5x  $     17    38.8%     45.4%    -6.6pp  EPS +6.1%/yr (Q2 revenue + margin + buyback); P/E at its 10-yr median
+  BULL        2.27   8.6x  $     20    42.1%     13.0%   +29.1pp  EPS +6.3%/yr (FY14-FY23 CAGR); P/E holds its 75th pct
+  XBULL      10.50  13.4x  $    141     8.0%      2.5%    +5.5pp  EPS +128.5%/yr (best 2-yr run FY14-FY23); P/E at its 90th pct
+
+  Proxy EV (2yr): $26  /  Market EV: $14  /  Current: $11
+  Conservative EV (2yr, ④): $15 + $1.24 divs = $16 total value
+  Downside (→ Bear $1): 90.7%   Upside (→ Bull $20): 85.5%   Ratio B 1.06x  →  ◎ ACCUMULATE
+
+  To earn the 15%/yr hurdle from $11 the market needs $14 in two years —
+  at or below the BASE case. That is a market composite of 1.67 against a model
+  read of 2.71: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       1.06x      +7%    +1.04  UNDERVALUED / ACCUMULATE
+  Multiples one band richer (p25/p75/p90/max)     0.51x      +7%    +1.26  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     1.57x      +7%    +0.83  UNDERVALUED / WATCHLIST
+  Scenario EPS +1.5pp/yr                          1.06x      +7%    +1.04  UNDERVALUED / ACCUMULATE
+  Scenario EPS -1.5pp/yr                          1.19x      +7%    +0.99  UNDERVALUED / WATCHLIST
+  Structural read +0.30 (bullish SCA)             1.06x      +7%    +1.34  UNDERVALUED / ACCUMULATE
+  EPP P/E +3 turns (softer floor)                 1.06x     -33%    +1.24  UNDERVALUED / ACCUMULATE
+  Hurdle 10%/yr instead of 15%                    1.06x      +7%    +1.10  UNDERVALUED / ACCUMULATE
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 2024 print — the next read on wholesale units (+2.1% now); no volume guide in numbers to read it against
+  (2) Adjusted EBIT margin — -260bp in Q2 2024: net pricing and mix against commodity, warranty and labor costs
+  (3) The FY24 adjusted EBIT outlook — 'Ford’s guidance range for adjusted EBIT remains $10 billion to $12 billion' (Q2 2024 release; display only): no EPS or revenue guide
+  (4) Ford Credit EBT — -12.1% in Q2 2024 ($343M): credit losses, lease residuals and funding costs
+  (5) Capital return at 5x — 'Shareholder distributions (including cash dividends and anti-dilutive share repurchases) were $5.3 billion in 2023' (FY2023 10-K): management's own read of the multiple
+  ◎ ACCUMULATE  |  EPP floor $10  |  ADD below ~$14  |  TRIM above $20
+════════════════════════════════════════════════════════════════════════
+

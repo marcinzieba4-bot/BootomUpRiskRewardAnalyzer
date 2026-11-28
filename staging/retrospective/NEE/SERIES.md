@@ -1,0 +1,992 @@
+# NEE retrospective series
+
+Point-in-time columns use only information public on the as-of date. The last four columns are hindsight: 2-year total return incl. dividends, its excess vs SPY, the return to the average price over months 12-24 (endpoint-robust), and whether the price-state call held.
+
+| as of | price | latest results known | proxy | adj gap | Ratio B | model tier | class | robustness | 2y TR | vs SPY | m12-24 avg | call |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2008-01-04 | $68.82 | FPL Group Q3 2007 results | 2.35 | -1.65 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -17.3% | -1.0pp | -22.8% | ✓ |
+| 2008-01-11 | $71.26 | FPL Group Q3 2007 results | 2.35 | -1.75 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -21.0% | -6.4pp | -25.3% | ✓ |
+| 2008-01-18 | $63.70 | FPL Group Q3 2007 results | 2.35 | -1.65 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -14.9% | -4.6pp | -16.4% | ✓ |
+| 2008-01-25 | $61.07 | FPL Group Q3 2007 results | 2.35 | -1.65 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -15.8% | -2.0pp | -12.8% | ✓ |
+| 2008-01-29 | $62.59 | FPL Group Q4 2007 results | 2.20 | -1.80 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -16.2% | +1.2pp | -15.0% | ✗ |
+| 2008-02-08 | $63.23 | FPL Group Q4 2007 results | 2.20 | -1.93 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -20.0% | -3.3pp | -16.0% | ✓ |
+| 2008-02-15 | $64.69 | FPL Group Q4 2007 results | 2.20 | -1.93 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -23.9% | -7.5pp | -18.0% | ✓ |
+| 2008-02-22 | $64.58 | FPL Group Q4 2007 results | 2.20 | -1.93 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -21.8% | -7.4pp | -18.0% | ✓ |
+| 2008-02-29 | $60.29 | FPL Group Q4 2007 results | 2.20 | -1.80 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -16.9% | -3.3pp | -12.1% | ✓ |
+| 2008-03-07 | $60.29 | FPL Group Q4 2007 results | 2.20 | -1.80 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -14.8% | -6.6pp | -12.0% | ✓ |
+| 2008-03-14 | $61.44 | FPL Group Q4 2007 results | 2.20 | -1.93 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -17.3% | -10.2pp | -13.5% | ✓ |
+| 2008-03-20 | $60.87 | FPL Group Q4 2007 results | 2.20 | -1.93 | 245.15x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -14.8% | -6.1pp | -12.7% | ✓ |
+| 2008-03-28 | $61.96 | FPL Group Q4 2007 results | 2.20 | -1.93 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -16.8% | -9.1pp | -14.4% | ✓ |
+| 2008-04-04 | $65.95 | FPL Group Q4 2007 results | 2.20 | -1.93 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -20.3% | -9.8pp | -19.6% | ✓ |
+| 2008-04-11 | $64.84 | FPL Group Q4 2007 results | 2.20 | -1.93 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -17.6% | -10.8pp | -18.3% | ✓ |
+| 2008-04-18 | $66.44 | FPL Group Q4 2007 results | 2.20 | -1.93 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -21.5% | -11.1pp | -20.3% | ✓ |
+| 2008-04-25 | $66.63 | FPL Group Q4 2007 results | 2.20 | -1.93 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -17.4% | -8.1pp | -20.6% | ✓ |
+| 2008-05-01 | $67.55 | FPL Group Q1 2008 results | 2.55 | -1.27 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -17.4% | -5.0pp | -21.8% | ✓ |
+| 2008-05-09 | $65.24 | FPL Group Q1 2008 results | 2.55 | -1.27 | 47.68x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -15.8% | +0.7pp | -19.2% | ✗ |
+| 2008-05-16 | $64.37 | FPL Group Q1 2008 results | 2.55 | -1.27 | 21.70x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -12.3% | +4.5pp | -18.2% | ✗ |
+| 2008-05-23 | $65.48 | FPL Group Q1 2008 results | 2.55 | -1.27 | 70.15x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -17.0% | +0.2pp | -19.6% | ✗ |
+| 2008-05-30 | $67.52 | FPL Group Q1 2008 results | 2.55 | -1.27 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -20.5% | -1.8pp | -22.2% | ✓ |
+| 2008-06-06 | $64.01 | FPL Group Q1 2008 results | 2.55 | -1.27 | 11.71x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -18.1% | +0.0pp | -18.1% | ✗ |
+| 2008-06-13 | $67.42 | FPL Group Q1 2008 results | 2.55 | -1.27 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -20.2% | -4.3pp | -22.5% | ✓ |
+| 2008-06-20 | $66.41 | FPL Group Q1 2008 results | 2.55 | -1.27 | 63.41x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -15.2% | -3.6pp | -21.5% | ✓ |
+| 2008-06-27 | $63.52 | FPL Group Q1 2008 results | 2.55 | -1.27 | 9.92x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -16.6% | -4.7pp | -18.1% | ✓ |
+| 2008-07-03 | $64.85 | FPL Group Q1 2008 results | 2.55 | -1.27 | 16.67x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -18.7% | -3.2pp | -20.0% | ✓ |
+| 2008-07-11 | $67.91 | FPL Group Q1 2008 results | 2.55 | -1.27 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -18.7% | -9.6pp | -23.7% | ✓ |
+| 2008-07-18 | $65.21 | FPL Group Q1 2008 results | 2.55 | -1.25 | 20.23x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -13.5% | -1.8pp | -20.7% | ✓ |
+| 2008-07-25 | $63.07 | FPL Group Q1 2008 results | 2.55 | -1.25 | 8.67x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -10.3% | -1.9pp | -18.2% | ✓ |
+| 2008-08-01 | $61.24 | FPL Group Q2 2008 results | 1.75 | -2.20 | 18.32x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -8.4% | +0.5pp | -15.9% | ✗ |
+| 2008-08-08 | $60.05 | FPL Group Q2 2008 results | 1.75 | -2.14 | 10.53x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -4.3% | +5.3pp | -14.3% | ✗ |
+| 2008-08-15 | $59.73 | FPL Group Q2 2008 results | 1.75 | -2.12 | 9.40x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -6.6% | +6.7pp | -14.0% | ✗ |
+| 2008-08-22 | $61.41 | FPL Group Q2 2008 results | 1.75 | -2.20 | 20.38x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -7.1% | +6.5pp | -16.5% | ✗ |
+| 2008-08-29 | $60.06 | FPL Group Q2 2008 results | 1.75 | -2.14 | 10.56x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -3.9% | +9.6pp | -14.8% | ✗ |
+| 2008-09-05 | $55.06 | FPL Group Q2 2008 results | 1.75 | -1.83 | 3.28x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +6.2% | +13.4pp | -7.1% | ✗ |
+| 2008-09-12 | $55.98 | FPL Group Q2 2008 results | 1.75 | -1.88 | 3.84x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +5.4% | +13.3pp | -8.6% | ✗ |
+| 2008-09-19 | $55.97 | FPL Group Q2 2008 results | 1.75 | -1.88 | 3.84x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +2.9% | +8.6pp | -8.6% | ✗ |
+| 2008-09-26 | $55.32 | FPL Group Q2 2008 results | 1.75 | -1.84 | 3.43x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +5.5% | +6.7pp | -7.5% | ✗ |
+| 2008-10-03 | $48.40 | FPL Group Q2 2008 results | 1.75 | -1.33 | 1.33x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +20.3% | +12.4pp | +5.7% | ✗ |
+| 2008-10-10 | $37.08 | FPL Group Q2 2008 results | 1.75 | -0.44 | 0.31x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +58.5% | +21.7pp | +38.0% | ✓ |
+| 2008-10-17 | $41.82 | FPL Group Q2 2008 results | 1.75 | -0.72 | 0.61x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +41.5% | +10.3pp | +22.5% | ✗ |
+| 2008-10-24 | $43.20 | FPL Group Q2 2008 results | 1.75 | -0.83 | 0.72x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +37.2% | -3.9pp | +18.7% | ✗ |
+| 2008-10-28 | $45.14 | FPL Group Q3 2008 results | 2.55 | +0.70 | 0.54x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +30.5% | -0.6pp | +13.7% | ✗ |
+| 2008-11-07 | $46.92 | FPL Group Q3 2008 results | 2.55 | +0.52 | 0.64x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +24.8% | -10.7pp | +9.7% | ✗ |
+| 2008-11-14 | $47.30 | FPL Group Q3 2008 results | 2.55 | +0.48 | 0.66x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +21.5% | -22.5pp | +8.9% | ✗ |
+| 2008-11-21 | $48.37 | FPL Group Q3 2008 results | 2.55 | +0.40 | 0.73x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +15.4% | -41.6pp | +6.6% | ✗ |
+| 2008-11-28 | $48.76 | FPL Group Q3 2008 results | 2.55 | +0.36 | 0.75x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +12.1% | -24.7pp | +5.7% | ✗ |
+| 2008-12-05 | $46.35 | FPL Group Q3 2008 results | 2.55 | +0.56 | 0.61x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +18.6% | -26.2pp | +11.1% | ✗ |
+| 2008-12-12 | $46.29 | FPL Group Q3 2008 results | 2.55 | +0.57 | 0.60x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +20.7% | -24.2pp | +11.1% | ✗ |
+| 2008-12-19 | $50.39 | FPL Group Q3 2008 results | 2.55 | +0.13 | 0.87x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +10.3% | -35.7pp | +1.9% | ✗ |
+| 2008-12-26 | $50.01 | FPL Group Q3 2008 results | 2.55 | +0.26 | 0.84x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +12.1% | -37.1pp | +2.6% | ✗ |
+| 2009-01-02 | $51.66 | FPL Group Q3 2008 results | 2.55 | +0.04 | 0.97x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +8.2% | -31.9pp | -0.7% | ✗ |
+| 2009-01-09 | $50.02 | FPL Group Q3 2008 results | 2.55 | +0.25 | 0.84x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +12.2% | -35.5pp | +2.6% | ✗ |
+| 2009-01-16 | $49.83 | FPL Group Q3 2008 results | 2.55 | +0.27 | 0.83x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +16.5% | -40.8pp | +3.0% | ✗ |
+| 2009-01-23 | $47.95 | FPL Group Q3 2008 results | 2.55 | +0.43 | 0.70x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +21.6% | -38.2pp | +7.2% | ✗ |
+| 2009-01-28 | $51.48 | FPL Group Q4 2008 results | 2.35 | +0.19 | 0.66x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +12.5% | -38.7pp | +0.1% | ✗ |
+| 2009-02-06 | $52.36 | FPL Group Q4 2008 results | 2.35 | +0.11 | 0.72x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +12.0% | -43.9pp | -1.4% | ✗ |
+| 2009-02-13 | $50.91 | FPL Group Q4 2008 results | 2.35 | +0.25 | 0.62x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +15.8% | -50.4pp | +1.8% | ✗ |
+| 2009-02-20 | $48.99 | FPL Group Q4 2008 results | 2.35 | +0.43 | 0.50x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +19.4% | -60.1pp | +6.1% | ✗ |
+| 2009-02-27 | $45.33 | FPL Group Q4 2008 results | 2.35 | +0.69 | 0.31x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +28.2% | -56.8pp | +15.0% | ✗ |
+| 2009-03-06 | $42.82 | FPL Group Q4 2008 results | 2.35 | +1.05 | 0.21x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +37.1% | -61.5pp | +22.0% | ✓ |
+| 2009-03-13 | $45.21 | FPL Group Q4 2008 results | 2.35 | +0.70 | 0.31x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +32.0% | -45.8pp | +15.9% | ✗ |
+| 2009-03-20 | $49.35 | FPL Group Q4 2008 results | 2.35 | +0.35 | 0.52x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +15.0% | -57.4pp | +6.4% | ✗ |
+| 2009-03-27 | $50.49 | FPL Group Q4 2008 results | 2.35 | +0.25 | 0.59x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +15.0% | -51.3pp | +4.3% | ✗ |
+| 2009-04-03 | $52.87 | FPL Group Q4 2008 results | 2.35 | +0.02 | 0.76x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +13.3% | -50.0pp | -0.2% | ✗ |
+| 2009-04-09 | $52.32 | FPL Group Q4 2008 results | 2.35 | +0.07 | 0.72x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +14.6% | -45.4pp | +1.1% | ✗ |
+| 2009-04-17 | $50.98 | FPL Group Q4 2008 results | 2.35 | +0.20 | 0.62x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +15.9% | -40.8pp | +4.0% | ✗ |
+| 2009-04-24 | $50.52 | FPL Group Q4 2008 results | 2.35 | +0.24 | 0.59x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +17.7% | -41.8pp | +5.1% | ✗ |
+| 2009-04-29 | $53.86 | FPL Group Q1 2009 results | 2.65 | +0.19 | 0.84x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +12.4% | -48.8pp | -1.2% | ✗ |
+| 2009-05-08 | $57.16 | FPL Group Q1 2009 results | 2.65 | -0.16 | 1.19x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +7.3% | -41.8pp | -6.7% | ✗ |
+| 2009-05-15 | $54.44 | FPL Group Q1 2009 results | 2.65 | +0.14 | 0.90x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +15.0% | -41.1pp | -1.8% | ✗ |
+| 2009-05-22 | $53.51 | FPL Group Q1 2009 results | 2.65 | +0.22 | 0.81x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +15.4% | -39.7pp | +0.1% | ✗ |
+| 2009-05-29 | $56.53 | FPL Group Q1 2009 results | 2.65 | -0.09 | 1.11x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +8.5% | -40.6pp | -5.0% | ✗ |
+| 2009-06-05 | $55.08 | FPL Group Q1 2009 results | 2.65 | +0.07 | 0.96x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +8.4% | -34.2pp | -2.3% | ✗ |
+| 2009-06-12 | $57.39 | FPL Group Q1 2009 results | 2.65 | -0.19 | 1.21x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +3.7% | -35.1pp | -6.0% | ✗ |
+| 2009-06-19 | $57.05 | FPL Group Q1 2009 results | 2.65 | -0.16 | 1.17x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +6.4% | -36.6pp | -5.3% | ✗ |
+| 2009-06-26 | $56.69 | FPL Group Q1 2009 results | 2.65 | -0.12 | 1.13x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +7.0% | -36.0pp | -4.4% | ✗ |
+| 2009-07-02 | $55.30 | FPL Group Q1 2009 results | 2.65 | +0.05 | 0.98x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +12.5% | -41.7pp | -1.7% | ✗ |
+| 2009-07-10 | $54.30 | FPL Group Q1 2009 results | 2.65 | +0.15 | 0.88x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +13.7% | -44.3pp | +0.3% | ✗ |
+| 2009-07-17 | $56.82 | FPL Group Q1 2009 results | 2.65 | -0.13 | 1.15x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +7.1% | -37.6pp | -4.0% | ✗ |
+| 2009-07-24 | $60.05 | FPL Group Q1 2009 results | 2.65 | -0.39 | 1.61x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +2.4% | -39.5pp | -9.0% | ✗ |
+| 2009-07-29 | $57.25 | FPL Group Q2 2009 results | 2.40 | -0.48 | 1.20x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +3.6% | -33.5pp | -4.4% | ✗ |
+| 2009-08-07 | $56.82 | FPL Group Q2 2009 results | 2.40 | -0.43 | 1.15x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +0.1% | -23.1pp | -3.7% | ✗ |
+| 2009-08-14 | $56.82 | FPL Group Q2 2009 results | 2.40 | -0.43 | 1.15x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | -0.1% | -21.9pp | -3.7% | ✗ |
+| 2009-08-21 | $58.03 | FPL Group Q2 2009 results | 2.40 | -0.54 | 1.30x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +0.5% | -13.3pp | -5.7% | ✓ |
+| 2009-08-28 | $56.40 | FPL Group Q2 2009 results | 2.40 | -0.39 | 1.10x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +5.6% | -13.0pp | -2.9% | ✓ |
+| 2009-09-04 | $55.13 | FPL Group Q2 2009 results | 2.40 | -0.25 | 0.96x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +8.4% | -11.5pp | -0.6% | ✓ |
+| 2009-09-11 | $53.42 | FPL Group Q2 2009 results | 2.40 | -0.08 | 0.81x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +8.1% | -6.9pp | +2.6% | ✗ |
+| 2009-09-18 | $55.03 | FPL Group Q2 2009 results | 2.40 | -0.24 | 0.95x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +7.9% | -10.3pp | -0.4% | ✓ |
+| 2009-09-25 | $54.39 | FPL Group Q2 2009 results | 2.40 | -0.18 | 0.89x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +6.5% | -6.7pp | +0.8% | ✓ |
+| 2009-10-02 | $53.23 | FPL Group Q2 2009 results | 2.40 | -0.06 | 0.79x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +9.2% | -5.7pp | +3.0% | ✗ |
+| 2009-10-09 | $53.10 | FPL Group Q2 2009 results | 2.40 | -0.06 | 0.78x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +9.8% | -2.4pp | +3.2% | ✗ |
+| 2009-10-16 | $53.50 | FPL Group Q2 2009 results | 2.40 | -0.08 | 0.81x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +10.2% | -6.6pp | +2.4% | ✗ |
+| 2009-10-23 | $52.63 | FPL Group Q2 2009 results | 2.40 | -0.00 | 0.74x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +14.0% | -5.0pp | +4.0% | ✗ |
+| 2009-10-28 | $50.12 | FPL Group Q3 2009 results | 1.55 | -0.96 | 0.57x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +22.0% | -5.6pp | +9.3% | ✓ |
+| 2009-11-06 | $49.76 | FPL Group Q3 2009 results | 1.55 | -0.94 | 0.55x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +21.7% | +0.2pp | +10.2% | ✗ |
+| 2009-11-13 | $51.14 | FPL Group Q3 2009 results | 1.55 | -1.03 | 0.63x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +17.2% | -2.6pp | +7.3% | ✓ |
+| 2009-11-20 | $51.11 | FPL Group Q3 2009 results | 1.55 | -1.03 | 0.63x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +16.7% | +1.0pp | +7.4% | ✗ |
+| 2009-11-27 | $51.58 | FPL Group Q3 2009 results | 1.55 | -1.06 | 0.67x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +10.1% | -0.4pp | +6.5% | ✓ |
+| 2009-12-04 | $52.75 | FPL Group Q3 2009 results | 1.55 | -1.17 | 0.75x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +13.7% | -3.0pp | +4.3% | ✓ |
+| 2009-12-11 | $56.25 | FPL Group Q3 2009 results | 1.55 | -1.47 | 1.08x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +9.7% | -8.0pp | -2.0% | ✓ |
+| 2009-12-18 | $54.62 | FPL Group Q3 2009 results | 1.55 | -1.35 | 0.91x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +13.6% | -1.1pp | +1.2% | ✓ |
+| 2009-12-24 | $52.91 | FPL Group Q3 2009 results | 1.55 | -1.19 | 0.77x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +21.8% | +5.1pp | +4.7% | ✗ |
+| 2009-12-31 | $52.82 | FPL Group Q3 2009 results | 1.55 | -1.18 | 0.76x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +23.2% | +6.2pp | +5.1% | ✗ |
+| 2010-01-08 | $52.64 | FPL Group Q3 2009 results | 1.55 | -1.15 | 0.74x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +19.9% | +4.2pp | +5.7% | ✗ |
+| 2010-01-15 | $50.55 | FPL Group Q3 2009 results | 1.55 | -0.99 | 0.60x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +25.3% | +7.6pp | +10.3% | ✗ |
+| 2010-01-22 | $48.14 | FPL Group Q3 2009 results | 1.55 | -0.87 | 0.45x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +31.9% | +6.7pp | +16.0% | ✗ |
+| 2010-01-27 | $49.76 | FPL Group Q4 2009 results | 2.30 | -0.21 | 0.66x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +28.9% | +4.4pp | +12.4% | ✓ |
+| 2010-02-05 | $47.40 | FPL Group Q4 2009 results | 2.30 | -0.07 | 0.50x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +35.9% | +5.2pp | +18.3% | ✓ |
+| 2010-02-12 | $45.57 | FPL Group Q4 2009 results | 2.30 | +0.01 | 0.40x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +41.7% | +12.8pp | +23.3% | ✓ |
+| 2010-02-19 | $46.88 | FPL Group Q4 2009 results | 2.30 | -0.04 | 0.43x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +37.4% | +10.3pp | +20.1% | ✓ |
+| 2010-02-26 | $46.37 | FPL Group Q4 2009 results | 2.30 | -0.02 | 0.40x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +39.0% | +11.0pp | +21.6% | ✓ |
+| 2010-03-05 | $47.65 | FPL Group Q4 2009 results | 2.30 | -0.08 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +34.6% | +10.7pp | +18.6% | ✓ |
+| 2010-03-12 | $47.07 | FPL Group Q4 2009 results | 2.30 | -0.05 | 0.44x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +38.2% | +14.9pp | +20.2% | ✓ |
+| 2010-03-19 | $48.16 | FPL Group Q4 2009 results | 2.30 | -0.10 | 0.51x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +33.6% | +7.8pp | +17.8% | ✓ |
+| 2010-03-26 | $47.81 | FPL Group Q4 2009 results | 2.30 | -0.09 | 0.49x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +36.4% | +10.7pp | +18.9% | ✓ |
+| 2010-04-01 | $48.84 | FPL Group Q4 2009 results | 2.30 | -0.14 | 0.55x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +33.9% | +10.1pp | +16.6% | ✓ |
+| 2010-04-09 | $49.71 | FPL Group Q4 2009 results | 2.30 | -0.20 | 0.62x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +34.6% | +14.9pp | +14.8% | ✓ |
+| 2010-04-16 | $48.43 | FPL Group Q4 2009 results | 2.30 | -0.12 | 0.53x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +38.4% | +19.4pp | +18.2% | ✓ |
+| 2010-04-23 | $51.30 | FPL Group Q4 2009 results | 2.30 | -0.35 | 0.74x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +31.9% | +15.5pp | +11.8% | ✓ |
+| 2010-04-28 | $50.75 | FPL Group Q1 2010 results | 3.20 | +0.68 | 0.69x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +35.6% | +13.9pp | +13.3% | ✓ |
+| 2010-05-07 | $51.22 | FPL Group Q1 2010 results | 3.20 | +0.63 | 0.73x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +33.6% | +5.9pp | +12.6% | ✓ |
+| 2010-05-14 | $52.71 | FPL Group Q1 2010 results | 3.20 | +0.48 | 0.87x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 2/8 FAIR | +32.8% | +10.7pp | +9.6% | ✓ |
+| 2010-05-21 | $50.59 | FPL Group Q1 2010 results | 3.20 | +0.69 | 0.68x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +37.4% | +11.9pp | +14.5% | ✓ |
+| 2010-05-28 | $49.93 | FPL Group Q1 2010 results | 3.20 | +0.75 | 0.63x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +39.5% | +14.1pp | +16.3% | ✓ |
+| 2010-06-04 | $48.63 | FPL Group Q1 2010 results | 3.20 | +0.84 | 0.54x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +42.2% | +17.6pp | +19.7% | ✓ |
+| 2010-06-11 | $50.00 | FPL Group Q1 2010 results | 3.20 | +0.74 | 0.64x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +42.2% | +17.8pp | +16.9% | ✓ |
+| 2010-06-18 | $52.51 | FPL Group Q1 2010 results | 3.20 | +0.51 | 0.85x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +38.3% | +13.4pp | +11.7% | ✓ |
+| 2010-06-25 | $49.22 | FPL Group Q1 2010 results | 3.20 | +0.81 | 0.58x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +44.9% | +18.4pp | +19.6% | ✓ |
+| 2010-07-02 | $48.96 | FPL Group Q1 2010 results | 3.20 | +0.82 | 0.56x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +49.6% | +11.0pp | +20.7% | ✓ |
+| 2010-07-09 | $51.43 | FPL Group Q1 2010 results | 3.20 | +0.61 | 0.75x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +40.5% | +10.4pp | +15.2% | ✓ |
+| 2010-07-16 | $52.61 | FPL Group Q1 2010 results | 3.20 | +0.50 | 0.86x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +40.5% | +8.7pp | +13.1% | ✓ |
+| 2010-07-23 | $52.81 | NextEra Energy Q2 2010 results | 2.90 | +0.12 | 0.88x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +40.8% | +13.8pp | +13.1% | ✓ |
+| 2010-07-30 | $52.30 | NextEra Energy Q2 2010 results | 2.90 | +0.18 | 0.83x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +45.0% | +14.6pp | +14.7% | ✓ |
+| 2010-08-06 | $53.71 | NextEra Energy Q2 2010 results | 2.90 | +0.03 | 0.97x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +39.2% | +10.5pp | +12.4% | ✓ |
+| 2010-08-13 | $52.02 | NextEra Energy Q2 2010 results | 2.90 | +0.21 | 0.80x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +41.7% | +6.9pp | +16.7% | ✓ |
+| 2010-08-20 | $53.29 | NextEra Energy Q2 2010 results | 2.90 | +0.07 | 0.92x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +37.8% | +0.8pp | +14.5% | ✓ |
+| 2010-08-27 | $53.89 | NextEra Energy Q2 2010 results | 2.90 | +0.02 | 0.99x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +34.0% | -3.3pp | +13.7% | ✓ |
+| 2010-09-03 | $54.64 | NextEra Energy Q2 2010 results | 2.90 | -0.06 | 1.07x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +31.4% | -0.5pp | +12.5% | ✓ |
+| 2010-09-10 | $55.16 | NextEra Energy Q2 2010 results | 2.90 | -0.10 | 1.14x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +31.3% | -2.0pp | +11.8% | ✓ |
+| 2010-09-17 | $53.76 | NextEra Energy Q2 2010 results | 2.90 | +0.02 | 0.97x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +34.0% | -0.5pp | +15.2% | ✓ |
+| 2010-09-24 | $54.50 | NextEra Energy Q2 2010 results | 2.90 | -0.04 | 1.06x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +35.8% | +4.3pp | +14.2% | ✓ |
+| 2010-10-01 | $54.41 | NextEra Energy Q2 2010 results | 2.90 | -0.03 | 1.05x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +37.2% | +6.6pp | +14.9% | ✓ |
+| 2010-10-08 | $54.92 | NextEra Energy Q2 2010 results | 2.90 | -0.08 | 1.11x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +36.9% | +7.4pp | +14.5% | ✓ |
+| 2010-10-15 | $55.32 | NextEra Energy Q2 2010 results | 2.90 | -0.11 | 1.16x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +34.1% | +7.1pp | +14.2% | ✓ |
+| 2010-10-22 | $55.45 | NextEra Energy Q2 2010 results | 2.90 | -0.13 | 1.18x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +37.3% | +11.7pp | +14.5% | ✓ |
+| 2010-10-29 | $55.04 | NextEra Energy Q3 2010 results | 2.65 | -0.22 | 1.12x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +34.5% | +10.7pp | +15.8% | ✓ |
+| 2010-11-05 | $54.73 | NextEra Energy Q3 2010 results | 2.65 | -0.19 | 1.08x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +35.4% | +15.5pp | +16.9% | ✗ |
+| 2010-11-12 | $53.63 | NextEra Energy Q3 2010 results | 2.65 | -0.07 | 0.96x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +32.9% | +13.5pp | +19.8% | ✓ |
+| 2010-11-19 | $51.97 | NextEra Energy Q3 2010 results | 2.65 | +0.12 | 0.80x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +38.9% | +18.9pp | +24.0% | ✓ |
+| 2010-11-26 | $50.78 | NextEra Energy Q3 2010 results | 2.65 | +0.23 | 0.70x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +41.7% | +18.5pp | +27.4% | ✓ |
+| 2010-12-03 | $51.10 | NextEra Energy Q3 2010 results | 2.65 | +0.20 | 0.72x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +42.6% | +23.2pp | +27.1% | ✓ |
+| 2010-12-10 | $52.00 | NextEra Energy Q3 2010 results | 2.65 | +0.10 | 0.80x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +41.8% | +23.1pp | +25.4% | ✓ |
+| 2010-12-17 | $51.67 | NextEra Energy Q3 2010 results | 2.65 | +0.14 | 0.77x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +45.4% | +26.0pp | +26.7% | ✓ |
+| 2010-12-23 | $52.17 | NextEra Energy Q3 2010 results | 2.65 | +0.09 | 0.82x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +42.9% | +24.7pp | +25.8% | ✓ |
+| 2010-12-31 | $51.99 | NextEra Energy Q3 2010 results | 2.65 | +0.10 | 0.80x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +40.1% | +24.3pp | +26.5% | ✓ |
+| 2011-01-07 | $52.22 | NextEra Energy Q3 2010 results | 2.65 | +0.08 | 0.82x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +43.9% | +24.6pp | +26.4% | ✓ |
+| 2011-01-14 | $54.15 | NextEra Energy Q3 2010 results | 2.65 | -0.14 | 1.02x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +40.9% | +22.8pp | +22.3% | ✗ |
+| 2011-01-21 | $54.42 | NextEra Energy Q3 2010 results | 2.65 | -0.17 | 1.05x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +39.9% | +20.0pp | +22.1% | ✗ |
+| 2011-01-26 | $54.21 | NextEra Energy Q4 2010 results | 1.50 | -0.76 | 0.40x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +42.2% | +22.0pp | +22.9% | ✗ |
+| 2011-02-04 | $54.74 | NextEra Energy Q4 2010 results | 1.50 | -0.78 | 0.43x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +39.9% | +21.6pp | +22.2% | ✗ |
+| 2011-02-11 | $55.06 | NextEra Energy Q4 2010 results | 1.50 | -0.79 | 0.44x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +39.4% | +21.2pp | +22.0% | ✗ |
+| 2011-02-18 | $54.59 | NextEra Energy Q4 2010 results | 1.50 | -0.77 | 0.42x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +41.2% | +23.9pp | +23.4% | ✗ |
+| 2011-02-25 | $54.69 | NextEra Energy Q4 2010 results | 1.50 | -0.78 | 0.42x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +40.4% | +23.5pp | +23.6% | ✗ |
+| 2011-03-04 | $54.75 | NextEra Energy Q4 2010 results | 1.50 | -0.77 | 0.41x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +43.0% | +23.3pp | +23.9% | ✗ |
+| 2011-03-11 | $55.69 | NextEra Energy Q4 2010 results | 1.50 | -0.80 | 0.45x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +41.7% | +18.1pp | +22.3% | ✗ |
+| 2011-03-18 | $52.76 | NextEra Energy Q4 2010 results | 1.50 | -0.69 | 0.33x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +49.4% | +23.6pp | +29.6% | ✗ |
+| 2011-03-25 | $54.10 | NextEra Energy Q4 2010 results | 1.50 | -0.74 | 0.39x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +49.5% | +27.1pp | +27.0% | ✗ |
+| 2011-04-01 | $55.93 | NextEra Energy Q4 2010 results | 1.50 | -0.81 | 0.47x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +47.0% | +25.4pp | +23.4% | ✗ |
+| 2011-04-08 | $56.00 | NextEra Energy Q4 2010 results | 1.50 | -0.82 | 0.47x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +51.2% | +29.2pp | +23.8% | ✗ |
+| 2011-04-15 | $55.12 | NextEra Energy Q4 2010 results | 1.50 | -0.78 | 0.43x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +51.8% | +29.9pp | +26.4% | ✗ |
+| 2011-04-21 | $55.51 | NextEra Energy Q4 2010 results | 1.50 | -0.80 | 0.45x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +52.7% | +32.2pp | +26.0% | ✗ |
+| 2011-04-29 | $56.57 | NextEra Energy Q1 2011 results | 1.55 | -0.86 | 0.50x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +52.0% | +30.9pp | +24.3% | ✗ |
+| 2011-05-06 | $57.39 | NextEra Energy Q1 2011 results | 1.55 | -0.90 | 0.54x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +48.6% | +23.8pp | +23.1% | ✗ |
+| 2011-05-13 | $58.64 | NextEra Energy Q1 2011 results | 1.55 | -0.97 | 0.60x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +43.8% | +17.5pp | +21.1% | ✗ |
+| 2011-05-20 | $57.78 | NextEra Energy Q1 2011 results | 1.55 | -0.93 | 0.56x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +47.0% | +17.7pp | +23.4% | ✗ |
+| 2011-05-27 | $57.35 | NextEra Energy Q1 2011 results | 1.55 | -0.90 | 0.53x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +43.0% | +14.8pp | +24.7% | ✗ |
+| 2011-06-03 | $55.68 | NextEra Energy Q1 2011 results | 1.55 | -0.82 | 0.45x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +45.7% | +15.2pp | +28.8% | ✗ |
+| 2011-06-10 | $55.49 | NextEra Energy Q1 2011 results | 1.55 | -0.82 | 0.45x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +50.5% | +16.8pp | +29.7% | ✗ |
+| 2011-06-17 | $56.63 | NextEra Energy Q1 2011 results | 1.55 | -0.87 | 0.50x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +50.9% | +17.4pp | +27.5% | ✗ |
+| 2011-06-24 | $56.61 | NextEra Energy Q1 2011 results | 1.55 | -0.87 | 0.50x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +47.0% | +18.4pp | +28.0% | ✗ |
+| 2011-07-01 | $58.18 | NextEra Energy Q1 2011 results | 1.55 | -0.95 | 0.58x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +46.2% | +21.2pp | +24.9% | ✗ |
+| 2011-07-08 | $57.70 | NextEra Energy Q1 2011 results | 1.55 | -0.92 | 0.55x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +48.1% | +21.7pp | +26.3% | ✗ |
+| 2011-07-15 | $56.80 | NextEra Energy Q1 2011 results | 1.55 | -0.88 | 0.51x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +58.9% | +26.6pp | +28.8% | ✗ |
+| 2011-07-22 | $57.46 | NextEra Energy Q1 2011 results | 1.55 | -0.91 | 0.54x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +56.1% | +25.7pp | +27.9% | ✗ |
+| 2011-07-28 | $56.24 | NextEra Energy Q2 2011 results | 3.05 | +1.22 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +57.8% | +23.3pp | +31.1% | ✓ |
+| 2011-08-05 | $52.81 | NextEra Energy Q2 2011 results | 3.05 | +1.47 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +74.0% | +26.8pp | +40.3% | ✓ |
+| 2011-08-12 | $52.69 | NextEra Energy Q2 2011 results | 3.05 | +1.48 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +71.6% | +23.3pp | +41.2% | ✓ |
+| 2011-08-19 | $54.29 | NextEra Energy Q2 2011 results | 3.05 | +1.38 | 0.39x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +59.1% | +7.4pp | +37.6% | ✓ |
+| 2011-08-26 | $55.41 | NextEra Energy Q2 2011 results | 3.05 | +1.29 | 0.44x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +53.1% | +7.3pp | +35.3% | ✓ |
+| 2011-09-02 | $55.63 | NextEra Energy Q2 2011 results | 3.05 | +1.27 | 0.45x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +53.3% | +9.3pp | +35.2% | ✓ |
+| 2011-09-09 | $53.60 | NextEra Energy Q2 2011 results | 3.05 | +1.43 | 0.37x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +58.9% | +9.1pp | +40.7% | ✓ |
+| 2011-09-16 | $55.28 | NextEra Energy Q2 2011 results | 3.05 | +1.30 | 0.44x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +52.1% | +7.5pp | +36.8% | ✓ |
+| 2011-09-23 | $53.81 | NextEra Energy Q2 2011 results | 3.05 | +1.41 | 0.37x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +60.1% | +4.9pp | +41.1% | ✓ |
+| 2011-09-30 | $54.02 | NextEra Energy Q2 2011 results | 3.05 | +1.40 | 0.38x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +57.5% | +3.5pp | +40.9% | ✓ |
+| 2011-10-07 | $54.20 | NextEra Energy Q2 2011 results | 3.05 | +1.39 | 0.39x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +55.5% | +5.4pp | +40.8% | ✓ |
+| 2011-10-14 | $54.86 | NextEra Energy Q2 2011 results | 3.05 | +1.34 | 0.42x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +56.7% | +12.2pp | +39.5% | ✓ |
+| 2011-10-21 | $55.87 | NextEra Energy Q2 2011 results | 3.05 | +1.24 | 0.46x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +58.8% | +13.1pp | +37.4% | ✓ |
+| 2011-10-28 | $57.04 | NextEra Energy Q2 2011 results | 3.05 | +1.15 | 0.52x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +57.9% | +16.0pp | +35.1% | ✓ |
+| 2011-11-04 | $56.44 | NextEra Energy Q3 2011 results | 2.10 | -0.24 | 0.49x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +64.8% | +18.9pp | +37.0% | ✓ |
+| 2011-11-11 | $55.82 | NextEra Energy Q3 2011 results | 2.10 | -0.21 | 0.46x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +63.9% | +19.0pp | +39.2% | ✓ |
+| 2011-11-18 | $55.53 | NextEra Energy Q3 2011 results | 2.10 | -0.20 | 0.45x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +69.3% | +17.1pp | +40.6% | ✓ |
+| 2011-11-25 | $52.57 | NextEra Energy Q3 2011 results | 2.10 | -0.09 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +72.1% | +11.5pp | +49.2% | ✓ |
+| 2011-12-02 | $55.76 | NextEra Energy Q3 2011 results | 2.10 | -0.21 | 0.46x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +59.6% | +10.0pp | +41.2% | ✓ |
+| 2011-12-09 | $57.48 | NextEra Energy Q3 2011 results | 2.10 | -0.30 | 0.54x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +55.1% | +6.2pp | +37.5% | ✓ |
+| 2011-12-16 | $57.87 | NextEra Energy Q3 2011 results | 2.10 | -0.32 | 0.56x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +51.9% | -0.0pp | +37.0% | ✓ |
+| 2011-12-23 | $60.25 | NextEra Energy Q3 2011 results | 2.10 | -0.45 | 0.69x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 1/8 FAIR | +48.9% | -0.6pp | +32.1% | ✓ |
+| 2011-12-30 | $60.88 | NextEra Energy Q3 2011 results | 2.10 | -0.49 | 0.73x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 1/8 FAIR | +48.0% | -3.6pp | +31.1% | ✓ |
+| 2012-01-06 | $58.92 | NextEra Energy Q3 2011 results | 2.10 | -0.38 | 0.62x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +51.8% | +4.0pp | +35.9% | ✓ |
+| 2012-01-13 | $59.12 | NextEra Energy Q3 2011 results | 2.10 | -0.39 | 0.63x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +55.1% | +9.1pp | +35.9% | ✓ |
+| 2012-01-20 | $59.31 | NextEra Energy Q3 2011 results | 2.10 | -0.40 | 0.64x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +56.3% | +12.2pp | +35.9% | ✓ |
+| 2012-01-27 | $59.92 | NextEra Energy Q4 2011 results | 2.95 | +0.84 | 0.69x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +53.4% | +13.5pp | +35.0% | ✓ |
+| 2012-02-03 | $60.21 | NextEra Energy Q4 2011 results | 2.95 | +0.82 | 0.70x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +59.9% | +25.6pp | +35.0% | ✓ |
+| 2012-02-10 | $60.36 | NextEra Energy Q4 2011 results | 2.95 | +0.81 | 0.71x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +59.7% | +20.9pp | +35.2% | ✓ |
+| 2012-02-17 | $60.22 | NextEra Energy Q4 2011 results | 2.95 | +0.82 | 0.70x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +63.3% | +23.6pp | +36.2% | ✓ |
+| 2012-02-24 | $60.77 | NextEra Energy Q4 2011 results | 2.95 | +0.78 | 0.74x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +59.3% | +19.6pp | +35.5% | ✓ |
+| 2012-03-02 | $59.80 | NextEra Energy Q4 2011 results | 2.95 | +0.91 | 0.46x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +61.5% | +21.1pp | +38.3% | ✓ |
+| 2012-03-09 | $60.01 | NextEra Energy Q4 2011 results | 2.95 | +0.88 | 0.47x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +61.6% | +20.0pp | +38.4% | ✓ |
+| 2012-03-16 | $60.16 | NextEra Energy Q4 2011 results | 2.95 | +0.88 | 0.47x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +65.3% | +29.5pp | +38.6% | ✓ |
+| 2012-03-23 | $60.40 | NextEra Energy Q4 2011 results | 2.95 | +0.85 | 0.49x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +65.1% | +27.0pp | +38.7% | ✓ |
+| 2012-03-30 | $61.08 | NextEra Energy Q4 2011 results | 2.95 | +0.80 | 0.52x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +63.5% | +27.1pp | +37.7% | ✓ |
+| 2012-04-05 | $62.88 | NextEra Energy Q4 2011 results | 2.95 | +0.67 | 0.62x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +59.3% | +21.2pp | +34.2% | ✓ |
+| 2012-04-13 | $62.08 | NextEra Energy Q4 2011 results | 2.95 | +0.73 | 0.58x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +61.6% | +24.4pp | +36.5% | ✓ |
+| 2012-04-20 | $63.46 | NextEra Energy Q4 2011 results | 2.95 | +0.61 | 0.66x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +60.3% | +20.4pp | +34.0% | ✓ |
+| 2012-04-26 | $64.43 | NextEra Energy Q1 2012 results | 3.20 | +0.50 | 0.82x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +59.6% | +21.9pp | +32.5% | ✓ |
+| 2012-05-04 | $63.57 | NextEra Energy Q1 2012 results | 3.20 | +0.57 | 0.75x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +62.3% | +20.1pp | +34.8% | ✓ |
+| 2012-05-11 | $65.17 | NextEra Energy Q1 2012 results | 3.20 | +0.43 | 0.88x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | +56.6% | +13.1pp | +32.0% | ✓ |
+| 2012-05-18 | $65.00 | NextEra Energy Q1 2012 results | 3.20 | +0.44 | 0.86x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | +56.6% | +6.5pp | +32.9% | ✓ |
+| 2012-05-25 | $65.33 | NextEra Energy Q1 2012 results | 3.20 | +0.40 | 0.89x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | +55.6% | +6.4pp | +32.7% | ✓ |
+| 2012-06-01 | $64.59 | NextEra Energy Q1 2012 results | 3.20 | +0.48 | 0.83x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +58.9% | +3.4pp | +34.7% | ✓ |
+| 2012-06-08 | $66.94 | NextEra Energy Q1 2012 results | 3.20 | +0.28 | 1.04x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | +53.5% | +1.7pp | +30.6% | ✓ |
+| 2012-06-15 | $67.77 | NextEra Energy Q1 2012 results | 3.20 | +0.22 | 1.13x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +50.6% | +1.4pp | +29.5% | ✓ |
+| 2012-06-22 | $66.62 | NextEra Energy Q1 2012 results | 3.20 | +0.30 | 1.01x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | +58.0% | +6.0pp | +32.3% | ✓ |
+| 2012-06-29 | $68.81 | NextEra Energy Q1 2012 results | 3.20 | +0.15 | 1.25x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +55.3% | +6.4pp | +28.7% | ✓ |
+| 2012-07-06 | $68.30 | NextEra Energy Q1 2012 results | 3.20 | +0.19 | 1.19x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +51.6% | +0.2pp | +30.2% | ✓ |
+| 2012-07-13 | $69.33 | NextEra Energy Q1 2012 results | 3.20 | +0.12 | 1.32x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +50.4% | +0.5pp | +28.7% | ✓ |
+| 2012-07-20 | $70.49 | NextEra Energy Q1 2012 results | 3.20 | +0.06 | 1.48x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +47.6% | -2.3pp | +27.0% | ✓ |
+| 2012-07-27 | $71.09 | NextEra Energy Q2 2012 results | 2.50 | -0.95 | 1.58x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +45.9% | -1.6pp | +26.3% | ✗ |
+| 2012-08-03 | $70.87 | NextEra Energy Q2 2012 results | 2.50 | -0.93 | 1.54x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +39.8% | -3.3pp | +27.0% | ✗ |
+| 2012-08-10 | $69.80 | NextEra Energy Q2 2012 results | 2.50 | -0.79 | 1.38x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +44.3% | +2.2pp | +29.1% | ✗ |
+| 2012-08-17 | $69.60 | NextEra Energy Q2 2012 results | 2.50 | -0.78 | 1.36x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +46.1% | +3.6pp | +29.8% | ✗ |
+| 2012-08-24 | $67.84 | NextEra Energy Q2 2012 results | 2.50 | -0.69 | 1.14x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +51.7% | +6.1pp | +33.6% | ✗ |
+| 2012-08-31 | $67.31 | NextEra Energy Q2 2012 results | 2.50 | -0.66 | 1.08x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +54.3% | +7.2pp | +35.2% | ✗ |
+| 2012-09-07 | $67.65 | NextEra Energy Q2 2012 results | 2.50 | -0.67 | 1.12x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +52.7% | +8.6pp | +34.9% | ✗ |
+| 2012-09-14 | $67.79 | NextEra Energy Q2 2012 results | 2.50 | -0.69 | 1.13x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +46.8% | +6.9pp | +35.1% | ✗ |
+| 2012-09-21 | $68.63 | NextEra Energy Q2 2012 results | 2.50 | -0.73 | 1.23x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +46.5% | +4.1pp | +33.9% | ✗ |
+| 2012-09-28 | $70.33 | NextEra Energy Q2 2012 results | 2.50 | -0.81 | 1.46x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +40.6% | -1.8pp | +31.0% | ✗ |
+| 2012-10-05 | $70.83 | NextEra Energy Q2 2012 results | 2.50 | -0.93 | 1.54x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +40.7% | +1.4pp | +30.5% | ✗ |
+| 2012-10-12 | $69.37 | NextEra Energy Q2 2012 results | 2.50 | -0.76 | 1.33x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +42.8% | +4.5pp | +33.6% | ✗ |
+| 2012-10-19 | $71.72 | NextEra Energy Q2 2012 results | 2.50 | -0.98 | 1.68x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +39.0% | +2.6pp | +29.6% | ✗ |
+| 2012-10-25 | $69.74 | NextEra Energy Q3 2012 results | 2.05 | -1.24 | 1.38x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +48.8% | +4.9pp | +33.6% | ✗ |
+| 2012-11-02 | $69.73 | NextEra Energy Q3 2012 results | 2.05 | -1.24 | 1.37x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +51.5% | +4.0pp | +34.0% | ✗ |
+| 2012-11-09 | $67.38 | NextEra Energy Q3 2012 results | 2.05 | -1.12 | 1.09x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +63.5% | +11.2pp | +39.1% | ✗ |
+| 2012-11-16 | $67.35 | NextEra Energy Q3 2012 results | 2.05 | -1.12 | 1.09x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +59.3% | +4.3pp | +39.6% | ✗ |
+| 2012-11-23 | $67.20 | NextEra Energy Q3 2012 results | 2.05 | -1.12 | 1.07x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +62.4% | +11.2pp | +40.4% | ✗ |
+| 2012-11-30 | $68.71 | NextEra Energy Q3 2012 results | 2.05 | -1.20 | 1.24x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +60.0% | +9.3pp | +37.8% | ✗ |
+| 2012-12-07 | $69.37 | NextEra Energy Q3 2012 results | 2.05 | -1.23 | 1.33x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +56.4% | +5.3pp | +37.0% | ✗ |
+| 2012-12-14 | $69.47 | NextEra Energy Q3 2012 results | 2.05 | -1.23 | 1.34x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +53.1% | +6.7pp | +37.4% | ✗ |
+| 2012-12-21 | $69.96 | NextEra Energy Q3 2012 results | 2.05 | -1.26 | 1.41x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +59.2% | +9.6pp | +37.0% | ✗ |
+| 2012-12-28 | $68.25 | NextEra Energy Q3 2012 results | 2.05 | -1.17 | 1.19x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +68.2% | +14.3pp | +41.0% | ✗ |
+| 2013-01-04 | $70.88 | NextEra Energy Q3 2012 results | 2.05 | -1.40 | 1.54x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +58.3% | +13.1pp | +36.3% | ✗ |
+| 2013-01-11 | $71.78 | NextEra Energy Q3 2012 results | 2.05 | -1.45 | 1.69x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +56.3% | +12.5pp | +35.1% | ✗ |
+| 2013-01-18 | $71.55 | NextEra Energy Q3 2012 results | 2.05 | -1.44 | 1.65x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +59.0% | +18.2pp | +36.1% | ✗ |
+| 2013-01-25 | $72.50 | NextEra Energy Q3 2012 results | 2.05 | -1.47 | 1.83x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +58.6% | +17.4pp | +34.8% | ✗ |
+| 2013-01-30 | $72.00 | NextEra Energy Q4 2012 results | 1.95 | -1.59 | 2.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +59.4% | +21.7pp | +36.3% | ✗ |
+| 2013-02-08 | $72.10 | NextEra Energy Q4 2012 results | 1.95 | -1.60 | 2.02x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +54.4% | +14.3pp | +36.6% | ✗ |
+| 2013-02-15 | $72.50 | NextEra Energy Q4 2012 results | 1.95 | -1.61 | 2.12x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +50.6% | +7.9pp | +36.2% | ✗ |
+| 2013-02-22 | $72.75 | NextEra Energy Q4 2012 results | 1.95 | -1.62 | 2.18x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +52.8% | +9.0pp | +36.1% | ✗ |
+| 2013-03-01 | $72.36 | NextEra Energy Q4 2012 results | 1.95 | -1.63 | 2.73x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +50.8% | +7.6pp | +37.2% | ✗ |
+| 2013-03-08 | $74.16 | NextEra Energy Q4 2012 results | 1.95 | -1.70 | 3.19x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +40.7% | +2.6pp | +34.1% | ✗ |
+| 2013-03-15 | $74.47 | NextEra Energy Q4 2012 results | 1.95 | -1.72 | 3.34x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +42.7% | +6.4pp | +33.7% | ✗ |
+| 2013-03-22 | $76.17 | NextEra Energy Q4 2012 results | 1.95 | -1.80 | 4.42x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +46.6% | +6.6pp | +31.0% | ✗ |
+| 2013-03-28 | $77.68 | NextEra Energy Q4 2012 results | 1.95 | -1.86 | 5.95x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +40.6% | +4.5pp | +28.7% | ✗ |
+| 2013-04-05 | $79.54 | NextEra Energy Q4 2012 results | 1.95 | -1.95 | 9.69x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +38.8% | +1.0pp | +25.9% | ✗ |
+| 2013-04-12 | $79.49 | NextEra Energy Q4 2012 results | 1.95 | -1.95 | 9.54x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +39.1% | +2.1pp | +26.2% | ✗ |
+| 2013-04-19 | $80.08 | NextEra Energy Q4 2012 results | 1.95 | -1.98 | 11.67x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +35.9% | -2.7pp | +25.5% | ✗ |
+| 2013-04-26 | $80.54 | NextEra Energy Q4 2012 results | 1.95 | -2.02 | 9.98x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +37.4% | -1.0pp | +24.9% | ✗ |
+| 2013-05-01 | $81.33 | NextEra Energy Q1 2013 results | 2.10 | -1.83 | 13.23x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +32.2% | -5.6pp | +23.8% | ✗ |
+| 2013-05-10 | $80.00 | NextEra Energy Q1 2013 results | 2.10 | -1.76 | 8.50x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +33.6% | -0.5pp | +25.9% | ✗ |
+| 2013-05-17 | $81.10 | NextEra Energy Q1 2013 results | 2.10 | -1.83 | 12.10x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +32.9% | +1.2pp | +24.3% | ✗ |
+| 2013-05-24 | $77.30 | NextEra Energy Q1 2013 results | 2.10 | -1.62 | 4.67x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +39.6% | +6.2pp | +30.6% | ✗ |
+| 2013-05-31 | $75.62 | NextEra Energy Q1 2013 results | 2.10 | -1.53 | 3.53x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +43.0% | +9.2pp | +33.6% | ✗ |
+| 2013-06-07 | $78.80 | NextEra Energy Q1 2013 results | 2.10 | -1.69 | 6.31x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +32.7% | +0.9pp | +28.3% | ✗ |
+| 2013-06-14 | $79.73 | NextEra Energy Q1 2013 results | 2.10 | -1.74 | 7.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +31.7% | -1.6pp | +26.9% | ✓ |
+| 2013-06-21 | $78.33 | NextEra Energy Q1 2013 results | 2.10 | -1.66 | 4.85x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +36.2% | -1.1pp | +29.2% | ✗ |
+| 2013-06-28 | $81.48 | NextEra Energy Q1 2013 results | 2.10 | -1.83 | 10.08x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.2% | -7.3pp | +24.2% | ✓ |
+| 2013-07-05 | $79.93 | NextEra Energy Q1 2013 results | 2.10 | -1.74 | 6.69x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +32.6% | +0.8pp | +26.5% | ✗ |
+| 2013-07-12 | $84.01 | NextEra Energy Q1 2013 results | 2.10 | -1.83 | 38.39x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +27.8% | -0.6pp | +20.5% | ✓ |
+| 2013-07-19 | $84.96 | NextEra Energy Q1 2013 results | 2.10 | -1.83 | 974.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.8% | -1.3pp | +19.2% | ✓ |
+| 2013-07-26 | $83.95 | NextEra Energy Q1 2013 results | 2.10 | -1.83 | 36.14x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.7% | +1.2pp | +20.7% | ✗ |
+| 2013-07-31 | $86.61 | NextEra Energy Q2 2013 results | 2.40 | -1.38 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +27.8% | -1.7pp | +17.1% | ✓ |
+| 2013-08-09 | $86.26 | NextEra Energy Q2 2013 results | 2.40 | -1.38 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +30.7% | +3.4pp | +18.0% | ✗ |
+| 2013-08-16 | $82.15 | NextEra Energy Q2 2013 results | 2.40 | -1.33 | 9.39x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +39.7% | +8.9pp | +24.2% | ✗ |
+| 2013-08-23 | $81.41 | NextEra Energy Q2 2013 results | 2.40 | -1.29 | 7.71x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +38.5% | +15.2pp | +25.6% | ✗ |
+| 2013-08-30 | $80.36 | NextEra Energy Q2 2013 results | 2.40 | -1.23 | 6.09x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +34.0% | +7.6pp | +27.3% | ✗ |
+| 2013-09-06 | $80.01 | NextEra Energy Q2 2013 results | 2.40 | -1.21 | 5.68x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +25.6% | +5.0pp | +27.8% | ✗ |
+| 2013-09-13 | $79.22 | NextEra Energy Q2 2013 results | 2.40 | -1.17 | 4.90x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.4% | +7.7pp | +29.1% | ✗ |
+| 2013-09-20 | $80.69 | NextEra Energy Q2 2013 results | 2.40 | -1.25 | 6.53x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +27.8% | +8.8pp | +26.9% | ✗ |
+| 2013-09-27 | $80.07 | NextEra Energy Q2 2013 results | 2.40 | -1.21 | 5.75x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +30.5% | +11.7pp | +27.9% | ✗ |
+| 2013-10-04 | $79.65 | NextEra Energy Q2 2013 results | 2.40 | -1.19 | 4.58x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +31.1% | +11.0pp | +28.7% | ✗ |
+| 2013-10-11 | $81.75 | NextEra Energy Q2 2013 results | 2.40 | -1.30 | 6.81x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +30.8% | +8.0pp | +25.5% | ✗ |
+| 2013-10-18 | $83.54 | NextEra Energy Q2 2013 results | 2.40 | -1.38 | 10.85x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +31.1% | +10.1pp | +23.1% | ✗ |
+| 2013-10-25 | $85.95 | NextEra Energy Q2 2013 results | 2.40 | -1.38 | 38.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.5% | +6.1pp | +19.8% | ✗ |
+| 2013-11-01 | $88.14 | NextEra Energy Q3 2013 results | 2.95 | -0.82 | 4.76x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +23.1% | +0.7pp | +16.9% | ✗ |
+| 2013-11-08 | $87.12 | NextEra Energy Q3 2013 results | 2.95 | -0.82 | 4.16x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +20.2% | -2.7pp | +18.2% | ✓ |
+| 2013-11-15 | $88.57 | NextEra Energy Q3 2013 results | 2.95 | -0.82 | 4.51x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +20.0% | +3.2pp | +16.2% | ✗ |
+| 2013-11-22 | $86.59 | NextEra Energy Q3 2013 results | 2.95 | -0.82 | 3.56x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +23.4% | +3.4pp | +18.8% | ✗ |
+| 2013-11-29 | $84.59 | NextEra Energy Q3 2013 results | 2.95 | -0.82 | 2.88x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +24.5% | +4.4pp | +21.6% | ✗ |
+| 2013-12-06 | $84.63 | NextEra Energy Q3 2013 results | 2.95 | -0.82 | 2.89x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +23.0% | +2.9pp | +21.4% | ✗ |
+| 2013-12-13 | $82.71 | NextEra Energy Q3 2013 results | 2.95 | -0.65 | 2.40x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +25.0% | +7.3pp | +24.1% | ✗ |
+| 2013-12-20 | $84.82 | NextEra Energy Q3 2013 results | 2.95 | -0.82 | 2.95x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +27.4% | +12.8pp | +21.0% | ✗ |
+| 2013-12-27 | $84.70 | NextEra Energy Q3 2013 results | 2.95 | -0.82 | 2.91x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +29.8% | +13.5pp | +21.0% | ✗ |
+| 2013-12-31 | $85.62 | NextEra Energy Q3 2013 results | 2.95 | -0.82 | 2.96x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +29.5% | +13.7pp | +19.7% | ✗ |
+| 2014-01-10 | $87.25 | NextEra Energy Q3 2013 results | 2.95 | -0.82 | 3.51x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +27.4% | +18.8pp | +17.4% | ✗ |
+| 2014-01-17 | $87.66 | NextEra Energy Q3 2013 results | 2.95 | -0.82 | 3.67x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +26.9% | +20.2pp | +16.8% | ✗ |
+| 2014-01-24 | $87.06 | NextEra Energy Q3 2013 results | 2.95 | -0.82 | 3.44x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +29.3% | +18.3pp | +17.6% | ✗ |
+| 2014-01-29 | $88.77 | NextEra Energy Q4 2013 results | 2.05 | -1.76 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +32.6% | +18.8pp | +15.3% | ✗ |
+| 2014-02-07 | $90.61 | NextEra Energy Q4 2013 results | 2.05 | -1.76 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +32.0% | +22.9pp | +13.0% | ✗ |
+| 2014-02-14 | $93.27 | NextEra Energy Q4 2013 results | 2.05 | -1.76 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +26.1% | +20.4pp | +9.9% | ✗ |
+| 2014-02-21 | $92.56 | NextEra Energy Q4 2013 results | 2.05 | -1.76 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +30.4% | +21.7pp | +10.9% | ✗ |
+| 2014-02-28 | $91.39 | NextEra Energy Q4 2013 results | 2.05 | -1.88 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +29.8% | +20.8pp | +12.6% | ✗ |
+| 2014-03-07 | $91.80 | NextEra Energy Q4 2013 results | 2.05 | -1.72 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +31.3% | +20.5pp | +12.4% | ✗ |
+| 2014-03-14 | $94.26 | NextEra Energy Q4 2013 results | 2.05 | -1.72 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +29.4% | +15.4pp | +9.8% | ✗ |
+| 2014-03-21 | $94.57 | NextEra Energy Q4 2013 results | 2.05 | -1.72 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +30.8% | +16.4pp | +9.7% | ✗ |
+| 2014-03-28 | $94.72 | NextEra Energy Q4 2013 results | 2.05 | -1.72 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +30.6% | +16.6pp | +9.8% | ✗ |
+| 2014-04-04 | $95.01 | NextEra Energy Q4 2013 results | 2.05 | -1.72 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +31.4% | +16.3pp | +9.7% | ✗ |
+| 2014-04-11 | $95.15 | NextEra Energy Q4 2013 results | 2.05 | -1.72 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.6% | +11.6pp | +9.8% | ✗ |
+| 2014-04-17 | $96.59 | NextEra Energy Q4 2013 results | 2.05 | -1.72 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +27.9% | +12.0pp | +8.4% | ✗ |
+| 2014-04-25 | $97.67 | NextEra Energy Q4 2013 results | 2.05 | -1.72 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +23.5% | +7.1pp | +7.5% | ✗ |
+| 2014-05-01 | $99.97 | NextEra Energy Q1 2014 results | 3.55 | -0.22 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +23.7% | +9.8pp | +5.2% | ✗ |
+| 2014-05-09 | $96.92 | NextEra Energy Q1 2014 results | 3.55 | -0.22 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +29.0% | +15.1pp | +8.9% | ✗ |
+| 2014-05-16 | $96.60 | NextEra Energy Q1 2014 results | 3.55 | -0.22 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +32.1% | +17.7pp | +9.7% | ✗ |
+| 2014-05-23 | $96.46 | NextEra Energy Q1 2014 results | 3.55 | -0.22 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.7% | +16.5pp | +10.2% | ✗ |
+| 2014-05-30 | $97.36 | NextEra Energy Q1 2014 results | 3.55 | -0.22 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +29.5% | +16.1pp | +9.5% | ✗ |
+| 2014-06-06 | $97.44 | NextEra Energy Q1 2014 results | 3.55 | -0.22 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +31.4% | +19.0pp | +9.8% | ✗ |
+| 2014-06-13 | $96.78 | NextEra Energy Q1 2014 results | 3.55 | -0.22 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +34.2% | +22.5pp | +11.0% | ✗ |
+| 2014-06-20 | $99.99 | NextEra Energy Q1 2014 results | 3.55 | -0.22 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +30.5% | +20.2pp | +8.0% | ✗ |
+| 2014-06-27 | $101.60 | NextEra Energy Q1 2014 results | 3.55 | -0.22 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +32.0% | +25.8pp | +6.7% | ✗ |
+| 2014-07-03 | $98.22 | NextEra Energy Q1 2014 results | 3.55 | -0.22 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +38.5% | +28.3pp | +10.9% | ✗ |
+| 2014-07-11 | $98.97 | NextEra Energy Q1 2014 results | 3.55 | -0.22 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +37.4% | +24.6pp | +10.6% | ✗ |
+| 2014-07-18 | $98.78 | NextEra Energy Q1 2014 results | 3.55 | -0.22 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +36.2% | +22.5pp | +11.3% | ✗ |
+| 2014-07-25 | $98.45 | NextEra Energy Q1 2014 results | 3.55 | -0.22 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +37.9% | +24.1pp | +12.2% | ✗ |
+| 2014-07-30 | $96.34 | NextEra Energy Q2 2014 results | 2.25 | -1.52 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +39.7% | +25.2pp | +15.1% | ✗ |
+| 2014-08-08 | $95.45 | NextEra Energy Q2 2014 results | 2.25 | -1.52 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +38.6% | +21.4pp | +16.7% | ✗ |
+| 2014-08-15 | $96.38 | NextEra Energy Q2 2014 results | 2.25 | -1.52 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +36.5% | +20.3pp | +15.9% | ✗ |
+| 2014-08-22 | $97.64 | NextEra Energy Q2 2014 results | 2.25 | -1.52 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +34.5% | +20.6pp | +14.8% | ✗ |
+| 2014-08-29 | $98.45 | NextEra Energy Q2 2014 results | 2.25 | -1.52 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +30.8% | +17.8pp | +14.3% | ✗ |
+| 2014-09-05 | $97.92 | NextEra Energy Q2 2014 results | 2.25 | -1.52 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +32.3% | +19.5pp | +15.4% | ✗ |
+| 2014-09-12 | $94.10 | NextEra Energy Q2 2014 results | 2.25 | -1.52 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +37.8% | +25.0pp | +20.6% | ✗ |
+| 2014-09-19 | $95.14 | NextEra Energy Q2 2014 results | 2.25 | -1.52 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +37.9% | +27.3pp | +19.8% | ✗ |
+| 2014-09-26 | $93.44 | NextEra Energy Q2 2014 results | 2.25 | -1.52 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +42.0% | +29.4pp | +22.6% | ✗ |
+| 2014-10-03 | $94.23 | NextEra Energy Q2 2014 results | 2.25 | -1.52 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +35.4% | +21.2pp | +22.1% | ✗ |
+| 2014-10-10 | $93.63 | NextEra Energy Q2 2014 results | 2.25 | -1.52 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +38.0% | +20.1pp | +23.3% | ✗ |
+| 2014-10-17 | $94.25 | NextEra Energy Q2 2014 results | 2.25 | -1.52 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +38.4% | +21.2pp | +23.0% | ✗ |
+| 2014-10-24 | $98.36 | NextEra Energy Q2 2014 results | 2.25 | -1.52 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +33.0% | +19.2pp | +18.2% | ✗ |
+| 2014-10-31 | $100.22 | NextEra Energy Q3 2014 results | 2.40 | -1.37 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +31.9% | +22.2pp | +16.4% | ✗ |
+| 2014-11-07 | $104.73 | NextEra Energy Q3 2014 results | 2.40 | -1.37 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +25.2% | +16.1pp | +11.9% | ✗ |
+| 2014-11-14 | $101.85 | NextEra Energy Q3 2014 results | 2.40 | -1.37 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +18.7% | +8.4pp | +15.4% | ✗ |
+| 2014-11-21 | $103.74 | NextEra Energy Q3 2014 results | 2.40 | -1.37 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +16.4% | +5.8pp | +13.6% | ✗ |
+| 2014-11-28 | $104.39 | NextEra Energy Q3 2014 results | 2.40 | -1.37 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +17.7% | +7.2pp | +13.1% | ✗ |
+| 2014-12-05 | $102.93 | NextEra Energy Q3 2014 results | 2.40 | -1.37 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +18.1% | +7.7pp | +15.0% | ✗ |
+| 2014-12-12 | $100.81 | NextEra Energy Q3 2014 results | 2.40 | -1.37 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +23.0% | +6.1pp | +17.8% | ✗ |
+| 2014-12-19 | $105.87 | NextEra Energy Q3 2014 results | 2.40 | -1.37 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +18.8% | +5.4pp | +12.5% | ✗ |
+| 2014-12-26 | $109.29 | NextEra Energy Q3 2014 results | 2.40 | -1.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +15.1% | +2.6pp | +9.2% | ✗ |
+| 2015-01-02 | $106.69 | NextEra Energy Q3 2014 results | 2.40 | -1.37 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +18.1% | +5.1pp | +12.1% | ✗ |
+| 2015-01-09 | $106.64 | NextEra Energy Q3 2014 results | 2.40 | -1.37 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +17.1% | +2.0pp | +12.4% | ✗ |
+| 2015-01-16 | $108.22 | NextEra Energy Q3 2014 results | 2.40 | -1.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +16.1% | -0.9pp | +11.0% | ✓ |
+| 2015-01-23 | $109.48 | NextEra Energy Q3 2014 results | 2.40 | -1.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +14.5% | -0.1pp | +9.9% | ✓ |
+| 2015-01-28 | $109.92 | NextEra Energy Q4 2014 results | 3.15 | +0.53 | 1.12x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +16.4% | -2.4pp | +9.6% | ✗ |
+| 2015-02-06 | $105.80 | NextEra Energy Q4 2014 results | 3.15 | +0.71 | 0.93x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +23.3% | +7.6pp | +14.1% | ✓ |
+| 2015-02-13 | $103.62 | NextEra Energy Q4 2014 results | 3.15 | +0.80 | 0.86x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +27.9% | +12.8pp | +16.8% | ✓ |
+| 2015-02-20 | $105.60 | NextEra Energy Q4 2014 results | 3.15 | +0.72 | 0.93x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +26.3% | +10.9pp | +14.8% | ✓ |
+| 2015-02-27 | $103.46 | NextEra Energy Q4 2014 results | 3.15 | +0.85 | 0.78x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +32.1% | +15.4pp | +17.4% | ✓ |
+| 2015-03-06 | $98.70 | NextEra Energy Q4 2014 results | 3.15 | +1.08 | 0.64x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +39.2% | +20.4pp | +23.4% | ✓ |
+| 2015-03-13 | $100.61 | NextEra Energy Q4 2014 results | 3.15 | +0.97 | 0.70x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +36.4% | +16.6pp | +21.4% | ✓ |
+| 2015-03-20 | $105.99 | NextEra Energy Q4 2014 results | 3.15 | +0.76 | 0.87x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +28.9% | +12.2pp | +15.5% | ✓ |
+| 2015-03-27 | $103.54 | NextEra Energy Q4 2014 results | 3.15 | +0.85 | 0.79x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +33.2% | +15.3pp | +18.5% | ✓ |
+| 2015-04-02 | $104.75 | NextEra Energy Q4 2014 results | 3.15 | +0.81 | 0.81x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +29.0% | +10.5pp | +17.3% | ✓ |
+| 2015-04-10 | $104.90 | NextEra Energy Q4 2014 results | 3.15 | +0.81 | 0.81x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +29.8% | +13.6pp | +17.4% | ✓ |
+| 2015-04-17 | $103.15 | NextEra Energy Q4 2014 results | 3.15 | +0.88 | 0.76x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +33.5% | +16.4pp | +19.6% | ✓ |
+| 2015-04-24 | $105.05 | NextEra Energy Q4 2014 results | 3.15 | +0.80 | 0.82x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +32.8% | +16.6pp | +17.7% | ✓ |
+| 2015-04-30 | $100.93 | NextEra Energy Q1 2015 results | 3.15 | -0.31 | 2.04x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +39.0% | +20.6pp | +22.8% | ✗ |
+| 2015-05-08 | $101.21 | NextEra Energy Q1 2015 results | 3.15 | -0.32 | 2.08x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +40.0% | +22.6pp | +22.8% | ✗ |
+| 2015-05-15 | $102.14 | NextEra Energy Q1 2015 results | 3.15 | -0.37 | 2.23x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +39.9% | +22.6pp | +22.0% | ✗ |
+| 2015-05-22 | $102.23 | NextEra Energy Q1 2015 results | 3.15 | -0.38 | 2.25x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +42.0% | +25.3pp | +22.3% | ✗ |
+| 2015-05-29 | $102.34 | NextEra Energy Q1 2015 results | 3.15 | -0.38 | 2.27x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +44.3% | +25.7pp | +22.5% | ✗ |
+| 2015-06-05 | $98.77 | NextEra Energy Q1 2015 results | 3.15 | -0.18 | 1.74x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +50.7% | +30.2pp | +27.3% | ✗ |
+| 2015-06-12 | $99.24 | NextEra Energy Q1 2015 results | 3.15 | -0.21 | 1.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +47.5% | +27.4pp | +27.1% | ✗ |
+| 2015-06-19 | $100.96 | NextEra Energy Q1 2015 results | 3.15 | -0.31 | 2.04x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +48.0% | +27.6pp | +25.2% | ✗ |
+| 2015-06-26 | $98.70 | NextEra Energy Q1 2015 results | 3.15 | -0.17 | 1.74x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +53.2% | +33.0pp | +28.5% | ✗ |
+| 2015-07-02 | $100.22 | NextEra Energy Q1 2015 results | 3.15 | -0.27 | 1.94x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +46.8% | +25.8pp | +26.7% | ✗ |
+| 2015-07-10 | $101.64 | NextEra Energy Q1 2015 results | 3.15 | -0.35 | 2.15x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +45.6% | +24.5pp | +25.1% | ✗ |
+| 2015-07-17 | $103.65 | NextEra Energy Q1 2015 results | 3.15 | -0.45 | 2.52x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +42.7% | +23.0pp | +23.0% | ✗ |
+| 2015-07-24 | $102.28 | NextEra Energy Q1 2015 results | 3.15 | -0.38 | 2.26x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +46.8% | +23.8pp | +24.9% | ✗ |
+| 2015-07-31 | $105.20 | NextEra Energy Q1 2015 results | 3.15 | -0.55 | 2.86x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +44.6% | +23.0pp | +21.7% | ✗ |
+| 2015-08-04 | $106.54 | NextEra Energy Q2 2015 results | 2.80 | -0.95 | 3.22x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +44.3% | +21.8pp | +20.5% | ✗ |
+| 2015-08-14 | $109.04 | NextEra Energy Q2 2015 results | 2.80 | -1.00 | 4.10x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +42.2% | +20.2pp | +18.2% | ✗ |
+| 2015-08-21 | $106.96 | NextEra Energy Q2 2015 results | 2.80 | -1.00 | 3.34x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +47.2% | +19.9pp | +20.9% | ✗ |
+| 2015-08-28 | $101.82 | NextEra Energy Q2 2015 results | 2.80 | -0.70 | 2.18x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +55.3% | +28.0pp | +27.6% | ✗ |
+| 2015-09-04 | $94.62 | NextEra Energy Q2 2015 results | 2.80 | -0.32 | 1.31x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +66.3% | +32.9pp | +37.8% | ✗ |
+| 2015-09-11 | $95.85 | NextEra Energy Q2 2015 results | 2.80 | -0.38 | 1.43x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +65.5% | +34.2pp | +36.5% | ✗ |
+| 2015-09-18 | $97.29 | NextEra Energy Q2 2015 results | 2.80 | -0.49 | 1.64x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +59.8% | +27.4pp | +35.0% | ✗ |
+| 2015-09-25 | $98.61 | NextEra Energy Q2 2015 results | 2.80 | -0.56 | 1.81x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +56.2% | +22.3pp | +33.6% | ✗ |
+| 2015-10-02 | $98.54 | NextEra Energy Q2 2015 results | 2.80 | -0.55 | 1.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +56.2% | +22.1pp | +34.2% | ✗ |
+| 2015-10-09 | $101.05 | NextEra Energy Q2 2015 results | 2.80 | -0.70 | 2.17x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +53.5% | +22.8pp | +31.4% | ✗ |
+| 2015-10-16 | $103.66 | NextEra Energy Q2 2015 results | 2.80 | -0.86 | 2.67x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +53.1% | +23.0pp | +28.6% | ✗ |
+| 2015-10-23 | $104.56 | NextEra Energy Q2 2015 results | 2.80 | -0.92 | 2.89x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +54.5% | +26.7pp | +28.0% | ✗ |
+| 2015-10-29 | $101.78 | NextEra Energy Q3 2015 results | 2.85 | -0.72 | 2.29x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +60.2% | +32.4pp | +32.0% | ✗ |
+| 2015-11-06 | $98.84 | NextEra Energy Q3 2015 results | 2.85 | -0.54 | 1.84x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +60.9% | +33.3pp | +36.6% | ✗ |
+| 2015-11-13 | $100.43 | NextEra Energy Q3 2015 results | 2.85 | -0.64 | 2.07x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +63.3% | +31.2pp | +35.2% | ✗ |
+| 2015-11-20 | $101.02 | NextEra Energy Q3 2015 results | 2.85 | -0.68 | 2.16x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +61.5% | +33.7pp | +35.2% | ✗ |
+| 2015-11-27 | $99.37 | NextEra Energy Q3 2015 results | 2.85 | -0.58 | 1.91x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +65.5% | +36.9pp | +38.1% | ✗ |
+| 2015-12-04 | $98.14 | NextEra Energy Q3 2015 results | 2.85 | -0.51 | 1.74x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 3/8 RICH | +66.5% | +36.1pp | +40.7% | ✗ |
+| 2015-12-11 | $97.41 | NextEra Energy Q3 2015 results | 2.85 | -0.47 | 1.66x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +71.1% | +34.6pp | +42.6% | ✗ |
+| 2015-12-18 | $102.11 | NextEra Energy Q3 2015 results | 2.85 | -0.73 | 2.35x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +60.4% | +21.6pp | +36.8% | ✗ |
+| 2015-12-24 | $103.93 | NextEra Energy Q3 2015 results | 2.85 | -0.84 | 2.73x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +55.8% | +21.2pp | +35.0% | ✗ |
+| 2015-12-31 | $103.89 | NextEra Energy Q3 2015 results | 2.85 | -0.83 | 2.72x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +57.5% | +22.0pp | +35.6% | ✗ |
+| 2016-01-08 | $105.17 | NextEra Energy Q3 2015 results | 2.85 | -0.92 | 3.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +52.5% | +4.9pp | +34.5% | ✗ |
+| 2016-01-15 | $105.26 | NextEra Energy Q3 2015 results | 2.85 | -0.88 | 3.07x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +49.8% | -3.1pp | +35.0% | ✗ |
+| 2016-01-22 | $106.60 | NextEra Energy Q3 2015 results | 2.85 | -0.90 | 3.48x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +47.7% | -5.6pp | +33.8% | ✗ |
+| 2016-01-29 | $111.71 | NextEra Energy Q4 2015 results | 2.35 | -1.60 | 3.27x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +46.0% | -5.8pp | +28.3% | ✗ |
+| 2016-02-05 | $113.61 | NextEra Energy Q4 2015 results | 2.35 | -1.60 | 3.92x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +42.3% | -3.1pp | +26.7% | ✗ |
+| 2016-02-12 | $111.67 | NextEra Energy Q4 2015 results | 2.35 | -1.62 | 3.04x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +41.0% | -6.2pp | +29.3% | ✗ |
+| 2016-02-19 | $114.75 | NextEra Energy Q4 2015 results | 2.35 | -1.62 | 4.06x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +42.5% | -4.7pp | +26.3% | ✗ |
+| 2016-02-26 | $112.52 | NextEra Energy Q4 2015 results | 2.35 | -1.60 | 5.60x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +44.2% | -3.0pp | +29.2% | ✗ |
+| 2016-03-04 | $114.29 | NextEra Energy Q4 2015 results | 2.35 | -1.60 | 7.35x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +40.4% | +1.5pp | +27.5% | ✗ |
+| 2016-03-11 | $115.82 | NextEra Energy Q4 2015 results | 2.35 | -1.60 | 9.81x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +40.3% | -1.9pp | +26.3% | ✗ |
+| 2016-03-18 | $118.50 | NextEra Energy Q4 2015 results | 2.35 | -1.60 | 21.40x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +42.4% | +3.6pp | +23.9% | ✗ |
+| 2016-03-24 | $118.48 | NextEra Energy Q4 2015 results | 2.35 | -1.60 | 21.22x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +41.1% | +9.4pp | +24.4% | ✗ |
+| 2016-04-01 | $118.71 | NextEra Energy Q4 2015 results | 2.35 | -1.60 | 23.45x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +44.0% | +12.3pp | +24.6% | ✗ |
+| 2016-04-08 | $116.81 | NextEra Energy Q4 2015 results | 2.35 | -1.60 | 12.37x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +45.9% | +14.3pp | +27.2% | ✗ |
+| 2016-04-15 | $117.43 | NextEra Energy Q4 2015 results | 2.35 | -1.62 | 14.69x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +43.0% | +10.8pp | +27.0% | ✗ |
+| 2016-04-22 | $114.44 | NextEra Energy Q4 2015 results | 2.35 | -1.62 | 7.54x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +47.2% | +15.1pp | +30.8% | ✗ |
+| 2016-04-29 | $117.58 | NextEra Energy Q1 2016 results | 2.15 | -1.82 | 15.37x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +46.0% | +12.2pp | +27.8% | ✗ |
+| 2016-05-06 | $118.49 | NextEra Energy Q1 2016 results | 2.15 | -1.82 | 21.31x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +44.9% | +11.1pp | +27.4% | ✗ |
+| 2016-05-13 | $120.76 | NextEra Energy Q1 2016 results | 2.15 | -1.82 | 232.33x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +39.4% | +1.6pp | +25.4% | ✗ |
+| 2016-05-20 | $119.33 | NextEra Energy Q1 2016 results | 2.15 | -1.82 | 32.53x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +37.5% | +0.9pp | +27.3% | ✗ |
+| 2016-05-27 | $119.84 | NextEra Energy Q1 2016 results | 2.15 | -1.82 | 25.39x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +41.2% | +7.3pp | +27.1% | ✗ |
+| 2016-06-03 | $121.80 | NextEra Energy Q1 2016 results | 2.15 | -1.82 | 284.00x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +39.5% | +4.9pp | +25.3% | ✗ |
+| 2016-06-10 | $123.83 | NextEra Energy Q1 2016 results | 2.15 | -1.82 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +33.0% | -3.9pp | +23.5% | ✗ |
+| 2016-06-17 | $125.10 | NextEra Energy Q1 2016 results | 2.15 | -1.82 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +33.8% | -5.0pp | +22.5% | ✗ |
+| 2016-06-24 | $123.80 | NextEra Energy Q1 2016 results | 2.15 | -1.82 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +39.1% | -0.8pp | +24.2% | ✗ |
+| 2016-07-01 | $129.73 | NextEra Energy Q1 2016 results | 2.15 | -1.82 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +34.8% | +1.1pp | +18.9% | ✗ |
+| 2016-07-08 | $129.93 | NextEra Energy Q1 2016 results | 2.15 | -1.82 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +37.2% | +3.1pp | +19.0% | ✗ |
+| 2016-07-15 | $127.58 | NextEra Energy Q1 2016 results | 2.15 | -1.80 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +39.1% | +5.1pp | +21.7% | ✗ |
+| 2016-07-22 | $129.81 | NextEra Energy Q1 2016 results | 2.15 | -1.80 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +37.0% | +3.9pp | +20.0% | ✗ |
+| 2016-07-28 | $127.42 | NextEra Energy Q2 2016 results | 2.20 | -1.75 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +37.2% | +3.0pp | +22.6% | ✗ |
+| 2016-08-05 | $125.99 | NextEra Energy Q2 2016 results | 2.20 | -1.75 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +42.1% | +7.7pp | +24.4% | ✗ |
+| 2016-08-12 | $126.79 | NextEra Energy Q2 2016 results | 2.20 | -1.75 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +41.0% | +7.0pp | +23.9% | ✗ |
+| 2016-08-19 | $125.08 | NextEra Energy Q2 2016 results | 2.20 | -1.75 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +46.4% | +11.5pp | +26.0% | ✗ |
+| 2016-08-26 | $121.62 | NextEra Energy Q2 2016 results | 2.20 | -1.75 | 41.03x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +47.8% | +11.1pp | +30.0% | ✗ |
+| 2016-09-02 | $123.13 | NextEra Energy Q2 2016 results | 2.20 | -1.75 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +44.8% | +7.4pp | +28.7% | ✗ |
+| 2016-09-09 | $120.86 | NextEra Energy Q2 2016 results | 2.20 | -1.75 | 26.10x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +49.1% | +9.8pp | +31.4% | ✗ |
+| 2016-09-16 | $123.32 | NextEra Energy Q2 2016 results | 2.20 | -1.75 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +47.4% | +7.1pp | +29.2% | ✗ |
+| 2016-09-23 | $126.75 | NextEra Energy Q2 2016 results | 2.20 | -1.77 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +41.1% | +1.4pp | +26.1% | ✗ |
+| 2016-09-30 | $122.32 | NextEra Energy Q2 2016 results | 2.20 | -1.77 | 84.29x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +43.7% | +4.7pp | +30.9% | ✗ |
+| 2016-10-07 | $121.74 | NextEra Energy Q2 2016 results | 2.20 | -1.77 | 45.03x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +48.3% | +9.9pp | +31.9% | ✗ |
+| 2016-10-14 | $124.03 | NextEra Energy Q2 2016 results | 2.20 | -1.77 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +43.1% | +9.0pp | +29.8% | ✗ |
+| 2016-10-21 | $123.71 | NextEra Energy Q2 2016 results | 2.20 | -1.77 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +46.8% | +13.1pp | +30.5% | ✗ |
+| 2016-10-28 | $125.73 | NextEra Energy Q2 2016 results | 2.20 | -1.70 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +41.6% | +12.1pp | +28.7% | ✗ |
+| 2016-11-01 | $125.89 | NextEra Energy Q3 2016 results | 2.25 | -1.58 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +41.9% | +7.6pp | +28.7% | ✗ |
+| 2016-11-11 | $113.54 | NextEra Energy Q3 2016 results | 2.25 | -1.58 | 4.64x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +62.7% | +29.8pp | +43.1% | ✗ |
+| 2016-11-18 | $114.09 | NextEra Energy Q3 2016 results | 2.25 | -1.58 | 4.95x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +65.2% | +35.5pp | +42.8% | ✗ |
+| 2016-11-25 | $114.76 | NextEra Energy Q3 2016 results | 2.25 | -1.58 | 5.39x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +60.9% | +37.6pp | +42.3% | ✗ |
+| 2016-12-02 | $114.41 | NextEra Energy Q3 2016 results | 2.25 | -1.58 | 4.67x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +66.1% | +36.2pp | +43.1% | ✗ |
+| 2016-12-09 | $116.49 | NextEra Energy Q3 2016 results | 2.25 | -1.58 | 6.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +64.2% | +43.5pp | +40.9% | ✗ |
+| 2016-12-16 | $118.90 | NextEra Energy Q3 2016 results | 2.25 | -1.58 | 8.84x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +59.5% | +40.0pp | +38.5% | ✗ |
+| 2016-12-23 | $119.23 | NextEra Energy Q3 2016 results | 2.25 | -1.58 | 9.40x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +53.1% | +42.0pp | +38.4% | ✗ |
+| 2016-12-30 | $119.46 | NextEra Energy Q3 2016 results | 2.25 | -1.68 | 9.83x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +51.6% | +36.3pp | +38.4% | ✗ |
+| 2017-01-06 | $118.65 | NextEra Energy Q3 2016 results | 2.25 | -1.58 | 8.45x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +52.5% | +37.0pp | +39.6% | ✗ |
+| 2017-01-13 | $119.05 | NextEra Energy Q3 2016 results | 2.25 | -1.58 | 9.08x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +54.6% | +36.2pp | +39.5% | ✗ |
+| 2017-01-20 | $119.26 | NextEra Energy Q3 2016 results | 2.25 | -1.58 | 9.45x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +54.7% | +32.8pp | +39.6% | ✗ |
+| 2017-01-27 | $121.37 | NextEra Energy Q4 2016 results | 2.25 | -1.62 | 8.20x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +50.4% | +30.0pp | +37.5% | ✗ |
+| 2017-02-03 | $124.21 | NextEra Energy Q4 2016 results | 2.25 | -1.62 | 15.09x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +49.9% | +27.8pp | +34.7% | ✗ |
+| 2017-02-10 | $125.47 | NextEra Energy Q4 2016 results | 2.25 | -1.60 | 23.11x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +52.5% | +31.4pp | +33.8% | ✗ |
+| 2017-02-17 | $126.86 | NextEra Energy Q4 2016 results | 2.25 | -1.60 | 52.51x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +51.7% | +29.5pp | +32.8% | ✗ |
+| 2017-02-24 | $130.96 | NextEra Energy Q4 2016 results | 2.25 | -1.60 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +49.3% | +27.2pp | +29.1% | ✗ |
+| 2017-03-03 | $130.80 | NextEra Energy Q4 2016 results | 2.25 | -1.60 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +50.0% | +28.2pp | +29.8% | ✗ |
+| 2017-03-10 | $130.06 | NextEra Energy Q4 2016 results | 2.25 | -1.60 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +51.7% | +32.1pp | +31.0% | ✗ |
+| 2017-03-17 | $130.23 | NextEra Energy Q4 2016 results | 2.25 | -1.60 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +53.5% | +30.5pp | +31.4% | ✗ |
+| 2017-03-24 | $132.80 | NextEra Energy Q4 2016 results | 2.25 | -1.70 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +52.5% | +28.8pp | +29.3% | ✗ |
+| 2017-03-31 | $128.37 | NextEra Energy Q4 2016 results | 2.25 | -1.60 | 37.65x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +57.3% | +33.2pp | +34.2% | ✗ |
+| 2017-04-07 | $128.93 | NextEra Energy Q4 2016 results | 2.25 | -1.62 | 57.88x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +54.1% | +27.1pp | +34.0% | ✗ |
+| 2017-04-13 | $130.77 | NextEra Energy Q4 2016 results | 2.25 | -1.62 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +52.5% | +23.4pp | +32.6% | ✗ |
+| 2017-04-21 | $133.02 | NextEra Energy Q1 2017 results | 2.80 | -1.00 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +48.8% | +20.9pp | +30.7% | ✗ |
+| 2017-04-28 | $133.56 | NextEra Energy Q1 2017 results | 2.80 | -1.00 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +50.0% | +22.5pp | +30.6% | ✗ |
+| 2017-05-05 | $134.33 | NextEra Energy Q1 2017 results | 2.80 | -1.00 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +49.7% | +22.8pp | +30.3% | ✗ |
+| 2017-05-12 | $135.55 | NextEra Energy Q1 2017 results | 2.80 | -1.00 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +47.8% | +23.1pp | +29.5% | ✗ |
+| 2017-05-19 | $137.29 | NextEra Energy Q1 2017 results | 2.80 | -1.00 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +51.2% | +27.0pp | +28.5% | ✗ |
+| 2017-05-26 | $140.71 | NextEra Energy Q1 2017 results | 2.80 | -1.00 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +50.0% | +28.8pp | +25.9% | ✗ |
+| 2017-06-02 | $142.71 | NextEra Energy Q1 2017 results | 2.80 | -1.00 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +45.1% | +28.3pp | +24.5% | ✗ |
+| 2017-06-09 | $140.24 | NextEra Energy Q1 2017 results | 2.80 | -1.00 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +52.1% | +29.8pp | +27.4% | ✗ |
+| 2017-06-16 | $142.84 | NextEra Energy Q1 2017 results | 2.80 | -1.00 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +51.1% | +28.2pp | +25.7% | ✗ |
+| 2017-06-23 | $143.14 | NextEra Energy Q1 2017 results | 2.80 | -1.00 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +51.2% | +26.0pp | +26.1% | ✗ |
+| 2017-06-30 | $140.13 | NextEra Energy Q1 2017 results | 2.80 | -1.00 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +52.5% | +27.1pp | +29.3% | ✗ |
+| 2017-07-07 | $140.48 | NextEra Energy Q1 2017 results | 2.80 | -0.98 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +54.5% | +26.9pp | +29.4% | ✗ |
+| 2017-07-14 | $141.66 | NextEra Energy Q1 2017 results | 2.80 | -0.98 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +53.6% | +27.0pp | +28.9% | ✗ |
+| 2017-07-21 | $144.37 | NextEra Energy Q1 2017 results | 2.80 | -1.00 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +51.4% | +26.9pp | +27.1% | ✗ |
+| 2017-07-27 | $144.65 | NextEra Energy Q2 2017 results | 2.85 | -0.92 | 57.52x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +50.8% | +24.4pp | +27.4% | ✗ |
+| 2017-08-04 | $146.75 | NextEra Energy Q2 2017 results | 2.85 | -0.92 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +50.1% | +27.7pp | +26.1% | ✗ |
+| 2017-08-11 | $147.18 | NextEra Energy Q2 2017 results | 2.85 | -0.92 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +53.1% | +29.4pp | +26.3% | ✗ |
+| 2017-08-18 | $149.93 | NextEra Energy Q2 2017 results | 2.85 | -0.92 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +51.0% | +27.8pp | +24.6% | ✗ |
+| 2017-08-25 | $150.10 | NextEra Energy Q2 2017 results | 2.85 | -0.92 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +53.1% | +32.4pp | +25.1% | ✗ |
+| 2017-09-01 | $150.16 | NextEra Energy Q2 2017 results | 2.85 | -0.92 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +52.0% | +29.8pp | +25.7% | ✗ |
+| 2017-09-08 | $148.26 | NextEra Energy Q2 2017 results | 2.85 | -0.92 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +54.7% | +29.6pp | +27.9% | ✗ |
+| 2017-09-15 | $150.09 | NextEra Energy Q2 2017 results | 2.85 | -0.92 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +51.7% | +27.2pp | +26.9% | ✗ |
+| 2017-09-22 | $146.36 | NextEra Energy Q2 2017 results | 2.85 | -0.92 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +60.5% | +36.7pp | +30.9% | ✗ |
+| 2017-09-29 | $146.55 | NextEra Energy Q2 2017 results | 2.85 | -0.92 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +64.1% | +42.3pp | +31.5% | ✗ |
+| 2017-10-06 | $147.47 | NextEra Energy Q2 2017 results | 2.85 | -0.90 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +64.6% | +44.8pp | +31.6% | ✗ |
+| 2017-10-13 | $150.55 | NextEra Energy Q2 2017 results | 2.85 | -0.90 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +58.6% | +38.2pp | +29.7% | ✗ |
+| 2017-10-20 | $154.16 | NextEra Energy Q2 2017 results | 2.85 | -0.90 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +56.8% | +36.8pp | +27.4% | ✗ |
+| 2017-10-27 | $155.84 | NextEra Energy Q3 2017 results | 2.30 | -1.57 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +57.9% | +36.8pp | +26.8% | ✗ |
+| 2017-11-03 | $152.65 | NextEra Energy Q3 2017 results | 2.30 | -1.57 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +60.4% | +37.9pp | +30.3% | ✗ |
+| 2017-11-10 | $155.16 | NextEra Energy Q3 2017 results | 2.30 | -1.57 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +49.0% | +25.3pp | +28.9% | ✗ |
+| 2017-11-17 | $156.04 | NextEra Energy Q3 2017 results | 2.30 | -1.57 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +54.2% | +29.2pp | +28.8% | ✗ |
+| 2017-11-24 | $156.03 | NextEra Energy Q3 2017 results | 2.30 | -1.57 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +54.8% | +31.4pp | +29.4% | ✗ |
+| 2017-12-01 | $157.47 | NextEra Energy Q3 2017 results | 2.30 | -1.57 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +54.5% | +31.7pp | +28.9% | ✗ |
+| 2017-12-08 | $159.03 | NextEra Energy Q3 2017 results | 2.30 | -1.57 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +53.3% | +30.8pp | +28.2% | ✗ |
+| 2017-12-15 | $158.43 | NextEra Energy Q3 2017 results | 2.30 | -1.57 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +55.5% | +33.0pp | +29.4% | ✗ |
+| 2017-12-22 | $154.54 | NextEra Energy Q3 2017 results | 2.30 | -1.57 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +63.2% | +39.3pp | +33.5% | ✗ |
+| 2017-12-29 | $156.19 | NextEra Energy Q3 2017 results | 2.30 | -1.57 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +61.3% | +36.3pp | +32.8% | ✗ |
+| 2018-01-05 | $151.71 | NextEra Energy Q3 2017 results | 2.30 | -1.57 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +64.6% | +42.8pp | +37.4% | ✗ |
+| 2018-01-12 | $150.32 | NextEra Energy Q3 2017 results | 2.30 | -1.57 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +68.3% | +47.2pp | +39.6% | ✗ |
+| 2018-01-19 | $150.16 | NextEra Energy Q3 2017 results | 2.30 | -1.55 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +75.0% | +52.8pp | +40.7% | ✗ |
+| 2018-01-26 | $157.69 | NextEra Energy Q4 2017 results | 2.10 | +0.17 | 0.40x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +73.2% | +54.8pp | +34.8% | ✓ |
+| 2018-02-02 | $155.92 | NextEra Energy Q4 2017 results | 2.10 | +0.21 | 0.38x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +78.1% | +57.4pp | +37.6% | ✓ |
+| 2018-02-09 | $148.10 | NextEra Energy Q4 2017 results | 2.10 | +0.42 | 0.27x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +88.4% | +57.2pp | +46.0% | ✓ |
+| 2018-02-16 | $156.05 | NextEra Energy Q4 2017 results | 2.10 | +0.18 | 0.40x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +84.5% | +57.0pp | +39.7% | ✓ |
+| 2018-02-23 | $156.26 | NextEra Energy Q4 2017 results | 2.10 | +0.17 | 0.40x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +83.7% | +58.4pp | +40.5% | ✓ |
+| 2018-03-02 | $152.85 | NextEra Energy Q4 2017 results | 2.10 | +0.24 | 0.35x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +81.9% | +63.1pp | +44.7% | ✓ |
+| 2018-03-09 | $154.81 | NextEra Energy Q4 2017 results | 2.10 | +0.19 | 0.38x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +75.1% | +72.9pp | +43.9% | ✓ |
+| 2018-03-16 | $161.04 | NextEra Energy Q4 2017 results | 2.10 | +0.06 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +31.1% | +40.1pp | +38.8% | ✓ |
+| 2018-03-23 | $159.49 | NextEra Energy Q4 2017 results | 2.10 | +0.08 | 0.46x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +20.0% | +29.3pp | +40.3% | ✓ |
+| 2018-03-29 | $163.33 | NextEra Energy Q4 2017 results | 2.10 | +0.01 | 0.52x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +48.0% | +47.5pp | +37.3% | ✓ |
+| 2018-04-06 | $162.75 | NextEra Energy Q4 2017 results | 2.10 | +0.02 | 0.51x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +50.1% | +43.8pp | +38.4% | ✓ |
+| 2018-04-13 | $160.22 | NextEra Energy Q4 2017 results | 2.10 | +0.06 | 0.47x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +53.5% | +45.4pp | +41.1% | ✓ |
+| 2018-04-20 | $160.79 | NextEra Energy Q4 2017 results | 2.10 | +0.05 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +53.8% | +44.1pp | +41.1% | ✓ |
+| 2018-04-25 | $160.33 | NextEra Energy Q1 2018 results | 2.35 | -0.01 | 0.47x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +55.6% | +44.1pp | +42.0% | ✓ |
+| 2018-05-04 | $164.09 | NextEra Energy Q1 2018 results | 2.35 | -0.07 | 0.54x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +46.2% | +35.4pp | +39.4% | ✓ |
+| 2018-05-11 | $160.74 | NextEra Energy Q1 2018 results | 2.35 | -0.02 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +47.5% | +36.3pp | +42.7% | ✓ |
+| 2018-05-18 | $156.45 | NextEra Energy Q1 2018 results | 2.35 | +0.05 | 0.41x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +56.7% | +43.9pp | +47.1% | ✓ |
+| 2018-05-25 | $162.42 | NextEra Energy Q1 2018 results | 2.35 | -0.05 | 0.51x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +50.0% | +37.4pp | +42.0% | ✓ |
+| 2018-06-01 | $163.08 | NextEra Energy Q1 2018 results | 2.35 | -0.06 | 0.52x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +63.6% | +47.9pp | +42.0% | ✓ |
+| 2018-06-08 | $156.80 | NextEra Energy Q1 2018 results | 2.35 | +0.04 | 0.41x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +72.5% | +52.4pp | +48.4% | ✓ |
+| 2018-06-15 | $159.54 | NextEra Energy Q1 2018 results | 2.35 | -0.01 | 0.46x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +62.1% | +47.8pp | +46.4% | ✓ |
+| 2018-06-22 | $164.30 | NextEra Energy Q1 2018 results | 2.35 | -0.09 | 0.54x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +56.5% | +39.3pp | +42.6% | ✓ |
+| 2018-06-29 | $167.03 | NextEra Energy Q1 2018 results | 2.35 | -0.14 | 0.60x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +48.6% | +32.3pp | +40.7% | ✓ |
+| 2018-07-06 | $170.31 | NextEra Energy Q1 2018 results | 2.35 | -0.18 | 0.66x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +50.9% | +31.7pp | +38.4% | ✓ |
+| 2018-07-13 | $169.52 | NextEra Energy Q1 2018 results | 2.35 | -0.17 | 0.65x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +57.1% | +40.5pp | +39.5% | ✓ |
+| 2018-07-20 | $169.97 | NextEra Energy Q1 2018 results | 2.35 | -0.18 | 0.66x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +67.3% | +47.3pp | +39.8% | ✓ |
+| 2018-07-26 | $168.16 | NextEra Energy Q2 2018 results | 2.40 | -0.18 | 0.62x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +72.6% | +55.4pp | +42.1% | ✓ |
+| 2018-08-03 | $171.15 | NextEra Energy Q2 2018 results | 2.40 | -0.23 | 0.68x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +68.0% | +48.2pp | +40.5% | ✓ |
+| 2018-08-10 | $170.93 | NextEra Energy Q2 2018 results | 2.40 | -0.23 | 0.68x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +71.8% | +49.4pp | +41.5% | ✓ |
+| 2018-08-17 | $175.17 | NextEra Energy Q2 2018 results | 2.40 | -0.30 | 0.78x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +67.3% | +44.8pp | +38.8% | ✓ |
+| 2018-08-24 | $172.70 | NextEra Energy Q2 2018 results | 2.40 | -0.25 | 0.72x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +69.5% | +46.3pp | +41.5% | ✓ |
+| 2018-08-31 | $170.10 | NextEra Energy Q2 2018 results | 2.40 | -0.22 | 0.66x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +70.4% | +45.8pp | +44.3% | ✓ |
+| 2018-09-07 | $172.10 | NextEra Energy Q2 2018 results | 2.40 | -0.25 | 0.71x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +67.1% | +44.1pp | +43.2% | ✓ |
+| 2018-09-14 | $173.65 | NextEra Energy Q2 2018 results | 2.40 | -0.27 | 0.74x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +68.3% | +48.1pp | +42.6% | ✓ |
+| 2018-09-21 | $170.76 | NextEra Energy Q2 2018 results | 2.40 | -0.22 | 0.67x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +67.8% | +52.0pp | +45.7% | ✓ |
+| 2018-09-28 | $167.60 | NextEra Energy Q2 2018 results | 2.40 | -0.17 | 0.61x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +75.7% | +56.9pp | +49.1% | ✓ |
+| 2018-10-05 | $172.37 | NextEra Energy Q2 2018 results | 2.40 | -0.25 | 0.71x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +73.0% | +51.1pp | +45.5% | ✓ |
+| 2018-10-12 | $169.36 | NextEra Energy Q2 2018 results | 2.40 | -0.19 | 0.64x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +86.6% | +54.8pp | +48.9% | ✓ |
+| 2018-10-19 | $173.46 | NextEra Energy Q2 2018 results | 2.40 | -0.27 | 0.74x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +78.6% | +50.8pp | +46.2% | ✓ |
+| 2018-10-24 | $175.60 | NextEra Energy Q3 2018 results | 2.25 | -0.45 | 0.78x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 2/8 FAIR | +78.5% | +43.9pp | +45.0% | ✗ |
+| 2018-11-02 | $168.15 | NextEra Energy Q3 2018 results | 2.25 | -0.32 | 0.61x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +84.9% | +59.3pp | +52.3% | ✓ |
+| 2018-11-09 | $176.56 | NextEra Energy Q3 2018 results | 2.25 | -0.47 | 0.80x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 2/8 FAIR | +76.9% | +45.2pp | +45.9% | ✗ |
+| 2018-11-16 | $180.39 | NextEra Energy Q3 2018 results | 2.25 | -0.53 | 0.91x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +78.1% | +41.6pp | +43.7% | ✗ |
+| 2018-11-23 | $177.33 | NextEra Energy Q3 2018 results | 2.25 | -0.48 | 0.82x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +74.0% | +34.0pp | +47.0% | ✗ |
+| 2018-11-30 | $181.71 | NextEra Energy Q3 2018 results | 2.25 | -0.56 | 0.94x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +67.8% | +32.4pp | +44.0% | ✗ |
+| 2018-12-07 | $182.86 | NextEra Energy Q3 2018 results | 2.25 | -0.58 | 0.98x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +66.1% | +21.8pp | +43.8% | ✗ |
+| 2018-12-14 | $181.24 | NextEra Energy Q3 2018 results | 2.25 | -0.55 | 0.93x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 4/8 RICH | +68.2% | +23.9pp | +45.7% | ✗ |
+| 2018-12-21 | $174.11 | NextEra Energy Q3 2018 results | 2.25 | -0.42 | 0.74x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +77.0% | +19.5pp | +52.3% | ✓ |
+| 2018-12-28 | $172.72 | NextEra Energy Q3 2018 results | 2.25 | -0.40 | 0.71x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +81.0% | +26.2pp | +54.1% | ✓ |
+| 2019-01-04 | $172.53 | NextEra Energy Q3 2018 results | 2.25 | -0.39 | 0.70x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +78.2% | +27.6pp | +54.8% | ✓ |
+| 2019-01-11 | $175.71 | NextEra Energy Q3 2018 results | 2.25 | -0.45 | 0.78x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 2/8 FAIR | +87.4% | +36.9pp | +52.8% | ✗ |
+| 2019-01-18 | $176.09 | NextEra Energy Q3 2018 results | 2.25 | -0.45 | 0.79x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 2/8 FAIR | +92.4% | +47.1pp | +53.2% | ✗ |
+| 2019-01-25 | $174.20 | NextEra Energy Q4 2018 results | 2.70 | +1.09 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +105.6% | +56.7pp | +55.8% | ✓ |
+| 2019-02-01 | $177.82 | NextEra Energy Q4 2018 results | 2.70 | +1.01 | 0.26x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +89.7% | +46.2pp | +53.3% | ✓ |
+| 2019-02-08 | $183.01 | NextEra Energy Q4 2018 results | 2.70 | +0.90 | 0.31x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +88.1% | +39.5pp | +49.6% | ✓ |
+| 2019-02-15 | $184.04 | NextEra Energy Q4 2018 results | 2.70 | +0.87 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +86.4% | +40.8pp | +49.3% | ✓ |
+| 2019-02-22 | $188.13 | NextEra Energy Q4 2018 results | 2.70 | +0.82 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +65.3% | +22.6pp | +46.5% | ✓ |
+| 2019-03-01 | $187.56 | NextEra Energy Q4 2018 results | 2.70 | +0.83 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +67.7% | +24.7pp | +47.3% | ✓ |
+| 2019-03-08 | $188.70 | NextEra Energy Q4 2018 results | 2.70 | +0.81 | 0.35x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +56.0% | +12.8pp | +46.6% | ✓ |
+| 2019-03-15 | $191.24 | NextEra Energy Q4 2018 results | 2.70 | +0.77 | 0.37x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +63.7% | +19.2pp | +45.3% | ✓ |
+| 2019-03-22 | $193.93 | NextEra Energy Q4 2018 results | 2.70 | +0.74 | 0.40x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +53.5% | +8.8pp | +44.1% | ✓ |
+| 2019-03-29 | $193.32 | NextEra Energy Q4 2018 results | 2.70 | +0.75 | 0.39x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +60.4% | +16.3pp | +45.4% | ✓ |
+| 2019-04-05 | $190.08 | NextEra Energy Q4 2018 results | 2.70 | +0.80 | 0.35x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +67.3% | +22.5pp | +48.6% | ✓ |
+| 2019-04-12 | $190.85 | NextEra Energy Q4 2018 results | 2.70 | +0.78 | 0.36x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +68.4% | +22.7pp | +48.7% | ✓ |
+| 2019-04-18 | $189.36 | NextEra Energy Q4 2018 results | 2.70 | +0.81 | 0.35x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +76.7% | +28.9pp | +50.6% | ✓ |
+| 2019-04-24 | $190.06 | NextEra Energy Q1 2019 results | 2.40 | +0.42 | 0.35x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +70.4% | +23.9pp | +50.8% | ✓ |
+| 2019-05-03 | $192.41 | NextEra Energy Q1 2019 results | 2.40 | +0.39 | 0.38x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +65.1% | +19.0pp | +49.8% | ✓ |
+| 2019-05-10 | $191.76 | NextEra Energy Q1 2019 results | 2.40 | +0.40 | 0.37x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +61.7% | +12.7pp | +51.1% | ✓ |
+| 2019-05-17 | $198.98 | NextEra Energy Q1 2019 results | 2.40 | +0.30 | 0.46x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +50.0% | +0.7pp | +46.2% | ✓ |
+| 2019-05-24 | $203.37 | NextEra Energy Q1 2019 results | 2.40 | +0.26 | 0.51x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +51.0% | -1.3pp | +43.6% | ✓ |
+| 2019-05-31 | $198.21 | NextEra Energy Q1 2019 results | 2.40 | +0.33 | 0.45x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +52.6% | -4.1pp | +47.8% | ✓ |
+| 2019-06-07 | $204.39 | NextEra Energy Q1 2019 results | 2.40 | +0.25 | 0.53x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +47.3% | -3.4pp | +43.6% | ✓ |
+| 2019-06-14 | $206.96 | NextEra Energy Q1 2019 results | 2.40 | +0.22 | 0.56x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +47.1% | -3.9pp | +42.2% | ✓ |
+| 2019-06-21 | $207.55 | NextEra Energy Q1 2019 results | 2.40 | +0.21 | 0.57x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +48.6% | +1.6pp | +42.2% | ✓ |
+| 2019-06-28 | $204.86 | NextEra Energy Q1 2019 results | 2.40 | +0.25 | 0.53x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +52.2% | +2.4pp | +44.6% | ✓ |
+| 2019-07-05 | $208.11 | NextEra Energy Q1 2019 results | 2.40 | +0.21 | 0.58x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +48.1% | -1.0pp | +42.8% | ✓ |
+| 2019-07-12 | $208.73 | NextEra Energy Q1 2019 results | 2.40 | +0.19 | 0.59x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +49.3% | +0.1pp | +42.8% | ✓ |
+| 2019-07-19 | $209.73 | NextEra Energy Q1 2019 results | 2.40 | +0.18 | 0.61x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +52.2% | +5.4pp | +42.5% | ✓ |
+| 2019-07-25 | $207.63 | NextEra Energy Q2 2019 results | 2.95 | +1.21 | 0.44x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +54.1% | +3.7pp | +44.2% | ✓ |
+| 2019-08-02 | $211.41 | NextEra Energy Q2 2019 results | 2.95 | +1.14 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +54.4% | +1.0pp | +42.0% | ✓ |
+| 2019-08-09 | $216.48 | NextEra Energy Q2 2019 results | 2.95 | +1.04 | 0.54x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +54.0% | -1.5pp | +39.0% | ✓ |
+| 2019-08-16 | $217.53 | NextEra Energy Q2 2019 results | 2.95 | +1.03 | 0.55x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +59.5% | +0.9pp | +38.8% | ✓ |
+| 2019-08-23 | $221.90 | NextEra Energy Q2 2019 results | 2.95 | +0.96 | 0.61x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +57.2% | -3.8pp | +36.5% | ✓ |
+| 2019-08-30 | $219.08 | NextEra Energy Q2 2019 results | 2.95 | +1.00 | 0.57x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +58.5% | +0.0pp | +38.8% | ✓ |
+| 2019-09-06 | $220.14 | NextEra Energy Q2 2019 results | 2.95 | +0.99 | 0.58x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +60.9% | +5.1pp | +38.6% | ✓ |
+| 2019-09-13 | $218.49 | NextEra Energy Q2 2019 results | 2.95 | +1.02 | 0.56x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +60.1% | +8.0pp | +40.2% | ✓ |
+| 2019-09-20 | $225.72 | NextEra Energy Q2 2019 results | 2.95 | +0.92 | 0.66x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +49.8% | +0.5pp | +36.1% | ✓ |
+| 2019-09-27 | $231.26 | NextEra Energy Q2 2019 results | 2.95 | +0.83 | 0.74x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +41.2% | -12.5pp | +33.3% | ✓ |
+| 2019-10-04 | $233.59 | NextEra Energy Q2 2019 results | 2.95 | +0.70 | 0.77x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +40.8% | -8.7pp | +32.2% | ✓ |
+| 2019-10-11 | $229.54 | NextEra Energy Q2 2019 results | 2.95 | +0.87 | 0.71x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +40.6% | -9.9pp | +34.7% | ✓ |
+| 2019-10-18 | $232.48 | NextEra Energy Q2 2019 results | 2.95 | +0.82 | 0.76x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +44.3% | -9.6pp | +33.2% | ✓ |
+| 2019-10-23 | $236.00 | NextEra Energy Q3 2019 results | 2.50 | +0.39 | 0.67x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +47.9% | -6.9pp | +31.5% | ✓ |
+| 2019-11-01 | $235.71 | NextEra Energy Q3 2019 results | 2.50 | +0.40 | 0.67x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +50.1% | -3.9pp | +32.0% | ✓ |
+| 2019-11-08 | $222.08 | NextEra Energy Q3 2019 results | 2.50 | +0.77 | 0.51x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +57.5% | +2.1pp | +40.5% | ✓ |
+| 2019-11-15 | $231.42 | NextEra Energy Q3 2019 results | 2.50 | +0.62 | 0.62x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +55.9% | +2.4pp | +35.2% | ✓ |
+| 2019-11-22 | $233.38 | NextEra Energy Q3 2019 results | 2.50 | +0.48 | 0.64x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +54.6% | +0.6pp | +34.4% | ✓ |
+| 2019-11-29 | $233.82 | NextEra Energy Q3 2019 results | 2.50 | +0.47 | 0.64x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +56.7% | +5.3pp | +34.5% | ✓ |
+| 2019-12-06 | $234.39 | NextEra Energy Q3 2019 results | 2.50 | +0.46 | 0.65x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +57.2% | +7.8pp | +34.6% | ✓ |
+| 2019-12-13 | $236.95 | NextEra Energy Q3 2019 results | 2.50 | +0.41 | 0.68x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +59.8% | +9.2pp | +33.8% | ✓ |
+| 2019-12-20 | $242.71 | NextEra Energy Q3 2019 results | 2.50 | +0.31 | 0.76x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +53.1% | +7.7pp | +31.1% | ✓ |
+| 2019-12-27 | $242.51 | NextEra Energy Q3 2019 results | 2.50 | +0.32 | 0.76x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +55.5% | +4.1pp | +31.7% | ✓ |
+| 2020-01-03 | $240.32 | NextEra Energy Q3 2019 results | 2.50 | +0.35 | 0.73x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +57.5% | +5.8pp | +33.4% | ✓ |
+| 2020-01-10 | $243.55 | NextEra Energy Q3 2019 results | 2.50 | +0.29 | 0.77x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | +43.3% | -3.2pp | +31.9% | ✓ |
+| 2020-01-17 | $253.40 | NextEra Energy Q3 2019 results | 2.50 | +0.17 | 0.92x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +36.0% | -7.5pp | +26.9% | ✓ |
+| 2020-01-24 | $263.72 | NextEra Energy Q4 2019 results | 2.15 | -1.76 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.7% | -8.5pp | +21.9% | ✓ |
+| 2020-01-31 | $268.20 | NextEra Energy Q4 2019 results | 2.15 | -1.76 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +12.5% | -28.4pp | +19.6% | ✓ |
+| 2020-02-07 | $269.54 | NextEra Energy Q4 2019 results | 2.15 | -1.76 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +16.7% | -21.4pp | +18.8% | ✓ |
+| 2020-02-14 | $278.52 | NextEra Energy Q4 2019 results | 2.15 | -1.78 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +11.8% | -21.6pp | +14.7% | ✓ |
+| 2020-02-21 | $277.59 | NextEra Energy Q4 2019 results | 2.15 | -1.78 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +11.1% | -22.5pp | +15.0% | ✓ |
+| 2020-02-28 | $252.76 | NextEra Energy Q4 2019 results | 2.15 | -1.60 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.6% | -22.6pp | +26.3% | ✓ |
+| 2020-03-06 | $271.82 | NextEra Energy Q4 2019 results | 2.15 | -1.74 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +22.5% | -26.7pp | +17.6% | ✓ |
+| 2020-03-13 | $221.56 | NextEra Energy Q4 2019 results | 2.15 | -1.30 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +48.6% | -11.6pp | +44.6% | ✗ |
+| 2020-03-20 | $191.75 | NextEra Energy Q4 2019 results | 2.15 | -1.12 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +78.1% | -21.1pp | +67.4% | ✗ |
+| 2020-03-27 | $231.95 | NextEra Energy Q4 2019 results | 2.15 | -1.36 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +50.0% | -33.2pp | +38.7% | ✗ |
+| 2020-04-03 | $221.64 | NextEra Energy Q4 2019 results | 2.15 | -1.29 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +60.1% | -26.9pp | +45.5% | ✗ |
+| 2020-04-09 | $245.28 | NextEra Energy Q4 2019 results | 2.15 | -1.53 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +45.3% | -19.7pp | +31.8% | ✗ |
+| 2020-04-17 | $246.26 | NextEra Energy Q4 2019 results | 2.15 | -1.53 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +39.4% | -17.3pp | +31.4% | ✗ |
+| 2020-04-23 | $241.14 | NextEra Energy Q1 2020 results | 2.50 | -1.06 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +27.7% | -29.1pp | +34.2% | ✓ |
+| 2020-05-01 | $227.05 | NextEra Energy Q1 2020 results | 2.50 | -0.87 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +30.4% | -19.3pp | +42.3% | ✓ |
+| 2020-05-08 | $229.73 | NextEra Energy Q1 2020 results | 2.50 | -0.87 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +31.4% | -13.1pp | +40.6% | ✓ |
+| 2020-05-15 | $227.85 | NextEra Energy Q1 2020 results | 2.50 | -0.86 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +27.8% | -16.5pp | +41.6% | ✓ |
+| 2020-05-22 | $233.85 | NextEra Energy Q1 2020 results | 2.50 | -0.97 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +27.0% | -8.7pp | +37.9% | ✓ |
+| 2020-05-29 | $255.56 | NextEra Energy Q1 2020 results | 2.50 | -1.09 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +26.6% | -13.6pp | +26.2% | ✓ |
+| 2020-06-05 | $254.38 | NextEra Energy Q1 2020 results | 2.50 | -1.07 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.6% | -3.5pp | +26.9% | ✓ |
+| 2020-06-12 | $246.91 | NextEra Energy Q1 2020 results | 2.50 | -1.01 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.0% | -3.9pp | +31.0% | ✓ |
+| 2020-06-19 | $242.21 | NextEra Energy Q1 2020 results | 2.50 | -0.98 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +22.0% | -0.2pp | +33.4% | ✓ |
+| 2020-06-26 | $236.22 | NextEra Energy Q1 2020 results | 2.50 | -0.94 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +37.3% | +3.5pp | +36.9% | ✗ |
+| 2020-07-02 | $246.40 | NextEra Energy Q1 2020 results | 2.50 | -0.99 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +35.8% | +10.0pp | +31.4% | ✗ |
+| 2020-07-10 | $259.60 | NextEra Energy Q1 2020 results | 2.50 | -1.06 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.4% | +2.4pp | +24.8% | ✗ |
+| 2020-07-17 | $275.38 | NextEra Energy Q1 2020 results | 2.50 | -1.15 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +18.8% | -4.5pp | +17.8% | ✓ |
+| 2020-07-24 | $280.25 | NextEra Energy Q2 2020 results | 2.10 | -1.82 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +19.0% | -7.8pp | +15.8% | ✓ |
+| 2020-07-31 | $280.70 | NextEra Energy Q2 2020 results | 2.10 | -1.81 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +24.8% | -4.9pp | +15.7% | ✓ |
+| 2020-08-07 | $287.78 | NextEra Energy Q2 2020 results | 2.10 | -1.85 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +26.6% | -0.5pp | +13.1% | ✓ |
+| 2020-08-14 | $280.50 | NextEra Energy Q2 2020 results | 2.10 | -1.80 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +33.4% | +3.2pp | +16.2% | ✗ |
+| 2020-08-21 | $282.41 | NextEra Energy Q2 2020 results | 2.10 | -1.78 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +31.4% | +3.7pp | +15.6% | ✗ |
+| 2020-08-28 | $279.55 | NextEra Energy Q2 2020 results | 2.10 | -1.75 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +29.9% | +11.0pp | +16.9% | ✗ |
+| 2020-09-04 | $277.32 | NextEra Energy Q2 2020 results | 2.10 | -1.73 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +27.3% | +9.4pp | +17.9% | ✗ |
+| 2020-09-11 | $278.15 | NextEra Energy Q2 2020 results | 2.10 | -1.73 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +33.8% | +8.7pp | +17.6% | ✗ |
+| 2020-09-18 | $276.92 | NextEra Energy Q2 2020 results | 2.10 | -1.72 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +27.0% | +6.9pp | +18.2% | ✗ |
+| 2020-09-25 | $281.82 | NextEra Energy Q2 2020 results | 2.10 | -1.74 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +21.6% | +6.1pp | +16.3% | ✗ |
+| 2020-10-02 | $281.17 | NextEra Energy Q2 2020 results | 2.10 | -1.73 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +16.1% | +5.5pp | +16.6% | ✗ |
+| 2020-10-09 | $302.91 | NextEra Energy Q2 2020 results | 2.10 | -1.84 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +5.5% | -2.5pp | +8.2% | ✓ |
+| 2020-10-16 | $305.60 | NextEra Energy Q2 2020 results | 2.10 | -1.84 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -1.9% | -8.3pp | +7.1% | ✓ |
+| 2020-10-22 | $302.27 | NextEra Energy Q3 2020 results | 2.20 | -1.71 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -1.0% | -13.0pp | +8.0% | ✓ |
+| 2020-10-30 | $73.21 | NextEra Energy Q3 2020 results | 2.20 | -1.66 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +12.3% | -10.5pp | +11.3% | ✓ |
+| 2020-11-06 | $75.72 | NextEra Energy Q3 2020 results | 2.20 | -1.70 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +8.2% | -2.6pp | +7.4% | ✓ |
+| 2020-11-13 | $77.19 | NextEra Energy Q3 2020 results | 2.20 | -1.73 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +12.0% | -2.6pp | +5.2% | ✓ |
+| 2020-11-20 | $75.55 | NextEra Energy Q3 2020 results | 2.20 | -1.69 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +14.3% | -0.5pp | +7.3% | ✓ |
+| 2020-11-27 | $75.13 | NextEra Energy Q3 2020 results | 2.20 | -1.68 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +17.9% | +4.0pp | +7.9% | ✗ |
+| 2020-12-04 | $72.52 | NextEra Energy Q3 2020 results | 2.20 | -1.63 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +22.0% | +8.7pp | +11.7% | ✗ |
+| 2020-12-11 | $73.80 | NextEra Energy Q3 2020 results | 2.20 | -1.65 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +18.9% | +8.3pp | +9.6% | ✗ |
+| 2020-12-18 | $74.51 | NextEra Energy Q3 2020 results | 2.20 | -1.65 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +17.3% | +10.2pp | +8.4% | ✗ |
+| 2020-12-24 | $74.98 | NextEra Energy Q3 2020 results | 2.20 | -1.66 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +16.6% | +9.5pp | +7.6% | ✗ |
+| 2020-12-31 | $77.15 | NextEra Energy Q3 2020 results | 2.20 | -1.70 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +12.6% | +7.1pp | +4.4% | ✗ |
+| 2021-01-08 | $81.13 | NextEra Energy Q3 2020 results | 2.20 | -1.79 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +7.1% | +2.2pp | -0.9% | ✗ |
+| 2021-01-15 | $82.04 | NextEra Energy Q3 2020 results | 2.20 | -1.81 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +7.2% | -2.1pp | -2.0% | ✓ |
+| 2021-01-22 | $84.21 | NextEra Energy Q3 2020 results | 2.20 | -1.85 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +1.0% | -5.5pp | -4.5% | ✓ |
+| 2021-01-27 | $80.19 | NextEra Energy Q4 2020 results | 2.25 | -1.89 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -1.7% | -13.3pp | +0.3% | ✓ |
+| 2021-02-05 | $83.60 | NextEra Energy Q4 2020 results | 2.25 | -1.92 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -6.8% | -16.3pp | -3.8% | ✓ |
+| 2021-02-12 | $83.13 | NextEra Energy Q4 2020 results | 2.25 | -1.92 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -6.2% | -13.2pp | -3.2% | ✓ |
+| 2021-02-19 | $78.10 | NextEra Energy Q4 2020 results | 2.25 | -1.81 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +1.5% | -6.0pp | +3.0% | ✓ |
+| 2021-02-26 | $73.48 | NextEra Energy Q4 2020 results | 2.25 | -1.71 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +3.1% | -4.3pp | +9.5% | ✓ |
+| 2021-03-05 | $70.70 | NextEra Energy Q4 2020 results | 2.25 | -1.66 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +9.1% | +0.6pp | +13.6% | ✗ |
+| 2021-03-12 | $75.67 | NextEra Energy Q4 2020 results | 2.25 | -1.72 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +0.9% | -0.1pp | +5.9% | ✓ |
+| 2021-03-19 | $70.84 | NextEra Energy Q4 2020 results | 2.25 | -1.64 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +11.5% | +8.2pp | +13.0% | ✗ |
+| 2021-03-26 | $74.06 | NextEra Energy Q4 2020 results | 2.25 | -1.69 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +6.7% | +3.6pp | +7.8% | ✗ |
+| 2021-04-01 | $75.77 | NextEra Energy Q4 2020 results | 2.25 | -1.72 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +6.1% | +0.9pp | +5.2% | ✗ |
+| 2021-04-09 | $77.94 | NextEra Energy Q4 2020 results | 2.25 | -1.73 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +5.6% | +3.2pp | +2.0% | ✗ |
+| 2021-04-16 | $80.94 | NextEra Energy Q4 2020 results | 2.25 | -1.79 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +0.5% | -1.3pp | -1.9% | ✓ |
+| 2021-04-22 | $78.32 | NextEra Energy Q1 2021 results | 2.40 | -1.58 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +5.1% | +2.1pp | +1.4% | ✗ |
+| 2021-04-30 | $77.51 | NextEra Energy Q1 2021 results | 2.40 | -1.55 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +3.2% | +0.5pp | +2.6% | ✗ |
+| 2021-05-07 | $74.53 | NextEra Energy Q1 2021 results | 2.40 | -1.50 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +5.8% | +5.1pp | +6.8% | ✗ |
+| 2021-05-14 | $73.12 | NextEra Energy Q1 2021 results | 2.40 | -1.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +11.2% | +9.4pp | +9.0% | ✗ |
+| 2021-05-21 | $74.44 | NextEra Energy Q1 2021 results | 2.40 | -1.49 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +4.5% | +0.7pp | +7.2% | ✗ |
+| 2021-05-28 | $73.22 | NextEra Energy Q1 2021 results | 2.40 | -1.46 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +6.1% | +3.2pp | +9.0% | ✗ |
+| 2021-06-04 | $72.34 | NextEra Energy Q1 2021 results | 2.40 | -1.44 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +6.8% | +2.6pp | +10.2% | ✗ |
+| 2021-06-11 | $73.49 | NextEra Energy Q1 2021 results | 2.40 | -1.44 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +5.4% | +1.2pp | +8.4% | ✗ |
+| 2021-06-18 | $73.28 | NextEra Energy Q1 2021 results | 2.40 | -1.43 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +7.8% | -1.1pp | +8.7% | ✓ |
+| 2021-06-25 | $73.86 | NextEra Energy Q1 2021 results | 2.40 | -1.43 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +5.0% | +0.5pp | +7.9% | ✗ |
+| 2021-07-02 | $74.28 | NextEra Energy Q1 2021 results | 2.40 | -1.43 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +4.5% | -0.6pp | +7.2% | ✓ |
+| 2021-07-09 | $74.99 | NextEra Energy Q1 2021 results | 2.40 | -1.42 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +0.6% | -3.0pp | +6.0% | ✓ |
+| 2021-07-16 | $77.92 | NextEra Energy Q1 2021 results | 2.40 | -1.46 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -1.7% | -8.7pp | +1.8% | ✓ |
+| 2021-07-23 | $77.20 | NextEra Energy Q2 2021 results | 1.75 | -2.09 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +2.7% | -2.9pp | +2.7% | ✓ |
+| 2021-07-30 | $77.90 | NextEra Energy Q2 2021 results | 1.75 | -2.10 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -2.1% | -9.2pp | +1.5% | ✓ |
+| 2021-08-06 | $80.61 | NextEra Energy Q2 2021 results | 1.75 | -2.13 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -10.0% | -13.8pp | -2.3% | ✓ |
+| 2021-08-13 | $83.45 | NextEra Energy Q2 2021 results | 1.75 | -2.16 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -13.3% | -16.1pp | -6.1% | ✓ |
+| 2021-08-20 | $86.28 | NextEra Energy Q2 2021 results | 1.75 | -2.19 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -17.4% | -18.7pp | -9.7% | ✓ |
+| 2021-08-27 | $83.41 | NextEra Energy Q2 2021 results | 1.75 | -2.15 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -14.9% | -15.4pp | -7.1% | ✓ |
+| 2021-09-03 | $85.69 | NextEra Energy Q2 2021 results | 1.75 | -2.18 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -17.9% | -20.2pp | -10.0% | ✓ |
+| 2021-09-10 | $84.93 | NextEra Energy Q2 2021 results | 1.75 | -2.17 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -17.2% | -20.0pp | -9.6% | ✓ |
+| 2021-09-17 | $81.64 | NextEra Energy Q2 2021 results | 1.75 | -2.12 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -11.6% | -15.0pp | -6.5% | ✓ |
+| 2021-09-24 | $80.70 | NextEra Energy Q2 2021 results | 1.75 | -2.10 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -11.8% | -11.6pp | -5.8% | ✓ |
+| 2021-10-01 | $79.21 | NextEra Energy Q2 2021 results | 1.75 | -2.08 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -23.3% | -24.6pp | -4.5% | ✓ |
+| 2021-10-08 | $80.21 | NextEra Energy Q2 2021 results | 1.75 | -2.09 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -33.0% | -34.0pp | -6.4% | ✓ |
+| 2021-10-15 | $81.67 | NextEra Energy Q2 2021 results | 1.75 | -2.10 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -29.0% | -28.6pp | -8.6% | ✓ |
+| 2021-10-21 | $83.81 | NextEra Energy Q3 2021 results | 1.75 | -2.12 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -33.8% | -29.5pp | -11.4% | ✓ |
+| 2021-10-29 | $85.33 | NextEra Energy Q3 2021 results | 1.75 | -2.14 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -30.0% | -22.2pp | -13.5% | ✓ |
+| 2021-11-05 | $85.53 | NextEra Energy Q3 2021 results | 1.75 | -2.14 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -26.5% | -22.0pp | -14.1% | ✓ |
+| 2021-11-12 | $86.31 | NextEra Energy Q3 2021 results | 1.75 | -2.14 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -32.1% | -29.1pp | -15.4% | ✓ |
+| 2021-11-19 | $88.31 | NextEra Energy Q3 2021 results | 1.75 | -2.17 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -31.1% | -29.9pp | -18.0% | ✓ |
+| 2021-11-26 | $86.09 | NextEra Energy Q3 2021 results | 1.75 | -2.14 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -29.0% | -31.0pp | -16.3% | ✓ |
+| 2021-12-03 | $88.03 | NextEra Energy Q3 2021 results | 1.75 | -2.16 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -28.7% | -32.8pp | -18.8% | ✓ |
+| 2021-12-10 | $90.28 | NextEra Energy Q3 2021 results | 1.75 | -2.19 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -29.9% | -30.4pp | -21.4% | ✓ |
+| 2021-12-17 | $90.94 | NextEra Energy Q3 2021 results | 1.75 | -2.19 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -28.4% | -33.3pp | -22.5% | ✓ |
+| 2021-12-23 | $90.70 | NextEra Energy Q3 2021 results | 1.75 | -2.19 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -30.2% | -33.6pp | -22.8% | ✓ |
+| 2021-12-31 | $93.36 | NextEra Energy Q3 2021 results | 1.75 | -2.22 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -31.1% | -33.9pp | -25.4% | ✓ |
+| 2022-01-07 | $86.41 | NextEra Energy Q3 2021 results | 1.75 | -2.13 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -24.0% | -27.2pp | -19.8% | ✓ |
+| 2022-01-14 | $83.20 | NextEra Energy Q3 2021 results | 1.75 | -2.09 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -22.3% | -27.7pp | -17.2% | ✓ |
+| 2022-01-21 | $82.60 | NextEra Energy Q3 2021 results | 1.75 | -2.08 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -26.4% | -39.5pp | -17.1% | ✓ |
+| 2022-01-26 | $72.64 | NextEra Energy Q4 2021 results | 2.65 | -0.57 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -14.6% | -30.0pp | -6.3% | ✓ |
+| 2022-02-04 | $76.01 | NextEra Energy Q4 2021 results | 2.65 | -0.61 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -18.8% | -31.9pp | -10.9% | ✓ |
+| 2022-02-11 | $74.96 | NextEra Energy Q4 2021 results | 2.65 | -0.59 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -19.8% | -36.5pp | -10.2% | ✓ |
+| 2022-02-18 | $74.15 | NextEra Energy Q4 2021 results | 2.65 | -0.58 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -18.3% | -36.3pp | -9.7% | ✓ |
+| 2022-02-25 | $77.16 | NextEra Energy Q4 2021 results | 2.65 | -0.63 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -21.8% | -40.8pp | -13.6% | ✓ |
+| 2022-03-04 | $80.21 | NextEra Energy Q4 2021 results | 2.65 | -0.66 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -26.9% | -48.4pp | -17.3% | ✓ |
+| 2022-03-11 | $79.30 | NextEra Energy Q4 2021 results | 2.65 | -0.65 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -22.4% | -47.2pp | -16.8% | ✓ |
+| 2022-03-18 | $82.37 | NextEra Energy Q4 2021 results | 2.65 | -0.78 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -22.5% | -40.8pp | -20.3% | ✓ |
+| 2022-03-25 | $83.94 | NextEra Energy Q4 2021 results | 2.65 | -0.80 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -21.0% | -38.8pp | -22.1% | ✓ |
+| 2022-04-01 | $85.71 | NextEra Energy Q4 2021 results | 2.65 | -0.82 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -21.8% | -40.0pp | -24.0% | ✓ |
+| 2022-04-08 | $86.09 | NextEra Energy Q4 2021 results | 2.65 | -0.82 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -20.4% | -39.2pp | -24.6% | ✓ |
+| 2022-04-14 | $82.81 | NextEra Energy Q4 2021 results | 2.65 | -0.78 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -19.4% | -39.1pp | -22.0% | ✓ |
+| 2022-04-22 | $73.95 | NextEra Energy Q1 2022 results | 1.95 | -1.53 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -6.7% | -27.1pp | -13.0% | ✓ |
+| 2022-04-29 | $71.02 | NextEra Energy Q1 2022 results | 1.95 | -1.48 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +0.1% | -26.9pp | -9.7% | ✓ |
+| 2022-05-06 | $72.47 | NextEra Energy Q1 2022 results | 1.95 | -1.51 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +3.4% | -25.4pp | -11.7% | ✓ |
+| 2022-05-13 | $69.80 | NextEra Energy Q1 2022 results | 1.95 | -1.46 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +12.1% | -20.9pp | -8.4% | ✓ |
+| 2022-05-20 | $71.22 | NextEra Energy Q1 2022 results | 1.95 | -1.48 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +11.7% | -27.8pp | -10.2% | ✓ |
+| 2022-05-27 | $77.43 | NextEra Energy Q1 2022 results | 1.95 | -1.57 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +3.1% | -27.5pp | -17.4% | ✓ |
+| 2022-06-03 | $78.69 | NextEra Energy Q1 2022 results | 1.95 | -1.58 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +3.5% | -28.3pp | -18.6% | ✓ |
+| 2022-06-10 | $75.91 | NextEra Energy Q1 2022 results | 1.95 | -1.55 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +6.3% | -34.5pp | -15.5% | ✓ |
+| 2022-06-17 | $70.81 | NextEra Energy Q1 2022 results | 1.95 | -1.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +7.4% | -45.3pp | -9.5% | ✓ |
+| 2022-06-24 | $78.02 | NextEra Energy Q1 2022 results | 1.95 | -1.57 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -0.5% | -43.1pp | -17.9% | ✓ |
+| 2022-07-01 | $80.56 | NextEra Energy Q1 2022 results | 1.95 | -1.60 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -8.6% | -55.1pp | -20.6% | ✓ |
+| 2022-07-08 | $80.25 | NextEra Energy Q1 2022 results | 1.95 | -1.56 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -5.5% | -51.8pp | -20.3% | ✓ |
+| 2022-07-15 | $78.71 | NextEra Energy Q1 2022 results | 1.95 | -1.52 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -5.1% | -54.3pp | -18.7% | ✓ |
+| 2022-07-22 | $80.25 | NextEra Energy Q2 2022 results | 3.15 | +0.33 | 2.05x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -4.5% | -48.3pp | -20.3% | ✓ |
+| 2022-07-29 | $84.49 | NextEra Energy Q2 2022 results | 3.15 | +0.11 | 2.31x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -7.6% | -43.0pp | -24.3% | ✓ |
+| 2022-08-05 | $87.98 | NextEra Energy Q2 2022 results | 3.15 | +0.02 | 2.61x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -8.6% | -36.9pp | -27.2% | ✓ |
+| 2022-08-12 | $90.47 | NextEra Energy Q2 2022 results | 3.15 | -0.05 | 2.93x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -10.1% | -38.1pp | -29.0% | ✓ |
+| 2022-08-19 | $89.71 | NextEra Energy Q2 2022 results | 3.15 | -0.01 | 2.73x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -7.4% | -43.1pp | -28.2% | ✓ |
+| 2022-08-26 | $88.06 | NextEra Energy Q2 2022 results | 3.15 | +0.04 | 2.54x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -4.2% | -45.8pp | -26.5% | ✓ |
+| 2022-09-02 | $85.11 | NextEra Energy Q2 2022 results | 3.15 | +0.14 | 2.24x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -0.9% | -48.0pp | -23.8% | ✓ |
+| 2022-09-09 | $89.90 | NextEra Energy Q2 2022 results | 3.15 | +0.00 | 2.67x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -5.4% | -43.1pp | -27.5% | ✓ |
+| 2022-09-16 | $84.79 | NextEra Energy Q2 2022 results | 3.15 | +0.17 | 2.15x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +4.4% | -44.7pp | -22.8% | ✓ |
+| 2022-09-23 | $82.52 | NextEra Energy Q2 2022 results | 3.15 | +0.25 | 1.91x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +7.4% | -51.1pp | -20.3% | ✓ |
+| 2022-09-30 | $78.41 | NextEra Energy Q2 2022 results | 3.15 | +0.44 | 1.64x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +12.7% | -51.7pp | -15.5% | ✓ |
+| 2022-10-07 | $76.73 | NextEra Energy Q2 2022 results | 3.15 | +0.48 | 1.51x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +9.6% | -50.6pp | -12.8% | ✓ |
+| 2022-10-14 | $71.77 | NextEra Energy Q2 2022 results | 3.15 | +0.59 | 1.26x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +20.9% | -46.3pp | -6.0% | ✓ |
+| 2022-10-21 | $71.65 | NextEra Energy Q2 2022 results | 3.15 | +0.59 | 1.26x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +22.6% | -36.9pp | -5.0% | ✓ |
+| 2022-10-28 | $79.03 | NextEra Energy Q3 2022 results | 3.30 | +0.94 | 0.81x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +9.7% | -43.1pp | -13.1% | ✗ |
+| 2022-11-04 | $78.80 | NextEra Energy Q3 2022 results | 3.30 | +0.94 | 0.80x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +4.3% | -50.7pp | -12.4% | ✗ |
+| 2022-11-11 | $83.31 | NextEra Energy Q3 2022 results | 3.30 | +0.77 | 0.90x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | -4.3% | -57.9pp | -16.7% | ✓ |
+| 2022-11-18 | $83.20 | NextEra Energy Q3 2022 results | 3.30 | +0.78 | 0.89x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -3.6% | -55.5pp | -16.1% | ✗ |
+| 2022-11-25 | $85.34 | NextEra Energy Q3 2022 results | 3.30 | +0.75 | 0.94x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | -5.6% | -57.5pp | -17.8% | ✓ |
+| 2022-12-02 | $85.20 | NextEra Energy Q3 2022 results | 3.30 | +0.75 | 0.93x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | -4.9% | -56.6pp | -17.3% | ✓ |
+| 2022-12-09 | $84.51 | NextEra Energy Q3 2022 results | 3.30 | +0.77 | 0.92x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | -7.0% | -64.1pp | -16.2% | ✓ |
+| 2022-12-16 | $84.14 | NextEra Energy Q3 2022 results | 3.30 | +0.77 | 0.90x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | -8.8% | -70.2pp | -15.5% | ✓ |
+| 2022-12-23 | $84.17 | NextEra Energy Q3 2022 results | 3.30 | +0.77 | 0.90x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | -9.2% | -68.1pp | -15.3% | ✓ |
+| 2022-12-30 | $83.60 | NextEra Energy Q3 2022 results | 3.30 | +0.78 | 0.89x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -9.5% | -66.9pp | -14.5% | ✗ |
+| 2023-01-06 | $83.65 | NextEra Energy Q3 2022 results | 3.30 | +0.89 | 0.88x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | -10.1% | -67.1pp | -14.4% | ✗ |
+| 2023-01-13 | $84.68 | NextEra Energy Q3 2022 results | 3.30 | +0.87 | 0.90x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | -16.3% | -65.6pp | -15.2% | ✗ |
+| 2023-01-20 | $81.82 | NextEra Energy Q3 2022 results | 3.30 | +0.92 | 0.84x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | -8.7% | -63.1pp | -12.1% | ✗ |
+| 2023-01-26 | $76.40 | NextEra Energy Q4 2022 results | 3.00 | +0.36 | 1.68x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +0.5% | -53.1pp | -5.5% | ✓ |
+| 2023-02-03 | $74.67 | NextEra Energy Q4 2022 results | 3.00 | +0.40 | 1.58x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +0.4% | -47.9pp | -2.9% | ✓ |
+| 2023-02-10 | $74.74 | NextEra Energy Q4 2022 results | 3.00 | +0.40 | 1.58x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -1.5% | -53.1pp | -2.7% | ✓ |
+| 2023-02-17 | $76.07 | NextEra Energy Q4 2022 results | 3.00 | +0.37 | 1.66x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -5.4% | -58.4pp | -4.0% | ✓ |
+| 2023-02-24 | $72.92 | NextEra Energy Q4 2022 results | 3.00 | +0.44 | 1.47x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +2.5% | -51.6pp | +0.4% | ✓ |
+| 2023-03-03 | $73.83 | NextEra Energy Q4 2022 results | 3.00 | +0.42 | 1.52x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +2.5% | -45.4pp | -0.4% | ✓ |
+| 2023-03-10 | $73.01 | NextEra Energy Q4 2022 results | 3.00 | +0.44 | 1.48x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +9.8% | -39.0pp | +1.1% | ✓ |
+| 2023-03-17 | $75.67 | NextEra Energy Q4 2022 results | 3.00 | +0.37 | 1.64x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +0.6% | -47.9pp | -2.1% | ✓ |
+| 2023-03-24 | $75.69 | NextEra Energy Q4 2022 results | 3.00 | +0.37 | 1.64x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -2.1% | -50.7pp | -1.8% | ✓ |
+| 2023-03-31 | $77.08 | NextEra Energy Q4 2022 results | 3.00 | +0.35 | 1.73x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -3.4% | -42.5pp | -3.5% | ✓ |
+| 2023-04-06 | $78.97 | NextEra Energy Q4 2022 results | 3.00 | +0.30 | 1.87x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -10.2% | -37.0pp | -5.6% | ✓ |
+| 2023-04-14 | $78.02 | NextEra Energy Q4 2022 results | 3.00 | +0.33 | 1.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -8.1% | -42.1pp | -4.5% | ✓ |
+| 2023-04-21 | $78.99 | NextEra Energy Q4 2022 results | 3.00 | +0.30 | 1.87x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -13.0% | -41.1pp | -5.5% | ✓ |
+| 2023-04-26 | $74.07 | NextEra Energy Q1 2023 results | 3.30 | +1.90 | 0.19x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | -5.3% | -44.9pp | +0.8% | ✗ |
+| 2023-05-05 | $75.51 | NextEra Energy Q1 2023 results | 3.30 | +1.89 | 0.19x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | -7.1% | -47.1pp | -1.2% | ✗ |
+| 2023-05-12 | $77.96 | NextEra Energy Q1 2023 results | 3.30 | +1.86 | 0.20x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | -5.4% | -50.5pp | -4.4% | ✗ |
+| 2023-05-19 | $74.48 | NextEra Energy Q1 2023 results | 3.30 | +1.90 | 0.19x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +4.6% | -40.8pp | -0.0% | ✗ |
+| 2023-05-26 | $73.92 | NextEra Energy Q1 2023 results | 3.30 | +1.91 | 0.19x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | -3.5% | -44.7pp | +0.6% | ✗ |
+| 2023-06-02 | $73.85 | NextEra Energy Q1 2023 results | 3.30 | +1.91 | 0.19x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +0.6% | -41.2pp | +0.5% | ✗ |
+| 2023-06-09 | $74.07 | NextEra Energy Q1 2023 results | 3.30 | +1.91 | 0.19x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +2.6% | -40.1pp | +0.0% | ✗ |
+| 2023-06-16 | $75.59 | NextEra Energy Q1 2023 results | 3.30 | +1.89 | 0.19x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +3.1% | -36.9pp | -2.0% | ✗ |
+| 2023-06-23 | $74.17 | NextEra Energy Q1 2023 results | 3.30 | +1.91 | 0.19x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +0.9% | -40.8pp | -0.1% | ✗ |
+| 2023-06-30 | $74.20 | NextEra Energy Q1 2023 results | 3.30 | +1.91 | 0.19x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | -0.9% | -43.4pp | -0.2% | ✗ |
+| 2023-07-07 | $72.05 | NextEra Energy Q1 2023 results | 3.30 | +1.94 | 0.18x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +9.5% | -35.2pp | +2.8% | ✗ |
+| 2023-07-14 | $73.20 | NextEra Energy Q1 2023 results | 3.30 | +1.92 | 0.18x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +8.2% | -34.0pp | +1.2% | ✗ |
+| 2023-07-21 | $75.90 | NextEra Energy Q1 2023 results | 3.30 | +1.89 | 0.19x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +5.8% | -36.4pp | -2.3% | ✗ |
+| 2023-07-26 | $74.37 | NextEra Energy Q2 2023 results | 3.30 | +1.07 | 0.78x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +2.2% | -40.8pp | -0.3% | ✗ |
+| 2023-08-04 | $69.17 | NextEra Energy Q2 2023 results | 3.30 | +1.28 | 0.68x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +7.9% | -36.5pp | +7.0% | ✗ |
+| 2023-08-11 | $68.92 | NextEra Energy Q2 2023 results | 3.30 | +1.29 | 0.68x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +11.1% | -34.7pp | +7.3% | ✗ |
+| 2023-08-18 | $67.83 | NextEra Energy Q2 2023 results | 3.30 | +1.31 | 0.66x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +17.7% | -32.9pp | +8.9% | ✗ |
+| 2023-08-25 | $67.96 | NextEra Energy Q2 2023 results | 3.30 | +1.32 | 0.66x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +16.9% | -32.3pp | +8.6% | ✗ |
+| 2023-09-01 | $66.87 | NextEra Energy Q2 2023 results | 3.30 | +1.34 | 0.64x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +14.1% | -32.0pp | +10.1% | ✗ |
+| 2023-09-08 | $66.83 | NextEra Energy Q2 2023 results | 3.30 | +1.34 | 0.64x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +10.7% | -38.1pp | +10.0% | ✗ |
+| 2023-09-15 | $68.64 | NextEra Energy Q2 2023 results | 3.30 | +1.30 | 0.67x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +10.3% | -41.5pp | +6.7% | ✗ |
+| 2023-09-22 | $67.70 | NextEra Energy Q2 2023 results | 3.30 | +1.32 | 0.65x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +13.1% | -45.1pp | +7.8% | ✗ |
+| 2023-09-29 | $57.29 | NextEra Energy Q2 2023 results | 3.30 | +1.59 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +40.4% | -18.2pp | +27.1% | ✓ |
+| 2023-10-06 | $50.24 | NextEra Energy Q2 2023 results | 3.30 | +1.74 | 0.39x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +71.9% | +12.2pp | +44.7% | ✓ |
+| 2023-10-13 | $54.49 | NextEra Energy Q2 2023 results | 3.30 | +1.65 | 0.44x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +62.5% | +5.5pp | +33.5% | ✓ |
+| 2023-10-20 | $51.96 | NextEra Energy Q2 2023 results | 3.30 | +1.80 | 0.41x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +71.3% | +8.5pp | +40.0% | ✓ |
+| 2023-10-25 | $56.46 | NextEra Energy Q3 2023 results | 2.05 | -0.28 | 1.33x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +57.0% | -8.6pp | +28.8% | ✓ |
+| 2023-11-03 | $59.38 | NextEra Energy Q3 2023 results | 2.05 | -0.34 | 1.53x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +44.8% | -15.6pp | +22.6% | ✗ |
+| 2023-11-10 | $55.14 | NextEra Energy Q3 2023 results | 2.05 | -0.24 | 1.25x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +61.4% | +3.5pp | +32.3% | ✓ |
+| 2023-11-17 | $57.37 | NextEra Energy Q3 2023 results | 2.05 | -0.30 | 1.39x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +56.8% | +6.0pp | +27.5% | ✗ |
+| 2023-11-24 | $57.55 | NextEra Energy Q3 2023 results | 2.05 | -0.30 | 1.40x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +53.9% | +3.9pp | +27.4% | ✗ |
+| 2023-12-01 | $59.17 | NextEra Energy Q3 2023 results | 2.05 | -0.33 | 1.51x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +50.4% | -0.9pp | +24.1% | ✗ |
+| 2023-12-08 | $59.70 | NextEra Energy Q3 2023 results | 2.05 | -0.34 | 1.55x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +42.2% | -9.5pp | +23.2% | ✗ |
+| 2023-12-15 | $61.50 | NextEra Energy Q3 2023 results | 2.05 | -0.39 | 1.70x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +39.8% | -7.9pp | +19.8% | ✗ |
+| 2023-12-22 | $59.75 | NextEra Energy Q3 2023 results | 2.05 | -0.34 | 1.56x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +41.2% | -6.4pp | +23.7% | ✗ |
+| 2023-12-29 | $60.74 | NextEra Energy Q3 2023 results | 2.05 | -0.37 | 1.63x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +39.3% | -8.5pp | +21.8% | ✗ |
+| 2024-01-05 | $62.08 | NextEra Energy Q3 2023 results | 2.05 | -0.39 | 1.75x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +38.0% | -12.1pp | +19.4% | ✗ |
+| 2024-01-12 | $61.04 | NextEra Energy Q3 2023 results | 2.05 | -0.26 | 1.66x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +40.0% | -8.9pp | +21.8% | ✓ |
+| 2024-01-19 | $57.26 | NextEra Energy Q3 2023 results | 2.05 | -0.15 | 1.38x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +53.6% | +7.3pp | +30.2% | ✓ |
+| 2024-01-26 | $58.48 | NextEra Energy Q4 2023 results | 2.70 | +1.33 | 0.39x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +53.6% | +8.5pp | +28.0% | ✓ |
+| 2024-02-02 | $58.15 | NextEra Energy Q4 2023 results | 2.70 | +1.35 | 0.38x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +55.9% | +12.3pp | +29.2% | ✓ |
+| 2024-02-09 | $56.58 | NextEra Energy Q4 2023 results | 2.70 | +1.58 | 0.37x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +65.8% | +24.5pp | +33.5% | ✓ |
+| 2024-02-16 | $57.03 | NextEra Energy Q4 2023 results | 2.70 | +1.56 | 0.37x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +72.1% | +32.7pp | +33.1% | ✓ |
+| 2024-02-23 | $56.78 | NextEra Energy Q4 2023 results | 2.70 | +1.58 | 0.38x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +73.3% | +36.1pp | +34.5% | ✓ |
+| 2024-03-01 | $55.21 | NextEra Energy Q4 2023 results | 2.70 | +1.60 | 0.36x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +77.9% | +41.3pp | +39.0% | ✓ |
+| 2024-03-08 | $57.81 | NextEra Energy Q4 2023 results | 2.70 | +1.35 | 0.39x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +65.1% | +30.9pp | +33.5% | ✓ |
+| 2024-03-15 | $60.08 | NextEra Energy Q4 2023 results | 2.70 | +1.29 | 0.42x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +61.8% | +29.4pp | +29.0% | ✓ |
+| 2024-03-22 | $61.78 | NextEra Energy Q4 2023 results | 2.70 | +1.23 | 0.45x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +52.0% | +24.8pp | +26.2% | ✓ |
+| 2024-03-28 | $63.91 | NextEra Energy Q4 2023 results | 2.70 | +1.17 | 0.47x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +50.0% | +25.9pp | +22.6% | ✓ |
+| 2024-04-05 | $64.18 | NextEra Energy Q4 2023 results | 2.70 | +1.17 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +52.1% | +22.7pp | +22.7% | ✓ |
+| 2024-04-12 | $63.08 | NextEra Energy Q4 2023 results | 2.70 | +1.20 | 0.46x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +56.2% | +20.3pp | +25.8% | ✓ |
+| 2024-04-19 | $64.30 | NextEra Energy Q4 2023 results | 2.70 | +1.15 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +49.9% | +3.6pp | +24.1% | ✓ |
+| 2024-04-24 | $66.56 | NextEra Energy Q1 2024 results | 2.05 | -0.04 | 0.51x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +49.8% | +5.7pp | +20.6% | ✓ |
+| 2024-05-03 | $70.14 | NextEra Energy Q1 2024 results | 2.05 | -0.11 | 0.57x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +44.5% | +0.8pp | +15.3% | ✓ |
+| 2024-05-10 | $73.79 | NextEra Energy Q1 2024 results | 2.05 | -0.17 | 0.63x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +32.2% | -12.2pp | +10.4% | ✓ |
+| 2024-05-17 | $76.09 | NextEra Energy Q1 2024 results | 2.05 | -0.21 | 0.67x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +28.5% | -13.8pp | +7.6% | ✗ |
+| 2024-05-24 | $76.61 | NextEra Energy Q1 2024 results | 2.05 | -0.21 | 0.68x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +21.4% | -22.2pp | +7.3% | ✗ |
+| 2024-05-31 | $80.02 | NextEra Energy Q1 2024 results | 2.05 | -0.26 | 0.74x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +14.3% | -31.9pp | +3.1% | ✗ |
+| 2024-06-07 | $75.39 | NextEra Energy Q1 2024 results | 2.05 | -0.20 | 0.66x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +19.9% | -21.0pp | +9.9% | ✗ |
+| 2024-06-14 | $73.06 | NextEra Energy Q1 2024 results | 2.05 | -0.15 | 0.62x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +23.9% | -15.4pp | +13.7% | ✗ |
+| 2024-06-21 | $72.81 | NextEra Energy Q1 2024 results | 2.05 | -0.14 | 0.61x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +25.4% | -14.5pp | +14.4% | ✗ |
+| 2024-06-28 | $70.81 | NextEra Energy Q1 2024 results | 2.05 | -0.10 | 0.58x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +31.5% | -5.2pp | +18.1% | ✗ |
+| 2024-07-05 | $72.09 | NextEra Energy Q1 2024 results | 2.05 | -0.13 | 0.60x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +28.8% | -8.1pp | +16.3% | ✗ |
+| 2024-07-12 | $76.00 | NextEra Energy Q1 2024 results | 2.05 | -0.20 | 0.67x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +21.7% | -15.7pp | +10.7% | ✗ |
+| 2024-07-19 | $72.00 | NextEra Energy Q1 2024 results | 2.05 | -0.13 | 0.60x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +29.6% | -8.4pp | +17.2% | ✗ |
+| 2024-07-25 | $73.44 | NextEra Energy Q2 2024 results | 1.75 | -0.47 | 0.62x | BUY | QUALITY, NEUTRALLY VALUED (FAIR) | 3/8 FAIR | +28.4% | -11.5pp | +15.3% | ✓ |
+| 2024-08-02 | $79.20 | NextEra Energy Q2 2024 results | 1.75 | -0.55 | 0.73x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +15.5% | -27.5pp | +7.4% | ✓ |
+| 2024-08-09 | $77.46 | NextEra Energy Q2 2024 results | 1.75 | -0.53 | 0.69x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +15.1% | -32.7pp | +10.2% | ✓ |
+| 2024-08-16 | $78.57 | NextEra Energy Q2 2024 results | 1.75 | -0.54 | 0.71x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +15.5% | -27.2pp | +8.9% | ✓ |
+| 2024-08-23 | $79.66 | NextEra Energy Q2 2024 results | 1.75 | -0.55 | 0.73x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +10.7% | -28.1pp | +7.7% | ✓ |
+| 2024-08-30 | $80.51 | NextEra Energy Q2 2024 results | 1.75 | -0.57 | 0.75x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +7.4% | -31.7pp | +6.8% | ✓ |
+| 2024-09-06 | $79.98 | NextEra Energy Q2 2024 results | 1.75 | -0.56 | 0.74x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +10.1% | -35.1pp | +7.7% | ✓ |
+| 2024-09-13 | $84.65 | NextEra Energy Q2 2024 results | 1.75 | -0.71 | 0.84x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +2.7% | -35.9pp | +2.1% | ✓ |
+| 2024-09-20 | $82.76 | NextEra Energy Q2 2024 results | 1.75 | -0.69 | 0.80x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +2.9% | -33.8pp | +4.6% | ✓ |
+| 2024-09-27 | $84.54 | NextEra Energy Q2 2024 results | 1.75 | -0.71 | 0.84x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -4.5% | -42.1pp | +2.5% | ✓ |
+| 2024-10-04 | $83.85 | NextEra Energy Q2 2024 results | 1.75 | -0.70 | 0.82x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -2.8% | -39.7pp | +3.3% | ✓ |
+| 2024-10-11 | $81.86 | NextEra Energy Q2 2024 results | 1.75 | -0.67 | 0.78x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +0.2% | -36.7pp | +5.7% | ✓ |
+| 2024-10-18 | $84.38 | NextEra Energy Q2 2024 results | 1.75 | -0.71 | 0.83x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +0.1% | -33.0pp | +2.4% | ✓ |
+| 2024-10-24 | $82.81 | NextEra Energy Q3 2024 results | 2.80 | +0.65 | 0.80x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +4.8% | -29.0pp | +4.2% | ✗ |
+| 2024-11-01 | $77.35 | NextEra Energy Q3 2024 results | 2.80 | +0.84 | 0.69x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +14.2% | -20.7pp | +11.6% | ✗ |
+| 2024-11-08 | $76.97 | NextEra Energy Q3 2024 results | 2.80 | +0.85 | 0.68x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +19.0% | -6.4pp | +12.2% | ✗ |
+| 2024-11-15 | $76.35 | NextEra Energy Q3 2024 results | 2.80 | +0.86 | 0.67x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +17.6% | -13.7pp | +13.2% | ✗ |
+| 2024-11-22 | $76.00 | NextEra Energy Q3 2024 results | 2.80 | +0.86 | 0.67x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +15.2% | -3.1pp | +13.7% | ✗ |
+| 2024-11-29 | $78.67 | NextEra Energy Q3 2024 results | 2.80 | +0.82 | 0.72x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +9.8% | - |
+| 2024-12-06 | $75.24 | NextEra Energy Q3 2024 results | 2.80 | +0.89 | 0.65x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +14.9% | - |
+| 2024-12-13 | $73.62 | NextEra Energy Q3 2024 results | 2.80 | +0.93 | 0.63x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +17.6% | - |
+| 2024-12-20 | $71.67 | NextEra Energy Q3 2024 results | 2.80 | +0.98 | 0.59x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +21.0% | - |
+| 2024-12-27 | $72.11 | NextEra Energy Q3 2024 results | 2.80 | +0.97 | 0.60x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +20.4% | - |
+| 2025-01-03 | $71.99 | NextEra Energy Q3 2024 results | 2.80 | +0.97 | 0.60x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +20.7% | - |
+| 2025-01-10 | $67.38 | NextEra Energy Q3 2024 results | 2.80 | +1.11 | 0.53x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +29.2% | - |
+| 2025-01-17 | $70.76 | NextEra Energy Q3 2024 results | 2.80 | +1.01 | 0.58x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +23.2% | - |
+| 2025-01-24 | $72.83 | NextEra Energy Q4 2024 results | 1.50 | -0.79 | 0.75x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | +19.8% | - |
+| 2025-01-31 | $71.56 | NextEra Energy Q4 2024 results | 1.50 | -0.77 | 0.72x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +21.9% | - |
+| 2025-02-07 | $68.27 | NextEra Energy Q4 2024 results | 1.50 | -0.71 | 0.65x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +27.7% | - |
+| 2025-02-14 | $68.06 | NextEra Energy Q4 2024 results | 1.50 | -0.70 | 0.64x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +28.0% | - |
+| 2025-02-21 | $71.58 | NextEra Energy Q4 2024 results | 1.50 | -0.76 | 0.71x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +21.5% | - |
+| 2025-02-28 | $70.17 | NextEra Energy Q4 2024 results | 1.50 | -0.73 | 0.68x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +23.7% | - |
+| 2025-03-07 | $72.83 | NextEra Energy Q4 2024 results | 1.50 | -0.78 | 0.74x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | +19.0% | - |
+| 2025-03-14 | $73.55 | NextEra Energy Q4 2024 results | 1.50 | -0.79 | 0.75x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | +17.6% | - |
+| 2025-03-21 | $70.88 | NextEra Energy Q4 2024 results | 1.50 | -0.75 | 0.70x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +21.9% | - |
+| 2025-03-28 | $70.45 | NextEra Energy Q4 2024 results | 1.50 | -0.74 | 0.69x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +22.4% | - |
+| 2025-04-04 | $66.91 | NextEra Energy Q4 2024 results | 1.50 | -0.67 | 0.62x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +28.6% | - |
+| 2025-04-11 | $65.81 | NextEra Energy Q4 2024 results | 1.50 | -0.65 | 0.60x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +30.4% | - |
+| 2025-04-17 | $66.31 | NextEra Energy Q4 2024 results | 1.50 | -0.66 | 0.61x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | +29.2% | - |
+| 2025-04-24 | $66.35 | NextEra Energy Q1 2025 results | 2.55 | +0.88 | 0.61x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +28.7% | - |
+| 2025-05-02 | $67.09 | NextEra Energy Q1 2025 results | 2.55 | +0.86 | 0.62x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +26.8% | - |
+| 2025-05-09 | $70.31 | NextEra Energy Q1 2025 results | 2.55 | +0.75 | 0.68x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +20.5% | - |
+| 2025-05-16 | $75.00 | NextEra Energy Q1 2025 results | 2.55 | +0.63 | 0.78x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +12.4% | - |
+| 2025-05-23 | $67.76 | NextEra Energy Q1 2025 results | 2.55 | +0.83 | 0.63x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +24.2% | - |
+| 2025-05-30 | $70.64 | NextEra Energy Q1 2025 results | 2.55 | +0.74 | 0.69x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +19.0% | - |
+| 2025-06-06 | $72.16 | NextEra Energy Q1 2025 results | 2.55 | +0.70 | 0.72x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +16.4% | - |
+| 2025-06-13 | $74.78 | NextEra Energy Q1 2025 results | 2.55 | +0.65 | 0.78x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +12.3% | - |
+| 2025-06-20 | $71.53 | NextEra Energy Q1 2025 results | 2.55 | +0.72 | 0.71x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +17.2% | - |
+| 2025-06-27 | $70.89 | NextEra Energy Q1 2025 results | 2.55 | +0.73 | 0.70x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +18.1% | - |
+| 2025-07-03 | $73.88 | NextEra Energy Q1 2025 results | 2.55 | +0.66 | 0.76x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +13.1% | - |
+| 2025-07-11 | $74.40 | NextEra Energy Q1 2025 results | 2.55 | +0.65 | 0.77x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +12.0% | - |
+| 2025-07-18 | $75.95 | NextEra Energy Q1 2025 results | 2.55 | +0.52 | 0.81x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | +9.3% | - |
+| 2025-07-24 | $71.97 | NextEra Energy Q2 2025 results | 2.65 | +0.83 | 0.72x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +14.9% | - |
+| 2025-08-01 | $70.40 | NextEra Energy Q2 2025 results | 2.65 | +0.88 | 0.69x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +17.0% | - |
+| 2025-08-08 | $72.41 | NextEra Energy Q2 2025 results | 2.65 | +0.82 | 0.73x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +13.4% | - |
+| 2025-08-15 | $75.41 | NextEra Energy Q2 2025 results | 2.65 | +0.75 | 0.79x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +8.6% | - |
+| 2025-08-22 | $76.32 | NextEra Energy Q2 2025 results | 2.65 | +0.63 | 0.82x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +7.0% | - |
+| 2025-08-29 | $72.05 | NextEra Energy Q2 2025 results | 2.65 | +0.83 | 0.72x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +13.1% | - |
+| 2025-09-05 | $70.90 | NextEra Energy Q2 2025 results | 2.65 | +0.86 | 0.70x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +14.7% | - |
+| 2025-09-12 | $71.64 | NextEra Energy Q2 2025 results | 2.65 | +0.85 | 0.71x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +13.4% | - |
+| 2025-09-19 | $71.08 | NextEra Energy Q2 2025 results | 2.65 | +0.86 | 0.70x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +14.3% | - |
+| 2025-09-26 | $75.85 | NextEra Energy Q2 2025 results | 2.65 | +0.65 | 0.80x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +7.7% | - |
+| 2025-10-03 | $80.06 | NextEra Energy Q2 2025 results | 2.65 | +0.56 | 0.91x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | +2.9% | - |
+| 2025-10-10 | $83.35 | NextEra Energy Q2 2025 results | 2.65 | +0.50 | 1.00x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | -0.2% | - |
+| 2025-10-17 | $84.53 | NextEra Energy Q2 2025 results | 2.65 | +0.48 | 1.03x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 2/8 FAIR | - | - | -0.7% | - |
+| 2025-10-24 | $84.41 | NextEra Energy Q2 2025 results | 2.65 | +0.48 | 1.03x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 2/8 FAIR | - | - | +0.4% | - |
+| 2025-10-29 | $81.76 | NextEra Energy Q3 2025 results | 2.40 | +0.24 | 0.95x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | +4.4% | - |
+| 2025-11-07 | $83.93 | NextEra Energy Q3 2025 results | 2.40 | +0.20 | 1.01x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | +1.3% | - |
+| 2025-11-14 | $83.88 | NextEra Energy Q3 2025 results | 2.40 | +0.20 | 1.01x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | +0.8% | - |
+| 2025-11-21 | $83.48 | NextEra Energy Q3 2025 results | 2.40 | +0.21 | 1.00x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | +1.5% | - |
+| 2025-11-28 | $86.29 | NextEra Energy Q3 2025 results | 2.40 | +0.17 | 1.08x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2025-12-05 | $83.13 | NextEra Energy Q3 2025 results | 2.40 | +0.22 | 0.99x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2025-12-12 | $81.65 | NextEra Energy Q3 2025 results | 2.40 | +0.25 | 0.95x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2025-12-19 | $79.54 | NextEra Energy Q3 2025 results | 2.40 | +0.28 | 0.89x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
+| 2025-12-26 | $80.41 | NextEra Energy Q3 2025 results | 2.40 | +0.27 | 0.92x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-01-02 | $80.93 | NextEra Energy Q3 2025 results | 2.40 | +0.36 | 0.93x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-01-09 | $79.89 | NextEra Energy Q3 2025 results | 2.40 | +0.38 | 0.90x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-01-16 | $83.63 | NextEra Energy Q3 2025 results | 2.40 | +0.32 | 1.00x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2026-01-23 | $84.81 | NextEra Energy Q3 2025 results | 2.40 | +0.29 | 1.04x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2026-01-28 | $87.57 | NextEra Energy Q4 2025 results | 3.00 | +1.06 | 0.82x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-02-06 | $89.47 | NextEra Energy Q4 2025 results | 3.00 | +0.93 | 0.85x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-02-13 | $93.80 | NextEra Energy Q4 2025 results | 3.00 | +0.85 | 0.95x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-02-20 | $92.18 | NextEra Energy Q4 2025 results | 3.00 | +0.90 | 0.90x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-02-27 | $93.77 | NextEra Energy Q4 2025 results | 3.00 | +0.88 | 0.94x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-03-06 | $91.02 | NextEra Energy Q4 2025 results | 3.00 | +0.92 | 0.88x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-03-13 | $92.78 | NextEra Energy Q4 2025 results | 3.00 | +0.89 | 0.91x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-03-20 | $89.50 | NextEra Energy Q4 2025 results | 3.00 | +0.95 | 0.85x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-03-27 | $91.40 | NextEra Energy Q4 2025 results | 3.00 | +0.91 | 0.88x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-04-02 | $93.15 | NextEra Energy Q4 2025 results | 3.00 | +0.89 | 0.92x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-04-10 | $94.08 | NextEra Energy Q4 2025 results | 3.00 | +0.88 | 0.94x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-04-17 | $91.98 | NextEra Energy Q4 2025 results | 3.00 | +0.91 | 0.90x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-04-24 | $95.28 | NextEra Energy Q1 2026 results | 2.50 | +0.04 | 1.53x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2026-05-01 | $96.95 | NextEra Energy Q1 2026 results | 2.50 | +0.01 | 1.61x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-05-08 | $93.10 | NextEra Energy Q1 2026 results | 2.50 | +0.08 | 1.43x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2026-05-15 | $93.36 | NextEra Energy Q1 2026 results | 2.50 | +0.08 | 1.44x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2026-05-22 | $88.55 | NextEra Energy Q1 2026 results | 2.50 | +0.16 | 1.25x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
+| 2026-05-29 | $87.01 | NextEra Energy Q1 2026 results | 2.50 | +0.29 | 1.19x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-06-05 | $85.84 | NextEra Energy Q1 2026 results | 2.50 | +0.31 | 1.15x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-06-12 | $85.99 | NextEra Energy Q1 2026 results | 2.50 | +0.31 | 1.16x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-06-18 | $86.75 | NextEra Energy Q1 2026 results | 2.50 | +0.30 | 1.18x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-06-26 | $88.56 | NextEra Energy Q1 2026 results | 2.50 | +0.16 | 1.25x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-07-02 | $88.34 | NextEra Energy Q1 2026 results | 2.50 | +0.17 | 1.24x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-07-10 | $87.96 | NextEra Energy Q1 2026 results | 2.50 | +0.18 | 1.23x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-07-17 | $88.80 | NextEra Energy Q1 2026 results | 2.50 | +0.16 | 1.26x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
+| 2026-07-24 | $89.78 | NextEra Energy Q2 2026 results | 2.80 | +0.60 | 1.18x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
+| 2026-07-31 | $86.92 | NextEra Energy Q2 2026 results | 2.80 | +0.75 | 1.09x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-08-07 | $84.65 | NextEra Energy Q2 2026 results | 2.80 | +0.80 | 1.02x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-08-14 | $86.19 | NextEra Energy Q2 2026 results | 2.80 | +0.78 | 1.06x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-08-21 | $83.65 | NextEra Energy Q2 2026 results | 2.80 | +0.82 | 0.99x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-08-28 | $81.84 | NextEra Energy Q2 2026 results | 2.80 | +0.88 | 0.94x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-09-04 | $83.43 | NextEra Energy Q2 2026 results | 2.80 | +0.84 | 0.98x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-09-11 | $82.31 | NextEra Energy Q2 2026 results | 2.80 | +0.88 | 0.95x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-09-18 | $80.47 | NextEra Energy Q2 2026 results | 2.80 | +0.92 | 0.91x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-09-25 | $76.08 | NextEra Energy Q2 2026 results | 2.80 | +1.02 | 0.80x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-10-02 | $76.83 | NextEra Energy Q2 2026 results | 2.80 | +1.00 | 0.82x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-10-09 | $77.38 | NextEra Energy Q2 2026 results | 2.80 | +0.99 | 0.83x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-10-16 | $79.80 | NextEra Energy Q2 2026 results | 2.80 | +0.94 | 0.89x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
+| 2026-10-22 | $81.90 | NextEra Energy Q3 2026 results | 2.65 | +0.40 | 1.03x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
+| 2026-10-30 | $83.71 | NextEra Energy Q3 2026 results | 2.65 | +0.37 | 1.08x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-11-06 | $86.95 | NextEra Energy Q3 2026 results | 2.65 | +0.31 | 1.19x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-11-13 | $85.12 | NextEra Energy Q3 2026 results | 2.65 | +0.35 | 1.13x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2026-11-20 | $83.45 | NextEra Energy Q3 2026 results | 2.65 | +0.37 | 1.07x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |

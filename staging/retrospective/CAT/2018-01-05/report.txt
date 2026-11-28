@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  CAT  ·  Caterpillar Inc.  ·  $161.96  ·  RETROSPECTIVE as of 2018-01-05
+  Signal: ✕ AVOID   Ratio B: 37.37x   Adj gap: -0.40  [MODESTLY OVERVALUED]
+  Point-in-time: 9 sources, latest published 2018-01-05; latest print Q3 2017 (Oct 24)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2017E sales and revenues, USD bn  →  FY2019E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Line of business             FY2017E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Construction Industries   $    17.7  $  17.7  $  17.1      +0.0      -0.6
+    -12.3% external sales and revenues in FY16
+  Resource Industries       $     6.5  $   6.5  $   6.3      +0.0      -0.2
+    -26.0% external sales and revenues in FY16
+  Energy & Transportation   $    16.4  $  16.4  $  15.8      +0.0      -0.6
+    -22.2% external sales and revenues in FY16
+  Financial Products Segme  $     3.4  $   3.4  $   3.3      +0.0      -0.1
+    -2.8% external sales and revenues in FY16
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    44.0  $  44.0  $  42.5      +0.0      -1.5
+  FY2017E = FY16 $38.54B × (1 + 14.2%: FY17 sales and revenues guide midpoint); split pro rata to FY16 external sales of the four reportable segments (FY2016 10-K; the 2016 segment definitions; All Other and corporate items left out)
+  Q3 2017 (Oct 24): sales and revenues $11.41B +24.6%; Machinery +36.4%; Engines +12.1%;
+  operating margin 13.82% (+856.6bp); profit per share $1.77 vs $0.48 (+268.8%)
+  Machinery (Construction Industries $4,854M and Resource Industries $1,870M against $3,554M and $1,377M a year earlier, +36.4%), Engines (Energy & Transportation $3,961M against $3,534M, +12.1%), as the release's sales and revenues by segment show them; the release: 'Excluding restructuring costs, third-quarter 2017 adjusted profit per share was $1.95, compared with third-quarter 2016 adjusted profit per share of $0.85.'
+  FY17 guide (Q3 2016 release, Q4 2016 release, Q1 2017 release, Q2 2017 release, Q3 2017 release): sales and revenues $44B; profit per share $6.25 (adjusted, excluding restructuring costs of about $1.3 billion and the IronPlanet gain; about $4.60 including them)
+
+  FY2017E EPS check:  $44.0B × 0.4% pre-tax × (1−138.1%) ÷ 0.600B  =  $-0.10  (FY2017E EPS, guide midpoint (adjusted, excluding restructuring costs of about $1.3 billion and the IronPlanet gain; about $4.60 including them))
+  FY2019E BEAR check: $44.0B × 0.4% ÷ 0.584B  =  $-0.10  (scenario $0.93)
+  FY2019E BULL check: $42.5B × 0.8% ÷ 0.584B  =  $-0.21  (scenario $8.35)
+  Every 1pp of pre-tax margin ≈ $-0.28 EPS ≈ $-4/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Machinery sales growth             -33.0%  ≥-13.0%    ≥8.0%   ≥38.0%    +36.4%  ▲ BULL  ███░
+  Engines sales growth               -19.0%   ≥-3.0%   ≥13.0%   ≥37.0%    +12.1%  ◦ BASE  ██░░
+  Sales and revenues growth          -24.0%   ≥-6.0%   ≥12.0%   ≥33.0%    +24.6%  ▲ BULL  ███░
+  Profit per share growth            -92.0%  ≥-36.0%   ≥20.0%   ≥85.0%   +268.8%  ★ XBULL  ████
+  Operating margin change           -710.0bp  ≥-320.0bp  ≥80.0bp  ≥160.0bp  +856.6bp  ★ XBULL  ████
+  Disruption theme: none in scope    +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.95 / 4.00
+  Market composite:   3.25 / 4.00  (back-solved from $162 + 15% hurdle)
+  SCA adjustment:    +0.10  ·  EPP-distance adj -0.20  →  Adj composite 2.85  →  Gap -0.40  [MODESTLY OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY16 sales and revenues -18.0%, Machinery -16.4%, Engines -22.2%; Q3 operating margin 13.82% (+856.6bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 25.9x FY17E vs a 15.1x 10-yr median (97th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: FY17 sales and revenues guide +14.2% vs a -0.8% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  FY16 year-end cash and short-term investments $7.168B, FY16 operating cash flow $5.608B, dividend $3.12 a year, dividends paid $1,799M and no treasury shares purchased in 2016 (FY2016 10-K)  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Machinery sales growth              +36.4%    -33.0%  -69.4%  Construction and mining fleets stop g…
+  Engines sales growth                +12.1%    -19.0%  -31.1%  Truck, power and oil and gas engines …
+  Sales and revenues growth           +24.6%    -24.0%  -48.6%  Volume and price fall together
+  Profit per share growth            +268.8%    -92.0%  -360.8%  Costs stay up while volume falls
+  Operating margin change           +856.6bp  -710.0bp  -1566.6bp  Factories deleverage on lower volume
+  Disruption theme: none in scope     +2.0/4    +1.0/4  -1.0/4  No live disruption theme covers const…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$47  (model)  /  $11 (defined)
+  Bear probability (proxy model):  4.7%
+
+  KEY TRIGGER: Machinery sales growth went from +13.7% (Q2 2017) to +36.4% (Q3 2017);
+  the bear case needs a fall in machinery demand that Engines (+12.1% now) and
+  price realization no longer offset. The 10-K ties demand to the energy and mining industries and to infrastructure,
+  housing and commercial construction; dealer inventory changes move company sales either way.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $6.25  (FY2017E EPS, guide midpoint (adjusted, excluding restructuring costs of about $1.3 billion and the IronPlanet gain; about $4.60 including them))
+  Min viable P/E at panic:          12x  [median of calendar-year P/E lows: 2008 5.8x, 2009 10.2x, 2010 12.2x, 2011 15.7x, 2012 9.9x, 2013 13.5x, 2014 12.1x, 2015 11.9x, 2016 16.9x, 2017 14.6x, 2018 25.1x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $75/share
+  Current $162 vs Updated EPP $75:  +116%  ⚠ far above floor — large drawdown room
+  Bear $11 vs Updated EPP $75:  -85%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Machinery sales growth                     -13.0      -49.4   BASE floor (vs +36 now)
+  Engines sales growth                        -3.0      -15.1   BASE floor (vs +12 now)
+  Sales and revenues growth                   -6.0      -30.6   BASE floor (vs +25 now)
+  Profit per share growth                    -36.0     -304.8   BASE floor (vs +269 now)
+  Operating margin change                   -320.0    -1176.6   BASE floor (vs +857 now)
+  Disruption theme: none in scope              2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $6.25 × (1+13.6%)² = $8.06
+  At 15x P/E (conservative):  $121/share
+  + Cumul. dividends (2yr):  +$6.43/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $121  (▼41 from $162)
+  Conservative total return:  -21% over 2yr  = -11%/yr
+
+  13.6% EPS growth is what is left once the premium multiple (25.9x)
+  mean-reverts to 15x. Breakeven at 15x needs FY2019E EPS of $10.37,
+  i.e. 28.8%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $90.34  –  $162.05  (at 100th pct of range)
+  Annual dividend:      $3.12/share  (yield 1.9%)
+  Realized vol (1yr):   20% annualized
+  Beta vs broad market: 1.43
+  1-sigma range (1yr):  $129  –  $195  ($162 ± 20%)
+  2-sigma range (1yr):  $97  –  $227
+  ────────────────────────────────────────────────────────────
+  Bear $11 requires:  ~4.6σ price move  (unusual — requires fundamental break)
+  The largest maker of construction and mining equipment with a 1.4 beta: the stock is +77% off its March
+  low while Machinery sales growth went from +13.7% (Q2 2017) to +36.4% (Q3 2017).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        0.93  11.5x  $     11     4.7%      3.5%    +1.3pp  EPS -61.5%/yr (worst year FY07-FY16, capped at 0%); P/E to its 10th pct
+  BASE        8.35  15.1x  $    126    16.5%     12.1%    +4.4pp  EPS +15.6%/yr (FY17 guide + margin + buyback); P/E at its 10-yr median
+  BULL        8.35  19.9x  $    166    57.6%     42.2%   +15.4pp  EPS +15.6%/yr (FY07-FY16 CAGR); P/E holds its 75th pct
+  XBULL      12.84  23.6x  $    303    21.2%     42.2%   -21.0pp  EPS +43.4%/yr (best 2-yr run FY07-FY16); P/E at its 90th pct
+
+  Proxy EV (2yr): $181  /  Market EV: $214  /  Current: $162
+  Conservative EV (2yr, ④): $121 + $6.43 divs = $127 total value
+  Downside (→ Bear $11): 93.2%   Upside (→ Bull $166): 2.5%   Ratio B 37.37x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $162 the market needs $214 in two years —
+  above the BULL case. That is a market composite of 3.25 against a model
+  read of 2.85: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                      37.37x    +116%    -0.40  MODESTLY OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     4.25x    +116%    -0.05  FAIRLY VALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx    +116%    -0.75  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                         16.70x    +116%    -0.35  MODESTLY OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                           infx    +116%    -0.46  MODESTLY OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)            37.37x    +116%    -0.10  FAIRLY VALUED / AVOID
+  EPP P/E +3 turns (softer floor)                37.37x     +73%    -0.30  MODESTLY OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                   37.37x    +116%    -0.25  MODESTLY OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 2017 print (late January) — the next read on Machinery sales (+36.4% now) and the guide
+  (2) Operating margin — +856.6bp in Q3 2017: price realization against material and factory costs, what must hold if volume does not
+  (3) FY17 profit per share guide $6.25 (Q3 2017 release): the company's own read of the year
+  (4) FY17 sales and revenues guide $44B (Q3 2017 release): volume, price and currency in one number
+  (5) Capital return at 26x — no stock repurchase stated in the release: management's own read of the multiple
+  ✕ AVOID  |  EPP floor $75  |  ADD below ~$107  |  TRIM above $166
+════════════════════════════════════════════════════════════════════════
+

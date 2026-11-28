@@ -1,0 +1,51 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "CMCSA",
+ "as_of": "2024-12-13",
+ "computed": "2026-11-11",
+ "data_source": "Yahoo Finance daily closes + dividends (CMCSA, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2025-06-13",
+   "price": 35.01,
+   "dividends": 0.64,
+   "total_return_pct": -10.7,
+   "benchmark_total_return_pct": -0.6,
+   "excess_pct": -10.1,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2025-12-12",
+   "price": 27.23,
+   "dividends": 1.3,
+   "total_return_pct": -28.5,
+   "benchmark_total_return_pct": 14.0,
+   "excess_pct": -42.6,
+   "hurdle_pct": 15.0
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2024-12-16",
+   "price": 38.86
+  },
+  "low": {
+   "date": "2026-10-09",
+   "price": 22.04
+  },
+  "max_drawdown_pct": -44.8,
+  "return_to_avg_price_m12_m24_pct": -30.0
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "DURABLE",
+   "risk": 2
+  },
+  "today": {
+   "kind": "STRUCTURAL",
+   "risk": 3,
+   "why": "Comcast: broadband subscriber losses to fixed-wireless and fiber with management itself calling fiber pricing 'irrational' and guiding no Q3 improvement; parks/NBCU diversify but the connectivity core is in price-led decline",
+   "reviewed": "2026-09-22"
+  }
+ }
+}

@@ -1,0 +1,149 @@
+
+════════════════════════════════════════════════════════════════════════
+  NVDA  ·  NVIDIA Corporation  ·  $213.88  ·  RETROSPECTIVE as of 2023-02-17
+  Signal: ✕ AVOID   Ratio B: 1.90x   Adj gap: -1.68  [OVERVALUED]
+  Point-in-time: 20 sources, latest published 2023-02-17; latest print Q3 FY23 (Nov 16)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2023E revenue, USD bn  →  FY2025E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2023E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Graphics                      $ 12.46  $12.46  $18.74    +0.00    +6.28
+    +61.4% revenue in FY22
+  Compute & Networking          $  8.67  $ 8.67  $13.05    +0.00    +4.38
+    +61.5% revenue in FY22
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $ 21.13  $21.13  $31.79    +0.00   +10.66
+  FY2023E = FY22 $26.914B × (1 − 21.5%: the Q4 FY23 revenue guide (Q3 FY23 release), YoY, applied to the year (no FY23 revenue guide)); split pro rata to FY22 segment revenue (FY2022 10-K)
+  Q3 FY23 (Nov 16): revenue $5.931B -16.5% YoY (-11.5% QoQ); inventories +99.5%; R&D + SG&A +31.4%;
+  gross margin 53.57% (-1163.2bp); operating margin 10.13% (-2747.1bp); EPS $0.27 vs $0.97
+  Revenue: revenue $5,931M vs $7,103M a year earlier, $6,704M the quarter before; inventories $4,454M (2022-10-30) vs $2,233M a year earlier (Q3 FY22 10-Q); GAAP diluted EPS $0.27 vs $0.97; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used; diluted shares 2,499.0M
+  Q4 FY23 outlook (Q3 FY23 release): revenue $6,000.0M ±2%, i.e. $5,880.0M-$6,120.0M ('Revenue is expected to be $6.00 billion, plus or minus 2%.') against Q4 FY22's $7,643.0M: -23.1% to -19.9% YoY; display only: 'GAAP and non-GAAP gross margins are expected to be 63.2% and 66.0%, respectively, plus or minus 50 basis points.'; no fiscal-year revenue, EPS or margin guide
+
+  FY2023E EPS check:  $21.130B × 36.9% pre-tax × (1−1.9%) ÷ 2.499B  =  $3.06  (FY2023E: no EPS guide in numbers, FY22's $3.85 stands)
+  FY2025E BEAR check: $21.130B × 36.9% ÷ 2.507B  =  $3.05  (scenario $1.79)
+  FY2025E BULL check: $31.790B × 37.3% ÷ 2.507B  =  $4.65  (scenario $7.24)
+  Every 1pp of pre-tax margin ≈ $0.083 EPS ≈ $2.84/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Revenue growth                        -43.0%    ≥-5.0%    ≥34.0%   ≥137.0%    -16.5%  ⚠ BEAR  █░░░
+  Gross margin change                 -1760.0bp  ≥-770.0bp  ≥210.0bp  ≥720.0bp  -1163.2bp  ⚠ BEAR  █░░░
+  Opex growth less revenue             +47.0pp   ≤22.0pp   ≤-2.0pp  ≤-47.0pp   +47.9pp  ⚠ BEAR  █░░░
+  Inventory growth less revenue       +115.0pp   ≤66.0pp   ≤17.0pp  ≤-105.0pp  +116.0pp  ⚠ BEAR  █░░░
+  Operating margin change             -2010.0bp  ≥-950.0bp  ≥120.0bp  ≥1280.0bp  -2747.1bp  ⚠ BEAR  █░░░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.15 / 4.00
+  Market composite:   2.53 / 4.00  (back-solved from $213.88 + 15% hurdle)
+  SCA adjustment:    -0.10  ·  EPP-distance adj -0.20  →  Adj composite 0.85  →  Gap -1.68  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY22 revenue +61.4%, gross margin 64.9%; Q3 gross margin 53.57% (-1163bp YoY)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 55.6x FY23E vs a 34.2x 10-yr median (88th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    -  Growth vs own history: Q4 FY23 revenue guide (Q3 FY23 release) -23.1% to -19.9% vs a 20.6% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  Cash, cash equivalents and marketable securities $13.143B, long-term debt $9,701M; short-term debt $1,249M (Q3 FY23), FY22 free cash flow $8.132B (net cash provided by operating activities $9,108M less purchases related to property and equipment and intangible assets $976M), dividend $0.16 a year  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Revenue growth                        -16.5%    -43.0%  -26.5%  PC demand and channel destocking cut …
+  Gross margin change                 -1163.2bp  -1760.0bp  -596.8bp  Price erosion, mix and product charge…
+  Opex growth less revenue             +47.9pp   +47.0pp  -0.9pp  R&D and SG&A do not come down with re…
+  Inventory growth less revenue       +116.0pp  +115.0pp  -1.0pp  Inventory builds ahead of demand: wri…
+  Operating margin change             -2747.1bp  -2010.0bp  +737.1bp  Operating leverage works in reverse
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$68.45  (model)  /  $30.43 (defined)
+  Bear probability (proxy model):  72.2%
+
+  KEY TRIGGER: revenue went from +3.0% (Q2 FY23) to -16.5% YoY (Q3 FY23), -11.5% on the quarter before;
+  the bear case needs a downturn in gross margin (-1163.2bp now)
+  and inventories (+116.0pp against revenue) giving way. A GPU downturn shows up in channel inventories and the next quarter's
+  revenue first; the bear needs it in gross margin as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $3.85  (FY2023E: no EPS guide in numbers, FY22's $3.85 stands)
+  Min viable P/E at panic:          19x  [median of calendar-year P/E lows: 2013 16.4x, 2014 13.8x, 2015 17.1x, 2016 9.8x, 2017 19.8x, 2018 19.2x, 2019 19.3x, 2020 28.4x, 2021 30.1x, 2022 29.2x, 2023 37.1x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $73.15/share
+  Current $213.88 vs Updated EPP $73.15:  +192%  ⚠ far above floor — large drawdown room
+  Bear $30.43 vs Updated EPP $73.15:  -58%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Revenue growth                                -5.0      +11.5   BASE floor (vs -16 now)
+  Gross margin change                         -770.0     +393.2   BASE floor (vs -1163 now)
+  Opex growth less revenue                      22.0      -25.9   BASE floor (vs +48 now)
+  Inventory growth less revenue                 66.0      -50.0   BASE floor (vs +116 now)
+  Operating margin change                     -950.0    +1797.1   BASE floor (vs -2747 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $3.85 × (1+0.0%)² = $3.85
+  At 34x P/E (conservative):  $130.90/share
+  + Cumul. dividends (2yr):  +$0.33/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $130.90  (▼82.98 from $213.88)
+  Conservative total return:  -39% over 2yr  = -19%/yr
+
+  0.0% EPS growth is what is left once the premium multiple (55.6x)
+  mean-reverts to 34x. Breakeven at 34x needs FY2025E EPS of $6.28,
+  i.e. 27.7%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $108.13  –  $289.46  (at 58th pct of range)
+  Annual dividend:      $0.16/share  (yield 0.1%)
+  Realized vol:         62% annualized (1-yr daily log returns)
+  Beta vs broad market: 2.16
+  1-sigma range (1yr):  $80.42  –  $347.34  ($213.88 ± 62%)
+  2-sigma range (1yr):  $-53.04  –  $480.80
+  ────────────────────────────────────────────────────────────
+  Bear $30.43 requires:  ~1.4σ price move  (within normal vol range)
+  A GPU maker in a cyclical industry: the stock is +91% off its October
+  low (52 weeks) while revenue went from +3.0% (Q2 FY23) to -16.5% YoY (Q3 FY23), -11.5% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        1.79   17.0x  $  30.43    72.2%      8.7%   +63.5pp  EPS -31.8%/yr (worst year FY13-FY22, capped at 0%); P/E to its 10th pct
+  BASE        2.36   34.2x  $  80.71    20.7%     30.5%    -9.8pp  EPS -21.7%/yr (Q4 FY23 guide YoY + margin + buyback); P/E at its 10-yr median
+  BULL        7.24   42.9x  $ 310.60     5.9%     51.1%   -45.2pp  EPS +37.1%/yr (FY13-FY22 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL      17.18   58.9x  $1,011.90     1.1%      9.7%    -8.5pp  EPS +111.3%/yr (best 2-yr run FY13-FY22, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $68.45  /  Market EV: $283.74  /  Current: $213.88
+  Conservative EV (2yr, ④): $130.90 + $0.33 divs = $131.23 total value
+  Downside (→ Bear $30.43): 85.8%   Upside (→ Bull $310.60): 45.2%   Ratio B 1.90x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $213.88 the market needs $282.86 in two years —
+  between the BASE and BULL cases. That is a market composite of 2.53 against a model
+  read of 0.85: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       1.90x    +192%    -1.68  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     0.83x    +192%    -1.41  OVERVALUED / ACCUMULATE
+  Multiples one band cheaper (p5/p25/med/p75)     5.48x    +192%    -2.01  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          1.72x    +192%    -1.65  OVERVALUED / WATCHLIST
+  Scenario EPS -1.5pp/yr                          2.11x    +192%    -1.71  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             1.90x    +192%    -1.38  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 1.90x    +153%    -1.68  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    1.90x    +192%    -1.59  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 FY23 print (February) — revenue against the Q4 FY23 revenue guide (Q3 FY23 release): -23.1% to -19.9% YoY
+  (2) Gross margin — -1163.2bp in Q3 FY23: price erosion, mix and product charges, what must hold if revenue does not
+  (3) The Q4 FY23 guide — revenue $6,000.0M ±2%, i.e. $5,880.0M-$6,120.0M (-23.1% to -19.9% YoY): NVIDIA guides one quarter at a time, in revenue
+  (4) Inventories — +99.5% against revenue -16.5% in Q3 FY23 (+116.0pp): write-downs follow if orders slow
+  (5) Capital structure at 56x — 'During the third quarter of fiscal 2023, NVIDIA returned to shareholders $3.75 billion in share repurchases and cash dividends, bringing the return in the first three quarters to $9.29 billion.' (Q3 FY23 release)
+  ✕ AVOID  |  EPP floor $73.15  |  ADD below ~$68.60  |  TRIM above $310.60
+════════════════════════════════════════════════════════════════════════
+

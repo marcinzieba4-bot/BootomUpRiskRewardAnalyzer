@@ -1,0 +1,158 @@
+
+════════════════════════════════════════════════════════════════════════
+  SO  ·  The Southern Company  ·  $60.65  ·  RETROSPECTIVE as of 2020-11-27
+  Signal: ◉ BUY   Ratio B: 0.58x   Adj gap: -0.93  [OVERVALUED]
+  Point-in-time: 19 sources, latest published 2020-11-27; latest print Q3 2020 (2020-10-29)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2020E revenues, USD bn  →  FY2022E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Revenue line                 FY2020E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Residential               $     5.6  $   5.6  $   5.9      +0.0      +0.3
+    -9.0% revenues in FY19
+  Commercial                $     4.6  $   4.6  $   4.8      +0.0      +0.2
+    -6.3% revenues in FY19
+  Industrial                $     2.8  $   2.8  $   3.0      +0.0      +0.2
+    -6.3% revenues in FY19
+  Other retail              $     0.1  $   0.1  $   0.1      +0.0      +0.0
+    -7.3% revenues in FY19
+  Wholesale                 $     2.0  $   2.0  $   2.1      +0.0      +0.1
+    -14.5% revenues in FY19
+  Natural gas               $     3.6  $   3.6  $   3.7      +0.0      +0.1
+    -1.6% revenues in FY19
+  Other revenues            $     1.3  $   1.3  $   1.4      +0.0      +0.1
+    -26.9% revenues in FY19
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    20.0  $  20.0  $  21.0      +0.0      +1.0
+  FY2020E = FY19 $21.42B × (1 − 6.3%: no Q4 2020 revenue guide, Q3 2020 revenue as reported, applied to the year (no FY20 revenue guide)); split pro rata to FY19 operating revenues by line (SO75 selected data)
+  Q3 2020 (2020-10-29): total revenues $5.62B -6.3%; retail kWh -6.7% (weather-adjusted -3.0%); electric utilities' net income -6.9%;
+  operating margin 32.65% (-92.7bp); EPS $1.18 vs $1.26 (GAAP)
+  Retail kWh -6.7% as reported (43,090 to 40,218 million kWh, weather-adjusted -3.0%); electric utilities' net income -6.9% ($1,459M to $1,358M, the traditional operating companies and Southern Power; the release's Total also includes Southern Company Gas, so the signal sums the traditional electric operating companies and Southern Power, the 10-K's electric utilities, each as reported); revenue -6.3% as reported ($5,995M to $5,620M); operating income $2,013M to $1,835M (operating income includes, as the release publishes it, (Gain) Loss on Dispositions, net none (-$6M a year earlier); Impairment Charges none ($110M a year earlier); no operating income excluding them is published, so the margin is as reported); EPS: basic EPS as reported $1.18 vs $1.26; the release's figure excluding items ($1.22 vs $1.34) also excludes Wholesale Gas Services, not only one-offs, so GAAP stands
+  FY20: no EPS, revenue or margin guide in numbers in any filing (the Q3 2020 release says its earnings slides with supplemental financial information are on the company's website (the Q4 2018 release named among them 'including its earnings guidance for 2019'): website posts are not filings, so they add nothing; no transcript is filed; BASE takes Q3 2020 revenue growth)
+
+  FY2020E EPS check:  $20.0B × 30.5% pre-tax × (1−27.5%) ÷ 1.058B  =  $4.19  (FY2020E: no EPS guide in numbers in any filing, FY19's $4.50 (GAAP) stands)
+  FY2022E BEAR check: $20.0B × 30.5% ÷ 1.112B  =  $3.98  (scenario $3.50)
+  FY2022E BULL check: $21.0B × 30.9% ÷ 1.112B  =  $4.24  (scenario $5.19)
+  Every 1pp of pre-tax margin ≈ $0.14 EPS ≈ $2/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Retail kWh sales                    -8.0%   ≥-3.0%    ≥2.0%    ≥6.0%     -6.7%  ⚠ BEAR  █░░░
+  Electric utilities net income       -7.0%   ≥-2.0%    ≥3.0%   ≥13.0%     -6.9%  ⚠ BEAR  █░░░
+  Revenue growth                     -10.0%   ≥-2.0%    ≥6.0%   ≥16.0%     -6.3%  ⚠ BEAR  █░░░
+  EPS growth                         -15.0%   ≥-6.0%    ≥3.0%   ≥15.0%     -6.3%  ⚠ BEAR  █░░░
+  Operating margin change           -410.0bp  ≥-220.0bp  ≥-30.0bp  ≥150.0bp   -92.7bp  ◦ BASE  ██░░
+  Energy transition: CO2 rules on coal reserves and units   +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.30 / 4.00
+  Market composite:   2.58 / 4.00  (back-solved from $61 + 15% hurdle)
+  SCA adjustment:    +0.15  ·  EPP-distance adj +0.20  →  Adj composite 1.65  →  Gap -0.93  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY19 revenue -8.8%, retail kWh -8.5%, electric utilities' net income +41.8%; Q3 2020 operating margin 32.6% (-92.7bp)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 13.5x FY20E vs a 16.0x 10-yr ex-FY17 median (16th percentile of its own range)  (+0.50 × 25%  =  +0.125)
+    -  Growth vs own history: no Q4 2020 revenue guide, Q3 2020 revenue as reported -6.3% vs a 2.0% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  FY19 year-end cash $1.978B, FY19 free cash flow $-1.77B (net cash provided from operating activities $5,781M less property additions $7,555M (SO75)), dividend $2.56 a year, common stock issued $844M in 2019, none repurchased (SO75 cash flows): the dividend is the return  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Retail kWh sales                     -6.7%     -8.0%   -1.3%  Recession and mild weather cut retail…
+  Electric utilities net income        -6.9%     -7.0%   -0.1%  Rate relief lags costs and lost sales
+  Revenue growth                       -6.3%    -10.0%   -3.7%  Sales and fuel recovery fall together
+  EPS growth                           -6.3%    -15.0%   -8.7%  Costs, interest and dilution outrun r…
+  Operating margin change            -92.7bp  -410.0bp  -317.3bp  Fuel and O&M costs outrun recovery
+  Energy transition: CO2 rules on coal reserves and units    +2.0/4    +1.0/4  -1.0/4  CO2 rules retire coal units and stran…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$50  (model)  /  $43 (defined)
+  Bear probability (proxy model):  68.8%
+
+  KEY TRIGGER: retail kWh sales went from -11.7% (Q2 2020) to -6.7% (Q3 2020);
+  the bear case needs a demand and cost squeeze that the operating margin (-92.7bp now)
+  and the electric utilities' earnings (-6.9% now) no longer absorb.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $4.50  (FY2020E: no EPS guide in numbers in any filing, FY19's $4.50 (GAAP) stands)
+  Min viable P/E at panic:          14x  [median of calendar-year P/E lows: 2010 15.9x, 2011 14.4x, 2012 15.7x, 2013 14.8x, 2014 14.4x, 2015 14.4x, 2016 18.2x, 2018 19.7x, 2019 9.7x, 2020 9.6x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $63/share
+  Current $61 vs Updated EPP $63:  -4%  ✓ BELOW panic floor — deep-value zone
+  Bear $43 vs Updated EPP $63:  -32%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Retail kWh sales                            -3.0       +3.7   BASE floor (vs -7 now)
+  Electric utilities net income               -2.0       +4.9   BASE floor (vs -7 now)
+  Revenue growth                              -2.0       +4.3   BASE floor (vs -6 now)
+  EPS growth                                  -6.0       +0.3   BASE floor (vs -6 now)
+  Operating margin change                   -220.0     -127.3   BASE floor (vs -93 now)
+  Energy transition: CO2 rules on coal reserves and units             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $4.50 × (1+0.0%)² = $4.50
+  At 16x P/E (conservative):  $72/share
+  + Cumul. dividends (2yr):  +$5.27/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $72  (▲11 from $61)
+  Conservative total return:  +27% over 2yr  = +14%/yr
+
+  At 13.5x the multiple is already near its 16x median, so the conservative
+  case is a growth question: breakeven at 16x needs FY2022E EPS of $3.46,
+  i.e. -12.3%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $41.96  –  $71.10  (at 64th pct of range)
+  Annual dividend:      $2.56/share  (yield 4.2%)
+  Realized vol (1yr):   46% annualized
+  Beta vs broad market: 0.98
+  1-sigma range (1yr):  $33  –  $88  ($61 ± 46%)
+  2-sigma range (1yr):  $5  –  $116
+  ────────────────────────────────────────────────────────────
+  Bear $43 requires:  ~0.6σ price move  (within normal vol range)
+  A regulated utility with a 1.0 beta: the stock is +40% off its March
+  low while retail kWh sales went from -11.7% (Q2 2020) to -6.7% (Q3 2020).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        3.50  12.3x  $     43    68.8%      7.9%   +60.9pp  EPS -11.8%/yr (worst year FY10-FY19 ex-FY17, capped at 0%); P/E to its 10th pct
+  BASE        3.74  16.0x  $     60    23.3%     27.5%    -4.2pp  EPS +-8.8%/yr (Q3 revenue + margin + buyback); P/E at its 10-yr ex-FY17 median
+  BULL        5.19  17.6x  $     91     6.7%     54.4%   -47.7pp  EPS +7.4%/yr (FY10-FY19 ex-FY17 CAGR); P/E holds its 75th pct
+  XBULL       5.19  20.3x  $    105     1.3%     10.3%    -9.0pp  EPS +7.4%/yr (best 2-yr run FY10-FY19 ex-FY17); P/E at its 90th pct
+
+  Proxy EV (2yr): $51  /  Market EV: $80  /  Current: $61
+  Conservative EV (2yr, ④): $72 + $5.27 divs = $77 total value
+  Downside (→ Bear $43): 29.1%   Upside (→ Bull $91): 50.0%   Ratio B 0.58x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $61 the market needs $80 in two years —
+  between the BASE and BULL cases. That is a market composite of 2.58 against a model
+  read of 1.65: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.58x      -4%    -0.93  OVERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.20x      -4%    -0.62  OVERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.88x      -4%    -1.49  OVERVALUED / ACCUMULATE
+  Scenario EPS +1.5pp/yr                          0.50x      -4%    -0.84  OVERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.66x      -4%    -1.01  OVERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.58x      -4%    -0.63  OVERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.58x     -21%    -0.93  OVERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.58x      -4%    -0.71  OVERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 2020 print (mid February) — the next read on retail kWh sales (-6.7% now); no sales guide in numbers to read it against
+  (2) Operating margin — -92.7bp in Q3 2020: fuel and purchased power, non-fuel O&M and depreciation against rate relief
+  (3) A FY20 earnings guide in numbers — none in any filing (guidance is given on the analyst call and in slides on the company's website only)
+  (4) Electric utilities' net income — -6.9% in Q3 2020 ($1,358M vs $1,459M): rate relief against sales, weather and costs
+  (5) Capital return at 13x — common stock issued $844M in 2019, none repurchased (SO75 cash flows): the dividend is the return: management's own read of the multiple
+  ◉ BUY  |  EPP floor $63  |  ADD below ~$51  |  TRIM above $91
+════════════════════════════════════════════════════════════════════════
+

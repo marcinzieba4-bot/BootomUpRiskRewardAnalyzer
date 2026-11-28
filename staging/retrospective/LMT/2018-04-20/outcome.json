@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "LMT",
+ "as_of": "2018-04-20",
+ "computed": "2026-11-17",
+ "data_source": "Yahoo Finance daily closes + dividends (LMT, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2018-10-19",
+   "price": 328.14,
+   "dividends": 4.0,
+   "total_return_pct": -5.6,
+   "benchmark_total_return_pct": 4.6,
+   "excess_pct": -10.2,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2019-04-18",
+   "price": 314.26,
+   "dividends": 8.4,
+   "total_return_pct": -8.3,
+   "benchmark_total_return_pct": 10.7,
+   "excess_pct": -19.1,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2020-04-20",
+   "price": 383.21,
+   "dividends": 17.6,
+   "total_return_pct": 13.9,
+   "benchmark_total_return_pct": 9.8,
+   "excess_pct": 4.1,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2021-04-20",
+   "price": 387.33,
+   "dividends": 27.6,
+   "total_return_pct": 17.9,
+   "benchmark_total_return_pct": 60.8,
+   "excess_pct": -42.9,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2020-02-11",
+   "price": 439.85
+  },
+  "low": {
+   "date": "2018-12-24",
+   "price": 245.22
+  },
+  "max_drawdown_pct": -37.1,
+  "return_to_avg_price_m12_m24_pct": 6.7
+ },
+ "scenario_landing_2y": "BULL",
+ "call_check_2y": {
+  "expectation": "RICH: should miss the hurdle and lag the benchmark",
+  "hit": false
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "DURABLE",
+   "risk": 2
+  },
+  "today": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Lockheed: defense prime; F-35 program overhang, budget-driven",
+   "reviewed": "2026-09-22"
+  }
+ }
+}

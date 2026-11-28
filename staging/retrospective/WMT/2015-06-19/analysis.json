@@ -1,0 +1,278 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "WMT",
+ "company": "Wal-Mart Stores, Inc.",
+ "as_of": "2015-06-19",
+ "price_date": "2015-06-19",
+ "price": 72.74,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); discount-retail signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "Walmart: 'helps people around the world save money and live better – anytime and anywhere – in retail stores or through our e-commerce and mobile capabilities'; 'everyday low prices (\"EDLP\")'; 'The retail business is highly competitive' ('We face strong competition from other retailers and wholesale club operators (whether through physical retail, digital retail or through a combination of both areas), which could materially adversely affect our financial performance'); and 'General economic conditions, globally or in one or more of the markets we serve, may adversely affect our financial performance' (its own FY2015 10-K): a low-price store network whose demand follows the consumer economy by its own account; ECOMMERCE is live (from 2015-01-01) and its competition risk factor puts it on the watch list: company-acknowledged, with no dated evidence that the market prices it for Walmart",
+  "theme_watch": [
+   {
+    "theme": "ECOMMERCE",
+    "status": "live, company-acknowledged; no market read",
+    "reason": "Live: Walmart's own FY2015 10-K says 'We face strong competition from other retailers and wholesale club operators (whether through physical retail, digital retail or through a combination of both areas), which could materially adversely affect our financial performance.' At the same time it sells online itself: 'E-commerce sales positively impacted comparable sales approximately 0.3% and 0.2% for Walmart U.S. and Sam's Club, respectively, for the fiscal year ended January 31, 2015'. The stock trades at 14.9x FY16E — near its own median. Re-file as DISRUPTION_EXPOSED (ECOMMERCE) only if dated evidence shows the market pricing online substitution of Walmart's store sales specifically."
+   }
+  ],
+  "evidence": [
+   "WM52"
+  ]
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "Walmart: 'helps people around the world save money and live better – anytime and anywhere – in retail stores or through our e-commerce and mobile capabilities'; 'everyday low prices (\"EDLP\")'; 'The retail business is highly competitive' ('We face strong competition from other retailers and wholesale club operators (whether through physical retail, digital retail or through a combination of both areas), which could materially adversely affect our financial performance'); and 'General economic conditions, globally or in one or more of the markets we serve, may adversely affect our financial performance' (its own FY2015 10-K): a low-price store network whose demand follows the consumer economy by its own account; ECOMMERCE is live (from 2015-01-01) and its competition risk factor puts it on the watch list: company-acknowledged, with no dated evidence that the market prices it for Walmart. durable franchise (obsolescence risk 2/5); price rich; Ratio B 0.90x; +15% to EPP floor; model-vs-market gap -2.17; conservative 2yr +4%.",
+  "theme": null
+ },
+ "legacy_signal_short": "ACCUMULATE",
+ "legacy_signal": "◎ ACCUMULATE",
+ "metrics": {
+  "ratio_b": 0.9,
+  "ratio_b_fmt": "0.90x",
+  "epp": 63.38,
+  "epp_gap_pct": 14.8,
+  "epp_adj": 0.0,
+  "proxy_composite": 1.35,
+  "sca": 0.043,
+  "adj_composite": 1.393,
+  "market_composite": 3.56,
+  "adj_gap": -2.17,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": 3.9,
+  "scenarios": {
+   "BEAR": {
+    "eps": 4.8,
+    "pe": 12.3,
+    "price": 59,
+    "desc": "EPS -0.8%/yr (worst year FY06-FY15, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 5.31,
+    "pe": 14.8,
+    "price": 79,
+    "desc": "EPS +4.4%/yr (FY16 guide + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 5.6,
+    "pe": 15.8,
+    "price": 88,
+    "desc": "EPS +7.2%/yr (FY06-FY15 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 6.02,
+    "pe": 16.9,
+    "price": 102,
+    "desc": "EPS +11.1%/yr (best 2-yr run FY06-FY15); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.9,
+   "epp_gap_pct": 14.8,
+   "adj_gap": -2.17,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 3.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.35,
+   "epp_gap_pct": 14.8,
+   "adj_gap": -1.63,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 3.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 1.53,
+   "epp_gap_pct": 14.8,
+   "adj_gap": -2.36,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 3.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.64,
+   "epp_gap_pct": 14.8,
+   "adj_gap": -1.96,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 3.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 1.19,
+   "epp_gap_pct": 14.8,
+   "adj_gap": -2.38,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 3.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.9,
+   "epp_gap_pct": 14.8,
+   "adj_gap": -1.87,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 3.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.9,
+   "epp_gap_pct": -6.7,
+   "adj_gap": -1.97,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 3.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.9,
+   "epp_gap_pct": 14.8,
+   "adj_gap": -1.55,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 3.9,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "RICH"
+ ],
+ "summary": "WMT (retrospective, 2015-06-19) ◎ ACCUMULATE — Ratio B 0.90x (18.9% downside to Bear $59 / +21.0% upside to Bull $88) | Adj composite 1.39 vs market 3.56: gap -2.17 [OVERVALUED] | +15% above the EPP floor $63 (13x FY16E $4.88) | Conservative 2-yr case: +3.9% total (+2.0%/yr) | At 14.9x FY16E the 15% hurdle price $96 sits above the BULL case; U.S. comps +0.2% in Q1 FY16, forward sales +1-2% (FY16 net sales guide); e-commerce competition is live and company-acknowledged; no dated evidence ties the multiple to it.",
+ "sources": [
+  {
+   "id": "WM52",
+   "published": "2015-04-02",
+   "filed": "2015-04-01 16:44 ET, after the close",
+   "title": "Wal-Mart Stores FY2015 10-K and Exhibit 13 (annual report)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416915000011/wmtars-1312015.htm",
+   "supports": "Five-Year Financial Summary FY11-FY15; statements of income; the February 19, 2015 dividend; Item 1 and 1A wording"
+  },
+  {
+   "id": "WM26",
+   "published": "2010-03-31",
+   "filed": "2010-03-30 17:07 ET, after the close",
+   "title": "Wal-Mart Stores FY2010 10-K and Exhibit 13 (annual report)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312510071652/dex13.htm",
+   "supports": "Five-Year Financial Summary FY06-FY10; statements of income; the March 4, 2010 dividend increase"
+  },
+  {
+   "id": "WM31",
+   "published": "2011-03-31",
+   "filed": "2011-03-30 17:31 ET, after the close",
+   "title": "Wal-Mart Stores FY2011 10-K and Exhibit 13 (annual report)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312511083157/dex13.htm",
+   "supports": "Five-Year Financial Summary FY07-FY11 as adjusted; statements of income; the March 3, 2011 dividend increase"
+  },
+  {
+   "id": "WM36",
+   "published": "2012-03-28",
+   "filed": "2012-03-27 17:22 ET, after the close",
+   "title": "Wal-Mart Stores FY2012 10-K and Exhibit 13 (annual report)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312512134679/d270972dex13.htm",
+   "supports": "Five-Year Financial Summary FY08-FY12; statements of income; the March 1, 2012 dividend increase; Item 1 and 1A wording"
+  },
+  {
+   "id": "WM41",
+   "published": "2013-03-27",
+   "filed": "2013-03-26 17:09 ET, after the close",
+   "title": "Wal-Mart Stores FY2013 10-K and Exhibit 13 (annual report)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416913000011/annualreporttoshareholders.htm",
+   "supports": "Five-Year Financial Summary FY09-FY13; statements of income; Item 1 and 1A wording"
+  },
+  {
+   "id": "WM47",
+   "published": "2014-03-24",
+   "filed": "2014-03-21 17:10 ET, after the close (a Friday)",
+   "title": "Wal-Mart Stores FY2014 10-K and Exhibit 13 (annual report)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416914000019/wmt13114ars.htm",
+   "supports": "Five-Year Financial Summary FY10-FY14; statements of income; the February 20, 2014 dividend; Item 1 and 1A wording"
+  },
+  {
+   "id": "WM25",
+   "published": "2010-02-18",
+   "filed": "2010-02-18 07:15 ET, before the open",
+   "title": "Wal-Mart Q4 FY2010 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312510033699/dex991.htm",
+   "supports": "Q4 and FY10 results; adjusted EPS FY10 $3.66 (reported $3.72), FY09 $3.42; FY11 EPS $3.90-4.00"
+  },
+  {
+   "id": "WM30",
+   "published": "2011-02-22",
+   "filed": "2011-02-22 07:01 ET, before the open",
+   "title": "Wal-Mart Q4 FY2011 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312511041255/dex991.htm",
+   "supports": "Q4 and FY11 results; underlying EPS FY11 $4.07 (reported $4.18), FY10 $3.67 as adjusted; FY12 EPS $4.35-4.50, net sales +4-6%"
+  },
+  {
+   "id": "WM51",
+   "published": "2015-02-19",
+   "filed": "2015-02-19 08:30 ET, before the open",
+   "title": "Wal-Mart Q4 FY2015 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416915000006/earningsrelease-1312015.htm",
+   "supports": "Q4 and FY15 results; underlying EPS FY15 $5.07 (reported $4.99); FY16 EPS $4.70-5.05, net sales +1-2%; Q1 FY16 EPS $0.95-1.10"
+  },
+  {
+   "id": "WM15",
+   "published": "2008-04-01",
+   "filed": "2008-03-31 16:12 ET, after the close",
+   "title": "Wal-Mart Stores FY2008 10-K and Exhibit 13 (annual report)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312508071085/dex13.htm",
+   "supports": "Eleven-Year Financial Summary fiscal 1998-2008; statements of income fiscal 2006-2008; segment net sales; the March 6, 2008 dividend increase; Item 1 and Item 1A wording"
+  },
+  {
+   "id": "WM53",
+   "published": "2015-05-19",
+   "filed": "2015-05-19 07:00 ET, before the open",
+   "title": "Wal-Mart Q1 FY2016 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416915000015/earningsrelease-4302015.htm",
+   "supports": "Q1 FY16 results; Q2 FY16 EPS $1.06-1.18"
+  },
+  {
+   "id": "WM17",
+   "published": "2008-08-14",
+   "filed": "2008-08-14 06:14 ET, before the open",
+   "title": "Wal-Mart Q2 FY2009 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312508177102/dex991.htm",
+   "supports": "Q2 FY09 results; FY09 EPS raised to $3.43-3.50; Q3 FY09 EPS $0.73-0.76, U.S. comps 1-2%; the Walmart U.S. segment name"
+  },
+  {
+   "id": "WM27",
+   "published": "2010-05-18",
+   "filed": "2010-05-18 08:09 ET, before the open",
+   "title": "Wal-Mart Q1 FY2011 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000119312510122849/dex991.htm",
+   "supports": "Q1 FY11 results; Q2 FY11 EPS $0.93-0.98"
+  },
+  {
+   "id": "WM0",
+   "published": "2015-06-19",
+   "title": "Yahoo Finance daily prices, WMT and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/WMT/history",
+   "supports": "close $72.74 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-07"
+}

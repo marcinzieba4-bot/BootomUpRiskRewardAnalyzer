@@ -1,0 +1,230 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "CAT",
+ "company": "Caterpillar Inc.",
+ "as_of": "2017-02-03",
+ "price_date": "2017-02-03",
+ "price": 93.28,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); machinery and engines signals",
+ "pit_profile": {
+  "kind": "CYCLICAL",
+  "risk": 2,
+  "why": "'Caterpillar is the world’s leading manufacturer of construction and mining equipment, diesel and natural gas engines, industrial gas turbines and diesel-electric locomotives' (FY2015 10-K, Item 1); 'Caterpillar products and product support services are sold worldwide into a variety of highly competitive markets'; 'The demand for our products and services tends to be cyclical and can be significantly reduced in an economic environment characterized by lower levels of government and business investment, lower levels of business confidence, lower corporate earnings, perceived or actual industry overcapacity, higher unemployment and lower consumer spending.', 'The energy and mining industries are major users of our products, including the coal, iron ore, gold, copper, oil and natural gas industries.' and 'Changes in environmental and climate change laws or regulations, including laws relating to greenhouse gas emissions, could lead to new or additional investment in product designs and could increase environmental compliance expenditures.' (Item 1A): the 10-K calls the demand for its own products cyclical (BKR's 'Our business is cyclical'), so CYCLICAL from the FY2010 10-K; ENERGY_TRANSITION is live from 2015-12-12 but scoped to oil, gas and coal reserves and refining, which a maker of construction and mining equipment, engines and turbines does not hold, so the climate-change wording stays here",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "TOO MUCH CYCLE RISK",
+  "quality_label": "✕ TOO MUCH CYCLE RISK",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "CYCLICAL",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "'Caterpillar is the world’s leading manufacturer of construction and mining equipment, diesel and natural gas engines, industrial gas turbines and diesel-electric locomotives' (FY2015 10-K, Item 1); 'Caterpillar products and product support services are sold worldwide into a variety of highly competitive markets'; 'The demand for our products and services tends to be cyclical and can be significantly reduced in an economic environment characterized by lower levels of government and business investment, lower levels of business confidence, lower corporate earnings, perceived or actual industry overcapacity, higher unemployment and lower consumer spending.', 'The energy and mining industries are major users of our products, including the coal, iron ore, gold, copper, oil and natural gas industries.' and 'Changes in environmental and climate change laws or regulations, including laws relating to greenhouse gas emissions, could lead to new or additional investment in product designs and could increase environmental compliance expenditures.' (Item 1A): the 10-K calls the demand for its own products cyclical (BKR's 'Our business is cyclical'), so CYCLICAL from the FY2010 10-K; ENERGY_TRANSITION is live from 2015-12-12 but scoped to oil, gas and coal reserves and refining, which a maker of construction and mining equipment, engines and turbines does not hold, so the climate-change wording stays here. cyclical (obsolescence risk 2/5); price rich; +168% to EPP floor; model-vs-market gap -2.72; conservative 2yr -50%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": Infinity,
+  "ratio_b_fmt": "infx",
+  "epp": 34.8,
+  "epp_gap_pct": 168.0,
+  "epp_adj": -0.2,
+  "proxy_composite": 1.35,
+  "sca": -0.1,
+  "adj_composite": 1.05,
+  "market_composite": 3.77,
+  "adj_gap": -2.72,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": -49.7,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.43,
+    "pe": 11.5,
+    "price": 5,
+    "desc": "EPS -61.5%/yr (worst year FY06-FY16, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 2.84,
+    "pe": 14.7,
+    "price": 42,
+    "desc": "EPS +-1.1%/yr (FY17 guide + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 2.84,
+    "pe": 19.2,
+    "price": 55,
+    "desc": "EPS +-1.1%/yr (FY06-FY16 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 5.96,
+    "pe": 23.7,
+    "price": 141,
+    "desc": "EPS +43.4%/yr (best 2-yr run FY06-FY16); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 168.0,
+   "adj_gap": -2.72,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -49.7,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 168.0,
+   "adj_gap": -2.22,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -49.7,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 168.0,
+   "adj_gap": -2.72,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -49.7,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 168.0,
+   "adj_gap": -2.65,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -49.7,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 168.0,
+   "adj_gap": -2.72,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -49.7,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 168.0,
+   "adj_gap": -2.42,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -49.7,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 114.4,
+   "adj_gap": -2.72,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -49.7,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 168.0,
+   "adj_gap": -2.54,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -49.7,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "RICH"
+ ],
+ "summary": "CAT (retrospective, 2017-02-03) ✕ AVOID — Ratio B infx (94.6% downside to Bear $5 / +-41.0% upside to Bull $55) | Adj composite 1.05 vs market 3.77: gap -2.72 [OVERVALUED] | +168% above the EPP floor $35 (12x FY17E $2.90) | Conservative 2-yr case: -49.7% total (-24.8%/yr) | At 32.2x FY17E the 15% hurdle price $123 sits above the BULL case; Machinery sales -13.0% in Q4 2016, forward revenues -6.6% to +1.2% (FY17 sales and revenues guide); ENERGY_TRANSITION is live from 2015-12-12 but scoped to oil, gas and coal reserves and refining; no theme in scope has dated evidence.",
+ "sources": [
+  {
+   "id": "CT72",
+   "published": "2016-05-16",
+   "filed": "2016-05-16 12:40 ET (during the session)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823016000533/cat_8-kx12312015.htm",
+   "title": "Caterpillar 8-K, Item 8.01: the FY2015 10-K's Items 1, 6, 7 and 8 recast for mark-to-market pension and OPEB accounting and the 2016 segments (Exhibits 99.1-99.4)",
+   "supports": "2011-2015 profit per share - diluted as recast (five-year summary), 2013-2015 statement of results, 2014 and 2015 profit per share excluding restructuring costs and mark-to-market losses, 2014-2015 external sales of the 2016 segments, 2015 cash, operating cash flow and dividends"
+  },
+  {
+   "id": "CT69",
+   "published": "2016-01-28",
+   "filed": "2016-01-28 07:39 ET (before the open)",
+   "title": "Caterpillar 8-K: fourth-quarter 2015 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465916091860/a16-2992_1ex99d1.htm",
+   "supports": "fourth-quarter 2015 sales and revenues by segment and statement of results, full-year 2015 actuals; 2016 outlook: sales and revenues $40 to $44 billion, profit $4.00 per share excluding restructuring costs (about $3.50 including them)"
+  },
+  {
+   "id": "CT71",
+   "published": "2016-04-22",
+   "filed": "2016-04-22 07:45 ET (before the open)",
+   "title": "Caterpillar 8-K: first-quarter 2016 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823016000503/cat_exx991xq1x2016xearning.htm",
+   "supports": "first-quarter 2016 sales and revenues by segment and statement of results, the year-ago quarter and 2015 recast for mark-to-market pension accounting; 2016 outlook: sales and revenues $40 to $42 billion, profit $3.70 per share excluding restructuring costs ($3.00 including them)"
+  },
+  {
+   "id": "CT73",
+   "published": "2016-07-26",
+   "filed": "2016-07-26 07:47 ET (before the open)",
+   "title": "Caterpillar 8-K: second-quarter 2016 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823016000611/cat_exx991xq2x2016xearning.htm",
+   "supports": "second-quarter 2016 sales and revenues by segment and statement of results; 2016 outlook: sales and revenues $40.0 to $40.5 billion, profit about $3.55 per share excluding restructuring costs (about $2.75 including them)"
+  },
+  {
+   "id": "CT74",
+   "published": "2016-10-25",
+   "filed": "2016-10-25 09:05 ET (before the open)",
+   "title": "Caterpillar 8-K: third-quarter 2016 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823016000702/cat_exx991xq3x2016xearning.htm",
+   "supports": "third-quarter 2016 sales and revenues by segment and statement of results; 2016 outlook: sales and revenues about $39 billion, profit $3.25 per share excluding restructuring costs ($2.35 including them); preliminary 2017 sales and revenues not significantly different"
+  },
+  {
+   "id": "CT75",
+   "published": "2017-01-26",
+   "filed": "2017-01-26 07:35 ET (before the open)",
+   "title": "Caterpillar 8-K: fourth-quarter 2016 results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823017000034/cat_exx991xq4x2016xearning.htm",
+   "supports": "fourth-quarter 2016 sales and revenues by segment and statement of results, full-year 2016 actuals and adjusted profit per share for 2016 and 2015; 2017 outlook: sales and revenues $36 to $39 billion, adjusted profit about $2.90 per share (about $2.30 including restructuring costs)"
+  },
+  {
+   "id": "CT65",
+   "published": "2015-06-10",
+   "filed": "2015-06-10 14:06 ET (during the session)",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823015000205/exhibit991_dividendpressre.htm",
+   "title": "Caterpillar 8-K: June 2015 dividend declaration (Exhibit 99.1)",
+   "supports": "quarterly dividend $0.77"
+  },
+  {
+   "id": "CT9",
+   "published": "2005-06-08",
+   "filed": "2005-06-08 12:00 ET",
+   "title": "Caterpillar 8-K: 'Caterpillar Splits Stock; Increases Dividend Rate'",
+   "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823005000429/form8k060805_dividend.htm",
+   "supports": "a two-for-one stock split; the split shares distributed on July 13 to stockholders of record on June 22, 2005"
+  },
+  {
+   "id": "W0",
+   "published": "2017-02-03",
+   "title": "Yahoo Finance daily prices, CAT and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/CAT/history",
+   "supports": "close $93.28 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-11"
+}

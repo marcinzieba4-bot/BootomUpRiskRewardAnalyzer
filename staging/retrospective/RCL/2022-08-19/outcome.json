@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "RCL",
+ "as_of": "2022-08-19",
+ "computed": "2026-11-09",
+ "data_source": "Yahoo Finance daily closes + dividends (RCL, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2023-02-17",
+   "price": 73.03,
+   "dividends": 0,
+   "total_return_pct": 84.2,
+   "benchmark_total_return_pct": -2.7,
+   "excess_pct": 86.9,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2023-08-18",
+   "price": 99.2,
+   "dividends": 0,
+   "total_return_pct": 150.2,
+   "benchmark_total_return_pct": 4.9,
+   "excess_pct": 145.2,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2024-08-19",
+   "price": 161.43,
+   "dividends": 0,
+   "total_return_pct": 307.1,
+   "benchmark_total_return_pct": 35.7,
+   "excess_pct": 271.4,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2025-08-19",
+   "price": 330.07,
+   "dividends": 2.45,
+   "total_return_pct": 738.6,
+   "benchmark_total_return_pct": 56.4,
+   "excess_pct": 682.2,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2024-07-16",
+   "price": 172.08
+  },
+  "low": {
+   "date": "2022-10-03",
+   "price": 37.59
+  },
+  "max_drawdown_pct": -27.0,
+  "return_to_avg_price_m12_m24_pct": 216.0
+ },
+ "scenario_landing_2y": "BEAR",
+ "call_check_2y": {
+  "expectation": "CHEAP: should clear the hurdle or beat the benchmark",
+  "hit": true
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "DURABLE",
+   "risk": 2
+  },
+  "today": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Royal Caribbean: cruise demand cycle with $22B net debt",
+   "reviewed": "2026-09-22"
+  }
+ }
+}

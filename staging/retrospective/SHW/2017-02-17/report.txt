@@ -1,0 +1,155 @@
+
+════════════════════════════════════════════════════════════════════════
+  SHW  ·  The Sherwin-Williams Company  ·  $311.35  ·  RETROSPECTIVE as of 2017-02-17
+  Signal: ✕ AVOID   Ratio B: 2.04x   Adj gap: -0.55  [OVERVALUED]
+  Point-in-time: 16 sources, latest published 2017-02-17; latest print Q4 2016 (Jan 26)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2017E net sales, USD bn  →  FY2019E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2017E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Paint Stores Group        $     8.1  $   8.1  $   8.8      +0.0      +0.7
+    +5.2% net sales in FY15
+  Global Finishes Group     $     2.2  $   2.2  $   2.3      +0.0      +0.1
+    -7.9% net sales in FY15
+  Consumer Group            $     1.8  $   1.8  $   1.9      +0.0      +0.1
+    +11.1% net sales in FY15
+  Latin America Coatings G  $     0.7  $   0.7  $   0.8      +0.0      +0.1
+    -18.2% net sales in FY15
+  Administrative            $     0.0  $   0.0  $   0.0      +0.0      +0.0
+    +2.4% net sales in FY15
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    12.8  $  12.8  $  13.8      +0.0      +1.0
+  FY2017E = FY16 $11.86B × (1 + 7.7%: no FY17 net sales guide in numbers, Q4 2016 net sales ex-currency, applied to the year (no FY17 net sales guide in numbers)); split pro rata to FY15 segment net sales (FY2015 10-K)
+  Q4 2016 (Jan 26): net sales $2.78B +6.8%; comps +5.5%; Consumer Group +0.4%; gross margin 49.90% (-86.8bp);
+  pre-tax margin 10.93% (-48.5bp); EPS $2.15 vs $2.11
+  Comparable-store sales: 'Net sales from stores open for more than twelve calendar months, excluding the revenue reclassification, increased 5.3% in the year and 5.5% in the quarter'; Consumer Group: 'Net sales of the Consumer Group increased 0.4% to $1.58 billion in the year and increased 0.4% to $315.9 million in the quarter'; currency -0.9pp ('Unfavorable currency translation rate changes decreased consolidated net sales 1.4% in the year and 0.9% in the quarter'); no acquisition effect stated; 'The change in revenue classification increased sales in the year and quarter 1.1% and 2.2%, respectively'; EPS 'including a $.22 per share charge for costs associated with the anticipated acquisition of Valspar partially offset by an increase of $.03 per share related to a reduction in the income tax provision' ($2.34 excluding both); the year-ago quarter restated for the treasury stock method ($2.11)
+  FY17 guide (Q4 2016 release): EPS $13.60-13.80 (excluding Valspar acquisition costs and the reduction in the income tax provision from ASU 2016-09; GAAP $13.00 to $13.20); net sales in words: 'consolidated net sales to increase a mid single digit percentage compared to full year 2016'; Q1 2017: net sales in words: 'our consolidated net sales will increase a mid to high single digit percentage compared to the first quarter of 2016', EPS $2.03-2.13; the first-quarter EPS range is on the same basis (GAAP $1.45 to $1.55)
+
+  FY2017E EPS check:  $12.8B × 13.5% pre-tax × (1−29.0%) ÷ 0.095B  =  $12.94  (FY2017E EPS, guide midpoint)
+  FY2019E BEAR check: $12.8B × 13.5% ÷ 0.087B  =  $13.99  (scenario $9.92)
+  FY2019E BULL check: $13.8B × 13.9% ÷ 0.087B  =  $15.53  (scenario $17.04)
+  Every 1pp of pre-tax margin ≈ $0.96 EPS ≈ $19/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Paint Stores comparable sales       -7.0%   ≥-1.0%    ≥4.0%   ≥14.0%     +5.5%  ▲ BULL  ███░
+  Gross margin change               -290.0bp  ≥-130.0bp  ≥30.0bp  ≥180.0bp   -86.8bp  ◦ BASE  ██░░
+  Net sales growth                   -10.0%   ≥-3.0%    ≥4.0%   ≥18.0%     +6.8%  ▲ BULL  ███░
+  Consumer Group net sales growth    -20.0%   ≥-9.0%    ≥2.0%   ≥21.0%     +0.4%  ◦ BASE  ██░░
+  Pre-tax margin change             -220.0bp  ≥-110.0bp   ≥0.0bp  ≥160.0bp   -48.5bp  ◦ BASE  ██░░
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.35 / 4.00
+  Market composite:   2.89 / 4.00  (back-solved from $311 + 15% hurdle)
+  SCA adjustment:    +0.09  ·  EPP-distance adj -0.10  →  Adj composite 2.34  →  Gap -0.55  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY16 net sales +4.6% on Paint Stores comps +5.3%, 4,180 paint stores; Q4 gross margin 49.90% (-86.8bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 22.7x FY17E vs a 20.1x 10-yr median (68th percentile of its own range)  (-0.30 × 25%  =  -0.075)
+    +  Growth vs own history: no FY17 net sales guide in numbers, Q4 2016 net sales ex-currency +7.7% vs a 5.7% 10-yr median  (+0.20 × 20%  =  +0.040)
+    +  FY16 year-end cash $0.206B, FY15 free cash flow $1.21B, dividend $3.36 a year, 3.58 million shares purchased in 2015; remaining authorization 11.65 million shares at December 31, 2015  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Paint Stores comparable sales        +5.5%     -7.0%  -12.5%  Housing turnover and repaint demand f…
+  Gross margin change                -86.8bp  -290.0bp  -203.2bp  Raw material costs outrun selling prices
+  Net sales growth                     +6.8%    -10.0%  -16.8%  Volume falls faster than prices, stor…
+  Consumer Group net sales growth      +0.4%    -20.0%  -20.4%  DIY demand at the big retailers shrinks
+  Pre-tax margin change              -48.5bp  -220.0bp  -171.5bp  Store and selling costs deleverage on…
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$200  (model)  /  $137 (defined)
+  Bear probability (proxy model):  12.0%
+
+  KEY TRIGGER: Paint Stores comparable sales went from +2.1% (Q3 2016) to +5.5% (Q4 2016);
+  the bear case needs a demand recession that gross margin (-86.8bp now)
+  and selling prices no longer cover. Housing drives demand, by the company's own account; the bear needs raw
+  material costs to stay up while volumes fall.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $13.70  (FY2017E EPS, guide midpoint)
+  Min viable P/E at panic:          16x  [median of calendar-year P/E lows: 2007 12.3x, 2008 11.3x, 2009 11.4x, 2010 13.8x, 2011 16.8x, 2012 14.0x, 2013 21.3x, 2014 20.0x, 2015 19.6x, 2016 19.2x, 2017 20.0x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $219/share
+  Current $311 vs Updated EPP $219:  +42%  ⚠ far above floor — large drawdown room
+  Bear $137 vs Updated EPP $219:  -37%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Paint Stores comparable sales               -1.0       -6.5   BASE floor (vs +6 now)
+  Gross margin change                       -130.0      -43.2   BASE floor (vs -87 now)
+  Net sales growth                            -3.0       -9.8   BASE floor (vs +7 now)
+  Consumer Group net sales growth             -9.0       -9.4   BASE floor (vs +0 now)
+  Pre-tax margin change                     -110.0      -61.5   BASE floor (vs -48 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $13.70 × (1+9.5%)² = $16.43
+  At 20x P/E (conservative):  $329/share
+  + Cumul. dividends (2yr):  +$6.92/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $329  (▲17 from $311)
+  Conservative total return:  +8% over 2yr  = +4%/yr
+
+  9.5% EPS growth is what is left once the premium multiple (22.7x)
+  mean-reverts to 20x. Breakeven at 20x needs FY2019E EPS of $15.22,
+  i.e. 5.4%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $239.48  –  $312.48  (at 98th pct of range)
+  Annual dividend:      $3.36/share  (yield 1.1%)
+  Realized vol (1yr):   23% annualized
+  Beta vs broad market: 0.94
+  1-sigma range (1yr):  $239  –  $384  ($311 ± 23%)
+  2-sigma range (1yr):  $166  –  $456
+  ────────────────────────────────────────────────────────────
+  Bear $137 requires:  ~2.4σ price move  (unusual — requires fundamental break)
+  A paint and coatings company with a 0.9 beta: the stock is +29% off its November
+  low while Paint Stores comparable sales went from +2.1% (Q3 2016) to +5.5% (Q4 2016).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        9.92  13.8x  $    137    12.0%      4.9%    +7.1pp  EPS -14.9%/yr (worst year FY06-FY16, capped at 0%); P/E to its 10th pct
+  BASE       17.04  20.1x  $    343    42.0%     17.2%   +24.9pp  EPS +11.5%/yr (Q4 ex-FX + margin + buyback); P/E at its 10-yr median
+  BULL       17.04  23.3x  $    397    38.7%     59.9%   -21.2pp  EPS +11.5%/yr (FY06-FY16 CAGR); P/E holds its 75th pct
+  XBULL      24.02  25.0x  $    600     7.3%     18.0%   -10.7pp  EPS +32.4%/yr (best 2-yr run FY06-FY16); P/E at its 90th pct
+
+  Proxy EV (2yr): $358  /  Market EV: $412  /  Current: $311
+  Conservative EV (2yr, ④): $329 + $6.92 divs = $336 total value
+  Downside (→ Bear $137): 56.0%   Upside (→ Bull $397): 27.5%   Ratio B 2.04x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $311 the market needs $412 in two years —
+  above the BULL case. That is a market composite of 2.89 against a model
+  read of 2.34: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       2.04x     +42%    -0.55  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     1.41x     +42%    -0.10  FAIRLY VALUED / WATCHLIST
+  Multiples one band cheaper (p5/p25/med/p75)     5.73x     +42%    -0.88  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          1.74x     +42%    -0.43  MODESTLY OVERVALUED / WATCHLIST
+  Scenario EPS -1.5pp/yr                          2.42x     +42%    -0.65  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             2.04x     +42%    -0.25  MODESTLY OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 2.04x     +20%    -0.45  MODESTLY OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    2.04x     +42%    -0.18  FAIRLY VALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 2017 print (late April) — the next read on comps (+5.5% now) and the guide
+  (2) Gross margin — -86.8bp in Q4 2016: raw material costs against selling prices, what must hold if comps do not
+  (3) FY17 EPS guide $13.60-13.80 (Q4 2016 release)
+  (4) Pre-tax margin — 10.93% in Q4 2016 (-48.5bp): where store and selling costs deleverage on falling comps
+  (5) Capital return at 23x — no open market purchases in the year; cash on hand of $889.8 million at December 31, 2016 'that will be utilized to fund the Valspar acquisition': management's own read of the multiple
+  ✕ AVOID  |  EPP floor $219  |  ADD below ~$292  |  TRIM above $397
+════════════════════════════════════════════════════════════════════════
+

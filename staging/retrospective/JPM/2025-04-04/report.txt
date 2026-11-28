@@ -1,0 +1,149 @@
+
+════════════════════════════════════════════════════════════════════════
+  JPM  ·  JPMorgan Chase & Co.  ·  $210.28  ·  RETROSPECTIVE as of 2025-04-04
+  Signal: ◐ WATCHLIST   Ratio B: 1.32x   Adj gap: +0.40  [MODESTLY UNDERVALUED]
+  Point-in-time: 10 sources, latest published 2025-04-04; latest print Q4 2024 (Jan 15)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2025E revenue, USD bn  →  FY2027E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2025E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Noninterest revenue           $ 94.24  $94.24  $108.43    +0.00   +14.19
+    +23.4% revenue in FY24
+  Net interest income           $102.67  $102.67  $118.14    +0.00   +15.47
+    +3.7% revenue in FY24
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $196.91  $196.91  $226.57    +0.00   +29.66
+  FY2025E = FY24 $177.556B × (1 + 10.9%: the Q4 2024 revenue growth (no Q1 2025 guide), YoY, applied to the year (no FY25 revenue guide)); split pro rata to FY24 total net revenue by component, reported basis (FY24 growth)
+  Q4 2024 (Jan 15): total net revenue $42.768B +10.9% YoY (+0.3% QoQ); nonperforming assets +22.4% (loans +1.8%); noninterest expense -7.0%;
+  provision 6.15% of revenue (-100.8bp); pre-tax margin 40.63% (+1126.4bp); EPS $4.81 vs $3.04
+  Revenue: total net revenue $42,768M vs $38,574M a year earlier, $42,654M the quarter before (reported basis); provision for credit losses $2,631M vs $2,762M; nonperforming assets $9,300M vs $7,597M a year earlier, as the FY2024 10-K reports them (the release: $9,291M); loans $1,347,988M vs $1,323,706M; GAAP diluted EPS $4.81 vs $3.04 (the supplement prints no figure excluding merger costs); diluted shares 2,842.4M; Tier 1 capital ratio 16.8%; cash dividends declared $1.25 a share in the quarter; the release: 'RECORD FULL-YEAR 2024 NET INCOME EXCLUDING SIGNIFICANT ITEMS OF $54.0 BILLION ($18.22 PER SHARE)' (FY24 enters the history at $18.22, the ACN rule; the quarter lists no significant item and its EPS is GAAP)
+  Q1 2025: no revenue, EPS or margin guide in numbers in any filing; the latest quarter's revenue growth stands in (the UNP rule); the releases, 10-Qs and investor slides give credit-loss and segment outlooks only, which method r2 has no input for
+
+  FY2025E EPS check:  $196.910B × 42.3% pre-tax × (1−22.1%) ÷ 2.842B  =  $22.82  (FY2025E: no EPS guide in numbers, FY24's $18.22 stands)
+  FY2027E BEAR check: $196.910B × 42.3% ÷ 2.672B  =  $24.28  (scenario $11.29)
+  FY2027E BULL check: $226.570B × 42.7% ÷ 2.672B  =  $28.20  (scenario $23.66)
+  Every 1pp of pre-tax margin ≈ $0.540 EPS ≈ $5.88/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Net revenue growth                    -33.0%   ≥-12.0%    ≥10.0%    ≥29.0%    +10.9%  ▲ BULL  ███░
+  Credit cost (provision/revenue)     +1340.0bp  ≤670.0bp    ≤0.0bp  ≤-1020.0bp  -100.8bp  ▲ BULL  ███░
+  Expense growth less revenue          +65.0pp   ≤29.0pp   ≤-7.0pp  ≤-17.0pp   -17.9pp  ★ XBULL  ████
+  Nonperforming assets less loans     +231.0pp  ≤109.0pp  ≤-12.0pp  ≤-85.0pp   +20.6pp  ◦ BASE  ██░░
+  Pre-tax margin change               -3910.0bp  ≥-1760.0bp  ≥400.0bp  ≥2200.0bp  +1126.4bp  ▲ BULL  ███░
+  Crypto: disintermediation of payments and banking    +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.85 / 4.00
+  Market composite:   2.61 / 4.00  (back-solved from $210.28 + 15% hurdle)
+  SCA adjustment:    +0.16  ·  EPP-distance adj +0.00  →  Adj composite 3.01  →  Gap +0.40  [MODESTLY UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY24 total net revenue +12.3%, provision 6.0% of revenue; Q4 provision 6.2% of revenue (-101bp YoY)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 11.5x FY25E vs a 10.9x 10-yr median (65th percentile of its own range)  (-0.25 × 25%  =  -0.062)
+    +  Growth vs own history: Q4 2024 revenue growth (no Q1 2025 guide) +10.9% vs a 5.8% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  Tier 1 capital ratio 16.8%, nonperforming assets $9.300B (+22.4% YoY) at the end of Q4 2024, dividend $5.00 a year  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Net revenue growth                    +10.9%    -33.0%  -43.9%  Markets and fee revenue fall with the…
+  Credit cost (provision/revenue)     -100.8bp  +1340.0bp  +1440.8bp  Loan losses and reserve builds take m…
+  Expense growth less revenue          -17.9pp   +65.0pp  +82.9pp  Noninterest expense does not fall wit…
+  Nonperforming assets less loans      +20.6pp  +231.0pp  +210.4pp  Problem assets grow faster than the l…
+  Pre-tax margin change               +1126.4bp  -3910.0bp  -5036.4bp  Credit costs and expenses outrun revenue
+  Crypto: disintermediation of payments and banking    +2.0/4    +1.0/4  -1.0/4  Payments move to crypto rails that ne…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$149.95  (model)  /  $103.87 (defined)
+  Bear probability (proxy model):  5.0%
+
+  KEY TRIGGER: revenue went from +7.0% (Q3 2024) to +10.9% YoY (Q4 2024), +0.3% on the quarter before;
+  the bear case needs credit costs (-100.8bp of revenue now) rising further
+  and nonperforming assets (+20.6pp against loans) outgrowing the loan book. A credit downturn shows up in nonperforming assets and the provision first;
+  the bear needs it in net revenue as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $18.22  (FY2025E: no EPS guide in numbers, FY24's $18.22 stands)
+  Min viable P/E at panic:          9x  [median of calendar-year P/E lows: 2015 10.0x, 2016 8.6x, 2017 12.0x, 2018 10.2x, 2019 9.1x, 2020 8.9x, 2021 8.2x, 2022 8.4x, 2023 7.7x, 2024 9.2x, 2025 11.5x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $163.98/share
+  Current $210.28 vs Updated EPP $163.98:  +28%  moderate distance to floor
+  Bear $103.87 vs Updated EPP $163.98:  -37%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Net revenue growth                           -12.0      -22.9   BASE floor (vs +11 now)
+  Credit cost (provision/revenue)              670.0     +770.8   BASE floor (vs -101 now)
+  Expense growth less revenue                   29.0      +46.9   BASE floor (vs -18 now)
+  Nonperforming assets less loans              109.0      +88.4   BASE floor (vs +21 now)
+  Pre-tax margin change                      -1760.0    -2886.4   BASE floor (vs +1126 now)
+  Crypto: disintermediation of payments and banking             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $18.22 × (1+12.0%)² = $22.84
+  At 10x P/E (conservative):  $228.36/share
+  + Cumul. dividends (2yr):  +$10.30/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $228.36  (▲18.08 from $210.28)
+  Conservative total return:  +13% over 2yr  = +7%/yr
+
+  12.0% EPS growth is what is left once the premium multiple (11.5x)
+  mean-reverts to 10x. Breakeven at 10x needs FY2027E EPS of $20.00,
+  i.e. 4.8%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $179.20  –  $280.25  (at 31th pct of range)
+  Annual dividend:      $5.00/share  (yield 2.4%)
+  Realized vol:         28% annualized (1-yr daily log returns)
+  Beta vs broad market: 1.03
+  1-sigma range (1yr):  $152.03  –  $268.53  ($210.28 ± 28%)
+  2-sigma range (1yr):  $93.78  –  $326.78
+  ────────────────────────────────────────────────────────────
+  Bear $103.87 requires:  ~1.8σ price move  (unusual — requires fundamental break)
+  A bank whose earnings follow credit and markets: the stock is +17% off its April
+  low (52 weeks) while revenue went from +7.0% (Q3 2024) to +10.9% YoY (Q4 2024), +0.3% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR       11.29    9.2x  $ 103.87     5.0%      7.4%    -2.3pp  EPS -21.3%/yr (worst year FY15-FY24, capped at 0%); P/E to its 10th pct
+  BASE       23.66   10.9x  $ 257.89    17.6%     25.7%    -8.2pp  EPS +14.0%/yr (Q4 revenue YoY + margin + buyback); P/E at its 10-yr median
+  BULL       23.66   12.3x  $ 291.02    61.3%     56.3%    +5.0pp  EPS +14.0%/yr (FY15-FY24 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL      28.43   13.4x  $ 380.96    16.1%     10.6%    +5.5pp  EPS +24.9%/yr (best 2-yr run FY15-FY24, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $290.32  /  Market EV: $278.27  /  Current: $210.28
+  Conservative EV (2yr, ④): $228.36 + $10.30 divs = $238.66 total value
+  Downside (→ Bear $103.87): 50.6%   Upside (→ Bull $291.02): 38.4%   Ratio B 1.32x  →  ◐ WATCHLIST
+
+  To earn the 15%/yr hurdle from $210.28 the market needs $278.10 in two years —
+  between the BASE and BULL cases. That is a market composite of 2.61 against a model
+  read of 3.01: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       1.32x     +28%    +0.40  MODESTLY UNDERVALUED / WATCHLIST
+  Multiples one band richer (p25/p75/p90/max)     0.91x     +28%    +0.86  UNDERVALUED / ACCUMULATE
+  Multiples one band cheaper (p5/p25/med/p75)     2.35x     +28%    -0.11  FAIRLY VALUED / AVOID
+  Scenario EPS +1.5pp/yr                          1.15x     +28%    +0.53  UNDERVALUED / WATCHLIST
+  Scenario EPS -1.5pp/yr                          1.52x     +28%    +0.24  MODESTLY UNDERVALUED / WATCHLIST
+  Structural read +0.30 (bullish SCA)             1.32x     +28%    +0.70  UNDERVALUED / WATCHLIST
+  EPP P/E +3 turns (softer floor)                 1.32x      -4%    +0.60  UNDERVALUED / WATCHLIST
+  Hurdle 10%/yr instead of 15%                    1.32x     +28%    +0.76  UNDERVALUED / WATCHLIST
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 2025 print (the quarter ends in March) — revenue against the Q4 2024 revenue growth (no Q1 2025 guide): +10.9% YoY
+  (2) Credit costs — the provision took 6.2% of revenue in Q4 2024 (-100.8bp YoY): what must turn before earnings can
+  (3) A Q1 2025 revenue guide — none: JPMorgan Chase gives no firm-wide revenue, EPS or margin outlook in any filing; net charge-offs and reserve builds by business are in each supplement
+  (4) Nonperforming assets — +22.4% against loans +1.8% in Q4 2024 (+20.6pp): problem loans outgrowing the book would show here first
+  (5) Capital at 12x — dividend $1.25 a quarter: 'On September 17, 2024, the Board of Directors declared a quarterly common stock dividend of $1.25 per share.' (Q3 2024 supplement, the first filing to state the declared rate; the 8-K of 2024-06-28 and the Q2 2024 10-Q state an intention); Tier 1 capital ratio 16.8% at the end of Q4 2024
+  ◐ WATCHLIST  |  EPP floor $163.98  |  ADD below ~$219.21  |  TRIM above $291.02
+════════════════════════════════════════════════════════════════════════
+

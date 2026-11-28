@@ -1,0 +1,149 @@
+
+════════════════════════════════════════════════════════════════════════
+  RCL  ·  Royal Caribbean Cruises Ltd.  ·  $96.67  ·  RETROSPECTIVE as of 2021-11-05
+  Signal: ◉ BUY   Ratio B: 0.43x   Adj gap: -0.43  [MODESTLY OVERVALUED]
+  Point-in-time: 20 sources, latest published 2021-11-05; latest print Q3 2021 (Oct 29)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2021E revenues, USD bn  →  FY2023E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2021E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Passenger ticket revenue  $     0.4  $   0.4  $   0.3      +0.0      -0.1
+    -80.9% in FY20
+  Onboard and other revenu  $     0.2  $   0.2  $   0.1      +0.0      -0.1
+    -77.2% in FY20
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $     0.6  $   0.6  $   0.4      +0.0      -0.2
+  FY2021E = FY20 $2.21B × (1 − 74.6%: no FY21 guide in numbers, 2021's nine months revenues, applied to the year (no FY21 guide in numbers)); split pro rata to FY20 revenues by type (FY2020 10-K; one reportable segment)
+  Q3 2021 (Oct 29): total revenues $0.46B (no year-on-year change: the year-ago quarter's total revenues were not positive); Net Yields and Net Cruise Costs not stated;
+  capacity +75715.9%; occupancy 36.4% (-6360bp); operating margin -220.11% (no year-on-year change: the year-ago quarter's total revenues were not positive); EPS -$5.59 vs -$6.29
+  Net Yields and Net Cruise Costs: no Net Yields or Net Cruise Costs in the release; it says: 'The ships that operated the Group's core Caribbean, Alaska, and Europe itineraries in the third quarter achieved a load factor of 44%'; capacity +75715.9%; a ratio needs a positive base: the year-ago quarter's total revenues were $-33,688K, so revenue growth and the margin change have no value; EPS 'The Company also reported Adjusted Net Loss of $(1.2) billion or'
+  FY21: no guide in numbers (BASE takes 2021's nine months revenues); the Q3 2021 release, in words: 'The Company anticipates 6.9 million APCDs for the fourth quarter with overall load factors of 60-65%' (no field)
+
+  FY2021E EPS check:  ($0.6B × -208.33% − $1.17B other) × (1−0.0%) ÷ 0.255B  =  $-9.52  (FY2021E: no numeric EPS guide yet, FY19's $9.54 stands (FY20 is excluded: a loss even on the company's figure: Adjusted EPS $(18.31), GAAP $(27.05) (RC95, the FY2020 10-K); no P/E (the r2 note for a loss on the company's figure, XOM FY2020)) $9.54)
+  FY2023E BEAR check: ($0.6B × -208.33% − other) ÷ 0.253B  =  $-9.56  (scenario $5.07)
+  FY2023E BULL check: ($0.4B × -207.93% − other) ÷ 0.253B  =  $-7.91  (scenario $13.00)
+  Every 1pp of operating margin ≈ $0.02 EPS ≈ $0/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Net Yields change                  -20.0%   ≥-9.0%    ≥1.0%    ≥9.0%       n/r  ◦ BASE  ██░░
+  Net Cruise Costs per APCD           +7.0%    ≤6.0%    ≤6.0%   ≤-2.0%       n/r  ◦ BASE  ██░░
+  Total revenue growth               -17.0%   ≥-3.0%   ≥10.0%   ≥43.0%       n/r  ◦ BASE  ██░░
+  Occupancy change                  -560.0bp  ≥-260.0bp  ≥40.0bp  ≥290.0bp  -6360.0bp  ⚠ BEAR  █░░░
+  Operating margin change           -1140.0bp  ≥-540.0bp  ≥70.0bp  ≥290.0bp       n/r  ◦ BASE  ██░░
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.85 / 4.00
+  Market composite:   2.43 / 4.00  (back-solved from $97 + 15% hurdle)
+  SCA adjustment:    +0.15  ·  EPP-distance adj +0.00  →  Adj composite 2.00  →  Gap -0.43  [MODESTLY OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY20 Net Yields not stated (capacity -79.4%), occupancy 101.9%; Q3 2021 Net Yields not stated, occupancy 36.4%  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 10.1x FY21E vs a 13.7x 10-yr ex-FY20 median (11th percentile of its own range)  (+0.50 × 25%  =  +0.125)
+    -  Growth vs own history: no FY21 guide in numbers, 2021's nine months revenues -74.7% vs a 2.8% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  FY20 year-end cash $3.684B, FY20 free cash flow -$5.70B, dividend $0.00 a year, 'we agreed with certain of our lenders that we will not pay dividends or engage in stock repurchases' (FY2020 10-K)  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Net Yields change                      n/r    -20.0%     n/r  Close-in discounting to fill ships
+  Net Cruise Costs per APCD              n/r     +7.0%     n/r  Fuel and running costs outrun yields
+  Total revenue growth                   n/r    -17.0%     n/r  New ships sail into falling prices
+  Occupancy change                  -6360.0bp  -560.0bp  +5800.0bp  Load factors slip as bookings come later
+  Operating margin change                n/r  -1140.0bp     n/r  Ship costs deleverage on lower yields
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$53  (model)  /  $49 (defined)
+  Bear probability (proxy model):  26.1%
+
+  KEY TRIGGER: Net Yields went from n/r (Q2 2021) to n/r (Q3 2021);
+  the bear case needs a demand recession that cost control (Net Cruise Costs per APCD
+  n/r now) no longer covers. Demand follows the economies the ships sell into, by the company's own
+  account; the bear needs yields to fall faster than running costs can be cut.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $9.54  (FY2021E: no numeric EPS guide yet, FY19's $9.54 stands (FY20 is excluded: a loss even on the company's figure: Adjusted EPS $(18.31), GAAP $(27.05) (RC95, the FY2020 10-K); no P/E (the r2 note for a loss on the company's figure, XOM FY2020)))
+  Min viable P/E at panic:          10x  [median of calendar-year P/E lows: 2011 8.4x, 2012 11.1x, 2013 13.0x, 2014 13.6x, 2015 13.8x, 2016 10.8x, 2017 11.1x, 2018 10.1x, 2019 9.7x, 2021 6.8x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $95/share
+  Current $97 vs Updated EPP $95:  +1%  moderate distance to floor
+  Bear $49 vs Updated EPP $95:  -49%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Net Yields change                           -9.0        n/r   BASE floor (not reported now)
+  Net Cruise Costs per APCD                    6.0        n/r   BASE floor (not reported now)
+  Total revenue growth                        -3.0        n/r   BASE floor (not reported now)
+  Occupancy change                          -260.0    +6100.0   BASE floor (vs -6360 now)
+  Operating margin change                   -540.0        n/r   BASE floor (not reported now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $9.54 × (1+0.0%)² = $9.54
+  At 13x P/E (conservative):  $124/share
+  + Cumul. dividends (2yr):  +$0.00/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $124  (▲27 from $97)
+  Conservative total return:  +28% over 2yr  = +14%/yr
+
+  At 10.1x the multiple is already near its 13x median, so the conservative
+  case is a growth question: breakeven at 13x needs FY2023E EPS of $7.44,
+  i.e. -11.7%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $58.20  –  $99.24  (at 94th pct of range)
+  Annual dividend:      $0.00/share  (yield 0.0%)
+  Realized vol (1yr):   51% annualized
+  Beta vs broad market: 1.52
+  1-sigma range (1yr):  $47  –  $146  ($97 ± 51%)
+  2-sigma range (1yr):  $-3  –  $196
+  ────────────────────────────────────────────────────────────
+  Bear $49 requires:  ~1.0σ price move  (within normal vol range)
+  A cruise company with a 1.5 beta: the stock is +65% off its November
+  low while Net Yields went from n/r (Q2 2021) to n/r (Q3 2021).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        5.07   9.7x  $     49    26.1%     10.6%   +15.5pp  EPS -27.1%/yr (worst year FY11-FY19, capped at 0%); P/E to its 10th pct
+  BASE        0.62  13.7x  $      8    55.2%     36.8%   +18.3pp  EPS +-74.4%/yr (nine months revenues + margin + buyback); P/E at its 10-yr ex-FY20 median
+  BULL       13.00  15.9x  $    207    15.8%     44.3%   -28.4pp  EPS +16.7%/yr (FY11-FY19 CAGR); P/E holds its 75th pct
+  XBULL      18.88  17.9x  $    338     3.0%      8.4%    -5.4pp  EPS +40.7%/yr (best 2-yr run FY11-FY19); P/E at its 90th pct
+
+  Proxy EV (2yr): $60  /  Market EV: $128  /  Current: $97
+  Conservative EV (2yr, ④): $124 + $0.00 divs = $124 total value
+  Downside (→ Bear $49): 49.3%   Upside (→ Bull $207): 114.1%   Ratio B 0.43x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $97 the market needs $128 in two years —
+  between the BASE and BULL cases. That is a market composite of 2.43 against a model
+  read of 2.00: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.43x      +1%    -0.43  MODESTLY OVERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.26x      +1%    -0.31  MODESTLY OVERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.64x      +1%    -0.54  OVERVALUED / BUY
+  Scenario EPS +1.5pp/yr                          0.39x      +1%    -0.41  MODESTLY OVERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.47x      +1%    -0.45  MODESTLY OVERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.43x      +1%    -0.13  FAIRLY VALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.43x     -22%    -0.23  MODESTLY OVERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.43x      +1%    -0.37  MODESTLY OVERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 2021 print (late January) — the next read on Net Yields (n/r now) and the guide
+  (2) Occupancy — 36.4% in Q3 2021 (-6360bp): whether the ships fill without deeper discounts
+  (3) A numeric FY21 EPS guide — none yet
+  (4) Net Cruise Costs per APCD — not stated in Q3 2021: running costs against yields once the ships sail
+  (5) Capital return at 10x — no dividend ('Agreed with its lenders that it will not pay dividends or engage in stock repurchases', the 8-K of 2020-05-08): management's own read of the multiple
+  ◉ BUY  |  EPP floor $95  |  ADD below ~$7  |  TRIM above $207
+════════════════════════════════════════════════════════════════════════
+

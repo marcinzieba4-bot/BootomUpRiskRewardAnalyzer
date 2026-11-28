@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "WMT",
+ "as_of": "2017-06-16",
+ "computed": "2026-11-07",
+ "data_source": "Yahoo Finance daily closes + dividends (WMT, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2017-12-15",
+   "price": 97.11,
+   "dividends": 1.02,
+   "total_return_pct": 30.4,
+   "benchmark_total_return_pct": 10.9,
+   "excess_pct": 19.5,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2018-06-15",
+   "price": 83.7,
+   "dividends": 2.06,
+   "total_return_pct": 14.0,
+   "benchmark_total_return_pct": 16.2,
+   "excess_pct": -2.3,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2019-06-14",
+   "price": 109.07,
+   "dividends": 4.16,
+   "total_return_pct": 50.5,
+   "benchmark_total_return_pct": 22.9,
+   "excess_pct": 27.6,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2020-06-16",
+   "price": 119.65,
+   "dividends": 6.3,
+   "total_return_pct": 67.4,
+   "benchmark_total_return_pct": 35.0,
+   "excess_pct": 32.4,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2018-01-29",
+   "price": 109.55
+  },
+  "low": {
+   "date": "2017-07-10",
+   "price": 73.23
+  },
+  "max_drawdown_pct": -24.8,
+  "return_to_avg_price_m12_m24_pct": 27.8
+ },
+ "scenario_landing_2y": "XBULL",
+ "call_check_2y": {
+  "expectation": "RICH: should miss the hurdle and lag the benchmark",
+  "hit": false
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "DURABLE",
+   "risk": 2
+  },
+  "today": {
+   "kind": "DURABLE",
+   "risk": 1,
+   "why": "Walmart: scale retail + ads/marketplace; consolidating near 52-week low",
+   "reviewed": "2026-09-22"
+  }
+ }
+}

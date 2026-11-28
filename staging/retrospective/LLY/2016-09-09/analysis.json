@@ -1,0 +1,246 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "LLY",
+ "company": "Eli Lilly and Company",
+ "as_of": "2016-09-09",
+ "price_date": "2016-09-09",
+ "price": 78.24,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); pharmaceutical signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'We discover, develop, manufacture, and market products in two business segments—human pharmaceutical products and animal health products.' (FY2015 10-K, Item 1); 'We depend on products with intellectual property protection for most of our revenues, cash flows, and earnings; we have lost or will lose effective intellectual property protection for many of those products in the next several years, which may result in rapid and severe declines in revenues.' (FY2015 10-K, Item 1A heading); 'Our long-term success depends on intellectual property protection; if our intellectual property rights are invalidated, circumvented, or weakened, our business will be adversely affected.' (FY2015 10-K, Item 1A heading); 'We face intense competition from multinational pharmaceutical companies, biotechnology companies, and lower-cost generic and biosimilar manufacturers, and such competition could have a material adverse effect on our business.' (FY2015 10-K, Item 1A heading); 'For non-biological products, loss of exclusivity (whether by expiration or as a consequence of litigation) typically results in the entry of one or more generic competitors, leading to a rapid and severe decline in revenues, especially in the U.S.' (FY2015 10-K, Item 1A); 'Our product revenues can be adversely affected by the introduction by competitors of branded products that are perceived as superior by the marketplace, by generic or biosimilar versions of our branded products, and by generic or biosimilar versions of other products in the same therapeutic class as our branded products.' (FY2015 10-K, Item 1A)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "'We discover, develop, manufacture, and market products in two business segments—human pharmaceutical products and animal health products.' (FY2015 10-K, Item 1); 'We depend on products with intellectual property protection for most of our revenues, cash flows, and earnings; we have lost or will lose effective intellectual property protection for many of those products in the next several years, which may result in rapid and severe declines in revenues.' (FY2015 10-K, Item 1A heading); 'Our long-term success depends on intellectual property protection; if our intellectual property rights are invalidated, circumvented, or weakened, our business will be adversely affected.' (FY2015 10-K, Item 1A heading); 'We face intense competition from multinational pharmaceutical companies, biotechnology companies, and lower-cost generic and biosimilar manufacturers, and such competition could have a material adverse effect on our business.' (FY2015 10-K, Item 1A heading); 'For non-biological products, loss of exclusivity (whether by expiration or as a consequence of litigation) typically results in the entry of one or more generic competitors, leading to a rapid and severe decline in revenues, especially in the U.S.' (FY2015 10-K, Item 1A); 'Our product revenues can be adversely affected by the introduction by competitors of branded products that are perceived as superior by the marketplace, by generic or biosimilar versions of our branded products, and by generic or biosimilar versions of other products in the same therapeutic class as our branded products.' (FY2015 10-K, Item 1A). durable franchise (obsolescence risk 2/5); price rich; Ratio B 41.05x; +105% to EPP floor; model-vs-market gap -1.37; conservative 2yr -50%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": 41.05,
+  "ratio_b_fmt": "41.05x",
+  "epp": 38.22,
+  "epp_gap_pct": 104.7,
+  "epp_adj": -0.2,
+  "proxy_composite": 2.35,
+  "sca": -0.016,
+  "adj_composite": 2.134,
+  "market_composite": 3.5,
+  "adj_gap": -1.37,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": -50.5,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.73,
+    "pe": 7.9,
+    "price": 6,
+    "desc": "EPS -48.4%/yr (worst year FY06-FY15 ex-FY08, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 2.99,
+    "pe": 12.7,
+    "price": 38,
+    "desc": "EPS +4.7%/yr (FY16 guide + margin + buyback); P/E at its 10-yr ex-FY08 median"
+   },
+   "BULL": {
+    "eps": 2.99,
+    "pe": 26.7,
+    "price": 80,
+    "desc": "EPS +4.7%/yr (FY06-FY15 ex-FY08 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 3.97,
+    "pe": 31.5,
+    "price": 125,
+    "desc": "EPS +20.6%/yr (best 2-yr run FY06-FY15 ex-FY08); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 41.05,
+   "epp_gap_pct": 104.7,
+   "adj_gap": -1.37,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -50.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 4.52,
+   "epp_gap_pct": 104.7,
+   "adj_gap": -0.88,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -50.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 104.7,
+   "adj_gap": -1.64,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -50.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 19.21,
+   "epp_gap_pct": 104.7,
+   "adj_gap": -1.31,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -50.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 104.7,
+   "adj_gap": -1.45,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -50.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 41.05,
+   "epp_gap_pct": 104.7,
+   "adj_gap": -1.07,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -50.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 41.05,
+   "epp_gap_pct": 68.6,
+   "adj_gap": -1.27,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -50.5,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 41.05,
+   "epp_gap_pct": 104.7,
+   "adj_gap": -1.19,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -50.5,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "RICH"
+ ],
+ "summary": "LLY (retrospective, 2016-09-09) ✕ AVOID — Ratio B 41.05x (92.3% downside to Bear $6 / +2.2% upside to Bull $80) | Adj composite 2.13 vs market 3.50: gap -1.37 [OVERVALUED] | +105% above the EPP floor $38 (14x FY16E $2.73) | Conservative 2-yr case: -50.5% total (-25.2%/yr) | At 28.7x FY16E the 15% hurdle price $103 sits above the BULL case; U.S. revenues +14.0% in Q2 2016, forward revenues +3.2-5.7% (FY16 revenue guide); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "LL40",
+   "published": "2011-02-22",
+   "filed": "2011-02-22 10:46 ET, during the session",
+   "title": "Eli Lilly FY2010 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000119312511041620/d10k.htm",
+   "supports": "history vintage: five-year summary, statements of operations and cash flows, balance sheet, segment and geographic data, Items 1 and 1A"
+  },
+  {
+   "id": "LL46",
+   "published": "2012-02-27",
+   "filed": "2012-02-24 17:07 ET, after the close",
+   "title": "Eli Lilly FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000119312512078393/d266023d10k.htm",
+   "supports": "history vintage: five-year summary, statements of operations and cash flows, balance sheet, segment and geographic data, Items 1 and 1A"
+  },
+  {
+   "id": "LL53",
+   "published": "2013-02-21",
+   "filed": "2013-02-21 10:28 ET, during the session",
+   "title": "Eli Lilly FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947813000007/lly-20121231x10k.htm",
+   "supports": "history vintage: five-year summary, statements of operations and cash flows, balance sheet, segment and geographic data, Items 1 and 1A"
+  },
+  {
+   "id": "LL59",
+   "published": "2014-02-19",
+   "filed": "2014-02-19 13:34 ET, during the session",
+   "title": "Eli Lilly FY2013 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947814000078/lly-20131231x10k.htm",
+   "supports": "history vintage: selected financial data, statements of operations and cash flows, balance sheet, segment and geographic data, Items 1 and 1A, the dividend and repurchase passages"
+  },
+  {
+   "id": "LL65",
+   "published": "2015-02-20",
+   "filed": "2015-02-19 16:02 ET, after the close",
+   "title": "Eli Lilly FY2014 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947815000100/lly-20141231x10k.htm",
+   "supports": "history vintage: selected financial data, statements of operations and cash flows, balance sheet, segment and geographic data, Items 1 and 1A, the dividend and repurchase passages"
+  },
+  {
+   "id": "LL71",
+   "published": "2016-02-19",
+   "filed": "2016-02-19 15:42 ET, during the session",
+   "title": "Eli Lilly FY2015 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947816000321/lly-20151231x10k.htm",
+   "supports": "history vintage: selected financial data, statements of operations and cash flows, balance sheet, segment and geographic data, Items 1 and 1A, the dividend and repurchase passages"
+  },
+  {
+   "id": "LL70",
+   "published": "2016-01-28",
+   "filed": "2016-01-28 06:25 ET, before the open",
+   "title": "Eli Lilly Q4 2015 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947816000249/q415lillysalesandearningsp.htm",
+   "supports": "Q4 2015: reported operating results (revenue $5,375.6M vs $5,121.3M, cost of sales, pre-tax income $444.6M vs $513.6M, diluted EPS $0.45 vs $0.40); growth 5% with exchange rates -6 points; U.S. and outside-U.S. revenue; FY2015 actuals (revenue $19,958.7M, diluted EPS $2.26, U.S. and outside-U.S. revenue); FY2016 guide: reported EPS $2.83-2.93, revenue $20.2-20.7 billion; the quarterly dividend $0.51"
+  },
+  {
+   "id": "LL72",
+   "published": "2016-04-26",
+   "filed": "2016-04-26 06:25 ET, before the open",
+   "title": "Eli Lilly Q1 2016 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947816000346/q116lillysalesandearningsp.htm",
+   "supports": "Q1 2016: reported operating results (revenue $4,865.1M vs $4,644.7M, cost of sales, pre-tax income $566.8M vs $617.9M, diluted EPS $0.41 vs $0.50); growth 5% with exchange rates -3 points; U.S. and outside-U.S. revenue; FY2016 guide: reported EPS $2.68-2.78, revenue $20.6-21.1 billion"
+  },
+  {
+   "id": "LL73",
+   "published": "2016-07-26",
+   "filed": "2016-07-26 06:25 ET, before the open",
+   "title": "Eli Lilly Q2 2016 earnings release (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947816000393/q216lillysalesandearningsp.htm",
+   "supports": "Q2 2016: reported operating results (revenue $5,404.8M vs $4,978.7M, cost of sales, pre-tax income $944.5M vs $679.7M, diluted EPS $0.71 vs $0.56); growth 9% with exchange rates +0 points; U.S. and outside-U.S. revenue; FY2016 guide: reported EPS $2.68-2.78, revenue $20.6-21.1 billion"
+  },
+  {
+   "id": "LL69",
+   "published": "2016-01-05",
+   "filed": "2016-01-05 06:46 ET, before the open",
+   "title": "Eli Lilly 8-K of 2016-01-05 (Item 2.02: FY2016 financial guidance and FY2015 update, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947816000232/a8-kjan2016exhibit991.htm",
+   "supports": "FY2015 guide: reported EPS $2.28-2.33; FY2016 guide: reported EPS $2.92-3.02, revenue $20.2-20.7 billion"
+  },
+  {
+   "id": "W0",
+   "published": "2016-09-09",
+   "title": "Yahoo Finance daily prices, LLY and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/LLY/history",
+   "supports": "close $78.24 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr ex-FY08 P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-22"
+}

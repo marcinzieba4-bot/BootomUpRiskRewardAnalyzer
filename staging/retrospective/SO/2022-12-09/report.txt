@@ -1,0 +1,154 @@
+
+════════════════════════════════════════════════════════════════════════
+  SO  ·  The Southern Company  ·  $68.36  ·  RETROSPECTIVE as of 2022-12-09
+  Signal: ◎ ACCUMULATE   Ratio B: 0.79x   Adj gap: +1.44  [UNDERVALUED]
+  Point-in-time: 19 sources, latest published 2022-12-09; latest print Q3 2022 (2022-10-27)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2022E revenues, USD bn  →  FY2024E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Revenue line                 FY2022E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Retail electric           $    19.9  $  19.9  $  21.5      +0.0      +1.6
+    +8.9% revenues in FY21
+  Wholesale electric        $     3.3  $   3.3  $   3.6      +0.0      +0.3
+    +26.2% revenues in FY21
+  Other electric            $     1.0  $   1.0  $   1.0      +0.0      +0.0
+    +6.8% revenues in FY21
+  Natural gas               $     5.9  $   5.9  $   6.3      +0.0      +0.4
+    +27.5% revenues in FY21
+  Other revenues            $     1.0  $   1.0  $   1.0      +0.0      +0.0
+    +4.0% revenues in FY21
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    31.1  $  31.1  $  33.4      +0.0      +2.3
+  FY2022E = FY21 $23.11B × (1 + 34.3%: no Q4 2022 revenue guide, Q3 2022 revenue as reported, applied to the year (no FY22 revenue guide)); split pro rata to FY21 operating revenues by line (SO97 income statement; the 10-K has no selected data)
+  Q3 2022 (2022-10-27): total revenues $8.38B +34.3%; retail kWh +2.6% (weather-adjusted +1.8%); electric utilities' net income +32.4%;
+  operating margin 26.18% (-144.5bp); EPS $1.31 vs $1.23 (excluding items)
+  Retail kWh +2.6% as reported (40,441 to 41,490 million kWh, weather-adjusted +1.8%); electric utilities' net income +32.4% ($1,163M to $1,540M, the traditional operating companies and Southern Power; the release's Total also includes Southern Company Gas, so the signal sums the traditional electric operating companies and Southern Power, the 10-K's electric utilities, each as reported); revenue +34.3% as reported ($6,238M to $8,378M); operating income $1,723M to $2,193M (operating income includes, as the release publishes it, Estimated Loss on Plant Vogtle Units 3 and 4 -$70M ($264M a year earlier); Gain on Dispositions, net -$20M (-$125M a year earlier); no operating income excluding them is published, so the margin is as reported); EPS: basic EPS excluding items $1.31 vs $1.23 (excludes only Estimated Loss on Plants Under Construction, Acquisition and Disposition Impacts and Asset Impairments; GAAP $1.36 vs $1.04)
+  FY22: adjusted EPS $3.50-3.60 (Q4 2021 release, 2022-02-17: 'Southern Company’s adjusted earnings guidance range for 2022 is $3.50 to $3.60 per share.'; adjusted EPS excludes only one-off kinds ('This release includes projected adjusted earnings per share for future periods excluding: additional acquisition and disposition impacts, any future charges associated with Mississippi Power Company's integrated coal gasification combined cycle facility project in Kemper County, Mississippi and/or the construction of Plant Vogtle Units 3 and 4, any future asset impairment charges and additional costs associated with the extinguishment of debt at Southern Company and its non-state regulated subsidiaries.'), so it is the company's figure excluding only one-offs (the ACN rule), Wholesale Gas Services having been sold on July 1, 2021; the release's quarter estimate ('In the first quarter of 2022, management estimates Southern Company adjusted earnings per share will be 90 cents.') is display only (the UNP 2008 rule), and its long-term rate and 2024 range ('Management continues to project a long-term adjusted earnings per share growth rate for Southern Company in the 5% to 7% range, consistent with adjusted earnings in a range of $4.00 to $4.30 per share in 2024.') are multi-year targets, which add nothing (the LOW rule)); no revenue or margin guide in numbers (the Q3 2022 release says its earnings slides with supplemental financial information, including earnings guidance, are on the company's website: website posts are not filings, so they add nothing; no transcript is filed; BASE takes Q3 2022 revenue growth)
+
+  FY2022E EPS check:  $31.1B × 11.2% pre-tax × (1−10.4%) ÷ 1.082B  =  $2.87  (FY2022E EPS, guide midpoint: adjusted EPS $3.50-3.60 (Q4 2021 release, 2022-02-17; it excludes only one-offs))
+  FY2024E BEAR check: $31.1B × 11.2% ÷ 1.129B  =  $2.75  (scenario $1.51)
+  FY2024E BULL check: $33.4B × 11.6% ÷ 1.129B  =  $3.06  (scenario $6.20)
+  Every 1pp of pre-tax margin ≈ $0.26 EPS ≈ $5/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Retail kWh sales                    -8.0%   ≥-3.0%    ≥2.0%    ≥6.0%     +2.6%  ▲ BULL  ███░
+  Electric utilities net income       -7.0%   ≥-2.0%    ≥3.0%   ≥13.0%    +32.4%  ★ XBULL  ████
+  Revenue growth                     -10.0%   ≥-2.0%    ≥6.0%   ≥16.0%    +34.3%  ★ XBULL  ████
+  EPS growth                         -15.0%   ≥-6.0%    ≥3.0%   ≥15.0%     +6.5%  ▲ BULL  ███░
+  Operating margin change           -410.0bp  ≥-220.0bp  ≥-30.0bp  ≥150.0bp  -144.5bp  ◦ BASE  ██░░
+  Disruption theme: none in scope for a utility   +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    3.05 / 4.00
+  Market composite:   1.80 / 4.00  (back-solved from $68 + 15% hurdle)
+  SCA adjustment:    +0.20  ·  EPP-distance adj +0.00  →  Adj composite 3.24  →  Gap +1.44  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY21 revenue +13.4%, retail kWh +2.0%, electric utilities' net income -27.9%; Q3 2022 operating margin 26.2% (-144.5bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 19.3x FY22E vs a 18.4x 10-yr ex-FY17 median (57th percentile of its own range)  (-0.12 × 25%  =  -0.030)
+    +  Growth vs own history: no Q4 2022 revenue guide, Q3 2022 revenue as reported +34.3% vs a 3.3% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  FY21 year-end cash $1.829B, FY21 free cash flow $-1.07B (net cash provided from operating activities $6,169M less property additions $7,240M (SO97)), dividend $2.72 a year, common stock issued $73M in 2021, none repurchased (SO97 cash flows): the dividend is the return  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Retail kWh sales                     +2.6%     -8.0%  -10.6%  Recession and mild weather cut retail…
+  Electric utilities net income       +32.4%     -7.0%  -39.4%  Rate relief lags costs and lost sales
+  Revenue growth                      +34.3%    -10.0%  -44.3%  Sales and fuel recovery fall together
+  EPS growth                           +6.5%    -15.0%  -21.5%  Costs, interest and dilution outrun r…
+  Operating margin change           -144.5bp  -410.0bp  -265.5bp  Fuel and O&M costs outrun recovery
+  Disruption theme: none in scope for a utility    +2.0/4    +1.0/4  -1.0/4  No live disruption theme is in scope …
+
+  Bear composite:  1.00  →  Bear scenario price: ~$48  (model)  /  $21 (defined)
+  Bear probability (proxy model):  4.4%
+
+  KEY TRIGGER: retail kWh sales went from +7.0% (Q2 2022) to +2.6% (Q3 2022);
+  the bear case needs a demand and cost squeeze that the operating margin (-144.5bp now)
+  and the electric utilities' earnings (+32.4% now) no longer absorb.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $3.55  (FY2022E EPS, guide midpoint: adjusted EPS $3.50-3.60 (Q4 2021 release, 2022-02-17; it excludes only one-offs))
+  Min viable P/E at panic:          15x  [median of calendar-year P/E lows: 2012 15.8x, 2013 14.8x, 2014 14.4x, 2015 14.4x, 2016 18.2x, 2018 19.7x, 2019 9.7x, 2020 14.8x, 2021 25.3x, 2022 17.3x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $53/share
+  Current $68 vs Updated EPP $53:  +28%  moderate distance to floor
+  Bear $21 vs Updated EPP $53:  -61%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Retail kWh sales                            -3.0       -5.6   BASE floor (vs +3 now)
+  Electric utilities net income               -2.0      -34.4   BASE floor (vs +32 now)
+  Revenue growth                              -2.0      -36.3   BASE floor (vs +34 now)
+  EPS growth                                  -6.0      -12.5   BASE floor (vs +6 now)
+  Operating margin change                   -220.0      -75.5   BASE floor (vs -144 now)
+  Disruption theme: none in scope for a utility             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $3.55 × (1+30.2%)² = $6.01
+  At 18x P/E (conservative):  $108/share
+  + Cumul. dividends (2yr):  +$5.60/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $108  (▲40 from $68)
+  Conservative total return:  +67% over 2yr  = +33%/yr
+
+  At 19.3x the multiple is already near its 18x median, so the conservative
+  case is a growth question: breakeven at 18x needs FY2024E EPS of $3.49,
+  i.e. -0.9%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $60.71  –  $80.57  (at 39th pct of range)
+  Annual dividend:      $2.72/share  (yield 4.0%)
+  Realized vol (1yr):   22% annualized
+  Beta vs broad market: 0.42
+  1-sigma range (1yr):  $53  –  $84  ($68 ± 22%)
+  2-sigma range (1yr):  $38  –  $99
+  ────────────────────────────────────────────────────────────
+  Bear $21 requires:  ~3.1σ price move  (unusual — requires fundamental break)
+  A regulated utility with a 0.4 beta: the stock is +11% off its October
+  low while retail kWh sales went from +7.0% (Q2 2022) to +2.6% (Q3 2022).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        1.51  13.8x  $     21     4.4%     29.4%   -25.0pp  EPS -34.9%/yr (worst year FY12-FY21 ex-FY17, capped at 0%); P/E to its 10th pct
+  BASE        6.20  18.4x  $    114    15.2%     52.7%   -37.4pp  EPS +32.2%/yr (Q3 revenue + margin + buyback); P/E at its 10-yr ex-FY17 median
+  BULL        6.20  20.6x  $    128    53.1%     15.1%   +38.0pp  EPS +32.2%/yr (FY12-FY21 ex-FY17 CAGR); P/E holds its 75th pct
+  XBULL       6.20  26.6x  $    165    27.3%      2.9%   +24.4pp  EPS +32.2%/yr (best 2-yr run FY12-FY21 ex-FY17); P/E at its 90th pct
+
+  Proxy EV (2yr): $131  /  Market EV: $90  /  Current: $68
+  Conservative EV (2yr, ④): $108 + $5.60 divs = $114 total value
+  Downside (→ Bear $21): 69.3%   Upside (→ Bull $128): 87.2%   Ratio B 0.79x  →  ◎ ACCUMULATE
+
+  To earn the 15%/yr hurdle from $68 the market needs $90 in two years —
+  at or below the BASE case. That is a market composite of 1.80 against a model
+  read of 3.24: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.79x     +28%    +1.44  UNDERVALUED / ACCUMULATE
+  Multiples one band richer (p25/p75/p90/max)     0.47x     +28%    +1.60  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     1.08x     +28%    +1.08  UNDERVALUED / ACCUMULATE
+  Scenario EPS +1.5pp/yr                          0.74x     +28%    +1.48  UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.87x     +28%    +1.40  UNDERVALUED / ACCUMULATE
+  Structural read +0.30 (bullish SCA)             0.79x     +28%    +1.74  UNDERVALUED / ACCUMULATE
+  EPP P/E +3 turns (softer floor)                 0.79x      +7%    +1.44  UNDERVALUED / ACCUMULATE
+  Hurdle 10%/yr instead of 15%                    0.79x     +28%    +1.54  UNDERVALUED / ACCUMULATE
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 2022 print (mid February) — the next read on retail kWh sales (+2.6% now); no sales guide in numbers to read it against
+  (2) Operating margin — -144.5bp in Q3 2022: fuel and purchased power, non-fuel O&M and depreciation against rate relief
+  (3) The FY22 adjusted EPS guide — $3.50-3.60 (Q4 2021 release): the EPS anchor
+  (4) Electric utilities' net income — +32.4% in Q3 2022 ($1,540M vs $1,163M): rate relief against sales, weather and costs
+  (5) Capital return at 19x — common stock issued $73M in 2021, none repurchased (SO97 cash flows): the dividend is the return: management's own read of the multiple
+  ◎ ACCUMULATE  |  EPP floor $53  |  ADD below ~$97  |  TRIM above $128
+════════════════════════════════════════════════════════════════════════
+

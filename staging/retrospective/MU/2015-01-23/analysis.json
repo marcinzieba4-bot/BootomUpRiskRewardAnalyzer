@@ -1,0 +1,271 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "MU",
+ "company": "Micron Technology, Inc.",
+ "as_of": "2015-01-23",
+ "price_date": "2015-01-23",
+ "price": 30.95,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); semiconductor signals with Micron's rule-T thresholds",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'We are one of the world's leading providers of advanced semiconductor solutions.' 'We have experienced dramatic declines in average selling prices for our semiconductor memory products which have adversely affected our business.' 'The semiconductor memory industry is highly competitive.' (FY2014 10-K); DURABLE: no Micron 10-K calls its own business cyclical (CYCLICAL needs the company's 'our business is cyclical', as BKR, CAT and NVDA said; the F and AVGO reading of industry words), so the kind is DURABLE, the label only; the 10-K names the cloud only among the markets Micron sells into ('Compute and Networking Business Unit (\"CNBU\"): Includes DRAM and NOR Flash products sold to the compute, networking, graphics and cloud server markets.'), its own demand and not a substitute for its products (the NVDA reading), and no other theme in taxonomy_eras.json is scoped to a memory maker, so the watch list is empty",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, NEUTRALLY VALUED",
+  "quality_label": "◎ QUALITY, NEUTRALLY VALUED",
+  "quality_color": "#f0b429",
+  "quality_tone": "amber",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "FAIR",
+  "quality_note": "'We are one of the world's leading providers of advanced semiconductor solutions.' 'We have experienced dramatic declines in average selling prices for our semiconductor memory products which have adversely affected our business.' 'The semiconductor memory industry is highly competitive.' (FY2014 10-K); DURABLE: no Micron 10-K calls its own business cyclical (CYCLICAL needs the company's 'our business is cyclical', as BKR, CAT and NVDA said; the F and AVGO reading of industry words), so the kind is DURABLE, the label only; the 10-K names the cloud only among the markets Micron sells into ('Compute and Networking Business Unit (\"CNBU\"): Includes DRAM and NOR Flash products sold to the compute, networking, graphics and cloud server markets.'), its own demand and not a substitute for its products (the NVDA reading), and no other theme in taxonomy_eras.json is scoped to a memory maker, so the watch list is empty. durable franchise (obsolescence risk 2/5); price fair; Ratio B 0.83x; +103% to EPP floor; model-vs-market gap +0.59; conservative 2yr -18%.",
+  "theme": null
+ },
+ "legacy_signal_short": "ACCUMULATE",
+ "legacy_signal": "◎ ACCUMULATE",
+ "metrics": {
+  "ratio_b": 0.83,
+  "ratio_b_fmt": "0.83x",
+  "epp": 15.24,
+  "epp_gap_pct": 103.1,
+  "epp_adj": -0.2,
+  "proxy_composite": 2.85,
+  "sca": 0.175,
+  "adj_composite": 2.825,
+  "market_composite": 2.23,
+  "adj_gap": 0.59,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": -18.0,
+  "scenarios": {
+   "BEAR": {
+    "eps": 2.54,
+    "pe": 4.4,
+    "price": 11.18,
+    "desc": "Flat EPS (no EPS change in FY05-FY14 ex-FY06 ex-FY07 ex-FY08 ex-FY09 ex-FY11 ex-FY12 ex-FY13 to measure: the 0% cap); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 2.93,
+    "pe": 9.4,
+    "price": 27.54,
+    "desc": "EPS +7.3%/yr (Q1 revenue YoY + margin + buyback); P/E at its 10-yr ex-FY06 ex-FY07 ex-FY08 ex-FY09 ex-FY11 ex-FY12 ex-FY13 median"
+   },
+   "BULL": {
+    "eps": 4.11,
+    "pe": 13.3,
+    "price": 54.66,
+    "desc": "EPS +27.3%/yr (FY05-FY14 ex-FY06 ex-FY07 ex-FY08 ex-FY09 ex-FY11 ex-FY12 ex-FY13 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 4.11,
+    "pe": 37.3,
+    "price": 153.3,
+    "desc": "EPS +27.3%/yr (no 2-yr run in FY05-FY14 ex-FY06 ex-FY07 ex-FY08 ex-FY09 ex-FY11 ex-FY12 ex-FY13: BULL's rate); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.83,
+   "epp_gap_pct": 103.1,
+   "adj_gap": 0.59,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": -18.0,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.14,
+   "epp_gap_pct": 103.1,
+   "adj_gap": 1.29,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": -18.0,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 2.71,
+   "epp_gap_pct": 103.1,
+   "adj_gap": -0.39,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -18.0,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.77,
+   "epp_gap_pct": 103.1,
+   "adj_gap": 0.62,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": -18.0,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.91,
+   "epp_gap_pct": 103.1,
+   "adj_gap": 0.55,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": -18.0,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.83,
+   "epp_gap_pct": 103.1,
+   "adj_gap": 0.9,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": -18.0,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.83,
+   "epp_gap_pct": 35.4,
+   "adj_gap": 0.79,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": -18.0,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.83,
+   "epp_gap_pct": 103.1,
+   "adj_gap": 0.69,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": -18.0,
+   "price_state": "FAIR"
+  }
+ ],
+ "robustness_price_states": [
+  "FAIR",
+  "RICH"
+ ],
+ "summary": "MU (retrospective, 2015-01-23) ◎ ACCUMULATE — Ratio B 0.83x (63.9% downside to Bear $11.18 / +76.6% upside to Bull $54.66) | Adj composite 2.82 vs market 2.23: gap +0.59 [UNDERVALUED] | +103% above the EPP floor $15.24 (6x FY15E $2.54) | Conservative 2-yr case: -18.0% total (-9.0%/yr) | At 12.2x FY15E the 15% hurdle price $40.93 sits between the BASE and BULL cases; revenue +13.1% YoY in Q1 FY15, forward revenues +13.1% (Q1 FY15 revenue growth (no Q2 FY15 guide)); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "MU10",
+   "published": "2007-10-29",
+   "filed": "accepted 2007-10-26 16:27 ET (after the 16:00 ET close)",
+   "title": "Micron FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312507000108/mti10k-fy2007.htm",
+   "supports": "history FY2003-FY2007 (selected data, statements of operations), FY2006's listed one-off benefits, segments, Items 1, 1A and 5; rule T FY2004-FY2007"
+  },
+  {
+   "id": "MU11",
+   "published": "2008-10-28",
+   "filed": "accepted 2008-10-27 16:38 ET (after the 16:00 ET close)",
+   "title": "Micron FY2008 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312508000111/fy08-10k.htm",
+   "supports": "history FY2004-FY2008 (selected data, statements of operations), segments, Items 1, 1A and 5"
+  },
+  {
+   "id": "MU32",
+   "published": "2010-03-04",
+   "filed": "accepted 2010-03-04 15:27 ET (during the session)",
+   "title": "Micron 8-K of 2010-03-04, ex.99.2 (selected financial data, as adjusted)",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312510000036/exhibit_99-2.htm",
+   "supports": "FY2005-FY2009 net sales, EPS and cash as adjusted"
+  },
+  {
+   "id": "MU33",
+   "published": "2010-03-04",
+   "filed": "accepted 2010-03-04 15:27 ET (during the session)",
+   "title": "Micron 8-K of 2010-03-04, ex.99.5 (financial statements, as adjusted)",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312510000036/exhibit_99-5.htm",
+   "supports": "FY2007-FY2009 statements of operations, cash flows and segments as adjusted"
+  },
+  {
+   "id": "MU34",
+   "published": "2010-10-26",
+   "filed": "accepted 2010-10-26 13:57 ET (during the session)",
+   "title": "Micron FY2010 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312510000174/q4fy2010.htm",
+   "supports": "history FY2006-FY2010 (selected data, statements of operations), segments, Items 1, 1A and 5"
+  },
+  {
+   "id": "MU35",
+   "published": "2011-10-25",
+   "filed": "accepted 2011-10-25 15:34 ET (during the session)",
+   "title": "Micron FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312511000189/mu-912011x10k.htm",
+   "supports": "history FY2007-FY2011 (selected data, statements of operations), segments, Items 1, 1A and 5"
+  },
+  {
+   "id": "MU36",
+   "published": "2012-10-31",
+   "filed": "accepted 2012-10-29 16:49 ET (after the 16:00 ET close)",
+   "title": "Micron FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312512000156/a2012q4.htm",
+   "supports": "history FY2008-FY2012 (selected data, statements of operations), segments, Items 1, 1A and 5"
+  },
+  {
+   "id": "MU37",
+   "published": "2013-10-29",
+   "filed": "accepted 2013-10-28 16:39 ET (after the 16:00 ET close)",
+   "title": "Micron FY2013 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312513000228/a2013q4.htm",
+   "supports": "history FY2009-FY2013 (selected data, statements of operations), segments, Items 1, 1A and 5"
+  },
+  {
+   "id": "MU64",
+   "published": "2014-10-28",
+   "filed": "accepted 2014-10-27 16:21 ET (after the 16:00 ET close)",
+   "title": "Micron FY2014 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312514000195/a2014q4.htm",
+   "supports": "history FY2010-FY2014 (selected data, statements of operations), segments, Items 1, 1A and 5"
+  },
+  {
+   "id": "MU71",
+   "published": "2014-09-26",
+   "filed": "accepted 2014-09-25 16:00 ET (after the 16:00 ET close)",
+   "title": "Micron Q4 FY14 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312514000145/a2014q4exhibit991-pressrel.htm",
+   "supports": "Q4 FY14 net sales, gross margin, SG&A, R&D, operating income, diluted EPS and shares against the year-ago quarter; inventories, cash and debt"
+  },
+  {
+   "id": "MU72",
+   "published": "2015-01-07",
+   "filed": "accepted 2015-01-06 16:00 ET (after the 16:00 ET close)",
+   "title": "Micron Q1 FY15 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312515000005/a2015q1exhibit991-pressrel.htm",
+   "supports": "Q1 FY15 net sales, gross margin, SG&A, R&D, operating income, diluted EPS and shares against the year-ago quarter; inventories, cash and debt"
+  },
+  {
+   "id": "MU88",
+   "published": "2014-01-08",
+   "filed": "accepted 2014-01-07 16:13 ET (after the 16:00 ET close)",
+   "title": "Micron Q1 FY14 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312514000013/a2014q1.htm",
+   "supports": "inventories at the end of Q1 FY14 (the year-ago quarter of a later print)"
+  },
+  {
+   "id": "MU30",
+   "published": "2009-12-18",
+   "filed": "accepted 2009-12-18 10:01 ET (during the session)",
+   "title": "Micron 8-K of 2009-12-18 (Item 3.01, transfer of listing)",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312509000140/form8kmarketchange.htm",
+   "supports": "the move from the NYSE to the NASDAQ Global Select Market"
+  },
+  {
+   "id": "Y0",
+   "published": "2015-01-23",
+   "title": "Yahoo Finance daily prices, MU and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/MU/history",
+   "supports": "close $30.95 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr ex-FY06 ex-FY07 ex-FY08 ex-FY09 ex-FY11 ex-FY12 ex-FY13 P/E distribution from 2005-01-24"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-18"
+}

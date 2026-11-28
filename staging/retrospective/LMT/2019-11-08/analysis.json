@@ -1,0 +1,271 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "LMT",
+ "company": "Lockheed Martin Corporation",
+ "as_of": "2019-11-08",
+ "price_date": "2019-11-08",
+ "price": 381.86,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); defense prime contractor signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'In 2018, 70% of our $53.8 billion in net sales were from the U.S. Government, either as a prime contractor or as a subcontractor (including 60% from the Department of Defense (DoD))' (FY2018 10-K, Item 1); 'We depend heavily on contracts with the U.S. Government for a substantial portion of our business. ... Those contracts are conditioned upon the continuing availability of Congressional appropriations.' (Item 1A): sales that depend on Congressional appropriations are not earnings that are the cycle, so DURABLE (the CAT and SO precedent); OFFSHORE (live from 2004-11-05) is scoped to offshore delivery taking share in Western consulting, systems integration and outsourcing, CLOUD (live from 2012-10-30) to public cloud displacing on-premise hardware, storage, databases and data-center outsourcing, ECOMMERCE (live from 2015-01-01) to e-commerce displacing physical retail, malls, grocery and distribution, STREAMING (live from 2015-08-04) to streaming displacing linear TV networks and pay-TV bundles, and ENERGY_TRANSITION (live from 2015-12-12) to decarbonisation stranding oil, gas and coal reserves and refining; the 10-K names no offshore competition, e-commerce or streaming and names cloud computing only among technological advances 'enabling new factors of competition for both traditional and non-traditional competitors', not as a substitute for its products; Lockheed Martin holds no oil, gas or coal reserves or refining, and the 10-K names oil and gas only as a market for Sikorsky's commercial helicopters ('demand for its products may be adversely affected by global economic conditions, including oil and gas trends that are outside of our control') and climate change only among concerns that could bring future regulation ('we could be affected by future regulations imposed or claims asserted in response to concerns over climate change, other aspects of the environment or natural resources'), so no disruption theme in scope is live",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, NEUTRALLY VALUED",
+  "quality_label": "◎ QUALITY, NEUTRALLY VALUED",
+  "quality_color": "#f0b429",
+  "quality_tone": "amber",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "FAIR",
+  "quality_note": "'In 2018, 70% of our $53.8 billion in net sales were from the U.S. Government, either as a prime contractor or as a subcontractor (including 60% from the Department of Defense (DoD))' (FY2018 10-K, Item 1); 'We depend heavily on contracts with the U.S. Government for a substantial portion of our business. ... Those contracts are conditioned upon the continuing availability of Congressional appropriations.' (Item 1A): sales that depend on Congressional appropriations are not earnings that are the cycle, so DURABLE (the CAT and SO precedent); OFFSHORE (live from 2004-11-05) is scoped to offshore delivery taking share in Western consulting, systems integration and outsourcing, CLOUD (live from 2012-10-30) to public cloud displacing on-premise hardware, storage, databases and data-center outsourcing, ECOMMERCE (live from 2015-01-01) to e-commerce displacing physical retail, malls, grocery and distribution, STREAMING (live from 2015-08-04) to streaming displacing linear TV networks and pay-TV bundles, and ENERGY_TRANSITION (live from 2015-12-12) to decarbonisation stranding oil, gas and coal reserves and refining; the 10-K names no offshore competition, e-commerce or streaming and names cloud computing only among technological advances 'enabling new factors of competition for both traditional and non-traditional competitors', not as a substitute for its products; Lockheed Martin holds no oil, gas or coal reserves or refining, and the 10-K names oil and gas only as a market for Sikorsky's commercial helicopters ('demand for its products may be adversely affected by global economic conditions, including oil and gas trends that are outside of our control') and climate change only among concerns that could bring future regulation ('we could be affected by future regulations imposed or claims asserted in response to concerns over climate change, other aspects of the environment or natural resources'), so no disruption theme in scope is live. durable franchise (obsolescence risk 2/5); price fair; Ratio B 1.35x; +48% to EPP floor; model-vs-market gap -0.45; conservative 2yr +17%.",
+  "theme": null
+ },
+ "legacy_signal_short": "WATCHLIST",
+ "legacy_signal": "◐ WATCHLIST",
+ "metrics": {
+  "ratio_b": 1.35,
+  "ratio_b_fmt": "1.35x",
+  "epp": 258.6,
+  "epp_gap_pct": 47.7,
+  "epp_adj": -0.1,
+  "proxy_composite": 2.1,
+  "sca": 0.183,
+  "adj_composite": 2.183,
+  "market_composite": 2.63,
+  "adj_gap": -0.45,
+  "valuation": "MODESTLY OVERVALUED",
+  "cons_return_2yr": 17.1,
+  "scenarios": {
+   "BEAR": {
+    "eps": 17.09,
+    "pe": 10.1,
+    "price": 173,
+    "desc": "EPS -11.0%/yr (worst year FY09-FY18, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 27.68,
+    "pe": 16.4,
+    "price": 454,
+    "desc": "EPS +13.3%/yr (FY19 guide + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 27.68,
+    "pe": 19.4,
+    "price": 537,
+    "desc": "EPS +13.3%/yr (FY09-FY18 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 31.38,
+    "pe": 21.1,
+    "price": 662,
+    "desc": "EPS +20.7%/yr (best 2-yr run FY09-FY18); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 1.35,
+   "epp_gap_pct": 47.7,
+   "adj_gap": -0.45,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 17.1,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.88,
+   "epp_gap_pct": 47.7,
+   "adj_gap": 0.06,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 17.1,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 2.98,
+   "epp_gap_pct": 47.7,
+   "adj_gap": -1.14,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 17.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 1.19,
+   "epp_gap_pct": 47.7,
+   "adj_gap": -0.34,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 17.1,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 1.54,
+   "epp_gap_pct": 47.7,
+   "adj_gap": -0.62,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 17.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 1.35,
+   "epp_gap_pct": 47.7,
+   "adj_gap": -0.15,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 17.1,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 1.35,
+   "epp_gap_pct": 18.1,
+   "adj_gap": -0.35,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 17.1,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 1.35,
+   "epp_gap_pct": 47.7,
+   "adj_gap": -0.13,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 17.1,
+   "price_state": "FAIR"
+  }
+ ],
+ "robustness_price_states": [
+  "FAIR",
+  "RICH"
+ ],
+ "summary": "LMT (retrospective, 2019-11-08) ◐ WATCHLIST — Ratio B 1.35x (54.7% downside to Bear $173 / +40.6% upside to Bull $537) | Adj composite 2.18 vs market 2.63: gap -0.45 [MODESTLY OVERVALUED] | +48% above the EPP floor $259 (12x FY19E $21.55) | Conservative 2-yr case: +17.1% total (+8.6%/yr) | At 17.7x FY19E the 15% hurdle price $505 sits between the BASE and BULL cases; backlog +25.8% in Q3 2019, forward revenues +9.9% (FY19 net sales guide); OFFSHORE (live from 2004-11-05) is scoped to offshore delivery taking share in Western consulting, systems integration and outsourcing, CLOUD (live from 2012-10-30) to public cloud displacing on-premise hardware, storage, databases and data-center outsourcing, ECOMMERCE (live from 2015-01-01) to e-commerce displacing physical retail, malls, grocery and distribution, STREAMING (live from 2015-08-04) to streaming displacing linear TV networks and pay-TV bundles, and ENERGY_TRANSITION (live from 2015-12-12) to decarbonisation stranding oil, gas and coal reserves and refining; the 10-Ks name no offshore competition, e-commerce or streaming and name cloud computing only among technological advances 'enabling new factors of competition for both traditional and non-traditional competitors', not as a substitute for its products; Lockheed Martin holds no oil, gas or coal reserves or refining, and the 10-Ks name oil and gas only as a market for Sikorsky's commercial helicopters ('demand for its products may be adversely affected by global economic conditions, including oil and gas trends that are outside of our control') and climate change only among concerns that could bring future regulation ('we could be affected by future regulations imposed or claims asserted in response to concerns over climate change, other aspects of the environment or natural resources'), so no theme in scope has dated evidence.",
+ "sources": [
+  {
+   "id": "LM74",
+   "published": "2019-02-08",
+   "filed": "2019-02-08 11:38 ET, during the session",
+   "title": "Lockheed Martin FY2018 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646819000009/lmtq4201810k.htm",
+   "supports": "five-year summary 2018-2014 (net sales $53,762M to $39,946M; diluted EPS from continuing operations $17.59, $6.50, $12.08, $9.93, $10.09; backlog $130,468M and $105,493M); total business segment operating profit 2018-2017 $5,877M, $5,092M; average diluted shares 286.8M, 290.6M, 303.1M; Items 1 and 1A"
+  },
+  {
+   "id": "LM73",
+   "published": "2019-01-29",
+   "filed": "2019-01-29 07:31 ET, before the open",
+   "title": "Lockheed Martin Q4 2018 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646819000004/ex991q42018.htm",
+   "supports": "Q4 2018: net sales $14,411M vs $13,844M, segment operating profit $1,515M vs $1,367M, diluted EPS from continuing operations $4.39 vs $-2.85, total backlog $130,468M, average diluted shares 285.5M; FY2019 outlook net sales $55.75-57.25B, diluted EPS $19.15-19.45"
+  },
+  {
+   "id": "LM69",
+   "published": "2018-02-07",
+   "filed": "2018-02-06 16:22 ET, after the close (dated the next trading day)",
+   "title": "Lockheed Martin FY2017 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646818000009/lmtq4201710k.htm",
+   "supports": "five-year summary 2017-2013 (net sales $51,048M to $39,243M; diluted EPS from continuing operations $6.64, $12.38, $9.93, $10.09, $8.27; backlog $99,936M and $96,158M); total business segment operating profit 2017-2016 $5,115M, $5,100M; average diluted shares 290.6M, 303.1M, 314.7M; Items 1 and 1A"
+  },
+  {
+   "id": "LM64",
+   "published": "2017-02-10",
+   "filed": "2017-02-09 16:32 ET, after the close (dated the next trading day)",
+   "title": "Lockheed Martin FY2016 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312517036192/d290249d10k.htm",
+   "supports": "five-year summary 2016-2012 (net sales $47,248M to $40,573M; diluted EPS from continuing operations $12.38, $9.93, $10.09, $8.27, $6.99; backlog $96,200M and $94,800M); total business segment operating profit 2016-2015 $5,100M, $4,978M; average diluted shares 303.1M, 314.7M, 322.4M; Items 1 and 1A"
+  },
+  {
+   "id": "LM59",
+   "published": "2016-02-25",
+   "filed": "2016-02-24 17:21 ET, after the close (dated the next trading day)",
+   "title": "Lockheed Martin FY2015 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312516476010/d62685d10k.htm",
+   "supports": "five-year summary 2015-2011 (net sales $46,132M to $46,499M; diluted EPS from continuing operations $11.46, $11.21, $9.04, $8.36, $7.85; backlog $99,600M and $80,547M); total business segment operating profit 2015-2014 $5,486M, $5,588M; average diluted shares 314.7M, 322.4M, 326.5M; Items 1 and 1A"
+  },
+  {
+   "id": "LM54",
+   "published": "2015-02-09",
+   "filed": "2015-02-09 12:39 ET, during the session",
+   "title": "Lockheed Martin FY2014 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312515038681/d808572d10k.htm",
+   "supports": "five-year summary 2014-2010 (net sales $45,600M to $45,671M; diluted EPS from continuing operations $11.21, $9.04, $8.36, $7.85, $7.10; backlog $80,547M and $82,600M); total business segment operating profit 2014-2013 $5,588M, $5,752M; average diluted shares 322.4M, 326.5M, 328.4M; Items 1 and 1A"
+  },
+  {
+   "id": "LM49",
+   "published": "2014-02-18",
+   "filed": "2014-02-14 16:51 ET, after the close (dated the next trading day)",
+   "title": "Lockheed Martin FY2013 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312514055034/d621068d10k.htm",
+   "supports": "five-year summary 2013-2009 (net sales $45,358M to $43,867M; diluted EPS from continuing operations $9.04, $8.36, $7.85, $7.10, $7.63; backlog $82,600M and $82,300M); total business segment operating profit 2013-2012 $5,752M, $5,583M; average diluted shares 326.5M, 328.4M, 339.9M; Items 1 and 1A"
+  },
+  {
+   "id": "LM39",
+   "published": "2012-02-23",
+   "filed": "2012-02-23 14:21 ET, during the session",
+   "title": "Lockheed Martin FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312512074929/d221578d10k.htm",
+   "supports": "five-year summary 2011-2007 (net sales $46,499M to $40,612M; diluted EPS from continuing operations $7.85, $7.10, $7.63, $7.64, $7.00; backlog $80,700M and $78,400M); total business segment operating profit 2011-2010 $5,281M, $5,028M; average diluted shares 339.9M, 368.3M, 388.9M; Items 1 and 1A"
+  },
+  {
+   "id": "LM44",
+   "published": "2013-02-28",
+   "filed": "2013-02-28 11:47 ET, during the session",
+   "title": "Lockheed Martin FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000119312513082873/d428940d10k.htm",
+   "supports": "five-year summary 2012-2008 (net sales $47,182M to $41,212M; diluted EPS from continuing operations $8.36, $7.85, $7.10, $7.63, $7.64; backlog $82,300M and $80,700M); total business segment operating profit 2012-2011 $5,583M, $5,281M; average diluted shares 328.4M, 339.9M, 368.3M; Items 1 and 1A"
+  },
+  {
+   "id": "LM75",
+   "published": "2019-04-23",
+   "filed": "2019-04-23 07:31 ET, before the open",
+   "title": "Lockheed Martin Q1 2019 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646819000019/ex991q12019.htm",
+   "supports": "Q1 2019: net sales $14,336M vs $11,635M, segment operating profit $1,715M vs $1,310M, diluted EPS $5.99 vs $4.02, total backlog $133,470M, average diluted shares 284.3M; FY2019 outlook net sales $56.75-58.25B, diluted EPS $20.05-20.35"
+  },
+  {
+   "id": "LM76",
+   "published": "2019-07-23",
+   "filed": "2019-07-23 07:33 ET, before the open",
+   "title": "Lockheed Martin Q2 2019 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646819000055/ex991q22019.htm",
+   "supports": "Q2 2019: net sales $14,427M vs $13,398M, segment operating profit $1,554M vs $1,466M, diluted EPS $5.00 vs $4.05, total backlog $136,683M, average diluted shares 283.9M; FY2019 outlook net sales $58.25-59.75B, diluted EPS $20.85-21.15"
+  },
+  {
+   "id": "LM77",
+   "published": "2019-10-22",
+   "filed": "2019-10-22 07:34 ET, before the open",
+   "title": "Lockheed Martin Q3 2019 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646819000066/ex991q32019.htm",
+   "supports": "Q3 2019: net sales $15,171M vs $14,318M, segment operating profit $1,665M vs $1,586M, diluted EPS $5.66 vs $5.14, total backlog $137,355M, average diluted shares 283.9M; FY2019 outlook net sales ~$59.1B, diluted EPS ~$21.55"
+  },
+  {
+   "id": "LM72",
+   "published": "2018-10-23",
+   "filed": "2018-10-23 07:31 ET, before the open",
+   "title": "Lockheed Martin Q3 2018 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/936468/000093646818000064/ex991q32018.htm",
+   "supports": "Q3 2018: net sales $14,318M vs $12,341M, segment operating profit $1,586M vs $1,287M, diluted EPS $5.14 vs $3.32, total backlog $109,191M, average diluted shares 286.7M; FY2018 outlook net sales ~$53B, diluted EPS ~$17.50"
+  },
+  {
+   "id": "W0",
+   "published": "2019-11-08",
+   "title": "Yahoo Finance daily prices, LMT and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/LMT/history",
+   "supports": "close $381.86 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-17"
+}

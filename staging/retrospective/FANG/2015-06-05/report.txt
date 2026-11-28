@@ -1,0 +1,151 @@
+
+════════════════════════════════════════════════════════════════════════
+  FANG  ·  Diamondback Energy, Inc.  ·  $78.26  ·  RETROSPECTIVE as of 2015-06-05
+  Signal: ◉ BUY   Ratio B: 0.03x   Adj gap: +1.13  [UNDERVALUED]
+  Point-in-time: 8 sources, latest published 2015-06-05; latest print Q1 2015 (2015-05-07)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2015E revenues, USD bn  →  FY2017E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2015E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Oil sales                 $   0.465  $ 0.465  $ 1.399    +0.000    +0.934
+    +138.0% revenues in 2014
+  Natural gas liquid sales  $   0.029  $ 0.029  $ 0.088    +0.000    +0.059
+    +118.8% revenues in 2014
+  Natural gas sales         $   0.019  $ 0.019  $ 0.056    +0.000    +0.037
+    +188.5% revenues in 2014
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $   0.513  $ 0.513  $ 1.543    +0.000    +1.030
+  FY2015E = FY14 $0.496B × (1 + 3.5%: no FY15 revenue guide in numbers, Q1 2015 revenues as reported, applied to the year (no FY15 revenue guide)); split pro rata to 2014 oil, natural gas liquid and natural gas sales (related-party sales included)
+  Q1 2015 (2015-05-07): revenues $0.101B +3.5%; oil-equivalent production +126.0%, oil +122.1%;
+  LOE per BOE +25.4%; pre-tax margin 9.67% (-2827.4bp); EPS $0.10 vs $0.48
+  Activity: total revenues $101.4M vs $98.0M; production 2,757 MBOE vs 1,220, oil 2,132 MBbl vs 960; LOE $8.14/BOE vs $6.49; income before income taxes $9.8M vs $37.2M; EPS GAAP, diluted
+  FY15: no revenue, EPS or margin guide in numbers (BASE takes Q1 2015 revenue growth as reported); the releases guide production, unit costs and capital spending only (display only)
+
+  FY2015E EPS check:  $0.513B × 61.5% pre-tax × (1−35.7%) ÷ 0.059B  =  $3.46  (FY2015E: no EPS guide, FY14's GAAP $3.64 stands)
+  FY2017E BEAR check: $0.513B × 61.5% ÷ 0.085B  =  $2.38  (scenario $3.64)
+  FY2017E BULL check: $1.543B × 61.9% ÷ 0.085B  =  $7.20  (scenario $28.98)
+  Every 1pp of pre-tax margin ≈ $0.06 EPS ≈ $1/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Oil-equivalent production          +14.0%   ≥46.0%   ≥78.0%  ≥148.0%   +126.0%  ▲ BULL  ███░
+  Oil production                     +52.0%   ≥60.0%   ≥68.0%  ≥167.0%   +122.1%  ▲ BULL  ███░
+  Revenue growth                    -142.0%  ≥-30.0%   ≥81.0%  ≥177.0%     +3.5%  ◦ BASE  ██░░
+  Lease operating expense per BOE   +130.0%   ≤58.0%  ≤-14.0%  ≤-44.0%    +25.4%  ◦ BASE  ██░░
+  Pre-tax margin change             -8730.0bp  ≥-3100.0bp  ≥2530.0bp  ≥49380.0bp  -2827.4bp  ◦ BASE  ██░░
+  Disruption theme: none in scope    +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.40 / 4.00
+  Market composite:   1.17 / 4.00  (back-solved from $78 + 15% hurdle)
+  SCA adjustment:    -0.00  ·  EPP-distance adj -0.10  →  Adj composite 2.30  →  Gap +1.13  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY14 revenues +138.3%; Q1 production +126.0%, pre-tax margin 9.7%  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 21.5x FY15E vs a 20.8x 2.4-yr ex-FY12 median (57th percentile of its own range)  (-0.12 × 25%  =  -0.030)
+    -  Growth vs own history: no FY15 revenue guide in numbers, Q1 2015 revenues as reported +3.5% vs a 98.0% 6-yr median  (-0.50 × 20%  =  -0.100)
+    +  FY14 free cash flow $(0.14)B, no dividend, no share repurchases (shares issued for acquisitions and offerings)  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Oil-equivalent production          +126.0%    +14.0%  -112.0%  Well declines outrun new wells
+  Oil production                     +122.1%    +52.0%  -70.1%  The oil share of new wells falls
+  Revenue growth                       +3.5%   -142.0%  -145.5%  Oil and gas prices fall
+  Lease operating expense per BOE     +25.4%   +130.0%  +104.6%  Unit costs rise
+  Pre-tax margin change             -2827.4bp  -8730.0bp  -5902.6bp  Impairments, hedges and interest as p…
+  Disruption theme: none in scope     +2.0/4    +1.0/4  -1.0/4  No live disruption theme covers an on…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$109  (model)  /  $60 (defined)
+  Bear probability (proxy model):  11.1%
+
+  KEY TRIGGER: oil-equivalent production growth went from +146.8% (Q4 2014) to +126.0% (Q1 2015);
+  the bear case needs oil production (+122.1% now) and revenues
+  (+3.5% now) to give way as well. By the company's own account the oil and natural gas industry is cyclical;
+  the bear needs prices to fall and stay down, not one quarter's.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $3.64  (FY2015E: no EPS guide, FY14's GAAP $3.64 stands)
+  Min viable P/E at panic:          14x  [median of calendar-year P/E lows: 2013 14.8x, 2014 12.2x, 2015 15.7x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $51/share
+  Current $78 vs Updated EPP $51:  +54%  ⚠ far above floor — large drawdown room
+  Bear $60 vs Updated EPP $51:  +18%  ✓ bear stays above the floor
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Oil-equivalent production                   46.0      -80.0   BASE floor (vs +126 now)
+  Oil production                              60.0      -62.1   BASE floor (vs +122 now)
+  Revenue growth                             -30.0      -33.5   BASE floor (vs +4 now)
+  Lease operating expense per BOE             58.0      +32.6   BASE floor (vs +25 now)
+  Pre-tax margin change                    -3100.0     -272.6   BASE floor (vs -2827 now)
+  Disruption theme: none in scope              2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $3.64 × (1+0.0%)² = $3.64
+  At 20x P/E (conservative):  $73/share
+  + Cumul. dividends (2yr):  +$0.00/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $73  (▼5 from $78)
+  Conservative total return:  -7% over 2yr  = -3%/yr
+
+  At 21.5x the multiple is already near its 20x median, so the conservative
+  case is a growth question: breakeven at 20x needs FY2017E EPS of $3.91,
+  i.e. 3.7%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $51.69  –  $93.33  (at 64th pct of range)
+  Annual dividend:      $0.00/share  (yield 0.0%)
+  Realized vol (1yr):   44% annualized
+  Beta vs broad market: 1.58
+  1-sigma range (1yr):  $44  –  $112  ($78 ± 44%)
+  2-sigma range (1yr):  $10  –  $147
+  ────────────────────────────────────────────────────────────
+  Bear $60 requires:  ~0.5σ price move  (within normal vol range)
+  A cyclical onshore oil and gas producer with a 1.6 beta: the stock is +49% off its December
+  low while oil-equivalent production growth went from +146.8% (Q4 2014) to +126.0% (Q1 2015).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        3.64  16.4x  $     60    11.1%     72.2%   -61.1pp  EPS +0.0%/yr (worst year FY13-FY14, capped at 0%); P/E to its 10th pct
+  BASE        2.50  20.8x  $     52    38.8%     20.7%   +18.1pp  EPS -17.1%/yr (Q1 revenues + margin + buyback); P/E at its 2.4-yr ex-FY12 median
+  BULL       28.98  25.2x  $    730    42.1%      5.9%   +36.2pp  EPS +182.2%/yr (FY13-FY14 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL      28.98  34.7x  $  1,006     8.0%      1.1%    +6.8pp  EPS +182.2%/yr (no 2-yr run in FY13-FY14: BULL's rate); P/E at its 90th pct
+
+  Proxy EV (2yr): $415  /  Market EV: $109  /  Current: $78
+  Conservative EV (2yr, ④): $73 + $0.00 divs = $73 total value
+  Downside (→ Bear $60): 23.3%   Upside (→ Bull $730): 832.8%   Ratio B 0.03x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $78 the market needs $103 in two years —
+  between the BASE and BULL cases. That is a market composite of 1.17 against a model
+  read of 2.30: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.03x     +54%    +1.13  UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.01x     +54%    +1.30  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.05x     +54%    +0.94  UNDERVALUED / BUY
+  Scenario EPS +1.5pp/yr                          0.02x     +54%    +1.08  UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.03x     +54%    +1.08  UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.03x     +54%    +1.43  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.03x     +26%    +1.23  UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.03x     +54%    +1.13  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 2015 release (early May) — the next read on production (+126.0% now) and oil (+122.1% now)
+  (2) Pre-tax margin — -2827.4bp in Q1 2015: realizations against costs, hedges and impairments
+  (3) The FY15 outlook — no revenue, EPS or margin guide in numbers (production, unit cost and capital spending guides only)
+  (4) Free cash flow — FY14 $(0.14)B (net cash provided by operating activities $0.356B less additions to oil and natural gas properties $0.498B; acquisitions not deducted): the drilling program outspends operating cash flow
+  (5) Capital return at 22x — no dividend and no share repurchases; equity offerings fund acquisitions: management's own read of the multiple
+  ◉ BUY  |  EPP floor $51  |  ADD below ~$44  |  TRIM above $730
+════════════════════════════════════════════════════════════════════════
+

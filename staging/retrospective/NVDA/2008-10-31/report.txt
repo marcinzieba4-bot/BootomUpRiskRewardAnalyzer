@@ -1,0 +1,155 @@
+
+════════════════════════════════════════════════════════════════════════
+  NVDA  ·  NVIDIA Corporation  ·  $8.76  ·  RETROSPECTIVE as of 2008-10-31
+  Signal: ◉ BUY   Ratio B: 0.04x   Adj gap: +0.80  [UNDERVALUED]
+  Point-in-time: 16 sources, latest published 2008-10-31; latest print Q2 FY09 (Aug 12)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2009E revenue, USD bn  →  FY2011E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2009E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  GPU                           $  2.40  $ 2.40  $ 4.95    +0.00    +2.55
+    +47.1% revenue in FY08
+  MCP                           $  0.68  $ 0.68  $ 1.40    +0.00    +0.72
+    +7.4% revenue in FY08
+  Professional Solutions        $  0.56  $ 0.56  $ 1.16    +0.00    +0.60
+    +29.4% revenue in FY08
+  Consumer Products             $  0.24  $ 0.24  $ 0.49    +0.00    +0.25
+    +7.7% revenue in FY08
+  All Other                     $  0.03  $ 0.03  $ 0.06    +0.00    +0.03
+    +327.2% revenue in FY08
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $  3.91  $ 3.91  $ 8.06    +0.00    +4.15
+  FY2009E = FY08 $4.098B × (1 − 4.6%: the Q2 FY09 revenue growth (no Q3 FY09 guide in numbers), YoY, applied to the year (no FY09 revenue guide)); split pro rata to FY08 segment revenue (FY2008 10-K)
+  Q2 FY09 (Aug 12): revenue $0.893B -4.6% YoY (-22.6% QoQ); inventories +56.4%; R&D + SG&A +27.6%;
+  gross margin 16.79% (-2854.0bp); operating margin -17.41% (-3716.3bp); EPS $(0.22) vs $0.29
+  Revenue: revenue $892.7M vs $935.3M a year earlier, $1,153.4M the quarter before; inventories $432.3M (2008-07-27) vs $276.3M a year earlier (Q2 FY08 10-Q); GAAP diluted EPS $(0.22) vs $0.29; the release's non-GAAP figure excludes stock-based compensation, which recurs, so it is not used; diluted shares 555.4M; charges stay in, as published: 'the non-recurring warranty charge against cost of revenue' (Q2 FY09 results (8-K))
+  Q3 FY09: no revenue guide in numbers in any filing; in words only (Q2 FY09 10-Q): 'We expect revenue to grow slightly during the third quarter of fiscal year 2009 as compared to the second quarter of fiscal year 2009.'; no fiscal-year revenue, EPS or margin guide
+
+  FY2009E EPS check:  $3.910B × 22.0% pre-tax × (1−11.5%) ÷ 0.555B  =  $1.37  (FY2009E: no EPS guide in numbers, FY08's $1.31 stands)
+  FY2011E BEAR check: $3.910B × 22.0% ÷ 0.631B  =  $1.21  (scenario $0.17)
+  FY2011E BULL check: $8.060B × 22.4% ÷ 0.631B  =  $2.53  (scenario $3.63)
+  Every 1pp of pre-tax margin ≈ $0.062 EPS ≈ $1.84/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Revenue growth                        -43.0%    ≥-5.0%    ≥34.0%   ≥137.0%     -4.6%  ◦ BASE  ██░░
+  Gross margin change                 -1760.0bp  ≥-770.0bp  ≥210.0bp  ≥720.0bp  -2854.0bp  ⚠ BEAR  █░░░
+  Opex growth less revenue             +47.0pp   ≤22.0pp   ≤-2.0pp  ≤-47.0pp   +32.2pp  ⚠ BEAR  █░░░
+  Inventory growth less revenue       +115.0pp   ≤66.0pp   ≤17.0pp  ≤-105.0pp   +61.0pp  ◦ BASE  ██░░
+  Operating margin change             -2010.0bp  ≥-950.0bp  ≥120.0bp  ≥1280.0bp  -3716.3bp  ⚠ BEAR  █░░░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.50 / 4.00
+  Market composite:   1.05 / 4.00  (back-solved from $8.76 + 15% hurdle)
+  SCA adjustment:    +0.15  ·  EPP-distance adj +0.20  →  Adj composite 1.85  →  Gap +0.80  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY08 revenue +33.5%, gross margin 45.6%; Q2 gross margin 16.79% (-2854bp YoY)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 6.7x FY09E vs a 29.6x 9.8-yr median (1st percentile of its own range)  (+0.50 × 25%  =  +0.125)
+    -  Growth vs own history: Q2 FY09 revenue growth (no Q3 FY09 guide in numbers) -4.6% vs a 33.5% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  Cash, cash equivalents and marketable securities $1.657B, no debt (Q2 FY09), FY08 free cash flow $1.082B (net cash provided by operating activities $1,270.2M less purchases of property and equipment and intangible assets $187.7M), no dividend  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Revenue growth                         -4.6%    -43.0%  -38.4%  PC demand and channel destocking cut …
+  Gross margin change                 -2854.0bp  -1760.0bp  +1094.0bp  Price erosion, mix and product charge…
+  Opex growth less revenue             +32.2pp   +47.0pp  +14.8pp  R&D and SG&A do not come down with re…
+  Inventory growth less revenue        +61.0pp  +115.0pp  +54.0pp  Inventory builds ahead of demand: wri…
+  Operating margin change             -3716.3bp  -2010.0bp  +1706.3bp  Operating leverage works in reverse
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$35.60  (model)  /  $2.65 (defined)
+  Bear probability (proxy model):  53.1%
+
+  KEY TRIGGER: revenue went from +36.6% (Q1 FY09) to -4.6% YoY (Q2 FY09), -22.6% on the quarter before;
+  the bear case needs a downturn in gross margin (-2854.0bp now)
+  and inventories (+61.0pp against revenue) giving way. A GPU downturn shows up in channel inventories and the next quarter's
+  revenue first; the bear needs it in gross margin as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $1.31  (FY2009E: no EPS guide in numbers, FY08's $1.31 stands)
+  Min viable P/E at panic:          15x  [median of calendar-year P/E lows: 1999 14.6x, 2000 14.9x, 2001 24.1x, 2002 24.6x, 2003 33.9x, 2004 18.5x, 2005 12.8x, 2006 15.5x, 2007 14.4x, 2008 5.0x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $19.65/share
+  Current $8.76 vs Updated EPP $19.65:  -55%  ✓ BELOW panic floor — deep-value zone
+  Bear $2.65 vs Updated EPP $19.65:  -87%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Revenue growth                                -5.0       -0.4   BASE floor (vs -5 now)
+  Gross margin change                         -770.0    +2084.0   BASE floor (vs -2854 now)
+  Opex growth less revenue                      22.0      -10.2   BASE floor (vs +32 now)
+  Inventory growth less revenue                 66.0       +5.0   BASE floor (vs +61 now)
+  Operating margin change                     -950.0    +2766.3   BASE floor (vs -3716 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $1.31 × (1+0.0%)² = $1.31
+  At 29x P/E (conservative):  $37.99/share
+  + Cumul. dividends (2yr):  +$0.00/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $37.99  (▲29.23 from $8.76)
+  Conservative total return:  +334% over 2yr  = +167%/yr
+
+  At 6.7x the multiple is already near its 29x median, so the conservative
+  case is a growth question: breakeven at 29x needs FY2011E EPS of $0.30,
+  i.e. -52.0%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $5.97  –  $38.20  (at 9th pct of range)
+  Annual dividend:      $0.00/share  (yield 0.0%)
+  Realized vol:         80% annualized (1-yr daily log returns)
+  Beta vs broad market: 1.33
+  1-sigma range (1yr):  $1.79  –  $15.73  ($8.76 ± 80%)
+  2-sigma range (1yr):  $-5.19  –  $22.71
+  ────────────────────────────────────────────────────────────
+  Bear $2.65 requires:  ~0.9σ price move  (within normal vol range)
+  A GPU maker in a cyclical industry: the stock is +34% off its October
+  low (52 weeks) while revenue went from +36.6% (Q1 FY09) to -4.6% YoY (Q2 FY09), -22.6% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        0.17   15.6x  $   2.65    53.1%     72.2%   -19.2pp  EPS -64.3%/yr (worst year FY99-FY08, capped at 0%); P/E to its 10th pct
+  BASE        1.03   29.6x  $  30.49    35.0%     20.7%   +14.3pp  EPS -11.2%/yr (Q2 revenue YoY + margin + buyback); P/E at its 9.8-yr median
+  BULL        3.63   49.1x  $ 178.23    10.0%      5.9%    +4.1pp  EPS +66.5%/yr (FY99-FY08 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL      20.36   73.7x  $1,500.53     1.9%      1.1%    +0.8pp  EPS +294.2%/yr (best 2-yr run FY99-FY08, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $58.36  /  Market EV: $35.60  /  Current: $8.76
+  Conservative EV (2yr, ④): $37.99 + $0.00 divs = $37.99 total value
+  Downside (→ Bear $2.65): 69.7%   Upside (→ Bull $178.23): 1934.6%   Ratio B 0.04x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $8.76 the market needs $11.59 in two years —
+  at or below the BASE case. That is a market composite of 1.05 against a model
+  read of 1.85: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.04x     -55%    +0.80  UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.02x     -55%    +0.63  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.06x     -55%    +0.63  UNDERVALUED / BUY
+  Scenario EPS +1.5pp/yr                          0.03x     -55%    +0.63  UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.04x     -55%    +0.80  UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.04x     -55%    +1.10  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.04x     -63%    +0.80  UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.04x     -55%    +0.80  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 FY09 print (November) — revenue against the Q2 FY09 revenue growth (no Q3 FY09 guide in numbers): -4.6% YoY
+  (2) Gross margin — -2854.0bp in Q2 FY09: price erosion, mix and product charges, what must hold if revenue does not
+  (3) A Q3 FY09 revenue guide — none in numbers; the Q2 FY09 10-Q says 'We expect revenue to grow slightly during the third quarter of fiscal year 2009 as compared to the second quarter of fiscal year 2009.': NVIDIA's outlook is given on its calls, which are not filings
+  (4) Inventories — +56.4% against revenue -4.6% in Q2 FY09 (+61.0pp): write-downs follow if orders slow
+  (5) Capital structure at 7x — 'NVIDIA also announced an increase of $1 billion to its stock repurchase program under which it may now purchase up to $2.7 billion of its common stock.' 'Through July 27, 2008, NVIDIA has repurchased 68.0 million shares under the stock repurchase program for a total cost of $1.16 billion.' (Q2 FY09 release)
+  ◉ BUY  |  EPP floor $19.65  |  ADD below ~$25.92  |  TRIM above $178.23
+════════════════════════════════════════════════════════════════════════
+

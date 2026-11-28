@@ -1,0 +1,156 @@
+
+════════════════════════════════════════════════════════════════════════
+  CMCSA  ·  Comcast Corporation  ·  $59.05  ·  RETROSPECTIVE as of 2015-03-13
+  Signal: ◉ BUY   Ratio B: 0.21x   Adj gap: -0.07  [FAIRLY VALUED]
+  Point-in-time: 17 sources, latest published 2015-03-13; latest print Q4 2014 (Feb 24)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2015E revenues, USD bn  →  FY2017E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2015E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Cable Communications      $    45.5  $  45.5  $  59.1      +0.0     +13.6
+    +5.5% revenues in FY14
+  Cable Networks            $     9.9  $   9.9  $  12.8      +0.0      +2.9
+    +3.9% revenues in FY14
+  Broadcast Television      $     8.8  $   8.8  $  11.4      +0.0      +2.6
+    +20.0% revenues in FY14
+  Filmed Entertainment      $     5.2  $   5.2  $   6.7      +0.0      +1.5
+    -8.1% revenues in FY14
+  Theme Parks               $     2.7  $   2.7  $   3.5      +0.0      +0.8
+    +17.4% revenues in FY14
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    72.1  $  72.1  $  93.5      +0.0     +21.4
+  FY2015E = FY14 $68.78B × (1 + 4.8%: no FY15 revenue guide in numbers, Q4 2014 revenue growth, applied to the year); split pro rata to FY14 segment revenues before headquarters, other and eliminations (FY2014 10-K)
+  Q4 2014 (Feb 24): revenues $17.73B +4.8%; video subscribers -0.9%;
+  operating cash flow margin 33.14% (-20.8bp); operating margin 21.36% (-19.0bp);
+  capital expenditures 12.54% of revenues (+70.8bp); EPS $0.74 vs $0.72
+  video subscribers 22,383K against 22,577K a year earlier (-0.86%), as the release shows them; capital expenditures $2,224M against $2,003M; costs related to the Time Warner Cable and Charter transactions in the quarter
+  FY15: no guide in numbers yet
+
+  FY2015E EPS check:  $72.1B × 18.1% pre-tax × (1−31.1%) ÷ 2.590B  =  $3.48  (FY2015E: no EPS guide, FY14's $2.93 stands)
+  FY2017E BEAR check: $72.1B × 18.1% ÷ 2.455B  =  $3.67  (scenario $2.93)
+  FY2017E BULL check: $93.5B × 18.5% ÷ 2.455B  =  $4.86  (scenario $5.06)
+  Every 1pp of pre-tax margin ≈ $0.19 EPS ≈ $3/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Video subscriber growth            -10.0%   ≥-1.0%    ≥8.0%  ≥151.0%     -0.9%  ◦ BASE  ██░░
+  Revenue growth                      +0.0%   ≥10.0%   ≥19.0%  ≥126.0%     +4.8%  ⚠ BEAR  █░░░
+  Operating cash flow margin change  -510.0bp  ≥-230.0bp  ≥50.0bp  ≥220.0bp   -20.8bp  ◦ BASE  ██░░
+  Capital intensity change          +1270.0bp  ≤620.0bp  ≤-30.0bp  ≤-1150.0bp   +70.8bp  ◦ BASE  ██░░
+  Operating margin change           -2440.0bp  ≥-1210.0bp  ≥10.0bp  ≥3370.0bp   -19.0bp  ◦ BASE  ██░░
+  Disruption theme: none live        +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.80 / 4.00
+  Market composite:   1.83 / 4.00  (back-solved from $59 + 15% hurdle)
+  SCA adjustment:    -0.04  ·  EPP-distance adj +0.00  →  Adj composite 1.76  →  Gap -0.07  [FAIRLY VALUED]
+
+  Structural factors:
+    +  Franchise: FY14 revenues +6.4%, cable 63% of segment revenues, video subscribers -0.88% (video customers 22.4 million against 22.6 million (FY2014 10-K table, billable customers method)); Q4 operating cash flow margin 33.14% (-20.8bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 20.2x FY15E vs a 18.1x 10-yr median (65th percentile of its own range)  (-0.25 × 25%  =  -0.062)
+    -  Growth vs own history: no FY15 revenue guide in numbers, Q4 2014 revenue growth +4.8% vs a 10.8% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  FY14 year-end cash and current investments $4.51B, FY14 free cash flow $8.17B, dividend $1.00 a year, 81 million shares repurchased in 2014 for $4.25 billion (FY2014 10-K)  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Video subscriber growth              -0.9%    -10.0%   -9.1%  DBS and phone-company video take share
+  Revenue growth                       +4.8%     +0.0%   -4.8%  Housing, advertising and price pressure
+  Operating cash flow margin change   -20.8bp  -510.0bp  -489.2bp  Programming costs outrun price increases
+  Capital intensity change           +70.8bp  +1270.0bp  +1199.2bp  Boxes and network spend rise with churn
+  Operating margin change            -19.0bp  -2440.0bp  -2421.0bp  Depreciation and costs on slower sales
+  Disruption theme: none live         +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$55  (model)  /  $40 (defined)
+  Bear probability (proxy model):  29.4%
+
+  KEY TRIGGER: video subscriber growth went from -0.7% (Q3 2014) to -0.9% (Q4 2014);
+  the bear case needs video losses that revenue growth (+4.8% now) and the
+  operating cash flow margin no longer absorb. DBS and phone-company video are the competition the 10-K names; pricing and
+  digital, Internet and phone growth are what must cover the video losses.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $2.93  (FY2015E: no EPS guide, FY14's $2.93 stands)
+  Min viable P/E at panic:          15x  [median of calendar-year P/E lows: 2005 69.1x, 2006 29.0x, 2007 23.8x, 2008 14.4x, 2009 10.1x, 2010 11.6x, 2011 12.5x, 2012 12.7x, 2013 15.3x, 2014 16.4x, 2015 18.1x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $44/share
+  Current $59 vs Updated EPP $44:  +34%  moderate distance to floor
+  Bear $40 vs Updated EPP $44:  -9%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Video subscriber growth                     -1.0       -0.1   BASE floor (vs -1 now)
+  Revenue growth                              10.0       +5.2   BASE floor (vs +5 now)
+  Operating cash flow margin change          -230.0     -209.2   BASE floor (vs -21 now)
+  Capital intensity change                   620.0     +549.2   BASE floor (vs +71 now)
+  Operating margin change                  -1210.0    -1191.0   BASE floor (vs -19 now)
+  Disruption theme: none live                  2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $2.93 × (1+5.4%)² = $3.26
+  At 18x P/E (conservative):  $59/share
+  + Cumul. dividends (2yr):  +$2.06/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $59  (▼0 from $59)
+  Conservative total return:  +3% over 2yr  = +1%/yr
+
+  5.4% EPS growth is what is left once the premium multiple (20.2x)
+  mean-reverts to 18x. Breakeven at 18x needs FY2017E EPS of $3.17,
+  i.e. 4.0%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $47.74  –  $60.70  (at 87th pct of range)
+  Annual dividend:      $1.00/share  (yield 1.7%)
+  Realized vol (1yr):   18% annualized
+  Beta vs broad market: 1.01
+  1-sigma range (1yr):  $48  –  $70  ($59 ± 18%)
+  2-sigma range (1yr):  $38  –  $81
+  ────────────────────────────────────────────────────────────
+  Bear $40 requires:  ~1.8σ price move  (unusual — requires fundamental break)
+  The largest U.S. cable operator with a 1.0 beta: the stock is +23% off its April
+  low while video subscriber growth went from -0.7% (Q3 2014) to -0.9% (Q4 2014).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        2.93  13.5x  $     40    29.4%     27.4%    +2.0pp  Flat EPS (worst year FY05-FY14, capped at 0%); P/E to its 10th pct
+  BASE        3.38  18.1x  $     61    52.7%     54.2%    -1.5pp  EPS +7.4%/yr (Q4 revenues + margin + buyback); P/E at its 10-yr median
+  BULL        5.06  29.7x  $    150    15.1%     15.5%    -0.4pp  EPS +31.5%/yr (FY05-FY14 CAGR); P/E holds its 75th pct
+  XBULL       8.67  42.7x  $    370     2.9%      2.9%    -0.1pp  EPS +72.0%/yr (best 2-yr run FY05-FY14); P/E at its 90th pct
+
+  Proxy EV (2yr): $77  /  Market EV: $78  /  Current: $59
+  Conservative EV (2yr, ④): $59 + $2.06 divs = $61 total value
+  Downside (→ Bear $40): 32.3%   Upside (→ Bull $150): 154.0%   Ratio B 0.21x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $59 the market needs $78 in two years —
+  between the BASE and BULL cases. That is a market composite of 1.83 against a model
+  read of 1.76: price and numbers roughly agree.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.21x     +34%    -0.07  FAIRLY VALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.09x     +34%    +0.47  MODESTLY UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.64x     +34%    -0.55  OVERVALUED / BUY
+  Scenario EPS +1.5pp/yr                          0.19x     +34%    +0.00  FAIRLY VALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.24x     +34%    -0.15  FAIRLY VALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.21x     +34%    +0.23  MODESTLY UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.21x     +12%    -0.07  FAIRLY VALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.21x     +34%    +0.10  FAIRLY VALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 2015 print (late April) — the next read on video subscribers (-0.9% now) and the guide
+  (2) Operating cash flow margin — -20.8bp in Q4 2014: programming costs against pricing, what must hold if subscribers do not
+  (3) A FY15 revenue guide in numbers — none yet
+  (4) Capital intensity — capital expenditures 12.5% of revenues in Q4 2014 (+70.8bp): set-top boxes and network against free cash flow
+  (5) Capital return at 20x — In 2014, 80.6 million common shares repurchased for $4.25 billion; $4.25 billion planned for 2015; the dividend raised 11.1% to $1.00 a year: management's own read of the multiple
+  ◉ BUY  |  EPP floor $44  |  ADD below ~$52  |  TRIM above $150
+════════════════════════════════════════════════════════════════════════
+

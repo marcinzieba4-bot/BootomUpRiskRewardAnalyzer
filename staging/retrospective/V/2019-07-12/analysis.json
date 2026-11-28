@@ -1,0 +1,310 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "V",
+ "company": "Visa Inc.",
+ "as_of": "2019-07-12",
+ "price_date": "2019-07-12",
+ "price": 180.33,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); revenue, net-to-gross, expense, receivables and operating-margin signals with Visa's rule-T thresholds",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'Visa is a global payments technology company that enables fast, secure and reliable electronic payments across more than 200 countries and territories.' 'Our business is affected by overall economic conditions and consumer spending.' 'We face intense competition in our industry.'; no 10-K calls the business cyclical (the economy and spending are a 'why', not the company's own label: the LOW, SHW and JPM reading), so the kind is DURABLE",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "'Visa is a global payments technology company that enables fast, secure and reliable electronic payments across more than 200 countries and territories.' 'Our business is affected by overall economic conditions and consumer spending.' 'We face intense competition in our industry.'; no 10-K calls the business cyclical (the economy and spending are a 'why', not the company's own label: the LOW, SHW and JPM reading), so the kind is DURABLE. durable franchise (obsolescence risk 2/5); price rich; Ratio B 32.51x; +96% to EPP floor; model-vs-market gap -2.47; conservative 2yr -29%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": 32.51,
+  "ratio_b_fmt": "32.51x",
+  "epp": 92.2,
+  "epp_gap_pct": 95.6,
+  "epp_adj": -0.1,
+  "proxy_composite": 1.65,
+  "sca": -0.094,
+  "adj_composite": 1.456,
+  "market_composite": 3.93,
+  "adj_gap": -2.47,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": -28.6,
+  "scenarios": {
+   "BEAR": {
+    "eps": 4.61,
+    "pe": 16.2,
+    "price": 74.68,
+    "desc": "EPS +0.0%/yr (worst year FY09-FY18, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 5.71,
+    "pe": 23.7,
+    "price": 135.33,
+    "desc": "EPS +11.3%/yr (Q2 revenue YoY + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 6.85,
+    "pe": 26.8,
+    "price": 183.58,
+    "desc": "EPS +21.9%/yr (FY09-FY18 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 7.48,
+    "pe": 29.6,
+    "price": 221.41,
+    "desc": "EPS +27.4%/yr (best 2-yr run FY09-FY18, at least BULL); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 32.51,
+   "epp_gap_pct": 95.6,
+   "adj_gap": -2.47,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -28.6,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 3.95,
+   "epp_gap_pct": 95.6,
+   "adj_gap": -1.87,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -28.6,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 95.6,
+   "adj_gap": -2.47,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -28.6,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 11.75,
+   "epp_gap_pct": 95.6,
+   "adj_gap": -2.31,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -28.6,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 95.6,
+   "adj_gap": -2.31,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -28.6,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 32.51,
+   "epp_gap_pct": 95.6,
+   "adj_gap": -2.17,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -28.6,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 32.51,
+   "epp_gap_pct": 70.1,
+   "adj_gap": -2.47,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -28.6,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 32.51,
+   "epp_gap_pct": 95.6,
+   "adj_gap": -2.47,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -28.6,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "RICH"
+ ],
+ "summary": "V (retrospective, 2019-07-12) ✕ AVOID — Ratio B 32.51x (58.6% downside to Bear $74.68 / +1.8% upside to Bull $183.58) | Adj composite 1.46 vs market 3.93: gap -2.47 [OVERVALUED] | +96% above the EPP floor $92.20 (20x FY19E $4.61) | Conservative 2-yr case: -28.6% total (-14.3%/yr) | At 39.1x FY19E the 15% hurdle price $238.49 sits above the BULL case; revenue +8.3% YoY in Q2 FY19, forward revenues +8.3% (Q2 FY19 revenue growth (no FY19 revenue range)); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "V120",
+   "published": "2018-11-19",
+   "filed": "accepted 2018-11-16 16:10 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-K for the fiscal year ended September 30, 2018",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316118000055/v093018.htm",
+   "supports": "fiscal 2018 statements of operations and cash flows, selected data, diluted class A EPS and shares, the company's figures in the MD&A, Item 1, 1A and 5 wording"
+  },
+  {
+   "id": "V61",
+   "published": "2011-11-18",
+   "filed": "accepted 2011-11-17 19:39 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-K for the fiscal year ended September 30, 2011",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312511315956/d218694d10k.htm",
+   "supports": "fiscal 2011 statements of operations and cash flows, selected data, diluted class A EPS and shares, the company's adjusted figures where the MD&A gives them, Item 1, 1A and 5 wording"
+  },
+  {
+   "id": "V62",
+   "published": "2012-11-16",
+   "filed": "accepted 2012-11-15 20:15 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-K for the fiscal year ended September 30, 2012",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000138410812000011/v09301210-k.htm",
+   "supports": "fiscal 2012 statements of operations and cash flows, selected data, diluted class A EPS and shares, the company's adjusted figures where the MD&A gives them, Item 1, 1A and 5 wording"
+  },
+  {
+   "id": "V63",
+   "published": "2013-11-22",
+   "filed": "accepted 2013-11-21 19:53 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-K for the fiscal year ended September 30, 2013",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316113000011/v09301310-k.htm",
+   "supports": "fiscal 2013 statements of operations and cash flows, selected data, diluted class A EPS and shares, the company's adjusted figures where the MD&A gives them, Item 1, 1A and 5 wording"
+  },
+  {
+   "id": "V64",
+   "published": "2014-11-21",
+   "filed": "accepted 2014-11-20 18:57 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-K for the fiscal year ended September 30, 2014",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316114000017/v09301410-k.htm",
+   "supports": "fiscal 2014 statements of operations and cash flows, selected data, diluted class A EPS and shares, the company's adjusted figures in the MD&A, Item 1, 1A and 5 wording"
+  },
+  {
+   "id": "V65",
+   "published": "2015-11-20",
+   "filed": "accepted 2015-11-19 18:24 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-K for the fiscal year ended September 30, 2015",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316115000013/v093015.htm",
+   "supports": "fiscal 2015 statements of operations and cash flows, selected data, diluted class A EPS and shares, the company's adjusted figures in the MD&A, Item 1, 1A and 5 wording"
+  },
+  {
+   "id": "V66",
+   "published": "2016-11-16",
+   "filed": "accepted 2016-11-15 16:44 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-K for the fiscal year ended September 30, 2016",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316116000058/v093016.htm",
+   "supports": "fiscal 2016 statements of operations and cash flows, selected data, diluted class A EPS and shares, the company's adjusted figures in the MD&A, Item 1, 1A and 5 wording"
+  },
+  {
+   "id": "V67",
+   "published": "2017-11-17",
+   "filed": "accepted 2017-11-16 20:07 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-K for the fiscal year ended September 30, 2017",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316117000044/v093017.htm",
+   "supports": "fiscal 2017 statements of operations and cash flows, selected data, diluted class A EPS and shares, the company's adjusted figures in the MD&A, Item 1, 1A and 5 wording"
+  },
+  {
+   "id": "V133",
+   "published": "2018-10-25",
+   "filed": "accepted 2018-10-24 16:05 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q4 2018 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316118000052/fy18q4pressrelease10.htm",
+   "supports": "Q4 FY18 revenues, client incentives, expenses, operating income, diluted class A EPS and shares against the year-ago quarter and the fiscal year; receivables, cash and debt; the financial outlook"
+  },
+  {
+   "id": "V132",
+   "published": "2018-07-26",
+   "filed": "accepted 2018-07-25 16:05 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q3 2018 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316118000030/vex991earningsrelease630.htm",
+   "supports": "Q3 FY18 revenues, client incentives, expenses, operating income, diluted class A EPS and shares against the year-ago quarter; receivables, cash and debt; the financial outlook"
+  },
+  {
+   "id": "V134",
+   "published": "2019-01-31",
+   "filed": "accepted 2019-01-30 16:05 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q1 2019 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316119000002/fy19q1pressrelease.htm",
+   "supports": "Q1 FY19 revenues, client incentives, expenses, operating income, diluted class A EPS and shares against the year-ago quarter; receivables, cash and debt; the financial outlook"
+  },
+  {
+   "id": "V150",
+   "published": "2018-02-02",
+   "filed": "accepted 2018-02-01 16:15 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-Q for the quarter ended December 31, 2017",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316118000009/v123117form10q.htm",
+   "supports": "the quarter's statements and accounts receivable at its quarter end (checked against the release; the year-ago balance for the Q1 FY19 print)"
+  },
+  {
+   "id": "V130",
+   "published": "2018-02-02",
+   "filed": "accepted 2018-02-01 16:11 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q1 2018 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316118000008/vex991earningsrelease123.htm",
+   "supports": "Q1 FY18 revenues, client incentives, expenses, operating income, diluted class A EPS and shares against the year-ago quarter; receivables, cash and debt; the financial outlook"
+  },
+  {
+   "id": "V135",
+   "published": "2019-04-25",
+   "filed": "accepted 2019-04-24 16:04 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q2 2019 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316119000014/fy19q2pressreleasefinal.htm",
+   "supports": "Q2 FY19 revenues, client incentives, expenses, operating income, diluted class A EPS and shares against the year-ago quarter; receivables, cash and debt; the financial outlook"
+  },
+  {
+   "id": "V151",
+   "published": "2018-04-30",
+   "filed": "accepted 2018-04-27 16:06 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 10-Q for the quarter ended March 31, 2018",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316118000020/v33118form10q.htm",
+   "supports": "the quarter's statements and accounts receivable at its quarter end (checked against the release; the year-ago balance for the Q2 FY19 print)"
+  },
+  {
+   "id": "V131",
+   "published": "2018-04-26",
+   "filed": "accepted 2018-04-25 16:05 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q2 2018 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316118000018/vex991earningsrelease033.htm",
+   "supports": "Q2 FY18 revenues, client incentives, expenses, operating income, diluted class A EPS and shares against the year-ago quarter; receivables, cash and debt; the financial outlook"
+  },
+  {
+   "id": "V170",
+   "published": "2018-10-18",
+   "filed": "accepted 2018-10-17 16:33 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. 8-K: quarterly dividend declared, rate up 19% (ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316118000047/vex99110172018.htm",
+   "supports": "the declared quarterly dividend, $0.25 a class A share"
+  },
+  {
+   "id": "V84",
+   "published": "2015-01-30",
+   "filed": "accepted 2015-01-29 16:08 ET (after the 16:00 ET close)",
+   "title": "Visa Inc. fiscal Q1 2015 results (8-K ex.99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000119312515025534/d858600dex991.htm",
+   "supports": "Q1 FY15 revenues, client incentives, expenses, operating income, diluted class A EPS and shares against the year-ago quarter; receivables, cash and debt; the financial outlook"
+  },
+  {
+   "id": "Y0",
+   "published": "2019-07-12",
+   "title": "Yahoo Finance daily prices, V and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/V/history",
+   "supports": "close $180.33 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution from 2009-07-13"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-20"
+}

@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "CHTR",
+ "as_of": "2021-12-31",
+ "computed": "2026-11-27",
+ "data_source": "Yahoo Finance daily closes + dividends (CHTR, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2022-06-30",
+   "price": 468.53,
+   "dividends": 0,
+   "total_return_pct": -28.1,
+   "benchmark_total_return_pct": -20.0,
+   "excess_pct": -8.2,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2022-12-30",
+   "price": 339.1,
+   "dividends": 0,
+   "total_return_pct": -48.0,
+   "benchmark_total_return_pct": -18.2,
+   "excess_pct": -29.8,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2023-12-29",
+   "price": 388.68,
+   "dividends": 0,
+   "total_return_pct": -40.4,
+   "benchmark_total_return_pct": 2.8,
+   "excess_pct": -43.2,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2024-12-30",
+   "price": 343.18,
+   "dividends": 0,
+   "total_return_pct": -47.4,
+   "benchmark_total_return_pct": 28.1,
+   "excess_pct": -75.4,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2022-01-03",
+   "price": 647.58
+  },
+  "low": {
+   "date": "2022-09-30",
+   "price": 303.35
+  },
+  "max_drawdown_pct": -53.5,
+  "return_to_avg_price_m12_m24_pct": -41.0
+ },
+ "scenario_landing_2y": "BEAR",
+ "call_check_2y": {
+  "expectation": "CHEAP: should clear the hurdle or beat the benchmark",
+  "hit": false
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "DURABLE",
+   "risk": 2
+  },
+  "today": {
+   "kind": "STRUCTURAL",
+   "risk": 4,
+   "why": "Cable broadband losing share to fixed-wireless/fiber, video in secular decline, high leverage",
+   "reviewed": "2026-09-22"
+  }
+ }
+}

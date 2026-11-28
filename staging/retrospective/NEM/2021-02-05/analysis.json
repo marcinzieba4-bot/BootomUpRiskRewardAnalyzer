@@ -1,0 +1,270 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "NEM",
+ "company": "Newmont Corporation",
+ "as_of": "2021-02-05",
+ "price_date": "2021-02-05",
+ "price": 59.3,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); gold-miner signals with Newmont's rule-T thresholds",
+ "pit_profile": {
+  "kind": "CYCLICAL",
+  "risk": 2,
+  "why": "'Newmont is the world’s leading gold company and is the only gold company included in the S&P 500 Index and Fortune 500.' 'Our business is dependent on the prices of gold, silver, copper, zinc and lead, which fluctuate on a daily basis and are affected by numerous factors beyond our control.' 'A substantial or extended decline in gold, silver, copper, zinc or lead prices would have a material adverse effect on us.' 'The metals markets are cyclical' (the FY2019 10-K's own words; it calls the metals markets it sells into cyclical, so CYCLICAL, the CB rule); no disruption theme in the registry is live for a gold miner on this date (of the live themes, OFFSHORE is scoped to 'lower-cost offshore delivery (Indian IT services) takes share and price from Western consulting, systems integration and outsourcing', CLOUD to 'public cloud displaces on-premise hardware, storage, legacy databases and data-center outsourcing', ECOMMERCE to 'e-commerce (Amazon effect) displaces physical retail, malls, grocery, distribution', STREAMING to 'cord-cutting / streaming displaces linear TV networks and pay-TV bundles', ENERGY_TRANSITION to 'decarbonisation strands oil, gas and coal reserves and refining', EV to 'battery-electric vehicles displace ICE powertrains, auto parts suppliers and fuel retail', CRYPTO to 'crypto / DeFi disintermediates payments networks, banks, exchanges, remittance': none names a miner), so the watch list is empty; Newmont holds no oil, gas or coal reserves and no refining, so ENERGY_TRANSITION is read as out of scope, and the 10-K's own climate words are a cost, not a stranded reserve: 'Legislation and increased regulation and requirements regarding climate change are resulting in increased costs on us, our venture partners and our suppliers, including increased energy, capital equipment, environmental monitoring and reporting and other costs to comply with such regulations.' (the FY2019 10-K's risk factor) (text only)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "TOO MUCH CYCLE RISK",
+  "quality_label": "✕ TOO MUCH CYCLE RISK",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "CYCLICAL",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "'Newmont is the world’s leading gold company and is the only gold company included in the S&P 500 Index and Fortune 500.' 'Our business is dependent on the prices of gold, silver, copper, zinc and lead, which fluctuate on a daily basis and are affected by numerous factors beyond our control.' 'A substantial or extended decline in gold, silver, copper, zinc or lead prices would have a material adverse effect on us.' 'The metals markets are cyclical' (the FY2019 10-K's own words; it calls the metals markets it sells into cyclical, so CYCLICAL, the CB rule); no disruption theme in the registry is live for a gold miner on this date (of the live themes, OFFSHORE is scoped to 'lower-cost offshore delivery (Indian IT services) takes share and price from Western consulting, systems integration and outsourcing', CLOUD to 'public cloud displaces on-premise hardware, storage, legacy databases and data-center outsourcing', ECOMMERCE to 'e-commerce (Amazon effect) displaces physical retail, malls, grocery, distribution', STREAMING to 'cord-cutting / streaming displaces linear TV networks and pay-TV bundles', ENERGY_TRANSITION to 'decarbonisation strands oil, gas and coal reserves and refining', EV to 'battery-electric vehicles displace ICE powertrains, auto parts suppliers and fuel retail', CRYPTO to 'crypto / DeFi disintermediates payments networks, banks, exchanges, remittance': none names a miner), so the watch list is empty; Newmont holds no oil, gas or coal reserves and no refining, so ENERGY_TRANSITION is read as out of scope, and the 10-K's own climate words are a cost, not a stranded reserve: 'Legislation and increased regulation and requirements regarding climate change are resulting in increased costs on us, our venture partners and our suppliers, including increased energy, capital equipment, environmental monitoring and reporting and other costs to comply with such regulations.' (the FY2019 10-K's risk factor) (text only). cyclical (obsolescence risk 2/5); price rich; Ratio B 3.24x; +111% to EPP floor; model-vs-market gap -1.97; conservative 2yr -47%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": 3.24,
+  "ratio_b_fmt": "3.24x",
+  "epp": 28.16,
+  "epp_gap_pct": 110.6,
+  "epp_adj": -0.2,
+  "proxy_composite": 2.05,
+  "sca": 0.108,
+  "adj_composite": 1.957,
+  "market_composite": 3.93,
+  "adj_gap": -1.97,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": -46.9,
+  "scenarios": {
+   "BEAR": {
+    "eps": 1.28,
+    "pe": 12.7,
+    "price": 16.26,
+    "desc": "Flat EPS (no EPS change in FY10-FY14 ex-FY11 ex-FY13 to measure: the 0% cap); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 1.62,
+    "pe": 18.8,
+    "price": 30.46,
+    "desc": "EPS +12.6%/yr (Q3 revenue YoY + margin + buyback); P/E at its 9.1-yr ex-FY11 ex-FY13 ex-FY15 ex-FY16 ex-FY17 ex-FY18 ex-FY19 median"
+   },
+   "BULL": {
+    "eps": 1.62,
+    "pe": 44.8,
+    "price": 72.58,
+    "desc": "EPS +12.6%/yr (FY10-FY14 ex-FY11 ex-FY13 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 1.62,
+    "pe": 49.2,
+    "price": 79.7,
+    "desc": "EPS +12.6%/yr (best 2-yr run FY10-FY14 ex-FY11 ex-FY13, at least BULL); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 3.24,
+   "epp_gap_pct": 110.6,
+   "adj_gap": -1.97,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -46.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 1.98,
+   "epp_gap_pct": 110.6,
+   "adj_gap": -1.08,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -46.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 110.6,
+   "adj_gap": -1.81,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -46.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 2.75,
+   "epp_gap_pct": 110.6,
+   "adj_gap": -1.81,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -46.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 3.91,
+   "epp_gap_pct": 110.6,
+   "adj_gap": -1.84,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -46.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 3.24,
+   "epp_gap_pct": 110.6,
+   "adj_gap": -1.67,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -46.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 3.24,
+   "epp_gap_pct": 85.3,
+   "adj_gap": -1.87,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -46.9,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 3.24,
+   "epp_gap_pct": 110.6,
+   "adj_gap": -1.49,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -46.9,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "RICH"
+ ],
+ "summary": "NEM (retrospective, 2021-02-05) ✕ AVOID — Ratio B 3.24x (72.6% downside to Bear $16.26 / +22.4% upside to Bull $72.58) | Adj composite 1.96 vs market 3.93: gap -1.97 [OVERVALUED] | +111% above the EPP floor $28.16 (22x FY20E $1.28) | Conservative 2-yr case: -46.9% total (-23.5%/yr) | At 46.3x FY20E the 15% hurdle price $78.42 sits above the BULL case; revenue +16.8% YoY in Q3 2020, forward revenues +16.8% (Q3 2020 revenue growth (no revenue guide)); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "NM76",
+   "published": "2020-02-20",
+   "filed": "accepted 2020-02-20 07:08 ET, before the open",
+   "title": "Newmont FY2019 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1164727/000155837020001041/0001558370-20-001041.txt",
+   "supports": "history vintage FY2019 (Item 6 selected data, the statements, the results and highlights table); the 'why'; Q4 quarterly data (diluted shares)"
+  },
+  {
+   "id": "NM51",
+   "published": "2015-02-20",
+   "filed": "accepted 2015-02-19 21:44 ET, after the close: counts from 2015-02-20",
+   "title": "Newmont FY2014 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1164727/000156459015000777/0001564590-15-000777.txt",
+   "supports": "history vintage FY2014 (Item 6 selected data, the statements, the MD&A key results); the 'why'; Q4 quarterly data (diluted shares)"
+  },
+  {
+   "id": "NM53",
+   "published": "2017-02-22",
+   "filed": "accepted 2017-02-21 17:29 ET, after the close: counts from 2017-02-22",
+   "title": "Newmont FY2016 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1164727/000155837017000729/0001558370-17-000729.txt",
+   "supports": "history vintage FY2016 (Item 6 selected data, the statements, the MD&A key results); the 'why'; Q4 quarterly data (diluted shares)"
+  },
+  {
+   "id": "NM75",
+   "published": "2019-02-21",
+   "filed": "accepted 2019-02-21 07:08 ET, before the open",
+   "title": "Newmont FY2018 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1164727/000155837019000806/0001558370-19-000806.txt",
+   "supports": "history vintage FY2018 (Item 6 selected data, the statements, the results and highlights table); the 'why'; Q4 quarterly data (diluted shares)"
+  },
+  {
+   "id": "NM52",
+   "published": "2016-02-18",
+   "filed": "accepted 2016-02-17 17:05 ET, after the close: counts from 2016-02-18",
+   "title": "Newmont FY2015 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1164727/000155837016003258/0001558370-16-003258.txt",
+   "supports": "history vintage FY2015 (Item 6 selected data, the statements, the MD&A key results); the 'why'; Q4 quarterly data (diluted shares)"
+  },
+  {
+   "id": "NM78",
+   "published": "2018-04-26",
+   "filed": "accepted 2018-04-25 21:02 ET, after the close: counts from 2018-04-26",
+   "title": "Newmont 8-K of 2018-04-26 (the FY2017 10-K's Items 1, 2, 6, 7 and 8 re-filed: ASU 2016-15, reclamation liability corrections)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1164727/000155837018003282/0001558370-18-003282.txt",
+   "supports": "history vintage FY2017 recast (Item 6 selected data, the statements, the results and highlights table)"
+  },
+  {
+   "id": "NM31",
+   "published": "2013-02-22",
+   "filed": "accepted 2013-02-22 06:12 ET, before the open",
+   "title": "Newmont FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1164727/000119312513070256/0001193125-13-070256.txt",
+   "supports": "history vintage FY2012 (Item 6 selected data, the statements, the MD&A key results); the 'why'; Q4 quarterly data (sales, diluted EPS from continuing operations, diluted shares)"
+  },
+  {
+   "id": "NM54",
+   "published": "2014-06-13",
+   "filed": "accepted 2014-06-13 15:56 ET, during the session",
+   "title": "Newmont 8-K of 2014-06-13 (the FY2013 10-K's Items 6-8 recast: segments, deferred tax assets, stockpiles)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1164727/000119312514236178/0001193125-14-236178.txt",
+   "supports": "history vintage FY2013 recast (Item 6 selected data, the statements, the MD&A key results)"
+  },
+  {
+   "id": "NM87",
+   "published": "2020-02-20",
+   "filed": "accepted 2020-02-20 06:56 ET, before the open",
+   "title": "Newmont Q4 2019 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1164727/000115752320000234/0001157523-20-000234.txt",
+   "supports": "Q4 2019: sales, consolidated gold ounces sold, costs applicable to sales per ounce, pre-tax income, diluted EPS from continuing operations, cash and debt"
+  },
+  {
+   "id": "NM88",
+   "published": "2020-05-05",
+   "filed": "accepted 2020-05-05 06:30 ET, before the open",
+   "title": "Newmont Q1 2020 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1164727/000115752320000647/0001157523-20-000647.txt",
+   "supports": "Q1 2020: sales, consolidated gold ounces sold, costs applicable to sales per ounce, pre-tax income, diluted EPS from continuing operations, cash and debt"
+  },
+  {
+   "id": "NM89",
+   "published": "2020-07-30",
+   "filed": "accepted 2020-07-30 06:30 ET, before the open",
+   "title": "Newmont Q2 2020 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1164727/000115752320001062/0001157523-20-001062.txt",
+   "supports": "Q2 2020: sales, consolidated gold ounces sold, costs applicable to sales per ounce, pre-tax income, diluted EPS from continuing operations, cash and debt"
+  },
+  {
+   "id": "NM90",
+   "published": "2020-10-29",
+   "filed": "accepted 2020-10-29 07:36 ET, before the open",
+   "title": "Newmont Q3 2020 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1164727/000115752320001374/0001157523-20-001374.txt",
+   "supports": "Q3 2020: sales, consolidated gold ounces sold, costs applicable to sales per ounce, pre-tax income, diluted EPS from continuing operations, cash and debt"
+  },
+  {
+   "id": "NM11",
+   "published": "2007-02-26",
+   "filed": "accepted 2007-02-23 18:17 ET, after the close: counts from 2007-02-26",
+   "title": "Newmont FY2006 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1164727/000119312507038537/0001193125-07-038537.txt",
+   "supports": "history: 2002-2003 diluted EPS from continuing operations and revenues; rule T: 2003 and 2004 revenue changes, 2005 and 2006 ounce and cost changes; the 'why'"
+  },
+  {
+   "id": "Y0",
+   "published": "2021-02-05",
+   "title": "Yahoo Finance daily prices, NEM and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/NEM/history",
+   "supports": "close $59.30 as traded on AS_OF, 52-week range, realized vol, beta, the 9.1-yr ex-FY11 ex-FY13 ex-FY15 ex-FY16 ex-FY17 ex-FY18 ex-FY19 P/E distribution from 2012-01-03"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-27"
+}

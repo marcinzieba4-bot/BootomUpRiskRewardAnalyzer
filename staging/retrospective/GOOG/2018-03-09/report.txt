@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  GOOG  ·  Alphabet Inc.  ·  $1,160.04  ·  RETROSPECTIVE as of 2018-03-09
+  Signal: ✕ AVOID   Ratio B: infx   Adj gap: -2.20  [OVERVALUED]
+  Point-in-time: 12 sources, latest published 2018-03-09; latest print Q4 2017 (Feb 1)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2018E revenue, USD bn  →  FY2020E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2018E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Google properties             $ 96.46  $96.46  $138.45    +0.00   +41.99
+    +22.0% revenue in FY17
+  Google Network Members' prop  $ 21.81  $21.81  $31.30    +0.00    +9.49
+    +12.8% revenue in FY17
+  Google other revenues         $ 17.70  $17.70  $25.41    +0.00    +7.71
+    +41.6% revenue in FY17
+  Other Bets                    $  1.49  $ 1.49  $ 2.14    +0.00    +0.65
+    +48.7% revenue in FY17
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $137.46  $137.46  $197.30    +0.00   +59.84
+  FY2018E = FY17 $110.855B × (1 + 24.0%: the Q4 2017 revenue growth (no Q1 2018 guide), YoY, applied to the year (no FY18 revenue guide)); split pro rata to FY17 revenues by type (FY17 growth)
+  Q4 2017 (Feb 1): revenue $32.323B +24.0% YoY (+16.4% QoQ); receivables +29.7%; R&D + S&M + G&A +18.6%;
+  gross margin 55.86% (-323.6bp); operating margin 23.71% (-176.1bp); EPS $9.70 vs $7.56
+  Revenue: revenues $32,323.0M vs $26,064.0M a year earlier, $27,772.0M the quarter before (Google properties $22,237.0M, Google Network $4,990.0M, Google other $4,687.0M, Other Bets $409.0M); paid clicks as published: 'Aggregate paid clicks | 43% | 18%' (year on year, quarter on quarter); accounts receivable $18,336.0M (2017-12-31) vs $14,137.0M a year earlier (the release's December 31, 2016 column); the company's diluted EPS excluding the impact of the Tax Act $9.70 vs $7.56 (GAAP $(4.35), every class); diluted shares 694.6M; employees: 'Number of employees | 72,053 | 80,110'; TAC: 'Total TAC as % of Google advertising revenues | 22% | 24%'; the quarter's EPS is the company's figure excluding the Tax Act (the ACN rule): 'The Tax Act was enacted on December 22, 2017 and resulted in additional tax expense of $9.9 billion in the fourth quarter of 2017 primarily due to the one-time transition tax on accumulated foreign subsidiary earnings and deferred tax impacts.'; FY2017 GAAP $18.00 (the year's listed one-offs, the Tax Act's $9,857.0M and the EC fine's $2,736.0M, are $12,593.0M against $12,662.0M of net income: the AAPL FY2002 test is not met, and no figure for the year without them is published); the release's FY operating income without the EC fine is $28,882.0M (GAAP $26,146.0M, display)
+  Q1 2018: no revenue, EPS or margin guide in numbers in any filing; the latest quarter's revenue growth stands in (the UNP rule); in words only, the FY17 10-K: 'Our revenue growth rate could decline over time, and we anticipate downward pressure on our operating margin in the future.' (display only); the releases estimate stock-based compensation, dilution and capital expenditure, which method r2 has no input for
+
+  FY2018E EPS check:  $137.460B × 24.5% pre-tax × (1−53.4%) ÷ 0.695B  =  $22.60  (FY2018E: no EPS guide in numbers, FY17's $18.00 stands)
+  FY2020E BEAR check: $137.460B × 24.5% ÷ 0.710B  =  $22.10  (scenario $7.52)
+  FY2020E BULL check: $197.300B × 24.9% ÷ 0.710B  =  $32.24  (scenario $27.17)
+  Every 1pp of pre-tax margin ≈ $0.921 EPS ≈ $21.47/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Revenue growth                        -88.0%    ≥73.0%   ≥234.0%  ≥8585.0%    +24.0%  ⚠ BEAR  █░░░
+  Gross margin change                 -2910.0bp  ≥-1350.0bp  ≥210.0bp  ≥38090.0bp  -323.6bp  ◦ BASE  ██░░
+  Opex growth less revenue            +183.0pp   ≤72.0pp  ≤-38.0pp  ≤-8252.0pp    -5.4pp  ◦ BASE  ██░░
+  Receivables growth less revenue      +55.0pp   ≤28.0pp    ≤2.0pp  ≤-84.0pp    +5.7pp  ◦ BASE  ██░░
+  Operating margin change             -5090.0bp  ≥-1910.0bp  ≥1280.0bp  ≥288470.0bp  -176.1bp  ◦ BASE  ██░░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.80 / 4.00
+  Market composite:   3.77 / 4.00  (back-solved from $1,160.04 + 15% hurdle)
+  SCA adjustment:    +0.07  ·  EPP-distance adj -0.30  →  Adj composite 1.57  →  Gap -2.20  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY17 revenues +22.8%, gross margin 58.9%; Q4 gross margin 55.86% (-324bp YoY)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 64.4x FY18E vs a 23.3x 10-yr median (100th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: Q4 2017 revenue growth (no Q1 2018 guide) +24% vs a 20.6% 9-yr median  (+0.34 × 20%  =  +0.068)
+    +  Cash, cash equivalents and marketable securities $101.871B, long-term debt $3,969.0M (no short-term debt line) (Q4 2017), FY17 free cash flow $23.907B (cash from operations $37,091.0M less purchases of property and equipment $13,184.0M), no dividend  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Revenue growth                        +24.0%    -88.0%  -112.0%  Advertisers cut budgets: fewer paid c…
+  Gross margin change                 -323.6bp  -2910.0bp  -2586.4bp  Traffic acquisition and data-center c…
+  Opex growth less revenue              -5.4pp  +183.0pp  +188.4pp  Hiring and R&D do not slow with revenue
+  Receivables growth less revenue       +5.7pp   +55.0pp  +49.3pp  Advertisers pay more slowly: collecti…
+  Operating margin change             -176.1bp  -5090.0bp  -4913.9bp  Operating leverage works in reverse
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$292.22  (model)  /  $133.86 (defined)
+  Bear probability (proxy model):  29.4%
+
+  KEY TRIGGER: revenue went from +23.7% (Q3 2017) to +24.0% YoY (Q4 2017), +16.4% on the quarter before;
+  the bear case needs a downturn in gross margin (-323.6bp now)
+  and receivables (+5.7pp against revenue) giving way. An advertising slowdown shows up in paid clicks and revenue growth first;
+  the bear needs it in gross margin as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $18.00  (FY2018E: no EPS guide in numbers, FY17's $18.00 stands)
+  Min viable P/E at panic:          19x  [median of calendar-year P/E lows: 2008 19.3x, 2009 13.8x, 2010 16.5x, 2011 16.0x, 2012 16.2x, 2013 18.0x, 2014 24.9x, 2015 20.2x, 2016 24.0x, 2017 43.7x, 2018 55.6x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $342.00/share
+  Current $1,160.04 vs Updated EPP $342.00:  +239%  ⚠ far above floor — large drawdown room
+  Bear $133.86 vs Updated EPP $342.00:  -61%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.30 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Revenue growth                                73.0      +49.0   BASE floor (vs +24 now)
+  Gross margin change                        -1350.0    -1026.4   BASE floor (vs -324 now)
+  Opex growth less revenue                      72.0      +77.4   BASE floor (vs -5 now)
+  Receivables growth less revenue               28.0      +22.3   BASE floor (vs +6 now)
+  Operating margin change                    -1910.0    -1733.9   BASE floor (vs -176 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $18.00 × (1+20.9%)² = $26.30
+  At 23x P/E (conservative):  $604.81/share
+  + Cumul. dividends (2yr):  +$0.00/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $604.81  (▼555.23 from $1,160.04)
+  Conservative total return:  -48% over 2yr  = -24%/yr
+
+  20.9% EPS growth is what is left once the premium multiple (64.4x)
+  mean-reverts to 23x. Breakeven at 23x needs FY2020E EPS of $50.44,
+  i.e. 67.4%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $803.37  –  $1,186.89  (at 93th pct of range)
+  Annual dividend:      $0.00/share  (yield 0.0%)
+  Realized vol:         19% annualized (1-yr daily log returns)
+  Beta vs broad market: 1.36
+  1-sigma range (1yr):  $936.15  –  $1,383.93  ($1,160.04 ± 19%)
+  2-sigma range (1yr):  $712.26  –  $1,607.82
+  ────────────────────────────────────────────────────────────
+  Bear $133.86 requires:  ~4.6σ price move  (unusual — requires fundamental break)
+  An advertising business whose revenue follows advertisers' budgets: the stock is +42% off its March
+  low (52 weeks) while revenue went from +23.7% (Q3 2017) to +24.0% YoY (Q4 2017), +16.4% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        7.52   17.8x  $ 133.86    29.4%      1.2%   +28.2pp  EPS -35.4%/yr (worst year FY08-FY17, capped at 0%); P/E to its 10th pct
+  BASE       27.17   23.3x  $ 633.06    52.7%      4.3%   +48.4pp  EPS +22.9%/yr (Q4 revenue YoY + margin + buyback); P/E at its 10-yr median
+  BULL       27.17   28.6x  $ 777.06    15.1%     15.0%    +0.1pp  EPS +22.9%/yr (FY08-FY17 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL      35.59   46.1x  $1,640.70     2.9%     79.5%   -76.6pp  EPS +40.6%/yr (best 2-yr run FY08-FY17, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $536.79  /  Market EV: $1,449.19  /  Current: $1,160.04
+  Conservative EV (2yr, ④): $604.81 + $0.00 divs = $604.81 total value
+  Downside (→ Bear $133.86): 88.5%   Upside (→ Bull $777.06): -33.0%   Ratio B infx  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $1,160.04 the market needs $1,534.15 in two years —
+  above the BULL case. That is a market composite of 3.77 against a model
+  read of 1.57: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                        infx    +239%    -2.20  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)    10.91x    +239%    -1.60  OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx    +239%    -2.36  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                           infx    +239%    -2.20  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                           infx    +239%    -2.20  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)              infx    +239%    -1.90  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                  infx    +193%    -2.10  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                     infx    +239%    -2.10  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 2018 print (the quarter ends in March) — revenue against the Q4 2017 revenue growth (no Q1 2018 guide): +24% YoY
+  (2) Gross margin — -323.6bp in Q4 2017: traffic acquisition and data-center costs against revenue, what must hold if revenue does not
+  (3) A Q1 2018 revenue guide — none: Google gives no revenue, EPS or margin outlook in any filing; aggregate paid clicks and traffic acquisition costs are in each release
+  (4) Receivables — +29.7% against revenue +24.0% in Q4 2017 (+5.7pp): advertisers paying more slowly would show here first
+  (5) Capital structure at 64x — repurchases of capital stock $2,101.0M in Q4 2017 (the cash flow statement); 'On January 31, 2018, the Board of Directors (Board) of Alphabet authorized the company to repurchase up to an additional $8,589,869,056 of its Class C capital stock.'; no dividend
+  ✕ AVOID  |  EPP floor $342.00  |  ADD below ~$538.10  |  TRIM above $777.06
+════════════════════════════════════════════════════════════════════════
+

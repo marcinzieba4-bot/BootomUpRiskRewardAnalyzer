@@ -1,0 +1,230 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "BMY",
+ "company": "Bristol-Myers Squibb Company",
+ "as_of": "2023-04-21",
+ "price_date": "2023-04-21",
+ "price": 70.49,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); pharmaceutical signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'is a global biopharmaceutical company whose mission is to discover, develop and deliver innovative medicines that help patients prevail over serious diseases.' (FY2022 10-K, Item 7); 'We face intense competition from other manufacturers and expect to see increasing market penetration of lower-priced generic products.' (Item 1A heading); 'We could lose market exclusivity of a product earlier than expected.' (Item 1A heading); 'We depend on several key products for most of our revenues, cash flows and earnings.' (Item 1A heading)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "'is a global biopharmaceutical company whose mission is to discover, develop and deliver innovative medicines that help patients prevail over serious diseases.' (FY2022 10-K, Item 7); 'We face intense competition from other manufacturers and expect to see increasing market penetration of lower-priced generic products.' (Item 1A heading); 'We could lose market exclusivity of a product earlier than expected.' (Item 1A heading); 'We depend on several key products for most of our revenues, cash flows and earnings.' (Item 1A heading). durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.22x; -6% to EPP floor; model-vs-market gap +0.72; conservative 2yr +55%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.22,
+  "ratio_b_fmt": "0.22x",
+  "epp": 75.24,
+  "epp_gap_pct": -6.3,
+  "epp_adj": 0.2,
+  "proxy_composite": 1.95,
+  "sca": 0.15,
+  "adj_composite": 2.3,
+  "market_composite": 1.58,
+  "adj_gap": 0.72,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 54.9,
+  "scenarios": {
+   "BEAR": {
+    "eps": 2.54,
+    "pe": 17.3,
+    "price": 44,
+    "desc": "EPS -22.1%/yr (worst year FY13-FY18 ex-FY15 ex-FY17, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 4.11,
+    "pe": 25.8,
+    "price": 106,
+    "desc": "EPS +-0.8%/yr (FY23 guide + margin + buyback); P/E at its 10-yr ex-FY15 ex-FY17 ex-FY19 ex-FY20 ex-FY21 ex-FY22 median"
+   },
+   "BULL": {
+    "eps": 5.47,
+    "pe": 35.0,
+    "price": 191,
+    "desc": "EPS +14.3%/yr (FY13-FY18 ex-FY15 ex-FY17 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 9.23,
+    "pe": 43.2,
+    "price": 399,
+    "desc": "EPS +48.6%/yr (best 2-yr run FY13-FY18 ex-FY15 ex-FY17); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.22,
+   "epp_gap_pct": -6.3,
+   "adj_gap": 0.72,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 54.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.12,
+   "epp_gap_pct": -6.3,
+   "adj_gap": 0.97,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 54.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 0.39,
+   "epp_gap_pct": -6.3,
+   "adj_gap": 0.33,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 54.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.2,
+   "epp_gap_pct": -6.3,
+   "adj_gap": 0.75,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 54.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.24,
+   "epp_gap_pct": -6.3,
+   "adj_gap": 0.69,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 54.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.22,
+   "epp_gap_pct": -6.3,
+   "adj_gap": 1.02,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 54.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.22,
+   "epp_gap_pct": -19.7,
+   "adj_gap": 0.72,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 54.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.22,
+   "epp_gap_pct": -6.3,
+   "adj_gap": 0.82,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 54.9,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "BMY (retrospective, 2023-04-21) ◉ BUY — Ratio B 0.22x (37.6% downside to Bear $44 / +171.0% upside to Bull $191) | Adj composite 2.30 vs market 1.58: gap +0.72 [UNDERVALUED] | -6% above the EPP floor $75 (18x FY23E $4.18) | Conservative 2-yr case: +54.9% total (+27.5%/yr) | At 16.9x FY23E the 15% hurdle price $93 sits at or below the BASE case; U.S. revenues +5.4% in Q4 2022, forward revenues +2% (FY23 revenue guide ex-FX); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "BM95",
+   "published": "2023-02-15",
+   "filed": "2023-02-14 16:24 ET (after the close, so dated 2023-02-15)",
+   "title": "Bristol-Myers Squibb FY2022 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000001427223000046/bmy-20221231.htm",
+   "supports": "statement of earnings 2020-2022 (diluted EPS $(3.99), $3.12, $2.95; total revenues; diluted shares from the EPS note); revenues by geography (the United States); cash flows; cash and marketable debt securities; repurchases; the non-GAAP reconciliation (specified items $10,206M after tax, non-GAAP EPS $7.70); durability wording (Items 1A and 7) and the segment sentence"
+  },
+  {
+   "id": "BM90",
+   "published": "2022-02-09",
+   "filed": "2022-02-09 11:44 ET (during the session)",
+   "title": "Bristol-Myers Squibb FY2021 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000001427222000051/bmy-20211231.htm",
+   "supports": "statement of earnings 2019-2021 (diluted EPS $2.01, $(3.99), $3.12; total revenues; diluted shares from the EPS note); revenues by geography (the United States); cash flows; cash and marketable debt securities; repurchases; the non-GAAP reconciliation (specified items $9,860M after tax, non-GAAP EPS $7.51); durability wording (Items 1A and 7) and the segment sentence"
+  },
+  {
+   "id": "BM84",
+   "published": "2021-02-10",
+   "filed": "2021-02-10 15:13 ET (during the session)",
+   "title": "Bristol-Myers Squibb FY2020 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000001427221000066/bmy-20201231.htm",
+   "supports": "five-year summary 2016-2020 (diluted EPS $2.65, $0.61, $3.01, $2.01, $(3.99); total revenues; diluted shares; cash and marketable securities); statement of earnings; revenues by geography (the United States); cash flows; repurchases; the $0.49 quarterly dividend; the non-GAAP reconciliation; durability wording (Items 1A and 7)"
+  },
+  {
+   "id": "BM79",
+   "published": "2020-02-25",
+   "filed": "2020-02-24 16:10 ET (after the close, so dated 2020-02-25)",
+   "title": "Bristol-Myers Squibb FY2019 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000001427220000082/bmy-20191231x10xk.htm",
+   "supports": "five-year summary 2015-2019 (diluted EPS $0.93, $2.65, $0.61, $3.01, $2.01; total revenues; diluted shares; cash and marketable securities); statement of earnings; revenues by geography (the United States); cash flows; repurchases; the $0.45 quarterly dividend; the non-GAAP reconciliation; durability wording (Items 1A and 7)"
+  },
+  {
+   "id": "BM74",
+   "published": "2019-02-26",
+   "filed": "2019-02-25 16:52 ET (after the close, so dated 2019-02-26)",
+   "title": "Bristol-Myers Squibb FY2018 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000001427219000047/bmy-20181231x10xk.htm",
+   "supports": "five-year summary 2014-2018 (diluted EPS $1.20, $0.93, $2.65, $0.61, $3.01; total revenues; diluted shares; cash and marketable securities); statement of earnings; revenues by geography (the United States); cash flows; repurchases; the $0.41 quarterly dividend; the non-GAAP reconciliation; durability wording (Items 1A and 7)"
+  },
+  {
+   "id": "BM68",
+   "published": "2018-02-13",
+   "filed": "2018-02-13 09:26 ET (before the open)",
+   "title": "Bristol-Myers Squibb FY2017 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000001427218000055/bmy-20171231x10xk.htm",
+   "supports": "five-year summary 2013-2017 (diluted EPS $1.54, $1.20, $0.93, $2.65, $0.61; total revenues; diluted shares; cash and marketable securities); statement of earnings; revenues by geography (the United States); cash flows; repurchases; the $0.40 quarterly dividend; the non-GAAP reconciliation; durability wording (Items 1A and 7)"
+  },
+  {
+   "id": "BM94",
+   "published": "2023-02-02",
+   "filed": "2023-02-02 08:43 ET (before the open)",
+   "title": "Bristol Myers Squibb Q4 2022 results (8-K, Exhibit 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000001427223000018/q42022ex991.htm",
+   "supports": "Q4 2022 statement of earnings (total revenues $11,406M vs $11,985M, cost of products sold $2,593M vs $2,356M, pre-tax $1,859M vs $1,858M, diluted EPS $0.95 vs $1.07, 2,124M diluted shares); U.S. $7,925M vs $7,520M and international $3,481M vs $4,465M revenues (product revenue table); revenue growth -1% when adjusted for foreign exchange, as the release states; FY2022 total revenues $46,159M, diluted EPS $2.95 (2,146M shares), pre-tax $7,713M, provision for income taxes $1,368M; specified items $10,206M after tax, non-GAAP EPS $7.70; FY2023 guide: GAAP EPS $4.03-4.33, non-GAAP EPS $7.95-8.25, total revenues +2% excluding foreign exchange"
+  },
+  {
+   "id": "BM4",
+   "published": "2002-04-01",
+   "filed": "2002-04-01 (EDGAR gives the filing date only)",
+   "title": "Bristol-Myers Squibb FY2001 10-K405",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000091205702013034/a2074555z10-k405.htm",
+   "supports": "the Zimmer spin-off: 'On August 6, 2001, the Company spun off Zimmer Holdings, Inc., in a tax-free distribution, resulting in a common stock dividend of $203 million.'"
+  },
+  {
+   "id": "W0",
+   "published": "2023-04-21",
+   "title": "Yahoo Finance daily prices, BMY and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/BMY/history",
+   "supports": "close $70.49 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr ex-FY15 ex-FY17 ex-FY19 ex-FY20 ex-FY21 ex-FY22 P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-12"
+}

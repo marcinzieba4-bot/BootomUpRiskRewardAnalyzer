@@ -1,0 +1,245 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "JPM",
+ "company": "JPMorgan Chase & Co.",
+ "as_of": "2024-06-21",
+ "price_date": "2024-06-21",
+ "price": 196.3,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); net revenue, credit cost, expense, nonperforming-asset and pre-tax margin signals with JPMorgan Chase's rule-T thresholds",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'JPMorgan Chase & Co. ... is a leading financial services firm based in the United States' 'Unfavorable market and economic conditions can have an adverse effect on JPMorgan Chase’s wholesale businesses.' 'JPMorgan Chase operates in a highly competitive environment in which it must evolve and adapt to changes in financial regulation, technological advances, increased public scrutiny and changes in economic conditions.' (FY2023 10-K); DURABLE, risk 2: the 10-K ties results to markets and the economy, a cycle and a competitive field, and does not call its own business cyclical (the word appears only in 'countercyclical capital buffer', a regulatory term: the LOW and SHW reading); among its competitors it lists 'e-commerce and other internet-based companies, financial technology companies'; it says 'both financial institutions and their non-banking competitors face the risk that payments processing and other products and services, including deposits and other traditional banking products, could be significantly disrupted by the use of new technologies, such as cryptocurrencies and other applications using secure distributed ledgers, that may not require intermediation'; CRYPTO is live (from 2020-10-21) and scoped to banks and payments: these words put it on the watch list, company-acknowledged, with no dated evidence that the market prices it for JPMorgan Chase",
+  "theme_watch": [
+   {
+    "theme": "CRYPTO",
+    "status": "live, company-acknowledged; no market read",
+    "reason": "Live: JPMorgan Chase's own FY2023 10-K says 'both financial institutions and their non-banking competitors face the risk that payments processing and other products and services, including deposits and other traditional banking products, could be significantly disrupted by the use of new technologies, such as cryptocurrencies and other applications using secure distributed ledgers, that may not require intermediation'. The stock trades at 12.1x FY24E — a premium. Re-file as DISRUPTION_EXPOSED (CRYPTO) only if dated evidence shows the market pricing crypto disintermediation of JPMorgan Chase's payments and banking specifically."
+   }
+  ],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "'JPMorgan Chase & Co. ... is a leading financial services firm based in the United States' 'Unfavorable market and economic conditions can have an adverse effect on JPMorgan Chase’s wholesale businesses.' 'JPMorgan Chase operates in a highly competitive environment in which it must evolve and adapt to changes in financial regulation, technological advances, increased public scrutiny and changes in economic conditions.' (FY2023 10-K); DURABLE, risk 2: the 10-K ties results to markets and the economy, a cycle and a competitive field, and does not call its own business cyclical (the word appears only in 'countercyclical capital buffer', a regulatory term: the LOW and SHW reading); among its competitors it lists 'e-commerce and other internet-based companies, financial technology companies'; it says 'both financial institutions and their non-banking competitors face the risk that payments processing and other products and services, including deposits and other traditional banking products, could be significantly disrupted by the use of new technologies, such as cryptocurrencies and other applications using secure distributed ledgers, that may not require intermediation'; CRYPTO is live (from 2020-10-21) and scoped to banks and payments: these words put it on the watch list, company-acknowledged, with no dated evidence that the market prices it for JPMorgan Chase. durable franchise (obsolescence risk 2/5); price rich; Ratio B 1.87x; +34% to EPP floor; model-vs-market gap -0.68; conservative 2yr +5%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": 1.87,
+  "ratio_b_fmt": "1.87x",
+  "epp": 146.07,
+  "epp_gap_pct": 34.4,
+  "epp_adj": 0.0,
+  "proxy_composite": 2.2,
+  "sca": 0.12,
+  "adj_composite": 2.32,
+  "market_composite": 3.0,
+  "adj_gap": -0.68,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": 5.4,
+  "scenarios": {
+   "BEAR": {
+    "eps": 10.06,
+    "pe": 9.2,
+    "price": 92.55,
+    "desc": "EPS -21.3%/yr (worst year FY14-FY23, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 20.47,
+    "pe": 10.9,
+    "price": 223.12,
+    "desc": "EPS +12.3%/yr (Q1 revenue YoY + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 20.82,
+    "pe": 12.1,
+    "price": 251.92,
+    "desc": "EPS +13.3%/yr (FY14-FY23 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 25.33,
+    "pe": 13.1,
+    "price": 331.82,
+    "desc": "EPS +24.9%/yr (best 2-yr run FY14-FY23, at least BULL); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 1.87,
+   "epp_gap_pct": 34.4,
+   "adj_gap": -0.68,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 5.4,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 1.25,
+   "epp_gap_pct": 34.4,
+   "adj_gap": -0.16,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 5.4,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 3.55,
+   "epp_gap_pct": 34.4,
+   "adj_gap": -1.02,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 5.4,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 1.6,
+   "epp_gap_pct": 34.4,
+   "adj_gap": -0.54,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 5.4,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 2.21,
+   "epp_gap_pct": 34.4,
+   "adj_gap": -0.81,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 5.4,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 1.87,
+   "epp_gap_pct": 34.4,
+   "adj_gap": -0.38,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 5.4,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 1.87,
+   "epp_gap_pct": 0.8,
+   "adj_gap": -0.68,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 5.4,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 1.87,
+   "epp_gap_pct": 34.4,
+   "adj_gap": -0.22,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": 5.4,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "FAIR",
+  "RICH"
+ ],
+ "summary": "JPM (retrospective, 2024-06-21) ✕ AVOID — Ratio B 1.87x (52.9% downside to Bear $92.55 / +28.3% upside to Bull $251.92) | Adj composite 2.32 vs market 3.00: gap -0.68 [OVERVALUED] | +34% above the EPP floor $146.07 (9x FY24E $16.23) | Conservative 2-yr case: +5.4% total (+2.7%/yr) | At 12.1x FY24E the 15% hurdle price $259.61 sits above the BULL case; revenue +9.3% YoY in Q1 2024, forward revenues +9.3% (Q1 2024 revenue growth (no Q2 2024 guide)); crypto is live and company-acknowledged; no dated evidence ties the multiple to it.",
+ "sources": [
+  {
+   "id": "JPM107",
+   "published": "2024-02-20",
+   "filed": "accepted 2024-02-16 16:20 ET (after the 16:00 ET close, so dated the next trading day; 2024-02-20 after a market holiday)",
+   "title": "JPMorgan Chase & Co. FY2023 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961724000225/jpm-20231231.htm",
+   "supports": "selected financial data 2021-2023 (the 10-K reports three years): the FY23 history vintage; Item 1 and 1A wording"
+  },
+  {
+   "id": "JPM74",
+   "published": "2018-01-12",
+   "filed": "accepted 2018-01-12 06:46 ET (before the open)",
+   "title": "JPMorgan Chase Q4 2017 earnings release and financial supplement (8-K, exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961718000004/a4q17erfexhibit992suppleme.htm",
+   "supports": "Q4 2017 print; FY2017 actuals"
+  },
+  {
+   "id": "JPM81",
+   "published": "2019-02-27",
+   "filed": "accepted 2019-02-26 16:57 ET (after the 16:00 ET close, so dated the next trading day)",
+   "title": "JPMorgan Chase & Co. FY2018 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961719000054/corp10k2018.htm",
+   "supports": "five-year summary 2014-2018: the FY18 history vintage; Item 1 and 1A wording"
+  },
+  {
+   "id": "JPM86",
+   "published": "2020-02-26",
+   "filed": "accepted 2020-02-25 16:31 ET (after the 16:00 ET close, so dated the next trading day)",
+   "title": "JPMorgan Chase & Co. FY2019 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961720000257/corp10k2019.htm",
+   "supports": "five-year summary 2015-2019: the FY19 history vintage; Item 1 and 1A wording"
+  },
+  {
+   "id": "JPM92",
+   "published": "2021-02-24",
+   "filed": "accepted 2021-02-23 16:17 ET (after the 16:00 ET close, so dated the next trading day)",
+   "title": "JPMorgan Chase & Co. FY2020 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961721000236/jpm-20201231.htm",
+   "supports": "five-year summary 2016-2020: the FY20 history vintage; Item 1 and 1A wording"
+  },
+  {
+   "id": "JPM97",
+   "published": "2022-02-23",
+   "filed": "accepted 2022-02-22 16:56 ET (after the 16:00 ET close, so dated the next trading day)",
+   "title": "JPMorgan Chase & Co. FY2021 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961722000272/jpm-20211231.htm",
+   "supports": "selected financial data 2019-2021 (the 10-K reports three years): the FY21 history vintage; Item 1 and 1A wording"
+  },
+  {
+   "id": "JPM102",
+   "published": "2023-02-22",
+   "filed": "accepted 2023-02-21 16:13 ET (after the 16:00 ET close, so dated the next trading day)",
+   "title": "JPMorgan Chase & Co. FY2022 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961723000231/jpm-20221231.htm",
+   "supports": "selected financial data 2020-2022 (the 10-K reports three years): the FY22 history vintage; Item 1 and 1A wording"
+  },
+  {
+   "id": "JPM106",
+   "published": "2024-01-12",
+   "filed": "accepted 2024-01-12 06:47 ET (before the open)",
+   "title": "JPMorgan Chase Q4 2023 earnings release and financial supplement (8-K, exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961724000049/a4q23erfex992supplement.htm",
+   "supports": "Q4 2023 print; FY2023 actuals"
+  },
+  {
+   "id": "JPM108",
+   "published": "2024-04-12",
+   "filed": "accepted 2024-04-12 06:45 ET (before the open)",
+   "title": "JPMorgan Chase Q1 2024 earnings release and financial supplement (8-K, exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961724000315/a1q24erfex992supplement.htm",
+   "supports": "Q1 2024 print"
+  },
+  {
+   "id": "Y0",
+   "published": "2024-06-21",
+   "title": "Yahoo Finance daily prices, JPM and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/JPM/history",
+   "supports": "close $196.30 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution from 2014-06-23"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-19"
+}

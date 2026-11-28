@@ -1,0 +1,246 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "BMY",
+ "company": "Bristol-Myers Squibb Company",
+ "as_of": "2013-08-23",
+ "price_date": "2013-08-23",
+ "price": 42.24,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); pharmaceutical signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'is a global biopharmaceutical company whose mission is to discover, develop and deliver innovative medicines that help patients prevail over serious diseases.' (FY2012 10-K, Item 7); 'We face intense competition from other biopharmaceutical manufacturers, including for both innovative medicines and lower-priced generic products.' (Item 1A heading); 'It is possible that we may lose market exclusivity of a product earlier than expected.' (Item 1A heading); 'We depend on certain key products for most of our net sales, cash flows and earnings.' (Item 1A heading)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "'is a global biopharmaceutical company whose mission is to discover, develop and deliver innovative medicines that help patients prevail over serious diseases.' (FY2012 10-K, Item 7); 'We face intense competition from other biopharmaceutical manufacturers, including for both innovative medicines and lower-priced generic products.' (Item 1A heading); 'It is possible that we may lose market exclusivity of a product earlier than expected.' (Item 1A heading); 'We depend on certain key products for most of our net sales, cash flows and earnings.' (Item 1A heading). durable franchise (obsolescence risk 2/5); price rich; +62% to EPP floor; model-vs-market gap -0.65; conservative 2yr -21%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": Infinity,
+  "ratio_b_fmt": "infx",
+  "epp": 26.1,
+  "epp_gap_pct": 61.8,
+  "epp_adj": -0.1,
+  "proxy_composite": 2.15,
+  "sca": -0.075,
+  "adj_composite": 1.975,
+  "market_composite": 2.62,
+  "adj_gap": -0.65,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": -21.1,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.18,
+    "pe": 13.2,
+    "price": 2,
+    "desc": "EPS -65.2%/yr (worst year FY03-FY12, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 1.28,
+    "pe": 21.7,
+    "price": 28,
+    "desc": "EPS +-6.2%/yr (FY13 guide + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 1.36,
+    "pe": 29.3,
+    "price": 40,
+    "desc": "EPS +-3.0%/yr (FY03-FY12 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 4.89,
+    "pe": 49.4,
+    "price": 242,
+    "desc": "EPS +83.7%/yr (best 2-yr run FY03-FY12); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 61.8,
+   "adj_gap": -0.65,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -21.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 1.58,
+   "epp_gap_pct": 61.8,
+   "adj_gap": -0.22,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": -21.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 61.8,
+   "adj_gap": -1.05,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -21.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 61.8,
+   "adj_gap": -0.61,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -21.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 61.8,
+   "adj_gap": -0.7,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -21.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 61.8,
+   "adj_gap": -0.35,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -21.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 38.7,
+   "adj_gap": -0.55,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -21.1,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 61.8,
+   "adj_gap": -0.52,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -21.1,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "RICH"
+ ],
+ "summary": "BMY (retrospective, 2013-08-23) ✕ AVOID — Ratio B infx (95.3% downside to Bear $2 / +-5.3% upside to Bull $40) | Adj composite 1.97 vs market 2.62: gap -0.65 [OVERVALUED] | +62% above the EPP floor $26 (18x FY13E $1.45) | Conservative 2-yr case: -21.1% total (-10.5%/yr) | At 29.1x FY13E the 15% hurdle price $56 sits above the BULL case; U.S. revenues -22.2% in Q2 2013, forward revenues -9.2% to -6.4% (FY13 sales guide); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "BM42",
+   "published": "2013-02-15",
+   "filed": "2013-02-15 08:55 ET (before the open)",
+   "title": "Bristol-Myers Squibb FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312513061678/d450621d10k.htm",
+   "supports": "five-year summary 2008-2012 (diluted EPS $1.35, $1.63, $1.79, $2.16, $1.16; net sales; diluted shares); statement of earnings 2010-2012; geographic areas 2010-2012 (the United States with Puerto Rico); cash flows; repurchases; the $0.35 quarterly dividend; durability wording (Items 1A and 7)"
+  },
+  {
+   "id": "BM37",
+   "published": "2012-02-17",
+   "filed": "2012-02-17 08:44 ET (before the open)",
+   "title": "Bristol-Myers Squibb FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312512066416/d302058d10k.htm",
+   "supports": "five-year summary 2007-2011 (diluted EPS $0.65, $1.35, $1.63, $1.79, $2.16; net sales; diluted shares); statement of earnings 2009-2011; geographic areas 2009-2011; cash flows; repurchases; the $0.34 quarterly dividend; durability wording (Items 1A and 7)"
+  },
+  {
+   "id": "BM32",
+   "published": "2011-02-18",
+   "filed": "2011-02-18 13:34 ET (during the session)",
+   "title": "Bristol-Myers Squibb FY2010 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312511040120/d10k.htm",
+   "supports": "five-year summary 2006-2010 (diluted EPS $0.40, $0.65, $1.35, $1.63, $1.79; net sales; diluted shares); statement of earnings 2008-2010; geographic areas 2008-2010; cash flows; repurchases; the $0.33 quarterly dividend; durability wording (Items 1A and 7)"
+  },
+  {
+   "id": "BM27",
+   "published": "2010-02-19",
+   "filed": "2010-02-19 15:38 ET (during the session)",
+   "title": "Bristol-Myers Squibb FY2009 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312510035167/d10k.htm",
+   "supports": "five-year summary 2005-2009 (Mead Johnson discontinued: diluted EPS from continuing operations attributable to BMS $1.15, $0.40, $0.65, $1.35, $1.63; net sales; diluted shares); statement of earnings 2007-2009; geographic areas 2007-2009; cash flows; one segment, BioPharmaceuticals; the $0.32 quarterly dividend; durability wording (Items 1A and 7)"
+  },
+  {
+   "id": "BM22",
+   "published": "2009-04-28",
+   "filed": "2009-04-28 12:00 ET (during the session)",
+   "title": "Bristol-Myers Squibb 8-K of 2009-04-28 (FY2006-FY2008 statements revised for the 2009 segments and SFAS 160)",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312509089618/dex991.htm",
+   "supports": "revised consolidated financial statements for 2006-2008 (the 2009 segments, BioPharmaceuticals and Mead Johnson, and SFAS 160): five-year summary 2004-2008 with EPS, net sales and shares unchanged from the FY2008 10-K; statement of earnings; geographic areas; cash flows"
+  },
+  {
+   "id": "BM15",
+   "published": "2008-02-22",
+   "filed": "2008-02-21 20:40 ET (after the close)",
+   "title": "Bristol-Myers Squibb FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312508035566/d10k.htm",
+   "supports": "five-year summary 2003-2007 (Medical Imaging discontinued: diluted EPS from continuing operations $1.53, $1.12, $1.44, $0.73, $0.99; net sales; diluted shares); statement of earnings 2005-2007 (cost of products sold, provision for income taxes $803M in 2007); geographic areas 2005-2007; cash flows; segment net sales; the $0.31 quarterly dividend; durability wording (Items 1, 1A and 7)"
+  },
+  {
+   "id": "BM41",
+   "published": "2013-01-24",
+   "filed": "2013-01-24 07:57 ET (before the open)",
+   "title": "Bristol-Myers Squibb Q4 2012 results (8-K, Exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312513021507/d474450dex991.htm",
+   "supports": "Q4 2012 statement of earnings (net sales $4,191M vs $5,454M, cost of products sold $1,075M vs $1,367M, pre-tax $513M vs $1,594M, diluted EPS $0.56 vs $0.50, 1,662M diluted shares); U.S. $2,238M vs $3,604M and international $1,953M vs $1,850M net sales (supplemental exhibit); net sales growth the supplement's -23% change less its -1% foreign exchange impact; FY2012 net sales $17,621M, diluted EPS from continuing operations $1.16 (1,688M shares), provision for income taxes $-161M; FY2013 guide: GAAP EPS $1.54-1.64, non-GAAP EPS $1.78-1.88, worldwide sales $16.2-17.0B"
+  },
+  {
+   "id": "BM43",
+   "published": "2013-04-25",
+   "filed": "2013-04-25 08:26 ET (before the open)",
+   "title": "Bristol-Myers Squibb Q1 2013 results (8-K, Exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312513172207/d526065dex991.htm",
+   "supports": "Q1 2013 statement of earnings (net sales $3,831M vs $5,251M, cost of products sold $1,063M vs $1,303M, pre-tax $674M vs $2,027M, diluted EPS $0.37 vs $0.64, 1,655M diluted shares); U.S. $1,971M vs $3,501M and international $1,860M vs $1,750M net sales (supplemental exhibit); net sales growth the supplement's -27% change with no foreign exchange impact ('—'); FY2013 guide: GAAP EPS $1.54-1.64, non-GAAP EPS $1.78-1.88"
+  },
+  {
+   "id": "BM44",
+   "published": "2013-07-25",
+   "filed": "2013-07-25 08:38 ET (before the open)",
+   "title": "Bristol-Myers Squibb Q2 2013 results (8-K, Exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000119312513301536/d572078dex991.htm",
+   "supports": "Q2 2013 statement of earnings (net sales $4,048M vs $4,443M, cost of products sold $1,108M vs $1,245M, pre-tax $530M vs $1,059M, diluted EPS $0.32 vs $0.38, 1,660M diluted shares); U.S. $2,045M vs $2,629M and international $2,003M vs $1,814M net sales (supplemental exhibit); net sales growth the supplement's -9% change less its -1% foreign exchange impact; FY2013 guide: GAAP EPS $1.41-1.49, non-GAAP EPS $1.70-1.78, worldwide sales $16.0-16.5B"
+  },
+  {
+   "id": "BM4",
+   "published": "2002-04-01",
+   "filed": "2002-04-01 (EDGAR gives the filing date only)",
+   "title": "Bristol-Myers Squibb FY2001 10-K405",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000091205702013034/a2074555z10-k405.htm",
+   "supports": "the Zimmer spin-off: 'On August 6, 2001, the Company spun off Zimmer Holdings, Inc., in a tax-free distribution, resulting in a common stock dividend of $203 million.'"
+  },
+  {
+   "id": "W0",
+   "published": "2013-08-23",
+   "title": "Yahoo Finance daily prices, BMY and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/BMY/history",
+   "supports": "close $42.24 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-12"
+}

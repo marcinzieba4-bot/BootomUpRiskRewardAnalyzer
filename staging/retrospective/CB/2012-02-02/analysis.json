@@ -1,0 +1,270 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "CB",
+ "company": "ACE Limited",
+ "as_of": "2012-02-02",
+ "price_date": "2012-02-02",
+ "price": 72.48,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); net premiums earned, combined ratio, investment income, book value and pre-tax margin signals with ACE's rule-T thresholds",
+ "pit_profile": {
+  "kind": "CYCLICAL",
+  "risk": 2,
+  "why": "'are a global insurance and reinsurance organization, serving the needs of commercial and individual customers in more than 170 countries' 'Insurance and reinsurance markets are historically cyclical, and we expect to experience periods with excess underwriting capacity and unfavorable premium rates.' 'The incidence and severity of catastrophes are inherently unpredictable and our losses from catastrophes could be substantial.' (FY2010 10-K, Items 1 and 1A): the company calls its own business cyclical (the XOM, CAT and GOOG reading), so CYCLICAL; catastrophe losses are the business's own recurring cost, not a substitution theme; no disruption theme in taxonomy_eras.json is live for a property and casualty insurer on this date (OFFSHORE is scoped to IT services), so the watch list is empty and these words stay here (the PEP obesity rule)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "TOO MUCH CYCLE RISK",
+  "quality_label": "✕ TOO MUCH CYCLE RISK",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "CYCLICAL",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "'are a global insurance and reinsurance organization, serving the needs of commercial and individual customers in more than 170 countries' 'Insurance and reinsurance markets are historically cyclical, and we expect to experience periods with excess underwriting capacity and unfavorable premium rates.' 'The incidence and severity of catastrophes are inherently unpredictable and our losses from catastrophes could be substantial.' (FY2010 10-K, Items 1 and 1A): the company calls its own business cyclical (the XOM, CAT and GOOG reading), so CYCLICAL; catastrophe losses are the business's own recurring cost, not a substitution theme; no disruption theme in taxonomy_eras.json is live for a property and casualty insurer on this date (OFFSHORE is scoped to IT services), so the watch list is empty and these words stay here (the PEP obesity rule). cyclical (obsolescence risk 2/5); price rich; +123% to EPP floor; model-vs-market gap -1.42; conservative 2yr -45%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": Infinity,
+  "ratio_b_fmt": "infx",
+  "epp": 32.55,
+  "epp_gap_pct": 122.7,
+  "epp_adj": -0.2,
+  "proxy_composite": 2.0,
+  "sca": -0.092,
+  "adj_composite": 1.708,
+  "market_composite": 3.13,
+  "adj_gap": -1.42,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": -44.7,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.98,
+    "pe": 5.8,
+    "price": 5.68,
+    "desc": "EPS -54.1%/yr (worst year FY03-FY11, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 4.56,
+    "pe": 8.1,
+    "price": 36.94,
+    "desc": "EPS -1.0%/yr (Q4 revenue YoY + margin + buyback); P/E at its 9.1-yr median"
+   },
+   "BULL": {
+    "eps": 4.56,
+    "pe": 13.6,
+    "price": 62.02,
+    "desc": "EPS -1.0%/yr (FY03-FY11 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 12.1,
+    "pe": 15.1,
+    "price": 182.71,
+    "desc": "EPS +61.3%/yr (best 2-yr run FY03-FY11, at least BULL); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 122.7,
+   "adj_gap": -1.42,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -44.7,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 122.7,
+   "adj_gap": -1.21,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -44.7,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 122.7,
+   "adj_gap": -1.6,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -44.7,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 122.7,
+   "adj_gap": -1.39,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -44.7,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 122.7,
+   "adj_gap": -1.45,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -44.7,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 122.7,
+   "adj_gap": -1.12,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -44.7,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 55.9,
+   "adj_gap": -1.32,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -44.7,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 122.7,
+   "adj_gap": -1.33,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -44.7,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "RICH"
+ ],
+ "summary": "ACE (retrospective, 2012-02-02) ✕ AVOID — Ratio B infx (92.2% downside to Bear $5.68 / -14.4% upside to Bull $62.02) | Adj composite 1.71 vs market 3.13: gap -1.42 [OVERVALUED] | +123% above the EPP floor $32.55 (7x FY12E $4.65) | Conservative 2-yr case: -44.7% total (-22.3%/yr) | At 15.6x FY12E the 15% hurdle price $95.85 sits above the BULL case; revenue +1.6% YoY in Q4 2011, forward revenues +1.6% (Q4 2011 revenue growth (no Q1 2012 guide)); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "CB34",
+   "published": "2011-02-28",
+   "filed": "accepted 2011-02-25 21:30 UTC (2011-02-25 16:30 ET, after the close), dated the next trading day",
+   "title": "ACE Limited FY2010 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/896159/000119312511047473/d10k.htm",
+   "supports": "selected data 2006-2010, the statement of operations and the segment premiums: the FY10 history vintage; Item 1 and 1A wording"
+  },
+  {
+   "id": "CB3",
+   "published": "2003-03-27",
+   "filed": "accepted 2003-03-27 18:16 UTC (2003-03-27 13:16 ET, during market hours)",
+   "title": "ACE Limited FY2002 10-K (Exhibit 13.1, Selected Financial Data; Item 15 8-K list)",
+   "url": "https://www.sec.gov/Archives/edgar/data/896159/000095013103001690/dex131.txt",
+   "supports": "selected data for fiscal 1998 and calendar 1999: the 1999 rule-T changes; the fourth-quarter 2002 asbestos charge"
+  },
+  {
+   "id": "CB5",
+   "published": "2005-08-12",
+   "filed": "accepted 2005-08-12 18:46 UTC (2005-08-12 14:46 ET, during market hours)",
+   "title": "ACE Limited FY2004 10-K/A (restated)",
+   "url": "https://www.sec.gov/Archives/edgar/data/896159/000119312505166766/d10ka.htm",
+   "supports": "selected data 2000-2004 as restated: the 2001 rule-T changes"
+  },
+  {
+   "id": "CB6",
+   "published": "2006-02-01",
+   "filed": "accepted 2006-02-01 00:00 UTC (2006-01-31 19:00 ET, after the close), dated the next trading day",
+   "title": "ACE Limited Q4 2005 earnings release (8-K, Item 2.02, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/896159/000119312506016384/dex991.htm",
+   "supports": "the 2005 one-off test: the year's figures excluding net realized gains, the A&E charge and catastrophe losses"
+  },
+  {
+   "id": "CB15",
+   "published": "2008-02-29",
+   "filed": "accepted 2008-02-29 01:21 UTC (2008-02-28 20:21 ET, after the close), dated the next trading day",
+   "title": "ACE Limited FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/896159/000119312508042242/d10k.htm",
+   "supports": "selected data 2003-2007, the income statement and the segment premiums: the FY07 history vintage; Item 1 and 1A wording"
+  },
+  {
+   "id": "CB22",
+   "published": "2009-02-27",
+   "filed": "accepted 2009-02-27 19:43 UTC (2009-02-27 14:43 ET, during market hours)",
+   "title": "ACE Limited FY2008 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/896159/000119312509040758/d10k.htm",
+   "supports": "selected data 2004-2008, the income statement and the segment premiums: the FY08 history vintage; Item 1 and 1A wording"
+  },
+  {
+   "id": "CB28",
+   "published": "2010-02-25",
+   "filed": "accepted 2010-02-25 20:44 UTC (2010-02-25 15:44 ET, during market hours)",
+   "title": "ACE Limited FY2009 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/896159/000119312510040605/d10k.htm",
+   "supports": "selected data 2005-2009, the statement of operations and the segment premiums: the FY09 history vintage; Item 1 and 1A wording"
+  },
+  {
+   "id": "CB33",
+   "published": "2011-02-03",
+   "filed": "accepted 2011-02-02 22:28 UTC (2011-02-02 17:28 ET, after the close), dated the next trading day",
+   "title": "ACE Limited Q4 2010 earnings release and financial supplement (8-K, Item 2.02, exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/896159/000119312511022048/dex991.htm",
+   "supports": "Q4 2010 figures against the year-ago quarter (the release's summary consolidated financial data and the supplement's book value per share); the full-year figures; the full-year guide"
+  },
+  {
+   "id": "CB35",
+   "published": "2011-05-05",
+   "filed": "accepted 2011-05-04 21:23 UTC (2011-05-04 17:23 ET, after the close), dated the next trading day",
+   "title": "ACE Limited Q1 2011 earnings release and financial supplement (8-K, Item 2.02, exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/896159/000119312511126395/dex991.htm",
+   "supports": "Q1 2011 figures against the year-ago quarter (the release's summary consolidated financial data and the supplement's book value per share); the full-year guide"
+  },
+  {
+   "id": "CB36",
+   "published": "2011-07-27",
+   "filed": "accepted 2011-07-26 20:35 UTC (2011-07-26 16:35 ET, after the close), dated the next trading day",
+   "title": "ACE Limited Q2 2011 earnings release and financial supplement (8-K, Item 2.02, exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/896159/000119312511197514/dex991.htm",
+   "supports": "Q2 2011 figures against the year-ago quarter (the release's summary consolidated financial data and the supplement's book value per share); the full-year guide"
+  },
+  {
+   "id": "CB38",
+   "published": "2011-10-26",
+   "filed": "accepted 2011-10-25 21:26 UTC (2011-10-25 17:26 ET, after the close), dated the next trading day",
+   "title": "ACE Limited Q3 2011 earnings release and financial supplement (8-K, Item 2.02, exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/896159/000119312511280473/d246736dex991.htm",
+   "supports": "Q3 2011 figures against the year-ago quarter (the release's summary consolidated financial data and the supplement's book value per share); the full-year guide"
+  },
+  {
+   "id": "CB39",
+   "published": "2012-02-01",
+   "filed": "accepted 2012-01-31 21:22 UTC (2012-01-31 16:22 ET, after the close), dated the next trading day",
+   "title": "ACE Limited Q4 2011 earnings release and financial supplement (8-K, Item 2.02, exhibits 99.1 and 99.2)",
+   "url": "https://www.sec.gov/Archives/edgar/data/896159/000119312512032104/d291312dex991.htm",
+   "supports": "Q4 2011 figures against the year-ago quarter (the release's summary consolidated financial data and the supplement's book value per share); the full-year figures; the full-year guide"
+  },
+  {
+   "id": "CB37",
+   "published": "2011-08-04",
+   "filed": "accepted 2011-08-04 19:56 UTC (2011-08-04 15:56 ET, during market hours)",
+   "title": "ACE Limited Q2 2011 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/896159/000119312511210283/d10q.htm",
+   "supports": "the $0.35 quarterly dividend"
+  },
+  {
+   "id": "Y0",
+   "published": "2012-02-02",
+   "title": "Yahoo Finance daily prices, ACE (served under CB) and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/CB/history",
+   "supports": "close $72.48 as traded on AS_OF, 52-week range, realized vol, beta, the 9.1-yr P/E distribution from 2003-01-02"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-21"
+}

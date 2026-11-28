@@ -1,0 +1,150 @@
+
+════════════════════════════════════════════════════════════════════════
+  NEE  ·  NextEra Energy, Inc.  ·  $84.59  ·  RETROSPECTIVE as of 2013-11-29
+  Signal: ✕ AVOID   Ratio B: 2.88x   Adj gap: -0.82  [OVERVALUED]
+  Point-in-time: 13 sources, latest published 2013-11-29; latest print Q3 2013 (2013-11-01)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2013E revenues, USD bn  →  FY2015E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Revenue line                 FY2013E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  FPL                       $    11.6  $  11.6  $  12.6      +0.0      +1.0
+    -4.7% revenues in FY12
+  NextEra Energy Resources  $     4.5  $   4.5  $   4.9      +0.0      +0.4
+    -13.5% revenues in FY12
+  Corporate and Other       $     0.3  $   0.3  $   0.3      +0.0      +0.0
+    +9.3% revenues in FY12
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    16.4  $  16.4  $  17.8      +0.0      +1.4
+  FY2013E = FY12 $14.26B × (1 + 14.3%: no Q4 2013 revenue guide, Q3 2013 revenue as reported, applied to the year (no FY13 revenue guide)); split pro rata to FY12 operating revenues by segment (NE35, segment information)
+  Q3 2013 (2013-11-01): total revenues $4.39B +14.3%; FPL energy sales +0.0%; FPL net income +7.7%;
+  operating margin 26.97% (+766.1bp); EPS $1.64 vs $0.98 (GAAP)
+  FPL energy sales +0.0% (30,800 to 30,815 million kWh, the statistics table's total: retail, sales to electric utilities, interchange and the change in unbilled sales); FPL average customer accounts 4,579 to 4,632 thousand; FPL net income +7.7% ($392M to $422M); NEER net income $44M to $281M (display only); revenue +14.3% as reported ($3,843M to $4,394M); operating income $742M to $1,185M; EPS: diluted EPS as reported $1.64 vs $0.98; the release's adjusted EPS ($1.43 vs $1.26) also removes the mark-to-market effect of non-qualifying hedges and other than temporary impairment losses, recurring items, so GAAP stands
+  FY13: adjusted EPS outlook (Q3 2013 release, 2013-11-01, display only): 'NextEra Energy expects adjusted earnings per share for 2013 to be in the upper half of the previously indicated range of $4.70 to $5.00' — an outlook on the adjusted basis, which also removes the mark-to-market effect of non-qualifying hedges and other than temporary impairment losses, recurring items (the PEP 2008 core rule): no field, so the last full year's EPS stands; no revenue or margin guide in numbers (BASE takes Q3 2013 revenue growth)
+
+  FY2013E EPS check:  $16.4B × 18.3% pre-tax × (1−26.6%) ÷ 0.427B  =  $5.15  (FY2013E: no EPS guide in numbers on a usable basis (the adjusted ranges also remove recurring mark-to-market items), FY12's $4.56 (GAAP) stands)
+  FY2015E BEAR check: $16.4B × 18.3% ÷ 0.442B  =  $4.97  (scenario $4.06)
+  FY2015E BULL check: $17.8B × 18.7% ÷ 0.442B  =  $5.51  (scenario $5.77)
+  Every 1pp of pre-tax margin ≈ $0.28 EPS ≈ $4/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  FPL energy sales (kWh)              -5.0%   ≥-1.0%    ≥2.0%    ≥8.0%     +0.0%  ◦ BASE  ██░░
+  FPL net income                     -16.0%   ≥-6.0%    ≥3.0%   ≥12.0%     +7.7%  ▲ BULL  ███░
+  Revenue growth                     -15.0%   ≥-3.0%    ≥8.0%   ≥33.0%    +14.3%  ▲ BULL  ███░
+  EPS growth                         -31.0%  ≥-13.0%    ≥5.0%   ≥38.0%    +67.3%  ★ XBULL  ████
+  Operating margin change           -840.0bp  ≥-450.0bp  ≥-60.0bp  ≥320.0bp  +766.1bp  ★ XBULL  ████
+  Disruption theme: none live for a utility   +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.95 / 4.00
+  Market composite:   3.77 / 4.00  (back-solved from $85 + 15% hurdle)
+  SCA adjustment:    +0.10  ·  EPP-distance adj -0.10  →  Adj composite 2.95  →  Gap -0.82  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY12 revenue -7.1%, FPL energy sales -1.5%, FPL net income +16.1%, FPL customer accounts +0.6%; Q3 2013 operating margin 27.0% (+766.1bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 18.6x FY13E vs a 13.9x 10-yr median (91st percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: no Q4 2013 revenue guide, Q3 2013 revenue as reported +14.3% vs a 0.2% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  FY12 year-end cash $0.329B, FY12 free cash flow $-5.47B (net cash provided by operating activities $3,992M less the cash flow statement's capital expenditures of FPL, independent power and other investments of NEER, nuclear fuel purchases and other capital expenditures ($9,461M, their sum) (NE35)), dividend $2.64 a year, issuances of common stock $405M, repurchases of common stock $19M and dividends on common stock $1,004M in 2012 (NE35 cash flows): the dividend is most of the return  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  FPL energy sales (kWh)               +0.0%     -5.0%   -5.0%  Fewer customers and lower usage cut F…
+  FPL net income                       +7.7%    -16.0%  -23.7%  Rate relief lags costs and lost sales
+  Revenue growth                      +14.3%    -15.0%  -29.3%  Sales, fuel recovery and hedge marks …
+  EPS growth                          +67.3%    -31.0%  -98.3%  Costs, marks and dilution outrun growth
+  Operating margin change           +766.1bp  -840.0bp  -1606.1bp  Fuel, O&M and hedge marks outrun revenue
+  Disruption theme: none live for a utility    +2.0/4    +1.0/4  -1.0/4  No disruption theme is live for an el…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$57  (model)  /  $46 (defined)
+  Bear probability (proxy model):  4.7%
+
+  KEY TRIGGER: FPL's energy sales went from +2.7% (Q2 2013) to +0.0% (Q3 2013);
+  the bear case needs a demand and cost squeeze that the operating margin (+766.1bp now)
+  and FPL's earnings (+7.7% now) no longer absorb.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $4.56  (FY2013E: no EPS guide in numbers on a usable basis (the adjusted ranges also remove recurring mark-to-market items), FY12's $4.56 (GAAP) stands)
+  Min viable P/E at panic:          12x  [median of calendar-year P/E lows: 2003 12.5x, 2004 12.3x, 2005 15.4x, 2006 11.8x, 2007 16.5x, 2008 9.1x, 2009 10.5x, 2010 9.6x, 2011 10.9x, 2012 12.9x, 2013 15.5x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $55/share
+  Current $85 vs Updated EPP $55:  +55%  ⚠ far above floor — large drawdown room
+  Bear $46 vs Updated EPP $55:  -16%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  FPL energy sales (kWh)                      -1.0       -1.0   BASE floor (vs +0 now)
+  FPL net income                              -6.0      -13.7   BASE floor (vs +8 now)
+  Revenue growth                              -3.0      -17.3   BASE floor (vs +14 now)
+  EPS growth                                 -13.0      -80.3   BASE floor (vs +67 now)
+  Operating margin change                   -450.0    -1216.1   BASE floor (vs +766 now)
+  Disruption theme: none live for a utility             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $4.56 × (1+10.5%)² = $5.57
+  At 13x P/E (conservative):  $72/share
+  + Cumul. dividends (2yr):  +$5.44/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $72  (▼12 from $85)
+  Conservative total return:  -8% over 2yr  = -4%/yr
+
+  10.5% EPS growth is what is left once the premium multiple (18.6x)
+  mean-reverts to 13x. Breakeven at 13x needs FY2015E EPS of $6.09,
+  i.e. 15.6%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $67.75  –  $89.75  (at 77th pct of range)
+  Annual dividend:      $2.64/share  (yield 3.1%)
+  Realized vol (1yr):   15% annualized
+  Beta vs broad market: 0.77
+  1-sigma range (1yr):  $72  –  $97  ($85 ± 15%)
+  2-sigma range (1yr):  $59  –  $110
+  ────────────────────────────────────────────────────────────
+  Bear $46 requires:  ~3.0σ price move  (unusual — requires fundamental break)
+  A utility holding company with a 0.8 beta: the stock is +25% off its December
+  low while FPL's energy sales went from +2.7% (Q2 2013) to +0.0% (Q3 2013).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        4.06  11.4x  $     46     4.7%      1.2%    +3.5pp  EPS -5.6%/yr (worst year FY03-FY12, capped at 0%); P/E to its 10th pct
+  BASE        5.77  13.9x  $     80    16.5%      4.3%   +12.2pp  EPS +12.5%/yr (Q3 revenue + margin + buyback); P/E at its 10-yr median
+  BULL        5.77  16.9x  $     98    57.6%     15.0%   +42.6pp  EPS +12.5%/yr (FY03-FY12 CAGR); P/E holds its 75th pct
+  XBULL       6.37  18.4x  $    117    21.2%     79.5%   -58.3pp  EPS +18.2%/yr (best 2-yr run FY03-FY12); P/E at its 90th pct
+
+  Proxy EV (2yr): $97  /  Market EV: $112  /  Current: $85
+  Conservative EV (2yr, ④): $72 + $5.44 divs = $78 total value
+  Downside (→ Bear $46): 45.6%   Upside (→ Bull $98): 15.9%   Ratio B 2.88x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $85 the market needs $112 in two years —
+  above the BULL case. That is a market composite of 3.77 against a model
+  read of 2.95: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       2.88x     +55%    -0.82  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     1.57x     +55%    -0.10  FAIRLY VALUED / WATCHLIST
+  Multiples one band cheaper (p5/p25/med/p75)      infx     +55%    -0.80  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          2.37x     +55%    -0.61  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                          3.80x     +55%    -0.82  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             2.88x     +55%    -0.52  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 2.88x     +24%    -0.72  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    2.88x     +55%    -0.31  MODESTLY OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 2013 print (late January) — the next read on FPL's energy sales (+0.0% now); no sales guide in numbers to read it against
+  (2) Operating margin — +766.1bp in Q3 2013: fuel and purchased power, O&M, depreciation and hedge marks against revenue
+  (3) The FY13 adjusted EPS outlook (Q3 2013 release) — display only: the adjusted basis also removes recurring mark-to-market items, so FY12's GAAP $4.56 anchors the multiple
+  (4) FPL's net income — +7.7% in Q3 2013 ($422M vs $392M): customers, usage and base rates against O&M and depreciation
+  (5) Capital return at 19x — issuances of common stock $405M, repurchases of common stock $19M and dividends on common stock $1,004M in 2012 (NE35 cash flows): the dividend is most of the return: management's own read of the multiple
+  ✕ AVOID  |  EPP floor $55  |  ADD below ~$68  |  TRIM above $98
+════════════════════════════════════════════════════════════════════════
+

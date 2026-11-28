@@ -1,0 +1,243 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "SPGI",
+ "company": "The McGraw-Hill Companies, Inc.",
+ "as_of": "2012-11-09",
+ "price_date": "2012-11-09",
+ "price": 50.77,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); ratings, education and information signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "The McGraw-Hill Companies 'is a leading global information services provider serving the financial, education, commercial and commodities markets with the information they need to succeed in the “Knowledge Economy”' (Item 1); Item 1A: 'Changes in the volume of debt securities issued in domestic and/or global capital markets and changes in interest rates and other volatility in the financial markets could have a material impact on our results of operations', and under 'Our education businesses operate in a cyclical environment' 'Our School Education Group and the industry it serves are influenced strongly by the magnitude and timing of state adoption opportunities' (the education businesses' adoption cycle, not the company's own earnings called cyclical); a fall in debt issuance, state adoptions or the markets it serves cuts revenue, and no disruption theme is live for the business on this date",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "The McGraw-Hill Companies 'is a leading global information services provider serving the financial, education, commercial and commodities markets with the information they need to succeed in the “Knowledge Economy”' (Item 1); Item 1A: 'Changes in the volume of debt securities issued in domestic and/or global capital markets and changes in interest rates and other volatility in the financial markets could have a material impact on our results of operations', and under 'Our education businesses operate in a cyclical environment' 'Our School Education Group and the industry it serves are influenced strongly by the magnitude and timing of state adoption opportunities' (the education businesses' adoption cycle, not the company's own earnings called cyclical); a fall in debt issuance, state adoptions or the markets it serves cuts revenue, and no disruption theme is live for the business on this date. durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.74x; +7% to EPP floor; model-vs-market gap -0.12; conservative 2yr +17%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.74,
+  "ratio_b_fmt": "0.74x",
+  "epp": 47.25,
+  "epp_gap_pct": 7.4,
+  "epp_adj": 0.0,
+  "proxy_composite": 2.05,
+  "sca": 0.138,
+  "adj_composite": 2.188,
+  "market_composite": 2.31,
+  "adj_gap": -0.12,
+  "valuation": "FAIRLY VALUED",
+  "cons_return_2yr": 17.4,
+  "scenarios": {
+   "BEAR": {
+    "eps": 2.46,
+    "pe": 11.8,
+    "price": 29,
+    "desc": "EPS -14.6%/yr (worst year FY02-FY11, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 3.73,
+    "pe": 16.5,
+    "price": 62,
+    "desc": "EPS +5.2%/yr (Q3 revenue + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 3.93,
+    "pe": 20.3,
+    "price": 80,
+    "desc": "EPS +7.9%/yr (FY02-FY11 CAGR); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 4.5,
+    "pe": 23.0,
+    "price": 104,
+    "desc": "EPS +15.5%/yr (best 2-yr run FY02-FY11); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.74,
+   "epp_gap_pct": 7.4,
+   "adj_gap": -0.12,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 17.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.45,
+   "epp_gap_pct": 7.4,
+   "adj_gap": 0.39,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 17.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 1.74,
+   "epp_gap_pct": 7.4,
+   "adj_gap": -0.8,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 17.4,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.67,
+   "epp_gap_pct": 7.4,
+   "adj_gap": -0.06,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 17.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.87,
+   "epp_gap_pct": 7.4,
+   "adj_gap": -0.23,
+   "verdict": "MODESTLY OVERVALUED",
+   "legacy_tier": "ACCUMULATE",
+   "cons_return_2yr": 17.4,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.74,
+   "epp_gap_pct": 7.4,
+   "adj_gap": 0.18,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 17.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.74,
+   "epp_gap_pct": -11.5,
+   "adj_gap": 0.08,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 17.4,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.74,
+   "epp_gap_pct": 7.4,
+   "adj_gap": 0.15,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 17.4,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP",
+  "FAIR",
+  "RICH"
+ ],
+ "summary": "MHP (retrospective, 2012-11-09) ◉ BUY — Ratio B 0.74x (42.9% downside to Bear $29 / +57.6% upside to Bull $80) | Adj composite 2.19 vs market 2.31: gap -0.12 [FAIRLY VALUED] | +7% above the EPP floor $47 (14x FY12E $3.38) | Conservative 2-yr case: +17.4% total (+8.7%/yr) | At 15.0x FY12E the 15% hurdle price $67 sits between the BASE and BULL cases; Financial Services revenue +18.2% in Q3 2012, forward revenues +2.4% (no FY12 revenue guide in numbers, Q3 2012 growth); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "SP33",
+   "published": "2012-02-07",
+   "filed": "accepted 2012-02-07 12:35 ET, during the session",
+   "title": "The McGraw-Hill Companies FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000119312512043165/d272748d10k.htm",
+   "supports": "annual history (revenue, segment operating profit, pre-tax income, diluted EPS from continuing operations), segments, cash, operating cash flow, repurchases, the dividend rate, Items 1 and 1A"
+  },
+  {
+   "id": "SP32",
+   "published": "2012-01-31",
+   "filed": "8-K accepted 2012-01-31 07:10 ET, before the open",
+   "title": "The McGraw-Hill Companies Q4 2011 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000114420412004826/v300722_ex99.htm",
+   "supports": "Q4 2011: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2011 actuals; FY2010 republished; FY2012 outlook"
+  },
+  {
+   "id": "SP28",
+   "published": "2011-02-23",
+   "filed": "accepted 2011-02-23 15:16 ET, during the session",
+   "title": "The McGraw-Hill Companies FY2010 10-K and Exhibit 13",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000095012311017079/y88684exv13.htm",
+   "supports": "annual history (revenue, segment operating profit, pre-tax income, diluted EPS from continuing operations), segments, cash, operating cash flow, repurchases, the dividend rate, Items 1 and 1A",
+   "also": "https://www.sec.gov/Archives/edgar/data/64040/000095012311017079/y88684e10vk.htm"
+  },
+  {
+   "id": "SP23",
+   "published": "2010-02-24",
+   "filed": "accepted 2010-02-24 15:46 ET, during the session",
+   "title": "The McGraw-Hill Companies FY2009 10-K and Exhibit 13",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000095012310016328/y80741exv13.htm",
+   "supports": "annual history (revenue, segment operating profit, pre-tax income, diluted EPS from continuing operations), segments, cash, operating cash flow, repurchases, the dividend rate, Items 1 and 1A",
+   "also": "https://www.sec.gov/Archives/edgar/data/64040/000095012310016328/y80741e10vk.htm"
+  },
+  {
+   "id": "SP20",
+   "published": "2005-02-25",
+   "filed": "accepted 2005-02-25 10:30 ET, during the session",
+   "title": "The McGraw-Hill Companies FY2004 10-K, Exhibit 13",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000095012305002243/y05956exv13.htm",
+   "supports": "2002 diluted weighted average shares 194,573K (Earnings per share note; before the 2005 split)"
+  },
+  {
+   "id": "SP34",
+   "published": "2012-04-24",
+   "filed": "8-K accepted 2012-04-24 07:10 ET, before the open",
+   "title": "The McGraw-Hill Companies Q1 2012 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000114420412023297/ex-99.htm",
+   "supports": "Q1 2012: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2012 outlook"
+  },
+  {
+   "id": "SP35",
+   "published": "2012-07-26",
+   "filed": "8-K accepted 2012-07-26 07:10 ET, before the open",
+   "title": "The McGraw-Hill Companies Q2 2012 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000114420412041048/v319431_ex99-1.htm",
+   "supports": "Q2 2012: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2012 outlook"
+  },
+  {
+   "id": "SP36",
+   "published": "2012-11-02",
+   "filed": "8-K accepted 2012-11-02 07:13 ET, before the open",
+   "title": "The McGraw-Hill Companies Q3 2012 results (8-K, Exhibit 99)",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000114420412059061/v327129_ex99.htm",
+   "supports": "Q3 2012: revenue, segment revenue and operating profit, diluted EPS and shares against the year-ago quarter; FY2012 outlook"
+  },
+  {
+   "id": "SP4",
+   "published": "2007-02-28",
+   "filed": "accepted 2007-02-28 14:02 ET, during the session",
+   "title": "The McGraw-Hill Companies FY2006 10-K and Exhibit 13",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000095012307002897/y30806exv13.htm",
+   "supports": "Eleven-Year Financial Review 1996-2006 (revenue and operating profit by segment, pre-tax income, diluted EPS from continuing operations), cash, operating cash flow, repurchases, the dividend rate, Items 1 and 1A",
+   "also": "https://www.sec.gov/Archives/edgar/data/64040/000095012307002897/y30806e10vk.htm"
+  },
+  {
+   "id": "W0",
+   "published": "2012-11-09",
+   "title": "Yahoo Finance daily prices, MHP and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/SPGI/history",
+   "supports": "close $50.77 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-20"
+}

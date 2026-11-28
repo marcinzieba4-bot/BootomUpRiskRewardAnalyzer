@@ -1,0 +1,155 @@
+
+════════════════════════════════════════════════════════════════════════
+  MU  ·  Micron Technology, Inc.  ·  $241.14  ·  RETROSPECTIVE as of 2025-12-12
+  Signal: ✕ AVOID   Ratio B: 4.50x   Adj gap: +0.57  [UNDERVALUED]
+  Point-in-time: 13 sources, latest published 2025-12-12; latest print Q4 FY25 (Sep 23)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2026E revenue, USD bn  →  FY2028E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2026E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  CMBU                          $ 19.41  $19.41  $24.81    +0.00    +5.40
+    +256.6% revenue in FY25
+  MCBU                          $ 17.02  $17.02  $21.75    +0.00    +4.73
+    +1.6% revenue in FY25
+  CDBU                          $ 10.38  $10.38  $13.26    +0.00    +2.88
+    +45.0% revenue in FY25
+  AEBU                          $  6.82  $ 6.82  $ 8.72    +0.00    +1.90
+    +2.6% revenue in FY25
+  All Other                     $  0.02  $ 0.02  $ 0.02    +0.00    +0.00
+    -64.9% revenue in FY25
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $ 53.65  $53.65  $68.56    +0.00   +14.91
+  FY2026E = FY25 $37.378B × (1 + 43.5%: the Q1 FY26 revenue guide (Q4 FY25 results (8-K ex.99.1, Business Outlook)), YoY, applied to the year (no FY26 revenue guide)); split pro rata to FY25 segment revenue (FY2025 10-K)
+  Q4 FY25 (Sep 23): revenue $11.315B +46.0% YoY (+21.7% QoQ); inventories -5.9%; R&D + SG&A +13.6%;
+  gross margin 44.67% (+935.0bp); operating margin 32.29% (+1265.5bp); EPS $2.83 vs $0.79
+  Revenue: revenue $11,315M vs $7,750M a year earlier, $9,301M the quarter before; inventories $8,355M (2025-08-28) vs $8,875M a year earlier (the release's prior year-end column); GAAP diluted EPS $2.83 vs $0.79; diluted shares 1131.0M
+  Q1 FY26 outlook (Q4 FY25 results (8-K ex.99.1, Business Outlook)): revenue $12,500.0M ±$300.0M, i.e. $12,200.0M-$12,800.0M ('Revenue | $12.50 billion ± $300 million | $12.50 billion ± $300 million') against Q1 FY25's $8,709.0M: +40.1% to +47% YoY; display only: GAAP (non-GAAP) gross margin 50.5% ± 1.0% (51.5% ± 1.0%), operating expenses $1.49 billion ± $20 million ($1.34 billion ± $20 million), diluted EPS $3.56 ± $0.15 ($3.75 ± $0.15); no fiscal-year revenue, EPS or margin guide
+
+  FY2026E EPS check:  $53.650B × 25.8% pre-tax × (1−11.6%) ÷ 1.131B  =  $10.83  (FY2026E: no EPS guide in numbers, FY25's $7.59 stands)
+  FY2028E BEAR check: $53.650B × 25.8% ÷ 1.152B  =  $10.63  (scenario $1.40)
+  FY2028E BULL check: $68.560B × 26.2% ÷ 1.152B  =  $13.80  (scenario $15.44)
+  Every 1pp of pre-tax margin ≈ $0.419 EPS ≈ $4.65/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Revenue growth                        -86.0%   ≥-38.0%     ≥9.0%   ≥147.0%    +46.0%  ▲ BULL  ███░
+  Gross margin change                 -9420.0bp  ≥-4820.0bp  ≥-230.0bp  ≥3050.0bp  +935.0bp  ▲ BULL  ███░
+  Opex growth less revenue            +109.0pp   ≤55.0pp    ≤2.0pp  ≤-102.0pp   -32.4pp  ▲ BULL  ███░
+  Inventory growth less revenue        +97.0pp   ≤51.0pp    ≤5.0pp  ≤-43.0pp   -51.9pp  ★ XBULL  ████
+  Operating margin change             -12480.0bp  ≥-6240.0bp    ≥0.0bp  ≥4400.0bp  +1265.5bp  ▲ BULL  ███░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    3.00 / 4.00
+  Market composite:   2.23 / 4.00  (back-solved from $241.14 + 15% hurdle)
+  SCA adjustment:    +0.10  ·  EPP-distance adj -0.30  →  Adj composite 2.80  →  Gap +0.57  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY25 net sales +48.9%, gross margin 39.8%; Q4 gross margin 44.67% (+935bp YoY)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 31.8x FY26E vs a 11.1x 9.3-yr ex-FY16 ex-FY23 median (88th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: Q1 FY26 revenue guide (Q4 FY25 results (8-K ex.99.1, Business Outlook)) +40.1-47% vs a 29.3% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  Cash and short-term investments $10.307B, long-term debt $14,017M and current debt $560M (Q4 FY25), FY25 free cash flow $1.668B (net cash provided by operating activities $17,525M less expenditures for property, plant, and equipment $15,857M), dividend $0.46 a year  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Revenue growth                        +46.0%    -86.0%  -132.0%  Oversupply and falling selling prices…
+  Gross margin change                 +935.0bp  -9420.0bp  -10355.0bp  Selling prices fall faster than cost …
+  Opex growth less revenue             -32.4pp  +109.0pp  +141.4pp  R&D and SG&A do not come down with re…
+  Inventory growth less revenue        -51.9pp   +97.0pp  +148.9pp  Inventory builds ahead of demand: wri…
+  Operating margin change             +1265.5bp  -12480.0bp  -13745.5bp  Operating leverage works in reverse
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$85.32  (model)  /  $6.16 (defined)
+  Bear probability (proxy model):  4.6%
+
+  KEY TRIGGER: revenue went from +36.6% (Q3 FY25) to +46.0% YoY (Q4 FY25), +21.7% on the quarter before;
+  the bear case needs a downturn in gross margin (+935.0bp now)
+  and inventories (-51.9pp against revenue) giving way. A memory downturn shows up in average selling prices and inventories
+  first; the bear needs it in gross margin as well.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $7.59  (FY2026E: no EPS guide in numbers, FY25's $7.59 stands)
+  Min viable P/E at panic:          7x  [median of calendar-year P/E lows: 2016 3.8x, 2017 2.8x, 2018 3.4x, 2019 5.6x, 2020 8.7x, 2021 8.6x, 2022 6.9x, 2023 92.2x, 2024 11.1x, 2025 8.5x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $53.13/share
+  Current $241.14 vs Updated EPP $53.13:  +354%  ⚠ far above floor — large drawdown room
+  Bear $6.16 vs Updated EPP $53.13:  -88%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.30 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Revenue growth                               -38.0      -84.0   BASE floor (vs +46 now)
+  Gross margin change                        -4820.0    -5755.0   BASE floor (vs +935 now)
+  Opex growth less revenue                      55.0      +87.4   BASE floor (vs -32 now)
+  Inventory growth less revenue                 51.0     +102.9   BASE floor (vs -52 now)
+  Operating margin change                    -6240.0    -7505.5   BASE floor (vs +1266 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $7.59 × (1+40.6%)² = $15.01
+  At 11x P/E (conservative):  $165.14/share
+  + Cumul. dividends (2yr):  +$0.95/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $165.14  (▼76.00 from $241.14)
+  Conservative total return:  -31% over 2yr  = -16%/yr
+
+  40.6% EPS growth is what is left once the premium multiple (31.8x)
+  mean-reverts to 11x. Breakeven at 11x needs FY2028E EPS of $21.84,
+  i.e. 69.6%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $61.54  –  $264.75  (at 88th pct of range)
+  Annual dividend:      $0.46/share  (yield 0.2%)
+  Realized vol:         64% annualized (1-yr daily log returns)
+  Beta vs broad market: 2.26
+  1-sigma range (1yr):  $85.85  –  $396.43  ($241.14 ± 64%)
+  2-sigma range (1yr):  $-69.45  –  $551.73
+  ────────────────────────────────────────────────────────────
+  Bear $6.16 requires:  ~1.5σ price move  (unusual — requires fundamental break)
+  A memory maker whose selling prices follow industry supply: the stock is +273% off its April
+  low (52 weeks) while revenue went from +36.6% (Q3 FY25) to +46.0% YoY (Q4 FY25), +21.7% on the quarter before.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        1.40    4.4x  $   6.16     4.6%     14.2%    -9.6pp  EPS -57.0%/yr (worst year FY17-FY25 ex-FY23, capped at 0%); P/E to its 10th pct
+  BASE       15.44   11.1x  $ 171.38    15.9%     49.5%   -33.6pp  EPS +42.6%/yr (Q1 FY26 guide YoY + margin + buyback); P/E at its 9.3-yr ex-FY16 ex-FY23 median
+  BULL       15.44   19.0x  $ 293.36    55.5%     30.5%   +24.9pp  EPS +42.6%/yr (FY17-FY25 ex-FY23 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL      24.82  100.7x  $2,499.37    24.1%      5.8%   +18.3pp  EPS +80.8%/yr (best 2-yr run FY17-FY25 ex-FY23, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $792.59  /  Market EV: $319.45  /  Current: $241.14
+  Conservative EV (2yr, ④): $165.14 + $0.95 divs = $166.08 total value
+  Downside (→ Bear $6.16): 97.4%   Upside (→ Bull $293.36): 21.7%   Ratio B 4.50x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $241.14 the market needs $318.91 in two years —
+  above the BULL case. That is a market composite of 2.23 against a model
+  read of 2.80: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       4.50x    +354%    +0.57  UNDERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     0.18x    +354%    +1.38  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)      infx    +354%    -0.58  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          3.84x    +354%    +0.60  UNDERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                          5.41x    +354%    +0.55  UNDERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             4.50x    +354%    +0.87  UNDERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 4.50x    +218%    +0.57  UNDERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    4.50x    +354%    +0.64  UNDERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 FY26 print (the quarter ends in late November) — revenue against the Q1 FY26 revenue guide (Q4 FY25 results (8-K ex.99.1, Business Outlook)): +40.1-47% YoY
+  (2) Gross margin — +935.0bp in Q4 FY25: selling prices against cost per bit, what must hold if revenue does not
+  (3) The Q1 FY26 guide — revenue $12,500.0M ±$300.0M, i.e. $12,200.0M-$12,800.0M (+40.1% to +47% YoY): Micron guides one quarter at a time, in revenue
+  (4) Inventories — -5.9% against revenue +46.0% in Q4 FY25 (-51.9pp): write-downs follow if selling prices fall below cost
+  (5) Capital structure at 32x — 'On September 23, 2025, Micron’s Board of Directors declared a quarterly dividend of $0.115 per share, payable in cash on October 21, 2025, to shareholders of record as of the close of business on October 3, 2025.' (Q4 FY25 results (8-K ex.99.1))
+  ✕ AVOID  |  EPP floor $53.13  |  ADD below ~$145.67  |  TRIM above $293.36
+════════════════════════════════════════════════════════════════════════
+
