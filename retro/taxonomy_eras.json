@@ -2331,6 +2331,18 @@
     "first_seen": "2026-11-06",
     "approx": true,
     "note": "a later Charter video package name (CHTR); first in the 8-Ks and 10-Ks of CIK 1091667 downloaded for \"CHTR 2022-2026\" (8-K 0001091667-26-000072, the Q3 2026 release); other filings not searched"
+   },
+   {
+    "term": "Viper Energy",
+    "first_seen": "2013-11-06",
+    "approx": true,
+    "note": "Diamondback's later mineral-interest subsidiary and its partnership (FANG); first in the Diamondback filings downloaded for \"FANG 2008-2009\" (2012-02 to 2014-03): exhibit 10.3 of the Q3 2013 10-Q 0001539838-13-000093, accepted 2013-11-05 16:37 ET (after the close); earlier filings of other issuers not searched, and \"Viper\" alone is a 2013 well name (the Q2 2013 release), so only the two words are listed; no FANG model is built"
+   },
+   {
+    "term": "Rattler Midstream",
+    "first_seen": "2017-04-26",
+    "approx": true,
+    "note": "Diamondback's later midstream subsidiary (FANG); first hit of EDGAR full-text search for filings under CIK 1539838 (from 2012): the S-4 0001193125-17-139727 filed 2017-04-26; not read beyond the search result; no FANG model is built"
    }
   ]
  }
