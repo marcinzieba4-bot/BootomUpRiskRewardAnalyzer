@@ -1,0 +1,42 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "FANG",
+ "as_of": "2026-05-15",
+ "computed": "2026-11-28",
+ "data_source": "Yahoo Finance daily closes + dividends (FANG, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2026-11-13",
+   "price": 184.93,
+   "dividends": 2.28,
+   "total_return_pct": -8.0,
+   "benchmark_total_return_pct": 2.6,
+   "excess_pct": -10.6,
+   "hurdle_pct": 7.2
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2026-10-30",
+   "price": 212.08
+  },
+  "low": {
+   "date": "2026-07-01",
+   "price": 171.96
+  },
+  "max_drawdown_pct": -18.3,
+  "return_to_avg_price_m12_m24_pct": null
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "CYCLICAL",
+   "risk": 2
+  },
+  "today": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Diamondback: lowest-cost Permian E&P; oil price",
+   "reviewed": "2026-09-22"
+  }
+ }
+}
