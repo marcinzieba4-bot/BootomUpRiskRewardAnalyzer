@@ -33178,7 +33178,11 @@ Controls and checks (before any outcome):
   **Forward references:** 0 in 77 facts. **Self-text scan:** 27 tokens of 871, all benign: 23 computed net margins (revenues less cost
   of sales and fuel, in no filing by construction) and the Q4 2021 print's carried method text ("ONE Gas", "2014", "April", "May").
 - **Regression:** the 2008-2021 models (732) rebuild byte-identical with the extended sheet and builder.
-- **Firewall:** run after this section was committed and pushed, before any outcome; its result follows in the next commit.
+- **Firewall** (run after the build, validation outputs and README section were committed and pushed, before any outcome), at the 9
+  cutoffs above (the Q4 2021 print, the FY2021 vintage, the Q3 2023 consolidated guide, the FY2023 vintage, the Q3 2024 stand-alone
+  guide, the FY2024 vintage with the 2025 guidance 8-K, the FY2025 vintage, the Q3 2026 print and 2026-11-28): it passes at all 9, 740
+  to 988 dates each (2008-2021 included), 0 files changed and no planted text. Besides the earlier plants, each cutoff plants the
+  vintage's climate risk heading, cloud vendor words and AI words.
 
 Seen in the build (method behaviour, not tuned):
 - **CHEAP 242, FAIR 14 of 256 dates;** legacy tiers BUY 220, ACCUMULATE 29, WATCHLIST 7. 2022-2023: CHEAP on all 104; 2024: CHEAP 50,
