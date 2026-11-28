@@ -405,12 +405,12 @@ drawdown -31.3 -31.3
 
 ## What the 2018-2021 labels suggest (hypotheses only)
 
-- The class sorted the four years badly at first and well later. The CHEAP dates of 2018-2019 (72 of them) lost 9-53% over two years,
-  every one into the March 2020 collapse (drawdowns to -80%); the CHEAP dates from 2020-02-26 on (96) gained +13% to +281%, and the call
-  held on 94 of them. The 2018-2019 CHEAP calls priced the merged company's guided earnings at 20-25x against a window median of 32x
+- The class sorted the four years badly at first and well later. The CHEAP dates of 2018-2019 (72 of them) mostly lost over two years
+  (medians -36% to -11% by group, -53% to +31% in all; 1 of 72 beat SPY), their horizons running into the March 2020 collapse (drawdowns
+  to -80%); the CHEAP dates from 2020-02-26 on (96) returned -2.5% to +281%, and the call held on 94 of them. The 2018-2019 CHEAP calls priced the merged company's guided earnings at 20-25x against a window median of 32x
   built on the smaller pre-merger earnings: a cheapness that came from the window's composition more than from the price.
 - The FAIR dates of early 2018 (FY17E on the Q3 2017 range) gained +36% to +52% over two years, the only FAIR group to clear the hurdle;
-  the FAIR dates later in 2018 and in late 2019 lost 6% to 53%.
+  the FAIR dates later in 2018, in late 2019 and in early 2020 mostly lost (to -53%; 7 of the 27 WATCHLIST FAIR dates cleared the hurdle).
 - The guides did not anticipate 2020: FY20E $3.55 (February 2020) sat beside a -80% drawdown within weeks, and the withdrawn-and-replaced
   outlook ($500-900M) is what the CHEAP calls of April-December 2020 rested on. The sensitivity shows the outlook itself moved only one
   class; the window and the guides carried the result.
