@@ -31084,6 +31084,17 @@ Diamondback's own EPS is FY2013; EDGAR lists its Q4 2013 release and FY2013 10-K
 was **not determined** in this session: finding it, and choosing the signals and their rule-T values, is a new batch and the owner's
 call (the CHTR stop).
 
+**The first buildable date, as far as the filings to 2013 show it** (the owner's instruction, relayed by the coordinator: start a short
+history at its first usable point). No filing to 2013-12-31 contains a full year of Diamondback's own EPS, so the first buildable date
+cannot come before the first filing that reports FY2013. EDGAR's index (filing metadata, not content) dates the Q4 2013 release and the
+FY2013 10-K 2014-02-20 (both accepted 2014-02-19 after the close), so the earliest candidate is the week of 2014-02-17: 2014-02-20 under
+the builders' earnings-week rule (the first trading day after the release), 2014-02-21 as the gate's last trading day of the week. It is
+a candidate only: it holds if FY2013 is a positive GAAP year that passes the AAPL FY2002 test and its mirror, which was not checked
+because those filings were not read. From that date the bounds rule covers the short history (one year: BEAR at the 0% cap, BULL at
+BASE's rate, XBULL at BULL's) and the listing rule the window (from 2012-10-12), as for AVGO, V, KMI, CTVA and LYB. The next range
+session starts there. Starting earlier would need a new rule (an anchor on a partial year, a pro forma figure or Windsor Permian's
+history), each the owner's call: only the pro forma $0.60 would add dates (44, below).
+
 **A full-data batch.** `www.sec.gov` served every filing document to the plain client name of `edgar.py` (no contact address; the owner's
 email was not used). Read, by the session's model directly with no delegated transcription: the S-1/A Amendment No. 6 and the 424B4
 (the selected historical data, the pro forma per-share rows, the cover and the listing sentences), the Form 8-A12B, the FY2012 10-K
