@@ -418,3 +418,90 @@ drawdown -31.3 -31.3
   too pessimistic for a two-year horizon that contained 2020.
 - None of this justifies a rule change: reading the merger as a break in the window, or discounting guides in a commodity downturn,
   would be rules fitted to this outcome and would need a new method version, a full re-run and a recorded reason.
+
+# OKE 2022-2026 (hindsight)
+
+Computed after the 2022-2026 build, validation outputs, README section and firewall result were committed and pushed
+(`retro_tool.py outcome` on the 256 dates: 255 outcomes, the last date, 2026-11-27, has no later close yet; tables from
+`python3 retro/generators/oke/findings_tables.py 2022,2023,2024,2025,2026`, the 1-year table from the outcome files). These are labels,
+never inputs: nothing here may feed `retro/facts/OKE.json`, `retro/build_oke.py`, the engine or a rule. The earlier OKE findings were not
+opened in building this batch; this section was appended after reading only the 2018-2021 section's layout.
+
+Overall: 2-year outcomes exist for the 151 dates to 2024-11-22. CHEAP 150 of them, median 2-year total return +28.4%, 67 cleared the
+15%/yr hurdle, 76 beat SPY; FAIR 1 (2024-11-22), -20.7%. Scenario landings: BASE 108, BEAR 43. The horizons of 2025-2026 are 1-year or
+6-month only.
+
+## 2022 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY (2022-01-07 to 2022-12-30) | 52 | +48.9% | +18.8% to +95.2% | 35 | 50 | +20.4% | 51 |
+| FY21E $3.33 (the Q3 2021 release's $3.33) (2022-01-07 to 2022-02-25) | 8 | +26.7% | +18.8% to +32.6% | 1 | 8 | +4.5% | 8 |
+| FY22E $3.76 (the Q4 2021 release's $3.45-4.07) (2022-03-02 to 2022-12-30) | 44 | +58.8% | +20.3% to +95.2% | 34 | 42 | +24.6% | 43 |
+| latest print Q3 2021 (2022-01-07 to 2022-02-25) | 8 | +26.7% | +18.8% to +32.6% | 1 | 8 | +4.5% | 8 |
+| latest print Q4 2021 (2022-03-02 to 2022-04-29) | 9 | +23.3% | +20.3% to +39.1% | 1 | 9 | -2.5% | 9 |
+| latest print Q1 2022 (2022-05-05 to 2022-08-05) | 14 | +48.9% | +29.6% to +65.8% | 12 | 12 | +24.7% | 13 |
+| latest print Q2 2022 (2022-08-10 to 2022-10-28) | 12 | +73.7% | +48.6% to +95.2% | 12 | 12 | +32.5% | 12 |
+| latest print Q3 2022 (2022-11-03 to 2022-12-30) | 9 | +75.9% | +65.2% to +86.6% | 9 | 9 | +29.9% | 9 |
+3y (52 dates with one): 24 of 52 cleared, 21 beat SPY; range +25.3% to +107.4%
+
+## 2023 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY (2023-01-06 to 2023-12-29) | 52 | +36.1% | +11.1% to +85.2% | 31 | 25 | +39.6% | 31 |
+| FY22E $3.76 (the Q4 2021 release's $3.45-4.07) (2023-01-06 to 2023-02-24) | 8 | +57.2% | +53.4% to +67.5% | 8 | 8 | +29.3% | 8 |
+| FY23E $5.36 (the Q4 2022 release's $5.03-5.69) (2023-03-01 to 2023-08-04) | 23 | +45.9% | +32.8% to +85.2% | 23 | 17 | +45.8% | 23 |
+| FY23E $5.54 (the Q2 2023 release's $5.54) (2023-08-09 to 2023-10-27) | 12 | +23.5% | +12.2% to +28.7% | 0 | 0 | +40.9% | 0 |
+| FY23E $5.36 (the Q3 2023 release's $5.36) (2023-11-02 to 2023-12-29) | 9 | +16.4% | +11.1% to +21.6% | 0 | 0 | +23.2% | 0 |
+| latest print Q3 2022 (2023-01-06 to 2023-02-24) | 8 | +57.2% | +53.4% to +67.5% | 8 | 8 | +29.3% | 8 |
+| latest print Q4 2022 (2023-03-01 to 2023-04-28) | 9 | +54.2% | +35.1% to +85.2% | 9 | 9 | +41.2% | 9 |
+| latest print Q1 2023 (2023-05-04 to 2023-08-04) | 14 | +45.9% | +32.8% to +58.3% | 14 | 8 | +50.6% | 14 |
+| latest print Q2 2023 (2023-08-09 to 2023-10-27) | 12 | +23.5% | +12.2% to +28.7% | 0 | 0 | +40.9% | 0 |
+| latest print Q3 2023 (2023-11-02 to 2023-12-29) | 9 | +16.4% | +11.1% to +21.6% | 0 | 0 | +23.2% | 0 |
+3y (47 dates with one): 32 of 52 cleared, 3 beat SPY; range +21.6% to +83.5%
+
+## 2024 (47 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY (2024-01-05 to 2024-10-25) | 43 | +18.1% | +1.0% to +32.2% | 1 | 1 | -2.4% | 2 |
+| class CHEAP, legacy tier ACCUMULATE (2024-10-31 to 2024-10-31) | 1 | +8.8% | +8.8% to +8.8% | 0 | 0 | -12.0% | 0 |
+| class CHEAP, legacy tier WATCHLIST (2024-11-08 to 2024-11-15) | 2 | -10.6% | -12.7% to -10.6% | 0 | 0 | -19.9% | 0 |
+| class FAIR, legacy tier WATCHLIST (2024-11-22 to 2024-11-22) | 1 | -20.7% | -20.7% to -20.7% | 0 | 0 | -26.1% | 0 |
+| FY23E $5.36 (the Q3 2023 release's $5.36) (2024-01-05 to 2024-02-23) | 8 | +22.2% | +14.0% to +32.2% | 1 | 0 | +15.3% | 1 |
+| FY24E $4.795 (the Q4 2023 release's $4.45-5.14) (2024-02-28 to 2024-04-26) | 9 | +21.5% | +15.1% to +27.4% | 0 | 1 | -0.9% | 1 |
+| FY24E $4.92 (the Q1 2024 release's $4.92) (2024-05-02 to 2024-10-25) | 26 | +16.6% | +1.0% to +26.7% | 0 | 0 | -4.4% | 0 |
+| FY24E $5.02 (the Q3 2024 release's $5.02) (2024-10-31 to 2024-11-22) | 4 | -10.6% | -20.7% to +8.8% | 0 | 0 | -19.9% | 0 |
+| latest print Q3 2023 (2024-01-05 to 2024-02-23) | 8 | +22.2% | +14.0% to +32.2% | 1 | 0 | +15.3% | 1 |
+| latest print Q4 2023 (2024-02-28 to 2024-04-26) | 9 | +21.5% | +15.1% to +27.4% | 0 | 1 | -0.9% | 1 |
+| latest print Q1 2024 (2024-05-02 to 2024-08-02) | 14 | +21.9% | +13.8% to +26.7% | 0 | 0 | -2.4% | 0 |
+| latest print Q2 2024 (2024-08-07 to 2024-10-25) | 12 | +11.6% | +1.0% to +18.1% | 0 | 0 | -10.0% | 0 |
+| latest print Q3 2024 (2024-10-31 to 2024-11-22) | 4 | -10.6% | -20.7% to +8.8% | 0 | 0 | -19.9% | 0 |
+3y: none yet
+
+## 2024-2026 at shorter horizons
+
+| Year, class | Dates | Median 6-month total return | Median 1-year total return (range) | 1-year excess over SPY (median) | 1-year ≥15% | Beat SPY over 1 year |
+|---|---|---|---|---|---|---|
+| 2024 CHEAP | 50 | +21.2% | +4.8% (-32.6% to +61.2%) | -8.8% | 13 | 18 |
+| 2024 FAIR (2024-11-22, 2024-11-29) | 2 | -27.9% | -34.2% (-36.2% to -32.3%) | -47.5% | 0 | 0 |
+| 2025 CHEAP | 51 (46 with 1 year) | -7.3% | +14.7% (-24.5% to +51.8%) | -10.1% | 23 | 16 |
+| 2025 FAIR (2025-01-17) | 1 | -23.5% | -27.9% | -44.9% | 0 | 0 |
+| 2026 CHEAP | 36 (18 with 6 months) | +12.1% | n/a | n/a | n/a | n/a |
+| 2026 FAIR | 11 (3 with 6 months) | -0.5% | n/a | n/a | n/a | n/a |
+
+## What the 2022-2026 labels suggest (hypotheses only)
+
+- Every 2022-2023 date was CHEAP and the call mostly held: 2-year medians of +49% (2022) and +36% (2023), all positive, 66 of 104
+  clearing the hurdle; but the 2023 dates after the Q2 2023 print (FY23E $5.54, then the consolidated $5.36) returned only +11% to +29%
+  and none beat SPY, as the Magellan shares and the late-2024 peak were followed by a fall.
+- The CHEAP dates of 2024 returned -13% to +32% over two years (1 of 46 beat SPY), and the FAIR dates at the late-2024 peak ($109-117)
+  lost 32-36% over one year (-21% over two for the one with a 2-year horizon): the class flagged the peak as less cheap, but the CHEAP label itself did not separate well once the window's median fell
+  toward 21x.
+- The CHEAP calls rest above all on the ten-year window (the sensitivity: a five-year window moves 74 classes, mostly CHEAP to FAIR or RICH
+  from 2024-04 on). With hindsight the five-year reading would have flagged the 2024-2025 dates that lagged SPY; that is exactly the kind
+  of rule fitted to an outcome the method forbids without a new version, a full re-run and a recorded reason.
+- The deal-basis readings (Q3 2023 consolidated, Q3 2024 stand-alone) and the one-off tests moved 0-2 classes: the results did not turn
+  on them.
+- None of this justifies a rule change.
