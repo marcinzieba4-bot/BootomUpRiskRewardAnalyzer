@@ -31167,7 +31167,13 @@ Controls and checks (before any outcome):
   rounded from the release's $3,984,968 thousand.
 - **Regression:** the shared code is untouched (the firewall tool gains an OKE entry, `taxonomy_eras.json` the five terms); rebuilding NEM
   2008-2009 and KMI 2013-2014 changes nothing.
-- **Firewall:** see below.
+- **Firewall** (run after the build, validation outputs and README section were committed and pushed, before any outcome): it passes at
+  all 11 cutoffs above (2008-01-11, every print, vintage and guidance 8-K date of the range, and 2010-01-01: 1 to 105 dates each), 0 files
+  changed and no planted text. The plants: a print with absurd revenues, net margin, Distribution operating income, margins, EPS, notes
+  and raw figures; a later vintage whose texts, figures, window start and exclusions are planted; a later EPS guide for every guided year
+  and for the cutoff's year and the next; a dividend, a listing, a company name, a display guide and prices from the cutoff multiplied
+  by 10. As positive controls, a planted print dated 2008-07-01 with its own source reaches 2008-07-03 (its text in the model) and not
+  2008-06-27; the same print citing a source published after AS_OF stops at the builder's check that every source is public on AS_OF.
 
 Seen in the build (method behaviour, not tuned). The window holds 2002-2009 days on ONEOK's own earnings, a median of 13.0-13.6x:
 - **CHEAP 58, RICH 32, FAIR 15 of 105 dates;** legacy tiers BUY 72, ACCUMULATE 21, WATCHLIST 9, AVOID 3. 2008: CHEAP 29, FAIR 15, RICH 8;
