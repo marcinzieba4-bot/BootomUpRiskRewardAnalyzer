@@ -31480,7 +31480,10 @@ Controls and checks (before any outcome):
   (2015, 2016 and "through 2018"); no term of the anachronism list.
 - **`retro_tool run`:** passes on all 209 dates, with 78 calendar-year warnings, all the dividend outlooks' own years (2015 on 11 dates
   of late 2014, 2016 and 2018 on 9 of late 2015, 2018 on 58 of 2016-2017: the buy-in 8-K's "through 2018").
-- **Firewall:** see below (run after the build was committed, before any outcome).
+- **Firewall** (run after the build was committed, before any outcome): passes at 55 cutoffs (each fact date of 2014-2017 and the day
+  after it, 2015-01-01, 2015-12-12 and 2018-01-01; listed above), with 0 files changed and no planted text (104 to 307 earlier dates
+  each). The TRGP plant now also plants a later restatement of the last print, a later revenue revision of every year and the vintage's
+  theme-clause words (the greenhouse gas, refinery services and splitter quotes).
 
 Seen in the build (method behaviour, not tuned):
 - **Totals: CHEAP 107, RICH 61, FAIR 41.** RICH on the 6 dates before the Q4 2013 print (FY12's $0.91 at 95-102x); CHEAP from the Q4 2013
