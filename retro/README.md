@@ -29588,6 +29588,184 @@ Judgement calls that could carry hindsight:
 
 The hindsight results are in `staging/retrospective/NEM/FINDINGS.md`, labelled as hindsight: hypotheses, never inputs.
 
+### NEM 2022-2026: the FY2021-FY2025 vintages from three-year statements, FY2021 excluded (the Yanacocha reclamation charges), FY2022 and FY2023 losses, Newcrest, a Q4 print ahead of its 10-K, the co-product CAS from the summary table, GENAI and GLP1 out of scope, the last date 2026-11-27
+
+256 weekly dates, 2022-01-07 to 2026-11-27 (52, 52, 52, 52, 48), added to the 732 of 2008-2021 at the owner's request ("find newest
+code. do retrospective analysis for NEM, 2022-2026. same rules as before"), on the same fact sheet, builder, engine, method (r2) and
+1997-2006 rule-T thresholds. The code is the coordinating session's branch `claude/sharp-albattani-rdvlgi` (its commit "Merge NEM 2018-2021
+... with CHTR 2022-2026"); nothing else was merged in, and a parallel LYB session changes only its own entries in the shared files.
+**Built in a new session without opening the 2008-2021 outcomes or findings** (`FINDINGS.md`, `SERIES.md` and every earlier
+`outcome.json` were left unread). No fact, parameter, outcome or finding of another ticker enters an NEM model.
+
+**The last date.** The series was built on Friday 2026-11-27 after that day's close (13:00 ET, an early close; the build ran from about
+19:00 ET, and Yahoo's `regularMarketTime` for the day is the 13:00 close), so that week is complete and its last trading day,
+2026-11-27, is the last date: the rule of the CRM, SCHW, NEE and CHTR 2022-2026 batches (a week whose bar is not yet a close is left out),
+applied at this build's time. Those batches were built during the session of 2026-11-27 and so end on 2026-11-20; this one has one more
+week. The newest dates have no outcome yet.
+
+```bash
+python3 retro/tools/edgar.py fetch 1164727 <dir> --from 2022-01-01 --to 2026-11-28 --forms 8-K 8-K/A 10-K 10-K/A 10-Q
+python3 -I retro/generators/nem/gen_nem_2226.py --filings <dir> --facts-in <scratch>/NEM_0821.json   # the 2008-2021 sheet -> retro/facts/NEM.json
+python3 -I retro/tools/verbatim.py <dir>/checklist_nem_2226.json                                       # 90/90
+python3 retro/build_nem.py --weekly 2022-01-01 2026-11-27                   # 256 dates, 2022-01-07 .. 2026-11-27
+for d in staging/retrospective/NEM/202[2-6]-*/; do
+  python3 retro/retro_tool.py --archive staging/retrospective run "$d"
+  python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
+done
+python3 retro/retro_tool.py --archive staging/retrospective series NEM
+for c in 2022-01-10 2022-02-24 2022-04-22 2023-02-23 2024-02-22 2024-02-29 2025-02-21 2025-07-25 2026-02-20 2026-10-23 2026-11-28; do
+  python3 retro/tools/firewall.py $c NEM; done
+python3 retro/generators/nem/controls_nem_2226.py --from 2021-06-01; python3 retro/generators/nem/sens_nem_2226.py <scratch>
+```
+
+**A full-data batch.** `www.sec.gov` served every document to `edgar.py`'s plain client name (no contact address; the owner's email was
+not used). Read, by the session's model directly with no delegated transcription: the twenty earnings releases of Q4 2021 to Q3 2026
+(8-K exhibit 99.1: the statements of operations, the balance sheets, the costs applicable to sales reconciliations, the 'Summary of
+Results' tables from Q4 2025, the adjusted net income reconciliations, the dividend lines and the outlook bullets); the FY2021-FY2025 10-Ks'
+results and highlights tables, statements of operations, balance sheets and cash flow lines, Items 1 and 1A (the 'why', the climate,
+crypto and AI words) and the dividend sentence of the FY2023 10-K; the 10-K/A of 2022-07-28 (it re-files Item 8 only to amend NGM's
+auditor's report: "there have been no changes to the Company’s financial statements"); the 8-K of 2023-07-20 recasting the FY2022 10-K's
+Items 1, 2, 7 and 8 for the new segments (its statements of operations asserted equal to the FY2022 10-K's). Every other 8-K of January
+2022 to November 2026 was read by its items and exhibit headings, and the filed earnings presentations and call excerpts (2023-02-24,
+2023-04-28, 2023-07-21) and the Newcrest investor presentations (2023-05-16, 2023-05-20) were searched for a revenue, EPS or margin guide:
+none states one. **Not read:** the 10-Qs (no figure the models read comes from them: the releases' own statements give the diluted
+shares), the proxy statements, the Newcrest scheme booklet and S-4 materials, the pro forma statements (8-K/A of 2023-11-20, 8-K of
+2024-07-26; unused, as before) and the website guidance and presentations not filed. Each source's date is EDGAR's acceptance time; the
+new ids are `NM98`-`NM102` (the 10-Ks) and `NM103`-`NM122` (the releases). The generator reads each raw figure from its own row by label,
+computes every rate, asserts every quote verbatim, asserts that each Q4 print's year equals the 10-K that comes with it, that each Q4
+adjusted net income reconciliation adds up, and that every 2008-2021 fact is unchanged. Decided on 2026-11-27/28, before any 2022-2026
+model was built or any outcome computed:
+
+- **Release timing.** To Q1 2024 every earnings 8-K was accepted before the open (07:00-07:03 ET); the Q1 2022 release came on a Friday
+  (2022-04-22) and dates its own week ("day of the print, public before the open"). From Q2 2024 every release was accepted after the
+  close (16:01-16:06 ET) and counts from the next trading day (the AVGO, CRM and SCHW rule, already in the builder): Q2 and Q3 2024 and
+  Q1 2025 on a Wednesday (dated Thursday, the week's date Friday); Q4 2024, Q2 and Q3 2025 and Q4 2025 to Q3 2026 on a Thursday (dated
+  Friday, meeting that Friday's close). The 10-Ks came the same day as the Q4 releases (FY2021 and FY2022 before the open; FY2024 at
+  20:20 ET and FY2025 at 16:18 ET, both dated the next day with their release), except FY2023's (below).
+- **Five more vintages,** each from its 10-K, each holding the ten fiscal years to the latest one. The FY2021-FY2025 10-Ks reserve Item 6
+  (asserted), so each vintage takes its three years from the statements of operations and keeps the earlier years as the previous vintage
+  holds them (the FY2020 and ACN FY21 rule); the franchise line (consolidated gold ounces sold, costs applicable to sales per ounce), free
+  cash flow, sales by metal and the regular dividends declared come from the results and highlights table. Neither the 10-K/A of
+  2022-07-28 nor the segment recast of 2023-07-20 changes a figure the models read, so neither is a vintage (the 8-Ks of 2009-09-15,
+  2014-06-13 and 2018-04-26 were vintages because they restated EPS; decided here, no class either way).
+- **EPS: GAAP diluted EPS from continuing operations,** each Q4 release's listed items summed, recurring ones included (the FY2011, FY2015
+  and FY2018 encoding), as the adjusted net income still removes items that recur (the PEP 2008 core rule):
+  - **FY2021 is excluded by the AAPL FY2002 test:** the Q4 2021 release's items in continuing operations net to $1,262M (the $983M of
+    reclamation and remediation charges, mainly the non-operating Yanacocha sites, the $372M loss on assets held for sale, the investment
+    marks, the valuation allowance, less the $212M of gains on asset sales and the tax effect) against $1,109M of income from continuing
+    operations attributable to Newmont, so reported EPS ($1.39) is under half the year's EPS without them ($2.96 adjusted, which also
+    removes recurring items); excluded as the latest year, then a gap. **The batch's largest call** (below).
+  - **FY2022 is a loss** ($(0.58); the Q4 2022 release's adjusted $1.85) and **FY2023 is a loss** ($(2.97) in the Q4 2023 release,
+    $(3.00) in the FY2023 10-K; adjusted $1.61, then $1.57): each excluded as the latest year, then a gap.
+  - **FY2024 is kept at GAAP $2.86** (its items net to $711M of charges, the $1,114M loss on the non-core assets held for sale above all,
+    against $3,280M) and **FY2025 at GAAP $6.39** (items net to $549M of charges against $7,085M: the $1,066M gain on the non-core sales
+    against the $841M of impairments and the $883M valuation allowance), neither test met.
+  - So the anchor (the rollover rule; no filing guides EPS): FY20's $3.31 from the FY2020 10-K to 2025-02-14 (163 dates of the range),
+    with FY2021-FY2023 all gaps ("ex-FY21 ex-FY22 ex-FY23" beside the 2015-2019 gaps), FY24's $2.86 from 2025-02-21 (52) and FY25's $6.39
+    from 2026-02-20 (41). By 2024 the P/E window holds only 2014, 2020 and the current year's days; by 2026 only 2020, 2024 and 2025.
+- **A Q4 print ahead of its 10-K.** The Q4 2023 release (2024-02-22, before the open) came a week before the FY2023 10-K (2024-02-29) and
+  is preliminary ("Newmont’s actual consolidated financial results remain subject to completion of our annual audit procedures"). Its
+  year extends the FY2022 vintage from the print until the 10-K (`fy_actual`, the NEE and LYB encoding, new in `build_nem.py`): FY2023 at
+  $(2.97), a loss, so an excluded year, with the release's revenue, diluted shares, pre-tax margin, tax rate and franchise line; one date
+  (2024-02-23). The 10-K's $(3.00) and pre-tax $(2,031)M (the release's $(1,971)M) take over from 2024-03-01. No class moves either way
+  (FY2023 is a loss on both).
+- **Two release layouts.** To Q4 2023 the statements give the quarter against the year-ago quarter; from Q1 2024 they give the prior
+  year's four quarters and its year, then the current year's quarters (the balance sheets the quarter-ends), so each figure is read from
+  its column by the quarter's position, the header asserted, and the year-ago quarter is the column the release prints ("Certain amounts
+  ... reclassified to conform", as the release shows it). Diluted shares come from each release's own statement of operations (earlier
+  batches read the 10-Q filed the same day; from Q1 2024 the 10-Q came days later). In 2026 the releases print no discontinued operations
+  and one diluted EPS line, which is read as the continuing figure (the eps note says so).
+- **The costs applicable to sales signal from Q4 2025.** The releases' reconciliation now gives only the by-product figure ("Total Gold
+  CAS per ounce (by-product)"); the co-product figure, the series' line, is still printed in each release's 'Summary of Results' table
+  ("Gold Co-Product CAS ($/oz)", by quarter), so the signal reads that row against its year-ago column (`cas_source`; asserted equal to
+  the Q4 2024 reconciliation's $1,096 where they overlap). The by-product reading moves 1 class. The ounces signal stays consolidated gold
+  ounces sold (the 'Total Newmont' line from Q4 2025).
+- **Newcrest (completed 2023-11-06) and the non-core divestitures are in the figures as published**; the pro forma statements are unused.
+  BASE is the latest quarter's revenue growth (the UNP rule): +0.3% (Q4 2021), +5.3%, -0.2%, -9.0%, -5.6% (Q4 2022), -11.4%, -12.3%,
+  -5.4%, then +23.7% (Q4 2023), +50.2%, +64.1%, +84.7% (Q3 2024: Newcrest's quarters and the gold price), +42.8% (Q4 2024), +24.5%,
+  +20.8%, +20.0%, +20.6% (Q4 2025), +45.8%, +15.1%, +15.2% (Q3 2026).
+- **No guide in numbers for revenue, EPS or a margin.** The outlooks are attributable gold production and CAS and AISC per ounce, and
+  sustaining and development capital: display only, one quote a release cut to its own year (asserted: no quote names another year), the
+  five-year production profiles, the 2023 dividend payout range ("Annualized dividend payout range of $1.40 to $1.80 per share", text
+  only), the Newcrest synergies and the capital allocation frameworks not quoted.
+- **Dividends** (each rate from the first filing that states it as declared): $0.55 a quarter through Q3 2022; $0.40 from the Q4 2022
+  release (2023-02-23); $0.25 from the FY2023 10-K ("In February 2024, the Board declared a dividend of $0.25 per share"; the Q4 2023
+  release states no rate, so $0.40 stands to 2024-02-29); $0.26 from the Q4 2025 release (2026-02-20). The releases' "$0.251" is the
+  rate with a footnote marker; each record quotes the footnote's own sentence.
+- **Kind: CYCLICAL** in every vintage ("The metals markets are cyclical", asserted in each 10-K). NYSE: NEM throughout (the ASX and PNGX
+  listings from the Newcrest closing are display-irrelevant); Newmont Corporation throughout, no change of name.
+- **Themes.** GENAI (2022-11-30) and GLP1 (2023-08-08) go live; the "why" quotes every live theme's scope, none of which names a miner.
+  From the FY2023 10-K the 'why' also quotes the 10-K's own AI words (an operating tool and a cybersecurity risk: "our use of artificial
+  intelligence, fleet electrification, and autonomous vehicles", then "the adoption of emerging technologies such as artificial
+  intelligence (AI), automation, and cloud-based platforms"; `ai_words`, text only, the UNH, SCHW and LMT encoding, new in this builder).
+  CRYPTO and ENERGY_TRANSITION stay out of scope with each vintage's own words quoted (`crypto_words`, `climate_words`; the FY2023 10-K
+  breaks the climate sentence at a page end, so its quote ends at "costs to comply with..."; the FY2025 10-K adds "nature-").
+- **Adds nothing:** the Newcrest proposal, agreement, clearances, meeting and completion 8-Ks (2023-02-06 to 2023-11-06), the exchange
+  offers (2023-11-27, 2023-12-29), the Yanacocha Sulfides deferral (2023-06-20), the integration memo (2023-06-23), the credit
+  agreement and notes 8-Ks (2024-02-22, 2024-03-05, 2024-03-08), the Nevada Gold Mines agreement with Barrick (2026-08-13), and the
+  officer, director, bylaw and meeting 8-Ks (CEO succession 2025-09-29, appointments 2026-06-15 among them). None states a guided number
+  for revenue, EPS or a margin.
+- **Anachronism list:** no new term.
+
+Builder changes (each acts only on facts or dates the earlier models do not have; the 732 dates of 2008-2021 rebuild byte-identical in
+their four per-range runs): `check_print` accepts a Q4 print's `fy_actual` (refused before); a Q4 print's full year extends the vintage
+until the 10-K; the gap reasons for FY2021-FY2023; GENAI and GLP1 among the themes with a reading; the `ai_words` sentence. The firewall's
+NEM plant gains the vintage's `ai_words`. The generator, controls and sensitivity scripts are new files.
+
+Controls and checks (before any outcome):
+- **`retro_tool run` passes on all 256 dates**, with no warning.
+- **Controls** (`controls_nem_2226.py`, in memory, every weekly date from June 2021 to 2026-11-27): each print's ounces (20), the Q4 2023
+  print's full-year revenue (1), each vintage's last-year revenue (5), each outlook's quoted text (20) and each dividend rate (20): 66
+  controls, none changes a model dated before its publication, and all 66 change the first weekly date on or after it (none inert). The
+  Q4 2023 full-year control changes exactly its one date (2024-02-23).
+- **Leak scan** (`leak_scan.py NEM --from 2022-01-01`): 1 hit in 134,109 (model, later token) pairs after dropping 20,595 carried tokens:
+  the 2023-03-31 close, $49.02, equals the Q2 2026 print's pre-tax margin of 49.02%, a coincidence; positive control: the latest print's
+  tokens in 256 of 256 models. **Forward references:** 0 in 90 facts. **Self-text scan:** 16 tokens of 1,506, all benign: the carried
+  FY2017 and FY2019 exclusion notes ("Tax Cuts", "Jobs Act", "$1,907M": their filings precede this batch's folder) and the title prefix
+  "Newmont FY". A first draft of the Q4 2023 print's note named the FY2023 10-K's later figures ($(3.00), $(2,031)M); it was cut to the
+  release's own words before the build.
+- **Regression:** rebuilding 2008-2021 with the new sheet and builder changes no file.
+- **Firewall:** see below (run after this section was committed and pushed, before any outcome).
+
+Seen in the build (method behaviour, not tuned): **CHEAP 139, RICH 106, FAIR 11 of 256 dates** (BUY 157, AVOID 74, WATCHLIST 14,
+ACCUMULATE 11). 2022: RICH 38, CHEAP 14. 2023: CHEAP 39, RICH 8, FAIR 5. 2024: CHEAP 52. 2025: RICH 32, CHEAP 17, FAIR 3. 2026: RICH 28,
+CHEAP 17, FAIR 3. The class follows the anchor, the price and BASE:
+- FY20's $3.31 (2022-01-07 to 2025-02-14, 163 dates): $31.28-84.77 is 9.5-25.6x against a window median of 14.4-18.4x: RICH 30 to
+  2022-07-26 (18-26x at $59-85 in the first half of 2022, then 14x with the Q2 2022 print's signals), mixed CHEAP and RICH from August
+  2022 to September 2023 at 10-15x as the signals turn (RICH on 12 dates of 2022-11-25 to 2023-02-10, after the Q3 2022 print's -9.0%
+  revenue and +16.6% unit costs), then CHEAP on all 82 dates from 2023-09-29 to 2025-04-17 (BASE +24% to +85% on the Newcrest quarters
+  from Q4 2023): CHEAP 112, RICH 46, FAIR 5.
+- FY24's $2.86 (2025-02-21 to 2026-02-13, 52): $42.84-125.80 is 15.0-44.0x against 15.9-18.0x: RICH 39 (from June 2025, as the price
+  doubles), CHEAP 10, FAIR 3.
+- FY25's $6.39 (2026-02-20 to 2026-11-27, 41): $89.70-131.58 is 14.0-20.6x against 14.5-15.3x: RICH 21, CHEAP 17, FAIR 3.
+
+How far each call moves the classes (the 256 dates rebuilt with one encoding changed, classified offline; `sens_nem_2226.py`; no outcome):
+- **FY2021 kept at GAAP $1.39** (the AAPL FY2002 test not applied): **108 classes** (CHEAP to RICH 60, CHEAP to FAIR 24; 2022-08-05 to
+  2026-10-23) and 129 tiers, **the batch's largest call**: $1.39 enters the window from 2022, so its 2021 days price at 30-40x;
+- the company's adjusted EPS for 2021-2023 only (the excluded years: $2.96, $1.85, $1.61/$1.57): 110 classes; for 2020-2025 (FY20 $2.66,
+  FY24 $3.48, FY25 $6.89 too): 103 classes (CHEAP to RICH 44, RICH to CHEAP 32);
+- every data signal at its BEAR value: 90 classes (CHEAP to RICH 61), no tier; at XBULL: 43, no tier;
+- BASE on the latest quarter's gold ounces growth: 47 classes;
+- a five-year P/E window instead of ten: 29;
+- BASE at 0% on the four Newcrest quarters (Q4 2023 to Q3 2024): 7;
+- the by-product CAS per ounce from Q4 2025: 1; the vintage's dividend instead of the declared rates: none.
+The 2023-2024 CHEAP calls rest on FY20's $3.31 standing while FY2021-FY2023 are all gaps, and on the Newcrest quarters' BASE; the
+FY2021 reading, the adjusted-EPS reading and the signals each move a large share of them.
+
+Judgement calls that could carry hindsight:
+- **FY2021 excluded by the AAPL FY2002 test** with every listed item summed, the Yanacocha reclamation charges and the loss on assets held
+  for sale among them (the FY2011, FY2015 and FY2018 encoding; kept at GAAP, 108 classes), and GAAP rather than the adjusted net income
+  (103-110 classes), by the frozen tests, chosen by a builder who knows how Newmont's earnings and the gold price ran after 2021;
+- FY2024 and FY2025 kept (their charges under half their income);
+- the Q4 2023 print's preliminary year as `fy_actual` (one date, no class), and the 10-K/A and the segment recast not vintages (no class);
+- the co-product CAS from the summary table from Q4 2025 (1 class) and the 2026 single EPS line read as continuing;
+- Newcrest and the divestitures in BASE as published (BASE at 0% on the Newcrest quarters moves 7 classes);
+- CYCLICAL (label only); GENAI, GLP1, CRYPTO and ENERGY_TRANSITION read as out of scope (text only);
+- the $0.25 rate from the FY2023 10-K (no class) and the payout range left out;
+- the ten-year P/E window with the excluded years' days removed, which leaves two or three years in it (a five-year one moves 29);
+- the last date 2026-11-27, one week past the other 2022-2026 batches, by the build time;
+- the parts of the filings listed as not read: a number guided only on a call or in an unfiled presentation would be missed.
+
 ## LYB (LyondellBasell Industries): the thirty-seventh ticker, in staging, from its 2010 share issue
 
 The LYB series is built apart from every other ticker and shares nothing with them but the machinery: its own fact sheet
