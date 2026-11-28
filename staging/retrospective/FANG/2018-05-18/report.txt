@@ -1,0 +1,151 @@
+
+════════════════════════════════════════════════════════════════════════
+  FANG  ·  Diamondback Energy, Inc.  ·  $134.58  ·  RETROSPECTIVE as of 2018-05-18
+  Signal: ◉ BUY   Ratio B: 0.17x   Adj gap: +0.99  [UNDERVALUED]
+  Point-in-time: 8 sources, latest published 2018-05-18; latest print Q1 2018 (2018-05-09)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2018E revenues, USD bn  →  FY2020E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2018E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Oil sales                 $   2.165  $ 2.165  $ 5.496    +0.000    +3.331
+    +121.9% revenues in 2017
+  Natural gas liquid sales  $   0.187  $ 0.187  $ 0.474    +0.000    +0.287
+    +164.3% revenues in 2017
+  Natural gas sales         $   0.108  $ 0.108  $ 0.275    +0.000    +0.167
+    +132.0% revenues in 2017
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $   2.460  $ 2.460  $ 6.245    +0.000    +3.785
+  FY2018E = FY17 $1.205B × (1 + 104.1%: no FY18 revenue guide in numbers, Q1 2018 revenues as reported, applied to the year (no FY18 revenue guide)); split pro rata to 2017 oil, natural gas liquid and natural gas sales (the statement of operations)
+  Q1 2018 (2018-05-09): revenues $0.480B +104.1%; oil-equivalent production +66.5%, oil +63.5%;
+  LOE per BOE -15.8%; pre-tax margin 46.90% (-1390.0bp); EPS $1.65 vs $1.46
+  Activity: total revenues $480.2M vs $235.2M; production 9,235 MBOE vs 5,545, oil 6,800 MBbl vs 4,158; LOE $4.04/BOE vs $4.80; income before income taxes $225.2M vs $143.0M; EPS GAAP, diluted
+  FY18: no revenue, EPS or margin guide in numbers (BASE takes Q1 2018 revenue growth as reported); the releases guide production, unit costs and capital spending only (display only)
+
+  FY2018E EPS check:  $2.460B × 41.3% pre-tax × (1−-3.9%) ÷ 0.099B  =  $10.68  (FY2018E: no EPS guide, FY17's GAAP $4.94 stands)
+  FY2020E BEAR check: $2.460B × 41.3% ÷ 0.140B  =  $7.56  (scenario $4.94)
+  FY2020E BULL check: $6.245B × 41.7% ÷ 0.140B  =  $19.37  (scenario $16.95)
+  Every 1pp of pre-tax margin ≈ $0.26 EPS ≈ $5/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Oil-equivalent production          +14.0%   ≥46.0%   ≥78.0%  ≥148.0%    +66.5%  ◦ BASE  ██░░
+  Oil production                     +52.0%   ≥60.0%   ≥68.0%  ≥167.0%    +63.5%  ◦ BASE  ██░░
+  Revenue growth                    -142.0%  ≥-30.0%   ≥81.0%  ≥177.0%   +104.1%  ▲ BULL  ███░
+  Lease operating expense per BOE   +130.0%   ≤58.0%  ≤-14.0%  ≤-44.0%    -15.8%  ▲ BULL  ███░
+  Pre-tax margin change             -8730.0bp  ≥-3100.0bp  ≥2530.0bp  ≥49380.0bp  -1390.0bp  ◦ BASE  ██░░
+  Energy transition: oil and gas demand   +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.30 / 4.00
+  Market composite:   1.31 / 4.00  (back-solved from $135 + 15% hurdle)
+  SCA adjustment:    +0.10  ·  EPP-distance adj -0.10  →  Adj composite 2.30  →  Gap +0.99  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY17 revenues +128.6%; Q1 production +66.5%, pre-tax margin 46.9%  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 27.2x FY18E vs a 21.0x 5.4-yr ex-FY12 ex-FY15 ex-FY16 median (85th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: no FY18 revenue guide in numbers, Q1 2018 revenues as reported +104.1% vs a 81.0% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  FY17 free cash flow $0.10B, dividend $0.50 a year (the Q4 2017 release); the net change in the share count (issuance for acquisitions, repurchases) is in BASE  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Oil-equivalent production           +66.5%    +14.0%  -52.5%  Well declines outrun new wells
+  Oil production                      +63.5%    +52.0%  -11.5%  The oil share of new wells falls
+  Revenue growth                     +104.1%   -142.0%  -246.1%  Oil and gas prices fall
+  Lease operating expense per BOE     -15.8%   +130.0%  +145.8%  Unit costs rise
+  Pre-tax margin change             -1390.0bp  -8730.0bp  -7340.0bp  Impairments, hedges and interest as p…
+  Energy transition: oil and gas demand    +2.0/4    +1.0/4  -1.0/4  Climate legislation raises costs and …
+
+  Bear composite:  1.00  →  Bear scenario price: ~$166  (model)  /  $84 (defined)
+  Bear probability (proxy model):  12.9%
+
+  KEY TRIGGER: oil-equivalent production growth went from +78.8% (Q4 2017) to +66.5% (Q1 2018);
+  the bear case needs oil production (+63.5% now) and revenues
+  (+104.1% now) to give way as well. By the company's own account the oil and natural gas industry is cyclical;
+  the bear needs prices to fall and stay down, not one quarter's.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $4.94  (FY2018E: no EPS guide, FY17's GAAP $4.94 stands)
+  Min viable P/E at panic:          16x  [median of calendar-year P/E lows: 2013 14.8x, 2014 12.2x, 2017 17.2x, 2018 22.4x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $79/share
+  Current $135 vs Updated EPP $79:  +70%  ⚠ far above floor — large drawdown room
+  Bear $84 vs Updated EPP $79:  +6%  ✓ bear stays above the floor
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Oil-equivalent production                   46.0      -20.5   BASE floor (vs +66 now)
+  Oil production                              60.0       -3.5   BASE floor (vs +64 now)
+  Revenue growth                             -30.0     -134.1   BASE floor (vs +104 now)
+  Lease operating expense per BOE             58.0      +73.8   BASE floor (vs -16 now)
+  Pre-tax margin change                    -3100.0    -1710.0   BASE floor (vs -1390 now)
+  Energy transition: oil and gas demand             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $4.94 × (1+83.2%)² = $16.58
+  At 21x P/E (conservative):  $348/share
+  + Cumul. dividends (2yr):  +$1.03/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $348  (▲214 from $135)
+  Conservative total return:  +160% over 2yr  = +80%/yr
+
+  83.2% EPS growth is what is left once the premium multiple (27.2x)
+  mean-reverts to 21x. Breakeven at 21x needs FY2020E EPS of $6.36,
+  i.e. 13.5%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $82.77  –  $137.83  (at 94th pct of range)
+  Annual dividend:      $0.50/share  (yield 0.4%)
+  Realized vol (1yr):   32% annualized
+  Beta vs broad market: 1.11
+  1-sigma range (1yr):  $91  –  $178  ($135 ± 32%)
+  2-sigma range (1yr):  $48  –  $221
+  ────────────────────────────────────────────────────────────
+  Bear $84 requires:  ~1.2σ price move  (within normal vol range)
+  A cyclical onshore oil and gas producer with a 1.1 beta: the stock is +59% off its June
+  low while oil-equivalent production growth went from +78.8% (Q4 2017) to +66.5% (Q1 2018).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        4.94  17.1x  $     84    12.9%     68.1%   -55.1pp  EPS +0.0%/yr (worst year FY13-FY17 ex-FY15 ex-FY16, capped at 0%); P/E to its 10th pct
+  BASE       16.95  21.0x  $    356    45.2%     23.8%   +21.4pp  EPS +85.2%/yr (Q1 revenues + margin + buyback); P/E at its 5.4-yr ex-FY12 ex-FY15 ex-FY16 median
+  BULL       16.95  25.5x  $    432    35.2%      6.8%   +28.4pp  EPS +85.2%/yr (FY13-FY17 ex-FY15 ex-FY16 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL      16.95  33.0x  $    559     6.6%      1.3%    +5.4pp  EPS +85.2%/yr (no 2-yr run in FY13-FY17 ex-FY15 ex-FY16: BULL's rate); P/E at its 90th pct
+
+  Proxy EV (2yr): $361  /  Market EV: $179  /  Current: $135
+  Conservative EV (2yr, ④): $348 + $1.03 divs = $349 total value
+  Downside (→ Bear $84): 37.6%   Upside (→ Bull $432): 221.0%   Ratio B 0.17x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $135 the market needs $178 in two years —
+  at or below the BASE case. That is a market composite of 1.31 against a model
+  read of 2.30: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.17x     +70%    +0.99  UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.10x     +70%    +1.08  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.25x     +70%    +0.89  UNDERVALUED / BUY
+  Scenario EPS +1.5pp/yr                          0.15x     +70%    +1.02  UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.18x     +70%    +0.97  UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.17x     +70%    +1.29  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.17x     +43%    +0.99  UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.17x     +70%    +1.30  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 2018 release (early August) — the next read on production (+66.5% now) and oil (+63.5% now)
+  (2) Pre-tax margin — -1390.0bp in Q1 2018: realizations against costs, hedges and impairments
+  (3) The FY18 outlook — no revenue, EPS or margin guide in numbers (production, unit cost and capital spending guides only)
+  (4) Free cash flow — FY17 $0.10B (net cash provided by operating activities $0.889B less additions to oil and natural gas properties $0.793B; acquisitions and midstream additions not deducted): operating cash flow covers the drilling program
+  (5) Capital return at 27x — a dividend of $0.50 a year; the share count's net change is in BASE: management's own read of the multiple
+  ◉ BUY  |  EPP floor $79  |  ADD below ~$303  |  TRIM above $432
+════════════════════════════════════════════════════════════════════════
+
