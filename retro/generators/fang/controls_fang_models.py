@@ -5,12 +5,14 @@ repository changes. (The gate's own controls, 2008-2013, are controls_fang.py.)
 
     python3 retro/generators/fang/controls_fang_models.py [START END]     # default 2014-02-17 2017-12-31
     python3 retro/generators/fang/controls_fang_models.py 2017-12-30 2021-12-31   # "FANG 2018-2021": the facts published in the range
+    python3 retro/generators/fang/controls_fang_models.py 2022-01-01 2026-11-27   # "FANG 2022-2026"
 
 build_fang.py's check_print re-derives every rate from a print's raw figures, so a print's control raises its oil-equivalent production
 by 10 MBOE and re-derives the growth (a Q4 print: also its full-year EPS); a vintage's control raises its last year's revenues and its
 last kept year's EPS; the 10-K words (the business, cyclical, prices and climate legislation sentences; from the FY2017 10-K the
 conservation sentence EV's clause quotes) and the no-dividend statement are altered as they stand; from 2018 ("FANG 2018-2021") each
-dividend rate is raised by $0.01. Only the facts published from START to END are controlled. A fact published before the first built date (the Q3 2013 print, the FY2013 10-K) reaches the first date or
+dividend rate is raised by $0.01; from 2022 ("FANG 2022-2026") the 10-Ks' electric vehicle words and AI words are altered too, and each
+Q4 release's prior-year EPS (the restatement it carries) is raised by $0.01. Only the facts published from START to END are controlled. A fact published before the first built date (the Q3 2013 print, the FY2013 10-K) reaches the first date or
 no date.
 """
 import contextlib
@@ -64,6 +66,10 @@ for i, p in enumerate(facts0["prints"]):
         continue
     C.append((f"{p['quarter']} print, its production" + (" and full-year EPS" if p.get("fy_actual") else ""), p["published"],
               lambda f, i=i: prod(f, i)))
+for i, p in enumerate(facts0["prints"]):
+    if inrange(p["published"]) and "prior_eps_gaap" in p.get("fy_actual", {}):
+        C.append((f"{p['quarter']} print, its prior-year EPS", p["published"],
+                  lambda f, i=i: f["prints"][i]["fy_actual"].update({"prior_eps_gaap": round(f["prints"][i]["fy_actual"]["prior_eps_gaap"] + 0.01, 2)})))
 for i, v in enumerate(facts0["history_vintages"]):
     if "eps_normalized" not in v or not inrange(v["published"]):
         continue
@@ -73,9 +79,11 @@ for i, v in enumerate(facts0["history_vintages"]):
               lambda f, i=i, y=y: f["history_vintages"][i]["revenue_usd_b"].update({y: f["history_vintages"][i]["revenue_usd_b"][y] + 0.05})))
     C.append((f"{v['fy_label']} vintage, its {k} EPS", v["published"],
               lambda f, i=i, k=k: f["history_vintages"][i]["eps_normalized"].update({k: f["history_vintages"][i]["eps_normalized"][k] + 0.01})))
-    for q in [q for q in ("business_quote", "cyclical_quote", "transition_quote", "no_dividend_quote", "conservation_quote") if q in v]:
+    for q in [q for q in ("business_quote", "cyclical_quote", "transition_quote", "no_dividend_quote", "conservation_quote", "ev_quote",
+                          "ai_words") if v.get(q)]:
         C.append((f"{v['fy_label']} vintage, its {q}", v["published"],
-                  lambda f, i=i, q=q: f["history_vintages"][i].update({q: f["history_vintages"][i][q] + " CTRL"})))
+                  lambda f, i=i, q=q: f["history_vintages"][i].update({q: (f["history_vintages"][i][q] + " CTRL" if isinstance(
+                      f["history_vintages"][i][q], str) else [w + " CTRL" for w in f["history_vintages"][i][q]])})))
 for i, d in enumerate(facts0["dividends"]):
     if inrange(d["published"]):
         C.append((f"the {d['note']}, its rate", d["published"],

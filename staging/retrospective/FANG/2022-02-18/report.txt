@@ -1,0 +1,151 @@
+
+════════════════════════════════════════════════════════════════════════
+  FANG  ·  Diamondback Energy, Inc.  ·  $131.47  ·  RETROSPECTIVE as of 2022-02-18
+  Signal: ◉ BUY   Ratio B: 0.06x   Adj gap: +1.05  [UNDERVALUED]
+  Point-in-time: 10 sources, latest published 2022-02-18; latest print Q3 2021 (2021-11-02)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2021E revenues, USD bn  →  FY2023E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2021E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Oil sales                 $   6.526  $ 6.526  $16.023    +0.000    +9.497
+    -32.2% revenues in 2020
+  Natural gas liquid sales  $   0.647  $ 0.647  $ 1.589    +0.000    +0.942
+    -10.5% revenues in 2020
+  Natural gas sales         $   0.290  $ 0.290  $ 0.711    +0.000    +0.421
+    +62.1% revenues in 2020
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $   7.463  $ 7.463  $18.323    +0.000    +10.860
+  FY2021E = FY20 $2.813B × (1 + 165.3%: no FY21 revenue guide in numbers, Q3 2021 revenues as reported, applied to the year (no FY21 revenue guide)); split pro rata to 2020 oil, natural gas liquid and natural gas sales (the statement of operations)
+  Q3 2021 (2021-11-02): revenues $1.910B +165.3%; oil-equivalent production +40.7%, oil +41.0%;
+  LOE per BOE +8.6%; pre-tax margin 45.39% (+24108.7bp); EPS $3.56 vs $(7.05)
+  Activity: total revenues $1,910.0M vs $720.0M; production 37,193 MBOE vs 26,433, oil 22,058 MBbl vs 15,639; LOE $4.19/BOE vs $3.86; income before income taxes $867.0M vs $-1,409.0M; EPS GAAP, diluted
+  FY21: no revenue, EPS or margin guide in numbers (BASE takes Q3 2021 revenue growth as reported); the releases guide production, unit costs and capital spending only (display only)
+
+  FY2021E EPS check:  $7.463B × 51.1% pre-tax × (1−15.1%) ÷ 0.182B  =  $17.79  (FY2021E: no EPS guide, FY18's GAAP $8.06 stands (FY19 is excluded: distorted: the $790M full cost ceiling impairment and the $56M loss on extinguishment of debt ($846M of listed one-off charges) exceed its $362M income before income taxes (the AAPL FY2002 test); the company's adjusted $6.93 also removes the non-cash derivative marks, which recur, so no figure excludes only the one-offs) (FY20 is excluded: a GAAP loss, $(28.59) diluted, after $6,021M of full cost ceiling impairments; no figure excludes only the one-offs (the company's adjusted net income also removes the non-cash derivative marks; the loss rule)))
+  FY2023E BEAR check: $7.463B × 51.1% ÷ 0.250B  =  $12.96  (scenario $8.06)
+  FY2023E BULL check: $18.323B × 51.5% ÷ 0.250B  =  $32.08  (scenario $49.63)
+  Every 1pp of pre-tax margin ≈ $0.35 EPS ≈ $6/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Oil-equivalent production          +14.0%   ≥46.0%   ≥78.0%  ≥148.0%    +40.7%  ⚠ BEAR  █░░░
+  Oil production                     +52.0%   ≥60.0%   ≥68.0%  ≥167.0%    +41.0%  ⚠ BEAR  █░░░
+  Revenue growth                    -142.0%  ≥-30.0%   ≥81.0%  ≥177.0%   +165.3%  ▲ BULL  ███░
+  Lease operating expense per BOE   +130.0%   ≤58.0%  ≤-14.0%  ≤-44.0%     +8.6%  ◦ BASE  ██░░
+  Pre-tax margin change             -8730.0bp  ≥-3100.0bp  ≥2530.0bp  ≥49380.0bp  +24108.7bp  ▲ BULL  ███░
+  Energy transition: oil and gas demand   +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    1.90 / 4.00
+  Market composite:   1.10 / 4.00  (back-solved from $131 + 15% hurdle)
+  SCA adjustment:    +0.26  ·  EPP-distance adj +0.00  →  Adj composite 2.15  →  Gap +1.05  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY20 revenues -29.0%; Q3 production +40.7%, pre-tax margin 45.4%  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 16.3x FY21E vs a 17.4x 9.1-yr ex-FY12 ex-FY15 ex-FY16 ex-FY19 ex-FY20 median (43rd percentile of its own range)  (+0.12 × 25%  =  +0.030)
+    +  Growth vs own history: no FY21 revenue guide in numbers, Q3 2021 revenues as reported +165.3% vs a 80.6% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  FY20 free cash flow $0.40B, dividend $2.00 a year (the Q3 2021 release); the net change in the share count (issuance for acquisitions, repurchases) is in BASE  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Oil-equivalent production           +40.7%    +14.0%  -26.7%  Well declines outrun new wells
+  Oil production                      +41.0%    +52.0%  +11.0%  The oil share of new wells falls
+  Revenue growth                     +165.3%   -142.0%  -307.3%  Oil and gas prices fall
+  Lease operating expense per BOE      +8.6%   +130.0%  +121.4%  Unit costs rise
+  Pre-tax margin change             +24108.7bp  -8730.0bp  -32838.7bp  Impairments, hedges and interest as p…
+  Energy transition: oil and gas demand    +2.0/4    +1.0/4  -1.0/4  Climate legislation raises costs and …
+
+  Bear composite:  1.00  →  Bear scenario price: ~$314  (model)  /  $81 (defined)
+  Bear probability (proxy model):  23.0%
+
+  KEY TRIGGER: oil-equivalent production growth went from +36.5% (Q2 2021) to +40.7% (Q3 2021);
+  the bear case needs oil production (+41.0% now) and revenues
+  (+165.3% now) to give way as well. By the company's own account the oil and natural gas industry is cyclical;
+  the bear needs prices to fall and stay down, not one quarter's.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $8.06  (FY2021E: no EPS guide, FY18's GAAP $8.06 stands (FY19 is excluded: distorted: the $790M full cost ceiling impairment and the $56M loss on extinguishment of debt ($846M of listed one-off charges) exceed its $362M income before income taxes (the AAPL FY2002 test); the company's adjusted $6.93 also removes the non-cash derivative marks, which recur, so no figure excludes only the one-offs) (FY20 is excluded: a GAAP loss, $(28.59) diluted, after $6,021M of full cost ceiling impairments; no figure excludes only the one-offs (the company's adjusted net income also removes the non-cash derivative marks; the loss rule)))
+  Min viable P/E at panic:          13x  [median of calendar-year P/E lows: 2013 14.8x, 2014 12.2x, 2017 17.2x, 2018 10.6x, 2021 6.1x, 2022 13.9x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $105/share
+  Current $131 vs Updated EPP $105:  +25%  moderate distance to floor
+  Bear $81 vs Updated EPP $105:  -23%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Oil-equivalent production                   46.0       +5.3   BASE floor (vs +41 now)
+  Oil production                              60.0      +19.0   BASE floor (vs +41 now)
+  Revenue growth                             -30.0     -195.3   BASE floor (vs +165 now)
+  Lease operating expense per BOE             58.0      +49.4   BASE floor (vs +9 now)
+  Pre-tax margin change                    -3100.0   -27208.7   BASE floor (vs +24109 now)
+  Energy transition: oil and gas demand             2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $8.06 × (1+146.1%)² = $48.83
+  At 17x P/E (conservative):  $830/share
+  + Cumul. dividends (2yr):  +$4.12/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $830  (▲699 from $131)
+  Conservative total return:  +535% over 2yr  = +267%/yr
+
+  At 16.3x the multiple is already near its 17x median, so the conservative
+  case is a growth question: breakeven at 17x needs FY2023E EPS of $7.49,
+  i.e. -3.6%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $63.05  –  $136.55  (at 93th pct of range)
+  Annual dividend:      $2.00/share  (yield 1.5%)
+  Realized vol (1yr):   50% annualized
+  Beta vs broad market: 1.22
+  1-sigma range (1yr):  $66  –  $197  ($131 ± 50%)
+  2-sigma range (1yr):  $0  –  $263
+  ────────────────────────────────────────────────────────────
+  Bear $81 requires:  ~0.8σ price move  (within normal vol range)
+  A cyclical onshore oil and gas producer with a 1.2 beta: the stock is +101% off its February
+  low while oil-equivalent production growth went from +36.5% (Q2 2021) to +40.7% (Q3 2021).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        8.06  10.1x  $     81    23.0%     72.2%   -49.3pp  EPS +0.0%/yr (worst year FY13-FY18 ex-FY15 ex-FY16, capped at 0%); P/E to its 10th pct
+  BASE       49.63  17.4x  $    864    57.5%     20.7%   +36.8pp  EPS +148.1%/yr (Q3 revenues + margin + buyback); P/E at its 9.1-yr ex-FY12 ex-FY15 ex-FY16 ex-FY19 ex-FY20 median
+  BULL       49.63  21.0x  $  1,042    16.5%      5.9%   +10.5pp  EPS +148.1%/yr (FY13-FY18 ex-FY15 ex-FY16 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL      49.63  27.1x  $  1,345     3.1%      1.1%    +2.0pp  EPS +148.1%/yr (no 2-yr run in FY13-FY18 ex-FY15 ex-FY16: BULL's rate); P/E at its 90th pct
+
+  Proxy EV (2yr): $728  /  Market EV: $314  /  Current: $131
+  Conservative EV (2yr, ④): $830 + $4.12 divs = $834 total value
+  Downside (→ Bear $81): 38.4%   Upside (→ Bull $1042): 692.6%   Ratio B 0.06x  →  ◉ BUY
+
+  To earn the 15%/yr hurdle from $131 the market needs $174 in two years —
+  at or below the BASE case. That is a market composite of 1.10 against a model
+  read of 2.15: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.06x     +25%    +1.05  UNDERVALUED / BUY
+  Multiples one band richer (p25/p75/p90/max)     0.01x     +25%    +0.93  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     0.08x     +25%    +1.15  UNDERVALUED / BUY
+  Scenario EPS +1.5pp/yr                          0.05x     +25%    +1.05  UNDERVALUED / BUY
+  Scenario EPS -1.5pp/yr                          0.06x     +25%    +1.14  UNDERVALUED / BUY
+  Structural read +0.30 (bullish SCA)             0.06x     +25%    +1.35  UNDERVALUED / BUY
+  EPP P/E +3 turns (softer floor)                 0.06x      +2%    +1.05  UNDERVALUED / BUY
+  Hurdle 10%/yr instead of 15%                    0.06x     +25%    +1.05  UNDERVALUED / BUY
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 2021 release (February) — the next read on production (+40.7% now) and oil (+41.0% now)
+  (2) Pre-tax margin — +24108.7bp in Q3 2021: realizations against costs, hedges and impairments
+  (3) The FY21 outlook — no revenue, EPS or margin guide in numbers (production, unit cost and capital spending guides only)
+  (4) Free cash flow — FY20 $0.40B (net cash provided by operating activities $2.118B less additions to oil and natural gas properties $1.719B; acquisitions and midstream additions not deducted): operating cash flow covers the drilling program
+  (5) Capital return at 16x — a dividend of $2.00 a year; the share count's net change is in BASE: management's own read of the multiple
+  ◉ BUY  |  EPP floor $105  |  ADD below ~$734  |  TRIM above $1,042
+════════════════════════════════════════════════════════════════════════
+
