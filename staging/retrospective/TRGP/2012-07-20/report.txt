@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  TRGP  ·  Targa Resources Corp.  ·  $44.83  ·  RETROSPECTIVE as of 2012-07-20
+  Signal: ✕ AVOID   Ratio B: 87.24x   Adj gap: -1.27  [OVERVALUED]
+  Point-in-time: 5 sources, latest published 2012-07-20; latest print Q1 2012 (May 3)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2012E revenues, USD bn  →  FY2014E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2012E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Field Gathering and Proc  $     2.9  $   2.9  $   3.1      +0.0      +0.2
+    new in FY11 (no prior year)
+  Coastal Gathering and Pr  $     1.8  $   1.8  $   1.9      +0.0      +0.1
+    new in FY11 (no prior year)
+  Logistics Assets          $     1.3  $   1.3  $   1.3      +0.0      +0.0
+    new in FY11 (no prior year)
+  Marketing and Distributi  $     1.2  $   1.2  $   1.2      +0.0      +0.0
+    new in FY11 (no prior year)
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $     7.2  $   7.2  $   7.5      +0.0      +0.3
+  FY2012E = FY11 $6.99B × (1 + 1.7%: no FY12 revenue guide in numbers, Q1 2012 revenues as reported, applied to the year (no FY12 revenue guide)); split pro rata to FY11 segment operating margin, USD bn (Targa Resources Corp. FY2011 10-K's segment note; 'Other', the hedges, and TRC Non-Partnership left out)
+  Q1 2012 (May 3): revenues $1.65B +1.7%; segment operating margin: Gathering and Processing +22.5%, Logistics and Marketing +25.6%;
+  operating margin 6.54% (+200.0bp); pre-tax margin 4.82% (+193.0bp); EPS $0.23 vs $0.17
+  Activity: revenues $1,645.8M vs $1,618.6M; segments: Natural Gas Gathering and Processing (Field and Coastal) operating margin $119.3M vs $97.4M, Logistics and Marketing (Logistics Assets and Marketing and Distribution) $69.1M vs $55.0M (the Partnership's segments, consolidated by TRC); income from operations $107.7M vs $73.5M; income before income taxes $79.3M vs $46.7M; TRC distributable cash flow $14.4M (non-GAAP, display only); EPS GAAP, diluted, $0.23 against $0.17 a year earlier
+  FY12: no revenue, EPS or margin guide in numbers (BASE takes Q1 2012 revenue growth as reported)
+
+  FY2012E EPS check:  $7.2B × 3.5% pre-tax × (1−11.0%) ÷ 0.042B  =  $5.30  (FY2012E: no reported (GAAP) EPS guide, FY11's $0.74 stands)
+  FY2014E BEAR check: $7.2B × 3.5% ÷ 0.042B  =  $5.30  (scenario $0.74)
+  FY2014E BULL check: $7.5B × 3.9% ÷ 0.042B  =  $6.16  (scenario $0.77)
+  Every 1pp of pre-tax margin ≈ $1.53 EPS ≈ $71/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Gathering and Processing operating margin growth  -115.0%  ≥-44.0%   ≥26.0%   ≥34.0%    +22.5%  ◦ BASE  ██░░
+  Logistics and Marketing operating margin growth   -35.0%    ≥5.0%   ≥44.0%   ≥93.0%    +25.6%  ◦ BASE  ██░░
+  Revenue growth                    -106.0%  ≥-43.0%   ≥19.0%   ≥28.0%     +1.7%  ◦ BASE  ██░░
+  Operating margin change           -240.0bp  ≥-120.0bp   ≥0.0bp  ≥190.0bp  +200.0bp  ★ XBULL  ████
+  Pre-tax margin change             -150.0bp  ≥-60.0bp  ≥30.0bp  ≥190.0bp  +193.0bp  ★ XBULL  ████
+  Disruption theme: none in scope    +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.60 / 4.00
+  Market composite:   3.77 / 4.00  (back-solved from $45 + 15% hurdle)
+  SCA adjustment:    -0.10  ·  EPP-distance adj +0.00  →  Adj composite 2.50  →  Gap -1.27  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY11 revenues +27.7%; Q1 operating margin 6.54% (+200bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 60.6x FY12E vs a 46.1x 1.5-yr ex-FY10 median (86th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    -  Growth vs own history: no FY12 revenue guide in numbers, Q1 2012 revenues as reported +1.7% vs a 19.0% 5-yr median  (-0.50 × 20%  =  -0.100)
+    +  FY11 free cash flow $0.05B, dividend $1.46 a year, $38.2M of dividends to common and common equivalent shareholders in FY11  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Gathering and Processing operating margin growth    +22.5%   -115.0%  -137.5%  NGL and gas prices fall on percent-of…
+  Logistics and Marketing operating margin growth    +25.6%    -35.0%  -60.6%  Fractionation and marketing margins fall
+  Revenue growth                       +1.7%   -106.0%  -107.7%  Commodity prices and volumes fall
+  Operating margin change           +200.0bp  -240.0bp  -440.0bp  Costs and product purchases outrun re…
+  Pre-tax margin change             +193.0bp  -150.0bp  -343.0bp  Interest and charges as earnings fall
+  Disruption theme: none in scope     +2.0/4    +1.0/4  -1.0/4  No live disruption theme covers midst…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$32  (model)  /  $30 (defined)
+  Bear probability (proxy model):  7.5%
+
+  KEY TRIGGER: Gathering and Processing operating margin growth went from +37.2% (Q4 2011) to +22.5% (Q1 2012);
+  the bear case needs Logistics and Marketing (+25.6% now) and revenues
+  (+1.7% now) to give way as well. By the company's own account the Partnership's percent-of-proceeds arrangements expose it to commodity prices;
+  the bear needs NGL prices and volumes to fall across the segments, not one quarter's.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $0.74  (FY2012E: no reported (GAAP) EPS guide, FY11's $0.74 stands)
+  Min viable P/E at panic:          44x  [median of calendar-year P/E lows: 2011 36.1x, 2012 53.5x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $33/share
+  Current $45 vs Updated EPP $33:  +38%  moderate distance to floor
+  Bear $30 vs Updated EPP $33:  -8%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Gathering and Processing operating margin growth           -44.0      -66.5   BASE floor (vs +22 now)
+  Logistics and Marketing operating margin growth             5.0      -20.6   BASE floor (vs +26 now)
+  Revenue growth                             -43.0      -44.7   BASE floor (vs +2 now)
+  Operating margin change                   -120.0     -320.0   BASE floor (vs +200 now)
+  Pre-tax margin change                      -60.0     -253.0   BASE floor (vs +193 now)
+  Disruption theme: none in scope              2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $0.74 × (1+0.0%)² = $0.74
+  At 46x P/E (conservative):  $34/share
+  + Cumul. dividends (2yr):  +$3.01/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $34  (▼11 from $45)
+  Conservative total return:  -17% over 2yr  = -9%/yr
+
+  0.0% EPS growth is what is left once the premium multiple (60.6x)
+  mean-reverts to 46x. Breakeven at 46x needs FY2014E EPS of $0.91,
+  i.e. 10.8%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $26.01  –  $49.91  (at 79th pct of range)
+  Annual dividend:      $1.46/share  (yield 3.3%)
+  Realized vol (1yr):   34% annualized
+  Beta vs broad market: 1.00
+  1-sigma range (1yr):  $29  –  $60  ($45 ± 34%)
+  2-sigma range (1yr):  $14  –  $76
+  ────────────────────────────────────────────────────────────
+  Bear $30 requires:  ~1.0σ price move  (within normal vol range)
+  A midstream natural gas and NGL company (the parent of Targa Resources Partners LP) with a 1.0 beta: the stock is +68% off its August
+  low while Gathering and Processing operating margin growth went from +37.2% (Q4 2011) to +22.5% (Q1 2012).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        0.74  40.8x  $     30     7.5%      1.2%    +6.3pp  Flat EPS (no EPS change in FY11-FY11 to measure: the 0% cap); P/E to its 10th pct
+  BASE        0.77  46.1x  $     35    26.3%      4.3%   +22.0pp  EPS +1.7%/yr (Q1 revenues + margin + buyback); P/E at its 1.5-yr ex-FY10 median
+  BULL        0.77  58.1x  $     45    55.7%     15.0%   +40.7pp  EPS +1.7%/yr (no FY11-FY11 CAGR to measure: BASE's rate); P/E holds its 75th pct
+  XBULL       0.77  61.1x  $     47    10.5%     79.5%   -68.9pp  EPS +1.7%/yr (no 2-yr run in FY11-FY11: BULL's rate); P/E at its 90th pct
+
+  Proxy EV (2yr): $41  /  Market EV: $46  /  Current: $45
+  Conservative EV (2yr, ④): $34 + $3.01 divs = $37 total value
+  Downside (→ Bear $30): 33.1%   Upside (→ Bull $45): 0.4%   Ratio B 87.24x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $45 the market needs $59 in two years —
+  above the BULL case. That is a market composite of 3.77 against a model
+  read of 2.50: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                      87.24x     +38%    -1.27  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     5.91x     +38%    -1.43  OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx     +38%    -1.27  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                         11.82x     +38%    -1.27  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                           infx     +38%    -1.43  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)            87.24x     +38%    -0.97  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                87.24x     +29%    -1.27  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                   87.24x     +38%    -1.27  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) the Q2 2012 release — the next read on Gathering and Processing (+22.5% now) and Logistics and Marketing (+25.6% now)
+  (2) Margins — operating +200.0bp and pre-tax +193.0bp in Q1 2012: NGL prices, fees and interest
+  (3) The FY12 outlook — no revenue, EPS or margin guide in numbers (the outlooks are the Partnership's EBITDA and TRC's dividends)
+  (4) Free cash flow — FY11 consolidated net cash provided by operating activities $379.3M less outlays for property, plant and equipment $331.9M (Targa Resources Corp. FY2011 10-K; the Partnership's, mostly)
+  (5) Capital return at 61x — $38.2M of dividends to common and common equivalent shareholders in FY11: management's own read of the multiple
+  ✕ AVOID  |  EPP floor $33  |  ADD below ~$30  |  TRIM above $45
+════════════════════════════════════════════════════════════════════════
+
