@@ -5,6 +5,7 @@ changes, and whether the first weekly date on or after it does. In memory; nothi
     python3 retro/generators/lyb/controls_lyb.py                          # the 2012-2013 dates
     python3 retro/generators/lyb/controls_lyb.py 2014-01-01 2017-12-31    # the 2014-2017 dates (retro/README.md, "LYB 2014-2017")
     python3 retro/generators/lyb/controls_lyb.py 2018-01-01 2021-12-31    # the 2018-2021 dates (retro/README.md, "LYB 2018-2021")
+    python3 retro/generators/lyb/controls_lyb.py 2022-01-03 2026-11-22    # the 2022-2026 dates (retro/README.md, "LYB 2022-2026")
 
 build_lyb.py's check_print re-derives every rate from a print's raw figures, so a print's control alters its O&P-Americas operating
 income and re-derives the rate; a Q4 print's full-year revenue, a vintage's last-year revenue, the restatement's EPS, each dividend and
@@ -70,6 +71,16 @@ for i, v in enumerate(facts0["history_vintages"]):
     if v.get("cloud_quote"):                 # the FY2018-FY2020 10-Ks' one cloud words (text only)
         C.append((f"{v['fy_label']} vintage, its cloud words", v["published"],
                   lambda f, i=i: f["history_vintages"][i].update(cloud_quote=f["history_vintages"][i]["cloud_quote"] + " CTRL")))
+    if v.get("ai_quote"):                    # the FY2024-FY2025 10-Ks' generative AI words (text only)
+        C.append((f"{v['fy_label']} vintage, its AI words", v["published"],
+                  lambda f, i=i: f["history_vintages"][i].update(ai_quote=f["history_vintages"][i]["ai_quote"] + " CTRL")))
+    if v.get("refining_exit_quote"):         # the FY2025 10-K's discontinued refining business (ENERGY_TRANSITION out of scope)
+        C.append((f"{v['fy_label']} vintage, its refining exit words", v["published"],
+                  lambda f, i=i: f["history_vintages"][i].update(refining_exit_quote=f["history_vintages"][i]["refining_exit_quote"] + " CTRL")))
+    for y in v.get("eps_excluded", {}):
+        if y != "2010":                      # a loss year excluded by the vintage (FY2025)
+            C.append((f"{v['fy_label']} vintage, its FY{y} exclusion note", v["published"],
+                      lambda f, i=i, y=y: f["history_vintages"][i]["eps_excluded"].update({y: f["history_vintages"][i]["eps_excluded"][y] + " CTRL"})))
     if v.get("refining_quote"):              # the watch list's 10-K words (from ENERGY_TRANSITION's live date, 2015-12-12)
         C.append((f"{v['fy_label']} vintage, its refining sentence", v["published"],
                   lambda f, i=i: f["history_vintages"][i].update(refining_quote=f["history_vintages"][i]["refining_quote"] + " CTRL")))

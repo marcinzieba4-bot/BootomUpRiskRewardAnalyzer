@@ -5,6 +5,7 @@ memory, into a scratch folder) and classify offline with retro_tool's own classi
     python3 retro/generators/lyb/sens_lyb.py <scratch-out>                          # the 100 dates of 2012-2013
     python3 retro/generators/lyb/sens_lyb.py <scratch-out> 2014-01-01 2017-12-31    # the 209 of 2014-2017 (README, "LYB 2014-2017")
     python3 retro/generators/lyb/sens_lyb.py <scratch-out> 2018-01-01 2021-12-31    # the 209 of 2018-2021 (README, "LYB 2018-2021")
+    python3 retro/generators/lyb/sens_lyb.py <scratch-out> 2022-01-03 2026-11-22    # the 255 of 2022-2026 (README, "LYB 2022-2026")
 """
 import contextlib, copy, io, json, os, runpy, shutil, sys, types
 REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
@@ -18,7 +19,7 @@ engine0 = open(B.ENGINE, encoding="utf-8").read()
 raw, spx = load_series("LYB"), load_series("^GSPC")
 RANGE = (sys.argv[2], sys.argv[3]) if len(sys.argv) > 3 else ("2012-02-06", "2013-12-31")
 dates = weekly_dates(RANGE[0], RANGE[1], sorted(raw), facts0["prints"])
-assert len(dates) == {"2012-02-06": 100, "2014-01-01": 209, "2018-01-01": 209}.get(RANGE[0], len(dates))
+assert len(dates) == {"2012-02-06": 100, "2014-01-01": 209, "2018-01-01": 209, "2022-01-03": 255}.get(RANGE[0], len(dates))
 tax = T.load_taxonomy()
 
 
@@ -123,7 +124,7 @@ for v in f["history_vintages"]:
             v["eps_normalized"][y] = e
 V["the company's EPS excluding LCM ($8.92, $10.35, $9.20)"] = (f, engine0, B)
 # 10. ENERGY_TRANSITION read as out of scope (no watch list; the 'why' as before its live date)
-modet = variant_module('    if et["live_from"] <= as_of:\n', "    if False:\n")
+modet = variant_module('    if et["live_from"] <= as_of and not et_out:\n', "    if False:\n")
 V["ENERGY_TRANSITION out of scope"] = (facts0, engine0, modet)
 # 11. the ten-year roll unused (every revenue year kept)
 f = copy.deepcopy(facts0)
@@ -140,6 +141,8 @@ def set_eps(f, y, e):
         a = p.get("fy_actual")
         if a and a["fy"] == y:
             a["eps_normalized"] = e
+            if "eps_gaap" in a:          # a 2022-2026 Q4 print: the tested figure stands in for its GAAP EPS too
+                a["eps_gaap"] = e
     for v in f["history_vintages"]:
         if str(y) in v["eps_normalized"]:
             v["eps_normalized"][str(y)] = e
@@ -165,8 +168,7 @@ modoi = variant_module("    i = public.index(latest)\n",
                        "    i = public.index(latest)\n    if latest.get('oi_source'):\n        latest = {**latest, 'opm_bp': 70.0}\n")
 V["the 10-Q's operating income unused (those prints' margin signal at BASE)"] = (facts0, engine0, modoi)
 # 6./7. every data signal at its BEAR or XBULL value
-for lab, vals in (("BEAR", ("-299.0", "-41.0", "-108.0", "-480.0", "-3290.0")), ("XBULL", ("707.0", "168.0", "196.0", "1270.0", "3550.0"))):
-    e = engine0
+def at_values(e, vals):
     i0, i1 = e.index("SIGNALS = ["), e.index('THEME_SIGNAL_NAME, "/4"')
     blk = e[i0:i1]
     for key, val in zip(('_f(LATEST["opa_pct"])', '_f(LATEST["ind_pct"])', '_f(LATEST["sales_pct"])', '_f(LATEST["opm_bp"])'), vals):
@@ -174,8 +176,76 @@ for lab, vals in (("BEAR", ("-299.0", "-41.0", "-108.0", "-480.0", "-3290.0")), 
         blk = blk.replace(key, val)
     k = 'round((FY_MARGIN_BASE - PREV_FY_MARGIN) * 100, 1) if MARGIN_GUIDED else _f(LATEST["ptm_bp"])'
     assert k in blk
-    blk = blk.replace(k, vals[4])
-    V[f"every data signal at its {lab} value"] = (facts0, e[:i0] + blk + e[i1:], B)
+    return e[:i0] + blk.replace(k, vals[4]) + e[i1:]
+
+
+engine_nr0 = open(B.ENGINE_NR, encoding="utf-8").read()
+os.makedirs(OUT, exist_ok=True)
+for lab, vals in (("BEAR", ("-299.0", "-41.0", "-108.0", "-480.0", "-3290.0")), ("XBULL", ("707.0", "168.0", "196.0", "1270.0", "3550.0"))):
+    nr = os.path.join(OUT, f"lyb2_{lab}.tmpl")
+    open(nr, "w", encoding="utf-8").write(at_values(engine_nr0, vals))
+    modnr = variant_module('ENGINE_NR = os.path.join(HERE, "templates", "lyb2_engine.py.tmpl")', f"ENGINE_NR = {nr!r}")
+    V[f"every data signal at its {lab} value"] = (facts0, at_values(engine0, vals), modnr)
+if RANGE[0] >= "2022-01-01":
+    # ── 2022-2026 (retro/README.md, "LYB 2022-2026"): the calls that still reach these dates, and this batch's own ──
+    V = {k: V[k] for k in ("the company's EPS excluding LCM ($8.92, $10.35, $9.20)", "FY2017 without its listed one-offs ($10.23, derived)",
+                           "FY2020 excluding LCM and impairment ($5.61)", "ENERGY_TRANSITION out of scope",
+                           "the 10-Q's operating income unused (those prints' margin signal at BASE)",
+                           "every data signal at its BEAR value", "every data signal at its XBULL value")}
+    # a. the company's EPS excluding identified items (it also removes the LCM adjustments and recurring asset write-downs): FY21
+    # $18.19, FY22 $12.46, FY23 $8.65, FY24 $6.40 (each Q4 release's Table 3), FY25 $1.70 (the Q4 2025 release), so FY2025 is kept
+    f = copy.deepcopy(facts0)
+    ADJ = {2021: 18.19, 2022: 12.46, 2023: 8.65, 2024: 6.40}
+    for y, e in ADJ.items():
+        set_eps(f, y, e)
+    for p in f["prints"]:
+        a = p.get("fy_actual")
+        if a and a["fy"] == 2025:
+            a.update(eps_normalized=1.70, eps_gaap=1.70, excluded_note=None)
+            a["one_off_test"].update(items_after_tax_m=0.0, income_attributable_m=563.0, distorted=False)   # on the adjusted figure
+    for v in f["history_vintages"]:
+        if v["eps_excluded"].pop("2025", None):
+            v["eps_normalized"]["2025"] = 1.70
+    V["the company's EPS excluding identified items (FY21-FY25: $18.19, $12.46, $8.65, $6.40, $1.70)"] = (f, engine0, B)
+    # b. the Q4 operating income derived, from each 10-K's date, as the 10-K's year less the Q3 10-Q's nine months (both years; for
+    # Q4 2025 the pre-tax income too): Q4 2021 $911M vs $893M, Q4 2022 $487M vs $911M, Q4 2023 $315M vs $487M, Q4 2024 $(659)M vs
+    # $315M, Q4 2025 $(88)M vs $(597)M, pre-tax $(142)M vs $(818)M (no filing prints these quarters; derived for this test only)
+    Q4D = {"Q4 2021": ("2022-02-25", 911.0, 893.0, None), "Q4 2022": ("2023-02-23", 487.0, 911.0, None),
+           "Q4 2023": ("2024-02-22", 315.0, 487.0, None), "Q4 2024": ("2025-02-27", -659.0, 315.0, None),
+           "Q4 2025": ("2026-02-20", -88.0, -597.0, (-142.0, -818.0))}
+    modq4 = variant_module("    i = public.index(latest)\n",
+                           "    i = public.index(latest)\n"
+                           f"    _Q4D = {Q4D!r}\n"
+                           "    if latest['quarter'] in _Q4D and as_of >= _Q4D[latest['quarter']][0]:\n"
+                           "        _d, _o, _op, _pt = _Q4D[latest['quarter']]\n"
+                           "        _r = latest['raw']\n"
+                           "        _mg = lambda x, r: round(x / r * 100 + 0.0, 2)\n"
+                           "        latest = {**latest, 'opm': _mg(_o, _r['rev_m']), 'opm_bp': round((_mg(_o, _r['rev_m']) - _mg(_op, _r['rev_prior_m'])) * 100, 1)}\n"
+                           "        if _pt:\n"
+                           "            latest.update(ptm=_mg(_pt[0], _r['rev_m']), ptm_bp=round((_mg(_pt[0], _r['rev_m']) - _mg(_pt[1], _r['rev_prior_m'])) * 100, 1))\n"
+                           "        prints = prints[:-1] + [latest] if prints[-1]['quarter'] == latest['quarter'] else prints\n")
+    V["the Q4 operating income derived from each 10-K (year less nine months)"] = (facts0, engine0, modq4)
+    # c. Q3 2026's segment signals n/r (no year-ago column in its release) instead of the Q3 2025 release's year-ago quarter
+    modseg = variant_module("    i = public.index(latest)\n",
+                            "    i = public.index(latest)\n    if latest['quarter'] == 'Q3 2026':\n"
+                            "        latest = {**latest, 'opa_pct': None, 'ind_pct': None}\n")
+    V["Q3 2026's segment signals n/r (no year-ago quarter from the Q3 2025 release)"] = (facts0, engine0, modseg)
+    # d. the FY2025 10-K's restatement of FY2023-FY2024 (the refining business discontinued) unused: FY23 $6.48, FY24 $4.14 kept
+    f = copy.deepcopy(facts0)
+    for v in f["history_vintages"]:
+        if v["fy_label"] == "FY25":
+            v["eps_normalized"].update({"2023": 6.48, "2024": 4.14})
+    V["the FY2025 10-K's restated FY2023-FY2024 unused ($6.48, $4.14)"] = (f, engine0, B)
+    # e. the EPS history not cut to the ten fiscal years (2011 on kept in every vintage)
+    f = copy.deepcopy(facts0)
+    allep = {}
+    for v in f["history_vintages"]:
+        allep.update(v["eps_normalized"])
+        for y, x in allep.items():
+            if y not in v.get("eps_excluded", {}):
+                v["eps_normalized"].setdefault(y, x)
+        v["eps_normalized"] = dict(sorted(v["eps_normalized"].items()))
+    V["the EPS history not cut to ten years (2011 on kept)"] = (f, engine0, B)
 for name, (f, e, m) in V.items():
     try:
         r = classify_all(f, e, "v", m)
