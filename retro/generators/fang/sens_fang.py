@@ -67,7 +67,9 @@ def set_eps(facts, year, eps):
         a = p.get("fy_actual")
         if a and str(a["fy"]) == year:
             a["eps_gaap"] = eps
-            a["one_off_test"].update(eps_gaap=eps, loss=eps <= 0, distorted=False, kept=True)   # the figure without the one-offs
+            o = a["one_off_test"]                         # the figure without the one-offs: their pre-tax amounts added back
+            o.update(eps_gaap=eps, loss=eps <= 0, distorted=False, kept=True,
+                     pretax_m=o["pretax_m"] + o["listed_charges_m"] - o["listed_benefits_m"], listed_charges_m=0.0, listed_benefits_m=0.0)
     return f
 
 

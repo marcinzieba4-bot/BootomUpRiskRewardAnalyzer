@@ -7,7 +7,10 @@ that the refusals change on exactly the weekly dates from the vintage's publicat
 date before; the dates that would pass are those with a FANG close (from 2012-10-12). A last control sets the series start a year
 earlier in memory and requires that only the price reason of the dates in that year changes. Nothing on disk changes.
 
-    python3 retro/generators/fang/controls_fang.py [START END]      # default 2008-01-01 2013-12-31
+    python3 retro/generators/fang/controls_fang.py [START END]      # default 2008-01-01 2013-12-31; 2014-2017: 2008-01-01 2017-12-31
+
+A vintage that already anchors a P/E (the FY2013-FY2016 10-Ks) is controlled the other way: every year set to a loss, and the dates
+from its publication to the next vintage must become refused (the CHTR 2014-2017 extension).
 """
 import copy
 import json
@@ -34,16 +37,24 @@ for i, v in enumerate(vint):
     f1 = copy.deepcopy(f0)
     vv = sorted(f1["history_vintages"], key=lambda v: v["published"])[i]
     y = max((k for k, p in vv["periods"].items() if p["months"] == 12), key=lambda k: vv["periods"][k]["end"])
-    vv["periods"][y]["eps_diluted"] = 9.99
+    # (2014-2017, retro/README.md, "FANG 2014-2017") a vintage that already anchors (a positive GAAP year) gets every year a loss,
+    # so its dates must become refused; one that does not gets its latest year a positive EPS, so its dates must pass
+    anchors = any(p["months"] == 12 and (p["eps_diluted"] or 0) > 0 for p in vv["periods"].values())
+    if anchors:
+        for p in vv["periods"].values():
+            p["eps_diluted"] = -9.99 if p["eps_diluted"] is not None else None
+    else:
+        vv["periods"][y]["eps_diluted"] = 9.99
     changed = [d for d in dates if g(d, f1) != base[d]]
     want = [d for d in dates if v["published"] <= d < nxt_v(v["published"])]
     early = [d for d in changed if d < v["published"]]
     passing = [d for d in changed if not g(d, f1)]
-    ok = changed == want and not early and passing == [d for d in want if d in fang]
+    ok = changed == want and not early and passing == ([] if anchors else [d for d in want if d in fang])
     bad += not ok
     span = f"{changed[0]}..{changed[-1]}" if changed else "none"
-    print(f"{'ok ' if ok else 'BAD'} vintage {v['source']} ({v['fy_label']}, FY{y}) published {v['published']}: {len(changed):>3} dates "
-          f"change ({span}), {len(want)} expected, {len(early)} before publication, {len(passing)} would pass the gate")
+    print(f"{'ok ' if ok else 'BAD'} vintage {v['source']} ({v['fy_label']}, FY{y}{', every year a loss' if anchors else ''}) published "
+          f"{v['published']}: {len(changed):>3} dates change ({span}), {len(want)} expected, {len(early)} before publication, "
+          f"{len(passing)} would pass the gate")
 
 # the price reason: a FANG close a year before the series start removes only that year's price reason (every date stays refused)
 px = dict(fang)

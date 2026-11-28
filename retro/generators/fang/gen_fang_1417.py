@@ -369,6 +369,11 @@ for fy in (2013, 2014, 2015, 2016):
     a, per = P[f"Q4 {fy}"]["fy_actual"], V[fy]["periods"][str(fy)]
     assert (a["eps_gaap"], round(a["revenue_m"], 3), round(a["pretax_m"], 3)) == (per["eps_diluted"], per["revenue_m"], per["pretax_m"]), (fy, a, per)
 
+# the Q4 releases' prior years agree with the 10-K vintages the builder holds when each release is the latest print
+for fy in (2014, 2015, 2016):
+    a = P[f"Q4 {fy}"]["fy_actual"]
+    assert abs(a["sales_growth"] - pct(V[fy - 1]["periods"][str(fy - 1)]["revenue_m"], a["revenue_m"])) < 0.06, fy
+
 # ── the one-off test on each 10-K year and the model fields of each vintage ──────────────────────────────────────────────────────
 TESTS = {fy: P[f"Q4 {fy}"]["fy_actual"]["one_off_test"] for fy in (2013, 2014, 2015, 2016)}
 assert [TESTS[y]["kept"] for y in (2013, 2014, 2015, 2016)] == [True, True, False, False]

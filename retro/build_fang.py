@@ -192,9 +192,7 @@ def history(as_of, facts):
             h["revenue_usd_b"] = {k: v for k, v in rv.items() if int(k) > a["fy"] - 10}
             h["diluted_shares_m"] = {**h["diluted_shares_m"], y: a["diluted_shares_m"]}
             h["prev_fy_pretax_margin"] = a["pretax_margin"]
-            prev = h["revenue_usd_b"][str(a["fy"] - 1)]
-            assert abs(a["sales_growth"] - (a["revenue_usd_b"] / prev - 1) * 100) < 0.06, (p["quarter"], "the release's prior year differs")
-            h["prev_fy_sales_growth"] = a["sales_growth"]
+            h["prev_fy_sales_growth"] = a["sales_growth"]     # the release's own year against its own prior year
             h["fy_label"] = f"FY{a['fy'] % 100:02d}"
             h["extended"] += f", FY{y[2:]} from {p['source']} ({p['published']})"
     return h, public, prints
