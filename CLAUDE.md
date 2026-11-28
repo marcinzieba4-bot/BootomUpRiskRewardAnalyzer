@@ -24,7 +24,7 @@ touching either directory.
   NKE (2008-2026 so far), AVGO (from its 2009-08-06 listing to 2026-10-30 so far), PEP (2008 to 2026-10-30 so far), MSFT
   (2008 to 2026-10-30 so far), XOM (2008 to 2026-10-30 so far), SHW (2008 to 2026-11-06 so far), WMT (2008 to 2026-11-06 so far), RCL (2008 to 2026-11-06 so far), MAR (2008 to 2026-11-03 so far), BKR (2008 to 2017-06-30, then 2019-02-01 to 2026-11-06 so far), PFE (2008 to 2026-11-04 so far), CMCSA (2008 to 2026-11-06 so far), CAT (2008 to 2026-11-06 so far), BMY (2008 to 2026-11-06 so far), NVDA (2008 to 2026-11-06 so far), F (2008-01-04 to 2026-11-06 so far; 2022-01-07 onward was built first at the owner's request, and dates before 2022 are an early era with its
   own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far), SPGI (2008-01-04 to 2026-11-20 so far), CB (2008-01-04 to 2026-11-20 so far), LLY (2008-01-04 to 2026-11-20 so far), UNH (2008-01-04 to 2026-11-20 so far), CRM (2008-01-04 to 2026-11-20 so far), SCHW (2008-01-04 to 2026-11-20 so far), NEE (2008-01-04 to 2026-11-20 so far), NEM (2008-01-04 to 2026-11-27 so far), LYB (from its 2010 share issue: 2012-02-10 to 2026-11-20 so far), CHTR (from its first
-  anchoring year: 2019-02-01 to 2026-11-20 so far), FANG (from its first anchoring year: 2014-02-21 to 2017-12-29 so far), TRGP (from its first full year of EPS: 2012-02-24 to 2013-12-31 so far) and OKE (2008-01-04 to 2009-12-31 so far) sit in `staging/retrospective/` until the owner adds
+  anchoring year: 2019-02-01 to 2026-11-20 so far), FANG (from its first anchoring year: 2014-02-21 to 2017-12-29 so far), TRGP (from its first full year of EPS: 2012-02-24 to 2017-12-29 so far) and OKE (2008-01-04 to 2009-12-31 so far) sit in `staging/retrospective/` until the owner adds
   them to the archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM", "SHW", "WMT", "RCL", "MAR", "BKR", "PFE", "CMCSA", "CAT",
   "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG", "JPM", "V", "SPGI", "CB", "LLY", "UNH", "CRM", "SCHW", "NEE", "NEM", "LYB", "CHTR", "FANG", "TRGP", "OKE"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py`, `mu_signal_model.py`, `v_signal_model.py`, `spgi_signal_model.py` and `lly_signal_model.py` (other branches) files
   and today's profiles in `data/business_profiles.json` (NVDA's, SO's, V's, SPGI's, CB's, LLY's, UNH's, CRM's and NEE's included) are 2026 analyses: never inputs to a retrospective. AVGO did not trade
@@ -697,7 +697,18 @@ touching either directory.
   distribution policy's "seasonal and cyclical factors" read as boilerplate, the CHTR reading), no live theme; RICH 88, FAIR 9, CHEAP 1 of
   98 dates (the GAAP EPS of a general partner's holding company is small against its dividends, so its own short window prices it at
   57-97x); the dividend outlook as BASE and FY2010's pre-IPO share count are the largest calls (10 classes each) (retro/README.md,
-  "TRGP", "TRGP 2008-2009", "TRGP from the first full year").
+  "TRGP", "TRGP 2008-2009", "TRGP from the first full year"). From 2014 (a full-data batch, `gen_trgp_1417.py` appending to the
+  2012-2013 sheet, every earlier fact asserted unchanged): GAAP still (FY13 $1.55, FY14 $2.43, FY15 $1.09); FY2015 is kept on the one
+  item its release states on TRC's basis (the goodwill impairment's $25.6M against $58.3M; the batch's largest EPS call: 75 classes if
+  excluded), and FY2016 ($(1.80); the Q4 2016 release prints only the net loss, so `eps_gaap` None) is a loss, excluded as the latest
+  year and then a gap ("ex-FY10 ex-FY16"); the Atlas mergers (2015-02-27) and the buy-in of the Partnership's public common units
+  (2016-02-17, 104.5M TRC shares) are in the figures as published, so the buyback reads -23.1%/yr of dilution from the FY2016 10-K; TRC's
+  own releases from Q1 2016 print no EPS or shares, which come from each 10-Q (Q4 2016 from the 10-K's quarterly data) from its own date
+  (`restated`, the JPM and SCHW encoding), n/r before through `trgp2_engine.py.tmpl`; the 8-K of 2014-10-23 revises 2011-2013 revenues to
+  the net basis of NGL buy-sell transactions (`revenue_restatements`, new); the recast 8-K of 2016-05-23 (two segments) is a vintage of
+  its own; still no guide in numbers (dividend outlooks display only); ENERGY_TRANSITION out of scope (no reserves or refinery: the BKR
+  reading, text only), ECOMMERCE and STREAMING named by no 10-K; CHEAP 107, RICH 61, FAIR 41 of 209 dates; the frozen signals at BEAR move
+  96 classes; built in a new session without opening the 2012-2013 outcomes or findings (retro/README.md, "TRGP 2014-2017").
   OKE (ONEOK, Inc., NYSE: OKE, CIK 1039684), a full-data batch: EPS is diluted EPS from continuing operations, each year from the latest
   filing that reports it, at the company's figures without the gains on sale for 2005 ($2.53) and 2006 ($2.40) (the FY2006 10-K; the
   ACN rule); FY2001 is excluded by the AAPL FY2002 test on the latest filing that reports it (the FY2005 10-K's $0.36 and $43.5M of

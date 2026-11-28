@@ -31543,6 +31543,171 @@ Judgement calls that could carry hindsight:
 
 The hindsight results are in `staging/retrospective/TRGP/FINDINGS.md`: hypotheses, never inputs.
 
+### TRGP 2014-2017: the Atlas mergers and the buy-in as published, FY2016 a loss, the 10-Qs' EPS, ENERGY_TRANSITION out of scope
+
+209 weekly dates, 2014-01-03 to 2017-12-29, on the same fact sheet, generator discipline, builder, engine and method (r2), with the
+rule-T thresholds of 2012-02-24 frozen. Built on 2026-11-28 at the owner's request ("do retrospective analysis for TRGP, 2014-2017, same
+rules as before"), in a new session that did not open the 2012-2013 outcomes, `SERIES.md` or `FINDINGS.md`; every decision below applies
+a rule that existed before (the house rules and the 2012-2013 encodings) or is disclosed as new. NGLS's unit prices and per-unit figures
+are never used: the Atlas mergers (2015-02-27) and TRC's acquisition of the Partnership's public common units (2016-02-17) are in the
+figures as TRC's own filings publish them.
+
+```bash
+python3 retro/tools/edgar.py fetch 1389170 <dir> --from 2010-09-01 --to 2017-12-31 --forms 10-K 10-Q 8-K 10-K/A 8-K/A 10-Q/A 424B1
+python3 -I retro/generators/trgp/gen_trgp.py --filings <dir> --out <scratch>/TRGP_1213.json    # the 2012-2013 sheet, byte for byte
+python3 -I retro/generators/trgp/gen_trgp_1417.py --filings <dir> --facts-in <scratch>/TRGP_1213.json   # appends 2014-2017
+python3 -I retro/tools/verbatim.py <dir>/checklist_trgp_1417.json            # 318/318
+python3 retro/build_trgp.py --weekly 2012-02-20 2013-12-31                   # regression: the 98 earlier models byte for byte
+python3 retro/build_trgp.py --weekly 2014-01-01 2017-12-31                   # 209 dates, 2014-01-03 .. 2017-12-29
+python3 retro/generators/trgp/controls_trgp.py 2014-01-01 2017-12-31         # 59 controls
+python3 retro/generators/trgp/sens_trgp_1417.py <scratch>                    # the sensitivity below
+for c in 2014-02-13 2014-02-14 2014-02-18 2014-02-19 2014-05-01 2014-05-02 2014-08-01 2014-08-02 2014-10-14 2014-10-15 2014-10-23 \
+         2014-10-24 2014-11-04 2014-11-05 2015-01-01 2015-02-13 2015-02-14 2015-02-17 2015-02-18 2015-05-05 2015-05-06 2015-08-04 \
+         2015-08-05 2015-11-03 2015-11-04 2015-12-12 2016-02-25 2016-02-26 2016-03-01 2016-03-02 2016-04-29 2016-04-30 2016-05-10 \
+         2016-05-11 2016-05-23 2016-05-24 2016-08-03 2016-08-04 2016-11-02 2016-11-03 2016-11-07 2016-11-08 2017-02-15 2017-02-16 \
+         2017-02-21 2017-02-22 2017-05-04 2017-05-05 2017-08-03 2017-08-04 2017-08-05 2017-11-02 2017-11-03 2017-11-04 2018-01-01; do
+  python3 retro/tools/firewall.py $c TRGP; done                             # 55 cutoffs
+```
+
+**A full-data batch.** `www.sec.gov` again served every filing document to the plain client name of `edgar.py` (no contact address; the
+owner's email was not used). Read by the session's model directly, with no delegated transcription: the sixteen earnings releases from Q4
+2013 to Q3 2017 (joint releases of the Partnership and TRC to Q4 2015, TRC's own from Q1 2016), the FY2013-FY2016 10-Ks (Item 6, the
+statements of operations and cash flows, the selected quarterly data, the segment note, Items 1, 1A and 7A), the 8-K of 2016-05-23 that
+recasts the FY2015 10-K's Items 1, 6, 7 and 8, the 8-K of 2014-10-23 that revises revenues, the six 10-Qs of 2016-2017 (EPS and shares),
+and every other 8-K of 2014-2017 by its item text and exhibits. `gen_trgp_1417.py` loads the 2012-2013 sheet, refuses one that already
+holds a later fact, appends, and asserts every earlier fact, source and rule-T value unchanged (the CHTR, NEM and SCHW extension pattern);
+`gen_trgp.py` still regenerates the 2012-2013 sheet byte for byte. Sources `TG4`-`TG7` (the FY2013-FY2016 10-Ks), `TG8` (the recast),
+`TG40`-`TG55` (the releases), `TG60` (the revenue revision), `TG61`-`TG66` (the 10-Qs), `TG31`-`TG32` (the Atlas and buy-in 8-Ks).
+
+- **No guide in numbers, again.** No release, 10-Q, 10-K or other 8-K of 2014-2017 guides TRC's revenue, EPS or a margin: the outlooks are
+  the Partnership's Adjusted EBITDA and capital spending (to 2015), TRC's dividend growth ("approximately 35%" for 2015 pro forma for the
+  Atlas mergers, the 8-K of 2014-10-14; "dividend growth of 15% for 2016", the buy-in 8-K of 2015-11-03) and, for 2017, volumes, capital
+  spending and dividend coverage "assuming a $3.64 per common share 2017 dividend" (the Q4 2016 release). So the last full year's GAAP EPS
+  stands, BASE is the latest quarter's revenue growth as reported plus the buyback, and there is no margin step; the dividend outlooks are
+  shown in the guide line, display only (the 2012-2013 and KMI rule). Their own years are the calendar-year warnings of `retro_tool run`
+  (forecasts the filings state, not leaks; the buy-in 8-K's "through 2018" is shown to 2017-02-10, while 2016 is the current year).
+- **EPS: GAAP diluted EPS, each year from the latest filing that reports it.** FY13 $1.55, FY14 $2.43, FY15 $1.09 (each Q4 release and its
+  10-K); FY2016 $(1.80), a loss. TRC prints no EPS excluding one-offs. From Q4 2015 TRC's releases state "net income attributable to common
+  shareholders before impairment of goodwill" ($83.9M for 2015) in dollars, never per share, so EPS stays GAAP (the SCHW 2010-2013 rule).
+- **The one-off test.** FY2013: the release lists no TRC item; the Partnership's $14.7M of losses on debt redemptions and its $15.3M gain
+  from eliminating the Badlands contingent consideration net to a $0.6M benefit against $65.1M. FY2014: the $12.4M loss on the 7 7/8% notes
+  and $8.0M of other expense ("primarily attributable to transaction costs related to the pending Atlas Mergers"), even all credited to
+  TRC, against $102.3M. **FY2015 (the batch's largest EPS call):** the one item the release states on TRC's basis is the $290.0M
+  provisional goodwill impairment, whose effect on TRC is $25.6M (its $83.9M before the impairment less the $58.3M reported): kept, at
+  GAAP $1.09. The Partnership's other items (a $32.6M impairment charged to depreciation, Atlas merger costs in other expense, a $30.6M
+  gain on the redemption value of the joint ventures' preferred interests) are before the noncontrolling interests, with no TRC share
+  stated; counted in full against TRC they would approach or pass its income, which is the reading the sensitivity tests. **FY2016 is a
+  loss** ($(278.1)M attributable to common shareholders after the Series A preferred dividends; $(1.80) a share in the 10-K), excluded as the
+  latest year and then a gap, its days out of the window ("ex-FY10 ex-FY16"), so FY15's $1.09 anchors every date from the Q4 2015 print.
+  The Q4 2016 release prints no per-share figure, so the year is a loss by its reported net loss from the release (`eps_gaap` None; the
+  builder's loss test reads the income when no EPS is printed, new and disclosed).
+- **TRC's own releases from Q1 2016 print no EPS or share count** (only the summary table, the segment reviews and the reconciliations).
+  The quarter's EPS and diluted shares come from its 10-Q from the 10-Q's own date, and Q4 2016's EPS from the FY2016 10-K's selected
+  quarterly data (`restated`, the JPM and SCHW encoding, now in `build_trgp.py`); until then the model shows EPS as n/r through
+  `trgp2_engine.py.tmpl`, the None-tolerant copy (the BKR, SPGI, SCHW and LYB encoding; 4 dates: 2016-04-29, 2016-05-06, 2016-11-03,
+  2017-02-16), and the EPS check's share count is the latest public one, named (display only). Income before income taxes, which these
+  releases do not tabulate, is net income less the income tax line (the LYB 2018 derivation; it matches the FY2016 10-K's statement).
+- **The revenue revision of 2014-10-23.** The 8-K (Items 2.02 and 8.01, accepted 08:58 ET) revises revenues and product purchases to report
+  NGL buy-sell transactions on a net basis ("There is no impact on previously reported net income"): 2011-2013 and the 2013-2014 quarters.
+  From its date the FY2013 vintage's 2011-2013 revenues and the Q1 and Q2 2014 prints take the revised figures (`revenue_restatements`, new,
+  and `restated`); 2010 and earlier stay as first published until the FY2014 10-K revises 2010 (2009 and earlier never: a seam). Two
+  dates read the revised Q2 2014 print (2014-10-24, 2014-10-31); no class moves either way.
+- **Release timing.** Every earnings 8-K of the range was accepted before the open (06:21-07:35 ET), so each print is public that day;
+  the three Friday releases (Q2 2014, Q4 2014, Q1 2016) date their own Fridays (the Q1 2013 rule). The 10-Ks are dated 2014-02-18
+  (2014-02-14 16:24 ET), 2015-02-17 (2015-02-13 17:43 ET), 2016-03-01 (2016-02-29 17:38 ET) and 2017-02-21 (2017-02-17 19:01 ET); the
+  recast 8-K 2016-05-23 (08:26 ET); the 10-Qs 2016-05-10, 2016-08-03 (accepted the evening before its release), 2016-11-07, 2017-05-04,
+  2017-08-04 and 2017-11-03.
+- **History.** Each vintage takes Item 6's five years from its own 10-K and earlier years from the latest earlier vintage, the ten fiscal
+  years to the latest one (2006 leaves with the FY2016 10-K). The recast 8-K of 2016-05-23 is a vintage of its own (the MSFT recast rule):
+  it changes no figure the models read but the segments (two from 2016); its Items 1, 6, 7 and 8 do not reprint the risk factors, so its
+  quoted words stay the FY2015 10-K's. The 8-K/As of 2016-05-02 and 2016-05-23 (pro forma statements, the recast's XBRL) add nothing.
+  Diluted shares from each statement of operations (42.1M for 2013-2014, 53.6M for 2015, 154.4M for 2016, which includes the 104.5M
+  shares issued for the Partnership's public units). The net buyback is measured from the first count (2011) to the last, as before:
+  -1.0%/yr to -0.6%/yr to the Q4 2015 print, -6.3%/yr from it, **-23.1%/yr from the FY2016 10-K** (the buy-in read as dilution in BASE).
+- **Dividends:** each quarter's declared rate from its release ($0.6075 for Q4 2013 to $0.91 from Q3 2015, held through Q3 2017).
+- **Signals:** unchanged, each against the year-ago quarter as the release shows it. To Q4 2015 the Partnership's four segments are
+  summed into the two divisions; from Q1 2016 the divisions are TRC's two reportable segments, each release recasting its year-ago
+  quarter. The goodwill impairments of Q4 2015 ($290.0M) and Q4 2016 and the Q3 2017 impairment are in income from operations as
+  published, so the margin signals read -2058bp (Q4 2015), +771bp (Q4 2016, against it) and -1830bp (Q3 2017).
+- **Durability: DURABLE, risk 2.** Each 10-K keeps the percent-of-proceeds sentence and the policy's "seasonal and cyclical factors" (the
+  CHTR reading, as before); the FY2016 10-K speaks for TRC itself ("Our primary natural gas gathering and processing arrangements that expose
+  us to commodity price risk are our percent-of-proceeds arrangements.") and its dividend policy, and replaces the distribution risk factor
+  with "Our cash flow is affected by supply and demand for natural gas and NGL products and by natural gas, NGL, crude oil and condensate
+  prices, ...", quoted in the "why".
+- **Themes.** ECOMMERCE (live 2015-01-01) and STREAMING (2015-08-04) name no midstream business, and no TRGP 10-K names e-commerce or
+  streaming. **ENERGY_TRANSITION (live 2015-12-12) is read as out of scope** (the BKR reading): its scope is oil, gas and coal reserves and
+  refining, and Targa holds neither; the 10-Ks name no reserves of its own, its "refinery services" are NGL balancing for refiners ("In our
+  refinery services business, we typically provide NGL balancing services via contractual arrangements with refiners to purchase and/or
+  market propane and to supply butanes."), and the Channelview Splitter is a "long-term, fee-based agreement" with Noble, under construction
+  to early 2018. So the watch list stays empty, and from ECOMMERCE's live date the "why" quotes every live theme's scope and each vintage's
+  greenhouse gas risk factor ("... could result in increased operating costs and reduced demand for the products and services we provide.").
+  Text only: the theme slot stays at 2/4, so no class moves either way.
+- **Adds nothing:** the Atlas merger agreements and closing 8-Ks (beyond the dividend estimate shown), the joint proxy supplement, the
+  buy-in's merger, vote and closing 8-Ks (beyond its dividend outlook), the preliminary 8-Ks of 2016-02-09 and 2017-01-23 (volumes, a
+  goodwill review, coverage; no figure the models read), the equity offerings, the Series A preferred and warrants, the notes, credit and
+  securitization 8-Ks, the 10b5-1 notices, the officer, director and vote-result 8-Ks, and the 8-K of 2016-12-29 (a 10-Q's notional volumes).
+
+Controls and checks (before any outcome):
+- **Regression:** the 98 dates of 2012-2013 rebuild byte for byte from the extended sheet and builder.
+- **Controls** (`controls_trgp.py 2014-01-01 2017-12-31`): each print's Gathering and Processing operating margin, each Q4 print's
+  full-year revenue, each restatement (the 10-Qs' EPS, the revised revenues), the revenue revision's 2013 revenue, each vintage's last
+  revenue and greenhouse gas quote, each dividend and each outlook's display: 59 of 59 change no model dated before their publication; 57
+  change the first weekly date on or after it; the Q1 2014 revision is inert (that print is no longer the latest once it is revised), and
+  the FY2013 vintage's greenhouse gas quote changes models only from 2015-01-02, ECOMMERCE's first live date, as it should.
+- **Leak scan:** `leak_scan.py --from 2014-01-01`: 52,751 (model, later token) pairs, 1 hit, read and cleared: the 2014-11-14 close of
+  $115.90 against a Q3 2017 segment figure of $115.9M. The positive control finds the print in force in 209 of 209 models.
+  `forward_refs.py`: 2 hits in 80 dated facts, the outlooks' own fiscal-year labels ("TRC 2015 dividend outlook", "TRC 2016 dividend
+  outlook"), which those filings state. `selftext.py --allow "Targa Resources Corp. FY" USD "The FY" "The IPO"`: 0 misses in 1,006 tokens.
+- **Years after the as-of date and anachronisms:** none in the 209 models other than the FY horizon labels and the outlooks' own years
+  (2015, 2016 and "through 2018"); no term of the anachronism list.
+- **`retro_tool run`:** passes on all 209 dates, with 78 calendar-year warnings, all the dividend outlooks' own years (2015 on 11 dates
+  of late 2014, 2016 and 2018 on 9 of late 2015, 2018 on 58 of 2016-2017: the buy-in 8-K's "through 2018").
+- **Firewall** (run after the build was committed, before any outcome): passes at 55 cutoffs (each fact date of 2014-2017 and the day
+  after it, 2015-01-01, 2015-12-12 and 2018-01-01; listed above), with 0 files changed and no planted text (104 to 307 earlier dates
+  each). The TRGP plant now also plants a later restatement of the last print, a later revenue revision of every year and the vintage's
+  theme-clause words (the greenhouse gas, refinery services and splitter quotes).
+
+Seen in the build (method behaviour, not tuned):
+- **Totals: CHEAP 107, RICH 61, FAIR 41.** RICH on the 6 dates before the Q4 2013 print (FY12's $0.91 at 95-102x); CHEAP from the Q4 2013
+  print to 2014-06-13, FAIR to 2014-07-25, RICH from 2014-08-01 to 2014-10-31, CHEAP on 2014-11-05 and 2014-11-14, FAIR on 2014-11-21, then
+  CHEAP on every date from 2014-11-28 to 2016-04-15 (all 53 of 2015); FAIR from 2016-04-22 to 2016-07-22 (CHEAP 2016-07-29); RICH from
+  2016-08-04 to 2017-04-28; CHEAP from 2017-05-05 to 2017-07-28; FAIR from 2017-08-04 to 2017-12-22 but RICH on 2017-10-06 and 2017-12-29.
+  Legacy tiers: BUY 97, AVOID 44, WATCHLIST 44, ACCUMULATE 24 (2015: BUY on all 53).
+- **The anchors and the multiple.** FY13's $1.55 against $87-142 (56-92x), FY14's $2.43 against $16-107 (7-44x; the close fell from $106.84
+  to $16.28 between the Q4 2014 and Q4 2015 prints), FY15's $1.09 against $26-61 (23-56x). The window grows from 3.0 to 7.0 years ex-FY10
+  (ex-FY16 from 2017-02-16) and its median stays 44-51x, so the 2015 dates sit at the 0th-39th percentile of the window and are CHEAP.
+- **BASE follows revenue as reported, plus the buyback:** +40.6% to +67.5%/yr in 2014 (the Q4 2013 to Q3 2014 prints' revenue growth),
+  -4.0% to -29.3%/yr through 2015 as NGL prices fell, -25.3% to -5.1% in 2016 (with -6.3%/yr of dilution), then -0.9% to +23.4% in 2017
+  (Q1-Q3 2017 revenues +18% to +47% less 23.1%/yr of dilution from the FY2016 10-K). BEAR is the 0% cap to the Q4 2015 print, then FY14 to
+  FY15's -55.1%; BULL and XBULL the history's CAGR and best two-year run, floored at BASE.
+- **The EPP floor** is 52x on FY12 (the first 6 dates), 39-43x on FY13, then 35x (2015's low of 23.6x and 2016's 14.2x join the lows).
+
+Sensitivity (each call changed alone, the 209 dates rebuilt and reclassified offline with `retro_tool`'s own classifier; no outcome
+consulted; `sens_trgp_1417.py`):
+- **every data signal at its BEAR value**: 96 classes (CHEAP to RICH 39, FAIR to RICH 40, CHEAP to FAIR 17); **at XBULL**: 33;
+- **FY2015 excluded as distorted** (the Partnership's items counted in full against TRC; FY14's $2.43 then anchors 2016-2017): **75
+  classes** (RICH to CHEAP 41, FAIR to CHEAP 34, all from 2016-04-22), 87 tiers; **FY2015 at a derived $1.57** (TRC's $83.9M before the
+  goodwill impairment on 53.6M shares, a figure no filing prints per share): 70 classes, 87 tiers;
+- **BASE on TRC's dividend outlooks** (25% for 2014, 35% for 2015, 15% for 2016, 0% for 2017's held dividend): 43 classes, 29 tiers;
+- **2016's share count (the buy-in) out of the buyback**: 13 classes (2017-03-10 on), 21 tiers;
+- **the revenue revision of 2014-10-23 unused** and **CYCLICAL instead of DURABLE**: no class, no tier; ENERGY_TRANSITION in scope would
+  be text only (no factor pair), so no class by construction.
+
+Judgement calls that could carry hindsight:
+- the signal set and rule T's thresholds, frozen from 2012-02-24 (chosen by a builder who knew 2012-2013, measured on 2009-2011): the
+  signals at BEAR move 96 of the 209 classes, the largest call of the batch;
+- FY2015 kept at GAAP $1.09 on the one TRC-basis item its release states (75 classes if excluded, 70 at a derived $1.57), by a builder who
+  knows how TRGP traded in 2016-2017;
+- FY2016 excluded as a loss (its days out of the window) and the last full year's EPS standing when no EPS is guided;
+- BASE on revenue as reported when no revenue is guided (43 classes on the dividend outlooks), and the buy-in's shares in the buyback
+  (13 classes);
+- the Atlas mergers and the buy-in in the figures as published (no pro forma), the Partnership's consolidated revenues and segment margins
+  in TRC's models, NGLS's unit prices never;
+- ENERGY_TRANSITION read as out of scope for a gatherer and processor (text only), and DURABLE kept;
+- the non-earnings 8-Ks read by their item text and exhibits for guided numbers only.
+
+The hindsight results for 2014-2017 are in `staging/retrospective/TRGP/FINDINGS.md` ("TRGP 2014-2017"): hypotheses, never inputs.
+
 ## OKE (ONEOK, Inc.): the forty-first ticker, in staging, 2008-2009
 
 The OKE series is built apart from the other forty and shares nothing with them but the machinery: its own fact sheet

@@ -1529,6 +1529,17 @@ try:
                  eps_excluded={**v.get("eps_excluded", {}), "2098": "PLANTED"})
         for y in sorted({g["fy"] for g in f["guides"]} | {2099, int(cutoff[:4]), int(cutoff[:4]) + 1}):
             f["guides"].append({"fy": y, "published": later, "source": last["source"], "rev_none": True, "display": "PLANTED"})
+        # (TRGP 2014-2017) a later vintage's theme-clause words (the greenhouse gas, refinery services and splitter quotes), a later
+        # restatement of the last print before CUTOFF with absurd figures (a real one public before CUTOFF stays; 'restated' is a list
+        # in publication order), and a later revenue revision of every year
+        v.update(ghg_quote="PLANTED", refinery_quote="PLANTED", splitter_quote="PLANTED", tenk_label="PLANTED")
+        p0 = max((p for p in f["prints"] if p["published"] < cutoff), key=lambda p: p["published"])
+        p0["restated"] = list(p0.get("restated", [])) + [
+            {"published": later, "source": p0["source"], "raw": dict(PLANT["raw"]),
+             **{k: PLANT[k] for k in ("sales_b", "sales_pct", "opm", "opm_bp", "ptm", "ptm_bp", "eps_q", "eps_q_prior", "diluted_shares_m",
+                                      "eps_note", "sales_note")}}]
+        f.setdefault("revenue_restatements", []).append(
+            {"published": later, "source": p0["source"], "revenue_usd_b": {y: 0.01 for y in v["revenue_usd_b"]}, "note": "PLANTED"})
     if TICKER == "SO":     # absurd full-year actuals on the planted print, for the year after the latest vintage before CUTOFF, and a later
                            # vintage whose every text and figure the models quote is planted (SO 2008-2009)
         last["fy_actual"] = {"fy": int(max(k for k in v["eps_normalized"] if k != "2099")) + 1, "fy_label": "FY99", "eps_normalized": 0.01,
