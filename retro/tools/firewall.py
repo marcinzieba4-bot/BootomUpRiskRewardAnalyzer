@@ -44,7 +44,7 @@ and require byte-identical models. Restores the fact sheet and the price cache a
     python3 retro/tools/firewall.py 2013-01-01 TRGP         # the TRGP series in staging/retrospective (from its first full year of EPS)
     python3 retro/tools/firewall.py 2009-01-01 OKE          # the OKE series (ONEOK, Inc.) in staging/retrospective
     python3 retro/tools/firewall.py 2010-01-01 CHTR         # the CHTR gate, and from 2019-02-01 its models (retro/README.md, "CHTR 2008-2009" to "CHTR 2018-2021")
-    python3 retro/tools/firewall.py 2013-01-01 FANG         # the FANG gate (no date built; retro/README.md, "FANG 2008-2009")
+    python3 retro/tools/firewall.py 2013-01-01 FANG         # the FANG gate, and from 2014-02-21 its models (retro/README.md, "FANG 2008-2009", "FANG 2014-2017")
 
 Plants a print, a history vintage, an event per live theme and a company name (UNP: also a guide and a
 dividend; LOW and AAPL: also a guide with every guided field; NKE: a guide in words, and futures orders on the last print before
@@ -559,33 +559,100 @@ if git("status", "--porcelain", "retro/facts", OUTDIR).strip():
     sys.exit("commit first: the fact sheet or the archive has uncommitted changes")
 
 later = (dt.date.fromisoformat(cutoff) + dt.timedelta(days=10)).isoformat()
-if TICKER == "FANG":   # no FANG date is built (retro/README.md, "FANG 2008-2009"), so the test is the gate's (the CHTR encoding): in
-                       # memory, a later 10-K vintage with a positive GAAP year, a later listing and a later no-dividend statement; every
-                       # weekly date before CUTOFF must keep its exact refusal, and the planted vintage must change the refusal of the
-                       # dates after it until a real later vintage replaces it
+if TICKER == "FANG":   # the gate's test (the CHTR encoding; retro/README.md, "FANG 2008-2009"): in memory, a later 10-K vintage with a
+                       # positive GAAP year (a loss once the real facts already pass the dates after the plant, so that the control still
+                       # sees it), a later listing and a later no-dividend statement; every weekly date before CUTOFF must keep its exact
+                       # refusal, and the planted vintage must change the gate's result on the dates after it until a real later vintage
     sys.path.insert(0, os.path.join(ROOT, "retro"))
     import build_fang
     with open(FACTS, encoding="utf-8") as fh:
         f0 = json.load(fh)
     f1 = copy.deepcopy(f0)
+    fang, spx = build_fang.trading_days("FANG"), build_fang.trading_days("^GSPC")
+    g = lambda d, f: build_fang.gate(d, f, {k: c for k, c in fang.items() if k <= d})
+    probe = [d for d in sorted(spx) if d >= later][:1]
+    sign = -1 if probe and not g(probe[0], f0) else 1
     f1["history_vintages"].append({"published": later, "source": "PLANTED", "kind": "10-K", "fy_label": "FY99",
                                    "periods": {"2099": {"issuer": "PLANTED", "start": "2099-01-01", "end": "2099-12-31", "months": 12,
-                                                        "revenue_m": 0.01, "net_income_m": 99.99, "eps_diluted": 99.99,
+                                                        "revenue_m": 0.01, "net_income_m": 99.99, "eps_diluted": 99.99 * sign,
                                                         "eps_pro_forma": None}}})
     f1["listings"].append({"published": later, "source": "PLANTED", "kind": "listing", "issuer": "PLANTED", "exchange": "PLANTED",
                            "symbol": "PLANTED", "quote": "PLANTED"})
     f1["no_dividend"].append({"published": later, "source": "PLANTED", "quote": "PLANTED"})
-    fang, spx = build_fang.trading_days("FANG"), build_fang.trading_days("^GSPC")
     before = build_fang.weekly_dates("2008-01-01", (dt.date.fromisoformat(cutoff) - dt.timedelta(days=1)).isoformat(), spx)
     nxt = min([v["published"] for v in f0["history_vintages"] if v["published"] > later] + ["9999-12-31"])
     after = [d for d in build_fang.weekly_dates(later, (dt.date.fromisoformat(later) + dt.timedelta(days=60)).isoformat(), spx)
              if d < nxt]
-    g = lambda d, f: build_fang.gate(d, f, {k: c for k, c in fang.items() if k <= d})
     changed = [d for d in before if g(d, f0) != g(d, f1)]
     moved = [d for d in after if g(d, f0) != g(d, f1)]
     print(f"{len(before)} weekly dates before {cutoff}: {len(changed)} refusals changed by the planted later facts; "
           f"control: {len(moved)} of {len(after)} dates after {later} changed")
-    sys.exit(1 if changed or not after or len(moved) != len(after) else 0)
+    gate_bad = bool(changed) or not after or len(moved) != len(after)
+    # (2014-2017, retro/README.md, "FANG 2014-2017") the built models: on disk, every kind of fact the builder reads planted after the
+    # cutoff with absurd values (a print with a full year, a 10-K vintage with its model fields, a guide, a dividend, an event, a
+    # listing, a no-dividend statement), and every price of FANG and the S&P 500 from the cutoff on times 10; every model dated before
+    # the cutoff must rebuild byte for byte with no planted text
+    built = sorted(os.path.basename(d) for d in glob.glob(os.path.join(ARCHIVE, "20*")) if os.path.basename(d) < cutoff)
+    if not built:
+        print(f"0 models before {cutoff}: the model test does not apply")
+        sys.exit(1 if gate_bad else 0)
+    backup = tempfile.mkdtemp()
+    saved = {p: os.path.join(backup, f"{i}.json") for i, p in enumerate([FACTS] + CACHE)}
+    for p, b in saved.items():
+        shutil.copy(p, b)
+    mchanged = mplanted = ["not run"]
+    try:
+        f = copy.deepcopy(f0)
+        last = copy.deepcopy(max((p for p in f["prints"] if p["published"] < cutoff), key=lambda p: p["published"]))
+        last.update(published=later, release=later, release_time="PLANTED (before the open)", quarter="Q9 2099", fy=2099, q=4,
+                    sales_b=0.01, sales_pct=-60.0, production_pct=-60.0, oil_pct=-60.0, loe_boe_pct=99.0, pretax_margin=-50.0,
+                    pretax_margin_bp=-999.0, next_print="PLANTED", raw={k: 1.0 for k in last["raw"]},
+                    fy_actual={"fy": 2099, "eps_gaap": 0.01, "revenue_m": 0.01, "diluted_shares_m": 1.0, "pretax_m": 0.01,
+                               "net_income_m": 0.01, "one_off_test": {"fy": 2099, "pretax_m": 0.01, "listed_charges_m": 0.0,
+                                                                      "listed_benefits_m": 0.0, "income_attributable_m": 0.01,
+                                                                      "eps_gaap": 0.01, "loss": False, "distorted": False,
+                                                                      "kept": True, "source": "PLANTED"}})
+        f["prints"].append(last)
+        v = copy.deepcopy(max((x for x in f["history_vintages"] if x["published"] < cutoff), key=lambda x: x["published"]))
+        v.update(published=later, source=last["source"], fy_label="FY99")
+        for k in v["periods"]:
+            v["periods"][k].update(eps_diluted=0.01, revenue_m=0.01)
+        if "eps_normalized" in v:
+            v.update(eps_normalized={k: 0.01 for k in v["eps_normalized"]}, revenue_usd_b={k: 0.01 for k in v["revenue_usd_b"]},
+                     diluted_shares_m={k: 1.0 for k in v["diluted_shares_m"]}, groups=[["PLANTED", 1, -99]],
+                     **{k: "PLANTED" for k in ("normalization", "revenue_note", "business_quote", "cyclical_quote", "prices_quote",
+                                                "transition_quote", "no_dividend_quote", "fcf_note", "groups_basis")},
+                     **{k: -99.0 for k in ("prev_fy_pretax_margin", "check_pretax_margin", "tax_rate", "fcf_b")})
+        f["history_vintages"].append(v)
+        f["guides"].append({"fy": 2099, "published": later, "source": last["source"], "doc": "PLANTED", "eps_guide": [0.1, 0.2]})
+        f["dividends"].append({"published": later, "source": last["source"], "quarterly": 9.99, "note": "PLANTED"})
+        f["events"].append({"published": later, "source": last["source"], "kind": "PLANTED", "doc": "PLANTED"})
+        f["listings"].append({"published": later, "source": last["source"], "kind": "listing", "issuer": "PLANTED", "quote": "PLANTED"})
+        f["no_dividend"].append({"published": later, "source": last["source"], "quote": "PLANTED"})
+        with open(FACTS, "w", encoding="utf-8") as fh:
+            json.dump(f, fh, indent=1)
+        ts_cut = dt.datetime.fromisoformat(cutoff).timestamp()
+        for c in CACHE:
+            with open(c) as fh:
+                d = json.load(fh)
+            r = d["chart"]["result"][0]
+            for blk in r["indicators"].get("quote", []) + r["indicators"].get("adjclose", []):
+                for arr in blk.values():
+                    if isinstance(arr, list):
+                        for i, t in enumerate(r["timestamp"]):
+                            if t >= ts_cut and arr[i] is not None:
+                                arr[i] *= 10
+            with open(c, "w") as fh:
+                json.dump(d, fh)
+        subprocess.run([sys.executable, BUILDER, *built], check=True, capture_output=True)
+        mchanged = [l for l in git("status", "--porcelain", OUTDIR).splitlines() if l.strip()]
+        mplanted = [d for d in built if "PLANTED" in open(os.path.join(ARCHIVE, d, "model.py"), encoding="utf-8").read()]
+        print(f"{len(built)} models before {cutoff}: {len(mchanged)} files changed, {len(mplanted)} models contain planted text")
+    finally:
+        for p, b in saved.items():
+            shutil.copy(b, p)
+        git("checkout", "--", OUTDIR)
+    sys.exit(1 if gate_bad or mchanged or mplanted else 0)
 if TICKER == "CHTR":   # no CHTR date is built (retro/README.md, "CHTR 2008-2009"), so the test is the gate's: in memory, a later 10-K
                        # vintage with a positive full year for both issuers, a later listing and a later series start; every weekly date
                        # before CUTOFF must keep its exact refusal, and the planted vintage must change the refusal of the dates after it

@@ -31014,16 +31014,17 @@ Judgement calls that could carry hindsight (the builder knows what Charter's ear
 
 Hindsight outcomes and findings, labelled as such, are in `staging/retrospective/CHTR/FINDINGS.md`: hypotheses, never inputs.
 
-## FANG (Diamondback Energy): the thirty-ninth ticker, in staging, set up with no date built (2008-2013)
+## FANG (Diamondback Energy): the thirty-ninth ticker, in staging, built from 2014-02-21 (to 2017-12-29 so far)
 
 The FANG series is set up apart from every other ticker and shares nothing with them but the machinery: its own fact sheet
 (`retro/facts/FANG.json`, generated from the filings by `retro/generators/fang/gen_fang.py`), builder (`retro/build_fang.py`, a gate
 that decides whether method r2 can build a date and writes nothing but `GATE.md` when it cannot; the CHTR encoding) and engine
 (`retro/templates/fang_engine.py.tmpl`, a copy of the XOM oil and gas engine with every signal threshold unset and the signals renamed as
-placeholders for an onshore producer, so no XOM value is carried and no model can run on it). The method is still r2. No fact,
+placeholders for an onshore producer, so no XOM value is carried and no model can run on it; from "FANG 2014-2017" a copy of the LYB
+engine with FANG's own signals and rule-T thresholds, and the builder builds the dates that pass the gate). The method is still r2. No fact,
 parameter, outcome or finding of another ticker (XOM included) enters FANG's files, and neither does any 2026 analysis
 (`data/business_profiles.json`, `scripts/quality_classify.py`, `reports/*.json`, any live `*_signal_model.py`). Outputs go to
-`staging/retrospective/FANG/`, which holds only `GATE.md`, the builder's refusal of each date.
+`staging/retrospective/FANG/`, which held only `GATE.md`, the builder's refusal of each date, until "FANG 2014-2017" built its models.
 
 ```bash
 python3 retro/tools/edgar.py index 1539838 <dir>                            # the downloads (outside the repository)
@@ -31157,6 +31158,187 @@ Judgement calls that could carry hindsight (the builder knows what Diamondback's
   and no model runs on them).
 
 No outcome was computed, so there is no `FINDINGS.md`.
+
+### FANG 2014-2017: FY2013 the first anchor, FY2015 and FY2016 losses excluded, FANG's own signals, 202 models from 2014-02-21
+
+209 weekly dates, 2014-01-03 to 2017-12-29, requested by the owner ("find newest code. do retrospective analysis for FANG, 2014-2017. same
+rules as before"), with the coordinating session's instruction for a short history: start the series at its first known point, the first
+weekly date where the frozen method has a usable history. The newest code is the coordinating session's branch
+(`claude/sharp-albattani-rdvlgi`, with the FANG setup of "FANG 2008-2009" and 38 other tickers), checked out as the base; nothing else was
+merged in. This batch is on `claude/fang-retro-2014-2017`. There were no earlier FANG outcomes or findings to open. **7 dates are refused
+and 202 built:** 2014-01-03 to 2014-02-14 fail the gate (the FY2012 10-K is still the latest vintage, with no GAAP year), and 2014-02-21
+to 2017-12-29 pass it on FY2013's $1.29 (45 dates in 2014, then 53, 52, 52). `GATE.md` now holds all 523 weekly dates of 2008-2017 (321
+refused, every one before 2014-02-21; the 314 lines of 2008-2013 unchanged).
+
+```bash
+python3 retro/tools/edgar.py index 1539838 <dir>
+python3 retro/tools/edgar.py fetch 1539838 <dir> --from 2013-04-01 --to 2017-12-31 --forms 10-K 10-K/A 10-Q 10-Q/A 8-K 8-K/A
+python3 retro/tools/edgar.py fetch 1539838 <dir> --from 2013-02-01 --to 2013-03-31 --acc 0001539838-13-000004   # the FY2012 10-K, for rule T
+python3 -I retro/generators/fang/gen_fang_1417.py --filings <dir> --facts-in <the 2008-2013 sheet>   # retro/facts/FANG.json
+python3 -I retro/tools/verbatim.py <dir>/checklist_fang_1417.json                                    # 224/224
+python3 retro/build_fang.py --weekly 2014-01-01 2017-12-31                  # 7 refused, 202 built (2014-02-21 .. 2017-12-29)
+python3 retro/build_fang.py --gate-md                                       # GATE.md (2008-2009, 2010-2013, 2014-2017)
+for d in staging/retrospective/FANG/20*/; do
+  python3 retro/retro_tool.py --archive staging/retrospective run "$d"
+  python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
+done
+python3 retro/retro_tool.py --archive staging/retrospective series FANG
+python3 retro/generators/fang/controls_fang.py 2008-01-01 2017-12-31        # the gate's controls: 8 of 8
+python3 retro/generators/fang/controls_fang_models.py                       # the models' controls
+python3 retro/generators/fang/sens_fang.py <scratch>                        # the sensitivity below
+for c in 2008-02-01 2012-10-13 2014-01-01 2014-02-21 2014-05-08 2014-11-06 2015-02-19 2015-02-21 2015-08-07 2016-02-18 2016-02-23 \
+         2016-08-04 2017-02-16 2017-02-17 2017-08-03 2017-11-08 2018-01-01; do python3 retro/tools/firewall.py $c FANG; done
+```
+
+**A full-data batch.** `www.sec.gov` served every document to `edgar.py`'s plain client name (no contact address; the owner's email was
+not used). Read by the session's model directly, with no delegated transcription: the FY2013-FY2016 10-Ks (Item 1's opening, Item 1A's
+risk factors searched for the cyclical, price and climate sentences, Item 2's production and price history, Items 5 and 6, the statements
+of operations and of cash flows), the FY2012 10-K again (Item 2's 2010-2012 production table, for rule T only) and the 17 earnings releases
+of Q3 2013 (the previous print of the first date) to Q3 2017 (each one's statement of operations, selected operating data and adjusted net
+income table). The other 8-Ks of 2014-2017 were searched by keyword for guidance and outlook wording: every hit is a production, unit-cost
+or capital spending outlook (the 8-Ks of 2014-07-21, 2016-01-19 with item 2.02, an "interim Q4 2015 operational update and preliminary 2016
+guidance" with no earnings figure, 2016-07-18 and 2016-12-14, and the releases' own guidance tables); the 10-Qs were not read (every print
+figure is in its release). The sheet is extended by `retro/generators/fang/gen_fang_1417.py`, which reads each figure from its labelled
+row, asserts each quotation in its own filing, computes every growth rate, margin, one-off test and rule-T value, refuses an input sheet
+whose 2008-2013 facts differ, and only appends; the source ids are `FG7`-`FG10` (the FY2013-FY2016 10-Ks) and `FG20`-`FG36` (the prints).
+Decided on 2026-11-28, before any FANG outcome existed (none had been computed for any date):
+
+- **FY2013 is the first anchor, and the first date is 2014-02-21.** GAAP diluted EPS $1.29 on net income of $54.587M (FY2013 10-K, Item 6;
+  the Q4 2013 release the same evening). The one-off test: the releases' adjusted net income removes only the non-cash derivative marks for
+  2013, which recur every quarter (the NEE and PEP 2008 core rule), so no listed one-off exists and the year is kept. The 10-K was accepted
+  on 2014-02-19 at 17:29 ET and the release at 20:59 ET, both after the close, so each is dated 2014-02-20, and the builders' earnings-week
+  rule (the first trading day after the 'published' date) makes the week's date 2014-02-21. "FANG 2008-2009" named 2014-02-20 as the
+  candidate (the day after the release); the rule as coded gives the Friday, as for every after-close release of every builder.
+- **EPS is GAAP diluted EPS on net income attributable to Diamondback** (Viper Energy Partners' noncontrolling interest out, as each
+  statement prints it), each year from the latest 10-K that reports it (no 10-K of the batch restates an EPS). The one-off test (the AAPL
+  FY2002 test and its mirror) runs on each Q4 release's adjusted net income table, twelve months, with the impairment of oil and gas
+  properties (the full cost ceiling test), the loss on extinguishment of debt and the (gain) loss on sale of assets as the listed items,
+  pre-tax against income before income taxes (the CHTR encoding: the releases give one tax adjustment for all items together, the marks
+  included). The non-cash derivative marks are left out as recurring:
+  - FY2013 $1.29: no listed item; kept. FY2014 $3.64: a $1.4M loss on sale against $305.0M; kept. (With the 2014 marks, a $117.1M gain,
+    read as a one-off benefit, the mirror test is still not met: $117.1M against $187.9M without it.)
+  - FY2015 $(8.74) and FY2016 $(2.20): GAAP losses, after impairments of $814.8M and $245.5M (FY2016 also a $33.1M debt extinguishment
+    loss). The company's adjusted figures ($1.81 and $1.87) also remove the marks, which recur, so no figure excludes only the one-offs:
+    each year is excluded as the latest year and then a gap (the MU, NEM and LYB loss rule), its own days out of the P/E window ("ex-FY15",
+    "ex-FY16"). So FY14's $3.64 is the anchor from the Q4 2014 print (2015-02-19) to the last date, and the history holds FY13 and FY14 only.
+  - 2012 stays excluded (no GAAP EPS, pro forma only; "FANG 2008-2009"), so its days (2012-10-12 to 2012-12-31) leave the window too.
+- **The window runs from the listing** (2012-10-12, the listing rule), 1.1 years on the first date and 5.0 on the last, less the excluded
+  years' days ("1.1-yr ex-FY12" to "5.0-yr ex-FY12 ex-FY15 ex-FY16"). **The bounds rule** covers the short history: on the FY2013 vintage
+  BEAR is the 0% cap, BULL takes BASE's rate and XBULL BULL's; from the Q4 2014 print the one EPS change (FY13 to FY14, +182.2%) is BULL's
+  CAGR, BEAR stays at the 0% cap (EPS rose) and XBULL takes BULL's rate (no two-year run).
+- **No guide in numbers.** Every outlook in the filings is production (MBoe/d), unit costs ($/Boe), well counts and costs or capital
+  spending; none is revenue, EPS or a margin. So current-FY EPS is the last full year's (FY13's $1.29, then FY14's $3.64), BASE and the
+  growth factor take the latest quarter's revenue growth as reported plus the net buyback (the KMI, LYB and CHTR no-guide rule), and there
+  is no margin step; the guide line says so. Diamondback issued shares for its acquisitions and offerings (diluted shares 42.3M in 2013,
+  53.3M in 2014, 63.0M in 2015, 75.1M in 2016), so the "buyback" is negative: -20.7%/yr from the FY2014 vintage, -18.1% and -17.4% after.
+- **Revenue** is total revenues as each statement prints it (one line, "Oil and natural gas revenues", to 2016; "Total revenues" with lease
+  bonus and midstream services from 2017). The history takes each year from the latest filing that reports it: 2009-2013 from the FY2013
+  10-K's Item 6 and 2008 from the FY2012 10-K, the Predecessors' years (Windsor Permian LLC and Windsor UT LLC, combined under common
+  control) as the 10-Ks present them (the LYB rule for a revenue history; their EPS is never used). The 2014-2016 Q4 releases' years
+  extend the history from each release until its 10-K, with the release's own prior-year growth.
+- **Release timing.** Q1 2014, Q3 2014, Q4 2014 and Q4 2015 were accepted during the session (10:05-10:34 ET; 09:41 ET for Q4 2015) and
+  are dated that day; the 13 others after the close, dated the next trading day; none falls on a week's last trading day. The 10-Ks came
+  one to three trading days after their releases (FY2014: release 2015-02-18, 10-K dated 2015-02-20; FY2015: 2016-02-17 and 2016-02-22),
+  so the Q4 2014 and Q4 2015 releases' years extend their vintages on 2015-02-19 and 2016-02-18.
+- **Signals: FANG's own, with rule T on Diamondback's own filings.** The five placeholders of "FANG 2008-2009" are kept (not re-chosen
+  after reading 2014-2017): oil-equivalent production growth (0.20; the first line of every release's selected operating data, MBOE),
+  oil production growth (0.20, MBbl), revenue growth (0.15), lease operating expense per BOE (0.15, lower is better) and the pre-tax
+  margin change (0.15: income before income taxes on total revenues), with the theme slot at 2/4; each against the year-ago quarter in
+  the same release (Q3 2017's operating data add the prior quarter as a middle column, and the year-ago column is read). **Rule T over the
+  changes the filings public on the first date report** (the AVGO bounds rule: as few as they are), each from the latest filing that
+  reports both years: the FY2013 10-K (Item 2 for 2011-2013, Item 6 for 2009-2013) and the FY2012 10-K (2010's production and unit cost,
+  2008's revenue and pre-tax income), the Predecessors' years as published (the LYB rule). Lease operating expense per BOE is on each 10-K's
+  own basis (the FY2013 10-K moves ad valorem taxes out of it and corporate overhead into it: 2012's $15.57 becomes $14.14), a seam:
+
+  | Signal | Annual changes | BEAR / BASE / BULL / XBULL |
+  |---|---|---|
+  | oil-equivalent production | 2011-2013: 45.94, 78.18, 147.82 % | 14 / 46 / 78 / 148 % |
+  | oil production | 2011-2013: 60.10, 68.28, 167.46 % | 52 / 60 / 68 / 167 % |
+  | revenue | 2009-2013: -30.28, 114.32, 81.14, 51.85, 177.48 % | -142 / -30 / 81 / 177 % |
+  | lease operating expense per BOE (lower is better) | 2011-2013: 58.18, -13.83, -43.99 % | 130 / 58 / -14 / -44 % |
+  | pre-tax margin change | 2009-2013: 49382.5, 5148.2, -3098.4, 2530.4, 1698.8 bp | -8730 / -3100 / 2530 / 49380 bp |
+
+  The 2009 pre-tax margin change (+49,383bp) is the Predecessors' 2008 impairment year (an $83.2M impairment on $18.2M of revenues)
+  leaving the comparison, which sets XBULL mechanically. The engine (`fang_engine.py.tmpl`) is now the LYB engine with these signals
+  (the listing, excluded-year and short-history lines included; the segment bridge prints USD bn to three decimals); the XOM-based
+  placeholder of "FANG 2008-2009" is replaced, and no model was ever built on it.
+- **Durability: CYCLICAL, risk 2.** Each 10-K says "The oil and natural gas industry is cyclical, which can result in shortages of drilling
+  rigs, equipment, raw materials (particularly sand and other proppants), supplies and personnel." and "Our revenues, operating results,
+  profitability, future rate of growth and the carrying value of our oil and natural gas properties depend significantly upon the
+  prevailing prices for oil and natural gas."; the kind is CYCLICAL on the 10-K's own word for its industry (the CB and LYB rule; XOM's
+  commodity reading); the "why" quotes both and Item 1's description. The kind changes the class label only.
+- **ENERGY_TRANSITION on the watch list from its live date** (2015-12-12, scoped to "decarbonisation strands oil, gas and coal reserves
+  and refining"): Diamondback's reserves are oil and gas, and each 10-K's risk factor heading says "The adoption of climate change
+  legislation by Congress could result in increased operating costs and reduced demand for the oil and natural gas we produce." So from
+  2015-12-18 the watch list carries it, company-acknowledged, in the latest 10-K's words, with no dated evidence of market pricing (the XOM,
+  KMI and LYB rule; text and labels only, no factor pair, no class change). The other live themes (OFFSHORE, CLOUD, from 2015 ECOMMERCE
+  and STREAMING) are quoted with their scopes, none naming an oil and gas producer; the builder refuses a live theme the 10-Ks were not
+  read for.
+- **No dividend** ("We have not paid any cash dividends since our inception.", each 10-K), no repurchase, no split, no distribution:
+  Yahoo's FANG close is the price as traded (the builder asserts no split event).
+- **Segment bridge and EPS check** (display only): oil, natural gas liquid and natural gas sales from each 10-K's statement of operations
+  (related-party lines added in); the EPS check runs on the last kept year's pre-tax margin and tax rate (FY13, then FY14).
+- **Viper Energy Partners** (listed 2014-06-19) is in Diamondback's figures as its filings consolidate it; Viper's own prices and per-unit
+  figures are never used. No model names it or Rattler Midstream (the anachronism list's two FANG entries; their notes now say no FANG
+  model contains them).
+
+Controls and checks (before any outcome):
+- **Verbatim:** 224 of 224 strings, each against its own filing. **Forward references** (`forward_refs.py FANG`): 0 in 62 dated facts.
+  **Self-text** (`selftext.py FANG --from 2013-04-01 --allow FG`): 4 misses of 345 tokens, each the method word "10-Ks" of the revenue note.
+- **Leak scan** (`leak_scan.py FANG`): 0 hits in 43,238 (model, later token) pairs; positive control 202 of 202. A first run found 5 hits,
+  on 2015-02-19 and 2016-02-18: FY2014's and FY2015's revenue, pre-tax margin and growth derived from each Q4 release, which the 10-K
+  repeated two trading days later. They were the release's own figures, not leaks, and are now stored on the release (`revenue_usd_b`,
+  `pretax_margin`, `sales_growth` in `fy_actual`, checked by the builder), so the scan sees them as public; the models are byte-identical.
+- **`retro_tool run`:** passes on all 202 dates, with no warning.
+- **Controls:** the gate's (`controls_fang.py 2008-01-01 2017-12-31`, extended the CHTR way: a vintage that already anchors gets every
+  year a loss) 8 of 8; the models' (`controls_fang_models.py`: each print's production, a Q4 print's full-year EPS too, each vintage's last
+  revenue and last kept EPS, each 10-K's four quoted sentences) 41 of 41 change no model before their publication, 39 change the first weekly date on or after it; FY2013's climate sentence changes none (FY2014's 10-K replaces it before ENERGY_TRANSITION is live) and FY2014's changes only the 10 dates from the live date (2015-12-18) to the FY2015 10-K.
+- **Firewall** (the FANG branch extended to the models, the CHTR encoding: on disk, a later print with a full year, a later vintage with
+  planted model fields, a later guide, dividend, event, listing and no-dividend statement, and every price from the cutoff times 10; the
+  gate test's planted vintage holds a loss where the dates already pass): at the 17 cutoffs above no refusal before the cutoff changes,
+  every gate control after it does, and 0 of 0 to 202 models change or contain planted text (run on the committed fact sheet, builder
+  and engine: 17 of 17 pass with exit code 0, 0 files changed).
+
+Seen in the build (method behaviour, not tuned):
+- **Totals: FAIR 104, CHEAP 81, RICH 17; BUY on all 202 dates.** By year: 2014 FAIR 41, CHEAP 4; 2015 CHEAP 40, FAIR 13; 2016 FAIR 26,
+  RICH 17, CHEAP 9; 2017 CHEAP 28, FAIR 24. Robustness shows one price state on 162 dates and two on 40.
+- **BUY throughout is the short history at work.** Ratio B is 0.00-0.15: BEAR is flat EPS at the 10th-percentile P/E (about $22 on FY13's
+  $1.29, $59-61 on FY14's $3.64), while BULL takes the one EPS change there is (+182.2%/yr from the Q4 2014 print; BASE's +141% to +239% in
+  2014), so BULL is $411-832 against prices of $52-126.
+- **2014, on FY13's $1.29:** $52-90 is 41-70x, against a window median of 30-41x that holds only 2013-2014 days; BASE is the quarter's
+  revenue growth (+141% to +239%: the production ramp, with no share count to dilute it yet). FAIR to 2014-11-21, then CHEAP and FAIR from
+  2014-11-28 as the stock fell with oil.
+- **2015-2017, on FY14's $3.64** while FY2015 and FY2016 were losses: $61-126 is 17-35x against a median of 20-25x. BASE turns negative
+  with revenues (-6% to -20% in Q2-Q4 2015, -13.1% to -5.5% in Q4 2015-Q2 2016) and the share issuance, so BASE runs from +53% to -40%/yr;
+  CHEAP holds most of 2015, RICH appears from 2016-04-29 as the price rose to 24-30x (the 69th-85th percentile), and 2017's CHEAP dates
+  follow BASE's return to +44% to +152%/yr with revenue growth of +62% to +169%.
+- **The EPP floor** is the median of the calendar-year P/E lows: 24x on $1.29 ($31) in 2014, then 14x on $3.64 ($51) from 2015.
+
+Sensitivity (each call changed alone, the 202 dates rebuilt and classified offline with `retro_tool`'s classifier; no outcome consulted;
+`sens_fang.py`):
+- **FY2013 and FY2014 at the company's adjusted EPS** ($1.21 and $2.24, which also remove the non-cash derivative marks): **75 classes**
+  (50 CHEAP to FAIR, 24 FAIR to RICH, 1 FAIR to CHEAP; 2014-12-19 to 2017-10-13), no tier: the batch's largest call by classes;
+- **FY2015 and FY2016 kept at the company's adjusted $1.81 and $1.87** (instead of excluded as losses): **56 classes** (38 FAIR to RICH,
+  10 FAIR to CHEAP, 8 CHEAP to RICH; 2016-02-18 to 2017-12-15) and **63 tiers**, the only call that moves a tier;
+- **every signal at its BEAR value:** 16 classes (13 CHEAP to FAIR, 3 FAIR to RICH); **at XBULL:** 17 (RICH to FAIR, 2016); no tier;
+- **no net share issuance in BASE:** 16 classes (14 FAIR to CHEAP, 2 RICH to FAIR; 2015-05-08 to 2017-02-10), no tier;
+- **the revenue history from 2012** (the Predecessors' years out): no class, no tier;
+- ENERGY_TRANSITION re-filed as DISRUPTION_EXPOSED and CYCLICAL read as DURABLE change the class label only (no price class moves).
+
+Judgement calls that could carry hindsight (the builder knows what oil prices, Diamondback's earnings and its stock did after 2013):
+- **the derivative marks read as recurring**, so FY13 and FY14 stand at GAAP $1.29 and $3.64 (the company's adjusted $1.21 and $2.24 move
+  the most classes, above), and FY15 and FY16 are losses rather than the company's adjusted $1.81 and $1.87;
+- the history and window from the listing, two EPS years, so the bounds rule and FY13-FY14's +182% decide BULL and the tier (BUY on every
+  date);
+- the five signals, kept from "FANG 2008-2009", where they were named by a builder who knew the Permian's later course, and rule T on the
+  2009-2013 changes with the Predecessors' years and the 2008 impairment year in, as published (the 2009 margin change sets XBULL);
+- the revenue history with the Predecessors' years (the LYB rule; above);
+- CYCLICAL on the 10-K's "industry is cyclical" sentence, which is about the supply of rigs and services, read with the price sentence
+  (labels only), and ENERGY_TRANSITION kept on the watch list on the climate legislation heading (labels only);
+- the first date 2014-02-21 rather than "FANG 2008-2009"'s candidate 2014-02-20 (the builders' rule; one date either way);
+- the 8-Ks other than the releases searched by keyword, not read in full; the 10-Qs not read.
+
+Hindsight outcomes and findings, labelled as such, are in `staging/retrospective/FANG/FINDINGS.md`: hypotheses, never inputs.
 
 ## TRGP (Targa Resources Corp.): the fortieth ticker, in staging, from its first full year of EPS
 
