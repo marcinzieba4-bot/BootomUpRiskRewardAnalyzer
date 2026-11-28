@@ -43,11 +43,26 @@ From 2010 (retro/README.md, "OKE 2010-2013"):
   - Q4 2009 comes from the FY2009 10-K (the release files no earnings tables): 'source_10k' and 'sources_extra' (the NEM encoding);
   - from CLOUD's 2012-10-30 the 'why' quotes every live theme's registered scope (the UNH, CB and NEE wording).
 
+From 2014 (retro/README.md, "OKE 2014-2017"):
+  - the ONE Gas separation (one ONE Gas share for every four ONEOK shares, after the close on 2014-01-31) is the 'distributions' record:
+    Yahoo books it as an 11422:10000 split on 2014-02-03, so from that date its factor is undone for the days before it and every price
+    stays as traded (the MAR, PFE, BMY, SO, CMCSA and SPGI 'distributions' rule; the window's earlier days with ONE Gas, the SO Mirant
+    reading); per-share facts are not restated, and the history keeps the distribution business until the FY2014 10-K restates it;
+  - from the Q1 2014 release the natural gas distribution and energy services businesses are discontinued operations and no release
+    reports a Distribution segment: 'dist_pct' is None (n/r), which the engine scores at BASE; from the Q4 2015 release the statement of
+    income prints no net margin line, so net margin is revenues less cost of sales and fuel ('cost_m', ONEOK's own definition);
+  - ONEOK gives net income attributable to ONEOK in its guidance tables only, as midpoints or approximately: a point guide ('ni_guide_m'
+    with lo = hi, 'ni_guide_note'), over the latest print's diluted shares (the KMI rule); the FY2017 range of the 8-K of 2017-02-02
+    assumes the pending acquisition of ONEOK Partners effective Jan. 1, 2017 ('pro_forma_ni_m', text only: a pending deal adds nothing);
+  - from ECOMMERCE's, STREAMING's and ENERGY_TRANSITION's live dates the 'why' quotes their scopes; ENERGY_TRANSITION is out of scope
+    (the TRGP and BKR reading: ONEOK Partners holds no reserves), with the vintage's own GHG and reserves words quoted (text only).
+
 Output goes to staging/retrospective/OKE until the series is added to the archive (--out archive/retrospective/OKE).
 
 Usage
   python3 retro/build_oke.py --weekly 2008-01-01 2009-12-31
   python3 retro/build_oke.py --weekly 2010-01-01 2013-12-31
+  python3 retro/build_oke.py --weekly 2014-01-01 2017-12-31
   python3 retro/build_oke.py 2008-02-27
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/OKE/<AS_OF>
 """
@@ -78,12 +93,16 @@ PRINT_KEYS = {"quarter", "fy", "q", "published", "source", "release", "release_t
               "dist_pct", "opm", "opm_bp", "ptm", "ptm_bp", "eps_q", "eps_q_prior", "diluted_shares_m", "sales_note", "nm_note",
               "dist_note", "margin_note", "eps_note", "cash_note", "next_print", "source_title",
               "source_10k", "sources_extra"}                 # (OKE 2010-2013) Q4 2009 from the FY2009 10-K: the NEM 'source_10k' encoding
+RAW_KEYS = {"rev_m", "rev_prior_m", "nm_m", "nm_prior_m", "oi_m", "oi_prior_m", "pti_m", "pti_prior_m", "dist_m", "dist_prior_m", "eps_q",
+            "eps_q_prior", "dil_sh_m", "cost_m", "cost_prior_m"}   # (OKE 2014-2017) cost of sales and fuel, where no net margin line
 GUIDE_BASE = {"fy", "published", "source", "doc", "quote"}
 # one earnings field per guide: a per-share range (to 2009), a net income range in millions with the print whose diluted shares divide
 # it (from 2010; the KMI rule), or words that restate the range (the last numeric range stands)
-GUIDE_FIELDS = ({"eps_guide"}, {"eps_guide", "eps_guide_note"}, {"ni_guide_m", "shares_print"}, {"words"})
+GUIDE_FIELDS = ({"eps_guide"}, {"eps_guide", "eps_guide_note"}, {"ni_guide_m", "shares_print"}, {"words"},
+                {"ni_guide_m", "shares_print", "ni_guide_note"},         # (OKE 2014-2017) a point from the guidance tables
+                {"pro_forma_ni_m", "pro_forma_note"})                     # (OKE 2014-2017) a guide on a pending deal: text only
 YAHOO_FACTORS = {"1990-03-01": 2.0, "2001-06-12": 2.0, "2012-06-04": 2.0, "2014-02-03": 1.1422}
-STOP = "2014-02-03"            # Yahoo's 11422:10000 factor (the ONE Gas separation, a distribution, not a split): encode it first
+# (OKE 2014-2017) Yahoo's 11422:10000 factor of 2014-02-03 is the ONE Gas separation, a distribution: the 'distributions' record
 
 
 def fiscal_year_end(n):
@@ -132,12 +151,15 @@ def check_print(p):
     """Re-derive a print's growth rates and margins from its raw published figures (they must match the fact sheet)."""
     assert set(p) <= PRINT_KEYS, (p["quarter"], sorted(set(p) - PRINT_KEYS), "a print field with no encoding yet; decide one first")
     r = p["raw"]
+    assert set(r) <= RAW_KEYS, (p["quarter"], sorted(set(r) - RAW_KEYS), "a raw field with no encoding yet")
+    if "cost_m" in r:          # (OKE 2014-2017) net margin is revenues less cost of sales and fuel where the statement prints no line
+        assert abs(r["nm_m"] - (r["rev_m"] - r["cost_m"])) < 1e-9 and abs(r["nm_prior_m"] - (r["rev_prior_m"] - r["cost_prior_m"])) < 1e-9
     # growth on the year-ago figure; against a year-ago loss, over the loss's absolute value (the CAT rule: the Distribution
     # segment's third quarters)
     g = lambda a, b: round((b / a - 1) * 100 + 0.0, 1) if a > 0 else round((b - a) / abs(a) * 100 + 0.0, 1)
     mg = lambda x, rev: round(x / rev * 100 + 0.0, 2)
     want = {"sales_b": round(r["rev_m"] / 1000, 3), "sales_pct": g(r["rev_prior_m"], r["rev_m"]), "nm_pct": g(r["nm_prior_m"], r["nm_m"]),
-            "dist_pct": g(r["dist_prior_m"], r["dist_m"]),
+            "dist_pct": g(r["dist_prior_m"], r["dist_m"]) if r["dist_m"] is not None else None,   # n/r: no Distribution segment
             "opm": mg(r["oi_m"], r["rev_m"]), "opm_bp": round((mg(r["oi_m"], r["rev_m"]) - mg(r["oi_prior_m"], r["rev_prior_m"])) * 100, 1),
             "ptm": mg(r["pti_m"], r["rev_m"]), "ptm_bp": round((mg(r["pti_m"], r["rev_m"]) - mg(r["pti_prior_m"], r["rev_prior_m"])) * 100, 1),
             "eps_q": r["eps_q"], "eps_q_prior": r["eps_q_prior"], "diluted_shares_m": r["dil_sh_m"]}
@@ -155,8 +177,6 @@ def shares_lit(x):
 def build(as_of, facts, raw, spx, engine, out):
     if as_of not in raw:
         sys.exit(f"{as_of} is not a trading day")
-    if as_of >= STOP:
-        sys.exit(f"{as_of}: Yahoo's 2014-02-03 factor (the ONE Gas separation) would fall inside the window; encode it first")
     chart = retro_tool.chart(SYMBOL)
     off = chart["meta"]["gmtoffset"]
     yahoo = {dt.datetime.fromtimestamp(v["date"] + off, dt.timezone.utc).date().isoformat(): v["numerator"] / v["denominator"]
@@ -167,11 +187,19 @@ def build(as_of, facts, raw, spx, engine, out):
     # Yahoo's close, which gives the price as traded on AS_OF's share basis. The 1990 and 2001 splits precede the window and every
     # per-share fact (asserted below)
     splits = facts.get("splits", [])
+    dists = facts.get("distributions", [])
     assert all(s["effective"] in yahoo for s in splits), "a split's effective date must match the price data"
     assert all(yahoo[s["effective"]] == s["ratio"] for s in splits if s["effective"] <= as_of), "a split's ratio must match"
-    assert {d for d in yahoo if "2002-01-01" <= d <= as_of} <= {s["effective"] for s in splits}, (as_of, "an unencoded split")
+    encoded = {s["effective"] for s in splits} | {x["effective"] for x in dists}
+    assert {d for d in yahoo if "2002-01-01" <= d <= as_of} <= encoded, (as_of, "an unencoded split or distribution")
     fx = retro_tool.split_factor(chart, as_of)
     px = {d: tuple(v * fx for v in hlc) for d, hlc in raw.items()}   # Yahoo's close times the later factors: the price as traded
+    # (OKE 2014-2017) a distribution (the ONE Gas separation, one ONE Gas share for every four ONEOK shares) is not a split: Yahoo books
+    # it as an 11422:10000 split on 2014-02-03, so from that date its factor is undone for the days before it and every price stays as
+    # traded (the MAR, PFE, BMY, SO, CMCSA and SPGI 'distributions' rule; the drop stays in the series); per-share facts are not restated
+    for x in [x for x in dists if x["effective"] <= as_of]:
+        assert yahoo.get(x["effective"]) == x["yahoo_factor"], (x["effective"], "Yahoo's distribution factor")
+        px = {d: (tuple(v * x["yahoo_factor"] for v in hlc) if d < x["effective"] else hlc) for d, hlc in px.items()}
     pre = [p for p in facts["prints"] if p["published"] <= as_of]
     for p in pre:                                      # a print public on AS_OF must match its raw (as published) figures
         check_print(p)
@@ -188,8 +216,8 @@ def build(as_of, facts, raw, spx, engine, out):
     for v in vintages:                                 # the fiscal calendar the vintages state must match the rule
         for y, end in v.get("fiscal_year_ends", {}).items():
             assert fiscal_year_end(int(y)).isoformat() == end, (y, end)
-        assert not {d for d in yahoo if v["pe_window_start"] <= d <= as_of} - {s["effective"] for s in splits}, \
-            (as_of, "an unencoded split inside the P/E window")
+        assert not {d for d in yahoo if v["pe_window_start"] <= d <= as_of} - encoded, \
+            (as_of, "an unencoded split or distribution inside the P/E window")
         assert all(pub > "2001-06-12" for pub in (list(v.get("eps_published", {}).values()) or [v["published"]])), \
             "a per-share fact before the 2001 split"
     for g in [g for g in facts["eps_guides"] if g["published"] <= as_of]:
@@ -223,7 +251,8 @@ def build(as_of, facts, raw, spx, engine, out):
 
     # ── current-FY EPS: the latest net income guidance range per diluted share for the year (midpoint), else the last full year ──
     egs_all = [g for g in facts["eps_guides"] if g["published"] <= as_of and g["fy"] == cur_fy]
-    egs = [g for g in egs_all if "words" not in g]
+    egs = [g for g in egs_all if "words" not in g and "pro_forma_ni_m" not in g]
+    pro_forma = [g for g in egs_all if "pro_forma_ni_m" in g]
     excluded_tail = "".join(f" (FY{y % 100:02d} is excluded: {excluded[y]})" for y in range(last_fy + 1, cur_fy))
     if egs:
         eg = egs[-1]
@@ -244,19 +273,26 @@ def build(as_of, facts, raw, spx, engine, out):
             eps_now = round((lo + hi) / 2 / sh, 3)
             sh_txt = (f"{sh:,.1f}M diluted shares ({eg['shares_print']}'s {shares_raw[eg['shares_print']]:,.3f}M, on the AS_OF basis)"
                       if sh != shares_raw[eg["shares_print"]] else f"{sh:,.3f}M diluted shares ({eg['shares_print']})")
-            how = f"the {eg['doc']}'s ${lo:,.0f}-{hi:,.0f} million (midpoint ${(lo + hi) / 2:,.1f} million) / {sh_txt}"
+            how = (f"the {eg['doc']}'s ${lo:,.0f}-{hi:,.0f} million (midpoint ${(lo + hi) / 2:,.1f} million) / {sh_txt}" if lo != hi else
+                   f"the {eg['doc']}'s ${lo:,.0f} million ({eg['ni_guide_note']}) / {sh_txt}")     # (OKE 2014-2017) a point
             guide_ids.append(sp[0]["source"])
         eps_label = f"{fy_e}: GAAP net income guidance, {how} = ${money(eps_now)}" + excluded_tail
         words = [g for g in egs_all if "words" in g and g["published"] > eg["published"]]
         if words:
             eps_label += f"; restated in words: '{words[-1]['quote']}' ({words[-1]['doc']}; the last range stands)"
             guide_ids.append(words[-1]["source"])
+        pf = [g for g in pro_forma if g["published"] > eg["published"]]
     else:
         eg = None
         eps_now = eps_hist[last_fy]
         how = None
         eps_label = f"{fy_e}: no EPS guide in scope yet, FY{last_fy % 100:02d}'s ${money(eps_now)} stands" + excluded_tail
         guide_ids = []
+        pf = pro_forma
+    if pf:      # (OKE 2014-2017) a net income guide that assumes a pending deal: shown, unused (the XOM XTO and PFE rule)
+        lo, hi = pf[-1]["pro_forma_ni_m"]
+        eps_label += f"; the {pf[-1]['doc']}'s ${lo:,.0f}-{hi:,.0f} million is not used: {pf[-1]['pro_forma_note']}"
+        guide_ids.append(pf[-1]["source"])
     fwd = [latest["sales_pct"]] * 2
     fwd_label, fwd_short, fwd_period = (f"no {fy_now} revenue guide in numbers, {latest['quarter']} revenues as reported",
                                         f"{latest['quarter'][:2]} revenues", latest["quarter"])
@@ -311,18 +347,37 @@ def build(as_of, facts, raw, spx, engine, out):
     # ── era-dependent text, from facts only: no disruption theme in the registry is live for a gas distributor and midstream
     # partnership's general partner on these dates (OFFSHORE is scoped to IT services) ──
     live = sorted(((t["live_from"], k, t["scope"]) for k, t in retro_tool.load_taxonomy()["themes"].items() if t["live_from"] <= as_of))
-    assert [k for _, k, _ in live] in (["OFFSHORE"], ["OFFSHORE", "CLOUD"]), (as_of, "a live theme needs its scope reading for OKE first", live)
+    assert [k for _, k, _ in live] in (["OFFSHORE"], ["OFFSHORE", "CLOUD"], ["OFFSHORE", "CLOUD", "ECOMMERCE"],
+                                       ["OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING"],
+                                       ["OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING", "ENERGY_TRANSITION"]), \
+        (as_of, "a live theme needs its scope reading for OKE first", live)
     stage, watch, factors = "none", [], []
     sig_name, trigger = "Disruption theme: none in scope", "No live disruption theme covers gas utilities or midstream"
     theme_summary = "no theme in the registry is live for a gas distributor and midstream company on this date; none has dated evidence"
     key_tail = ("Regulated distribution rates and fee-based pipelines carry part of the cash, NGL spreads\n"
                 "  and storage margins the rest; the bear needs both to give way.")
+    if dists and dists[0]["effective"] <= as_of:   # (OKE 2014-2017) after the ONE Gas separation: no regulated distribution business
+        key_tail = ("Fee-based NGL, gathering and pipeline services carry part of the cash, commodity-priced\n"
+                    "  processing margins and NGL spreads the rest; the bear needs both to give way.")
     why = h["why"]
     if len(live) > 1:   # (OKE 2010-2013) from CLOUD's 2012-10-30: every live theme with its registered scope (the UNH, CB and NEE wording)
         scopes = ", ".join(f"{k} {'is scoped to' if i == 0 else 'to'} '{sc}'" for i, (_, k, sc) in enumerate(live))
-        why += ("; no disruption theme in the registry is live for a gas distributor and midstream company on this date (of the live "
+        who = "a midstream company" if dists and dists[0]["effective"] <= as_of else "a gas distributor and midstream company"
+        why += (f"; no disruption theme in the registry is live for {who} on this date (of the live "
                 f"themes, {scopes}: none names gas distribution or midstream), so the watch list is empty")
         theme_summary = "no theme in the registry is live for a gas distributor and midstream company on this date (CLOUD and OFFSHORE are scoped to IT)"
+    if len(live) > 2:   # (OKE 2014-2017) ECOMMERCE and STREAMING name no midstream business; ENERGY_TRANSITION is read as out of scope
+        tq, keys = h.get("theme_quotes", {}), [k for _, k, _ in live]
+        if "ENERGY_TRANSITION" in keys:
+            assert "ENERGY_TRANSITION_ghg" in tq and "ENERGY_TRANSITION_reserves" in tq, (as_of, "the vintage's GHG and reserves words")
+            why += (f"; ENERGY_TRANSITION's reserves and refining are out of scope (the TRGP and BKR reading): ONEOK Partners holds no "
+                    f"reserves of its own and refines nothing ('{tq['ENERGY_TRANSITION_reserves']}'); its greenhouse gas risk factor: "
+                    f"'{tq['ENERGY_TRANSITION_ghg']}' (text only)")
+        if "CLOUD_words" in tq:
+            why += f"; the 10-K's one cloud sentence is an accounting standard: '{tq['CLOUD_words']}' (text only)"
+        theme_summary = ("no theme in the registry is live for a midstream company on this date (CLOUD and OFFSHORE are scoped to IT, "
+                         "ECOMMERCE to retail, STREAMING to TV" + (", ENERGY_TRANSITION to reserves and refining" if "ENERGY_TRANSITION" in keys
+                                                                    else "") + ")")
     kind, pit_risk = "DURABLE", 2
     cat3 = (f"(3) The {fy_now} outlook — GAAP EPS ${money(eps_now)} ({how}); no revenue or margin guide in numbers" if eg else
             f"(3) The {fy_now} outlook — none yet: ONEOK guides net income per diluted share, not revenue or a margin")
@@ -339,13 +394,15 @@ def build(as_of, facts, raw, spx, engine, out):
 
     company = h["company"]
     ids = (list(h["sources"]) + [x for p in prints for x in [p["source"], p.get("source_10k")] + p.get("sources_extra", []) if x]
-           + [public[i - 1]["source"]] + guide_ids + ([dividend_src] if dividend_src else []) + [listing[-1]["source"]] + split_ids)
+           + [public[i - 1]["source"]] + guide_ids + ([dividend_src] if dividend_src else []) + [listing[-1]["source"]] + split_ids
+           + [x["source"] for x in dists if x["effective"] <= as_of])
     sources = [dict(id=x, **facts["sources"][x]) for x in dict.fromkeys(ids)]
     sources.append({"id": "Y0", "published": as_of,
                     "title": f"Yahoo Finance daily prices, {company} common stock ({exchange}: {listed}) and S&P 500, truncated at AS_OF",
                     "url": f"https://finance.yahoo.com/quote/{SYMBOL}/history",
                     "supports": f"close ${close:.2f} as traded on AS_OF, 52-week range, realized vol, beta, the {window_label} P/E "
-                                f"distribution from {window[0]}"})
+                                f"distribution from {window[0]}" + "".join(f" (days before {x['effective']} as traded, with ONE Gas)"
+                                                                           for x in dists if x["effective"] <= as_of)})
     for s in sources:
         assert s["published"] <= as_of, (as_of, s["id"])
 
