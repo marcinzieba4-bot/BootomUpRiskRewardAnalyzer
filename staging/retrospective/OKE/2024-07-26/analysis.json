@@ -1,0 +1,271 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "OKE",
+ "company": "ONEOK, Inc.",
+ "as_of": "2024-07-26",
+ "price_date": "2024-07-26",
+ "price": 82.02,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); gas distribution and midstream signals with ONEOK's rule-T thresholds",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'We are a leading midstream service provider of gathering, processing, fractionation, transportation, storage and marine export services.' 'Each of our four reportable segments are primarily fee-based, and our consolidated earnings were more than 85% fee-based in 2023.' 'The volatility of natural gas, NGL, Refined Products and crude oil prices could affect adversely our earnings and cash flows.' (the FY2023 10-K's own words; it does not use the word cyclical, so DURABLE, the MU rule); no disruption theme in the registry is live for a midstream company on this date (of the live themes, OFFSHORE is scoped to 'lower-cost offshore delivery (Indian IT services) takes share and price from Western consulting, systems integration and outsourcing', CLOUD to 'public cloud displaces on-premise hardware, storage, legacy databases and data-center outsourcing', ECOMMERCE to 'e-commerce (Amazon effect) displaces physical retail, malls, grocery, distribution', STREAMING to 'cord-cutting / streaming displaces linear TV networks and pay-TV bundles', ENERGY_TRANSITION to 'decarbonisation strands oil, gas and coal reserves and refining', EV to 'battery-electric vehicles displace ICE powertrains, auto parts suppliers and fuel retail', CRYPTO to 'crypto / DeFi disintermediates payments networks, banks, exchanges, remittance', GENAI to 'generative / autonomous AI substitutes the core product: software seats, IT services and BPO hours, professional information, search, education content, mobility', GLP1 to 'GLP-1 obesity drugs reduce demand for snacks, beverages, sleep-apnea/diabetes/cardio devices': none names gas distribution or midstream), so the watch list is empty; ENERGY_TRANSITION's reserves and refining are out of scope (the TRGP and BKR reading): ONEOK holds no reserves of its own and refines nothing ('We may not be able to accurately estimate hydrocarbon reserves and production volumes expected to be delivered to us for a variety of reasons, including the unavailability of sufficiently detailed information and unanticipated changes in producers’ expected drilling schedules.'); its greenhouse gas risk factor: 'We may face significant costs to comply with the regulation of GHG emissions.' (text only); its climate risk factor: 'Increasing attention to ESG issues, including climate change, may impact our business.' (text only); EV and CRYPTO are out of scope: the 10-K names neither electric vehicles nor crypto (text only); GENAI and GLP1 are out of scope: the 10-K names no artificial intelligence and it names no GLP-1 drug (text only); the 10-K's cloud words are its own cybersecurity vendors: 'In order to manage these cybersecurity risks, including our use of third-party software and cloud vendors, we have developed and implemented a cybersecurity risk management program intended to protect the confidentiality, integrity and availability of our critical systems and information.' (text only)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "'We are a leading midstream service provider of gathering, processing, fractionation, transportation, storage and marine export services.' 'Each of our four reportable segments are primarily fee-based, and our consolidated earnings were more than 85% fee-based in 2023.' 'The volatility of natural gas, NGL, Refined Products and crude oil prices could affect adversely our earnings and cash flows.' (the FY2023 10-K's own words; it does not use the word cyclical, so DURABLE, the MU rule); no disruption theme in the registry is live for a midstream company on this date (of the live themes, OFFSHORE is scoped to 'lower-cost offshore delivery (Indian IT services) takes share and price from Western consulting, systems integration and outsourcing', CLOUD to 'public cloud displaces on-premise hardware, storage, legacy databases and data-center outsourcing', ECOMMERCE to 'e-commerce (Amazon effect) displaces physical retail, malls, grocery, distribution', STREAMING to 'cord-cutting / streaming displaces linear TV networks and pay-TV bundles', ENERGY_TRANSITION to 'decarbonisation strands oil, gas and coal reserves and refining', EV to 'battery-electric vehicles displace ICE powertrains, auto parts suppliers and fuel retail', CRYPTO to 'crypto / DeFi disintermediates payments networks, banks, exchanges, remittance', GENAI to 'generative / autonomous AI substitutes the core product: software seats, IT services and BPO hours, professional information, search, education content, mobility', GLP1 to 'GLP-1 obesity drugs reduce demand for snacks, beverages, sleep-apnea/diabetes/cardio devices': none names gas distribution or midstream), so the watch list is empty; ENERGY_TRANSITION's reserves and refining are out of scope (the TRGP and BKR reading): ONEOK holds no reserves of its own and refines nothing ('We may not be able to accurately estimate hydrocarbon reserves and production volumes expected to be delivered to us for a variety of reasons, including the unavailability of sufficiently detailed information and unanticipated changes in producers’ expected drilling schedules.'); its greenhouse gas risk factor: 'We may face significant costs to comply with the regulation of GHG emissions.' (text only); its climate risk factor: 'Increasing attention to ESG issues, including climate change, may impact our business.' (text only); EV and CRYPTO are out of scope: the 10-K names neither electric vehicles nor crypto (text only); GENAI and GLP1 are out of scope: the 10-K names no artificial intelligence and it names no GLP-1 drug (text only); the 10-K's cloud words are its own cybersecurity vendors: 'In order to manage these cybersecurity risks, including our use of third-party software and cloud vendors, we have developed and implemented a cybersecurity risk management program intended to protect the confidentiality, integrity and availability of our critical systems and information.' (text only). durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.61x; +28% to EPP floor; model-vs-market gap +0.47; conservative 2yr +36%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.61,
+  "ratio_b_fmt": "0.61x",
+  "epp": 63.96,
+  "epp_gap_pct": 28.2,
+  "epp_adj": 0.0,
+  "proxy_composite": 2.1,
+  "sca": 0.256,
+  "adj_composite": 2.356,
+  "market_composite": 1.89,
+  "adj_gap": 0.47,
+  "valuation": "MODESTLY UNDERVALUED",
+  "cons_return_2yr": 35.9,
+  "scenarios": {
+   "BEAR": {
+    "eps": 1.05,
+    "pe": 12.7,
+    "price": 13,
+    "desc": "EPS -53.7%/yr (worst year FY14-FY23, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 4.62,
+    "pe": 21.5,
+    "price": 99,
+    "desc": "EPS -3.1%/yr (Q1 revenues + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 6.54,
+    "pe": 29.9,
+    "price": 196,
+    "desc": "EPS +15.3%/yr (FY14-FY23 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 13.3,
+    "pe": 41.1,
+    "price": 547,
+    "desc": "EPS +64.4%/yr (best 2-yr run FY14-FY23, at least BULL); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.61,
+   "epp_gap_pct": 28.2,
+   "adj_gap": 0.47,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 35.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.35,
+   "epp_gap_pct": 28.2,
+   "adj_gap": 0.79,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 35.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 1.19,
+   "epp_gap_pct": 28.2,
+   "adj_gap": 0.09,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 35.9,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.57,
+   "epp_gap_pct": 28.2,
+   "adj_gap": 0.51,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 35.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.64,
+   "epp_gap_pct": 28.2,
+   "adj_gap": 0.42,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 35.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.61,
+   "epp_gap_pct": 28.2,
+   "adj_gap": 0.77,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 35.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.61,
+   "epp_gap_pct": 4.2,
+   "adj_gap": 0.47,
+   "verdict": "MODESTLY UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 35.9,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.61,
+   "epp_gap_pct": 28.2,
+   "adj_gap": 0.58,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 35.9,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP",
+  "FAIR"
+ ],
+ "summary": "OKE (retrospective, 2024-07-26) ◉ BUY — Ratio B 0.61x (84.2% downside to Bear $13 / +139.0% upside to Bull $196) | Adj composite 2.36 vs market 1.89: gap +0.47 [MODESTLY UNDERVALUED] | +28% above the EPP floor $64 (13x FY24E $4.92) | Conservative 2-yr case: +35.9% total (+18.0%/yr) | At 16.7x FY24E the 15% hurdle price $108 sits between the BASE and BULL cases; net margin +60.5% and Distribution operating income n/r in Q1 2024, forward revenues +5.8% (no FY24 revenue guide in numbers, Q1 2024 revenues as reported); no theme in the registry is live for a midstream company on this date (CLOUD and OFFSHORE are scoped to IT, ECOMMERCE to retail, STREAMING to TV, ENERGY_TRANSITION to reserves and refining, EV to fuel retail, CRYPTO to payments and banks, GENAI to software, services and content, GLP1 to food and devices).",
+ "sources": [
+  {
+   "id": "OK142",
+   "published": "2024-02-28",
+   "filed": "accepted 2024-02-27 16:18 ET, after the close: counts from 2024-02-28",
+   "title": "ONEOK FY2023 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000103968424000015/0001039684-24-000015.txt",
+   "supports": "history vintage FY2023; the 'why'"
+  },
+  {
+   "id": "OK136",
+   "published": "2023-03-01",
+   "filed": "accepted 2023-02-28 16:33 ET, after the close: counts from 2023-03-01",
+   "title": "ONEOK FY2022 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000103968423000016/0001039684-23-000016.txt",
+   "supports": "history vintage FY2022; the 'why'"
+  },
+  {
+   "id": "OK130",
+   "published": "2022-03-02",
+   "filed": "accepted 2022-03-01 16:06 ET, after the close: counts from 2022-03-02",
+   "title": "ONEOK FY2021 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000103968422000015/0001039684-22-000015.txt",
+   "supports": "history vintage FY2021; the 'why'"
+  },
+  {
+   "id": "OK125",
+   "published": "2021-02-24",
+   "filed": "accepted 2021-02-23 16:08 ET, after the close: counts from 2021-02-24",
+   "title": "ONEOK FY2020 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000103968421000015/0001039684-21-000015.txt",
+   "supports": "history vintage FY2020; the 'why'"
+  },
+  {
+   "id": "OK119",
+   "published": "2020-02-26",
+   "filed": "accepted 2020-02-25 16:08 ET, after the close: counts from 2020-02-26",
+   "title": "ONEOK FY2019 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000103968420000012/0001039684-20-000012.txt",
+   "supports": "history vintage FY2019; the 'why'"
+  },
+  {
+   "id": "OK110",
+   "published": "2019-02-27",
+   "filed": "accepted 2019-02-26 16:06 ET, after the close: counts from 2019-02-27",
+   "title": "ONEOK FY2018 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000103968419000016/0001039684-19-000016.txt",
+   "supports": "history vintage FY2018; the 'why'"
+  },
+  {
+   "id": "OK101",
+   "published": "2018-02-28",
+   "filed": "accepted 2018-02-27 16:35 ET, after the close: counts from 2018-02-28",
+   "title": "ONEOK FY2017 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000103968418000021/0001039684-18-000021.txt",
+   "supports": "history vintage FY2017; the 'why'"
+  },
+  {
+   "id": "OK93",
+   "published": "2017-03-01",
+   "filed": "accepted 2017-02-28 16:16 ET, after the close: counts from 2017-03-01",
+   "title": "ONEOK FY2016 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000103968417000019/0001039684-17-000019.txt",
+   "supports": "history vintage FY2016; the 'why'"
+  },
+  {
+   "id": "OK141",
+   "published": "2024-02-27",
+   "filed": "accepted 2024-02-26 16:50 ET, after the close: counts from 2024-02-27",
+   "title": "ONEOK Q4 2023 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000103968424000013/0001039684-24-000013.txt",
+   "supports": "Q4 2023: revenues, cost of sales and fuel (net margin), operating income, income before income taxes, diluted EPS, diluted shares; the EPS guidance where the release gives one; the dividend rate where it first states one"
+  },
+  {
+   "id": "OK143",
+   "published": "2024-05-01",
+   "filed": "accepted 2024-04-30 16:25 ET, after the close: counts from 2024-05-01",
+   "title": "ONEOK Q1 2024 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000103968424000032/0001039684-24-000032.txt",
+   "supports": "Q1 2024: revenues, cost of sales and fuel (net margin), operating income, income before income taxes, diluted EPS, diluted shares; the EPS guidance where the release gives one; the dividend rate where it first states one"
+  },
+  {
+   "id": "OK12",
+   "published": "2007-08-02",
+   "filed": "accepted 2007-08-01 20:26 ET, after the close: counts from 2007-08-02",
+   "title": "ONEOK Q2 2007 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000119312507168403/0001193125-07-168403.txt",
+   "supports": "Q2 2007: revenues, net margin, operating income, income before income taxes, diluted EPS, diluted shares and the Distribution segment's operating income"
+  },
+  {
+   "id": "OK52",
+   "published": "2012-06-06",
+   "filed": "accepted 2012-06-05 17:19 ET, after the close: counts from 2012-06-06",
+   "title": "ONEOK 8-K: two-for-one stock split completed (Items 7.01, 8.01)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000103968412000059/0001039684-12-000059.txt",
+   "supports": "the 2012 two-for-one split: distribution on June 1, 2012, post-split trading from June 4, 2012"
+  },
+  {
+   "id": "OK68",
+   "published": "2014-02-06",
+   "filed": "accepted 2014-02-05 16:37 ET, after the close: counts from 2014-02-06",
+   "title": "ONEOK 8-K: the ONE Gas distribution completed (Items 2.01, 2.04, 8.01, 9.01)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000103968414000010/0001039684-14-000010.txt",
+   "supports": "the separation of ONE Gas completed on January 31, 2014, one share for every four ONEOK shares"
+  },
+  {
+   "id": "Y0",
+   "published": "2024-07-26",
+   "title": "Yahoo Finance daily prices, ONEOK, Inc. common stock (NYSE: OKE) and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/OKE/history",
+   "supports": "close $82.02 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution from 2014-07-28 (days before 2014-02-03 as traded, with ONE Gas)"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-28"
+}

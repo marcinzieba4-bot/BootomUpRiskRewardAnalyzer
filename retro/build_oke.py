@@ -66,6 +66,15 @@ From 2018 (retro/README.md, "OKE 2018-2021"):
     ENERGY_TRANSITION reading names ONEOK as the holder of no reserves ('theme_holder'), and from the FY2019 10-K its climate-demand
     risk factor is quoted ('ENERGY_TRANSITION_demand', text only).
 
+From 2022 (retro/README.md, "OKE 2022-2026"):
+  - every numeric guide states diluted EPS, a range or a stated midpoint alone (a point, lo = hi; 'eps_guide'), one-offs in as
+    published; a guide that includes an acquisition pending on its date is not used (the Q3 2024 consolidated midpoint, in the note);
+  - GENAI (live 2022-11-30) and GLP1 (2023-08-08) are out of scope (software, services and content; food and devices): the FY2021-
+    FY2024 10-Ks name no artificial intelligence and none names a GLP-1 drug ('theme_absent', asserted by the generator), the FY2025
+    10-K's one AI sentence is its own computing policy ('GENAI_words', text only); the FY2023-FY2025 10-Ks' cloud words are its own
+    cybersecurity vendors ('CLOUD_vendor', text only); the climate-demand risk factor is gone from the FY2021 10-K and its climate risk
+    factor heading is quoted instead ('ENERGY_TRANSITION_esg', text only).
+
 Output goes to staging/retrospective/OKE until the series is added to the archive (--out archive/retrospective/OKE).
 
 Usage
@@ -73,6 +82,7 @@ Usage
   python3 retro/build_oke.py --weekly 2010-01-01 2013-12-31
   python3 retro/build_oke.py --weekly 2014-01-01 2017-12-31
   python3 retro/build_oke.py --weekly 2018-01-01 2021-12-31
+  python3 retro/build_oke.py --weekly 2022-01-01 2026-11-27
   python3 retro/build_oke.py 2008-02-27
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/OKE/<AS_OF>
 """
@@ -182,6 +192,14 @@ def shares_lit(x):
     post-split share counts of 209 million), so the validator's year scan sees no false later year; the value is unchanged."""
     t = repr(x)
     return t[:-1] + "_" + t[-1] if re.fullmatch(r"0\.(19|20)\d\d", t) else t
+
+
+def num_lit(x, as_of):
+    """repr(x), with a digit separator where a number reads as a calendar year after AS_OF's (2095.0 is written 2_095.0; OKE 2022-2026:
+    Q1 2023's operating margin change of +2,095bp), so the validator's year scan sees no false later year; the value is unchanged."""
+    t = repr(x)
+    m = re.fullmatch(r"()((?:19|20)\d\d)(\.\d+)?", t)   # a minus sign already stops the scan if isinstance(x, (int, float)) and not isinstance(x, bool) else None
+    return f"{m.group(1)}{m.group(2)[0]}_{m.group(2)[1:]}{m.group(3) or ''}" if m and m.group(2) > as_of[:4] else t
 
 
 def build(as_of, facts, raw, spx, engine, out):
@@ -364,7 +382,10 @@ def build(as_of, facts, raw, spx, engine, out):
                                        ["OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING"],
                                        ["OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING", "ENERGY_TRANSITION"],
                                        ["OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING", "ENERGY_TRANSITION", "EV"],      # (OKE 2018-2021)
-                                       ["OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING", "ENERGY_TRANSITION", "EV", "CRYPTO"]), \
+                                       ["OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING", "ENERGY_TRANSITION", "EV", "CRYPTO"],
+                                       ["OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING", "ENERGY_TRANSITION", "EV", "CRYPTO", "GENAI"],
+                                       ["OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING", "ENERGY_TRANSITION", "EV", "CRYPTO", "GENAI",
+                                        "GLP1"]), \
         (as_of, "a live theme needs its scope reading for OKE first", live)
     stage, watch, factors = "none", [], []
     sig_name, trigger = "Disruption theme: none in scope", "No live disruption theme covers gas utilities or midstream"
@@ -391,17 +412,31 @@ def build(as_of, facts, raw, spx, engine, out):
                     f"'{tq['ENERGY_TRANSITION_ghg']}' (text only)")
             if "ENERGY_TRANSITION_demand" in tq:    # (OKE 2018-2021) the FY2019 and FY2020 10-Ks' climate-demand risk factor, text only
                 why += f"; its climate-demand risk factor: '{tq['ENERGY_TRANSITION_demand']}' (text only: the volumes are its producers')"
+            if "ENERGY_TRANSITION_esg" in tq:       # (OKE 2022-2026) the FY2021-FY2025 10-Ks' climate risk factor heading, text only
+                why += f"; its climate risk factor: '{tq['ENERGY_TRANSITION_esg']}' (text only)"
         if "EV" in keys:        # (OKE 2018-2021) EV's fuel retail and CRYPTO's payments and banks name no midstream business
             assert {"electric vehicle"} | ({"crypto"} if "CRYPTO" in keys else set()) <= set(h.get("theme_absent", [])), \
                 (as_of, "the vintage must say which theme words its 10-K does not use")
             why += ("; " + ("EV and CRYPTO are" if "CRYPTO" in keys else "EV is") + " out of scope: the 10-K names "
                     + ("neither electric vehicles nor crypto" if "CRYPTO" in keys else "no electric vehicles") + " (text only)")
+        if "GENAI" in keys:     # (OKE 2022-2026) GENAI's software, services and content and GLP1's food and devices name no midstream business
+            assert "GENAI_words" in tq or "artificial intelligence" in h.get("theme_absent", []), (as_of, "the vintage's AI words")
+            why += ("; GENAI" + (" and GLP1 are" if "GLP1" in keys else " is") + " out of scope: "
+                    + (f"the 10-K's AI words are its own computing policy ('{tq['GENAI_words']}')" if "GENAI_words" in tq
+                       else "the 10-K names no artificial intelligence")
+                    + (" and it names no GLP-1 drug" if "GLP1" in keys else "") + " (text only)")
+            if "GLP1" in keys:
+                assert "GLP-1" in h.get("theme_absent", []), (as_of, "the vintage must say its 10-K names no GLP-1 drug")
         if "CLOUD_words" in tq:
             why += f"; the 10-K's one cloud sentence is an accounting standard: '{tq['CLOUD_words']}' (text only)"
+        if "CLOUD_vendor" in tq:    # (OKE 2022-2026) the FY2023-FY2025 10-Ks' cloud words are ONEOK's own cybersecurity vendors
+            why += f"; the 10-K's cloud words are its own cybersecurity vendors: '{tq['CLOUD_vendor']}' (text only)"
         theme_summary = ("no theme in the registry is live for a midstream company on this date (CLOUD and OFFSHORE are scoped to IT, "
                          "ECOMMERCE to retail, STREAMING to TV" + (", ENERGY_TRANSITION to reserves and refining" if "ENERGY_TRANSITION" in keys
                                                                     else "") + (", EV to fuel retail" if "EV" in keys else "")
-                         + (", CRYPTO to payments and banks" if "CRYPTO" in keys else "") + ")")
+                         + (", CRYPTO to payments and banks" if "CRYPTO" in keys else "")
+                         + (", GENAI to software, services and content" if "GENAI" in keys else "")
+                         + (", GLP1 to food and devices" if "GLP1" in keys else "") + ")")
     kind, pit_risk = "DURABLE", 2
     cat3 = (f"(3) The {fy_now} outlook — GAAP EPS ${money(eps_now)} ({how}); no revenue or margin guide in numbers" if eg else
             f"(3) The {fy_now} outlook — none yet: ONEOK guides net income per diluted share, not revenue or a margin")
@@ -439,7 +474,10 @@ def build(as_of, facts, raw, spx, engine, out):
                 f"{latest['cash_note']}; EPS {latest['eps_note']}{basis_note(latest['published'])}")
     fy_rev = rev[max(rev)] * (1 + sum(fwd) / 2 / 100)
     fy_rev_label = f"{fwd_label}, applied to the year (no {fy_now} revenue guide)"
-    franchise_q = f"{latest['quarter'].split()[0]} net margin {latest['nm_pct']:+.1f}%, operating margin {latest['opm']:.2f}% ({latest['opm_bp']:+.0f}bp)"
+    bp_txt = f"{latest['opm_bp']:+.0f}"
+    if re.fullmatch(r"\+(19|20)\d\d", bp_txt) and bp_txt[1:] > as_of[:4]:     # (OKE 2022-2026) +2095bp would read as a later year
+        bp_txt = f"{latest['opm_bp']:+,.0f}"
+    franchise_q = f"{latest['quarter'].split()[0]} net margin {latest['nm_pct']:+.1f}%, operating margin {latest['opm']:.2f}% ({bp_txt}bp)"
     fcf_text = f"${h['fcf_b']:.2f}B" if h["fcf_b"] >= 0 else f"$({-h['fcf_b']:.2f})B"
     LATEST = {k: latest.get(k) for k in latest_keys}
     R = repr
@@ -506,7 +544,7 @@ MARGIN_SIGNAL_NAME = {R(h["margin_signal_name"])}
 KIND_TEXT     = {R(h["kind_text"])}
 
 # ── FACTS: latest print ({latest["source"]}, published {latest["published"]}) and {fy_now} outlook ──
-LATEST          = {R(LATEST)}
+LATEST          = {"{" + ", ".join(f"{k!r}: {num_lit(v, as_of)}" for k, v in LATEST.items()) + "}"}
 PREV_SEG        = {R(prev_seg)}   # the previous print's net margin growth
 EPP_TODAY_EPS   = {eps_now}   # {eps_label}
 EPS_LABEL       = {R(eps_label)}
