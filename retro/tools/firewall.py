@@ -184,7 +184,8 @@ excluded year, and a later share repurchase program (from LYB 2022-2026 also a l
 and a later Q4 print with n/r margins whose loss year is excluded); OKE: a print whose net margin, Distribution operating income,
 revenue, margins, EPS, notes and raw figures are absurd, a later vintage with planted texts, figures, window start and an excluded
 year, and a later EPS guide for every year guided before CUTOFF and for the cutoff's year and the next (from OKE 2014-2017 also a point
-guide, a pro forma guide, the vintage's theme words, a computed net margin and a later distribution); a CLOUD event
+guide, a pro forma guide, the vintage's theme words, a computed net margin and a later distribution; from OKE 2018-2021 also a
+per-share point guide, a net income range with a note, the climate-demand words, the reserves holder and the absent theme words); a CLOUD event
 from a later 10-K, as for every live theme), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
 before CUTOFF changed.
@@ -1652,6 +1653,15 @@ try:
         v["theme_quotes"] = {k: "PLANTED" for k in ("ENERGY_TRANSITION_ghg", "ENERGY_TRANSITION_reserves", "CLOUD_words")}
         f.setdefault("distributions", []).append({"effective": later, "yahoo_factor": 9.99, "source": last["source"], "kind": "PLANTED",
                                                   "note": "PLANTED"})
+        # (OKE 2018-2021) a later per-share point guide with its note and a later net income range with a note for every such year, and
+        # the vintage's climate-demand words, reserves holder and absent theme words
+        for y in sorted({g["fy"] for g in f["eps_guides"] if g["published"] < cutoff} | {int(cutoff[:4]), int(cutoff[:4]) + 1}):
+            f["eps_guides"].append({"fy": y, "published": later, "source": last["source"], "doc": "PLANTED", "eps_guide": [0.01, 0.01],
+                                    "eps_guide_note": "PLANTED", "quote": "PLANTED"})
+            f["eps_guides"].append({"fy": y, "published": later, "source": last["source"], "doc": "PLANTED", "ni_guide_m": [1, 3],
+                                    "ni_guide_note": "PLANTED", "shares_print": last["quarter"], "quote": "PLANTED"})
+        v["theme_quotes"]["ENERGY_TRANSITION_demand"] = "PLANTED"
+        v.update(theme_holder="PLANTED", theme_absent=["PLANTED"])
     if TICKER == "LMT":    # absurd full-year actuals on the planted print, for the year after the latest vintage before CUTOFF, and a later
                            # vintage whose every text and figure the models quote is planted (LMT 2008-2009)
         v0 = max((x for x in f["history_vintages"] if x["published"] < cutoff), key=lambda x: x["published"])

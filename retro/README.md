@@ -32896,6 +32896,177 @@ Judgement calls that could carry hindsight:
 
 The hindsight results for 2014-2017 are in `staging/retrospective/OKE/FINDINGS.md`, "OKE 2014-2017 (hindsight)": hypotheses, never inputs.
 
+### OKE 2018-2021: text-layer releases, the post-merger vintages, the Tax Act and the 2020 impairments kept at GAAP, the Q1 2020 outlook as the guide, per-share guides, EV and CRYPTO out of scope
+
+The owner asked for 2018-2021 ("find newest code. do retrospective analysis for OKE, 2018-2021. same rules as before"); the code is the
+branch `claude/sharp-albattani-rdvlgi` (its commit "Merge OKE 2014-2017 ... OKE to 2017-12-29"), as the coordinating session named it;
+nothing else was merged in. Built in a new session without opening the 2008-2017 outcomes or findings (`staging/retrospective/OKE/FINDINGS.md`,
+the `outcome.json` files, the hindsight part of `SERIES.md`); the live `oke_signal_model.py`, OKE's profile in `data/business_profiles.json`,
+`scripts/quality_classify.py` and `reports/*.json` were not opened.
+
+```bash
+python3 retro/tools/edgar.py fetch 1039684 <dir> --from 2017-12-01 --to 2021-12-31 --forms 8-K 8-K/A 10-K 10-K/A 10-Q
+python3 -I retro/generators/oke/gen_oke_1821.py --filings <dir> --facts-in <the 2008-2017 sheet>   # -> retro/facts/OKE.json
+python3 -I retro/tools/verbatim.py <dir>/checklist_oke_1821.json             # 221/221
+python3 retro/build_oke.py --weekly 2018-01-01 2021-12-31                   # 209 dates, 2018-01-05 .. 2021-12-31
+for d in staging/retrospective/OKE/201[89]-* staging/retrospective/OKE/202[01]-*; do
+  python3 retro/retro_tool.py --archive staging/retrospective run "$d"; done
+for c in 2018-01-24 2018-02-27 2018-02-28 2019-02-27 2019-10-30 2020-02-26 2020-04-29 2020-10-28 2021-02-24 2021-11-03 2022-01-01; do
+  python3 retro/tools/firewall.py $c OKE; done
+python3 retro/generators/oke/controls_oke_1821.py; python3 retro/generators/oke/sens_oke_1821.py <scratch>
+```
+
+**A full-data batch.** `www.sec.gov` served every filing document to `edgar.py`'s plain client name (no contact address).
+
+Read, by the session's model directly with no delegated transcription: the sixteen earnings releases of Q4 2017 to Q3 2021 (8-K exhibit
+99.1: the statements of income, balance sheets, the highlights tables, the guidance paragraphs and guidance tables); the guidance 8-K of
+2018-01-23 (Item 7.01, counted from 2018-01-24) and the capital spending 8-K of 2020-03-12 (Item 7.01, counted from 2020-03-13); every
+dividend 8-K (Items 7.01 and 8.01), those changing the rate by their sentence and those keeping it by their text; Items 1, 1A, 6, 7 and 8
+of the FY2017-FY2020 10-Ks. Every other 8-K of 2017-12 to 2021-12 was read by its items and title (conferences, credit agreements and notes,
+growth projects, by-laws, officers and directors, the annual meetings, the sustainability report, the emissions target) and its text
+searched for a net income or EPS guide (none). **Not read:** the 10-Qs beyond their listing (the releases carry every figure the models use),
+the proxy statements, the earnings tables, presentations and supplemental guidance materials the releases point to on the website (not
+filed). **From the Q4 2017 release every earnings release is a set of page images with a text layer** (Workiva slides, as LLY's Q1 2018
+release): the tables have no cells, so the generator reads each figure from the converted text layer, a label followed by the table's
+numbers (`trow`, new in `gen_oke_1821.py`), and the matched text goes to the verbatim checklist; the 10-Ks are HTML tables, read by row as
+before. Every quote is asserted (221/221 with `verbatim.py`); the source ids are `OK98`-`OK128`, each dated by EDGAR's acceptance time.
+Decided on 2026-11-28, before any OKE 2018-2021 model was built or any of its outcomes computed:
+
+- **Release timing.** Every earnings 8-K was accepted after the close (16:28-17:16 ET) and counts from the next trading day, except the
+  Q3 2019 release (accepted 2019-10-30 09:14 ET, before the open: it counts from that day, and the week's date is 2019-10-31). Each Q4 print
+  came a trading day before its 10-K, the week's date being the 10-K's day (2018-02-28, 2019-02-27, 2020-02-26, 2021-02-24; asserted), so no
+  print carries full-year actuals of its own. The dividend 8-K of 2019-04-19 was accepted on Good Friday, a market holiday, and counts from
+  2019-04-22 (the UNP Good Friday rule; new in the generator's `pub`).
+- **The ONEOK Partners merger** (closed 2017-06-30) is in the figures as ONEOK's filings publish it: no OKS price or per-unit figure, no
+  pro forma statement. The FY2017 diluted shares are the year's 299.8M (the 168.9M exchange shares from July), 2018 on about 414-448M. The
+  engine's buyback term is the vintage's diluted-share change since its first year, so from 2018 it reads the merger and the 2018 and 2020
+  equity offerings as dilution (-11%/yr on the FY2017 vintage, -7% to -8% later): as published, the KMI and TRGP reading of share
+  issuance.
+- **Four history vintages,** each year from the latest filing that reports its EPS from continuing operations, the ten fiscal years to the
+  latest one, revenues and diluted shares from each statement of income (three years):
+  - FY2017 10-K (2018-02-28): 2013-2017 from Item 6, 'Earnings per share - continuing operations'. **2017 at GAAP $1.29**, with the Tax Cuts
+    and Jobs Act: the Q4 2017 release lists the Act's $141.3M (47 cents for the year), the $20.2M impairments (4 cents) and about $50M of
+    merger costs (10 cents), 61 cents against $1.90 without them, under half, and no filing publishes a full-year EPS without them (the
+    AAPL FY2002 test; the LYB, UNH and CB reading of the Act). 2007 leaves; the window starts with 2008.
+  - FY2018 10-K (2019-02-27): its Item 6 prints 'Earnings per share - total' only, so 2016-2018 come from the statement of income's diluted
+    EPS from continuing operations (2017 and 2018 have no discontinued operations; 2016's $1.67 as before) and 2014-2015 stay at the
+    FY2017 10-K's continuing figures (the totals, $1.49 and $1.16, include discontinued operations). 2018 at GAAP $2.78 (no listed item).
+    Revenues on ASC 606 from 2018 without restatement ("In 2017 and prior periods, these fees were recorded as services revenue."): a seam,
+    as published, which the Q1-Q4 2018 prints carry against their year-ago quarters.
+  - FY2019 10-K (2020-02-26): 2017-2019 from the statement of income; 2019 at GAAP $3.07. 2009, the last year with the distribution
+    business in, leaves, so from this vintage every year is on the restated basis.
+  - FY2020 10-K (2021-02-24; it still prints Item 6): 2018-2020 from the statement of income. **2020 at GAAP $1.42** with the impairments:
+    the Q4 2020 release lists $644.9M of noncash charges, $1.15 a diluted share after tax, and 6 cents of benefits (debt repurchase gains and
+    a compensation mark-to-market), $1.09 net against $2.51 without them ($1.15 alone against $2.57), under half both ways, and no filing
+    publishes a full-year EPS without them (the Q1 2020 release's "EPS of 83 cents per diluted share, excluding noncash impairment charges"
+    is the quarter's): kept. 2010 leaves; the window starts with 2011.
+- **The prints.** EPS is the release's diluted EPS ('Income from continuing operations' under 'Diluted earnings per common share' for Q4
+  2017, then 'Diluted earnings (loss) per common share' or 'Diluted EPS'); net margin is revenues less cost of sales and fuel, as from Q4
+  2015; the Distribution signal stays n/r (scored at BASE); each print as the release shows the year-ago quarter (the generator asserts each
+  year-ago revenue and EPS equal the earlier print's; the 2018 releases' recast year-ago operating income, ASU 2017-07, as printed). The Q1
+  2020 print is a loss ($(0.34), the $641.8M impairments), its diluted shares those the statement prints.
+- **Current-FY EPS: GAAP net income guidance, per share where stated** (the KMI rule of "OKE 2010-2013"). From 2018 ONEOK guides "Net
+  income", consolidated (the noncontrolling interests and preferred dividends under $5 million a year), over the latest print's diluted
+  shares; from the 2020 guidance the tables also state "Diluted earnings per common share", which is used (`eps_guide`, its note naming
+  the net income range). A numeric range restated in a later release is a guide of that release, as the Q3 2017 one was (the Q1 2018
+  maintained range, the Q3 2020 restated outlook, the Q2 2021 restated range); words keep the last range (the Q2 2019 "confident in
+  achieving", the 8-K of 2020-03-13's "within our previously announced guidance ranges", the Q2 2020 "at the low end"); "above the
+  midpoints" (Q2 2021) is a one-sided bound, no field. 16 dated guides: FY2018 $955-1,155M (8-K of 2018-01-24, over Q3 2017's 383.4M
+  shares, current from the FY2017 vintage; FY18E $2.75), $955-1,155M (Q1 2018), $1,020-1,150M (Q2 2018, the table), $1,140-1,220M (Q3
+  2018; FY18E $2.84); FY2019 $1,140-1,400M (Q4 2018; $3.06), words (Q2 2019), $1,220-1,330M (Q3 2019; $3.07); FY2020 $3.25-3.85 a
+  share (Q4 2019; $3.55), words (8-K of 2020-03-13), $500-900M (Q1 2020; $1.69), words (Q2 2020), $500-900M (Q3 2020; $1.57); FY2021
+  $2.40-3.08 (Q4 2020; $2.74), $2.69-3.35 (Q1 2021; $3.02), $1,200-1,500M (Q2 2021; $3.02), and the Q3 2021 release's "10% earnings per
+  diluted share increase to a midpoint of $3.33." (a per-share point, lo = hi, beside its $1.43-1.55 billion range; new builder text).
+- **The Q1 2020 outlook is the guide (decided here).** The release withdraws the February guidance ("ONEOK is withdrawing its 2020
+  guidance expectations") and in the same text gives "the range of possible 2020 net income results will likely be between $500 million
+  and $900 million, which includes the $641.8 million impact of first quarter impairment charges": a later numeric range of the year's GAAP
+  net income, one-offs in (the LLY and UNH rule), so it supersedes the February range like any later guide (`ni_guide_note` on a range,
+  shown in the EPS label; new builder text). Without it (withdrawn, FY19's $3.07 standing) one class moves (below).
+- **No revenue or margin guide in numbers,** so BASE stays the latest quarter's revenue growth as reported plus the buyback (no margin
+  step): +42.9% (Q4 2017) to -33.3% (Q3 2019) and +108.6% (Q3 2021), commodity revenues as before.
+- **Dividends,** each rate change from the 8-K that first states it as approved: $0.77 (2018-01-19), $0.795 (2018-04-23), $0.825
+  (2018-07-27), $0.855 (2018-10-26), $0.86 (2019-01-18), $0.865 (2019-04-22), $0.89 (2019-07-26), $0.915 (2019-10-25), $0.935 (2020-01-17);
+  the seven declarations of 2020-04 to 2021-10 keep $0.935, read by their text. The withdrawn "prior dividend guidance" (Q2 2020) is no field.
+- **Themes.** ENERGY_TRANSITION stays out of scope (the TRGP and BKR reading carried): after the merger the 10-Ks' reserves are their
+  producers' ("We may not be able to accurately estimate hydrocarbon reserves and production volumes expected to be delivered to us ..."),
+  so the "why" names ONEOK, not ONEOK Partners, as the holder of no reserves (`theme_holder`), quotes the GHG risk factor ("We may face
+  significant costs to comply with the regulation of GHG emissions.") and, from the FY2019 10-K, the climate-demand risk factor ("Changes in
+  regulatory policies, public sentiment or technology due to the threat of climate change that result in a reduction in the demand for
+  hydrocarbon products ... could reduce future demand for hydrocarbons and reduce volumes available to us ..."), text only
+  (`ENERGY_TRANSITION_demand`); the FY2020 10-K's "We are preparing for the future energy transition" is read the same way. **EV (live
+  2020-01-01) and CRYPTO (2020-10-21) are out of scope**: fuel retail and payments name no midstream business, and no FY2017-FY2020 10-K
+  uses "electric vehicle", "crypto", "blockchain", "bitcoin", "digital asset" or "cloud" (asserted; `theme_absent`, text only). DURABLE:
+  no FY2017-FY2020 10-K uses the word cyclical (asserted). The "why" quotes the 10-Ks' new lead ("We are a leading midstream service
+  provider ..."), their fee-based sentence and the commodity-price risk factor; the kind text is "A midstream service provider".
+- **Anachronism list:** "Medallion Midstream" (the 2024 acquisition) joins `taxonomy_eras.json` at 2024-08-30, the earliest date on the
+  first page of EDGAR full-text search results under CIK 1039684 (approximate); "EnLink Midstream" has a hit of 2017-06-20 and is not added.
+
+Controls and checks (before any outcome):
+- **`retro_tool run` passes on all 209 dates, with no warning.** Its first run warned on the 26 dates of 2020-04-30 to 2020-10-23 (the
+  Q1 2020 withdrawal sentence named the "2021 outlook"; cut to the current-year fragment). Text only; no class moved.
+- **Controls** (`controls_oke_1821.py`, in memory): each print's revenues +10% (net margin re-derived), each
+  vintage's last-year EPS and revenue, each guide +$0.10 a share or +$20 million (a guide in words gets planted text) and each dividend
+  set to $0.99 a quarter: 45 controls, none changes a model dated before its publication, and all 45 change models from their
+  publication (44 from the first weekly date on or after it; the FY2018 range of the 8-K of 2018-01-24 from 2018-02-28, the FY2017 vintage
+  that makes its year current). No split or distribution falls in the range (the generator asserts Yahoo has none after 2014-02-03).
+- **Leak scan:** 0 hits in 77,639 (model, later token) pairs; positive control: the latest print's tokens in 209 of 209 models.
+  **Forward references:** 0 in 76 facts. **Self-text scan:** 2 tokens of 690, both benign: "ONE Gas" and "2014" in the Q4 2017 print's
+  Distribution n/r note, the method's text carried from 2014 (in filings earlier than this batch's downloads).
+- **Regression:** the 2008-2017 models (523) rebuild byte-identical with the extended sheet and builder; the shared code is untouched but
+  `retro/tools/firewall.py` (OKE's plants gain a per-share point guide, a net income range with a note, the climate-demand words, the
+  reserves holder and the absent theme words) and `taxonomy_eras.json` (one term).
+- **Firewall** (run after the build, validation outputs and README section were committed and pushed, before any outcome), at the 11
+  cutoffs above (the guidance 8-K, the Q4 2017 print and the FY2017 vintage, the FY2018 vintage, the before-the-open Q3 2019 print, the
+  FY2019 vintage, the Q1 2020 outlook, the Q3 2020 restatement, the FY2020 vintage, the Q3 2021 point and 2022-01-01): it passes at all 11, 526 to 732 dates each (2008-2017 included), 0 files changed and
+  no planted text. Besides the earlier plants, each cutoff plants a later per-share point guide with its note and a later net income
+  range with a note for every guided year, and the vintage's climate-demand words, reserves holder and absent theme words.
+
+Seen in the build (method behaviour, not tuned):
+- **CHEAP 168, FAIR 40, RICH 1 of 209 dates;** legacy tiers BUY 123, ACCUMULATE 54, WATCHLIST 32. 2018: FAIR 28, CHEAP 24; 2019: CHEAP 48,
+  FAIR 4; 2020: CHEAP 44, FAIR 8, RICH 1; 2021: CHEAP on all 52.
+- **January-February 2018 (FY17E $1.87, the Q3 2017 range over 383.4M shares):** 30x against a 30.2x median: FAIR.
+- **2018 (FY18E $2.56-2.84):** 20-27x against a 32.2x median of a window whose 2010-2017 earnings are small beside the merged company's;
+  CHEAP and FAIR as the price moves between $56 and $70, BASE +9% to +40%/yr.
+- **2019 (FY19E $3.06-3.07):** 21-25x; CHEAP except 4 FAIR dates near $75, though BASE turns to -24% to -33%/yr on lower commodity revenues.
+- **2020:** FY20E $3.55 from 2020-02-26, then the Q1 2020 outlook's $1.69 and $1.57 as the price falls to $15-45: 18-27x, the 4th-30th
+  percentile; CHEAP except 8 FAIR dates and RICH on 2020-06-05 ($45.35, 26.9x).
+- **2021 (FY21E $2.74-3.33):** 17-19x against a 30x median: CHEAP on every date.
+
+How far each call moves the classes (the 209 dates rebuilt with one encoding changed, classified offline with `retro_tool`'s classifier;
+`sens_oke_1821.py`; no outcome consulted):
+- **no EPS guide from FY2018** (the last full year's EPS): **96 classes** (CHEAP to FAIR 43, CHEAP to RICH 32, FAIR to RICH 20, RICH to
+  CHEAP 1), 97 tiers, 2018-02-28 to 2021-04-23: the largest call (the guides reach the merged company's earnings a year before the history);
+- **a five-year P/E window:** 63 classes (CHEAP to FAIR 30, FAIR to CHEAP 22, CHEAP to RICH 11), 57 tiers;
+- **the window's days before 2014-02-03 at Yahoo's adjusted prices** (without ONE Gas): 44 classes (CHEAP to FAIR 41), 28 tiers, carried;
+- **2010-2013 EPS as the FY2013 10-K reports them** (the FY2014 restatement unused): 38 classes, 74 tiers, carried;
+- **BASE on the latest quarter's net margin growth** instead of revenues: 27 classes (FAIR to CHEAP 20, FAIR to RICH 7), 39 tiers, all in 2018;
+- **FY2017 at a derived $1.90** without its listed items: 10 classes (CHEAP to FAIR 8, CHEAP to RICH 2), 45 tiers;
+- **the Q1 2020 outlook unused** (withdrawn, FY19's $3.07 standing): 1 class (2020-06-05, RICH to CHEAP), no tier;
+- **FY2020 at a derived $2.51**, **the per-share guides replaced by net income over the release's shares**, **2014-2016 at Item 6's EPS -
+  total**: no class (1 tier for the last);
+- **the n/r Distribution signal at its BEAR value:** 9 classes; **at XBULL:** 7 classes; no tier;
+- **every signal at its BEAR value:** 120 classes (CHEAP to RICH 79, FAIR to RICH 39, CHEAP to FAIR 2), no tier; **at its XBULL value:** 19
+  classes (to CHEAP), no tier.
+No tested encoding moves a class after 2021-04-23: the CHEAP dates of May-December 2021 rest on the guides at 17-19x against a ten-year
+median of about 30x. Before that the classes rest on reading the guides (the merged company's earnings reach the guide first), on the
+ten-year window (the 2010-2017 days at the pre-merger, pre-separation earnings), and on the signals.
+
+Judgement calls that could carry hindsight:
+- the guides as current-FY EPS (96 classes without them), over the latest print's diluted shares or per share where stated, and numeric
+  restatements counted as guides of their release;
+- the Q1 2020 outlook read as the guide after the withdrawal in the same release (1 class), and the words "at the low end", "approach the
+  midpoint" and "above the midpoints" given no field;
+- FY2017 (the Tax Act) and FY2020 (the impairments) kept at GAAP by the AAPL FY2002 test (10 and 0 classes at derived figures);
+- the signals (120 and 19 classes at BEAR and XBULL) and BASE on revenues as reported (27 classes), carried from 2008;
+- the carried seams: the restated 2010-2014 beside the as-traded pre-separation prices (38 and 44 classes), and the merger's shares read as
+  dilution in BASE;
+- 2014-2016 at the FY2017 10-K's continuing-operations EPS while the later Item 6 prints totals (no class);
+- ENERGY_TRANSITION out of scope with the climate-demand words quoted, EV and CRYPTO out of scope, DURABLE (label only);
+- the text-layer reading of the slide releases (each figure checked word for word, every year-ago figure against the earlier print);
+- the parts of the filings listed as not read.
+
+The hindsight results for 2018-2021 are in `staging/retrospective/OKE/FINDINGS.md`, "OKE 2018-2021 (hindsight)": hypotheses, never inputs.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are

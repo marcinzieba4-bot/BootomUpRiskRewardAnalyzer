@@ -5,6 +5,7 @@ class and legacy tier, by current-FY EPS and by latest print, per year, plus 3-y
     python3 retro/generators/oke/findings_tables.py 2008,2009
     python3 retro/generators/oke/findings_tables.py 2010,2011,2012,2013
     python3 retro/generators/oke/findings_tables.py 2014,2015,2016,2017
+    python3 retro/generators/oke/findings_tables.py 2018,2019,2020,2021
 
 Run it only after the batch's build, validation outputs, README section and firewall result are committed and pushed, and
 `retro_tool.py outcome` has written the outcomes (retro/README.md, "Adding dates"). Nothing it prints may feed a fact sheet,
@@ -29,6 +30,9 @@ for d in sorted(x for x in glob.glob(os.path.join(REPO, "staging", "retrospectiv
     m = open(os.path.join(d, "model.py"), encoding="utf-8").read()
     eps = eval(re.search(r'^EPS_LABEL\s+= (.+)$', m, re.M).group(1))
     fy = re.search(r"(FY\d{4}E): GAAP net income guidance, the (.+?)'s \$([\d.]+-[\d.]+) a diluted share, midpoint = \$([\d.]+)", eps)
+    if not fy:     # (OKE 2018-2021) a per-share range with its note, or a per-share point
+        fy = (re.search(r"(FY\d{4}E): GAAP net income guidance, the (.+?)'s \$([\d.]+-[\d.]+) a diluted share, midpoint \(.*?\) = \$([\d.]+)", eps)
+              or re.search(r"(FY\d{4}E): GAAP net income guidance, the (.+?)'s \$([\d.]+) a diluted share \(.*?\) = \$([\d.]+)", eps))
     if not fy:     # (OKE 2010-2013) a net income range in millions over a print's diluted shares
         fy = re.search(r"(FY\d{4}E): GAAP net income guidance, the (.+?)'s \$([\d,]+-[\d,]+ million) .*? = \$([\d.]+)", eps)
     if not fy:     # (OKE 2014-2017) a point from the guidance tables, or no guide (the last full year's EPS)

@@ -24,7 +24,7 @@ touching either directory.
   NKE (2008-2026 so far), AVGO (from its 2009-08-06 listing to 2026-10-30 so far), PEP (2008 to 2026-10-30 so far), MSFT
   (2008 to 2026-10-30 so far), XOM (2008 to 2026-10-30 so far), SHW (2008 to 2026-11-06 so far), WMT (2008 to 2026-11-06 so far), RCL (2008 to 2026-11-06 so far), MAR (2008 to 2026-11-03 so far), BKR (2008 to 2017-06-30, then 2019-02-01 to 2026-11-06 so far), PFE (2008 to 2026-11-04 so far), CMCSA (2008 to 2026-11-06 so far), CAT (2008 to 2026-11-06 so far), BMY (2008 to 2026-11-06 so far), NVDA (2008 to 2026-11-06 so far), F (2008-01-04 to 2026-11-06 so far; 2022-01-07 onward was built first at the owner's request, and dates before 2022 are an early era with its
   own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far), SPGI (2008-01-04 to 2026-11-20 so far), CB (2008-01-04 to 2026-11-20 so far), LLY (2008-01-04 to 2026-11-20 so far), UNH (2008-01-04 to 2026-11-20 so far), CRM (2008-01-04 to 2026-11-20 so far), SCHW (2008-01-04 to 2026-11-20 so far), NEE (2008-01-04 to 2026-11-20 so far), NEM (2008-01-04 to 2026-11-27 so far), LYB (from its 2010 share issue: 2012-02-10 to 2026-11-20 so far), CHTR (from its first
-  anchoring year: 2019-02-01 to 2026-11-20 so far), FANG (from its first anchoring year: 2014-02-21 to 2026-11-27 so far), TRGP (from its first full year of EPS: 2012-02-24 to 2026-11-27 so far) and OKE (2008-01-04 to 2017-12-29 so far) sit in `staging/retrospective/` until the owner adds
+  anchoring year: 2019-02-01 to 2026-11-20 so far), FANG (from its first anchoring year: 2014-02-21 to 2026-11-27 so far), TRGP (from its first full year of EPS: 2012-02-24 to 2026-11-27 so far) and OKE (2008-01-04 to 2021-12-31 so far) sit in `staging/retrospective/` until the owner adds
   them to the archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM", "SHW", "WMT", "RCL", "MAR", "BKR", "PFE", "CMCSA", "CAT",
   "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG", "JPM", "V", "SPGI", "CB", "LLY", "UNH", "CRM", "SCHW", "NEE", "NEM", "LYB", "CHTR", "FANG", "TRGP", "OKE"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py`, `mu_signal_model.py`, `v_signal_model.py`, `spgi_signal_model.py` and `lly_signal_model.py` (other branches) files
   and today's profiles in `data/business_profiles.json` (NVDA's, SO's, V's, SPGI's, CB's, LLY's, UNH's, CRM's and NEE's included) are 2026 analyses: never inputs to a retrospective. AVGO did not trade
@@ -789,6 +789,16 @@ touching either directory.
   the Q2 2017 $635-795M divides by that quarter's 214.0M shares (FY17E $3.34; $1.87 on Q3's 383.4M), the merger in as published; dividends
   $0.40 to $0.745; ENERGY_TRANSITION out of scope (no reserves of its own; the TRGP reading, text only), DURABLE; RICH 112, CHEAP 55,
   FAIR 42 of 209 dates (RICH on all of 2014); BASE on net margin moves 77 classes, a five-year window 65, the unrestated 2010-2013 55;
-  built in a new session without opening the 2008-2013 outcomes or findings (retro/README.md, "OKE 2014-2017").
+  built in a new session without opening the 2008-2013 outcomes or findings (retro/README.md, "OKE 2014-2017"). From 2018: the earnings
+  releases are slide images with a text layer, read by label and number (`trow`, each match checked word for word); the ONEOK Partners
+  merger in the figures as published (FY17 on 299.8M shares, the merger and equity issues read as dilution in BASE); EPS from continuing
+  operations each year from the latest filing that reports it (the FY2018-FY2020 Item 6 prints totals, so the statements, 2014-2015 kept);
+  FY2017 ($1.29 with the Tax Act) and FY2020 ($1.42 with the impairments) kept at GAAP by the AAPL FY2002 test; current-FY EPS the GAAP
+  net income guide over the latest print's shares, per share where stated (2020-2021, the Q3 2021 $3.33 midpoint a point); the Q1 2020
+  outlook ($500-900M, impairments in) read as the guide as the release withdraws the February one (1 class otherwise); words and "above
+  the midpoints" no field; dividends $0.77 to $0.935; ENERGY_TRANSITION out of scope with ONEOK as the holder of no reserves and the climate-
+  demand words quoted (text only), EV and CRYPTO out of scope (no 10-K names them), DURABLE; "Medallion Midstream" joins the anachronism
+  list; CHEAP 168, FAIR 40, RICH 1 of 209 dates; no EPS guide moves 96 classes, the signals at BEAR 120; built in a new session without
+  opening the 2008-2017 outcomes or findings (retro/README.md, "OKE 2018-2021").
 - **Never use the owner's personal email** in request headers to external
   services (SEC asks for a contact in the User-Agent).

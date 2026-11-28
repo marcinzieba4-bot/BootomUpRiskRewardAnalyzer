@@ -57,12 +57,22 @@ From 2014 (retro/README.md, "OKE 2014-2017"):
   - from ECOMMERCE's, STREAMING's and ENERGY_TRANSITION's live dates the 'why' quotes their scopes; ENERGY_TRANSITION is out of scope
     (the TRGP and BKR reading: ONEOK Partners holds no reserves), with the vintage's own GHG and reserves words quoted (text only).
 
+From 2018 (retro/README.md, "OKE 2018-2021"):
+  - ONEOK guides net income in dollars and, from the 2020 guidance, diluted EPS too: the per-share range where stated ('eps_guide';
+    a per-share midpoint alone is a point, lo = hi), else net income over the latest print's diluted shares (the KMI rule); a range
+    with a note ('ni_guide_note', e.g. the Q1 2020 outlook given as the release withdraws the February guidance) shows the note;
+  - EV (live 2020-01-01) and CRYPTO (2020-10-21) are out of scope (fuel retail, payments and banks): no FY2017-FY2020 10-K names
+    electric vehicles or crypto ('theme_absent', asserted by the generator; text only); after the ONEOK Partners merger the
+    ENERGY_TRANSITION reading names ONEOK as the holder of no reserves ('theme_holder'), and from the FY2019 10-K its climate-demand
+    risk factor is quoted ('ENERGY_TRANSITION_demand', text only).
+
 Output goes to staging/retrospective/OKE until the series is added to the archive (--out archive/retrospective/OKE).
 
 Usage
   python3 retro/build_oke.py --weekly 2008-01-01 2009-12-31
   python3 retro/build_oke.py --weekly 2010-01-01 2013-12-31
   python3 retro/build_oke.py --weekly 2014-01-01 2017-12-31
+  python3 retro/build_oke.py --weekly 2018-01-01 2021-12-31
   python3 retro/build_oke.py 2008-02-27
 Then: python3 retro/retro_tool.py --archive staging/retrospective run staging/retrospective/OKE/<AS_OF>
 """
@@ -262,6 +272,8 @@ def build(as_of, facts, raw, spx, engine, out):
             eps_now = round((lo + hi) / 2, 3)
             how = f"the {eg['doc']}'s ${money(lo)}-{money(hi)} a diluted share, midpoint" + (
                 f" ({eg['eps_guide_note']})" if eg.get("eps_guide_note") else "")
+            if lo == hi:     # (OKE 2018-2021) a per-share midpoint stated alone: a point
+                how = f"the {eg['doc']}'s ${money(lo)} a diluted share ({eg['eps_guide_note']})"
         else:
             # (OKE 2010-2013) from 2010 ONEOK guides net income attributable to ONEOK in dollars, with no per-share figure: the midpoint
             # over the diluted shares of the latest print public on the guide's date (its own release's where it is in one; the KMI rule)
@@ -273,7 +285,8 @@ def build(as_of, facts, raw, spx, engine, out):
             eps_now = round((lo + hi) / 2 / sh, 3)
             sh_txt = (f"{sh:,.1f}M diluted shares ({eg['shares_print']}'s {shares_raw[eg['shares_print']]:,.3f}M, on the AS_OF basis)"
                       if sh != shares_raw[eg["shares_print"]] else f"{sh:,.3f}M diluted shares ({eg['shares_print']})")
-            how = (f"the {eg['doc']}'s ${lo:,.0f}-{hi:,.0f} million (midpoint ${(lo + hi) / 2:,.1f} million) / {sh_txt}" if lo != hi else
+            how = (f"the {eg['doc']}'s ${lo:,.0f}-{hi:,.0f} million (midpoint ${(lo + hi) / 2:,.1f} million"
+                   + (f"; {eg['ni_guide_note']}" if eg.get("ni_guide_note") else "") + f") / {sh_txt}" if lo != hi else
                    f"the {eg['doc']}'s ${lo:,.0f} million ({eg['ni_guide_note']}) / {sh_txt}")     # (OKE 2014-2017) a point
             guide_ids.append(sp[0]["source"])
         eps_label = f"{fy_e}: GAAP net income guidance, {how} = ${money(eps_now)}" + excluded_tail
@@ -349,7 +362,9 @@ def build(as_of, facts, raw, spx, engine, out):
     live = sorted(((t["live_from"], k, t["scope"]) for k, t in retro_tool.load_taxonomy()["themes"].items() if t["live_from"] <= as_of))
     assert [k for _, k, _ in live] in (["OFFSHORE"], ["OFFSHORE", "CLOUD"], ["OFFSHORE", "CLOUD", "ECOMMERCE"],
                                        ["OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING"],
-                                       ["OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING", "ENERGY_TRANSITION"]), \
+                                       ["OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING", "ENERGY_TRANSITION"],
+                                       ["OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING", "ENERGY_TRANSITION", "EV"],      # (OKE 2018-2021)
+                                       ["OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING", "ENERGY_TRANSITION", "EV", "CRYPTO"]), \
         (as_of, "a live theme needs its scope reading for OKE first", live)
     stage, watch, factors = "none", [], []
     sig_name, trigger = "Disruption theme: none in scope", "No live disruption theme covers gas utilities or midstream"
@@ -370,14 +385,23 @@ def build(as_of, facts, raw, spx, engine, out):
         tq, keys = h.get("theme_quotes", {}), [k for _, k, _ in live]
         if "ENERGY_TRANSITION" in keys:
             assert "ENERGY_TRANSITION_ghg" in tq and "ENERGY_TRANSITION_reserves" in tq, (as_of, "the vintage's GHG and reserves words")
-            why += (f"; ENERGY_TRANSITION's reserves and refining are out of scope (the TRGP and BKR reading): ONEOK Partners holds no "
+            holder = h.get("theme_holder", "ONEOK Partners")     # (OKE 2018-2021) after the merger, ONEOK itself
+            why += (f"; ENERGY_TRANSITION's reserves and refining are out of scope (the TRGP and BKR reading): {holder} holds no "
                     f"reserves of its own and refines nothing ('{tq['ENERGY_TRANSITION_reserves']}'); its greenhouse gas risk factor: "
                     f"'{tq['ENERGY_TRANSITION_ghg']}' (text only)")
+            if "ENERGY_TRANSITION_demand" in tq:    # (OKE 2018-2021) the FY2019 and FY2020 10-Ks' climate-demand risk factor, text only
+                why += f"; its climate-demand risk factor: '{tq['ENERGY_TRANSITION_demand']}' (text only: the volumes are its producers')"
+        if "EV" in keys:        # (OKE 2018-2021) EV's fuel retail and CRYPTO's payments and banks name no midstream business
+            assert {"electric vehicle"} | ({"crypto"} if "CRYPTO" in keys else set()) <= set(h.get("theme_absent", [])), \
+                (as_of, "the vintage must say which theme words its 10-K does not use")
+            why += ("; " + ("EV and CRYPTO are" if "CRYPTO" in keys else "EV is") + " out of scope: the 10-K names "
+                    + ("neither electric vehicles nor crypto" if "CRYPTO" in keys else "no electric vehicles") + " (text only)")
         if "CLOUD_words" in tq:
             why += f"; the 10-K's one cloud sentence is an accounting standard: '{tq['CLOUD_words']}' (text only)"
         theme_summary = ("no theme in the registry is live for a midstream company on this date (CLOUD and OFFSHORE are scoped to IT, "
                          "ECOMMERCE to retail, STREAMING to TV" + (", ENERGY_TRANSITION to reserves and refining" if "ENERGY_TRANSITION" in keys
-                                                                    else "") + ")")
+                                                                    else "") + (", EV to fuel retail" if "EV" in keys else "")
+                         + (", CRYPTO to payments and banks" if "CRYPTO" in keys else "") + ")")
     kind, pit_risk = "DURABLE", 2
     cat3 = (f"(3) The {fy_now} outlook — GAAP EPS ${money(eps_now)} ({how}); no revenue or margin guide in numbers" if eg else
             f"(3) The {fy_now} outlook — none yet: ONEOK guides net income per diluted share, not revenue or a margin")

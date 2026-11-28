@@ -1,0 +1,151 @@
+
+════════════════════════════════════════════════════════════════════════
+  OKE  ·  ONEOK, Inc.  ·  $67.71  ·  RETROSPECTIVE as of 2019-02-15
+  Signal: ◎ ACCUMULATE   Ratio B: 0.80x   Adj gap: +1.22  [UNDERVALUED]
+  Point-in-time: 17 sources, latest published 2019-02-15; latest print Q3 2018 (Oct 30)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2018E revenues, USD bn  →  FY2020E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2018E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Natural Gas Gathering an  $     2.0  $   2.0  $   1.9      +0.0      -0.1
+    +27.3% revenues in FY17
+  Natural Gas Liquids       $    11.7  $  11.7  $  11.0      +0.0      -0.7
+    +39.6% revenues in FY17
+  Natural Gas Pipelines     $     0.5  $   0.5  $   0.5      +0.0      +0.0
+    +10.1% revenues in FY17
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    14.2  $  14.2  $  13.4      +0.0      -0.8
+  FY2018E = FY17 $12.17B × (1 + 16.8%: no FY18 revenue guide in numbers, Q3 2018 revenues as reported, applied to the year (no FY18 revenue guide)); split pro rata to FY17 segment sales to unaffiliated customers (FY2017 10-K segment note; eliminations and Other left out)
+  Q3 2018 (Oct 30): revenues $3.39B +16.8%; net margin +23.1%, Distribution operating income n/r;
+  operating margin 14.60% (+240.0bp); pre-tax margin 12.28% (+321.0bp); EPS $0.75 vs $0.43
+  Activity: revenues $3,393.9M vs $2,906.4M a year earlier (2018 on ASC 606, 2017 as first reported: a seam, as published); net margin $833.1M vs $677.0M (revenues less cost of sales and fuel); Distribution operating income n/r (the natural gas distribution business separated as ONE Gas on January 31, 2014); operating income $495.5M, income before income taxes $416.9M; cash and cash equivalents $84.5M at the quarter's end (consolidated); EPS diluted $0.75 vs $0.43 (no discontinued operations)
+  FY18: no revenue or margin guide in numbers (BASE takes Q3 2018 revenue growth as reported); EPS $2.844 from the Q3 2018 release: 'ONEOK’s full-year 2018 net income is expected to be in the range of $1,140 million to $1,220 million, compared with the range of $1,020 million to $1,150 million announced July 31, 2018.'
+
+  FY2018E EPS check:  $14.2B × 8.6% pre-tax × (1−43.0%) ÷ 0.415B  =  $1.67  (FY2018E: GAAP net income guidance, the Q3 2018 release's $1,140-1,220 million (midpoint $1,180.0 million) / 414.847M diluted shares (Q3 2018) = $2.844)
+  FY2020E BEAR check: $14.2B × 8.6% ÷ 0.447B  =  $1.55  (scenario $0.63)
+  FY2020E BULL check: $13.4B × 9.0% ÷ 0.447B  =  $1.53  (scenario $3.63)
+  Every 1pp of pre-tax margin ≈ $0.20 EPS ≈ $6/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Net margin growth                   -8.0%    ≥5.0%   ≥17.0%   ≥38.0%    +23.1%  ▲ BULL  ███░
+  Distribution op. income growth     -88.0%  ≥-42.0%    ≥3.0%   ≥57.0%       n/r  ◦ BASE  ██░░
+  Revenue growth                     -38.0%   ≥-6.0%   ≥26.0%  ≥261.0%    +16.8%  ◦ BASE  ██░░
+  Operating margin change           -1350.0bp  ≥-720.0bp  ≥-100.0bp  ≥430.0bp  +240.0bp  ▲ BULL  ███░
+  Pre-tax margin change             -1150.0bp  ≥-590.0bp  ≥-30.0bp  ≥620.0bp  +321.0bp  ▲ BULL  ███░
+  Disruption theme: none in scope    +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.50 / 4.00
+  Market composite:   1.76 / 4.00  (back-solved from $68 + 15% hurdle)
+  SCA adjustment:    +0.28  ·  EPP-distance adj +0.20  →  Adj composite 2.98  →  Gap +1.22  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY17 revenues +36.5%; Q3 net margin +23.1%, operating margin 14.60% (+240bp)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 23.8x FY18E vs a 32.2x 10-yr median (21st percentile of its own range)  (+0.48 × 25%  =  +0.120)
+    +  Growth vs own history: no FY18 revenue guide in numbers, Q3 2018 revenues as reported +16.8% vs a 14.9% 9-yr median  (+0.19 × 20%  =  +0.038)
+    +  FY17 free cash flow $0.80B (consolidated), dividend $3.44 a year, no repurchase of common stock in 2017 (the FY2017 10-K's statement of cash flows has no repurchase line); issuance of common stock $471.4M  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Net margin growth                   +23.1%     -8.0%  -31.1%  NGL spreads, volumes and storage marg…
+  Distribution op. income growth         n/r    -88.0%     n/r  Rate cases lag costs; warm weather cu…
+  Revenue growth                      +16.8%    -38.0%  -54.8%  Commodity prices and marketed volumes…
+  Operating margin change           +240.0bp  -1350.0bp  -1590.0bp  Costs outrun the margin on sales
+  Pre-tax margin change             +321.0bp  -1150.0bp  -1471.0bp  Interest and charges as earnings fall
+  Disruption theme: none in scope     +2.0/4    +1.0/4  -1.0/4  No live disruption theme covers gas u…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$43  (model)  /  $10 (defined)
+  Bear probability (proxy model):  9.3%
+
+  KEY TRIGGER: Net margin growth went from +23.6% (Q2 2018) to +23.1% (Q3 2018);
+  the bear case needs Distribution (n/r now) and revenues
+  (+16.8% now) to give way as well. Fee-based NGL, gathering and pipeline services carry part of the cash, commodity-priced
+  processing margins and NGL spreads the rest; the bear needs both to give way.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $2.84  (FY2018E: GAAP net income guidance, the Q3 2018 release's $1,140-1,220 million (midpoint $1,180.0 million) / 414.847M diluted shares (Q3 2018) = $2.844)
+  Min viable P/E at panic:          24x  [median of calendar-year P/E lows: 2009 6.5x, 2010 30.8x, 2011 24.1x, 2012 28.2x, 2013 30.1x, 2014 29.1x, 2015 15.9x, 2016 11.7x, 2017 36.8x, 2018 17.9x, 2019 19.1x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $68/share
+  Current $68 vs Updated EPP $68:  -1%  ✓ BELOW panic floor — deep-value zone
+  Bear $10 vs Updated EPP $68:  -85%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.20 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Net margin growth                            5.0      -18.1   BASE floor (vs +23 now)
+  Distribution op. income growth             -42.0        n/r   BASE floor (not reported now)
+  Revenue growth                              -6.0      -22.8   BASE floor (vs +17 now)
+  Operating margin change                   -720.0     -960.0   BASE floor (vs +240 now)
+  Pre-tax margin change                     -590.0     -911.0   BASE floor (vs +321 now)
+  Disruption theme: none in scope              2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $2.84 × (1+11.0%)² = $3.50
+  At 32x P/E (conservative):  $112/share
+  + Cumul. dividends (2yr):  +$7.09/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $112  (▲44 from $68)
+  Conservative total return:  +76% over 2yr  = +38%/yr
+
+  At 23.8x the multiple is already near its 32x median, so the conservative
+  case is a growth question: breakeven at 32x needs FY2020E EPS of $1.89,
+  i.e. -18.4%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $50.26  –  $71.99  (at 80th pct of range)
+  Annual dividend:      $3.44/share  (yield 5.1%)
+  Realized vol (1yr):   23% annualized
+  Beta vs broad market: 0.85
+  1-sigma range (1yr):  $52  –  $83  ($68 ± 23%)
+  2-sigma range (1yr):  $37  –  $99
+  ────────────────────────────────────────────────────────────
+  Bear $10 requires:  ~3.7σ price move  (unusual — requires fundamental break)
+  A midstream service provider with a 0.8 beta: the stock is +33% off its December
+  low while Net margin growth went from +23.6% (Q2 2018) to +23.1% (Q3 2018).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        0.63  15.3x  $     10     9.3%     32.2%   -23.0pp  EPS -52.9%/yr (worst year FY08-FY17, capped at 0%); P/E to its 10th pct
+  BASE        3.63  32.2x  $    117    32.4%     50.5%   -18.2pp  EPS +13.0%/yr (Q3 revenues + margin + buyback); P/E at its 10-yr median
+  BULL        3.63  38.5x  $    140    49.1%     14.5%   +34.6pp  EPS +13.0%/yr (FY08-FY17 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL       6.03  42.2x  $    254     9.3%      2.7%    +6.5pp  EPS +45.6%/yr (best 2-yr run FY08-FY17, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $131  /  Market EV: $90  /  Current: $68
+  Conservative EV (2yr, ④): $112 + $7.09 divs = $119 total value
+  Downside (→ Bear $10): 85.2%   Upside (→ Bull $140): 106.8%   Ratio B 0.80x  →  ◎ ACCUMULATE
+
+  To earn the 15%/yr hurdle from $68 the market needs $90 in two years —
+  at or below the BASE case. That is a market composite of 1.76 against a model
+  read of 2.98: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.80x      -1%    +1.22  UNDERVALUED / ACCUMULATE
+  Multiples one band richer (p25/p75/p90/max)     0.61x      -1%    +1.38  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     1.21x      -1%    +0.86  UNDERVALUED / WATCHLIST
+  Scenario EPS +1.5pp/yr                          0.76x      -1%    +1.25  UNDERVALUED / ACCUMULATE
+  Scenario EPS -1.5pp/yr                          0.86x      -1%    +1.18  UNDERVALUED / ACCUMULATE
+  Structural read +0.30 (bullish SCA)             0.80x      -1%    +1.52  UNDERVALUED / ACCUMULATE
+  EPP P/E +3 turns (softer floor)                 0.80x     -12%    +1.22  UNDERVALUED / ACCUMULATE
+  Hurdle 10%/yr instead of 15%                    0.80x      -1%    +1.31  UNDERVALUED / ACCUMULATE
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 and full-year print, with the 10-K (late February) — the next read on net margin (+23.1% now) and Distribution (n/r now)
+  (2) Margins — operating +240.0bp and pre-tax +321.0bp in Q3 2018: charges, interest and commodity prices
+  (3) The FY18 outlook — GAAP EPS $2.844 (the Q3 2018 release's $1,140-1,220 million (midpoint $1,180.0 million) / 414.847M diluted shares (Q3 2018)); no revenue or margin guide in numbers
+  (4) Free cash flow — FY17 cash provided by operating activities $1,315.4M less capital expenditures $512.4M (FY2017 10-K, consolidated)
+  (5) Capital return at 24x — no repurchase of common stock in 2017 (the FY2017 10-K's statement of cash flows has no repurchase line); issuance of common stock $471.4M: management's own read of the multiple
+  ◎ ACCUMULATE  |  EPP floor $68  |  ADD below ~$99  |  TRIM above $140
+════════════════════════════════════════════════════════════════════════
+

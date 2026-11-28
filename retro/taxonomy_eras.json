@@ -2373,6 +2373,12 @@
     "first_seen": "2023-05-15",
     "approx": true,
     "note": "the later ONEOK acquisition (OKE); earliest hit of EDGAR full-text search for filings under CIK 1039684 (from 2001), first page of results: the 8-K 0001193125-23-144039 filed 2023-05-15; not read beyond the search result"
+   },
+   {
+    "term": "Medallion Midstream",
+    "first_seen": "2024-08-30",
+    "approx": true,
+    "note": "a later ONEOK acquisition (OKE 2018-2021); earliest hit of EDGAR full-text search for filings under CIK 1039684 (from 2001), first page of results: the 8-K 0001213900-24-074576 filed 2024-08-30; not read beyond the search result (EnLink Midstream, the other company of that 8-K, has a hit of 2017-06-20 and is not added)"
    }
   ]
  }

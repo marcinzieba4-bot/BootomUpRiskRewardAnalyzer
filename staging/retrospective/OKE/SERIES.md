@@ -527,3 +527,212 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2017-12-15 | $52.16 | ONEOK Q3 2017 results | 2.00 | +0.45 | 0.97x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +53.3% | +30.8pp | +30.0% | ✗ |
 | 2017-12-22 | $53.21 | ONEOK Q3 2017 results | 2.00 | +0.41 | 1.01x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +54.0% | +30.1pp | +28.1% | ✗ |
 | 2017-12-29 | $53.45 | ONEOK Q3 2017 results | 2.00 | +0.41 | 1.02x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +54.3% | +29.3pp | +28.2% | ✗ |
+| 2018-01-05 | $56.06 | ONEOK Q3 2017 results | 2.00 | +0.29 | 1.14x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +48.7% | +26.9pp | +22.9% | ✗ |
+| 2018-01-12 | $58.67 | ONEOK Q3 2017 results | 2.00 | +0.17 | 1.27x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +40.3% | +19.2pp | +18.0% | ✗ |
+| 2018-01-19 | $58.32 | ONEOK Q3 2017 results | 2.00 | +0.19 | 1.25x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +43.9% | +21.7pp | +19.2% | ✗ |
+| 2018-01-26 | $60.15 | ONEOK Q3 2017 results | 2.00 | +0.07 | 1.35x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +36.0% | +17.5pp | +15.9% | ✗ |
+| 2018-02-02 | $57.75 | ONEOK Q3 2017 results | 2.00 | +0.22 | 1.22x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +41.7% | +21.0pp | +21.1% | ✗ |
+| 2018-02-09 | $54.33 | ONEOK Q3 2017 results | 2.00 | +0.38 | 1.06x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +51.5% | +20.3pp | +29.1% | ✗ |
+| 2018-02-16 | $56.91 | ONEOK Q3 2017 results | 2.00 | +0.26 | 1.18x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +47.5% | +19.9pp | +23.6% | ✗ |
+| 2018-02-23 | $58.02 | ONEOK Q3 2017 results | 2.00 | +0.21 | 1.23x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +44.8% | +19.5pp | +21.5% | ✗ |
+| 2018-02-28 | $56.33 | ONEOK Q4 2017 results | 2.15 | +1.30 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +30.8% | +17.8pp | +25.3% | ✓ |
+| 2018-03-09 | $57.31 | ONEOK Q4 2017 results | 2.15 | +1.29 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -21.4% | -23.6pp | +23.0% | ✗ |
+| 2018-03-16 | $57.81 | ONEOK Q4 2017 results | 2.15 | +1.28 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -44.7% | -35.7pp | +20.7% | ✗ |
+| 2018-03-23 | $56.75 | ONEOK Q4 2017 results | 2.15 | +1.29 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -53.2% | -43.9pp | +21.3% | ✗ |
+| 2018-03-29 | $56.92 | ONEOK Q4 2017 results | 2.15 | +1.29 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -51.0% | -51.5pp | +19.6% | ✗ |
+| 2018-04-06 | $56.69 | ONEOK Q4 2017 results | 2.15 | +1.29 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -46.6% | -52.8pp | +18.1% | ✗ |
+| 2018-04-13 | $58.51 | ONEOK Q4 2017 results | 2.15 | +1.27 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -38.2% | -46.3pp | +13.2% | ✗ |
+| 2018-04-20 | $59.54 | ONEOK Q4 2017 results | 2.15 | +1.25 | 0.35x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -41.0% | -50.7pp | +9.9% | ✗ |
+| 2018-04-27 | $59.88 | ONEOK Q4 2017 results | 2.15 | +1.25 | 0.36x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -40.5% | -52.4pp | +7.9% | ✗ |
+| 2018-05-03 | $62.84 | ONEOK Q1 2018 results | 2.50 | +0.81 | 1.03x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -44.3% | -56.2pp | +1.8% | ✗ |
+| 2018-05-11 | $65.82 | ONEOK Q1 2018 results | 2.50 | +0.73 | 1.15x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -41.6% | -52.8pp | -4.1% | ✗ |
+| 2018-05-18 | $66.27 | ONEOK Q1 2018 results | 2.50 | +0.72 | 1.17x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -36.4% | -49.2pp | -5.8% | ✗ |
+| 2018-05-25 | $65.89 | ONEOK Q1 2018 results | 2.50 | +0.73 | 1.15x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -34.3% | -46.9pp | -6.0% | ✗ |
+| 2018-06-01 | $68.51 | ONEOK Q1 2018 results | 2.50 | +0.65 | 1.27x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | -34.0% | -49.7pp | -10.4% | ✗ |
+| 2018-06-08 | $68.45 | ONEOK Q1 2018 results | 2.50 | +0.65 | 1.27x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | -19.5% | -39.6pp | -10.9% | ✗ |
+| 2018-06-15 | $67.78 | ONEOK Q1 2018 results | 2.50 | +0.68 | 1.23x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | -35.8% | -50.1pp | -10.8% | ✗ |
+| 2018-06-22 | $69.99 | ONEOK Q1 2018 results | 2.50 | +0.60 | 1.34x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -38.6% | -55.7pp | -14.5% | ✗ |
+| 2018-06-29 | $69.83 | ONEOK Q1 2018 results | 2.50 | +0.60 | 1.33x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -44.3% | -60.6pp | -15.3% | ✗ |
+| 2018-07-06 | $71.21 | ONEOK Q1 2018 results | 2.50 | +0.54 | 1.40x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -50.3% | -69.5pp | -17.8% | ✗ |
+| 2018-07-13 | $71.40 | ONEOK Q1 2018 results | 2.50 | +0.54 | 1.41x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -52.8% | -69.4pp | -19.2% | ✗ |
+| 2018-07-20 | $69.93 | ONEOK Q1 2018 results | 2.50 | +0.60 | 1.34x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -49.5% | -69.4pp | -18.7% | ✗ |
+| 2018-07-27 | $70.12 | ONEOK Q1 2018 results | 2.50 | +0.59 | 1.35x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -49.9% | -68.8pp | -20.1% | ✗ |
+| 2018-08-02 | $68.50 | ONEOK Q2 2018 results | 2.50 | +0.47 | 1.48x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -47.6% | -67.1pp | -19.2% | ✗ |
+| 2018-08-10 | $68.90 | ONEOK Q2 2018 results | 2.50 | +0.46 | 1.51x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -45.7% | -68.2pp | -20.9% | ✗ |
+| 2018-08-17 | $67.52 | ONEOK Q2 2018 results | 2.50 | +0.51 | 1.42x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -46.4% | -68.9pp | -20.5% | ✗ |
+| 2018-08-24 | $67.49 | ONEOK Q2 2018 results | 2.50 | +0.51 | 1.42x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -49.0% | -72.1pp | -21.7% | ✗ |
+| 2018-08-31 | $65.91 | ONEOK Q2 2018 results | 2.50 | +0.57 | 1.34x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | -46.5% | -71.1pp | -20.9% | ✗ |
+| 2018-09-07 | $65.84 | ONEOK Q2 2018 results | 2.50 | +0.58 | 1.33x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | -48.4% | -71.4pp | -22.0% | ✗ |
+| 2018-09-14 | $66.39 | ONEOK Q2 2018 results | 2.50 | +0.55 | 1.36x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | -48.0% | -68.2pp | -24.1% | ✗ |
+| 2018-09-21 | $69.11 | ONEOK Q2 2018 results | 2.50 | +0.44 | 1.52x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -51.3% | -67.1pp | -28.5% | ✗ |
+| 2018-09-28 | $67.79 | ONEOK Q2 2018 results | 2.50 | +0.50 | 1.44x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -51.0% | -69.8pp | -28.5% | ✗ |
+| 2018-10-05 | $68.61 | ONEOK Q2 2018 results | 2.50 | +0.47 | 1.49x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -49.3% | -71.2pp | -30.7% | ✗ |
+| 2018-10-12 | $65.02 | ONEOK Q2 2018 results | 2.50 | +0.62 | 1.29x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | -44.1% | -75.8pp | -28.1% | ✗ |
+| 2018-10-19 | $67.79 | ONEOK Q2 2018 results | 2.50 | +0.50 | 1.44x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -47.7% | -75.5pp | -32.2% | ✗ |
+| 2018-10-26 | $63.34 | ONEOK Q2 2018 results | 2.50 | +0.68 | 1.19x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | -42.1% | -74.2pp | -28.8% | ✗ |
+| 2018-11-01 | $64.81 | ONEOK Q3 2018 results | 2.50 | +1.27 | 0.76x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -42.7% | -66.2pp | -31.5% | ✗ |
+| 2018-11-09 | $63.09 | ONEOK Q3 2018 results | 2.50 | +1.29 | 0.72x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -38.8% | -70.5pp | -31.1% | ✗ |
+| 2018-11-16 | $62.20 | ONEOK Q3 2018 results | 2.50 | +1.30 | 0.70x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -36.3% | -72.8pp | -31.3% | ✗ |
+| 2018-11-23 | $59.10 | ONEOK Q3 2018 results | 2.50 | +1.35 | 0.62x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -28.2% | -68.2pp | -29.0% | ✗ |
+| 2018-11-30 | $61.43 | ONEOK Q3 2018 results | 2.50 | +1.32 | 0.67x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -29.8% | -65.2pp | -32.6% | ✗ |
+| 2018-12-07 | $59.99 | ONEOK Q3 2018 results | 2.50 | +1.34 | 0.64x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -20.7% | -65.0pp | -32.0% | ✗ |
+| 2018-12-14 | $60.19 | ONEOK Q3 2018 results | 2.50 | +1.34 | 0.64x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -21.2% | -65.5pp | -33.3% | ✗ |
+| 2018-12-21 | $53.90 | ONEOK Q3 2018 results | 2.50 | +1.42 | 0.52x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -13.4% | -71.0pp | -26.7% | ✗ |
+| 2018-12-28 | $52.98 | ONEOK Q3 2018 results | 2.50 | +1.43 | 0.51x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -13.8% | -68.6pp | -26.6% | ✗ |
+| 2019-01-04 | $56.65 | ONEOK Q3 2018 results | 2.50 | +1.38 | 0.57x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -21.0% | -71.6pp | -32.4% | ✗ |
+| 2019-01-11 | $59.80 | ONEOK Q3 2018 results | 2.50 | +1.34 | 0.63x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -18.9% | -69.5pp | -37.2% | ✗ |
+| 2019-01-18 | $63.19 | ONEOK Q3 2018 results | 2.50 | +1.29 | 0.71x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -18.6% | -63.8pp | -41.6% | ✗ |
+| 2019-01-25 | $62.44 | ONEOK Q3 2018 results | 2.50 | +1.30 | 0.69x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -22.1% | -71.0pp | -41.7% | ✗ |
+| 2019-02-01 | $65.16 | ONEOK Q3 2018 results | 2.50 | +1.27 | 0.75x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -27.3% | -70.8pp | -45.1% | ✗ |
+| 2019-02-08 | $65.02 | ONEOK Q3 2018 results | 2.50 | +1.27 | 0.73x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -21.9% | -70.5pp | -46.0% | ✗ |
+| 2019-02-15 | $67.71 | ONEOK Q3 2018 results | 2.50 | +1.22 | 0.80x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -22.5% | -68.2pp | -49.2% | ✗ |
+| 2019-02-22 | $67.87 | ONEOK Q3 2018 results | 2.50 | +1.22 | 0.80x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -21.3% | -64.0pp | -49.9% | ✗ |
+| 2019-02-27 | $65.15 | ONEOK Q4 2018 results | 2.30 | +0.43 | 0.75x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -20.7% | -61.0pp | -48.5% | ✗ |
+| 2019-03-08 | $65.58 | ONEOK Q4 2018 results | 2.30 | +0.42 | 0.76x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -13.3% | -56.5pp | -49.5% | ✗ |
+| 2019-03-15 | $66.85 | ONEOK Q4 2018 results | 2.30 | +0.40 | 0.80x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -12.3% | -56.8pp | -50.0% | ✗ |
+| 2019-03-22 | $69.01 | ONEOK Q4 2018 results | 2.30 | +0.37 | 0.84x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -19.1% | -63.7pp | -50.8% | ✗ |
+| 2019-03-29 | $69.84 | ONEOK Q4 2018 results | 2.30 | +0.36 | 0.86x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -17.1% | -61.2pp | -50.6% | ✗ |
+| 2019-04-05 | $70.54 | ONEOK Q4 2018 results | 2.30 | +0.35 | 0.88x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -17.2% | -62.0pp | -50.3% | ✗ |
+| 2019-04-12 | $70.60 | ONEOK Q4 2018 results | 2.30 | +0.35 | 0.88x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -17.5% | -63.3pp | -49.7% | ✗ |
+| 2019-04-18 | $69.14 | ONEOK Q4 2018 results | 2.30 | +0.37 | 0.84x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -14.7% | -62.5pp | -48.1% | ✗ |
+| 2019-04-26 | $68.73 | ONEOK Q4 2018 results | 2.30 | +0.38 | 0.83x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -15.8% | -62.0pp | -47.0% | ✗ |
+| 2019-05-02 | $66.85 | ONEOK Q1 2019 results | 2.15 | +0.32 | 0.77x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -10.6% | -57.8pp | -44.9% | ✗ |
+| 2019-05-10 | $67.22 | ONEOK Q1 2019 results | 2.15 | +0.32 | 0.78x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -8.7% | -57.7pp | -44.4% | ✗ |
+| 2019-05-17 | $68.17 | ONEOK Q1 2019 results | 2.15 | +0.30 | 0.80x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -8.4% | -57.8pp | -44.6% | ✗ |
+| 2019-05-24 | $65.66 | ONEOK Q1 2019 results | 2.15 | +0.35 | 0.74x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -6.3% | -58.5pp | -41.9% | ✗ |
+| 2019-05-31 | $63.62 | ONEOK Q1 2019 results | 2.15 | +0.38 | 0.69x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -5.4% | -62.2pp | -39.7% | ✗ |
+| 2019-06-07 | $65.99 | ONEOK Q1 2019 results | 2.15 | +0.34 | 0.73x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -5.2% | -55.9pp | -41.4% | ✗ |
+| 2019-06-14 | $64.46 | ONEOK Q1 2019 results | 2.15 | +0.37 | 0.70x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -2.5% | -53.4pp | -39.6% | ✗ |
+| 2019-06-21 | $68.94 | ONEOK Q1 2019 results | 2.15 | +0.29 | 0.81x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -8.6% | -55.6pp | -43.0% | ✗ |
+| 2019-06-28 | $68.81 | ONEOK Q1 2019 results | 2.15 | +0.29 | 0.80x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -8.7% | -58.4pp | -42.2% | ✗ |
+| 2019-07-05 | $70.28 | ONEOK Q1 2019 results | 2.15 | +0.27 | 0.84x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -7.8% | -56.9pp | -42.9% | ✗ |
+| 2019-07-12 | $71.30 | ONEOK Q1 2019 results | 2.15 | +0.25 | 0.87x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -9.8% | -58.9pp | -42.9% | ✗ |
+| 2019-07-19 | $68.53 | ONEOK Q1 2019 results | 2.15 | +0.30 | 0.80x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -15.9% | -62.7pp | -39.9% | ✗ |
+| 2019-07-26 | $68.49 | ONEOK Q1 2019 results | 2.15 | +0.30 | 0.80x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -10.6% | -60.3pp | -39.1% | ✗ |
+| 2019-08-01 | $70.99 | ONEOK Q2 2019 results | 2.15 | +0.20 | 0.86x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -15.0% | -67.6pp | -40.7% | ✗ |
+| 2019-08-09 | $69.05 | ONEOK Q2 2019 results | 2.15 | +0.23 | 0.81x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -14.3% | -69.7pp | -38.3% | ✗ |
+| 2019-08-16 | $69.30 | ONEOK Q2 2019 results | 2.15 | +0.23 | 0.82x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -14.6% | -73.2pp | -37.8% | ✗ |
+| 2019-08-23 | $67.41 | ONEOK Q2 2019 results | 2.15 | +0.25 | 0.77x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -11.8% | -72.8pp | -35.4% | ✗ |
+| 2019-08-30 | $71.28 | ONEOK Q2 2019 results | 2.15 | +0.20 | 0.87x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -15.1% | -73.6pp | -38.2% | ✗ |
+| 2019-09-06 | $71.83 | ONEOK Q2 2019 results | 2.15 | +0.19 | 0.89x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -15.6% | -71.4pp | -38.0% | ✗ |
+| 2019-09-13 | $74.48 | ONEOK Q2 2019 results | 2.15 | -0.06 | 0.97x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -18.3% | -70.3pp | -39.6% | ✗ |
+| 2019-09-20 | $75.77 | ONEOK Q2 2019 results | 2.15 | -0.09 | 1.01x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -20.2% | -69.5pp | -39.9% | ✗ |
+| 2019-09-27 | $73.30 | ONEOK Q2 2019 results | 2.15 | +0.17 | 0.93x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -9.5% | -63.2pp | -37.1% | ✗ |
+| 2019-10-04 | $72.03 | ONEOK Q2 2019 results | 2.15 | +0.19 | 0.89x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -6.3% | -55.7pp | -35.1% | ✗ |
+| 2019-10-11 | $69.51 | ONEOK Q2 2019 results | 2.15 | +0.22 | 0.82x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -0.2% | -50.8pp | -31.8% | ✗ |
+| 2019-10-18 | $69.20 | ONEOK Q2 2019 results | 2.15 | +0.23 | 0.81x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +5.0% | -48.9pp | -30.5% | ✗ |
+| 2019-10-25 | $71.55 | ONEOK Q2 2019 results | 2.15 | +0.19 | 0.88x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +2.5% | -52.3pp | -31.8% | ✗ |
+| 2019-10-31 | $69.83 | ONEOK Q3 2019 results | 2.10 | +0.07 | 0.83x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +3.1% | -52.0pp | -29.2% | ✗ |
+| 2019-11-08 | $70.48 | ONEOK Q3 2019 results | 2.10 | +0.06 | 0.85x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +2.7% | -52.8pp | -28.7% | ✗ |
+| 2019-11-15 | $71.29 | ONEOK Q3 2019 results | 2.10 | +0.06 | 0.86x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -0.6% | -54.2pp | -28.7% | ✗ |
+| 2019-11-22 | $71.63 | ONEOK Q3 2019 results | 2.10 | +0.05 | 0.87x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -3.1% | -57.1pp | -28.2% | ✗ |
+| 2019-11-29 | $71.05 | ONEOK Q3 2019 results | 2.10 | +0.06 | 0.85x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -1.6% | -53.0pp | -27.0% | ✗ |
+| 2019-12-06 | $71.59 | ONEOK Q3 2019 results | 2.10 | +0.05 | 0.87x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -4.5% | -53.8pp | -26.9% | ✗ |
+| 2019-12-13 | $73.17 | ONEOK Q3 2019 results | 2.10 | +0.03 | 0.91x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -7.5% | -58.1pp | -27.9% | ✗ |
+| 2019-12-20 | $75.19 | ONEOK Q3 2019 results | 2.10 | -0.20 | 0.97x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -14.9% | -60.3pp | -29.4% | ✗ |
+| 2019-12-27 | $75.71 | ONEOK Q3 2019 results | 2.10 | -0.21 | 0.99x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -11.6% | -63.0pp | -29.5% | ✗ |
+| 2020-01-03 | $76.58 | ONEOK Q3 2019 results | 2.10 | -0.23 | 1.02x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -11.9% | -63.6pp | -29.8% | ✗ |
+| 2020-01-10 | $75.53 | ONEOK Q3 2019 results | 2.10 | -0.21 | 0.98x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -9.6% | -56.0pp | -28.3% | ✗ |
+| 2020-01-17 | $77.17 | ONEOK Q3 2019 results | 2.10 | -0.24 | 1.04x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -9.2% | -52.6pp | -29.4% | ✗ |
+| 2020-01-24 | $74.84 | ONEOK Q3 2019 results | 2.10 | -0.20 | 0.96x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -12.9% | -50.2pp | -26.8% | ✗ |
+| 2020-01-31 | $74.87 | ONEOK Q3 2019 results | 2.10 | -0.20 | 0.96x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -10.8% | -51.7pp | -26.4% | ✗ |
+| 2020-02-07 | $75.36 | ONEOK Q3 2019 results | 2.10 | -0.20 | 0.98x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -6.1% | -44.2pp | -26.3% | ✗ |
+| 2020-02-14 | $76.98 | ONEOK Q3 2019 results | 2.10 | -0.25 | 1.03x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -8.5% | -42.0pp | -27.3% | ✗ |
+| 2020-02-21 | $77.06 | ONEOK Q3 2019 results | 2.10 | -0.25 | 1.04x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -10.1% | -43.7pp | -27.0% | ✗ |
+| 2020-02-26 | $73.29 | ONEOK Q4 2019 results | 2.15 | +0.49 | 0.24x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -2.5% | -46.7pp | -22.9% | ✗ |
+| 2020-03-06 | $61.21 | ONEOK Q4 2019 results | 2.15 | +0.87 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +24.0% | -25.1pp | -7.1% | ✗ |
+| 2020-03-13 | $30.72 | ONEOK Q4 2019 results | 2.15 | +1.28 | -0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +139.4% | +79.2pp | +86.2% | ✓ |
+| 2020-03-20 | $20.67 | ONEOK Q4 2019 results | 2.15 | +1.28 | -0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +260.3% | +161.1pp | +178.3% | ✓ |
+| 2020-03-27 | $20.94 | ONEOK Q4 2019 results | 2.15 | +1.28 | -0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +280.9% | +197.7pp | +176.7% | ✓ |
+| 2020-04-03 | $21.64 | ONEOK Q4 2019 results | 2.15 | +1.28 | -0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +264.6% | +177.6pp | +169.5% | ✓ |
+| 2020-04-09 | $28.40 | ONEOK Q4 2019 results | 2.15 | +1.28 | -0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +178.5% | +113.5pp | +106.7% | ✓ |
+| 2020-04-17 | $29.38 | ONEOK Q4 2019 results | 2.15 | +1.28 | -0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +168.1% | +111.4pp | +101.0% | ✓ |
+| 2020-04-24 | $27.66 | ONEOK Q4 2019 results | 2.15 | +1.28 | -0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +174.1% | +119.6pp | +114.9% | ✓ |
+| 2020-04-30 | $29.93 | ONEOK Q1 2020 results | 1.35 | -0.14 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +136.6% | +90.8pp | +99.6% | ✓ |
+| 2020-05-08 | $31.33 | ONEOK Q1 2020 results | 1.35 | -0.28 | 0.15x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +133.3% | +88.7pp | +91.4% | ✓ |
+| 2020-05-15 | $32.39 | ONEOK Q1 2020 results | 1.35 | -0.33 | 0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +122.7% | +78.4pp | +85.7% | ✓ |
+| 2020-05-22 | $36.20 | ONEOK Q1 2020 results | 1.35 | -0.43 | 0.27x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +96.2% | +60.5pp | +66.8% | ✓ |
+| 2020-05-29 | $36.69 | ONEOK Q1 2020 results | 1.35 | -0.44 | 0.28x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +103.1% | +62.9pp | +65.2% | ✓ |
+| 2020-06-05 | $45.35 | ONEOK Q1 2020 results | 1.35 | -0.87 | 0.52x | BUY | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +64.8% | +32.7pp | +34.1% | ✗ |
+| 2020-06-12 | $34.09 | ONEOK Q1 2020 results | 1.35 | -0.38 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +111.9% | +80.0pp | +79.1% | ✓ |
+| 2020-06-19 | $35.17 | ONEOK Q1 2020 results | 1.35 | -0.40 | 0.25x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +73.1% | +50.8pp | +73.8% | ✓ |
+| 2020-06-26 | $30.81 | ONEOK Q1 2020 results | 1.35 | -0.24 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +101.4% | +67.5pp | +98.3% | ✓ |
+| 2020-07-02 | $32.15 | ONEOK Q1 2020 results | 1.35 | -0.32 | 0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +99.8% | +74.0pp | +90.1% | ✓ |
+| 2020-07-10 | $26.72 | ONEOK Q1 2020 results | 1.35 | +0.07 | 0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +140.6% | +114.6pp | +128.7% | ✓ |
+| 2020-07-17 | $28.67 | ONEOK Q1 2020 results | 1.35 | -0.06 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +120.4% | +97.1pp | +113.1% | ✓ |
+| 2020-07-24 | $28.72 | ONEOK Q1 2020 results | 1.35 | -0.07 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +128.0% | +101.2pp | +113.2% | ✓ |
+| 2020-07-30 | $29.04 | ONEOK Q2 2020 results | 1.65 | -0.02 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +134.7% | +103.9pp | +111.3% | ✓ |
+| 2020-08-07 | $29.47 | ONEOK Q2 2020 results | 1.65 | -0.04 | 0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +124.1% | +97.0pp | +108.6% | ✓ |
+| 2020-08-14 | $29.49 | ONEOK Q2 2020 results | 1.65 | -0.04 | 0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +143.6% | +113.3pp | +109.2% | ✓ |
+| 2020-08-21 | $26.88 | ONEOK Q2 2020 results | 1.65 | +0.15 | 0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +165.7% | +138.0pp | +130.4% | ✓ |
+| 2020-08-28 | $28.08 | ONEOK Q2 2020 results | 1.65 | +0.01 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +157.5% | +138.6pp | +121.5% | ✓ |
+| 2020-09-04 | $26.76 | ONEOK Q2 2020 results | 1.65 | +0.16 | 0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +154.2% | +136.3pp | +133.0% | ✓ |
+| 2020-09-11 | $26.34 | ONEOK Q2 2020 results | 1.65 | +0.21 | 0.08x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +165.6% | +140.5pp | +137.3% | ✓ |
+| 2020-09-18 | $27.54 | ONEOK Q2 2020 results | 1.65 | +0.08 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +145.8% | +125.6pp | +127.5% | ✓ |
+| 2020-09-25 | $25.01 | ONEOK Q2 2020 results | 1.65 | +0.32 | 0.06x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +140.9% | +125.3pp | +150.7% | ✓ |
+| 2020-10-02 | $26.53 | ONEOK Q2 2020 results | 1.65 | +0.19 | 0.08x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +121.3% | +110.8pp | +135.8% | ✓ |
+| 2020-10-09 | $29.05 | ONEOK Q2 2020 results | 1.65 | -0.02 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +113.5% | +105.5pp | +115.0% | ✓ |
+| 2020-10-16 | $28.90 | ONEOK Q2 2020 results | 1.65 | -0.02 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +113.0% | +106.6pp | +115.5% | ✓ |
+| 2020-10-23 | $30.55 | ONEOK Q2 2020 results | 1.65 | -0.06 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +109.8% | +98.1pp | +103.2% | ✓ |
+| 2020-10-29 | $30.40 | ONEOK Q3 2020 results | 2.30 | +0.96 | 0.21x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +121.1% | +99.6pp | +103.8% | ✓ |
+| 2020-11-06 | $26.89 | ONEOK Q3 2020 results | 2.30 | +1.13 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +153.7% | +142.8pp | +130.0% | ✓ |
+| 2020-11-13 | $31.66 | ONEOK Q3 2020 results | 2.30 | +0.90 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +127.8% | +113.2pp | +95.3% | ✓ |
+| 2020-11-20 | $32.96 | ONEOK Q3 2020 results | 2.30 | +0.83 | 0.26x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +118.3% | +103.5pp | +87.7% | ✓ |
+| 2020-11-27 | $37.23 | ONEOK Q3 2020 results | 2.30 | +0.56 | 0.37x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +95.8% | +81.9pp | +66.2% | ✓ |
+| 2020-12-04 | $40.63 | ONEOK Q3 2020 results | 2.30 | +0.23 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +83.8% | +70.6pp | +52.6% | ✓ |
+| 2020-12-11 | $41.57 | ONEOK Q3 2020 results | 2.30 | +0.20 | 0.51x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +70.9% | +60.3pp | +49.3% | ✓ |
+| 2020-12-18 | $39.87 | ONEOK Q3 2020 results | 2.30 | +0.25 | 0.45x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +80.5% | +73.4pp | +56.0% | ✓ |
+| 2020-12-24 | $38.80 | ONEOK Q3 2020 results | 2.30 | +0.29 | 0.42x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +88.2% | +81.2pp | +60.5% | ✓ |
+| 2020-12-31 | $38.38 | ONEOK Q3 2020 results | 2.30 | +0.31 | 0.42x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +90.7% | +85.2pp | +62.6% | ✓ |
+| 2021-01-08 | $39.93 | ONEOK Q3 2020 results | 2.30 | +0.25 | 0.46x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +85.4% | +80.5pp | +56.5% | ✓ |
+| 2021-01-15 | $44.17 | ONEOK Q3 2020 results | 2.30 | +0.10 | 0.62x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +77.3% | +68.0pp | +41.8% | ✓ |
+| 2021-01-22 | $42.84 | ONEOK Q3 2020 results | 2.30 | +0.15 | 0.57x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +80.2% | +73.6pp | +46.6% | ✓ |
+| 2021-01-29 | $39.83 | ONEOK Q3 2020 results | 2.30 | +0.25 | 0.46x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +90.2% | +77.3pp | +58.1% | ✓ |
+| 2021-02-05 | $42.84 | ONEOK Q3 2020 results | 2.30 | +0.15 | 0.57x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +77.5% | +68.1pp | +47.3% | ✓ |
+| 2021-02-12 | $45.11 | ONEOK Q3 2020 results | 2.30 | +0.07 | 0.65x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +70.6% | +63.6pp | +40.1% | ✓ |
+| 2021-02-19 | $45.82 | ONEOK Q3 2020 results | 2.30 | +0.04 | 0.68x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +63.2% | +55.7pp | +38.2% | ✓ |
+| 2021-02-24 | $46.71 | ONEOK Q4 2020 results | 2.30 | +0.87 | 0.54x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +60.7% | +56.4pp | +35.8% | ✓ |
+| 2021-03-05 | $49.57 | ONEOK Q4 2020 results | 2.30 | +0.60 | 0.61x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +52.0% | +43.5pp | +28.0% | ✓ |
+| 2021-03-12 | $51.60 | ONEOK Q4 2020 results | 2.30 | +0.53 | 0.67x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +39.3% | +38.4pp | +22.9% | ✓ |
+| 2021-03-19 | $48.46 | ONEOK Q4 2020 results | 2.30 | +0.83 | 0.58x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +38.2% | +35.0pp | +30.7% | ✓ |
+| 2021-03-26 | $51.18 | ONEOK Q4 2020 results | 2.30 | +0.55 | 0.65x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +30.9% | +27.8pp | +23.4% | ✓ |
+| 2021-04-01 | $51.35 | ONEOK Q4 2020 results | 2.30 | +0.54 | 0.66x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +38.3% | +33.1pp | +22.6% | ✓ |
+| 2021-04-09 | $50.92 | ONEOK Q4 2020 results | 2.30 | +0.56 | 0.65x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +43.7% | +41.3pp | +23.4% | ✓ |
+| 2021-04-16 | $51.60 | ONEOK Q4 2020 results | 2.30 | +0.53 | 0.67x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +44.4% | +42.6pp | +21.7% | ✓ |
+| 2021-04-23 | $50.60 | ONEOK Q4 2020 results | 2.30 | +0.57 | 0.64x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +44.0% | +42.1pp | +23.9% | ✓ |
+| 2021-04-29 | $52.60 | ONEOK Q1 2021 results | 2.95 | +2.21 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +38.7% | +36.7pp | +19.2% | ✓ |
+| 2021-05-07 | $53.38 | ONEOK Q1 2021 results | 2.95 | +2.21 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +34.9% | +34.3pp | +17.4% | ✓ |
+| 2021-05-14 | $54.35 | ONEOK Q1 2021 results | 2.95 | +2.20 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +31.1% | +29.3pp | +15.3% | ✓ |
+| 2021-05-21 | $53.26 | ONEOK Q1 2021 results | 2.95 | +2.21 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +24.0% | +20.2pp | +17.4% | ✓ |
+| 2021-05-28 | $52.74 | ONEOK Q1 2021 results | 2.95 | +2.21 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +22.9% | +20.0pp | +18.3% | ✓ |
+| 2021-06-04 | $53.95 | ONEOK Q1 2021 results | 2.95 | +2.20 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +22.8% | +18.7pp | +15.4% | ✓ |
+| 2021-06-11 | $55.06 | ONEOK Q1 2021 results | 2.95 | +1.98 | 0.24x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +22.3% | +18.1pp | +12.8% | ✓ |
+| 2021-06-18 | $53.02 | ONEOK Q1 2021 results | 2.95 | +2.20 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +29.1% | +20.2pp | +17.2% | ✓ |
+| 2021-06-25 | $56.55 | ONEOK Q1 2021 results | 2.95 | +1.97 | 0.25x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +15.3% | +10.8pp | +10.0% | ✓ |
+| 2021-07-02 | $57.39 | ONEOK Q1 2021 results | 2.95 | +1.96 | 0.26x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +20.6% | +15.6pp | +8.6% | ✓ |
+| 2021-07-09 | $57.52 | ONEOK Q1 2021 results | 2.95 | +1.96 | 0.26x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +21.2% | +17.6pp | +8.5% | ✓ |
+| 2021-07-16 | $53.31 | ONEOK Q1 2021 results | 2.95 | +2.20 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +33.7% | +26.6pp | +17.4% | ✓ |
+| 2021-07-23 | $52.95 | ONEOK Q1 2021 results | 2.95 | +2.20 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +39.8% | +34.1pp | +18.4% | ✓ |
+| 2021-07-30 | $51.97 | ONEOK Q1 2021 results | 2.95 | +2.21 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +42.0% | +35.0pp | +20.9% | ✓ |
+| 2021-08-05 | $52.21 | ONEOK Q2 2021 results | 2.70 | +2.15 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +39.4% | +35.4pp | +20.7% | ✓ |
+| 2021-08-13 | $52.45 | ONEOK Q2 2021 results | 2.70 | +2.15 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +40.7% | +37.9pp | +20.2% | ✓ |
+| 2021-08-20 | $50.43 | ONEOK Q2 2021 results | 2.70 | +2.15 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +45.0% | +43.8pp | +25.1% | ✓ |
+| 2021-08-27 | $53.84 | ONEOK Q2 2021 results | 2.70 | +2.15 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +34.6% | +34.1pp | +17.2% | ✓ |
+| 2021-09-03 | $53.17 | ONEOK Q2 2021 results | 2.70 | +2.15 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +37.5% | +35.1pp | +18.8% | ✓ |
+| 2021-09-10 | $52.49 | ONEOK Q2 2021 results | 2.70 | +2.15 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +37.8% | +34.9pp | +20.4% | ✓ |
+| 2021-09-17 | $55.17 | ONEOK Q2 2021 results | 2.70 | +1.95 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +36.1% | +32.8pp | +14.8% | ✓ |
+| 2021-09-24 | $57.47 | ONEOK Q2 2021 results | 2.70 | +1.95 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +28.3% | +28.5pp | +10.5% | ✓ |
+| 2021-10-01 | $59.45 | ONEOK Q2 2021 results | 2.70 | +1.95 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +19.4% | +18.0pp | +7.2% | ✓ |
+| 2021-10-08 | $61.63 | ONEOK Q2 2021 results | 2.70 | +1.95 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +15.3% | +14.3pp | +3.7% | ✓ |
+| 2021-10-15 | $65.12 | ONEOK Q2 2021 results | 2.70 | +1.94 | 0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +17.7% | +18.1pp | -1.5% | ✓ |
+| 2021-10-22 | $64.81 | ONEOK Q2 2021 results | 2.70 | +1.94 | 0.14x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +15.9% | +20.2pp | -0.6% | ✓ |
+| 2021-10-29 | $63.62 | ONEOK Q2 2021 results | 2.70 | +1.95 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +13.2% | +21.1pp | +1.5% | ✓ |
+| 2021-11-04 | $63.44 | ONEOK Q3 2021 results | 2.05 | +1.40 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +17.3% | +21.5pp | +2.0% | ✓ |
+| 2021-11-12 | $63.09 | ONEOK Q3 2021 results | 2.05 | +1.40 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +14.0% | +17.0pp | +2.6% | ✓ |
+| 2021-11-19 | $61.38 | ONEOK Q3 2021 results | 2.05 | +1.30 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +20.9% | +22.0pp | +5.5% | ✓ |
+| 2021-11-26 | $62.47 | ONEOK Q3 2021 results | 2.05 | +1.30 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +19.9% | +17.9pp | +3.8% | ✓ |
+| 2021-12-03 | $60.01 | ONEOK Q3 2021 results | 2.05 | +1.30 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +29.0% | +25.0pp | +8.1% | ✓ |
+| 2021-12-10 | $62.00 | ONEOK Q3 2021 results | 2.05 | +1.40 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +22.3% | +21.8pp | +4.8% | ✓ |
+| 2021-12-17 | $57.85 | ONEOK Q3 2021 results | 2.05 | +1.60 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +30.5% | +25.6pp | +12.3% | ✓ |
+| 2021-12-23 | $58.02 | ONEOK Q3 2021 results | 2.05 | +1.60 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +34.0% | +30.6pp | +12.2% | ✓ |
+| 2021-12-31 | $58.76 | ONEOK Q3 2021 results | 2.05 | +1.38 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +32.4% | +29.6pp | +10.9% | ✓ |
