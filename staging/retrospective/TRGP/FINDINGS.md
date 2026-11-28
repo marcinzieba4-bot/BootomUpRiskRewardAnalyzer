@@ -67,3 +67,105 @@ dividends or events is an input.
   value; a dividend-based or distribution-based yardstick would be a new method version, decided before scoring and tested out of sample.
 - **One stock, one cycle.** The dates span TRGP's first two listed years, the NGL price fall of 2012 and the build-up to the 2014 peak;
   the result tests the short-window and no-guide rules, not stock selection.
+
+## TRGP 2014-2017 (HINDSIGHT: labels, never inputs)
+
+Written on 2026-11-28 after the 209 models of 2014-01-03 to 2017-12-29 were built, validated, firewalled and committed
+(retro/README.md, "TRGP 2014-2017"). Nothing here entered a model; no rule was changed because of it. Tables from
+`python3 retro/generators/trgp/findings_tables.py 2014,2015,2016,2017`.
+
+**By class, 2-year total return:** RICH 61 dates, median -15.8% (8 cleared the 15%/yr hurdle, 5 beat SPY, the call held on 53);
+CHEAP 107, median -28.9% (21 cleared, 21 beat SPY, held on 21); FAIR 41, median +3.3% (10 cleared, 5 beat SPY, held on 18).
+Scenario landing at two years: BEAR 83, BASE 115, BULL 11.
+
+What the labels suggest (hypotheses only):
+- **The CHEAP calls of 2014-2015 failed on the commodity collapse.** Every 2014 date lost 35-77% over two years whatever its class,
+  and the CHEAP and BUY run of 2015 (53 of 53) lost a median 29%; the class rested on a P/E far below a window median of 44-51x built
+  on 2011-2014 earnings (FY14's $2.43 against a close falling from $107 to $16), and on BASE's revenue growth, which measured 2014's
+  NGL prices, not the cash flows that later fell. The CHEAP dates that worked were the last ones: from the Q3 2015 print (late 2015)
+  to 2016-04-15, +61% to +245% over two years.
+- **The RICH calls of late 2016 and 2017 held** (2017: median -15.6%, held on all 18 RICH and AVOID dates), and FAIR's 2017 dates were
+  flat; the 2016 RICH and WATCHLIST dates still returned +27% to +46% from the 2016 low.
+- **FY2015 kept at GAAP $1.09** is what made 2016-2017 RICH or FAIR (75 classes move if it is excluded, nearly all to CHEAP): with
+  hindsight the CHEAP alternative would have been right for 2016 and wrong for 2017. This is the call to review first, not to change.
+- The frozen 2012 signal thresholds read the 2015 collapse as BEAR on most signals, yet the class stayed CHEAP on valuation alone:
+  the valuation factor dominated the signals throughout.
+
+
+## 2014 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID (2014-01-03 to 2014-10-03) | 14 | -63.5% | -73.8% to -59.7% | 0 | 0 | -71.1% | 14 |
+| class CHEAP, legacy tier BUY (2014-02-14 to 2014-12-26) | 25 | -58.5% | -76.5% to -34.7% | 0 | 0 | -51.8% | 0 |
+| class FAIR, legacy tier ACCUMULATE (2014-06-20 to 2014-07-18) | 5 | -64.8% | -66.9% to -64.0% | 0 | 0 | -68.3% | 0 |
+| class FAIR, legacy tier BUY (2014-07-25 to 2014-11-21) | 2 | -51.0% | -66.4% to -51.0% | 0 | 0 | -68.2% | 0 |
+| class RICH, legacy tier WATCHLIST (2014-08-01 to 2014-10-31) | 4 | -59.7% | -66.2% to -57.5% | 0 | 0 | -69.2% | 4 |
+| class RICH, legacy tier ACCUMULATE (2014-10-10 to 2014-10-17) | 2 | -53.5% | -56.6% to -53.5% | 0 | 0 | -69.2% | 2 |
+| FY13E $0.91 (FY12's) (2014-01-03 to 2014-02-07) | 6 | -68.1% | -73.8% to -61.8% | 0 | 0 | -16.1% | 6 |
+| FY14E $1.55 (FY13's) (2014-02-14 to 2014-12-26) | 46 | -61.1% | -76.5% to -34.7% | 0 | 0 | -66.1% | 14 |
+| latest print Q3 2013 (2014-01-03 to 2014-02-07) | 6 | -68.1% | -73.8% to -61.8% | 0 | 0 | -16.1% | 6 |
+| latest print Q4 2013 (2014-02-14 to 2014-04-25) | 11 | -64.7% | -76.5% to -59.0% | 0 | 0 | -37.2% | 0 |
+| latest print Q1 2014 (2014-05-02 to 2014-07-25) | 13 | -61.1% | -66.9% to -55.5% | 0 | 0 | -60.0% | 0 |
+| latest print Q2 2014 (2014-08-01 to 2014-10-31) | 14 | -60.8% | -66.2% to -53.5% | 0 | 0 | -71.4% | 14 |
+| latest print Q3 2014 (2014-11-05 to 2014-12-26) | 8 | -44.2% | -56.3% to -34.7% | 0 | 0 | -65.4% | 0 |
+3y (52 dates with one): 0 of 52 cleared, 0 beat SPY; range -62.6% to -21.4%
+1y range -71.7 26.7 excess 2y -83.3 -50.0
+drawdown -89.8 -82.9
+
+## 2015 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY (2015-01-02 to 2015-12-31) | 53 | -29.3% | -44.8% to +111.0% | 5 | 5 | -42.4% | 5 |
+| FY14E $1.55 (FY13's) (2015-01-02 to 2015-02-06) | 6 | -27.4% | -41.1% to -25.9% | 0 | 0 | -54.5% | 0 |
+| FY15E $2.43 (FY14's) (2015-02-13 to 2015-12-31) | 47 | -29.4% | -44.8% to +111.0% | 5 | 5 | -42.2% | 5 |
+| latest print Q3 2014 (2015-01-02 to 2015-02-06) | 6 | -27.4% | -41.1% to -25.9% | 0 | 0 | -54.5% | 0 |
+| latest print Q4 2014 (2015-02-13 to 2015-05-01) | 12 | -32.6% | -40.7% to -28.5% | 0 | 0 | -52.7% | 0 |
+| latest print Q1 2015 (2015-05-06 to 2015-07-31) | 13 | -41.1% | -44.8% to -38.0% | 0 | 0 | -43.5% | 0 |
+| latest print Q2 2015 (2015-08-05 to 2015-10-30) | 13 | -14.7% | -32.5% to +3.0% | 0 | 0 | -17.6% | 0 |
+| latest print Q3 2015 (2015-11-04 to 2015-12-31) | 9 | +72.3% | +2.1% to +111.0% | 5 | 5 | +66.3% | 5 |
+3y (53 dates with one): 5 of 53 cleared, 8 beat SPY; range -46.6% to +94.2%
+1y range -78.9 127.5 excess 2y -65.0 72.2
+drawdown -85.6 -43.0
+
+## 2016 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY (2016-01-08 to 2016-04-15) | 15 | +113.2% | +61.3% to +244.6% | 15 | 15 | +88.3% | 15 |
+| class FAIR, legacy tier ACCUMULATE (2016-04-22 to 2016-07-22) | 5 | +38.3% | +32.8% to +46.1% | 5 | 3 | +15.0% | 5 |
+| class FAIR, legacy tier WATCHLIST (2016-05-13 to 2016-07-15) | 9 | +33.1% | +26.1% to +41.1% | 5 | 2 | +9.6% | 9 |
+| class CHEAP, legacy tier ACCUMULATE (2016-07-29 to 2016-07-29) | 1 | +54.6% | +54.6% to +54.6% | 1 | 1 | +25.5% | 1 |
+| class RICH, legacy tier WATCHLIST (2016-08-04 to 2016-11-03) | 10 | +39.3% | +26.5% to +45.6% | 7 | 5 | +7.6% | 3 |
+| class RICH, legacy tier AVOID (2016-09-30 to 2016-12-30) | 12 | +8.6% | -25.1% to +34.8% | 1 | 0 | -1.7% | 11 |
+| FY15E $2.43 (FY14's) (2016-01-08 to 2016-02-19) | 7 | +158.1% | +132.8% to +244.6% | 7 | 7 | +125.8% | 7 |
+| FY16E $1.09 (FY15's) (2016-02-26 to 2016-12-30) | 45 | +33.4% | -25.1% to +113.2% | 27 | 19 | +8.6% | 37 |
+| latest print Q3 2015 (2016-01-08 to 2016-02-19) | 7 | +158.1% | +132.8% to +244.6% | 7 | 7 | +125.8% | 7 |
+| latest print Q4 2015 (2016-02-26 to 2016-04-22) | 9 | +81.5% | +38.3% to +113.2% | 9 | 9 | +62.4% | 9 |
+| latest print Q1 2016 (2016-04-29 to 2016-07-29) | 14 | +34.9% | +26.1% to +54.6% | 10 | 5 | +12.1% | 14 |
+| latest print Q2 2016 (2016-08-04 to 2016-10-28) | 13 | +33.4% | +28.5% to +45.6% | 8 | 5 | +2.8% | 5 |
+| latest print Q3 2016 (2016-11-03 to 2016-12-30) | 9 | -1.3% | -25.1% to +26.5% | 0 | 0 | -5.6% | 9 |
+3y (52 dates with one): 15 of 52 cleared, 15 beat SPY; range -11.8% to +235.1%
+1y range -12.4 286.9 excess 2y -39.8 191.6
+drawdown -44.4 -34.2
+
+## 2017 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID (2017-01-06 to 2017-12-29) | 18 | -15.6% | -21.4% to -1.1% | 0 | 0 | -16.9% | 18 |
+| class CHEAP, legacy tier ACCUMULATE (2017-05-05 to 2017-07-28) | 11 | +0.6% | -6.4% to +9.0% | 0 | 0 | -1.0% | 0 |
+| class CHEAP, legacy tier BUY (2017-06-16 to 2017-06-23) | 2 | +8.0% | +0.9% to +8.0% | 0 | 0 | +8.2% | 0 |
+| class FAIR, legacy tier WATCHLIST (2017-08-04 to 2017-12-22) | 20 | -0.6% | -8.8% to +14.5% | 0 | 0 | -7.7% | 4 |
+| class RICH, legacy tier WATCHLIST (2017-10-06 to 2017-10-06) | 1 | -0.4% | -0.4% to -0.4% | 0 | 0 | -13.3% | 1 |
+| FY16E $1.09 (FY15's) (2017-01-06 to 2017-02-10) | 6 | -15.4% | -21.4% to -14.8% | 0 | 0 | -17.4% | 6 |
+| FY17E $1.09 (FY15's) (2017-02-16 to 2017-12-29) | 46 | -1.0% | -19.0% to +14.5% | 0 | 0 | -7.7% | 17 |
+| latest print Q3 2016 (2017-01-06 to 2017-02-10) | 6 | -15.4% | -21.4% to -14.8% | 0 | 0 | -17.4% | 6 |
+| latest print Q4 2016 (2017-02-16 to 2017-04-28) | 11 | -15.9% | -19.0% to -9.8% | 0 | 0 | -15.4% | 11 |
+| latest print Q1 2017 (2017-05-05 to 2017-07-28) | 13 | +0.8% | -6.4% to +9.0% | 0 | 0 | -0.5% | 0 |
+| latest print Q2 2017 (2017-08-04 to 2017-10-27) | 13 | -1.0% | -8.8% to +14.5% | 0 | 0 | -5.0% | 3 |
+| latest print Q3 2017 (2017-11-03 to 2017-12-29) | 9 | -0.4% | -5.0% to +10.7% | 0 | 0 | -9.9% | 3 |
+3y (52 dates with one): 0 of 52 cleared, 0 beat SPY; range -71.0% to -11.2%
+1y range -20.5 37.5 excess 2y -48.0 -6.6
+drawdown -44.5 -41.7
