@@ -29959,6 +29959,179 @@ Judgement calls that could carry hindsight:
 The hindsight results for 2018-2021 are in `staging/retrospective/LYB/FINDINGS.md` ("LYB 2018-2021"), computed after the firewall
 result was pushed: hypotheses, never inputs.
 
+### LYB 2022-2026: three-year 10-Ks, no consolidated operating income in any release, the refinery exit, FY2025 a loss and excluded, the last date 2026-11-20
+
+255 weekly dates, 2022-01-07 to 2026-11-20 (52, 52, 52, 52, 47), on the same fact sheet, generator, builder and method (r2), with the
+rule-T thresholds of 2012-02-10 frozen. Built on 2026-11-27 at the owner's request ("find newest code. do retrospective analysis for LYB,
+2022-2026. same rules as before"), **in a new session that did not open the 2012-2021 outcomes, `SERIES.md` or `FINDINGS.md`**; every
+decision below applies a rule that existed before (the house rules and the 2012-2021 encodings) or is disclosed as new. The newest code
+is the coordinating session's branch (`claude/sharp-albattani-rdvlgi`: LYB to 2021-12-31, NEM to 2017, CHTR 2019-2021), checked out as
+the base; nothing else was merged in. The series was built on Friday 2026-11-27 during the session (Yahoo's bar for that day is not a
+close), so the range ends on 2026-11-22 and the last date is 2026-11-20 (the CRM, SCHW and NEE 2022-2026 rule). A rebuild after a later
+close adds dates; it does not move these. The newest dates have no outcome yet.
+
+```bash
+python3 retro/tools/edgar.py fetch 1489393 <dir> --from 2007-01-01 --to 2026-11-27 --forms 10-K 10-Q 8-K 8-K/A 10-12B 10-12B/A
+python3 -I retro/generators/lyb/gen_lyb.py --filings <dir>                  # 61 prints, 16 vintages, 17 dividends, 16 repurchase authorities
+python3 -I retro/tools/verbatim.py <dir>/checklist_lyb.json                 # 989/989
+python3 retro/build_lyb.py --weekly 2012-02-06 2013-12-31                   # regression: the 100 earlier models byte for byte
+python3 retro/build_lyb.py --weekly 2014-01-01 2017-12-31                   # regression: the 209 earlier models byte for byte
+python3 retro/build_lyb.py --weekly 2018-01-01 2021-12-31                   # regression: the 209 earlier models byte for byte
+python3 retro/build_lyb.py --weekly 2022-01-03 2026-11-22                   # 255 dates, 2022-01-07 .. 2026-11-20
+python3 retro/generators/lyb/controls_lyb.py 2022-01-03 2026-11-22          # 164 controls
+python3 retro/generators/lyb/sens_lyb.py <scratch> 2022-01-03 2026-11-22    # the sensitivity below
+for c in <each fact date of 2022-2026 and the day after it, and 2026-11-23>; do python3 retro/tools/firewall.py $c LYB; done   # 61 cutoffs
+```
+
+**A full-data batch.** `www.sec.gov` served every filing document to the plain client name of `edgar.py` (no contact address; the owner's
+email was not used). Read by the session's model directly: the twenty earnings releases of Q4 2021 to Q3 2026 (Exhibit 99.1: Table 1,
+the EBITDA reconciliation, the identified items, the outlook and capital-return text; Exhibit 99.2: the segment overview tables), the
+fifteen 10-Qs of Q1 2022 to Q3 2026 (the statement of income; the dividend tables searched for each rate), the FY2021-FY2025 10-Ks (the
+statements of income and cash flows, the EPS note, the segment note, the dividend table and MD&A dividend lines, Items 1 and 1A), and
+every other 8-K of January 2022 to November 2026 by its items and exhibits. **Not read:** the proxy statements, the investor and Capital
+Markets Day presentations and call transcripts (not filed), and the debt offering documents beyond their 8-Ks' item text. The generator
+keeps its 2012-2021 code; a new block reads the 2022-2026 layouts by table title, and the regenerated sheet's 2012-2021 facts are an
+exact prefix of the new one (asserted, with `cmp` of the old generator's output against the committed sheet first). Sources `LB110`-`LB114`
+(the FY2021-FY2025 10-Ks), `LB120`-`LB139` (the releases), `LB140`-`LB154` (the 10-Qs), `LB160`-`LB164` (the annual meetings' 8-Ks).
+
+- **No guide in numbers, again.** Every release's "OUTLOOK" is words (demand, margins, maintenance; from 2025 expected operating rates,
+  which are no revenue, EPS or margin); no 10-Q, 10-K or other 8-K guides revenue, EPS or a margin. Read and set aside: the Q1 2023
+  release's 2027 targets ("Launched new strategy targeting net income(b) of $6.3 billion and $10 billion of normalized EBITDA(a)(b) by
+  2027", footnote (b): "Reflects a 2022 year-end asset portfolio with 2013-2022 historical average margins and operating rates"), a
+  mid-cycle aspiration four years out, no current-year field (the LLY mid-term floors rule); the refinery exit 8-K of 2022-04-21 (Item
+  2.05, cost ranges); the Value Enhancement Program's and the Cash Improvement Plan's EBITDA and cash targets; the NATPET, EO&D, Dutch PO
+  and European asset sale 8-Ks. So the last full year's GAAP EPS stands (FY20's $4.25 to the Q4 2021 print, then $16.75 and $16.77,
+  $11.81 and $11.83, $6.46 and $6.48, $4.15 and $4.14, then $4.39 restated), BASE is the latest quarter's revenue growth as reported plus
+  the buyback, and there is no margin step.
+- **No release prints the consolidated operating income (new encoding for the fourth quarters, disclosed).** From Q4 2021 the releases
+  are Exhibit 99.1 (Table 1 and the EBITDA reconciliation) and Exhibit 99.2 (segment operating income); none has a statement of income or
+  a segment reconciliation with a consolidated row. For Q1-Q3 the operating income comes from the quarter's 10-Q, each accepted the same
+  Friday during the session (12:14-14:29 ET; `oi_source`, the 2018-2021 rule; the generator asserts the dates equal and the revenues
+  equal the release's). The fourth quarter has no 10-Q and no filing prints a fourth-quarter operating income (the 10-Ks have no
+  quarterly data), so **a Q4 print's operating margin is n/r** (None, scored at BASE) through `lyb2_engine.py.tmpl`, the None-tolerant
+  copy (the BKR, SPGI, SCHW and NEE `nr_engine` encoding), used only when the latest print has a None margin. Deriving it as the 10-K's
+  year less the Q3 10-Q's nine months (the CRM and NEM derivation) is a sensitivity (2 classes).
+- **The pre-tax income.** Income from continuing operations plus the provision for income taxes from the EBITDA reconciliation, as in
+  2018-2021, through Q4 2024 (for Q1-Q3 the generator asserts it equals the 10-Q's income from continuing operations before income taxes).
+  From Q1 2025 the reconciliation starts from net income (the refining business discontinued, its results an identified item), so Q1-Q3
+  take the 10-Q's line and **Q4 2025's pre-tax margin is n/r**; FY2025 between its release and its 10-K (three dates) keeps the FY2024
+  vintage's pre-tax margin and tax rate (the builder says so in the model), as the release prints no pre-tax income for the year.
+- **EPS: GAAP diluted from continuing operations where the filing reports it, each year from the latest filing that reports it.** The
+  10-Ks give FY21 $16.77, FY22 $11.83, FY23 $6.48, FY24 $4.14, and the FY2025 10-K restates FY23 to $5.68 and FY24 to $4.39 (the refining
+  business discontinued: as published, the earlier vintages unchanged) with FY25 $(2.48). Between a Q4 release and its 10-K the year is
+  the release's figure on net income (FY21 $16.75, FY22 $11.81, FY23 $6.46, FY24 $4.15, FY25 $(2.34)). The company's EPS "excluding
+  identified items" removes the LCM adjustments and the "asset write-downs in excess of $10 million in aggregate for the period", which
+  recur (impairments or write-downs in each year of 2021-2025), so it is not a figure excluding only one-offs (the 2014-2021 rule); GAAP
+  stands (the batch's largest EPS call: 26 classes).
+- **The one-off test, FY2021-FY2024 kept; FY2025 a loss, excluded.** From Q4 2021 each Q4 release's Table 2 lists the identified items
+  after tax ("Net income excluding identified items", from Q4 2021 "excluding LCM and impairment"), so the test takes that table's total,
+  charges net of benefits (the 2014-2017 table rule): FY2021 $481M against $5,617M (the text's $102M of debt extinguishment costs, not in
+  the table, would leave it kept), FY2022 $213M against $3,889M, FY2023 $717M against $2,121M, FY2024 $734M against $1,367M. All are net
+  charges, so the mirror test does not arise. **FY2025** is a loss ($(2.34) on net income in the Q4 2025 release, $(2.48) from continuing
+  operations in the FY2025 10-K), so it has no P/E and is excluded as the latest year, its days out of the window ("10-yr ex-FY25"; the MU
+  FY2003 and NEM FY2007 rule; a new `eps_gaap` field carries the loss for the builder's check). From the Q4 2025 print the current year is
+  FY2026 and FY24's EPS stands ($4.14, then $4.39 from the FY2025 10-K).
+- **History.** Item 6 is "Reserved" in the FY2021-FY2025 10-Ks, so each vintage takes three years from its own statement of income, EPS
+  note and cash flow statement (the SCHW and NEE 2022 encoding), earlier years from the latest earlier vintage, the ten fiscal years to
+  the latest one. **New: the EPS history is cut to the ten years too** (no vintage had held more than ten years of EPS before; 2011 leaves
+  with the FY2021 10-K, and 2010's exclusion note with it): keeping 2011 on moves 10 classes (sensitivity). The FY2025 10-K's revenues are
+  from continuing operations without the refining business for 2023-2025 (2023 $33,336M against the FY2023 10-K's $41,107M); 2016-2022
+  keep it (a seam, as published).
+- **The refinery exit and Q1 2025.** "In February 2025, we ceased business operations at our Houston refinery. Accordingly, our refining
+  business, previously disclosed as the Refining segment, is reported as a discontinued operation." (Q1 2025 release); from it each release
+  shows its year-ago quarter without refining (noted on the Q1-Q4 2025 prints), and the segment tables have five segments.
+- **Q3 2026 (new encoding, disclosed).** Exhibit 99.2 of the Q3 2026 release prints no third quarter 2025 column (the quarter, the previous
+  quarter, then the nine months). The segment signals take the year-ago quarter as the Q3 2025 release printed it (O&P–Americas $246M,
+  I&D $194M; the LMT year-ago-release rule), and the generator asserts that the Q3 2026 release's nine months of 2025 equal the Q3 2025
+  release's (no recast). Both n/r instead moves 1 class.
+- **Adds nothing:** the 8-K/A of 2024-11-01 (accepted 15:04 ET, the release's day) re-files Q3 2024's Exhibit 99.2 to correct one word of
+  its text ("438 million shares" to "438 thousand shares"; asserted the only change); the 8-Ks of 2023-03-07 (2020-2022 on the segment
+  structure effective January 1, 2023) and 2023-05-12 (the FY2022 10-K's items recast for it) change segments only, and the revenues, EPS
+  and shares a model reads are the FY2022 10-K's (asserted), so they are not a vintage of their own (the UNH 2011-05-23 segment recast
+  precedent); the special dividend of $5.20 (8-K of 2022-05-31) is not a rate, and Yahoo's close is unadjusted for it (no split or
+  distribution in the series).
+- **Release timing.** All twenty releases were accepted before the open (06:31-06:51 ET) on Fridays and date their own day.
+  The 10-Ks are dated 2022-02-25 (accepted 2022-02-24 16:32 ET), 2023-02-23 (13:54 ET), 2024-02-22 (15:28 ET), 2025-02-27 (14:10 ET) and
+  2026-02-20 (14:59 ET).
+- **Dividends:** each interim rate from the first filing that states it: $1.19 (the Q2 2022 10-Q, 2022-07-29: "Dividends - common stock
+  ($1.19 per share)"), $1.25 (the Q2 2023 release), $1.34 (the Q2 2024 release), $1.37 (the Q2 2025 10-Q), $0.69 (the FY2025 10-K, 2026-02-20:
+  "In February 2026, we declared a quarterly dividend of $0.69 per share, representing a $0.68 per share reduction from our fourth quarter
+  2025 dividend."). The vintages' rates are each 10-K's dividend table's December row (FY2025: the $0.69 sentence).
+- **Repurchase authorities** (display only, the share counts carry them): each annual meeting's program of up to 10% of the issued share
+  capital (8-Ks of 2022-05-27, 2023-05-19, 2024-05-24, 2025-05-23, 2026-05-22); the model text gives the share count only.
+- **Durability: CYCLICAL, risk 2,** on each 10-K's risk factor: "... in the chemical and refining industries." (FY2021-FY2023), "...
+  in the chemical industry." (FY2024, FY2025), quoted in the "why".
+- **Themes.** **GENAI** (live 2022-11-30) and **GLP1** (live 2023-08-08) join the live themes the builder quotes: no FY2021-FY2025 10-K
+  names GLP-1 drugs or obesity, and the FY2021-FY2023 10-Ks name no AI; the FY2024 and FY2025 10-Ks name generative AI only in the data
+  privacy and security risk factor ("In addition, the complex and dynamic regulatory environment surrounding artificial intelligence
+  (“AI”), including generative AI, subjects us to a variety of risks."), quoted in the "why" (`ai_quote`, text only, the UNH and SCHW
+  `ai_words`), so GENAI is out of scope (its scope names no chemicals business). No 10-K of the range names cloud (the FY2018-FY2020 words
+  leave), electric vehicles, e-commerce, streaming or crypto (asserted); the "why" from the FY2021 vintage says "the FY20xx 10-K names no
+  ..." (`tenk_scan`). **ENERGY_TRANSITION** stays on the watch list (text only) on each FY2021-FY2024 10-K's refining sentence and greenhouse
+  gas words (FY2021 the 2020 sentence; FY2022-FY2023 "Additional regulations could be forthcoming ... Additionally, demand for the products
+  we produce may be reduced."; FY2024 two sentences joined by an ellipsis); **from the FY2025 10-K (2026-02-20) it is read as out of
+  scope (new, disclosed):** the theme is scoped to refining, the 10-K reports the refining business as a discontinued operation
+  (`refining_exit_quote`) and no longer says demand for its products may be reduced (asserted), so the watch list is empty and the "why"
+  says so. Text only: no class moves (sensitivity).
+
+Controls and checks (before any outcome):
+- **Regression:** the 518 dates of 2012-2021 rebuild byte for byte from the extended sheet and builder.
+- **Controls** (`controls_lyb.py 2022-01-03 2026-11-22`, now also each vintage's AI words, refining exit words and FY2025 exclusion note):
+  164 of 164 change no model dated before their publication; 71 change the first weekly date on or after it and 93 are inert (facts
+  superseded before 2022).
+- **Leak scan:** 74,714 (model, later token) pairs, 0 hits; the positive control finds the print in force in 255 of 255 models.
+  `forward_refs.py`: 0 forward references in 80 dated facts. `selftext.py --allow "MD&A" Ks`: 0 misses in 919 tokens.
+- **Years after the as-of date:** a first validation pass warned on 37 dates of 2022-2024 ("calendar year(s) 2025"): the new engine
+  copy's header comment named the fourth quarter of 2025 as a case it serves. That is later knowledge in a model's text, so the comment
+  was rewritten to name no period, the 255 dates rebuilt and validated again: none in the models, reports and analyses other than the
+  FY horizon labels.
+- **`retro_tool run`:** passes on all 255 dates, with no warnings.
+- **Firewall** (run after the build was committed, before any outcome): passes at 61 cutoffs (each fact date of 2022-2026 and the day
+  after it, and 2026-11-23), with 0 files changed and no planted text (521 to 773 earlier dates each). The LYB plant now also plants the
+  10-Ks' AI words, a later vintage with the refining business discontinued and a later Q4 print with n/r margins whose loss year is
+  excluded.
+
+Seen in the build (method behaviour, not tuned):
+- **Totals: RICH 193, CHEAP 55, FAIR 7.** RICH on the 3 dates of January 2022 (FY20's $4.25, 22.2-24.2x against a window median of
+  9.5x); CHEAP on all 53 from the Q4 2021 print to 2023-01-27 (FY21's $16.77, 4.4-7.0x against 9.0-9.1x, the 0th-17th percentile, BASE
+  +67.1% to +2.8%/yr as revenue growth fell from +61.6% to -3.5%); then RICH on 193 of the 199 dates to 2026-11-20, with FAIR on 2023-03-10 to
+  2023-03-24, 2026-08-07, 2026-10-09, 2026-11-06 and 2026-11-20 and CHEAP on 2026-09-25 and 2026-10-02. Through 2023 the P/E is 7.2-8.5x,
+  below the median, but BASE runs -7.0% to -24.2%/yr on falling revenues; from the Q4 2023 print the anchor is FY23's $6.48 and the P/E
+  11.2-16.2x (the 70th-94th percentile); from the Q4 2024 print FY24's $4.14-$4.39 and 10.4-18.7x. The legacy tier is AVOID on 174,
+  BUY 53, WATCHLIST 24, ACCUMULATE 4.
+- **The window** is ten years throughout (from 2026-01-30 "ex-FY25"); its median stays 8.7-9.5x; the close runs from $43.02 to $117.08
+  ($97.61 on the first date, $55.84 on the last).
+- So the classes follow the last full year's GAAP EPS: FY21's record year makes 2022 CHEAP; FY22-FY24's falling earnings, with falling
+  revenues in BASE, make 2023-2026 RICH.
+
+Sensitivity (each call changed alone, the 255 dates rebuilt and reclassified offline with `retro_tool`'s own classifier; no outcome
+consulted; `sens_lyb.py`):
+- **the company's EPS excluding identified items** (FY21 $18.19, FY22 $12.46, FY23 $8.65, FY24 $6.40, FY25 $1.70, so FY2025 kept): 26
+  classes, 43 tiers (RICH to FAIR 17, FAIR to RICH 4, CHEAP to RICH 2, FAIR to CHEAP 2, RICH to CHEAP 1), 2023-02-03 to 2026-11-20;
+  **every data signal at its XBULL value**: 26 classes (RICH to FAIR 24); **at its BEAR value**: 9;
+- **FY2020 at the company's EPS excluding LCM and impairment** ($5.61): 12 classes, 20 tiers; **the EPS history not cut to ten years**:
+  10 classes, 21 tiers (RICH to FAIR, 2023-02-24 to 2024-01-19); **the FY2025 10-K's restated FY2023-FY2024 unused** ($6.48, $4.14): 6
+  classes, 11 tiers (2026-08-07 on);
+- **FY2017 without its listed one-offs** ($10.23, derived): 2 classes; **the Q4 operating income derived from each 10-K** (year less nine
+  months): 2 classes; **the 10-Q's operating income unused** (those prints' margin signal at BASE): 2 classes; **the company's 2014-2016
+  EPS excluding LCM**: 1 class; **Q3 2026's segment signals n/r**: 1 class;
+- **ENERGY_TRANSITION out of scope throughout**: no class, no tier.
+
+Judgement calls that could carry hindsight:
+- GAAP rather than the company's EPS excluding identified items (26 classes), on the reading that the write-downs and LCM adjustments
+  recur, and FY2025 excluded as a GAAP loss (the adjusted $1.70 would keep it);
+- the signal set and rule T's thresholds, frozen from 2012-02-10 (chosen by a builder who knew 2012-2013, measured on the 2009-2011 trough
+  and recovery): the signals at XBULL move 26 classes;
+- the EPS history cut to the ten fiscal years (new; 10 classes), and the FY2025 10-K's continuing-operations restatement of FY2023-FY2024
+  used as published (6 classes);
+- the Q4 prints' operating margin (and Q4 2025's pre-tax margin) n/r rather than derived from the 10-K (2 classes), and Q3 2026's year-ago
+  segment quarter from the Q3 2025 release (1 class);
+- ENERGY_TRANSITION out of scope from the FY2025 10-K, GENAI out of scope on the 10-Ks' data privacy words, CYCLICAL on the 10-Ks' own
+  words (text only);
+- the non-earnings 8-Ks read by their item text and exhibits for guided numbers only, and the parts of the filings listed above as not
+  read;
+- the last date set by the build time (2026-11-20).
+
 ## CHTR (Charter Communications): the thirty-eighth ticker, in staging, built from 2019-02-01
 
 The CHTR series is set up apart from every other ticker and shares nothing with them but the machinery: its own fact sheet
