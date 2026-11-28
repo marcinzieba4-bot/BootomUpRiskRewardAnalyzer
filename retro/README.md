@@ -31708,6 +31708,159 @@ Judgement calls that could carry hindsight:
 
 The hindsight results for 2014-2017 are in `staging/retrospective/TRGP/FINDINGS.md` ("TRGP 2014-2017"): hypotheses, never inputs.
 
+### TRGP 2018-2021: every year a loss, the estimated net income as a GAAP earnings guide, EV and CRYPTO out of scope
+
+209 weekly dates, 2018-01-05 to 2021-12-31, on the same fact sheet, generator discipline, builder, engines and method (r2), with the
+rule-T thresholds of 2012-02-24 frozen. Built on 2026-11-28 at the owner's request ("do retrospective analysis for TRGP, 2018-2021, same
+rules as before"), in a new session that did not open the 2012-2017 outcomes, `SERIES.md` or `FINDINGS.md`; every decision below applies
+a rule that existed before (the house rules and the 2012-2017 encodings) or is disclosed as new. NGLS's unit prices and per-unit figures
+are never used; the Series A preferred stock, the development joint ventures' preferred interests, the Badlands interest sale, the
+Partnership's notes and the 2020 repurchase program are in the figures as TRC's own filings publish them.
+
+```bash
+python3 retro/tools/edgar.py fetch 1389170 <dir> --from 2017-12-31 --to 2021-12-31 --forms 10-K 10-Q 8-K 10-K/A 8-K/A 10-Q/A
+python3 -I retro/generators/trgp/gen_trgp_1821.py --filings <dir> --facts-in <the 2012-2017 sheet>    # appends 2018-2021
+python3 -I retro/tools/verbatim.py <dir>/checklist_trgp_1821.json            # 352/352
+python3 retro/build_trgp.py --weekly 2012-02-20 2017-12-31                   # regression: the 307 earlier models byte for byte
+python3 retro/build_trgp.py --weekly 2018-01-01 2021-12-31                   # 209 dates, 2018-01-05 .. 2021-12-31
+python3 retro/generators/trgp/controls_trgp.py 2018-01-01 2021-12-31         # 80 controls
+python3 retro/generators/trgp/sens_trgp_1821.py <scratch>                    # the sensitivity below
+for c in 2018-02-15 2018-02-16 2018-02-20 2018-02-21 2018-05-03 2018-05-04 2018-05-05 2018-08-09 2018-08-10 2018-11-08 2018-11-09 \
+         2019-02-20 2019-02-21 2019-03-01 2019-03-02 2019-05-07 2019-05-08 2019-05-09 2019-08-08 2019-08-09 2019-08-10 2019-11-07 \
+         2019-11-08 2019-11-09 2020-01-01 2020-02-20 2020-02-21 2020-02-22 2020-05-07 2020-05-08 2020-08-06 2020-08-07 2020-10-05 \
+         2020-10-06 2020-10-21 2020-11-05 2020-11-06 2021-02-18 2021-02-19 2021-05-06 2021-05-07 2021-08-05 2021-08-06 2021-11-04 \
+         2021-11-05 2022-01-01; do
+  python3 retro/tools/firewall.py $c TRGP; done                             # 46 cutoffs
+```
+
+**A full-data batch.** `www.sec.gov` again served every filing document to the plain client name of `edgar.py` (no contact address; the
+owner's email was not used). Read by the session's model directly, with no delegated transcription: TRC's sixteen earnings releases from
+Q4 2017 to Q3 2021, the FY2017-FY2020 10-Ks (Item 6, the statements of operations and cash flows, the selected quarterly data to FY2019,
+the segment note, Items 1, 1A and 7A), the twelve 10-Qs of 2018-2021 (EPS and shares), the outlook 8-K of 2020-10-05, and every other 8-K
+of 2018-2021 by its item text and exhibits. `gen_trgp_1821.py` loads the 2012-2017 sheet, refuses one that already holds a later fact,
+appends, and asserts every earlier fact, source, revenue revision and rule-T value unchanged (the 2014-2017 extension pattern). Sources
+`TG70`-`TG73` (the FY2017-FY2020 10-Ks), `TG80`-`TG95` (the releases), `TG100`-`TG111` (the 10-Qs), `TG33` (the 8-K of 2020-10-05).
+
+- **Every year a loss.** FY2017 $(0.31) (net loss attributable to common shareholders of $(63.4)M after the Series A preferred dividends,
+  with the $378.0M impairment of property, plant and equipment and the $269.5M discrete deferred tax benefit of the Tax Act), FY2018
+  $(0.53), FY2019 $(1.44), FY2020 $(7.26) (the $2,442.8M impairment of long-lived assets of Q1 2020). Each is excluded as the latest year
+  and then a gap, its days out of the window (the F, MU and CRM loss rule, as FY2016), so the window is "ex-FY10 ex-FY16 ex-FY17 ex-FY18
+  ex-FY19" and from the FY2020 10-K "10-yr ex-FY16 ex-FY17 ex-FY18 ex-FY19 ex-FY20", and FY15's $1.09 is the last full year of EPS on
+  every date. The Q4 releases print no per-share figure, so each year is a loss by its reported net loss (`eps_gaap` None, the 2014-2017
+  encoding) until its 10-K; the listed items are recorded for completeness (a loss year has no P/E either way). TRC prints no EPS
+  excluding one-offs (its non-GAAP measures are Adjusted EBITDA, distributable cash flow and adjusted free cash flow).
+- **New: a GAAP earnings guide (decided before any 2018-2021 model was built; no earlier output changes, so still r2).** From the Q4 2018
+  release each release reconciles its Adjusted EBITDA outlook to an "Estimated Net Income attributable to TRC" for the year, a GAAP
+  figure in numbers ("Net income attributable to TRC | 44.0", the Q4 2018 release; none in the Q1-Q3 2018 or Q1-Q3 2019 releases). By
+  the KMI 2019-2022 rule a GAAP net income guide sets current-FY EPS; TRC's EPS is to common shareholders after the Series A preferred
+  dividends, and its releases print no share count, so the per-share figure is that estimate less 4 x the release's own quarter's Series
+  A dividends (cash and deemed, as its statement prints them) over the latest basic weighted-average share count public on the guide's
+  date (a 10-Q's quarter or a 10-K's year; basic because the numerator is to common shareholders before the if-converted test). A guide
+  whose figure is a loss has no P/E and is read as no numeric guide, so FY15's $1.09 stands (the LLY 2008 and CRM 2010 rule):
+  - FY2019: $44.0M less $122.4M = $(78.4)M, a loss (2019-02-21 to 2020-02-14 keep FY15's $1.09);
+  - FY2020: $203.0M less $126.4M over 232.7M shares = **$0.329** (the Q4 2019 release, 11 dates 2020-02-21 to 2020-05-01); then the Q1
+    and Q2 2020 releases, the 8-K of 2020-10-05 and the Q3 2020 release estimate net losses ($(1,706.0)M, $(1,627.5)M, $(1,480.5)M twice,
+    the impairment of long-lived assets in), so FY15's $1.09 stands from 2020-05-08 to 2021-02-12;
+  - FY2021: $300.0M less $137.6M over 232.2M = **$0.699** (the Q4 2020 release, from 2021-02-19), $435.0M less $87.2M over 228.5M =
+    **$1.522** (Q1 2021), $485.0M over 228.6M = **$1.740** (Q2 2021), $555.0M over 228.8M = **$2.045** (Q3 2021; the deemed dividends
+    end with Q4 2020 and the cash dividend falls to $21.8M a quarter).
+  The Adjusted EBITDA, capital spending and volume outlooks stay display only, in the guide line; no filing guides revenue or a margin,
+  so BASE is still the latest quarter's revenue growth as reported plus the buyback, with no margin step.
+- **EPS of the quarters.** TRC's releases print no EPS or share count: each quarter's EPS and diluted shares come from its 10-Q from the
+  10-Q's own date, and a fourth quarter's EPS from the next 10-K's selected quarterly data (Q4 2017 from the FY2017 10-K, Q4 2018 and Q4
+  2019 likewise; `restated`, the 2014-2017 encoding). The FY2020 10-K has no selected quarterly data, so Q4 2020's EPS stays n/r through
+  `trgp2_engine.py.tmpl` on its 11 dates (2021-02-19 to 2021-04-30), and on the few dates between a Q4 release and its 10-K. The FY2018
+  10-K's fourth quarter has net income attributable to common shareholders of $(137.3)M against the release's $(137.0)M: only its EPS is
+  used, and the note says so.
+- **Release timing.** Every earnings 8-K was accepted before the open (06:14-07:31 ET), none on a Friday, so each print's week date is the
+  next trading day. The 10-Ks are dated 2018-02-20 (2018-02-16 16:20 ET), 2019-03-01 (13:01 ET), 2020-02-21 (2020-02-20 17:10 ET) and
+  2021-02-18 (15:38 ET); the 10-Qs from their own acceptance times (the same day as the release or the next trading day). The FY2019 and
+  FY2020 10-Ks are public by the first weekly date after their releases, so the Q4 2019 and Q4 2020 releases' full years never reach a
+  model alone (the controls find them inert).
+- **History.** Each vintage takes Item 6's five years from its own 10-K (the FY2020 10-K still has Item 6) and earlier years from the latest
+  earlier vintage, the ten fiscal years to the latest one; 2018 on are under ASC 606 and 2017 and earlier as first reported (a seam, stated
+  in the revenue note). Diluted shares from each statement of operations (206.9M for 2017, 224.2M, 232.5M, 232.2M), so the net buyback,
+  measured from 2011's 41.4M as before, is dilution of about 21%/yr in BASE.
+- **Dividends:** each quarter's declared rate from its release, $0.91 to Q4 2019 and **$0.10 from the Q1 2020 release** (2020-05-07). The
+  $500M common share repurchase program of the 8-K of 2020-10-05 is not encoded (`buyback_programs` stays empty; the share counts measure
+  any repurchase).
+- **Signals:** unchanged, each against the year-ago quarter as the release shows it. From the Q4 2019 release Logistics and Marketing is
+  named Logistics and Transportation ("The change in naming convention did not impact previously reported results for the segment.",
+  quoted in `segment_rename`), read as the same division. The impairments are in income from operations as published, so the margin
+  signals read -10407bp in Q1 2020 and +11087bp in Q1 2021, against it.
+- **Durability: DURABLE, risk 2.** Each 10-K keeps the percent-of-proceeds sentence and the dividend policy's "seasonal and cyclical factors"
+  (the CHTR reading, as before); the FY2020 10-K's cash-flow risk factor adds "supply, demand", quoted in the "why".
+- **Themes.** **EV (live 2020-01-01) and CRYPTO (live 2020-10-21) are out of scope**: their scopes name ICE powertrains, auto parts and fuel
+  retail, and payments networks, banks, exchanges and remittance, not midstream energy, and no FY2017-FY2020 10-K names electric vehicles,
+  crypto, blockchain or bitcoin (the generator asserts it). ENERGY_TRANSITION stays out of scope (the BKR reading): no reserves of
+  Targa's, refinery services that are NGL balancing for refiners, and the Channelview Splitter as each 10-K describes it (from the FY2019
+  10-K "a 35,000 Bbl/d nameplate capacity crude oil and condensate splitter" that Targa "owns and operates", after Vitol terminated the
+  Splitter Agreement in December 2018), a terminaling asset of the Logistics and Transportation segment rather than a refining business;
+  the FY2019 and FY2020 10-Ks' climate risk factor ("Our and our customers’ operations are subject to a number of risks arising out of the
+  threat of climate change ...") is quoted in the "why". The FY2018 10-K names cloud only in an accounting standard's title; the others do
+  not name it (`cloud_text`, text only). The watch list stays empty and the theme slot at 2/4, so no class moves either way.
+- **Adds nothing:** the 8-Ks of 2019-01-10 and 2021-01-19 (Item 7.01: excerpts of the Partnership's offering memoranda, no figure the
+  models read), the Item 2.02 8-K of 2021-02-24 (the Q4 2020 call's prepared remarks, the Adjusted EBITDA outlook again), the Item 8.01
+  8-Ks of 2020-03-25 (a director's margin sale), 2020-11-13 and 2021-02-25 (10b5-1 plans), the notes, credit and tender 8-Ks, and the
+  officer, director and vote-result 8-Ks.
+
+Controls and checks (before any outcome):
+- **Regression:** the 307 dates of 2012-2017 rebuild byte for byte from the extended sheet and builder.
+- **Controls** (`controls_trgp.py 2018-01-01 2021-12-31`, now also altering each earnings guide's estimated net income): 80 of 80 change no
+  model dated before their publication; 78 change the first weekly date on or after it; 2 are inert (the Q4 2019 and Q4 2020 full-year
+  revenues, whose 10-Ks are public by the first weekly date and win).
+- **Leak scan:** `leak_scan.py --from 2018-01-01`: 65,776 (model, later token) pairs, 0 hits; the positive control finds the print in force
+  in 209 of 209 models. `forward_refs.py --from 2018-01-01`: 0 forward references in 96 dated facts. `selftext.py --allow "Targa Resources
+  Corp. FY" USD "The FY" "The IPO" TG`: 0 misses in 1,026 tokens (TG, the source-id prefix, allowed; it missed once without it).
+- **Years after the as-of date and anachronisms:** none in the 209 models other than the FY horizon labels; every outlook year shown is
+  the current year.
+- **`retro_tool run`:** passes on all 209 dates, with no warning.
+- **Firewall** (run after the build and validation outputs were committed, before any outcome): passes at 46 cutoffs (each fact date of
+  2018-2021 and the day after it, EV's and CRYPTO's live dates and 2022-01-01; listed above), with 0 files changed and no planted text (313
+  to 516 earlier dates each). The TRGP plant now also plants a later GAAP earnings guide for every year guided and the cutoff's year and the
+  next, and the later vintage's splitter and cloud words.
+
+Seen in the build (method behaviour, not tuned):
+- **Totals: CHEAP 112, FAIR 57, RICH 40.** RICH 2018-01-05 to 2018-01-26, FAIR to 2018-03-23, CHEAP 2018-03-29, FAIR 2018-04-06 to
+  2018-07-06, RICH 2018-07-13 to 2018-11-02, FAIR to 2018-11-16, CHEAP 2018-11-23 to 2019-02-15, RICH 2019-02-21 to 2019-05-03, then FAIR
+  and CHEAP alternating to 2020-02-14, RICH 2020-02-21 to 2020-03-06 (the FY2020E $0.329), CHEAP on every date from 2020-03-13 to
+  2021-02-12, FAIR and RICH from 2021-02-19 to 2021-04-30 (the FY2021E $0.699), CHEAP on every date from 2021-05-07 to 2021-12-31. Legacy
+  tiers: BUY 86, ACCUMULATE 53, AVOID 37, WATCHLIST 33.
+- **The anchors and the multiple.** FY15's $1.09 against $32.92-58.51 (30-54x) to 2020-02-14 and against $13.80-30.74 (13-28x) from
+  2020-05-08 to 2021-02-12; the FY2020E $0.329 at 19-119x; the FY2021E $0.699 at 43-50x, then $1.522, $1.740 and $2.045 at 24-32x. The
+  window's median stays 45-48x throughout (it holds 2011-2015 and the current year's days only), so the 2020 and 2021 dates sit at its 0th
+  to 18th percentile.
+- **BASE follows revenue as reported, plus the buyback:** the latest quarter's revenue growth ran from -36.3% (Q3 2019) to +124.2% (Q2
+  2021), less about 21%/yr of dilution (the 2016 buy-in still in the share history).
+
+Sensitivity (each call changed alone, the 209 dates rebuilt and reclassified offline with `retro_tool`'s own classifier; no outcome
+consulted; `sens_trgp_1821.py`):
+- **FY2017, FY2018 and FY2020 kept at a pre-tax upper bound without their listed items** (FY2017 $0.22, FY2018 $0.40, FY2020 $3.26: the
+  impairments added back pre-tax and FY2017's Tax Act benefit removed, before tax and the noncontrolling interests; no filing prints these
+  figures; FY2019 stays a loss): **106 classes** (FAIR to RICH 49, CHEAP to RICH 40), 125 tiers, the batch's largest call;
+- **every data signal at its BEAR value**: 80 classes (FAIR to RICH 52, CHEAP to RICH 17, CHEAP to FAIR 11), no tier; **at XBULL**: 40;
+- **no Series A dividends deducted from the estimate** (net income attributable to TRC over the basic count, which also makes FY2019E a
+  positive $0.19): 55 classes, 68 tiers; **the if-converted reading** (the estimate over the latest diluted count): the same 55 and 68;
+- **the estimated net income read as display only** (FY15's $1.09 on every date): 14 classes (RICH to CHEAP 8, FAIR to CHEAP 6, 2020-02-21
+  to 2021-04-30), 16 tiers; **the cash dividends only** (deemed left out): 11 classes, 13 tiers;
+- **CYCLICAL instead of DURABLE**: no class, no tier; EV, CRYPTO and ENERGY_TRANSITION in scope would be text only, so no class by
+  construction.
+
+Judgement calls that could carry hindsight:
+- FY2017-FY2020 excluded as losses (the existing loss rule), so FY15's $1.09 anchors every date without a positive guide: keeping the
+  loss years at figures without their impairments, which no filing prints, moves 106 of the 209 classes;
+- the estimated net income attributable to TRC read as a GAAP earnings guide (new for TRGP, the KMI rule), with the preferred dividends at
+  the release's quarterly rate deducted and the latest basic count as the denominator: the deduction moves 55 classes, the reading itself
+  14, by a builder who knows how TRGP traded in 2020-2021;
+- the signal set and rule T's thresholds, frozen from 2012-02-24 (80 classes at BEAR);
+- BASE on revenue as reported when no revenue is guided, and the 2016 buy-in's shares still in the buyback;
+- the renamed Logistics and Transportation segment read as the same division, the structural changes in the figures as published, NGLS's
+  unit prices never;
+- EV, CRYPTO and ENERGY_TRANSITION read as out of scope for a gatherer and processor (text only), and DURABLE kept;
+- the non-earnings 8-Ks read by their item text and exhibits for guided numbers only.
+
+The hindsight results for 2018-2021 are in `staging/retrospective/TRGP/FINDINGS.md` ("TRGP 2018-2021"): hypotheses, never inputs.
+
 ## OKE (ONEOK, Inc.): the forty-first ticker, in staging, 2008-2009
 
 The OKE series is built apart from the other forty and shares nothing with them but the machinery: its own fact sheet
