@@ -3,6 +3,11 @@
 changes, and whether the first weekly date on or after it does. In memory; nothing on disk changes.
 
     python3 retro/generators/trgp/controls_trgp.py                        # the 2012-2013 dates
+    python3 retro/generators/trgp/controls_trgp.py 2014-01-01 2017-12-31  # the 2014-2017 dates: the facts published from START
+
+(TRGP 2014-2017) A print's restatement ('restated': the revenue revision of 2014-10-23, the 10-Qs' EPS) is altered in its own figure
+(revenues re-derived, or EPS); the revenue revision's 2013 revenue and each vintage's greenhouse gas quote (the theme clause, from
+ECOMMERCE's live date) are altered as they stand.
 
 build_trgp.py's check_print re-derives every rate from a print's raw figures, so a print's control alters its Gathering and Processing
 operating margin and re-derives the rate; a Q4 print's full-year revenue, a vintage's last-year revenue, each dividend and each outlook's
@@ -38,6 +43,22 @@ def gp(f, i):
     r = p["raw"]
     a, b = r["gp_prior_m"], r["gp_m"]
     p["gp_pct"] = round((b / a - 1) * 100, 1) if a > 0 else round((b - a) / abs(a) * 100, 1)
+    for rs in p.get("restated", []):          # a restatement carries the print's raw figures: the same alteration
+        rs["raw"]["gp_m"] = r["gp_m"]
+
+
+def restated(f, i, j):
+    rs = f["prints"][i]["restated"][j]
+    if rs.get("eps_q") is not None:            # the 10-Q's EPS (display)
+        rs["eps_q"] = round(rs["eps_q"] + 0.01, 2)
+        rs["raw"]["eps_q"] = rs["eps_q"]
+    else:                                      # the revenue revision: revenues and the rates re-derived
+        r = rs["raw"]
+        r["rev_m"] += 50.0
+        mg = lambda x, rev: round(x / rev * 100 + 0.0, 2)
+        rs.update(sales_b=round(r["rev_m"] / 1000, 3), sales_pct=round((r["rev_m"] / r["rev_prior_m"] - 1) * 100, 1),
+                  opm=mg(r["oi_m"], r["rev_m"]), opm_bp=round((mg(r["oi_m"], r["rev_m"]) - mg(r["oi_prior_m"], r["rev_prior_m"])) * 100, 1),
+                  ptm=mg(r["pti_m"], r["rev_m"]), ptm_bp=round((mg(r["pti_m"], r["rev_m"]) - mg(r["pti_prior_m"], r["rev_prior_m"])) * 100, 1))
 
 
 C = []
@@ -46,6 +67,15 @@ for i, p in enumerate(facts0["prints"]):
     if p.get("fy_actual"):
         C.append((f"{p['quarter']} full-year revenue", p["published"],
                   lambda f, i=i: f["prints"][i]["fy_actual"].update(revenue_usd_b=f["prints"][i]["fy_actual"]["revenue_usd_b"] + 0.5)))
+    for j, rs in enumerate(p.get("restated", [])):
+        C.append((f"{p['quarter']} restatement of {rs['published']} ({rs['source']})", rs["published"], lambda f, i=i, j=j: restated(f, i, j)))
+for i, rv in enumerate(facts0.get("revenue_restatements", [])):
+    C.append((f"revenue revision of {rv['published']} ({rv['source']}), its 2013 revenue", rv["published"],
+              lambda f, i=i: f["revenue_restatements"][i]["revenue_usd_b"].update({"2013": 9.9})))
+for i, v in enumerate(facts0["history_vintages"]):
+    if "ghg_quote" in v:
+        C.append((f"{v['fy_label']} vintage of {v['published']}, its greenhouse gas quote", v["published"],
+                  lambda f, i=i: f["history_vintages"][i].update(ghg_quote=f["history_vintages"][i]["ghg_quote"] + " CTRL")))
 for i, v in enumerate(facts0["history_vintages"]):
     y = max(v["revenue_usd_b"])
     C.append((f"{v['fy_label']} vintage, its {y} revenue", v["published"],
@@ -56,6 +86,8 @@ for i, d in enumerate(facts0["dividends"]):
 for i, g in enumerate(facts0["guides"]):
     C.append((f"FY{g['fy']} outlook of {g['published']} ({g['source']}), its display", g["published"],
               lambda f, i=i: f["guides"][i].update(display=f["guides"][i]["display"] + " CTRL")))
+if len(sys.argv) > 2:                           # a later batch: the facts published from START
+    C = [c for c in C if c[1] >= START]
 base = build_all(facts0)
 bad = first_hit = inert = 0
 for name, pub, fn in C:
