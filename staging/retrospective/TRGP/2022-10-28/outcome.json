@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "TRGP",
+ "as_of": "2022-10-28",
+ "computed": "2026-11-28",
+ "data_source": "Yahoo Finance daily closes + dividends (TRGP, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2023-04-28",
+   "price": 75.53,
+   "dividends": 0.85,
+   "total_return_pct": 13.7,
+   "benchmark_total_return_pct": 7.8,
+   "excess_pct": 6.0,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2023-10-27",
+   "price": 84.39,
+   "dividends": 1.35,
+   "total_return_pct": 27.7,
+   "benchmark_total_return_pct": 7.2,
+   "excess_pct": 20.4,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2024-10-28",
+   "price": 164.72,
+   "dividends": 3.85,
+   "total_return_pct": 151.0,
+   "benchmark_total_return_pct": 52.8,
+   "excess_pct": 98.2,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2025-10-28",
+   "price": 152.54,
+   "dividends": 7.35,
+   "total_return_pct": 138.1,
+   "benchmark_total_return_pct": 82.0,
+   "excess_pct": 56.1,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2024-10-24",
+   "price": 168.57
+  },
+  "low": {
+   "date": "2023-03-23",
+   "price": 66.85
+  },
+  "max_drawdown_pct": -15.6,
+  "return_to_avg_price_m12_m24_pct": 72.5
+ },
+ "scenario_landing_2y": "BEAR",
+ "call_check_2y": {
+  "expectation": "CHEAP: should clear the hurdle or beat the benchmark",
+  "hit": true
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "DURABLE",
+   "risk": 2
+  },
+  "today": {
+   "kind": "DURABLE",
+   "risk": 2,
+   "why": "Targa: Permian midstream/NGL; volume-driven, priced for it",
+   "reviewed": "2026-09-22"
+  }
+ }
+}

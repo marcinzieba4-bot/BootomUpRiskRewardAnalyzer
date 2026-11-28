@@ -4,6 +4,7 @@ class and legacy tier, by current-FY EPS and by latest print, per year, plus 3-y
 
     python3 retro/generators/trgp/findings_tables.py 2012,2013
     python3 retro/generators/trgp/findings_tables.py 2018,2019,2020,2021      # (TRGP 2018-2021) the earnings guide's dates grouped as such
+    python3 retro/generators/trgp/findings_tables.py 2022,2023,2024,2025,2026 # (TRGP 2022-2026) dates with no 2-year horizon left out
 
 Run it only after the batch's build, validation outputs, README section and firewall result are committed and pushed, and
 `retro_tool.py outcome` has written the outcomes (retro/README.md, "Adding dates"). Nothing it prints may feed a fact sheet,
@@ -21,6 +22,9 @@ rows = []
 pending = []
 for d in sorted(x for x in glob.glob(os.path.join(REPO, "staging", "retrospective", "TRGP", "20*")) if os.path.basename(x)[:4] in sys.argv[1].split(",")):
     a = json.load(open(os.path.join(d, "analysis.json")))
+    if not os.path.exists(os.path.join(d, "outcome.json")):          # (TRGP 2022-2026) the newest dates: no outcome yet
+        pending.append(a["as_of"])
+        continue
     o = json.load(open(os.path.join(d, "outcome.json")))
     m = open(os.path.join(d, "model.py"), encoding="utf-8").read()
     eps = re.search(r'EPS_LABEL\s+= "([^"]+)"', m).group(1)

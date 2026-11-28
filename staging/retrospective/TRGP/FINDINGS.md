@@ -287,3 +287,102 @@ drawdown -30.2 -30.2
   outcome luck of the window, read as such.
 - The signals at BEAR (80 classes in the sensitivity) and the loss years kept without impairments (106) would have turned many of these
   CHEAP dates RICH; the outcomes favour the encoding as built for 2020-2021 and are mixed for 2018-2019.
+
+## TRGP 2022-2026 (HINDSIGHT: labels, never inputs)
+
+Computed on 2026-11-28 after the 2022-2026 build, its validation outputs, README section ("TRGP 2022-2026") and firewall result were
+committed and pushed (`retro_tool.py outcome` on the 256 dates, then `findings_tables.py 2022,2023,2024,2025,2026`). Only the 151 dates
+to 2024-11-22 have a 2-year horizon; the 105 from 2024-11-29 to 2026-11-27 are left out (2026-11-27 has no outcome at all yet). Nothing
+here may feed a fact sheet, a builder or a rule; a pattern below is a hypothesis for a later method version with its own full re-run,
+never a correction of these dates. This section was written after the 2012-2021 sections above were first opened, which happened only
+once the batch's build and README were committed.
+
+**Across the dates with a 2-year horizon (2-year total return; hurdle 15%/yr; "held" is `retro_tool`'s 2-year call check):**
+
+| Class | Dates | Median 2-yr total return | Cleared hurdle | Beat SPY | Call held |
+|---|---|---|---|---|---|
+| CHEAP | 125 | +120.4% | 125 | 125 | 125 |
+| FAIR | 8 | +101.4% | 8 | 8 | 0 |
+| RICH | 18 | +108.0% | 18 | 18 | 0 |
+
+The calls held on 125 of 151 dates. Every one of the 151 dates cleared the hurdle and beat SPY (2-year total returns +38.3% to +211.0%; CHEAP +41.3% to +211.0%).
+By year: 2022 (52 CHEAP) median +106.8%, held 52; 2023 (52 CHEAP) +124.2%, held 52; 2024 to 2024-11-22 (21 CHEAP, 8 FAIR, 18 RICH)
+held 21 of 47.
+### 2022 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY (2022-01-07 to 2022-12-30) | 52 | +106.8% | +41.3% to +181.5% | 52 | 52 | +47.7% | 52 |
+| FY21E $2.045 (the earnings guide) (2022-01-07 to 2022-02-18) | 7 | +54.6% | +41.3% to +61.6% | 7 | 7 | +37.1% | 7 |
+| FY22E $5.13 (the earnings guide) (2022-02-25 to 2022-04-29) | 10 | +54.5% | +49.5% to +64.8% | 10 | 10 | +16.7% | 10 |
+| FY22E $5.186 (the earnings guide) (2022-05-06 to 2022-06-17) | 7 | +63.7% | +54.5% to +106.8% | 7 | 7 | +24.5% | 7 |
+| FY22E $5.58 (the earnings guide) (2022-06-24 to 2022-07-29) | 6 | +128.3% | +97.5% to +134.7% | 6 | 6 | +60.9% | 6 |
+| FY22E $4.155 (the earnings guide) (2022-08-05 to 2022-10-28) | 13 | +125.2% | +103.9% to +167.3% | 13 | 13 | +57.5% | 13 |
+| FY22E $4.177 (the earnings guide) (2022-11-04 to 2022-12-30) | 9 | +168.2% | +147.0% to +181.5% | 9 | 9 | +69.0% | 9 |
+| latest print Q3 2021 (2022-01-07 to 2022-02-18) | 7 | +54.6% | +41.3% to +61.6% | 7 | 7 | +37.1% | 7 |
+| latest print Q4 2021 (2022-02-25 to 2022-04-29) | 10 | +54.5% | +49.5% to +64.8% | 10 | 10 | +16.7% | 10 |
+| latest print Q1 2022 (2022-05-06 to 2022-07-29) | 13 | +97.5% | +54.5% to +134.7% | 13 | 13 | +43.7% | 13 |
+| latest print Q2 2022 (2022-08-05 to 2022-10-28) | 13 | +125.2% | +103.9% to +167.3% | 13 | 13 | +57.5% | 13 |
+| latest print Q3 2022 (2022-11-04 to 2022-12-30) | 9 | +168.2% | +147.0% to +181.5% | 9 | 9 | +69.0% | 9 |
+3y (52 dates with one): 52 of 52 cleared, 52 beat SPY; range +116.1% to +302.6%
+1y range -8.9 44.9 excess 2y 23.8 129.6
+drawdown -30.2 -15.6
+
+### 2023 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY (2023-01-06 to 2023-12-29) | 52 | +124.2% | +80.9% to +211.0% | 52 | 52 | +108.6% | 52 |
+| FY22E $4.177 (the earnings guide) (2023-01-06 to 2023-02-17) | 7 | +174.9% | +161.0% to +191.2% | 7 | 7 | +87.4% | 7 |
+| FY23E $5.428 (the earnings guide) (2023-02-23 to 2023-04-28) | 10 | +153.3% | +117.9% to +211.0% | 10 | 10 | +114.1% | 10 |
+| FY23E $3.972 (the earnings guide) (2023-05-05 to 2023-07-28) | 13 | +136.0% | +109.3% to +146.6% | 13 | 13 | +134.6% | 13 |
+| FY23E $4.208 (the earnings guide) (2023-08-04 to 2023-10-27) | 13 | +98.5% | +80.9% to +107.4% | 13 | 13 | +107.4% | 13 |
+| FY23E $4.076 (the earnings guide) (2023-11-03 to 2023-12-29) | 9 | +108.1% | +84.5% to +121.1% | 9 | 9 | +101.7% | 9 |
+| latest print Q3 2022 (2023-01-06 to 2023-02-17) | 7 | +174.9% | +161.0% to +191.2% | 7 | 7 | +87.4% | 7 |
+| latest print Q4 2022 (2023-02-23 to 2023-04-28) | 10 | +153.3% | +117.9% to +211.0% | 10 | 10 | +114.1% | 10 |
+| latest print Q1 2023 (2023-05-05 to 2023-07-28) | 13 | +136.0% | +109.3% to +146.6% | 13 | 13 | +134.6% | 13 |
+| latest print Q2 2023 (2023-08-04 to 2023-10-27) | 13 | +98.5% | +80.9% to +107.4% | 13 | 13 | +107.4% | 13 |
+| latest print Q3 2023 (2023-11-03 to 2023-12-29) | 9 | +108.1% | +84.5% to +121.1% | 9 | 9 | +101.7% | 9 |
+3y (47 dates with one): 47 of 52 cleared, 47 beat SPY; range +150.2% to +307.2%
+1y range 11.5 139.1 excess 2y 18.3 162.4
+drawdown -32.6 -17.2
+
+### 2024 (47 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY (2024-01-05 to 2024-08-09) | 21 | +129.3% | +95.2% to +158.0% | 21 | 21 | +67.4% | 21 |
+| class RICH, legacy tier BUY (2024-05-17 to 2024-07-26) | 10 | +119.5% | +101.1% to +137.5% | 10 | 10 | +59.1% | 0 |
+| class FAIR, legacy tier BUY (2024-05-24 to 2024-09-13) | 6 | +103.1% | +99.2% to +148.7% | 6 | 6 | +51.6% | 0 |
+| class FAIR, legacy tier ACCUMULATE (2024-09-20 to 2024-09-27) | 2 | +96.4% | +94.7% to +96.4% | 2 | 2 | +56.3% | 0 |
+| class RICH, legacy tier ACCUMULATE (2024-10-04 to 2024-10-04) | 1 | +83.4% | +83.4% to +83.4% | 1 | 1 | +46.6% | 0 |
+| class RICH, legacy tier WATCHLIST (2024-10-11 to 2024-11-01) | 4 | +87.0% | +77.8% to +95.7% | 4 | 4 | +45.6% | 0 |
+| class RICH, legacy tier AVOID (2024-11-06 to 2024-11-22) | 3 | +46.8% | +38.3% to +56.0% | 3 | 3 | +26.3% | 0 |
+| FY23E $4.076 (the earnings guide) (2024-01-05 to 2024-02-09) | 6 | +132.6% | +116.5% to +158.0% | 6 | 6 | +104.1% | 6 |
+| FY24E $5.295 (the earnings guide) (2024-02-16 to 2024-04-26) | 11 | +129.7% | +112.0% to +146.2% | 11 | 11 | +62.0% | 11 |
+| FY24E $5.453 (the earnings guide) (2024-05-03 to 2024-07-26) | 13 | +122.1% | +101.1% to +148.7% | 13 | 13 | +61.2% | 2 |
+| FY24E $6.131 (the earnings guide) (2024-08-02 to 2024-11-01) | 14 | +96.4% | +77.8% to +113.2% | 14 | 14 | +50.9% | 2 |
+| FY24E $6.256 (the earnings guide) (2024-11-06 to 2024-11-22) | 3 | +46.8% | +38.3% to +56.0% | 3 | 3 | +26.3% | 0 |
+| latest print Q3 2023 (2024-01-05 to 2024-02-09) | 6 | +132.6% | +116.5% to +158.0% | 6 | 6 | +104.1% | 6 |
+| latest print Q4 2023 (2024-02-16 to 2024-04-26) | 11 | +129.7% | +112.0% to +146.2% | 11 | 11 | +62.0% | 11 |
+| latest print Q1 2024 (2024-05-03 to 2024-07-26) | 13 | +122.1% | +101.1% to +148.7% | 13 | 13 | +61.2% | 2 |
+| latest print Q2 2024 (2024-08-02 to 2024-11-01) | 14 | +96.4% | +77.8% to +113.2% | 14 | 14 | +50.9% | 2 |
+| latest print Q3 2024 (2024-11-06 to 2024-11-22) | 3 | +46.8% | +38.3% to +56.0% | 3 | 3 | +26.3% | 0 |
+3y: none yet
+1y range -15.9 164.8 excess 2y 19.9 116.7
+drawdown -32.6 -32.6
+
+**Hypotheses (for a later method version, each needing its own full re-run; none applied here):**
+- The CHEAP calls of 2022-2023 (104 dates) held on every date. They rest on the earnings guide ($3.97-$5.58) read against a window whose
+  median (37-49x) was set by the 2012-2015 multiples on $0.91-$2.43 of EPS. The sensitivity's display-only reading (FY15's $1.09 standing
+  to 2023-02-17, FY22's $3.88 after; 75 CHEAP dates move in all, from 2022-04-01) would have made many of them
+  RICH or FAIR. The outcomes favour reading the estimated net income as a guide.
+  But the window is the weaker half of the call: the same CHEAP class would have come from almost any positive guide against those old
+  multiples.
+- The RICH and FAIR dates of May to November 2024 (26) all missed: +38% to +149% over two years. The window's median had fallen to
+  21-24x as the 2012-2015 days left it, so a 20-30x P/E on the FY2024E guide read as rich for a business whose GAAP EPS then rose from
+  $5.74 to $8.49. A hypothesis about the ten-year cut and short windows after long loss gaps (the sensitivity's no-cut reading moves 57
+  classes, most from 2024-05-17), not a rule.
+- The deduction after the Series A redemption moved only 6 classes, all after the 2-year horizon; the outcomes say nothing about it yet.
+- The signals at BEAR (103 classes in the sensitivity, CHEAP to RICH from 2023-08-04) would have turned many of the held CHEAP calls RICH.
+  The outcomes favour the frozen encoding for 2023-2024.
