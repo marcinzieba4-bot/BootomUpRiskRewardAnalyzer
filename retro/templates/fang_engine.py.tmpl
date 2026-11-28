@@ -3,12 +3,11 @@
 # ENGINE — identical in every retrospective; everything above is dated facts.
 # FROZEN RULES (retro method r2): scenario inputs are derived from the facts
 # above, never chosen by hand, so no later knowledge can enter through them.
-# FANG (Diamondback Energy) oil and gas producer sibling: a copy of xom_engine.py.tmpl (rules
-# R1-R5, scoring, robustness and export the same) with every signal threshold UNSET and the
-# signals renamed as placeholders for an onshore producer. No FANG date is built yet
-# (retro/README.md, "FANG 2008-2009"): the signals are a decision for the first buildable batch,
-# and their thresholds must come from rule T on Diamondback's own filings (retro/facts/FANG.json)
-# before any date is built. Nothing of XOM's facts or thresholds is carried here.
+# FANG (Diamondback Energy, Inc., NASDAQ: FANG, listed 2012-10-12) onshore oil and gas producer engine: a copy of
+# lyb_engine.py.tmpl (rules R1-R5, scoring, robustness, export and the listing, excluded-year and short-history
+# rules the same); the signals (oil-equivalent production, oil production, revenue, lease operating expense per
+# BOE and the pre-tax margin), their thresholds (rule T on Diamondback's own filings) and the report wording differ.
+# Nothing of another ticker's facts or thresholds is carried here (retro/README.md, "FANG 2014-2017").
 # ═════════════════════════════════════════════════════════════════════════════
 import math
 
@@ -28,35 +27,48 @@ def _ordinal(n):
 def _now(v, u):
     return "n/r" if v is None else f"{v:+.1f}{u}"   # n/r: not reported (no figure in the filings public on AS_OF)
 
+def _usd(v):
+    return f"${v:.2f}" if v >= 0 else f"$({-v:.2f})"    # a loss per share in parentheses, as the filings print it
+
+# Short history (the bounds rule of method r2, retro/README.md, "FANG 2014-2017"): a company listed in October 2012, whose first full
+# year of its own EPS is 2013 (2012 has pro forma figures only), leaves too few years for some rules; where a rule cannot be measured, its own
+# bound stands: BEAR's 0% cap, BULL's BASE floor, XBULL's BULL floor, no net buyback from one share count. With enough years
+# each line is r2's.
 _FY = sorted(EPS_NORM)     # a year excluded from the history (a distorted year, method r2) leaves a gap: growth is measured
                             # only between years in it (one-year changes between consecutive years, two-year runs between two)
 EPS_YOY           = [EPS_NORM[y] / EPS_NORM[y - 1] - 1 for y in _FY[1:] if y - 1 in EPS_NORM]
-REV_YOY           = [REVENUE_HIST[y] / REVENUE_HIST[y - 1] - 1 for y in sorted(REVENUE_HIST)[1:]]
+_RY               = sorted(REVENUE_HIST)
+REV_YOY           = [REVENUE_HIST[y] / REVENUE_HIST[y - 1] - 1 for y in _RY[1:] if y - 1 in REVENUE_HIST]
 REV_MEDIAN_GROWTH = _median(REV_YOY)                                                # median revenue growth over the history
-REV_CAGR_10Y      = _cagr(REVENUE_HIST[min(REVENUE_HIST)], REVENUE_HIST[max(REVENUE_HIST)], max(REVENUE_HIST) - min(REVENUE_HIST))
+REV_CAGR_10Y      = _cagr(REVENUE_HIST[_RY[0]], REVENUE_HIST[_RY[-1]], _RY[-1] - _RY[0]) if len(_RY) > 1 else 0.0
 MARGIN_CONTRIB    = (FY_MARGIN_BASE - PREV_FY_MARGIN) / FY_MARGIN_BASE if MARGIN_GUIDED else 0.0   # guided margin step, as EPS growth
-BUYBACK           = _cagr(SHARES_HIST[max(SHARES_HIST)], SHARES_HIST[min(SHARES_HIST)], max(SHARES_HIST) - min(SHARES_HIST))
+_SY               = sorted(SHARES_HIST)
+BUYBACK           = _cagr(SHARES_HIST[_SY[-1]], SHARES_HIST[_SY[0]], _SY[-1] - _SY[0]) if len(_SY) > 1 else 0.0
 FWD_MID           = sum(FWD_GUIDE) / 2 / 100                                         # forward revenue growth (guide, else latest quarter)
 _SPAN             = f"FY{_FY[0] % 100:02d}-FY{_FY[-1] % 100:02d}" + "".join(f" ex-FY{y % 100:02d}" for y in range(_FY[0], _FY[-1]) if y not in EPS_NORM)
+_CAGR_ALL         = _cagr(EPS_NORM[_FY[0]], EPS_NORM[_FY[-1]], _FY[-1] - _FY[0]) if len(_FY) > 1 else None
+_RUNS             = [_cagr(EPS_NORM[y - 2], EPS_NORM[y], 2) for y in _FY[1:] if y - 2 in EPS_NORM]   # runs whose ends are both in it
 
 # R1  scenario EPS growth, current FY -> FY+2 (per year)
 SCENARIO_CAGR = {
-    "BEAR":  min(0.0, min(EPS_YOY)),                                    # worst year of the history, capped at 0
+    "BEAR":  min([0.0] + EPS_YOY),                                      # worst year of the history, capped at 0
     "BASE":  FWD_MID + MARGIN_CONTRIB + BUYBACK,                        # latest forward guide carried forward
-    "BULL":  _cagr(EPS_NORM[_FY[0]], EPS_NORM[_FY[-1]], _FY[-1] - _FY[0]),   # EPS CAGR over the history
-    "XBULL": max(_cagr(EPS_NORM[y - 2], EPS_NORM[y], 2) for y in _FY[2:] if y - 2 in EPS_NORM),   # best 2-yr run of the history
+    "BULL":  _CAGR_ALL if _CAGR_ALL is not None else -math.inf,          # EPS CAGR over the history (none: BASE's, below)
+    "XBULL": max(_RUNS) if _RUNS else -math.inf,                         # best 2-yr run of the history (none: BULL's, below)
 }
 SCENARIO_CAGR["BULL"]  = max(SCENARIO_CAGR["BULL"], SCENARIO_CAGR["BASE"])
 SCENARIO_CAGR["XBULL"] = max(SCENARIO_CAGR["XBULL"], SCENARIO_CAGR["BULL"])
 SCENARIO_EPS = {k: round(EPP_TODAY_EPS * (1 + g) ** 2, 2) for k, g in SCENARIO_CAGR.items()}
-# R2  scenario P/E = percentile band of the stock's own P/E over the window (up to 10 yr)
+# R2  scenario P/E = percentile band of the stock's own P/E over the window (up to 10 yr; from the listing, the listing rule)
 SCENARIO_PE  = {"BEAR": PE_PCTL["p10"], "BASE": PE_PCTL["median"], "BULL": PE_PCTL["p75"], "XBULL": PE_PCTL["p90"]}
 SCENARIO_TXT = {
-    "BEAR":  (f"EPS {SCENARIO_CAGR['BEAR']*100:+.1f}%/yr (worst year {_SPAN}, capped at 0%); P/E to its 10th pct" if SCENARIO_CAGR["BEAR"] < 0
-              else f"Flat EPS (worst year {_SPAN}, capped at 0%); P/E to its 10th pct"),
-    "BASE":  f"EPS +{SCENARIO_CAGR['BASE']*100:.1f}%/yr ({FWD_BASIS_SHORT} + margin + buyback); P/E at its {WINDOW_LABEL} median",
-    "BULL":  f"EPS +{SCENARIO_CAGR['BULL']*100:.1f}%/yr ({_SPAN} CAGR); P/E holds its 75th pct",
-    "XBULL": f"EPS +{SCENARIO_CAGR['XBULL']*100:.1f}%/yr (best 2-yr run {_SPAN}); P/E at its 90th pct",
+    "BEAR":  (f"EPS {SCENARIO_CAGR['BEAR']*100:+.1f}%/yr (worst year {_SPAN}, capped at 0%); P/E to its 10th pct" if EPS_YOY else
+              f"Flat EPS (no EPS change in {_SPAN} to measure: the 0% cap); P/E to its 10th pct"),
+    "BASE":  f"EPS {SCENARIO_CAGR['BASE']*100:+.1f}%/yr ({FWD_BASIS_SHORT} + margin + buyback); P/E at its {WINDOW_LABEL} median",
+    "BULL":  (f"EPS {SCENARIO_CAGR['BULL']*100:+.1f}%/yr ({_SPAN} CAGR, at least BASE); P/E holds its 75th pct" if _CAGR_ALL is not None else
+              f"EPS {SCENARIO_CAGR['BULL']*100:+.1f}%/yr (no {_SPAN} CAGR to measure: BASE's rate); P/E holds its 75th pct"),
+    "XBULL": (f"EPS {SCENARIO_CAGR['XBULL']*100:+.1f}%/yr (best 2-yr run {_SPAN}, at least BULL); P/E at its 90th pct" if _RUNS else
+              f"EPS {SCENARIO_CAGR['XBULL']*100:+.1f}%/yr (no 2-yr run in {_SPAN}: BULL's rate); P/E at its 90th pct"),
 }
 # R3  EPP floor P/E = median of the calendar-year P/E lows, rounded down
 EPP_MIN_PE = float(math.floor(_median([pe for _, pe, _ in YEARLY_MIN_PE])))
@@ -77,35 +89,37 @@ CONS_EPS_CAGR = max(0.0, SCENARIO_CAGR["BASE"] - 0.02)
 CONS_EXIT_PE  = float(math.floor(PE_PCTL["median"]))
 
 # ── SIGNALS (thresholds frozen; values are the latest reported quarter) ───────
-# thresholds by rule T on Diamondback's own filings: UNSET (None) until the first buildable batch derives them;
-# retro/build_fang.py refuses every date before that, and this assertion stops a model that would use them.
-# The signal names are placeholders (no FANG print is transcribed)
-RULE_T_UNSET = None
+# thresholds by rule T (retro/README.md, "FANG 2014-2017"; retro/facts/FANG.json, rule_t): BULL = the median of the annual
+# year-on-year changes the filings public on 2014-02-21 report (the FY2013 10-K, the FY2012 10-K for the years only it reports),
+# XBULL = the best year, BASE = the worst year, BEAR = one median-to-worst step beyond the worst (mirrored for the unit cost);
+# retro/build_fang.py checks these numbers against the fact sheet. Each value against the year-ago quarter as the release shows
+# it: oil-equivalent and oil production (Selected Operating Data, MBOE and MBbl), revenue growth (total revenues), lease
+# operating expense per BOE (lower is better) and the pre-tax margin (income before income taxes on total revenues)
+_f = lambda v: None if v is None else float(v)
 SIGNALS = [
-    ("Oil-equivalent production", "% YoY", RULE_T_UNSET, RULE_T_UNSET, RULE_T_UNSET, RULE_T_UNSET, float(LATEST["production_pct"]), True,
+    ("Oil-equivalent production", "% YoY", 14.0, 46.0, 78.0, 148.0, _f(LATEST["production_pct"]), True,
      "Well declines outrun new wells"),
-    ("Oil production", "% YoY", RULE_T_UNSET, RULE_T_UNSET, RULE_T_UNSET, RULE_T_UNSET, float(LATEST["oil_pct"]), True,
+    ("Oil production", "% YoY", 52.0, 60.0, 68.0, 167.0, _f(LATEST["oil_pct"]), True,
      "The oil share of new wells falls"),
-    ("Revenue growth", "% YoY", RULE_T_UNSET, RULE_T_UNSET, RULE_T_UNSET, RULE_T_UNSET, float(LATEST["sales_pct"]), True,
+    ("Revenue growth", "% YoY", -142.0, -30.0, 81.0, 177.0, _f(LATEST["sales_pct"]), True,
      "Oil and gas prices fall"),
-    ("Lease operating expense per Boe", "% YoY", RULE_T_UNSET, RULE_T_UNSET, RULE_T_UNSET, RULE_T_UNSET, float(LATEST["loe_boe_pct"]), False,
+    ("Lease operating expense per BOE", "% YoY", 130.0, 58.0, -14.0, -44.0, _f(LATEST["loe_boe_pct"]), False,
      "Unit costs rise"),
-    (MARGIN_SIGNAL_NAME, "bp YoY", RULE_T_UNSET, RULE_T_UNSET, RULE_T_UNSET, RULE_T_UNSET,
-     round((FY_MARGIN_BASE - PREV_FY_MARGIN) * 100, 1) if MARGIN_GUIDED else float(LATEST["pretax_margin_bp"]), True,
-     "Costs stay up while prices and margins fall"),
+    (MARGIN_SIGNAL_NAME, "bp YoY", -8730.0, -3100.0, 2530.0, 49380.0,
+     round((FY_MARGIN_BASE - PREV_FY_MARGIN) * 100, 1) if MARGIN_GUIDED else _f(LATEST["pretax_margin_bp"]), True,
+     "Impairments, hedges and interest as prices fall"),
     (THEME_SIGNAL_NAME, "/4", 1.0, 2.0, 3.0, 4.0, 2.0, True,
      THEME_SIGNAL_TRIGGER),
 ]
-assert all(x is not None for s in SIGNALS for x in s[2:6]), "FANG's rule-T thresholds are unset: derive them first"
 WEIGHTS = [0.20, 0.20, 0.15, 0.15, 0.15, 0.15]
 CONS_SIGNALS = [(i, s[3], f"BASE floor (vs {s[6]:+.0f} now)" if s[6] is not None else "BASE floor (not reported now)")
                 for i, s in enumerate(SIGNALS)]
 
-# ── SEGMENT BRIDGE (current-FY revenues split pro rata to the latest annual actuals; bear flat, bull at the historical revenue CAGR) ──
+# ── SEGMENT BRIDGE (current-FY revenues split pro rata to the latest annual segment revenues; bear flat, bull at the historical revenue CAGR) ──
 _basis = sum(v for _, v, _ in GROUPS)
 SEGMENTS = [(n, f"{lc:+.1f}% revenues in {GROUPS_BASIS.split()[0]}" if lc is not None else f"new in {GROUPS_BASIS.split()[0]} (no prior year)",
-             round(FY_REVENUE_B * v / _basis, 1),
-             round(FY_REVENUE_B * v / _basis, 1), round(FY_REVENUE_B * v / _basis * (1 + REV_CAGR_10Y) ** 2, 1))
+             round(FY_REVENUE_B * v / _basis, 3),
+             round(FY_REVENUE_B * v / _basis, 3), round(FY_REVENUE_B * v / _basis * (1 + REV_CAGR_10Y) ** 2, 3))
             for n, v, lc in GROUPS]
 CHECK_MARGIN = {"CUR": CHECK_PRETAX_MARGIN / 100, "BEAR": CHECK_PRETAX_MARGIN / 100, "BULL": CHECK_PRETAX_MARGIN / 100 + 0.004}
 SHARES_FY25_B = SHARES_DIL_B * (1 - BUYBACK) ** 2
@@ -239,13 +253,14 @@ _verdict = ev["verdict"]
 ratio_b  = ev["rb"]
 signal_short, signal_full = legacy_tier(ratio_b)
 L = LATEST
-# oil-equivalent production in the text (every release of the period states it)
-_pr_move = f"oil-equivalent production went from {_now(PREV_PRODUCTION[0], '%')} ({PREV_PRODUCTION[1]}) to {L['production_pct']:+.1f}% ({L['quarter']})"
+_usdn = lambda v: "n/r" if v is None else _usd(v)     # a year-ago quarter with no GAAP EPS (2012: pro forma only)
+# oil-equivalent production growth in the text (the first line of every release's operating data)
+_pr_move = f"oil-equivalent production growth went from {_now(PREV_SEG[0], '%')} ({PREV_SEG[1]}) to {_now(L['production_pct'], '%')} ({L['quarter']})"
 
 # ── OUTPUT ────────────────────────────────────────────────────────────────────
 print()
 print("═" * W)
-print(f"  {TICKER}  ·  {COMPANY}  ·  {CUR}{CURRENT_PRICE:,.2f}  ·  RETROSPECTIVE as of {AS_OF}")
+print(f"  {LISTED_SYMBOL}  ·  {COMPANY}  ·  {CUR}{CURRENT_PRICE:,.2f}  ·  RETROSPECTIVE as of {AS_OF}")
 print(f"  Signal: {signal_full}   Ratio B: {ratio_b:.2f}x   Adj gap: {adj_gap:+.2f}  [{_verdict}]")
 print(f"  Point-in-time: {len(SOURCES)} sources, latest published {max(s['published'] for s in SOURCES)}; latest print {L['quarter']} ({L['release']})")
 print("═" * W)
@@ -257,31 +272,32 @@ print("  " + "─" * (W-2))
 tot_now = tot_bear = tot_bull = 0.0
 for seg_name, seg_desc, s_now, s_bear, s_bull in SEGMENTS:
     tot_now += s_now; tot_bear += s_bear; tot_bull += s_bull
-    print(f"  {seg_name[:24]:<24}  {CUR}{s_now:>8.1f}  {CUR}{s_bear:>6.1f}  {CUR}{s_bull:>6.1f}    "
-          f"{s_bear-s_now:>+6.1f}    {s_bull-s_now:>+6.1f}")
+    print(f"  {seg_name[:24]:<24}  {CUR}{s_now:>8.3f}  {CUR}{s_bear:>6.3f}  {CUR}{s_bull:>6.3f}    "
+          f"{s_bear-s_now:>+6.3f}    {s_bull-s_now:>+6.3f}")
     print(f"    {seg_desc}")
 print("  " + "─" * (W-2))
-print(f"  {'TOTAL':<24}  {CUR}{tot_now:>8.1f}  {CUR}{tot_bear:>6.1f}  {CUR}{tot_bull:>6.1f}    "
-      f"{tot_bear-tot_now:>+6.1f}    {tot_bull-tot_now:>+6.1f}")
+print(f"  {'TOTAL':<24}  {CUR}{tot_now:>8.3f}  {CUR}{tot_bear:>6.3f}  {CUR}{tot_bull:>6.3f}    "
+      f"{tot_bear-tot_now:>+6.3f}    {tot_bull-tot_now:>+6.3f}")
 _fyg = FY_REVENUE_B / REVENUE_HIST[max(REVENUE_HIST)] - 1
-print(f"  {FY_E} = {FY_PREV} ${REVENUE_HIST[max(REVENUE_HIST)]:.2f}B × (1 {'+' if _fyg >= 0 else '−'} {abs(_fyg)*100:.1f}%: {FY_REVENUE_LABEL}); "
+print(f"  {FY_E} = {FY_PREV} ${REVENUE_HIST[max(REVENUE_HIST)]:.3f}B × (1 {'+' if _fyg >= 0 else '−'} {abs(_fyg)*100:.1f}%: {FY_REVENUE_LABEL}); "
       f"split pro rata to {GROUPS_BASIS}")
-print(f"  {L['quarter']} ({L['release']}): total revenues ${L['sales_b']:.2f}B {L['sales_pct']:+.1f}%; "
-      f"oil-equivalent production {L['production_pct']:+.1f}%; oil production {L['oil_pct']:+.1f}%;")
-print(f"  LOE per Boe {L['loe_boe_pct']:+.1f}%; pre-tax margin {L['pretax_margin']:.2f}% ({L['pretax_margin_bp']:+.1f}bp); "
-      f"EPS ${L['eps_q']:.2f} vs ${L['eps_q_prior']:.2f}")
-print(f"  {VOLUMES_TEXT}")
+print(f"  {L['quarter']} ({L['release']}): revenues ${L['sales_b']:.3f}B {L['sales_pct']:+.1f}%; oil-equivalent production "
+      f"{_now(L['production_pct'], '%')}, oil {_now(L['oil_pct'], '%')};")
+print(f"  LOE per BOE {_now(L['loe_boe_pct'], '%')}; pre-tax margin {L['pretax_margin']:.2f}% "
+      f"({L['pretax_margin_bp']:+.1f}bp); EPS {_usd(L['eps_q'])} vs {_usdn(L['eps_q_prior'])}")
+print(f"  {ACTIVITY_TEXT}")
 print(f"  {GUIDE_TEXT}")
 
-# the EPS check runs on the pre-tax margin on total revenues; display only
+# the EPS check runs on the last full year's pre-tax margin (income before income taxes on revenues, the company's operating
+# profit before tax where it publishes one) and its tax rate; display only
 eps_23 = tot_now * CHECK_MARGIN["CUR"] * (1 - TAX_RATE) / SHARES_DIL_B
 eps_bear = tot_bear * CHECK_MARGIN["BEAR"] * (1 - TAX_RATE) / SHARES_FY25_B
 eps_bull = tot_bull * CHECK_MARGIN["BULL"] * (1 - TAX_RATE) / SHARES_FY25_B
-print(f"\n  {FY_E} EPS check:  {CUR}{tot_now:.1f}B × {CHECK_MARGIN['CUR']*100:.1f}% pre-tax × (1−{TAX_RATE*100:.1f}%) ÷ {SHARES_DIL_B:.3f}B"
+print(f"\n  {FY_E} EPS check:  {CUR}{tot_now:.3f}B × {CHECK_MARGIN['CUR']*100:.1f}% pre-tax × (1−{TAX_RATE*100:.1f}%) ÷ {SHARES_DIL_B:.3f}B"
       f"  =  {CUR}{eps_23:.2f}  ({EPS_LABEL})")
-print(f"  {FY_H} BEAR check: {CUR}{tot_bear:.1f}B × {CHECK_MARGIN['BEAR']*100:.1f}% ÷ {SHARES_FY25_B:.3f}B  =  {CUR}{eps_bear:.2f}"
+print(f"  {FY_H} BEAR check: {CUR}{tot_bear:.3f}B × {CHECK_MARGIN['BEAR']*100:.1f}% ÷ {SHARES_FY25_B:.3f}B  =  {CUR}{eps_bear:.2f}"
       f"  (scenario {CUR}{SCENARIOS['BEAR'][0]:.2f})")
-print(f"  {FY_H} BULL check: {CUR}{tot_bull:.1f}B × {CHECK_MARGIN['BULL']*100:.1f}% ÷ {SHARES_FY25_B:.3f}B  =  {CUR}{eps_bull:.2f}"
+print(f"  {FY_H} BULL check: {CUR}{tot_bull:.3f}B × {CHECK_MARGIN['BULL']*100:.1f}% ÷ {SHARES_FY25_B:.3f}B  =  {CUR}{eps_bull:.2f}"
       f"  (scenario {CUR}{SCENARIOS['BULL'][0]:.2f})")
 print(f"  Every 1pp of pre-tax margin ≈ {CUR}{tot_now*0.01*(1-TAX_RATE)/SHARES_DIL_B:.2f} EPS ≈ {CUR}{tot_now*0.01*(1-TAX_RATE)/SHARES_DIL_B*PE_PCTL['median']:.0f}/share at the median P/E")
 
@@ -290,7 +306,7 @@ print(f"  {'Signal':<32}  {'BEAR':>7}  {'BASE':>7}  {'BULL':>7}  {'XBULL':>7}  {
 print("  " + "─" * (W-2))
 for name_, unit, bv, bf, blf, xf, cv, hib, narr, s, w in scored:
     u = unit.split()[0] if unit else ""
-    op = "≥" if hib else "≤"                           # the inventory gap is the one lower-is-better signal
+    op = "≥" if hib else "≤"                           # every signal of this engine is higher-is-better
     bv_s  = f"{bv:+.1f}{u}"
     bar   = "█" * s + "░" * (4 - s)
     print(f"  {name_:<32}  {bv_s:>7}  {f'{op}{bf:.1f}{u}':>7}  {f'{op}{blf:.1f}{u}':>7}  {f'{op}{xf:.1f}{u}':>7}  {_now(cv, u):>8}  {ICONS[s]}  {bar}")
@@ -316,8 +332,8 @@ print(f"\n  Bear composite:  {bear_composite:.2f}  →  Bear scenario price: ~{C
 print(f"  Bear probability (proxy model):  {proxy_probs['BEAR']*100:.1f}%")
 print(f"""
   KEY TRIGGER: {_pr_move};
-  the bear case needs a commodity-price fall that the pre-tax margin ({L['pretax_margin_bp']:+.1f}bp now)
-  and production growth ({L['production_pct']:+.1f}% now) no longer absorb. {KEY_TRIGGER_TAIL}""")
+  the bear case needs oil production ({_now(L['oil_pct'], '%')} now) and revenues
+  ({L['sales_pct']:+.1f}% now) to give way as well. {KEY_TRIGGER_TAIL}""")
 
 print(f"\n  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)")
 print("  " + "─" * (W-2))
@@ -367,7 +383,7 @@ print(f"  1-sigma range (1yr):  {CUR}{CURRENT_PRICE - sigma_1yr:,.0f}  –  {CUR
 print(f"  2-sigma range (1yr):  {CUR}{CURRENT_PRICE - 2*sigma_1yr:,.0f}  –  {CUR}{CURRENT_PRICE + 2*sigma_1yr:,.0f}")
 print(f"  {'─'*60}")
 print(f"  Bear {CUR}{SCENARIOS['BEAR'][2]:,} requires:  ~{sigma_needed_bear:.1f}σ price move  {'(unusual — requires fundamental break)' if sigma_needed_bear > 1.5 else '(within normal vol range)'}")
-print(f"""  An integrated oil and gas company with a {VOL_BETA:.1f} beta: the stock is {(CURRENT_PRICE/REF_LOW-1)*100:+.0f}% off its {REF_LOW_LABEL}
+print(f"""  {KIND_TEXT} with a {VOL_BETA:.1f} beta: the stock is {(CURRENT_PRICE/REF_LOW-1)*100:+.0f}% off its {REF_LOW_LABEL}
   low while {_pr_move}.
   {'The rally is in the multiple, not the numbers.' if CURRENT_PRICE / REF_LOW > 1.10 else 'Near the low: the multiple has de-rated alongside the numbers.'}""")
 
@@ -419,8 +435,8 @@ for name_, kw in VARIANTS:
 print()
 print("═" * W)
 print("  Key catalysts to watch (from the as-of date):")
-print(f"  (1) {NEXT_PRINT} — the next read on oil-equivalent production ({L['production_pct']:+.1f}% now); no guide to read it against")
-print(f"  (2) Pre-tax margin — {L['pretax_margin_bp']:+.1f}bp in {L['quarter']}: realizations against costs")
+print(f"  (1) {NEXT_PRINT} — the next read on production ({_now(L['production_pct'], '%')} now) and oil ({_now(L['oil_pct'], '%')} now)")
+print(f"  (2) Pre-tax margin — {L['pretax_margin_bp']:+.1f}bp in {L['quarter']}: realizations against costs, hedges and impairments")
 print(f"  {CATALYST_3}")
 print(f"  {CATALYST_4}")
 print(f"  (5) Capital return at {PE_NOW:.0f}x — {CAPITAL_RETURN}: management's own read of the multiple")
@@ -430,13 +446,13 @@ print()
 
 # ── EXPORT ────────────────────────────────────────────────────────────────────
 summary = (
-    f"{TICKER} (retrospective, {AS_OF}) {signal_full} — Ratio B {ratio_b:.2f}x ({ev['down']*100:.1f}% downside to Bear "
+    f"{LISTED_SYMBOL} (retrospective, {AS_OF}) {signal_full} — Ratio B {ratio_b:.2f}x ({ev['down']*100:.1f}% downside to Bear "
     f"${SCENARIOS['BEAR'][2]} / +{ev['up']*100:.1f}% upside to Bull ${SCENARIOS['BULL'][2]}) | "
     f"Adj composite {adj_composite:.2f} vs market {mkt_composite:.2f}: gap {adj_gap:+.2f} [{_verdict}] | "
     f"{epp_gap_pct:+.0f}% above the EPP floor ${epp_updated:,.0f} ({EPP_MIN_PE:.0f}x {FY_E_S} ${EPP_TODAY_EPS:.2f}) | "
     f"Conservative 2-yr case: {cons_total_ret:+.1f}% total ({cons_annual_ret:+.1f}%/yr) | "
     f"At {PE_NOW:.1f}x {FY_E_S} the 15% hurdle price ${market_target_ev:,.0f} sits {_band}; "
-    + f"oil-equivalent production {L['production_pct']:+.1f}% in {L['quarter']}"
+    + f"oil-equivalent production {_now(L['production_pct'], '%')} and oil production {_now(L['oil_pct'], '%')} in {L['quarter']}"
     + f", forward revenues {_pct_range(*FWD_GUIDE)} ({FWD_GUIDE_LABEL}); {THEME_SUMMARY}."
 )
 RESULT = {
