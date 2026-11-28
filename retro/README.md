@@ -31173,7 +31173,11 @@ Controls and checks (before any outcome):
   FY" USD "The FY" "The IPO"`: 0 misses in 564 tokens (the four allowed are method words of the source titles and notes).
 - **Years after the as-of date:** none in the 98 models and reports other than the FY horizon labels and the two outlooks' years.
 - **`retro_tool run`:** passes on all 98 dates, with the 20 warnings above.
-- **Firewall:** see the results paragraph below (run after the build was committed, before any outcome).
+- **Firewall** (run after the build was committed, before any outcome): passes at the 22 cutoffs above, with 0 files changed and no
+  planted text (0 to 98 dates each; the first cutoff, 2012-02-24, has no earlier model). The plants: a print whose segment operating
+  margins, revenue, margins, EPS, notes and raw figures are absurd, with absurd full-year actuals for the year after the latest vintage, a
+  later vintage with planted texts, figures, kind, "why" and an excluded year, a later display-only outlook for every year guided, the
+  cutoff's year and the next, a later guide in numbers and dividend, a company name, and every price from the cutoff on multiplied by 10.
 
 Seen in the build (method behaviour, not tuned):
 - **Totals: RICH 88, FAIR 9, CHEAP 1.** The FAIR and CHEAP dates are the Q4 2011 print's (2012-02-24 to 2012-04-27; CHEAP on
