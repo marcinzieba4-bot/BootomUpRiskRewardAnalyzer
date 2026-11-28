@@ -7608,11 +7608,10 @@
   "quote": "In the fourth quarter of 2019, we renamed the Logistics and Marketing segment as “Logistics and Transportation.” The updated name better describes the business composition and activity of the segment given the recent completion of Grand Prix. The change in naming convention did not impact previously reported results for the segment."
  },
  "series_a_redemption": {
-  "published": "2022-04-18",
-  "source": "TG35",
-  "quote": "Following the redemption, there will be no Series A Preferred Stock outstanding, dividends on the Series A Preferred Stock will cease to accumulate and all rights of the holders of shares of Series A Preferred Stock will terminate, except the right of such holders to receive the Redemption Consideration (as defined below).",
-  "redeemed_published": "2022-05-05",
-  "redeemed_source": "TG131",
-  "redeemed_quote": "In May 2022, Targa redeemed in full all of the Company’s issued and outstanding shares of Series A Preferred."
+  "published": "2022-05-05",
+  "source": "TG131",
+  "quote": "In May 2022, Targa redeemed in full all of the Company’s issued and outstanding shares of Series A Preferred.",
+  "call_source": "TG35",
+  "call_quote": "Following the redemption, there will be no Series A Preferred Stock outstanding, dividends on the Series A Preferred Stock will cease to accumulate and all rights of the holders of shares of Series A Preferred Stock will terminate, except the right of such holders to receive the Redemption Consideration (as defined below)."
  }
 }

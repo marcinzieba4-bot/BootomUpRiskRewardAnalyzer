@@ -600,8 +600,10 @@ for k in ("history_vintages", "prints", "guides", "dividends"):
 assert {k: v for k, v in facts["sources"].items() if k in BEFORE["sources"]} == BEFORE["sources"]
 assert facts["rule_t"] == BEFORE["rule_t"], "rule T stays frozen at 2012-02-24"
 assert facts["revenue_restatements"] == BEFORE["revenue_restatements"]
-facts["series_a_redemption"] = {"published": SRC["TG35"]["published"], "source": "TG35", "quote": REDEEM_Q,
-                                "redeemed_published": R_PUB, "redeemed_source": SID["Q1 2022"], "redeemed_quote": REDEEMED}
+# dated by the release that states the redemption done (from which the guides deduct the year's recorded amounts); the call's 8-K, TG35,
+# carries its own date in the sources
+facts["series_a_redemption"] = {"published": R_PUB, "source": SID["Q1 2022"], "quote": REDEEMED, "call_source": "TG35",
+                                "call_quote": REDEEM_Q}
 facts["_doc"] = BEFORE["_doc"] + (" 2022-2026 appended by retro/generators/trgp/gen_trgp_2226.py from the same filings' rows, every earlier "
                                   "fact asserted unchanged.")
 out = A.out or os.path.join(REPO, "retro", "facts", "TRGP.json")
