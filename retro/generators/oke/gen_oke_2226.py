@@ -464,7 +464,7 @@ V.append(vintage("F2022", 2022, *H22, "In February 2023, we paid a quarterly com
                  f"2020-2022 from the FY2022 10-K's statement of income; 2022 at GAAP $3.84: its listed items ('{Q22}', the Q4 2022 "
                  "release) are 6 cents; the ten fiscal years to the latest one, so 2012 leaves and the window starts with 2013", NCI2))
 # FY2023 10-K (2024-02-28): 2021-2023 from the statement of income, in millions from this 10-K (the rounded figures replace the exact
-# ones, as published); Magellan from September 25, 2023, as published (its 135.0M ONEOK shares in the year's diluted average)
+# ones, as published); Magellan from September 25, 2023, as published (about 135 million ONEOK shares issued, in the diluted average from then)
 H23, e = roll(H22, "F2023", 2023, r"Diluted EPS \(Note J\)", r"Total revenues \(Note P\)")
 assert e == [5.48, 3.84, 3.35], e
 Q23 = quote(REL("0001039684-24-000013"), "Amounts for the year ended Dec. 31, 2023, include a pre-tax benefit of $633 million related to the "
