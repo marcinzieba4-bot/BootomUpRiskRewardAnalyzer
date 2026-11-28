@@ -169,3 +169,121 @@ drawdown -44.4 -34.2
 3y (52 dates with one): 0 of 52 cleared, 0 beat SPY; range -71.0% to -11.2%
 1y range -20.5 37.5 excess 2y -48.0 -6.6
 drawdown -44.5 -41.7
+
+
+## TRGP 2018-2021 (HINDSIGHT: labels, never inputs)
+
+Computed on 2026-11-28 after the 2018-2021 build, its validation outputs, README section ("TRGP 2018-2021") and firewall result were
+committed and pushed (`retro_tool.py outcome` on the 209 dates, then `findings_tables.py 2018,2019,2020,2021`). Every date has its 2-year
+and 3-year horizons. Nothing here may feed a fact sheet, a builder or a rule; a pattern below is a hypothesis for a later method version
+with its own full re-run, never a correction of these dates. This section was written without reading the 2012-2017 sections above.
+
+**Across the batch (2-year total return; hurdle 15%/yr; "held" is `retro_tool`'s 2-year call check):**
+
+| Class | Dates | Median 2-yr total return | Cleared hurdle | Beat SPY | Call held |
+|---|---|---|---|---|---|
+| CHEAP | 112 | +95.5% | 94 | 89 | 94 |
+| FAIR | 57 | +9.4% | 18 | 8 | 9 |
+| RICH | 40 | -13.4% | 8 | 8 | 32 |
+
+The calls held on 135 of 209 dates. By year: 2018 (CHEAP 7, FAIR 24, RICH 21) median -51.7%, held 21 of 52; 2019 (18, 23, 11) +18.2%,
+held 24; 2020 (46, 4, 3) +262.6%, held 49 of 53; 2021 (41, 6, 5) +94.4%, held 41.
+### 2018 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID (2018-01-05 to 2018-11-02) | 21 | -57.0% | -63.9% to +0.2% | 0 | 0 | -50.1% | 21 |
+| class FAIR, legacy tier WATCHLIST (2018-02-02 to 2018-11-16) | 19 | -51.7% | -68.9% to -1.2% | 0 | 0 | -21.3% | 0 |
+| class CHEAP, legacy tier WATCHLIST (2018-03-29 to 2018-03-29) | 1 | -67.6% | -67.6% to -67.6% | 0 | 0 | -16.2% | 0 |
+| class FAIR, legacy tier AVOID (2018-06-01 to 2018-07-06) | 5 | -48.7% | -49.3% to -33.8% | 0 | 0 | -37.5% | 0 |
+| class CHEAP, legacy tier ACCUMULATE (2018-11-23 to 2018-12-14) | 4 | -31.4% | -36.5% to -23.5% | 0 | 0 | -50.5% | 0 |
+| class CHEAP, legacy tier BUY (2018-12-21 to 2018-12-28) | 2 | -11.8% | -12.7% to -11.8% | 0 | 0 | -40.2% | 0 |
+| FY17E $1.09 (FY15's) (2018-01-05 to 2018-02-09) | 6 | -4.3% | -8.8% to +0.2% | 0 | 0 | -18.1% | 4 |
+| FY18E $1.09 (FY15's) (2018-02-16 to 2018-12-28) | 46 | -52.6% | -68.9% to -1.2% | 0 | 0 | -41.5% | 17 |
+| latest print Q3 2017 (2018-01-05 to 2018-02-09) | 6 | -4.3% | -8.8% to +0.2% | 0 | 0 | -18.1% | 4 |
+| latest print Q4 2017 (2018-02-16 to 2018-04-27) | 11 | -64.2% | -68.9% to -1.2% | 0 | 0 | -19.0% | 0 |
+| latest print Q1 2018 (2018-05-04 to 2018-08-03) | 14 | -49.3% | -60.0% to -33.8% | 0 | 0 | -36.0% | 4 |
+| latest print Q2 2018 (2018-08-10 to 2018-11-02) | 13 | -59.2% | -63.9% to -51.6% | 0 | 0 | -53.1% | 13 |
+| latest print Q3 2018 (2018-11-09 to 2018-12-28) | 8 | -31.4% | -51.7% to -11.8% | 0 | 0 | -50.5% | 0 |
+3y (52 dates with one): 2 of 52 cleared, 0 beat SPY; range -27.8% to +64.5%
+1y range -34.3 26.4 excess 2y -91.2 -21.7
+drawdown -91.9 -44.5
+
+### 2019 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier ACCUMULATE (2019-01-04 to 2019-12-13) | 15 | +25.7% | -26.5% to +52.1% | 5 | 2 | -21.5% | 5 |
+| class CHEAP, legacy tier WATCHLIST (2019-02-15 to 2019-02-15) | 1 | -23.6% | -23.6% to -23.6% | 0 | 0 | -56.9% | 0 |
+| class RICH, legacy tier WATCHLIST (2019-02-21 to 2019-02-21) | 1 | -19.1% | -19.1% to -19.1% | 0 | 0 | -53.6% | 1 |
+| class RICH, legacy tier ACCUMULATE (2019-03-01 to 2019-05-03) | 10 | -5.9% | -14.1% to -2.6% | 0 | 0 | -47.6% | 10 |
+| class FAIR, legacy tier ACCUMULATE (2019-05-08 to 2019-12-20) | 17 | +26.4% | +3.5% to +49.3% | 5 | 0 | -28.1% | 5 |
+| class FAIR, legacy tier WATCHLIST (2019-05-17 to 2019-12-27) | 6 | +33.3% | +0.3% to +44.9% | 3 | 0 | -16.1% | 1 |
+| class CHEAP, legacy tier BUY (2019-08-16 to 2019-08-23) | 2 | +38.2% | +33.3% to +38.2% | 2 | 0 | -7.2% | 2 |
+| FY18E $1.09 (FY15's) (2019-01-04 to 2019-02-15) | 7 | -21.3% | -26.5% to -17.3% | 0 | 0 | -53.5% | 0 |
+| FY19E $1.09 (FY15's) (2019-02-21 to 2019-12-27) | 45 | +20.4% | -19.1% to +52.1% | 15 | 2 | -28.1% | 24 |
+| latest print Q3 2018 (2019-01-04 to 2019-02-15) | 7 | -21.3% | -26.5% to -17.3% | 0 | 0 | -53.5% | 0 |
+| latest print Q4 2018 (2019-02-21 to 2019-05-03) | 11 | -11.5% | -19.1% to -2.6% | 0 | 0 | -49.7% | 11 |
+| latest print Q1 2019 (2019-05-08 to 2019-08-02) | 13 | +17.2% | +0.3% to +37.5% | 1 | 0 | -32.4% | 1 |
+| latest print Q2 2019 (2019-08-09 to 2019-11-01) | 13 | +33.3% | +12.3% to +49.3% | 7 | 0 | -14.0% | 6 |
+| latest print Q3 2019 (2019-11-08 to 2019-12-27) | 8 | +47.7% | +27.4% to +52.1% | 7 | 2 | +4.4% | 6 |
+3y (52 dates with one): 45 of 52 cleared, 44 beat SPY; range +44.1% to +122.6%
+1y range -75.6 13.9 excess 2y -71.9 1.0
+drawdown -90.1 -88.7
+
+### 2020 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class FAIR, legacy tier WATCHLIST (2020-01-03 to 2020-01-17) | 2 | +43.9% | +33.0% to +43.9% | 2 | 1 | +4.1% | 1 |
+| class FAIR, legacy tier ACCUMULATE (2020-01-10 to 2020-01-24) | 2 | +47.8% | +41.7% to +47.8% | 2 | 1 | +12.4% | 2 |
+| class CHEAP, legacy tier ACCUMULATE (2020-01-31 to 2020-05-01) | 5 | +72.4% | +61.6% to +532.6% | 5 | 5 | +22.8% | 5 |
+| class RICH, legacy tier AVOID (2020-02-21 to 2020-03-06) | 3 | +105.0% | +61.3% to +153.3% | 3 | 3 | +43.3% | 0 |
+| class CHEAP, legacy tier BUY (2020-03-20 to 2020-12-31) | 41 | +289.5% | +149.3% to +1138.4% | 41 | 41 | +226.8% | 41 |
+| FY19E $1.09 (FY15's) (2020-01-03 to 2020-02-14) | 7 | +47.8% | +33.0% to +72.4% | 7 | 5 | +12.4% | 6 |
+| FY20E $0.329 (the earnings guide) (2020-02-21 to 2020-05-01) | 11 | +694.4% | +61.3% to +1138.4% | 11 | 11 | +440.9% | 8 |
+| FY20E $1.09 (FY15's) (2020-05-08 to 2020-12-31) | 35 | +275.6% | +149.3% to +456.3% | 35 | 35 | +216.8% | 35 |
+| latest print Q3 2019 (2020-01-03 to 2020-02-14) | 7 | +47.8% | +33.0% to +72.4% | 7 | 5 | +12.4% | 6 |
+| latest print Q4 2019 (2020-02-21 to 2020-05-01) | 11 | +694.4% | +61.3% to +1138.4% | 11 | 11 | +440.9% | 8 |
+| latest print Q1 2020 (2020-05-08 to 2020-07-31) | 13 | +241.7% | +200.6% to +456.3% | 13 | 13 | +214.6% | 13 |
+| latest print Q2 2020 (2020-08-07 to 2020-10-30) | 13 | +305.3% | +232.8% to +399.0% | 13 | 13 | +280.5% | 13 |
+| latest print Q3 2020 (2020-11-06 to 2020-12-31) | 9 | +190.3% | +149.3% to +325.8% | 9 | 9 | +156.0% | 9 |
+3y (53 dates with one): 53 of 53 cleared, 53 beat SPY; range +78.6% to +1130.0%
+1y range -33.1 413.4 excess 2y -18.7 1051.3
+drawdown -88.7 -30.2
+
+### 2021 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY (2021-01-08 to 2021-12-31) | 41 | +84.1% | +56.1% to +181.5% | 41 | 41 | +58.4% | 41 |
+| class FAIR, legacy tier WATCHLIST (2021-02-19 to 2021-04-09) | 3 | +151.6% | +148.0% to +153.6% | 3 | 3 | +126.2% | 0 |
+| class RICH, legacy tier AVOID (2021-03-05 to 2021-04-30) | 5 | +128.8% | +117.4% to +139.5% | 5 | 5 | +103.0% | 0 |
+| class FAIR, legacy tier AVOID (2021-03-19 to 2021-04-01) | 3 | +114.4% | +114.2% to +133.6% | 3 | 3 | +116.8% | 0 |
+| FY20E $1.09 (FY15's) (2021-01-08 to 2021-02-12) | 6 | +157.1% | +149.6% to +181.5% | 6 | 6 | +132.6% | 6 |
+| FY21E $0.699 (the earnings guide) (2021-02-19 to 2021-04-30) | 11 | +133.6% | +114.2% to +153.6% | 11 | 11 | +116.6% | 0 |
+| FY21E $1.522 (the earnings guide) (2021-05-07 to 2021-07-30) | 13 | +84.4% | +56.1% to +98.2% | 13 | 13 | +68.1% | 13 |
+| FY21E $1.74 (the earnings guide) (2021-08-06 to 2021-10-29) | 13 | +93.4% | +59.3% to +109.3% | 13 | 13 | +61.6% | 13 |
+| FY21E $2.045 (the earnings guide) (2021-11-05 to 2021-12-31) | 9 | +72.0% | +61.2% to +82.3% | 9 | 9 | +49.4% | 9 |
+| latest print Q3 2020 (2021-01-08 to 2021-02-12) | 6 | +157.1% | +149.6% to +181.5% | 6 | 6 | +132.6% | 6 |
+| latest print Q4 2020 (2021-02-19 to 2021-04-30) | 11 | +133.6% | +114.2% to +153.6% | 11 | 11 | +116.6% | 0 |
+| latest print Q1 2021 (2021-05-07 to 2021-07-30) | 13 | +84.4% | +56.1% to +98.2% | 13 | 13 | +68.1% | 13 |
+| latest print Q2 2021 (2021-08-06 to 2021-10-29) | 13 | +93.4% | +59.3% to +109.3% | 13 | 13 | +61.6% | 13 |
+| latest print Q3 2021 (2021-11-05 to 2021-12-31) | 9 | +72.0% | +61.2% to +82.3% | 9 | 9 | +49.4% | 9 |
+3y (52 dates with one): 52 of 52 cleared, 52 beat SPY; range +162.5% to +296.4%
+1y range 18.7 151.0 excess 2y 51.9 168.6
+drawdown -30.2 -30.2
+
+**Hypotheses (for a later method version, each needing its own full re-run; none applied here):**
+- The 2018 dates, mostly FAIR and RICH on FY15's $1.09 (then three years old), all but one lost (2-year returns -68.9% to +0.2%; the
+  March 2020 collapse inside every horizon); the RICH calls held, the FAIR calls did not, as FAIR is not a call to lose. A stale anchor read against a window of its
+  own 2011-2015 multiples says little about a business whose GAAP earnings were lost to impairments.
+- The CHEAP calls of 2020 (46: on the FY2020E $0.329 to 2020-05-01, then on FY15's $1.09 with the estimated net losses read as no guide)
+  and of 2021 (41: on FY15's $1.09 to 2021-02-12, then on the earnings guide from 2021-05-07) held on every date; the FAIR and RICH dates of 2021-02-19 to 2021-04-30, on the first FY2021E estimate ($0.699, after
+  $137.6M of preferred dividends with the deemed part annualized), returned +114% to +154% and missed. The sensitivity's display-only
+  reading (FY15's $1.09) and the cash-dividends-only reading would have made all 11 of those dates CHEAP: a hypothesis on the deemed
+  dividend's annualization, not a rule.
+- The three RICH dates of 2020-02-21 to 2020-03-06 (the FY2020E $0.329) returned +61% to +153% from the COVID-19 trough that followed;
+  outcome luck of the window, read as such.
+- The signals at BEAR (80 classes in the sensitivity) and the loss years kept without impairments (106) would have turned many of these
+  CHEAP dates RICH; the outcomes favour the encoding as built for 2020-2021 and are mixed for 2018-2019.

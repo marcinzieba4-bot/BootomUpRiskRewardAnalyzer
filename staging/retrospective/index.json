@@ -945610,7 +945610,20 @@
    "cons_return_2yr": 27.1,
    "path": "staging/retrospective/TRGP/2018-01-05",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 4.1,
+    "tr_1y": -11.2,
+    "tr_2y": 0.2,
+    "tr_3y": -25.1,
+    "excess_6m": 3.3,
+    "excess_1y": -5.3,
+    "excess_2y": -21.7,
+    "excess_3y": -67.0,
+    "avg_m12_m24": -18.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -945629,7 +945642,20 @@
    "cons_return_2yr": 19.7,
    "path": "staging/retrospective/TRGP/2018-01-12",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 3.1,
+    "tr_1y": -11.1,
+    "tr_2y": -8.8,
+    "tr_3y": -23.2,
+    "excess_6m": 1.7,
+    "excess_1y": -6.1,
+    "excess_2y": -29.8,
+    "excess_3y": -65.4,
+    "avg_m12_m24": -23.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -945648,7 +945674,20 @@
    "cons_return_2yr": 21.4,
    "path": "staging/retrospective/TRGP/2018-01-19",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 6.7,
+    "tr_1y": -7.1,
+    "tr_2y": -4.3,
+    "tr_3y": -24.0,
+    "excess_6m": 6.0,
+    "excess_1y": -3.9,
+    "excess_2y": -26.5,
+    "excess_3y": -64.9,
+    "avg_m12_m24": -22.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -945667,7 +945706,20 @@
    "cons_return_2yr": 23.2,
    "path": "staging/retrospective/TRGP/2018-01-26",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 9.3,
+    "tr_1y": -7.6,
+    "tr_2y": -8.1,
+    "tr_3y": -27.8,
+    "excess_6m": 9.6,
+    "excess_1y": -2.1,
+    "excess_2y": -26.5,
+    "excess_3y": -67.5,
+    "avg_m12_m24": -20.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -945686,7 +945738,20 @@
    "cons_return_2yr": 30.6,
    "path": "staging/retrospective/TRGP/2018-02-02",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 14.0,
+    "tr_1y": 0.2,
+    "tr_2y": -7.1,
+    "tr_3y": -21.7,
+    "excess_6m": 10.6,
+    "excess_1y": 0.3,
+    "excess_2y": -27.8,
+    "excess_3y": -66.2,
+    "avg_m12_m24": -16.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -945705,7 +945770,20 @@
    "cons_return_2yr": 36.3,
    "path": "staging/retrospective/TRGP/2018-02-09",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 20.3,
+    "tr_1y": 2.5,
+    "tr_2y": -1.4,
+    "tr_3y": -15.9,
+    "excess_6m": 10.4,
+    "excess_1y": -2.9,
+    "excess_2y": -32.5,
+    "excess_3y": -71.4,
+    "avg_m12_m24": -13.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -945724,7 +945802,20 @@
    "cons_return_2yr": 43.1,
    "path": "staging/retrospective/TRGP/2018-02-16",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 14.3,
+    "tr_1y": 2.6,
+    "tr_2y": -7.8,
+    "tr_3y": -19.2,
+    "excess_6m": 9.4,
+    "excess_1y": -0.8,
+    "excess_2y": -35.3,
+    "excess_3y": -68.8,
+    "avg_m12_m24": -18.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -945743,7 +945834,20 @@
    "cons_return_2yr": 45.0,
    "path": "staging/retrospective/TRGP/2018-02-23",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 21.8,
+    "tr_1y": -3.1,
+    "tr_2y": -1.2,
+    "tr_3y": -17.0,
+    "excess_6m": 16.9,
+    "excess_1y": -6.6,
+    "excess_2y": -26.5,
+    "excess_3y": -64.0,
+    "avg_m12_m24": -16.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -945762,7 +945866,20 @@
    "cons_return_2yr": 49.2,
    "path": "staging/retrospective/TRGP/2018-03-02",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 24.6,
+    "tr_1y": -0.7,
+    "tr_2y": -9.8,
+    "tr_3y": -12.7,
+    "excess_6m": 15.8,
+    "excess_1y": -6.8,
+    "excess_2y": -28.7,
+    "excess_3y": -62.5,
+    "avg_m12_m24": -14.8,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -945781,7 +945898,20 @@
    "cons_return_2yr": 49.2,
    "path": "staging/retrospective/TRGP/2018-03-09",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 22.2,
+    "tr_1y": -5.7,
+    "tr_2y": -55.3,
+    "tr_3y": -10.1,
+    "excess_6m": 18.2,
+    "excess_1y": -6.0,
+    "excess_2y": -57.5,
+    "excess_3y": -54.8,
+    "avg_m12_m24": -15.3,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -945800,7 +945930,20 @@
    "cons_return_2yr": 42.7,
    "path": "staging/retrospective/TRGP/2018-03-16",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 19.3,
+    "tr_1y": -8.5,
+    "tr_2y": -64.2,
+    "tr_3y": -14.9,
+    "excess_6m": 12.8,
+    "excess_1y": -13.0,
+    "excess_2y": -55.1,
+    "excess_3y": -64.9,
+    "avg_m12_m24": -20.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -945819,7 +945962,20 @@
    "cons_return_2yr": 47.4,
    "path": "staging/retrospective/TRGP/2018-03-23",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 23.6,
+    "tr_1y": -4.0,
+    "tr_2y": -68.9,
+    "tr_3y": -16.9,
+    "excess_6m": 9.5,
+    "excess_1y": -14.2,
+    "excess_2y": -59.6,
+    "excess_3y": -74.3,
+    "avg_m12_m24": -19.0,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -945838,7 +945994,20 @@
    "cons_return_2yr": 54.8,
    "path": "staging/retrospective/TRGP/2018-03-29",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 32.1,
+    "tr_1y": 2.7,
+    "tr_2y": -67.6,
+    "tr_3y": -10.6,
+    "excess_6m": 20.7,
+    "excess_1y": -6.6,
+    "excess_2y": -68.1,
+    "excess_3y": -67.3,
+    "avg_m12_m24": -16.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -945857,7 +946026,20 @@
    "cons_return_2yr": 51.5,
    "path": "staging/retrospective/TRGP/2018-04-06",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 34.2,
+    "tr_1y": -1.2,
+    "tr_2y": -67.8,
+    "tr_3y": -13.6,
+    "excess_6m": 22.4,
+    "excess_1y": -14.3,
+    "excess_2y": -74.0,
+    "excess_3y": -76.3,
+    "avg_m12_m24": -19.7,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -945876,7 +946058,20 @@
    "cons_return_2yr": 50.7,
    "path": "staging/retrospective/TRGP/2018-04-13",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 26.6,
+    "tr_1y": -3.2,
+    "tr_2y": -65.0,
+    "tr_3y": -13.0,
+    "excess_6m": 21.6,
+    "excess_1y": -14.6,
+    "excess_2y": -73.1,
+    "excess_3y": -75.0,
+    "avg_m12_m24": -21.3,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -945895,7 +946090,20 @@
    "cons_return_2yr": 43.1,
    "path": "staging/retrospective/TRGP/2018-04-20",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 22.7,
+    "tr_1y": -9.7,
+    "tr_2y": -68.1,
+    "tr_3y": -16.1,
+    "excess_6m": 18.1,
+    "excess_1y": -20.4,
+    "excess_2y": -77.9,
+    "excess_3y": -77.0,
+    "avg_m12_m24": -26.6,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -945914,7 +946122,20 @@
    "cons_return_2yr": 41.1,
    "path": "staging/retrospective/TRGP/2018-04-27",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 12.4,
+    "tr_1y": -6.6,
+    "tr_2y": -63.4,
+    "tr_3y": -12.2,
+    "excess_6m": 11.9,
+    "excess_1y": -18.6,
+    "excess_2y": -75.3,
+    "excess_3y": -75.1,
+    "avg_m12_m24": -27.5,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -945933,7 +946154,20 @@
    "cons_return_2yr": 25.2,
    "path": "staging/retrospective/TRGP/2018-05-04",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 15.4,
+    "tr_1y": -5.5,
+    "tr_2y": -60.0,
+    "tr_3y": -8.0,
+    "excess_6m": 12.2,
+    "excess_1y": -18.0,
+    "excess_2y": -70.7,
+    "excess_3y": -70.5,
+    "avg_m12_m24": -26.7,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -945952,7 +946186,20 @@
    "cons_return_2yr": 19.8,
    "path": "staging/retrospective/TRGP/2018-05-11",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 8.8,
+    "tr_1y": -8.4,
+    "tr_2y": -58.7,
+    "tr_3y": -7.7,
+    "excess_6m": 6.1,
+    "excess_1y": -15.9,
+    "excess_2y": -70.0,
+    "excess_3y": -65.6,
+    "avg_m12_m24": -31.0,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -945971,7 +946218,20 @@
    "cons_return_2yr": 19.2,
    "path": "staging/retrospective/TRGP/2018-05-18",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 2.0,
+    "tr_1y": -5.2,
+    "tr_2y": -50.5,
+    "tr_3y": -6.1,
+    "excess_6m": 0.2,
+    "excess_1y": -12.5,
+    "excess_2y": -63.3,
+    "excess_3y": -64.0,
+    "avg_m12_m24": -32.4,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -945990,7 +946250,20 @@
    "cons_return_2yr": 23.2,
    "path": "staging/retrospective/TRGP/2018-05-25",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -1.2,
+    "tr_1y": -5.7,
+    "tr_2y": -47.6,
+    "tr_3y": -5.6,
+    "excess_6m": 1.1,
+    "excess_1y": -11.6,
+    "excess_2y": -60.2,
+    "excess_3y": -65.4,
+    "avg_m12_m24": -31.0,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -946009,7 +946282,20 @@
    "cons_return_2yr": 18.1,
    "path": "staging/retrospective/TRGP/2018-06-01",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -4.8,
+    "tr_1y": -13.7,
+    "tr_2y": -49.3,
+    "tr_3y": -4.2,
+    "excess_6m": -6.5,
+    "excess_1y": -16.2,
+    "excess_2y": -65.0,
+    "excess_3y": -63.6,
+    "avg_m12_m24": -34.6,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -946028,7 +946314,20 @@
    "cons_return_2yr": 16.9,
    "path": "staging/retrospective/TRGP/2018-06-08",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -6.0,
+    "tr_1y": -14.5,
+    "tr_2y": -33.8,
+    "tr_3y": 9.5,
+    "excess_6m": -1.6,
+    "excess_1y": -19.7,
+    "excess_2y": -54.0,
+    "excess_3y": -48.2,
+    "avg_m12_m24": -36.0,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -946047,7 +946346,20 @@
    "cons_return_2yr": 23.8,
    "path": "staging/retrospective/TRGP/2018-06-15",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -5.4,
+    "tr_1y": -13.6,
+    "tr_2y": -38.9,
+    "tr_3y": 17.3,
+    "excess_6m": 0.1,
+    "excess_1y": -19.4,
+    "excess_2y": -53.2,
+    "excess_3y": -41.5,
+    "avg_m12_m24": -32.9,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -946066,7 +946378,20 @@
    "cons_return_2yr": 16.6,
    "path": "staging/retrospective/TRGP/2018-06-22",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -23.1,
+    "tr_1y": -14.3,
+    "tr_2y": -44.7,
+    "tr_3y": 5.7,
+    "excess_6m": -11.7,
+    "excess_1y": -23.3,
+    "excess_2y": -61.8,
+    "excess_3y": -54.4,
+    "avg_m12_m24": -37.5,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -946085,7 +946410,20 @@
    "cons_return_2yr": 16.5,
    "path": "staging/retrospective/TRGP/2018-06-29",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -25.6,
+    "tr_1y": -13.3,
+    "tr_2y": -49.0,
+    "tr_3y": 2.6,
+    "excess_6m": -17.9,
+    "excess_1y": -23.3,
+    "excess_2y": -65.3,
+    "excess_3y": -61.2,
+    "avg_m12_m24": -38.3,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -946104,7 +946442,20 @@
    "cons_return_2yr": 15.6,
    "path": "staging/retrospective/TRGP/2018-07-06",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -17.3,
+    "tr_1y": -11.9,
+    "tr_2y": -48.7,
+    "tr_3y": 2.0,
+    "excess_6m": -9.9,
+    "excess_1y": -22.3,
+    "excess_2y": -67.8,
+    "excess_3y": -61.2,
+    "avg_m12_m24": -39.4,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -946123,7 +946474,20 @@
    "cons_return_2yr": 10.3,
    "path": "staging/retrospective/TRGP/2018-07-13",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -16.0,
+    "tr_1y": -13.0,
+    "tr_2y": -54.9,
+    "tr_3y": -1.9,
+    "excess_6m": -9.6,
+    "excess_1y": -22.5,
+    "excess_2y": -71.5,
+    "excess_3y": -63.7,
+    "avg_m12_m24": -43.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -946142,7 +946506,20 @@
    "cons_return_2yr": 11.6,
    "path": "staging/retrospective/TRGP/2018-07-20",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -12.2,
+    "tr_1y": -16.0,
+    "tr_2y": -52.1,
+    "tr_3y": -6.4,
+    "excess_6m": -8.5,
+    "excess_1y": -24.2,
+    "excess_2y": -72.0,
+    "excess_3y": -66.5,
+    "avg_m12_m24": -43.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -946161,7 +946538,20 @@
    "cons_return_2yr": 12.5,
    "path": "staging/retrospective/TRGP/2018-07-27",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -13.4,
+    "tr_1y": -15.1,
+    "tr_2y": -52.0,
+    "tr_3y": -4.5,
+    "excess_6m": -8.8,
+    "excess_1y": -24.3,
+    "excess_2y": -70.8,
+    "excess_3y": -66.4,
+    "avg_m12_m24": -43.6,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -946180,7 +946570,20 @@
    "cons_return_2yr": 11.6,
    "path": "staging/retrospective/TRGP/2018-08-03",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -12.0,
+    "tr_1y": -21.0,
+    "tr_2y": -52.6,
+    "tr_3y": -6.7,
+    "excess_6m": -8.2,
+    "excess_1y": -26.1,
+    "excess_2y": -72.5,
+    "excess_3y": -68.1,
+    "avg_m12_m24": -44.8,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -946199,7 +946602,20 @@
    "cons_return_2yr": 17.0,
    "path": "staging/retrospective/TRGP/2018-08-10",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -17.6,
+    "tr_1y": -26.8,
+    "tr_2y": -51.6,
+    "tr_3y": -6.5,
+    "excess_6m": -14.1,
+    "excess_1y": -31.7,
+    "excess_2y": -74.1,
+    "excess_3y": -68.8,
+    "avg_m12_m24": -47.7,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -946218,7 +946634,20 @@
    "cons_return_2yr": 17.2,
    "path": "staging/retrospective/TRGP/2018-08-17",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -12.2,
+    "tr_1y": -30.0,
+    "tr_2y": -53.2,
+    "tr_3y": -8.6,
+    "excess_6m": -10.5,
+    "excess_1y": -33.3,
+    "excess_2y": -75.6,
+    "excess_3y": -70.2,
+    "avg_m12_m24": -48.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -946237,7 +946666,20 @@
    "cons_return_2yr": 13.5,
    "path": "staging/retrospective/TRGP/2018-08-24",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -21.5,
+    "tr_1y": -34.3,
+    "tr_2y": -57.0,
+    "tr_3y": -10.2,
+    "excess_6m": -19.5,
+    "excess_1y": -35.3,
+    "excess_2y": -80.1,
+    "excess_3y": -71.9,
+    "avg_m12_m24": -50.4,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -946256,7 +946698,20 @@
    "cons_return_2yr": 14.7,
    "path": "staging/retrospective/TRGP/2018-08-31",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -23.6,
+    "tr_1y": -27.8,
+    "tr_2y": -57.5,
+    "tr_3y": -8.8,
+    "excess_6m": -20.6,
+    "excess_1y": -30.4,
+    "excess_2y": -82.1,
+    "excess_3y": -70.3,
+    "avg_m12_m24": -50.4,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -946275,7 +946730,20 @@
    "cons_return_2yr": 17.0,
    "path": "staging/retrospective/TRGP/2018-09-07",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -22.4,
+    "tr_1y": -23.8,
+    "tr_2y": -59.2,
+    "tr_3y": -6.5,
+    "excess_6m": -18.9,
+    "excess_1y": -29.3,
+    "excess_2y": -82.2,
+    "excess_3y": -69.3,
+    "avg_m12_m24": -50.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -946294,7 +946762,20 @@
    "cons_return_2yr": 14.6,
    "path": "staging/retrospective/TRGP/2018-09-14",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -23.1,
+    "tr_1y": -21.0,
+    "tr_2y": -62.1,
+    "tr_3y": -8.8,
+    "excess_6m": -20.7,
+    "excess_1y": -26.4,
+    "excess_2y": -82.3,
+    "excess_3y": -67.3,
+    "avg_m12_m24": -52.0,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -946313,7 +946794,20 @@
    "cons_return_2yr": 14.2,
    "path": "staging/retrospective/TRGP/2018-09-21",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -20.8,
+    "tr_1y": -18.5,
+    "tr_2y": -63.2,
+    "tr_3y": -8.2,
+    "excess_6m": -19.2,
+    "excess_1y": -22.6,
+    "excess_2y": -79.0,
+    "excess_3y": -62.5,
+    "avg_m12_m24": -53.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -946332,7 +946826,20 @@
    "cons_return_2yr": 12.2,
    "path": "staging/retrospective/TRGP/2018-09-28",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -24.0,
+    "tr_1y": -22.9,
+    "tr_2y": -63.9,
+    "tr_3y": -1.7,
+    "excess_6m": -21.4,
+    "excess_1y": -26.4,
+    "excess_2y": -82.7,
+    "excess_3y": -56.6,
+    "avg_m12_m24": -54.8,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -946351,7 +946858,20 @@
    "cons_return_2yr": 10.0,
    "path": "staging/retrospective/TRGP/2018-10-05",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -27.2,
+    "tr_1y": -24.4,
+    "tr_2y": -63.2,
+    "tr_3y": -0.4,
+    "excess_6m": -28.4,
+    "excess_1y": -28.6,
+    "excess_2y": -85.2,
+    "excess_3y": -56.7,
+    "avg_m12_m24": -57.4,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -946370,7 +946890,20 @@
    "cons_return_2yr": 16.2,
    "path": "staging/retrospective/TRGP/2018-10-12",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -24.3,
+    "tr_1y": -22.2,
+    "tr_2y": -59.5,
+    "tr_3y": 8.0,
+    "excess_6m": -30.5,
+    "excess_1y": -31.6,
+    "excess_2y": -91.2,
+    "excess_3y": -55.3,
+    "avg_m12_m24": -55.8,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -946389,7 +946922,20 @@
    "cons_return_2yr": 13.8,
    "path": "staging/retrospective/TRGP/2018-10-19",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -27.2,
+    "tr_1y": -24.0,
+    "tr_2y": -61.7,
+    "tr_3y": 10.1,
+    "excess_6m": -33.2,
+    "excess_1y": -33.8,
+    "excess_2y": -89.5,
+    "excess_3y": -59.1,
+    "avg_m12_m24": -57.5,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -946408,7 +946954,20 @@
    "cons_return_2yr": 25.2,
    "path": "staging/retrospective/TRGP/2018-10-26",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -17.5,
+    "tr_1y": -13.5,
+    "tr_2y": -57.8,
+    "tr_3y": 21.0,
+    "excess_6m": -29.1,
+    "excess_1y": -29.2,
+    "excess_2y": -89.9,
+    "excess_3y": -57.2,
+    "avg_m12_m24": -54.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -946427,7 +946986,20 @@
    "cons_return_2yr": 25.5,
    "path": "staging/retrospective/TRGP/2018-11-02",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -19.8,
+    "tr_1y": -14.7,
+    "tr_2y": -59.2,
+    "tr_3y": 18.6,
+    "excess_6m": -27.8,
+    "excess_1y": -29.3,
+    "excess_2y": -84.8,
+    "excess_3y": -57.5,
+    "avg_m12_m24": -55.0,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -946446,7 +947018,20 @@
    "cons_return_2yr": 47.9,
    "path": "staging/retrospective/TRGP/2018-11-09",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -20.1,
+    "tr_1y": -13.9,
+    "tr_2y": -51.7,
+    "tr_3y": 23.6,
+    "excess_6m": -24.3,
+    "excess_1y": -27.1,
+    "excess_2y": -83.4,
+    "excess_3y": -50.7,
+    "avg_m12_m24": -55.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -946465,7 +947050,20 @@
    "cons_return_2yr": 57.4,
    "path": "staging/retrospective/TRGP/2018-11-16",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -7.2,
+    "tr_1y": -9.7,
+    "tr_2y": -44.4,
+    "tr_3y": 26.2,
+    "excess_6m": -13.3,
+    "excess_1y": -25.6,
+    "excess_2y": -80.9,
+    "excess_3y": -51.4,
+    "avg_m12_m24": -53.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -946484,7 +947082,20 @@
    "cons_return_2yr": 68.4,
    "path": "staging/retrospective/TRGP/2018-11-23",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -5.6,
+    "tr_1y": -7.3,
+    "tr_2y": -33.3,
+    "tr_3y": 37.0,
+    "excess_6m": -13.8,
+    "excess_1y": -27.5,
+    "excess_2y": -73.3,
+    "excess_3y": -47.3,
+    "avg_m12_m24": -50.5,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -946503,7 +947114,20 @@
    "cons_return_2yr": 67.5,
    "path": "staging/retrospective/TRGP/2018-11-30",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -8.4,
+    "tr_1y": -10.0,
+    "tr_2y": -36.5,
+    "tr_3y": 27.4,
+    "excess_6m": -10.6,
+    "excess_1y": -26.0,
+    "excess_2y": -71.9,
+    "excess_3y": -43.9,
+    "avg_m12_m24": -51.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -946522,7 +947146,20 @@
    "cons_return_2yr": 67.8,
    "path": "staging/retrospective/TRGP/2018-12-07",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -9.4,
+    "tr_1y": -11.4,
+    "tr_2y": -31.4,
+    "tr_3y": 31.6,
+    "excess_6m": -19.6,
+    "excess_1y": -32.9,
+    "excess_2y": -75.7,
+    "excess_3y": -52.4,
+    "avg_m12_m24": -51.6,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -946541,7 +947178,20 @@
    "cons_return_2yr": 77.1,
    "path": "staging/retrospective/TRGP/2018-12-14",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -9.0,
+    "tr_1y": -3.5,
+    "tr_2y": -23.5,
+    "tr_3y": 31.8,
+    "excess_6m": -21.1,
+    "excess_1y": -27.4,
+    "excess_2y": -67.8,
+    "excess_3y": -52.5,
+    "avg_m12_m24": -49.3,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -946560,7 +947210,20 @@
    "cons_return_2yr": 102.4,
    "path": "staging/retrospective/TRGP/2018-12-21",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 11.9,
+    "tr_1y": 19.7,
+    "tr_2y": -11.8,
+    "tr_3y": 54.1,
+    "excess_6m": -11.3,
+    "excess_1y": -15.9,
+    "excess_2y": -69.4,
+    "excess_3y": -45.4,
+    "avg_m12_m24": -41.5,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -946579,7 +947242,20 @@
    "cons_return_2yr": 109.4,
    "path": "staging/retrospective/TRGP/2018-12-28",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 17.3,
+    "tr_1y": 26.4,
+    "tr_2y": -12.7,
+    "tr_3y": 64.5,
+    "excess_6m": -2.0,
+    "excess_1y": -6.2,
+    "excess_2y": -67.4,
+    "excess_3y": -34.9,
+    "avg_m12_m24": -40.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -946598,7 +947274,20 @@
    "cons_return_2yr": 86.1,
    "path": "staging/retrospective/TRGP/2019-01-04",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 5.3,
+    "tr_1y": 13.9,
+    "tr_2y": -21.3,
+    "tr_3y": 51.3,
+    "excess_6m": -14.2,
+    "excess_1y": -16.0,
+    "excess_2y": -71.9,
+    "excess_3y": -44.6,
+    "avg_m12_m24": -47.4,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -946617,7 +947306,20 @@
    "cons_return_2yr": 74.2,
    "path": "staging/retrospective/TRGP/2019-01-11",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 3.8,
+    "tr_1y": 2.9,
+    "tr_2y": -19.1,
+    "tr_3y": 46.5,
+    "excess_6m": -12.8,
+    "excess_1y": -25.1,
+    "excess_2y": -69.6,
+    "excess_3y": -41.5,
+    "avg_m12_m24": -51.3,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -946636,7 +947338,20 @@
    "cons_return_2yr": 68.6,
    "path": "staging/retrospective/TRGP/2019-01-18",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -5.8,
+    "tr_1y": 3.3,
+    "tr_2y": -19.8,
+    "tr_3y": 44.1,
+    "excess_6m": -18.9,
+    "excess_1y": -23.4,
+    "excess_2y": -65.1,
+    "excess_3y": -33.6,
+    "avg_m12_m24": -53.5,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -946655,7 +947370,20 @@
    "cons_return_2yr": 72.3,
    "path": "staging/retrospective/TRGP/2019-01-25",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -1.2,
+    "tr_1y": -0.5,
+    "tr_2y": -22.9,
+    "tr_3y": 46.0,
+    "excess_6m": -15.1,
+    "excess_1y": -26.4,
+    "excess_2y": -71.7,
+    "excess_3y": -23.9,
+    "avg_m12_m24": -52.7,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -946674,7 +947402,20 @@
    "cons_return_2yr": 68.1,
    "path": "staging/retrospective/TRGP/2019-02-01",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -10.1,
+    "tr_1y": -8.0,
+    "tr_2y": -26.5,
+    "tr_3y": 50.0,
+    "excess_6m": -20.3,
+    "excess_1y": -29.2,
+    "excess_2y": -70.0,
+    "excess_3y": -24.0,
+    "avg_m12_m24": -54.3,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -946693,7 +947434,20 @@
    "cons_return_2yr": 71.8,
    "path": "staging/retrospective/TRGP/2019-02-08",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -11.5,
+    "tr_1y": -4.1,
+    "tr_2y": -17.3,
+    "tr_3y": 55.0,
+    "excess_6m": -21.0,
+    "excess_1y": -29.0,
+    "excess_2y": -65.8,
+    "excess_3y": -18.0,
+    "avg_m12_m24": -53.7,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -946712,7 +947466,20 @@
    "cons_return_2yr": 61.1,
    "path": "staging/retrospective/TRGP/2019-02-15",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -23.3,
+    "tr_1y": -10.9,
+    "tr_2y": -23.6,
+    "tr_3y": 47.5,
+    "excess_6m": -26.9,
+    "excess_1y": -34.7,
+    "excess_2y": -69.2,
+    "excess_3y": -19.5,
+    "avg_m12_m24": -56.9,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -946731,7 +947498,20 @@
    "cons_return_2yr": 39.7,
    "path": "staging/retrospective/TRGP/2019-02-21",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -10.3,
+    "tr_1y": 1.8,
+    "tr_2y": -19.1,
+    "tr_3y": 58.9,
+    "excess_6m": -16.7,
+    "excess_1y": -20.4,
+    "excess_2y": -63.8,
+    "excess_3y": -3.8,
+    "avg_m12_m24": -53.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -946750,7 +947530,20 @@
    "cons_return_2yr": 40.8,
    "path": "staging/retrospective/TRGP/2019-03-01",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -9.1,
+    "tr_1y": -13.6,
+    "tr_2y": -13.5,
+    "tr_3y": 68.4,
+    "excess_6m": -14.3,
+    "excess_1y": -21.3,
+    "excess_2y": -56.4,
+    "excess_3y": 9.0,
+    "avg_m12_m24": -53.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -946769,7 +947562,20 @@
    "cons_return_2yr": 49.1,
    "path": "staging/retrospective/TRGP/2019-03-08",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -0.2,
+    "tr_1y": -20.1,
+    "tr_2y": -2.6,
+    "tr_3y": 82.0,
+    "excess_6m": -9.8,
+    "excess_1y": -30.5,
+    "excess_2y": -45.8,
+    "excess_3y": 24.1,
+    "avg_m12_m24": -50.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -946788,7 +947594,20 @@
    "cons_return_2yr": 46.7,
    "path": "staging/retrospective/TRGP/2019-03-15",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 4.2,
+    "tr_1y": -59.7,
+    "tr_2y": -5.0,
+    "tr_3y": 73.9,
+    "excess_6m": -3.3,
+    "excess_1y": -57.0,
+    "excess_2y": -49.5,
+    "excess_3y": 16.8,
+    "avg_m12_m24": -50.3,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -946807,7 +947626,20 @@
    "cons_return_2yr": 44.2,
    "path": "staging/retrospective/TRGP/2019-03-22",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 6.2,
+    "tr_1y": -73.1,
+    "tr_2y": -11.5,
+    "tr_3y": 86.2,
+    "excess_6m": -1.6,
+    "excess_1y": -57.1,
+    "excess_2y": -56.1,
+    "excess_3y": 19.0,
+    "avg_m12_m24": -49.9,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -946826,7 +947658,20 @@
    "cons_return_2yr": 41.3,
    "path": "staging/retrospective/TRGP/2019-03-29",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 0.0,
+    "tr_1y": -74.4,
+    "tr_2y": -14.1,
+    "tr_3y": 91.4,
+    "excess_6m": -5.5,
+    "excess_1y": -66.2,
+    "excess_2y": -58.2,
+    "excess_3y": 21.9,
+    "avg_m12_m24": -49.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -946845,7 +947690,20 @@
    "cons_return_2yr": 44.0,
    "path": "staging/retrospective/TRGP/2019-04-05",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 4.0,
+    "tr_1y": -75.6,
+    "tr_2y": -13.4,
+    "tr_3y": 97.1,
+    "excess_6m": 1.0,
+    "excess_1y": -63.6,
+    "excess_2y": -58.2,
+    "excess_3y": 34.9,
+    "avg_m12_m24": -47.6,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -946864,7 +947722,20 @@
    "cons_return_2yr": 46.4,
    "path": "staging/retrospective/TRGP/2019-04-12",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 2.9,
+    "tr_1y": -69.5,
+    "tr_2y": -11.9,
+    "tr_3y": 103.5,
+    "excess_6m": -0.2,
+    "excess_1y": -67.3,
+    "excess_2y": -57.7,
+    "excess_3y": 46.6,
+    "avg_m12_m24": -45.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -946883,7 +947754,20 @@
    "cons_return_2yr": 46.5,
    "path": "staging/retrospective/TRGP/2019-04-18",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 4.7,
+    "tr_1y": -70.6,
+    "tr_2y": -4.9,
+    "tr_3y": 112.2,
+    "excess_6m": 1.0,
+    "excess_1y": -71.4,
+    "excess_2y": -52.7,
+    "excess_3y": 55.3,
+    "avg_m12_m24": -43.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -946902,7 +947786,20 @@
    "cons_return_2yr": 41.9,
    "path": "staging/retrospective/TRGP/2019-04-26",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 5.1,
+    "tr_1y": -67.1,
+    "tr_2y": -5.9,
+    "tr_3y": 92.6,
+    "excess_6m": 1.3,
+    "excess_1y": -65.5,
+    "excess_2y": -52.1,
+    "excess_3y": 45.0,
+    "avg_m12_m24": -44.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -946921,7 +947818,20 @@
    "cons_return_2yr": 44.6,
    "path": "staging/retrospective/TRGP/2019-05-03",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 5.2,
+    "tr_1y": -63.3,
+    "tr_2y": -2.8,
+    "tr_3y": 101.9,
+    "excess_6m": 0.1,
+    "excess_1y": -61.4,
+    "excess_2y": -48.9,
+    "excess_3y": 54.4,
+    "avg_m12_m24": -41.8,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -946940,7 +947850,20 @@
    "cons_return_2yr": 46.1,
    "path": "staging/retrospective/TRGP/2019-05-08",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 5.8,
+    "tr_1y": -57.8,
+    "tr_2y": 5.1,
+    "tr_3y": 101.8,
+    "excess_6m": -2.6,
+    "excess_1y": -61.6,
+    "excess_2y": -45.6,
+    "excess_3y": 52.8,
+    "avg_m12_m24": -40.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -946959,7 +947882,20 @@
    "cons_return_2yr": 36.7,
    "path": "staging/retrospective/TRGP/2019-05-17",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -2.6,
+    "tr_1y": -57.6,
+    "tr_2y": 0.3,
+    "tr_3y": 82.8,
+    "excess_6m": -12.6,
+    "excess_1y": -59.8,
+    "excess_2y": -49.1,
+    "excess_3y": 34.0,
+    "avg_m12_m24": -42.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -946978,7 +947914,20 @@
    "cons_return_2yr": 42.5,
    "path": "staging/retrospective/TRGP/2019-05-24",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -2.7,
+    "tr_1y": -48.4,
+    "tr_2y": 3.5,
+    "tr_3y": 80.7,
+    "excess_6m": -13.7,
+    "excess_1y": -54.9,
+    "excess_2y": -48.7,
+    "excess_3y": 35.3,
+    "avg_m12_m24": -39.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -946997,7 +947946,20 @@
    "cons_return_2yr": 49.9,
    "path": "staging/retrospective/TRGP/2019-05-31",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -0.3,
+    "tr_1y": -46.1,
+    "tr_2y": 9.4,
+    "tr_3y": 100.1,
+    "excess_6m": -15.5,
+    "excess_1y": -58.8,
+    "excess_2y": -47.3,
+    "excess_3y": 43.0,
+    "avg_m12_m24": -35.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -947016,7 +947978,20 @@
    "cons_return_2yr": 49.6,
    "path": "staging/retrospective/TRGP/2019-06-07",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -2.3,
+    "tr_1y": -31.9,
+    "tr_2y": 31.2,
+    "tr_3y": 119.3,
+    "excess_6m": -12.8,
+    "excess_1y": -44.9,
+    "excess_2y": -19.5,
+    "excess_3y": 68.8,
+    "avg_m12_m24": -34.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -947035,7 +948010,20 @@
    "cons_return_2yr": 57.5,
    "path": "staging/retrospective/TRGP/2019-06-14",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 6.4,
+    "tr_1y": -38.6,
+    "tr_2y": 37.5,
+    "tr_3y": 92.5,
+    "excess_6m": -4.3,
+    "excess_1y": -45.8,
+    "excess_2y": -13.5,
+    "excess_3y": 57.3,
+    "avg_m12_m24": -29.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -947054,7 +948042,20 @@
    "cons_return_2yr": 48.9,
    "path": "staging/retrospective/TRGP/2019-06-21",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 7.3,
+    "tr_1y": -39.5,
+    "tr_2y": 26.4,
+    "tr_3y": 74.6,
+    "excess_6m": -2.8,
+    "excess_1y": -46.4,
+    "excess_2y": -20.6,
+    "excess_3y": 41.1,
+    "avg_m12_m24": -32.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -947073,7 +948074,20 @@
    "cons_return_2yr": 46.8,
    "path": "staging/retrospective/TRGP/2019-06-28",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 8.1,
+    "tr_1y": -46.5,
+    "tr_2y": 20.4,
+    "tr_3y": 69.7,
+    "excess_6m": -3.1,
+    "excess_1y": -50.8,
+    "excess_2y": -29.3,
+    "excess_3y": 33.9,
+    "avg_m12_m24": -31.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -947092,7 +948106,20 @@
    "cons_return_2yr": 43.2,
    "path": "staging/retrospective/TRGP/2019-07-05",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 7.0,
+    "tr_1y": -45.6,
+    "tr_2y": 19.3,
+    "tr_3y": 56.7,
+    "excess_6m": -2.0,
+    "excess_1y": -52.1,
+    "excess_2y": -29.8,
+    "excess_3y": 23.0,
+    "avg_m12_m24": -32.4,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -947111,7 +948138,20 @@
    "cons_return_2yr": 37.8,
    "path": "staging/retrospective/TRGP/2019-07-12",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -0.9,
+    "tr_1y": -50.5,
+    "tr_2y": 14.5,
+    "tr_3y": 51.0,
+    "excess_6m": -10.2,
+    "excess_1y": -58.1,
+    "excess_2y": -34.6,
+    "excess_3y": 18.6,
+    "avg_m12_m24": -33.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -947130,7 +948170,20 @@
    "cons_return_2yr": 45.1,
    "path": "staging/retrospective/TRGP/2019-07-19",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 8.5,
+    "tr_1y": -46.1,
+    "tr_2y": 9.0,
+    "tr_3y": 68.1,
+    "excess_6m": -4.2,
+    "excess_1y": -56.3,
+    "excess_2y": -37.8,
+    "excess_3y": 30.3,
+    "avg_m12_m24": -29.0,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -947149,7 +948202,20 @@
    "cons_return_2yr": 44.5,
    "path": "staging/retrospective/TRGP/2019-07-26",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 1.6,
+    "tr_1y": -45.8,
+    "tr_2y": 17.2,
+    "tr_3y": 74.4,
+    "excess_6m": -8.3,
+    "excess_1y": -54.0,
+    "excess_2y": -32.6,
+    "excess_3y": 39.2,
+    "avg_m12_m24": -28.1,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -947168,7 +948234,20 @@
    "cons_return_2yr": 55.2,
    "path": "staging/retrospective/TRGP/2019-08-02",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 3.1,
+    "tr_1y": -45.4,
+    "tr_2y": 18.3,
+    "tr_3y": 92.5,
+    "excess_6m": -7.8,
+    "excess_1y": -58.9,
+    "excess_2y": -35.1,
+    "excess_3y": 47.2,
+    "avg_m12_m24": -21.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -947187,7 +948266,20 @@
    "cons_return_2yr": 60.7,
    "path": "staging/retrospective/TRGP/2019-08-09",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 9.0,
+    "tr_1y": -39.7,
+    "tr_2y": 25.7,
+    "tr_3y": 96.8,
+    "excess_6m": -5.9,
+    "excess_1y": -56.4,
+    "excess_2y": -29.8,
+    "excess_3y": 49.8,
+    "avg_m12_m24": -17.5,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -947206,7 +948298,20 @@
    "cons_return_2yr": 69.1,
    "path": "staging/retrospective/TRGP/2019-08-16",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 13.6,
+    "tr_1y": -35.5,
+    "tr_2y": 33.3,
+    "tr_3y": 110.7,
+    "excess_6m": -4.3,
+    "excess_1y": -54.1,
+    "excess_2y": -25.3,
+    "excess_3y": 55.9,
+    "avg_m12_m24": -11.7,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -947225,7 +948330,20 @@
    "cons_return_2yr": 75.1,
    "path": "staging/retrospective/TRGP/2019-08-23",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 24.4,
+    "tr_1y": -38.0,
+    "tr_2y": 38.2,
+    "tr_3y": 122.6,
+    "excess_6m": 6.3,
+    "excess_1y": -59.2,
+    "excess_2y": -22.8,
+    "excess_3y": 71.8,
+    "avg_m12_m24": -7.2,
+    "scenario_landing_2y": "BASE",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -947244,7 +948362,20 @@
    "cons_return_2yr": 59.6,
    "path": "staging/retrospective/TRGP/2019-08-30",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -5.3,
+    "tr_1y": -45.2,
+    "tr_2y": 29.0,
+    "tr_3y": 98.4,
+    "excess_6m": -7.6,
+    "excess_1y": -67.0,
+    "excess_2y": -29.5,
+    "excess_3y": 56.3,
+    "avg_m12_m24": -14.0,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -947263,7 +948394,20 @@
    "cons_return_2yr": 50.8,
    "path": "staging/retrospective/TRGP/2019-09-06",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -20.9,
+    "tr_1y": -51.0,
+    "tr_2y": 26.6,
+    "tr_3y": 91.0,
+    "excess_6m": -21.6,
+    "excess_1y": -67.9,
+    "excess_2y": -29.2,
+    "excess_3y": 54.1,
+    "avg_m12_m24": -15.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -947282,7 +948426,20 @@
    "cons_return_2yr": 41.7,
    "path": "staging/retrospective/TRGP/2019-09-13",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -64.2,
+    "tr_1y": -58.1,
+    "tr_2y": 18.2,
+    "tr_3y": 82.0,
+    "excess_6m": -54.6,
+    "excess_1y": -70.9,
+    "excess_2y": -33.9,
+    "excess_3y": 45.7,
+    "avg_m12_m24": -19.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -947301,7 +948458,20 @@
    "cons_return_2yr": 36.5,
    "path": "staging/retrospective/TRGP/2019-09-20",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -78.0,
+    "tr_1y": -58.1,
+    "tr_2y": 12.3,
+    "tr_3y": 74.0,
+    "excess_6m": -55.7,
+    "excess_1y": -70.8,
+    "excess_2y": -37.0,
+    "excess_3y": 39.3,
+    "avg_m12_m24": -21.2,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -947320,7 +948490,20 @@
    "cons_return_2yr": 42.3,
    "path": "staging/retrospective/TRGP/2019-09-27",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -77.8,
+    "tr_1y": -59.3,
+    "tr_2y": 30.5,
+    "tr_3y": 55.4,
+    "excess_6m": -64.6,
+    "excess_1y": -72.5,
+    "excess_2y": -23.2,
+    "excess_3y": 26.5,
+    "avg_m12_m24": -16.2,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -947339,7 +948522,20 @@
    "cons_return_2yr": 39.3,
    "path": "staging/retrospective/TRGP/2019-10-04",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -79.9,
+    "tr_1y": -59.8,
+    "tr_2y": 34.2,
+    "tr_3y": 69.8,
+    "excess_6m": -65.3,
+    "excess_1y": -75.1,
+    "excess_2y": -15.2,
+    "excess_3y": 35.5,
+    "avg_m12_m24": -16.1,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -947358,7 +948554,20 @@
    "cons_return_2yr": 43.3,
    "path": "staging/retrospective/TRGP/2019-10-11",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -73.6,
+    "tr_1y": -52.4,
+    "tr_2y": 40.5,
+    "tr_3y": 75.9,
+    "excess_6m": -68.5,
+    "excess_1y": -71.4,
+    "excess_2y": -10.0,
+    "excess_3y": 49.3,
+    "avg_m12_m24": -11.9,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -947377,7 +948586,20 @@
    "cons_return_2yr": 43.6,
    "path": "staging/retrospective/TRGP/2019-10-18",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -75.2,
+    "tr_1y": -52.8,
+    "tr_2y": 49.3,
+    "tr_3y": 79.6,
+    "excess_6m": -72.4,
+    "excess_1y": -71.3,
+    "excess_2y": -4.6,
+    "excess_3y": 49.2,
+    "avg_m12_m24": -9.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -947396,7 +948618,20 @@
    "cons_return_2yr": 38.4,
    "path": "staging/retrospective/TRGP/2019-10-25",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -71.8,
+    "tr_1y": -53.2,
+    "tr_2y": 44.9,
+    "tr_3y": 72.0,
+    "excess_6m": -66.6,
+    "excess_1y": -69.7,
+    "excess_2y": -9.9,
+    "excess_3y": 38.6,
+    "avg_m12_m24": -11.2,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -947415,7 +948650,20 @@
    "cons_return_2yr": 41.0,
    "path": "staging/retrospective/TRGP/2019-11-01",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -68.0,
+    "tr_1y": -57.0,
+    "tr_2y": 43.3,
+    "tr_3y": 78.3,
+    "excess_6m": -61.4,
+    "excess_1y": -65.5,
+    "excess_2y": -10.7,
+    "excess_3y": 47.0,
+    "avg_m12_m24": -7.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -947434,7 +948682,20 @@
    "cons_return_2yr": 41.7,
    "path": "staging/retrospective/TRGP/2019-11-08",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -62.9,
+    "tr_1y": -54.5,
+    "tr_2y": 49.0,
+    "tr_3y": 88.5,
+    "excess_6m": -58.5,
+    "excess_1y": -69.7,
+    "excess_2y": -6.5,
+    "excess_3y": 59.2,
+    "avg_m12_m24": -5.1,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -947453,7 +948714,20 @@
    "cons_return_2yr": 44.0,
    "path": "staging/retrospective/TRGP/2019-11-15",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -59.1,
+    "tr_1y": -44.6,
+    "tr_2y": 44.5,
+    "tr_3y": 96.6,
+    "excess_6m": -51.9,
+    "excess_1y": -61.3,
+    "excess_2y": -9.0,
+    "excess_3y": 63.2,
+    "avg_m12_m24": -1.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -947472,7 +948746,20 @@
    "cons_return_2yr": 50.7,
    "path": "staging/retrospective/TRGP/2019-11-22",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -49.2,
+    "tr_1y": -35.3,
+    "tr_2y": 47.7,
+    "tr_3y": 105.3,
+    "excess_6m": -45.2,
+    "excess_1y": -51.4,
+    "excess_2y": -6.3,
+    "excess_3y": 71.0,
+    "avg_m12_m24": 4.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -947491,7 +948778,20 @@
    "cons_return_2yr": 54.8,
    "path": "staging/retrospective/TRGP/2019-11-29",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -48.3,
+    "tr_1y": -29.6,
+    "tr_2y": 52.1,
+    "tr_3y": 110.0,
+    "excess_6m": -46.0,
+    "excess_1y": -47.1,
+    "excess_2y": 0.7,
+    "excess_3y": 78.7,
+    "avg_m12_m24": 8.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -947510,7 +948810,20 @@
    "cons_return_2yr": 57.8,
    "path": "staging/retrospective/TRGP/2019-12-06",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -31.8,
+    "tr_1y": -22.6,
+    "tr_2y": 50.3,
+    "tr_3y": 102.8,
+    "excess_6m": -34.2,
+    "excess_1y": -41.9,
+    "excess_2y": 1.0,
+    "excess_3y": 72.2,
+    "avg_m12_m24": 12.2,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -947529,7 +948842,20 @@
    "cons_return_2yr": 52.4,
    "path": "staging/retrospective/TRGP/2019-12-13",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -44.4,
+    "tr_1y": -20.6,
+    "tr_2y": 40.9,
+    "tr_3y": 104.1,
+    "excess_6m": -41.2,
+    "excess_1y": -37.8,
+    "excess_2y": -9.7,
+    "excess_3y": 71.9,
+    "avg_m12_m24": 9.7,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -947548,7 +948874,20 @@
    "cons_return_2yr": 42.4,
    "path": "staging/retrospective/TRGP/2019-12-20",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -45.6,
+    "tr_1y": -29.1,
+    "tr_2y": 27.4,
+    "tr_3y": 83.3,
+    "excess_6m": -42.7,
+    "excess_1y": -46.0,
+    "excess_2y": -18.0,
+    "excess_3y": 59.1,
+    "avg_m12_m24": 3.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -947567,7 +948906,20 @@
    "cons_return_2yr": 39.2,
    "path": "staging/retrospective/TRGP/2019-12-27",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -52.7,
+    "tr_1y": -31.6,
+    "tr_2y": 33.3,
+    "tr_3y": 89.4,
+    "excess_6m": -46.5,
+    "excess_1y": -47.7,
+    "excess_2y": -18.0,
+    "excess_3y": 65.7,
+    "avg_m12_m24": 2.3,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -947586,7 +948938,20 @@
    "cons_return_2yr": 37.1,
    "path": "staging/retrospective/TRGP/2020-01-03",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -51.3,
+    "tr_1y": -33.1,
+    "tr_2y": 33.0,
+    "tr_3y": 78.6,
+    "excess_6m": -49.0,
+    "excess_1y": -50.8,
+    "excess_2y": -18.7,
+    "excess_3y": 55.0,
+    "avg_m12_m24": 1.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -947605,7 +948970,20 @@
    "cons_return_2yr": 42.6,
    "path": "staging/retrospective/TRGP/2020-01-10",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -52.4,
+    "tr_1y": -23.3,
+    "tr_2y": 41.7,
+    "tr_3y": 95.2,
+    "excess_6m": -50.8,
+    "excess_1y": -42.1,
+    "excess_2y": -4.7,
+    "excess_3y": 69.8,
+    "avg_m12_m24": 7.2,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -947624,7 +949002,20 @@
    "cons_return_2yr": 37.0,
    "path": "staging/retrospective/TRGP/2020-01-17",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -52.6,
+    "tr_1y": -24.3,
+    "tr_2y": 43.9,
+    "tr_3y": 89.3,
+    "excess_6m": -50.3,
+    "excess_1y": -39.2,
+    "excess_2y": 0.4,
+    "excess_3y": 64.1,
+    "avg_m12_m24": 4.1,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -947643,7 +949034,20 @@
    "cons_return_2yr": 46.2,
    "path": "staging/retrospective/TRGP/2020-01-24",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -48.8,
+    "tr_1y": -22.5,
+    "tr_2y": 47.8,
+    "tr_3y": 101.9,
+    "excess_6m": -47.3,
+    "excess_1y": -40.7,
+    "excess_2y": 10.5,
+    "excess_3y": 74.8,
+    "avg_m12_m24": 12.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -947662,7 +949066,20 @@
    "cons_return_2yr": 54.9,
    "path": "staging/retrospective/TRGP/2020-01-31",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -48.3,
+    "tr_1y": -23.9,
+    "tr_2y": 61.6,
+    "tr_3y": 109.0,
+    "excess_6m": -49.8,
+    "excess_1y": -40.7,
+    "excess_2y": 20.7,
+    "excess_3y": 79.0,
+    "avg_m12_m24": 20.5,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -947681,7 +949098,20 @@
    "cons_return_2yr": 51.7,
    "path": "staging/retrospective/TRGP/2020-02-07",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -46.9,
+    "tr_1y": -17.8,
+    "tr_2y": 67.8,
+    "tr_3y": 106.7,
+    "excess_6m": -48.4,
+    "excess_1y": -36.3,
+    "excess_2y": 29.7,
+    "excess_3y": 76.4,
+    "avg_m12_m24": 19.9,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -947700,7 +949130,20 @@
    "cons_return_2yr": 53.3,
    "path": "staging/retrospective/TRGP/2020-02-14",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -45.3,
+    "tr_1y": -15.6,
+    "tr_2y": 72.4,
+    "tr_3y": 116.0,
+    "excess_6m": -45.9,
+    "excess_1y": -33.6,
+    "excess_2y": 39.0,
+    "excess_3y": 88.5,
+    "avg_m12_m24": 22.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -947719,7 +949162,20 @@
    "cons_return_2yr": -41.3,
    "path": "staging/retrospective/TRGP/2020-02-21",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -52.5,
+    "tr_1y": -22.4,
+    "tr_2y": 61.3,
+    "tr_3y": 93.5,
+    "excess_6m": -55.1,
+    "excess_1y": -41.1,
+    "excess_2y": 27.7,
+    "excess_3y": 68.5,
+    "avg_m12_m24": 17.1,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -947738,7 +949194,20 @@
    "cons_return_2yr": -29.1,
    "path": "staging/retrospective/TRGP/2020-02-28",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -44.5,
+    "tr_1y": -3.3,
+    "tr_2y": 105.0,
+    "tr_3y": 136.3,
+    "excess_6m": -63.8,
+    "excess_1y": -33.6,
+    "excess_2y": 53.8,
+    "excess_3y": 96.5,
+    "avg_m12_m24": 43.3,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -947757,7 +949226,20 @@
    "cons_return_2yr": -17.6,
    "path": "staging/retrospective/TRGP/2020-03-06",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": -40.6,
+    "tr_1y": 25.4,
+    "tr_2y": 153.3,
+    "tr_3y": 190.5,
+    "excess_6m": -56.7,
+    "excess_1y": -5.4,
+    "excess_2y": 104.2,
+    "excess_3y": 148.5,
+    "avg_m12_m24": 68.8,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -947776,7 +949258,20 @@
    "cons_return_2yr": 84.0,
    "path": "staging/retrospective/TRGP/2020-03-13",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 19.5,
+    "tr_1y": 181.8,
+    "tr_2y": 457.4,
+    "tr_3y": 498.2,
+    "excess_6m": -5.6,
+    "excess_1y": 133.4,
+    "excess_2y": 397.2,
+    "excess_3y": 448.6,
+    "avg_m12_m24": 282.4,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -947795,7 +949290,20 @@
    "cons_return_2yr": 214.5,
    "path": "staging/retrospective/TRGP/2020-03-20",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 113.2,
+    "tr_1y": 350.0,
+    "tr_2y": 863.2,
+    "tr_3y": 873.6,
+    "excess_6m": 67.5,
+    "excess_1y": 277.3,
+    "excess_2y": 763.9,
+    "excess_3y": 793.7,
+    "avg_m12_m24": 562.8,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -947814,7 +949322,20 @@
    "cons_return_2yr": 228.5,
    "path": "staging/retrospective/TRGP/2020-03-27",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 105.4,
+    "tr_1y": 370.0,
+    "tr_2y": 997.3,
+    "tr_3y": 934.2,
+    "excess_6m": 74.7,
+    "excess_1y": 311.5,
+    "excess_2y": 914.2,
+    "excess_3y": 870.7,
+    "avg_m12_m24": 603.9,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -947833,7 +949354,20 @@
    "cons_return_2yr": 262.7,
    "path": "staging/retrospective/TRGP/2020-04-03",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 129.2,
+    "tr_1y": 413.4,
+    "tr_2y": 1138.4,
+    "tr_3y": 1130.0,
+    "excess_6m": 93.6,
+    "excess_1y": 349.8,
+    "excess_2y": 1051.3,
+    "excess_3y": 1057.3,
+    "avg_m12_m24": 689.9,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -947852,7 +949386,20 @@
    "cons_return_2yr": 166.7,
    "path": "staging/retrospective/TRGP/2020-04-09",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 97.1,
+    "tr_1y": 265.2,
+    "tr_2y": 809.6,
+    "tr_3y": 798.7,
+    "excess_6m": 71.4,
+    "excess_1y": 215.2,
+    "excess_2y": 744.7,
+    "excess_3y": 745.2,
+    "avg_m12_m24": 491.0,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -947871,7 +949418,20 @@
    "cons_return_2yr": 189.6,
    "path": "staging/retrospective/TRGP/2020-04-17",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 111.2,
+    "tr_1y": 326.0,
+    "tr_2y": 904.9,
+    "tr_3y": 895.6,
+    "excess_6m": 89.1,
+    "excess_1y": 278.5,
+    "excess_2y": 848.2,
+    "excess_3y": 845.0,
+    "avg_m12_m24": 551.6,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -947890,7 +949450,20 @@
    "cons_return_2yr": 136.2,
    "path": "staging/retrospective/TRGP/2020-04-24",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 78.1,
+    "tr_1y": 253.3,
+    "tr_2y": 694.4,
+    "tr_3y": 717.3,
+    "excess_6m": 54.9,
+    "excess_1y": 204.1,
+    "excess_2y": 639.9,
+    "excess_3y": 665.2,
+    "avg_m12_m24": 440.9,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -947909,7 +949482,20 @@
    "cons_return_2yr": 94.4,
    "path": "staging/retrospective/TRGP/2020-05-01",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 37.6,
+    "tr_1y": 197.1,
+    "tr_2y": 532.6,
+    "tr_3y": 562.6,
+    "excess_6m": 21.2,
+    "excess_1y": 147.6,
+    "excess_2y": 482.9,
+    "excess_3y": 509.3,
+    "avg_m12_m24": 351.9,
+    "scenario_landing_2y": "XBULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -947928,7 +949514,20 @@
    "cons_return_2yr": 269.3,
    "path": "staging/retrospective/TRGP/2020-05-08",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 24.3,
+    "tr_1y": 179.9,
+    "tr_2y": 456.3,
+    "tr_3y": 437.0,
+    "excess_6m": 3.6,
+    "excess_1y": 133.7,
+    "excess_2y": 411.8,
+    "excess_3y": 389.7,
+    "avg_m12_m24": 292.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -947947,7 +949546,20 @@
    "cons_return_2yr": 239.1,
    "path": "staging/retrospective/TRGP/2020-05-15",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 37.9,
+    "tr_1y": 158.9,
+    "tr_2y": 382.9,
+    "tr_3y": 389.9,
+    "excess_6m": 11.9,
+    "excess_1y": 111.5,
+    "excess_2y": 338.6,
+    "excess_3y": 339.4,
+    "avg_m12_m24": 264.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -947966,7 +949578,20 @@
    "cons_return_2yr": 182.5,
    "path": "staging/retrospective/TRGP/2020-05-22",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 29.0,
+    "tr_1y": 116.0,
+    "tr_2y": 292.1,
+    "tr_3y": 310.7,
+    "excess_6m": 7.9,
+    "excess_1y": 73.6,
+    "excess_2y": 256.4,
+    "excess_3y": 262.9,
+    "avg_m12_m24": 207.1,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -947985,7 +949610,20 @@
    "cons_return_2yr": 184.9,
    "path": "staging/retrospective/TRGP/2020-05-29",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 38.1,
+    "tr_1y": 119.5,
+    "tr_2y": 314.3,
+    "tr_3y": 302.7,
+    "excess_6m": 17.7,
+    "excess_1y": 79.6,
+    "excess_2y": 274.1,
+    "excess_3y": 258.8,
+    "avg_m12_m24": 213.2,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948004,7 +949642,20 @@
    "cons_return_2yr": 117.7,
    "path": "staging/retrospective/TRGP/2020-06-05",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 14.1,
+    "tr_1y": 99.3,
+    "tr_2y": 236.0,
+    "tr_3y": 215.0,
+    "excess_6m": -2.5,
+    "excess_1y": 65.2,
+    "excess_2y": 203.8,
+    "excess_3y": 175.7,
+    "avg_m12_m24": 141.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948023,7 +949674,20 @@
    "cons_return_2yr": 159.6,
    "path": "staging/retrospective/TRGP/2020-06-12",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 44.9,
+    "tr_1y": 141.1,
+    "tr_2y": 275.6,
+    "tr_3y": 271.8,
+    "excess_6m": 23.6,
+    "excess_1y": 99.8,
+    "excess_2y": 243.7,
+    "excess_3y": 223.4,
+    "avg_m12_m24": 191.2,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948042,7 +949706,20 @@
    "cons_return_2yr": 147.3,
    "path": "staging/retrospective/TRGP/2020-06-19",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 31.7,
+    "tr_1y": 116.3,
+    "tr_2y": 200.6,
+    "tr_3y": 262.2,
+    "excess_6m": 11.2,
+    "excess_1y": 80.1,
+    "excess_2y": 178.3,
+    "excess_3y": 213.9,
+    "avg_m12_m24": 179.1,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948061,7 +949738,20 @@
    "cons_return_2yr": 180.3,
    "path": "staging/retrospective/TRGP/2020-06-26",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 47.1,
+    "tr_1y": 151.4,
+    "tr_2y": 227.0,
+    "tr_3y": 309.1,
+    "excess_6m": 23.2,
+    "excess_1y": 107.4,
+    "excess_2y": 193.1,
+    "excess_3y": 259.3,
+    "avg_m12_m24": 217.9,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948080,7 +949770,20 @@
    "cons_return_2yr": 167.2,
    "path": "staging/retrospective/TRGP/2020-07-02",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 39.4,
+    "tr_1y": 137.0,
+    "tr_2y": 226.7,
+    "tr_3y": 314.0,
+    "excess_6m": 18.7,
+    "excess_1y": 96.3,
+    "excess_2y": 200.9,
+    "excess_3y": 266.2,
+    "avg_m12_m24": 204.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948099,7 +949802,20 @@
    "cons_return_2yr": 185.4,
    "path": "staging/retrospective/TRGP/2020-07-10",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 64.6,
+    "tr_1y": 154.4,
+    "tr_2y": 241.7,
+    "tr_3y": 347.2,
+    "excess_6m": 43.6,
+    "excess_1y": 115.5,
+    "excess_2y": 215.6,
+    "excess_3y": 303.1,
+    "avg_m12_m24": 226.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948118,7 +949834,20 @@
    "cons_return_2yr": 174.6,
    "path": "staging/retrospective/TRGP/2020-07-17",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 62.9,
+    "tr_1y": 124.8,
+    "tr_2y": 224.1,
+    "tr_3y": 334.0,
+    "excess_6m": 45.2,
+    "excess_1y": 89.0,
+    "excess_2y": 200.8,
+    "excess_3y": 288.2,
+    "avg_m12_m24": 216.1,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948137,7 +949866,20 @@
    "cons_return_2yr": 171.4,
    "path": "staging/retrospective/TRGP/2020-07-24",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 54.3,
+    "tr_1y": 128.5,
+    "tr_2y": 235.5,
+    "tr_3y": 348.5,
+    "excess_6m": 34.0,
+    "excess_1y": 89.7,
+    "excess_2y": 208.8,
+    "excess_3y": 301.3,
+    "avg_m12_m24": 214.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948156,7 +949898,20 @@
    "cons_return_2yr": 178.8,
    "path": "staging/retrospective/TRGP/2020-07-31",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 50.8,
+    "tr_1y": 132.5,
+    "tr_2y": 286.5,
+    "tr_3y": 358.9,
+    "excess_6m": 36.6,
+    "excess_1y": 96.5,
+    "excess_2y": 256.8,
+    "excess_3y": 313.4,
+    "avg_m12_m24": 225.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948175,7 +949930,20 @@
    "cons_return_2yr": 159.9,
    "path": "staging/retrospective/TRGP/2020-08-07",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 55.2,
+    "tr_1y": 120.7,
+    "tr_2y": 232.8,
+    "tr_3y": 335.2,
+    "excess_6m": 38.4,
+    "excess_1y": 86.8,
+    "excess_2y": 205.8,
+    "excess_3y": 295.1,
+    "avg_m12_m24": 206.1,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948194,7 +949962,20 @@
    "cons_return_2yr": 155.2,
    "path": "staging/retrospective/TRGP/2020-08-14",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 54.9,
+    "tr_1y": 122.0,
+    "tr_2y": 255.9,
+    "tr_3y": 339.9,
+    "excess_6m": 37.5,
+    "excess_1y": 88.0,
+    "excess_2y": 225.7,
+    "excess_3y": 301.5,
+    "avg_m12_m24": 203.0,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948213,7 +949994,20 @@
    "cons_return_2yr": 177.0,
    "path": "staging/retrospective/TRGP/2020-08-21",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 63.9,
+    "tr_1y": 129.6,
+    "tr_2y": 282.8,
+    "tr_3y": 377.1,
+    "excess_6m": 48.2,
+    "excess_1y": 97.4,
+    "excess_2y": 255.1,
+    "excess_3y": 342.3,
+    "avg_m12_m24": 231.7,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948232,7 +950026,20 @@
    "cons_return_2yr": 186.8,
    "path": "staging/retrospective/TRGP/2020-08-28",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 75.2,
+    "tr_1y": 156.3,
+    "tr_2y": 303.8,
+    "tr_3y": 398.3,
+    "excess_6m": 65.9,
+    "excess_1y": 126.3,
+    "excess_2y": 284.9,
+    "excess_3y": 366.8,
+    "avg_m12_m24": 246.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948251,7 +950058,20 @@
    "cons_return_2yr": 205.2,
    "path": "staging/retrospective/TRGP/2020-09-04",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 105.6,
+    "tr_1y": 178.2,
+    "tr_2y": 335.6,
+    "tr_3y": 455.6,
+    "excess_6m": 94.8,
+    "excess_1y": 144.3,
+    "excess_2y": 317.7,
+    "excess_3y": 418.6,
+    "avg_m12_m24": 279.7,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948270,7 +950090,20 @@
    "cons_return_2yr": 239.0,
    "path": "staging/retrospective/TRGP/2020-09-11",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 135.5,
+    "tr_1y": 198.4,
+    "tr_2y": 399.0,
+    "tr_3y": 492.0,
+    "excess_6m": 116.8,
+    "excess_1y": 163.4,
+    "excess_2y": 373.9,
+    "excess_3y": 452.3,
+    "avg_m12_m24": 324.5,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948289,7 +950122,20 @@
    "cons_return_2yr": 224.7,
    "path": "staging/retrospective/TRGP/2020-09-18",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 112.2,
+    "tr_1y": 195.8,
+    "tr_2y": 357.6,
+    "tr_3y": 478.8,
+    "excess_6m": 93.3,
+    "excess_1y": 160.6,
+    "excess_2y": 337.4,
+    "excess_3y": 439.1,
+    "avg_m12_m24": 309.9,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948308,7 +950154,20 @@
    "cons_return_2yr": 252.2,
    "path": "staging/retrospective/TRGP/2020-09-25",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 126.3,
+    "tr_1y": 237.7,
+    "tr_2y": 332.9,
+    "tr_3y": 525.5,
+    "excess_6m": 106.9,
+    "excess_1y": 201.0,
+    "excess_2y": 317.4,
+    "excess_3y": 488.4,
+    "avg_m12_m24": 347.5,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948327,7 +950186,20 @@
    "cons_return_2yr": 248.5,
    "path": "staging/retrospective/TRGP/2020-10-02",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 125.7,
+    "tr_1y": 257.6,
+    "tr_2y": 332.5,
+    "tr_3y": 505.7,
+    "excess_6m": 104.9,
+    "excess_1y": 225.8,
+    "excess_2y": 322.0,
+    "excess_3y": 472.2,
+    "avg_m12_m24": 344.2,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948346,7 +950218,20 @@
    "cons_return_2yr": 197.4,
    "path": "staging/retrospective/TRGP/2020-10-09",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 86.3,
+    "tr_1y": 216.7,
+    "tr_2y": 289.5,
+    "tr_3y": 415.1,
+    "excess_6m": 66.8,
+    "excess_1y": 188.8,
+    "excess_2y": 281.5,
+    "excess_3y": 385.2,
+    "avg_m12_m24": 280.5,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948365,7 +950250,20 @@
    "cons_return_2yr": 201.4,
    "path": "staging/retrospective/TRGP/2020-10-16",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 102.9,
+    "tr_1y": 239.0,
+    "tr_2y": 301.9,
+    "tr_3y": 450.9,
+    "excess_6m": 81.9,
+    "excess_1y": 209.0,
+    "excess_2y": 295.5,
+    "excess_3y": 420.1,
+    "avg_m12_m24": 286.9,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948384,7 +950282,20 @@
    "cons_return_2yr": 191.5,
    "path": "staging/retrospective/TRGP/2020-10-23",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 99.5,
+    "tr_1y": 230.9,
+    "tr_2y": 305.3,
+    "tr_3y": 424.0,
+    "excess_6m": 78.2,
+    "excess_1y": 198.2,
+    "excess_2y": 293.6,
+    "excess_3y": 397.1,
+    "avg_m12_m24": 275.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948403,7 +950314,20 @@
    "cons_return_2yr": 210.7,
    "path": "staging/retrospective/TRGP/2020-10-30",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 117.4,
+    "tr_1y": 243.1,
+    "tr_2y": 329.7,
+    "tr_3y": 443.6,
+    "excess_6m": 88.7,
+    "excess_1y": 200.7,
+    "excess_2y": 306.9,
+    "excess_3y": 410.7,
+    "avg_m12_m24": 301.7,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948422,7 +950346,20 @@
    "cons_return_2yr": 194.2,
    "path": "staging/retrospective/TRGP/2020-11-06",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 120.4,
+    "tr_1y": 236.8,
+    "tr_2y": 325.8,
+    "tr_3y": 438.0,
+    "excess_6m": 99.9,
+    "excess_1y": 201.3,
+    "excess_2y": 314.9,
+    "excess_3y": 408.3,
+    "avg_m12_m24": 281.9,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948441,7 +950378,20 @@
    "cons_return_2yr": 142.9,
    "path": "staging/retrospective/TRGP/2020-11-13",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 83.5,
+    "tr_1y": 166.0,
+    "tr_2y": 262.6,
+    "tr_3y": 331.4,
+    "excess_6m": 68.2,
+    "excess_1y": 134.0,
+    "excess_2y": 248.0,
+    "excess_3y": 303.3,
+    "avg_m12_m24": 216.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948460,7 +950410,20 @@
    "cons_return_2yr": 116.1,
    "path": "staging/retrospective/TRGP/2020-11-20",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 68.3,
+    "tr_1y": 133.8,
+    "tr_2y": 221.2,
+    "tr_3y": 292.2,
+    "excess_6m": 50.7,
+    "excess_1y": 100.2,
+    "excess_2y": 206.4,
+    "excess_3y": 259.2,
+    "avg_m12_m24": 183.3,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948479,7 +950442,20 @@
    "cons_return_2yr": 103.6,
    "path": "staging/retrospective/TRGP/2020-11-27",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 59.0,
+    "tr_1y": 124.0,
+    "tr_2y": 206.6,
+    "tr_3y": 274.0,
+    "excess_6m": 42.9,
+    "excess_1y": 96.2,
+    "excess_2y": 192.7,
+    "excess_3y": 243.9,
+    "avg_m12_m24": 168.0,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948498,7 +950474,20 @@
    "cons_return_2yr": 88.1,
    "path": "staging/retrospective/TRGP/2020-12-04",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 75.2,
+    "tr_1y": 94.7,
+    "tr_2y": 190.3,
+    "tr_3y": 250.5,
+    "excess_6m": 60.2,
+    "excess_1y": 70.6,
+    "excess_2y": 177.1,
+    "excess_3y": 222.1,
+    "avg_m12_m24": 149.3,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948517,7 +950506,20 @@
    "cons_return_2yr": 76.5,
    "path": "staging/retrospective/TRGP/2020-12-11",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 66.8,
+    "tr_1y": 86.2,
+    "tr_2y": 149.3,
+    "tr_3y": 216.1,
+    "excess_6m": 50.2,
+    "excess_1y": 56.2,
+    "excess_2y": 138.7,
+    "excess_3y": 185.0,
+    "avg_m12_m24": 135.2,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948536,7 +950538,20 @@
    "cons_return_2yr": 85.1,
    "path": "staging/retrospective/TRGP/2020-12-18",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 64.7,
+    "tr_1y": 86.2,
+    "tr_2y": 166.8,
+    "tr_3y": 232.6,
+    "excess_6m": 51.6,
+    "excess_1y": 60.1,
+    "excess_2y": 159.7,
+    "excess_3y": 199.7,
+    "avg_m12_m24": 148.1,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948555,7 +950570,20 @@
    "cons_return_2yr": 87.8,
    "path": "staging/retrospective/TRGP/2020-12-24",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 72.5,
+    "tr_1y": 92.9,
+    "tr_2y": 183.1,
+    "tr_3y": 240.3,
+    "excess_6m": 56.5,
+    "excess_1y": 63.8,
+    "excess_2y": 176.1,
+    "excess_3y": 206.9,
+    "avg_m12_m24": 153.1,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948574,7 +950602,20 @@
    "cons_return_2yr": 89.1,
    "path": "staging/retrospective/TRGP/2020-12-31",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 69.3,
+    "tr_1y": 96.7,
+    "tr_2y": 185.4,
+    "tr_3y": 243.1,
+    "excess_6m": 54.1,
+    "excess_1y": 67.9,
+    "excess_2y": 179.9,
+    "excess_3y": 211.0,
+    "avg_m12_m24": 156.0,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948593,7 +950634,20 @@
    "cons_return_2yr": 70.8,
    "path": "staging/retrospective/TRGP/2021-01-08",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 49.0,
+    "tr_1y": 92.8,
+    "tr_2y": 156.5,
+    "tr_3y": 201.4,
+    "excess_6m": 35.3,
+    "excess_1y": 69.1,
+    "excess_2y": 151.6,
+    "excess_3y": 172.0,
+    "avg_m12_m24": 132.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948612,7 +950666,20 @@
    "cons_return_2yr": 66.1,
    "path": "staging/retrospective/TRGP/2021-01-15",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 40.5,
+    "tr_1y": 93.7,
+    "tr_2y": 157.1,
+    "tr_3y": 191.3,
+    "excess_6m": 24.0,
+    "excess_1y": 68.5,
+    "excess_2y": 147.8,
+    "excess_3y": 159.4,
+    "avg_m12_m24": 127.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948631,7 +950698,20 @@
    "cons_return_2yr": 73.4,
    "path": "staging/retrospective/TRGP/2021-01-22",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 49.6,
+    "tr_1y": 94.1,
+    "tr_2y": 169.2,
+    "tr_3y": 204.0,
+    "excess_6m": 35.1,
+    "excess_1y": 78.2,
+    "excess_2y": 162.7,
+    "excess_3y": 172.9,
+    "avg_m12_m24": 138.4,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948650,7 +950730,20 @@
    "cons_return_2yr": 82.2,
    "path": "staging/retrospective/TRGP/2021-01-29",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 57.6,
+    "tr_1y": 114.1,
+    "tr_2y": 181.5,
+    "tr_3y": 228.9,
+    "excess_6m": 37.8,
+    "excess_1y": 93.1,
+    "excess_2y": 168.6,
+    "excess_3y": 191.1,
+    "avg_m12_m24": 151.9,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948669,7 +950762,20 @@
    "cons_return_2yr": 65.0,
    "path": "staging/retrospective/TRGP/2021-02-05",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 40.9,
+    "tr_1y": 104.1,
+    "tr_2y": 149.6,
+    "tr_3y": 196.5,
+    "excess_6m": 26.3,
+    "excess_1y": 86.9,
+    "excess_2y": 140.2,
+    "excess_3y": 164.6,
+    "avg_m12_m24": 129.0,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948688,7 +950794,20 @@
    "cons_return_2yr": 62.2,
    "path": "staging/retrospective/TRGP/2021-02-12",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 44.8,
+    "tr_1y": 110.5,
+    "tr_2y": 156.3,
+    "tr_3y": 201.1,
+    "excess_6m": 30.8,
+    "excess_1y": 96.9,
+    "excess_2y": 149.4,
+    "excess_3y": 168.8,
+    "avg_m12_m24": 126.0,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948707,7 +950826,20 @@
    "cons_return_2yr": 12.4,
    "path": "staging/retrospective/TRGP/2021-02-19",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 37.9,
+    "tr_1y": 109.4,
+    "tr_2y": 153.6,
+    "tr_3y": 237.1,
+    "excess_6m": 24.5,
+    "excess_1y": 96.6,
+    "excess_2y": 146.1,
+    "excess_3y": 204.2,
+    "avg_m12_m24": 132.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -948726,7 +950858,20 @@
    "cons_return_2yr": 8.9,
    "path": "staging/retrospective/TRGP/2021-02-26",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 41.5,
+    "tr_1y": 108.2,
+    "tr_2y": 151.6,
+    "tr_3y": 228.5,
+    "excess_6m": 23.5,
+    "excess_1y": 91.6,
+    "excess_2y": 144.2,
+    "excess_3y": 190.6,
+    "avg_m12_m24": 126.2,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -948745,7 +950890,20 @@
    "cons_return_2yr": -2.5,
    "path": "staging/retrospective/TRGP/2021-03-05",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 31.0,
+    "tr_1y": 103.1,
+    "tr_2y": 135.3,
+    "tr_3y": 208.5,
+    "excess_6m": 12.2,
+    "excess_1y": 89.0,
+    "excess_2y": 126.8,
+    "excess_3y": 171.4,
+    "avg_m12_m24": 103.0,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -948764,7 +950922,20 @@
    "cons_return_2yr": -3.1,
    "path": "staging/retrospective/TRGP/2021-03-12",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 25.7,
+    "tr_1y": 98.9,
+    "tr_2y": 117.4,
+    "tr_3y": 215.2,
+    "excess_6m": 11.9,
+    "excess_1y": 90.9,
+    "excess_2y": 116.4,
+    "excess_3y": 179.3,
+    "avg_m12_m24": 102.2,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -948783,7 +950954,20 @@
    "cons_return_2yr": 3.8,
    "path": "staging/retrospective/TRGP/2021-03-19",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 39.4,
+    "tr_1y": 115.4,
+    "tr_2y": 114.2,
+    "tr_3y": 248.7,
+    "excess_6m": 25.4,
+    "excess_1y": 99.8,
+    "excess_2y": 111.0,
+    "excess_3y": 211.4,
+    "avg_m12_m24": 116.8,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -948802,7 +950986,20 @@
    "cons_return_2yr": 3.8,
    "path": "staging/retrospective/TRGP/2021-03-26",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 46.7,
+    "tr_1y": 135.1,
+    "tr_2y": 114.4,
+    "tr_3y": 253.5,
+    "excess_6m": 33.9,
+    "excess_1y": 119.3,
+    "excess_2y": 111.4,
+    "excess_3y": 217.7,
+    "avg_m12_m24": 116.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -948821,7 +951018,20 @@
    "cons_return_2yr": 4.9,
    "path": "staging/retrospective/TRGP/2021-04-01",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 58.8,
+    "tr_1y": 143.0,
+    "tr_2y": 133.6,
+    "tr_3y": 262.2,
+    "excess_6m": 49.7,
+    "excess_1y": 128.5,
+    "excess_2y": 128.4,
+    "excess_3y": 227.2,
+    "avg_m12_m24": 118.7,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -948840,7 +951050,20 @@
    "cons_return_2yr": 8.5,
    "path": "staging/retrospective/TRGP/2021-04-09",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 70.5,
+    "tr_1y": 151.0,
+    "tr_2y": 148.0,
+    "tr_3y": 281.6,
+    "excess_6m": 63.4,
+    "excess_1y": 140.9,
+    "excess_2y": 145.6,
+    "excess_3y": 250.8,
+    "avg_m12_m24": 126.0,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -948859,7 +951082,20 @@
    "cons_return_2yr": 0.9,
    "path": "staging/retrospective/TRGP/2021-04-16",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 67.5,
+    "tr_1y": 137.5,
+    "tr_2y": 139.5,
+    "tr_3y": 253.9,
+    "excess_6m": 60.0,
+    "excess_1y": 131.2,
+    "excess_2y": 137.8,
+    "excess_3y": 228.6,
+    "avg_m12_m24": 110.2,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -948878,7 +951114,20 @@
    "cons_return_2yr": -0.8,
    "path": "staging/retrospective/TRGP/2021-04-23",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 66.2,
+    "tr_1y": 126.3,
+    "tr_2y": 128.8,
+    "tr_3y": 253.7,
+    "excess_6m": 56.8,
+    "excess_1y": 122.7,
+    "excess_2y": 127.0,
+    "excess_3y": 227.9,
+    "avg_m12_m24": 106.6,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -948897,7 +951146,20 @@
    "cons_return_2yr": -2.9,
    "path": "staging/retrospective/TRGP/2021-04-30",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 58.2,
+    "tr_1y": 114.2,
+    "tr_2y": 124.8,
+    "tr_3y": 242.3,
+    "excess_6m": 47.4,
+    "excess_1y": 114.1,
+    "excess_2y": 122.2,
+    "excess_3y": 217.5,
+    "avg_m12_m24": 102.1,
+    "scenario_landing_2y": "BULL",
+    "call_hit_2y": false
+   }
   },
   {
    "ticker": "TRGP",
@@ -948916,7 +951178,20 @@
    "cons_return_2yr": 368.5,
    "path": "staging/retrospective/TRGP/2021-05-07",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 48.8,
+    "tr_1y": 99.8,
+    "tr_2y": 94.4,
+    "tr_3y": 207.4,
+    "excess_6m": 37.1,
+    "excess_1y": 100.9,
+    "excess_2y": 93.8,
+    "excess_3y": 180.4,
+    "avg_m12_m24": 83.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948935,7 +951210,20 @@
    "cons_return_2yr": 364.9,
    "path": "staging/retrospective/TRGP/2021-05-14",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 41.3,
+    "tr_1y": 87.4,
+    "tr_2y": 87.8,
+    "tr_3y": 209.3,
+    "excess_6m": 28.4,
+    "excess_1y": 89.6,
+    "excess_2y": 86.1,
+    "excess_3y": 179.1,
+    "avg_m12_m24": 81.9,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948954,7 +951242,20 @@
    "cons_return_2yr": 364.5,
    "path": "staging/retrospective/TRGP/2021-05-21",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 39.4,
+    "tr_1y": 82.4,
+    "tr_2y": 88.5,
+    "tr_3y": 218.7,
+    "excess_6m": 25.7,
+    "excess_1y": 87.1,
+    "excess_2y": 84.6,
+    "excess_3y": 186.1,
+    "avg_m12_m24": 81.7,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948973,7 +951274,20 @@
    "cons_return_2yr": 360.9,
    "path": "staging/retrospective/TRGP/2021-05-28",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 40.7,
+    "tr_1y": 89.7,
+    "tr_2y": 84.4,
+    "tr_3y": 209.3,
+    "excess_6m": 30.7,
+    "excess_1y": 89.5,
+    "excess_2y": 81.4,
+    "excess_3y": 178.7,
+    "avg_m12_m24": 80.3,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -948992,7 +951306,20 @@
    "cons_return_2yr": 287.1,
    "path": "staging/retrospective/TRGP/2021-06-04",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 11.2,
+    "tr_1y": 69.2,
+    "tr_2y": 59.8,
+    "tr_3y": 162.5,
+    "excess_6m": 3.2,
+    "excess_1y": 70.6,
+    "excess_2y": 55.7,
+    "excess_3y": 133.0,
+    "avg_m12_m24": 51.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -949011,7 +951338,20 @@
    "cons_return_2yr": 281.6,
    "path": "staging/retrospective/TRGP/2021-06-11",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 11.7,
+    "tr_1y": 56.3,
+    "tr_2y": 56.1,
+    "tr_3y": 168.1,
+    "excess_6m": 0.1,
+    "excess_1y": 63.0,
+    "excess_2y": 51.9,
+    "excess_3y": 137.0,
+    "avg_m12_m24": 48.9,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -949030,7 +951370,20 @@
    "cons_return_2yr": 305.4,
    "path": "staging/retrospective/TRGP/2021-06-18",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 13.1,
+    "tr_1y": 39.3,
+    "tr_2y": 68.0,
+    "tr_3y": 190.0,
+    "excess_6m": 1.6,
+    "excess_1y": 49.7,
+    "excess_2y": 59.1,
+    "excess_3y": 153.6,
+    "avg_m12_m24": 58.4,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -949049,7 +951402,20 @@
    "cons_return_2yr": 295.3,
    "path": "staging/retrospective/TRGP/2021-06-25",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 12.6,
+    "tr_1y": 30.3,
+    "tr_2y": 59.7,
+    "tr_3y": 196.9,
+    "excess_6m": 1.6,
+    "excess_1y": 37.5,
+    "excess_2y": 55.2,
+    "excess_3y": 164.7,
+    "avg_m12_m24": 54.9,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -949068,7 +951434,20 @@
    "cons_return_2yr": 299.8,
    "path": "staging/retrospective/TRGP/2021-07-02",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 17.1,
+    "tr_1y": 38.2,
+    "tr_2y": 75.3,
+    "tr_3y": 202.9,
+    "excess_6m": 6.8,
+    "excess_1y": 48.9,
+    "excess_2y": 70.2,
+    "excess_3y": 171.9,
+    "avg_m12_m24": 57.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -949087,7 +951466,20 @@
    "cons_return_2yr": 297.6,
    "path": "staging/retrospective/TRGP/2021-07-09",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 24.6,
+    "tr_1y": 34.6,
+    "tr_2y": 77.1,
+    "tr_3y": 204.4,
+    "excess_6m": 16.9,
+    "excess_1y": 44.0,
+    "excess_2y": 73.5,
+    "excess_3y": 172.3,
+    "avg_m12_m24": 57.0,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -949106,7 +951498,20 @@
    "cons_return_2yr": 333.3,
    "path": "staging/retrospective/TRGP/2021-07-16",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 40.3,
+    "tr_1y": 44.6,
+    "tr_2y": 94.7,
+    "tr_3y": 237.6,
+    "excess_6m": 31.8,
+    "excess_1y": 53.9,
+    "excess_2y": 87.7,
+    "excess_3y": 202.1,
+    "avg_m12_m24": 72.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -949125,7 +951530,20 @@
    "cons_return_2yr": 321.2,
    "path": "staging/retrospective/TRGP/2021-07-23",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 30.9,
+    "tr_1y": 47.2,
+    "tr_2y": 95.5,
+    "tr_3y": 230.7,
+    "excess_6m": 30.6,
+    "excess_1y": 56.1,
+    "excess_2y": 89.8,
+    "excess_3y": 200.5,
+    "avg_m12_m24": 68.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -949144,7 +951562,20 @@
    "cons_return_2yr": 325.3,
    "path": "staging/retrospective/TRGP/2021-07-30",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 38.7,
+    "tr_1y": 66.8,
+    "tr_2y": 98.2,
+    "tr_3y": 229.5,
+    "excess_6m": 37.2,
+    "excess_1y": 71.5,
+    "excess_2y": 91.2,
+    "excess_3y": 201.5,
+    "avg_m12_m24": 70.4,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -949163,7 +951594,20 @@
    "cons_return_2yr": 701.6,
    "path": "staging/retrospective/TRGP/2021-08-06",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 43.4,
+    "tr_1y": 51.3,
+    "tr_2y": 99.0,
+    "tr_3y": 219.4,
+    "excess_6m": 41.4,
+    "excess_1y": 56.5,
+    "excess_2y": 95.2,
+    "excess_3y": 197.0,
+    "avg_m12_m24": 68.0,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -949182,7 +951626,20 @@
    "cons_return_2yr": 682.2,
    "path": "staging/retrospective/TRGP/2021-08-13",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 46.8,
+    "tr_1y": 60.9,
+    "tr_2y": 99.8,
+    "tr_3y": 223.1,
+    "excess_6m": 47.4,
+    "excess_1y": 63.7,
+    "excess_2y": 97.0,
+    "excess_3y": 197.2,
+    "avg_m12_m24": 64.7,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -949201,7 +951658,20 @@
    "cons_return_2yr": 721.3,
    "path": "staging/retrospective/TRGP/2021-08-20",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 49.4,
+    "tr_1y": 67.4,
+    "tr_2y": 109.3,
+    "tr_3y": 251.1,
+    "excess_6m": 50.8,
+    "excess_1y": 70.8,
+    "excess_2y": 108.0,
+    "excess_3y": 220.8,
+    "avg_m12_m24": 73.7,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -949220,7 +951690,20 @@
    "cons_return_2yr": 661.3,
    "path": "staging/retrospective/TRGP/2021-08-27",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 42.2,
+    "tr_1y": 58.1,
+    "tr_2y": 93.4,
+    "tr_3y": 233.3,
+    "excess_6m": 44.3,
+    "excess_1y": 66.7,
+    "excess_2y": 92.9,
+    "excess_3y": 204.3,
+    "avg_m12_m24": 61.6,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -949239,7 +951722,20 @@
    "cons_return_2yr": 663.0,
    "path": "staging/retrospective/TRGP/2021-09-03",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 52.0,
+    "tr_1y": 57.1,
+    "tr_2y": 100.6,
+    "tr_3y": 244.6,
+    "excess_6m": 55.1,
+    "excess_1y": 69.2,
+    "excess_2y": 98.3,
+    "excess_3y": 218.4,
+    "avg_m12_m24": 62.7,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -949258,7 +951754,20 @@
    "cons_return_2yr": 690.3,
    "path": "staging/retrospective/TRGP/2021-09-10",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 61.3,
+    "tr_1y": 67.9,
+    "tr_2y": 102.8,
+    "tr_3y": 243.8,
+    "excess_6m": 65.0,
+    "excess_1y": 75.2,
+    "excess_2y": 99.9,
+    "excess_3y": 216.3,
+    "avg_m12_m24": 69.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -949277,7 +951786,20 @@
    "cons_return_2yr": 663.1,
    "path": "staging/retrospective/TRGP/2021-09-17",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 51.2,
+    "tr_1y": 55.2,
+    "tr_2y": 94.3,
+    "tr_3y": 249.4,
+    "excess_6m": 50.9,
+    "excess_1y": 66.4,
+    "excess_2y": 91.0,
+    "excess_3y": 217.8,
+    "avg_m12_m24": 63.9,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -949296,7 +951818,20 @@
    "cons_return_2yr": 624.8,
    "path": "staging/retrospective/TRGP/2021-09-24",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 54.6,
+    "tr_1y": 28.4,
+    "tr_2y": 84.1,
+    "tr_3y": 241.2,
+    "excess_6m": 52.5,
+    "excess_1y": 44.1,
+    "excess_2y": 84.3,
+    "excess_3y": 208.1,
+    "avg_m12_m24": 56.5,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -949315,7 +951850,20 @@
    "cons_return_2yr": 577.0,
    "path": "staging/retrospective/TRGP/2021-10-01",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 53.2,
+    "tr_1y": 21.1,
+    "tr_2y": 74.5,
+    "tr_3y": 207.1,
+    "excess_6m": 48.2,
+    "excess_1y": 37.4,
+    "excess_2y": 73.1,
+    "excess_3y": 171.7,
+    "avg_m12_m24": 47.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -949334,7 +951882,20 @@
    "cons_return_2yr": 552.1,
    "path": "staging/retrospective/TRGP/2021-10-08",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 47.4,
+    "tr_1y": 23.2,
+    "tr_2y": 59.6,
+    "tr_3y": 210.5,
+    "excess_6m": 44.5,
+    "excess_1y": 38.9,
+    "excess_2y": 58.6,
+    "excess_3y": 175.1,
+    "avg_m12_m24": 42.4,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -949353,7 +951914,20 @@
    "cons_return_2yr": 517.0,
    "path": "staging/retrospective/TRGP/2021-10-15",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 42.0,
+    "tr_1y": 18.7,
+    "tr_2y": 61.7,
+    "tr_3y": 200.2,
+    "excess_6m": 43.1,
+    "excess_1y": 37.1,
+    "excess_2y": 62.1,
+    "excess_3y": 165.7,
+    "avg_m12_m24": 35.5,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -949372,7 +951946,20 @@
    "cons_return_2yr": 511.5,
    "path": "staging/retrospective/TRGP/2021-10-22",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 36.3,
+    "tr_1y": 22.6,
+    "tr_2y": 59.3,
+    "tr_3y": 203.3,
+    "excess_6m": 41.6,
+    "excess_1y": 38.7,
+    "excess_2y": 63.5,
+    "excess_3y": 170.2,
+    "avg_m12_m24": 35.0,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -949391,7 +951978,20 @@
    "cons_return_2yr": 528.7,
    "path": "staging/retrospective/TRGP/2021-10-29",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 35.6,
+    "tr_1y": 25.4,
+    "tr_2y": 59.4,
+    "tr_3y": 210.3,
+    "excess_6m": 45.2,
+    "excess_1y": 39.4,
+    "excess_2y": 67.2,
+    "excess_3y": 179.4,
+    "avg_m12_m24": 39.5,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -949410,7 +952010,20 @@
    "cons_return_2yr": 523.1,
    "path": "staging/retrospective/TRGP/2021-11-05",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 33.0,
+    "tr_1y": 26.6,
+    "tr_2y": 61.2,
+    "tr_3y": 223.6,
+    "excess_6m": 44.1,
+    "excess_1y": 45.0,
+    "excess_2y": 65.7,
+    "excess_3y": 196.3,
+    "avg_m12_m24": 35.1,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -949429,7 +952042,20 @@
    "cons_return_2yr": 551.4,
    "path": "staging/retrospective/TRGP/2021-11-12",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 27.3,
+    "tr_1y": 36.6,
+    "tr_2y": 62.0,
+    "tr_3y": 269.4,
+    "excess_6m": 42.7,
+    "excess_1y": 49.9,
+    "excess_2y": 64.9,
+    "excess_3y": 237.5,
+    "avg_m12_m24": 41.8,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -949448,7 +952074,20 @@
    "cons_return_2yr": 559.5,
    "path": "staging/retrospective/TRGP/2021-11-19",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 30.0,
+    "tr_1y": 37.7,
+    "tr_2y": 66.7,
+    "tr_3y": 291.4,
+    "excess_6m": 46.3,
+    "excess_1y": 51.9,
+    "excess_2y": 67.9,
+    "excess_3y": 261.3,
+    "avg_m12_m24": 44.0,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -949467,7 +952106,20 @@
    "cons_return_2yr": 548.4,
    "path": "staging/retrospective/TRGP/2021-11-26",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 31.7,
+    "tr_1y": 37.2,
+    "tr_2y": 67.2,
+    "tr_3y": 284.5,
+    "excess_6m": 42.8,
+    "excess_1y": 48.2,
+    "excess_2y": 65.3,
+    "excess_3y": 249.3,
+    "avg_m12_m24": 42.0,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -949486,7 +952138,20 @@
    "cons_return_2yr": 589.2,
    "path": "staging/retrospective/TRGP/2021-12-03",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 52.3,
+    "tr_1y": 49.5,
+    "tr_2y": 82.3,
+    "tr_3y": 296.4,
+    "excess_6m": 61.1,
+    "excess_1y": 58.4,
+    "excess_2y": 78.2,
+    "excess_3y": 258.9,
+    "avg_m12_m24": 51.6,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -949505,7 +952170,20 @@
    "cons_return_2yr": 576.4,
    "path": "staging/retrospective/TRGP/2021-12-10",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 40.1,
+    "tr_1y": 34.1,
+    "tr_2y": 72.0,
+    "tr_3y": 266.5,
+    "excess_6m": 56.6,
+    "excess_1y": 49.3,
+    "excess_2y": 71.6,
+    "excess_3y": 234.2,
+    "avg_m12_m24": 49.4,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -949524,7 +952202,20 @@
    "cons_return_2yr": 609.5,
    "path": "staging/retrospective/TRGP/2021-12-17",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 23.2,
+    "tr_1y": 43.6,
+    "tr_2y": 78.1,
+    "tr_3y": 276.1,
+    "excess_6m": 43.0,
+    "excess_1y": 58.9,
+    "excess_2y": 73.2,
+    "excess_3y": 240.8,
+    "avg_m12_m24": 57.2,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -949543,7 +952234,20 @@
    "cons_return_2yr": 595.1,
    "path": "staging/retrospective/TRGP/2021-12-23",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 15.8,
+    "tr_1y": 47.1,
+    "tr_2y": 77.1,
+    "tr_3y": 262.9,
+    "excess_6m": 34.9,
+    "excess_1y": 64.4,
+    "excess_2y": 73.7,
+    "excess_3y": 232.2,
+    "avg_m12_m24": 54.7,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "TRGP",
@@ -949562,7 +952266,20 @@
    "cons_return_2yr": 561.7,
    "path": "staging/retrospective/TRGP/2021-12-31",
    "generated": "2026-11-28",
-   "outcome": null
+   "outcome": {
+    "hindsight": true,
+    "tr_6m": 15.6,
+    "tr_1y": 43.4,
+    "tr_2y": 72.5,
+    "tr_3y": 251.8,
+    "excess_6m": 35.5,
+    "excess_1y": 61.5,
+    "excess_2y": 69.7,
+    "excess_3y": 223.7,
+    "avg_m12_m24": 50.9,
+    "scenario_landing_2y": "BEAR",
+    "call_hit_2y": true
+   }
   },
   {
    "ticker": "UNH",
