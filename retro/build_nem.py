@@ -68,6 +68,16 @@ NEM 2018-2021 (retro/README.md, "NEM 2018-2021"; decided before any 2018-2021 mo
   - EV (2020-01-01) and CRYPTO (2020-10-21) go live; neither names a miner, and from the FY2020 10-K the 'why' quotes its words on
     crypto currencies as a factor that moves the gold price ('crypto_words', text only).
 
+NEM 2022-2026 (retro/README.md, "NEM 2022-2026"; decided before any 2022-2026 model was built or scored):
+  - five more vintages (the FY2021-FY2025 10-Ks, each reserving Item 6, so each takes its three years from the statements), each
+    holding the ten fiscal years to the latest one; FY2021 fails the AAPL FY2002 test (the Yanacocha reclamation charges and the other
+    listed items) and FY2022 and FY2023 are losses, each excluded as the latest year and then a gap, so FY20's $3.31 stands to the
+    FY2024 10-K, then FY24's $2.86 and FY25's $6.39;
+  - the Q4 2023 release (2024-02-22) comes a week before its 10-K: its full year ('fy_actual', a loss, so an excluded year) extends the
+    vintage from the print until the 10-K (the NEE and LYB encoding);
+  - GENAI (2022-11-30) and GLP1 (2023-08-08) go live; neither names a miner, and from the FY2023 10-K the 'why' quotes its words on
+    artificial intelligence ('ai_words', text only).
+
 Output goes to staging/retrospective/NEM until the series is added to the archive (--out archive/retrospective/NEM).
 
 Usage
@@ -158,7 +168,10 @@ def check_print(p):
             "eps_pct": g(p["eps_q_prior"], p["eps_q"]) if p["eps_q_prior"] != 0 else None}   # $0.00 a year ago: n/m (the F rule)
     for k, v in want.items():
         assert p[k] == v, (p["quarter"], k, p[k], v)
-    assert "fy_actual" not in p, (p["quarter"], "a Q4 print's own full-year actuals need their encoding (each came with its 10-K)")
+    a = p.get("fy_actual")                # (NEM 2022-2026) a Q4 print ahead of its 10-K: its full year, re-derived from its rows
+    if a:
+        assert p["q"] == 4 and a["fy"] == p["fy"], (p["quarter"], "full-year actuals belong to a Q4 print")
+        assert a["eps"] > 0 or a.get("eps_excluded"), (p["quarter"], "a year without positive EPS is excluded")
 
 
 def build(as_of, facts, raw, spx, engine, out, engine2=None):
@@ -186,9 +199,32 @@ def build(as_of, facts, raw, spx, engine, out, engine2=None):
     if not vintages:
         sys.exit(f"{as_of}: no history vintage in the fact sheet is public yet")
     h = vintages[-1]                                   # latest annual history public on AS_OF
+    reported = lambda h: {int(k) for k in h["eps_normalized"]} | {int(k) for k in h.get("eps_excluded", {})}
+    # (NEM 2022-2026) a Q4 print's full-year actuals extend the annual history from its release until the 10-K vintage (the NEE and LYB
+    # encoding); a year without positive EPS enters as an excluded year
+    for p in [p for p in facts["prints"] if p["published"] <= as_of and p.get("fy_actual")]:
+        a = p["fy_actual"]
+        if a["fy"] in reported(h):                    # the 10-K vintage, once out, wins
+            continue
+        y = str(a["fy"])
+        h = copy.deepcopy(h)
+        if a["eps"] > 0:
+            h["eps_normalized"][y] = a["eps"]
+        else:
+            h["eps_excluded"] = {**h["eps_excluded"], y: a["eps_excluded"]}
+        h["revenue_usd_b"][y], h["diluted_shares_m"][y] = a["revenue_usd_b"], a["diluted_shares_m"]
+        h.update(fy_label=a["fy_label"], prev_fy_margin=a["margin"], prev_fy_margin_note=a["margin_note"], tax_rate=a["tax_rate"],
+                 tax_note=a["tax_note"], prev_fy_sales_growth=a["sales_growth"], prev_fy_oz_k=a["oz_k"], prev_fy_oz_pct=a["oz_pct"],
+                 prev_fy_cas=a["cas"], prev_fy_cas_pct=a["cas_pct"], franchise_source=p["source_title"].replace("Newmont ", ""),
+                 normalization=f'{h["normalization"]}; FY{y[2:]} from {p["source"]} ({p["published"]}): {a["note"]}',
+                 sources=h["sources"] + [p["source"]])
+        for k in [k for k in h["eps_normalized"] if int(k) <= a["fy"] - 10]:     # the ten fiscal years to the latest one
+            del h["eps_normalized"][k]
+        for d in ("eps_excluded", "revenue_usd_b", "diluted_shares_m"):
+            for k in [k for k in h[d] if int(k) <= a["fy"] - 10]:
+                del h[d][k]
     # (NEM 2018-2021) a name changed since the vintage applies from its publication (the SPGI and CB encoding)
     renames = [n for n in facts.get("company_names", []) if h["published"] < n["published"] <= as_of]
-    reported = lambda h: {int(k) for k in h["eps_normalized"]} | {int(k) for k in h.get("eps_excluded", {})}
     first_fy = max(reported(h)) + 1
     guide_fy = lambda p: p["fy"] + (1 if p["q"] == 4 else 0)
     prints = [p for p in facts["prints"] if p["published"] <= as_of and guide_fy(p) >= first_fy]
@@ -221,7 +257,8 @@ def build(as_of, facts, raw, spx, engine, out, engine2=None):
                2015: "the AAPL FY2002 test" + (", then $(0.02) restated" if "$(0.02)" in h["eps_excluded"].get("2015", "") or
                                                "2018" in h["eps_excluded"] else ", then $0.00 restated" if "2016" in h["eps_excluded"] else ""),
                2016: "a loss", 2017: "a loss", 2018: "the AAPL FY2002 test",
-               2019: "the mirror of the AAPL FY2002 test, the Nevada Gold Mines gain"}
+               2019: "the mirror of the AAPL FY2002 test, the Nevada Gold Mines gain",
+               2021: "the AAPL FY2002 test", 2022: "a loss", 2023: "a loss"}
     if between == [2007] or not between:
         gap_text = " (FY07 excluded: a loss)" if between else ""
     else:
@@ -296,7 +333,7 @@ def build(as_of, facts, raw, spx, engine, out, engine2=None):
                 "  the bear needs the gold price to stop covering them.")
     theme_summary = "no disruption theme has dated evidence"
     live = sorted(((t["live_from"], k, t["scope"]) for k, t in retro_tool.load_taxonomy()["themes"].items() if t["live_from"] <= as_of))
-    assert {k for _, k, _ in live} <= {"OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING", "ENERGY_TRANSITION", "EV", "CRYPTO"}, (
+    assert {k for _, k, _ in live} <= {"OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING", "ENERGY_TRANSITION", "EV", "CRYPTO", "GENAI", "GLP1"}, (
         as_of, "a live theme needs its scope reading for a gold miner first", live)
     why = h["why"]
     if [k for _, k, _ in live] != ["OFFSHORE"]:   # from CLOUD's 2012-10-30: every live theme with its registered scope (NEE 2010-2013)
@@ -310,6 +347,9 @@ def build(as_of, facts, raw, spx, engine, out, engine2=None):
     if "CRYPTO" in {k for _, k, _ in live} and h.get("crypto_words"):   # NEM 2018-2021: out of scope; the 10-K's words, text only
         why += ("; Newmont is no payments network, bank, exchange or remitter, so CRYPTO is read as out of scope, and the 10-K's own "
                 f"crypto words name an alternative to gold as an investment, a factor in the gold price: {h['crypto_words']} (text only)")
+    if "GENAI" in {k for _, k, _ in live} and h.get("ai_words"):   # NEM 2022-2026: out of scope; the 10-K's own AI words, text only
+        why += ("; Newmont sells metal, not software seats, services hours or content, so GENAI is read as out of scope, and the 10-K's "
+                f"own AI words are an operating tool and a cybersecurity risk: {h['ai_words']} (text only)")
     oz_basis = latest.get("oz_basis", "sold")
     cat4 = (f"(4) Ounces — consolidated gold ounces {oz_basis} {latest['oz_pct']:+.1f}% in {latest['quarter']} against revenue "
             f"{latest['sales_pct']:+.1f}%: the metal price, not volume, has carried revenue")

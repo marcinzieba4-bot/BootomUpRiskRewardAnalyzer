@@ -1432,7 +1432,8 @@ try:
                  diluted_shares_m={**v["diluted_shares_m"], "2099": 1.0},
                  eps_excluded={**v.get("eps_excluded", {}), "2098": "PLANTED"}, eps_first_excluded={"2097": "PLANTED"},
                  climate_words="PLANTED",   # the ENERGY_TRANSITION reading's 10-K words (NEM 2014-2017)
-                 crypto_words="PLANTED", kind="DURABLE" if v.get("kind") == "CYCLICAL" else "CYCLICAL")   # the CRYPTO reading's 10-K words and the kind (NEM 2018-2021)
+                 crypto_words="PLANTED", kind="DURABLE" if v.get("kind") == "CYCLICAL" else "CYCLICAL",   # the CRYPTO reading's 10-K words and the kind (NEM 2018-2021)
+                 ai_words="PLANTED")                                                                     # the GENAI reading's 10-K words (NEM 2022-2026)
         for g in f["guides"]:
             if g.get("doc") == "PLANTED":
                 for k in ("eps_guide", "rev_guide", "rev_guide_label", "volume_guide"):

@@ -1,0 +1,254 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "NEM",
+ "company": "Newmont Corporation",
+ "as_of": "2024-05-03",
+ "price_date": "2024-05-03",
+ "price": 40.66,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); gold-miner signals with Newmont's rule-T thresholds",
+ "pit_profile": {
+  "kind": "CYCLICAL",
+  "risk": 2,
+  "why": "'Newmont is the world’s leading gold company and is the only gold company included in the S&P 500 Index and the Fortune 500 list of companies.' 'Our business is dependent on the prices of gold, copper, silver, lead and zinc, which fluctuate on a daily basis and are affected by numerous factors beyond our control.' 'A substantial or extended decline in gold, copper, silver, lead or zinc prices would have a material adverse effect on us.' 'The metals markets are cyclical' (the FY2023 10-K's own words; it calls the metals markets it sells into cyclical, so CYCLICAL, the CB rule); no disruption theme in the registry is live for a gold miner on this date (of the live themes, OFFSHORE is scoped to 'lower-cost offshore delivery (Indian IT services) takes share and price from Western consulting, systems integration and outsourcing', CLOUD to 'public cloud displaces on-premise hardware, storage, legacy databases and data-center outsourcing', ECOMMERCE to 'e-commerce (Amazon effect) displaces physical retail, malls, grocery, distribution', STREAMING to 'cord-cutting / streaming displaces linear TV networks and pay-TV bundles', ENERGY_TRANSITION to 'decarbonisation strands oil, gas and coal reserves and refining', EV to 'battery-electric vehicles displace ICE powertrains, auto parts suppliers and fuel retail', CRYPTO to 'crypto / DeFi disintermediates payments networks, banks, exchanges, remittance', GENAI to 'generative / autonomous AI substitutes the core product: software seats, IT services and BPO hours, professional information, search, education content, mobility', GLP1 to 'GLP-1 obesity drugs reduce demand for snacks, beverages, sleep-apnea/diabetes/cardio devices': none names a miner), so the watch list is empty; Newmont holds no oil, gas or coal reserves and no refining, so ENERGY_TRANSITION is read as out of scope, and the 10-K's own climate words are a cost, not a stranded reserve: 'Policy and regulatory risk related to actual and proposed changes in climate- and water-related laws, regulations and taxes developed to regulate the transition to a low-carbon economy may result in increased costs for our operations, venture partners and our suppliers, including increased energy, capital equipment, environmental monitoring and reporting and other costs to comply with...' (the FY2023 10-K's risk factor) (text only); Newmont is no payments network, bank, exchange or remitter, so CRYPTO is read as out of scope, and the 10-K's own crypto words name an alternative to gold as an investment, a factor in the gold price: 'Changing investor or consumer sentiment, including in connection with transition to a low-carbon economy, investor interest in crypto currencies and other investment alternatives' (the FY2023 10-K's list of factors that move the gold price) (text only); Newmont sells metal, not software seats, services hours or content, so GENAI is read as out of scope, and the 10-K's own AI words are an operating tool and a cybersecurity risk: 'new technology that could result in greater operational efficiency, such as our use of artificial intelligence, fleet electrification, and autonomous vehicles' (the FY2023 10-K's cybersecurity risk words) (text only)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "CYCLICAL, RISK PRICED IN",
+  "quality_label": "◎ CYCLICAL, RISK PRICED IN",
+  "quality_color": "#f0b429",
+  "quality_tone": "amber",
+  "business_kind": "CYCLICAL",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "'Newmont is the world’s leading gold company and is the only gold company included in the S&P 500 Index and the Fortune 500 list of companies.' 'Our business is dependent on the prices of gold, copper, silver, lead and zinc, which fluctuate on a daily basis and are affected by numerous factors beyond our control.' 'A substantial or extended decline in gold, copper, silver, lead or zinc prices would have a material adverse effect on us.' 'The metals markets are cyclical' (the FY2023 10-K's own words; it calls the metals markets it sells into cyclical, so CYCLICAL, the CB rule); no disruption theme in the registry is live for a gold miner on this date (of the live themes, OFFSHORE is scoped to 'lower-cost offshore delivery (Indian IT services) takes share and price from Western consulting, systems integration and outsourcing', CLOUD to 'public cloud displaces on-premise hardware, storage, legacy databases and data-center outsourcing', ECOMMERCE to 'e-commerce (Amazon effect) displaces physical retail, malls, grocery, distribution', STREAMING to 'cord-cutting / streaming displaces linear TV networks and pay-TV bundles', ENERGY_TRANSITION to 'decarbonisation strands oil, gas and coal reserves and refining', EV to 'battery-electric vehicles displace ICE powertrains, auto parts suppliers and fuel retail', CRYPTO to 'crypto / DeFi disintermediates payments networks, banks, exchanges, remittance', GENAI to 'generative / autonomous AI substitutes the core product: software seats, IT services and BPO hours, professional information, search, education content, mobility', GLP1 to 'GLP-1 obesity drugs reduce demand for snacks, beverages, sleep-apnea/diabetes/cardio devices': none names a miner), so the watch list is empty; Newmont holds no oil, gas or coal reserves and no refining, so ENERGY_TRANSITION is read as out of scope, and the 10-K's own climate words are a cost, not a stranded reserve: 'Policy and regulatory risk related to actual and proposed changes in climate- and water-related laws, regulations and taxes developed to regulate the transition to a low-carbon economy may result in increased costs for our operations, venture partners and our suppliers, including increased energy, capital equipment, environmental monitoring and reporting and other costs to comply with...' (the FY2023 10-K's risk factor) (text only); Newmont is no payments network, bank, exchange or remitter, so CRYPTO is read as out of scope, and the 10-K's own crypto words name an alternative to gold as an investment, a factor in the gold price: 'Changing investor or consumer sentiment, including in connection with transition to a low-carbon economy, investor interest in crypto currencies and other investment alternatives' (the FY2023 10-K's list of factors that move the gold price) (text only); Newmont sells metal, not software seats, services hours or content, so GENAI is read as out of scope, and the 10-K's own AI words are an operating tool and a cybersecurity risk: 'new technology that could result in greater operational efficiency, such as our use of artificial intelligence, fleet electrification, and autonomous vehicles' (the FY2023 10-K's cybersecurity risk words) (text only). cyclical (obsolescence risk 2/5); price cheap; Ratio B 0.05x; +12% to EPP floor; model-vs-market gap +1.53; conservative 2yr +186%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.05,
+  "ratio_b_fmt": "0.05x",
+  "epp": 36.41,
+  "epp_gap_pct": 11.7,
+  "epp_adj": 0.0,
+  "proxy_composite": 2.4,
+  "sca": 0.35,
+  "adj_composite": 2.75,
+  "market_composite": 1.22,
+  "adj_gap": 1.53,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 186.3,
+  "scenarios": {
+   "BEAR": {
+    "eps": 3.31,
+    "pe": 10.8,
+    "price": 35.75,
+    "desc": "Flat EPS (no EPS change in FY14-FY20 ex-FY15 ex-FY16 ex-FY17 ex-FY18 ex-FY19 to measure: the 0% cap); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 6.92,
+    "pe": 17.9,
+    "price": 123.87,
+    "desc": "EPS +44.6%/yr (Q1 revenue YoY + margin + buyback); P/E at its 10-yr ex-FY15 ex-FY16 ex-FY17 ex-FY18 ex-FY19 ex-FY21 ex-FY22 ex-FY23 median"
+   },
+   "BULL": {
+    "eps": 6.92,
+    "pe": 19.3,
+    "price": 133.56,
+    "desc": "EPS +44.6%/yr (FY14-FY20 ex-FY15 ex-FY16 ex-FY17 ex-FY18 ex-FY19 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 6.92,
+    "pe": 20.1,
+    "price": 139.09,
+    "desc": "EPS +44.6%/yr (no 2-yr run in FY14-FY20 ex-FY15 ex-FY16 ex-FY17 ex-FY18 ex-FY19: BULL's rate); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.05,
+   "epp_gap_pct": 11.7,
+   "adj_gap": 1.53,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 186.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": -0.05,
+   "epp_gap_pct": 11.7,
+   "adj_gap": 1.75,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 186.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 0.08,
+   "epp_gap_pct": 11.7,
+   "adj_gap": 1.48,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 186.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.04,
+   "epp_gap_pct": 11.7,
+   "adj_gap": 1.75,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 186.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.07,
+   "epp_gap_pct": 11.7,
+   "adj_gap": 1.53,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 186.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.05,
+   "epp_gap_pct": 11.7,
+   "adj_gap": 1.83,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 186.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.05,
+   "epp_gap_pct": -12.3,
+   "adj_gap": 1.73,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 186.3,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.05,
+   "epp_gap_pct": 11.7,
+   "adj_gap": 1.53,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 186.3,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "NEM (retrospective, 2024-05-03) ◉ BUY — Ratio B 0.05x (12.1% downside to Bear $35.75 / +228.5% upside to Bull $133.56) | Adj composite 2.75 vs market 1.22: gap +1.53 [UNDERVALUED] | +12% above the EPP floor $36.41 (11x FY24E $3.31) | Conservative 2-yr case: +186.3% total (+93.2%/yr) | At 12.3x FY24E the 15% hurdle price $53.77 sits at or below the BASE case; revenue +50.2% YoY in Q1 2024, forward revenues +50.2% (Q1 2024 revenue growth (no revenue guide)); no disruption theme has dated evidence.",
+ "sources": [
+  {
+   "id": "NM100",
+   "published": "2024-02-29",
+   "filed": "accepted 2024-02-29 07:51 ET, before the open",
+   "title": "Newmont FY2023 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472724000016/0001164727-24-000016.txt",
+   "supports": "history vintage FY2023 (the statements, as Item 6 is reserved; the results and highlights table); the 'why'"
+  },
+  {
+   "id": "NM75",
+   "published": "2019-02-21",
+   "filed": "accepted 2019-02-21 07:08 ET, before the open",
+   "title": "Newmont FY2018 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1164727/000155837019000806/0001558370-19-000806.txt",
+   "supports": "history vintage FY2018 (Item 6 selected data, the statements, the results and highlights table); the 'why'; Q4 quarterly data (diluted shares)"
+  },
+  {
+   "id": "NM99",
+   "published": "2023-02-23",
+   "filed": "accepted 2023-02-23 07:11 ET, before the open",
+   "title": "Newmont FY2022 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472723000011/0001164727-23-000011.txt",
+   "supports": "history vintage FY2022 (the statements, as Item 6 is reserved; the results and highlights table); the 'why'"
+  },
+  {
+   "id": "NM76",
+   "published": "2020-02-20",
+   "filed": "accepted 2020-02-20 07:08 ET, before the open",
+   "title": "Newmont FY2019 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1164727/000155837020001041/0001558370-20-001041.txt",
+   "supports": "history vintage FY2019 (Item 6 selected data, the statements, the results and highlights table); the 'why'; Q4 quarterly data (diluted shares)"
+  },
+  {
+   "id": "NM77",
+   "published": "2021-02-18",
+   "filed": "accepted 2021-02-18 07:06 ET, before the open",
+   "title": "Newmont FY2020 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472721000027/0001164727-21-000027.txt",
+   "supports": "history vintage FY2020 (the statements, as Item 6 is omitted, the results and highlights table); the 'why'; Q4 quarterly data (diluted shares)"
+  },
+  {
+   "id": "NM98",
+   "published": "2022-02-24",
+   "filed": "accepted 2022-02-24 07:05 ET, before the open",
+   "title": "Newmont FY2021 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472722000007/0001164727-22-000007.txt",
+   "supports": "history vintage FY2021 (the statements, as Item 6 is reserved; the results and highlights table); the 'why'"
+  },
+  {
+   "id": "NM53",
+   "published": "2017-02-22",
+   "filed": "accepted 2017-02-21 17:29 ET, after the close: counts from 2017-02-22",
+   "title": "Newmont FY2016 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1164727/000155837017000729/0001558370-17-000729.txt",
+   "supports": "history vintage FY2016 (Item 6 selected data, the statements, the MD&A key results); the 'why'; Q4 quarterly data (diluted shares)"
+  },
+  {
+   "id": "NM78",
+   "published": "2018-04-26",
+   "filed": "accepted 2018-04-25 21:02 ET, after the close: counts from 2018-04-26",
+   "title": "Newmont 8-K of 2018-04-26 (the FY2017 10-K's Items 1, 2, 6, 7 and 8 re-filed: ASU 2016-15, reclamation liability corrections)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1164727/000155837018003282/0001558370-18-003282.txt",
+   "supports": "history vintage FY2017 recast (Item 6 selected data, the statements, the results and highlights table)"
+  },
+  {
+   "id": "NM111",
+   "published": "2024-02-22",
+   "filed": "accepted 2024-02-22 07:00 ET, before the open",
+   "title": "Newmont Q4 2023 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472724000006/0001164727-24-000006.txt",
+   "supports": "Q4 2023: sales, consolidated gold ounces sold, costs applicable to sales per ounce, pre-tax income, diluted EPS from continuing operations, diluted shares, cash and debt"
+  },
+  {
+   "id": "NM112",
+   "published": "2024-04-25",
+   "filed": "accepted 2024-04-25 07:00 ET, before the open",
+   "title": "Newmont Q1 2024 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472724000025/0001164727-24-000025.txt",
+   "supports": "Q1 2024: sales, consolidated gold ounces sold, costs applicable to sales per ounce, pre-tax income, diluted EPS from continuing operations, diluted shares, cash and debt"
+  },
+  {
+   "id": "NM11",
+   "published": "2007-02-26",
+   "filed": "accepted 2007-02-23 18:17 ET, after the close: counts from 2007-02-26",
+   "title": "Newmont FY2006 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1164727/000119312507038537/0001193125-07-038537.txt",
+   "supports": "history: 2002-2003 diluted EPS from continuing operations and revenues; rule T: 2003 and 2004 revenue changes, 2005 and 2006 ounce and cost changes; the 'why'"
+  },
+  {
+   "id": "Y0",
+   "published": "2024-05-03",
+   "title": "Yahoo Finance daily prices, NEM and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/NEM/history",
+   "supports": "close $40.66 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr ex-FY15 ex-FY16 ex-FY17 ex-FY18 ex-FY19 ex-FY21 ex-FY22 ex-FY23 P/E distribution from 2014-05-05"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-28"
+}
