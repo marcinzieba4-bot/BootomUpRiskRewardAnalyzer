@@ -1,0 +1,151 @@
+
+════════════════════════════════════════════════════════════════════════
+  OKE  ·  ONEOK, Inc.  ·  $48.11  ·  RETROSPECTIVE as of 2008-01-11
+  Signal: ✕ AVOID   Ratio B: 2.03x   Adj gap: -1.03  [OVERVALUED]
+  Point-in-time: 8 sources, latest published 2008-01-11; latest print Q3 2007 (Oct 31)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2007E revenues, USD bn  →  FY2009E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2007E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  ONEOK Partners            $     4.3  $   4.3  $  10.1      +0.0      +5.8
+    +13.8% revenues in FY06
+  Distribution              $     2.1  $   2.1  $   4.9      +0.0      +2.8
+    -11.6% revenues in FY06
+  Energy Services           $     6.3  $   6.3  $  15.0      +0.0      +8.7
+    -22.4% revenues in FY06
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    12.7  $  12.7  $  30.0      +0.0     +17.3
+  FY2007E = FY06 $11.90B × (1 + 6.2%: no FY07 revenue guide in numbers, Q3 2007 revenues as reported, applied to the year (no FY07 revenue guide)); split pro rata to FY06 segment sales to unaffiliated customers (FY2006 10-K segment note; eliminations and Other left out)
+  Q3 2007 (Oct 31): revenues $2.81B +6.2%; net margin -2.7%, Distribution operating income +82.6%;
+  operating margin 3.66% (-86.0bp); pre-tax margin 2.39% (-95.0bp); EPS $0.13 vs $0.21
+  Activity: revenues $2,810.0M vs $2,644.8M a year earlier; net margin $340.2M vs $349.8M; Distribution operating income $(1.6)M vs $(9.2)M; growth over the year-ago loss's absolute value (the CAT rule); operating income $102.8M, income before minority interests and income taxes $67.0M; cash and cash equivalents $833.7M at the quarter's end (consolidated); EPS diluted $0.13 vs $0.21
+  FY07: no revenue or margin guide in numbers (BASE takes Q3 2007 revenue growth as reported); EPS $2.77 from the 8-K of 2008-01-10: 'ONEOK also increased its net income guidance for 2007 to $2.75 to $2.79 per diluted share'
+
+  FY2007E EPS check:  $12.7B × 6.1% pre-tax × (1−26.8%) ÷ 0.106B  =  $5.33  (FY2007E: GAAP net income guidance, the 8-K of 2008-01-10's $2.75-2.79 a diluted share, midpoint = $2.77)
+  FY2009E BEAR check: $12.7B × 6.1% ÷ 0.113B  =  $5.00  (scenario $2.49)
+  FY2009E BULL check: $30.0B × 6.5% ÷ 0.113B  =  $12.59  (scenario $3.82)
+  Every 1pp of pre-tax margin ≈ $0.88 EPS ≈ $11/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Net margin growth                   -8.0%    ≥5.0%   ≥17.0%   ≥38.0%     -2.7%  ⚠ BEAR  █░░░
+  Distribution op. income growth     -88.0%  ≥-42.0%    ≥3.0%   ≥57.0%    +82.6%  ★ XBULL  ████
+  Revenue growth                     -38.0%   ≥-6.0%   ≥26.0%  ≥261.0%     +6.2%  ◦ BASE  ██░░
+  Operating margin change           -1350.0bp  ≥-720.0bp  ≥-100.0bp  ≥430.0bp   -86.0bp  ▲ BULL  ███░
+  Pre-tax margin change             -1150.0bp  ≥-590.0bp  ≥-30.0bp  ≥620.0bp   -95.0bp  ◦ BASE  ██░░
+  Disruption theme: none in scope    +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.35 / 4.00
+  Market composite:   3.18 / 4.00  (back-solved from $48 + 15% hurdle)
+  SCA adjustment:    -0.10  ·  EPP-distance adj -0.10  →  Adj composite 2.15  →  Gap -1.03  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY06 revenues -6.2%; Q3 net margin -2.7%, operating margin 3.66% (-86bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 17.4x FY07E vs a 13.1x 6.0-yr median (91st percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    -  Growth vs own history: no FY07 revenue guide in numbers, Q3 2007 revenues as reported +6.2% vs a 69.0% 4-yr median  (-0.50 × 20%  =  -0.100)
+    +  FY06 free cash flow $0.50B (consolidated), dividend $1.44 a year, repurchases of common stock $281.4M in 2006 (FY2006 10-K's statement of cash flows)  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Net margin growth                    -2.7%     -8.0%   -5.3%  NGL spreads, volumes and storage marg…
+  Distribution op. income growth      +82.6%    -88.0%  -170.6%  Rate cases lag costs; warm weather cu…
+  Revenue growth                       +6.2%    -38.0%  -44.2%  Commodity prices and marketed volumes…
+  Operating margin change            -86.0bp  -1350.0bp  -1264.0bp  Costs outrun the margin on sales
+  Pre-tax margin change              -95.0bp  -1150.0bp  -1055.0bp  Interest and charges as earnings fall
+  Disruption theme: none in scope     +2.0/4    +1.0/4  -1.0/4  No live disruption theme covers gas u…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$30  (model)  /  $24 (defined)
+  Bear probability (proxy model):  12.0%
+
+  KEY TRIGGER: Net margin growth went from -8.0% (Q2 2007) to -2.7% (Q3 2007);
+  the bear case needs Distribution (+82.6% now) and revenues
+  (+6.2% now) to give way as well. Regulated distribution rates and fee-based pipelines carry part of the cash, NGL spreads
+  and storage margins the rest; the bear needs both to give way.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $2.77  (FY2007E: GAAP net income guidance, the 8-K of 2008-01-10's $2.75-2.79 a diluted share, midpoint = $2.77)
+  Min viable P/E at panic:          11x  [median of calendar-year P/E lows: 2002 12.1x, 2003 8.0x, 2004 9.3x, 2005 10.5x, 2006 11.1x, 2007 14.5x, 2008 15.9x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $30/share
+  Current $48 vs Updated EPP $30:  +58%  ⚠ far above floor — large drawdown room
+  Bear $24 vs Updated EPP $30:  -21%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Net margin growth                            5.0       +7.7   BASE floor (vs -3 now)
+  Distribution op. income growth             -42.0     -124.6   BASE floor (vs +83 now)
+  Revenue growth                              -6.0      -12.2   BASE floor (vs +6 now)
+  Operating margin change                   -720.0     -634.0   BASE floor (vs -86 now)
+  Pre-tax margin change                     -590.0     -495.0   BASE floor (vs -95 now)
+  Disruption theme: none in scope              2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $2.77 × (1+1.0%)² = $2.83
+  At 13x P/E (conservative):  $37/share
+  + Cumul. dividends (2yr):  +$2.97/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $37  (▼11 from $48)
+  Conservative total return:  -17% over 2yr  = -9%/yr
+
+  1.0% EPS growth is what is left once the premium multiple (17.4x)
+  mean-reverts to 13x. Breakeven at 13x needs FY2009E EPS of $3.47,
+  i.e. 12.0%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $39.26  –  $55.27  (at 55th pct of range)
+  Annual dividend:      $1.44/share  (yield 3.0%)
+  Realized vol (1yr):   25% annualized
+  Beta vs broad market: 0.65
+  1-sigma range (1yr):  $36  –  $60  ($48 ± 25%)
+  2-sigma range (1yr):  $24  –  $72
+  ────────────────────────────────────────────────────────────
+  Bear $24 requires:  ~2.0σ price move  (unusual — requires fundamental break)
+  A gas distributor and the general partner of a midstream partnership with a 0.7 beta: the stock is +20% off its March
+  low while Net margin growth went from -8.0% (Q2 2007) to -2.7% (Q3 2007).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        2.49   9.8x  $     24    12.0%      3.8%    +8.2pp  EPS -5.1%/yr (worst year FY02-FY06, capped at 0%); P/E to its 10th pct
+  BASE        2.94  13.1x  $     39    42.0%     13.3%   +28.7pp  EPS +3.0%/yr (Q3 revenues + margin + buyback); P/E at its 6.0-yr median
+  BULL        3.82  15.8x  $     60    38.7%     46.3%    -7.6pp  EPS +17.5%/yr (FY02-FY06 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL       4.68  17.3x  $     81     7.3%     36.7%   -29.4pp  EPS +30.0%/yr (best 2-yr run FY02-FY06, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $48  /  Market EV: $64  /  Current: $48
+  Conservative EV (2yr, ④): $37 + $2.97 divs = $40 total value
+  Downside (→ Bear $24): 50.1%   Upside (→ Bull $60): 24.7%   Ratio B 2.03x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $48 the market needs $64 in two years —
+  above the BULL case. That is a market composite of 3.18 against a model
+  read of 2.15: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       2.03x     +58%    -1.03  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     1.24x     +58%    -0.61  OVERVALUED / WATCHLIST
+  Multiples one band cheaper (p5/p25/med/p75)    13.29x     +58%    -1.38  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          1.66x     +58%    -0.95  OVERVALUED / WATCHLIST
+  Scenario EPS -1.5pp/yr                          2.21x     +58%    -1.10  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             2.03x     +58%    -0.73  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 2.03x     +24%    -0.93  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    2.03x     +58%    -0.72  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q4 and full-year print, with the 10-K (late February) — the next read on net margin (-2.7% now) and Distribution (+82.6% now)
+  (2) Margins — operating -86.0bp and pre-tax -95.0bp in Q3 2007: charges, interest and commodity prices
+  (3) The FY07 outlook — GAAP EPS $2.77 (the 8-K of 2008-01-10's $2.75-2.79 a diluted share, midpoint); no revenue or margin guide in numbers
+  (4) Free cash flow — FY06 cash provided by operating activities $873.4M less capital expenditures $376.3M (FY2006 10-K, consolidated, ONEOK Partners' included)
+  (5) Capital return at 17x — repurchases of common stock $281.4M in 2006 (FY2006 10-K's statement of cash flows): management's own read of the multiple
+  ✕ AVOID  |  EPP floor $30  |  ADD below ~$33  |  TRIM above $60
+════════════════════════════════════════════════════════════════════════
+
