@@ -1,0 +1,151 @@
+
+════════════════════════════════════════════════════════════════════════
+  OKE  ·  ONEOK, Inc.  ·  $66.45  ·  RETROSPECTIVE as of 2014-08-15
+  Signal: ✕ AVOID   Ratio B: infx   Adj gap: -1.82  [OVERVALUED]
+  Point-in-time: 18 sources, latest published 2014-08-15; latest print Q2 2014 (Aug 5)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2014E revenues, USD bn  →  FY2016E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2014E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  ONEOK Partners            $    12.8  $  12.8  $  15.7      +0.0      +2.9
+    +17.3% revenues in FY13
+  Natural Gas Distribution  $     1.9  $   1.9  $   2.3      +0.0      +0.4
+    +22.5% revenues in FY13
+  Energy Services           $     1.5  $   1.5  $   1.9      +0.0      +0.4
+    -2.8% revenues in FY13
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    16.2  $  16.2  $  19.9      +0.0      +3.7
+  FY2014E = FY13 $14.60B × (1 + 10.8%: no FY14 revenue guide in numbers, Q2 2014 revenues as reported, applied to the year (no FY14 revenue guide)); split pro rata to FY13 segment sales to unaffiliated customers (FY2013 10-K segment note; eliminations and Other left out)
+  Q2 2014 (Aug 5): revenues $3.07B +10.8%; net margin +20.0%, Distribution operating income n/r;
+  operating margin 8.19% (-6.0bp); pre-tax margin 6.23% (-87.0bp); EPS $0.33 vs $0.36
+  Activity: revenues $3,066.9M vs $2,769.0M a year earlier; net margin $495.5M vs $412.8M; Distribution operating income n/r (the natural gas distribution business separated as ONE Gas on January 31, 2014); operating income $251.3M, income before income taxes $191.1M; cash and cash equivalents $358.6M at the quarter's end (consolidated); EPS diluted $0.33 vs $0.36 from continuing operations (the natural gas distribution and energy services businesses discontinued from the Q1 2014 release)
+  FY14: no revenue or margin guide in numbers (BASE takes Q2 2014 revenue growth as reported); EPS $1.358 from the 8-K of 2013-12-03: 'Net income attributable to ONEOK | 285 | 260 | 25'
+
+  FY2014E EPS check:  $16.2B × 5.1% pre-tax × (1−22.1%) ÷ 0.210B  =  $3.04  (FY2014E: GAAP net income guidance, the 8-K of 2013-12-03's $285 million (Exhibit A's 2014 guidance column, 'Amounts shown are midpoints of ranges provided.') / 209.893M diluted shares (Q3 2013) = $1.358)
+  FY2016E BEAR check: $16.2B × 5.1% ÷ 0.210B  =  $3.04  (scenario $0.81)
+  FY2016E BULL check: $19.9B × 5.5% ÷ 0.210B  =  $4.04  (scenario $1.67)
+  Every 1pp of pre-tax margin ≈ $0.60 EPS ≈ $10/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Net margin growth                   -8.0%    ≥5.0%   ≥17.0%   ≥38.0%    +20.0%  ▲ BULL  ███░
+  Distribution op. income growth     -88.0%  ≥-42.0%    ≥3.0%   ≥57.0%       n/r  ◦ BASE  ██░░
+  Revenue growth                     -38.0%   ≥-6.0%   ≥26.0%  ≥261.0%    +10.8%  ◦ BASE  ██░░
+  Operating margin change           -1350.0bp  ≥-720.0bp  ≥-100.0bp  ≥430.0bp    -6.0bp  ▲ BULL  ███░
+  Pre-tax margin change             -1150.0bp  ≥-590.0bp  ≥-30.0bp  ≥620.0bp   -87.0bp  ◦ BASE  ██░░
+  Disruption theme: none in scope    +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.35 / 4.00
+  Market composite:   3.77 / 4.00  (back-solved from $66 + 15% hurdle)
+  SCA adjustment:    -0.10  ·  EPP-distance adj -0.30  →  Adj composite 1.95  →  Gap -1.82  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY13 revenues +15.6%; Q2 net margin +20.0%, operating margin 8.19% (-6bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 48.9x FY14E vs a 16.4x 10-yr median (99th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    -  Growth vs own history: no FY14 revenue guide in numbers, Q2 2014 revenues as reported +10.8% vs a 15.6% 9-yr median  (-0.48 × 20%  =  -0.096)
+    +  FY13 free cash flow $(0.96)B (consolidated), dividend $2.30 a year, repurchases of common stock $0.0M in 2013 (FY2013 10-K's statement of cash flows)  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Net margin growth                   +20.0%     -8.0%  -28.0%  NGL spreads, volumes and storage marg…
+  Distribution op. income growth         n/r    -88.0%     n/r  Rate cases lag costs; warm weather cu…
+  Revenue growth                      +10.8%    -38.0%  -48.8%  Commodity prices and marketed volumes…
+  Operating margin change             -6.0bp  -1350.0bp  -1344.0bp  Costs outrun the margin on sales
+  Pre-tax margin change              -87.0bp  -1150.0bp  -1063.0bp  Interest and charges as earnings fall
+  Disruption theme: none in scope     +2.0/4    +1.0/4  -1.0/4  No live disruption theme covers gas u…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$15  (model)  /  $9 (defined)
+  Bear probability (proxy model):  12.0%
+
+  KEY TRIGGER: Net margin growth went from +37.6% (Q1 2014) to +20.0% (Q2 2014);
+  the bear case needs Distribution (n/r now) and revenues
+  (+10.8% now) to give way as well. Fee-based NGL, gathering and pipeline services carry part of the cash, commodity-priced
+  processing margins and NGL spreads the rest; the bear needs both to give way.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $1.36  (FY2014E: GAAP net income guidance, the 8-K of 2013-12-03's $285 million (Exhibit A's 2014 guidance column, 'Amounts shown are midpoints of ranges provided.') / 209.893M diluted shares (Q3 2013) = $1.358)
+  Min viable P/E at panic:          13x  [median of calendar-year P/E lows: 2004 10.6x, 2005 10.5x, 2006 11.1x, 2007 14.6x, 2008 8.0x, 2009 6.5x, 2010 13.1x, 2011 16.6x, 2012 24.1x, 2013 31.5x, 2014 42.5x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $18/share
+  Current $66 vs Updated EPP $18:  +276%  ⚠ far above floor — large drawdown room
+  Bear $9 vs Updated EPP $18:  -49%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.30 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Net margin growth                            5.0      -15.0   BASE floor (vs +20 now)
+  Distribution op. income growth             -42.0        n/r   BASE floor (not reported now)
+  Revenue growth                              -6.0      -16.8   BASE floor (vs +11 now)
+  Operating margin change                   -720.0     -714.0   BASE floor (vs -6 now)
+  Pre-tax margin change                     -590.0     -503.0   BASE floor (vs -87 now)
+  Disruption theme: none in scope              2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $1.36 × (1+8.9%)² = $1.61
+  At 16x P/E (conservative):  $26/share
+  + Cumul. dividends (2yr):  +$4.74/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $26  (▼41 from $66)
+  Conservative total return:  -54% over 2yr  = -27%/yr
+
+  8.9% EPS growth is what is left once the premium multiple (48.9x)
+  mean-reverts to 16x. Breakeven at 16x needs FY2016E EPS of $3.86,
+  i.e. 68.5%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $49.83  –  $68.55  (at 89th pct of range)
+  Annual dividend:      $2.30/share  (yield 3.5%)
+  Realized vol (1yr):   25% annualized
+  Beta vs broad market: 1.26
+  1-sigma range (1yr):  $50  –  $83  ($66 ± 25%)
+  2-sigma range (1yr):  $33  –  $99
+  ────────────────────────────────────────────────────────────
+  Bear $9 requires:  ~3.5σ price move  (unusual — requires fundamental break)
+  A gas distributor (separated on 2014-01-31) and the general partner of a midstream partnership with a 1.3 beta: the stock is +33% off its August
+  low while Net margin growth went from +37.6% (Q1 2014) to +20.0% (Q2 2014).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        0.81  11.0x  $      9    12.0%      1.2%   +10.8pp  EPS -22.6%/yr (worst year FY04-FY13, capped at 0%); P/E to its 10th pct
+  BASE        1.67  16.4x  $     27    42.0%      4.3%   +37.7pp  EPS +10.9%/yr (Q2 revenues + margin + buyback); P/E at its 10-yr median
+  BULL        1.67  25.1x  $     42    38.7%     15.0%   +23.6pp  EPS +10.9%/yr (FY04-FY13 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL       1.67  40.8x  $     68     7.3%     79.5%   -72.2pp  EPS +10.9%/yr (best 2-yr run FY04-FY13, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $34  /  Market EV: $62  /  Current: $66
+  Conservative EV (2yr, ④): $26 + $4.74 divs = $30 total value
+  Downside (→ Bear $9): 86.5%   Upside (→ Bull $42): -36.8%   Ratio B infx  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $66 the market needs $88 in two years —
+  above the BULL case. That is a market composite of 3.77 against a model
+  read of 1.95: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                        infx    +276%    -1.82  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)    35.77x    +276%    -1.82  OVERVALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)      infx    +276%    -1.82  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                           infx    +276%    -1.82  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                           infx    +276%    -1.82  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)              infx    +276%    -1.52  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                  infx    +206%    -1.82  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                     infx    +276%    -1.82  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 print (early November) — the next read on net margin (+20.0% now) and Distribution (n/r now)
+  (2) Margins — operating -6.0bp and pre-tax -87.0bp in Q2 2014: charges, interest and commodity prices
+  (3) The FY14 outlook — GAAP EPS $1.358 (the 8-K of 2013-12-03's $285 million (Exhibit A's 2014 guidance column, 'Amounts shown are midpoints of ranges provided.') / 209.893M diluted shares (Q3 2013)); no revenue or margin guide in numbers
+  (4) Free cash flow — FY13 cash provided by operating activities $1,294.8M less capital expenditures $2,256.6M (FY2013 10-K, consolidated, ONEOK Partners' included)
+  (5) Capital return at 49x — repurchases of common stock $0.0M in 2013 (FY2013 10-K's statement of cash flows): management's own read of the multiple
+  ✕ AVOID  |  EPP floor $18  |  ADD below ~$23  |  TRIM above $42
+════════════════════════════════════════════════════════════════════════
+

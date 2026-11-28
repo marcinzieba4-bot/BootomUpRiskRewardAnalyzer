@@ -1,0 +1,151 @@
+
+════════════════════════════════════════════════════════════════════════
+  OKE  ·  ONEOK, Inc.  ·  $49.36  ·  RETROSPECTIVE as of 2016-10-07
+  Signal: ✕ AVOID   Ratio B: 3.51x   Adj gap: -0.42  [MODESTLY OVERVALUED]
+  Point-in-time: 16 sources, latest published 2016-10-07; latest print Q2 2016 (Aug 2)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2016E revenues, USD bn  →  FY2018E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2016E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Natural Gas Gathering an  $     1.2  $   1.2  $   1.1      +0.0      -0.1
+    -19.7% revenues in FY15
+  Natural Gas Liquids       $     6.3  $   6.3  $   5.7      +0.0      -0.6
+    -39.5% revenues in FY15
+  Natural Gas Pipelines     $     0.3  $   0.3  $   0.3      +0.0      +0.0
+    -1.3% revenues in FY15
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $     7.8  $   7.8  $   7.1      +0.0      -0.7
+  FY2016E = FY15 $7.76B × (1 + 0.3%: no FY16 revenue guide in numbers, Q2 2016 revenues as reported, applied to the year (no FY16 revenue guide)); split pro rata to FY15 segment sales to unaffiliated customers (FY2015 10-K segment note; eliminations and Other left out)
+  Q2 2016 (Aug 2): revenues $2.13B +0.3%; net margin +15.6%, Distribution operating income n/r;
+  operating margin 14.77% (+195.0bp); pre-tax margin 10.90% (+154.0bp); EPS $0.41 vs $0.36
+  Activity: revenues $2,134.1M vs $2,128.1M a year earlier; net margin $606.8M vs $525.0M (revenues less cost of sales and fuel: the statement prints no net margin line from the Q4 2015 release); Distribution operating income n/r (the natural gas distribution business separated as ONE Gas on January 31, 2014); operating income $315.3M, income before income taxes $232.5M; cash and cash equivalents $180.9M at the quarter's end (consolidated); EPS diluted $0.41 vs $0.36 from continuing operations (the natural gas distribution and energy services businesses discontinued from the Q1 2014 release)
+  FY16: no revenue or margin guide in numbers (BASE takes Q2 2016 revenue growth as reported); EPS $1.693 from the Q2 2016 release: 'Maintaining 2016 net income guidance of approximately $360 million, cash flow available for dividends guidance of approximately $675 million and dividend coverage ratio guidance of approximately 1.3 times;'
+
+  FY2016E EPS check:  $7.8B × 6.7% pre-tax × (1−26.2%) ÷ 0.213B  =  $1.82  (FY2016E: GAAP net income guidance, the Q2 2016 release's $360 million (approximately) / 212.618M diluted shares (Q2 2016) = $1.693)
+  FY2018E BEAR check: $7.8B × 6.7% ÷ 0.209B  =  $1.85  (scenario $0.38)
+  FY2018E BULL check: $7.1B × 7.1% ÷ 0.209B  =  $1.79  (scenario $1.74)
+  Every 1pp of pre-tax margin ≈ $0.27 EPS ≈ $8/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Net margin growth                   -8.0%    ≥5.0%   ≥17.0%   ≥38.0%    +15.6%  ◦ BASE  ██░░
+  Distribution op. income growth     -88.0%  ≥-42.0%    ≥3.0%   ≥57.0%       n/r  ◦ BASE  ██░░
+  Revenue growth                     -38.0%   ≥-6.0%   ≥26.0%  ≥261.0%     +0.3%  ◦ BASE  ██░░
+  Operating margin change           -1350.0bp  ≥-720.0bp  ≥-100.0bp  ≥430.0bp  +195.0bp  ▲ BULL  ███░
+  Pre-tax margin change             -1150.0bp  ≥-590.0bp  ≥-30.0bp  ≥620.0bp  +154.0bp  ▲ BULL  ███░
+  Disruption theme: none in scope    +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.30 / 4.00
+  Market composite:   2.66 / 4.00  (back-solved from $49 + 15% hurdle)
+  SCA adjustment:    +0.04  ·  EPP-distance adj -0.10  →  Adj composite 2.24  →  Gap -0.42  [MODESTLY OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY15 revenues -36.3%; Q2 net margin +15.6%, operating margin 14.77% (+195bp)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 29.2x FY16E vs a 29.7x 10-yr median (47th percentile of its own range)  (+0.05 × 25%  =  +0.013)
+    -  Growth vs own history: no FY16 revenue guide in numbers, Q2 2016 revenues as reported +0.3% vs a 13.1% 9-yr median  (-0.50 × 20%  =  -0.100)
+    +  FY15 free cash flow $(0.18)B (consolidated), dividend $2.46 a year, no repurchase of common stock in 2015 (the FY2015 10-K's statement of cash flows has no repurchase line)  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Net margin growth                   +15.6%     -8.0%  -23.6%  NGL spreads, volumes and storage marg…
+  Distribution op. income growth         n/r    -88.0%     n/r  Rate cases lag costs; warm weather cu…
+  Revenue growth                       +0.3%    -38.0%  -38.3%  Commodity prices and marketed volumes…
+  Operating margin change           +195.0bp  -1350.0bp  -1545.0bp  Costs outrun the margin on sales
+  Pre-tax margin change             +154.0bp  -1150.0bp  -1304.0bp  Interest and charges as earnings fall
+  Disruption theme: none in scope     +2.0/4    +1.0/4  -1.0/4  No live disruption theme covers gas u…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$20  (model)  /  $5 (defined)
+  Bear probability (proxy model):  12.9%
+
+  KEY TRIGGER: Net margin growth went from +25.4% (Q1 2016) to +15.6% (Q2 2016);
+  the bear case needs Distribution (n/r now) and revenues
+  (+0.3% now) to give way as well. Fee-based NGL, gathering and pipeline services carry part of the cash, commodity-priced
+  processing margins and NGL spreads the rest; the bear needs both to give way.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $1.69  (FY2016E: GAAP net income guidance, the Q2 2016 release's $360 million (approximately) / 212.618M diluted shares (Q2 2016) = $1.693)
+  Min viable P/E at panic:          16x  [median of calendar-year P/E lows: 2006 16.1x, 2007 14.6x, 2008 8.0x, 2009 6.5x, 2010 30.8x, 2011 24.1x, 2012 28.2x, 2013 30.1x, 2014 29.1x, 2015 15.9x, 2016 11.6x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $27/share
+  Current $49 vs Updated EPP $27:  +82%  ⚠ far above floor — large drawdown room
+  Bear $5 vs Updated EPP $27:  -82%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.10 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Net margin growth                            5.0      -10.6   BASE floor (vs +16 now)
+  Distribution op. income growth             -42.0        n/r   BASE floor (not reported now)
+  Revenue growth                              -6.0       -6.3   BASE floor (vs +0 now)
+  Operating margin change                   -720.0     -915.0   BASE floor (vs +195 now)
+  Pre-tax margin change                     -590.0     -744.0   BASE floor (vs +154 now)
+  Disruption theme: none in scope              2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $1.69 × (1+0.0%)² = $1.69
+  At 29x P/E (conservative):  $49/share
+  + Cumul. dividends (2yr):  +$5.07/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $49  (▼0 from $49)
+  Conservative total return:  +10% over 2yr  = +5%/yr
+
+  At 29.2x the multiple is already near its 29x median, so the conservative
+  case is a growth question: breakeven at 29x needs FY2018E EPS of $1.53,
+  i.e. -5.0%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $18.84  –  $51.72  (at 93th pct of range)
+  Annual dividend:      $2.46/share  (yield 5.0%)
+  Realized vol (1yr):   54% annualized
+  Beta vs broad market: 1.74
+  1-sigma range (1yr):  $23  –  $76  ($49 ± 54%)
+  2-sigma range (1yr):  $-4  –  $103
+  ────────────────────────────────────────────────────────────
+  Bear $5 requires:  ~1.7σ price move  (unusual — requires fundamental break)
+  The general partner of a midstream partnership with a 1.7 beta: the stock is +161% off its December
+  low while Net margin growth went from +25.4% (Q1 2016) to +15.6% (Q2 2016).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        0.38  12.6x  $      5    12.9%      6.6%    +6.4pp  EPS -52.9%/yr (worst year FY06-FY15, capped at 0%); P/E to its 10th pct
+  BASE        1.74  29.7x  $     52    45.2%     22.9%   +22.3pp  EPS +1.2%/yr (Q2 revenues + margin + buyback); P/E at its 10-yr median
+  BULL        1.74  35.4x  $     62    35.2%     59.3%   -24.1pp  EPS +1.2%/yr (FY06-FY15 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL       3.59  40.3x  $    145     6.6%     11.2%    -4.6pp  EPS +45.6%/yr (best 2-yr run FY06-FY15, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $56  /  Market EV: $65  /  Current: $49
+  Conservative EV (2yr, ④): $49 + $5.07 divs = $54 total value
+  Downside (→ Bear $5): 89.9%   Upside (→ Bull $62): 25.6%   Ratio B 3.51x  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $49 the market needs $65 in two years —
+  above the BULL case. That is a market composite of 2.66 against a model
+  read of 2.24: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       3.51x     +82%    -0.42  MODESTLY OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     2.10x     +82%    -0.08  FAIRLY VALUED / AVOID
+  Multiples one band cheaper (p5/p25/med/p75)    17.18x     +82%    -0.78  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                          3.25x     +82%    -0.37  MODESTLY OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                          4.17x     +82%    -0.52  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)             3.51x     +82%    -0.12  FAIRLY VALUED / AVOID
+  EPP P/E +3 turns (softer floor)                 3.51x     +53%    -0.42  MODESTLY OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                    3.51x     +82%    -0.21  MODESTLY OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q3 print (early November) — the next read on net margin (+15.6% now) and Distribution (n/r now)
+  (2) Margins — operating +195.0bp and pre-tax +154.0bp in Q2 2016: charges, interest and commodity prices
+  (3) The FY16 outlook — GAAP EPS $1.693 (the Q2 2016 release's $360 million (approximately) / 212.618M diluted shares (Q2 2016)); no revenue or margin guide in numbers
+  (4) Free cash flow — FY15 cash provided by operating activities $1,007.0M less capital expenditures $1,188.3M (FY2015 10-K, consolidated, ONEOK Partners' included)
+  (5) Capital return at 29x — no repurchase of common stock in 2015 (the FY2015 10-K's statement of cash flows has no repurchase line): management's own read of the multiple
+  ✕ AVOID  |  EPP floor $27  |  ADD below ~$44  |  TRIM above $62
+════════════════════════════════════════════════════════════════════════
+

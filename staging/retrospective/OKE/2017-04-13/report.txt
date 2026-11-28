@@ -1,0 +1,151 @@
+
+════════════════════════════════════════════════════════════════════════
+  OKE  ·  ONEOK, Inc.  ·  $54.62  ·  RETROSPECTIVE as of 2017-04-13
+  Signal: ◎ ACCUMULATE   Ratio B: 0.86x   Adj gap: +1.00  [UNDERVALUED]
+  Point-in-time: 15 sources, latest published 2017-04-13; latest print Q4 2016 (Feb 27)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2017E revenues, USD bn  →  FY2019E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2017E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Natural Gas Gathering an  $     1.9  $   1.9  $   1.7      +0.0      -0.2
+    +15.9% revenues in FY16
+  Natural Gas Liquids       $     9.9  $   9.9  $   9.0      +0.0      -0.9
+    +14.7% revenues in FY16
+  Natural Gas Pipelines     $     0.5  $   0.5  $   0.5      +0.0      +0.0
+    +14.8% revenues in FY16
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    12.3  $  12.3  $  11.2      +0.0      -1.1
+  FY2017E = FY16 $8.92B × (1 + 37.5%: no FY17 revenue guide in numbers, Q4 2016 revenues as reported, applied to the year (no FY17 revenue guide)); split pro rata to FY16 segment sales to unaffiliated customers (FY2016 10-K segment note; eliminations and Other left out)
+  Q4 2016 (Feb 27): revenues $2.65B +37.5%; net margin +5.9%, Distribution operating income n/r;
+  operating margin 12.42% (-11.0bp); pre-tax margin 9.40% (+1011.0bp); EPS $0.43 vs $0.13
+  Activity: revenues $2,654.5M vs $1,930.9M a year earlier; net margin $633.0M vs $597.6M (revenues less cost of sales and fuel: the statement prints no net margin line from the Q4 2015 release); Distribution operating income n/r (the natural gas distribution business separated as ONE Gas on January 31, 2014); operating income $329.6M, income before income taxes $249.6M; cash and cash equivalents $248.9M at the quarter's end (consolidated); EPS diluted $0.43 vs $0.13 from continuing operations (the natural gas distribution and energy services businesses discontinued from the Q1 2014 release)
+  FY17: no revenue or margin guide in numbers (BASE takes Q4 2016 revenue growth as reported); no EPS guide for the year yet
+
+  FY2017E EPS check:  $12.3B × 10.7% pre-tax × (1−22.2%) ÷ 0.213B  =  $4.82  (FY2017E: no EPS guide in scope yet, FY16's $1.67 stands; the 8-K of 2017-02-02's $575-755 million is not used: '(b) | Assumes ONEOK’s acquisition of ONEOK Partners effective Jan. 1, 2017.' and '(a) | Excludes one-time transaction fees associated with the acquisition of ONEOK Partners.': a guide on the pending acquisition, pro forma, unused (the XOM XTO and PFE rule))
+  FY2019E BEAR check: $12.3B × 10.7% ÷ 0.212B  =  $4.85  (scenario $0.37)
+  FY2019E BULL check: $11.2B × 11.1% ÷ 0.212B  =  $4.58  (scenario $3.17)
+  Every 1pp of pre-tax margin ≈ $0.45 EPS ≈ $14/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Net margin growth                   -8.0%    ≥5.0%   ≥17.0%   ≥38.0%     +5.9%  ◦ BASE  ██░░
+  Distribution op. income growth     -88.0%  ≥-42.0%    ≥3.0%   ≥57.0%       n/r  ◦ BASE  ██░░
+  Revenue growth                     -38.0%   ≥-6.0%   ≥26.0%  ≥261.0%    +37.5%  ▲ BULL  ███░
+  Operating margin change           -1350.0bp  ≥-720.0bp  ≥-100.0bp  ≥430.0bp   -11.0bp  ▲ BULL  ███░
+  Pre-tax margin change             -1150.0bp  ≥-590.0bp  ≥-30.0bp  ≥620.0bp  +1011.0bp  ★ XBULL  ████
+  Disruption theme: none in scope    +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.60 / 4.00
+  Market composite:   1.78 / 4.00  (back-solved from $55 + 15% hurdle)
+  SCA adjustment:    +0.18  ·  EPP-distance adj +0.00  →  Adj composite 2.78  →  Gap +1.00  [UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY16 revenues +14.9%; Q4 net margin +5.9%, operating margin 12.42% (-11bp)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 32.7x FY17E vs a 30.6x 10-yr median (61st percentile of its own range)  (-0.18 × 25%  =  -0.045)
+    +  Growth vs own history: no FY17 revenue guide in numbers, Q4 2016 revenues as reported +37.5% vs a 14.9% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  FY16 free cash flow $0.73B (consolidated), dividend $2.46 a year, no repurchase of common stock in 2016 (the FY2016 10-K's statement of cash flows has no repurchase line)  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Net margin growth                    +5.9%     -8.0%  -13.9%  NGL spreads, volumes and storage marg…
+  Distribution op. income growth         n/r    -88.0%     n/r  Rate cases lag costs; warm weather cu…
+  Revenue growth                      +37.5%    -38.0%  -75.5%  Commodity prices and marketed volumes…
+  Operating margin change            -11.0bp  -1350.0bp  -1339.0bp  Costs outrun the margin on sales
+  Pre-tax margin change             +1011.0bp  -1150.0bp  -2161.0bp  Interest and charges as earnings fall
+  Disruption theme: none in scope     +2.0/4    +1.0/4  -1.0/4  No live disruption theme covers gas u…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$32  (model)  /  $5 (defined)
+  Bear probability (proxy model):  7.5%
+
+  KEY TRIGGER: Net margin growth went from +12.7% (Q3 2016) to +5.9% (Q4 2016);
+  the bear case needs Distribution (n/r now) and revenues
+  (+37.5% now) to give way as well. Fee-based NGL, gathering and pipeline services carry part of the cash, commodity-priced
+  processing margins and NGL spreads the rest; the bear needs both to give way.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $1.67  (FY2017E: no EPS guide in scope yet, FY16's $1.67 stands; the 8-K of 2017-02-02's $575-755 million is not used: '(b) | Assumes ONEOK’s acquisition of ONEOK Partners effective Jan. 1, 2017.' and '(a) | Excludes one-time transaction fees associated with the acquisition of ONEOK Partners.': a guide on the pending acquisition, pro forma, unused (the XOM XTO and PFE rule))
+  Min viable P/E at panic:          24x  [median of calendar-year P/E lows: 2007 15.9x, 2008 8.0x, 2009 6.5x, 2010 30.8x, 2011 24.1x, 2012 28.2x, 2013 30.1x, 2014 29.1x, 2015 15.9x, 2016 11.7x, 2017 31.3x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $40/share
+  Current $55 vs Updated EPP $40:  +36%  moderate distance to floor
+  Bear $5 vs Updated EPP $40:  -88%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Net margin growth                            5.0       -0.9   BASE floor (vs +6 now)
+  Distribution op. income growth             -42.0        n/r   BASE floor (not reported now)
+  Revenue growth                              -6.0      -43.5   BASE floor (vs +38 now)
+  Operating margin change                   -720.0     -709.0   BASE floor (vs -11 now)
+  Pre-tax margin change                     -590.0    -1601.0   BASE floor (vs +1011 now)
+  Disruption theme: none in scope              2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $1.67 × (1+35.8%)² = $3.08
+  At 30x P/E (conservative):  $92/share
+  + Cumul. dividends (2yr):  +$5.07/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $92  (▲38 from $55)
+  Conservative total return:  +78% over 2yr  = +39%/yr
+
+  At 32.7x the multiple is already near its 30x median, so the conservative
+  case is a growth question: breakeven at 30x needs FY2019E EPS of $1.65,
+  i.e. -0.5%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $30.44  –  $59.47  (at 83th pct of range)
+  Annual dividend:      $2.46/share  (yield 4.5%)
+  Realized vol (1yr):   29% annualized
+  Beta vs broad market: 1.32
+  1-sigma range (1yr):  $39  –  $70  ($55 ± 29%)
+  2-sigma range (1yr):  $23  –  $86
+  ────────────────────────────────────────────────────────────
+  Bear $5 requires:  ~3.2σ price move  (unusual — requires fundamental break)
+  The general partner of a midstream partnership with a 1.3 beta: the stock is +72% off its April
+  low while Net margin growth went from +12.7% (Q3 2016) to +5.9% (Q4 2016).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        0.37  12.6x  $      5     7.5%     30.8%   -23.3pp  EPS -52.9%/yr (worst year FY07-FY16, capped at 0%); P/E to its 10th pct
+  BASE        3.17  30.6x  $     97    26.3%     51.6%   -25.3pp  EPS +37.8%/yr (Q4 revenues + margin + buyback); P/E at its 10-yr median
+  BULL        3.17  35.4x  $    112    55.7%     14.8%   +40.9pp  EPS +37.8%/yr (FY07-FY16 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL       3.54  40.3x  $    143    10.5%      2.8%    +7.7pp  EPS +45.6%/yr (best 2-yr run FY07-FY16, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $103  /  Market EV: $72  /  Current: $55
+  Conservative EV (2yr, ④): $92 + $5.07 divs = $97 total value
+  Downside (→ Bear $5): 90.8%   Upside (→ Bull $112): 105.1%   Ratio B 0.86x  →  ◎ ACCUMULATE
+
+  To earn the 15%/yr hurdle from $55 the market needs $72 in two years —
+  at or below the BASE case. That is a market composite of 1.78 against a model
+  read of 2.78: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.86x     +36%    +1.00  UNDERVALUED / ACCUMULATE
+  Multiples one band richer (p25/p75/p90/max)     0.66x     +36%    +1.13  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     1.19x     +36%    +0.39  MODESTLY UNDERVALUED / WATCHLIST
+  Scenario EPS +1.5pp/yr                          0.81x     +36%    +1.03  UNDERVALUED / ACCUMULATE
+  Scenario EPS -1.5pp/yr                          0.91x     +36%    +0.97  UNDERVALUED / ACCUMULATE
+  Structural read +0.30 (bullish SCA)             0.86x     +36%    +1.30  UNDERVALUED / ACCUMULATE
+  EPP P/E +3 turns (softer floor)                 0.86x     +21%    +1.00  UNDERVALUED / ACCUMULATE
+  Hurdle 10%/yr instead of 15%                    0.86x     +36%    +1.08  UNDERVALUED / ACCUMULATE
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q1 print (late April or early May) — the next read on net margin (+5.9% now) and Distribution (n/r now)
+  (2) Margins — operating -11.0bp and pre-tax +1011.0bp in Q4 2016: charges, interest and commodity prices
+  (3) The FY17 outlook — none yet: ONEOK guides net income per diluted share, not revenue or a margin
+  (4) Free cash flow — FY16 cash provided by operating activities $1,351.6M less capital expenditures $624.6M (FY2016 10-K, consolidated, ONEOK Partners' included)
+  (5) Capital return at 33x — no repurchase of common stock in 2016 (the FY2016 10-K's statement of cash flows has no repurchase line): management's own read of the multiple
+  ◎ ACCUMULATE  |  EPP floor $40  |  ADD below ~$82  |  TRIM above $112
+════════════════════════════════════════════════════════════════════════
+
