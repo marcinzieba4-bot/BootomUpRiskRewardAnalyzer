@@ -1540,6 +1540,13 @@ try:
                                       "eps_note", "sales_note")}}]
         f.setdefault("revenue_restatements", []).append(
             {"published": later, "source": p0["source"], "revenue_usd_b": {y: 0.01 for y in v["revenue_usd_b"]}, "note": "PLANTED"})
+        # (TRGP 2018-2021) a later GAAP earnings guide (an estimated net income attributable to TRC, with planted preferred dividends and
+        # share count) for every year guided, the cutoff's year and the next, and the later vintage's own splitter and cloud words
+        for y in sorted({g["fy"] for g in f["guides"]} | {int(cutoff[:4]), int(cutoff[:4]) + 1}):
+            f["guides"].append({"fy": y, "published": later, "source": last["source"], "rev_none": True, "display": "PLANTED",
+                                "ni_trc_est_m": 9999.0, "pref_q_m": [0.1, 0.1], "pref_source": last["source"], "shares_basic_m": 1.0,
+                                "shares_source": last["source"], "shares_note": "PLANTED", "ni_row": "PLANTED", "doc": "PLANTED"})
+        v.update(splitter_text="PLANTED", cloud_text="PLANTED")
     if TICKER == "SO":     # absurd full-year actuals on the planted print, for the year after the latest vintage before CUTOFF, and a later
                            # vintage whose every text and figure the models quote is planted (SO 2008-2009)
         last["fy_actual"] = {"fy": int(max(k for k in v["eps_normalized"] if k != "2099")) + 1, "fy_label": "FY99", "eps_normalized": 0.01,
