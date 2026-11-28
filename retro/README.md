@@ -32835,7 +32835,9 @@ Controls and checks (before any outcome):
   reserves holder and the absent theme words) and `taxonomy_eras.json` (one term).
 - **Firewall** (run after the build, validation outputs and README section were committed and pushed, before any outcome), at the 11
   cutoffs above (the guidance 8-K, the Q4 2017 print and the FY2017 vintage, the FY2018 vintage, the before-the-open Q3 2019 print, the
-  FY2019 vintage, the Q1 2020 outlook, the Q3 2020 restatement, the FY2020 vintage, the Q3 2021 point and 2022-01-01): FIREWALL_RESULT
+  FY2019 vintage, the Q1 2020 outlook, the Q3 2020 restatement, the FY2020 vintage, the Q3 2021 point and 2022-01-01): it passes at all 11, 526 to 732 dates each (2008-2017 included), 0 files changed and
+  no planted text. Besides the earlier plants, each cutoff plants a later per-share point guide with its note and a later net income
+  range with a note for every guided year, and the vintage's climate-demand words, reserves holder and absent theme words.
 
 Seen in the build (method behaviour, not tuned):
 - **CHEAP 168, FAIR 40, RICH 1 of 209 dates;** legacy tiers BUY 123, ACCUMULATE 54, WATCHLIST 32. 2018: FAIR 28, CHEAP 24; 2019: CHEAP 48,
