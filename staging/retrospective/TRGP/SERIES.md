@@ -311,3 +311,212 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2017-12-15 | $46.36 | Targa Resources Corp. Q3 2017 results | 2.00 | +0.15 | 1.52x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -4.2% | -26.7pp | -14.7% | ✗ |
 | 2017-12-22 | $47.19 | Targa Resources Corp. Q3 2017 results | 2.00 | +0.10 | 1.60x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -0.4% | -24.3pp | -16.2% | ✗ |
 | 2017-12-29 | $48.42 | Targa Resources Corp. Q3 2017 results | 2.00 | +0.01 | 1.75x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | -1.1% | -26.1pp | -18.2% | ✓ |
+| 2018-01-05 | $48.45 | Targa Resources Corp. Q3 2017 results | 2.00 | +0.01 | 1.75x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | +0.2% | -21.7pp | -18.1% | ✓ |
+| 2018-01-12 | $51.44 | Targa Resources Corp. Q3 2017 results | 2.00 | -0.15 | 2.17x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -8.8% | -29.8pp | -23.0% | ✓ |
+| 2018-01-19 | $50.73 | Targa Resources Corp. Q3 2017 results | 2.00 | -0.12 | 2.06x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -4.3% | -26.5pp | -22.0% | ✓ |
+| 2018-01-26 | $49.99 | Targa Resources Corp. Q3 2017 results | 2.00 | -0.08 | 1.95x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -8.1% | -26.5pp | -20.9% | ✓ |
+| 2018-02-02 | $47.14 | Targa Resources Corp. Q3 2017 results | 2.00 | +0.09 | 1.60x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -7.1% | -27.8pp | -16.3% | ✗ |
+| 2018-02-09 | $45.17 | Targa Resources Corp. Q3 2017 results | 2.00 | +0.21 | 1.40x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -1.4% | -32.5pp | -13.0% | ✗ |
+| 2018-02-16 | $47.91 | Targa Resources Corp. Q4 2017 results | 3.10 | +1.34 | 1.55x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -7.8% | -35.3pp | -18.3% | ✗ |
+| 2018-02-23 | $46.97 | Targa Resources Corp. Q4 2017 results | 3.10 | +1.39 | 1.46x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -1.2% | -26.5pp | -16.8% | ✗ |
+| 2018-03-02 | $45.67 | Targa Resources Corp. Q4 2017 results | 3.10 | +1.47 | 1.34x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -9.8% | -28.7pp | -14.8% | ✗ |
+| 2018-03-09 | $45.66 | Targa Resources Corp. Q4 2017 results | 3.10 | +1.47 | 1.34x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -55.3% | -57.5pp | -15.3% | ✗ |
+| 2018-03-16 | $47.73 | Targa Resources Corp. Q4 2017 results | 3.10 | +1.33 | 1.53x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -64.2% | -55.1pp | -20.1% | ✗ |
+| 2018-03-23 | $46.22 | Targa Resources Corp. Q4 2017 results | 3.10 | +1.44 | 1.39x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -68.9% | -59.6pp | -19.0% | ✗ |
+| 2018-03-29 | $44.00 | Targa Resources Corp. Q4 2017 results | 3.10 | +1.53 | 1.21x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | -67.6% | -68.1pp | -16.2% | ✗ |
+| 2018-04-06 | $44.95 | Targa Resources Corp. Q4 2017 results | 3.10 | +1.49 | 1.28x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -67.8% | -74.0pp | -19.7% | ✗ |
+| 2018-04-13 | $45.20 | Targa Resources Corp. Q4 2017 results | 3.10 | +1.48 | 1.35x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -65.0% | -73.1pp | -21.3% | ✗ |
+| 2018-04-20 | $47.59 | Targa Resources Corp. Q4 2017 results | 3.10 | +1.33 | 1.58x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -68.1% | -77.9pp | -26.6% | ✗ |
+| 2018-04-27 | $47.37 | Targa Resources Corp. Q4 2017 results | 3.10 | +1.34 | 1.56x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -63.4% | -75.3pp | -27.5% | ✗ |
+| 2018-05-04 | $46.03 | Targa Resources Corp. Q1 2018 results | 2.45 | +0.51 | 1.48x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -60.0% | -70.7pp | -26.7% | ✗ |
+| 2018-05-11 | $48.12 | Targa Resources Corp. Q1 2018 results | 2.45 | +0.40 | 1.71x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -58.7% | -70.0pp | -31.0% | ✗ |
+| 2018-05-18 | $48.34 | Targa Resources Corp. Q1 2018 results | 2.45 | +0.38 | 1.74x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -50.5% | -63.3pp | -32.4% | ✗ |
+| 2018-05-25 | $46.79 | Targa Resources Corp. Q1 2018 results | 2.45 | +0.47 | 1.56x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -47.6% | -60.2pp | -31.0% | ✗ |
+| 2018-06-01 | $48.79 | Targa Resources Corp. Q1 2018 results | 2.45 | +0.36 | 1.79x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -49.3% | -65.0pp | -34.6% | ✗ |
+| 2018-06-08 | $49.31 | Targa Resources Corp. Q1 2018 results | 2.45 | +0.33 | 1.86x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -33.8% | -54.0pp | -36.0% | ✗ |
+| 2018-06-15 | $46.54 | Targa Resources Corp. Q1 2018 results | 2.45 | +0.49 | 1.53x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -38.9% | -53.2pp | -32.9% | ✗ |
+| 2018-06-22 | $49.45 | Targa Resources Corp. Q1 2018 results | 2.45 | +0.32 | 1.88x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -44.7% | -61.8pp | -37.5% | ✗ |
+| 2018-06-29 | $49.49 | Targa Resources Corp. Q1 2018 results | 2.45 | +0.32 | 1.88x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -49.0% | -65.3pp | -38.3% | ✗ |
+| 2018-07-06 | $49.84 | Targa Resources Corp. Q1 2018 results | 2.45 | +0.30 | 1.93x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | -48.7% | -67.8pp | -39.4% | ✗ |
+| 2018-07-13 | $52.26 | Targa Resources Corp. Q1 2018 results | 2.45 | +0.19 | 2.31x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -54.9% | -71.5pp | -43.1% | ✓ |
+| 2018-07-20 | $51.63 | Targa Resources Corp. Q1 2018 results | 2.45 | +0.22 | 2.20x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -52.1% | -72.0pp | -43.2% | ✓ |
+| 2018-07-27 | $51.24 | Targa Resources Corp. Q1 2018 results | 2.45 | +0.23 | 2.25x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -52.0% | -70.8pp | -43.6% | ✓ |
+| 2018-08-03 | $51.63 | Targa Resources Corp. Q1 2018 results | 2.45 | +0.21 | 2.32x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -52.6% | -72.5pp | -44.8% | ✓ |
+| 2018-08-10 | $53.98 | Targa Resources Corp. Q2 2018 results | 3.30 | +0.97 | 2.81x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -51.6% | -74.1pp | -47.7% | ✓ |
+| 2018-08-17 | $53.92 | Targa Resources Corp. Q2 2018 results | 3.30 | +0.98 | 2.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -53.2% | -75.6pp | -48.2% | ✓ |
+| 2018-08-24 | $55.67 | Targa Resources Corp. Q2 2018 results | 3.30 | +0.89 | 3.26x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -57.0% | -80.1pp | -50.4% | ✓ |
+| 2018-08-31 | $55.07 | Targa Resources Corp. Q2 2018 results | 3.30 | +0.92 | 3.09x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -57.5% | -82.1pp | -50.4% | ✓ |
+| 2018-09-07 | $53.98 | Targa Resources Corp. Q2 2018 results | 3.30 | +0.97 | 2.81x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -59.2% | -82.2pp | -50.1% | ✓ |
+| 2018-09-14 | $55.13 | Targa Resources Corp. Q2 2018 results | 3.30 | +0.92 | 3.10x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -62.1% | -82.3pp | -52.0% | ✓ |
+| 2018-09-21 | $55.33 | Targa Resources Corp. Q2 2018 results | 3.30 | +0.90 | 3.16x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -63.2% | -79.0pp | -53.1% | ✓ |
+| 2018-09-28 | $56.31 | Targa Resources Corp. Q2 2018 results | 3.30 | +0.86 | 3.46x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -63.9% | -82.7pp | -54.8% | ✓ |
+| 2018-10-05 | $58.51 | Targa Resources Corp. Q2 2018 results | 3.30 | +0.77 | 4.31x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -63.2% | -85.2pp | -57.4% | ✓ |
+| 2018-10-12 | $55.42 | Targa Resources Corp. Q2 2018 results | 3.30 | +0.89 | 3.18x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -59.5% | -91.2pp | -55.8% | ✓ |
+| 2018-10-19 | $56.56 | Targa Resources Corp. Q2 2018 results | 3.30 | +0.84 | 3.54x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -61.7% | -89.5pp | -57.5% | ✓ |
+| 2018-10-26 | $51.44 | Targa Resources Corp. Q2 2018 results | 3.30 | +1.20 | 2.29x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -57.8% | -89.9pp | -54.2% | ✓ |
+| 2018-11-02 | $51.30 | Targa Resources Corp. Q2 2018 results | 3.30 | +1.21 | 2.26x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | -59.2% | -84.8pp | -55.0% | ✓ |
+| 2018-11-09 | $50.55 | Targa Resources Corp. Q3 2018 results | 3.30 | +1.48 | 1.51x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -51.7% | -83.4pp | -55.2% | ✗ |
+| 2018-11-16 | $47.50 | Targa Resources Corp. Q3 2018 results | 3.30 | +1.69 | 1.26x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | -44.4% | -80.9pp | -53.1% | ✗ |
+| 2018-11-23 | $44.40 | Targa Resources Corp. Q3 2018 results | 3.30 | +1.82 | 1.05x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -33.3% | -73.3pp | -50.5% | ✗ |
+| 2018-11-30 | $44.63 | Targa Resources Corp. Q3 2018 results | 3.30 | +1.81 | 1.07x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -36.5% | -71.9pp | -51.2% | ✗ |
+| 2018-12-07 | $44.55 | Targa Resources Corp. Q3 2018 results | 3.30 | +1.81 | 1.06x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -31.4% | -75.7pp | -51.6% | ✗ |
+| 2018-12-14 | $42.21 | Targa Resources Corp. Q3 2018 results | 3.30 | +1.88 | 0.93x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -23.5% | -67.8pp | -49.3% | ✗ |
+| 2018-12-21 | $36.22 | Targa Resources Corp. Q3 2018 results | 3.30 | +2.22 | 0.65x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -11.8% | -69.4pp | -41.5% | ✗ |
+| 2018-12-28 | $35.01 | Targa Resources Corp. Q3 2018 results | 3.30 | +2.25 | 0.61x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -12.7% | -67.4pp | -40.2% | ✗ |
+| 2019-01-04 | $39.40 | Targa Resources Corp. Q3 2018 results | 3.30 | +1.94 | 0.79x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | -21.3% | -71.9pp | -47.4% | ✗ |
+| 2019-01-11 | $42.08 | Targa Resources Corp. Q3 2018 results | 3.30 | +1.87 | 0.92x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -19.1% | -69.6pp | -51.3% | ✗ |
+| 2019-01-18 | $43.50 | Targa Resources Corp. Q3 2018 results | 3.30 | +1.83 | 1.00x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -19.8% | -65.1pp | -53.5% | ✗ |
+| 2019-01-25 | $42.55 | Targa Resources Corp. Q3 2018 results | 3.30 | +1.85 | 0.95x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -22.9% | -71.7pp | -52.7% | ✗ |
+| 2019-02-01 | $43.61 | Targa Resources Corp. Q3 2018 results | 3.30 | +1.82 | 1.01x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -26.5% | -70.0pp | -54.3% | ✗ |
+| 2019-02-08 | $42.67 | Targa Resources Corp. Q3 2018 results | 3.30 | +1.85 | 0.95x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -17.3% | -65.8pp | -53.7% | ✗ |
+| 2019-02-15 | $45.51 | Targa Resources Corp. Q3 2018 results | 3.30 | +1.76 | 1.12x | WATCHLIST | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | -23.6% | -69.2pp | -56.9% | ✗ |
+| 2019-02-21 | $42.03 | Targa Resources Corp. Q4 2018 results | 1.50 | -0.67 | 1.10x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -19.1% | -63.8pp | -53.6% | ✓ |
+| 2019-03-01 | $41.72 | Targa Resources Corp. Q4 2018 results | 1.50 | -0.65 | 1.08x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -13.5% | -56.4pp | -53.3% | ✓ |
+| 2019-03-08 | $39.40 | Targa Resources Corp. Q4 2018 results | 1.50 | -0.60 | 0.93x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | -2.6% | -45.8pp | -50.5% | ✓ |
+| 2019-03-15 | $40.04 | Targa Resources Corp. Q4 2018 results | 1.50 | -0.61 | 0.97x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | -5.0% | -49.5pp | -50.3% | ✓ |
+| 2019-03-22 | $40.73 | Targa Resources Corp. Q4 2018 results | 1.50 | -0.63 | 1.01x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | -11.5% | -56.1pp | -49.9% | ✓ |
+| 2019-03-29 | $41.55 | Targa Resources Corp. Q4 2018 results | 1.50 | -0.65 | 1.07x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | -14.1% | -58.2pp | -49.7% | ✓ |
+| 2019-04-05 | $40.79 | Targa Resources Corp. Q4 2018 results | 1.50 | -0.63 | 1.02x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | -13.4% | -58.2pp | -47.6% | ✓ |
+| 2019-04-12 | $40.11 | Targa Resources Corp. Q4 2018 results | 1.50 | -0.62 | 1.04x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | -11.9% | -57.7pp | -45.7% | ✓ |
+| 2019-04-18 | $39.34 | Targa Resources Corp. Q4 2018 results | 1.50 | -0.61 | 0.99x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | -4.9% | -52.7pp | -43.5% | ✓ |
+| 2019-04-26 | $40.62 | Targa Resources Corp. Q4 2018 results | 1.50 | -0.64 | 1.07x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | -5.9% | -52.1pp | -44.0% | ✓ |
+| 2019-05-03 | $39.87 | Targa Resources Corp. Q4 2018 results | 1.50 | -0.63 | 1.02x | ACCUMULATE | QUALITY, PRICED FOR PERFECTION (RICH) | 5/8 RICH | -2.8% | -48.9pp | -41.8% | ✓ |
+| 2019-05-08 | $39.44 | Targa Resources Corp. Q1 2019 results | 1.85 | -0.27 | 1.00x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +5.1% | -45.6pp | -40.1% | ✗ |
+| 2019-05-17 | $42.17 | Targa Resources Corp. Q1 2019 results | 1.85 | -0.34 | 1.19x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +0.3% | -49.1pp | -42.7% | ✗ |
+| 2019-05-24 | $40.46 | Targa Resources Corp. Q1 2019 results | 1.85 | -0.30 | 1.06x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +3.5% | -48.7pp | -39.2% | ✗ |
+| 2019-05-31 | $38.46 | Targa Resources Corp. Q1 2019 results | 1.85 | -0.25 | 0.94x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +9.4% | -47.3pp | -35.2% | ✗ |
+| 2019-06-07 | $38.54 | Targa Resources Corp. Q1 2019 results | 1.85 | -0.26 | 0.94x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +31.2% | -19.5pp | -34.2% | ✗ |
+| 2019-06-14 | $36.59 | Targa Resources Corp. Q1 2019 results | 1.85 | -0.01 | 0.83x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +37.5% | -13.5pp | -29.4% | ✓ |
+| 2019-06-21 | $38.72 | Targa Resources Corp. Q1 2019 results | 1.85 | -0.26 | 0.95x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +26.4% | -20.6pp | -32.0% | ✗ |
+| 2019-06-28 | $39.26 | Targa Resources Corp. Q1 2019 results | 1.85 | -0.28 | 0.98x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +20.4% | -29.3pp | -31.7% | ✗ |
+| 2019-07-05 | $40.25 | Targa Resources Corp. Q1 2019 results | 1.85 | -0.30 | 1.05x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +19.3% | -29.8pp | -32.4% | ✗ |
+| 2019-07-12 | $41.83 | Targa Resources Corp. Q1 2019 results | 1.85 | -0.34 | 1.16x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +14.5% | -34.6pp | -33.7% | ✗ |
+| 2019-07-19 | $39.71 | Targa Resources Corp. Q1 2019 results | 1.85 | -0.29 | 1.01x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +9.0% | -37.8pp | -29.0% | ✗ |
+| 2019-07-26 | $39.88 | Targa Resources Corp. Q1 2019 results | 1.85 | -0.30 | 1.06x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +17.2% | -32.6pp | -28.1% | ✗ |
+| 2019-08-02 | $37.15 | Targa Resources Corp. Q1 2019 results | 1.85 | -0.04 | 0.89x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +18.3% | -35.1pp | -21.5% | ✗ |
+| 2019-08-09 | $35.86 | Targa Resources Corp. Q2 2019 results | 1.85 | -0.07 | 0.82x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +25.7% | -29.8pp | -17.5% | ✗ |
+| 2019-08-16 | $34.08 | Targa Resources Corp. Q2 2019 results | 1.85 | -0.04 | 0.73x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +33.3% | -25.3pp | -11.7% | ✓ |
+| 2019-08-23 | $32.92 | Targa Resources Corp. Q2 2019 results | 1.85 | -0.01 | 0.67x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +38.2% | -22.8pp | -7.2% | ✓ |
+| 2019-08-30 | $36.12 | Targa Resources Corp. Q2 2019 results | 1.85 | -0.08 | 0.83x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +29.0% | -29.5pp | -14.0% | ✗ |
+| 2019-09-06 | $37.50 | Targa Resources Corp. Q2 2019 results | 1.85 | -0.11 | 0.91x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +26.6% | -29.2pp | -15.8% | ✗ |
+| 2019-09-13 | $39.90 | Targa Resources Corp. Q2 2019 results | 1.85 | -0.36 | 1.06x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +18.2% | -33.9pp | -19.6% | ✗ |
+| 2019-09-20 | $41.44 | Targa Resources Corp. Q2 2019 results | 1.85 | -0.39 | 1.17x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +12.3% | -37.0pp | -21.2% | ✗ |
+| 2019-09-27 | $39.75 | Targa Resources Corp. Q2 2019 results | 1.85 | -0.36 | 1.05x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +30.5% | -23.2pp | -16.2% | ✗ |
+| 2019-10-04 | $40.59 | Targa Resources Corp. Q2 2019 results | 1.85 | -0.37 | 1.11x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +34.2% | -15.2pp | -16.1% | ✗ |
+| 2019-10-11 | $39.46 | Targa Resources Corp. Q2 2019 results | 1.85 | -0.35 | 1.03x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +40.5% | -10.0pp | -11.9% | ✓ |
+| 2019-10-18 | $39.37 | Targa Resources Corp. Q2 2019 results | 1.85 | -0.35 | 1.02x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +49.3% | -4.6pp | -9.8% | ✓ |
+| 2019-10-25 | $40.87 | Targa Resources Corp. Q2 2019 results | 1.85 | -0.38 | 1.13x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +44.9% | -9.9pp | -11.2% | ✓ |
+| 2019-11-01 | $40.11 | Targa Resources Corp. Q2 2019 results | 1.85 | -0.37 | 1.07x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +43.3% | -10.7pp | -7.6% | ✓ |
+| 2019-11-08 | $39.90 | Targa Resources Corp. Q3 2019 results | 2.30 | +0.02 | 1.06x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +49.0% | -6.5pp | -5.1% | ✓ |
+| 2019-11-15 | $39.26 | Targa Resources Corp. Q3 2019 results | 2.30 | +0.03 | 1.02x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +44.5% | -9.0pp | -1.8% | ✓ |
+| 2019-11-22 | $37.53 | Targa Resources Corp. Q3 2019 results | 2.30 | +0.26 | 0.91x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +47.7% | -6.3pp | +4.4% | ✓ |
+| 2019-11-29 | $36.53 | Targa Resources Corp. Q3 2019 results | 2.30 | +0.28 | 0.85x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +52.1% | +0.7pp | +8.6% | ✓ |
+| 2019-12-06 | $35.83 | Targa Resources Corp. Q3 2019 results | 2.30 | +0.29 | 0.81x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +50.3% | +1.0pp | +12.2% | ✓ |
+| 2019-12-13 | $37.11 | Targa Resources Corp. Q3 2019 results | 2.30 | +0.27 | 0.89x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +40.9% | -9.7pp | +9.7% | ✓ |
+| 2019-12-20 | $39.72 | Targa Resources Corp. Q3 2019 results | 2.30 | +0.02 | 1.05x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +27.4% | -18.0pp | +3.6% | ✗ |
+| 2019-12-27 | $40.61 | Targa Resources Corp. Q3 2019 results | 2.30 | -0.01 | 1.15x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +33.3% | -18.0pp | +2.3% | ✗ |
+| 2020-01-03 | $41.25 | Targa Resources Corp. Q3 2019 results | 2.30 | -0.02 | 1.20x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +33.0% | -18.7pp | +1.8% | ✗ |
+| 2020-01-10 | $39.65 | Targa Resources Corp. Q3 2019 results | 2.30 | +0.01 | 1.08x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +41.7% | -4.7pp | +7.2% | ✓ |
+| 2020-01-17 | $41.28 | Targa Resources Corp. Q3 2019 results | 2.30 | -0.03 | 1.20x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +43.9% | +0.4pp | +4.1% | ✓ |
+| 2020-01-24 | $38.68 | Targa Resources Corp. Q3 2019 results | 2.30 | +0.02 | 1.01x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +47.8% | +10.5pp | +12.4% | ✓ |
+| 2020-01-31 | $36.50 | Targa Resources Corp. Q3 2019 results | 2.30 | +0.27 | 0.88x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +61.6% | +20.7pp | +20.5% | ✓ |
+| 2020-02-07 | $37.28 | Targa Resources Corp. Q3 2019 results | 2.30 | +0.25 | 0.92x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +67.8% | +29.7pp | +19.9% | ✓ |
+| 2020-02-14 | $36.89 | Targa Resources Corp. Q3 2019 results | 2.30 | +0.26 | 0.90x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +72.4% | +39.0pp | +22.8% | ✓ |
+| 2020-02-21 | $39.14 | Targa Resources Corp. Q4 2019 results | 2.85 | -1.02 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +61.3% | +27.7pp | +17.1% | ✗ |
+| 2020-02-28 | $32.40 | Targa Resources Corp. Q4 2019 results | 2.85 | -0.72 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +105.0% | +53.8pp | +43.3% | ✗ |
+| 2020-03-06 | $27.86 | Targa Resources Corp. Q4 2019 results | 2.85 | -0.59 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +153.3% | +104.2pp | +68.8% | ✗ |
+| 2020-03-13 | $12.48 | Targa Resources Corp. Q4 2019 results | 2.85 | +0.73 | 1.00x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +457.4% | +397.2pp | +282.4% | ✓ |
+| 2020-03-20 | $7.30 | Targa Resources Corp. Q4 2019 results | 2.85 | +1.56 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +863.2% | +763.9pp | +562.8% | ✓ |
+| 2020-03-27 | $6.99 | Targa Resources Corp. Q4 2019 results | 2.85 | +1.61 | 0.27x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +997.3% | +914.2pp | +603.9% | ✓ |
+| 2020-04-03 | $6.33 | Targa Resources Corp. Q4 2019 results | 2.85 | +1.70 | 0.21x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +1138.4% | +1051.3pp | +689.9% | ✓ |
+| 2020-04-09 | $8.61 | Targa Resources Corp. Q4 2019 results | 2.85 | +1.36 | 0.42x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +809.6% | +744.7pp | +491.0% | ✓ |
+| 2020-04-17 | $7.93 | Targa Resources Corp. Q4 2019 results | 2.85 | +1.47 | 0.35x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +904.9% | +848.2pp | +551.6% | ✓ |
+| 2020-04-24 | $9.72 | Targa Resources Corp. Q4 2019 results | 2.85 | +1.16 | 0.55x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +694.4% | +639.9pp | +440.9% | ✓ |
+| 2020-05-01 | $11.81 | Targa Resources Corp. Q4 2019 results | 2.85 | +0.78 | 0.86x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +532.6% | +482.9pp | +351.9% | ✓ |
+| 2020-05-08 | $13.80 | Targa Resources Corp. Q1 2020 results | 2.10 | +1.18 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +456.3% | +411.8pp | +292.4% | ✓ |
+| 2020-05-15 | $15.03 | Targa Resources Corp. Q1 2020 results | 2.10 | +1.11 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +382.9% | +338.6pp | +264.4% | ✓ |
+| 2020-05-22 | $18.04 | Targa Resources Corp. Q1 2020 results | 2.10 | +0.97 | 0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +292.1% | +256.4pp | +207.1% | ✓ |
+| 2020-05-29 | $17.89 | Targa Resources Corp. Q1 2020 results | 2.10 | +0.98 | 0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +314.3% | +274.1pp | +213.2% | ✓ |
+| 2020-06-05 | $23.41 | Targa Resources Corp. Q1 2020 results | 2.10 | +0.72 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +236.0% | +203.8pp | +141.6% | ✓ |
+| 2020-06-12 | $19.63 | Targa Resources Corp. Q1 2020 results | 2.10 | +0.90 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +275.6% | +243.7pp | +191.2% | ✓ |
+| 2020-06-19 | $20.61 | Targa Resources Corp. Q1 2020 results | 2.10 | +0.85 | 0.25x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +200.6% | +178.3pp | +179.1% | ✓ |
+| 2020-06-26 | $18.18 | Targa Resources Corp. Q1 2020 results | 2.10 | +0.96 | 0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +227.0% | +193.1pp | +217.9% | ✓ |
+| 2020-07-02 | $19.07 | Targa Resources Corp. Q1 2020 results | 2.10 | +0.92 | 0.21x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +226.7% | +200.9pp | +204.8% | ✓ |
+| 2020-07-10 | $17.86 | Targa Resources Corp. Q1 2020 results | 2.10 | +0.98 | 0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +241.7% | +215.6pp | +226.8% | ✓ |
+| 2020-07-17 | $18.56 | Targa Resources Corp. Q1 2020 results | 2.10 | +0.94 | 0.20x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +224.1% | +200.8pp | +216.1% | ✓ |
+| 2020-07-24 | $18.78 | Targa Resources Corp. Q1 2020 results | 2.10 | +0.92 | 0.21x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +235.5% | +208.8pp | +214.6% | ✓ |
+| 2020-07-31 | $18.28 | Targa Resources Corp. Q1 2020 results | 2.10 | +0.93 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +286.5% | +256.8pp | +225.8% | ✓ |
+| 2020-08-07 | $19.61 | Targa Resources Corp. Q2 2020 results | 2.60 | +1.23 | 0.25x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +232.8% | +205.8pp | +206.1% | ✓ |
+| 2020-08-14 | $19.97 | Targa Resources Corp. Q2 2020 results | 2.60 | +1.20 | 0.26x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +255.9% | +225.7pp | +203.0% | ✓ |
+| 2020-08-21 | $18.40 | Targa Resources Corp. Q2 2020 results | 2.60 | +1.30 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +282.8% | +255.1pp | +231.7% | ✓ |
+| 2020-08-28 | $17.77 | Targa Resources Corp. Q2 2020 results | 2.60 | +1.33 | 0.21x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +303.8% | +284.9pp | +246.4% | ✓ |
+| 2020-09-04 | $16.34 | Targa Resources Corp. Q2 2020 results | 2.60 | +1.39 | 0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +335.6% | +317.7pp | +279.7% | ✓ |
+| 2020-09-11 | $14.71 | Targa Resources Corp. Q2 2020 results | 2.60 | +1.48 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +399.0% | +373.9pp | +324.5% | ✓ |
+| 2020-09-18 | $15.36 | Targa Resources Corp. Q2 2020 results | 2.60 | +1.42 | 0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +357.6% | +337.4pp | +309.9% | ✓ |
+| 2020-09-25 | $14.16 | Targa Resources Corp. Q2 2020 results | 2.60 | +1.48 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +332.9% | +317.4pp | +347.5% | ✓ |
+| 2020-10-02 | $14.31 | Targa Resources Corp. Q2 2020 results | 2.60 | +1.48 | 0.17x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +332.5% | +322.0pp | +344.2% | ✓ |
+| 2020-10-09 | $16.77 | Targa Resources Corp. Q2 2020 results | 2.60 | +1.33 | 0.24x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +289.5% | +281.5pp | +280.5% | ✓ |
+| 2020-10-16 | $16.55 | Targa Resources Corp. Q2 2020 results | 2.60 | +1.34 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +301.9% | +295.5pp | +286.9% | ✓ |
+| 2020-10-23 | $17.11 | Targa Resources Corp. Q2 2020 results | 2.60 | +1.31 | 0.25x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +305.3% | +293.6pp | +275.4% | ✓ |
+| 2020-10-30 | $16.05 | Targa Resources Corp. Q2 2020 results | 2.60 | +1.36 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +329.7% | +306.9pp | +301.7% | ✓ |
+| 2020-11-06 | $16.95 | Targa Resources Corp. Q3 2020 results | 2.60 | +1.68 | 0.24x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +325.8% | +314.9pp | +281.9% | ✓ |
+| 2020-11-13 | $20.53 | Targa Resources Corp. Q3 2020 results | 2.60 | +1.57 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +262.6% | +248.0pp | +216.8% | ✓ |
+| 2020-11-20 | $23.08 | Targa Resources Corp. Q3 2020 results | 2.60 | +1.48 | 0.41x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +221.2% | +206.4pp | +183.3% | ✓ |
+| 2020-11-27 | $24.50 | Targa Resources Corp. Q3 2020 results | 2.60 | +1.44 | 0.45x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +206.6% | +192.7pp | +168.0% | ✓ |
+| 2020-12-04 | $26.52 | Targa Resources Corp. Q3 2020 results | 2.60 | +1.37 | 0.52x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +190.3% | +177.1pp | +149.3% | ✓ |
+| 2020-12-11 | $28.25 | Targa Resources Corp. Q3 2020 results | 2.60 | +1.32 | 0.58x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +149.3% | +138.7pp | +135.2% | ✓ |
+| 2020-12-18 | $26.95 | Targa Resources Corp. Q3 2020 results | 2.60 | +1.36 | 0.53x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +166.8% | +159.7pp | +148.1% | ✓ |
+| 2020-12-24 | $26.55 | Targa Resources Corp. Q3 2020 results | 2.60 | +1.37 | 0.53x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +183.1% | +176.1pp | +153.1% | ✓ |
+| 2020-12-31 | $26.38 | Targa Resources Corp. Q3 2020 results | 2.60 | +1.38 | 0.53x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +185.4% | +179.9pp | +156.0% | ✓ |
+| 2021-01-08 | $29.20 | Targa Resources Corp. Q3 2020 results | 2.60 | +1.28 | 0.63x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +156.5% | +151.6pp | +132.6% | ✓ |
+| 2021-01-15 | $30.03 | Targa Resources Corp. Q3 2020 results | 2.60 | +1.25 | 0.67x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +157.1% | +147.8pp | +127.4% | ✓ |
+| 2021-01-22 | $28.77 | Targa Resources Corp. Q3 2020 results | 2.60 | +1.29 | 0.62x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +169.2% | +162.7pp | +138.4% | ✓ |
+| 2021-01-29 | $27.37 | Targa Resources Corp. Q3 2020 results | 2.60 | +1.34 | 0.56x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +181.5% | +168.6pp | +151.9% | ✓ |
+| 2021-02-05 | $30.23 | Targa Resources Corp. Q3 2020 results | 2.60 | +1.24 | 0.68x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +149.6% | +140.2pp | +129.0% | ✓ |
+| 2021-02-12 | $30.74 | Targa Resources Corp. Q3 2020 results | 2.60 | +1.22 | 0.70x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +156.3% | +149.4pp | +126.0% | ✓ |
+| 2021-02-19 | $29.96 | Targa Resources Corp. Q4 2020 results | 2.60 | +0.57 | 1.49x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +153.6% | +146.1pp | +132.8% | ✗ |
+| 2021-02-26 | $30.93 | Targa Resources Corp. Q4 2020 results | 2.60 | +0.49 | 1.65x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +151.6% | +144.2pp | +126.2% | ✗ |
+| 2021-03-05 | $34.55 | Targa Resources Corp. Q4 2020 results | 2.60 | +0.15 | 2.49x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +135.3% | +126.8pp | +103.0% | ✗ |
+| 2021-03-12 | $34.77 | Targa Resources Corp. Q4 2020 results | 2.60 | +0.13 | 2.56x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +117.4% | +116.4pp | +102.2% | ✗ |
+| 2021-03-19 | $32.45 | Targa Resources Corp. Q4 2020 results | 2.60 | +0.39 | 1.95x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +114.2% | +111.0pp | +116.8% | ✗ |
+| 2021-03-26 | $32.45 | Targa Resources Corp. Q4 2020 results | 2.60 | +0.38 | 1.95x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +114.4% | +111.4pp | +116.6% | ✗ |
+| 2021-04-01 | $32.10 | Targa Resources Corp. Q4 2020 results | 2.60 | +0.41 | 1.88x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +133.6% | +128.4pp | +118.7% | ✗ |
+| 2021-04-09 | $31.04 | Targa Resources Corp. Q4 2020 results | 2.60 | +0.49 | 1.67x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +148.0% | +145.6pp | +126.0% | ✗ |
+| 2021-04-16 | $33.38 | Targa Resources Corp. Q4 2020 results | 2.60 | +0.32 | 2.17x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +139.5% | +137.8pp | +110.2% | ✗ |
+| 2021-04-23 | $33.94 | Targa Resources Corp. Q4 2020 results | 2.60 | +0.28 | 2.32x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +128.8% | +127.0pp | +106.6% | ✗ |
+| 2021-04-30 | $34.69 | Targa Resources Corp. Q4 2020 results | 2.60 | +0.13 | 2.54x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +124.8% | +122.2pp | +102.1% | ✗ |
+| 2021-05-07 | $38.23 | Targa Resources Corp. Q1 2021 results | 2.90 | +2.44 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +94.4% | +93.8pp | +83.2% | ✓ |
+| 2021-05-14 | $38.52 | Targa Resources Corp. Q1 2021 results | 2.90 | +2.44 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +87.8% | +86.1pp | +81.9% | ✓ |
+| 2021-05-21 | $38.56 | Targa Resources Corp. Q1 2021 results | 2.90 | +2.44 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +88.5% | +84.6pp | +81.7% | ✓ |
+| 2021-05-28 | $38.86 | Targa Resources Corp. Q1 2021 results | 2.90 | +2.44 | 0.16x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +84.4% | +81.4pp | +80.3% | ✓ |
+| 2021-06-04 | $46.26 | Targa Resources Corp. Q1 2021 results | 2.90 | +2.45 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +59.8% | +55.7pp | +51.2% | ✓ |
+| 2021-06-11 | $46.93 | Targa Resources Corp. Q1 2021 results | 2.90 | +2.19 | 0.23x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +56.1% | +51.9pp | +48.9% | ✓ |
+| 2021-06-18 | $44.18 | Targa Resources Corp. Q1 2021 results | 2.90 | +2.35 | 0.21x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +68.0% | +59.1pp | +58.4% | ✓ |
+| 2021-06-25 | $45.31 | Targa Resources Corp. Q1 2021 results | 2.90 | +2.35 | 0.22x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +59.7% | +55.2pp | +54.9% | ✓ |
+| 2021-07-02 | $44.80 | Targa Resources Corp. Q1 2021 results | 2.90 | +2.35 | 0.21x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +75.3% | +70.2pp | +57.2% | ✓ |
+| 2021-07-09 | $45.04 | Targa Resources Corp. Q1 2021 results | 2.90 | +2.35 | 0.21x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +77.1% | +73.5pp | +57.0% | ✓ |
+| 2021-07-16 | $41.33 | Targa Resources Corp. Q1 2021 results | 2.90 | +2.35 | 0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +94.7% | +87.7pp | +72.1% | ✓ |
+| 2021-07-23 | $42.52 | Targa Resources Corp. Q1 2021 results | 2.90 | +2.35 | 0.20x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +95.5% | +89.8pp | +68.1% | ✓ |
+| 2021-07-30 | $42.11 | Targa Resources Corp. Q1 2021 results | 2.90 | +2.35 | 0.19x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +98.2% | +91.2pp | +70.4% | ✓ |
+| 2021-08-06 | $42.88 | Targa Resources Corp. Q2 2021 results | 2.20 | +1.65 | 0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +99.0% | +95.2pp | +68.0% | ✓ |
+| 2021-08-13 | $43.94 | Targa Resources Corp. Q2 2021 results | 2.20 | +1.65 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +99.8% | +97.0pp | +64.7% | ✓ |
+| 2021-08-20 | $41.85 | Targa Resources Corp. Q2 2021 results | 2.20 | +1.65 | 0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +109.3% | +108.0pp | +73.7% | ✓ |
+| 2021-08-27 | $45.15 | Targa Resources Corp. Q2 2021 results | 2.20 | +1.65 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +93.4% | +92.9pp | +61.6% | ✓ |
+| 2021-09-03 | $45.05 | Targa Resources Corp. Q2 2021 results | 2.20 | +1.65 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +100.6% | +98.3pp | +62.7% | ✓ |
+| 2021-09-10 | $43.49 | Targa Resources Corp. Q2 2021 results | 2.20 | +1.65 | 0.09x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +102.8% | +99.9pp | +69.2% | ✓ |
+| 2021-09-17 | $45.04 | Targa Resources Corp. Q2 2021 results | 2.20 | +1.65 | 0.10x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +94.3% | +91.0pp | +63.9% | ✓ |
+| 2021-09-24 | $47.42 | Targa Resources Corp. Q2 2021 results | 2.20 | +1.65 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +84.1% | +84.3pp | +56.5% | ✓ |
+| 2021-10-01 | $50.77 | Targa Resources Corp. Q2 2021 results | 2.20 | +1.65 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +74.5% | +73.1pp | +47.2% | ✓ |
+| 2021-10-08 | $52.71 | Targa Resources Corp. Q2 2021 results | 2.20 | +1.65 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +59.6% | +58.6pp | +42.4% | ✓ |
+| 2021-10-15 | $55.71 | Targa Resources Corp. Q2 2021 results | 2.20 | +1.65 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +61.7% | +62.1pp | +35.5% | ✓ |
+| 2021-10-22 | $56.21 | Targa Resources Corp. Q2 2021 results | 2.20 | +1.65 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +59.3% | +63.5pp | +35.0% | ✓ |
+| 2021-10-29 | $54.67 | Targa Resources Corp. Q2 2021 results | 2.20 | +1.65 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +59.4% | +67.2pp | +39.5% | ✓ |
+| 2021-11-05 | $56.68 | Targa Resources Corp. Q3 2021 results | 2.20 | +1.71 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +61.2% | +65.7pp | +35.1% | ✓ |
+| 2021-11-12 | $54.22 | Targa Resources Corp. Q3 2021 results | 2.20 | +1.71 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +62.0% | +64.9pp | +41.8% | ✓ |
+| 2021-11-19 | $53.55 | Targa Resources Corp. Q3 2021 results | 2.20 | +1.71 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +66.7% | +67.9pp | +44.0% | ✓ |
+| 2021-11-26 | $54.47 | Targa Resources Corp. Q3 2021 results | 2.20 | +1.71 | 0.13x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +67.2% | +65.3pp | +42.0% | ✓ |
+| 2021-12-03 | $51.24 | Targa Resources Corp. Q3 2021 results | 2.20 | +1.71 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +82.3% | +78.2pp | +51.6% | ✓ |
+| 2021-12-10 | $52.21 | Targa Resources Corp. Q3 2021 results | 2.20 | +1.71 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +72.0% | +71.6pp | +49.4% | ✓ |
+| 2021-12-17 | $49.78 | Targa Resources Corp. Q3 2021 results | 2.20 | +1.71 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +78.1% | +73.2pp | +57.2% | ✓ |
+| 2021-12-23 | $50.81 | Targa Resources Corp. Q3 2021 results | 2.20 | +1.71 | 0.11x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +77.1% | +73.7pp | +54.7% | ✓ |
+| 2021-12-31 | $52.24 | Targa Resources Corp. Q3 2021 results | 2.20 | +1.71 | 0.12x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +72.5% | +69.7pp | +50.9% | ✓ |

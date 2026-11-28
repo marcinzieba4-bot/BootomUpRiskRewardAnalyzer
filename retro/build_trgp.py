@@ -53,6 +53,8 @@ import retro_tool  # noqa: E402
 from build_acn import MONTHS, load_series, minus_years, weekly_dates  # noqa: E402
 from build_unp import money  # noqa: E402
 
+money_m = lambda v: f"${v:,.1f}M" if v >= 0 else f"$({-v:,.1f})M"
+
 FACTS = os.path.join(HERE, "facts", "TRGP.json")
 ENGINE = os.path.join(HERE, "templates", "trgp_engine.py.tmpl")
 # (TRGP 2014-2017) the None-tolerant copy: TRC's own releases from Q1 2016 print no EPS, so a print whose 10-Q is not yet public shows
@@ -67,6 +69,8 @@ RULE_T_KEYS = {"gp": (1, False), "lm": (1, False), "revenue": (1, False), "op_ma
 PRINT_KEYS = {"quarter", "fy", "q", "published", "source", "release", "release_time", "period_end", "raw", "sales_b", "sales_pct",
               "opm", "opm_bp", "ptm", "ptm_bp", "eps_q", "eps_q_prior", "diluted_shares_m", "gp_pct", "lm_pct", "seg_note",
               "sales_note", "margin_note", "eps_note", "cash_note", "next_print", "fy_actual", "restated"}
+EARN_GUIDE_KEYS = {"fy", "published", "source", "rev_none", "display", "ni_trc_est_m", "pref_q_m", "pref_source", "shares_basic_m",
+                   "shares_source", "shares_note", "ni_row", "doc"}
 FY_KEYS = {"fy", "fy_label", "eps_normalized", "excluded_note", "revenue_usd_b", "diluted_shares_m", "normalization_note", "op_margin",
            "op_margin_note", "sales_growth", "check_pretax_margin", "check_pretax_note", "tax_rate", "tax_note", "one_off_test",
            "eps_gaap"}
@@ -184,8 +188,10 @@ def build(as_of, facts, raw, spx, engine, out):
         for y, end in v.get("fiscal_year_ends", {}).items():
             assert fiscal_year_end(int(y)).isoformat() == end, (y, end)
     guides = [g for g in facts["guides"] if g["published"] <= as_of]
-    assert all(g["rev_none"] and set(g) == {"fy", "published", "source", "rev_none", "display"} for g in guides), \
-        "a guide in numbers needs its encoding first (no TRGP filing of 2011-2013 guides revenue, EPS or a margin)"
+    # (TRGP 2018-2021) from the Q4 2018 release a guide may carry the estimated net income attributable to TRC that reconciles its
+    # Adjusted EBITDA outlook (a GAAP earnings guide); no filing guides revenue or a margin
+    assert all(g["rev_none"] and (set(g) == {"fy", "published", "source", "rev_none", "display"} or set(g) == EARN_GUIDE_KEYS)
+               for g in guides), "a guide in numbers needs its encoding first (no TRGP filing guides revenue or a margin)"
     assert rule_t(facts["rule_t"]) == ENGINE_THRESHOLDS, "the engine's thresholds must follow rule T on the fact sheet's values"
     for p in facts["prints"]:                          # a print public on AS_OF must match its raw figures (and its restatements)
         if p["published"] <= as_of:
@@ -254,12 +260,37 @@ def build(as_of, facts, raw, spx, engine, out):
     excluded_tail = "".join(f" (FY{y % 100:02d} is excluded: {excluded[y]})" for y in range(last_fy + 1, cur_fy))
     eps_now = eps_hist[last_fy]
     eps_label = (f"{fy_e}: no reported (GAAP) EPS guide, FY{last_fy % 100:02d}'s ${money(eps_now)} stands" + excluded_tail)
+    # (TRGP 2018-2021) a GAAP earnings guide (the KMI 2019-2022 rule): the latest guide for the current year that reconciles its Adjusted
+    # EBITDA outlook to an estimated net income attributable to TRC sets current-FY EPS: that net income less the Series A preferred
+    # dividends at the release's own quarter's rate (cash and deemed, x4), over the latest basic weighted-average share count public on the
+    # guide's date; a guide whose figure is a loss has no P/E and is read as no numeric guide, so the last full year's EPS stands (the LLY
+    # 2008 and CRM 2010 rule)
+    eg = next((g for g in reversed(guides) if g["fy"] == cur_fy), None)
+    eg = eg if eg and "ni_trc_est_m" in eg else None
+    if eg:
+        pref4 = round(4 * sum(eg["pref_q_m"]), 1)
+        to_common = round(eg["ni_trc_est_m"] - pref4, 1)
+        how = (f"the {eg['doc']}'s estimated net {'income' if eg['ni_trc_est_m'] >= 0 else 'loss'} attributable to TRC of "
+               f"{money_m(eg['ni_trc_est_m'])} (its Adjusted EBITDA reconciliation) less {money_m(pref4)} of Series A preferred dividends "
+               f"(4 x the quarter's ${eg['pref_q_m'][0]:.1f}M cash and ${eg['pref_q_m'][1]:.1f}M deemed)")
+        if to_common > 0:
+            eps_now = round(to_common / eg["shares_basic_m"], 3)
+            eps_label = (f"{fy_e}: GAAP earnings guide, {how} = {money_m(to_common)} to common shareholders / "
+                         f"{eg['shares_basic_m']:.1f}M shares, the {eg['shares_note']} = ${money(eps_now)}" + excluded_tail)
+        else:
+            eps_label = (f"{fy_e}: the GAAP earnings guide is a loss to common shareholders ({how} = {money_m(to_common)}), which has no "
+                         f"P/E: read as no numeric guide (the LLY 2008 and CRM 2010 rule), so FY{last_fy % 100:02d}'s ${money(eps_now)} "
+                         "stands" + excluded_tail)
     fwd = [latest["sales_pct"]] * 2
     fwd_label, fwd_short, fwd_period = (f"no {fy_now} revenue guide in numbers, {latest['quarter']} revenues as reported",
                                         f"{latest['quarter'][:2]} revenues", latest["quarter"])
     g_now = [g for g in guides if g["fy"] >= cur_fy]
     guide_text = (f"{fy_now}: no revenue, EPS or margin guide in numbers (BASE takes {latest['quarter']} revenue growth as reported)"
                   + (f"; {g_now[-1]['display']} ({g_now[-1]['source']}, {g_now[-1]['published']})" if g_now else ""))
+    if g_now and "ni_trc_est_m" in g_now[-1]:            # (TRGP 2018-2021) the estimated net income is an earnings guide
+        guide_text = (f"{fy_now}: no revenue or margin guide in numbers (BASE takes {latest['quarter']} revenue growth as reported); "
+                      f"{g_now[-1]['display']} ({g_now[-1]['source']}, {g_now[-1]['published']}); current-FY EPS: "
+                      + eps_label.split(": ", 1)[1].split(" (FY")[0])
     margin_guided = False                          # no margin guide: no guided step
     fy_margin_base = h["prev_fy_op_margin"]
 
@@ -320,7 +351,10 @@ def build(as_of, facts, raw, spx, engine, out):
     # (TRGP 2014-2017) ECOMMERCE (2015-01-01), STREAMING (2015-08-04) and ENERGY_TRANSITION (2015-12-12) were searched for in the
     # FY2013-FY2016 10-Ks: no 10-K names e-commerce or streaming, and ENERGY_TRANSITION's reserves and refining are read as out of scope
     # for a gatherer and processor that holds neither (the BKR reading), its greenhouse gas risk factor quoted in the "why"
-    ALL = ["OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING", "ENERGY_TRANSITION"]
+    # (TRGP 2018-2021) EV (2020-01-01) and CRYPTO (2020-10-21): no FY2017-FY2020 10-K names electric vehicles, crypto, blockchain or
+    # bitcoin (the generator asserts it), and neither scope names midstream energy; the vintages from FY2017 carry their own words on the
+    # Channelview Splitter and cloud ('splitter_text', 'cloud_text', text only)
+    ALL = ["OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING", "ENERGY_TRANSITION", "EV", "CRYPTO"]
     assert live_k == ALL[:len(live_k)], (as_of, "a live theme the TRGP 10-Ks were not searched for", live_k)
     if len(live_k) > 2:
         assert "ghg_quote" in h, (as_of, "a vintage before FY2013 has no greenhouse gas quote")
@@ -331,11 +365,17 @@ def build(as_of, facts, raw, spx, engine, out):
         if "ENERGY_TRANSITION" in live_k:
             et = (" but ENERGY_TRANSITION, whose oil, gas and coal reserves and refining a gatherer and processor does not hold (the BKR "
                   f"reading: the {h['tenk_label']} names no reserves of Targa's, and its refinery services are NGL balancing for refiners, "
-                  f"'{h['refinery_quote']}'" + (f"; the Channelview Splitter is a '{h['splitter_quote']}' at Channelview, under construction"
+                  f"'{h['refinery_quote']}'" + (f"; {h['splitter_text']}" if "splitter_text" in h else
+                                                f"; the Channelview Splitter is a '{h['splitter_quote']}' at Channelview, under construction"
                                                 if "splitter_quote" in h else "") + ")")
+        if "cloud_text" in h:                             # (TRGP 2018-2021) the vintage's own cloud words; EV and CRYPTO named by no 10-K
+            names = "e-commerce, streaming, electric vehicles or crypto" if "EV" in live_k else "e-commerce or streaming"
+            words = f"the 10-Ks' 'offshore' is the Gulf Coast and its waters, {h['cloud_text']}, and no 10-K names {names}"
+        else:
+            words = ("the 10-Ks' 'offshore' is the Gulf of Mexico, they name cloud only as a director's other board, Cloud Peak Energy "
+                     "Inc., and no 10-K names e-commerce or streaming")
         why = (head + "; no disruption theme in taxonomy_eras.json is live for a midstream natural gas company on this date (of the "
-               f"live themes, {scopes}: none names midstream energy{et}; the 10-Ks' 'offshore' is the Gulf of Mexico, they name cloud "
-               "only as a director's other board, Cloud Peak Energy Inc., and no 10-K names e-commerce or streaming), so the watch list "
+               f"live themes, {scopes}: none names midstream energy{et}; {words}), so the watch list "
                f"is empty and these words stay here, with the greenhouse gas risk factor: '{h['ghg_quote']}' (the PEP obesity rule)")
     elif live_k != ["OFFSHORE"]:
         scopes = ", ".join(f"{k} {'is scoped to' if i == 0 else 'to'} '{sc}'" for i, (_, k, sc) in enumerate(live))
@@ -349,6 +389,9 @@ def build(as_of, facts, raw, spx, engine, out):
     cat3 = f"(3) The {fy_now} outlook — no revenue, EPS or margin guide in numbers (the outlooks are the Partnership's EBITDA and TRC's dividends)"
     if cur_fy >= 2017:                                 # (TRGP 2014-2017) TRC's own 2017 guidance: volumes, capital spending, the dividend
         cat3 = f"(3) The {fy_now} outlook — no revenue, EPS or margin guide in numbers (the outlooks are volumes, capital spending and TRC's dividend)"
+    if cur_fy >= 2018:                                 # (TRGP 2018-2021) Adjusted EBITDA, capital spending and volumes; from 2019 an earnings guide
+        cat3 = (f"(3) The {fy_now} outlook — no revenue or margin guide in numbers (the outlooks are Adjusted EBITDA, capital spending and "
+                "volumes" + ("; current-FY EPS from the estimated net income attributable to TRC that reconciles Adjusted EBITDA)" if eg else ")"))
     cat4 = f"(4) Free cash flow — {h['fcf_label']} {h['fcf_note']}"
 
     after_print = [p for p in prints if p["published"] < as_of and not any(p["published"] < d < as_of for d in days)]
@@ -366,7 +409,8 @@ def build(as_of, facts, raw, spx, engine, out):
     company, exchange, listed = h["company"], h["exchange"], h["symbol"]
     ids = (list(h["sources"]) + [p["source"] for p in prints] + list(latest.get("extra_sources", [])) + [public[i - 1]["source"]]
            + [listing["source"]]
-           + ([dividend_src] if dividend_src else []) + ([g_now[-1]["source"]] if g_now else []))
+           + ([dividend_src] if dividend_src else []) + ([g_now[-1]["source"]] if g_now else [])
+           + ([eg["pref_source"], eg["shares_source"]] if eg else []))
     sources = [dict(id=i, **{k: v for k, v in facts["sources"][i].items()}) for i in dict.fromkeys(ids)]
     sources.append({"id": "A0", "published": as_of,
                     "title": f"Yahoo Finance daily prices, {company} common stock ({exchange}: {listed}) and S&P 500, truncated at AS_OF",

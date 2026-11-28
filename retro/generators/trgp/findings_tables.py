@@ -3,6 +3,7 @@
 class and legacy tier, by current-FY EPS and by latest print, per year, plus 3-year and drawdown lines.
 
     python3 retro/generators/trgp/findings_tables.py 2012,2013
+    python3 retro/generators/trgp/findings_tables.py 2018,2019,2020,2021      # (TRGP 2018-2021) the earnings guide's dates grouped as such
 
 Run it only after the batch's build, validation outputs, README section and firewall result are committed and pushed, and
 `retro_tool.py outcome` has written the outcomes (retro/README.md, "Adding dates"). Nothing it prints may feed a fact sheet,
@@ -23,7 +24,7 @@ for d in sorted(x for x in glob.glob(os.path.join(REPO, "staging", "retrospectiv
     o = json.load(open(os.path.join(d, "outcome.json")))
     m = open(os.path.join(d, "model.py"), encoding="utf-8").read()
     eps = re.search(r'EPS_LABEL\s+= "([^"]+)"', m).group(1)
-    fy = re.search(r"(FY\d{4}E): .*, (FY\d\d)'s \$([\d.]+)", eps)
+    fy = re.search(r"(FY\d{4}E): .*,(?: so)? (FY\d\d)'s \$([\d.]+)", eps) if "GAAP earnings guide," not in eps else None
     q = re.search(r"latest print (Q\d \d{4})", a["summary"]) or re.search(r'"quarter": "(Q\d \d{4})"', m)
     lq = re.search(r"LATEST\s+= \{'quarter': '(Q\d \d{4})'", m).group(1)
     h2, h3 = o["horizons"].get("2y"), o["horizons"].get("3y")
@@ -31,7 +32,9 @@ for d in sorted(x for x in glob.glob(os.path.join(REPO, "staging", "retrospectiv
         pending.append(a["as_of"])
         continue
     rows.append(dict(date=a["as_of"], price=a["price"], cls=a["classification"]["price_state"], tier=a["legacy_signal_short"],
-                     fy=f"{fy.group(1)[:2]}{fy.group(1)[4:]} ${fy.group(3)} ({fy.group(2)}'s)", lq=lq,
+                     fy=(f"{fy.group(1)[:2]}{fy.group(1)[4:]} ${fy.group(3)} ({fy.group(2)}'s)" if fy else   # (TRGP 2018-2021)
+                         "{0}{1} ${2} (the earnings guide)".format(*(lambda m: (m.group(1)[:2], m.group(1)[4:], m.group(2)))(
+                             re.search(r"(FY\d{4}E): GAAP earnings guide, .* = \$([\d.]+)", eps)))), lq=lq,
                      r2=h2["total_return_pct"], x2=h2["excess_pct"], hu2=h2["hurdle_pct"], r3=h3["total_return_pct"] if h3 else None,
                      x3=h3["excess_pct"] if h3 else None, hu3=h3["hurdle_pct"] if h3 else None,
                      avg=o["within_2y"]["return_to_avg_price_m12_m24_pct"], dd=o["within_2y"]["max_drawdown_pct"],

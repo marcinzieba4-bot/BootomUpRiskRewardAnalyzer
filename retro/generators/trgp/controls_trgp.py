@@ -4,6 +4,10 @@ changes, and whether the first weekly date on or after it does. In memory; nothi
 
     python3 retro/generators/trgp/controls_trgp.py                        # the 2012-2013 dates
     python3 retro/generators/trgp/controls_trgp.py 2014-01-01 2017-12-31  # the 2014-2017 dates: the facts published from START
+    python3 retro/generators/trgp/controls_trgp.py 2018-01-01 2021-12-31  # the 2018-2021 dates
+
+(TRGP 2018-2021) Each earnings guide's estimated net income attributable to TRC is altered too (+$50M): a loss guide stays a loss and is
+inert unless the alteration crosses zero; the 10-K's fourth-quarter EPS is a restatement like the 10-Qs'.
 
 (TRGP 2014-2017) A print's restatement ('restated': the revenue revision of 2014-10-23, the 10-Qs' EPS) is altered in its own figure
 (revenues re-derived, or EPS); the revenue revision's 2013 revenue and each vintage's greenhouse gas quote (the theme clause, from
@@ -86,6 +90,9 @@ for i, d in enumerate(facts0["dividends"]):
 for i, g in enumerate(facts0["guides"]):
     C.append((f"FY{g['fy']} outlook of {g['published']} ({g['source']}), its display", g["published"],
               lambda f, i=i: f["guides"][i].update(display=f["guides"][i]["display"] + " CTRL")))
+    if "ni_trc_est_m" in g:                     # (TRGP 2018-2021) the earnings guide: its estimated net income attributable to TRC
+        C.append((f"FY{g['fy']} outlook of {g['published']} ({g['source']}), its estimated net income", g["published"],
+                  lambda f, i=i: f["guides"][i].update(ni_trc_est_m=f["guides"][i]["ni_trc_est_m"] + 50.0)))
 if len(sys.argv) > 2:                           # a later batch: the facts published from START
     C = [c for c in C if c[1] >= START]
 base = build_all(facts0)
