@@ -1,0 +1,286 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "OKE",
+ "company": "ONEOK, Inc.",
+ "as_of": "2013-02-01",
+ "price_date": "2013-02-01",
+ "price": 47.32,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); gas distribution and midstream signals with ONEOK's rule-T thresholds",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'We are a diversified energy company and successor to the company founded in 1906 known as Oklahoma Natural Gas Company.' 'Our cash flow depends heavily on the earnings and distributions of ONEOK Partners.' 'The volatility of natural gas, crude oil and NGL prices could affect adversely ONEOK Partners’ cash flow.' (the FY2011 10-K's own words; it calls no business of the company cyclical, the word appearing only in its billing cycle, so DURABLE, the MU rule); no disruption theme in the registry is live for a gas distributor and midstream company on this date (of the live themes, OFFSHORE is scoped to 'lower-cost offshore delivery (Indian IT services) takes share and price from Western consulting, systems integration and outsourcing', CLOUD to 'public cloud displaces on-premise hardware, storage, legacy databases and data-center outsourcing': none names gas distribution or midstream), so the watch list is empty",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "QUALITY, PRICED FOR PERFECTION",
+  "quality_label": "✕ QUALITY, PRICED FOR PERFECTION",
+  "quality_color": "#f87171",
+  "quality_tone": "red",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "RICH",
+  "quality_note": "'We are a diversified energy company and successor to the company founded in 1906 known as Oklahoma Natural Gas Company.' 'Our cash flow depends heavily on the earnings and distributions of ONEOK Partners.' 'The volatility of natural gas, crude oil and NGL prices could affect adversely ONEOK Partners’ cash flow.' (the FY2011 10-K's own words; it calls no business of the company cyclical, the word appearing only in its billing cycle, so DURABLE, the MU rule); no disruption theme in the registry is live for a gas distributor and midstream company on this date (of the live themes, OFFSHORE is scoped to 'lower-cost offshore delivery (Indian IT services) takes share and price from Western consulting, systems integration and outsourcing', CLOUD to 'public cloud displaces on-premise hardware, storage, legacy databases and data-center outsourcing': none names gas distribution or midstream), so the watch list is empty. durable franchise (obsolescence risk 2/5); price rich; +151% to EPP floor; model-vs-market gap -2.12; conservative 2yr -43%.",
+  "theme": null
+ },
+ "legacy_signal_short": "AVOID",
+ "legacy_signal": "✕ AVOID",
+ "metrics": {
+  "ratio_b": Infinity,
+  "ratio_b_fmt": "infx",
+  "epp": 18.87,
+  "epp_gap_pct": 150.8,
+  "epp_adj": -0.2,
+  "proxy_composite": 1.95,
+  "sca": -0.1,
+  "adj_composite": 1.65,
+  "market_composite": 3.77,
+  "adj_gap": -2.12,
+  "valuation": "OVERVALUED",
+  "cons_return_2yr": -43.0,
+  "scenarios": {
+   "BEAR": {
+    "eps": 1.54,
+    "pe": 9.9,
+    "price": 15,
+    "desc": "EPS -5.1%/yr (worst year FY02-FY11, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 1.24,
+    "pe": 14.6,
+    "price": 18,
+    "desc": "EPS -14.9%/yr (Q3 revenues + margin + buyback); P/E at its 10-yr median"
+   },
+   "BULL": {
+    "eps": 2.13,
+    "pe": 17.6,
+    "price": 37,
+    "desc": "EPS +11.4%/yr (FY02-FY11 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 2.9,
+    "pe": 24.1,
+    "price": 70,
+    "desc": "EPS +30.0%/yr (best 2-yr run FY02-FY11, at least BULL); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 150.8,
+   "adj_gap": -2.12,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -43.0,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 8.24,
+   "epp_gap_pct": 150.8,
+   "adj_gap": -1.67,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -43.0,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 150.8,
+   "adj_gap": -2.15,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -43.0,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 150.8,
+   "adj_gap": -2.03,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -43.0,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 150.8,
+   "adj_gap": -2.12,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -43.0,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 150.8,
+   "adj_gap": -1.82,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -43.0,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 97.1,
+   "adj_gap": -2.02,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -43.0,
+   "price_state": "RICH"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": Infinity,
+   "epp_gap_pct": 150.8,
+   "adj_gap": -1.9,
+   "verdict": "OVERVALUED",
+   "legacy_tier": "AVOID",
+   "cons_return_2yr": -43.0,
+   "price_state": "RICH"
+  }
+ ],
+ "robustness_price_states": [
+  "RICH"
+ ],
+ "summary": "OKE (retrospective, 2013-02-01) ✕ AVOID — Ratio B infx (68.3% downside to Bear $15 / +-21.8% upside to Bull $37) | Adj composite 1.65 vs market 3.77: gap -2.12 [OVERVALUED] | +151% above the EPP floor $19 (11x FY12E $1.72) | Conservative 2-yr case: -43.0% total (-21.5%/yr) | At 27.6x FY12E the 15% hurdle price $63 sits above the BULL case; net margin +4.0% and Distribution operating income -20.7% in Q3 2012, forward revenues -14.2% (no FY12 revenue guide in numbers, Q3 2012 revenues as reported); no theme in the registry is live for a gas distributor and midstream company on this date (CLOUD and OFFSHORE are scoped to IT).",
+ "sources": [
+  {
+   "id": "OK50",
+   "published": "2012-02-22",
+   "filed": "accepted 2012-02-21 16:08 ET, after the close: counts from 2012-02-22",
+   "title": "ONEOK FY2011 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000103968412000027/0001039684-12-000027.txt",
+   "supports": "history vintage FY2011; the 'why'"
+  },
+  {
+   "id": "OK42",
+   "published": "2011-02-23",
+   "filed": "accepted 2011-02-22 16:32 ET, after the close: counts from 2011-02-23",
+   "title": "ONEOK FY2010 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000103968411000029/0001039684-11-000029.txt",
+   "supports": "history vintage FY2010; the 'why'"
+  },
+  {
+   "id": "OK32",
+   "published": "2010-02-23",
+   "filed": "accepted 2010-02-23 14:04 ET, during the session",
+   "title": "ONEOK FY2009 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000090928110000030/0000909281-10-000030.txt",
+   "supports": "history vintage FY2009; Q4 2009's revenues, net margin, operating income and diluted EPS (quarterly financial data) and the year's pre-tax income and diluted shares; the 'why'"
+  },
+  {
+   "id": "OK11",
+   "published": "2009-02-25",
+   "filed": "accepted 2009-02-24 17:34 ET, after the close: counts from 2009-02-25",
+   "title": "ONEOK FY2008 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000103968409000010/0001039684-09-000010.txt",
+   "supports": "history vintage FY2008; the 'why'"
+  },
+  {
+   "id": "OK10",
+   "published": "2008-02-27",
+   "filed": "accepted 2008-02-27 15:45 ET, during the session",
+   "title": "ONEOK FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000119312508040037/0001193125-08-040037.txt",
+   "supports": "history vintage FY2007; the 'why'"
+  },
+  {
+   "id": "OK9",
+   "published": "2007-03-01",
+   "filed": "accepted 2007-02-28 18:36 ET, after the close: counts from 2007-03-01",
+   "title": "ONEOK FY2006 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000119312507042960/0001193125-07-042960.txt",
+   "supports": "history vintage FY2006; rule T: 2005 and 2006 against the year before; the company's EPS excluding the 2005 and 2006 gains on sale; the 'why'"
+  },
+  {
+   "id": "OK8",
+   "published": "2006-03-13",
+   "filed": "accepted 2006-03-10 17:44 ET, after the close: counts from 2006-03-13",
+   "title": "ONEOK FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000119312506051266/0001193125-06-051266.txt",
+   "supports": "rule T: 2004 against 2003 (statement of income; the Distribution segment); FY2001 EPS from continuing operations (excluded) and FY2003 diluted shares"
+  },
+  {
+   "id": "OK7",
+   "published": "2005-03-09",
+   "filed": "accepted 2005-03-08 16:00 ET, after the close: counts from 2005-03-09",
+   "title": "ONEOK FY2004 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000119312505044590/0001193125-05-044590.txt",
+   "supports": "rule T: 2003 against 2002 (statement of income; the Distribution segment); FY2002 diluted shares"
+  },
+  {
+   "id": "OK49",
+   "published": "2012-02-21",
+   "filed": "accepted 2012-02-21 07:50 ET, before the open",
+   "title": "ONEOK Q4 2011 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000103968412000022/0001039684-12-000022.txt",
+   "supports": "Q4 2011: revenues, net margin, operating income, income before income taxes, diluted EPS, diluted shares and the Distribution segment's operating income; the EPS guide where the release gives one"
+  },
+  {
+   "id": "OK51",
+   "published": "2012-05-02",
+   "filed": "accepted 2012-05-01 17:21 ET, after the close: counts from 2012-05-02",
+   "title": "ONEOK Q1 2012 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000103968412000040/0001039684-12-000040.txt",
+   "supports": "Q1 2012: revenues, net margin, operating income, income before income taxes, diluted EPS, diluted shares and the Distribution segment's operating income; the EPS guide where the release gives one"
+  },
+  {
+   "id": "OK54",
+   "published": "2012-08-01",
+   "filed": "accepted 2012-07-31 17:18 ET, after the close: counts from 2012-08-01",
+   "title": "ONEOK Q2 2012 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000103968412000077/0001039684-12-000077.txt",
+   "supports": "Q2 2012: revenues, net margin, operating income, income before income taxes, diluted EPS, diluted shares and the Distribution segment's operating income; the EPS guide where the release gives one"
+  },
+  {
+   "id": "OK56",
+   "published": "2012-10-31",
+   "filed": "accepted 2012-10-30 17:33 ET, after the close: counts from 2012-10-31",
+   "title": "ONEOK Q3 2012 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000103968412000104/0001039684-12-000104.txt",
+   "supports": "Q3 2012: revenues, net margin, operating income, income before income taxes, diluted EPS, diluted shares and the Distribution segment's operating income; the EPS guide where the release gives one"
+  },
+  {
+   "id": "OK57",
+   "published": "2013-01-22",
+   "filed": "accepted 2013-01-18 16:21 ET, after the close: counts from 2013-01-22",
+   "title": "ONEOK 8-K: quarterly dividend of $0.36 (Item 8.01)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000103968413000006/0001039684-13-000006.txt",
+   "supports": "the quarterly dividend rate, $0.36 a share"
+  },
+  {
+   "id": "OK12",
+   "published": "2007-08-02",
+   "filed": "accepted 2007-08-01 20:26 ET, after the close: counts from 2007-08-02",
+   "title": "ONEOK Q2 2007 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000119312507168403/0001193125-07-168403.txt",
+   "supports": "Q2 2007: revenues, net margin, operating income, income before income taxes, diluted EPS, diluted shares and the Distribution segment's operating income"
+  },
+  {
+   "id": "OK52",
+   "published": "2012-06-06",
+   "filed": "accepted 2012-06-05 17:19 ET, after the close: counts from 2012-06-06",
+   "title": "ONEOK 8-K: two-for-one stock split completed (Items 7.01, 8.01)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000103968412000059/0001039684-12-000059.txt",
+   "supports": "the 2012 two-for-one split: distribution on June 1, 2012, post-split trading from June 4, 2012"
+  },
+  {
+   "id": "Y0",
+   "published": "2013-02-01",
+   "title": "Yahoo Finance daily prices, ONEOK, Inc. common stock (NYSE: OKE) and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/OKE/history",
+   "supports": "close $47.32 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr P/E distribution from 2003-02-03"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-28"
+}

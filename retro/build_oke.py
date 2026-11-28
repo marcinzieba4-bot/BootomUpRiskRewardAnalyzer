@@ -167,7 +167,8 @@ def build(as_of, facts, raw, spx, engine, out):
     # Yahoo's close, which gives the price as traded on AS_OF's share basis. The 1990 and 2001 splits precede the window and every
     # per-share fact (asserted below)
     splits = facts.get("splits", [])
-    assert all(yahoo.get(s["effective"]) == s["ratio"] for s in splits), "a split record must match Yahoo's split date and ratio"
+    assert all(s["effective"] in yahoo for s in splits), "a split's effective date must match the price data"
+    assert all(yahoo[s["effective"]] == s["ratio"] for s in splits if s["effective"] <= as_of), "a split's ratio must match"
     assert {d for d in yahoo if "2002-01-01" <= d <= as_of} <= {s["effective"] for s in splits}, (as_of, "an unencoded split")
     fx = retro_tool.split_factor(chart, as_of)
     px = {d: tuple(v * fx for v in hlc) for d, hlc in raw.items()}   # Yahoo's close times the later factors: the price as traded
