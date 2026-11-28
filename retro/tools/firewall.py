@@ -44,7 +44,7 @@ and require byte-identical models. Restores the fact sheet and the price cache a
     python3 retro/tools/firewall.py 2013-01-01 TRGP         # the TRGP series in staging/retrospective (from its first full year of EPS)
     python3 retro/tools/firewall.py 2009-01-01 OKE          # the OKE series (ONEOK, Inc.) in staging/retrospective
     python3 retro/tools/firewall.py 2010-01-01 CHTR         # the CHTR gate, and from 2019-02-01 its models (retro/README.md, "CHTR 2008-2009" to "CHTR 2018-2021")
-    python3 retro/tools/firewall.py 2013-01-01 FANG         # the FANG gate, and from 2014-02-21 its models (retro/README.md, "FANG 2008-2009", "FANG 2014-2017")
+    python3 retro/tools/firewall.py 2013-01-01 FANG         # the FANG gate, and from 2014-02-21 its models (retro/README.md, "FANG 2008-2009", "FANG 2014-2017", "FANG 2018-2021")
 
 Plants a print, a history vintage, an event per live theme and a company name (UNP: also a guide and a
 dividend; LOW and AAPL: also a guide with every guided field; NKE: a guide in words, and futures orders on the last print before
@@ -621,11 +621,14 @@ if TICKER == "FANG":   # the gate's test (the CHTR encoding; retro/README.md, "F
             v.update(eps_normalized={k: 0.01 for k in v["eps_normalized"]}, revenue_usd_b={k: 0.01 for k in v["revenue_usd_b"]},
                      diluted_shares_m={k: 1.0 for k in v["diluted_shares_m"]}, groups=[["PLANTED", 1, -99]],
                      **{k: "PLANTED" for k in ("normalization", "revenue_note", "business_quote", "cyclical_quote", "prices_quote",
-                                                "transition_quote", "no_dividend_quote", "fcf_note", "groups_basis")},
+                                                "transition_quote", "no_dividend_quote", "fcf_note", "groups_basis",
+                                                # (2018-2021, "FANG 2018-2021") the later vintages' own words
+                                                "conservation_quote", "fuel_quote", "dividend_quote", "carried_from")},
                      **{k: -99.0 for k in ("prev_fy_pretax_margin", "check_pretax_margin", "tax_rate", "fcf_b")})
         f["history_vintages"].append(v)
         f["guides"].append({"fy": 2099, "published": later, "source": last["source"], "doc": "PLANTED", "eps_guide": [0.1, 0.2]})
-        f["dividends"].append({"published": later, "source": last["source"], "quarterly": 9.99, "note": "PLANTED"})
+        f["dividends"].append({"published": later, "source": last["source"], "quarterly": 9.99, "note": "PLANTED",
+                               "annual": 39.96, "quote": "PLANTED"})   # (2018-2021) the fields build_fang reads
         f["events"].append({"published": later, "source": last["source"], "kind": "PLANTED", "doc": "PLANTED"})
         f["listings"].append({"published": later, "source": last["source"], "kind": "listing", "issuer": "PLANTED", "quote": "PLANTED"})
         f["no_dividend"].append({"published": later, "source": last["source"], "quote": "PLANTED"})

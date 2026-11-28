@@ -31014,7 +31014,7 @@ Judgement calls that could carry hindsight (the builder knows what Charter's ear
 
 Hindsight outcomes and findings, labelled as such, are in `staging/retrospective/CHTR/FINDINGS.md`: hypotheses, never inputs.
 
-## FANG (Diamondback Energy): the thirty-ninth ticker, in staging, built from 2014-02-21 (to 2017-12-29 so far)
+## FANG (Diamondback Energy): the thirty-ninth ticker, in staging, built from 2014-02-21 (to 2021-12-31 so far)
 
 The FANG series is set up apart from every other ticker and shares nothing with them but the machinery: its own fact sheet
 (`retro/facts/FANG.json`, generated from the filings by `retro/generators/fang/gen_fang.py`), builder (`retro/build_fang.py`, a gate
@@ -31024,7 +31024,8 @@ placeholders for an onshore producer, so no XOM value is carried and no model ca
 engine with FANG's own signals and rule-T thresholds, and the builder builds the dates that pass the gate). The method is still r2. No fact,
 parameter, outcome or finding of another ticker (XOM included) enters FANG's files, and neither does any 2026 analysis
 (`data/business_profiles.json`, `scripts/quality_classify.py`, `reports/*.json`, any live `*_signal_model.py`). Outputs go to
-`staging/retrospective/FANG/`, which held only `GATE.md`, the builder's refusal of each date, until "FANG 2014-2017" built its models.
+`staging/retrospective/FANG/`, which held only `GATE.md`, the builder's refusal of each date, until "FANG 2014-2017" built its models. "FANG 2018-2021"
+extends the series to 2021-12-31 (`gen_fang_1821.py`), with the dividend and the distorted-year encoding in the builder.
 
 ```bash
 python3 retro/tools/edgar.py index 1539838 <dir>                            # the downloads (outside the repository)
@@ -31339,6 +31340,157 @@ Judgement calls that could carry hindsight (the builder knows what oil prices, D
 - the 8-Ks other than the releases searched by keyword, not read in full; the 10-Qs not read.
 
 Hindsight outcomes and findings, labelled as such, are in `staging/retrospective/FANG/FINDINGS.md`: hypotheses, never inputs.
+
+### FANG 2018-2021: FY2019 distorted and FY2020 a loss, FY18's $8.06 the anchor from 2019, the dividend, 209 models
+
+209 weekly dates, 2018-01-05 to 2021-12-31, requested by the owner ("find newest code. do retrospective analysis for FANG, 2018-2021. same
+rules as before"). The newest code is the coordinating session's branch (`claude/sharp-albattani-rdvlgi`, with "FANG 2014-2017" and the
+other tickers merged), checked out as the base; nothing else was merged in. This batch is on `claude/fang-retro-2018-2021`. It was built
+in a new session without opening the earlier FANG outcomes or findings (`staging/retrospective/FANG/FINDINGS.md`, `SERIES.md`, any
+`outcome.json`), and no 2026 analysis was read. **All 209 dates pass the gate and are built** (52, 52, 53, 52 a year); `GATE.md` now holds
+the 732 weekly dates of 2008-2021 (321 refused, every one before 2014-02-21; the earlier lines unchanged).
+
+```bash
+python3 retro/tools/edgar.py index 1539838 <dir>
+python3 retro/tools/edgar.py fetch 1539838 <dir> --from 2017-10-01 --to 2021-12-31 --forms 10-K 10-K/A 8-K 8-K/A
+python3 -I retro/generators/fang/gen_fang_1821.py --filings <dir>              # appends to retro/facts/FANG.json
+python3 -I retro/tools/verbatim.py <dir>/checklist_fang_1821.json              # 263/263
+python3 retro/build_fang.py --weekly 2014-01-01 2017-12-31                     # regression: the 202 models byte-identical
+python3 retro/build_fang.py --weekly 2018-01-01 2021-12-31                     # 209 built (2018-01-05 .. 2021-12-31)
+python3 retro/build_fang.py --gate-md
+for d in staging/retrospective/FANG/20{18,19,20,21}-*/; do
+  python3 retro/retro_tool.py --archive staging/retrospective run "$d"
+  python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
+done
+python3 retro/retro_tool.py --archive staging/retrospective series FANG
+python3 retro/generators/fang/controls_fang.py 2008-01-01 2021-12-31           # the gate's controls: 12 of 12
+python3 retro/generators/fang/controls_fang_models.py 2017-12-30 2021-12-31    # the models' controls: 46 of 46
+python3 retro/generators/fang/sens_fang_1821.py <scratch>                      # the sensitivity below
+for c in 2018-01-01 2018-02-14 2018-02-15 2018-05-09 2019-02-20 2019-02-25 2019-08-07 2020-01-01 2020-02-19 2020-02-27 2020-05-05 \
+         2020-10-21 2021-02-23 2021-02-26 2021-08-03 2021-11-02 2022-01-01; do python3 retro/tools/firewall.py $c FANG; done
+```
+
+**A full-data batch.** `www.sec.gov` served every document to `edgar.py`'s plain client name (no contact address; the owner's email was
+not used). Read by the session's model directly, with no delegated transcription: the FY2017-FY2020 10-Ks (Item 1's opening and climate
+section, Item 1A's risk factors searched for the cyclical, price, greenhouse gas, conservation and dividend sentences, Item 5, Item 6, the
+statements of operations and cash flows, the FY2017 income tax note), the FY2018 10-K/A (a reserve report only: "is being filed solely to
+include a report of Ryder Scott ... of Energen Corporation", so not a vintage), and the 16 earnings releases Q4 2017 to Q3 2021 (each one's
+statement of operations, selected operating data, adjusted net income table and dividend declaration). Every other 8-K of 2018-2021 was
+read by its items and searched by keyword for guidance: the Item 7.01 8-Ks post investor presentations to the website (not filed, unused)
+or announce board, officer and notes matters; the Energen merger 8-K's slides say "Accretive on All Metrics ... 2019+ Earnings per share"
+in words; the 8-K of 2021-04-12 (item 2.02) is a first-quarter operational update and revised production and capital guidance with no
+revenue, earnings or margin figure, so no print; the 10-Qs were not read (every print figure is in its release). The sheet is extended by
+`retro/generators/fang/gen_fang_1821.py`, which reads each figure from its labelled row, asserts each quotation in its own filing,
+computes every rate, margin and one-off test, refuses an input sheet whose 2008-2017 facts differ, only appends, and regenerates the sheet
+byte for byte (from the committed sheet or from the 2008-2017 one). The source ids are `FG11`-`FG14` (the FY2017-FY2020 10-Ks) and
+`FG37`-`FG52` (the prints). Decided on 2026-11-28, before any outcome of the range existed:
+
+- **EPS: GAAP diluted EPS on net income attributable to Diamondback, each year from the latest filing that reports it, ten fiscal years
+  to the latest.** The FY2017-FY2019 10-Ks print five years in Item 6 (the FY2019 10-K in rounded millions, which replace the earlier exact
+  figures for 2015-2019); the FY2020 10-K reserves Item 6, so its statements' three years (2018-2020) stand and the earlier years are
+  carried from the latest earlier vintage (`carried_from`; the SCHW and NEE rule). Revenue, EPS and the diluted share count all follow it,
+  so FY13 and FY14 stay in the EPS history after the five-year Item 6 drops them (a sensitivity below: no class moves). No 10-K of the
+  batch restates an EPS (asserted).
+- **The one-off test** (the AAPL FY2002 test and its mirror) runs, as in 2014-2017, on the items each Q4 release's adjusted net income
+  table removes besides the non-cash marks, which recur (the derivative marks and, from 2018, the "revaluation of investment" marks: the
+  NEE and PEP 2008 core rule), each at its twelve-month amount where the release's statement of operations prints a line for it, else the
+  table's own figure (the Q4 2017 and Q4 2020 tables are three months only):
+  - **FY2017 $4.94: kept.** Listed: the "Income tax benefit relating to change in statutory tax rate and change in valuation allowance"
+    ($21.4M after tax, three months; a tax item has no pre-tax amount, the CHTR encoding) and a $0.069M gain on sale, against $497.2M of
+    income before income taxes. On the FY2017 10-K's full-year reconciliation ($67.9M rate change and $127.5M valuation allowance) the year
+    is still kept (`tenk_check`).
+  - **FY2018 $8.06: kept.** Listed: the $36.8M Energen merger and integration expense (a charge) and $87.4M of "Other income" (a benefit),
+    against $1,113.3M.
+  - **FY2019 $1.47: distorted, excluded.** The $790M full cost ceiling impairment and the $56M loss on extinguishment of debt ($846M)
+    exceed the year's $362M income before income taxes. The company's adjusted $6.93 also removes the derivative marks, so no figure
+    excludes only the one-offs: the year is excluded as the latest year and then a gap (the NEM FY2011, FY2015 and FY2018 encoding),
+    "ex-FY19". **This is the batch's deciding call** (below).
+  - **FY2020 $(28.59): a loss** after $6,021M of impairments, excluded the same way ("ex-FY20").
+  So the anchor is FY14's $3.64 to the Q4 2017 print, FY17's $4.94 from 2018-02-15, and **FY18's $8.06 from the Q4 2018 print
+  (2019-02-21) to the last date**, as FY2019 and FY2020 leave gaps. The builder's text for a Q4 release's excluded year now names a
+  distorted year as such (it named only losses before; no earlier model changes).
+- **No guide in numbers.** Every outlook is production (MBoe/d, MBO/d), unit costs, well counts or capital spending (the 2021 operational
+  update included), and the Energen slides' accretion words have no figure. So current-FY EPS is the last kept year's, BASE is the latest
+  quarter's revenue growth as reported plus the net share change (the Energen shares of Q4 2018, the 2019 repurchases, Guidon and QEP in
+  2021: -16.6% to -20.2%/yr over the history's share counts), and there is no margin step.
+- **Dividends, each annual rate from the release that first states it** (`dividends`, read by the builder as LYB's are): $0.50 from the
+  Q4 2017 release ("Initiating annual cash dividend of $0.50 per common share to be payable quarterly beginning with Q1 2018", dated
+  2018-02-14), $0.75 from the Q4 2018 release (its "As previously announced" points to no earlier filing: the January 2019 investor
+  presentation was posted to the website, not filed), $1.50 from the Q4 2019 release, $1.60 from Q4 2020, $1.80 from Q2 2021 and $2.00 from
+  Q3 2021. The FY2017 and FY2018 10-Ks still say "We have not paid any cash dividends since our inception." beside the initiation; the
+  release's rate wins, and no new no-dividend fact is added. The balance and capital-return lines now name the rate and leave the share
+  count's change to BASE (the 2014-2017 text "no share repurchases" would be wrong from 2019).
+- **Units.** From Q1 2019 the releases print millions (shares in thousands); each print records its unit from the statement's header.
+- **Release timing.** All 16 releases were accepted after the close and are dated the next trading day; the 10-Ks came one to eight trading
+  days after their releases (FY2017: release dated 2018-02-14, 10-K 2018-02-15; FY2019: 2020-02-19 and 2020-02-27; FY2020: 2021-02-23 and
+  2021-02-26), so the Q4 2019 and Q4 2020 releases' years extend their vintages on the earnings-week dates 2020-02-20 and 2021-02-24.
+- **Signals and rule T unchanged** (frozen on the filings public on 2014-02-21; "FANG 2014-2017"): the Q2 2020 and Q2 2021 pre-tax margin
+  changes (-77,239bp and +75,263bp against the COVID quarter) land beyond BEAR and XBULL, mechanically.
+- **Durability: CYCLICAL, risk 2**, on the same sentences in each 10-K (the business, "The oil and natural gas industry is cyclical, ..."
+  and the price sentence). **ENERGY_TRANSITION stays on the watch list**, in each 10-K's own words: the FY2017-FY2019 risk factor heading
+  "Regulation of greenhouse gas emissions could result in increased operating costs and reduced demand for the oil and natural gas we
+  produce."; the FY2020 10-K drops that heading, so its Item 1 climate sentence, present in every 10-K of the batch, is quoted: "Restrictions
+  on emissions of methane or carbon dioxide that may be imposed could adversely impact the demand for, price of, and value of our products
+  and reserves." (labels only, no factor pair). **EV (live 2020-01-01) is out of scope**: its scope names ICE powertrains, auto parts
+  suppliers and fuel retail; Diamondback produces and sells crude oil, gas and NGLs and has no retail outlets, and the 10-Ks' "Conservation
+  measures and technological advances could reduce demand for oil and natural gas." is the demand risk ENERGY_TRANSITION already carries
+  (quoted in the "why"). **CRYPTO (2020-10-21)** is scoped to payments, banks and exchanges; no 10-K of the batch contains "electric
+  vehicle", "crypto", "blockchain" or "bitcoin" (asserted by the generator).
+- **Energen (2018-11-29), the 2019 Rattler Midstream IPO, the Viper drop-down, Guidon and QEP (2021)** are in Diamondback's figures as its
+  filings consolidate them; no subsidiary's price or per-unit figure is used, and no pro forma figure. No model names Viper, Rattler,
+  Energen, QEP or Guidon (grep: 0 models), and the anachronism list's two FANG notes now say 2014-2021.
+- **A text slip carried, not fixed:** the 2014-2017 prints' `next_print` names the month of the print's own release, not the next one
+  ("Q4 2017 release (early November)"); fixing it would change earlier facts, which the generator refuses, so the 2018-2021 prints compute
+  their own correctly and the earlier text stands (display only).
+
+Controls and checks (before any outcome):
+- **Verbatim:** 263 of 263 strings, each against its own filing. **Forward references** (`forward_refs.py FANG --from 2017-12-30`): 0 in 47
+  dated facts. **Self-text** (`selftext.py FANG --from 2017-12-30 --allow FG`): 4 misses of 491 tokens, each the method word "10-Ks" of
+  the revenue note.
+- **Leak scan** (`leak_scan.py FANG --from 2018-01-01`): 0 hits in 46,781 (model, later token) pairs; positive control 209 of 209.
+- **Anachronisms:** no model contains a later name (above). **`retro_tool run`:** passes on all 209 dates; 106 carry a false calendar-year
+  warning ("2051", the digits of FY2017's revenue, $1.2051B, in `REVENUE_HIST`; the UNH tax-rate case).
+- **Regression:** the 2014-2017 range rebuilds byte-identical (202 models), the sheet regenerates byte for byte.
+- **Controls:** the gate's (`controls_fang.py 2008-01-01 2021-12-31`) 12 of 12; the models' (`controls_fang_models.py 2017-12-30
+  2021-12-31`, extended with the conservation sentence and each dividend rate): 46 of 46 change no model before their publication, 44
+  change the first weekly date on or after it; the FY2017 10-K's conservation sentence changes none and the FY2018 10-K's only the 8 dates
+  from EV's live date to the FY2019 10-K (it is read only once EV is live).
+- **Firewall** (the FANG branch, extended to plant the new vintage words and a dividend rate): at the 17 cutoffs above every weekly date before the cutoff keeps its
+  exact refusal (522 to 731), every gate control after it changes (5 to 10 dates), and 0 of 202 to 411 models change or contain planted
+  text (run on the committed fact sheet, builder and engine: 17 of 17 pass with exit code 0, 0 files changed).
+
+Seen in the build (method behaviour, not tuned):
+- **CHEAP and BUY on all 209 dates.** The class rests on the anchor: FY17's $4.94 at $100-130 in 2018 (21-25x against a window median
+  of 21-22x), then FY18's $8.06 from 2019-02-21 (prices of $47-112: 6-14x against a median of 18-19x),
+  while FY2019 and FY2020 are gaps and no guide in numbers moves the current year.
+- **The window** runs from the listing, 5.0 years on the first date and 8.9 on the last, less 2012, 2015, 2016, 2019 and 2020's days.
+  BEAR stays at the 0% cap (EPS never fell between two consecutive years in the history), BULL is the history's EPS CAGR (FY13-FY18,
+  +44.3%/yr, from the Q4 2018 print) or BASE's rate where that is higher, and XBULL takes BULL's (no two-year run with both ends in it).
+- **BASE** swings with revenue, less the share issuance: +60% to +97%/yr in 2018, +42% to +77% in 2019, -79% to +65% in 2020 (Q2 2020's
+  revenues -58.4%) and -48% to +278% in 2021 (Q2 2021's +295.5% against the COVID quarter).
+
+Sensitivity (each call changed alone, the 209 dates rebuilt and classified offline with `retro_tool`'s classifier; no outcome consulted;
+`sens_fang_1821.py`):
+- **FY2019 kept at GAAP $1.47** (the distorted-year exclusion undone): **93 classes** (76 CHEAP to RICH, 17 CHEAP to FAIR; 2020-02-20 to
+  2021-12-31) and **67 tiers**: the batch's largest call by far;
+- FY2019 at the company's adjusted $6.93 (marks out too): 5 classes (CHEAP to RICH, 2021-03-05 to 2021-04-30), no tier;
+- FY2018 at the company's adjusted $5.87: 1 class (2021-03-05), no tier;
+- every signal at its BEAR value: 25 classes (CHEAP to FAIR, 2018-01-12 to 2018-11-16); at XBULL: none;
+- no net share change in BASE, the EPS history as each 10-K's own five years only, and the dividend at 0: no class, no tier.
+
+Judgement calls that could carry hindsight (the builder knows what oil prices, Diamondback's earnings and its stock did in 2018-2021):
+- **FY2019 excluded by the AAPL FY2002 test** on the impairment and the debt extinguishment loss, so FY18's $8.06 anchors 2020-2021 through
+  the COVID collapse: kept at GAAP it moves 93 classes and 67 tiers (the rule is the frozen one, applied as in 2014-2017 and NEM);
+- the "revaluation of investment" lines read as recurring marks like the derivative marks, and the FY2018 "Other income" and merger costs
+  as one-offs (the year is kept either way);
+- the FY2017 test on the release's three-month tax item (kept on the 10-K's full-year lines too);
+- the FY2020 10-K's three statement years with the earlier years carried, and the ten-year carry generally (no class either way);
+- the FY2020 climate sentence quoted for ENERGY_TRANSITION once the risk factor heading is gone, and EV read as out of scope on its
+  "fuel retail" scope (labels only);
+- the $0.75 rate dated from the Q4 2018 release rather than an unfiled presentation (no class either way: the dividend at 0 moves none);
+- the 8-Ks other than the releases read by their items and keywords, not in full; the 10-Qs not read.
+
+Hindsight outcomes and findings, labelled as such, are in `staging/retrospective/FANG/FINDINGS_1821.md`: hypotheses, never inputs.
 
 ## TRGP (Targa Resources Corp.): the fortieth ticker, in staging, from its first full year of EPS
 

@@ -1,0 +1,74 @@
+{
+ "_doc": "HINDSIGHT — computed after the fact from market data; not an input to the analysis.",
+ "ticker": "FANG",
+ "as_of": "2021-01-22",
+ "computed": "2026-11-28",
+ "data_source": "Yahoo Finance daily closes + dividends (FANG, benchmark SPY)",
+ "horizons": {
+  "6m": {
+   "date": "2021-07-22",
+   "price": 78.67,
+   "dividends": 0.8,
+   "total_return_pct": 24.7,
+   "benchmark_total_return_pct": 14.4,
+   "excess_pct": 10.3,
+   "hurdle_pct": 7.2
+  },
+  "1y": {
+   "date": "2022-01-21",
+   "price": 117.99,
+   "dividends": 1.75,
+   "total_return_pct": 87.9,
+   "benchmark_total_return_pct": 15.9,
+   "excess_pct": 72.0,
+   "hurdle_pct": 15.0
+  },
+  "2y": {
+   "date": "2023-01-20",
+   "price": 147.55,
+   "dividends": 10.71,
+   "total_return_pct": 148.3,
+   "benchmark_total_return_pct": 6.5,
+   "excess_pct": 141.8,
+   "hurdle_pct": 32.2
+  },
+  "3y": {
+   "date": "2024-01-22",
+   "price": 151.94,
+   "dividends": 18.7,
+   "total_return_pct": 167.7,
+   "benchmark_total_return_pct": 31.1,
+   "excess_pct": 136.6,
+   "hurdle_pct": 52.1
+  }
+ },
+ "within_2y": {
+  "high": {
+   "date": "2022-11-15",
+   "price": 167.03
+  },
+  "low": {
+   "date": "2021-01-27",
+   "price": 56.59
+  },
+  "max_drawdown_pct": -33.5,
+  "return_to_avg_price_m12_m24_pct": 112.6
+ },
+ "scenario_landing_2y": "BEAR",
+ "call_check_2y": {
+  "expectation": "CHEAP: should clear the hurdle or beat the benchmark",
+  "hit": true
+ },
+ "profile_drift": {
+  "then": {
+   "kind": "CYCLICAL",
+   "risk": 2
+  },
+  "today": {
+   "kind": "CYCLICAL",
+   "risk": 2,
+   "why": "Diamondback: lowest-cost Permian E&P; oil price",
+   "reviewed": "2026-09-22"
+  }
+ }
+}
