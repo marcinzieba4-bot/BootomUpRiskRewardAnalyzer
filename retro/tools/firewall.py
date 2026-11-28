@@ -42,6 +42,7 @@ and require byte-identical models. Restores the fact sheet and the price cache a
     python3 retro/tools/firewall.py 2009-01-01 NEM          # the NEM series (Newmont Mining Corporation) in staging/retrospective
     python3 retro/tools/firewall.py 2013-01-01 LYB          # the LYB series in staging/retrospective (from the 2010 share issue)
     python3 retro/tools/firewall.py 2013-01-01 TRGP         # the TRGP series in staging/retrospective (from its first full year of EPS)
+    python3 retro/tools/firewall.py 2009-01-01 OKE          # the OKE series (ONEOK, Inc.) in staging/retrospective
     python3 retro/tools/firewall.py 2010-01-01 CHTR         # the CHTR gate, and from 2019-02-01 its models (retro/README.md, "CHTR 2008-2009" to "CHTR 2018-2021")
     python3 retro/tools/firewall.py 2013-01-01 FANG         # the FANG gate (no date built; retro/README.md, "FANG 2008-2009")
 
@@ -180,7 +181,9 @@ fact sheet with a 'splits' list, SHW's from 2021-2023: a later split on the pric
 segment operating income, revenue, margins, EPS, notes and raw figures are absurd, with absurd full-year actuals for the year after the
 latest vintage before CUTOFF and a restatement of every year of the history, a later vintage with planted texts, figures, kind and an
 excluded year, and a later share repurchase program (from LYB 2022-2026 also a later vintage with the refining business discontinued
-and a later Q4 print with n/r margins whose loss year is excluded); a CLOUD event
+and a later Q4 print with n/r margins whose loss year is excluded); OKE: a print whose net margin, Distribution operating income,
+revenue, margins, EPS, notes and raw figures are absurd, a later vintage with planted texts, figures, window start and an excluded
+year, and a later EPS guide for every year guided before CUTOFF and for the cutoff's year and the next; a CLOUD event
 from a later 10-K, as for every live theme), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
 before CUTOFF changed.
@@ -220,7 +223,7 @@ OUTDIR = {"ACN": "archive/retrospective/ACN", "UNP": "staging/retrospective/UNP"
           "NEE": "staging/retrospective/NEE", "NEM": "staging/retrospective/NEM",
           "LYB": "staging/retrospective/LYB",
           "CHTR": "staging/retrospective/CHTR", "FANG": "staging/retrospective/FANG",
-          "TRGP": "staging/retrospective/TRGP"}[TICKER]
+          "TRGP": "staging/retrospective/TRGP", "OKE": "staging/retrospective/OKE"}[TICKER]
 ARCHIVE = os.path.join(ROOT, OUTDIR)
 BUILDER = os.path.join(ROOT, "retro", f"build_{TICKER.lower()}.py")
 # absurd values for every field the builder reads from a print
@@ -481,7 +484,13 @@ PLANT = {"ACN": dict(quarter="Q9 FY99", revenue_lc=-60, margin_bp=-999, fy_eps_g
                      eps_q_prior=9.99, eps_pct=-99.9, diluted_shares_m=1.0, cash_b=99.0, debt_note="PLANTED", rev_note="PLANTED",
                      oz_note="PLANTED", cas_note="PLANTED", eps_note="PLANTED", adj_note="PLANTED", next_print="PLANTED",
                      oz_basis="produced", shares_source="PLANTED", derived_note="PLANTED",   # the 2010-2013 fields (NEM 2010-2013)
-                     raw=dict(rev_m=4, rev_prior_m=10, pretax_m=-2, pretax_prior_m=5, oz_k=4, oz_prior_k=10, cas=9999, cas_prior=1))}.get(TICKER, {})   # CHTR: none (the gate test below)
+                     raw=dict(rev_m=4, rev_prior_m=10, pretax_m=-2, pretax_prior_m=5, oz_k=4, oz_prior_k=10, cas=9999, cas_prior=1)),
+         "OKE": dict(quarter="Q1 2099", fy=2099, q=1, release="PLANTED", release_time="PLANTED", sales_b=0.01, sales_pct=-60.0,
+                     nm_pct=-60.0, dist_pct=-60.0, opm=-50.0, opm_bp=-999.0, ptm=-50.0, ptm_bp=-999.0, eps_q=0.01, eps_q_prior=9.99,
+                     diluted_shares_m=1.0, sales_note="PLANTED", nm_note="PLANTED", dist_note="PLANTED", margin_note="PLANTED",
+                     eps_note="PLANTED", cash_note="PLANTED", next_print="PLANTED", source_title="PLANTED", rows={"PLANTED": "PLANTED"},
+                     raw=dict(rev_m=4, rev_prior_m=10, nm_m=1, nm_prior_m=10, oi_m=-2, oi_prior_m=5, pti_m=-2, pti_prior_m=5,
+                              dist_m=-99, dist_prior_m=99, eps_q=0.01, eps_q_prior=9.99, dil_sh_m=1.0))}.get(TICKER, {})   # CHTR: none (the gate test below)
 # LOW and AAPL guides carry more fields than UNP's: plant every one the builder reads (NKE's are words only)
 GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -999], margin_def="PLANTED", stores_guide=1,
                            store_opening_m=9999, fy_words="PLANTED",
@@ -1512,6 +1521,18 @@ try:
         for x in f.get("listings", []):    # the planted later listing names a symbol, as the encoded one does
             if x.get("note") == "PLANTED":
                 x["symbol"] = "PLANTED"
+    if TICKER == "OKE":    # a later vintage whose every text and figure the models quote is planted, excluding a year, a later EPS guide for
+                           # every year guided before CUTOFF and for the cutoff's year and the next, with absurd ranges (OKE 2008-2009)
+        v.update(business_line="PLANTED", normalization="PLANTED", shares_note="PLANTED", prev_fy_op_margin=-50.0,
+                 prev_fy_op_margin_note="PLANTED", check_pretax_margin=-50.0, check_pretax_note="PLANTED", tax_rate=0.99,
+                 tax_note="PLANTED", prev_fy_sales_growth=-60.0, dividend_annual=9.99, dividend_note="PLANTED", fcf_b=99.0,
+                 fcf_label="PLANTED", fcf_note="PLANTED", cash_return_text="PLANTED", groups=[["PLANTED", 1, -99]],
+                 groups_basis="PLANTED", margin_signal_name="PLANTED", kind_text="PLANTED", pe_window_start="2099-01-01",
+                 revenue_usd_b={**v["revenue_usd_b"], "2099": 0.01}, diluted_shares_m={**v["diluted_shares_m"], "2099": 1.0},
+                 eps_excluded={**v.get("eps_excluded", {}), "2098": "PLANTED"}, eps_first_excluded={"2097": "PLANTED"})
+        for y in sorted({g["fy"] for g in f["eps_guides"] if g["published"] < cutoff} | {int(cutoff[:4]), int(cutoff[:4]) + 1}):
+            f["eps_guides"].append({"fy": y, "published": later, "source": last["source"], "doc": "PLANTED", "eps_guide": [0.01, 0.02],
+                                    "quote": "PLANTED"})
     if TICKER == "LMT":    # absurd full-year actuals on the planted print, for the year after the latest vintage before CUTOFF, and a later
                            # vintage whose every text and figure the models quote is planted (LMT 2008-2009)
         v0 = max((x for x in f["history_vintages"] if x["published"] < cutoff), key=lambda x: x["published"])
