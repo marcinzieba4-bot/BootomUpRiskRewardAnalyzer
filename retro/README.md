@@ -29725,7 +29725,11 @@ Controls and checks (before any outcome):
   "Newmont FY". A first draft of the Q4 2023 print's note named the FY2023 10-K's later figures ($(3.00), $(2,031)M); it was cut to the
   release's own words before the build.
 - **Regression:** rebuilding 2008-2021 with the new sheet and builder changes no file.
-- **Firewall:** see below (run after this section was committed and pushed, before any outcome).
+- **Firewall** (run after the build, validation outputs and this section were committed and pushed, before any outcome): it passes at
+  all 11 cutoffs (the first week, the Q4 2021 print and FY2021 10-K, the Friday Q1 2022 print, the Q4 2022 print and FY2022 10-K, the
+  Q4 2023 print and its `fy_actual` date, the FY2023 10-K, the first after-close Q4 print and FY2024 10-K, a Friday print (Q2 2025),
+  the FY2025 10-K and the first summary-table CAS print, the Q3 2026 print and 2026-11-28: 733 to 988 dates each, 2008 on), 0 files
+  changed and no planted text; the NEM plant now also carries the vintage's `ai_words`.
 
 Seen in the build (method behaviour, not tuned): **CHEAP 139, RICH 106, FAIR 11 of 256 dates** (BUY 157, AVOID 74, WATCHLIST 14,
 ACCUMULATE 11). 2022: RICH 38, CHEAP 14. 2023: CHEAP 39, RICH 8, FAIR 5. 2024: CHEAP 52. 2025: RICH 32, CHEAP 17, FAIR 3. 2026: RICH 28,
