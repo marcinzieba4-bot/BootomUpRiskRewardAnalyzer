@@ -20,6 +20,9 @@ rows = []
 pending = []
 for d in sorted(x for x in glob.glob(os.path.join(REPO, "staging", "retrospective", "FANG", "20*")) if os.path.basename(x)[:4] in sys.argv[1].split(",")):
     a = json.load(open(os.path.join(d, "analysis.json")))
+    if not os.path.exists(os.path.join(d, "outcome.json")):   # no close after AS_OF yet (2026-11-27): left out
+        pending.append(a["as_of"])
+        continue
     o = json.load(open(os.path.join(d, "outcome.json")))
     m = open(os.path.join(d, "model.py"), encoding="utf-8").read()
     eps = re.search(r'EPS_LABEL\s+= "([^"]+)"', m).group(1)

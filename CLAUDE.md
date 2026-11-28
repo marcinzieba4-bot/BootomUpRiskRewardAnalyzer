@@ -24,7 +24,7 @@ touching either directory.
   NKE (2008-2026 so far), AVGO (from its 2009-08-06 listing to 2026-10-30 so far), PEP (2008 to 2026-10-30 so far), MSFT
   (2008 to 2026-10-30 so far), XOM (2008 to 2026-10-30 so far), SHW (2008 to 2026-11-06 so far), WMT (2008 to 2026-11-06 so far), RCL (2008 to 2026-11-06 so far), MAR (2008 to 2026-11-03 so far), BKR (2008 to 2017-06-30, then 2019-02-01 to 2026-11-06 so far), PFE (2008 to 2026-11-04 so far), CMCSA (2008 to 2026-11-06 so far), CAT (2008 to 2026-11-06 so far), BMY (2008 to 2026-11-06 so far), NVDA (2008 to 2026-11-06 so far), F (2008-01-04 to 2026-11-06 so far; 2022-01-07 onward was built first at the owner's request, and dates before 2022 are an early era with its
   own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far), SPGI (2008-01-04 to 2026-11-20 so far), CB (2008-01-04 to 2026-11-20 so far), LLY (2008-01-04 to 2026-11-20 so far), UNH (2008-01-04 to 2026-11-20 so far), CRM (2008-01-04 to 2026-11-20 so far), SCHW (2008-01-04 to 2026-11-20 so far), NEE (2008-01-04 to 2026-11-20 so far), NEM (2008-01-04 to 2026-11-27 so far), LYB (from its 2010 share issue: 2012-02-10 to 2026-11-20 so far), CHTR (from its first
-  anchoring year: 2019-02-01 to 2026-11-20 so far), FANG (from its first anchoring year: 2014-02-21 to 2021-12-31 so far), TRGP (from its first full year of EPS: 2012-02-24 to 2021-12-31 so far) and OKE (2008-01-04 to 2013-12-31 so far) sit in `staging/retrospective/` until the owner adds
+  anchoring year: 2019-02-01 to 2026-11-20 so far), FANG (from its first anchoring year: 2014-02-21 to 2026-11-27 so far), TRGP (from its first full year of EPS: 2012-02-24 to 2021-12-31 so far) and OKE (2008-01-04 to 2013-12-31 so far) sit in `staging/retrospective/` until the owner adds
   them to the archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM", "SHW", "WMT", "RCL", "MAR", "BKR", "PFE", "CMCSA", "CAT",
   "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG", "JPM", "V", "SPGI", "CB", "LLY", "UNH", "CRM", "SCHW", "NEE", "NEM", "LYB", "CHTR", "FANG", "TRGP", "OKE"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py`, `mu_signal_model.py`, `v_signal_model.py`, `spgi_signal_model.py` and `lly_signal_model.py` (other branches) files
   and today's profiles in `data/business_profiles.json` (NVDA's, SO's, V's, SPGI's, CB's, LLY's, UNH's, CRM's and NEE's included) are 2026 analyses: never inputs to a retrospective. AVGO did not trade
@@ -693,7 +693,18 @@ touching either directory.
   list (the FY2020 10-K's Item 1 climate sentence once the risk factor heading is gone), EV and CRYPTO out of scope; Energen, Rattler,
   Guidon and QEP as published; CHEAP and BUY on all 209 dates (2018-01-05 to 2021-12-31); FY2019 kept at GAAP moves 93 classes and 67
   tiers, the batch's deciding call; built in a new session without opening the 2014-2017 outcomes or findings (retro/README.md,
-  "FANG 2018-2021").
+  "FANG 2018-2021"). From 2022 (a full-data batch, `gen_fang_2226.py`): FY21 $12.30 (restated to $12.24 by the two-class method from the
+  Q4 2022 release, `prior_eps_gaap`), FY22 $24.61, FY23 $17.34 and FY24 $15.53 are kept (GAAP; the one-off test on each Q4 release's
+  listed items, the derivative marks recurring), FY2025 ($5.73) is distorted by the AAPL FY2002 test (the $3,652M Q4 2025 impairment
+  against $1,874M) and excluded as the latest year ("ex-FY25"), so FY24's $15.53 anchors from 2025-02-26 to the last date; each 10-K
+  reserves Item 6 (three statement years, the rest carried); still no guide in numbers (BASE the latest quarter's revenue growth plus the
+  net share change, the Endeavor shares in as published); the base dividend ($2.40 to $4.72, each from the filing that first states it,
+  the merger 8-K of 2024-02-12 and the Q1 2026 letter included), the variable dividends not a rate; the Item 2.02 8-Ks without a release
+  are no print; ENERGY_TRANSITION stays on the watch list, EV, GENAI and GLP1 out of scope (the 10-Ks' electric vehicle and AI words
+  quoted, `ev_quote`, `ai_words`, text only); Rattler, Viper, Endeavor and Double Eagle as published; CHEAP 173, RICH 66, FAIR 17 of 256
+  dates; the frozen signals at XBULL move 82 classes, FY2025 kept at GAAP 17 classes and 40 tiers; the last date is 2026-11-27 (built
+  after that day's early close, the NEM rule); built in a new session without opening the 2014-2021 outcomes or findings
+  (retro/README.md, "FANG 2022-2026").
   TRGP (Targa Resources Corp., NYSE: TRGP) has no 2008-2009 dates: its common stock listed on 2010-12-07 ("No public market currently
   exists for our common stock", the IPO prospectus) and 2008-2009 have no EPS to common shareholders; Targa Resources Partners LP (NYSE:
   NGLS), which TRC controls and consolidates, is a separate listed partnership, and its unit prices and per-unit history were not
