@@ -24,7 +24,7 @@ touching either directory.
   NKE (2008-2026 so far), AVGO (from its 2009-08-06 listing to 2026-10-30 so far), PEP (2008 to 2026-10-30 so far), MSFT
   (2008 to 2026-10-30 so far), XOM (2008 to 2026-10-30 so far), SHW (2008 to 2026-11-06 so far), WMT (2008 to 2026-11-06 so far), RCL (2008 to 2026-11-06 so far), MAR (2008 to 2026-11-03 so far), BKR (2008 to 2017-06-30, then 2019-02-01 to 2026-11-06 so far), PFE (2008 to 2026-11-04 so far), CMCSA (2008 to 2026-11-06 so far), CAT (2008 to 2026-11-06 so far), BMY (2008 to 2026-11-06 so far), NVDA (2008 to 2026-11-06 so far), F (2008-01-04 to 2026-11-06 so far; 2022-01-07 onward was built first at the owner's request, and dates before 2022 are an early era with its
   own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far), SPGI (2008-01-04 to 2026-11-20 so far), CB (2008-01-04 to 2026-11-20 so far), LLY (2008-01-04 to 2026-11-20 so far), UNH (2008-01-04 to 2026-11-20 so far), CRM (2008-01-04 to 2026-11-20 so far), SCHW (2008-01-04 to 2026-11-20 so far), NEE (2008-01-04 to 2026-11-20 so far), NEM (2008-01-04 to 2026-11-27 so far), LYB (from its 2010 share issue: 2012-02-10 to 2026-11-20 so far), CHTR (from its first
-  anchoring year: 2019-02-01 to 2026-11-20 so far), FANG (from its first anchoring year: 2014-02-21 to 2021-12-31 so far), TRGP (from its first full year of EPS: 2012-02-24 to 2021-12-31 so far) and OKE (2008-01-04 to 2013-12-31 so far) sit in `staging/retrospective/` until the owner adds
+  anchoring year: 2019-02-01 to 2026-11-20 so far), FANG (from its first anchoring year: 2014-02-21 to 2021-12-31 so far), TRGP (from its first full year of EPS: 2012-02-24 to 2026-11-27 so far) and OKE (2008-01-04 to 2013-12-31 so far) sit in `staging/retrospective/` until the owner adds
   them to the archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM", "SHW", "WMT", "RCL", "MAR", "BKR", "PFE", "CMCSA", "CAT",
   "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG", "JPM", "V", "SPGI", "CB", "LLY", "UNH", "CRM", "SCHW", "NEE", "NEM", "LYB", "CHTR", "FANG", "TRGP", "OKE"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py`, `mu_signal_model.py`, `v_signal_model.py`, `spgi_signal_model.py` and `lly_signal_model.py` (other branches) files
   and today's profiles in `data/business_profiles.json` (NVDA's, SO's, V's, SPGI's, CB's, LLY's, UNH's, CRM's and NEE's included) are 2026 analyses: never inputs to a retrospective. AVGO did not trade
@@ -731,7 +731,17 @@ touching either directory.
   ENERGY_TRANSITION still out of scope with each 10-K's splitter and climate words quoted (text only); CHEAP 112, FAIR 57, RICH 40 of 209
   dates; the loss years kept at a pre-tax upper bound without their impairments move 106 classes, the signals at BEAR 80, the preferred
   deduction 55, the earnings-guide reading 14; built in a new session without opening the 2012-2017 outcomes or findings (retro/README.md,
-  "TRGP 2018-2021").
+  "TRGP 2018-2021"). From 2022 (a full-data batch, `gen_trgp_2226.py` appending to the 2012-2021 sheet, every earlier fact asserted
+  unchanged): Item 6 is reserved, so each vintage takes three years from its statements, and the ten-year rule now cuts the EPS and share
+  histories too (no earlier vintage changes); FY2021 $(0.07) is a loss, excluded; FY22 $3.88, FY23 $3.66 (with the $510.1M Grand Prix
+  premium on repurchase of noncontrolling interests, 61% of its income), FY24 $5.74 and FY25 $8.49 are GAAP and kept; the estimated net
+  income attributable to TRC stays the earnings guide, and new: from the Q1 2022 release (the Series A redeemed in full) the deduction is
+  what the latest statement has recorded for the guide's year (deemed dividends, premiums), not 4 x the quarter, so FY22E $5.13 to $4.18,
+  FY23E $5.43 to $3.97, FY26E $10.18 to $11.61; the 8-K of 2022-06-17's standalone estimate is a guide; the Q4 prints carry no full year
+  (each 10-K is public by the week date; the builder refuses a date between); dividends $0.35 to $1.25 a quarter; DURABLE (no 10-K says
+  cyclical), GENAI and GLP1 out of scope with the 10-Ks' AI words quoted (`ai_text`, text only); CHEAP 153, RICH 71, FAIR 32 of 256
+  dates; the earnings-guide reading moves 107 classes, the signals at BEAR 103; the last date is 2026-11-27 (built after that day's early
+  close); built in a new session without opening the 2012-2021 outcomes or findings (retro/README.md, "TRGP 2022-2026").
   OKE (ONEOK, Inc., NYSE: OKE, CIK 1039684), a full-data batch: EPS is diluted EPS from continuing operations, each year from the latest
   filing that reports it, at the company's figures without the gains on sale for 2005 ($2.53) and 2006 ($2.40) (the FY2006 10-K; the
   ACN rule); FY2001 is excluded by the AAPL FY2002 test on the latest filing that reports it (the FY2005 10-K's $0.36 and $43.5M of

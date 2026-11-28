@@ -32013,6 +32013,188 @@ Judgement calls that could carry hindsight:
 
 The hindsight results for 2018-2021 are in `staging/retrospective/TRGP/FINDINGS.md` ("TRGP 2018-2021"): hypotheses, never inputs.
 
+### TRGP 2022-2026: FY2021 a loss, the Series A redemption and the noncontrolling-interest premiums deducted as recorded, GAAP kept for 2022-2025, GENAI and GLP1 out of scope, the last date 2026-11-27
+
+256 weekly dates, 2022-01-07 to 2026-11-27 (52, 52, 52, 52, 48), on the same fact sheet, generator discipline, builder, engines and
+method (r2), with the rule-T thresholds of 2012-02-24 frozen. Built on 2026-11-28 at the owner's request ("find newest code. do
+retrospective analysis for TRGP, 2022-2026. same rules as before"). The code is the coordinating session's branch
+`claude/sharp-albattani-rdvlgi` (its commit "Merge TRGP 2018-2021 ... TRGP to 2021-12-31"), and nothing else was merged in. Parallel OKE
+and FANG sessions change only their own entries in the shared files. **Built in a new session without opening the 2012-2021 outcomes,
+`SERIES.md` or `FINDINGS.md`.** Every decision below applies a rule that existed before (the house rules and the 2012-2021 encodings) or
+is disclosed as new. NGLS's unit prices and per-unit figures are never used. The DevCo JV Repurchase, the GCX Sale, the Lucid acquisition
+(2022-08-01), the Series A redemption (2022-05-03), the Grand Prix Transaction (2023), the CBF Acquisition (2024) and the Badlands
+Transaction (2025) are in the figures as TRC's own filings publish them. The pro forma statements (the 8-K/As of 2022-10-11 and the 8-K of
+2023-03-31) are unused, as before.
+
+**The last date.** The series was built on Saturday 2026-11-28, after Friday's early close (13:00 ET; Yahoo's `regularMarketTime` for
+2026-11-27 is 18:00 UTC). The week of 2026-11-23 is therefore complete, and its last trading day, 2026-11-27, is the last date: the NEM
+2022-2026 rule, applied at this build's time. The newest dates have no outcome yet.
+
+```bash
+python3 retro/tools/edgar.py fetch 1389170 <dir> --from 2021-12-31 --to 2026-11-28 --forms 10-K 10-Q 8-K 10-K/A 8-K/A 10-Q/A
+python3 -I retro/generators/trgp/gen_trgp_2226.py --filings <dir> --facts-in <the 2012-2021 sheet>    # appends 2022-2026
+python3 -I retro/tools/verbatim.py <dir>/checklist_trgp_2226.json            # 479/479
+python3 retro/build_trgp.py --weekly 2012-02-20 2021-12-31                   # regression: the 516 earlier models byte for byte
+python3 retro/build_trgp.py --weekly 2022-01-01 2026-11-27                   # 256 dates, 2022-01-07 .. 2026-11-27
+python3 retro/generators/trgp/controls_trgp.py 2022-01-01 2026-11-27         # 107 controls
+python3 retro/generators/trgp/sens_trgp_2226.py <scratch>                    # the sensitivity below
+for c in <each 2022-2026 fact date and the day after it, 2022-01-01, 2022-04-18, GENAI's 2022-11-30, GLP1's 2023-08-08, 2026-11-28>; do
+  python3 retro/tools/firewall.py $c TRGP; done                             # 53 cutoffs
+```
+
+**A full-data batch.** `www.sec.gov` again served every filing document to the plain client name of `edgar.py`, with no contact address;
+the owner's email was not used. Read by the session's model directly, with no delegated transcription:
+- TRC's twenty earnings releases, Q4 2021 to Q3 2026 (8-K exhibit 99.1);
+- the FY2021-FY2025 10-Ks. Item 6 is "Reserved" in each, so the statements of operations and cash flows give three years. Also read:
+  the segment note and Items 1, 1A and 7A;
+- the fifteen 10-Qs of Q1 2022 to Q3 2026, for EPS and shares;
+- the 8-K of 2022-04-18 (the Series A called for redemption);
+- the 8-K of 2022-06-17 (the Lucid acquisition, with an updated standalone 2022 outlook and its estimated net income);
+- every other 8-K of 2022-2026, by its item text and exhibits.
+
+`gen_trgp_2226.py` loads the 2012-2021 sheet and refuses one that already holds a later fact. It appends, and asserts every earlier fact,
+source, revenue revision and rule-T value unchanged. The source ids:
+- `TG120`-`TG124`: the FY2021-FY2025 10-Ks;
+- `TG130`-`TG149`: the releases;
+- `TG150`-`TG164`: the 10-Qs;
+- `TG34`: the 8-K of 2022-06-17;
+- `TG35`: the 8-K of 2022-04-18.
+
+Decided on 2026-11-28, before any 2022-2026 model was built or any outcome computed:
+
+- **History from three-year statements.** Each vintage takes three years from its own statement of operations (revenues, diluted EPS,
+  diluted shares) and earlier years from the latest earlier vintage. **The house rule "the ten fiscal years to the latest one" now cuts the
+  EPS and share histories too, not only revenues.** No earlier vintage held a year outside its ten, so no earlier model changes. 2011
+  leaves with the FY2021 10-K, 2012 with the FY2022 10-K, and so on. The 2016 buy-in's shares stay in the share history to the FY2025
+  vintage (2016-2025), so the net share change still reads as dilution in BASE. Not cutting moves 57 classes.
+- **EPS: GAAP diluted EPS, each year from the latest filing that reports it.**
+  - **FY2021 is a loss** ($(0.07): $(16.1)M to common shareholders after $87.3M of Series A dividends, with the $452.3M SouthTX
+    impairment). It is excluded as the latest year and then a gap, its days out of the window.
+  - **FY2022 $3.88, FY2023 $3.66, FY2024 $5.74 and FY2025 $8.49 are kept.** TRC still prints no EPS excluding one-offs.
+  - The one-off test runs on each year's listed items, the to-common deductions included:
+    - FY2022: the $435.9M GCX gain, pre-tax, less $215.5M of deemed dividends and the $53.2M premium nets to $167.2M of benefits
+      against $896.8M;
+    - FY2023: the $510.1M Grand Prix premium against $835.8M, 61% of it, the near case;
+    - FY2024: the $32.9M premium and the $55.8M Splitter interest against $1,279.1M;
+    - FY2025: the $70.5M premium against $1,852.5M.
+  - The Q4 releases print no per-share figure, and each 10-K is public by the first weekly date after its release (accepted the same
+    day, or that evening). So the Q4 prints carry no `fy_actual`, and the vintage carries its latest year's test (`one_off_test`, which
+    the builder checks).
+  - **New:** the builder refuses a date between a Q4 release and its 10-K. No weekly date falls there, and the generator asserts it.
+- **The earnings guide (the TRGP 2018-2021 rule).** Every release reconciles its adjusted EBITDA outlook to an "Estimated Net Income
+  attributable to TRC". So does the 8-K of 2022-06-17, standalone before Lucid: $1,350.0M, dated 2022-06-21 because it was accepted
+  16:49 ET. The estimate, less the to-common deductions, over the latest basic count public on the guide's date (a 10-Q's quarter or
+  a 10-K's year), sets current-FY EPS. **New:**
+  - the Q4 2021 release's guide, with the Series A still outstanding, deducts 4 x the quarter's $21.8M (unchanged rule):
+    $1,260.0M - $87.2M over 228.6M = **$5.13**;
+  - from the Q1 2022 release ("In May 2022, Targa redeemed in full all of the Company’s issued and outstanding shares of Series A
+    Preferred."), no preferred dividend recurs. A guide then deducts what the latest statement of operations public on its date has
+    already deducted for the guide's own year: the Series A dividends, cash and deemed, and the premium on repurchase of
+    noncontrolling interests, year to date. A Q4 release's guide for the next year deducts nothing.
+  The literal quarterly-rate rule would have deducted 4 x the Q2 2022 quarter's $8.2M + $215.5M redemption deemed dividend, $894.8M. That
+  is a one-time redemption charge read as recurring, which is why the rule was restated before any model was built. The resulting EPS:
+  - FY2022E: $5.19 (Q1 2022), $5.58 (the 8-K), $4.16 and $4.18 (Q2, Q3);
+  - FY2023E: $5.43, then $3.97, $4.21, $4.08 (the $490.7M Grand Prix premium deducted);
+  - FY2024E: $5.30 to $6.26;
+  - FY2025E: $8.02, then $6.81 to $8.15 (the $70.5M Badlands premium deducted);
+  - FY2026E: $10.18 to $11.61.
+  No guide is a loss. The adjusted EBITDA outlooks are quoted in the guide line, display only, with each Q4 release's dividend
+  intention for its year where it states one. No filing guides revenue or a margin, so BASE is still the latest quarter's revenue growth as
+  reported plus the net share change, with no margin step.
+- **EPS of the quarters.** Each quarter's EPS and diluted shares come from its 10-Q, from the 10-Q's own date (`restated`, the 2014-2021
+  encoding). No 10-K has selected quarterly data, so each Q4's EPS stays n/r through `trgp2_engine.py.tmpl` until the next print.
+- **Release timing.** Every earnings 8-K was accepted at 06:15 ET, before the open, and none on a Friday, so each print's week date is
+  the next trading day. The 10-Ks are dated:
+  - 2022-02-24 (11:57 ET);
+  - 2023-02-23 (2023-02-22 16:49 ET);
+  - 2024-02-16 (2024-02-15 16:01 ET);
+  - 2025-02-20 (14:15 ET);
+  - 2026-02-19 (15:53 ET).
+  In each case the 10-K is public by the print's week date.
+- **Dividends:** each release's declared rate: $0.35 a quarter to Q4 2022, $0.50 from Q1 2023, $0.75 from Q1 2024, $1.00 from Q1 2025
+  and $1.25 from Q1 2026.
+- **Signals:** unchanged, each against the year-ago quarter as the release shows it. The two segments are TRC's Gathering and Processing
+  and Logistics and Transportation; the releases' first "Operating margin" row under each heading.
+- **Durability: DURABLE, risk 2.** No FY2021-FY2025 10-K calls the business cyclical. The dividend policy's "seasonal and cyclical
+  factors" no longer appears, and the generator asserts the word is absent. The FY2024 and FY2025 10-Ks restate the commodity sentence
+  ("Some of the commercial agreements in our natural gas gathering and processing business are percent-of-proceeds arrangements that
+  expose us to commodity price risk."), which is quoted in the "why".
+- **Themes.** **GENAI (live 2022-11-30) and GLP1 (2023-08-08) are out of scope.** Their scopes name software, IT services, information
+  and mobility, and snacks, beverages and devices, not midstream energy. No 10-K names generative AI, GLP-1 drugs or obesity (asserted).
+  The FY2023-FY2025 10-Ks name artificial intelligence, cryptography and cloud only in their cybersecurity risk factor; it is quoted
+  (`ai_text`, text only), and the generator asserts that every "crypto" is "cryptography". ENERGY_TRANSITION stays out of scope (the
+  BKR reading), with each 10-K's climate risk factor and Splitter words quoted. The watch list stays empty and the theme slot at 2/4,
+  so no class moves either way.
+- **Adds nothing:**
+  - the notes, tender, credit, commercial paper and underwriting 8-Ks;
+  - the 8-K of 2022-08-01 (the Lucid closing);
+  - the pro forma 8-K/A and 8-K;
+  - the officer, director, bylaw and vote-result 8-Ks;
+  - the website earnings supplements and investor presentations the releases cite, which were never filed and are unused.
+
+Controls and checks (before any outcome):
+- **Regression:** the 516 dates of 2012-2021 rebuild byte for byte from the extended sheet and builder.
+- **Controls** (`controls_trgp.py 2022-01-01 2026-11-27`): 107 of 107 change no model dated before their publication, and every one
+  changes the first weekly date on or after it.
+- **Leak scan:**
+  - `leak_scan.py --from 2022-01-01`: 108,453 (model, later token) pairs and 7 hits, read and cleared. All 7 are the 2022-05-06 to
+    2022-06-17 models' derived "$1,185.1M to common shareholders" against the FY2024 guide's later $1,185.0M. The positive control finds
+    the print in force in 256 of 256 models.
+  - `forward_refs.py --from 2022-01-01`: 0 in 124 dated facts. The first draft's redemption record held the release's date under the
+    8-K's; it is now dated by the release.
+  - `selftext.py --allow "Targa Resources Corp. FY" USD "The FY" "The IPO" TG Ks "The Targa Resources Corp. FY"`: 0 misses in 1,480
+    tokens. "Ks", from "10-Ks", and the title's "The ... FY" are method words.
+- **`retro_tool run`:** passes on all 256 dates, with no warning. The years after the as-of date are only the FY horizon labels.
+- **Firewall** (run after the build and validation outputs were committed, before any outcome): passes at 53 cutoffs with 0 files changed
+  and no planted text (516 to 772 earlier dates each). The TRGP plant now also plants a later post-redemption earnings guide and the later
+  vintage's AI words.
+
+Seen in the build (method behaviour, not tuned):
+- **Totals: CHEAP 153, RICH 71, FAIR 32.**
+  - CHEAP on every date from 2022-01-07 to 2024-05-10 (123 dates);
+  - mostly RICH and FAIR from 2024-05-17 to 2025-08-01;
+  - CHEAP from 2025-08-08 to 2025-11-28;
+  - RICH and FAIR alternating in 2026;
+  - CHEAP again from the Q3 2026 print (2026-11-06 to 2026-11-27).
+  Legacy tiers: BUY 199, ACCUMULATE 32, AVOID 16, WATCHLIST 9.
+- **The anchors and the multiple.**
+  - The FY2022E-FY2023E guides at 10-22x, while the window's median is 37-49x: the 2012-2015 days on $0.91-$2.43 hold it up. So the
+    2022-2023 dates sit at the window's 2nd-46th percentile and are CHEAP.
+  - As those days leave, the median falls to 21-24x in 2024 and about 20x in 2025-2026.
+  - From the FY2025 vintage (2026-02-19), 2015 leaves the EPS history, so the window starts with 2022 ("4.1-yr ex-FY16 ... ex-FY21").
+  - The current P/E ran 18-30x from 2024, at the 20th-93rd percentile.
+- **BASE follows revenue as reported, plus the net share change:**
+  - from +111.5% (Q4 2021) and +77.3% (Q2 2022) through -43.8% (Q2 2023) to +34.9% (Q3 2026);
+  - less the dilution that the 2016 buy-in still puts in the ten-year share history.
+
+Sensitivity (each call changed alone, the 256 dates rebuilt and reclassified offline with `retro_tool`'s own classifier; no outcome
+consulted; `sens_trgp_2226.py`):
+- **the estimated net income read as display only** (the last full year's EPS stands, FY15's $1.09 to 2023-02-17): **107 classes**
+  (CHEAP to RICH 61, FAIR to RICH 32, CHEAP to FAIR 14) and 155 tiers, the batch's largest call;
+- **every data signal at its BEAR value**: 103 classes (CHEAP to RICH 71, FAIR to RICH 32), no tier; **at XBULL**: 56;
+- **FY22 and FY23 without their to-common one-offs** (derived $5.17 and $5.96, which no filing prints): 74 classes, 74 tiers;
+- **no ten-year cut of the EPS and share histories**: 57 classes, 101 tiers;
+- **FY21 at a pre-tax upper bound without its impairment** ($1.91): 14 classes, 41 tiers;
+- **nothing deducted after the redemption** and **the quarterly-rate rule read literally after it**: 6 classes each (2025-12-05 to
+  2026-01-23, the $70.5M deduction);
+- **the 8-K of 2022-06-17's standalone estimate unused**, and **CYCLICAL instead of DURABLE**: no class, no tier.
+
+Judgement calls that could carry hindsight:
+- the estimated net income attributable to TRC read as a GAAP earnings guide (the 2018-2021 rule, kept): reading it as display only
+  moves 107 of the 256 classes. The builder knows how TRGP traded in 2022-2026;
+- the deduction restated after the Series A redemption (the year's recorded deductions in place of the quarterly rate), decided by a
+  builder who knows the redemption's deemed dividend; the literal rule moves only 6 classes, because the Q2 2022 dates are CHEAP either
+  way;
+- FY2023 kept at GAAP $3.66 with the Grand Prix premium at 61% of its income (74 classes with FY22 and FY23 at derived figures), and FY2021
+  excluded as a loss (14 classes at an upper bound);
+- the ten-year cut applied to the EPS and share histories (57 classes), which also sets the short window of 2026;
+- the signal set and rule T's thresholds, frozen from 2012-02-24 (103 classes at BEAR);
+- BASE on revenue as reported when no revenue is guided, and the structural changes in the figures as published, NGLS's unit prices never;
+- GENAI, GLP1 and ENERGY_TRANSITION read as out of scope for a gatherer and processor (text only), and DURABLE kept;
+- the non-earnings 8-Ks read by their item text and exhibits for guided numbers only.
+
+The hindsight results for 2022-2026 are in `staging/retrospective/TRGP/FINDINGS.md` ("TRGP 2022-2026"): hypotheses, never inputs.
+
 ## OKE (ONEOK, Inc.): the forty-first ticker, in staging, 2008-2009
 
 The OKE series is built apart from the other forty and shares nothing with them but the machinery: its own fact sheet
