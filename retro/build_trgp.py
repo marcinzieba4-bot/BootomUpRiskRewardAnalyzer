@@ -71,6 +71,9 @@ PRINT_KEYS = {"quarter", "fy", "q", "published", "source", "release", "release_t
               "sales_note", "margin_note", "eps_note", "cash_note", "next_print", "fy_actual", "restated"}
 EARN_GUIDE_KEYS = {"fy", "published", "source", "rev_none", "display", "ni_trc_est_m", "pref_q_m", "pref_source", "shares_basic_m",
                    "shares_source", "shares_note", "ni_row", "doc"}
+# (TRGP 2022-2026) once a filing states the Series A redeemed in full (the Q1 2022 release), a guide deducts what the latest statement of
+# operations public on its date has already deducted for the guide's own year, in place of the preferred dividends' quarterly rate
+EARN_GUIDE_KEYS2 = (EARN_GUIDE_KEYS - {"pref_q_m", "pref_source"}) | {"deduct_ytd_m", "deduct_source", "deduct_note"}
 FY_KEYS = {"fy", "fy_label", "eps_normalized", "excluded_note", "revenue_usd_b", "diluted_shares_m", "normalization_note", "op_margin",
            "op_margin_note", "sales_growth", "check_pretax_margin", "check_pretax_note", "tax_rate", "tax_note", "one_off_test",
            "eps_gaap"}
@@ -190,7 +193,8 @@ def build(as_of, facts, raw, spx, engine, out):
     guides = [g for g in facts["guides"] if g["published"] <= as_of]
     # (TRGP 2018-2021) from the Q4 2018 release a guide may carry the estimated net income attributable to TRC that reconciles its
     # Adjusted EBITDA outlook (a GAAP earnings guide); no filing guides revenue or a margin
-    assert all(g["rev_none"] and (set(g) == {"fy", "published", "source", "rev_none", "display"} or set(g) == EARN_GUIDE_KEYS)
+    assert all(g["rev_none"] and (set(g) == {"fy", "published", "source", "rev_none", "display"} or set(g) == EARN_GUIDE_KEYS
+                                  or set(g) == EARN_GUIDE_KEYS2)
                for g in guides), "a guide in numbers needs its encoding first (no TRGP filing guides revenue or a margin)"
     assert rule_t(facts["rule_t"]) == ENGINE_THRESHOLDS, "the engine's thresholds must follow rule T on the fact sheet's values"
     for p in facts["prints"]:                          # a print public on AS_OF must match its raw figures (and its restatements)
@@ -198,6 +202,17 @@ def build(as_of, facts, raw, spx, engine, out):
             check_print(p, as_of)
     public = [as_restated(p, as_of) for p in facts["prints"] if p["published"] <= as_of]
     h = vintages[-1]                                   # latest annual history public on AS_OF
+    # (TRGP 2022-2026) Item 6 is reserved from the FY2021 10-K and the releases print no EPS, so a vintage carries its latest year's one-off
+    # test (the AAPL FY2002 test and its mirror, as the Q4 prints' 'fy_actual' did): a kept year is its GAAP EPS, a loss is excluded
+    for v in vintages:
+        t = v.get("one_off_test")
+        if t:
+            it, inc = t["items_after_tax_m"], t["income_attributable_m"]
+            assert t["kind"] == ("benefits" if it < 0 else "charges") and t["distorted"] == ((-it > inc + it) if it < 0 else (it > inc))
+            y = str(t["fy"])
+            kept = not t["distorted"] and t["eps_gaap"] > 0
+            assert (y in v["eps_normalized"]) == kept and (v["eps_normalized"].get(y, t["eps_gaap"]) == t["eps_gaap"]), (v["fy_label"], y)
+            assert kept or y in v["eps_excluded"], (v["fy_label"], y, "an excluded year needs its reason")
     # (TRGP 2014-2017) a revenue revision filed after the vintage (the 8-K of 2014-10-23: 2011-2013 on the net basis of NGL buy-sell
     # transactions) replaces those years until a later 10-K reports them
     for rv in facts.get("revenue_restatements", []):
@@ -208,6 +223,12 @@ def build(as_of, facts, raw, spx, engine, out):
                  "revenue_note": f'{h["revenue_note"]}; {rv["note"]}'}
     reported = lambda h: {int(k) for k in h["eps_normalized"]} | {int(k) for k in h.get("eps_excluded", {})}
     first_fy = max(reported(h)) + 1
+    # (TRGP 2022-2026) the Q4 prints of 2021-2025 carry no full year ('fy_actual': the releases print no EPS, and each 10-K is public by the
+    # first weekly date after its release, as the generator asserts): a Q4 print whose year no vintage reports yet has no encoding
+    for p in public:
+        if p["q"] == 4 and p["fy"] >= 2021 and not p.get("fy_actual") and p["fy"] not in reported(h):
+            sys.exit(f"{as_of}: the {p['quarter']} release is public but its 10-K is not, and the release prints no EPS for the year; "
+                     "no encoding for a date between them (retro/README.md, \"TRGP 2022-2026\")")
     guide_fy = lambda p: p["fy"] + (1 if p["quarter"].startswith("Q4") else 0)
     prints = [p for p in public if guide_fy(p) >= first_fy]
     events = [e for e in facts["events"] if e["published"] <= as_of]
@@ -267,12 +288,18 @@ def build(as_of, facts, raw, spx, engine, out):
     # 2008 and CRM 2010 rule)
     eg = next((g for g in reversed(guides) if g["fy"] == cur_fy), None)
     eg = eg if eg and "ni_trc_est_m" in eg else None
-    if eg:
+    if eg and "deduct_ytd_m" in eg:                     # (TRGP 2022-2026) no Series A outstanding: the year's recorded deductions
+        to_common = round(eg["ni_trc_est_m"] - eg["deduct_ytd_m"], 1)
+        how = (f"the {eg['doc']}'s estimated net {'income' if eg['ni_trc_est_m'] >= 0 else 'loss'} attributable to TRC of "
+               f"{money_m(eg['ni_trc_est_m'])} (its adjusted EBITDA reconciliation) less {money_m(eg['deduct_ytd_m'])} ("
+               + eg["deduct_note"].split(": ", 1)[1].split(" (", 1)[0] + ")")
+    elif eg:
         pref4 = round(4 * sum(eg["pref_q_m"]), 1)
         to_common = round(eg["ni_trc_est_m"] - pref4, 1)
         how = (f"the {eg['doc']}'s estimated net {'income' if eg['ni_trc_est_m'] >= 0 else 'loss'} attributable to TRC of "
                f"{money_m(eg['ni_trc_est_m'])} (its Adjusted EBITDA reconciliation) less {money_m(pref4)} of Series A preferred dividends "
                f"(4 x the quarter's ${eg['pref_q_m'][0]:.1f}M cash and ${eg['pref_q_m'][1]:.1f}M deemed)")
+    if eg:
         if to_common > 0:
             eps_now = round(to_common / eg["shares_basic_m"], 3)
             eps_label = (f"{fy_e}: GAAP earnings guide, {how} = {money_m(to_common)} to common shareholders / "
@@ -341,7 +368,8 @@ def build(as_of, facts, raw, spx, engine, out):
     theme_summary = "no theme in the registry is live for a midstream natural gas company on this date; none has dated evidence"
     key_tail = ("By the company's own account the Partnership's percent-of-proceeds arrangements expose it to commodity prices;\n"
                 "  the bear needs NGL prices and volumes to fall across the segments, not one quarter's.")
-    if "Our primary natural gas gathering" in h["why"]:      # (TRGP 2014-2017) the FY2016 10-K speaks for TRC itself after the buy-in
+    if "Our primary natural gas gathering" in h["why"] or "Some of the commercial agreements" in h["why"]:
+        # (TRGP 2014-2017) the FY2016 10-K speaks for TRC itself after the buy-in (and the FY2024 10-K on, in its own words)
         key_tail = ("By the company's own account its percent-of-proceeds arrangements expose it to commodity prices;\n"
                     "  the bear needs NGL prices and volumes to fall across the segments, not one quarter's.")
     why = h["why"]
@@ -354,7 +382,10 @@ def build(as_of, facts, raw, spx, engine, out):
     # (TRGP 2018-2021) EV (2020-01-01) and CRYPTO (2020-10-21): no FY2017-FY2020 10-K names electric vehicles, crypto, blockchain or
     # bitcoin (the generator asserts it), and neither scope names midstream energy; the vintages from FY2017 carry their own words on the
     # Channelview Splitter and cloud ('splitter_text', 'cloud_text', text only)
-    ALL = ["OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING", "ENERGY_TRANSITION", "EV", "CRYPTO"]
+    # (TRGP 2022-2026) GENAI (2022-11-30) and GLP1 (2023-08-08): no FY2021-FY2025 10-K names generative AI, GLP-1 drugs or obesity, and
+    # neither scope names midstream energy; the FY2023-FY2025 10-Ks name artificial intelligence, cryptography and cloud only in their
+    # cybersecurity risk factor ('ai_text', text only)
+    ALL = ["OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING", "ENERGY_TRANSITION", "EV", "CRYPTO", "GENAI", "GLP1"]
     assert live_k == ALL[:len(live_k)], (as_of, "a live theme the TRGP 10-Ks were not searched for", live_k)
     if len(live_k) > 2:
         assert "ghg_quote" in h, (as_of, "a vintage before FY2013 has no greenhouse gas quote")
@@ -368,7 +399,12 @@ def build(as_of, facts, raw, spx, engine, out):
                   f"'{h['refinery_quote']}'" + (f"; {h['splitter_text']}" if "splitter_text" in h else
                                                 f"; the Channelview Splitter is a '{h['splitter_quote']}' at Channelview, under construction"
                                                 if "splitter_quote" in h else "") + ")")
-        if "cloud_text" in h:                             # (TRGP 2018-2021) the vintage's own cloud words; EV and CRYPTO named by no 10-K
+        if "ai_text" in h:                                # (TRGP 2022-2026) the vintage's own AI, cryptography and cloud words
+            names = ("e-commerce, streaming, electric vehicles, crypto assets, generative AI or GLP-1 drugs" if "GLP1" in live_k else
+                     "e-commerce, streaming, electric vehicles, crypto assets or generative AI" if "GENAI" in live_k else
+                     "e-commerce, streaming, electric vehicles or crypto")
+            words = f"the 10-Ks' 'offshore' is the Gulf Coast and its waters, {h['ai_text']}, and no 10-K names {names}"
+        elif "cloud_text" in h:                           # (TRGP 2018-2021) the vintage's own cloud words; EV and CRYPTO named by no 10-K
             names = "e-commerce, streaming, electric vehicles or crypto" if "EV" in live_k else "e-commerce or streaming"
             words = f"the 10-Ks' 'offshore' is the Gulf Coast and its waters, {h['cloud_text']}, and no 10-K names {names}"
         else:
@@ -410,7 +446,7 @@ def build(as_of, facts, raw, spx, engine, out):
     ids = (list(h["sources"]) + [p["source"] for p in prints] + list(latest.get("extra_sources", [])) + [public[i - 1]["source"]]
            + [listing["source"]]
            + ([dividend_src] if dividend_src else []) + ([g_now[-1]["source"]] if g_now else [])
-           + ([eg["pref_source"], eg["shares_source"]] if eg else []))
+           + ([eg.get("pref_source") or eg["deduct_source"], eg["shares_source"]] if eg else []))
     sources = [dict(id=i, **{k: v for k, v in facts["sources"][i].items()}) for i in dict.fromkeys(ids)]
     sources.append({"id": "A0", "published": as_of,
                     "title": f"Yahoo Finance daily prices, {company} common stock ({exchange}: {listed}) and S&P 500, truncated at AS_OF",

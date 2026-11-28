@@ -1556,6 +1556,14 @@ try:
                                 "ni_trc_est_m": 9999.0, "pref_q_m": [0.1, 0.1], "pref_source": last["source"], "shares_basic_m": 1.0,
                                 "shares_source": last["source"], "shares_note": "PLANTED", "ni_row": "PLANTED", "doc": "PLANTED"})
         v.update(splitter_text="PLANTED", cloud_text="PLANTED")
+        # (TRGP 2022-2026) a later post-redemption earnings guide (the year's recorded deductions in place of the preferred dividends) for
+        # every year guided, the cutoff's year and the next, and the later vintage's own words on artificial intelligence
+        for y in sorted({g["fy"] for g in f["guides"]} | {int(cutoff[:4]), int(cutoff[:4]) + 1}):
+            f["guides"].append({"fy": y, "published": later, "source": last["source"], "rev_none": True, "display": "PLANTED",
+                                "ni_trc_est_m": 8888.0, "deduct_ytd_m": 0.2, "deduct_source": last["source"], "deduct_note": "PLANTED: PLANTED",
+                                "shares_basic_m": 2.0, "shares_source": last["source"], "shares_note": "PLANTED", "ni_row": "PLANTED",
+                                "doc": "PLANTED"})
+        v.update(ai_text="PLANTED")
     if TICKER == "SO":     # absurd full-year actuals on the planted print, for the year after the latest vintage before CUTOFF, and a later
                            # vintage whose every text and figure the models quote is planted (SO 2008-2009)
         last["fy_actual"] = {"fy": int(max(k for k in v["eps_normalized"] if k != "2099")) + 1, "fy_label": "FY99", "eps_normalized": 0.01,
