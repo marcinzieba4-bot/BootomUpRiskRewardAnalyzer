@@ -2331,6 +2331,36 @@
     "first_seen": "2026-11-06",
     "approx": true,
     "note": "a later Charter video package name (CHTR); first in the 8-Ks and 10-Ks of CIK 1091667 downloaded for \"CHTR 2022-2026\" (8-K 0001091667-26-000072, the Q3 2026 release); other filings not searched"
+   },
+   {
+    "term": "ONE Gas",
+    "first_seen": "2013-07-25",
+    "approx": true,
+    "note": "the natural gas distribution business ONEOK separated in 2014 (OKE); earliest hit of EDGAR full-text search for filings under CIK 1039684 (from 2001), first page of results: the 8-K 0001039684-13-000074 filed 2013-07-25; not read beyond the search result"
+   },
+   {
+    "term": "Bakken NGL Pipeline",
+    "first_seen": "2010-07-27",
+    "approx": true,
+    "note": "a later ONEOK Partners pipeline (OKE); earliest hit of EDGAR full-text search for filings under CIK 1039684 (from 2001), first page of results: the 8-K 0000909281-10-000116 filed 2010-07-27; not read beyond the search result"
+   },
+   {
+    "term": "Roadrunner Gas Transmission",
+    "first_seen": "2015-04-03",
+    "approx": true,
+    "note": "a later ONEOK pipeline joint venture (OKE); earliest hit of EDGAR full-text search for filings under CIK 1039684 (from 2001), first page of results: the 8-K 0001039684-15-000025 filed 2015-04-03; not read beyond the search result"
+   },
+   {
+    "term": "Elk Creek Pipeline",
+    "first_seen": "2018-01-04",
+    "approx": true,
+    "note": "a later ONEOK NGL pipeline (OKE); earliest hit of EDGAR full-text search for filings under CIK 1039684 (from 2001), first page of results: the 424B5 0001193125-18-002952 filed 2018-01-04; not read beyond the search result"
+   },
+   {
+    "term": "Magellan Midstream",
+    "first_seen": "2023-05-15",
+    "approx": true,
+    "note": "the later ONEOK acquisition (OKE); earliest hit of EDGAR full-text search for filings under CIK 1039684 (from 2001), first page of results: the 8-K 0001193125-23-144039 filed 2023-05-15; not read beyond the search result"
    }
   ]
  }
