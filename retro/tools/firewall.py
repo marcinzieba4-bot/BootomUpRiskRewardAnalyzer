@@ -183,7 +183,8 @@ latest vintage before CUTOFF and a restatement of every year of the history, a l
 excluded year, and a later share repurchase program (from LYB 2022-2026 also a later vintage with the refining business discontinued
 and a later Q4 print with n/r margins whose loss year is excluded); OKE: a print whose net margin, Distribution operating income,
 revenue, margins, EPS, notes and raw figures are absurd, a later vintage with planted texts, figures, window start and an excluded
-year, and a later EPS guide for every year guided before CUTOFF and for the cutoff's year and the next; a CLOUD event
+year, and a later EPS guide for every year guided before CUTOFF and for the cutoff's year and the next (from OKE 2014-2017 also a point
+guide, a pro forma guide, the vintage's theme words, a computed net margin and a later distribution); a CLOUD event
 from a later 10-K, as for every live theme), all dated after CUTOFF and filled with absurd values, and multiplies every price of the ticker and
 the S&P 500 from CUTOFF on by 10. Run it on a clean working tree (commit first). Exit code 0 means no model
 before CUTOFF changed.
@@ -490,7 +491,8 @@ PLANT = {"ACN": dict(quarter="Q9 FY99", revenue_lc=-60, margin_bp=-999, fy_eps_g
                      diluted_shares_m=1.0, sales_note="PLANTED", nm_note="PLANTED", dist_note="PLANTED", margin_note="PLANTED",
                      eps_note="PLANTED", cash_note="PLANTED", next_print="PLANTED", source_title="PLANTED", rows={"PLANTED": "PLANTED"},
                      raw=dict(rev_m=4, rev_prior_m=10, nm_m=1, nm_prior_m=10, oi_m=-2, oi_prior_m=5, pti_m=-2, pti_prior_m=5,
-                              dist_m=-99, dist_prior_m=99, eps_q=0.01, eps_q_prior=9.99, dil_sh_m=1.0))}.get(TICKER, {})   # CHTR: none (the gate test below)
+                              dist_m=-99, dist_prior_m=99, eps_q=0.01, eps_q_prior=9.99, dil_sh_m=1.0,
+                              cost_m=3, cost_prior_m=0))}.get(TICKER, {})   # OKE: net margin as revenues less cost (OKE 2014-2017)   # CHTR: none (the gate test below)
 # LOW and AAPL guides carry more fields than UNP's: plant every one the builder reads (NKE's are words only)
 GUIDE_PLANT = {"LOW": dict(comps_guide=[-50, -40], op_margin_guide_bp=[-999, -999], margin_def="PLANTED", stores_guide=1,
                            store_opening_m=9999, fy_words="PLANTED",
@@ -1632,6 +1634,16 @@ try:
             f["eps_guides"].append({"fy": y, "published": later, "source": last["source"], "doc": "PLANTED", "words": True,
                                     "quote": "PLANTED"})
         v.update(eps_published={y: later for y in v["eps_normalized"]}, shares_published={y: later for y in v["diluted_shares_m"]})
+        # (OKE 2014-2017) a later point net income guide with its note and a later pro forma guide for every such year, the vintage's
+        # theme words, and a later distribution with an absurd factor
+        for y in sorted({g["fy"] for g in f["eps_guides"] if g["published"] < cutoff} | {int(cutoff[:4]), int(cutoff[:4]) + 1}):
+            f["eps_guides"].append({"fy": y, "published": later, "source": last["source"], "doc": "PLANTED", "ni_guide_m": [1, 1],
+                                    "ni_guide_note": "PLANTED", "shares_print": last["quarter"], "quote": "PLANTED"})
+            f["eps_guides"].append({"fy": y, "published": later, "source": last["source"], "doc": "PLANTED", "pro_forma_ni_m": [1, 2],
+                                    "pro_forma_note": "PLANTED", "quote": "PLANTED"})
+        v["theme_quotes"] = {k: "PLANTED" for k in ("ENERGY_TRANSITION_ghg", "ENERGY_TRANSITION_reserves", "CLOUD_words")}
+        f.setdefault("distributions", []).append({"effective": later, "yahoo_factor": 9.99, "source": last["source"], "kind": "PLANTED",
+                                                  "note": "PLANTED"})
     if TICKER == "LMT":    # absurd full-year actuals on the planted print, for the year after the latest vintage before CUTOFF, and a later
                            # vintage whose every text and figure the models quote is planted (LMT 2008-2009)
         v0 = max((x for x in f["history_vintages"] if x["published"] < cutoff), key=lambda x: x["published"])
