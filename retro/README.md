@@ -32562,6 +32562,8 @@ Judgement calls that could carry hindsight:
 - DURABLE rather than CYCLICAL (label only), ENERGY_TRANSITION read as out of scope (text only, no class either way);
 - the parts of the filings listed as not read.
 
+The hindsight results for 2014-2017 are in `staging/retrospective/OKE/FINDINGS.md`, "OKE 2014-2017 (hindsight)": hypotheses, never inputs.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are

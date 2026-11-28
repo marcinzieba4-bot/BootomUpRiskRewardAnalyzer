@@ -318,212 +318,212 @@ Point-in-time columns use only information public on the as-of date. The last fo
 | 2013-12-20 | $59.75 | ONEOK Q3 2013 results | 2.00 | -2.05 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -55.1% | -69.7pp | -23.8% | ✓ |
 | 2013-12-27 | $60.88 | ONEOK Q3 2013 results | 2.00 | -2.05 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -46.2% | -62.4pp | -26.1% | ✓ |
 | 2013-12-31 | $62.18 | ONEOK Q3 2013 results | 2.00 | -2.05 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -48.6% | -64.4pp | -28.1% | ✓ |
-| 2014-01-03 | $61.32 | ONEOK Q3 2013 results | 2.00 | -2.03 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-01-10 | $64.36 | ONEOK Q3 2013 results | 2.00 | -2.05 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-01-17 | $67.13 | ONEOK Q3 2013 results | 2.00 | -2.05 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-01-24 | $65.36 | ONEOK Q3 2013 results | 2.00 | -2.05 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-01-31 | $68.49 | ONEOK Q3 2013 results | 2.00 | -2.05 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-02-07 | $59.08 | ONEOK Q3 2013 results | 2.00 | -2.05 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-02-14 | $59.96 | ONEOK Q3 2013 results | 2.00 | -2.05 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-02-21 | $60.71 | ONEOK Q3 2013 results | 2.00 | -2.05 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-02-26 | $59.04 | ONEOK Q4 2013 results | 2.00 | -2.12 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-03-07 | $58.96 | ONEOK Q4 2013 results | 2.00 | -2.12 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-03-14 | $58.80 | ONEOK Q4 2013 results | 2.00 | -2.15 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-03-21 | $59.43 | ONEOK Q4 2013 results | 2.00 | -2.15 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-03-28 | $58.49 | ONEOK Q4 2013 results | 2.00 | -2.15 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-04-04 | $59.77 | ONEOK Q4 2013 results | 2.00 | -2.15 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-04-11 | $58.51 | ONEOK Q4 2013 results | 2.00 | -2.28 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-04-17 | $61.03 | ONEOK Q4 2013 results | 2.00 | -2.28 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-04-25 | $62.69 | ONEOK Q4 2013 results | 2.00 | -2.28 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-05-02 | $63.18 | ONEOK Q4 2013 results | 2.00 | -2.28 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-05-08 | $62.94 | ONEOK Q1 2014 results | 2.50 | -1.45 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-05-16 | $62.50 | ONEOK Q1 2014 results | 2.50 | -1.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-05-23 | $64.81 | ONEOK Q1 2014 results | 2.50 | -1.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-05-30 | $64.49 | ONEOK Q1 2014 results | 2.50 | -1.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-06-06 | $65.89 | ONEOK Q1 2014 results | 2.50 | -1.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-06-13 | $65.15 | ONEOK Q1 2014 results | 2.50 | -1.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-06-20 | $66.34 | ONEOK Q1 2014 results | 2.50 | -1.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-06-27 | $67.52 | ONEOK Q1 2014 results | 2.50 | -1.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-07-03 | $67.61 | ONEOK Q1 2014 results | 2.50 | -1.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-07-11 | $66.69 | ONEOK Q1 2014 results | 2.50 | -1.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-07-18 | $66.48 | ONEOK Q1 2014 results | 2.50 | -1.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-07-25 | $66.83 | ONEOK Q1 2014 results | 2.50 | -1.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-08-01 | $63.94 | ONEOK Q1 2014 results | 2.50 | -1.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-08-07 | $62.03 | ONEOK Q2 2014 results | 2.35 | -1.82 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-08-15 | $66.45 | ONEOK Q2 2014 results | 2.35 | -1.82 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-08-22 | $67.50 | ONEOK Q2 2014 results | 2.35 | -1.82 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-08-29 | $70.20 | ONEOK Q2 2014 results | 2.35 | -1.82 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-09-05 | $70.94 | ONEOK Q2 2014 results | 2.35 | -1.82 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-09-12 | $67.62 | ONEOK Q2 2014 results | 2.35 | -1.82 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-09-19 | $68.41 | ONEOK Q2 2014 results | 2.35 | -1.82 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-09-26 | $66.17 | ONEOK Q2 2014 results | 2.35 | -1.82 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-10-03 | $64.25 | ONEOK Q2 2014 results | 2.35 | -1.82 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-10-10 | $58.33 | ONEOK Q2 2014 results | 2.35 | -1.80 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-10-17 | $57.36 | ONEOK Q2 2014 results | 2.35 | -1.80 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-10-24 | $61.01 | ONEOK Q2 2014 results | 2.35 | -1.80 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-10-31 | $58.94 | ONEOK Q2 2014 results | 2.35 | -1.82 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-11-06 | $55.95 | ONEOK Q3 2014 results | 2.35 | -1.72 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-11-14 | $55.92 | ONEOK Q3 2014 results | 2.35 | -1.72 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-11-21 | $58.42 | ONEOK Q3 2014 results | 2.35 | -1.75 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-11-28 | $54.16 | ONEOK Q3 2014 results | 2.35 | -1.75 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-12-05 | $52.50 | ONEOK Q3 2014 results | 2.35 | -1.75 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-12-12 | $44.86 | ONEOK Q3 2014 results | 2.35 | -1.46 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-12-19 | $49.54 | ONEOK Q3 2014 results | 2.35 | -1.75 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2014-12-26 | $49.86 | ONEOK Q3 2014 results | 2.35 | -1.75 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-01-02 | $49.92 | ONEOK Q3 2014 results | 2.35 | -1.75 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-01-09 | $43.72 | ONEOK Q3 2014 results | 2.35 | -1.41 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-01-16 | $42.89 | ONEOK Q3 2014 results | 2.35 | -1.37 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-01-23 | $44.06 | ONEOK Q3 2014 results | 2.35 | -1.42 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-01-30 | $44.03 | ONEOK Q3 2014 results | 2.35 | -1.41 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-02-06 | $46.88 | ONEOK Q3 2014 results | 2.35 | -1.55 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-02-13 | $47.32 | ONEOK Q3 2014 results | 2.35 | -1.57 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-02-20 | $47.67 | ONEOK Q3 2014 results | 2.35 | -1.59 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-02-25 | $45.39 | ONEOK Q4 2014 results | 2.35 | -0.54 | 4.81x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-03-06 | $47.13 | ONEOK Q4 2014 results | 2.35 | -0.62 | 6.28x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-03-13 | $44.87 | ONEOK Q4 2014 results | 2.35 | -0.51 | 4.48x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-03-20 | $47.37 | ONEOK Q4 2014 results | 2.35 | -0.62 | 6.54x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-03-27 | $47.05 | ONEOK Q4 2014 results | 2.35 | -0.60 | 6.19x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-04-02 | $48.07 | ONEOK Q4 2014 results | 2.35 | -0.65 | 7.43x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-04-10 | $48.25 | ONEOK Q4 2014 results | 2.35 | -0.66 | 7.70x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-04-17 | $49.54 | ONEOK Q4 2014 results | 2.35 | -0.71 | 10.21x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-04-24 | $49.23 | ONEOK Q4 2014 results | 2.35 | -0.70 | 9.48x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-05-01 | $48.66 | ONEOK Q4 2014 results | 2.35 | -0.67 | 8.36x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-05-07 | $43.92 | ONEOK Q1 2015 results | 1.95 | -0.93 | 3.96x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-05-15 | $45.69 | ONEOK Q1 2015 results | 1.95 | -1.01 | 5.02x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-05-22 | $44.15 | ONEOK Q1 2015 results | 1.95 | -0.93 | 4.08x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-05-29 | $41.92 | ONEOK Q1 2015 results | 1.95 | -0.85 | 3.14x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-06-05 | $39.89 | ONEOK Q1 2015 results | 1.95 | -0.76 | 2.54x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-06-12 | $38.83 | ONEOK Q1 2015 results | 1.95 | -0.72 | 2.30x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-06-19 | $39.04 | ONEOK Q1 2015 results | 1.95 | -0.72 | 2.34x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-06-26 | $39.92 | ONEOK Q1 2015 results | 1.95 | -0.76 | 2.55x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-07-02 | $39.22 | ONEOK Q1 2015 results | 1.95 | -0.73 | 2.38x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-07-10 | $39.54 | ONEOK Q1 2015 results | 1.95 | -0.74 | 2.46x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-07-17 | $40.39 | ONEOK Q1 2015 results | 1.95 | -0.78 | 2.67x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-07-24 | $37.68 | ONEOK Q1 2015 results | 1.95 | -0.67 | 2.06x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-07-31 | $37.79 | ONEOK Q1 2015 results | 1.95 | -0.68 | 2.08x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2015-08-06 | $35.31 | ONEOK Q2 2015 results | 2.30 | -0.18 | 1.68x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2015-08-14 | $36.28 | ONEOK Q2 2015 results | 2.30 | -0.22 | 1.82x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
-| 2015-08-21 | $34.13 | ONEOK Q2 2015 results | 2.30 | -0.14 | 1.52x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2015-08-28 | $35.63 | ONEOK Q2 2015 results | 2.30 | -0.19 | 1.72x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2015-09-04 | $35.40 | ONEOK Q2 2015 results | 2.30 | -0.19 | 1.69x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2015-09-11 | $35.19 | ONEOK Q2 2015 results | 2.30 | -0.18 | 1.66x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2015-09-18 | $35.74 | ONEOK Q2 2015 results | 2.30 | -0.20 | 1.74x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2015-09-25 | $35.19 | ONEOK Q2 2015 results | 2.30 | -0.17 | 1.66x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2015-10-02 | $34.60 | ONEOK Q2 2015 results | 2.30 | -0.15 | 1.58x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2015-10-09 | $39.58 | ONEOK Q2 2015 results | 2.30 | -0.35 | 2.47x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2015-10-16 | $38.83 | ONEOK Q2 2015 results | 2.30 | -0.32 | 2.30x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2015-10-23 | $36.23 | ONEOK Q2 2015 results | 2.30 | -0.21 | 1.81x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
-| 2015-10-30 | $33.92 | ONEOK Q2 2015 results | 2.30 | -0.12 | 1.49x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2015-11-05 | $31.37 | ONEOK Q3 2015 results | 2.10 | -0.29 | 1.21x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2015-11-13 | $28.49 | ONEOK Q3 2015 results | 2.10 | -0.19 | 0.96x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2015-11-20 | $28.60 | ONEOK Q3 2015 results | 2.10 | -0.19 | 0.97x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2015-11-27 | $29.46 | ONEOK Q3 2015 results | 2.10 | -0.23 | 1.04x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2015-12-04 | $24.80 | ONEOK Q3 2015 results | 2.10 | -0.02 | 0.71x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2015-12-11 | $20.31 | ONEOK Q3 2015 results | 2.10 | +0.37 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2015-12-18 | $18.93 | ONEOK Q3 2015 results | 2.10 | +0.42 | 0.43x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2015-12-24 | $24.12 | ONEOK Q3 2015 results | 2.10 | +0.01 | 0.67x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2015-12-31 | $24.66 | ONEOK Q3 2015 results | 2.10 | +0.18 | 0.70x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2016-01-08 | $23.05 | ONEOK Q3 2015 results | 2.10 | +0.07 | 0.62x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2016-01-15 | $21.94 | ONEOK Q3 2015 results | 2.10 | +0.11 | 0.56x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2016-01-22 | $25.10 | ONEOK Q3 2015 results | 2.10 | -0.04 | 0.73x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2016-01-29 | $24.91 | ONEOK Q3 2015 results | 2.10 | -0.04 | 0.72x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2016-02-05 | $25.54 | ONEOK Q3 2015 results | 2.10 | -0.07 | 0.76x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2016-02-12 | $20.18 | ONEOK Q3 2015 results | 2.10 | +0.37 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2016-02-19 | $20.66 | ONEOK Q3 2015 results | 2.10 | +0.35 | 0.50x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2016-02-24 | $21.52 | ONEOK Q4 2015 results | 1.85 | +0.35 | 0.42x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2016-03-04 | $26.36 | ONEOK Q4 2015 results | 1.85 | -0.11 | 0.62x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2016-03-11 | $28.31 | ONEOK Q4 2015 results | 1.85 | -0.21 | 0.71x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2016-03-18 | $30.82 | ONEOK Q4 2015 results | 1.85 | -0.33 | 0.86x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2016-03-24 | $28.68 | ONEOK Q4 2015 results | 1.85 | -0.23 | 0.73x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2016-04-01 | $28.73 | ONEOK Q4 2015 results | 1.85 | -0.23 | 0.74x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2016-04-08 | $29.99 | ONEOK Q4 2015 results | 1.85 | -0.29 | 0.81x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
-| 2016-04-15 | $31.67 | ONEOK Q4 2015 results | 1.85 | -0.36 | 0.91x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2016-04-22 | $35.81 | ONEOK Q4 2015 results | 1.85 | -0.49 | 1.22x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2016-04-29 | $36.15 | ONEOK Q4 2015 results | 1.85 | -0.60 | 1.25x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
-| 2016-05-05 | $38.96 | ONEOK Q1 2016 results | 2.65 | +0.42 | 1.54x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2016-05-13 | $41.04 | ONEOK Q1 2016 results | 2.65 | +0.32 | 1.81x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2016-05-20 | $42.04 | ONEOK Q1 2016 results | 2.65 | +0.27 | 1.95x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2016-05-27 | $42.73 | ONEOK Q1 2016 results | 2.65 | +0.24 | 2.07x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | - | - | - | - |
-| 2016-06-03 | $44.03 | ONEOK Q1 2016 results | 2.65 | +0.18 | 2.30x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-06-10 | $45.19 | ONEOK Q1 2016 results | 2.65 | +0.11 | 2.54x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-06-17 | $45.57 | ONEOK Q1 2016 results | 2.65 | +0.10 | 2.63x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-06-24 | $45.82 | ONEOK Q1 2016 results | 2.65 | +0.08 | 2.69x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-07-01 | $47.57 | ONEOK Q1 2016 results | 2.65 | -0.00 | 3.17x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-07-08 | $47.36 | ONEOK Q1 2016 results | 2.65 | +0.02 | 3.11x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-07-15 | $48.12 | ONEOK Q1 2016 results | 2.65 | -0.03 | 3.35x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2016-07-22 | $46.05 | ONEOK Q1 2016 results | 2.65 | +0.08 | 2.75x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-07-29 | $44.79 | ONEOK Q1 2016 results | 2.65 | +0.14 | 2.45x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-08-04 | $45.00 | ONEOK Q2 2016 results | 2.30 | -0.18 | 2.35x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-08-12 | $46.85 | ONEOK Q2 2016 results | 2.30 | -0.27 | 2.76x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2016-08-19 | $49.71 | ONEOK Q2 2016 results | 2.30 | -0.45 | 3.64x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2016-08-26 | $46.98 | ONEOK Q2 2016 results | 2.30 | -0.29 | 2.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2016-09-02 | $48.26 | ONEOK Q2 2016 results | 2.30 | -0.36 | 3.15x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2016-09-09 | $48.81 | ONEOK Q2 2016 results | 2.30 | -0.39 | 3.32x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2016-09-16 | $46.08 | ONEOK Q2 2016 results | 2.30 | -0.23 | 2.58x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-09-23 | $48.62 | ONEOK Q2 2016 results | 2.30 | -0.38 | 3.26x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2016-09-30 | $51.39 | ONEOK Q2 2016 results | 2.30 | -0.66 | 4.37x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2016-10-07 | $49.36 | ONEOK Q2 2016 results | 2.30 | -0.42 | 3.51x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2016-10-14 | $50.13 | ONEOK Q2 2016 results | 2.30 | -0.48 | 3.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2016-10-21 | $50.63 | ONEOK Q2 2016 results | 2.30 | -0.52 | 4.01x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2016-10-28 | $48.18 | ONEOK Q2 2016 results | 2.30 | -0.35 | 3.12x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | - | - | - | - |
-| 2016-11-03 | $46.44 | ONEOK Q3 2016 results | 2.15 | +0.52 | 0.87x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
-| 2016-11-11 | $47.92 | ONEOK Q3 2016 results | 2.15 | +0.46 | 0.93x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2016-11-18 | $50.42 | ONEOK Q3 2016 results | 2.15 | +0.38 | 1.04x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2016-11-25 | $53.75 | ONEOK Q3 2016 results | 2.15 | +0.23 | 1.21x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2016-12-02 | $54.69 | ONEOK Q3 2016 results | 2.15 | +0.16 | 1.26x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2016-12-09 | $57.01 | ONEOK Q3 2016 results | 2.15 | +0.02 | 1.41x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2016-12-16 | $58.42 | ONEOK Q3 2016 results | 2.15 | -0.16 | 1.50x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | - | - | - | - |
-| 2016-12-23 | $58.69 | ONEOK Q3 2016 results | 2.15 | -0.06 | 1.52x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2016-12-30 | $57.41 | ONEOK Q3 2016 results | 2.15 | +0.01 | 1.43x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2017-01-06 | $57.90 | ONEOK Q3 2016 results | 2.15 | -0.01 | 1.47x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2017-01-13 | $56.31 | ONEOK Q3 2016 results | 2.15 | +0.18 | 1.36x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2017-01-20 | $56.59 | ONEOK Q3 2016 results | 2.15 | +0.17 | 1.38x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2017-01-27 | $54.91 | ONEOK Q3 2016 results | 2.15 | +0.28 | 1.28x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2017-02-03 | $56.45 | ONEOK Q3 2016 results | 2.15 | +0.18 | 1.37x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | - | - | - | - |
-| 2017-02-10 | $55.31 | ONEOK Q3 2016 results | 2.15 | +0.24 | 1.30x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | - | - | - | - |
-| 2017-02-17 | $53.64 | ONEOK Q3 2016 results | 2.15 | +0.36 | 1.21x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2017-02-24 | $53.16 | ONEOK Q3 2016 results | 2.15 | +0.39 | 1.18x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
-| 2017-03-01 | $55.39 | ONEOK Q4 2016 results | 2.60 | +0.97 | 0.89x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2017-03-10 | $54.33 | ONEOK Q4 2016 results | 2.60 | +1.00 | 0.86x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2017-03-17 | $52.82 | ONEOK Q4 2016 results | 2.60 | +1.06 | 0.81x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2017-03-24 | $53.10 | ONEOK Q4 2016 results | 2.60 | +1.05 | 0.82x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2017-03-31 | $55.44 | ONEOK Q4 2016 results | 2.60 | +0.97 | 0.89x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2017-04-07 | $56.19 | ONEOK Q4 2016 results | 2.60 | +0.85 | 0.92x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2017-04-13 | $54.62 | ONEOK Q4 2016 results | 2.60 | +1.00 | 0.86x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2017-04-21 | $53.53 | ONEOK Q4 2016 results | 2.60 | +1.03 | 0.83x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2017-04-28 | $52.61 | ONEOK Q4 2016 results | 2.60 | +1.07 | 0.80x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2017-05-04 | $49.34 | ONEOK Q1 2017 results | 1.95 | +0.68 | 0.47x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2017-05-12 | $51.00 | ONEOK Q1 2017 results | 1.95 | +0.64 | 0.50x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2017-05-19 | $51.43 | ONEOK Q1 2017 results | 1.95 | +0.63 | 0.51x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2017-05-26 | $51.69 | ONEOK Q1 2017 results | 1.95 | +0.62 | 0.51x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2017-06-02 | $49.55 | ONEOK Q1 2017 results | 1.95 | +0.68 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2017-06-09 | $49.45 | ONEOK Q1 2017 results | 1.95 | +0.69 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2017-06-16 | $50.97 | ONEOK Q1 2017 results | 1.95 | +0.64 | 0.50x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2017-06-23 | $49.19 | ONEOK Q1 2017 results | 1.95 | +0.69 | 0.47x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2017-06-30 | $52.16 | ONEOK Q1 2017 results | 1.95 | +0.62 | 0.52x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2017-07-07 | $51.69 | ONEOK Q1 2017 results | 1.95 | +0.62 | 0.51x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2017-07-14 | $53.16 | ONEOK Q1 2017 results | 1.95 | +0.58 | 0.54x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2017-07-21 | $54.45 | ONEOK Q1 2017 results | 1.95 | +0.55 | 0.56x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2017-07-28 | $56.46 | ONEOK Q1 2017 results | 1.95 | +0.40 | 0.59x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | - | - | - | - |
-| 2017-08-03 | $53.85 | ONEOK Q2 2017 results | 1.95 | +0.92 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2017-08-11 | $52.41 | ONEOK Q2 2017 results | 1.95 | +1.13 | 0.31x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2017-08-18 | $50.93 | ONEOK Q2 2017 results | 1.95 | +1.15 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2017-08-25 | $53.66 | ONEOK Q2 2017 results | 1.95 | +0.92 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2017-09-01 | $54.63 | ONEOK Q2 2017 results | 1.95 | +0.89 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2017-09-08 | $56.22 | ONEOK Q2 2017 results | 1.95 | +0.86 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2017-09-15 | $56.20 | ONEOK Q2 2017 results | 1.95 | +0.86 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2017-09-22 | $54.70 | ONEOK Q2 2017 results | 1.95 | +0.89 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2017-09-29 | $55.41 | ONEOK Q2 2017 results | 1.95 | +0.88 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2017-10-06 | $56.19 | ONEOK Q2 2017 results | 1.95 | +0.86 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2017-10-13 | $56.47 | ONEOK Q2 2017 results | 1.95 | +0.86 | 0.35x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2017-10-20 | $56.00 | ONEOK Q2 2017 results | 1.95 | +0.87 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2017-10-27 | $54.08 | ONEOK Q2 2017 results | 1.95 | +0.91 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | - | - | - | - |
-| 2017-11-02 | $53.35 | ONEOK Q3 2017 results | 2.00 | +0.41 | 1.01x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2017-11-10 | $52.40 | ONEOK Q3 2017 results | 2.00 | +0.44 | 0.98x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2017-11-17 | $50.67 | ONEOK Q3 2017 results | 2.00 | +0.50 | 0.91x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | - | - | - | - |
-| 2017-11-24 | $51.04 | ONEOK Q3 2017 results | 2.00 | +0.49 | 0.92x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | - | - | - | - |
-| 2017-12-01 | $52.11 | ONEOK Q3 2017 results | 2.00 | +0.45 | 0.96x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2017-12-08 | $53.01 | ONEOK Q3 2017 results | 2.00 | +0.42 | 1.00x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2017-12-15 | $52.16 | ONEOK Q3 2017 results | 2.00 | +0.45 | 0.97x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2017-12-22 | $53.21 | ONEOK Q3 2017 results | 2.00 | +0.41 | 1.01x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
-| 2017-12-29 | $53.45 | ONEOK Q3 2017 results | 2.00 | +0.41 | 1.02x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | - | - | - | - |
+| 2014-01-03 | $61.32 | ONEOK Q3 2013 results | 2.00 | -2.03 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -45.6% | -61.5pp | -27.4% | ✓ |
+| 2014-01-10 | $64.36 | ONEOK Q3 2013 results | 2.00 | -2.05 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -51.0% | -59.6pp | -31.5% | ✓ |
+| 2014-01-17 | $67.13 | ONEOK Q3 2013 results | 2.00 | -2.05 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -54.9% | -61.6pp | -35.0% | ✓ |
+| 2014-01-24 | $65.36 | ONEOK Q3 2013 results | 2.00 | -2.05 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -48.2% | -59.2pp | -33.9% | ✓ |
+| 2014-01-31 | $68.49 | ONEOK Q3 2013 results | 2.00 | -2.05 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -49.8% | -63.1pp | -37.6% | ✓ |
+| 2014-02-07 | $59.08 | ONEOK Q3 2013 results | 2.00 | -2.05 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -48.7% | -57.8pp | -37.4% | ✓ |
+| 2014-02-14 | $59.96 | ONEOK Q3 2013 results | 2.00 | -2.05 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -58.4% | -64.2pp | -39.1% | ✓ |
+| 2014-02-21 | $60.71 | ONEOK Q3 2013 results | 2.00 | -2.05 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -58.1% | -66.9pp | -40.6% | ✓ |
+| 2014-02-26 | $59.04 | ONEOK Q4 2013 results | 2.00 | -2.12 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -52.9% | -62.8pp | -39.6% | ✓ |
+| 2014-03-07 | $58.96 | ONEOK Q4 2013 results | 2.00 | -2.12 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -45.0% | -55.9pp | -40.4% | ✓ |
+| 2014-03-14 | $58.80 | ONEOK Q4 2013 results | 2.00 | -2.15 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -44.0% | -58.0pp | -40.8% | ✓ |
+| 2014-03-21 | $59.43 | ONEOK Q4 2013 results | 2.00 | -2.15 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -42.0% | -56.4pp | -42.0% | ✓ |
+| 2014-03-28 | $58.49 | ONEOK Q4 2013 results | 2.00 | -2.15 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -43.4% | -57.4pp | -41.7% | ✓ |
+| 2014-04-04 | $59.77 | ONEOK Q4 2013 results | 2.00 | -2.15 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -44.6% | -59.6pp | -43.5% | ✓ |
+| 2014-04-11 | $58.51 | ONEOK Q4 2013 results | 2.00 | -2.28 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -40.5% | -57.4pp | -42.9% | ✓ |
+| 2014-04-17 | $61.03 | ONEOK Q4 2013 results | 2.00 | -2.28 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -40.3% | -56.2pp | -45.8% | ✓ |
+| 2014-04-25 | $62.69 | ONEOK Q4 2013 results | 2.00 | -2.28 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -36.0% | -52.4pp | -47.7% | ✓ |
+| 2014-05-02 | $63.18 | ONEOK Q4 2013 results | 2.00 | -2.28 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -35.4% | -50.4pp | -48.5% | ✓ |
+| 2014-05-08 | $62.94 | ONEOK Q1 2014 results | 2.50 | -1.45 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -29.1% | -43.2pp | -48.6% | ✓ |
+| 2014-05-16 | $62.50 | ONEOK Q1 2014 results | 2.50 | -1.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -25.4% | -39.7pp | -48.3% | ✓ |
+| 2014-05-23 | $64.81 | ONEOK Q1 2014 results | 2.50 | -1.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -28.3% | -40.4pp | -50.2% | ✓ |
+| 2014-05-30 | $64.49 | ONEOK Q1 2014 results | 2.50 | -1.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -26.3% | -39.7pp | -50.0% | ✓ |
+| 2014-06-06 | $65.89 | ONEOK Q1 2014 results | 2.50 | -1.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -24.2% | -36.6pp | -51.0% | ✓ |
+| 2014-06-13 | $65.15 | ONEOK Q1 2014 results | 2.50 | -1.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -23.6% | -35.2pp | -50.2% | ✓ |
+| 2014-06-20 | $66.34 | ONEOK Q1 2014 results | 2.50 | -1.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -23.3% | -33.7pp | -50.9% | ✓ |
+| 2014-06-27 | $67.52 | ONEOK Q1 2014 results | 2.50 | -1.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -26.8% | -33.0pp | -51.6% | ✓ |
+| 2014-07-03 | $67.61 | ONEOK Q1 2014 results | 2.50 | -1.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -22.5% | -32.7pp | -51.5% | ✓ |
+| 2014-07-11 | $66.69 | ONEOK Q1 2014 results | 2.50 | -1.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -21.6% | -34.4pp | -50.6% | ✓ |
+| 2014-07-18 | $66.48 | ONEOK Q1 2014 results | 2.50 | -1.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -21.0% | -34.7pp | -50.2% | ✓ |
+| 2014-07-25 | $66.83 | ONEOK Q1 2014 results | 2.50 | -1.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -24.8% | -38.6pp | -50.2% | ✓ |
+| 2014-08-01 | $63.94 | ONEOK Q1 2014 results | 2.50 | -1.47 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -26.1% | -43.2pp | -47.8% | ✓ |
+| 2014-08-07 | $62.03 | ONEOK Q2 2014 results | 2.35 | -1.82 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -19.8% | -38.4pp | -46.0% | ✓ |
+| 2014-08-15 | $66.45 | ONEOK Q2 2014 results | 2.35 | -1.82 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -22.3% | -38.5pp | -49.2% | ✓ |
+| 2014-08-22 | $67.50 | ONEOK Q2 2014 results | 2.35 | -1.82 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -21.6% | -35.5pp | -49.6% | ✓ |
+| 2014-08-29 | $70.20 | ONEOK Q2 2014 results | 2.35 | -1.82 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -25.6% | -38.6pp | -51.1% | ✓ |
+| 2014-09-05 | $70.94 | ONEOK Q2 2014 results | 2.35 | -1.82 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -25.1% | -37.9pp | -51.4% | ✓ |
+| 2014-09-12 | $67.62 | ONEOK Q2 2014 results | 2.35 | -1.82 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -19.9% | -32.8pp | -48.6% | ✓ |
+| 2014-09-19 | $68.41 | ONEOK Q2 2014 results | 2.35 | -1.82 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -23.6% | -34.2pp | -48.8% | ✓ |
+| 2014-09-26 | $66.17 | ONEOK Q2 2014 results | 2.35 | -1.82 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -18.8% | -31.4pp | -46.7% | ✓ |
+| 2014-10-03 | $64.25 | ONEOK Q2 2014 results | 2.35 | -1.82 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -12.9% | -27.0pp | -44.6% | ✓ |
+| 2014-10-10 | $58.33 | ONEOK Q2 2014 results | 2.35 | -1.80 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -5.3% | -23.3pp | -38.6% | ✓ |
+| 2014-10-17 | $57.36 | ONEOK Q2 2014 results | 2.35 | -1.80 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -5.3% | -22.5pp | -37.1% | ✓ |
+| 2014-10-24 | $61.01 | ONEOK Q2 2014 results | 2.35 | -1.80 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -9.5% | -23.2pp | -40.5% | ✓ |
+| 2014-10-31 | $58.94 | ONEOK Q2 2014 results | 2.35 | -1.82 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -10.0% | -19.6pp | -38.0% | ✓ |
+| 2014-11-06 | $55.95 | ONEOK Q3 2014 results | 2.35 | -1.72 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -7.9% | -14.7pp | -34.1% | ✓ |
+| 2014-11-14 | $55.92 | ONEOK Q3 2014 results | 2.35 | -1.72 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -5.8% | -16.0pp | -33.3% | ✓ |
+| 2014-11-21 | $58.42 | ONEOK Q3 2014 results | 2.35 | -1.75 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | -1.4% | -12.0pp | -35.5% | ✓ |
+| 2014-11-28 | $54.16 | ONEOK Q3 2014 results | 2.35 | -1.75 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +6.6% | -4.0pp | -29.7% | ✓ |
+| 2014-12-05 | $52.50 | ONEOK Q3 2014 results | 2.35 | -1.75 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +16.8% | +6.4pp | -26.4% | ✗ |
+| 2014-12-12 | $44.86 | ONEOK Q3 2014 results | 2.35 | -1.46 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +38.4% | +21.6pp | -12.3% | ✗ |
+| 2014-12-19 | $49.54 | ONEOK Q3 2014 results | 2.35 | -1.75 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +27.1% | +13.7pp | -19.1% | ✗ |
+| 2014-12-26 | $49.86 | ONEOK Q3 2014 results | 2.35 | -1.75 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +27.5% | +15.0pp | -18.5% | ✗ |
+| 2015-01-02 | $49.92 | ONEOK Q3 2014 results | 2.35 | -1.75 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +24.8% | +11.7pp | -17.5% | ✗ |
+| 2015-01-09 | $43.72 | ONEOK Q3 2014 results | 2.35 | -1.41 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +42.7% | +27.5pp | -4.3% | ✗ |
+| 2015-01-16 | $42.89 | ONEOK Q3 2014 results | 2.35 | -1.37 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +42.7% | +25.7pp | -1.0% | ✗ |
+| 2015-01-23 | $44.06 | ONEOK Q3 2014 results | 2.35 | -1.42 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +37.9% | +23.3pp | -2.2% | ✗ |
+| 2015-01-30 | $44.03 | ONEOK Q3 2014 results | 2.35 | -1.41 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +33.3% | +14.8pp | -0.8% | ✗ |
+| 2015-02-06 | $46.88 | ONEOK Q3 2014 results | 2.35 | -1.55 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.4% | +12.8pp | -5.5% | ✗ |
+| 2015-02-13 | $47.32 | ONEOK Q3 2014 results | 2.35 | -1.57 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +26.6% | +11.5pp | -5.0% | ✗ |
+| 2015-02-20 | $47.67 | ONEOK Q3 2014 results | 2.35 | -1.59 | infx | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +22.8% | +7.4pp | -4.6% | ✗ |
+| 2015-02-25 | $45.39 | ONEOK Q4 2014 results | 2.35 | -0.54 | 4.81x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +27.9% | +11.9pp | +1.4% | ✗ |
+| 2015-03-06 | $47.13 | ONEOK Q4 2014 results | 2.35 | -0.62 | 6.28x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +30.5% | +11.7pp | -0.8% | ✗ |
+| 2015-03-13 | $44.87 | ONEOK Q4 2014 results | 2.35 | -0.51 | 4.48x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +31.2% | +11.4pp | +5.4% | ✗ |
+| 2015-03-20 | $47.37 | ONEOK Q4 2014 results | 2.35 | -0.62 | 6.54x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +22.7% | +6.0pp | +0.8% | ✗ |
+| 2015-03-27 | $47.05 | ONEOK Q4 2014 results | 2.35 | -0.60 | 6.19x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +23.3% | +5.4pp | +2.3% | ✗ |
+| 2015-04-02 | $48.07 | ONEOK Q4 2014 results | 2.35 | -0.65 | 7.43x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +25.5% | +7.0pp | +1.2% | ✗ |
+| 2015-04-10 | $48.25 | ONEOK Q4 2014 results | 2.35 | -0.66 | 7.70x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +26.1% | +9.8pp | +1.9% | ✗ |
+| 2015-04-17 | $49.54 | ONEOK Q4 2014 results | 2.35 | -0.71 | 10.21x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +19.7% | +2.7pp | +0.2% | ✗ |
+| 2015-04-24 | $49.23 | ONEOK Q4 2014 results | 2.35 | -0.70 | 9.48x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +19.4% | +3.1pp | +1.6% | ✗ |
+| 2015-05-01 | $48.66 | ONEOK Q4 2014 results | 2.35 | -0.67 | 8.36x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +19.1% | +1.6pp | +3.5% | ✗ |
+| 2015-05-07 | $43.92 | ONEOK Q1 2015 results | 1.95 | -0.93 | 3.96x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +26.5% | +7.5pp | +15.3% | ✗ |
+| 2015-05-15 | $45.69 | ONEOK Q1 2015 results | 1.95 | -1.01 | 5.02x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +23.0% | +5.7pp | +11.3% | ✗ |
+| 2015-05-22 | $44.15 | ONEOK Q1 2015 results | 1.95 | -0.93 | 4.08x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +28.1% | +11.5pp | +15.6% | ✗ |
+| 2015-05-29 | $41.92 | ONEOK Q1 2015 results | 1.95 | -0.85 | 3.14x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +35.0% | +16.4pp | +22.2% | ✗ |
+| 2015-06-05 | $39.89 | ONEOK Q1 2015 results | 1.95 | -0.76 | 2.54x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +35.9% | +15.4pp | +28.6% | ✗ |
+| 2015-06-12 | $38.83 | ONEOK Q1 2015 results | 1.95 | -0.72 | 2.30x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +41.4% | +21.3pp | +32.3% | ✗ |
+| 2015-06-19 | $39.04 | ONEOK Q1 2015 results | 1.95 | -0.72 | 2.34x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +41.2% | +20.9pp | +31.9% | ✗ |
+| 2015-06-26 | $39.92 | ONEOK Q1 2015 results | 1.95 | -0.76 | 2.55x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +38.9% | +18.7pp | +29.1% | ✗ |
+| 2015-07-02 | $39.22 | ONEOK Q1 2015 results | 1.95 | -0.73 | 2.38x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +45.5% | +24.5pp | +31.6% | ✗ |
+| 2015-07-10 | $39.54 | ONEOK Q1 2015 results | 1.95 | -0.74 | 2.46x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +41.4% | +20.2pp | +30.7% | ✗ |
+| 2015-07-17 | $40.39 | ONEOK Q1 2015 results | 1.95 | -0.78 | 2.67x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +44.8% | +25.0pp | +28.2% | ✗ |
+| 2015-07-24 | $37.68 | ONEOK Q1 2015 results | 1.95 | -0.67 | 2.06x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +58.7% | +35.7pp | +37.8% | ✗ |
+| 2015-07-31 | $37.79 | ONEOK Q1 2015 results | 1.95 | -0.68 | 2.08x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +60.8% | +39.2pp | +38.0% | ✗ |
+| 2015-08-06 | $35.31 | ONEOK Q2 2015 results | 2.30 | -0.18 | 1.68x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +65.9% | +42.8pp | +48.3% | ✗ |
+| 2015-08-14 | $36.28 | ONEOK Q2 2015 results | 2.30 | -0.22 | 1.82x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +58.1% | +36.1pp | +44.7% | ✗ |
+| 2015-08-21 | $34.13 | ONEOK Q2 2015 results | 2.30 | -0.14 | 1.52x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +64.1% | +36.8pp | +53.9% | ✗ |
+| 2015-08-28 | $35.63 | ONEOK Q2 2015 results | 2.30 | -0.19 | 1.72x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +62.8% | +35.5pp | +47.8% | ✗ |
+| 2015-09-04 | $35.40 | ONEOK Q2 2015 results | 2.30 | -0.19 | 1.69x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +68.6% | +35.2pp | +49.1% | ✗ |
+| 2015-09-11 | $35.19 | ONEOK Q2 2015 results | 2.30 | -0.18 | 1.66x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +75.0% | +43.7pp | +50.3% | ✗ |
+| 2015-09-18 | $35.74 | ONEOK Q2 2015 results | 2.30 | -0.20 | 1.74x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +71.1% | +38.6pp | +48.5% | ✗ |
+| 2015-09-25 | $35.19 | ONEOK Q2 2015 results | 2.30 | -0.17 | 1.66x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +72.1% | +38.2pp | +51.2% | ✗ |
+| 2015-10-02 | $34.60 | ONEOK Q2 2015 results | 2.30 | -0.15 | 1.58x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +76.0% | +41.9pp | +54.1% | ✗ |
+| 2015-10-09 | $39.58 | ONEOK Q2 2015 results | 2.30 | -0.35 | 2.47x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +54.4% | +23.7pp | +35.0% | ✗ |
+| 2015-10-16 | $38.83 | ONEOK Q2 2015 results | 2.30 | -0.32 | 2.30x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +57.9% | +27.7pp | +38.0% | ✗ |
+| 2015-10-23 | $36.23 | ONEOK Q2 2015 results | 2.30 | -0.21 | 1.81x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +65.9% | +38.0pp | +48.2% | ✗ |
+| 2015-10-30 | $33.92 | ONEOK Q2 2015 results | 2.30 | -0.12 | 1.49x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +72.4% | +44.5pp | +58.5% | ✗ |
+| 2015-11-05 | $31.37 | ONEOK Q3 2015 results | 2.10 | -0.29 | 1.21x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +84.3% | +57.0pp | +71.8% | ✗ |
+| 2015-11-13 | $28.49 | ONEOK Q3 2015 results | 2.10 | -0.19 | 0.96x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +101.4% | +69.4pp | +89.5% | ✗ |
+| 2015-11-20 | $28.60 | ONEOK Q3 2015 results | 2.10 | -0.19 | 0.97x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +95.8% | +68.0pp | +88.8% | ✗ |
+| 2015-11-27 | $29.46 | ONEOK Q3 2015 results | 2.10 | -0.23 | 1.04x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +87.4% | +58.8pp | +83.2% | ✗ |
+| 2015-12-04 | $24.80 | ONEOK Q3 2015 results | 2.10 | -0.02 | 0.71x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +131.7% | +101.3pp | +117.4% | ✓ |
+| 2015-12-11 | $20.31 | ONEOK Q3 2015 results | 2.10 | +0.37 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +188.4% | +152.0pp | +165.0% | ✓ |
+| 2015-12-18 | $18.93 | ONEOK Q3 2015 results | 2.10 | +0.42 | 0.43x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +203.9% | +165.2pp | +183.8% | ✓ |
+| 2015-12-24 | $24.12 | ONEOK Q3 2015 results | 2.10 | +0.01 | 0.67x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +142.1% | +107.5pp | +122.3% | ✓ |
+| 2015-12-31 | $24.66 | ONEOK Q3 2015 results | 2.10 | +0.18 | 0.70x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +137.8% | +102.3pp | +117.1% | ✓ |
+| 2016-01-08 | $23.05 | ONEOK Q3 2015 results | 2.10 | +0.07 | 0.62x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +168.2% | +120.6pp | +132.1% | ✓ |
+| 2016-01-15 | $21.94 | ONEOK Q3 2015 results | 2.10 | +0.11 | 0.56x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +191.0% | +138.1pp | +143.8% | ✓ |
+| 2016-01-22 | $25.10 | ONEOK Q3 2015 results | 2.10 | -0.04 | 0.73x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +159.2% | +105.9pp | +113.4% | ✓ |
+| 2016-01-29 | $24.91 | ONEOK Q3 2015 results | 2.10 | -0.04 | 0.72x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +160.2% | +108.5pp | +115.4% | ✓ |
+| 2016-02-05 | $25.54 | ONEOK Q3 2015 results | 2.10 | -0.07 | 0.76x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +138.4% | +93.0pp | +110.3% | ✓ |
+| 2016-02-12 | $20.18 | ONEOK Q3 2015 results | 2.10 | +0.37 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +206.7% | +159.5pp | +166.3% | ✓ |
+| 2016-02-19 | $20.66 | ONEOK Q3 2015 results | 2.10 | +0.35 | 0.50x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +201.3% | +154.2pp | +160.3% | ✓ |
+| 2016-02-24 | $21.52 | ONEOK Q4 2015 results | 1.85 | +0.35 | 0.42x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +194.4% | +147.4pp | +150.1% | ✓ |
+| 2016-03-04 | $26.36 | ONEOK Q4 2015 results | 1.85 | -0.11 | 0.62x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +136.8% | +97.9pp | +104.4% | ✓ |
+| 2016-03-11 | $28.31 | ONEOK Q4 2015 results | 1.85 | -0.21 | 0.71x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +121.3% | +79.1pp | +90.4% | ✓ |
+| 2016-03-18 | $30.82 | ONEOK Q4 2015 results | 1.85 | -0.33 | 0.86x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +104.9% | +66.1pp | +75.2% | ✗ |
+| 2016-03-24 | $28.68 | ONEOK Q4 2015 results | 1.85 | -0.23 | 0.73x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +116.5% | +84.8pp | +88.5% | ✓ |
+| 2016-04-01 | $28.73 | ONEOK Q4 2015 results | 1.85 | -0.23 | 0.74x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +116.7% | +85.0pp | +88.3% | ✓ |
+| 2016-04-08 | $29.99 | ONEOK Q4 2015 results | 1.85 | -0.29 | 0.81x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +106.8% | +75.2pp | +80.5% | ✓ |
+| 2016-04-15 | $31.67 | ONEOK Q4 2015 results | 1.85 | -0.36 | 0.91x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +101.6% | +69.5pp | +71.1% | ✗ |
+| 2016-04-22 | $35.81 | ONEOK Q4 2015 results | 1.85 | -0.49 | 1.22x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +81.2% | +49.1pp | +51.6% | ✗ |
+| 2016-04-29 | $36.15 | ONEOK Q4 2015 results | 1.85 | -0.60 | 1.25x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +80.9% | +47.2pp | +50.5% | ✗ |
+| 2016-05-05 | $38.96 | ONEOK Q1 2016 results | 2.65 | +0.42 | 1.54x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +77.0% | +42.6pp | +40.2% | ✗ |
+| 2016-05-13 | $41.04 | ONEOK Q1 2016 results | 2.65 | +0.32 | 1.81x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +73.8% | +36.0pp | +33.8% | ✗ |
+| 2016-05-20 | $42.04 | ONEOK Q1 2016 results | 2.65 | +0.27 | 1.95x | AVOID | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +70.8% | +34.1pp | +31.3% | ✗ |
+| 2016-05-27 | $42.73 | ONEOK Q1 2016 results | 2.65 | +0.24 | 2.07x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 6/8 RICH | +67.1% | +33.2pp | +29.9% | ✗ |
+| 2016-06-03 | $44.03 | ONEOK Q1 2016 results | 2.65 | +0.18 | 2.30x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +68.1% | +33.5pp | +26.7% | ✗ |
+| 2016-06-10 | $45.19 | ONEOK Q1 2016 results | 2.65 | +0.11 | 2.54x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +63.7% | +26.8pp | +24.3% | ✗ |
+| 2016-06-17 | $45.57 | ONEOK Q1 2016 results | 2.65 | +0.10 | 2.63x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +60.8% | +22.0pp | +24.1% | ✗ |
+| 2016-06-24 | $45.82 | ONEOK Q1 2016 results | 2.65 | +0.08 | 2.69x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +64.8% | +24.9pp | +24.3% | ✗ |
+| 2016-07-01 | $47.57 | ONEOK Q1 2016 results | 2.65 | -0.00 | 3.17x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +58.4% | +24.6pp | +20.5% | ✗ |
+| 2016-07-08 | $47.36 | ONEOK Q1 2016 results | 2.65 | +0.02 | 3.11x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +62.0% | +28.0pp | +21.7% | ✗ |
+| 2016-07-15 | $48.12 | ONEOK Q1 2016 results | 2.65 | -0.03 | 3.35x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +59.8% | +25.9pp | +20.5% | ✗ |
+| 2016-07-22 | $46.05 | ONEOK Q1 2016 results | 2.65 | +0.08 | 2.75x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +63.8% | +30.7pp | +26.6% | ✗ |
+| 2016-07-29 | $44.79 | ONEOK Q1 2016 results | 2.65 | +0.14 | 2.45x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +68.9% | +34.8pp | +30.8% | ✗ |
+| 2016-08-04 | $45.00 | ONEOK Q2 2016 results | 2.30 | -0.18 | 2.35x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +62.7% | +27.3pp | +30.8% | ✗ |
+| 2016-08-12 | $46.85 | ONEOK Q2 2016 results | 2.30 | -0.27 | 2.76x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +59.3% | +25.3pp | +26.4% | ✗ |
+| 2016-08-19 | $49.71 | ONEOK Q2 2016 results | 2.30 | -0.45 | 3.64x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +47.3% | +12.5pp | +19.8% | ✗ |
+| 2016-08-26 | $46.98 | ONEOK Q2 2016 results | 2.30 | -0.29 | 2.79x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +55.8% | +19.1pp | +27.3% | ✗ |
+| 2016-09-02 | $48.26 | ONEOK Q2 2016 results | 2.30 | -0.36 | 3.15x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +48.4% | +11.1pp | +24.5% | ✗ |
+| 2016-09-09 | $48.81 | ONEOK Q2 2016 results | 2.30 | -0.39 | 3.32x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +46.6% | +7.3pp | +23.4% | ✗ |
+| 2016-09-16 | $46.08 | ONEOK Q2 2016 results | 2.30 | -0.23 | 2.58x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +56.5% | +16.2pp | +31.1% | ✗ |
+| 2016-09-23 | $48.62 | ONEOK Q2 2016 results | 2.30 | -0.38 | 3.26x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +53.9% | +14.2pp | +24.8% | ✗ |
+| 2016-09-30 | $51.39 | ONEOK Q2 2016 results | 2.30 | -0.66 | 4.37x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +43.1% | +4.1pp | +18.6% | ✗ |
+| 2016-10-07 | $49.36 | ONEOK Q2 2016 results | 2.30 | -0.42 | 3.51x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +50.6% | +12.2pp | +24.0% | ✗ |
+| 2016-10-14 | $50.13 | ONEOK Q2 2016 results | 2.30 | -0.48 | 3.80x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +41.1% | +7.0pp | +22.5% | ✗ |
+| 2016-10-21 | $50.63 | ONEOK Q2 2016 results | 2.30 | -0.52 | 4.01x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +45.2% | +11.5pp | +21.7% | ✗ |
+| 2016-10-28 | $48.18 | ONEOK Q2 2016 results | 2.30 | -0.35 | 3.12x | AVOID | QUALITY, PRICED FOR PERFECTION (RICH) | 8/8 RICH | +42.1% | +12.6pp | +28.3% | ✗ |
+| 2016-11-03 | $46.44 | ONEOK Q3 2016 results | 2.15 | +0.52 | 0.87x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +47.5% | +12.6pp | +33.5% | ✓ |
+| 2016-11-11 | $47.92 | ONEOK Q3 2016 results | 2.15 | +0.46 | 0.93x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +44.1% | +11.2pp | +29.9% | ✓ |
+| 2016-11-18 | $50.42 | ONEOK Q3 2016 results | 2.15 | +0.38 | 1.04x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +35.2% | +5.4pp | +23.8% | ✓ |
+| 2016-11-25 | $53.75 | ONEOK Q3 2016 results | 2.15 | +0.23 | 1.21x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +21.1% | -2.2pp | +16.5% | ✓ |
+| 2016-12-02 | $54.69 | ONEOK Q3 2016 results | 2.15 | +0.16 | 1.26x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +23.2% | -6.7pp | +14.8% | ✓ |
+| 2016-12-09 | $57.01 | ONEOK Q3 2016 results | 2.15 | +0.02 | 1.41x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +15.7% | -5.0pp | +10.4% | ✓ |
+| 2016-12-16 | $58.42 | ONEOK Q3 2016 results | 2.15 | -0.16 | 1.50x | WATCHLIST | QUALITY, PRICED FOR PERFECTION (RICH) | 7/8 RICH | +13.2% | -6.3pp | +8.0% | ✓ |
+| 2016-12-23 | $58.69 | ONEOK Q3 2016 results | 2.15 | -0.06 | 1.52x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +2.0% | -9.0pp | +7.6% | ✓ |
+| 2016-12-30 | $57.41 | ONEOK Q3 2016 results | 2.15 | +0.01 | 1.43x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +2.7% | -12.6pp | +10.0% | ✓ |
+| 2017-01-06 | $57.90 | ONEOK Q3 2016 results | 2.15 | -0.01 | 1.47x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +8.1% | -7.3pp | +9.1% | ✓ |
+| 2017-01-13 | $56.31 | ONEOK Q3 2016 results | 2.15 | +0.18 | 1.36x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +16.8% | -1.6pp | +12.2% | ✓ |
+| 2017-01-20 | $56.59 | ONEOK Q3 2016 results | 2.15 | +0.17 | 1.38x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +22.2% | +0.3pp | +11.7% | ✓ |
+| 2017-01-27 | $54.91 | ONEOK Q3 2016 results | 2.15 | +0.28 | 1.28x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +25.0% | +4.6pp | +15.2% | ✓ |
+| 2017-02-03 | $56.45 | ONEOK Q3 2016 results | 2.15 | +0.18 | 1.37x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 7/8 FAIR | +26.4% | +4.4pp | +12.3% | ✓ |
+| 2017-02-10 | $55.31 | ONEOK Q3 2016 results | 2.15 | +0.24 | 1.30x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 6/8 FAIR | +28.8% | +7.7pp | +14.9% | ✓ |
+| 2017-02-17 | $53.64 | ONEOK Q3 2016 results | 2.15 | +0.36 | 1.21x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +37.8% | +15.6pp | +18.9% | ✗ |
+| 2017-02-24 | $53.16 | ONEOK Q3 2016 results | 2.15 | +0.39 | 1.18x | WATCHLIST | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +39.4% | +17.3pp | +20.3% | ✗ |
+| 2017-03-01 | $55.39 | ONEOK Q4 2016 results | 2.60 | +0.97 | 0.89x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +30.1% | +9.1pp | +15.7% | ✓ |
+| 2017-03-10 | $54.33 | ONEOK Q4 2016 results | 2.60 | +1.00 | 0.86x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +32.1% | +12.5pp | +18.3% | ✓ |
+| 2017-03-17 | $52.82 | ONEOK Q4 2016 results | 2.60 | +1.06 | 0.81x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +38.3% | +15.4pp | +22.1% | ✓ |
+| 2017-03-24 | $53.10 | ONEOK Q4 2016 results | 2.60 | +1.05 | 0.82x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +41.7% | +17.9pp | +21.8% | ✓ |
+| 2017-03-31 | $55.44 | ONEOK Q4 2016 results | 2.60 | +0.97 | 0.89x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +37.2% | +13.1pp | +17.1% | ✓ |
+| 2017-04-07 | $56.19 | ONEOK Q4 2016 results | 2.60 | +0.85 | 0.92x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +36.6% | +9.6pp | +16.0% | ✓ |
+| 2017-04-13 | $54.62 | ONEOK Q4 2016 results | 2.60 | +1.00 | 0.86x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +40.6% | +11.5pp | +19.8% | ✓ |
+| 2017-04-21 | $53.53 | ONEOK Q4 2016 results | 2.60 | +1.03 | 0.83x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +40.8% | +12.8pp | +22.6% | ✓ |
+| 2017-04-28 | $52.61 | ONEOK Q4 2016 results | 2.60 | +1.07 | 0.80x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +42.9% | +15.4pp | +25.1% | ✓ |
+| 2017-05-04 | $49.34 | ONEOK Q1 2017 results | 1.95 | +0.68 | 0.47x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +48.7% | +21.3pp | +33.6% | ✓ |
+| 2017-05-12 | $51.00 | ONEOK Q1 2017 results | 1.95 | +0.64 | 0.50x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +44.5% | +19.7pp | +29.3% | ✓ |
+| 2017-05-19 | $51.43 | ONEOK Q1 2017 results | 1.95 | +0.63 | 0.51x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +45.1% | +20.9pp | +28.3% | ✓ |
+| 2017-05-26 | $51.69 | ONEOK Q1 2017 results | 1.95 | +0.62 | 0.51x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +39.5% | +18.4pp | +27.6% | ✓ |
+| 2017-06-02 | $49.55 | ONEOK Q1 2017 results | 1.95 | +0.68 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +41.4% | +24.6pp | +33.0% | ✓ |
+| 2017-06-09 | $49.45 | ONEOK Q1 2017 results | 1.95 | +0.69 | 0.48x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +46.5% | +24.2pp | +33.2% | ✓ |
+| 2017-06-16 | $50.97 | ONEOK Q1 2017 results | 1.95 | +0.64 | 0.50x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +39.1% | +16.3pp | +29.1% | ✓ |
+| 2017-06-23 | $49.19 | ONEOK Q1 2017 results | 1.95 | +0.69 | 0.47x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +53.3% | +28.1pp | +33.6% | ✓ |
+| 2017-06-30 | $52.16 | ONEOK Q1 2017 results | 1.95 | +0.62 | 0.52x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +44.3% | +18.9pp | +25.9% | ✓ |
+| 2017-07-07 | $51.69 | ONEOK Q1 2017 results | 1.95 | +0.62 | 0.51x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +48.5% | +20.9pp | +27.1% | ✓ |
+| 2017-07-14 | $53.16 | ONEOK Q1 2017 results | 1.95 | +0.58 | 0.54x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +46.3% | +19.6pp | +23.5% | ✓ |
+| 2017-07-21 | $54.45 | ONEOK Q1 2017 results | 1.95 | +0.55 | 0.56x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +37.7% | +13.2pp | +20.6% | ✓ |
+| 2017-07-28 | $56.46 | ONEOK Q1 2017 results | 1.95 | +0.40 | 0.59x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 7/8 CHEAP | +32.7% | +6.2pp | +16.2% | ✓ |
+| 2017-08-03 | $53.85 | ONEOK Q2 2017 results | 1.95 | +0.92 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +42.4% | +19.8pp | +21.9% | ✓ |
+| 2017-08-11 | $52.41 | ONEOK Q2 2017 results | 1.95 | +1.13 | 0.31x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +44.4% | +20.7pp | +25.2% | ✓ |
+| 2017-08-18 | $50.93 | ONEOK Q2 2017 results | 1.95 | +1.15 | 0.29x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +49.0% | +25.8pp | +28.9% | ✓ |
+| 2017-08-25 | $53.66 | ONEOK Q2 2017 results | 1.95 | +0.92 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +37.9% | +17.2pp | +22.4% | ✓ |
+| 2017-09-01 | $54.63 | ONEOK Q2 2017 results | 1.95 | +0.89 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +42.6% | +20.4pp | +20.4% | ✓ |
+| 2017-09-08 | $56.22 | ONEOK Q2 2017 results | 1.95 | +0.86 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +39.5% | +14.4pp | +17.1% | ✓ |
+| 2017-09-15 | $56.20 | ONEOK Q2 2017 results | 1.95 | +0.86 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +44.3% | +19.8pp | +17.4% | ✓ |
+| 2017-09-22 | $54.70 | ONEOK Q2 2017 results | 1.95 | +0.89 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +50.6% | +26.8pp | +20.9% | ✓ |
+| 2017-09-29 | $55.41 | ONEOK Q2 2017 results | 1.95 | +0.88 | 0.33x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +44.2% | +22.4pp | +19.6% | ✓ |
+| 2017-10-06 | $56.19 | ONEOK Q2 2017 results | 1.95 | +0.86 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +39.9% | +20.1pp | +18.1% | ✓ |
+| 2017-10-13 | $56.47 | ONEOK Q2 2017 results | 1.95 | +0.86 | 0.35x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +34.8% | +14.5pp | +17.6% | ✓ |
+| 2017-10-20 | $56.00 | ONEOK Q2 2017 results | 1.95 | +0.87 | 0.34x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +35.4% | +15.4pp | +18.6% | ✓ |
+| 2017-10-27 | $54.08 | ONEOK Q2 2017 results | 1.95 | +0.91 | 0.32x | BUY | COMPOUNDER AT LOW PRICE (CHEAP) | 8/8 CHEAP | +44.5% | +23.4pp | +23.0% | ✓ |
+| 2017-11-02 | $53.35 | ONEOK Q3 2017 results | 2.00 | +0.41 | 1.01x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +45.8% | +22.8pp | +25.0% | ✗ |
+| 2017-11-10 | $52.40 | ONEOK Q3 2017 results | 2.00 | +0.44 | 0.98x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +47.4% | +23.7pp | +27.5% | ✗ |
+| 2017-11-17 | $50.67 | ONEOK Q3 2017 results | 2.00 | +0.50 | 0.91x | ACCUMULATE | COMPOUNDER AT LOW PRICE (CHEAP) | 6/8 CHEAP | +54.1% | +29.1pp | +32.2% | ✓ |
+| 2017-11-24 | $51.04 | ONEOK Q3 2017 results | 2.00 | +0.49 | 0.92x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 4/8 FAIR | +53.6% | +30.1pp | +31.6% | ✗ |
+| 2017-12-01 | $52.11 | ONEOK Q3 2017 results | 2.00 | +0.45 | 0.96x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +49.3% | +26.5pp | +29.3% | ✗ |
+| 2017-12-08 | $53.01 | ONEOK Q3 2017 results | 2.00 | +0.42 | 1.00x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +47.8% | +25.3pp | +27.4% | ✗ |
+| 2017-12-15 | $52.16 | ONEOK Q3 2017 results | 2.00 | +0.45 | 0.97x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +53.3% | +30.8pp | +30.0% | ✗ |
+| 2017-12-22 | $53.21 | ONEOK Q3 2017 results | 2.00 | +0.41 | 1.01x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +54.0% | +30.1pp | +28.1% | ✗ |
+| 2017-12-29 | $53.45 | ONEOK Q3 2017 results | 2.00 | +0.41 | 1.02x | ACCUMULATE | QUALITY, NEUTRALLY VALUED (FAIR) | 5/8 FAIR | +54.3% | +29.3pp | +28.2% | ✗ |
