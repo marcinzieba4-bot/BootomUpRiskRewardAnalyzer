@@ -73,3 +73,116 @@ should miss the hurdle and lag it, FAIR sits between.
 - One stock and two years: the pattern "BASE on commodity revenues misreads a margin business" is a hypothesis to test on other
   midstream and distribution names, not a rule.
 
+# OKE 2010-2013 (hindsight)
+
+Patterns seen in `outcome.json` for the 209 weekly dates from 2010-01-08 to 2013-12-31. **Labels and hypotheses**: never feed them back into
+the method or the fact sheet. Scored only after the point-in-time build, validation outputs, README section and firewall result were
+committed and pushed (e59000592, 9fcac8124, 052f40fba, 7940d4dc3), on 2026-11-28; the 2008-2009 findings above were first opened then.
+Every date has its 6-month, 1-, 2- and 3-year horizons. Total returns include the dividends paid. "Call held" is `call_check_2y`: CHEAP
+should clear the 15%/yr hurdle (+32.2% over two years) or beat SPY, RICH should miss the hurdle and lag it, FAIR sits between. For the
+dates before 2014-02-03 the horizons cross the ONE Gas separation, which Yahoo records as an 11422:10000 factor: `retro_tool outcome`
+multiplies the later prices and dividends by it, so the ONE Gas shares count as reinvested in OKE at the distribution, not at their own
+later prices.
+
+## 2010 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID (2010-01-08 to 2010-01-08) | 1 | +100.9% | +100.9% to +100.9% | 1 | 1 | +54.2% | 0 |
+| class RICH, legacy tier WATCHLIST (2010-01-15 to 2010-12-31) | 6 | +70.1% | +60.2% to +106.6% | 6 | 6 | +58.8% | 0 |
+| class RICH, legacy tier ACCUMULATE (2010-01-29 to 2010-02-19) | 4 | +110.7% | +100.6% to +111.5% | 4 | 4 | +74.2% | 0 |
+| class CHEAP, legacy tier BUY (2010-02-24 to 2010-09-24) | 29 | +97.4% | +77.3% to +124.1% | 29 | 29 | +72.6% | 29 |
+| class CHEAP, legacy tier ACCUMULATE (2010-04-23 to 2010-10-01) | 3 | +99.1% | +72.5% to +120.6% | 3 | 3 | +69.5% | 3 |
+| class FAIR, legacy tier ACCUMULATE (2010-10-08 to 2010-11-19) | 6 | +97.4% | +89.0% to +113.3% | 6 | 6 | +72.1% | 0 |
+| class FAIR, legacy tier WATCHLIST (2010-11-12 to 2010-12-03) | 3 | +79.3% | +77.4% to +88.6% | 3 | 3 | +66.3% | 0 |
+| FY09E $2.75 (the Q3 2009 release's $2.65-2.85) (2010-01-08 to 2010-01-22) | 3 | +105.2% | +100.9% to +106.6% | 3 | 3 | +57.3% | 0 |
+| FY09E $2.87 (the 8-K of 2010-01-25's $2.85-2.89) (2010-01-29 to 2010-02-19) | 4 | +110.7% | +100.6% to +111.5% | 4 | 4 | +74.2% | 0 |
+| FY10E $2.982 (the 8-K of 2010-01-25's $300-335 million) (2010-02-24 to 2010-04-23) | 9 | +86.1% | +72.5% to +100.5% | 9 | 9 | +59.5% | 9 |
+| FY10E $2.956 (the Q1 2010 release's $300-335 million) (2010-04-30 to 2010-07-30) | 14 | +97.4% | +83.6% to +112.3% | 14 | 14 | +73.6% | 14 |
+| FY10E $2.944 (the Q2 2010 release's $300-335 million) (2010-08-05 to 2010-10-01) | 9 | +112.1% | +99.1% to +124.1% | 9 | 9 | +83.7% | 9 |
+| FY10E $3.037 (the 8-K of 2010-10-05's $320-335 million) (2010-10-08 to 2010-10-29) | 4 | +103.1% | +97.2% to +113.3% | 4 | 4 | +72.2% | 0 |
+| FY10E $3.042 (the Q3 2010 release's $320-335 million) (2010-11-04 to 2010-12-31) | 9 | +77.4% | +60.2% to +89.7% | 9 | 9 | +64.0% | 0 |
+| latest print Q3 2009 (2010-01-08 to 2010-02-19) | 7 | +105.2% | +100.6% to +111.5% | 7 | 7 | +69.7% | 0 |
+| latest print Q4 2009 (2010-02-24 to 2010-04-23) | 9 | +86.1% | +72.5% to +100.5% | 9 | 9 | +59.5% | 9 |
+| latest print Q1 2010 (2010-04-30 to 2010-07-30) | 14 | +97.4% | +83.6% to +112.3% | 14 | 14 | +73.6% | 14 |
+| latest print Q2 2010 (2010-08-05 to 2010-10-29) | 13 | +111.8% | +97.2% to +124.1% | 13 | 13 | +82.3% | 9 |
+| latest print Q3 2010 (2010-11-04 to 2010-12-31) | 9 | +77.4% | +60.2% to +89.7% | 9 | 9 | +64.0% | 0 |
+3y (52 dates with one): 52 of 52 cleared, 52 beat SPY; range +98.8% to +154.4%
+
+## 2011 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier WATCHLIST (2011-01-07 to 2011-01-07) | 1 | +67.2% | +67.2% to +67.2% | 1 | 1 | +56.1% | 0 |
+| class RICH, legacy tier AVOID (2011-01-14 to 2011-12-30) | 51 | +53.7% | +15.5% to +74.6% | 46 | 39 | +33.9% | 5 |
+| FY10E $3.042 (the Q3 2010 release's $320-335 million) (2011-01-07 to 2011-02-18) | 7 | +67.2% | +55.3% to +68.5% | 7 | 7 | +48.7% | 0 |
+| FY11E $3.182 (the 8-K of 2011-01-21's $325-360 million) (2011-02-23 to 2011-04-29) | 10 | +53.7% | +45.7% to +60.9% | 10 | 10 | +36.6% | 0 |
+| FY11E $3.137 (the Q1 2011 release's $325-360 million) (2011-05-05 to 2011-07-29) | 13 | +35.2% | +15.5% to +49.3% | 8 | 8 | +29.3% | 5 |
+| FY11E $3.101 (the Q2 2011 release's $325-345 million) (2011-08-04 to 2011-09-23) | 8 | +64.2% | +57.8% to +74.6% | 8 | 8 | +40.7% | 0 |
+| FY11E $3.101 (the 8-K of 2011-09-29's $325-345 million) (2011-09-30 to 2011-10-28) | 5 | +63.3% | +55.0% to +69.5% | 5 | 5 | +33.9% | 0 |
+| FY11E $3.35 (the Q3 2011 release's $345-365 million) (2011-11-03 to 2011-12-30) | 9 | +49.7% | +44.2% to +59.6% | 9 | 2 | +20.3% | 0 |
+| latest print Q3 2010 (2011-01-07 to 2011-02-18) | 7 | +67.2% | +55.3% to +68.5% | 7 | 7 | +48.7% | 0 |
+| latest print Q4 2010 (2011-02-23 to 2011-04-29) | 10 | +53.7% | +45.7% to +60.9% | 10 | 10 | +36.6% | 0 |
+| latest print Q1 2011 (2011-05-05 to 2011-07-29) | 13 | +35.2% | +15.5% to +49.3% | 8 | 8 | +29.3% | 5 |
+| latest print Q2 2011 (2011-08-04 to 2011-10-28) | 13 | +63.3% | +55.0% to +74.6% | 13 | 13 | +39.0% | 0 |
+| latest print Q3 2011 (2011-11-03 to 2011-12-30) | 9 | +49.7% | +44.2% to +59.6% | 9 | 2 | +20.3% | 0 |
+3y (52 dates with one): 48 of 52 cleared, 45 beat SPY; range +35.9% to +155.4%
+
+## 2012 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID (2012-01-06 to 2012-12-28) | 52 | +72.3% | +28.5% to +92.7% | 51 | 46 | +42.6% | 1 |
+| FY11E $3.35 (the Q3 2011 release's $345-365 million) (2012-01-06 to 2012-01-20) | 3 | +48.8% | +48.0% to +59.0% | 3 | 3 | +15.2% | 0 |
+| FY11E $3.397 (the 8-K of 2012-01-23's $355-365 million) (2012-01-27 to 2012-02-17) | 4 | +73.1% | +59.6% to +73.9% | 4 | 4 | +27.8% | 0 |
+| FY12E $3.638 (the Q4 2011 release's $360-410 million) (2012-02-22 to 2012-04-27) | 10 | +73.4% | +68.7% to +75.5% | 10 | 10 | +32.9% | 0 |
+| FY12E $3.635 (the Q1 2012 release's $360-410 million) (2012-05-03 to 2012-06-01) | 5 | +83.0% | +71.0% to +92.7% | 5 | 5 | +39.5% | 0 |
+| FY12E $1.817 (the Q1 2012 release's $360-410 million) (2012-06-08 to 2012-07-27) | 8 | +85.5% | +75.6% to +90.2% | 8 | 8 | +43.8% | 0 |
+| FY12E $1.70 (the Q2 2012 release's $345-375 million) (2012-08-02 to 2012-09-21) | 8 | +79.4% | +69.7% to +88.1% | 8 | 8 | +45.9% | 0 |
+| FY12E $1.70 (the 8-K of 2012-09-25's $345-375 million) (2012-09-28 to 2012-10-26) | 5 | +55.4% | +45.1% to +63.8% | 5 | 5 | +44.0% | 0 |
+| FY12E $1.715 (the Q3 2012 release's $345-375 million) (2012-11-01 to 2012-12-28) | 9 | +48.4% | +28.5% to +54.3% | 8 | 3 | +56.1% | 1 |
+| latest print Q3 2011 (2012-01-06 to 2012-02-17) | 7 | +59.6% | +48.0% to +73.9% | 7 | 7 | +20.6% | 0 |
+| latest print Q4 2011 (2012-02-22 to 2012-04-27) | 10 | +73.4% | +68.7% to +75.5% | 10 | 10 | +32.9% | 0 |
+| latest print Q1 2012 (2012-05-03 to 2012-07-27) | 13 | +83.4% | +71.0% to +92.7% | 13 | 13 | +42.3% | 0 |
+| latest print Q2 2012 (2012-08-02 to 2012-10-26) | 13 | +71.6% | +45.1% to +88.1% | 13 | 13 | +44.9% | 0 |
+| latest print Q3 2012 (2012-11-01 to 2012-12-28) | 9 | +48.4% | +28.5% to +54.3% | 8 | 3 | +56.1% | 1 |
+3y (52 dates with one): 0 of 52 cleared, 0 beat SPY; range -29.6% to +49.6%
+
+## 2013 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID (2013-01-04 to 2013-12-31) | 53 | +12.7% | -55.1% to +37.3% | 1 | 0 | +30.2% | 52 |
+| FY12E $1.715 (the Q3 2012 release's $345-375 million) (2013-01-04 to 2013-02-22) | 8 | +20.8% | +12.7% to +37.3% | 1 | 0 | +45.2% | 7 |
+| FY13E $1.792 (the Q4 2012 release's $350-400 million) (2013-02-27 to 2013-04-26) | 9 | +21.6% | +18.3% to +28.4% | 0 | 0 | +39.0% | 9 |
+| FY13E $1.79 (the Q1 2013 release's $350-400 million) (2013-05-02 to 2013-06-07) | 6 | +16.2% | +12.1% to +27.7% | 0 | 0 | +37.8% | 6 |
+| FY13E $1.241 (the 8-K of 2013-06-12's $235-285 million) (2013-06-14 to 2013-07-26) | 7 | +16.4% | -8.7% to +23.4% | 0 | 0 | +40.2% | 7 |
+| FY13E $1.245 (the Q2 2013 release's $235-285 million) (2013-08-01 to 2013-11-01) | 14 | -11.8% | -22.1% to -7.6% | 0 | 0 | +5.1% | 14 |
+| FY13E $1.239 (the Q3 2013 release's $245-275 million) (2013-11-07 to 2013-12-31) | 9 | -43.8% | -55.1% to -27.6% | 0 | 0 | -21.4% | 9 |
+| latest print Q3 2012 (2013-01-04 to 2013-02-22) | 8 | +20.8% | +12.7% to +37.3% | 1 | 0 | +45.2% | 7 |
+| latest print Q4 2012 (2013-02-27 to 2013-04-26) | 9 | +21.6% | +18.3% to +28.4% | 0 | 0 | +39.0% | 9 |
+| latest print Q1 2013 (2013-05-02 to 2013-07-26) | 13 | +16.2% | -8.7% to +27.7% | 0 | 0 | +38.5% | 13 |
+| latest print Q2 2013 (2013-08-01 to 2013-11-01) | 14 | -11.8% | -22.1% to -7.6% | 0 | 0 | +5.1% | 14 |
+| latest print Q3 2013 (2013-11-07 to 2013-12-31) | 9 | -43.8% | -55.1% to -27.6% | 0 | 0 | -21.4% | 9 |
+3y (53 dates with one): 1 of 53 cleared, 5 beat SPY; range -37.0% to +53.0%
+
+## What the 2010-2013 labels suggest (hypotheses only)
+
+- **The calls held on 90 of 209 dates:** CHEAP on all 32 (2010-02-24 to 2010-10-01, +72% to +124% over two years, every one clearing the
+  hurdle and beating SPY), FAIR on none of 9 (they returned +77% to +113%, as CHEAP would have), RICH on 58 of 168: none of the 11 of 2010,
+  5 of the 52 of 2011, 1 of the 52 of 2012, and 52 of the 53 of 2013.
+- **The RICH calls of 2010-2012 were wrong for two years and right later.** At 17-29x the guide (the 88th-100th percentile of a 13.5-14.7x
+  median), the dates of late 2010 to 2012 returned +15% to +93% over two years, as the multiple kept rising
+  (m12-24 average price +14% to +66%; 90 of the 108 ahead of SPY); their three-year horizons turn: no 2012 date cleared the hurdle over three years (-30% to +50%). The
+  2013 RICH dates (25-50x, the FY13E after the wind-down charges included) returned -55% to +37% and lagged SPY on all 53 (by 8-70 points),
+  the entries from August 2013 losing 8% to 55% with drawdowns of up to -73%. The window of ONEOK's own 2002-2010 earnings marked a
+  re-rating that lasted three years as RICH from its start; whether that is early or wrong depends on the horizon, which the two-year check
+  fixes.
+- **The 2008-2009 hypothesis on BASE is not supported here.** There, BASE on commodity revenues as reported made the late-2009 dates RICH
+  against a +91-139% outcome; in 2010 the same reading made 32 dates CHEAP (BASE +26% to +41%/yr on recovering revenues), and all 32 held.
+  The sensitivity's net margin reading would have moved 30 of those 32 to FAIR or RICH. One stock, two regimes: the label points both ways.
+- **Most dates landed above the BASE scenario** (XBULL 162, BULL 39, BASE 8 at two years, against the model's own scenarios; the 8 BASE
+  landings are June 2010 and December 2013).
+- **The kind held:** DURABLE then (no 10-K called the business cyclical), DURABLE in today's profile. Label only.
+- One stock and four years: "a ten-year own-history window flags a re-rating years before it reverses" is a hypothesis to test on other
+  names, not a rule.

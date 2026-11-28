@@ -31728,6 +31728,8 @@ Judgement calls that could carry hindsight:
 - DURABLE rather than CYCLICAL (label only), and the ONE Gas separation and the energy services wind down read as no event;
 - the parts of the filings listed as not read.
 
+The hindsight results for 2010-2013 are in `staging/retrospective/OKE/FINDINGS.md`, "OKE 2010-2013 (hindsight)": hypotheses, never inputs.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
