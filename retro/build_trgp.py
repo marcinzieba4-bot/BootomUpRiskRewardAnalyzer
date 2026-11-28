@@ -55,6 +55,9 @@ from build_unp import money  # noqa: E402
 
 FACTS = os.path.join(HERE, "facts", "TRGP.json")
 ENGINE = os.path.join(HERE, "templates", "trgp_engine.py.tmpl")
+# (TRGP 2014-2017) the None-tolerant copy: TRC's own releases from Q1 2016 print no EPS, so a print whose 10-Q is not yet public shows
+# its EPS as n/r (the BKR, SPGI, SCHW and LYB encoding: the earlier models keep the original engine byte for byte)
+ENGINE2 = os.path.join(HERE, "templates", "trgp2_engine.py.tmpl")
 OUT = os.path.join(ROOT, "staging", "retrospective", "TRGP")
 SYMBOL = "TRGP"
 # rule T, the engine's signal thresholds: (BEAR, BASE, BULL, XBULL); the builder checks the fact sheet against them
@@ -63,7 +66,7 @@ ENGINE_THRESHOLDS = {"gp": (-115, -44, 26, 34), "lm": (-35, 5, 44, 93), "revenue
 RULE_T_KEYS = {"gp": (1, False), "lm": (1, False), "revenue": (1, False), "op_margin": (10, False), "pretax_margin": (10, False)}
 PRINT_KEYS = {"quarter", "fy", "q", "published", "source", "release", "release_time", "period_end", "raw", "sales_b", "sales_pct",
               "opm", "opm_bp", "ptm", "ptm_bp", "eps_q", "eps_q_prior", "diluted_shares_m", "gp_pct", "lm_pct", "seg_note",
-              "sales_note", "margin_note", "eps_note", "cash_note", "next_print", "fy_actual"}
+              "sales_note", "margin_note", "eps_note", "cash_note", "next_print", "fy_actual", "restated"}
 FY_KEYS = {"fy", "fy_label", "eps_normalized", "excluded_note", "revenue_usd_b", "diluted_shares_m", "normalization_note", "op_margin",
            "op_margin_note", "sales_growth", "check_pretax_margin", "check_pretax_note", "tax_rate", "tax_note", "one_off_test",
            "eps_gaap"}
@@ -95,9 +98,26 @@ def rule_t(rt, keys=RULE_T_KEYS):
     return out
 
 
-def check_print(p):
-    """Re-derive a print's growth rates and margins from its raw published figures (they must match the fact sheet)."""
+def as_restated(p, as_of):
+    """(TRGP 2014-2017) A print with its restatements applied, in order, once each is public (a quarter from the latest filing that
+    reports it: the JPM and SCHW encoding): the revenues the 8-K of 2014-10-23 revises (Q1 and Q2 2014), and the EPS and diluted shares
+    of TRC's own releases from Q1 2016, which print neither, from the 10-Q (Q4 2016: the FY2016 10-K's quarterly data)."""
+    q = p
+    for rs in p.get("restated", []):
+        if rs["published"] <= as_of:
+            q = {**q, **{k: v for k, v in rs.items() if k not in ("published", "source")}}
+            q["extra_sources"] = list(q.get("extra_sources", [])) + [rs["source"]]
+    return q
+
+
+def check_print(p, as_of=None):
+    """Re-derive a print's growth rates and margins from its raw published figures (they must match the fact sheet); a restated
+    version once public, too."""
     assert set(p) <= PRINT_KEYS, (p["quarter"], sorted(set(p) - PRINT_KEYS), "a print field with no encoding yet; decide one first")
+    for rs in [r for r in p.get("restated", []) if as_of is None or r["published"] <= as_of]:
+        assert set(rs) <= PRINT_KEYS | {"published", "source"}, (p["quarter"], "a restated field with no encoding yet")
+        check_print({**{k: v for k, v in p.items() if k not in ("restated", "fy_actual")},
+                     **{k: v for k, v in rs.items() if k not in ("published", "source")}})
     r = p["raw"]
     # growth on the year-ago figure; against a year-ago loss, over the loss's absolute value (the CAT 2014-2017 and SO 2018-2021 rule)
     pct = lambda a, b: round((b / a - 1) * 100, 1) if a > 0 else round((b - a) / abs(a) * 100, 1) if a < 0 else None
@@ -122,7 +142,11 @@ def check_print(p):
         assert t["kind"] == ("benefits" if it < 0 else "charges"), (p["quarter"], "the one-off test's kind")
         assert t["distorted"] == ((-it > inc + it) if it < 0 else (it > inc)), (p["quarter"], "the one-off test")
         gaap = a.get("eps_gaap", a["eps_normalized"])          # a loss year would carry its GAAP EPS here, out of the history
-        assert kept == (not t["distorted"] and gaap > 0), (p["quarter"], "the year's EPS and the one-off test disagree")
+        # (TRGP 2014-2017) TRC's own Q4 2016 release prints no per-share figure ('eps_gaap' None): its year is a loss by the net loss
+        # attributable to common shareholders it reports
+        loss = (inc < 0) if gaap is None else (gaap <= 0)
+        assert gaap is not None or inc < 0, (p["quarter"], "a year with no published EPS must be a loss by its reported income")
+        assert kept == (not t["distorted"] and not loss), (p["quarter"], "the year's EPS and the one-off test disagree")
         assert not kept or gaap == a["eps_normalized"], (p["quarter"], "a kept year is its GAAP EPS")
 
 
@@ -163,10 +187,19 @@ def build(as_of, facts, raw, spx, engine, out):
     assert all(g["rev_none"] and set(g) == {"fy", "published", "source", "rev_none", "display"} for g in guides), \
         "a guide in numbers needs its encoding first (no TRGP filing of 2011-2013 guides revenue, EPS or a margin)"
     assert rule_t(facts["rule_t"]) == ENGINE_THRESHOLDS, "the engine's thresholds must follow rule T on the fact sheet's values"
-    public = [p for p in facts["prints"] if p["published"] <= as_of]
-    for p in public:                                   # a print public on AS_OF must match its raw figures
-        check_print(p)
+    for p in facts["prints"]:                          # a print public on AS_OF must match its raw figures (and its restatements)
+        if p["published"] <= as_of:
+            check_print(p, as_of)
+    public = [as_restated(p, as_of) for p in facts["prints"] if p["published"] <= as_of]
     h = vintages[-1]                                   # latest annual history public on AS_OF
+    # (TRGP 2014-2017) a revenue revision filed after the vintage (the 8-K of 2014-10-23: 2011-2013 on the net basis of NGL buy-sell
+    # transactions) replaces those years until a later 10-K reports them
+    for rv in facts.get("revenue_restatements", []):
+        if h["published"] < rv["published"] <= as_of:
+            h = {**h, "revenue_usd_b": {**h["revenue_usd_b"], **rv["revenue_usd_b"]},
+                 "revenue_sources": {**h["revenue_sources"], **{y: rv["source"] for y in rv["revenue_usd_b"]}},
+                 "sources": list(h["sources"]) + [rv["source"]],
+                 "revenue_note": f'{h["revenue_note"]}; {rv["note"]}'}
     reported = lambda h: {int(k) for k in h["eps_normalized"]} | {int(k) for k in h.get("eps_excluded", {})}
     first_fy = max(reported(h)) + 1
     guide_fy = lambda p: p["fy"] + (1 if p["quarter"].startswith("Q4") else 0)
@@ -188,7 +221,8 @@ def build(as_of, facts, raw, spx, engine, out):
                 h.update(eps_normalized={**h["eps_normalized"], y: a["eps_normalized"]})
             h.update(fy_label=a["fy_label"],
                      revenue_usd_b={**h["revenue_usd_b"], y: a["revenue_usd_b"]},
-                     diluted_shares_m={**h["diluted_shares_m"], y: a["diluted_shares_m"]},
+                     # (TRGP 2014-2017) TRC's own Q4 2016 release prints no share count: the year's count waits for the 10-K
+                     diluted_shares_m={**h["diluted_shares_m"], **({y: a["diluted_shares_m"]} if "diluted_shares_m" in a else {})},
                      normalization=f'{h["normalization"]}; {a["normalization_note"]}',
                      prev_fy_sales_growth=a["sales_growth"],
                      extended=f'{h["extended"]}, FY{y[2:]} from {p["source"]} ({p["published"]})')
@@ -276,12 +310,34 @@ def build(as_of, facts, raw, spx, engine, out):
     theme_summary = "no theme in the registry is live for a midstream natural gas company on this date; none has dated evidence"
     key_tail = ("By the company's own account the Partnership's percent-of-proceeds arrangements expose it to commodity prices;\n"
                 "  the bear needs NGL prices and volumes to fall across the segments, not one quarter's.")
+    if "Our primary natural gas gathering" in h["why"]:      # (TRGP 2014-2017) the FY2016 10-K speaks for TRC itself after the buy-in
+        key_tail = ("By the company's own account its percent-of-proceeds arrangements expose it to commodity prices;\n"
+                    "  the bear needs NGL prices and volumes to fall across the segments, not one quarter's.")
     why = h["why"]
     # from CLOUD's live date (2012-10-30) every live theme is quoted with its registered scope (the CB 2014-2017, UNH, SCHW and LYB wording)
     live = sorted(((t["live_from"], k, t["scope"]) for k, t in retro_tool.load_taxonomy()["themes"].items() if t["live_from"] <= as_of))
     live_k = [k for _, k, _ in live]
-    assert live_k == ["OFFSHORE", "CLOUD"][:len(live_k)], (as_of, "a live theme the TRGP 10-Ks were not searched for", live_k)
-    if live_k != ["OFFSHORE"]:
+    # (TRGP 2014-2017) ECOMMERCE (2015-01-01), STREAMING (2015-08-04) and ENERGY_TRANSITION (2015-12-12) were searched for in the
+    # FY2013-FY2016 10-Ks: no 10-K names e-commerce or streaming, and ENERGY_TRANSITION's reserves and refining are read as out of scope
+    # for a gatherer and processor that holds neither (the BKR reading), its greenhouse gas risk factor quoted in the "why"
+    ALL = ["OFFSHORE", "CLOUD", "ECOMMERCE", "STREAMING", "ENERGY_TRANSITION"]
+    assert live_k == ALL[:len(live_k)], (as_of, "a live theme the TRGP 10-Ks were not searched for", live_k)
+    if len(live_k) > 2:
+        assert "ghg_quote" in h, (as_of, "a vintage before FY2013 has no greenhouse gas quote")
+        scopes = ", ".join(f"{k} {'is scoped to' if i == 0 else 'to'} '{sc}'" for i, (_, k, sc) in enumerate(live))
+        head = why.split("; no theme in taxonomy_eras.json is live")[0]
+        assert head != why, (as_of, "the vintage's why lost its theme clause")
+        et = ""
+        if "ENERGY_TRANSITION" in live_k:
+            et = (" but ENERGY_TRANSITION, whose oil, gas and coal reserves and refining a gatherer and processor does not hold (the BKR "
+                  f"reading: the {h['tenk_label']} names no reserves of Targa's, and its refinery services are NGL balancing for refiners, "
+                  f"'{h['refinery_quote']}'" + (f"; the Channelview Splitter is a '{h['splitter_quote']}' at Channelview, under construction"
+                                                if "splitter_quote" in h else "") + ")")
+        why = (head + "; no disruption theme in taxonomy_eras.json is live for a midstream natural gas company on this date (of the "
+               f"live themes, {scopes}: none names midstream energy{et}; the 10-Ks' 'offshore' is the Gulf of Mexico, they name cloud "
+               "only as a director's other board, Cloud Peak Energy Inc., and no 10-K names e-commerce or streaming), so the watch list "
+               f"is empty and these words stay here, with the greenhouse gas risk factor: '{h['ghg_quote']}' (the PEP obesity rule)")
+    elif live_k != ["OFFSHORE"]:
         scopes = ", ".join(f"{k} {'is scoped to' if i == 0 else 'to'} '{sc}'" for i, (_, k, sc) in enumerate(live))
         head = why.split("; no theme in taxonomy_eras.json is live")[0]
         assert head != why, (as_of, "the vintage's why lost its theme clause")
@@ -291,6 +347,8 @@ def build(as_of, facts, raw, spx, engine, out):
                "PEP obesity rule)")
     kind, pit_risk = h["kind"], 2
     cat3 = f"(3) The {fy_now} outlook — no revenue, EPS or margin guide in numbers (the outlooks are the Partnership's EBITDA and TRC's dividends)"
+    if cur_fy >= 2017:                                 # (TRGP 2014-2017) TRC's own 2017 guidance: volumes, capital spending, the dividend
+        cat3 = f"(3) The {fy_now} outlook — no revenue, EPS or margin guide in numbers (the outlooks are volumes, capital spending and TRC's dividend)"
     cat4 = f"(4) Free cash flow — {h['fcf_label']} {h['fcf_note']}"
 
     after_print = [p for p in prints if p["published"] < as_of and not any(p["published"] < d < as_of for d in days)]
@@ -306,7 +364,8 @@ def build(as_of, facts, raw, spx, engine, out):
                f"(day of the {same_day[-1]['quarter']} print, released during the session)")
 
     company, exchange, listed = h["company"], h["exchange"], h["symbol"]
-    ids = (list(h["sources"]) + [p["source"] for p in prints] + [public[i - 1]["source"]] + [listing["source"]]
+    ids = (list(h["sources"]) + [p["source"] for p in prints] + list(latest.get("extra_sources", [])) + [public[i - 1]["source"]]
+           + [listing["source"]]
            + ([dividend_src] if dividend_src else []) + ([g_now[-1]["source"]] if g_now else []))
     sources = [dict(id=i, **{k: v for k, v in facts["sources"][i].items()}) for i in dict.fromkeys(ids)]
     sources.append({"id": "A0", "published": as_of,
@@ -329,6 +388,14 @@ def build(as_of, facts, raw, spx, engine, out):
                    else f"{latest['quarter'].split()[0]} operating margin n/r (no operating income for the quarter in the filings)")
     fcf_text = f"${h['fcf_b']:.2f}B" if h["fcf_b"] >= 0 else f"$({-h['fcf_b']:.2f})B"
     LATEST = {k: latest.get(k) for k in latest_keys}
+    # (TRGP 2014-2017) TRC's own releases print no share count: until the 10-Q, the latest diluted count public (display only)
+    sh_dil, sh_dil_note = latest["diluted_shares_m"], ""
+    if sh_dil is None:
+        src_p = next(p for p in reversed(public[:i]) if p["diluted_shares_m"] is not None)
+        sh_dil, sh_dil_note = src_p["diluted_shares_m"], f" ({src_p['quarter']}'s; the {latest['quarter']} release prints no share count)"
+    if latest["eps_q"] is None or latest["eps_q_prior"] is None:
+        with open(ENGINE2, encoding="utf-8") as fh:
+            engine = fh.read()
     R = repr
     head = f'''#!/usr/bin/env python3
 """
@@ -401,7 +468,7 @@ MARGIN_GUIDED   = {margin_guided}   # False: no margin guide, so no guided step;
 FY_MARGIN_BASE  = {fy_margin_base}
 FY_REVENUE_B    = {fy_rev:.2f}
 FY_REVENUE_LABEL = {R(fy_rev_label)}
-SHARES_DIL_B    = {round(latest["diluted_shares_m"] / 1000, 4)!r}   # diluted shares, bn
+SHARES_DIL_B    = {round(sh_dil / 1000, 4)!r}   # diluted shares, bn{sh_dil_note}
 GROUPS          = {R([tuple(g) for g in h["groups"]])}
 GROUPS_BASIS    = {R(h["groups_basis"])}
 NEXT_PRINT      = {R(latest["next_print"])}
