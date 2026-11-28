@@ -3,6 +3,7 @@
 class and legacy tier, by current-FY EPS and by latest print, per year, plus 3-year and drawdown lines.
 
     python3 retro/generators/oke/findings_tables.py 2008,2009
+    python3 retro/generators/oke/findings_tables.py 2010,2011,2012,2013
 
 Run it only after the batch's build, validation outputs, README section and firewall result are committed and pushed, and
 `retro_tool.py outcome` has written the outcomes (retro/README.md, "Adding dates"). Nothing it prints may feed a fact sheet,
@@ -27,6 +28,8 @@ for d in sorted(x for x in glob.glob(os.path.join(REPO, "staging", "retrospectiv
     m = open(os.path.join(d, "model.py"), encoding="utf-8").read()
     eps = eval(re.search(r'^EPS_LABEL\s+= (.+)$', m, re.M).group(1))
     fy = re.search(r"(FY\d{4}E): GAAP net income guidance, the (.+?)'s \$([\d.]+-[\d.]+) a diluted share, midpoint = \$([\d.]+)", eps)
+    if not fy:     # (OKE 2010-2013) a net income range in millions over a print's diluted shares
+        fy = re.search(r"(FY\d{4}E): GAAP net income guidance, the (.+?)'s \$([\d,]+-[\d,]+ million) .*? = \$([\d.]+)", eps)
     q = re.search(r"latest print (Q\d \d{4})", a["summary"]) or re.search(r'"quarter": "(Q\d \d{4})"', m)
     lq = re.search(r"LATEST\s+= \{'quarter': '(Q\d \d{4})'", m).group(1)
     h2, h3 = o["horizons"].get("2y"), o["horizons"].get("3y")

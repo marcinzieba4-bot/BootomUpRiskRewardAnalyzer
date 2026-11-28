@@ -24,7 +24,7 @@ touching either directory.
   NKE (2008-2026 so far), AVGO (from its 2009-08-06 listing to 2026-10-30 so far), PEP (2008 to 2026-10-30 so far), MSFT
   (2008 to 2026-10-30 so far), XOM (2008 to 2026-10-30 so far), SHW (2008 to 2026-11-06 so far), WMT (2008 to 2026-11-06 so far), RCL (2008 to 2026-11-06 so far), MAR (2008 to 2026-11-03 so far), BKR (2008 to 2017-06-30, then 2019-02-01 to 2026-11-06 so far), PFE (2008 to 2026-11-04 so far), CMCSA (2008 to 2026-11-06 so far), CAT (2008 to 2026-11-06 so far), BMY (2008 to 2026-11-06 so far), NVDA (2008 to 2026-11-06 so far), F (2008-01-04 to 2026-11-06 so far; 2022-01-07 onward was built first at the owner's request, and dates before 2022 are an early era with its
   own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far), SPGI (2008-01-04 to 2026-11-20 so far), CB (2008-01-04 to 2026-11-20 so far), LLY (2008-01-04 to 2026-11-20 so far), UNH (2008-01-04 to 2026-11-20 so far), CRM (2008-01-04 to 2026-11-20 so far), SCHW (2008-01-04 to 2026-11-20 so far), NEE (2008-01-04 to 2026-11-20 so far), NEM (2008-01-04 to 2026-11-27 so far), LYB (from its 2010 share issue: 2012-02-10 to 2026-11-20 so far), CHTR (from its first
-  anchoring year: 2019-02-01 to 2026-11-20 so far), FANG (from its first anchoring year: 2014-02-21 to 2021-12-31 so far), TRGP (from its first full year of EPS: 2012-02-24 to 2017-12-29 so far) and OKE (2008-01-04 to 2009-12-31 so far) sit in `staging/retrospective/` until the owner adds
+  anchoring year: 2019-02-01 to 2026-11-20 so far), FANG (from its first anchoring year: 2014-02-21 to 2021-12-31 so far), TRGP (from its first full year of EPS: 2012-02-24 to 2017-12-29 so far) and OKE (2008-01-04 to 2013-12-31 so far) sit in `staging/retrospective/` until the owner adds
   them to the archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM", "SHW", "WMT", "RCL", "MAR", "BKR", "PFE", "CMCSA", "CAT",
   "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG", "JPM", "V", "SPGI", "CB", "LLY", "UNH", "CRM", "SCHW", "NEE", "NEM", "LYB", "CHTR", "FANG", "TRGP", "OKE"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py`, `mu_signal_model.py`, `v_signal_model.py`, `spgi_signal_model.py` and `lly_signal_model.py` (other branches) files
   and today's profiles in `data/business_profiles.json` (NVDA's, SO's, V's, SPGI's, CB's, LLY's, UNH's, CRM's and NEE's included) are 2026 analyses: never inputs to a retrospective. AVGO did not trade
@@ -731,6 +731,19 @@ touching either directory.
   August 31; calendar 2000 against fiscal 1999, the BKR transition rule); Yahoo's 2012 split and its 2014 ONE Gas factor follow every
   date and are undone (the price as traded), the builder refusing dates from 2012-06-04; ONEOK Partners (NYSE: OKS) is never priced, its
   consolidation in as published; the live `oke_signal_model.py`, OKE's profile in `data/business_profiles.json`, `scripts/quality_classify.py` and `reports/*.json`
-  are 2026 analyses, never inputs; DURABLE, no live theme; CHEAP 58, RICH 32, FAIR 15 of 105 dates (retro/README.md, "OKE").
+  are 2026 analyses, never inputs; DURABLE, no live theme; CHEAP 58, RICH 32, FAIR 15 of 105 dates (retro/README.md, "OKE"). From 2010:
+  the Q4 2009 release files no earnings tables, so the quarter comes from the FY2009 10-K's quarterly data (pre-tax income the year less
+  the Q3 2009 release's nine months, diluted shares the year's; `source_10k`, the NEM encoding); GAAP EPS from continuing operations every
+  new year (FY09 $2.87, FY10 $3.10, FY11 $3.34, FY12 $1.64), the FY2011 10-K restating 2007-2010 for the retail marketing business
+  (discontinued, sold 2012-02-01) while 2002-2006 stay as first reported (a seam); from the 2010 guidance ONEOK guides net income in
+  dollars, so current-FY EPS is the range's midpoint over the diluted shares of the latest print public on the guide's date (the KMI rule,
+  `ni_guide_m`, `shares_print`; words keep the last range); the 2012 two-for-one split is the `splits` record, effective 2012-06-04
+  (Yahoo's date; the shared on_basis helper, each history year by its own filing's date, prices as traded), and the builder now refuses
+  dates from 2014-02-03 (the ONE Gas factor); the FY2013 range after the energy services wind down ($235-285M, one-time charges in) is used
+  as published, no range without them being filed; dividends $0.44 to $0.61, then $0.33 to $0.38 post-split, from the 8-Ks; FY2002 and
+  the FY2001 note leave with the FY2012 10-K; CLOUD out of scope (every live theme's scope quoted from 2012-11-02), DURABLE; RICH 168,
+  CHEAP 32, FAIR 9 of 209 dates (CHEAP and FAIR all in 2010; RICH on every date of 2011-2013 at 20-50x against a 14-16x median); BASE on
+  net margin and the signals at BEAR move 41 classes each, all in 2010; built in a new session without opening the 2008-2009 outcomes or
+  findings (retro/README.md, "OKE 2010-2013").
 - **Never use the owner's personal email** in request headers to external
   services (SEC asks for a contact in the User-Agent).

@@ -1,0 +1,247 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "OKE",
+ "company": "ONEOK, Inc.",
+ "as_of": "2010-03-12",
+ "price_date": "2010-03-12",
+ "price": 46.66,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); gas distribution and midstream signals with ONEOK's rule-T thresholds",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "'We are a diversified energy company and successor to the company founded in 1906 known as Oklahoma Natural Gas Company.' 'Our cash flow depends heavily on the earnings and distributions of ONEOK Partners.' 'The volatility of natural gas, crude oil and NGL prices could adversely affect ONEOK Partners’ cash flow.' (the FY2009 10-K's own words; it calls no business of the company cyclical, the word appearing only in its billing cycle, so DURABLE, the MU rule)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "'We are a diversified energy company and successor to the company founded in 1906 known as Oklahoma Natural Gas Company.' 'Our cash flow depends heavily on the earnings and distributions of ONEOK Partners.' 'The volatility of natural gas, crude oil and NGL prices could adversely affect ONEOK Partners’ cash flow.' (the FY2009 10-K's own words; it calls no business of the company cyclical, the word appearing only in its billing cycle, so DURABLE, the MU rule). durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.64x; +56% to EPP floor; model-vs-market gap +0.73; conservative 2yr +45%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.64,
+  "ratio_b_fmt": "0.64x",
+  "epp": 29.82,
+  "epp_gap_pct": 56.5,
+  "epp_adj": -0.1,
+  "proxy_composite": 2.7,
+  "sca": 0.12,
+  "adj_composite": 2.72,
+  "market_composite": 1.99,
+  "adj_gap": 0.73,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 44.7,
+  "scenarios": {
+   "BEAR": {
+    "eps": 2.68,
+    "pe": 9.6,
+    "price": 26,
+    "desc": "EPS -5.1%/yr (worst year FY02-FY09, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 5.07,
+    "pe": 13.1,
+    "price": 66,
+    "desc": "EPS +30.4%/yr (Q4 revenues + margin + buyback); P/E at its 8.2-yr median"
+   },
+   "BULL": {
+    "eps": 5.07,
+    "pe": 15.6,
+    "price": 79,
+    "desc": "EPS +30.4%/yr (FY02-FY09 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 5.07,
+    "pe": 17.0,
+    "price": 86,
+    "desc": "EPS +30.4%/yr (best 2-yr run FY02-FY09, at least BULL); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.64,
+   "epp_gap_pct": 56.5,
+   "adj_gap": 0.73,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 44.7,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.47,
+   "epp_gap_pct": 56.5,
+   "adj_gap": 1.02,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 44.7,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 1.17,
+   "epp_gap_pct": 56.5,
+   "adj_gap": 0.06,
+   "verdict": "FAIRLY VALUED",
+   "legacy_tier": "WATCHLIST",
+   "cons_return_2yr": 44.7,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.57,
+   "epp_gap_pct": 56.5,
+   "adj_gap": 0.81,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 44.7,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.71,
+   "epp_gap_pct": 56.5,
+   "adj_gap": 0.6,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 44.7,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.64,
+   "epp_gap_pct": 56.5,
+   "adj_gap": 1.03,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 44.7,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.64,
+   "epp_gap_pct": 20.4,
+   "adj_gap": 0.83,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 44.7,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.64,
+   "epp_gap_pct": 56.5,
+   "adj_gap": 0.93,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 44.7,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP",
+  "FAIR"
+ ],
+ "summary": "OKE (retrospective, 2010-03-12) ◉ BUY — Ratio B 0.64x (44.3% downside to Bear $26 / +69.3% upside to Bull $79) | Adj composite 2.72 vs market 1.99: gap +0.73 [UNDERVALUED] | +56% above the EPP floor $30 (10x FY10E $2.98) | Conservative 2-yr case: +44.7% total (+22.4%/yr) | At 15.6x FY10E the 15% hurdle price $62 sits at or below the BASE case; net margin +22.5% and Distribution operating income +11.7% in Q4 2009, forward revenues +31.2% (no FY10 revenue guide in numbers, Q4 2009 revenues as reported); no theme in the registry is live for a gas distributor and midstream company on this date; none has dated evidence.",
+ "sources": [
+  {
+   "id": "OK32",
+   "published": "2010-02-23",
+   "filed": "accepted 2010-02-23 14:04 ET, during the session",
+   "title": "ONEOK FY2009 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000090928110000030/0000909281-10-000030.txt",
+   "supports": "history vintage FY2009; Q4 2009's revenues, net margin, operating income and diluted EPS (quarterly financial data) and the year's pre-tax income and diluted shares; the 'why'"
+  },
+  {
+   "id": "OK11",
+   "published": "2009-02-25",
+   "filed": "accepted 2009-02-24 17:34 ET, after the close: counts from 2009-02-25",
+   "title": "ONEOK FY2008 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000103968409000010/0001039684-09-000010.txt",
+   "supports": "history vintage FY2008; the 'why'"
+  },
+  {
+   "id": "OK10",
+   "published": "2008-02-27",
+   "filed": "accepted 2008-02-27 15:45 ET, during the session",
+   "title": "ONEOK FY2007 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000119312508040037/0001193125-08-040037.txt",
+   "supports": "history vintage FY2007; the 'why'"
+  },
+  {
+   "id": "OK9",
+   "published": "2007-03-01",
+   "filed": "accepted 2007-02-28 18:36 ET, after the close: counts from 2007-03-01",
+   "title": "ONEOK FY2006 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000119312507042960/0001193125-07-042960.txt",
+   "supports": "history vintage FY2006; rule T: 2005 and 2006 against the year before; the company's EPS excluding the 2005 and 2006 gains on sale; the 'why'"
+  },
+  {
+   "id": "OK8",
+   "published": "2006-03-13",
+   "filed": "accepted 2006-03-10 17:44 ET, after the close: counts from 2006-03-13",
+   "title": "ONEOK FY2005 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000119312506051266/0001193125-06-051266.txt",
+   "supports": "rule T: 2004 against 2003 (statement of income; the Distribution segment); FY2001 EPS from continuing operations (excluded) and FY2003 diluted shares"
+  },
+  {
+   "id": "OK7",
+   "published": "2005-03-09",
+   "filed": "accepted 2005-03-08 16:00 ET, after the close: counts from 2005-03-09",
+   "title": "ONEOK FY2004 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000119312505044590/0001193125-05-044590.txt",
+   "supports": "rule T: 2003 against 2002 (statement of income; the Distribution segment); FY2002 diluted shares"
+  },
+  {
+   "id": "OK31",
+   "published": "2010-02-23",
+   "filed": "accepted 2010-02-22 17:26 ET, after the close: counts from 2010-02-23",
+   "title": "ONEOK Q4 2009 results (8-K exhibit 99.1; the earnings tables are not filed)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000090928110000023/0000909281-10-000023.txt",
+   "supports": "Q4 2009: the Distribution segment's operating income (the release's text)"
+  },
+  {
+   "id": "OK21",
+   "published": "2009-11-04",
+   "filed": "accepted 2009-11-03 17:18 ET, after the close: counts from 2009-11-04",
+   "title": "ONEOK Q3 2009 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000103968409000075/0001039684-09-000075.txt",
+   "supports": "Q3 2009: revenues, net margin, operating income, income before income taxes, diluted EPS, diluted shares and the Distribution segment's operating income"
+  },
+  {
+   "id": "OK29",
+   "published": "2010-01-25",
+   "filed": "accepted 2010-01-22 17:11 ET, after the close: counts from 2010-01-25",
+   "title": "ONEOK 8-K: 2010 earnings guidance; 2009 earnings guidance updated (Items 2.02, 7.01)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000090928110000010/0000909281-10-000010.txt",
+   "supports": "the FY2009 EPS guide ($2.85-2.89 a diluted share) and the FY2010 net income guide"
+  },
+  {
+   "id": "OK12",
+   "published": "2007-08-02",
+   "filed": "accepted 2007-08-01 20:26 ET, after the close: counts from 2007-08-02",
+   "title": "ONEOK Q2 2007 results (8-K exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000119312507168403/0001193125-07-168403.txt",
+   "supports": "Q2 2007: revenues, net margin, operating income, income before income taxes, diluted EPS, diluted shares and the Distribution segment's operating income"
+  },
+  {
+   "id": "Y0",
+   "published": "2010-03-12",
+   "title": "Yahoo Finance daily prices, ONEOK, Inc. common stock (NYSE: OKE) and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/OKE/history",
+   "supports": "close $46.66 as traded on AS_OF, 52-week range, realized vol, beta, the 8.2-yr P/E distribution from 2002-01-02"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-28"
+}

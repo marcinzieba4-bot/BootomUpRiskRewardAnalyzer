@@ -1603,7 +1603,8 @@ try:
             if x.get("note") == "PLANTED":
                 x["symbol"] = "PLANTED"
     if TICKER == "OKE":    # a later vintage whose every text and figure the models quote is planted, excluding a year, a later EPS guide for
-                           # every year guided before CUTOFF and for the cutoff's year and the next, with absurd ranges (OKE 2008-2009)
+                           # every year guided before CUTOFF and for the cutoff's year and the next, with absurd ranges (OKE 2008-2009), per share, in net
+                           # income and in words, and per-year publication dates for the split helper (OKE 2010-2013)
         v.update(business_line="PLANTED", normalization="PLANTED", shares_note="PLANTED", prev_fy_op_margin=-50.0,
                  prev_fy_op_margin_note="PLANTED", check_pretax_margin=-50.0, check_pretax_note="PLANTED", tax_rate=0.99,
                  tax_note="PLANTED", prev_fy_sales_growth=-60.0, dividend_annual=9.99, dividend_note="PLANTED", fcf_b=99.0,
@@ -1614,6 +1615,12 @@ try:
         for y in sorted({g["fy"] for g in f["eps_guides"] if g["published"] < cutoff} | {int(cutoff[:4]), int(cutoff[:4]) + 1}):
             f["eps_guides"].append({"fy": y, "published": later, "source": last["source"], "doc": "PLANTED", "eps_guide": [0.01, 0.02],
                                     "quote": "PLANTED"})
+            # a later net income guide over the planted print's shares, and a later guide in words (OKE 2010-2013)
+            f["eps_guides"].append({"fy": y, "published": later, "source": last["source"], "doc": "PLANTED", "ni_guide_m": [1, 2],
+                                    "shares_print": last["quarter"], "quote": "PLANTED"})
+            f["eps_guides"].append({"fy": y, "published": later, "source": last["source"], "doc": "PLANTED", "words": True,
+                                    "quote": "PLANTED"})
+        v.update(eps_published={y: later for y in v["eps_normalized"]}, shares_published={y: later for y in v["diluted_shares_m"]})
     if TICKER == "LMT":    # absurd full-year actuals on the planted print, for the year after the latest vintage before CUTOFF, and a later
                            # vintage whose every text and figure the models quote is planted (LMT 2008-2009)
         v0 = max((x for x in f["history_vintages"] if x["published"] < cutoff), key=lambda x: x["published"])
