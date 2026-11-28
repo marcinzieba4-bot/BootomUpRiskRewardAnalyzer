@@ -33067,6 +33067,161 @@ Judgement calls that could carry hindsight:
 
 The hindsight results for 2018-2021 are in `staging/retrospective/OKE/FINDINGS.md`, "OKE 2018-2021 (hindsight)": hypotheses, never inputs.
 
+### OKE 2022-2026: three statement years per vintage, Magellan, EnLink and Medallion as published, per-share guides and stated midpoints, the pending-deal rule on the Q3 2024 guide, GENAI and GLP1 out of scope, the last date 2026-11-27
+
+The owner asked for 2022-2026 ("find newest code. do retrospective analysis for OKE, 2022-2026. same rules as before"); the code is the
+branch `claude/sharp-albattani-rdvlgi` (its commit "Merge OKE 2018-2021 ... OKE to 2021-12-31"), as the coordinating session named it;
+nothing else was merged in. Built in a new session without opening the 2008-2021 outcomes or findings (`staging/retrospective/OKE/FINDINGS.md`,
+the `outcome.json` files, the hindsight part of `SERIES.md`); the live `oke_signal_model.py`, OKE's profile in `data/business_profiles.json`,
+`scripts/quality_classify.py` and `reports/*.json` were not opened.
+
+```bash
+python3 retro/tools/edgar.py fetch 1039684 <dir> --from 2021-12-01 --to 2026-11-28 --forms 8-K 8-K/A 10-K 10-K/A 10-Q
+python3 -I retro/generators/oke/gen_oke_2226.py --filings <dir> --facts-in <the 2008-2021 sheet>   # -> retro/facts/OKE.json
+python3 -I retro/tools/verbatim.py <dir>/checklist_oke_2226.json             # 279/279
+python3 retro/build_oke.py --weekly 2022-01-01 2026-11-27                   # 256 dates, 2022-01-07 .. 2026-11-27
+for d in staging/retrospective/OKE/202[2-6]-*; do python3 retro/retro_tool.py --archive staging/retrospective run "$d"; done
+for c in 2022-03-01 2022-03-02 2023-11-01 2024-02-28 2024-10-30 2025-02-26 2026-02-25 2026-10-28 2026-11-28; do
+  python3 retro/tools/firewall.py $c OKE; done
+python3 retro/generators/oke/controls_oke_2226.py; python3 retro/generators/oke/sens_oke_2226.py <scratch>
+```
+
+**A full-data batch.** `www.sec.gov` served every filing document to `edgar.py`'s plain client name (no contact address): 175 filings of
+2021-12 to 2026-11.
+
+Read, by the session's model directly with no delegated transcription: the twenty earnings releases of Q4 2021 to Q3 2026 (8-K exhibit
+99.1, still page images with a text layer, read by label and number with `trow`: the statements of income, balance sheets, highlights
+tables and their footnotes, the guidance paragraphs and tables); the guidance 8-K of 2025-02-25 (Item 7.01, counted from 2025-02-26); every
+dividend 8-K (Items 7.01 and 8.01; ONEOK filed none from mid-2025, so the later rates are read from the releases); Items 1, 1A, 7 and 8
+of the FY2021-FY2025 10-Ks (Item 6 is reserved in each). Every other 8-K of 2021-12 to 2026-11 was read by its items and title (conference
+and webcast notices, earnings-call notices, officers and directors, by-laws, the annual meetings, credit agreements and notes, the
+Magellan merger agreement and its proxy and closing 8-Ks, the EnLink and Medallion agreements and closings, the 2026 minority equity and
+Brazos Permian Midland transactions) and its text searched for a net income or EPS guide: only the 8-K of 2025-02-25 has one (the merger
+announcements speak of accretion in words, no figure). **Not read:** the 10-Qs beyond their listing and their dividend sentences (the
+releases carry every figure the models use), the proxy statements, the S-4 and the presentations, earnings tables and supplemental
+guidance materials the releases point to on the website (not filed). Every quote is asserted (279/279 with `verbatim.py`); the source ids
+are `OK129`-`OK156`, each dated by EDGAR's acceptance time. Decided on 2026-11-28, before any OKE 2022-2026 model was built or any of its
+outcomes computed:
+
+- **Release timing.** Every earnings 8-K of the range was accepted after the close (16:21-17:30 ET) and counts from the next trading day.
+  Each Q4 print came a trading day before its 10-K, the week's date being the 10-K's day (2022-03-02, 2023-03-01, 2024-02-28, 2025-02-26,
+  2026-02-25; asserted), so no print carries full-year actuals of its own. The 8-K labelled Items 2.01 and 7.01 on 2026-08-03 is the Q2
+  2026 release (its exhibit), read as one.
+- **The last date is 2026-11-27,** the Friday after Thanksgiving, an early close: the batch was built on 2026-11-28, after it (the NEM,
+  FANG and TRGP rule); 256 weekly dates, 2022-01-07 to 2026-11-27.
+- **Acquisitions as published.** Magellan Midstream Partners (2023-09-25, cash and about 135 million ONEOK shares), the controlling
+  interest in EnLink Midstream (2024-10-15, cash), Medallion Midstream (2024-10-31, cash), the interstate pipeline divestiture (2024-12),
+  EnLink's public units (2025-01-31, ONEOK shares) and the 2026 Brazos Permian Midland acquisition and minority equity investment are in
+  the prints and the vintages as ONEOK's filings publish them; no pro forma figure is used. Diluted shares go from 448M (2022) to 586M
+  (2024) and 632M (2026), so the engine's share term reads the merger shares as dilution in BASE (the 2018-2021 reading of the ONEOK
+  Partners merger), and BASE runs on the acquisition quarters' reported revenue growth (+19.6% to +71.9% a quarter from Q1 2025).
+- **Five history vintages,** each year from the latest filing that reports it, the ten fiscal years to the latest one. Item 6 is
+  reserved in every 10-K, so each takes the three years of its statement of income (diluted EPS, total revenues, diluted shares) and the
+  earlier years from the latest earlier vintage; from the FY2023 10-K the statements are in millions (shares to 0.1 million), and the
+  rounded figures replace the earlier exact ones (the LLY FY2025 reading). GAAP every year, each one-off test on the Q4 release's own
+  listed items:
+  - FY2021 10-K (2022-03-02): 2021 $3.35 (one listed item, a 4-cent noncash tax charge); 2011 leaves, the window starts with 2012.
+  - FY2022 10-K (2023-03-01): 2022 $3.84 (the Medford incident's deductible and waiting period, 6 cents); the window starts with 2013.
+  - FY2023 10-K (2024-02-28): 2023 $5.48, with the Medford insurance settlement gain ($779M) and the Magellan transaction costs: the Q4 2023
+    release gives "a net benefit of 87 cents per diluted share after tax", under half of $4.61 without it (the mirror of the AAPL FY2002
+    test), and no filing publishes a full-year EPS without them: kept. The window starts with 2014 (the restated, continuing 2014).
+  - FY2024 10-K (2025-02-26): 2024 $5.17 on net income attributable to ONEOK, with the divestiture gains and transaction costs (a net
+    benefit of 30 cents): kept. The window starts with 2015.
+  - FY2025 10-K (2026-02-25): 2025 $5.42 (transaction costs, 10 cents): kept. The window starts with 2016.
+  Segments: total revenues by the segment note's columns; Refined Products and Crude has no prior-year column in the FY2023 10-K, so its
+  growth is None ("new in FY23"). The cash-return text names the repurchases the FY2024 and FY2025 statements of cash flows print.
+- **The prints.** As in 2018-2021 (revenues, cost of sales and fuel for net margin, operating income, income before income taxes, diluted
+  EPS, diluted shares, cash), in thousands to Q4 2022 and in millions from Q1 2023, carried in thousands. Each year-ago revenue and EPS is
+  asserted equal to the earlier print's, within the rounding of the unit change in 2023 (Q2 2023 prints its year-ago revenues $0.7M
+  under Q2 2022's $5,996.7M, as printed). From Q4 2024 EPS is on net income attributable to ONEOK. The Distribution signal stays n/r.
+- **Current-FY EPS: the stated per-share guide.** From 2022 every numeric guide states diluted EPS: a range in the guidance table (FY2022
+  $3.45-4.07, FY2023 $5.03-5.69, FY2024 $4.45-5.14, FY2025 $4.97-5.77 from the 8-K of 2025-02-26, as the Q4 2024 release gives none,
+  FY2026 $5.04-5.87), or a midpoint stated alone, a point (lo = hi; the Q3 2021 encoding): $5.54 (Q2 2023), $5.36 (Q3 2023), $4.92 (Q1
+  2024), $5.02 (Q3 2024), $5.53, $5.68 and $6.30 (Q1-Q3 2026). One-offs are in as published (the LLY and UNH rule: the Medford gain in the
+  FY2023 range, the Q3 2026 quarter's $336M tax benefit in its $6.30). Affirmations are words and keep the last figure (Q1-Q3 2022, Q1
+  2023, Q2 2024, Q1-Q3 2025). The Q3 2022 release's "more than 10% increase in 2023 net income" and the 8-K of 2025-02-26's "greater
+  than 15% earnings per share growth" for 2026 are one-sided bounds, no field (each year becomes current only after its first range; asserted).
+- **Two guides on the deal basis (decided here).** The Q2 2023 guide excludes the then pending Magellan merger: used, as it assumes no
+  pending deal. The Q3 2023 release gives a consolidated midpoint (Magellan, closed 2023-09-25, in, with $175 million of transaction
+  costs and the inventory valuation: $5.36) beside the pre-acquisition basis ($5.81): the consolidated one is used, the acquisition in as
+  published (the page image confirms the columns). The Q3 2024 release gives a consolidated midpoint ($5.11) that "includes expected future
+  contributions from EnLink and Medallion", the Medallion acquisition still pending on its date (closed 2024-10-31), beside a stand-alone
+  midpoint ($5.02) that leaves out both EnLink (closed 2024-10-15) and Medallion: the stand-alone one is used, by the pending-deal rule of
+  "OKE 2014-2017" (a guide that assumes a pending deal adds nothing), the consolidated figure named in the note.
+- **No revenue or margin guide in numbers,** so BASE stays the latest quarter's revenue growth as reported plus the share term.
+- **Dividends,** each rate change from the first filing that states it: $0.955 (8-K, 2023-01-20), $0.99 (8-K, 2024-01-19), $1.03 (the Q4
+  2024 release, 2025-02-25: no dividend 8-K was filed for the January 2025 increase) and $1.07 (the Q4 2025 release, 2026-02-24); every
+  other declaration keeps the rate, read by its text.
+- **Themes.** ENERGY_TRANSITION stays out of scope with ONEOK as the holder of no reserves; the climate-demand risk factor of the FY2019-
+  FY2020 10-Ks is gone (asserted), so the "why" quotes the climate risk factor's heading instead ("Increasing attention to ESG matters,
+  including climate change, may impact our business.", reworded later; `ENERGY_TRANSITION_esg`, text only). **GENAI (live 2022-11-30) and
+  GLP1 (2023-08-08) are out of scope**: their scopes name software, services and content, and food and devices; the FY2021-FY2024 10-Ks
+  use no "artificial intelligence" and the FY2025 10-K's one AI sentence is its own computing policy ("The use of emerging technologies,
+  including the use of Cloud Services and Artificial Intelligence, is governed by our End-User Computing Policy.", `GENAI_words`, text
+  only); no 10-K names a GLP-1 drug, electric vehicles or crypto (asserted, `theme_absent`). The FY2023-FY2025 10-Ks' cloud words are
+  their cybersecurity vendors (`CLOUD_vendor`, text only). The FY2024-FY2025 10-Ks' data-center demand words name no theme. DURABLE: no
+  FY2021-FY2025 10-K uses the word cyclical (asserted). No anachronism term is added.
+- **Builder changes** (`build_oke.py`, all inert on 2008-2021): the live-theme list takes GENAI and GLP1 with their scope reading and the
+  three new text-only quotes; a positive figure that reads as a later calendar year gets a digit separator (Q1 2023's +2,095bp operating
+  margin change, written `2_095.0` in LATEST and "+2,095bp" in the franchise line, which the validator otherwise warned on as "2095";
+  the `shares_lit` idea). The 8-K of 2025-02-26's source title names only its 2025 guidance (its "2026 growth outlook" tripped the year scan).
+
+Controls and checks (before any outcome):
+- **`retro_tool run` passes on all 256 dates, with no warning** (after the two text fixes above; no class moved).
+- **Controls** (`controls_oke_2226.py`, in memory): each print's revenues +10% (net margin re-derived), each vintage's last-year EPS and
+  revenue, each guide +$0.10 a share (a guide in words gets planted text) and each dividend set to $0.11 a quarter: 49 controls, none
+  changes a model dated before its publication, and 47 change models from the first weekly date on or after it. The 2 inert are the
+  $1.03 and $1.07 rates first stated in the Q4 2024 and Q4 2025 releases: the next trading day's 10-K states the same rate and is the
+  week's date, so no weekly date reads the release's fact alone (by design, as each Q4 print's actuals). No split or distribution falls in
+  the range (the generator asserts Yahoo has none after 2014-02-03).
+- **Leak scan:** 0 hits in 109,471 (model, later token) pairs; positive control: the latest print's tokens in 256 of 256 models.
+  **Forward references:** 0 in 77 facts. **Self-text scan:** 27 tokens of 871, all benign: 23 computed net margins (revenues less cost
+  of sales and fuel, in no filing by construction) and the Q4 2021 print's carried method text ("ONE Gas", "2014", "April", "May").
+- **Regression:** the 2008-2021 models (732) rebuild byte-identical with the extended sheet and builder.
+- **Firewall** (run after the build, validation outputs and README section were committed and pushed, before any outcome), at the 9
+  cutoffs above (the Q4 2021 print, the FY2021 vintage, the Q3 2023 consolidated guide, the FY2023 vintage, the Q3 2024 stand-alone
+  guide, the FY2024 vintage with the 2025 guidance 8-K, the FY2025 vintage, the Q3 2026 print and 2026-11-28): it passes at all 9, 740
+  to 988 dates each (2008-2021 included), 0 files changed and no planted text. Besides the earlier plants, each cutoff plants the
+  vintage's climate risk heading, cloud vendor words and AI words.
+
+Seen in the build (method behaviour, not tuned):
+- **CHEAP 242, FAIR 14 of 256 dates;** legacy tiers BUY 220, ACCUMULATE 29, WATCHLIST 7. 2022-2023: CHEAP on all 104; 2024: CHEAP 50,
+  FAIR 2; 2025: CHEAP 51, FAIR 1; 2026: CHEAP 37, FAIR 11.
+- The guides run 13-19x most of the time against a ten-year median that falls from 29x (2022) to 17x (2026) as the 2012-2015 days at
+  the small pre-merger earnings leave the window; the FAIR dates are the late-2024 peak ($109-117, 22-23x on FY24E $5.02) and the spring
+  of 2026 ($88-92 on FY26E $5.53).
+
+How far each call moves the classes (the 256 dates rebuilt with one encoding changed, classified offline with `retro_tool`'s classifier;
+`sens_oke_2226.py`; no outcome consulted):
+- **a five-year P/E window:** **74 classes** (CHEAP to FAIR 35, CHEAP to RICH 25, FAIR to RICH 14), 116 tiers, 2024-04-19 to
+  2026-10-23: the largest call (a five-year window holds only the merged company's higher multiples, 2019-2026);
+- **every signal at its BEAR value:** 65 classes (CHEAP to FAIR 26, CHEAP to RICH 25, FAIR to RICH 14), no tier; **at XBULL:** 11 classes
+  (FAIR to CHEAP, 2026), no tier; **the n/r Distribution signal at BEAR:** 1 class; **at XBULL:** 11 classes;
+- **BASE on the latest quarter's net margin growth** instead of revenues: 21 classes (CHEAP to FAIR 18, FAIR to CHEAP 3), 39 tiers;
+- **no share-count term in BASE** (the merger shares not read as dilution): 12 classes (FAIR to CHEAP), 14 tiers;
+- **no EPS guide from FY2022** (the last full year's EPS): 4 classes, 11 tiers;
+- **FY2023 at $4.61 and FY2024 at $4.87** without their listed net benefits: 2 classes (CHEAP to FAIR, November-December 2024), 5 tiers;
+- **the Q3 2024 consolidated midpoint ($5.11)** instead of the stand-alone one: 1 class (2025-01-17, FAIR to CHEAP), 1 tier;
+- **the Q3 2023 pre-acquisition midpoint ($5.81)**, **the Q3 2026 guide without its $0.53 tax benefit ($5.77)**, **the stated midpoints
+  replaced by net income over the release's shares**, **the days before 2014-02-03 at Yahoo's adjusted prices** and **2010-2013 as the
+  FY2013 10-K reports them**: no class (the last two leave the window in early 2024).
+The CHEAP calls rest above all on the ten-year window (whose median still holds the pre-merger multiples) and on the signals; the
+guide readings and the one-off tests move at most 4 classes.
+
+Judgement calls that could carry hindsight:
+- the stated guides as current-FY EPS, the midpoints stated alone as points, one-offs in;
+- the deal-basis readings: the Q3 2023 consolidated midpoint over the pre-acquisition one, the Q3 2024 stand-alone midpoint over the
+  consolidated one (the pending Medallion), the Q2 2023 stand-alone guide;
+- FY2021-FY2025 kept at GAAP by the one-off tests (the FY2023 Medford gain and FY2024 divestiture gains included);
+- the acquisitions as published: the merger shares read as dilution in BASE and the acquisition quarters' revenue growth as BASE;
+- the carried calls: BASE on revenues as reported, the signals and their rule-T thresholds, the restated 2010-2014 and the as-traded
+  pre-separation prices while those years remain in the window, the ten-year window;
+- GENAI, GLP1, EV, CRYPTO and ENERGY_TRANSITION out of scope, DURABLE (label only);
+- the text-layer reading of the slide releases (each figure checked word for word, every year-ago figure against the earlier print);
+- the parts of the filings listed as not read.
+
+The hindsight results for 2022-2026 are in `staging/retrospective/OKE/FINDINGS.md`, "OKE 2022-2026 (hindsight)": hypotheses, never inputs.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are

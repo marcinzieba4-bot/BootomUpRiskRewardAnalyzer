@@ -1,0 +1,153 @@
+
+════════════════════════════════════════════════════════════════════════
+  OKE  ·  ONEOK, Inc.  ·  $92.46  ·  RETROSPECTIVE as of 2026-04-30
+  Signal: ◎ ACCUMULATE   Ratio B: 0.97x   Adj gap: +0.32  [MODESTLY UNDERVALUED]
+  Point-in-time: 14 sources, latest published 2026-04-30; latest print Q1 2026 (Apr 28)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2026E revenues, USD bn  →  FY2028E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Operating segment            FY2026E      Bear      Bull    Δ Bear    Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Natural Gas Gathering an  $     8.0  $   8.0  $  10.8      +0.0      +2.8
+    +67.4% revenues in FY25
+  Natural Gas Liquids       $    16.7  $  16.7  $  22.4      +0.0      +5.7
+    +5.6% revenues in FY25
+  Natural Gas Pipelines     $     1.9  $   1.9  $   2.6      +0.0      +0.7
+    +124.6% revenues in FY25
+  Refined Products and Cru  $    13.6  $  13.6  $  18.3      +0.0      +4.7
+    +192.4% revenues in FY25
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                     $    40.2  $  40.2  $  54.1      +0.0     +13.9
+  FY2026E = FY25 $33.63B × (1 + 19.6%: no FY26 revenue guide in numbers, Q1 2026 revenues as reported, applied to the year (no FY26 revenue guide)); split pro rata to FY25 segment total revenues, intersegment revenues included (FY2025 10-K segment note; eliminations and Other left out)
+  Q1 2026 (Apr 28): revenues $9.62B +19.6%; net margin +7.4%, Distribution operating income n/r;
+  operating margin 14.85% (-32.0bp); pre-tax margin 10.62% (-42.0bp); EPS $1.23 vs $1.04
+  Activity: revenues $9,618.0M vs $8,043.0M a year earlier; net margin $2,565.0M vs $2,388.0M (revenues less cost of sales and fuel); Distribution operating income n/r (the natural gas distribution business separated as ONE Gas on January 31, 2014); operating income $1,428.0M, income before income taxes $1,021.0M; cash and cash equivalents $172.0M at the quarter's end (consolidated); EPS diluted $1.23 vs $1.04 (no discontinued operations); on net income attributable to ONEOK
+  FY26: no revenue or margin guide in numbers (BASE takes Q1 2026 revenue growth as reported); EPS $5.53 from the Q1 2026 release: 'Earnings per diluted share increased to a midpoint of $5.53.'
+
+  FY2026E EPS check:  $40.2B × 13.4% pre-tax × (1−22.9%) ÷ 0.632B  =  $6.55  (FY2026E: GAAP net income guidance, the Q1 2026 release's $5.53 a diluted share (the per-share midpoint the release states, beside net income of $3,210-3,790 million) = $5.53)
+  FY2028E BEAR check: $40.2B × 13.4% ÷ 0.783B  =  $5.29  (scenario $1.18)
+  FY2028E BULL check: $54.1B × 13.8% ÷ 0.783B  =  $7.33  (scenario $7.18)
+  Every 1pp of pre-tax margin ≈ $0.49 EPS ≈ $9/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                               BEAR     BASE     BULL    XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Net margin growth                   -8.0%    ≥5.0%   ≥17.0%   ≥38.0%     +7.4%  ◦ BASE  ██░░
+  Distribution op. income growth     -88.0%  ≥-42.0%    ≥3.0%   ≥57.0%       n/r  ◦ BASE  ██░░
+  Revenue growth                     -38.0%   ≥-6.0%   ≥26.0%  ≥261.0%    +19.6%  ◦ BASE  ██░░
+  Operating margin change           -1350.0bp  ≥-720.0bp  ≥-100.0bp  ≥430.0bp   -32.0bp  ▲ BULL  ███░
+  Pre-tax margin change             -1150.0bp  ≥-590.0bp  ≥-30.0bp  ≥620.0bp   -42.0bp  ◦ BASE  ██░░
+  Disruption theme: none in scope    +1.0/4   ≥2.0/4   ≥3.0/4   ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.15 / 4.00
+  Market composite:   1.93 / 4.00  (back-solved from $92 + 15% hurdle)
+  SCA adjustment:    +0.10  ·  EPP-distance adj +0.00  →  Adj composite 2.25  →  Gap +0.32  [MODESTLY UNDERVALUED]
+
+  Structural factors:
+    +  Franchise: FY25 revenues +55.0%; Q1 net margin +7.4%, operating margin 14.85% (-32bp)  (+0.40 × 20%  =  +0.080)
+    +  Multiple: 16.7x FY26E vs a 18.6x 10-yr median (41st percentile of its own range)  (+0.15 × 25%  =  +0.037)
+    -  Growth vs own history: no FY26 revenue guide in numbers, Q1 2026 revenues as reported +19.6% vs a 22.7% 9-yr median  (-0.31 × 20%  =  -0.062)
+    +  FY25 free cash flow $2.45B (consolidated), dividend $4.28 a year, repurchase of common stock $75.0M; no issuance of common stock for cash (no such line)  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                             Current  Bear val  Move    Trigger
+  Net margin growth                    +7.4%     -8.0%  -15.4%  NGL spreads, volumes and storage marg…
+  Distribution op. income growth         n/r    -88.0%     n/r  Rate cases lag costs; warm weather cu…
+  Revenue growth                      +19.6%    -38.0%  -57.6%  Commodity prices and marketed volumes…
+  Operating margin change            -32.0bp  -1350.0bp  -1318.0bp  Costs outrun the margin on sales
+  Pre-tax margin change              -42.0bp  -1150.0bp  -1108.0bp  Interest and charges as earnings fall
+  Disruption theme: none in scope     +2.0/4    +1.0/4  -1.0/4  No live disruption theme covers gas u…
+
+  Bear composite:  1.00  →  Bear scenario price: ~$53  (model)  /  $15 (defined)
+  Bear probability (proxy model):  15.5%
+
+  KEY TRIGGER: Net margin growth went from +6.6% (Q4 2025) to +7.4% (Q1 2026);
+  the bear case needs Distribution (n/r now) and revenues
+  (+19.6% now) to give way as well. Fee-based NGL, gathering and pipeline services carry part of the cash, commodity-priced
+  processing margins and NGL spreads the rest; the bear needs both to give way.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $5.53  (FY2026E: GAAP net income guidance, the Q1 2026 release's $5.53 a diluted share (the per-share midpoint the release states, beside net income of $3,210-3,790 million) = $5.53)
+  Min viable P/E at panic:          13x  [median of calendar-year P/E lows: 2016 21.4x, 2017 36.8x, 2018 18.3x, 2019 17.7x, 2020 10.8x, 2021 11.2x, 2022 13.2x, 2023 10.3x, 2024 13.1x, 2025 11.9x, 2026 12.8x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $72/share
+  Current $92 vs Updated EPP $72:  +29%  moderate distance to floor
+  Bear $15 vs Updated EPP $72:  -79%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    +0.00 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                              Conservative  vs Current  Rationale
+  Net margin growth                            5.0       -2.4   BASE floor (vs +7 now)
+  Distribution op. income growth             -42.0        n/r   BASE floor (not reported now)
+  Revenue growth                              -6.0      -25.6   BASE floor (vs +20 now)
+  Operating margin change                   -720.0     -688.0   BASE floor (vs -32 now)
+  Pre-tax margin change                     -590.0     -548.0   BASE floor (vs -42 now)
+  Disruption theme: none in scope              2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $5.53 × (1+6.3%)² = $6.25
+  At 18x P/E (conservative):  $112/share
+  + Cumul. dividends (2yr):  +$8.82/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $112  (▲20 from $92)
+  Conservative total return:  +31% over 2yr  = +16%/yr
+
+  At 16.7x the multiple is already near its 18x median, so the conservative
+  case is a growth question: breakeven at 18x needs FY2028E EPS of $4.65,
+  i.e. -8.3%/yr — the business, not the multiple, carries the risk.
+
+  ⑤ VOLATILITY CONTEXT
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $64.02  –  $95.30  (at 91th pct of range)
+  Annual dividend:      $4.28/share  (yield 4.6%)
+  Realized vol (1yr):   25% annualized
+  Beta vs broad market: 0.12
+  1-sigma range (1yr):  $69  –  $116  ($92 ± 25%)
+  2-sigma range (1yr):  $45  –  $139
+  ────────────────────────────────────────────────────────────
+  Bear $15 requires:  ~3.3σ price move  (unusual — requires fundamental break)
+  A midstream service provider with a 0.1 beta: the stock is +44% off its November
+  low while Net margin growth went from +6.6% (Q4 2025) to +7.4% (Q1 2026).
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS    P/E     Price   Proxy%   Market%     Gap  Description
+  BEAR        1.18  12.6x  $     15    15.5%     21.3%    -5.7pp  EPS -53.7%/yr (worst year FY16-FY25, capped at 0%); P/E to its 10th pct
+  BASE        6.48  18.6x  $    121    54.1%     58.7%    -4.6pp  EPS +8.3%/yr (Q1 revenues + margin + buyback); P/E at its 10-yr median
+  BULL        7.18  24.0x  $    172    25.6%     16.8%    +8.7pp  EPS +14.0%/yr (FY16-FY25 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL      14.95  39.5x  $    591     4.8%      3.2%    +1.6pp  EPS +64.4%/yr (best 2-yr run FY16-FY25, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $140  /  Market EV: $122  /  Current: $92
+  Conservative EV (2yr, ④): $112 + $8.82 divs = $121 total value
+  Downside (→ Bear $15): 83.8%   Upside (→ Bull $172): 86.0%   Ratio B 0.97x  →  ◎ ACCUMULATE
+
+  To earn the 15%/yr hurdle from $92 the market needs $122 in two years —
+  between the BASE and BULL cases. That is a market composite of 1.93 against a model
+  read of 2.25: the numbers support more than the price asks.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                       0.97x     +29%    +0.32  MODESTLY UNDERVALUED / ACCUMULATE
+  Multiples one band richer (p25/p75/p90/max)     0.39x     +29%    +0.66  UNDERVALUED / BUY
+  Multiples one band cheaper (p5/p25/med/p75)     1.89x     +29%    -0.12  FAIRLY VALUED / AVOID
+  Scenario EPS +1.5pp/yr                          0.91x     +29%    +0.36  MODESTLY UNDERVALUED / ACCUMULATE
+  Scenario EPS -1.5pp/yr                          1.05x     +29%    +0.26  MODESTLY UNDERVALUED / ACCUMULATE
+  Structural read +0.30 (bullish SCA)             0.97x     +29%    +0.62  UNDERVALUED / ACCUMULATE
+  EPP P/E +3 turns (softer floor)                 0.97x      +4%    +0.32  MODESTLY UNDERVALUED / ACCUMULATE
+  Hurdle 10%/yr instead of 15%                    0.97x     +29%    +0.44  MODESTLY UNDERVALUED / ACCUMULATE
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 print (late July or early August) — the next read on net margin (+7.4% now) and Distribution (n/r now)
+  (2) Margins — operating -32.0bp and pre-tax -42.0bp in Q1 2026: charges, interest and commodity prices
+  (3) The FY26 outlook — GAAP EPS $5.53 (the Q1 2026 release's $5.53 a diluted share (the per-share midpoint the release states, beside net income of $3,210-3,790 million)); no revenue or margin guide in numbers
+  (4) Free cash flow — FY25 cash provided by operating activities $5,599.0M less capital expenditures $3,152.0M (FY2025 10-K, consolidated)
+  (5) Capital return at 17x — repurchase of common stock $75.0M; no issuance of common stock for cash (no such line): management's own read of the multiple
+  ◎ ACCUMULATE  |  EPP floor $72  |  ADD below ~$103  |  TRIM above $172
+════════════════════════════════════════════════════════════════════════
+
