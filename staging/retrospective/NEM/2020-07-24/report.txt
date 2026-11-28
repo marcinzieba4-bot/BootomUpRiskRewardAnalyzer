@@ -1,0 +1,149 @@
+
+════════════════════════════════════════════════════════════════════════
+  NEM  ·  Newmont Corporation  ·  $66.75  ·  RETROSPECTIVE as of 2020-07-24
+  Signal: ✕ AVOID   Ratio B: infx   Adj gap: -1.17  [OVERVALUED]
+  Point-in-time: 12 sources, latest published 2020-07-24; latest print Q1 2020 (May 5)
+════════════════════════════════════════════════════════════════════════
+
+  SEGMENT REVENUE BRIDGE  (FY2020E revenue, USD bn  →  FY2022E BEAR / BULL)
+  ──────────────────────────────────────────────────────────────────────
+  Segment                        FY2020E     Bear     Bull   Δ Bear   Δ Bull
+  ──────────────────────────────────────────────────────────────────────
+  Gold                          $ 12.96  $12.96  $13.00    +0.00    +0.04
+    +30.2% revenue in FY19
+  Other metals                  $  0.99  $ 0.99  $ 0.99    +0.00    +0.00
+    +128.1% revenue in FY19
+  ──────────────────────────────────────────────────────────────────────
+  TOTAL                         $ 13.95  $13.95  $13.99    +0.00    +0.04
+  FY2020E = FY19 $9.740B × (1 + 43.2%: the Q1 2020 revenue growth (no revenue guide), YoY, applied to the year (no FY20 revenue guide)); split pro rata to FY19 sales by metal (FY2019 10-K; other metals as sales less gold)
+  Q1 2020 (May 5): revenue $2.581B +43.2% YoY; gold ounces sold +9.1%; costs applicable to sales $781/oz (+11.4%);
+  pre-tax margin 30.18% (+1493.0bp); EPS $1.04 vs $0.21 (+395.2%)
+  Revenue: sales $2,581M vs $1,803M a year earlier; consolidated gold ounces sold 1,460K vs 1,338K; costs applicable to sales $781 an ounce of gold vs $701; GAAP diluted EPS from continuing operations $1.04 vs $0.21; diluted shares 809M; adjusted figures, display only: adjusted net income1 of $326 million or $0.40 per diluted share
+  FY20 outlook (Q1 2020 release, 2020-05-05, display only): 'On March 23, the Company withdrew its full-year 2020 guidance' — a production and unit-cost outlook: method r2 has no input for a production guide (the XOM rule) or for cost components (the MSFT segment rule), so no field; no filing guides revenue, EPS or a margin; BASE takes Q1 2020 revenue growth
+
+  FY2020E EPS check:  $13.950B × 37.9% pre-tax × (1−22.5%) ÷ 0.809B  =  $5.07  (FY2020E: no EPS guide in numbers, FY14's $1.28 (GAAP) stands (FY15 excluded: the AAPL FY2002 test, then $(0.02) restated; FY16 excluded: a loss; FY17 excluded: a loss; FY18 excluded: the AAPL FY2002 test; FY19 excluded: the mirror of the AAPL FY2002 test, the Nevada Gold Mines gain))
+  FY2022E BEAR check: $13.950B × 37.9% ÷ 0.879B  =  $4.66  (scenario $1.28)
+  FY2022E BULL check: $13.990B × 38.3% ÷ 0.879B  =  $4.73  (scenario $2.47)
+  Every 1pp of pre-tax margin ≈ $0.134 EPS ≈ $2.16/share at the median P/E
+
+  ① SIGNAL DASHBOARD
+  Signal                                  BEAR      BASE      BULL     XBULL       NOW  Score
+  ──────────────────────────────────────────────────────────────────────
+  Gold ounces sold                      -27.0%   ≥-13.0%     ≥1.0%    ≥40.0%     +9.1%  ▲ BULL  ███░
+  Costs applicable to sales per oz      +52.0%    ≤28.0%     ≤5.0%   ≤-14.0%    +11.4%  ◦ BASE  ██░░
+  Revenue growth                        -33.0%   ≥-10.0%    ≥13.0%    ≥55.0%    +43.2%  ▲ BULL  ███░
+  EPS growth                           -106.0%   ≥-34.0%    ≥38.0%   ≥297.0%   +395.2%  ★ XBULL  ████
+  Pre-tax margin change               -8210.0bp  ≥-4020.0bp  ≥180.0bp  ≥3780.0bp  +1493.0bp  ▲ BULL  ███░
+  Disruption theme: none live           +1.0/4    ≥2.0/4    ≥3.0/4    ≥4.0/4    +2.0/4  ◦ BASE  ██░░
+
+  Proxy composite:    2.80 / 4.00
+  Market composite:   3.77 / 4.00  (back-solved from $66.75 + 15% hurdle)
+  SCA adjustment:    +0.10  ·  EPP-distance adj -0.30  →  Adj composite 2.60  →  Gap -1.17  [OVERVALUED]
+
+  Structural factors:
+    +  Franchise: FY19 consolidated gold ounces sold 6,465K (+17.2%), costs applicable to sales $721/oz (+1.8%) (FY2019 10-K); Q1 $781/oz (+11.4% YoY)  (+0.40 × 20%  =  +0.080)
+    -  Multiple: 52.1x FY20E vs a 16.2x 10-yr ex-FY11 ex-FY13 ex-FY15 ex-FY16 ex-FY17 ex-FY18 ex-FY19 median (100th percentile of its own range)  (-0.50 × 25%  =  -0.125)
+    +  Growth vs own history: Q1 2020 revenue growth (no revenue guide) +43.2% vs a -1.7% 9-yr median  (+0.50 × 20%  =  +0.100)
+    +  Cash and cash equivalents $3.709B, debt $6,116M (long-term $6,030M and current $86M) (Q1 2020), FY19 free cash flow $1.413B (net cash provided by (used in) operating activities of continuing operations $2,876M less additions to property, plant and mine development $1,463M (FY2019 10-K)), dividend $1.00 a year  (+0.30 × 15%  =  +0.045)
+
+  ② BEAR CASE ANATOMY  (what variables need to do for BEAR to materialise)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                               Current  Bear val  Move    Trigger
+  Gold ounces sold                       +9.1%    -27.0%  -36.1%  Grades, recoveries and mine sequencin…
+  Costs applicable to sales per oz      +11.4%    +52.0%  +40.6%  Labor, fuel, power and currencies lif…
+  Revenue growth                        +43.2%    -33.0%  -76.2%  Gold and copper prices and volumes fa…
+  EPS growth                           +395.2%   -106.0%  -501.2%  Write-downs and unit costs outrun the…
+  Pre-tax margin change               +1493.0bp  -8210.0bp  -9703.0bp  Unit costs and charges outrun the met…
+  Disruption theme: none live           +2.0/4    +1.0/4  -1.0/4  No live disruption theme
+
+  Bear composite:  1.00  →  Bear scenario price: ~$23.92  (model)  /  $16.13 (defined)
+  Bear probability (proxy model):  5.2%
+
+  KEY TRIGGER: gold ounces sold went from +12.9% (Q4 2019) to +9.1% YoY (Q1 2020), revenue +43.2%;
+  the bear case needs unit costs (+11.4% per ounce now) rising faster than the metal
+  price, with the pre-tax margin (+1493.0bp now) giving way. A gold miner's downturn shows up in unit costs and ounces first;
+  the bear needs the gold price to stop covering them.
+
+  ③ UPDATED EPP  (floor anchored on TODAY's fundamentals × trough multiple)
+  ──────────────────────────────────────────────────────────────────────
+  Today's normalized EPS:          $1.28  (FY2020E: no EPS guide in numbers, FY14's $1.28 (GAAP) stands (FY15 excluded: the AAPL FY2002 test, then $(0.02) restated; FY16 excluded: a loss; FY17 excluded: a loss; FY18 excluded: the AAPL FY2002 test; FY19 excluded: the mirror of the AAPL FY2002 test, the Nevada Gold Mines gain))
+  Min viable P/E at panic:          13x  [median of calendar-year P/E lows: 2010 12.1x, 2012 11.7x, 2014 13.9x, 2020 30.9x]
+  ────────────────────────────────────────────────────────────
+  UPDATED EPP:                     $16.64/share
+  Current $66.75 vs Updated EPP $16.64:  +301%  ⚠ far above floor — large drawdown room
+  Bear $16.13 vs Updated EPP $16.64:  -3%  ← bear sits below the floor (multiple-driven)
+  EPP-distance adjustment (v2):    -0.30 on the composite
+
+  ④ CONSERVATIVE GROWTH  (2-yr, signals at BASE lower bound — no tailwinds)
+  ──────────────────────────────────────────────────────────────────────
+  Signal                                Conservative  vs Current  Rationale
+  Gold ounces sold                             -13.0      -22.1   BASE floor (vs +9 now)
+  Costs applicable to sales per oz              28.0      +16.6   BASE floor (vs +11 now)
+  Revenue growth                               -10.0      -53.2   BASE floor (vs +43 now)
+  EPS growth                                   -34.0     -429.2   BASE floor (vs +395 now)
+  Pre-tax margin change                      -4020.0    -5513.0   BASE floor (vs +1493 now)
+  Disruption theme: none live                    2.0       +0.0   BASE floor (vs +2 now)
+
+  Conservative 2yr EPS:   $1.28 × (1+37.0%)² = $2.40
+  At 16x P/E (conservative):  $38.43/share
+  + Cumul. dividends (2yr):  +$2.06/share
+  ────────────────────────────────────────────────────────────
+  Conservative 2yr price:     $38.43  (▼28.32 from $66.75)
+  Conservative total return:  -39% over 2yr  = -20%/yr
+
+  37.0% EPS growth is what is left once the premium multiple (52.1x)
+  mean-reverts to 16x. Breakeven at 16x needs FY2022E EPS of $4.04,
+  i.e. 77.7%/yr — the multiple, not the business, is the risk.
+
+  ⑤ VOLATILITY CONTEXT  (1-yr)
+  ──────────────────────────────────────────────────────────────────────
+  52-week range:        $33.00  –  $69.13  (at 93th pct of range)
+  Annual dividend:      $1.00/share  (yield 1.5%)
+  Realized vol:         42% annualized (1-yr daily log returns)
+  Beta vs broad market: 0.30
+  1-sigma range (1yr):  $38.78  –  $94.72  ($66.75 ± 42%)
+  2-sigma range (1yr):  $10.81  –  $122.69
+  ────────────────────────────────────────────────────────────
+  Bear $16.13 requires:  ~1.8σ price move  (unusual — requires fundamental break)
+  A gold producer whose revenue follows the gold price: the stock is +83% off its July
+  low (52 weeks) while gold ounces sold went from +12.9% (Q4 2019) to +9.1% YoY (Q1 2020), revenue +43.2%.
+  The rally is in the multiple, not the numbers.
+
+  ⑥ SCENARIO PROBABILITIES  (proxy model vs market-implied)
+  ──────────────────────────────────────────────────────────────────────
+  Scenario     EPS     P/E     Price   Proxy%   Market%      Gap  Description
+  BEAR        1.28   12.6x  $  16.13     5.2%      1.2%    +3.9pp  Flat EPS (no EPS change in FY10-FY14 ex-FY11 ex-FY13 to measure: the 0% cap); P/E to its 10th pct
+  BASE        2.47   16.2x  $  40.01    18.0%      4.3%   +13.7pp  EPS +39.0%/yr (Q1 revenue YoY + margin + buyback); P/E at its 10-yr ex-FY11 ex-FY13 ex-FY15 ex-FY16 ex-FY17 ex-FY18 ex-FY19 median
+  BULL        2.47   19.7x  $  48.66    62.8%     15.0%   +47.8pp  EPS +39.0%/yr (FY10-FY14 ex-FY11 ex-FY13 CAGR, at least BASE); P/E holds its 75th pct
+  XBULL       2.47   39.8x  $  98.31    14.0%     79.5%   -65.4pp  EPS +39.0%/yr (best 2-yr run FY10-FY14 ex-FY11 ex-FY13, at least BULL); P/E at its 90th pct
+
+  Proxy EV (2yr): $52.39  /  Market EV: $87.34  /  Current: $66.75
+  Conservative EV (2yr, ④): $38.43 + $2.06 divs = $40.49 total value
+  Downside (→ Bear $16.13): 75.8%   Upside (→ Bull $48.66): -27.1%   Ratio B infx  →  ✕ AVOID
+
+  To earn the 15%/yr hurdle from $66.75 the market needs $88.28 in two years —
+  above the BULL case. That is a market composite of 3.77 against a model
+  read of 2.60: the price asks for more than the numbers support.
+
+  ⑦ ROBUSTNESS  (each line changes one input; classification uses the same rules)
+  ──────────────────────────────────────────────────────────────────────
+  Variant                                       Ratio B  EPP gap  Adj gap  Verdict
+  Main case                                        infx    +301%    -1.17  OVERVALUED / AVOID
+  Multiples one band richer (p25/p75/p90/max)     1.58x    +301%    -0.13  FAIRLY VALUED / WATCHLIST
+  Multiples one band cheaper (p5/p25/med/p75)      infx    +301%    -1.20  OVERVALUED / AVOID
+  Scenario EPS +1.5pp/yr                           infx    +301%    -1.10  OVERVALUED / AVOID
+  Scenario EPS -1.5pp/yr                           infx    +301%    -1.17  OVERVALUED / AVOID
+  Structural read +0.30 (bullish SCA)              infx    +301%    -0.87  OVERVALUED / AVOID
+  EPP P/E +3 turns (softer floor)                  infx    +226%    -1.17  OVERVALUED / AVOID
+  Hurdle 10%/yr instead of 15%                     infx    +301%    -0.96  OVERVALUED / AVOID
+
+════════════════════════════════════════════════════════════════════════
+  Key catalysts to watch (from the as-of date):
+  (1) Q2 print (late July) — revenue against the Q1 2020 revenue growth (no revenue guide): +43.2% YoY
+  (2) Unit costs — costs applicable to sales +11.4% per ounce in Q1 2020: what must hold if the gold price does not
+  (3) The FY20 outlook — gold sales and unit costs, not revenue or EPS (Q1 2020 release): the gold price sets revenue
+  (4) Ounces — consolidated gold ounces sold +9.1% in Q1 2020 against revenue +43.2%: the metal price, not volume, has carried revenue
+  (5) Capital structure at 52x — dividends declared $1.44 a share in FY2019; share repurchases text only
+  ✕ AVOID  |  EPP floor $16.64  |  ADD below ~$34.01  |  TRIM above $48.66
+════════════════════════════════════════════════════════════════════════
+

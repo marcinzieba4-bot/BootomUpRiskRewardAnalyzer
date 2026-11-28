@@ -233,3 +233,107 @@ drawdown -29.4 -29.4
 - Hypothesis for a later method version (never this one): for a miner whose GAAP years swing between write-down losses and thin profits,
   the rollover anchor goes stale for years at a time (FY12 to February 2015, FY14 to the end of 2017); an anchor rule that tracks the
   metal price or production economics would be a new rule, decided before scoring, with a full re-run.
+
+# NEM 2018-2021 (hindsight)
+
+Patterns seen in `outcome.json` for the 209 weekly dates from 2018-01-05 to 2021-12-31. **Labels and hypotheses**: never feed them back into
+the method or the fact sheet. Scored only after the point-in-time build, validation outputs, README section and firewall result were
+committed and pushed (bb7663c31, dac282ed2, 6d75c5b82, e5e08862e), on 2026-11-28; the 2008-2017 findings above were first opened then.
+Every date has its 6-month, 1-, 2- and 3-year horizons. Total returns include the dividends paid. "Call held" is `call_check_2y`: CHEAP
+should clear the 15%/yr hurdle or beat SPY; RICH should not.
+
+Overall: RICH 183 dates, median 2-year total return +46.3%, 97 cleared the hurdle, 89 beat SPY, 80 calls held; FAIR 11, +51.3%, 11
+cleared; CHEAP 15, -24.7%, 0 cleared, 0 beat SPY, 0 calls held. Scenario landings at 2 years: XBULL 91, BULL 59, BEAR 46, BASE 13.
+
+## 2018 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID (2018-01-05 to 2018-12-28) | 52 | +67.3% | +11.3% to +129.1% | 40 | 46 | +21.1% | 6 |
+| FY17E $1.30 (FY14's) (2018-01-05 to 2018-02-16) | 7 | +16.7% | +11.3% to +25.2% | 0 | 1 | -4.9% | 6 |
+| FY18E $1.30 (FY14's) (2018-02-23 to 2018-04-20) | 9 | +32.0% | +12.6% to +48.8% | 4 | 9 | +0.3% | 0 |
+| FY18E $1.28 (FY14's) (2018-04-27 to 2018-12-28) | 36 | +90.2% | +50.2% to +129.1% | 36 | 36 | +61.2% | 0 |
+| latest print Q3 2017 (2018-01-05 to 2018-02-16) | 7 | +16.7% | +11.3% to +25.2% | 0 | 1 | -4.9% | 6 |
+| latest print Q4 2017 (2018-02-23 to 2018-04-20) | 9 | +32.0% | +12.6% to +48.8% | 4 | 9 | +0.3% | 0 |
+| latest print Q1 2018 (2018-04-27 to 2018-07-20) | 13 | +63.3% | +50.2% to +79.1% | 13 | 13 | +15.2% | 0 |
+| latest print Q2 2018 (2018-07-27 to 2018-10-19) | 13 | +110.1% | +92.7% to +129.1% | 13 | 13 | +63.5% | 0 |
+| latest print Q3 2018 (2018-10-26 to 2018-12-28) | 10 | +90.2% | +80.2% to +113.1% | 10 | 10 | +71.4% | 0 |
+3y (52 dates with one): 52 of 52 cleared, 46 beat SPY; range +54.8% to +106.6%
+1y range -21.8 35.4 excess 2y -9.8 108.9
+drawdown -29.4 -24.5
+
+## 2019 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID (2019-01-04 to 2019-11-01) | 44 | +75.6% | +42.7% to +145.8% | 44 | 39 | +70.1% | 0 |
+| class FAIR, legacy tier ACCUMULATE (2019-11-06 to 2019-11-29) | 4 | +57.2% | +51.6% to +64.3% | 4 | 3 | +62.1% | 4 |
+| class RICH, legacy tier ACCUMULATE (2019-12-06 to 2019-12-20) | 2 | +51.4% | +47.0% to +51.4% | 2 | 1 | +52.6% | 0 |
+| class RICH, legacy tier WATCHLIST (2019-12-13 to 2019-12-27) | 2 | +48.5% | +46.3% to +48.5% | 2 | 0 | +46.9% | 0 |
+| FY18E $1.28 (FY14's) (2019-01-04 to 2019-02-15) | 7 | +85.9% | +84.3% to +102.5% | 7 | 7 | +76.4% | 0 |
+| FY19E $1.28 (FY14's) (2019-02-22 to 2019-12-27) | 45 | +64.4% | +42.7% to +145.8% | 45 | 36 | +63.9% | 4 |
+| latest print Q3 2018 (2019-01-04 to 2019-02-15) | 7 | +85.9% | +84.3% to +102.5% | 7 | 7 | +76.4% | 0 |
+| latest print Q4 2018 (2019-02-22 to 2019-04-18) | 9 | +79.1% | +64.4% to +104.1% | 9 | 9 | +77.1% | 0 |
+| latest print Q1 2019 (2019-04-26 to 2019-07-19) | 13 | +107.3% | +60.6% to +145.8% | 13 | 13 | +76.3% | 0 |
+| latest print Q2 2019 (2019-07-26 to 2019-11-01) | 15 | +54.0% | +42.7% to +74.5% | 15 | 10 | +61.4% | 0 |
+| latest print Q3 2019 (2019-11-06 to 2019-12-27) | 8 | +51.6% | +46.3% to +64.3% | 8 | 4 | +58.4% | 4 |
+3y (52 dates with one): 28 of 52 cleared, 34 beat SPY; range +17.4% to +171.3%
+1y range 21.7 121.4 excess 2y -9.7 96.5
+drawdown -28.4 -24.5
+
+## 2020 (53 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class FAIR, legacy tier ACCUMULATE (2020-01-03 to 2020-02-14) | 7 | +49.9% | +40.0% to +53.4% | 7 | 5 | +37.7% | 6 |
+| class RICH, legacy tier AVOID (2020-02-21 to 2020-12-31) | 46 | -11.0% | -33.6% to +103.9% | 9 | 3 | -1.4% | 37 |
+| FY19E $1.28 (FY14's) (2020-01-03 to 2020-02-14) | 7 | +49.9% | +40.0% to +53.4% | 7 | 5 | +37.7% | 6 |
+| FY20E $1.28 (FY14's) (2020-02-21 to 2020-12-31) | 46 | -11.0% | -33.6% to +103.9% | 9 | 3 | -1.4% | 37 |
+| latest print Q3 2019 (2020-01-03 to 2020-02-14) | 7 | +49.9% | +40.0% to +53.4% | 7 | 5 | +37.7% | 6 |
+| latest print Q4 2019 (2020-02-21 to 2020-05-01) | 11 | +49.7% | +23.9% to +103.9% | 9 | 3 | +23.0% | 2 |
+| latest print Q1 2020 (2020-05-06 to 2020-07-24) | 12 | +14.8% | -17.1% to +31.1% | 0 | 0 | +4.0% | 12 |
+| latest print Q2 2020 (2020-07-31 to 2020-10-23) | 13 | -27.6% | -30.2% to -20.9% | 0 | 0 | -5.6% | 13 |
+| latest print Q3 2020 (2020-10-30 to 2020-12-31) | 10 | -14.3% | -33.6% to -11.0% | 0 | 0 | -4.5% | 10 |
+3y (53 dates with one): 0 of 53 cleared, 4 beat SPY; range -38.8% to +38.6%
+1y range -14.3 56.3 excess 2y -58.6 43.7
+drawdown -55.8 -28.4
+
+## 2021 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID (2021-01-08 to 2021-12-31) | 29 | -23.6% | -38.9% to -3.2% | 0 | 0 | -24.7% | 29 |
+| class RICH, legacy tier ACCUMULATE (2021-02-19 to 2021-03-05) | 2 | -12.1% | -14.4% to -12.1% | 0 | 0 | -1.5% | 2 |
+| class CHEAP, legacy tier BUY (2021-02-26 to 2021-10-22) | 15 | -24.7% | -27.2% to -11.8% | 0 | 0 | -21.9% | 0 |
+| class RICH, legacy tier WATCHLIST (2021-03-12 to 2021-10-29) | 6 | -14.1% | -21.3% to -8.5% | 0 | 0 | -13.7% | 6 |
+| FY20E $1.28 (FY14's) (2021-01-08 to 2021-02-12) | 6 | -6.5% | -11.1% to -3.2% | 0 | 0 | -4.9% | 6 |
+| FY21E $3.31 (FY20's) (2021-02-19 to 2021-12-31) | 46 | -23.6% | -38.9% to -8.5% | 0 | 0 | -22.3% | 31 |
+| latest print Q3 2020 (2021-01-08 to 2021-02-12) | 6 | -6.5% | -11.1% to -3.2% | 0 | 0 | -4.9% | 6 |
+| latest print Q4 2020 (2021-02-19 to 2021-04-23) | 10 | -14.1% | -21.3% to -8.5% | 0 | 0 | -13.3% | 9 |
+| latest print Q1 2021 (2021-04-30 to 2021-07-16) | 12 | -27.1% | -38.9% to -17.2% | 0 | 0 | -27.0% | 12 |
+| latest print Q2 2021 (2021-07-23 to 2021-10-22) | 14 | -24.7% | -27.2% to -17.0% | 0 | 0 | -21.9% | 0 |
+| latest print Q3 2021 (2021-10-29 to 2021-12-31) | 10 | -23.8% | -35.0% to -16.7% | 0 | 0 | -22.2% | 10 |
+3y (52 dates with one): 0 of 52 cleared, 0 beat SPY; range -36.6% to +13.1%
+1y range -26.5 37.5 excess 2y -41.8 -10.9
+drawdown -60.3 -55.8
+
+## What the 2018-2021 labels suggest (hypotheses only)
+
+- The batch is the mirror image of 2014-2017's: the class followed a stale anchor and the gold price ran the other way. FY14's $1.28
+  stood for three years while FY2015-FY2019 were all gaps, so every date from 2018-01-05 to 2019-11-01 (96) was RICH at 23-32x, and the stock returned a median +67% (2018)
+  and +76% (2019) at two years on the 2019-2020 gold run and the Goldcorp and Nevada Gold Mines years: 6 of those 96 calls held (all in
+  January-February 2018).
+- The same RICH call held on 37 of 46 dates of 2020 (from the Q4 2019 print, after the March 2020 low): entries at $55-69 in mid-2020
+  lost 20-30% by mid-2022. A RICH call that is right in 2020 and wrong in 2018-2019 on the same $1.28 is a timing call against the
+  metal, as the 2014-2017 findings already say, not a valuation one.
+- The only CHEAP dates (15, on FY20's $3.31 at 16-18x) were the batch's worst entries (median -24.7%, 0 of 15 held): FY2020, the
+  best gold-price year in the history, became the anchor just as the price peaked. The sensitivity table shows the CHEAP calls sit on
+  the signals (at BEAR, 11 of the 15 turn FAIR or RICH) and on FY2020 being kept.
+- The FAIR dates around the Q3 2019 print (BASE lifted by the Goldcorp quarters' +57% and +45% revenue growth) did well (+51%, 10 of 11
+  held); BASE at 0% on those quarters would have made them RICH and wrong. A hindsight-friendly coincidence, not a rule.
+- Profile drift: DURABLE then to the FY2018 10-K, CYCLICAL from it (the 10-K's "The metals markets are cyclical"), CYCLICAL in today's
+  profile. Label only.
+- Hypothesis for a later method version (never this one), the 2014-2017 one again with more weight: for a miner whose GAAP years swing
+  between write-downs, tax charges and one-off gains, the rollover anchor goes stale for years (FY14 to February 2021), and the one year
+  that passes both tests can be the peak; an anchor that tracks the metal price or production economics, or a cap on an anchor's age,
+  would be a new rule, decided before scoring, with a full re-run.

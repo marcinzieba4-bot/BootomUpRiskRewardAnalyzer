@@ -29438,6 +29438,156 @@ Judgement calls that could carry hindsight:
 
 The hindsight results are in `staging/retrospective/NEM/FINDINGS.md`, labelled as hindsight: hypotheses, never inputs.
 
+### NEM 2018-2021: the FY2017-FY2020 vintages and the 2018 recast, FY2017, FY2018 and FY2019 excluded, Goldcorp and Nevada Gold Mines, two names, CYCLICAL, EV and CRYPTO out of scope
+
+The owner asked for 2018-2021 ("find newest code. do retrospective analysis for NEM, 2018-2021. same rules as before"); the code is the
+branch `claude/sharp-albattani-rdvlgi` (its commit "Merge LYB 2018-2021 ... with NEM 2014-2017 and CHTR 2019-2021"), as the coordinating
+session named it; nothing else was merged in. Built in a new session without opening the 2008-2017 outcomes or findings (`FINDINGS.md` and
+every earlier `outcome.json` were left unread). The method is still r2; no fact, parameter, outcome or finding of another ticker enters an
+NEM model.
+
+```bash
+python3 retro/tools/edgar.py fetch 1164727 <dir> --from 2017-12-01 --to 2021-12-31 --forms 8-K 8-K/A 10-K 10-K/A 10-Q
+python3 -I retro/generators/nem/gen_nem_1821.py --filings <dir> --facts-in <scratch>/NEM_0817.json   # the 2008-2017 sheet -> retro/facts/NEM.json
+python3 -I retro/tools/verbatim.py <dir>/checklist_nem_1821.json                                       # 75/75
+python3 retro/build_nem.py --weekly 2018-01-01 2021-12-31                   # 209 dates, 2018-01-05 .. 2021-12-31
+for d in staging/retrospective/NEM/20{18,19,20,21}-*/; do
+  python3 retro/retro_tool.py --archive staging/retrospective run "$d"
+  python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
+done
+python3 retro/retro_tool.py --archive staging/retrospective series NEM
+for c in 2018-02-23 2018-04-27 2019-02-22 2019-04-23 2020-01-08 2020-02-21 2020-07-31 2021-02-19 2022-01-01; do
+  python3 retro/tools/firewall.py $c NEM; done
+python3 retro/generators/nem/controls_nem_1821.py --from 2017-06-01; python3 retro/generators/nem/sens_nem_1821.py <scratch>
+```
+
+**A full-data batch.** `www.sec.gov` served every document to `edgar.py`'s plain client name (no contact address). Read, by the session's
+model directly with no delegated transcription: the sixteen earnings releases of Q4 2017 to Q3 2021 (8-K exhibit 99.1: the statements of
+operations, the balance sheets, the costs applicable to sales reconciliations, the adjusted net income reconciliations, the dividend lines
+and the outlook text); Items 1, 1A, 6, 7 and 8 of the FY2017-FY2020 10-Ks (the "Results and Highlights" table, the selected data, the
+statements and the quarterly data note); the 8-K of 2018-04-26 re-filing the FY2017 10-K's Items 1, 2, 6, 7 and 8; each 10-Q's income per
+share note (diluted weighted shares); the outlook 8-K of 2018-12-06; the change-of-name 8-Ks of 2019-04-22 and 2020-01-06. Every other 8-K
+of December 2017 to December 2021 was read by its items and exhibit headings: the tax reform notice of 2017-12-22, the reserve releases, the
+Goldcorp arrangement (2019-01-14) and its completion (2019-04-18), the Barrick proposal and the Nevada joint venture (2019-03-04 to
+2019-07-05), the $0.88 special dividend (2019-03-25), the Goldcorp exchange offers, the credit agreements, the notes offerings and tender
+offers (2019, 2020, 2021), the Kalgoorlie sale agreement, officers and directors and the meeting votes; none states a guided number for
+revenue, EPS or a margin. **Not read:** the website outlooks, presentations and the unfiled press releases the releases cite (the March 23,
+2020 withdrawal, the May 19, 2020 revised outlook, the December 8, 2020 outlook), the 10-Qs beyond the income per share note, the proxy
+statements and the Goldcorp pro forma statements. The FY2021 10-K and every 2022 filing were not downloaded. Each source's date is EDGAR's
+acceptance time; the new ids are `NM74`-`NM97`. The generator reads each raw figure from its own row by label, computes every rate,
+asserts every quote verbatim, asserts that each Q4 print's full year equals the 10-K that comes with it, that each Q4 adjusted net income
+reconciliation adds up, and that every 2008-2017 fact is unchanged. Decided on 2026-11-27, before any 2018-2021 model was built or any
+outcome computed:
+
+- **Release timing.** Every earnings 8-K was accepted before the open (06:30-07:55 ET), each Q4 print the same morning as its 10-K, so no
+  print carries full-year actuals; the week's date is the next trading day, as before.
+- **Five more vintages,** each year from the latest filing that reports it, each holding the ten fiscal years to the latest one: the FY2017
+  10-K (2018-02-22); the 8-K of 2018-04-26 (accepted 2018-04-25 21:02 ET, after the close, so it counts from 2018-04-26, the Q1 2018
+  release's day) re-filing Items 1, 2, 6, 7 and 8 for ASU 2016-15 and the correction of immaterial errors in the reclamation and
+  remediation liabilities, a vintage of its own (the MU and MSFT recast rule, as the 8-Ks of 2009-09-15 and 2014-06-13; FY14 $1.30 to
+  $1.28, FY15 $0.00 to $(0.02), FY16 $(0.41) to $(0.42), FY17 $(0.11) to $(0.14); its 'why' stays the FY2017 10-K's, as Item 1A is not
+  re-filed); the FY2018 10-K (2019-02-21); the FY2019 10-K (2020-02-20); the FY2020 10-K (2021-02-18), which has no Item 6, so its three
+  years come from the statements of operations (the ACN FY21 and LLY rule). Each vintage's franchise line (consolidated gold ounces sold,
+  costs applicable to sales per ounce), free cash flow and sales by metal come from its "Results and Highlights" table and statements.
+- **EPS: GAAP diluted EPS from continuing operations** (the releases' adjusted net income still removes items that recur in every year it
+  tabulates: impairments, asset sales, changes in the fair value of investments, reclamation charges, tax items; the PEP 2008 core rule).
+  The Q4 release's reconciliation lists the year's items with a "Tax effect of adjustments" line and tax lines; the tests sum every listed
+  line, recurring ones included (the FY2011 and FY2015 encoding).
+  - **FY2017 is a loss** ($(0.11), then $(0.14); the Tax Cuts and Jobs Act re-measurement and restructuring): excluded as the latest
+    year, then a gap.
+  - **FY2018 is excluded by the AAPL FY2002 test**: the Q4 2018 release's items in continuing operations net to $438M (the $369M
+    impairment of long-lived assets in Nevada, the $158M valuation allowance and other tax adjustments, investment items, the Emigrant
+    leach pad write-down, less the $100M of asset sales and the tax effect) against $280M of income from continuing operations
+    attributable to Newmont, so reported EPS ($0.53) is under half the year's EPS without them ($1.34 adjusted, which also removes recurring
+    items); excluded as the latest year, then a gap.
+  - **FY2019 is excluded by the mirror of the AAPL FY2002 test** (method r2, the AVGO FY2018 rule): the Q4 2019 release's items net to
+    $1,907M of benefits (the $2,390M gain on the formation of Nevada Gold Mines above all) against $970M of income without them, so
+    reported EPS ($3.91) is more than double the year's EPS without them ($1.32 adjusted); excluded as the latest year, then a gap.
+  - **FY2020 is kept at GAAP $3.31**: its items net to $526M of benefits (the Kalgoorlie and Continental sales, the investment marks, the
+    valuation allowance, less reclamation, impairment, pension, COVID-19 and debt costs) against $2,140M without them, neither test met.
+  - So the anchor (the rollover rule; no filing guides EPS): FY14's $1.30 to 2018-04-20 (16 dates), $1.28 from 2018-04-27 to 2021-02-12
+    (147), with FY2015-FY2019 all gaps ("ex-FY15 ex-FY16 ex-FY17 ex-FY18 ex-FY19"), then FY20's $3.31 from 2021-02-19 (46). The P/E window
+    loses the excluded years' days: by 2020 it holds only 2010, 2012, 2014 and the current year (756 trading days in ten calendar years).
+- **The ounces signal stays consolidated gold ounces sold** (each release's costs applicable to sales reconciliation, 'Gold sold (thousand
+  ounces)'; from Q3 2019 the release also tabulates NGM and gold-equivalent ounces separately: the consolidated gold line is kept, rule T's
+  line). Thresholds unchanged.
+- **A year-ago EPS of $0.00** (Q4 2018's and Q2 2019's continuing EPS, "—") leaves the Q4 2019 and Q2 2020 prints with no EPS growth rate:
+  None, n/m, scoring BASE and printing "n/r" (the F rule) through `nem3_engine.py.tmpl`, a copy of the original engine tolerant of None
+  (the NEE `nee3` encoding; 23 and 29 dates).
+- **Goldcorp (2019-04-18) and Nevada Gold Mines (38.5%, 2019-07-01) are in the figures as published**; pro forma figures are unused. BASE is
+  the latest quarter's revenue growth (the UNP rule), so it runs +35.8% (Q2 2019), +57.2%, +44.9% and +43.2% (Q1 2020) on the acquisition
+  quarters, then +4.8% to +29.6%, -8.7% on Q3 2021.
+- **No guide in numbers for revenue, EPS or a margin.** The outlooks are attributable gold production and CAS and AISC per ounce: display
+  only, one quote a release cut to its own year, from each release and the outlook 8-K of 2018-12-06 (FY2019). The Q1 2020 release's quote
+  is the withdrawal ("On March 23, the Company withdrew its full-year 2020 guidance"); as no guide has a field, a withdrawal changes no field.
+- **Dividends** (each rate from the first release that states it as declared): $0.14 a quarter from the Q4 2017 release (2018-02-22), $0.25
+  from the Q1 2020 release (2020-05-05; the Q4 2019 release's "plan to increase" is effective "upon approval and declaration", so it waits,
+  the 2014 cut's rule), $0.40 from the Q3 2020 release, $0.55 from the Q4 2020 release. The $0.88 special dividend of 2019 is not a rate
+  (the LYB rule), text only.
+- **Names** (`company_names`, the SPGI and CB encoding, now in `build_nem.py`): Newmont Goldcorp Corporation from the 8-K of 2019-04-22
+  (before the open) and Newmont Corporation from the 8-K of 2020-01-06 (after the close, so 2020-01-07), each until a vintage carries the
+  name; NYSE: NEM throughout (the TSX listing from the Goldcorp closing is display-irrelevant).
+- **Kind: CYCLICAL from the FY2018 10-K** (2019-02-21), whose business section says "The metals markets are cyclical" (the CB rule: the
+  10-Ks' "historically cyclical" markets); the FY2017 10-K does not, so DURABLE to then (the MU rule). Risk 2 either way; a label only.
+- **Themes.** EV (2020-01-01) and CRYPTO (2020-10-21) go live; the "why" quotes every live theme's scope, none of which names a miner.
+  ENERGY_TRANSITION stays out of scope with each vintage's own climate words (the FY2019 and FY2020 10-Ks' new cost sentences, `climate_words`).
+  The FY2020 10-K lists "investor interest in crypto currencies and other investment alternatives" among the factors that move the gold
+  price: CRYPTO's scope ("payments networks, banks, exchanges, remittance") does not name a miner, so it is read as out of scope and the
+  words are quoted, text only (`crypto_words`, from 2021-02-18; the UNH `cloud_words` encoding). No EV words in any 10-K.
+- **Anachronism list:** no new term; "Newmont Goldcorp" and "Nevada Gold Mines" appear only after their listed first dates.
+
+Controls and checks (before any outcome):
+- **`retro_tool run` passes on all 209 dates.**
+- **Controls** (`controls_nem_1821.py`, in memory, every weekly date from June 2017 to 2021-12-31): altering each print's ounces, each
+  vintage's last-year revenue, each outlook's quoted text, each dividend rate and each change of name changes no model dated before its
+  publication: 55 controls, 54 change the first weekly date on or after it and 1 is inert (the FY2019 outlook 8-K of 2018-12-06, superseded
+  by the Q4 2018 release before FY2019 is current).
+- **Leak scan:** 0 hits in 73,020 (model, later token) pairs; positive control: the latest print's tokens in 209 of 209 models. **Forward
+  references:** 2 in 79 facts, both the outlook 8-K of 2018-12-06's own guided year (its title and quote), not later dates. **Self-text
+  scan:** 22 tokens of 1,261, all benign: the carried FY2011 exclusion note ("Hope Bay", "$1,609M": its filing precedes this batch's folder),
+  the title words "Newmont FY" and the source-id prefix "NM".
+- **Regression:** rebuilding 2008-2017 with the new sheet and builder changes no file; no shared code changed but the firewall's NEM plant,
+  which gains the vintage's `crypto_words` and a flipped kind.
+- **Firewall** (run after the build, validation outputs and README section were committed and pushed, before any outcome): it passes at
+  all 9 cutoffs (the Q4 2017 print and FY2017 10-K, the 8-K of 2018-04-26, the FY2018 10-K, the Newmont Goldcorp name, the Newmont
+  Corporation name, the FY2019 10-K and the first nem3 date, Q2 2020, the FY2020 10-K, and 2022-01-01: 530 to 732 dates each, 2008 on),
+  0 files changed and no planted text; the NEM plant now also carries the vintage's `crypto_words` and a flipped kind.
+
+Seen in the build (method behaviour, not tuned): **RICH 183, FAIR 11, CHEAP 15 of 209 dates** (AVOID 171, BUY 15, ACCUMULATE 15,
+WATCHLIST 8). The class follows the anchor:
+- FY14's $1.30 and $1.28 (2018-01-05 to 2019-11-01, 96 dates): $30.00-41.60 is 23.4-32.0x against a window median of 15.0-17.0x (83rd-100th
+  percentile): RICH on every date.
+- The Q3 and Q4 2019 prints (2019-11-06 to 2020-02-14, 15 dates): $37.61-45.06 is 29.4-35.2x (91st-100th), but BASE at +57.2% and +44.9%
+  (the Goldcorp quarters) lifts the scenarios: FAIR 11, RICH 4.
+- FY14's $1.28 with FY2019 excluded (2020-02-21 to 2021-02-12, 52 dates): $39.50-69.20 is 30.9-54.1x against 14.1-18.9x: RICH on every date.
+- FY20's $3.31 (2021-02-19 on, 46 dates): $53.56-73.53 is 16.2-22.2x against 17.3-17.9x (35th-100th): CHEAP 15 (2021-02-26 and 2021-07-23
+  to 2021-10-22), RICH 31.
+
+How far each call moves the classes (the 209 dates rebuilt with one encoding changed, classified offline; `sens_nem_1821.py`; no outcome):
+- a five-year P/E window instead of ten: 58 classes (44 RICH to CHEAP), the batch's largest call;
+- FY2018 and FY2019 both kept at GAAP: 48 classes (37 RICH to CHEAP); FY2019 alone: 31; FY2018 alone: 22;
+- the company's adjusted EPS for 2017-2020 ($1.46/$1.45, $1.34, $1.32, $2.66): 40 classes;
+- BASE on the latest quarter's ounces growth: 22; every data signal at BEAR: 22 classes, no tier; at XBULL: 8;
+- BASE at 0% on the four Goldcorp quarters: 11 (every FAIR date of 2019-2020 to RICH);
+- the 8-K of 2018-04-26 not a vintage, and the vintage's dividend instead of the declared rates: no class.
+The 2018-2020 RICH calls rest on FY14's $1.28 standing for six years while FY2015-FY2019 are all gaps; the window, the FY2018-FY2019 readings
+and the adjusted-EPS reading each move a large share of them. The 2021 CHEAP calls rest on FY20's $3.31 and the signals.
+
+Judgement calls that could carry hindsight:
+- FY2018 excluded by the AAPL FY2002 test and FY2019 by its mirror, with every listed item summed (the FY2011 and FY2015 encoding; kept at
+  GAAP, 22 and 31 classes), and GAAP rather than the adjusted net income (40 classes), by the frozen tests;
+- FY2020 kept (its benefits under half its income without them), which sets the 2021 classes;
+- Goldcorp and Nevada Gold Mines in BASE as published (BASE at 0% on those quarters moves 11 classes);
+- the 8-K of 2018-04-26 as a vintage (no class) and the FY2020 10-K's statements in place of Item 6;
+- CYCLICAL from the FY2018 10-K's "The metals markets are cyclical" (label only), and EV, CRYPTO and ENERGY_TRANSITION read as out of
+  scope (text only), the crypto reading chosen by a builder who knows later crypto and gold markets;
+- the $0.25 dividend waiting for its declaration (no class) and the special dividend left out;
+- the ten-year P/E window with the excluded years' days removed, which leaves only 2010, 2012 and 2014 in it by 2020 (a five-year one
+  moves 58 classes);
+- the parts of the filings listed as not read.
+
+The hindsight results are in `staging/retrospective/NEM/FINDINGS.md`, labelled as hindsight: hypotheses, never inputs.
+
 ## LYB (LyondellBasell Industries): the thirty-seventh ticker, in staging, from its 2010 share issue
 
 The LYB series is built apart from every other ticker and shares nothing with them but the machinery: its own fact sheet
