@@ -31014,7 +31014,7 @@ Judgement calls that could carry hindsight (the builder knows what Charter's ear
 
 Hindsight outcomes and findings, labelled as such, are in `staging/retrospective/CHTR/FINDINGS.md`: hypotheses, never inputs.
 
-## FANG (Diamondback Energy): the thirty-ninth ticker, in staging, built from 2014-02-21 (to 2021-12-31 so far)
+## FANG (Diamondback Energy): the thirty-ninth ticker, in staging, built from 2014-02-21 (to 2026-11-27 so far)
 
 The FANG series is set up apart from every other ticker and shares nothing with them but the machinery: its own fact sheet
 (`retro/facts/FANG.json`, generated from the filings by `retro/generators/fang/gen_fang.py`), builder (`retro/build_fang.py`, a gate
@@ -31025,7 +31025,8 @@ engine with FANG's own signals and rule-T thresholds, and the builder builds the
 parameter, outcome or finding of another ticker (XOM included) enters FANG's files, and neither does any 2026 analysis
 (`data/business_profiles.json`, `scripts/quality_classify.py`, `reports/*.json`, any live `*_signal_model.py`). Outputs go to
 `staging/retrospective/FANG/`, which held only `GATE.md`, the builder's refusal of each date, until "FANG 2014-2017" built its models. "FANG 2018-2021"
-extends the series to 2021-12-31 (`gen_fang_1821.py`), with the dividend and the distorted-year encoding in the builder.
+extends the series to 2021-12-31 (`gen_fang_1821.py`), with the dividend and the distorted-year encoding in the builder; "FANG 2022-2026"
+to 2026-11-27 (`gen_fang_2226.py`), with a Q4 release's restated prior year, the base dividend and the EV and AI words.
 
 ```bash
 python3 retro/tools/edgar.py index 1539838 <dir>                            # the downloads (outside the repository)
@@ -31491,6 +31492,155 @@ Judgement calls that could carry hindsight (the builder knows what oil prices, D
 - the 8-Ks other than the releases read by their items and keywords, not in full; the 10-Qs not read.
 
 Hindsight outcomes and findings, labelled as such, are in `staging/retrospective/FANG/FINDINGS_1821.md`: hypotheses, never inputs.
+
+### FANG 2022-2026: FY21-FY24 kept, FY2025 distorted by its impairment, FY24's $15.53 the anchor from 2026, base dividends, the last date 2026-11-27
+
+256 weekly dates, 2022-01-07 to 2026-11-27, requested by the owner ("find newest code. do retrospective analysis for FANG, 2022-2026. same
+rules as before"). The newest code is the coordinating session's branch (`claude/sharp-albattani-rdvlgi`, with "FANG 2018-2021" and the
+other tickers merged), checked out as the base; nothing else was merged in. This batch is on `claude/fang-retro-2022-2026`. It was built
+in a new session without opening the earlier FANG outcomes or findings (`FINDINGS.md`, `FINDINGS_1821.md`, `SERIES.md`, any
+`outcome.json`), and no 2026 analysis was read. **All 256 dates pass the gate and are built** (52, 52, 52, 52, 48 a year). **The last
+date is 2026-11-27**: the batch was built on 2026-11-28, after that day's early close (the NEM 2022-2026 rule; the batches built before it
+ended on 2026-11-20). `GATE.md` now holds the 988 weekly dates of 2008-2026 (321 refused, every one before 2014-02-21; earlier lines
+unchanged).
+
+```bash
+python3 retro/tools/edgar.py index 1539838 <dir>
+python3 retro/tools/edgar.py fetch 1539838 <dir> --from 2021-12-01 --to 2026-11-28 --forms 10-K 10-K/A 8-K 8-K/A
+python3 retro/tools/edgar.py fetch 1539838 <dir> --from 2013-01-01 --to 2018-12-31 --acc 0001539838-18-000011 0001539838-14-000007  # selftext only
+python3 -I retro/generators/fang/gen_fang_2226.py --filings <dir>              # appends to retro/facts/FANG.json
+python3 -I retro/tools/verbatim.py <dir>/checklist_fang_2226.json              # 374/374
+python3 retro/build_fang.py --weekly 2014-01-01 2021-12-31                     # regression: the 411 models byte-identical
+python3 retro/build_fang.py --weekly 2022-01-01 2026-11-27                     # 256 built (2022-01-07 .. 2026-11-27)
+python3 retro/build_fang.py --gate-md
+for d in staging/retrospective/FANG/202{2,3,4,5,6}-*/; do                      # one at a time: run writes the shared index.json
+  python3 retro/retro_tool.py --archive staging/retrospective run "$d"
+  python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
+done
+python3 retro/retro_tool.py --archive staging/retrospective series FANG
+python3 retro/generators/fang/controls_fang.py 2008-01-01 2026-11-27           # the gate's controls: 17 of 17
+python3 retro/generators/fang/controls_fang_models.py 2022-01-01 2026-11-27    # the models' controls: 70 of 70
+python3 retro/generators/fang/sens_fang_2226.py <scratch>                      # the sensitivity below
+for c in 2022-01-01 2022-02-23 2022-02-25 2022-08-02 2023-02-22 2023-02-24 2023-11-07 2024-01-26 2024-02-12 2024-02-21 2024-09-10 \
+         2025-02-25 2025-02-27 2025-08-05 2026-02-24 2026-02-26 2026-05-05 2026-11-03 2026-11-28; do python3 retro/tools/firewall.py $c FANG; done
+```
+
+**A full-data batch.** `www.sec.gov` served every document to `edgar.py`'s plain client name (no contact address; the owner's email was
+not used). Read by the session's model directly, with no delegated transcription: the FY2021-FY2025 10-Ks (Item 1's opening and climate
+section, Item 1A searched for the cyclical, price, greenhouse gas, conservation, electric vehicle, AI and dividend sentences, Item 5, Item 6
+"[Reserved]", the statements of operations and of cash flows), the 20 earnings releases Q4 2021 to Q3 2026 (each one's statement of
+operations, selected operating data, adjusted net income table and dividend declaration; Q1 2026's exhibit 99.2, the stockholder letter,
+for its dividend sentence), and every other Item 2.02 8-K: 18 of them carry no release (each quarter's realized prices, derivative
+activity and share counts, the cash settlement note of 2022-04-07, the operational updates of 2024-10-01 and 2025-04-16, and the
+Endeavor merger 8-K of 2024-02-12 with preliminary Q4 2023 operating results), and none prints revenues, income before income taxes or an
+EPS (asserted by the generator), so none is a print (the 8-K of 2021-04-12 encoding). The other 8-Ks were read by their items (notes,
+credit agreements, officers, meetings, the merger agreements). No 10-K/A was filed. The sheet is extended by
+`retro/generators/fang/gen_fang_2226.py`, which reads each figure from its labelled row, asserts each quotation in its own filing,
+computes every rate, margin and one-off test, refuses an input sheet whose 2008-2021 facts differ, only appends, and regenerates the sheet
+byte for byte. The source ids are `FG15`-`FG19` (the FY2021-FY2025 10-Ks), `FG53`-`FG72` (the prints), `FG73` (the merger 8-K's exhibit
+99.2) and `FG74` (the Q1 2026 letter). Decided on 2026-11-28, before any outcome of the range existed:
+
+- **EPS: GAAP diluted EPS on net income attributable to Diamondback, each year from the latest filing that reports it, ten fiscal years
+  to the latest.** Every 10-K of the batch reserves Item 6, so each takes its statements' three years and carries the earlier ones from
+  the latest earlier vintage (the FY2020 encoding). **One restatement:** from the Q4 2022 release the per-share figures are computed "using
+  the two-class method in accordance with GAAP" (its footnote), and its prior-year column and the FY2022 10-K print FY2021 at $12.24 (the
+  Q4 2021 release and the FY2021 10-K: $12.30) and FY2020 at $(28.61); the release's restated prior year enters the history from the
+  release (`prior_eps_gaap` in `fy_actual`, a new builder line that touches no earlier model), the 10-K's from the 10-K. No other 10-K
+  restates an EPS (asserted).
+- **The one-off test** (the AAPL FY2002 test and its mirror) runs, as before, on the items each Q4 release's adjusted net income table
+  removes besides the non-cash derivative marks, which recur (the NEE and PEP 2008 core rule): at the statement of operations' twelve-month
+  line where the table is three months only (Q4 2021-Q4 2023) and the line exists, else the table's own three-month figure; from the
+  table's year column where it has one (Q4 2024, Q4 2025). "Other non-cash transactions" is read as a listed item, as the table lists it
+  (it decides no year):
+  - **FY2021 $12.30 (then $12.24): kept.** $78M of merger and integration expense and a $75M debt extinguishment loss against $2,907M.
+  - **FY2022 $24.61: kept** ($114M against $5,736M). **FY2023 $17.34: kept** ($12M against $4,248M). **FY2024 $15.53: kept** ($303M of
+    merger and integration expense, against $64M of benefits and $4,501M).
+  - **FY2025 $5.73: distorted, excluded.** The $3,652M full cost ceiling impairment (Q4 2025) exceeds the year's $1,874M income before
+    income taxes (benefits listed: $532M, the debt extinguishment gain and other non-cash transactions). The company's adjusted $13.37
+    also removes the marks, so no figure excludes only the one-offs: the year is excluded as the latest year and then a gap (the NEM and
+    FANG 2019 encoding), "ex-FY25".
+  So the anchor is FY18's $8.06 to the Q4 2021 print, then FY21's $12.30 from 2022-02-24, FY22's $24.61 from 2023-02-23, FY23's $17.34
+  from 2024-02-22, FY24's $15.53 from 2025-02-26 and, as FY2025 is excluded, **FY24's $15.53 still from the Q4 2025 print (2026-02-25) to
+  the last date**.
+- **No guide in numbers.** Every outlook is production (MBO/d, MBOE/d), unit costs, production taxes as a share of revenue, cash taxes or
+  capital spending; the free cash flow figures at strip prices and the merger slides' accretion are no revenue, EPS or margin guide. So
+  current-FY EPS is the last kept year's, BASE is the latest quarter's revenue growth as reported plus the net share change (the Endeavor
+  shares of Q3-Q4 2024 and the buybacks), and there is no margin step.
+- **Dividends: the base rate, each from the filing that first states it** ($2.40 from the Q4 2021 release, $2.80 Q1 2022, $3.00 Q2 2022,
+  $3.20 Q4 2022, $3.36 Q2 2023, $3.60 from the merger 8-K of 2024-02-12, before the open: "will approve a 7% increase to its base dividend
+  to $3.60 per share annually", $4.00 Q4 2024, $4.20 Q4 2025, $4.40 from the Q1 2026 stockholder letter, $4.72 Q3 2026). **The variable
+  dividends** (from Q1 2022, each set on the prior quarter's free cash flow; $2.18 a share for Q4 2023, for example) **are not a rate**
+  (the LYB specials rule): the dividend line says so. The Q2 2022 release's "As previously announced" points to no earlier filing, so
+  $3.00 dates from it (the FANG Q4 2018 rule).
+- **Release timing.** All 20 releases were accepted after the close and are dated the next trading day; the 10-Ks came two days after
+  (FY2021: 2022-02-23 and 2022-02-25; FY2025: 2026-02-24 and 2026-02-26), so each Q4 release's year extends its vintage on the earnings-week
+  date. From Q3 2024 the operating data's header splits over two lines and from 2026 the unit costs are "Average Cash Costs ($/BOE)": read
+  by position with the header asserted (each Q1-Q3 print's last column is the year-ago quarter).
+- **Signals and rule T unchanged** (frozen on the filings public on 2014-02-21). The Q4 2021 pre-tax margin change (+19,035bp against the
+  impairment quarter) and Q4 2025's (-10,697bp, the impairment) land beyond XBULL and BEAR, mechanically.
+- **Durability: CYCLICAL, risk 2**, on the same sentences in each 10-K (the FY2023 10-K's business sentence adds "primarily").
+  **ENERGY_TRANSITION stays on the watch list** on each 10-K's Item 1 climate sentence ("Restrictions on emissions of methane or carbon
+  dioxide ..."; labels only). **EV stays out of scope**: from the FY2022 10-K the climate section names electric vehicles only among the
+  "lower-emission products and services (including electric vehicles and renewable residential and commercial power supplies)" whose demand
+  could reduce demand for oil and gas, the demand ENERGY_TRANSITION already carries (`ev_quote`, text only); the FY2025 10-K drops the
+  conservation sentences, so its "why" says the demand risk is in its own words. **GENAI (live 2022-11-30) and GLP1 (2023-08-08) are out
+  of scope**: their scopes name software, services, information and snacks, beverages and devices; the FY2024 and FY2025 10-Ks' AI words
+  are cyber and operational risks (identity fraud, "generative AI systems ... more sophisticated cyber-attacks", AI in operations),
+  quoted (`ai_words`, text only). No 10-K names crypto, blockchain, bitcoin, GLP-1 or obesity (asserted).
+- **Rattler (merged back 2022), Viper (converted and the 2025 drop-down and Sitio), Endeavor (2024-09-10) and Double Eagle (2025)** are in
+  Diamondback's figures as its filings consolidate them; no subsidiary's price or per-unit figure and no pro forma figure is used. No model
+  names any of them (grep: 0 of 667 models); the two anachronism notes now say 2014-2026.
+
+Controls and checks (before any outcome):
+- **Verbatim:** 374 of 374 strings, each against its own filing. **Forward references** (`forward_refs.py FANG --from 2022-01-01`): 0 in 62
+  dated facts. **Self-text** (`selftext.py FANG --from 2022-01-01 --allow FG`): 0 misses of 655 tokens (with the Q4 2017 release and the
+  FY2013 10-K downloaded for the carried one-off and Predecessor words).
+- **Leak scan** (`leak_scan.py FANG --from 2022-01-01`): 0 hits in 76,173 (model, later token) pairs; positive control 256 of 256.
+- **Anachronisms:** no model contains a later name (above). **`retro_tool run`:** passes on all 256 dates; 52 carry a false calendar-year
+  warning ("2047", the digits of FY2022's tax rate, 0.2047, in `TAX_RATE`, on the FY2022 vintage's dates; the UNH tax-rate case).
+- **Regression:** the 2014-2021 range rebuilds byte-identical (411 models); the sheet regenerates byte for byte.
+- **Controls:** the gate's (`controls_fang.py 2008-01-01 2026-11-27`) 17 of 17; the models' (`controls_fang_models.py 2022-01-01
+  2026-11-27`, extended with the electric vehicle and AI words and each Q4 release's prior-year EPS): 70 of 70 change no model before their
+  publication, 69 change the first weekly date on or after it; the Q4 2021 release's prior-year EPS (FY2020, an excluded year) changes none.
+- **Firewall** (the FANG branch, extended to plant the new vintage words, the AI words and a restated prior year): at the 19 cutoffs above
+  every weekly date before the cutoff keeps its exact refusal (731 to 987), and 0 of 411 to 667 models change or contain planted text (0
+  files changed). The gate control changes every date after the plant (2 to 10) at 17 of them; at 2024-02-12 (the dividend 8-K) the real
+  FY2023 10-K follows the plant within the week and at 2026-11-28 no trading day follows, so the gate control has no date and the tool
+  exits 1 there by its own rule, with the model test passing; 2024-01-26 was added to cover that stretch (2 of 2 dates change).
+
+Seen in the build (method behaviour, not tuned):
+- **Totals: CHEAP 173, RICH 66, FAIR 17; BUY 221, ACCUMULATE 22, WATCHLIST 13.** By year: 2022 CHEAP 52; 2023 CHEAP 52; 2024 RICH 38,
+  CHEAP 10, FAIR 4; 2025 CHEAP 44, RICH 5, FAIR 3; 2026 RICH 23, CHEAP 15, FAIR 10.
+- **The window's median falls from 16-18x to 9-11x** as 2013-2014's 30-40x days leave it and the 2021-2024 earnings enter it: prices of
+  $109-161 were 9-17x the anchor in 2022 (CHEAP throughout), $123-167 at 5-12x in 2023 on FY22's $24.61, $150-208 at 6-12x in 2024 on
+  FY23's $17.34 against a median of 9x (RICH on most dates), $123-180 at 8-10x in 2025 and $147-212 at 9.5-14x in 2026 on FY24's $15.53.
+- **BEAR** is EPS flat (the 0% cap) until the history holds a fall, then FY22 to FY23's -29.5%/yr from the Q4 2023 print (2024-02-22);
+  **BASE** takes the quarter's revenue growth as reported (+28% to +165% in 2022, -31% to +28% in 2023, -4% to +29% in 2024, +13% to +82%
+  in 2025 on the Endeavor quarters, -9% to +51% in 2026), the margin and the net share change (the Endeavor shares).
+
+Sensitivity (each call changed alone, the 256 dates rebuilt and classified offline with `retro_tool`'s classifier; no outcome consulted;
+`sens_fang_2226.py`):
+- **every signal at its XBULL value: 82 classes** (52 RICH to FAIR, 16 FAIR to CHEAP, 14 RICH to CHEAP; 2024-03-01 to 2026-11-13), no tier;
+  at BEAR: 27 classes (17 FAIR to RICH, 6 CHEAP to RICH, 4 CHEAP to FAIR), no tier: the frozen 2009-2013 thresholds are the largest call;
+- **no net share change in BASE:** 27 classes (13 FAIR to CHEAP, 7 RICH to CHEAP, 7 RICH to FAIR; 2024-02-22 to 2026-11-13), 7 tiers;
+- **FY2025 kept at GAAP $5.73** (the distorted-year exclusion undone): **17 classes** (9 FAIR to RICH, 8 CHEAP to RICH; 2026-08-05 to
+  2026-11-27) and **40 tiers**, the batch's deciding EPS call; at the company's adjusted $13.37: 15 classes, 38 tiers;
+- FY2024 at the company's adjusted $16.57: 5 classes (2026-08-05 to 2026-11-13), 18 tiers;
+- FY2021 at $12.30 throughout (the restatement ignored), the dividend at 0, and the base dividend plus $8.72 of variable dividends: no
+  class, no tier.
+
+Judgement calls that could carry hindsight (the builder knows what oil prices, Diamondback's earnings and its stock did in 2022-2026):
+- **FY2025 excluded by the AAPL FY2002 test** on the Q4 2025 impairment, so FY24's $15.53 anchors 2026: kept at GAAP it moves 17 classes
+  and 40 tiers (the rule is the frozen one, applied as for FY2019);
+- the derivative marks read as recurring (FY21-FY24 at GAAP; only FY2024 has a published adjusted year, 5 classes), and "other non-cash
+  transactions" read as a listed one-off (no year changes either way);
+- the base dividend as the rate, the variable dividends not (no class either way), and $3.60 dated from the merger 8-K's "will approve";
+- the two-class restatement taken from the Q4 2022 release (no class either way);
+- the 10-Ks' electric vehicle and AI words read as no EV or GENAI exposure (labels only);
+- the Item 2.02 8-Ks without a release read as no print (none has revenue or earnings); the 10-Qs not read;
+- the last date 2026-11-27, built the day after (the NEM rule).
+
+Hindsight outcomes and findings, labelled as such, are in `staging/retrospective/FANG/FINDINGS_2226.md`: hypotheses, never inputs.
 
 ## TRGP (Targa Resources Corp.): the fortieth ticker, in staging, from its first full year of EPS
 
