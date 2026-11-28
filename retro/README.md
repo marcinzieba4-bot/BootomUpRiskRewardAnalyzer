@@ -31014,6 +31014,150 @@ Judgement calls that could carry hindsight (the builder knows what Charter's ear
 
 Hindsight outcomes and findings, labelled as such, are in `staging/retrospective/CHTR/FINDINGS.md`: hypotheses, never inputs.
 
+## FANG (Diamondback Energy): the thirty-ninth ticker, in staging, set up with no date built (2008-2013)
+
+The FANG series is set up apart from every other ticker and shares nothing with them but the machinery: its own fact sheet
+(`retro/facts/FANG.json`, generated from the filings by `retro/generators/fang/gen_fang.py`), builder (`retro/build_fang.py`, a gate
+that decides whether method r2 can build a date and writes nothing but `GATE.md` when it cannot; the CHTR encoding) and engine
+(`retro/templates/fang_engine.py.tmpl`, a copy of the XOM oil and gas engine with every signal threshold unset and the signals renamed as
+placeholders for an onshore producer, so no XOM value is carried and no model can run on it). The method is still r2. No fact,
+parameter, outcome or finding of another ticker (XOM included) enters FANG's files, and neither does any 2026 analysis
+(`data/business_profiles.json`, `scripts/quality_classify.py`, `reports/*.json`, any live `*_signal_model.py`). Outputs go to
+`staging/retrospective/FANG/`, which holds only `GATE.md`, the builder's refusal of each date.
+
+```bash
+python3 retro/tools/edgar.py index 1539838 <dir>                            # the downloads (outside the repository)
+python3 retro/tools/edgar.py fetch 1539838 <dir> --from 2012-02-01 --to 2014-03-31 --forms 10-K 10-K/A 10-Q 10-Q/A 8-K 8-K/A 424B4
+python3 retro/tools/edgar.py fetch 1539838 <dir> --from 2012-10-01 --to 2012-10-31 --acc 0001193125-12-419254 0001193125-12-420871
+python3 -I retro/generators/fang/gen_fang.py --filings <dir>                # retro/facts/FANG.json and <dir>/checklist_fang.json
+python3 -I retro/tools/verbatim.py <dir>/checklist_fang.json                # 33/33
+python3 retro/build_fang.py --weekly 2008-01-01 2009-12-31                  # 105 dates, every one refused, nothing written
+python3 retro/build_fang.py --weekly 2010-01-01 2013-12-31                  # 209 dates, every one refused, nothing written
+python3 retro/build_fang.py --gate-md                                       # staging/retrospective/FANG/GATE.md (both ranges)
+python3 retro/build_fang.py --pro-forma --weekly 2008-01-01 2013-12-31      # the sensitivity below (writes nothing)
+python3 retro/generators/fang/controls_fang.py                              # the gate's controls (4)
+for c in 2008-02-01 2009-01-01 2010-01-01 2011-06-01 2012-02-14 2012-10-01 2012-10-13 2012-11-01 2013-01-15 2013-03-03 \
+         2013-06-01 2014-01-01; do python3 retro/tools/firewall.py $c FANG; done   # the gate's firewall (below)
+```
+
+### FANG 2008-2009: requested, no date can be built (nor any to 2013-12-31)
+
+**What the owner asked for and what could be built.** On 2026-11-28 the owner asked for FANG 2008-2009 on the same rules, and the
+coordinating session asked, if none could be built, for the ticker to be set up anyway and its first buildable dates up to 2013-12-31
+built, or, if none of those either, for a gate that refuses them with its reason. Under method r2 **no weekly date from 2008-01-04 to
+2013-12-31 can be built** (314 dates: 105 in 2008-2009, 209 in 2010-2013), so none was, and nothing was invented to fill the gap (the
+BKR 2018, CTVA, KMI, LYB and CHTR precedents). Checked against the filings, before any price level or outcome was read (Yahoo was read
+for its FANG series' first date, its trading days and its event types only):
+
+- **No share before 2012-10-12 (the listing rule).** Diamondback Energy, Inc. (CIK 1539838) "was incorporated in Delaware on December
+  30, 2011, and did not conduct any material business operations until October 11, 2012 when Diamondback merged with its parent entity,
+  Diamondback Energy LLC" (FY2012 10-K). Its first SEC filing is the S-1 of 2012-02-14; Amendment No. 6 (2012-10-10): "This is the
+  initial public offering of our common stock. Prior to this offering, there has been no public market for our common stock."; the
+  Form 8-A12B of 2012-10-11 registers the common stock on The NASDAQ Stock Market LLC; the 424B4 (accepted 2012-10-15 17:04 ET, dated
+  2012-10-16): "We have been approved to list our common stock on The NASDAQ Global Select Market under the symbol “FANG.”"; the FY2012
+  10-K: "The registrant’s common stock began trading on the NASDAQ Global Select Market on October 12, 2012." Yahoo's FANG series
+  starts on 2012-10-12 (`firstTradeDate` and the first point; Yahoo's events for FANG hold dividends only, no split), so the 249 weekly
+  dates before it have no close.
+- **The predecessors had no shares and are not substituted (the KMI, CTVA and LYB rule).** The history before 2012-10-11 is that of
+  "Windsor Permian LLC, or Windsor Permian" and "Windsor UT LLC" (the "Predecessors"), entities of "Wexford Capital LP, or Wexford, our
+  equity sponsor", combined under common control; "The operations of Windsor Permian and Windsor UT, as limited liability companies,
+  were not subject to federal income taxes." (FY2012 10-K). Neither had listed equity or shares, so no per-share history of a traded
+  share exists for 2007-2011 (the offering documents and the 10-K print net income for those years, never an EPS).
+- **No full year of the company's own EPS in any filing to 2013-12-31 (the loss and gap rules; pro forma unused).** The only per-share
+  figures are pro forma: in the offering documents, "Pro forma income (loss) per common share — basic and diluted" of $(0.04) for 2011
+  (a loss) and $1.07 for the six months of 2012 (not a year), computed "as if" the shares to be issued in the merger were outstanding;
+  in the FY2012 10-K, 2012's "Pro forma earnings per common share" of $0.60 diluted, with "a pro forma income tax provision as if the
+  Company and the Predecessors were subject to income taxes since December 31, 2011" on shares "as if the common shares issued upon the
+  Merger were outstanding for the entire year". The statements of operations print no GAAP earnings per share for any year, and the Q4
+  2012 release (8-K accepted 2013-02-25 21:53 ET) prints no per-share earnings figure at all (the generator asserts it). Pro forma
+  figures are never an EPS anchor (the CTVA rule, "the only per-share history is pro forma"; CHTR's pro forma $3.91 unused).
+- **FY2012 is distorted besides (the AAPL FY2002 test).** GAAP 2012 is a net loss of $36.521M: "On the date of the merger, a
+  corresponding “first day” tax expense to net income from continuing operations was recorded to establish a net deferred tax liability
+  for differences between the tax and book basis of Diamondback’s assets and liabilities. This charge was $54,142,000.", against
+  $18.382M of income before income taxes. The charge exceeds the year's income before it, and no filing publishes a per-share figure
+  excluding only it (the pro forma figure also replaces it with a hypothetical full year of tax at an as-if share count), so even a
+  GAAP per-share figure, had one been printed, would leave the year excluded.
+
+So 2008-2012-10-05 fails twice (no close, no year of EPS) and 2012-10-12 to 2013-12-31 once (no year of EPS). The first full year of
+Diamondback's own EPS is FY2013; EDGAR lists its Q4 2013 release and FY2013 10-K as accepted on 2014-02-19 after the close (8-K
+0001539838-14-000010, 10-K 0001539838-14-000007), but neither was read, so the first date that could be built lies after 2013-12-31 and
+was **not determined** in this session: finding it, and choosing the signals and their rule-T values, is a new batch and the owner's
+call (the CHTR stop).
+
+**The first buildable date, as far as the filings to 2013 show it** (the owner's instruction, relayed by the coordinator: start a short
+history at its first usable point). No filing to 2013-12-31 contains a full year of Diamondback's own EPS, so the first buildable date
+cannot come before the first filing that reports FY2013. EDGAR's index (filing metadata, not content) dates the Q4 2013 release and the
+FY2013 10-K 2014-02-20 (both accepted 2014-02-19 after the close), so the earliest candidate is the week of 2014-02-17: 2014-02-20 under
+the builders' earnings-week rule (the first trading day after the release), 2014-02-21 as the gate's last trading day of the week. It is
+a candidate only: it holds if FY2013 is a positive GAAP year that passes the AAPL FY2002 test and its mirror, which was not checked
+because those filings were not read. From that date the bounds rule covers the short history (one year: BEAR at the 0% cap, BULL at
+BASE's rate, XBULL at BULL's) and the listing rule the window (from 2012-10-12), as for AVGO, V, KMI, CTVA and LYB. The next range
+session starts there. Starting earlier would need a new rule (an anchor on a partial year, a pro forma figure or Windsor Permian's
+history), each the owner's call: only the pro forma $0.60 would add dates (44, below).
+
+**A full-data batch.** `www.sec.gov` served every filing document to the plain client name of `edgar.py` (no contact address; the owner's
+email was not used). Read, by the session's model directly with no delegated transcription: the S-1/A Amendment No. 6 and the 424B4
+(the selected historical data, the pro forma per-share rows, the cover and the listing sentences), the Form 8-A12B, the FY2012 10-K
+(Items 5 and 6, the statements of operations, notes 1, 7, the income tax note and the quarterly data), the FY2012 10-K/A (Part III only:
+"to incorporate information previously omitted from Part III, Items 10, 11, 12, 13 and 14 and to amend and restate the Exhibit Index.",
+so not a vintage) and the Q4 2012 release; the 2013 10-Qs and the other 8-Ks of 2012-2013 were downloaded and searched only for later
+names (below), as no quarter is a year. The fact sheet is generated by a script from the filings' converted rows: each figure is read
+from its labelled row, the row is asserted present in its own filing, and 33 strings were checked with `verbatim.py`, each against its
+own filing, and all 33 were found. Each source's date comes from EDGAR's acceptance time (ET); the source ids are `FG1` (S-1/A No. 6,
+2012-10-10 09:05, before the open), `FG6` (8-A12B, 2012-10-11 14:50, during the session), `FG2` (424B4, dated 2012-10-16), `FG4` (the Q4
+2012 release, dated 2013-02-26), `FG3` (the FY2012 10-K, accepted 2013-03-01 16:52 ET, dated 2013-03-04) and `FG5` (the 10-K/A, dated
+2013-04-11).
+
+**What was set up.** The fact sheet holds only what decides buildability: three history vintages (S-1/A No. 6 and the 424B4, each with
+Windsor Permian LLC's 2008-2011, the six months of 2011 and 2012 and the 2007 period from inception; the FY2012 10-K with 2008-2012 of the
+combined company and Predecessors: revenues, net income, income before income taxes, the GAAP EPS as `null` where none is printed and
+the pro forma per-share figure apart), the FY2012 one-off note, four listing facts, the no-dividend sentence ("We have not paid any cash
+dividends since our inception.", FY2012 10-K) and the price basis. No print, guide, signal, rule-T value or theme event is transcribed;
+the builder stops at any date that passes the gate rather than build from a partial sheet. The engine's signals (oil-equivalent
+production, oil production, revenue, lease operating expense per Boe, pre-tax margin) are placeholders with thresholds unset: choosing
+FANG's signals and deriving their rule-T values from Diamondback's own filings is the first buildable batch's decision. "Viper Energy"
+(2013-11-06: exhibit 10.3 of the Q3 2013 10-Q, the first of the downloaded Diamondback filings to name it; "Viper" alone is a 2013 well
+name) and "Rattler Midstream" (2017-04-26, the first hit of EDGAR full-text search under CIK 1539838) join the anachronism list
+(approximate); no model contains either, and no existing model of any ticker does.
+
+Decided here (no outcome exists to consult):
+- **Vintages before the 10-K.** From 2012-10-10 the latest offering document is the vintage (S-1/A No. 6, then the 424B4); the S-1 of
+  2012-02-14 and Amendments No. 1-5 were not read, because every weekly date before Amendment No. 6 precedes the listing and fails on its
+  price alone (the gate says so in the refusal).
+- **Periods.** A period counts only if it is twelve months (the six months of 2012 and 2011 and the 2007 period from inception, about
+  two months, are not years: the CTVA 2017 rule).
+- **The pro forma figures are not EPS** (above), and the FY2012 10-K/A and the Q4 2012 release add nothing to the gate.
+
+Checks (no model exists, so `retro_tool.py run`, outcomes, the index and the series table have nothing to process; `staging/
+retrospective/index.json` gains no row):
+- **Verbatim:** 33 of 33 strings (every table header and row behind a figure, and every quoted sentence), each against its own filing
+  (`python3 -I retro/tools/verbatim.py`).
+- **Forward references** (`forward_refs.py FANG`): 0 in 16 dated facts. **Self-text** (`selftext.py FANG --allow FG`): 0 misses of 79
+  tokens (the six allowed are the source ids `FG1`-`FG6`, method words). **Leak scan:** not applicable (no model to scan).
+- **Controls** (`controls_fang.py`): setting each vintage's latest full year to a positive GAAP EPS changes the gate's result for exactly
+  the weekly dates from that vintage's publication to the next vintage, and lets each of them pass (S-1/A No. 6: 2012-10-12; the 424B4: 20
+  dates, 2012-10-19 to 2013-03-01; the FY2012 10-K: 44 dates, 2013-03-08 to 2013-12-31), with none before its publication; a FANG close a
+  year before the series start removes only that year's price reason (52 dates, each still refused): 4 of 4.
+- **Firewall** (the gate's version, in `firewall.py`'s FANG branch: in memory, a later 10-K vintage with a positive GAAP year, a later
+  listing and a later no-dividend statement): at the 12 cutoffs above no refusal of a date before the cutoff changes (5 to 314 dates
+  each), and every weekly date between the planted vintage and the next real one changes (the control; 1 to 10 dates): all 12 pass.
+
+Sensitivity (the gate re-run, nothing written; no outcome consulted): **counting the pro forma per-share figures as EPS**
+(`--pro-forma`) lets the 44 weekly dates from 2013-03-08 to 2013-12-31 pass the gate on FY2012's $0.60 (the offering documents' only
+full-year pro forma figure, 2011's $(0.04), is a loss); every date before stays refused. Those 44 dates would still need the 2012-2013
+prints, guides and signals, which are not transcribed.
+
+Judgement calls that could carry hindsight (the builder knows what Diamondback's stock and earnings did after 2013):
+- the pro forma figures unused, in particular FY2012's $0.60 (the CTVA and CHTR rule; the alternative admits 44 dates and is the
+  batch's deciding call, the owner's);
+- the 2007 period and the six-month periods not years (the CTVA 2017 rule; moot, as no period has a GAAP EPS);
+- the predecessors' LLC years not substituted (the KMI, CTVA and LYB rule; they have no per-share figure in any case);
+- stopping at the gate rather than reading the FY2013 filings or transcribing 2012-2013 prints that no model would use;
+- the placeholder signal names in the engine template, chosen by a builder who knows the Permian's later course (no threshold is set,
+  and no model runs on them).
+
+No outcome was computed, so there is no `FINDINGS.md`.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are

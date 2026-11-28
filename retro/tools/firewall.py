@@ -42,6 +42,7 @@ and require byte-identical models. Restores the fact sheet and the price cache a
     python3 retro/tools/firewall.py 2009-01-01 NEM          # the NEM series (Newmont Mining Corporation) in staging/retrospective
     python3 retro/tools/firewall.py 2013-01-01 LYB          # the LYB series in staging/retrospective (from the 2010 share issue)
     python3 retro/tools/firewall.py 2010-01-01 CHTR         # the CHTR gate, and from 2019-02-01 its models (retro/README.md, "CHTR 2008-2009" to "CHTR 2018-2021")
+    python3 retro/tools/firewall.py 2013-01-01 FANG         # the FANG gate (no date built; retro/README.md, "FANG 2008-2009")
 
 Plants a print, a history vintage, an event per live theme and a company name (UNP: also a guide and a
 dividend; LOW and AAPL: also a guide with every guided field; NKE: a guide in words, and futures orders on the last print before
@@ -217,7 +218,7 @@ OUTDIR = {"ACN": "archive/retrospective/ACN", "UNP": "staging/retrospective/UNP"
           "SCHW": "staging/retrospective/SCHW",
           "NEE": "staging/retrospective/NEE", "NEM": "staging/retrospective/NEM",
           "LYB": "staging/retrospective/LYB",
-          "CHTR": "staging/retrospective/CHTR"}[TICKER]
+          "CHTR": "staging/retrospective/CHTR", "FANG": "staging/retrospective/FANG"}[TICKER]
 ARCHIVE = os.path.join(ROOT, OUTDIR)
 BUILDER = os.path.join(ROOT, "retro", f"build_{TICKER.lower()}.py")
 # absurd values for every field the builder reads from a print
@@ -541,6 +542,33 @@ if git("status", "--porcelain", "retro/facts", OUTDIR).strip():
     sys.exit("commit first: the fact sheet or the archive has uncommitted changes")
 
 later = (dt.date.fromisoformat(cutoff) + dt.timedelta(days=10)).isoformat()
+if TICKER == "FANG":   # no FANG date is built (retro/README.md, "FANG 2008-2009"), so the test is the gate's (the CHTR encoding): in
+                       # memory, a later 10-K vintage with a positive GAAP year, a later listing and a later no-dividend statement; every
+                       # weekly date before CUTOFF must keep its exact refusal, and the planted vintage must change the refusal of the
+                       # dates after it until a real later vintage replaces it
+    sys.path.insert(0, os.path.join(ROOT, "retro"))
+    import build_fang
+    with open(FACTS, encoding="utf-8") as fh:
+        f0 = json.load(fh)
+    f1 = copy.deepcopy(f0)
+    f1["history_vintages"].append({"published": later, "source": "PLANTED", "kind": "10-K", "fy_label": "FY99",
+                                   "periods": {"2099": {"issuer": "PLANTED", "start": "2099-01-01", "end": "2099-12-31", "months": 12,
+                                                        "revenue_m": 0.01, "net_income_m": 99.99, "eps_diluted": 99.99,
+                                                        "eps_pro_forma": None}}})
+    f1["listings"].append({"published": later, "source": "PLANTED", "kind": "listing", "issuer": "PLANTED", "exchange": "PLANTED",
+                           "symbol": "PLANTED", "quote": "PLANTED"})
+    f1["no_dividend"].append({"published": later, "source": "PLANTED", "quote": "PLANTED"})
+    fang, spx = build_fang.trading_days("FANG"), build_fang.trading_days("^GSPC")
+    before = build_fang.weekly_dates("2008-01-01", (dt.date.fromisoformat(cutoff) - dt.timedelta(days=1)).isoformat(), spx)
+    nxt = min([v["published"] for v in f0["history_vintages"] if v["published"] > later] + ["9999-12-31"])
+    after = [d for d in build_fang.weekly_dates(later, (dt.date.fromisoformat(later) + dt.timedelta(days=60)).isoformat(), spx)
+             if d < nxt]
+    g = lambda d, f: build_fang.gate(d, f, {k: c for k, c in fang.items() if k <= d})
+    changed = [d for d in before if g(d, f0) != g(d, f1)]
+    moved = [d for d in after if g(d, f0) != g(d, f1)]
+    print(f"{len(before)} weekly dates before {cutoff}: {len(changed)} refusals changed by the planted later facts; "
+          f"control: {len(moved)} of {len(after)} dates after {later} changed")
+    sys.exit(1 if changed or not after or len(moved) != len(after) else 0)
 if TICKER == "CHTR":   # no CHTR date is built (retro/README.md, "CHTR 2008-2009"), so the test is the gate's: in memory, a later 10-K
                        # vintage with a positive full year for both issuers, a later listing and a later series start; every weekly date
                        # before CUTOFF must keep its exact refusal, and the planted vintage must change the refusal of the dates after it
