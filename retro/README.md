@@ -31014,6 +31014,203 @@ Judgement calls that could carry hindsight (the builder knows what Charter's ear
 
 Hindsight outcomes and findings, labelled as such, are in `staging/retrospective/CHTR/FINDINGS.md`: hypotheses, never inputs.
 
+## TRGP (Targa Resources Corp.): the thirty-ninth ticker, in staging, from its first full year of EPS
+
+The TRGP series is built apart from every other ticker and shares nothing with them but the machinery: its own fact sheet
+(`retro/facts/TRGP.json`, generated from the filings by `retro/generators/trgp/gen_trgp.py`), builder (`retro/build_trgp.py`, the LYB
+new-listing builder with TRGP's encodings and a gate that refuses every date before the first full year of EPS) and engine
+(`retro/templates/trgp_engine.py.tmpl`, the LYB engine with midstream signals). The method is still r2. No fact, parameter, outcome or
+finding of another ticker enters a TRGP model (KMI, the other midstream company, lent only its listing and first-full-year precedents);
+there is no TRGP profile in `data/business_profiles.json`, and no 2026 analysis (`scripts/quality_classify.py`, `reports/*.json`, a live
+`*_signal_model.py`) was read. Outputs go to `staging/retrospective/TRGP/`.
+
+```bash
+python3 retro/tools/edgar.py index 1389170 <dir>                            # the downloads (outside the repository)
+python3 retro/tools/edgar.py fetch 1389170 <dir> --from 2010-09-01 --to 2014-03-31 --forms 10-K 10-Q 8-K 10-K/A 8-K/A 10-Q/A 424B1
+python3 -I retro/generators/trgp/gen_trgp.py --filings <dir>                # retro/facts/TRGP.json and <dir>/checklist_trgp.json
+python3 -I retro/tools/verbatim.py <dir>/checklist_trgp.json                # 197/197
+python3 retro/build_trgp.py --weekly 2012-02-20 2013-12-31                  # 98 dates, 2012-02-24 .. 2013-12-31
+python3 retro/build_trgp.py 2008-01-04                                      # refused: no TRGP share before 2010-12-07 (and every date to 2012-02-23: no full year of EPS)
+for d in staging/retrospective/TRGP/20*/; do
+  python3 retro/retro_tool.py --archive staging/retrospective run "$d"
+  python3 retro/retro_tool.py --archive staging/retrospective outcome "$d"
+done
+python3 retro/retro_tool.py --archive staging/retrospective series TRGP
+python3 retro/generators/trgp/controls_trgp.py                              # 25 controls
+python3 retro/generators/trgp/sens_trgp.py <scratch>                        # the sensitivity below
+for c in 2012-02-24 2012-02-28 2012-02-29 2012-05-03 2012-05-04 2012-08-06 2012-08-07 2012-10-18 2012-10-19 2012-11-01 2012-11-02 \
+         2013-02-14 2013-02-15 2013-02-20 2013-02-21 2013-05-03 2013-05-04 2013-08-01 2013-08-02 2013-11-05 2013-11-06 2014-01-01; do
+  python3 retro/tools/firewall.py $c TRGP; done
+```
+
+### TRGP 2008-2009: requested, no date can be built
+
+**What the owner asked for and what could be built.** On 2026-11-28 the coordinating session asked, for the owner, for TRGP 2008-2009 on
+the same rules. Under method r2 **no date of 2008-2009 can be built**, and none was; nothing was invented to fill the gap (the BKR 2018,
+CTVA, KMI and LYB 2008-2009 precedents). Checked against the filings before any price or outcome was read (Yahoo was asked for its series
+metadata only):
+
+- **No TRGP share traded before December 2010.** The IPO prospectus: "No public market currently exists for our common stock." (424B1,
+  accepted 2010-12-07 17:23 ET); the FY2010 10-K: "Our common stock has been listed on the New York Stock Exchange since December 7, 2010
+  under the symbol “TRGP.”" and, on its cover, "As of June 30, 2010, the last day of the registrant’s most recently completed second
+  quarter, the registrant’s common stock was not publicly traded." Through 2007-2009 Targa Resources Corp. (CIK 1389170, then a private
+  company) filed only Forms 3 and 4 and a Schedule 13D as an owner of Partnership units, no 10-K or
+  10-Q (EDGAR submissions). Yahoo's TRGP series starts on 2010-12-07 (`firstTradeDate` and the first point) and records no split.
+- **No EPS to common shareholders in 2008-2009.** "For 2008 and 2009, there was no net income available to common shareholders as the
+  preferred shareholders are entitled to all undistributed earnings. As such, there were no earnings per share to our common shareholders
+  during 2008 and 2009." (FY2010 10-K, the EPS note). So even a price would have had no P/E.
+- **The listed Targa security of those years was another one (why the BKR/BHI route does not apply).** "Targa Resources Partners LP
+  (NYSE: NGLS), a publicly traded Delaware limited partnership" (the prospectus) listed in February 2007; TRC owned its general partner,
+  its incentive distribution rights and some of its common units, and consolidates it. But NGLS's units are a partnership's, with their
+  own earnings per unit and distributions, priced under their own symbol; a 2008-2009 model of them would be an NGLS retrospective, not
+  TRGP's, and its per-unit history is never substituted (the KMI and CTVA rule). Yahoo serves nothing under NGLS (HTTP 404). What TRC's own
+  filings consolidate (the Partnership's revenues and segment margins) is in the TRGP models as published.
+
+So, as the request provides, the ticker is set up anyway and its first buildable dates are built in this session, to 2013-12-31 (next
+part). Sources: EDGAR submissions for CIK 1389170; the 424B1 0000950123-10-111598; the FY2010 10-K 0001389170-11-000003; Yahoo chart
+API, TRGP and NGLS, read 2026-11-28 (metadata only).
+
+### TRGP from the first full year: 2012-02-24 to 2013-12-31
+
+**What could be built.** Under method r2 **the first date that can be built is 2012-02-24**; this part builds the 98 weekly dates to
+2013-12-31. No date from the 2010-12-07 listing to 2012-02-17 (63 weeks) is built: a model needs the stock's own P/E, and TRC's first full
+year of EPS is 2011, published in the Q4 2011 release. 2010 is a loss per share ($(30.94): a net loss available to common shareholders
+of $(202.3)M, after the Series B dividends and $177.8M of dividends on common equivalents, on 6.5M weighted shares before the Series B
+converted into 35.4M shares on 2010-12-10), so it has no P/E (the F, MU and CRM loss rule), and 2008-2009 have none to common
+shareholders. Building that gap takes a new rule (an EPS anchor for a loss year, or 2011's quarters annualized), which is the owner's
+call and a method note; nothing was invented to fill it (the KMI 2011 and LYB 2010 precedents). The builder refuses each of those dates,
+and every date of 2008-2009, with its reason (`first_buildable`, the listing check).
+
+**A full-data batch.** `www.sec.gov` served every filing document to the plain client name of `edgar.py` (no contact address; the owner's
+email was not used). Read, by the session's model directly with no delegated transcription: the IPO prospectus (424B1), the FY2010-FY2012
+10-Ks (selected financial data, the statements of operations and cash flows, the segment notes and the MD&A by segment, the EPS notes,
+Items 1A and 5) and their 10-K/As (the FY2010 one adds the parent-only schedule, the FY2011 one only the XBRL exhibit: neither changes a
+figure the models read, so neither is a vintage), the nine joint earnings releases of Targa Resources Partners and TRC from Q3 2011 to
+Q3 2013 (TRC's consolidated statement of operations, the Partnership's segment reviews, the TRC dividend and distributable cash flow), the
+outlook 8-K of 2012-10-17, and every other 8-K of 2011-2013 by its item text and exhibits. The fact sheet is generated by a script from
+the filings' converted rows: each figure is read from its labelled row, the row is asserted present in its own filing, and every growth
+rate, margin, tax rate and rule-T value is computed, not typed; 197 strings were checked with `verbatim.py`, each against its own filing,
+and all 197 were found. Each source's date comes from EDGAR's acceptance time (ET); the source ids are `TG1`-`TG3` (the 10-Ks),
+`TG10`-`TG18` (the releases) and `TG30` (the outlook 8-K). Decided on 2026-11-28, before any TRGP model was built or any TRGP outcome
+computed:
+
+- **The listing.** Targa Resources Corp.'s common stock, NYSE: TRGP, from 2010-12-07 (`listing.first_trading_day`, the listing rule);
+  the window's 2010 days leave it with the loss year ("ex-FY10"), so it runs from 2011-01-03 (1.1 years on the first date, 3.0 on the
+  last). Yahoo records no split or distribution, so its close is the price as traded.
+- **Release timing.** Every earnings 8-K of the range but one was accepted before the open (07:18-08:20 ET; the joint calls at 10:00 a.m. to
+  1:00 p.m. ET), so the print is public that day and the week's date is the next trading day; the Q1 2013 release (Friday 2013-05-03,
+  07:19 ET) has no trading day after it in its week, so that Friday meets it (the UNP Good Friday rule, public before the open). The Q3
+  2013 8-K was accepted after the close (2013-11-04 16:51 ET), so it is dated 2013-11-05 and its week's date is 2013-11-06. The outlook
+  8-K of 2012-10-17 (16:15 ET) is dated 2012-10-18. The 10-Ks are dated 2011-02-28 (2011-02-25 18:12 ET), 2012-02-28 (2012-02-27 17:08 ET)
+  and 2013-02-20 (2013-02-19 16:47 ET).
+- **EPS: GAAP diluted EPS, each year from the latest filing that reports it.** FY2011 $0.74 (the Q4 2011 release and the FY2011 10-K),
+  FY2012 $0.91 (the Q4 2012 release and the FY2012 10-K). TRC prints no EPS excluding one-offs (its non-GAAP measure is distributable
+  cash flow, display only). The history starts with 2011; 2010 is in `eps_excluded` with its reason, and its days leave the window.
+- **The one-off test, both years kept.** FY2011: the release lists no TRC item; the Partnership's $7.2M of non-cash derivative charges
+  recur and, even all credited to TRC, are under its $30.7M of net income. FY2012: the release's only listed item, "approximately $6
+  million of transaction costs related to the Badlands acquisition" (the Partnership's, pre-tax), against TRC's $38.1M.
+- **No guide in numbers.** No release, 10-Q, 10-K or other 8-K of 2011-2013 guides TRC's revenue, EPS or a margin: the outlooks are the
+  Partnership's Adjusted EBITDA and distribution growth and TRC's dividend growth ("TRC expects to be in a position to increase dividends
+  by 25% to 30%+ in 2013 compared to 2012", the 8-K of 2012-10-17; "in excess of 25% compared to 2013" for 2014, the Q3 2013 release).
+  So current-FY EPS is the last full year's (the PFE rule), BASE is the latest quarter's revenue growth as reported plus the buyback (the
+  SO, UNP, KMI and LYB no-guide rule), and there is no margin step; the dividend outlooks are shown in the guide line, display only (the
+  KMI rule). Their own years (2013, then 2014) are the 20 calendar-year warnings of `retro_tool run` (2012-10-19 to 2012-12-28 and
+  2013-11-06 to 2013-12-31): forecasts the filings state, not leaks.
+- **History.** Consolidated revenues from 2006 (the Partnership in, as TRC consolidates it): 2006 from the FY2010 10-K's selected data,
+  2007-2012 from the latest 10-K that reports each (2009 and 2010 restated by the FY2011 10-K). Diluted shares from 2011 (41.4M, then
+  41.8M): 2010's 6.5M is a weighted average of the pre-IPO common shares before the Series B conversion, not comparable, so it is left
+  out; the net buyback is measured from the first count to the last (none on the first date's one count; -1.0%/yr from the Q4 2012 print).
+- **The rollover rule and the bounds rule.** To the Q4 2012 print the history has one year of EPS, so BEAR is the 0% cap, BULL takes
+  BASE's rate and XBULL BULL's; from it, FY2011 to FY2012 is the only change (+23.0%).
+- **Dividends:** each quarter's declared rate from its release ($0.3075 for Q3 2011 to $0.57 for Q3 2013; $1.345 to $2.28 a year).
+- **Signals.** Five, with the house weights, each against the year-ago quarter as the release shows it: the Partnership's Natural Gas
+  Gathering and Processing operating margin growth (Field plus Coastal Gathering and Processing; 0.20) and Logistics and Marketing operating
+  margin growth (Logistics Assets plus Marketing and Distribution; 0.20), the two divisions the 10-Ks report, segment operating margin
+  being the measure "Targa senior management reviews ... monthly" (hedging, in Other, left out); revenue growth (0.15), the operating
+  margin change (0.15) and the pre-tax margin change (0.15; income before income taxes on revenues, before the noncontrolling interests),
+  from TRC's consolidated statement of operations; the theme slot at 2/4.
+- **Thresholds by rule T over the years the filings public on 2012-02-24 report** (the FY2010 10-K and the Q4 2011 release; the bounds
+  rule), each change from the latest filing that reports both years, as reported:
+
+  | Signal | Annual values | BEAR / BASE / BULL / XBULL |
+  |---|---|---|
+  | Gathering and Processing operating margin | 2009-2011: -44.4, 26.2, 34.2 % | -115 / -44 / 26 / 34 % |
+  | Logistics and Marketing operating margin | 2009-2011: 93.2, 4.5, 43.9 % | -35 / 5 / 44 / 93 % |
+  | revenue | 2007-2011: 19.0, 9.6, -43.3, 20.6, 27.7 % | -106 / -43 / 19 / 28 % |
+  | operating margin change | 2007-2011: -3.0, -91.0, 186.0, -120.0, 144.0 bp | -240 / -120 / 0 / 190 bp |
+  | pre-tax margin change | 2009-2011: 28.0, -63.0, 189.0 bp | -150 / -60 / 30 / 190 bp |
+
+  The segment values are the Partnership's on its common control basis (the FY2010 10-K's MD&A by segment for 2008-2010; the Q4 2011
+  release's 2010 matches it to the decimal, asserted); the pre-tax margins start with 2008, the first year of the FY2010 10-K's statements.
+- **Durability: DURABLE, risk 2.** No 10-K calls the business cyclical; each says "The Partnership’s primary natural gas gathering and
+  processing arrangements that expose it to commodity price risk are its percent-of-proceeds arrangements." and, of its distribution
+  policy, that reserves keep distributions steady "even if the Partnership’s business experiences fluctuations in its cash from operations
+  due to seasonal and cyclical factors": boilerplate of the policy, not a statement that the business is cyclical (the CHTR reading of
+  "seasonal and cyclical variations"), quoted in the "why" with the risk factor "Our cash flow is dependent upon the ability of the
+  Partnership to make cash distributions to us." No theme in the registry is live for a midstream company on these dates: OFFSHORE (live
+  throughout) is scoped to Indian IT services and CLOUD (live 2012-10-30) to on-premise hardware and data centers; the 10-Ks' "offshore" is
+  the Gulf of Mexico and they name cloud only as a director's other board, Cloud Peak Energy Inc.; from 2012-10-30 the "why" quotes every
+  live theme's scope (the SCHW and LYB wording). ENERGY_TRANSITION is live only from 2015-12-12 (the builder asserts no theme but OFFSHORE
+  and CLOUD is live, so a later date needs its own reading first). The watch list is empty and the builder refuses events.
+- **Segment bridge and EPS check** (display only): the latest 10-K's segment operating margin by segment as the split; the EPS check runs
+  on the consolidated pre-tax margin and tax rate before the noncontrolling interests (the Partnership's other unitholders), so it
+  overstates TRC's own EPS several times over, as its note says (the KMI note).
+- **Adds nothing:** the outlook 8-K of 2011-10-19 and its 8-K/A of 2011-10-21 (the Partnership's preliminary third-quarter results and
+  guidance, before the first date; for TRC only "TRC currently expects that its distributable cash flow for 2011 will not be impacted by
+  current period cash taxes"), the credit
+  facility 8-K of 2012-10-09, the officer, director and vote-result 8-Ks and the S-1 and 424B1 of April 2011 (a secondary offering by
+  selling shareholders): none guides TRC's revenue, EPS or a margin.
+
+Controls and checks (before any outcome):
+- **Controls** (`controls_trgp.py`): raising each print's Gathering and Processing operating margin (its growth re-derived), each Q4
+  print's full-year revenue, each vintage's last revenue, each dividend and each outlook's display changes no model dated before its
+  publication and changes the first weekly date on or after it: 24 of 25; the 25th, the Q3 2011 release's dividend, is superseded by the
+  Q4 2011 rate before the first date and reaches no model, as it should (the Q3 2011 print itself reaches the first dates as the previous
+  print's segment growth).
+- **Leak scan:** `leak_scan.py`: 6,751 (model, later token) pairs, 0 hits (positive control: the print in force shows in 98 of 98).
+  `forward_refs.py`: 2 hits in 37 dated facts, both the outlooks' own fiscal-year labels ("TRC 2013 dividend outlook" in the 8-K of
+  2012-10-17, "TRC 2014 dividend outlook" in the Q3 2013 release), which those filings state. `selftext.py --allow "Targa Resources Corp.
+  FY" USD "The FY" "The IPO"`: 0 misses in 564 tokens (the four allowed are method words of the source titles and notes).
+- **Years after the as-of date:** none in the 98 models and reports other than the FY horizon labels and the two outlooks' years.
+- **`retro_tool run`:** passes on all 98 dates, with the 20 warnings above.
+- **Firewall:** see the results paragraph below (run after the build was committed, before any outcome).
+
+Seen in the build (method behaviour, not tuned):
+- **Totals: RICH 88, FAIR 9, CHEAP 1.** The FAIR and CHEAP dates are the Q4 2011 print's (2012-02-24 to 2012-04-27; CHEAP on
+  2012-04-13); every date from the Q1 2012 print (2012-05-04) is RICH. Legacy tiers: AVOID 87, WATCHLIST 6, ACCUMULATE 5. Ratio B is
+  infinite (the price above BULL) on 33 dates.
+- **The multiple.** TRC is the general partner's holding company: most consolidated earnings go to the Partnership's other unitholders,
+  so its GAAP EPS ($0.74, then $0.91) is small against its dividends ($1.345 to $2.28 a year) and the stock trades at 57-97x the last full
+  year's EPS ($45.95 on the first date, $41.87 at the low of 2012-06-22, $88.17 on the last). The window holds only 2011-2013 days on
+  those two anchors, so its median is itself high (44.9x on the first date, 50.2x on the last), and the current P/E sits at or above its
+  75th percentile on 86 of the 88 dates from the Q1 2012 print (the 73rd at its lowest, 2012-06-22).
+- **BASE follows revenue as reported:** +26.6%/yr on the Q4 2011 print's dates (the 2011 NGL prices), then +1.7%, -23.7%, -18.7%, -21.0%,
+  -15.1%, +9.3% and +11.7% after each later print, less 1.0%/yr of dilution from the Q4 2012 print: the NGL price fall of 2012 read as
+  shrinkage of a business whose segment margins were rising (Logistics and Marketing +11% to +52% a quarter).
+- **The EPP floor** is $33 on FY11's $0.74 (44x, the median of 2011's and 2012's calendar-year lows) to 2012-12-28, $39 on the same $0.74
+  at 53x on the six dates of January 2013 (2013's first low joins the lows), and $39 on FY12's $0.91 (43x) from the Q4 2012 print.
+
+Sensitivity (each call changed alone, the 98 dates rebuilt and reclassified offline with `retro_tool`'s own classifier; no outcome
+consulted; `sens_trgp.py`):
+- **BASE on TRC's dividend outlook** (27.5%, the midpoint of "25% to 30%+", from 2012-10-18; 25% from 2013-11-05): **10 classes** (RICH to
+  FAIR, 2012-10-19 to 2012-12-28) and 25 tiers;
+- **FY2010's 6.5M pre-IPO shares in the buyback:** 10 classes (FAIR to RICH 9, CHEAP to RICH 1: the Q4 2011 print's dates), 10 tiers;
+- **every signal at its BEAR value:** the same 10 classes to RICH; **at its XBULL value:** 8 classes (FAIR to CHEAP), no tier;
+- **the revenue history from 2010** (no pre-IPO 2006-2009) and **2010's days in the P/E window on FY2011's EPS:** 1 class each (CHEAP to
+  FAIR on 2012-04-13), 0 and 3 tiers;
+- **CYCLICAL instead of DURABLE:** no class, no tier.
+The RICH calls of 2012-05-04 on rest on the short window on two anchors against a price rising faster than GAAP EPS; the ten FAIR and
+CHEAP dates rest on the Q4 2011 print's +26.6% revenue growth and move with the share count and the signals.
+
+Judgement calls that could carry hindsight:
+- BASE on revenue as reported when no revenue is guided (10 classes on the dividend outlook), by a builder who knows how TRGP traded;
+- the share counts from 2011 (10 classes with FY2010's pre-IPO count), and 2010 excluded as a loss with its days out of the window;
+- the signals, chosen by a builder who knows 2012-2013: the Partnership's two divisions by segment operating margin, revenue and two GAAP
+  margins (rule T then sets the thresholds mechanically, from three to five years that include the 2009 trough);
+- DURABLE although the 10-Ks describe commodity exposure and a policy written for "seasonal and cyclical factors" (no class moves);
+- the Partnership's consolidated revenues and segment margins in TRC's models (what TRC's filings consolidate), its unit prices never;
+- the non-earnings 8-Ks read by their item text and exhibits for guided numbers only.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
