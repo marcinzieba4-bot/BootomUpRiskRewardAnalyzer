@@ -31682,6 +31682,12 @@ Controls and checks (before any outcome):
   2010's revenues in millions ($3,924.0M), rounded from the release's $3,923,967 thousand.
 - **Regression:** the 2008-2009 models rebuild byte-identical with the extended sheet and builder; the shared code is untouched but
   `retro/tools/firewall.py` (OKE's plants gain a net income guide, a guide in words and per-year publication dates).
+- **Firewall** (run after the build, validation outputs and README section were committed and pushed, before any outcome): it passes at
+  all 10 cutoffs above (the first guidance 8-K, the Q4 2009 print and FY2009 vintage, the Q4 2010 and Q4 2011 prints released before the
+  open, the split's effective date, the Q3 2012 print after CLOUD's live date, the Q4 2012 print, the wind-down guide, the Q3 2013 print
+  and 2014-01-01: 108 to 314 dates each, 2008-2009 included), 0 files changed and no planted text. Besides the 2008-2009 plants, each
+  cutoff plants a later net income guide over the planted print's shares and a later guide in words for every guided year, and per-year
+  publication dates on the planted vintage.
 
 Seen in the build (method behaviour, not tuned). The window holds 2002-2013 days on ONEOK's own earnings, a median of 13.0-15.7x:
 - **RICH 168, CHEAP 32, FAIR 9 of 209 dates;** legacy tiers AVOID 157, BUY 29, ACCUMULATE 13, WATCHLIST 10. 2010: CHEAP 32, RICH 11,
