@@ -1,0 +1,262 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "TRGP",
+ "company": "Targa Resources Corp.",
+ "as_of": "2020-12-24",
+ "price_date": "2020-12-24",
+ "price": 26.55,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); midstream signals",
+ "pit_profile": {
+  "kind": "DURABLE",
+  "risk": 2,
+  "why": "Commodity exposure (Targa Resources Corp. FY2019 10-K): Our primary natural gas gathering and processing arrangements that expose us to commodity price risk are our percent-of-proceeds arrangements. Distribution policy: 'even if our business experiences fluctuations in cash from operations due to seasonal and cyclical factors' (the boilerplate of the dividend policy, not a statement that the business is cyclical: the CHTR reading). Risk factor: 'Our cash flow is affected by supply and demand for natural gas and NGL products and by natural gas, NGL, crude oil and condensate prices, and decreases in these prices could adversely affect our results of operations and financial condition.'; no disruption theme in taxonomy_eras.json is live for a midstream natural gas company on this date (of the live themes, OFFSHORE is scoped to 'lower-cost offshore delivery (Indian IT services) takes share and price from Western consulting, systems integration and outsourcing', CLOUD to 'public cloud displaces on-premise hardware, storage, legacy databases and data-center outsourcing', ECOMMERCE to 'e-commerce (Amazon effect) displaces physical retail, malls, grocery, distribution', STREAMING to 'cord-cutting / streaming displaces linear TV networks and pay-TV bundles', ENERGY_TRANSITION to 'decarbonisation strands oil, gas and coal reserves and refining', EV to 'battery-electric vehicles displace ICE powertrains, auto parts suppliers and fuel retail', CRYPTO to 'crypto / DeFi disintermediates payments networks, banks, exchanges, remittance': none names midstream energy but ENERGY_TRANSITION, whose oil, gas and coal reserves and refining a gatherer and processor does not hold (the BKR reading: the Targa Resources Corp. FY2019 10-K names no reserves of Targa's, and its refinery services are NGL balancing for refiners, 'In our refinery services business, we typically provide NGL balancing services through contractual arrangements with refiners to purchase and/or market propane and to supply butanes.'; the Channelview Splitter is a terminaling asset of the Petroleum Logistics business: 'Our Petroleum Logistics business owns and operates a storage and terminaling facility in Channelview, Texas, including a 35,000 Bbl/d nameplate capacity crude oil and condensate splitter (the “Channelview Splitter”).'); the 10-Ks' 'offshore' is the Gulf Coast and its waters, the Targa Resources Corp. FY2019 10-K does not name cloud, and no 10-K names e-commerce, streaming, electric vehicles or crypto), so the watch list is empty and these words stay here, with the greenhouse gas risk factor: 'Our and our customers’ operations are subject to a number of risks arising out of the threat of climate change (including legislation or regulation to address climate change) that could result in increased operating costs, limit the areas in which oil and natural gas production may occur, and reduce demand for the products and services we provide.' (the PEP obesity rule)",
+  "theme_watch": [],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "COMPOUNDER AT LOW PRICE",
+  "quality_label": "◉ COMPOUNDER AT LOW PRICE",
+  "quality_color": "#4ade80",
+  "quality_tone": "green",
+  "business_kind": "DURABLE",
+  "obsolescence_risk": 2,
+  "price_state": "CHEAP",
+  "quality_note": "Commodity exposure (Targa Resources Corp. FY2019 10-K): Our primary natural gas gathering and processing arrangements that expose us to commodity price risk are our percent-of-proceeds arrangements. Distribution policy: 'even if our business experiences fluctuations in cash from operations due to seasonal and cyclical factors' (the boilerplate of the dividend policy, not a statement that the business is cyclical: the CHTR reading). Risk factor: 'Our cash flow is affected by supply and demand for natural gas and NGL products and by natural gas, NGL, crude oil and condensate prices, and decreases in these prices could adversely affect our results of operations and financial condition.'; no disruption theme in taxonomy_eras.json is live for a midstream natural gas company on this date (of the live themes, OFFSHORE is scoped to 'lower-cost offshore delivery (Indian IT services) takes share and price from Western consulting, systems integration and outsourcing', CLOUD to 'public cloud displaces on-premise hardware, storage, legacy databases and data-center outsourcing', ECOMMERCE to 'e-commerce (Amazon effect) displaces physical retail, malls, grocery, distribution', STREAMING to 'cord-cutting / streaming displaces linear TV networks and pay-TV bundles', ENERGY_TRANSITION to 'decarbonisation strands oil, gas and coal reserves and refining', EV to 'battery-electric vehicles displace ICE powertrains, auto parts suppliers and fuel retail', CRYPTO to 'crypto / DeFi disintermediates payments networks, banks, exchanges, remittance': none names midstream energy but ENERGY_TRANSITION, whose oil, gas and coal reserves and refining a gatherer and processor does not hold (the BKR reading: the Targa Resources Corp. FY2019 10-K names no reserves of Targa's, and its refinery services are NGL balancing for refiners, 'In our refinery services business, we typically provide NGL balancing services through contractual arrangements with refiners to purchase and/or market propane and to supply butanes.'; the Channelview Splitter is a terminaling asset of the Petroleum Logistics business: 'Our Petroleum Logistics business owns and operates a storage and terminaling facility in Channelview, Texas, including a 35,000 Bbl/d nameplate capacity crude oil and condensate splitter (the “Channelview Splitter”).'); the 10-Ks' 'offshore' is the Gulf Coast and its waters, the Targa Resources Corp. FY2019 10-K does not name cloud, and no 10-K names e-commerce, streaming, electric vehicles or crypto), so the watch list is empty and these words stay here, with the greenhouse gas risk factor: 'Our and our customers’ operations are subject to a number of risks arising out of the threat of climate change (including legislation or regulation to address climate change) that could result in increased operating costs, limit the areas in which oil and natural gas production may occur, and reduce demand for the products and services we provide.' (the PEP obesity rule). durable franchise (obsolescence risk 2/5); price cheap; Ratio B 0.53x; -30% to EPP floor; model-vs-market gap +1.37; conservative 2yr +88%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.53,
+  "ratio_b_fmt": "0.53x",
+  "epp": 38.15,
+  "epp_gap_pct": -30.4,
+  "epp_adj": 0.2,
+  "proxy_composite": 2.6,
+  "sca": 0.25,
+  "adj_composite": 3.05,
+  "market_composite": 1.68,
+  "adj_gap": 1.37,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 87.8,
+  "scenarios": {
+   "BEAR": {
+    "eps": 0.22,
+    "pe": 18.0,
+    "price": 4,
+    "desc": "EPS -55.1%/yr (worst year FY11-FY15, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 0.92,
+    "pe": 45.4,
+    "price": 42,
+    "desc": "EPS -8.2%/yr (Q3 revenues + margin + buyback); P/E at its 10-yr ex-FY10 ex-FY16 ex-FY17 ex-FY18 ex-FY19 median"
+   },
+   "BULL": {
+    "eps": 1.32,
+    "pe": 52.6,
+    "price": 69,
+    "desc": "EPS +10.2%/yr (FY11-FY15 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 2.91,
+    "pe": 71.0,
+    "price": 207,
+    "desc": "EPS +63.4%/yr (best 2-yr run FY11-FY15, at least BULL); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.53,
+   "epp_gap_pct": -30.4,
+   "adj_gap": 1.37,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 87.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.26,
+   "epp_gap_pct": -30.4,
+   "adj_gap": 1.58,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 87.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 0.7,
+   "epp_gap_pct": -30.4,
+   "adj_gap": 1.18,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 87.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.5,
+   "epp_gap_pct": -30.4,
+   "adj_gap": 1.39,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 87.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.56,
+   "epp_gap_pct": -30.4,
+   "adj_gap": 1.35,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 87.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.53,
+   "epp_gap_pct": -30.4,
+   "adj_gap": 1.67,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 87.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.53,
+   "epp_gap_pct": -35.9,
+   "adj_gap": 1.37,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 87.8,
+   "price_state": "CHEAP"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.53,
+   "epp_gap_pct": -30.4,
+   "adj_gap": 1.44,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 87.8,
+   "price_state": "CHEAP"
+  }
+ ],
+ "robustness_price_states": [
+  "CHEAP"
+ ],
+ "summary": "TRGP (retrospective, 2020-12-24) ◉ BUY — Ratio B 0.53x (84.9% downside to Bear $4 / +159.9% upside to Bull $69) | Adj composite 3.05 vs market 1.68: gap +1.37 [UNDERVALUED] | -30% above the EPP floor $38 (35x FY20E $1.09) | Conservative 2-yr case: +87.8% total (+43.9%/yr) | At 24.4x FY20E the 15% hurdle price $35 sits at or below the BASE case; Gathering and Processing +5.9% and Logistics and Marketing +22.5% operating margin in Q3 2020, forward revenues +11.2% (no FY20 revenue guide in numbers, Q3 2020 revenues as reported); no theme in the registry is live for a midstream natural gas company on this date; none has dated evidence.",
+ "sources": [
+  {
+   "id": "TG72",
+   "published": "2020-02-21",
+   "filed": "accepted 2020-02-20 17:10 ET (after the close), so dated the next trading day",
+   "title": "Targa Resources Corp. FY2019 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1389170/000156459020005592/trgp-10k_20191231.htm",
+   "supports": "Item 6 (selected financial data: revenues and EPS), the statements of operations and cash flows, the segment note, the risk factors and the selected quarterly data (the fourth quarter's EPS)"
+  },
+  {
+   "id": "TG71",
+   "published": "2019-03-01",
+   "filed": "accepted 2019-03-01 13:01 ET (during market hours)",
+   "title": "Targa Resources Corp. FY2018 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1389170/000156459019005727/trgp-10k_20181231.htm",
+   "supports": "Item 6 (selected financial data: revenues and EPS), the statements of operations and cash flows, the segment note, the risk factors and the selected quarterly data (the fourth quarter's EPS)"
+  },
+  {
+   "id": "TG70",
+   "published": "2018-02-20",
+   "filed": "accepted 2018-02-16 16:20 ET (after the close), so dated the next trading day",
+   "title": "Targa Resources Corp. FY2017 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1389170/000156459018002330/trgp-10k_20171231.htm",
+   "supports": "Item 6 (selected financial data: revenues and EPS), the statements of operations and cash flows, the segment note, the risk factors and the selected quarterly data (the fourth quarter's EPS)"
+  },
+  {
+   "id": "TG7",
+   "published": "2017-02-21",
+   "filed": "accepted 2017-02-17 19:01 ET (after the close), so dated the next trading day",
+   "title": "Targa Resources Corp. FY2016 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1389170/000156459017001810/trgp-10k_20161231.htm",
+   "supports": "Item 6 (selected financial data: revenues and EPS), the statements of operations and cash flows, the segment note and the risk factors"
+  },
+  {
+   "id": "TG8",
+   "published": "2016-05-23",
+   "filed": "accepted 2016-05-23 08:26 ET (before the open)",
+   "title": "Targa Resources Corp. 8-K of 2016-05-23 (Exhibit 99.1, the FY2015 10-K's Items 1, 6, 7 and 8 recast for the two segments)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1389170/000119312516598296/d194901dex991.htm",
+   "supports": "Item 6 (selected financial data: revenues and EPS), the statements of operations and cash flows, the segment note and the risk factors; recast for the two segments reported from 2016 and ASU 2015-03 (no figure the models read changes but the segments)"
+  },
+  {
+   "id": "TG5",
+   "published": "2015-02-17",
+   "filed": "accepted 2015-02-13 17:43 ET (after the close), so dated the next trading day",
+   "title": "Targa Resources Corp. FY2014 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1389170/000114036115006704/form10k.htm",
+   "supports": "Item 6 (selected financial data: revenues and EPS), the statements of operations and cash flows, the segment note and the risk factors"
+  },
+  {
+   "id": "TG88",
+   "published": "2020-02-20",
+   "filed": "accepted 2020-02-20 06:30 ET (before the open)",
+   "title": "Targa Resources Corp. Q4 2019 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1389170/000156459020005394/trgp-ex991_34.htm",
+   "supports": "Targa Resources Corp.'s consolidated results (revenues, income from operations, net income and the income tax line, net income attributable to common shareholders and the Series A preferred dividends; no EPS or share count) and its two segments' operating margins, each with the year-ago quarter as this release shows it; the TRC dividend declared; the estimated net income attributable to TRC that reconciles its Adjusted EBITDA outlook"
+  },
+  {
+   "id": "TG89",
+   "published": "2020-05-07",
+   "filed": "accepted 2020-05-07 06:15 ET (before the open)",
+   "title": "Targa Resources Corp. Q1 2020 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1389170/000156459020022319/trgp-ex991_28.htm",
+   "supports": "Targa Resources Corp.'s consolidated results (revenues, income from operations, net income and the income tax line, net income attributable to common shareholders and the Series A preferred dividends; no EPS or share count) and its two segments' operating margins, each with the year-ago quarter as this release shows it; the TRC dividend declared; the estimated net income attributable to TRC that reconciles its Adjusted EBITDA outlook"
+  },
+  {
+   "id": "TG90",
+   "published": "2020-08-06",
+   "filed": "accepted 2020-08-06 06:15 ET (before the open)",
+   "title": "Targa Resources Corp. Q2 2020 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1389170/000156459020037193/trgp-ex991_33.htm",
+   "supports": "Targa Resources Corp.'s consolidated results (revenues, income from operations, net income and the income tax line, net income attributable to common shareholders and the Series A preferred dividends; no EPS or share count) and its two segments' operating margins, each with the year-ago quarter as this release shows it; the TRC dividend declared; the estimated net income attributable to TRC that reconciles its Adjusted EBITDA outlook"
+  },
+  {
+   "id": "TG91",
+   "published": "2020-11-05",
+   "filed": "accepted 2020-11-05 06:15 ET (before the open)",
+   "title": "Targa Resources Corp. Q3 2020 results (8-K, Exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1389170/000156459020050801/trgp-ex991_25.htm",
+   "supports": "Targa Resources Corp.'s consolidated results (revenues, income from operations, net income and the income tax line, net income attributable to common shareholders and the Series A preferred dividends; no EPS or share count) and its two segments' operating margins, each with the year-ago quarter as this release shows it; the TRC dividend declared; the estimated net income attributable to TRC that reconciles its Adjusted EBITDA outlook"
+  },
+  {
+   "id": "TG108",
+   "published": "2020-11-05",
+   "filed": "accepted 2020-11-05 14:23 ET (during market hours)",
+   "title": "Targa Resources Corp. Q3 2020 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1389170/000156459020051164/trgp-10q_20200930.htm",
+   "supports": "the quarter's diluted EPS and weighted-average shares, with the year-ago quarter (the release prints neither)"
+  },
+  {
+   "id": "TG1",
+   "published": "2011-02-28",
+   "filed": "accepted 2011-02-25 18:12 ET (after the close), so dated the next trading day",
+   "title": "Targa Resources Corp. FY2010 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1389170/000138917011000003/form10-k.htm",
+   "supports": "Item 6 (selected financial data: revenues and EPS), the statements of operations and cash flows, the segment note, Item 5 and the risk factors"
+  },
+  {
+   "id": "A0",
+   "published": "2020-12-24",
+   "title": "Yahoo Finance daily prices, Targa Resources Corp. common stock (NYSE: TRGP) and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/TRGP/history",
+   "supports": "close $26.55 as traded on AS_OF, 52-week range, realized vol, beta, the 10-yr ex-FY10 ex-FY16 ex-FY17 ex-FY18 ex-FY19 P/E distribution since the listing on 2010-12-07"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-28"
+}
