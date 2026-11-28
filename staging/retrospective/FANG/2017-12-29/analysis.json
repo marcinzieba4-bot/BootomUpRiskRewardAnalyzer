@@ -1,0 +1,253 @@
+{
+ "_doc": "Point-in-time retrospective. Every input was public on as_of; see sources. Hindsight lives only in outcome.json.",
+ "ticker": "FANG",
+ "company": "Diamondback Energy, Inc.",
+ "as_of": "2017-12-29",
+ "price_date": "2017-12-29",
+ "price": 126.25,
+ "methodology": "house v2 (EPP-distance adjustment), 6-section format; retro method r2: scenario inputs derived from dated facts by frozen rules (retro/README.md); oil and gas producer signals",
+ "pit_profile": {
+  "kind": "CYCLICAL",
+  "risk": 2,
+  "why": "FY16 10-K: 'We are an independent oil and natural gas company focused on the acquisition, development, exploration and exploitation of unconventional, onshore oil and natural gas reserves in the Permian Basin in West Texas.' Risk factors: 'The oil and natural gas industry is cyclical, which can result in shortages of drilling rigs, equipment, raw materials (particularly sand and other proppants), supplies and personnel.' and 'Our revenues, operating results, profitability, future rate of growth and the carrying value of our oil and natural gas properties depend significantly upon the prevailing prices for oil and natural gas.' The kind is CYCLICAL on the 10-K's own word for its industry (the CB and LYB rule): the earnings are the oil price; of the live disruption themes, OFFSHORE is scoped to 'lower-cost offshore delivery (Indian IT services) takes share and price from Western consulting, systems integration and outsourcing', CLOUD to 'public cloud displaces on-premise hardware, storage, legacy databases and data-center outsourcing', ECOMMERCE to 'e-commerce (Amazon effect) displaces physical retail, malls, grocery, distribution', STREAMING to 'cord-cutting / streaming displaces linear TV networks and pay-TV bundles': none names an oil and gas producer; ENERGY_TRANSITION is live (from 2015-12-12, scoped to 'decarbonisation strands oil, gas and coal reserves and refining'): Diamondback's reserves are oil and gas and its climate legislation risk factor puts the theme on the watch list, company-acknowledged, with no dated evidence that the market prices it for Diamondback",
+  "theme_watch": [
+   {
+    "theme": "ENERGY_TRANSITION",
+    "status": "live, company-acknowledged; no market read",
+    "reason": "Live: Diamondback's own FY16 10-K says 'The adoption of climate change legislation by Congress could result in increased operating costs and reduced demand for the oil and natural gas we produce.' The stock trades at 34.7x FY17E — a premium. Re-file as DISRUPTION_EXPOSED (ENERGY_TRANSITION) only if dated evidence shows the market pricing decarbonisation of Diamondback's oil and gas reserves specifically."
+   }
+  ],
+  "evidence": []
+ },
+ "classification": {
+  "quality_class": "CYCLICAL, NEUTRALLY VALUED",
+  "quality_label": "◐ CYCLICAL, NEUTRALLY VALUED",
+  "quality_color": "#60a5fa",
+  "quality_tone": "blue",
+  "business_kind": "CYCLICAL",
+  "obsolescence_risk": 2,
+  "price_state": "FAIR",
+  "quality_note": "FY16 10-K: 'We are an independent oil and natural gas company focused on the acquisition, development, exploration and exploitation of unconventional, onshore oil and natural gas reserves in the Permian Basin in West Texas.' Risk factors: 'The oil and natural gas industry is cyclical, which can result in shortages of drilling rigs, equipment, raw materials (particularly sand and other proppants), supplies and personnel.' and 'Our revenues, operating results, profitability, future rate of growth and the carrying value of our oil and natural gas properties depend significantly upon the prevailing prices for oil and natural gas.' The kind is CYCLICAL on the 10-K's own word for its industry (the CB and LYB rule): the earnings are the oil price; of the live disruption themes, OFFSHORE is scoped to 'lower-cost offshore delivery (Indian IT services) takes share and price from Western consulting, systems integration and outsourcing', CLOUD to 'public cloud displaces on-premise hardware, storage, legacy databases and data-center outsourcing', ECOMMERCE to 'e-commerce (Amazon effect) displaces physical retail, malls, grocery, distribution', STREAMING to 'cord-cutting / streaming displaces linear TV networks and pay-TV bundles': none names an oil and gas producer; ENERGY_TRANSITION is live (from 2015-12-12, scoped to 'decarbonisation strands oil, gas and coal reserves and refining'): Diamondback's reserves are oil and gas and its climate legislation risk factor puts the theme on the watch list, company-acknowledged, with no dated evidence that the market prices it for Diamondback. cyclical (obsolescence risk 2/5); price fair; Ratio B 0.09x; +148% to EPP floor; model-vs-market gap +1.75; conservative 2yr +157%.",
+  "theme": null
+ },
+ "legacy_signal_short": "BUY",
+ "legacy_signal": "◉ BUY",
+ "metrics": {
+  "ratio_b": 0.09,
+  "ratio_b_fmt": "0.09x",
+  "epp": 50.96,
+  "epp_gap_pct": 147.7,
+  "epp_adj": -0.2,
+  "proxy_composite": 2.85,
+  "sca": 0.1,
+  "adj_composite": 2.75,
+  "market_composite": 1.0,
+  "adj_gap": 1.75,
+  "valuation": "UNDERVALUED",
+  "cons_return_2yr": 156.6,
+  "scenarios": {
+   "BEAR": {
+    "eps": 3.64,
+    "pe": 16.8,
+    "price": 61,
+    "desc": "EPS +0.0%/yr (worst year FY13-FY14, capped at 0%); P/E to its 10th pct"
+   },
+   "BASE": {
+    "eps": 13.78,
+    "pe": 24.6,
+    "price": 339,
+    "desc": "EPS +94.6%/yr (Q3 revenues + margin + buyback); P/E at its 5.0-yr ex-FY12 ex-FY15 ex-FY16 median"
+   },
+   "BULL": {
+    "eps": 28.98,
+    "pe": 28.7,
+    "price": 832,
+    "desc": "EPS +182.2%/yr (FY13-FY14 CAGR, at least BASE); P/E holds its 75th pct"
+   },
+   "XBULL": {
+    "eps": 28.98,
+    "pe": 33.8,
+    "price": 980,
+    "desc": "EPS +182.2%/yr (no 2-yr run in FY13-FY14: BULL's rate); P/E at its 90th pct"
+   }
+  }
+ },
+ "robustness": [
+  {
+   "variant": "Main case",
+   "ratio_b": 0.09,
+   "epp_gap_pct": 147.7,
+   "adj_gap": 1.75,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 156.6,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Multiples one band richer (p25/p75/p90/max)",
+   "ratio_b": 0.06,
+   "epp_gap_pct": 147.7,
+   "adj_gap": 1.75,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 156.6,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Multiples one band cheaper (p5/p25/med/p75)",
+   "ratio_b": 0.12,
+   "epp_gap_pct": 147.7,
+   "adj_gap": 1.42,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 156.6,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Scenario EPS +1.5pp/yr",
+   "ratio_b": 0.09,
+   "epp_gap_pct": 147.7,
+   "adj_gap": 1.75,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 156.6,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Scenario EPS -1.5pp/yr",
+   "ratio_b": 0.1,
+   "epp_gap_pct": 147.7,
+   "adj_gap": 1.75,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 156.6,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Structural read +0.30 (bullish SCA)",
+   "ratio_b": 0.09,
+   "epp_gap_pct": 147.7,
+   "adj_gap": 2.05,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 156.6,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "EPP P/E +3 turns (softer floor)",
+   "ratio_b": 0.09,
+   "epp_gap_pct": 104.0,
+   "adj_gap": 1.75,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 156.6,
+   "price_state": "FAIR"
+  },
+  {
+   "variant": "Hurdle 10%/yr instead of 15%",
+   "ratio_b": 0.09,
+   "epp_gap_pct": 147.7,
+   "adj_gap": 1.75,
+   "verdict": "UNDERVALUED",
+   "legacy_tier": "BUY",
+   "cons_return_2yr": 156.6,
+   "price_state": "FAIR"
+  }
+ ],
+ "robustness_price_states": [
+  "FAIR"
+ ],
+ "summary": "FANG (retrospective, 2017-12-29) ◉ BUY — Ratio B 0.09x (51.7% downside to Bear $61 / +559.0% upside to Bull $832) | Adj composite 2.75 vs market 1.00: gap +1.75 [UNDERVALUED] | +148% above the EPP floor $51 (14x FY17E $3.64) | Conservative 2-yr case: +156.6% total (+78.3%/yr) | At 34.7x FY17E the 15% hurdle price $167 sits at or below the BASE case; oil-equivalent production +89.3% and oil production +89.2% in Q3 2017, forward revenues +112% (no FY17 revenue guide in numbers, Q3 2017 revenues as reported); the energy transition is live and company-acknowledged; no dated evidence ties the multiple to it.",
+ "sources": [
+  {
+   "id": "FG10",
+   "published": "2017-02-16",
+   "filed": "2017-02-15 17:26 ET (after the close)",
+   "accession": "0001539838-17-000009",
+   "title": "Diamondback FY2016 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1539838/000153983817000009/diamondback201610-k",
+   "supports": "Item 6, Selected Financial Data: total revenues, income (loss) before income taxes, the provision for income taxes, net income (loss) attributable to Diamondback, diluted EPS and diluted weighted average shares, net cash provided by operating activities for 2012-2016; the statements of operations (oil, natural gas and natural gas liquid sales) and cash flows (additions to oil and natural gas properties); Item 2's production and price history; Items 1, 1A and 5"
+  },
+  {
+   "id": "FG33",
+   "published": "2017-02-15",
+   "filed": "2017-02-14 17:40 ET (after the close)",
+   "accession": "0001539838-17-000007",
+   "title": "Diamondback Q4 2016 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1539838/000153983817000007/diamondbackex991-2x14x17",
+   "supports": "Consolidated statements of operations (revenues, income before income taxes, diluted EPS and shares, three months against the year-ago quarter) and selected operating data (oil and oil-equivalent production, lease operating expense per BOE); the twelve months"
+  },
+  {
+   "id": "FG34",
+   "published": "2017-05-03",
+   "filed": "2017-05-02 16:44 ET (after the close)",
+   "accession": "0001539838-17-000071",
+   "title": "Diamondback Q1 2017 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1539838/000153983817000071/diamondbackex991-5x2x17",
+   "supports": "Consolidated statements of operations (revenues, income before income taxes, diluted EPS and shares, three months against the year-ago quarter) and selected operating data (oil and oil-equivalent production, lease operating expense per BOE)"
+  },
+  {
+   "id": "FG35",
+   "published": "2017-08-02",
+   "filed": "2017-08-01 18:09 ET (after the close)",
+   "accession": "0001539838-17-000103",
+   "title": "Diamondback Q2 2017 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1539838/000153983817000103/diamondbackex991-8x1x17",
+   "supports": "Consolidated statements of operations (revenues, income before income taxes, diluted EPS and shares, three months against the year-ago quarter) and selected operating data (oil and oil-equivalent production, lease operating expense per BOE)"
+  },
+  {
+   "id": "FG36",
+   "published": "2017-11-07",
+   "filed": "2017-11-06 17:28 ET (after the close)",
+   "accession": "0001539838-17-000125",
+   "title": "Diamondback Q3 2017 earnings release (8-K, exhibit 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1539838/000153983817000125/diamondbackex991-11x6x17",
+   "supports": "Consolidated statements of operations (revenues, income before income taxes, diluted EPS and shares, three months against the year-ago quarter) and selected operating data (oil and oil-equivalent production, lease operating expense per BOE)"
+  },
+  {
+   "id": "FG1",
+   "published": "2012-10-10",
+   "filed": "2012-10-10 09:05 ET (before the open)",
+   "accession": "0001193125-12-419254",
+   "title": "Diamondback S-1/A, Amendment No. 6 (the last before the listing)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1539838/000119312512419254/d295327ds1a",
+   "supports": "Selected Historical Consolidated Financial Data: oil and natural gas revenues, other revenues, net income (loss) and the pro forma income (loss) per common share and pro forma shares (six months 2012, 2011)"
+  },
+  {
+   "id": "FG6",
+   "published": "2012-10-11",
+   "filed": "2012-10-11 14:50 ET (during the session)",
+   "accession": "0001193125-12-420871",
+   "title": "Diamondback Form 8-A12B of 2012-10-11",
+   "url": "https://www.sec.gov/Archives/edgar/data/1539838/000119312512420871/d423586d8a12b",
+   "supports": "the registration of the common stock on NASDAQ"
+  },
+  {
+   "id": "FG2",
+   "published": "2012-10-16",
+   "filed": "2012-10-15 17:04 ET (after the close)",
+   "accession": "0001193125-12-423496",
+   "title": "Diamondback 424B4 prospectus",
+   "url": "https://www.sec.gov/Archives/edgar/data/1539838/000119312512423496/d295327d424b4",
+   "supports": "Selected Historical Consolidated Financial Data: oil and natural gas revenues, other revenues, net income (loss) and the pro forma income (loss) per common share and pro forma shares (six months 2012, 2011)"
+  },
+  {
+   "id": "FG3",
+   "published": "2013-03-04",
+   "filed": "2013-03-01 16:52 ET (after the close)",
+   "accession": "0001539838-13-000004",
+   "title": "Diamondback FY2012 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1539838/000153983813000004/a12311210-k",
+   "supports": "Item 6, Selected Financial Data: total revenues, income (loss) before income taxes, net income (loss) and the pro forma diluted earnings per common share for 2008-2012; the statements' pro forma weighted average diluted shares; the income tax note's deferred tax recognized at the date of the Merger; Item 5 (the listing and the dividend policy); notes 1 and 7 (the Merger, the IPO, the first trading day)"
+  },
+  {
+   "id": "Y0",
+   "published": "2017-12-29",
+   "title": "Yahoo Finance daily prices, Diamondback Energy, Inc. common stock (NASDAQ: FANG) and S&P 500, truncated at AS_OF",
+   "url": "https://finance.yahoo.com/quote/FANG/history",
+   "supports": "close $126.25 as traded on AS_OF, 52-week range, realized vol, beta, the 5.0-yr ex-FY12 ex-FY15 ex-FY16 P/E distribution from the listing (2012-10-12)"
+  }
+ ],
+ "warnings": [],
+ "generated": "2026-11-28"
+}
