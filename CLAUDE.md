@@ -24,7 +24,7 @@ touching either directory.
   NKE (2008-2026 so far), AVGO (from its 2009-08-06 listing to 2026-10-30 so far), PEP (2008 to 2026-10-30 so far), MSFT
   (2008 to 2026-10-30 so far), XOM (2008 to 2026-10-30 so far), SHW (2008 to 2026-11-06 so far), WMT (2008 to 2026-11-06 so far), RCL (2008 to 2026-11-06 so far), MAR (2008 to 2026-11-03 so far), BKR (2008 to 2017-06-30, then 2019-02-01 to 2026-11-06 so far), PFE (2008 to 2026-11-04 so far), CMCSA (2008 to 2026-11-06 so far), CAT (2008 to 2026-11-06 so far), BMY (2008 to 2026-11-06 so far), NVDA (2008 to 2026-11-06 so far), F (2008-01-04 to 2026-11-06 so far; 2022-01-07 onward was built first at the owner's request, and dates before 2022 are an early era with its
   own 1997-2006 rule-T thresholds, engine and records) SO (2008-01-04 to 2026-11-13 so far, at the owner's request) CTVA (from its 2019 listing: 2021-02-05 to 2026-09-25), KMI (from its 2011 listing: 2013-01-18 to 2026-11-13 so far) LMT (2008-01-04 to 2026-11-13 so far), MU (2008-01-04 to 2021-12-31 so far), GOOG (2008-01-04 to 2026-11-13 so far), JPM (2008-01-04 to 2026-11-13 so far), V (2009-10-29 to 2026-11-13 so far), SPGI (2008-01-04 to 2026-11-20 so far), CB (2008-01-04 to 2026-11-20 so far), LLY (2008-01-04 to 2026-11-20 so far), UNH (2008-01-04 to 2026-11-20 so far), CRM (2008-01-04 to 2026-11-20 so far), SCHW (2008-01-04 to 2026-11-20 so far), NEE (2008-01-04 to 2026-11-20 so far), NEM (2008-01-04 to 2026-11-27 so far), LYB (from its 2010 share issue: 2012-02-10 to 2026-11-20 so far), CHTR (from its first
-  anchoring year: 2019-02-01 to 2026-11-20 so far) and FANG (set up, no date built to 2013-12-31) sit in `staging/retrospective/` until the owner adds
+  anchoring year: 2019-02-01 to 2026-11-20 so far) and FANG (from its first anchoring year: 2014-02-21 to 2017-12-29 so far) sit in `staging/retrospective/` until the owner adds
   them to the archive (retro/README.md, "UNP", "LOW", "AAPL", "NKE", "AVGO", "PEP", "MSFT", "XOM", "SHW", "WMT", "RCL", "MAR", "BKR", "PFE", "CMCSA", "CAT",
   "BMY", "NVDA", "F", "SO", "CTVA", "KMI", "LMT", "MU", "GOOG", "JPM", "V", "SPGI", "CB", "LLY", "UNH", "CRM", "SCHW", "NEE", "NEM", "LYB", "CHTR", "FANG"). The live `nke_signal_model.py`, `avgo_*.py`, `msft_signal_model.py`, `rcl_signal_model.py`, `wmt_signal_model.py`, `mar_signal_model.py` and `bmy_signal_model.py` (other branches) and `cat_signal_model.py`, `mu_signal_model.py`, `v_signal_model.py`, `spgi_signal_model.py` and `lly_signal_model.py` (other branches) files
   and today's profiles in `data/business_profiles.json` (NVDA's, SO's, V's, SPGI's, CB's, LLY's, UNH's, CRM's and NEE's included) are 2026 analyses: never inputs to a retrospective. AVGO did not trade
@@ -670,6 +670,19 @@ touching either directory.
   its $18.4M of income before income taxes (the AAPL FY2002 test). The first full year of the company's own EPS is FY2013, in filings
   accepted 2014-02-19 after the close (not read), so the first buildable date lies after 2013-12-31 and was not determined; counting the
   pro forma $0.60 would let 44 dates (2013-03-08 to 2013-12-31) pass the gate, the batch's deciding call and the owner's
-  (retro/README.md, "FANG", "FANG 2008-2009").
+  (retro/README.md, "FANG", "FANG 2008-2009"). From 2014 (a full-data batch, `gen_fang_1417.py`): FY2013's GAAP $1.29 (the FY2013 10-K
+  and the Q4 2013 release, both after the close on 2014-02-19) is the first anchor, so the 7 dates of 2014-01-03 to 2014-02-14 stay refused
+  and 202 are built, 2014-02-21 to 2017-12-29; EPS is GAAP diluted on net income attributable to Diamondback, the one-off test on each Q4
+  release's listed items (impairment, debt extinguishment, asset sales) with the non-cash derivative marks read as recurring (the NEE and
+  PEP 2008 core rule), so FY13 $1.29 and FY14 $3.64 are kept and FY2015 $(8.74) and FY2016 $(2.20), losses after the full cost ceiling
+  impairments, are excluded as the latest year and then gaps ("ex-FY15 ex-FY16"; the adjusted $1.81 and $1.87 also remove the marks), so
+  FY14's $3.64 anchors from 2015-02-19; the window runs from the 2012-10-12 listing less 2012 (no GAAP EPS), and the bounds rule covers the
+  two-year history; no guide in numbers (production, unit cost and capex outlooks only), so BASE is the latest quarter's revenue growth plus
+  the net buyback (share issuance, -17% to -21%/yr); the engine is now the LYB engine with FANG's own signals (oil-equivalent and oil
+  production, revenue, LOE per BOE, the pre-tax margin) and rule T over the 2009-2013 changes the FY2013 and FY2012 10-Ks report, the
+  Predecessors' years as published; CYCLICAL on the 10-Ks' "The oil and natural gas industry is cyclical", ENERGY_TRANSITION on the watch list
+  from 2015-12-18 on the climate legislation risk factor (text only); no dividend; Viper Energy Partners as consolidated; FAIR 104, CHEAP 81,
+  RICH 17 and BUY on all 202 dates; the derivative marks call (FY13-FY14 at the adjusted $1.21 and $2.24) moves 75 classes, the losses kept
+  at the adjusted figures 56 classes and 63 tiers (retro/README.md, "FANG 2014-2017").
 - **Never use the owner's personal email** in request headers to external
   services (SEC asks for a contact in the User-Agent).
