@@ -31215,6 +31215,8 @@ Judgement calls that could carry hindsight:
 - the Partnership's consolidated revenues and segment margins in TRC's models (what TRC's filings consolidate), its unit prices never;
 - the non-earnings 8-Ks read by their item text and exhibits for guided numbers only.
 
+The hindsight results are in `staging/retrospective/TRGP/FINDINGS.md`: hypotheses, never inputs.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
