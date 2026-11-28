@@ -41,6 +41,7 @@ and require byte-identical models. Restores the fact sheet and the price cache a
     python3 retro/tools/firewall.py 2009-01-01 NEE          # the NEE series (FPL Group, FPL) in staging/retrospective
     python3 retro/tools/firewall.py 2009-01-01 NEM          # the NEM series (Newmont Mining Corporation) in staging/retrospective
     python3 retro/tools/firewall.py 2013-01-01 LYB          # the LYB series in staging/retrospective (from the 2010 share issue)
+    python3 retro/tools/firewall.py 2013-01-01 TRGP         # the TRGP series in staging/retrospective (from its first full year of EPS)
     python3 retro/tools/firewall.py 2010-01-01 CHTR         # the CHTR gate, and from 2019-02-01 its models (retro/README.md, "CHTR 2008-2009" to "CHTR 2018-2021")
     python3 retro/tools/firewall.py 2013-01-01 FANG         # the FANG gate (no date built; retro/README.md, "FANG 2008-2009")
 
@@ -218,7 +219,8 @@ OUTDIR = {"ACN": "archive/retrospective/ACN", "UNP": "staging/retrospective/UNP"
           "SCHW": "staging/retrospective/SCHW",
           "NEE": "staging/retrospective/NEE", "NEM": "staging/retrospective/NEM",
           "LYB": "staging/retrospective/LYB",
-          "CHTR": "staging/retrospective/CHTR", "FANG": "staging/retrospective/FANG"}[TICKER]
+          "CHTR": "staging/retrospective/CHTR", "FANG": "staging/retrospective/FANG",
+          "TRGP": "staging/retrospective/TRGP"}[TICKER]
 ARCHIVE = os.path.join(ROOT, OUTDIR)
 BUILDER = os.path.join(ROOT, "retro", f"build_{TICKER.lower()}.py")
 # absurd values for every field the builder reads from a print
@@ -360,6 +362,12 @@ PLANT = {"ACN": dict(quarter="Q9 FY99", revenue_lc=-60, margin_bp=-999, fy_eps_g
                      eps_note="PLANTED", cash_note="PLANTED", next_print="PLANTED",
                      raw=dict(rev_m=4, rev_prior_m=10, oi_m=-2, oi_prior_m=5, pti_m=-2, pti_prior_m=5, eps_q=0.01, eps_q_prior=9.99,
                               dil_sh_m=1.0, opa_m=4, opa_prior_m=10, ind_m=4, ind_prior_m=10, ebitda_m=1)),
+         "TRGP": dict(quarter="Q1 2099", fy=2099, q=1, release="PLANTED", release_time="PLANTED", period_end="PLANTED", sales_b=0.01,
+                      sales_pct=-60.0, opm=-50.0, opm_bp=-999.0, ptm=-50.0, ptm_bp=-999.0, eps_q=0.01, eps_q_prior=9.99,
+                      diluted_shares_m=1.0, gp_pct=-60.0, lm_pct=-60.0, seg_note="PLANTED", sales_note="PLANTED", margin_note="PLANTED",
+                      eps_note="PLANTED", cash_note="PLANTED", next_print="PLANTED",
+                      raw=dict(rev_m=4, rev_prior_m=10, oi_m=-2, oi_prior_m=5, pti_m=-2, pti_prior_m=5, eps_q=0.01, eps_q_prior=9.99,
+                               dil_sh_m=1.0, gp_m=4, gp_prior_m=10, lm_m=4, lm_prior_m=10, nia_m=1)),
          "CMCSA": dict(quarter="Q1 2099", fy=2099, q=1, release="PLANTED", sales_b=0.01, sales_pct=-60.0, video_pct=-60.0, ocf_margin=1.0,
                        ocf_margin_bp=-999.0, op_margin=-50.0, op_margin_bp=-999.0, capex_pct=99.0, capex_bp=9999.0, eps_q=0.01,
                        eps_q_prior=9.99, diluted_shares_m=1.0, next_print="PLANTED", cash_return_text="PLANTED", note="PLANTED",
@@ -1428,6 +1436,23 @@ try:
                                                "distorted": True, "note": "PLANTED"}}
         f["prints"].append(last2)
         f["buyback_programs"].append({"published": later, "source": last["source"], "quote": "PLANTED", "note": "PLANTED", "text": "PLANTED"})
+    if TICKER == "TRGP":   # absurd full-year actuals on the planted print for the year after the latest vintage before CUTOFF, a later
+                           # vintage whose every text and figure the models quote is planted and which excludes a year, and a later
+                           # display-only outlook for the planted year and every year guided (TRGP 2012-2013, retro/README.md, "TRGP")
+        last["fy_actual"] = {"fy": int(max(k for k in list(v["eps_normalized"]) + list(v.get("eps_excluded", {})) if k != "2099")) + 1,
+                             "fy_label": "FY99", "eps_normalized": 0.01, "excluded_note": None, "revenue_usd_b": 0.01, "diluted_shares_m": 1.0,
+                             "normalization_note": "PLANTED", "op_margin": -50.0, "op_margin_note": "PLANTED", "sales_growth": -60.0,
+                             "check_pretax_margin": -50.0, "check_pretax_note": "PLANTED", "tax_rate": 0.99, "tax_note": "PLANTED",
+                             "one_off_test": {"kind": "charges", "items_after_tax_m": 0, "income_attributable_m": 1, "distorted": False,
+                                              "note": "PLANTED"}}
+        v.update(business_line="PLANTED", normalization="PLANTED", shares_note="PLANTED", prev_fy_op_margin_note="PLANTED",
+                 check_pretax_note="PLANTED", tax_note="PLANTED", fcf_note="PLANTED", cash_return_text="PLANTED",
+                 groups=[["PLANTED", 1, -99]], groups_basis="PLANTED", prev_fy_op_margin=-50.0, fcf_b=99.0, why="PLANTED; no theme in taxonomy_eras.json is live PLANTED",
+                 kind_text="PLANTED", kind="PLANTED", revenue_note="PLANTED", fcf_label="PLANTED",
+                 revenue_usd_b={**v["revenue_usd_b"], "2099": 0.01}, diluted_shares_m={**v["diluted_shares_m"], "2099": 1.0},
+                 eps_excluded={**v.get("eps_excluded", {}), "2098": "PLANTED"})
+        for y in sorted({g["fy"] for g in f["guides"]} | {2099, int(cutoff[:4]), int(cutoff[:4]) + 1}):
+            f["guides"].append({"fy": y, "published": later, "source": last["source"], "rev_none": True, "display": "PLANTED"})
     if TICKER == "SO":     # absurd full-year actuals on the planted print, for the year after the latest vintage before CUTOFF, and a later
                            # vintage whose every text and figure the models quote is planted (SO 2008-2009)
         last["fy_actual"] = {"fy": int(max(k for k in v["eps_normalized"] if k != "2099")) + 1, "fy_label": "FY99", "eps_normalized": 0.01,
