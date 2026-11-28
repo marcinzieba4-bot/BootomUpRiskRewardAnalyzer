@@ -32883,6 +32883,8 @@ Judgement calls that could carry hindsight:
 - the text-layer reading of the slide releases (each figure checked word for word, every year-ago figure against the earlier print);
 - the parts of the filings listed as not read.
 
+The hindsight results for 2018-2021 are in `staging/retrospective/OKE/FINDINGS.md`, "OKE 2018-2021 (hindsight)": hypotheses, never inputs.
+
 ## Categories change with the era
 
 The five base kinds (DURABLE, CYCLICAL, STRUCTURAL, TURNAROUND, SPECIAL) are
