@@ -29770,6 +29770,9 @@ Judgement calls that could carry hindsight:
 - the last date 2026-11-27, one week past the other 2022-2026 batches, by the build time;
 - the parts of the filings listed as not read: a number guided only on a call or in an unfiled presentation would be missed.
 
+The hindsight results for 2022-2026 are in `staging/retrospective/NEM/FINDINGS.md` ("NEM 2022-2026"), labelled as hindsight: hypotheses,
+never inputs.
+
 ## LYB (LyondellBasell Industries): the thirty-seventh ticker, in staging, from its 2010 share issue
 
 The LYB series is built apart from every other ticker and shares nothing with them but the machinery: its own fact sheet

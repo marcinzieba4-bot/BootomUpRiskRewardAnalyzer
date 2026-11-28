@@ -337,3 +337,99 @@ drawdown -60.3 -55.8
   between write-downs, tax charges and one-off gains, the rollover anchor goes stale for years (FY14 to February 2021), and the one year
   that passes both tests can be the peak; an anchor that tracks the metal price or production economics, or a cap on an anchor's age,
   would be a new rule, decided before scoring, with a full re-run.
+
+# NEM 2022-2026 (hindsight)
+
+Patterns seen in `outcome.json` for the 256 weekly dates from 2022-01-07 to 2026-11-27. **Labels and hypotheses**: never feed them back into
+the method or the fact sheet. Scored only after the point-in-time build, validation outputs, README section and firewall result were
+committed and pushed (501b9e793, f6d1301d9, 45ba1ed63), on 2026-11-28; the 2008-2021 findings above were first opened then. 151 dates
+(2022-01-07 to 2024-11-22) have a 2-year horizon; 2024-11-29 to 2025-11-21 have the 1-year one only, the later dates 6 months or less,
+and 2026-11-27 none yet. Total returns include the dividends paid. "Call held" is `call_check_2y`: CHEAP should clear the 15%/yr hurdle or
+beat SPY; RICH should not.
+
+Overall, where a 2-year horizon exists: RICH 46 dates, median 2-year total return -28.6%, 2 cleared the hurdle, 2 beat SPY, 44 calls held;
+FAIR 5, +65.7%, 3 cleared; CHEAP 100, +127.7%, 79 cleared, 68 beat SPY, 79 calls held. Scenario landings at 2 years: BEAR 66, BASE 47,
+XBULL 24, BULL 14. Where only the 1-year horizon exists: CHEAP 22 (2024-11-29 to 2025-05-16), median +165.3% (+104.4% to +205.8%), all
+beat SPY; RICH 27 (2025-04-25 to 2025-11-21), median +60.2% (+14.6% to +125.6%), all beat SPY; FAIR 3, +110.2%.
+
+## 2022 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier AVOID (2022-01-07 to 2022-07-08) | 27 | -37.3% | -52.6% to -20.3% | 0 | 0 | -42.0% | 27 |
+| class RICH, legacy tier WATCHLIST (2022-07-15 to 2022-07-15) | 1 | -7.6% | -7.6% to -7.6% | 0 | 0 | -29.2% | 1 |
+| class RICH, legacy tier BUY (2022-07-22 to 2022-12-30) | 10 | -2.8% | -16.1% to +11.7% | 0 | 0 | -9.4% | 10 |
+| class CHEAP, legacy tier BUY (2022-08-05 to 2022-11-18) | 14 | +28.3% | +0.3% to +42.7% | 5 | 0 | -2.9% | 5 |
+| FY21E $3.31 (FY20's) (2022-01-07 to 2022-02-18) | 7 | -37.3% | -45.0% to -25.7% | 0 | 0 | -31.5% | 7 |
+| FY22E $3.31 (FY20's) (2022-02-25 to 2022-12-30) | 45 | -9.5% | -52.6% to +42.7% | 5 | 0 | -15.8% | 36 |
+| latest print Q3 2021 (2022-01-07 to 2022-02-18) | 7 | -37.3% | -45.0% to -25.7% | 0 | 0 | -31.5% | 7 |
+| latest print Q4 2021 (2022-02-25 to 2022-04-14) | 8 | -49.5% | -52.6% to -47.8% | 0 | 0 | -47.3% | 8 |
+| latest print Q1 2022 (2022-04-22 to 2022-07-22) | 14 | -29.6% | -45.0% to -1.8% | 0 | 0 | -40.6% | 14 |
+| latest print Q2 2022 (2022-07-26 to 2022-10-28) | 14 | +28.3% | +8.2% to +42.7% | 5 | 0 | -4.3% | 7 |
+| latest print Q3 2022 (2022-11-02 to 2022-12-30) | 9 | -4.5% | -16.1% to +21.8% | 0 | 0 | -7.6% | 7 |
+3y (52 dates with one): 22 of 52 cleared, 22 beat SPY; range -39.8% to +131.8%
+1y range -42.5 3.0 excess 2y -83.5 -10.8
+drawdown -65.0 -45.8
+
+## 2023 (52 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class RICH, legacy tier ACCUMULATE (2023-01-06 to 2023-01-27) | 3 | -17.2% | -23.3% to -17.0% | 0 | 0 | -19.3% | 3 |
+| class RICH, legacy tier WATCHLIST (2023-01-13 to 2023-01-13) | 1 | -23.1% | -23.1% to -23.1% | 0 | 0 | -21.3% | 1 |
+| class RICH, legacy tier BUY (2023-02-03 to 2023-07-28) | 4 | +43.9% | -8.3% to +55.5% | 2 | 2 | +13.2% | 2 |
+| class FAIR, legacy tier BUY (2023-02-17 to 2023-09-22) | 5 | +65.7% | -10.4% to +110.8% | 3 | 3 | +21.2% | 0 |
+| class CHEAP, legacy tier BUY (2023-02-24 to 2023-12-29) | 39 | +48.5% | +0.6% to +164.4% | 27 | 21 | +15.1% | 27 |
+| FY22E $3.31 (FY20's) (2023-01-06 to 2023-02-17) | 7 | -17.0% | -23.3% to +8.2% | 0 | 0 | -18.9% | 6 |
+| FY23E $3.31 (FY20's) (2023-02-24 to 2023-12-29) | 45 | +55.5% | -10.4% to +164.4% | 32 | 26 | +16.1% | 27 |
+| latest print Q3 2022 (2023-01-06 to 2023-02-17) | 7 | -17.0% | -23.3% to +8.2% | 0 | 0 | -18.9% | 6 |
+| latest print Q4 2022 (2023-02-24 to 2023-04-21) | 9 | +3.7% | -10.4% to +21.1% | 0 | 0 | -7.5% | 0 |
+| latest print Q1 2023 (2023-04-28 to 2023-07-14) | 12 | +37.9% | +13.9% to +48.5% | 8 | 2 | +11.7% | 8 |
+| latest print Q2 2023 (2023-07-21 to 2023-10-20) | 14 | +101.1% | +43.9% to +150.1% | 14 | 14 | +31.8% | 9 |
+| latest print Q3 2023 (2023-10-27 to 2023-12-29) | 10 | +145.5% | +107.3% to +164.4% | 10 | 10 | +55.2% | 10 |
+3y (47 dates with one): 47 of 52 cleared, 47 beat SPY; range +111.1% to +261.4%
+1y range -32.8 51.5 excess 2y -80.3 106.5
+drawdown -45.8 -36.9
+
+## 2024 (47 dates)
+
+| Group | Dates | Median 2-yr total return | Range | Cleared 15%/yr hurdle | Beat SPY | Median m12-24 avg price | Call held |
+|---|---|---|---|---|---|---|---|
+| class CHEAP, legacy tier BUY (2024-01-05 to 2024-11-22) | 47 | +158.5% | +95.1% to +313.3% | 47 | 47 | +110.1% | 47 |
+| FY23E $3.31 (FY20's) (2024-01-05 to 2024-02-16) | 7 | +235.8% | +161.6% to +282.3% | 7 | 7 | +102.7% | 7 |
+| FY24E $3.31 (FY20's) (2024-02-23 to 2024-11-22) | 40 | +152.1% | +95.1% to +313.3% | 40 | 40 | +116.1% | 40 |
+| latest print Q3 2023 (2024-01-05 to 2024-02-16) | 7 | +235.8% | +161.6% to +282.3% | 7 | 7 | +102.7% | 7 |
+| latest print Q4 2023 (2024-02-23 to 2024-04-19) | 9 | +218.1% | +189.6% to +313.3% | 9 | 9 | +130.3% | 9 |
+| latest print Q1 2024 (2024-04-26 to 2024-07-19) | 13 | +152.1% | +95.1% to +187.2% | 13 | 13 | +116.1% | 13 |
+| latest print Q2 2024 (2024-07-26 to 2024-10-18) | 13 | +130.3% | +97.3% to +158.5% | 13 | 13 | +97.8% | 13 |
+| latest print Q3 2024 (2024-10-25 to 2024-11-22) | 5 | +140.0% | +122.9% to +181.4% | 5 | 5 | +143.5% | 5 |
+3y: none yet
+1y range -3.0 117.0 excess 2y 54.4 276.7
+drawdown -36.9 -32.4
+
+## 2025 and 2026 (no 2-year horizon yet)
+
+The 1-year horizon covers 2024-11-29 to 2025-11-21 (52 dates): the CHEAP dates to 2025-05-16 (13-14x on FY20's $3.31, then 16-18x on FY24's $2.86)
+returned +104% to +206% in a year; the RICH dates from 2025-04-25 (FY24's $2.86 at 19-44x as the price doubled) returned +15% to
++126%, every one ahead of SPY, so on the first year the RICH calls of 2025 are wrong. The 2026 dates (on FY25's $6.39 at 14-21x) have six
+months or less. None of this is a 2-year result.
+
+## What the 2022-2026 labels suggest (hypotheses only)
+
+- The batch reverses 2018-2021's ending. The same FY20 anchor ($3.31) that made the 2021 CHEAP dates the worst entries of that batch
+  made early 2022 RICH at 18-26x, and those 27 dates lost a median 37% at two years (27 of 27 held); it then made 2023-2024 CHEAP at
+  9-15x, just before the gold price ran to records, and those 86 dates returned a median +48% (2023) and +158% (2024) (74 held). The
+  anchor did not change between the wrong 2021 calls and the right 2022-2024 ones; the metal price moved. As in 2014-2017 and
+  2018-2021, the class is a timing call against the gold price, not a valuation one.
+- The CHEAP calls of 2023-2024 rest on FY2021 being excluded by the AAPL FY2002 test (the sensitivity table: kept at GAAP $1.39, 60 CHEAP
+  dates turn RICH and 24 FAIR) and on FY2022-FY2023 being losses, so FY20's $3.31 stood for four years. That the frozen test happens to
+  produce the better calls here is a hindsight-friendly coincidence, not support for the test.
+- The Newcrest quarters' BASE (+24% to +85%) coincides with the strongest entries (2024: 47 of 47 held), but BASE at 0% on those
+  quarters moves only 7 classes: the 2024 CHEAP calls come from the multiple, not from the acquisition's growth.
+- From mid-2025 the class turned RICH on FY24's $2.86 (kept at GAAP) while the price doubled; on the 1-year horizon those calls are wrong.
+  FY2025's $6.39 then pulled the multiple back to 14-21x and the class to a CHEAP-RICH mix. Too early to score.
+- Profile drift: CYCLICAL then (every vintage) and in today's profile. Label only.
+- Hypothesis for a later method version (never this one), the 2014-2017 and 2018-2021 one again: for a miner whose GAAP years swing
+  between write-downs, reclamation charges and one-off gains, the rollover anchor goes stale for years (FY20's from February 2021 to
+  February 2025) and the class then follows the metal price; an anchor that tracks the metal price or production economics, or a cap on
+  an anchor's age, would be a new rule, decided before scoring, with a full re-run.
