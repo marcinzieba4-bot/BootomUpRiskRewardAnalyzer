@@ -32511,6 +32511,13 @@ Controls and checks (before any outcome):
 - **Regression:** the 2008-2013 models (314) rebuild byte-identical with the extended sheet and builder; the shared code is untouched
   but `retro/tools/firewall.py` (OKE's plants gain a point guide, a pro forma guide, the vintage's theme words, a computed net margin and a
   later distribution).
+- **Firewall** (run after the build, validation outputs and README section were committed and pushed, before any outcome): it passes at
+  all 11 cutoffs above (the distribution's effective date, the Q4 2013 print and the FY2013 vintage, the Q3 2014 table point, the restated
+  FY2014 vintage, ENERGY_TRANSITION's live date, the first computed net margin, the pro forma guide, the merger quarter's range, the Q3
+  2017 print and 2018-01-01: 319 to 523 dates each, 2008-2013 included), 0 files changed and no planted text. Besides the earlier plants,
+  each cutoff plants a later point net income guide and a later pro forma guide for every guided year, theme words on the planted
+  vintage, a computed net margin on the planted print and a later distribution with an absurd factor. (`findings_tables.py`, a hindsight
+  script no builder reads, was edited while the last seven cutoffs ran; it was committed after them, with the findings.)
 
 Seen in the build (method behaviour, not tuned):
 - **RICH 112, CHEAP 55, FAIR 42 of 209 dates;** legacy tiers AVOID 112, BUY 42, ACCUMULATE 28, WATCHLIST 27. 2014: RICH on all 52; 2015:
