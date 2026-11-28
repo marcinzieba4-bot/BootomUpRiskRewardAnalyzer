@@ -320,15 +320,15 @@ drawdown -60.3 -55.8
 ## What the 2018-2021 labels suggest (hypotheses only)
 
 - The batch is the mirror image of 2014-2017's: the class followed a stale anchor and the gold price ran the other way. FY14's $1.28
-  stood for three years while FY2015-FY2019 were all gaps, so 2018-2019 were RICH at 23-35x on every date, and the stock returned a
-  median +67% (2018) and +76% (2019) at two years on the 2019-2020 gold run and the Goldcorp and Nevada Gold Mines years: 6 of 96 such
-  calls held.
+  stood for three years while FY2015-FY2019 were all gaps, so every date from 2018-01-05 to 2019-11-01 (96) was RICH at 23-32x, and the stock returned a median +67% (2018)
+  and +76% (2019) at two years on the 2019-2020 gold run and the Goldcorp and Nevada Gold Mines years: 6 of those 96 calls held (all in
+  January-February 2018).
 - The same RICH call held on 37 of 46 dates of 2020 (from the Q4 2019 print, after the March 2020 low): entries at $55-69 in mid-2020
   lost 20-30% by mid-2022. A RICH call that is right in 2020 and wrong in 2018-2019 on the same $1.28 is a timing call against the
   metal, as the 2014-2017 findings already say, not a valuation one.
 - The only CHEAP dates (15, on FY20's $3.31 at 16-18x) were the batch's worst entries (median -24.7%, 0 of 15 held): FY2020, the
   best gold-price year in the history, became the anchor just as the price peaked. The sensitivity table shows the CHEAP calls sit on
-  the signals (BEAR moves 6 of them) and on FY2020 being kept.
+  the signals (at BEAR, 11 of the 15 turn FAIR or RICH) and on FY2020 being kept.
 - The FAIR dates around the Q3 2019 print (BASE lifted by the Goldcorp quarters' +57% and +45% revenue growth) did well (+51%, 10 of 11
   held); BASE at 0% on those quarters would have made them RICH and wrong. A hindsight-friendly coincidence, not a rule.
 - Profile drift: DURABLE then to the FY2018 10-K, CYCLICAL from it (the 10-K's "The metals markets are cyclical"), CYCLICAL in today's
